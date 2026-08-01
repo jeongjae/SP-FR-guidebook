@@ -6,12 +6,33 @@
 <title>숙소 후보·확정 — Jason과 Julia의 2026 유럽 장기여행 가이드북</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body data-rel="..">
 <header class="topbar">
-  <a class="home" href="../index.html">🏠 홈</a>
-  <span class="site-name">Jason과 Julia의 2026 유럽 장기여행 가이드북</span>
-  
+  <button id="menu-btn" aria-label="메뉴 열기">☰</button>
+  <a class="tb-title" href="../index.html">트래커 · 숙소 후보·확정</a>
+  <nav class="tb-links">
+    <a href="../chapters/03.html">일정</a>
+    <a href="../maps/index.html">지도</a>
+    <a href="../tracker/index.html">트래커</a>
+  </nav>
 </header>
+
+<div id="overlay"></div>
+<aside id="drawer" aria-label="전체 메뉴">
+  <div class="dw-head">
+    <span>유럽 43일 가이드북</span>
+    <button id="drawer-close" aria-label="닫기">✕</button>
+  </div>
+  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
+  <div id="search-results"></div>
+  <nav class="dw-nav">
+    <a href="../index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
+    <h3>시작하기</h3><a href="../chapters/01.html">01 가이드북 사용법</a><a href="../chapters/02.html">02 전체 여행 하이라이트</a><a href="../chapters/03.html">03 43일 Master Itinerary</a>
+    <h3>지역 가이드</h3><a href="../chapters/04.html">04 Barcelona · Sitges<span>8/29–9/1 · 3박</span></a><a href="../chapters/05.html">05 Girona · Collioure · Empordà<span>9/1–9/4 · 3박</span></a><a href="../chapters/06.html">06 Nice · Côte d’Azur<span>9/4–9/9 · 5박</span></a><a href="../chapters/07.html">07 Aix-en-Provence<span>9/9–9/13 · 4박</span></a><a href="../chapters/08.html">08 Luberon Farmhouse<span>9/13–9/17 · 4박</span></a><a href="../chapters/09.html">09 Avignon · Alpilles · Pont du Gard<span>9/17–9/21 · 4박</span></a><a href="../chapters/10.html">10 Lyon · Annecy<span>9/21–9/25 · 4박</span></a><a href="../chapters/11.html">11 Paris Long Stay<span>9/25–10/10 · 15박</span></a>
+    <h3>실행지도</h3><a href="../maps/nice.html">Nice · Côte d’Azur 실행지도</a><a href="../maps/lyon.html">Lyon · Annecy 실행지도</a>
+    <h3>트래커</h3><a href="../tracker/itinerary.html">43일 전체 일정표</a><a href="../tracker/reservations.html">예약 현황</a><a href="../tracker/transport.html">이동·교통</a><a href="../tracker/accommodation.html">숙소 후보·확정</a><a href="../tracker/dashboard.html">진행 대시보드</a>
+  </nav>
+</aside>
 <main>
 <p class="meta">TP_Europe_Travel_Master_Tracker_v1.1.xlsx 기준</p>
 <h1>숙소 후보·확정</h1><nav class="tabs"><a href="itinerary.html">43일 전체 일정표</a><a href="reservations.html">예약 현황</a><a href="transport.html">이동·교통</a><a href="accommodation.html" class="active">숙소 후보·확정</a><a href="dashboard.html">진행 대시보드</a></nav><p class="meta">숙소 확정·비교표 v1.1</p><div class="table-wrap"><table><thead><tr><th>거점</th><th>체크인</th><th>체크아웃</th><th>박수</th><th>상태</th><th>생활권/후보</th><th>예산통화</th><th>예산총액</th><th>실제총액</th><th>1박당</th><th>무료취소기한</th><th>예약번호</th><th>주소</th><th>체크인/아웃</th><th>주방</th><th>세탁</th><th>주차</th><th>엘리베이터/냉방</th><th>소스 URL</th><th>비고</th></tr></thead><tbody><tr><td>Barcelona</td><td>2026-08-29</td><td>2026-09-01</td><td>3</td><td>미조사</td><td>Eixample/Gràcia</td><td>KRW</td><td>800000</td><td></td><td></td><td></td><td></td><td></td><td></td><td>선호</td><td>선호</td><td>불필요</td><td>확인</td><td></td><td>2인 3박 총액 기준</td></tr><tr><td>Girona</td><td>2026-09-01</td><td>2026-09-04</td><td>3</td><td>미조사</td><td>역–Plaça Catalunya–Gran Via</td><td>EUR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>선택</td><td>선택</td><td>필수</td><td>확인</td><td></td><td>렌터카·주차 우선</td></tr><tr><td>Nice</td><td>2026-09-04</td><td>2026-09-09</td><td>5</td><td>미조사</td><td>Jean Médecin–Masséna–Garibaldi</td><td>EUR</td><td></td><td></td><td></td><td></td><td></td><td></td><td>9/4 오후 / 9/9 07:00~08:00</td><td>선호</td><td>선호</td><td>불필요</td><td>필수</td><td></td><td>5박·9/8 생활완충일·9/9 NCE T2 이동</td></tr><tr><td>Aix-en-Provence</td><td>2026-09-09</td><td>2026-09-13</td><td>4</td><td>미조사</td><td>Sextius–Allées Provençales–Rotonde</td><td>EUR</td><td></td><td></td><td></td><td></td><td></td><td></td><td>9/9 17:00~19:00 / 9/13 오전</td><td>필수</td><td>필수</td><td>필수</td><td>확인</td><td></td><td>4박·주차·주방·9/11 Cassis</td></tr><tr><td>Luberon</td><td>2026-09-13</td><td>2026-09-17</td><td>4</td><td>미조사</td><td>Gordes–Goult–Roussillon–Bonnieux</td><td>EUR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>필수</td><td>필수</td><td>필수</td><td>확인</td><td></td><td>수영장 비필수; 농가환경·생활편의</td></tr><tr><td>Avignon</td><td>2026-09-17</td><td>2026-09-21</td><td>4</td><td>미조사</td><td>성벽 안 외곽/남·동쪽</td><td>EUR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>선호</td><td>선호</td><td>필수</td><td>확인</td><td></td><td>Avignon TGV 반납동선</td></tr><tr><td>Lyon</td><td>2026-09-21</td><td>2026-09-25</td><td>4</td><td>미조사</td><td>Presqu&#x27;île/Ainay/Part-Dieu 서쪽</td><td>EUR</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>선호</td><td>선호</td><td>불필요</td><td>필수</td><td></td><td>Annecy 철도·야간귀가</td></tr><tr><td>Paris</td><td>2026-09-25</td><td>2026-10-10</td><td>15</td><td>미조사</td><td>5구·15구 우선, 7구·9구 비교</td><td>KRW</td><td>5000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td>필수</td><td>필수</td><td>불필요</td><td>필수</td><td></td><td>15박 생활형·저층 선호</td></tr></tbody></table></div>
@@ -19,5 +40,15 @@
 <footer>
   <p>Jason과 Julia의 2026 유럽 장기여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일</p>
 </footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html"><b>🏠</b><span>홈</span></a>
+  <a href="../chapters/03.html"><b>📅</b><span>일정</span></a>
+  <a href="#" class="nav-today"><b>📍</b><span>오늘</span></a>
+  <a href="../maps/index.html"><b>🗺️</b><span>지도</span></a>
+  <a href="../tracker/index.html"><b>📋</b><span>트래커</span></a>
+</nav>
+<button id="back-top" aria-label="맨 위로">↑</button>
+<script src="../assets/data.js" defer></script>
+<script src="../assets/nav.js" defer></script>
 </body>
 </html>
