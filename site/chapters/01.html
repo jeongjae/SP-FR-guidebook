@@ -77,23 +77,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>필수</strong></td>
+<td><span class="grade grade-essential">필수</span></td>
 <td>이 여행의 목적과 도시의 정체성을 가장 잘 보여주는 장소</td>
 </tr>
 <tr>
-<td><strong>우선 추천</strong></td>
+<td><span class="grade grade-priority">우선 추천</span></td>
 <td>시간 대비 가치가 높고 일정에 자연스럽게 들어가는 장소</td>
 </tr>
 <tr>
-<td><strong>선택</strong></td>
+<td><span class="grade grade-optional">선택</span></td>
 <td>취향·날씨·체력·예약 여부에 따라 추가</td>
 </tr>
 <tr>
-<td><strong>대체</strong></td>
+<td><span class="grade grade-alternative">대체</span></td>
 <td>우천·휴관·교통장애·피로 시 교환 가능한 일정</td>
 </tr>
 <tr>
-<td><strong>비추천</strong></td>
+<td><span class="grade grade-excluded">비추천</span></td>
 <td>장소 자체가 나쁜 것이 아니라 이번 일정에서 중복·이동부담이 큰 선택</td>
 </tr>
 </tbody>
@@ -184,11 +184,11 @@ Paris
      <a href="../maps/offline.html">오프라인 지도 준비</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../index.html"><b>🏠</b><span>홈</span></a>
-  <a href="../chapters/03.html"><b>📅</b><span>일정</span></a>
-  <a href="#" class="nav-today"><b>📍</b><span>오늘</span></a>
-  <a href="../maps/index.html"><b>🗺️</b><span>지도</span></a>
-  <a href="../tracker/index.html"><b>📋</b><span>트래커</span></a>
+  <a href="#" class="nav-today" data-tab="today"><b aria-hidden="true">◉</b><span>오늘</span></a>
+  <a href="../chapters/03.html" data-tab="itinerary"><b aria-hidden="true">▤</b><span>일정</span></a>
+  <a href="../regions.html" data-tab="regions"><b aria-hidden="true">◇</b><span>지역</span></a>
+  <a href="../maps/index.html" data-tab="maps"><b aria-hidden="true">⌖</b><span>지도</span></a>
+  <a href="../tracker/index.html" data-tab="tracker"><b aria-hidden="true">▦</b><span>트래커</span></a>
 </nav>
 <button id="back-top" aria-label="맨 위로">↑</button>
 <script src="../assets/data.js" defer></script>

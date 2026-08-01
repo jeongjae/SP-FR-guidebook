@@ -669,6 +669,18 @@ nav.pager a {
   letter-spacing: 0.14em;
 }
 .card-title { font-weight: 700; line-height: 1.4; }
+/* 지역 카드 — 제목이 링크라 카드 전체를 a 로 감싸지 않는다 */
+.rg-card { gap: 6px; }
+.rg-card .card-title {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.rg-card .card-title:hover { text-decoration: underline; }
+.rg-card .pl-links { margin-top: 2px; }
 .card-sub { font-size: 0.88rem; color: var(--text-2); }
 .card-alt { background: var(--accent-soft); border-color: transparent; }
 
@@ -805,6 +817,57 @@ section.places .note { margin: 2px 0 10px; }
 .grade-excluded::before    { content: "▨"; }
 
 /* ================= 데일리 가이드 ================= */
+/* ================= 데일리 — 텍스트 우선 ================= */
+.day-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+}
+.day-summary {
+  margin: 12px 0 0;
+  border-top: 1px solid var(--border);
+}
+.ds-item {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 10px;
+  padding: 10px 2px;
+  border-bottom: 1px solid var(--border);
+}
+.ds-item dt {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+.ds-item dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+@media (max-width: 380px) {
+  .ds-item { grid-template-columns: 1fr; gap: 2px; }
+}
+table.day-time td { vertical-align: top; }
+table.day-time td:first-child {
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+.day-card > summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 12px;
+  margin-top: 20px;
+  background: var(--surface-sunk);
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 figure.daily-card { margin: 16px 0; text-align: center; }
 figure.daily-card img {
   max-width: min(100%, 480px);
