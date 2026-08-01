@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aix Execution Map</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<style>html,body,#map{height:100%;margin:0}body{font-family:Arial,'Noto Sans KR',sans-serif}
+.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;
+box-shadow:0 2px 12px #0004;max-width:330px}h1{font-size:18px;margin:0 0 5px}p{font-size:12px;margin:0;line-height:1.4}</style>
+</head><body><div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel"><h1>Aix 실행지도</h1>
+<p>현재 MD 일정에 따른 주요 기준점. 실제 도보·운전은 Google Maps에서 다시 계산한다.</p></div>
+<script src="vendor/leaflet/leaflet.js"></script><script>
+const pts=[{"name": "Adagio Aix Centre", "lat": 43.528998, "lon": 5.440842, "url": "https://www.google.com/maps/search/?api=1&query=Adagio+Aix+Centre"}, {"name": "Rotonde", "lat": 43.5267, "lon": 5.44582, "url": "https://www.google.com/maps/search/?api=1&query=Rotonde"}, {"name": "Cours Mirabeau", "lat": 43.52622, "lon": 5.44925, "url": "https://www.google.com/maps/search/?api=1&query=Cours+Mirabeau"}, {"name": "Musée Granet", "lat": 43.52557, "lon": 5.45251, "url": "https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+Granet"}, {"name": "Cassis", "lat": 43.21401, "lon": 5.53962, "url": "https://www.google.com/maps/search/?api=1&query=Cassis"}, {"name": "Atelier Cézanne", "lat": 43.53964, "lon": 5.44704, "url": "https://www.google.com/maps/search/?api=1&query=Atelier+C%C3%A9zanne"}, {"name": "Lourmarin", "lat": 43.76373, "lon": 5.36383, "url": "https://www.google.com/maps/search/?api=1&query=Lourmarin"}];
+const map=L.map('map');L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const ll=[];pts.forEach((p,i)=>{ll.push([p.lat,p.lon]);L.marker([p.lat,p.lon]).addTo(map)
+.bindPopup(`<b>${i+1}. ${p.name}</b><br><a target="_blank" href="${p.url}">Google Maps</a>`);});
+L.polyline(ll,{color:'#1f4e78',weight:4,opacity:.65,dashArray:'8,8'}).addTo(map);
+map.fitBounds(L.latLngBounds(ll).pad(.15));</script></body></html>

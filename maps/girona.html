@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Girona Execution Map</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<style>html,body,#map{height:100%;margin:0}body{font-family:Arial,'Noto Sans KR',sans-serif}
+.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;
+box-shadow:0 2px 12px #0004;max-width:330px}h1{font-size:18px;margin:0 0 5px}p{font-size:12px;margin:0;line-height:1.4}</style>
+</head><body><div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel"><h1>Girona 실행지도</h1>
+<p>현재 MD 일정에 따른 주요 기준점. 실제 도보·운전은 Google Maps에서 다시 계산한다.</p></div>
+<script src="vendor/leaflet/leaflet.js"></script><script>
+const pts=[{"name": "Hotel Carlemany", "lat": 41.97865, "lon": 2.8213, "url": "https://www.google.com/maps/search/?api=1&query=Hotel+Carlemany"}, {"name": "Girona Cathedral", "lat": 41.98741, "lon": 2.82611, "url": "https://www.google.com/maps/search/?api=1&query=Girona+Cathedral"}, {"name": "Onyar Houses", "lat": 41.98473, "lon": 2.82402, "url": "https://www.google.com/maps/search/?api=1&query=Onyar+Houses"}, {"name": "Collioure", "lat": 42.52505, "lon": 3.08322, "url": "https://www.google.com/maps/search/?api=1&query=Collioure"}, {"name": "Peralada", "lat": 42.30872, "lon": 3.01017, "url": "https://www.google.com/maps/search/?api=1&query=Peralada"}, {"name": "Pals", "lat": 41.97039, "lon": 3.14843, "url": "https://www.google.com/maps/search/?api=1&query=Pals"}, {"name": "Peratallada", "lat": 41.97618, "lon": 3.09007, "url": "https://www.google.com/maps/search/?api=1&query=Peratallada"}, {"name": "Calella de Palafrugell", "lat": 41.88901, "lon": 3.18416, "url": "https://www.google.com/maps/search/?api=1&query=Calella+de+Palafrugell"}];
+const map=L.map('map');L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const ll=[];pts.forEach((p,i)=>{ll.push([p.lat,p.lon]);L.marker([p.lat,p.lon]).addTo(map)
+.bindPopup(`<b>${i+1}. ${p.name}</b><br><a target="_blank" href="${p.url}">Google Maps</a>`);});
+L.polyline(ll,{color:'#1f4e78',weight:4,opacity:.65,dashArray:'8,8'}).addTo(map);
+map.fitBounds(L.latLngBounds(ll).pad(.15));</script></body></html>
