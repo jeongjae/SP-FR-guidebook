@@ -84,26 +84,55 @@
     });
   }
 
-  /* ---------- 주요 방문지 사진 (Wikipedia, 점진적 향상) ---------- */
-  var cards = document.querySelectorAll(".pl-card[data-wiki]");
-  cards.forEach(function (card) {
-    var title = card.getAttribute("data-wiki");
-    var lang = card.getAttribute("data-wlang") || "en";
-    var url = "https://" + lang + ".wikipedia.org/api/rest_v1/page/summary/" +
-      encodeURIComponent(title.replace(/ /g, "_"));
-    fetch(url).then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (data) {
-        if (!data || !data.thumbnail || !data.thumbnail.source) return;
-        var box = card.querySelector(".pl-photo");
-        var img = box.querySelector("img");
-        img.src = data.thumbnail.source;
-        img.onload = function () { box.hidden = false; };
-        var credit = box.querySelector(".pl-credit");
-        if (credit && data.content_urls && data.content_urls.desktop) {
-          credit.href = data.content_urls.desktop.page;
-        }
-      }).catch(function () { /* 오프라인·차단 시 사진 없이 카드 유지 */ });
-  });
+  /* ---------- 오프라인 감지 ----------
+     외부로 나가는 링크는 연결이 없으면 눌러도 아무 일이 없다. 눌리는데
+     반응이 없는 것보다 눌리지 않는 편이 현장에서 낫다. */
+  var netLinks = document.querySelectorAll('a[href^="http://"], a[href^="https://"]');
+  for (var k = 0; k < netLinks.length; k++) netLinks[k].classList.add("needs-net");
+
+  function syncOnline() {
+    var off = !navigator.onLine;
+    document.body.classList.toggle("is-offline", off);
+    var notes = document.querySelectorAll(".net-note");
+    for (var n = 0; n < notes.length; n++) notes[n].hidden = !off;
+  }
+  window.addEventListener("online", function () { syncOnline(); loadPlacePhotos(); });
+  window.addEventListener("offline", syncOnline);
+  syncOnline();
+
+  /* ---------- 주요 방문지 사진 (Wikipedia, 점진적 향상) ----------
+     지역 대표사진은 로컬 자산이라 오프라인에서도 보인다. 여기서 불러오는
+     것은 방문지별 사진이고, 이건 추가 향상이다. 없으면 카드가 글로만 남는다.
+     지역 사진을 방문지 사진 자리에 대신 넣지 않는다 — Sagrada Família 사진이
+     Sitges 카드에 붙는 식의 거짓 표시가 된다. */
+  var wikiDone = {};
+  function loadPlacePhotos() {
+    if (!navigator.onLine || typeof fetch !== "function") return;
+    var cards = document.querySelectorAll(".pl-card[data-wiki]");
+    cards.forEach(function (card) {
+      var title = card.getAttribute("data-wiki");
+      if (!title || wikiDone[title]) return;
+      wikiDone[title] = true;
+      var lang = card.getAttribute("data-wlang") || "en";
+      var url = "https://" + lang + ".wikipedia.org/api/rest_v1/page/summary/" +
+        encodeURIComponent(title.replace(/ /g, "_"));
+      fetch(url).then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data || !data.thumbnail || !data.thumbnail.source) return;
+          var box = card.querySelector(".pl-photo");
+          var img = box.querySelector("img");
+          img.src = data.thumbnail.source;
+          img.onload = function () { box.hidden = false; };
+          var credit = box.querySelector(".pl-credit");
+          if (credit && data.content_urls && data.content_urls.desktop) {
+            credit.href = data.content_urls.desktop.page;
+          }
+        }).catch(function () {
+          wikiDone[title] = false;   // 연결이 돌아오면 다시 시도한다
+        });
+    });
+  }
+  loadPlacePhotos();
 
   /* ---------- 맨 위로 ---------- */
   var btt = $("#back-top");

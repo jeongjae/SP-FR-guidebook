@@ -434,6 +434,9 @@ code {
   padding: 1px 5px;
   border-radius: 3px;
   font-size: 0.9em;
+  /* 긴 파일 경로가 좁은 화면을 옆으로 밀지 않게 한다.
+     body 의 word-break: keep-all 이 여기서는 방해가 된다. */
+  word-break: break-all;
 }
 pre {
   background: var(--surface-sunk);
@@ -891,8 +894,9 @@ nav.tabs a.active {
 
 /* ================= 오프라인 안내 ================= */
 .offline-note {
-  display: flex;
-  gap: 10px;
+  /* 산문 문단이라 flex 가 아니라 block 이다. flex 였을 때 한글 어절
+     (word-break: keep-all) 이 줄바꿈되지 않아 좁은 화면을 옆으로 밀었다. */
+  display: block;
   padding: 12px 14px;
   margin: 20px 0 0;
   background: var(--surface-sunk);
@@ -905,6 +909,42 @@ body.is-offline .needs-net {
   opacity: 0.45;
   pointer-events: none;
 }
+/* 저작자 표시는 라이선스 조건이라 오프라인에서도 읽혀야 한다.
+   링크만 죽이고 글자는 본문 대비를 유지한다. */
+body.is-offline .credit-item .needs-net,
+body.is-offline .offline-note .needs-net {
+  opacity: 1;
+  color: var(--text-2);
+  text-decoration: underline dotted;
+}
+
+/* ================= 저작자 표시 ================= */
+.credit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 20px 0 8px;
+}
+.credit-item {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+/* 대표사진에는 지역명·저작자가 이미지 안에 새겨져 있다. 잘라내면 그 표시가
+   반쯤 잘리므로 원본 16:9 비율을 그대로 둔다. */
+.credit-item img { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; }
+.credit-item figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px;
+  font-size: 0.86rem;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+.credit-item figcaption b { font-size: 0.95rem; color: var(--text); }
 
 /* ================= 푸터 ================= */
 footer {
