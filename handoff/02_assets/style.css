@@ -93,10 +93,6 @@ body {
   font-variant-numeric: tabular-nums;   /* 시각·날짜 자릿수 정렬 */
 }
 
-/* 원고에서 직접 삽입된 이미지가 뷰포트를 넘겨 가로 스크롤을 만들지 않게 한다.
-   (대표사진 원본이 1600px라 390px 화면에서 페이지 전체가 옆으로 밀렸다) */
-img { max-width: 100%; height: auto; }
-
 /* 작은 화면에서 글자를 키운다. 야외 사용 확률이 가장 높은 조건. */
 @media (max-width: 480px) {
   body { font-size: 17.5px; }
@@ -203,7 +199,7 @@ img { max-width: 100%; height: auto; }
 .sn-layers a {
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 38px;
   padding: 0 14px;
   font-size: 0.84rem;
   font-weight: 700;
@@ -218,7 +214,7 @@ img { max-width: 100%; height: auto; }
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 38px;
   padding: 0 13px;
   font-size: 0.84rem;
   font-weight: 600;
@@ -617,7 +613,7 @@ nav.pager a {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 40px;
   padding: 0 14px;
   font-size: 0.85rem;
   font-weight: 700;
@@ -777,7 +773,7 @@ section.places .note { margin: 2px 0 10px; }
 .pl-links a {
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 40px;
   padding: 0 12px;
   border-radius: 4px;
   background: var(--accent-soft);

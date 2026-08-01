@@ -115,7 +115,22 @@ TRACKER_SHEETS = [
     ("Phase8 Lock Status", "locks", "예약·운영 잠금"),
 ]
 
-DAY_RE = re.compile(r"Day\s*(\d+)\s*[—\-–]\s*(\d+)월\s*(\d+)일")
+DAY_RE = re.compile(r"Day\s*(\d+)\s*[—\-–·]\s*(\d+)월\s*(\d+)일")
+
+# 원본의 Day 섹션 헤딩. 레벨(#~######)과 섹션번호 접두어("5. ")가 챕터마다 다르다.
+#   `### Day 1 — 8월 29일 토요일`   (04·07)
+#   `## 5. Day 1 — 9월 25일 금요일` (06·08·09·10·11)
+#   `# 6. Day 1 — 9월 1일 화요일`   (05, regroup 단계에서 h2로 내려옴)
+SRC_DAY_HEADING_RE = re.compile(
+    r"^#{1,6}[ \t]*(?:\d+[A-Z]?[.)][ \t]*)*"
+    r"Day[ \t]*(\d+)[ \t]*[—–-][ \t]*(\d+)월[ \t]*(\d+)일[ \t]*([월화수목금토일])요일[ \t]*$")
+
+# 날짜가 없는 Day 참조 헤딩 (`## Day 1 비` 등). 챕터 로컬 번호라 전역 번호로 옮긴다.
+SRC_DAY_REF_RE = re.compile(r"^(#{1,6})[ \t]*Day[ \t]*(\d+)[ \t]*(?![—–-])(.*)$")
+
+# 인라인 VISUAL 토큰. 원고에는 이미지 자리표시자로 남아 있고 화면에 노출되면 안 된다.
+VISUAL_TOKEN_RE = re.compile(r"\{\{VISUAL:[A-Z0-9-]+\|[^}]*\}\}[ \t]*")
+FENCE_RE = re.compile(r"^[ \t]*(?:```|~~~)")
 
 # ---------------------------------------------------------------- 분류 체계
 # 지역 챕터의 h2 섹션을 카테고리로 재분류·재배치한다.
@@ -545,6 +560,72 @@ def parse_frontmatter(text):
     return meta, text.lstrip("\n")
 
 
+def strip_visual_tokens(md_text):
+    """인라인 `{{VISUAL:...}}` 토큰을 본문에서 걷어낸다.
+
+    토큰은 대부분 헤딩 앞머리에 붙어 있고 뒤에 실제 제목이 이어진다
+    (`### {{VISUAL:VIS-MAP-055|...}} 리옹 4박 전체 생활권과 동선 지도`).
+    토큰만 지우면 제목이 그대로 남으므로 내용 손실이 없다.
+
+    **펜스 코드블록 안은 건드리지 않는다.** 챕터 01의 '시각자료 표기' 절은
+    토큰 문법 자체를 예시로 보여주는 곳이라 지우면 설명이 무너진다.
+    """
+    out, in_fence, removed = [], False, 0
+    for line in md_text.splitlines():
+        if FENCE_RE.match(line):
+            in_fence = not in_fence
+            out.append(line)
+            continue
+        if not in_fence and "{{VISUAL:" in line:
+            line, n = VISUAL_TOKEN_RE.subn("", line)
+            removed += n
+        out.append(line)
+    text = "\n".join(out)
+    # 토큰이 헤딩 전체를 차지했던 경우의 안전장치 — 빈 헤딩은 지운다
+    text = re.sub(r"^#{1,6}[ \t]*$\n?", "", text, flags=re.M)
+    return text, removed
+
+
+def normalize_day_headings(md_text, chapter):
+    """Day 섹션 헤딩을 h2로 통일하고 Day 번호를 전체 여행 기준으로 바꾼다.
+
+    원본은 챕터 로컬 번호를 쓴다 — Paris의 `Day 16`이 실제로는 전체 Day 43이다.
+    데일리 페이지(`daily/day-43.html`)와 어긋나 현장에서 혼란을 만든다.
+    헤딩에 이미 날짜가 있으므로 날짜를 정본으로 삼아 번호를 역산한다.
+    원본 MD는 수정하지 않는다.
+    """
+    if chapter["kind"] != "region":
+        return md_text, 0
+    base = day_no(chapter["start"])
+    out, changed = [], 0
+    for line in md_text.splitlines():
+        m = SRC_DAY_HEADING_RE.match(line)
+        if m:
+            local, month, dom, weekday = int(m[1]), int(m[2]), int(m[3]), m[4]
+            d = date(TRIP_START.year, month, dom)
+            expected = WEEKDAY_KO[d.weekday()]
+            if expected != weekday:
+                sys.exit(f"Day 헤딩 요일 불일치({chapter['slug']}): {line.strip()}"
+                         f" — {d} 는 {expected}요일")
+            if not TRIP_START <= d <= TRIP_END:
+                sys.exit(f"Day 헤딩 날짜가 여행 기간 밖({chapter['slug']}): {line.strip()}")
+            if base + local - 1 != day_no(d):
+                sys.exit(f"Day 로컬번호와 날짜 불일치({chapter['slug']}): {line.strip()}"
+                         f" — 로컬 {local}은 전체 Day {base + local - 1}이어야 하는데"
+                         f" 날짜는 전체 Day {day_no(d)}")
+            out.append(f"## Day {day_no(d)} · {month}월 {dom}일 {expected}")
+            changed += 1
+            continue
+        m = SRC_DAY_REF_RE.match(line)
+        if m and m[3].strip():
+            # `## Day 1 비` 같은 참조 헤딩 — 레벨은 두고 번호만 전역으로 옮긴다
+            out.append(f"{m[1]} Day {base + int(m[2]) - 1} {m[3].strip()}")
+            changed += 1
+            continue
+        out.append(line)
+    return "\n".join(out), changed
+
+
 def md_convert(text):
     md = markdown.Markdown(
         extensions=["tables", "fenced_code",
@@ -780,8 +861,13 @@ def build_chapters():
     for i, c in enumerate(CHAPTERS):
         text = (SOURCE / c["path"]).read_text(encoding="utf-8")
         meta, body_md = parse_frontmatter(text)
+        # 토큰 제거가 먼저다 — 헤딩 텍스트가 목차·검색 인덱스·앵커의 원천이라
+        # md_convert 이후에 손대면 토큰이 data.js 로 새어 나간다.
+        body_md, n_tokens = strip_visual_tokens(body_md)
         if c["kind"] == "region":
             body_md, counts = regroup_regional(c["slug"], body_md)
+        # 분류는 원본 제목으로 끝난 뒤에 Day 헤딩을 정규화한다 (CAT_OVERRIDES 보존)
+        body_md, n_days = normalize_day_headings(body_md, c)
         body, toc_tokens = md_convert(body_md)
         flat = flatten_tokens(toc_tokens)
         body = mark_layer_headings(wrap_tables(
@@ -839,7 +925,14 @@ def build_chapters():
             encoding="utf-8")
         cat_info = ("  [" + " ".join(f"{k}:{v}" for k, v in counts.items()) + "]"
                     if c["kind"] == "region" else "")
-        print(f'  챕터 {c["slug"]}: {Path(c["path"]).name} → chapters/{c["slug"]}.html{cat_info}')
+        fixes = []
+        if n_tokens:
+            fixes.append(f"VISUAL토큰 -{n_tokens}")
+        if n_days:
+            fixes.append(f"Day헤딩 {n_days}")
+        fix_info = ("  (" + " · ".join(fixes) + ")") if fixes else ""
+        print(f'  챕터 {c["slug"]}: {Path(c["path"]).name} → '
+              f'chapters/{c["slug"]}.html{cat_info}{fix_info}')
 
 
 # ---------------------------------------------------------------- daily cards
@@ -1108,6 +1201,70 @@ def build_data_js():
 
 # ---------------------------------------------------------------- checks
 
+CODE_BLOCK_RE = re.compile(r"<pre\b.*?</pre>|<code\b.*?</code>", re.S)
+
+
+def check_visual_tokens():
+    """산출물에 VISUAL 토큰이 남으면 빌드를 중단한다.
+
+    검색 인덱스(`data.js`)까지 훑는다 — 헤딩 텍스트가 그대로 인덱싱되므로
+    HTML 만 검사하면 검색 결과에 토큰이 뜨는 것을 놓친다.
+    `<pre>`·`<code>` 안은 챕터 01이 토큰 문법을 예시로 보여주는 자리라 제외한다.
+    """
+    leftover = []
+    for f in sorted(SITE.rglob("*")):
+        if not f.is_file() or f.suffix not in (".html", ".js", ".json"):
+            continue
+        text = f.read_text(encoding="utf-8")
+        if f.suffix == ".html":
+            text = CODE_BLOCK_RE.sub("", text)
+        n = text.count("{{VISUAL:")
+        if n:
+            leftover.append(f"{f.relative_to(SITE)}: {n}개")
+    empty = []
+    for f in sorted(SITE.rglob("*.html")):
+        n = len(re.findall(r"<h[1-6][^>]*>\s*</h[1-6]>", f.read_text(encoding="utf-8")))
+        if n:
+            empty.append(f"{f.relative_to(SITE)}: {n}개")
+    if leftover or empty:
+        if leftover:
+            print("VISUAL 토큰 잔존:")
+            for x in leftover:
+                print("  " + x)
+        if empty:
+            print("빈 헤딩 잔존:")
+            for x in empty:
+                print("  " + x)
+        sys.exit(1)
+    print("VISUAL 토큰·빈 헤딩 검사: 이상 없음")
+
+
+def check_day_headings():
+    """Day 섹션 헤딩이 8개 지역 챕터 전부에서 h2인지, 전역 번호인지 검사한다."""
+    problems, total = [], 0
+    for c in CHAPTERS:
+        if c["kind"] != "region":
+            continue
+        text = (SITE / "chapters" / f'{c["slug"]}.html').read_text(encoding="utf-8")
+        h2 = re.findall(r"<h2[^>]*>\s*Day (\d+) · (\d+)월 (\d+)일", text)
+        stray = re.findall(r"<h([13-6])[^>]*>[^<]*Day \d+ · \d+월", text)
+        if stray:
+            problems.append(f'{c["slug"]}: Day 헤딩이 h2가 아님 (h{", h".join(stray)})')
+        for day, month, dom in h2:
+            expected = day_no(date(TRIP_START.year, int(month), int(dom)))
+            if int(day) != expected:
+                problems.append(f'{c["slug"]}: Day {day} · {month}/{dom} → 전체 Day {expected}')
+        total += len(h2)
+    if total != 50:
+        problems.append(f"Day 헤딩 총수 {total} (전환일 7일 양쪽 포함 50이어야 함)")
+    if problems:
+        print("Day 헤딩 검사 실패:")
+        for p in problems:
+            print("  " + p)
+        sys.exit(1)
+    print(f"Day 헤딩 검사: 8챕터 전부 h2 · 전역 번호 {total}건 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -1166,6 +1323,8 @@ def main():
     print("트래커 빌드:")
     build_tracker()
     build_data_js()
+    check_visual_tokens()
+    check_day_headings()
     check_links()
     check_dates()
     print(f"\n완료: {SITE} ({sum(1 for _ in SITE.rglob('*.html'))}개 HTML 페이지)")
