@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디자인 개선안 프리뷰 — 유럽 43일 가이드북</title>
+<style>
 /* ============================================================
    유럽 43일 가이드북 — style.css v2.0
    기존 v1 드롭인 교체본. 클래스명·구조 전부 호환.
@@ -92,10 +99,6 @@ body {
   overflow-wrap: break-word;
   font-variant-numeric: tabular-nums;   /* 시각·날짜 자릿수 정렬 */
 }
-
-/* 원고에서 직접 삽입된 이미지가 뷰포트를 넘겨 가로 스크롤을 만들지 않게 한다.
-   (대표사진 원본이 1600px라 390px 화면에서 페이지 전체가 옆으로 밀렸다) */
-img { max-width: 100%; height: auto; }
 
 /* 작은 화면에서 글자를 키운다. 야외 사용 확률이 가장 높은 조건. */
 @media (max-width: 480px) {
@@ -203,7 +206,7 @@ img { max-width: 100%; height: auto; }
 .sn-layers a {
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 38px;
   padding: 0 14px;
   font-size: 0.84rem;
   font-weight: 700;
@@ -218,7 +221,7 @@ img { max-width: 100%; height: auto; }
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 38px;
   padding: 0 13px;
   font-size: 0.84rem;
   font-weight: 600;
@@ -617,7 +620,7 @@ nav.pager a {
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 40px;
   padding: 0 14px;
   font-size: 0.85rem;
   font-weight: 700;
@@ -777,7 +780,7 @@ section.places .note { margin: 2px 0 10px; }
 .pl-links a {
   display: flex;
   align-items: center;
-  min-height: var(--tap);
+  min-height: 40px;
   padding: 0 12px;
   border-radius: 4px;
   background: var(--accent-soft);
@@ -922,3 +925,142 @@ footer {
   main { max-width: none; padding: 0; }
   body { background: #fff; font-size: 11pt; }
 }
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <button id="menu-btn" aria-label="메뉴 열기">☰</button>
+  <a class="tb-title" href="#">유럽 43일 가이드북</a>
+  <nav class="tb-links">
+    <a href="#">일정</a><a href="#">지역</a><a href="#">지도</a><a href="#">트래커</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <h1>Jason과 Julia의 2026 유럽 장기여행</h1>
+  <p class="period">2026-08-29 ~ 2026-10-10 · 43일 42박</p>
+  <a href="#" class="btn-today">오늘 일정 열기 →</a>
+</section>
+
+<h2>여정</h2>
+<ol class="timeline">
+<li>
+  <div class="tl-dates">8/29 – 9/1<b>3박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Barcelona · Sitges</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/1 – 9/4<b>3박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Girona · Collioure · Empordà</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/4 – 9/9<b>5박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Nice · Côte d’Azur</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/9 – 9/13<b>4박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Aix-en-Provence</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/13 – 9/17<b>4박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Luberon Farmhouse</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/17 – 9/21<b>4박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Avignon · Alpilles · Pont du Gard</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/21 – 9/25<b>4박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Lyon · Annecy</a><a class="tl-map" href="#">지도</a></div>
+</li><li>
+  <div class="tl-dates">9/25 – 10/10<b>15박</b></div>
+  <div class="tl-body"><a class="tl-title" href="#">Paris Long Stay</a><a class="tl-map" href="#">지도</a></div>
+</li>
+</ol>
+
+<h2>신규 컴포넌트</h2>
+<p class="note">기존 CSS에 없던 것들. 위험·미확정·피로도를 표현할 수단이 전무했습니다.</p>
+
+<h3>위험 플래그</h3>
+<p>
+  <span class="badge badge-p0">P0 연결</span>
+  <span class="badge badge-pending">미확정</span>
+  <span class="badge badge-done">저장 완료</span>
+  <span class="badge badge-rest">회복일</span>
+</p>
+
+<h3>피로도 — 색을 지워도 판독됨</h3>
+<p>
+  <span class="fatigue" data-v="2"><i class="on"></i><i class="on"></i><i></i><i></i><i></i> 2/5</span>
+  &nbsp;&nbsp;
+  <span class="fatigue" data-v="4"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i> 4/5</span>
+  &nbsp;&nbsp;
+  <span class="fatigue" data-v="5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i> 5/5</span>
+</p>
+
+<h3>추천등급 5종 — 모양으로 구분</h3>
+<p>
+  <span class="grade grade-essential">필수</span> &nbsp;
+  <span class="grade grade-priority">우선추천</span> &nbsp;
+  <span class="grade grade-optional">선택</span> &nbsp;
+  <span class="grade grade-alternative">대체</span> &nbsp;
+  <span class="grade grade-excluded">제외</span>
+</p>
+
+<h3>미확정 카드 — 확정값처럼 보이면 안 되는 항목</h3>
+<div class="pl-grid">
+  <div class="pl-card">
+    <div class="pl-body">
+      <span class="grade grade-essential">필수</span>
+      <b>Sagrada Família</b>
+      <p>1882년 시작된 성당. 내부 기둥 숲과 빛의 방향을 먼저 본다. 체류 90–100분.</p>
+      <div class="pl-links"><a href="#">공식 사이트</a><a href="#">지도</a></div>
+    </div>
+  </div>
+  <div class="pl-card pending">
+    <div class="pl-body">
+      <span class="badge badge-pending">미확정</span>
+      <b>Praktik Garden</b>
+      <p>숙소 후보. 실제 예약 확정 후 교체 필요. 이 주소로 이동하지 마십시오.</p>
+      <div class="pl-links"><a href="#">지도</a></div>
+    </div>
+  </div>
+</div>
+
+<h2>43일 카드</h2>
+<div class="daily-grid">
+  <a class="daily-item" href="#"><b>Day 1</b><span class="di-region">8/29 · Barcelona</span></a>
+  <a class="daily-item is-p0" href="#"><b>Day 4</b><span class="di-region">9/1 · 렌터카 인수</span></a>
+  <a class="daily-item is-p0" href="#"><b>Day 7</b><span class="di-region">9/4 · BCN→NCE</span></a>
+  <a class="daily-item" href="#"><b>Day 8</b><span class="di-region">9/5 · Nice</span></a>
+  <a class="daily-item is-p0" href="#"><b>Day 43</b><span class="di-region">10/10 · 귀국</span></a>
+</div>
+
+<h2>표</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Day</th><th>날짜</th><th>거점</th><th>권장 출발</th><th>최고 리스크</th></tr></thead>
+<tbody>
+<tr><td>12</td><td>9/9 수</td><td>Aix</td><td>08:30 Nice 출발</td><td>인수지연·체크인·주차</td></tr>
+<tr><td>13</td><td>9/10 목</td><td>Aix</td><td>08:00 시장</td><td>시장혼잡·보행</td></tr>
+<tr><td>14</td><td>9/11 금</td><td>Aix</td><td>07:30 출발</td><td>강풍·보트취소·산불통제</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="offline-note">
+  <span>지도 배경 타일은 인터넷 연결 시 표시됩니다. 본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</span>
+</p>
+
+</main>
+
+<footer>
+  <p>Jason과 Julia의 2026 유럽 장기여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
+</footer>
+
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="#" class="active"><b>◉</b><span>오늘</span></a>
+  <a href="#"><b>▤</b><span>일정</span></a>
+  <a href="#"><b>◇</b><span>지역</span></a>
+  <a href="#"><b>⌖</b><span>지도</span></a>
+  <a href="#"><b>▦</b><span>트래커</span></a>
+</nav>
+
+</body>
+</html>

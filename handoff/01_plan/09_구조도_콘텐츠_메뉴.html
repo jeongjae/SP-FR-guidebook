@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개선 사이트 — 콘텐츠 · 메뉴 구조</title>
+<style>
+:root{
+  --bg:#EFF2F1; --surface:#fff; --sunk:#E4E9E8;
+  --ink:#0F1A1E; --ink2:#34464D; --muted:#5C6D74;
+  --rail:#153A4E; --railink:#F2F6F6; --border:#C6D0CE;
+  --crit:#9E1B32; --caut:#7A5B00; --steady:#1F5E45; --rest:#3A5A9B;
+  --bcn:#8C3A2E;--gir:#A8521F;--nce:#0E6E86;--aix:#4F6129;
+  --lub:#92650F;--avn:#63447A;--lyo:#7A2E45;--par:#2F4A6B;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0C1416;--surface:#152023;--sunk:#1B2A2E;--ink:#E3EBEA;--ink2:#B7C5C8;
+  --muted:#93A3A8;--rail:#0A1519;--border:#2C3F45;
+  --crit:#E0596E;--caut:#D3A63A;--steady:#5FB894;--rest:#7E9DD8;
+  --bcn:#D97F6E;--gir:#E0955C;--nce:#5FB7CE;--aix:#9DB56A;
+  --lub:#D9B05A;--avn:#B18FC7;--lyo:#D1728C;--par:#85A8D1;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:17px/1.7 "Apple SD Gothic Neo","Pretendard","Noto Sans KR",-apple-system,BlinkMacSystemFont,sans-serif;
+  word-break:keep-all;font-variant-numeric:tabular-nums}
+.wrap{max-width:52rem;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:1.75rem;letter-spacing:-.02em;margin:0 0 6px}
+.lede{color:var(--ink2);margin:0 0 28px}
+h2{font-size:1.28rem;margin:2.4em 0 .6em;padding-bottom:.3em;border-bottom:2px solid var(--border);letter-spacing:-.01em}
+h3{font-size:1.06rem;margin:1.8em 0 .5em}
+.eyebrow{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+p{margin:.7em 0}
+code{background:var(--sunk);padding:1px 5px;border-radius:3px;font-size:.88em}
+
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:16px 18px;margin:16px 0}
+.panel.keep{border-left:5px solid var(--steady)}
+.panel.new{border-left:5px solid var(--rest)}
+.panel.warn{border-left:5px solid var(--caut)}
+
+pre.tree{background:var(--surface);border:1px solid var(--border);border-radius:4px;
+  padding:16px;overflow-x:auto;font:13.5px/1.75 ui-monospace,"SF Mono",Menlo,monospace;
+  color:var(--ink);margin:14px 0}
+pre.tree b{color:var(--rail);font-weight:700}
+pre.tree i{color:var(--muted);font-style:normal}
+pre.tree u{text-decoration:none;color:var(--steady);font-weight:700}
+pre.tree s{text-decoration:none;color:var(--crit);font-weight:700}
+
+table{border-collapse:collapse;width:100%;font-size:.95rem;background:var(--surface);margin:14px 0}
+th,td{padding:9px 11px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+thead th{background:var(--rail);color:var(--railink);font-size:.84rem;letter-spacing:.02em}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--sunk) 45%,transparent)}
+
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:3px;
+  font-size:.72rem;font-weight:700;letter-spacing:.02em;vertical-align:middle}
+.b-keep{background:var(--steady);color:#fff}
+.b-new{background:var(--rest);color:#fff}
+.b-chg{background:var(--caut);color:#fff}
+.b-del{background:var(--crit);color:#fff}
+
+/* 폰 목업 */
+.mock{display:flex;gap:18px;flex-wrap:wrap;margin:18px 0}
+.phone{width:236px;border:2px solid var(--border);border-radius:14px;overflow:hidden;background:var(--surface);flex:0 0 auto}
+.ph-top{background:var(--rail);color:var(--railink);padding:9px 10px;font-size:.78rem;font-weight:700;display:flex;gap:8px;align-items:center}
+.ph-body{padding:10px;font-size:.76rem;line-height:1.55;min-height:210px}
+.ph-body .grp{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:11px 0 3px;font-weight:700}
+.ph-body .it{padding:4px 6px;border-left:3px solid transparent;border-radius:3px}
+.ph-body .it span{display:block;font-size:.66rem;color:var(--muted)}
+.ph-body .sr{border:1.5px solid var(--border);border-radius:4px;padding:5px 8px;color:var(--muted);font-size:.72rem}
+.ph-tabs{display:flex;background:var(--rail);color:var(--railink)}
+.ph-tabs div{flex:1;text-align:center;padding:7px 0 6px;font-size:.6rem;opacity:.68;position:relative}
+.ph-tabs div.on{opacity:1;font-weight:700}
+.ph-tabs div.on::before{content:"";position:absolute;top:0;left:22%;right:22%;height:3px;background:var(--railink)}
+.ph-tabs b{display:block;font-size:.95rem;font-weight:400;line-height:1}
+.cap{font-size:.76rem;color:var(--muted);margin:6px 0 0;max-width:236px}
+
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.chip{padding:5px 11px;border-radius:4px;background:var(--sunk);color:var(--ink2);font-size:.78rem;font-weight:600}
+.chip.on{background:var(--rail);color:var(--railink)}
+hr{border:none;border-top:1px solid var(--border);margin:2.4em 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<p class="eyebrow">SP-FR-GUIDEBOOK</p>
+<h1>개선 사이트 — 콘텐츠 · 메뉴 구조</h1>
+<p class="lede">기존 shortcut 체계를 전부 유지하고, 빠진 진입점만 채웠다. 구조를 새로 만들지 않았다.</p>
+
+<div class="panel keep">
+<strong>기본 방침</strong> — 기존 사이트의 3층 내비게이션(상단바 · 드로어 · 하단탭)과 챕터 서브내비는
+이미 잘 설계돼 있다. <strong>바꾸는 것은 두 가지뿐이다</strong> — ① 하단탭에서 중복을 빼고 빠진 '지역'을 넣는다
+② 챕터 하나가 여러 페이지로 갈라지면서 그 안의 shortcut을 늘린다.
+</div>
+
+<h2>1. 메뉴 3층</h2>
+
+<div class="mock">
+  <div>
+    <div class="phone">
+      <div class="ph-top">☰ &nbsp;유럽 43일 가이드북</div>
+      <div class="ph-body">
+        <div class="sr">🔍 장소 · 섹션 검색</div>
+        <div class="it" style="border-left-color:var(--crit)"><b>◉ 오늘</b><span>날짜 자동 판정 · Europe/Paris</span></div>
+        <div class="it"><b>🗓 데일리 43일 카드</b></div>
+        <div class="grp">시작하기</div>
+        <div class="it">01 사용법</div>
+        <div class="it">02 하이라이트</div>
+        <div class="it">03 Master Itinerary</div>
+        <div class="grp">지역 가이드</div>
+        <div class="it" style="border-left-color:var(--bcn)">04 Barcelona · Sitges<span>8/29–9/1 · 3박</span></div>
+        <div class="it" style="border-left-color:var(--gir)">05 Girona · Collioure<span>9/1–9/4 · 3박</span></div>
+        <div class="it" style="border-left-color:var(--nce)">06 Nice · Côte d'Azur<span>9/4–9/9 · 5박</span></div>
+        <div class="it" style="border-left-color:var(--aix)">07 Aix-en-Provence<span>9/9–9/13 · 4박</span></div>
+        <div class="it" style="border-left-color:var(--lub)">08 Luberon<span>9/13–9/17 · 4박</span></div>
+        <div class="it" style="border-left-color:var(--avn)">09 Avignon · Alpilles<span>9/17–9/21 · 4박</span></div>
+        <div class="it" style="border-left-color:var(--lyo)">10 Lyon · Annecy<span>9/21–9/25 · 4박</span></div>
+        <div class="it" style="border-left-color:var(--par)">11 Paris Long Stay<span>9/25–10/10 · 15박</span></div>
+        <div class="grp">실행지도</div>
+        <div class="it">8개 도시</div>
+        <div class="it" style="border-left-color:var(--rest)">⌖ 오프라인 지도 준비 <span class="badge b-new">신규</span></div>
+        <div class="grp">트래커</div>
+        <div class="it">6개 시트</div>
+        <div class="grp">기타</div>
+        <div class="it" style="border-left-color:var(--rest)">사진 저작자 표시 <span class="badge b-new">신규</span></div>
+      </div>
+    </div>
+    <p class="cap"><strong>드로어</strong> — 그룹 구성과 체류기간 병기를 그대로 유지. 지역 링크에 색 리본만 추가해 8개 거점을 눈으로 구분.</p>
+  </div>
+
+  <div>
+    <div class="phone">
+      <div class="ph-top">◂ &nbsp;지로나 대성당</div>
+      <div class="ph-body">
+        <div style="font-size:.66rem;color:var(--muted)">홈 › Girona › 방문지 › 대성당</div>
+        <div style="margin:9px 0 4px;font-size:.6rem;letter-spacing:.14em;color:var(--muted);font-weight:700">CHAPTER 05 · GIRONA</div>
+        <div style="font-size:1rem;font-weight:700;line-height:1.3">지로나 대성당</div>
+        <div style="color:var(--ink2);font-size:.72rem">23m를 기둥 없이 건너뛴 결정</div>
+        <hr style="margin:10px 0">
+        <div style="color:var(--crit);font-size:.7rem;font-weight:700">■ 필수</div>
+        <div style="margin-top:8px;color:var(--ink2)">8세기 초기 교회가 모스크로 바뀌었다가…</div>
+        <div style="margin-top:9px;background:var(--surface);border-left:4px solid var(--rest);padding:7px 9px;font-size:.72rem">
+          <b>관람 요령 ①</b><br>정면 끝까지 한 번에 보라
+        </div>
+      </div>
+      <div class="ph-tabs">
+        <div class="on"><b>◉</b>오늘</div><div><b>▤</b>일정</div><div><b>◇</b>지역</div><div><b>⌖</b>지도</div><div><b>▦</b>트래커</div>
+      </div>
+    </div>
+    <p class="cap"><strong>하단탭 + 빵부스러기</strong> — 탭에서 '홈'을 빼고 '지역'을 넣었다. 깊은 페이지에는 빵부스러기로 복귀 경로 제공.</p>
+  </div>
+</div>
+
+<h3>하단탭 변경</h3>
+<table>
+<thead><tr><th>칸</th><th>기존</th><th>개선</th><th>사유</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>🏠 홈</td><td><b>◉ 오늘</b> <span class="badge b-chg">이동</span></td><td>하루 8–15회 진입. 첫 칸이 맞다</td></tr>
+<tr><td>2</td><td>📅 일정</td><td>▤ 일정 <span class="badge b-keep">유지</span></td><td>—</td></tr>
+<tr><td>3</td><td>📍 오늘</td><td><b>◇ 지역</b> <span class="badge b-new">신규</span></td><td>8챕터가 드로어 2뎁스에만 있었다</td></tr>
+<tr><td>4</td><td>🗺️ 지도</td><td>⌖ 지도 <span class="badge b-keep">유지</span></td><td>—</td></tr>
+<tr><td>5</td><td>📋 트래커</td><td>▦ 트래커 <span class="badge b-keep">유지</span></td><td>—</td></tr>
+<tr><td>—</td><td>홈</td><td><span class="badge b-del">탭에서 제거</span></td><td>8구간 타임라인이라 '일정'과 중복. 상단바 제목으로 접근</td></tr>
+</tbody>
+</table>
+
+<div class="panel warn">
+<strong>이모지 → 기하 문자</strong> — 🏠📅📍🗺️📋 는 플랫폼마다 렌더가 다르고 색을 통제할 수 없다.
+짙은 청색 탭바 위에서 대비가 보장되지 않는다. <code>◉ ▤ ◇ ⌖ ▦</code> 는 텍스트 색을 따르므로
+활성·비활성이 정확히 표현된다.
+</div>
+
+<hr>
+
+<h2>2. Shortcut 체계 — 유지 · 강화</h2>
+
+<p>기존 사이트의 최대 강점이다. <strong>하나도 없애지 않았다.</strong></p>
+
+<table>
+<thead><tr><th>Shortcut</th><th>위치</th><th>처리</th><th>내용</th></tr></thead>
+<tbody>
+<tr>
+  <td><strong>오늘 버튼</strong></td><td>드로어 · 하단탭</td>
+  <td><span class="badge b-chg">강화</span></td>
+  <td>Europe/Paris 기준 날짜 판정 유지. <b>하단탭 첫 칸으로 승격.</b> 도착 페이지가 PNG 1장에서 텍스트 화면으로 바뀜</td>
+</tr>
+<tr>
+  <td><strong>드로어 검색</strong></td><td>드로어 최상단</td>
+  <td><span class="badge b-chg">강화</span></td>
+  <td>인덱스 1,377건 유지 + <b>방문지 페이지·일자 시간표 추가</b>. 입력창 44px로</td>
+</tr>
+<tr>
+  <td><strong>체류기간 병기</strong></td><td>드로어 지역 목록</td>
+  <td><span class="badge b-keep">유지</span></td>
+  <td>+ 지역색 리본 8종</td>
+</tr>
+<tr>
+  <td><strong>Layer 필터 알약</strong></td><td>챕터 서브내비</td>
+  <td><span class="badge b-chg">개편</span></td>
+  <td>챕터가 분할되므로 <b>11대 카테고리 칩</b>으로 전환</td>
+</tr>
+<tr>
+  <td><strong>Day 칩</strong></td><td>챕터 서브내비</td>
+  <td><span class="badge b-chg">수정</span></td>
+  <td>현재 04·07에서 누락(H3 사용). <b>8챕터 전부 동작</b>하도록</td>
+</tr>
+<tr>
+  <td><strong>관련 리소스 알약</strong></td><td>본문 하단</td>
+  <td><span class="badge b-keep">유지</span></td>
+  <td>32px → 44px</td>
+</tr>
+<tr>
+  <td><strong>맨 위로</strong></td><td>우하단</td>
+  <td><span class="badge b-keep">유지</span></td>
+  <td>—</td>
+</tr>
+<tr>
+  <td><strong>이전/다음</strong></td><td>본문 하단</td>
+  <td><span class="badge b-chg">확장</span></td>
+  <td>챕터 간 → <b>방문지·일자 간에도</b></td>
+</tr>
+<tr>
+  <td>빵부스러기</td><td>상단바 아래</td>
+  <td><span class="badge b-new">신규</span></td>
+  <td>페이지가 깊어지므로 필수</td>
+</tr>
+<tr>
+  <td>지역 인덱스</td><td>하단탭 3번</td>
+  <td><span class="badge b-new">신규</span></td>
+  <td>8챕터 한 화면</td>
+</tr>
+<tr>
+  <td>오프라인 지도 준비</td><td>드로어 · 지도</td>
+  <td><span class="badge b-new">신규</span></td>
+  <td>KML 8개 → Organic Maps</td>
+</tr>
+</tbody>
+</table>
+
+<h3>챕터 서브내비 — 개편안</h3>
+<div class="panel">
+<div class="chips">
+  <span class="chip on">개요</span><span class="chip">일정</span><span class="chip">방문지</span>
+  <span class="chip">먹거리</span><span class="chip">교통</span><span class="chip">숙박</span>
+  <span class="chip">예약</span><span class="chip">경비</span><span class="chip">여행팁</span><span class="chip">대안</span>
+</div>
+<div class="chips">
+  <span class="chip">D1 9/1</span><span class="chip">D2 9/2</span><span class="chip">D3 9/3</span><span class="chip">D4 9/4</span>
+</div>
+<p style="margin:.6em 0 0;font-size:.86rem;color:var(--ink2)">
+가로 스크롤 유지. 현재는 앵커 이동이지만 개편 후에는 <strong>페이지 이동</strong>이 된다.
+챕터 어느 페이지에서든 같은 칩이 보이므로 이동 비용은 오히려 준다.</p>
+</div>
+
+<hr>
+
+<h2>3. 전체 사이트맵</h2>
+
+<pre class="tree">
+<b>/</b>
+├─ index.html                     홈 · 8구간 타임라인
+├─ <u>credits.html</u>                   <s>신규</s> 사진 저작자 표시 (CC 의무)
+│
+├─ <b>chapters/</b>
+│  ├─ <u>index.html</u>                  <s>신규</s> 지역 인덱스 — 하단탭 '지역'
+│  ├─ 01.html  02.html  03.html    사용법 · 하이라이트 · Master Itinerary
+│  │
+│  ├─ <b>05/</b>  ← 분할 파일럿          <i>마크다운 5개 → 페이지 20장</i>
+│  │  ├─ index.html                챕터 허브 (개요 + 전체 진입)
+│  │  ├─ day-1 ~ day-4.html        일자 4
+│  │  ├─ place-cathedral.html      ┐
+│  │  ├─ place-walls.html          │
+│  │  ├─ place-call.html           │
+│  │  ├─ place-onyar.html          │
+│  │  ├─ place-collioure-market    │ 방문지 11
+│  │  ├─ place-chateau-royal       │ 각 페이지에 사진·링크·관람요령
+│  │  ├─ place-fauvisme            │
+│  │  ├─ place-peralada            │
+│  │  ├─ place-pals                │
+│  │  ├─ place-peratallada         │
+│  │  ├─ place-calella             ┘
+│  │  ├─ food.html                 먹거리
+│  │  ├─ transport.html            교통
+│  │  ├─ cost.html                 경비
+│  │  └─ <u>alternatives.html</u>         <s>신규</s> 대안 루트 (배제 경로)
+│  │
+│  └─ 04 06 07 08 09 10 11         <i>단계적 전환. 그전까지 기존 단일 페이지</i>
+│
+├─ <b>daily/</b>
+│  ├─ index.html                   43일 카드 목록
+│  └─ day-01 ~ day-43.html         <s>개편</s> PNG 1장 → 텍스트 화면
+│                                  <i>감사요약·피로도·시간표·장소·지도·원문·카드</i>
+├─ <b>maps/</b>
+│  ├─ index.html                   실행지도 8종
+│  ├─ barcelona … paris.html       도시별
+│  ├─ <u>offline.html</u>                 <s>신규</s> Organic Maps 임포트 안내
+│  └─ <u>kml/</u>                         <s>신규</s> KML 8개 직접 다운로드
+│
+└─ <b>tracker/</b>
+   ├─ index.html
+   └─ itinerary · reservations · transport
+      accommodation · dashboard · locks
+</pre>
+
+<hr>
+
+<h2>4. 챕터 내부 콘텐츠 구조</h2>
+
+<p><strong>11대 카테고리 골격은 그대로 유지한다.</strong> 8챕터에 일관 적용된 이 구조가 이 사이트 최대 자산이다.
+바뀌는 것은 <em>한 페이지 안의 섹션</em>이던 것이 <em>독립 페이지</em>가 된다는 점뿐이다.</p>
+
+<pre class="tree">
+<b>Chapter 05 · Girona</b>
+│
+├─ <b>허브</b> index.html
+│   ├ 지역소개  Editor's Verdict · 다섯 개의 층 · 3박이 하는 일
+│   ├ 일정 카드 4       → day-N.html
+│   ├ 방문지 카드 11    → place-*.html
+│   └ 주제 카드 4       → food / transport / cost / alternatives
+│
+├─ <b>일정</b>  day-1 … day-4
+│   ├ 오늘의 목표 · 테마
+│   ├ 방문지 링크 <i>(중복 서술 없음. 링크만)</i>
+│   ├ 역산 기준 · 위험 플래그
+│   └ 지연 시 대체
+│
+├─ <b>방문지</b>  place-*  ← <u>보강의 핵심</u>
+│   ├ 등급 배지        ■ 필수 / ● 우선추천 / ○ 선택 / ◇ 대체 / ▨ 제외
+│   ├ 무엇인가         배경·역사·의미  <i>서술체</i>
+│   ├ 핵심             이 장소를 보는 단 하나의 축
+│   ├ 관람 요령        번호 매긴 실행 지시  <i>인용 블록</i>
+│   ├ 사진             <i>페이지가 분리돼 자유롭게 삽입 가능</i>
+│   ├ 상호 링크        "팔스는 복원, 여기는 원형" → 팔스 페이지
+│   └ 실용             요금·소요·주의  <i>재확인 배지</i>
+│
+└─ <b>주제</b>
+    ├ 먹거리      요리 이해 → 주문할 것 → 날짜별 → 시장
+    ├ 교통        국경 → 통행료 → 연료 → 운전 → 주차
+    ├ 경비        구조 → 입장료 → 절감 → 결제
+    └ 대안 루트   우선순위표 → 개별 (왜 뺐나 / 넣는 법)
+</pre>
+
+<div class="panel new">
+<strong>왜 분할하는가</strong> — 기존은 큰 마크다운 1개 → HTML 1장 + 앵커였다.
+대성당에 사진 5장과 공식 링크를 붙이면 <strong>챕터 전체가 무거워진다.</strong>
+분할하면 각 방문지가 독립 URL을 가지므로 자유롭게 보강할 수 있고, 상호 링크도 가능해진다.
+<br><br>
+<strong>관리 부담은 늘지 않는다.</strong> authoring 파일은 5개고 output만 20장이다.
+<code>places.md</code> 하나를 편집하면 방문지 페이지 11장이 나온다.
+</div>
+
+<hr>
+
+<h2>5. 콘텐츠 밀도 — 현재와 목표</h2>
+
+<table>
+<thead><tr><th>카테고리</th><th>현재 평균</th><th>목표</th><th>비고</th></tr></thead>
+<tbody>
+<tr><td>일정</td><td>8,552자</td><td>유지</td><td>이미 충분. 상용 가이드북 이상</td></tr>
+<tr><td>여행정보</td><td>7,005자</td><td>유지</td><td>—</td></tr>
+<tr><td>지역소개</td><td>3,803자<br><small style="color:var(--muted)">05는 1,112자</small></td><td>5,000자</td><td>층위 나열 → 서술</td></tr>
+<tr><td>여행팁</td><td>2,415자</td><td>유지</td><td>—</td></tr>
+<tr><td>숙박</td><td>2,445자</td><td>2,500자</td><td>얇은 3개만</td></tr>
+<tr><td>먹거리</td><td>2,077자</td><td>4,000자</td><td>식당명은 있으나 무엇을 시킬지 없음</td></tr>
+<tr><td>교통</td><td style="color:var(--crit);font-weight:700">854자</td><td>2,000자</td><td>주차 금지목록뿐. 국경·톨·연료 부재</td></tr>
+<tr><td>예약</td><td>822자</td><td>유지</td><td>—</td></tr>
+<tr><td>경비</td><td style="color:var(--crit);font-weight:700">191자</td><td>1,200자</td><td><b>6챕터가 139자 동일 — 플레이스홀더</b></td></tr>
+<tr><td><b>방문지</b></td><td>1문장 요약</td><td>3–4문단</td><td>관람 요령 신설</td></tr>
+<tr><td><b>대안 루트</b></td><td>—</td><td>3,000자</td><td>신설</td></tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>6. 요약 — 무엇이 바뀌는가</h2>
+
+<table>
+<thead><tr><th>층</th><th>유지</th><th>변경 · 신규</th></tr></thead>
+<tbody>
+<tr>
+  <td><b>상단바</b></td>
+  <td>☰ · 제목 · 데스크톱 링크</td>
+  <td>터치 타깃 44px</td>
+</tr>
+<tr>
+  <td><b>드로어</b></td>
+  <td>검색 · 4개 그룹 · 체류기간 병기 · 오늘/데일리 shortcut</td>
+  <td>지역색 리본 · 오프라인 지도 · 저작자 표시</td>
+</tr>
+<tr>
+  <td><b>하단탭</b></td>
+  <td>5칸 구성</td>
+  <td>오늘을 1번으로 · 지역 신설 · 홈 제거 · 기하 문자 · 56px</td>
+</tr>
+<tr>
+  <td><b>챕터 서브내비</b></td>
+  <td>가로 스크롤 · Day 칩</td>
+  <td>Layer → 카테고리 칩 · 8챕터 전부 동작</td>
+</tr>
+<tr>
+  <td><b>챕터 본문</b></td>
+  <td><b>11대 카테고리 골격</b></td>
+  <td>단일 페이지 → 분할 (방문지 11 독립 URL)</td>
+</tr>
+<tr>
+  <td><b>데일리</b></td>
+  <td>43일 · Phase4 구분 · Europe/Paris 판정</td>
+  <td>PNG 1장 → 텍스트 화면</td>
+</tr>
+<tr>
+  <td><b>지도</b></td>
+  <td>8도시 · Google Maps 딥링크</td>
+  <td>오프라인 임포트 안내 · KML 다운로드</td>
+</tr>
+<tr>
+  <td><b>트래커</b></td>
+  <td>6시트 전부</td>
+  <td>미확정 표기 적용</td>
+</tr>
+</tbody>
+</table>
+
+<div class="panel keep" style="margin-top:22px">
+<strong>정보구조를 새로 만들지 않았다.</strong> 벤치마킹 결과 기존 11대 카테고리 골격은
+Wanderlog·TripIt·트리플·Audley 어느 쪽과 비교해도 우위였다.
+바꾸는 것은 <strong>진입 경로 2개(지역 탭·빵부스러기)</strong>와
+<strong>페이지 단위(챕터 → 방문지)</strong> 둘뿐이다.
+</div>
+
+</div>
+</body>
+</html>
