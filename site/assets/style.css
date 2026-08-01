@@ -817,6 +817,30 @@ section.places .note { margin: 2px 0 10px; }
 .grade-excluded::before    { content: "▨"; }
 
 /* ================= 데일리 가이드 ================= */
+/* ================= 분할 챕터 — 빵부스러기 · 부제 ================= */
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 4px;
+  font-size: 0.84rem;
+  color: var(--text-2);
+}
+.crumbs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding-right: 2px;
+  color: var(--accent);
+}
+.page-sub {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
 /* ================= 데일리 — 텍스트 우선 ================= */
 .day-flags {
   display: flex;
