@@ -62,7 +62,7 @@ CHAPTERS = [
          kind="intro", title="전체 여행 하이라이트", sub="43일의 경험 설계"),
     dict(path=f"{CORE}/03_Whole_Trip_Master_Itinerary_v1.2.md", slug="03", name="itinerary",
          kind="schedule", title="43일 Master Itinerary", sub="전체 일정·실행성 감사 반영"),
-    dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v1.6.md", slug="04", name="barcelona", kind="region",
+    dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v2.0.md", slug="04", name="barcelona", kind="region",
          title="Barcelona · Sitges", start=date(2026, 8, 29), end=date(2026, 9, 1),
          nights=3, map="barcelona.html", region="Barcelona"),
     dict(path=f"{REGIONAL}/05_Girona_Collioure_Emporda_v2.1.md", slug="05", name="girona", kind="region",
@@ -245,6 +245,27 @@ CAT_OVERRIDES = {
     ("05", "절감 여지"): "cost",
     ("05", "결제"): "cost",
     ("05", "우선순위 요약"): "tips",
+    # 검증 등록부에서 생성되는 섹션 — 출발 전에 잠그는 정보라 예약으로 보낸다
+    **{(s, "공식 확인 정보와 재확인 대상"): "booking"
+       for s in ("04", "05", "06", "07", "08", "09", "10", "11")},
+    **{(s, "검증 상태"): "appendix"
+       for s in ("04", "05", "06", "07", "08", "09", "10", "11")},
+    # Barcelona v2.0 보강본 신설 섹션
+    ("04", "카탈루냐 요리의 기본 문법"): "food",
+    ("04", "시체스의 xató"): "food",
+    ("04", "이 구간의 식사 전략"): "food",
+    ("04", "시간대"): "food",
+    ("04", "이 구간의 성격 — 아직 차가 없다"): "transport",
+    ("04", "지하철·버스"): "transport",
+    ("04", "Barcelona Sants — Day 4의 기점"): "transport",
+    ("04", "시체스까지"): "transport",
+    ("04", "저배출구역 (ZBE)"): "transport",
+    ("04", "3박 4일 구조 (2인)"): "cost",
+    ("04", "입장료 — 이 구간의 특징"): "cost",
+    ("04", "절감 여지"): "cost",
+    ("04", "결제"): "cost",
+    ("04", "우선순위"): "tips",
+    ("04", "이 3박이 여행 전체에서 하는 일"): "intro",
     # Nice v2.0 보강본 신설 섹션
     ("06", "이 5박이 여행 전체에서 하는 일"): "intro",
     ("06", "이 도시를 이해하는 축"): "intro",
@@ -1359,6 +1380,154 @@ def fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero=0):
     return ("  (" + " · ".join(bits) + ")") if bits else ""
 
 
+VERIFY_MD = SOURCE / "OPERATIONS" / "116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md"
+REVERIFY_MD = SOURCE / "OPERATIONS" / "41_Operational_Variables_and_Reverification_Register_v1.0.md"
+GATE_MD = SOURCE / "OPERATIONS" / "117_Departure_and_Daily_Reverification_Calendar_v1.0.md"
+
+# 검증 상태 → 화면 표기. 재확인이 필요한 상태에는 배지를 단다.
+VERIFY_STATUS = {
+    "VERIFIED": ("확인됨", False),
+    "CORRECTED": ("정정됨", False),
+    "VERIFIED_CURRENT": ("현재 기준 확인", True),
+    "CONFLICT_RECHECK": ("출처 간 불일치", True),
+    "DATE_GATE": ("당일 확정", True),
+}
+# 116·41 이 쓰는 지역 이름 → 챕터 슬러그
+VERIFY_REGION = {
+    "Barcelona": "04", "Girona": "05", "Nice": "06", "Aix": "07", "Aix/Cassis": "07",
+    "Luberon": "08", "Avignon": "09", "Lyon": "10", "Paris": "11",
+}
+
+
+def md_table_rows(text, header_has):
+    """머리글에 header_has 가 모두 들어간 표의 데이터 행을 돌려준다."""
+    lines, out, cols = text.splitlines(), [], None
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if not (s.startswith("|") and s.endswith("|")):
+            cols = None
+            continue
+        cells = [c.strip() for c in s.strip("|").split("|")]
+        if all(re.fullmatch(r":?-{2,}:?", c) for c in cells):
+            continue
+        if cols is None:
+            if all(any(h in c for c in cells) for h in header_has):
+                cols = cells
+            continue
+        out.append(dict(zip(cols, cells)))
+    return out
+
+
+def load_verification():
+    """공식자료 검증표(116)를 챕터 슬러그별로 묶는다."""
+    rows = md_table_rows(VERIFY_MD.read_text(encoding="utf-8"),
+                         ["ID", "지역", "장소", "상태", "확인내용", "공식출처"])
+    by_slug = {}
+    for r in rows:
+        slug = VERIFY_REGION.get(r["지역"])
+        if slug:
+            by_slug.setdefault(slug, []).append(r)
+    return by_slug
+
+
+def load_reverify():
+    """지역별 재확인 항목과 최종 확인시점(41 §3)."""
+    rows = md_table_rows(REVERIFY_MD.read_text(encoding="utf-8"),
+                         ["지역", "재확인 항목", "최종 확인시점"])
+    return {VERIFY_REGION[r["지역"]]: r for r in rows if r["지역"] in VERIFY_REGION}
+
+
+def load_gates():
+    """날짜별 핵심 게이트(117)를 날짜로 푼다."""
+    rows = md_table_rows(GATE_MD.read_text(encoding="utf-8"), ["날짜", "확인"])
+    out = []
+    for r in rows:
+        for m in re.finditer(r"(\d+)/(\d+)", r["날짜"]):
+            d = date(TRIP_START.year, int(m[1]), int(m[2]))
+            if TRIP_START <= d <= TRIP_END:
+                out.append((d, r["확인"]))
+    return out
+
+
+def verification_block(c, verified, reverify, gates):
+    """공식 출처로 확인된 운영정보와 재확인 대상을 챕터에 싣는다.
+
+    저장소의 검증 등록부에서 그대로 뽑는다 — 새로 지어낸 사실이 없다.
+    확정이 아닌 값에는 재확인 배지를 달아 확정처럼 보이지 않게 한다.
+    """
+    rows = verified.get(c["slug"], [])
+    rv = reverify.get(c["slug"])
+    mine = [(d, x) for d, x in gates if c["start"] <= d <= c["end"]]
+    if not (rows or rv or mine):
+        return ""
+
+    out = ["## 공식 확인 정보와 재확인 대상", "",
+           "출발 전 공식 출처로 확인한 항목이다. 확정이 아닌 값에는 재확인 표시를",
+           "달았다. 계절·행사에 따라 바뀌므로 방문 전 공식 페이지를 다시 본다.", ""]
+
+    if rows:
+        out += ["### 공식 출처 확인 항목", "",
+                "| 장소 | 항목 | 상태 | 확인 내용 | 출처 |", "|---|---|---|---|---|"]
+        for r in rows:
+            label, pending = VERIFY_STATUS.get(r["상태"], (r["상태"], True))
+            badge = " {{badge:pending|재확인}}" if pending else ""
+            src = re.sub(r"\[[^\]]*\]\(([^)]+)\)", r"[공식](\1)", r["공식출처"])
+            out.append(f'| {r["장소"]} | {r["항목"]} | {label}{badge} | '
+                       f'{r["확인내용"]} | {src} |')
+        out.append("")
+        acts = [r for r in rows if r.get("조치")]
+        if acts:
+            out += ["**출발 전 조치**", ""]
+            out += [f'- {r["장소"]} — {r["조치"]}' for r in acts]
+            out.append("")
+
+    if rv:
+        out += ["### 이 지역에서 다시 확인할 것", "",
+                f'{rv["재확인 항목"]} {{{{badge:pending|재확인}}}}', "",
+                f'**최종 확인시점** {rv["최종 확인시점"]}', ""]
+
+    if mine:
+        out += ["### 날짜에 걸린 확인", "",
+                "| 날짜 | 확인 |", "|---|---|"]
+        for d, what in mine:
+            out.append(f'| Day {day_no(d)} · {d.month}월 {d.day}일 '
+                       f'{WEEKDAY_KO[d.weekday()]} | {what} |')
+        out.append("")
+
+    src_names = []
+    if rows:
+        src_names.append("공식자료 검증표(116)")
+    if rv:
+        src_names.append("변동정보·재확인 등록부(41)")
+    if mine:
+        src_names.append("출발 전·날짜별 재검증 달력(117)")
+    out += [f'> 출처 — {" · ".join(src_names)}. '
+            f'본문은 이 등록부를 그대로 옮긴 것이고 새로 추가한 사실은 없다.', ""]
+    return "\n".join(out)
+
+
+def verification_status_block(c, verified, reverify, gates):
+    """챕터 말미의 검증 상태표. Girona 보강본의 형식을 따른다."""
+    rows = verified.get(c["slug"], [])
+    rv = reverify.get(c["slug"])
+    mine = [(d, x) for d, x in gates if c["start"] <= d <= c["end"]]
+    if not (rows or rv or mine):
+        return ""
+    out = ["## 검증 상태", "", "| 항목 | 상태 |", "|---|---|"]
+    for r in rows:
+        label, pending = VERIFY_STATUS.get(r["상태"], (r["상태"], True))
+        mark = f"**{label}** — 방문 전 공식 페이지 재확인" if pending else label
+        out.append(f'| {r["장소"]} · {r["항목"]} | {mark} |')
+    if rv:
+        out.append(f'| 지역 재확인 항목 | **미확정** — {rv["최종 확인시점"]} |')
+    if mine:
+        out.append(f'| 날짜 게이트 {len(mine)}건 | **당일 확정** |')
+    out += [f'| 방문지 해설 | Phase 9D 공식링크 정리분 |',
+            f'| 숙소·식당·공연 가격 | **미확정** — Phase 8B 예약 완료 전 |', ""]
+    out += ["> 이 표는 저장소의 검증 등록부에서 생성된다. 등록부가 갱신되면 함께 바뀐다.", ""]
+    return "\n".join(out)
+
+
 def write_legacy_redirect(c):
     """기존 번호 URL(`chapters/05.html`)에 리다이렉트를 남긴다.
 
@@ -1389,7 +1558,16 @@ def write_legacy_redirect(c):
 """, encoding="utf-8")
 
 
+VERIFIED_FACTS = {}
+REVERIFY_ITEMS = {}
+DATE_GATES = []
+
+
 def build_chapters():
+    global VERIFIED_FACTS, REVERIFY_ITEMS, DATE_GATES
+    VERIFIED_FACTS = load_verification()
+    REVERIFY_ITEMS = load_reverify()
+    DATE_GATES = load_gates()
     out_dir = SITE / "chapters"
     out_dir.mkdir(parents=True, exist_ok=True)
     by_file = {Path(c["path"]).name: c for c in CHAPTERS}
@@ -1401,7 +1579,14 @@ def build_chapters():
         # 토큰 제거가 먼저다 — 헤딩 텍스트가 목차·검색 인덱스·앵커의 원천이라
         # md_convert 이후에 손대면 토큰이 data.js 로 새어 나간다.
         body_md, n_tokens = strip_visual_tokens(body_md)
+        n_verify = 0
         if c["kind"] == "region":
+            # 검증 등록부 블록은 분류 이전에 붙인다. 그래야 카테고리로 배분된다.
+            vb = verification_block(c, VERIFIED_FACTS, REVERIFY_ITEMS, DATE_GATES)
+            sb = verification_status_block(c, VERIFIED_FACTS, REVERIFY_ITEMS, DATE_GATES)
+            if vb or sb:
+                body_md = body_md.rstrip() + "\n\n" + vb + "\n" + sb
+                n_verify = 1
             body_md, counts = regroup_regional(c["slug"], body_md, chapter_rel(c))
         # 분류는 원본 제목으로 끝난 뒤에 Day 헤딩을 정규화한다 (CAT_OVERRIDES 보존)
         body_md, n_days = normalize_day_headings(body_md, c)
