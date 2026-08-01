@@ -65,7 +65,7 @@ CHAPTERS = [
     dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v1.6.md", slug="04", name="barcelona", kind="region",
          title="Barcelona · Sitges", start=date(2026, 8, 29), end=date(2026, 9, 1),
          nights=3, map="barcelona.html", region="Barcelona"),
-    dict(path=f"{REGIONAL}/05_Girona_Collioure_Emporda_v1.6.md", slug="05", name="girona", kind="region",
+    dict(path=f"{REGIONAL}/05_Girona_Collioure_Emporda_v2.1.md", slug="05", name="girona", kind="region",
          title="Girona · Collioure · Empordà", start=date(2026, 9, 1), end=date(2026, 9, 4),
          nights=3, map="girona.html", region="Girona"),
     dict(path=f"{REGIONAL}/06_Nice_Cote_d_Azur_v1.8.md", slug="06", name="nice", kind="region",
@@ -172,11 +172,11 @@ CAT_LABEL = dict(CATEGORIES)
 
 # 제목 키워드 규칙 — 먼저 맞는 규칙이 이긴다 (번호 접두어 제거 후 적용)
 CAT_RULES = [
-    ("appendix", r"공식자료|검증 기록|검증 범위|검증 출처|참고 출처|참고자료|편집 메모|최종 결론"
+    ("appendix", r"공식자료|검증 상태|검증 기록|검증 범위|검증 출처|참고 출처|참고자료|편집 메모|최종 결론"
                  r"|최종 편집 판단|시각요소|공식정보 원칙"),
     ("cost", r"예상 현지비용|예상 경비|^경비"),
     ("booking", r"^예약|예약카드|예약 게이트"),
-    ("tips", r"대체안|확인목록|현장 메모"),
+    ("tips", r"대체안|대안 루트|확인목록|현장 메모"),
     ("schedule", r"Day \d|날짜별|일정표|일정 요약|일정 교체|피로도|한눈에 보는|운영 원칙|동선 도식"
                  r"|Quick Reference|실행성 감사|의사결정 게이트|세 사이클|삭제 우선순위|중요 정정"),
     ("transport", r"교통|렌터카|주차|공항|문전 이동|대중교통|자동차|철도"),
@@ -227,6 +227,24 @@ CAT_OVERRIDES = {
     ("05", "현장 선택 규칙"): "tips",
     ("05", "4. 이 일정이 Jason·Julia에게 맞는 이유"): "schedule",
     ("05", "20. 확정사항과 남은 미결정"): "booking",
+    # Girona v2.1 보강본 신설 섹션 — 키워드 규칙으로는 엉뚱하게 갈린다
+    ("05", "이 3박이 여행 전체에서 하는 일"): "intro",
+    ("05", "엠포르다 요리를 이해하는 한 문장"): "food",
+    ("05", "주문할 때 찾을 것"): "food",
+    ("05", "날짜별 성격"): "food",
+    ("05", "시장"): "food",
+    ("05", "이 구간이 가장 복잡한 이유"): "transport",
+    ("05", "국경 통과"): "transport",
+    ("05", "통행료 — 표기가 반대다"): "transport",
+    ("05", "연료"): "transport",
+    ("05", "운전 규칙"): "transport",
+    ("05", "주차 색 구분"): "transport",
+    ("05", "도시별 (기존 원고 유지)"): "transport",
+    ("05", "3박 4일 구조 (2인)"): "cost",
+    ("05", "입장료"): "cost",
+    ("05", "절감 여지"): "cost",
+    ("05", "결제"): "cost",
+    ("05", "우선순위 요약"): "tips",
     ("08", "숙소 평가 최종 기준"): "stay",
     ("10", "치안 판단과 여행 설계 반영"): "tips",
 }
