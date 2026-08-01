@@ -6,15 +6,36 @@
 <title>Paris Long Stay — Jason과 Julia의 2026 유럽 장기여행 가이드북</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body data-rel="..">
 <header class="topbar">
-  <a class="home" href="../index.html">🏠 홈</a>
-  <span class="site-name">Jason과 Julia의 2026 유럽 장기여행 가이드북</span>
-  
+  <button id="menu-btn" aria-label="메뉴 열기">☰</button>
+  <a class="tb-title" href="../index.html">11 · Paris Long Stay</a>
+  <nav class="tb-links">
+    <a href="../chapters/03.html">일정</a>
+    <a href="../maps/index.html">지도</a>
+    <a href="../tracker/index.html">트래커</a>
+  </nav>
 </header>
+<nav class="subnav"><div class="sn-layers"><a href="#layer-1-quick-reference-생활-리듬-날짜별-실행-일정">실행</a><a href="#layer-2-파리-이해-동네-추천등급-문화-선택">이해</a><a href="#layer-3-숙소-음식-시장-운동-교통-안전-예약">실용</a></div><div class="sn-days"><a href="#5-day-1-9월-25일-금요일" title="5. Day 1 — 9월 25일 금요일">9/25</a><a href="#6-day-2-9월-26일-토요일" title="6. Day 2 — 9월 26일 토요일">9/26</a><a href="#7-day-3-9월-27일-일요일" title="7. Day 3 — 9월 27일 일요일">9/27</a><a href="#8-day-4-9월-28일-월요일" title="8. Day 4 — 9월 28일 월요일">9/28</a><a href="#9-day-5-9월-29일-화요일" title="9. Day 5 — 9월 29일 화요일">9/29</a><a href="#10-day-6-9월-30일-수요일" title="10. Day 6 — 9월 30일 수요일">9/30</a><a href="#11-day-7-10월-1일-목요일" title="11. Day 7 — 10월 1일 목요일">10/1</a><a href="#12-day-8-10월-2일-금요일" title="12. Day 8 — 10월 2일 금요일">10/2</a><a href="#13-day-9-10월-3일-토요일" title="13. Day 9 — 10월 3일 토요일">10/3</a><a href="#14-day-10-10월-4일-일요일" title="14. Day 10 — 10월 4일 일요일">10/4</a><a href="#15-day-11-10월-5일-월요일" title="15. Day 11 — 10월 5일 월요일">10/5</a><a href="#16-day-12-10월-6일-화요일" title="16. Day 12 — 10월 6일 화요일">10/6</a><a href="#17-day-13-10월-7일-수요일" title="17. Day 13 — 10월 7일 수요일">10/7</a><a href="#18-day-14-10월-8일-목요일" title="18. Day 14 — 10월 8일 목요일">10/8</a><a href="#19-day-15-10월-9일-금요일" title="19. Day 15 — 10월 9일 금요일">10/9</a><a href="#20-day-16-10월-10일-토요일" title="20. Day 16 — 10월 10일 토요일">10/10</a></div></nav>
+<div id="overlay"></div>
+<aside id="drawer" aria-label="전체 메뉴">
+  <div class="dw-head">
+    <span>유럽 43일 가이드북</span>
+    <button id="drawer-close" aria-label="닫기">✕</button>
+  </div>
+  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
+  <div id="search-results"></div>
+  <nav class="dw-nav">
+    <a href="../index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
+    <h3>시작하기</h3><a href="../chapters/01.html">01 가이드북 사용법</a><a href="../chapters/02.html">02 전체 여행 하이라이트</a><a href="../chapters/03.html">03 43일 Master Itinerary</a>
+    <h3>지역 가이드</h3><a href="../chapters/04.html">04 Barcelona · Sitges<span>8/29–9/1 · 3박</span></a><a href="../chapters/05.html">05 Girona · Collioure · Empordà<span>9/1–9/4 · 3박</span></a><a href="../chapters/06.html">06 Nice · Côte d’Azur<span>9/4–9/9 · 5박</span></a><a href="../chapters/07.html">07 Aix-en-Provence<span>9/9–9/13 · 4박</span></a><a href="../chapters/08.html">08 Luberon Farmhouse<span>9/13–9/17 · 4박</span></a><a href="../chapters/09.html">09 Avignon · Alpilles · Pont du Gard<span>9/17–9/21 · 4박</span></a><a href="../chapters/10.html">10 Lyon · Annecy<span>9/21–9/25 · 4박</span></a><a href="../chapters/11.html">11 Paris Long Stay<span>9/25–10/10 · 15박</span></a>
+    <h3>실행지도</h3><a href="../maps/nice.html">Nice · Côte d’Azur 실행지도</a><a href="../maps/lyon.html">Lyon · Annecy 실행지도</a>
+    <h3>트래커</h3><a href="../tracker/itinerary.html">43일 전체 일정표</a><a href="../tracker/reservations.html">예약 현황</a><a href="../tracker/transport.html">이동·교통</a><a href="../tracker/accommodation.html">숙소 후보·확정</a><a href="../tracker/dashboard.html">진행 대시보드</a>
+  </nav>
+</aside>
 <main>
-<p class="meta">2026-09-25 ~ 2026-10-10 · v1.1</p>
-<details class="toc"><summary>이 챕터의 목차</summary><ul><li><a href="#11-파리-15박-생활-가이드">11. 파리 15박 생활 가이드</a></li><li class="toc-sub"><a href="#한-달-살기의-축소판-운동하는-아침-문화가-있는-오후-공연과-동네-저녁">‘한 달 살기’의 축소판 — 운동하는 아침, 문화가 있는 오후, 공연과 동네 저녁</a></li><li><a href="#layer-1-quick-reference-생활-리듬-날짜별-실행-일정">Layer 1. Quick Reference · 생활 리듬 · 날짜별 실행 일정</a></li><li class="toc-sub"><a href="#1-한눈에-보는-파리-체류">1. 한눈에 보는 파리 체류</a></li><li class="toc-sub"><a href="#2-시각요소-자리표시자">2. 시각요소 자리표시자</a></li><li class="toc-sub"><a href="#3-15일-운영-원칙">3. 15일 운영 원칙</a></li><li class="toc-sub"><a href="#4-일정-요약">4. 일정 요약</a></li><li class="toc-sub"><a href="#5-day-1-9월-25일-금요일">5. Day 1 — 9월 25일 금요일</a></li><li class="toc-sub"><a href="#6-day-2-9월-26일-토요일">6. Day 2 — 9월 26일 토요일</a></li><li class="toc-sub"><a href="#7-day-3-9월-27일-일요일">7. Day 3 — 9월 27일 일요일</a></li><li class="toc-sub"><a href="#8-day-4-9월-28일-월요일">8. Day 4 — 9월 28일 월요일</a></li><li class="toc-sub"><a href="#9-day-5-9월-29일-화요일">9. Day 5 — 9월 29일 화요일</a></li><li class="toc-sub"><a href="#10-day-6-9월-30일-수요일">10. Day 6 — 9월 30일 수요일</a></li><li class="toc-sub"><a href="#11-day-7-10월-1일-목요일">11. Day 7 — 10월 1일 목요일</a></li><li class="toc-sub"><a href="#12-day-8-10월-2일-금요일">12. Day 8 — 10월 2일 금요일</a></li><li class="toc-sub"><a href="#13-day-9-10월-3일-토요일">13. Day 9 — 10월 3일 토요일</a></li><li class="toc-sub"><a href="#14-day-10-10월-4일-일요일">14. Day 10 — 10월 4일 일요일</a></li><li class="toc-sub"><a href="#15-day-11-10월-5일-월요일">15. Day 11 — 10월 5일 월요일</a></li><li class="toc-sub"><a href="#16-day-12-10월-6일-화요일">16. Day 12 — 10월 6일 화요일</a></li><li class="toc-sub"><a href="#17-day-13-10월-7일-수요일">17. Day 13 — 10월 7일 수요일</a></li><li class="toc-sub"><a href="#18-day-14-10월-8일-목요일">18. Day 14 — 10월 8일 목요일</a></li><li class="toc-sub"><a href="#19-day-15-10월-9일-금요일">19. Day 15 — 10월 9일 금요일</a></li><li class="toc-sub"><a href="#20-day-16-10월-10일-토요일">20. Day 16 — 10월 10일 토요일</a></li><li class="toc-sub"><a href="#21-일정-교체-매트릭스">21. 일정 교체 매트릭스</a></li><li><a href="#layer-2-파리-이해-동네-추천등급-문화-선택">Layer 2. 파리 이해 · 동네 · 추천등급 · 문화 선택</a></li><li class="toc-sub"><a href="#22-파리를-거대한-관광지가-아니라-생활도시로-읽는-법">22. 파리를 ‘거대한 관광지’가 아니라 생활도시로 읽는 법</a></li><li class="toc-sub"><a href="#23-숙소-생활권-비교">23. 숙소 생활권 비교</a></li><li class="toc-sub"><a href="#24-추천등급">24. 추천등급</a></li><li class="toc-sub"><a href="#25-주요-미술관특별전-실용-가이드">25. 주요 미술관·특별전 실용 가이드</a></li><li class="toc-sub"><a href="#26-도서관서점">26. 도서관·서점</a></li><li class="toc-sub"><a href="#27-공연-선택-가이드">27. 공연 선택 가이드</a></li><li class="toc-sub"><a href="#28-축구-경기-전략">28. 축구 경기 전략</a></li><li class="toc-sub"><a href="#29-근교-옵션">29. 근교 옵션</a></li><li><a href="#layer-3-숙소-음식-시장-운동-교통-안전-예약">Layer 3. 숙소 · 음식 · 시장 · 운동 · 교통 · 안전 · 예약</a></li><li class="toc-sub"><a href="#30-숙소-선정-전략">30. 숙소 선정 전략</a></li><li class="toc-sub"><a href="#31-시장과-장보기">31. 시장과 장보기</a></li><li class="toc-sub"><a href="#32-레스토랑과-파리-식사체계">32. 레스토랑과 파리 식사체계</a></li><li class="toc-sub"><a href="#33-운동러닝julia-선택-수영">33. 운동·러닝·Julia 선택 수영</a></li><li class="toc-sub"><a href="#34-대중교통문전-이동">34. 대중교통·문전 이동</a></li><li class="toc-sub"><a href="#35-치안과-일상-안전">35. 치안과 일상 안전</a></li><li class="toc-sub"><a href="#36-2026년-특별-이벤트와-변동요인">36. 2026년 특별 이벤트와 변동요인</a></li><li class="toc-sub"><a href="#37-우천파업피로-대체안">37. 우천·파업·피로 대체안</a></li><li class="toc-sub"><a href="#38-예약카드">38. 예약카드</a></li><li class="toc-sub"><a href="#39-예상-경비-파리-2인-15박-계획범위">39. 예상 경비 — 파리 2인 15박 계획범위</a></li><li class="toc-sub"><a href="#40-출발-전-확인목록">40. 출발 전 확인목록</a></li><li class="toc-sub"><a href="#편집자-큐레이션-15일-동안-파리를-소비하지-않고-살아보는-법">편집자 큐레이션 — 15일 동안 파리를 ‘소비’하지 않고 살아보는 법</a></li><li class="toc-sub"><a href="#41-공식자료">41. 공식자료</a></li></ul></details><h1 id="11-파리-15박-생활-가이드">11. 파리 15박 생활 가이드</h1>
+<p class="meta">9/25 ~ 10/10 · 15박 · v1.1</p>
+<div class="related"><a href="../tracker/reservations.html">📋 예약 현황</a><a href="../chapters/03.html">📅 43일 일정표</a></div><details class="toc"><summary>전체 목차</summary><ul><li><a href="#11-파리-15박-생활-가이드">11. 파리 15박 생활 가이드</a></li><li class="toc-sub"><a href="#한-달-살기의-축소판-운동하는-아침-문화가-있는-오후-공연과-동네-저녁">‘한 달 살기’의 축소판 — 운동하는 아침, 문화가 있는 오후, 공연과 동네 저녁</a></li><li><a href="#layer-1-quick-reference-생활-리듬-날짜별-실행-일정">Layer 1. Quick Reference · 생활 리듬 · 날짜별 실행 일정</a></li><li class="toc-sub"><a href="#1-한눈에-보는-파리-체류">1. 한눈에 보는 파리 체류</a></li><li class="toc-sub"><a href="#2-시각요소-자리표시자">2. 시각요소 자리표시자</a></li><li class="toc-sub"><a href="#3-15일-운영-원칙">3. 15일 운영 원칙</a></li><li class="toc-sub"><a href="#4-일정-요약">4. 일정 요약</a></li><li class="toc-sub"><a href="#5-day-1-9월-25일-금요일">5. Day 1 — 9월 25일 금요일</a></li><li class="toc-sub"><a href="#6-day-2-9월-26일-토요일">6. Day 2 — 9월 26일 토요일</a></li><li class="toc-sub"><a href="#7-day-3-9월-27일-일요일">7. Day 3 — 9월 27일 일요일</a></li><li class="toc-sub"><a href="#8-day-4-9월-28일-월요일">8. Day 4 — 9월 28일 월요일</a></li><li class="toc-sub"><a href="#9-day-5-9월-29일-화요일">9. Day 5 — 9월 29일 화요일</a></li><li class="toc-sub"><a href="#10-day-6-9월-30일-수요일">10. Day 6 — 9월 30일 수요일</a></li><li class="toc-sub"><a href="#11-day-7-10월-1일-목요일">11. Day 7 — 10월 1일 목요일</a></li><li class="toc-sub"><a href="#12-day-8-10월-2일-금요일">12. Day 8 — 10월 2일 금요일</a></li><li class="toc-sub"><a href="#13-day-9-10월-3일-토요일">13. Day 9 — 10월 3일 토요일</a></li><li class="toc-sub"><a href="#14-day-10-10월-4일-일요일">14. Day 10 — 10월 4일 일요일</a></li><li class="toc-sub"><a href="#15-day-11-10월-5일-월요일">15. Day 11 — 10월 5일 월요일</a></li><li class="toc-sub"><a href="#16-day-12-10월-6일-화요일">16. Day 12 — 10월 6일 화요일</a></li><li class="toc-sub"><a href="#17-day-13-10월-7일-수요일">17. Day 13 — 10월 7일 수요일</a></li><li class="toc-sub"><a href="#18-day-14-10월-8일-목요일">18. Day 14 — 10월 8일 목요일</a></li><li class="toc-sub"><a href="#19-day-15-10월-9일-금요일">19. Day 15 — 10월 9일 금요일</a></li><li class="toc-sub"><a href="#20-day-16-10월-10일-토요일">20. Day 16 — 10월 10일 토요일</a></li><li class="toc-sub"><a href="#21-일정-교체-매트릭스">21. 일정 교체 매트릭스</a></li><li><a href="#layer-2-파리-이해-동네-추천등급-문화-선택">Layer 2. 파리 이해 · 동네 · 추천등급 · 문화 선택</a></li><li class="toc-sub"><a href="#22-파리를-거대한-관광지가-아니라-생활도시로-읽는-법">22. 파리를 ‘거대한 관광지’가 아니라 생활도시로 읽는 법</a></li><li class="toc-sub"><a href="#23-숙소-생활권-비교">23. 숙소 생활권 비교</a></li><li class="toc-sub"><a href="#24-추천등급">24. 추천등급</a></li><li class="toc-sub"><a href="#25-주요-미술관특별전-실용-가이드">25. 주요 미술관·특별전 실용 가이드</a></li><li class="toc-sub"><a href="#26-도서관서점">26. 도서관·서점</a></li><li class="toc-sub"><a href="#27-공연-선택-가이드">27. 공연 선택 가이드</a></li><li class="toc-sub"><a href="#28-축구-경기-전략">28. 축구 경기 전략</a></li><li class="toc-sub"><a href="#29-근교-옵션">29. 근교 옵션</a></li><li><a href="#layer-3-숙소-음식-시장-운동-교통-안전-예약">Layer 3. 숙소 · 음식 · 시장 · 운동 · 교통 · 안전 · 예약</a></li><li class="toc-sub"><a href="#30-숙소-선정-전략">30. 숙소 선정 전략</a></li><li class="toc-sub"><a href="#31-시장과-장보기">31. 시장과 장보기</a></li><li class="toc-sub"><a href="#32-레스토랑과-파리-식사체계">32. 레스토랑과 파리 식사체계</a></li><li class="toc-sub"><a href="#33-운동러닝julia-선택-수영">33. 운동·러닝·Julia 선택 수영</a></li><li class="toc-sub"><a href="#34-대중교통문전-이동">34. 대중교통·문전 이동</a></li><li class="toc-sub"><a href="#35-치안과-일상-안전">35. 치안과 일상 안전</a></li><li class="toc-sub"><a href="#36-2026년-특별-이벤트와-변동요인">36. 2026년 특별 이벤트와 변동요인</a></li><li class="toc-sub"><a href="#37-우천파업피로-대체안">37. 우천·파업·피로 대체안</a></li><li class="toc-sub"><a href="#38-예약카드">38. 예약카드</a></li><li class="toc-sub"><a href="#39-예상-경비-파리-2인-15박-계획범위">39. 예상 경비 — 파리 2인 15박 계획범위</a></li><li class="toc-sub"><a href="#40-출발-전-확인목록">40. 출발 전 확인목록</a></li><li class="toc-sub"><a href="#편집자-큐레이션-15일-동안-파리를-소비하지-않고-살아보는-법">편집자 큐레이션 — 15일 동안 파리를 ‘소비’하지 않고 살아보는 법</a></li><li class="toc-sub"><a href="#41-공식자료">41. 공식자료</a></li></ul></details><h1 id="11-파리-15박-생활-가이드">11. 파리 15박 생활 가이드</h1>
 <h2 id="한-달-살기의-축소판-운동하는-아침-문화가-있는-오후-공연과-동네-저녁">‘한 달 살기’의 축소판 — 운동하는 아침, 문화가 있는 오후, 공연과 동네 저녁</h2>
 <blockquote>
 <p><strong>이 체류의 역할</strong>: 파리는 이번 42일 여행의 마지막 도시이자 하이라이트다. 관광지를 매일 정복하는 방식이 아니라, 같은 빵집과 시장을 다시 찾고, 오전 운동과 세탁·장보기를 반복하며, 오후에는 미술관·동네·도서관을 하나씩 보고, 저녁에는 비스트로·공연·축구를 선택하는 <strong>15일짜리 파리 생활 실험</strong>으로 운영한다.</p>
@@ -23,7 +44,7 @@
 <p><strong>디자인 메모</strong>: 최종 Word/PDF에는 지도와 사진을 실제 삽입한다. 현재 문서에는 삽입 위치·제목·설명만 자리표시자로 둔다.</p>
 </blockquote>
 <hr>
-<h1 id="layer-1-quick-reference-생활-리듬-날짜별-실행-일정">Layer 1. Quick Reference · 생활 리듬 · 날짜별 실행 일정</h1>
+<h1 id="layer-1-quick-reference-생활-리듬-날짜별-실행-일정" class="layer-h">Layer 1. Quick Reference · 생활 리듬 · 날짜별 실행 일정</h1>
 <h2 id="1-한눈에-보는-파리-체류">1. 한눈에 보는 파리 체류</h2>
 <div class="table-wrap"><table>
 <thead>
@@ -1278,7 +1299,7 @@ Napoléon III 아파트 → 프랑스 장식예술 → Cour Marly·Puget.</p>
 </tbody>
 </table></div>
 <hr>
-<h1 id="layer-2-파리-이해-동네-추천등급-문화-선택">Layer 2. 파리 이해 · 동네 · 추천등급 · 문화 선택</h1>
+<h1 id="layer-2-파리-이해-동네-추천등급-문화-선택" class="layer-h">Layer 2. 파리 이해 · 동네 · 추천등급 · 문화 선택</h1>
 <h2 id="22-파리를-거대한-관광지가-아니라-생활도시로-읽는-법">22. 파리를 ‘거대한 관광지’가 아니라 생활도시로 읽는 법</h2>
 <h3 id="221-세-개의-파리">22.1 세 개의 파리</h3>
 <pre><code class="language-text">역사·기념물의 파리
@@ -1664,7 +1685,7 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 <li><strong>Auvers-sur-Oise:</strong> Van Gogh 관심이 크고 Giverny보다 생활마을을 원할 때.</li>
 </ul>
 <hr>
-<h1 id="layer-3-숙소-음식-시장-운동-교통-안전-예약">Layer 3. 숙소 · 음식 · 시장 · 운동 · 교통 · 안전 · 예약</h1>
+<h1 id="layer-3-숙소-음식-시장-운동-교통-안전-예약" class="layer-h">Layer 3. 숙소 · 음식 · 시장 · 운동 · 교통 · 안전 · 예약</h1>
 <h2 id="30-숙소-선정-전략">30. 숙소 선정 전략</h2>
 <h3 id="301-15박에-필요한-조건">30.1 15박에 필요한 조건</h3>
 <div class="table-wrap"><table>
@@ -2601,5 +2622,15 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 <footer>
   <p>Jason과 Julia의 2026 유럽 장기여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일</p>
 </footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html"><b>🏠</b><span>홈</span></a>
+  <a href="../chapters/03.html"><b>📅</b><span>일정</span></a>
+  <a href="#" class="nav-today"><b>📍</b><span>오늘</span></a>
+  <a href="../maps/index.html"><b>🗺️</b><span>지도</span></a>
+  <a href="../tracker/index.html"><b>📋</b><span>트래커</span></a>
+</nav>
+<button id="back-top" aria-label="맨 위로">↑</button>
+<script src="../assets/data.js" defer></script>
+<script src="../assets/nav.js" defer></script>
 </body>
 </html>
