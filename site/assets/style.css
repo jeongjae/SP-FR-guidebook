@@ -511,6 +511,25 @@ nav.pager a { text-decoration: none; }
 
 p.note { color: var(--muted); font-size: 0.85rem; }
 
+/* ================= 대표 사진 · 편집 도식 ================= */
+figure.hero-photo, figure.ed-visual {
+  margin: 16px 0 20px;
+}
+figure.hero-photo img, figure.ed-visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+}
+figure.hero-photo figcaption, figure.ed-visual figcaption {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+figure.ed-visual figcaption { text-align: center; }
+
 /* ================= 주요 방문지 카드 ================= */
 section.places {
   margin: 8px 0 24px;

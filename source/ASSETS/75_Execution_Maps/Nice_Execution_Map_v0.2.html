@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nice·Côte d’Azur 실행지도 v0.2</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+html,body,#map{height:100%;margin:0} body{font-family:Arial,'Noto Sans KR',sans-serif}
+.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;box-shadow:0 2px 12px #0004;max-width:370px}
+h1{font-size:18px;margin:0 0 5px} p{font-size:12px;margin:4px 0;line-height:1.4}
+.legend{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:8px;font-size:11px}
+.legend span{white-space:nowrap} .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.note{color:#8a3d12;font-weight:bold}
+</style></head><body>
+<div id="map"></div><div class="panel">
+<h1>Nice·Côte d’Azur 실행지도 v0.2</h1>
+<p>Day 7–12 일정의 기준점. 번호는 실행 순서의 대략적 흐름이며 실제 날짜별 순서와 다를 수 있다.</p>
+<p class="note">숙소 핀은 예약 전 후보이며 확정 주소가 아니다.</p>
+<p>배경지도와 Google Maps 링크는 인터넷 연결이 필요하다. GeoJSON·KML은 별도 앱에서 사용할 수 있다.</p>
+<div class="legend"><span><i style="background:#7a4eab"></i>숙소 후보</span><span><i style="background:#1f4e78"></i>핵심 방문지</span><span><i style="background:#2f7d32"></i>시장·생활</span><span><i style="background:#c75b12"></i>교통</span><span><i style="background:#b02a37"></i>근교·이동지</span></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>
+const pts=[{"name": "AMMI Masséna", "lat": 43.6978, "lon": 7.26836, "category": "숙소 후보", "status": "후보 — 실제 예약 후 교체", "url": "https://www.google.com/maps/search/?api=1&query=AMMI+Masséna"}, {"name": "Cours Saleya", "lat": 43.69518, "lon": 7.2758, "category": "시장·생활", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Cours+Saleya"}, {"name": "Castle Hill", "lat": 43.69692, "lon": 7.28077, "category": "핵심 방문지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Castle+Hill"}, {"name": "Nice-Ville", "lat": 43.70499, "lon": 7.26199, "category": "교통", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Nice-Ville"}, {"name": "Cannes", "lat": 43.55332, "lon": 7.01975, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Cannes"}, {"name": "Monaco", "lat": 43.73893, "lon": 7.41904, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Monaco"}, {"name": "Libération Market", "lat": 43.70841, "lon": 7.26133, "category": "시장·생활", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Libération+Market"}, {"name": "NCE T2", "lat": 43.65971, "lon": 7.20461, "category": "교통", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=NCE+T2"}];
+const colors={"숙소 후보": "#7a4eab", "핵심 방문지": "#1f4e78", "시장·생활": "#2f7d32", "교통": "#c75b12", "근교·이동지": "#b02a37"};
+const map=L.map('map');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const ll=[];
+pts.forEach((p,i)=>{
+ ll.push([p.lat,p.lon]);
+ const marker=L.circleMarker([p.lat,p.lon],{radius:8,color:'#fff',weight:2,fillColor:colors[p.category],fillOpacity:.95}).addTo(map);
+ marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}<br><small>${p.status}</small><br><a target="_blank" href="${p.url}">Google Maps 열기</a>`);
+});
+L.polyline(ll,{color:'#59636e',weight:3,opacity:.6,dashArray:'7,8'}).addTo(map);
+map.fitBounds(L.latLngBounds(ll).pad(.15));
+</script></body></html>
