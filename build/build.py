@@ -114,13 +114,323 @@ TRACKER_SHEETS = [
     ("Dashboard", "dashboard", "진행 대시보드"),
 ]
 
-LAYER_LABELS = {"1": "일정", "2": "여행정보", "3": "실용정보"}
 DAY_RE = re.compile(r"Day\s*(\d+)\s*[—\-–]\s*(\d+)월\s*(\d+)일")
+
+# ---------------------------------------------------------------- 분류 체계
+# 지역 챕터의 h2 섹션을 카테고리로 재분류·재배치한다.
+# 소스는 수정하지 않고 빌드 시 매핑한다 (소스는 상류 콘텐츠 워크플로가 관리).
+
+CATEGORIES = [
+    ("intro", "지역소개"),
+    ("schedule", "일정"),
+    ("info", "여행정보"),
+    ("food", "먹거리"),
+    ("transport", "교통"),
+    ("stay", "숙박"),
+    ("booking", "예약"),
+    ("cost", "경비"),
+    ("tips", "여행팁"),
+    ("appendix", "부록"),
+]
+CAT_LABEL = dict(CATEGORIES)
+
+# 제목 키워드 규칙 — 먼저 맞는 규칙이 이긴다 (번호 접두어 제거 후 적용)
+CAT_RULES = [
+    ("appendix", r"공식자료|검증 기록|검증 범위|검증 출처|참고 출처|편집 메모|최종 결론|최종 편집 판단|시각요소"),
+    ("cost", r"예상 현지비용|예상 경비|^경비"),
+    ("booking", r"^예약|예약카드|예약 게이트"),
+    ("schedule", r"Day \d|날짜별|일정표|일정 요약|일정 교체|피로도|한눈에 보는|운영 원칙|동선 도식"
+                 r"|Quick Reference|실행성 감사|의사결정 게이트|세 사이클|삭제 우선순위"),
+    ("transport", r"교통|렌터카|주차|공항|문전 이동|대중교통|자동차|철도"),
+    ("stay", r"숙소|생활권|농가"),
+    ("intro", r"이해하|어떻게 볼 것인가|도시층|읽는 법|지역 이해|편집자 큐레이션|열쇠"),
+    ("food", r"레스토랑|카페|시장|먹어야|식당|장보기|음식|빵|식사체계|먹거리"),
+    ("info", r"방문지|관광지|주요 장소|핵심 장소|추천등급|미술관|박물관|도서관|서점|공연|축구"
+             r"|근교|체험할|행사|특별전|특별운영|이벤트|선택표|전시"),
+    ("tips", r"대체안|확인목록|운동|수영|안전|치안|스케치|지속가능|현장 선택"),
+]
+
+# 규칙으로 판별이 어려운 제목의 명시적 지정 (챕터 슬러그, 원문 h2 제목) -> 카테고리
+CAT_OVERRIDES = {
+    ("05", "시체스에서 지로나 도착, 대성당과 성벽"): "schedule",
+    ("05", "콜리우르 시장·왕궁·야수파 산책과 페랄라다"): "schedule",
+    ("05", "Pals·Peratallada·Calella de Palafrugell"): "schedule",
+    ("05", "지로나에서 니스로 이동"): "schedule",
+    ("05", "모듈 A — 동일 차량으로 니스 이동"): "schedule",
+    ("05", "모듈 B — 지로나 반납 후 철도 이동"): "schedule",
+    ("05", "출발 전 30분 옵션"): "schedule",
+    ("05", "5.1 추천 생활권"): "stay",
+    ("05", "10.1 로마와 중세 성곽도시"): "intro",
+    ("05", "13.1 지로나에서 살 것"): "food",
+    ("05", "Jason"): "tips",
+    ("05", "Julia"): "tips",
+    ("05", "스케치"): "tips",
+    ("05", "확정적으로 겹치는 전시"): "info",
+    ("05", "9월 2일 행사"): "info",
+    ("05", "체류기간 이후"): "info",
+    ("05", "지로나"): "transport",
+    ("05", "콜리우르"): "transport",
+    ("05", "Peratallada·Pals"): "transport",
+    ("05", "Calella de Palafrugell"): "transport",
+    ("05", "Day 1 비"): "tips",
+    ("05", "Day 2 비"): "tips",
+    ("05", "Day 3 비"): "tips",
+    ("05", "교통지연 기준"): "tips",
+    ("05", "Girona Cathedral"): "booking",
+    ("05", "Château Royal de Collioure"): "booking",
+    ("05", "Museu de Peralada"): "booking",
+    ("05", "Day 3 점심"): "booking",
+    ("05", "확정"): "booking",
+    ("05", "미결정"): "booking",
+    ("05", "편집자가 고른 핵심 장소 7곳"): "info",
+    ("05", "꼭 체험할 것"): "info",
+    ("05", "식당 큐레이션"): "food",
+    ("05", "현장 선택 규칙"): "tips",
+    ("08", "숙소 평가 최종 기준"): "stay",
+    ("10", "치안 판단과 여행 설계 반영"): "tips",
+}
+
+NUM_PREFIX_RE = re.compile(r"^\d+[A-Z]?[\.\)]\s*")
+SUBNUM_RE = re.compile(r"^\d+\.\d+\s")
+
+
+def classify(slug, title, prev_cat):
+    """h2 섹션 제목을 카테고리로 분류한다."""
+    if (slug, title) in CAT_OVERRIDES:
+        return CAT_OVERRIDES[(slug, title)]
+    if SUBNUM_RE.match(title):        # 7.3 같은 하위번호는 직전 섹션을 따라간다
+        return prev_cat or "appendix"
+    norm = NUM_PREFIX_RE.sub("", title)
+    for cat, pattern in CAT_RULES:
+        if re.search(pattern, norm):
+            return cat
+    return prev_cat or "appendix"
 
 # 빌드 중 수집되는 전역 데이터
 CHAPTER_DATE_URL = {}  # 'YYYY-MM-DD' -> 챕터(#Day 앵커) URL — 데일리 페이지에서 사용
 DAY_OVERRIDES = {}     # 'YYYY-MM-DD' -> Day 섹션 앵커 URL (범위 매핑보다 우선)
 SEARCH_INDEX = []      # {t: 제목, c: 위치, u: URL}
+
+
+def regroup_regional(slug, body_md):
+    """지역 챕터 본문을 카테고리 순서로 재편성한 마크다운을 만든다.
+
+    - 첫 Layer/Pass h1 이전 = 헤더 영역 (제목·부제·도입 인용문). 단 '편집 메모' h2는 부록으로.
+    - Layer h1은 제거하고 그 아래 h2들을 개별 분류한다.
+    - Pass B/C h1 그룹은 h1을 h2로 낮춰 통째로 '일정'에 넣는다 (내부 h2는 h3로 강등).
+    - 각 카테고리는 `# 카테고리명` h1로 시작한다 (서브내비 앵커).
+    """
+    lines = body_md.splitlines()
+    header, sections = [], []   # sections: [title, cat, [lines]]
+    cur = None                  # 현재 h2 섹션
+    in_header, pass_group = True, False
+    prev_cat = None
+
+    def close():
+        nonlocal cur
+        if cur:
+            sections.append(cur)
+            cur = None
+
+    for line in lines:
+        h1 = re.match(r"^# (.+)", line)
+        h2 = re.match(r"^## (.+)", line)
+        if h1:
+            close()
+            title = h1.group(1).strip()
+            if re.match(r"Layer\s*\d", title):
+                in_header, pass_group = False, False
+                cur = ["브리프", "appendix", []]   # h1 직속 내용 임시 수집
+                continue
+            if re.match(r"Pass\s*[B-Z]", title):
+                in_header, pass_group = False, True
+                prev_cat = "schedule"
+                cur = [title, "schedule", [f"## {title}"]]
+                continue
+            header.append(line)                    # 챕터 제목 h1
+            continue
+        if h2:
+            title = h2.group(1).strip()
+            if in_header:
+                close()
+                if "편집 메모" in title:
+                    cur = [title, "appendix", [line]]
+                else:
+                    header.append(line)   # 부제 h2 — cur가 None이므로 후속 줄도 헤더로
+                continue
+            if pass_group:
+                cat = CAT_OVERRIDES.get((slug, title))
+                if cat is None:
+                    close()
+                    cur = [title, "schedule", [f"### {title}"]]
+                    prev_cat = "schedule"
+                    continue
+                pass_group_cat = cat
+                close()
+                cur = [title, pass_group_cat, [line]]
+                prev_cat = pass_group_cat
+                continue
+            cat = classify(slug, title, prev_cat)
+            close()
+            cur = [title, cat, [line]]
+            prev_cat = cat
+            continue
+        if cur is not None:
+            cur[2].append(line)
+        elif in_header:
+            header.append(line)
+    close()
+
+    # 빈 '브리프' 의사섹션 제거, 내용 있으면 부록으로
+    sections = [s for s in sections
+                if not (s[0] == "브리프" and not any(x.strip() for x in s[2]))]
+
+    # 소스에 경비 섹션이 없는 챕터에는 트래커로 안내하는 스텁을 넣어 메뉴를 일관되게 유지
+    if not any(s[1] == "cost" for s in sections):
+        sections.append(["경비 안내", "cost", [
+            "## 경비 참고처",
+            "",
+            "이 지역 챕터의 소스에는 아직 별도 경비 정리가 없다. 다음을 참고한다.",
+            "",
+            "- 숙박 예산: 위 **숙박** 카테고리의 숙소 전략·예산 항목",
+            "- 전체 예산과 예약 지출: [진행 대시보드](../tracker/dashboard.html) · [예약 현황](../tracker/reservations.html)",
+            "- 입장료·식비 기준: 본문 각 장소·식당 항목의 가격 표기",
+        ]])
+
+    out = header[:]
+    counts = {}
+    for key, label in CATEGORIES:
+        matched = [s for s in sections if s[1] == key]
+        if not matched:
+            continue
+        counts[label] = len(matched)
+        out += ["", f"# {label}", ""]
+        for s in matched:
+            out += s[2] + [""]
+    unknown = [s[0] for s in sections if s[1] not in CAT_LABEL]
+    if unknown:
+        print(f"  경고: 미분류 섹션({slug}): {unknown}")
+        sys.exit(1)
+    return "\n".join(out), counts
+
+
+# ---------------------------------------------------------------- 장소 큐레이션
+# 여행정보 카테고리 상단의 '주요 방문지' 카드. 이름·설명은 큐레이션, 좌표·Google Maps
+# 링크는 실행지도 geojson/html에서 가져온다. 사진은 열람 시 브라우저가 Wikipedia
+# REST API에서 불러오는 점진적 향상 방식 (오프라인·실패 시 자동 숨김).
+PLACES = {
+    "04": [
+        ("Sagrada Família", "Sagrada Família", "en", "가우디 필생의 성당 — 1882년 착공해 지금도 건축 중"),
+        ("Sant Pau", "Hospital de Sant Pau", "en", "세계문화유산 모데르니스메 병원 단지"),
+        ("Gòtic", "Gothic Quarter, Barcelona", "en", "로마 성벽 위에 쌓인 중세 고딕 지구"),
+        ("Biblioteca de Catalunya", "Biblioteca de Catalunya", "en", "15세기 병원 건물에 들어선 카탈루냐 도서관"),
+        ("MACBA", "Museu d'Art Contemporani de Barcelona", "en", "라발 지구의 현대미술관"),
+        ("Barcelona Sants", "Barcelona Sants railway station", "en", "고속철·근교선이 모이는 중앙역"),
+        ("Sitges", "Sitges", "en", "해변·구시가·미술관의 휴양 소도시"),
+    ],
+    "05": [
+        ("Girona Cathedral", "Girona Cathedral", "en", "세계에서 가장 넓은 고딕 신랑을 가진 대성당"),
+        ("Onyar Houses", "Onyar", "en", "오냐르 강변의 색색 파사드와 붉은 철교"),
+        ("Collioure", "Collioure", "en", "야수파 화가들이 사랑한 프랑스 카탈루냐 항구마을"),
+        ("Peralada", "Peralada", "en", "성과 와이너리의 엠포르다 귀족 마을"),
+        ("Pals", "Pals", "en", "엠포르다 평야를 내려다보는 중세 석조마을"),
+        ("Peratallada", "Peratallada", "en", "돌을 깎아 만든 해자와 요새의 마을"),
+        ("Calella de Palafrugell", "Calella de Palafrugell", "en", "코스타브라바의 어촌 해변마을"),
+    ],
+    "06": [
+        ("Cours Saleya", "Cours Saleya", "en", "니스 구시가의 식품·꽃 시장 거리"),
+        ("Castle Hill", "Castle Hill, Nice", "en", "천사의 만과 항구를 내려다보는 전망 언덕"),
+        ("Nice-Ville", "Gare de Nice-Ville", "en", "칸·모나코행 TER이 출발하는 중앙역"),
+        ("Cannes", "Cannes", "en", "영화제의 도시 — 르 쉬케 언덕과 크루아제트"),
+        ("Monaco", "Monaco", "en", "왕궁과 몬테카를로의 도시국가"),
+        ("Libération Market", None, "en", "현지 생활형 아침시장 — 9/8 회복일의 장보기"),
+        ("NCE T2", "Nice Côte d'Azur Airport", "en", "9/9 렌터카 인수 지점 (Terminal 2)"),
+    ],
+    "07": [
+        ("Rotonde", "Fontaine de la Rotonde", "en", "미라보 대로 초입의 대분수 로터리"),
+        ("Cours Mirabeau", "Cours Mirabeau", "en", "플라타너스 그늘이 덮는 엑상의 중심 산책로"),
+        ("Musée Granet", "Musée Granet", "en", "세잔과 유럽 회화의 미술관"),
+        ("Cassis", "Cassis", "en", "칼랑크 석회암 절벽 아래의 항구마을"),
+        ("Atelier Cézanne", "Atelier de Cézanne", "fr", "세잔이 말년을 보낸 아틀리에"),
+        ("Lourmarin", "Lourmarin", "en", "카뮈가 잠든 뤼베롱 초입 마을 — 9/13 경유"),
+    ],
+    "08": [
+        ("Coustellet", None, "en", "농산물 직판장이 서는 교차 마을"),
+        ("Roussillon", "Roussillon, Vaucluse", "en", "오커 채석장의 붉은 절벽 마을"),
+        ("Goult", "Goult", "en", "조용한 언덕 위 와인 마을"),
+        ("Gordes", "Gordes", "en", "절벽에 쌓아 올린 뤼베롱의 대표 석조마을"),
+        ("Village des Bories", "Village des Bories", "fr", "돌로만 쌓은 옛 농경 오두막 마을"),
+        ("Ménerbes", "Ménerbes", "en", "『프로방스에서의 1년』의 무대"),
+        ("L’Isle-sur-la-Sorgue", "L'Isle-sur-la-Sorgue", "en", "물레방아와 골동품 시장의 수상 마을"),
+    ],
+    "09": [
+        ("Les Halles", "Les Halles d'Avignon", "fr", "아비뇽의 실내 중앙시장"),
+        ("Palais des Papes", "Palais des Papes", "en", "14세기 교황들이 머문 거대한 궁전"),
+        ("Pont Saint-Bénézet", "Pont Saint-Bénézet", "en", "노래로 남은 론 강의 끊어진 다리"),
+        ("Uzès", "Uzès", "en", "토요시장이 유명한 공작령 도시"),
+        ("Pont du Gard", "Pont du Gard", "en", "로마 수도교 — 세계문화유산"),
+        ("Les Baux", "Les Baux-de-Provence", "en", "석회암 바위산 위의 요새 마을"),
+        ("Saint-Rémy", "Saint-Rémy-de-Provence", "en", "고흐가 요양하며 그림을 그린 마을"),
+    ],
+    "10": [
+        ("Bellecour", "Place Bellecour", "en", "유럽 최대급 광장 — 리옹의 중심"),
+        ("Fourvière", "Basilica of Notre-Dame de Fourvière", "en", "도시를 내려다보는 언덕 위 대성당"),
+        ("Vieux Lyon", "Vieux Lyon", "en", "르네상스 골목과 트라불의 구시가"),
+        ("Croix-Rousse", "La Croix-Rousse", "en", "비단직공의 언덕 동네"),
+        ("Halles Paul Bocuse", "Les Halles de Lyon-Paul Bocuse", "en", "미식도시 리옹의 실내 시장"),
+        ("Parc Tête d’Or", "Parc de la Tête d'or", "en", "호수가 있는 대공원 — 러닝 코스"),
+        ("Annecy", "Annecy", "en", "알프스 호수와 운하의 도시 — 당일치기"),
+    ],
+    "11": [
+        ("Notre-Dame", "Notre-Dame de Paris", "en", "복원을 마친 시테섬의 대성당"),
+        ("Louvre", "Louvre", "en", "세계 최대의 미술관"),
+        ("Montmartre", "Montmartre", "en", "사크레쾨르와 화가들의 언덕"),
+        ("BnF Richelieu", "Bibliothèque nationale de France", "en", "리슐리외 열람실의 국립도서관"),
+        ("Grand Palais", "Grand Palais", "en", "특별전이 열리는 대전시장"),
+        ("Orsay", "Musée d'Orsay", "en", "기차역을 개조한 인상파 미술관"),
+        ("Bourse de Commerce", "Bourse de Commerce", "en", "피노 컬렉션의 현대미술관"),
+        ("Versailles", "Palace of Versailles", "en", "절대왕정의 궁전과 정원 — 근교 옵션"),
+        ("Giverny", "Giverny", "en", "모네의 정원 마을 — 근교 옵션"),
+    ],
+}
+
+
+def load_map_links():
+    """실행지도 HTML에서 장소별 Google Maps 링크를 추출한다."""
+    links = {}
+    for src_name, _, _ in MAPS:
+        text = (MAP_DIR / src_name).read_text(encoding="utf-8")
+        m = re.search(r"const pts=(\[.*?\]);", text, re.S)
+        if m:
+            for pt in json.loads(m.group(1)):
+                links[pt["name"]] = pt.get("url", "")
+    return links
+
+
+def places_block(chapter, map_links):
+    """여행정보 카테고리 상단의 주요 방문지 카드 HTML."""
+    places = PLACES.get(chapter["slug"])
+    if not places:
+        return ""
+    cards = []
+    for name, wiki, lang, desc in places:
+        gmaps = map_links.get(name) or (
+            "https://www.google.com/maps/search/?api=1&query=" + name.replace(" ", "+"))
+        wiki_attr = (f' data-wiki="{html.escape(wiki, quote=True)}" data-wlang="{lang}"'
+                     if wiki else "")
+        cards.append(f"""<div class="pl-card"{wiki_attr}>
+  <div class="pl-photo" hidden><img alt="{html.escape(name)}" loading="lazy"><a class="pl-credit"
+    target="_blank" rel="noopener" href="#">사진: Wikipedia</a></div>
+  <div class="pl-body">
+    <b>{html.escape(name)}</b>
+    <p>{html.escape(desc)}</p>
+    <div class="pl-links"><a target="_blank" rel="noopener" href="{html.escape(gmaps)}">Google Maps</a>
+    <a href="../maps/{chapter["map"]}">실행지도</a></div>
+  </div>
+</div>""")
+    return ('<section class="places"><h3>주요 방문지</h3>'
+            '<p class="note">사진은 온라인 상태에서 Wikipedia로부터 불러옵니다.</p>'
+            f'<div class="pl-grid">{"".join(cards)}</div></section>')
 
 
 # ---------------------------------------------------------------- utilities
@@ -163,8 +473,9 @@ def wrap_tables(body):
 
 
 def mark_layer_headings(body):
-    """Layer·Pass 경계 h1에 시각 구분용 클래스를 부여한다."""
-    return re.sub(r'<h1 id="([^"]*)">((?:Layer|Pass)\s*[A-Z0-9][^<]*)</h1>',
+    """카테고리 경계 h1에 시각 구분용 클래스를 부여한다."""
+    labels = "|".join(label for _, label in CATEGORIES)
+    return re.sub(rf'<h1 id="([^"]*)">({labels})</h1>',
                   r'<h1 id="\1" class="layer-h">\2</h1>', body)
 
 
@@ -292,22 +603,22 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav=""):
 # ---------------------------------------------------------------- chapters
 
 def chapter_subnav(chapter, flat_tokens):
-    """Layer 점프 + Day 칩 서브내비 (지역 챕터 전용)."""
-    layers, days, seen_days = [], [], set()
+    """카테고리 점프 + Day 칩 서브내비 (지역 챕터 전용)."""
+    labels = {label for _, label in CATEGORIES}
+    cats, days, seen_days = [], [], set()
     for tok in flat_tokens:
-        m = re.match(r"Layer\s*(\d)", tok["name"])
-        if m and tok["level"] == 1 and m.group(1) in LAYER_LABELS:
-            layers.append(f'<a href="#{tok["id"]}">{LAYER_LABELS[m.group(1)]}</a>')
+        if tok["level"] == 1 and tok["name"] in labels:
+            cats.append(f'<a href="#{tok["id"]}">{tok["name"]}</a>')
         dm = DAY_RE.search(tok["name"])
         if dm and dm.group(1) not in seen_days:
             seen_days.add(dm.group(1))
             days.append(f'<a href="#{tok["id"]}" title="{html.escape(tok["name"])}">'
                         f'{int(dm.group(2))}/{int(dm.group(3))}</a>')
-    if not layers and not days:
+    if not cats and not days:
         return ""
-    layer_html = f'<div class="sn-layers">{"".join(layers)}</div>' if layers else ""
+    cats_html = f'<div class="sn-layers">{"".join(cats)}</div>' if cats else ""
     days_html = f'<div class="sn-days">{"".join(days)}</div>' if days else ""
-    return f'<nav class="subnav">{layer_html}{days_html}</nav>'
+    return f'<nav class="subnav">{cats_html}{days_html}</nav>'
 
 
 def related_box(chapter):
@@ -354,13 +665,22 @@ def build_chapters():
     out_dir = SITE / "chapters"
     out_dir.mkdir(parents=True, exist_ok=True)
     slug_by_file = {Path(c["path"]).name: c["slug"] for c in CHAPTERS}
+    map_links = load_map_links()
 
     for i, c in enumerate(CHAPTERS):
         text = (SOURCE / c["path"]).read_text(encoding="utf-8")
         meta, body_md = parse_frontmatter(text)
+        if c["kind"] == "region":
+            body_md, counts = regroup_regional(c["slug"], body_md)
         body, toc_tokens = md_convert(body_md)
         flat = flatten_tokens(toc_tokens)
         body = mark_layer_headings(wrap_tables(rewrite_md_links(body, slug_by_file)))
+        if c["kind"] == "region":
+            # 여행정보 카테고리 첫머리에 주요 방문지 카드 삽입
+            info_h1 = re.search(r'<h1 id="[^"]*" class="layer-h">여행정보</h1>', body)
+            if info_h1:
+                body = (body[:info_h1.end()] + places_block(c, map_links)
+                        + body[info_h1.end():])
 
         collect_search(c, flat)
         collect_chapter_dates(c, flat)
@@ -387,7 +707,9 @@ def build_chapters():
                  meta_line=" · ".join(meta_bits),
                  subnav=chapter_subnav(c, flat)),
             encoding="utf-8")
-        print(f'  챕터 {c["slug"]}: {Path(c["path"]).name} → chapters/{c["slug"]}.html')
+        cat_info = ("  [" + " ".join(f"{k}:{v}" for k, v in counts.items()) + "]"
+                    if c["kind"] == "region" else "")
+        print(f'  챕터 {c["slug"]}: {Path(c["path"]).name} → chapters/{c["slug"]}.html{cat_info}')
 
 
 # ---------------------------------------------------------------- daily cards
