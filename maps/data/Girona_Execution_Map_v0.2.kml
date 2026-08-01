@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark><name>[숙소 후보] Hotel Carlemany</name><Point><coordinates>2.8213,41.97865,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Girona Cathedral</name><Point><coordinates>2.82611,41.98741,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Onyar Houses</name><Point><coordinates>2.82402,41.98473,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Collioure</name><Point><coordinates>3.08322,42.52505,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Peralada</name><Point><coordinates>3.01017,42.30872,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Pals</name><Point><coordinates>3.14843,41.97039,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Peratallada</name><Point><coordinates>3.09007,41.97618,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Calella de Palafrugell</name><Point><coordinates>3.18416,41.88901,0</coordinates></Point></Placemark>
+</Document></kml>

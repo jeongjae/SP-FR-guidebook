@@ -1,17 +1,33 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Luberon Execution Map</title>
+<title>Luberon 실행지도 v0.2</title>
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-<style>html,body,#map{height:100%;margin:0}body{font-family:Arial,'Noto Sans KR',sans-serif}
-.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;
-box-shadow:0 2px 12px #0004;max-width:330px}h1{font-size:18px;margin:0 0 5px}p{font-size:12px;margin:0;line-height:1.4}</style>
-</head><body><div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel"><h1>Luberon 실행지도</h1>
-<p>현재 MD 일정에 따른 주요 기준점. 실제 도보·운전은 Google Maps에서 다시 계산한다.</p></div>
+<style>
+html,body,#map{height:100%;margin:0} body{font-family:Arial,'Noto Sans KR',sans-serif}
+.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;box-shadow:0 2px 12px #0004;max-width:370px}
+h1{font-size:18px;margin:0 0 5px} p{font-size:12px;margin:4px 0;line-height:1.4}
+.legend{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:8px;font-size:11px}
+.legend span{white-space:nowrap} .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
+.note{color:#8a3d12;font-weight:bold}
+</style></head><body>
+<div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel">
+<h1>Luberon 실행지도 v0.2</h1>
+<p>Day 16–20 일정의 기준점. 번호는 실행 순서의 대략적 흐름이며 실제 날짜별 순서와 다를 수 있다.</p>
+<p class="note">숙소 핀은 예약 전 후보이며 확정 주소가 아니다.</p>
+<p>배경지도와 Google Maps 링크는 인터넷 연결이 필요하다. GeoJSON·KML은 별도 앱에서 사용할 수 있다.</p>
+<div class="legend"><span><i style="background:#7a4eab"></i>숙소 후보</span><span><i style="background:#1f4e78"></i>핵심 방문지</span><span><i style="background:#2f7d32"></i>시장·생활</span><span><i style="background:#c75b12"></i>교통</span><span><i style="background:#b02a37"></i>근교·이동지</span></div></div>
 <script src="vendor/leaflet/leaflet.js"></script><script>
-const pts=[{"name": "Domaine des Peyre", "lat": 43.87088, "lon": 5.12202, "url": "https://www.google.com/maps/search/?api=1&query=Domaine+des+Peyre"}, {"name": "Coustellet", "lat": 43.86673, "lon": 5.14544, "url": "https://www.google.com/maps/search/?api=1&query=Coustellet"}, {"name": "Roussillon", "lat": 43.90202, "lon": 5.29207, "url": "https://www.google.com/maps/search/?api=1&query=Roussillon"}, {"name": "Goult", "lat": 43.86306, "lon": 5.24417, "url": "https://www.google.com/maps/search/?api=1&query=Goult"}, {"name": "Gordes", "lat": 43.91181, "lon": 5.20043, "url": "https://www.google.com/maps/search/?api=1&query=Gordes"}, {"name": "Village des Bories", "lat": 43.89728, "lon": 5.1857, "url": "https://www.google.com/maps/search/?api=1&query=Village+des+Bories"}, {"name": "Ménerbes", "lat": 43.83274, "lon": 5.20689, "url": "https://www.google.com/maps/search/?api=1&query=M%C3%A9nerbes"}, {"name": "L’Isle-sur-la-Sorgue", "lat": 43.91904, "lon": 5.05477, "url": "https://www.google.com/maps/search/?api=1&query=L%E2%80%99Isle-sur-la-Sorgue"}];
-const map=L.map('map');L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+const pts=[{"name": "Domaine des Peyre", "lat": 43.87088, "lon": 5.12202, "category": "숙소 후보", "status": "후보 — 실제 예약 후 교체", "url": "https://www.google.com/maps/search/?api=1&query=Domaine+des+Peyre"}, {"name": "Coustellet", "lat": 43.86673, "lon": 5.14544, "category": "시장·생활", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Coustellet"}, {"name": "Roussillon", "lat": 43.90202, "lon": 5.29207, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Roussillon"}, {"name": "Goult", "lat": 43.86306, "lon": 5.24417, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Goult"}, {"name": "Gordes", "lat": 43.91181, "lon": 5.20043, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Gordes"}, {"name": "Village des Bories", "lat": 43.89728, "lon": 5.1857, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Village+des+Bories"}, {"name": "Ménerbes", "lat": 43.83274, "lon": 5.20689, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Ménerbes"}, {"name": "L’Isle-sur-la-Sorgue", "lat": 43.91904, "lon": 5.05477, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=L’Isle-sur-la-Sorgue"}];
+const colors={"숙소 후보": "#7a4eab", "핵심 방문지": "#1f4e78", "시장·생활": "#2f7d32", "교통": "#c75b12", "근교·이동지": "#b02a37"};
+const map=L.map('map');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 {maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
-const ll=[];pts.forEach((p,i)=>{ll.push([p.lat,p.lon]);L.marker([p.lat,p.lon]).addTo(map)
-.bindPopup(`<b>${i+1}. ${p.name}</b><br><a target="_blank" href="${p.url}">Google Maps</a>`);});
-L.polyline(ll,{color:'#1f4e78',weight:4,opacity:.65,dashArray:'8,8'}).addTo(map);
-map.fitBounds(L.latLngBounds(ll).pad(.15));</script></body></html>
+const ll=[];
+pts.forEach((p,i)=>{
+ ll.push([p.lat,p.lon]);
+ const marker=L.circleMarker([p.lat,p.lon],{radius:8,color:'#fff',weight:2,fillColor:colors[p.category],fillOpacity:.95}).addTo(map);
+ marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}<br><small>${p.status}</small><br><a target="_blank" href="${p.url}">Google Maps 열기</a>`);
+});
+L.polyline(ll,{color:'#59636e',weight:3,opacity:.6,dashArray:'7,8'}).addTo(map);
+map.fitBounds(L.latLngBounds(ll).pad(.15));
+</script></body></html>
