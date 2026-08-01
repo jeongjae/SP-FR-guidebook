@@ -77,7 +77,7 @@ CHAPTERS = [
     dict(path=f"{REGIONAL}/08_Luberon_Farmhouse_v2.0.md", slug="08", name="luberon", kind="region",
          title="Luberon Farmhouse", start=date(2026, 9, 13), end=date(2026, 9, 17),
          nights=4, map="luberon.html", region="Luberon"),
-    dict(path=f"{REGIONAL}/09_Avignon_Alpilles_Pont_du_Gard_v1.6.md", slug="09", name="avignon", kind="region",
+    dict(path=f"{REGIONAL}/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md", slug="09", name="avignon", kind="region",
          title="Avignon · Alpilles · Pont du Gard", start=date(2026, 9, 17), end=date(2026, 9, 21),
          nights=4, map="avignon.html", region="Avignon"),
     dict(path=f"{REGIONAL}/10_Lyon_v1.7.md", slug="10", name="lyon", kind="region",
@@ -145,8 +145,9 @@ SRC_DAY_HEADING_RE = re.compile(
     r"^#{1,6}[ \t]*(?:\d+[A-Z]?[.)][ \t]*)*"
     r"Day[ \t]*(\d+)[ \t]*[—–-][ \t]*(\d+)월[ \t]*(\d+)일[ \t]*([월화수목금토일])요일[ \t]*$")
 
-# 날짜가 없는 Day 참조 헤딩 (`## Day 1 비` 등). 챕터 로컬 번호라 전역 번호로 옮긴다.
-SRC_DAY_REF_RE = re.compile(r"^(#{1,6})[ \t]*Day[ \t]*(\d+)[ \t]*(?![—–-])(.*)$")
+# 날짜가 없는 Day 참조 헤딩 (`## Day 1 비` · `### Day 16 — Lourmarin` 등).
+# 번호가 로컬인지 전역인지는 정규식으로 못 가른다. resolve_day_ref() 가 판단한다.
+SRC_DAY_REF_RE = re.compile(r"^(#{1,6})[ \t]*Day[ \t]*(\d+)[ \t]*(.*)$")
 
 # 인라인 VISUAL 토큰. 원고에는 이미지 자리표시자로 남아 있고 화면에 노출되면 안 된다.
 VISUAL_TOKEN_RE = re.compile(r"\{\{VISUAL:[A-Z0-9-]+\|[^}]*\}\}[ \t]*")
@@ -319,6 +320,24 @@ CAT_OVERRIDES = {
     ("08", "우선순위"): "tips",
     ("08", "9/14 Roussillon + Goult 또는 Bonnieux"): "schedule",
     ("08", "숙소 평가 최종 기준"): "stay",
+    # Avignon v2.0 보강본 신설 섹션
+    ("09", "이 4박이 여행 전체에서 하는 일"): "intro",
+    ("09", "이 지역을 이해하는 축"): "intro",
+    ("09", "9월 19–20일은 유럽 문화유산의 날이다"): "info",
+    ("09", "이 구간의 성격 — 다시 사 먹는 구간이다"): "food",
+    ("09", "아비뇽·가르 지역에서 먹어야 할 것"): "food",
+    ("09", "와인 — 이 구간이 이 여행의 와인 중심지다"): "food",
+    ("09", "날짜별 배치"): "food",
+    ("09", "이 구간의 성격 — 차를 쓰다가 놓는다"): "transport",
+    ("09", "아비뇽 주차 — 성벽 안에 넣지 마라"): "transport",
+    ("09", "Day 22·23 주차"): "transport",
+    # 렌터카 반납 섹션 — 제목에 Day 가 들어가 일정으로 빠진다. 교통에 둔다.
+    ("09", "Day 24 — 렌터카 반납과 TGV {{badge:p0|P0 연결}}"): "transport",
+    ("09", "4박 5일 구조 (2인)"): "cost",
+    ("09", "입장료 — 확인된 값"): "cost",
+    ("09", "절감 여지"): "cost",
+    ("09", "예약 우선순위"): "booking",
+    ("09", "우선순위"): "tips",
     ("10", "치안 판단과 여행 설계 반영"): "tips",
 }
 
@@ -968,6 +987,34 @@ def strip_title_number(title):
     return TITLE_H1_RE.sub("", title).strip()
 
 
+def resolve_day_ref(n, chapter):
+    """날짜 없는 Day 참조 헤딩의 번호를 전역 번호로 해석한다.
+
+    원고에 두 가지 표기가 섞여 있다.
+    - v1.x 원본 섹션은 챕터 로컬 번호다 — Girona 의 `## Day 1 비` 는 전체 Day 4다.
+    - v2.0 보강본 섹션은 이미 전역 번호다 — Luberon 의 `### Day 16 — Lourmarin`.
+    표기만 봐서는 구분되지 않으므로 챕터의 실제 날짜 범위로 판정한다.
+
+    번호가 챕터 구간 안에 있으면 전역으로 보고 그대로 둔다. 그렇지 않고
+    로컬 범위(1..박수+1) 안이면 전역으로 옮긴다. 둘 다 아니면 다른 챕터를
+    가리키는 상호참조로 보고 **손대지 않는다** — 해석할 수 없는 번호를
+    고쳐 쓰면 현장에서 틀린 날짜를 읽게 된다.
+
+    반환: (전역번호, 경고문 또는 None)
+    """
+    base = day_no(chapter["start"])
+    last = base + chapter["nights"]
+    local_ok = 1 <= n <= chapter["nights"] + 1
+    if base <= n <= last:
+        # 겹침 구간 — 로컬로도 읽히는 번호다. 지금 원고에는 해당 사례가 없다.
+        if local_ok and base > 1:
+            return n, f"전역·로컬 양쪽으로 읽힌다. 전역 Day {n} 으로 봤다"
+        return n, None
+    if local_ok:
+        return base + n - 1, None
+    return n, f"챕터 구간(Day {base}–{last}) 밖이다. 상호참조로 보고 그대로 둔다"
+
+
 def normalize_day_headings(md_text, chapter):
     """Day 섹션 헤딩을 h2로 통일하고 Day 번호를 전체 여행 기준으로 바꾼다.
 
@@ -979,7 +1026,7 @@ def normalize_day_headings(md_text, chapter):
     if chapter["kind"] != "region":
         return md_text, 0
     base = day_no(chapter["start"])
-    out, changed = [], 0
+    out, changed, warn = [], 0, []
     for line in md_text.splitlines():
         m = SRC_DAY_HEADING_RE.match(line)
         if m:
@@ -1000,11 +1047,17 @@ def normalize_day_headings(md_text, chapter):
             continue
         m = SRC_DAY_REF_RE.match(line)
         if m and m[3].strip():
-            # `## Day 1 비` 같은 참조 헤딩 — 레벨은 두고 번호만 전역으로 옮긴다
-            out.append(f"{m[1]} Day {base + int(m[2]) - 1} {m[3].strip()}")
-            changed += 1
-            continue
+            n, rest = int(m[2]), m[3].strip()
+            g, note = resolve_day_ref(n, chapter)
+            if note:
+                warn.append(f"{note}: {line.strip()}")
+            if g != n:
+                out.append(f"{m[1]} Day {g} {rest}")
+                changed += 1
+                continue
         out.append(line)
+    for w in warn:
+        print(f"  주의: Day 참조 헤딩({chapter['slug']}) {w}")
     return "\n".join(out), changed
 
 
