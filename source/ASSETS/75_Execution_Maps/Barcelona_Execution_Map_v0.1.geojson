@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Praktik Garden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.17132,
+          41.39382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sagrada Família"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.17436,
+          41.40363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sant Pau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.17438,
+          41.41193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gòtic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1761,
+          41.3838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Biblioteca de Catalunya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.17016,
+          41.38144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MACBA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.16672,
+          41.38316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barcelona Sants"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.14007,
+          41.37917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sitges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.81204,
+          41.23512
+        ]
+      }
+    }
+  ]
+}

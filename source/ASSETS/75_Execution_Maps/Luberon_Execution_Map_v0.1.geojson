@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Domaine des Peyre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.12202,
+          43.87088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coustellet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.14544,
+          43.86673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roussillon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.29207,
+          43.90202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Goult"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.24417,
+          43.86306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gordes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.20043,
+          43.91181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Village des Bories"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1857,
+          43.89728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ménerbes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.20689,
+          43.83274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L’Isle-sur-la-Sorgue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.05477,
+          43.91904
+        ]
+      }
+    }
+  ]
+}

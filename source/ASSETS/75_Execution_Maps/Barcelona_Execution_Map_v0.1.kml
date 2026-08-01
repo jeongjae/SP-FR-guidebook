@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark><name>Praktik Garden</name><Point><coordinates>2.17132,41.39382,0</coordinates></Point></Placemark>
+<Placemark><name>Sagrada Família</name><Point><coordinates>2.17436,41.40363,0</coordinates></Point></Placemark>
+<Placemark><name>Sant Pau</name><Point><coordinates>2.17438,41.41193,0</coordinates></Point></Placemark>
+<Placemark><name>Gòtic</name><Point><coordinates>2.1761,41.3838,0</coordinates></Point></Placemark>
+<Placemark><name>Biblioteca de Catalunya</name><Point><coordinates>2.17016,41.38144,0</coordinates></Point></Placemark>
+<Placemark><name>MACBA</name><Point><coordinates>2.16672,41.38316,0</coordinates></Point></Placemark>
+<Placemark><name>Barcelona Sants</name><Point><coordinates>2.14007,41.37917,0</coordinates></Point></Placemark>
+<Placemark><name>Sitges</name><Point><coordinates>1.81204,41.23512,0</coordinates></Point></Placemark>
+</Document></kml>

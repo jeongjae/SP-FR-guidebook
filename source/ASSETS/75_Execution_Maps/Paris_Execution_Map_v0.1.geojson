@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pepper & Paper"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34644,
+          48.83966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Notre-Dame"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3499,
+          48.85297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Louvre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33764,
+          48.86061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Montmartre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3431,
+          48.8867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BnF Richelieu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33838,
+          48.867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grand Palais"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31247,
+          48.86613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orsay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32656,
+          48.85996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bourse de Commerce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3422,
+          48.86245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versailles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.12036,
+          48.80486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giverny"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.53375,
+          49.0754
+        ]
+      }
+    }
+  ]
+}
