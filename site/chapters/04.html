@@ -6,21 +6,42 @@
 <title>Barcelona · Sitges — Jason과 Julia의 2026 유럽 장기여행 가이드북</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body data-rel="..">
 <header class="topbar">
-  <a class="home" href="../index.html">🏠 홈</a>
-  <span class="site-name">Jason과 Julia의 2026 유럽 장기여행 가이드북</span>
-  
+  <button id="menu-btn" aria-label="메뉴 열기">☰</button>
+  <a class="tb-title" href="../index.html">04 · Barcelona · Sitges</a>
+  <nav class="tb-links">
+    <a href="../chapters/03.html">일정</a>
+    <a href="../maps/index.html">지도</a>
+    <a href="../tracker/index.html">트래커</a>
+  </nav>
 </header>
+<nav class="subnav"><div class="sn-layers"><a href="#layer-1-quick-reference-확정-일정-실행표">일정</a><a href="#layer-2-지역-이해-동네-추천등급-볼거리">볼거리</a><a href="#layer-3-숙소-음식-생활-운동-이벤트-예약-대체안">실용정보</a></div><div class="sn-days"><a href="#day-1-8월-29일-토요일" title="Day 1 — 8월 29일 토요일">8/29</a><a href="#day-2-8월-30일-일요일" title="Day 2 — 8월 30일 일요일">8/30</a><a href="#day-3-8월-31일-월요일" title="Day 3 — 8월 31일 월요일">8/31</a><a href="#day-4-9월-1일-화요일" title="Day 4 — 9월 1일 화요일">9/1</a></div></nav>
+<div id="overlay"></div>
+<aside id="drawer" aria-label="전체 메뉴">
+  <div class="dw-head">
+    <span>유럽 43일 가이드북</span>
+    <button id="drawer-close" aria-label="닫기">✕</button>
+  </div>
+  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
+  <div id="search-results"></div>
+  <nav class="dw-nav">
+    <a href="../index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
+    <h3>시작하기</h3><a href="../chapters/01.html">01 가이드북 사용법</a><a href="../chapters/02.html">02 전체 여행 하이라이트</a><a href="../chapters/03.html">03 43일 Master Itinerary</a>
+    <h3>지역 가이드</h3><a href="../chapters/04.html">04 Barcelona · Sitges<span>8/29–9/1 · 3박</span></a><a href="../chapters/05.html">05 Girona · Collioure · Empordà<span>9/1–9/4 · 3박</span></a><a href="../chapters/06.html">06 Nice · Côte d’Azur<span>9/4–9/9 · 5박</span></a><a href="../chapters/07.html">07 Aix-en-Provence<span>9/9–9/13 · 4박</span></a><a href="../chapters/08.html">08 Luberon Farmhouse<span>9/13–9/17 · 4박</span></a><a href="../chapters/09.html">09 Avignon · Alpilles · Pont du Gard<span>9/17–9/21 · 4박</span></a><a href="../chapters/10.html">10 Lyon · Annecy<span>9/21–9/25 · 4박</span></a><a href="../chapters/11.html">11 Paris Long Stay<span>9/25–10/10 · 15박</span></a>
+    <h3>실행지도</h3><a href="../maps/nice.html">Nice · Côte d’Azur 실행지도</a><a href="../maps/lyon.html">Lyon · Annecy 실행지도</a>
+    <h3>트래커</h3><a href="../tracker/itinerary.html">43일 전체 일정표</a><a href="../tracker/reservations.html">예약 현황</a><a href="../tracker/transport.html">이동·교통</a><a href="../tracker/accommodation.html">숙소 후보·확정</a><a href="../tracker/dashboard.html">진행 대시보드</a>
+  </nav>
+</aside>
 <main>
-<p class="meta">2026-08-29 ~ 2026-09-01 · v1.1</p>
-<details class="toc"><summary>이 챕터의 목차</summary><ul><li><a href="#04-바르셀로나시체스-3박-4일">04. 바르셀로나·시체스 3박 4일</a></li><li><a href="#layer-1-quick-reference-확정-일정-실행표">Layer 1. Quick Reference · 확정 일정 · 실행표</a></li><li class="toc-sub"><a href="#1-한눈에-보는-실행-요약">1. 한눈에 보는 실행 요약</a></li><li class="toc-sub"><a href="#2-날짜별-확정-일정">2. 날짜별 확정 일정</a></li><li class="toc-sub"><a href="#3-피로도와-하루-활동량">3. 피로도와 하루 활동량</a></li><li class="toc-sub"><a href="#4-예약-우선순위-실행표">4. 예약 우선순위 실행표</a></li><li><a href="#layer-2-지역-이해-동네-추천등급-볼거리">Layer 2. 지역 이해 · 동네 · 추천등급 · 볼거리</a></li><li class="toc-sub"><a href="#5-바르셀로나와-카탈루냐를-이해하는-다섯-가지-열쇠">5. 바르셀로나와 카탈루냐를 이해하는 다섯 가지 열쇠</a></li><li class="toc-sub"><a href="#6-추천등급-기준">6. 추천등급 기준</a></li><li class="toc-sub"><a href="#7-숙소-생활권과-동네별-성격">7. 숙소 생활권과 동네별 성격</a></li><li class="toc-sub"><a href="#8-주요-관광지-상세-설명과-추천등급">8. 주요 관광지 상세 설명과 추천등급</a></li><li class="toc-sub"><a href="#9-미술관박물관도서관서점-선택표">9. 미술관·박물관·도서관·서점 선택표</a></li><li class="toc-sub"><a href="#10-시체스-지역-이해와-핵심-동선">10. 시체스 지역 이해와 핵심 동선</a></li><li><a href="#layer-3-숙소-음식-생활-운동-이벤트-예약-대체안">Layer 3. 숙소 · 음식 · 생활 · 운동 · 이벤트 · 예약 · 대체안</a></li><li class="toc-sub"><a href="#11-숙소-선택-원칙과-예산">11. 숙소 선택 원칙과 예산</a></li><li class="toc-sub"><a href="#12-실제-숙소-후보-7곳">12. 실제 숙소 후보 7곳</a></li><li class="toc-sub"><a href="#13-레스토랑과-카페-실명메뉴가격예약">13. 레스토랑과 카페 — 실명·메뉴·가격·예약</a></li><li class="toc-sub"><a href="#14-카페-5곳">14. 카페 5곳</a></li><li class="toc-sub"><a href="#15-시장슈퍼빵햄치즈제철-과일">15. 시장·슈퍼·빵·햄·치즈·제철 과일</a></li><li class="toc-sub"><a href="#16-jason-운동-헬스장과-러닝">16. Jason 운동 — 헬스장과 러닝</a></li><li class="toc-sub"><a href="#17-julia-선택-수영시설">17. Julia 선택 수영시설</a></li><li class="toc-sub"><a href="#18-2026년-행사특별전-체류기간에-실제로-겹치는-것">18. 2026년 행사·특별전 — 체류기간에 실제로 겹치는 것</a></li><li class="toc-sub"><a href="#19-공항시내교통-실용정보">19. 공항·시내교통 실용정보</a></li><li class="toc-sub"><a href="#20-9월-1일-렌터카-인수-실행-가이드">20. 9월 1일 렌터카 인수 실행 가이드</a></li><li class="toc-sub"><a href="#21-시체스-주차와-이동">21. 시체스 주차와 이동</a></li><li class="toc-sub"><a href="#22-우천지연피로-대체안">22. 우천·지연·피로 대체안</a></li><li class="toc-sub"><a href="#23-예약카드">23. 예약카드</a></li><li class="toc-sub"><a href="#24-출발-전-확인목록">24. 출발 전 확인목록</a></li><li class="toc-sub"><a href="#25-현지-안전과-지속가능한-여행">25. 현지 안전과 지속가능한 여행</a></li><li class="toc-sub"><a href="#26-예상-현지비용-2인-숙박-제외">26. 예상 현지비용 — 2인, 숙박 제외</a></li><li class="toc-sub"><a href="#편집자-큐레이션-바르셀로나시체스를-더-깊게-경험하는-법">편집자 큐레이션 — 바르셀로나·시체스를 더 깊게 경험하는 법</a></li><li class="toc-sub"><a href="#27-공식자료와-검증-기록">27. 공식자료와 검증 기록</a></li><li class="toc-sub"><a href="#28-최종-결론">28. 최종 결론</a></li></ul></details><h1 id="04-바르셀로나시체스-3박-4일">04. 바르셀로나·시체스 3박 4일</h1>
+<p class="meta">8/29 ~ 9/1 · 3박 · v1.1</p>
+<div class="related"><a href="../tracker/reservations.html">📋 예약 현황</a><a href="../chapters/03.html">📅 43일 일정표</a></div><details class="toc"><summary>전체 목차</summary><ul><li><a href="#04-바르셀로나시체스-3박-4일">04. 바르셀로나·시체스 3박 4일</a></li><li><a href="#layer-1-quick-reference-확정-일정-실행표">Layer 1. Quick Reference · 확정 일정 · 실행표</a></li><li class="toc-sub"><a href="#1-한눈에-보는-실행-요약">1. 한눈에 보는 실행 요약</a></li><li class="toc-sub"><a href="#2-날짜별-확정-일정">2. 날짜별 확정 일정</a></li><li class="toc-sub"><a href="#3-피로도와-하루-활동량">3. 피로도와 하루 활동량</a></li><li class="toc-sub"><a href="#4-예약-우선순위-실행표">4. 예약 우선순위 실행표</a></li><li><a href="#layer-2-지역-이해-동네-추천등급-볼거리">Layer 2. 지역 이해 · 동네 · 추천등급 · 볼거리</a></li><li class="toc-sub"><a href="#5-바르셀로나와-카탈루냐를-이해하는-다섯-가지-열쇠">5. 바르셀로나와 카탈루냐를 이해하는 다섯 가지 열쇠</a></li><li class="toc-sub"><a href="#6-추천등급-기준">6. 추천등급 기준</a></li><li class="toc-sub"><a href="#7-숙소-생활권과-동네별-성격">7. 숙소 생활권과 동네별 성격</a></li><li class="toc-sub"><a href="#8-주요-관광지-상세-설명과-추천등급">8. 주요 관광지 상세 설명과 추천등급</a></li><li class="toc-sub"><a href="#9-미술관박물관도서관서점-선택표">9. 미술관·박물관·도서관·서점 선택표</a></li><li class="toc-sub"><a href="#10-시체스-지역-이해와-핵심-동선">10. 시체스 지역 이해와 핵심 동선</a></li><li><a href="#layer-3-숙소-음식-생활-운동-이벤트-예약-대체안">Layer 3. 숙소 · 음식 · 생활 · 운동 · 이벤트 · 예약 · 대체안</a></li><li class="toc-sub"><a href="#11-숙소-선택-원칙과-예산">11. 숙소 선택 원칙과 예산</a></li><li class="toc-sub"><a href="#12-실제-숙소-후보-7곳">12. 실제 숙소 후보 7곳</a></li><li class="toc-sub"><a href="#13-레스토랑과-카페-실명메뉴가격예약">13. 레스토랑과 카페 — 실명·메뉴·가격·예약</a></li><li class="toc-sub"><a href="#14-카페-5곳">14. 카페 5곳</a></li><li class="toc-sub"><a href="#15-시장슈퍼빵햄치즈제철-과일">15. 시장·슈퍼·빵·햄·치즈·제철 과일</a></li><li class="toc-sub"><a href="#16-jason-운동-헬스장과-러닝">16. Jason 운동 — 헬스장과 러닝</a></li><li class="toc-sub"><a href="#17-julia-선택-수영시설">17. Julia 선택 수영시설</a></li><li class="toc-sub"><a href="#18-2026년-행사특별전-체류기간에-실제로-겹치는-것">18. 2026년 행사·특별전 — 체류기간에 실제로 겹치는 것</a></li><li class="toc-sub"><a href="#19-공항시내교통-실용정보">19. 공항·시내교통 실용정보</a></li><li class="toc-sub"><a href="#20-9월-1일-렌터카-인수-실행-가이드">20. 9월 1일 렌터카 인수 실행 가이드</a></li><li class="toc-sub"><a href="#21-시체스-주차와-이동">21. 시체스 주차와 이동</a></li><li class="toc-sub"><a href="#22-우천지연피로-대체안">22. 우천·지연·피로 대체안</a></li><li class="toc-sub"><a href="#23-예약카드">23. 예약카드</a></li><li class="toc-sub"><a href="#24-출발-전-확인목록">24. 출발 전 확인목록</a></li><li class="toc-sub"><a href="#25-현지-안전과-지속가능한-여행">25. 현지 안전과 지속가능한 여행</a></li><li class="toc-sub"><a href="#26-예상-현지비용-2인-숙박-제외">26. 예상 현지비용 — 2인, 숙박 제외</a></li><li class="toc-sub"><a href="#편집자-큐레이션-바르셀로나시체스를-더-깊게-경험하는-법">편집자 큐레이션 — 바르셀로나·시체스를 더 깊게 경험하는 법</a></li><li class="toc-sub"><a href="#27-공식자료와-검증-기록">27. 공식자료와 검증 기록</a></li><li class="toc-sub"><a href="#28-최종-결론">28. 최종 결론</a></li></ul></details><h1 id="04-바르셀로나시체스-3박-4일">04. 바르셀로나·시체스 3박 4일</h1>
 <blockquote>
 <p><strong>여행의 역할</strong>: 장기 유럽여행의 첫 거점에서 시차를 조절하면서, 바르셀로나의 도시 구조와 카탈루냐 문화에 천천히 진입하는 구간이다. 유료 가우디 명소는 <strong>사그라다 파밀리아만</strong> 방문하고, 나머지는 산책·시장·도서관·현대미술·책방·현지 음식으로 구성한다. 9월 1일에는 바르셀로나에서 렌터카를 인수해 시체스를 방문한 뒤 지로나로 이동한다.</p>
 <p><strong>여행자 기준</strong>: Julia의 수영은 선택 일정이며 숙소 선정 조건으로 사용하지 않는다. 아침은 숙소, 점심은 샌드위치·시장·가벼운 현지식, 저녁은 레스토랑을 기본으로 한다.</p>
 </blockquote>
 <hr>
-<h1 id="layer-1-quick-reference-확정-일정-실행표">Layer 1. Quick Reference · 확정 일정 · 실행표</h1>
+<h1 id="layer-1-quick-reference-확정-일정-실행표" class="layer-h">Layer 1. Quick Reference · 확정 일정 · 실행표</h1>
 <h2 id="1-한눈에-보는-실행-요약">1. 한눈에 보는 실행 요약</h2>
 <div class="table-wrap"><table>
 <thead>
@@ -479,7 +500,7 @@
 </tbody>
 </table></div>
 <hr>
-<h1 id="layer-2-지역-이해-동네-추천등급-볼거리">Layer 2. 지역 이해 · 동네 · 추천등급 · 볼거리</h1>
+<h1 id="layer-2-지역-이해-동네-추천등급-볼거리" class="layer-h">Layer 2. 지역 이해 · 동네 · 추천등급 · 볼거리</h1>
 <h2 id="5-바르셀로나와-카탈루냐를-이해하는-다섯-가지-열쇠">5. 바르셀로나와 카탈루냐를 이해하는 다섯 가지 열쇠</h2>
 <h3 id="51-바르셀로나는-고딕도시이면서-계획도시다">5.1 바르셀로나는 ‘고딕도시’이면서 ‘계획도시’다</h3>
 <p>바르셀로나의 여행 경험은 중세 골목과 19세기 격자도시의 대비에서 시작한다. 고딕지구와 Born은 로마 도시 Barcino와 중세 상업도시의 흔적을 간직한다. 그 북쪽의 Eixample은 산업화로 성벽을 철거한 뒤 Ildefons Cerdà가 설계한 확장도시다. 모서리를 잘라낸 팔각형 블록, 넓은 도로, 안뜰은 빛·환기·교통을 도시계획으로 해결하려 한 실험이었다.</p>
@@ -805,7 +826,7 @@
 <li>이번에는 수영 일정이 아니라 <strong>30분 전망 산책</strong>만 배치한다. 9월 1일부터 공식 구조서비스는 10:00~18:00로 안내된다.</li>
 </ul>
 <hr>
-<h1 id="layer-3-숙소-음식-생활-운동-이벤트-예약-대체안">Layer 3. 숙소 · 음식 · 생활 · 운동 · 이벤트 · 예약 · 대체안</h1>
+<h1 id="layer-3-숙소-음식-생활-운동-이벤트-예약-대체안" class="layer-h">Layer 3. 숙소 · 음식 · 생활 · 운동 · 이벤트 · 예약 · 대체안</h1>
 <h2 id="11-숙소-선택-원칙과-예산">11. 숙소 선택 원칙과 예산</h2>
 <h3 id="111-예산-산식">11.1 예산 산식</h3>
 <ul>
@@ -1971,5 +1992,15 @@
 <footer>
   <p>Jason과 Julia의 2026 유럽 장기여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일</p>
 </footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html"><b>🏠</b><span>홈</span></a>
+  <a href="../chapters/03.html"><b>📅</b><span>일정</span></a>
+  <a href="#" class="nav-today"><b>📍</b><span>오늘</span></a>
+  <a href="../maps/index.html"><b>🗺️</b><span>지도</span></a>
+  <a href="../tracker/index.html"><b>📋</b><span>트래커</span></a>
+</nav>
+<button id="back-top" aria-label="맨 위로">↑</button>
+<script src="../assets/data.js" defer></script>
+<script src="../assets/nav.js" defer></script>
 </body>
 </html>
