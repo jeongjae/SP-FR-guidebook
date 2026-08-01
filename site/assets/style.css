@@ -511,6 +511,51 @@ nav.pager a { text-decoration: none; }
 
 p.note { color: var(--muted); font-size: 0.85rem; }
 
+/* ================= 데일리 가이드 ================= */
+figure.daily-card {
+  margin: 16px 0;
+  text-align: center;
+}
+figure.daily-card img {
+  max-width: min(100%, 480px);
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+.p4-badge {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.65em;
+  font-weight: 700;
+  background: var(--accent);
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 999px;
+  margin-left: 8px;
+}
+.daily-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+.daily-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+.daily-item:hover { border-color: var(--accent); }
+.daily-item b { color: var(--accent); }
+.daily-item .di-region { color: var(--muted); font-size: 0.78rem; }
+
 /* ================= 트래커 탭 ================= */
 nav.tabs {
   display: flex;

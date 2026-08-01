@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark><name>Domaine des Peyre</name><Point><coordinates>5.12202,43.87088,0</coordinates></Point></Placemark>
+<Placemark><name>Coustellet</name><Point><coordinates>5.14544,43.86673,0</coordinates></Point></Placemark>
+<Placemark><name>Roussillon</name><Point><coordinates>5.29207,43.90202,0</coordinates></Point></Placemark>
+<Placemark><name>Goult</name><Point><coordinates>5.24417,43.86306,0</coordinates></Point></Placemark>
+<Placemark><name>Gordes</name><Point><coordinates>5.20043,43.91181,0</coordinates></Point></Placemark>
+<Placemark><name>Village des Bories</name><Point><coordinates>5.1857,43.89728,0</coordinates></Point></Placemark>
+<Placemark><name>Ménerbes</name><Point><coordinates>5.20689,43.83274,0</coordinates></Point></Placemark>
+<Placemark><name>L’Isle-sur-la-Sorgue</name><Point><coordinates>5.05477,43.91904,0</coordinates></Point></Placemark>
+</Document></kml>

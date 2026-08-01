@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Terrasse du Clocher"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.81302,
+          43.94993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Halles"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.80903,
+          43.94787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palais des Papes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8075,
+          43.95078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pont Saint-Bénézet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.80508,
+          43.95389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uzès"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.41974,
+          44.0121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pont du Gard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.53502,
+          43.9475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Baux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.79531,
+          43.74473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Rémy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.83168,
+          43.78842
+        ]
+      }
+    }
+  ]
+}

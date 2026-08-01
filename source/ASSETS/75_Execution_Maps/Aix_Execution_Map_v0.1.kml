@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark><name>Adagio Aix Centre</name><Point><coordinates>5.440842,43.528998,0</coordinates></Point></Placemark>
+<Placemark><name>Rotonde</name><Point><coordinates>5.44582,43.5267,0</coordinates></Point></Placemark>
+<Placemark><name>Cours Mirabeau</name><Point><coordinates>5.44925,43.52622,0</coordinates></Point></Placemark>
+<Placemark><name>Musée Granet</name><Point><coordinates>5.45251,43.52557,0</coordinates></Point></Placemark>
+<Placemark><name>Cassis</name><Point><coordinates>5.53962,43.21401,0</coordinates></Point></Placemark>
+<Placemark><name>Atelier Cézanne</name><Point><coordinates>5.44704,43.53964,0</coordinates></Point></Placemark>
+<Placemark><name>Lourmarin</name><Point><coordinates>5.36383,43.76373,0</coordinates></Point></Placemark>
+</Document></kml>

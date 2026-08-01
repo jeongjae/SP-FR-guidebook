@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barcelona Execution Map</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<style>html,body,#map{height:100%;margin:0}body{font-family:Arial,'Noto Sans KR',sans-serif}
+.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;
+box-shadow:0 2px 12px #0004;max-width:330px}h1{font-size:18px;margin:0 0 5px}p{font-size:12px;margin:0;line-height:1.4}</style>
+</head><body><div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel"><h1>Barcelona 실행지도</h1>
+<p>현재 MD 일정에 따른 주요 기준점. 실제 도보·운전은 Google Maps에서 다시 계산한다.</p></div>
+<script src="vendor/leaflet/leaflet.js"></script><script>
+const pts=[{"name": "Praktik Garden", "lat": 41.39382, "lon": 2.17132, "url": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden"}, {"name": "Sagrada Família", "lat": 41.40363, "lon": 2.17436, "url": "https://www.google.com/maps/search/?api=1&query=Sagrada+Fam%C3%ADlia"}, {"name": "Sant Pau", "lat": 41.41193, "lon": 2.17438, "url": "https://www.google.com/maps/search/?api=1&query=Sant+Pau"}, {"name": "Gòtic", "lat": 41.3838, "lon": 2.1761, "url": "https://www.google.com/maps/search/?api=1&query=G%C3%B2tic"}, {"name": "Biblioteca de Catalunya", "lat": 41.38144, "lon": 2.17016, "url": "https://www.google.com/maps/search/?api=1&query=Biblioteca+de+Catalunya"}, {"name": "MACBA", "lat": 41.38316, "lon": 2.16672, "url": "https://www.google.com/maps/search/?api=1&query=MACBA"}, {"name": "Barcelona Sants", "lat": 41.37917, "lon": 2.14007, "url": "https://www.google.com/maps/search/?api=1&query=Barcelona+Sants"}, {"name": "Sitges", "lat": 41.23512, "lon": 1.81204, "url": "https://www.google.com/maps/search/?api=1&query=Sitges"}];
+const map=L.map('map');L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const ll=[];pts.forEach((p,i)=>{ll.push([p.lat,p.lon]);L.marker([p.lat,p.lon]).addTo(map)
+.bindPopup(`<b>${i+1}. ${p.name}</b><br><a target="_blank" href="${p.url}">Google Maps</a>`);});
+L.polyline(ll,{color:'#1f4e78',weight:4,opacity:.65,dashArray:'8,8'}).addTo(map);
+map.fitBounds(L.latLngBounds(ll).pad(.15));</script></body></html>

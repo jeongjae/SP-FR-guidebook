@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark><name>Hôtel de Verdun</name><Point><coordinates>4.82968,45.74965,0</coordinates></Point></Placemark>
+<Placemark><name>Bellecour</name><Point><coordinates>4.83202,45.75779,0</coordinates></Point></Placemark>
+<Placemark><name>Fourvière</name><Point><coordinates>4.82259,45.76227,0</coordinates></Point></Placemark>
+<Placemark><name>Vieux Lyon</name><Point><coordinates>4.82754,45.76075,0</coordinates></Point></Placemark>
+<Placemark><name>Croix-Rousse</name><Point><coordinates>4.8318,45.77413,0</coordinates></Point></Placemark>
+<Placemark><name>Halles Paul Bocuse</name><Point><coordinates>4.85042,45.76337,0</coordinates></Point></Placemark>
+<Placemark><name>Parc Tête d’Or</name><Point><coordinates>4.85344,45.77969,0</coordinates></Point></Placemark>
+<Placemark><name>Annecy</name><Point><coordinates>6.12542,45.89905,0</coordinates></Point></Placemark>
+</Document></kml>

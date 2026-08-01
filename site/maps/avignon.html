@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avignon Execution Map</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<style>html,body,#map{height:100%;margin:0}body{font-family:Arial,'Noto Sans KR',sans-serif}
+.panel{position:absolute;z-index:1000;left:12px;top:12px;background:#fffffff2;padding:12px 14px;border-radius:9px;
+box-shadow:0 2px 12px #0004;max-width:330px}h1{font-size:18px;margin:0 0 5px}p{font-size:12px;margin:0;line-height:1.4}</style>
+</head><body><div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel"><h1>Avignon 실행지도</h1>
+<p>현재 MD 일정에 따른 주요 기준점. 실제 도보·운전은 Google Maps에서 다시 계산한다.</p></div>
+<script src="vendor/leaflet/leaflet.js"></script><script>
+const pts=[{"name": "La Terrasse du Clocher", "lat": 43.94993, "lon": 4.81302, "url": "https://www.google.com/maps/search/?api=1&query=La+Terrasse+du+Clocher"}, {"name": "Les Halles", "lat": 43.94787, "lon": 4.80903, "url": "https://www.google.com/maps/search/?api=1&query=Les+Halles"}, {"name": "Palais des Papes", "lat": 43.95078, "lon": 4.8075, "url": "https://www.google.com/maps/search/?api=1&query=Palais+des+Papes"}, {"name": "Pont Saint-Bénézet", "lat": 43.95389, "lon": 4.80508, "url": "https://www.google.com/maps/search/?api=1&query=Pont+Saint-B%C3%A9n%C3%A9zet"}, {"name": "Uzès", "lat": 44.0121, "lon": 4.41974, "url": "https://www.google.com/maps/search/?api=1&query=Uz%C3%A8s"}, {"name": "Pont du Gard", "lat": 43.9475, "lon": 4.53502, "url": "https://www.google.com/maps/search/?api=1&query=Pont+du+Gard"}, {"name": "Les Baux", "lat": 43.74473, "lon": 4.79531, "url": "https://www.google.com/maps/search/?api=1&query=Les+Baux"}, {"name": "Saint-Rémy", "lat": 43.78842, "lon": 4.83168, "url": "https://www.google.com/maps/search/?api=1&query=Saint-R%C3%A9my"}];
+const map=L.map('map');L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const ll=[];pts.forEach((p,i)=>{ll.push([p.lat,p.lon]);L.marker([p.lat,p.lon]).addTo(map)
+.bindPopup(`<b>${i+1}. ${p.name}</b><br><a target="_blank" href="${p.url}">Google Maps</a>`);});
+L.polyline(ll,{color:'#1f4e78',weight:4,opacity:.65,dashArray:'8,8'}).addTo(map);
+map.fitBounds(L.latLngBounds(ll).pad(.15));</script></body></html>

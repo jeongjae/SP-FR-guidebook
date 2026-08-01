@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hotel Carlemany"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8213,
+          41.97865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Girona Cathedral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82611,
+          41.98741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Onyar Houses"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82402,
+          41.98473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Collioure"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.08322,
+          42.52505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peralada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.01017,
+          42.30872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.14843,
+          41.97039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peratallada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.09007,
+          41.97618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calella de Palafrugell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.18416,
+          41.88901
+        ]
+      }
+    }
+  ]
+}

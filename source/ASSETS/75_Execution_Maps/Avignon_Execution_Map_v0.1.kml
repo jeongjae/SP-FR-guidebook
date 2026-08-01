@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<Placemark><name>La Terrasse du Clocher</name><Point><coordinates>4.81302,43.94993,0</coordinates></Point></Placemark>
+<Placemark><name>Les Halles</name><Point><coordinates>4.80903,43.94787,0</coordinates></Point></Placemark>
+<Placemark><name>Palais des Papes</name><Point><coordinates>4.8075,43.95078,0</coordinates></Point></Placemark>
+<Placemark><name>Pont Saint-Bénézet</name><Point><coordinates>4.80508,43.95389,0</coordinates></Point></Placemark>
+<Placemark><name>Uzès</name><Point><coordinates>4.41974,44.0121,0</coordinates></Point></Placemark>
+<Placemark><name>Pont du Gard</name><Point><coordinates>4.53502,43.9475,0</coordinates></Point></Placemark>
+<Placemark><name>Les Baux</name><Point><coordinates>4.79531,43.74473,0</coordinates></Point></Placemark>
+<Placemark><name>Saint-Rémy</name><Point><coordinates>4.83168,43.78842,0</coordinates></Point></Placemark>
+</Document></kml>
