@@ -84,6 +84,27 @@
     });
   }
 
+  /* ---------- 주요 방문지 사진 (Wikipedia, 점진적 향상) ---------- */
+  var cards = document.querySelectorAll(".pl-card[data-wiki]");
+  cards.forEach(function (card) {
+    var title = card.getAttribute("data-wiki");
+    var lang = card.getAttribute("data-wlang") || "en";
+    var url = "https://" + lang + ".wikipedia.org/api/rest_v1/page/summary/" +
+      encodeURIComponent(title.replace(/ /g, "_"));
+    fetch(url).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data || !data.thumbnail || !data.thumbnail.source) return;
+        var box = card.querySelector(".pl-photo");
+        var img = box.querySelector("img");
+        img.src = data.thumbnail.source;
+        img.onload = function () { box.hidden = false; };
+        var credit = box.querySelector(".pl-credit");
+        if (credit && data.content_urls && data.content_urls.desktop) {
+          credit.href = data.content_urls.desktop.page;
+        }
+      }).catch(function () { /* 오프라인·차단 시 사진 없이 카드 유지 */ });
+  });
+
   /* ---------- 맨 위로 ---------- */
   var btt = $("#back-top");
   if (btt) {

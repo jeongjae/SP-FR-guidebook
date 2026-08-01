@@ -511,6 +511,49 @@ nav.pager a { text-decoration: none; }
 
 p.note { color: var(--muted); font-size: 0.85rem; }
 
+/* ================= 주요 방문지 카드 ================= */
+section.places {
+  margin: 8px 0 24px;
+}
+section.places > h3 { margin-top: 0.8em; }
+section.places .note { margin: 2px 0 10px; }
+.pl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+.pl-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.pl-photo { position: relative; }
+.pl-photo img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+.pl-credit {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff !important;
+  padding: 1px 7px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+.pl-body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
+.pl-body b { font-size: 0.95rem; }
+.pl-body p { margin: 0; font-size: 0.84rem; color: var(--muted); line-height: 1.5; }
+.pl-links { display: flex; gap: 10px; margin-top: 4px; }
+.pl-links a { font-size: 0.8rem; font-weight: 600; text-decoration: none; }
+
 /* ================= 데일리 가이드 ================= */
 figure.daily-card {
   margin: 16px 0;
