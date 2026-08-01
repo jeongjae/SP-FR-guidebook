@@ -66,9 +66,9 @@ status: "상용 편집형 공통 프런트매터"
 현재 Markdown 작업본에는 다음과 같이 지도·사진 위치만 표시돼 있다.
 
 ```text
-[지도 자리] 날짜별 핵심 동선
-[사진 자리] 대표 도시풍경
-[그림 자리] 도시구조·역사 도식
+{{VISUAL:VIS-MAP-040|type=map|status=linked|strategy=execution-map}} 날짜별 핵심 동선
+{{VISUAL:VIS-PHOTO-078|type=diagram|status=editorial-ready|strategy=generated-diagram}} 대표 도시풍경
+{{VISUAL:VIS-FIGURE-006|type=diagram|status=editorial-ready|strategy=generated-diagram}} 도시구조·역사 도식
 ```
 
 최종 Word·PDF 제작 단계에서 실제 이미지와 캡션, 출처, 저작권 정보를 넣는다. 장소카드의 설명은 어떤 장면을 선택해야 하는지를 지정하는 **이미지 디렉션** 역할도 한다.

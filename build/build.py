@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """TP Europe Travel Guidebook — 정적 사이트 빌드 스크립트.
 
-source/ 의 통합 패키지 v1.30(Phase 5 LatestOnly)을
+source/ 의 통합 패키지 v1.37(Phase 10 LatestOnly)을
 site/ 아래의 순수 정적 HTML 사이트로 변환한다.
 
-콘텐츠 기준 (CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v1.2.md):
+콘텐츠 기준 (CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v1.9.md):
  - 본문: 정식 지역 챕터(20_Regional_Chapters) + Core 문서(10_Core)
  - 지도: ASSETS/75_Execution_Maps 8개 지역
  - 데일리 카드: ASSETS/80_Daily_Mobile_Guide_Images 43장 (Day 12–24는 Phase 4 카드 우선)
- - 트래커: OPERATIONS/TP_Europe_Travel_Master_Tracker_v1.1.xlsx
+ - 트래커: OPERATIONS/TP_Europe_Travel_Master_Tracker_v1.2.xlsx
 
 UI/UX 설계: docs/UIUX_Design_v1.0.md
  - '오늘' 버튼 → 당일 데일리 카드 페이지(카드 이미지 + 챕터 일정 + 지역 지도 링크)
@@ -61,28 +61,28 @@ CHAPTERS = [
          kind="intro", title="전체 여행 하이라이트", sub="43일의 경험 설계"),
     dict(path=f"{CORE}/03_Whole_Trip_Master_Itinerary_v1.2.md", slug="03",
          kind="schedule", title="43일 Master Itinerary", sub="전체 일정·실행성 감사 반영"),
-    dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v1.3.md", slug="04", kind="region",
+    dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v1.6.md", slug="04", kind="region",
          title="Barcelona · Sitges", start=date(2026, 8, 29), end=date(2026, 9, 1),
          nights=3, map="barcelona.html", region="Barcelona"),
-    dict(path=f"{REGIONAL}/05_Girona_Collioure_Emporda_v1.3.md", slug="05", kind="region",
+    dict(path=f"{REGIONAL}/05_Girona_Collioure_Emporda_v1.6.md", slug="05", kind="region",
          title="Girona · Collioure · Empordà", start=date(2026, 9, 1), end=date(2026, 9, 4),
          nights=3, map="girona.html", region="Girona"),
-    dict(path=f"{REGIONAL}/06_Nice_Cote_d_Azur_v1.5.md", slug="06", kind="region",
+    dict(path=f"{REGIONAL}/06_Nice_Cote_d_Azur_v1.8.md", slug="06", kind="region",
          title="Nice · Côte d’Azur", start=date(2026, 9, 4), end=date(2026, 9, 9),
          nights=5, map="nice.html", region="Nice"),
-    dict(path=f"{REGIONAL}/07_Aix_en_Provence_v1.4.md", slug="07", kind="region",
+    dict(path=f"{REGIONAL}/07_Aix_en_Provence_v1.7.md", slug="07", kind="region",
          title="Aix-en-Provence", start=date(2026, 9, 9), end=date(2026, 9, 13),
          nights=4, map="aix.html", region="Aix"),
-    dict(path=f"{REGIONAL}/08_Luberon_Farmhouse_v1.5.md", slug="08", kind="region",
+    dict(path=f"{REGIONAL}/08_Luberon_Farmhouse_v1.8.md", slug="08", kind="region",
          title="Luberon Farmhouse", start=date(2026, 9, 13), end=date(2026, 9, 17),
          nights=4, map="luberon.html", region="Luberon"),
-    dict(path=f"{REGIONAL}/09_Avignon_Alpilles_Pont_du_Gard_v1.3.md", slug="09", kind="region",
+    dict(path=f"{REGIONAL}/09_Avignon_Alpilles_Pont_du_Gard_v1.6.md", slug="09", kind="region",
          title="Avignon · Alpilles · Pont du Gard", start=date(2026, 9, 17), end=date(2026, 9, 21),
          nights=4, map="avignon.html", region="Avignon"),
-    dict(path=f"{REGIONAL}/10_Lyon_v1.4.md", slug="10", kind="region",
+    dict(path=f"{REGIONAL}/10_Lyon_v1.7.md", slug="10", kind="region",
          title="Lyon · Annecy", start=date(2026, 9, 21), end=date(2026, 9, 25),
          nights=4, map="lyon.html", region="Lyon"),
-    dict(path=f"{REGIONAL}/11_Paris_Long_Stay_v1.4.md", slug="11", kind="region",
+    dict(path=f"{REGIONAL}/11_Paris_Long_Stay_v1.7.md", slug="11", kind="region",
          title="Paris Long Stay", start=date(2026, 9, 25), end=date(2026, 10, 10),
          nights=15, map="paris.html", region="Paris"),
 ]
@@ -90,14 +90,14 @@ CHAPTERS = [
 # 실행지도 8종 (ASSETS/75_Execution_Map_Index_v1.0.md 기준)
 MAP_DIR = SOURCE / "ASSETS" / "75_Execution_Maps"
 MAPS = [
-    ("Barcelona_Execution_Map_v0.1.html", "barcelona.html", "Barcelona 실행지도"),
-    ("Girona_Execution_Map_v0.1.html", "girona.html", "Girona 실행지도"),
-    ("Nice_Execution_Map_v0.1.html", "nice.html", "Nice 실행지도"),
-    ("Aix_Execution_Map_v0.1.html", "aix.html", "Aix 실행지도"),
-    ("Luberon_Execution_Map_v0.1.html", "luberon.html", "Luberon 실행지도"),
-    ("Avignon_Execution_Map_v0.1.html", "avignon.html", "Avignon 실행지도"),
-    ("Lyon_Execution_Map_v0.1.html", "lyon.html", "Lyon 실행지도"),
-    ("Paris_Execution_Map_v0.1.html", "paris.html", "Paris 실행지도"),
+    ("Barcelona_Execution_Map_v0.2.html", "barcelona.html", "Barcelona 실행지도"),
+    ("Girona_Execution_Map_v0.2.html", "girona.html", "Girona 실행지도"),
+    ("Nice_Execution_Map_v0.2.html", "nice.html", "Nice 실행지도"),
+    ("Aix_Execution_Map_v0.2.html", "aix.html", "Aix 실행지도"),
+    ("Luberon_Execution_Map_v0.2.html", "luberon.html", "Luberon 실행지도"),
+    ("Avignon_Execution_Map_v0.2.html", "avignon.html", "Avignon 실행지도"),
+    ("Lyon_Execution_Map_v0.2.html", "lyon.html", "Lyon 실행지도"),
+    ("Paris_Execution_Map_v0.2.html", "paris.html", "Paris 실행지도"),
 ]
 
 # 데일리 모바일 가이드 (ASSETS/80_Daily_Mobile_Guide_Image_Index_v1.1.md 기준)
@@ -105,13 +105,14 @@ DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 
-TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.1.xlsx"
+TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
 TRACKER_SHEETS = [
     ("Master Itinerary", "itinerary", "43일 전체 일정표"),
     ("Reservations", "reservations", "예약 현황"),
     ("Transport", "transport", "이동·교통"),
     ("Accommodation", "accommodation", "숙소 후보·확정"),
     ("Dashboard", "dashboard", "진행 대시보드"),
+    ("Phase8 Lock Status", "locks", "예약·운영 잠금"),
 ]
 
 DAY_RE = re.compile(r"Day\s*(\d+)\s*[—\-–]\s*(\d+)월\s*(\d+)일")
@@ -136,18 +137,21 @@ CAT_LABEL = dict(CATEGORIES)
 
 # 제목 키워드 규칙 — 먼저 맞는 규칙이 이긴다 (번호 접두어 제거 후 적용)
 CAT_RULES = [
-    ("appendix", r"공식자료|검증 기록|검증 범위|검증 출처|참고 출처|편집 메모|최종 결론|최종 편집 판단|시각요소"),
+    ("appendix", r"공식자료|검증 기록|검증 범위|검증 출처|참고 출처|참고자료|편집 메모|최종 결론"
+                 r"|최종 편집 판단|시각요소|공식정보 원칙"),
     ("cost", r"예상 현지비용|예상 경비|^경비"),
     ("booking", r"^예약|예약카드|예약 게이트"),
+    ("tips", r"대체안|확인목록|현장 메모"),
     ("schedule", r"Day \d|날짜별|일정표|일정 요약|일정 교체|피로도|한눈에 보는|운영 원칙|동선 도식"
-                 r"|Quick Reference|실행성 감사|의사결정 게이트|세 사이클|삭제 우선순위"),
+                 r"|Quick Reference|실행성 감사|의사결정 게이트|세 사이클|삭제 우선순위|중요 정정"),
     ("transport", r"교통|렌터카|주차|공항|문전 이동|대중교통|자동차|철도"),
     ("stay", r"숙소|생활권|농가"),
-    ("intro", r"이해하|어떻게 볼 것인가|도시층|읽는 법|지역 이해|편집자 큐레이션|열쇠"),
+    ("intro", r"이해하|어떻게 볼 것인가|도시층|읽는 법|지역 이해|편집자 큐레이션|열쇠|다섯 개의 층"
+              r"|Editor’s Verdict|Editor's Verdict"),
     ("food", r"레스토랑|카페|시장|먹어야|식당|장보기|음식|빵|식사체계|먹거리"),
-    ("info", r"방문지|관광지|주요 장소|핵심 장소|추천등급|미술관|박물관|도서관|서점|공연|축구"
-             r"|근교|체험할|행사|특별전|특별운영|이벤트|선택표|전시"),
-    ("tips", r"대체안|확인목록|운동|수영|안전|치안|스케치|지속가능|현장 선택"),
+    ("info", r"방문지|관광지|주요 장소|핵심 장소|추천등급|추천 등급|미술관|박물관|도서관|서점|공연|축구"
+             r"|근교|체험할|행사|특별전|특별운영|이벤트|선택표|전시|장소별|Top 10|놓치면 아쉬운|하루를 완성"),
+    ("tips", r"운동|수영|안전|치안|스케치|지속가능|현장 선택|출발 전|휴식"),
 ]
 
 # 규칙으로 판별이 어려운 제목의 명시적 지정 (챕터 슬러그, 원문 h2 제목) -> 카테고리
@@ -186,9 +190,77 @@ CAT_OVERRIDES = {
     ("05", "꼭 체험할 것"): "info",
     ("05", "식당 큐레이션"): "food",
     ("05", "현장 선택 규칙"): "tips",
+    ("05", "4. 이 일정이 Jason·Julia에게 맞는 이유"): "schedule",
+    ("05", "20. 확정사항과 남은 미결정"): "booking",
     ("08", "숙소 평가 최종 기준"): "stay",
     ("10", "치안 판단과 여행 설계 반영"): "tips",
 }
+
+# 모듈 h1 — h1은 제거하고 하위 h2를 개별 분류한다 (직속 도입부의 기본 카테고리)
+MODULE_H1 = {
+    "Commercial Guide Module": "intro",
+    "Regional Context & Scheduled Place Dossiers": "intro",
+}
+TITLE_H1_RE = re.compile(r"^(Chapter\s*)?\d+\.\s")
+
+# 지역 대표 사진 (ASSETS/88_Representative_Public_Photo_Credits_v1.0.md 기준, CC 라이선스)
+HERO_DIR = SOURCE / "ASSETS" / "88_Representative_Public_Photos"
+HERO_PHOTOS = {
+    "04": ("01_Barcelona_Sagrada_Familia_CC_BY_SA_4_0.jpg", "Sagrada Família", "Lolo7433",
+           "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/",
+           "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_Ext%C3%A9rieur.jpg"),
+    "05": ("02_Girona_Onyar_Houses_CC_BY_SA_4_0.jpg", "Onyar 강변 주택", "Guyw4444",
+           "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/",
+           "https://commons.wikimedia.org/wiki/File:The_houses_of_the_Onyar.jpg"),
+    "06": ("03_Nice_Promenade_des_Anglais_CC_BY_SA_2_5.jpg", "Promenade des Anglais", "Floflo",
+           "CC BY-SA 2.5", "https://creativecommons.org/licenses/by-sa/2.5/",
+           "https://commons.wikimedia.org/wiki/File:Nice_promenade-anglais.jpg"),
+    "07": ("04_Aix_Cours_Mirabeau_CC_BY_2_0.jpg", "Cours Mirabeau", "Andrea Schaffer",
+           "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0/",
+           "https://commons.wikimedia.org/wiki/File:Cours_Mirabeau,_Aix-en-Provence.jpg"),
+    "08": ("05_Luberon_Gordes_CC_BY_SA_4_0.jpg", "Gordes", "Einaz80",
+           "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/",
+           "https://commons.wikimedia.org/wiki/File:Village_of_Gordes.jpg"),
+    "09": ("06_Avignon_Palais_des_Papes_CC_BY_SA_4_0.jpg", "Palais des Papes", "Gzen92",
+           "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/",
+           "https://commons.wikimedia.org/wiki/File:Palais_des_papes_(Avignon)_(9).jpg"),
+    "10": ("07_Lyon_Saone_Fourviere_CC_BY_SA_4_0.jpg", "Saône와 Fourvière", "Gloumouth1",
+           "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/",
+           "https://commons.wikimedia.org/wiki/File:Panoramics_Lyon_Sa%C3%B4ne_Fourvi%C3%A8re.jpg"),
+    "11": ("08_Paris_Seine_Sunset_CC_BY_SA_4_0.jpg", "Seine 일몰", "DiscoA340",
+           "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/",
+           "https://commons.wikimedia.org/wiki/File:River_Seine_at_Sunset_in_Paris.jpg"),
+}
+
+# 편집 도식 (ASSETS/85_Editorial_Visuals_Index_v1.0.md 권장 위치 기준, 내부 제작 자산)
+VISUALS_DIR = SOURCE / "ASSETS" / "85_Editorial_Visuals"
+VISUALS = {
+    "route": "01_Whole_Trip_Route_and_Stay_Structure_v1.0.png",
+    "rhythm": "02_Living_Travel_Daily_Rhythm_v1.0.png",
+    "fatigue": "03_Fatigue_and_Deletion_Hierarchy_v1.0.png",
+    "risk": "04_Booking_and_Operational_Risk_Matrix_v1.0.png",
+    "cardays": "05_Provence_Car_Day_Operating_Logic_v1.0.png",
+    "cycles": "06_Paris_Long_Stay_Three_Cycles_v1.0.png",
+}
+
+
+def hero_figure(slug):
+    """지역소개 첫머리의 대표 사진 (CC 저작자·라이선스 표시)."""
+    if slug not in HERO_PHOTOS:
+        return ""
+    fname, subject, author, lic, lic_url, src_url = HERO_PHOTOS[slug]
+    return f"""<figure class="hero-photo">
+<img src="../assets/heroes/{slug}.jpg" alt="{html.escape(subject)}" loading="lazy">
+<figcaption>{html.escape(subject)} — 사진: {html.escape(author)},
+<a href="{lic_url}" target="_blank" rel="noopener">{lic}</a>
+(<a href="{src_url}" target="_blank" rel="noopener">Wikimedia Commons</a>, 크롭·리사이즈)</figcaption>
+</figure>"""
+
+
+def visual_figure(key, caption, rel="../assets"):
+    return (f'<figure class="ed-visual"><img src="{rel}/visuals/{VISUALS[key]}" '
+            f'alt="{html.escape(caption)}" loading="lazy">'
+            f'<figcaption>{html.escape(caption)}</figcaption></figure>')
 
 NUM_PREFIX_RE = re.compile(r"^\d+[A-Z]?[\.\)]\s*")
 SUBNUM_RE = re.compile(r"^\d+\.\d+\s")
@@ -215,15 +287,20 @@ SEARCH_INDEX = []      # {t: 제목, c: 위치, u: URL}
 def regroup_regional(slug, body_md):
     """지역 챕터 본문을 카테고리 순서로 재편성한 마크다운을 만든다.
 
-    - 첫 Layer/Pass h1 이전 = 헤더 영역 (제목·부제·도입 인용문). 단 '편집 메모' h2는 부록으로.
-    - Layer h1은 제거하고 그 아래 h2들을 개별 분류한다.
-    - Pass B/C h1 그룹은 h1을 h2로 낮춰 통째로 '일정'에 넣는다 (내부 h2는 h3로 강등).
-    - 각 카테고리는 `# 카테고리명` h1로 시작한다 (서브내비 앵커).
+    h1 유형별 처리:
+    - 챕터 제목 h1 (`04.` / `Chapter 05.` 형태의 첫 등장) → 헤더 영역 (+ 부제 h2)
+    - Layer h1 → 제거, 하위 h2 개별 분류
+    - Pass B/C h1 → h2로 낮춰 하위와 함께 '일정' (예외는 CAT_OVERRIDES)
+    - 모듈 h1 (Commercial Guide Module 등) → 제거, 하위 h2 개별 분류
+    - 그 외 번호 h1 (재구조화된 챕터의 섹션) → h2로 낮춰 일반 분류
+    각 카테고리는 `# 카테고리명` h1로 시작한다 (서브내비 앵커).
     """
     lines = body_md.splitlines()
     header, sections = [], []   # sections: [title, cat, [lines]]
-    cur = None                  # 현재 h2 섹션
-    in_header, pass_group = True, False
+    cur = None                  # 현재 수집 중인 섹션
+    mode = "start"              # start | header | sections
+    pass_group = False
+    seen_title = False
     prev_cat = None
 
     def close():
@@ -238,23 +315,43 @@ def regroup_regional(slug, body_md):
         if h1:
             close()
             title = h1.group(1).strip()
+            pass_group = False
             if re.match(r"Layer\s*\d", title):
-                in_header, pass_group = False, False
+                mode = "sections"
                 cur = ["브리프", "appendix", []]   # h1 직속 내용 임시 수집
                 continue
             if re.match(r"Pass\s*[B-Z]", title):
-                in_header, pass_group = False, True
+                mode, pass_group = "sections", True
                 prev_cat = "schedule"
                 cur = [title, "schedule", [f"## {title}"]]
                 continue
-            header.append(line)                    # 챕터 제목 h1
+            if title in MODULE_H1:
+                mode = "sections"
+                prev_cat = MODULE_H1[title]
+                cur = ["브리프", MODULE_H1[title], []]
+                continue
+            if not seen_title and TITLE_H1_RE.match(title):
+                seen_title = True
+                mode = "header"
+                header.append(line)
+                continue
+            # 재구조화된 챕터의 번호 h1 섹션 — h2로 낮춰 일반 분류
+            mode = "sections"
+            cat = classify(slug, title, prev_cat)
+            cur = [title, cat, [f"## {title}"]]
+            prev_cat = cat
             continue
         if h2:
             title = h2.group(1).strip()
-            if in_header:
+            if mode == "header":
                 close()
+                cat = None
                 if "편집 메모" in title:
-                    cur = [title, "appendix", [line]]
+                    cat = "appendix"
+                elif re.search(CAT_RULES[0][1], NUM_PREFIX_RE.sub("", title)):
+                    cat = "appendix"   # 부록성 h2 (공식정보 원칙 등)
+                if cat:
+                    cur = [title, cat, [line]]
                 else:
                     header.append(line)   # 부제 h2 — cur가 None이므로 후속 줄도 헤더로
                 continue
@@ -265,10 +362,9 @@ def regroup_regional(slug, body_md):
                     cur = [title, "schedule", [f"### {title}"]]
                     prev_cat = "schedule"
                     continue
-                pass_group_cat = cat
                 close()
-                cur = [title, pass_group_cat, [line]]
-                prev_cat = pass_group_cat
+                cur = [title, cat, [line]]
+                prev_cat = cat
                 continue
             cat = classify(slug, title, prev_cat)
             close()
@@ -277,7 +373,7 @@ def regroup_regional(slug, body_md):
             continue
         if cur is not None:
             cur[2].append(line)
-        elif in_header:
+        elif mode in ("header", "start"):
             header.append(line)
     close()
 
@@ -488,6 +584,20 @@ def rewrite_md_links(body, slug_by_file):
     return re.sub(r'href="([^"]+\.md)"', repl, body)
 
 
+def rewrite_asset_links(body):
+    """소스 내부 상대경로의 자산 링크를 사이트 경로로 재작성한다."""
+    for src_name, out_name, _ in MAPS:
+        body = body.replace(f"../../ASSETS/75_Execution_Maps/{src_name}",
+                            f"../maps/{out_name}")
+    body = re.sub(r"\.\./\.\./ASSETS/75_Execution_Maps/([^\"']+\.(?:geojson|kml))",
+                  r"../maps/data/\1", body)
+    for slug, (fname, *_) in HERO_PHOTOS.items():
+        body = body.replace(f"../../ASSETS/88_Representative_Public_Photos/{fname}",
+                            f"../assets/heroes/{slug}.jpg")
+    body = body.replace("../../ASSETS/85_Editorial_Visuals/", "../assets/visuals/")
+    return body
+
+
 def toc_html(tokens):
     items = []
     for tok in tokens:
@@ -674,16 +784,36 @@ def build_chapters():
             body_md, counts = regroup_regional(c["slug"], body_md)
         body, toc_tokens = md_convert(body_md)
         flat = flatten_tokens(toc_tokens)
-        body = mark_layer_headings(wrap_tables(rewrite_md_links(body, slug_by_file)))
+        body = mark_layer_headings(wrap_tables(
+            rewrite_asset_links(rewrite_md_links(body, slug_by_file))))
         if c["kind"] == "region":
+            def insert_after(pattern, html_block, body=None):
+                m = re.search(pattern, body)
+                return (body[:m.end()] + html_block + body[m.end():]) if m else body
             # 여행정보 카테고리 첫머리에 주요 방문지 카드 삽입
-            info_h1 = re.search(r'<h1 id="[^"]*" class="layer-h">여행정보</h1>', body)
-            if info_h1:
-                body = (body[:info_h1.end()] + places_block(c, map_links)
-                        + body[info_h1.end():])
+            body = insert_after(r'<h1 id="[^"]*" class="layer-h">여행정보</h1>',
+                                places_block(c, map_links), body=body)
+            # 지역소개 첫머리에 대표 사진 (CC 크레딧)
+            body = insert_after(r'<h1 id="[^"]*" class="layer-h">지역소개</h1>',
+                                hero_figure(c["slug"]), body=body)
+            # 편집 도식: 권장 위치 기준 삽입
+            if c["slug"] in ("07", "08", "09"):
+                body = insert_after(r'<h1 id="[^"]*" class="layer-h">교통</h1>',
+                                    visual_figure("cardays", "Provence 차량일 운영 논리"), body=body)
+            if c["slug"] == "11":
+                body = insert_after(r'<h1 id="[^"]*" class="layer-h">일정</h1>',
+                                    visual_figure("cycles", "Paris 15박의 세 사이클"), body=body)
 
         collect_search(c, flat)
         collect_chapter_dates(c, flat)
+
+        if c["slug"] == "02":
+            body = re.sub(r"(</h1>)", r"\1" + visual_figure("rhythm", "생활형 여행의 하루 리듬"),
+                          body, count=1)
+        if c["slug"] == "03":
+            body = re.sub(r"(</h1>)", r"\1" + visual_figure("route", "43일 전체 루트와 숙박구조"),
+                          body, count=1)
+            body += visual_figure("fatigue", "피로도와 일정 삭제순서")
 
         meta_bits = []
         if c["kind"] == "region":
@@ -844,6 +974,10 @@ def build_maps():
     out_dir.mkdir(parents=True, exist_ok=True)
     shutil.copytree(ASSETS / "vendor" / "leaflet", out_dir / "vendor" / "leaflet",
                     dirs_exist_ok=True)
+    data_dir = out_dir / "data"
+    data_dir.mkdir(exist_ok=True)
+    for f in list(MAP_DIR.glob("*.geojson")) + list(MAP_DIR.glob("*.kml")):
+        shutil.copy(f, data_dir / f.name)
     cards = []
     for src_name, out_name, title in MAPS:
         text = (MAP_DIR / src_name).read_text(encoding="utf-8")
@@ -931,10 +1065,12 @@ def build_tracker():
             print(f"  경고: 시트 없음 — {sheet_name}")
             continue
         table = sheet_to_table(wb[sheet_name])
-        body = f"<h1>{label}</h1>{tabs_of(slug)}{table}"
+        visual = (visual_figure("risk", "예약·운영 리스크 매트릭스")
+                  if slug == "reservations" else "")
+        body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{table}"
         (out_dir / f"{slug}.html").write_text(
             page(label, body, rel="..", topbar_title=f"트래커 · {label}",
-                 meta_line="TP_Europe_Travel_Master_Tracker_v1.1.xlsx 기준"),
+                 meta_line="TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준"),
             encoding="utf-8")
         cards.append(f'<a class="card card-alt" href="{slug}.html">'
                      f'<span class="card-title">{label}</span>'
@@ -943,7 +1079,7 @@ def build_tracker():
     print(f"  트래커: {len(cards)}개 시트 → tracker/")
 
     body = ('<h1>마스터 트래커</h1>'
-            '<p class="meta">TP_Europe_Travel_Master_Tracker_v1.1.xlsx에서 변환</p>'
+            '<p class="meta">TP_Europe_Travel_Master_Tracker_v1.2.xlsx에서 변환</p>'
             f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
         page("마스터 트래커", body, rel="..", topbar_title="마스터 트래커"),
@@ -1013,6 +1149,12 @@ def main():
     (SITE / "assets").mkdir()
     shutil.copy(ASSETS / "style.css", SITE / "assets" / "style.css")
     shutil.copy(ASSETS / "nav.js", SITE / "assets" / "nav.js")
+    (SITE / "assets" / "heroes").mkdir()
+    for slug, (fname, *_) in HERO_PHOTOS.items():
+        shutil.copy(HERO_DIR / fname, SITE / "assets" / "heroes" / f"{slug}.jpg")
+    (SITE / "assets" / "visuals").mkdir()
+    for fname in VISUALS.values():
+        shutil.copy(VISUALS_DIR / fname, SITE / "assets" / "visuals" / fname)
 
     print("챕터 빌드:")
     build_chapters()

@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hôtel de Verdun",
+        "sequence": 1,
+        "category": "숙소 후보",
+        "status": "후보 — 실제 예약 후 교체",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hôtel+de+Verdun",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.82968,
+          45.74965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bellecour",
+        "sequence": 2,
+        "category": "핵심 방문지",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bellecour",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.83202,
+          45.75779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fourvière",
+        "sequence": 3,
+        "category": "핵심 방문지",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fourvière",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.82259,
+          45.76227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vieux Lyon",
+        "sequence": 4,
+        "category": "핵심 방문지",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Vieux+Lyon",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.82754,
+          45.76075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Croix-Rousse",
+        "sequence": 5,
+        "category": "핵심 방문지",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Croix-Rousse",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8318,
+          45.77413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Halles Paul Bocuse",
+        "sequence": 6,
+        "category": "시장·생활",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Halles+Paul+Bocuse",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.85042,
+          45.76337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parc Tête d’Or",
+        "sequence": 7,
+        "category": "핵심 방문지",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Parc+Tête+d’Or",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.85344,
+          45.77969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Annecy",
+        "sequence": 8,
+        "category": "근교·이동지",
+        "status": "일정 기준점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Annecy",
+        "phase": "Phase 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.12542,
+          45.89905
+        ]
+      }
+    }
+  ]
+}
