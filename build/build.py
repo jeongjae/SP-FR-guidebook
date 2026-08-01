@@ -96,7 +96,7 @@ TRACKER_SHEETS = [
     ("Dashboard", "dashboard", "진행 대시보드"),
 ]
 
-LAYER_LABELS = {"1": "실행", "2": "이해", "3": "실용"}
+LAYER_LABELS = {"1": "일정", "2": "볼거리", "3": "실용정보"}
 DAY_RE = re.compile(r"Day\s*(\d+)\s*[—\-–]\s*(\d+)월\s*(\d+)일")
 
 # 빌드 중 수집되는 전역 데이터
