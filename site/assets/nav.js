@@ -145,14 +145,25 @@
     });
   }
 
-  /* ---------- 하단 탭 활성 표시 ---------- */
-  var path = window.location.pathname;
-  document.querySelectorAll(".bottomnav a[href]").forEach(function (a) {
-    var href = a.getAttribute("href");
-    if (href && href !== "#" &&
-        path.slice(-href.replace(/^\.\.?\//, "").length) ===
-        href.replace(/^\.\.?\//, "")) {
-      a.classList.add("active");
+  /* ---------- 하단 탭 활성 표시 ----------
+     '오늘' 은 href 가 없고(JS 로 그날 카드를 연다) '지역' 은 지역 챕터
+     8개를 대표한다. 경로 접미사 비교만으로는 둘 다 판정되지 않는다. */
+  function currentTab() {
+    var p = window.location.pathname;
+    if (/\/daily\//.test(p)) return "today";
+    if (/\/chapters\/03\.html$/.test(p)) return "itinerary";
+    if (/\/regions\.html$/.test(p) || /\/chapters\/(0[4-9]|1[01])\.html$/.test(p))
+      return "regions";
+    if (/\/maps\//.test(p)) return "maps";
+    if (/\/tracker\//.test(p)) return "tracker";
+    return "";
+  }
+  var tab = currentTab();
+  if (tab) {
+    var cur = document.querySelector('.bottomnav a[data-tab="' + tab + '"]');
+    if (cur) {
+      cur.classList.add("active");
+      cur.setAttribute("aria-current", "page");
     }
-  });
+  }
 })();

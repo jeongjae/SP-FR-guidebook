@@ -319,6 +319,37 @@ def check_hero_credits():
         sys.exit(1)
 
 
+def build_regions():
+    """지역 인덱스 — 하단탭 '지역' 의 도착지.
+
+    지역 챕터가 드로어 2뎁스에만 있어 3탭 이내 도달이 안 됐다.
+    라벨에 챕터 번호를 쓰지 않는다 (명명규칙 v1.0).
+    """
+    cards = []
+    for c in CHAPTERS:
+        if c["kind"] != "region":
+            continue
+        first, last = day_no(c["start"]), day_no(c["end"])
+        # a 안에 a 를 넣을 수 없다. 카드는 div 로 두고 제목만 링크로 만든다.
+        cards.append(f"""<div class="card rg-card">
+<a class="card-title" href="chapters/{c["slug"]}.html">{html.escape(c["title"])}</a>
+<span class="card-sub">Day {first}–{last} · {date_label(c["start"])}–{date_label(c["end"])}
+ · {c["nights"]}박</span>
+<span class="pl-links"><a href="maps/{c["map"]}">실행지도</a>
+<a href="daily/day-{first:02d}.html">첫날 카드</a></span>
+</div>""")
+    body = f"""<h1>지역</h1>
+<p class="meta">8개 거점을 이동 순서대로 놓았다. 각 지역 챕터로 바로 들어간다.</p>
+<div class="grid">{"".join(cards)}</div>
+
+<div class="related"><a href="chapters/03.html">▤ 43일 전체 일정표</a>
+<a href="daily/index.html">◉ 데일리 카드 43일</a>
+<a href="maps/offline.html">⌖ 오프라인 지도 준비</a></div>"""
+    (SITE / "regions.html").write_text(page("지역", body, rel="."), encoding="utf-8")
+    SEARCH_INDEX.append({"t": "지역", "c": "목록", "u": "regions.html"})
+    print(f"  지역 인덱스: {len(cards)}개 거점 → regions.html")
+
+
 def build_credits():
     """사진 저작자 표시 페이지. CC BY / CC BY-SA 의 배포 조건이다."""
     check_hero_credits()
@@ -685,6 +716,90 @@ def strip_visual_tokens(md_text):
     return text, removed
 
 
+BADGE_RE = re.compile(r"\{\{badge:([a-z0-9]+)\|([^}|]+)\}\}")
+GRADE_RE = re.compile(r"\{\{grade:([a-z]+)\|([^}|]+)\}\}")
+BADGE_KINDS = {"p0", "pending", "done", "rest"}
+GRADE_KINDS = {"essential", "priority", "optional", "alternative", "excluded"}
+
+# 원고의 추천등급 표기 → 등급 슬러그. 모양(■●○◇▨)으로 구분되므로 색만으로
+# 정보를 전달하지 않는다. 여기에 없는 변형(`필수에 가까운 우선 추천` 등)은
+# 그대로 둔다 — 다섯 칸에 억지로 밀어넣지 않는다.
+GRADE_WORDS = {
+    "필수": "essential", "Essential": "essential",
+    "우선 추천": "priority", "Priority": "priority",
+    "선택": "optional", "Optional": "optional",
+    "대체": "alternative", "Alternative": "alternative",
+    "비추천": "excluded", "Not recommended": "excluded",
+}
+
+# 값이 확정이 아닌 열 — 원고가 변동정보로 규정한 요금·예약 계열.
+# 셀마다 배지를 달면 표가 배지밭이 되므로 열 머리에 한 번만 단다.
+VOLATILE_COL_RE = re.compile(r"요금|예약|가격|예산|비용|입장료")
+
+
+def render_inline_tokens(text):
+    """`{{badge:...}}` · `{{grade:...}}` 인라인 문법을 span 으로 바꾼다.
+
+    md_convert 이전에 돌리므로 결과 span 이 마크다운 표·목록 안에서도 산다.
+    알 수 없는 종류는 바꾸지 않고 남겨 둔다 — 빌드 검사가 잡는다.
+    """
+    def badge(m):
+        kind, label = m.group(1), m.group(2).strip()
+        if kind not in BADGE_KINDS:
+            return m.group(0)
+        return f'<span class="badge badge-{kind}">{html.escape(label)}</span>'
+
+    def grade(m):
+        kind, label = m.group(1), m.group(2).strip()
+        if kind not in GRADE_KINDS:
+            return m.group(0)
+        return f'<span class="grade grade-{kind}">{html.escape(label)}</span>'
+
+    return GRADE_RE.sub(grade, BADGE_RE.sub(badge, text))
+
+
+def annotate_tables(md_text):
+    """원고의 표에 등급 모양과 미확정 표시를 넣는다.
+
+    - `등급` 열의 정규 5종 → 모양이 붙은 등급 span
+    - 요금·예약 계열 열 머리 → `재확인` 배지 (열 전체가 변동정보라는 뜻)
+    원본 MD 는 그대로 두고 빌드에서만 붙인다.
+    """
+    lines = md_text.splitlines()
+    out = list(lines)
+    graded = volatile = 0
+    i = 0
+    while i < len(lines) - 1:
+        row, sep = lines[i].strip(), lines[i + 1].strip()
+        if not (row.startswith("|") and re.fullmatch(r"\|[\s:|-]+\|", sep)):
+            i += 1
+            continue
+        header = [c.strip() for c in row.strip("|").split("|")]
+        grade_col = next((k for k, h in enumerate(header) if h.strip("*") == "등급"), None)
+        vol_cols = [k for k, h in enumerate(header) if VOLATILE_COL_RE.search(h)]
+        if vol_cols:
+            for k in vol_cols:
+                header[k] = f"{header[k]} {{{{badge:pending|재확인}}}}"
+            out[i] = "| " + " | ".join(header) + " |"
+            volatile += len(vol_cols)
+        if grade_col is not None:
+            j = i + 2
+            while j < len(lines) and lines[j].strip().startswith("|"):
+                cells = [c.strip() for c in lines[j].strip().strip("|").split("|")]
+                if len(cells) > grade_col:
+                    word = cells[grade_col].strip("*").strip()
+                    slug = GRADE_WORDS.get(word)
+                    if slug:
+                        cells[grade_col] = f"{{{{grade:{slug}|{word}}}}}"
+                        out[j] = "| " + " | ".join(cells) + " |"
+                        graded += 1
+                j += 1
+            i = j
+            continue
+        i += 1
+    return "\n".join(out), graded, volatile
+
+
 def normalize_day_headings(md_text, chapter):
     """Day 섹션 헤딩을 h2로 통일하고 Day 번호를 전체 여행 기준으로 바꾼다.
 
@@ -880,11 +995,11 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav=""):
      <a href="{rel}/maps/offline.html">오프라인 지도 준비</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="{rel}/index.html"><b>🏠</b><span>홈</span></a>
-  <a href="{rel}/chapters/03.html"><b>📅</b><span>일정</span></a>
-  <a href="#" class="nav-today"><b>📍</b><span>오늘</span></a>
-  <a href="{rel}/maps/index.html"><b>🗺️</b><span>지도</span></a>
-  <a href="{rel}/tracker/index.html"><b>📋</b><span>트래커</span></a>
+  <a href="#" class="nav-today" data-tab="today"><b aria-hidden="true">◉</b><span>오늘</span></a>
+  <a href="{rel}/chapters/03.html" data-tab="itinerary"><b aria-hidden="true">▤</b><span>일정</span></a>
+  <a href="{rel}/regions.html" data-tab="regions"><b aria-hidden="true">◇</b><span>지역</span></a>
+  <a href="{rel}/maps/index.html" data-tab="maps"><b aria-hidden="true">⌖</b><span>지도</span></a>
+  <a href="{rel}/tracker/index.html" data-tab="tracker"><b aria-hidden="true">▦</b><span>트래커</span></a>
 </nav>
 <button id="back-top" aria-label="맨 위로">↑</button>
 <script src="{rel}/assets/data.js" defer></script>
@@ -971,6 +1086,8 @@ def build_chapters():
             body_md, counts = regroup_regional(c["slug"], body_md)
         # 분류는 원본 제목으로 끝난 뒤에 Day 헤딩을 정규화한다 (CAT_OVERRIDES 보존)
         body_md, n_days = normalize_day_headings(body_md, c)
+        body_md, n_grade, n_vol = annotate_tables(body_md)
+        body_md = render_inline_tokens(body_md)
         body, toc_tokens = md_convert(body_md)
         flat = flatten_tokens(toc_tokens)
         body = mark_layer_headings(wrap_tables(
@@ -1033,6 +1150,10 @@ def build_chapters():
             fixes.append(f"VISUAL토큰 -{n_tokens}")
         if n_days:
             fixes.append(f"Day헤딩 {n_days}")
+        if n_grade:
+            fixes.append(f"등급 {n_grade}")
+        if n_vol:
+            fixes.append(f"재확인 {n_vol}")
         fix_info = ("  (" + " · ".join(fixes) + ")") if fixes else ""
         print(f'  챕터 {c["slug"]}: {Path(c["path"]).name} → '
               f'chapters/{c["slug"]}.html{cat_info}{fix_info}')
@@ -1055,6 +1176,137 @@ def find_daily_images():
     return images
 
 
+# ⚠ 세 플래그는 뜻이 다르다. 뭉치면 Day 43(귀국 항공)에 경고가 안 뜬다.
+P0_CONNECTION = [4, 7, 12, 24, 28, 43]        # 놓치면 대안이 없는 교통 연결
+MAP_TRANSITION = [4, 7, 12, 16, 20, 24, 28]   # 실행지도 2장이 필요한 날
+DUAL_CHAPTER = [12, 16, 20, 24, 28]           # 양쪽 챕터에 원고가 있는 날
+
+AUDIT_MD = SOURCE / "OPERATIONS" / "100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+AUDIT_FIELDS = ["day", "date", "base", "core", "depart", "buffer",
+                "meals", "risk", "cut", "alt", "lock"]
+AUDIT_LABELS = {
+    "core": "핵심 실행", "depart": "권장 출발", "buffer": "완충",
+    "meals": "식사·휴식", "risk": "최고 리스크", "cut": "우선 삭제",
+    "alt": "대체안", "lock": "잠금 필요",
+}
+TIME_CELL_RE = re.compile(r"^\d{1,2}:\d{2}\s*[–\-~]\s*\d{1,2}:\d{2}$|^\d{1,2}:\d{2}$")
+FATIGUE_RE = re.compile(r"([0-9]+(?:[–\-~][0-9]+)?)\s*/\s*5")
+
+
+def md_inline(text):
+    """표 셀 하나 분량의 최소 마크다운 (굵게·기울임·코드·링크)."""
+    t = html.escape(text, quote=False)
+    t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)",
+               lambda m: f'<a href="{html.escape(m.group(2), quote=True)}">{m.group(1)}</a>', t)
+    t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", t)
+    t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
+    return render_inline_tokens(t)
+
+
+def load_audit():
+    """43일 실행 감사표를 Day 번호 → dict 로 읽는다. 결측이 있으면 중단한다."""
+    rows = {}
+    for line in AUDIT_MD.read_text(encoding="utf-8").splitlines():
+        s = line.strip()
+        if not (s.startswith("|") and re.match(r"^\|\s*\d+\s*\|", s)):
+            continue
+        cells = [c.strip() for c in s.strip("|").split("|")]
+        if len(cells) != len(AUDIT_FIELDS):
+            sys.exit(f"감사표 열 수 불일치: {cells[:2]} ({len(cells)}열)")
+        row = dict(zip(AUDIT_FIELDS, cells))
+        n = int(row["day"])
+        empty = [k for k in AUDIT_LABELS if not row[k] or row[k] in ("—", "-")]
+        if empty:
+            sys.exit(f"감사표 Day {n} 결측 필드: {empty}")
+        rows[n] = row
+    if sorted(rows) != list(range(1, 44)):
+        sys.exit(f"감사표가 43일이 아니다: {len(rows)}행")
+    return rows
+
+
+def load_day_details():
+    """지역 챕터에서 날짜별 피로도와 시간표를 긁는다.
+
+    피로도는 원고에 있는 날만 담는다. 없는 날을 추정해 채우지 않는다 —
+    현장에서 틀린 수치는 없는 것보다 나쁘다.
+    """
+    fatigue, timetable, conflicts = {}, {}, []
+    for c in CHAPTERS:
+        if c["kind"] != "region":
+            continue
+        text = (SOURCE / c["path"]).read_text(encoding="utf-8")
+        lines = text.splitlines()
+
+        # (1) `날짜별 … 요약` 표의 피로도 열
+        i = 0
+        while i < len(lines) - 1:
+            row, sep = lines[i].strip(), lines[i + 1].strip()
+            if row.startswith("|") and re.fullmatch(r"\|[\s:|-]+\|", sep):
+                header = [x.strip() for x in row.strip("|").split("|")]
+                fi = next((k for k, h in enumerate(header) if "피로도" in h), None)
+                di = next((k for k, h in enumerate(header) if "날짜" in h or "일자" in h), None)
+                if fi is not None and di is not None:
+                    j = i + 2
+                    while j < len(lines) and lines[j].strip().startswith("|"):
+                        cells = [x.strip() for x in lines[j].strip().strip("|").split("|")]
+                        if len(cells) > max(fi, di):
+                            dm = re.match(r"(\d+)/(\d+)", cells[di])
+                            fm = FATIGUE_RE.search(cells[fi])
+                            if dm and fm:
+                                key = date(TRIP_START.year, int(dm[1]), int(dm[2])).isoformat()
+                                fatigue.setdefault(key, {})[c["slug"]] = fm[1]
+                        j += 1
+                    i = j
+                    continue
+            i += 1
+
+        # (2) Day 섹션 안의 `오늘의 피로도` 와 시각표
+        parts = re.split(r"^#{1,6}[^\n]*Day\s*\d+\s*[—–-]\s*(\d+)월\s*(\d+)일[^\n]*$",
+                         text, flags=re.M)
+        for k in range(1, len(parts), 3):
+            d = date(TRIP_START.year, int(parts[k]), int(parts[k + 1]))
+            key, body = d.isoformat(), parts[k + 2]
+            fm = re.search(r"오늘의 피로도[:\s]*\**\s*" + FATIGUE_RE.pattern, body)
+            if fm:
+                fatigue.setdefault(key, {})[c["slug"]] = fm[1]
+            rows = []
+            for line in body.splitlines():
+                s = line.strip()
+                if not (s.startswith("|") and s.endswith("|")):
+                    continue
+                cells = [x.strip() for x in s.strip("|").split("|")]
+                if cells and TIME_CELL_RE.match(cells[0].replace("**", "")):
+                    rows.append(cells)
+            if rows:
+                timetable.setdefault(key, []).append((c["slug"], c["region"], rows))
+
+    for key, per in fatigue.items():
+        if len(set(per.values())) > 1:
+            conflicts.append(f"{key} {per}")
+    return fatigue, timetable, conflicts
+
+
+def fatigue_html(value):
+    """피로도 막대 + 숫자. 색을 빼도 막대 개수와 숫자로 읽힌다."""
+    lead = int(re.match(r"\d+", value).group(0))
+    bars = "".join(f'<i class="{"on" if k < lead else ""}"></i>' for k in range(5))
+    return (f'<span class="fatigue" data-v="{lead}" '
+            f'aria-label="피로도 {value} / 5">{bars}<b>{value}/5</b></span>')
+
+
+def day_flags(n):
+    """Day 번호에 붙는 플래그 배지. 세 목록을 각각 본다."""
+    out = []
+    if n in P0_CONNECTION:
+        out.append('<span class="badge badge-p0">P0 연결</span>')
+    if n in MAP_TRANSITION:
+        out.append('<span class="badge badge-pending">거점 이동</span>')
+    if n in DUAL_CHAPTER:
+        out.append('<span class="badge badge-rest">양쪽 챕터</span>')
+    return out
+
+
 def build_daily():
     out_dir = SITE / "daily"
     img_dir = out_dir / "img"
@@ -1066,32 +1318,99 @@ def build_daily():
         print("데일리 카드 누락:", missing)
         sys.exit(1)
 
+    audit = load_audit()
+    fatigue, timetable, conflicts = load_day_details()
+    for x in conflicts:
+        print(f"  주의: 피로도 값이 챕터마다 다름 — {x} (도착 챕터 값을 쓴다)")
+
     index_items = []
+    n_fat = n_tt = 0
     for n in range(1, 44):
         d = date_of_day(n)
+        key = d.isoformat()
         info = images[n]
+        row = audit[n]
         shutil.copy(info["src"], img_dir / f"day-{n:02d}.png")
         c = chapter_for_date(d)
         wd = WEEKDAY_KO[d.weekday()]
-        title = f"Day {n} · {date_label(d)} {wd} · {info['region']}"
+        title = f"Day {n} · {date_label(d)} {wd} · {row['base']}"
 
-        ch_url = CHAPTER_DATE_URL.get(d.isoformat(), "chapters/03.html")
-        links = [f'<a href="../{ch_url}">📖 이날의 챕터 일정</a>']
-        if c:
-            links.append(f'<a href="../maps/{c["map"]}">🗺️ {c["region"]} 실행지도</a>')
-        links.append('<a href="index.html">🗓️ 전체 데일리 목록</a>')
+        # ── 1. 날짜 · 거점 · 플래그
+        flags = day_flags(n)
+        flag_html = f'<p class="day-flags">{"".join(flags)}</p>' if flags else ""
+
+        # ── 2. 감사 요약
+        summary = "".join(
+            f"<div class=\"ds-item\"><dt>{AUDIT_LABELS[k]}</dt>"
+            f"<dd>{html.escape(row[k])}</dd></div>"
+            for k in ("core", "depart", "buffer", "risk", "cut", "alt", "meals", "lock"))
+        audit_block = f'<h2>오늘의 감사 요약</h2><dl class="day-summary">{summary}</dl>'
+
+        # ── 3. 피로도 (원고에 있는 날만)
+        per_chapter = fatigue.get(key, {})
+        value = per_chapter.get(c["slug"]) if c else None
+        if value is None and per_chapter:
+            value = sorted(per_chapter.values())[-1]
+        if value:
+            n_fat += 1
+            fat_block = (f'<h2>피로도</h2><p>{fatigue_html(value)}</p>'
+                         f'<p class="note">원고의 일자별 피로도 표기다.</p>')
+        else:
+            fat_block = ('<h2>피로도</h2><p class="note">이날은 원고에 피로도 표기가 없다. '
+                         '추정값을 넣지 않았다.</p>')
+
+        # ── 4. 시간표
+        tt_blocks = []
+        for slug, region, rows in timetable.get(key, []):
+            n_tt += 1
+            trs = "".join(
+                "<tr>" + "".join(f"<td>{md_inline(x)}</td>" for x in cells) + "</tr>"
+                for cells in rows)
+            # 거점 이동일은 출발지·도착지 원고가 둘 다 있어 표가 두 개다
+            head = (f"<h3>{html.escape(region)}</h3>"
+                    if len(timetable.get(key, [])) > 1 else "")
+            tt_blocks.append(
+                f'{head}<div class="table-wrap">'
+                f'<table class="day-time"><tbody>{trs}</tbody></table></div>')
+        tt_block = ("<h2>시간표</h2>" + "".join(tt_blocks)) if tt_blocks else (
+            '<h2>시간표</h2><p class="note">이날은 원고에 시각표가 없다. '
+            '챕터 본문에서 확인한다.</p>')
+
+        # ── 5·6. 장소 · 지도 (거점 이동일은 두 지역 지도를 모두 건다)
+        ch_url = CHAPTER_DATE_URL.get(key, "chapters/03.html")
+        maps_seen, map_links = [], []
+        for cand in (chapter_for_date(d), chapter_for_date(d - timedelta(days=1))):
+            if cand and cand["map"] not in maps_seen:
+                maps_seen.append(cand["map"])
+                map_links.append(
+                    f'<a href="../maps/{cand["map"]}">⌖ {cand["region"]} 실행지도</a>')
+        if n not in MAP_TRANSITION:
+            map_links = map_links[:1]
+        links = [f'<a href="../{ch_url}">▤ 이날의 챕터 일정</a>'] + map_links + [
+            '<a href="../maps/offline.html">◇ 오프라인 지도</a>',
+            '<a href="index.html">◉ 전체 데일리 목록</a>']
+
+        # ── 7·8. 원문 · 카드 이미지
+        card_block = f"""<details class="day-card">
+<summary>카드 이미지 보기</summary>
+<figure class="daily-card"><img src="img/day-{n:02d}.png"
+  alt="Day {n} 데일리 모바일 가이드 카드" loading="lazy"></figure>
+<p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
+실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>
+</details>"""
 
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
-        badge = ' <span class="p4-badge">Phase 4 최종</span>' if info.get("phase4") else ""
+        p4 = ' <span class="p4-badge">Phase 4 최종</span>' if info.get("phase4") else ""
 
-        body = f"""<h1>{title}{badge}</h1>
+        body = f"""<h1>{title}{p4}</h1>
+{flag_html}
 <div class="related">{''.join(links)}</div>
-<figure class="daily-card"><img src="img/day-{n:02d}.png"
-  alt="{title} 데일리 모바일 가이드 카드" loading="lazy"></figure>
-<p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
-실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>
+{audit_block}
+{fat_block}
+{tt_block}
+{card_block}
 {pager}"""
         (out_dir / f"day-{n:02d}.html").write_text(
             page(title, body, rel="..", topbar_title=title), encoding="utf-8")
@@ -1099,8 +1418,17 @@ def build_daily():
         index_items.append(
             f'<a class="daily-item" href="day-{n:02d}.html">'
             f'<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
-            f'<span class="di-region">{info["region"]}</span></a>')
+            f'<span class="di-region">{html.escape(row["base"])}</span></a>')
         SEARCH_INDEX.append({"t": title, "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
+        SEARCH_INDEX.append({"t": f"Day {n} 핵심 실행 — {row['core']}",
+                             "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
+        for slug, region, rows in timetable.get(key, []):
+            for cells in rows:
+                if len(cells) >= 2:
+                    label = re.sub(r"<[^>]+>", "", md_inline(cells[1]))
+                    SEARCH_INDEX.append({
+                        "t": f"Day {n} {cells[0]} {label}", "c": "일자별 시간표",
+                        "u": f"daily/day-{n:02d}.html"})
 
     body = ('<h1>데일리 가이드 — 43일 카드</h1>'
             '<p class="meta">일자별 세로형 모바일 가이드 카드 (1080×1920) · '
@@ -1109,7 +1437,8 @@ def build_daily():
     (out_dir / "index.html").write_text(
         page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드"),
         encoding="utf-8")
-    print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)")
+    print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)"
+          f" · 피로도 {n_fat}일 · 시간표 {n_tt}건")
 
 
 # ---------------------------------------------------------------- home
@@ -1454,9 +1783,10 @@ def check_visual_tokens():
         text = f.read_text(encoding="utf-8")
         if f.suffix == ".html":
             text = CODE_BLOCK_RE.sub("", text)
-        n = text.count("{{VISUAL:")
-        if n:
-            leftover.append(f"{f.relative_to(SITE)}: {n}개")
+        for tok in ("{{VISUAL:", "{{badge:", "{{grade:"):
+            n = text.count(tok)
+            if n:
+                leftover.append(f"{f.relative_to(SITE)}: {tok}... {n}개")
     empty = []
     for f in sorted(SITE.rglob("*.html")):
         n = len(re.findall(r"<h[1-6][^>]*>\s*</h[1-6]>", f.read_text(encoding="utf-8")))
@@ -1557,6 +1887,7 @@ def main():
     print("지도 빌드:")
     build_maps()
     build_offline_maps()
+    build_regions()
     print("라이선스 빌드:")
     build_credits()
     print("트래커 빌드:")
