@@ -100,8 +100,9 @@ LAYER_LABELS = {"1": "일정", "2": "볼거리", "3": "실용정보"}
 DAY_RE = re.compile(r"Day\s*(\d+)\s*[—\-–]\s*(\d+)월\s*(\d+)일")
 
 # 빌드 중 수집되는 전역 데이터
-TODAY_MAP = {}     # 'YYYY-MM-DD' -> 사이트 루트 기준 상대 URL
-SEARCH_INDEX = []  # {t: 제목, c: 위치, u: URL}
+TODAY_MAP = {}      # 'YYYY-MM-DD' -> 사이트 루트 기준 상대 URL (지역 범위 기반)
+DAY_OVERRIDES = {}  # 'YYYY-MM-DD' -> Day 섹션 앵커 URL (범위 매핑보다 우선)
+SEARCH_INDEX = []   # {t: 제목, c: 위치, u: URL}
 
 
 # ---------------------------------------------------------------- utilities
@@ -307,11 +308,13 @@ def collect_today(chapter, flat_tokens):
     while d <= last:
         TODAY_MAP[d.isoformat()] = url
         d += timedelta(days=1)
+    # Day 섹션 앵커는 별도로 모아 전체 범위 매핑이 끝난 뒤 덮어쓴다.
+    # (뒤 챕터의 범위 채우기가 앞 챕터의 이동일 Day 앵커를 지우지 않도록)
     for tok in flat_tokens:
         dm = DAY_RE.search(tok["name"])
         if dm:
             day_date = date(2026, int(dm.group(2)), int(dm.group(3)))
-            TODAY_MAP[day_date.isoformat()] = f'{url}#{tok["id"]}'
+            DAY_OVERRIDES[day_date.isoformat()] = f'{url}#{tok["id"]}'
 
 
 def build_chapters():
@@ -521,6 +524,7 @@ def build_tracker():
 # ---------------------------------------------------------------- data.js
 
 def build_data_js():
+    TODAY_MAP.update(DAY_OVERRIDES)
     data = {
         "tripStart": TRIP_START.isoformat(),
         "tripEnd": TRIP_END.isoformat(),
