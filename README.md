@@ -26,6 +26,13 @@ Barcelona 3박 → Girona 3박 → Nice 5박 → Aix 4박
 
 ## 사용법
 
+### 웹으로 보기 (GitHub Pages)
+
+어느 기기에서든 브라우저로 접속: **<https://jeongjae.github.io/SP-FR-guidebook/>**
+
+`gh-pages` 브랜치에서 서빙되며, `main`에 원본·빌드 변경이 푸시되면
+`.github/workflows/pages.yml`이 자동으로 다시 빌드·배포한다.
+
 ### PC에서 보기
 
 ```bash
