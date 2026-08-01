@@ -26,6 +26,7 @@ import shutil
 import sys
 from datetime import date, timedelta
 from pathlib import Path
+from xml.etree import ElementTree
 
 try:
     import markdown
@@ -270,6 +271,103 @@ def hero_figure(slug):
 <a href="{lic_url}" target="_blank" rel="noopener">{lic}</a>
 (<a href="{src_url}" target="_blank" rel="noopener">Wikimedia Commons</a>, 크롭·리사이즈)</figcaption>
 </figure>"""
+
+
+def net_note(detail=""):
+    """오프라인일 때만 보이는 안내. nav.js 가 hidden 을 토글한다.
+
+    기본이 hidden 이라 스크립트가 죽으면 안 보인다 — 잘못된 안내가 떠 있는
+    것보다 낫다 (K4 점진적 향상).
+    """
+    tail = f" {html.escape(detail)}" if detail else ""
+    return (f'<p class="offline-note net-note" hidden>'
+            f'<b>오프라인입니다.</b>{tail}</p>')
+
+
+def check_hero_credits():
+    """HERO_PHOTOS 가 크레딧 원본과 어긋나지 않았는지 확인한다.
+
+    저작자 표시는 CC 라이선스의 배포 조건이라 조용히 틀리면 안 된다.
+    원본 표가 갱신됐는데 build.py 상수가 그대로면 빌드를 중단시킨다.
+    """
+    src = SOURCE / "ASSETS" / "88_Representative_Public_Photo_Credits_v1.0.md"
+    text = src.read_text(encoding="utf-8")
+    rows = {}
+    for line in text.splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) != 8 or not cells[0].isdigit():
+            continue
+        fname = re.search(r"\[([^\]]+\.jpg)\]", cells[3])
+        author = cells[4]
+        lic = re.match(r"\[([^\]]+)\]", cells[5])
+        if fname and lic:
+            rows[fname.group(1)] = (author, lic.group(1))
+    problems = []
+    for slug, (fname, _subject, author, lic, *_rest) in sorted(HERO_PHOTOS.items()):
+        if fname not in rows:
+            problems.append(f"{slug}: {fname} 이 크레딧 표에 없음")
+            continue
+        src_author, src_lic = rows[fname]
+        if (src_author, src_lic) != (author, lic):
+            problems.append(f"{slug}: 원본은 {src_author}/{src_lic}, build.py 는 {author}/{lic}")
+    if len(rows) != len(HERO_PHOTOS):
+        problems.append(f"크레딧 표 {len(rows)}행 vs HERO_PHOTOS {len(HERO_PHOTOS)}개")
+    if problems:
+        print(f"대표사진 크레딧 불일치 ({src.name}):")
+        for p in problems:
+            print("  " + p)
+        sys.exit(1)
+
+
+def build_credits():
+    """사진 저작자 표시 페이지. CC BY / CC BY-SA 의 배포 조건이다."""
+    check_hero_credits()
+    region_name = {c["slug"]: c["region"] for c in CHAPTERS if c["kind"] == "region"}
+    rows = []
+    for slug, (fname, subject, author, lic, lic_url, src_url) in sorted(HERO_PHOTOS.items()):
+        rows.append(f"""<figure class="credit-item">
+<img src="assets/heroes/{slug}.jpg" alt="{html.escape(subject)}" loading="lazy">
+<figcaption>
+  <b>{html.escape(region_name.get(slug, slug))} — {html.escape(subject)}</b>
+  <span>저작자 {html.escape(author)}</span>
+  <span>라이선스 <a class="needs-net" target="_blank" rel="noopener license"
+    href="{lic_url}">{lic}</a></span>
+  <span>원본 <a class="needs-net" target="_blank" rel="noopener"
+    href="{src_url}">Wikimedia Commons</a></span>
+  <span>수정 가이드북용 크롭·리사이즈 (파생본)</span>
+</figcaption>
+</figure>""")
+    body = f"""<h1>사진 저작자 표시</h1>
+<p class="meta">이 가이드북의 지역 대표사진 {len(HERO_PHOTOS)}장은 Wikimedia Commons 의
+공개 라이선스 사진을 가이드북용으로 크롭·리사이즈한 파생본이다.</p>
+
+{net_note("저작자와 라이선스는 그대로 읽힙니다. 라이선스 전문과 원본 링크만 연결이 필요합니다.")}
+
+<div class="credit-list">{"".join(rows)}</div>
+
+<h2>사용 조건</h2>
+<ul>
+<li>CC BY · CC BY-SA 의 저작자 표시와 라이선스 링크를 유지한다.</li>
+<li>CC BY-SA 사진을 수정한 파생본은 동일하거나 호환되는 조건으로 배포한다.</li>
+<li>원본을 대체하지 않고 파생본임을 명시한다.</li>
+</ul>
+
+<h2>그 밖의 자료</h2>
+<ul>
+<li>편집 도식과 데일리 카드는 이 여행을 위해 직접 제작했다.</li>
+<li>실행지도의 배경 타일은 <a class="needs-net" target="_blank" rel="noopener"
+  href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자들의 것이며
+  ODbL 조건으로 제공된다. 지도 라이브러리는 Leaflet (BSD-2-Clause) 을 로컬 번들로 쓴다.</li>
+<li>주요 방문지 카드의 사진은 온라인일 때 Wikipedia 에서 불러온다. 각 사진의 출처는
+  사진 위 링크에 표시된다.</li>
+</ul>
+
+<p class="offline-note">원본 표 — <code>source/ASSETS/88_Representative_Public_Photo_Credits_v1.0.md</code>.
+빌드가 이 표와 대조해 저작자·라이선스가 어긋나면 중단한다.</p>"""
+    (SITE / "credits.html").write_text(
+        page("사진 저작자 표시", body, rel="."), encoding="utf-8")
+    SEARCH_INDEX.append({"t": "사진 저작자 표시", "c": "라이선스", "u": "credits.html"})
+    print(f"  저작자 표시: 대표사진 {len(HERO_PHOTOS)}장 → credits.html")
 
 
 def visual_figure(key, caption, rel="../assets"):
@@ -541,6 +639,7 @@ def places_block(chapter, map_links):
 </div>""")
     return ('<section class="places"><h3>주요 방문지</h3>'
             '<p class="note">사진은 온라인 상태에서 Wikipedia로부터 불러옵니다.</p>'
+            f'{net_note("Google Maps 링크와 방문지 사진은 연결되면 다시 동작합니다.")}'
             f'<div class="pl-grid">{"".join(cards)}</div></section>')
 
 
@@ -722,8 +821,8 @@ def drawer_html(rel):
         f'<a href="{rel}/chapters/{c["slug"]}.html">{c["slug"]} {c["title"]}'
         f'<span>{date_label(c["start"])}–{date_label(c["end"])} · {c["nights"]}박</span></a>'
         for c in CHAPTERS if c["kind"] == "region")
-    maps = "".join(
-        f'<a href="{rel}/maps/{out}">{title}</a>' for _, out, title in MAPS)
+    maps = ('<a href="{r}/maps/offline.html">오프라인 지도 준비 — Organic Maps</a>'.format(r=rel)
+            + "".join(f'<a href="{rel}/maps/{out}">{title}</a>' for _, out, title in MAPS))
     tracker = "".join(
         f'<a href="{rel}/tracker/{slug}.html">{label}</a>'
         for _, slug, label in TRACKER_SHEETS)
@@ -742,6 +841,8 @@ def drawer_html(rel):
     <h3>지역 가이드</h3>{regions}
     <h3>실행지도</h3>{maps}
     <h3>트래커</h3>{tracker}
+    <h3>이 가이드북</h3>
+    <a href="{rel}/credits.html">사진 저작자 표시 · 라이선스</a>
   </nav>
 </aside>"""
 
@@ -775,6 +876,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav=""):
 </main>
 <footer>
   <p>{SITE_TITLE} · {TRIP_PERIOD}</p>
+  <p><a href="{rel}/credits.html">사진 저작자 표시 · 라이선스</a> ·
+     <a href="{rel}/maps/offline.html">오프라인 지도 준비</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
   <a href="{rel}/index.html"><b>🏠</b><span>홈</span></a>
@@ -1062,6 +1165,134 @@ def build_home():
 
 # ---------------------------------------------------------------- maps
 
+# 엔티티로 시작하지 않는 맨 & — `Pepper & Paper` 같은 장소 이름에서 나온다.
+BARE_AMP_RE = re.compile(r"&(?!(?:[A-Za-z][A-Za-z0-9]*|#[0-9]+|#[xX][0-9A-Fa-f]+);)")
+
+
+def sanitize_kml(text, label):
+    """KML 을 well-formed XML 로 만들고 파싱을 확인한다.
+
+    원본 KML 에 이스케이프되지 않은 `&` 가 있어 XML 파서가 거부한다.
+    Organic Maps 도 같은 이유로 임포트에 실패한다. 원본을 고치지 않고
+    배포 시점에 막는다 — 원본이 다시 생성되면 같은 문자가 또 들어온다.
+    """
+    fixed, n = BARE_AMP_RE.subn("&amp;", text)
+    try:
+        root = ElementTree.fromstring(fixed)
+    except ElementTree.ParseError as e:
+        sys.exit(f"KML 이 well-formed XML 이 아니다 ({label}): {e}")
+    ns = {"k": "http://www.opengis.net/kml/2.2"}
+    names = [e.text or "" for e in root.iterfind(".//k:Placemark/k:name", ns)]
+    if not names:
+        sys.exit(f"KML 에 Placemark 이름이 없다 ({label})")
+    broken = [x for x in names if "�" in x]
+    if broken:
+        sys.exit(f"KML 핀 이름에 대체문자(U+FFFD) ({label}): {broken}")
+    return fixed, names, n
+
+
+def build_offline_maps():
+    """Organic Maps 북마크 임포트 안내 + KML 직접 다운로드.
+
+    자체 타일 지도는 구현하지 않는다 (용량·라이선스로 폐기된 안이다).
+    Organic Maps 는 KML 북마크 임포트와 오프라인 턴바이턴 안내를 제공한다.
+    """
+    out_dir = SITE / "maps"
+    kml_dir = out_dir / "kml"
+    kml_dir.mkdir(parents=True, exist_ok=True)
+    region_by_map = {c["map"]: c["region"] for c in CHAPTERS if c["kind"] == "region"}
+    order = [out_name for _, out_name, _ in MAPS]
+
+    files, total_pins, candidate_pins, repaired = [], 0, 0, 0
+    for out_name in order:
+        region = region_by_map[out_name]
+        src = MAP_DIR / f"{region}_Execution_Map_v0.2.kml"
+        if not src.exists():
+            sys.exit(f"KML 없음: {src}")
+        text, names, fixed_amps = sanitize_kml(
+            src.read_text(encoding="utf-8"), src.name)
+        pins = len(names)
+        cand = sum(1 for n in names if "숙소 후보" in n)
+        total_pins += pins
+        candidate_pins += cand
+        repaired += fixed_amps
+        slug = out_name.replace(".html", "")
+        dest = kml_dir / f"{slug}.kml"
+        dest.write_text(text, encoding="utf-8")
+        files.append((slug, region, pins, cand, dest.stat().st_size))
+
+    rows = "".join(
+        f"<tr><td>{html.escape(region)}</td>"
+        f'<td><a href="kml/{slug}.kml" download>{slug}.kml</a></td>'
+        f"<td>{pins}</td><td>{cand or ''}</td><td>{size:,} B</td></tr>"
+        for slug, region, pins, cand, size in files)
+
+    body = f"""<h1>오프라인 지도 — Organic Maps</h1>
+<p class="meta">로밍이 끊겨도 도보·운전 안내가 되게 하는 준비다.
+출발 전 Wi-Fi 에서 한 번만 해두면 된다.</p>
+
+{net_note("KML 파일은 이미 이 기기에 있어 지금도 내려받을 수 있습니다.")}
+
+<p class="offline-note"><b>실기기 검증 전이다.</b>
+아래 KML {len(files)}개는 빌드가 매번 XML 파서로 열어보고 핀 {total_pins}개의 이름이
+UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 섞여 있다.
+<b>다만 Organic Maps 가 기기에서 이 이름들을 어떻게 표시하는지는 확인하지 않았다.</b>
+출발 전에 한 지역만 먼저 임포트해 핀 이름이 깨지지 않는지 직접 보고,
+깨지면 나머지는 이 앱의 실행지도로 대신한다.</p>
+
+<h2>준비 순서</h2>
+<ol>
+<li><b>Organic Maps 설치</b> — 무료·오픈소스·광고 없음. 계정이 필요 없다.</li>
+<li><b>지도 내려받기 (Wi-Fi 에서)</b> — 앱에서 프랑스와 스페인 지도를 받는다.
+  용량이 크므로 반드시 출발 전 Wi-Fi 에서 한다.</li>
+<li><b>KML 내려받기</b> — 아래 표의 파일을 이 기기에 저장한다.</li>
+<li><b>임포트</b> — 저장한 파일을 열어 <i>Organic Maps 로 열기</i> 를 고른다.
+  핀이 앱의 북마크로 들어간다.</li>
+<li><b>확인</b> — 앱의 북마크 목록에서 핀 {total_pins}개가 보이고
+  이름이 깨지지 않았는지 본다.</li>
+</ol>
+
+<h2>지역별 북마크 파일</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>지역</th><th>파일</th><th>핀</th><th>숙소 후보</th><th>크기</th></tr></thead>
+<tbody>{rows}</tbody>
+</table></div>
+<p class="meta">전체 {total_pins}개 핀. 이동 순서대로 정렬돼 있다.</p>
+
+<h2 id="후보-주의">숙소 핀은 확정이 아니다</h2>
+<p class="offline-note"><b>{candidate_pins}개 핀이 <code>[숙소 후보]</code> 로 시작한다.
+예약이 확정된 주소가 아니라 검토 중인 후보다.</b>
+이 좌표를 목적지로 잡고 이동하면 안 된다. 확정 주소는
+<a href="../tracker/accommodation.html">숙소 후보·확정</a> 과
+<a href="../tracker/reservations.html">예약 현황</a> 에서 확인한다.
+예약이 잠기면 KML 을 다시 만들어 이 페이지에 올린다.</p>
+
+<h2>이 앱의 실행지도와 무엇이 다른가</h2>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>이 앱의 실행지도</th><th>Organic Maps</th></tr></thead>
+<tbody>
+<tr><td>핀 위치</td><td>오프라인 동작</td><td>오프라인 동작</td></tr>
+<tr><td>배경 지도</td><td>연결 필요</td><td>오프라인 동작</td></tr>
+<tr><td>길찾기</td><td>없음 (Google Maps 로 넘김)</td><td>도보·운전 턴바이턴 음성 안내</td></tr>
+<tr><td>검색</td><td>이 가이드북 안에서만</td><td>주변 상점·주유소·화장실</td></tr>
+</tbody>
+</table></div>
+<p>둘 다 쓴다. 계획과 설명은 이 가이드북에서 보고, 실제 길찾기는 Organic Maps 로 한다.</p>
+
+<p class="offline-note">Organic Maps 는 이 가이드북과 무관한 별도 앱이다.
+설치 링크를 여기에 걸지 않은 것은 스토어 주소가 바뀔 수 있어서다.
+앱스토어·Play 스토어에서 <b>Organic Maps</b> 로 검색한다.</p>
+
+<nav class="pager"><a href="index.html">← 실행지도 목록</a><span></span></nav>"""
+    (out_dir / "offline.html").write_text(
+        page("오프라인 지도", body, rel=".."), encoding="utf-8")
+    SEARCH_INDEX.append({"t": "오프라인 지도 — Organic Maps", "c": "실행지도",
+                         "u": "maps/offline.html"})
+    amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
+    print(f"  오프라인 지도: KML {len(files)}개 · 핀 {total_pins}개"
+          f"(숙소 후보 {candidate_pins}){amp_note} → maps/offline.html")
+
+
 def build_maps():
     out_dir = SITE / "maps"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -1069,8 +1300,11 @@ def build_maps():
                     dirs_exist_ok=True)
     data_dir = out_dir / "data"
     data_dir.mkdir(exist_ok=True)
-    for f in list(MAP_DIR.glob("*.geojson")) + list(MAP_DIR.glob("*.kml")):
+    for f in MAP_DIR.glob("*.geojson"):
         shutil.copy(f, data_dir / f.name)
+    for f in MAP_DIR.glob("*.kml"):
+        text, _, _ = sanitize_kml(f.read_text(encoding="utf-8"), f.name)
+        (data_dir / f.name).write_text(text, encoding="utf-8")
     cards = []
     for src_name, out_name, title in MAPS:
         text = (MAP_DIR / src_name).read_text(encoding="utf-8")
@@ -1092,7 +1326,9 @@ def build_maps():
     body = ('<h1>실행지도</h1>'
             '<p class="meta">지역별 주요 기준점 지도. 마커를 누르면 Google Maps 검색이 열린다. '
             '배경 타일은 인터넷 연결 시 표시된다.</p>'
-            f'<div class="grid">{"".join(cards)}</div>')
+            '<div class="related"><a href="offline.html">📴 오프라인 지도 준비 — Organic Maps</a></div>'
+            + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
+            + f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
         page("실행지도", body, rel=".."), encoding="utf-8")
 
@@ -1320,6 +1556,9 @@ def main():
     build_home()
     print("지도 빌드:")
     build_maps()
+    build_offline_maps()
+    print("라이선스 빌드:")
+    build_credits()
     print("트래커 빌드:")
     build_tracker()
     build_data_js()
