@@ -134,7 +134,7 @@
   var wikiDone = {};
   function loadPlacePhotos() {
     if (!navigator.onLine || typeof fetch !== "function") return;
-    var cards = document.querySelectorAll(".pl-card[data-wiki]");
+    var cards = document.querySelectorAll("[data-wiki]");
     cards.forEach(function (card) {
       var title = card.getAttribute("data-wiki");
       if (!title || wikiDone[title]) return;
@@ -145,7 +145,8 @@
       fetch(url).then(function (r) { return r.ok ? r.json() : null; })
         .then(function (data) {
           if (!data || !data.thumbnail || !data.thumbnail.source) return;
-          var box = card.querySelector(".pl-photo");
+          /* 챕터 카드는 안쪽 .pl-photo 를, 장소 페이지는 자기 자신을 연다 */
+          var box = card.querySelector(".pl-photo") || card;
           var img = box.querySelector("img");
           img.src = data.thumbnail.source;
           img.onload = function () { box.hidden = false; };
