@@ -1064,13 +1064,11 @@ footer {
 .coords::-webkit-scrollbar { display: none; }
 .coords > * {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1px;
+  align-items: baseline;
+  gap: 5px;
   flex: 1 1 0;
   min-width: 0;
-  min-height: var(--tap);
-  padding: 4px 10px;
+  padding: 6px 9px;
   border: 1px solid var(--border);
   border-radius: 4px;
   background: var(--surface);
@@ -1078,13 +1076,14 @@ footer {
   color: var(--text);
 }
 .coords b {
+  flex: none;
   font-size: 0.66rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   color: var(--muted);
 }
 .coords span {
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
@@ -1151,4 +1150,11 @@ footer {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--muted);
+}
+
+/* 분할 챕터의 형제 페이지 점프 — 현재 페이지는 채움으로 구분한다 */
+.sn-layers .sn-hub { font-weight: 700; }
+.subnav a.here {
+  background: var(--accent);
+  color: var(--accent-ink);
 }
