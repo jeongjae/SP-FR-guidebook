@@ -1601,6 +1601,16 @@ def crumbs_for(*items):
     return out
 
 
+def region_crumbs(*items):
+    """지역을 지나는 경로. 홈 다음에 지역 목록을 끼운다.
+
+    `홈 › 지역 › Nice › 먹거리`. 장소·일자 페이지에서 지역 하나를 건너뛰고
+    8개 거점 목록으로 바로 올라갈 수 있어야 한다 — 이동 중에 다음 거점을
+    확인하는 동선이 그 길이다.
+    """
+    return crumbs_for(("지역", "regions.html"), *items)
+
+
 def regions_of_date(d):
     """그 날짜를 품는 지역 전부. 이동일은 두 지역에 걸친다."""
     return [c for c in CHAPTERS if c["kind"] == "region" and c["start"] <= d <= c["end"]]
@@ -1815,8 +1825,8 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
     sub_html = f'<p class="page-sub">{html.escape(sub)}</p>' if sub else ""
     content = crumb_html + sub_html + extra + body + pager
     return (page(title, content, rel=rel, topbar_title=title, coords=coords, subnav=subnav,
-                 back=crumbs_for((c["region"], f'chapters/{c["name"]}/index.html'),
-                                 (title, None)),
+                 back=region_crumbs((c["region"], f'chapters/{c["name"]}/index.html'),
+                                    (title, None)),
                  meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'),
             flatten_tokens(toc_tokens), body)
 
@@ -1976,7 +1986,7 @@ def build_split_chapter(c, body_md, map_links):
     )
     (out_dir / "index.html").write_text(
         page(c["title"], hub_body, rel=rel, topbar_title=c["title"],
-             back=crumbs_for((c["region"], None)),
+             back=region_crumbs((c["region"], None)),
              subnav=chapter_siblings(pages, "index.html"),
              meta_line=f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박'),
         encoding="utf-8")
@@ -2680,7 +2690,7 @@ def build_daily():
                      if regs else ("이동", ITINERARY_URL))
         (out_dir / f"day-{n:02d}.html").write_text(
             page(title, body, rel="..", topbar_title=title, subnav=day_nav,
-                 back=crumbs_for(reg_crumb, (f"Day {n}", None)),
+                 back=region_crumbs(reg_crumb, (f"Day {n}", None)),
                  coords=coords_bar("..",
                                    day=(f"Day {n} · {date_label(d)} {wd}", None),
                                    region=region_cell,
@@ -3454,7 +3464,7 @@ def build_places(timetable):
                    '<p class="note">상세 서술은 챕터 본문에 있다. 여기서 복제하지 않는다.</p>'))
         (out_dir / f'{r["slug"]}.html').write_text(
             page(r["name"], body, rel=rel, topbar_title=r["name"],
-                 back=crumbs_for((c["region"], chapter_url(c)), (r["name"], None)),
+                 back=region_crumbs((c["region"], chapter_url(c)), (r["name"], None)),
                  subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
         SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
                              "u": f'places/{r["slug"]}.html'})
