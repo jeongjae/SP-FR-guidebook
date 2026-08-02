@@ -297,7 +297,7 @@ Barcelona 3박 → Girona 3박 → **Nice 5박 → Aix 4박**
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
 | 10 | 9/7 월 | Nice | Monaco 도시국가 | Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo | Japanese Garden 또는 Larvotto 택1 | 4 | TER |
-| 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, Matisse 또는 Chagall 1곳, 세탁·Promenade | 두 번째 문화시설·추가마을 금지 | 2 | 미술관·렌터카 준비 |
+| 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, 사진미술관 선택, 세탁·Promenade | 사진미술관·추가마을 삭제 가능 | 2 | 사진미술관·렌터카 준비 |
 | 12 | **9/9 수** | **Aix-en-Provence** | NCE 렌터카와 Provence 진입 | NCE T2 렌터카, Saint-Paul, Grasse, Aix 체크인 | 지연 시 Grasse 우선 삭제 | 5 | 렌터카·Aix 숙소 |
 | 13 | **9/10 목** | Aix-en-Provence | Aix 구시가지와 Granet | 목요시장, Cours Mirabeau, Musée Granet, Mazarin | 성당·카페 | 3 | Granet·식당 |
 | 14 | **9/11 금** | Aix-en-Provence | Cassis와 Calanques | Cassis 항구, 5 Calanques 보트, 해안휴식 | 강풍 시 Marseille·Mucem으로 교체 | 4 | 보트·주차 |
@@ -2747,7 +2747,7 @@ Nice 5박을 도착 적응–도시 핵심–Cannes–Monaco–생활·회복의
 # 06. 니스와 코트다쥐르 5박 6일
 ## 지중해 생활도시, 칸과 모나코, 시장과 해안풍경
 
-> **이번 개정의 핵심**: Nice 체류를 4박에서 **5박**으로 늘리고 Aix를 4박으로 줄였다. 기본안은 **Nice 자체 탐방 + Cannes + Monaco + Nice 생활·회복일**이다. 추가된 9월 8일은 Libération 시장, Cimiez와 Matisse·Chagall 중 한 곳, 세탁·휴식·해변산책을 조합하는 완충일로 사용한다. Saint-Paul-de-Vence·Grasse·Aix 이동은 9월 9일로 하루 늦춘다.
+> **이번 개정의 핵심**: Nice 체류를 4박에서 **5박**으로 늘리고 Aix를 4박으로 줄였다. 기본안은 **Nice 자체 탐방 + Cannes + Monaco + Nice 생활·회복일**이다. 추가된 9월 8일은 Libération 시장, 화요일에 여는 Musée de la Photographie Charles Nègre 선택, 세탁·휴식·해변산책을 조합하는 완충일로 사용한다. Matisse·Chagall은 모두 화요일 휴관이므로 이날 배치하지 않는다. Saint-Paul-de-Vence·Grasse·Aix 이동은 9월 9일로 하루 늦춘다.
 
 > **식사 원칙**: 아침은 숙소, 점심은 샌드위치·시장·가벼운 현지식, 저녁은 레스토랑을 기본으로 한다.
 
@@ -2766,7 +2766,7 @@ Nice 5박을 도착 적응–도시 핵심–Cannes–Monaco–생활·회복의
 | 체류 | 2026년 9월 4일 금요일 체크인 → 9월 9일 수요일 체크아웃, **5박** |
 | 여행 성격 | 지중해 생활도시 + 당일치기 2회 + 생활·회복 1일 + 이동일 언덕마을·향수도시 |
 | 이번 챕터의 우선순위 | **Nice 시내 1일, Cannes 1일, Monaco 1일, Nice 생활·회복 1일, 9/9 Saint-Paul-de-Vence·Grasse 경유 후 Aix 이동** |
-| 미술관 전략 | 9/8에 Matisse 또는 Chagall **한 곳만** 선택. 우천 시 두 번째 실내모듈을 검토 |
+| 미술관 전략 | 9/8에는 화요일 운영하는 Musée de la Photographie Charles Nègre만 선택. Matisse·Chagall은 모두 휴관 |
 | 숙소 1순위권 | Place Masséna 북동, Jean Médecin 동쪽, Garibaldi–Port 서쪽 |
 | 숙박예산 | 2인 5박 총액 **€700–1,000 내외**를 계획범위로 사용. 주방·세탁·조용한 방향이 명확하면 상단 허용 |
 | 필수 경험 | Cours Saleya, Vieux Nice, Castle Hill, Cannes Forville·Le Suquet, Monaco-Ville·Palace Square, 9/8 생활형 시장·완충시간 |
@@ -2798,7 +2798,7 @@ Nice 5박을 도착 적응–도시 핵심–Cannes–Monaco–생활·회복의
 - 설명: Monaco-Monte-Carlo역, Monaco-Ville, Palace Square, Cathedral, Port Hercule, Casino Square 선택동선.
 
 ### {{VISUAL:VIS-MAP-027|type=map|status=linked|strategy=execution-map}} 9/8 Nice 생활·회복 지도
-- 설명: Marché de la Libération, Cimiez·Matisse 또는 Chagall, 숙소 휴식, Promenade 저녁산책을 연결한다.
+- 설명: Marché de la Libération, Musée de la Photographie Charles Nègre 선택, 숙소 휴식, Promenade 저녁산책을 연결한다.
 
 ### {{VISUAL:VIS-MAP-028|type=map|status=linked|strategy=execution-map}} 9/9 Nice→Saint-Paul-de-Vence→Grasse→Aix 이동 지도
 - 설명: 공항 렌터카 인수 이후 언덕마을과 향수도시를 거쳐 Aix로 넘어가는 자동차 이동축.
@@ -2813,7 +2813,7 @@ Nice 5박을 도착 적응–도시 핵심–Cannes–Monaco–생활·회복의
 | 9/5 토 | Nice 핵심 도시일 | Cours Saleya·Vieux Nice·Castle Hill·Port 또는 해변 | 도시 이해 |
 | 9/6 일 | Cannes 당일치기 | Marché Forville·Le Suquet·Vieux-Port·Croisette | 새로운 도시 경험 |
 | 9/7 월 | Monaco 당일치기 | Monaco-Ville·Palace Square·Cathédrale·Monte Carlo | 도시국가 경험 |
-| **9/8 화** | **Nice 생활·회복일** | Libération 시장·Cimiez/Matisse 또는 Chagall·세탁·Promenade | 피로 회수 |
+| **9/8 화** | **Nice 생활·회복일** | Libération 시장·사진미술관 선택·세탁·Promenade | 피로 회수 |
 | **9/9 수** | Provence 이동일 | NCE 렌터카·Saint-Paul-de-Vence·Grasse·Aix | 이동 + 마을체험 |
 
 ---
@@ -2893,14 +2893,14 @@ Nice 5박을 도착 적응–도시 핵심–Cannes–Monaco–생활·회복의
 |---|---|---|
 | 07:30–08:15 | Jason 선택 러닝 또는 늦잠 | 다리 피로가 있으면 완전휴식 |
 | 09:20–10:30 | **Marché de la Libération** | 실제 장보기·9/9 차량간식 준비 |
-| 10:45–12:30 | **Matisse Museum 또는 Chagall Museum** | 한 곳만. Matisse 선택 시 Cimiez 정원 결합 |
+| 10:45–12:30 | **Musée de la Photographie Charles Nègre 선택** | 화요일 10:00–18:00 운영. 피로하면 생략 |
 | 12:45–13:30 | 가벼운 점심 | 시장재료 또는 숙소권 점심 |
 | 13:30–15:30 | 숙소 휴식·세탁 | 체크아웃·렌터카 서류·짐 재분류 |
 | 15:30–17:30 | 선택 모듈 | Promenade 카페, 해변산책, Julia 수영 중 1개 |
 | 17:30–18:30 | 9/9 준비 | 물·간식·면허·예약번호·주유/보험 확인 |
 | 19:30–21:00 | Nice 마지막 저녁 | 과식하지 않고 이동일 전 음주 최소화 |
 
-**피로도 2/5.** 미술관 1곳과 생활블록만 유지하며, 두 번째 미술관·Èze·Villefranche 추가는 금지한다.
+**피로도 2/5.** 사진미술관은 선택이며 생활블록을 우선한다. Matisse·Chagall은 화요일 휴관이고, Èze·Villefranche 추가도 금지한다.
 
 ---
 
@@ -3271,7 +3271,7 @@ Jason·Julia의 선호를 반영해 이번 챕터에서 미술관은 기본안�
 
 - Matisse 관련 특별전이 체류기간과 겹치더라도, 이번 기본 일정은 도시·마을 체험 우선
 - Chagall 특별대여전도 흥미롭지만, 우선순위는 Nice·Cannes·Monaco보다 낮게 둔다
-- 9/8에 Matisse 또는 Chagall 한 곳을 기본 선택하며, 우천 시 같은 날 실내비중을 늘린다
+- 9/8에는 화요일 운영하는 Musée de la Photographie Charles Nègre만 선택하며, Matisse·Chagall은 배치하지 않는다
 
 ---
 
@@ -3297,7 +3297,7 @@ Jason·Julia의 선호를 반영해 이번 챕터에서 미술관은 기본안�
 
 ### 20.4 9/8 생활·회복일 대체안
 
-- 비: Libération 짧게 → Matisse 또는 Chagall → 숙소 휴식
+- 비: Libération 짧게 → 사진미술관 선택 → 숙소 휴식
 - 피로: 시장·미술관 중 하나만 유지
 - 맑고 컨디션 좋음: Promenade 또는 Cimiez 산책 60분 추가
 

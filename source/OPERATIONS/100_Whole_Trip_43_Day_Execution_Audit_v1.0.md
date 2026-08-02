@@ -1,6 +1,6 @@
 # 100. Whole Trip 43-Day Execution Audit v1.0
 
-**기준일:** 2026-08-01  
+**기준일:** 2026-08-03
 **범위:** Day 1–43 전체  
 **근거:** 최신 Master Itinerary 및 8개 authoritative 지역 챕터  
 **주의:** 실제 예약값·숙소주소·열차시각·주차장은 Phase 8에서 잠근다.
@@ -29,7 +29,7 @@
 | 8 | 9/5 토 | Nice | Cours Saleya·Vieux Nice·Castle Hill | 08:30 시장 도착 | Castle Hill 전후 45분 휴식 | 시장 또는 구시가지 | 계단·더위·토요일 혼잡 | Port·해변 | 구시가지 실내·카페 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | 08:30 Nice 출발 권장 | TER 20분 여유 | Forville 인근 점심 | 일요일 열차·해안혼잡 | 쇼핑·해변연장 | Cannes 핵심만 후 조기귀환 | TER |
 | 10 | 9/7 월 | Nice | Monaco 당일치기 | 08:30 출발 권장 | 역·언덕 이동 30분 | Monaco-Ville 또는 Port | 월요일 운영·경사·혼잡 | 정원/Larvotto 중 하나 | 구시가지·대성당 중심 | TER |
-| 11 | 9/8 화 | Nice | 회복·시장·미술관 1곳 | 느린 시작 | 세탁·렌터카 준비 2시간 보호 | Libération 시장·숙소식 | 회복일 과밀화 | 두 번째 미술관·추가마을 | 숙소생활·카페 | 미술관·렌터카 준비 |
+| 11 | 9/8 화 | Nice | 회복·시장·사진미술관 선택 | 느린 시작 | 세탁·렌터카 준비 2시간 보호 | Libération 시장·숙소식 | 화요일 휴관·회복일 과밀화 | 사진미술관·추가마을 | 숙소생활·카페 | 사진미술관·렌터카 준비 |
 | 12 | 9/9 수 | Aix | NCE 인수→Saint-Paul→Grasse→Aix | 08:30 Nice 출발 | 렌터카 인수 60–90분 | Grasse 점심 | 인수지연·체크인·주차 | Grasse 실내→Saint-Paul 체류 축소 | Grasse 실내 후 Aix 조기도착 | 렌터카·Aix 숙소 |
 | 13 | 9/10 목 | Aix | 목요시장·Granet | 08:00 시장 | 시장 후 60분 휴식 | 시장점심 | 시장혼잡·보행 | Mazarin·성당 | Granet·카페 중심 | Granet |
 | 14 | 9/11 금 | Aix | Cassis·Calanques | 07:30 출발 | 주차·셔틀 45–60분 | 항구 점심 | 강풍·보트취소·산불통제 | 오후 해안산책 | Marseille/Mucem 또는 Aix 생활일 | 보트·주차 |
@@ -106,6 +106,17 @@
 ## 5. Phase 5 결론
 
 - 43일 전 일정에 출발·완충·식사·휴식·위험·삭제·대체·잠금항목을 부여했다.
-- 구조적으로 실행 불가능한 날짜는 발견되지 않았다.
+- Day 11의 Matisse·Chagall 화요일 휴관 충돌을 발견해 Musée de la Photographie Charles Nègre 선택안으로 교정했다.
+- 교정 후 구조적으로 실행 불가능한 날짜는 발견되지 않았다.
 - 실제 예약값이 없는 일정은 Operational Complete가 아니며 Phase 8 잠금이 필요하다.
 - P0 6일과 날씨의존 일정은 출발 전 재검증 우선순위로 지정한다.
+
+## 6. 2026-08-03 공식 운영 검증
+
+- [Musée Matisse de Nice](https://www.musee-matisse-nice.org/fr/informations-pratiques/): 화요일 휴관.
+- [Musée National Marc Chagall](https://musees-nationaux-alpesmaritimes.fr/chagall/informations-pratiques): 화요일 휴관. 2026년 7월 6일–9월 30일에는 13:00–14:30 점심 휴관도 적용.
+- [Musée de la Photographie Charles Nègre](https://www.nice.fr/lieux/musee-de-la-photographie-charles-negre/): 화요일 10:00–18:00 운영. Day 11의 유일한 선택 문화시설로 사용.
+- [MACBA](https://www.macba.cat/en/plan-your-visit/): 월요일 운영, 화요일 휴관. Day 3의 8월 31일 월요일 일정은 유지 가능.
+- [Museus de Sitges](https://museusdesitges.cat/en/schedule): 4–10월 화–일 10:00–19:00, 월요일 휴관. Day 4의 9월 1일 화요일 일정은 유지 가능.
+- [Collioure 공식 관광청](https://www.collioure.com/a-voir-a-faire/les-marches): 전통시장은 수·일 오전. Day 5의 9월 2일 수요일 일정은 유지 가능.
+- [Grand Palais — Cézanne et nous](https://www.grandpalais.fr/en/program/cezanne-et-nous): 2026년 9월 23일–2027년 1월 17일. Day 34의 10월 1일 관람 가능 기간과 일치.
