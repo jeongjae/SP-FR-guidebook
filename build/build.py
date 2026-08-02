@@ -1485,7 +1485,7 @@ def drawer_html(rel):
             f'{date_label(c["start"])}–{date_label(c["end"])} · {c["nights"]}박')
         for c in CHAPTERS if c["kind"] == "region")
     intro = "".join(row("▤", chapter_url(c), c["title"])
-                    for c in CHAPTERS if c["kind"] != "region")
+                    for c in CHAPTERS if c["kind"] != "region" and c["name"] != "how-to-use")
     about = row("◷", "credits.html", "사진 저작자 표시", "CC 라이선스 · 서체 OFL")
     return f"""<div id="overlay"></div>
 <aside id="drawer" aria-label="전체 메뉴">
@@ -2601,15 +2601,26 @@ def build_daily():
 # ---------------------------------------------------------------- home
 
 def build_home():
+    """홈 — 여정 하나로 연다. 축 진입은 하단탭과 드로어가 맡는다."""
     stops = []
     for c in CHAPTERS:
         if c["kind"] != "region":
             continue
+        first = day_no(c["start"])
+        acts = [("일정", f'chapters/{c["name"]}/schedule.html'
+                 if (SITE / "chapters" / c["name"] / "schedule.html").exists()
+                 else chapter_url(c)),
+                ("동선", f"daily/day-{first:02d}.html"),
+                ("지도", f'maps/{c["map"]}')]
+        btns = "".join(f'<a class="tl-act" href="{u}">{n}</a>' for n, u in acts)
         stops.append(f"""<li>
-  <div class="tl-dates">{date_label(c["start"])} – {date_label(c["end"])}<b>{c["nights"]}박</b></div>
   <div class="tl-body">
-    <a class="tl-title" href="{chapter_url(c)}">{c["title"]}</a>
-    <a class="tl-map" href="maps/{c["map"]}">지도</a>
+    <div class="tl-head">
+      <a class="tl-title" href="{chapter_url(c)}">{c["title"]}</a>
+      <span class="tl-when">{date_label(c["start"])}–{date_label(c["end"])}
+        ({c["nights"]}박)</span>
+    </div>
+    <div class="tl-acts">{btns}</div>
   </div>
 </li>""")
 
@@ -2627,6 +2638,7 @@ def build_home():
         f'<span class="lr-sub">{s}</span></span>'
         f'<span class="lr-go" aria-hidden="true">›</span></a>'
         for g, u, n, s in (
+            ("▤", "chapters/how-to-use.html", "가이드 사용법", "이 가이드북을 읽는 법"),
             ("▦", "tracker/index.html", "마스터 트래커", "예약 · 이동 · 숙소 · 대시보드"),
             ("⤓", "maps/offline.html", "오프라인 지도 준비", "출발 전에 받아 둔다"),
             ("◷", "credits.html", "사진 저작자 표시", "CC 라이선스와 출처")))
@@ -2634,10 +2646,13 @@ def build_home():
     body = f"""<section class="hero">
   <h1>{SITE_TITLE}</h1>
   <p class="period">{TRIP_PERIOD}</p>
-  <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
+  <div class="today-bar">
+    <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
+    <a href="#" class="nav-today btn-today">일정 가기</a>
+  </div>
 </section>
 <ol class="timeline">{''.join(stops)}</ol>
-<h2>읽는 법</h2>
+<h2>Quick Summary</h2>
 <div class="grid">{intro_cards}</div>
 <h2>도구</h2>
 <div class="list-group">{tool_rows}</div>
