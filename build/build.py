@@ -2678,6 +2678,97 @@ def build_topics():
     print(f"  주제: 분류 {len(cards)}개 · 상태 {len(st_cards)}개 → topics/")
 
 
+
+# ---------------------------------------------------------------- 장소 레지스트리
+
+PLACE_REGISTRY = SOURCE / "ASSETS" / "91_Place_Registry_v1.0.md"
+GRADE_KO2SLUG = {"필수": "essential", "우선 추천": "priority", "선택": "optional",
+                 "대체": "alternative", "비추천": "excluded"}
+
+
+def load_place_registry():
+    """장소 레지스트리를 읽는다. 지역 h2 아래의 표가 그 지역의 장소 목록이다."""
+    if not PLACE_REGISTRY.exists():
+        return []
+    reg2slug = {c["region"].lower().split()[0]: c["slug"]
+                for c in CHAPTERS if c["kind"] == "region"}
+    reg2slug.update({c["name"]: c["slug"] for c in CHAPTERS if c["kind"] == "region"})
+    out, slug = [], None
+    for line in PLACE_REGISTRY.read_text(encoding="utf-8").splitlines():
+        h = re.match(r"^## (\S+) \((\d\d)\)\s*$", line)
+        if h:
+            slug = h.group(2)
+            continue
+        if not slug or not line.startswith("|") or re.fullmatch(r"\|[\s:|-]+\|", line.strip()):
+            continue
+        c = [x.strip() for x in line.strip().strip("|").split("|")]
+        if len(c) < 7 or c[0].startswith("슬러그"):
+            continue
+        dash = lambda v: None if v in ("—", "-", "") else v
+        out.append({"slug": c[0].strip("`"), "name": c[1], "chapter": slug,
+                    "type": c[2], "grade": GRADE_KO2SLUG.get(c[3].rstrip("*")),
+                    "grade_raw": c[3], "pin": dash(c[4]),
+                    "body": dash(c[5]), "head": dash(c[6])})
+    return out
+
+
+def check_places():
+    """레지스트리가 지도 핀·본문 등급 헤딩과 어긋나지 않는지 본다.
+
+    같은 장소 목록이 저장소 세 곳에 따로 있다가 절반이 갈라졌다. 정본을 하나로
+    모은 이상, 다시 갈라지면 빌드가 멈춰야 한다.
+    """
+    reg = load_place_registry()
+    if not reg:
+        print("장소 레지스트리 검사: 파일 없음 — 건너뜀")
+        return
+    problems = []
+    seen = set()
+    for r in reg:
+        if r["slug"] in seen:
+            problems.append(f'슬러그 중복: {r["slug"]}')
+        seen.add(r["slug"])
+        if r["type"] not in ("spot", "node"):
+            problems.append(f'{r["slug"]}: 타입이 spot·node 가 아니다 ({r["type"]})')
+        if r["pin"] and r["pin"] not in [p[0] for p in PLACES.get(r["chapter"], [])]:
+            problems.append(f'{r["slug"]}: 지도 핀 "{r["pin"]}" 이 PLACES[{r["chapter"]}] 에 없다')
+        if r["body"]:
+            f = SITE / r["body"]
+            if not f.exists():
+                problems.append(f'{r["slug"]}: 본문 페이지 없음 {r["body"]}')
+            elif r["head"] and r["head"] not in plain(
+                    re.sub(r'<span class="grade.*?</span>', "",
+                           f.read_text(encoding="utf-8"), flags=re.S)):
+                problems.append(f'{r["slug"]}: 헤딩 "{r["head"]}" 을 {r["body"]} 에서 못 찾았다')
+
+    # 본문에 등급 헤딩이 있는데 레지스트리에 없으면 고아다
+    known = {r["head"] for r in reg if r["head"]}
+    for c in CHAPTERS:
+        if c["kind"] != "region":
+            continue
+        for f in sorted((SITE / "chapters" / c["name"]).glob("*.html")):
+            body = f.read_text(encoding="utf-8")
+            for lvl, b in re.findall(r"<h([234])[^>]*>(.*?)</h\1>", body, re.S):
+                if 'class="grade grade-' not in b:
+                    continue
+                name = plain(re.sub(r'<span class="grade.*?</span>', "", b, flags=re.S))
+                if name and name not in known and name not in REGISTRY_EXCLUDED:
+                    problems.append(f'{c["name"]}/{f.name}: 등급 헤딩 "{name}" 이 레지스트리에 없다')
+    if problems:
+        print("장소 레지스트리 검사 실패:")
+        for p in problems[:20]:
+            print("  " + p)
+        sys.exit(1)
+    spots = [r for r in reg if r["type"] == "spot"]
+    undecided = [r for r in spots if not r["grade"]]
+    print(f"장소 레지스트리 검사: spot {len(spots)} · node {len(reg) - len(spots)}"
+          f" · 등급 미정 {len(undecided)} 이상 없음")
+
+
+# 등급이 붙어 있지만 갈 곳이 아닌 헤딩 — 하루의 성격이다
+REGISTRY_EXCLUDED = {"15구 생활일", "월요일 모듈"}
+
+
 # ---------------------------------------------------------------- data.js
 
 def build_data_js():
@@ -2871,6 +2962,7 @@ def main():
     check_day_headings()
     check_links()
     check_dates()
+    check_places()
     print(f"\n완료: {SITE} ({sum(1 for _ in SITE.rglob('*.html'))}개 HTML 페이지)")
 
 
