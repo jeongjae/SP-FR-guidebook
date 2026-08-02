@@ -1,0 +1,56 @@
+"""아이콘 — CSS 마스크 data URI 로 굽는다.
+
+선 데이터는 여기가 원본이다. 출력은 style.css 뒤에 붙는다.
+
+스프라이트를 페이지마다 인라인하면 314쪽 × 2KB 가 붙는다. 마스크로 두면
+CSS 한 번만 받고 페이지 무게는 0 이다. 색은 currentColor 가 그대로 온다.
+"""
+from urllib.parse import quote
+
+# 24 그리드 · 선 굵기 1.7 · 끝은 둥글게. 면이 아니라 선으로 그린다 —
+# 국기 원색이 아이콘으로 새는 것을 막는다.
+ICONS = {
+ "today":   '<circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/>',
+ "list":    '<path d="M4 6.5h16M4 12h16M4 17.5h16"/>',
+ "region":  '<path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
+ "topic":   '<rect x="3.8" y="3.8" width="7" height="7" rx="1.6"/><rect x="13.2" y="3.8" width="7" height="7" rx="1.6"/><rect x="3.8" y="13.2" width="7" height="7" rx="1.6"/><rect x="13.2" y="13.2" width="7" height="7" rx="1.6"/>',
+ "map":     '<circle cx="12" cy="12" r="7.6"/><path d="M12 2.6v3.4M12 18v3.4M2.6 12H6M18 12h3.4"/>',
+ "clock":   '<circle cx="12" cy="12" r="8.4"/><path d="M12 7.2V12l3.4 2.1"/>',
+ "gauge":   '<path d="M4 16.5a8.6 8.6 0 1 1 16 0"/><path d="M12 16.5 16 10"/><circle cx="12" cy="16.5" r="1.4" fill="currentColor" stroke="none"/>',
+ "note":    '<path d="M6 3.6h8.2L19 8.4v12H6z"/><path d="M14 3.6v5h5"/><path d="M9 13h7M9 16.6h5"/>',
+ "check":   '<path d="M5.2 4.6h13.6v14.8H5.2z" rx="2"/><path d="M8.6 12.2l2.5 2.5 4.6-5"/>',
+ "pin":     '<path d="M12 21s6.6-6 6.6-10.6a6.6 6.6 0 1 0-13.2 0C5.4 15 12 21 12 21Z"/><circle cx="12" cy="10.3" r="2.4"/>',
+ "book":    '<path d="M4.4 4.6h6.2A2.4 2.4 0 0 1 12 6.6v13a2 2 0 0 0-1.4-1.2H4.4z"/><path d="M19.6 4.6h-6.2A2.4 2.4 0 0 0 12 6.6v13a2 2 0 0 1 1.4-1.2h6.2z"/>',
+ "food":    '<path d="M6.4 3.4v7.4a2.6 2.6 0 0 0 5.2 0V3.4M9 11v9.6"/><path d="M17.4 3.4c-1.6 1.4-2.2 3.2-2.2 5.2 0 1.7.8 2.8 2.2 3.1v8.9"/>',
+ "train":   '<rect x="5.4" y="3.6" width="13.2" height="13.4" rx="3"/><path d="M5.4 10.6h13.2"/><path d="M8.6 21l1.8-4M15.4 21l-1.8-4"/><circle cx="9" cy="13.8" r="1"  fill="currentColor" stroke="none"/><circle cx="15" cy="13.8" r="1" fill="currentColor" stroke="none"/>',
+ "stay":    '<path d="M3.4 19.4v-9.2M3.4 14.6h17.2v4.8M20.6 14.6v-3a2.6 2.6 0 0 0-2.6-2.6h-6.2v5.6"/><circle cx="7.4" cy="11.4" r="1.9"/>',
+ "lock":    '<rect x="4.8" y="10.4" width="14.4" height="9.8" rx="2.4"/><path d="M8.4 10.4V7.8a3.6 3.6 0 0 1 7.2 0v2.6"/>',
+ "cost":    '<circle cx="12" cy="12" r="8.4"/><path d="M12 7v10M14.6 9.4c-.6-.7-1.6-1-2.6-1-1.6 0-2.6.8-2.6 1.9 0 2.6 5.2 1.4 5.2 4 0 1.2-1.1 2-2.6 2-1.1 0-2.1-.4-2.7-1.1"/>',
+ "tip":     '<path d="M9.4 18.4h5.2M10.2 21h3.6"/><path d="M12 3.2a5.8 5.8 0 0 0-3.4 10.5c.6.5.9 1.1.9 1.8v.9h5v-.9c0-.7.3-1.3.9-1.8A5.8 5.8 0 0 0 12 3.2Z"/>',
+ "source":  '<path d="M9.6 6.4C7 7.8 5.6 10 5.6 12.8c0 2.2 1.3 3.6 3.1 3.6 1.7 0 2.9-1.2 2.9-2.8 0-1.6-1.1-2.7-2.6-2.7-.3 0-.6 0-.8.1"/><path d="M19 6.4c-2.6 1.4-4 3.6-4 6.4 0 2.2 1.3 3.6 3.1 3.6 1.7 0 2.9-1.2 2.9-2.8 0-1.6-1.1-2.7-2.6-2.7-.3 0-.6 0-.8.1"/>',
+ "download":'<path d="M12 3.6v11.2M7.6 10.6 12 15l4.4-4.4"/><path d="M4.6 18.4v1.4h14.8v-1.4"/>',
+ "table":   '<rect x="3.6" y="4.6" width="16.8" height="14.8" rx="2.4"/><path d="M3.6 9.6h16.8M9.4 9.6v9.8"/>',
+ "license": '<circle cx="12" cy="12" r="8.4"/><path d="M14.6 9.6a3.4 3.4 0 1 0 0 4.8"/>',
+ "search":  '<circle cx="10.8" cy="10.8" r="6.4"/><path d="M15.6 15.6 20.4 20.4"/>',
+ "close":   '<path d="M5.6 5.6 18.4 18.4M18.4 5.6 5.6 18.4"/>',
+ "up":      '<path d="M12 19.4V5.2M5.8 11.4 12 5.2l6.2 6.2"/>',
+ "link":    '<path d="M13.6 10.4a4.2 4.2 0 0 0-6 0l-3 3a4.24 4.24 0 0 0 6 6l1.2-1.2"/><path d="M10.4 13.6a4.2 4.2 0 0 0 6 0l3-3a4.24 4.24 0 0 0-6-6l-1.2 1.2"/>',
+ "photo":   '<rect x="3.4" y="5.4" width="17.2" height="13.2" rx="2.4"/><circle cx="8.8" cy="10.2" r="1.7"/><path d="M4 16.4 9.4 12l4 3.4 3-2.4 4.2 3.4"/>',
+ "flag":    '<path d="M5.6 21V3.8M5.6 4.6h12.8l-2.4 4 2.4 4H5.6"/>',
+}
+
+def uri(body):
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" '
+           'stroke="#000" stroke-width="1.7" stroke-linecap="round" '
+           f'stroke-linejoin="round">{body}</svg>')
+    return 'url("data:image/svg+xml,' + quote(svg, safe="") + '")'
+
+def css():
+    """마스크 변수만 내보낸다. 상자·크기는 style.css 의 `.ic` 가 정한다."""
+    out = ["/* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */"]
+    out += [f".ic-{n}::before {{ --ic: {uri(b)}; }}" for n, b in ICONS.items()]
+    return "\n".join(out) + "\n"
+
+
+if __name__ == "__main__":
+    print(css())
