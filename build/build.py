@@ -3931,6 +3931,39 @@ def check_phase4_daily_guards():
     print("Phase 4 데일리 템플릿 가드: 43일 공통 순서 · 8지역 목록 · 카드 접기 이상 없음")
 
 
+def check_phase5_execution_guards():
+    """43일 감사표의 날짜·거점·운영일 교정이 다시 갈라지지 않게 잠근다."""
+    problems = []
+    audit = load_audit()
+    for n, row in audit.items():
+        d = date_of_day(n)
+        expected_date = f"{d.month}/{d.day} {WEEKDAY_KO[d.weekday()]}"
+        if row["date"].replace("**", "") != expected_date:
+            problems.append(f'Day {n}: 감사표 날짜 "{row["date"]}" (기대값 {expected_date})')
+        chapter = chapter_for_date(d)
+        if chapter and not row["base"].startswith(chapter["region"]):
+            problems.append(
+                f'Day {n}: 감사표 거점 "{row["base"]}" (기대값 {chapter["region"]})')
+
+    # 2026-08-03 공식 운영 검증: Matisse·Chagall은 화요일 휴관이다.
+    # Day 11에 두 곳을 다시 넣으면 감사표와 실제 데일리 페이지가 동시에 실패한다.
+    day11 = (SITE / "daily" / "day-11.html").read_text(encoding="utf-8")
+    forbidden = re.compile(r"Matisse Museum\s*(?:또는|or)\s*Chagall Museum", re.I)
+    if forbidden.search(day11):
+        problems.append("Day 11: 화요일 휴관인 Matisse·Chagall 선택안이 다시 노출됨")
+    if "Musée de la Photographie Charles Nègre" not in day11:
+        problems.append("Day 11: 화요일 운영 사진미술관 선택안 누락")
+    if "화요일 휴관" not in day11:
+        problems.append("Day 11: Matisse·Chagall 화요일 휴관 경고 누락")
+
+    if problems:
+        print("Phase 5 실행성 감사 가드 실패:")
+        for p in problems[:30]:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 5 실행성 감사 가드: 43일 날짜·거점 · Day 11 휴관 교정 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4025,6 +4058,7 @@ def main():
     check_phase1_reader_guards()
     check_phase3_navigation_guards()
     check_phase4_daily_guards()
+    check_phase5_execution_guards()
     check_links()
     check_dates()
     check_places()
