@@ -1297,7 +1297,10 @@ def split_coords(c, rel, fname, page_cat):
         day = (f"Day {first}–{day_no(c['end'])}", f"daily/day-{first:02d}.html")
     slug = next((ALL_TOPIC_SLUG[k] for k, lab in CATEGORIES if lab == page_cat), None)
     topic = ((page_cat, f"topics/{slug}.html") if slug else ("전체 주제", "topics/index.html"))
-    return coords_bar(rel, day=day, region=(c["region"], None), topic=topic)
+    # 주제 페이지는 지역×주제 교차점이다. 어느 축의 뿌리도 아니므로 셋 다 링크로 연다 —
+    # 여기서 '지역' 을 현재로 굳히면 챕터 허브로 돌아갈 길이 없어진다.
+    return coords_bar(rel, day=day, topic=topic,
+                      region=(c["region"], f'chapters/{c["name"]}/index.html'))
 
 
 def chapter_coords(c, rel):
@@ -1360,11 +1363,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="", c
 <header class="topbar">
   <button id="menu-btn" aria-label="메뉴 열기">☰</button>
   <a class="tb-title" href="{rel}/index.html">{tb_title}</a>
-  <nav class="tb-links">
-    <a href="{rel}/{ITINERARY_URL}">일정</a>
-    <a href="{rel}/maps/index.html">지도</a>
-    <a href="{rel}/tracker/index.html">트래커</a>
-  </nav>
+  <button id="search-btn" aria-label="검색 열기">⌕</button>
 </header>
 {coords}
 {subnav}
@@ -1535,27 +1534,44 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
             flatten_tokens(toc_tokens), body)
 
 
-def split_subnav(pages, current):
-    """분할 챕터의 형제 페이지 점프 바.
+def siblings_nav(groups):
+    """L2 형제 내비 — 지금 묶음 안에서 옆으로 움직이는 한 가지 일만 한다.
 
-    단일 페이지 시절의 카테고리 앵커 내비를 페이지 기준으로 되살린 것이다.
-    이게 없으면 주제 사이를 옮길 때마다 허브를 거쳐야 한다.
+    L0 하단탭이 축을 고르고, L1 좌표 바가 축을 건너뛰고, 여기가 형제를 훑는다.
+    챕터·주제·데일리가 모두 같은 컴포넌트를 쓴다. 묶음마다 내용만 다르다.
+
+    groups: [(축 라벨, 스타일, [(표시, url, 현재인가), ...]), ...]
     """
-    cats, days = [], []
-    for fname, title, _sub, _md, page_cat in pages:
-        here = ' class="here"' if fname == current else ""
+    out = []
+    for label, style, items in groups:
+        if not items:
+            continue
+        def link(text, u, here, tip):
+            cls = ' class="here"' if here else ""
+            ttl = f' title="{html.escape(tip)}"' if tip else ""
+            return f'<a href="{u}"{cls}{ttl}>{html.escape(text)}</a>'
+
+        links = "".join(link(*it) for it in items)
+        out.append(f'<div class="sn-group"><span class="sn-label">{label}</span>'
+                   f'<div class="{style}">{links}</div></div>')
+    if not out:
+        return ""
+    return f'<nav class="subnav" aria-label="이 묶음 안에서 이동">{"".join(out)}</nav>'
+
+
+def chapter_siblings(pages, current):
+    """분할 챕터의 형제 — 주제 9개와 일자 N개. 두 축을 라벨로 갈라 놓는다."""
+    cats = [("허브", "index.html", current == "index.html", "")]
+    days = []
+    for fname, title, _sub, _md, _cat in pages:
         dm = re.match(r"day-(\d+)\.html$", fname)
         if dm:
-            md = DAY_RE.search(title) or re.search(r"(\d+)월\s*(\d+)일", title)
-            label = (f"{int(md.group(2))}/{int(md.group(3))}" if md and md.lastindex == 3
-                     else f"D{int(dm.group(1))}")
-            days.append(f'<a href="{fname}"{here} title="{html.escape(title)}">{label}</a>')
+            md = re.search(r"(\d+)월\s*(\d+)일", title)
+            label = f"{int(md.group(1))}/{int(md.group(2))}" if md else f"D{int(dm.group(1))}"
+            days.append((label, fname, fname == current, title))
         else:
-            cats.append(f'<a href="{fname}"{here}>{html.escape(title)}</a>')
-    hub = '<a href="index.html" class="sn-hub">허브</a>'
-    cats_html = f'<div class="sn-layers">{hub}{"".join(cats)}</div>'
-    days_html = f'<div class="sn-days">{"".join(days)}</div>' if days else ""
-    return f'<nav class="subnav">{cats_html}{days_html}</nav>'
+            cats.append((title, fname, fname == current, ""))
+    return siblings_nav([("주제", "sn-layers", cats), ("일자", "sn-days", days)])
 
 
 def build_split_chapter(c, body_md, map_links):
@@ -1601,7 +1617,7 @@ def build_split_chapter(c, body_md, map_links):
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
             extra=fig + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
             coords=split_coords(c, rel, fname, page_cat),
-            subnav=split_subnav(pages, fname))
+            subnav=chapter_siblings(pages, fname))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
         scan_sections(c, page_body, url, fixed_cat=page_cat)
@@ -1639,6 +1655,7 @@ def build_split_chapter(c, body_md, map_links):
     (out_dir / "index.html").write_text(
         page(c["title"], hub_body, rel=rel, topbar_title=c["title"],
              coords=chapter_coords(c, rel),
+             subnav=chapter_siblings(pages, "index.html"),
              meta_line=f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박'),
         encoding="utf-8")
     SEARCH_INDEX.append({"t": c["title"], "c": "지역", "u": hub_url})
@@ -2207,8 +2224,17 @@ def build_daily():
 {pager}"""
         region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
                        if c else ("이동 중", ITINERARY_URL))
+        # 43일 전체를 한 줄에 늘어놓으면 못 쓴다. 현재 날짜 앞뒤 창만 보인다.
+        lo, hi = max(1, n - 5), min(43, n + 5)
+        window = [(f"{date_label(date_of_day(k))}", f"day-{k:02d}.html", k == n,
+                   f"Day {k}") for k in range(lo, hi + 1)]
+        day_nav = siblings_nav([
+            ("일자", "sn-layers", [("전체 목록", "index.html", False, ""),
+                                 ("← 앞", f"day-{max(1, n - 1):02d}.html", False, ""),
+                                 ("뒤 →", f"day-{min(43, n + 1):02d}.html", False, "")]),
+            ("날짜", "sn-days", window)])
         (out_dir / f"day-{n:02d}.html").write_text(
-            page(title, body, rel="..", topbar_title=title,
+            page(title, body, rel="..", topbar_title=title, subnav=day_nav,
                  coords=coords_bar("..",
                                    day=(f"Day {n} · {date_label(d)} {wd}", None),
                                    region=region_cell,
@@ -2574,6 +2600,16 @@ def topic_list_html(items, rel):
     return "".join(out)
 
 
+def topic_siblings(current):
+    """주제 축의 형제 — 상태 3개와 분류 N개."""
+    st = [(label, f"{slug}.html", slug == current, "")
+          for _k, slug, label, _lead in STATUS_PAGES]
+    cats = [("허브", "index.html", current == "index.html", "")]
+    cats += [(label, f"{ALL_TOPIC_SLUG[key]}.html", ALL_TOPIC_SLUG[key] == current, "")
+             for key, label in CATEGORIES if TOPIC_INDEX.get(label)]
+    return siblings_nav([("분류", "sn-layers", cats), ("상태", "sn-days", st)])
+
+
 def build_topics():
     """일자·지역과 나란히 서는 세 번째 축. 카테고리 10개 + 상태 3개."""
     out_dir = SITE / "topics"
@@ -2594,7 +2630,8 @@ def build_topics():
                              region=("8개 거점", "regions.html"), topic=(label, None))
                 + f'<div class="tp-list">{topic_list_html(items, rel)}</div>')
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel=rel, topbar_title=f"{label} — 전체"), encoding="utf-8")
+            page(label, body, rel=rel, topbar_title=f"{label} — 전체",
+                 subnav=topic_siblings(slug)), encoding="utf-8")
         cards.append(f'<a class="card" href="{slug}.html">'
                      f'<span class="card-title">{label}</span>'
                      f'<span class="card-sub">{TOPIC_HEAD[slug]}</span>'
@@ -2617,7 +2654,8 @@ def build_topics():
                   '<th>지역</th><th>섹션</th><th>분류</th><th>표시</th>'
                   f'</tr></thead><tbody>{rows}</tbody></table></div>')
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel=rel, topbar_title=label), encoding="utf-8")
+            page(label, body, rel=rel, topbar_title=label,
+                 subnav=topic_siblings(slug)), encoding="utf-8")
         st_cards.append(f'<a class="card" href="{slug}.html">'
                         f'<span class="card-title">{label}</span>'
                         f'<span class="card-n">{len(items)}건</span></a>')
@@ -2634,7 +2672,8 @@ def build_topics():
            + '<h2>분류로 보기</h2>'
            + f'<div class="rg-grid">{"".join(cards)}</div>')
     (SITE / "topics" / "index.html").write_text(
-        page("주제", hub, rel=rel, topbar_title="주제"), encoding="utf-8")
+        page("주제", hub, rel=rel, topbar_title="주제",
+             subnav=topic_siblings("index")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "주제 — 전체 목록", "c": "주제", "u": "topics/index.html"})
     print(f"  주제: 분류 {len(cards)}개 · 상태 {len(st_cards)}개 → topics/")
 
