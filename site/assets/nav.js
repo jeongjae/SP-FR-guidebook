@@ -27,6 +27,21 @@
     });
   }
 
+  /* ---------- 큰 제목 접힘 (HIG Large Title) ----------
+     홈은 본문 맨 위에 큰 제목이 있다. 같은 글자가 상단바에도 동시에 보이면
+     한 화면에 제목이 둘이다. 큰 제목이 위로 사라진 뒤에야 상단바 제목을
+     띄운다. JS 가 없으면 클래스가 안 붙어 처음부터 보인다 — 그쪽이 안전하다. */
+  var bigTitle = $(".hero h1");
+  if (bigTitle) {
+    document.body.classList.add("has-large-title");
+    var syncTitle = function () {
+      document.body.classList.toggle(
+        "scrolled-past", bigTitle.getBoundingClientRect().bottom < 52);
+    };
+    window.addEventListener("scroll", syncTitle, { passive: true });
+    syncTitle();
+  }
+
   /* ---------- 오늘 버튼 ---------- */
   function parisToday() {
     try {

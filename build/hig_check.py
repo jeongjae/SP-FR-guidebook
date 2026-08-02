@@ -163,6 +163,12 @@ def main():
     if "--all" in sys.argv:
         pages = sorted(str(p.relative_to(SITE)) for p in SITE.rglob("*.html"))
     pages = [p for p in pages if (SITE / p).exists()]
+    # 리다이렉트 스텁은 열자마자 meta refresh 로 넘어간다. 평가 도중 이동하면
+    # "Execution context was destroyed" 로 검사기가 죽는다 — 사이트 문제가
+    # 아니라 검사기 문제다. 검사할 화면도 없으니 목록에서 뺀다.
+    stubs = [p for p in pages
+             if 'http-equiv="refresh"' in (SITE / p).read_text(encoding="utf-8")[:800]]
+    pages = [p for p in pages if p not in set(stubs)]
     if not pages:
         print("검사할 페이지가 없다. 먼저 build.py 를 돌려라.")
         return 1
@@ -204,6 +210,8 @@ def main():
         return 1
     print(f"HIG 검사: {len(pages)}쪽 × 2폭 × 라이트/다크 — 터치타깃 · 글자크기 · 명암비 · "
           f"안전영역 · 리플로 · 뷰포트 이상 없음")
+    if stubs:
+        print(f"  (리다이렉트 스텁 {len(stubs)}쪽은 검사하지 않았다)")
     print("  (명료함·경의·깊이 같은 원칙은 이 검사로 확인되지 않는다)")
     return 0
 

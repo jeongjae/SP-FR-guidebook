@@ -8,7 +8,7 @@
 </head>
 <body data-rel=".">
 <header class="topbar">
-  <span class="tb-crumbs tb-crumbs-none"></span>
+  <nav class="tb-crumbs" aria-label="위치"><b>2026 유럽 여행 가이드북</b></nav>
   <button id="search-btn" aria-label="검색 열기">⌕</button>
 </header>
 
@@ -23,7 +23,7 @@
 </aside>
 <main>
 
-
+<nav class="coords" aria-label="일자·지역·주제로 이동"><a href="./daily/index.html"><b>일자</b><span>43일</span></a><a href="./regions.html"><b>지역</b><span>8곳</span></a><a href="./topics/index.html"><b>주제</b><span>분류·상태</span></a></nav>
 <section class="hero">
   <h1>2026 유럽 여행 가이드북</h1>
   <p class="period">2026-08-29 ~ 2026-10-10 · 43일 42박</p>
@@ -33,7 +33,7 @@
   </div>
 </section>
 <ol class="timeline"><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="barcelona">
     <div class="tl-head">
       <a class="tl-title" href="chapters/barcelona/index.html">Barcelona · Sitges</a>
       <span class="tl-when">8/29–9/1
@@ -42,7 +42,7 @@
     <div class="tl-acts"><a class="tl-act" href="chapters/barcelona/schedule.html">일정</a><a class="tl-act" href="daily/day-01.html">동선</a><a class="tl-act" href="maps/barcelona.html">지도</a></div>
   </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="girona">
     <div class="tl-head">
       <a class="tl-title" href="chapters/girona/index.html">Girona · Collioure · Empordà</a>
       <span class="tl-when">9/1–9/4
@@ -50,8 +50,14 @@
     </div>
     <div class="tl-acts"><a class="tl-act" href="chapters/girona/schedule.html">일정</a><a class="tl-act" href="daily/day-04.html">동선</a><a class="tl-act" href="maps/girona.html">지도</a></div>
   </div>
+</li><li class="tl-border" aria-label="국경">
+  <div class="bc">
+    <span class="bc-flag bc-es" aria-hidden="true"></span>
+    <span class="bc-label">9/4 · 국경을 넘는다 — 스페인에서 프랑스로</span>
+    <span class="bc-flag bc-fr" aria-hidden="true"></span>
+  </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="nice">
     <div class="tl-head">
       <a class="tl-title" href="chapters/nice/index.html">Nice · Côte d’Azur</a>
       <span class="tl-when">9/4–9/9
@@ -60,7 +66,7 @@
     <div class="tl-acts"><a class="tl-act" href="chapters/nice/schedule.html">일정</a><a class="tl-act" href="daily/day-07.html">동선</a><a class="tl-act" href="maps/nice.html">지도</a></div>
   </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="aix">
     <div class="tl-head">
       <a class="tl-title" href="chapters/aix/index.html">Aix-en-Provence</a>
       <span class="tl-when">9/9–9/13
@@ -69,7 +75,7 @@
     <div class="tl-acts"><a class="tl-act" href="chapters/aix/schedule.html">일정</a><a class="tl-act" href="daily/day-12.html">동선</a><a class="tl-act" href="maps/aix.html">지도</a></div>
   </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="luberon">
     <div class="tl-head">
       <a class="tl-title" href="chapters/luberon/index.html">Luberon Farmhouse</a>
       <span class="tl-when">9/13–9/17
@@ -78,7 +84,7 @@
     <div class="tl-acts"><a class="tl-act" href="chapters/luberon/schedule.html">일정</a><a class="tl-act" href="daily/day-16.html">동선</a><a class="tl-act" href="maps/luberon.html">지도</a></div>
   </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="avignon">
     <div class="tl-head">
       <a class="tl-title" href="chapters/avignon/index.html">Avignon · Alpilles · Pont du Gard</a>
       <span class="tl-when">9/17–9/21
@@ -87,7 +93,7 @@
     <div class="tl-acts"><a class="tl-act" href="chapters/avignon/schedule.html">일정</a><a class="tl-act" href="daily/day-20.html">동선</a><a class="tl-act" href="maps/avignon.html">지도</a></div>
   </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="lyon">
     <div class="tl-head">
       <a class="tl-title" href="chapters/lyon/index.html">Lyon · Annecy</a>
       <span class="tl-when">9/21–9/25
@@ -96,7 +102,7 @@
     <div class="tl-acts"><a class="tl-act" href="chapters/lyon/schedule.html">일정</a><a class="tl-act" href="daily/day-24.html">동선</a><a class="tl-act" href="maps/lyon.html">지도</a></div>
   </div>
 </li><li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="paris">
     <div class="tl-head">
       <a class="tl-title" href="chapters/paris/index.html">Paris Long Stay</a>
       <span class="tl-when">9/25–10/10
