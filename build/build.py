@@ -1079,6 +1079,172 @@ def resolve_day_ref(n, chapter):
     return n, f"챕터 구간(Day {base}–{last}) 밖이다. 상호참조로 보고 그대로 둔다"
 
 
+
+# ---------------------------------------------------------------- 작성 흔적 제거
+
+# 통째로 지우는 섹션 — 제작 공정 문서이지 여행 정보가 아니다
+DROP_SECTION_RE = re.compile(
+    r"^(#{1,6})[ \t]*(?:\d+[A-Z]?[.)][ \t]*)*"
+    r"(?:Phase\s*\d+[^\n]*원칙|시각요소 자리표시자|사진 에셋 브리프[^\n]*|"
+    r"시각자료 설계[^\n]*)[ \t]*$", re.M)
+
+# 제목만 바꾸는 것 — 내용은 여행 정보다
+RENAME_HEADING = [
+    (re.compile(r"^(#{1,6}[ \t]*)(?:\d+[A-Z]?[.)][ \t]*)*Pass\s*[B-Z][.．]?\s*", re.M), r"\1"),
+    (re.compile(r"^(#{1,6}[ \t]*)편집자 큐레이션[ \t]*[—–-][ \t]*", re.M), r"\1"),
+    (re.compile(r"^(#{1,6}[ \t]*)검증 상태[ \t]*[—–-][ \t]*보강본 근거[ \t]*$", re.M),
+     r"\1확인이 필요한 것"),
+]
+
+# 문장 단위로 지우는 것 — 이 문서가 어떻게 쓰였는지에 대한 말
+DROP_SENTENCE = [
+    re.compile(r"기존 원고[가의는를에]?[^.\n]*?(?:판단|정리|배치|구성|서술|표현)이"
+               r"[^.\n]*?(?:정확하다|옳다|옳았[^.\n]*|맞다)[^.\n]*\.\s*"),
+    re.compile(r"기존 원고의 (?:판단|지시|정리)(?:다|이다)\.\s*"),
+    re.compile(r"보강본(?:은|이|에서)[^.\n]*?(?:넣었다|명시했다|추가했다|반영했다)\.\s*"),
+    re.compile(r"[^.\n]*(?:현재 작업본|현재 Markdown 작업본|최종 Word|최종본에는|자리표시자)"
+               r"[^.\n]*\.\s*"),
+    re.compile(r"[^.\n]*보강본(?:은|이|의)[^.\n]*\.\s*"),
+    re.compile(r"[^.\n]*이번 개정의 핵심[^.\n]*\.\s*"),
+]
+
+# 문장은 살리고 귀속만 떼는 것
+STRIP_ATTRIB = [
+    (re.compile(r"기존 원고[가의][ \t]*"), ""),
+    (re.compile(r"기존 원고에도[ \t]*"), ""),
+    (re.compile(r"기존 원고에만[ \t]*"), "여기에만 "),
+    (re.compile(r"기존 원고에[ \t]*"), ""),
+    (re.compile(r"기존 원고는[ \t]*"), ""),
+    (re.compile(r"기존 원고[ \t]+(Day\s*\d+)"), r"\1"),
+    (re.compile(r"기존 원고[ \t]*(기준|기반|지침대로|유지)"), r"\1"),
+    # 검증 상태표의 근거 표기 — 독자에겐 '확인 안 됨' 이라는 뜻이다
+    (re.compile(r"근거가 기존 원고뿐"), "교차 확인된 출처 없음"),
+    (re.compile(r"기존 원고[ \t]*\+[ \t]*일반 지식"), "교차 확인 안 됨"),
+    (re.compile(r"\([ \t]*기존 원고[^)]*\)"), ""),
+    (re.compile(r"기존 원고[ \t]*"), ""),
+    (re.compile(r"[ \t]*\((?:기존 )?원고 유지\)"), ""),
+    # 번호를 지운 뒤라 `32.1 저녁 배분` 같은 참조는 가리킬 곳이 없다. 제목만 남긴다.
+    (re.compile(r"`\d+[A-Z]?(?:\.\d+)?[.．]?[ \t]+([^`]{1,40})`"), r"**\1**"),
+]
+
+DESIGN_NOTE_RE = re.compile(r"^>[ \t]*\*\*디자인 메모\*\*[^\n]*\n?", re.M)
+
+
+def strip_process_notes(md_text):
+    """가이드북이 어떻게 만들어졌는지에 대한 서술을 최종본에서 걷는다.
+
+    현장에서 읽는 사람에게 '기존 원고가 …로 잡았다' 는 정보가 아니다.
+    원본 MD 는 손대지 않는다 — 작성 경위는 저장소에 남고 출력에서만 사라진다.
+    """
+    n = 0
+    lines, out, drop_level = md_text.splitlines(), [], None
+    for line in lines:
+        h = re.match(r"^(#{1,6})[ \t]", line)
+        if drop_level is not None:
+            if h and len(h.group(1)) <= drop_level:
+                drop_level = None
+            else:
+                n += 1
+                continue
+        if DROP_SECTION_RE.match(line):
+            drop_level = len(re.match(r"^(#{1,6})", line).group(1))
+            n += 1
+            continue
+        out.append(line)
+    text = "\n".join(out)
+    for pat, rep in RENAME_HEADING:
+        text, k = pat.subn(rep, text)
+        n += k
+    text, k = DESIGN_NOTE_RE.subn("", text)
+    n += k
+    for pat in DROP_SENTENCE:
+        text, k = pat.subn("", text)
+        n += k
+    for pat, rep in STRIP_ATTRIB:
+        text, k = pat.subn(rep, text)
+        n += k
+    # 문장을 지운 뒤 남는 빈 인용줄·빈 문단 정리
+    text = re.sub(r"^>[ \t]*$\n", "", text, flags=re.M)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text, n
+
+
+
+def place_title_key(name):
+    """장소 절 제목에서 장소명만 남긴다. 등급 토큰·섹션번호·부제를 뗀다."""
+    n = re.sub(r"\{\{grade:[^}]*\}\}", "", name)
+    n = NUM_PREFIX_RE.sub("", SUBNUM_RE.sub("", n.strip()))
+    n = re.split(r"\s+[—–]\s+", n)[0]
+    n = re.sub(r"\s*\(.*$", "", n).strip()
+    return place_key(n)
+
+
+def merge_place_sections(md_text, slug):
+    """같은 장소를 두 번 쓴 절을 하나로 합친다.
+
+    보강본이 장소 상세를 새로 쓰면서 원본 원고의 같은 장소 절이 그대로 남았다.
+    `places.html` 에 Palais des Papes 가 두 번 나오는 식이다. 읽는 사람에게는
+    스크롤만 늘어난다.
+
+    **내용은 버리지 않는다.** 뒤 절의 본문을 앞 절 아래로 옮기고 제목만 지운다.
+    합칠지 말지는 장소 레지스트리에 있는 이름과 정확히 맞을 때만 정한다 —
+    제목이 비슷하다는 이유로 합치면 다른 내용을 뭉갠다.
+    """
+    known = {place_key(r["name"]) for r in load_place_registry()
+             if r["chapter"] == slug and r["type"] == "spot"}
+    if not known:
+        return md_text, 0
+    lines = md_text.splitlines()
+    # 카테고리를 넘어 합치면 안 된다. 일정(Day)·교통에 있는 같은 이름의 절은
+    # 그 날·그 맥락의 정보이지 장소 상세의 사본이 아니다. 여행정보 안에서만 본다.
+    info_label = CAT_LABEL["info"]
+    marks, in_info = [], False
+    for i, line in enumerate(lines):
+        h1 = re.match(r"^#[ \t]+(.+)$", line)
+        if h1:
+            in_info = h1.group(1).strip() == info_label
+            continue
+        m = re.match(r"^(#{2,4})[ \t]+(.+)$", line)
+        if m:
+            k = place_title_key(m.group(2)) if in_info else None
+            marks.append((i, len(m.group(1)), k if k in known else None))
+    # 절 범위를 먼저 구한다
+    spans = {}
+    for idx, (i, lvl, k) in enumerate(marks):
+        end = marks[idx + 1][0] if idx + 1 < len(marks) else len(lines)
+        if k:
+            spans.setdefault(k, []).append((i, end))
+    # 기준 절은 등급이 붙은 것 — 레지스트리가 그 제목을 가리킨다.
+    # 순서로 정하면 원본 절이 기준이 되어 등급 절이 사라진다.
+    merged, drop = 0, []
+    for k, group in spans.items():
+        if len(group) < 2:
+            continue
+        host = next((g for g in group if "{{grade:" in lines[g[0]]), group[0])
+        for g in group:
+            if g == host:
+                continue
+            sub = re.split(r"\s+[—–]\s+", lines[g[0]].lstrip("# ").strip(), 1)
+            lead = f"**{sub[1].strip()}**" if len(sub) > 1 and sub[1].strip() else ""
+            drop.append((g[0], g[1], host[1], lead, lines[g[0] + 1:g[1]]))
+            merged += 1
+    if not merged:
+        return md_text, 0
+    insert, skip = {}, set()
+    for start, end, host_end_line, lead, body in drop:
+        insert.setdefault(host_end_line, []).append(([lead] if lead else []) + body)
+        skip.update(range(start, end))
+    out = []
+    for i, line in enumerate(lines):
+        if i not in skip:
+            out.append(line)
+        if i + 1 in insert:
+            for ch in insert[i + 1]:
+                out += [""] + ch
+    text = re.sub(r"\n{3,}", "\n\n", "\n".join(out))
+    return text, merged
+
+
 def normalize_day_headings(md_text, chapter):
     """Day 섹션 헤딩을 h2로 통일하고 Day 번호를 전체 여행 기준으로 바꾼다.
 
@@ -1719,9 +1885,10 @@ def cat_summary(counts):
     return "  [" + " ".join(f"{k}:{v}" for k, v in counts.items()) + "]" if counts else ""
 
 
-def fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero=0):
+def fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero=0, n_proc=0,
+                n_merge=0):
     bits = []
-    for label, n in (("VISUAL토큰 -", n_tokens), ("Day헤딩 ", n_days), ("등급 ", n_grade),
+    for label, n in (("VISUAL토큰 -", n_tokens), ("작성흔적 -", n_proc), ("장소절병합 ", n_merge), ("Day헤딩 ", n_days), ("등급 ", n_grade),
                      ("재확인 ", n_vol), ("섹션번호 -", n_num), ("원문자 -", n_circ),
                      ("중복사진 -", n_hero)):
         if n:
@@ -1931,6 +2098,7 @@ def build_chapters():
         # 토큰 제거가 먼저다 — 헤딩 텍스트가 목차·검색 인덱스·앵커의 원천이라
         # md_convert 이후에 손대면 토큰이 data.js 로 새어 나간다.
         body_md, n_tokens = strip_visual_tokens(body_md)
+        body_md, n_proc = strip_process_notes(body_md)
         n_verify = 0
         if c["kind"] == "region":
             # 검증 등록부 블록은 분류 이전에 붙인다. 그래야 카테고리로 배분된다.
@@ -1941,6 +2109,9 @@ def build_chapters():
                 n_verify = 1
             body_md, counts = regroup_regional(c["slug"], body_md, chapter_rel(c))
         # 분류는 원본 제목으로 끝난 뒤에 Day 헤딩을 정규화한다 (CAT_OVERRIDES 보존)
+        n_merge = 0
+        if c["kind"] == "region":
+            body_md, n_merge = merge_place_sections(body_md, c["slug"])
         body_md, n_days = normalize_day_headings(body_md, c)
         body_md, n_num, n_circ = strip_naming_noise(body_md)
         body_md, n_hero = drop_source_hero(body_md)
@@ -1974,7 +2145,7 @@ def build_chapters():
             build_split_chapter(c, body_md, map_links)
             write_legacy_redirect(c)
             print(f'  {c["name"]}: {Path(c["path"]).name} → chapters/{c["name"]}/'
-                  f'{cat_summary(counts)}{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero)}')
+                  f'{cat_summary(counts)}{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero, n_proc, n_merge)}')
             continue
         collect_search(c, flat)
 
@@ -2016,7 +2187,7 @@ def build_chapters():
         write_legacy_redirect(c)
         print(f'  {c["name"]}: {Path(c["path"]).name} → {chapter_url(c)}'
               f'{cat_summary(counts if c["kind"] == "region" else {})}'
-              f'{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero)}')
+              f'{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero, n_proc, n_merge)}')
 
 
 # ---------------------------------------------------------------- daily cards
