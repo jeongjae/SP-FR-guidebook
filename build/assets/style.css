@@ -222,6 +222,74 @@ img { max-width: 100%; height: auto; }
   }
 }
 
+/* ================= 아이콘 =================
+   선 데이터는 build/icons.py 에 있고 마스크 변수(--ic)만 CSS 로 구워진다.
+   색은 currentColor 를 그대로 받는다 — 아이콘이 팔레트를 새로 만들지 않는다.
+   유니코드 도형(◉ ▤ ◇ ▧)을 쓰면 기기마다 글자꼴 커버리지가 달라 어떤 기기에선
+   두부(□)가 뜬다. 현장 도구에서 그건 못 쓰는 화면이다. */
+.ic::before {
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.19em;
+  margin-right: 0.42em;
+  background-color: currentColor;
+  -webkit-mask: var(--ic) center / contain no-repeat;
+  mask: var(--ic) center / contain no-repeat;
+}
+/* 글자 없이 아이콘만 있는 자리 — 탭·버튼·목록 앞머리 */
+.ic-only::before { margin-right: 0; }
+
+/* 헤딩 앞 아이콘은 글자보다 조금 작고 흐리다. 제목을 읽는 데 방해되면 안 된다. */
+h1.ic::before, h2.ic::before, h3.ic::before {
+  width: 0.86em;
+  height: 0.86em;
+  vertical-align: 0.02em;
+  opacity: 0.72;
+}
+
+/* ================= 장소 사진 · 참고 링크 =================
+   사진은 온라인일 때만 온다. 오프라인이면 자리째 접힌다 — 빈 액자를 남기면
+   '사진이 있는데 안 뜬다' 로 읽힌다. */
+.pl-shot {
+  margin: var(--s3) 0 var(--s4);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  background: var(--surface-sunk);
+}
+.pl-shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.pl-shot figcaption {
+  padding: var(--s2) var(--s3);
+  background: var(--surface);
+  font-size: var(--t-cap1);
+}
+.pl-shot .pl-credit { color: var(--muted); text-decoration: none; }
+.pl-shot .pl-credit:hover { text-decoration: underline; }
+
+.refs { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s2) 0 var(--s3); }
+.refs .ref {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 var(--s3);
+  border: 1px solid var(--border);
+  border-radius: var(--r-chip);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: var(--t-subhead);
+  font-weight: 600;
+  text-decoration: none;
+}
+.refs .ref:hover { background: var(--accent-soft); }
+.refs .ref::before { opacity: 0.8; }
+
 /* ================= 상단바 ================= */
 .topbar {
   position: sticky;

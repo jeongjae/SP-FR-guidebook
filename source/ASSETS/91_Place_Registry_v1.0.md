@@ -13,129 +13,129 @@
 
 ## barcelona (04)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `barcelona-sants` | Barcelona Sants | node | — | Barcelona Sants | — | — |
-| `barri-gotic` | Barri Gòtic | spot | 필수 | Gòtic | chapters/barcelona/places.html | Barri Gòtic |
-| `biblioteca-de-catalunya` | Biblioteca de Catalunya | spot | 우선 추천 | Biblioteca de Catalunya | chapters/barcelona/places.html | Biblioteca de Catalunya |
-| `cau-ferrat` | Cau Ferrat | spot | 필수 | — | chapters/barcelona/places.html | Cau Ferrat |
-| `macba` | MACBA | spot | 선택 | MACBA | chapters/barcelona/places.html | MACBA |
-| `palau-de-maricel` | Palau de Maricel | spot | 우선 추천 | — | chapters/barcelona/places.html | Palau de Maricel |
-| `sagrada-familia` | Sagrada Família | spot | 필수 | Sagrada Família | chapters/barcelona/places.html | Sagrada Família |
-| `sant-pau-recinte-modernista` | Sant Pau Recinte Modernista | spot | 필수 | Sant Pau | chapters/barcelona/places.html | Sant Pau Recinte Modernista |
-| `sitges` | Sitges | spot | 선택* | Sitges | — | — |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `barcelona-sants` | Barcelona Sants | node | — | Barcelona Sants | — | — | — |
+| `barri-gotic` | Barri Gòtic | spot | 필수 | Gòtic | chapters/barcelona/places.html | Barri Gòtic | Gothic Quarter, Barcelona |
+| `biblioteca-de-catalunya` | Biblioteca de Catalunya | spot | 우선 추천 | Biblioteca de Catalunya | chapters/barcelona/places.html | Biblioteca de Catalunya | Biblioteca de Catalunya |
+| `cau-ferrat` | Cau Ferrat | spot | 필수 | — | chapters/barcelona/places.html | Cau Ferrat | — |
+| `macba` | MACBA | spot | 선택 | MACBA | chapters/barcelona/places.html | MACBA | Museu d'Art Contemporani de Barcelona |
+| `palau-de-maricel` | Palau de Maricel | spot | 우선 추천 | — | chapters/barcelona/places.html | Palau de Maricel | — |
+| `sagrada-familia` | Sagrada Família | spot | 필수 | Sagrada Família | chapters/barcelona/places.html | Sagrada Família | Sagrada Família |
+| `sant-pau-recinte-modernista` | Sant Pau Recinte Modernista | spot | 필수 | Sant Pau | chapters/barcelona/places.html | Sant Pau Recinte Modernista | Hospital de Sant Pau |
+| `sitges` | Sitges | spot | 선택* | Sitges | — | — | Sitges |
 
 ## girona (05)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수* | Calella de Palafrugell | — | — |
-| `collioure` | Collioure | spot | 필수* | Collioure | — | — |
-| `girona-cathedral` | Girona Cathedral | spot | 필수* | Girona Cathedral | — | — |
-| `onyar` | Onyar 강변 | spot | 필수* | Onyar Houses | — | — |
-| `pals` | Pals | spot | 우선 추천* | Pals | — | — |
-| `peralada` | Peralada | spot | 우선 추천* | Peralada | — | — |
-| `peratallada` | Peratallada | spot | 필수* | Peratallada | — | — |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수* | Calella de Palafrugell | — | — | Calella de Palafrugell |
+| `collioure` | Collioure | spot | 필수* | Collioure | — | — | Collioure |
+| `girona-cathedral` | Girona Cathedral | spot | 필수* | Girona Cathedral | — | — | Girona Cathedral |
+| `onyar` | Onyar 강변 | spot | 필수* | Onyar Houses | — | — | Onyar |
+| `pals` | Pals | spot | 우선 추천* | Pals | — | — | Pals |
+| `peralada` | Peralada | spot | 우선 추천* | Peralada | — | — | Peralada |
+| `peratallada` | Peratallada | spot | 필수* | Peratallada | — | — | Peratallada |
 
 ## nice (06)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `cannes` | Cannes | spot | 우선 추천* | Cannes | — | — |
-| `colline-du-chateau` | Colline du Château | spot | 필수* | Castle Hill | — | — |
-| `colline-du-chateau-2` | Colline du Château (성채 언덕) | spot | 필수 | — | chapters/nice/places.html | Colline du Château (성채 언덕) |
-| `cours-saleya` | Cours Saleya | spot | 필수 | Cours Saleya | chapters/nice/places.html | Cours Saleya |
-| `le-rocher` | Le Rocher — 모나코 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Rocher — 모나코 구시가지 |
-| `le-suquet` | Le Suquet — 칸 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Suquet — 칸 구시가지 |
-| `marche-forville` | Marché Forville | spot | 필수 | — | chapters/nice/places.html | Marché Forville |
-| `marche-de-la-liberation` | Marché de la Libération | spot | 우선 추천 | Libération Market | chapters/nice/places.html | Marché de la Libération |
-| `monaco` | Monaco | spot | 우선 추천* | Monaco | — | — |
-| `nce-t2` | NCE T2 | node | — | NCE T2 | — | — |
-| `nice-ville` | Nice-Ville | node | — | Nice-Ville | — | — |
-| `promenade-des-anglais` | Promenade des Anglais | spot | 필수 | — | chapters/nice/places.html | Promenade des Anglais |
-| `vieux-nice` | Vieux Nice — 구시가지 | spot | 필수 | — | chapters/nice/places.html | Vieux Nice — 구시가지 |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `cannes` | Cannes | spot | 우선 추천* | Cannes | — | — | Cannes |
+| `colline-du-chateau` | Colline du Château | spot | 필수* | Castle Hill | — | — | Castle Hill, Nice |
+| `colline-du-chateau-2` | Colline du Château (성채 언덕) | spot | 필수 | — | chapters/nice/places.html | Colline du Château (성채 언덕) | — |
+| `cours-saleya` | Cours Saleya | spot | 필수 | Cours Saleya | chapters/nice/places.html | Cours Saleya | Cours Saleya |
+| `le-rocher` | Le Rocher — 모나코 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Rocher — 모나코 구시가지 | — |
+| `le-suquet` | Le Suquet — 칸 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Suquet — 칸 구시가지 | — |
+| `marche-forville` | Marché Forville | spot | 필수 | — | chapters/nice/places.html | Marché Forville | — |
+| `marche-de-la-liberation` | Marché de la Libération | spot | 우선 추천 | Libération Market | chapters/nice/places.html | Marché de la Libération | — |
+| `monaco` | Monaco | spot | 우선 추천* | Monaco | — | — | Monaco |
+| `nce-t2` | NCE T2 | node | — | NCE T2 | — | — | — |
+| `nice-ville` | Nice-Ville | node | — | Nice-Ville | — | — | — |
+| `promenade-des-anglais` | Promenade des Anglais | spot | 필수 | — | chapters/nice/places.html | Promenade des Anglais | — |
+| `vieux-nice` | Vieux Nice — 구시가지 | spot | 필수 | — | chapters/nice/places.html | Vieux Nice — 구시가지 | — |
 
 ## aix (07)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `atelier-des-lauves` | Atelier des Lauves | spot | 필수 | Atelier Cézanne | chapters/aix/places.html | Atelier des Lauves |
-| `bastide-du-jas-de-bouffan` | Bastide du Jas de Bouffan | spot | 우선 추천 | — | chapters/aix/places.html | Bastide du Jas de Bouffan — 선택 |
-| `calanques` | Calanques | spot | 필수 | — | chapters/aix/places.html | Calanques |
-| `carrieres-de-bibemus` | Carrières de Bibémus | spot | 대체 | — | chapters/aix/places.html | Carrières de Bibémus |
-| `cassis` | Cassis 항구 | spot | 필수 | Cassis | chapters/aix/places.html | Cassis 항구 |
-| `cours-mirabeau` | Cours Mirabeau | spot | 필수 | Cours Mirabeau | chapters/aix/places.html | Cours Mirabeau |
-| `grasse` | Grasse | spot | 선택 | — | chapters/aix/places.html | Grasse |
-| `lourmarin` | Lourmarin | spot | 우선 추천 | Lourmarin | chapters/aix/places.html | Lourmarin |
-| `montagne-sainte-victoire-terrain-des-peintres` | Montagne Sainte-Victoire · Terrain des Peintres | spot | 우선 추천 | — | chapters/aix/places.html | Montagne Sainte-Victoire · Terrain des Peintres |
-| `musee-granet` | Musée Granet | spot | 우선 추천 | Musée Granet | chapters/aix/places.html | Musée Granet |
-| `rotonde` | Rotonde | spot | 미정 | Rotonde | — | — |
-| `saint-paul-de-vence` | Saint-Paul-de-Vence | spot | 우선 추천 | — | chapters/aix/places.html | Saint-Paul-de-Vence |
-| `place-richelme-place-des-precheurs` | 시장 — Place Richelme · Place des Prêcheurs | spot | 필수 | — | chapters/aix/places.html | 시장 — Place Richelme · Place des Prêcheurs |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `atelier-des-lauves` | Atelier des Lauves | spot | 필수 | Atelier Cézanne | chapters/aix/places.html | Atelier des Lauves | Atelier de Cézanne |
+| `bastide-du-jas-de-bouffan` | Bastide du Jas de Bouffan | spot | 우선 추천 | — | chapters/aix/places.html | Bastide du Jas de Bouffan — 선택 | — |
+| `calanques` | Calanques | spot | 필수 | — | chapters/aix/places.html | Calanques | — |
+| `carrieres-de-bibemus` | Carrières de Bibémus | spot | 대체 | — | chapters/aix/places.html | Carrières de Bibémus | — |
+| `cassis` | Cassis 항구 | spot | 필수 | Cassis | chapters/aix/places.html | Cassis 항구 | Cassis |
+| `cours-mirabeau` | Cours Mirabeau | spot | 필수 | Cours Mirabeau | chapters/aix/places.html | Cours Mirabeau | Cours Mirabeau |
+| `grasse` | Grasse | spot | 선택 | — | chapters/aix/places.html | Grasse | — |
+| `lourmarin` | Lourmarin | spot | 우선 추천 | Lourmarin | chapters/aix/places.html | Lourmarin | Lourmarin |
+| `montagne-sainte-victoire-terrain-des-peintres` | Montagne Sainte-Victoire · Terrain des Peintres | spot | 우선 추천 | — | chapters/aix/places.html | Montagne Sainte-Victoire · Terrain des Peintres | — |
+| `musee-granet` | Musée Granet | spot | 우선 추천 | Musée Granet | chapters/aix/places.html | Musée Granet | Musée Granet |
+| `rotonde` | Rotonde | spot | 미정 | Rotonde | — | — | Fontaine de la Rotonde |
+| `saint-paul-de-vence` | Saint-Paul-de-Vence | spot | 우선 추천 | — | chapters/aix/places.html | Saint-Paul-de-Vence | — |
+| `place-richelme-place-des-precheurs` | 시장 — Place Richelme · Place des Prêcheurs | spot | 필수 | — | chapters/aix/places.html | 시장 — Place Richelme · Place des Prêcheurs | — |
 
 ## luberon (08)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `abbaye-de-senanque` | Abbaye de Sénanque | spot | 우선 추천 | — | chapters/luberon/places.html | Abbaye de Sénanque |
-| `bonnieux` | Bonnieux | spot | 대체 | — | chapters/luberon/places.html | Bonnieux — 대체안 |
-| `coustellet` | Coustellet 생산자 시장 | spot | 필수 | Coustellet | chapters/luberon/places.html | Coustellet 생산자 시장 |
-| `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes |
-| `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult |
-| `lourmarin-2` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin |
-| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 우선 추천* | L’Isle-sur-la-Sorgue | — | — |
-| `menerbes` | Ménerbes | spot | 우선 추천 | Ménerbes | chapters/luberon/places.html | Ménerbes — A안 |
-| `oppede-le-vieux` | Oppède-le-Vieux | spot | 대체 | — | chapters/luberon/places.html | Oppède-le-Vieux — B안 |
-| `roussillon-sentier-des-ocres` | Roussillon · Sentier des Ocres | spot | 필수 | Roussillon | chapters/luberon/places.html | Roussillon · Sentier des Ocres |
-| `village-des-bories` | Village des Bories | spot | 우선 추천 | Village des Bories | chapters/luberon/places.html | Village des Bories |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `abbaye-de-senanque` | Abbaye de Sénanque | spot | 우선 추천 | — | chapters/luberon/places.html | Abbaye de Sénanque | — |
+| `bonnieux` | Bonnieux | spot | 대체 | — | chapters/luberon/places.html | Bonnieux — 대체안 | — |
+| `coustellet` | Coustellet 생산자 시장 | spot | 필수 | Coustellet | chapters/luberon/places.html | Coustellet 생산자 시장 | — |
+| `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes | Gordes |
+| `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult | Goult |
+| `lourmarin-2` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
+| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 우선 추천* | L’Isle-sur-la-Sorgue | — | — | L'Isle-sur-la-Sorgue |
+| `menerbes` | Ménerbes | spot | 우선 추천 | Ménerbes | chapters/luberon/places.html | Ménerbes — A안 | Ménerbes |
+| `oppede-le-vieux` | Oppède-le-Vieux | spot | 대체 | — | chapters/luberon/places.html | Oppède-le-Vieux — B안 | — |
+| `roussillon-sentier-des-ocres` | Roussillon · Sentier des Ocres | spot | 필수 | Roussillon | chapters/luberon/places.html | Roussillon · Sentier des Ocres | Roussillon, Vaucluse |
+| `village-des-bories` | Village des Bories | spot | 우선 추천 | Village des Bories | chapters/luberon/places.html | Village des Bories | Village des Bories |
 
 ## avignon (09)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `carrieres-des-lumieres` | Carrières des Lumières | spot | 우선 추천 | — | chapters/avignon/places.html | Carrières des Lumières |
-| `glanum` | Glanum | spot | 선택 | — | chapters/avignon/places.html | Glanum |
-| `les-baux-de-provence` | Les Baux-de-Provence | spot | 필수 | Les Baux | chapters/avignon/places.html | Les Baux-de-Provence |
-| `les-halles` | Les Halles | spot | 필수 | Les Halles | chapters/avignon/places.html | Les Halles |
-| `palais-des-papes` | Palais des Papes | spot | 필수 | Palais des Papes | chapters/avignon/places.html | Palais des Papes |
-| `pont-saint-benezet` | Pont Saint-Bénézet | spot | 필수 | Pont Saint-Bénézet | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet |
-| `pont-du-gard` | Pont du Gard | spot | 필수 | Pont du Gard | chapters/avignon/places.html | Pont du Gard |
-| `rocher-des-doms` | Rocher des Doms | spot | 필수 | — | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet |
-| `saint-paul-de-mausole` | Saint-Paul-de-Mausole | spot | 필수 | — | chapters/avignon/places.html | Saint-Paul-de-Mausole |
-| `saint-remy-de-provence` | Saint-Rémy-de-Provence | spot | 필수 | Saint-Rémy | chapters/avignon/places.html | Saint-Rémy-de-Provence |
-| `uzes` | Uzès 토요시장 | spot | 필수 | Uzès | chapters/avignon/places.html | Uzès 토요시장 |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `carrieres-des-lumieres` | Carrières des Lumières | spot | 우선 추천 | — | chapters/avignon/places.html | Carrières des Lumières | — |
+| `glanum` | Glanum | spot | 선택 | — | chapters/avignon/places.html | Glanum | — |
+| `les-baux-de-provence` | Les Baux-de-Provence | spot | 필수 | Les Baux | chapters/avignon/places.html | Les Baux-de-Provence | Les Baux-de-Provence |
+| `les-halles` | Les Halles | spot | 필수 | Les Halles | chapters/avignon/places.html | Les Halles | Les Halles d'Avignon |
+| `palais-des-papes` | Palais des Papes | spot | 필수 | Palais des Papes | chapters/avignon/places.html | Palais des Papes | Palais des Papes |
+| `pont-saint-benezet` | Pont Saint-Bénézet | spot | 필수 | Pont Saint-Bénézet | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet | Pont Saint-Bénézet |
+| `pont-du-gard` | Pont du Gard | spot | 필수 | Pont du Gard | chapters/avignon/places.html | Pont du Gard | Pont du Gard |
+| `rocher-des-doms` | Rocher des Doms | spot | 필수 | — | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet | — |
+| `saint-paul-de-mausole` | Saint-Paul-de-Mausole | spot | 필수 | — | chapters/avignon/places.html | Saint-Paul-de-Mausole | — |
+| `saint-remy-de-provence` | Saint-Rémy-de-Provence | spot | 필수 | Saint-Rémy | chapters/avignon/places.html | Saint-Rémy-de-Provence | Saint-Rémy-de-Provence |
+| `uzes` | Uzès 토요시장 | spot | 필수 | Uzès | chapters/avignon/places.html | Uzès 토요시장 | Uzès |
 
 ## lyon (10)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `annecy` | Annecy 구시가지 | spot | 필수 | Annecy | chapters/lyon/places.html | Annecy 구시가지 |
-| `bellecour` | Bellecour | spot | 미정 | Bellecour | — | — |
-| `croix-rousse` | Croix-Rousse | spot | 필수 | Croix-Rousse | chapters/lyon/places.html | Croix-Rousse |
-| `fourviere` | Fourvière | spot | 필수 | Fourvière | chapters/lyon/places.html | Fourvière |
-| `halles-de-lyon-paul-bocuse` | Halles de Lyon Paul Bocuse | spot | 필수 | Halles Paul Bocuse | chapters/lyon/places.html | Halles de Lyon Paul Bocuse |
-| `parc-de-la-tete-d-or` | Parc de la Tête d'Or | spot | 우선 추천 | Parc Tête d’Or | chapters/lyon/places.html | Parc de la Tête d'Or |
-| `vieux-lyon` | Vieux Lyon · 트라불 | spot | 필수 | Vieux Lyon | chapters/lyon/places.html | Vieux Lyon · 트라불 |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `annecy` | Annecy 구시가지 | spot | 필수 | Annecy | chapters/lyon/places.html | Annecy 구시가지 | Annecy |
+| `bellecour` | Bellecour | spot | 미정 | Bellecour | — | — | Place Bellecour |
+| `croix-rousse` | Croix-Rousse | spot | 필수 | Croix-Rousse | chapters/lyon/places.html | Croix-Rousse | La Croix-Rousse |
+| `fourviere` | Fourvière | spot | 필수 | Fourvière | chapters/lyon/places.html | Fourvière | Basilica of Notre-Dame de Fourvière |
+| `halles-de-lyon-paul-bocuse` | Halles de Lyon Paul Bocuse | spot | 필수 | Halles Paul Bocuse | chapters/lyon/places.html | Halles de Lyon Paul Bocuse | Les Halles de Lyon-Paul Bocuse |
+| `parc-de-la-tete-d-or` | Parc de la Tête d'Or | spot | 우선 추천 | Parc Tête d’Or | chapters/lyon/places.html | Parc de la Tête d'Or | Parc de la Tête d'or |
+| `vieux-lyon` | Vieux Lyon · 트라불 | spot | 필수 | Vieux Lyon | chapters/lyon/places.html | Vieux Lyon · 트라불 | Vieux Lyon |
 
 ## paris (11)
 
-| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 |
-|---|---|---|---|---|---|---|
-| `bnf-richelieu` | BnF Richelieu | spot | 우선 추천 | BnF Richelieu | chapters/paris/places.html | BnF Richelieu |
-| `bourse-de-commerce-pinault-collection` | Bourse de Commerce — Pinault Collection | spot | 선택 | Bourse de Commerce | chapters/paris/places.html | Bourse de Commerce — Pinault Collection |
-| `centre-pompidou` | Centre Pompidou | spot | 비추천 | — | chapters/paris/places.html | Centre Pompidou |
-| `giverny` | Giverny | spot | 우선 추천 | Giverny | chapters/paris/places.html | Giverny — Day 41 A안 |
-| `grand-palais` | Grand Palais | spot | 필수 | Grand Palais | chapters/paris/places.html | Cezanne et nous — Grand Palais |
-| `latin-quarter` | Latin Quarter | spot | 필수 | — | chapters/paris/places.html | Latin Quarter |
-| `le-marais` | Le Marais | spot | 필수 | — | chapters/paris/places.html | Le Marais |
-| `montmartre-south-pigalle` | Montmartre · South Pigalle | spot | 필수 | Montmartre | chapters/paris/places.html | Montmartre · South Pigalle |
-| `montorgueil` | Montorgueil | spot | 우선 추천 | — | chapters/paris/places.html | Montorgueil |
-| `musee-marmottan-monet` | Musée Marmottan Monet | spot | 대체 | — | chapters/paris/places.html | Musée Marmottan Monet |
-| `musee-d-orsay` | Musée d'Orsay | spot | 필수 | Orsay | chapters/paris/places.html | Mary Cassatt. L'indépendante — Musée d'Orsay |
-| `musee-de-l-orangerie` | Musée de l'Orangerie | spot | 우선 추천 | — | chapters/paris/places.html | Musée de l'Orangerie |
-| `musee-du-louvre` | Musée du Louvre | spot | 필수 | Louvre | chapters/paris/places.html | Musée du Louvre |
-| `notre-dame-de-paris` | Notre-Dame de Paris | spot | 필수 | Notre-Dame | chapters/paris/places.html | Notre-Dame de Paris |
-| `versailles` | Versailles | spot | 우선 추천 | Versailles | chapters/paris/places.html | Versailles — Day 36 A안 |
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `bnf-richelieu` | BnF Richelieu | spot | 우선 추천 | BnF Richelieu | chapters/paris/places.html | BnF Richelieu | Bibliothèque nationale de France |
+| `bourse-de-commerce-pinault-collection` | Bourse de Commerce — Pinault Collection | spot | 선택 | Bourse de Commerce | chapters/paris/places.html | Bourse de Commerce — Pinault Collection | Bourse de Commerce |
+| `centre-pompidou` | Centre Pompidou | spot | 비추천 | — | chapters/paris/places.html | Centre Pompidou | — |
+| `giverny` | Giverny | spot | 우선 추천 | Giverny | chapters/paris/places.html | Giverny — Day 41 A안 | Giverny |
+| `grand-palais` | Grand Palais | spot | 필수 | Grand Palais | chapters/paris/places.html | Cezanne et nous — Grand Palais | Grand Palais |
+| `latin-quarter` | Latin Quarter | spot | 필수 | — | chapters/paris/places.html | Latin Quarter | — |
+| `le-marais` | Le Marais | spot | 필수 | — | chapters/paris/places.html | Le Marais | — |
+| `montmartre-south-pigalle` | Montmartre · South Pigalle | spot | 필수 | Montmartre | chapters/paris/places.html | Montmartre · South Pigalle | Montmartre |
+| `montorgueil` | Montorgueil | spot | 우선 추천 | — | chapters/paris/places.html | Montorgueil | — |
+| `musee-marmottan-monet` | Musée Marmottan Monet | spot | 대체 | — | chapters/paris/places.html | Musée Marmottan Monet | — |
+| `musee-d-orsay` | Musée d'Orsay | spot | 필수 | Orsay | chapters/paris/places.html | Mary Cassatt. L'indépendante — Musée d'Orsay | Musée d'Orsay |
+| `musee-de-l-orangerie` | Musée de l'Orangerie | spot | 우선 추천 | — | chapters/paris/places.html | Musée de l'Orangerie | — |
+| `musee-du-louvre` | Musée du Louvre | spot | 필수 | Louvre | chapters/paris/places.html | Musée du Louvre | Louvre |
+| `notre-dame-de-paris` | Notre-Dame de Paris | spot | 필수 | Notre-Dame | chapters/paris/places.html | Notre-Dame de Paris | Notre-Dame de Paris |
+| `versailles` | Versailles | spot | 우선 추천 | Versailles | chapters/paris/places.html | Versailles — Day 36 A안 | Palace of Versailles |
 
 ---
 
