@@ -49,6 +49,16 @@
     var u = (G.today || {})[parisToday()];
     return rel + "/" + (u || "chapters/03.html");
   }
+  /* 홈 히어로의 오늘 날짜 — 여행 기간 밖이면 그 사실을 그대로 보인다 */
+  var todayEl = $("#today-date");
+  if (todayEl) {
+    var G = window.GUIDE || {}, d = parisToday();
+    todayEl.textContent = d;
+    if (!(G.today || {})[d]) {
+      todayEl.textContent = d + " · 여행 기간 밖";
+      todayEl.classList.add("today-out");
+    }
+  }
   var todayLinks = document.querySelectorAll(".nav-today");
   for (var i = 0; i < todayLinks.length; i++) {
     todayLinks[i].addEventListener("click", function (e) {
