@@ -16,12 +16,50 @@
      본문 크기       17px 유지하되 480px 이하에서 키운다.
    ============================================================ */
 
+/* ================= 서체 =================
+   나눔고딕 (NHN · Sandoll) — SIL Open Font License 1.1.
+   CDN 을 쓰지 않는다. woff2 를 저장소에 번들해 오프라인에서도 뜬다.
+   Leaflet 과 같은 방식이다. 라이선스 전문은 assets/vendor/nanum/LICENSE.txt.
+   font-display: swap — 폰트가 늦어도 시스템 서체로 먼저 읽힌다. */
+@font-face {
+  font-family: "NanumGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("vendor/nanum/nanum-gothic-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2122, U+2191, U+2193, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "NanumGothic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("vendor/nanum/nanum-gothic-korean-400-normal.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+@font-face {
+  font-family: "NanumGothic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("vendor/nanum/nanum-gothic-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2122, U+2191, U+2193, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "NanumGothic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("vendor/nanum/nanum-gothic-korean-700-normal.woff2") format("woff2");
+  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+
 :root {
   /* ---- 바탕 (냉색 미네랄 화이트) ---- */
-  --bg:            #EFF2F1;
+  --bg:            #EFF1F6;
   --surface:       #FFFFFF;
-  --surface-sunk:  #E4E9E8;
-  --quote-bg:      #E4E9E8;
+  --surface-sunk:  #E3E7F0;
+  --quote-bg:      #E3E7F0;
 
   /* ---- 텍스트 ---- */
   --text:          #0F1A1E;   /* 15.4:1 on --bg */
@@ -30,30 +68,37 @@
                                  HIG tertiaryLabel 보다 훨씬 진하다. 의도한 것이다. */
 
   /* ---- 크롬 ---- */
-  --accent:        #153A4E;
-  --accent-ink:    #F2F6F6;
-  --accent-soft:   #DCE5E6;
-  --border:        #C6D0CE;
+  /* 스페인·프랑스 국기에서 뽑았다. 파랑이 크롬, 빨강이 위험, 금색이 표시다.
+     노랑(#F1BF00)은 흰 바탕에 1.7:1 이라 글자색으로 쓰지 않는다 — 바탕·표시 전용. */
+  --accent:        #000091;   /* FR 파랑 — 14.9:1 */
+  --accent-ink:    #FFFFFF;
+  --accent-soft:   #DFE3F2;
+  --border:        #C8CEDD;
+  --flag-es-red:   #AA151B;
+  --flag-es-gold:  #F1BF00;
+  --flag-fr-blue:  #000091;
 
   /* ---- 신호색 (의미 전용, 장식 금지) ---- */
-  --sig-critical:  #9E1B32;   /* P0 연결·최고 리스크 */
-  --sig-caution:   #7A5B00;   /* 미확정·재확인 필요 */
-  --sig-caution-ink: #5C4400; /* 본문 위 글자용 — 7:1 확보 */
+  --sig-critical:  #AA151B;   /* P0 연결·최고 리스크 — ES 국기 빨강. 채움용 (흰글자 7.4:1) */
+  --sig-critical-ink: #921118; /* 글자용 — 어느 표면에서도 7:1 이상 */
+  --sig-caution:   #7D5400;   /* 미확정·재확인 — ES 금색을 글자용으로 낮춘 값 */
+  --sig-caution-ink: #5E4000; /* 본문 위 글자용 — 7:1 확보 */
   --sig-steady:    #1F5E45;   /* 확정·완료 */
-  --sig-rest:      #33518C;   /* 회복일·완충 — 흰 글자로 7.8:1 */
+  --sig-rest:      #2C4A9A;   /* 회복일·완충 — FR 파랑 계열, 흰 글자 8.6:1 */
 
   /* ---- 지역 액센트 8종 ---- */
-  --acc-bcn: #8C3A2E;
-  --acc-gir: #A8521F;
-  --acc-nce: #0E6E86;
-  --acc-aix: #4F6129;
-  --acc-lub: #92650F;
-  --acc-avn: #63447A;
-  --acc-lyo: #7A2E45;
-  --acc-par: #2F4A6B;
+  /* 국경이 색으로 보이게 한다. Day 7 에 스페인에서 프랑스로 넘어간다. */
+  --acc-bcn: #AA151B;   /* 스페인 — 국기 빨강 */
+  --acc-gir: #7D5400;   /* 스페인 — 국기 금색 (글자용으로 낮춘 값) */
+  --acc-nce: #12506F;   /* 이하 프랑스 — 파랑 계열 */
+  --acc-aix: #1B3184;
+  --acc-lub: #2E3E86;
+  --acc-avn: #46318A;
+  --acc-lyo: #123A6E;
+  --acc-par: #000091;   /* 종착지 — 국기 원색 */
 
   /* ---- 재질 (HIG Materials) — 바는 반투명, 뒤가 비친다 ---- */
-  --bar-bg:        rgba(247, 249, 249, 0.82);
+  --bar-bg:        rgba(246, 247, 252, 0.82);
   --bar-blur:      saturate(180%) blur(20px);
   --separator:     rgba(15, 26, 30, 0.22);   /* 헤어라인 */
 
@@ -96,20 +141,21 @@
     --text-2:       #B7C5C8;
     --muted:        #A0B0B5;   /* 7.4:1 on dark surface */
 
-    --accent:       #9BCADE;   /* accent-soft 위 7.8:1 */
-    --accent-ink:   #08131A;
-    --accent-soft:  #1E3038;
-    --border:       #2C3F45;
+    --accent:       #A9BEF5;   /* FR 파랑 계열을 다크에서 밝힌 값 */
+    --accent-ink:   #08101A;
+    --accent-soft:  #1E2540;
+    --border:       #333B52;
 
-    --sig-critical: #F79EAC;   /* 다크 표면 위 7.5:1 */
+    --sig-critical: #F79AA2;   /* ES 빨강을 다크에서 밝힌 값 */
+    --sig-critical-ink: #F79AA2;
     --sig-caution:  #D3A63A;
     --sig-caution-ink: #EFC96A;
     --sig-steady:   #74C7A6;
-    --sig-rest:     #94AFE2;
+    --sig-rest:     #9FB4EE;
 
-    --acc-bcn: #D97F6E; --acc-gir: #E0955C; --acc-nce: #5FB7CE;
-    --acc-aix: #9DB56A; --acc-lub: #D9B05A; --acc-avn: #B18FC7;
-    --acc-lyo: #D1728C; --acc-par: #85A8D1;
+    --acc-bcn: #EE8B90; --acc-gir: #E0B44E; --acc-nce: #79BADB;
+    --acc-aix: #9FB0EE; --acc-lub: #A8B4EF; --acc-avn: #B8A6F0;
+    --acc-lyo: #8FB0E4; --acc-par: #A9BEF5;
 
     --bar-bg:    rgba(16, 26, 29, 0.82);
     --separator: rgba(227, 235, 234, 0.24);
@@ -129,9 +175,8 @@ body {
   color: var(--text);
   /* HIG 시스템 서체. 라틴은 SF, 한글은 Apple SD Gothic Neo 가 먼저 잡힌다.
      웹폰트를 받지 않는다 — 오프라인 규칙. */
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic",
-    "Segoe UI", system-ui, sans-serif;
+  font-family: "NanumGothic", -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
   line-height: 1.65;
   font-size: var(--t-body);
   word-break: keep-all;
@@ -391,37 +436,19 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.14em;
   color: var(--muted);
 }
-.dw-nav a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: var(--tap);
-  padding: 7px 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.94rem;
-  line-height: 1.45;
-  border-left: 3px solid transparent;
-}
-.dw-nav a:hover { background: var(--accent-soft); }
-.dw-nav a span {
-  display: block;
-  font-size: 0.78rem;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-}
-.dw-home { font-weight: 700; color: var(--accent) !important; }
+/* 드로어 링크는 .list-row 컴포넌트를 쓴다 (본문·홈과 같은 것) */
 
-/* 드로어 지역 링크에 지역 색 리본 */
-.dw-nav a[href*="/04."], .dw-nav a[href$="04.html"] { border-left-color: var(--acc-bcn); }
-.dw-nav a[href$="05.html"] { border-left-color: var(--acc-gir); }
-.dw-nav a[href$="06.html"] { border-left-color: var(--acc-nce); }
-.dw-nav a[href$="07.html"] { border-left-color: var(--acc-aix); }
-.dw-nav a[href$="08.html"] { border-left-color: var(--acc-lub); }
-.dw-nav a[href$="09.html"] { border-left-color: var(--acc-avn); }
-.dw-nav a[href$="10.html"] { border-left-color: var(--acc-lyo); }
-.dw-nav a[href$="11.html"] { border-left-color: var(--acc-par); }
+/* 드로어·목록의 지역 링크에 지역 색 리본 — 국경이 색으로 보인다 */
+.list-row { border-left: 3px solid transparent; }
+.list-row[href*="/barcelona/"] { border-left-color: var(--acc-bcn); }
+.list-row[href*="/girona/"] { border-left-color: var(--acc-gir); }
+.list-row[href*="/nice/"] { border-left-color: var(--acc-nce); }
+.list-row[href*="/aix/"] { border-left-color: var(--acc-aix); }
+.list-row[href*="/luberon/"] { border-left-color: var(--acc-lub); }
+.list-row[href*="/avignon/"] { border-left-color: var(--acc-avn); }
+.list-row[href*="/lyon/"] { border-left-color: var(--acc-lyo); }
+.list-row[href*="/paris/"] { border-left-color: var(--acc-par); }
+
 
 /* ================= 하단 탭바 ================= */
 .bottomnav {
@@ -903,7 +930,7 @@ section.places .note { margin: 2px 0 10px; }
 /* 추천등급 배지 5종 — 모양으로 구분 */
 .grade { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.02em; }
 .grade::before { margin-right: 5px; font-size: 0.9em; }
-.grade-essential   { color: var(--sig-critical); }
+.grade-essential   { color: var(--sig-critical-ink); }
 .grade-essential::before   { content: "■"; }
 .grade-priority    { color: var(--accent); }
 .grade-priority::before    { content: "●"; }
@@ -1358,3 +1385,11 @@ footer {
   color: var(--muted);
   text-align: right;
 }
+
+
+/* 드로어 안의 목록 — 본문보다 촘촘하게 */
+.dw-nav .list-group { margin: var(--s2) 0 var(--s5); }
+.dw-nav .list-row { min-height: 50px; padding: 6px var(--s3); }
+.dw-nav .list-row .lr-icon { font-size: 16px; }
+.dw-nav .list-row .lr-title { font-size: var(--t-subhead); }
+.dw-nav .list-row .lr-sub { font-size: var(--t-cap1); }
