@@ -8,30 +8,18 @@
 </head>
 <body data-rel="..">
 <header class="topbar">
-  <a class="tb-back" href="../index.html"><span aria-hidden="true">‹</span>홈</a>
-  <span class="tb-title">장소</span>
+  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><b>장소</b></nav>
   <button id="search-btn" aria-label="검색 열기">⌕</button>
-  <button id="menu-btn" aria-label="전체 메뉴 열기">☰</button>
 </header>
 <nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html" class="here">전체</a><a href="barri-gotic.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="carrieres-des-lumieres.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
 <div id="overlay"></div>
-<aside id="drawer" aria-label="전체 메뉴">
-  <div class="dw-head">
-    <span>2026 유럽 여행 가이드북</span>
-    <button id="drawer-close" aria-label="닫기">✕</button>
+<aside id="search-sheet" aria-label="검색">
+  <div class="ss-head">
+    <button id="sheet-close" aria-label="닫기">✕</button>
+    <span>검색</span>
   </div>
   <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
   <div id="search-results"></div>
-  <nav class="dw-nav">
-    <h3>어디서 볼 것인가</h3>
-    <div class="list-group"><a class="list-row" href="../index.html"><span class="lr-icon" aria-hidden="true">⌂</span><span class="lr-text"><b class="lr-title">홈</b><span class="lr-sub">여정 타임라인</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../daily/index.html"><span class="lr-icon" aria-hidden="true">◉</span><span class="lr-text"><b class="lr-title">데일리</b><span class="lr-sub">43일 · 하루 한 장</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/itinerary.html"><span class="lr-icon" aria-hidden="true">▤</span><span class="lr-text"><b class="lr-title">일정</b><span class="lr-sub">전체 일정표와 이동</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../regions.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">지역</b><span class="lr-sub">8개 거점</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../topics/index.html"><span class="lr-icon" aria-hidden="true">▧</span><span class="lr-text"><b class="lr-title">주제</b><span class="lr-sub">분류 10 · 상태 3</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../places/index.html"><span class="lr-icon" aria-hidden="true">◈</span><span class="lr-text"><b class="lr-title">장소</b><span class="lr-sub">갈 곳 83</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../maps/index.html"><span class="lr-icon" aria-hidden="true">⌖</span><span class="lr-text"><b class="lr-title">지도</b><span class="lr-sub">지역별 기준점 · 오프라인 준비</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../tracker/index.html"><span class="lr-icon" aria-hidden="true">▦</span><span class="lr-text"><b class="lr-title">트래커</b><span class="lr-sub">예약 · 이동 · 숙소</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-    <h3>지역 가이드</h3>
-    <div class="list-group"><a class="list-row" href="../chapters/barcelona/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Barcelona · Sitges</b><span class="lr-sub">8/29–9/1 · 3박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/girona/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Girona · Collioure · Empordà</b><span class="lr-sub">9/1–9/4 · 3박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/nice/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Nice · Côte d’Azur</b><span class="lr-sub">9/4–9/9 · 5박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/aix/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Aix-en-Provence</b><span class="lr-sub">9/9–9/13 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/luberon/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Luberon Farmhouse</b><span class="lr-sub">9/13–9/17 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/avignon/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Avignon · Alpilles · Pont du Gard</b><span class="lr-sub">9/17–9/21 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/lyon/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Lyon · Annecy</b><span class="lr-sub">9/21–9/25 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/paris/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Paris Long Stay</b><span class="lr-sub">9/25–10/10 · 15박</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-    <h3>읽는 법</h3>
-    <div class="list-group"><a class="list-row" href="../chapters/highlights.html"><span class="lr-icon" aria-hidden="true">▤</span><span class="lr-text"><b class="lr-title">전체 여행 하이라이트</b></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/itinerary.html"><span class="lr-icon" aria-hidden="true">▤</span><span class="lr-text"><b class="lr-title">43일 Master Itinerary</b></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-    <h3>이 가이드북</h3>
-    <div class="list-group"><a class="list-row" href="../credits.html"><span class="lr-icon" aria-hidden="true">◷</span><span class="lr-text"><b class="lr-title">사진 저작자 표시</b><span class="lr-sub">CC 라이선스 · 서체 OFL</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-  </nav>
 </aside>
 <main>
 
