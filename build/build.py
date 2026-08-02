@@ -32,6 +32,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons                     # noqa: E402  — 아이콘 마스크 생성기
+import content_model             # noqa: E402  — stable-ID content graph
 from xml.etree import ElementTree
 
 try:
@@ -3911,6 +3912,20 @@ def main():
     build_topics()
     print("트래커 빌드:")
     build_tracker()
+    graph = content_model.build_graph(
+        chapters=CHAPTERS, trip_start=TRIP_START, trip_end=TRIP_END,
+        places=load_place_registry(), place_days=place_days(load_place_registry(), TIMETABLE),
+        tracker_path=TRACKER_XLSX)
+    graph_errors = content_model.validate_graph(graph)
+    if graph_errors:
+        print("콘텐츠 모델 검사 실패:")
+        for problem in graph_errors[:20]:
+            print("  " + problem)
+        sys.exit(1)
+    content_model.write_graph(graph, SITE / "assets" / "content-model.json")
+    print("콘텐츠 모델: " + " · ".join(
+        f'{key} {len(graph[key])}' for key in
+        ("regions", "days", "places", "stays", "reservations", "transports")))
     build_data_js()
     check_visual_tokens()
     check_naming()
