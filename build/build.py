@@ -843,17 +843,36 @@ def places_block(chapter, map_links, rel=".."):
 
 # ---------------------------------------------------------------- utilities
 
+# 본문 중간에 남은 frontmatter. 원고 여럿이 대표사진과 Commercial Guide Module
+# 로 시작해 정작 챕터 frontmatter 가 파일 머리가 아니다. 앞머리만 훑으면
+# 이 블록이 본문 문단으로 렌더돼 화면에 YAML 이 그대로 나온다.
+# 키를 ASCII 로 제한해 `---` 수평선 뒤의 한국어 문장과 섞이지 않게 한다.
+EMBEDDED_FM_RE = re.compile(
+    r"^---[ \t]*\n((?:[A-Za-z_][A-Za-z0-9_-]*:[^\n]*\n)+)---[ \t]*\n", re.M)
+
+
+def _read_fm(chunk, meta):
+    for line in chunk.strip().splitlines():
+        if ":" in line:
+            key, _, value = line.partition(":")
+            meta[key.strip()] = value.strip().strip('"')
+
+
 def parse_frontmatter(text):
-    """단순 YAML frontmatter를 dict로 파싱하고 본문을 돌려준다."""
+    """단순 YAML frontmatter를 dict로 파싱하고 본문을 돌려준다.
+
+    파일 머리의 블록과, 본문 중간에 남은 블록 하나를 모두 걷어낸다.
+    """
     meta = {}
     if text.startswith("---"):
         end = text.find("\n---", 3)
         if end != -1:
-            for line in text[3:end].strip().splitlines():
-                if ":" in line:
-                    key, _, value = line.partition(":")
-                    meta[key.strip()] = value.strip().strip('"')
+            _read_fm(text[3:end], meta)
             text = text[end + 4:]
+    m = EMBEDDED_FM_RE.search(text)
+    if m:
+        _read_fm(m.group(1), meta)
+        text = text[:m.start()] + text[m.end():]
     return meta, text.lstrip("\n")
 
 
@@ -1429,16 +1448,20 @@ def collect_chapter_dates(chapter, flat_tokens):
     while d <= last:
         CHAPTER_DATE_URL[d.isoformat()] = url
         d += timedelta(days=1)
+    split = chapter.get("name") in SPLIT_CHAPTERS
     for tok in flat_tokens:
         dm = DAY_RE.search(tok["name"])
         if dm:
             day_date = date(2026, int(dm.group(2)), int(dm.group(3)))
-            DAY_OVERRIDES[day_date.isoformat()] = f'{url}#{tok["id"]}'
+            DAY_OVERRIDES[day_date.isoformat()] = (
+                f'chapters/{chapter["name"]}/day-{int(dm.group(1)):02d}.html' if split
+                else f'{url}#{tok["id"]}')
 
 
-# 분할 대상 챕터. 여기 없는 챕터는 지금까지처럼 단일 페이지로 나간다.
-# 한 번에 8개를 다 바꾸지 않는다 — 파일럿이 자리를 잡은 뒤에 하나씩 옮긴다.
-SPLIT_CHAPTERS = {"girona"}
+# 분할 대상 챕터. Girona 파일럿이 자리를 잡은 뒤 8개 거점 전부로 넓혔다.
+# 원고는 여전히 챕터당 파일 하나다 — 분할은 출력 단계에서만 일어난다.
+SPLIT_CHAPTERS = {"barcelona", "girona", "nice", "aix",
+                  "luberon", "avignon", "lyon", "paris"}
 
 # 카테고리 → 주제 페이지 슬러그. 일정은 일자 페이지로 따로 나간다.
 TOPIC_SLUG = {
@@ -1492,7 +1515,7 @@ def split_day_sections(schedule_md):
 
 
 def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra="",
-                      coords=""):
+                      coords="", subnav=""):
     """분할 페이지 하나를 기존 페이지 셸로 렌더한다.
 
     별도 마크다운 변환기를 두지 않는다 — 드로어·하단탭·검색·오프라인 처리와
@@ -1507,9 +1530,32 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
                   + " › ".join(crumbs) + "</nav>")
     sub_html = f'<p class="page-sub">{html.escape(sub)}</p>' if sub else ""
     content = crumb_html + sub_html + extra + body + pager
-    return (page(title, content, rel=rel, topbar_title=title, coords=coords,
+    return (page(title, content, rel=rel, topbar_title=title, coords=coords, subnav=subnav,
                  meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'),
             flatten_tokens(toc_tokens), body)
+
+
+def split_subnav(pages, current):
+    """분할 챕터의 형제 페이지 점프 바.
+
+    단일 페이지 시절의 카테고리 앵커 내비를 페이지 기준으로 되살린 것이다.
+    이게 없으면 주제 사이를 옮길 때마다 허브를 거쳐야 한다.
+    """
+    cats, days = [], []
+    for fname, title, _sub, _md, page_cat in pages:
+        here = ' class="here"' if fname == current else ""
+        dm = re.match(r"day-(\d+)\.html$", fname)
+        if dm:
+            md = DAY_RE.search(title) or re.search(r"(\d+)월\s*(\d+)일", title)
+            label = (f"{int(md.group(2))}/{int(md.group(3))}" if md and md.lastindex == 3
+                     else f"D{int(dm.group(1))}")
+            days.append(f'<a href="{fname}"{here} title="{html.escape(title)}">{label}</a>')
+        else:
+            cats.append(f'<a href="{fname}"{here}>{html.escape(title)}</a>')
+    hub = '<a href="index.html" class="sn-hub">허브</a>'
+    cats_html = f'<div class="sn-layers">{hub}{"".join(cats)}</div>'
+    days_html = f'<div class="sn-days">{"".join(days)}</div>' if days else ""
+    return f'<nav class="subnav">{cats_html}{days_html}</nav>'
 
 
 def build_split_chapter(c, body_md, map_links):
@@ -1548,10 +1594,14 @@ def build_split_chapter(c, body_md, map_links):
             next_link = f'<a href="{nx[0]}">{html.escape(nx[1])} →</a>'
         crumbs = [f'<a href="{rel}/regions.html">지역</a>', hub_crumb,
                   f'<span>{html.escape(title)}</span>']
+        fig = ""
+        if fname == "transport.html" and c["slug"] in ("07", "08", "09"):
+            fig = visual_figure("cardays", "Provence 차량일 운영 논리", "../../assets")
         rendered, flat, page_body = render_split_page(
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
-            extra=(places_block(c, map_links, "../..") if fname == "places.html" else ""),
-            coords=split_coords(c, rel, fname, page_cat))
+            extra=fig + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
+            coords=split_coords(c, rel, fname, page_cat),
+            subnav=split_subnav(pages, fname))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
         scan_sections(c, page_body, url, fixed_cat=page_cat)
@@ -1580,12 +1630,15 @@ def build_split_chapter(c, body_md, map_links):
         related_box(c)
         + hero_figure(c["slug"], rel)
         + intro_html
+        + (visual_figure("cycles", "Paris 15박의 세 사이클", "../../assets")
+           if c["slug"] == "11" else "")
         + f'<h2>일자</h2><div class="grid">{day_cards}</div>'
         + f'<h2>주제</h2><div class="grid">{topic_cards}</div>'
         + (f'<h2>일정 한눈에</h2>{head_html}' if sched_head else "")
     )
     (out_dir / "index.html").write_text(
         page(c["title"], hub_body, rel=rel, topbar_title=c["title"],
+             coords=chapter_coords(c, rel),
              meta_line=f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박'),
         encoding="utf-8")
     SEARCH_INDEX.append({"t": c["title"], "c": "지역", "u": hub_url})
