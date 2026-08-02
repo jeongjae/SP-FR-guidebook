@@ -20,6 +20,7 @@ UI/UX 설계: docs/UIUX_Design_v1.0.md
 """
 
 import html
+import itertools
 import json
 import re
 import shutil
@@ -2650,12 +2651,18 @@ def build_daily():
         flags = day_flags(n)
         flag_html = f'<p class="day-flags">{"".join(flags)}</p>' if flags else ""
 
-        # ── 2. 감사 요약
+        # ── 2. 실행 요약. 첫 화면은 현장에서 바로 쓸 세 가지만 놓고,
+        # 삭제·대체·식사·잠금은 필요할 때 펴친다.
+        quick_summary = "".join(
+            f'<div class="dq-item dq-{k}"><dt>{AUDIT_LABELS[k]}</dt>'
+            f'<dd>{html.escape(row[k])}</dd></div>'
+            for k in ("core", "depart", "buffer"))
         summary = "".join(
             f"<div class=\"ds-item\"><dt>{AUDIT_LABELS[k]}</dt>"
             f"<dd>{html.escape(row[k])}</dd></div>"
-            for k in ("core", "depart", "buffer", "risk", "cut", "alt", "meals", "lock"))
-        audit_block = f'<h2 class="ic ic-check">오늘 확인할 것</h2><dl class="day-summary">{summary}</dl>'
+            for k in ("risk", "cut", "alt", "meals", "lock"))
+        audit_block = (f'<details class="day-details"><summary>상세 실행 확인</summary>'
+                       f'<dl class="day-summary">{summary}</dl></details>')
 
         # ── 3·4. 시간표 · 피로도 · 메모 — 그 날 원고 하나에서 전부 나온다.
         #   전에는 이 자리에 원고를 정규식으로 다시 긁은 사본이 있었고, 챕터
@@ -2706,7 +2713,8 @@ def build_daily():
                     f'<a href="../maps/{cand["map"]}"><b class="ic ic-map" aria-hidden="true"></b>{cand["region"]} 실행지도</a>')
         if n not in MAP_TRANSITION:
             map_links = map_links[:1]
-        links = [f'<a href="../{ch_url}"><b class="ic ic-list" aria-hidden="true"></b>이날의 챕터 일정</a>'] + map_links + [
+        links = [f'<a href="../{ch_url}"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a>'] + map_links
+        more_links = [
             '<a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a>',
             '<a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a>']
 
@@ -2726,25 +2734,28 @@ def build_daily():
             place_block = ""
 
         # ── 7·8. 원문 · 카드 이미지
-        card_block = f"""<figure class="daily-card"><img src="img/day-{n:02d}.png"
+        card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
+<figure class="daily-card"><img src="img/day-{n:02d}.png"
   alt="Day {n} 데일리 모바일 가이드 카드"></figure>
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
-실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>"""
+실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p></details>"""
 
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
-        p4 = ' <span class="p4-badge">Phase 4 최종</span>' if info.get("phase4") else ""
-
-        body = f"""<h1>{title}{p4}</h1>
+        body = f"""<h1>{title}</h1>
 {flag_html}
-<div class="related">{''.join(links)}</div>
-{card_block}
+<section class="day-command" aria-label="오늘 실행 요약">
+<dl class="day-quick">{quick_summary}</dl>
+<nav class="day-actions" aria-label="오늘 바로가기">{''.join(links)}</nav>
+</section>
 {tt_block}
 {fat_block}
+{place_block}
 {note_block}
 {audit_block}
-{place_block}
+<div class="related day-more">{''.join(more_links)}</div>
+{card_block}
 {pager}"""
         region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
                        if c else ("이동 중", ITINERARY_URL))
@@ -2770,10 +2781,11 @@ def build_daily():
                                    topic=("전체 주제", "topics/index.html"))),
             encoding="utf-8")
 
-        index_items.append(
-            f'<a class="daily-item" href="day-{n:02d}.html">'
+        index_items.append((c["region"] if c else "이동",
+            f'<a class="daily-item{" is-p0" if n in P0_CONNECTION else ""}" href="day-{n:02d}.html">'
             f'<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
-            f'<span class="di-region">{html.escape(row["base"])}</span></a>')
+            f'<span class="di-region">{html.escape(row["base"])}</span>'
+            f'<span class="di-core">{html.escape(row["core"])}</span></a>'))
         SEARCH_INDEX.append({"t": title, "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
         SEARCH_INDEX.append({"t": f"Day {n} 핵심 실행 — {row['core']}",
                              "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
@@ -2785,10 +2797,15 @@ def build_daily():
                         "t": f"Day {n} {cells[0]} {label}", "c": "일자별 시간표",
                         "u": f"daily/day-{n:02d}.html"})
 
-    body = ('<h1>데일리 가이드 — 43일 카드</h1>'
-            '<p class="meta">일자별 세로형 모바일 가이드 카드 (1080×1920) · '
-            'Day 12–24는 Phase 4 최종판</p>'
-            f'<div class="daily-grid">{"".join(index_items)}</div>')
+    groups = []
+    for region, items in itertools.groupby(index_items, key=lambda x: x[0]):
+        cards = "".join(x[1] for x in items)
+        groups.append(f'<section class="daily-region"><h2>{html.escape(region)}</h2>'
+                      f'<div class="daily-grid">{cards}</div></section>')
+    body = ('<h1>43일 실행 일정</h1>'
+            '<p class="meta">지역별로 날짜·거점·핵심 실행을 확인한다. '
+            '빨간 표시는 놓치면 대안이 없는 교통 연결일이다.</p>'
+            f'{"".join(groups)}')
     (out_dir / "index.html").write_text(
         page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드",
              back=crumbs_for(("데일리", None)),
@@ -3882,6 +3899,38 @@ def check_phase3_navigation_guards():
     print("Phase 3 내비게이션 가드: 5탭 · 홈 5행동 · 다음 여행일 이상 없음")
 
 
+def check_phase4_daily_guards():
+    """43일 실행 템플릿의 정보 순서와 보관 카드 접기를 잠근다."""
+    problems = []
+    for n in range(1, 44):
+        path = SITE / "daily" / f"day-{n:02d}.html"
+        text = path.read_text(encoding="utf-8")
+        required = ('class="day-command"', 'class="day-quick"',
+                    'class="day-actions"', '<h2 class="ic ic-clock">시간표</h2>',
+                    '<details class="day-details day-card-archive">')
+        for token in required:
+            if token not in text:
+                problems.append(f"Day {n}: {token} 누락")
+        order = [text.find(token) for token in required]
+        if any(x < 0 for x in order) or order != sorted(order):
+            problems.append(f"Day {n}: 실행요약 → 시간표 → 카드 순서 훼손")
+        if '<figure class="daily-card">' in text.split('<details class="day-details day-card-archive">', 1)[0]:
+            problems.append(f"Day {n}: 카드 이미지가 첫 화면에 노출됨")
+    index = (SITE / "daily" / "index.html").read_text(encoding="utf-8")
+    if index.count('class="daily-region"') != 8:
+        problems.append("일정 목록이 8개 지역 구간으로 묶이지 않음")
+    if index.count('class="daily-item') != 43:
+        problems.append("일정 목록이 43일이 아님")
+    if index.count('class="di-core"') != 43:
+        problems.append("일정 목록의 핵심 실행 요약이 43건이 아님")
+    if problems:
+        print("Phase 4 데일리 템플릿 가드 실패:")
+        for p in problems[:30]:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 4 데일리 템플릿 가드: 43일 공통 순서 · 8지역 목록 · 카드 접기 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -3975,6 +4024,7 @@ def main():
     check_day_sections()
     check_phase1_reader_guards()
     check_phase3_navigation_guards()
+    check_phase4_daily_guards()
     check_links()
     check_dates()
     check_places()

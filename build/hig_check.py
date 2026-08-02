@@ -59,7 +59,8 @@ SAMPLE = [
 CONTROL_SEL = (
     ".topbar a, .topbar button, .bottomnav a, .subnav a, .coords a, "
     ".card, .rg-card .card-title, .tp-item, .pl-day, .day-jump a, "
-    ".daily-item, .related a, .pager a, #back-top, #sheet-close"
+    ".daily-item, .day-actions a, .day-details > summary, .related a, "
+    ".pager a, #back-top, #sheet-close"
 )
 
 JS = r"""

@@ -1174,6 +1174,40 @@ section.places .note { margin: 2px 0 10px; }
 }
 
 /* ================= 데일리 — 텍스트 우선 ================= */
+.day-command {
+  margin: 12px 0 22px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--accent);
+  border-radius: 6px;
+  background: var(--surface);
+}
+.day-quick { margin: 0; }
+.dq-item {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.dq-item:first-child { padding-top: 0; }
+.dq-item dt { color: var(--text-2); font-size: .8rem; font-weight: 700; }
+.dq-item dd { margin: 0; font-size: .98rem; line-height: 1.55; font-weight: 600; }
+.dq-core dd { color: var(--text); }
+.day-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 12px; }
+.day-actions a {
+  display: flex; align-items: center; min-height: var(--tap); padding: 7px 10px;
+  border: 1px solid var(--border); border-radius: 4px; background: var(--accent-soft);
+  color: var(--accent); text-decoration: none; font-size: .84rem; font-weight: 700;
+}
+.day-details { margin: 20px 0; border-top: 1px solid var(--border); }
+.day-details > summary {
+  display: flex; align-items: center; min-height: var(--tap); cursor: pointer;
+  color: var(--accent); font-size: .94rem; font-weight: 700;
+}
+.day-details > summary::after { content: "+"; margin-left: auto; font-size: 1.25rem; }
+.day-details[open] > summary::after { content: "−"; }
+.day-more { margin-top: 24px; }
 .day-flags {
   display: flex;
   flex-wrap: wrap;
@@ -1231,17 +1265,8 @@ figure.daily-card img {
   border-radius: 6px;
   border: 1px solid var(--border);
 }
-.p4-badge {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0.62em;
-  font-weight: 700;
-  background: var(--sig-steady);
-  color: #fff;
-  padding: 3px 10px;
-  border-radius: 3px;
-  margin-left: 8px;
-}
+.daily-region { margin: 24px 0 32px; }
+.daily-region > h2 { margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
 .daily-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
@@ -1266,7 +1291,16 @@ figure.daily-card img {
 .daily-item:hover { border-color: var(--accent); }
 .daily-item b { color: var(--text); font-variant-numeric: tabular-nums; }
 .daily-item .di-region { color: var(--text-2); font-size: 0.82rem; }
+.daily-item .di-core {
+  margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border);
+  color: var(--text); font-size: .82rem; line-height: 1.45;
+}
 .daily-item.is-p0 { border-left-color: var(--sig-critical); }
+@media (max-width: 380px) {
+  .day-command { padding: 13px; }
+  .dq-item { grid-template-columns: 1fr; gap: 2px; }
+  .day-actions { grid-template-columns: 1fr; }
+}
 
 /* ================= 트래커 탭 ================= */
 nav.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 16px; }
