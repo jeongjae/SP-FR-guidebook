@@ -74,9 +74,14 @@
   --accent-ink:    #FFFFFF;
   --accent-soft:   #DFE3F2;
   --border:        #C8CEDD;
+  /* 국기 원색. 띠·리본 같은 '면' 에만 쓴다 — 금색은 흰 바탕에 1.7:1,
+     프랑스 빨강은 3.4:1 이라 어느 쪽도 글자색이 될 수 없다. 글자가 필요한
+     자리에는 아래 --sig-*-ink 를 쓴다. */
   --flag-es-red:   #AA151B;
   --flag-es-gold:  #F1BF00;
   --flag-fr-blue:  #000091;
+  --flag-fr-white: #FFFFFF;
+  --flag-fr-red:   #EF4135;
 
   /* ---- 신호색 (의미 전용, 장식 금지) ---- */
   --sig-critical:  #AA151B;   /* P0 연결·최고 리스크 — ES 국기 빨강. 채움용 (흰글자 7.4:1) */
@@ -90,15 +95,18 @@
   /* 국경이 색으로 보이게 한다. Day 7 에 스페인에서 프랑스로 넘어간다. */
   --acc-bcn: #AA151B;   /* 스페인 — 국기 빨강 */
   --acc-gir: #7D5400;   /* 스페인 — 국기 금색 (글자용으로 낮춘 값) */
-  --acc-nce: #12506F;   /* 이하 프랑스 — 파랑 계열 */
-  --acc-aix: #1B3184;
-  --acc-lub: #2E3E86;
-  --acc-avn: #46318A;
-  --acc-lyo: #123A6E;
+  /* 프랑스 6곳은 국기 파랑 계열 안에서 밝기·채도로만 갈린다. 청록(#12506F)과
+     보라(#46318A)는 두 국기 어디에도 없는 색이라 파랑 쪽으로 당겼다. */
+  --acc-nce: #2E63AE;   /* 이하 프랑스 — 국기 파랑 안에서 밝기 사다리 */
+  --acc-aix: #2A54A2;
+  --acc-lub: #254696;
+  --acc-avn: #1E378C;
+  --acc-lyo: #142783;
   --acc-par: #000091;   /* 종착지 — 국기 원색 */
 
   /* ---- 재질 (HIG Materials) — 바는 반투명, 뒤가 비친다 ---- */
   --bar-bg:        rgba(246, 247, 252, 0.82);
+  --tabbar-bg:     rgba(246, 247, 252, 0.97);
   --bar-blur:      saturate(180%) blur(20px);
   --separator:     rgba(15, 26, 30, 0.22);   /* 헤어라인 */
 
@@ -153,11 +161,12 @@
     --sig-steady:   #74C7A6;
     --sig-rest:     #9FB4EE;
 
-    --acc-bcn: #EE8B90; --acc-gir: #E0B44E; --acc-nce: #79BADB;
-    --acc-aix: #9FB0EE; --acc-lub: #A8B4EF; --acc-avn: #B8A6F0;
+    --acc-bcn: #EE8B90; --acc-gir: #E0B44E; --acc-nce: #7FB6E8;
+    --acc-aix: #9FB0EE; --acc-lub: #A8B4EF; --acc-avn: #A6A9F0;
     --acc-lyo: #8FB0E4; --acc-par: #A9BEF5;
 
     --bar-bg:    rgba(16, 26, 29, 0.82);
+    --tabbar-bg: rgba(16, 26, 29, 0.97);
     --separator: rgba(227, 235, 234, 0.24);
   }
 }
@@ -229,6 +238,61 @@ img { max-width: 100%; height: auto; }
   color: var(--text);
   box-shadow: inset 0 -0.5px 0 var(--separator);   /* 헤어라인 */
 }
+
+/* ================= 국가 띠 =================
+   상단바 아래 모서리에 붙어 스크롤을 따라다닌다. 지금 어느 나라에 있는가 —
+   Day 7 에 국경을 넘고, 그 뒤로 시장 요일·공휴일·긴급번호·언어가 바뀐다.
+   장식이 아니라 그 정보다.
+
+   스페인 국기는 가로 3줄(1:2:1), 프랑스 국기는 세로 3칸이다. 방향을 그대로
+   쓴다 — 둘을 같은 방향으로 그리면 나라가 아니라 색 띠가 된다. */
+body[data-country] .topbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  /* 띠 전체에 테두리를 두른다. 없으면 프랑스 국기의 흰 칸이 바탕과 이어져
+     `파랑 블록`과 `빨강 블록`이 따로 떠 있는 것처럼 보인다. */
+  box-shadow: inset 0 0 0 0.5px var(--separator);
+}
+body[data-country="es"] .topbar::after {
+  background: linear-gradient(to bottom,
+    var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%, var(--flag-es-red) 75%);
+}
+/* 흰 칸은 밝은 바 위에서 바탕에 묻는다. 칸 경계에 실선을 그어 세 칸으로 읽히게
+   한다 — 없으면 `파랑 · 빈칸 · 빨강` 이 되고 국기로 안 보인다. */
+body[data-country="fr"] .topbar::after {
+  background:
+    linear-gradient(to right, transparent 0 33.34%, var(--separator) 33.34% calc(33.34% + 1px),
+      transparent calc(33.34% + 1px) 66.67%, var(--separator) 66.67% calc(66.67% + 1px),
+      transparent calc(66.67% + 1px)),
+    linear-gradient(to right, var(--flag-fr-blue) 0 33.34%,
+      var(--flag-fr-white) 33.34% 66.67%, var(--flag-fr-red) 66.67%);
+}
+/* 이동일은 두 나라에 걸친다. 반씩 나눠 그린다 — 그날 국경을 넘는다는 뜻이다. */
+body[data-country="es-fr"] .topbar::after {
+  background:
+    linear-gradient(to bottom, var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%,
+      var(--flag-es-red) 75%) left / 50% 100% no-repeat,
+    linear-gradient(to right, var(--flag-fr-blue) 0 33.34%,
+      var(--flag-fr-white) 33.34% 66.67%, var(--flag-fr-red) 66.67%)
+      right / 50% 100% no-repeat;
+}
+/* 밝은 바 위에서는 프랑스 흰 칸이 바탕에 묻는다. 띠의 끝을 선으로 잡아 준다. */
+body[data-country] .topbar {
+  box-shadow: inset 0 -0.5px 0 var(--separator), 0 0.5px 0 var(--separator);
+}
+
+/* 큰 제목이 화면에 있는 동안 상단바 제목은 비워 둔다 (HIG Large Title).
+   nav.js 가 클래스를 붙인다 — JS 가 없으면 처음부터 보인다. */
+body.has-large-title .tb-crumbs {
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease);
+}
+body.has-large-title.scrolled-past .tb-crumbs { opacity: 1; }
+
 #search-btn {
   min-width: var(--tap);
   min-height: var(--tap);
@@ -458,7 +522,9 @@ img { max-width: 100%; height: auto; }
   left: 0; right: 0; bottom: 0;
   z-index: 200;
   display: flex;
-  background: var(--bar-bg);
+  /* 상단바보다 불투명하다. 본문이 탭 라벨을 뚫고 올라오면 야외에서 '오늘'과
+     지나가는 지역 이름이 겹쳐 읽힌다. 재질보다 판독이 먼저다. */
+  background: var(--tabbar-bg);
   -webkit-backdrop-filter: var(--bar-blur);
   backdrop-filter: var(--bar-blur);
   padding-bottom: env(safe-area-inset-bottom);   /* 홈 인디케이터 */
@@ -691,6 +757,39 @@ nav.pager a {
   border-left: 4px solid var(--accent);
   border-radius: var(--r-card);
 }
+/* 국경 — 여정 목록에서 스페인이 끝나고 프랑스가 시작하는 자리.
+   거점 사이의 여백을 나누는 선이 아니라, 그날 무엇이 바뀌는지를 말한다. */
+.tl-border { margin: var(--s4) 0; }
+.bc {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+.bc-label {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: var(--t-foot);
+  font-weight: 700;
+  color: var(--muted);
+  word-break: keep-all;
+}
+.bc-flag {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px var(--border);
+}
+.bc-es {
+  background: linear-gradient(to bottom,
+    var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%, var(--flag-es-red) 75%);
+}
+.bc-fr {
+  background: linear-gradient(to right,
+    var(--flag-fr-blue) 0 33.34%, var(--flag-fr-white) 33.34% 66.67%,
+    var(--flag-fr-red) 66.67%);
+}
+
 .tl-head { flex: 1 1 11rem; min-width: 0; }
 .tl-title {
   display: block;
@@ -749,14 +848,16 @@ nav.pager a {
 .tl-map:hover { background: var(--accent); color: var(--accent-ink); }
 
 /* 지역별 리본 — li 순서로 자동 부여 */
-.timeline li:nth-child(1) .tl-body { border-left-color: var(--acc-bcn); }
-.timeline li:nth-child(2) .tl-body { border-left-color: var(--acc-gir); }
-.timeline li:nth-child(3) .tl-body { border-left-color: var(--acc-nce); }
-.timeline li:nth-child(4) .tl-body { border-left-color: var(--acc-aix); }
-.timeline li:nth-child(5) .tl-body { border-left-color: var(--acc-lub); }
-.timeline li:nth-child(6) .tl-body { border-left-color: var(--acc-avn); }
-.timeline li:nth-child(7) .tl-body { border-left-color: var(--acc-lyo); }
-.timeline li:nth-child(8) .tl-body { border-left-color: var(--acc-par); }
+/* 순서(nth-child)가 아니라 지역으로 건다. 국경 줄을 사이에 끼웠더니
+   리본이 한 칸씩 밀려 Nice 가 Aix 색을 쓰고 있었다. */
+.tl-body[data-region="barcelona"] { border-left-color: var(--acc-bcn); }
+.tl-body[data-region="girona"] { border-left-color: var(--acc-gir); }
+.tl-body[data-region="nice"] { border-left-color: var(--acc-nce); }
+.tl-body[data-region="aix"] { border-left-color: var(--acc-aix); }
+.tl-body[data-region="luberon"] { border-left-color: var(--acc-lub); }
+.tl-body[data-region="avignon"] { border-left-color: var(--acc-avn); }
+.tl-body[data-region="lyon"] { border-left-color: var(--acc-lyo); }
+.tl-body[data-region="paris"] { border-left-color: var(--acc-par); }
 
 /* ---- 카드 그리드 ---- */
 .grid {
