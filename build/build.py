@@ -552,6 +552,13 @@ def build_credits():
 
 <h2>그 밖의 자료</h2>
 <ul>
+<li>본문 서체는 <b>나눔고딕</b> (NHN Corporation · 디자인 Sandoll Communications) 이며
+  <a class="needs-net" target="_blank" rel="noopener license"
+  href="https://scripts.sil.org/OFL">SIL Open Font License 1.1</a> 로 배포된다.
+  CDN 을 쓰지 않고 <code>assets/vendor/nanum/</code> 에 번들했다 — 오프라인에서도 뜬다.
+  라이선스 전문은 같은 폴더의 <code>LICENSE.txt</code> 다.</li>
+<li>색은 스페인·프랑스 국기색에서 뽑았다. 국기 원색을 그대로 쓰면 야외에서
+  읽히지 않는 값이 있어(스페인 노랑은 흰 바탕에 1.7:1) 글자용은 명암비를 맞춰 낮췄다.</li>
 <li>편집 도식과 데일리 카드는 이 여행을 위해 직접 제작했다.</li>
 <li>실행지도의 배경 타일은 <a class="needs-net" target="_blank" rel="noopener"
   href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자들의 것이며
@@ -1207,18 +1214,34 @@ def chapter_for_date(d):
 # ---------------------------------------------------------------- page shell
 
 def drawer_html(rel):
-    intro = "".join(
-        f'<a href="{rel}/{chapter_url(c)}">{c["title"]}</a>'
-        for c in CHAPTERS if c["kind"] != "region")
+    """전체 메뉴. 홈의 축 목록과 같은 컴포넌트·같은 글리프를 쓴다.
+
+    지도 8개와 트래커 시트 6개를 여기 펼치지 않는다 — 각자 인덱스가 있다.
+    드로어는 목적지를 고르는 곳이지 사이트 전체를 복제하는 곳이 아니다.
+    """
+    def row(glyph, url, title, sub=""):
+        s = f'<span class="lr-sub">{html.escape(sub)}</span>' if sub else ""
+        return (f'<a class="list-row" href="{rel}/{url}">'
+                f'<span class="lr-icon" aria-hidden="true">{glyph}</span>'
+                f'<span class="lr-text"><b class="lr-title">{html.escape(title)}</b>{s}</span>'
+                f'<span class="lr-go" aria-hidden="true">›</span></a>')
+
+    axes = "".join(row(g, u, n, s) for g, u, n, s in (
+        ("⌂", "index.html", "홈", "여정 타임라인"),
+        ("◉", "daily/index.html", "데일리", "43일 · 하루 한 장"),
+        ("▤", ITINERARY_URL, "일정", "전체 일정표와 이동"),
+        ("◇", "regions.html", "지역", "8개 거점"),
+        ("▧", "topics/index.html", "주제", "분류 10 · 상태 3"),
+        ("◈", "places/index.html", "장소", "갈 곳 83"),
+        ("⌖", "maps/index.html", "지도", "지역별 기준점 · 오프라인 준비"),
+        ("▦", "tracker/index.html", "트래커", "예약 · 이동 · 숙소")))
     regions = "".join(
-        f'<a href="{rel}/{chapter_url(c)}">{c["title"]}'
-        f'<span>{date_label(c["start"])}–{date_label(c["end"])} · {c["nights"]}박</span></a>'
+        row("◇", chapter_url(c), c["title"],
+            f'{date_label(c["start"])}–{date_label(c["end"])} · {c["nights"]}박')
         for c in CHAPTERS if c["kind"] == "region")
-    maps = ('<a href="{r}/maps/offline.html">오프라인 지도 준비 — Organic Maps</a>'.format(r=rel)
-            + "".join(f'<a href="{rel}/maps/{out}">{title}</a>' for _, out, title in MAPS))
-    tracker = "".join(
-        f'<a href="{rel}/tracker/{slug}.html">{label}</a>'
-        for _, slug, label in TRACKER_SHEETS)
+    intro = "".join(row("▤", chapter_url(c), c["title"])
+                    for c in CHAPTERS if c["kind"] != "region")
+    about = row("◷", "credits.html", "사진 저작자 표시", "CC 라이선스 · 서체 OFL")
     return f"""<div id="overlay"></div>
 <aside id="drawer" aria-label="전체 메뉴">
   <div class="dw-head">
@@ -1228,16 +1251,14 @@ def drawer_html(rel):
   <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
   <div id="search-results"></div>
   <nav class="dw-nav">
-    <a href="{rel}/index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
-    <a href="{rel}/daily/index.html" class="dw-home">🗓️ 데일리 가이드 — 43일 카드</a>
-    <a href="{rel}/topics/index.html" class="dw-home">▧ 주제 — 분류·상태로 전체 보기</a>
-    <a href="{rel}/places/index.html" class="dw-home">◇ 장소 — 갈 곳 전체</a>
-    <h3>시작하기</h3>{intro}
-    <h3>지역 가이드</h3>{regions}
-    <h3>실행지도</h3>{maps}
-    <h3>트래커</h3>{tracker}
+    <h3>어디서 볼 것인가</h3>
+    <div class="list-group">{axes}</div>
+    <h3>지역 가이드</h3>
+    <div class="list-group">{regions}</div>
+    <h3>읽는 법</h3>
+    <div class="list-group">{intro}</div>
     <h3>이 가이드북</h3>
-    <a href="{rel}/credits.html">사진 저작자 표시 · 라이선스</a>
+    <div class="list-group">{about}</div>
   </nav>
 </aside>"""
 
@@ -3259,6 +3280,9 @@ def main():
     (SITE / "assets").mkdir()
     shutil.copy(ASSETS / "style.css", SITE / "assets" / "style.css")
     shutil.copy(ASSETS / "nav.js", SITE / "assets" / "nav.js")
+    # 나눔고딕 woff2 — CDN 을 쓰지 않고 번들한다 (OFL 1.1)
+    shutil.copytree(ASSETS / "vendor" / "nanum", SITE / "assets" / "vendor" / "nanum",
+                    dirs_exist_ok=True)
     (SITE / "assets" / "heroes").mkdir()
     for slug, (fname, *_) in HERO_PHOTOS.items():
         shutil.copy(HERO_DIR / fname, SITE / "assets" / "heroes" / f"{slug}.jpg")
