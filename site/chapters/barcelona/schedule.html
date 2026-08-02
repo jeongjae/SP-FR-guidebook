@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>일정 한눈에 — Jason과 Julia의 2026 유럽 장기여행 가이드북</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body data-rel="../..">
+<header class="topbar">
+  <a class="tb-back" href="../../chapters/barcelona/index.html"><span aria-hidden="true">‹</span>Barcelona</a>
+  <span class="tb-title">일정 한눈에</span>
+  <button id="search-btn" aria-label="검색 열기">⌕</button>
+  <button id="menu-btn" aria-label="전체 메뉴 열기">☰</button>
+</header>
+<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">주제</span><div class="sn-layers"><a href="index.html">허브</a><a href="about.html">지역소개</a><a href="places.html">여행정보</a><a href="food.html">먹거리</a><a href="transport.html">교통</a><a href="stay.html">숙박</a><a href="booking.html">예약</a><a href="cost.html">경비</a><a href="tips.html">여행팁</a><a href="sources.html">부록</a></div></div><div class="sn-group"><span class="sn-label">일자</span><div class="sn-days"><a href="schedule.html" class="here" title="일정 한눈에">한눈에</a><a href="day-01.html" title="Day 1 · 8월 29일 토">8/29</a><a href="day-02.html" title="Day 2 · 8월 30일 일">8/30</a><a href="day-03.html" title="Day 3 · 8월 31일 월">8/31</a><a href="day-04.html" title="Day 4 · 9월 1일 화">9/1</a></div></div></nav>
+<div id="overlay"></div>
+<aside id="drawer" aria-label="전체 메뉴">
+  <div class="dw-head">
+    <span>유럽 43일 가이드북</span>
+    <button id="drawer-close" aria-label="닫기">✕</button>
+  </div>
+  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
+  <div id="search-results"></div>
+  <nav class="dw-nav">
+    <a href="../../index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
+    <a href="../../daily/index.html" class="dw-home">🗓️ 데일리 가이드 — 43일 카드</a>
+    <a href="../../topics/index.html" class="dw-home">▧ 주제 — 분류·상태로 전체 보기</a>
+    <a href="../../places/index.html" class="dw-home">◇ 장소 — 갈 곳 전체</a>
+    <h3>시작하기</h3><a href="../../chapters/how-to-use.html">가이드북 사용법</a><a href="../../chapters/highlights.html">전체 여행 하이라이트</a><a href="../../chapters/itinerary.html">43일 Master Itinerary</a>
+    <h3>지역 가이드</h3><a href="../../chapters/barcelona/index.html">Barcelona · Sitges<span>8/29–9/1 · 3박</span></a><a href="../../chapters/girona/index.html">Girona · Collioure · Empordà<span>9/1–9/4 · 3박</span></a><a href="../../chapters/nice/index.html">Nice · Côte d’Azur<span>9/4–9/9 · 5박</span></a><a href="../../chapters/aix/index.html">Aix-en-Provence<span>9/9–9/13 · 4박</span></a><a href="../../chapters/luberon/index.html">Luberon Farmhouse<span>9/13–9/17 · 4박</span></a><a href="../../chapters/avignon/index.html">Avignon · Alpilles · Pont du Gard<span>9/17–9/21 · 4박</span></a><a href="../../chapters/lyon/index.html">Lyon · Annecy<span>9/21–9/25 · 4박</span></a><a href="../../chapters/paris/index.html">Paris Long Stay<span>9/25–10/10 · 15박</span></a>
+    <h3>실행지도</h3><a href="../../maps/offline.html">오프라인 지도 준비 — Organic Maps</a><a href="../../maps/barcelona.html">Barcelona 실행지도</a><a href="../../maps/girona.html">Girona 실행지도</a><a href="../../maps/nice.html">Nice 실행지도</a><a href="../../maps/aix.html">Aix 실행지도</a><a href="../../maps/luberon.html">Luberon 실행지도</a><a href="../../maps/avignon.html">Avignon 실행지도</a><a href="../../maps/lyon.html">Lyon 실행지도</a><a href="../../maps/paris.html">Paris 실행지도</a>
+    <h3>트래커</h3><a href="../../tracker/itinerary.html">43일 전체 일정표</a><a href="../../tracker/reservations.html">예약 현황</a><a href="../../tracker/transport.html">이동·교통</a><a href="../../tracker/accommodation.html">숙소 후보·확정</a><a href="../../tracker/dashboard.html">진행 대시보드</a><a href="../../tracker/locks.html">예약·운영 잠금</a>
+    <h3>이 가이드북</h3>
+    <a href="../../credits.html">사진 저작자 표시 · 라이선스</a>
+  </nav>
+</aside>
+<main>
+<p class="meta">Barcelona · Sitges · 8/29–9/1</p>
+
+<nav class="crumbs" aria-label="위치"><a href="../../regions.html">지역</a> › <a href="index.html">Barcelona · Sitges</a> › <span>일정 한눈에</span></nav><p class="page-sub">이 구간을 어떻게 굴리는가</p><h2 id="8월-31일-중요-정정">8월 31일 중요 정정</h2>
+<ul>
+<li>MACBA Library는 공식 안내상 <strong>8월 휴관</strong>이다. 도서관 방문은 제외한다.</li>
+<li>MACBA 미술관의 월요일 개관은 방문 48시간 전에 전시·시설 페이지에서 재확인한다.</li>
+</ul>
+<h2 id="실행지도-현장-사용">실행지도 · 현장 사용</h2>
+<ul>
+<li><a href="../../maps/barcelona.html">대화형 HTML 지도</a></li>
+<li><a href="../../maps/data/Barcelona_Execution_Map_v0.2.geojson">GeoJSON</a></li>
+<li><a href="../../maps/data/Barcelona_Execution_Map_v0.2.kml">KML</a></li>
+<li>대상 일정: <strong>Day 1–4</strong></li>
+<li>숙소 핀은 현재 <strong>후보 위치</strong>이며 실제 예약주소가 아니다.</li>
+<li>연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.</li>
+<li>HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.</li>
+</ul>
+<h2 id="한눈에-보는-실행-요약">한눈에 보는 실행 요약</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>확정·권장 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>체류</td>
+<td>2026년 8월 29일 토요일 체크인 → 9월 1일 화요일 체크아웃, 3박</td>
+</tr>
+<tr>
+<td>핵심 주제</td>
+<td>시차 적응 · 사그라다 파밀리아 · 카탈루냐 모더니즘 · 도서관과 현대미술 · 시체스 예술마을</td>
+</tr>
+<tr>
+<td>최우선 숙소권</td>
+<td><strong>Dreta de l’Eixample 동부 / Fort Pienc / Sagrada Família 서쪽</strong>. 시장·교통·저녁식사·렌터카 이동의 균형이 가장 좋다.</td>
+</tr>
+<tr>
+<td>숙박예산</td>
+<td>2인 3박 총 <strong>약 80만 원</strong>. 2026-07-27 ECB 기준 1유로≈1,674원으로 단순 환산하면 약 €478이다. 실제 결제 환율과 관광세를 감안해 <strong>객실료 €400–420 이하</strong>를 1차 목표로 잡는다.</td>
+</tr>
+<tr>
+<td>필수 예약</td>
+<td>1) 사그라다 파밀리아 8/30 10:30, 2) 바르셀로나 숙소, 3) 9/1 렌터카 09:00, 4) 9/1 시체스 점심 13:00</td>
+</tr>
+<tr>
+<td>권장 교통권</td>
+<td>공항→도심은 짐이 많으면 택시, 그렇지 않으면 Aerobús. 시내는 각자 <strong>T-casual 1존 €13</strong> 또는 단건 결제. T-casual은 공항 메트로 T1/T2에 사용할 수 없다.</td>
+</tr>
+<tr>
+<td>음식 패턴</td>
+<td>아침 숙소 / 8월 30일 사그라다 인근 해산물 점심 / 8월 31일 라발·에이샴플라 현지식 / 9월 1일 시체스 쌀요리</td>
+</tr>
+<tr>
+<td>운동</td>
+<td>Jason: 8/31 아침 35–45분 러닝 또는 CEM Joan Miró 1회권. Julia: 같은 시설 수영 또는 CN Atlètic-Barceloneta 선택 이용.</td>
+</tr>
+<tr>
+<td>피로 관리</td>
+<td>도착일 활동 2개 이하, 사그라다 방문일 오후 휴식 포함, 9/1 운전일에는 시체스 핵심 2곳만 방문</td>
+</tr>
+<tr>
+<td>주요 위험</td>
+<td>8월 말 더위, 소매치기, 사그라다 입장시간 지각, 렌터카 인수 지연, 시체스 주차·바르셀로나 우회 교통</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="일정의-핵심-논리">일정의 핵심 논리</h3>
+<pre><code class="language-text">8/29 도착·생활권 적응
+        ↓
+8/30 사그라다 파밀리아 + 산파우 모더니즘 축
+        ↓
+8/31 구도심의 역사·도서관 + 현대미술·책방
+        ↓
+9/1 렌터카 → 시체스 모더니즘·해변 → 지로나
+</code></pre>
+<hr>
+<h2 id="날짜별-확정-일정">날짜별 확정 일정</h2><nav class="pager"><span></span><a href="day-01.html">Day 1 · 8월 29일 토 →</a></nav>
+</main>
+<footer>
+  <p>Jason과 Julia의 2026 유럽 장기여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
+  <p><a href="../../credits.html">사진 저작자 표시 · 라이선스</a> ·
+     <a href="../../maps/offline.html">오프라인 지도 준비</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="#" class="nav-today" data-tab="today"><b aria-hidden="true">◉</b><span>오늘</span></a>
+  <a href="../../chapters/itinerary.html" data-tab="itinerary"><b aria-hidden="true">▤</b><span>일정</span></a>
+  <a href="../../regions.html" data-tab="regions"><b aria-hidden="true">◇</b><span>지역</span></a>
+  <a href="../../topics/index.html" data-tab="topics"><b aria-hidden="true">▧</b><span>주제</span></a>
+  <a href="../../maps/index.html" data-tab="maps"><b aria-hidden="true">⌖</b><span>지도</span></a>
+</nav>
+<button id="back-top" aria-label="맨 위로">↑</button>
+<script src="../../assets/data.js" defer></script>
+<script src="../../assets/nav.js" defer></script>
+</body>
+</html>
