@@ -46,8 +46,8 @@ SOURCE = ROOT / "source"
 SITE = ROOT / "site"
 ASSETS = ROOT / "build" / "assets"
 
-SITE_TITLE = "Jason과 Julia의 2026 유럽 장기여행 가이드북"
-SITE_SHORT = "유럽 43일 가이드북"
+SITE_TITLE = "2026 유럽 여행 가이드북"
+SITE_SHORT = "2026 유럽 여행 가이드북"
 TRIP_PERIOD = "2026-08-29 ~ 2026-10-10 · 43일 42박"
 TRIP_START = date(2026, 8, 29)
 TRIP_END = date(2026, 10, 10)
@@ -1170,6 +1170,19 @@ def strip_process_notes(md_text):
 
 
 
+
+def section_end(marks, idx, total):
+    """marks[idx] 절이 끝나는 줄. 같은 레벨 이상 헤딩을 만나면 끝난다.
+
+    다음 헤딩까지로 자르면 하위 절이 남아 본문이 반토막 난다.
+    """
+    lvl = marks[idx][1]
+    for j in range(idx + 1, len(marks)):
+        if marks[j][1] <= lvl:
+            return marks[j][0]
+    return total
+
+
 def place_title_key(name):
     """장소 절 제목에서 장소명만 남긴다. 등급 토큰·섹션번호·부제를 뗀다."""
     n = re.sub(r"\{\{grade:[^}]*\}\}", "", name)
@@ -1203,6 +1216,7 @@ def merge_place_sections(md_text, slug):
         h1 = re.match(r"^#[ \t]+(.+)$", line)
         if h1:
             in_info = h1.group(1).strip() == info_label
+            marks.append((i, 1, None))       # 카테고리 경계 — 절이 여기서 끝난다
             continue
         m = re.match(r"^(#{2,4})[ \t]+(.+)$", line)
         if m:
@@ -1211,9 +1225,8 @@ def merge_place_sections(md_text, slug):
     # 절 범위를 먼저 구한다
     spans = {}
     for idx, (i, lvl, k) in enumerate(marks):
-        end = marks[idx + 1][0] if idx + 1 < len(marks) else len(lines)
         if k:
-            spans.setdefault(k, []).append((i, end))
+            spans.setdefault(k, []).append((i, section_end(marks, idx, len(lines))))
     # 기준 절은 등급이 붙은 것 — 레지스트리가 그 제목을 가리킨다.
     # 순서로 정하면 원본 절이 기준이 되어 등급 절이 사라진다.
     merged, drop = 0, []
@@ -1243,6 +1256,72 @@ def merge_place_sections(md_text, slug):
                 out += [""] + ch
     text = re.sub(r"\n{3,}", "\n\n", "\n".join(out))
     return text, merged
+
+
+
+PLACE_BODY = {}   # 장소 슬러그 -> 상세 마크다운. 챕터 빌드가 채우고 장소 페이지가 쓴다.
+
+
+def extract_place_bodies(md_text, slug, rel):
+    """장소 상세 본문을 챕터에서 떼어 장소 카드로 옮긴다.
+
+    최소 단위를 장소로 정한 이상 상세의 집은 장소 카드다. 챕터의 여행정보
+    페이지가 그 본문을 다 안고 있으면 파리는 한 장이 16,000자가 된다.
+
+    **복제가 아니라 이사다.** 챕터에는 제목과 등급, 그리고 카드로 가는 줄만
+    남는다. 제목을 남기는 것은 레지스트리 가드가 그 문자열로 대조하기 때문이고,
+    챕터를 훑을 때 무엇이 있는지 보이게 하려는 것이기도 하다.
+    """
+    by_key = {place_key(r["name"]): r for r in load_place_registry()
+              if r["chapter"] == slug and r["type"] == "spot"}
+    if not by_key:
+        return md_text, 0
+    lines = md_text.splitlines()
+    info_label = CAT_LABEL["info"]
+    marks, in_info = [], False
+    for i, line in enumerate(lines):
+        h1 = re.match(r"^#[ \t]+(.+)$", line)
+        if h1:
+            in_info = h1.group(1).strip() == info_label
+            marks.append((i, 1, None))       # 카테고리 경계
+            continue
+        m = re.match(r"^(#{2,4})[ \t]+(.+)$", line)
+        if m:
+            r = by_key.get(place_title_key(m.group(2))) if in_info else None
+            marks.append((i, len(m.group(1)), r))
+    moved, cut = 0, []
+    for idx, (i, lvl, r) in enumerate(marks):
+        end = section_end(marks, idx, len(lines))
+        if not r:
+            continue
+        # 이 절 안에 다른 장소 절이 들어 있으면 옮기지 않는다. 상위 묶음 헤딩을
+        # 통째로 들어내면 그 아래 장소들이 챕터에서 사라진다.
+        if any(marks[j][0] < end and marks[j][2] for j in range(idx + 1, len(marks))):
+            continue
+        body = [x for x in lines[i + 1:end] if x.strip()]
+        if len(body) < 3:          # 이미 짧으면 그냥 둔다
+            continue
+        # 한 장소의 상세라기엔 너무 크면 형제 절을 삼킨 것이다. 손대지 않는다.
+        # 정상 범위는 1,500자 안쪽이다 (가장 긴 것이 크루아루스 1,339자).
+        if len(re.sub(r"\s", "", " ".join(body))) > 2500:
+            continue
+        PLACE_BODY.setdefault(r["slug"], []).extend(lines[i + 1:end])
+        cut.append((i + 1, end, r))
+        moved += 1
+    if not moved:
+        return md_text, 0
+    skip, note = set(), {}
+    for s, e, r in cut:
+        skip.update(range(s, e))
+        note[s] = (f'[◈ {r["name"]} — 장소 카드에서 보기]'
+                   f'({rel}/places/{r["slug"]}.html)')
+    out = []
+    for i, line in enumerate(lines):
+        if i in note:
+            out += ["", note[i], ""]
+        if i not in skip:
+            out.append(line)
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(out)), moved
 
 
 def normalize_day_headings(md_text, chapter):
@@ -1886,9 +1965,9 @@ def cat_summary(counts):
 
 
 def fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero=0, n_proc=0,
-                n_merge=0):
+                n_merge=0, n_move=0):
     bits = []
-    for label, n in (("VISUAL토큰 -", n_tokens), ("작성흔적 -", n_proc), ("장소절병합 ", n_merge), ("Day헤딩 ", n_days), ("등급 ", n_grade),
+    for label, n in (("VISUAL토큰 -", n_tokens), ("작성흔적 -", n_proc), ("장소절병합 ", n_merge), ("장소이사 ", n_move), ("Day헤딩 ", n_days), ("등급 ", n_grade),
                      ("재확인 ", n_vol), ("섹션번호 -", n_num), ("원문자 -", n_circ),
                      ("중복사진 -", n_hero)):
         if n:
@@ -2109,11 +2188,12 @@ def build_chapters():
                 n_verify = 1
             body_md, counts = regroup_regional(c["slug"], body_md, chapter_rel(c))
         # 분류는 원본 제목으로 끝난 뒤에 Day 헤딩을 정규화한다 (CAT_OVERRIDES 보존)
-        n_merge = 0
-        if c["kind"] == "region":
-            body_md, n_merge = merge_place_sections(body_md, c["slug"])
         body_md, n_days = normalize_day_headings(body_md, c)
         body_md, n_num, n_circ = strip_naming_noise(body_md)
+        n_merge = n_move = 0
+        if c["kind"] == "region":
+            body_md, n_merge = merge_place_sections(body_md, c["slug"])
+            body_md, n_move = extract_place_bodies(body_md, c["slug"], chapter_rel(c))
         body_md, n_hero = drop_source_hero(body_md)
         body_md, n_grade, n_vol = annotate_tables(body_md)
         body_md = render_inline_tokens(body_md)
@@ -2145,7 +2225,7 @@ def build_chapters():
             build_split_chapter(c, body_md, map_links)
             write_legacy_redirect(c)
             print(f'  {c["name"]}: {Path(c["path"]).name} → chapters/{c["name"]}/'
-                  f'{cat_summary(counts)}{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero, n_proc, n_merge)}')
+                  f'{cat_summary(counts)}{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero, n_proc, n_merge, n_move)}')
             continue
         collect_search(c, flat)
 
@@ -2187,7 +2267,7 @@ def build_chapters():
         write_legacy_redirect(c)
         print(f'  {c["name"]}: {Path(c["path"]).name} → {chapter_url(c)}'
               f'{cat_summary(counts if c["kind"] == "region" else {})}'
-              f'{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero, n_proc, n_merge)}')
+              f'{fix_summary(n_tokens, n_days, n_grade, n_vol, n_num, n_circ, n_hero, n_proc, n_merge, n_move)}')
 
 
 # ---------------------------------------------------------------- daily cards
@@ -2539,19 +2619,7 @@ def build_home():
         f'<span class="card-sub">{c["sub"]}</span></a>'
         for c in CHAPTERS if c["kind"] != "region")
 
-    # 세 축 + 장소 — 이 사이트의 1급 진입점. 하단탭 글리프와 같은 기호를 쓴다.
-    axis = [("◉", "daily/index.html", "데일리", "43일 · 하루 한 장"),
-            ("▤", ITINERARY_URL, "일정", "전체 일정표와 이동"),
-            ("◇", "regions.html", "지역", "8개 거점"),
-            ("▧", "topics/index.html", "주제", "분류 10 · 상태 3"),
-            ("◈", "places/index.html", "장소", "갈 곳 83"),
-            ("⌖", "maps/index.html", "지도", "지역별 기준점")]
-    axis_rows = "".join(
-        f'<a class="list-row" href="{u}">'
-        f'<span class="lr-icon" aria-hidden="true">{g}</span>'
-        f'<span class="lr-text"><b class="lr-title">{n}</b>'
-        f'<span class="lr-sub">{s}</span></span>'
-        f'<span class="lr-go" aria-hidden="true">›</span></a>' for g, u, n, s in axis)
+    # 축 진입은 하단탭(L0)과 드로어가 맡는다. 홈은 여정으로 바로 연다.
     tool_rows = "".join(
         f'<a class="list-row" href="{u}">'
         f'<span class="lr-icon" aria-hidden="true">{g}</span>'
@@ -2568,9 +2636,6 @@ def build_home():
   <p class="period">{TRIP_PERIOD}</p>
   <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
 </section>
-<h2>어디서 볼 것인가</h2>
-<div class="list-group">{axis_rows}</div>
-<h2>여정</h2>
 <ol class="timeline">{''.join(stops)}</ol>
 <h2>읽는 법</h2>
 <div class="grid">{intro_cards}</div>
@@ -3013,11 +3078,18 @@ def load_place_registry():
 
 
 def place_key(name):
-    """장소 이름을 대조용 열쇠로 줄인다. 부제·괄호를 떼고 발음기호를 없앤다."""
-    head = re.split(r"[·—(]", name)[0]
-    s = unicodedata.normalize("NFKD", head)
-    s = "".join(c for c in s if not unicodedata.combining(c))
-    return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
+    """장소 이름을 대조용 열쇠로 줄인다. 부제·괄호를 떼고 발음기호를 없앤다.
+
+    앞 조각이 너무 짧으면 자르지 않는다 — `시장 — Place Richelme` 를 `시장` 으로
+    줄이면 본문의 모든 '시장' 절이 그 한 곳으로 몰린다. 실제로 그렇게 됐다.
+    """
+    def norm(s):
+        s = unicodedata.normalize("NFKD", s)
+        s = "".join(c for c in s if not unicodedata.combining(c))
+        return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
+
+    head = norm(re.split(r"[·—(]", name)[0])
+    return head if len(head) >= 4 else norm(name)
 
 
 def norm_key(s):
@@ -3228,13 +3300,23 @@ def build_places(timetable):
         if r["pin"]:
             rows.append(("지도", f'<a href="{rel}/maps/{c["map"]}">{c["region"]} 실행지도</a>'
                                  f' · <span class="pl-basis">핀 이름 {html.escape(r["pin"])}</span>'))
-        ex = place_excerpt(r)
+        detail = ""
+        if PLACE_BODY.get(r["slug"]):
+            md_body = "\n".join(PLACE_BODY[r["slug"]]).strip()
+            # 챕터에서 h4 였던 소제목을 카드에서는 h2 로 올린다
+            md_body = re.sub(r"^#{3,6}[ \t]", "## ", md_body, flags=re.M)
+            md_body = render_inline_tokens(annotate_tables(md_body)[0])
+            html_body, _ = md_convert(md_body)
+            detail = wrap_tables(rewrite_asset_links(html_body, rel))
+        ex = "" if detail else place_excerpt(r)
         body = (f'<h1>{html.escape(r["name"])}</h1>'
                 + '<div class="table-wrap"><table><tbody>'
                 + "".join(f'<tr><th>{k}</th><td>{v}</td></tr>' for k, v in rows)
                 + '</tbody></table></div>'
                 + (f'<p class="pl-ex">{html.escape(ex)}</p>' if ex else "")
-                + f'<p class="note">이 장은 좌표다. 본문은 챕터에 있고 여기서 복제하지 않는다.</p>')
+                + detail
+                + ('' if detail else
+                   '<p class="note">상세 서술은 챕터 본문에 있다. 여기서 복제하지 않는다.</p>'))
         (out_dir / f'{r["slug"]}.html').write_text(
             page(r["name"], body, rel=rel, topbar_title=r["name"],
                  back=("장소", "places/index.html"),
