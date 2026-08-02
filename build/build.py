@@ -512,7 +512,7 @@ def build_regions():
 <div class="related"><a href="{ITINERARY_URL}">▤ 43일 전체 일정표</a>
 <a href="daily/index.html">◉ 데일리 카드 43일</a>
 <a href="maps/offline.html">⌖ 오프라인 지도 준비</a></div>"""
-    (SITE / "regions.html").write_text(page("지역", body, rel="."), encoding="utf-8")
+    (SITE / "regions.html").write_text(page("지역", body, rel=".", back=("홈", "index.html")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "지역", "c": "목록", "u": "regions.html"})
     print(f"  지역 인덱스: {len(cards)}개 거점 → regions.html")
 
@@ -563,7 +563,7 @@ def build_credits():
 <p class="offline-note">원본 표 — <code>source/ASSETS/88_Representative_Public_Photo_Credits_v1.0.md</code>.
 빌드가 이 표와 대조해 저작자·라이선스가 어긋나면 중단한다.</p>"""
     (SITE / "credits.html").write_text(
-        page("사진 저작자 표시", body, rel="."), encoding="utf-8")
+        page("사진 저작자 표시", body, rel=".", back=("홈", "index.html")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "사진 저작자 표시", "c": "라이선스", "u": "credits.html"})
     print(f"  저작자 표시: 대표사진 {len(HERO_PHOTOS)}장 → credits.html")
 
@@ -1288,22 +1288,6 @@ def scan_sections(c, body, url, fixed_cat=None):
                 STATUS_INDEX[key].append(dict(item, note=plain(label), cat=cat))
 
 
-def split_coords(c, rel, fname, page_cat):
-    """분할 챕터 페이지의 좌표. 일자 페이지는 그 날 카드로 바로 건다."""
-    dm = re.match(r"day-(\d+)\.html$", fname)
-    if dm:
-        n = int(dm.group(1))
-        day = (f"Day {n} 카드", f"daily/day-{n:02d}.html")
-    else:
-        first = day_no(c["start"])
-        day = (f"Day {first}–{day_no(c['end'])}", f"daily/day-{first:02d}.html")
-    slug = next((ALL_TOPIC_SLUG[k] for k, lab in CATEGORIES if lab == page_cat), None)
-    topic = ((page_cat, f"topics/{slug}.html") if slug else ("전체 주제", "topics/index.html"))
-    # 주제 페이지는 지역×주제 교차점이다. 어느 축의 뿌리도 아니므로 셋 다 링크로 연다 —
-    # 여기서 '지역' 을 현재로 굳히면 챕터 허브로 돌아갈 길이 없어진다.
-    return coords_bar(rel, day=day, topic=topic,
-                      region=(c["region"], f'chapters/{c["name"]}/index.html'))
-
 
 def chapter_coords(c, rel):
     """지역 챕터의 좌표 — 일자 축은 첫날 카드로, 주제 축은 주제 허브로 연다."""
@@ -1369,28 +1353,41 @@ def coords_bar(rel, *, day=None, region=None, topic=None):
     return (f'<nav class="coords" aria-label="일자·지역·주제로 이동">{"".join(cells)}</nav>')
 
 
-def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="", coords=""):
+def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
+         coords="", back=None):
+    """back=(라벨, URL). HIG 네비게이션 바의 뒤로가기다.
+
+    상단바 구성은 셋으로 고정한다 — 앞: 돌아갈 곳, 가운데: 지금 페이지,
+    뒤: 검색·전체 메뉴. 홈만 뒤로가기가 없다.
+    """
     meta_html = f'<p class="meta">{meta_line}</p>' if meta_line else ""
     tb_title = html.escape(topbar_title or title)
+    if back:
+        b_label, b_url = back
+        lead = (f'<a class="tb-back" href="{rel}/{b_url}">'
+                f'<span aria-hidden="true">‹</span>{html.escape(b_label)}</a>')
+    else:
+        lead = '<span class="tb-back tb-back-none" aria-hidden="true"></span>'
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{html.escape(title)} — {SITE_TITLE}</title>
 <link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
 <body data-rel="{rel}">
 <header class="topbar">
-  <button id="menu-btn" aria-label="메뉴 열기">☰</button>
-  <a class="tb-title" href="{rel}/index.html">{tb_title}</a>
+  {lead}
+  <span class="tb-title">{tb_title}</span>
   <button id="search-btn" aria-label="검색 열기">⌕</button>
+  <button id="menu-btn" aria-label="전체 메뉴 열기">☰</button>
 </header>
-{coords}
 {subnav}
 {drawer_html(rel)}
 <main>
 {meta_html}
+{coords}
 {body}
 </main>
 <footer>
@@ -1551,6 +1548,7 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
     sub_html = f'<p class="page-sub">{html.escape(sub)}</p>' if sub else ""
     content = crumb_html + sub_html + extra + body + pager
     return (page(title, content, rel=rel, topbar_title=title, coords=coords, subnav=subnav,
+                 back=(c["region"], f'chapters/{c["name"]}/index.html'),
                  meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'),
             flatten_tokens(toc_tokens), body)
 
@@ -1580,19 +1578,26 @@ def siblings_nav(groups):
     return f'<nav class="subnav" aria-label="이 묶음 안에서 이동">{"".join(out)}</nav>'
 
 
-def chapter_siblings(pages, current):
-    """분할 챕터의 형제 — 주제 9개와 일자 N개. 두 축을 라벨로 갈라 놓는다."""
+def chapter_siblings(pages, current, with_days=True):
+    """분할 챕터의 형제 — 주제 9개와 일자 N개. 두 축을 제 줄에 갈라 놓는다.
+
+    주제 페이지에서는 일자 행을 감춘다. 세 줄짜리 고정 크롬은 작은 화면에서
+    본문을 덮는다. 일자가 필요한 곳은 허브와 일자 페이지다.
+    """
     cats = [("허브", "index.html", current == "index.html", "")]
     days = []
     for fname, title, _sub, _md, _cat in pages:
         dm = re.match(r"day-(\d+)\.html$", fname)
-        if dm:
+        if fname == "schedule.html":
+            days.append(("한눈에", fname, fname == current, title))
+        elif dm:
             md = re.search(r"(\d+)월\s*(\d+)일", title)
             label = f"{int(md.group(1))}/{int(md.group(2))}" if md else f"D{int(dm.group(1))}"
             days.append((label, fname, fname == current, title))
         else:
             cats.append((title, fname, fname == current, ""))
-    return siblings_nav([("주제", "sn-layers", cats), ("일자", "sn-days", days)])
+    return siblings_nav([("주제", "sn-layers", cats)]
+                        + ([("일자", "sn-days", days)] if with_days else []))
 
 
 def build_split_chapter(c, body_md, map_links):
@@ -1612,6 +1617,11 @@ def build_split_chapter(c, body_md, map_links):
     sched_head, days = split_day_sections(by_cat.get("schedule", ""))
 
     pages = []      # (파일명, 제목, 부제, 마크다운, 카테고리 라벨)
+    if sched_head:
+        # 일자에 속하지 않는 일정 내용(전체 일정표·운영 원칙 등). 허브에 쏟으면
+        # 허브가 목차가 아니라 본문이 된다. 제 페이지를 준다.
+        pages.append(("schedule.html", "일정 한눈에", "이 구간을 어떻게 굴리는가",
+                      sched_head, CAT_LABEL["schedule"]))
     for n, title, md_body in days:
         pages.append((f"day-{n:02d}.html", title, "", md_body, CAT_LABEL["schedule"]))
     for key, label in CATEGORIES:
@@ -1637,8 +1647,9 @@ def build_split_chapter(c, body_md, map_links):
         rendered, flat, page_body = render_split_page(
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
             extra=fig + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
-            coords=split_coords(c, rel, fname, page_cat),
-            subnav=chapter_siblings(pages, fname))
+            subnav=chapter_siblings(pages, fname,
+                                    with_days=fname.startswith("day-")
+                                    or fname == "schedule.html"))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
         scan_sections(c, page_body, url, fixed_cat=page_cat)
@@ -1652,14 +1663,13 @@ def build_split_chapter(c, body_md, map_links):
 
     # 허브
     day_cards = "".join(
-        f'<a class="card" href="{f}"><span class="card-title">{html.escape(t)}</span></a>'
-        for f, t, s in made if f.startswith("day-"))
+        f'<a class="card" href="{f}"><span class="card-title">{html.escape(t)}</span>'
+        + (f'<span class="card-sub">{html.escape(s)}</span>' if s else "") + '</a>'
+        for f, t, s in made if f.startswith("day-") or f == "schedule.html")
     topic_cards = "".join(
         f'<a class="card" href="{f}"><span class="card-title">{html.escape(t)}</span>'
         f'<span class="card-sub">{html.escape(s)}</span></a>'
-        for f, t, s in made if not f.startswith("day-"))
-    head_html, _ = md_convert(sched_head) if sched_head else ("", None)
-    head_html = wrap_tables(rewrite_asset_links(head_html, rel))
+        for f, t, s in made if not f.startswith("day-") and f != "schedule.html")
     intro_html, _ = md_convert(header_md) if header_md else ("", None)
     intro_html = wrap_tables(rewrite_asset_links(
         mark_layer_headings(intro_html), rel)) if header_md else ""
@@ -1671,11 +1681,10 @@ def build_split_chapter(c, body_md, map_links):
            if c["slug"] == "11" else "")
         + f'<h2>일자</h2><div class="grid">{day_cards}</div>'
         + f'<h2>주제</h2><div class="grid">{topic_cards}</div>'
-        + (f'<h2>일정 한눈에</h2>{head_html}' if sched_head else "")
     )
     (out_dir / "index.html").write_text(
         page(c["title"], hub_body, rel=rel, topbar_title=c["title"],
-             coords=chapter_coords(c, rel),
+             back=("지역", "regions.html"),
              subnav=chapter_siblings(pages, "index.html"),
              meta_line=f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박'),
         encoding="utf-8")
@@ -1859,7 +1868,7 @@ def write_legacy_redirect(c):
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <meta http-equiv="refresh" content="0; url={target}">
 <link rel="canonical" href="{target}">
@@ -1978,7 +1987,7 @@ def build_chapters():
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(
             page(c["title"], content, rel=rel,
-                 topbar_title=c["title"],
+                 topbar_title=c["title"], back=("홈", "index.html"),
                  meta_line=" · ".join(meta_bits),
                  coords=chapter_coords(c, rel),
                  subnav=chapter_subnav(c, flat)),
@@ -2283,6 +2292,7 @@ def build_daily():
             ("날짜", "sn-days", window)])
         (out_dir / f"day-{n:02d}.html").write_text(
             page(title, body, rel="..", topbar_title=title, subnav=day_nav,
+                 back=("데일리", "daily/index.html"),
                  coords=coords_bar("..",
                                    day=(f"Day {n} · {date_label(d)} {wd}", None),
                                    region=region_cell,
@@ -2309,7 +2319,8 @@ def build_daily():
             'Day 12–24는 Phase 4 최종판</p>'
             f'<div class="daily-grid">{"".join(index_items)}</div>')
     (out_dir / "index.html").write_text(
-        page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드"),
+        page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드",
+             back=("홈", "index.html")),
         encoding="utf-8")
     print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)"
           f" · 피로도 {n_fat}일 · 시간표 {n_tt}건")
@@ -2336,29 +2347,45 @@ def build_home():
         f'<span class="card-sub">{c["sub"]}</span></a>'
         for c in CHAPTERS if c["kind"] != "region")
 
-    tool_cards = (
-        '<a class="card card-alt" href="daily/index.html">'
-        '<span class="card-num">🗓️</span><span class="card-title">데일리 가이드</span>'
-        '<span class="card-sub">43일 모바일 카드 · 하루 한 장</span></a>'
-        '<a class="card card-alt" href="maps/index.html">'
-        '<span class="card-num">🗺️</span><span class="card-title">실행지도 8종</span>'
-        '<span class="card-sub">지역별 기준점 · Google Maps 연동</span></a>'
-        '<a class="card card-alt" href="tracker/index.html">'
-        '<span class="card-num">📋</span><span class="card-title">마스터 트래커</span>'
-        '<span class="card-sub">일정 · 예약 · 이동 · 숙소 · 대시보드</span></a>')
+    # 세 축 + 장소 — 이 사이트의 1급 진입점. 하단탭 글리프와 같은 기호를 쓴다.
+    axis = [("◉", "daily/index.html", "데일리", "43일 · 하루 한 장"),
+            ("▤", ITINERARY_URL, "일정", "전체 일정표와 이동"),
+            ("◇", "regions.html", "지역", "8개 거점"),
+            ("▧", "topics/index.html", "주제", "분류 10 · 상태 3"),
+            ("◈", "places/index.html", "장소", "갈 곳 83"),
+            ("⌖", "maps/index.html", "지도", "지역별 기준점")]
+    axis_rows = "".join(
+        f'<a class="list-row" href="{u}">'
+        f'<span class="lr-icon" aria-hidden="true">{g}</span>'
+        f'<span class="lr-text"><b class="lr-title">{n}</b>'
+        f'<span class="lr-sub">{s}</span></span>'
+        f'<span class="lr-go" aria-hidden="true">›</span></a>' for g, u, n, s in axis)
+    tool_rows = "".join(
+        f'<a class="list-row" href="{u}">'
+        f'<span class="lr-icon" aria-hidden="true">{g}</span>'
+        f'<span class="lr-text"><b class="lr-title">{n}</b>'
+        f'<span class="lr-sub">{s}</span></span>'
+        f'<span class="lr-go" aria-hidden="true">›</span></a>'
+        for g, u, n, s in (
+            ("▦", "tracker/index.html", "마스터 트래커", "예약 · 이동 · 숙소 · 대시보드"),
+            ("⤓", "maps/offline.html", "오프라인 지도 준비", "출발 전에 받아 둔다"),
+            ("◷", "credits.html", "사진 저작자 표시", "CC 라이선스와 출처")))
 
     body = f"""<section class="hero">
   <h1>{SITE_TITLE}</h1>
   <p class="period">{TRIP_PERIOD}</p>
-  <a href="#" class="nav-today btn-today">📍 오늘 일정 열기</a>
+  <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
 </section>
+<h2>어디서 볼 것인가</h2>
+<div class="list-group">{axis_rows}</div>
 <h2>여정</h2>
 <ol class="timeline">{''.join(stops)}</ol>
-<h2>시작하기</h2>
+<h2>읽는 법</h2>
 <div class="grid">{intro_cards}</div>
 <h2>도구</h2>
-<div class="grid">{tool_cards}</div>
-<p class="note">지도 배경 타일은 인터넷 연결 시 표시됩니다. 본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
+<div class="list-group">{tool_rows}</div>
+<p class="note">지도 배경 타일은 인터넷 연결 시 표시됩니다.
+본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
 """
     (SITE / "index.html").write_text(
         page("홈", body, rel=".", topbar_title=SITE_SHORT), encoding="utf-8")
@@ -2487,7 +2514,7 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
 
 <nav class="pager"><a href="index.html">← 실행지도 목록</a><span></span></nav>"""
     (out_dir / "offline.html").write_text(
-        page("오프라인 지도", body, rel=".."), encoding="utf-8")
+        page("오프라인 지도", body, rel="..", back=("지도", "maps/index.html")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "오프라인 지도 — Organic Maps", "c": "실행지도",
                          "u": "maps/offline.html"})
     amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
@@ -2547,6 +2574,10 @@ def build_maps():
                 'font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a>')
         text = text.replace('<div id="map"></div>', f'<div id="map"></div>{back}', 1)
         text = link_map_places(text, out_name)
+        # 실행지도는 원본 HTML 이라 페이지 셸을 거치지 않는다. 안전영역을 쓰려면
+        # 여기서도 viewport-fit=cover 를 넣어야 한다.
+        text = re.sub(r'(<meta name="viewport" content="(?![^"]*viewport-fit)[^"]*)"',
+                      r'\1, viewport-fit=cover"', text, count=1)
         (out_dir / out_name).write_text(text, encoding="utf-8")
         cards.append(f'<a class="card card-alt" href="{out_name}">'
                      f'<span class="card-num">🗺️</span><span class="card-title">{title}</span>'
@@ -2561,7 +2592,7 @@ def build_maps():
             + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
             + f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
-        page("실행지도", body, rel=".."), encoding="utf-8")
+        page("실행지도", body, rel="..", back=("홈", "index.html")), encoding="utf-8")
 
 
 # ---------------------------------------------------------------- tracker
@@ -2629,7 +2660,8 @@ def build_tracker():
                   if slug == "reservations" else "")
         body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{table}"
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel="..", topbar_title=f"트래커 · {label}",
+            page(label, body, rel="..", topbar_title=label,
+                 back=("트래커", "tracker/index.html"),
                  meta_line="TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준"),
             encoding="utf-8")
         cards.append(f'<a class="card card-alt" href="{slug}.html">'
@@ -2642,7 +2674,8 @@ def build_tracker():
             '<p class="meta">TP_Europe_Travel_Master_Tracker_v1.2.xlsx에서 변환</p>'
             f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
-        page("마스터 트래커", body, rel="..", topbar_title="마스터 트래커"),
+        page("마스터 트래커", body, rel="..", topbar_title="트래커",
+             back=("홈", "index.html")),
         encoding="utf-8")
 
 
@@ -2703,11 +2736,9 @@ def build_topics():
         slug = ALL_TOPIC_SLUG[key]
         body = (f'<h1>{label}</h1>'
                 f'<p class="meta">{TOPIC_HEAD[slug]} · 여행 전체 {len(items)}개 섹션</p>'
-                + coords_bar(rel, day=("43일 전체", "daily/index.html"),
-                             region=("8개 거점", "regions.html"), topic=(label, None))
                 + f'<div class="tp-list">{topic_list_html(items, rel)}</div>')
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel=rel, topbar_title=f"{label} — 전체",
+            page(label, body, rel=rel, topbar_title=label, back=("주제", "topics/index.html"),
                  subnav=topic_siblings(slug)), encoding="utf-8")
         cards.append(f'<a class="card" href="{slug}.html">'
                      f'<span class="card-title">{label}</span>'
@@ -2725,13 +2756,11 @@ def build_topics():
             f'<td>{html.escape(it["cat"])}</td>'
             f'<td>{html.escape(it["note"])}</td></tr>' for it in items)
         body = (f'<h1>{label}</h1><p class="meta">{lead}</p>'
-                + coords_bar(rel, day=("43일 전체", "daily/index.html"),
-                             region=("8개 거점", "regions.html"), topic=(label, None))
                 + '<div class="table-wrap"><table><thead><tr>'
                   '<th>지역</th><th>섹션</th><th>분류</th><th>표시</th>'
                   f'</tr></thead><tbody>{rows}</tbody></table></div>')
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel=rel, topbar_title=label,
+            page(label, body, rel=rel, topbar_title=label, back=("주제", "topics/index.html"),
                  subnav=topic_siblings(slug)), encoding="utf-8")
         st_cards.append(f'<a class="card" href="{slug}.html">'
                         f'<span class="card-title">{label}</span>'
@@ -2741,15 +2770,13 @@ def build_topics():
     hub = (f'<h1>주제</h1>'
            '<p class="meta">같은 종류의 내용을 여행 전체에서 한 번에 본다. '
            '일자·지역과 나란히 서는 세 번째 축이다.</p>'
-           + coords_bar(rel, day=("43일 전체", "daily/index.html"),
-                        region=("8개 거점", "regions.html"), topic=("전체 주제", None))
            + '<h2>상태로 보기</h2>'
              '<p class="note">배지 표시를 여행 전체에서 모은 것이다. 출발 전 점검에 쓴다.</p>'
            + f'<div class="rg-grid">{"".join(st_cards)}</div>'
            + '<h2>분류로 보기</h2>'
            + f'<div class="rg-grid">{"".join(cards)}</div>')
     (SITE / "topics" / "index.html").write_text(
-        page("주제", hub, rel=rel, topbar_title="주제",
+        page("주제", hub, rel=rel, topbar_title="주제", back=("홈", "index.html"),
              subnav=topic_siblings("index")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "주제 — 전체 목록", "c": "주제", "u": "topics/index.html"})
     print(f"  주제: 분류 {len(cards)}개 · 상태 {len(st_cards)}개 → topics/")
@@ -3011,10 +3038,6 @@ def build_places(timetable):
                                  f' · <span class="pl-basis">핀 이름 {html.escape(r["pin"])}</span>'))
         ex = place_excerpt(r)
         body = (f'<h1>{html.escape(r["name"])}</h1>'
-                + coords_bar(rel, day=(f'Day {days[0]}' if days else "미배정",
-                                       f'daily/day-{days[0]:02d}.html' if days else None),
-                             region=(c["region"], chapter_url(c)),
-                             topic=("여행정보", "topics/places.html"))
                 + '<div class="table-wrap"><table><tbody>'
                 + "".join(f'<tr><th>{k}</th><td>{v}</td></tr>' for k, v in rows)
                 + '</tbody></table></div>'
@@ -3022,6 +3045,7 @@ def build_places(timetable):
                 + f'<p class="note">이 장은 좌표다. 본문은 챕터에 있고 여기서 복제하지 않는다.</p>')
         (out_dir / f'{r["slug"]}.html').write_text(
             page(r["name"], body, rel=rel, topbar_title=r["name"],
+                 back=("장소", "places/index.html"),
                  subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
         SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
                              "u": f'places/{r["slug"]}.html'})
@@ -3043,12 +3067,9 @@ def build_places(timetable):
     idx = (f'<h1>장소</h1><p class="meta">이 가이드북의 최소 단위다. '
            f'여행 전체 {len(spots)}곳 · 갈 수 있는 곳만 담는다. '
            f'역·공항은 지도와 일정에서만 다룬다.</p>'
-           + coords_bar(rel, day=("43일 전체", "daily/index.html"),
-                        region=("8개 거점", "regions.html"),
-                        topic=("여행정보", "topics/places.html"))
            + "".join(groups))
     (out_dir / "index.html").write_text(
-        page("장소", idx, rel=rel, topbar_title="장소",
+        page("장소", idx, rel=rel, topbar_title="장소", back=("홈", "index.html"),
              subnav=place_siblings(spots, "index", by_ch)), encoding="utf-8")
     SEARCH_INDEX.append({"t": "장소 — 전체 목록", "c": "장소", "u": "places/index.html"})
     for r in spots:
