@@ -26,7 +26,8 @@ const ll=[];
 pts.forEach((p,i)=>{
  ll.push([p.lat,p.lon]);
  const marker=L.circleMarker([p.lat,p.lon],{radius:8,color:'#fff',weight:2,fillColor:colors[p.category],fillOpacity:.95}).addTo(map);
- marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}<br><small>${p.status}</small><br><a target="_blank" href="${p.url}">Google Maps 열기</a>`);
+ const PLACE={"BnF Richelieu": "bnf-richelieu", "Bourse de Commerce": "bourse-de-commerce-pinault-collection", "Giverny": "giverny", "Grand Palais": "grand-palais", "Montmartre": "montmartre-south-pigalle", "Orsay": "musee-d-orsay", "Louvre": "musee-du-louvre", "Notre-Dame": "notre-dame-de-paris", "Versailles": "versailles"};
+ marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}<br><small>${p.status}</small><br><a target="_blank" href="${p.url}">Google Maps 열기</a>${PLACE[p.name]?`<br><a href="../places/${PLACE[p.name]}.html">◇ 장소 카드</a>`:''}`);
 });
 L.polyline(ll,{color:'#59636e',weight:3,opacity:.6,dashArray:'7,8'}).addTo(map);
 map.fitBounds(L.latLngBounds(ll).pad(.15));
