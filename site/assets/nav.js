@@ -155,6 +155,7 @@
     // 지역 챕터는 지명 디렉터리를 쓴다 — 분할 여부와 무관하게 하위 페이지 전부
     if (/\/regions\.html$/.test(p) || /\/chapters\/[^/]+\/[^/]*$/.test(p))
       return "regions";
+    if (/\/topics\//.test(p)) return "topics";
     if (/\/maps\//.test(p)) return "maps";
     if (/\/tracker\//.test(p)) return "tracker";
     return "";

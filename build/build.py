@@ -24,6 +24,7 @@ import json
 import re
 import shutil
 import sys
+from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 from xml.etree import ElementTree
@@ -1209,6 +1210,7 @@ def drawer_html(rel):
   <nav class="dw-nav">
     <a href="{rel}/index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
     <a href="{rel}/daily/index.html" class="dw-home">🗓️ 데일리 가이드 — 43일 카드</a>
+    <a href="{rel}/topics/index.html" class="dw-home">▧ 주제 — 분류·상태로 전체 보기</a>
     <h3>시작하기</h3>{intro}
     <h3>지역 가이드</h3>{regions}
     <h3>실행지도</h3>{maps}
@@ -1219,7 +1221,112 @@ def drawer_html(rel):
 </aside>"""
 
 
-def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav=""):
+# 주제 축 인덱스. 지역 챕터를 훑어 카테고리별·상태별로 모은다.
+# 본문을 복제하지 않고 제목·발췌·앵커만 담는다 — 복제하면 갱신 때 어긋난다.
+TOPIC_INDEX = defaultdict(list)    # 카테고리 라벨 -> [항목]
+STATUS_INDEX = defaultdict(list)   # 'badge:pending' 등 -> [항목]
+
+HEADING_SCAN_RE = re.compile(r'<h([12]) id="([^"]+)"[^>]*>(.*?)</h\1>', re.S)
+TAG_RE = re.compile(r"<[^>]+>")
+BADGE_SPAN_RE = re.compile(r'<span class="(badge|grade) \1-(\w+)">(.*?)</span>', re.S)
+STATUS_WANTED = {"badge:pending", "badge:p0", "grade:essential"}
+
+
+def plain(fragment, limit=0):
+    t = html.unescape(TAG_RE.sub(" ", fragment))
+    t = re.sub(r"\s+", " ", t).strip()
+    return (t[:limit].rstrip() + "…") if limit and len(t) > limit else t
+
+
+def scan_sections(c, body, url, fixed_cat=None):
+    """렌더된 지역 챕터 본문에서 주제·상태 인덱스에 넣을 것을 한 번에 뽑는다.
+
+    단일 페이지 챕터는 h1 이 카테고리고 그 아래 h2 가 섹션이다. 분할 챕터는
+    페이지 하나가 곧 카테고리라 fixed_cat 으로 받는다.
+    """
+    if c["kind"] != "region":
+        return
+    labels = {label for _, label in CATEGORIES}
+    marks = list(HEADING_SCAN_RE.finditer(body))
+    cat = fixed_cat
+    for k, m in enumerate(marks):
+        name = plain(m.group(3))
+        chunk = body[m.end():marks[k + 1].start() if k + 1 < len(marks) else len(body)]
+        if m.group(1) == "1":
+            if fixed_cat is None:
+                cat = name if name in labels else None
+            continue
+        if not cat:
+            continue
+        item = {"region": c["region"], "slug": c["slug"], "title": name,
+                "url": f'{url}#{m.group(2)}', "excerpt": plain(chunk, 130)}
+        TOPIC_INDEX[cat].append(item)
+        for kind, sub, label in BADGE_SPAN_RE.findall(chunk):
+            key = f"{kind}:{sub}"
+            if key in STATUS_WANTED:
+                STATUS_INDEX[key].append(dict(item, note=plain(label), cat=cat))
+
+
+def split_coords(c, rel, fname, page_cat):
+    """분할 챕터 페이지의 좌표. 일자 페이지는 그 날 카드로 바로 건다."""
+    dm = re.match(r"day-(\d+)\.html$", fname)
+    if dm:
+        n = int(dm.group(1))
+        day = (f"Day {n} 카드", f"daily/day-{n:02d}.html")
+    else:
+        first = day_no(c["start"])
+        day = (f"Day {first}–{day_no(c['end'])}", f"daily/day-{first:02d}.html")
+    slug = next((ALL_TOPIC_SLUG[k] for k, lab in CATEGORIES if lab == page_cat), None)
+    topic = ((page_cat, f"topics/{slug}.html") if slug else ("전체 주제", "topics/index.html"))
+    return coords_bar(rel, day=day, region=(c["region"], None), topic=topic)
+
+
+def chapter_coords(c, rel):
+    """지역 챕터의 좌표 — 일자 축은 첫날 카드로, 주제 축은 주제 허브로 연다."""
+    if c["kind"] != "region":
+        return ""
+    first, last = day_no(c["start"]), day_no(c["end"])
+    return coords_bar(rel,
+                      day=(f"Day {first}–{last}", f"daily/day-{first:02d}.html"),
+                      region=(c["region"], None),
+                      topic=("전체 주제", "topics/index.html"))
+
+
+DAY_H2_RE = re.compile(r'(<h2 id="[^"]*">Day (\d+) · [^<]*</h2>)')
+
+
+def link_day_cards(body, rel):
+    """챕터 본문의 Day 섹션마다 그 날 데일리 카드로 가는 링크를 붙인다.
+
+    데일리 → 챕터 방향은 있었지만 역방향이 없었다. 현장에서는 챕터를 읽다가
+    '오늘 카드' 로 돌아가는 동선이 더 잦다.
+    """
+    def add(m):
+        n = int(m.group(2))
+        return (f'{m.group(1)}<p class="day-jump">'
+                f'<a href="{rel}/daily/day-{n:02d}.html">◉ Day {n} 카드 · 시간표</a></p>')
+    return DAY_H2_RE.sub(add, body)
+
+
+def coords_bar(rel, *, day=None, region=None, topic=None):
+    """일자·지역·주제 세 축의 현재 좌표. 현재 축은 굳고 나머지는 링크가 된다.
+
+    각 인자는 (라벨, URL 또는 None) 이다. URL 이 None 이면 현재 페이지다.
+    """
+    cells = []
+    for axis, item in (("일자", day), ("지역", region), ("주제", topic)):
+        if item is None:
+            continue
+        label, url = item
+        inner = f'<b>{axis}</b><span>{html.escape(label)}</span>'
+        cells.append(f'<a href="{rel}/{url}">{inner}</a>' if url
+                     else f'<span class="cd-here">{inner}</span>')
+    if not cells:
+        return ""
+    return (f'<nav class="coords" aria-label="일자·지역·주제로 이동">{"".join(cells)}</nav>')
+
+
+def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="", coords=""):
     meta_html = f'<p class="meta">{meta_line}</p>' if meta_line else ""
     tb_title = html.escape(topbar_title or title)
     return f"""<!DOCTYPE html>
@@ -1240,6 +1347,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav=""):
     <a href="{rel}/tracker/index.html">트래커</a>
   </nav>
 </header>
+{coords}
 {subnav}
 {drawer_html(rel)}
 <main>
@@ -1255,8 +1363,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav=""):
   <a href="#" class="nav-today" data-tab="today"><b aria-hidden="true">◉</b><span>오늘</span></a>
   <a href="{rel}/{ITINERARY_URL}" data-tab="itinerary"><b aria-hidden="true">▤</b><span>일정</span></a>
   <a href="{rel}/regions.html" data-tab="regions"><b aria-hidden="true">◇</b><span>지역</span></a>
+  <a href="{rel}/topics/index.html" data-tab="topics"><b aria-hidden="true">▧</b><span>주제</span></a>
   <a href="{rel}/maps/index.html" data-tab="maps"><b aria-hidden="true">⌖</b><span>지도</span></a>
-  <a href="{rel}/tracker/index.html" data-tab="tracker"><b aria-hidden="true">▦</b><span>트래커</span></a>
 </nav>
 <button id="back-top" aria-label="맨 위로">↑</button>
 <script src="{rel}/assets/data.js" defer></script>
@@ -1383,7 +1491,8 @@ def split_day_sections(schedule_md):
     return head, days
 
 
-def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=""):
+def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra="",
+                      coords=""):
     """분할 페이지 하나를 기존 페이지 셸로 렌더한다.
 
     별도 마크다운 변환기를 두지 않는다 — 드로어·하단탭·검색·오프라인 처리와
@@ -1398,9 +1507,9 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
                   + " › ".join(crumbs) + "</nav>")
     sub_html = f'<p class="page-sub">{html.escape(sub)}</p>' if sub else ""
     content = crumb_html + sub_html + extra + body + pager
-    return page(title, content, rel=rel, topbar_title=title,
-                meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'), \
-        flatten_tokens(toc_tokens)
+    return (page(title, content, rel=rel, topbar_title=title, coords=coords,
+                 meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'),
+            flatten_tokens(toc_tokens), body)
 
 
 def build_split_chapter(c, body_md, map_links):
@@ -1419,17 +1528,17 @@ def build_split_chapter(c, body_md, map_links):
     by_cat = {k: v for k, v in sections}
     sched_head, days = split_day_sections(by_cat.get("schedule", ""))
 
-    pages = []      # (파일명, 제목, 부제, 마크다운, 카드용 설명)
+    pages = []      # (파일명, 제목, 부제, 마크다운, 카테고리 라벨)
     for n, title, md_body in days:
-        pages.append((f"day-{n:02d}.html", title, "", md_body, None))
+        pages.append((f"day-{n:02d}.html", title, "", md_body, CAT_LABEL["schedule"]))
     for key, label in CATEGORIES:
         if key == "schedule" or key not in by_cat:
             continue
         slug = TOPIC_SLUG[key]
-        pages.append((f"{slug}.html", label, TOPIC_SUB[slug], by_cat[key], None))
+        pages.append((f"{slug}.html", label, TOPIC_SUB[slug], by_cat[key], label))
 
     made = []
-    for idx, (fname, title, sub, md_body, _d) in enumerate(pages):
+    for idx, (fname, title, sub, md_body, page_cat) in enumerate(pages):
         prev_link = next_link = ""
         if idx > 0:
             p = pages[idx - 1]
@@ -1439,11 +1548,13 @@ def build_split_chapter(c, body_md, map_links):
             next_link = f'<a href="{nx[0]}">{html.escape(nx[1])} →</a>'
         crumbs = [f'<a href="{rel}/regions.html">지역</a>', hub_crumb,
                   f'<span>{html.escape(title)}</span>']
-        rendered, flat = render_split_page(
+        rendered, flat, page_body = render_split_page(
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
-            extra=(places_block(c, map_links, "../..") if fname == "places.html" else ""))
+            extra=(places_block(c, map_links, "../..") if fname == "places.html" else ""),
+            coords=split_coords(c, rel, fname, page_cat))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
+        scan_sections(c, page_body, url, fixed_cat=page_cat)
         SEARCH_INDEX.append({"t": f'{c["region"]} · {title}', "c": c["title"], "u": url})
         for tok in flat:
             name = tok["name"].strip()
@@ -1767,13 +1878,15 @@ def build_chapters():
             next_link = f'<a href="{rel}/{chapter_url(nx)}">{nx["title"]} →</a>'
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
 
-        content = related_box(c) + toc_html(toc_tokens) + body + pager
+        scan_sections(c, body, chapter_url(c))
+        content = related_box(c) + toc_html(toc_tokens) + link_day_cards(body, rel) + pager
         dest = SITE / chapter_url(c)
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(
             page(c["title"], content, rel=rel,
                  topbar_title=c["title"],
                  meta_line=" · ".join(meta_bits),
+                 coords=chapter_coords(c, rel),
                  subnav=chapter_subnav(c, flat)),
             encoding="utf-8")
         write_legacy_redirect(c)
@@ -1941,6 +2054,10 @@ def build_daily():
         print("데일리 카드 누락:", missing)
         sys.exit(1)
 
+    # Day 섹션 앵커는 챕터 빌드가 모아 둔다. 여기서 합쳐야 데일리 카드가
+    # 챕터 첫머리가 아니라 그 날 섹션으로 바로 간다 — 파리 챕터는 5만 자다.
+    CHAPTER_DATE_URL.update(DAY_OVERRIDES)
+
     audit = load_audit()
     fatigue, timetable, conflicts = load_day_details()
     for x in conflicts:
@@ -2035,8 +2152,15 @@ def build_daily():
 {tt_block}
 {card_block}
 {pager}"""
+        region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
+                       if c else ("이동 중", ITINERARY_URL))
         (out_dir / f"day-{n:02d}.html").write_text(
-            page(title, body, rel="..", topbar_title=title), encoding="utf-8")
+            page(title, body, rel="..", topbar_title=title,
+                 coords=coords_bar("..",
+                                   day=(f"Day {n} · {date_label(d)} {wd}", None),
+                                   region=region_cell,
+                                   topic=("전체 주제", "topics/index.html"))),
+            encoding="utf-8")
 
         index_items.append(
             f'<a class="daily-item" href="day-{n:02d}.html">'
@@ -2366,6 +2490,102 @@ def build_tracker():
         encoding="utf-8")
 
 
+
+# ---------------------------------------------------------------- 주제 축
+
+# 카테고리 슬러그는 분할 챕터와 같은 것을 쓴다 (schedule 은 일자 축이라 따로).
+ALL_TOPIC_SLUG = dict(TOPIC_SLUG, schedule="days")
+TOPIC_HEAD = dict(TOPIC_SUB, days="언제 무엇을 하는가")
+
+STATUS_PAGES = [
+    ("badge:pending", "reverify", "출발 전 확인",
+     "재확인 표시가 붙은 항목을 여행 전체에서 모았다. 운영시간·요금·운행처럼 "
+     "바뀌는 정보이거나 아직 교차 확인이 안 된 서술이다."),
+    ("badge:p0", "p0", "P0 연결",
+     "놓치면 다음 일정이 무너지는 연결이다. 항공·렌터카·고속철처럼 대체가 어려운 것들이다."),
+    ("grade:essential", "essential", "필수 방문지",
+     "각 지역에서 필수 등급이 붙은 장소다. 시간이 없을 때 마지막까지 남기는 것들이다."),
+]
+
+
+def topic_list_html(items, rel):
+    """지역별로 묶어 섹션 목록을 낸다. 본문이 아니라 발췌와 앵커만 담는다."""
+    out, cur = [], None
+    for it in items:
+        if it["region"] != cur:
+            cur = it["region"]
+            out.append(f'<h2 class="tp-region">{html.escape(cur)}</h2>')
+        ex = f'<span class="tp-ex">{html.escape(it["excerpt"])}</span>' if it["excerpt"] else ""
+        out.append(f'<a class="tp-item" href="{rel}/{it["url"]}">'
+                   f'<span class="tp-title">{html.escape(it["title"])}</span>{ex}</a>')
+    return "".join(out)
+
+
+def build_topics():
+    """일자·지역과 나란히 서는 세 번째 축. 카테고리 10개 + 상태 3개."""
+    out_dir = SITE / "topics"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    rel = ".."
+    order = [c["region"] for c in CHAPTERS if c["kind"] == "region"]
+    rank = {r: i for i, r in enumerate(order)}
+
+    cards = []
+    for key, label in CATEGORIES:
+        items = sorted(TOPIC_INDEX.get(label, []), key=lambda x: rank.get(x["region"], 99))
+        if not items:
+            continue
+        slug = ALL_TOPIC_SLUG[key]
+        body = (f'<h1>{label}</h1>'
+                f'<p class="meta">{TOPIC_HEAD[slug]} · 여행 전체 {len(items)}개 섹션</p>'
+                + coords_bar(rel, day=("43일 전체", "daily/index.html"),
+                             region=("8개 거점", "regions.html"), topic=(label, None))
+                + f'<div class="tp-list">{topic_list_html(items, rel)}</div>')
+        (out_dir / f"{slug}.html").write_text(
+            page(label, body, rel=rel, topbar_title=f"{label} — 전체"), encoding="utf-8")
+        cards.append(f'<a class="card" href="{slug}.html">'
+                     f'<span class="card-title">{label}</span>'
+                     f'<span class="card-sub">{TOPIC_HEAD[slug]}</span>'
+                     f'<span class="card-n">{len(items)}개 섹션</span></a>')
+        SEARCH_INDEX.append({"t": f"{label} — 전체 보기", "c": "주제",
+                             "u": f"topics/{slug}.html"})
+
+    st_cards = []
+    for key, slug, label, lead in STATUS_PAGES:
+        items = sorted(STATUS_INDEX.get(key, []), key=lambda x: rank.get(x["region"], 99))
+        rows = "".join(
+            f'<tr><td>{html.escape(it["region"])}</td>'
+            f'<td><a href="{rel}/{it["url"]}">{html.escape(it["title"])}</a></td>'
+            f'<td>{html.escape(it["cat"])}</td>'
+            f'<td>{html.escape(it["note"])}</td></tr>' for it in items)
+        body = (f'<h1>{label}</h1><p class="meta">{lead}</p>'
+                + coords_bar(rel, day=("43일 전체", "daily/index.html"),
+                             region=("8개 거점", "regions.html"), topic=(label, None))
+                + '<div class="table-wrap"><table><thead><tr>'
+                  '<th>지역</th><th>섹션</th><th>분류</th><th>표시</th>'
+                  f'</tr></thead><tbody>{rows}</tbody></table></div>')
+        (out_dir / f"{slug}.html").write_text(
+            page(label, body, rel=rel, topbar_title=label), encoding="utf-8")
+        st_cards.append(f'<a class="card" href="{slug}.html">'
+                        f'<span class="card-title">{label}</span>'
+                        f'<span class="card-n">{len(items)}건</span></a>')
+        SEARCH_INDEX.append({"t": label, "c": "주제", "u": f"topics/{slug}.html"})
+
+    hub = (f'<h1>주제</h1>'
+           '<p class="meta">같은 종류의 내용을 여행 전체에서 한 번에 본다. '
+           '일자·지역과 나란히 서는 세 번째 축이다.</p>'
+           + coords_bar(rel, day=("43일 전체", "daily/index.html"),
+                        region=("8개 거점", "regions.html"), topic=("전체 주제", None))
+           + '<h2>상태로 보기</h2>'
+             '<p class="note">배지 표시를 여행 전체에서 모은 것이다. 출발 전 점검에 쓴다.</p>'
+           + f'<div class="rg-grid">{"".join(st_cards)}</div>'
+           + '<h2>분류로 보기</h2>'
+           + f'<div class="rg-grid">{"".join(cards)}</div>')
+    (SITE / "topics" / "index.html").write_text(
+        page("주제", hub, rel=rel, topbar_title="주제"), encoding="utf-8")
+    SEARCH_INDEX.append({"t": "주제 — 전체 목록", "c": "주제", "u": "topics/index.html"})
+    print(f"  주제: 분류 {len(cards)}개 · 상태 {len(st_cards)}개 → topics/")
+
+
 # ---------------------------------------------------------------- data.js
 
 def build_data_js():
@@ -2549,6 +2769,8 @@ def main():
     build_regions()
     print("라이선스 빌드:")
     build_credits()
+    print("주제 축 빌드:")
+    build_topics()
     print("트래커 빌드:")
     build_tracker()
     build_data_js()
