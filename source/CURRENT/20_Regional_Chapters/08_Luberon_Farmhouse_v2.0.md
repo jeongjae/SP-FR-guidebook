@@ -213,7 +213,7 @@ source_priority: "공식 관광기구·지자체·시설·숙박업체 → 지�
 | 시장 | **일요일에는 없다.** 금요일 오전 · 화요일 저녁(4–10월) |
 | 체류 | 60–90분 |
 
-⚠ **행사 확인 필요** — 기존 원고에 `Salon du Carnet de Voyage`(여행 스케치북 행사)가 Day 16 항목으로 들어 있다. **이번 조사에서 2026년 개최 여부·날짜를 확인하지 못했다.** {{badge:pending|확인 필수}} 출발 전 뤼르마랭 관광안내소에 직접 확인할 것.
+✓ **개최 확인** — `Lourmarin des Carnets · 9e Salon du Carnet de Voyage` 는 **2026년 9월 12–13일**에 열린다. 장소는 La Fruitière Numérique(Avenue du 8 Mai). 카르네티스트 45명, 워크숍·강연·상영. **Day 16(9/13)이 마지막 날이다.** 출처: lourmarindescarnets.fr · lourmarin.com · 뤼브롱 지역자연공원. 시각·입장료는 {{badge:pending|2026-08 확인 · 출발 전 재확인}}
 
 ---
 
@@ -554,7 +554,7 @@ Day 13에 본 엑상의 바로크 저택, Day 2의 사그라다 파밀리아와 
 ### 사진 에셋 브리프 — Salon du Carnet de Voyage의 스케치북 전시
 - 설명: 여행스케치, 수채화, 드로잉 노트가 펼쳐진 행사 풍경. Jason의 관심과 직접 연결되는 이미지.
 
-9월 13일에는 Lourmarin의 **8e Salon du Carnet de Voyage** 마지막 날이 열린다. 공식 일정은 09:00–18:30, 입장료 €6–10 범위다. 일반적인 마을 산책보다 Jason에게 특별한 가치가 있으므로, 이번 이동일의 핵심으로 둔다.
+9월 13일에는 Lourmarin의 **9e Salon du Carnet de Voyage**(Lourmarin des Carnets) 마지막 날이 열린다. 행사는 9월 12–13일 이틀이고 일요일은 09:00–18:30 이다. 입장료 €6–10 범위는 {{badge:pending|2026-08 확인 · 출발 전 재확인}}. 일반적인 마을 산책보다 Jason에게 특별한 가치가 있으므로, 이번 이동일의 핵심으로 둔다.
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
@@ -1917,7 +1917,7 @@ Aix 체크아웃 후 Lourmarin에서 여행의 속도를 낮추는 전환일이�
 | Village des Bories (계절 농업 노동용 임시 석조 거처) | 확인 |
 | Lourmarin·카뮈 (장 그르니에·로랑비베르 재단 1930–31 · 르네 샤르 권유 · M. 테라스 가명 · 올리에·로르모 영업 중 · 1913 알제리 출생 · 1960 빌블르뱅 사고 46세 · 미셸 갈리마르 · 정착 2년 전 · 무덤 위치와 형태 · 앙리 보스코 · 프로방스 최초 르네상스 성 · 성 뒤 올리브밭) | 복수 출처 확인 |
 | L'Isle-sur-la-Sorgue (콩타의 베네치아 · 18세기 운하 · 19세기 물레 60개 · 순회로 2km 1시간 · 300+ 골동품상 · 금–월 개점 · 목 오후–일 전 가게 개점 · 르네 샤르 출생지 · 주차 안내 · 피터 메일 인용) | 복수 출처 확인 |
-| **Salon du Carnet de Voyage 2026** | **[확인 필수]** — 개최 여부·날짜 미확인. 기존 원고에만 존재 |
+| **Salon du Carnet de Voyage 2026** | **복수 출처 확인** — `Lourmarin des Carnets · 9e Salon` , **2026/9/12–13**, La Fruitière Numérique(Avenue du 8 Mai, Lourmarin). 카르네티스트 45명. 일요일 09:00–18:30. **Day 16(9/13)이 마지막 날 — 원고의 날짜가 맞았다.** 판 번호만 8e → 9e 로 고쳤다. 출처: lourmarindescarnets.fr · lourmarin.com · 뤼브롱 지역자연공원 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | **Goult 상세** | **[보완 필요]** |
 | **Ménerbes · Oppède-le-Vieux 상세** | **[보완 필요]** |
 | **Village des Bories 운영·요금** | **[확인 필요]** |
@@ -1932,7 +1932,7 @@ Aix 체크아웃 후 Lourmarin에서 여행의 속도를 낮추는 전환일이�
 | **9월 라벤더 부재** | 확인 (방문지 파일의 Sénanque 항목 참조) |
 | **Fontaine-de-Vaucluse 상세** | **[확인 필요]** — 갈수기 수량 미검증 |
 | **오커 워크숍 · Mines de Bruoux** | **[확인 필요]** |
-| **Salon du Carnet de Voyage 2026** | **[확인 필수]** — 방문지 파일 참조 |
+| **Salon du Carnet de Voyage 2026** | **복수 출처 확인** — `Lourmarin des Carnets · 9e Salon` , **2026/9/12–13**, La Fruitière Numérique(Avenue du 8 Mai, Lourmarin). 카르네티스트 45명. 일요일 09:00–18:30. **Day 16(9/13)이 마지막 날 — 원고의 날짜가 맞았다.** 판 번호만 8e → 9e 로 고쳤다. 출처: lourmarindescarnets.fr · lourmarin.com · 뤼브롱 지역자연공원 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | **9월 중순 일몰 시각** | **[확인 필요]** |
 | 뤼베롱 AOC 와인 | 일반 지식. **[교차 확인 권장]** |
 | 타프나드·아파나드 구분 | **[교차 확인 권장]** |
