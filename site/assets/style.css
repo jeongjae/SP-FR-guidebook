@@ -136,7 +136,7 @@ img { max-width: 100%; height: auto; }
   color: var(--accent-ink);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-#menu-btn {
+#menu-btn, #search-btn {
   min-width: var(--tap);
   min-height: var(--tap);
   background: none;
@@ -146,7 +146,8 @@ img { max-width: 100%; height: auto; }
   cursor: pointer;
   border-radius: 6px;
 }
-#menu-btn:hover { background: rgba(255, 255, 255, 0.14); }
+#menu-btn:hover, #search-btn:hover { background: rgba(255, 255, 255, 0.14); }
+#search-btn { font-size: 22px; }
 .tb-title {
   flex: 1;
   display: flex;
@@ -162,20 +163,6 @@ img { max-width: 100%; height: auto; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.tb-links { display: none; gap: 2px; }
-.tb-links a {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 12px;
-  color: var(--accent-ink);
-  text-decoration: none;
-  font-size: 0.86rem;
-  font-weight: 600;
-  border-radius: 6px;
-}
-.tb-links a:hover { background: rgba(255, 255, 255, 0.14); }
-@media (min-width: 768px) { .tb-links { display: flex; } }
 
 /* ================= 챕터 서브내비 ================= */
 .subnav {
@@ -193,6 +180,25 @@ img { max-width: 100%; height: auto; }
   scrollbar-width: none;
 }
 .subnav::-webkit-scrollbar { display: none; }
+/* 축마다 라벨을 달아 주제와 일자가 한 줄에 뭉개지지 않게 한다 */
+.sn-group {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+.sn-group + .sn-group {
+  margin-left: 4px;
+  padding-left: 11px;
+  border-left: 1px solid var(--border);
+}
+.sn-label {
+  flex: none;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
 .sn-layers {
   display: flex;
   flex-shrink: 0;

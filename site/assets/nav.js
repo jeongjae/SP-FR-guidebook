@@ -18,6 +18,12 @@
   }
   if (menuBtn && drawer && overlay) {
     menuBtn.addEventListener("click", openDrawer);
+    var searchBtn = $("#search-btn");
+    if (searchBtn) searchBtn.addEventListener("click", function () {
+      openDrawer();
+      var inp = $("#search-input");
+      if (inp) inp.focus();     /* 검색 버튼은 데스크톱 여부와 무관하게 포커스한다 */
+    });
     overlay.addEventListener("click", closeDrawer);
     var closeBtn = $("#drawer-close");
     if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
