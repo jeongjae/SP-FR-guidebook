@@ -1733,8 +1733,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
   <a href="#" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
   <a href="{rel}/{ITINERARY_URL}" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
   <a href="{rel}/regions.html" data-tab="regions"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>지역</span></a>
-  <a href="{rel}/topics/index.html" data-tab="topics"><b class="ic ic-only ic-topic" aria-hidden="true"></b><span>주제</span></a>
-  <a href="{rel}/maps/index.html" data-tab="maps"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="{rel}/tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="#search" class="nav-search" data-tab="search"><b class="ic ic-only ic-search" aria-hidden="true"></b><span>검색</span></a>
 </nav>
 <button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
 <script src="{rel}/assets/data.js" defer></script>
@@ -2803,7 +2803,12 @@ def build_daily():
 # ---------------------------------------------------------------- home
 
 def build_home():
-    """홈 — 여정 하나로 연다. 축 진입은 하단탭과 좌표 바가 맡는다."""
+    """홈 — 여행자가 지금 할 행동부터 고른다.
+
+    편집 분류가 아니라 오늘/일정/지역/준비/검색/비상 순으로 연다. 상세
+    여정과 주제·지도는 아래에서 계속 접근할 수 있지만 첫 화면의 선택지를
+    압도하지 않는다.
+    """
     stops, prev_es = [], False
     for c in CHAPTERS:
         if c["kind"] != "region":
@@ -2843,8 +2848,20 @@ def build_home():
         f'<span class="card-sub">{c["sub"]}</span></a>'
         for c in CHAPTERS if c["kind"] != "region")
 
-    # 하단탭(L0)이 없는 진입점은 여기가 유일하다. 햄버거 메뉴를 지웠으므로
-    # 데일리 목록·장소 목록도 여기 있어야 한다 — 없으면 갈 길이 끊긴다.
+    primary_rows = "".join(
+        f'<a class="home-action{extra}" href="{u}">'
+        f'<span class="ha-icon ic ic-only ic-{g}" aria-hidden="true"></span>'
+        f'<span class="ha-copy"><b>{n}</b><span>{s}</span></span>'
+        f'<span class="lr-go" aria-hidden="true">›</span></a>'
+        for g, u, n, s, extra in (
+            ("list", ITINERARY_URL, "43일 일정", "날짜별 전체 여정을 확인", ""),
+            ("region", "regions.html", "지역별 가이드", "8개 거점의 일정과 생활권", ""),
+            ("check", "tracker/index.html", "여행 준비", "예약 · 교통 · 숙소 상태", ""),
+            ("search", "#search", "통합 검색", "날짜 · 장소 · 식당 · 교통 찾기", " nav-search"),
+            ("flag", "maps/offline.html", "비상 · 오프라인", "연결이 약할 때 필요한 정보", "")))
+
+    # 하단탭(L0)이 없는 보조 진입점은 홈에 남긴다. 본문을 복제하지 않고
+    # 원본 목록으로만 연결해 길이 끊기지 않게 한다.
     tool_rows = "".join(
         f'<a class="list-row" href="{u}">'
         f'<span class="lr-icon ic ic-only ic-{g}" aria-hidden="true"></span>'
@@ -2852,11 +2869,11 @@ def build_home():
         f'<span class="lr-sub">{s}</span></span>'
         f'<span class="lr-go" aria-hidden="true">›</span></a>'
         for g, u, n, s in (
-            ("today", "daily/index.html", "데일리 카드", "43일을 한 줄씩"),
+            ("today", "daily/index.html", "데일리 카드 전체", "43일을 한 줄씩"),
             ("pin", "places/index.html", "장소", "갈 곳 전체 목록"),
+            ("topic", "topics/index.html", "주제별 보기", "먹거리 · 교통 · 숙박 등"),
+            ("map", "maps/index.html", "지역 지도", "주요 기준점과 외부 길찾기"),
             ("book", "chapters/how-to-use.html", "가이드 사용법", "이 가이드북을 읽는 법"),
-            ("table", "tracker/index.html", "마스터 트래커", "예약 · 이동 · 숙소 · 대시보드"),
-            ("download", "maps/offline.html", "오프라인 지도 준비", "출발 전에 받아 둔다"),
             ("license", "credits.html", "사진 저작자 표시", "CC 라이선스와 출처")))
 
     body = f"""<section class="hero">
@@ -2864,13 +2881,15 @@ def build_home():
   <p class="period">{TRIP_PERIOD}</p>
   <div class="today-bar">
     <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
-    <a href="#" class="nav-today btn-today">일정 가기</a>
+    <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
   </div>
 </section>
+<nav class="home-actions" aria-label="여행 주요 기능">{primary_rows}</nav>
+<h2 class="ic ic-list">전체 여정</h2>
 <ol class="timeline">{''.join(stops)}</ol>
 <h2 class="ic ic-book">Quick Summary</h2>
 <div class="grid">{intro_cards}</div>
-<h2 class="ic ic-table">도구</h2>
+<h2 class="ic ic-topic">더 보기</h2>
 <div class="list-group">{tool_rows}</div>
 <p class="note">지도 배경 타일은 인터넷 연결 시 표시됩니다.
 본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
@@ -3839,6 +3858,30 @@ def check_phase1_reader_guards():
     print("Phase 1 독자 화면 가드: 경계 탐색 · 검색 표기 · 오늘 fallback 이상 없음")
 
 
+def check_phase3_navigation_guards():
+    """여행 행동 중심의 전역 메뉴와 홈 진입점이 유지되는지 검사한다."""
+    problems = []
+    home = (SITE / "index.html").read_text(encoding="utf-8")
+    tabs = re.findall(r'<a [^>]*data-tab="([^"]+)"[^>]*>.*?<span>([^<]+)</span></a>',
+                      home, re.S)
+    expected = [("today", "오늘"), ("itinerary", "일정"), ("regions", "지역"),
+                ("prepare", "준비"), ("search", "검색")]
+    if tabs != expected:
+        problems.append(f"전역 메뉴 {tabs} (기대값 {expected})")
+    for label in ("43일 일정", "지역별 가이드", "여행 준비", "통합 검색", "비상 · 오프라인"):
+        if label not in home:
+            problems.append(f"홈 주요 행동 누락: {label}")
+    nav = (SITE / "assets" / "nav.js").read_text(encoding="utf-8")
+    if 'd < G.tripStart' not in nav or '(G.today || {})[G.tripStart]' not in nav:
+        problems.append("출발 전 오늘 버튼이 다음 여행일로 연결되지 않는다")
+    if problems:
+        print("Phase 3 내비게이션 가드 실패:")
+        for p in problems:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 3 내비게이션 가드: 5탭 · 홈 5행동 · 다음 여행일 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -3931,6 +3974,7 @@ def main():
     check_naming()
     check_day_sections()
     check_phase1_reader_guards()
+    check_phase3_navigation_guards()
     check_links()
     check_dates()
     check_places()

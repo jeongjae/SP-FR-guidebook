@@ -626,7 +626,16 @@ body.has-large-title.scrolled-past .tb-crumbs { opacity: 1; }
   background: var(--accent);
 }
 
-@media (min-width: 768px) { .bottomnav { display: none; } }
+@media (min-width: 768px) {
+  .bottomnav {
+    left: 50%; right: auto;
+    width: min(560px, calc(100% - 32px));
+    transform: translateX(-50%);
+    border: 1px solid var(--separator);
+    border-bottom: 0;
+    border-radius: var(--r-card) var(--r-card) 0 0;
+  }
+}
 
 /* ================= 본문 ================= */
 main {
@@ -634,10 +643,8 @@ main {
   margin: 0 auto;
   padding: 20px 16px 48px;
 }
-@media (max-width: 767px) {
-  main   { padding-bottom: 96px; }
-  footer { padding-bottom: 84px !important; }
-}
+main   { padding-bottom: 96px; }
+footer { padding-bottom: 84px !important; }
 
 h1 { font-size: 1.75rem; line-height: 1.3;  margin: 1.2em 0 0.5em; letter-spacing: -0.02em; }
 h2 {
@@ -912,6 +919,38 @@ nav.pager a {
   letter-spacing: -0.01em;
 }
 .today-date.today-out { font-size: var(--t-callout); color: var(--text-2); }
+
+/* 홈의 첫 선택은 편집 분류가 아니라 여행 행동이다. 카드 그리드보다 빠르게
+   훑을 수 있는 단일 목록으로 두고, 모바일 첫 화면에 일부가 보이게 압축한다. */
+.home-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s2);
+  margin: var(--s4) 0 var(--s5);
+}
+.home-action {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: var(--s2);
+  min-height: 78px;
+  padding: var(--s3) var(--s4);
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  text-decoration: none;
+}
+.home-action:hover { border-color: var(--accent); }
+.ha-icon { color: var(--accent); font-size: 25px; }
+.ha-copy { min-width: 0; }
+.ha-copy b, .ha-copy span { display: block; }
+.ha-copy b { font-size: var(--t-subhead); line-height: 1.3; }
+.ha-copy span { margin-top: 3px; color: var(--text-2); font-size: var(--t-foot); line-height: 1.35; }
+@media (max-width: 560px) {
+  .home-actions { grid-template-columns: 1fr; }
+  .home-action { min-height: 68px; }
+}
 
 .tl-map:hover { background: var(--accent); color: var(--accent-ink); }
 
