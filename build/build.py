@@ -2055,12 +2055,18 @@ def load_audit():
     return rows
 
 
+_DAY_DETAILS = None
+
+
 def load_day_details():
     """지역 챕터에서 날짜별 피로도와 시간표를 긁는다.
 
     피로도는 원고에 있는 날만 담는다. 없는 날을 추정해 채우지 않는다 —
     현장에서 틀린 수치는 없는 것보다 나쁘다.
     """
+    global _DAY_DETAILS
+    if _DAY_DETAILS is not None:
+        return _DAY_DETAILS
     fatigue, timetable, conflicts = {}, {}, []
     for c in CHAPTERS:
         if c["kind"] != "region":
@@ -2114,7 +2120,8 @@ def load_day_details():
     for key, per in fatigue.items():
         if len(set(per.values())) > 1:
             conflicts.append(f"{key} {per}")
-    return fatigue, timetable, conflicts
+    _DAY_DETAILS = (fatigue, timetable, conflicts)
+    return _DAY_DETAILS
 
 
 def fatigue_html(value):
@@ -2225,6 +2232,21 @@ def build_daily():
             '<a href="../maps/offline.html">◇ 오프라인 지도</a>',
             '<a href="index.html">◉ 전체 데일리 목록</a>']
 
+        # ── 6b. 이 날의 장소 — 장소 축에서 되돌아오는 문
+        spots = PLACES_BY_DAY.get(n, [])
+        if spots:
+            def chip(s):
+                g = f' <b>{GRADE_LABEL[s["grade"]]}</b>' if s["grade"] else ""
+                return (f'<a class="pl-day" href="../places/{s["slug"]}.html">'
+                        f'{html.escape(s["name"])}{g}</a>')
+
+            chips = "".join(chip(s) for s in spots)
+            place_block = (f'<h2>이 날의 장소</h2><div class="pl-chips">{chips}</div>'
+                           f'<p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. '
+                           f'하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>')
+        else:
+            place_block = ""
+
         # ── 7·8. 원문 · 카드 이미지
         card_block = f"""<details class="day-card">
 <summary>카드 이미지 보기</summary>
@@ -2245,6 +2267,7 @@ def build_daily():
 {audit_block}
 {fat_block}
 {tt_block}
+{place_block}
 {card_block}
 {pager}"""
         region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
@@ -2472,6 +2495,34 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
           f"(숙소 후보 {candidate_pins}){amp_note} → maps/offline.html")
 
 
+POPUP_SRC = ("marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}"
+             "<br><small>${p.status}</small><br>"
+             '<a target="_blank" href="${p.url}">Google Maps 열기</a>`);')
+
+
+def link_map_places(text, out_name):
+    """지도 팝업에 장소 카드 링크를 넣는다.
+
+    핀 이름은 레지스트리의 `지도 핀` 열과 대조한다. 장소가 URL 을 가진 이상
+    지도에서도 같은 곳을 가리켜야 한다. 매칭이 없으면 팝업은 그대로 둔다.
+    """
+    slug = next((c["slug"] for c in CHAPTERS
+                 if c["kind"] == "region" and c["map"] == out_name), None)
+    if slug is None or POPUP_SRC not in text:
+        return text
+    table = {r["pin"]: r["slug"] for r in load_place_registry()
+             if r["chapter"] == slug and r["type"] == "spot" and r["pin"]}
+    if not table:
+        return text
+    repl = ("const PLACE=" + json.dumps(table, ensure_ascii=False) + ";\n "
+            "marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}"
+            "<br><small>${p.status}</small><br>"
+            '<a target="_blank" href="${p.url}">Google Maps 열기</a>'
+            "${PLACE[p.name]?`<br><a href=\"../places/${PLACE[p.name]}.html\">"
+            "◇ 장소 카드</a>`:''}`);")
+    return text.replace(POPUP_SRC, repl, 1)
+
+
 def build_maps():
     out_dir = SITE / "maps"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -2495,6 +2546,7 @@ def build_maps():
                 'background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;'
                 'font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a>')
         text = text.replace('<div id="map"></div>', f'<div id="map"></div>{back}', 1)
+        text = link_map_places(text, out_name)
         (out_dir / out_name).write_text(text, encoding="utf-8")
         cards.append(f'<a class="card card-alt" href="{out_name}">'
                      f'<span class="card-num">🗺️</span><span class="card-title">{title}</span>'
@@ -2710,7 +2762,8 @@ PLACE_REGISTRY = SOURCE / "ASSETS" / "91_Place_Registry_v1.0.md"
 GRADE_KO2SLUG = {"필수": "essential", "우선 추천": "priority", "선택": "optional",
                  "대체": "alternative", "비추천": "excluded"}
 GRADE_LABEL = {v: k for k, v in GRADE_KO2SLUG.items()}
-TIMETABLE = {}   # 데일리 빌드가 채운다 — 장소 페이지가 Day 매핑에 쓴다
+TIMETABLE = {}        # 데일리 빌드가 채운다 — 장소 페이지가 Day 매핑에 쓴다
+PLACES_BY_DAY = {}    # 장소 빌드가 채운다 — 데일리 카드가 그 날 장소를 싣는다
 
 
 def load_place_registry():
@@ -2748,22 +2801,34 @@ def place_key(name):
     return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
 
 
+def norm_key(s):
+    s = "".join(c for c in unicodedata.normalize("NFKD", s.lower())
+                if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9가-힣]", "", s)
+
+
 def place_days(registry, timetable):
     """장소가 어느 Day 에 배정돼 있는지 찾는다.
 
-    근거는 두 가지고 우선순위가 있다.
-      1) 일자별 시간표 — 원고가 실제로 그 날에 넣은 일정이다
-      2) 본문 상세의 `Day N` 표기 — 보강본 저자의 서술
+    근거는 셋이고 우선순위가 있다. 전부 구조화된 기록이거나 저자의 명시다.
+      1) 일자별 시간표 — 원고가 그 날 시각에 넣은 일정
+      2) 43일 실행 감사표의 `핵심 실행`·`식사·휴식` — 그 날 하기로 한 것
+         (`대체안`·`우선 삭제` 는 쓰지 않는다. 그 날 가는 것이 아니다)
+      3) 본문 상세의 `Day N` 표기 — 보강본 저자의 서술
 
-    둘 다 없으면 **비운다.** 산문에 이름이 나온다고 그 날 가는 것은 아니다.
+    셋 다 없으면 **비운다.** 산문에 이름이 나온다고 그 날 가는 것은 아니다.
     """
+    audit_txt = {}
+    try:
+        for n, row in load_audit().items():
+            audit_txt[n] = norm_key(f'{row["core"]} {row["meals"]}')
+    except SystemExit:
+        audit_txt = {}
     by_day = {}
     for key, blocks in timetable.items():
         n = day_no(date.fromisoformat(key))
         txt = " ".join(plain(" ".join(cells)) for _s, _r, rows in blocks for cells in rows)
-        by_day[n] = re.sub(r"[^a-z0-9가-힣]", "",
-                           "".join(c for c in unicodedata.normalize("NFKD", txt.lower())
-                                   if not unicodedata.combining(c)))
+        by_day[n] = norm_key(txt)
     out = {}
     for r in registry:
         if r["type"] != "spot":
@@ -2774,6 +2839,12 @@ def place_days(registry, timetable):
         days = sorted(n for n, txt in by_day.items() if k in txt)
         if days:
             out[r["slug"]] = (days, "시간표")
+            continue
+        keys = {k} | ({norm_key(r["pin"])} if r["pin"] else set())
+        days = sorted(n for n, txt in audit_txt.items()
+                      if any(x and len(x) >= 3 and x in txt for x in keys))
+        if days:
+            out[r["slug"]] = (days, "실행 감사표")
             continue
         if r["body"] and r["head"]:
             f = SITE / r["body"]
@@ -2980,6 +3051,10 @@ def build_places(timetable):
         page("장소", idx, rel=rel, topbar_title="장소",
              subnav=place_siblings(spots, "index", by_ch)), encoding="utf-8")
     SEARCH_INDEX.append({"t": "장소 — 전체 목록", "c": "장소", "u": "places/index.html"})
+    for r in spots:
+        for n in days_of.get(r["slug"], ([], ""))[0]:
+            PLACES_BY_DAY.setdefault(n, []).append(
+                {"slug": r["slug"], "name": r["name"], "grade": r["grade"]})
     print(f"  장소: {len(spots)}곳 → places/ (Day 확인 {len(days_of)}곳)")
 
 
@@ -3172,6 +3247,9 @@ def main():
 
     print("챕터 빌드:")
     build_chapters()
+    print("장소 축 빌드:")
+    TIMETABLE.update(load_day_details()[1])
+    build_places(TIMETABLE)
     print("데일리 카드 빌드:")
     build_daily()
     build_home()
@@ -3183,7 +3261,6 @@ def main():
     build_credits()
     print("주제 축 빌드:")
     build_topics()
-    build_places(TIMETABLE)
     print("트래커 빌드:")
     build_tracker()
     build_data_js()

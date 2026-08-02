@@ -1195,3 +1195,6 @@ footer {
   color: var(--text-2);
   word-break: keep-all;
 }
+.pl-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+.pl-chips .pl-day { margin: 0; }
+.pl-chips .pl-day b { font-weight: 700; opacity: 0.72; font-size: 0.78rem; }
