@@ -229,7 +229,7 @@ img { max-width: 100%; height: auto; }
   color: var(--text);
   box-shadow: inset 0 -0.5px 0 var(--separator);   /* 헤어라인 */
 }
-#menu-btn, #search-btn {
+#search-btn {
   min-width: var(--tap);
   min-height: var(--tap);
   background: none;
@@ -239,7 +239,7 @@ img { max-width: 100%; height: auto; }
   cursor: pointer;
   border-radius: var(--r-ctrl);
 }
-#menu-btn:hover, #search-btn:hover { background: var(--accent-soft); }
+#search-btn:hover { background: var(--accent-soft); }
 #search-btn { font-size: 22px; }
 /* 위치 경로 — 하위 페이지에서도 홈·지역으로 항상 올라갈 수 있게 */
 .tb-crumbs {
@@ -356,7 +356,7 @@ img { max-width: 100%; height: auto; }
 }
 .sn-days a:hover { background: var(--accent); color: var(--accent-ink); }
 
-/* ================= 드로어 ================= */
+/* ================= 검색 시트 ================= */
 #overlay {
   position: fixed;
   inset: 0;
@@ -367,8 +367,8 @@ img { max-width: 100%; height: auto; }
   transition: opacity var(--dur) var(--ease);
 }
 #overlay.show { opacity: 1; pointer-events: auto; }
-/* 여는 버튼이 오른쪽 위에 있다. 서랍도 그쪽에서 나와야 손이 따라간다. */
-#drawer {
+/* 여는 버튼이 오른쪽 위에 있다. 시트도 그쪽에서 나와야 손이 따라간다. */
+#search-sheet {
   position: fixed;
   top: 0; right: 0; bottom: 0;
   z-index: 310;
@@ -381,8 +381,8 @@ img { max-width: 100%; height: auto; }
   padding-top: calc(10px + env(safe-area-inset-top));
   box-shadow: -2px 0 20px rgba(0, 0, 0, 0.28);
 }
-#drawer.open { transform: translateX(0); }
-.dw-head {
+#search-sheet.open { transform: translateX(0); }
+.ss-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -391,7 +391,7 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 8px;
   padding-left: 8px;
 }
-#drawer-close {
+#sheet-close {
   min-width: var(--tap);
   min-height: var(--tap);
   background: none;
@@ -426,18 +426,7 @@ img { max-width: 100%; height: auto; }
 #search-results .sr-c { display: block; font-size: 0.78rem; color: var(--muted); }
 .sr-none { color: var(--text-2); font-size: 0.9rem; padding: 10px; margin: 0; }
 
-.dw-nav h3 {
-  margin: 18px 0 4px;
-  padding-left: 10px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--muted);
-}
-/* 드로어 링크는 .list-row 컴포넌트를 쓴다 (본문·홈과 같은 것) */
-
-/* 드로어·목록의 지역 링크에 지역 색 리본 — 국경이 색으로 보인다 */
+/* 목록의 지역 링크에 지역 색 리본 — 국경이 색으로 보인다 */
 .list-row { border-left: 3px solid transparent; }
 .list-row[href*="/barcelona/"] { border-left-color: var(--acc-bcn); }
 .list-row[href*="/girona/"] { border-left-color: var(--acc-gir); }
@@ -1166,7 +1155,7 @@ footer {
 
 /* 인쇄 */
 @media print {
-  .topbar, .bottomnav, #drawer, #overlay, #back-top, .subnav { display: none !important; }
+  .topbar, .bottomnav, #search-sheet, #overlay, #back-top, .subnav { display: none !important; }
   main { max-width: none; padding: 0; }
   body { background: #fff; font-size: 11pt; }
 }
@@ -1381,11 +1370,3 @@ footer {
   color: var(--muted);
   text-align: right;
 }
-
-
-/* 드로어 안의 목록 — 본문보다 촘촘하게 */
-.dw-nav .list-group { margin: var(--s2) 0 var(--s5); }
-.dw-nav .list-row { min-height: 50px; padding: 6px var(--s3); }
-.dw-nav .list-row .lr-icon { font-size: 16px; }
-.dw-nav .list-row .lr-title { font-size: var(--t-subhead); }
-.dw-nav .list-row .lr-sub { font-size: var(--t-cap1); }

@@ -4,31 +4,26 @@
   var rel = document.body.getAttribute("data-rel") || ".";
   function $(s) { return document.querySelector(s); }
 
-  /* ---------- 드로어 ---------- */
-  var drawer = $("#drawer"), overlay = $("#overlay"), menuBtn = $("#menu-btn");
-  function openDrawer() {
-    drawer.classList.add("open");
-    overlay.classList.add("show");
-    var inp = $("#search-input");
-    if (inp && window.matchMedia("(min-width: 768px)").matches) inp.focus();
-  }
-  function closeDrawer() {
-    drawer.classList.remove("open");
+  /* ---------- 검색 시트 ----------
+     전체 메뉴는 없다. 상단 오른쪽 버튼은 검색만 연다. */
+  var sheet = $("#search-sheet"), overlay = $("#overlay"),
+      searchBtn = $("#search-btn");
+  function closeSheet() {
+    sheet.classList.remove("open");
     overlay.classList.remove("show");
   }
-  if (menuBtn && drawer && overlay) {
-    menuBtn.addEventListener("click", openDrawer);
-    var searchBtn = $("#search-btn");
-    if (searchBtn) searchBtn.addEventListener("click", function () {
-      openDrawer();
-      var inp = $("#search-input");
-      if (inp) inp.focus();     /* 검색 버튼은 데스크톱 여부와 무관하게 포커스한다 */
+  if (sheet && overlay && searchBtn) {
+    searchBtn.addEventListener("click", function () {
+      sheet.classList.add("open");
+      overlay.classList.add("show");
+      var i = $("#search-input");
+      if (i) i.focus();
     });
-    overlay.addEventListener("click", closeDrawer);
-    var closeBtn = $("#drawer-close");
-    if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
+    overlay.addEventListener("click", closeSheet);
+    var closeBtn = $("#sheet-close");
+    if (closeBtn) closeBtn.addEventListener("click", closeSheet);
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeDrawer();
+      if (e.key === "Escape") closeSheet();
     });
   }
 

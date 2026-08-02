@@ -1458,35 +1458,22 @@ def chapter_for_date(d):
 
 # ---------------------------------------------------------------- page shell
 
-def drawer_html(rel):
-    """전체 메뉴 — 검색과 '다른 데서 못 가는 곳' 만.
+def search_sheet_html(rel):
+    """검색 시트. 전체 메뉴는 여기 없다 — 있었지만 지웠다.
 
-    홈이 여정을, 하단탭이 축을 이미 맡는다. 같은 것을 세 번째로 늘어놓으면
-    메뉴가 사이트의 사본이 된다. 지역 목록·일정·주제는 여기 두지 않는다.
+    햄버거 메뉴가 담던 것은 하나도 빠짐없이 홈·하단탭·꼬리말에도 있었다.
+    같은 목록을 세 번째로 늘어놓으면 메뉴가 사이트의 사본이 되고, 어느
+    쪽이 최신인지 알 수 없게 된다. 검색만 남긴다 — 검색은 다른 어디에도
+    없는 기능이라 중복이 아니다.
     """
-    def row(glyph, url, title, sub=""):
-        s = f'<span class="lr-sub">{html.escape(sub)}</span>' if sub else ""
-        return (f'<a class="list-row" href="{rel}/{url}">'
-                f'<span class="lr-icon" aria-hidden="true">{glyph}</span>'
-                f'<span class="lr-text"><b class="lr-title">{html.escape(title)}</b>{s}</span>'
-                f'<span class="lr-go" aria-hidden="true">›</span></a>')
-
-    rows = "".join(row(g, u, n, s) for g, u, n, s in (
-        ("⌂", "index.html", "홈", "여정 전체"),
-        ("◉", "daily/index.html", "데일리 카드", "43일"),
-        ("◈", "places/index.html", "장소", "갈 곳 83"),
-        ("▦", "tracker/index.html", "트래커", "예약 · 이동 · 숙소"),
-        ("⤓", "maps/offline.html", "오프라인 지도", "출발 전에 받아 둔다"),
-        ("◷", "credits.html", "저작자 표시", "사진 · 서체 라이선스")))
     return f"""<div id="overlay"></div>
-<aside id="drawer" aria-label="전체 메뉴">
-  <div class="dw-head">
-    <button id="drawer-close" aria-label="닫기">✕</button>
-    <span>{SITE_SHORT}</span>
+<aside id="search-sheet" aria-label="검색">
+  <div class="ss-head">
+    <button id="sheet-close" aria-label="닫기">✕</button>
+    <span>검색</span>
   </div>
   <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
   <div id="search-results"></div>
-  <nav class="dw-nav"><div class="list-group">{rows}</div></nav>
 </aside>"""
 
 
@@ -1620,8 +1607,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
          coords="", back=None):
     """back=(라벨, URL). HIG 네비게이션 바의 뒤로가기다.
 
-    상단바 구성은 셋으로 고정한다 — 앞: 돌아갈 곳, 가운데: 지금 페이지,
-    뒤: 검색·전체 메뉴. 홈만 뒤로가기가 없다.
+    상단바는 둘로 고정한다 — 앞: 위치 경로(홈까지 올라간다), 뒤: 검색.
+    전체 메뉴 버튼은 없다. 축 진입은 하단탭이, 목록은 홈이 맡는다.
     """
     meta_html = f'<p class="meta">{meta_line}</p>' if meta_line else ""
     tb_title = html.escape(topbar_title or title)
@@ -1649,10 +1636,9 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <header class="topbar">
   {lead}
   <button id="search-btn" aria-label="검색 열기">⌕</button>
-  <button id="menu-btn" aria-label="전체 메뉴 열기">☰</button>
 </header>
 {subnav}
-{drawer_html(rel)}
+{search_sheet_html(rel)}
 <main>
 {meta_html}
 {coords}
@@ -2633,7 +2619,8 @@ def build_home():
         f'<span class="card-sub">{c["sub"]}</span></a>'
         for c in CHAPTERS if c["kind"] != "region")
 
-    # 축 진입은 하단탭(L0)과 드로어가 맡는다. 홈은 여정으로 바로 연다.
+    # 하단탭(L0)이 없는 진입점은 여기가 유일하다. 햄버거 메뉴를 지웠으므로
+    # 데일리 목록·장소 목록도 여기 있어야 한다 — 없으면 갈 길이 끊긴다.
     tool_rows = "".join(
         f'<a class="list-row" href="{u}">'
         f'<span class="lr-icon" aria-hidden="true">{g}</span>'
@@ -2641,6 +2628,8 @@ def build_home():
         f'<span class="lr-sub">{s}</span></span>'
         f'<span class="lr-go" aria-hidden="true">›</span></a>'
         for g, u, n, s in (
+            ("◉", "daily/index.html", "데일리 카드", "43일을 한 줄씩"),
+            ("◈", "places/index.html", "장소", "갈 곳 전체 목록"),
             ("▤", "chapters/how-to-use.html", "가이드 사용법", "이 가이드북을 읽는 법"),
             ("▦", "tracker/index.html", "마스터 트래커", "예약 · 이동 · 숙소 · 대시보드"),
             ("⤓", "maps/offline.html", "오프라인 지도 준비", "출발 전에 받아 둔다"),
