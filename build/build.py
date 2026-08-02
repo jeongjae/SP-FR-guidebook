@@ -2811,7 +2811,7 @@ def build_home():
         acts = [("일정", f'chapters/{c["name"]}/schedule.html'
                  if (SITE / "chapters" / c["name"] / "schedule.html").exists()
                  else chapter_url(c)),
-                ("동선", f"daily/day-{first:02d}.html"),
+                ("첫날", f"daily/day-{first:02d}.html"),
                 ("지도", f'maps/{c["map"]}')]
         btns = "".join(f'<a class="tl-act" href="{u}">{n}</a>' for n, u in acts)
         # 스페인에서 프랑스로 넘어가는 지점. 여기서 시장 요일·공휴일·긴급번호가
@@ -3670,15 +3670,32 @@ def build_data_js():
     while d <= TRIP_END:
         today_map[d.isoformat()] = f"daily/day-{day_no(d):02d}.html"
         d += timedelta(days=1)
+    # 검색 결과는 독자 화면이다. 원고의 Markdown 강조·링크 문법을 노출하지 않는다.
+    def clean_search_text(value):
+        rendered = md_inline(str(value))
+        return html.unescape(re.sub(r"<[^>]+>", "", rendered)).strip()
+
+    clean_index = []
+    seen = set()
+    for entry in SEARCH_INDEX:
+        item = dict(entry)
+        item["t"] = clean_search_text(item.get("t", ""))
+        item["c"] = clean_search_text(item.get("c", ""))
+        key = (item["t"], item["c"], item.get("u", ""))
+        if not item["t"] or key in seen:
+            continue
+        seen.add(key)
+        clean_index.append(item)
+
     data = {
         "tripStart": TRIP_START.isoformat(),
         "tripEnd": TRIP_END.isoformat(),
         "today": today_map,
-        "search": SEARCH_INDEX,
+        "search": clean_index,
     }
     js = "window.GUIDE = " + json.dumps(data, ensure_ascii=False) + ";\n"
     (SITE / "assets" / "data.js").write_text(js, encoding="utf-8")
-    print(f"  data.js: 날짜 매핑 {len(today_map)}일 · 검색 인덱스 {len(SEARCH_INDEX)}항목")
+    print(f"  data.js: 날짜 매핑 {len(today_map)}일 · 검색 인덱스 {len(clean_index)}항목")
 
 
 # ---------------------------------------------------------------- checks
@@ -3793,6 +3810,34 @@ def check_day_sections():
     print(f"Day 섹션 검사: 43일 전부 데일리 카드로 · 전환일 포함 {total}건 이상 없음")
 
 
+def check_phase1_reader_guards():
+    """Phase 1에서 고친 독자 화면 결함의 재발을 빌드 단계에서 막는다."""
+    problems = []
+    first = (SITE / "daily" / "day-01.html").read_text(encoding="utf-8")
+    last = (SITE / "daily" / "day-43.html").read_text(encoding="utf-8")
+    if 'href="day-00.html"' in first or re.search(r'<nav class="pager">[^<]*<a[^>]*>[^<]*Day 0', first):
+        problems.append("Day 1에 활성 이전 링크가 있다")
+    if 'href="day-44.html"' in last or re.search(r'<nav class="pager">.*Day 44', last, re.S):
+        problems.append("Day 43에 활성 다음 링크가 있다")
+
+    data = (SITE / "assets" / "data.js").read_text(encoding="utf-8")
+    for pattern, label in ((r'"t":\s*"[^"]*\*\*', "검색 제목의 ** 강조"),
+                           (r'"t":\s*"[^"]*`', "검색 제목의 ` 코드")):
+        if re.search(pattern, data):
+            problems.append(label + " 문법이 노출된다")
+
+    nav = (SITE / "assets" / "nav.js").read_text(encoding="utf-8")
+    if 'u || "chapters/03.html"' in nav:
+        problems.append("오늘 버튼의 기간 밖 fallback이 폐기된 번호 URL이다")
+
+    if problems:
+        print("Phase 1 독자 화면 가드 실패:")
+        for p in problems:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 1 독자 화면 가드: 경계 탐색 · 검색 표기 · 오늘 fallback 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -3870,6 +3915,7 @@ def main():
     check_visual_tokens()
     check_naming()
     check_day_sections()
+    check_phase1_reader_guards()
     check_links()
     check_dates()
     check_places()

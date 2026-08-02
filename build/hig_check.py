@@ -17,13 +17,30 @@ HIG 를 만족한다고 말하면 안 된다. 아래 목록만 봤다고 말해�
       기본은 페이지 유형별 표본. --all 은 전체 페이지.
 """
 import re
+import os
+import shutil
 import sys
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
 SITE = Path(__file__).resolve().parent.parent / "site"
-CHROME = "/opt/pw-browsers/chromium"
+
+
+def chromium_path():
+    """Use an explicit override or a locally available Chromium.
+
+    Playwright's managed browser remains the final fallback, so CI and local
+    machines do not depend on the old /opt/pw-browsers/chromium hardcode.
+    """
+    override = os.environ.get("TP_GUIDEBOOK_CHROMIUM")
+    if override:
+        return override
+    for candidate in ("chromium", "chromium-browser", "google-chrome", "chrome"):
+        found = shutil.which(candidate)
+        if found:
+            return found
+    return None
 
 # 유형별 표본 — 셸·본문·표·카드·지도가 모두 들어가게 고른다
 SAMPLE = [
@@ -190,7 +207,8 @@ def main():
         problems.append("[안전영역] .bottomnav 가 env(safe-area-inset-bottom) 을 쓰지 않는다")
 
     with sync_playwright() as pw:
-        b = pw.chromium.launch(executable_path=CHROME)
+        executable = chromium_path()
+        b = pw.chromium.launch(**({"executable_path": executable} if executable else {}))
         # 라이트·다크 양쪽을 본다. 다크에서 신호색이 밝아지면 그 위 글자가 뒤집혀야 한다.
         for scheme in ("light", "dark"):
             for w, h in ((320, 568), (390, 844)):

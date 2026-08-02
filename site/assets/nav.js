@@ -57,7 +57,8 @@
   function todayUrl() {
     var G = window.GUIDE || {};
     var u = (G.today || {})[parisToday()];
-    return rel + "/" + (u || "chapters/03.html");
+    /* 여행 기간 밖에는 존재하지 않는 과거 번호 URL이 아니라 43일 목록으로 간다. */
+    return rel + "/" + (u || "daily/index.html");
   }
   /* 홈 히어로의 오늘 날짜 — 여행 기간 밖이면 그 사실을 그대로 보인다 */
   var todayEl = $("#today-date");
