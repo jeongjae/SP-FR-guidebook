@@ -24,6 +24,7 @@ import json
 import re
 import shutil
 import sys
+import unicodedata
 from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
@@ -1230,6 +1231,7 @@ def drawer_html(rel):
     <a href="{rel}/index.html" class="dw-home">🏠 홈 — 여정 타임라인</a>
     <a href="{rel}/daily/index.html" class="dw-home">🗓️ 데일리 가이드 — 43일 카드</a>
     <a href="{rel}/topics/index.html" class="dw-home">▧ 주제 — 분류·상태로 전체 보기</a>
+    <a href="{rel}/places/index.html" class="dw-home">◇ 장소 — 갈 곳 전체</a>
     <h3>시작하기</h3>{intro}
     <h3>지역 가이드</h3>{regions}
     <h3>실행지도</h3>{maps}
@@ -1315,6 +1317,25 @@ def chapter_coords(c, rel):
 
 
 DAY_H2_RE = re.compile(r'(<h2 id="[^"]*">Day (\d+) · [^<]*</h2>)')
+
+
+PLACE_BY_HEAD = {}   # 등급 헤딩 원문 -> 장소 슬러그 (레지스트리에서 채운다)
+
+
+def link_place_cards(body, rel):
+    """챕터 본문의 등급 헤딩마다 그 장소 카드로 가는 링크를 붙인다.
+
+    장소가 최소 단위이므로 본문에서 좌표로 나가는 문이 있어야 한다.
+    """
+    def add(m):
+        name = plain(re.sub(r'<span class="grade.*?</span>', "", m.group(0), flags=re.S))
+        slug = PLACE_BY_HEAD.get(name)
+        if not slug:
+            return m.group(0)
+        return (f'{m.group(0)}<p class="day-jump">'
+                f'<a href="{rel}/places/{slug}.html">◇ {html.escape(name)} 장소 카드</a></p>')
+    return re.sub(r'<h[234][^>]*>(?:(?!</h[234]>).)*?class="grade grade-.*?</h[234]>',
+                  add, body, flags=re.S)
 
 
 def link_day_cards(body, rel):
@@ -1522,7 +1543,7 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
     """
     rel = "../.."
     body, toc_tokens = md_convert(body_md)
-    body = wrap_tables(rewrite_asset_links(body, rel))
+    body = link_place_cards(wrap_tables(rewrite_asset_links(body, rel)), rel)
     prev_link, next_link = prev_nx
     pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
     crumb_html = ('<nav class="crumbs" aria-label="위치">'
@@ -1863,6 +1884,9 @@ DATE_GATES = []
 
 def build_chapters():
     global VERIFIED_FACTS, REVERIFY_ITEMS, DATE_GATES
+    for r in load_place_registry():
+        if r["type"] == "spot" and r["head"]:
+            PLACE_BY_HEAD.setdefault(r["head"], r["slug"])
     VERIFIED_FACTS = load_verification()
     REVERIFY_ITEMS = load_reverify()
     DATE_GATES = load_gates()
@@ -2130,6 +2154,7 @@ def build_daily():
 
     audit = load_audit()
     fatigue, timetable, conflicts = load_day_details()
+    TIMETABLE.update(timetable)
     for x in conflicts:
         print(f"  주의: 피로도 값이 챕터마다 다름 — {x} (도착 챕터 값을 쓴다)")
 
@@ -2684,6 +2709,8 @@ def build_topics():
 PLACE_REGISTRY = SOURCE / "ASSETS" / "91_Place_Registry_v1.0.md"
 GRADE_KO2SLUG = {"필수": "essential", "우선 추천": "priority", "선택": "optional",
                  "대체": "alternative", "비추천": "excluded"}
+GRADE_LABEL = {v: k for k, v in GRADE_KO2SLUG.items()}
+TIMETABLE = {}   # 데일리 빌드가 채운다 — 장소 페이지가 Day 매핑에 쓴다
 
 
 def load_place_registry():
@@ -2709,6 +2736,57 @@ def load_place_registry():
                     "type": c[2], "grade": GRADE_KO2SLUG.get(c[3].rstrip("*")),
                     "grade_raw": c[3], "pin": dash(c[4]),
                     "body": dash(c[5]), "head": dash(c[6])})
+    return out
+
+
+
+def place_key(name):
+    """장소 이름을 대조용 열쇠로 줄인다. 부제·괄호를 떼고 발음기호를 없앤다."""
+    head = re.split(r"[·—(]", name)[0]
+    s = unicodedata.normalize("NFKD", head)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
+
+
+def place_days(registry, timetable):
+    """장소가 어느 Day 에 배정돼 있는지 찾는다.
+
+    근거는 두 가지고 우선순위가 있다.
+      1) 일자별 시간표 — 원고가 실제로 그 날에 넣은 일정이다
+      2) 본문 상세의 `Day N` 표기 — 보강본 저자의 서술
+
+    둘 다 없으면 **비운다.** 산문에 이름이 나온다고 그 날 가는 것은 아니다.
+    """
+    by_day = {}
+    for key, blocks in timetable.items():
+        n = day_no(date.fromisoformat(key))
+        txt = " ".join(plain(" ".join(cells)) for _s, _r, rows in blocks for cells in rows)
+        by_day[n] = re.sub(r"[^a-z0-9가-힣]", "",
+                           "".join(c for c in unicodedata.normalize("NFKD", txt.lower())
+                                   if not unicodedata.combining(c)))
+    out = {}
+    for r in registry:
+        if r["type"] != "spot":
+            continue
+        k = place_key(r["name"])
+        if len(k) < 3:
+            continue
+        days = sorted(n for n, txt in by_day.items() if k in txt)
+        if days:
+            out[r["slug"]] = (days, "시간표")
+            continue
+        if r["body"] and r["head"]:
+            f = SITE / r["body"]
+            if f.exists():
+                body = read_body_for_scan(f)
+                m = re.search(r"<h[234][^>]*>\s*" + re.escape(r["head"][:24]), body)
+                if m:
+                    nxt = re.search(r"<h[234][^>]*>", body[m.end():])
+                    seg = body[m.end(): m.end() + (nxt.start() if nxt else 2000)]
+                    d = sorted({int(x) for x in re.findall(r"Day\s*(\d+)", plain(seg))})
+                    d = [x for x in d if 1 <= x <= 43]
+                    if d:
+                        out[r["slug"]] = (d, "본문 표기")
     return out
 
 
@@ -2767,6 +2845,157 @@ def check_places():
 
 # 등급이 붙어 있지만 갈 곳이 아닌 헤딩 — 하루의 성격이다
 REGISTRY_EXCLUDED = {"15구 생활일", "월요일 모듈"}
+
+
+
+# ---------------------------------------------------------------- 장소 페이지
+
+def read_body_for_scan(path):
+    """대조·발췌용으로 본문을 읽는다. 등급 span 과 빌드가 주입한 점프 링크를 걷는다."""
+    s = path.read_text(encoding="utf-8")
+    s = re.sub(r'<span class="grade.*?</span>', "", s, flags=re.S)
+    return re.sub(r'<p class="day-jump">.*?</p>', "", s, flags=re.S)
+
+
+def place_excerpt(reg_row):
+    """본문 상세의 첫 문단을 발췌한다. 본문을 복제하지 않고 미리보기만 담는다."""
+    if not (reg_row["body"] and reg_row["head"]):
+        return ""
+    f = SITE / reg_row["body"]
+    if not f.exists():
+        return ""
+    body = read_body_for_scan(f)
+    m = re.search(r"<h([234])[^>]*>\s*" + re.escape(reg_row["head"][:24]), body)
+    if not m:
+        return ""
+    seg = section_extent(body, m)
+    # 하위 헤딩이 먼저 오는 항목이 많다. 헤딩이 아니라 첫 문단을 가져온다.
+    for para in re.findall(r"<p>(.*?)</p>", seg, re.S):
+        txt = plain(para)
+        # `Day 41 (10/8 목) — B안` 같은 표시줄은 설명이 아니다
+        if len(txt) < 25 or re.match(r"^Day\s*\d", txt):
+            continue
+        return plain(para, 220)
+    return ""
+
+
+def section_extent(body, m):
+    """헤딩 m 이 여는 섹션의 본문 — 같은 레벨 이상 헤딩을 만나면 끝난다."""
+    lvl = int(m.group(1))
+    tail = body[m.end():]
+    stop = re.search(r"<h([1-%d])[^>]*>" % lvl, tail)
+    return tail[: stop.start()] if stop else tail[:4000]
+
+
+def place_anchor(reg_row):
+    """본문 상세로 가는 앵커 URL. 헤딩 id 를 그대로 쓴다."""
+    if not (reg_row["body"] and reg_row["head"]):
+        return None
+    f = SITE / reg_row["body"]
+    if not f.exists():
+        return None
+    body = read_body_for_scan(f)
+    m = re.search(r'<h[234] id="([^"]+)"[^>]*>\s*' + re.escape(reg_row["head"][:24]), body)
+    return f'{reg_row["body"]}#{m.group(1)}' if m else reg_row["body"]
+
+
+def build_places(timetable):
+    """장소 페이지 — 가이드북의 최소 단위.
+
+    언제(Day) · 어디(지역·지도) · 무엇(본문 발췌와 앵커) · 확인할 것을 한 장에 모은다.
+    본문은 복제하지 않는다. 여기는 좌표이지 사본이 아니다.
+    """
+    reg = load_place_registry()
+    if not reg:
+        return
+    out_dir = SITE / "places"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    rel = ".."
+    days_of = place_days(reg, timetable)
+    by_ch = {c["slug"]: c for c in CHAPTERS if c["kind"] == "region"}
+    order = [c["slug"] for c in CHAPTERS if c["kind"] == "region"]
+    spots = [r for r in reg if r["type"] == "spot"]
+    spots.sort(key=lambda r: (order.index(r["chapter"]), r["name"]))
+
+    for r in spots:
+        c = by_ch[r["chapter"]]
+        days, basis = days_of.get(r["slug"], ([], ""))
+        grade = (f'<span class="grade grade-{r["grade"]}">{GRADE_LABEL[r["grade"]]}</span>'
+                 if r["grade"] else '<span class="badge badge-pending">등급 미정</span>')
+        rows = [("지역", f'<a href="{rel}/{chapter_url(c)}">{html.escape(c["region"])}</a>'),
+                ("등급", grade)]
+        if days:
+            chips = "".join(
+                f'<a class="pl-day" href="{rel}/daily/day-{n:02d}.html">'
+                f'Day {n} · {date_label(date_of_day(n))}</a>' for n in days)
+            rows.append(("언제", chips + f'<span class="pl-basis">{basis} 기준</span>'))
+        else:
+            rows.append(("언제", '<span class="pl-basis">일정에 배정된 날을 '
+                                 '시간표에서 찾지 못했다</span>'))
+        anchor = place_anchor(r)
+        rows.append(("상세", f'<a href="{rel}/{anchor}">챕터 본문에서 보기</a>' if anchor
+                     else '<span class="pl-basis">아직 상세 서술이 없다</span>'))
+        if r["pin"]:
+            rows.append(("지도", f'<a href="{rel}/maps/{c["map"]}">{c["region"]} 실행지도</a>'
+                                 f' · <span class="pl-basis">핀 이름 {html.escape(r["pin"])}</span>'))
+        ex = place_excerpt(r)
+        body = (f'<h1>{html.escape(r["name"])}</h1>'
+                + coords_bar(rel, day=(f'Day {days[0]}' if days else "미배정",
+                                       f'daily/day-{days[0]:02d}.html' if days else None),
+                             region=(c["region"], chapter_url(c)),
+                             topic=("여행정보", "topics/places.html"))
+                + '<div class="table-wrap"><table><tbody>'
+                + "".join(f'<tr><th>{k}</th><td>{v}</td></tr>' for k, v in rows)
+                + '</tbody></table></div>'
+                + (f'<p class="pl-ex">{html.escape(ex)}</p>' if ex else "")
+                + f'<p class="note">이 장은 좌표다. 본문은 챕터에 있고 여기서 복제하지 않는다.</p>')
+        (out_dir / f'{r["slug"]}.html').write_text(
+            page(r["name"], body, rel=rel, topbar_title=r["name"],
+                 subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
+        SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
+                             "u": f'places/{r["slug"]}.html'})
+
+    # 인덱스 — 지역 순, 등급 표시
+    groups = []
+    for s in order:
+        mine = [r for r in spots if r["chapter"] == s]
+        if not mine:
+            continue
+        cards = "".join(
+            f'<a class="card" href="{r["slug"]}.html">'
+            f'<span class="card-title">{html.escape(r["name"])}</span>'
+            f'<span class="card-sub">'
+            f'{GRADE_LABEL[r["grade"]] if r["grade"] else "등급 미정"}</span></a>'
+            for r in mine)
+        groups.append(f'<h2>{html.escape(by_ch[s]["region"])}</h2>'
+                      f'<div class="grid">{cards}</div>')
+    idx = (f'<h1>장소</h1><p class="meta">이 가이드북의 최소 단위다. '
+           f'여행 전체 {len(spots)}곳 · 갈 수 있는 곳만 담는다. '
+           f'역·공항은 지도와 일정에서만 다룬다.</p>'
+           + coords_bar(rel, day=("43일 전체", "daily/index.html"),
+                        region=("8개 거점", "regions.html"),
+                        topic=("여행정보", "topics/places.html"))
+           + "".join(groups))
+    (out_dir / "index.html").write_text(
+        page("장소", idx, rel=rel, topbar_title="장소",
+             subnav=place_siblings(spots, "index", by_ch)), encoding="utf-8")
+    SEARCH_INDEX.append({"t": "장소 — 전체 목록", "c": "장소", "u": "places/index.html"})
+    print(f"  장소: {len(spots)}곳 → places/ (Day 확인 {len(days_of)}곳)")
+
+
+def place_siblings(spots, current, by_ch):
+    """장소 페이지의 형제 — 지역 묶음으로 옮겨 다닌다."""
+    regions = []
+    seen = set()
+    for r in spots:
+        if r["chapter"] in seen:
+            continue
+        seen.add(r["chapter"])
+        first = next(x for x in spots if x["chapter"] == r["chapter"])
+        regions.append((by_ch[r["chapter"]]["region"], f'{first["slug"]}.html',
+                        False, ""))
+    return siblings_nav([("장소", "sn-layers",
+                          [("전체", "index.html", current == "index", "")] + regions)])
 
 
 # ---------------------------------------------------------------- data.js
@@ -2954,6 +3183,7 @@ def main():
     build_credits()
     print("주제 축 빌드:")
     build_topics()
+    build_places(TIMETABLE)
     print("트래커 빌드:")
     build_tracker()
     build_data_js()
