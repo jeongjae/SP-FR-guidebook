@@ -2699,7 +2699,7 @@ steak-frites와 soufflé 같은 대표 메뉴가 목적이라면 예약할 가�
 | 루브르 화요일 휴관 · 오르세 월요일 휴관 | 널리 알려진 사실. **[재확인 권장]** |
 | **Bourse de Commerce 2026 가을 프로그램** | **[확인 필수]** — '10/7 개막'의 근거가 기존 원고뿐 |
 | **Bourse de Commerce 건축가** | **[확인 권장]** |
-| **Centre Pompidou 휴관 여부** | **[확인 필수]** — 기존 원고는 2030 재개관 목표로 적음 |
+| **Centre Pompidou 휴관 여부** | **복수 출처 확인** — 2025/9/22 폐관, 2030 재개관 목표. 공식(centrepompidou.fr 'Centre Pompidou is transforming itself')·France 24(2025/9/22)·Domus·ArchDaily. **2026년 체류 기간 내내 본관은 닫혀 있다.** 폐관 중에도 Grand Palais·Philharmonie 등에서 프로그램이 이어진다 |
 | **BnF Richelieu 열람실 개방 조건** | **부분 보완** — Oval Room 무료·열람구역 제한. 요금은 **[확인 필요]** |
 | **루브르 요금·예약·추천 루트** | **부분 보완** — 접근·체류·€32 안내. 야간 개장은 **[확인 필요]** |
 | **Paris Museum Pass 특별전 포함 여부** | **[확인 필요]** — 예산에 영향 |
