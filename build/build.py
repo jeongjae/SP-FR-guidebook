@@ -512,7 +512,7 @@ def build_regions():
 <div class="related"><a href="{ITINERARY_URL}">▤ 43일 전체 일정표</a>
 <a href="daily/index.html">◉ 데일리 카드 43일</a>
 <a href="maps/offline.html">⌖ 오프라인 지도 준비</a></div>"""
-    (SITE / "regions.html").write_text(page("지역", body, rel=".", back=("홈", "index.html")), encoding="utf-8")
+    (SITE / "regions.html").write_text(page("지역", body, rel=".", back=crumbs_for(("지역", None))), encoding="utf-8")
     SEARCH_INDEX.append({"t": "지역", "c": "목록", "u": "regions.html"})
     print(f"  지역 인덱스: {len(cards)}개 거점 → regions.html")
 
@@ -570,7 +570,7 @@ def build_credits():
 <p class="offline-note">원본 표 — <code>source/ASSETS/88_Representative_Public_Photo_Credits_v1.0.md</code>.
 빌드가 이 표와 대조해 저작자·라이선스가 어긋나면 중단한다.</p>"""
     (SITE / "credits.html").write_text(
-        page("사진 저작자 표시", body, rel=".", back=("홈", "index.html")), encoding="utf-8")
+        page("사진 저작자 표시", body, rel=".", back=crumbs_for(("저작자 표시", None))), encoding="utf-8")
     SEARCH_INDEX.append({"t": "사진 저작자 표시", "c": "라이선스", "u": "credits.html"})
     print(f"  저작자 표시: 대표사진 {len(HERO_PHOTOS)}장 → credits.html")
 
@@ -599,6 +599,9 @@ def classify(slug, title, prev_cat):
 # 빌드 중 수집되는 전역 데이터
 CHAPTER_DATE_URL = {}  # 'YYYY-MM-DD' -> 챕터(#Day 앵커) URL — 데일리 페이지에서 사용
 DAY_OVERRIDES = {}     # 'YYYY-MM-DD' -> Day 섹션 앵커 URL (범위 매핑보다 우선)
+# Day 번호 -> [(지역, 제목, 원고 마크다운)]. 챕터 빌드가 채우고 데일리 카드가 렌더한다.
+# 거점 이동일은 출발지·도착지 원고가 둘 다 들어와 항목이 둘이다.
+DAY_MD = {}
 SEARCH_INDEX = []      # {t: 제목, c: 위치, u: URL}
 
 
@@ -1458,53 +1461,22 @@ def chapter_for_date(d):
 
 # ---------------------------------------------------------------- page shell
 
-def drawer_html(rel):
-    """전체 메뉴. 홈의 축 목록과 같은 컴포넌트·같은 글리프를 쓴다.
+def search_sheet_html(rel):
+    """검색 시트. 전체 메뉴는 여기 없다 — 있었지만 지웠다.
 
-    지도 8개와 트래커 시트 6개를 여기 펼치지 않는다 — 각자 인덱스가 있다.
-    드로어는 목적지를 고르는 곳이지 사이트 전체를 복제하는 곳이 아니다.
+    햄버거 메뉴가 담던 것은 하나도 빠짐없이 홈·하단탭·꼬리말에도 있었다.
+    같은 목록을 세 번째로 늘어놓으면 메뉴가 사이트의 사본이 되고, 어느
+    쪽이 최신인지 알 수 없게 된다. 검색만 남긴다 — 검색은 다른 어디에도
+    없는 기능이라 중복이 아니다.
     """
-    def row(glyph, url, title, sub=""):
-        s = f'<span class="lr-sub">{html.escape(sub)}</span>' if sub else ""
-        return (f'<a class="list-row" href="{rel}/{url}">'
-                f'<span class="lr-icon" aria-hidden="true">{glyph}</span>'
-                f'<span class="lr-text"><b class="lr-title">{html.escape(title)}</b>{s}</span>'
-                f'<span class="lr-go" aria-hidden="true">›</span></a>')
-
-    axes = "".join(row(g, u, n, s) for g, u, n, s in (
-        ("⌂", "index.html", "홈", "여정 타임라인"),
-        ("◉", "daily/index.html", "데일리", "43일 · 하루 한 장"),
-        ("▤", ITINERARY_URL, "일정", "전체 일정표와 이동"),
-        ("◇", "regions.html", "지역", "8개 거점"),
-        ("▧", "topics/index.html", "주제", "분류 10 · 상태 3"),
-        ("◈", "places/index.html", "장소", "갈 곳 83"),
-        ("⌖", "maps/index.html", "지도", "지역별 기준점 · 오프라인 준비"),
-        ("▦", "tracker/index.html", "트래커", "예약 · 이동 · 숙소")))
-    regions = "".join(
-        row("◇", chapter_url(c), c["title"],
-            f'{date_label(c["start"])}–{date_label(c["end"])} · {c["nights"]}박')
-        for c in CHAPTERS if c["kind"] == "region")
-    intro = "".join(row("▤", chapter_url(c), c["title"])
-                    for c in CHAPTERS if c["kind"] != "region" and c["name"] != "how-to-use")
-    about = row("◷", "credits.html", "사진 저작자 표시", "CC 라이선스 · 서체 OFL")
     return f"""<div id="overlay"></div>
-<aside id="drawer" aria-label="전체 메뉴">
-  <div class="dw-head">
-    <span>{SITE_SHORT}</span>
-    <button id="drawer-close" aria-label="닫기">✕</button>
+<aside id="search-sheet" aria-label="검색">
+  <div class="ss-head">
+    <button id="sheet-close" aria-label="닫기">✕</button>
+    <span>검색</span>
   </div>
   <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
   <div id="search-results"></div>
-  <nav class="dw-nav">
-    <h3>어디서 볼 것인가</h3>
-    <div class="list-group">{axes}</div>
-    <h3>지역 가이드</h3>
-    <div class="list-group">{regions}</div>
-    <h3>읽는 법</h3>
-    <div class="list-group">{intro}</div>
-    <h3>이 가이드북</h3>
-    <div class="list-group">{about}</div>
-  </nav>
 </aside>"""
 
 
@@ -1619,21 +1591,42 @@ def coords_bar(rel, *, day=None, region=None, topic=None):
     return (f'<nav class="coords" aria-label="일자·지역·주제로 이동">{"".join(cells)}</nav>')
 
 
+
+def crumbs_for(*items):
+    """홈에서 시작하는 위치 경로. 마지막 항목은 링크가 아니라 현재 위치다."""
+    out = [("홈", "index.html")]
+    for lab, url in items:
+        out.append((lab, url))
+    out[-1] = (out[-1][0], None)
+    return out
+
+
+def regions_of_date(d):
+    """그 날짜를 품는 지역 전부. 이동일은 두 지역에 걸친다."""
+    return [c for c in CHAPTERS if c["kind"] == "region" and c["start"] <= d <= c["end"]]
+
+
 def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
          coords="", back=None):
     """back=(라벨, URL). HIG 네비게이션 바의 뒤로가기다.
 
-    상단바 구성은 셋으로 고정한다 — 앞: 돌아갈 곳, 가운데: 지금 페이지,
-    뒤: 검색·전체 메뉴. 홈만 뒤로가기가 없다.
+    상단바는 둘로 고정한다 — 앞: 위치 경로(홈까지 올라간다), 뒤: 검색.
+    전체 메뉴 버튼은 없다. 축 진입은 하단탭이, 목록은 홈이 맡는다.
     """
     meta_html = f'<p class="meta">{meta_line}</p>' if meta_line else ""
     tb_title = html.escape(topbar_title or title)
     if back:
-        b_label, b_url = back
-        lead = (f'<a class="tb-back" href="{rel}/{b_url}">'
-                f'<span aria-hidden="true">‹</span>{html.escape(b_label)}</a>')
+        crumbs = back if isinstance(back, list) else [("홈", "index.html"), back]
+        parts = []
+        for k, (lab, url) in enumerate(crumbs):
+            sep = '<span class="tb-sep" aria-hidden="true">›</span>' if k else ""
+            if url:
+                parts.append(f'{sep}<a href="{rel}/{url}">{html.escape(lab)}</a>')
+            else:
+                parts.append(f'{sep}<b>{html.escape(lab)}</b>')
+        lead = f'<nav class="tb-crumbs" aria-label="위치">{"".join(parts)}</nav>'
     else:
-        lead = '<span class="tb-back tb-back-none" aria-hidden="true"></span>'
+        lead = '<span class="tb-crumbs tb-crumbs-none"></span>'
     return f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -1645,12 +1638,10 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <body data-rel="{rel}">
 <header class="topbar">
   {lead}
-  <span class="tb-title">{tb_title}</span>
   <button id="search-btn" aria-label="검색 열기">⌕</button>
-  <button id="menu-btn" aria-label="전체 메뉴 열기">☰</button>
 </header>
 {subnav}
-{drawer_html(rel)}
+{search_sheet_html(rel)}
 <main>
 {meta_html}
 {coords}
@@ -1736,8 +1727,10 @@ def collect_chapter_dates(chapter, flat_tokens):
         dm = DAY_RE.search(tok["name"])
         if dm:
             day_date = date(2026, int(dm.group(2)), int(dm.group(3)))
+            # 그 날의 본문은 데일리 카드에 있다. 여기 담는 것은 '그 날이 속한
+            # 지역의 일정 한눈에' 로, 데일리 카드에서 지역 축으로 나가는 문이다.
             DAY_OVERRIDES[day_date.isoformat()] = (
-                f'chapters/{chapter["name"]}/day-{int(dm.group(1)):02d}.html' if split
+                f'chapters/{chapter["name"]}/schedule.html' if split
                 else f'{url}#{tok["id"]}')
 
 
@@ -1789,11 +1782,19 @@ def split_day_sections(schedule_md):
     """
     parts = re.split(r"^(## Day (\d+) · [^\n]+)$", schedule_md, flags=re.M)
     head = parts[0].strip()
-    days = []
+    days, tails = [], []
     for k in range(1, len(parts), 3):
         heading, n, body = parts[k], int(parts[k + 1]), parts[k + 3 - 1]
         title = heading[3:].strip()
+        # Day 헤딩은 h2 다. 다음 h2 를 만나면 그 날이 끝난 것이다. 이걸 안 자르면
+        # 마지막 날이 뒤에 오는 구간 전체(피로도표·실행성 감사·게이트)를 삼킨다.
+        m = re.search(r"^## ", body, re.M)
+        if m:
+            tails.append(body[m.start():].rstrip())
+            body = body[:m.start()]
         days.append((n, title, (heading + "\n" + body).strip()))
+    if tails:
+        head = (head + "\n\n" + "\n\n".join(tails)).strip()
     return head, days
 
 
@@ -1814,9 +1815,20 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
     sub_html = f'<p class="page-sub">{html.escape(sub)}</p>' if sub else ""
     content = crumb_html + sub_html + extra + body + pager
     return (page(title, content, rel=rel, topbar_title=title, coords=coords, subnav=subnav,
-                 back=(c["region"], f'chapters/{c["name"]}/index.html'),
+                 back=crumbs_for((c["region"], f'chapters/{c["name"]}/index.html'),
+                                 (title, None)),
                  meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'),
             flatten_tokens(toc_tokens), body)
+
+
+def day_card_url(n, rel):
+    """하루의 페이지는 daily/day-NN.html 하나다.
+
+    전에는 지역 챕터에도 같은 날의 페이지가 있었다. 둘 다 원고를 렌더하는데
+    한쪽은 정규식으로 다시 긁어 만든 사본이라 시간표가 30일에서 어긋났고,
+    20일은 원고에 있는 피로도를 '없다'고 표시했다. 사본을 없앴다.
+    """
+    return f"{rel}/daily/day-{n:02d}.html"
 
 
 def siblings_nav(groups):
@@ -1859,7 +1871,9 @@ def chapter_siblings(pages, current, with_days=True):
         elif dm:
             md = re.search(r"(\d+)월\s*(\d+)일", title)
             label = f"{int(md.group(1))}/{int(md.group(2))}" if md else f"D{int(dm.group(1))}"
-            days.append((label, fname, fname == current, title))
+            # 하루의 페이지는 하나뿐이다. 지역 축은 목록만 맡고 본문은 갖지 않는다.
+            days.append((label, day_card_url(int(dm.group(1)), "../.."),
+                         False, title))
         else:
             cats.append((title, fname, fname == current, ""))
     return siblings_nav([("주제", "sn-layers", cats)]
@@ -1882,6 +1896,9 @@ def build_split_chapter(c, body_md, map_links):
     by_cat = {k: v for k, v in sections}
     sched_head, days = split_day_sections(by_cat.get("schedule", ""))
 
+    for n, title, md_body in days:
+        DAY_MD.setdefault(n, []).append((c["region"], title, md_body))
+
     pages = []      # (파일명, 제목, 부제, 마크다운, 카테고리 라벨)
     if sched_head:
         # 일자에 속하지 않는 일정 내용(전체 일정표·운영 원칙 등). 허브에 쏟으면
@@ -1896,15 +1913,26 @@ def build_split_chapter(c, body_md, map_links):
         slug = TOPIC_SLUG[key]
         pages.append((f"{slug}.html", label, TOPIC_SUB[slug], by_cat[key], label))
 
+    def href(fname):
+        """일자 페이지의 실체는 데일리 카드다. 챕터 쪽 주소는 리다이렉트만 남는다."""
+        dm = re.match(r"day-(\d+)\.html$", fname)
+        return day_card_url(int(dm.group(1)), rel) if dm else fname
+
     made = []
     for idx, (fname, title, sub, md_body, page_cat) in enumerate(pages):
+        dm = re.match(r"day-(\d+)\.html$", fname)
+        if dm:
+            # 하루에 페이지 하나. 옛 주소는 리다이렉트로 남긴다.
+            write_redirect(out_dir / fname, href(fname), title)
+            made.append((href(fname), title, sub, True))
+            continue
         prev_link = next_link = ""
         if idx > 0:
             p = pages[idx - 1]
-            prev_link = f'<a href="{p[0]}">← {html.escape(p[1])}</a>'
+            prev_link = f'<a href="{href(p[0])}">← {html.escape(p[1])}</a>'
         if idx < len(pages) - 1:
             nx = pages[idx + 1]
-            next_link = f'<a href="{nx[0]}">{html.escape(nx[1])} →</a>'
+            next_link = f'<a href="{href(nx[0])}">{html.escape(nx[1])} →</a>'
         crumbs = [f'<a href="{rel}/regions.html">지역</a>', hub_crumb,
                   f'<span>{html.escape(title)}</span>']
         fig = ""
@@ -1913,9 +1941,7 @@ def build_split_chapter(c, body_md, map_links):
         rendered, flat, page_body = render_split_page(
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
             extra=fig + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
-            subnav=chapter_siblings(pages, fname,
-                                    with_days=fname.startswith("day-")
-                                    or fname == "schedule.html"))
+            subnav=chapter_siblings(pages, fname, with_days=fname == "schedule.html"))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
         scan_sections(c, page_body, url, fixed_cat=page_cat)
@@ -1925,17 +1951,17 @@ def build_split_chapter(c, body_md, map_links):
             if name and not name.startswith(("Layer", "Pass")):
                 SEARCH_INDEX.append({"t": name, "c": f'{c["title"]} · {title}',
                                      "u": f'{url}#{tok["id"]}'})
-        made.append((fname, title, sub))
+        made.append((fname, title, sub, fname == "schedule.html"))
 
     # 허브
     day_cards = "".join(
         f'<a class="card" href="{f}"><span class="card-title">{html.escape(t)}</span>'
         + (f'<span class="card-sub">{html.escape(s)}</span>' if s else "") + '</a>'
-        for f, t, s in made if f.startswith("day-") or f == "schedule.html")
+        for f, t, s, is_day in made if is_day)
     topic_cards = "".join(
         f'<a class="card" href="{f}"><span class="card-title">{html.escape(t)}</span>'
         f'<span class="card-sub">{html.escape(s)}</span></a>'
-        for f, t, s in made if not f.startswith("day-") and f != "schedule.html")
+        for f, t, s, is_day in made if not is_day)
     intro_html, _ = md_convert(header_md) if header_md else ("", None)
     intro_html = wrap_tables(rewrite_asset_links(
         mark_layer_headings(intro_html), rel)) if header_md else ""
@@ -1950,7 +1976,7 @@ def build_split_chapter(c, body_md, map_links):
     )
     (out_dir / "index.html").write_text(
         page(c["title"], hub_body, rel=rel, topbar_title=c["title"],
-             back=("지역", "regions.html"),
+             back=crumbs_for((c["region"], None)),
              subnav=chapter_siblings(pages, "index.html"),
              meta_line=f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박'),
         encoding="utf-8")
@@ -2123,14 +2149,13 @@ def verification_status_block(c, verified, reverify, gates):
     return "\n".join(out)
 
 
-def write_legacy_redirect(c):
-    """기존 번호 URL(`chapters/05.html`)에 리다이렉트를 남긴다.
+def write_redirect(dest, target, label):
+    """옮겨간 주소에 리다이렉트를 남긴다.
 
     즐겨찾기·외부 링크가 걸려 있을 수 있다. JS 없이도 동작하도록
     meta refresh 와 본문 링크를 함께 둔다.
     """
-    target = chapter_url(c).replace("chapters/", "", 1)
-    dest = SITE / "chapters" / f'{c["slug"]}.html'
+    css = "../" * (len(Path(dest).relative_to(SITE).parts) - 1) + "assets/style.css"
     dest.write_text(f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -2139,18 +2164,24 @@ def write_legacy_redirect(c):
 <meta name="robots" content="noindex">
 <meta http-equiv="refresh" content="0; url={target}">
 <link rel="canonical" href="{target}">
-<title>{html.escape(c["title"])} — 주소가 바뀌었습니다</title>
-<link rel="stylesheet" href="../assets/style.css">
+<title>{html.escape(label)} — 주소가 바뀌었습니다</title>
+<link rel="stylesheet" href="{css}">
 </head>
 <body>
 <main>
 <h1>주소가 바뀌었습니다</h1>
-<p>이 페이지는 <a href="{target}">{html.escape(c["title"])}</a> 로 옮겨졌습니다.
+<p>이 페이지는 <a href="{target}">{html.escape(label)}</a> 로 옮겨졌습니다.
 자동으로 넘어가지 않으면 링크를 누르세요.</p>
 </main>
 </body>
 </html>
 """, encoding="utf-8")
+
+
+def write_legacy_redirect(c):
+    """기존 번호 URL(`chapters/05.html`) → 지명 URL."""
+    write_redirect(SITE / "chapters" / f'{c["slug"]}.html',
+                   chapter_url(c).replace("chapters/", "", 1), c["title"])
 
 
 VERIFIED_FACTS = {}
@@ -2259,7 +2290,7 @@ def build_chapters():
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(
             page(c["title"], content, rel=rel,
-                 topbar_title=c["title"], back=("홈", "index.html"),
+                 topbar_title=c["title"], back=crumbs_for((c["title"], None)),
                  meta_line=" · ".join(meta_bits),
                  coords=chapter_coords(c, rel),
                  subnav=chapter_subnav(c, flat)),
@@ -2425,6 +2456,81 @@ def day_flags(n):
     return out
 
 
+# `**피로도**: 4/5.` `오늘의 피로도 1–2/5` — 문장 앞머리의 표기만 집어낸다.
+# 뒤에 붙는 안내("…해변 체류를 조절한다")는 원고에 그대로 남긴다.
+FATIGUE_TOKEN_RE = re.compile(
+    r"\**\s*(?:오늘의\s*)?피로도\s*\**\s*[:：]?\s*\**\s*"
+    + FATIGUE_RE.pattern + r"(?:\s*[.。]|\s*\*{1,2})*\s*")
+
+
+def pull_fatigue(md):
+    """원고에서 피로도 값을 꺼내고, 그 표기만 본문에서 지운다.
+
+    막대로 보여줄 것을 문장으로 한 번 더 반복하지 않는다. 값을 못 찾으면
+    아무것도 건드리지 않고 아무 말도 하지 않는다 — '표기가 없다' 고 단정하던
+    문구가 20일에서 틀렸다. 원고에 있는 것을 없다고 말한 것이다.
+    """
+    for line in md.splitlines():
+        s = line.strip()
+        if s.startswith("|") or not s:
+            continue
+        m = FATIGUE_TOKEN_RE.match(s)
+        if m:
+            rest = s[m.end():].strip()
+            return md.replace(line, rest, 1) if rest else md.replace(line + "\n", "", 1), \
+                m.group(1)
+    return md, None
+
+
+TT_HEADER_RE = re.compile(r"시간|시각|시간대")
+
+
+def is_timetable(rows):
+    """시간표인가. 머리글에 '시간'이 있거나 첫 열이 시각·상대시간이면 그렇다.
+
+    Day 섹션에는 표가 여럿이다 — 리옹 원고의 첫 표는 시간표가 아니라
+    피로도·삭제 우선순위 표다. 순서로 고르면 그 표가 시간표 자리에 앉는다.
+    """
+    if len(rows) < 3:
+        return False
+    header = [x.strip() for x in rows[0].strip().strip("|").split("|")]
+    if header and TT_HEADER_RE.search(header[0]):
+        return True
+    firsts = [r.strip().strip("|").split("|")[0].replace("**", "").strip()
+              for r in rows[2:]]
+    hits = sum(1 for x in firsts
+               if TIME_CELL_RE.match(x) or re.search(r"\d{1,2}:\d{2}|기차\s*\d+", x))
+    return hits >= max(2, len(firsts) // 2)
+
+
+def split_day_md(md):
+    """그 날 원고를 (시간표, 나머지 본문) 으로 가른다.
+
+    표는 통째로 옮긴다. 예전에는 첫 셀이 시각인 행만 골라 담아서
+    `저녁 · 로티세리 치킨` 같은 줄이 사라졌다. 43일 중 30일의 시간표가
+    챕터 쪽과 어긋나 있었던 원인이다.
+    """
+    lines = md.splitlines()
+    table, rest, k = [], [], 0
+    while k < len(lines):
+        s = lines[k].strip()
+        if s.startswith("|") and k + 1 < len(lines) \
+                and re.fullmatch(r"\|[\s:|-]+\|", lines[k + 1].strip()):
+            block, j = [], k
+            while j < len(lines) and lines[j].strip().startswith("|"):
+                block.append(lines[j])
+                j += 1
+            if not table and is_timetable(block):
+                table = block
+            else:
+                rest.extend(block)
+            k = j
+            continue
+        rest.append(lines[k])
+        k += 1
+    return "\n".join(table), "\n".join(rest).strip()
+
+
 def build_daily():
     out_dir = SITE / "daily"
     img_dir = out_dir / "img"
@@ -2467,37 +2573,46 @@ def build_daily():
             f"<div class=\"ds-item\"><dt>{AUDIT_LABELS[k]}</dt>"
             f"<dd>{html.escape(row[k])}</dd></div>"
             for k in ("core", "depart", "buffer", "risk", "cut", "alt", "meals", "lock"))
-        audit_block = f'<h2>오늘의 감사 요약</h2><dl class="day-summary">{summary}</dl>'
+        audit_block = f'<h2>오늘 확인할 것</h2><dl class="day-summary">{summary}</dl>'
 
-        # ── 3. 피로도 (원고에 있는 날만)
-        per_chapter = fatigue.get(key, {})
-        value = per_chapter.get(c["slug"]) if c else None
-        if value is None and per_chapter:
-            value = sorted(per_chapter.values())[-1]
+        # ── 3·4. 시간표 · 피로도 · 메모 — 그 날 원고 하나에서 전부 나온다.
+        #   전에는 이 자리에 원고를 정규식으로 다시 긁은 사본이 있었고, 챕터
+        #   쪽에는 원본이 따로 렌더됐다. 같은 하루가 두 페이지에서 다른 말을
+        #   했다. 사본을 없애고 원고를 여기로 옮겼다.
+        blocks = DAY_MD.get(n, [])
+        multi = len(blocks) > 1        # 거점 이동일은 출발지·도착지 원고가 둘이다
+        tt_parts, note_parts, value = [], [], None
+        for region, _dtitle, dmd in blocks:
+            body_md, fat = pull_fatigue(dmd)
+            value = value or fat
+            table_md, rest_md = split_day_md(body_md)
+            head = f"<h3>{html.escape(region)}</h3>" if multi else ""
+            if table_md:
+                n_tt += 1
+                tbl, _ = md_convert(table_md)
+                tt_parts.append(head + wrap_tables(tbl).replace(
+                    "<table>", '<table class="day-time">'))
+            # 첫 줄은 `## Day 9 · 9월 6일 일` 헤딩이다. h1 이 이미 같은 말을 한다.
+            rest_md = re.sub(r"^#{1,6}\s*Day\s*\d+[^\n]*\n?", "", rest_md).strip()
+            if rest_md:
+                rh, _ = md_convert(rest_md)
+                note_parts.append(head + link_place_cards(
+                    wrap_tables(rewrite_asset_links(rh, "..")), ".."))
+
+        if tt_parts:
+            tt_block = "<h2>시간표</h2>" + "".join(tt_parts)
+        else:
+            # 원고에 그 날의 시각표가 없는 날이 있다. 지어내지 않고, 그 구간의
+            # 일정을 한 표로 담은 '일정 한눈에' 로 보낸다.
+            where = CHAPTER_DATE_URL.get(key, ITINERARY_URL)
+            tt_block = ('<h2>시간표</h2><p class="note">이 날은 원고에 시각표가 없다. '
+                        f'구간 일정은 <a href="../{where}">일정 한눈에</a> 에 있다.</p>')
         if value:
             n_fat += 1
-            fat_block = (f'<h2>피로도</h2><p>{fatigue_html(value)}</p>'
-                         f'<p class="note">원고의 일자별 피로도 표기다.</p>')
+            fat_block = f'<h2>피로도</h2><p>{fatigue_html(value)}</p>'
         else:
-            fat_block = ('<h2>피로도</h2><p class="note">이날은 원고에 피로도 표기가 없다. '
-                         '추정값을 넣지 않았다.</p>')
-
-        # ── 4. 시간표
-        tt_blocks = []
-        for slug, region, rows in timetable.get(key, []):
-            n_tt += 1
-            trs = "".join(
-                "<tr>" + "".join(f"<td>{md_inline(x)}</td>" for x in cells) + "</tr>"
-                for cells in rows)
-            # 거점 이동일은 출발지·도착지 원고가 둘 다 있어 표가 두 개다
-            head = (f"<h3>{html.escape(region)}</h3>"
-                    if len(timetable.get(key, [])) > 1 else "")
-            tt_blocks.append(
-                f'{head}<div class="table-wrap">'
-                f'<table class="day-time"><tbody>{trs}</tbody></table></div>')
-        tt_block = ("<h2>시간표</h2>" + "".join(tt_blocks)) if tt_blocks else (
-            '<h2>시간표</h2><p class="note">이날은 원고에 시각표가 없다. '
-            '챕터 본문에서 확인한다.</p>')
+            fat_block = ""
+        note_block = ("<h2>이 날의 메모</h2>" + "".join(note_parts)) if note_parts else ""
 
         # ── 5·6. 장소 · 지도 (거점 이동일은 두 지역 지도를 모두 건다)
         ch_url = CHAPTER_DATE_URL.get(key, ITINERARY_URL)
@@ -2529,13 +2644,10 @@ def build_daily():
             place_block = ""
 
         # ── 7·8. 원문 · 카드 이미지
-        card_block = f"""<details class="day-card">
-<summary>카드 이미지 보기</summary>
-<figure class="daily-card"><img src="img/day-{n:02d}.png"
-  alt="Day {n} 데일리 모바일 가이드 카드" loading="lazy"></figure>
+        card_block = f"""<figure class="daily-card"><img src="img/day-{n:02d}.png"
+  alt="Day {n} 데일리 모바일 가이드 카드"></figure>
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
-실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>
-</details>"""
+실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>"""
 
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
@@ -2545,11 +2657,12 @@ def build_daily():
         body = f"""<h1>{title}{p4}</h1>
 {flag_html}
 <div class="related">{''.join(links)}</div>
-{audit_block}
-{fat_block}
-{tt_block}
-{place_block}
 {card_block}
+{tt_block}
+{fat_block}
+{note_block}
+{audit_block}
+{place_block}
 {pager}"""
         region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
                        if c else ("이동 중", ITINERARY_URL))
@@ -2562,9 +2675,12 @@ def build_daily():
                                  ("← 앞", f"day-{max(1, n - 1):02d}.html", False, ""),
                                  ("뒤 →", f"day-{min(43, n + 1):02d}.html", False, "")]),
             ("날짜", "sn-days", window)])
+        regs = regions_of_date(d)
+        reg_crumb = ((" · ".join(x["region"] for x in regs), chapter_url(regs[0]))
+                     if regs else ("이동", ITINERARY_URL))
         (out_dir / f"day-{n:02d}.html").write_text(
             page(title, body, rel="..", topbar_title=title, subnav=day_nav,
-                 back=("데일리", "daily/index.html"),
+                 back=crumbs_for(reg_crumb, (f"Day {n}", None)),
                  coords=coords_bar("..",
                                    day=(f"Day {n} · {date_label(d)} {wd}", None),
                                    region=region_cell,
@@ -2592,7 +2708,7 @@ def build_daily():
             f'<div class="daily-grid">{"".join(index_items)}</div>')
     (out_dir / "index.html").write_text(
         page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드",
-             back=("홈", "index.html")),
+             back=crumbs_for(("데일리", None))),
         encoding="utf-8")
     print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)"
           f" · 피로도 {n_fat}일 · 시간표 {n_tt}건")
@@ -2630,7 +2746,8 @@ def build_home():
         f'<span class="card-sub">{c["sub"]}</span></a>'
         for c in CHAPTERS if c["kind"] != "region")
 
-    # 축 진입은 하단탭(L0)과 드로어가 맡는다. 홈은 여정으로 바로 연다.
+    # 하단탭(L0)이 없는 진입점은 여기가 유일하다. 햄버거 메뉴를 지웠으므로
+    # 데일리 목록·장소 목록도 여기 있어야 한다 — 없으면 갈 길이 끊긴다.
     tool_rows = "".join(
         f'<a class="list-row" href="{u}">'
         f'<span class="lr-icon" aria-hidden="true">{g}</span>'
@@ -2638,6 +2755,8 @@ def build_home():
         f'<span class="lr-sub">{s}</span></span>'
         f'<span class="lr-go" aria-hidden="true">›</span></a>'
         for g, u, n, s in (
+            ("◉", "daily/index.html", "데일리 카드", "43일을 한 줄씩"),
+            ("◈", "places/index.html", "장소", "갈 곳 전체 목록"),
             ("▤", "chapters/how-to-use.html", "가이드 사용법", "이 가이드북을 읽는 법"),
             ("▦", "tracker/index.html", "마스터 트래커", "예약 · 이동 · 숙소 · 대시보드"),
             ("⤓", "maps/offline.html", "오프라인 지도 준비", "출발 전에 받아 둔다"),
@@ -2786,7 +2905,8 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
 
 <nav class="pager"><a href="index.html">← 실행지도 목록</a><span></span></nav>"""
     (out_dir / "offline.html").write_text(
-        page("오프라인 지도", body, rel="..", back=("지도", "maps/index.html")), encoding="utf-8")
+        page("오프라인 지도", body, rel="..",
+             back=crumbs_for(("지도", "maps/index.html"), ("오프라인", None))), encoding="utf-8")
     SEARCH_INDEX.append({"t": "오프라인 지도 — Organic Maps", "c": "실행지도",
                          "u": "maps/offline.html"})
     amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
@@ -2864,7 +2984,7 @@ def build_maps():
             + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
             + f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
-        page("실행지도", body, rel="..", back=("홈", "index.html")), encoding="utf-8")
+        page("실행지도", body, rel="..", back=crumbs_for(("지도", None))), encoding="utf-8")
 
 
 # ---------------------------------------------------------------- tracker
@@ -2933,7 +3053,7 @@ def build_tracker():
         body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{table}"
         (out_dir / f"{slug}.html").write_text(
             page(label, body, rel="..", topbar_title=label,
-                 back=("트래커", "tracker/index.html"),
+                 back=crumbs_for(("트래커", "tracker/index.html"), (label, None)),
                  meta_line="TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준"),
             encoding="utf-8")
         cards.append(f'<a class="card card-alt" href="{slug}.html">'
@@ -2947,7 +3067,7 @@ def build_tracker():
             f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
         page("마스터 트래커", body, rel="..", topbar_title="트래커",
-             back=("홈", "index.html")),
+             back=crumbs_for(("트래커", None))),
         encoding="utf-8")
 
 
@@ -3010,7 +3130,7 @@ def build_topics():
                 f'<p class="meta">{TOPIC_HEAD[slug]} · 여행 전체 {len(items)}개 섹션</p>'
                 + f'<div class="tp-list">{topic_list_html(items, rel)}</div>')
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel=rel, topbar_title=label, back=("주제", "topics/index.html"),
+            page(label, body, rel=rel, topbar_title=label, back=crumbs_for(("주제", "topics/index.html"), (label, None)),
                  subnav=topic_siblings(slug)), encoding="utf-8")
         cards.append(f'<a class="card" href="{slug}.html">'
                      f'<span class="card-title">{label}</span>'
@@ -3032,7 +3152,7 @@ def build_topics():
                   '<th>지역</th><th>섹션</th><th>분류</th><th>표시</th>'
                   f'</tr></thead><tbody>{rows}</tbody></table></div>')
         (out_dir / f"{slug}.html").write_text(
-            page(label, body, rel=rel, topbar_title=label, back=("주제", "topics/index.html"),
+            page(label, body, rel=rel, topbar_title=label, back=crumbs_for(("주제", "topics/index.html"), (label, None)),
                  subnav=topic_siblings(slug)), encoding="utf-8")
         st_cards.append(f'<a class="card" href="{slug}.html">'
                         f'<span class="card-title">{label}</span>'
@@ -3048,7 +3168,7 @@ def build_topics():
            + '<h2>분류로 보기</h2>'
            + f'<div class="rg-grid">{"".join(cards)}</div>')
     (SITE / "topics" / "index.html").write_text(
-        page("주제", hub, rel=rel, topbar_title="주제", back=("홈", "index.html"),
+        page("주제", hub, rel=rel, topbar_title="주제", back=crumbs_for(("주제", None)),
              subnav=topic_siblings("index")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "주제 — 전체 목록", "c": "주제", "u": "topics/index.html"})
     print(f"  주제: 분류 {len(cards)}개 · 상태 {len(st_cards)}개 → topics/")
@@ -3334,7 +3454,7 @@ def build_places(timetable):
                    '<p class="note">상세 서술은 챕터 본문에 있다. 여기서 복제하지 않는다.</p>'))
         (out_dir / f'{r["slug"]}.html').write_text(
             page(r["name"], body, rel=rel, topbar_title=r["name"],
-                 back=("장소", "places/index.html"),
+                 back=crumbs_for((c["region"], chapter_url(c)), (r["name"], None)),
                  subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
         SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
                              "u": f'places/{r["slug"]}.html'})
@@ -3358,7 +3478,7 @@ def build_places(timetable):
            f'역·공항은 지도와 일정에서만 다룬다.</p>'
            + "".join(groups))
     (out_dir / "index.html").write_text(
-        page("장소", idx, rel=rel, topbar_title="장소", back=("홈", "index.html"),
+        page("장소", idx, rel=rel, topbar_title="장소", back=crumbs_for(("장소", None)),
              subnav=place_siblings(spots, "index", by_ch)), encoding="utf-8")
     SEARCH_INDEX.append({"t": "장소 — 전체 목록", "c": "장소", "u": "places/index.html"})
     for r in spots:
@@ -3476,35 +3596,43 @@ def check_naming():
     print("명명규칙 검사: 헤딩번호·원문자·챕터번호 라벨 0건")
 
 
-def check_day_headings():
-    """Day 섹션 헤딩이 8개 지역 챕터 전부에서 h2인지, 전역 번호인지 검사한다."""
+def check_day_sections():
+    """Day 원고가 하나도 빠지지 않고 데일리 카드로 넘어왔는지 검사한다.
+
+    Day 페이지가 챕터에도 있던 시절에는 렌더된 h2 를 셌다. 이제 하루의
+    페이지는 하나뿐이라, 세어야 하는 것은 챕터 원고에서 걷어 온 Day 섹션이다.
+    거점 전환일 7일은 출발지·도착지 원고가 둘 다 있어 50건이 된다.
+    """
     problems, total = [], 0
-    for c in CHAPTERS:
-        if c["kind"] != "region":
-            continue
-        if c.get("name") in SPLIT_CHAPTERS:
-            # 분할 챕터는 Day 헤딩이 일자 페이지로 흩어진다
-            text = "".join(f.read_text(encoding="utf-8")
-                           for f in sorted((SITE / "chapters" / c["name"]).glob("*.html")))
-        else:
-            text = (SITE / chapter_url(c)).read_text(encoding="utf-8")
-        h2 = re.findall(r"<h2[^>]*>\s*Day (\d+) · (\d+)월 (\d+)일", text)
-        stray = re.findall(r"<h([13-6])[^>]*>[^<]*Day \d+ · \d+월", text)
-        if stray:
-            problems.append(f'{c["slug"]}: Day 헤딩이 h2가 아님 (h{", h".join(stray)})')
-        for day, month, dom in h2:
-            expected = day_no(date(TRIP_START.year, int(month), int(dom)))
-            if int(day) != expected:
-                problems.append(f'{c["slug"]}: Day {day} · {month}/{dom} → 전체 Day {expected}')
-        total += len(h2)
+    for n, blocks in sorted(DAY_MD.items()):
+        total += len(blocks)
+        for region, title, _md in blocks:
+            m = re.search(r"(\d+)월\s*(\d+)일", title)
+            if not m:
+                problems.append(f"Day {n} ({region}): 제목에 날짜가 없다 — {title}")
+                continue
+            expected = day_no(date(TRIP_START.year, int(m.group(1)), int(m.group(2))))
+            if n != expected:
+                problems.append(f"Day {n} ({region}) · {m.group(1)}/{m.group(2)}"
+                                f" → 전체 Day {expected}")
+    missing = [n for n in range(1, 44) if n not in DAY_MD]
+    if missing:
+        problems.append(f"원고에서 Day 섹션을 못 찾은 날: {missing}")
     if total != 50:
-        problems.append(f"Day 헤딩 총수 {total} (전환일 7일 양쪽 포함 50이어야 함)")
+        problems.append(f"Day 섹션 총수 {total} (전환일 7일 양쪽 포함 50이어야 함)")
+    # 챕터 쪽에 Day 본문이 남아 있으면 사본이 되살아난 것이다
+    for c in CHAPTERS:
+        if c.get("name") not in SPLIT_CHAPTERS:
+            continue
+        for f in sorted((SITE / "chapters" / c["name"]).glob("day-*.html")):
+            if "주소가 바뀌었습니다" not in f.read_text(encoding="utf-8"):
+                problems.append(f"{f.relative_to(SITE)}: 리다이렉트가 아니라 본문이다")
     if problems:
-        print("Day 헤딩 검사 실패:")
+        print("Day 섹션 검사 실패:")
         for p in problems:
             print("  " + p)
         sys.exit(1)
-    print(f"Day 헤딩 검사: 8챕터 전부 h2 · 전역 번호 {total}건 이상 없음")
+    print(f"Day 섹션 검사: 43일 전부 데일리 카드로 · 전환일 포함 {total}건 이상 없음")
 
 
 def check_links():
@@ -3579,7 +3707,7 @@ def main():
     build_data_js()
     check_visual_tokens()
     check_naming()
-    check_day_headings()
+    check_day_sections()
     check_links()
     check_dates()
     check_places()

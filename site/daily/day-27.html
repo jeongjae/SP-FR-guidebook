@@ -8,48 +8,162 @@
 </head>
 <body data-rel="..">
 <header class="topbar">
-  <a class="tb-back" href="../daily/index.html"><span aria-hidden="true">‹</span>데일리</a>
-  <span class="tb-title">Day 27 · 9/24 목 · Lyon</span>
+  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/lyon/index.html">Lyon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 27</b></nav>
   <button id="search-btn" aria-label="검색 열기">⌕</button>
-  <button id="menu-btn" aria-label="전체 메뉴 열기">☰</button>
 </header>
 <nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일자</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-26.html">← 앞</a><a href="day-28.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a><a href="day-25.html" title="Day 25">9/22</a><a href="day-26.html" title="Day 26">9/23</a><a href="day-27.html" class="here" title="Day 27">9/24</a><a href="day-28.html" title="Day 28">9/25</a><a href="day-29.html" title="Day 29">9/26</a><a href="day-30.html" title="Day 30">9/27</a><a href="day-31.html" title="Day 31">9/28</a><a href="day-32.html" title="Day 32">9/29</a></div></div></nav>
 <div id="overlay"></div>
-<aside id="drawer" aria-label="전체 메뉴">
-  <div class="dw-head">
-    <span>2026 유럽 여행 가이드북</span>
-    <button id="drawer-close" aria-label="닫기">✕</button>
+<aside id="search-sheet" aria-label="검색">
+  <div class="ss-head">
+    <button id="sheet-close" aria-label="닫기">✕</button>
+    <span>검색</span>
   </div>
   <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
   <div id="search-results"></div>
-  <nav class="dw-nav">
-    <h3>어디서 볼 것인가</h3>
-    <div class="list-group"><a class="list-row" href="../index.html"><span class="lr-icon" aria-hidden="true">⌂</span><span class="lr-text"><b class="lr-title">홈</b><span class="lr-sub">여정 타임라인</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../daily/index.html"><span class="lr-icon" aria-hidden="true">◉</span><span class="lr-text"><b class="lr-title">데일리</b><span class="lr-sub">43일 · 하루 한 장</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/itinerary.html"><span class="lr-icon" aria-hidden="true">▤</span><span class="lr-text"><b class="lr-title">일정</b><span class="lr-sub">전체 일정표와 이동</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../regions.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">지역</b><span class="lr-sub">8개 거점</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../topics/index.html"><span class="lr-icon" aria-hidden="true">▧</span><span class="lr-text"><b class="lr-title">주제</b><span class="lr-sub">분류 10 · 상태 3</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../places/index.html"><span class="lr-icon" aria-hidden="true">◈</span><span class="lr-text"><b class="lr-title">장소</b><span class="lr-sub">갈 곳 83</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../maps/index.html"><span class="lr-icon" aria-hidden="true">⌖</span><span class="lr-text"><b class="lr-title">지도</b><span class="lr-sub">지역별 기준점 · 오프라인 준비</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../tracker/index.html"><span class="lr-icon" aria-hidden="true">▦</span><span class="lr-text"><b class="lr-title">트래커</b><span class="lr-sub">예약 · 이동 · 숙소</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-    <h3>지역 가이드</h3>
-    <div class="list-group"><a class="list-row" href="../chapters/barcelona/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Barcelona · Sitges</b><span class="lr-sub">8/29–9/1 · 3박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/girona/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Girona · Collioure · Empordà</b><span class="lr-sub">9/1–9/4 · 3박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/nice/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Nice · Côte d’Azur</b><span class="lr-sub">9/4–9/9 · 5박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/aix/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Aix-en-Provence</b><span class="lr-sub">9/9–9/13 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/luberon/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Luberon Farmhouse</b><span class="lr-sub">9/13–9/17 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/avignon/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Avignon · Alpilles · Pont du Gard</b><span class="lr-sub">9/17–9/21 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/lyon/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Lyon · Annecy</b><span class="lr-sub">9/21–9/25 · 4박</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/paris/index.html"><span class="lr-icon" aria-hidden="true">◇</span><span class="lr-text"><b class="lr-title">Paris Long Stay</b><span class="lr-sub">9/25–10/10 · 15박</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-    <h3>읽는 법</h3>
-    <div class="list-group"><a class="list-row" href="../chapters/highlights.html"><span class="lr-icon" aria-hidden="true">▤</span><span class="lr-text"><b class="lr-title">전체 여행 하이라이트</b></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="../chapters/itinerary.html"><span class="lr-icon" aria-hidden="true">▤</span><span class="lr-text"><b class="lr-title">43일 Master Itinerary</b></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-    <h3>이 가이드북</h3>
-    <div class="list-group"><a class="list-row" href="../credits.html"><span class="lr-icon" aria-hidden="true">◷</span><span class="lr-text"><b class="lr-title">사진 저작자 표시</b><span class="lr-sub">CC 라이선스 · 서체 OFL</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
-  </nav>
 </aside>
 <main>
 
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일자</b><span>Day 27 · 9/24 목</span></span><a href="../chapters/lyon/day-27.html"><b>지역</b><span>Lyon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
+<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일자</b><span>Day 27 · 9/24 목</span></span><a href="../chapters/lyon/schedule.html"><b>지역</b><span>Lyon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
 <h1>Day 27 · 9/24 목 · Lyon</h1>
 
-<div class="related"><a href="../chapters/lyon/day-27.html">▤ 이날의 챕터 일정</a><a href="../maps/lyon.html">⌖ Lyon 실행지도</a><a href="../maps/offline.html">◇ 오프라인 지도</a><a href="index.html">◉ 전체 데일리 목록</a></div>
-<h2>오늘의 감사 요약</h2><dl class="day-summary"><div class="ds-item"><dt>핵심 실행</dt><dd>Annecy 당일치기</dd></div><div class="ds-item"><dt>권장 출발</dt><dd>08:00 전후 역 이동</dd></div><div class="ds-item"><dt>완충</dt><dd>TER 20분 전 도착</dd></div><div class="ds-item"><dt>최고 리스크</dt><dd>철도지연·날씨</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>크루즈</dd></div><div class="ds-item"><dt>대체안</dt><dd>Lyon 생활일로 전환</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Annecy 구시가지</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>TER·크루즈</dd></div></dl>
-<h2>피로도</h2><p><span class="fatigue" data-v="4" aria-label="피로도 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>4/5</b></span></p><p class="note">원고의 일자별 피로도 표기다.</p>
-<h2>시간표</h2><div class="table-wrap"><table class="day-time"><tbody><tr><td>06:40–07:20</td><td>숙소 아침·Part-Dieu 이동</td><td>수하물 없이 작은 지퍼가방만 휴대. 택시 또는 메트로로 역 이동</td></tr><tr><td>10:15–11:45</td><td><strong>Vieille Ville·Thiou 운하</strong></td><td>역→Rue Sainte-Claire→Palais de l’Île 외관→운하 골목</td></tr><tr><td>11:50–13:05</td><td><strong>Savoy 점심</strong></td><td>Chez Mamie Lise에서 diots·polenta 또는 일일메뉴. 무거운 fondue는 2인 공유 또는 생략</td></tr><tr><td>13:10–14:10</td><td><strong>Jardins de l’Europe·Pont des Amours·Pâquier</strong></td><td>호수와 산의 방향을 이해하는 핵심 산책</td></tr><tr><td>14:30–15:30</td><td><strong>1시간 호수크루즈 선택</strong></td><td>공식 안내 계획가 성인 €19. 날씨·운항 확인</td></tr><tr><td>15:40–17:15</td><td>호숫가 자유시간·카페</td><td>크루즈를 생략하면 Imperial 방향 평지산책 또는 Palais de l’Île 내부 선택</td></tr><tr><td>17:20–18:00</td><td>역 이동·간단한 간식</td><td>귀환열차 20분 전 도착</td></tr><tr><td>20:00–21:00</td><td>Lyon 도착·숙소 귀환</td><td>역에서 바로 택시. 저녁은 숙소권 간단식</td></tr></tbody></table></div>
-<h2>이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/annecy.html">Annecy 구시가지 <b>필수</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<details class="day-card">
-<summary>카드 이미지 보기</summary>
+<div class="related"><a href="../chapters/lyon/schedule.html">▤ 이날의 챕터 일정</a><a href="../maps/lyon.html">⌖ Lyon 실행지도</a><a href="../maps/offline.html">◇ 오프라인 지도</a><a href="index.html">◉ 전체 데일리 목록</a></div>
 <figure class="daily-card"><img src="img/day-27.png"
-  alt="Day 27 데일리 모바일 가이드 카드" loading="lazy"></figure>
+  alt="Day 27 데일리 모바일 가이드 카드"></figure>
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
 실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>
-</details>
+<h2>시간표</h2><div class="table-wrap"><table class="day-time">
+<thead>
+<tr>
+<th>시간</th>
+<th>일정</th>
+<th>실행 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>06:40–07:20</td>
+<td>숙소 아침·Part-Dieu 이동</td>
+<td>수하물 없이 작은 지퍼가방만 휴대. 택시 또는 메트로로 역 이동</td>
+</tr>
+<tr>
+<td>07:40 이전</td>
+<td>Part-Dieu 도착</td>
+<td>열차 20–25분 전 플랫폼 확인</td>
+</tr>
+<tr>
+<td>07:30–08:30 출발 목표</td>
+<td><strong>Lyon→Annecy 직행 TER 우선</strong></td>
+<td>소요 약 1시간 50분–2시간 10분. 실제 9/24 시간표 재확인</td>
+</tr>
+<tr>
+<td>10:15–11:45</td>
+<td><strong>Vieille Ville·Thiou 운하</strong></td>
+<td>역→Rue Sainte-Claire→Palais de l’Île 외관→운하 골목</td>
+</tr>
+<tr>
+<td>11:50–13:05</td>
+<td><strong>Savoy 점심</strong></td>
+<td>Chez Mamie Lise에서 diots·polenta 또는 일일메뉴. 무거운 fondue는 2인 공유 또는 생략</td>
+</tr>
+<tr>
+<td>13:10–14:10</td>
+<td><strong>Jardins de l’Europe·Pont des Amours·Pâquier</strong></td>
+<td>호수와 산의 방향을 이해하는 핵심 산책</td>
+</tr>
+<tr>
+<td>14:30–15:30</td>
+<td><strong>1시간 호수크루즈 선택</strong></td>
+<td>공식 안내 계획가 성인 €19. 날씨·운항 확인</td>
+</tr>
+<tr>
+<td>15:40–17:15</td>
+<td>호숫가 자유시간·카페</td>
+<td>크루즈를 생략하면 Imperial 방향 평지산책 또는 Palais de l’Île 내부 선택</td>
+</tr>
+<tr>
+<td>17:20–18:00</td>
+<td>역 이동·간단한 간식</td>
+<td>귀환열차 20분 전 도착</td>
+</tr>
+<tr>
+<td>18:00–19:00대</td>
+<td>Annecy→Lyon 귀환</td>
+<td>직행 우선, 실제 시각 재확인</td>
+</tr>
+<tr>
+<td>20:00–21:00</td>
+<td>Lyon 도착·숙소 귀환</td>
+<td>역에서 바로 택시. 저녁은 숙소권 간단식</td>
+</tr>
+</tbody>
+</table></div>
+<h2>피로도</h2><p><span class="fatigue" data-v="4" aria-label="피로도 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>4/5</b></span></p>
+<h2>이 날의 메모</h2><h3 id="annecy-당일치기-운하-구시가지와-알프스-호수">Annecy 당일치기 — 운하 구시가지와 알프스 호수</h3>
+<h3 id="palais-de-lîle와-thiou-운하">Palais de l’Île와 Thiou 운하</h3>
+<ul>
+<li>설명: 물길 사이의 석조건물, 파스텔색 구시가지와 산 배경이 겹치는 안시의 대표 이미지.</li>
+</ul>
+<h3 id="pont-des-amours에서-본-annecy-호수">Pont des Amours에서 본 Annecy 호수</h3>
+<ul>
+<li>설명: Jardins de l’Europe, 호수, 산맥이 연결되는 안시의 핵심 풍경.</li>
+</ul>
+<h3 id="annecy-호수-1시간-크루즈">Annecy 호수 1시간 크루즈</h3>
+<ul>
+<li>설명: 도시 산책만으로는 보이지 않는 호수 주변 산악지형을 수면에서 이해하게 하는 이미지.</li>
+</ul>
+<p>SNCF Connect의 현재 노선 안내는 Lyon–Annecy에 하루 약 <strong>19편</strong>, 평균 약 <strong>2시간 7분</strong>, 최단 약 <strong>1시간 51분</strong>이 걸린다고 안내한다. 직행편과 환승편이 섞여 있으므로 <strong>2026년 9월 24일에는 07:30–08:30 Part-Dieu 출발의 직행 TER를 우선</strong>하고, 실제 편성·공사·파업 여부를 예약 시점과 전날 다시 확인한다.</p>
+<p>왕복 철도 약 4시간과 관광 7시간.</p>
+<h3 id="중요한-요일-정보">중요한 요일 정보</h3>
+<p>Annecy <strong>구시가지 시장</strong>은 화·금·일 07:00–13:00에 열리므로 목요일 9월 24일에는 열리지 않는다. 목요일에는 Novel의 Avenue de France와 Cran-Gevrier의 Place Chorus 등 다른 생활권 시장이 열리지만, 구시가지·호수 동선에서 벗어나므로 일부러 찾아가지 않는다. 이날은 운하·호숫가·크루즈에 집중한다.</p>
+<h3 id="안시에서-꼭-해볼-것">안시에서 꼭 해볼 것</h3>
+<ul>
+<li>Thiou 운하를 따라 골목과 물길이 도시를 어떻게 나누는지 보기</li>
+<li>Palais de l’Île는 외관을 우선하고, 내부는 비·피로 상황에 따라 선택</li>
+<li>Pont des Amours와 Pâquier에서 호수와 산악지형을 길게 바라보기</li>
+<li>Savoy 음식은 fondue 하나에 집중하기보다 diots·polenta, tartiflette, 지역치즈 중 몸 상태에 맞게 선택</li>
+<li>날씨가 좋으면 1시간 크루즈로 호수도시의 규모를 체감하기</li>
+</ul>
+<h3 id="점심-후보">점심 후보</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>식당</th>
+<th>성격</th>
+<th>추천메뉴·계획가격 <span class="badge badge-pending">재확인</span></th>
+<th>예약 <span class="badge badge-pending">재확인</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chez Mamie Lise</strong></td>
+<td>구시가지 Savoy 전통식</td>
+<td>일일요리 약 €19, 메뉴 약 €32.90, diots 약 €26.80, tartiflette 약 €25.50</td>
+<td>점심 권장</td>
+</tr>
+<tr>
+<td><strong>Le Freti</strong></td>
+<td>치즈요리 전문</td>
+<td>fondue, raclette, tartiflette</td>
+<td>점심 예약 권장</td>
+</tr>
+<tr>
+<td>가벼운 대안</td>
+<td>빵집·샌드위치·샐러드</td>
+<td>크루즈 전 과식 방지</td>
+<td>불필요</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="우천지연-대체안">우천·지연 대체안</h3>
+<ul>
+<li>비: Vieille Ville→Palais de l’Île 내부→긴 점심→비가 약해지면 호숫가. 크루즈는 운항 시에만</li>
+<li>강풍·크루즈 취소: Pâquier·Imperial 구간 평지산책과 카페로 대체</li>
+<li>열차 지연 60분 이상: 크루즈를 삭제하고 구시가지+호숫가만</li>
+<li>대규모 철도장애: Lyon의 Confluence·Navigône·Parc 생활일로 대체</li>
+</ul>
+<hr>
+<h2>오늘 확인할 것</h2><dl class="day-summary"><div class="ds-item"><dt>핵심 실행</dt><dd>Annecy 당일치기</dd></div><div class="ds-item"><dt>권장 출발</dt><dd>08:00 전후 역 이동</dd></div><div class="ds-item"><dt>완충</dt><dd>TER 20분 전 도착</dd></div><div class="ds-item"><dt>최고 리스크</dt><dd>철도지연·날씨</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>크루즈</dd></div><div class="ds-item"><dt>대체안</dt><dd>Lyon 생활일로 전환</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Annecy 구시가지</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>TER·크루즈</dd></div></dl>
+<h2>이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/annecy.html">Annecy 구시가지 <b>필수</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
 <nav class="pager"><a href="day-26.html">← Day 26</a><span></span><a href="day-28.html">Day 28 →</a></nav>
 </main>
 <footer>

@@ -229,7 +229,7 @@ img { max-width: 100%; height: auto; }
   color: var(--text);
   box-shadow: inset 0 -0.5px 0 var(--separator);   /* 헤어라인 */
 }
-#menu-btn, #search-btn {
+#search-btn {
   min-width: var(--tap);
   min-height: var(--tap);
   background: none;
@@ -239,48 +239,45 @@ img { max-width: 100%; height: auto; }
   cursor: pointer;
   border-radius: var(--r-ctrl);
 }
-#menu-btn:hover, #search-btn:hover { background: var(--accent-soft); }
+#search-btn:hover { background: var(--accent-soft); }
 #search-btn { font-size: 22px; }
-/* HIG 네비게이션 바 — 앞: 돌아갈 곳 · 가운데: 지금 페이지 · 뒤: 검색·메뉴 */
-.tb-back {
+/* 위치 경로 — 하위 페이지에서도 홈·지역으로 항상 올라갈 수 있게 */
+.tb-crumbs {
   display: flex;
   align-items: center;
-  gap: 1px;
-  flex: 0 0 auto;
-  max-width: 33%;
-  min-width: var(--tap);        /* HIG 44pt — 짧은 라벨도 타깃은 유지 */
-  min-height: var(--tap);
-  padding: 0 var(--s2) 0 var(--s1);
-  color: var(--accent);
-  text-decoration: none;
-  font-size: var(--t-subhead);
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: var(--r-ctrl);
-}
-.tb-back span { font-size: 26px; line-height: 1; margin-right: 1px; }
-.tb-back:hover { background: var(--accent-soft); }
-.tb-back-none { flex: 0 0 var(--tap); min-height: var(--tap); }
-
-.tb-title {
   flex: 1 1 auto;
   min-width: 0;
-  margin: 0;
-  display: flex;
+  min-height: var(--tap);
+  overflow: hidden;
+  font-size: var(--t-subhead);
+}
+.tb-crumbs a, .tb-crumbs b {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;      /* HIG: 네비게이션 바 제목은 가운데 */
+  justify-content: center;
   min-height: var(--tap);
   padding: 0 var(--s1);
+  white-space: nowrap;
+  text-decoration: none;
+}
+/* 짧은 라벨도 44pt 타깃을 유지한다 (HIG Layout) */
+.tb-crumbs a { color: var(--accent); font-weight: 500; flex: 0 0 auto; min-width: var(--tap); }
+.tb-crumbs a:hover { text-decoration: underline; }
+/* 마지막 조각이 지금 페이지다. 좁아지면 앞이 줄고 이것은 남는다. */
+.tb-crumbs b {
   color: var(--text);
-  font-weight: 600;             /* headline */
-  font-size: var(--t-body);
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  flex: 0 1 auto;
+  min-width: 3rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: block;
+  line-height: var(--tap);
 }
+.tb-sep { flex: 0 0 auto; padding: 0 3px; color: var(--muted); }
+.tb-crumbs-none { flex: 1 1 auto; }
+
+
 
 /* ================= 챕터 서브내비 ================= */
 /* 축마다 제 줄을 쓴다. 한 줄에 25개를 늘어놓으면 주제를 보려고 날짜를
@@ -359,7 +356,7 @@ img { max-width: 100%; height: auto; }
 }
 .sn-days a:hover { background: var(--accent); color: var(--accent-ink); }
 
-/* ================= 드로어 ================= */
+/* ================= 검색 시트 ================= */
 #overlay {
   position: fixed;
   inset: 0;
@@ -370,20 +367,22 @@ img { max-width: 100%; height: auto; }
   transition: opacity var(--dur) var(--ease);
 }
 #overlay.show { opacity: 1; pointer-events: auto; }
-#drawer {
+/* 여는 버튼이 오른쪽 위에 있다. 시트도 그쪽에서 나와야 손이 따라간다. */
+#search-sheet {
   position: fixed;
-  top: 0; left: 0; bottom: 0;
+  top: 0; right: 0; bottom: 0;
   z-index: 310;
-  width: min(340px, 88vw);
+  width: min(320px, 86vw);
   background: var(--surface);
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: transform var(--dur) var(--ease);
   overflow-y: auto;
   padding: 10px 12px calc(24px + env(safe-area-inset-bottom));
-  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.28);
+  padding-top: calc(10px + env(safe-area-inset-top));
+  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.28);
 }
-#drawer.open { transform: translateX(0); }
-.dw-head {
+#search-sheet.open { transform: translateX(0); }
+.ss-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -392,7 +391,7 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 8px;
   padding-left: 8px;
 }
-#drawer-close {
+#sheet-close {
   min-width: var(--tap);
   min-height: var(--tap);
   background: none;
@@ -427,18 +426,7 @@ img { max-width: 100%; height: auto; }
 #search-results .sr-c { display: block; font-size: 0.78rem; color: var(--muted); }
 .sr-none { color: var(--text-2); font-size: 0.9rem; padding: 10px; margin: 0; }
 
-.dw-nav h3 {
-  margin: 18px 0 4px;
-  padding-left: 10px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--muted);
-}
-/* 드로어 링크는 .list-row 컴포넌트를 쓴다 (본문·홈과 같은 것) */
-
-/* 드로어·목록의 지역 링크에 지역 색 리본 — 국경이 색으로 보인다 */
+/* 목록의 지역 링크에 지역 색 리본 — 국경이 색으로 보인다 */
 .list-row { border-left: 3px solid transparent; }
 .list-row[href*="/barcelona/"] { border-left-color: var(--acc-bcn); }
 .list-row[href*="/girona/"] { border-left-color: var(--acc-gir); }
@@ -1167,7 +1155,7 @@ footer {
 
 /* 인쇄 */
 @media print {
-  .topbar, .bottomnav, #drawer, #overlay, #back-top, .subnav { display: none !important; }
+  .topbar, .bottomnav, #search-sheet, #overlay, #back-top, .subnav { display: none !important; }
   main { max-width: none; padding: 0; }
   body { background: #fff; font-size: 11pt; }
 }
@@ -1382,11 +1370,3 @@ footer {
   color: var(--muted);
   text-align: right;
 }
-
-
-/* 드로어 안의 목록 — 본문보다 촘촘하게 */
-.dw-nav .list-group { margin: var(--s2) 0 var(--s5); }
-.dw-nav .list-row { min-height: 50px; padding: 6px var(--s3); }
-.dw-nav .list-row .lr-icon { font-size: 16px; }
-.dw-nav .list-row .lr-title { font-size: var(--t-subhead); }
-.dw-nav .list-row .lr-sub { font-size: var(--t-cap1); }
