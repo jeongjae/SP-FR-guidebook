@@ -512,7 +512,12 @@ def build_regions():
 <div class="related"><a href="{ITINERARY_URL}">▤ 43일 전체 일정표</a>
 <a href="daily/index.html">◉ 데일리 카드 43일</a>
 <a href="maps/offline.html">⌖ 오프라인 지도 준비</a></div>"""
-    (SITE / "regions.html").write_text(page("지역", body, rel=".", back=crumbs_for(("지역", None))), encoding="utf-8")
+    (SITE / "regions.html").write_text(
+        page("지역", body, rel=".", back=crumbs_for(("지역", None)),
+             coords=coords_bar(".", day=("43일", "daily/index.html"),
+                               region=("8곳", None),
+                               topic=("분류·상태", "topics/index.html"))),
+        encoding="utf-8")
     SEARCH_INDEX.append({"t": "지역", "c": "목록", "u": "regions.html"})
     print(f"  지역 인덱스: {len(cards)}개 거점 → regions.html")
 
@@ -1616,14 +1621,37 @@ def regions_of_date(d):
     return [c for c in CHAPTERS if c["kind"] == "region" and c["start"] <= d <= c["end"]]
 
 
+# 지역 슬러그 → 나라. 스페인 두 곳, 나머지는 프랑스. Day 7 에 국경을 넘는다.
+ES_REGIONS = {"barcelona", "girona"}
+
+
+def country_of(*names):
+    """이 페이지가 어느 나라인가. 이동일은 둘 다다.
+
+    통화는 같지만 시장 요일·공휴일·긴급번호·언어가 다르다. 지금 어느
+    나라에 있는지는 장식이 아니라 현장 정보다.
+    """
+    seen = []
+    for n in names:
+        if not n:
+            continue
+        c = "es" if n in ES_REGIONS else "fr"
+        if c not in seen:
+            seen.append(c)
+    if not seen:
+        return ""
+    return "-".join(sorted(seen))
+
+
 def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
-         coords="", back=None):
+         coords="", back=None, country=""):
     """back=(라벨, URL). HIG 네비게이션 바의 뒤로가기다.
 
     상단바는 둘로 고정한다 — 앞: 위치 경로(홈까지 올라간다), 뒤: 검색.
     전체 메뉴 버튼은 없다. 축 진입은 하단탭이, 목록은 홈이 맡는다.
     """
     meta_html = f'<p class="meta">{meta_line}</p>' if meta_line else ""
+    country_attr = f' data-country="{country}"' if country else ""
     tb_title = html.escape(topbar_title or title)
     if back:
         crumbs = back if isinstance(back, list) else [("홈", "index.html"), back]
@@ -1645,7 +1673,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <title>{html.escape(title)} — {SITE_TITLE}</title>
 <link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
-<body data-rel="{rel}">
+<body data-rel="{rel}"{country_attr}>
 <header class="topbar">
   {lead}
   <button id="search-btn" aria-label="검색 열기">⌕</button>
@@ -1827,6 +1855,7 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
     return (page(title, content, rel=rel, topbar_title=title, coords=coords, subnav=subnav,
                  back=region_crumbs((c["region"], f'chapters/{c["name"]}/index.html'),
                                     (title, None)),
+                 country=country_of(c["name"]),
                  meta_line=f'{c["title"]} · {date_label(c["start"])}–{date_label(c["end"])}'),
             flatten_tokens(toc_tokens), body)
 
@@ -1987,6 +2016,7 @@ def build_split_chapter(c, body_md, map_links):
     (out_dir / "index.html").write_text(
         page(c["title"], hub_body, rel=rel, topbar_title=c["title"],
              back=region_crumbs((c["region"], None)),
+             country=country_of(c["name"]),
              subnav=chapter_siblings(pages, "index.html"),
              meta_line=f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박'),
         encoding="utf-8")
@@ -2691,6 +2721,7 @@ def build_daily():
         (out_dir / f"day-{n:02d}.html").write_text(
             page(title, body, rel="..", topbar_title=title, subnav=day_nav,
                  back=region_crumbs(reg_crumb, (f"Day {n}", None)),
+                 country=country_of(*(x["name"] for x in regs)),
                  coords=coords_bar("..",
                                    day=(f"Day {n} · {date_label(d)} {wd}", None),
                                    region=region_cell,
@@ -2718,7 +2749,10 @@ def build_daily():
             f'<div class="daily-grid">{"".join(index_items)}</div>')
     (out_dir / "index.html").write_text(
         page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드",
-             back=crumbs_for(("데일리", None))),
+             back=crumbs_for(("데일리", None)),
+             coords=coords_bar("..", day=("43일", None),
+                               region=("8곳", "regions.html"),
+                               topic=("분류·상태", "topics/index.html"))),
         encoding="utf-8")
     print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)"
           f" · 피로도 {n_fat}일 · 시간표 {n_tt}건")
@@ -2727,8 +2761,8 @@ def build_daily():
 # ---------------------------------------------------------------- home
 
 def build_home():
-    """홈 — 여정 하나로 연다. 축 진입은 하단탭과 드로어가 맡는다."""
-    stops = []
+    """홈 — 여정 하나로 연다. 축 진입은 하단탭과 좌표 바가 맡는다."""
+    stops, prev_es = [], False
     for c in CHAPTERS:
         if c["kind"] != "region":
             continue
@@ -2739,8 +2773,19 @@ def build_home():
                 ("동선", f"daily/day-{first:02d}.html"),
                 ("지도", f'maps/{c["map"]}')]
         btns = "".join(f'<a class="tl-act" href="{u}">{n}</a>' for n, u in acts)
+        # 스페인에서 프랑스로 넘어가는 지점. 여기서 시장 요일·공휴일·긴급번호가
+        # 바뀐다. 여정 목록에서 그 자리가 보여야 한다.
+        if c["name"] not in ES_REGIONS and prev_es:
+            stops.append(f'''<li class="tl-border" aria-label="국경">
+  <div class="bc">
+    <span class="bc-flag bc-es" aria-hidden="true"></span>
+    <span class="bc-label">{date_label(c["start"])} · 국경을 넘는다 — 스페인에서 프랑스로</span>
+    <span class="bc-flag bc-fr" aria-hidden="true"></span>
+  </div>
+</li>''')
+        prev_es = c["name"] in ES_REGIONS
         stops.append(f"""<li>
-  <div class="tl-body">
+  <div class="tl-body" data-region="{c["name"]}">
     <div class="tl-head">
       <a class="tl-title" href="{chapter_url(c)}">{c["title"]}</a>
       <span class="tl-when">{date_label(c["start"])}–{date_label(c["end"])}
@@ -2789,7 +2834,12 @@ def build_home():
 본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
 """
     (SITE / "index.html").write_text(
-        page("홈", body, rel=".", topbar_title=SITE_SHORT), encoding="utf-8")
+        page("홈", body, rel=".", topbar_title=SITE_SHORT,
+             back=[(SITE_SHORT, None)],
+             coords=coords_bar(".", day=("43일", "daily/index.html"),
+                               region=("8곳", "regions.html"),
+                               topic=("분류·상태", "topics/index.html"))),
+        encoding="utf-8")
     print("  홈 → index.html")
 
 
@@ -3179,6 +3229,9 @@ def build_topics():
            + f'<div class="rg-grid">{"".join(cards)}</div>')
     (SITE / "topics" / "index.html").write_text(
         page("주제", hub, rel=rel, topbar_title="주제", back=crumbs_for(("주제", None)),
+             coords=coords_bar("..", day=("43일", "daily/index.html"),
+                               region=("8곳", "regions.html"),
+                               topic=("분류·상태", None)),
              subnav=topic_siblings("index")), encoding="utf-8")
     SEARCH_INDEX.append({"t": "주제 — 전체 목록", "c": "주제", "u": "topics/index.html"})
     print(f"  주제: 분류 {len(cards)}개 · 상태 {len(st_cards)}개 → topics/")
@@ -3465,6 +3518,7 @@ def build_places(timetable):
         (out_dir / f'{r["slug"]}.html').write_text(
             page(r["name"], body, rel=rel, topbar_title=r["name"],
                  back=region_crumbs((c["region"], chapter_url(c)), (r["name"], None)),
+                 country=country_of(c["name"]),
                  subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
         SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
                              "u": f'places/{r["slug"]}.html'})
