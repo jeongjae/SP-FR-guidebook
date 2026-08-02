@@ -1164,3 +1164,34 @@ footer {
   background: var(--accent);
   color: var(--accent-ink);
 }
+
+/* ================= 장소 카드 ================= */
+.pl-day {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  margin: 0 6px 4px 0;
+  padding: 0 12px;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.pl-day:hover { background: var(--accent); color: var(--accent-ink); }
+.pl-basis {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.pl-ex {
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-left: 3px solid var(--border);
+  background: var(--surface);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-2);
+  word-break: keep-all;
+}
