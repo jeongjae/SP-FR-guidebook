@@ -1049,3 +1049,106 @@ footer {
   main { max-width: none; padding: 0; }
   body { background: #fff; font-size: 11pt; }
 }
+
+/* ================= 좌표 바 — 일자·지역·주제 축 전환 ================= */
+.coords {
+  display: flex;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--surface-sunk);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.coords::-webkit-scrollbar { display: none; }
+.coords > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: var(--tap);
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--text);
+}
+.coords b {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.coords span {
+  font-size: 0.86rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.coords a:hover { border-color: var(--accent); }
+/* 현재 축 — 색만이 아니라 왼쪽 리본과 굵기로도 구분한다 */
+.coords .cd-here {
+  border-color: var(--accent);
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+}
+.coords .cd-here b { color: var(--accent); }
+
+/* 챕터 Day 섹션 → 그 날 데일리 카드 */
+.day-jump { margin: -2px 0 12px; }
+.day-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent);
+}
+.day-jump a:hover { border-color: var(--accent); }
+
+/* ================= 주제 페이지 ================= */
+.tp-list { margin: 12px 0 8px; }
+.tp-region {
+  margin: 22px 0 8px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  border-bottom: 2px solid var(--accent);
+}
+.tp-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 11px 13px;
+  margin-bottom: 6px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--text);
+}
+.tp-item:hover { border-color: var(--accent); }
+.tp-title { font-weight: 700; line-height: 1.45; }
+.tp-ex {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text-2);
+  word-break: keep-all;
+}
+.card-n {
+  margin-top: auto;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
