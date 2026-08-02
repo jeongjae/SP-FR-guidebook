@@ -3291,6 +3291,18 @@ TIMETABLE = {}        # 데일리 빌드가 채운다 — 장소 페이지가 Da
 PLACES_BY_DAY = {}    # 장소 빌드가 채운다 — 데일리 카드가 그 날 장소를 싣는다
 
 
+def wiki_ref(value):
+    """레지스트리의 위키 칸을 (제목, 언어) 로 읽는다.
+
+    `fr:Vieux-Nice` 처럼 앞에 언어를 붙일 수 있다. 기본은 영어판이다.
+    """
+    if not value:
+        return {"wiki": None, "wlang": "en"}
+    m = re.match(r"([a-z]{2}):(.+)$", value)
+    return {"wiki": m.group(2).strip(), "wlang": m.group(1)} if m \
+        else {"wiki": value, "wlang": "en"}
+
+
 def load_place_registry():
     """장소 레지스트리를 읽는다. 지역 h2 아래의 표가 그 지역의 장소 목록이다."""
     if not PLACE_REGISTRY.exists():
@@ -3316,7 +3328,9 @@ def load_place_registry():
                     "body": dash(c[5]), "head": dash(c[6]),
                     # 위키백과 문서 제목. 사진과 참고 링크의 근거다. 확인한 것만
                     # 채운다 — 틀린 제목은 남의 사진을 이 장소 것처럼 붙인다.
-                    "wiki": dash(c[7]) if len(c) > 7 else None})
+                    # `fr:제목` 이면 프랑스어판이다. 시장·채석장·구시가지는 영어판에
+                    # 문서가 없고 프랑스어판에만 있는 경우가 많다.
+                    **wiki_ref(dash(c[7]) if len(c) > 7 else None)})
     return out
 
 
@@ -3561,7 +3575,8 @@ def build_places(timetable):
         photo = ""
         if r.get("wiki"):
             photo = (f'<figure class="pl-shot" data-wiki="{html.escape(r["wiki"], quote=True)}"'
-                     f' data-wlang="en" hidden><img alt="{html.escape(r["name"])}" loading="lazy">'
+                     f' data-wlang="{r["wlang"]}" hidden>'
+                     f'<img alt="{html.escape(r["name"])}" loading="lazy">'
                      f'<figcaption><a class="pl-credit" target="_blank" rel="noopener"'
                      f' href="#">사진 · 위키백과</a></figcaption></figure>')
 
@@ -3569,7 +3584,7 @@ def build_places(timetable):
         # 레지스트리에서 온다. 둘 다 없으면 그 칩은 나오지 않는다.
         refs = []
         if r.get("wiki"):
-            wurl = ("https://en.wikipedia.org/wiki/"
+            wurl = (f'https://{r["wlang"]}.wikipedia.org/wiki/'
                     + urllib.parse.quote(r["wiki"].replace(" ", "_")))
             refs.append(f'<a class="ref ic ic-link" target="_blank" rel="noopener"'
                         f' href="{html.escape(wurl)}">위키백과</a>')
