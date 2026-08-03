@@ -2361,7 +2361,7 @@ def build_chapters():
             continue
         collect_search(c, flat)
 
-        if c["slug"] == "02":
+        if c["slug"] == "01":
             body = re.sub(r"(</h1>)", r"\1" + visual_figure("rhythm", "생활형 여행의 하루 리듬"),
                           body, count=1)
         if c["slug"] == "03":
@@ -4073,6 +4073,77 @@ def check_phase6_map_guards():
     print("Phase 6 실행지도 가드: 8지역 · 65개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
 
 
+def check_phase7_visual_guards():
+    """대표사진·편집도식·권리표시를 배포 계약으로 고정한다."""
+    problems = []
+
+    # 원본과 배포본이 모두 있어야 한다. 잘못 확장한 파일도 초기에 막는다.
+    for slug, (fname, subject, author, lic, _lic_url, _src_url) in sorted(HERO_PHOTOS.items()):
+        source = HERO_DIR / fname
+        deployed = SITE / "assets" / "heroes" / f"{slug}.jpg"
+        for label, path in (("원본", source), ("배포본", deployed)):
+            if not path.exists() or path.stat().st_size < 10_000:
+                problems.append(f"대표사진 {label} 누락·손상: {path}")
+            elif path.read_bytes()[:2] != b"\xff\xd8":
+                problems.append(f"대표사진 JPEG 형식 오류: {path}")
+
+        chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
+        hub = SITE / chapter_url(chapter)
+        page_text = hub.read_text(encoding="utf-8")
+        for token in (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
+                      html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈"):
+            if token not in page_text:
+                problems.append(f"{chapter['region']} 허브 대표사진·크레딧 누락: {token}")
+
+    for key, fname in VISUALS.items():
+        source = VISUALS_DIR / fname
+        deployed = SITE / "assets" / "visuals" / fname
+        for label, path in (("원본", source), ("배포본", deployed)):
+            if not path.exists() or path.stat().st_size < 10_000:
+                problems.append(f"편집도식 {label} 누락·손상: {path}")
+            elif path.read_bytes()[:8] != b"\x89PNG\r\n\x1a\n":
+                problems.append(f"편집도식 PNG 형식 오류: {path}")
+
+    expected_visuals = {
+        "chapters/how-to-use.html": ("rhythm",),
+        "chapters/itinerary.html": ("route", "fatigue"),
+        "tracker/reservations.html": ("risk",),
+        "chapters/aix/transport.html": ("cardays",),
+        "chapters/luberon/transport.html": ("cardays",),
+        "chapters/avignon/transport.html": ("cardays",),
+        "chapters/paris/index.html": ("cycles",),
+    }
+    for relpath, keys in expected_visuals.items():
+        page_text = (SITE / relpath).read_text(encoding="utf-8")
+        for key in keys:
+            if VISUALS[key] not in page_text:
+                problems.append(f"{relpath}: 편집도식 {key} 누락")
+
+    credits = (SITE / "credits.html").read_text(encoding="utf-8")
+    if credits.count('class="credit-item"') != len(HERO_PHOTOS):
+        problems.append("사진 저작자 표시 페이지의 대표사진 항목 수 불일치")
+    for _slug, (_fname, _subject, author, lic, lic_url, src_url) in HERO_PHOTOS.items():
+        for token in (author, lic, lic_url, src_url):
+            if token not in credits:
+                problems.append(f"사진 저작자 표시 페이지 누락: {token}")
+
+    leaked = []
+    for path in SITE.rglob("*.html"):
+        text = path.read_text(encoding="utf-8")
+        if "../../ASSETS/88_Representative_Public_Photos/" in text or \
+                "../../ASSETS/85_Editorial_Visuals/" in text:
+            leaked.append(str(path.relative_to(SITE)))
+    if leaked:
+        problems.append("배포 HTML에 원본 상대경로 잔존: " + ", ".join(leaked[:10]))
+
+    if problems:
+        print("Phase 7 시각자산 가드 실패:")
+        for problem in problems[:40]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 7 시각자산 가드: 대표사진 8장 · 편집도식 6장 · 본문 배치 · CC 크레딧 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4169,6 +4240,7 @@ def main():
     check_phase4_daily_guards()
     check_phase5_execution_guards()
     check_phase6_map_guards()
+    check_phase7_visual_guards()
     check_links()
     check_dates()
     check_places()
