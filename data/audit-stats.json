@@ -1,0 +1,16 @@
+{
+  "sourceFiles": 56,
+  "sourceSections": 5548,
+  "sourceWords": 225140,
+  "sitePages": 252,
+  "siteRedirects": 61,
+  "duplicateGroups": 712,
+  "exactGroups": 698,
+  "near95Groups": 8,
+  "near80Groups": 1,
+  "partialGroups": 5,
+  "boilerplateSentences": 4075,
+  "thinSections": 443,
+  "deepHeadings": 508,
+  "emptySections": 956
+}
