@@ -20,6 +20,7 @@ UI/UX 설계: docs/UIUX_Design_v1.0.md
 """
 
 import html
+import itertools
 import json
 import re
 import shutil
@@ -32,6 +33,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons                     # noqa: E402  — 아이콘 마스크 생성기
+import content_model             # noqa: E402  — stable-ID content graph
 from xml.etree import ElementTree
 
 try:
@@ -106,6 +108,24 @@ MAPS = [
     ("Lyon_Execution_Map_v0.2.html", "lyon.html", "Lyon 실행지도"),
     ("Paris_Execution_Map_v0.2.html", "paris.html", "Paris 실행지도"),
 ]
+
+# Phase 6 정본 라우팅. 데일리 페이지·지도 목록·회귀 가드가 같은 범위를 쓴다.
+MAP_META = {
+    "barcelona.html": ("Day 1–4", "Barcelona·Sitges"),
+    "girona.html": ("Day 4–7", "Girona·Empordà"),
+    "nice.html": ("Day 7–12", "Nice·Côte d’Azur"),
+    "aix.html": ("Day 12–16", "Aix-en-Provence"),
+    "luberon.html": ("Day 16–20", "Luberon"),
+    "avignon.html": ("Day 20–24", "Avignon·Alpilles"),
+    "lyon.html": ("Day 24–28", "Lyon·Annecy"),
+    "paris.html": ("Day 28–43", "Paris"),
+}
+MAP_DAY_SPANS = {
+    "barcelona.html": range(1, 5), "girona.html": range(4, 8),
+    "nice.html": range(7, 13), "aix.html": range(12, 17),
+    "luberon.html": range(16, 21), "avignon.html": range(20, 25),
+    "lyon.html": range(24, 29), "paris.html": range(28, 44),
+}
 
 # 데일리 모바일 가이드 (ASSETS/80_Daily_Mobile_Guide_Image_Index_v1.1.md 기준)
 DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
@@ -1732,8 +1752,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
   <a href="#" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
   <a href="{rel}/{ITINERARY_URL}" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
   <a href="{rel}/regions.html" data-tab="regions"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>지역</span></a>
-  <a href="{rel}/topics/index.html" data-tab="topics"><b class="ic ic-only ic-topic" aria-hidden="true"></b><span>주제</span></a>
-  <a href="{rel}/maps/index.html" data-tab="maps"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="{rel}/tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="#search" class="nav-search" data-tab="search"><b class="ic ic-only ic-search" aria-hidden="true"></b><span>검색</span></a>
 </nav>
 <button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
 <script src="{rel}/assets/data.js" defer></script>
@@ -2649,12 +2669,18 @@ def build_daily():
         flags = day_flags(n)
         flag_html = f'<p class="day-flags">{"".join(flags)}</p>' if flags else ""
 
-        # ── 2. 감사 요약
+        # ── 2. 실행 요약. 첫 화면은 현장에서 바로 쓸 세 가지만 놓고,
+        # 삭제·대체·식사·잠금은 필요할 때 펴친다.
+        quick_summary = "".join(
+            f'<div class="dq-item dq-{k}"><dt>{AUDIT_LABELS[k]}</dt>'
+            f'<dd>{html.escape(row[k])}</dd></div>'
+            for k in ("core", "depart", "buffer"))
         summary = "".join(
             f"<div class=\"ds-item\"><dt>{AUDIT_LABELS[k]}</dt>"
             f"<dd>{html.escape(row[k])}</dd></div>"
-            for k in ("core", "depart", "buffer", "risk", "cut", "alt", "meals", "lock"))
-        audit_block = f'<h2 class="ic ic-check">오늘 확인할 것</h2><dl class="day-summary">{summary}</dl>'
+            for k in ("risk", "cut", "alt", "meals", "lock"))
+        audit_block = (f'<details class="day-details"><summary>상세 실행 확인</summary>'
+                       f'<dl class="day-summary">{summary}</dl></details>')
 
         # ── 3·4. 시간표 · 피로도 · 메모 — 그 날 원고 하나에서 전부 나온다.
         #   전에는 이 자리에 원고를 정규식으로 다시 긁은 사본이 있었고, 챕터
@@ -2705,7 +2731,8 @@ def build_daily():
                     f'<a href="../maps/{cand["map"]}"><b class="ic ic-map" aria-hidden="true"></b>{cand["region"]} 실행지도</a>')
         if n not in MAP_TRANSITION:
             map_links = map_links[:1]
-        links = [f'<a href="../{ch_url}"><b class="ic ic-list" aria-hidden="true"></b>이날의 챕터 일정</a>'] + map_links + [
+        links = [f'<a href="../{ch_url}"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a>'] + map_links
+        more_links = [
             '<a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a>',
             '<a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a>']
 
@@ -2725,25 +2752,28 @@ def build_daily():
             place_block = ""
 
         # ── 7·8. 원문 · 카드 이미지
-        card_block = f"""<figure class="daily-card"><img src="img/day-{n:02d}.png"
+        card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
+<figure class="daily-card"><img src="img/day-{n:02d}.png"
   alt="Day {n} 데일리 모바일 가이드 카드"></figure>
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
-실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p>"""
+실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p></details>"""
 
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
-        p4 = ' <span class="p4-badge">Phase 4 최종</span>' if info.get("phase4") else ""
-
-        body = f"""<h1>{title}{p4}</h1>
+        body = f"""<h1>{title}</h1>
 {flag_html}
-<div class="related">{''.join(links)}</div>
-{card_block}
+<section class="day-command" aria-label="오늘 실행 요약">
+<dl class="day-quick">{quick_summary}</dl>
+<nav class="day-actions" aria-label="오늘 바로가기">{''.join(links)}</nav>
+</section>
 {tt_block}
 {fat_block}
+{place_block}
 {note_block}
 {audit_block}
-{place_block}
+<div class="related day-more">{''.join(more_links)}</div>
+{card_block}
 {pager}"""
         region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
                        if c else ("이동 중", ITINERARY_URL))
@@ -2769,10 +2799,11 @@ def build_daily():
                                    topic=("전체 주제", "topics/index.html"))),
             encoding="utf-8")
 
-        index_items.append(
-            f'<a class="daily-item" href="day-{n:02d}.html">'
+        index_items.append((c["region"] if c else "이동",
+            f'<a class="daily-item{" is-p0" if n in P0_CONNECTION else ""}" href="day-{n:02d}.html">'
             f'<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
-            f'<span class="di-region">{html.escape(row["base"])}</span></a>')
+            f'<span class="di-region">{html.escape(row["base"])}</span>'
+            f'<span class="di-core">{html.escape(row["core"])}</span></a>'))
         SEARCH_INDEX.append({"t": title, "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
         SEARCH_INDEX.append({"t": f"Day {n} 핵심 실행 — {row['core']}",
                              "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
@@ -2784,10 +2815,15 @@ def build_daily():
                         "t": f"Day {n} {cells[0]} {label}", "c": "일자별 시간표",
                         "u": f"daily/day-{n:02d}.html"})
 
-    body = ('<h1>데일리 가이드 — 43일 카드</h1>'
-            '<p class="meta">일자별 세로형 모바일 가이드 카드 (1080×1920) · '
-            'Day 12–24는 Phase 4 최종판</p>'
-            f'<div class="daily-grid">{"".join(index_items)}</div>')
+    groups = []
+    for region, items in itertools.groupby(index_items, key=lambda x: x[0]):
+        cards = "".join(x[1] for x in items)
+        groups.append(f'<section class="daily-region"><h2>{html.escape(region)}</h2>'
+                      f'<div class="daily-grid">{cards}</div></section>')
+    body = ('<h1>43일 실행 일정</h1>'
+            '<p class="meta">지역별로 날짜·거점·핵심 실행을 확인한다. '
+            '빨간 표시는 놓치면 대안이 없는 교통 연결일이다.</p>'
+            f'{"".join(groups)}')
     (out_dir / "index.html").write_text(
         page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드",
              back=crumbs_for(("데일리", None)),
@@ -2802,7 +2838,12 @@ def build_daily():
 # ---------------------------------------------------------------- home
 
 def build_home():
-    """홈 — 여정 하나로 연다. 축 진입은 하단탭과 좌표 바가 맡는다."""
+    """홈 — 여행자가 지금 할 행동부터 고른다.
+
+    편집 분류가 아니라 오늘/일정/지역/준비/검색/비상 순으로 연다. 상세
+    여정과 주제·지도는 아래에서 계속 접근할 수 있지만 첫 화면의 선택지를
+    압도하지 않는다.
+    """
     stops, prev_es = [], False
     for c in CHAPTERS:
         if c["kind"] != "region":
@@ -2811,7 +2852,7 @@ def build_home():
         acts = [("일정", f'chapters/{c["name"]}/schedule.html'
                  if (SITE / "chapters" / c["name"] / "schedule.html").exists()
                  else chapter_url(c)),
-                ("동선", f"daily/day-{first:02d}.html"),
+                ("첫날", f"daily/day-{first:02d}.html"),
                 ("지도", f'maps/{c["map"]}')]
         btns = "".join(f'<a class="tl-act" href="{u}">{n}</a>' for n, u in acts)
         # 스페인에서 프랑스로 넘어가는 지점. 여기서 시장 요일·공휴일·긴급번호가
@@ -2842,8 +2883,20 @@ def build_home():
         f'<span class="card-sub">{c["sub"]}</span></a>'
         for c in CHAPTERS if c["kind"] != "region")
 
-    # 하단탭(L0)이 없는 진입점은 여기가 유일하다. 햄버거 메뉴를 지웠으므로
-    # 데일리 목록·장소 목록도 여기 있어야 한다 — 없으면 갈 길이 끊긴다.
+    primary_rows = "".join(
+        f'<a class="home-action{extra}" href="{u}">'
+        f'<span class="ha-icon ic ic-only ic-{g}" aria-hidden="true"></span>'
+        f'<span class="ha-copy"><b>{n}</b><span>{s}</span></span>'
+        f'<span class="lr-go" aria-hidden="true">›</span></a>'
+        for g, u, n, s, extra in (
+            ("list", ITINERARY_URL, "43일 일정", "날짜별 전체 여정을 확인", ""),
+            ("region", "regions.html", "지역별 가이드", "8개 거점의 일정과 생활권", ""),
+            ("check", "tracker/index.html", "여행 준비", "예약 · 교통 · 숙소 상태", ""),
+            ("search", "#search", "통합 검색", "날짜 · 장소 · 식당 · 교통 찾기", " nav-search"),
+            ("flag", "maps/offline.html", "비상 · 오프라인", "연결이 약할 때 필요한 정보", "")))
+
+    # 하단탭(L0)이 없는 보조 진입점은 홈에 남긴다. 본문을 복제하지 않고
+    # 원본 목록으로만 연결해 길이 끊기지 않게 한다.
     tool_rows = "".join(
         f'<a class="list-row" href="{u}">'
         f'<span class="lr-icon ic ic-only ic-{g}" aria-hidden="true"></span>'
@@ -2851,11 +2904,11 @@ def build_home():
         f'<span class="lr-sub">{s}</span></span>'
         f'<span class="lr-go" aria-hidden="true">›</span></a>'
         for g, u, n, s in (
-            ("today", "daily/index.html", "데일리 카드", "43일을 한 줄씩"),
+            ("today", "daily/index.html", "데일리 카드 전체", "43일을 한 줄씩"),
             ("pin", "places/index.html", "장소", "갈 곳 전체 목록"),
+            ("topic", "topics/index.html", "주제별 보기", "먹거리 · 교통 · 숙박 등"),
+            ("map", "maps/index.html", "지역 지도", "주요 기준점과 외부 길찾기"),
             ("book", "chapters/how-to-use.html", "가이드 사용법", "이 가이드북을 읽는 법"),
-            ("table", "tracker/index.html", "마스터 트래커", "예약 · 이동 · 숙소 · 대시보드"),
-            ("download", "maps/offline.html", "오프라인 지도 준비", "출발 전에 받아 둔다"),
             ("license", "credits.html", "사진 저작자 표시", "CC 라이선스와 출처")))
 
     body = f"""<section class="hero">
@@ -2863,13 +2916,15 @@ def build_home():
   <p class="period">{TRIP_PERIOD}</p>
   <div class="today-bar">
     <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
-    <a href="#" class="nav-today btn-today">일정 가기</a>
+    <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
   </div>
 </section>
+<nav class="home-actions" aria-label="여행 주요 기능">{primary_rows}</nav>
+<h2 class="ic ic-list">전체 여정</h2>
 <ol class="timeline">{''.join(stops)}</ol>
 <h2 class="ic ic-book">Quick Summary</h2>
 <div class="grid">{intro_cards}</div>
-<h2 class="ic ic-table">도구</h2>
+<h2 class="ic ic-topic">더 보기</h2>
 <div class="list-group">{tool_rows}</div>
 <p class="note">지도 배경 타일은 인터넷 연결 시 표시됩니다.
 본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
@@ -3056,7 +3111,32 @@ def build_maps():
         text, _, _ = sanitize_kml(f.read_text(encoding="utf-8"), f.name)
         (data_dir / f.name).write_text(text, encoding="utf-8")
     cards = []
+    total_points = 0
     for src_name, out_name, title in MAPS:
+        geo_name = src_name.replace(".html", ".geojson")
+        geo = json.loads((MAP_DIR / geo_name).read_text(encoding="utf-8"))
+        features = geo.get("features", [])
+        if not features:
+            sys.exit(f"실행지도 GeoJSON 포인트 없음: {geo_name}")
+        point_rows = []
+        for i, feature in enumerate(features, 1):
+            props = feature.get("properties", {})
+            coords = feature.get("geometry", {}).get("coordinates", [])
+            if len(coords) != 2 or not all(isinstance(v, (int, float)) for v in coords):
+                sys.exit(f"실행지도 좌표 오류: {geo_name} #{i} {coords}")
+            lon, lat = coords
+            if not (-180 <= lon <= 180 and -90 <= lat <= 90):
+                sys.exit(f"실행지도 좌표 범위 오류: {geo_name} #{i} {coords}")
+            name = props.get("name") or props.get("Name")
+            category = props.get("category") or props.get("Category")
+            url = props.get("google_maps") or props.get("url") or props.get("URL")
+            if not name or not category or not url:
+                sys.exit(f"실행지도 필수속성 누락: {geo_name} #{i}")
+            point_rows.append(
+                f'<li><span><b>{i}. {html.escape(str(name))}</b>'
+                f'<small>{html.escape(str(category))}</small></span>'
+                f'<a target="_blank" rel="noopener" href="{html.escape(str(url), quote=True)}">길찾기</a></li>')
+        total_points += len(features)
         text = (MAP_DIR / src_name).read_text(encoding="utf-8")
         text = text.replace(
             "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", "vendor/leaflet/leaflet.css")
@@ -3066,20 +3146,49 @@ def build_maps():
                 'background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;'
                 'font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a>')
         text = text.replace('<div id="map"></div>', f'<div id="map"></div>{back}', 1)
+        # 원본 지도는 데스크톱용 고정 패널이라 작은 화면에서 지도를 가린다.
+        # 안내 접기와 텍스트 기준점 목록을 빌드 시 주입해 원본 자산은 보존한다.
+        map_ui_css = """
+<style id="phase6-map-ui">
+.map-info-toggle{position:absolute;z-index:1200;left:12px;bottom:12px;border:0;border-radius:999px;background:#1f4e78;color:#fff;padding:10px 14px;font-weight:700;box-shadow:0 2px 10px #0005;min-height:44px}
+.point-list{margin-top:9px;border-top:1px solid #d8dee5;padding-top:7px}.point-list summary{cursor:pointer;font-size:12px;font-weight:700}.point-list ol{max-height:32vh;overflow:auto;margin:7px 0 0;padding:0;list-style:none}.point-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #e7ebef;font-size:12px}.point-list small{display:block;color:#5d6670;margin-top:2px}.point-list a{color:#1f4e78;font-weight:700;white-space:nowrap}
+body.map-info-hidden .panel{display:none}
+@media(max-width:600px){.panel{left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));top:max(58px,calc(env(safe-area-inset-top) + 50px));max-width:none;max-height:55vh;overflow:auto;padding:10px 12px}.panel h1{font-size:16px}.panel p{font-size:11px}.map-info-toggle{left:max(8px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom))}}
+</style>"""
+        text = text.replace("</head>", map_ui_css + "</head>", 1)
+        point_list = (f'<details class="point-list"><summary>기준점 {len(features)}개 목록</summary>'
+                      f'<ol>{"".join(point_rows)}</ol></details>')
+        text = text.replace('</div></div>\n<script src="vendor/leaflet/leaflet.js">',
+                            f'</div>{point_list}</div>\n<script src="vendor/leaflet/leaflet.js">', 1)
+        toggle = ('<button class="map-info-toggle" type="button" aria-expanded="true" '
+                  'aria-label="지도 안내 접기">안내 접기</button>')
+        text = text.replace('<div id="map"></div>', f'<div id="map"></div>{toggle}', 1)
+        toggle_js = """<script>
+const mapInfoButton=document.querySelector('.map-info-toggle');
+mapInfoButton.addEventListener('click',()=>{
+ const hidden=document.body.classList.toggle('map-info-hidden');
+ mapInfoButton.textContent=hidden?'안내 보기':'안내 접기';
+ mapInfoButton.setAttribute('aria-expanded',String(!hidden));
+ mapInfoButton.setAttribute('aria-label',hidden?'지도 안내 보기':'지도 안내 접기');
+});
+</script>"""
+        text = text.replace("</body>", toggle_js + "</body>", 1)
         text = link_map_places(text, out_name)
         # 실행지도는 원본 HTML 이라 페이지 셸을 거치지 않는다. 안전영역을 쓰려면
         # 여기서도 viewport-fit=cover 를 넣어야 한다.
         text = re.sub(r'(<meta name="viewport" content="(?![^"]*viewport-fit)[^"]*)"',
                       r'\1, viewport-fit=cover"', text, count=1)
         (out_dir / out_name).write_text(text, encoding="utf-8")
+        day_range, area = MAP_META[out_name]
         cards.append(f'<a class="card card-alt" href="{out_name}">'
                      f'<span class="card-num">🗺️</span><span class="card-title">{title}</span>'
-                     f'<span class="card-sub">주요 기준점 · Google Maps 연동</span></a>')
+                     f'<span class="card-sub">{day_range} · {area} · 기준점 {len(features)}개</span></a>')
         SEARCH_INDEX.append({"t": title, "c": "실행지도", "u": f"maps/{out_name}"})
-    print(f"  지도: {len(MAPS)}개 지역 → maps/")
+    print(f"  지도: {len(MAPS)}개 지역 · 기준점 {total_points}개 → maps/")
 
     body = ('<h1>실행지도</h1>'
-            '<p class="meta">지역별 주요 기준점 지도. 마커를 누르면 Google Maps 검색이 열린다. '
+            '<p class="meta">43일 일정에 연결된 8개 지역별 기준점 지도. 카드의 Day 범위를 확인하고, '
+            '마커 또는 기준점 목록의 길찾기를 누르면 Google Maps가 열린다. '
             '배경 타일은 인터넷 연결 시 표시된다.</p>'
             '<div class="related"><a href="offline.html">📴 오프라인 지도 준비 — Organic Maps</a></div>'
             + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
@@ -3670,15 +3779,32 @@ def build_data_js():
     while d <= TRIP_END:
         today_map[d.isoformat()] = f"daily/day-{day_no(d):02d}.html"
         d += timedelta(days=1)
+    # 검색 결과는 독자 화면이다. 원고의 Markdown 강조·링크 문법을 노출하지 않는다.
+    def clean_search_text(value):
+        rendered = md_inline(str(value))
+        return html.unescape(re.sub(r"<[^>]+>", "", rendered)).strip()
+
+    clean_index = []
+    seen = set()
+    for entry in SEARCH_INDEX:
+        item = dict(entry)
+        item["t"] = clean_search_text(item.get("t", ""))
+        item["c"] = clean_search_text(item.get("c", ""))
+        key = (item["t"], item["c"], item.get("u", ""))
+        if not item["t"] or key in seen:
+            continue
+        seen.add(key)
+        clean_index.append(item)
+
     data = {
         "tripStart": TRIP_START.isoformat(),
         "tripEnd": TRIP_END.isoformat(),
         "today": today_map,
-        "search": SEARCH_INDEX,
+        "search": clean_index,
     }
     js = "window.GUIDE = " + json.dumps(data, ensure_ascii=False) + ";\n"
     (SITE / "assets" / "data.js").write_text(js, encoding="utf-8")
-    print(f"  data.js: 날짜 매핑 {len(today_map)}일 · 검색 인덱스 {len(SEARCH_INDEX)}항목")
+    print(f"  data.js: 날짜 매핑 {len(today_map)}일 · 검색 인덱스 {len(clean_index)}항목")
 
 
 # ---------------------------------------------------------------- checks
@@ -3793,6 +3919,160 @@ def check_day_sections():
     print(f"Day 섹션 검사: 43일 전부 데일리 카드로 · 전환일 포함 {total}건 이상 없음")
 
 
+def check_phase1_reader_guards():
+    """Phase 1에서 고친 독자 화면 결함의 재발을 빌드 단계에서 막는다."""
+    problems = []
+    first = (SITE / "daily" / "day-01.html").read_text(encoding="utf-8")
+    last = (SITE / "daily" / "day-43.html").read_text(encoding="utf-8")
+    if 'href="day-00.html"' in first or re.search(r'<nav class="pager">[^<]*<a[^>]*>[^<]*Day 0', first):
+        problems.append("Day 1에 활성 이전 링크가 있다")
+    if 'href="day-44.html"' in last or re.search(r'<nav class="pager">.*Day 44', last, re.S):
+        problems.append("Day 43에 활성 다음 링크가 있다")
+
+    data = (SITE / "assets" / "data.js").read_text(encoding="utf-8")
+    for pattern, label in ((r'"t":\s*"[^"]*\*\*', "검색 제목의 ** 강조"),
+                           (r'"t":\s*"[^"]*`', "검색 제목의 ` 코드")):
+        if re.search(pattern, data):
+            problems.append(label + " 문법이 노출된다")
+
+    nav = (SITE / "assets" / "nav.js").read_text(encoding="utf-8")
+    if 'u || "chapters/03.html"' in nav:
+        problems.append("오늘 버튼의 기간 밖 fallback이 폐기된 번호 URL이다")
+
+    if problems:
+        print("Phase 1 독자 화면 가드 실패:")
+        for p in problems:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 1 독자 화면 가드: 경계 탐색 · 검색 표기 · 오늘 fallback 이상 없음")
+
+
+def check_phase3_navigation_guards():
+    """여행 행동 중심의 전역 메뉴와 홈 진입점이 유지되는지 검사한다."""
+    problems = []
+    home = (SITE / "index.html").read_text(encoding="utf-8")
+    tabs = re.findall(r'<a [^>]*data-tab="([^"]+)"[^>]*>.*?<span>([^<]+)</span></a>',
+                      home, re.S)
+    expected = [("today", "오늘"), ("itinerary", "일정"), ("regions", "지역"),
+                ("prepare", "준비"), ("search", "검색")]
+    if tabs != expected:
+        problems.append(f"전역 메뉴 {tabs} (기대값 {expected})")
+    for label in ("43일 일정", "지역별 가이드", "여행 준비", "통합 검색", "비상 · 오프라인"):
+        if label not in home:
+            problems.append(f"홈 주요 행동 누락: {label}")
+    nav = (SITE / "assets" / "nav.js").read_text(encoding="utf-8")
+    if 'd < G.tripStart' not in nav or '(G.today || {})[G.tripStart]' not in nav:
+        problems.append("출발 전 오늘 버튼이 다음 여행일로 연결되지 않는다")
+    if problems:
+        print("Phase 3 내비게이션 가드 실패:")
+        for p in problems:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 3 내비게이션 가드: 5탭 · 홈 5행동 · 다음 여행일 이상 없음")
+
+
+def check_phase4_daily_guards():
+    """43일 실행 템플릿의 정보 순서와 보관 카드 접기를 잠근다."""
+    problems = []
+    for n in range(1, 44):
+        path = SITE / "daily" / f"day-{n:02d}.html"
+        text = path.read_text(encoding="utf-8")
+        required = ('class="day-command"', 'class="day-quick"',
+                    'class="day-actions"', '<h2 class="ic ic-clock">시간표</h2>',
+                    '<details class="day-details day-card-archive">')
+        for token in required:
+            if token not in text:
+                problems.append(f"Day {n}: {token} 누락")
+        order = [text.find(token) for token in required]
+        if any(x < 0 for x in order) or order != sorted(order):
+            problems.append(f"Day {n}: 실행요약 → 시간표 → 카드 순서 훼손")
+        if '<figure class="daily-card">' in text.split('<details class="day-details day-card-archive">', 1)[0]:
+            problems.append(f"Day {n}: 카드 이미지가 첫 화면에 노출됨")
+    index = (SITE / "daily" / "index.html").read_text(encoding="utf-8")
+    if index.count('class="daily-region"') != 8:
+        problems.append("일정 목록이 8개 지역 구간으로 묶이지 않음")
+    if index.count('class="daily-item') != 43:
+        problems.append("일정 목록이 43일이 아님")
+    if index.count('class="di-core"') != 43:
+        problems.append("일정 목록의 핵심 실행 요약이 43건이 아님")
+    if problems:
+        print("Phase 4 데일리 템플릿 가드 실패:")
+        for p in problems[:30]:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 4 데일리 템플릿 가드: 43일 공통 순서 · 8지역 목록 · 카드 접기 이상 없음")
+
+
+def check_phase5_execution_guards():
+    """43일 감사표의 날짜·거점·운영일 교정이 다시 갈라지지 않게 잠근다."""
+    problems = []
+    audit = load_audit()
+    for n, row in audit.items():
+        d = date_of_day(n)
+        expected_date = f"{d.month}/{d.day} {WEEKDAY_KO[d.weekday()]}"
+        if row["date"].replace("**", "") != expected_date:
+            problems.append(f'Day {n}: 감사표 날짜 "{row["date"]}" (기대값 {expected_date})')
+        chapter = chapter_for_date(d)
+        if chapter and not row["base"].startswith(chapter["region"]):
+            problems.append(
+                f'Day {n}: 감사표 거점 "{row["base"]}" (기대값 {chapter["region"]})')
+
+    # 2026-08-03 공식 운영 검증: Matisse·Chagall은 화요일 휴관이다.
+    # Day 11에 두 곳을 다시 넣으면 감사표와 실제 데일리 페이지가 동시에 실패한다.
+    day11 = (SITE / "daily" / "day-11.html").read_text(encoding="utf-8")
+    forbidden = re.compile(r"Matisse Museum\s*(?:또는|or)\s*Chagall Museum", re.I)
+    if forbidden.search(day11):
+        problems.append("Day 11: 화요일 휴관인 Matisse·Chagall 선택안이 다시 노출됨")
+    if "Musée de la Photographie Charles Nègre" not in day11:
+        problems.append("Day 11: 화요일 운영 사진미술관 선택안 누락")
+    if "화요일 휴관" not in day11:
+        problems.append("Day 11: Matisse·Chagall 화요일 휴관 경고 누락")
+
+    if problems:
+        print("Phase 5 실행성 감사 가드 실패:")
+        for p in problems[:30]:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 5 실행성 감사 가드: 43일 날짜·거점 · Day 11 휴관 교정 이상 없음")
+
+
+def check_phase6_map_guards():
+    """8개 실행지도·65개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
+    problems, total = [], 0
+    map_index = (SITE / "maps" / "index.html").read_text(encoding="utf-8")
+    for src_name, out_name, title in MAPS:
+        geo_name = src_name.replace(".html", ".geojson")
+        geo = json.loads((MAP_DIR / geo_name).read_text(encoding="utf-8"))
+        count = len(geo.get("features", []))
+        total += count
+        day_range, area = MAP_META[out_name]
+        if f"{day_range} · {area} · 기준점 {count}개" not in map_index:
+            problems.append(f"지도 목록 메타데이터 누락: {out_name}")
+        page_text = (SITE / "maps" / out_name).read_text(encoding="utf-8")
+        for token in ('id="phase6-map-ui"', 'class="map-info-toggle"',
+                      f'기준점 {count}개 목록', 'aria-expanded="true"'):
+            if token not in page_text:
+                problems.append(f"{out_name}: 모바일 지도 UI 누락 — {token}")
+        if page_text.count('>길찾기</a>') != count:
+            problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
+
+    if total != 65:
+        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 65)")
+    for n in range(1, 44):
+        text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
+        actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
+        actual.discard("offline.html")
+        expected = {name for name, days in MAP_DAY_SPANS.items() if n in days}
+        if actual != expected:
+            problems.append(f"Day {n}: 지도 {sorted(actual)} (기대 {sorted(expected)})")
+    if problems:
+        print("Phase 6 실행지도 가드 실패:")
+        for p in problems[:30]:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 6 실행지도 가드: 8지역 · 65개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -3866,10 +4146,29 @@ def main():
     build_topics()
     print("트래커 빌드:")
     build_tracker()
+    graph = content_model.build_graph(
+        chapters=CHAPTERS, trip_start=TRIP_START, trip_end=TRIP_END,
+        places=load_place_registry(), place_days=place_days(load_place_registry(), TIMETABLE),
+        tracker_path=TRACKER_XLSX)
+    graph_errors = content_model.validate_graph(graph)
+    if graph_errors:
+        print("콘텐츠 모델 검사 실패:")
+        for problem in graph_errors[:20]:
+            print("  " + problem)
+        sys.exit(1)
+    content_model.write_graph(graph, SITE / "assets" / "content-model.json")
+    print("콘텐츠 모델: " + " · ".join(
+        f'{key} {len(graph[key])}' for key in
+        ("regions", "days", "places", "stays", "reservations", "transports")))
     build_data_js()
     check_visual_tokens()
     check_naming()
     check_day_sections()
+    check_phase1_reader_guards()
+    check_phase3_navigation_guards()
+    check_phase4_daily_guards()
+    check_phase5_execution_guards()
+    check_phase6_map_guards()
     check_links()
     check_dates()
     check_places()

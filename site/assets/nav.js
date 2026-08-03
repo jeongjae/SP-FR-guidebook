@@ -13,12 +13,18 @@
     overlay.classList.remove("show");
   }
   if (sheet && overlay && searchBtn) {
-    searchBtn.addEventListener("click", function () {
+    function openSheet(e) {
+      if (e) e.preventDefault();
       sheet.classList.add("open");
       overlay.classList.add("show");
       var i = $("#search-input");
       if (i) i.focus();
-    });
+    }
+    searchBtn.addEventListener("click", openSheet);
+    var searchLinks = document.querySelectorAll(".nav-search");
+    for (var si = 0; si < searchLinks.length; si++) {
+      searchLinks[si].addEventListener("click", openSheet);
+    }
     overlay.addEventListener("click", closeSheet);
     var closeBtn = $("#sheet-close");
     if (closeBtn) closeBtn.addEventListener("click", closeSheet);
@@ -56,8 +62,10 @@
   }
   function todayUrl() {
     var G = window.GUIDE || {};
-    var u = (G.today || {})[parisToday()];
-    return rel + "/" + (u || "chapters/03.html");
+    var d = parisToday(), u = (G.today || {})[d];
+    /* 출발 전에는 '다음 여행일'인 Day 1, 귀국 뒤에는 43일 목록으로 간다. */
+    if (!u && G.tripStart && d < G.tripStart) u = (G.today || {})[G.tripStart];
+    return rel + "/" + (u || "daily/index.html");
   }
   /* 홈 히어로의 오늘 날짜 — 여행 기간 밖이면 그 사실을 그대로 보인다 */
   var todayEl = $("#today-date");
@@ -65,7 +73,9 @@
     var G = window.GUIDE || {}, d = parisToday();
     todayEl.textContent = d;
     if (!(G.today || {})[d]) {
-      todayEl.textContent = d + " · 여행 기간 밖";
+      todayEl.textContent = (G.tripStart && d < G.tripStart)
+        ? "다음 여행일 · " + G.tripStart
+        : d + " · 여행 종료";
       todayEl.classList.add("today-out");
     }
   }
@@ -182,9 +192,7 @@
     // 지역 챕터는 지명 디렉터리를 쓴다 — 분할 여부와 무관하게 하위 페이지 전부
     if (/\/regions\.html$/.test(p) || /\/chapters\/[^/]+\/[^/]*$/.test(p))
       return "regions";
-    if (/\/topics\//.test(p)) return "topics";
-    if (/\/maps\//.test(p)) return "maps";
-    if (/\/tracker\//.test(p)) return "tracker";
+    if (/\/tracker\//.test(p)) return "prepare";
     return "";
   }
   var tab = currentTab();

@@ -42,8 +42,7 @@
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
 | `cannes` | Cannes | spot | 우선 추천* | Cannes | — | — | Cannes |
-| `colline-du-chateau` | Colline du Château | spot | 필수* | Castle Hill | — | — | Castle Hill, Nice |
-| `colline-du-chateau-2` | Colline du Château (성채 언덕) | spot | 필수 | — | chapters/nice/places.html | Colline du Château (성채 언덕) | Castle of Nice |
+| `colline-du-chateau` | Colline du Château (성채 언덕) | spot | 필수 | Castle Hill | chapters/nice/places.html | Colline du Château (성채 언덕) | Castle Hill, Nice |
 | `cours-saleya` | Cours Saleya | spot | 필수 | Cours Saleya | chapters/nice/places.html | Cours Saleya | Cours Saleya |
 | `le-rocher` | Le Rocher — 모나코 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Rocher — 모나코 구시가지 | Rock of Monaco |
 | `le-suquet` | Le Suquet — 칸 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Suquet — 칸 구시가지 | Le Suquet |

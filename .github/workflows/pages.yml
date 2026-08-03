@@ -28,8 +28,10 @@ jobs:
 
       - name: Build site
         run: |
-          pip install markdown openpyxl
+          pip install -r requirements-build.txt
+          python -m playwright install --with-deps chromium
           python3 build/build.py
+          python3 build/hig_check.py
           touch site/.nojekyll
 
       - name: Publish to gh-pages
