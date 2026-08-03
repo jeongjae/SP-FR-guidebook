@@ -4,7 +4,7 @@
 source/ 의 통합 패키지 v1.37(Phase 10 LatestOnly)을
 site/ 아래의 순수 정적 HTML 사이트로 변환한다.
 
-콘텐츠 기준 (CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v1.9.md):
+콘텐츠 기준 (CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md):
  - 본문: 정식 지역 챕터(20_Regional_Chapters) + Core 문서(10_Core)
  - 지도: ASSETS/75_Execution_Maps 8개 지역
  - 데일리 카드: ASSETS/80_Daily_Mobile_Guide_Images 43장 (Day 12–24는 Phase 4 카드 우선)
