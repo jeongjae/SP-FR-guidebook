@@ -6,7 +6,7 @@ Barcelona to Paris through Côte d'Azur and Provence
 PC와 모바일 브라우저에서 조회할 수 있는 로컬 웹사이트.
 
 ```text
-Barcelona 3박 → Girona 3박 → Nice 5박 → Aix 4박
+Barcelona 3박 → Bàscara 3박 → Nice 5박 → Aix 4박
 → Luberon 4박 → Avignon 4박 → Lyon 4박 → Paris 15박
 ```
 
