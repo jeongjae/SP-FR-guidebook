@@ -4,18 +4,20 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hotel Carlemany",
+        "name": "Bàscara 확정 숙소",
         "sequence": 1,
-        "category": "숙소 후보",
-        "status": "후보 — 실제 예약 후 교체",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hotel+Carlemany",
-        "phase": "Phase 6"
+        "category": "확정 숙소",
+        "status": "Airbnb · 바스카라의 B&B · 예약 확정 · 2026-09-01~09-04",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=B%C3%A0scara",
+        "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
+        "coordinates_verified": "Google Maps exact address result, 2026-08-03",
+        "phase": "Confirmed booking"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.8213,
-          41.97865
+          2.914,
+          42.164
         ]
       }
     },

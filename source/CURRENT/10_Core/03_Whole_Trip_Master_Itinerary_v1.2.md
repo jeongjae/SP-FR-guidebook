@@ -25,7 +25,7 @@ status: "chapter-derived master itinerary; booking values pending"
 ## 2. 전체 흐름
 
 ```text
-Barcelona 3박 → Girona 3박 → **Nice 5박 → Aix 4박**
+Barcelona 3박 → Bàscara 3박 → **Nice 5박 → Aix 4박**
 → Luberon 4박 → Avignon 4박 → Lyon 4박 → Paris 15박
 ```
 
@@ -36,10 +36,10 @@ Barcelona 3박 → Girona 3박 → **Nice 5박 → Aix 4박**
 | 1 | 8/29 토 | Barcelona | 도착·생활권 적응 | BCN 도착, 체크인, 첫 장보기 | Eixample 짧은 산책·가벼운 저녁 | 2 | 항공·숙소 |
 | 2 | 8/30 일 | Barcelona | Gaudí와 Catalan Modernisme | Sagrada Família 10:30, Avinguda de Gaudí, Sant Pau | Gràcia 저녁 산책 | 3 | Sagrada·Sant Pau |
 | 3 | 8/31 월 | Barcelona | 책·도시기억·현대미술 | Concepció 시장, Gòtic, Biblioteca de Catalunya, MACBA | Llibreria Finestres·운동 선택 | 3 | 식당·MACBA |
-| 4 | 9/1 화 | Girona | Barcelona→Sitges→Girona 이동 | Sants 렌터카, Cau Ferrat·Maricel, Sitges 점심, Girona 이동 | Sitges 해변산책 축소 가능 | 4 | 렌터카·Sitges |
-| 5 | 9/2 수 | Girona | Collioure와 Peralada | Collioure 시장·왕궁·Fauvism, Peralada 17:30 | Peralada 박물관은 지연 시 취소 | 4 | Peralada·국경운전 |
-| 6 | 9/3 목 | Girona | Baix Empordà 마을과 해안 | Pals, Peratallada 점심, Calella de Palafrugell | 짧은 Camí de Ronda | 4 | 주차·식당 |
-| 7 | 9/4 금 | Nice | Girona→BCN→Nice 이동 | 차량반납, BCN 공항, NCE 도착, 체크인 | Masséna·Promenade 적응산책 | 4~5 | 항공·차량반납 |
+| 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카, Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | 렌터카·Airbnb 체크인 |
+| 5 | 9/2 수 | Bàscara | Collioure와 Peralada | Bàscara→Collioure 시장·왕궁·Fauvism→Peralada→Bàscara | Peralada 박물관은 지연 시 취소 | 4 | Peralada·국경운전 |
+| 6 | 9/3 목 | Bàscara | Baix Empordà 마을과 해안 | Bàscara→Pals→Peratallada 점심→Calella de Palafrugell→Bàscara | 짧은 Camí de Ronda | 4 | 주차·식당 |
+| 7 | 9/4 금 | Nice | Bàscara→Nice 이동 | Bàscara 체크아웃 후 이동수단·차량 반납지에 따라 실행 | 도착 후 일정은 이동 확정 뒤 조정 | 4~5 | 이동수단·차량반납 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
 | 10 | 9/7 월 | Nice | Monaco 도시국가 | Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo | Japanese Garden 또는 Larvotto 택1 | 4 | TER |
@@ -82,7 +82,7 @@ Barcelona 3박 → Girona 3박 → **Nice 5박 → Aix 4박**
 | 날짜 | 이동 | 운영원칙 |
 |---|---|---|
 | 9/1 | Barcelona→Sitges→Girona | 렌터카 인수 지연 시 Sitges 축소, Girona 도착 안정성 우선 |
-| 9/4 | Girona→BCN→Nice | 차량반납·공항·항공이 연결된 최상위 리스크 이동일 |
+| 9/4 | Bàscara 체크아웃→Nice 이동 | 이동수단·차량 반납지·소요시간 재확인 필요 |
 | **9/9** | Nice→Saint-Paul→Grasse→Aix | 렌터카 인수 지연 시 Grasse부터 삭제 |
 | 9/13 | Aix→Lourmarin→Luberon | 4박 체크아웃 후 장보기·농가 진입 |
 | 9/17 | Luberon→L’Isle→Avignon | 목요시장보다 체크인·주차 안정성 우선 |

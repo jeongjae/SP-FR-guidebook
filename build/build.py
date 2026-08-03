@@ -112,7 +112,7 @@ MAPS = [
 # Phase 6 정본 라우팅. 데일리 페이지·지도 목록·회귀 가드가 같은 범위를 쓴다.
 MAP_META = {
     "barcelona.html": ("Day 1–4", "Barcelona·Sitges"),
-    "girona.html": ("Day 4–7", "Girona·Empordà"),
+    "girona.html": ("Day 4–7", "Bàscara·Girona·Empordà"),
     "nice.html": ("Day 7–12", "Nice·Côte d’Azur"),
     "aix.html": ("Day 12–16", "Aix-en-Provence"),
     "luberon.html": ("Day 16–20", "Luberon"),
@@ -131,6 +131,7 @@ MAP_DAY_SPANS = {
 DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
+SUPERSEDED_DAILY_CARDS = {4, 5, 6}  # Bàscara 예약 확정 전에 제작된 Girona 거점 카드
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
 COMMERCIAL_CARDS = SOURCE / "ASSETS" / "89_Commercial_City_Experience_Cards_v1.0.md"
@@ -2756,7 +2757,12 @@ def build_daily():
             place_block = ""
 
         # ── 7·8. 원문 · 카드 이미지
-        card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
+        if n in SUPERSEDED_DAILY_CARDS:
+            card_block = """<details class="day-details day-card-archive"><summary>모바일 카드 안내</summary>
+<p class="note">이 날짜의 기존 이미지는 Bàscara 숙소 예약 확정 전 제작본이라 노출하지 않습니다.
+현재 페이지의 실행 요약·시간표·지도를 기준으로 이용하세요.</p></details>"""
+        else:
+            card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
 <figure class="daily-card"><img src="img/day-{n:02d}.png"
   alt="Day {n} 데일리 모바일 가이드 카드"></figure>
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
@@ -2983,7 +2989,7 @@ def build_offline_maps():
     region_by_map = {c["map"]: c["region"] for c in CHAPTERS if c["kind"] == "region"}
     order = [out_name for _, out_name, _ in MAPS]
 
-    files, total_pins, candidate_pins, repaired = [], 0, 0, 0
+    files, total_pins, candidate_pins, confirmed_pins, repaired = [], 0, 0, 0, 0
     for out_name in order:
         region = region_by_map[out_name]
         src = MAP_DIR / f"{region}_Execution_Map_v0.2.kml"
@@ -2993,19 +2999,21 @@ def build_offline_maps():
             src.read_text(encoding="utf-8"), src.name)
         pins = len(names)
         cand = sum(1 for n in names if "숙소 후보" in n)
+        conf = sum(1 for n in names if "확정 숙소" in n)
         total_pins += pins
         candidate_pins += cand
+        confirmed_pins += conf
         repaired += fixed_amps
         slug = out_name.replace(".html", "")
         dest = kml_dir / f"{slug}.kml"
         dest.write_text(text, encoding="utf-8")
-        files.append((slug, region, pins, cand, dest.stat().st_size))
+        files.append((slug, region, pins, cand, conf, dest.stat().st_size))
 
     rows = "".join(
         f"<tr><td>{html.escape(region)}</td>"
         f'<td><a href="kml/{slug}.kml" download>{slug}.kml</a></td>'
-        f"<td>{pins}</td><td>{cand or ''}</td><td>{size:,} B</td></tr>"
-        for slug, region, pins, cand, size in files)
+        f"<td>{pins}</td><td>{cand or ''} / {conf or ''}</td><td>{size:,} B</td></tr>"
+        for slug, region, pins, cand, conf, size in files)
 
     body = f"""<h1>오프라인 지도 — Organic Maps</h1>
 <p class="meta">로밍이 끊겨도 도보·운전 안내가 되게 하는 준비다.
@@ -3034,18 +3042,17 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
 
 <h2>지역별 북마크 파일</h2>
 <div class="table-wrap"><table>
-<thead><tr><th>지역</th><th>파일</th><th>핀</th><th>숙소 후보</th><th>크기</th></tr></thead>
+<thead><tr><th>지역</th><th>파일</th><th>핀</th><th>숙소 후보 / 확정</th><th>크기</th></tr></thead>
 <tbody>{rows}</tbody>
 </table></div>
 <p class="meta">전체 {total_pins}개 핀. 이동 순서대로 정렬돼 있다.</p>
 
-<h2 id="후보-주의">숙소 핀은 확정이 아니다</h2>
-<p class="offline-note"><b>{candidate_pins}개 핀이 <code>[숙소 후보]</code> 로 시작한다.
-예약이 확정된 주소가 아니라 검토 중인 후보다.</b>
-이 좌표를 목적지로 잡고 이동하면 안 된다. 확정 주소는
+<h2 id="숙소-상태">숙소 핀 상태</h2>
+<p class="offline-note"><b><code>[확정 숙소]</code> {confirmed_pins}개, <code>[숙소 후보]</code> {candidate_pins}개다.</b>
+확정 숙소는 예약 주소를 지도에서 재확인한 핀이다. 후보 핀은 목적지로 잡고 이동하면 안 된다. 현재 상태는
 <a href="../tracker/accommodation.html">숙소 후보·확정</a> 과
 <a href="../tracker/reservations.html">예약 현황</a> 에서 확인한다.
-예약이 잠기면 KML 을 다시 만들어 이 페이지에 올린다.</p>
+예약이 잠길 때마다 KML 을 다시 만들어 이 페이지에 올린다.</p>
 
 <h2>이 앱의 실행지도와 무엇이 다른가</h2>
 <div class="table-wrap"><table>
@@ -3071,7 +3078,7 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
                          "u": "maps/offline.html"})
     amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
     print(f"  오프라인 지도: KML {len(files)}개 · 핀 {total_pins}개"
-          f"(숙소 후보 {candidate_pins}){amp_note} → maps/offline.html")
+          f"(숙소 후보 {candidate_pins} · 확정 {confirmed_pins}){amp_note} → maps/offline.html")
 
 
 POPUP_SRC = ("marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}"
@@ -4017,9 +4024,10 @@ def check_phase5_execution_guards():
         if row["date"].replace("**", "") != expected_date:
             problems.append(f'Day {n}: 감사표 날짜 "{row["date"]}" (기대값 {expected_date})')
         chapter = chapter_for_date(d)
-        if chapter and not row["base"].startswith(chapter["region"]):
+        expected_base = "Bàscara" if n in {4, 5, 6} else (chapter["region"] if chapter else "")
+        if chapter and not row["base"].startswith(expected_base):
             problems.append(
-                f'Day {n}: 감사표 거점 "{row["base"]}" (기대값 {chapter["region"]})')
+                f'Day {n}: 감사표 거점 "{row["base"]}" (기대값 {expected_base})')
 
     # 2026-08-03 공식 운영 검증: Matisse·Chagall은 화요일 휴관이다.
     # Day 11에 두 곳을 다시 넣으면 감사표와 실제 데일리 페이지가 동시에 실패한다.
@@ -4175,14 +4183,15 @@ def check_phase8_operations_guards():
         if state not in allowed_reservation_states:
             problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
         if state == "예약완료":
-            required = ("예약번호", "사업자", "소스 URL", "최종확인일")
+            required = (("사업자", "소스 URL", "최종확인일") if row.get("ID") == "R002"
+                        else ("예약번호", "사업자", "소스 URL", "최종확인일"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
 
     expected_stays = {
         "Barcelona": ("2026-08-29", "2026-09-01", 3),
-        "Girona": ("2026-09-01", "2026-09-04", 3),
+        "Bàscara": ("2026-09-01", "2026-09-04", 3),
         "Nice": ("2026-09-04", "2026-09-09", 5),
         "Aix-en-Provence": ("2026-09-09", "2026-09-13", 4),
         "Luberon": ("2026-09-13", "2026-09-17", 4),
@@ -4204,7 +4213,8 @@ def check_phase8_operations_guards():
         if actual != (checkin, checkout, nights):
             problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
         if row.get("상태") == "예약완료":
-            required = ("실제총액", "예약번호", "주소", "소스 URL")
+            required = (("주소", "소스 URL") if base == "Bàscara"
+                        else ("실제총액", "예약번호", "주소", "소스 URL"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{base}: 숙소 예약완료인데 필수값 누락 — {", ".join(absent)}')
@@ -4224,7 +4234,7 @@ def check_phase8_operations_guards():
         if row.get("잠금상태") != "LOCKED" or row.get("현재 확정값") != value:
             problems.append(f"Known-Facts Lock 불일치: {item}")
 
-    # 사용자 예약서가 없는 현재 기준에서는 잠금률 0이 정직한 값이다.
+    # 실제 예약완료 행 수와 대시보드 잠금률이 어긋나지 않게 한다.
     completed = sum(row.get("상태") == "예약완료" for row in reservations)
     dashboard_text = (SITE / "tracker" / "dashboard.html").read_text(encoding="utf-8")
     lock_text = (SITE / "tracker" / "locks.html").read_text(encoding="utf-8")
