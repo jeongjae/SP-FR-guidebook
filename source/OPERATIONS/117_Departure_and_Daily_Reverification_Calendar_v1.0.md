@@ -20,7 +20,7 @@
 | 8/31 | MACBA 월요일 운영; MACBA Library는 8월 휴관 |
 | 9/1 | Sitges 박물관 여름 폐관시간·렌터카 인수 |
 | 9/2 | Collioure 주차·시장·Peralada 17:30 |
-| 9/4 | Girona→BCN→Nice 연결 |
+| 9/4 | Bàscara 체크아웃→Nice 이동·차량 반납 |
 | 9/9 | NCE 렌터카·Saint-Paul 주차·Aix 체크인 |
 | 9/11 | Calanques red-day·강풍·보트운항 |
 | 9/13 | Lourmarin 행사·Coustellet 시장·농가 체크인 |
