@@ -11,7 +11,7 @@
 
 ## Authoritative regional chapters
 - `04_Barcelona_Sitges_v1.6.md`
-- `05_Girona_Collioure_Emporda_v1.6.md`
+- `05_Girona_Collioure_Emporda_v2.1.md` (웹 빌드 입력·확장 통합본)
 - `06_Nice_Cote_d_Azur_v1.8.md`
 - `07_Aix_en_Provence_v1.7.md`
 - `08_Luberon_Farmhouse_v1.8.md`
