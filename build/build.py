@@ -133,6 +133,10 @@ PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
+COMMERCIAL_CARDS = SOURCE / "ASSETS" / "89_Commercial_City_Experience_Cards_v1.0.md"
+PLACE_DOSSIERS = SOURCE / "ASSETS" / "90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md"
+COMMERCIAL_STANDARD = SOURCE / "CURRENT" / "00_Governance" / "89_Commercial_Guidebook_Editorial_and_Layout_Standard_v1.0.md"
+DOSSIER_STANDARD = SOURCE / "CURRENT" / "00_Governance" / "90_Regional_and_Place_Dossier_Editorial_Standard_v1.0.md"
 TRACKER_SHEETS = [
     ("Master Itinerary", "itinerary", "43일 전체 일정표"),
     ("Reservations", "reservations", "예약 현황"),
@@ -4238,6 +4242,75 @@ def check_phase8_operations_guards():
     print("Phase 8 예약·운영 잠금 가드: 24개 예약 · P0 13개 · 8개 숙소 · Known-Facts/실예약 경계 이상 없음")
 
 
+def check_phase9_commercial_depth_guards():
+    """상용 편집모듈과 51개 장소 dossier가 원고·배포본에서 빠지지 않게 잠근다."""
+    problems = []
+    required_files = (COMMERCIAL_CARDS, PLACE_DOSSIERS, COMMERCIAL_STANDARD, DOSSIER_STANDARD)
+    for path in required_files:
+        if not path.exists() or path.stat().st_size < 500:
+            problems.append(f"Phase 9 기준파일 누락·손상: {path.relative_to(SOURCE)}")
+
+    cards_text = COMMERCIAL_CARDS.read_text(encoding="utf-8")
+    dossier_text = PLACE_DOSSIERS.read_text(encoding="utf-8")
+    expected_regions = {
+        "barcelona": ("Barcelona", 6), "girona": ("Girona", 7),
+        "nice": ("Nice", 6), "aix": ("Aix", 6),
+        "luberon": ("Luberon", 6), "avignon": ("Avignon", 7),
+        "lyon": ("Lyon", 5), "paris": ("Paris", 8),
+    }
+
+    if len(re.findall(r"^## .+$", cards_text, re.M)) != 8:
+        problems.append("Commercial City Experience Card는 정확히 8개 지역이어야 함")
+    dossier_count = len(re.findall(r"^## .+$", dossier_text, re.M))
+    if dossier_count != 51:
+        problems.append(f"장소 dossier {dossier_count}개 (기대 51개)")
+
+    # 최신 Regional Chapter만 검사한다. superseded 원고가 통과 근거가 되어서는 안 된다.
+    for chapter in (c for c in CHAPTERS if c["kind"] == "region"):
+        slug = chapter["name"]
+        region_heading, expected_places = expected_regions[slug]
+        source_path = SOURCE / chapter["path"]
+        source_text = source_path.read_text(encoding="utf-8")
+        for token in ("# Commercial Guide Module", "## Editor’s Verdict",
+                      "## 놓치면 아쉬운 선택", "## 하루를 완성하는 네 가지 선택",
+                      "## 이 지역의 Top 10", "## 현장 메모",
+                      "# Regional Context & Scheduled Place Dossiers"):
+            if token not in source_text:
+                problems.append(f"{source_path.name}: Phase 9 모듈 누락 — {token}")
+        if not re.search(r"^## (?:지역을 이해하는 다섯 개의 층|이 (?:도시를|지역을) 이해하는 축)",
+                         source_text, re.M):
+            problems.append(f"{source_path.name}: 역사·경제·사회·문화 지역맥락 축 누락")
+
+        region_match = re.search(
+            rf"^# {re.escape(region_heading)}\s*$([\s\S]*?)(?=^# [^#]|\Z)",
+            dossier_text, re.M)
+        actual_places = len(re.findall(r"^## .+$", region_match.group(1), re.M)) if region_match else 0
+        if actual_places != expected_places:
+            problems.append(f"{region_heading}: dossier {actual_places}개 (기대 {expected_places}개)")
+
+        deployed = "\n".join(
+            path.read_text(encoding="utf-8")
+            for path in sorted((SITE / "chapters" / slug).glob("*.html")))
+        for token in ("Editor’s Verdict", "놓치면 아쉬운 선택", "이 지역의 Top 10"):
+            if token not in deployed:
+                problems.append(f"{slug} 배포 챕터: Phase 9 콘텐츠 누락 — {token}")
+        if not ("지역을 이해하는 다섯 개의 층" in deployed or
+                "이 도시를 이해하는 축" in deployed or "이 지역을 이해하는 축" in deployed):
+            problems.append(f"{slug} 배포 챕터: 역사·경제·사회·문화 지역맥락 축 누락")
+
+    # 모든 dossier는 현장에서 확인할 수 있는 공식 출발점을 가져야 한다.
+    official_links = re.findall(r"^- 공식정보:\s+https?://\S+", dossier_text, re.M)
+    if len(official_links) != 51:
+        problems.append(f"dossier 공식정보 링크 {len(official_links)}개 (기대 51개)")
+
+    if problems:
+        print("Phase 9 상용편집·장소심화 가드 실패:")
+        for problem in problems[:40]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 9 상용편집·장소심화 가드: 8개 지역 카드 · 최신 챕터 8개 · 장소 dossier 51개 · 공식링크 51개 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4336,6 +4409,7 @@ def main():
     check_phase6_map_guards()
     check_phase7_visual_guards()
     check_phase8_operations_guards()
+    check_phase9_commercial_depth_guards()
     check_links()
     check_dates()
     check_places()
