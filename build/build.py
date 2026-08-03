@@ -109,6 +109,24 @@ MAPS = [
     ("Paris_Execution_Map_v0.2.html", "paris.html", "Paris 실행지도"),
 ]
 
+# Phase 6 정본 라우팅. 데일리 페이지·지도 목록·회귀 가드가 같은 범위를 쓴다.
+MAP_META = {
+    "barcelona.html": ("Day 1–4", "Barcelona·Sitges"),
+    "girona.html": ("Day 4–7", "Girona·Empordà"),
+    "nice.html": ("Day 7–12", "Nice·Côte d’Azur"),
+    "aix.html": ("Day 12–16", "Aix-en-Provence"),
+    "luberon.html": ("Day 16–20", "Luberon"),
+    "avignon.html": ("Day 20–24", "Avignon·Alpilles"),
+    "lyon.html": ("Day 24–28", "Lyon·Annecy"),
+    "paris.html": ("Day 28–43", "Paris"),
+}
+MAP_DAY_SPANS = {
+    "barcelona.html": range(1, 5), "girona.html": range(4, 8),
+    "nice.html": range(7, 13), "aix.html": range(12, 17),
+    "luberon.html": range(16, 21), "avignon.html": range(20, 25),
+    "lyon.html": range(24, 29), "paris.html": range(28, 44),
+}
+
 # 데일리 모바일 가이드 (ASSETS/80_Daily_Mobile_Guide_Image_Index_v1.1.md 기준)
 DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
@@ -3093,7 +3111,32 @@ def build_maps():
         text, _, _ = sanitize_kml(f.read_text(encoding="utf-8"), f.name)
         (data_dir / f.name).write_text(text, encoding="utf-8")
     cards = []
+    total_points = 0
     for src_name, out_name, title in MAPS:
+        geo_name = src_name.replace(".html", ".geojson")
+        geo = json.loads((MAP_DIR / geo_name).read_text(encoding="utf-8"))
+        features = geo.get("features", [])
+        if not features:
+            sys.exit(f"실행지도 GeoJSON 포인트 없음: {geo_name}")
+        point_rows = []
+        for i, feature in enumerate(features, 1):
+            props = feature.get("properties", {})
+            coords = feature.get("geometry", {}).get("coordinates", [])
+            if len(coords) != 2 or not all(isinstance(v, (int, float)) for v in coords):
+                sys.exit(f"실행지도 좌표 오류: {geo_name} #{i} {coords}")
+            lon, lat = coords
+            if not (-180 <= lon <= 180 and -90 <= lat <= 90):
+                sys.exit(f"실행지도 좌표 범위 오류: {geo_name} #{i} {coords}")
+            name = props.get("name") or props.get("Name")
+            category = props.get("category") or props.get("Category")
+            url = props.get("google_maps") or props.get("url") or props.get("URL")
+            if not name or not category or not url:
+                sys.exit(f"실행지도 필수속성 누락: {geo_name} #{i}")
+            point_rows.append(
+                f'<li><span><b>{i}. {html.escape(str(name))}</b>'
+                f'<small>{html.escape(str(category))}</small></span>'
+                f'<a target="_blank" rel="noopener" href="{html.escape(str(url), quote=True)}">길찾기</a></li>')
+        total_points += len(features)
         text = (MAP_DIR / src_name).read_text(encoding="utf-8")
         text = text.replace(
             "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", "vendor/leaflet/leaflet.css")
@@ -3103,20 +3146,49 @@ def build_maps():
                 'background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;'
                 'font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a>')
         text = text.replace('<div id="map"></div>', f'<div id="map"></div>{back}', 1)
+        # 원본 지도는 데스크톱용 고정 패널이라 작은 화면에서 지도를 가린다.
+        # 안내 접기와 텍스트 기준점 목록을 빌드 시 주입해 원본 자산은 보존한다.
+        map_ui_css = """
+<style id="phase6-map-ui">
+.map-info-toggle{position:absolute;z-index:1200;left:12px;bottom:12px;border:0;border-radius:999px;background:#1f4e78;color:#fff;padding:10px 14px;font-weight:700;box-shadow:0 2px 10px #0005;min-height:44px}
+.point-list{margin-top:9px;border-top:1px solid #d8dee5;padding-top:7px}.point-list summary{cursor:pointer;font-size:12px;font-weight:700}.point-list ol{max-height:32vh;overflow:auto;margin:7px 0 0;padding:0;list-style:none}.point-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #e7ebef;font-size:12px}.point-list small{display:block;color:#5d6670;margin-top:2px}.point-list a{color:#1f4e78;font-weight:700;white-space:nowrap}
+body.map-info-hidden .panel{display:none}
+@media(max-width:600px){.panel{left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));top:max(58px,calc(env(safe-area-inset-top) + 50px));max-width:none;max-height:55vh;overflow:auto;padding:10px 12px}.panel h1{font-size:16px}.panel p{font-size:11px}.map-info-toggle{left:max(8px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom))}}
+</style>"""
+        text = text.replace("</head>", map_ui_css + "</head>", 1)
+        point_list = (f'<details class="point-list"><summary>기준점 {len(features)}개 목록</summary>'
+                      f'<ol>{"".join(point_rows)}</ol></details>')
+        text = text.replace('</div></div>\n<script src="vendor/leaflet/leaflet.js">',
+                            f'</div>{point_list}</div>\n<script src="vendor/leaflet/leaflet.js">', 1)
+        toggle = ('<button class="map-info-toggle" type="button" aria-expanded="true" '
+                  'aria-label="지도 안내 접기">안내 접기</button>')
+        text = text.replace('<div id="map"></div>', f'<div id="map"></div>{toggle}', 1)
+        toggle_js = """<script>
+const mapInfoButton=document.querySelector('.map-info-toggle');
+mapInfoButton.addEventListener('click',()=>{
+ const hidden=document.body.classList.toggle('map-info-hidden');
+ mapInfoButton.textContent=hidden?'안내 보기':'안내 접기';
+ mapInfoButton.setAttribute('aria-expanded',String(!hidden));
+ mapInfoButton.setAttribute('aria-label',hidden?'지도 안내 보기':'지도 안내 접기');
+});
+</script>"""
+        text = text.replace("</body>", toggle_js + "</body>", 1)
         text = link_map_places(text, out_name)
         # 실행지도는 원본 HTML 이라 페이지 셸을 거치지 않는다. 안전영역을 쓰려면
         # 여기서도 viewport-fit=cover 를 넣어야 한다.
         text = re.sub(r'(<meta name="viewport" content="(?![^"]*viewport-fit)[^"]*)"',
                       r'\1, viewport-fit=cover"', text, count=1)
         (out_dir / out_name).write_text(text, encoding="utf-8")
+        day_range, area = MAP_META[out_name]
         cards.append(f'<a class="card card-alt" href="{out_name}">'
                      f'<span class="card-num">🗺️</span><span class="card-title">{title}</span>'
-                     f'<span class="card-sub">주요 기준점 · Google Maps 연동</span></a>')
+                     f'<span class="card-sub">{day_range} · {area} · 기준점 {len(features)}개</span></a>')
         SEARCH_INDEX.append({"t": title, "c": "실행지도", "u": f"maps/{out_name}"})
-    print(f"  지도: {len(MAPS)}개 지역 → maps/")
+    print(f"  지도: {len(MAPS)}개 지역 · 기준점 {total_points}개 → maps/")
 
     body = ('<h1>실행지도</h1>'
-            '<p class="meta">지역별 주요 기준점 지도. 마커를 누르면 Google Maps 검색이 열린다. '
+            '<p class="meta">43일 일정에 연결된 8개 지역별 기준점 지도. 카드의 Day 범위를 확인하고, '
+            '마커 또는 기준점 목록의 길찾기를 누르면 Google Maps가 열린다. '
             '배경 타일은 인터넷 연결 시 표시된다.</p>'
             '<div class="related"><a href="offline.html">📴 오프라인 지도 준비 — Organic Maps</a></div>'
             + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
@@ -3964,6 +4036,43 @@ def check_phase5_execution_guards():
     print("Phase 5 실행성 감사 가드: 43일 날짜·거점 · Day 11 휴관 교정 이상 없음")
 
 
+def check_phase6_map_guards():
+    """8개 실행지도·65개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
+    problems, total = [], 0
+    map_index = (SITE / "maps" / "index.html").read_text(encoding="utf-8")
+    for src_name, out_name, title in MAPS:
+        geo_name = src_name.replace(".html", ".geojson")
+        geo = json.loads((MAP_DIR / geo_name).read_text(encoding="utf-8"))
+        count = len(geo.get("features", []))
+        total += count
+        day_range, area = MAP_META[out_name]
+        if f"{day_range} · {area} · 기준점 {count}개" not in map_index:
+            problems.append(f"지도 목록 메타데이터 누락: {out_name}")
+        page_text = (SITE / "maps" / out_name).read_text(encoding="utf-8")
+        for token in ('id="phase6-map-ui"', 'class="map-info-toggle"',
+                      f'기준점 {count}개 목록', 'aria-expanded="true"'):
+            if token not in page_text:
+                problems.append(f"{out_name}: 모바일 지도 UI 누락 — {token}")
+        if page_text.count('>길찾기</a>') != count:
+            problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
+
+    if total != 65:
+        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 65)")
+    for n in range(1, 44):
+        text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
+        actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
+        actual.discard("offline.html")
+        expected = {name for name, days in MAP_DAY_SPANS.items() if n in days}
+        if actual != expected:
+            problems.append(f"Day {n}: 지도 {sorted(actual)} (기대 {sorted(expected)})")
+    if problems:
+        print("Phase 6 실행지도 가드 실패:")
+        for p in problems[:30]:
+            print("  " + p)
+        sys.exit(1)
+    print("Phase 6 실행지도 가드: 8지역 · 65개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4059,6 +4168,7 @@ def main():
     check_phase3_navigation_guards()
     check_phase4_daily_guards()
     check_phase5_execution_guards()
+    check_phase6_map_guards()
     check_links()
     check_dates()
     check_places()
