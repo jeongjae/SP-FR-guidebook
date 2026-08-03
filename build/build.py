@@ -4144,6 +4144,100 @@ def check_phase7_visual_guards():
     print("Phase 7 시각자산 가드: 대표사진 8장 · 편집도식 6장 · 본문 배치 · CC 크레딧 이상 없음")
 
 
+def check_phase8_operations_guards():
+    """Known facts와 실제 예약값의 경계를 배포 계약으로 고정한다."""
+    problems = []
+    wb = openpyxl.load_workbook(TRACKER_XLSX, data_only=True)
+    required_sheets = {name for name, _slug, _label in TRACKER_SHEETS}
+    missing_sheets = sorted(required_sheets - set(wb.sheetnames))
+    if missing_sheets:
+        problems.append("필수 트래커 시트 누락: " + ", ".join(missing_sheets))
+
+    def records(sheet_name):
+        ws = wb[sheet_name]
+        headers = [cell.value for cell in ws[3]]
+        return [dict(zip(headers, row)) for row in ws.iter_rows(min_row=4, values_only=True)
+                if any(value is not None for value in row)]
+
+    reservations = records("Reservations")
+    ids = [row.get("ID") for row in reservations]
+    if len(reservations) != 24 or len(set(ids)) != 24 or ids != [f"R{i:03d}" for i in range(1, 25)]:
+        problems.append("예약항목은 R001~R024의 고유한 24건이어야 함")
+    if sum(row.get("우선순위") == "P0" for row in reservations) != 13:
+        problems.append("P0 예약항목은 정확히 13건이어야 함")
+    allowed_reservation_states = {"미조사", "예약대기", "재확인", "예약완료", "취소"}
+    for row in reservations:
+        state = row.get("상태")
+        if state not in allowed_reservation_states:
+            problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
+        if state == "예약완료":
+            required = ("예약번호", "사업자", "소스 URL", "최종확인일")
+            absent = [key for key in required if not row.get(key)]
+            if absent:
+                problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
+
+    expected_stays = {
+        "Barcelona": ("2026-08-29", "2026-09-01", 3),
+        "Girona": ("2026-09-01", "2026-09-04", 3),
+        "Nice": ("2026-09-04", "2026-09-09", 5),
+        "Aix-en-Provence": ("2026-09-09", "2026-09-13", 4),
+        "Luberon": ("2026-09-13", "2026-09-17", 4),
+        "Avignon": ("2026-09-17", "2026-09-21", 4),
+        "Lyon": ("2026-09-21", "2026-09-25", 4),
+        "Paris": ("2026-09-25", "2026-10-10", 15),
+    }
+    stays = records("Accommodation")
+    if {row.get("거점") for row in stays} != set(expected_stays):
+        problems.append("숙소 거점은 Barcelona~Paris의 확정 8개여야 함")
+    for row in stays:
+        base = row.get("거점")
+        if base not in expected_stays:
+            continue
+        checkin, checkout, nights = expected_stays[base]
+        actual = (row.get("체크인").date().isoformat() if row.get("체크인") else None,
+                  row.get("체크아웃").date().isoformat() if row.get("체크아웃") else None,
+                  row.get("박수"))
+        if actual != (checkin, checkout, nights):
+            problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
+        if row.get("상태") == "예약완료":
+            required = ("실제총액", "예약번호", "주소", "소스 URL")
+            absent = [key for key in required if not row.get(key)]
+            if absent:
+                problems.append(f'{base}: 숙소 예약완료인데 필수값 누락 — {", ".join(absent)}')
+
+    locks = records("Phase8 Lock Status")
+    allowed_lock_states = {"LOCKED", "PARTIAL", "BLOCKED"}
+    for row in locks:
+        state = row.get("잠금상태")
+        if state not in allowed_lock_states:
+            problems.append(f'{row.get("항목")}: 알 수 없는 잠금상태 {state!r}')
+        if state != "LOCKED" and not row.get("필요 입력"):
+            problems.append(f'{row.get("항목")}: 미잠금 항목의 필요 입력 누락')
+    lock_by_item = {row.get("항목"): row for row in locks}
+    for item, value in (("43일·42박", "2026-08-29~2026-10-10"),
+                        ("8개 거점 숙박배분", "3/3/5/4/4/4/4/15박")):
+        row = lock_by_item.get(item, {})
+        if row.get("잠금상태") != "LOCKED" or row.get("현재 확정값") != value:
+            problems.append(f"Known-Facts Lock 불일치: {item}")
+
+    # 사용자 예약서가 없는 현재 기준에서는 잠금률 0이 정직한 값이다.
+    completed = sum(row.get("상태") == "예약완료" for row in reservations)
+    dashboard_text = (SITE / "tracker" / "dashboard.html").read_text(encoding="utf-8")
+    lock_text = (SITE / "tracker" / "locks.html").read_text(encoding="utf-8")
+    if completed == 0 and "실제 예약 잠금률</td><td>0" not in dashboard_text:
+        problems.append("Dashboard 실제 예약 잠금률이 예약 데이터와 불일치")
+    for token in ("43일·42박", "3/3/5/4/4/4/4/15박", "BLOCKED", "필요 입력"):
+        if token not in lock_text:
+            problems.append(f"잠금 현황 배포 페이지 누락: {token}")
+
+    if problems:
+        print("Phase 8 예약·운영 잠금 가드 실패:")
+        for problem in problems[:40]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 8 예약·운영 잠금 가드: 24개 예약 · P0 13개 · 8개 숙소 · Known-Facts/실예약 경계 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4241,6 +4335,7 @@ def main():
     check_phase5_execution_guards()
     check_phase6_map_guards()
     check_phase7_visual_guards()
+    check_phase8_operations_guards()
     check_links()
     check_dates()
     check_places()
