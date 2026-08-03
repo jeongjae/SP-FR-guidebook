@@ -1,0 +1,27 @@
+legacy_pattern,target_pattern,disposition,owner,phase,note
+/daily/day-NN.html,/daily/day-NN.html,keep,daily,4,43 daily URLs remain canonical
+/daily/index.html,/itinerary/,redirect,itinerary,3,Daily list merges into 43-day itinerary
+/chapters/itinerary.html,/itinerary/,redirect,itinerary,3,Single itinerary owner
+/tracker/itinerary.html,/itinerary/,redirect,itinerary,6,Remove tracker duplication
+/chapters/{region}/index.html,/regions/{region}/,redirect,region,5,Regional home
+/chapters/{region}/about.html,/regions/{region}/,redirect,region,5,Merge regional context
+/chapters/{region}/schedule.html,/regions/{region}/itinerary/,redirect,region,5,Summary and daily links only
+/chapters/{region}/transport.html,/regions/{region}/itinerary/,redirect,region,5,Regional transport context
+/chapters/{region}/places.html,/regions/{region}/places/,redirect,place,5,Place list and filters
+/chapters/{region}/food.html,/regions/{region}/places/,redirect,place,5,Food and cafe filters
+/chapters/{region}/stay.html,/regions/{region}/prepare/,redirect,prepare,5,Regional stay
+/chapters/{region}/booking.html,/regions/{region}/prepare/,redirect,prepare,5,Regional booking
+/chapters/{region}/cost.html,/regions/{region}/prepare/,redirect,prepare,5,Regional cost
+/chapters/{region}/tips.html,/regions/{region}/prepare/,redirect,prepare,5,Regional tips
+/chapters/{region}/sources.html,/sources/,redirect,source,5,Global sources with contextual anchors
+/places/{slug}.html,/places/{slug}.html,keep,place,2,Single canonical place record
+/tracker/reservations.html,/prepare/,redirect,prepare,6,Preparation dashboard
+/tracker/transport.html,/prepare/,redirect,prepare,6,Preparation dashboard
+/tracker/accommodation.html,/prepare/,redirect,prepare,6,Preparation dashboard
+/tracker/dashboard.html,/admin/,redirect,admin,6,Editorial management only
+/tracker/locks.html,/admin/,redirect,admin,6,Operational management only
+/topics/{reader-topic}.html,/search/?type={reader-topic},redirect,search,8,Topic becomes a search filter
+/topics/p0.html,/admin/,redirect,admin,3,Hide editorial state from travelers
+/topics/reverify.html,/prepare/,redirect,prepare,6,Traveler-facing reverification checklist
+/maps/{region}.html,/regions/{region}/itinerary/#map,redirect,map,5,Map becomes contextual feature
+/maps/offline.html,/offline/,redirect,offline,8,Global offline essentials

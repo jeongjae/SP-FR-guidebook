@@ -43,7 +43,7 @@ Barcelona 3박 → Girona 3박 → **Nice 5박 → Aix 4박**
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
 | 10 | 9/7 월 | Nice | Monaco 도시국가 | Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo | Japanese Garden 또는 Larvotto 택1 | 4 | TER |
-| 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, Matisse 또는 Chagall 1곳, 세탁·Promenade | 두 번째 문화시설·추가마을 금지 | 2 | 미술관·렌터카 준비 |
+| 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, 사진미술관 선택, 세탁·Promenade | 사진미술관·추가마을 삭제 가능 | 2 | 사진미술관·렌터카 준비 |
 | 12 | **9/9 수** | **Aix-en-Provence** | NCE 렌터카와 Provence 진입 | NCE T2 렌터카, Saint-Paul, Grasse, Aix 체크인 | 지연 시 Grasse 우선 삭제 | 5 | 렌터카·Aix 숙소 |
 | 13 | **9/10 목** | Aix-en-Provence | Aix 구시가지와 Granet | 목요시장, Cours Mirabeau, Musée Granet, Mazarin | 성당·카페 | 3 | Granet·식당 |
 | 14 | **9/11 금** | Aix-en-Provence | Cassis와 Calanques | Cassis 항구, 5 Calanques 보트, 해안휴식 | 강풍 시 Marseille·Mucem으로 교체 | 4 | 보트·주차 |

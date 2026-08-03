@@ -9,13 +9,19 @@ h1{font-size:18px;margin:0 0 5px} p{font-size:12px;margin:4px 0;line-height:1.4}
 .legend{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:8px;font-size:11px}
 .legend span{white-space:nowrap} .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}
 .note{color:#8a3d12;font-weight:bold}
+</style>
+<style id="phase6-map-ui">
+.map-info-toggle{position:absolute;z-index:1200;left:12px;bottom:12px;border:0;border-radius:999px;background:#1f4e78;color:#fff;padding:10px 14px;font-weight:700;box-shadow:0 2px 10px #0005;min-height:44px}
+.point-list{margin-top:9px;border-top:1px solid #d8dee5;padding-top:7px}.point-list summary{cursor:pointer;font-size:12px;font-weight:700}.point-list ol{max-height:32vh;overflow:auto;margin:7px 0 0;padding:0;list-style:none}.point-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #e7ebef;font-size:12px}.point-list small{display:block;color:#5d6670;margin-top:2px}.point-list a{color:#1f4e78;font-weight:700;white-space:nowrap}
+body.map-info-hidden .panel{display:none}
+@media(max-width:600px){.panel{left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));top:max(58px,calc(env(safe-area-inset-top) + 50px));max-width:none;max-height:55vh;overflow:auto;padding:10px 12px}.panel h1{font-size:16px}.panel p{font-size:11px}.map-info-toggle{left:max(8px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom))}}
 </style></head><body>
-<div id="map"></div><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel">
+<div id="map"></div><button class="map-info-toggle" type="button" aria-expanded="true" aria-label="지도 안내 접기">안내 접기</button><a href="../maps/index.html" style="position:absolute;z-index:1100;right:12px;top:12px;background:#1f4e78;color:#fff;padding:7px 12px;border-radius:8px;font-size:13px;text-decoration:none;box-shadow:0 1px 6px rgba(0,0,0,.3)">← 지도 목록</a><div class="panel">
 <h1>Nice·Côte d’Azur 실행지도 v0.2</h1>
 <p>Day 7–12 일정의 기준점. 번호는 실행 순서의 대략적 흐름이며 실제 날짜별 순서와 다를 수 있다.</p>
 <p class="note">숙소 핀은 예약 전 후보이며 확정 주소가 아니다.</p>
 <p>배경지도와 Google Maps 링크는 인터넷 연결이 필요하다. GeoJSON·KML은 별도 앱에서 사용할 수 있다.</p>
-<div class="legend"><span><i style="background:#7a4eab"></i>숙소 후보</span><span><i style="background:#1f4e78"></i>핵심 방문지</span><span><i style="background:#2f7d32"></i>시장·생활</span><span><i style="background:#c75b12"></i>교통</span><span><i style="background:#b02a37"></i>근교·이동지</span></div></div>
+<div class="legend"><span><i style="background:#7a4eab"></i>숙소 후보</span><span><i style="background:#1f4e78"></i>핵심 방문지</span><span><i style="background:#2f7d32"></i>시장·생활</span><span><i style="background:#c75b12"></i>교통</span><span><i style="background:#b02a37"></i>근교·이동지</span></div><details class="point-list"><summary>기준점 8개 목록</summary><ol><li><span><b>1. AMMI Masséna</b><small>숙소 후보</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=AMMI+Masséna">길찾기</a></li><li><span><b>2. Cours Saleya</b><small>시장·생활</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Cours+Saleya">길찾기</a></li><li><span><b>3. Castle Hill</b><small>핵심 방문지</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Castle+Hill">길찾기</a></li><li><span><b>4. Nice-Ville</b><small>교통</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Nice-Ville">길찾기</a></li><li><span><b>5. Cannes</b><small>근교·이동지</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Cannes">길찾기</a></li><li><span><b>6. Monaco</b><small>근교·이동지</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Monaco">길찾기</a></li><li><span><b>7. Libération Market</b><small>시장·생활</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Libération+Market">길찾기</a></li><li><span><b>8. NCE T2</b><small>교통</small></span><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=NCE+T2">길찾기</a></li></ol></details></div>
 <script src="vendor/leaflet/leaflet.js"></script><script>
 const pts=[{"name": "AMMI Masséna", "lat": 43.6978, "lon": 7.26836, "category": "숙소 후보", "status": "후보 — 실제 예약 후 교체", "url": "https://www.google.com/maps/search/?api=1&query=AMMI+Masséna"}, {"name": "Cours Saleya", "lat": 43.69518, "lon": 7.2758, "category": "시장·생활", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Cours+Saleya"}, {"name": "Castle Hill", "lat": 43.69692, "lon": 7.28077, "category": "핵심 방문지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Castle+Hill"}, {"name": "Nice-Ville", "lat": 43.70499, "lon": 7.26199, "category": "교통", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Nice-Ville"}, {"name": "Cannes", "lat": 43.55332, "lon": 7.01975, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Cannes"}, {"name": "Monaco", "lat": 43.73893, "lon": 7.41904, "category": "근교·이동지", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Monaco"}, {"name": "Libération Market", "lat": 43.70841, "lon": 7.26133, "category": "시장·생활", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=Libération+Market"}, {"name": "NCE T2", "lat": 43.65971, "lon": 7.20461, "category": "교통", "status": "일정 기준점", "url": "https://www.google.com/maps/search/?api=1&query=NCE+T2"}];
 const colors={"숙소 후보": "#7a4eab", "핵심 방문지": "#1f4e78", "시장·생활": "#2f7d32", "교통": "#c75b12", "근교·이동지": "#b02a37"};
@@ -31,4 +37,12 @@ pts.forEach((p,i)=>{
 });
 L.polyline(ll,{color:'#59636e',weight:3,opacity:.6,dashArray:'7,8'}).addTo(map);
 map.fitBounds(L.latLngBounds(ll).pad(.15));
+</script><script>
+const mapInfoButton=document.querySelector('.map-info-toggle');
+mapInfoButton.addEventListener('click',()=>{
+ const hidden=document.body.classList.toggle('map-info-hidden');
+ mapInfoButton.textContent=hidden?'안내 보기':'안내 접기';
+ mapInfoButton.setAttribute('aria-expanded',String(!hidden));
+ mapInfoButton.setAttribute('aria-label',hidden?'지도 안내 보기':'지도 안내 접기');
+});
 </script></body></html>
