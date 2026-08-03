@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+.firecrawl/
+.uv-cache/
+.uv-python/
+.venv/
+.media-downloads/

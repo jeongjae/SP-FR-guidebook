@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jeongjae.github.io/SP-FR-guidebook/data/media-catalog.schema.json",
+  "title": "SP-FR Guidebook media catalog",
+  "type": "object",
+  "required": ["schemaVersion", "assets"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": "1.0" },
+    "generatedAt": { "type": "string", "format": "date" },
+    "assets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/mediaAsset" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "mediaAsset": {
+      "type": "object",
+      "required": [
+        "id", "regionSlug", "role", "subjectType", "subjectName",
+        "sourceFile", "localPath", "originalUrl", "sourcePageUrl",
+        "sourceName", "license", "licenseName", "attributionRequired",
+        "altKo", "width", "height", "aspectRatio", "downloadedAt",
+        "verifiedAt", "modified", "usagePages", "status", "score"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "regionSlug": { "enum": ["barcelona", "girona", "nice", "aix", "luberon", "avignon", "lyon", "paris"] },
+        "role": { "enum": ["hero", "place", "food", "market", "transport", "experience"] },
+        "subjectType": { "enum": ["country", "region", "city", "village", "neighborhood", "attraction", "museum", "market", "restaurant", "cafe", "food", "nature", "transport", "experience", "other"] },
+        "subjectName": { "type": "string", "minLength": 1 },
+        "placeSlug": { "type": "string" },
+        "sourceFile": { "type": "string", "pattern": "^source/ASSETS/licensed-guidebook-images/" },
+        "localPath": { "type": "string", "pattern": "^assets/media/[^/]+/[a-z0-9-]+\\.webp$" },
+        "originalUrl": { "type": "string", "pattern": "^https://" },
+        "downloadUrl": { "type": "string", "pattern": "^https://" },
+        "sourcePageUrl": { "type": "string", "pattern": "^https://" },
+        "sourceName": { "type": "string", "minLength": 1 },
+        "author": { "type": "string", "minLength": 1 },
+        "license": { "enum": ["public-domain", "cc0", "cc-by", "cc-by-sa", "unsplash", "pexels", "pixabay", "official-permitted"] },
+        "licenseName": { "type": "string", "minLength": 1 },
+        "licenseUrl": { "type": "string", "pattern": "^https://" },
+        "attributionRequired": { "type": "boolean" },
+        "attributionText": { "type": "string" },
+        "altKo": { "type": "string", "minLength": 5 },
+        "altEn": { "type": "string" },
+        "captionKo": { "type": "string" },
+        "width": { "type": "integer", "minimum": 400 },
+        "height": { "type": "integer", "minimum": 250 },
+        "aspectRatio": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+        "downloadedAt": { "type": "string", "format": "date" },
+        "verifiedAt": { "type": "string", "format": "date" },
+        "modified": { "type": "boolean" },
+        "modificationNote": { "type": "string" },
+        "usagePages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+        "status": { "enum": ["candidate", "verified", "downloaded", "optimized", "inserted", "rejected"] },
+        "score": {
+          "type": "object",
+          "required": ["licenseClarity", "representativeness", "resolution", "composition", "currentAccuracy", "designFit", "total"],
+          "properties": {
+            "licenseClarity": { "type": "integer", "minimum": 0, "maximum": 30 },
+            "representativeness": { "type": "integer", "minimum": 0, "maximum": 25 },
+            "resolution": { "type": "integer", "minimum": 0, "maximum": 15 },
+            "composition": { "type": "integer", "minimum": 0, "maximum": 10 },
+            "currentAccuracy": { "type": "integer", "minimum": 0, "maximum": 10 },
+            "designFit": { "type": "integer", "minimum": 0, "maximum": 10 },
+            "total": { "type": "integer", "minimum": 75, "maximum": 100 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

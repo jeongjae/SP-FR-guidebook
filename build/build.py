@@ -34,6 +34,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons                     # noqa: E402  — 아이콘 마스크 생성기
 import content_model             # noqa: E402  — stable-ID content graph
+import media                     # noqa: E402  — licensed local image catalog
 from xml.etree import ElementTree
 
 try:
@@ -51,6 +52,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "source"
 SITE = ROOT / "site"
 ASSETS = ROOT / "build" / "assets"
+MEDIA_CATALOG = media.load_catalog(ROOT)
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
 SITE_SHORT = "2026 유럽 여행 가이드북"
@@ -458,6 +460,10 @@ VISUALS = {
 
 def hero_figure(slug, rel=".."):
     """지역소개 첫머리의 대표 사진 (CC 저작자·라이선스 표시)."""
+    sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+    if sample_region:
+        return media.figure(media.region_hero(MEDIA_CATALOG, sample_region), rel,
+                            variant="hero", priority=True)
     if slug not in HERO_PHOTOS:
         return ""
     fname, subject, author, lic, lic_url, src_url = HERO_PHOTOS[slug]
@@ -569,13 +575,17 @@ def build_credits():
   <span>수정 가이드북용 크롭·리사이즈 (파생본)</span>
 </figcaption>
 </figure>""")
+    catalog_rows = media.attribution_rows(MEDIA_CATALOG)
     body = f"""<h1>사진 저작자 표시</h1>
-<p class="meta">이 가이드북의 지역 대표사진 {len(HERO_PHOTOS)}장은 Wikimedia Commons 의
-공개 라이선스 사진을 가이드북용으로 크롭·리사이즈한 파생본이다.</p>
+<p class="meta">지역 대표사진 {len(HERO_PHOTOS)}장과 라이선스 카탈로그 이미지
+{len(media.assets(MEDIA_CATALOG))}장의 출처·저작자·라이선스를 기록한다.</p>
 
 {net_note("저작자와 라이선스는 그대로 읽힙니다. 라이선스 전문과 원본 링크만 연결이 필요합니다.")}
 
 <div class="credit-list">{"".join(rows)}</div>
+
+<h2>Barcelona · Girona · Nice 샘플 카탈로그</h2>
+<div class="credit-list">{catalog_rows}</div>
 
 <h2>사용 조건</h2>
 <ul>
@@ -597,8 +607,7 @@ def build_credits():
 <li>실행지도의 배경 타일은 <a class="needs-net" target="_blank" rel="noopener"
   href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자들의 것이며
   ODbL 조건으로 제공된다. 지도 라이브러리는 Leaflet (BSD-2-Clause) 을 로컬 번들로 쓴다.</li>
-<li>주요 방문지 카드의 사진은 온라인일 때 Wikipedia 에서 불러온다. 각 사진의 출처는
-  사진 위 링크에 표시된다.</li>
+<li>주요 방문지 카드는 외부 서버를 hotlink하지 않고 검증·최적화한 로컬 WebP를 쓴다.</li>
 </ul>
 
 <p class="offline-note">원본 표 — <code>source/ASSETS/88_Representative_Public_Photo_Credits_v1.0.md</code>.
@@ -606,7 +615,8 @@ def build_credits():
     (SITE / "credits.html").write_text(
         page("사진 저작자 표시", body, rel=".", back=crumbs_for(("저작자 표시", None))), encoding="utf-8")
     SEARCH_INDEX.append({"t": "사진 저작자 표시", "c": "라이선스", "u": "credits.html"})
-    print(f"  저작자 표시: 대표사진 {len(HERO_PHOTOS)}장 → credits.html")
+    print(f"  저작자 표시: 기존 {len(HERO_PHOTOS)}장 · 카탈로그 "
+          f"{len(media.assets(MEDIA_CATALOG))}장 → credits.html")
 
 
 def visual_figure(key, caption, rel="../assets"):
@@ -847,6 +857,26 @@ PLACES = {
 }
 
 
+# 큐레이션 카드 이름과 안정적인 장소 레지스트리 slug의 명시적 연결.
+# 유사 이름 검색은 다른 장소 사진을 붙일 위험이 있어 사용하지 않는다.
+CARD_PLACE_SLUGS = {
+    "Sagrada Família": "sagrada-familia",
+    "Sant Pau": "sant-pau-recinte-modernista",
+    "Gòtic": "barri-gotic",
+    "Biblioteca de Catalunya": "biblioteca-de-catalunya",
+    "Sitges": "sitges",
+    "Girona Cathedral": "girona-cathedral",
+    "Onyar Houses": "onyar",
+    "Collioure": "collioure",
+    "Peratallada": "peratallada",
+    "Calella de Palafrugell": "calella-de-palafrugell",
+    "Cours Saleya": "cours-saleya",
+    "Castle Hill": "colline-du-chateau",
+    "Cannes": "le-suquet",
+    "Monaco": "monaco",
+}
+
+
 def load_map_links():
     """실행지도 HTML에서 장소별 Google Maps 링크를 추출한다."""
     links = {}
@@ -865,14 +895,13 @@ def places_block(chapter, map_links, rel=".."):
     if not places:
         return ""
     cards = []
-    for name, wiki, lang, desc in places:
+    for name, _wiki, _lang, desc in places:
         gmaps = map_links.get(name) or (
             "https://www.google.com/maps/search/?api=1&query=" + name.replace(" ", "+"))
-        wiki_attr = (f' data-wiki="{html.escape(wiki, quote=True)}" data-wlang="{lang}"'
-                     if wiki else "")
-        cards.append(f"""<div class="pl-card"{wiki_attr}>
-  <div class="pl-photo" hidden><img alt="{html.escape(name)}" loading="lazy"><a class="pl-credit"
-    target="_blank" rel="noopener" href="#">사진: Wikipedia</a></div>
+        asset = media.by_place(MEDIA_CATALOG, CARD_PLACE_SLUGS.get(name, ""))
+        photo = media.figure(asset, rel, variant="card", show_caption=False) if asset else ""
+        cards.append(f"""<div class="pl-card">
+{photo}
   <div class="pl-body">
     <b>{html.escape(name)}</b>
     <p>{html.escape(desc)}</p>
@@ -881,8 +910,8 @@ def places_block(chapter, map_links, rel=".."):
   </div>
 </div>""")
     return ('<section class="places"><h3 class="ic ic-pin">주요 방문지</h3>'
-            '<p class="note">사진은 온라인 상태에서 Wikipedia로부터 불러옵니다.</p>'
-            f'{net_note("Google Maps 링크와 방문지 사진은 연결되면 다시 동작합니다.")}'
+            '<p class="note">파일별 라이선스를 확인한 로컬 대표 이미지만 표시합니다.</p>'
+            f'{net_note("Google Maps 외부 링크는 연결되면 다시 동작합니다.")}'
             f'<div class="pl-grid">{"".join(cards)}</div></section>')
 
 
@@ -2043,9 +2072,20 @@ def build_split_chapter(c, body_md, map_links):
         fig = ""
         if fname == "transport.html" and c["slug"] in ("07", "08", "09"):
             fig = visual_figure("cardays", "Provence 차량일 운영 논리", "../../assets")
+        sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(c["slug"])
+        sample_media = ""
+        if sample_region and fname == "food.html":
+            sample_media = media.gallery(
+                media.region_extras(MEDIA_CATALOG, sample_region, ("food", "market")),
+                rel, "지역 음식과 시장 대표 이미지")
+        elif sample_region and fname == "places.html":
+            unlinked = [a for a in media.region_extras(
+                MEDIA_CATALOG, sample_region, ("place",)) if not a.get("placeSlug")]
+            sample_media = media.gallery(unlinked, rel, "추가 장소 대표 이미지")
         rendered, flat, page_body = render_split_page(
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
-            extra=fig + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
+            extra=fig + sample_media
+            + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
             subnav=chapter_siblings(pages, fname, with_days=fname == "schedule.html"))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
@@ -3689,16 +3729,10 @@ def build_places(timetable):
             detail = wrap_tables(rewrite_asset_links(html_body, rel))
         ex = "" if detail else place_excerpt(r)
 
-        # 사진 — 위키백과에서 온라인일 때만 불러온다. 오프라인이면 자리가 접힌다.
-        # 제목이 없으면 아예 걸지 않는다. 비슷한 이름으로 찍으면 남의 사진이
-        # 이 장소 것처럼 붙는다 — 현장에서 엉뚱한 곳을 찾게 된다.
-        photo = ""
-        if r.get("wiki"):
-            photo = (f'<figure class="pl-shot" data-wiki="{html.escape(r["wiki"], quote=True)}"'
-                     f' data-wlang="{r["wlang"]}" hidden>'
-                     f'<img alt="{html.escape(r["name"])}" loading="lazy">'
-                     f'<figcaption><a class="pl-credit" target="_blank" rel="noopener"'
-                     f' href="#">사진 · 위키백과</a></figcaption></figure>')
+        # 파일별 라이선스를 확인한 로컬 사진만 쓴다. 카탈로그 연결이 없으면
+        # 임의의 유사 사진으로 대체하지 않고 이미지 영역 자체를 생략한다.
+        photo = media.figure(media.by_place(MEDIA_CATALOG, r["slug"]), rel,
+                             variant="place")
 
         # 참고 링크 — 근거가 있는 것만. 지도 좌표는 실행지도 핀에서, 위키 제목은
         # 레지스트리에서 온다. 둘 다 없으면 그 칩은 나오지 않는다.
@@ -3715,7 +3749,7 @@ def build_places(timetable):
         refs.append(f'<a class="ref ic ic-map" href="{rel}/maps/{c["map"]}">'
                     f'{html.escape(c["region"])} 실행지도</a>')
         ref_block = (f'<h2 class="ic ic-link">참고</h2><div class="refs">{"".join(refs)}</div>'
-                     + net_note("위키백과 링크와 사진은 연결되면 다시 동작합니다."))
+                     + net_note("위키백과와 지도 링크는 연결되면 다시 동작합니다."))
 
         body = (f'<h1>{html.escape(r["name"])}</h1>'
                 + photo
@@ -4102,8 +4136,16 @@ def check_phase7_visual_guards():
         chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
         hub = SITE / chapter_url(chapter)
         page_text = hub.read_text(encoding="utf-8")
-        for token in (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
-                      html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈"):
+        sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+        if sample_region:
+            asset = media.region_hero(MEDIA_CATALOG, sample_region)
+            expected = (asset["localPath"], f'alt="{html.escape(asset["altKo"])}"',
+                        html.escape(asset["author"]), asset["licenseName"],
+                        "Wikimedia Commons", "data-media-id")
+        else:
+            expected = (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
+                        html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈")
+        for token in expected:
             if token not in page_text:
                 problems.append(f"{chapter['region']} 허브 대표사진·크레딧 누락: {token}")
 
@@ -4132,7 +4174,8 @@ def check_phase7_visual_guards():
                 problems.append(f"{relpath}: 편집도식 {key} 누락")
 
     credits = (SITE / "credits.html").read_text(encoding="utf-8")
-    if credits.count('class="credit-item"') != len(HERO_PHOTOS):
+    expected_credits = len(HERO_PHOTOS) + len(media.assets(MEDIA_CATALOG))
+    if credits.count('class="credit-item"') != expected_credits:
         problems.append("사진 저작자 표시 페이지의 대표사진 항목 수 불일치")
     for _slug, (_fname, _subject, author, lic, lic_url, src_url) in HERO_PHOTOS.items():
         for token in (author, lic, lic_url, src_url):
@@ -4460,6 +4503,7 @@ def main():
         shutil.rmtree(SITE)
     SITE.mkdir()
     (SITE / "assets").mkdir()
+    media.copy_assets(ROOT, SITE, MEDIA_CATALOG)
     # 아이콘은 CSS 마스크로 붙인다. 스프라이트를 페이지마다 인라인하면
     # 314쪽이 각각 무거워진다 — 마스크는 CSS 한 번이고 페이지 무게는 0 이다.
     (SITE / "assets" / "style.css").write_text(
