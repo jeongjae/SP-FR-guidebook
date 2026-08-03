@@ -3089,8 +3089,17 @@ def link_map_places(text, out_name):
                  if c["kind"] == "region" and c["map"] == out_name), None)
     if slug is None or POPUP_SRC not in text:
         return text
-    table = {r["pin"]: r["slug"] for r in load_place_registry()
-             if r["chapter"] == slug and r["type"] == "spot" and r["pin"]}
+    # 이 챕터의 핀을 먼저, 그 다음 다른 챕터의 핀·이름을 채운다. 장소는 한
+    # 챕터에만 등록되지만 핀은 전환일 지도에 있을 수 있다 — Lourmarin 은
+    # 뤼베롱 소속인데 핀은 Aix 지도다. 팝업 대조는 이 지도에 있는 핀 이름만
+    # 실제로 쓰므로 전역 표가 넓어도 잘못 붙지 않는다.
+    pin_names = set(re.findall(r'"name":\s*"([^"]+)"', text))
+    reg_spots = [r for r in load_place_registry() if r["type"] == "spot"]
+    table = {}
+    for r in sorted(reg_spots, key=lambda r: r["chapter"] != slug):
+        for key in (r["pin"], r["name"]):
+            if key and key in pin_names:
+                table.setdefault(key, r["slug"])
     if not table:
         return text
     repl = ("const PLACE=" + json.dumps(table, ensure_ascii=False) + ";\n "
@@ -3579,6 +3588,10 @@ def check_places():
 # 등급이 붙어 있지만 갈 곳이 아닌 헤딩 — 하루의 성격이다
 REGISTRY_EXCLUDED = {"15구 생활일", "월요일 모듈"}
 
+# 병합된 옛 장소 슬러그 → 정본 슬러그. Lourmarin 이 aix 경유·luberon 정본으로
+# 두 번 등록돼 페이지가 두 장이던 것을 2026-08-03 감사에서 하나로 합쳤다.
+PLACE_REDIRECTS = {"lourmarin-2": "lourmarin"}
+
 
 
 # ---------------------------------------------------------------- 장소 페이지
@@ -3701,7 +3714,9 @@ def build_places(timetable):
                     + urllib.parse.quote(r["wiki"].replace(" ", "_")))
             refs.append(f'<a class="ref ic ic-link" target="_blank" rel="noopener"'
                         f' href="{html.escape(wurl)}">위키백과</a>')
-        gm = map_links_all.get(r["pin"]) if r["pin"] else None
+        # 핀이 없어도 이름이 다른 지역 지도의 핀과 일치하면 그 좌표를 쓴다.
+        # Lourmarin — 도시어는 뤼베롱 챕터에, 핀은 Aix 전환일 지도에 있다.
+        gm = map_links_all.get(r["pin"]) if r["pin"] else map_links_all.get(r["name"])
         if gm:
             refs.append(f'<a class="ref ic ic-pin" target="_blank" rel="noopener"'
                         f' href="{html.escape(gm)}">Google Maps</a>')
@@ -3729,6 +3744,12 @@ def build_places(timetable):
                  subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
         SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
                              "u": f'places/{r["slug"]}.html'})
+
+    # 옛 슬러그 — 같은 장소가 레지스트리에 두 번 있던 시절의 주소를 보존한다.
+    # 하나의 것은 하나의 페이지에만 있는다. 옛 주소는 리다이렉트만 남는다.
+    for old, new in PLACE_REDIRECTS.items():
+        write_redirect(out_dir / f"{old}.html", f"{new}.html",
+                       next((r["name"] for r in spots if r["slug"] == new), new))
 
     # 인덱스 — 지역 순, 등급 표시
     groups = []

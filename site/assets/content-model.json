@@ -1227,28 +1227,6 @@
       "url": "places/grasse.html"
     },
     {
-      "id": "place:lourmarin",
-      "slug": "lourmarin",
-      "name": "Lourmarin",
-      "regionIds": [
-        "region:aix",
-        "region:luberon"
-      ],
-      "type": "spot",
-      "grade": "priority",
-      "aliases": [
-        "Lourmarin"
-      ],
-      "legacySlugs": [
-        "lourmarin-2"
-      ],
-      "dayIds": [
-        "day:016"
-      ],
-      "dayEvidence": "시간표",
-      "url": "places/lourmarin.html"
-    },
-    {
       "id": "place:montagne-sainte-victoire-terrain-des-peintres",
       "slug": "montagne-sainte-victoire-terrain-des-peintres",
       "name": "Montagne Sainte-Victoire · Terrain des Peintres",
@@ -1436,6 +1414,25 @@
       ],
       "dayEvidence": "시간표",
       "url": "places/goult.html"
+    },
+    {
+      "id": "place:lourmarin",
+      "slug": "lourmarin",
+      "name": "Lourmarin",
+      "regionIds": [
+        "region:luberon"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Lourmarin"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:016"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/lourmarin.html"
     },
     {
       "id": "place:l-isle-sur-la-sorgue",
