@@ -133,6 +133,10 @@ PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
+COMMERCIAL_CARDS = SOURCE / "ASSETS" / "89_Commercial_City_Experience_Cards_v1.0.md"
+PLACE_DOSSIERS = SOURCE / "ASSETS" / "90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md"
+COMMERCIAL_STANDARD = SOURCE / "CURRENT" / "00_Governance" / "89_Commercial_Guidebook_Editorial_and_Layout_Standard_v1.0.md"
+DOSSIER_STANDARD = SOURCE / "CURRENT" / "00_Governance" / "90_Regional_and_Place_Dossier_Editorial_Standard_v1.0.md"
 TRACKER_SHEETS = [
     ("Master Itinerary", "itinerary", "43일 전체 일정표"),
     ("Reservations", "reservations", "예약 현황"),
@@ -2361,7 +2365,7 @@ def build_chapters():
             continue
         collect_search(c, flat)
 
-        if c["slug"] == "02":
+        if c["slug"] == "01":
             body = re.sub(r"(</h1>)", r"\1" + visual_figure("rhythm", "생활형 여행의 하루 리듬"),
                           body, count=1)
         if c["slug"] == "03":
@@ -4073,6 +4077,340 @@ def check_phase6_map_guards():
     print("Phase 6 실행지도 가드: 8지역 · 65개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
 
 
+def check_phase7_visual_guards():
+    """대표사진·편집도식·권리표시를 배포 계약으로 고정한다."""
+    problems = []
+
+    # 원본과 배포본이 모두 있어야 한다. 잘못 확장한 파일도 초기에 막는다.
+    for slug, (fname, subject, author, lic, _lic_url, _src_url) in sorted(HERO_PHOTOS.items()):
+        source = HERO_DIR / fname
+        deployed = SITE / "assets" / "heroes" / f"{slug}.jpg"
+        for label, path in (("원본", source), ("배포본", deployed)):
+            if not path.exists() or path.stat().st_size < 10_000:
+                problems.append(f"대표사진 {label} 누락·손상: {path}")
+            elif path.read_bytes()[:2] != b"\xff\xd8":
+                problems.append(f"대표사진 JPEG 형식 오류: {path}")
+
+        chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
+        hub = SITE / chapter_url(chapter)
+        page_text = hub.read_text(encoding="utf-8")
+        for token in (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
+                      html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈"):
+            if token not in page_text:
+                problems.append(f"{chapter['region']} 허브 대표사진·크레딧 누락: {token}")
+
+    for key, fname in VISUALS.items():
+        source = VISUALS_DIR / fname
+        deployed = SITE / "assets" / "visuals" / fname
+        for label, path in (("원본", source), ("배포본", deployed)):
+            if not path.exists() or path.stat().st_size < 10_000:
+                problems.append(f"편집도식 {label} 누락·손상: {path}")
+            elif path.read_bytes()[:8] != b"\x89PNG\r\n\x1a\n":
+                problems.append(f"편집도식 PNG 형식 오류: {path}")
+
+    expected_visuals = {
+        "chapters/how-to-use.html": ("rhythm",),
+        "chapters/itinerary.html": ("route", "fatigue"),
+        "tracker/reservations.html": ("risk",),
+        "chapters/aix/transport.html": ("cardays",),
+        "chapters/luberon/transport.html": ("cardays",),
+        "chapters/avignon/transport.html": ("cardays",),
+        "chapters/paris/index.html": ("cycles",),
+    }
+    for relpath, keys in expected_visuals.items():
+        page_text = (SITE / relpath).read_text(encoding="utf-8")
+        for key in keys:
+            if VISUALS[key] not in page_text:
+                problems.append(f"{relpath}: 편집도식 {key} 누락")
+
+    credits = (SITE / "credits.html").read_text(encoding="utf-8")
+    if credits.count('class="credit-item"') != len(HERO_PHOTOS):
+        problems.append("사진 저작자 표시 페이지의 대표사진 항목 수 불일치")
+    for _slug, (_fname, _subject, author, lic, lic_url, src_url) in HERO_PHOTOS.items():
+        for token in (author, lic, lic_url, src_url):
+            if token not in credits:
+                problems.append(f"사진 저작자 표시 페이지 누락: {token}")
+
+    leaked = []
+    for path in SITE.rglob("*.html"):
+        text = path.read_text(encoding="utf-8")
+        if "../../ASSETS/88_Representative_Public_Photos/" in text or \
+                "../../ASSETS/85_Editorial_Visuals/" in text:
+            leaked.append(str(path.relative_to(SITE)))
+    if leaked:
+        problems.append("배포 HTML에 원본 상대경로 잔존: " + ", ".join(leaked[:10]))
+
+    if problems:
+        print("Phase 7 시각자산 가드 실패:")
+        for problem in problems[:40]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 7 시각자산 가드: 대표사진 8장 · 편집도식 6장 · 본문 배치 · CC 크레딧 이상 없음")
+
+
+def check_phase8_operations_guards():
+    """Known facts와 실제 예약값의 경계를 배포 계약으로 고정한다."""
+    problems = []
+    wb = openpyxl.load_workbook(TRACKER_XLSX, data_only=True)
+    required_sheets = {name for name, _slug, _label in TRACKER_SHEETS}
+    missing_sheets = sorted(required_sheets - set(wb.sheetnames))
+    if missing_sheets:
+        problems.append("필수 트래커 시트 누락: " + ", ".join(missing_sheets))
+
+    def records(sheet_name):
+        ws = wb[sheet_name]
+        headers = [cell.value for cell in ws[3]]
+        return [dict(zip(headers, row)) for row in ws.iter_rows(min_row=4, values_only=True)
+                if any(value is not None for value in row)]
+
+    reservations = records("Reservations")
+    ids = [row.get("ID") for row in reservations]
+    if len(reservations) != 24 or len(set(ids)) != 24 or ids != [f"R{i:03d}" for i in range(1, 25)]:
+        problems.append("예약항목은 R001~R024의 고유한 24건이어야 함")
+    if sum(row.get("우선순위") == "P0" for row in reservations) != 13:
+        problems.append("P0 예약항목은 정확히 13건이어야 함")
+    allowed_reservation_states = {"미조사", "예약대기", "재확인", "예약완료", "취소"}
+    for row in reservations:
+        state = row.get("상태")
+        if state not in allowed_reservation_states:
+            problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
+        if state == "예약완료":
+            required = ("예약번호", "사업자", "소스 URL", "최종확인일")
+            absent = [key for key in required if not row.get(key)]
+            if absent:
+                problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
+
+    expected_stays = {
+        "Barcelona": ("2026-08-29", "2026-09-01", 3),
+        "Girona": ("2026-09-01", "2026-09-04", 3),
+        "Nice": ("2026-09-04", "2026-09-09", 5),
+        "Aix-en-Provence": ("2026-09-09", "2026-09-13", 4),
+        "Luberon": ("2026-09-13", "2026-09-17", 4),
+        "Avignon": ("2026-09-17", "2026-09-21", 4),
+        "Lyon": ("2026-09-21", "2026-09-25", 4),
+        "Paris": ("2026-09-25", "2026-10-10", 15),
+    }
+    stays = records("Accommodation")
+    if {row.get("거점") for row in stays} != set(expected_stays):
+        problems.append("숙소 거점은 Barcelona~Paris의 확정 8개여야 함")
+    for row in stays:
+        base = row.get("거점")
+        if base not in expected_stays:
+            continue
+        checkin, checkout, nights = expected_stays[base]
+        actual = (row.get("체크인").date().isoformat() if row.get("체크인") else None,
+                  row.get("체크아웃").date().isoformat() if row.get("체크아웃") else None,
+                  row.get("박수"))
+        if actual != (checkin, checkout, nights):
+            problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
+        if row.get("상태") == "예약완료":
+            required = ("실제총액", "예약번호", "주소", "소스 URL")
+            absent = [key for key in required if not row.get(key)]
+            if absent:
+                problems.append(f'{base}: 숙소 예약완료인데 필수값 누락 — {", ".join(absent)}')
+
+    locks = records("Phase8 Lock Status")
+    allowed_lock_states = {"LOCKED", "PARTIAL", "BLOCKED"}
+    for row in locks:
+        state = row.get("잠금상태")
+        if state not in allowed_lock_states:
+            problems.append(f'{row.get("항목")}: 알 수 없는 잠금상태 {state!r}')
+        if state != "LOCKED" and not row.get("필요 입력"):
+            problems.append(f'{row.get("항목")}: 미잠금 항목의 필요 입력 누락')
+    lock_by_item = {row.get("항목"): row for row in locks}
+    for item, value in (("43일·42박", "2026-08-29~2026-10-10"),
+                        ("8개 거점 숙박배분", "3/3/5/4/4/4/4/15박")):
+        row = lock_by_item.get(item, {})
+        if row.get("잠금상태") != "LOCKED" or row.get("현재 확정값") != value:
+            problems.append(f"Known-Facts Lock 불일치: {item}")
+
+    # 사용자 예약서가 없는 현재 기준에서는 잠금률 0이 정직한 값이다.
+    completed = sum(row.get("상태") == "예약완료" for row in reservations)
+    dashboard_text = (SITE / "tracker" / "dashboard.html").read_text(encoding="utf-8")
+    lock_text = (SITE / "tracker" / "locks.html").read_text(encoding="utf-8")
+    if completed == 0 and "실제 예약 잠금률</td><td>0" not in dashboard_text:
+        problems.append("Dashboard 실제 예약 잠금률이 예약 데이터와 불일치")
+    for token in ("43일·42박", "3/3/5/4/4/4/4/15박", "BLOCKED", "필요 입력"):
+        if token not in lock_text:
+            problems.append(f"잠금 현황 배포 페이지 누락: {token}")
+
+    if problems:
+        print("Phase 8 예약·운영 잠금 가드 실패:")
+        for problem in problems[:40]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 8 예약·운영 잠금 가드: 24개 예약 · P0 13개 · 8개 숙소 · Known-Facts/실예약 경계 이상 없음")
+
+
+def check_phase9_commercial_depth_guards():
+    """상용 편집모듈과 51개 장소 dossier가 원고·배포본에서 빠지지 않게 잠근다."""
+    problems = []
+    required_files = (COMMERCIAL_CARDS, PLACE_DOSSIERS, COMMERCIAL_STANDARD, DOSSIER_STANDARD)
+    for path in required_files:
+        if not path.exists() or path.stat().st_size < 500:
+            problems.append(f"Phase 9 기준파일 누락·손상: {path.relative_to(SOURCE)}")
+
+    cards_text = COMMERCIAL_CARDS.read_text(encoding="utf-8")
+    dossier_text = PLACE_DOSSIERS.read_text(encoding="utf-8")
+    expected_regions = {
+        "barcelona": ("Barcelona", 6), "girona": ("Girona", 7),
+        "nice": ("Nice", 6), "aix": ("Aix", 6),
+        "luberon": ("Luberon", 6), "avignon": ("Avignon", 7),
+        "lyon": ("Lyon", 5), "paris": ("Paris", 8),
+    }
+
+    if len(re.findall(r"^## .+$", cards_text, re.M)) != 8:
+        problems.append("Commercial City Experience Card는 정확히 8개 지역이어야 함")
+    dossier_count = len(re.findall(r"^## .+$", dossier_text, re.M))
+    if dossier_count != 51:
+        problems.append(f"장소 dossier {dossier_count}개 (기대 51개)")
+
+    # 최신 Regional Chapter만 검사한다. superseded 원고가 통과 근거가 되어서는 안 된다.
+    for chapter in (c for c in CHAPTERS if c["kind"] == "region"):
+        slug = chapter["name"]
+        region_heading, expected_places = expected_regions[slug]
+        source_path = SOURCE / chapter["path"]
+        source_text = source_path.read_text(encoding="utf-8")
+        for token in ("# Commercial Guide Module", "## Editor’s Verdict",
+                      "## 놓치면 아쉬운 선택", "## 하루를 완성하는 네 가지 선택",
+                      "## 이 지역의 Top 10", "## 현장 메모",
+                      "# Regional Context & Scheduled Place Dossiers"):
+            if token not in source_text:
+                problems.append(f"{source_path.name}: Phase 9 모듈 누락 — {token}")
+        if not re.search(r"^## (?:지역을 이해하는 다섯 개의 층|이 (?:도시를|지역을) 이해하는 축)",
+                         source_text, re.M):
+            problems.append(f"{source_path.name}: 역사·경제·사회·문화 지역맥락 축 누락")
+
+        region_match = re.search(
+            rf"^# {re.escape(region_heading)}\s*$([\s\S]*?)(?=^# [^#]|\Z)",
+            dossier_text, re.M)
+        actual_places = len(re.findall(r"^## .+$", region_match.group(1), re.M)) if region_match else 0
+        if actual_places != expected_places:
+            problems.append(f"{region_heading}: dossier {actual_places}개 (기대 {expected_places}개)")
+
+        deployed = "\n".join(
+            path.read_text(encoding="utf-8")
+            for path in sorted((SITE / "chapters" / slug).glob("*.html")))
+        for token in ("Editor’s Verdict", "놓치면 아쉬운 선택", "이 지역의 Top 10"):
+            if token not in deployed:
+                problems.append(f"{slug} 배포 챕터: Phase 9 콘텐츠 누락 — {token}")
+        if not ("지역을 이해하는 다섯 개의 층" in deployed or
+                "이 도시를 이해하는 축" in deployed or "이 지역을 이해하는 축" in deployed):
+            problems.append(f"{slug} 배포 챕터: 역사·경제·사회·문화 지역맥락 축 누락")
+
+    # 모든 dossier는 현장에서 확인할 수 있는 공식 출발점을 가져야 한다.
+    official_links = re.findall(r"^- 공식정보:\s+https?://\S+", dossier_text, re.M)
+    if len(official_links) != 51:
+        problems.append(f"dossier 공식정보 링크 {len(official_links)}개 (기대 51개)")
+
+    if problems:
+        print("Phase 9 상용편집·장소심화 가드 실패:")
+        for problem in problems[:40]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 9 상용편집·장소심화 가드: 8개 지역 카드 · 최신 챕터 8개 · 장소 dossier 51개 · 공식링크 51개 이상 없음")
+
+
+def check_phase10_official_fact_guards():
+    """공식 사실 레지스터·재확인 달력·배포 노출을 하나의 계약으로 잠근다."""
+    problems = []
+    report_path = SOURCE / "OPERATIONS" / "118_Phase10_Final_Fact_Verification_Report_v1.0.md"
+    required_files = (VERIFY_MD, REVERIFY_MD, GATE_MD, report_path)
+    for path in required_files:
+        if not path.exists() or path.stat().st_size < 300:
+            problems.append(f"Phase 10 기준파일 누락·손상: {path.relative_to(SOURCE)}")
+
+    verify_text = VERIFY_MD.read_text(encoding="utf-8")
+    rows = md_table_rows(verify_text,
+                         ["ID", "지역", "장소", "상태", "확인내용", "공식출처", "조치"])
+    ids = [row.get("ID") for row in rows]
+    if ids != [f"F{i:03d}" for i in range(1, 19)]:
+        problems.append("공식 검증 레코드는 F001~F018의 연속된 18건이어야 함")
+
+    allowed_states = set(VERIFY_STATUS)
+    state_counts = {state: 0 for state in allowed_states}
+    official_urls = []
+    for row in rows:
+        state = row.get("상태")
+        if state not in allowed_states:
+            problems.append(f'{row.get("ID")}: 알 수 없는 검증상태 {state!r}')
+        else:
+            state_counts[state] += 1
+        for key in ("지역", "장소", "항목", "확인내용", "공식출처", "조치"):
+            if not row.get(key):
+                problems.append(f'{row.get("ID")}: 필수값 누락 — {key}')
+        match = re.fullmatch(r"\[공식\]\((https://[^\s)]+)\)", row.get("공식출처", ""))
+        if not match:
+            problems.append(f'{row.get("ID")}: HTTPS 공식출처 형식 오류')
+        else:
+            official_urls.append(match.group(1))
+
+    expected_counts = {
+        "VERIFIED": 13, "CORRECTED": 3, "VERIFIED_CURRENT": 1,
+        "CONFLICT_RECHECK": 1, "DATE_GATE": 0,
+    }
+    if state_counts != expected_counts:
+        problems.append(f"검증상태 집계 {state_counts} (기대 {expected_counts})")
+    if len(official_urls) != 18:
+        problems.append(f"공식출처 URL {len(official_urls)}개 (기대 18개)")
+
+    # 검증일은 명시되어야 하고 여행 시작일보다 뒤일 수 없다.
+    verified_date = re.search(r"\*\*검증일:\*\*\s*(\d{4}-\d{2}-\d{2})", verify_text)
+    if not verified_date:
+        problems.append("공식 검증일 누락")
+    else:
+        try:
+            if date.fromisoformat(verified_date.group(1)) > TRIP_START:
+                problems.append("공식 검증일이 여행 시작일보다 늦음")
+        except ValueError:
+            problems.append("공식 검증일 형식 오류")
+
+    gate_text = GATE_MD.read_text(encoding="utf-8")
+    gate_rows = md_table_rows(gate_text, ["날짜", "확인"])
+    trip_gate_rows = []
+    for row in gate_rows:
+        dates = [date(TRIP_START.year, int(m[1]), int(m[2]))
+                 for m in re.finditer(r"(\d{1,2})/(\d{1,2})", row.get("날짜", ""))]
+        if dates and any(TRIP_START <= d <= TRIP_END for d in dates):
+            trip_gate_rows.append(row)
+        if not row.get("확인"):
+            problems.append(f'재확인 게이트 내용 누락: {row.get("날짜")}')
+    if len(trip_gate_rows) != 17:
+        problems.append(f"여행 중 날짜별 핵심 게이트 {len(trip_gate_rows)}개 (기대 17개)")
+
+    report_text = report_path.read_text(encoding="utf-8")
+    for token in ("| 공식 검증·정정 레코드 | 18 |", "| 명시적 정정 | 3 |",
+                  "| 공식페이지 충돌·재확인 | 1 |", "| 전날·당일 게이트 | 17개 날짜군 |",
+                  "| 임의 생성한 예약값 | 0 |", "Phase 8B"):
+        if token not in report_text:
+            problems.append(f"Phase 10 완료보고서 집계·경계 누락: {token}")
+
+    # 8개 지역 모두 웹에서 공식 확인 블록과 상태표를 노출해야 한다.
+    for chapter in (c for c in CHAPTERS if c["kind"] == "region"):
+        pages = "\n".join(path.read_text(encoding="utf-8")
+                          for path in sorted((SITE / "chapters" / chapter["name"]).glob("*.html")))
+        for token in ("공식 확인 정보와 재확인 대상", "검증 상태", "Phase 8B 예약 완료 전"):
+            if token not in pages:
+                problems.append(f'{chapter["name"]} 배포 챕터: Phase 10 블록 누락 — {token}')
+        expected_rows = len(load_verification().get(chapter["slug"], []))
+        if pages.count('>공식</a>') < expected_rows:
+            problems.append(f'{chapter["name"]} 배포 챕터: 공식출처 링크 수 부족')
+
+    # 미확정 상태가 확정처럼 보이지 않도록 배지와 문구를 보존한다.
+    deployed_all = "\n".join(path.read_text(encoding="utf-8")
+                             for path in SITE.rglob("*.html"))
+    for token in ("출처 간 불일치", "현재 기준 확인", "재확인", "당일 확정"):
+        if token not in deployed_all:
+            problems.append(f"배포본 불확실성 표기 누락: {token}")
+
+    if problems:
+        print("Phase 10 공식정보 최종 검증 가드 실패:")
+        for problem in problems[:50]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 10 공식정보 가드: 18개 공식검증 · 정정 3건 · 충돌 1건 · 날짜게이트 17개 · 8지역 배포 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4169,6 +4507,10 @@ def main():
     check_phase4_daily_guards()
     check_phase5_execution_guards()
     check_phase6_map_guards()
+    check_phase7_visual_guards()
+    check_phase8_operations_guards()
+    check_phase9_commercial_depth_guards()
+    check_phase10_official_fact_guards()
     check_links()
     check_dates()
     check_places()
