@@ -98,9 +98,15 @@ def classify_source(path: Path) -> str:
     return "reference"
 
 
+def source_files():
+    """활성 원고만. ARCHIVE 는 정의상 사본 보관소라 중복 통계를 왜곡한다."""
+    return [p for p in sorted(SOURCE.rglob("*.md"))
+            if "ARCHIVE" not in p.relative_to(SOURCE).parts]
+
+
 def inventory_markdown():
     rows = []
-    for path in sorted(SOURCE.rglob("*.md")):
+    for path in source_files():
         rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8", errors="replace")
         for idx, (lv, title, body) in enumerate(split_sections(text)):
@@ -220,7 +226,7 @@ def detect_duplicates(rows, min_words=25, near_threshold=0.60):
 def detect_boilerplate(min_files=3, min_len=20):
     """여러 파일에서 반복되는 동일 문장(정규화 후)."""
     seen = {}
-    for path in sorted(SOURCE.rglob("*.md")):
+    for path in source_files():
         rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8", errors="replace")
         for line in {normalize(l) for l in text.splitlines()}:
