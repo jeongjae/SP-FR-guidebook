@@ -4311,6 +4311,106 @@ def check_phase9_commercial_depth_guards():
     print("Phase 9 상용편집·장소심화 가드: 8개 지역 카드 · 최신 챕터 8개 · 장소 dossier 51개 · 공식링크 51개 이상 없음")
 
 
+def check_phase10_official_fact_guards():
+    """공식 사실 레지스터·재확인 달력·배포 노출을 하나의 계약으로 잠근다."""
+    problems = []
+    report_path = SOURCE / "OPERATIONS" / "118_Phase10_Final_Fact_Verification_Report_v1.0.md"
+    required_files = (VERIFY_MD, REVERIFY_MD, GATE_MD, report_path)
+    for path in required_files:
+        if not path.exists() or path.stat().st_size < 300:
+            problems.append(f"Phase 10 기준파일 누락·손상: {path.relative_to(SOURCE)}")
+
+    verify_text = VERIFY_MD.read_text(encoding="utf-8")
+    rows = md_table_rows(verify_text,
+                         ["ID", "지역", "장소", "상태", "확인내용", "공식출처", "조치"])
+    ids = [row.get("ID") for row in rows]
+    if ids != [f"F{i:03d}" for i in range(1, 19)]:
+        problems.append("공식 검증 레코드는 F001~F018의 연속된 18건이어야 함")
+
+    allowed_states = set(VERIFY_STATUS)
+    state_counts = {state: 0 for state in allowed_states}
+    official_urls = []
+    for row in rows:
+        state = row.get("상태")
+        if state not in allowed_states:
+            problems.append(f'{row.get("ID")}: 알 수 없는 검증상태 {state!r}')
+        else:
+            state_counts[state] += 1
+        for key in ("지역", "장소", "항목", "확인내용", "공식출처", "조치"):
+            if not row.get(key):
+                problems.append(f'{row.get("ID")}: 필수값 누락 — {key}')
+        match = re.fullmatch(r"\[공식\]\((https://[^\s)]+)\)", row.get("공식출처", ""))
+        if not match:
+            problems.append(f'{row.get("ID")}: HTTPS 공식출처 형식 오류')
+        else:
+            official_urls.append(match.group(1))
+
+    expected_counts = {
+        "VERIFIED": 13, "CORRECTED": 3, "VERIFIED_CURRENT": 1,
+        "CONFLICT_RECHECK": 1, "DATE_GATE": 0,
+    }
+    if state_counts != expected_counts:
+        problems.append(f"검증상태 집계 {state_counts} (기대 {expected_counts})")
+    if len(official_urls) != 18:
+        problems.append(f"공식출처 URL {len(official_urls)}개 (기대 18개)")
+
+    # 검증일은 명시되어야 하고 여행 시작일보다 뒤일 수 없다.
+    verified_date = re.search(r"\*\*검증일:\*\*\s*(\d{4}-\d{2}-\d{2})", verify_text)
+    if not verified_date:
+        problems.append("공식 검증일 누락")
+    else:
+        try:
+            if date.fromisoformat(verified_date.group(1)) > TRIP_START:
+                problems.append("공식 검증일이 여행 시작일보다 늦음")
+        except ValueError:
+            problems.append("공식 검증일 형식 오류")
+
+    gate_text = GATE_MD.read_text(encoding="utf-8")
+    gate_rows = md_table_rows(gate_text, ["날짜", "확인"])
+    trip_gate_rows = []
+    for row in gate_rows:
+        dates = [date(TRIP_START.year, int(m[1]), int(m[2]))
+                 for m in re.finditer(r"(\d{1,2})/(\d{1,2})", row.get("날짜", ""))]
+        if dates and any(TRIP_START <= d <= TRIP_END for d in dates):
+            trip_gate_rows.append(row)
+        if not row.get("확인"):
+            problems.append(f'재확인 게이트 내용 누락: {row.get("날짜")}')
+    if len(trip_gate_rows) != 17:
+        problems.append(f"여행 중 날짜별 핵심 게이트 {len(trip_gate_rows)}개 (기대 17개)")
+
+    report_text = report_path.read_text(encoding="utf-8")
+    for token in ("| 공식 검증·정정 레코드 | 18 |", "| 명시적 정정 | 3 |",
+                  "| 공식페이지 충돌·재확인 | 1 |", "| 전날·당일 게이트 | 17개 날짜군 |",
+                  "| 임의 생성한 예약값 | 0 |", "Phase 8B"):
+        if token not in report_text:
+            problems.append(f"Phase 10 완료보고서 집계·경계 누락: {token}")
+
+    # 8개 지역 모두 웹에서 공식 확인 블록과 상태표를 노출해야 한다.
+    for chapter in (c for c in CHAPTERS if c["kind"] == "region"):
+        pages = "\n".join(path.read_text(encoding="utf-8")
+                          for path in sorted((SITE / "chapters" / chapter["name"]).glob("*.html")))
+        for token in ("공식 확인 정보와 재확인 대상", "검증 상태", "Phase 8B 예약 완료 전"):
+            if token not in pages:
+                problems.append(f'{chapter["name"]} 배포 챕터: Phase 10 블록 누락 — {token}')
+        expected_rows = len(load_verification().get(chapter["slug"], []))
+        if pages.count('>공식</a>') < expected_rows:
+            problems.append(f'{chapter["name"]} 배포 챕터: 공식출처 링크 수 부족')
+
+    # 미확정 상태가 확정처럼 보이지 않도록 배지와 문구를 보존한다.
+    deployed_all = "\n".join(path.read_text(encoding="utf-8")
+                             for path in SITE.rglob("*.html"))
+    for token in ("출처 간 불일치", "현재 기준 확인", "재확인", "당일 확정"):
+        if token not in deployed_all:
+            problems.append(f"배포본 불확실성 표기 누락: {token}")
+
+    if problems:
+        print("Phase 10 공식정보 최종 검증 가드 실패:")
+        for problem in problems[:50]:
+            print("  " + problem)
+        sys.exit(1)
+    print("Phase 10 공식정보 가드: 18개 공식검증 · 정정 3건 · 충돌 1건 · 날짜게이트 17개 · 8지역 배포 이상 없음")
+
+
 def check_links():
     broken = []
     for f in SITE.rglob("*.html"):
@@ -4410,6 +4510,7 @@ def main():
     check_phase7_visual_guards()
     check_phase8_operations_guards()
     check_phase9_commercial_depth_guards()
+    check_phase10_official_fact_guards()
     check_links()
     check_dates()
     check_places()
