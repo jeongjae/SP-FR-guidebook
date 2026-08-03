@@ -1576,6 +1576,160 @@ footer {
 [data-theme="light"] .badge-done,
 [data-theme="light"] .p4-badge { color: #fff; }
 
+/* ================= 날짜별 인터랙티브 실행지도 ================= */
+.daily-map-section { margin: var(--s6) 0; }
+.daily-execution-map {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  background: var(--surface);
+}
+.dem-map {
+  width: 100%;
+  height: clamp(330px, 56vw, 520px);
+  background: var(--surface-sunk);
+  z-index: 0;
+}
+.dem-map-note {
+  margin: 0;
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-2);
+  font-size: var(--t-foot);
+  line-height: 1.5;
+}
+.dem-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s4);
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-2);
+  font-size: var(--t-foot);
+  font-weight: 600;
+}
+.dem-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.dem-legend i {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--marker-color);
+  box-shadow: 0 0 0 1px var(--marker-color);
+}
+.dem-place-list { margin: 0; padding: 0; list-style: none; }
+.dem-place-item { border-bottom: 1px solid var(--border); }
+.dem-place-item > button {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+  gap: var(--s3);
+  width: 100%;
+  min-height: 64px;
+  padding: var(--s3) var(--s4);
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.dem-place-item > button:hover,
+.dem-place-item > button:focus-visible,
+.dem-place-item.is-active > button { background: var(--accent-soft); }
+.dem-place-item.is-active > button { box-shadow: inset 4px 0 0 var(--accent); }
+.dem-list-marker {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  min-height: 44px;
+}
+.dem-list-copy { display: flex; min-width: 0; flex-direction: column; gap: 3px; }
+.dem-list-copy b { font-size: var(--t-body); line-height: 1.35; }
+.dem-list-copy time { color: var(--accent); font-size: var(--t-foot); font-weight: 700; }
+.dem-list-copy span { color: var(--text-2); font-size: var(--t-foot); line-height: 1.5; }
+.dem-list-copy small { color: var(--sig-es-ink); font-size: var(--t-foot); font-weight: 700; }
+.dem-list-actions,
+.dem-popup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+.dem-list-actions { padding: 0 var(--s4) var(--s3) 71px; }
+.dem-list-actions a,
+.dem-popup-actions a,
+.dem-primary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap);
+  padding: 0 var(--s3);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-ctrl);
+  color: var(--accent);
+  font-size: var(--t-foot);
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.dem-list-actions a:hover,
+.dem-popup-actions a:hover { background: var(--accent); color: var(--accent-ink); }
+.dem-google-actions { padding: var(--s4); }
+.dem-primary-action { width: 100%; background: var(--accent); color: var(--accent-ink); }
+.dem-primary-action:hover { filter: brightness(0.9); }
+.daily-map-marker {
+  border: 0 !important;
+  background: transparent !important;
+}
+.dem-marker-number,
+.dem-marker-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 12%;
+  box-shadow: 0 2px 7px #0007;
+  transform: rotate(-45deg);
+}
+.dem-marker-number {
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 15px;
+  font-weight: 700;
+}
+.dem-marker-number b { transform: rotate(45deg); }
+.dem-marker-icon { background: var(--marker-color); color: #fff; }
+.dem-marker-icon > *,
+.dem-marker-number { line-height: 1; }
+.dem-marker-icon .ic { width: 19px; height: 19px; transform: rotate(45deg); }
+.dem-list-marker .dem-marker-number,
+.dem-list-marker .dem-marker-icon {
+  width: 34px;
+  height: 34px;
+  border-width: 2px;
+  box-shadow: none;
+}
+.dem-list-marker .dem-marker-number { transform: none; border-radius: 50%; }
+.dem-list-marker .dem-marker-number b { transform: none; }
+.dem-list-marker .dem-marker-icon { transform: none; border-radius: 50%; }
+.dem-list-marker .dem-marker-icon .ic { transform: none; }
+.dem-popup { color: #0F1A1E; font-family: "Nanum Gothic", sans-serif; }
+.dem-popup > b { display: block; margin-bottom: 4px; font-size: 15px; }
+.dem-popup time { display: block; color: #000091; font-size: 13px; font-weight: 700; }
+.dem-popup p { margin: 7px 0; font-size: 13px; line-height: 1.5; }
+.dem-popup small { display: block; margin-bottom: 7px; color: #7d2b11; font-size: 12px; font-weight: 700; }
+.dem-popup-actions a { min-height: 44px; font-size: 12px; }
+.leaflet-popup-content { margin: 14px; }
+.leaflet-control-attribution { font-size: 11px; }
+.leaflet-control-attribution a { color: #000091; }
+
+@media (max-width: 600px) {
+  .dem-map { height: 58vh; min-height: 360px; max-height: 520px; }
+  .dem-list-actions { padding-left: var(--s4); }
+  .dem-list-actions a { flex: 1 1 145px; }
+}
+
 
 /* ================= inset grouped list (HIG) =================
    이동용 목록의 정석. 카드 격자보다 조밀하고 훑기 쉽다.
