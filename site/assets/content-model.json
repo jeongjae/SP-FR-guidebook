@@ -133,10 +133,10 @@
       "number": 4,
       "date": "2026-09-01",
       "regionId": "region:girona",
-      "theme": "렌터카 인수·시체스·Girona 이동",
+      "theme": "렌터카 인수·Sitges·Girona 축소 또는 Bàscara",
       "dayType": "이동",
       "fatigue": 5,
-      "status": "초안",
+      "status": "예약반영",
       "url": "daily/day-04.html"
     },
     {
@@ -144,10 +144,10 @@
       "number": 5,
       "date": "2026-09-02",
       "regionId": "region:girona",
-      "theme": "Collioure·Peralada",
+      "theme": "Bàscara→Collioure→Peralada→Bàscara",
       "dayType": "체류",
       "fatigue": 3,
-      "status": "초안",
+      "status": "예약반영",
       "url": "daily/day-05.html"
     },
     {
@@ -155,10 +155,10 @@
       "number": 6,
       "date": "2026-09-03",
       "regionId": "region:girona",
-      "theme": "Pals·Peratallada·Calella de Palafrugell",
+      "theme": "Bàscara→Pals→Peratallada→Calella→Bàscara",
       "dayType": "체류",
       "fatigue": 3,
-      "status": "초안",
+      "status": "예약반영",
       "url": "daily/day-06.html"
     },
     {
@@ -166,10 +166,10 @@
       "number": 7,
       "date": "2026-09-04",
       "regionId": "region:nice",
-      "theme": "Girona→BCN→Nice 이동·정착",
+      "theme": "Bàscara→Nice 이동·정착",
       "dayType": "이동",
-      "fatigue": "도착사진 선택",
-      "status": 5,
+      "fatigue": 5,
+      "status": "검토중",
       "url": "daily/day-07.html"
     },
     {
@@ -810,10 +810,8 @@
         "Onyar Houses"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:004"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/onyar.html"
     },
     {
@@ -2187,16 +2185,16 @@
       "sourceUrl": null
     },
     {
-      "id": "stay:girona",
-      "regionId": "region:girona",
+      "id": "stay:b-scara",
+      "regionId": null,
       "checkIn": "2026-09-01",
       "checkOut": "2026-09-04",
       "nights": 3,
-      "status": "미조사",
-      "area": "역–Plaça Catalunya–Gran Via",
-      "address": null,
+      "status": "예약완료",
+      "area": "Airbnb · 바스카라의 B&B",
+      "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
       "bookingNumber": null,
-      "sourceUrl": null
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%A0scara"
     },
     {
       "id": "stay:nice",
@@ -2290,11 +2288,11 @@
       "scheduledDate": "2026-09-01",
       "dayId": "day:004",
       "category": "숙소",
-      "name": "숙소 3박",
-      "status": "미조사",
+      "name": "바스카라의 B&B · 3박",
+      "status": "예약완료",
       "priority": "P0",
-      "targetDate": "2026-08-05",
-      "sourceUrl": null
+      "targetDate": null,
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%A0scara"
     },
     {
       "id": "reservation:r003",
@@ -2577,23 +2575,23 @@
       "id": "transport:t002",
       "dayId": "day:004",
       "from": "Barcelona",
-      "to": "Sitges→Girona",
+      "to": "Sitges→Girona 또는 Bàscara",
       "mode": "렌터카",
       "status": "미조사",
       "operator": null,
       "risk": "짐 노출·주차·반납",
-      "fallback": "시체스 축소 또는 직행"
+      "fallback": "Sitges 지연 시 Girona 관광 삭제·Bàscara 직행"
     },
     {
       "id": "transport:t003",
       "dayId": "day:007",
-      "from": "Girona",
+      "from": "Bàscara",
       "to": "Nice",
       "mode": "미정",
       "status": "미조사",
       "operator": null,
       "risk": "차량 반납·공항 이동·수하물",
-      "fallback": "철도/항공 대체 비교"
+      "fallback": "이동수단·차량 반납지 확정 후 실행"
     },
     {
       "id": "transport:t004",
