@@ -23,8 +23,8 @@
 | 2 | 8/30 일 | Barcelona | Sagrada Família 10:30 | 09:30 숙소 출발 권장 | 입장 30분 전 도착 | Sant Pau 전후 가벼운 점심 | 시간지정 입장·주말 혼잡 | Gràcia 저녁 산책 | Sant Pau 실내 또는 카페 중심 | Sagrada·Sant Pau |
 | 3 | 8/31 월 | Barcelona | 시장·Gòtic·도서관·MACBA | 09:00 전후 시작 | 오후 MACBA 전 60분 휴식 | 시장 또는 샌드위치 | 월요일 휴관·도보 누적 | Finestres·운동 | Biblioteca/MACBA 중심 | MACBA·식당 |
 | 4 | 9/1 화 | Bàscara | Sants 렌터카→Sitges→Bàscara | 08:00 체크아웃, 09:00 인수 목표 | 인수 60분·Sitges 출차 30분 | Sitges 점심 | 렌터카 인수지연·짐 노출 | 해변산책·실내 1곳 | Sitges 1곳만 보고 Bàscara 직행 | 렌터카·Sitges·Bàscara 숙소 체크인 조건 재확인 |
-| 5 | 9/2 수 | Bàscara | Collioure 시장·Peralada 17:30 | 08:00 출발 권장 | 국경·주차 30–45분 | Collioure 12:00–13:30 | 국경운전·주차·예약시간 | Peralada 박물관 | Collioure 체류 후 Bàscara 복귀 | Peralada·국경보험 |
-| 6 | 9/3 목 | Bàscara | Pals→Peratallada→Calella | 09:00 전후 출발 | 각 마을 이동 20–30분 | Peratallada 점심 | 주차·보행·해안혼잡 | Camí de Ronda | Calella 체류 축소 또는 생략 | 주차·식당 |
+| 5 | 9/2 수 | Bàscara | Collioure·Cadaqués | 07:45 출발 | 오전 10시 이전 Collioure 주차 | Collioure 09:00–12:15·Cadaqués 14:45–17:30 | 해안 쪽 우회·주차·지도 재확인 | Cadaqués 해안 산책·구시가지 | 17:30 Bàscara 출발 | Portlligat·Dalí House 예약 미확인 |
+| 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu·Pals·Peratallada | 08:20 출발 | Tossa 주차·Vila Vella 접근 재확인 | Tossa 09:45–12:30·Sant Feliu 점심 | GI-682·운전피로 | Pals 압축·Peratallada 유지 | 17:40 Bàscara 출발 | 지연 시 Pals 삭제 |
 | 7 | 9/4 금 | Nice | Bàscara 체크아웃→Nice 이동 | 이동수단 확정 후 역산 | 이동수단별 환승·휴식 완충 재산정 | 이동계획 확정 후 결정 | 이동수단·소요시간 미확정 | Nice 적응산책 | NCE 도착 후 체크인만 | Bàscara 체크아웃 조건·이동수단·Nice 숙소 |
 | 8 | 9/5 토 | Nice | Cours Saleya·Vieux Nice·Castle Hill | 08:30 시장 도착 | Castle Hill 전후 45분 휴식 | 시장 또는 구시가지 | 계단·더위·토요일 혼잡 | Port·해변 | 구시가지 실내·카페 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | 08:30 Nice 출발 권장 | TER 20분 여유 | Forville 인근 점심 | 일요일 열차·해안혼잡 | 쇼핑·해변연장 | Cannes 핵심만 후 조기귀환 | TER |
@@ -85,7 +85,8 @@
 
 ### C. 과밀화 방지가 필요한 복합일
 
-- Day 5 Collioure + Peralada
+- Day 5 Collioure + Cadaqués (해안 쪽 우회, Portlligat·Dalí House 예약 미확인)
+- Day 6 Tossa de Mar + Sant Feliu + Pals + Peratallada (지연 시 Pals 삭제)
 - Day 12 Saint-Paul + Grasse + Aix 체크인
 - Day 20 L’Isle 시장 + Avignon 체크인
 - Day 33 BnF + Philharmonie

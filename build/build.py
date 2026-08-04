@@ -794,11 +794,14 @@ PLACES = {
     "05": [
         ("Girona Cathedral", "Girona Cathedral", "en", "세계에서 가장 넓은 고딕 신랑을 가진 대성당"),
         ("Onyar Houses", "Onyar", "en", "오냐르 강변의 색색 파사드와 붉은 철교"),
-        ("Collioure", "Collioure", "en", "야수파 화가들이 사랑한 프랑스 카탈루냐 항구마을"),
-        ("Peralada", "Peralada", "en", "성과 와이너리의 엠포르다 귀족 마을"),
+        ("Collioure", "Collioure", "en", "수요시장·항구·Notre-Dame-des-Anges·왕궁 외관을 오전에 연결하는 프랑스 카탈루냐 핵심 방문지"),
+        ("Cadaqués", "Cadaqués", "en", "해안 쪽 우회로 연결하는 구시가지·Santa Maria·해안 산책 핵심 방문지"),
+        ("Tossa de Mar", "Tossa de Mar", "en", "Vila Vella·등대 전망대·Platja Gran을 아침에 보는 Day 3 핵심 방문지"),
+        ("Sant Feliu de Guíxols", "Sant Feliu de Guíxols", "en", "GI-682 해안축의 산책·점심 거점"),
+        ("Peralada", "Peralada", "en", "본 일정에서 제외한 대체안 — 실제 예약 없음"),
         ("Pals", "Pals", "en", "엠포르다 평야를 내려다보는 중세 석조마을"),
         ("Peratallada", "Peratallada", "en", "돌을 깎아 만든 해자와 요새의 마을"),
-        ("Calella de Palafrugell", "Calella de Palafrugell", "en", "코스타브라바의 어촌 해변마을"),
+        ("Calella de Palafrugell", "Calella de Palafrugell", "en", "Day 3 핵심 일정에서 제외한 별도 대체안"),
     ],
     "06": [
         ("Cours Saleya", "Cours Saleya", "en", "니스 구시가의 식품·꽃 시장 거리"),
@@ -869,6 +872,9 @@ CARD_PLACE_SLUGS = {
     "Girona Cathedral": "girona-cathedral",
     "Onyar Houses": "onyar",
     "Collioure": "collioure",
+    "Cadaqués": "cadaques",
+    "Tossa de Mar": "tossa-de-mar",
+    "Sant Feliu de Guíxols": "sant-feliu-de-guixols",
     "Peratallada": "peratallada",
     "Calella de Palafrugell": "calella-de-palafrugell",
     "Cours Saleya": "cours-saleya",
@@ -4190,7 +4196,7 @@ def check_phase5_execution_guards():
 
 
 def check_phase6_map_guards():
-    """8개 실행지도·65개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
+    """8개 실행지도·68개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
     problems, total = [], 0
     map_index = (SITE / "maps" / "index.html").read_text(encoding="utf-8")
     for src_name, out_name, title in MAPS:
@@ -4209,8 +4215,8 @@ def check_phase6_map_guards():
         if page_text.count('>길찾기</a>') != count:
             problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 65:
-        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 65)")
+    if total != 68:
+        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 68)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4223,7 +4229,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 · 65개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 · 68개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
 
 
 def check_daily_map_guards():

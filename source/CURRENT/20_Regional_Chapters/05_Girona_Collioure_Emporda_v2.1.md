@@ -15,7 +15,7 @@
 | 여행 적합도 | ★★★★★ Jason·Julia의 생활형 여행에 최적화 |
 | 예산 체감 | 중 |
 | 일정 강도 | 모든 일정을 차량으로 연결하므로 높음 |
-| 예약 핵심 | Bàscara 숙소 확정 · 렌터카·주차 P0 · Peralada P1 |
+| 예약 핵심 | Bàscara 숙소 확정 · 렌터카·주차 P0 · Peralada 실제 예약 없음 |
 | 우천 전환 | Girona 실내와 Collioure 체류 축소 |
 
 ## 놓치면 아쉬운 선택
@@ -24,8 +24,9 @@
 |---|---|---|
 | 필수 | **Girona 성벽과 대성당 권역** | 도착일 저녁과 이른 아침으로 나눠 도시의 높이와 골목을 읽는다. |
 | 우선 추천 | **Collioure** | 시장·항구·야수파 풍경을 한 번에 경험하는 가장 성격이 뚜렷한 당일치기다. |
-| 우선 추천 | **Pals–Peratallada–Calella** | 중세마을 두 곳과 해안마을 한 곳을 과밀하지 않게 연결한다. |
-| 선택 | **Peralada 17:30** | Collioure 일정이 지연되면 가장 먼저 취소하는 시간지정 옵션이다. |
+| 우선 추천 | **Collioure–Cadaqués** | 오전 장날과 해안 쪽 우회를 연결한다. |
+| 우선 추천 | **Tossa–Sant Feliu–Pals–Peratallada** | 해안축과 귀로 마을을 압축해 연결한다. |
+| 대체안 | **Peralada·Calella de Palafrugell** | 본 일정에서 제외하며 실제 예약·취소를 가정하지 않는다. |
 
 ## 하루를 완성하는 네 가지 선택
 
@@ -44,10 +45,10 @@
 4. 유대인 지구
 5. Collioure 시장
 6. 왕궁·항구
-7. Peralada
+7. Cadaqués
 8. Pals
 9. Peratallada
-10. Calella de Palafrugell
+10. Tossa de Mar·Sant Feliu de Guíxols
 
 ## 현장 메모
 
@@ -352,13 +353,13 @@ Day 3의 석조마을들은 반대 방향이다. 팔스·페라타야다·칼레
 
 ---
 
-#### 8. 페랄라다 — 조건부 필수
+#### 8. 페랄라다 — 본 일정에서 제외
 
-기존 원고의 **17:30 Museu de Peralada 투어**와 마을 산책, 취소 기준을 그대로 따른다.
+Peralada는 Cadaqués와 같은 날 함께 넣지 않는다. 실제 예약이 없으므로 본 일정에서 제외하며, 별도 대체안으로만 남긴다.
 
 ✓ **확인했다.** 관람은 **가이드 투어로만** 하고, 구성은 회랑과 교회 · 고유리 컬렉션 · 도서관(장서 8만여 권, 인큐내뷸러 200점, 돈키호테 이본 1,000점 이상) · 와인 박물관이다. **9/1–6/30 회차는 10:00 · 11:00 · 12:00 · 16:30 · 17:30 · 18:30** 이라 원고의 **17:30 투어는 실재하는 회차**다. **월요일과 공휴일 오후는 휴관**이다. 출처: museucastellperalada.com 공식 · 코스타브라바 관광청 {{badge:pending|2026-08 확인 · 출발 전 재확인}}
 
-현재 확실한 것은 **시간지정 예약이라 Day 2 전체의 역산 기준이 된다**는 점이다. 콜리우르 체류를 늘리면 여기가 깨진다.
+운영시간·가격·예약 여부는 출발 전 재확인한다.
 
 ---
 
@@ -517,8 +518,8 @@ Day 3의 세 곳은 **서로 20~30분 거리인데 성격이 전부 다르다.**
 | 숙박 | Bàscara 3박 · 예약 확정 · 2026-09-01~09-04 |
 | 확정 숙소 | Airbnb · 바스카라의 B&B · Plaça de l’Església, 6 |
 | Day 1 | Sitges → Girona 축소 방문 또는 Bàscara 선체크인 |
-| Day 2 | Bàscara → 콜리우르 → 페랄라다 → Bàscara |
-| Day 3 | Bàscara → Pals → Peratallada → Calella de Palafrugell → Bàscara |
+| Day 2 | Bàscara → Collioure → Cadaqués → Bàscara |
+| Day 3 | Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara |
 | Day 4 | Bàscara 체크아웃 → 니스 이동 |
 | 필수 예약 | 페랄라다 17:30 박물관 투어, 필요 시 저녁식당 |
 | 선택 예약 | 지로나 대성당 통합권, 콜리우르 왕궁 |
@@ -531,8 +532,8 @@ Day 3의 세 곳은 **서로 20~30분 거리인데 성격이 전부 다르다.**
 | 날짜 | 요일 | 테마 | 핵심 동선 |
 |---|---|---|---|
 | 9/1 | 화 | 이동·체크인·Girona 축소안 | 시체스 → Girona 또는 Bàscara → Bàscara 숙박 |
-| 9/2 | 수 | 프랑스 카탈루냐 | Bàscara → 콜리우르 → 페랄라다 → Bàscara |
-| 9/3 | 목 | 중세마을과 해안마을 | Bàscara → Pals → Peratallada → Calella de Palafrugell → Bàscara |
+| 9/2 | 수 | Collioure와 Cadaqués | Bàscara → Collioure → Cadaqués → Bàscara |
+| 9/3 | 목 | Tossa·Sant Feliu와 귀로 마을 | Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara |
 | 9/4 | 금 | 니스 이동 | Bàscara 체크아웃 후 렌터카·철도 구조에 따라 별도 확정 |
 
 ## 3. 동선 도식
@@ -572,7 +573,7 @@ Bàscara
 
 # 4. 이 일정이 Jason·Julia에게 맞는 이유
 
-Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으로 따로 왕복해야 하므로 도착일의 대성당·성벽·Onyar 강변을 모두 고정하지 않는다. 대신 북쪽의 Collioure·Peralada 동선에는 유리한 농촌 거점이며, Pals·Peratallada·Calella 방향은 Girona 시내 출발보다 이동 부담이 늘 수 있어 정시 출발과 선택 일정 삭제 기준을 둔다.
+Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으로 따로 왕복해야 하므로 도착일의 대성당·성벽·Onyar 강변을 모두 고정하지 않는다. 대신 Collioure·Cadaqués 해안 우회와 Tossa·Sant Feliu·Pals·Peratallada 축의 출발·귀환 거점으로 사용하며 정시 출발과 선택 일정 삭제 기준을 둔다.
 
 - **Jason:** 중세도시 구조, 야수파 미술, 석조마을, 해안 스케치
 - **Julia:** 마을 산책, 시장, 해안마을과 카페
@@ -605,8 +606,8 @@ Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으�
 
 - 이번 구간은 Girona 시내 3박이 아니라 **Bàscara 농촌 거점 3박**이다.
 - Girona 구시가지까지는 차량 이동이 필요하다.
-- Collioure·Peralada 방향의 북부 동선에는 유리하다.
-- Pals·Peratallada·Calella de Palafrugell 방향은 Girona 시내 출발보다 이동 부담이 늘 수 있다.
+- Collioure·Cadaqués 방향은 오전 장날과 해안 우회를 전제로 한다.
+- Tossa·Sant Feliu·Pals·Peratallada 방향은 해안도로와 귀로 마을을 압축한다.
 - 렌터카는 필수다. 숙소와 각 목적지의 주차조건은 출발 전에 확인한다.
 - Girona 시내에서 저녁식사를 하면 Bàscara까지 다시 운전해야 한다. 음주와 늦은 귀환을 피한다.
 
@@ -696,46 +697,33 @@ Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으�
 ---
 
 # 7. Day 2 — 9월 2일 수요일
-## 콜리우르 시장·왕궁·야수파 산책과 페랄라다
+## Bàscara → Collioure → Cadaqués → Bàscara
 
 ### 오늘의 테마
 
-카탈루냐 문화권이 스페인 국경을 넘어 프랑스 남부까지 이어지는 모습을 본다. 콜리우르에서는 지중해 항구와 야수파 미술을, 귀로의 페랄라다에서는 성곽·수도원 컬렉션을 경험한다.
+수요일 장날의 Collioure를 오전에 보고, 오후에는 해안 쪽으로 우회해 Cadaqués를 연결한다. Cadaqués는 직선 귀로가 아니라 해안 쪽 우회이므로 출발 전 지도와 주차를 재확인한다. Portlligat·Dalí House Museum은 예약 미확인으로 핵심 일정에서 제외한다.
 
 ## 7.1 권장 시간표
 
 | 시간 | 일정 |
 |---|---|
-| 07:00–07:40 | 숙소 아침 |
-| 08:10 | Bàscara 출발 |
-| 09:20 전후 | Collioure Cap Dourats 주차 |
-| 09:20–09:45 | 중심부까지 도보 이동 |
-| 09:45–10:30 | 수요일 아침시장 |
-| 10:30–11:40 | Château Royal |
-| 11:40–12:50 | Chemin du Fauvisme |
-| 13:00–14:15 | 점심 |
-| 14:15–15:00 | 항구·교회 외관·Anchois 쇼핑 |
-| 15:00–15:30 | 셔틀 또는 도보로 주차장 복귀 |
-| 15:30 | 콜리우르 출발 |
-| 16:35 전후 | 페랄라다 도착 |
-| 16:40–17:20 | 구시가지 산책 |
-| 17:30–18:25 | Museu de Peralada 가이드 투어 |
-| 18:35 | 페랄라다 출발 |
-| 19:15 전후 | Bàscara 숙소 복귀 |
-| 저녁 | Bàscara 인근 간단식 또는 이동 중 식사 |
+| 07:45 | Bàscara 출발 |
+| 08:45 전후 | Collioure 도착·주차 |
+| 09:00–12:15 | 수요시장 → 항구 → Notre-Dame-des-Anges → 왕궁 외관 |
+| 12:15–13:00 | 간단한 점심 |
+| 13:00 | Cadaqués로 출발(해안 쪽 우회) |
+| 14:30 전후 | Cadaqués 입구 Saba 주차장 도착 |
+| 14:45–17:30 | 해안 산책로 → 구시가지 → Santa Maria 교회 → 카페 |
+| 17:30 | Bàscara 출발 |
+| 18:30–19:00 | 숙소 복귀·간단한 저녁 |
 
 ## 7.2 콜리우르 주차
 
-### 기본: Parking du Cap Dourats
+### 기본: 공식 외곽 주차장(출발 전 재확인)
 
-- 5–9월 혼잡기 공식 권장주차장
-- 중심까지 도보 약 20분
-- 9월 1–13일 평일 무료셔틀:
-  - 10:00–16:00
-  - 17:30–19:00
-  - 약 30분 간격
-- 시장을 10시 전에 보려면 오전에는 걸어 내려가는 편이 빠름
-- 오후에는 셔틀로 주차장에 복귀
+- 시청 공식 안내는 수요일·일요일 장날과 여름철 중심 주차 혼잡을 경고한다.
+- 오전 10시 이전 도착을 유지하고, 중심 주차장이 차면 Château d’eau·Plas des Fourques 또는 Cap Dourats를 사용한다.
+- 셔틀 운행·요금·현장 통제는 출발 직전 재확인한다.
 
 ### 대체
 
@@ -813,17 +801,14 @@ Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으�
 - 멸치 오일절임·소금절임·anchoïade
 - 숙소 냉장보관 여부 확인
 
-## 7.8 페랄라다 — 조건부 필수
+## 7.8 Peralada — 본 일정에서 제외
 
-콜리우르에서 약 1시간 정도 남쪽으로 내려오며 지로나로 돌아가는 길에 자연스럽게 추가된다.
+Peralada 17:30 투어는 Cadaqués와 같은 날 함께 넣지 않는다. 기존 트래커 항목은 실제 예약이 없으므로 **본 일정에서 제외·실제 예약 없음**으로 기록하며, 취소 사실을 만들지 않는다.
 
-### 17:30 Museu de Peralada 투어
+### 대체안(예약 확인 시 별도일에만 검토)
 
-- 9월–6월 오전 10·11·12시, 오후 15:30·16:30·17:30
-- 월요일 휴관
-- 가이드 투어 약 55분
-- 9월 2일 수요일 17:30 회차가 동선상 가장 적합
-- 정원 투어는 9월 15일까지 오전에만 운영되므로 이번 일정에서는 박물관만 관람
+- 17:30 투어는 이 Day 2 핵심 일정이 아니다.
+- 운영시간·예약·가격은 확인 전 확정하지 않는다.
 
 ### 마을 산책
 
@@ -856,35 +841,32 @@ Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으�
 
 **피로도:** 4
 **총운전:** Bàscara 출발 기준으로 출발 전 지도 재확인
-**필수 예약:** Peralada 17:30
+**필수 확인:** Collioure 주차·Cadaqués Saba 주차·출발 전 지도
 
 ---
 
 # 8. Day 3 — 9월 3일 목요일
-## Pals·Peratallada·Calella de Palafrugell
+## Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara
 
 ### 오늘의 테마
 
-비슷한 중세마을을 여러 곳 반복하는 것이 아니라, **전망형 중세마을–생활형 석조마을–어촌 해안마을**의 세 가지 성격을 비교한다.
+Tossa의 해안·성곽을 먼저 보고 GI-682 해안도로로 Sant Feliu에 이동한 뒤, Pals와 Peratallada를 귀로의 마을로 압축한다. 비·강풍·멀미·운전 피로가 있으면 GI-682를 피하고 Tossa → Sant Feliu → Bàscara로 줄인다.
 
 ## 8.1 권장 시간표
 
 | 시간 | 일정 |
 |---|---|
-| 07:30–08:10 | Jason 선택 러닝 또는 산책 |
-| 08:10–09:00 | 숙소 아침 |
-| 09:00 | Bàscara 출발 |
-| 10:00–11:15 | Pals |
-| 11:15–11:30 | Peratallada 이동 |
-| 11:30–12:45 | Peratallada 산책 |
-| 12:45–14:00 | Peratallada 점심 |
-| 14:00–14:30 | Calella de Palafrugell 이동 |
-| 14:30–16:00 | Port Bo·El Canadell·골목 |
-| 16:00–17:00 | 해안길 짧은 구간 |
-| 17:00–18:00 | 카페·해변 휴식 또는 이른 저녁 |
-| 18:10 | Calella de Palafrugell 출발 |
-| 19:15 전후 | Bàscara 숙소 복귀 |
-| 저녁 | Bàscara 인근 간단식 또는 Calella 이른 저녁 |
+| 08:20 | Bàscara 출발 |
+| 09:35 전후 | Tossa de Mar 도착·주차(접근·주차 출발 직전 재확인) |
+| 09:45–12:30 | Vila Vella → 등대 전망대 → Platja Gran |
+| 12:30–13:10 | GI-682 해안도로로 Sant Feliu 이동 |
+| 13:10–14:30 | Sant Feliu 해안 산책·점심(운전자는 음주하지 않음) |
+| 14:30–15:20 | Pals 이동 |
+| 15:20–16:10 | Pals 전망대·구시가지 압축 산책 |
+| 16:10–16:25 | Peratallada 이동 |
+| 16:25–17:40 | Peratallada 석조 골목·광장 |
+| 17:40 | Bàscara 출발 |
+| 18:20–18:40 | 숙소 복귀 |
 
 ## 8.2 Pals — 우선 추천
 
@@ -953,7 +935,7 @@ Peratallada는 현재 관광객이 방문하는 주요 공간이 외부 골목�
 - 지역 치즈
 - 운전일이므로 와인은 생략 또는 한 잔 이하
 
-## 8.4 Calella de Palafrugell — 필수
+## 8.4 Calella de Palafrugell — 핵심 일정에서 제외된 대체안
 
 ### 볼 것
 
@@ -1503,15 +1485,14 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 
 ### 마을 방문 유지
 
-- Pals 45분
-- Peratallada 1시간+점심
-- Calella는 해안산책 취소하고 카페만
+- Tossa·Sant Feliu·Pals·Peratallada 순서를 유지한다.
+- Calella de Palafrugell은 별도 대체안으로만 남긴다.
 
 ## 교통지연 기준
 
-- Day 2 콜리우르 출발 15:40 이후 → Peralada 박물관 취소
-- Day 3 Pals 출발 11:30 이후 → 해안산책 30분으로 축소
-- Calella 출발 18:30 이후 → Bàscara로 바로 복귀하고 저녁은 간단식으로 변경
+- Day 2 Collioure 체류가 지연되면 Cadaqués 체류를 줄이고 17:30 Bàscara 출발을 우선한다.
+- Day 3 Tossa 출발이 13:00을 넘으면 Pals를 삭제한다.
+- 비·강풍·멀미·운전 피로 시 GI-682를 피하고 Tossa → Sant Feliu → Bàscara로 줄인다.
 
 ---
 
@@ -1573,7 +1554,7 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 - [ ] Girona Cathedral 9/1 특별예배·마지막 입장
 - [ ] Collioure Cap Dourats 셔틀 9/2 운영
 - [ ] Collioure 왕궁 예약·전시
-- [ ] Peralada 17:30 투어 예약
+- [ ] Peralada: 본 일정에서 제외·실제 예약 없음 확인
 - [ ] Pals·Peratallada 주차운영
 - [ ] Calella 주차장과 해안길 상태
 - [ ] Bàscara 체크아웃 후 Nice 이동방식·차량 반납지
@@ -1588,7 +1569,7 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 > Girona 챕터는 일정과 교통정보가 강한 반면, 장소와 식당의 서사적 소개가 상대적으로 짧았다. 아래 섹션은 각 방문지를 현장에서 선택하고 기억할 수 있도록 **정체성·관찰 포인트·체험 방식**을 보강한다.
 
 ### {{VISUAL:VIS-MAP-048|type=map|status=linked|strategy=execution-map}} Bàscara·Girona·Collioure·Baix Empordà 3박 권역 지도
-- 설명: Bàscara 확정 숙소, Girona 방문축, Collioure–Peralada 북부축, Pals–Peratallada–Calella 남동부축을 표시한다.
+- 설명: Bàscara 확정 숙소, Collioure–Cadaqués 해안 우회축, Tossa–Sant Feliu–Pals–Peratallada 핵심축과 Peralada·Calella 대체안을 표시한다.
 
 ### {{VISUAL:VIS-PHOTO-089|type=photo|status=travel-capture|strategy=direct-shot}} Girona 성벽에서 본 대성당과 구시가지
 - 설명: 언덕 위 종교도시와 평지의 현대도시가 한 장에 들어오는 전망.

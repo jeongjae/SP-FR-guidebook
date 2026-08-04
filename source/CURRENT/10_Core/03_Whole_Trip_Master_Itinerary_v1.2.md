@@ -37,8 +37,8 @@ Barcelona 3박 → Bàscara 3박 → **Nice 5박 → Aix 4박**
 | 2 | 8/30 일 | Barcelona | Gaudí와 Catalan Modernisme | Sagrada Família 10:30, Avinguda de Gaudí, Sant Pau | Gràcia 저녁 산책 | 3 | Sagrada·Sant Pau |
 | 3 | 8/31 월 | Barcelona | 책·도시기억·현대미술 | Concepció 시장, Gòtic, Biblioteca de Catalunya, MACBA | Llibreria Finestres·운동 선택 | 3 | 식당·MACBA |
 | 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카, Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | 렌터카·Airbnb 체크인 |
-| 5 | 9/2 수 | Bàscara | Collioure와 Peralada | Bàscara→Collioure 시장·왕궁·Fauvism→Peralada→Bàscara | Peralada 박물관은 지연 시 취소 | 4 | Peralada·국경운전 |
-| 6 | 9/3 목 | Bàscara | Baix Empordà 마을과 해안 | Bàscara→Pals→Peratallada 점심→Calella de Palafrugell→Bàscara | 짧은 Camí de Ronda | 4 | 주차·식당 |
+| 5 | 9/2 수 | Bàscara | Collioure와 Cadaqués | Bàscara→Collioure→Cadaqués→Bàscara (해안 쪽 우회) | Portlligat·Dalí House는 예약 미확인으로 제외 | 4 | 주차·국경운전·지도 재확인 |
+| 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu와 귀로 마을 | Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara | 지연·악천후 시 Pals 삭제, GI-682 회피 | 4 | 주차·해안도로·운전피로 |
 | 7 | 9/4 금 | Nice | Bàscara→Nice 이동 | Bàscara 체크아웃 후 이동수단·차량 반납지에 따라 실행 | 도착 후 일정은 이동 확정 뒤 조정 | 4~5 | 이동수단·차량반납 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
