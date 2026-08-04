@@ -1,7 +1,7 @@
 ---
 title: "Jason과 Julia의 유럽 장기여행 가이드 — 바르셀로나·시체스"
 chapter: 04
-version: "1.6"
+version: "1.5"
 status: "상용 가이드북형 장소·식당 보강본 — 예약 전 최종 확인 필요"
 travel_dates: "2026-08-29 – 2026-09-01"
 travelers: "Jason · Julia"
@@ -1167,7 +1167,7 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 - [ ] 모든 QR 오프라인 저장·종이 1부 출력
 - [ ] 시체스 Cau Ferrat 화요일 개관 확인
 - [ ] Can Robert·Pou Vedre 주차 위치 오프라인 지도 저장
-- [ ] 지로나 숙소의 차량 진입·주차지침 저장
+- [ ] Bàscara 확정 숙소의 차량 진입·주차지침 재확인·저장
 
 ### D-2–D-1
 
@@ -1226,10 +1226,10 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 
 > 이 보강 섹션은 기존 운영시간·가격·예약정보를 반복하지 않고, 현장에서 장소를 **어떻게 보고 무엇을 느낄지**를 설명한다. 변동 가능한 실무정보는 앞의 실행표와 공식자료를 우선한다.
 
-### {{VISUAL:VIS-MAP-047|type=map|status=linked|strategy=execution-map}} 바르셀로나 도시구조와 3박 핵심동선
+### {{VISUAL:VIS-MAP-019|type=map|status=linked|strategy=execution-map}} 바르셀로나 도시구조와 3박 핵심동선
 - 설명: 중세의 Gòtic·Born, 19세기 Eixample, Modernisme 축, 9월 1일 Sitges 이동축을 한 장에 표시한다.
 
-### {{VISUAL:VIS-PHOTO-088|type=photo|status=pre-publication|strategy=licensed-or-direct}} Sagrada Família 내부의 빛과 기둥
+### {{VISUAL:VIS-PHOTO-032|type=photo|status=pre-publication|strategy=licensed-or-direct}} Sagrada Família 내부의 빛과 기둥
 - 설명: 건축 외관보다 내부의 색유리, 숲처럼 갈라지는 기둥, 높이감이 한눈에 보이는 장면.
 
 ### 편집자가 고른 핵심 방문지 5곳

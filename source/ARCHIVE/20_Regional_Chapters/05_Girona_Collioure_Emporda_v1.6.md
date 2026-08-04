@@ -6,8 +6,8 @@
 
 # Commercial Guide Module
 
-> **중세도시의 저녁과 석조마을, 해안마을을 차량으로 잇는 3박**  
-> Girona를 숙박 거점으로 두고 프랑스 카탈루냐와 Baix Empordà의 서로 다른 풍경을 비교하는 장
+> **Bàscara 농촌 거점에서 중세도시·석조마을·해안마을을 차량으로 잇는 3박**
+> Girona 시내가 아닌 Bàscara의 확정 숙소를 차량 거점으로 쓰는 장
 
 ## Editor’s Verdict
 
@@ -219,12 +219,12 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 | 항목 | 확정 내용 |
 |---|---|
 | 여행 성격 | 지로나는 저녁·반나절, 낮에는 주변마을과 콜리우르 |
-| 숙박 | 지로나 3박 |
-| 기본 숙소 생활권 | 기차역–Plaça Catalunya–Gran Via Jaume I 사이 |
-| Day 1 | 지로나 대성당·성벽·Onyar 강변 |
-| Day 2 | 콜리우르 시장·왕궁·야수파 산책 → 페랄라다 |
-| Day 3 | Pals → Peratallada → Calella de Palafrugell |
-| Day 4 | 지로나 출발 → 니스 이동 |
+| 숙박 | Bàscara 3박 · 예약 확정 · 2026-09-01~09-04 |
+| 확정 숙소 | Airbnb · 바스카라의 B&B · Plaça de l’Església, 6 |
+| Day 1 | Sitges → Girona 축소 방문 또는 Bàscara 선체크인 |
+| Day 2 | Bàscara → 콜리우르 → 페랄라다 → Bàscara |
+| Day 3 | Bàscara → Pals → Peratallada → Calella de Palafrugell → Bàscara |
+| Day 4 | Bàscara 체크아웃 → 니스 이동 |
 | 필수 예약 | 페랄라다 17:30 박물관 투어, 필요 시 저녁식당 |
 | 선택 예약 | 지로나 대성당 통합권, 콜리우르 왕궁 |
 | 하루 피로도 | Day 1: 4 / Day 2: 4 / Day 3: 4 / Day 4: 이동방식에 따라 4–5 |
@@ -235,10 +235,10 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 
 | 날짜 | 요일 | 테마 | 핵심 동선 |
 |---|---|---|---|
-| 9/1 | 화 | 지로나 도착과 반나절 핵심 | 시체스 → 지로나 → 대성당 → 성벽 → Onyar 강변 |
-| 9/2 | 수 | 프랑스 카탈루냐 | 지로나 → 콜리우르 → 페랄라다 → 지로나 |
-| 9/3 | 목 | 중세마을과 해안마을 | 지로나 → Pals → Peratallada → Calella de Palafrugell → 지로나 |
-| 9/4 | 금 | 니스 이동 | 렌터카·철도 구조에 따라 별도 확정 |
+| 9/1 | 화 | 이동·체크인·Girona 축소안 | 시체스 → Girona 또는 Bàscara → Bàscara 숙박 |
+| 9/2 | 수 | 프랑스 카탈루냐 | Bàscara → 콜리우르 → 페랄라다 → Bàscara |
+| 9/3 | 목 | 중세마을과 해안마을 | Bàscara → Pals → Peratallada → Calella de Palafrugell → Bàscara |
+| 9/4 | 금 | 니스 이동 | Bàscara 체크아웃 후 이동방식 별도 확정 |
 
 ## 3. 동선 도식
 
@@ -285,115 +285,43 @@ Girona
 
 ---
 
-# 5. 숙소 전략
+# 5. 확정 숙소와 운영 전략
 
-## 5.1 추천 생활권
+## 5.1 Bàscara 확정 숙소
 
-### 1순위 — 기차역과 Plaça Catalunya 사이
+| 항목 | 확정·운영 정보 |
+|---|---|
+| 상태 | **예약 확정** |
+| 채널 | Airbnb |
+| 표시명 | 바스카라의 B&B |
+| 체크인 | 2026-09-01 |
+| 체크아웃 | 2026-09-04 |
+| 숙박 | 3박 |
+| 주소 | [Plaça de l’Església, 6, 17483 Bàscara, Catalonia, Spain](https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a+de+l%27Esgl%C3%A9sia%2C+6%2C+17483+B%C3%A0scara%2C+Spain) |
+| 여행자 | Jason·Julia |
+| 확정번호·가격·결제조건 | 재확인 |
+| 체크인 시간·주차·조식·취소조건 | 재확인 |
 
-추천 범위:
+별도 공식 숙소명은 예약자료에서 검증되지 않았으므로 “Airbnb · 바스카라의 B&B”로 표시한다.
 
-- Plaça Miquel Santaló
-- Carrer de Joan Maragall
-- Carrer Nou
-- Gran Via de Jaume I 남부
-- Plaça Catalunya 서쪽
+## 5.2 거점 운영
 
-**장점**
+- Girona 구시가지까지는 차량 이동이 필요하다.
+- Collioure·Peralada 방향의 북부 동선에는 유리하다.
+- Pals·Peratallada·Calella 방향은 Girona 시내 출발보다 이동 부담이 늘 수 있다.
+- 렌터카는 필수이며 숙소·목적지 주차조건은 출발 전에 확인한다.
+- Girona 저녁식사 뒤 Bàscara까지 운전해야 하므로 음주와 늦은 귀환을 피한다.
 
-- 시체스에서 차량으로 진입하기 편함
-- 지로나 구시가지까지 도보 약 10–20분
-- 출발일 기차역·렌터카 영업소 접근
-- 구시가지 내부보다 주차와 수하물 이동이 단순
-- 슈퍼·빵집·카페 등 생활 편의
+## 5.3 출발 전 재확인
 
-**단점**
-
-- 대성당 바로 앞의 역사적 분위기는 약함
-- 역 주변 일부 도로는 출퇴근 교통이 있음
-
-### 2순위 — Gran Via Jaume I·Mercadal
-
-**장점**
-
-- Onyar 강과 구시가지가 가까움
-- 저녁식사·산책에 편리
-- 호텔 선택이 많음
-
-**단점**
-
-- 주차비와 진입 동선을 반드시 확인
-- 구시가지 행사 시 교통 통제 가능
-
-### 비추천 — Barri Vell 깊숙한 곳
-
-구시가지 자체는 아름답지만 렌터카·짐·계단·진입제한을 고려하면 이번 일정에는 불리하다. 지로나 관광청은 구시가지 차량 진입이 제한되며 분기당 허용 횟수를 넘기면 과태료가 부과될 수 있다고 안내한다. 숙소 주차장에 차를 둔 뒤 도보로 움직이는 것이 원칙이다.
-
-## 5.2 숙소 형태 추천
-
-### 1순위: 주차 가능한 호텔
-
-3박 동안 매일 차량을 사용하므로 주방보다 **전용 또는 확실한 주차, 24시간 프런트, 짐 보관**이 중요하다.
-
-### 2순위: 아파트
-
-다음 조건을 모두 충족할 때만 선택한다.
-
-- 숙소 또는 인근 예약주차
-- 셀프 체크인 절차가 명확
-- 엘리베이터
-- 구시가지 차량진입 없이 접근
-- 세탁기·주방의 실익이 호텔 대비 충분
-
-## 5.3 숙소 후보
-
-### 1순위 후보 — Hotel Carlemany
-
-- Plaça Miquel Santaló
-- 기차·버스역에서 도보 약 5분
-- 같은 건물 아래 Parking Maragall의 전용주차 이용 가능
-- 체크아웃 12시, 무료 짐 보관
-- 구시가지까지 도보 이동 가능
-
-**왜 추천하는가:** 렌터카·기차역·도심관광을 가장 균형 있게 해결한다.
-
-### 2순위 후보 — Gran Ultònia / Hotel Ultònia
-
-- Gran Via Jaume I
-- Mercadal과 Onyar 강변 접근이 좋음
-- 실제 주차 가능 여부와 요금 확인 필요
-
-### 3순위 후보 — Hotel Nord 1901
-
-- 역사·상업 중심에 위치
-- 일반 객실과 아파트 선택 가능
-- 도심 정원과 수영장이 있으나 Julia의 수영 목적보다는 숙소 편의시설로 본다
-- 차량 주차방식과 총비용 확인 필요
-
-### 실속 후보
-
-- Hotel Peninsular
-- Hotel Europa
-- Hotel Bestprice Girona
-
-> 실제 숙소는 3박 총예산을 정한 뒤 주차비까지 포함한 총액으로 비교한다.
-
-## 5.4 숙소 평가표
-
-| 평가항목 | 가중치 |
-|---|---:|
-| 차량 진입·주차 | 25 |
-| 구시가지 도보 접근 | 20 |
-| 체크인·짐 보관 | 15 |
-| 객실·엘리베이터·방음 | 15 |
-| 기차역·렌터카 접근 | 10 |
-| 비용 | 10 |
-| 주방·세탁 | 5 |
+- Airbnb 체크인 가능시간·입실방법
+- 숙소 주차·조식
+- 확정번호·가격·결제·취소조건
 
 ---
 
 # 6. Day 1 — 9월 1일 화요일
-## 시체스에서 지로나 도착, 대성당과 성벽
+## Barcelona → Sitges → Girona 또는 Bàscara
 
 ### 오늘의 목표
 
@@ -403,15 +331,9 @@ Girona
 
 | 시간 | 일정 |
 |---|---|
-| 14:30 전후 | 시체스 출발 |
-| 17:00 전후 | 지로나 도착·숙소 체크인 |
-| 17:40 | 도보로 대성당 이동 |
-| 18:00–18:50 | 지로나 대성당·보물관 |
-| 18:50–19:50 | 성벽 산책 |
-| 19:50–20:20 | 유대인 지구 골목·Rambla de la Llibertat |
-| 20:20–20:40 | Onyar 강변·붉은 철교 |
-| 21:00 | 저녁식사 |
-| 22:30 | 숙소 복귀 |
+| 체크인 창이 이르거나 Sitges 지연 | Bàscara 직행·체크인, Girona 관광 삭제 |
+| 체크인 창에 여유 | Girona 외관·Onyar 강변 60–90분으로 축소 후 Bàscara 체크인 |
+| 체크인 후 시간·체력 여유 | Girona 왕복은 선택이며 음주·늦은 귀환 금지 |
 
 ## 6.1 필수 일정
 
@@ -493,7 +415,7 @@ Girona
 | 시간 | 일정 |
 |---|---|
 | 07:00–07:40 | 숙소 아침 |
-| 08:10 | 지로나 출발 |
+| 08:10 | Bàscara 출발 |
 | 09:20 전후 | Collioure Cap Dourats 주차 |
 | 09:20–09:45 | 중심부까지 도보 이동 |
 | 09:45–10:30 | 수요일 아침시장 |
@@ -506,8 +428,8 @@ Girona
 | 16:35 전후 | 페랄라다 도착 |
 | 16:40–17:20 | 구시가지 산책 |
 | 17:30–18:25 | Museu de Peralada 가이드 투어 |
-| 18:35 | 지로나 출발 |
-| 19:15 전후 | 숙소 복귀 |
+| 18:35 | 페랄라다 출발 |
+| 19:15 전후 | Bàscara 숙소 복귀 |
 | 20:30 | 지로나 저녁 |
 
 ## 7.2 콜리우르 주차
@@ -666,7 +588,7 @@ Girona
 |---|---|
 | 07:30–08:10 | Jason 선택 러닝 또는 산책 |
 | 08:10–09:00 | 숙소 아침 |
-| 09:15 | 지로나 출발 |
+| 09:00 | Bàscara 출발 |
 | 10:00–11:15 | Pals |
 | 11:15–11:30 | Peratallada 이동 |
 | 11:30–12:45 | Peratallada 산책 |
@@ -675,8 +597,8 @@ Girona
 | 14:30–16:00 | Port Bo·El Canadell·골목 |
 | 16:00–17:00 | 해안길 짧은 구간 |
 | 17:00–18:00 | 카페·해변 휴식 또는 이른 저녁 |
-| 18:10 | 지로나 출발 |
-| 19:05 전후 | 숙소 복귀 |
+| 18:10 | Calella de Palafrugell 출발 |
+| 19:15 전후 | Bàscara 숙소 복귀 |
 | 20:30 | 지로나 저녁 |
 
 ## 8.2 Pals — 우선 추천
@@ -843,7 +765,7 @@ Day 1에 이용하지 않았으면 이 날 배치
 ---
 
 # 9. Day 4 — 9월 4일 금요일
-## 지로나에서 니스로 이동
+## Bàscara 체크아웃 후 니스로 이동
 
 이 구간은 렌터카 반납구조가 확정되지 않아 두 가지 모듈로 유지한다.
 
@@ -863,7 +785,7 @@ Day 1에 이용하지 않았으면 이 날 배치
 필수 확인:
 
 - 렌터카 영업소 운영시간
-- Girona→Perpignan 또는 Barcelona 경유 철도
+- Bàscara→Girona 이동 후 Perpignan 또는 Barcelona 경유 철도
 - 수하물과 환승
 - 니스 숙소 체크인 시간
 
@@ -963,7 +885,7 @@ Day 1에 이용하지 않았으면 이 날 배치
 - Pals 전망대
 - Girona Onyar 강변
 
-완전한 2시간 스케치는 지로나 3박 일정에서는 배치하지 않고 짧은 현장스케치로 운영한다.
+완전한 2시간 스케치는 Bàscara 거점 3박 일정에서는 배치하지 않고 짧은 현장스케치로 운영한다.
 
 ---
 
@@ -1165,7 +1087,7 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 # 18. 출발 전 최종 확인
 
 - [ ] 바르셀로나 렌터카의 프랑스 국경 이동 허용
-- [ ] 지로나 숙소 주차장 높이·요금·입출차
+- [ ] Bàscara 확정 숙소 주차·차량 진입 조건 재확인
 - [ ] Girona 구시가지 접근제한·ZBE
 - [ ] Girona Cathedral 9/1 특별예배·마지막 입장
 - [ ] Collioure Cap Dourats 셔틀 9/2 운영
@@ -1173,7 +1095,7 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 - [ ] Peralada 17:30 투어 예약
 - [ ] Pals·Peratallada 주차운영
 - [ ] Calella 주차장과 해안길 상태
-- [ ] Girona→Nice 이동방식
+- [ ] Bàscara 체크아웃 후 Nice 이동방식·차량 반납지
 - [ ] 모든 저녁식당 휴무일
 
 ---
@@ -1184,13 +1106,13 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 
 > Girona 챕터는 일정과 교통정보가 강한 반면, 장소와 식당의 서사적 소개가 상대적으로 짧았다. 아래 섹션은 각 방문지를 현장에서 선택하고 기억할 수 있도록 **정체성·관찰 포인트·체험 방식**을 보강한다.
 
-### {{VISUAL:VIS-MAP-001|type=map|status=linked|strategy=execution-map}} Girona·Collioure·Baix Empordà 3박 권역 지도
-- 설명: Girona 숙소권, Collioure–Peralada 북부축, Pals–Peratallada–Calella 남동부축과 주행시간을 표시한다.
+### {{VISUAL:VIS-MAP-048|type=map|status=linked|strategy=execution-map}} Girona·Collioure·Baix Empordà 3박 권역 지도
+- 설명: Bàscara 확정 숙소, Girona 방문축, Collioure–Peralada 북부축, Pals–Peratallada–Calella 남동부축을 표시한다.
 
-### {{VISUAL:VIS-PHOTO-001|type=photo|status=travel-capture|strategy=direct-shot}} Girona 성벽에서 본 대성당과 구시가지
+### {{VISUAL:VIS-PHOTO-089|type=photo|status=travel-capture|strategy=direct-shot}} Girona 성벽에서 본 대성당과 구시가지
 - 설명: 언덕 위 종교도시와 평지의 현대도시가 한 장에 들어오는 전망.
 
-### {{VISUAL:VIS-PHOTO-002|type=diagram|status=editorial-ready|strategy=generated-diagram}} Collioure 항구와 Notre-Dame-des-Anges
+### {{VISUAL:VIS-PHOTO-090|type=diagram|status=editorial-ready|strategy=generated-diagram}} Collioure 항구와 Notre-Dame-des-Anges
 - 설명: 야수파 화가들이 그린 항구의 색과 현재 풍경을 비교할 수 있는 대표 장면.
 
 ## 편집자가 고른 핵심 장소 7곳
@@ -1352,8 +1274,8 @@ Collioure의 혼잡한 중심에서 무작정 식당을 찾는 대신, 예약과
 
 ## 미결정
 
-- 지로나 실제 숙소
-- 지로나 3박 숙박예산
-- Girona→Nice 이동방식
+- 숙소 확정번호·가격·결제조건
+- 숙소 체크인 시간·주차·조식·취소조건
+- Bàscara 체크아웃 후 Nice 이동방식
 - Peralada 투어 실제 예약
 - 저녁식당 예약

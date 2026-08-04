@@ -65,7 +65,6 @@
 | `cassis` | Cassis 항구 | spot | 필수 | Cassis | chapters/aix/places.html | Cassis 항구 | Cassis |
 | `cours-mirabeau` | Cours Mirabeau | spot | 필수 | Cours Mirabeau | chapters/aix/places.html | Cours Mirabeau | Cours Mirabeau |
 | `grasse` | Grasse | spot | 선택 | — | chapters/aix/places.html | Grasse | Grasse |
-| `lourmarin` | Lourmarin | spot | 우선 추천 | Lourmarin | chapters/aix/places.html | Lourmarin | Lourmarin |
 | `montagne-sainte-victoire-terrain-des-peintres` | Montagne Sainte-Victoire · Terrain des Peintres | spot | 우선 추천 | — | chapters/aix/places.html | Montagne Sainte-Victoire · Terrain des Peintres | Montagne Sainte-Victoire |
 | `musee-granet` | Musée Granet | spot | 우선 추천 | Musée Granet | chapters/aix/places.html | Musée Granet | Musée Granet |
 | `rotonde` | Rotonde | spot | 미정 | Rotonde | — | — | Fontaine de la Rotonde |
@@ -81,7 +80,7 @@
 | `coustellet` | Coustellet 생산자 시장 | spot | 필수 | Coustellet | chapters/luberon/places.html | Coustellet 생산자 시장 | — |
 | `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes | Gordes |
 | `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult | Goult |
-| `lourmarin-2` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
+| `lourmarin` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
 | `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 우선 추천* | L’Isle-sur-la-Sorgue | — | — | L'Isle-sur-la-Sorgue |
 | `menerbes` | Ménerbes | spot | 우선 추천 | Ménerbes | chapters/luberon/places.html | Ménerbes — A안 | Ménerbes |
 | `oppede-le-vieux` | Oppède-le-Vieux | spot | 대체 | — | chapters/luberon/places.html | Oppède-le-Vieux — B안 | Oppède |
@@ -138,7 +137,7 @@
 
 ---
 
-**spot 83 · node 3 · 등급 미정 2(그중 원고 충돌 0)**
+**spot 81 · node 3 · 등급 미정 2(그중 원고 충돌 0)**
 
 `*` 는 등급을 본문 헤딩이 아니라 추천등급 표에서 가져왔다는 표시다.
 
@@ -153,3 +152,7 @@
 - **`15구 생활일` · `월요일 모듈`** — 등급이 붙어 있지만 하루의 성격이지 갈 곳이 아니다. 뺐다.
 - **전시 헤딩 2건** — 전시는 시한이 있고 장소는 남는다. Grand Palais · Musée d’Orsay 로 접었다.
 - **`Rocher des Doms · Pont Saint-Bénézet`** — 헤딩 하나에 장소가 둘이라 갈랐다.
+- **Lourmarin** — aix(경유)·luberon(정본) 두 행이던 것을 luberon 한 행으로
+  합쳤다(2026-08-03). 같은 마을에 페이지가 두 장 생기던 문제. 옛 주소
+  `places/lourmarin-2.html` 은 빌드가 리다이렉트로 남긴다. 핀은 Aix 전환일
+  지도에 있고, Google Maps 링크는 이름 대조로 이어진다.

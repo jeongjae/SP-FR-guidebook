@@ -30,7 +30,9 @@ jobs:
         run: |
           pip install -r requirements-build.txt
           python -m playwright install --with-deps chromium
+          python3 scripts/generate_attributions.py --check
           python3 build/build.py
+          python3 scripts/validate_media.py
           python3 build/hig_check.py
           touch site/.nojekyll
 

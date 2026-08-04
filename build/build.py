@@ -4,7 +4,7 @@
 source/ 의 통합 패키지 v1.37(Phase 10 LatestOnly)을
 site/ 아래의 순수 정적 HTML 사이트로 변환한다.
 
-콘텐츠 기준 (CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v1.9.md):
+콘텐츠 기준 (CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md):
  - 본문: 정식 지역 챕터(20_Regional_Chapters) + Core 문서(10_Core)
  - 지도: ASSETS/75_Execution_Maps 8개 지역
  - 데일리 카드: ASSETS/80_Daily_Mobile_Guide_Images 43장 (Day 12–24는 Phase 4 카드 우선)
@@ -34,6 +34,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons                     # noqa: E402  — 아이콘 마스크 생성기
 import content_model             # noqa: E402  — stable-ID content graph
+import media                     # noqa: E402  — licensed local image catalog
 from xml.etree import ElementTree
 
 try:
@@ -51,6 +52,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "source"
 SITE = ROOT / "site"
 ASSETS = ROOT / "build" / "assets"
+MEDIA_CATALOG = media.load_catalog(ROOT)
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
 SITE_SHORT = "2026 유럽 여행 가이드북"
@@ -112,7 +114,7 @@ MAPS = [
 # Phase 6 정본 라우팅. 데일리 페이지·지도 목록·회귀 가드가 같은 범위를 쓴다.
 MAP_META = {
     "barcelona.html": ("Day 1–4", "Barcelona·Sitges"),
-    "girona.html": ("Day 4–7", "Girona·Empordà"),
+    "girona.html": ("Day 4–7", "Bàscara·Girona·Empordà"),
     "nice.html": ("Day 7–12", "Nice·Côte d’Azur"),
     "aix.html": ("Day 12–16", "Aix-en-Provence"),
     "luberon.html": ("Day 16–20", "Luberon"),
@@ -132,6 +134,7 @@ DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
+SUPERSEDED_DAILY_CARDS = {4, 5, 6}  # Bàscara 예약 확정 전에 제작된 Girona 거점 카드
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
 COMMERCIAL_CARDS = SOURCE / "ASSETS" / "89_Commercial_City_Experience_Cards_v1.0.md"
@@ -458,6 +461,10 @@ VISUALS = {
 
 def hero_figure(slug, rel=".."):
     """지역소개 첫머리의 대표 사진 (CC 저작자·라이선스 표시)."""
+    sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+    if sample_region:
+        return media.figure(media.region_hero(MEDIA_CATALOG, sample_region), rel,
+                            variant="hero", priority=True)
     if slug not in HERO_PHOTOS:
         return ""
     fname, subject, author, lic, lic_url, src_url = HERO_PHOTOS[slug]
@@ -569,13 +576,17 @@ def build_credits():
   <span>수정 가이드북용 크롭·리사이즈 (파생본)</span>
 </figcaption>
 </figure>""")
+    catalog_rows = media.attribution_rows(MEDIA_CATALOG)
     body = f"""<h1>사진 저작자 표시</h1>
-<p class="meta">이 가이드북의 지역 대표사진 {len(HERO_PHOTOS)}장은 Wikimedia Commons 의
-공개 라이선스 사진을 가이드북용으로 크롭·리사이즈한 파생본이다.</p>
+<p class="meta">지역 대표사진 {len(HERO_PHOTOS)}장과 라이선스 카탈로그 이미지
+{len(media.assets(MEDIA_CATALOG))}장의 출처·저작자·라이선스를 기록한다.</p>
 
 {net_note("저작자와 라이선스는 그대로 읽힙니다. 라이선스 전문과 원본 링크만 연결이 필요합니다.")}
 
 <div class="credit-list">{"".join(rows)}</div>
+
+<h2>Barcelona · Girona · Nice 샘플 카탈로그</h2>
+<div class="credit-list">{catalog_rows}</div>
 
 <h2>사용 조건</h2>
 <ul>
@@ -597,8 +608,7 @@ def build_credits():
 <li>실행지도의 배경 타일은 <a class="needs-net" target="_blank" rel="noopener"
   href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 기여자들의 것이며
   ODbL 조건으로 제공된다. 지도 라이브러리는 Leaflet (BSD-2-Clause) 을 로컬 번들로 쓴다.</li>
-<li>주요 방문지 카드의 사진은 온라인일 때 Wikipedia 에서 불러온다. 각 사진의 출처는
-  사진 위 링크에 표시된다.</li>
+<li>주요 방문지 카드는 외부 서버를 hotlink하지 않고 검증·최적화한 로컬 WebP를 쓴다.</li>
 </ul>
 
 <p class="offline-note">원본 표 — <code>source/ASSETS/88_Representative_Public_Photo_Credits_v1.0.md</code>.
@@ -606,7 +616,8 @@ def build_credits():
     (SITE / "credits.html").write_text(
         page("사진 저작자 표시", body, rel=".", back=crumbs_for(("저작자 표시", None))), encoding="utf-8")
     SEARCH_INDEX.append({"t": "사진 저작자 표시", "c": "라이선스", "u": "credits.html"})
-    print(f"  저작자 표시: 대표사진 {len(HERO_PHOTOS)}장 → credits.html")
+    print(f"  저작자 표시: 기존 {len(HERO_PHOTOS)}장 · 카탈로그 "
+          f"{len(media.assets(MEDIA_CATALOG))}장 → credits.html")
 
 
 def visual_figure(key, caption, rel="../assets"):
@@ -847,6 +858,26 @@ PLACES = {
 }
 
 
+# 큐레이션 카드 이름과 안정적인 장소 레지스트리 slug의 명시적 연결.
+# 유사 이름 검색은 다른 장소 사진을 붙일 위험이 있어 사용하지 않는다.
+CARD_PLACE_SLUGS = {
+    "Sagrada Família": "sagrada-familia",
+    "Sant Pau": "sant-pau-recinte-modernista",
+    "Gòtic": "barri-gotic",
+    "Biblioteca de Catalunya": "biblioteca-de-catalunya",
+    "Sitges": "sitges",
+    "Girona Cathedral": "girona-cathedral",
+    "Onyar Houses": "onyar",
+    "Collioure": "collioure",
+    "Peratallada": "peratallada",
+    "Calella de Palafrugell": "calella-de-palafrugell",
+    "Cours Saleya": "cours-saleya",
+    "Castle Hill": "colline-du-chateau",
+    "Cannes": "le-suquet",
+    "Monaco": "monaco",
+}
+
+
 def load_map_links():
     """실행지도 HTML에서 장소별 Google Maps 링크를 추출한다."""
     links = {}
@@ -865,14 +896,13 @@ def places_block(chapter, map_links, rel=".."):
     if not places:
         return ""
     cards = []
-    for name, wiki, lang, desc in places:
+    for name, _wiki, _lang, desc in places:
         gmaps = map_links.get(name) or (
             "https://www.google.com/maps/search/?api=1&query=" + name.replace(" ", "+"))
-        wiki_attr = (f' data-wiki="{html.escape(wiki, quote=True)}" data-wlang="{lang}"'
-                     if wiki else "")
-        cards.append(f"""<div class="pl-card"{wiki_attr}>
-  <div class="pl-photo" hidden><img alt="{html.escape(name)}" loading="lazy"><a class="pl-credit"
-    target="_blank" rel="noopener" href="#">사진: Wikipedia</a></div>
+        asset = media.by_place(MEDIA_CATALOG, CARD_PLACE_SLUGS.get(name, ""))
+        photo = media.figure(asset, rel, variant="card", show_caption=False) if asset else ""
+        cards.append(f"""<div class="pl-card">
+{photo}
   <div class="pl-body">
     <b>{html.escape(name)}</b>
     <p>{html.escape(desc)}</p>
@@ -881,8 +911,8 @@ def places_block(chapter, map_links, rel=".."):
   </div>
 </div>""")
     return ('<section class="places"><h3 class="ic ic-pin">주요 방문지</h3>'
-            '<p class="note">사진은 온라인 상태에서 Wikipedia로부터 불러옵니다.</p>'
-            f'{net_note("Google Maps 링크와 방문지 사진은 연결되면 다시 동작합니다.")}'
+            '<p class="note">파일별 라이선스를 확인한 로컬 대표 이미지만 표시합니다.</p>'
+            f'{net_note("Google Maps 외부 링크는 연결되면 다시 동작합니다.")}'
             f'<div class="pl-grid">{"".join(cards)}</div></section>')
 
 
@@ -2045,9 +2075,20 @@ def build_split_chapter(c, body_md, map_links):
         fig = ""
         if fname == "transport.html" and c["slug"] in ("07", "08", "09"):
             fig = visual_figure("cardays", "Provence 차량일 운영 논리", "../../assets")
+        sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(c["slug"])
+        sample_media = ""
+        if sample_region and fname == "food.html":
+            sample_media = media.gallery(
+                media.region_extras(MEDIA_CATALOG, sample_region, ("food", "market")),
+                rel, "지역 음식과 시장 대표 이미지")
+        elif sample_region and fname == "places.html":
+            unlinked = [a for a in media.region_extras(
+                MEDIA_CATALOG, sample_region, ("place",)) if not a.get("placeSlug")]
+            sample_media = media.gallery(unlinked, rel, "추가 장소 대표 이미지")
         rendered, flat, page_body = render_split_page(
             c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
-            extra=fig + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
+            extra=fig + sample_media
+            + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
             subnav=chapter_siblings(pages, fname, with_days=fname == "schedule.html"))
         (out_dir / fname).write_text(rendered, encoding="utf-8")
         url = f'chapters/{c["name"]}/{fname}'
@@ -2825,7 +2866,12 @@ def build_daily():
             place_block = ""
 
         # ── 7·8. 원문 · 카드 이미지
-        card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
+        if n in SUPERSEDED_DAILY_CARDS:
+            card_block = """<details class="day-details day-card-archive"><summary>모바일 카드 안내</summary>
+<p class="note">이 날짜의 기존 이미지는 Bàscara 숙소 예약 확정 전 제작본이라 노출하지 않습니다.
+현재 페이지의 실행 요약·시간표·지도를 기준으로 이용하세요.</p></details>"""
+        else:
+            card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
 <figure class="daily-card"><img src="img/day-{n:02d}.png"
   alt="Day {n} 데일리 모바일 가이드 카드"></figure>
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
@@ -3071,7 +3117,7 @@ def build_offline_maps():
     region_by_map = {c["map"]: c["region"] for c in CHAPTERS if c["kind"] == "region"}
     order = [out_name for _, out_name, _ in MAPS]
 
-    files, total_pins, candidate_pins, repaired = [], 0, 0, 0
+    files, total_pins, candidate_pins, confirmed_pins, repaired = [], 0, 0, 0, 0
     for out_name in order:
         region = region_by_map[out_name]
         src = MAP_DIR / f"{region}_Execution_Map_v0.2.kml"
@@ -3081,19 +3127,21 @@ def build_offline_maps():
             src.read_text(encoding="utf-8"), src.name)
         pins = len(names)
         cand = sum(1 for n in names if "숙소 후보" in n)
+        conf = sum(1 for n in names if "확정 숙소" in n)
         total_pins += pins
         candidate_pins += cand
+        confirmed_pins += conf
         repaired += fixed_amps
         slug = out_name.replace(".html", "")
         dest = kml_dir / f"{slug}.kml"
         dest.write_text(text, encoding="utf-8")
-        files.append((slug, region, pins, cand, dest.stat().st_size))
+        files.append((slug, region, pins, cand, conf, dest.stat().st_size))
 
     rows = "".join(
         f"<tr><td>{html.escape(region)}</td>"
         f'<td><a href="kml/{slug}.kml" download>{slug}.kml</a></td>'
-        f"<td>{pins}</td><td>{cand or ''}</td><td>{size:,} B</td></tr>"
-        for slug, region, pins, cand, size in files)
+        f"<td>{pins}</td><td>{cand or ''} / {conf or ''}</td><td>{size:,} B</td></tr>"
+        for slug, region, pins, cand, conf, size in files)
 
     body = f"""<h1>오프라인 지도 — Organic Maps</h1>
 <p class="meta">로밍이 끊겨도 도보·운전 안내가 되게 하는 준비다.
@@ -3122,18 +3170,17 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
 
 <h2>지역별 북마크 파일</h2>
 <div class="table-wrap"><table>
-<thead><tr><th>지역</th><th>파일</th><th>핀</th><th>숙소 후보</th><th>크기</th></tr></thead>
+<thead><tr><th>지역</th><th>파일</th><th>핀</th><th>숙소 후보 / 확정</th><th>크기</th></tr></thead>
 <tbody>{rows}</tbody>
 </table></div>
 <p class="meta">전체 {total_pins}개 핀. 이동 순서대로 정렬돼 있다.</p>
 
-<h2 id="후보-주의">숙소 핀은 확정이 아니다</h2>
-<p class="offline-note"><b>{candidate_pins}개 핀이 <code>[숙소 후보]</code> 로 시작한다.
-예약이 확정된 주소가 아니라 검토 중인 후보다.</b>
-이 좌표를 목적지로 잡고 이동하면 안 된다. 확정 주소는
+<h2 id="숙소-상태">숙소 핀 상태</h2>
+<p class="offline-note"><b><code>[확정 숙소]</code> {confirmed_pins}개, <code>[숙소 후보]</code> {candidate_pins}개다.</b>
+확정 숙소는 예약 주소를 지도에서 재확인한 핀이다. 후보 핀은 목적지로 잡고 이동하면 안 된다. 현재 상태는
 <a href="../tracker/accommodation.html">숙소 후보·확정</a> 과
 <a href="../tracker/reservations.html">예약 현황</a> 에서 확인한다.
-예약이 잠기면 KML 을 다시 만들어 이 페이지에 올린다.</p>
+예약이 잠길 때마다 KML 을 다시 만들어 이 페이지에 올린다.</p>
 
 <h2>이 앱의 실행지도와 무엇이 다른가</h2>
 <div class="table-wrap"><table>
@@ -3159,7 +3206,7 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
                          "u": "maps/offline.html"})
     amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
     print(f"  오프라인 지도: KML {len(files)}개 · 핀 {total_pins}개"
-          f"(숙소 후보 {candidate_pins}){amp_note} → maps/offline.html")
+          f"(숙소 후보 {candidate_pins} · 확정 {confirmed_pins}){amp_note} → maps/offline.html")
 
 
 POPUP_SRC = ("marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}"
@@ -3177,8 +3224,17 @@ def link_map_places(text, out_name):
                  if c["kind"] == "region" and c["map"] == out_name), None)
     if slug is None or POPUP_SRC not in text:
         return text
-    table = {r["pin"]: r["slug"] for r in load_place_registry()
-             if r["chapter"] == slug and r["type"] == "spot" and r["pin"]}
+    # 이 챕터의 핀을 먼저, 그 다음 다른 챕터의 핀·이름을 채운다. 장소는 한
+    # 챕터에만 등록되지만 핀은 전환일 지도에 있을 수 있다 — Lourmarin 은
+    # 뤼베롱 소속인데 핀은 Aix 지도다. 팝업 대조는 이 지도에 있는 핀 이름만
+    # 실제로 쓰므로 전역 표가 넓어도 잘못 붙지 않는다.
+    pin_names = set(re.findall(r'"name":\s*"([^"]+)"', text))
+    reg_spots = [r for r in load_place_registry() if r["type"] == "spot"]
+    table = {}
+    for r in sorted(reg_spots, key=lambda r: r["chapter"] != slug):
+        for key in (r["pin"], r["name"]):
+            if key and key in pin_names:
+                table.setdefault(key, r["slug"])
     if not table:
         return text
     repl = ("const PLACE=" + json.dumps(table, ensure_ascii=False) + ";\n "
@@ -3667,6 +3723,10 @@ def check_places():
 # 등급이 붙어 있지만 갈 곳이 아닌 헤딩 — 하루의 성격이다
 REGISTRY_EXCLUDED = {"15구 생활일", "월요일 모듈"}
 
+# 병합된 옛 장소 슬러그 → 정본 슬러그. Lourmarin 이 aix 경유·luberon 정본으로
+# 두 번 등록돼 페이지가 두 장이던 것을 2026-08-03 감사에서 하나로 합쳤다.
+PLACE_REDIRECTS = {"lourmarin-2": "lourmarin"}
+
 
 
 # ---------------------------------------------------------------- 장소 페이지
@@ -3770,16 +3830,10 @@ def build_places(timetable):
             detail = wrap_tables(rewrite_asset_links(html_body, rel))
         ex = "" if detail else place_excerpt(r)
 
-        # 사진 — 위키백과에서 온라인일 때만 불러온다. 오프라인이면 자리가 접힌다.
-        # 제목이 없으면 아예 걸지 않는다. 비슷한 이름으로 찍으면 남의 사진이
-        # 이 장소 것처럼 붙는다 — 현장에서 엉뚱한 곳을 찾게 된다.
-        photo = ""
-        if r.get("wiki"):
-            photo = (f'<figure class="pl-shot" data-wiki="{html.escape(r["wiki"], quote=True)}"'
-                     f' data-wlang="{r["wlang"]}" hidden>'
-                     f'<img alt="{html.escape(r["name"])}" loading="lazy">'
-                     f'<figcaption><a class="pl-credit" target="_blank" rel="noopener"'
-                     f' href="#">사진 · 위키백과</a></figcaption></figure>')
+        # 파일별 라이선스를 확인한 로컬 사진만 쓴다. 카탈로그 연결이 없으면
+        # 임의의 유사 사진으로 대체하지 않고 이미지 영역 자체를 생략한다.
+        photo = media.figure(media.by_place(MEDIA_CATALOG, r["slug"]), rel,
+                             variant="place")
 
         # 참고 링크 — 근거가 있는 것만. 지도 좌표는 실행지도 핀에서, 위키 제목은
         # 레지스트리에서 온다. 둘 다 없으면 그 칩은 나오지 않는다.
@@ -3789,14 +3843,16 @@ def build_places(timetable):
                     + urllib.parse.quote(r["wiki"].replace(" ", "_")))
             refs.append(f'<a class="ref ic ic-link" target="_blank" rel="noopener"'
                         f' href="{html.escape(wurl)}">위키백과</a>')
-        gm = map_links_all.get(r["pin"]) if r["pin"] else None
+        # 핀이 없어도 이름이 다른 지역 지도의 핀과 일치하면 그 좌표를 쓴다.
+        # Lourmarin — 도시어는 뤼베롱 챕터에, 핀은 Aix 전환일 지도에 있다.
+        gm = map_links_all.get(r["pin"]) if r["pin"] else map_links_all.get(r["name"])
         if gm:
             refs.append(f'<a class="ref ic ic-pin" target="_blank" rel="noopener"'
                         f' href="{html.escape(gm)}">Google Maps</a>')
         refs.append(f'<a class="ref ic ic-map" href="{rel}/maps/{c["map"]}">'
                     f'{html.escape(c["region"])} 실행지도</a>')
         ref_block = (f'<h2 class="ic ic-link">참고</h2><div class="refs">{"".join(refs)}</div>'
-                     + net_note("위키백과 링크와 사진은 연결되면 다시 동작합니다."))
+                     + net_note("위키백과와 지도 링크는 연결되면 다시 동작합니다."))
 
         body = (f'<h1>{html.escape(r["name"])}</h1>'
                 + photo
@@ -3817,6 +3873,12 @@ def build_places(timetable):
                  subnav=place_siblings(spots, r["slug"], by_ch)), encoding="utf-8")
         SEARCH_INDEX.append({"t": r["name"], "c": f'장소 · {c["region"]}',
                              "u": f'places/{r["slug"]}.html'})
+
+    # 옛 슬러그 — 같은 장소가 레지스트리에 두 번 있던 시절의 주소를 보존한다.
+    # 하나의 것은 하나의 페이지에만 있는다. 옛 주소는 리다이렉트만 남는다.
+    for old, new in PLACE_REDIRECTS.items():
+        write_redirect(out_dir / f"{old}.html", f"{new}.html",
+                       next((r["name"] for r in spots if r["slug"] == new), new))
 
     # 인덱스 — 지역 순, 등급 표시
     groups = []
@@ -4105,9 +4167,10 @@ def check_phase5_execution_guards():
         if row["date"].replace("**", "") != expected_date:
             problems.append(f'Day {n}: 감사표 날짜 "{row["date"]}" (기대값 {expected_date})')
         chapter = chapter_for_date(d)
-        if chapter and not row["base"].startswith(chapter["region"]):
+        expected_base = "Bàscara" if n in {4, 5, 6} else (chapter["region"] if chapter else "")
+        if chapter and not row["base"].startswith(expected_base):
             problems.append(
-                f'Day {n}: 감사표 거점 "{row["base"]}" (기대값 {chapter["region"]})')
+                f'Day {n}: 감사표 거점 "{row["base"]}" (기대값 {expected_base})')
 
     # 2026-08-03 공식 운영 검증: Matisse·Chagall은 화요일 휴관이다.
     # Day 11에 두 곳을 다시 넣으면 감사표와 실제 데일리 페이지가 동시에 실패한다.
@@ -4218,8 +4281,16 @@ def check_phase7_visual_guards():
         chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
         hub = SITE / chapter_url(chapter)
         page_text = hub.read_text(encoding="utf-8")
-        for token in (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
-                      html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈"):
+        sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+        if sample_region:
+            asset = media.region_hero(MEDIA_CATALOG, sample_region)
+            expected = (asset["localPath"], f'alt="{html.escape(asset["altKo"])}"',
+                        html.escape(asset["author"]), asset["licenseName"],
+                        "Wikimedia Commons", "data-media-id")
+        else:
+            expected = (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
+                        html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈")
+        for token in expected:
             if token not in page_text:
                 problems.append(f"{chapter['region']} 허브 대표사진·크레딧 누락: {token}")
 
@@ -4248,7 +4319,8 @@ def check_phase7_visual_guards():
                 problems.append(f"{relpath}: 편집도식 {key} 누락")
 
     credits = (SITE / "credits.html").read_text(encoding="utf-8")
-    if credits.count('class="credit-item"') != len(HERO_PHOTOS):
+    expected_credits = len(HERO_PHOTOS) + len(media.assets(MEDIA_CATALOG))
+    if credits.count('class="credit-item"') != expected_credits:
         problems.append("사진 저작자 표시 페이지의 대표사진 항목 수 불일치")
     for _slug, (_fname, _subject, author, lic, lic_url, src_url) in HERO_PHOTOS.items():
         for token in (author, lic, lic_url, src_url):
@@ -4299,14 +4371,15 @@ def check_phase8_operations_guards():
         if state not in allowed_reservation_states:
             problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
         if state == "예약완료":
-            required = ("예약번호", "사업자", "소스 URL", "최종확인일")
+            required = (("사업자", "소스 URL", "최종확인일") if row.get("ID") == "R002"
+                        else ("예약번호", "사업자", "소스 URL", "최종확인일"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
 
     expected_stays = {
         "Barcelona": ("2026-08-29", "2026-09-01", 3),
-        "Girona": ("2026-09-01", "2026-09-04", 3),
+        "Bàscara": ("2026-09-01", "2026-09-04", 3),
         "Nice": ("2026-09-04", "2026-09-09", 5),
         "Aix-en-Provence": ("2026-09-09", "2026-09-13", 4),
         "Luberon": ("2026-09-13", "2026-09-17", 4),
@@ -4328,7 +4401,8 @@ def check_phase8_operations_guards():
         if actual != (checkin, checkout, nights):
             problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
         if row.get("상태") == "예약완료":
-            required = ("실제총액", "예약번호", "주소", "소스 URL")
+            required = (("주소", "소스 URL") if base == "Bàscara"
+                        else ("실제총액", "예약번호", "주소", "소스 URL"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{base}: 숙소 예약완료인데 필수값 누락 — {", ".join(absent)}')
@@ -4348,7 +4422,7 @@ def check_phase8_operations_guards():
         if row.get("잠금상태") != "LOCKED" or row.get("현재 확정값") != value:
             problems.append(f"Known-Facts Lock 불일치: {item}")
 
-    # 사용자 예약서가 없는 현재 기준에서는 잠금률 0이 정직한 값이다.
+    # 실제 예약완료 행 수와 대시보드 잠금률이 어긋나지 않게 한다.
     completed = sum(row.get("상태") == "예약완료" for row in reservations)
     dashboard_text = (SITE / "tracker" / "dashboard.html").read_text(encoding="utf-8")
     lock_text = (SITE / "tracker" / "locks.html").read_text(encoding="utf-8")
@@ -4574,6 +4648,7 @@ def main():
         shutil.rmtree(SITE)
     SITE.mkdir()
     (SITE / "assets").mkdir()
+    media.copy_assets(ROOT, SITE, MEDIA_CATALOG)
     # 아이콘은 CSS 마스크로 붙인다. 스프라이트를 페이지마다 인라인하면
     # 314쪽이 각각 무거워진다 — 마스크는 CSS 한 번이고 페이지 무게는 0 이다.
     (SITE / "assets" / "style.css").write_text(
