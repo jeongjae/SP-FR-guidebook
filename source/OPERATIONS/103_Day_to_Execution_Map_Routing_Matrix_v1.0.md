@@ -4,7 +4,7 @@
 |---|---|---|
 | 1–3 | Barcelona | Barcelona 시내 |
 | 4 | Barcelona + Girona | Sants·Sitges·Girona 전환 |
-| 5–6 | Bàscara | Collioure·Empordà |
+| 5–6 | Bàscara | Day 5 Collioure·Cadaqués · Day 6 Tossa de Mar·Sant Feliu·Pals·Peratallada |
 | 7 | Girona + Nice | BCN 반납·NCE 도착 |
 | 8–11 | Nice | Nice·Cannes·Monaco |
 | 12 | Nice + Aix | NCE·Saint-Paul·Grasse·Aix |
