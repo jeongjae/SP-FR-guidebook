@@ -144,7 +144,7 @@
       "number": 5,
       "date": "2026-09-02",
       "regionId": "region:girona",
-      "theme": "Bàscara→Collioure→Peralada→Bàscara",
+      "theme": "Collioure → Cadaqués (해안 쪽 우회)",
       "dayType": "체류",
       "fatigue": 3,
       "status": "예약반영",
@@ -155,7 +155,7 @@
       "number": 6,
       "date": "2026-09-03",
       "regionId": "region:girona",
-      "theme": "Bàscara→Pals→Peratallada→Calella→Bàscara",
+      "theme": "Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada",
       "dayType": "체류",
       "fatigue": 3,
       "status": "예약반영",
@@ -755,10 +755,8 @@
         "Calella de Palafrugell"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:006"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/calella-de-palafrugell.html"
     },
     {
@@ -846,10 +844,8 @@
         "Peralada"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:005"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/peralada.html"
     },
     {
@@ -2443,9 +2439,9 @@
       "regionId": null,
       "scheduledDate": "2026-09-02",
       "dayId": "day:005",
-      "category": "입장권",
-      "name": "Peralada 박물관 투어",
-      "status": "미조사",
+      "category": "Peralada — 본 일정에서 제외·실제 예약 없음",
+      "name": "Peralada — 본 일정에서 제외·실제 예약 없음",
+      "status": "재확인",
       "priority": "P1",
       "targetDate": "2026-08-20",
       "sourceUrl": null
