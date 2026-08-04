@@ -1,3 +1,6 @@
+# Build output — the deployed copy lives on gh-pages, built fresh by CI.
+site/
+
 __pycache__/
 *.pyc
 .firecrawl/
