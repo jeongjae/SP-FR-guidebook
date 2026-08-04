@@ -27,7 +27,7 @@ status: "active"
 | 지역 | 재확인 항목 | 최종 확인시점 |
 |---|---|---|
 | Barcelona | Sagrada 입장, Sant Pau 전시, MACBA 월요일, 렌터카 영업소 | 예약 시·7일 전 |
-| Bàscara·Girona | Bàscara 숙소 주차·체크인/아웃, Peralada 17:30, Collioure 셔틀, Bàscara→Nice 이동 | 14일 전·전날 |
+| Bàscara·Girona | Bàscara 숙소 주차·체크인/아웃, Collioure·Cadaqués 주차, Tossa·Peratallada 주차, GI-682, Bàscara→Nice 이동 | 14일 전·전날 |
 | Nice | Cannes·Monaco TER, 9/8 렌터카, Saint-Paul·Grasse 영업 | 7일 전·당일 |
 | Aix | Cassis 보트·바람, Marseille L50, Cézanne 시설, 행사 | 7일 전·전날 |
 | Luberon | 농가 재고·도로·주방·세탁, 시장일, 행사 | 예약 시·3일 전 |
