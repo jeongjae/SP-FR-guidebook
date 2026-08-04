@@ -1,0 +1,33 @@
+﻿filePath,currentRole,action,canonicalTarget,reason,manualReview,priority
+source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v1.6.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v1.6.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v1.8.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v1.7.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v1.8.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v1.6.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/10_Lyon_v1.7.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v1.7.md,지역 챕터 구판(D5),ARCHIVE,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,v2가 93~95% 상위집합. 빌드 미사용,no,P0
+source/CURRENT/30_Reader_Edition/00_Master_Index_v1.3.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/04_Barcelona_Sitges_Reader_v1.5.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/05_Girona_Collioure_Emporda_Reader_v1.5.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/06_Nice_Cote_d_Azur_Reader_v1.5.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/07_Aix_en_Provence_Reader_v1.6.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/08_Luberon_Farmhouse_Reader_v1.6.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/09_Avignon_Alpilles_Pont_du_Gard_Reader_v1.6.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/10_Lyon_Reader_v1.7.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/30_Reader_Edition/11_Paris_Long_Stay_Reader_v1.8.md,Reader판(D5),ARCHIVE,해당 지역 v2 챕터,"3개는 v1 클론, 5개는 축약본. 빌드 미사용, Phase3 유물",no,P0
+source/CURRENT/10_Core/42_TP_Europe_Travel_Guidebook_Master_v1.4.md,통합 편집본(D5),ARCHIVE,CURRENT/10_Core 01·02·03 + 지역 v2 챕터,"전 챕터의 최고(最古) 사본 8,888줄. 빌드 미사용",no,P0
+source/CURRENT/00_Governance/37_Source_of_Truth_and_Supersession_Matrix_v1.1.md,거버넌스 색인(사어),ARCHIVE,00_Current_Source_of_Truth_Index,지시 파일 16개 전부 부재. PUBLICATION/ARCHIVE 참조도 부재,no,P0
+source/CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v1.9.md,정본 색인(구판 기준),UPDATE,(자체 개정 v2.0),v2 챕터를 정본으로 선언하도록 개정. 부재 파일 참조 제거,no,P0
+source/README_START_HERE.md,입문 안내,UPDATE,-,42_Master를 읽기 2단계로 안내 중 — 정본 구성으로 갱신,no,P1
+source/ASSETS/91_Place_Registry_v1.0.md,장소 레지스트리 정본,UPDATE,-,"Lourmarin 2행을 1행으로 병합(D7), 꼬리말 spot 집계 실측 일치화",no,P0
+build/build.py,생성기,UPDATE,-,"places/lourmarin-2.html에서 lourmarin.html로 리다이렉트, PLACES[08]에 Lourmarin 추가",no,P1
+source/CURRENT/20_Regional_Chapters/*_v2*.md,지역 정본 8,KEEP,-,빌드 원천,no,P1
+source/CURRENT/10_Core/01·02·03,코어 정본 3,KEEP,-,빌드 원천,no,P1
+source/CURRENT/00_Governance/88·89·90,편집 표준,KEEP,-,가드 대상 포함,no,P1
+source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,도시 카드(D4),KEEP,-,phase9 가드 로드베어링 — 통합은 가드 개편과 함께 별도 결정,no,P1
+source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,도시어 편람(D4),KEEP,-,동상,no,P1
+source/ASSETS/70·71·75·80·85·86·87·88 등록부·에셋,에셋·권리 대장,KEEP,-,"기록 가치, 충돌 없음",no,P1
+source/OPERATIONS/*,운영 등록부,KEEP,-,"4개는 빌드 원천, 나머지는 의사결정 기록",no,P1
+handoff/,2026-08-01 인계 번들(사어),KEEP,-,"이미 격리됨 — 이동 불요, 기록만",no,P1
+v2 챕터 내부 신구 섹션 병존(경비 등),챕터 내부 D2,MANUAL_REVIEW,-,헤딩이 가드 5곳에 로드베어링. 자동 편집 금지,yes,P2
