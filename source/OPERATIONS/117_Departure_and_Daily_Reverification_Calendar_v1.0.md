@@ -19,7 +19,7 @@
 | 8/30 | Sagrada 입장상태·예배·보안, Sant Pau 운영 |
 | 8/31 | MACBA 월요일 운영; MACBA Library는 8월 휴관 |
 | 9/1 | Sitges 박물관 여름 폐관시간·렌터카 인수 |
-| 9/2 | Collioure 주차·시장·Peralada 17:30 |
+| 9/2 | Collioure 주차·시장·Cadaqués Saba·해안 우회 지도 |
 | 9/4 | Bàscara 체크아웃→Nice 이동·차량 반납 |
 | 9/9 | NCE 렌터카·Saint-Paul 주차·Aix 체크인 |
 | 9/11 | Calanques red-day·강풍·보트운항 |

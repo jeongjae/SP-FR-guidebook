@@ -15,7 +15,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역 숙소 예약 잠금을 반영�
 - 9/21 Avignon TGV 반납·Lyon 이동 구조
 - 10/10 Paris 19:10 출국 계획
 - Sagrada Família 8/30 10:30 계획
-- Peralada 9/2 17:30 계획
+- Peralada: 본 일정에서 제외·실제 예약 없음
 
 ## Girona 권역 숙소 예약 확정
 
@@ -27,6 +27,12 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역 숙소 예약 잠금을 반영�
 - 여행자: Jason·Julia
 - 확정번호·가격·결제조건·체크인 시간·주차·조식·취소조건: 재확인
 - 운영 변경: Girona 시내 숙박이 아닌 Bàscara 농촌 거점으로 Day 4–7 출발·귀환 기준 변경
+
+## Day 2·3 운영 재확인
+
+- Day 2: Bàscara → Collioure → Cadaqués → Bàscara. Cadaqués는 직선 귀로가 아닌 해안 쪽 우회이며, Collioure·Cadaqués 주차와 당일 지도는 출발 전 재확인한다.
+- Day 3: Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara. Tossa Vila Vella 접근·주차, GI-682 해안도로, Peratallada 주차를 재확인한다.
+- 비·강풍·멀미·운전 피로 시 Day 3은 Tossa → Sant Feliu → Bàscara로 축소하고, 운전자는 점심에 음주하지 않는다.
 
 ## 실제 예약 잠금에 필요한 입력
 
