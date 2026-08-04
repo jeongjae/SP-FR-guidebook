@@ -67,6 +67,55 @@ python3 build/build.py
 
 빌드는 내부 링크 무결성 검사를 포함하며, `site/`를 전부 새로 생성한다.
 
+## 날짜별 인터랙티브 실행지도
+
+Day 1–3(2026-08-29~31)은 기존 Barcelona 실행지도와 일정 원고를 결합한
+인터랙티브 지도 프로토타입을 제공한다. 새 프레임워크나 런타임 의존성 없이,
+이미 로컬 번들된 Leaflet과 OpenStreetMap 타일을 사용한다. 지도 아래에는
+터치 가능한 장소 목록과 Google Maps 보기·길찾기 링크가 있고, 기존 세로형
+카드 이미지는 접을 수 있는 fallback으로 그대로 남는다.
+
+### 구조
+
+| 경로 | 역할 |
+|---|---|
+| `source/ASSETS/76_Daily_Execution_Maps/daily-maps.json` | 날짜별 `DailyMapData` 정본 |
+| `build/assets/daily-map.js` | 지도·핀·팝업·목록·Google Maps 링크 공통 UI |
+| `build/assets/style.css` | 모바일 우선 지도·목록·터치 상태 스타일 |
+| `build/build.py` | 데이터 검증, 정적 페이지 삽입, 브라우저용 데이터 생성 |
+
+`DailyMapData`는 `date`, `city`, `title`, `center`, `zoom`, `places[]`,
+`routes[]`를 가진다. `Place`는 `id`, `type`, `name`, `lat`, `lng`, `order`,
+`plannedTime`, `description`, `googleMapsUrl`, `optional`, `private`,
+`approximate`를 가진다. 지원 유형은 `accommodation`, `attraction`,
+`restaurant`, `cafe`, `market`, `parking`, `station`, `airport`다.
+
+### 날짜와 장소 추가
+
+1. 일정 원고와 기존 검증 자산에 실제로 있는 장소만 선택한다.
+2. `daily-maps.json`의 `days`에 날짜 객체를 하나 추가한다.
+3. 장소 `id`는 날짜 안에서 고유하게, `order`는 당일 실행 순서로 둔다.
+4. `routes`의 `from`과 `to`에는 같은 날짜의 장소 `id`만 사용한다.
+5. `python build/build.py`와 `python build/hig_check.py`를 실행한다. 빌드는
+   날짜·필수 필드·좌표 범위·장소 유형·경로 참조·개인정보 규칙을 검사한다.
+
+### Google Maps URL 규칙
+
+- 장소 보기: `https://www.google.com/maps/search/?api=1&query=<장소명>`
+- 길찾기: 공통 UI가 `https://www.google.com/maps/dir/?api=1`에 좌표,
+  `travelmode`, 필요하면 `origin`과 `waypoints`를 붙여 생성한다.
+- 웹사이트의 점선은 방문 순서 개요일 뿐 실제 경로가 아니다. 실제 경로와
+  교통상황은 Google Maps에서 다시 계산한다.
+
+### 개인정보 처리
+
+- 호텔·공공 숙박업소 후보는 `optional=true`, 필요하면
+  `approximate=true`로 표시하고 예약 확정 전임을 설명한다.
+- Airbnb·B&B·개인 숙소는 공개 저장소에 이름이나 정확한 주소를 넣지 않는다.
+  `private=true`, `approximate=true`를 함께 사용하고 `googleMapsUrl`은 빈
+  문자열로 둔다. 빌드가 이 규칙을 위반한 데이터를 거부한다.
+- 실제 예약 확정 후에도 개인 숙소의 정확한 좌표는 공개 데이터에 커밋하지 않는다.
+
 ## 콘텐츠 기준
 
 - 리더 에디션은 통합 패키지 v1.24의 `40_Master_Guidebook`(Nice 5박·Aix 4박 반영 최신본) 기준.

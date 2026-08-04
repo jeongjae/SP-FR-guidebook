@@ -133,6 +133,7 @@ MAP_DAY_SPANS = {
 DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
+DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
 SUPERSEDED_DAILY_CARDS = {4, 5, 6}  # Bàscara 예약 확정 전에 제작된 Girona 거점 카드
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
@@ -1736,7 +1737,7 @@ def country_of(*names):
 
 
 def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
-         coords="", back=None, country=""):
+         coords="", back=None, country="", extra_head="", extra_scripts=""):
     """back=(라벨, URL). HIG 네비게이션 바의 뒤로가기다.
 
     상단바는 둘로 고정한다 — 앞: 위치 경로(홈까지 올라간다), 뒤: 검색.
@@ -1745,6 +1746,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
     meta_html = f'<p class="meta">{meta_line}</p>' if meta_line else ""
     country_attr = f' data-country="{country}"' if country else ""
     tb_title = html.escape(topbar_title or title)
+    head_extra = f"{extra_head}\n" if extra_head else ""
+    script_extra = f"\n{extra_scripts}" if extra_scripts else ""
     if back:
         crumbs = back if isinstance(back, list) else [("홈", "index.html"), back]
         parts = []
@@ -1763,7 +1766,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{html.escape(title)} — {SITE_TITLE}</title>
-<link rel="stylesheet" href="{rel}/assets/style.css">
+{head_extra}<link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
 <body data-rel="{rel}"{country_attr}>
 <header class="topbar">
@@ -1791,7 +1794,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 </nav>
 <button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
 <script src="{rel}/assets/data.js" defer></script>
-<script src="{rel}/assets/nav.js" defer></script>
+<script src="{rel}/assets/nav.js" defer></script>{script_extra}
 </body>
 </html>
 """
@@ -2677,6 +2680,71 @@ def split_day_md(md):
     return "\n".join(table), "\n".join(rest).strip()
 
 
+DAILY_MAP_TYPES = {"accommodation", "attraction", "restaurant", "cafe",
+                   "market", "parking", "station", "airport"}
+
+
+def load_daily_maps():
+    """날짜별 지도 JSON을 읽고 공개 저장소·UI 계약을 검증한다."""
+    try:
+        payload = json.loads(DAILY_MAPS_JSON.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        sys.exit(f"데일리 실행지도 데이터를 읽을 수 없음: {exc}")
+
+    problems, dates = [], set()
+    if payload.get("schemaVersion") != "1.0" or not isinstance(payload.get("days"), list):
+        problems.append("schemaVersion 1.0과 days 배열이 필요함")
+    for day in payload.get("days", []):
+        key = day.get("date")
+        try:
+            parsed = date.fromisoformat(key)
+        except (TypeError, ValueError):
+            problems.append(f"날짜 형식 오류: {key!r}")
+            continue
+        if not TRIP_START <= parsed <= TRIP_END or key in dates:
+            problems.append(f"여행 범위 밖이거나 중복된 날짜: {key}")
+        dates.add(key)
+        for field in ("city", "title", "center", "zoom", "places", "routes"):
+            if field not in day:
+                problems.append(f"{key}: {field} 누락")
+        center = day.get("center", [])
+        if len(center) != 2 or not all(isinstance(v, (int, float)) for v in center):
+            problems.append(f"{key}: center는 [lat, lng] 숫자 배열이어야 함")
+        ids = set()
+        for place in day.get("places", []):
+            missing = [field for field in ("id", "type", "name", "lat", "lng", "order",
+                                            "plannedTime", "description", "googleMapsUrl",
+                                            "optional", "private", "approximate")
+                       if field not in place]
+            if missing:
+                problems.append(f"{key}: 장소 필드 누락 — {', '.join(missing)}")
+                continue
+            pid = place["id"]
+            if pid in ids:
+                problems.append(f"{key}: 장소 id 중복 — {pid}")
+            ids.add(pid)
+            if place["type"] not in DAILY_MAP_TYPES:
+                problems.append(f"{key}: 알 수 없는 장소 유형 — {place['type']}")
+            lat, lng = place["lat"], place["lng"]
+            if not isinstance(lat, (int, float)) or not isinstance(lng, (int, float)) \
+                    or not (-90 <= lat <= 90 and -180 <= lng <= 180):
+                problems.append(f"{key}: 좌표 오류 — {pid}")
+            if place["private"] and (not place["approximate"] or place["googleMapsUrl"]):
+                problems.append(f"{key}: private 장소는 approximate=true이고 Google Maps URL이 없어야 함 — {pid}")
+        for route in day.get("routes", []):
+            if route.get("from") not in ids or route.get("to") not in ids:
+                problems.append(f"{key}: route가 없는 장소를 참조함 — {route}")
+            if route.get("mode") not in {"walking", "driving", "transit", "bicycling"}:
+                problems.append(f"{key}: route mode 오류 — {route.get('mode')}")
+
+    if problems:
+        print("데일리 실행지도 데이터 검사 실패:")
+        for problem in problems:
+            print("  " + problem)
+        sys.exit(1)
+    return payload, {day["date"]: day for day in payload["days"]}
+
+
 def build_daily():
     out_dir = SITE / "daily"
     img_dir = out_dir / "img"
@@ -2693,6 +2761,7 @@ def build_daily():
     CHAPTER_DATE_URL.update(DAY_OVERRIDES)
 
     audit = load_audit()
+    _daily_map_payload, daily_maps = load_daily_maps()
     fatigue, timetable, conflicts = load_day_details()
     TIMETABLE.update(timetable)
     for x in conflicts:
@@ -2808,6 +2877,24 @@ def build_daily():
 <p class="note">카드의 지도영역은 일정 순서를 보여주는 개요이며 내비게이션이 아닙니다.
 실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p></details>"""
 
+        daily_map = daily_maps.get(key)
+        if daily_map:
+            map_stack = f"""<section class="daily-map-section" aria-labelledby="daily-map-title-{n}">
+<h2 id="daily-map-title-{n}" class="ic ic-map">인터랙티브 실행지도</h2>
+<p class="note">{html.escape(daily_map['title'])}</p>
+<div class="daily-execution-map" data-daily-map-date="{key}">
+  <p class="offline-note">인터랙티브 지도를 준비하고 있습니다.</p>
+</div>
+</section>
+{card_block}"""
+            daily_map_head = '<link rel="stylesheet" href="../maps/vendor/leaflet/leaflet.css">'
+            daily_map_scripts = """<script src="../maps/vendor/leaflet/leaflet.js" defer></script>
+<script src="../assets/daily-map-data.js" defer></script>
+<script src="../assets/daily-map.js" defer></script>"""
+        else:
+            map_stack = card_block
+            daily_map_head = daily_map_scripts = ""
+
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
@@ -2823,7 +2910,7 @@ def build_daily():
 {note_block}
 {audit_block}
 <div class="related day-more">{''.join(more_links)}</div>
-{card_block}
+{map_stack}
 {pager}"""
         region_cell = ((c["region"], CHAPTER_DATE_URL.get(key, ITINERARY_URL))
                        if c else ("이동 중", ITINERARY_URL))
@@ -2846,7 +2933,8 @@ def build_daily():
                  coords=coords_bar("..",
                                    day=(f"Day {n} · {date_label(d)} {wd}", None),
                                    region=region_cell,
-                                   topic=("전체 주제", "topics/index.html"))),
+                                   topic=("전체 주제", "topics/index.html")),
+                 extra_head=daily_map_head, extra_scripts=daily_map_scripts),
             encoding="utf-8")
 
         index_items.append((c["region"] if c else "이동",
@@ -4140,6 +4228,42 @@ def check_phase6_map_guards():
     print("Phase 6 실행지도 가드: 8지역 · 65개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
 
 
+def check_daily_map_guards():
+    """프로토타입 3일의 데이터·공통 UI·정적 fallback 계약을 잠근다."""
+    payload, by_date = load_daily_maps()
+    problems = []
+    expected = {"2026-08-29", "2026-08-30", "2026-08-31"}
+    missing = sorted(expected - set(by_date))
+    if missing:
+        problems.append("샘플 날짜 누락: " + ", ".join(missing))
+    if not (SITE / "assets" / "daily-map.js").exists() or \
+            not (SITE / "assets" / "daily-map-data.js").exists():
+        problems.append("공통 지도 스크립트 또는 빌드 데이터 누락")
+    for key in sorted(expected & set(by_date)):
+        n = (date.fromisoformat(key) - TRIP_START).days + 1
+        text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
+        required = (f'data-daily-map-date="{key}"',
+                    '../maps/vendor/leaflet/leaflet.css',
+                    '../maps/vendor/leaflet/leaflet.js',
+                    '../assets/daily-map-data.js', '../assets/daily-map.js',
+                    '<details class="day-details day-card-archive">')
+        for token in required:
+            if token not in text:
+                problems.append(f"{key}: 배포 HTML 누락 — {token}")
+        map_at = text.find('class="daily-map-section"')
+        fallback_at = text.find('<details class="day-details day-card-archive">')
+        if map_at < 0 or fallback_at < map_at:
+            problems.append(f"{key}: 인터랙티브 지도 → 정적 fallback 순서 훼손")
+    if payload.get("schemaVersion") != "1.0":
+        problems.append("데일리 지도 스키마 버전 불일치")
+    if problems:
+        print("날짜별 인터랙티브 지도 가드 실패:")
+        for problem in problems:
+            print("  " + problem)
+        sys.exit(1)
+    print(f"날짜별 인터랙티브 지도 가드: 샘플 {len(expected)}일 · 공통 UI · Google Maps · 정적 fallback 이상 없음")
+
+
 def check_phase7_visual_guards():
     """대표사진·편집도식·권리표시를 배포 계약으로 고정한다."""
     problems = []
@@ -4531,6 +4655,12 @@ def main():
         (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
         encoding="utf-8")
     shutil.copy(ASSETS / "nav.js", SITE / "assets" / "nav.js")
+    daily_map_payload, _daily_maps = load_daily_maps()
+    (SITE / "assets" / "daily-map-data.js").write_text(
+        "window.DAILY_MAP_DATA = " +
+        json.dumps(daily_map_payload, ensure_ascii=False, separators=(",", ":")) + ";\n",
+        encoding="utf-8")
+    shutil.copy(ASSETS / "daily-map.js", SITE / "assets" / "daily-map.js")
     # 나눔고딕 woff2 — CDN 을 쓰지 않고 번들한다 (OFL 1.1)
     shutil.copytree(ASSETS / "vendor" / "nanum", SITE / "assets" / "vendor" / "nanum",
                     dirs_exist_ok=True)
@@ -4582,6 +4712,7 @@ def main():
     check_phase4_daily_guards()
     check_phase5_execution_guards()
     check_phase6_map_guards()
+    check_daily_map_guards()
     check_phase7_visual_guards()
     check_phase8_operations_guards()
     check_phase9_commercial_depth_guards()
