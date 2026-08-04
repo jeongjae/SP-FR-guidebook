@@ -3050,8 +3050,6 @@ def build_home():
             ("license", "credits.html", "사진 저작자 표시", "CC 라이선스와 출처")))
 
     body = f"""<section class="hero">
-  <h1>{SITE_TITLE}</h1>
-  <p class="period">{TRIP_PERIOD}</p>
   <div class="today-bar">
     <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
     <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
