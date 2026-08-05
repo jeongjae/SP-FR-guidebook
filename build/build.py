@@ -23,6 +23,7 @@ import html
 import hashlib
 import itertools
 import json
+import os
 import re
 import shutil
 import sys
@@ -62,6 +63,9 @@ SOURCE = ROOT / "source"
 SITE = ROOT / "site"
 ASSETS = ROOT / "build" / "assets"
 PWA_ASSETS = SOURCE / "ASSETS" / "pwa"
+MAP_DATA_DIR = SOURCE / "ASSETS" / "maps"
+sys.path.insert(0, str(ROOT / "scripts"))
+from validate_map_data import validate as validate_map_data  # noqa: E402
 MEDIA_CATALOG = media.load_catalog(ROOT)
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
@@ -144,6 +148,8 @@ DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
+GOOGLE_MAP_PILOT_DATES = {"2026-08-30", "2026-09-03"}
+GOOGLE_MAP_PILOT_REGIONS = {"barcelona.html": "barcelona", "girona.html": "girona"}
 SUPERSEDED_DAILY_CARDS = {4, 5, 6}  # Bàscara 예약 확정 전에 제작된 Girona 거점 카드
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
@@ -2768,6 +2774,168 @@ def split_day_md(md):
 DAILY_MAP_TYPES = {"accommodation", "attraction", "restaurant", "cafe",
                    "market", "parking", "station", "airport"}
 
+GOOGLE_MAP_TYPE_LABELS = {
+    "accommodation": "숙소", "attraction": "방문지", "market": "시장",
+    "parking": "주차", "station": "역", "airport": "공항",
+}
+GOOGLE_MAP_MODE_LABELS = {
+    "walking": "도보", "driving": "자동차", "transit": "대중교통", "bicycling": "자전거",
+}
+
+
+def load_google_map_data():
+    """정규화된 지도 데이터 세 파일을 읽어 ID 인덱스와 함께 돌려준다."""
+    registry = json.loads((MAP_DATA_DIR / "place-registry.json").read_text(encoding="utf-8"))
+    routes = json.loads((MAP_DATA_DIR / "daily-routes.json").read_text(encoding="utf-8"))
+    groups = json.loads((MAP_DATA_DIR / "region-groups.json").read_text(encoding="utf-8"))
+    places = {place["id"]: place for place in registry["places"]}
+    return places, {day["date"]: day for day in routes["days"]}, \
+        {region["id"]: region for region in groups["regions"]}
+
+
+def google_maps_place_url(place):
+    if not place or place.get("private"):
+        return ""
+    if place.get("googleMapsUrl"):
+        return place["googleMapsUrl"]
+    params = {"api": "1", "query": place.get("name") or f'{place["lat"]},{place["lng"]}'}
+    if place.get("googlePlaceId"):
+        params["query_place_id"] = place["googlePlaceId"]
+    return "https://www.google.com/maps/search/?" + urllib.parse.urlencode(params)
+
+
+def google_maps_directions_url(origin, destination, mode="walking"):
+    if not destination or destination.get("private"):
+        return ""
+    params = {"api": "1", "destination": destination["name"], "travelmode": mode}
+    if destination.get("googlePlaceId"):
+        params["destination_place_id"] = destination["googlePlaceId"]
+    if origin and not origin.get("private"):
+        params["origin"] = origin["name"]
+        if origin.get("googlePlaceId"):
+            params["origin_place_id"] = origin["googlePlaceId"]
+    return "https://www.google.com/maps/dir/?" + urllib.parse.urlencode(params)
+
+
+def google_maps_multistop_url(day, place_by_id):
+    selected, seen = [], set()
+    for stop in sorted(day["stops"], key=lambda item: item["order"]):
+        place = place_by_id[stop["placeId"]]
+        if place["id"] in seen or place["private"] or place["optional"]:
+            continue
+        if day["defaultMode"] == "driving" and place["type"] != "parking":
+            continue
+        selected.append(place)
+        seen.add(place["id"])
+    if not selected:
+        return ""
+    if len(selected) == 1:
+        return google_maps_directions_url(None, selected[0], day["defaultMode"])
+    params = {"api": "1", "origin": selected[0]["name"],
+              "destination": selected[-1]["name"], "travelmode": day["defaultMode"]}
+    if len(selected) > 2:
+        params["waypoints"] = "|".join(place["name"] for place in selected[1:-1])
+    return "https://www.google.com/maps/dir/?" + urllib.parse.urlencode(params)
+
+
+def google_map_assets(rel):
+    key = os.environ.get("GOOGLE_MAPS_API_KEY", "").strip()
+    map_id = os.environ.get("GOOGLE_MAPS_MAP_ID", "").strip()
+    metas = []
+    if key:
+        metas.append(f'<meta name="google-maps-api-key" content="{html.escape(key, quote=True)}">')
+    if map_id:
+        metas.append(f'<meta name="google-maps-map-id" content="{html.escape(map_id, quote=True)}">')
+    head = "\n".join(metas + [f'<link rel="stylesheet" href="{rel}/assets/google-map.css">'])
+    scripts = (f'<script src="{rel}/assets/google-map-loader.js" defer></script>\n'
+               f'<script src="{rel}/assets/google-map.js" defer></script>')
+    return head, scripts
+
+
+def google_map_component(*, scope, places, center, zoom, day=None):
+    """JS가 없어도 링크·목록이 온전히 남는 서버 렌더 지도 컴포넌트."""
+    place_by_id = {place["id"]: place for place in places}
+    stop_by_id = {}
+    if day:
+        for stop in sorted(day["stops"], key=lambda item: item["order"]):
+            stop_by_id.setdefault(stop["placeId"], stop)
+
+    types = []
+    for place in places:
+        if place["type"] not in types:
+            types.append(place["type"])
+    filters = ['<button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button>']
+    filters += [f'<button class="gm-filter" type="button" data-type="{kind}" aria-pressed="false">'
+                f'{GOOGLE_MAP_TYPE_LABELS.get(kind, kind)}</button>' for kind in types]
+
+    rows = []
+    for index, place in enumerate(places, 1):
+        stop = stop_by_id.get(place["id"], {})
+        order = stop.get("order", index)
+        when = stop.get("plannedTime", "")
+        note = stop.get("note", "")
+        details = " · ".join(x for x in (GOOGLE_MAP_TYPE_LABELS.get(place["type"], place["type"]), when) if x)
+        actions = []
+        place_url = google_maps_place_url(place)
+        if place_url:
+            actions.append(f'<a target="_blank" rel="noopener" href="{html.escape(place_url, quote=True)}">지도 열기</a>')
+            direction = google_maps_directions_url(None, place, day["defaultMode"] if day else "driving")
+            actions.append(f'<a target="_blank" rel="noopener" href="{html.escape(direction, quote=True)}">현 위치에서 길찾기</a>')
+        else:
+            actions.append('<span class="gm-private-note">비공개 위치 · 개인 보관본에서 확인</span>')
+        if place.get("approximate"):
+            actions.append('<span class="gm-private-note">근사 위치</span>')
+        rows.append(
+            f'<li class="gm-place-card" data-place-id="{place["id"]}" data-type="{place["type"]}">'
+            f'<button class="gm-card-main" type="button" data-place-id="{place["id"]}" aria-pressed="false">'
+            f'<strong>{order}. {html.escape(place["name"])}</strong>'
+            f'<span>{html.escape(details)}</span>'
+            f'{f"<small>{html.escape(note)}</small>" if note else ""}</button>'
+            f'<div class="gm-card-actions">{"".join(actions)}</div></li>')
+
+    actions = []
+    segment_html = ""
+    if day:
+        route_url = google_maps_multistop_url(day, place_by_id)
+        if route_url:
+            route_label = "주차장 순서대로 운전" if day["defaultMode"] == "driving" else "오늘 동선 열기"
+            actions.append(f'<a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" '
+                           f'href="{html.escape(route_url, quote=True)}">{route_label}</a>')
+        segment_rows = []
+        for segment in day["segments"]:
+            origin, destination = place_by_id[segment["from"]], place_by_id[segment["to"]]
+            label = f'{origin["name"]} → {destination["name"]} · {GOOGLE_MAP_MODE_LABELS[segment["mode"]]}'
+            url = "" if segment.get("manual") else google_maps_directions_url(origin, destination, segment["mode"])
+            suffix = " · 선택" if segment.get("optional") else ""
+            if url:
+                content = f'<a target="_blank" rel="noopener" href="{html.escape(url, quote=True)}">{html.escape(label + suffix)}</a>'
+            else:
+                content = f'<span>{html.escape(label + suffix)} · 개인 보관본에서 직접 설정</span>'
+            note = f'<small>{html.escape(segment["note"])}</small>' if segment.get("note") else ""
+            segment_rows.append(f'<li>{content}{note}</li>')
+        segment_html = ('<details class="gm-segments"><summary>구간별 길찾기</summary>'
+                        f'<ol>{"".join(segment_rows)}</ol></details>')
+
+    payload = {"center": center, "zoom": zoom, "places": places}
+    if day:
+        payload["day"] = day
+    json_text = json.dumps(payload, ensure_ascii=False, separators=(",", ":")) \
+        .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    return f'''<section class="gm-component" data-scope="{scope}" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터">{"".join(filters)}</nav>
+{f'<div class="gm-actions">{"".join(actions)}</div>' if actions else ''}
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list">{"".join(rows)}</ol>
+</div>
+{segment_html}
+<script type="application/json">{json_text}</script>
+</section>'''
+
 
 def load_daily_maps():
     """날짜별 지도 JSON을 읽고 공개 저장소·UI 계약을 검증한다."""
@@ -2847,6 +3015,7 @@ def build_daily():
 
     audit = load_audit()
     _daily_map_payload, daily_maps = load_daily_maps()
+    google_places, google_days, _google_regions = load_google_map_data()
     fatigue, timetable, conflicts = load_day_details()
     TIMETABLE.update(timetable)
     for x in conflicts:
@@ -2963,7 +3132,25 @@ def build_daily():
 실제 도보·운전 경로는 Google Maps에서 다시 계산하세요.</p></details>"""
 
         daily_map = daily_maps.get(key)
-        if daily_map:
+        if key in GOOGLE_MAP_PILOT_DATES:
+            google_day = google_days[key]
+            seen_place_ids = set()
+            pilot_places = []
+            for stop in sorted(google_day["stops"], key=lambda item: item["order"]):
+                if stop["placeId"] not in seen_place_ids:
+                    pilot_places.append(google_places[stop["placeId"]])
+                    seen_place_ids.add(stop["placeId"])
+            component = google_map_component(
+                scope="daily", places=pilot_places, center=google_day["center"],
+                zoom=google_day["zoom"], day=google_day)
+            map_stack = f"""<section class="daily-map-section" aria-labelledby="daily-map-title-{n}">
+<h2 id="daily-map-title-{n}" class="ic ic-map">Google 실행지도</h2>
+<p class="note">{html.escape(google_day['title'])}</p>
+{component}
+</section>
+{card_block}"""
+            daily_map_head, daily_map_scripts = google_map_assets("..")
+        elif daily_map:
             map_stack = f"""<section class="daily-map-section" aria-labelledby="daily-map-title-{n}">
 <h2 id="daily-map-title-{n}" class="ic ic-map">인터랙티브 실행지도</h2>
 <p class="note">{html.escape(daily_map['title'])}</p>
@@ -3372,6 +3559,7 @@ def link_map_places(text, out_name):
 def build_maps():
     out_dir = SITE / "maps"
     out_dir.mkdir(parents=True, exist_ok=True)
+    google_places, _google_days, google_regions = load_google_map_data()
     shutil.copytree(ASSETS / "vendor" / "leaflet", out_dir / "vendor" / "leaflet",
                     dirs_exist_ok=True)
     data_dir = out_dir / "data"
@@ -3381,6 +3569,8 @@ def build_maps():
     for f in MAP_DIR.glob("*.kml"):
         text, _, _ = sanitize_kml(f.read_text(encoding="utf-8"), f.name)
         (data_dir / f.name).write_text(text, encoding="utf-8")
+    for f in MAP_DATA_DIR.glob("*.json"):
+        shutil.copy(f, data_dir / f.name)
     cards = []
     total_points = 0
     for src_name, out_name, title in MAPS:
@@ -3389,6 +3579,31 @@ def build_maps():
         features = geo.get("features", [])
         if not features:
             sys.exit(f"실행지도 GeoJSON 포인트 없음: {geo_name}")
+        if out_name in GOOGLE_MAP_PILOT_REGIONS:
+            region_id = GOOGLE_MAP_PILOT_REGIONS[out_name]
+            group = google_regions[region_id]
+            pilot_places = [google_places[pid] for pid in group["placeIds"]]
+            total_points += len(pilot_places)
+            component = google_map_component(
+                scope="region", places=pilot_places, center=group["center"], zoom=group["zoom"])
+            body = (f'<h1>{html.escape(title)}</h1>'
+                    f'<p class="meta">{html.escape(group["label"])} · 기준점 {len(pilot_places)}개. '
+                    '목록과 Google Maps 링크는 API 키나 네트워크가 없어도 사용할 수 있다.</p>'
+                    + net_note("장소 목록은 그대로 보입니다. 인터랙티브 지도만 연결이 필요합니다.")
+                    + component
+                    + '<div class="related"><a href="offline.html"><b class="ic ic-download" '
+                      'aria-hidden="true"></b>오프라인 지도 준비</a></div>')
+            map_head, map_scripts = google_map_assets("..")
+            (out_dir / out_name).write_text(
+                page(title, body, rel="..", topbar_title=title,
+                     back=crumbs_for(("지도", "maps/index.html"), (title, None)), country="es",
+                     extra_head=map_head, extra_scripts=map_scripts), encoding="utf-8")
+            day_range, area = MAP_META[out_name]
+            cards.append(f'<a class="card card-alt" href="{out_name}">'
+                         f'<span class="card-num">🗺️</span><span class="card-title">{title}</span>'
+                         f'<span class="card-sub">{day_range} · {area} · 기준점 {len(pilot_places)}개</span></a>')
+            SEARCH_INDEX.append({"t": title, "c": "실행지도", "u": f"maps/{out_name}"})
+            continue
         point_rows = []
         for i, feature in enumerate(features, 1):
             props = feature.get("properties", {})
@@ -4427,27 +4642,43 @@ def check_phase5_execution_guards():
 
 
 def check_phase6_map_guards():
-    """8개 실행지도·68개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
+    """8개 실행지도·72개 정규 지점·43일 라우팅을 하나의 계약으로 검사한다."""
     problems, total = [], 0
+    google_places, _google_days, google_regions = load_google_map_data()
     map_index = (SITE / "maps" / "index.html").read_text(encoding="utf-8")
     for src_name, out_name, title in MAPS:
         geo_name = src_name.replace(".html", ".geojson")
         geo = json.loads((MAP_DIR / geo_name).read_text(encoding="utf-8"))
-        count = len(geo.get("features", []))
+        if out_name in GOOGLE_MAP_PILOT_REGIONS:
+            region = google_regions[GOOGLE_MAP_PILOT_REGIONS[out_name]]
+            count = len(region["placeIds"])
+        else:
+            count = len(geo.get("features", []))
         total += count
         day_range, area = MAP_META[out_name]
         if f"{day_range} · {area} · 기준점 {count}개" not in map_index:
             problems.append(f"지도 목록 메타데이터 누락: {out_name}")
         page_text = (SITE / "maps" / out_name).read_text(encoding="utf-8")
-        for token in ('id="phase6-map-ui"', 'class="map-info-toggle"',
-                      f'기준점 {count}개 목록', 'aria-expanded="true"'):
-            if token not in page_text:
-                problems.append(f"{out_name}: 모바일 지도 UI 누락 — {token}")
-        if page_text.count('>길찾기</a>') != count:
-            problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
+        if out_name in GOOGLE_MAP_PILOT_REGIONS:
+            for token in ('class="gm-component"', 'data-scope="region"',
+                          '<ol class="gm-place-list">', '지도 펼치기',
+                          '../assets/google-map-loader.js', '../assets/google-map.js'):
+                if token not in page_text:
+                    problems.append(f"{out_name}: Google 지도 UI 누락 — {token}")
+            if 'vendor/leaflet' in page_text:
+                problems.append(f"{out_name}: 파일럿 페이지에 Leaflet 자산이 남음")
+            if page_text.count('class="gm-place-card"') != count:
+                problems.append(f"{out_name}: 장소 카드 수 불일치")
+        else:
+            for token in ('id="phase6-map-ui"', 'class="map-info-toggle"',
+                          f'기준점 {count}개 목록', 'aria-expanded="true"'):
+                if token not in page_text:
+                    problems.append(f"{out_name}: 모바일 지도 UI 누락 — {token}")
+            if page_text.count('>길찾기</a>') != count:
+                problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 68:
-        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 68)")
+    if total != 72 or len(google_places) != 72:
+        problems.append(f"정규 지도 기준점 총 {total}개/레지스트리 {len(google_places)}개 (기대 72)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4460,21 +4691,24 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 · 68개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 · 정규 지점 72개 · 파일럿 2지역 · 43일 라우팅 이상 없음")
 
 
 def check_daily_map_guards():
-    """프로토타입 3일의 데이터·공통 UI·정적 fallback 계약을 잠근다."""
+    """Leaflet 3일 + Google Maps 파일럿 2일의 fallback 계약을 잠근다."""
     payload, by_date = load_daily_maps()
     problems = []
-    expected = {"2026-08-29", "2026-08-30", "2026-08-31"}
+    legacy = {"2026-08-29", "2026-08-31", "2026-09-02"}
+    pilots = GOOGLE_MAP_PILOT_DATES
+    expected = legacy | pilots
     missing = sorted(expected - set(by_date))
     if missing:
         problems.append("샘플 날짜 누락: " + ", ".join(missing))
-    if not (SITE / "assets" / "daily-map.js").exists() or \
-            not (SITE / "assets" / "daily-map-data.js").exists():
+    required_assets = ("daily-map.js", "daily-map-data.js", "google-map-loader.js",
+                       "google-map.js", "google-map.css")
+    if any(not (SITE / "assets" / name).exists() for name in required_assets):
         problems.append("공통 지도 스크립트 또는 빌드 데이터 누락")
-    for key in sorted(expected & set(by_date)):
+    for key in sorted(legacy & set(by_date)):
         n = (date.fromisoformat(key) - TRIP_START).days + 1
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         required = (f'data-daily-map-date="{key}"',
@@ -4489,6 +4723,30 @@ def check_daily_map_guards():
         fallback_at = text.find('<details class="day-details day-card-archive">')
         if map_at < 0 or fallback_at < map_at:
             problems.append(f"{key}: 인터랙티브 지도 → 정적 fallback 순서 훼손")
+    _places, google_days, _regions = load_google_map_data()
+    for key in sorted(pilots):
+        if key not in google_days:
+            problems.append(f"Google 파일럿 날짜 누락: {key}")
+            continue
+        n = (date.fromisoformat(key) - TRIP_START).days + 1
+        text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
+        required = ('class="gm-component"', 'data-scope="daily"',
+                    '<script type="application/json">', '../assets/google-map-loader.js',
+                    '../assets/google-map.js', '../assets/google-map.css',
+                    '<details class="day-details day-card-archive">')
+        for token in required:
+            if token not in text:
+                problems.append(f"{key}: Google 파일럿 HTML 누락 — {token}")
+        for forbidden in ('vendor/leaflet', '../assets/daily-map-data.js', '../assets/daily-map.js'):
+            if forbidden in text:
+                problems.append(f"{key}: 파일럿 페이지에 구형 자산이 남음 — {forbidden}")
+        if text.find('class="gm-component"') > text.find('<details class="day-details day-card-archive">'):
+            problems.append(f"{key}: Google 지도 → 정적 fallback 순서 훼손")
+    day6 = (SITE / "daily" / "day-06.html").read_text(encoding="utf-8")
+    for token in ("주차장 순서대로 운전", "tossa-parking-pelegri",
+                  "sant-feliu-la-corxera-parking", "peratallada-baix-parking"):
+        if token not in day6:
+            problems.append(f"Day 6 주차 우선 동선 누락 — {token}")
     if payload.get("schemaVersion") != "1.0":
         problems.append("데일리 지도 스키마 버전 불일치")
     if problems:
@@ -4496,7 +4754,7 @@ def check_daily_map_guards():
         for problem in problems:
             print("  " + problem)
         sys.exit(1)
-    print(f"날짜별 인터랙티브 지도 가드: 샘플 {len(expected)}일 · 공통 UI · Google Maps · 정적 fallback 이상 없음")
+    print("날짜별 인터랙티브 지도 가드: Leaflet 3일 · Google Maps 파일럿 2일 · 정적 fallback 이상 없음")
 
 
 def check_phase7_visual_guards():
@@ -4605,11 +4863,14 @@ def check_phase8_operations_guards():
         if state not in allowed_reservation_states:
             problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
         if state == "예약완료":
-            required = (("사업자", "소스 URL", "최종확인일") if row.get("ID") == "R002"
+            # R002는 개인 숙소다. 공개 배포용 트래커에 예약 URL을 복제하지 않는다.
+            required = (("사업자", "최종확인일") if row.get("ID") == "R002"
                         else ("예약번호", "사업자", "소스 URL", "최종확인일"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
+            if row.get("ID") == "R002" and row.get("소스 URL"):
+                problems.append("R002: 개인 숙소 소스 URL이 공개 트래커에 남아 있음")
 
     expected_stays = {
         "Barcelona": ("2026-08-29", "2026-09-01", 3),
@@ -4635,11 +4896,14 @@ def check_phase8_operations_guards():
         if actual != (checkin, checkout, nights):
             problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
         if row.get("상태") == "예약완료":
-            required = (("주소", "소스 URL") if base == "Bàscara"
+            # 개인 숙소는 안전한 비공개 안내 문구만 요구하고 공개 URL은 금지한다.
+            required = (("주소",) if base == "Bàscara"
                         else ("실제총액", "예약번호", "주소", "소스 URL"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{base}: 숙소 예약완료인데 필수값 누락 — {", ".join(absent)}')
+            if base == "Bàscara" and (row.get("소스 URL") or "개인 보관본" not in str(row.get("주소"))):
+                problems.append("Bàscara: 공개 트래커 개인정보 비공개 규칙 위반")
 
     locks = records("Phase8 Lock Status")
     allowed_lock_states = {"LOCKED", "PARTIAL", "BLOCKED"}
@@ -4881,6 +5145,13 @@ def check_dates():
 # ---------------------------------------------------------------- main
 
 def main():
+    map_errors, map_warnings = validate_map_data(MAP_DATA_DIR)
+    if map_errors:
+        print("Google 지도 데이터 검사 실패:")
+        for problem in map_errors:
+            print("  " + problem)
+        sys.exit(1)
+    print(f"Google 지도 데이터: 72개 지점 · 경고 {len(map_warnings)}건(Place ID 미확인)")
     if SITE.exists():
         shutil.rmtree(SITE)
     SITE.mkdir()
@@ -4900,6 +5171,9 @@ def main():
         json.dumps(daily_map_payload, ensure_ascii=False, separators=(",", ":")) + ";\n",
         encoding="utf-8")
     shutil.copy(ASSETS / "daily-map.js", SITE / "assets" / "daily-map.js")
+    shutil.copy(ASSETS / "google-map-loader.js", SITE / "assets" / "google-map-loader.js")
+    shutil.copy(ASSETS / "google-map.js", SITE / "assets" / "google-map.js")
+    shutil.copy(ASSETS / "google-map.css", SITE / "assets" / "google-map.css")
     # 나눔고딕 woff2 — CDN 을 쓰지 않고 번들한다 (OFL 1.1)
     shutil.copytree(ASSETS / "vendor" / "nanum", SITE / "assets" / "vendor" / "nanum",
                     dirs_exist_ok=True)
