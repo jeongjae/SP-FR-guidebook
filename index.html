@@ -3,7 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
 <title>홈 — 2026 유럽 여행 가이드북</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./assets/pwa/icon-192.png">
 <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body data-rel=".">
@@ -116,7 +123,7 @@
 <h2 class="ic ic-topic">더 보기</h2>
 <div class="list-group"><a class="list-row" href="daily/index.html"><span class="lr-icon ic ic-only ic-today" aria-hidden="true"></span><span class="lr-text"><b class="lr-title">데일리 카드 전체</b><span class="lr-sub">43일을 한 줄씩</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="places/index.html"><span class="lr-icon ic ic-only ic-pin" aria-hidden="true"></span><span class="lr-text"><b class="lr-title">장소</b><span class="lr-sub">갈 곳 전체 목록</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="topics/index.html"><span class="lr-icon ic ic-only ic-topic" aria-hidden="true"></span><span class="lr-text"><b class="lr-title">주제별 보기</b><span class="lr-sub">먹거리 · 교통 · 숙박 등</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="maps/index.html"><span class="lr-icon ic ic-only ic-map" aria-hidden="true"></span><span class="lr-text"><b class="lr-title">지역 지도</b><span class="lr-sub">주요 기준점과 외부 길찾기</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="chapters/how-to-use.html"><span class="lr-icon ic ic-only ic-book" aria-hidden="true"></span><span class="lr-text"><b class="lr-title">가이드 사용법</b><span class="lr-sub">이 가이드북을 읽는 법</span></span><span class="lr-go" aria-hidden="true">›</span></a><a class="list-row" href="credits.html"><span class="lr-icon ic ic-only ic-license" aria-hidden="true"></span><span class="lr-text"><b class="lr-title">사진 저작자 표시</b><span class="lr-sub">CC 라이선스와 출처</span></span><span class="lr-go" aria-hidden="true">›</span></a></div>
 <p class="note">지도 배경 타일은 인터넷 연결 시 표시됩니다.
-본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
+전체 가이드북 저장을 마치면 본문·데일리 카드·마커 목록을 오프라인에서도 열람할 수 있습니다.</p>
 
 </main>
 <footer>
@@ -134,5 +141,6 @@
 <button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
 <script src="./assets/data.js" defer></script>
 <script src="./assets/nav.js" defer></script>
+<script src="./assets/pwa.js" defer></script>
 </body>
 </html>

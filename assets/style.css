@@ -1406,6 +1406,111 @@ body.is-offline .offline-note .needs-net {
   text-decoration: underline dotted;
 }
 
+/* ================= iPhone PWA · 전체 오프라인 저장 ================= */
+.pwa-install-steps {
+  padding-left: 1.5rem;
+}
+.pwa-install-steps li {
+  margin: 0.45rem 0;
+}
+body.is-standalone .pwa-install-steps {
+  display: none;
+}
+.pwa-panel {
+  margin: 20px 0 8px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+}
+.pwa-panel[hidden],
+.pwa-update[hidden],
+.pwa-actions button[hidden] {
+  display: none;
+}
+.pwa-mode,
+.pwa-storage {
+  margin: 0 0 12px;
+  color: var(--text-2);
+  font-size: var(--t-foot);
+}
+.pwa-status {
+  display: grid;
+  gap: 3px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--sig-caution);
+  background: var(--surface-sunk);
+}
+.pwa-panel[data-state="complete"] .pwa-status {
+  border-left-color: var(--sig-steady);
+}
+.pwa-panel[data-state="error"] .pwa-status {
+  border-left-color: var(--sig-critical);
+}
+.pwa-status b,
+.pwa-status span,
+.pwa-status small {
+  display: block;
+}
+.pwa-status span,
+.pwa-status small {
+  color: var(--text-2);
+}
+.pwa-status small {
+  font-size: var(--t-cap1);
+}
+.pwa-panel progress {
+  display: block;
+  width: 100%;
+  height: 12px;
+  margin: 16px 0;
+  accent-color: var(--accent);
+}
+.pwa-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pwa-actions button,
+.pwa-update button {
+  min-height: var(--tap);
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-ctrl);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-size: var(--t-subhead);
+  font-weight: 700;
+  cursor: pointer;
+}
+.pwa-actions button:disabled {
+  opacity: 0.55;
+  cursor: progress;
+}
+.pwa-actions .pwa-clear {
+  background: transparent;
+  border-color: var(--sig-critical-ink);
+  color: var(--sig-critical-ink);
+}
+.pwa-storage {
+  margin: 12px 0 0;
+}
+.pwa-update {
+  margin-top: 14px;
+  padding: 12px;
+  background: var(--accent-soft);
+  border-radius: var(--r-ctrl);
+}
+.pwa-update b {
+  display: block;
+  margin-bottom: 8px;
+}
+.related .ic {
+  flex: 0 0 auto;
+  margin-right: 6px;
+}
+
 /* ================= 저작자 표시 ================= */
 .credit-list {
   display: grid;
