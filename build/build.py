@@ -4402,14 +4402,14 @@ def check_phase4_daily_guards():
         text = path.read_text(encoding="utf-8")
         required = ('class="day-command"', 'class="day-quick"',
                     'class="day-actions"', '<h2 class="ic ic-clock">시간표</h2>',
-                    '<details class="day-details day-card-archive">')
+                    '<details class="day-details day-card-archive"')
         for token in required:
             if token not in text:
                 problems.append(f"Day {n}: {token} 누락")
         order = [text.find(token) for token in required]
         if any(x < 0 for x in order) or order != sorted(order):
             problems.append(f"Day {n}: 실행요약 → 시간표 → 카드 순서 훼손")
-        if '<figure class="daily-card">' in text.split('<details class="day-details day-card-archive">', 1)[0]:
+        if '<figure class="daily-card">' in text.split('<details class="day-details day-card-archive"', 1)[0]:
             problems.append(f"Day {n}: 카드 이미지가 첫 화면에 노출됨")
     index = (SITE / "daily" / "index.html").read_text(encoding="utf-8")
     if index.count('class="daily-region"') != 8:
@@ -4515,12 +4515,12 @@ def check_daily_map_guards():
                     '../maps/vendor/leaflet/leaflet.css',
                     '../maps/vendor/leaflet/leaflet.js',
                     '../assets/daily-map-data.js', '../assets/daily-map.js',
-                    '<details class="day-details day-card-archive">')
+                    '<details class="day-details day-card-archive"')
         for token in required:
             if token not in text:
                 problems.append(f"{key}: 배포 HTML 누락 — {token}")
         map_at = text.find('class="daily-map-section"')
-        fallback_at = text.find('<details class="day-details day-card-archive">')
+        fallback_at = text.find('<details class="day-details day-card-archive"')
         if map_at < 0 or fallback_at < map_at:
             problems.append(f"{key}: 인터랙티브 지도 → 정적 fallback 순서 훼손")
     if payload.get("schemaVersion") != "1.0":
