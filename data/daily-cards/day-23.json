@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "day": 23,
+  "date": "2026-09-20",
+  "city": "Lyon",
+  "title": "차량반납·TGV·Lyon 적응",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "4",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "avignon-tgv",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Avignon TGV 반납",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Avignon TGV 반납",
+      "menu": null,
+      "reservation": "렌터카 반납·TGV",
+      "optional": false
+    },
+    {
+      "id": "lyon",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Lyon 도착",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Lyon 도착",
+      "menu": null,
+      "reservation": "렌터카 반납·TGV",
+      "optional": false
+    },
+    {
+      "id": "ainay-bellecour",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Ainay·Bellecour",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Ainay·Bellecour",
+      "menu": null,
+      "reservation": "렌터카 반납·TGV",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "렌터카 반납·TGV"
+  ],
+  "food": [
+    "역 간단식"
+  ],
+  "highlights": [
+    "Avignon TGV 반납, Lyon 도착, Ainay·Bellecour",
+    "선택·축소: Jacobins·Saône 짧은 산책"
+  ],
+  "backup": "Lyon 도착 후 체크인만",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

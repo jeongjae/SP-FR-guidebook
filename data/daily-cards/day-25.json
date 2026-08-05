@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "day": 25,
+  "date": "2026-09-22",
+  "city": "Lyon",
+  "title": "Croix-Rousse·Halles·공원",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "3",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "croix-rousse",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Croix-Rousse 시장",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Croix-Rousse 시장",
+      "menu": null,
+      "reservation": "시장·식당",
+      "optional": false
+    },
+    {
+      "id": "canut",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "canut 맥락",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "canut 맥락",
+      "menu": null,
+      "reservation": "시장·식당",
+      "optional": false
+    },
+    {
+      "id": "halles",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Halles",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Halles",
+      "menu": null,
+      "reservation": "시장·식당",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "시장·식당"
+  ],
+  "food": [
+    "Halles 점심"
+  ],
+  "highlights": [
+    "Croix-Rousse 시장, canut 맥락, Halles",
+    "선택·축소: Parc de la Tête d’Or"
+  ],
+  "backup": "시장+Halles만",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}
