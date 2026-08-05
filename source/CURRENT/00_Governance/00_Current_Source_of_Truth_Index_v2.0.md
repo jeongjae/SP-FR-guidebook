@@ -7,6 +7,7 @@
 - 실측 근거: `docs/content-architecture-audit.md` (빌드가 읽는 파일 전수 확인)
 
 ## Authoritative core
+- `CURRENT/10_Core/itinerary.json` — 전체 여행기간과 8개 숙박 거점의 날짜·박수 정본. 빌드와 자동검증이 직접 읽는다.
 - `CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md`
 - `CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md`
 - `CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md`
