@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "day": 9,
+  "date": "2026-09-06",
+  "city": "Nice",
+  "title": "Cannes 당일치기",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "4",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "forville",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Forville",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Forville",
+      "menu": null,
+      "reservation": "TER",
+      "optional": false
+    },
+    {
+      "id": "le-suquet",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Le Suquet",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Le Suquet",
+      "menu": null,
+      "reservation": "TER",
+      "optional": false
+    },
+    {
+      "id": "vieux-port",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Vieux-Port",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Vieux-Port",
+      "menu": null,
+      "reservation": "TER",
+      "optional": false
+    },
+    {
+      "id": "croisette",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "Croisette",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Croisette",
+      "menu": null,
+      "reservation": "TER",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "TER"
+  ],
+  "food": [
+    "Forville 인근 점심"
+  ],
+  "highlights": [
+    "Forville, Le Suquet, Vieux-Port, Croisette",
+    "선택·축소: 쇼핑·해변 연장 삭제 가능"
+  ],
+  "backup": "Cannes 핵심만 후 조기귀환",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

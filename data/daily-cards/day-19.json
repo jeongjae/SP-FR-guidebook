@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "day": 19,
+  "date": "2026-09-16",
+  "city": "Avignon",
+  "title": "Luberon 체크아웃→Avignon",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "3",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "stop",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "농가 아침",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "농가 아침",
+      "menu": null,
+      "reservation": "농가 변경·Avignon 숙소",
+      "optional": false
+    },
+    {
+      "id": "stop-2",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "체크아웃",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "체크아웃",
+      "menu": null,
+      "reservation": "농가 변경·Avignon 숙소",
+      "optional": false
+    },
+    {
+      "id": "avignon",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Avignon 이동·체크인",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Avignon 이동·체크인",
+      "menu": null,
+      "reservation": "농가 변경·Avignon 숙소",
+      "optional": false
+    },
+    {
+      "id": "stop-4",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "가벼운 성벽 산책",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "가벼운 성벽 산책",
+      "menu": null,
+      "reservation": "농가 변경·Avignon 숙소",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "농가 변경·Avignon 숙소"
+  ],
+  "food": [
+    "이동 중 간단식"
+  ],
+  "highlights": [
+    "농가 아침, 체크아웃, Avignon 이동·체크인, 가벼운 성벽 산책",
+    "선택·축소: L’Isle 목요시장은 날짜 불일치로 기본안 제외"
+  ],
+  "backup": "Avignon 직행·숙소 휴식",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

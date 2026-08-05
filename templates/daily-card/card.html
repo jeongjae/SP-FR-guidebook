@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1440, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <style>{{STYLE}}</style>
+</head>
+<body>
+  <main class="card" aria-label="{{TITLE}} Daily Action Map">
+    <header class="card-header">
+      <div class="day-block">
+        <span class="day-label">DAY</span>
+        <strong id="day-number"></strong>
+      </div>
+      <div class="header-copy">
+        <p id="date-line"></p>
+        <h1 id="city-line"></h1>
+        <p id="title-line"></p>
+      </div>
+      <div class="duration-block">
+        <span>오늘의 범위</span>
+        <strong id="duration-line"></strong>
+        <small id="fatigue-line"></small>
+      </div>
+    </header>
+
+    <section class="main-grid">
+      <section class="timeline-panel" aria-labelledby="timeline-heading">
+        <div class="section-heading">
+          <div><span>TIME ORDER</span><h2 id="timeline-heading">오늘의 실행 순서</h2></div>
+          <p>핵심 활동만 표시</p>
+        </div>
+        <div id="timeline" class="timeline"></div>
+      </section>
+
+      <section class="map-panel" aria-labelledby="map-heading">
+        <div class="section-heading map-heading">
+          <div><span>REAL MAP</span><h2 id="map-heading">지도와 이동 동선</h2></div>
+          <div id="legend" class="legend"></div>
+        </div>
+        <div id="map" class="map" role="img" aria-label="실제 좌표 기반 일정 지도">
+          <div id="tiles" class="tiles"></div>
+          <svg id="route-layer" class="route-layer" aria-hidden="true"></svg>
+          <div id="markers" class="markers"></div>
+          <div class="north" aria-label="북쪽"><i></i><span>N</span></div>
+          <div class="attribution">© OpenStreetMap contributors · route geometry: OSRM / coordinate line</div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="summary-bar">
+      <section class="summary-cell metric-cell">
+        <span class="summary-kicker">MOVE</span>
+        <h2>이동 요약</h2>
+        <strong id="distance-line"></strong>
+        <p id="total-duration-line"></p>
+      </section>
+      <section class="summary-cell">
+        <span class="summary-kicker">TRANSPORT</span>
+        <h2>교통</h2>
+        <ul id="transport-list"></ul>
+      </section>
+      <section class="summary-cell">
+        <span class="summary-kicker">FOOD</span>
+        <h2>식사·카페</h2>
+        <ul id="food-list"></ul>
+      </section>
+      <section class="summary-cell highlight-cell">
+        <span class="summary-kicker">DON'T MISS</span>
+        <h2>핵심 포인트</h2>
+        <ul id="highlight-list"></ul>
+        <p id="backup-line"></p>
+      </section>
+    </footer>
+  </main>
+  <script>
+    window.CARD_DATA = {{DATA}};
+    window.CARD_TILES = {{TILES}};
+    window.CARD_ROUTE = {{ROUTE}};
+  </script>
+  <script>{{SCRIPT}}</script>
+</body>
+</html>

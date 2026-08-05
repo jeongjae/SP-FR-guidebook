@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "day": 12,
+  "date": "2026-09-09",
+  "city": "Aix-en-Provence",
+  "title": "NCE 렌터카와 Provence 진입",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "5",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "nce-t2",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "NCE T2 렌터카",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "NCE T2 렌터카",
+      "menu": null,
+      "reservation": "렌터카·Aix 숙소",
+      "optional": false
+    },
+    {
+      "id": "saint-paul",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Saint-Paul",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Saint-Paul",
+      "menu": null,
+      "reservation": "렌터카·Aix 숙소",
+      "optional": false
+    },
+    {
+      "id": "grasse",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Grasse",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Grasse",
+      "menu": null,
+      "reservation": "렌터카·Aix 숙소",
+      "optional": false
+    },
+    {
+      "id": "aix",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "Aix 체크인",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Aix 체크인",
+      "menu": null,
+      "reservation": "렌터카·Aix 숙소",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "렌터카·Aix 숙소"
+  ],
+  "food": [
+    "Grasse 점심"
+  ],
+  "highlights": [
+    "NCE T2 렌터카, Saint-Paul, Grasse, Aix 체크인",
+    "선택·축소: 지연 시 Grasse 우선 삭제"
+  ],
+  "backup": "Grasse 실내 후 Aix 조기도착",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

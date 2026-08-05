@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "day": 5,
+  "date": "2026-09-02",
+  "city": "Bàscara · Collioure · Cadaqués",
+  "title": "국경의 시장과 해안마을 순환",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": "car-loop",
+  "startTime": "07:45",
+  "endTime": "19:00",
+  "totalDuration": "11시간 15분",
+  "totalDistance": "약 181km · 차량 경로",
+  "fatigue": "4",
+  "hotel": {"name": "Bàscara B&B", "lat": 42.1603007, "lng": 2.9101005, "status": "private-approximate"},
+  "stops": [
+    {"id": "bascara-stay", "order": 1, "start": "07:45", "end": "07:45", "name": "Bàscara 출발", "category": "hotel", "lat": 42.1603007, "lng": 2.9101005, "summary": "차량·국경운전·해안 주차를 확인하고 출발", "menu": "물·운전 간식", "reservation": null, "optional": false},
+    {"id": "collioure", "order": 2, "start": "09:00", "end": "12:15", "name": "Collioure", "category": "sight", "lat": 42.52505, "lng": 3.08322, "summary": "수요시장→항구→교회→왕궁 외관", "menu": "멸치·생선구이·escalivade", "reservation": "오전 10시 전 주차", "optional": false},
+    {"id": "collioure-lunch", "order": 3, "start": "12:15", "end": "13:00", "name": "Collioure 점심", "category": "food", "lat": 42.5260, "lng": 3.0823, "summary": "시장 조달 또는 항구권 생선 식당", "menu": "anchois marinés · 생선구이", "reservation": "Le Jardin 선택 시 사전예약", "optional": false},
+    {"id": "cadaques", "order": 4, "start": "14:45", "end": "17:30", "name": "Cadaqués", "category": "sight", "lat": 42.2886, "lng": 3.2584, "summary": "해안 산책로→구시가지→Santa Maria→카페", "menu": "카페 1회", "reservation": "Saba 주차 재확인", "optional": false},
+    {"id": "bascara-return", "order": 5, "start": "18:30", "end": "19:00", "name": "Bàscara 복귀", "category": "hotel", "lat": 42.1603007, "lng": 2.9101005, "summary": "17:30 출발을 지키고 숙소에서 간단한 저녁", "menu": "숙소식", "reservation": null, "optional": false}
+  ],
+  "legs": [
+    {"from": "bascara-stay", "to": "collioure", "mode": "car", "duration": "약 1시간 2분", "distance": "74.6km", "line": "AP-7/A9", "geometryStatus": "verified-cache"},
+    {"from": "collioure", "to": "collioure-lunch", "mode": "walk", "duration": "5분", "distance": "0.2km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "collioure-lunch", "to": "cadaques", "mode": "car", "duration": "약 1시간 29분", "distance": "59.7km", "line": "해안 쪽 우회", "geometryStatus": "verified-cache"},
+    {"from": "cadaques", "to": "bascara-return", "mode": "car", "duration": "약 1시간 2분", "distance": "46.7km", "line": null, "geometryStatus": "verified-cache"}
+  ],
+  "transport": ["렌터카 · 국경 통과", "Collioure/Cadaqués 도보"],
+  "food": ["Collioure 시장·생선 점심", "Cadaqués 카페", "숙소 간단식"],
+  "highlights": ["수요일 오전시장", "해안 쪽 우회", "17:30 Cadaqués 출발 고정"],
+  "backup": "지연 시 Cadaqués 해안 산책·구시가지를 줄이고 17:30 출발 유지",
+  "map": {"zoom": 10, "center": [42.34, 3.09], "routeCache": "routes/day-05-driving-osrm.json"},
+  "needsReview": ["Bàscara 비공개 숙소 좌표는 공개 내비게이션에 사용 금지", "Collioure·Cadaqués 주차와 현장 통제", "OSRM 시간은 교통 없는 기준이며 출발 직전 재계산", "최신 후보 일정 브랜치 승인: 43b1ce441fbc"],
+  "sourceRefs": ["source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md#2026-09-02", "source/ASSETS/76_Daily_Execution_Maps/daily-maps.json#2026-09-02", "data/daily-cards/routes/day-05-driving-osrm.json", "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"]
+}

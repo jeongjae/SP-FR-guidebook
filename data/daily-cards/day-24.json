@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "day": 24,
+  "date": "2026-09-21",
+  "city": "Lyon",
+  "title": "Fourvière와 Vieux Lyon",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "4",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "fourvi-re",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Fourvière",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Fourvière",
+      "menu": null,
+      "reservation": "푸니쿨라·월요일 운영",
+      "optional": false
+    },
+    {
+      "id": "rosaire",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Rosaire 하산",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Rosaire 하산",
+      "menu": null,
+      "reservation": "푸니쿨라·월요일 운영",
+      "optional": false
+    },
+    {
+      "id": "saint-jean",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Saint-Jean",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Saint-Jean",
+      "menu": null,
+      "reservation": "푸니쿨라·월요일 운영",
+      "optional": false
+    },
+    {
+      "id": "traboules",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "traboules",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "traboules",
+      "menu": null,
+      "reservation": "푸니쿨라·월요일 운영",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "푸니쿨라·월요일 운영"
+  ],
+  "food": [
+    "Vieux Lyon 점심"
+  ],
+  "highlights": [
+    "Fourvière, Rosaire 하산, Saint-Jean, traboules",
+    "선택·축소: 로마극장 선택"
+  ],
+  "backup": "야외축+카페",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}
