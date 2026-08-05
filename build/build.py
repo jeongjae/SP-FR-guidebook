@@ -4635,8 +4635,8 @@ def check_phase8_operations_guards():
 
     reservations = records("Reservations")
     ids = [row.get("ID") for row in reservations]
-    if len(reservations) != 24 or len(set(ids)) != 24 or ids != [f"R{i:03d}" for i in range(1, 25)]:
-        problems.append("예약항목은 R001~R024의 고유한 24건이어야 함")
+    if len(reservations) != 28 or len(set(ids)) != 28 or ids != [f"R{i:03d}" for i in range(1, 29)]:
+        problems.append("예약항목은 R001~R028의 고유한 28건이어야 함")
     if sum(row.get("우선순위") == "P0" for row in reservations) != 13:
         problems.append("P0 예약항목은 정확히 13건이어야 함")
     allowed_reservation_states = {"미조사", "예약대기", "재확인", "예약완료", "취소"}
@@ -4706,7 +4706,7 @@ def check_phase8_operations_guards():
         for problem in problems[:40]:
             print("  " + problem)
         sys.exit(1)
-    print("Phase 8 예약·운영 잠금 가드: 24개 예약 · P0 13개 · 8개 숙소 · Known-Facts/실예약 경계 이상 없음")
+    print("Phase 8 예약·운영 잠금 가드: 28개 예약 · P0 13개 · 8개 숙소 · Known-Facts/실예약 경계 이상 없음")
 
 
 def check_phase9_commercial_depth_guards():
