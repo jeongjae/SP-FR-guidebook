@@ -60,11 +60,17 @@
 |---|---|---|---|---|---|---|---|
 | `atelier-des-lauves` | Atelier des Lauves | spot | 필수 | Atelier Cézanne | chapters/aix/places.html | Atelier des Lauves | Atelier de Cézanne |
 | `bastide-du-jas-de-bouffan` | Bastide du Jas de Bouffan | spot | 우선 추천 | — | chapters/aix/places.html | Bastide du Jas de Bouffan — 선택 | Bastide du Jas de Bouffan |
-| `calanques` | Calanques | spot | 필수 | — | chapters/aix/places.html | Calanques | Calanques National Park |
+| `calanques` | Calanques | spot | 대체 | — | chapters/aix/places.html | Calanques | Calanques National Park |
 | `carrieres-de-bibemus` | Carrières de Bibémus | spot | 대체 | — | chapters/aix/places.html | Carrières de Bibémus | fr:Carrières de Bibémus |
-| `cassis` | Cassis 항구 | spot | 필수 | Cassis | chapters/aix/places.html | Cassis 항구 | Cassis |
+| `cassis` | Cassis 항구 | spot | 대체 | Cassis | chapters/aix/places.html | Cassis 항구 | Cassis |
 | `cours-mirabeau` | Cours Mirabeau | spot | 필수 | Cours Mirabeau | chapters/aix/places.html | Cours Mirabeau | Cours Mirabeau |
 | `grasse` | Grasse | spot | 선택 | — | chapters/aix/places.html | Grasse | Grasse |
+| `marseille` | Marseille | spot | 필수 | Marseille Saint-Charles | chapters/aix/places.html | Marseille | Marseille |
+| `vieux-port-marseille` | Vieux-Port | spot | 필수 | Vieux-Port | chapters/aix/places.html | Vieux-Port | Old Port of Marseille |
+| `le-panier` | Le Panier | spot | 우선 추천 | Le Panier | chapters/aix/places.html | Le Panier | fr:Le Panier |
+| `mucem` | Mucem | spot | 필수 | Mucem | chapters/aix/places.html | Mucem | Museum of European and Mediterranean Civilisations |
+| `fort-saint-jean` | Fort Saint-Jean | spot | 필수 | Fort Saint-Jean | chapters/aix/places.html | Fort Saint-Jean | Fort Saint-Jean (Marseille) |
+| `notre-dame-de-la-garde` | Notre-Dame de la Garde | spot | 선택 | Notre-Dame de la Garde | chapters/aix/places.html | Notre-Dame de la Garde | Notre-Dame de la Garde |
 | `montagne-sainte-victoire-terrain-des-peintres` | Montagne Sainte-Victoire · Terrain des Peintres | spot | 우선 추천 | — | chapters/aix/places.html | Montagne Sainte-Victoire · Terrain des Peintres | Montagne Sainte-Victoire |
 | `musee-granet` | Musée Granet | spot | 우선 추천 | Musée Granet | chapters/aix/places.html | Musée Granet | Musée Granet |
 | `rotonde` | Rotonde | spot | 미정 | Rotonde | — | — | Fontaine de la Rotonde |
@@ -81,7 +87,7 @@
 | `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes | Gordes |
 | `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult | Goult |
 | `lourmarin` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
-| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 우선 추천* | L’Isle-sur-la-Sorgue | — | — | L'Isle-sur-la-Sorgue |
+| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 대체* | L’Isle-sur-la-Sorgue | — | — | L'Isle-sur-la-Sorgue |
 | `menerbes` | Ménerbes | spot | 우선 추천 | Ménerbes | chapters/luberon/places.html | Ménerbes — A안 | Ménerbes |
 | `oppede-le-vieux` | Oppède-le-Vieux | spot | 대체 | — | chapters/luberon/places.html | Oppède-le-Vieux — B안 | Oppède |
 | `roussillon-sentier-des-ocres` | Roussillon · Sentier des Ocres | spot | 필수 | Roussillon | chapters/luberon/places.html | Roussillon · Sentier des Ocres | Roussillon, Vaucluse |
@@ -91,17 +97,24 @@
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `carrieres-des-lumieres` | Carrières des Lumières | spot | 우선 추천 | — | chapters/avignon/places.html | Carrières des Lumières | fr:Carrières de Lumières |
-| `glanum` | Glanum | spot | 선택 | — | chapters/avignon/places.html | Glanum | Glanum |
-| `les-baux-de-provence` | Les Baux-de-Provence | spot | 필수 | Les Baux | chapters/avignon/places.html | Les Baux-de-Provence | Les Baux-de-Provence |
+| `carrieres-des-lumieres` | Carrières des Lumières | spot | 대체 | — | chapters/avignon/places.html | Carrières des Lumières | fr:Carrières de Lumières |
+| `glanum` | Glanum | spot | 대체 | — | chapters/avignon/places.html | Glanum | Glanum |
+| `les-baux-de-provence` | Les Baux-de-Provence | spot | 대체 | Les Baux | chapters/avignon/places.html | Les Baux-de-Provence | Les Baux-de-Provence |
 | `les-halles` | Les Halles | spot | 필수 | Les Halles | chapters/avignon/places.html | Les Halles | Les Halles d'Avignon |
 | `palais-des-papes` | Palais des Papes | spot | 필수 | Palais des Papes | chapters/avignon/places.html | Palais des Papes | Palais des Papes |
 | `pont-saint-benezet` | Pont Saint-Bénézet | spot | 필수 | Pont Saint-Bénézet | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet | Pont Saint-Bénézet |
 | `pont-du-gard` | Pont du Gard | spot | 필수 | Pont du Gard | chapters/avignon/places.html | Pont du Gard | Pont du Gard |
 | `rocher-des-doms` | Rocher des Doms | spot | 필수 | — | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet | fr:Rocher des Doms |
-| `saint-paul-de-mausole` | Saint-Paul-de-Mausole | spot | 필수 | — | chapters/avignon/places.html | Saint-Paul-de-Mausole | Monastery of Saint-Paul de Mausole |
-| `saint-remy-de-provence` | Saint-Rémy-de-Provence | spot | 필수 | Saint-Rémy | chapters/avignon/places.html | Saint-Rémy-de-Provence | Saint-Rémy-de-Provence |
-| `uzes` | Uzès 토요시장 | spot | 필수 | Uzès | chapters/avignon/places.html | Uzès 토요시장 | Uzès |
+| `saint-paul-de-mausole` | Saint-Paul-de-Mausole | spot | 대체 | — | chapters/avignon/places.html | Saint-Paul-de-Mausole | Monastery of Saint-Paul de Mausole |
+| `saint-remy-de-provence` | Saint-Rémy-de-Provence | spot | 대체 | Saint-Rémy | chapters/avignon/places.html | Saint-Rémy-de-Provence | Saint-Rémy-de-Provence |
+| `uzes` | Uzès Place aux Herbes·구시가지 | spot | 필수 | Uzès | chapters/avignon/places.html | Uzès Place aux Herbes·구시가지 | Uzès |
+| `arles` | Arles | spot | 필수 | Arles | chapters/avignon/places.html | Arles | Arles |
+| `arenes-d-arles` | Arènes d’Arles | spot | 필수 | Arènes d’Arles | chapters/avignon/places.html | Arènes d’Arles | Arles Amphitheatre |
+| `theatre-antique-arles` | Théâtre antique | spot | 필수 | Théâtre antique | chapters/avignon/places.html | Théâtre antique | Roman Theatre of Arles |
+| `place-du-forum-arles` | Place du Forum | spot | 우선 추천 | Place du Forum | chapters/avignon/places.html | Place du Forum | — |
+| `cloitre-saint-trophime` | Cloître Saint-Trophime | spot | 우선 추천 | Cloître Saint-Trophime | chapters/avignon/places.html | Cloître Saint-Trophime | — |
+| `fondation-vincent-van-gogh-arles` | Fondation Vincent van Gogh Arles | spot | 선택 | Fondation Vincent van Gogh | chapters/avignon/places.html | Fondation Vincent van Gogh Arles | — |
+| `la-roquette` | La Roquette | spot | 우선 추천 | La Roquette | chapters/avignon/places.html | La Roquette | — |
 
 ## lyon (10)
 
@@ -137,7 +150,7 @@
 
 ---
 
-**spot 81 · node 3 · 등급 미정 2(그중 원고 충돌 0)**
+**spot 94 · node 3 · 등급 미정 2(그중 원고 충돌 0)**
 
 `*` 는 등급을 본문 헤딩이 아니라 추천등급 표에서 가져왔다는 표시다.
 
