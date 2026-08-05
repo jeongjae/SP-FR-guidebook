@@ -61,6 +61,7 @@ CONTROL_SEL = (
     ".card, .rg-card .card-title, .tp-item, .pl-day, .day-jump a, "
     ".daily-item, .day-actions a, .day-details > summary, .related a, "
     ".pager a, #back-top, #sheet-close"
+    ", .pwa-actions button, .pwa-update button"
 )
 
 JS = r"""
