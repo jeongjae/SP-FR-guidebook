@@ -123,6 +123,8 @@ def static_checks(problems):
         rel = path.relative_to(SITE).as_posix()
         if 'rel="manifest"' not in head:
             problems.append(f"Manifest 링크 없음: {rel}")
+        if 'rel="icon"' not in head:
+            problems.append(f"브라우저 아이콘 링크 없음: {rel}")
         if "assets/pwa.js" not in head:
             problems.append(f"PWA 등록 스크립트 없음: {rel}")
 
@@ -145,7 +147,15 @@ def browser_checks(offline, problems):
             context = browser.new_context(viewport={"width": 390, "height": 844})
             page = context.new_page()
             page.set_default_timeout(20_000)
-            page.on("console", lambda msg: console_errors.append(msg.text) if msg.type == "error" else None)
+
+            def record_console_error(message):
+                if message.type != "error":
+                    return
+                location = message.location.get("url", "")
+                suffix = f" ({location})" if location else ""
+                console_errors.append(message.text + suffix)
+
+            page.on("console", record_console_error)
 
             print("PWA 브라우저 검사: 등록", flush=True)
             page.goto(base + "maps/offline.html", wait_until="domcontentloaded")

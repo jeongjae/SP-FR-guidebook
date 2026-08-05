@@ -1788,6 +1788,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <title>{html.escape(title)} — {SITE_TITLE}</title>
 <link rel="manifest" href="{rel}/manifest.webmanifest">
 <link rel="apple-touch-icon" href="{rel}/assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="{rel}/assets/pwa/icon-192.png">
 {head_extra}<link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
 <body data-rel="{rel}"{country_attr}>
@@ -3370,7 +3371,8 @@ body.map-info-hidden .panel{display:none}
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
 <link rel="manifest" href="../manifest.webmanifest">
-<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">"""
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">"""
         text = text.replace("</head>", pwa_map_head + map_ui_css + "</head>", 1)
         point_list = (f'<details class="point-list"><summary>기준점 {len(features)}개 목록</summary>'
                       f'<ol>{"".join(point_rows)}</ol></details>')
