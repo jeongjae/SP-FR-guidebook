@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "day": 17,
+  "date": "2026-09-14",
+  "city": "Luberon",
+  "title": "오커색과 생활마을",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "3",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "roussillon",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Roussillon",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Roussillon",
+      "menu": null,
+      "reservation": "오커길",
+      "optional": false
+    },
+    {
+      "id": "sentier-des-ocres",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Sentier des Ocres",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Sentier des Ocres",
+      "menu": null,
+      "reservation": "오커길",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "오커길"
+  ],
+  "food": [
+    "Roussillon 점심"
+  ],
+  "highlights": [
+    "Roussillon, Sentier des Ocres",
+    "선택·축소: Goult 또는 Bonnieux 택1"
+  ],
+  "backup": "오커길 축소·카페",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

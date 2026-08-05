@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "day": 11,
+  "date": "2026-09-08",
+  "city": "Nice",
+  "title": "생활·회복·선택문화",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "2",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "lib-ration",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Libération 시장",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Libération 시장",
+      "menu": null,
+      "reservation": "사진미술관·렌터카 준비",
+      "optional": false
+    },
+    {
+      "id": "stop",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "사진미술관 선택",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "사진미술관 선택",
+      "menu": null,
+      "reservation": "사진미술관·렌터카 준비",
+      "optional": false
+    },
+    {
+      "id": "promenade",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "세탁·Promenade",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "세탁·Promenade",
+      "menu": null,
+      "reservation": "사진미술관·렌터카 준비",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "사진미술관·렌터카 준비"
+  ],
+  "food": [
+    "Libération 시장·숙소식"
+  ],
+  "highlights": [
+    "Libération 시장, 사진미술관 선택, 세탁·Promenade",
+    "선택·축소: 사진미술관·추가마을 삭제 가능"
+  ],
+  "backup": "숙소생활·카페",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

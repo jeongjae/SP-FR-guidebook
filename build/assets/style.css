@@ -1422,6 +1422,17 @@ figure.daily-card img {
   border-radius: 6px;
   border: 1px solid var(--border);
 }
+figure.daily-card-v2 a:first-child {
+  display: inline-flex;
+  min-width: var(--tap);
+  min-height: var(--tap);
+  border-radius: 6px;
+}
+figure.daily-card-v2 a:first-child:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+figure.daily-card-v2 figcaption { margin-top: 8px; font-size: var(--t-foot); }
 .daily-region { margin: 24px 0 32px; }
 .daily-region > h2 { margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
 .daily-grid {
