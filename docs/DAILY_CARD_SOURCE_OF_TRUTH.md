@@ -1,7 +1,7 @@
 # Daily Action Map — Source of Truth audit
 
-Audit date: 2026-08-05  
-Working branch: `jeongjae/daily-action-map`  
+Audit date: 2026-08-05
+Working branch: `jeongjae/daily-action-map`
 Baseline commit: `f95d1f4f5a1823262665316ed3b216fc6987522c`
 
 ## Decision
@@ -66,4 +66,3 @@ and schematic rather than geographic maps.
 4. Lock train/flight times, booking times, parking, and restaurant reservations.
 5. Extend coordinate and route review beyond the three prototype days. Missing
    values remain machine-visible in each JSON file and in the QA report.
-

@@ -73,4 +73,3 @@ separate PNG review link. The generated `site/` directory remains untracked.
 Every rendered map carries `© OpenStreetMap contributors`; route geometry is
 identified as OSRM or coordinate-line. Private accommodation coordinates remain
 approximate and must not become public Google Maps links.
-
