@@ -81,7 +81,7 @@ CHAPTERS = [
     dict(path=f"{CORE}/02_Whole_Trip_Experience_Highlights_v1.0.md", slug="02", name="highlights",
          kind="intro", title="전체 여행 하이라이트", sub="43일의 경험 설계"),
     dict(path=f"{CORE}/03_Whole_Trip_Master_Itinerary_v1.2.md", slug="03", name="itinerary",
-         kind="schedule", title="43일 Master Itinerary", sub="전체 일정·실행성 감사 반영"),
+         kind="schedule", title="전체 일정", sub="43일 날짜별 기준 일정"),
     dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v2.0.md", slug="04", name="barcelona", kind="region",
          title="Barcelona · Sitges", start=date(2026, 8, 29), end=date(2026, 9, 1),
          nights=3, map="barcelona.html", region="Barcelona"),
@@ -1687,6 +1687,69 @@ def link_day_cards(body, rel):
     return DAY_H2_RE.sub(add, body)
 
 
+ITINERARY_REGION_SLUGS = {
+    "Barcelona": "barcelona",
+    "Bàscara": "girona",
+    "Nice": "nice",
+    "Aix-en-Provence": "aix",
+    "Luberon": "luberon",
+    "Avignon": "avignon",
+    "Lyon": "lyon",
+    "Paris": "paris",
+    "Paris→Seoul": "paris",
+}
+
+
+def enhance_itinerary_table(body):
+    """43일 표에 이동 링크와 모바일 카드용 의미 클래스를 붙인다.
+
+    원본은 검토하기 쉬운 Markdown 표로 유지하고, 독자 화면에서만 각 날짜를
+    데일리 카드로, 숙박거점을 지역 허브로 연결한다. 첫 표만 전체 일정표다.
+    """
+    match = re.search(r'<div class="table-wrap"><table>.*?</table></div>', body, re.S)
+    if not match:
+        sys.exit("전체 일정표를 찾지 못했다")
+
+    labels = ("Day", "날짜", "숙박거점", "테마", "핵심 일정",
+              "선택·축소", "피로도", "잠금 필요")
+    classes = ("day", "date", "region", "theme", "core", "option", "fatigue", "lock")
+    linked_days = set()
+
+    def enhance_row(row_match):
+        row = row_match.group(0)
+        cells = re.findall(r'<td([^>]*)>(.*?)</td>', row, re.S)
+        if len(cells) != 8:
+            return row
+        try:
+            day = int(plain(cells[0][1]))
+        except ValueError:
+            return row
+        region = plain(cells[2][1]).strip()
+        region_slug = ITINERARY_REGION_SLUGS.get(region)
+        if not region_slug:
+            sys.exit(f"전체 일정표의 숙박거점 링크 대상 없음: Day {day} {region}")
+
+        linked_days.add(day)
+        values = [cell[1] for cell in cells]
+        values[1] = (f'<a class="itinerary-date-link" href="../daily/day-{day:02d}.html">'
+                     f'{values[1]}</a>')
+        values[2] = (f'<a class="itinerary-region-link" href="{region_slug}/index.html">'
+                     f'{values[2]}</a>')
+        rendered = []
+        for (attrs, _value), value, label, class_name in zip(cells, values, labels, classes):
+            rendered.append(
+                f'<td{attrs} class="itinerary-{class_name}" data-label="{label}">{value}</td>')
+        return f'<tr data-day="{day}">{"".join(rendered)}</tr>'
+
+    table = re.sub(r'<tr>(?:(?!</tr>).)*</tr>', enhance_row, match.group(0), flags=re.S)
+    if linked_days != set(range(1, 44)):
+        missing = sorted(set(range(1, 44)) - linked_days)
+        sys.exit("전체 일정표 날짜 링크 누락: " + ", ".join(map(str, missing)))
+    table = table.replace('<div class="table-wrap"><table>',
+                          '<div class="table-wrap itinerary-wrap"><table class="itinerary-table">', 1)
+    return body[:match.start()] + table + body[match.end():]
+
+
 def coords_bar(rel, *, day=None, region=None, topic=None):
     """일자·지역·주제 세 축의 현재 좌표. 현재 축은 굳고 나머지는 링크가 된다.
 
@@ -2437,14 +2500,11 @@ def build_chapters():
             body = re.sub(r"(</h1>)", r"\1" + visual_figure("rhythm", "생활형 여행의 하루 리듬"),
                           body, count=1)
         if c["slug"] == "03":
-            body = re.sub(r"(</h1>)", r"\1" + visual_figure("route", "43일 전체 루트와 숙박구조"),
-                          body, count=1)
-            body += visual_figure("fatigue", "피로도와 일정 삭제순서")
-
+            body = enhance_itinerary_table(body)
         meta_bits = []
         if c["kind"] == "region":
             meta_bits.append(f'{date_label(c["start"])} ~ {date_label(c["end"])} · {c["nights"]}박')
-        if meta.get("version"):
+        if meta.get("version") and c["slug"] != "03":
             meta_bits.append(f'v{meta["version"]}')
 
         rel = chapter_rel(c)
@@ -2458,7 +2518,8 @@ def build_chapters():
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
 
         scan_sections(c, body, chapter_url(c))
-        content = related_box(c) + toc_html(toc_tokens) + link_day_cards(body, rel) + pager
+        chapter_toc = "" if c["slug"] == "03" else toc_html(toc_tokens)
+        content = related_box(c) + chapter_toc + link_day_cards(body, rel) + pager
         dest = SITE / chapter_url(c)
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(
@@ -4479,7 +4540,6 @@ def check_phase7_visual_guards():
 
     expected_visuals = {
         "chapters/how-to-use.html": ("rhythm",),
-        "chapters/itinerary.html": ("route", "fatigue"),
         "tracker/reservations.html": ("risk",),
         "chapters/aix/transport.html": ("cardays",),
         "chapters/luberon/transport.html": ("cardays",),
