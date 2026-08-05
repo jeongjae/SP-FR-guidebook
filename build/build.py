@@ -20,6 +20,7 @@ UI/UX 설계: docs/UIUX_Design_v1.0.md
 """
 
 import html
+import hashlib
 import itertools
 import json
 import re
@@ -60,6 +61,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "source"
 SITE = ROOT / "site"
 ASSETS = ROOT / "build" / "assets"
+PWA_ASSETS = SOURCE / "ASSETS" / "pwa"
 MEDIA_CATALOG = media.load_catalog(ROOT)
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
@@ -1779,7 +1781,13 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
 <title>{html.escape(title)} — {SITE_TITLE}</title>
+<link rel="manifest" href="{rel}/manifest.webmanifest">
+<link rel="apple-touch-icon" href="{rel}/assets/pwa/apple-touch-icon.png">
 {head_extra}<link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
 <body data-rel="{rel}"{country_attr}>
@@ -1808,7 +1816,8 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 </nav>
 <button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
 <script src="{rel}/assets/data.js" defer></script>
-<script src="{rel}/assets/nav.js" defer></script>{script_extra}
+<script src="{rel}/assets/nav.js" defer></script>
+<script src="{rel}/assets/pwa.js" defer></script>{script_extra}
 </body>
 </html>
 """
@@ -3077,7 +3086,7 @@ def build_home():
 <h2 class="ic ic-topic">더 보기</h2>
 <div class="list-group">{tool_rows}</div>
 <p class="note">지도 배경 타일은 인터넷 연결 시 표시됩니다.
-본문·데일리 카드·마커 목록은 오프라인에서도 열람됩니다.</p>
+전체 가이드북 저장을 마치면 본문·데일리 카드·마커 목록을 오프라인에서도 열람할 수 있습니다.</p>
 """
     (SITE / "index.html").write_text(
         page("홈", body, rel=".", topbar_title=SITE_SHORT,
@@ -3155,9 +3164,48 @@ def build_offline_maps():
         f"<td>{pins}</td><td>{cand or ''} / {conf or ''}</td><td>{size:,} B</td></tr>"
         for slug, region, pins, cand, conf, size in files)
 
-    body = f"""<h1>오프라인 지도 — Organic Maps</h1>
-<p class="meta">로밍이 끊겨도 도보·운전 안내가 되게 하는 준비다.
-출발 전 Wi-Fi 에서 한 번만 해두면 된다.</p>
+    body = f"""<h1>오프라인 준비</h1>
+<p class="meta">가이드북과 실제 길찾기를 출발 전 Wi-Fi에서 준비한다.
+저장 완료 표시는 비행기 모드 점검까지 끝났다는 뜻이 아니다.</p>
+
+<section aria-labelledby="pwa-heading">
+<h2 id="pwa-heading" class="ic ic-download">iPhone에 가이드북 저장</h2>
+<p>GitHub Pages 주소를 Safari에서 연 뒤 <b>공유 → 홈 화면에 추가</b>를 선택하고,
+가능하면 <b>웹 앱으로 열기</b>를 켠다. 홈 화면에서 가이드북을 다시 연 다음 아래
+버튼으로 전체 콘텐츠를 저장한다.</p>
+<ol class="pwa-install-steps">
+<li>Safari에서 이 페이지를 연다.</li>
+<li>공유 메뉴에서 <b>홈 화면에 추가</b>를 선택한다.</li>
+<li>홈 화면의 <b>유럽 가이드북</b> 아이콘으로 다시 연다.</li>
+<li>Wi-Fi에서 전체 저장을 마친 뒤 비행기 모드로 다시 열어본다.</li>
+</ol>
+<div id="pwa-panel" class="pwa-panel" data-state="loading" hidden>
+  <p id="pwa-install-mode" class="pwa-mode">실행 모드를 확인하고 있습니다.</p>
+  <div class="pwa-status" aria-live="polite" aria-atomic="true">
+    <b id="pwa-status">오프라인 상태를 확인하고 있습니다</b>
+    <span id="pwa-detail">잠시 기다려 주세요.</span>
+    <small id="pwa-version"></small>
+  </div>
+  <progress id="pwa-progress" value="0" max="1" aria-label="전체 가이드북 저장 진행률"></progress>
+  <div class="pwa-actions">
+    <button id="pwa-save" type="button">전체 가이드북 저장</button>
+    <button id="pwa-clear" class="pwa-clear" type="button" hidden>저장 사본 삭제</button>
+  </div>
+  <p id="pwa-storage" class="pwa-storage">저장 공간을 확인하고 있습니다.</p>
+  <div id="pwa-update-box" class="pwa-update" hidden>
+    <b>새 앱 버전을 사용할 수 있습니다.</b>
+    <button id="pwa-activate-update" type="button">새 버전 적용</button>
+  </div>
+</div>
+<p class="offline-note">iOS는 저장 공간이 부족하거나 앱을 오래 사용하지 않으면 웹 데이터를
+정리할 수 있다. 출발 전과 장거리 이동 전에는 이 화면에서 <b>오프라인 준비 완료</b>와
+저장 시각을 다시 확인한다.</p>
+</section>
+
+<section aria-labelledby="organic-heading">
+<h2 id="organic-heading" class="ic ic-map">Organic Maps 준비</h2>
+<p>로밍이 끊겨도 도보·운전 안내가 되게 하는 별도 지도 준비다.
+출발 전 Wi-Fi에서 한 번만 해두면 된다.</p>
 
 {net_note("KML 파일은 이미 이 기기에 있어 지금도 내려받을 수 있습니다.")}
 
@@ -3209,12 +3257,13 @@ UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 �
 <p class="offline-note">Organic Maps 는 이 가이드북과 무관한 별도 앱이다.
 설치 링크를 여기에 걸지 않은 것은 스토어 주소가 바뀔 수 있어서다.
 앱스토어·Play 스토어에서 <b>Organic Maps</b> 로 검색한다.</p>
+</section>
 
 <nav class="pager"><a href="index.html">← 실행지도 목록</a><span></span></nav>"""
     (out_dir / "offline.html").write_text(
-        page("오프라인 지도", body, rel="..",
+        page("오프라인 준비", body, rel="..",
              back=crumbs_for(("지도", "maps/index.html"), ("오프라인", None))), encoding="utf-8")
-    SEARCH_INDEX.append({"t": "오프라인 지도 — Organic Maps", "c": "실행지도",
+    SEARCH_INDEX.append({"t": "오프라인 준비 — iPhone PWA·Organic Maps", "c": "실행지도",
                          "u": "maps/offline.html"})
     amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
     print(f"  오프라인 지도: KML {len(files)}개 · 핀 {total_pins}개"
@@ -3315,7 +3364,14 @@ def build_maps():
 body.map-info-hidden .panel{display:none}
 @media(max-width:600px){.panel{left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right));top:max(58px,calc(env(safe-area-inset-top) + 50px));max-width:none;max-height:55vh;overflow:auto;padding:10px 12px}.panel h1{font-size:16px}.panel p{font-size:11px}.map-info-toggle{left:max(8px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom))}}
 </style>"""
-        text = text.replace("</head>", map_ui_css + "</head>", 1)
+        pwa_map_head = """
+<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">"""
+        text = text.replace("</head>", pwa_map_head + map_ui_css + "</head>", 1)
         point_list = (f'<details class="point-list"><summary>기준점 {len(features)}개 목록</summary>'
                       f'<ol>{"".join(point_rows)}</ol></details>')
         text = text.replace('</div></div>\n<script src="vendor/leaflet/leaflet.js">',
@@ -3332,7 +3388,8 @@ mapInfoButton.addEventListener('click',()=>{
  mapInfoButton.setAttribute('aria-label',hidden?'지도 안내 보기':'지도 안내 접기');
 });
 </script>"""
-        text = text.replace("</body>", toggle_js + "</body>", 1)
+        text = text.replace("</body>", toggle_js +
+                            '<script src="../assets/pwa.js" defer></script></body>', 1)
         text = link_map_places(text, out_name)
         # 실행지도는 원본 HTML 이라 페이지 셸을 거치지 않는다. 안전영역을 쓰려면
         # 여기서도 viewport-fit=cover 를 넣어야 한다.
@@ -3350,7 +3407,8 @@ mapInfoButton.addEventListener('click',()=>{
             '<p class="meta">43일 일정에 연결된 8개 지역별 기준점 지도. 카드의 Day 범위를 확인하고, '
             '마커 또는 기준점 목록의 길찾기를 누르면 Google Maps가 열린다. '
             '배경 타일은 인터넷 연결 시 표시된다.</p>'
-            '<div class="related"><a href="offline.html">📴 오프라인 지도 준비 — Organic Maps</a></div>'
+            '<div class="related"><a href="offline.html"><b class="ic ic-download" aria-hidden="true"></b>'
+            '오프라인 준비 — iPhone·Organic Maps</a></div>'
             + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
             + f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
@@ -3971,6 +4029,108 @@ def build_data_js():
     js = "window.GUIDE = " + json.dumps(data, ensure_ascii=False) + ";\n"
     (SITE / "assets" / "data.js").write_text(js, encoding="utf-8")
     print(f"  data.js: 날짜 매핑 {len(today_map)}일 · 검색 인덱스 {len(clean_index)}항목")
+
+
+# ---------------------------------------------------------------- PWA
+
+PWA_ICON_SPECS = (
+    ("apple-touch-icon.png", "180x180", "any"),
+    ("icon-192.png", "192x192", "any"),
+    ("icon-512.png", "512x512", "any"),
+    ("icon-maskable-512.png", "512x512", "maskable"),
+)
+
+PWA_CORE_PATHS = (
+    "index.html",
+    "offline-fallback.html",
+    "maps/offline.html",
+    "chapters/itinerary.html",
+    "daily/index.html",
+    "regions.html",
+    "tracker/index.html",
+    "assets/style.css",
+    "assets/data.js",
+    "assets/nav.js",
+    "assets/pwa.js",
+    "assets/vendor/nanum/nanum-gothic-latin-400-normal.woff2",
+    "assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2",
+    "assets/vendor/nanum/nanum-gothic-latin-700-normal.woff2",
+    "assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2",
+    "manifest.webmanifest",
+    "assets/pwa/apple-touch-icon.png",
+    "assets/pwa/icon-192.png",
+    "assets/pwa/icon-512.png",
+    "assets/pwa/icon-maskable-512.png",
+)
+
+
+def build_pwa():
+    """Manifest, 결정적 파일 목록과 버전이 삽입된 Service Worker를 만든다."""
+    manifest = {
+        "id": "./",
+        "name": SITE_TITLE,
+        "short_name": "유럽 가이드북",
+        "description": "Barcelona에서 Paris까지 43일 여행 현장 가이드북",
+        "lang": "ko",
+        "start_url": "./index.html",
+        "scope": "./",
+        "display": "standalone",
+        "background_color": "#EFF1F6",
+        "theme_color": "#000091",
+        "icons": [
+            {"src": f"./assets/pwa/{name}", "sizes": sizes,
+             "type": "image/png", "purpose": purpose}
+            for name, sizes, purpose in PWA_ICON_SPECS
+        ],
+    }
+    (SITE / "manifest.webmanifest").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    fallback_body = """<h1>이 페이지는 아직 저장되지 않았습니다</h1>
+<p class="offline-note"><b>인터넷 연결이 없고 요청한 페이지가 기기에 없습니다.</b>
+연결이 가능할 때 오프라인 준비 화면에서 전체 가이드북 저장을 완료하세요.</p>
+<div class="related">
+  <a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>저장된 홈 열기</a>
+  <a href="maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 준비 확인</a>
+</div>"""
+    (SITE / "offline-fallback.html").write_text(
+        page("오프라인 페이지 없음", fallback_body, rel=".",
+             back=[(SITE_SHORT, "index.html"), ("오프라인", None)]), encoding="utf-8")
+
+    excluded = {"sw.js", "offline-files.json", ".nojekyll"}
+    records = []
+    version_hash = hashlib.sha256()
+    for path in sorted(p for p in SITE.rglob("*") if p.is_file()):
+        relpath = path.relative_to(SITE).as_posix()
+        if relpath in excluded:
+            continue
+        content = path.read_bytes()
+        digest = hashlib.sha256(content).hexdigest()
+        records.append({"path": relpath, "size": len(content), "sha256": digest})
+        version_hash.update(relpath.encode("utf-8") + b"\0")
+        version_hash.update(digest.encode("ascii") + b"\n")
+    version = version_hash.hexdigest()
+    offline_manifest = {
+        "version": version,
+        "totalFiles": len(records),
+        "totalBytes": sum(item["size"] for item in records),
+        "files": records,
+    }
+    (SITE / "offline-files.json").write_text(
+        json.dumps(offline_manifest, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8")
+
+    missing_core = [path for path in PWA_CORE_PATHS if not (SITE / path).is_file()]
+    if missing_core:
+        sys.exit("PWA 핵심 파일 누락: " + ", ".join(missing_core))
+    template = (ASSETS / "service-worker.js").read_text(encoding="utf-8")
+    service_worker = template.replace("__PWA_VERSION__", version).replace(
+        "__PWA_CORE_PATHS__", json.dumps(PWA_CORE_PATHS, ensure_ascii=False))
+    if "__PWA_" in service_worker:
+        sys.exit("Service Worker 템플릿 토큰이 남아 있다")
+    (SITE / "sw.js").write_text(service_worker, encoding="utf-8")
+    print(f"PWA: {len(records)}개 파일 · {offline_manifest['totalBytes'] / 1048576:.1f} MiB"
+          f" · 버전 {version[:12]}")
 
 
 # ---------------------------------------------------------------- checks
@@ -4629,7 +4789,10 @@ def check_links():
             for target in re.findall(rf'{attr}="([^"]+)"', text):
                 if target.startswith(("http", "#", "mailto:", "data:")) or "${" in target:
                     continue
-                path = (f.parent / target.split("#")[0]).resolve()
+                # WSL의 Windows 마운트에서 resolve()는 링크 하나마다 실제 경로를
+                # 조회해 매우 느리다. exists()는 `..`를 포함한 상대경로도 그대로
+                # 확인하므로 링크 검사 정확도를 유지하면서 불필요한 정규화를 피한다.
+                path = f.parent / target.split("#")[0]
                 if not path.exists():
                     broken.append(f"{f.relative_to(SITE)} → {target}")
     if broken:
@@ -4667,6 +4830,8 @@ def main():
         (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
         encoding="utf-8")
     shutil.copy(ASSETS / "nav.js", SITE / "assets" / "nav.js")
+    shutil.copy(ASSETS / "pwa.js", SITE / "assets" / "pwa.js")
+    shutil.copytree(PWA_ASSETS, SITE / "assets" / "pwa", dirs_exist_ok=True)
     daily_map_payload, _daily_maps = load_daily_maps()
     (SITE / "assets" / "daily-map-data.js").write_text(
         "window.DAILY_MAP_DATA = " +
@@ -4716,6 +4881,7 @@ def main():
         f'{key} {len(graph[key])}' for key in
         ("regions", "days", "places", "stays", "reservations", "transports")))
     build_data_js()
+    build_pwa()
     check_visual_tokens()
     check_naming()
     check_day_sections()
