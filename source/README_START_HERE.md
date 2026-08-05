@@ -6,6 +6,7 @@
 ## 시작 순서
 1. `CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md` — 정본 목록
 2. `CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md` — 43일 뼈대
+   - 숙박 날짜·박수의 구조화된 정본은 같은 폴더의 `itinerary.json`
 3. `CURRENT/20_Regional_Chapters/` — 지역 정본 8개 (v2.0/v2.1)
 4. `OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md`
 5. `OPERATIONS/117_Departure_and_Daily_Reverification_Calendar_v1.0.md`
