@@ -23,7 +23,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역 숙소 예약 잠금을 반영�
 - 일정: 2026-09-01 체크인 · 2026-09-04 체크아웃 · 3박
 - 채널: Airbnb
 - 표시명: 바스카라의 B&B
-- 주소: Plaça de l’Església, 6, 17483 Bàscara, Catalonia, Spain
+- 주소: 비공개 숙소 · 정확 주소는 개인 보관본에서 확인
 - 여행자: Jason·Julia
 - 확정번호·가격·결제조건·체크인 시간·주차·조식·취소조건: 재확인
 - 운영 변경: Girona 시내 숙박이 아닌 Bàscara 농촌 거점으로 Day 4–7 출발·귀환 기준 변경

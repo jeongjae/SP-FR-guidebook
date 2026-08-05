@@ -6,6 +6,7 @@ on:
     paths:
       - "source/**"
       - "build/**"
+      - "scripts/**"
   workflow_dispatch:
 
 permissions:
@@ -26,10 +27,14 @@ jobs:
           python-version: "3.12"
 
       - name: Build site
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          GOOGLE_MAPS_MAP_ID: ${{ secrets.GOOGLE_MAPS_MAP_ID }}
         run: |
           pip install -r requirements-build.txt
           python -m playwright install --with-deps chromium
           python3 scripts/generate_attributions.py --check
+          python3 scripts/validate_map_data.py --quiet-warnings
           python3 build/build.py
           python3 scripts/validate_itinerary.py
           python3 scripts/validate_media.py
