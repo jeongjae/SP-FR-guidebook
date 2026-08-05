@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sp-fr-guidebook.example/schema/map-schema.json",
+  "title": "SP-FR Google Maps migration data",
+  "oneOf": [
+    { "$ref": "#/$defs/placeRegistry" },
+    { "$ref": "#/$defs/dailyRoutes" },
+    { "$ref": "#/$defs/regionGroups" }
+  ],
+  "$defs": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "coordinatePair": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "number", "minimum": -90, "maximum": 90 },
+        { "type": "number", "minimum": -180, "maximum": 180 }
+      ],
+      "items": false
+    },
+    "place": {
+      "type": "object",
+      "required": ["id", "name", "city", "type", "lat", "lng", "googlePlaceId", "googleMapsUrl", "address", "private", "approximate", "optional", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "city": { "type": "string", "minLength": 1 },
+        "type": { "enum": ["accommodation", "attraction", "market", "station", "airport", "parking"] },
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+        "googlePlaceId": { "type": "string" },
+        "googleMapsUrl": { "type": "string" },
+        "address": { "type": "string" },
+        "private": { "type": "boolean" },
+        "approximate": { "type": "boolean" },
+        "optional": { "type": "boolean" },
+        "status": { "enum": ["confirmed", "planned", "candidate", "alternative"] },
+        "editorialSlug": { "type": "string" },
+        "legacySources": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "sourceUrl": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "stop": {
+      "type": "object",
+      "required": ["placeId", "order", "plannedTime"],
+      "properties": {
+        "placeId": { "type": "string" },
+        "order": { "type": "integer", "minimum": 0 },
+        "plannedTime": { "type": "string" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "segment": {
+      "type": "object",
+      "required": ["from", "to", "mode"],
+      "properties": {
+        "from": { "type": "string" },
+        "to": { "type": "string" },
+        "mode": { "enum": ["walking", "driving", "transit", "bicycling"] },
+        "note": { "type": "string" },
+        "optional": { "type": "boolean" },
+        "manual": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "day": {
+      "type": "object",
+      "required": ["date", "city", "title", "center", "zoom", "defaultMode", "stops", "segments"],
+      "properties": {
+        "date": { "type": "string", "format": "date" },
+        "city": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "center": { "$ref": "#/$defs/coordinatePair" },
+        "zoom": { "type": "integer", "minimum": 1, "maximum": 22 },
+        "defaultMode": { "enum": ["walking", "driving", "transit", "bicycling"] },
+        "stops": { "type": "array", "items": { "$ref": "#/$defs/stop" }, "minItems": 1 },
+        "segments": { "type": "array", "items": { "$ref": "#/$defs/segment" } }
+      },
+      "additionalProperties": false
+    },
+    "region": {
+      "type": "object",
+      "required": ["id", "label", "center", "zoom", "placeIds"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "label": { "type": "string", "minLength": 1 },
+        "center": { "$ref": "#/$defs/coordinatePair" },
+        "zoom": { "type": "integer", "minimum": 1, "maximum": 22 },
+        "placeIds": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "placeRegistry": {
+      "type": "object",
+      "required": ["schemaVersion", "places"],
+      "properties": {
+        "schemaVersion": { "$ref": "#/$defs/schemaVersion" },
+        "places": { "type": "array", "items": { "$ref": "#/$defs/place" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "dailyRoutes": {
+      "type": "object",
+      "required": ["schemaVersion", "days"],
+      "properties": {
+        "schemaVersion": { "$ref": "#/$defs/schemaVersion" },
+        "days": { "type": "array", "items": { "$ref": "#/$defs/day" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    },
+    "regionGroups": {
+      "type": "object",
+      "required": ["schemaVersion", "regions"],
+      "properties": {
+        "schemaVersion": { "$ref": "#/$defs/schemaVersion" },
+        "regions": { "type": "array", "items": { "$ref": "#/$defs/region" }, "minItems": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}
