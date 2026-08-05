@@ -10,6 +10,7 @@ echo "=============================================="
 echo " TP 유럽 여행 가이드북 서버 시작"
 echo "   PC에서:      http://localhost:${PORT}"
 [ -n "$IP" ] && echo "   모바일에서:  http://${IP}:${PORT}  (같은 Wi-Fi)"
+echo "   PWA 설치:    GitHub Pages HTTPS 주소 사용"
 echo "   종료: Ctrl+C"
 echo "=============================================="
 

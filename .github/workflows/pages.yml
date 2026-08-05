@@ -33,6 +33,7 @@ jobs:
           python3 scripts/generate_attributions.py --check
           python3 build/build.py
           python3 scripts/validate_media.py
+          python3 build/pwa_check.py
           python3 build/hig_check.py
           touch site/.nojekyll
 
