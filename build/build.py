@@ -32,6 +32,14 @@ from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 
+# Windows' legacy console encoding (for example CP949) cannot represent every
+# punctuation character used by the build log. Keep normal invocations from
+# failing while printing diagnostics; CI and redirected logs stay UTF-8 too.
+if sys.platform == "win32":
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons                     # noqa: E402  — 아이콘 마스크 생성기
 import content_model             # noqa: E402  — stable-ID content graph

@@ -22,6 +22,13 @@ import shutil
 import sys
 from pathlib import Path
 
+# Windows' legacy console encoding (for example CP949) cannot represent every
+# punctuation character used by the audit report.
+if sys.platform == "win32":
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
+
 from playwright.sync_api import sync_playwright
 
 SITE = Path(__file__).resolve().parent.parent / "site"
