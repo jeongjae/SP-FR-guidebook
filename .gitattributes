@@ -1,0 +1,18 @@
+# Normalize line endings to LF everywhere so Windows/WSL checkouts of the
+# same tree never diverge into whole-file CRLF diffs.
+* text=auto eol=lf
+
+# Binary assets — never touch line endings.
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.zip binary
+*.pdf binary
+*.xlsx binary
