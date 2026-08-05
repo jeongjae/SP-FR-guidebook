@@ -408,10 +408,10 @@
       "number": 29,
       "date": "2026-09-26",
       "regionId": "region:paris",
-      "theme": "Paris 미술·세느강 권역 — v1.1 확인",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "Saint-Germain·Luxembourg·Seine",
+      "dayType": "로컬 라이프",
+      "fatigue": 2,
+      "status": "검토중",
       "url": "daily/day-29.html"
     },
     {
@@ -419,10 +419,10 @@
       "number": 30,
       "date": "2026-09-27",
       "regionId": "region:paris",
-      "theme": "Paris 생활일·운동",
-      "dayType": "체류",
+      "theme": "고전 파리 오리엔테이션",
+      "dayType": "방향잡기",
       "fatigue": 3,
-      "status": "초안",
+      "status": "검토중",
       "url": "daily/day-30.html"
     },
     {
@@ -430,10 +430,10 @@
       "number": 31,
       "date": "2026-09-28",
       "regionId": "region:paris",
-      "theme": "Paris 대표 미술관·도심",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "세탁·쇼핑·Fashion Week 개막",
+      "dayType": "로컬 라이프",
+      "fatigue": 2,
+      "status": "검토중",
       "url": "daily/day-31.html"
     },
     {
@@ -441,10 +441,10 @@
       "number": 32,
       "date": "2026-09-29",
       "regionId": "region:paris",
-      "theme": "라틴지구·도서관",
-      "dayType": "체류",
+      "theme": "Orsay 또는 Orangerie",
+      "dayType": "박물관",
       "fatigue": 3,
-      "status": "초안",
+      "status": "검토중",
       "url": "daily/day-32.html"
     },
     {
@@ -452,10 +452,10 @@
       "number": 33,
       "date": "2026-09-30",
       "regionId": "region:paris",
-      "theme": "동네 산책·미술",
-      "dayType": "체류",
+      "theme": "Fashion Week 공개동선 반일",
+      "dayType": "고정 경험",
       "fatigue": 3,
-      "status": "초안",
+      "status": "검토중",
       "url": "daily/day-33.html"
     },
     {
@@ -463,10 +463,10 @@
       "number": 34,
       "date": "2026-10-01",
       "regionId": "region:paris",
-      "theme": "완충일·공연 후보",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "Rossini 오페라일",
+      "dayType": "고정 공연",
+      "fatigue": 5,
+      "status": "검토중",
       "url": "daily/day-34.html"
     },
     {
@@ -474,10 +474,10 @@
       "number": 35,
       "date": "2026-10-02",
       "regionId": "region:paris",
-      "theme": "Marais·도시사",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "오페라 뒤 회복일",
+      "dayType": "회복·로컬",
+      "fatigue": 1,
+      "status": "검토중",
       "url": "daily/day-35.html"
     },
     {
@@ -485,10 +485,10 @@
       "number": 36,
       "date": "2026-10-03",
       "regionId": "region:paris",
-      "theme": "Paris 근교 1",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "박물관·서점·동네 중 하나",
+      "dayType": "유연한 문화",
+      "fatigue": 2,
+      "status": "검토중",
       "url": "daily/day-36.html"
     },
     {
@@ -496,10 +496,10 @@
       "number": 37,
       "date": "2026-10-04",
       "regionId": "region:paris",
-      "theme": "생활일·시장·스케치",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "Qatar Prix de l’Arc 메인 레이스",
+      "dayType": "고정 스포츠",
+      "fatigue": 5,
+      "status": "검토중",
       "url": "daily/day-37.html"
     },
     {
@@ -507,10 +507,10 @@
       "number": 38,
       "date": "2026-10-05",
       "regionId": "region:paris",
-      "theme": "현대미술·건축",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "Arc 뒤 회복일",
+      "dayType": "회복",
+      "fatigue": 1,
+      "status": "검토중",
       "url": "daily/day-38.html"
     },
     {
@@ -518,10 +518,10 @@
       "number": 39,
       "date": "2026-10-06",
       "regionId": "region:paris",
-      "theme": "특별전·미술 일정",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "동부 파리 또는 Hamlet 백업",
+      "dayType": "로컬 라이프",
+      "fatigue": 2,
+      "status": "검토중",
       "url": "daily/day-39.html"
     },
     {
@@ -529,10 +529,10 @@
       "number": 40,
       "date": "2026-10-07",
       "regionId": "region:paris",
-      "theme": "Paris 근교 2",
-      "dayType": "체류",
+      "theme": "Fête des Vendanges de Montmartre",
+      "dayType": "고정 축제",
       "fatigue": 3,
-      "status": "초안",
+      "status": "검토중",
       "url": "daily/day-40.html"
     },
     {
@@ -540,10 +540,10 @@
       "number": 41,
       "date": "2026-10-08",
       "regionId": "region:paris",
-      "theme": "도서관·공연",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "Chaillot·Este Mundo 선택",
+      "dayType": "선택 문화",
+      "fatigue": 2,
+      "status": "검토중",
       "url": "daily/day-41.html"
     },
     {
@@ -551,10 +551,10 @@
       "number": 42,
       "date": "2026-10-09",
       "regionId": "region:paris",
-      "theme": "자유일·쇼핑·짐정리",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "theme": "Hamlet·최종 포장",
+      "dayType": "고정 공연",
+      "fatigue": 5,
+      "status": "검토중",
       "url": "daily/day-42.html"
     },
     {
@@ -564,8 +564,8 @@
       "regionId": "region:paris",
       "theme": "체크아웃·공항·귀국",
       "dayType": "귀국",
-      "fatigue": 5,
-      "status": "초안",
+      "fatigue": 3,
+      "status": "검토중",
       "url": "daily/day-43.html"
     }
   ],
@@ -1702,8 +1702,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:020",
-        "day:040"
+        "day:020"
       ],
       "dayEvidence": "시간표",
       "url": "places/les-halles.html"
@@ -2136,7 +2135,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:033"
+        "day:036"
       ],
       "dayEvidence": "시간표",
       "url": "places/bnf-richelieu.html"
@@ -2155,10 +2154,8 @@
         "Bourse de Commerce — Pinault Collection"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:040"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/bourse-de-commerce-pinault-collection.html"
     },
     {
@@ -2195,7 +2192,7 @@
       "dayIds": [
         "day:041"
       ],
-      "dayEvidence": "시간표",
+      "dayEvidence": "실행 감사표",
       "url": "places/giverny.html"
     },
     {
@@ -2215,7 +2212,7 @@
       "dayIds": [
         "day:034"
       ],
-      "dayEvidence": "시간표",
+      "dayEvidence": "실행 감사표",
       "url": "places/grand-palais.html"
     },
     {
@@ -2269,7 +2266,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:032"
+        "day:040"
       ],
       "dayEvidence": "시간표",
       "url": "places/montmartre-south-pigalle.html"
@@ -2290,7 +2287,7 @@
       "dayIds": [
         "day:040"
       ],
-      "dayEvidence": "시간표",
+      "dayEvidence": "실행 감사표",
       "url": "places/montorgueil.html"
     },
     {
@@ -2325,7 +2322,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:039"
+        "day:032"
       ],
       "dayEvidence": "시간표",
       "url": "places/musee-d-orsay.html"
@@ -2343,8 +2340,10 @@
         "Musée de l'Orangerie"
       ],
       "legacySlugs": [],
-      "dayIds": [],
-      "dayEvidence": null,
+      "dayIds": [
+        "day:032"
+      ],
+      "dayEvidence": "시간표",
       "url": "places/musee-de-l-orangerie.html"
     },
     {
@@ -2753,26 +2752,74 @@
       "scheduledDate": "2026-10-01",
       "dayId": "day:034",
       "category": "공연",
-      "name": "오페라/클래식/재즈 1~2회",
-      "status": "미조사",
+      "name": "1/6 Il Barbiere di Siviglia — Opéra Bastille",
+      "status": "예약대기",
       "priority": "P1",
-      "targetDate": "2026-08-10",
-      "sourceUrl": null
+      "targetDate": "2026-08-05",
+      "sourceUrl": "https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229122672727&lang=en"
     },
     {
       "id": "reservation:r022",
       "regionId": "region:paris",
-      "scheduledDate": "2026-10-04",
-      "dayId": "day:037",
-      "category": "축구",
-      "name": "축구 경기 후보",
-      "status": "미조사",
+      "scheduledDate": "2026-10-09",
+      "dayId": "day:042",
+      "category": "공연",
+      "name": "2/6 Hamlet — Opéra Bastille",
+      "status": "예약대기",
       "priority": "P1",
-      "targetDate": "2026-08-10",
-      "sourceUrl": null
+      "targetDate": "2026-08-05",
+      "sourceUrl": "https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229118155385&lang=en"
     },
     {
       "id": "reservation:r023",
+      "regionId": "region:paris",
+      "scheduledDate": "2026-10-04",
+      "dayId": "day:037",
+      "category": "입장권",
+      "name": "3/6 Qatar Prix de l’Arc de Triomphe",
+      "status": "예약대기",
+      "priority": "P1",
+      "targetDate": "2026-08-05",
+      "sourceUrl": "https://billetterie.france-galop.com/en/event/qatar-prix-de-larc-de-triomphe/"
+    },
+    {
+      "id": "reservation:r024",
+      "regionId": "region:paris",
+      "scheduledDate": "2026-10-08",
+      "dayId": "day:041",
+      "category": "공연",
+      "name": "4/6 Este Mundo — Chaillot (선택)",
+      "status": "예약대기",
+      "priority": "P2",
+      "targetDate": "2026-09-15",
+      "sourceUrl": "https://www.festival-automne.com/fr/edition-2026/bouchra-ouizguen-este-mundo"
+    },
+    {
+      "id": "reservation:r025",
+      "regionId": "region:paris",
+      "scheduledDate": "2026-10-07",
+      "dayId": "day:040",
+      "category": "입장권",
+      "name": "5/6 Clos Montmartre 제한 내부방문",
+      "status": "재확인",
+      "priority": "P2",
+      "targetDate": "2026-09-14",
+      "sourceUrl": "https://fetedesvendangesdemontmartre.com/le-programme/"
+    },
+    {
+      "id": "reservation:r026",
+      "regionId": "region:paris",
+      "scheduledDate": null,
+      "dayId": null,
+      "category": "공연",
+      "name": "6/6 교회 콘서트 — 정확한 프로그램 확인 후",
+      "status": "재확인",
+      "priority": "P2",
+      "targetDate": "2026-09-15",
+      "sourceUrl": null
+    },
+    {
+      "id": "reservation:r027",
       "regionId": null,
       "scheduledDate": "2026-08-20",
       "dayId": null,
@@ -2784,7 +2831,7 @@
       "sourceUrl": null
     },
     {
-      "id": "reservation:r024",
+      "id": "reservation:r028",
       "regionId": null,
       "scheduledDate": "2026-08-25",
       "dayId": null,
