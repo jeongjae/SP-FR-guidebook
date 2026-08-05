@@ -19,10 +19,10 @@ status: "전 지역 편집자 추천 요약"
 | 6 | Cours Saleya 시장과 Nice 구시가지 | Nice | 프랑스 첫 생활도시 경험 |
 | 7 | Cannes·Monaco의 도시성 비교 | Côte d’Azur | 리조트도시와 도시국가의 대비 |
 | 8 | Aix 시장재료로 숙소 점심 만들기 | Aix | 프로방스 생활리듬 시작 |
-| 9 | Cassis의 Calanques와 Marseille 항구 | Provence coast | 내륙과 지중해 대도시의 대비 |
+| 9 | Marseille의 Vieux-Port·Le Panier·Mucem | Provence coast | 내륙 생활도시와 지중해 항구대도시의 대비 |
 | 10 | Luberon 농가 테라스의 느린 저녁 | Luberon | 농가숙박의 핵심 목적 |
 | 11 | Roussillon 오커와 Gordes 석조마을 | Luberon | 지질과 건축의 관계 |
-| 12 | Palais des Papes와 Pont du Gard | Avignon region | 중세권력과 로마공학의 대비 |
+| 12 | Palais des Papes·Pont du Gard·Arles | Avignon region | 중세권력, 로마공학과 실제 도시생활의 대비 |
 | 13 | Fourvière에서 두 강의 도시 읽기 | Lyon | 도시지형을 한눈에 이해 |
 | 14 | Annecy 구시가지에서 호수로 걸어나가기 | Annecy | 도시와 알프스 자연의 전환 |
 | 15 | 파리에서 같은 시장·빵집 반복 이용 | Paris | ‘한 달 살기 축소판’의 핵심 |
@@ -35,7 +35,7 @@ status: "전 지역 편집자 추천 요약"
 | Barcelona | 타파스 또는 해산물 | 작은 접시 3~4개 또는 해산물 3종 |
 | Girona·Empordà | 카탈루냐 전통식·Collioure 생선 | 장거리 운전일에는 코스 축소 |
 | Nice | petits farcis·daube·socca | socca는 간식, 전통저녁은 한 번 |
-| Aix | 시장식·계절 지중해요리 | Cassis 해산물 뒤 저녁은 가볍게 |
+| Aix | 시장식·계절 지중해요리 | Marseille 점심 뒤 저녁은 가볍게 |
 | Luberon | 농가 테라스 식사 | 시장재료를 직접 조합 |
 | Avignon | 남부 비스트로·Halles 포장식 | 특별식 1회, 시장식 1회 이상 |
 | Lyon | quenelle 중심 bouchon | bouchon은 1~2회, 과식 방지 |
@@ -59,7 +59,7 @@ status: "전 지역 편집자 추천 요약"
 
 - Nice 해변 또는 항구 카페 45분
 - Calella de Palafrugell 바다 앞 30분
-- Luberon 농가생활 반나절
+- Luberon 농가의 느린 아침과 매일 귀환 후 저녁
 - Avignon 성벽 안 저녁산책
 - Lyon Parc de la Tête d’Or 1시간
 - Paris 일요일 완충일과 매일 오후·저녁 사이 1시간

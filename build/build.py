@@ -44,6 +44,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons                     # noqa: E402  — 아이콘 마스크 생성기
 import content_model             # noqa: E402  — stable-ID content graph
 import media                     # noqa: E402  — licensed local image catalog
+import itinerary                 # noqa: E402  — structured stay-plan source of truth
 from xml.etree import ElementTree
 
 try:
@@ -66,9 +67,12 @@ MEDIA_CATALOG = media.load_catalog(ROOT)
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
 SITE_SHORT = "2026 유럽 여행 가이드북"
-TRIP_PERIOD = "2026-08-29 ~ 2026-10-10 · 43일 42박"
-TRIP_START = date(2026, 8, 29)
-TRIP_END = date(2026, 10, 10)
+ITINERARY = itinerary.load_itinerary(ROOT)
+STAYS = itinerary.stays_by_key(ITINERARY)
+TRIP_START = date.fromisoformat(ITINERARY["trip"]["start"])
+TRIP_END = date.fromisoformat(ITINERARY["trip"]["end"])
+TRIP_PERIOD = (f"{TRIP_START.isoformat()} ~ {TRIP_END.isoformat()} · "
+               f"{ITINERARY['trip']['days']}일 {ITINERARY['trip']['nights']}박")
 WEEKDAY_KO = ["월", "화", "수", "목", "금", "토", "일"]
 
 CORE = "CURRENT/10_Core"
@@ -83,29 +87,29 @@ CHAPTERS = [
     dict(path=f"{CORE}/03_Whole_Trip_Master_Itinerary_v1.2.md", slug="03", name="itinerary",
          kind="schedule", title="전체 일정", sub="43일 날짜별 기준 일정"),
     dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v2.0.md", slug="04", name="barcelona", kind="region",
-         title="Barcelona · Sitges", start=date(2026, 8, 29), end=date(2026, 9, 1),
-         nights=3, map="barcelona.html", region="Barcelona"),
+         title="Barcelona · Sitges", start=date.fromisoformat(STAYS["barcelona"]["checkin"]), end=date.fromisoformat(STAYS["barcelona"]["checkout"]),
+         nights=STAYS["barcelona"]["nights"], map="barcelona.html", region="Barcelona"),
     dict(path=f"{REGIONAL}/05_Girona_Collioure_Emporda_v2.1.md", slug="05", name="girona", kind="region",
-         title="Girona · Collioure · Empordà", start=date(2026, 9, 1), end=date(2026, 9, 4),
-         nights=3, map="girona.html", region="Girona"),
+         title="Girona · Collioure · Empordà", start=date.fromisoformat(STAYS["girona"]["checkin"]), end=date.fromisoformat(STAYS["girona"]["checkout"]),
+         nights=STAYS["girona"]["nights"], map="girona.html", region="Girona"),
     dict(path=f"{REGIONAL}/06_Nice_Cote_d_Azur_v2.0.md", slug="06", name="nice", kind="region",
-         title="Nice · Côte d’Azur", start=date(2026, 9, 4), end=date(2026, 9, 9),
-         nights=5, map="nice.html", region="Nice"),
+         title="Nice · Côte d’Azur", start=date.fromisoformat(STAYS["nice"]["checkin"]), end=date.fromisoformat(STAYS["nice"]["checkout"]),
+         nights=STAYS["nice"]["nights"], map="nice.html", region="Nice"),
     dict(path=f"{REGIONAL}/07_Aix_en_Provence_v2.0.md", slug="07", name="aix", kind="region",
-         title="Aix-en-Provence", start=date(2026, 9, 9), end=date(2026, 9, 13),
-         nights=4, map="aix.html", region="Aix"),
+         title="Aix-en-Provence", start=date.fromisoformat(STAYS["aix"]["checkin"]), end=date.fromisoformat(STAYS["aix"]["checkout"]),
+         nights=STAYS["aix"]["nights"], map="aix.html", region="Aix"),
     dict(path=f"{REGIONAL}/08_Luberon_Farmhouse_v2.0.md", slug="08", name="luberon", kind="region",
-         title="Luberon Farmhouse", start=date(2026, 9, 13), end=date(2026, 9, 17),
-         nights=4, map="luberon.html", region="Luberon"),
+         title="Luberon Farmhouse", start=date.fromisoformat(STAYS["luberon"]["checkin"]), end=date.fromisoformat(STAYS["luberon"]["checkout"]),
+         nights=STAYS["luberon"]["nights"], map="luberon.html", region="Luberon"),
     dict(path=f"{REGIONAL}/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md", slug="09", name="avignon", kind="region",
-         title="Avignon · Alpilles · Pont du Gard", start=date(2026, 9, 17), end=date(2026, 9, 21),
-         nights=4, map="avignon.html", region="Avignon"),
+         title="Avignon · Arles · Pont du Gard", start=date.fromisoformat(STAYS["avignon"]["checkin"]), end=date.fromisoformat(STAYS["avignon"]["checkout"]),
+         nights=STAYS["avignon"]["nights"], map="avignon.html", region="Avignon"),
     dict(path=f"{REGIONAL}/10_Lyon_v2.0.md", slug="10", name="lyon", kind="region",
-         title="Lyon · Annecy", start=date(2026, 9, 21), end=date(2026, 9, 25),
-         nights=4, map="lyon.html", region="Lyon"),
+         title="Lyon · Annecy", start=date.fromisoformat(STAYS["lyon"]["checkin"]), end=date.fromisoformat(STAYS["lyon"]["checkout"]),
+         nights=STAYS["lyon"]["nights"], map="lyon.html", region="Lyon"),
     dict(path=f"{REGIONAL}/11_Paris_Long_Stay_v2.0.md", slug="11", name="paris", kind="region",
-         title="Paris Long Stay", start=date(2026, 9, 25), end=date(2026, 10, 10),
-         nights=15, map="paris.html", region="Paris"),
+         title="Paris Long Stay", start=date.fromisoformat(STAYS["paris"]["checkin"]), end=date.fromisoformat(STAYS["paris"]["checkout"]),
+         nights=STAYS["paris"]["nights"], map="paris.html", region="Paris"),
 ]
 
 # 실행지도 8종 (ASSETS/75_Execution_Map_Index_v1.0.md 기준)
@@ -127,16 +131,16 @@ MAP_META = {
     "girona.html": ("Day 4–7", "Bàscara·Girona·Empordà"),
     "nice.html": ("Day 7–12", "Nice·Côte d’Azur"),
     "aix.html": ("Day 12–16", "Aix-en-Provence"),
-    "luberon.html": ("Day 16–20", "Luberon"),
-    "avignon.html": ("Day 20–24", "Avignon·Alpilles"),
-    "lyon.html": ("Day 24–28", "Lyon·Annecy"),
-    "paris.html": ("Day 28–43", "Paris"),
+    "luberon.html": ("Day 16–19", "Luberon"),
+    "avignon.html": ("Day 19–23", "Avignon·Arles"),
+    "lyon.html": ("Day 23–27", "Lyon·Annecy"),
+    "paris.html": ("Day 27–43", "Paris"),
 }
 MAP_DAY_SPANS = {
     "barcelona.html": range(1, 5), "girona.html": range(4, 8),
     "nice.html": range(7, 13), "aix.html": range(12, 17),
-    "luberon.html": range(16, 21), "avignon.html": range(20, 25),
-    "lyon.html": range(24, 29), "paris.html": range(28, 44),
+    "luberon.html": range(16, 20), "avignon.html": range(19, 24),
+    "lyon.html": range(23, 28), "paris.html": range(27, 44),
 }
 
 # 데일리 모바일 가이드 (ASSETS/80_Daily_Mobile_Guide_Image_Index_v1.1.md 기준)
@@ -144,7 +148,7 @@ DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
-SUPERSEDED_DAILY_CARDS = {4, 5, 6}  # Bàscara 예약 확정 전에 제작된 Girona 거점 카드
+SUPERSEDED_DAILY_CARDS = {4, 5, 6, 14, *range(19, 29)}  # 일정 확정 전 제작된 이미지 카드는 숨긴다
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
 COMMERCIAL_CARDS = SOURCE / "ASSETS" / "89_Commercial_City_Experience_Cards_v1.0.md"
@@ -411,7 +415,7 @@ CAT_OVERRIDES = {
     ("11", "16일 개요"): "schedule",
     ("11", "요일이 일정을 만들었다"): "schedule",
     ("11", "2026년이 만든 세 개의 고정점"): "info",
-    ("11", "15박의 운영 원칙"): "tips",
+    ("11", "16박의 운영 원칙"): "tips",
     ("11", "예약 게이트 — 출발 전에 끝내야 할 것"): "booking",
     # 대안 루트 한 덩어리 — D·E·F 는 '일정'·'추가' 낱말 때문에 흩어진다
     ("11", "먼저 — 건드리면 안 되는 것"): "tips",
@@ -826,7 +830,13 @@ PLACES = {
         ("Rotonde", "Fontaine de la Rotonde", "en", "미라보 대로 초입의 대분수 로터리"),
         ("Cours Mirabeau", "Cours Mirabeau", "en", "플라타너스 그늘이 덮는 엑상의 중심 산책로"),
         ("Musée Granet", "Musée Granet", "en", "세잔과 유럽 회화의 미술관"),
-        ("Cassis", "Cassis", "en", "칼랑크 석회암 절벽 아래의 항구마을"),
+        ("Marseille Saint-Charles", "Gare de Marseille-Saint-Charles", "fr", "Aix에서 L50으로 도착하는 Marseille 대중교통 기준점"),
+        ("Vieux-Port", "Old Port of Marseille", "en", "Marseille의 도시생활과 해상교통이 만나는 오래된 항구"),
+        ("Le Panier", "Le Panier", "fr", "항구 위 언덕의 생활골목과 그늘진 광장"),
+        ("Mucem", "Museum of European and Mediterranean Civilisations", "en", "지중해 문화를 다루는 해안 박물관"),
+        ("Fort Saint-Jean", "Fort Saint-Jean (Marseille)", "en", "Mucem과 보행교로 이어지는 항구 요새"),
+        ("Notre-Dame de la Garde", "Notre-Dame de la Garde", "en", "체력과 날씨가 좋을 때만 오르는 선택 전망지"),
+        ("Cassis", "Cassis", "en", "Marseille를 완전히 교체할 때만 쓰는 해안 대안"),
         ("Atelier Cézanne", "Atelier de Cézanne", "fr", "세잔이 말년을 보낸 아틀리에"),
         ("Lourmarin", "Lourmarin", "en", "카뮈가 잠든 뤼베롱 초입 마을 — 9/13 경유"),
     ],
@@ -843,10 +853,17 @@ PLACES = {
         ("Les Halles", "Les Halles d'Avignon", "fr", "아비뇽의 실내 중앙시장"),
         ("Palais des Papes", "Palais des Papes", "en", "14세기 교황들이 머문 거대한 궁전"),
         ("Pont Saint-Bénézet", "Pont Saint-Bénézet", "en", "노래로 남은 론 강의 끊어진 다리"),
-        ("Uzès", "Uzès", "en", "토요시장이 유명한 공작령 도시"),
+        ("Uzès", "Uzès", "en", "금요일 구시가지와 Place aux Herbes를 걷는 공작령 도시"),
         ("Pont du Gard", "Pont du Gard", "en", "로마 수도교 — 세계문화유산"),
-        ("Les Baux", "Les Baux-de-Provence", "en", "석회암 바위산 위의 요새 마을"),
-        ("Saint-Rémy", "Saint-Rémy-de-Provence", "en", "고흐가 요양하며 그림을 그린 마을"),
+        ("Arles", "Arles", "en", "로마·중세·반 고흐와 실제 도시생활이 겹치는 당일치기 도시"),
+        ("Arènes d’Arles", "Arles Amphitheatre", "en", "오늘도 도시 안에서 쓰이는 로마 원형경기장"),
+        ("Théâtre antique", "Roman Theatre of Arles", "en", "구도심 보행축에 놓인 고대 극장"),
+        ("Place du Forum", None, "en", "점심과 카페 휴식을 두는 Arles 구도심 광장"),
+        ("Cloître Saint-Trophime", None, "en", "일정 균형에 따라 고르는 중세 회랑"),
+        ("Fondation Vincent van Gogh", None, "en", "Saint-Trophime과 교환하는 선택 미술관"),
+        ("La Roquette", None, "en", "관광유적 뒤에 걷는 생활형 골목과 론강변"),
+        ("Les Baux", "Les Baux-de-Provence", "en", "Arles를 완전히 교체하는 Alpilles 대안"),
+        ("Saint-Rémy", "Saint-Rémy-de-Provence", "en", "Alpilles 대안에서만 잇는 반 고흐와 생활마을"),
     ],
     "10": [
         ("Bellecour", "Place Bellecour", "en", "유럽 최대급 광장 — 리옹의 중심"),
@@ -2204,7 +2221,7 @@ def build_split_chapter(c, body_md, map_links):
         related_box(c)
         + hero_figure(c["slug"], rel)
         + intro_html
-        + (visual_figure("cycles", "Paris 15박의 세 사이클", "../../assets")
+        + (visual_figure("cycles", "Paris 16박의 세 사이클", "../../assets")
            if c["slug"] == "11" else "")
         + f'<h2 class="ic ic-clock">일자</h2><div class="grid">{day_cards}</div>'
         + f'<h2 class="ic ic-topic">주제</h2><div class="grid">{topic_cards}</div>'
@@ -2251,8 +2268,8 @@ VERIFY_STATUS = {
 }
 # 116·41 이 쓰는 지역 이름 → 챕터 슬러그
 VERIFY_REGION = {
-    "Barcelona": "04", "Girona": "05", "Nice": "06", "Aix": "07", "Aix/Cassis": "07",
-    "Luberon": "08", "Avignon": "09", "Lyon": "10", "Paris": "11",
+    "Barcelona": "04", "Girona": "05", "Nice": "06", "Aix": "07", "Aix/Cassis": "07", "Aix/Marseille": "07",
+    "Luberon": "08", "Avignon": "09", "Avignon/Arles": "09", "Lyon": "10", "Paris": "11",
 }
 
 
@@ -2485,7 +2502,7 @@ def build_chapters():
                                     visual_figure("cardays", "Provence 차량일 운영 논리", chapter_rel(c) + "/assets"), body=body)
             if c["slug"] == "11":
                 body = insert_after(r'<h1 id="[^"]*" class="layer-h">일정</h1>',
-                                    visual_figure("cycles", "Paris 15박의 세 사이클", chapter_rel(c) + "/assets"), body=body)
+                                    visual_figure("cycles", "Paris 16박의 세 사이클", chapter_rel(c) + "/assets"), body=body)
 
         collect_chapter_dates(c, flat)
         if c.get("name") in SPLIT_CHAPTERS:
@@ -2553,9 +2570,9 @@ def find_daily_images():
 
 
 # ⚠ 세 플래그는 뜻이 다르다. 뭉치면 Day 43(귀국 항공)에 경고가 안 뜬다.
-P0_CONNECTION = [4, 7, 12, 24, 28, 43]        # 놓치면 대안이 없는 교통 연결
-MAP_TRANSITION = [4, 7, 12, 16, 20, 24, 28]   # 실행지도 2장이 필요한 날
-DUAL_CHAPTER = [12, 16, 20, 24, 28]           # 양쪽 챕터에 원고가 있는 날
+P0_CONNECTION = [4, 7, 12, 23, 27, 43]        # 놓치면 대안이 없는 교통 연결
+MAP_TRANSITION = [4, 7, 12, 16, 19, 23, 27]   # 실행지도 2장이 필요한 날
+DUAL_CHAPTER = [12, 16, 19, 23, 27]           # 양쪽 챕터에 원고가 있는 날
 
 AUDIT_MD = SOURCE / "OPERATIONS" / "100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
 AUDIT_FIELDS = ["day", "date", "base", "core", "depart", "buffer",
@@ -3421,6 +3438,9 @@ def build_maps():
         # 안내 접기와 텍스트 기준점 목록을 빌드 시 주입해 원본 자산은 보존한다.
         map_ui_css = """
 <style id="phase6-map-ui">
+@font-face{font-family:'TP Nanum';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2') format('woff2')}
+@font-face{font-family:'TP Nanum';font-style:normal;font-weight:700;font-display:swap;src:url('../assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2') format('woff2')}
+body{font-family:'TP Nanum',Arial,sans-serif}
 .map-info-toggle{position:absolute;z-index:1200;left:12px;bottom:12px;border:0;border-radius:999px;background:#1f4e78;color:#fff;padding:10px 14px;font-weight:700;box-shadow:0 2px 10px #0005;min-height:44px}
 .point-list{margin-top:9px;border-top:1px solid #d8dee5;padding-top:7px}.point-list summary{cursor:pointer;font-size:12px;font-weight:700}.point-list ol{max-height:32vh;overflow:auto;margin:7px 0 0;padding:0;list-style:none}.point-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #e7ebef;font-size:12px}.point-list small{display:block;color:#5d6670;margin-top:2px}.point-list a{color:#1f4e78;font-weight:700;white-space:nowrap}
 body.map-info-hidden .panel{display:none}
@@ -3746,6 +3766,26 @@ def norm_key(s):
     return re.sub(r"[^a-z0-9가-힣]", "", s)
 
 
+def place_match_text(s):
+    """Return flat text and word tokens for safe place-name matching.
+
+    A flat substring search made `Arles` match `Saint-Charles`, which put Arles
+    on Marseille day cards. Short single-word Latin names must match a complete
+    token; longer/multiword keys retain the existing punctuation-insensitive
+    lookup.
+    """
+    normalized = "".join(c for c in unicodedata.normalize("NFKD", s.lower())
+                         if not unicodedata.combining(c))
+    return norm_key(normalized), set(re.findall(r"[a-z0-9가-힣]+", normalized))
+
+
+def place_key_matches(text, key):
+    flat, tokens = text
+    if re.fullmatch(r"[a-z0-9]+", key) and len(key) <= 6:
+        return key in tokens
+    return key in flat
+
+
 def place_days(registry, timetable):
     """장소가 어느 Day 에 배정돼 있는지 찾는다.
 
@@ -3760,14 +3800,14 @@ def place_days(registry, timetable):
     audit_txt = {}
     try:
         for n, row in load_audit().items():
-            audit_txt[n] = norm_key(f'{row["core"]} {row["meals"]}')
+            audit_txt[n] = place_match_text(f'{row["core"]} {row["meals"]}')
     except SystemExit:
         audit_txt = {}
     by_day = {}
     for key, blocks in timetable.items():
         n = day_no(date.fromisoformat(key))
         txt = " ".join(plain(" ".join(cells)) for _s, _r, rows in blocks for cells in rows)
-        by_day[n] = norm_key(txt)
+        by_day[n] = place_match_text(txt)
     out = {}
     for r in registry:
         if r["type"] != "spot":
@@ -3775,13 +3815,13 @@ def place_days(registry, timetable):
         k = place_key(r["name"])
         if len(k) < 3:
             continue
-        days = sorted(n for n, txt in by_day.items() if k in txt)
+        days = sorted(n for n, txt in by_day.items() if place_key_matches(txt, k))
         if days:
             out[r["slug"]] = (days, "시간표")
             continue
         keys = {k} | ({norm_key(r["pin"])} if r["pin"] else set())
         days = sorted(n for n, txt in audit_txt.items()
-                      if any(x and len(x) >= 3 and x in txt for x in keys))
+                      if any(x and len(x) >= 3 and place_key_matches(txt, x) for x in keys))
         if days:
             out[r["slug"]] = (days, "실행 감사표")
             continue
@@ -4427,7 +4467,7 @@ def check_phase5_execution_guards():
 
 
 def check_phase6_map_guards():
-    """8개 실행지도·68개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
+    """8개 실행지도·81개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
     problems, total = [], 0
     map_index = (SITE / "maps" / "index.html").read_text(encoding="utf-8")
     for src_name, out_name, title in MAPS:
@@ -4446,8 +4486,8 @@ def check_phase6_map_guards():
         if page_text.count('>길찾기</a>') != count:
             problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 68:
-        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 68)")
+    if total != 81:
+        problems.append(f"GeoJSON 기준점 총 {total}개 (기대 81)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4460,7 +4500,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 · 68개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 · 81개 기준점 · 43일 라우팅 · 전환일 7일 이상 없음")
 
 
 def check_daily_map_guards():
@@ -4612,14 +4652,8 @@ def check_phase8_operations_guards():
                 problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
 
     expected_stays = {
-        "Barcelona": ("2026-08-29", "2026-09-01", 3),
-        "Bàscara": ("2026-09-01", "2026-09-04", 3),
-        "Nice": ("2026-09-04", "2026-09-09", 5),
-        "Aix-en-Provence": ("2026-09-09", "2026-09-13", 4),
-        "Luberon": ("2026-09-13", "2026-09-17", 4),
-        "Avignon": ("2026-09-17", "2026-09-21", 4),
-        "Lyon": ("2026-09-21", "2026-09-25", 4),
-        "Paris": ("2026-09-25", "2026-10-10", 15),
+        stay["base"]: (stay["checkin"], stay["checkout"], stay["nights"])
+        for stay in ITINERARY["stays"]
     }
     stays = records("Accommodation")
     if {row.get("거점") for row in stays} != set(expected_stays):
@@ -4650,8 +4684,9 @@ def check_phase8_operations_guards():
         if state != "LOCKED" and not row.get("필요 입력"):
             problems.append(f'{row.get("항목")}: 미잠금 항목의 필요 입력 누락')
     lock_by_item = {row.get("항목"): row for row in locks}
+    allocation = "/".join(str(stay["nights"]) for stay in ITINERARY["stays"]) + "박"
     for item, value in (("43일·42박", "2026-08-29~2026-10-10"),
-                        ("8개 거점 숙박배분", "3/3/5/4/4/4/4/15박")):
+                        ("8개 거점 숙박배분", allocation)):
         row = lock_by_item.get(item, {})
         if row.get("잠금상태") != "LOCKED" or row.get("현재 확정값") != value:
             problems.append(f"Known-Facts Lock 불일치: {item}")
@@ -4662,7 +4697,7 @@ def check_phase8_operations_guards():
     lock_text = (SITE / "tracker" / "locks.html").read_text(encoding="utf-8")
     if completed == 0 and "실제 예약 잠금률</td><td>0" not in dashboard_text:
         problems.append("Dashboard 실제 예약 잠금률이 예약 데이터와 불일치")
-    for token in ("43일·42박", "3/3/5/4/4/4/4/15박", "BLOCKED", "필요 입력"):
+    for token in ("43일·42박", allocation, "BLOCKED", "필요 입력"):
         if token not in lock_text:
             problems.append(f"잠금 현황 배포 페이지 누락: {token}")
 
@@ -4756,8 +4791,8 @@ def check_phase10_official_fact_guards():
     rows = md_table_rows(verify_text,
                          ["ID", "지역", "장소", "상태", "확인내용", "공식출처", "조치"])
     ids = [row.get("ID") for row in rows]
-    if ids != [f"F{i:03d}" for i in range(1, 19)]:
-        problems.append("공식 검증 레코드는 F001~F018의 연속된 18건이어야 함")
+    if ids != [f"F{i:03d}" for i in range(1, 24)]:
+        problems.append("공식 검증 레코드는 F001~F023의 연속된 23건이어야 함")
 
     allowed_states = set(VERIFY_STATUS)
     state_counts = {state: 0 for state in allowed_states}
@@ -4778,13 +4813,13 @@ def check_phase10_official_fact_guards():
             official_urls.append(match.group(1))
 
     expected_counts = {
-        "VERIFIED": 13, "CORRECTED": 3, "VERIFIED_CURRENT": 1,
-        "CONFLICT_RECHECK": 1, "DATE_GATE": 0,
+        "VERIFIED": 13, "CORRECTED": 3, "VERIFIED_CURRENT": 4,
+        "CONFLICT_RECHECK": 1, "DATE_GATE": 2,
     }
     if state_counts != expected_counts:
         problems.append(f"검증상태 집계 {state_counts} (기대 {expected_counts})")
-    if len(official_urls) != 18:
-        problems.append(f"공식출처 URL {len(official_urls)}개 (기대 18개)")
+    if len(official_urls) != 23:
+        problems.append(f"공식출처 URL {len(official_urls)}개 (기대 23개)")
 
     # 검증일은 명시되어야 하고 여행 시작일보다 뒤일 수 없다.
     verified_date = re.search(r"\*\*검증일:\*\*\s*(\d{4}-\d{2}-\d{2})", verify_text)
@@ -4811,7 +4846,7 @@ def check_phase10_official_fact_guards():
         problems.append(f"여행 중 날짜별 핵심 게이트 {len(trip_gate_rows)}개 (기대 17개)")
 
     report_text = report_path.read_text(encoding="utf-8")
-    for token in ("| 공식 검증·정정 레코드 | 18 |", "| 명시적 정정 | 3 |",
+    for token in ("| 공식 검증·정정 레코드 | 23 |", "| 명시적 정정 | 3 |",
                   "| 공식페이지 충돌·재확인 | 1 |", "| 전날·당일 게이트 | 17개 날짜군 |",
                   "| 임의 생성한 예약값 | 0 |", "Phase 8B"):
         if token not in report_text:
@@ -4840,7 +4875,7 @@ def check_phase10_official_fact_guards():
         for problem in problems[:50]:
             print("  " + problem)
         sys.exit(1)
-    print("Phase 10 공식정보 가드: 18개 공식검증 · 정정 3건 · 충돌 1건 · 날짜게이트 17개 · 8지역 배포 이상 없음")
+    print("Phase 10 공식정보 가드: 23개 공식검증 · 정정 3건 · 충돌 1건 · 날짜게이트 17개 · 8지역 배포 이상 없음")
 
 
 def check_links():

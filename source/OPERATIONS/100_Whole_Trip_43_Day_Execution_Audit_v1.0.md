@@ -32,21 +32,21 @@
 | 11 | 9/8 화 | Nice | 회복·시장·사진미술관 선택 | 느린 시작 | 세탁·렌터카 준비 2시간 보호 | Libération 시장·숙소식 | 화요일 휴관·회복일 과밀화 | 사진미술관·추가마을 | 숙소생활·카페 | 사진미술관·렌터카 준비 |
 | 12 | 9/9 수 | Aix | NCE 인수→Saint-Paul→Grasse→Aix | 08:30 Nice 출발 | 렌터카 인수 60–90분 | Grasse 점심 | 인수지연·체크인·주차 | Grasse 실내→Saint-Paul 체류 축소 | Grasse 실내 후 Aix 조기도착 | 렌터카·Aix 숙소 |
 | 13 | 9/10 목 | Aix | 목요시장·Granet | 08:00 시장 | 시장 후 60분 휴식 | 시장점심 | 시장혼잡·보행 | Mazarin·성당 | Granet·카페 중심 | Granet |
-| 14 | 9/11 금 | Aix | Cassis·Calanques | 07:30 출발 | 주차·셔틀 45–60분 | 항구 점심 | 강풍·보트취소·산불통제 | 오후 해안산책 | Marseille/Mucem 또는 Aix 생활일 | 보트·주차 |
+| 14 | 9/11 금 | Aix | Marseille 대중교통 당일치기 | L50 시각 기준 역산 | 버스 20분 전·점심과 카페 90분 | Vieux-Port/Le Panier 점심 | 혼잡·소매치기·Mucem 화요일 휴관 변수 없음 | Notre-Dame de la Garde | Mucem·Fort만 또는 Aix 생활일 | L50·Mucem 운영 |
 | 15 | 9/12 토 | Aix | 시장·Cézanne·스케치 | 08:30 시장 | Atelier 전 30분 | 시장점심 | 주말혼잡·개인일정 충돌 | 러닝·쇼핑 | 실내 드로잉·카페 | Atelier·수영 |
 | 16 | 9/13 일 | Luberon | Lourmarin→Coustellet→농가 | 08:30 체크아웃 | 시장·장보기·농가진입 90분 | Lourmarin 점심 | 체크인·냉장식품·농가접근 | Lourmarin 체류 축소 | 행사·시장 축소 후 조기체크인 | 농가·행사 |
 | 17 | 9/14 월 | Luberon | Roussillon·Goult/Bonnieux | 08:30 출발 | 오커길 후 60분 휴식 | Roussillon 점심 | 월요일 식당·미끄럼 | 오후 마을 | 오커길 축소·카페 | 오커길 |
-| 18 | 9/15 화 | Luberon | Gordes 시장·Bories·Sénanque | 08:15 출발 | 시장주차 30분 | Gordes 피크닉 | 시장혼잡·주차 | Sénanque 내부 | Gordes+한 곳만 | 시장·Sénanque |
-| 19 | 9/16 수 | Luberon | 농가생활·선택마을 | 느린 시작 | 완전 완충일 유지 | 숙소식 | 선택일정 과밀화 | 오후 마을 전체 | 농가 실내생활 | 숙소 |
-| 20 | 9/17 목 | Avignon | L’Isle 시장→Avignon | 08:00 체크아웃 | 시장 후 출차·체크인 90분 | L’Isle 점심 | 주차·짐·체크인 | Fontaine·야간개장 | 시장 짧게 후 Avignon 직행 | 숙소·주차 |
-| 21 | 9/18 금 | Avignon | Palais·Rocher·Pont | 08:30 Les Halles | Palais 입장 30분 전 | Les Halles/구시가지 | 시간지정·보행 | 추가미술관 | Palais 중심 실내일 | Palais·식당 |
-| 22 | 9/19 토 | Avignon | Uzès 시장·Pont du Gard | 07:30 출발 | 시장주차·Pont 이동 45분 | Uzès 점심 | 토요혼잡·폭우/홍수 | 박물관 또는 일몰 | Uzès 단축·Pont 축소 | 주차·Pont |
-| 23 | 9/20 일 | Avignon | Les Baux·Saint-Rémy | 07:45 출발 | Les Baux 주차 30분 | 두 도시 중간 점심 | 주말혼잡·강풍 | Glanum/Carrières 중 하나 | Saint-Rémy 중심 | 주차·선택티켓 |
-| 24 | 9/21 월 | Lyon | 주유·반납·TGV | 07:00 포장 | 열차 60–90분 전 반납완료 | 역 간단식 | 주유·반납·수하물·열차 | 아침산책 | Lyon 도착 후 체크인만 | 반납·TGV |
-| 25 | 9/22 화 | Lyon | Fourvière·Vieux Lyon | 09:00 전후 | 경사·하산 후 60분 휴식 | Vieux Lyon 점심 | 푸니쿨라·경사·보행 | 로마극장 | 푸니쿨라+구시가지 실내 | 푸니쿨라·저녁 |
-| 26 | 9/23 수 | Lyon | Croix-Rousse·Halles·공원 | 08:30 시장 | Halles 전후 60분 | Halles 점심 | 지역간 이동 3회 | 공원 | 시장+Halles만 | 식당 |
-| 27 | 9/24 목 | Lyon | Annecy 당일치기 | 08:00 전후 역 이동 | TER 20분 전 도착 | Annecy 구시가지 | 철도지연·날씨 | 크루즈 | Lyon 생활일로 전환 | TER·크루즈 |
-| 28 | 9/25 금 | Paris | TGV→15박 체크인 | 열차 기준 역산 | Gare de Lyon→숙소 택시·체크인 2시간 | 숙소권 간단식 | 대형수하물·체크인 | 외부관광 | 장보기·휴식만 | TGV·숙소 |
+| 18 | 9/15 화 | Luberon | Gordes 시장·Bories·선택마을 | 08:15 출발 | 시장주차 30분 | Gordes 피크닉 | 시장혼잡·주차 | Ménerbes/Oppède | Gordes+Bories만 | 시장·주차 |
+| 19 | 9/16 수 | Avignon | 농가 체크아웃→Avignon 정착 | 10:30 체크아웃 | 이동·주차·체크인 90분 | 이동 중 간단식 | 짐 노출·체크인 | 저녁 산책 연장 | Avignon 직행·숙소 휴식 | 농가 변경·Avignon 숙소 |
+| 20 | 9/17 목 | Avignon | Palais·Rocher·Pont | 08:30 Les Halles | Palais 입장 30분 전 | Les Halles/구시가지 | 시간지정·보행 | 추가미술관 | Palais 중심 실내일 | Palais·식당 |
+| 21 | 9/18 금 | Avignon | Uzès 구시가지·Pont du Gard | 08:30 출발 | 주차·Pont 이동 45분 | Uzès 빵집/비스트로 | 금요일 시장 없음·폭우/홍수 | 박물관 또는 일몰 | Uzès 단축·Pont 축소 | 주차·Pont |
+| 22 | 9/19 토 | Avignon | Arles 철도 당일치기 | 열차 기준 역산 | 열차 20분 전·점심/카페 90분 | Place du Forum 인근 | JEP 혼잡·운영변동·소매치기 | 선택시설·강변 연장 | Arènes·Théâtre·구도심만 | TER·JEP 재확인 |
+| 23 | 9/20 일 | Lyon | 주유·반납·TGV | 07:00 포장 | 열차 60–90분 전 반납완료 | 역 간단식 | 주유·반납·수하물·열차 | 아침산책 | Lyon 도착 후 체크인만 | 반납·TGV |
+| 24 | 9/21 월 | Lyon | Fourvière·Vieux Lyon | 09:00 전후 | 경사·하산 후 60분 휴식 | Vieux Lyon 점심 | 월요일 휴관·경사·보행 | 로마극장 내부 | 야외축+카페 | 푸니쿨라·저녁 |
+| 25 | 9/22 화 | Lyon | Croix-Rousse·Halles·공원 | 08:30 시장 | Halles 전후 60분 | Halles 점심 | 지역간 이동 3회 | 공원 | 시장+Halles만 | 식당 휴무 |
+| 26 | 9/23 수 | Lyon | Annecy 당일치기 | 08:00 전후 역 이동 | TER 20분 전 도착 | Annecy 구시가지 | 철도지연·날씨·시장 없음 | 크루즈 | Lyon 생활일로 전환 | TER·크루즈 |
+| 27 | 9/24 목 | Paris | TGV→16박 체크인 | 열차 기준 역산 | Gare de Lyon→숙소 택시·체크인 2시간 | 숙소권 간단식 | 대형수하물·체크인 | 외부관광 전부 | 짐정리·최소 장보기만 | TGV·숙소 변경 |
+| 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 늦은 시작 | 세탁·휴식 3시간 보호 | 숙소식·동네 카페 | 새 하루를 관광으로 과밀화 | 장거리 산책 | 슈퍼·빵집·약국 확인만 | 없음 |
 | 29 | 9/26 토 | Paris | Latin Quarter·Notre-Dame | 09:00 전후 | Notre-Dame 예약 30분 전 | Latin Quarter | 주말혼잡·보행 | Panthéon 내부 | Notre-Dame+카페 | Notre-Dame |
 | 30 | 9/27 일 | Paris | 일요일 생활·Marais | 느린 시작 | 공연 시 오후 2시간 보호 | 시장·Marais | 일요일 혼잡·공연조건 | Marais 일부 | 공원·시장 중심 | 공연 조건부 |
 | 31 | 9/28 월 | Paris | Louvre 선택관람 | 예약 60분 전 출발 | 관람 3.5시간 상한 | 관람 전 가벼운 점심 | 박물관 피로·월요일 | Palais Royal | Louvre 핵심섹션만 | Louvre |
@@ -70,17 +70,17 @@
 - Day 4: Barcelona 렌터카 인수와 Girona 이동
 - Day 7: Girona → BCN 차량반납 → 항공 → Nice
 - Day 12: NCE 렌터카 인수 → Aix 체크인
-- Day 24: Avignon 렌터카 반납 → TGV → Lyon
-- Day 28: Lyon → Paris 장거리 수하물 이동
+- Day 23: Avignon 렌터카 반납 → TGV → Lyon
+- Day 27: Lyon → Paris 장거리 수하물 이동
 - Day 43: Paris → CDG → 국제선 출국
 
 ### B. 날씨·운영조건 의존도가 높은 일정
 
-- Day 14 Cassis·Calanques: 강풍, 운항취소, 산불통제
+- Day 14 Marseille: 대중교통·혼잡·소매치기
 - Day 17 Roussillon: 비·오커길 미끄럼
 - Day 22 Pont du Gard: 폭우·홍수주의
-- Day 23 Les Baux: 강풍·주말혼잡
-- Day 27 Annecy: 철도와 호수날씨
+- Day 22 Arles: JEP 혼잡·시설별 운영 변동
+- Day 26 Annecy: 철도와 호수날씨
 - Day 36 Versailles, Day 41 Giverny: 날씨·계절운영·교통
 
 ### C. 과밀화 방지가 필요한 복합일
@@ -88,7 +88,7 @@
 - Day 5 Collioure + Cadaqués (해안 쪽 우회, Portlligat·Dalí House 예약 미확인)
 - Day 6 Tossa de Mar + Sant Feliu + Pals + Peratallada (지연 시 Pals 삭제)
 - Day 12 Saint-Paul + Grasse + Aix 체크인
-- Day 20 L’Isle 시장 + Avignon 체크인
+- Day 19 농가 체크아웃 + Avignon 체크인
 - Day 33 BnF + Philharmonie
 - Day 34 Grand Palais + 공연
 - Day 39 Orsay + UCL 조건부
