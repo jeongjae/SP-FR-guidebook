@@ -60,22 +60,22 @@ Barcelona 3박 → Bàscara 3박 → **Nice 5박 → Aix 4박**
 | 25 | 9/22 화 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·저녁 |
 | 26 | 9/23 수 | Lyon | Croix-Rousse·Halles·공원 | Croix-Rousse 시장, canut 맥락, Halles | Parc de la Tête d’Or | 3 | 식당 |
 | 27 | 9/24 목 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
-| 28 | 9/25 금 | Paris | Lyon→Paris·15박 정착 | TGV, 체크인, 첫 장보기, 숙소권 학습 | 가벼운 동네저녁 | 3 | TGV·Paris 숙소 |
-| 29 | 9/26 토 | Paris | Latin Quarter·Notre-Dame | 시장·러닝, Latin Quarter, Notre-Dame, Île Saint-Louis | Panthéon 내부 삭제 가능 | 3 | Notre-Dame |
-| 30 | 9/27 일 | Paris | 일요일 생활과 Marais | Luxembourg, Marché Monge, Marais | Hamlet 공연 시 Marais 이동 | 2~4 | 공연 조건부 |
-| 31 | 9/28 월 | Paris | Louvre 선택관람 | gym·세탁, Louvre 2~3개 섹션, Palais Royal | 야간일정 금지 | 4 | Louvre |
-| 32 | 9/29 화 | Paris | Montmartre→South Pigalle | 북사면 접근, Sacré-Cœur, Abbesses, 9구 | PSG UCL 조건부 | 3~5 | 식당·축구 |
-| 33 | 9/30 수 | Paris | BnF·Passages·Philharmonie | BnF Richelieu, passages | Philharmonie 20:00 | 4 | 공연 |
-| 34 | 10/1 목 | Paris | Cézanne 전시와 강변 | 운동·장보기, Grand Palais Cézanne | 오페라/발레 선택 | 4 | 전시·공연 |
-| 35 | 10/2 금 | Paris | Marais 생활·사진·패션 | Enfants Rouges, Marais, 선택문화시설 1곳 | 재즈·연극 또는 자유 | 3 | 공연 조건부 |
-| 36 | 10/3 토 | Paris | Versailles 옵션일 | Versailles 궁전·정원·Trianon 중 2개 | 대체: 15구 생활일 | 4/2 | Versailles |
-| 37 | 10/4 일 | Paris | 완충·스케치·무계획 | 늦은 아침, Canal Saint-Martin 또는 공원 | 숙소식 | 1~2 | 없음 |
-| 38 | 10/5 월 | Paris | 동부·남부 생활모듈 | gym·세탁, 11·12구 또는 13·15구 | 동네 비스트로 | 2 | 없음 |
-| 39 | 10/6 화 | Paris | Orsay와 Mary Cassatt | Seine 러닝, Musée d’Orsay | UCL 조건부 또는 휴식 | 4~5 | Orsay·축구 |
-| 40 | 10/7 수 | Paris | Bourse de Commerce 개막 | Bourse, Montorgueil | Manon/연극/축구 중 1 | 4~5 | 전시·공연 |
-| 41 | 10/8 목 | Paris | Giverny 옵션일 | Giverny 또는 Orangerie·Tuileries | 가벼운 저녁 | 4/3 | Giverny |
-| 42 | 10/9 금 | Paris | 마지막 자유선택·짐정리 | 마지막 운동, FLV 또는 미완료 일정 | 송별저녁·최종포장 | 3 | 식당 |
-| 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·출국 | 시장·체크아웃, CDG 이동, 19:10 출국 예정 | 도심 추가관광 금지 | 3 | 항공·공항이동 |
+| 28 | 9/25 금 | Paris | Lyon→Paris·15박 정착 | TGV, 체크인, 장보기, 숙소권 방향잡기 | 무예약·가벼운 동네저녁 | 3 | TGV·Paris 숙소 |
+| 29 | 9/26 토 | Paris | 첫 파리 생활일 | 늦은 시작·가벼운 운동, Saint-Germain, Luxembourg, Seine | 무예약. Il Barbiere 회차는 선택하지 않음 | 2 | 없음 |
+| 30 | 9/27 일 | Paris | 고전 파리 방향잡기 | Tuileries, Palais Royal, Opéra 지구, Garnier 외관/가능 시 낮 관람 | 자유저녁 | 3 | Garnier 조건부 |
+| 31 | 9/28 월 | Paris | 로컬 라이프·Fashion Week 개막 | 운동·세탁·쇼핑, 북마레 또는 주거지 산책 | 무예약 | 2 | 없음 |
+| 32 | 9/29 화 | Paris | 박물관일 | Musée d’Orsay 또는 Orangerie 한 곳 | 저녁 비움 | 3 | 미술관 시간지정 |
+| 33 | 9/30 수 | Paris | Fashion Week 공개동선 반일 | 여유로운 오전, Palais de Tokyo 일대→Avenue Montaigne→Rue Saint-Honoré→Palais Royal | 공식 확인된 공개 팝업만·늦은 행사 없음 | 3 | 공개행사 재확인 |
+| 34 | 10/1 목 | Paris | Rossini 오페라일 | 운동·느린 아침, Place des Vosges·Bastille, 17:30 이른 저녁 | **Il Barbiere di Siviglia 19:30**·약 22:45 종료 | 5 | Paris Opera P0 |
+| 35 | 10/2 금 | Paris | 회복·로컬 라이프 | 늦은 시작, 시장·서점·카페·스케치 | 고정행사 없음 | 1~2 | 없음 |
+| 36 | 10/3 토 | Paris | 유연한 문화일 | 박물관·서점·동네 중 하나 | Arc 토요일+Hamlet 조합은 제외 | 2~3 | 선택시설만 |
+| 37 | 10/4 일 | Paris | Qatar Prix de l’Arc 메인 레이스 | ParisLongchamp 근전일 일정 | 저녁 비움 | 5 | France Galop P0 |
+| 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 아침, 장보기·세탁·카페, 선택 짧은 공원 | 무예약 | 1 | 없음 |
+| 39 | 10/6 화 | Paris | 동부 파리 생활일 | Canal Saint-Martin·Belleville 또는 다른 동네 | Hamlet 19:30은 10/9 매진 시에만 백업 | 2/5 | Hamlet 백업 |
+| 40 | 10/7 수 | Paris | Vendanges de Montmartre | 낮 축제, Clos Montmartre 외관·마켓·골목 | 이른 귀가. 추가 오페라 제외 | 3 | 포도밭 방문 감시 |
+| 41 | 10/8 목 | Paris | 유연한 현대문화일 | 가벼운 오전, Trocadéro·Chaillot | Este Mundo 20:30 선택. Wagner 패키지는 공식 회차 불일치로 제외 | 2/4 | Festival 선택 |
+| 42 | 10/9 금 | Paris | 마지막 대형 문화행사 | 늦은 시작, 가벼운 동네산책·카페, 이른 저녁 | **Hamlet 19:30**·Jazz/교회공연 제외 | 5 | Paris Opera P0 |
+| 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·출국 | 짐·체크아웃, 안전여유를 둔 공항 이동, 19:10 출국 예정 | Grand Défilé·고정공연 제외 | 3 | 항공·공항이동 |
 
 ## 4. 장거리 이동일
 
