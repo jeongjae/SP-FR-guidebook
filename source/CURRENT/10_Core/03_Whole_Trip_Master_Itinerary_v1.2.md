@@ -1,7 +1,7 @@
 ---
 title: "전체 일정"
-version: "1.2"
-updated: "2026-08-01"
+version: "1.3"
+updated: "2026-08-04"
 travel_period: "2026-08-29 ~ 2026-10-10"
 status: "chapter-derived master itinerary; booking values pending"
 ---
@@ -23,21 +23,21 @@ status: "chapter-derived master itinerary; booking values pending"
 | 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, 사진미술관 선택, 세탁·Promenade | 사진미술관·추가마을 삭제 가능 | 2 | 사진미술관·렌터카 준비 |
 | 12 | **9/9 수** | **Aix-en-Provence** | NCE 렌터카와 Provence 진입 | NCE T2 렌터카, Saint-Paul, Grasse, Aix 체크인 | 지연 시 Grasse 우선 삭제 | 5 | 렌터카·Aix 숙소 |
 | 13 | **9/10 목** | Aix-en-Provence | Aix 구시가지와 Granet | 목요시장, Cours Mirabeau, Musée Granet, Mazarin | 성당·카페 | 3 | Granet·식당 |
-| 14 | **9/11 금** | Aix-en-Provence | Cassis와 Calanques | Cassis 항구, 5 Calanques 보트, 해안휴식 | 강풍 시 Marseille·Mucem으로 교체 | 4 | 보트·주차 |
+| 14 | **9/11 금** | Aix-en-Provence | Marseille 당일치기 | 대중교통 왕복, Vieux-Port, Le Panier, Mucem, Fort Saint-Jean | 피로·우천 시 Mucem+항구만; Cassis는 별도 대체안 | 4 | L50/TER·Mucem |
 | 15 | 9/12 토 | Aix-en-Provence | Cézanne·스케치·생활 | 토요시장, Atelier de Cézanne, 스케치·선택수영 | 러닝·쇼핑 축소 | 2~3 | Atelier |
 | 16 | 9/13 일 | Luberon | Aix→Lourmarin→농가 | Lourmarin 스케치행사, Coustellet 장보기, 농가 체크인 | Cucuron/Goult 추가 금지 | 3 | 농가·행사 |
 | 17 | 9/14 월 | Luberon | 오커색과 생활마을 | Roussillon, Sentier des Ocres | Goult 또는 Bonnieux 택1 | 3 | 오커길 |
-| 18 | 9/15 화 | Luberon | Gordes 시장과 돌의 문화 | Gordes 시장, Village des Bories | Sénanque 선택 | 3 | 시장·주차 |
-| 19 | 9/16 수 | Luberon | 농가생활·스케치 완충일 | 농가 아침·산책·세탁·스케치 | Ménerbes 또는 Oppède 택1 | 1~2 | 없음/숙소 |
-| 20 | 9/17 목 | Avignon | Luberon→L’Isle→Avignon | L’Isle 목요시장, 체크인, 성벽도시 적응 | Fontaine 또는 Nocturne 선택 | 3 | Avignon 숙소 |
-| 21 | 9/18 금 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher, Pont | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
-| 22 | 9/19 토 | Avignon | Uzès 시장과 Pont du Gard | Uzès 토요시장·구시가지, Pont du Gard | 박물관 또는 일몰 택1 | 4 | 주차·입장 |
-| 23 | 9/20 일 | Avignon | Alpilles 마을과 경관 | Les Baux, Saint-Rémy | Glanum 또는 Carrières 택1 | 4 | 주차 |
-| 24 | 9/21 월 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV 반납, Lyon 도착, Ainay·Bellecour | Jacobins·Saône 짧은 산책 | 4 | 렌터카 반납·TGV |
-| 25 | 9/22 화 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·저녁 |
-| 26 | 9/23 수 | Lyon | Croix-Rousse·Halles·공원 | Croix-Rousse 시장, canut 맥락, Halles | Parc de la Tête d’Or | 3 | 식당 |
-| 27 | 9/24 목 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
-| 28 | 9/25 금 | Paris | Lyon→Paris·15박 정착 | TGV, 체크인, 첫 장보기, 숙소권 학습 | 가벼운 동네저녁 | 3 | TGV·Paris 숙소 |
+| 18 | 9/15 화 | Luberon | Gordes와 돌의 문화 | Gordes, Village des Bories | Ménerbes 또는 Oppède 택1 | 3 | 주차·마을 운영 |
+| 19 | 9/16 수 | Avignon | Luberon 체크아웃→Avignon | 농가 아침, 체크아웃, Avignon 이동·체크인, 가벼운 성벽 산책 | L’Isle 목요시장은 날짜 불일치로 기본안 제외 | 3 | 농가 변경·Avignon 숙소 |
+| 20 | 9/17 목 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher, Pont | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
+| 21 | 9/18 금 | Avignon | Uzès와 Pont du Gard | Uzès 구시가지, Pont du Gard | 시장은 금요일 운영 재확인; 박물관·일몰 택1 | 4 | 주차·입장 |
+| 22 | 9/19 토 | Avignon | Arles 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 4 | 문화유산의 날·철도/주차 |
+| 23 | 9/20 일 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV 반납, Lyon 도착, Ainay·Bellecour | Jacobins·Saône 짧은 산책 | 4 | 렌터카 반납·TGV |
+| 24 | 9/21 월 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·월요일 운영 |
+| 25 | 9/22 화 | Lyon | Croix-Rousse·Halles·공원 | Croix-Rousse 시장, canut 맥락, Halles | Parc de la Tête d’Or | 3 | 시장·식당 |
+| 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
+| 27 | 9/24 목 | Paris | Lyon→Paris·16박 정착 | TGV, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | TGV·Paris 숙소 |
+| 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페 | 피로가 적으면 강변·공원 1곳 | 1~2 | 숙소 생활권 |
 | 29 | 9/26 토 | Paris | Latin Quarter·Notre-Dame | 시장·러닝, Latin Quarter, Notre-Dame, Île Saint-Louis | Panthéon 내부 삭제 가능 | 3 | Notre-Dame |
 | 30 | 9/27 일 | Paris | 일요일 생활과 Marais | Luxembourg, Marché Monge, Marais | Hamlet 공연 시 Marais 이동 | 2~4 | 공연 조건부 |
 | 31 | 9/28 월 | Paris | Louvre 선택관람 | gym·세탁, Louvre 2~3개 섹션, Palais Royal | 야간일정 금지 | 4 | Louvre |
@@ -62,7 +62,7 @@ status: "chapter-derived master itinerary; booking values pending"
 | 9/4 | Bàscara 체크아웃→Nice 이동 | 이동수단·차량 반납지·소요시간 재확인 필요 |
 | **9/9** | Nice→Saint-Paul→Grasse→Aix | 렌터카 인수 지연 시 Grasse부터 삭제 |
 | 9/13 | Aix→Lourmarin→Luberon | 4박 체크아웃 후 장보기·농가 진입 |
-| 9/17 | Luberon→L’Isle→Avignon | 목요시장보다 체크인·주차 안정성 우선 |
-| 9/21 | Avignon→Lyon | 주유·반납·TGV 완충시간 확보 |
-| 9/25 | Lyon→Paris | 15박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |
+| 9/16 | Luberon→Avignon | 3박 농가 체크아웃 후 성벽도시 체크인·주차 안정성 우선 |
+| 9/20 | Avignon→Lyon | 주유·반납·TGV 완충시간 확보 |
+| 9/24 | Lyon→Paris | 16박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |
 | 10/10 | Paris→CDG | 출국일 도심 관광 금지, 공항 도착여유 최우선 |

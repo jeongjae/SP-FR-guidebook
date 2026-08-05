@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
-<Placemark><name>[숙소 후보] Pepper & Paper</name><Point><coordinates>2.34644,48.83966,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] Notre-Dame</name><Point><coordinates>2.3499,48.85297,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] Louvre</name><Point><coordinates>2.33764,48.86061,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] Montmartre</name><Point><coordinates>2.3431,48.8867,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] BnF Richelieu</name><Point><coordinates>2.33838,48.867,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] Grand Palais</name><Point><coordinates>2.31247,48.86613,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] Orsay</name><Point><coordinates>2.32656,48.85996,0</coordinates></Point></Placemark>
-<Placemark><name>[핵심 방문지] Bourse de Commerce</name><Point><coordinates>2.3422,48.86245,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Versailles</name><Point><coordinates>2.12036,48.80486,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Giverny</name><Point><coordinates>1.53375,49.0754,0</coordinates></Point></Placemark>
+<Placemark><name>[숙소 후보] Pepper &amp; Paper</name><description>후보 — 실제 예약 후 교체</description><Point><coordinates>2.34644,48.83966,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Notre-Dame</name><description>일정 기준점</description><Point><coordinates>2.3499,48.85297,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Louvre</name><description>일정 기준점</description><Point><coordinates>2.33764,48.86061,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Montmartre</name><description>일정 기준점</description><Point><coordinates>2.3431,48.8867,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] BnF Richelieu</name><description>일정 기준점</description><Point><coordinates>2.33838,48.867,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Grand Palais</name><description>일정 기준점</description><Point><coordinates>2.31247,48.86613,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Orsay</name><description>일정 기준점</description><Point><coordinates>2.32656,48.85996,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Bourse de Commerce</name><description>일정 기준점</description><Point><coordinates>2.3422,48.86245,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Versailles</name><description>일정 기준점</description><Point><coordinates>2.12036,48.80486,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Giverny</name><description>일정 기준점</description><Point><coordinates>1.53375,49.0754,0</coordinates></Point></Placemark>
 </Document></kml>
