@@ -65,7 +65,7 @@
 - 문서 버전: v1.1
 - 상태: 일정 확정·숙소 예약 반영·1차 공식자료 검증 완료
 - 체류기간: 2026-09-01 – 2026-09-04, 3박
-- 확정 숙소: Airbnb · 바스카라의 B&B, Plaça de l’Església 6, Bàscara
+- 확정 숙소: Airbnb · 바스카라의 B&B (정확한 주소는 비공개 예약자료에서 확인)
 - 여행자: Jason·Julia
 - 차량: 바르셀로나에서 인수한 렌터카 사용
 - 다음 거점: 니스
@@ -516,7 +516,7 @@ Day 3의 세 곳은 **서로 20~30분 거리인데 성격이 전부 다르다.**
 |---|---|
 | 여행 성격 | Bàscara 농촌 숙소를 차량 거점으로 Girona·Collioure·Empordà 연결 |
 | 숙박 | Bàscara 3박 · 예약 확정 · 2026-09-01~09-04 |
-| 확정 숙소 | Airbnb · 바스카라의 B&B · 비공개 숙소 근사 권역 |
+| 확정 숙소 | Airbnb · 바스카라의 B&B · 정확한 주소는 비공개 예약자료에서 확인 |
 | Day 1 | Sitges → Girona 축소 방문 또는 Bàscara 선체크인 |
 | Day 2 | Bàscara → Collioure → Cadaqués → Bàscara |
 | Day 3 | Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara |
@@ -595,7 +595,7 @@ Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으�
 | 체크인 | 2026-09-01 |
 | 체크아웃 | 2026-09-04 |
 | 숙박 | 3박 |
-| 주소 | [비공개 숙소 · 정확 주소는 개인 보관본에서 확인](https://www.google.com/maps/search/?api=1&query=B%C3%A0scara) |
+| 주소 | 비공개 — 예약자료에서 확인 |
 | 여행자 | Jason·Julia |
 | 확정번호·가격·결제조건 | 재확인 |
 | 체크인 시간·주차·조식·취소조건 | 재확인 |
@@ -1506,7 +1506,7 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 - 체크인: 2026-09-01
 - 체크아웃: 2026-09-04
 - 숙박: 3박
-- 주소: [비공개 숙소 · 정확 주소는 개인 보관본에서 확인](https://www.google.com/maps/search/?api=1&query=B%C3%A0scara)
+- 주소: 비공개 — 예약자료에서 확인
 - 확정번호·가격·결제조건·체크인 시간·주차·조식·취소조건: 재확인
 
 ## Girona Cathedral
