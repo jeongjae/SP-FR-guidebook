@@ -142,6 +142,7 @@ MAP_DAY_SPANS = {
 # 데일리 모바일 가이드 (ASSETS/80_Daily_Mobile_Guide_Image_Index_v1.1.md 기준)
 DAILY_IMG_DIR = SOURCE / "ASSETS" / "80_Daily_Mobile_Guide_Images"
 PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
+DAILY_V2_DIR = DAILY_IMG_DIR / "v2"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
 SUPERSEDED_DAILY_CARDS = {4, 5, 6}  # Bàscara 예약 확정 전에 제작된 Girona 거점 카드
@@ -2538,7 +2539,7 @@ def build_chapters():
 # ---------------------------------------------------------------- daily cards
 
 def find_daily_images():
-    """Day 번호 → 카드 이미지 경로. Day 12–24는 Phase 4 카드를 우선한다."""
+    """Day 번호 → 카드 이미지 경로. v2 자동생성 카드를 최우선한다."""
     images = {}
     for f in sorted(DAILY_IMG_DIR.glob("Day_*.png")):
         m = re.match(r"Day_(\d+)_(.+)\.png", f.name)
@@ -2549,6 +2550,17 @@ def find_daily_images():
         if m and int(m.group(1)) in PHASE4_DAYS:
             images[int(m.group(1))] = {"src": f, "region": m.group(2).replace("_", " "),
                                        "phase4": True}
+    for f in sorted((DAILY_V2_DIR / "full").glob("day-??-*.png")):
+        m = re.match(r"day-(\d+)-(.+)\.png", f.name)
+        if not m:
+            continue
+        n, slug = int(m.group(1)), f.stem
+        webp = f.with_suffix(".webp")
+        thumb = DAILY_V2_DIR / "thumbs" / f"{slug}-thumb.webp"
+        if not webp.exists() or not thumb.exists():
+            sys.exit(f"Daily Action Map v2 파생 이미지 누락: {f.name}")
+        images[n] = {"src": f, "region": m.group(2).replace("-", " "), "v2": True,
+                     "slug": slug, "webp": webp, "thumb": thumb}
     return images
 
 
@@ -2834,6 +2846,11 @@ def build_daily():
     out_dir = SITE / "daily"
     img_dir = out_dir / "img"
     img_dir.mkdir(parents=True, exist_ok=True)
+    card_asset_dir = SITE / "assets" / "daily-cards"
+    card_full_dir = card_asset_dir / "full"
+    card_thumb_dir = card_asset_dir / "thumbs"
+    card_full_dir.mkdir(parents=True, exist_ok=True)
+    card_thumb_dir.mkdir(parents=True, exist_ok=True)
     images = find_daily_images()
 
     missing = [n for n in range(1, 44) if n not in images]
@@ -2860,6 +2877,10 @@ def build_daily():
         info = images[n]
         row = audit[n]
         shutil.copy(info["src"], img_dir / f"day-{n:02d}.png")
+        if info.get("v2"):
+            shutil.copy(info["src"], card_full_dir / info["src"].name)
+            shutil.copy(info["webp"], card_full_dir / info["webp"].name)
+            shutil.copy(info["thumb"], card_thumb_dir / info["thumb"].name)
         c = chapter_for_date(d)
         wd = WEEKDAY_KO[d.weekday()]
         title = f"Day {n} · {date_label(d)} {wd} · {row['base']}"
@@ -2951,10 +2972,23 @@ def build_daily():
             place_block = ""
 
         # ── 7·8. 원문 · 카드 이미지
-        if n in SUPERSEDED_DAILY_CARDS:
+        if n in SUPERSEDED_DAILY_CARDS and not info.get("v2"):
             card_block = """<details class="day-details day-card-archive"><summary>모바일 카드 안내</summary>
 <p class="note">이 날짜의 기존 이미지는 Bàscara 숙소 예약 확정 전 제작본이라 노출하지 않습니다.
 현재 페이지의 실행 요약·시간표·지도를 기준으로 이용하세요.</p></details>"""
+        elif info.get("v2"):
+            slug = info["slug"]
+            card_block = f"""<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
+<figure class="daily-card daily-card-v2">
+  <a href="../assets/daily-cards/full/{slug}.webp" aria-label="Day {n} Daily Action Map 원본 확대">
+    <img src="../assets/daily-cards/thumbs/{slug}-thumb.webp"
+      width="480" height="640" loading="lazy"
+      alt="Day {n} {html.escape(row['base'])} 시간순 일정과 실제 지도 이동 동선 카드">
+  </a>
+  <figcaption><a href="../assets/daily-cards/full/{slug}.png">검수용 PNG 원본</a></figcaption>
+</figure>
+<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
+</details>"""
         else:
             card_block = f"""<details class="day-details day-card-archive"><summary>모바일 카드 이미지</summary>
 <figure class="daily-card"><img src="img/day-{n:02d}.png"
