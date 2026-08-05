@@ -1,0 +1,370 @@
+{
+  "status": "pass",
+  "days": 43,
+  "prototypes": [
+    2,
+    4,
+    5
+  ],
+  "errors": [],
+  "warnings": [
+    "Day 01: 4 coordinate fields need review",
+    "Day 03: 5 coordinate fields need review",
+    "Day 06: 2 coordinate fields need review",
+    "Day 07: 2 coordinate fields need review",
+    "Day 08: 4 coordinate fields need review",
+    "Day 09: 5 coordinate fields need review",
+    "Day 10: 6 coordinate fields need review",
+    "Day 11: 4 coordinate fields need review",
+    "Day 12: 5 coordinate fields need review",
+    "Day 13: 5 coordinate fields need review",
+    "Day 14: 6 coordinate fields need review",
+    "Day 15: 4 coordinate fields need review",
+    "Day 16: 4 coordinate fields need review",
+    "Day 17: 3 coordinate fields need review",
+    "Day 18: 3 coordinate fields need review",
+    "Day 19: 5 coordinate fields need review",
+    "Day 20: 5 coordinate fields need review",
+    "Day 21: 3 coordinate fields need review",
+    "Day 22: 6 coordinate fields need review",
+    "Day 23: 4 coordinate fields need review",
+    "Day 24: 5 coordinate fields need review",
+    "Day 25: 4 coordinate fields need review",
+    "Day 26: 4 coordinate fields need review",
+    "Day 27: 5 coordinate fields need review",
+    "Day 28: 4 coordinate fields need review",
+    "Day 29: 5 coordinate fields need review",
+    "Day 30: 4 coordinate fields need review",
+    "Day 31: 4 coordinate fields need review",
+    "Day 32: 5 coordinate fields need review",
+    "Day 33: 3 coordinate fields need review",
+    "Day 34: 3 coordinate fields need review",
+    "Day 35: 4 coordinate fields need review",
+    "Day 36: 2 coordinate fields need review",
+    "Day 37: 3 coordinate fields need review",
+    "Day 38: 3 coordinate fields need review",
+    "Day 39: 3 coordinate fields need review",
+    "Day 40: 3 coordinate fields need review",
+    "Day 41: 2 coordinate fields need review",
+    "Day 42: 3 coordinate fields need review",
+    "Day 43: 4 coordinate fields need review"
+  ],
+  "results": [
+    {
+      "day": 1,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 2,
+      "prototype": true,
+      "errors": [],
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 7
+      }
+    },
+    {
+      "day": 3,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 4,
+      "prototype": true,
+      "errors": [],
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 6
+      }
+    },
+    {
+      "day": 5,
+      "prototype": true,
+      "errors": [],
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 4
+      }
+    },
+    {
+      "day": 6,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 2,
+      "visual": null
+    },
+    {
+      "day": 7,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 2,
+      "visual": null
+    },
+    {
+      "day": 8,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 9,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 10,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 6,
+      "visual": null
+    },
+    {
+      "day": 11,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 12,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 13,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 14,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 6,
+      "visual": null
+    },
+    {
+      "day": 15,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 16,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 17,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 18,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 19,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 20,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 21,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 22,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 6,
+      "visual": null
+    },
+    {
+      "day": 23,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 24,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 25,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 26,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 27,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 28,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 29,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 30,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 31,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 32,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 5,
+      "visual": null
+    },
+    {
+      "day": 33,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 34,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 35,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    },
+    {
+      "day": 36,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 2,
+      "visual": null
+    },
+    {
+      "day": 37,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 38,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 39,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 40,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 41,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 2,
+      "visual": null
+    },
+    {
+      "day": 42,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 3,
+      "visual": null
+    },
+    {
+      "day": 43,
+      "prototype": false,
+      "errors": [],
+      "unresolvedCoordinates": 4,
+      "visual": null
+    }
+  ]
+}
