@@ -6,7 +6,6 @@ on:
     paths:
       - "source/**"
       - "build/**"
-      - "site/**"
   workflow_dispatch:
 
 permissions:
