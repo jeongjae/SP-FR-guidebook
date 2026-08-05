@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "day": 27,
+  "date": "2026-09-24",
+  "city": "Paris",
+  "title": "Lyon→Paris·16박 정착",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "3",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "tgv",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "TGV",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "TGV",
+      "menu": null,
+      "reservation": "TGV·Paris 숙소",
+      "optional": false
+    },
+    {
+      "id": "stop",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "체크인",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "체크인",
+      "menu": null,
+      "reservation": "TGV·Paris 숙소",
+      "optional": false
+    },
+    {
+      "id": "stop-3",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "생활시설 확인",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "생활시설 확인",
+      "menu": null,
+      "reservation": "TGV·Paris 숙소",
+      "optional": false
+    },
+    {
+      "id": "stop-4",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "세탁·짐 정리",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "세탁·짐 정리",
+      "menu": null,
+      "reservation": "TGV·Paris 숙소",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "TGV·Paris 숙소"
+  ],
+  "food": [
+    "숙소권 간단식"
+  ],
+  "highlights": [
+    "TGV, 체크인, 생활시설 확인, 세탁·짐 정리",
+    "선택·축소: 숙소 주변 산책·가벼운 저녁"
+  ],
+  "backup": "짐정리·최소 장보기만",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

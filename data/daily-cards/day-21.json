@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "day": 21,
+  "date": "2026-09-18",
+  "city": "Avignon",
+  "title": "Uzès와 Pont du Gard",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "4",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "uz-s",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Uzès 구시가지",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Uzès 구시가지",
+      "menu": null,
+      "reservation": "주차·입장",
+      "optional": false
+    },
+    {
+      "id": "pont-du-gard",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Pont du Gard",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Pont du Gard",
+      "menu": null,
+      "reservation": "주차·입장",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "주차·입장"
+  ],
+  "food": [
+    "Uzès 빵집/비스트로"
+  ],
+  "highlights": [
+    "Uzès 구시가지, Pont du Gard",
+    "선택·축소: 시장은 금요일 운영 재확인; 박물관·일몰 택1"
+  ],
+  "backup": "Uzès 단축·Pont 축소",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}
