@@ -1,6 +1,6 @@
 # 가이드북 이미지 정책
 
-최종 갱신: 2026-08-03
+최종 갱신: 2026-08-05
 
 ## 범위와 원칙
 
@@ -31,18 +31,21 @@ CC BY와 CC BY-SA는 저작자, 출처 페이지, 라이선스명과 라이선�
 
 ## 저장과 최적화
 
-- 정본 파일: `source/ASSETS/licensed-guidebook-images/<region>/`
-- 빌드 결과: `site/assets/media/<region>/`
-- 형식: WebP, 메타데이터 제거, 원본 비율 유지
-- Hero: 최대 1800px, 본문 장소: 최대 1200px, 음식: 최대 900px
-- 품질: WebP 80을 기본으로 하되 심한 아티팩트가 있으면 조정
-- 목표 용량: 본문 100–300KB, Hero 250–500KB
+- 승인 원본: `source/ASSETS/photos/originals/<region>/`
+- 반응형 파생본: `source/ASSETS/photos/processed/{hero,content,thumbnails}/`
+- 빌드 결과: `site/assets/images/`
+- 매니페스트: `data/images/image-manifest.json`과 `data/images/image-manifest.csv`
+- 형식: 원본은 검증용으로 보존하고, 공개 파일은 sRGB WebP로 변환하며 EXIF는 제거한다.
+- Hero: 800/1280/1920px, 본문: 최대 1280px, 썸네일: 480×320px
+- 원본보다 큰 파생본은 만들지 않으며, 브라우저에는 `srcset`·`sizes`·명시적 크기를 제공한다.
+- Hero만 즉시 로드하고 본문·썸네일은 지연 로드한다.
+- 목표 용량: 본문 평균 250KB 이하, Hero 평균 350KB 이하, 썸네일 평균 80KB 이하
 
-대용량 원본은 저장소에 보관하지 않는다. 원본 URL과 원본 파일 페이지는 `data/media-catalog.json`에 보관한다.
+Barcelona 파일럿은 재현성과 라이선스 증빙을 위해 승인 원본을 저장소에 보관하되 사이트와 PWA에는 포함하지 않는다. 후속 43일 전체 배치에서는 저장소 증가량을 먼저 측정해 Git LFS 또는 별도 원본 보관소를 결정한다. 기존 `data/media-catalog.json` 자산은 단계적으로 새 매니페스트로 이전한다.
 
 ## Attribution
 
-각 이미지 바로 아래에 저자, Wikimedia Commons, 라이선스, 원본 링크를 표시한다. 전체 목록은 빌드가 `docs/image-attributions.md`와 `site/credits.html`에 생성한다. 이미지와 크레디트의 연결이 명확해야 하며, 저자 표시가 필요한데 저자가 없으면 빌드를 실패시킨다.
+각 이미지 바로 아래에 저자, Wikimedia Commons, 라이선스, 원본 링크를 표시한다. 파일럿 전체 목록은 빌드가 `site/about/photo-credits.html`에 생성하고, 저장소용 목록은 `docs/photo-content/04_barcelona_photo_credits.md`에 둔다. 이미지와 크레디트의 연결이 명확해야 하며, 저자 표시가 필요한데 저자가 없으면 검사를 실패시킨다.
 
 ## 미확보 항목
 
