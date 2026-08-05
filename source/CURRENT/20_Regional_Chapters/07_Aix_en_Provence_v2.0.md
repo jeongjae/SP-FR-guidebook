@@ -5,7 +5,7 @@
 
 # Commercial Guide Module
 
-> **시장·분수·세잔의 도시와 Cassis의 바다를 4박에 압축한 Provence 입문**  
+> **시장·분수·세잔의 도시와 Marseille의 항구문화를 4박에 연결한 Provence 입문**
 > 도시생활의 리듬과 세잔의 시선을 먼저 익힌 뒤 Luberon으로 들어가는 연결 장
 
 ## Editor’s Verdict
@@ -14,9 +14,9 @@
 |---|---|
 | 여행 적합도 | ★★★★★ Jason·Julia의 생활형 여행에 최적화 |
 | 예산 체감 | 중상 |
-| 일정 강도 | 보통, Cassis day만 높음 |
-| 예약 핵심 | 숙소주차·Atelier·Calanques 확인 |
-| 우천 전환 | Musée Granet 확대, Marseille/Mucem 대체 |
+| 일정 강도 | 보통, Marseille day만 높음 |
+| 예약 핵심 | 숙소주차·Atelier·Mucem·Aix–Marseille 교통 확인 |
+| 우천 전환 | Mucem 실내 비중 확대, Le Panier 축소 |
 
 ## 놓치면 아쉬운 선택
 
@@ -25,7 +25,7 @@
 | 필수 | **목·토 시장과 Vieil Aix** | Aix의 관광지가 아니라 생활도시로서의 밀도를 가장 잘 보여준다. |
 | 우선 추천 | **Musée Granet** | 세잔을 작품으로 먼저 보고 도시와 풍경으로 확장한다. |
 | 우선 추천 | **Atelier de Cézanne** | 작업실 자체보다 화가의 반복된 일과 이동을 상상하는 장소다. |
-| 우선 추천 | **Cassis·Calanques** | 도시 3일 사이에 바다와 석회암 풍경을 넣어 Provence의 폭을 넓힌다. |
+| 우선 추천 | **Marseille·Vieux-Port·Mucem** | 생활도시 Aix와 항구대도시 Marseille의 대비를 한 날에 읽는다. |
 | 선택 | **Julia 수영·Jason 스케치** | 같은 오후를 각자의 속도로 보내는 생활형 체류의 핵심 장면이다. |
 
 ## 하루를 완성하는 네 가지 선택
@@ -46,8 +46,8 @@
 5. Quartier Mazarin
 6. Atelier Cézanne
 7. 분수 산책
-8. Cassis 항구
-9. Calanques
+8. Marseille Vieux-Port
+9. Mucem·Fort Saint-Jean
 10. Lourmarin 전환일
 
 ## 현장 메모
@@ -73,9 +73,9 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ---
 
 # 07. 엑상프로방스 4박 5일
-## 세잔의 도시, 시장생활과 카시스의 바다
+## 세잔의 도시, 시장생활과 마르세유의 항구
 
-> **여행의 역할**: Nice 5박 뒤 프로방스 내륙의 생활 리듬으로 전환하는 4박 거점이다. 엑상은 시장·분수·대학·법원·카페가 압축된 **걷기 좋은 생활도시**다. 기본안은 엑상과 세잔, 카시스 해안에 집중한다. Marseille는 Cassis의 기상·운항이 나쁠 때 교체하는 **도시형 대체일**로 남긴다.
+> **여행의 역할**: Nice 5박 뒤 프로방스 내륙의 생활 리듬으로 전환하는 4박 거점이다. 엑상은 시장·분수·대학·법원·카페가 압축된 **걷기 좋은 생활도시**다. 기본안은 엑상과 세잔, 그리고 대중교통으로 다녀오는 Marseille 항구도시 하루에 집중한다. Cassis·Calanques는 날씨와 취향이 맞을 때 Marseille를 완전히 교체하는 **선택 대안**이다.
 
 > **여행자 기준**: Julia의 수영은 선택 일정이며 숙소 선정조건으로 사용하지 않는다. 아침은 숙소, 점심은 샌드위치·시장·가벼운 현지식, 저녁은 레스토랑을 기본으로 한다. Jason의 스케치 2시간과 Julia의 선택 수영을 9월 12일 같은 시간 블록에 배치한다.
 
@@ -132,9 +132,9 @@ Aix는 라틴어 **aquae**(물)에서 왔다. 로마인이 온천 때문에 여�
 
 **이번 일정은 작업실과 풍경 중심이다.** 작품은 상대적으로 적다. 그런데 이 여행에는 후반부가 있다 — **Day 28부터 파리에 16박 한다.** 아래 '대안 루트'의 오르세 항목을 참조.
 
-### 엑상과 카시스를 축으로, 마르세유는 대안으로
+### 엑상과 마르세유를 축으로, 카시스는 선택 대안으로
 
-기존 원고의 판단이다. 마르세유는 크고 복잡하고 이 여행의 리듬과 다르다. **4박에 대도시를 하나 더 넣으면 회복이 안 된다.**
+엑상의 단정한 시장도시와 마르세유의 다층적인 항구도시를 대비한다. Marseille에서는 Vieux-Port–Le Panier–Mucem–Fort Saint-Jean만 이어 과밀을 피한다. **Cassis와 Marseille를 같은 날 결합하지 않는다.**
 
 ## 일정에 포함된 장소별 상세 가이드
 
@@ -329,7 +329,62 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 | 체류 | 90분 |
 | 성격 | **실내.** 폭염·우천 대체안으로 가치 높음 |
 
-### Day 14 — Cassis와 Calanques
+### Day 14 — Marseille 당일치기
+
+### Marseille {{grade:essential|필수}}
+
+엑상의 질서정연한 시장·대학도시와 달리 Marseille는 이민, 어업, 상업, 현대문화가 한 항구에 겹친다. 이번 하루의 목적은 많은 명소를 모으는 것이 아니라 **Vieux-Port에서 오래된 항구도시를 읽고, Le Panier를 지나 Mucem과 Fort Saint-Jean에서 오늘의 지중해 도시로 시선을 넓히는 것**이다.
+
+**권장 체류:** 현지 7시간 안팎. 점심 60–75분과 오후 카페 30분을 일정에 포함한다.
+
+- [Aix 출발 → Marseille Saint-Charles 대중교통 길찾기](https://www.google.com/maps/dir/?api=1&origin=Aix-en-Provence&destination=Gare+de+Marseille-Saint-Charles&travelmode=transit)
+- [Vieux-Port → Le Panier → Mucem 도보 길찾기](https://www.google.com/maps/dir/?api=1&origin=Vieux-Port+Marseille&destination=Mucem&waypoints=Le+Panier+Marseille&travelmode=walking)
+- [Marseille → Aix 귀환 대중교통 길찾기](https://www.google.com/maps/dir/?api=1&origin=Gare+de+Marseille-Saint-Charles&destination=Aix-en-Provence&travelmode=transit)
+
+### Vieux-Port {{grade:essential|필수}}
+
+도착 직후 항구 양쪽 부두를 전부 돌지 않는다. Quai des Belges에서 항구의 축과 Notre-Dame de la Garde 방향을 확인한 뒤 북쪽 Quai du Port로 이동한다. 아침 어시장 흔적과 페리, 상업도시의 움직임을 40–50분만 본다.
+
+### Le Panier {{grade:priority|우선 추천}}
+
+Vieux-Port 북쪽의 경사 골목을 Hôtel de Ville–Place de Lenche–Vieille Charité 방향으로 잇는다. 관광 상점만 따라가지 말고 주민 골목과 계단, 그늘진 작은 광장을 번갈아 본다. **45–60분 상한**으로 두고 점심시간을 잠식하지 않는다.
+
+### Mucem {{grade:essential|필수}}
+
+지중해 문명을 다루는 국립박물관이자 바다와 도시를 연결하는 건축이다. 전시 하나를 75–90분만 고르고, 외부 램프와 보행교에서 Fort Saint-Jean·항구·바다의 관계를 본다. 2026년 9월 공식 운영은 화요일 휴관, 10:00–19:00로 확인했지만 **9월 11일의 전시·입장 슬롯은 출발 전 재확인**한다.
+
+### Fort Saint-Jean {{grade:essential|필수}}
+
+Mucem과 보행교로 연결된 요새다. 정원과 성벽 동선에서 Vieux-Port 입구를 되돌아보는 데 45–60분을 쓴다. 전시를 더 추가하기보다 이곳에서 앉아 쉬는 편이 하루의 균형에 맞다.
+
+### Notre-Dame de la Garde {{grade:optional|선택}}
+
+도시 전체를 읽는 전망은 좋지만 언덕 이동이 별도 왕복을 만든다. 날씨가 맑고 다리가 가벼우며 Mucem 실내관람을 줄였을 때만 버스·택시로 다녀온다. **Le Panier나 점심을 압축해서 억지로 넣지 않는다.**
+
+#### 엑상 출발·귀환
+
+| 구간 | 기본안 | 실행 포인트 |
+|---|---|---|
+| Aix 숙소→Gare routière | 도보·시내버스 | 출발 20분 전 도착 |
+| Aix→Marseille Saint-Charles | 광역버스 Ligne 50 | 직행축을 기본으로 하되 2026-09-11 실제 시각·정류장은 전날 공식 앱에서 재확인 |
+| Saint-Charles→Vieux-Port | Métro M1 | 혼잡한 에스컬레이터에서 휴대전화·지갑을 꺼내지 않음 |
+| Fort Saint-Jean→Saint-Charles→Aix | 도보·Métro M1·Ligne 50 | 막차가 아니라 저녁 전 귀환편을 선택 |
+
+철도는 운행·숙소 위치가 더 유리할 때의 대안이다. 차량은 주차와 도심운전 부담 때문에 기본안으로 쓰지 않는다.
+
+#### 점심·카페 후보
+
+- **Mucem의 La Terrasse 또는 Le Kiosque:** 동선을 끊지 않는 공식 관내 후보. 당일 운영·혼잡 재확인.
+- **Le Panier의 panisse·지중해식 작은 접시:** 메뉴와 영업을 현장에서 확인하고, 긴 코스 대신 60분 안에 끝낸다.
+- **Fort Saint-Jean 휴식:** 물과 작은 간식을 준비해 정원에서 20–30분 앉는다.
+
+#### 안전·축소안
+
+- Saint-Charles, Métro, Vieux-Port 혼잡구간에서는 크로스백 지퍼를 닫고 몸 앞에 둔다. 카페 테이블 위에 휴대전화를 두지 않는다.
+- 우천 시 Le Panier의 미끄러운 계단을 줄이고 **Vieux-Port 30분 + Mucem 2시간 + Fort Saint-Jean 연결부**만 유지한다.
+- 누적피로 시 Notre-Dame de la Garde와 Vieille Charité를 삭제하고 16시대부터 귀환한다.
+
+### 선택 대안 — Cassis와 Calanques
 
 ### ⚠ 먼저 읽을 것 — 접근이 규제된다
 
@@ -368,7 +423,7 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 
 ---
 
-### Cassis 항구 {{grade:essential|필수}}
+### Cassis 항구 {{grade:alternative|대체}}
 
 석회암 절벽 아래의 어항이다. 마을 자체는 작고, 항구를 한 바퀴 도는 데 30분이면 된다.
 
@@ -380,7 +435,7 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 
 ---
 
-### Calanques {{grade:essential|필수}}
+### Calanques {{grade:alternative|대체}}
 
 #### 무엇인가
 
@@ -550,16 +605,16 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 | 항목 | 확정·권장 내용 |
 |---|---|
 | 체류 | 2026년 9월 9일 수요일 체크인 → 9월 13일 일요일 체크아웃, **4박** |
-| 핵심 주제 | 프로방스 생활도시 · 세잔의 작업공간 · 시장과 식재료 · Cassis Calanques |
+| 핵심 주제 | 프로방스 생활도시 · 세잔의 작업공간 · 시장과 식재료 · Marseille 항구문화 |
 | 최우선 숙소권 | **Sextius–Allées Provençales–Rotonde 북서쪽**. 구시가지 도보, 렌터카 진출입, 장보기 균형 |
 | 숙박형태 | 4박이어도 주방·냉장고·세탁·에어컨·예약주차가 분명한 아파트호텔 우선 |
 | 계획 숙박예산 | 2인 4박 **€650–900 내외**, 주차·관광세 포함. 조건이 매우 좋으면 €1,000까지 비교 |
-| 필수 | Vieil Aix·Cours Mirabeau, 시장, Musée Granet, Atelier des Lauves, Cassis 1일 |
-| 선택·대체 | Marseille Mucem은 **9/11 Cassis와 교체할 때만**. 두 곳을 같은 날 결합하지 않음 |
+| 필수 | Vieil Aix·Cours Mirabeau, 시장, Musée Granet, Atelier des Lauves, Marseille 1일 |
+| 선택·대체 | Cassis·Calanques는 **9/11 Marseille를 완전히 교체하는 대안**. 두 곳을 같은 날 결합하지 않음 |
 | 시장 | 9/10 목요일 시장과 9/12 토요일 시장을 식재료·생활체험에 사용 |
 | 운동 | Jason: Parc de la Torse 러닝 1회. Julia: Piscine Yves Blanc 9/12 선택 |
 | 스케치 | 9/12 오후 Jason 2시간. Place d’Albertas 또는 Terrain des Peintres |
-| 차량 | 도심일에는 주차. Cassis만 차량, Marseille 대체일은 L50 버스 |
+| 차량 | 도심일에는 주차. Marseille는 Ligne 50 대중교통, Cassis 대체일만 차량 검토 |
 | 다음 이동 | 9/13 Aix → Lourmarin → Luberon 농가 |
 
 ### 일정의 핵심 논리
@@ -569,8 +624,8 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
         ↓
 9/10 시장·Vieil Aix·Musée Granet — 도시와 미술
         ↓
-9/11 Cassis·Calanques — 해안 자연
-      (강풍·보트취소 시 Marseille·Mucem으로 교체)
+9/11 Marseille — Vieux-Port·Le Panier·Mucem·Fort Saint-Jean
+      (Cassis·Calanques는 하루 전체를 바꾸는 선택 대안)
         ↓
 9/12 토요일 시장 + Atelier des Lauves + Jason 스케치 / Julia 수영
         ↓
@@ -615,26 +670,26 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 ---
 
 ### Day 3 — 9월 11일 금요일
-### Cassis와 Calanques — 항구와 석회암 해안
+### Marseille — 오래된 항구에서 현대 지중해 문화까지
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
-| 07:45 | Aix 출발 | 물·모자·멀미약·교통 확인 |
-| 08:45 전후 | Gorguettes 주차 | 중심주차 경쟁 회피 |
-| 09:00–09:25 | 셔틀로 항구 | 배차·막차 확인 |
-| 09:30–10:15 | 항구·구시가지 | 출항여부 먼저 확인 |
-| 10:30–11:50 | **5 Calanques 보트** | 강풍·파도에 따라 3 Calanques 축소 |
-| 12:00–13:00 | 가벼운 점심 | 긴 코스식 금지 |
-| 13:10–15:30 | Bestouan·항구·카페 | 수영·쇼핑은 선택 |
-| 15:40–17:20 | 셔틀·Aix 귀환 | 저녁 전 1시간 휴식 |
+| 08:10 | Aix 숙소 출발 | Ligne 50 실제 시각·정류장 전날 확인 |
+| 09:45–10:30 | **Vieux-Port** | 항구축을 읽고 북쪽 부두로 이동 |
+| 10:30–11:30 | **Le Panier** | Place de Lenche 중심, 경사골목 60분 상한 |
+| 11:45–13:00 | 점심·휴식 | Le Panier 또는 Mucem 관내 후보 |
+| 13:15–15:00 | **Mucem** | 전시 하나 + 건축·보행교 |
+| 15:00–16:10 | **Fort Saint-Jean** | 정원·전망·카페 휴식 포함 |
+| 16:10 이후 | Vieux-Port 또는 선택 전망 | Notre-Dame de la Garde는 체력·맑은 날만 |
+| 17:15–19:00 | Saint-Charles→Aix 귀환 | 귀환편 여유, 저녁은 숙소권에서 가볍게 |
 
-**피로도 4/5.** Route des Crêtes 장거리 드라이브와 육상 장거리 트레킹은 추가하지 않는다.
+**피로도 4/5.** Cassis·Calanques, LUMA, 해안 장거리 산책을 추가하지 않는다.
 
-#### Marseille 대체규칙
+#### Cassis 선택 대안
 
-- 보트취소·폭우·강풍으로 Cassis의 핵심가치가 낮으면 **Aix–Marseille L50**로 전환한다.
-- Vieux-Port → Le Panier 45분 → Mucem 2시간 → Fort Saint-Jean만 보고 귀환한다.
-- Cassis와 Marseille를 같은 날 결합하지 않는다.
+- 바다·석회암 경관을 항구대도시보다 우선하고 기상·화재통제가 안정적일 때만 Marseille 하루를 통째로 교체한다.
+- Cassis 항구와 짧은 보트 또는 해안산책 하나만 선택한다.
+- Marseille와 Cassis를 같은 날 결합하지 않는다.
 
 ---
 
@@ -675,7 +730,7 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 |---|---:|---:|---:|---:|---|
 | 9/9 | 2–4km | 장거리 렌터카 | 숙소 중심 | 5/5 | 산책·외식 |
 | 9/10 | 7–9km | 시내도보 | Granet 2–2.5h | 3/5 | Mazarin·성당 |
-| 9/11 | 5–7km | 운전+셔틀 | 보트 1h20 | 4/5 | 해변·쇼핑 |
+| 9/11 | 7–9km | 광역버스+메트로 | Mucem 1.5h | 4/5 | 전망대·Le Panier 일부 |
 | 9/12 | 5–8km | 버스·택시 선택 | Atelier·수영 | 2–3/5 | 러닝·쇼핑 |
 | 9/13 | 4–6km | 운전·짐 | 선택 | 3/5 | Château 내부 |
 
@@ -688,8 +743,8 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 | 숙소→구시가지 | 10–25분 | 시내일 차량 사용금지 |
 | 숙소→Granet | 25–40분 | 큰 가방 제한 |
 | 숙소→Atelier | 25–40분 | 오르막·예약 15분 전 |
-| Aix→Cassis 항구 | 80–110분 | Gorguettes 주차·셔틀 포함 |
-| Aix→Marseille 대체일 | 60–90분 | L50·A7 정체 |
+| Aix→Marseille | 60–90분 | Ligne 50·A7 정체, 실제 시간표 재확인 |
+| Aix→Cassis 선택 대안 | 80–110분 | Gorguettes 주차·셔틀 포함 |
 | Aix→Lourmarin | 70–90분 | 일요일 주차 |
 | Lourmarin→농가 | 60–120분 | 정확한 주소 확정 후 재계산 |
 
@@ -701,10 +756,10 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 |---:|---|---|---|
 | P0 | Aix 숙소+주차 | **9/9–9/13** | 총액·관광세·주차·냉방·주방·취소 |
 | P0 | Atelier des Lauves | 9/12 11:00 | 언어·입장·접근성 |
-| P1 | Cassis 보트 | **9/11** 10:30 전후 | 5 Calanques·운항·환불 |
+| P1 | Mucem | **9/11** 13:15 전후 | 전시·입장·임시변경 |
 | P1 | Musée Granet | **9/10** 13:40 | 특별전·보안검색 |
 | P1 | 저녁식당 | 9/10·9/12 | 휴무·지각정책 |
-| P2 | Marseille 대체모듈 | 9/11 | L50·Mucem, Cassis와 교체 시만 |
+| P2 | Cassis 선택 대안 | 9/11 | 기상·화재·보트, Marseille와 교체 시만 |
 | P2 | Piscine Yves Blanc | 9/12 | 자유레인·수영모·수영복 |
 
 ---
@@ -743,13 +798,13 @@ Cours Mirabeau — 분수·카페·도시 산책축
 
 Richelme는 매일 아침 생활형 식품시장이고, 화·목·토에는 Cours Mirabeau와 여러 광장에 식품·직물·꽃 시장이 확장된다. Jason·Julia의 숙소 아침과 샌드위치 점심을 실제로 운영하려면 토요일 시장을 구경이 아니라 **3일치가 아닌 하루치 구매**로 사용한다.
 
-### 6.5 Aix와 Cassis를 기본축으로, Marseille는 도시형 대안으로 둔다
+### 6.5 Aix와 Marseille를 기본축으로, Cassis는 해안 대안으로 둔다
 
 - Aix: 내륙의 행정·시장·미술도시
-- Cassis: 석회암 칼랑크와 작은 항구
-- Marseille: 대항구·이민·지중해 문명·현대건축. **Cassis의 기상대체일**로만 사용한다.
+- Marseille: 대항구·이민·지중해 문명·현대건축. **9/11 기본 당일치기**다.
+- Cassis: 석회암 칼랑크와 작은 항구. 바다 경관을 우선할 때 **하루 전체를 교체하는 선택 대안**이다.
 
-이번 4박의 핵심은 Aix의 생활·세잔과 Cassis 해안이다. Marseille를 선택하면 Cassis를 교체하며 두 곳을 한 일정에 겹치지 않는다.
+이번 4박의 핵심은 Aix의 생활·세잔과 Marseille 항구다. Cassis를 선택하면 Marseille를 교체하며 두 곳을 한 일정에 겹치지 않는다.
 
 ---
 
@@ -779,15 +834,15 @@ Richelme는 매일 아침 생활형 식품시장이고, 화·목·토에는 Cour
 | Musée Granet | **필수** | Cézanne·프로방스 미술과 2026 특별전 |
 | Atelier des Lauves | **필수** | 세잔의 작업환경과 말년 작품을 구체적으로 이해 |
 | Quartier Mazarin | **우선 추천** | 과밀하지 않은 건축 산책과 Granet 동선 |
-| Cassis·5 Calanques 보트 | **우선 추천** | 내륙 프로방스와 석회암 해안의 대비 |
-| Marseille Mucem·Fort Saint-Jean | **선택·대체** | Cassis가 불가능하거나 대도시를 더 선호할 때 교체 |
+| Marseille Mucem·Fort Saint-Jean | **필수** | 내륙 프로방스와 항구대도시의 대비 |
+| Cassis·Calanques | **대체** | 바다·석회암 경관을 더 선호하고 기상조건이 맞을 때 교체 |
 | Terrain des Peintres | **우선 추천** | Jason 스케치와 Cézanne의 시점 연결 |
 | Bastide du Jas de Bouffan | **선택** | 세잔의 가족사·초기작 관심이 클 때 |
 | Bibémus quarries | **선택** | 채석장 형태와 후기회화 관계, 가이드 언어 제약 |
 | Cathédrale Saint-Sauveur | **선택** | 여러 시대 건축이 겹친 성당, 일정 과밀 시 외관 |
 | Fondation Vasarely | **선택** | 옵아트·현대건축 선호 시 Cassis 우천대체 |
 | Sainte-Victoire 장거리 하이킹 | **비추천** | 4박 일정에서 더위·산불·보행 피로 대비 효율 낮음 |
-| Arles 당일치기 | **비추천** | 아비뇽 구간과 중복, Marseille·Cassis 집중 약화 |
+| Aix에서 Arles 추가 | 제외 | Arles는 9/19 Avignon 기본 당일치기로 배정되어 중복 이동하지 않음 |
 | Saint-Tropez | **비추천** | 이동·정체 대비 프로젝트 취향과 밀도 낮음 |
 
 ---
@@ -847,8 +902,8 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 
 | 지역 | 이동성 | 역할 | 이번 일정 판단 |
 |---|---:|---|---|
-| Cassis | 차량 1시간 전후 | 칼랑크·항구 | **기본 포함** |
-| Marseille | L50 1시간 이내 계획 | 항구도시·Mucem | **Cassis 대체안** |
+| Marseille | Ligne 50 약 1시간 계획 | 항구도시·Mucem | **기본 포함** |
+| Cassis | 차량 1시간 전후 | 칼랑크·항구 | **Marseille 대체안** |
 | Sainte-Victoire | 차량·버스 | 세잔 풍경·하이킹 | 전망·스케치만 선택 |
 | Lourmarin | 다음 이동일 | 뤼베롱 입구·생활마을 | **9/13 포함** |
 | Cucuron | Lourmarin 인근 | 연못·조용한 마을 | Lourmarin 대체 |
@@ -965,7 +1020,7 @@ Day 12에 니스 공항에서 렌터카를 받는다. **그런데 엑상 구시�
 |---|---|
 | 12 | 인수 · 이동 · **숙소 주차장에 넣는다** |
 | 13 | **쓰지 않는다.** 전부 도보 |
-| 14 | 카시스 왕복에 사용 |
+| 14 | Marseille는 대중교통, 차량은 숙소에 유지 |
 | 15 | 아틀리에까지 도보 또는 짧게 사용 |
 | 16 | 뤼베롱 이동 |
 
@@ -1033,7 +1088,7 @@ Day 12에 니스 공항에서 렌터카를 받는다. **그런데 엑상 구시�
 
 - Vieil Aix와 Cours Mirabeau 주변은 보행·차량제한 구역이 많다.
 - 숙소에 주차한 뒤 9/9·9/11·9/12는 차를 움직이지 않는다.
-- Cassis일에만 출차하고, 출발일에는 Lourmarin 방향으로 이동한다.
+- Marseille 기본일에는 출차하지 않고, 출발일에는 Lourmarin 방향으로 이동한다. Cassis 대체안을 택할 때만 차량을 쓴다.
 - 내비게이션보다 숙소가 보내는 **주차장 진입주소**를 사용한다.
 
 ### 주요 공영주차
@@ -1086,7 +1141,7 @@ Day 12에 니스 공항에서 렌터카를 받는다. **그런데 엑상 구시�
 마늘 마요네즈 소스 이름이면서, **그 소스에 삶은 채소·대구·달걀·달팽이를 곁들여 내는 한 상**의 이름이기도 하다.
 
 > **양이 많다.** 2인이 각자 시키면 남는다. 하나를 나누고 다른 요리를 하나 더 시키는 편이 낫다.
-> 전통적으로 **금요일 점심** 메뉴인 식당이 있다. Day 14(9/11)가 금요일이지만 그날은 카시스에 있다.
+> 전통적으로 **금요일 점심** 메뉴인 식당이 있다. Day 14(9/11)는 Marseille 당일치기라 엑상 점심에는 적용하지 않는다.
 
 ## 카시스에서는 다르게 먹는다
 
@@ -1102,7 +1157,7 @@ Day 14는 해안이다. **내륙 프로방스 요리가 아니라 지중해 생�
 |---|---|---|---|
 | 12 | 9/9 수 | 이동 중 (그라스 인근) | **엑상 도착 후 가벼운 한 끼** |
 | 13 | 9/10 목 | **시장에서 조달** | 구시가지 식당 |
-| 14 | 9/11 금 | **카시스 해산물** | 엑상 복귀 후 가볍게 |
+| 14 | 9/11 금 | **Marseille panisse·지중해식 가벼운 점심** | 엑상 복귀 후 가볍게 |
 | 15 | 9/12 토 | 시장 조달 또는 아틀리에 근처 | 마지막 밤. 제대로 된 한 끼 |
 | 16 | 9/13 일 | 뤼베롱 이동 중 | 농가 |
 
@@ -1143,7 +1198,7 @@ Day 14는 해안이다. **내륙 프로방스 요리가 아니라 지중해 생�
 - 9/9: La Brocherie 또는 숙소식
 - 9/10: Coucou
 - 9/11: La Kémia 또는 간단한 동네식당
-- Marseille 대체일에는 특별식 예약 금지
+- Marseille 당일치기에는 특별식 예약 금지
 - 9/12: Coucou 미방문 시 Coucou, 아니면 Le Ramus
 
 ### 카페·디저트
@@ -1162,7 +1217,7 @@ Calissoun은 화·목·토 Richelme 시장에 출점하는 공식 안내가 있�
 ### 주문 원칙
 
 - Cassis에서 해산물 점심을 먹으면 Aix 저녁은 채소·작은 접시
-- Marseille 대체일에도 bouillabaisse는 시간·가격·양이 커 제외
+- Marseille 기본일에도 bouillabaisse는 시간·가격·양이 커 제외
 - 렌터카 운전 전날과 당일 와인은 1잔 이하 또는 생략
 - 디저트는 calisson과 과일을 병행하지 않고 하나만
 
@@ -1365,9 +1420,9 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | 순위 | 대상 | 이유 |
 |---:|---|---|
 | 1 | **세잔 사이트** | **정원 제한.** 현장 발권은 잔여분만 |
-| 2 | 카시스 보트 | 성수기 잔여 |
+| 2 | Mucem | 9/11 전시·입장조건 |
 | 3 | Musée Granet | 특별전 가능성 |
-| 4 | Fondation Maeght | 온라인 예매 권장 |
+| 4 | Cassis 보트 | 선택 대안을 택할 때만 |
 
 ---
 
@@ -1400,18 +1455,17 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | 도착 | 15분 전 |
 | 주의 | 큰 가방 금지·보안검색 |
 
-### 예약카드 C — Cassis 보트
+### 예약카드 C — Marseille 기본일
 
 | 항목 | 기록 |
 |---|---|
 | 날짜 | **9/11** |
-| 코스 | 5 Calanques / 약 1시간 20분 |
-| 계획요금 | €25/인 |
-| 출항시간 | 10:30 전후 |
-| 집결지 | Cassis 항구 |
-| 날씨·환불 |  |
-| 멀미대책 |  |
-| 대체 | 3 Calanques 또는 Cassis 산책 |
+| Ligne 50 | 출발·정류장·귀환편 전날 확인 |
+| 기본동선 | Vieux-Port→Le Panier→Mucem→Fort Saint-Jean |
+| Mucem | 전시 하나, 13:15 전후 입장 계획 |
+| 휴식 | 점심 60–75분·Fort 정원 20–30분 |
+| 안전 | 혼잡구간 크로스백 몸 앞, 휴대전화 노출 최소화 |
+| 축소 | Le Panier 일부·Notre-Dame de la Garde 삭제 |
 
 ### 예약카드 D — Atelier des Lauves
 
@@ -1425,16 +1479,15 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | 예약번호 |  |
 | 취소조건 |  |
 
-### 예약카드 E — Marseille 대체모듈
+### 예약카드 E — Cassis 선택 대안
 
 | 항목 | 기록 |
 |---|---|
-| L50 출발 | **9/11 Cassis와 교체할 때만** |
-| 귀환 | 17:20 전후 |
-| Mucem | 12:20–14:40 |
-| 티켓 | €11 계획 |
-| 교통장애 | 전날·당일 확인 |
-| 저녁예약 | 19:45 이후 |
+| 적용 | **9/11 Marseille를 완전히 교체할 때만** |
+| 코스 | 항구 + 보트 또는 해안산책 하나 |
+| 운항·규제 | 전날·당일 공식 확인 |
+| 주차·셔틀 | 실제 운영 재확인 |
+| 결합금지 | Marseille와 같은 날 결합하지 않음 |
 
 ### 예약카드 F — Piscine Yves Blanc
 
@@ -1457,15 +1510,15 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 - [ ] 주차장 실제 진입주소와 높이 제한 저장
 - [ ] **9/9 늦은 체크인** 절차 확인
 - [ ] 냉방·엘리베이터·냉장고·주방·세탁 확인
-- [ ] Cassis 출차·귀환 시 주차장 24시간 출입 가능 확인
+- [ ] Cassis 대안을 택할 경우 주차장·셔틀 운영 확인
 - [ ] 9/13 체크아웃·키·주차카드 반납 방식 확인
 
 ### 관광·교통
 
 - [ ] Granet **9/10** 운영시간·티켓 확인
-- [ ] Cassis **9/11** 보트 운항·산불위험·셔틀 확인
-- [ ] Marseille 대체 가능성을 위해 L50 9/11 시간표·파업·공사 확인
-- [ ] Marseille 선택 시 Mucem 9/11 특별전·임시휴관 확인
+- [ ] Marseille Ligne 50 **9/11** 시간표·정류장·파업·공사 확인
+- [ ] Mucem 9/11 특별전·입장·임시휴관 확인
+- [ ] Cassis 대안을 택할 경우 보트·산불위험·셔틀 확인
 - [ ] Atelier des Lauves 9/12 예약·언어 확인
 - [ ] Lourmarin 주차장·농가 체크인시간 저장
 
@@ -1473,7 +1526,7 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 
 - [ ] 9/12 시장 운영·행사로 인한 위치변경 확인
 - [ ] 저녁식당 2곳만 사전예약
-- [ ] Cassis 점심은 가벼운 식사로 결정
+- [ ] Marseille 점심은 60–75분의 가벼운 식사로 결정
 - [ ] 이동 전날 냉장식품 재고 축소
 - [ ] 시장용 접이식가방·보냉파우치 준비
 
@@ -1497,10 +1550,10 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 
 ---
 
-## 편집자 큐레이션 — 엑상과 카시스에 집중하고 Marseille를 대안으로 읽기
+## 편집자 큐레이션 — 엑상과 Marseille를 잇고 Cassis를 대안으로 읽기
 
-### 시각자료 설계 — Aix 생활권·Cassis 기본일·Marseille 대체일 지도
-- 설명: 숙소권, Richelme 시장, Cézanne 장소, L50 버스축, Cassis 주차·항구를 표시한다.
+### 시각자료 설계 — Aix 생활권·Marseille 기본일·Cassis 대체일 지도
+- 설명: 숙소권, Richelme 시장, Cézanne 장소, Ligne 50 버스축, Vieux-Port·Mucem과 Cassis 선택핀을 표시한다.
 
 ### 사진 에셋 브리프 — Cours Mirabeau의 플라타너스와 분수
 - 설명: 관광대로이면서 현지인의 이동·카페·시장축인 엑상의 대표 생활풍경.
@@ -1555,7 +1608,7 @@ Granet은 거대한 국립미술관이 아니라 도시 규모에 맞는 종합�
 2. **calisson 비교시식:** 제조사 2곳에서 작은 조각을 먹고 아몬드·과일향 차이를 본다.
 3. **카페 테라스 관찰:** Cours Mirabeau의 유명 카페보다 옆광장의 작은 카페에서 30분.
 4. **세잔의 시선 따라보기:** Atelier에서 작품을 본 뒤 실제 생트빅투아르 방향을 확인.
-5. **Marseille를 선택할 때만 navette 또는 panisse 한 번:** Cassis와 같은 날 결합하지 않는다.
+5. **Marseille에서 panisse 또는 navette 한 번:** Cassis 선택 대안과 같은 날 결합하지 않는다.
 
 ### 식당 소개 보강
 
@@ -1581,8 +1634,8 @@ calisson만 사지 말고 계절 과일타르트 또는 작은 pâtisserie를 �
 
 ### 현장 선택 규칙
 
-- **Cassis 보트가 취소되면:** 항구·등대·La Ciotat 선택 또는 Aix 생활일
-- **Marseille를 선택하면:** Cassis를 완전히 교체하고 Vieux-Port·Mucem만 본다
+- **Marseille 이동이 크게 흔들리면:** Aix 생활일 또는 Cassis의 기상·교통을 확인해 하루 전체 교체
+- **Cassis를 선택하면:** Marseille를 완전히 교체하고 항구·보트 또는 해안산책 하나만 본다
 - **한 곳만 실내관람:** Atelier 또는 Granet 중 관심에 따라 선택
 - **특별식 한 번:** Aux Papillons
 - **가장 엑상다운 장면:** Richelme 시장 뒤 작은 광장에서의 늦은 오전
@@ -1596,7 +1649,7 @@ calisson만 사지 말고 계절 과일타르트 또는 작은 pâtisserie를 �
 | 순위 | 대안 | 빼야 할 것 | 추가 | 난이도 |
 |---:|---|---|---|---|
 | 1 | **Jas de Bouffan** | Day 15 스케치 시간 | 2h | 낮음 |
-| 2 | **Marseille — MuCEM** | Day 14 카시스 대체 | 반나절 | 중간 |
+| 2 | **Cassis·Calanques** | Day 14 Marseille 대체 | 하루 | 중간 |
 | 3 | **Carrières de Bibémus** | Day 15 재구성 | 2h | 중간 (예약·화재) |
 | 4 | **Sainte-Victoire 산기슭** | Day 15 오후 | 3h | 중간 |
 | 5 | Vence — 로사리오 예배당 | Day 12 그라스 대체 | 1.5h | 중간 |
@@ -1612,17 +1665,9 @@ calisson만 사지 말고 계절 과일타르트 또는 작은 pâtisserie를 �
 
 **빼는 이유** — 43일 중 15일차다. 여백이 필요하다.
 
-## Marseille — MuCEM {{badge:rest|2순위}}
+## Cassis·Calanques {{badge:rest|2순위}}
 
-기존 원고가 이미 '도시형 대안'으로 지정한 항목이다.
-
-유럽·지중해 문명 박물관이고, 건물 자체와 요새를 잇는 다리가 알려져 있다. 기존 원고의 표현대로 **"건물과 바다를 함께 본다"** 가 관람의 축이다.
-
-**넣는 법** — Day 14를 카시스에서 마르세유로 교체한다. **칼랑크가 화재 규제로 막혔을 때의 1순위 대체**다.
-
-**빼는 이유** — 마르세유는 크고 복잡하다. 4박 일정의 리듬과 다르다.
-
-{{badge:pending|MuCEM 운영·요금·소요 확인 필요}}
+바다와 석회암 절벽을 항구대도시보다 우선할 때 쓰는 하루 전체 대안이다. **Day 14의 Marseille를 완전히 교체**하며, 기상·화재통제·보트 운항을 전날과 당일 다시 확인한다. Marseille와 같은 날 결합하지 않는다.
 
 ## Carrières de Bibémus
 
@@ -1749,8 +1794,8 @@ calisson만 사지 말고 계절 과일타르트 또는 작은 pâtisserie를 �
 
 - **9/9** 운전 종료 후 체크인·장보기만
 - **9/10** Vieil Aix·시장·Musée Granet
-- **9/11** Cassis 5 Calanques 보트, 육상 장거리 트레킹 제외
-- Marseille는 **9/11 Cassis의 기상·취향 대체일**이며 L50+대중교통
+- **9/11** Marseille Vieux-Port·Le Panier·Mucem·Fort Saint-Jean, Ligne 50+대중교통
+- Cassis는 **9/11 Marseille의 취향·기상 대체일**이며 하루 전체를 교체
 - 9/12 토요일 시장·Atelier des Lauves·Jason 스케치/Julia 선택 수영
 - 9/13 Lourmarin 경유 후 Luberon 농가 체크인
 - 숙소 1순위권은 Sextius–Allées Provençales–Rotonde 북서쪽
@@ -1759,12 +1804,12 @@ calisson만 사지 말고 계절 과일타르트 또는 작은 pâtisserie를 �
 ### 예약 이후 바꿀 수 있는 것
 
 - 숙소 실제 후보 순위와 계획예산
-- 9/10 보트 코스를 3 또는 5 Calanques 중 최종 선택
-- 9/11 Cassis 운항상태에 따른 Marseille 또는 Aix 생활일 전환
+- 9/10 Ligne 50 실제 시간표와 Mucem 입장·전시 확인
+- Cassis 대안을 택할 경우 9/10 보트·화재통제·주차를 별도 확인
 - 9/12 스케치 장소와 Bibémus 대체 여부
 - 9/13 Lourmarin Château 내부 관람 여부
 
-> **현장용 한 문장:** 엑상 4박은 시장·세잔·Cassis에 집중하고, Marseille는 Cassis를 대체할 때만 선택한다.
+> **현장용 한 문장:** 엑상 4박은 시장·세잔·Marseille에 집중하고, Cassis는 Marseille를 대체할 때만 선택한다.
 
 # Pass B. 일자별 실행성 감사
 
@@ -1785,9 +1830,9 @@ calisson만 사지 말고 계절 과일타르트 또는 작은 pâtisserie를 �
 
 목요일 시장은 오전 8시대부터 13시 전후까지 운영되는 구조이므로 08:30 시장 진입, 10:30 Vieil Aix, 12:30 점심, 14:30 Musée Granet, 17:00 Mazarin 산책이 안정적이다. 시장·구시가지·미술관을 한 축으로 묶고 자동차는 숙소 주차장에 둔다. 시장은 Jason·Julia의 생활형 여행을 보여주는 핵심이고, 성당 내부와 추가 미술관은 삭제 가능한 옵션이다.
 
-## 9/11 Cassis·Calanques
+## 9/11 Marseille
 
-Aix에서 Cassis는 정상 교통 기준 약 50–70분이지만, 항구 주차 진입과 셔틀 대기를 고려해 08:00 출발이 안전하다. 09:30 항구 도착, 10:30 또는 11:00 보트, 12:30 점심, 14:00–16:00 항구·해안 휴식을 기본으로 한다. **Marseille는 고정 결합지가 아니라 보트 취소·강풍·폭우 때 하루 전체를 교체하는 대체안**이다. 보트 운항 여부는 당일 아침 재확인하며, 운항 불확실 시 Cassis까지 운전한 뒤 현장 대기하지 않는다.
+Aix에서 Marseille Saint-Charles는 Ligne 50 직행축을 기본으로 한다. Vieux-Port–Le Panier–점심–Mucem–Fort Saint-Jean을 연결하고, Notre-Dame de la Garde는 체력과 날씨가 모두 좋을 때만 선택한다. **Cassis는 고정 결합지가 아니라 하루 전체를 교체하는 대안**이다. 실제 버스 시간표·파업·Mucem 운영은 전날 공식 채널에서 재확인한다.
 
 ## 9/12 시장·Cézanne·스케치
 

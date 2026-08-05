@@ -1,16 +1,16 @@
 {
   "sourceFiles": 37,
-  "sourceSections": 2105,
-  "sourceWords": 99083,
-  "sitePages": 251,
+  "sourceSections": 2113,
+  "sourceWords": 101160,
+  "sitePages": 264,
   "siteRedirects": 62,
-  "duplicateGroups": 7,
+  "duplicateGroups": 8,
   "exactGroups": 1,
   "near95Groups": 1,
-  "near80Groups": 2,
+  "near80Groups": 3,
   "partialGroups": 3,
-  "boilerplateSentences": 28,
-  "thinSections": 121,
-  "deepHeadings": 283,
-  "emptySections": 310
+  "boilerplateSentences": 29,
+  "thinSections": 110,
+  "deepHeadings": 288,
+  "emptySections": 307
 }

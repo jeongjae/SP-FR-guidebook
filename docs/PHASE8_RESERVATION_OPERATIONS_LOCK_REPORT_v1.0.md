@@ -11,9 +11,9 @@ Phase 8B **Actual-Booking Lock**은 실제 예약서 입력 전까지 의도적�
 | 항목 | 확정값 |
 |---|---|
 | 여행기간 | 2026-08-29~2026-10-10 · 43일/42박 |
-| 거점별 숙박 | Barcelona 3 / Girona 3 / Nice 5 / Aix 4 / Luberon 4 / Avignon 4 / Lyon 4 / Paris 15박 |
+| 거점별 숙박 | Barcelona 3 / Girona 3 / Nice 5 / Aix 4 / Luberon 3 / Avignon 4 / Lyon 4 / Paris 16박 |
 | Nice/Aix 배분 | Nice 5박 · Aix 4박 |
-| 운영 골격 | 9/8 Nice 회복일 · 9/9 NCE 출발 · 9/21 Avignon TGV→Lyon · 9/25 Lyon→Paris |
+| 운영 골격 | 9/8 Nice 회복일 · 9/9 NCE 출발 · 9/16 Avignon 체크인 · 9/20 Avignon TGV→Lyon · 9/24 Lyon→Paris |
 | 시간계획 | Sagrada Família 8/30 10:30 · Peralada 9/2 17:30 · Paris 10/10 19:10 출국 계획 |
 
 ## 자동검사 계약
@@ -35,6 +35,8 @@ Phase 8B **Actual-Booking Lock**은 실제 예약서 입력 전까지 의도적�
 4. 8개 숙소의 확정명·주소·예약번호·총액·취소기한
 5. 핵심 입장권·Paris 공연·축구 예약정보
 6. 여행자보험·통신 구매정보
+
+> **2026-08-04 변경 게이트:** Luberon 기존 4박, Avignon·Lyon 체크인일, France 렌터카 반납일, Lyon행·Paris행 열차, Paris 기존 15박 예약은 자동 변경된 것으로 보지 않는다. 예약서가 갱신될 때까지 Tracker에서 `재확인` 및 `예약 변경 필요`로 유지한다.
 
 입력값을 받으면 `TP_Europe_Travel_Master_Tracker_v1.2.xlsx`를 갱신하고 동일한 빌드 게이트를 통과시켜 Phase 8B를 잠근다.
 
