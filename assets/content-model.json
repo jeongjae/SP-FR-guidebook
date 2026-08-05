@@ -55,8 +55,8 @@
       "name": "Luberon",
       "title": "Luberon Farmhouse",
       "start": "2026-09-13",
-      "end": "2026-09-17",
-      "nights": 4,
+      "end": "2026-09-16",
+      "nights": 3,
       "chapterId": "chapter:08",
       "mapId": "map:luberon"
     },
@@ -64,9 +64,9 @@
       "id": "region:avignon",
       "slug": "avignon",
       "name": "Avignon",
-      "title": "Avignon · Alpilles · Pont du Gard",
-      "start": "2026-09-17",
-      "end": "2026-09-21",
+      "title": "Avignon · Arles · Pont du Gard",
+      "start": "2026-09-16",
+      "end": "2026-09-20",
       "nights": 4,
       "chapterId": "chapter:09",
       "mapId": "map:avignon"
@@ -76,8 +76,8 @@
       "slug": "lyon",
       "name": "Lyon",
       "title": "Lyon · Annecy",
-      "start": "2026-09-21",
-      "end": "2026-09-25",
+      "start": "2026-09-20",
+      "end": "2026-09-24",
       "nights": 4,
       "chapterId": "chapter:10",
       "mapId": "map:lyon"
@@ -87,9 +87,9 @@
       "slug": "paris",
       "name": "Paris",
       "title": "Paris Long Stay",
-      "start": "2026-09-25",
+      "start": "2026-09-24",
       "end": "2026-10-10",
-      "nights": 15,
+      "nights": 16,
       "chapterId": "chapter:11",
       "mapId": "map:paris"
     }
@@ -243,10 +243,10 @@
       "number": 14,
       "date": "2026-09-11",
       "regionId": "region:aix",
-      "theme": "Cassis·Calanques",
+      "theme": "Marseille 대중교통 당일치기",
       "dayType": "체류",
-      "fatigue": "해안·절벽",
-      "status": 4,
+      "fatigue": 4,
+      "status": "확정 일정 반영",
       "url": "daily/day-14.html"
     },
     {
@@ -265,10 +265,10 @@
       "number": 16,
       "date": "2026-09-13",
       "regionId": "region:luberon",
-      "theme": "Lourmarin/Cucuron 경유·농가 체크인",
+      "theme": "Lourmarin·장보기·농가 체크인",
       "dayType": "이동",
-      "fatigue": 5,
-      "status": "초안",
+      "fatigue": 4,
+      "status": "확정 일정 반영",
       "url": "daily/day-16.html"
     },
     {
@@ -276,10 +276,10 @@
       "number": 17,
       "date": "2026-09-14",
       "regionId": "region:luberon",
-      "theme": "Luberon 마을·농가생활",
+      "theme": "Roussillon + Goult 또는 Bonnieux",
       "dayType": "체류",
       "fatigue": 3,
-      "status": "초안",
+      "status": "확정 일정 반영",
       "url": "daily/day-17.html"
     },
     {
@@ -287,21 +287,21 @@
       "number": 18,
       "date": "2026-09-15",
       "regionId": "region:luberon",
-      "theme": "Gordes 권역",
+      "theme": "Gordes·Village des Bories + 선택마을",
       "dayType": "체류",
       "fatigue": 3,
-      "status": "초안",
+      "status": "확정 일정 반영",
       "url": "daily/day-18.html"
     },
     {
       "id": "day:019",
       "number": 19,
       "date": "2026-09-16",
-      "regionId": "region:luberon",
-      "theme": "농가생활·스케치·선택마을",
-      "dayType": "체류",
+      "regionId": "region:avignon",
+      "theme": "농가 체크아웃·Avignon 이동·정착",
+      "dayType": "이동",
       "fatigue": 3,
-      "status": "초안",
+      "status": "확정 일정 반영",
       "url": "daily/day-19.html"
     },
     {
@@ -309,10 +309,10 @@
       "number": 20,
       "date": "2026-09-17",
       "regionId": "region:avignon",
-      "theme": "Luberon→Avignon 이동",
-      "dayType": "이동",
-      "fatigue": 5,
-      "status": "초안",
+      "theme": "Avignon 핵심 관광",
+      "dayType": "체류",
+      "fatigue": 3,
+      "status": "확정 일정 반영",
       "url": "daily/day-20.html"
     },
     {
@@ -320,10 +320,10 @@
       "number": 21,
       "date": "2026-09-18",
       "regionId": "region:avignon",
-      "theme": "Avignon 핵심",
+      "theme": "Uzès 구시가지·Pont du Gard",
       "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "fatigue": 4,
+      "status": "확정 일정 반영",
       "url": "daily/day-21.html"
     },
     {
@@ -331,21 +331,21 @@
       "number": 22,
       "date": "2026-09-19",
       "regionId": "region:avignon",
-      "theme": "Saint-Rémy·Les Baux",
+      "theme": "Arles 당일치기",
       "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "fatigue": 4,
+      "status": "확정 일정 반영",
       "url": "daily/day-22.html"
     },
     {
       "id": "day:023",
       "number": 23,
       "date": "2026-09-20",
-      "regionId": "region:avignon",
-      "theme": "Uzès·Pont du Gard 또는 완충일",
-      "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "regionId": "region:lyon",
+      "theme": "렌터카 반납·TGV·Lyon 도착",
+      "dayType": "이동",
+      "fatigue": 5,
+      "status": "확정 일정 반영",
       "url": "daily/day-23.html"
     },
     {
@@ -353,10 +353,10 @@
       "number": 24,
       "date": "2026-09-21",
       "regionId": "region:lyon",
-      "theme": "렌터카 반납·TGV·Lyon 도착",
-      "dayType": "이동",
-      "fatigue": 5,
-      "status": "초안",
+      "theme": "Fourvière·Vieux Lyon",
+      "dayType": "체류",
+      "fatigue": 4,
+      "status": "확정 일정 반영",
       "url": "daily/day-24.html"
     },
     {
@@ -364,10 +364,10 @@
       "number": 25,
       "date": "2026-09-22",
       "regionId": "region:lyon",
-      "theme": "Fourvière·Vieux Lyon",
+      "theme": "Croix-Rousse·Halles·공원",
       "dayType": "체류",
       "fatigue": 3,
-      "status": "초안",
+      "status": "확정 일정 반영",
       "url": "daily/day-25.html"
     },
     {
@@ -377,19 +377,19 @@
       "regionId": "region:lyon",
       "theme": "Annecy 당일치기",
       "dayType": "체류",
-      "fatigue": 3,
-      "status": "초안",
+      "fatigue": 4,
+      "status": "확정 일정 반영",
       "url": "daily/day-26.html"
     },
     {
       "id": "day:027",
       "number": 27,
       "date": "2026-09-24",
-      "regionId": "region:lyon",
-      "theme": "Lyon 미술·미식·생활",
-      "dayType": "체류",
+      "regionId": "region:paris",
+      "theme": "TGV·Paris 체크인·짐정리·최소 장보기",
+      "dayType": "이동",
       "fatigue": 3,
-      "status": "초안",
+      "status": "확정 일정 반영",
       "url": "daily/day-27.html"
     },
     {
@@ -397,10 +397,10 @@
       "number": 28,
       "date": "2026-09-25",
       "regionId": "region:paris",
-      "theme": "TGV·Paris 체크인·장보기",
-      "dayType": "이동",
-      "fatigue": 5,
-      "status": "초안",
+      "theme": "세탁·생활권 적응 완충일",
+      "dayType": "체류",
+      "fatigue": 2,
+      "status": "확정 일정 반영",
       "url": "daily/day-28.html"
     },
     {
@@ -1135,15 +1135,13 @@
         "region:aix"
       ],
       "type": "spot",
-      "grade": "essential",
+      "grade": "alternative",
       "aliases": [
         "Calanques"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:014"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/calanques.html"
     },
     {
@@ -1171,16 +1169,14 @@
         "region:aix"
       ],
       "type": "spot",
-      "grade": "essential",
+      "grade": "alternative",
       "aliases": [
         "Cassis",
         "Cassis 항구"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:014"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/cassis.html"
     },
     {
@@ -1219,6 +1215,125 @@
       ],
       "dayEvidence": "시간표",
       "url": "places/grasse.html"
+    },
+    {
+      "id": "place:marseille",
+      "slug": "marseille",
+      "name": "Marseille",
+      "regionIds": [
+        "region:aix"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Marseille Saint-Charles",
+        "Marseille"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:014"
+      ],
+      "dayEvidence": "실행 감사표",
+      "url": "places/marseille.html"
+    },
+    {
+      "id": "place:vieux-port-marseille",
+      "slug": "vieux-port-marseille",
+      "name": "Vieux-Port",
+      "regionIds": [
+        "region:aix"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Vieux-Port",
+        "Vieux-Port"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:009",
+        "day:014"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/vieux-port-marseille.html"
+    },
+    {
+      "id": "place:le-panier",
+      "slug": "le-panier",
+      "name": "Le Panier",
+      "regionIds": [
+        "region:aix"
+      ],
+      "type": "spot",
+      "grade": "priority",
+      "aliases": [
+        "Le Panier",
+        "Le Panier"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:014"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/le-panier.html"
+    },
+    {
+      "id": "place:mucem",
+      "slug": "mucem",
+      "name": "Mucem",
+      "regionIds": [
+        "region:aix"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Mucem",
+        "Mucem"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:014"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/mucem.html"
+    },
+    {
+      "id": "place:fort-saint-jean",
+      "slug": "fort-saint-jean",
+      "name": "Fort Saint-Jean",
+      "regionIds": [
+        "region:aix"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Fort Saint-Jean",
+        "Fort Saint-Jean"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:014"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/fort-saint-jean.html"
+    },
+    {
+      "id": "place:notre-dame-de-la-garde",
+      "slug": "notre-dame-de-la-garde",
+      "name": "Notre-Dame de la Garde",
+      "regionIds": [
+        "region:aix"
+      ],
+      "type": "spot",
+      "grade": "optional",
+      "aliases": [
+        "Notre-Dame de la Garde",
+        "Notre-Dame de la Garde"
+      ],
+      "legacySlugs": [],
+      "dayIds": [],
+      "dayEvidence": null,
+      "url": "places/notre-dame-de-la-garde.html"
     },
     {
       "id": "place:montagne-sainte-victoire-terrain-des-peintres",
@@ -1323,10 +1438,8 @@
         "Abbaye de Sénanque"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:018"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/abbaye-de-senanque.html"
     },
     {
@@ -1436,15 +1549,13 @@
         "region:luberon"
       ],
       "type": "spot",
-      "grade": "priority",
+      "grade": "alternative",
       "aliases": [
         "L’Isle-sur-la-Sorgue"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:020"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/l-isle-sur-la-sorgue.html"
     },
     {
@@ -1462,7 +1573,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:019"
+        "day:018"
       ],
       "dayEvidence": "시간표",
       "url": "places/menerbes.html"
@@ -1532,15 +1643,13 @@
         "region:avignon"
       ],
       "type": "spot",
-      "grade": "priority",
+      "grade": "alternative",
       "aliases": [
         "Carrières des Lumières"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:023"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/carrieres-des-lumieres.html"
     },
     {
@@ -1551,15 +1660,13 @@
         "region:avignon"
       ],
       "type": "spot",
-      "grade": "optional",
+      "grade": "alternative",
       "aliases": [
         "Glanum"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:023"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/glanum.html"
     },
     {
@@ -1570,16 +1677,14 @@
         "region:avignon"
       ],
       "type": "spot",
-      "grade": "essential",
+      "grade": "alternative",
       "aliases": [
         "Les Baux",
         "Les Baux-de-Provence"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:023"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/les-baux-de-provence.html"
     },
     {
@@ -1597,7 +1702,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:021",
+        "day:020",
         "day:040"
       ],
       "dayEvidence": "시간표",
@@ -1618,7 +1723,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:021"
+        "day:020"
       ],
       "dayEvidence": "시간표",
       "url": "places/palais-des-papes.html"
@@ -1638,7 +1743,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:021"
+        "day:020"
       ],
       "dayEvidence": "시간표",
       "url": "places/pont-saint-benezet.html"
@@ -1658,7 +1763,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:022"
+        "day:021"
       ],
       "dayEvidence": "시간표",
       "url": "places/pont-du-gard.html"
@@ -1677,7 +1782,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:021"
+        "day:020"
       ],
       "dayEvidence": "시간표",
       "url": "places/rocher-des-doms.html"
@@ -1690,7 +1795,7 @@
         "region:avignon"
       ],
       "type": "spot",
-      "grade": "essential",
+      "grade": "alternative",
       "aliases": [
         "Saint-Paul-de-Mausole"
       ],
@@ -1707,22 +1812,20 @@
         "region:avignon"
       ],
       "type": "spot",
-      "grade": "essential",
+      "grade": "alternative",
       "aliases": [
         "Saint-Rémy",
         "Saint-Rémy-de-Provence"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:023"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/saint-remy-de-provence.html"
     },
     {
       "id": "place:uzes",
       "slug": "uzes",
-      "name": "Uzès 토요시장",
+      "name": "Uzès Place aux Herbes·구시가지",
       "regionIds": [
         "region:avignon"
       ],
@@ -1730,14 +1833,152 @@
       "grade": "essential",
       "aliases": [
         "Uzès",
-        "Uzès 토요시장"
+        "Uzès Place aux Herbes·구시가지"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:021"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/uzes.html"
+    },
+    {
+      "id": "place:arles",
+      "slug": "arles",
+      "name": "Arles",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Arles",
+        "Arles"
       ],
       "legacySlugs": [],
       "dayIds": [
         "day:022"
       ],
       "dayEvidence": "시간표",
-      "url": "places/uzes.html"
+      "url": "places/arles.html"
+    },
+    {
+      "id": "place:arenes-d-arles",
+      "slug": "arenes-d-arles",
+      "name": "Arènes d’Arles",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Arènes d’Arles",
+        "Arènes d’Arles"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:022"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/arenes-d-arles.html"
+    },
+    {
+      "id": "place:theatre-antique-arles",
+      "slug": "theatre-antique-arles",
+      "name": "Théâtre antique",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "Théâtre antique",
+        "Théâtre antique"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:022"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/theatre-antique-arles.html"
+    },
+    {
+      "id": "place:place-du-forum-arles",
+      "slug": "place-du-forum-arles",
+      "name": "Place du Forum",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "priority",
+      "aliases": [
+        "Place du Forum",
+        "Place du Forum"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:022"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/place-du-forum-arles.html"
+    },
+    {
+      "id": "place:cloitre-saint-trophime",
+      "slug": "cloitre-saint-trophime",
+      "name": "Cloître Saint-Trophime",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "priority",
+      "aliases": [
+        "Cloître Saint-Trophime",
+        "Cloître Saint-Trophime"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:022"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/cloitre-saint-trophime.html"
+    },
+    {
+      "id": "place:fondation-vincent-van-gogh-arles",
+      "slug": "fondation-vincent-van-gogh-arles",
+      "name": "Fondation Vincent van Gogh Arles",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "optional",
+      "aliases": [
+        "Fondation Vincent van Gogh",
+        "Fondation Vincent van Gogh Arles"
+      ],
+      "legacySlugs": [],
+      "dayIds": [],
+      "dayEvidence": null,
+      "url": "places/fondation-vincent-van-gogh-arles.html"
+    },
+    {
+      "id": "place:la-roquette",
+      "slug": "la-roquette",
+      "name": "La Roquette",
+      "regionIds": [
+        "region:avignon"
+      ],
+      "type": "spot",
+      "grade": "priority",
+      "aliases": [
+        "La Roquette",
+        "La Roquette"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:022"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/la-roquette.html"
     },
     {
       "id": "place:annecy",
@@ -1754,7 +1995,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:027"
+        "day:026"
       ],
       "dayEvidence": "실행 감사표",
       "url": "places/annecy.html"
@@ -1773,7 +2014,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:024"
+        "day:023"
       ],
       "dayEvidence": "시간표",
       "url": "places/bellecour.html"
@@ -1793,7 +2034,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:026"
+        "day:025"
       ],
       "dayEvidence": "시간표",
       "url": "places/croix-rousse.html"
@@ -1813,8 +2054,8 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:024",
-        "day:025"
+        "day:023",
+        "day:024"
       ],
       "dayEvidence": "시간표",
       "url": "places/fourviere.html"
@@ -1834,7 +2075,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:026"
+        "day:025"
       ],
       "dayEvidence": "시간표",
       "url": "places/halles-de-lyon-paul-bocuse.html"
@@ -1854,7 +2095,7 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:026"
+        "day:025"
       ],
       "dayEvidence": "시간표",
       "url": "places/parc-de-la-tete-d-or.html"
@@ -1874,8 +2115,8 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:024",
-        "day:025"
+        "day:023",
+        "day:024"
       ],
       "dayEvidence": "시간표",
       "url": "places/vieux-lyon.html"
@@ -2220,9 +2461,9 @@
       "id": "stay:luberon",
       "regionId": "region:luberon",
       "checkIn": "2026-09-13",
-      "checkOut": "2026-09-17",
-      "nights": 4,
-      "status": "미조사",
+      "checkOut": "2026-09-16",
+      "nights": 3,
+      "status": "재확인",
       "area": "Gordes–Goult–Roussillon–Bonnieux",
       "address": null,
       "bookingNumber": null,
@@ -2231,10 +2472,10 @@
     {
       "id": "stay:avignon",
       "regionId": "region:avignon",
-      "checkIn": "2026-09-17",
-      "checkOut": "2026-09-21",
+      "checkIn": "2026-09-16",
+      "checkOut": "2026-09-20",
       "nights": 4,
-      "status": "미조사",
+      "status": "재확인",
       "area": "성벽 안 외곽/남·동쪽",
       "address": null,
       "bookingNumber": null,
@@ -2243,10 +2484,10 @@
     {
       "id": "stay:lyon",
       "regionId": "region:lyon",
-      "checkIn": "2026-09-21",
-      "checkOut": "2026-09-25",
+      "checkIn": "2026-09-20",
+      "checkOut": "2026-09-24",
       "nights": 4,
-      "status": "미조사",
+      "status": "재확인",
       "area": "Presqu'île/Ainay/Part-Dieu 서쪽",
       "address": null,
       "bookingNumber": null,
@@ -2255,10 +2496,10 @@
     {
       "id": "stay:paris",
       "regionId": "region:paris",
-      "checkIn": "2026-09-25",
+      "checkIn": "2026-09-24",
       "checkOut": "2026-10-10",
-      "nights": 15,
-      "status": "미조사",
+      "nights": 16,
+      "status": "재확인",
       "area": "5구·15구 우선, 7구·9구 비교",
       "address": null,
       "bookingNumber": null,
@@ -2320,8 +2561,8 @@
       "scheduledDate": "2026-09-13",
       "dayId": "day:016",
       "category": "숙소",
-      "name": "농가 숙소 4박",
-      "status": "미조사",
+      "name": "농가 숙소 3박",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-05",
       "sourceUrl": null
@@ -2329,11 +2570,11 @@
     {
       "id": "reservation:r006",
       "regionId": "region:avignon",
-      "scheduledDate": "2026-09-17",
-      "dayId": "day:020",
+      "scheduledDate": "2026-09-16",
+      "dayId": "day:019",
       "category": "숙소",
       "name": "숙소 4박",
-      "status": "미조사",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-05",
       "sourceUrl": null
@@ -2341,11 +2582,11 @@
     {
       "id": "reservation:r007",
       "regionId": "region:lyon",
-      "scheduledDate": "2026-09-21",
-      "dayId": "day:024",
+      "scheduledDate": "2026-09-20",
+      "dayId": "day:023",
       "category": "숙소",
       "name": "숙소 4박",
-      "status": "미조사",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-05",
       "sourceUrl": null
@@ -2353,11 +2594,11 @@
     {
       "id": "reservation:r008",
       "regionId": "region:paris",
-      "scheduledDate": "2026-09-25",
-      "dayId": "day:028",
+      "scheduledDate": "2026-09-24",
+      "dayId": "day:027",
       "category": "숙소",
-      "name": "숙소 15박",
-      "status": "미조사",
+      "name": "숙소 16박",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-01",
       "sourceUrl": null
@@ -2389,11 +2630,11 @@
     {
       "id": "reservation:r011",
       "regionId": null,
-      "scheduledDate": "2026-09-08",
-      "dayId": "day:011",
+      "scheduledDate": "2026-09-09",
+      "dayId": "day:012",
       "category": "렌터카",
       "name": "NCE 인수→Avignon TGV 반납",
-      "status": "미조사",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-01",
       "sourceUrl": null
@@ -2401,11 +2642,11 @@
     {
       "id": "reservation:r012",
       "regionId": null,
-      "scheduledDate": "2026-09-21",
-      "dayId": "day:024",
+      "scheduledDate": "2026-09-20",
+      "dayId": "day:023",
       "category": "철도",
       "name": "Avignon TGV→Lyon",
-      "status": "미조사",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-10",
       "sourceUrl": null
@@ -2413,11 +2654,11 @@
     {
       "id": "reservation:r013",
       "regionId": null,
-      "scheduledDate": "2026-09-25",
-      "dayId": "day:028",
+      "scheduledDate": "2026-09-24",
+      "dayId": "day:027",
       "category": "철도",
       "name": "Lyon→Paris",
-      "status": "미조사",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-10",
       "sourceUrl": null
@@ -2473,8 +2714,8 @@
     {
       "id": "reservation:r018",
       "regionId": "region:avignon",
-      "scheduledDate": "2026-09-18",
-      "dayId": "day:021",
+      "scheduledDate": "2026-09-17",
+      "dayId": "day:020",
       "category": "입장권",
       "name": "Palais des Papes 등",
       "status": "미조사",
@@ -2613,24 +2854,24 @@
     },
     {
       "id": "transport:t006",
-      "dayId": "day:020",
+      "dayId": "day:019",
       "from": "Luberon",
       "to": "Avignon",
       "mode": "렌터카",
-      "status": "미조사",
+      "status": "재확인",
       "operator": null,
-      "risk": "체크인·주차",
-      "fallback": "L'Isle 경유 삭제"
+      "risk": "농가 3박·Avignon 9/16 체크인 변경",
+      "fallback": "Avignon 직행"
     },
     {
       "id": "transport:t007",
-      "dayId": "day:024",
+      "dayId": "day:023",
       "from": "Avignon",
       "to": "Lyon",
       "mode": "렌터카+TGV",
-      "status": "미조사",
+      "status": "재확인",
       "operator": null,
-      "risk": "주유·반납·플랫폼",
+      "risk": "렌터카 반납·TGV 날짜 변경 필요",
       "fallback": "더 이른 열차 또는 택시"
     },
     {
@@ -2639,21 +2880,21 @@
       "from": "Lyon",
       "to": "Annecy",
       "mode": "철도",
-      "status": "미조사",
+      "status": "재확인",
       "operator": null,
-      "risk": "왕복열차·혼잡",
+      "risk": "왕복열차·수요일 시장 없음",
       "fallback": "Lyon 완충일로 전환"
     },
     {
       "id": "transport:t009",
-      "dayId": "day:028",
+      "dayId": "day:027",
       "from": "Lyon",
       "to": "Paris",
       "mode": "TGV",
-      "status": "미조사",
+      "status": "재확인",
       "operator": null,
-      "risk": "체크아웃·도착 후 짐",
-      "fallback": "늦은 일정 삭제"
+      "risk": "체크아웃·도착 후 짐·열차 변경 필요",
+      "fallback": "Paris 도착 후 생활 완충만"
     },
     {
       "id": "transport:t010",
