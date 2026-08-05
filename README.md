@@ -50,7 +50,22 @@ serve.bat           # Windows
    - IP 확인: macOS `ipconfig getifaddr en0` / Windows `ipconfig` (IPv4 주소) / Linux `hostname -I`
 3. 접속이 안 되면 PC 방화벽에서 8000 포트 허용 여부와 두 기기가 같은 네트워크인지 확인.
 
-### 오프라인으로 보기 (여행 중)
+이 주소는 일반 HTTP이므로 모바일 열람용이다. iPhone 홈 화면 앱 설치와 전체
+오프라인 저장은 아래 GitHub Pages HTTPS 주소에서 진행한다.
+
+### iPhone에 앱으로 설치하고 오프라인 저장
+
+1. iPhone의 Safari에서 <https://jeongjae.github.io/SP-FR-guidebook/>를 연다.
+2. 공유 메뉴에서 **홈 화면에 추가**를 선택하고, 표시되면 **웹 앱으로 열기**를 켠다.
+3. 홈 화면의 **유럽 가이드북** 아이콘으로 다시 연다.
+4. **비상 · 오프라인 → 전체 가이드북 저장**을 누르고 완료 상태와 저장 시각을 확인한다.
+5. 출발 전에 앱을 강제 종료한 뒤 비행기 모드에서 홈·일정·지역·트래커가 열리는지 확인한다.
+
+전체 가이드북은 약 14 MiB다. iOS는 저장 공간이 부족하거나 앱을 오래 사용하지 않으면
+웹 데이터를 정리할 수 있으므로 장거리 이동 전 오프라인 준비 화면을 다시 확인한다.
+Google Maps 링크와 OpenStreetMap 배경 타일은 저장 대상이 아니며 연결이 필요하다.
+
+### 폴더 사본으로 오프라인 보기
 
 `site/` 폴더를 통째로 휴대폰·태블릿에 복사한 뒤 `index.html`을 브라우저로 열면 된다.
 본문·트래커·지도 마커와 경로 목록은 완전 오프라인으로 동작하며,
@@ -63,6 +78,8 @@ serve.bat           # Windows
 ```bash
 pip install markdown openpyxl   # 최초 1회
 python3 build/build.py
+python3 build/pwa_check.py
+python3 build/hig_check.py
 ```
 
 빌드는 내부 링크 무결성 검사를 포함하며, `site/`를 전부 새로 생성한다.
