@@ -1,0 +1,1317 @@
+{
+  "schemaVersion": "1.0",
+  "places": [
+    {
+      "id": "aix-stay-candidate",
+      "name": "Adagio Aix Centre",
+      "city": "Aix-en-Provence",
+      "type": "accommodation",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Adagio+Aix+Centre",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "rotonde-aix",
+      "name": "Rotonde",
+      "city": "Aix-en-Provence",
+      "type": "station",
+      "lat": 43.5267,
+      "lng": 5.44582,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rotonde",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "cours-mirabeau",
+      "name": "Cours Mirabeau",
+      "city": "Aix-en-Provence",
+      "type": "attraction",
+      "lat": 43.52622,
+      "lng": 5.44925,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cours+Mirabeau",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "musee-granet",
+      "name": "Musée Granet",
+      "city": "Aix-en-Provence",
+      "type": "attraction",
+      "lat": 43.52557,
+      "lng": 5.45251,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+Granet",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "cassis",
+      "name": "Cassis",
+      "city": "Aix-en-Provence",
+      "type": "attraction",
+      "lat": 43.21401,
+      "lng": 5.53962,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cassis",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "cassis"
+    },
+    {
+      "id": "atelier-des-lauves",
+      "name": "Atelier Cézanne",
+      "city": "Aix-en-Provence",
+      "type": "attraction",
+      "lat": 43.53964,
+      "lng": 5.44704,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Atelier+C%C3%A9zanne",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "atelier-des-lauves"
+    },
+    {
+      "id": "lourmarin",
+      "name": "Lourmarin",
+      "city": "Aix-en-Provence",
+      "type": "attraction",
+      "lat": 43.76373,
+      "lng": 5.36383,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lourmarin",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "lourmarin"
+    },
+    {
+      "id": "avignon-stay-candidate",
+      "name": "La Terrasse du Clocher",
+      "city": "Avignon",
+      "type": "accommodation",
+      "lat": 43.94993,
+      "lng": 4.81302,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Terrasse+du+Clocher",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "les-halles-avignon",
+      "name": "Les Halles",
+      "city": "Avignon",
+      "type": "market",
+      "lat": 43.94787,
+      "lng": 4.80903,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les+Halles",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "palais-des-papes",
+      "name": "Palais des Papes",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 43.95078,
+      "lng": 4.8075,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Palais+des+Papes",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "pont-saint-benezet",
+      "name": "Pont Saint-Bénézet",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 43.95389,
+      "lng": 4.80508,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pont+Saint-B%C3%A9n%C3%A9zet",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "uzes",
+      "name": "Uzès",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 44.0121,
+      "lng": 4.41974,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Uz%C3%A8s",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "uzes"
+    },
+    {
+      "id": "pont-du-gard",
+      "name": "Pont du Gard",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 43.9475,
+      "lng": 4.53502,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pont+du+Gard",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "les-baux-de-provence",
+      "name": "Les Baux",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 43.74473,
+      "lng": 4.79531,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les+Baux",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "les-baux-de-provence"
+    },
+    {
+      "id": "saint-remy-de-provence",
+      "name": "Saint-Rémy",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 43.78842,
+      "lng": 4.83168,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Saint-R%C3%A9my",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "saint-remy-de-provence"
+    },
+    {
+      "id": "barcelona-stay-candidate",
+      "name": "Praktik Garden",
+      "city": "Barcelona",
+      "type": "accommodation",
+      "lat": 41.39382,
+      "lng": 2.17132,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "sagrada-familia",
+      "name": "Sagrada Família",
+      "city": "Barcelona",
+      "type": "attraction",
+      "lat": 41.40363,
+      "lng": 2.17436,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Fam%C3%ADlia",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "sant-pau-recinte-modernista",
+      "name": "Sant Pau",
+      "city": "Barcelona",
+      "type": "attraction",
+      "lat": 41.41193,
+      "lng": 2.17438,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sant+Pau",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "sant-pau-recinte-modernista"
+    },
+    {
+      "id": "barri-gotic",
+      "name": "Gòtic",
+      "city": "Barcelona",
+      "type": "attraction",
+      "lat": 41.3838,
+      "lng": 2.1761,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=G%C3%B2tic",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "barri-gotic"
+    },
+    {
+      "id": "biblioteca-de-catalunya",
+      "name": "Biblioteca de Catalunya",
+      "city": "Barcelona",
+      "type": "attraction",
+      "lat": 41.38144,
+      "lng": 2.17016,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Biblioteca+de+Catalunya",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "macba",
+      "name": "MACBA",
+      "city": "Barcelona",
+      "type": "attraction",
+      "lat": 41.38316,
+      "lng": 2.16672,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MACBA",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "barcelona-sants",
+      "name": "Barcelona Sants",
+      "city": "Barcelona",
+      "type": "station",
+      "lat": 41.37917,
+      "lng": 2.14007,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona+Sants",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "barcelona-sants"
+    },
+    {
+      "id": "sitges",
+      "name": "Sitges",
+      "city": "Barcelona",
+      "type": "attraction",
+      "lat": 41.23512,
+      "lng": 1.81204,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sitges",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "girona-stay-private",
+      "name": "Bàscara 숙소 근사 권역",
+      "city": "Girona · Empordà",
+      "type": "accommodation",
+      "lat": 42.164,
+      "lng": 2.914,
+      "googlePlaceId": "",
+      "googleMapsUrl": "",
+      "address": "",
+      "private": true,
+      "approximate": true,
+      "optional": false,
+      "status": "confirmed",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "girona-cathedral",
+      "name": "Girona Cathedral",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.98741,
+      "lng": 2.82611,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Girona+Cathedral",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "onyar",
+      "name": "Onyar Houses",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.98473,
+      "lng": 2.82402,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Onyar+Houses",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "onyar"
+    },
+    {
+      "id": "collioure",
+      "name": "Collioure",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 42.52505,
+      "lng": 3.08322,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Collioure",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "cadaques",
+      "name": "Cadaqués",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 42.2886,
+      "lng": 3.2584,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cadaqu%C3%A9s",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "tossa-de-mar",
+      "name": "Tossa de Mar",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.7195,
+      "lng": 2.9319,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tossa+de+Mar",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "tossa-de-mar"
+    },
+    {
+      "id": "sant-feliu-de-guixols",
+      "name": "Sant Feliu de Guíxols",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.78,
+      "lng": 3.0676,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sant+Feliu+de+Gu%C3%ADxols",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "sant-feliu-de-guixols"
+    },
+    {
+      "id": "peralada",
+      "name": "Peralada",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 42.30872,
+      "lng": 3.01017,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Peralada",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "alternative",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "pals",
+      "name": "Pals",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.97039,
+      "lng": 3.14843,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pals",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "peratallada",
+      "name": "Peratallada",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.97618,
+      "lng": 3.09007,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Peratallada",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "calella-de-palafrugell",
+      "name": "Calella de Palafrugell",
+      "city": "Girona · Empordà",
+      "type": "attraction",
+      "lat": 41.88901,
+      "lng": 3.18416,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Calella+de+Palafrugell",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "alternative",
+      "legacySources": [
+        "75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "luberon-stay-candidate",
+      "name": "Domaine des Peyre",
+      "city": "Luberon",
+      "type": "accommodation",
+      "lat": 43.87088,
+      "lng": 5.12202,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine+des+Peyre",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "coustellet",
+      "name": "Coustellet",
+      "city": "Luberon",
+      "type": "market",
+      "lat": 43.86673,
+      "lng": 5.14544,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Coustellet",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "coustellet"
+    },
+    {
+      "id": "roussillon-sentier-des-ocres",
+      "name": "Roussillon",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.90202,
+      "lng": 5.29207,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Roussillon",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "roussillon-sentier-des-ocres"
+    },
+    {
+      "id": "goult",
+      "name": "Goult",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.86306,
+      "lng": 5.24417,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Goult",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "gordes",
+      "name": "Gordes",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.91181,
+      "lng": 5.20043,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gordes",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "village-des-bories",
+      "name": "Village des Bories",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.89728,
+      "lng": 5.1857,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Village+des+Bories",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "menerbes",
+      "name": "Ménerbes",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.83274,
+      "lng": 5.20689,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=M%C3%A9nerbes",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "lisle-sur-la-sorgue",
+      "name": "L’Isle-sur-la-Sorgue",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.91904,
+      "lng": 5.05477,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L%E2%80%99Isle-sur-la-Sorgue",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "lyon-stay-candidate",
+      "name": "Hôtel de Verdun",
+      "city": "Lyon",
+      "type": "accommodation",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=H%C3%B4tel+de+Verdun",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "place-bellecour",
+      "name": "Bellecour",
+      "city": "Lyon",
+      "type": "attraction",
+      "lat": 45.75779,
+      "lng": 4.83202,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bellecour",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "fourviere",
+      "name": "Fourvière",
+      "city": "Lyon",
+      "type": "attraction",
+      "lat": 45.76227,
+      "lng": 4.82259,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fourvi%C3%A8re",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "vieux-lyon",
+      "name": "Vieux Lyon",
+      "city": "Lyon",
+      "type": "attraction",
+      "lat": 45.76075,
+      "lng": 4.82754,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vieux+Lyon",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "croix-rousse",
+      "name": "Croix-Rousse",
+      "city": "Lyon",
+      "type": "attraction",
+      "lat": 45.77413,
+      "lng": 4.8318,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Croix-Rousse",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "halles-de-lyon-paul-bocuse",
+      "name": "Halles Paul Bocuse",
+      "city": "Lyon",
+      "type": "market",
+      "lat": 45.76337,
+      "lng": 4.85042,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Halles+Paul+Bocuse",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "halles-de-lyon-paul-bocuse"
+    },
+    {
+      "id": "parc-de-la-tete-d-or",
+      "name": "Parc Tête d’Or",
+      "city": "Lyon",
+      "type": "attraction",
+      "lat": 45.77969,
+      "lng": 4.85344,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Parc+T%C3%AAte+d%E2%80%99Or",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "parc-de-la-tete-d-or"
+    },
+    {
+      "id": "annecy",
+      "name": "Annecy",
+      "city": "Lyon",
+      "type": "attraction",
+      "lat": 45.89905,
+      "lng": 6.12542,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Annecy",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "annecy"
+    },
+    {
+      "id": "nice-stay-candidate",
+      "name": "AMMI Masséna",
+      "city": "Nice",
+      "type": "accommodation",
+      "lat": 43.6978,
+      "lng": 7.26836,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=AMMI+Mass%C3%A9na",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "cours-saleya",
+      "name": "Cours Saleya",
+      "city": "Nice",
+      "type": "market",
+      "lat": 43.69518,
+      "lng": 7.2758,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cours+Saleya",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "colline-du-chateau",
+      "name": "Castle Hill",
+      "city": "Nice",
+      "type": "attraction",
+      "lat": 43.69692,
+      "lng": 7.28077,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Castle+Hill",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "colline-du-chateau"
+    },
+    {
+      "id": "nice-ville",
+      "name": "Nice-Ville",
+      "city": "Nice",
+      "type": "station",
+      "lat": 43.70499,
+      "lng": 7.26199,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nice-Ville",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "cannes",
+      "name": "Cannes",
+      "city": "Nice",
+      "type": "attraction",
+      "lat": 43.55332,
+      "lng": 7.01975,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cannes",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "monaco",
+      "name": "Monaco",
+      "city": "Nice",
+      "type": "attraction",
+      "lat": 43.73893,
+      "lng": 7.41904,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Monaco",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "marche-de-la-liberation",
+      "name": "Libération Market",
+      "city": "Nice",
+      "type": "market",
+      "lat": 43.70841,
+      "lng": 7.26133,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lib%C3%A9ration+Market",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "marche-de-la-liberation"
+    },
+    {
+      "id": "nice-airport-terminal-2",
+      "name": "NCE T2",
+      "city": "Nice",
+      "type": "airport",
+      "lat": 43.65971,
+      "lng": 7.20461,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=NCE+T2",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "paris-stay-candidate",
+      "name": "Pepper & Paper",
+      "city": "Paris",
+      "type": "accommodation",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pepper+%26+Paper",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "notre-dame-de-paris",
+      "name": "Notre-Dame",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.85297,
+      "lng": 2.3499,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Notre-Dame",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "notre-dame-de-paris"
+    },
+    {
+      "id": "musee-du-louvre",
+      "name": "Louvre",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.86061,
+      "lng": 2.33764,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Louvre",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "musee-du-louvre"
+    },
+    {
+      "id": "montmartre-south-pigalle",
+      "name": "Montmartre",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8867,
+      "lng": 2.3431,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Montmartre",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "montmartre-south-pigalle"
+    },
+    {
+      "id": "bnf-richelieu",
+      "name": "BnF Richelieu",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.867,
+      "lng": 2.33838,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BnF+Richelieu",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "grand-palais",
+      "name": "Grand Palais",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.86613,
+      "lng": 2.31247,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand+Palais",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "musee-d-orsay",
+      "name": "Orsay",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.85996,
+      "lng": 2.32656,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Orsay",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "musee-d-orsay"
+    },
+    {
+      "id": "bourse-de-commerce-pinault-collection",
+      "name": "Bourse de Commerce",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.86245,
+      "lng": 2.3422,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bourse+de+Commerce",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ],
+      "editorialSlug": "bourse-de-commerce-pinault-collection"
+    },
+    {
+      "id": "versailles",
+      "name": "Versailles",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.80486,
+      "lng": 2.12036,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Versailles",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "giverny",
+      "name": "Giverny",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 49.0754,
+      "lng": 1.53375,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Giverny",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"
+      ]
+    },
+    {
+      "id": "tossa-parking-pelegri",
+      "name": "Avinguda del Pelegrí 공영주차 권역",
+      "city": "Tossa de Mar",
+      "type": "parking",
+      "lat": 41.719982,
+      "lng": 2.929307,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Avinguda+del+Pelegr%C3%AD+parking%2C+Tossa+de+Mar",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": false,
+      "status": "planned",
+      "sourceUrl": "https://visittossa.com/en/moure_s_tossa/car-parking-in-town/"
+    },
+    {
+      "id": "sant-feliu-la-corxera-parking",
+      "name": "Aparcament La Corxera",
+      "city": "Sant Feliu de Guíxols",
+      "type": "parking",
+      "lat": 41.780968,
+      "lng": 3.024953,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Aparcament+La+Corxera%2C+Sant+Feliu+de+Gu%C3%ADxols",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "sourceUrl": "https://ciutada.guixols.cat/OAC/downloadR/421f3f70-b5bd-4f8d-b75e-27f03c26a061"
+    },
+    {
+      "id": "pals-abeurador-parking",
+      "name": "Carrer de l’Abeurador 주차 권역",
+      "city": "Pals",
+      "type": "parking",
+      "lat": 41.969806,
+      "lng": 3.146538,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+l%27Abeurador+parking%2C+Pals",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "planned",
+      "sourceUrl": "https://www.visitpals.com/en/what-to-do/accessible-tourism/"
+    },
+    {
+      "id": "peratallada-baix-parking",
+      "name": "Aparcament Baix",
+      "city": "Peratallada",
+      "type": "parking",
+      "lat": 41.976969,
+      "lng": 3.092513,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Aparcament+Baix%2C+Peratallada",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": false,
+      "status": "planned",
+      "sourceUrl": "https://www.visitperatallada.cat/es/aparcar-en-peratallada.html"
+    }
+  ]
+}
