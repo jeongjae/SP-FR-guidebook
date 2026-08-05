@@ -29,9 +29,9 @@
   <div id="search-results"></div>
 </aside>
 <main>
-<p class="meta">v1.2</p>
+<p class="meta">v1.3</p>
 
-<details class="toc"><summary>전체 목차</summary><ul><li><a href="#43일-전체-master-itinerary-v12">43일 전체 Master Itinerary v1.2</a></li><li class="toc-sub"><a href="#사용-원칙">사용 원칙</a></li><li class="toc-sub"><a href="#phase-5-실행-통제">Phase 5 실행 통제</a></li><li class="toc-sub"><a href="#전체-흐름">전체 흐름</a></li><li class="toc-sub"><a href="#날짜별-기준-일정">날짜별 기준 일정</a></li><li class="toc-sub"><a href="#장거리-이동일">장거리 이동일</a></li><li class="toc-sub"><a href="#여행-리듬-qa">여행 리듬 QA</a></li></ul></details><h1 id="43일-전체-master-itinerary-v12">43일 전체 Master Itinerary v1.2</h1><figure class="ed-visual"><img src="../assets/visuals/01_Whole_Trip_Route_and_Stay_Structure_v1.0.png" alt="43일 전체 루트와 숙박구조" loading="lazy"><figcaption>43일 전체 루트와 숙박구조</figcaption></figure>
+<details class="toc"><summary>전체 목차</summary><ul><li><a href="#43일-전체-master-itinerary-v13">43일 전체 Master Itinerary v1.3</a></li><li class="toc-sub"><a href="#사용-원칙">사용 원칙</a></li><li class="toc-sub"><a href="#phase-5-실행-통제">Phase 5 실행 통제</a></li><li class="toc-sub"><a href="#전체-흐름">전체 흐름</a></li><li class="toc-sub"><a href="#날짜별-기준-일정">날짜별 기준 일정</a></li><li class="toc-sub"><a href="#장거리-이동일">장거리 이동일</a></li><li class="toc-sub"><a href="#여행-리듬-qa">여행 리듬 QA</a></li></ul></details><h1 id="43일-전체-master-itinerary-v13">43일 전체 Master Itinerary v1.3</h1><figure class="ed-visual"><img src="../assets/visuals/01_Whole_Trip_Route_and_Stay_Structure_v1.0.png" alt="43일 전체 루트와 숙박구조" loading="lazy"><figcaption>43일 전체 루트와 숙박구조</figcaption></figure>
 <h2 id="사용-원칙">사용 원칙</h2>
 <ul>
 <li>이 표는 최신 지역 챕터의 날짜별 기본안을 한 줄로 연결한 <strong>전 여행 일정 기준본</strong>이다.</li>
@@ -42,13 +42,13 @@
 <h2 id="phase-5-실행-통제">Phase 5 실행 통제</h2>
 <ul>
 <li>일자별 상세 실행성 감사는 <code>OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md</code>를 따른다.</li>
-<li>P0 연결일은 Day 4, 7, 12, 24, 28, 43이다.</li>
+<li>P0 연결일은 Day 4, 7, 12, 23, 27, 43이다.</li>
 <li>출발·완충·식사·최고위험·삭제순서·대체안·잠금항목을 날짜별로 관리한다.</li>
 <li>실제 예약값은 Phase 8에서 잠그기 전까지 확정값으로 간주하지 않는다.</li>
 </ul>
 <h2 id="전체-흐름">전체 흐름</h2>
 <pre><code class="language-text">Barcelona 3박 → Bàscara 3박 → **Nice 5박 → Aix 4박**
-→ Luberon 4박 → Avignon 4박 → Lyon 4박 → Paris 15박
+→ Luberon 3박 → Avignon 4박 → Lyon 4박 → Paris 16박
 </code></pre>
 <h2 id="날짜별-기준-일정">날짜별 기준 일정</h2>
 <div class="table-wrap"><table>
@@ -199,11 +199,11 @@
 <td style="text-align: right;">14</td>
 <td><strong>9/11 금</strong></td>
 <td>Aix-en-Provence</td>
-<td>Cassis와 Calanques</td>
-<td>Cassis 항구, 5 Calanques 보트, 해안휴식</td>
-<td>강풍 시 Marseille·Mucem으로 교체</td>
+<td>Marseille 당일치기</td>
+<td>대중교통 왕복, Vieux-Port, Le Panier, Mucem, Fort Saint-Jean</td>
+<td>피로·우천 시 Mucem+항구만; Cassis는 별도 대체안</td>
 <td style="text-align: right;">4</td>
-<td>보트·주차</td>
+<td>L50/TER·Mucem</td>
 </tr>
 <tr>
 <td style="text-align: right;">15</td>
@@ -239,35 +239,25 @@
 <td style="text-align: right;">18</td>
 <td>9/15 화</td>
 <td>Luberon</td>
-<td>Gordes 시장과 돌의 문화</td>
-<td>Gordes 시장, Village des Bories</td>
-<td>Sénanque 선택</td>
+<td>Gordes와 돌의 문화</td>
+<td>Gordes, Village des Bories</td>
+<td>Ménerbes 또는 Oppède 택1</td>
 <td style="text-align: right;">3</td>
-<td>시장·주차</td>
+<td>주차·마을 운영</td>
 </tr>
 <tr>
 <td style="text-align: right;">19</td>
 <td>9/16 수</td>
-<td>Luberon</td>
-<td>농가생활·스케치 완충일</td>
-<td>농가 아침·산책·세탁·스케치</td>
-<td>Ménerbes 또는 Oppède 택1</td>
-<td style="text-align: right;">1~2</td>
-<td>없음/숙소</td>
+<td>Avignon</td>
+<td>Luberon 체크아웃→Avignon</td>
+<td>농가 아침, 체크아웃, Avignon 이동·체크인, 가벼운 성벽 산책</td>
+<td>L’Isle 목요시장은 날짜 불일치로 기본안 제외</td>
+<td style="text-align: right;">3</td>
+<td>농가 변경·Avignon 숙소</td>
 </tr>
 <tr>
 <td style="text-align: right;">20</td>
 <td>9/17 목</td>
-<td>Avignon</td>
-<td>Luberon→L’Isle→Avignon</td>
-<td>L’Isle 목요시장, 체크인, 성벽도시 적응</td>
-<td>Fontaine 또는 Nocturne 선택</td>
-<td style="text-align: right;">3</td>
-<td>Avignon 숙소</td>
-</tr>
-<tr>
-<td style="text-align: right;">21</td>
-<td>9/18 금</td>
 <td>Avignon</td>
 <td>교황도시 핵심</td>
 <td>Les Halles, Palais des Papes, Rocher, Pont</td>
@@ -276,28 +266,28 @@
 <td>Palais·식당</td>
 </tr>
 <tr>
-<td style="text-align: right;">22</td>
-<td>9/19 토</td>
+<td style="text-align: right;">21</td>
+<td>9/18 금</td>
 <td>Avignon</td>
-<td>Uzès 시장과 Pont du Gard</td>
-<td>Uzès 토요시장·구시가지, Pont du Gard</td>
-<td>박물관 또는 일몰 택1</td>
+<td>Uzès와 Pont du Gard</td>
+<td>Uzès 구시가지, Pont du Gard</td>
+<td>시장은 금요일 운영 재확인; 박물관·일몰 택1</td>
 <td style="text-align: right;">4</td>
 <td>주차·입장</td>
 </tr>
 <tr>
-<td style="text-align: right;">23</td>
-<td>9/20 일</td>
+<td style="text-align: right;">22</td>
+<td>9/19 토</td>
 <td>Avignon</td>
-<td>Alpilles 마을과 경관</td>
-<td>Les Baux, Saint-Rémy</td>
-<td>Glanum 또는 Carrières 택1</td>
+<td>Arles 당일치기</td>
+<td>Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette</td>
+<td>Fondation·LUMA·Alyscamps·고대박물관은 선택</td>
 <td style="text-align: right;">4</td>
-<td>주차</td>
+<td>문화유산의 날·철도/주차</td>
 </tr>
 <tr>
-<td style="text-align: right;">24</td>
-<td>9/21 월</td>
+<td style="text-align: right;">23</td>
+<td>9/20 일</td>
 <td>Lyon</td>
 <td>차량반납·TGV·Lyon 적응</td>
 <td>Avignon TGV 반납, Lyon 도착, Ainay·Bellecour</td>
@@ -306,28 +296,28 @@
 <td>렌터카 반납·TGV</td>
 </tr>
 <tr>
-<td style="text-align: right;">25</td>
-<td>9/22 화</td>
+<td style="text-align: right;">24</td>
+<td>9/21 월</td>
 <td>Lyon</td>
 <td>Fourvière와 Vieux Lyon</td>
 <td>Fourvière, Rosaire 하산, Saint-Jean, traboules</td>
 <td>로마극장 선택</td>
 <td style="text-align: right;">4</td>
-<td>푸니쿨라·저녁</td>
+<td>푸니쿨라·월요일 운영</td>
 </tr>
 <tr>
-<td style="text-align: right;">26</td>
-<td>9/23 수</td>
+<td style="text-align: right;">25</td>
+<td>9/22 화</td>
 <td>Lyon</td>
 <td>Croix-Rousse·Halles·공원</td>
 <td>Croix-Rousse 시장, canut 맥락, Halles</td>
 <td>Parc de la Tête d’Or</td>
 <td style="text-align: right;">3</td>
-<td>식당</td>
+<td>시장·식당</td>
 </tr>
 <tr>
-<td style="text-align: right;">27</td>
-<td>9/24 목</td>
+<td style="text-align: right;">26</td>
+<td>9/23 수</td>
 <td>Lyon</td>
 <td>Annecy 당일치기</td>
 <td>Vieille Ville, Thiou 운하, 호숫가</td>
@@ -336,14 +326,24 @@
 <td>TER·크루즈</td>
 </tr>
 <tr>
+<td style="text-align: right;">27</td>
+<td>9/24 목</td>
+<td>Paris</td>
+<td>Lyon→Paris·16박 정착</td>
+<td>TGV, 체크인, 생활시설 확인, 세탁·짐 정리</td>
+<td>숙소 주변 산책·가벼운 저녁</td>
+<td style="text-align: right;">3</td>
+<td>TGV·Paris 숙소</td>
+</tr>
+<tr>
 <td style="text-align: right;">28</td>
 <td>9/25 금</td>
 <td>Paris</td>
-<td>Lyon→Paris·15박 정착</td>
-<td>TGV, 체크인, 첫 장보기, 숙소권 학습</td>
-<td>가벼운 동네저녁</td>
-<td style="text-align: right;">3</td>
-<td>TGV·Paris 숙소</td>
+<td>생활권 적응 완충일</td>
+<td>슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페</td>
+<td>피로가 적으면 강변·공원 1곳</td>
+<td style="text-align: right;">1~2</td>
+<td>숙소 생활권</td>
 </tr>
 <tr>
 <td style="text-align: right;">29</td>
@@ -528,19 +528,19 @@
 <td>4박 체크아웃 후 장보기·농가 진입</td>
 </tr>
 <tr>
-<td>9/17</td>
-<td>Luberon→L’Isle→Avignon</td>
-<td>목요시장보다 체크인·주차 안정성 우선</td>
+<td>9/16</td>
+<td>Luberon→Avignon</td>
+<td>3박 농가 체크아웃 후 성벽도시 체크인·주차 안정성 우선</td>
 </tr>
 <tr>
-<td>9/21</td>
+<td>9/20</td>
 <td>Avignon→Lyon</td>
 <td>주유·반납·TGV 완충시간 확보</td>
 </tr>
 <tr>
-<td>9/25</td>
+<td>9/24</td>
 <td>Lyon→Paris</td>
-<td>15박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선</td>
+<td>16박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선</td>
 </tr>
 <tr>
 <td>10/10</td>
