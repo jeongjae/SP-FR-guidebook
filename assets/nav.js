@@ -96,18 +96,10 @@
       if (!q) return;
       var idx = (window.GUIDE && window.GUIDE.search) || [];
       var hits = [];
-      for (var j = 0; j < idx.length; j++) {
+      for (var j = 0; j < idx.length && hits.length < 30; j++) {
         var e = idx[j];
-        var title = e.t.toLowerCase(), category = e.c.toLowerCase();
-        if ((title + " " + category).indexOf(q) === -1) continue;
-        var score = title === q ? 0
-          : title.indexOf(q) === 0 ? 1
-          : category.indexOf("장소") === 0 ? 2
-          : title.indexOf(q) !== -1 ? 3 : 4;
-        hits.push({entry: e, score: score, order: j});
+        if ((e.t + " " + e.c).toLowerCase().indexOf(q) !== -1) hits.push(e);
       }
-      hits.sort(function (a, b) { return a.score - b.score || a.order - b.order; });
-      hits = hits.slice(0, 30).map(function (hit) { return hit.entry; });
       if (!hits.length) {
         out.innerHTML = '<p class="sr-none">검색 결과가 없습니다</p>';
         return;

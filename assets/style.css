@@ -737,6 +737,128 @@ thead th {
 tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--surface-sunk) 45%, transparent); }
 tbody tr:last-child td { border-bottom: none; }
 
+/* 전체 일정 — 데스크톱은 표, 모바일은 하루 한 장의 압축 카드다. */
+.itinerary-date-link,
+.itinerary-region-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  color: var(--accent);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .itinerary-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+  .itinerary-table,
+  .itinerary-table tbody {
+    display: block;
+    background: transparent;
+  }
+  .itinerary-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .itinerary-table tbody {
+    display: grid;
+    gap: var(--s3);
+  }
+  .itinerary-table tbody tr {
+    display: grid;
+    grid-template-columns: 64px minmax(74px, 1fr) minmax(74px, 1fr);
+    align-items: center;
+    padding: var(--s2) var(--s3) var(--s3);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--r-card);
+    background: var(--surface);
+    box-shadow: var(--shadow-1);
+  }
+  .itinerary-table tbody td {
+    min-width: 0;
+    padding: 2px var(--s2);
+    border: 0;
+    background: transparent !important;
+    overflow-wrap: anywhere;
+  }
+  .itinerary-day {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--accent);
+    font-size: var(--t-title3);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+  .itinerary-day::before {
+    content: "DAY";
+    display: block;
+    color: var(--muted);
+    font-size: var(--t-cap2);
+    letter-spacing: 0.08em;
+  }
+  .itinerary-date { grid-column: 2; grid-row: 1; }
+  .itinerary-region { grid-column: 3; grid-row: 1; text-align: right; }
+  .itinerary-date-link,
+  .itinerary-region-link {
+    width: 100%;
+    line-height: 1.35;
+  }
+  .itinerary-region-link { justify-content: flex-end; }
+  .itinerary-theme {
+    grid-column: 1 / -1;
+    margin-top: var(--s1);
+    padding-top: var(--s3) !important;
+    border-top: 1px solid var(--separator) !important;
+    font-weight: 800;
+    line-height: 1.45;
+  }
+  .itinerary-core {
+    grid-column: 1 / -1;
+    padding-top: var(--s2) !important;
+    color: var(--text);
+    font-size: var(--t-foot);
+    line-height: 1.55;
+  }
+  .itinerary-option {
+    grid-column: 1 / -1;
+    color: var(--text-2);
+    font-size: var(--t-foot);
+    line-height: 1.5;
+  }
+  .itinerary-fatigue,
+  .itinerary-lock {
+    margin-top: var(--s2);
+    padding-top: var(--s2) !important;
+    border-top: 1px dashed var(--separator) !important;
+    color: var(--text-2);
+    font-size: var(--t-cap1);
+  }
+  .itinerary-fatigue { grid-column: 1 / 2; }
+  .itinerary-lock { grid-column: 2 / -1; }
+  .itinerary-option::before,
+  .itinerary-lock::before {
+    content: attr(data-label) " · ";
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .itinerary-fatigue::before {
+    content: "피로 · ";
+    color: var(--muted);
+    font-weight: 700;
+  }
+}
+
 /* ================= 관련 리소스 ================= */
 .related { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
 .related a {

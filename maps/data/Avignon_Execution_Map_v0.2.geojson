@@ -112,136 +112,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Arles",
-        "sequence": 7,
-        "category": "교통",
-        "status": "9/19 철도 기본 도착점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Arles",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6326,
-          43.6846
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Arènes d’Arles",
-        "sequence": 8,
-        "category": "핵심 방문지",
-        "status": "9/19 기본 일정",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ar%C3%A8nes+d%E2%80%99Arles",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6309,
-          43.6776
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Théâtre antique",
-        "sequence": 9,
-        "category": "핵심 방문지",
-        "status": "9/19 기본 일정",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Th%C3%A9%C3%A2tre+antique",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6279,
-          43.6765
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Place du Forum",
-        "sequence": 10,
-        "category": "시장·생활",
-        "status": "점심·카페 휴식",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Place+du+Forum",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6272,
-          43.6773
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Cloître Saint-Trophime",
-        "sequence": 11,
-        "category": "핵심 방문지",
-        "status": "일정 균형에 따른 우선 선택",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Clo%C3%AEtre+Saint-Trophime",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6285,
-          43.6769
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Fondation Vincent van Gogh",
-        "sequence": 12,
-        "category": "핵심 방문지",
-        "status": "Saint-Trophime과 교환하는 선택",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fondation+Vincent+van+Gogh",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6262,
-          43.676
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "La Roquette",
-        "sequence": 13,
-        "category": "시장·생활",
-        "status": "론강변과 잇는 기본 산책",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=La+Roquette",
-        "phase": "확정 일정 2026-08-04"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.6249,
-          43.6729
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Les Baux",
-        "sequence": 14,
+        "sequence": 7,
         "category": "근교·이동지",
-        "status": "선택 대안 — Arles 전체 교체 시만",
+        "status": "일정 기준점",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Les+Baux",
         "phase": "Phase 6"
       },
@@ -257,9 +131,9 @@
       "type": "Feature",
       "properties": {
         "name": "Saint-Rémy",
-        "sequence": 15,
+        "sequence": 8,
         "category": "근교·이동지",
-        "status": "선택 대안 — Arles 전체 교체 시만",
+        "status": "일정 기준점",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Saint-Rémy",
         "phase": "Phase 6"
       },
