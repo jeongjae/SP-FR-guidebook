@@ -1,0 +1,723 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-2-provence-lyon",
+  "downloadDate": "2026-08-06",
+  "subjects": [
+    {
+      "placeId": "saint-paul-de-vence",
+      "imageId": "aix-saint-paul-01",
+      "region": "aix",
+      "query": "Saint-Paul-de-Vence panorama",
+      "selectedTitle": "File:Vues générales - Saint-Paul-de-Vence.jpg",
+      "titleKo": "생폴드방스 성벽 마을",
+      "altKo": "언덕 위에 성벽으로 둘러싸인 생폴드방스 마을의 전경",
+      "captionKo": "성벽에 둘러싸인 언덕 위 마을 생폴드방스의 전경.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-12.html",
+        "places/saint-paul-de-vence.html"
+      ]
+    },
+    {
+      "placeId": "grasse",
+      "imageId": "aix-grasse-01",
+      "region": "aix",
+      "query": "Grasse cathédrale vue",
+      "selectedTitle": "File:Grasse - Flickr - Irene Grassi (sun sand ^ sea).jpg",
+      "titleKo": "그라스 구시가",
+      "altKo": "그라스 구시가의 기와지붕 너머로 보이는 대성당 종탑과 탑",
+      "captionKo": "그라스 구시가의 지붕들 너머로 노트르담뒤퓌 대성당 종탑이 솟아 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-12.html",
+        "places/grasse.html"
+      ]
+    },
+    {
+      "placeId": "aix-en-provence",
+      "imageId": "aix-city-01",
+      "region": "aix",
+      "query": "Fontaine de la Rotonde Aix aerial",
+      "selectedTitle": "File:Fontaine de la Rotonde with Cours Mirabeau in the distance Aix en Provence.jpg",
+      "titleKo": "엑상프로방스와 로통드 분수",
+      "altKo": "공중에서 내려다본 로통드 분수 로터리와 엑상프로방스 구시가의 지붕들",
+      "captionKo": "로통드 분수 너머로 엑상프로방스 구시가의 지붕들이 펼쳐진다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.65
+      },
+      "usage": [
+        "daily/day-12.html"
+      ]
+    },
+    {
+      "placeId": "aix-markets",
+      "imageId": "aix-markets-01",
+      "region": "aix",
+      "query": "Aix-en-Provence marché",
+      "selectedTitle": "File:Marché aux Fruits et Légumes à Aix-en-Provence.jpg",
+      "titleKo": "엑상프로방스 노천시장",
+      "altKo": "엑상프로방스 구시가 광장에서 열린 과일·채소 노천시장의 좌판",
+      "captionKo": "엑상프로방스 구시가 광장의 과일·채소 노천시장.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.6
+      },
+      "usage": [
+        "daily/day-13.html"
+      ]
+    },
+    {
+      "placeId": "cours-mirabeau",
+      "imageId": "aix-mirabeau-01",
+      "region": "aix",
+      "query": "Cours Mirabeau Aix-en-Provence",
+      "selectedTitle": "File:Cours Mirabeau 20100508 Aix-en-Provence 1.jpg",
+      "titleKo": "미라보 거리",
+      "altKo": "플라타너스 가로수가 터널처럼 덮은 미라보 거리와 멀리 보이는 분수",
+      "captionKo": "플라타너스 가로수가 터널을 이루는 엑상프로방스 미라보 거리.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-13.html",
+        "places/cours-mirabeau.html"
+      ]
+    },
+    {
+      "placeId": "musee-granet",
+      "imageId": "aix-granet-01",
+      "region": "aix",
+      "query": "Musée Granet Aix-en-Provence",
+      "selectedTitle": "File:Aix en Provence-FR-13-musee Granet-a1.jpg",
+      "titleKo": "그라네 미술관",
+      "altKo": "엑상프로방스 그라네 미술관의 정면 외관과 입구 계단",
+      "captionKo": "옛 기사단 건물을 쓰는 그라네 미술관의 정면 외관.",
+      "role": "major",
+      "focus": {
+        "x": 0.55,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-13.html",
+        "places/musee-granet.html"
+      ]
+    },
+    {
+      "placeId": "cassis",
+      "imageId": "aix-cassis-01",
+      "region": "aix",
+      "query": "Cassis Cap Canaille",
+      "selectedTitle": "File:Cassis.jpg",
+      "titleKo": "카시스와 지중해",
+      "altKo": "캅 카나유 절벽 위에서 내려다본 카시스 마을과 푸른 만",
+      "captionKo": "캅 카나유 절벽에서 내려다본 카시스 마을과 만.",
+      "role": "hero",
+      "focus": {
+        "x": 0.35,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-14.html",
+        "places/cassis.html"
+      ]
+    },
+    {
+      "placeId": "calanques",
+      "imageId": "aix-calanques-01",
+      "region": "aix",
+      "query": "Calanque d'En-Vau",
+      "selectedTitle": "File:En-Vau calanque 10.jpg",
+      "titleKo": "앙보 칼랑크",
+      "altKo": "석회암 절벽 사이로 에메랄드빛 바다가 들어온 앙보 칼랑크와 자갈 해변",
+      "captionKo": "석회암 절벽 사이로 바다가 깊숙이 들어온 칼랑크 국립공원의 앙보 칼랑크.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-14.html",
+        "places/calanques.html"
+      ]
+    },
+    {
+      "placeId": "atelier-des-lauves",
+      "imageId": "aix-cezanne-01",
+      "region": "aix",
+      "query": "Atelier de Cézanne Aix",
+      "selectedTitle": "File:Aix-Atelier Cézanne-bjs180816-01.jpg",
+      "titleKo": "세잔 아틀리에",
+      "altKo": "정원 수풀 너머로 보이는 세잔 아틀리에 건물과 대형 북향 채광창",
+      "captionKo": "레 로브 언덕에 있는 세잔 아틀리에 건물과 작업실의 대형 북향 채광창.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.3
+      },
+      "usage": [
+        "daily/day-15.html",
+        "places/atelier-des-lauves.html"
+      ]
+    },
+    {
+      "placeId": "lourmarin",
+      "imageId": "luberon-lourmarin-01",
+      "region": "luberon",
+      "query": "Lourmarin vue générale",
+      "selectedTitle": "File:Lourmarin - vue générale.jpg",
+      "titleKo": "루르마랭 전경",
+      "altKo": "뤼베롱 산자락 아래 루르마랭 마을 전경, 성의 종탑과 교회 탑이 지붕들 위로 솟아 있다",
+      "captionKo": "뤼베롱 산기슭에 자리한 루르마랭 마을 전경.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-16.html",
+        "places/lourmarin.html"
+      ]
+    },
+    {
+      "placeId": "luberon",
+      "imageId": "luberon-valley-01",
+      "region": "luberon",
+      "query": "Bonnieux Luberon village view",
+      "selectedTitle": "File:Bonnieux au coeur du Luberon (Vaucluse).jpg",
+      "titleKo": "뤼베롱과 보니외",
+      "altKo": "뤼베롱 계곡 능선 위에 얹힌 보니외 마을을 멀리서 담은 넓은 풍경",
+      "captionKo": "능선 위 마을 보니외가 보이는 뤼베롱의 풍경.",
+      "role": "hero",
+      "focus": {
+        "x": 0.38,
+        "y": 0.6
+      },
+      "usage": [
+        "daily/day-16.html",
+        "daily/day-19.html"
+      ]
+    },
+    {
+      "placeId": "roussillon",
+      "imageId": "luberon-roussillon-01",
+      "region": "luberon",
+      "query": "Roussillon Vaucluse village",
+      "selectedTitle": "File:Village de Roussillon, Vaucluse, France - panoramio.jpg",
+      "titleKo": "루시용의 오커빛 집들",
+      "altKo": "오커 안료 빛깔의 붉은 집들이 종탑까지 층층이 이어진 루시용 마을 풍경",
+      "captionKo": "오커빛 외벽의 집들이 언덕을 따라 이어지는 루시용 마을.",
+      "role": "hero",
+      "focus": {
+        "x": 0.6,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-17.html"
+      ]
+    },
+    {
+      "placeId": "sentier-des-ocres",
+      "imageId": "luberon-ocres-01",
+      "region": "luberon",
+      "query": "Sentier des Ocres Roussillon",
+      "selectedTitle": "File:Roussillon chemin des ocres.jpg",
+      "titleKo": "오커 산책로",
+      "altKo": "주황빛 오커 협곡 사이로 계단 산책로가 내려가고 소나무가 둘러싼 루시용 오커 산책로",
+      "captionKo": "루시용의 오커 채석 지대를 지나는 산책로.",
+      "role": "major",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-17.html"
+      ]
+    },
+    {
+      "placeId": "gordes",
+      "imageId": "luberon-gordes-01",
+      "region": "luberon",
+      "query": "Gordes Vaucluse village",
+      "selectedTitle": "File:Gordes pano.jpg",
+      "titleKo": "고르드 전경",
+      "altKo": "돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마",
+      "captionKo": "언덕 위로 돌집이 층층이 이어지는 고르드 마을 전경.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-18.html",
+        "places/gordes.html"
+      ]
+    },
+    {
+      "placeId": "village-des-bories",
+      "imageId": "luberon-bories-01",
+      "region": "luberon",
+      "query": "Village des Bories Gordes",
+      "selectedTitle": "File:Village des bories. 1.jpg",
+      "titleKo": "보리 석조마을",
+      "altKo": "마른돌을 쌓아 지은 보리 오두막 여러 채와 돌담이 이어진 고르드 보리 석조마을",
+      "captionKo": "모르타르 없이 돌을 쌓아 지은 보리 오두막들이 모인 마을 유적.",
+      "role": "major",
+      "focus": {
+        "x": 0.35,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-18.html",
+        "places/village-des-bories.html"
+      ]
+    },
+    {
+      "placeId": "abbaye-de-senanque",
+      "imageId": "luberon-senanque-01",
+      "region": "luberon",
+      "query": "Abbaye de Sénanque",
+      "selectedTitle": "File:Sénanque Abbey.jpg",
+      "titleKo": "세낭크 수도원",
+      "altKo": "종탑과 반원형 후진이 보이는 로마네스크 양식의 세낭크 수도원 석조 건물, 앞쪽에 꽃이 지지 않은 초록 라벤더 밭",
+      "captionKo": "12세기에 세워진 시토회 수도원인 세낭크 수도원.",
+      "role": "major",
+      "focus": {
+        "x": 0.42,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-18.html",
+        "places/abbaye-de-senanque.html"
+      ]
+    },
+    {
+      "placeId": "avignon",
+      "imageId": "avignon-city-01",
+      "region": "avignon",
+      "query": "Avignon depuis Tour Philippe le Bel",
+      "selectedTitle": "File:Avignon, Palais des Papes depuis Tour Philippe le Bel by JM Rosier.jpg",
+      "titleKo": "론강 건너에서 본 아비뇽",
+      "altKo": "론강 건너편에서 바라본 아비뇽 구시가 — 교황청 궁전과 노트르담 데 돔 대성당, 성벽, 왼쪽 아래로 생 베네제 다리가 보인다",
+      "captionKo": "빌뇌브레자비뇽의 필리프 르 벨 탑 쪽에서 바라본 아비뇽 — 교황청 궁전과 대성당, 성벽이 구시가 스카이라인을 이룬다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-20.html"
+      ]
+    },
+    {
+      "placeId": "l-isle-sur-la-sorgue",
+      "imageId": "luberon-sorgue-01",
+      "region": "luberon",
+      "query": "Isle-sur-la-Sorgue roue",
+      "selectedTitle": "File:Isle sur la Sorgue - Roue 1.jpg",
+      "titleKo": "소르그 강의 물레방아",
+      "altKo": "이끼로 덮인 물레방아가 소르그 강 수로에서 돌아가고 옆에 지붕 덮인 빨래터가 있는 릴쉬르라소르그 풍경",
+      "captionKo": "이끼 낀 물레방아가 남아 있는 릴쉬르라소르그의 소르그 강 수로.",
+      "role": "hero",
+      "focus": {
+        "x": 0.58,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-20.html",
+        "places/l-isle-sur-la-sorgue.html"
+      ]
+    },
+    {
+      "placeId": "les-halles-avignon",
+      "imageId": "avignon-halles-01",
+      "region": "avignon",
+      "query": "Halles Avignon mur végétal place Pie",
+      "selectedTitle": "File:Marché sur la place Pie devant les Halles d'Avignon.jpg",
+      "titleKo": "레 알 시장의 수직 정원",
+      "altKo": "아비뇽 레 알 시장 건물의 식물로 뒤덮인 수직 정원 외벽과 그 앞 피 광장의 꽃 노점",
+      "captionKo": "피 광장(Place Pie)의 레 알 시장 — 파트리크 블랑이 설계한 수직 정원이 외벽을 덮고 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.68
+      },
+      "usage": [
+        "daily/day-21.html"
+      ]
+    },
+    {
+      "placeId": "palais-des-papes",
+      "imageId": "avignon-palais-papes-01",
+      "region": "avignon",
+      "query": "Palais des Papes facade",
+      "selectedTitle": "File:Avignon, Palais des Papes by JM Rosier.jpg",
+      "titleKo": "교황청 궁전 정면",
+      "altKo": "팔레 광장에서 본 교황청 궁전 서쪽 정면 — 총안 성벽과 쌍둥이 첨탑의 정문이 한눈에 들어온다",
+      "captionKo": "팔레 광장(Place du Palais)에서 바라본 교황청 궁전의 서쪽 정면.",
+      "role": "hero",
+      "focus": {
+        "x": 0.6,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-21.html",
+        "places/palais-des-papes.html"
+      ]
+    },
+    {
+      "placeId": "rocher-des-doms",
+      "imageId": "avignon-rocher-doms-01",
+      "region": "avignon",
+      "query": "Rocher des Doms jardin",
+      "selectedTitle": "File:Avignon - Jardin des Doms (Rocher des Doms) - Lac de la Promenade du Rocher-des-Doms - Panorama View on Koi pond & Vénus aux Hirondelles 1895 by Félix Charpentier 01.jpg",
+      "titleKo": "로셰 데 돔 정원의 연못",
+      "altKo": "로셰 데 돔 정원 연못 — 분수 조각상과 물가의 카페 테라스가 나무 그늘 아래 놓여 있다",
+      "captionKo": "로셰 데 돔 정원의 연못 — 펠릭스 샤르팡티에의 조각상(1895)이 분수 위에 서 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-21.html",
+        "places/rocher-des-doms.html"
+      ]
+    },
+    {
+      "placeId": "pont-saint-benezet",
+      "imageId": "avignon-pont-benezet-01",
+      "region": "avignon",
+      "query": "Pont Saint-Bénezet Avignon",
+      "selectedTitle": "File:Pont d´Avignon.jpg",
+      "titleKo": "생 베네제 다리",
+      "altKo": "론강 위에 남은 생 베네제 다리의 네 아치와 다리 위 생 니콜라 예배당이 강물에 비친 모습",
+      "captionKo": "강 중간에서 끊긴 생 베네제 다리 — 남아 있는 아치 위에 생 니콜라 예배당이 서 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-21.html",
+        "places/pont-saint-benezet.html"
+      ]
+    },
+    {
+      "placeId": "pont-du-gard",
+      "imageId": "avignon-pont-du-gard-01",
+      "region": "avignon",
+      "query": "Pont du Gard aqueduct",
+      "selectedTitle": "File:Pont du Gard BLS.jpg",
+      "titleKo": "퐁 뒤 가르",
+      "altKo": "가르동강 위로 3층 아치를 온전히 드러낸 로마 수도교 퐁 뒤 가르의 전경",
+      "captionKo": "가르동강을 건너는 로마 수도교 퐁 뒤 가르 — 3층 아치 구조가 전체 폭으로 이어진다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-22.html",
+        "places/pont-du-gard.html"
+      ]
+    },
+    {
+      "placeId": "uzes",
+      "imageId": "avignon-uzes-01",
+      "region": "avignon",
+      "query": "Uzès Place aux Herbes",
+      "selectedTitle": "File:Uzès-Place aux Herbes-20140501.jpg",
+      "titleKo": "위제스 에르브 광장",
+      "altKo": "위제스 에르브 광장 — 플라타너스 그늘 아래 돌 아케이드와 카페 테라스가 광장을 둘러싸고 있다",
+      "captionKo": "위제스 구시가의 중심인 에르브 광장(Place aux Herbes) — 아케이드가 광장을 둘러싼다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-22.html",
+        "places/uzes.html"
+      ]
+    },
+    {
+      "placeId": "les-baux-de-provence",
+      "imageId": "avignon-les-baux-01",
+      "region": "avignon",
+      "query": "Les Baux-de-Provence village",
+      "selectedTitle": "File:Baux de Provence.jpg",
+      "titleKo": "바위 위의 레 보 드 프로방스",
+      "altKo": "알피유 산지의 바위 절벽 위에 마을과 성채 유적이 얹혀 있는 레 보 드 프로방스 전경",
+      "captionKo": "알피유의 바위 언덕 위에 마을과 성채 유적이 자리한 레 보 드 프로방스.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-23.html",
+        "places/les-baux-de-provence.html"
+      ]
+    },
+    {
+      "placeId": "saint-remy-de-provence",
+      "imageId": "avignon-saint-remy-01",
+      "region": "avignon",
+      "query": "Saint-Rémy-de-Provence place",
+      "selectedTitle": "File:Saint-Rémy-de-Provence - 54740044205.jpg",
+      "titleKo": "생레미의 카페 광장",
+      "altKo": "생레미드프로방스 구시가 광장 — 플라타너스 그늘 아래 붉은 파라솔을 편 카페 테라스가 늘어서 있다",
+      "captionKo": "생레미드프로방스 구시가의 광장에 늘어선 카페 테라스.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-23.html",
+        "places/saint-remy-de-provence.html"
+      ]
+    },
+    {
+      "placeId": "lyon",
+      "imageId": "lyon-city-01",
+      "region": "lyon",
+      "query": "Lyon cityscape from Fourvière",
+      "selectedTitle": "File:Lyon cityscape from Notre-Dame de Fourvière - from Flickr.jpg",
+      "titleKo": "푸르비에르에서 본 리옹",
+      "altKo": "푸르비에르 언덕에서 내려다본 리옹 프레스킬 지구의 붉은 지붕과 벨쿠르 광장",
+      "captionKo": "푸르비에르 언덕에서 내려다본 프레스킬 지구 — 사진 중앙의 넓은 광장이 벨쿠르 광장이다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.4,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-24.html"
+      ]
+    },
+    {
+      "placeId": "place-bellecour",
+      "imageId": "lyon-bellecour-01",
+      "region": "lyon",
+      "query": "Place Bellecour Louis XIV",
+      "selectedTitle": "File:Statue of Louis XIV @ Place Bellecour @ Lyon (35580147953).jpg",
+      "titleKo": "벨쿠르 광장",
+      "altKo": "벨쿠르 광장의 루이 14세 기마상과 뒤편 푸르비에르 언덕",
+      "captionKo": "벨쿠르 광장 중앙의 루이 14세 기마상 — 뒤로 푸르비에르 언덕이 보인다.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-24.html"
+      ]
+    },
+    {
+      "placeId": "fourviere",
+      "imageId": "lyon-fourviere-01",
+      "region": "lyon",
+      "query": "Basilique Notre-Dame de Fourvière",
+      "selectedTitle": "File:Notre Dame de Fourvière.jpg",
+      "titleKo": "푸르비에르 대성당",
+      "altKo": "언덕 위 네 개의 탑이 있는 푸르비에르 노트르담 대성당",
+      "captionKo": "푸르비에르 언덕 위에 선 노트르담 대성당 — 네 모서리의 탑과 금색 성모상이 보인다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.55,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-25.html",
+        "places/fourviere.html"
+      ]
+    },
+    {
+      "placeId": "vieux-lyon",
+      "imageId": "lyon-vieux-01",
+      "region": "lyon",
+      "query": "Vieux Lyon rue",
+      "selectedTitle": "File:Vieux Lyon (25667252093).jpg",
+      "titleKo": "리옹 구시가지 골목",
+      "altKo": "르네상스풍 건물이 늘어선 리옹 구시가지의 자갈길 골목",
+      "captionKo": "르네상스 시대 건물이 늘어선 리옹 구시가지의 자갈길 골목.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-25.html",
+        "places/vieux-lyon.html"
+      ]
+    },
+    {
+      "placeId": "cathedrale-saint-jean-lyon",
+      "imageId": "lyon-saint-jean-01",
+      "region": "lyon",
+      "query": "Cathédrale Saint-Jean Lyon",
+      "selectedTitle": "File:Cathédrale Saint-Jean-Baptiste @ Lyon (35581360383).jpg",
+      "titleKo": "생장 대성당",
+      "altKo": "리옹 구시가지 지붕 너머로 보이는 생장 대성당 전경",
+      "captionKo": "푸르비에르 사면에서 본 생장 대성당 — 서쪽 정면의 장미창과 두 탑이 보인다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-25.html"
+      ]
+    },
+    {
+      "placeId": "traboules",
+      "imageId": "lyon-traboules-01",
+      "region": "lyon",
+      "query": "traboule Lyon Tour Rose",
+      "selectedTitle": "File:Lyon - Traboule de la Rue du Boeuf (16163505286).jpg",
+      "titleKo": "트라불 안뜰",
+      "altKo": "뤼 뒤 뵈프 트라불 안뜰의 분홍색 나선계단 탑(투르 로즈)",
+      "captionKo": "뤼 뒤 뵈프의 트라불 안뜰에 있는 분홍색 나선계단 탑, 투르 로즈.",
+      "role": "major",
+      "focus": {
+        "x": 0.42,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-25.html"
+      ]
+    },
+    {
+      "placeId": "croix-rousse",
+      "imageId": "lyon-croix-rousse-01",
+      "region": "lyon",
+      "query": "Grande Côte Croix-Rousse",
+      "selectedTitle": "File:Montée de la Grande Côte @ Croix-Rousse @ Lyon (36347972426).jpg",
+      "titleKo": "크루아루스 언덕길",
+      "altKo": "크루아루스 사면을 오르는 보행자 길 몽테 드 라 그랑드 코트",
+      "captionKo": "크루아루스 사면을 오르는 몽테 드 라 그랑드 코트 — 견직공(카뉘) 시대의 높은 건물들이 늘어서 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-26.html",
+        "places/croix-rousse.html"
+      ]
+    },
+    {
+      "placeId": "halles-de-lyon-paul-bocuse",
+      "imageId": "lyon-halles-bocuse-01",
+      "region": "lyon",
+      "query": "Halles de Lyon Paul Bocuse",
+      "selectedTitle": "File:Fromagerie Halles de Lyon-Paul Bocuse en 2017 à Lyon.jpg",
+      "titleKo": "폴 보퀴즈 시장 내부",
+      "altKo": "폴 보퀴즈 시장 안 치즈 가게 진열대",
+      "captionKo": "폴 보퀴즈 시장 내부의 치즈 가게 진열대.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "usage": [
+        "daily/day-26.html",
+        "places/halles-de-lyon-paul-bocuse.html"
+      ]
+    },
+    {
+      "placeId": "annecy",
+      "imageId": "lyon-annecy-01",
+      "region": "lyon",
+      "query": "Palais de l'Isle Annecy",
+      "selectedTitle": "File:Palais de l'Isle Annecy et le Thiou.jpg",
+      "titleKo": "안시와 팔레 드 릴",
+      "altKo": "티우 운하 한가운데 뱃머리처럼 선 팔레 드 릴과 꽃으로 장식된 강변",
+      "captionKo": "티우 운하 가운데 12세기 건물 팔레 드 릴이 뱃머리처럼 서 있다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-27.html",
+        "places/annecy.html"
+      ]
+    },
+    {
+      "placeId": "annecy-vieille-ville",
+      "imageId": "lyon-annecy-vieille-01",
+      "region": "lyon",
+      "query": "rue Sainte-Claire Annecy",
+      "selectedTitle": "File:Annecy - Rue Sainte-Claire (juil 2022).jpg",
+      "titleKo": "안시 구시가지 아케이드",
+      "altKo": "석조 아케이드 아래 카페가 늘어선 안시 구시가지 생트클레르 거리",
+      "captionKo": "안시 구시가지의 중심 거리인 생트클레르 거리 — 양쪽에 석조 아케이드가 이어진다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-27.html"
+      ]
+    },
+    {
+      "placeId": "thiou",
+      "imageId": "lyon-thiou-01",
+      "region": "lyon",
+      "query": "Le Thiou Annecy",
+      "selectedTitle": "File:Canal du Thiou dans le vieil Annecy en soirée (août 2019).JPG",
+      "titleKo": "티우 운하의 저녁",
+      "altKo": "꽃 화분이 걸린 티우 운하와 멀리 보이는 산줄기",
+      "captionKo": "구시가지를 관통하는 티우 운하 — 호수의 물이 이 운하를 통해 빠져나간다.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-27.html"
+      ]
+    },
+    {
+      "placeId": "lake-annecy",
+      "imageId": "lyon-lake-annecy-01",
+      "region": "lyon",
+      "query": "Lac d'Annecy été",
+      "selectedTitle": "File:Lac Annecy été.JPG",
+      "titleKo": "안시 호수",
+      "altKo": "여름의 안시 호수 — 푸른 물과 호수를 둘러싼 산들, 물 위의 보트",
+      "captionKo": "산으로 둘러싸인 안시 호수와 물 위의 보트들.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-27.html"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "placeId": "marseille",
+      "reason": "최신 일정에서 supporting/reference — Day 14는 Cassis·Calanques 중심이라 사진 대상이 아니다."
+    }
+  ],
+  "notes": "lake-annecy는 에이전트 선정본(설산·늦가을)이 9월 말 방문과 계절이 어긋나 여름 촬영본으로 교체."
+}
