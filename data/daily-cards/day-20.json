@@ -4,99 +4,183 @@
   "date": "2026-09-17",
   "city": "Avignon",
   "title": "교황도시 핵심",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "07:30",
+  "endTime": "21:00",
+  "totalDuration": "13시간 30분",
+  "totalDistance": "약 4km · 도보",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "La Terrasse du Clocher (후보)",
+    "lat": 43.94993,
+    "lng": 4.81302,
+    "status": "candidate"
   },
   "stops": [
     {
       "id": "les-halles",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Les Halles",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Les Halles",
-      "menu": null,
-      "reservation": "Palais·식당",
+      "start": "08:30",
+      "end": "09:20",
+      "name": "Les Halles d'Avignon",
+      "category": "shopping",
+      "lat": 43.94787,
+      "lng": 4.80903,
+      "summary": "화–일 06:00–14:00 — 치즈·올리브·빵·점심재료",
+      "menu": "치즈·올리브·빵",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "palais-des-papes",
+      "id": "palais",
       "order": 2,
-      "start": null,
-      "end": null,
+      "start": "09:45",
+      "end": "12:00",
       "name": "Palais des Papes",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Palais des Papes",
+      "category": "culture",
+      "lat": 43.95078,
+      "lng": 4.8075,
+      "summary": "9월 09:00–19:00, 마지막 입장 1시간 전 — 2026 방문해설·WebApp 활용",
       "menu": null,
-      "reservation": "Palais·식당",
+      "reservation": "Palais 티켓 시간지정 잠금",
       "optional": false
     },
     {
-      "id": "rocher",
+      "id": "palais-lunch",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Rocher",
+      "start": "12:05",
+      "end": "14:00",
+      "name": "구시가지 점심·휴식",
+      "category": "food",
+      "lat": 43.9503,
+      "lng": 4.8068,
+      "summary": "긴 코스요리 금지 — 교황궁 2시간 뒤 휴식 필수",
+      "menu": "시장 샌드위치 또는 비스트로",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "rocher-doms",
+      "order": 4,
+      "start": "14:10",
+      "end": "15:00",
+      "name": "Rocher des Doms",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Rocher",
+      "lat": 43.952656,
+      "lng": 4.8079195,
+      "summary": "Rhône·Villeneuve·Mont Ventoux 조망, 정원 벤치 휴식",
       "menu": null,
-      "reservation": "Palais·식당",
+      "reservation": null,
       "optional": false
     },
     {
       "id": "pont",
-      "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Pont",
+      "order": 5,
+      "start": "15:05",
+      "end": "17:15",
+      "name": "Pont Saint-Bénézet·강변",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Pont",
+      "lat": 43.95389,
+      "lng": 4.80508,
+      "summary": "Palais+Pont 결합권 — 이후 Barthelasse 시점은 나룻배 운항·바람 확인",
       "menu": null,
-      "reservation": "Palais·식당",
+      "reservation": "결합권·나룻배 운항 확인",
+      "optional": false
+    },
+    {
+      "id": "avignon-return",
+      "order": 6,
+      "start": "19:30",
+      "end": "21:00",
+      "name": "저녁·복귀",
+      "category": "hotel",
+      "lat": 43.94993,
+      "lng": 4.81302,
+      "summary": "추가 미술관은 1곳 이하",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "les-halles",
+      "to": "palais",
+      "mode": "walk",
+      "duration": "20분 (Rue des Marchands 경유)",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "palais",
+      "to": "palais-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "palais-lunch",
+      "to": "rocher-doms",
+      "mode": "walk",
+      "duration": "10분 (오르막)",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "rocher-doms",
+      "to": "pont",
+      "mode": "walk",
+      "duration": "10분 (내리막)",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "pont",
+      "to": "avignon-return",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "1.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "Palais·식당"
+    "도보 (성벽 안 압축권)"
   ],
   "food": [
-    "Les Halles/구시가지"
+    "Les Halles 조달",
+    "구시가지 점심 — 가볍게"
   ],
   "highlights": [
-    "Les Halles, Palais des Papes, Rocher, Pont",
-    "선택·축소: 추가 미술관 1곳 이하"
+    "Palais 09:45 입장 — 시간지정",
+    "교황궁 2시간 뒤 휴식 필수",
+    "선택 러닝은 성벽 남쪽 4–5km"
   ],
-  "backup": "Palais 중심 실내일",
-  "map": null,
+  "backup": "혼잡·더위 시 Palais 중심 실내일 전환",
+  "map": {
+    "zoom": 15,
+    "center": [
+      43.9497,
+      4.809
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Palais des Papes 티켓 시간지정 예약",
+    "Palais+Pont 결합권·나룻배 운항 확인",
+    "Avignon 숙소 후보 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-20",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-20",
+    "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md#Day-20",
+    "source/ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Rocher des Doms"
   ]
 }

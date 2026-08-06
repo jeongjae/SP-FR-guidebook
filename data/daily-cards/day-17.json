@@ -4,71 +4,183 @@
   "date": "2026-09-14",
   "city": "Luberon",
   "title": "오커색과 생활마을",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "07:45",
+  "endTime": "20:30",
+  "totalDuration": "12시간 45분",
+  "totalDistance": "약 56km · 차량 경로",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Domaine des Peyre (후보)",
+    "lat": 43.87088,
+    "lng": 5.12202,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "roussillon",
+      "id": "farm-depart",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Roussillon",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Roussillon",
+      "start": "07:45",
+      "end": "09:15",
+      "name": "농가 아침·출발",
+      "category": "hotel",
+      "lat": 43.87088,
+      "lng": 5.12202,
+      "summary": "느린 준비 — Roussillon 주차장 실시간 혼잡 확인",
       "menu": null,
-      "reservation": "오커길",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "sentier-des-ocres",
+      "id": "sentier-ocres",
       "order": 2,
-      "start": null,
-      "end": null,
+      "start": "09:30",
+      "end": "10:30",
       "name": "Sentier des Ocres",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Sentier des Ocres",
+      "lat": 43.8996879,
+      "lng": 5.2985907,
+      "summary": "9월 09:30–19:00 · 성인 €3.50 — 비·폭풍·산불위험 시 폐쇄 가능",
       "menu": null,
-      "reservation": "오커길",
+      "reservation": "당일 운영 확인",
+      "optional": false
+    },
+    {
+      "id": "roussillon",
+      "order": 3,
+      "start": "10:30",
+      "end": "12:40",
+      "name": "Roussillon 마을·점심",
+      "category": "sight",
+      "lat": 43.90202,
+      "lng": 5.29207,
+      "summary": "Place de la Mairie·전망점·오커 골목, 상점 1–2곳만",
+      "menu": "시장 준비식 또는 La Table des Ocres",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "farm-rest",
+      "order": 4,
+      "start": "12:40",
+      "end": "15:30",
+      "name": "농가 귀환·휴식",
+      "category": "hotel",
+      "lat": 43.87088,
+      "lng": 5.12202,
+      "summary": "오커먼지 제거·샤워·낮잠",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "goult",
+      "order": 5,
+      "start": "15:30",
+      "end": "18:00",
+      "name": "Goult 생활마을",
+      "category": "sight",
+      "lat": 43.86306,
+      "lng": 5.24417,
+      "summary": "중앙광장·골목·풍차 — Jason 스케치 30–45분 후 장보기 보완",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "farm-return",
+      "order": 6,
+      "start": "19:00",
+      "end": "20:30",
+      "name": "농가 저녁",
+      "category": "hotel",
+      "lat": 43.87088,
+      "lng": 5.12202,
+      "summary": "농가 요리 또는 Bonnieux 선택식",
+      "menu": null,
+      "reservation": "Bonnieux 식당은 월요일 운영 재확인",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "farm-depart",
+      "to": "sentier-ocres",
+      "mode": "car",
+      "duration": "약 19분",
+      "distance": "16.7km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "sentier-ocres",
+      "to": "roussillon",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "roussillon",
+      "to": "farm-rest",
+      "mode": "car",
+      "duration": "약 21분",
+      "distance": "17.2km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "farm-rest",
+      "to": "goult",
+      "mode": "car",
+      "duration": "약 13분",
+      "distance": "10.8km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "goult",
+      "to": "farm-return",
+      "mode": "car",
+      "duration": "약 13분",
+      "distance": "10.9km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    }
+  ],
   "transport": [
-    "오커길"
+    "렌터카 (오전 오커길 · 오후 생활마을)"
   ],
   "food": [
-    "Roussillon 점심"
+    "Roussillon 가벼운 점심",
+    "농가 저녁 또는 Bonnieux"
   ],
   "highlights": [
-    "Roussillon, Sentier des Ocres",
-    "선택·축소: Goult 또는 Bonnieux 택1"
+    "오커길은 오전 — 더위·혼잡 전",
+    "월요일 식당 휴무 주의",
+    "Goult 또는 Bonnieux 택1"
   ],
-  "backup": "오커길 축소·카페",
-  "map": null,
+  "backup": "우천·폐쇄 시 오커길 축소, 마을·카페 중심",
+  "map": {
+    "zoom": 11,
+    "center": [
+      43.885,
+      5.21
+    ],
+    "routeCache": "routes/day-17-driving-osrm.json"
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "농가 후보 승인",
+    "Sentier des Ocres 당일 운영·주차 확인",
+    "Bonnieux 식당 월요일 운영 확인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-17",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-17",
+    "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md#Day-17",
+    "source/ASSETS/75_Execution_Maps/Luberon_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Sentier des Ocres"
   ]
 }
