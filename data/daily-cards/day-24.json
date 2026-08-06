@@ -4,99 +4,183 @@
   "date": "2026-09-21",
   "city": "Lyon",
   "title": "Fourvière와 Vieux Lyon",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4",
+  "startTime": "07:45",
+  "endTime": "21:15",
+  "totalDuration": "13시간 30분",
+  "totalDistance": "푸니쿨라 + 도보 약 5km",
+  "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Hôtel de Verdun (후보)",
+    "lat": 45.74965,
+    "lng": 4.82968,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "fourvi-re",
+      "id": "funicular",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Fourvière",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Fourvière",
+      "start": "09:10",
+      "end": "09:40",
+      "name": "Metro D→Vieux Lyon→푸니쿨라 F2",
+      "category": "transport",
+      "lat": 45.76075,
+      "lng": 4.82754,
+      "summary": "TCL 24시간권 또는 컨택트리스 — 오르막 대신 푸니쿨라",
       "menu": null,
-      "reservation": "푸니쿨라·월요일 운영",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "fourviere",
+      "order": 2,
+      "start": "09:40",
+      "end": "11:30",
+      "name": "Basilique de Fourvière·로마극장",
+      "category": "culture",
+      "lat": 45.76227,
+      "lng": 4.82259,
+      "summary": "성당 내부 20–30분, 전망·도시지형에 더 많은 시간. 고고학박물관 내부 생략",
+      "menu": null,
+      "reservation": null,
       "optional": false
     },
     {
       "id": "rosaire",
-      "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Rosaire 하산",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Rosaire 하산",
-      "menu": null,
-      "reservation": "푸니쿨라·월요일 운영",
-      "optional": false
-    },
-    {
-      "id": "saint-jean",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Saint-Jean",
+      "start": "11:35",
+      "end": "12:15",
+      "name": "Jardin du Rosaire 하산",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Saint-Jean",
+      "lat": 45.7617,
+      "lng": 4.8245,
+      "summary": "계단·경사 주의 — 비가 오면 푸니쿨라로 회귀",
       "menu": null,
-      "reservation": "푸니쿨라·월요일 운영",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "traboules",
+      "id": "vieux-lyon",
       "order": 4,
-      "start": null,
-      "end": null,
-      "name": "traboules",
+      "start": "12:20",
+      "end": "15:15",
+      "name": "Vieux Lyon 점심·Saint-Jean·traboules",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "traboules",
+      "lat": 45.76075,
+      "lng": 4.82754,
+      "summary": "골목 외곽 점심 후 공개 통로만 — 주민공간에서 조용히",
+      "menu": "salade lyonnaise 또는 샌드위치",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "saone",
+      "order": 5,
+      "start": "15:15",
+      "end": "17:15",
+      "name": "Saône 강변·Presqu'île 카페",
+      "category": "sight",
+      "lat": 45.7605,
+      "lng": 4.8283,
+      "summary": "Passerelle에서 구시가지 파사드·Fourvière 조망, 쇼핑 30분 이내",
       "menu": null,
-      "reservation": "푸니쿨라·월요일 운영",
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "lyon-return",
+      "order": 6,
+      "start": "17:30",
+      "end": "21:15",
+      "name": "숙소 휴식·Daniel et Denise 저녁",
+      "category": "hotel",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "summary": "저녁 전 1시간 휴식 — pâté en croûte·quenelle 공유, 귀가는 택시/메트로",
+      "menu": null,
+      "reservation": "저녁 예약 잠금",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "funicular",
+      "to": "fourviere",
+      "mode": "tram",
+      "duration": "5분",
+      "distance": "0.6km",
+      "line": "Funicular F2",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "fourviere",
+      "to": "rosaire",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "rosaire",
+      "to": "vieux-lyon",
+      "mode": "walk",
+      "duration": "15분 (하산)",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vieux-lyon",
+      "to": "saone",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "saone",
+      "to": "lyon-return",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "1.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "푸니쿨라·월요일 운영"
+    "Metro D + Funicular F2 (TCL 24시간권)",
+    "도보"
   ],
   "food": [
-    "Vieux Lyon 점심"
+    "Vieux Lyon 골목 점심 — 가볍게",
+    "Daniel et Denise 특별 저녁"
   ],
   "highlights": [
-    "Fourvière, Rosaire 하산, Saint-Jean, traboules",
-    "선택·축소: 로마극장 선택"
+    "월요일 휴관 변수 — 야외축 중심",
+    "오르막은 푸니쿨라, 하산은 Rosaire",
+    "저녁 전 1시간 휴식"
   ],
-  "backup": "야외축+카페",
-  "map": null,
+  "backup": "비·피로 시 야외축+카페 전환, 로마극장 내부 생략",
+  "map": {
+    "zoom": 15,
+    "center": [
+      45.757,
+      4.827
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Daniel et Denise 예약",
+    "Fourvière·푸니쿨라 운영 재확인",
+    "Lyon 숙소 후보 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-24",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-24",
+    "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-24",
+    "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml"
   ]
 }
