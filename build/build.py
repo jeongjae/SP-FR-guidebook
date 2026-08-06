@@ -68,6 +68,11 @@ MAP_DATA_DIR = SOURCE / "ASSETS" / "maps"
 sys.path.insert(0, str(ROOT / "scripts"))
 from validate_map_data import validate as validate_map_data  # noqa: E402
 MEDIA_CATALOG = media.load_catalog(ROOT)
+PHOTO_MANIFEST = media.load_photo_manifest(ROOT)
+# Barcelona is migrated to the responsive photo manifest. Keep the legacy
+# catalog only for Girona/Nice until their later batches are approved.
+MEDIA_CATALOG["assets"] = [asset for asset in MEDIA_CATALOG.get("assets", [])
+                           if asset.get("regionSlug") != "barcelona"]
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
 SITE_SHORT = "2026 유럽 여행 가이드북"
@@ -482,7 +487,10 @@ VISUALS = {
 
 def hero_figure(slug, rel=".."):
     """지역소개 첫머리의 대표 사진 (CC 저작자·라이선스 표시)."""
-    sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+    if slug == "04":
+        return media.photo_figure(media.photo_region_hero(PHOTO_MANIFEST), rel,
+                                  variant="hero", priority=True)
+    sample_region = {"05": "girona", "06": "nice"}.get(slug)
     if sample_region:
         return media.figure(media.region_hero(MEDIA_CATALOG, sample_region), rel,
                             variant="hero", priority=True)
@@ -639,6 +647,24 @@ def build_credits():
     SEARCH_INDEX.append({"t": "사진 저작자 표시", "c": "라이선스", "u": "credits.html"})
     print(f"  저작자 표시: 기존 {len(HERO_PHOTOS)}장 · 카탈로그 "
           f"{len(media.assets(MEDIA_CATALOG))}장 → credits.html")
+
+
+def build_photo_credits():
+    """Responsive Pilot manifest의 파일별 출처·사용 페이지."""
+    out_dir = SITE / "about"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    rows = media.photo_attribution_rows(PHOTO_MANIFEST, "..")
+    body = f"""<h1>Barcelona Pilot 사진 크레딧</h1>
+<p class="meta">승인 원본 {len(media.photos(PHOTO_MANIFEST))}장의 촬영자·원본 설명 페이지·라이선스·가공·사용 위치입니다.</p>
+{net_note("라이선스 전문과 Commons 원본 설명 페이지만 연결이 필요합니다.")}
+<div class="credit-list photo-credit-list">{rows}</div>
+<p class="offline-note">정본 — <code>data/images/image-manifest.json</code>. 원본 사진은 배포하지 않습니다.</p>"""
+    (out_dir / "photo-credits.html").write_text(
+        page("Barcelona Pilot 사진 크레딧", body, rel="..",
+             back=crumbs_for(("사진 크레딧", None))), encoding="utf-8")
+    SEARCH_INDEX.append({"t": "Barcelona Pilot 사진 크레딧", "c": "라이선스",
+                         "u": "about/photo-credits.html"})
+    print(f"  Pilot 사진 크레딧: {len(media.photos(PHOTO_MANIFEST))}장 → about/photo-credits.html")
 
 
 def visual_figure(key, caption, rel="../assets"):
@@ -939,8 +965,13 @@ def places_block(chapter, map_links, rel=".."):
     for name, _wiki, _lang, desc in places:
         gmaps = map_links.get(name) or (
             "https://www.google.com/maps/search/?api=1&query=" + name.replace(" ", "+"))
-        asset = media.by_place(MEDIA_CATALOG, CARD_PLACE_SLUGS.get(name, ""))
-        photo = media.figure(asset, rel, variant="card", show_caption=False) if asset else ""
+        place_id = CARD_PLACE_SLUGS.get(name, "")
+        pilot_asset = media.photo_by_place(PHOTO_MANIFEST, place_id)
+        legacy_asset = media.by_place(MEDIA_CATALOG, place_id)
+        photo = (media.photo_figure(pilot_asset, rel, variant="card", show_caption=False)
+                 if pilot_asset else
+                 media.figure(legacy_asset, rel, variant="card", show_caption=False)
+                 if legacy_asset else "")
         cards.append(f"""<div class="pl-card">
 {photo}
   <div class="pl-body">
@@ -1892,7 +1923,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 </main>
 <footer>
   <p>{SITE_TITLE} · {TRIP_PERIOD}</p>
-  <p><a href="{rel}/credits.html">사진 저작자 표시 · 라이선스</a> ·
+  <p><a href="{rel}/about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
      <a href="{rel}/maps/offline.html">오프라인 지도 준비</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
@@ -2189,9 +2220,14 @@ def build_split_chapter(c, body_md, map_links):
         sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(c["slug"])
         sample_media = ""
         if sample_region and fname == "food.html":
-            sample_media = media.gallery(
-                media.region_extras(MEDIA_CATALOG, sample_region, ("food", "market")),
-                rel, "지역 음식과 시장 대표 이미지")
+            if sample_region == "barcelona":
+                sample_media = media.photo_gallery(
+                    media.photos_for_usage(PHOTO_MANIFEST, "chapters/barcelona/food.html"),
+                    rel, "지역 음식과 시장 대표 이미지", limit=3)
+            else:
+                sample_media = media.gallery(
+                    media.region_extras(MEDIA_CATALOG, sample_region, ("food", "market")),
+                    rel, "지역 음식과 시장 대표 이미지")
         elif sample_region and fname == "places.html":
             unlinked = [a for a in media.region_extras(
                 MEDIA_CATALOG, sample_region, ("place",)) if not a.get("placeSlug")]
@@ -3218,10 +3254,22 @@ def build_daily():
             map_stack = card_block
             daily_map_head = daily_map_scripts = ""
 
+        # Barcelona Pilot: manifest가 날짜별 hero와 핵심 방문지 사진을 정한다.
+        # 한 페이지에서 같은 원본을 반복하지 않고 첫 hero만 eager로 로드한다.
+        daily_photos = media.photos_for_usage(PHOTO_MANIFEST, f"daily/day-{n:02d}.html")
+        hero_asset = next((item for item in daily_photos if item.get("role") == "hero"),
+                          daily_photos[0] if daily_photos else None)
+        other_photos = [item for item in daily_photos if item is not hero_asset]
+        photo_block = ""
+        if hero_asset:
+            photo_block = media.photo_figure(hero_asset, "..", variant="hero", priority=True)
+            photo_block += media.photo_gallery(other_photos, "..", "오늘의 주요 장소", limit=3)
+
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
         body = f"""<h1>{title}</h1>
+{photo_block}
 {flag_html}
 <section class="day-command" aria-label="오늘 실행 요약">
 <dl class="day-quick">{quick_summary}</dl>
@@ -3749,6 +3797,12 @@ mapInfoButton.addEventListener('click',()=>{
 
 # ---------------------------------------------------------------- tracker
 
+PRIVATE_PUBLICATION_TOKENS = (
+    "Plaça de l’Església, 6",
+    "Pla%C3%A7a+de+l%27Esgl%C3%A9sia%2C+6",
+)
+
+
 def format_cell(v):
     if v is None:
         return ""
@@ -3758,7 +3812,10 @@ def format_cell(v):
         return v.strftime("%Y-%m-%d %H:%M")
     if isinstance(v, float) and v.is_integer():
         return str(int(v))
-    return str(v)
+    text = str(v)
+    if any(token in text for token in PRIVATE_PUBLICATION_TOKENS):
+        return "비공개 — 예약자료에서 확인"
+    return text
 
 
 def sheet_to_table(ws):
@@ -4848,8 +4905,14 @@ def check_phase7_visual_guards():
         chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
         hub = SITE / chapter_url(chapter)
         page_text = hub.read_text(encoding="utf-8")
-        sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
-        if sample_region:
+        sample_region = {"05": "girona", "06": "nice"}.get(slug)
+        if slug == "04":
+            asset = media.photo_region_hero(PHOTO_MANIFEST)
+            default_variant = media._photo_variants(asset, "hero")[-1]
+            expected = (default_variant["sitePath"], f'alt="{html.escape(asset["altKo"])}"',
+                        html.escape(asset["creator"]), asset["license"],
+                        "사진 정보", "data-photo-id")
+        elif sample_region:
             asset = media.region_hero(MEDIA_CATALOG, sample_region)
             expected = (asset["localPath"], f'alt="{html.escape(asset["altKo"])}"',
                         html.escape(asset["author"]), asset["licenseName"],
@@ -5226,6 +5289,7 @@ def main():
     SITE.mkdir()
     (SITE / "assets").mkdir()
     media.copy_assets(ROOT, SITE, MEDIA_CATALOG)
+    media.copy_photo_assets(ROOT, SITE, PHOTO_MANIFEST)
     # 아이콘은 CSS 마스크로 붙인다. 스프라이트를 페이지마다 인라인하면
     # 314쪽이 각각 무거워진다 — 마스크는 CSS 한 번이고 페이지 무게는 0 이다.
     (SITE / "assets" / "style.css").write_text(
@@ -5267,6 +5331,7 @@ def main():
     build_regions()
     print("라이선스 빌드:")
     build_credits()
+    build_photo_credits()
     print("주제 축 빌드:")
     build_topics()
     print("트래커 빌드:")
