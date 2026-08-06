@@ -93,7 +93,12 @@ def main():
         for token in ("Plaça de l’Església, 6", "Pla%C3%A7a+de+l%27Esgl%C3%A9sia%2C+6"):
             if token in html_text:
                 errors.append("private accommodation exact address exposed in generated HTML")
-        for day in range(1, 5):
+        hero_days = sorted({
+            int(match.group(1))
+            for item in images if item.get("role") == "hero"
+            for usage in item.get("usage", [])
+            if (match := re.fullmatch(r"daily/day-(\d+)\.html", usage))})
+        for day in hero_days:
             page = SITE / f"daily/day-{day:02d}.html"
             text = page.read_text(encoding="utf-8")
             if 'class="guide-photo guide-photo--hero"' not in text:

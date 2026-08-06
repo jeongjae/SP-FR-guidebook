@@ -150,8 +150,9 @@ def photos_for_usage(manifest: dict, usage: str) -> list[dict]:
     return [item for item in photos(manifest) if usage in item.get("usage", [])]
 
 
-def photo_region_hero(manifest: dict) -> dict | None:
-    return next((item for item in photos(manifest) if item.get("regionHero")), None)
+def photo_region_hero(manifest: dict, region: str | None = None) -> dict | None:
+    return next((item for item in photos(manifest) if item.get("regionHero")
+                 and (region is None or item.get("region") == region)), None)
 
 
 def _photo_variants(asset: dict, variant: str) -> list[dict]:
