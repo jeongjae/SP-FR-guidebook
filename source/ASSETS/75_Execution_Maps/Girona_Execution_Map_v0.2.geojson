@@ -4,6 +4,26 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Bàscara 숙소 근사 권역",
+        "sequence": 1,
+        "category": "확정 숙소",
+        "status": "Airbnb · 바스카라의 B&B · 예약 확정 · 2026-09-01~09-04",
+        "google_maps": "",
+        "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
+        "coordinates_verified": "Public approximate area only",
+        "phase": "Confirmed booking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.914,
+          42.164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Girona Cathedral",
         "sequence": 2,
         "category": "핵심 방문지",

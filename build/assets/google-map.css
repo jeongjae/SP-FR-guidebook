@@ -1,0 +1,91 @@
+.gm-component {
+  margin: var(--s5) 0;
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  background: var(--surface);
+  overflow: clip;
+}
+.gm-toolbar, .gm-actions, .gm-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+.gm-toolbar { padding: var(--s3) var(--s4); border-bottom: 1px solid var(--border); }
+.gm-filter, .gm-map-disclosure > summary, .gm-action {
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--r-chip);
+  padding: 8px 14px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--t-subhead);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.gm-filter[aria-pressed="true"], .gm-action-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.gm-actions { padding: var(--s3) var(--s4); }
+.gm-map-disclosure { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.gm-map-disclosure > summary {
+  margin: var(--s3) var(--s4);
+  width: fit-content;
+  list-style-position: inside;
+}
+.gm-status { margin: 0; padding: 0 var(--s4) var(--s3); color: var(--text-2); font-size: var(--t-foot); }
+.gm-status[data-state="error"] { color: var(--sig-caution-ink); font-weight: 700; }
+.gm-canvas { min-height: 380px; background: var(--surface-sunk); }
+.gm-component.gm-map-error .gm-canvas { display: none; }
+.gm-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+.gm-place-list { list-style: none; margin: 0; padding: 0; }
+.gm-place-card {
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--border);
+  border-left: 4px solid transparent;
+}
+.gm-place-card:last-child { border-bottom: 0; }
+.gm-place-card.is-active { border-left-color: var(--accent); background: var(--accent-soft); }
+.gm-card-main {
+  width: 100%; min-height: var(--tap); border: 0; padding: 0; background: transparent;
+  color: inherit; text-align: left; font: inherit; cursor: pointer;
+}
+.gm-card-main strong, .gm-card-main span, .gm-card-main small { display: block; }
+.gm-card-main span { color: var(--text-2); font-size: var(--t-subhead); }
+.gm-card-main small { margin-top: var(--s1); color: var(--muted); }
+.gm-card-actions { margin-top: var(--s2); }
+.gm-card-actions a { min-height: var(--tap); display: inline-flex; align-items: center; font-weight: 700; }
+.gm-private-note { color: var(--sig-caution-ink); font-size: var(--t-foot); }
+.gm-segments { margin: var(--s3) var(--s4) var(--s4); }
+.gm-segments summary { min-height: var(--tap); cursor: pointer; font-weight: 700; }
+.gm-segments li { margin: var(--s2) 0; }
+.gm-info-window { display: grid; gap: 4px; max-width: 240px; color: #172126; font: 14px/1.45 system-ui, sans-serif; }
+.gm-info-window a { font-weight: 700; }
+.gm-marker {
+  display: grid; place-items: center; width: 34px; height: 34px;
+  border: 2px solid #fff; border-radius: 50%; background: #000091; color: #fff;
+  box-shadow: 0 2px 8px #0006; font: 700 13px/1 system-ui, sans-serif;
+}
+.gm-marker-parking { background: #1f5e45; }
+.gm-marker-accommodation { background: #7d5400; }
+@media (max-width: 600px) {
+  .gm-canvas { min-height: 320px; }
+  .gm-toolbar, .gm-actions, .gm-place-card { padding-left: var(--s3); padding-right: var(--s3); }
+  .gm-filter { flex: 1 1 auto; }
+}
+@media (min-width: 900px) {
+  .gm-component[data-scope="region"].gm-map-open .gm-grid { grid-template-columns: minmax(0, 1fr) minmax(300px, 38%); }
+  .gm-component[data-scope="region"].gm-map-open .gm-map-disclosure { grid-column: 1; grid-row: 1; border-bottom: 0; }
+  .gm-component[data-scope="region"].gm-map-open .gm-place-list { grid-column: 2; grid-row: 1; max-height: 620px; overflow: auto; border-left: 1px solid var(--border); }
+  .gm-component[data-scope="region"].gm-map-open .gm-canvas { min-height: 560px; }
+  .gm-component[data-scope="region"].gm-map-error .gm-grid { display: block; }
+  .gm-component[data-scope="region"].gm-map-error .gm-place-list {
+    max-height: none; border-left: 0;
+  }
+}

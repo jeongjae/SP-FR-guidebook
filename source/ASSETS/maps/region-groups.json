@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0",
+  "regions": [
+    {
+      "id": "aix",
+      "label": "Aix-en-Provence · Marseille",
+      "center": [
+        43.48,
+        5.43
+      ],
+      "zoom": 9,
+      "placeIds": [
+        "aix-stay-candidate",
+        "rotonde-aix",
+        "cours-mirabeau",
+        "musee-granet",
+        "cassis",
+        "atelier-des-lauves",
+        "lourmarin"
+      ]
+    },
+    {
+      "id": "avignon",
+      "label": "Avignon · Gard · Alpilles",
+      "center": [
+        43.91,
+        4.68
+      ],
+      "zoom": 9,
+      "placeIds": [
+        "avignon-stay-candidate",
+        "les-halles-avignon",
+        "palais-des-papes",
+        "pont-saint-benezet",
+        "uzes",
+        "pont-du-gard",
+        "les-baux-de-provence",
+        "saint-remy-de-provence"
+      ]
+    },
+    {
+      "id": "barcelona",
+      "label": "Barcelona",
+      "center": [
+        41.385,
+        2.12
+      ],
+      "zoom": 11,
+      "placeIds": [
+        "barcelona-stay-candidate",
+        "sagrada-familia",
+        "sant-pau-recinte-modernista",
+        "barri-gotic",
+        "biblioteca-de-catalunya",
+        "macba",
+        "barcelona-sants",
+        "sitges"
+      ]
+    },
+    {
+      "id": "girona",
+      "label": "Girona · Empordà · Costa Brava",
+      "center": [
+        42.05,
+        3.02
+      ],
+      "zoom": 9,
+      "placeIds": [
+        "girona-stay-private",
+        "girona-cathedral",
+        "onyar",
+        "collioure",
+        "cadaques",
+        "tossa-de-mar",
+        "sant-feliu-de-guixols",
+        "peralada",
+        "pals",
+        "peratallada",
+        "calella-de-palafrugell",
+        "tossa-parking-pelegri",
+        "sant-feliu-la-corxera-parking",
+        "pals-abeurador-parking",
+        "peratallada-baix-parking"
+      ]
+    },
+    {
+      "id": "luberon",
+      "label": "Luberon",
+      "center": [
+        43.88,
+        5.17
+      ],
+      "zoom": 10,
+      "placeIds": [
+        "luberon-stay-candidate",
+        "coustellet",
+        "roussillon-sentier-des-ocres",
+        "goult",
+        "gordes",
+        "village-des-bories",
+        "menerbes",
+        "lisle-sur-la-sorgue"
+      ]
+    },
+    {
+      "id": "lyon",
+      "label": "Lyon · Annecy",
+      "center": [
+        45.81,
+        5.3
+      ],
+      "zoom": 8,
+      "placeIds": [
+        "lyon-stay-candidate",
+        "place-bellecour",
+        "fourviere",
+        "vieux-lyon",
+        "croix-rousse",
+        "halles-de-lyon-paul-bocuse",
+        "parc-de-la-tete-d-or",
+        "annecy"
+      ]
+    },
+    {
+      "id": "nice",
+      "label": "Nice · Côte d’Azur",
+      "center": [
+        43.67,
+        7.27
+      ],
+      "zoom": 9,
+      "placeIds": [
+        "nice-stay-candidate",
+        "cours-saleya",
+        "colline-du-chateau",
+        "nice-ville",
+        "cannes",
+        "monaco",
+        "marche-de-la-liberation",
+        "nice-airport-terminal-2"
+      ]
+    },
+    {
+      "id": "paris",
+      "label": "Paris · Île-de-France · Giverny",
+      "center": [
+        48.88,
+        2.2
+      ],
+      "zoom": 9,
+      "placeIds": [
+        "paris-stay-candidate",
+        "notre-dame-de-paris",
+        "musee-du-louvre",
+        "montmartre-south-pigalle",
+        "bnf-richelieu",
+        "grand-palais",
+        "musee-d-orsay",
+        "bourse-de-commerce-pinault-collection",
+        "versailles",
+        "giverny"
+      ]
+    }
+  ]
+}
