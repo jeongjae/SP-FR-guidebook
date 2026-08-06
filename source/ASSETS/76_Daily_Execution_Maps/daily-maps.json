@@ -9,18 +9,18 @@
       "zoom": 14,
       "places": [
         {
-          "id": "barcelona-stay-candidate",
+          "id": "barcelona-stay",
           "type": "accommodation",
-          "name": "Praktik Garden",
-          "lat": 41.39382,
-          "lng": 2.17132,
+          "name": "Occidental Barcelona 1929",
+          "lat": 41.3752738,
+          "lng": 2.1476619,
           "order": 1,
           "plannedTime": "17:30–18:30",
-          "description": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden",
-          "optional": true,
+          "description": "확정 숙소 · 예약완료. Carrer de la Creu Coberta, 20-22, 08014 Barcelona · 전화 +34 936 26 88 44.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona",
+          "optional": false,
           "private": false,
-          "approximate": true
+          "approximate": false
         }
       ],
       "routes": []
@@ -33,18 +33,18 @@
       "zoom": 14,
       "places": [
         {
-          "id": "barcelona-stay-candidate",
+          "id": "barcelona-stay",
           "type": "accommodation",
-          "name": "Praktik Garden",
-          "lat": 41.39382,
-          "lng": 2.17132,
+          "name": "Occidental Barcelona 1929",
+          "lat": 41.3752738,
+          "lng": 2.1476619,
           "order": 0,
           "plannedTime": "숙소 출발 전 · 16:10 이후",
-          "description": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden",
-          "optional": true,
+          "description": "확정 숙소 · 예약완료. Carrer de la Creu Coberta, 20-22, 08014 Barcelona · 전화 +34 936 26 88 44.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona",
+          "optional": false,
           "private": false,
-          "approximate": true
+          "approximate": false
         },
         {
           "id": "sagrada-familia",
@@ -76,7 +76,7 @@
         }
       ],
       "routes": [
-        {"from": "barcelona-stay-candidate", "to": "sagrada-familia", "mode": "walking"},
+        {"from": "barcelona-stay", "to": "sagrada-familia", "mode": "walking"},
         {"from": "sagrada-familia", "to": "sant-pau-recinte-modernista", "mode": "walking"}
       ]
     },
@@ -88,18 +88,18 @@
       "zoom": 15,
       "places": [
         {
-          "id": "barcelona-stay-candidate",
+          "id": "barcelona-stay",
           "type": "accommodation",
-          "name": "Praktik Garden",
-          "lat": 41.39382,
-          "lng": 2.17132,
+          "name": "Occidental Barcelona 1929",
+          "lat": 41.3752738,
+          "lng": 2.1476619,
           "order": 0,
           "plannedTime": "08:10–09:30 · 18:30–19:30",
-          "description": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden",
-          "optional": true,
+          "description": "확정 숙소 · 예약완료. Carrer de la Creu Coberta, 20-22, 08014 Barcelona · 전화 +34 936 26 88 44.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona",
+          "optional": false,
           "private": false,
-          "approximate": true
+          "approximate": false
         },
         {
           "id": "barri-gotic",
@@ -145,7 +145,7 @@
         }
       ],
       "routes": [
-        {"from": "barcelona-stay-candidate", "to": "barri-gotic", "mode": "walking"},
+        {"from": "barcelona-stay", "to": "barri-gotic", "mode": "walking"},
         {"from": "barri-gotic", "to": "biblioteca-de-catalunya", "mode": "walking"},
         {"from": "biblioteca-de-catalunya", "to": "macba", "mode": "walking"}
       ]
