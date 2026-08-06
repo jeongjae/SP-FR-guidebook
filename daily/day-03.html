@@ -11,7 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
-<link rel="stylesheet" href="../maps/vendor/leaflet/leaflet.css">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="es">
@@ -83,7 +85,7 @@
 <tr>
 <td>07:20–08:10</td>
 <td>Jason 러닝 / Julia 선택 수영</td>
-<td>러닝: Passeig de Sant Joan–Arc de Triomf–Ciutadella 왕복 5–7km. 수영: CEM Joan Miró 또는 CN Atlètic-Barceloneta 선택</td>
+<td>러닝: 숙소 인근 <strong>Parc de Joan Miró(도보 약 300m)–Parc de l’Espanya Industrial(Sants 옆)</strong> 연결 왕복. 수영: CEM Joan Miró(Parc de Joan Miró 쪽) 또는 CN Atlètic-Barceloneta 선택</td>
 </tr>
 <tr>
 <td>08:10–09:30</td>
@@ -146,11 +148,22 @@
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>월요일 휴관·도보 누적</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Finestres·운동</dd></div><div class="ds-item"><dt>대체안</dt><dd>Biblioteca/MACBA 중심</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>시장 또는 샌드위치</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>MACBA·식당</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
 <section class="daily-map-section" aria-labelledby="daily-map-title-3">
-<h2 id="daily-map-title-3" class="ic ic-map">인터랙티브 실행지도</h2>
+<h2 id="daily-map-title-3" class="ic ic-map">Google 실행지도</h2>
 <p class="note">책과 도시의 기억 — 고딕지구·카탈루냐 도서관·MACBA</p>
-<div class="daily-execution-map" data-daily-map-date="2026-08-31">
-  <p class="offline-note">인터랙티브 지도를 준비하고 있습니다.</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
+<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=41.3752738%2C2.1476619&amp;destination=41.38316%2C2.16672&amp;travelmode=walking&amp;waypoints=41.3838%2C2.1761%7C41.38144%2C2.17016">오늘 동선 열기</a></div>
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="barcelona-stay" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="barcelona-stay" aria-pressed="false"><strong>0. Occidental Barcelona 1929</strong><span>숙소 · 08:10–09:30 · 18:30–19:30</span><small>Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인).</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3752738%2C2.1476619&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="barri-gotic" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="barri-gotic" aria-pressed="false"><strong>1. Gòtic</strong><span>방문지 · 11:00–12:00</span><small>Plaça del Rei에서 대성당 외관과 Carrer del Bisbe로 이어지는 핵심 산책 구간.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=G%C3%B2tic">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3838%2C2.1761&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="biblioteca-de-catalunya" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="biblioteca-de-catalunya" aria-pressed="false"><strong>2. Biblioteca de Catalunya</strong><span>방문지 · 12:10–13:05</span><small>옛 Hospital de la Santa Creu의 건축과 열람공간을 확인하는 방문.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Biblioteca+de+Catalunya">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.38144%2C2.17016&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="macba" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="macba" aria-pressed="false"><strong>3. MACBA</strong><span>방문지 · 15:15–17:15</span><small>월요일에 방문 가능한 현대미술관. 관심 전시 1–2개만 선택하는 일정.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=MACBA">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.38316%2C2.16672&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
 </div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3838%2C2.1761&amp;travelmode=walking&amp;origin=41.3752738%2C2.1476619">Occidental Barcelona 1929 → Gòtic · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.38144%2C2.17016&amp;travelmode=walking&amp;origin=41.3838%2C2.1761">Gòtic → Biblioteca de Catalunya · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.38316%2C2.16672&amp;travelmode=walking&amp;origin=41.38144%2C2.17016">Biblioteca de Catalunya → MACBA · 도보</a></li></ol></details>
+<script type="application/json">{"center":[41.38555,2.17108],"zoom":15,"places":[{"id":"barcelona-stay","name":"Occidental Barcelona 1929","city":"Barcelona","type":"accommodation","lat":41.3752738,"lng":2.1476619,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona","address":"Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]},{"id":"barri-gotic","name":"Gòtic","city":"Barcelona","type":"attraction","lat":41.3838,"lng":2.1761,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=G%C3%B2tic","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"],"editorialSlug":"barri-gotic"},{"id":"biblioteca-de-catalunya","name":"Biblioteca de Catalunya","city":"Barcelona","type":"attraction","lat":41.38144,"lng":2.17016,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Biblioteca+de+Catalunya","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]},{"id":"macba","name":"MACBA","city":"Barcelona","type":"attraction","lat":41.38316,"lng":2.16672,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=MACBA","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-08-31","city":"Barcelona","title":"책과 도시의 기억 — 고딕지구·카탈루냐 도서관·MACBA","center":[41.38555,2.17108],"zoom":15,"defaultMode":"walking","stops":[{"placeId":"barcelona-stay","order":0,"plannedTime":"08:10–09:30 · 18:30–19:30","note":"Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인)."},{"placeId":"barri-gotic","order":1,"plannedTime":"11:00–12:00","note":"Plaça del Rei에서 대성당 외관과 Carrer del Bisbe로 이어지는 핵심 산책 구간."},{"placeId":"biblioteca-de-catalunya","order":2,"plannedTime":"12:10–13:05","note":"옛 Hospital de la Santa Creu의 건축과 열람공간을 확인하는 방문."},{"placeId":"macba","order":3,"plannedTime":"15:15–17:15","note":"월요일에 방문 가능한 현대미술관. 관심 전시 1–2개만 선택하는 일정."}],"segments":[{"from":"barcelona-stay","to":"barri-gotic","mode":"walking"},{"from":"barri-gotic","to":"biblioteca-de-catalunya","mode":"walking"},{"from":"biblioteca-de-catalunya","to":"macba","mode":"walking"}]}}</script>
+</section>
 </section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
@@ -181,8 +194,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../maps/vendor/leaflet/leaflet.js" defer></script>
-<script src="../assets/daily-map-data.js" defer></script>
-<script src="../assets/daily-map.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

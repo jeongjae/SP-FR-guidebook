@@ -11,7 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
-<link rel="stylesheet" href="../maps/vendor/leaflet/leaflet.css">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="es">
@@ -77,7 +79,7 @@
 <tr>
 <td>16:30–17:30</td>
 <td>공항→숙소</td>
-<td>짐 2개 이상이면 택시가 가장 현실적이다. Aerobús는 편도 €7.75, 24시간 운행이다.</td>
+<td><strong>Aerobús(편도 €7.75, 24시간)의 첫 시내 정차가 Plaça Espanya</strong>라 하차 후 숙소까지 도보 몇 분이다. 짐 2개 이상이고 피로하면 택시.</td>
 </tr>
 <tr>
 <td>17:30–18:30</td>
@@ -87,12 +89,12 @@
 <tr>
 <td>18:30–19:20</td>
 <td>생활권 산책·첫 장보기</td>
-<td>Mercat de la Concepció가 닫았을 가능성이 있으므로 슈퍼마켓을 이용한다. 물, 샐러드, 과일, 요거트, 빵, 햄, 치즈 구입</td>
+<td>숙소 앞 Creu Coberta 거리와 Plaça d’Espanya 방향으로 짧게 걷는다. Mercat d’Hostafrancs(도보 5분 안팎)는 토요일 저녁이라 닫았을 가능성이 높으므로 슈퍼마켓을 이용한다. 물, 샐러드, 과일, 요거트, 빵, 햄, 치즈 구입</td>
 </tr>
 <tr>
 <td>19:30–20:30</td>
 <td>가벼운 저녁</td>
-<td>피로하면 숙소 샌드위치. 외식은 <strong>Bodega Joan</strong>에서 타파스 중심으로만 먹는다.</td>
+<td>피로하면 숙소 샌드위치. 외식은 숙소 인근에서 가볍게 — <strong>Bodega Joan</strong>(Eixample)은 도착일에는 멀므로 Day 2–3 저녁으로 미룬다.</td>
 </tr>
 <tr>
 <td>20:30 이후</td>
@@ -103,17 +105,28 @@
 </table></div>
 <h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="2" aria-label="피로도 2 / 5"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><b>2/5</b></span></p>
 
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="도착-숙소-정착-에이샴플라-생활권-적응">도착, 숙소 정착, 에이샴플라 생활권 적응</h3>
+<h2 class="ic ic-note">이 날의 메모</h2><h3 id="도착-숙소-정착-생활권-적응">도착, 숙소 정착, 생활권 적응</h3>
 <p>관광보다 체크인과 생활권 파악이 목적이다. 항공 지연이 90분 이상이면 외식을 취소한다.</p>
 <hr>
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>BCN 도착지연·체크인</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Eixample 산책·외부저녁</dd></div><div class="ds-item"><dt>대체안</dt><dd>숙소 체크인 후 장보기만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>숙소 인근 간단식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>항공·숙소·공항이동</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
 <section class="daily-map-section" aria-labelledby="daily-map-title-1">
-<h2 id="daily-map-title-1" class="ic ic-map">인터랙티브 실행지도</h2>
+<h2 id="daily-map-title-1" class="ic ic-map">Google 실행지도</h2>
 <p class="note">도착, 숙소 정착, 에이샴플라 생활권 적응</p>
-<div class="daily-execution-map" data-daily-map-date="2026-08-29">
-  <p class="offline-note">인터랙티브 지도를 준비하고 있습니다.</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button></nav>
+<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3752738%2C2.1476619&amp;travelmode=walking">오늘 동선 열기</a></div>
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="barcelona-stay" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="barcelona-stay" aria-pressed="false"><strong>1. Occidental Barcelona 1929</strong><span>숙소 · 17:30–18:30</span><small>Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인).</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3752738%2C2.1476619&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
 </div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol></ol></details>
+<script type="application/json">{"center":[41.3752738,2.1476619],"zoom":14,"places":[{"id":"barcelona-stay","name":"Occidental Barcelona 1929","city":"Barcelona","type":"accommodation","lat":41.3752738,"lng":2.1476619,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona","address":"Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-08-29","city":"Barcelona","title":"도착, 숙소 정착, 에이샴플라 생활권 적응","center":[41.3752738,2.1476619],"zoom":14,"defaultMode":"walking","stops":[{"placeId":"barcelona-stay","order":1,"plannedTime":"17:30–18:30","note":"Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인)."}],"segments":[]}}</script>
+</section>
 </section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
@@ -144,8 +157,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../maps/vendor/leaflet/leaflet.js" defer></script>
-<script src="../assets/daily-map-data.js" defer></script>
-<script src="../assets/daily-map.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

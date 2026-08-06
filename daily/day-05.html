@@ -11,7 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
-<link rel="stylesheet" href="../maps/vendor/leaflet/leaflet.css">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="es">
@@ -62,11 +64,22 @@
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>해안 쪽 우회·주차·지도 재확인</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Cadaqués 해안 산책·구시가지</dd></div><div class="ds-item"><dt>대체안</dt><dd>17:30 Bàscara 출발</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Collioure 09:00–12:15·Cadaqués 14:45–17:30</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>Portlligat·Dalí House 예약 미확인</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
 <section class="daily-map-section" aria-labelledby="daily-map-title-5">
-<h2 id="daily-map-title-5" class="ic ic-map">인터랙티브 실행지도</h2>
+<h2 id="daily-map-title-5" class="ic ic-map">Google 실행지도</h2>
 <p class="note">Collioure 오전 장날과 Cadaqués 해안 쪽 우회</p>
-<div class="daily-execution-map" data-daily-map-date="2026-09-02">
-  <p class="offline-note">인터랙티브 지도를 준비하고 있습니다.</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
+
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="girona-stay-private" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="girona-stay-private" aria-pressed="false"><strong>0. Bàscara 숙소 근사 권역</strong><span>숙소 · 07:45 출발·18:30–19:00 복귀</span><small>Airbnb 바스카라의 B&amp;B. 주소·주차·체크인 조건은 재확인.</small></button><div class="gm-card-actions"><span class="gm-private-note">비공개 위치 · 개인 보관본에서 확인</span><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="collioure" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="collioure" aria-pressed="false"><strong>1. Collioure</strong><span>방문지 · 09:00–12:15</span><small>수요시장 → 항구 → Notre-Dame-des-Anges → 왕궁 외관. 오전 10시 이전 도착 유지.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Collioure">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.52505%2C3.08322&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="cadaques" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="cadaques" aria-pressed="false"><strong>2. Cadaqués</strong><span>방문지 · 14:45–17:30</span><small>해안 산책로·구시가지·Santa Maria 교회·카페. Saba 주차장과 접근은 재확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Cadaqu%C3%A9s">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.2886%2C3.2584&amp;travelmode=driving">현 위치에서 길찾기</a></div></li></ol>
 </div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.52505%2C3.08322&amp;travelmode=driving">Bàscara 숙소 근사 권역 → Collioure · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.2886%2C3.2584&amp;travelmode=driving&amp;origin=42.52505%2C3.08322">Collioure → Cadaqués · 자동차</a><small>직선 귀로가 아닌 해안 쪽 우회</small></li><li><span>Cadaqués → Bàscara 숙소 근사 권역 · 자동차 · 개인 보관본에서 직접 설정</span></li></ol></details>
+<script type="application/json">{"center":[42.38,3.17],"zoom":9,"places":[{"id":"girona-stay-private","name":"Bàscara 숙소 근사 권역","city":"Girona · Empordà","type":"accommodation","lat":42.164,"lng":2.914,"googlePlaceId":"","googleMapsUrl":"","address":"","private":true,"approximate":true,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]},{"id":"collioure","name":"Collioure","city":"Girona · Empordà","type":"attraction","lat":42.52505,"lng":3.08322,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Collioure","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]},{"id":"cadaques","name":"Cadaqués","city":"Girona · Empordà","type":"attraction","lat":42.2886,"lng":3.2584,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Cadaqu%C3%A9s","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-02","city":"Bàscara · Collioure · Cadaqués","title":"Collioure 오전 장날과 Cadaqués 해안 쪽 우회","center":[42.38,3.17],"zoom":9,"defaultMode":"driving","stops":[{"placeId":"girona-stay-private","order":0,"plannedTime":"07:45 출발·18:30–19:00 복귀","note":"Airbnb 바스카라의 B\u0026B. 주소·주차·체크인 조건은 재확인."},{"placeId":"collioure","order":1,"plannedTime":"09:00–12:15","note":"수요시장 → 항구 → Notre-Dame-des-Anges → 왕궁 외관. 오전 10시 이전 도착 유지."},{"placeId":"cadaques","order":2,"plannedTime":"14:45–17:30","note":"해안 산책로·구시가지·Santa Maria 교회·카페. Saba 주차장과 접근은 재확인."}],"segments":[{"from":"girona-stay-private","to":"collioure","mode":"driving"},{"from":"collioure","to":"cadaques","mode":"driving","note":"직선 귀로가 아닌 해안 쪽 우회"},{"from":"cadaques","to":"girona-stay-private","mode":"driving","manual":true}]}}</script>
+</section>
 </section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
@@ -97,8 +110,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../maps/vendor/leaflet/leaflet.js" defer></script>
-<script src="../assets/daily-map-data.js" defer></script>
-<script src="../assets/daily-map.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
