@@ -4,32 +4,32 @@
   "date": "2026-09-09",
   "city": "Aix-en-Provence",
   "title": "NCE 렌터카와 Provence 진입",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
+  "totalDistance": "약 199km · 차량 경로",
   "fatigue": "5",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Adagio Aix Centre (후보)",
+    "lat": 43.528998,
+    "lng": 5.440842,
+    "status": "candidate"
   },
   "stops": [
     {
       "id": "nce-t2",
       "order": 1,
-      "start": null,
+      "start": "08:30",
       "end": null,
-      "name": "NCE T2 렌터카",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "NCE T2 렌터카",
+      "name": "NCE T2 렌터카 인수",
+      "category": "transport",
+      "lat": 43.65971,
+      "lng": 7.20461,
+      "summary": "인수 60–90분 완충 — Nice 숙소에서 08:30 출발",
       "menu": null,
-      "reservation": "렌터카·Aix 숙소",
+      "reservation": "렌터카 예약·보험 재확인",
       "optional": false
     },
     {
@@ -37,13 +37,13 @@
       "order": 2,
       "start": null,
       "end": null,
-      "name": "Saint-Paul",
+      "name": "Saint-Paul-de-Vence",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Saint-Paul",
+      "lat": 43.697972,
+      "lng": 7.1216304,
+      "summary": "Fondation Maeght는 정원·안뜰 중심 — 압박 시 정원만",
       "menu": null,
-      "reservation": "렌터카·Aix 숙소",
+      "reservation": "Maeght 운영·요금 재확인 (원고 pending)",
       "optional": false
     },
     {
@@ -51,52 +51,138 @@
       "order": 3,
       "start": null,
       "end": null,
-      "name": "Grasse",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Grasse",
-      "menu": null,
-      "reservation": "렌터카·Aix 숙소",
-      "optional": false
+      "name": "Grasse 점심·향수",
+      "category": "food",
+      "lat": 43.6579121,
+      "lng": 6.9228664,
+      "summary": "향수 가게 한 곳 30–40분 상한, 워크숍(90분+) 금지",
+      "menu": "Grasse 점심",
+      "reservation": null,
+      "optional": true
     },
     {
-      "id": "aix",
+      "id": "aix-checkin",
       "order": 4,
       "start": null,
       "end": null,
       "name": "Aix 체크인",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Aix 체크인",
+      "category": "hotel",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "summary": "지정주차 진입 — 보행구역 진입 금지, 차량고정·주차카드 확인",
       "menu": null,
-      "reservation": "렌터카·Aix 숙소",
+      "reservation": "Aix 숙소 후보 확정 필요",
+      "optional": false
+    },
+    {
+      "id": "rotonde",
+      "order": 5,
+      "start": null,
+      "end": null,
+      "name": "Rotonde·Mirabeau 방향 익히기",
+      "category": "sight",
+      "lat": 43.5267,
+      "lng": 5.44582,
+      "summary": "일몰 전 30–45분 — 도착 늦으면 삭제",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "aix-stay-return",
+      "order": 6,
+      "start": "19:30",
+      "end": null,
+      "name": "숙소권 저녁",
+      "category": "hotel",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "summary": "특별식 금지 — A8 운전을 마친 날 Aix 관광을 시작하지 않는다",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "nce-t2",
+      "to": "saint-paul",
+      "mode": "car",
+      "duration": "약 20분",
+      "distance": "14.2km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "saint-paul",
+      "to": "grasse",
+      "mode": "car",
+      "duration": "약 37분",
+      "distance": "22.1km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "grasse",
+      "to": "aix-checkin",
+      "mode": "car",
+      "duration": "약 1시간 50분",
+      "distance": "162.9km",
+      "line": "A8",
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "aix-checkin",
+      "to": "rotonde",
+      "mode": "walk",
+      "duration": "7분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "rotonde",
+      "to": "aix-stay-return",
+      "mode": "walk",
+      "duration": "7분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "렌터카·Aix 숙소"
+    "렌터카 (NCE T2 인수)",
+    "A8 고속도로"
   ],
   "food": [
-    "Grasse 점심"
+    "Grasse 점심",
+    "숙소권 저녁 또는 숙소식"
   ],
   "highlights": [
-    "NCE T2 렌터카, Saint-Paul, Grasse, Aix 체크인",
-    "선택·축소: 지연 시 Grasse 우선 삭제"
+    "P0 연결일 — 어느 경유지도 늘리지 않는다",
+    "줄이는 순서: Maeght 내부→마을→Grasse",
+    "피로도 5/5"
   ],
-  "backup": "Grasse 실내 후 Aix 조기도착",
-  "map": null,
+  "backup": "지연 시 Grasse 우선 삭제, Saint-Paul 체류 축소",
+  "map": {
+    "zoom": 8,
+    "center": [
+      43.61,
+      6.32
+    ],
+    "routeCache": "routes/day-12-driving-osrm.json"
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "렌터카 예약 확정(NCE T2)",
+    "Aix 숙소 후보(Adagio) 승인",
+    "Fondation Maeght 운영·요금 재확인",
+    "각 경유지 시각은 인수 완료 시각 기준 역산"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-12",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-12",
+    "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-12",
+    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Saint-Paul·Fondation Maeght·Grasse"
   ]
 }

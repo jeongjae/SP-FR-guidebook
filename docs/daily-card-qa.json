@@ -8,11 +8,6 @@
   ],
   "errors": [],
   "warnings": [
-    "Day 11: 4 coordinate fields need review",
-    "Day 12: 5 coordinate fields need review",
-    "Day 13: 5 coordinate fields need review",
-    "Day 14: 6 coordinate fields need review",
-    "Day 15: 4 coordinate fields need review",
     "Day 16: 4 coordinate fields need review",
     "Day 17: 3 coordinate fields need review",
     "Day 18: 3 coordinate fields need review",
@@ -176,42 +171,67 @@
     {
       "day": 11,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 12,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 35,
+        "marker-count": 5
+      }
     },
     {
       "day": 13,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 5
+      }
     },
     {
       "day": 14,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 6,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 7
+      }
     },
     {
       "day": 15,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 4
+      }
     },
     {
       "day": 16,
