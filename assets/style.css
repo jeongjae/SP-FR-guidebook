@@ -1242,6 +1242,50 @@ figure.ed-visual figcaption { text-align: center; }
 .media-gallery-grid .guidebook-image { margin: 0; }
 .media-gallery-grid .guidebook-image img { aspect-ratio: 4 / 3; height: auto; }
 
+/* Manifest-backed responsive guide photos (Barcelona Pilot). */
+.guide-photo {
+  margin: 18px 0 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+.guide-photo picture,
+.guide-photo img { display: block; width: 100%; }
+.guide-photo img { height: auto; object-fit: cover; background: var(--surface-sunk); }
+.guide-photo--hero img { aspect-ratio: 16 / 9; }
+.guide-photo figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 11px 14px 13px;
+  color: var(--text-2);
+  font-size: .86rem;
+  line-height: 1.5;
+}
+.guide-photo .media-credit { font-size: .76rem; color: var(--muted); }
+.guide-photo-gallery { margin: 22px 0 28px; }
+.guide-photo-gallery .media-gallery-title { margin-bottom: 12px; }
+.guide-photo-gallery .media-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.guide-photo-gallery .guide-photo { margin: 0; border-radius: 12px; }
+.guide-photo-gallery .guide-photo img { aspect-ratio: 3 / 2; object-fit: cover; }
+.guide-photo-gallery .guide-photo figcaption { padding: 9px 11px 11px; }
+.photo-credit-list .credit-item { scroll-margin-top: 80px; }
+.photo-credit-list .credit-item > div { min-width: 0; }
+.photo-credit-list .credit-item h2 { margin: 0 0 8px; font-size: 1.05rem; }
+.photo-credit-list .credit-item p { margin: 4px 0; }
+.photo-credit-list .credit-item ul { margin-top: 4px; }
+
+@media (max-width: 720px) {
+  .guide-photo { margin-inline: -4px; border-radius: 12px; }
+  .guide-photo-gallery .media-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .guide-photo-gallery .guide-photo:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
 /* ================= 주요 방문지 카드 ================= */
 section.places { margin: 8px 0 24px; }
 section.places > h3 { margin-top: 0.8em; }

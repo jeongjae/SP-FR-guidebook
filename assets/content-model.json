@@ -2428,7 +2428,7 @@
       "nights": 3,
       "status": "예약완료",
       "area": "Airbnb · 바스카라의 B&B",
-      "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
+      "address": null,
       "bookingNumber": null,
       "sourceUrl": null
     },
