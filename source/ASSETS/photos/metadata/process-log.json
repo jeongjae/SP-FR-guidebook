@@ -1,5 +1,5 @@
 {
-  "processedAt": "2026-08-05",
+  "processedAt": "2026-08-06",
   "images": [
     {
       "imageId": "barcelona-city-aerial-01",
@@ -743,6 +743,1644 @@
             "height": 320,
             "bytes": 18702,
             "sha256": "ca04ca7dd87e4ee6e28190613b1d21454636fc1ce85719d31c9b589238ca63ce",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-onyar-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-onyar-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-onyar-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-onyar-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 70508,
+            "sha256": "f514610001e4f4ec4ea77d71ced4da796d2d2798616b2a1b73c46caf458c1c1b",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-onyar-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-onyar-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 152878,
+            "sha256": "69f5a62df124870069bf282a26036e509623a3e53ef32620577c128196578d0e",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-onyar-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-onyar-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 300066,
+            "sha256": "97b30de67392ddda3a2a678b73fcfb40f72d2fd5451b985132a18a0d4bf684d6",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-onyar-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-onyar-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 165728,
+            "sha256": "2a37a5ac7cd2e5521468c4e21de2a484b886efbb732f3bc9d80a3a7c0d084055",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-onyar-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-onyar-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27966,
+            "sha256": "4997fb69974ba8b0989f46db5500f854efb3ac5729cb19f1d1c82ad4388787bb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-cathedral-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-cathedral-01.jpg",
+      "originalSize": [
+        3200,
+        4000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-cathedral-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-cathedral-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 48124,
+            "sha256": "72adfbecc2114ebacfddf84259c3a72b806c63ccf62495f726def3edb7553f8a",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-cathedral-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-cathedral-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 107672,
+            "sha256": "ac084a8be89b9bc04fa13fb0796b8394dea344162e9c87b0537b60004b90f66c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-cathedral-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-cathedral-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 223216,
+            "sha256": "78980302dab96a8a5555f9a5f8d45a50f3650f777eb6aa58675f2f1baaeaf149",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-cathedral-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-cathedral-01-content-1280.webp",
+            "width": 1280,
+            "height": 1600,
+            "bytes": 226310,
+            "sha256": "f67e3b450c603064a1c2aeff7ad417ca3fc65bd3fc0e3af6d45c63190ec2653d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-cathedral-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-cathedral-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17316,
+            "sha256": "88ef62008e6944f9b1a4b005f3c4b232108ee813791ea5b7af5f434c493682c8",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-collioure-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-collioure-01.jpg",
+      "originalSize": [
+        4000,
+        2460
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-collioure-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-collioure-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 50414,
+            "sha256": "91b47734db9c21ca45be60ceda44134e05f7658c7ef65c60cc3e4d8ff876898f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-collioure-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-collioure-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 128104,
+            "sha256": "16dd5ff53decda4c87254adbafd38605bbd6856ef3e94fd9ca0250821616ff2c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-collioure-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-collioure-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 284544,
+            "sha256": "08c2a1d0b5ef2aab7c1bad84572e3fd0e54a8790eb6190be9c39ae65e4b222dd",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-collioure-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-collioure-01-content-1280.webp",
+            "width": 1280,
+            "height": 787,
+            "bytes": 125262,
+            "sha256": "87e49c27e7acd5f96ecb6280b5c91351f650583632cf8aeb6b909669b5bee6c8",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-collioure-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-collioure-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15594,
+            "sha256": "6775dd2928e1753a6da021ec20aa0695f2b0e46f6e77e9fa77ce9d4b2b47d6ae",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-peratallada-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-peratallada-01.jpg",
+      "originalSize": [
+        3008,
+        2000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-peratallada-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-peratallada-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 73932,
+            "sha256": "8fbfa1efa8244de7fa526056a55b1fe95a122ac9e3bce16bb444e2fb89fb08a0",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-peratallada-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-peratallada-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 158766,
+            "sha256": "e41cae8341010aeec297d8706a77178c98572afa9f1a44aa24d3fc1f87f31519",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-peratallada-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-peratallada-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 280666,
+            "sha256": "15b33a67247b6471169b060e035c06020ece0a764c1df6f79884f269a30ff675",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-peratallada-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-peratallada-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 166414,
+            "sha256": "fb0c3294ae01a65da4b3cfd6ff63e378efa37d02b61b3db56bf23c6c62e8e1c4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-peratallada-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-peratallada-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25612,
+            "sha256": "9f7c1da478191ca5f88c97b3beac5284afb539a40df4f7a32158f0d986a8fc4a",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-calella-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-calella-01.jpg",
+      "originalSize": [
+        1950,
+        1300
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-calella-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-calella-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 81140,
+            "sha256": "360a96d7d530c609fdf60abd57db5bf6ccd2a4fc2d583338539ec5c029f4bbdd",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-calella-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-calella-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 181908,
+            "sha256": "403f0484fc4ea9fd0ee52d10eebe7db1653dfef7f723d7e1b0d1072bd072a675",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-calella-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-calella-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 347478,
+            "sha256": "e1c62f7be9f5a523bf2e1c2b7bb0a56e6a205feef44b153c76b692309f6a84b0",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-calella-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-calella-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 184410,
+            "sha256": "1511dd25726f16c841f8aad3b18a84cd10459a83524ad49fc0e51038d999b9b2",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-calella-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-calella-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28328,
+            "sha256": "d038e019d2e217e1b344aca333e6f52f3ab4173aa6a58a8b30429243fec6ba0b",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-xuixo-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-xuixo-01.jpg",
+      "originalSize": [
+        2592,
+        1944
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-xuixo-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-xuixo-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 48458,
+            "sha256": "e7606e6f51bc28594fcf6ea1d5ec3f2026776cd01b5ad122973def7c08d96298",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-xuixo-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-xuixo-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 103928,
+            "sha256": "f2fe9baca320d9e0ca4e1291964a342938b14181d79247e3b78f1d1505efa5b8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-xuixo-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-xuixo-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 186730,
+            "sha256": "18b3b0eda855a0cb6b836177b06b048e8b556a7b08bfa37de474f68cb0813735",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-xuixo-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-xuixo-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 106260,
+            "sha256": "0e2b35436053aaafb8c231f24cbe916a0a0eb18c3c99663073ec558e9c22192a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-xuixo-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-xuixo-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16474,
+            "sha256": "722381e269150d324080826addfed154faf19ee5394dbf4e05455128859e3024",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-suquet-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-suquet-01.jpg",
+      "originalSize": [
+        1280,
+        960
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-suquet-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-suquet-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 59534,
+            "sha256": "73a52ff09bff420eb2f1aab2239ba01a778517ac3e52c50f38cf8bd70040fbf8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-suquet-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-suquet-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 137676,
+            "sha256": "0175fd9977b2a1001c4205e16abdd1617e880049b18d751a3552c18b3c0c9f59",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-suquet-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-suquet-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 164270,
+            "sha256": "16585c3293a42e4631e0ee3ac96b2773847568e76b49a1e65cc6e06d5177fbee",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-suquet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-suquet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23022,
+            "sha256": "8649e7a43f553edfad9110098a2ded97c9a5ab8bdc83b485aad686ccded629c1",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-promenade-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-promenade-01.jpg",
+      "originalSize": [
+        2832,
+        2128
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-promenade-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-promenade-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 28406,
+            "sha256": "dddac651156405177ec2ac2392c2d002440a080cad63f02d3854fa62f28640f8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-promenade-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-promenade-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 64652,
+            "sha256": "50869316e885a40f5c4fe0dac2b4d9f05cd8237747314699c58d4821ae0ba105",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-promenade-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-promenade-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 135778,
+            "sha256": "139bf59e2731f1e570f104a1d638a345c47562ce56549275d2ccc0d9e79d117f",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-promenade-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-promenade-01-content-1280.webp",
+            "width": 1280,
+            "height": 962,
+            "bytes": 65394,
+            "sha256": "89e8c8486f74e277b66b7d7b29720f5d063fe99228f4755c4ac2fe9223bcc94f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-promenade-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-promenade-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 8618,
+            "sha256": "a3c9a5c0a2518f002af097758c68e8cba769c086dbc54a39f06008924a793222",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-cours-saleya-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-cours-saleya-01.jpg",
+      "originalSize": [
+        4000,
+        2996
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-cours-saleya-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-cours-saleya-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 67518,
+            "sha256": "9e3fe48d729d2795650af42d08a4881416fff87cfd575b10a2aa6667211c0d0e",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-cours-saleya-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-cours-saleya-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 145640,
+            "sha256": "e1631fd98fab8fbb3d55f9037f5dfac7d58949a6c2bc92b34271a38bc7b2865e",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-cours-saleya-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-cours-saleya-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 277984,
+            "sha256": "9640b8984adb0fa09156b57ab9a6c0f06d89878565ea142d8f4d1f46c6a26d90",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-cours-saleya-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-cours-saleya-01-content-1280.webp",
+            "width": 1280,
+            "height": 959,
+            "bytes": 173440,
+            "sha256": "0e57fea826e28c8c89fa885b417a0d56871d5e7a47f4416696d9e4b46c07c94c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-cours-saleya-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-cours-saleya-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26344,
+            "sha256": "5e0222d9274ac5d4ae982fa8a3b82f5f7b731478382b20165402ebecf813888a",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-vieux-nice-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-vieux-nice-01.jpg",
+      "originalSize": [
+        2576,
+        1932
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-vieux-nice-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-vieux-nice-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 77982,
+            "sha256": "df8d8c76d247008304056ef171be2c636b7eb516b4e2b6b2340e955d7f40b53a",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-vieux-nice-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-vieux-nice-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 166900,
+            "sha256": "31509778a98d59a337fc7b74912165c1ade138496443abe30d805dd777640ab7",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-vieux-nice-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-vieux-nice-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 297956,
+            "sha256": "92c1e6658d1711e039853aada4971ca7ac9acf045cfd09172f4afdc9c41e3bda",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-vieux-nice-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-vieux-nice-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 196256,
+            "sha256": "ec0407c6609a3e5c9d5a21c156f7e68260c953f6ce173dd7c1112b0fe427a77f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-vieux-nice-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-vieux-nice-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26556,
+            "sha256": "e16d16c39de04c8188c3f88cfdab0eb7d9bf3a25ba0d73ea5f149292b783b1a2",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-colline-chateau-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-colline-chateau-01.jpg",
+      "originalSize": [
+        4000,
+        1647
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-colline-chateau-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-colline-chateau-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 61334,
+            "sha256": "7bc1e0ddc1800eca07bb8538ce31a6822b3d2399221da37b4e33f76da5cd9ac6",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-colline-chateau-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-colline-chateau-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 146582,
+            "sha256": "54bd90335e32e0a71c3d1f8cf80e6ccb32e0133f3087b36569ea0d495cb5cc70",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-colline-chateau-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-colline-chateau-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 313142,
+            "sha256": "ca3375650bc62195a417aa00fa423fcf2ced12a5b5288135756c833ce25c92a1",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-colline-chateau-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-colline-chateau-01-content-1280.webp",
+            "width": 1280,
+            "height": 527,
+            "bytes": 101742,
+            "sha256": "f56238dbae00ed2ab0cdcfcf16ecc7e236585b77552d278cf9adb2eb0daae4a9",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-colline-chateau-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-colline-chateau-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22314,
+            "sha256": "1ef22d455c0a432a34d2b740ee0184b5c0964ed96fd0953797b01f6508c7b3ad",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-suquet-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-suquet-01.jpg",
+      "originalSize": [
+        4000,
+        2996
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-suquet-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-suquet-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 43356,
+            "sha256": "9832e33eed0fb1268fcf646f44fc479363883580f25ed4bf6abbbc989b409988",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-suquet-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-suquet-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 99392,
+            "sha256": "2cdc9a754c2aaec518cf0a70865374a4b8d916f03bf6f517db19b12c4b644bc2",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-suquet-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-suquet-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 205660,
+            "sha256": "e3225c10106c11d7c4c9d9a77c9c070ade507726b467eedba77b8045cc3e3517",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-suquet-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-suquet-01-content-1280.webp",
+            "width": 1280,
+            "height": 959,
+            "bytes": 117682,
+            "sha256": "3065b7cfec56807c86f6f787e02317b50d838453d0c37d6ccacec867bf95d514",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-suquet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-suquet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16482,
+            "sha256": "a961ee039760ebdf0c3de10b08af01b8b654e7a800f3c76d393f883279ecb3ee",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-socca-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-socca-01.jpg",
+      "originalSize": [
+        3648,
+        2736
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-socca-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-socca-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 35396,
+            "sha256": "0e0d24f0a3bf88b4a9eda37f3a3fb7fa0e2444927f88b42a329ac26bea33faa8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-socca-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-socca-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 68790,
+            "sha256": "361ddafbdbeac60e5cf9485364c3233d054e90ec3681da6be5974aff49644e02",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-socca-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-socca-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 124090,
+            "sha256": "9158d39e3b96405dd58b6d264f95c0eed12dcc747481368d36987449bc9bc8cc",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-socca-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-socca-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 72798,
+            "sha256": "e818fe457242c8f753aa43b7e8ecacb2f28bb0a2bcf6d45dade858c455154369",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-socca-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-socca-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 14394,
+            "sha256": "a999d45fcd64b2d48b6ee1d33c7b692c62544d016cda561983064a0cb5239a7d",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-pissaladiere-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-pissaladiere-01.jpg",
+      "originalSize": [
+        3264,
+        2448
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-pissaladiere-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-pissaladiere-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 47802,
+            "sha256": "f8e170376e3db97213bf09b8c27c8521246d4d6e307fbfd5c9c30380c1daea1d",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-pissaladiere-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-pissaladiere-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 91864,
+            "sha256": "879d44db88a51cc9d15e7caf8a7b50d409b6397986e2e09c04963b01d83421d2",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-pissaladiere-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-pissaladiere-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 160784,
+            "sha256": "0909125105aec2eaa6f78071b040fbfd53d382c530f675819f9a06d51dfda00a",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-pissaladiere-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-pissaladiere-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 98118,
+            "sha256": "cf6bb82571f7b085c6d4a249003f9bed46b5a597f9a74f093b37c3faccfed45b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-pissaladiere-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-pissaladiere-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 18804,
+            "sha256": "9eb5bec7e7e2cbd7fab437693db3c1b9899c5700fa5af7c3e821d2c01535ad50",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "barcelona-eixample-01",
+      "source": "source/ASSETS/photos/originals/barcelona/barcelona-eixample-01.jpg",
+      "originalSize": [
+        3648,
+        2736
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/barcelona-eixample-01-hero-800.webp",
+            "sitePath": "assets/images/hero/barcelona-eixample-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 51356,
+            "sha256": "f16de1e1f0930186cc85ba716ebdc88c310ecececb1ba71dab948f4918838248",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/barcelona-eixample-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/barcelona-eixample-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 104504,
+            "sha256": "1f4649fcd72b62bae185340c2b80d4fcd374a2f8e6b3a6364bb3150634f53a25",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/barcelona-eixample-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/barcelona-eixample-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 182544,
+            "sha256": "be36f035095da512864ddad7cf3530e3e85704625819b044d101cc368e6a2020",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-eixample-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-eixample-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 101870,
+            "sha256": "a646b7debb2b11d669da0be2e8f916e9e32bc419009835e2f599b1f6d15dcc9b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-eixample-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-eixample-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17554,
+            "sha256": "16cd2d59073b9c6f048889c46d8f3dbea04a698d2e05f5a80b63b4d2e811995a",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-cadaques-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-cadaques-01.jpg",
+      "originalSize": [
+        2592,
+        1944
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-cadaques-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-cadaques-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 47414,
+            "sha256": "057cc328ffc044244d50649e9034129e889a05cb344f5375c8e8adf29d938abd",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-cadaques-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-cadaques-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 98932,
+            "sha256": "e7bfd7c5feba2ba9508a57360b8e8ba1f76ca16ba7673a6d3b39c4cad0ccc651",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-cadaques-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-cadaques-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 175056,
+            "sha256": "c285bc4ff2e7da480be6cde513ad6228176cd5779eaed033bbed20f1bda1a233",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-cadaques-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-cadaques-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 131640,
+            "sha256": "134ebabc6797c45f033fcb5e392592e70fe75a9906fcb9b443724a12d97b2b4b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-cadaques-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-cadaques-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19796,
+            "sha256": "54387bcd1177694255930811fa0dfcbdf6feef1b4136bebbf0a3afd3ea5944f9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-tossa-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-tossa-01.jpg",
+      "originalSize": [
+        4000,
+        2345
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-tossa-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-tossa-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 40120,
+            "sha256": "ea9362f8bc2a4347de185c1212aa410ae28fb9f6ec8a22e943b463db5add85e0",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-tossa-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-tossa-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 100304,
+            "sha256": "effb9872dd383cc6bb4f37665e9a242b8dede19852a0fe4a9e18db177e7f5498",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-tossa-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-tossa-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 225044,
+            "sha256": "b3da73b3f38dbc35bef73ac78b5b811d111646c7542909951494969b9ef9add8",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-tossa-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-tossa-01-content-1280.webp",
+            "width": 1280,
+            "height": 750,
+            "bytes": 101264,
+            "sha256": "52f2ccd6f1e0b6ccfccad3f3411afc10e90969ef4ca3b8e52dd3e5fed09ef6c0",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-tossa-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-tossa-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13570,
+            "sha256": "7bd7ce00eae3f796961b64bae0b7961bad492e1960968a0650261a2bbc735de7",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-sant-feliu-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-sant-feliu-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-sant-feliu-01-hero-800.webp",
+            "sitePath": "assets/images/hero/girona-sant-feliu-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 68858,
+            "sha256": "f581076e6a88fa79b6a7bd0f9d561e91bd4aee8a528e5d94c9e45966e251a725",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-sant-feliu-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/girona-sant-feliu-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 171476,
+            "sha256": "018969409d14ea2a2aa8e81c6387f5292b8c6b20e69ff8deed99d103c5a67752",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/girona-sant-feliu-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/girona-sant-feliu-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 370532,
+            "sha256": "25f0071fe7c35f2945ab4c8e4c2ef4e0755b1391597889a17925ad42e853d047",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-sant-feliu-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-sant-feliu-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 257156,
+            "sha256": "d6982f4bc6c908fa02cff0700e6ec5c5bff6101789e8e0c30903a3d45a1ea824",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-sant-feliu-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-sant-feliu-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25650,
+            "sha256": "79633cde5ec2fe308f4cfbdcc8fd58efb413316fed3caf72f7f12d902b2975e9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-monaco-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-monaco-01.jpg",
+      "originalSize": [
+        4000,
+        2045
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-monaco-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 96758,
+            "sha256": "404e9f575583d190ea6e230bf7c429e93f6c18991063c2be509f96575b64e22c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-monaco-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 228762,
+            "sha256": "3855db50edd18119e1eda517b0290767de93640a6682700c99993d7661152257",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-monaco-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 429692,
+            "sha256": "a64594ad014459e79b319cb8b4c8c869189d490414a8834df209b6755d392e78",
+            "quality": 77
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-monaco-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-monaco-01-content-1280.webp",
+            "width": 1280,
+            "height": 654,
+            "bytes": 204308,
+            "sha256": "f39337f88392bacf868c2bde28c241fe3334aebb135ef1f29970f4996abf35db",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-monaco-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-monaco-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35280,
+            "sha256": "c4190879d3a5487ff142b8144c0fb4a5c18e8943d7ebb38d42d45f3ece12ba13",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-monaco-ville-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-monaco-ville-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-ville-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-monaco-ville-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 54720,
+            "sha256": "c26deaf7f03935d06632da86b8450fee458dfc789dd576358319d86a5b272309",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-ville-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-monaco-ville-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 123890,
+            "sha256": "79d10e7895e16589db2091f64a9d70f9726e8a17baeb6d46653d3e724535f170",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-ville-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-monaco-ville-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 248208,
+            "sha256": "8513790a7a30a2656ba7e2c1fcfa2c0975fefc444a961328fdd322e12394137a",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-monaco-ville-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-monaco-ville-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 174922,
+            "sha256": "3d6879e0cc0aaf1fd7e1be26e16add11761b5f5ab11de831ca893375144746ae",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-monaco-ville-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-monaco-ville-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22170,
+            "sha256": "19e5a501cba54f2c2fe317a9523b5100642db71ef49e24584a8ff76e761503ab",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-palais-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-palais-01.jpg",
+      "originalSize": [
+        4000,
+        1681
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-palais-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-palais-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 48514,
+            "sha256": "534daef0d3cb20adecc04a5836bbadf7ffa644670ef1dc163fbf07271581ba5c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-palais-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-palais-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 106142,
+            "sha256": "c84e9d9343c73784fa61ac80f43c8dff4ac3ff62b9f3367b95ebc9f81e6a508c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-palais-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-palais-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 207084,
+            "sha256": "d8cbcc0553a0813e8c94d05810065f330f27fab7ed2dceb1c46d2a6e47f26c72",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-palais-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-palais-01-content-1280.webp",
+            "width": 1280,
+            "height": 538,
+            "bytes": 76776,
+            "sha256": "c41dd194ecf5c718d9fe5daf682349d969d705e2a6e0aef575a850a48d391514",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-palais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-palais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16864,
+            "sha256": "0bd28630003c2104eea6f48be2b56c8350eb1d400121082db8e255f3b797e391",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-monaco-cathedral-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-monaco-cathedral-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-cathedral-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-monaco-cathedral-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 70524,
+            "sha256": "fefca3468afea74d2acd80835d23af7b72d8bf2927550a432ae82cb7f2af1312",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-cathedral-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-monaco-cathedral-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 167574,
+            "sha256": "62bc48113cb0c6ae3294354b068bcb82d7e468e520a0a47310d3292acb6bad2f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monaco-cathedral-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-monaco-cathedral-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 344380,
+            "sha256": "5197363cb8c1273675b6a6c04b460a70ba9eed8086b6fe0e2650c04c44c97dde",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-monaco-cathedral-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-monaco-cathedral-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 175924,
+            "sha256": "9b0940f267442ef1939bc9b1f74a7ef28277fcc3ed949e197667b73ad588ec3f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-monaco-cathedral-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-monaco-cathedral-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25716,
+            "sha256": "0b66031cef872059cb4c2d9570483511e0a5e33a7d20b5bbfe24725e74e223bb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-monte-carlo-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-monte-carlo-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monte-carlo-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-monte-carlo-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 65664,
+            "sha256": "aca392a0d40133c0a477a42b7abcfafde38567b627f5f36efbb7e565226f249c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monte-carlo-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-monte-carlo-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 148194,
+            "sha256": "b7bee2cb2dcebd70983dbaef3db0f175b5fc997806ab32f67e8598aad05a84c1",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-monte-carlo-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-monte-carlo-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 294552,
+            "sha256": "b65017f1fe7bdc81a6e058919860449f1f3bc8fed9cf791aa39ef46db5892704",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-monte-carlo-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-monte-carlo-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 191060,
+            "sha256": "a9658055b628fc1e25742a763ed3dbac482fc67fa449056e8ff95564f99e222c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-monte-carlo-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-monte-carlo-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28280,
+            "sha256": "e924af88b847057ad4b4c620183948f1986e17059d5ba0d424fcec0e47cec190",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-city-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-city-01.jpg",
+      "originalSize": [
+        4000,
+        1353
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-city-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-city-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 60764,
+            "sha256": "b4a4412692890eafb6f923dd7f0b3af9cf67cb85aaeab22b855cf52ef1c5932a",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-city-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-city-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 148520,
+            "sha256": "2479bea4aca131f85f69ff88045f3c0741fef0ebfd4b6784835c5ccc06bd3a9e",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-city-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-city-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 313338,
+            "sha256": "e6dacdbe32c70f9a0f4d3bda8aa45555a0dee408340f374a73e8c26ebeb0ed7d",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-city-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-city-01-content-1280.webp",
+            "width": 1280,
+            "height": 433,
+            "bytes": 100168,
+            "sha256": "75ace6c0262c46e1a44c0308c515c73b6bc60daff8315313a3d9f0829fe2a5ac",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-city-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-city-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20916,
+            "sha256": "cd85d16ee9c96d0a591debb4c25cacba5be71f3fd355396ff2c9902590f058c2",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-cannes-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-cannes-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-cannes-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-cannes-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 38176,
+            "sha256": "a07a8e6e620cc377ea42dc45f7c591f78d99daaba3ca889a9004515b0b3d08a7",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-cannes-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-cannes-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 83024,
+            "sha256": "5db7b554a38d10e41725114b8b5bd025e0667260903f7af47dd88cdb229b17e9",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-cannes-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-cannes-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 164860,
+            "sha256": "e456ebbd8b3935b63410592dd730a685bd3e085d75c62d46410859df5dc45a1b",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-cannes-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-cannes-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 90762,
+            "sha256": "a550ab53149c77d6945ac68ecd075f702f384242c6ecab4d19421d49c61b3d06",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-cannes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-cannes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15278,
+            "sha256": "4110e953c4896abfe6ab553c02ec34c165aecea1149d41fde715543e3bedf624",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-forville-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-forville-01.jpg",
+      "originalSize": [
+        3376,
+        2250
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-forville-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-forville-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 125664,
+            "sha256": "c3392204cc1dbd5a01bcc8550b55f4baa22689a4a839a30e3a50709af753d655",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-forville-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-forville-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 281430,
+            "sha256": "0ae8f2d32f63b76df0a16db1033c972f97befabf10dedd132cf671ffef24aaf7",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-forville-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-forville-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 448514,
+            "sha256": "b28cfa7c2067fb6110056154bae0f3f163e1a68b24f1d6f5dcaca4c6ef0da52e",
+            "quality": 74
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-forville-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-forville-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 272568,
+            "sha256": "d261704606d08f30b4f8a1435306e89b1e76203006696ed292a34ca5af2b1844",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-forville-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-forville-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 48586,
+            "sha256": "3fbf7defcbc5124b74c83fb7dd1792e3ae4d5b980608e0e3a0c298c5f8856bd9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-croisette-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-croisette-01.jpg",
+      "originalSize": [
+        3648,
+        2736
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-croisette-01-hero-800.webp",
+            "sitePath": "assets/images/hero/nice-croisette-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 96788,
+            "sha256": "242e6c29c6bfd85f0d322207abfe0fd9176f681792a96e4ac5dfa7f60a586f8a",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-croisette-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/nice-croisette-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 206042,
+            "sha256": "07a1d960340b99a1e1e6c7cac854526874f9252dd448d9c4219b64fc1fb4ffaa",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/nice-croisette-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/nice-croisette-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 372566,
+            "sha256": "ab1a63ab1e9e55b09bdff57637575ca29ad778afec5c6e1b3642ca3ca17bea0d",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-croisette-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-croisette-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 214602,
+            "sha256": "e4daedd8b18590186c0c454bad248c9065fe14714f1173a206d1eb2e67f65780",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-croisette-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-croisette-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36336,
+            "sha256": "36e2da1d9b72ab7e3361d7c1bc5131398279f7cda02296031a2c0c44cc2cf482",
             "quality": 73
           }
         ]

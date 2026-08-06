@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""Collect Commons candidates and create an approved Barcelona manifest.
+"""Collect Commons candidates and create an approved photo manifest.
 
 Only file-description metadata returned by the Wikimedia Commons API is used.
 The search plan pins the reviewed file title; search results supply two
 alternatives for the audit trail and never silently replace the reviewed file.
+With --merge, existing candidates and manifest entries from earlier batches
+are preserved and entries for the plan's places are replaced in place.
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import html
 import json
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -19,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data/images"
-PLAN = DATA / "barcelona-search-plan.json"
+DEFAULT_PLAN = DATA / "barcelona-search-plan.json"
 API = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = "SP-FR-guidebook-photo-pilot/1.0 (https://github.com/jeongjae/SP-FR-guidebook)"
 
@@ -27,8 +32,16 @@ USER_AGENT = "SP-FR-guidebook-photo-pilot/1.0 (https://github.com/jeongjae/SP-FR
 def api(params):
     query = urllib.parse.urlencode({"format": "json", "formatversion": 2, **params})
     request = urllib.request.Request(f"{API}?{query}", headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=60) as response:
-        return json.load(response)
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(request, timeout=60) as response:
+                payload = json.load(response)
+            time.sleep(1)
+            return payload
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == 4:
+                raise
+            time.sleep(10 * (attempt + 1))
 
 
 def clean(value):
@@ -112,11 +125,11 @@ def total(parts):
     return sum(parts.values())
 
 
-def original_path(item, info):
+def original_path(item, info, region):
     suffix = Path(urllib.parse.unquote(urllib.parse.urlparse(info["originalFile"]).path)).suffix.lower()
     if suffix not in {".jpg", ".jpeg", ".png", ".tif", ".tiff"}:
         suffix = ".jpg"
-    return f"source/ASSETS/photos/originals/barcelona/{item['imageId']}{suffix}"
+    return f"source/ASSETS/photos/originals/{region}/{item['imageId']}{suffix}"
 
 
 def write_csv(path, rows, fields):
@@ -127,9 +140,15 @@ def write_csv(path, rows, fields):
 
 
 def main():
-    plan = json.loads(PLAN.read_text(encoding="utf-8"))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--plan", type=Path, default=DEFAULT_PLAN)
+    parser.add_argument("--merge", action="store_true",
+                        help="preserve entries from earlier batches, replacing this plan's places")
+    args = parser.parse_args()
+    plan = json.loads(args.plan.read_text(encoding="utf-8"))
     candidates, rejected, approved = [], [], []
     for subject in plan["subjects"]:
+        region = subject.get("region") or plan["region"]
         selected_title = subject["selectedTitle"]
         titles = [selected_title]
         for title in search_titles(subject["query"]):
@@ -152,7 +171,7 @@ def main():
             info = infos[title]
             is_selected = title == selected_title
             parts = score(info, is_selected)
-            reason = ("장소 대표성·구도·해상도·라이선스를 검토해 Pilot 승인"
+            reason = ("장소 대표성·구도·해상도·라이선스를 검토해 승인"
                       if is_selected else "승인본보다 대표성 또는 모바일 구도가 낮아 대안 후보로 보류")
             row = {
                 "placeId": subject["placeId"], "candidateRank": rank,
@@ -178,14 +197,42 @@ def main():
             "changes": change, "downloadDate": plan["downloadDate"],
             "originalWidth": selected_info["originalWidth"],
             "originalHeight": selected_info["originalHeight"],
-            "originalPath": original_path(subject, selected_info), "originalSha256": "",
-            "usage": subject["usage"], "role": subject["role"],
+            "originalPath": original_path(subject, selected_info, region), "originalSha256": "",
+            "usage": subject["usage"], "role": subject["role"], "region": region,
             "regionHero": subject.get("regionHero", False), "status": "approved",
             "altKo": subject["altKo"], "captionKo": subject["captionKo"],
             "focus": subject["focus"], "variants": {"hero": [], "content": [], "thumbnail": []},
             "selectionScore": next(row["score"] for row in candidates
                                    if row["placeId"] == subject["placeId"] and row["selected"]),
         })
+
+    plan_places = {subject["placeId"] for subject in plan["subjects"]}
+    plan_image_ids = {subject["imageId"] for subject in plan["subjects"]}
+    if args.merge:
+        previous = json.loads((DATA / "photo-candidates.json").read_text(encoding="utf-8"))
+        kept = [row for row in previous.get("candidates", [])
+                if row["placeId"] not in plan_places]
+        candidates = kept + candidates
+        rejected = [row for row in candidates if not row["selected"]]
+        previous_manifest = json.loads((DATA / "image-manifest.json").read_text(encoding="utf-8"))
+        previous_by_id = {image["imageId"]: image
+                          for image in previous_manifest.get("images", [])}
+        # Same selected original as before → keep downloaded/processed pipeline
+        # state so a plan re-run stays idempotent.
+        for image in approved:
+            prev = previous_by_id.get(image["imageId"])
+            if prev and prev.get("originalFile") == image["originalFile"]:
+                for key in ("originalSha256", "originalBytes", "storedWidth",
+                            "storedHeight", "variants", "status", "changes"):
+                    if prev.get(key):
+                        image[key] = prev[key]
+        kept_images = []
+        for image in previous_manifest.get("images", []):
+            if image["imageId"] in plan_image_ids or image["placeId"] in plan_places:
+                continue
+            image.setdefault("region", Path(image["originalPath"]).parent.name)
+            kept_images.append(image)
+        approved = kept_images + approved
 
     payload = {"schemaVersion": "1.0", "generatedAt": plan["downloadDate"],
                "source": "Wikimedia Commons file-description pages", "candidates": candidates}
@@ -196,9 +243,12 @@ def main():
               "representativeness", "composition", "guidebookFit", "mobileRecognition", "resolution",
               "licenseClarity", "score", "selected", "reason"]
     write_csv(DATA / "photo-candidates.csv", candidates, fields)
-    write_csv(DATA / "rejected-photo-candidates.csv", rejected, fields + ["rejectionReason"])
+    write_csv(DATA / "rejected-photo-candidates.csv",
+              [{**row, "rejectionReason": row.get("rejectionReason", row["reason"])}
+               for row in rejected], fields + ["rejectionReason"])
+    regions = sorted({image.get("region", "") for image in approved})
     manifest = {"schemaVersion": "1.0", "generatedAt": plan["downloadDate"],
-                "region": "barcelona", "images": approved}
+                "regions": regions, "images": approved}
     (DATA / "image-manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Commons candidates: {len(candidates)} · approved {len(approved)} · rejected {len(rejected)}")
