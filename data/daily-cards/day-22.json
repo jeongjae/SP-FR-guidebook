@@ -3,114 +3,208 @@
   "day": 22,
   "date": "2026-09-19",
   "city": "Avignon",
-  "title": "Arles 당일치기",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Arles 철도 당일치기",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "07:30",
+  "endTime": "21:00",
+  "totalDuration": "13시간 30분",
+  "totalDistance": "철도 왕복 + 도보 약 4km",
   "fatigue": "4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "La Terrasse du Clocher (후보)",
+    "lat": 43.94993,
+    "lng": 4.81302,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "ar-nes",
+      "id": "avignon-centre",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Arènes",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Arènes",
+      "start": "08:10",
+      "end": "09:00",
+      "name": "Avignon Centre→Arles",
+      "category": "transport",
+      "lat": 43.9425074,
+      "lng": 4.8065497,
+      "summary": "철도 기본 — 실제 직행편·공사 전날 확인, JEP 혼잡·소매치기 주의",
       "menu": null,
-      "reservation": "문화유산의 날·철도/주차",
+      "reservation": "TER 시각·JEP 재확인",
       "optional": false
     },
     {
-      "id": "th-tre-antique",
+      "id": "arenes",
       "order": 2,
-      "start": null,
-      "end": null,
+      "start": "09:00",
+      "end": "10:15",
+      "name": "Arènes d'Arles",
+      "category": "sight",
+      "lat": 43.6776,
+      "lng": 4.6309,
+      "summary": "JEP 프로그램보다 원형경기장 자체를 우선",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "theatre",
+      "order": 3,
+      "start": "10:20",
+      "end": "11:05",
       "name": "Théâtre antique",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Théâtre antique",
+      "lat": 43.6765,
+      "lng": 4.6279,
+      "summary": "45분 상한 — 무료 해설 대기 길면 생략",
       "menu": null,
-      "reservation": "문화유산의 날·철도/주차",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "place-du-forum",
-      "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Place du Forum",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Place du Forum",
-      "menu": null,
-      "reservation": "문화유산의 날·철도/주차",
+      "id": "forum-lunch",
+      "order": 4,
+      "start": "11:15",
+      "end": "12:30",
+      "name": "Place du Forum·점심",
+      "category": "food",
+      "lat": 43.6773,
+      "lng": 4.6272,
+      "summary": "점심·카페 휴식 60–75분 보호",
+      "menu": "구도심 비스트로",
+      "reservation": null,
       "optional": false
     },
     {
       "id": "saint-trophime",
-      "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Saint-Trophime",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Saint-Trophime",
+      "order": 5,
+      "start": "12:40",
+      "end": "13:40",
+      "name": "Cloître Saint-Trophime",
+      "category": "culture",
+      "lat": 43.6769,
+      "lng": 4.6285,
+      "summary": "Fondation Van Gogh와 둘 중 하나만 실내관람",
       "menu": null,
-      "reservation": "문화유산의 날·철도/주차",
+      "reservation": null,
       "optional": false
     },
     {
       "id": "la-roquette",
-      "order": 5,
-      "start": null,
-      "end": null,
-      "name": "La Roquette",
+      "order": 6,
+      "start": "15:10",
+      "end": "16:10",
+      "name": "La Roquette 또는 Rhône 강변",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "La Roquette",
+      "lat": 43.6729,
+      "lng": 4.6249,
+      "summary": "한 축만 걷고 카페 30분 포함 — 13:50–15:00 구도심·반 고흐 흔적 관찰 후",
       "menu": null,
-      "reservation": "문화유산의 날·철도/주차",
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "avignon-return",
+      "order": 7,
+      "start": "16:30",
+      "end": "21:00",
+      "name": "Arles→Avignon 귀환·마지막 저녁",
+      "category": "hotel",
+      "lat": 43.94993,
+      "lng": 4.81302,
+      "summary": "막차 의존 금지. 19:30 저녁 후 TGV 티켓·주유·반납지 재확인",
+      "menu": null,
+      "reservation": "저녁 식당 예약 (SEVIN 등)",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "avignon-centre",
+      "to": "arenes",
+      "mode": "train",
+      "duration": null,
+      "distance": null,
+      "line": "TER Avignon Centre→Arles",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "arenes",
+      "to": "theatre",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "theatre",
+      "to": "forum-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "forum-lunch",
+      "to": "saint-trophime",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "saint-trophime",
+      "to": "la-roquette",
+      "mode": "walk",
+      "duration": "15분 (구도심 경유)",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "la-roquette",
+      "to": "avignon-return",
+      "mode": "train",
+      "duration": null,
+      "distance": null,
+      "line": "TER Arles→Avignon",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "문화유산의 날·철도/주차"
+    "TER 왕복 (Avignon Centre)",
+    "Arles 도보"
   ],
   "food": [
-    "Place du Forum 인근"
+    "Place du Forum 점심",
+    "19:30 마지막 저녁"
   ],
   "highlights": [
-    "Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette",
-    "선택·축소: Fondation·LUMA·Alyscamps·고대박물관은 선택"
+    "JEP 주말 — 혼잡·운영변동",
+    "실내관람은 하나만",
+    "9/20 이동 준비 70% 완료"
   ],
-  "backup": "Arènes·Théâtre·구도심만",
-  "map": null,
+  "backup": "혼잡 시 Arènes·Théâtre·구도심만 보고 조기 귀환",
+  "map": {
+    "zoom": 11,
+    "center": [
+      43.815,
+      4.72
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "TER 시각표·JEP 주말 운영 재확인",
+    "저녁 식당 예약",
+    "Avignon 숙소 후보 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-22",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-22",
+    "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md#Day-22",
+    "source/ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Avignon Centre역·Arles역"
   ]
 }
