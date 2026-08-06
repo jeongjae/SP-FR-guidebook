@@ -3,86 +3,157 @@
   "day": 31,
   "date": "2026-09-28",
   "city": "Paris",
-  "title": "Louvre 선택관람",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "운동·세탁·생활일 (Fashion Week 개막)",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4",
+  "totalDistance": "약 1.5km · 도보 + 메트로",
+  "fatigue": "2",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "gym",
+      "id": "exercise",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "gym·세탁",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "gym·세탁",
+      "start": "08:00",
+      "end": "09:00",
+      "name": "운동",
+      "category": "activity",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "Jason gym/러닝, Julia 산책·선택 수영",
       "menu": null,
-      "reservation": "Louvre",
-      "optional": false
+      "reservation": null,
+      "optional": true
     },
     {
-      "id": "louvre-2-3",
+      "id": "laundry",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Louvre 2~3개 섹션",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Louvre 2~3개 섹션",
+      "start": "09:30",
+      "end": "13:00",
+      "name": "세탁·냉장고 정리·점심",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "첫 주 생활업무를 미루지 않음 — 오후 예약 없음",
       "menu": null,
-      "reservation": "Louvre",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "palais-royal",
+      "id": "haut-marais",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Palais Royal",
+      "start": "13:30",
+      "end": "16:30",
+      "name": "북마레 또는 숙소권 산책",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Palais Royal",
+      "lat": 48.8627951,
+      "lng": 2.361973,
+      "summary": "독립상점·생활상권 — 새 명소 추가 금지",
       "menu": null,
-      "reservation": "Louvre",
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "shopping",
+      "order": 4,
+      "start": "16:30",
+      "end": "18:00",
+      "name": "필요한 쇼핑·장보기",
+      "category": "shopping",
+      "lat": 48.8615,
+      "lng": 2.357,
+      "summary": "Fashion Week 혼잡이 심하면 숙소권으로 회귀",
+      "menu": "생활용품·식재료",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "18:30",
+      "end": null,
+      "name": "숙소 저녁",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "회복을 겸한 생활일",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "exercise",
+      "to": "laundry",
+      "mode": "walk",
+      "duration": "0분",
+      "distance": "숙소",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "laundry",
+      "to": "haut-marais",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "haut-marais",
+      "to": "shopping",
+      "mode": "walk",
+      "duration": "8분",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "shopping",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "Louvre"
+    "도보·메트로"
   ],
   "food": [
-    "관람 전 가벼운 점심"
+    "숙소 점심",
+    "숙소 저녁"
   ],
   "highlights": [
-    "gym·세탁, Louvre 2~3개 섹션, Palais Royal",
-    "선택·축소: 야간일정 금지"
+    "생활업무 우선",
+    "Fashion Week 혼잡은 변수로만",
+    "월요일 휴관 무관한 날"
   ],
-  "backup": "Louvre 핵심섹션만",
-  "map": null,
+  "backup": "혼잡 시 숙소권 회귀",
+  "map": {
+    "zoom": 13,
+    "center": [
+      48.851,
+      2.355
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-5-9월28일",
+    "OSM Nominatim 지오코딩 2026-08-06: Marché des Enfants Rouges"
   ]
 }

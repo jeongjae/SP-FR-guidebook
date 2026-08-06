@@ -3,100 +3,180 @@
   "day": 29,
   "date": "2026-09-26",
   "city": "Paris",
-  "title": "Latin Quarter·Notre-Dame",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Saint-Germain·Luxembourg·Seine",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "3",
+  "totalDistance": "약 6km · 도보",
+  "fatigue": "2–3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "morning-run",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "시장·러닝",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "시장·러닝",
+      "start": "09:30",
+      "end": "10:30",
+      "name": "늦은 아침·가벼운 러닝/산책",
+      "category": "activity",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "장거리 이동 다음 날 — 속도·거리 욕심 금지",
       "menu": null,
-      "reservation": "Notre-Dame",
-      "optional": false
+      "reservation": null,
+      "optional": true
     },
     {
-      "id": "latin-quarter",
+      "id": "saint-germain",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Latin Quarter",
+      "start": "11:00",
+      "end": "12:30",
+      "name": "Saint-Germain 서점·카페",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Latin Quarter",
+      "lat": 48.8539677,
+      "lng": 2.3345177,
+      "summary": "쇼핑보다 생활 리듬 파악",
       "menu": null,
-      "reservation": "Notre-Dame",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "notre-dame",
+      "id": "sg-lunch",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Notre-Dame",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Notre-Dame",
-      "menu": null,
-      "reservation": "Notre-Dame",
+      "start": "12:30",
+      "end": "14:00",
+      "name": "가벼운 점심",
+      "category": "food",
+      "lat": 48.8535,
+      "lng": 2.334,
+      "summary": "긴 대기 회피",
+      "menu": "비스트로·카페",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "le-saint-louis",
+      "id": "luxembourg",
       "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Île Saint-Louis",
+      "start": "14:00",
+      "end": "16:00",
+      "name": "Jardin du Luxembourg",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Île Saint-Louis",
+      "lat": 48.8467228,
+      "lng": 2.3364148,
+      "summary": "함께 산책하고 앉아서 쉬는 시간 포함",
       "menu": null,
-      "reservation": "Notre-Dame",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "seine-left",
+      "order": 5,
+      "start": "16:00",
+      "end": "18:00",
+      "name": "Seine 좌안 산책",
+      "category": "sight",
+      "lat": 48.8578031,
+      "lng": 2.34192,
+      "summary": "날씨·피로에 따라 Pont Neuf 전후에서 종료",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
+      "start": "19:00",
+      "end": null,
+      "name": "숙소식 또는 동네식당",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "9/26 Il Barbiere 공연은 기본안에서 제외",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "morning-run",
+      "to": "saint-germain",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": "1.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "saint-germain",
+      "to": "sg-lunch",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "sg-lunch",
+      "to": "luxembourg",
+      "mode": "walk",
+      "duration": "12분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "luxembourg",
+      "to": "seine-left",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": "1.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "seine-left",
+      "to": "paris-return",
+      "mode": "walk",
+      "duration": "25분",
+      "distance": "1.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "Notre-Dame"
+    "도보 (좌안 생활권)"
   ],
   "food": [
-    "Latin Quarter"
+    "가벼운 점심 — 긴 대기 회피",
+    "숙소식 또는 동네식당"
   ],
   "highlights": [
-    "시장·러닝, Latin Quarter, Notre-Dame, Île Saint-Louis",
-    "선택·축소: Panthéon 내부 삭제 가능"
+    "도착 다음 날 — 가볍게",
+    "서점·카페는 생활 리듬로",
+    "고정행사 없음"
   ],
-  "backup": "Notre-Dame+카페",
-  "map": null,
+  "backup": "피로 시 Luxembourg까지만, Seine 산책 삭제",
+  "map": {
+    "zoom": 14,
+    "center": [
+      48.85,
+      2.34
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Paris 숙소 후보 확정 — 출발·귀환 앵커 종속",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-3-9월26일",
+    "OSM Nominatim 지오코딩 2026-08-06: Saint-Germain·Luxembourg·Pont Neuf"
   ]
 }
