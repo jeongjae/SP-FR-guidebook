@@ -160,9 +160,11 @@ PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 DAILY_V2_DIR = DAILY_IMG_DIR / "v2"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
-# Phase 5 배치 전환 — 배치 1 (Day 1~5) + 파일럿 Day 6. Day 4 는 비지도 이동일.
+# Phase 5 배치 전환 — 배치 1 (Day 1~5) · 배치 2 (Day 7~10) + 파일럿 Day 6.
+# Day 4 는 비지도 이동일.
 GOOGLE_MAP_PILOT_DATES = {"2026-08-29", "2026-08-30", "2026-08-31",
-                          "2026-09-02", "2026-09-03"}
+                          "2026-09-02", "2026-09-03", "2026-09-04",
+                          "2026-09-05", "2026-09-06", "2026-09-07"}
 GOOGLE_MAP_PILOT_REGIONS = {
     "barcelona.html": "barcelona", "girona.html": "girona", "nice.html": "nice",
     "aix.html": "aix", "luberon.html": "luberon", "avignon.html": "avignon",
@@ -4839,10 +4841,11 @@ def check_daily_map_guards():
     problems = []
     legacy = set()
     pilots = GOOGLE_MAP_PILOT_DATES
-    expected = legacy | pilots
-    missing = sorted(expected - set(by_date))
+    # 레거시 daily-maps.json 은 Leaflet 시절 샘플만 담는다. 전환일 자체는
+    # 아래 google_days(daily-routes.json) 검사가 담당한다.
+    missing = sorted(legacy - set(by_date))
     if missing:
-        problems.append("샘플 날짜 누락: " + ", ".join(missing))
+        problems.append("레거시 샘플 날짜 누락: " + ", ".join(missing))
     required_assets = ("daily-map.js", "daily-map-data.js", "google-map-loader.js",
                        "google-map.js", "google-map.css")
     if any(not (SITE / "assets" / name).exists() for name in required_assets):
