@@ -4,18 +4,20 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Praktik Garden",
+        "name": "Occidental Barcelona 1929",
         "sequence": 1,
-        "category": "숙소 후보",
-        "status": "후보 — 실제 예약 후 교체",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden",
-        "phase": "Phase 6"
+        "category": "확정 숙소",
+        "status": "예약완료 · 2026-08-29~09-01 · 3박",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona",
+        "address": "Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain",
+        "coordinates_verified": "OSM Nominatim address result, 2026-08-05",
+        "phase": "Confirmed booking"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.17132,
-          41.39382
+          2.1476619,
+          41.3752738
         ]
       }
     },

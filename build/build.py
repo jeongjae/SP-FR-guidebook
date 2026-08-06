@@ -4645,7 +4645,7 @@ def check_phase8_operations_guards():
         if state not in allowed_reservation_states:
             problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
         if state == "예약완료":
-            required = (("사업자", "소스 URL", "최종확인일") if row.get("ID") == "R002"
+            required = (("사업자", "소스 URL", "최종확인일") if row.get("ID") in ("R001", "R002")
                         else ("예약번호", "사업자", "소스 URL", "최종확인일"))
             absent = [key for key in required if not row.get(key)]
             if absent:
@@ -4669,7 +4669,7 @@ def check_phase8_operations_guards():
         if actual != (checkin, checkout, nights):
             problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
         if row.get("상태") == "예약완료":
-            required = (("주소", "소스 URL") if base == "Bàscara"
+            required = (("주소", "소스 URL") if base in ("Bàscara", "Barcelona")
                         else ("실제총액", "예약번호", "주소", "소스 URL"))
             absent = [key for key in required if not row.get(key)]
             if absent:
