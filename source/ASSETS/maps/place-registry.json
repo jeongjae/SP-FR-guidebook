@@ -278,19 +278,19 @@
       "editorialSlug": "saint-remy-de-provence"
     },
     {
-      "id": "barcelona-stay-candidate",
-      "name": "Praktik Garden",
+      "id": "barcelona-stay",
+      "name": "Occidental Barcelona 1929",
       "city": "Barcelona",
       "type": "accommodation",
-      "lat": 41.39382,
-      "lng": 2.17132,
+      "lat": 41.3752738,
+      "lng": 2.1476619,
       "googlePlaceId": "",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Praktik+Garden",
-      "address": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona",
+      "address": "Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain",
       "private": false,
-      "approximate": true,
-      "optional": true,
-      "status": "candidate",
+      "approximate": false,
+      "optional": false,
+      "status": "confirmed",
       "legacySources": [
         "75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"
       ]
