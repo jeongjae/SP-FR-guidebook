@@ -8,9 +8,11 @@
     bicycling: "자전거"
   };
 
+  // 좌표를 넘긴다. 표시 이름(한글 혼용)은 Google 이 해석하지 못해
+  // 출발지가 "내 위치"로 대체되거나 엉뚱한 곳이 찍힌다.
   function mapsQuery(place) {
     if (!place || place.private) return "";
-    return place.name || (place.lat + "," + place.lng);
+    return place.lat + "," + place.lng;
   }
 
   function buildPlaceUrl(place) {
