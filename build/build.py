@@ -159,7 +159,11 @@ DAILY_V2_DIR = DAILY_IMG_DIR / "v2"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
 GOOGLE_MAP_PILOT_DATES = {"2026-08-30", "2026-09-03"}
-GOOGLE_MAP_PILOT_REGIONS = {"barcelona.html": "barcelona", "girona.html": "girona"}
+GOOGLE_MAP_PILOT_REGIONS = {
+    "barcelona.html": "barcelona", "girona.html": "girona", "nice.html": "nice",
+    "aix.html": "aix", "luberon.html": "luberon", "avignon.html": "avignon",
+    "lyon.html": "lyon", "paris.html": "paris",
+}
 SUPERSEDED_DAILY_CARDS = {4, 5, 6, 14, *range(19, 29)}  # 일정 확정 전 제작된 이미지 카드는 숨긴다
 
 TRACKER_XLSX = SOURCE / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
@@ -4777,7 +4781,7 @@ def check_phase5_execution_guards():
 
 
 def check_phase6_map_guards():
-    """8개 실행지도(파일럿 2개는 레지스트리 기준)·85개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
+    """8개 실행지도(전부 레지스트리 기준)·72개 기준점·43일 라우팅을 하나의 계약으로 검사한다."""
     problems, total = [], 0
     google_places, _google_days, google_regions = load_google_map_data()
     map_index = (SITE / "maps" / "index.html").read_text(encoding="utf-8")
@@ -4812,8 +4816,8 @@ def check_phase6_map_guards():
             if page_text.count('>길찾기</a>') != count:
                 problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 85 or len(google_places) != 72:
-        problems.append(f"지도 기준점 총 {total}개 (기대 85) / 레지스트리 {len(google_places)}개 (기대 72)")
+    if total != 72 or len(google_places) != 72:
+        problems.append(f"지도 기준점 총 {total}개 (기대 72) / 레지스트리 {len(google_places)}개 (기대 72)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4826,7 +4830,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 · 기준점 85개(파일럿 2지역 레지스트리 기준) · 43일 라우팅 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 72개(레지스트리 기준) · 43일 라우팅 이상 없음")
 
 
 def check_daily_map_guards():
