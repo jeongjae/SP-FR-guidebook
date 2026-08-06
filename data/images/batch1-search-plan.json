@@ -1,0 +1,519 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-1-girona-nice",
+  "downloadDate": "2026-08-06",
+  "subjects": [
+    {
+      "placeId": "onyar",
+      "imageId": "girona-onyar-01",
+      "region": "girona",
+      "query": "Girona Onyar river houses cathedral",
+      "selectedTitle": "File:The houses of the Onyar.jpg",
+      "titleKo": "오냐르 강변 주택",
+      "altKo": "지로나 오냐르강을 따라 늘어선 색색의 강변 주택",
+      "captionKo": "오냐르강과 강변 주택이 만드는 지로나의 대표 전경.",
+      "role": "hero",
+      "regionHero": true,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-04.html",
+        "chapters/girona/index.html",
+        "places/onyar.html"
+      ]
+    },
+    {
+      "placeId": "girona-cathedral",
+      "imageId": "girona-cathedral-01",
+      "region": "girona",
+      "query": "Girona Cathedral facade steps",
+      "selectedTitle": "File:Girona Cathedral 2020.jpg",
+      "titleKo": "지로나 대성당",
+      "altKo": "긴 계단 위로 정면 파사드가 보이는 지로나 대성당",
+      "captionKo": "구시가지의 계단축에서 바라본 지로나 대성당 외관.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-04.html",
+        "places/girona-cathedral.html"
+      ]
+    },
+    {
+      "placeId": "collioure",
+      "imageId": "girona-collioure-01",
+      "region": "girona",
+      "query": "Collioure harbor Notre-Dame-des-Anges",
+      "selectedTitle": "File:L'église Notre-Dame-des-Anges et une partie du port, Collioure (6).JPG",
+      "titleKo": "콜리우르 항구",
+      "altKo": "콜리우르 항구와 바닷가의 노트르담데장주 교회 종탑",
+      "captionKo": "항구와 노트르담데장주 교회가 함께 보이는 콜리우르 전경.",
+      "role": "hero",
+      "focus": {
+        "x": 0.38,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-05.html",
+        "places/collioure.html"
+      ]
+    },
+    {
+      "placeId": "peratallada",
+      "imageId": "girona-peratallada-01",
+      "region": "girona",
+      "query": "Peratallada medieval street stone",
+      "selectedTitle": "File:Nucli històric de Peratallada 1.JPG",
+      "titleKo": "페라탈랴다 골목",
+      "altKo": "페라타야다의 거친 석조 벽과 아치가 이어지는 중세 골목",
+      "captionKo": "석조 건물과 불규칙한 골목이 특징인 페라타야다 마을.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-06.html",
+        "places/peratallada.html"
+      ]
+    },
+    {
+      "placeId": "calella-de-palafrugell",
+      "imageId": "girona-calella-01",
+      "region": "girona",
+      "query": "Calella de Palafrugell beach white houses",
+      "selectedTitle": "File:Calella de Palafrugell (26023087965).jpg",
+      "titleKo": "칼레야 데 팔라프루젤",
+      "altKo": "칼레야 데 팔라프루젤의 흰 집과 작은 모래 해변이 이어진 해안",
+      "captionKo": "흰 건물과 작은 만이 이어지는 코스타 브라바의 칼레야 데 팔라프루젤.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-06.html",
+        "places/calella-de-palafrugell.html"
+      ]
+    },
+    {
+      "placeId": "xuixo",
+      "imageId": "girona-xuixo-01",
+      "region": "girona",
+      "query": "Xuixo Girona pastry",
+      "selectedTitle": "File:Xuixo.jpg",
+      "titleKo": "추쇼",
+      "altKo": "설탕을 묻힌 지로나식 커스터드 페이스트리 추쇼",
+      "captionKo": "지로나 특산 페이스트리 추쇼의 대표 이미지. 실제 판매 형태는 다를 수 있다.",
+      "role": "supporting",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "chapters/girona/food.html"
+      ]
+    },
+    {
+      "placeId": "suquet-de-peix",
+      "imageId": "girona-suquet-01",
+      "region": "girona",
+      "query": "Suquet de peix Catalan fish stew",
+      "selectedTitle": "File:Suquet de peix.jpg",
+      "titleKo": "수케트 데 페시",
+      "altKo": "생선과 감자를 토마토 육수에 끓인 카탈루냐식 수케트 데 페시",
+      "captionKo": "카탈루냐 해안의 생선 스튜 수케트 데 페시 대표 이미지. 실제 식당 제공 형태는 다를 수 있다.",
+      "role": "supporting",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "chapters/girona/food.html"
+      ]
+    },
+    {
+      "placeId": "promenade-des-anglais",
+      "imageId": "nice-promenade-01",
+      "region": "nice",
+      "query": "Promenade des Anglais Nice seafront",
+      "selectedTitle": "File:Nice promenade-anglais.jpg",
+      "titleKo": "프롬나드 데 장글레",
+      "altKo": "니스 프롬나드 데 장글레와 푸른 지중해 해안선",
+      "captionKo": "니스의 해변 생활축인 프롬나드 데 장글레.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-11.html",
+        "places/promenade-des-anglais.html"
+      ]
+    },
+    {
+      "placeId": "cours-saleya",
+      "imageId": "nice-cours-saleya-01",
+      "region": "nice",
+      "query": "Cours Saleya market Nice stalls",
+      "selectedTitle": "File:Cours Saleya market fruit stalls Nice 2026.JPG",
+      "titleKo": "쿠르 살레야 시장",
+      "altKo": "니스 쿠르 살레야 시장에 과일과 채소가 진열된 노점",
+      "captionKo": "2026년 쿠르 살레야 시장의 식재료 노점 풍경.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-08.html",
+        "places/cours-saleya.html"
+      ]
+    },
+    {
+      "placeId": "vieux-nice",
+      "imageId": "nice-vieux-nice-01",
+      "region": "nice",
+      "query": "Vieux Nice old town rooftops view",
+      "selectedTitle": "File:Vue du Vieux-Nice.jpg",
+      "titleKo": "니스 구시가지",
+      "altKo": "주황빛 지붕과 좁은 골목이 밀집한 니스 구시가지 전경",
+      "captionKo": "성채 언덕 쪽에서 바라본 비외 니스의 조밀한 도시 풍경.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-08.html",
+        "places/vieux-nice.html"
+      ]
+    },
+    {
+      "placeId": "colline-du-chateau",
+      "imageId": "nice-colline-chateau-01",
+      "region": "nice",
+      "query": "Nice harbor from Castle Hill",
+      "selectedTitle": "File:Nice Harbor from Castle Hill 01.jpg",
+      "titleKo": "성채 언덕 전망",
+      "altKo": "니스 성채 언덕에서 내려다본 항구와 지중해 해안",
+      "captionKo": "성채 언덕 전망대에서 보는 니스 항구와 도시의 동쪽 축.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-08.html",
+        "places/colline-du-chateau.html"
+      ]
+    },
+    {
+      "placeId": "le-suquet",
+      "imageId": "nice-suquet-01",
+      "region": "nice",
+      "query": "Le Suquet old town Cannes",
+      "selectedTitle": "File:Le Suquet old town panorama Cannes 2026.JPG",
+      "titleKo": "르 쉬케",
+      "altKo": "칸 르 쉬케 언덕의 오래된 석조 건물과 교회탑",
+      "captionKo": "리조트 해안 뒤편에 남은 칸의 구시가지 르 쉬케.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-09.html",
+        "places/le-suquet.html"
+      ]
+    },
+    {
+      "placeId": "socca",
+      "imageId": "nice-socca-01",
+      "region": "nice",
+      "query": "Socca Nice chickpea pancake",
+      "selectedTitle": "File:Socca a Nice.jpg",
+      "titleKo": "소카",
+      "altKo": "니스식 병아리콩 전병 소카가 화덕 팬에서 잘려 나오는 모습",
+      "captionKo": "니스 대표 길거리 음식 소카의 일반적인 모습. 실제 식당 제공 형태는 다를 수 있다.",
+      "role": "supporting",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "chapters/nice/food.html"
+      ]
+    },
+    {
+      "placeId": "pissaladiere",
+      "imageId": "nice-pissaladiere-01",
+      "region": "nice",
+      "query": "Pissaladière Nice onion tart",
+      "selectedTitle": "File:Pissaladière.jpg",
+      "titleKo": "피살라디에르",
+      "altKo": "캐러멜화한 양파와 안초비, 올리브를 올린 니스식 피살라디에르",
+      "captionKo": "니스 지역의 양파 타르트 피살라디에르 대표 이미지. 실제 식당 제공 형태는 다를 수 있다.",
+      "role": "supporting",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "chapters/nice/food.html"
+      ]
+    },
+    {
+      "placeId": "eixample",
+      "imageId": "barcelona-eixample-01",
+      "region": "barcelona",
+      "query": "Avinguda Diagonal Barcelona aerial",
+      "selectedTitle": "File:Diagonal in Barcelona (3795275260).jpg",
+      "titleKo": "에이샴플라 격자 시가지",
+      "altKo": "하늘에서 본 바르셀로나 에이샴플라 지구 — 격자형 블록 사이를 대각선으로 가로지르는 디아고나 대로",
+      "captionKo": "하늘에서 보면 에이샴플라의 격자 블록과 그 사이를 비스듬히 가로지르는 디아고나 대로가 한눈에 들어온다.",
+      "role": "supporting",
+      "focus": {
+        "x": 0.45,
+        "y": 0.6
+      },
+      "usage": [
+        "daily/day-01.html"
+      ]
+    },
+    {
+      "placeId": "cadaques",
+      "imageId": "girona-cadaques-01",
+      "region": "girona",
+      "query": "Cadaques Santa Maria church",
+      "selectedTitle": "File:Cadaques-vista.JPG",
+      "titleKo": "카다케스 흰 마을",
+      "altKo": "언덕 위 산타 마리아 성당을 정점으로 층층이 쌓인 카다케스의 흰 집들과 해변",
+      "captionKo": "언덕 꼭대기의 산타 마리아 성당 아래로 카다케스의 흰 집들이 만까지 이어진다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.35,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-05.html"
+      ]
+    },
+    {
+      "placeId": "tossa-de-mar",
+      "imageId": "girona-tossa-01",
+      "region": "girona",
+      "query": "Tossa de Mar Vila Vella beach",
+      "selectedTitle": "File:WLM - 2020 - Castillo de Tosa de Mar.jpg",
+      "titleKo": "토사 데 마르 성벽",
+      "altKo": "해질녘 불이 켜진 토사 데 마르 빌라 베야 성벽과 그 앞 해변의 곡선",
+      "captionKo": "곶 위의 빌라 베야 중세 성벽이 해질녘 조명 속에 해변과 마주 서 있다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-06.html"
+      ]
+    },
+    {
+      "placeId": "sant-feliu-de-guixols",
+      "imageId": "girona-sant-feliu-01",
+      "region": "girona",
+      "query": "Sant Feliu de Guixols platja badia",
+      "selectedTitle": "File:View of Sant Feliu de Guíxols beach and marina.jpg",
+      "titleKo": "산트 펠리우 데 기솔스 만",
+      "altKo": "절벽 산책로에서 내려다본 산트 펠리우 데 기솔스의 만 — 해변, 요트 정박장, 곶 위의 시가지",
+      "captionKo": "붉은 바위 해안 너머로 산트 펠리우 데 기솔스의 해변과 요트 정박장이 만을 감싸고 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.55,
+        "y": 0.3
+      },
+      "usage": [
+        "daily/day-06.html"
+      ]
+    },
+    {
+      "placeId": "monaco",
+      "imageId": "nice-monaco-01",
+      "region": "nice",
+      "query": "Monaco panorama La Turbie",
+      "selectedTitle": "File:Panorama von Monaco-La Turbie.jpg",
+      "titleKo": "모나코 전경",
+      "altKo": "높은 곳에서 내려다본 모나코 공국 전경 — 르 로셰 반도와 항구, 시가지, 지중해가 한눈에 보인다",
+      "captionKo": "라튀르비 방향 고지대에서 내려다본 모나코 전경으로, 르 로셰 반도와 항구가 함께 보인다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.55,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-10.html"
+      ]
+    },
+    {
+      "placeId": "monaco-ville",
+      "imageId": "nice-monaco-ville-01",
+      "region": "nice",
+      "query": "Le Rocher Monaco view from exotic garden",
+      "selectedTitle": "File:Monaco from the bottom of the exotic garden.jpg",
+      "titleKo": "르 로셰의 모나코빌",
+      "altKo": "바위 곶 르 로셰 위에 올라앉은 모나코빌 구시가지 — 절벽과 성벽 위로 옛 건물 지붕들이 이어진다",
+      "captionKo": "이국정원 쪽에서 바라본 르 로셰 — 이 바위 곶 위에 모나코빌 구시가지가 자리한다.",
+      "role": "major",
+      "focus": {
+        "x": 0.58,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-10.html"
+      ]
+    },
+    {
+      "placeId": "place-du-palais",
+      "imageId": "nice-palais-01",
+      "region": "nice",
+      "query": "Prince's Palace Monaco Place du Palais",
+      "selectedTitle": "File:Princely Palace of Monaco 02.jpg",
+      "titleKo": "모나코 대공궁과 궁전 광장",
+      "altKo": "궁전 광장에서 정면으로 본 모나코 대공궁 — 크림색 파사드 앞에 대포와 초소가 늘어서 있다",
+      "captionKo": "궁전 광장(Place du Palais)에서 본 대공궁 정면으로, 광장 가장자리에 대포들이 놓여 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.47,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-10.html"
+      ]
+    },
+    {
+      "placeId": "monaco-cathedral",
+      "imageId": "nice-monaco-cathedral-01",
+      "region": "nice",
+      "query": "Monaco Cathedral frontage",
+      "selectedTitle": "File:Cathedral of Our Lady Immaculate, Monaco (frontage).jpg",
+      "titleKo": "모나코 대성당",
+      "altKo": "흰 돌로 지어진 모나코 대성당 정면 — 장미창과 세 개의 아치형 입구가 있는 파사드",
+      "captionKo": "모나코빌에 있는 모나코 대성당의 정면 파사드로, 흰 석재와 장미창이 특징이다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-10.html"
+      ]
+    },
+    {
+      "placeId": "monte-carlo",
+      "imageId": "nice-monte-carlo-01",
+      "region": "nice",
+      "query": "Casino de Monte-Carlo Place du Casino",
+      "selectedTitle": "File:Le casino de Monte-Carlo.JPG",
+      "titleKo": "몬테카를로 카지노",
+      "altKo": "카지노 광장 쪽에서 본 몬테카를로 카지노 정면 — 두 개의 탑과 시계, 앞쪽의 구형 거울 조형물",
+      "captionKo": "카지노 광장(Place du Casino)에서 본 몬테카를로 카지노 정면과 광장의 구형 거울 조형물.",
+      "role": "major",
+      "focus": {
+        "x": 0.48,
+        "y": 0.42
+      },
+      "usage": [
+        "daily/day-10.html"
+      ]
+    },
+    {
+      "placeId": "nice",
+      "imageId": "nice-city-01",
+      "region": "nice",
+      "query": "Nice Baie des Anges Castle Hill panorama",
+      "selectedTitle": "File:Nice from Castle Hill 01.jpg",
+      "titleKo": "성채 언덕에서 본 니스",
+      "altKo": "성채 언덕에서 내려다본 니스 전경 — 천사의 만 해안선과 영국인 산책로, 구시가지의 붉은 지붕",
+      "captionKo": "성채 언덕 전망대에서 보면 천사의 만과 영국인 산책로, 구시가지 지붕이 한눈에 들어온다.",
+      "role": "hero",
+      "regionHero": true,
+      "focus": {
+        "x": 0.35,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-07.html",
+        "chapters/nice/index.html"
+      ]
+    },
+    {
+      "placeId": "cannes",
+      "imageId": "nice-cannes-01",
+      "region": "nice",
+      "query": "Cannes Vieux Port Le Suquet",
+      "selectedTitle": "File:Le Suquet 01.jpg",
+      "titleKo": "칸 구항과 르 쉬케",
+      "altKo": "칸 구항에 정박한 배들 뒤로 르 쉬케 언덕과 성탑, 종탑이 솟아 있는 풍경",
+      "captionKo": "칸 구항 뒤로 르 쉬케 언덕의 성탑과 종탑이 솟아 도시의 스카이라인을 이룬다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-09.html",
+        "places/cannes.html"
+      ]
+    },
+    {
+      "placeId": "marche-forville",
+      "imageId": "nice-forville-01",
+      "region": "nice",
+      "query": "Marché Forville Cannes",
+      "selectedTitle": "File:Marché Forville Cannes 02.jpg",
+      "titleKo": "포르빌 시장 내부",
+      "altKo": "포르빌 지붕시장 내부 — 과일과 채소 상자가 늘어선 매대와 상인들",
+      "captionKo": "지붕이 덮인 포르빌 시장 안에 과일·채소 매대가 줄지어 늘어서 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "usage": [
+        "daily/day-09.html",
+        "places/marche-forville.html"
+      ]
+    },
+    {
+      "placeId": "croisette",
+      "imageId": "nice-croisette-01",
+      "region": "nice",
+      "query": "Boulevard de la Croisette Cannes palms",
+      "selectedTitle": "File:Cannes promenade.jpg",
+      "titleKo": "크루아제트 대로",
+      "altKo": "야자수가 줄지어 선 크루아제트 대로의 보행로, 멀리 칼튼 호텔의 돔이 보인다",
+      "captionKo": "야자수가 늘어선 크루아제트 대로 저편으로 칼튼 호텔의 돔 지붕이 보인다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-09.html"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "placeId": "marche-de-la-liberation",
+      "reason": "Commons에 시장이 실제 운영 중인 모습을 담은 허용 라이선스 사진이 없다. 광장 사진(노점 없음)이나 800px급 2004년 사진뿐이라 규칙에 따라 text-only로 남긴다."
+    },
+    {
+      "placeId": "girona-city-walls",
+      "reason": "이동일(Day 4)에 사진 6장이 몰려 보조 사진을 줄였다. 성벽은 다른 게재면이 없어 이번 배치에서 제외."
+    }
+  ]
+}
