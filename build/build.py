@@ -5001,9 +5001,7 @@ def check_phase8_operations_guards():
             problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
         if state == "예약완료":
             # R002는 개인 숙소다. 공개 배포용 트래커에 예약 URL을 복제하지 않는다.
-            # R001(Barcelona 호텔)은 예약번호 기록 전까지 사업자·URL·확인일로 잠근다.
             required = (("사업자", "최종확인일") if row.get("ID") == "R002"
-                        else ("사업자", "소스 URL", "최종확인일") if row.get("ID") == "R001"
                         else ("예약번호", "사업자", "소스 URL", "최종확인일"))
             absent = [key for key in required if not row.get(key)]
             if absent:
@@ -5030,9 +5028,7 @@ def check_phase8_operations_guards():
             problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
         if row.get("상태") == "예약완료":
             # 개인 숙소는 안전한 비공개 안내 문구만 요구하고 공개 URL은 금지한다.
-            # Barcelona는 공개 호텔이라 주소·URL을 요구하되 총액·예약번호는 기록 전이다.
             required = (("주소",) if base == "Bàscara"
-                        else ("주소", "소스 URL") if base == "Barcelona"
                         else ("실제총액", "예약번호", "주소", "소스 URL"))
             absent = [key for key in required if not row.get(key)]
             if absent:
