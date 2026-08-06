@@ -2430,7 +2430,7 @@
       "area": "Airbnb · 바스카라의 B&B",
       "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
       "bookingNumber": null,
-      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%A0scara"
+      "sourceUrl": null
     },
     {
       "id": "stay:nice",
@@ -2528,7 +2528,7 @@
       "status": "예약완료",
       "priority": "P0",
       "targetDate": null,
-      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=B%C3%A0scara"
+      "sourceUrl": null
     },
     {
       "id": "reservation:r003",

@@ -11,7 +11,7 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
-<link rel="stylesheet" href="../maps/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="es">
@@ -103,11 +103,22 @@
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>시간지정 입장·주말 혼잡</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Gràcia 저녁 산책</dd></div><div class="ds-item"><dt>대체안</dt><dd>Sant Pau 실내 또는 카페 중심</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Sant Pau 전후 가벼운 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>Sagrada·Sant Pau</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
 <section class="daily-map-section" aria-labelledby="daily-map-title-2">
-<h2 id="daily-map-title-2" class="ic ic-map">인터랙티브 실행지도</h2>
+<h2 id="daily-map-title-2" class="ic ic-map">Google 실행지도</h2>
 <p class="note">사그라다 파밀리아와 산파우 — 돌, 빛, 도시개혁</p>
-<div class="daily-execution-map" data-daily-map-date="2026-08-30">
-  <p class="offline-note">인터랙티브 지도를 준비하고 있습니다.</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
+<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=Sagrada+Fam%C3%ADlia&amp;destination=Sant+Pau&amp;travelmode=walking">오늘 동선 열기</a></div>
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="barcelona-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="barcelona-stay-candidate" aria-pressed="false"><strong>0. Praktik Garden</strong><span>숙소 · 숙소 출발 전 · 16:10 이후</span><small>숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Praktik+Garden">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Praktik+Garden&amp;travelmode=walking">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="sagrada-familia" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="sagrada-familia" aria-pressed="false"><strong>1. Sagrada Família</strong><span>방문지 · 09:00–12:10</span><small>외관을 먼저 관찰한 뒤 10:30 입장하는 일정의 핵심 방문지.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sagrada+Fam%C3%ADlia">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sagrada+Fam%C3%ADlia&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="sant-pau-recinte-modernista" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="sant-pau-recinte-modernista" aria-pressed="false"><strong>2. Sant Pau</strong><span>방문지 · 14:30–16:10</span><small>Avinguda de Gaudí를 따라 이동해 방문하는 도메네크 이 몬타네르의 병원 단지.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sant+Pau">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sant+Pau&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
 </div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sagrada+Fam%C3%ADlia&amp;travelmode=walking&amp;origin=Praktik+Garden">Praktik Garden → Sagrada Família · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sant+Pau&amp;travelmode=walking&amp;origin=Sagrada+Fam%C3%ADlia">Sagrada Família → Sant Pau · 도보</a></li></ol></details>
+<script type="application/json">{"center":[41.40313,2.17335],"zoom":14,"places":[{"id":"barcelona-stay-candidate","name":"Praktik Garden","city":"Barcelona","type":"accommodation","lat":41.39382,"lng":2.17132,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Praktik+Garden","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]},{"id":"sagrada-familia","name":"Sagrada Família","city":"Barcelona","type":"attraction","lat":41.40363,"lng":2.17436,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Sagrada+Fam%C3%ADlia","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]},{"id":"sant-pau-recinte-modernista","name":"Sant Pau","city":"Barcelona","type":"attraction","lat":41.41193,"lng":2.17438,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Sant+Pau","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"],"editorialSlug":"sant-pau-recinte-modernista"}],"day":{"date":"2026-08-30","city":"Barcelona","title":"사그라다 파밀리아와 산파우 — 돌, 빛, 도시개혁","center":[41.40313,2.17335],"zoom":14,"defaultMode":"walking","stops":[{"placeId":"barcelona-stay-candidate","order":0,"plannedTime":"숙소 출발 전 · 16:10 이후","note":"숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"sagrada-familia","order":1,"plannedTime":"09:00–12:10","note":"외관을 먼저 관찰한 뒤 10:30 입장하는 일정의 핵심 방문지."},{"placeId":"sant-pau-recinte-modernista","order":2,"plannedTime":"14:30–16:10","note":"Avinguda de Gaudí를 따라 이동해 방문하는 도메네크 이 몬타네르의 병원 단지."}],"segments":[{"from":"barcelona-stay-candidate","to":"sagrada-familia","mode":"walking"},{"from":"sagrada-familia","to":"sant-pau-recinte-modernista","mode":"walking"}]}}</script>
+</section>
 </section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
@@ -138,8 +149,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../maps/vendor/leaflet/leaflet.js" defer></script>
-<script src="../assets/daily-map-data.js" defer></script>
-<script src="../assets/daily-map.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
