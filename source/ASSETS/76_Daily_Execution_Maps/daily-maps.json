@@ -157,7 +157,7 @@
       "center": [42.38, 3.17],
       "zoom": 9,
       "places": [
-        {"id":"bascara-stay","type":"accommodation","name":"Bàscara 확정 숙소","lat":42.1603007,"lng":2.9101005,"order":0,"plannedTime":"07:45 출발·18:30–19:00 복귀","description":"Airbnb 바스카라의 B&B. 주소·주차·체크인 조건은 재확인.","googleMapsUrl":"","optional":false,"private":true,"approximate":true},
+        {"id":"bascara-stay","type":"accommodation","name":"Bàscara 숙소 근사 권역","lat":42.164,"lng":2.914,"order":0,"plannedTime":"07:45 출발·18:30–19:00 복귀","description":"비공개 숙소. 정확 주소는 개인 보관본에서 확인.","googleMapsUrl":"","optional":false,"private":true,"approximate":true},
         {"id":"collioure","type":"attraction","name":"Collioure","lat":42.52505,"lng":3.08322,"order":1,"plannedTime":"09:00–12:15","description":"수요시장 → 항구 → Notre-Dame-des-Anges → 왕궁 외관. 오전 10시 이전 도착 유지.","googleMapsUrl":"https://www.google.com/maps/search/?api=1&query=Collioure","optional":false,"private":false,"approximate":false},
         {"id":"cadaques","type":"attraction","name":"Cadaqués","lat":42.2886,"lng":3.2584,"order":2,"plannedTime":"14:45–17:30","description":"해안 산책로·구시가지·Santa Maria 교회·카페. Saba 주차장과 접근은 재확인.","googleMapsUrl":"https://www.google.com/maps/search/?api=1&query=Cadaqu%C3%A9s","optional":false,"private":false,"approximate":false}
       ],
@@ -174,7 +174,7 @@
       "center": [41.85, 3.02],
       "zoom": 9,
       "places": [
-        {"id":"bascara-stay","type":"accommodation","name":"Bàscara 확정 숙소","lat":42.1603007,"lng":2.9101005,"order":0,"plannedTime":"08:20 출발·18:20–18:40 복귀","description":"확정 숙소. 운영조건은 재확인.","googleMapsUrl":"","optional":false,"private":true,"approximate":true},
+        {"id":"bascara-stay","type":"accommodation","name":"Bàscara 숙소 근사 권역","lat":42.164,"lng":2.914,"order":0,"plannedTime":"08:20 출발·18:20–18:40 복귀","description":"비공개 숙소. 정확 주소는 개인 보관본에서 확인.","googleMapsUrl":"","optional":false,"private":true,"approximate":true},
         {"id":"tossa","type":"attraction","name":"Tossa de Mar","lat":41.7195,"lng":2.9319,"order":1,"plannedTime":"09:45–12:30","description":"Vila Vella → 등대 전망대 → Platja Gran. 접근·주차는 출발 직전 재확인.","googleMapsUrl":"https://www.google.com/maps/search/?api=1&query=Tossa+de+Mar","optional":false,"private":false,"approximate":false},
         {"id":"sant-feliu","type":"attraction","name":"Sant Feliu de Guíxols","lat":41.78,"lng":3.0676,"order":2,"plannedTime":"13:10–14:30","description":"GI-682 해안도로 이동 후 해안 산책·점심. 날씨·피로 시 우회.","googleMapsUrl":"https://www.google.com/maps/search/?api=1&query=Sant+Feliu+de+Gu%C3%ADxols","optional":false,"private":false,"approximate":false},
         {"id":"pals","type":"attraction","name":"Pals","lat":41.97039,"lng":3.14843,"order":3,"plannedTime":"15:20–16:10","description":"전망대·구시가지 압축 산책. Tossa 출발이 13:00을 넘으면 삭제.","googleMapsUrl":"https://www.google.com/maps/search/?api=1&query=Pals","optional":true,"private":false,"approximate":false},

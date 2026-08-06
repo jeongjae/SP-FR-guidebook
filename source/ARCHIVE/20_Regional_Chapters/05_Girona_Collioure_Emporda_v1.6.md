@@ -220,7 +220,7 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 |---|---|
 | 여행 성격 | 지로나는 저녁·반나절, 낮에는 주변마을과 콜리우르 |
 | 숙박 | Bàscara 3박 · 예약 확정 · 2026-09-01~09-04 |
-| 확정 숙소 | Airbnb · 바스카라의 B&B · Plaça de l’Església, 6 |
+| 확정 숙소 | Airbnb · 바스카라의 B&B · 정확 주소는 개인 보관본에서 확인 |
 | Day 1 | Sitges → Girona 축소 방문 또는 Bàscara 선체크인 |
 | Day 2 | Bàscara → 콜리우르 → 페랄라다 → Bàscara |
 | Day 3 | Bàscara → Pals → Peratallada → Calella de Palafrugell → Bàscara |
@@ -297,7 +297,7 @@ Girona
 | 체크인 | 2026-09-01 |
 | 체크아웃 | 2026-09-04 |
 | 숙박 | 3박 |
-| 주소 | [Plaça de l’Església, 6, 17483 Bàscara, Catalonia, Spain](https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a+de+l%27Esgl%C3%A9sia%2C+6%2C+17483+B%C3%A0scara%2C+Spain) |
+| 주소 | 비공개 숙소 · 정확 주소는 개인 보관본에서 확인 |
 | 여행자 | Jason·Julia |
 | 확정번호·가격·결제조건 | 재확인 |
 | 체크인 시간·주차·조식·취소조건 | 재확인 |

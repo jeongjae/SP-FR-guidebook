@@ -1,0 +1,305 @@
+{
+  "schemaVersion": "1.0",
+  "days": [
+    {
+      "date": "2026-08-29",
+      "city": "Barcelona",
+      "title": "도착, 숙소 정착, 에이샴플라 생활권 적응",
+      "center": [
+        41.39382,
+        2.17132
+      ],
+      "zoom": 14,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "barcelona-stay-candidate",
+          "order": 1,
+          "plannedTime": "17:30–18:30",
+          "note": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        }
+      ],
+      "segments": []
+    },
+    {
+      "date": "2026-08-30",
+      "city": "Barcelona",
+      "title": "사그라다 파밀리아와 산파우 — 돌, 빛, 도시개혁",
+      "center": [
+        41.40313,
+        2.17335
+      ],
+      "zoom": 14,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "barcelona-stay-candidate",
+          "order": 0,
+          "plannedTime": "숙소 출발 전 · 16:10 이후",
+          "note": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "sagrada-familia",
+          "order": 1,
+          "plannedTime": "09:00–12:10",
+          "note": "외관을 먼저 관찰한 뒤 10:30 입장하는 일정의 핵심 방문지."
+        },
+        {
+          "placeId": "sant-pau-recinte-modernista",
+          "order": 2,
+          "plannedTime": "14:30–16:10",
+          "note": "Avinguda de Gaudí를 따라 이동해 방문하는 도메네크 이 몬타네르의 병원 단지."
+        }
+      ],
+      "segments": [
+        {
+          "from": "barcelona-stay-candidate",
+          "to": "sagrada-familia",
+          "mode": "walking"
+        },
+        {
+          "from": "sagrada-familia",
+          "to": "sant-pau-recinte-modernista",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "city": "Barcelona",
+      "title": "책과 도시의 기억 — 고딕지구·카탈루냐 도서관·MACBA",
+      "center": [
+        41.38555,
+        2.17108
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "barcelona-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:10–09:30 · 18:30–19:30",
+          "note": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "barri-gotic",
+          "order": 1,
+          "plannedTime": "11:00–12:00",
+          "note": "Plaça del Rei에서 대성당 외관과 Carrer del Bisbe로 이어지는 핵심 산책 구간."
+        },
+        {
+          "placeId": "biblioteca-de-catalunya",
+          "order": 2,
+          "plannedTime": "12:10–13:05",
+          "note": "옛 Hospital de la Santa Creu의 건축과 열람공간을 확인하는 방문."
+        },
+        {
+          "placeId": "macba",
+          "order": 3,
+          "plannedTime": "15:15–17:15",
+          "note": "월요일에 방문 가능한 현대미술관. 관심 전시 1–2개만 선택하는 일정."
+        }
+      ],
+      "segments": [
+        {
+          "from": "barcelona-stay-candidate",
+          "to": "barri-gotic",
+          "mode": "walking"
+        },
+        {
+          "from": "barri-gotic",
+          "to": "biblioteca-de-catalunya",
+          "mode": "walking"
+        },
+        {
+          "from": "biblioteca-de-catalunya",
+          "to": "macba",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "city": "Bàscara · Collioure · Cadaqués",
+      "title": "Collioure 오전 장날과 Cadaqués 해안 쪽 우회",
+      "center": [
+        42.38,
+        3.17
+      ],
+      "zoom": 9,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "girona-stay-private",
+          "order": 0,
+          "plannedTime": "07:45 출발·18:30–19:00 복귀",
+          "note": "Airbnb 바스카라의 B&B. 주소·주차·체크인 조건은 재확인."
+        },
+        {
+          "placeId": "collioure",
+          "order": 1,
+          "plannedTime": "09:00–12:15",
+          "note": "수요시장 → 항구 → Notre-Dame-des-Anges → 왕궁 외관. 오전 10시 이전 도착 유지."
+        },
+        {
+          "placeId": "cadaques",
+          "order": 2,
+          "plannedTime": "14:45–17:30",
+          "note": "해안 산책로·구시가지·Santa Maria 교회·카페. Saba 주차장과 접근은 재확인."
+        }
+      ],
+      "segments": [
+        {
+          "from": "girona-stay-private",
+          "to": "collioure",
+          "mode": "driving"
+        },
+        {
+          "from": "collioure",
+          "to": "cadaques",
+          "mode": "driving",
+          "note": "직선 귀로가 아닌 해안 쪽 우회"
+        },
+        {
+          "from": "cadaques",
+          "to": "girona-stay-private",
+          "mode": "driving",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "city": "Bàscara · Tossa de Mar · Sant Feliu · Pals · Peratallada",
+      "title": "Tossa 해안축과 귀로의 석조마을",
+      "center": [
+        41.9,
+        3.02
+      ],
+      "zoom": 9,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "girona-stay-private",
+          "order": 0,
+          "plannedTime": "08:20 출발",
+          "note": "정확한 출발 위치는 개인 보관본에서 확인."
+        },
+        {
+          "placeId": "tossa-parking-pelegri",
+          "order": 1,
+          "plannedTime": "09:45 도착",
+          "note": "공식 주차 권역. 당일 운영·만차 여부 재확인."
+        },
+        {
+          "placeId": "tossa-de-mar",
+          "order": 2,
+          "plannedTime": "09:45–12:30",
+          "note": "Vila Vella → 등대 전망대 → Platja Gran."
+        },
+        {
+          "placeId": "sant-feliu-la-corxera-parking",
+          "order": 3,
+          "plannedTime": "13:10 도착",
+          "note": "La Corxera 주차 후 도보 이동."
+        },
+        {
+          "placeId": "sant-feliu-de-guixols",
+          "order": 4,
+          "plannedTime": "13:10–14:30",
+          "note": "해안 산책·점심. 날씨·피로 시 우회."
+        },
+        {
+          "placeId": "pals-abeurador-parking",
+          "order": 5,
+          "plannedTime": "15:20 도착",
+          "note": "Pals 선택 방문 때만 사용."
+        },
+        {
+          "placeId": "pals",
+          "order": 6,
+          "plannedTime": "15:20–16:10",
+          "note": "선택 일정. Tossa 출발이 13:00을 넘으면 삭제."
+        },
+        {
+          "placeId": "peratallada-baix-parking",
+          "order": 7,
+          "plannedTime": "16:25 도착",
+          "note": "차량 통제 구역 밖 공식 주차장."
+        },
+        {
+          "placeId": "peratallada",
+          "order": 8,
+          "plannedTime": "16:25–17:40",
+          "note": "석조 골목·광장."
+        },
+        {
+          "placeId": "girona-stay-private",
+          "order": 9,
+          "plannedTime": "18:20–18:40 복귀",
+          "note": "정확한 목적지는 개인 보관본에서 확인."
+        }
+      ],
+      "segments": [
+        {
+          "from": "girona-stay-private",
+          "to": "tossa-parking-pelegri",
+          "mode": "driving",
+          "note": "현재 위치에서 공개 주차장까지 안내."
+        },
+        {
+          "from": "tossa-parking-pelegri",
+          "to": "tossa-de-mar",
+          "mode": "walking"
+        },
+        {
+          "from": "tossa-de-mar",
+          "to": "sant-feliu-la-corxera-parking",
+          "mode": "driving",
+          "note": "GI-682 해안도로. 악천후 시 회피."
+        },
+        {
+          "from": "sant-feliu-la-corxera-parking",
+          "to": "sant-feliu-de-guixols",
+          "mode": "walking"
+        },
+        {
+          "from": "sant-feliu-de-guixols",
+          "to": "pals-abeurador-parking",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "pals-abeurador-parking",
+          "to": "pals",
+          "mode": "walking",
+          "optional": true
+        },
+        {
+          "from": "pals",
+          "to": "peratallada-baix-parking",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "sant-feliu-de-guixols",
+          "to": "peratallada-baix-parking",
+          "mode": "driving",
+          "note": "Pals 생략 시 직행."
+        },
+        {
+          "from": "peratallada-baix-parking",
+          "to": "peratallada",
+          "mode": "walking"
+        },
+        {
+          "from": "peratallada",
+          "to": "girona-stay-private",
+          "mode": "driving",
+          "manual": true,
+          "note": "개인 숙소 복귀는 공개 링크를 만들지 않음."
+        }
+      ]
+    }
+  ]
+}
