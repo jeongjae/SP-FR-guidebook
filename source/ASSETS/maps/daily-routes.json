@@ -6,17 +6,17 @@
       "city": "Barcelona",
       "title": "도착, 숙소 정착, 에이샴플라 생활권 적응",
       "center": [
-        41.39382,
-        2.17132
+        41.3752738,
+        2.1476619
       ],
       "zoom": 14,
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "barcelona-stay-candidate",
+          "placeId": "barcelona-stay",
           "order": 1,
           "plannedTime": "17:30–18:30",
-          "note": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인)."
         }
       ],
       "segments": []
@@ -33,10 +33,10 @@
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "barcelona-stay-candidate",
+          "placeId": "barcelona-stay",
           "order": 0,
           "plannedTime": "숙소 출발 전 · 16:10 이후",
-          "note": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인)."
         },
         {
           "placeId": "sagrada-familia",
@@ -53,7 +53,7 @@
       ],
       "segments": [
         {
-          "from": "barcelona-stay-candidate",
+          "from": "barcelona-stay",
           "to": "sagrada-familia",
           "mode": "walking"
         },
@@ -76,10 +76,10 @@
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "barcelona-stay-candidate",
+          "placeId": "barcelona-stay",
           "order": 0,
           "plannedTime": "08:10–09:30 · 18:30–19:30",
-          "note": "숙소 후보. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "Occidental Barcelona 1929. 예약완료 · 체크인 14:00 · 체크아웃 09-01 12:00 (예약번호·취소기한 재확인)."
         },
         {
           "placeId": "barri-gotic",
@@ -102,7 +102,7 @@
       ],
       "segments": [
         {
-          "from": "barcelona-stay-candidate",
+          "from": "barcelona-stay",
           "to": "barri-gotic",
           "mode": "walking"
         },
