@@ -461,6 +461,265 @@
           "mode": "transit"
         }
       ]
+    },
+    {
+      "date": "2026-09-08",
+      "city": "Nice",
+      "title": "Libération 시장과 사진미술관 — 니스 마지막 날",
+      "center": [
+        43.702,
+        7.268
+      ],
+      "zoom": 14,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "nice-stay-candidate",
+          "order": 0,
+          "plannedTime": "09:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "marche-de-la-liberation",
+          "order": 1,
+          "plannedTime": "09:20–10:30",
+          "note": "실제 장보기 · 9/9 차량 간식 준비."
+        },
+        {
+          "placeId": "musee-photographie-charles-negre",
+          "order": 2,
+          "plannedTime": "10:45–12:30",
+          "note": "선택. 화요일 10:00–18:00 운영. 피로하면 생략."
+        }
+      ],
+      "segments": [
+        {
+          "from": "nice-stay-candidate",
+          "to": "marche-de-la-liberation",
+          "mode": "walking"
+        },
+        {
+          "from": "marche-de-la-liberation",
+          "to": "musee-photographie-charles-negre",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "city": "Nice · Saint-Paul · Grasse · Aix",
+      "title": "Nice → Aix 이동 — Saint-Paul-de-Vence · Grasse 경유",
+      "center": [
+        43.62,
+        6.55
+      ],
+      "zoom": 9,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "nice-stay-candidate",
+          "order": 0,
+          "plannedTime": "07:00–08:00 체크아웃",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "nice-airport-terminal-2",
+          "order": 1,
+          "plannedTime": "08:15 전후 렌터카 인수",
+          "note": "자동변속·보험·편도반납·차체촬영."
+        },
+        {
+          "placeId": "saint-paul-de-vence",
+          "order": 2,
+          "plannedTime": "09:30–11:00",
+          "note": "골목·성벽. 주차장은 현장 안내 확인 — 사전 미지정."
+        },
+        {
+          "placeId": "grasse-vieille-ville",
+          "order": 3,
+          "plannedTime": "12:30–14:00",
+          "note": "구시가지 도보. 주차장은 현장 안내 확인 — 사전 미지정."
+        },
+        {
+          "placeId": "aix-stay-candidate",
+          "order": 4,
+          "plannedTime": "17:00 이후 체크인",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        }
+      ],
+      "segments": [
+        {
+          "from": "nice-stay-candidate",
+          "to": "nice-airport-terminal-2",
+          "mode": "transit"
+        },
+        {
+          "from": "nice-airport-terminal-2",
+          "to": "saint-paul-de-vence",
+          "mode": "driving"
+        },
+        {
+          "from": "saint-paul-de-vence",
+          "to": "grasse-vieille-ville",
+          "mode": "driving"
+        },
+        {
+          "from": "grasse-vieille-ville",
+          "to": "aix-stay-candidate",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "city": "Aix-en-Provence",
+      "title": "Richelme 목요시장과 Musée Granet",
+      "center": [
+        43.528,
+        5.449
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "aix-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:20 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "place-richelme",
+          "order": 1,
+          "plannedTime": "08:30–10:00",
+          "note": "목요시장 — 과일·chèvre·토마토·빵."
+        },
+        {
+          "placeId": "musee-granet",
+          "order": 2,
+          "plannedTime": "13:40–16:10",
+          "note": "Cézanne·프로방스·특별전 중 2개 축."
+        }
+      ],
+      "segments": [
+        {
+          "from": "aix-stay-candidate",
+          "to": "place-richelme",
+          "mode": "walking"
+        },
+        {
+          "from": "place-richelme",
+          "to": "musee-granet",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "city": "Aix · Marseille",
+      "title": "Marseille 당일 — Vieux-Port · Le Panier · Mucem",
+      "center": [
+        43.3,
+        5.37
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "aix-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:10 출발",
+          "note": "Ligne 50 실제 시각·정류장 전날 확인."
+        },
+        {
+          "placeId": "marseille-vieux-port",
+          "order": 1,
+          "plannedTime": "09:45–10:30",
+          "note": "항구축을 읽고 북쪽 부두로."
+        },
+        {
+          "placeId": "place-de-lenche",
+          "order": 2,
+          "plannedTime": "10:30–11:30",
+          "note": "Le Panier — 경사 골목 60분 상한."
+        },
+        {
+          "placeId": "mucem",
+          "order": 3,
+          "plannedTime": "13:15–15:00",
+          "note": "전시 하나 + 건축·보행교."
+        },
+        {
+          "placeId": "fort-saint-jean",
+          "order": 4,
+          "plannedTime": "15:00–16:10",
+          "note": "정원·전망·카페 휴식 포함."
+        },
+        {
+          "placeId": "marseille-saint-charles",
+          "order": 5,
+          "plannedTime": "17:15–19:00 귀환",
+          "note": "귀환편 여유 확보."
+        }
+      ],
+      "segments": [
+        {
+          "from": "aix-stay-candidate",
+          "to": "marseille-vieux-port",
+          "mode": "transit"
+        },
+        {
+          "from": "marseille-vieux-port",
+          "to": "place-de-lenche",
+          "mode": "walking"
+        },
+        {
+          "from": "place-de-lenche",
+          "to": "mucem",
+          "mode": "walking"
+        },
+        {
+          "from": "mucem",
+          "to": "fort-saint-jean",
+          "mode": "walking"
+        },
+        {
+          "from": "fort-saint-jean",
+          "to": "marseille-saint-charles",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "city": "Aix-en-Provence",
+      "title": "Atelier des Lauves — 세잔의 아틀리에",
+      "center": [
+        43.534,
+        5.446
+      ],
+      "zoom": 14,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "aix-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:30 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "atelier-des-lauves",
+          "order": 1,
+          "plannedTime": "11:00–12:25",
+          "note": "예약시간 15분 전 도착."
+        }
+      ],
+      "segments": [
+        {
+          "from": "aix-stay-candidate",
+          "to": "atelier-des-lauves",
+          "mode": "walking"
+        }
+      ]
     }
   ]
 }
