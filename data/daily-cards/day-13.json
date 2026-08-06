@@ -3,100 +3,184 @@
   "day": 13,
   "date": "2026-09-10",
   "city": "Aix-en-Provence",
-  "title": "Aix 구시가지와 Granet",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "시장, Vieil Aix와 Musée Granet",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "08:30",
+  "endTime": "21:00",
+  "totalDuration": "12시간 30분",
+  "totalDistance": "약 4km · 도보",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Adagio Aix Centre (후보)",
+    "lat": 43.528998,
+    "lng": 5.440842,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "thursday-market",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "목요시장",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "목요시장",
-      "menu": null,
-      "reservation": "Granet·식당",
+      "start": "08:30",
+      "end": "10:00",
+      "name": "Richelme·목요시장",
+      "category": "shopping",
+      "lat": 43.5290025,
+      "lng": 5.4512995,
+      "summary": "리셸므는 매일 식료품, 프레셰르는 주 3회 종합 — 13시 파장",
+      "menu": "과일·chèvre·토마토·빵 소량",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "cours-mirabeau",
+      "id": "vieil-aix",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Cours Mirabeau",
+      "start": "10:00",
+      "end": "11:40",
+      "name": "Vieil Aix",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Cours Mirabeau",
+      "lat": 43.528963,
+      "lng": 5.4481344,
+      "summary": "Hôtel de Ville·Albertas·Cathédrale·Saporta, 이후 카페",
       "menu": null,
-      "reservation": "Granet·식당",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "mus-e-granet",
+      "id": "hotel-lunch",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Musée Granet",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Musée Granet",
+      "start": "12:30",
+      "end": "13:20",
+      "name": "숙소 점심·휴식",
+      "category": "hotel",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "summary": "40분 이상 앉아 쉼",
       "menu": null,
-      "reservation": "Granet·식당",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "granet",
+      "order": 4,
+      "start": "13:40",
+      "end": "16:10",
+      "name": "Musée Granet",
+      "category": "culture",
+      "lat": 43.52557,
+      "lng": 5.45251,
+      "summary": "Cézanne·프로방스·특별전 중 2개 축만",
+      "menu": null,
+      "reservation": "Granet 운영·특별전 재확인",
       "optional": false
     },
     {
       "id": "mazarin",
-      "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Mazarin",
+      "order": 5,
+      "start": "16:10",
+      "end": "17:10",
+      "name": "Quartier Mazarin",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Mazarin",
+      "lat": 43.5253676,
+      "lng": 5.4505977,
+      "summary": "미술관 뒤 느린 산책",
       "menu": null,
-      "reservation": "Granet·식당",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "aix-stay-return",
+      "order": 6,
+      "start": "17:15",
+      "end": null,
+      "name": "숙소 휴식·저녁",
+      "category": "hotel",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "summary": "19:30 Coucou 또는 La Brocherie — 첫 정식저녁",
+      "menu": null,
+      "reservation": "저녁 식당 예약",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "thursday-market",
+      "to": "vieil-aix",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vieil-aix",
+      "to": "hotel-lunch",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "hotel-lunch",
+      "to": "granet",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "1.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "granet",
+      "to": "mazarin",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "mazarin",
+      "to": "aix-stay-return",
+      "mode": "walk",
+      "duration": "12분",
+      "distance": "0.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "Granet·식당"
+    "도보 (구시가지 압축권)"
   ],
   "food": [
-    "시장점심"
+    "시장 조달·카페 Weibel",
+    "19:30 Coucou 또는 La Brocherie"
   ],
   "highlights": [
-    "목요시장, Cours Mirabeau, Musée Granet, Mazarin",
-    "선택·축소: 성당·카페"
+    "목요시장 08:30 — 13시 파장",
+    "Granet 3시간 30분 상한 내",
+    "시장 후 60분 휴식"
   ],
-  "backup": "Granet·카페 중심",
-  "map": null,
+  "backup": "시장 혼잡·보행 피로 시 Mazarin·성당 삭제, Granet·카페 중심",
+  "map": {
+    "zoom": 15,
+    "center": [
+      43.5273,
+      5.4465
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Aix 숙소 후보(Adagio) 승인 — 점심·귀환 동선 좌표 교체",
+    "Granet 2026 특별전·요금 재확인",
+    "저녁 식당(Coucou/La Brocherie) 예약"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-13",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-13",
+    "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-13",
+    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Place des Prêcheurs·Place Richelme·Rue Cardinale"
   ]
 }

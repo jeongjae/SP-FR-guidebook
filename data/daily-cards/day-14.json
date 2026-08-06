@@ -4,113 +4,206 @@
   "date": "2026-09-11",
   "city": "Aix-en-Provence",
   "title": "Marseille 당일치기",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "08:10",
+  "endTime": "19:00",
+  "totalDuration": "10시간 50분",
+  "totalDistance": "L50 왕복 + 도보 약 4km",
   "fatigue": "4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Adagio Aix Centre (후보)",
+    "lat": 43.528998,
+    "lng": 5.440842,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "aix-gare-routiere",
       "order": 1,
-      "start": null,
+      "start": "08:10",
       "end": null,
-      "name": "대중교통 왕복",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "대중교통 왕복",
+      "name": "Aix 버스터미널 — Ligne 50",
+      "category": "transport",
+      "lat": 43.5234687,
+      "lng": 5.4383612,
+      "summary": "L50 실제 시각·정류장 전날 확인, 버스 20분 전 도착",
       "menu": null,
-      "reservation": "L50/TER·Mucem",
+      "reservation": "L50 시각표 확인",
       "optional": false
     },
     {
       "id": "vieux-port",
       "order": 2,
-      "start": null,
-      "end": null,
+      "start": "09:45",
+      "end": "10:30",
       "name": "Vieux-Port",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Vieux-Port",
+      "lat": 43.2951,
+      "lng": 5.374,
+      "summary": "Quai des Belges에서 항구축 확인 후 북쪽 부두 40–50분",
       "menu": null,
-      "reservation": "L50/TER·Mucem",
+      "reservation": null,
       "optional": false
     },
     {
       "id": "le-panier",
       "order": 3,
-      "start": null,
-      "end": null,
+      "start": "10:30",
+      "end": "11:30",
       "name": "Le Panier",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Le Panier",
+      "lat": 43.3006,
+      "lng": 5.3674,
+      "summary": "Place de Lenche 중심 — 경사골목 60분 상한, 소매치기 주의",
       "menu": null,
-      "reservation": "L50/TER·Mucem",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "panier-lunch",
+      "order": 4,
+      "start": "11:45",
+      "end": "13:00",
+      "name": "점심·휴식",
+      "category": "food",
+      "lat": 43.2995,
+      "lng": 5.365,
+      "summary": "Le Panier 또는 Mucem 관내 후보 — 점심과 카페 90분",
+      "menu": "현지 비스트로",
+      "reservation": null,
       "optional": false
     },
     {
       "id": "mucem",
-      "order": 4,
-      "start": null,
-      "end": null,
+      "order": 5,
+      "start": "13:15",
+      "end": "15:00",
       "name": "Mucem",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Mucem",
+      "category": "culture",
+      "lat": 43.2967,
+      "lng": 5.3612,
+      "summary": "전시 하나 + 건축·보행교",
       "menu": null,
-      "reservation": "L50/TER·Mucem",
+      "reservation": "Mucem 운영 재확인",
       "optional": false
     },
     {
       "id": "fort-saint-jean",
-      "order": 5,
-      "start": null,
-      "end": null,
+      "order": 6,
+      "start": "15:00",
+      "end": "16:10",
       "name": "Fort Saint-Jean",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Fort Saint-Jean",
+      "lat": 43.2959,
+      "lng": 5.3635,
+      "summary": "정원·전망·카페 휴식 포함, 이후 선택 전망은 체력·맑은 날만",
       "menu": null,
-      "reservation": "L50/TER·Mucem",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "aix-return",
+      "order": 7,
+      "start": "17:15",
+      "end": "19:00",
+      "name": "Saint-Charles→Aix 귀환",
+      "category": "hotel",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "summary": "귀환편 여유 — 저녁은 숙소권에서 가볍게",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "aix-gare-routiere",
+      "to": "vieux-port",
+      "mode": "bus",
+      "duration": null,
+      "distance": null,
+      "line": "Ligne 50",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vieux-port",
+      "to": "le-panier",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "le-panier",
+      "to": "panier-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "panier-lunch",
+      "to": "mucem",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "mucem",
+      "to": "fort-saint-jean",
+      "mode": "walk",
+      "duration": "5분 (보행교)",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "fort-saint-jean",
+      "to": "aix-return",
+      "mode": "bus",
+      "duration": null,
+      "distance": null,
+      "line": "L50 또는 TER Saint-Charles",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "L50/TER·Mucem"
+    "Ligne 50 버스 왕복 (TER 대안)",
+    "Marseille 도보"
   ],
   "food": [
-    "Vieux-Port/Le Panier 점심"
+    "Le Panier 점심 또는 Mucem 관내"
   ],
   "highlights": [
-    "대중교통 왕복, Vieux-Port, Le Panier, Mucem, Fort Saint-Jean",
-    "선택·축소: 피로·우천 시 Mucem+항구만; Cassis는 별도 대체안"
+    "Vieux-Port→Panier→Mucem·Fort만 — 과밀 회피",
+    "Notre-Dame de la Garde는 체력·맑은 날만",
+    "Cassis와 같은 날 결합 금지"
   ],
-  "backup": "Mucem·Fort만 또는 Aix 생활일",
-  "map": null,
+  "backup": "피로·우천 시 Mucem+항구만, 또는 Aix 생활일 전환",
+  "map": {
+    "zoom": 11,
+    "center": [
+      43.41,
+      5.407
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "L50 시각표·정류장 확인",
+    "Mucem 2026 운영·전시 재확인",
+    "Aix 숙소 후보(Adagio) 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-14",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-14",
+    "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-14",
+    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Aix 버스터미널"
   ]
 }
