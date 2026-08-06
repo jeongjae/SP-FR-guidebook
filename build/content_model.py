@@ -123,12 +123,15 @@ def build_graph(*, chapters, trip_start, trip_end, places, place_days,
     stays = []
     for row in _rows(tracker_path, "Accommodation"):
         rid = region_by_name.get(str(row["거점"]).lower())
+        private_stay = str(row["거점"]).lower() == "bàscara"
         stays.append({
             "id": f'stay:{_slug(str(row["거점"]))}', "regionId": rid,
             "checkIn": row.get("체크인"), "checkOut": row.get("체크아웃"),
             "nights": row.get("박수"), "status": row.get("상태"),
-            "area": row.get("생활권/후보"), "address": row.get("주소"),
-            "bookingNumber": row.get("예약번호"), "sourceUrl": row.get("소스 URL"),
+            "area": row.get("생활권/후보"),
+            "address": None if private_stay else row.get("주소"),
+            "bookingNumber": row.get("예약번호"),
+            "sourceUrl": None if private_stay else row.get("소스 URL"),
         })
 
     reservations = []

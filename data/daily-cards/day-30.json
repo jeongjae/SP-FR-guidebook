@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "day": 30,
+  "date": "2026-09-27",
+  "city": "Paris",
+  "title": "일요일 생활과 Marais",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "2~4",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "luxembourg",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Luxembourg",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Luxembourg",
+      "menu": null,
+      "reservation": "공연 조건부",
+      "optional": false
+    },
+    {
+      "id": "march-monge",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Marché Monge",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Marché Monge",
+      "menu": null,
+      "reservation": "공연 조건부",
+      "optional": false
+    },
+    {
+      "id": "marais",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Marais",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Marais",
+      "menu": null,
+      "reservation": "공연 조건부",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "공연 조건부"
+  ],
+  "food": [
+    "시장·Marais"
+  ],
+  "highlights": [
+    "Luxembourg, Marché Monge, Marais",
+    "선택·축소: Hamlet 공연 시 Marais 이동"
+  ],
+  "backup": "공원·시장 중심",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

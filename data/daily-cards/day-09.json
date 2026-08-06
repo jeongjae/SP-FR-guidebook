@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0",
+  "day": 9,
+  "date": "2026-09-06",
+  "city": "Nice",
+  "title": "Cannes 당일치기",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": "08:30",
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": "TER 왕복 + 도보 약 6km",
+  "fatigue": "4",
+  "hotel": {
+    "name": "AMMI Masséna (후보)",
+    "lat": 43.6978,
+    "lng": 7.26836,
+    "status": "candidate"
+  },
+  "stops": [
+    {
+      "id": "nice-ville",
+      "order": 1,
+      "start": "08:30",
+      "end": null,
+      "name": "Nice-Ville역 출발",
+      "category": "transport",
+      "lat": 43.70499,
+      "lng": 7.26199,
+      "summary": "TER 20분 여유 — 일요일 배차 재확인",
+      "menu": null,
+      "reservation": "TER 시각표 재확인",
+      "optional": false
+    },
+    {
+      "id": "marche-forville",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Marché Forville",
+      "category": "shopping",
+      "lat": 43.5521312,
+      "lng": 7.0121436,
+      "summary": "식자재 중심 시장 — Cours Saleya와 성격 비교",
+      "menu": "소카·피살라디에르·근대 파이",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "croisette",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "La Croisette",
+      "category": "sight",
+      "lat": 43.5415352,
+      "lng": 7.0344284,
+      "summary": "해안 호텔·명품가를 먼저 본다 — 순서가 중요",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "vieux-port-cannes",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "Vieux-Port",
+      "category": "sight",
+      "lat": 43.5501963,
+      "lng": 7.0120893,
+      "summary": "Quai Saint-Pierre를 따라 항구로",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "le-suquet",
+      "order": 5,
+      "start": null,
+      "end": null,
+      "name": "Le Suquet",
+      "category": "sight",
+      "lat": 43.5500603,
+      "lng": 7.0104285,
+      "summary": "언덕에 오르면 칸이 원래 어촌이었음이 보인다",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "nice-return",
+      "order": 6,
+      "start": null,
+      "end": null,
+      "name": "Nice 귀환",
+      "category": "hotel",
+      "lat": 43.6978,
+      "lng": 7.26836,
+      "summary": "혼잡 시 핵심만 보고 조기 귀환",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    }
+  ],
+  "legs": [
+    {
+      "from": "nice-ville",
+      "to": "marche-forville",
+      "mode": "train",
+      "duration": null,
+      "distance": null,
+      "line": "TER Nice→Cannes",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "marche-forville",
+      "to": "croisette",
+      "mode": "walk",
+      "duration": "30분",
+      "distance": "2.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "croisette",
+      "to": "vieux-port-cannes",
+      "mode": "walk",
+      "duration": "30분",
+      "distance": "2.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vieux-port-cannes",
+      "to": "le-suquet",
+      "mode": "walk",
+      "duration": "5분 (계단)",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "le-suquet",
+      "to": "nice-return",
+      "mode": "train",
+      "duration": null,
+      "distance": null,
+      "line": "TER Cannes→Nice",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
+  "transport": [
+    "TER 왕복",
+    "칸 시내 도보"
+  ],
+  "food": [
+    "Forville 인근 점심"
+  ],
+  "highlights": [
+    "08:30 Nice 출발",
+    "크루아제트 먼저, 르 쉬케는 나중",
+    "일요일 열차·해안 혼잡 주의"
+  ],
+  "backup": "혼잡 시 쇼핑·해변 연장 삭제, 핵심만 후 조기 귀환",
+  "map": {
+    "zoom": 11,
+    "center": [
+      43.628,
+      7.14
+    ],
+    "routeCache": null
+  },
+  "needsReview": [
+    "TER 일요일 시각표·소요시간 확정",
+    "칸 각 일정 시각 확정, Forville 점심 식당 미정",
+    "Le Suquet 운영·요금 재확인 (원고 pending 배지)",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-9",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-9",
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-9",
+    "OSM Nominatim 지오코딩 2026-08-06: Forville·Suquet·Quai Saint-Pierre·Croisette·칸역",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+  ]
+}

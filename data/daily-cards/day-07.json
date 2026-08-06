@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0",
+  "day": 7,
+  "date": "2026-09-04",
+  "city": "Nice",
+  "title": "Bàscara→Nice 이동",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": "이동수단 확정 후 계산",
+  "fatigue": "4–5",
+  "hotel": {
+    "name": "AMMI Masséna (후보)",
+    "lat": 43.6978,
+    "lng": 7.26836,
+    "status": "candidate"
+  },
+  "stops": [
+    {
+      "id": "bascara-checkout",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Bàscara 체크아웃",
+      "category": "hotel",
+      "lat": 42.164,
+      "lng": 2.914,
+      "summary": "체크아웃 조건 재확인, 이동수단 확정 후 출발 시각 역산",
+      "menu": null,
+      "reservation": "체크아웃 조건·이동수단 확정 필요",
+      "optional": false
+    },
+    {
+      "id": "nice-checkin",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Nice 체크인",
+      "category": "hotel",
+      "lat": 43.6978,
+      "lng": 7.26836,
+      "summary": "도착 후에는 체크인만 — 시간지정 관광을 넣지 않는다 (P0 이동일)",
+      "menu": null,
+      "reservation": "Nice 숙소 후보 확정 필요",
+      "optional": false
+    },
+    {
+      "id": "promenade",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Promenade des Anglais 적응 산책",
+      "category": "sight",
+      "lat": 43.695,
+      "lng": 7.257,
+      "summary": "시차·이동 피로에는 평지 직선 산책 — 자갈 해변이다",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "nice-stay-return",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 43.6978,
+      "lng": 7.26836,
+      "summary": "이동일 저녁 — 일찍 마무리하고 다음 날 시장 아침",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    }
+  ],
+  "legs": [
+    {
+      "from": "bascara-checkout",
+      "to": "nice-checkin",
+      "mode": "unconfirmed",
+      "duration": null,
+      "distance": null,
+      "line": "차량반납·항공/철도 시나리오 검토 중",
+      "geometryStatus": "needs-review"
+    },
+    {
+      "from": "nice-checkin",
+      "to": "promenade",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "약 0.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "promenade",
+      "to": "nice-stay-return",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "약 0.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
+  "transport": [
+    "이동수단 미확정 — 차량반납지 확정이 선행"
+  ],
+  "food": [
+    "이동계획 확정 후 결정"
+  ],
+  "highlights": [
+    "P0 이동일 — 관광 없음",
+    "도착 후 체크인만",
+    "저녁 Promenade 산책 선택"
+  ],
+  "backup": "NCE 도착 후 체크인만, Nice 적응 산책 삭제",
+  "map": {
+    "zoom": 7,
+    "center": [
+      42.95,
+      5.1
+    ],
+    "routeCache": null
+  },
+  "needsReview": [
+    "이동수단·차량 반납지 미확정 (감사 문서 시나리오: Girona→BCN 반납→항공→Nice)",
+    "Nice 숙소 후보(AMMI Masséna) 승인",
+    "Bàscara 체크아웃 조건 확인",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-7",
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-7-8",
+    "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "day": 8,
+  "date": "2026-09-05",
+  "city": "Nice",
+  "title": "Nice 시장·구시가지·성채 언덕",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": "08:30",
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": "약 3km · 도보",
+  "fatigue": "3",
+  "hotel": {
+    "name": "AMMI Masséna (후보)",
+    "lat": 43.6978,
+    "lng": 7.26836,
+    "status": "candidate"
+  },
+  "stops": [
+    {
+      "id": "cours-saleya",
+      "order": 1,
+      "start": "08:30",
+      "end": null,
+      "name": "Cours Saleya 시장",
+      "category": "shopping",
+      "lat": 43.69518,
+      "lng": 7.2758,
+      "summary": "시장에서 사고, 밥은 골목에서 — 광장 대형 테라스 회피",
+      "menu": "꽃·농산물·치즈 (체류 45–60분)",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "vieux-nice",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Vieux Nice 구시가지",
+      "category": "sight",
+      "lat": 43.6971832,
+      "lng": 7.2762796,
+      "summary": "Rue Droite→로세티 광장, 파사드 상부의 트롱프뢰유는 위를 보라",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "castle-hill",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Colline du Château",
+      "category": "sight",
+      "lat": 43.69692,
+      "lng": 7.28077,
+      "summary": "무료 엘리베이터 5분 또는 계단 30분 — 늦은 오후가 절충점",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "port-lympia",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "Port 산책",
+      "category": "sight",
+      "lat": 43.6941576,
+      "lng": 7.2845515,
+      "summary": "피로 시 생략 — 우선 삭제 대상",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "nice-stay-return",
+      "order": 5,
+      "start": null,
+      "end": null,
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 43.6978,
+      "lng": 7.26836,
+      "summary": "Castle Hill 전후 45분 휴식을 지킨다",
+      "menu": null,
+      "reservation": "숙소 후보 확정 필요",
+      "optional": false
+    }
+  ],
+  "legs": [
+    {
+      "from": "cours-saleya",
+      "to": "vieux-nice",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vieux-nice",
+      "to": "castle-hill",
+      "mode": "walk",
+      "duration": "10분 + 엘리베이터",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "castle-hill",
+      "to": "port-lympia",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "port-lympia",
+      "to": "nice-stay-return",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": "1.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
+  "transport": [
+    "도보"
+  ],
+  "food": [
+    "시장 조달 또는 구시가지 골목 식당"
+  ],
+  "highlights": [
+    "08:30 시장 도착",
+    "Castle Hill 전후 45분 휴식",
+    "토요일 혼잡·더위 주의"
+  ],
+  "backup": "계단·더위 부담 시 구시가지 실내·카페 중심",
+  "map": {
+    "zoom": 15,
+    "center": [
+      43.6962,
+      7.2775
+    ],
+    "routeCache": null
+  },
+  "needsReview": [
+    "Nice 숙소 후보(AMMI Masséna) 승인 및 출발점 교체",
+    "시장 이후 각 일정 시각 확정",
+    "구시가지 점심 식당 미정 — 현장 선택",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-8",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-8",
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-7-8",
+    "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Place Rossetti·Port Lympia",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+  ]
+}

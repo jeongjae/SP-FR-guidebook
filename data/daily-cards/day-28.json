@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "day": 28,
+  "date": "2026-09-25",
+  "city": "Paris",
+  "title": "생활권 적응 완충일",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "1~2",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "stop",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "슈퍼·빵집·약국 확인",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "슈퍼·빵집·약국 확인",
+      "menu": null,
+      "reservation": "숙소 생활권",
+      "optional": false
+    },
+    {
+      "id": "stop-2",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "느린 장보기",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "느린 장보기",
+      "menu": null,
+      "reservation": "숙소 생활권",
+      "optional": false
+    },
+    {
+      "id": "stop-3",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "동네 카페",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "동네 카페",
+      "menu": null,
+      "reservation": "숙소 생활권",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "숙소 생활권"
+  ],
+  "food": [
+    "숙소식·동네 카페"
+  ],
+  "highlights": [
+    "슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페",
+    "선택·축소: 피로가 적으면 강변·공원 1곳"
+  ],
+  "backup": "슈퍼·빵집·약국 확인만",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

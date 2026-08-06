@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "day": 1,
+  "date": "2026-08-29",
+  "city": "Barcelona",
+  "title": "도착과 에이샴플라 생활권 적응",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": "15:10",
+  "endTime": "20:30",
+  "totalDuration": "5시간 20분",
+  "totalDistance": "약 17km · 택시+도보",
+  "fatigue": "2",
+  "hotel": {
+    "name": "Praktik Garden (후보)",
+    "lat": 41.39382,
+    "lng": 2.17132,
+    "status": "candidate"
+  },
+  "stops": [
+    {
+      "id": "bcn-airport",
+      "order": 1,
+      "start": "15:10",
+      "end": "16:30",
+      "name": "바르셀로나 엘프라트 공항 도착",
+      "category": "transport",
+      "lat": 41.296944,
+      "lng": 2.0790474,
+      "summary": "입국·수하물 수령에 75–90분 여유",
+      "menu": null,
+      "reservation": "항공권에서 터미널·도착시각 재확인",
+      "optional": false
+    },
+    {
+      "id": "barcelona-checkin",
+      "order": 2,
+      "start": "17:30",
+      "end": "18:30",
+      "name": "숙소 체크인·휴식",
+      "category": "hotel",
+      "lat": 41.39382,
+      "lng": 2.17132,
+      "summary": "에어컨·냉장고·세탁·식재료 보관 상태 확인",
+      "menu": null,
+      "reservation": "숙소 후보 확정 필요",
+      "optional": false
+    },
+    {
+      "id": "concepcio-area",
+      "order": 3,
+      "start": "18:30",
+      "end": "19:20",
+      "name": "생활권 산책·첫 장보기",
+      "category": "shopping",
+      "lat": 41.3958835,
+      "lng": 2.1686308,
+      "summary": "Concepció 시장이 닫았으면 인근 슈퍼마켓 이용",
+      "menu": "물·샐러드·과일·요거트·빵·햄·치즈",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "bodega-joan",
+      "order": 4,
+      "start": "19:30",
+      "end": "20:30",
+      "name": "Bodega Joan 저녁",
+      "category": "food",
+      "lat": 41.39064,
+      "lng": 2.15742,
+      "summary": "피로하면 숙소 샌드위치로 대체",
+      "menu": "타파스 중심 · 과식하지 않는다",
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "barcelona-stay-return",
+      "order": 5,
+      "start": "20:30",
+      "end": null,
+      "name": "귀가·다음 날 준비",
+      "category": "hotel",
+      "lat": 41.39382,
+      "lng": 2.17132,
+      "summary": "사그라다 티켓 QR·여권 사본·물병 준비, 취침을 늦추지 않는다",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    }
+  ],
+  "legs": [
+    {"from": "bcn-airport", "to": "barcelona-checkin", "mode": "taxi", "duration": "60분 (대기·여유 포함)", "distance": "약 15km", "line": "Aerobús €7.75 대안", "geometryStatus": "verified-cache"},
+    {"from": "barcelona-checkin", "to": "concepcio-area", "mode": "walk", "duration": "5분", "distance": "0.3km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "concepcio-area", "to": "bodega-joan", "mode": "walk", "duration": "10분", "distance": "1.1km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "bodega-joan", "to": "barcelona-stay-return", "mode": "walk", "duration": "20분", "distance": "약 1.3km", "line": null, "geometryStatus": "coordinate-line"}
+  ],
+  "transport": ["택시 (짐 2개 이상 기준)", "Aerobús €7.75 · 24시간 대안", "도보"],
+  "food": ["첫 장보기 · 물·과일·아침거리", "Bodega Joan · 타파스 (선택)"],
+  "highlights": ["터미널·도착시각 재확인", "체크인 시 세탁·냉장고 확인", "취침을 늦추지 않는다"],
+  "backup": "항공 90분 이상 지연 시 외식 취소, 숙소 간단식",
+  "map": {"zoom": 12, "center": [41.345, 2.125], "routeCache": "routes/day-01-driving-osrm.json"},
+  "needsReview": [
+    "Barcelona 숙소 후보 승인 및 실제 도착점 교체",
+    "항공권 확정 후 터미널·도착시각·픽업 방식 확정",
+    "Bodega Joan 토요일 저녁 운영 여부 출발 전 재확인",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-1",
+    "source/ASSETS/76_Daily_Execution_Maps/daily-maps.json#2026-08-29",
+    "source/ASSETS/75_Execution_Maps/Barcelona_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-05: 공항·Mercat de la Concepció",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+  ]
+}

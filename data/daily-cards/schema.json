@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jeongjae.github.io/SP-FR-guidebook/daily-card.schema.json",
+  "title": "SP-FR Daily Action Map",
+  "type": "object",
+  "required": [
+    "schemaVersion", "day", "date", "city", "title", "sourceStatus",
+    "startTime", "endTime", "totalDuration", "totalDistance", "fatigue",
+    "hotel", "stops", "legs", "transport", "food", "highlights",
+    "backup", "needsReview", "sourceRefs"
+  ],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "day": {"type": "integer", "minimum": 1, "maximum": 43},
+    "date": {"type": "string", "format": "date"},
+    "city": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "sourceStatus": {
+      "enum": ["authoritative", "candidate-latest-needs-review", "prototype-reviewed"]
+    },
+    "prototypeType": {
+      "type": ["string", "null"],
+      "enum": [null, "urban", "car-loop", "intercity"]
+    },
+    "startTime": {"type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"},
+    "endTime": {"type": ["string", "null"], "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"},
+    "totalDuration": {"type": ["string", "null"]},
+    "totalDistance": {"type": ["string", "null"]},
+    "fatigue": {"type": "string", "pattern": "^[1-5](?:[–~\\-/][1-5])?$"},
+    "hotel": {"$ref": "#/$defs/place"},
+    "stops": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/stop"}
+    },
+    "legs": {"type": "array", "items": {"$ref": "#/$defs/leg"}},
+    "transport": {"type": "array", "items": {"type": "string"}},
+    "food": {"type": "array", "items": {"type": "string"}},
+    "highlights": {"type": "array", "items": {"type": "string"}, "maxItems": 4},
+    "backup": {"type": ["string", "null"]},
+    "map": {
+      "type": ["object", "null"],
+      "properties": {
+        "zoom": {"type": "integer", "minimum": 1, "maximum": 18},
+        "center": {
+          "type": "array", "minItems": 2, "maxItems": 2,
+          "items": {"type": "number"}
+        },
+        "routeCache": {"type": ["string", "null"]}
+      },
+      "required": ["zoom", "center", "routeCache"],
+      "additionalProperties": false
+    },
+    "needsReview": {"type": "array", "items": {"type": "string"}},
+    "sourceRefs": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  },
+  "$defs": {
+    "place": {
+      "type": "object",
+      "required": ["name", "lat", "lng", "status"],
+      "properties": {
+        "name": {"type": ["string", "null"]},
+        "lat": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+        "lng": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+        "status": {"enum": ["confirmed", "candidate", "private-approximate", "needs-review"]}
+      },
+      "additionalProperties": false
+    },
+    "stop": {
+      "type": "object",
+      "required": ["id", "order", "start", "end", "name", "category", "lat", "lng", "summary", "menu", "reservation", "optional"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "order": {"type": "integer", "minimum": 1},
+        "start": {"type": ["string", "null"]},
+        "end": {"type": ["string", "null"]},
+        "name": {"type": "string", "minLength": 1},
+        "category": {"enum": ["sight", "culture", "food", "cafe", "shopping", "activity", "transport", "hotel"]},
+        "lat": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+        "lng": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+        "summary": {"type": "string"},
+        "menu": {"type": ["string", "null"]},
+        "reservation": {"type": ["string", "null"]},
+        "optional": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "leg": {
+      "type": "object",
+      "required": ["from", "to", "mode", "duration", "distance", "line", "geometryStatus"],
+      "properties": {
+        "from": {"type": "string"},
+        "to": {"type": "string"},
+        "mode": {"enum": ["walk", "metro", "train", "car", "bus", "tram", "taxi", "flight", "unconfirmed"]},
+        "duration": {"type": ["string", "null"]},
+        "distance": {"type": ["string", "null"]},
+        "line": {"type": ["string", "null"]},
+        "geometryStatus": {"enum": ["verified-cache", "coordinate-line", "needs-review"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
