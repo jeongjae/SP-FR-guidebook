@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data/images/image-manifest.json"
 ITINERARY = ROOT / "data/itinerary-places.json"
+MEDIA_CATALOG = ROOT / "data/media-catalog.json"
 REQUIRED = {"imageId", "placeId", "title", "source", "sourcePage", "originalFile",
             "creator", "license", "licenseUrl", "changes", "downloadDate", "usage",
             "role", "status", "altKo", "captionKo", "originalWidth", "originalHeight",
@@ -25,6 +26,15 @@ def main():
     for day in itinerary["days"]:
         for place in day["places"]:
             place_visibility[place["id"]] = place["visibility"]
+    # Verified media-catalog subjects (registry spots and regional foods that
+    # already carried reviewed images) are valid photo subjects too.
+    catalog = json.loads(MEDIA_CATALOG.read_text(encoding="utf-8"))
+    catalog_subjects = set()
+    for asset in catalog.get("assets", []):
+        if asset.get("placeSlug"):
+            catalog_subjects.add(asset["placeSlug"])
+        else:
+            catalog_subjects.add(asset["id"].removeprefix(asset["regionSlug"] + "-"))
     errors, ids = [], set()
     for image in payload.get("images", []):
         missing = sorted(field for field in REQUIRED if not image.get(field))
@@ -42,7 +52,8 @@ def main():
             errors.append(f"not an original Commons upload URL: {image_id}")
         if place_visibility.get(image.get("placeId")) == "private":
             errors.append(f"private place image: {image_id}")
-        if image.get("placeId") not in place_visibility:
+        if (image.get("placeId") not in place_visibility
+                and image.get("placeId") not in catalog_subjects):
             errors.append(f"placeId absent from itinerary inventory: {image_id}")
     if errors:
         print("license validation failed:")

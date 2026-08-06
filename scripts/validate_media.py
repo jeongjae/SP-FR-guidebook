@@ -25,7 +25,8 @@ def main() -> int:
     if site_exists:
         deployed_html = "\n".join(
             p.read_text(encoding="utf-8") for p in (ROOT / "site").rglob("*.html"))
-    legacy_assets = [asset for asset in catalog["assets"] if asset.get("regionSlug") != "barcelona"]
+    legacy_assets = [asset for asset in catalog["assets"]
+                     if asset.get("regionSlug") not in {"barcelona", "girona", "nice"}]
     for asset in legacy_assets:
         media_id = asset["id"]
         if media_id in ids:

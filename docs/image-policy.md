@@ -45,7 +45,7 @@ Barcelona 파일럿은 재현성과 라이선스 증빙을 위해 승인 원본�
 
 ## Attribution
 
-각 이미지 바로 아래에 저자, Wikimedia Commons, 라이선스, 원본 링크를 표시한다. 파일럿 전체 목록은 빌드가 `site/about/photo-credits.html`에 생성하고, 저장소용 목록은 `docs/photo-content/04_barcelona_photo_credits.md`에 둔다. 이미지와 크레디트의 연결이 명확해야 하며, 저자 표시가 필요한데 저자가 없으면 검사를 실패시킨다.
+각 이미지 바로 아래에 저자, Wikimedia Commons, 라이선스, 원본 링크를 표시한다. 파일럿 전체 목록은 빌드가 `site/about/photo-credits.html`에 생성하고, 저장소용 목록은 `docs/photo-content/04_photo_credits.md`에 둔다. 이미지와 크레디트의 연결이 명확해야 하며, 저자 표시가 필요한데 저자가 없으면 검사를 실패시킨다.
 
 ## 미확보 항목
 

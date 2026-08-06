@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data/images/image-manifest.json"
-OUTPUT = ROOT / "docs/photo-content/04_barcelona_photo_credits.md"
+OUTPUT = ROOT / "docs/photo-content/04_photo_credits.md"
 
 
 def render():
