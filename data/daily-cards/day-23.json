@@ -4,85 +4,185 @@
   "date": "2026-09-20",
   "city": "Lyon",
   "title": "차량반납·TGV·Lyon 적응",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "07:00",
+  "endTime": "21:00",
+  "totalDuration": "14시간",
+  "totalDistance": "차량 반납 + TGV 약 230km",
   "fatigue": "4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Hôtel de Verdun (후보)",
+    "lat": 45.74965,
+    "lng": 4.82968,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "avignon-tgv",
+      "id": "avignon-checkout",
       "order": 1,
-      "start": null,
+      "start": "07:00",
       "end": null,
-      "name": "Avignon TGV 반납",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Avignon TGV 반납",
+      "name": "Avignon 체크아웃·포장",
+      "category": "hotel",
+      "lat": 43.94993,
+      "lng": 4.81302,
+      "summary": "07:00 포장 — 주유·차량사진·영수증 준비",
       "menu": null,
-      "reservation": "렌터카 반납·TGV",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "lyon",
+      "id": "avignon-tgv",
       "order": 2,
       "start": null,
-      "end": null,
-      "name": "Lyon 도착",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Lyon 도착",
+      "end": "10:20",
+      "name": "Avignon TGV 렌터카 반납",
+      "category": "transport",
+      "lat": 43.9217832,
+      "lng": 4.786072,
+      "summary": "10시 전후 반납 목표 — 보증금 해제절차 확인, 열차 60–90분 전 완료",
       "menu": null,
-      "reservation": "렌터카 반납·TGV",
+      "reservation": "반납 시각·TGV 예약 잠금",
       "optional": false
     },
     {
-      "id": "ainay-bellecour",
+      "id": "part-dieu",
       "order": 3,
       "start": null,
-      "end": null,
-      "name": "Ainay·Bellecour",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Ainay·Bellecour",
+      "end": "12:30",
+      "name": "TGV→Lyon Part-Dieu",
+      "category": "transport",
+      "lat": 45.7605725,
+      "lng": 4.8601628,
+      "summary": "10:20–11:10대 직행 TGV, 짐은 시야 안쪽 — 도착 후 공식 택시승강장",
       "menu": null,
-      "reservation": "렌터카 반납·TGV",
+      "reservation": "TGV 편성 예약창 개방 후 확정",
+      "optional": false
+    },
+    {
+      "id": "lyon-checkin",
+      "order": 4,
+      "start": "13:00",
+      "end": "15:30",
+      "name": "체크인·점심·휴식",
+      "category": "hotel",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "summary": "큰 짐 메트로 환승 금지. 도착일 부숑 코스 금지 — 빵집·샐러드",
+      "menu": null,
+      "reservation": "Lyon 숙소 후보 확정 필요",
+      "optional": false
+    },
+    {
+      "id": "ainay-walk",
+      "order": 5,
+      "start": "15:45",
+      "end": "18:30",
+      "name": "Ainay→Bellecour→Célestins 산책",
+      "category": "sight",
+      "lat": 45.75779,
+      "lng": 4.83202,
+      "summary": "도시 중심방향과 귀가로 익히기, Saône 강변 카페 — Vieux Lyon은 건너다보기만",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "lyon-return",
+      "order": 6,
+      "start": "19:30",
+      "end": "21:00",
+      "name": "Café Comptoir Abel 저녁·귀가",
+      "category": "hotel",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "summary": "quenelle 공유, 과식 금지 — 피로·음주 시 택시",
+      "menu": null,
+      "reservation": "저녁 예약 권장",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "avignon-checkout",
+      "to": "avignon-tgv",
+      "mode": "car",
+      "duration": "약 15분",
+      "distance": "약 6km",
+      "line": "주유 포함 여유",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "avignon-tgv",
+      "to": "part-dieu",
+      "mode": "train",
+      "duration": "약 1시간 10분",
+      "distance": "약 230km",
+      "line": "TGV 직행",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "part-dieu",
+      "to": "lyon-checkin",
+      "mode": "taxi",
+      "duration": "30–45분",
+      "distance": null,
+      "line": "공식 택시승강장",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "lyon-checkin",
+      "to": "ainay-walk",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "ainay-walk",
+      "to": "lyon-return",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "렌터카 반납·TGV"
+    "렌터카 반납 (Avignon TGV)",
+    "TGV 직행",
+    "Part-Dieu 택시"
   ],
   "food": [
-    "역 간단식"
+    "도착 점심은 가볍게",
+    "Café Comptoir Abel 저녁"
   ],
   "highlights": [
-    "Avignon TGV 반납, Lyon 도착, Ainay·Bellecour",
-    "선택·축소: Jacobins·Saône 짧은 산책"
+    "P0 이동일 — 반납·수하물·열차",
+    "열차 60–90분 전 반납 완료",
+    "도착일 부숑 코스 금지"
   ],
-  "backup": "Lyon 도착 후 체크인만",
-  "map": null,
+  "backup": "지연 시 Lyon 도착 후 체크인만, 산책 삭제",
+  "map": {
+    "zoom": 8,
+    "center": [
+      44.85,
+      4.83
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "TGV 9/20 편성 예약 (예약창 개방 후)",
+    "렌터카 반납 조건·보증금 확인",
+    "Lyon 숙소 후보(Hôtel de Verdun) 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-23",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-23",
+    "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-23",
+    "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml",
+    "OSM Overpass 2026-08-06: Avignon TGV·Lyon Part-Dieu 역 좌표"
   ]
 }

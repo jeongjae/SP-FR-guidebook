@@ -4,85 +4,159 @@
   "date": "2026-09-22",
   "city": "Lyon",
   "title": "Croix-Rousse·Halles·공원",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "07:15",
+  "endTime": "19:15",
+  "totalDuration": "12시간",
+  "totalDistance": "대중교통 + 도보 약 6km",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Hôtel de Verdun (후보)",
+    "lat": 45.74965,
+    "lng": 4.82968,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "croix-rousse",
+      "id": "croix-rousse-market",
       "order": 1,
-      "start": null,
-      "end": null,
+      "start": "09:20",
+      "end": "10:10",
       "name": "Croix-Rousse 시장",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Croix-Rousse 시장",
-      "menu": null,
-      "reservation": "시장·식당",
+      "category": "shopping",
+      "lat": 45.77413,
+      "lng": 4.8318,
+      "summary": "화요일 식품시장 06:00–13:00 — 과일·치즈·빵 소량",
+      "menu": "과일·치즈·빵",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "canut",
+      "id": "croix-rousse-slopes",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "canut 맥락",
+      "start": "10:15",
+      "end": "12:00",
+      "name": "Croix-Rousse 평지와 slopes",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "canut 맥락",
+      "lat": 45.7725,
+      "lng": 4.832,
+      "summary": "Place→Maison des Canuts 외관→Mur des Canuts 선택→경사면 traboule",
       "menu": null,
-      "reservation": "시장·식당",
+      "reservation": null,
       "optional": false
     },
     {
       "id": "halles",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Halles",
+      "start": "12:35",
+      "end": "14:05",
+      "name": "Halles de Lyon Paul Bocuse 점심",
+      "category": "food",
+      "lat": 45.76337,
+      "lng": 4.85042,
+      "summary": "2–3곳을 나눠 맛봄 — 과식 시 공원 이동 30분 지연",
+      "menu": "Giraudet quenelle·Sibilia·Mère Richard",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "tete-dor",
+      "order": 4,
+      "start": "15:15",
+      "end": "18:00",
+      "name": "Parc de la Tête d'Or",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Halles",
+      "lat": 45.77969,
+      "lng": 4.85344,
+      "summary": "호수·장미원·벤치 휴식, Jason 짧은 스케치 — Julia는 공원 휴식 기본",
       "menu": null,
-      "reservation": "시장·식당",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "lyon-return",
+      "order": 5,
+      "start": "18:30",
+      "end": "19:15",
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "summary": "저녁은 가볍게",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "croix-rousse-market",
+      "to": "croix-rousse-slopes",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "croix-rousse-slopes",
+      "to": "halles",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "C선·메트로·트램 조합, 혼잡 시 택시",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "halles",
+      "to": "tete-dor",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": "1.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "tete-dor",
+      "to": "lyon-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로·트램",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "시장·식당"
+    "대중교통 (지역간 이동 3회)",
+    "도보"
   ],
   "food": [
-    "Halles 점심"
+    "Halles Paul Bocuse 점심",
+    "저녁은 가볍게"
   ],
   "highlights": [
-    "Croix-Rousse 시장, canut 맥락, Halles",
-    "선택·축소: Parc de la Tête d’Or"
+    "화요 시장 09:20 도착",
+    "지역간 이동 3회 — 동선 압축",
+    "선택 러닝은 Rhône 강변 5–7km"
   ],
-  "backup": "시장+Halles만",
-  "map": null,
+  "backup": "피로 시 시장+Halles만, 공원 삭제",
+  "map": {
+    "zoom": 13,
+    "center": [
+      45.768,
+      4.842
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "식당(Halles 내부 포함) 화요일 휴무 재확인",
+    "Lyon 숙소 후보 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-25",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-25",
+    "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-25",
+    "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml"
   ]
 }
