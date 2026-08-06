@@ -3,58 +3,186 @@
   "day": 6,
   "date": "2026-09-03",
   "city": "Bàscara",
-  "title": "Tossa·Sant Feliu와 귀로 마을",
+  "title": "Tossa·Sant Feliu와 귀로의 석조마을",
   "sourceStatus": "candidate-latest-needs-review",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "08:20",
+  "endTime": "18:30",
+  "totalDuration": "10시간 10분",
+  "totalDistance": "약 176km · 차량 경로",
   "fatigue": "4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Bàscara B&B",
+    "lat": 42.164,
+    "lng": 2.914,
+    "status": "private-approximate"
   },
   "stops": [
     {
-      "id": "b-scara-tossa-de-mar-sant-feliu-de-gu-xols-pals-peratallada-b-scara",
+      "id": "bascara-stay",
       "order": 1,
+      "start": "08:20",
+      "end": "08:20",
+      "name": "Bàscara 출발",
+      "category": "hotel",
+      "lat": 42.164,
+      "lng": 2.914,
+      "summary": "차량·주차·운전피로 확인 후 출발",
+      "menu": "물·운전 간식",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "tossa",
+      "order": 2,
+      "start": "09:45",
+      "end": "12:30",
+      "name": "Tossa de Mar",
+      "category": "sight",
+      "lat": 41.7195,
+      "lng": 2.9319,
+      "summary": "Vila Vella 성벽과 해변",
+      "menu": null,
+      "reservation": "주차·Vila Vella 접근 재확인",
+      "optional": false
+    },
+    {
+      "id": "sant-feliu",
+      "order": 3,
+      "start": "13:00",
+      "end": null,
+      "name": "Sant Feliu de Guíxols 점심",
+      "category": "food",
+      "lat": 41.78,
+      "lng": 3.0676,
+      "summary": "점심 후 짧게 걷고 이동",
+      "menu": "현지 식당 · 시간 통제가 핵심",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "pals",
+      "order": 4,
       "start": null,
       "end": null,
-      "name": "Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara",
+      "name": "Pals",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara",
+      "lat": 41.97039,
+      "lng": 3.14843,
+      "summary": "Torre de les Hores와 Josep Pla 전망대",
       "menu": null,
-      "reservation": "주차·해안도로·운전피로",
+      "reservation": "지연 시 삭제 — 우선 압축 대상",
+      "optional": true
+    },
+    {
+      "id": "peratallada",
+      "order": 5,
+      "start": null,
+      "end": "17:40",
+      "name": "Peratallada",
+      "category": "sight",
+      "lat": 41.97618,
+      "lng": 3.09007,
+      "summary": "마을 진입 전에 해자를 먼저 본다",
+      "menu": null,
+      "reservation": "골목에 차를 넣지 않는다",
+      "optional": false
+    },
+    {
+      "id": "bascara-return",
+      "order": 6,
+      "start": "18:30",
+      "end": null,
+      "name": "Bàscara 복귀",
+      "category": "hotel",
+      "lat": 42.164,
+      "lng": 2.914,
+      "summary": "저녁은 숙소식, 다음 날 이동 준비",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "bascara-stay",
+      "to": "tossa",
+      "mode": "car",
+      "duration": "약 1시간",
+      "distance": "73.8km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "tossa",
+      "to": "sant-feliu",
+      "mode": "car",
+      "duration": "약 31분",
+      "distance": "25.7km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "sant-feliu",
+      "to": "pals",
+      "mode": "car",
+      "duration": "약 30분",
+      "distance": "28.9km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "pals",
+      "to": "peratallada",
+      "mode": "car",
+      "duration": "약 13분",
+      "distance": "8.5km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "peratallada",
+      "to": "bascara-return",
+      "mode": "car",
+      "duration": "약 46분",
+      "distance": "39.6km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    }
+  ],
   "transport": [
-    "주차·해안도로·운전피로"
+    "렌터카",
+    "GI-682 해안도로 회피 기본"
   ],
   "food": [
-    "Tossa 09:45–12:30·Sant Feliu 점심"
+    "Sant Feliu 점심 · 식당 선택보다 출발 시각",
+    "숙소 저녁"
   ],
   "highlights": [
-    "Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara",
-    "선택·축소: 지연·악천후 시 Pals 삭제, GI-682 회피"
+    "Tossa 09:45–12:30",
+    "Peratallada 해자 먼저",
+    "17:40 귀로 출발"
   ],
-  "backup": "17:40 Bàscara 출발",
-  "map": null,
+  "backup": "지연·악천후 시 Pals 삭제, Peratallada 유지",
+  "map": {
+    "zoom": 10,
+    "center": [
+      41.94,
+      3.03
+    ],
+    "routeCache": "routes/day-06-driving-osrm.json"
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "Bàscara 숙소 확정 좌표로 교체(현재 근사)",
+    "Tossa 주차·Vila Vella 접근, Pals·Peratallada 체류 시각 확정",
+    "Sant Feliu 점심 식당 미정 — 현장 선택",
     "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-6",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-6",
+    "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md#Day-3",
+    "source/ASSETS/76_Daily_Execution_Maps/daily-maps.json#2026-09-03",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
   ]
 }
