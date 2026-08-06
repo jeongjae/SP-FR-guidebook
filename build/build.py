@@ -4807,14 +4807,14 @@ def check_daily_map_guards():
         required = ('class="gm-component"', 'data-scope="daily"',
                     '<script type="application/json">', '../assets/google-map-loader.js',
                     '../assets/google-map.js', '../assets/google-map.css',
-                    '<details class="day-details day-card-archive">')
+                    '<details class="day-details day-card-archive"')
         for token in required:
             if token not in text:
                 problems.append(f"{key}: Google 파일럿 HTML 누락 — {token}")
         for forbidden in ('vendor/leaflet', '../assets/daily-map-data.js', '../assets/daily-map.js'):
             if forbidden in text:
                 problems.append(f"{key}: 파일럿 페이지에 구형 자산이 남음 — {forbidden}")
-        if text.find('class="gm-component"') > text.find('<details class="day-details day-card-archive">'):
+        if text.find('class="gm-component"') > text.find('<details class="day-details day-card-archive"'):
             problems.append(f"{key}: Google 지도 → 정적 fallback 순서 훼손")
     day6 = (SITE / "daily" / "day-06.html").read_text(encoding="utf-8")
     for token in ("주차장 순서대로 운전", "tossa-parking-pelegri",
