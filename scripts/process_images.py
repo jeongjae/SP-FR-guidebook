@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import csv
 import json
@@ -97,6 +98,9 @@ def variant(image, image_id, role, width, height=None, focus=None):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", default="2026-08-05")
+    args = parser.parse_args()
     payload = json.loads(MANIFEST.read_text(encoding="utf-8"))
     log = []
     for item in payload["images"]:
@@ -125,7 +129,7 @@ def main():
         log.append(row)
         print(f"processed {item['imageId']}: "
               f"{sum(len(value) for value in variants.values())} variants")
-    payload["processedAt"] = "2026-08-05"
+    payload["processedAt"] = args.date
     MANIFEST.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     fields = ["imageId", "placeId", "title", "source", "sourcePage", "originalFile",
               "creator", "license", "licenseUrl", "changes", "downloadDate", "originalWidth",
@@ -138,7 +142,7 @@ def main():
                              "usage": ";".join(item["usage"])})
     METADATA.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(MANIFEST, METADATA)
-    LOG.write_text(json.dumps({"processedAt": "2026-08-05", "images": log},
+    LOG.write_text(json.dumps({"processedAt": args.date, "images": log},
                               ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"processed {len(payload['images'])} originals")
 
