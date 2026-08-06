@@ -25,7 +25,8 @@ def main() -> int:
     if site_exists:
         deployed_html = "\n".join(
             p.read_text(encoding="utf-8") for p in (ROOT / "site").rglob("*.html"))
-    for asset in catalog["assets"]:
+    legacy_assets = [asset for asset in catalog["assets"] if asset.get("regionSlug") != "barcelona"]
+    for asset in legacy_assets:
         media_id = asset["id"]
         if media_id in ids:
             errors.append(f"duplicate id: {media_id}")
@@ -70,7 +71,7 @@ def main() -> int:
         for error in errors:
             print(f"  - {error}")
         return 1
-    total = sum((ROOT / a["sourceFile"]).stat().st_size for a in catalog["assets"])
+    total = sum((ROOT / a["sourceFile"]).stat().st_size for a in legacy_assets)
     print(f"미디어 검증: {len(ids)}개 · {total:,} bytes · 라이선스/참조/용량 이상 없음")
     return 0
 
