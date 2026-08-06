@@ -101,10 +101,11 @@ def main() -> None:
                 day_errors.append(f"missing adjacent legs: {missing_legs}")
             if payload["stops"][-1]["category"] != "hotel":
                 day_errors.append("prototype does not end at accommodation")
-            start = int(payload["startTime"].replace(":", ""))
-            end = int(payload["endTime"].replace(":", ""))
-            if start >= end:
-                day_errors.append("start/end time inversion")
+            if payload.get("startTime") and payload.get("endTime"):
+                start = int(payload["startTime"].replace(":", ""))
+                end = int(payload["endTime"].replace(":", ""))
+                if start >= end:
+                    day_errors.append("start/end time inversion")
 
             out_slug = slug(payload)
             html_path = OUTPUT / "source" / f"{out_slug}.html"
