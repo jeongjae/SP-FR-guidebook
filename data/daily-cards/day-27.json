@@ -3,100 +3,162 @@
   "day": 27,
   "date": "2026-09-24",
   "city": "Paris",
-  "title": "Lyon→Paris·16박 정착",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Lyon→Paris, 17일 거주자가 되는 날",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": null,
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
+  "totalDistance": "TGV 약 465km + 택시",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "tgv",
+      "id": "lyon-checkout",
       "order": 1,
       "start": null,
       "end": null,
-      "name": "TGV",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "TGV",
+      "name": "Lyon 체크아웃",
+      "category": "hotel",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "summary": "16박 수하물 — 열차 기준 역산, Part-Dieu까지 택시",
       "menu": null,
-      "reservation": "TGV·Paris 숙소",
+      "reservation": "TGV 예약 잠금",
       "optional": false
     },
     {
-      "id": "stop",
+      "id": "gare-de-lyon",
       "order": 2,
       "start": null,
       "end": null,
-      "name": "체크인",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "체크인",
+      "name": "TGV→Paris Gare de Lyon",
+      "category": "transport",
+      "lat": 48.8436635,
+      "lng": 2.3744869,
+      "summary": "정확한 TGV 확정 후 문전시간 고정, 짐은 시야 안쪽",
       "menu": null,
-      "reservation": "TGV·Paris 숙소",
+      "reservation": "TGV 편성 확정 필요",
       "optional": false
     },
     {
-      "id": "stop-3",
+      "id": "paris-checkin",
       "order": 3,
       "start": null,
-      "end": null,
-      "name": "생활시설 확인",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "생활시설 확인",
+      "end": "17:00",
+      "name": "숙소 이동·체크인·객실 점검",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "도착 후 45–75분 택시 — 주방·세탁기·냉장고·엘리베이터·쓰레기 배출 확인",
       "menu": null,
-      "reservation": "TGV·Paris 숙소",
+      "reservation": "Paris 숙소 후보 확정 필요",
       "optional": false
     },
     {
-      "id": "stop-4",
+      "id": "first-grocery",
       "order": 4,
-      "start": null,
+      "start": "17:00",
+      "end": "19:15",
+      "name": "첫 장보기·800m 산책",
+      "category": "shopping",
+      "lat": 48.8399,
+      "lng": 2.3459,
+      "summary": "필수품만 — 시장 방문 전 대량구매 금지. 약국·세탁·메트로 위치 파악",
+      "menu": "빵·버터·과일·물",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "19:30",
       "end": null,
-      "name": "세탁·짐 정리",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "세탁·짐 정리",
+      "name": "숙소식 또는 가까운 식당",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "긴 이동일 — 유명식당 예약 금지, 대형 일정 없음",
       "menu": null,
-      "reservation": "TGV·Paris 숙소",
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "lyon-checkout",
+      "to": "gare-de-lyon",
+      "mode": "train",
+      "duration": "약 2시간",
+      "distance": null,
+      "line": "TGV Part-Dieu→Gare de Lyon",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "gare-de-lyon",
+      "to": "paris-checkin",
+      "mode": "taxi",
+      "duration": "45–75분",
+      "distance": "약 5km",
+      "line": "공식 택시승강장",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "paris-checkin",
+      "to": "first-grocery",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "first-grocery",
+      "to": "paris-return",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "TGV·Paris 숙소"
+    "TGV (좌석·수하물 위치 확인)",
+    "Gare de Lyon 택시"
   ],
   "food": [
-    "숙소권 간단식"
+    "첫 장보기 — 필수품만",
+    "숙소식 또는 동네 식당"
   ],
   "highlights": [
-    "TGV, 체크인, 생활시설 확인, 세탁·짐 정리",
-    "선택·축소: 숙소 주변 산책·가벼운 저녁"
+    "P0 이동일 — 외부관광 전부 삭제",
+    "매일 갈 빵집 한 곳을 먼저 정한다",
+    "동네 카페 30분"
   ],
-  "backup": "짐정리·최소 장보기만",
-  "map": null,
+  "backup": "지연 시 짐정리·최소 장보기만",
+  "map": {
+    "zoom": 13,
+    "center": [
+      48.8425,
+      2.361
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "TGV 9/24 편성·시각 확정",
+    "Paris 숙소 후보(Pepper & Paper) 확정 — 16박의 중심",
+    "체크인 가능 시각 확인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-27",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-27",
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-1",
+    "source/ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Gare de Lyon"
   ]
 }

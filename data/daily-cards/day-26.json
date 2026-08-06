@@ -4,85 +4,184 @@
   "date": "2026-09-23",
   "city": "Lyon",
   "title": "Annecy 당일치기",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4",
+  "startTime": "06:40",
+  "endTime": "21:00",
+  "totalDuration": "14시간 20분",
+  "totalDistance": "TER 왕복 + 도보 약 4km",
+  "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Hôtel de Verdun (후보)",
+    "lat": 45.74965,
+    "lng": 4.82968,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "vieille-ville",
+      "id": "part-dieu",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Vieille Ville",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Vieille Ville",
+      "start": "06:40",
+      "end": "08:30",
+      "name": "Part-Dieu역 — TER 출발",
+      "category": "transport",
+      "lat": 45.7605725,
+      "lng": 4.8601628,
+      "summary": "07:30–08:30 출발 목표, 직행 TER 우선 (약 2시간) — 작은 지퍼가방만",
       "menu": null,
-      "reservation": "TER·크루즈",
+      "reservation": "9/23 TER 시각표 재확인",
       "optional": false
     },
     {
-      "id": "thiou",
+      "id": "vieille-ville",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Thiou 운하",
+      "start": "10:15",
+      "end": "11:45",
+      "name": "Vieille Ville·Thiou 운하",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Thiou 운하",
+      "lat": 45.8985664,
+      "lng": 6.1270556,
+      "summary": "역→Rue Sainte-Claire→Palais de l'Île 외관→운하 골목",
       "menu": null,
-      "reservation": "TER·크루즈",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "stop",
+      "id": "savoy-lunch",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "호숫가",
+      "start": "11:50",
+      "end": "13:05",
+      "name": "Savoy 점심",
+      "category": "food",
+      "lat": 45.899,
+      "lng": 6.1265,
+      "summary": "무거운 fondue는 2인 공유 또는 생략",
+      "menu": "Chez Mamie Lise · diots·polenta",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "lakefront",
+      "order": 4,
+      "start": "13:10",
+      "end": "15:30",
+      "name": "Jardins de l'Europe·Pont des Amours·Pâquier",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "호숫가",
+      "lat": 45.9001957,
+      "lng": 6.1313565,
+      "summary": "호수와 산의 방향을 이해하는 핵심 산책 — 14:30 1시간 크루즈 선택(€19)",
       "menu": null,
-      "reservation": "TER·크루즈",
+      "reservation": "크루즈 날씨·운항 확인",
+      "optional": false
+    },
+    {
+      "id": "lake-free",
+      "order": 5,
+      "start": "15:40",
+      "end": "18:00",
+      "name": "호숫가 자유시간·역 이동",
+      "category": "sight",
+      "lat": 45.9018669,
+      "lng": 6.1324855,
+      "summary": "크루즈 생략 시 Imperial 방향 평지산책, 귀환열차 20분 전 역 도착",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "lyon-return",
+      "order": 6,
+      "start": "20:00",
+      "end": "21:00",
+      "name": "Lyon 귀환",
+      "category": "hotel",
+      "lat": 45.74965,
+      "lng": 4.82968,
+      "summary": "역에서 바로 택시 — 저녁은 숙소권 간단식",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "part-dieu",
+      "to": "vieille-ville",
+      "mode": "train",
+      "duration": "약 2시간",
+      "distance": null,
+      "line": "직행 TER 우선",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vieille-ville",
+      "to": "savoy-lunch",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "savoy-lunch",
+      "to": "lakefront",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "lakefront",
+      "to": "lake-free",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "lake-free",
+      "to": "lyon-return",
+      "mode": "train",
+      "duration": "약 2시간",
+      "distance": null,
+      "line": "직행 우선, 18:00–19:00대",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "TER·크루즈"
+    "TER 왕복 (Part-Dieu)",
+    "Annecy 도보"
   ],
   "food": [
-    "Annecy 구시가지"
+    "Chez Mamie Lise 점심",
+    "숙소권 간단 저녁"
   ],
   "highlights": [
-    "Vieille Ville, Thiou 운하, 호숫가",
-    "선택·축소: 1시간 크루즈 선택"
+    "직행 TER — 실제 시각 재확인",
+    "수요일 — 시장 없음",
+    "크루즈는 날씨 조건부"
   ],
-  "backup": "Lyon 생활일로 전환",
-  "map": null,
+  "backup": "철도 지연·악천후 시 Lyon 생활일 전환",
+  "map": {
+    "zoom": 9,
+    "center": [
+      45.83,
+      5.49
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "9/23 TER 시각표·직행 여부 확정",
+    "크루즈 운항·요금 재확인",
+    "Lyon 숙소 후보 승인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-26",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-26",
+    "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-26",
+    "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml (Annecy)",
+    "OSM Nominatim 지오코딩 2026-08-06: Annecy역·Palais de l'Isle·Pont des Amours·Pâquier"
   ]
 }
