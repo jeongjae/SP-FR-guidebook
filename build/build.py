@@ -2863,7 +2863,7 @@ def google_maps_place_url(place):
         return ""
     if place.get("googleMapsUrl"):
         return place["googleMapsUrl"]
-    params = {"api": "1", "query": place.get("name") or f'{place["lat"]},{place["lng"]}'}
+    params = {"api": "1", "query": f'{place["lat"]},{place["lng"]}'}
     if place.get("googlePlaceId"):
         params["query_place_id"] = place["googlePlaceId"]
     return "https://www.google.com/maps/search/?" + urllib.parse.urlencode(params)
@@ -2872,11 +2872,14 @@ def google_maps_place_url(place):
 def google_maps_directions_url(origin, destination, mode="walking"):
     if not destination or destination.get("private"):
         return ""
-    params = {"api": "1", "destination": destination["name"], "travelmode": mode}
+    # 좌표를 넘긴다. 표시 이름(한글 혼용)은 Google 이 해석하지 못해
+    # 출발지가 "내 위치"로 대체되거나 엉뚱한 곳이 찍힌다.
+    params = {"api": "1", "destination": f'{destination["lat"]},{destination["lng"]}',
+              "travelmode": mode}
     if destination.get("googlePlaceId"):
         params["destination_place_id"] = destination["googlePlaceId"]
     if origin and not origin.get("private"):
-        params["origin"] = origin["name"]
+        params["origin"] = f'{origin["lat"]},{origin["lng"]}'
         if origin.get("googlePlaceId"):
             params["origin_place_id"] = origin["googlePlaceId"]
     return "https://www.google.com/maps/dir/?" + urllib.parse.urlencode(params)
@@ -2896,10 +2899,11 @@ def google_maps_multistop_url(day, place_by_id):
         return ""
     if len(selected) == 1:
         return google_maps_directions_url(None, selected[0], day["defaultMode"])
-    params = {"api": "1", "origin": selected[0]["name"],
-              "destination": selected[-1]["name"], "travelmode": day["defaultMode"]}
+    params = {"api": "1", "origin": f'{selected[0]["lat"]},{selected[0]["lng"]}',
+              "destination": f'{selected[-1]["lat"]},{selected[-1]["lng"]}',
+              "travelmode": day["defaultMode"]}
     if len(selected) > 2:
-        params["waypoints"] = "|".join(place["name"] for place in selected[1:-1])
+        params["waypoints"] = "|".join(f'{p["lat"]},{p["lng"]}' for p in selected[1:-1])
     return "https://www.google.com/maps/dir/?" + urllib.parse.urlencode(params)
 
 
