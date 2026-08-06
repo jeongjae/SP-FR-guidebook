@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0",
+  "day": 14,
+  "date": "2026-09-11",
+  "city": "Aix-en-Provence",
+  "title": "Marseille 당일치기",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "4",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "stop",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "대중교통 왕복",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "대중교통 왕복",
+      "menu": null,
+      "reservation": "L50/TER·Mucem",
+      "optional": false
+    },
+    {
+      "id": "vieux-port",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Vieux-Port",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Vieux-Port",
+      "menu": null,
+      "reservation": "L50/TER·Mucem",
+      "optional": false
+    },
+    {
+      "id": "le-panier",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "Le Panier",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Le Panier",
+      "menu": null,
+      "reservation": "L50/TER·Mucem",
+      "optional": false
+    },
+    {
+      "id": "mucem",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "Mucem",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Mucem",
+      "menu": null,
+      "reservation": "L50/TER·Mucem",
+      "optional": false
+    },
+    {
+      "id": "fort-saint-jean",
+      "order": 5,
+      "start": null,
+      "end": null,
+      "name": "Fort Saint-Jean",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Fort Saint-Jean",
+      "menu": null,
+      "reservation": "L50/TER·Mucem",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "L50/TER·Mucem"
+  ],
+  "food": [
+    "Vieux-Port/Le Panier 점심"
+  ],
+  "highlights": [
+    "대중교통 왕복, Vieux-Port, Le Panier, Mucem, Fort Saint-Jean",
+    "선택·축소: 피로·우천 시 Mucem+항구만; Cassis는 별도 대체안"
+  ],
+  "backup": "Mucem·Fort만 또는 Aix 생활일",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}

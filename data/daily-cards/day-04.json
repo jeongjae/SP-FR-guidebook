@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "day": 4,
+  "date": "2026-09-01",
+  "city": "Barcelona → Sitges → Bàscara",
+  "title": "렌터카 인수와 지중해 연안 이동",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": "intercity",
+  "startTime": "06:50",
+  "endTime": "19:30",
+  "totalDuration": "12시간 40분",
+  "totalDistance": "약 198km · 차량 경로",
+  "fatigue": "4",
+  "hotel": {"name": "Bàscara B&B", "lat": 42.1603007, "lng": 2.9101005, "status": "private-approximate"},
+  "stops": [
+    {"id": "barcelona-checkout", "order": 1, "start": "06:50", "end": "08:10", "name": "Barcelona 체크아웃", "category": "hotel", "lat": 41.39382, "lng": 2.17132, "summary": "냉장고·물 2L·운전 간식·주차 앱 확인", "menu": "숙소 아침", "reservation": "숙소 후보 확정 필요", "optional": false},
+    {"id": "barcelona-sants", "order": 2, "start": "08:10", "end": "09:35", "name": "Barcelona Sants", "category": "transport", "lat": 41.37914, "lng": 2.14005, "summary": "택시 이동 후 렌터카 상태·연료·주행거리 기록", "menu": null, "reservation": "09:00 인수 목표", "optional": false},
+    {"id": "can-robert", "order": 3, "start": "10:20", "end": "10:40", "name": "Can Robert · Sitges", "category": "transport", "lat": 41.2403, "lng": 1.8086, "summary": "중심 진입을 피하고 주차 후 구시가지로 이동", "menu": null, "reservation": "주차 운영 재확인", "optional": false},
+    {"id": "cau-ferrat-maricel", "order": 4, "start": "11:05", "end": "12:20", "name": "Cau Ferrat + Maricel", "category": "culture", "lat": 41.23572, "lng": 1.81145, "summary": "모더니즘 컬렉션과 Rusiñol의 집·작업실", "menu": null, "reservation": "화요일 운영·통합권 재확인", "optional": false},
+    {"id": "la-zorra", "order": 5, "start": "13:00", "end": "14:25", "name": "La Zorra", "category": "food", "lat": 41.2352, "lng": 1.8069, "summary": "13:00 점심 후 15:15 출발 시각 보호", "menu": "arroz a banda · 2인 공유", "reservation": "13:00 예약", "optional": false},
+    {"id": "bascara-stay", "order": 6, "start": "17:30", "end": "19:30", "name": "Bàscara 체크인", "category": "hotel", "lat": 42.1603007, "lng": 2.9101005, "summary": "숙소 진입·주차 지침을 우선하고 저녁은 반경 10분", "menu": "숙소 인근 간단식", "reservation": "체크인 창 재확인", "optional": false}
+  ],
+  "legs": [
+    {"from": "barcelona-checkout", "to": "barcelona-sants", "mode": "taxi", "duration": "35분", "distance": "숙소 확정 후 계산", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "barcelona-sants", "to": "can-robert", "mode": "car", "duration": "45분", "distance": "약 40km", "line": "C-32", "geometryStatus": "verified-cache"},
+    {"from": "can-robert", "to": "cau-ferrat-maricel", "mode": "walk", "duration": "25분", "distance": "약 1.1km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "cau-ferrat-maricel", "to": "la-zorra", "mode": "walk", "duration": "10분", "distance": "약 0.7km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "la-zorra", "to": "bascara-stay", "mode": "car", "duration": "2시간 15분 계획", "distance": "약 158km", "line": "C-32 → AP-7", "geometryStatus": "verified-cache"}
+  ],
+  "transport": ["택시", "렌터카 · C-32/AP-7", "Sitges 도보"],
+  "food": ["La Zorra · arroz a banda", "이동용 물 2L·간식"],
+  "highlights": ["09:00 렌터카 인수", "13:00 점심 예약", "15:15 Sitges 출발 고정"],
+  "backup": "인수 11:00 이후면 박물관을 빼고 점심+해변 전망 90분만 진행",
+  "map": {"zoom": 8, "center": [41.72, 2.34], "routeCache": "routes/day-04-driving-osrm.json"},
+  "needsReview": ["Bàscara 숙소 주소·체크인 창·주차 지침", "렌터카 영업소·ZBE·국경 운전 조건", "Sitges 주차와 식당 예약", "최신 후보 일정 브랜치 승인: 43b1ce441fbc"],
+  "sourceRefs": ["source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-4", "data/daily-cards/routes/day-04-driving-osrm.json", "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"]
+}

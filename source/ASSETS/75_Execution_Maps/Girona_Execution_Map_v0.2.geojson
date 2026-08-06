@@ -4,20 +4,20 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bàscara 확정 숙소",
+        "name": "Bàscara 숙소 근사 권역",
         "sequence": 1,
         "category": "확정 숙소",
         "status": "Airbnb · 바스카라의 B&B · 예약 확정 · 2026-09-01~09-04",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Pla%C3%A7a+de+l%27Esgl%C3%A9sia%2C+6%2C+17483+B%C3%A0scara%2C+Spain",
-        "address": "Plaça de l’Església, 6, 17483 Bàscara, Catalonia, Spain",
-        "coordinates_verified": "Google Maps exact address result, 2026-08-03",
+        "google_maps": "",
+        "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
+        "coordinates_verified": "Public approximate area only",
         "phase": "Confirmed booking"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.9101005,
-          42.1603007
+          2.914,
+          42.164
         ]
       }
     },

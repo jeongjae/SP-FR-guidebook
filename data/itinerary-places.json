@@ -1,0 +1,3299 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-05",
+  "travelPeriod": {
+    "start": "2026-08-29",
+    "end": "2026-10-10",
+    "days": 43
+  },
+  "sourceOfTruth": "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+  "auditSources": [
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+    "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md",
+    "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md",
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md",
+    "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md",
+    "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md",
+    "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md",
+    "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md",
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+  ],
+  "privacyRule": "Private accommodation has no address, coordinates, public photo or exterior.",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-08-29",
+      "dateLabel": "8/29 토",
+      "baseCity": "Barcelona",
+      "theme": "도착·생활권 적응",
+      "core": "BCN 도착, 체크인, 첫 장보기",
+      "option": "Eixample 짧은 산책·가벼운 저녁",
+      "fatigue": "2",
+      "lock": "항공·숙소",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "barcelona-airport",
+          "name": "Barcelona–El Prat Airport",
+          "nameKo": "바르셀로나 엘프라트 공항",
+          "type": "airport",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "barcelona",
+          "name": "Barcelona",
+          "nameKo": "바르셀로나",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "eixample",
+          "name": "Eixample",
+          "nameKo": "에이샴플라",
+          "type": "neighborhood",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-08-30",
+      "dateLabel": "8/30 일",
+      "baseCity": "Barcelona",
+      "theme": "Gaudí와 Catalan Modernisme",
+      "core": "Sagrada Família 10:30, Avinguda de Gaudí, Sant Pau",
+      "option": "Gràcia 저녁 산책",
+      "fatigue": "3",
+      "lock": "Sagrada·Sant Pau",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "barcelona",
+          "name": "Barcelona",
+          "nameKo": "바르셀로나",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "sagrada-familia",
+          "name": "Basílica de la Sagrada Família",
+          "nameKo": "사그라다 파밀리아",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "avinguda-de-gaudi",
+          "name": "Avinguda de Gaudí",
+          "nameKo": "가우디 거리",
+          "type": "street",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "sant-pau-recinte-modernista",
+          "name": "Recinte Modernista de Sant Pau",
+          "nameKo": "산 파우 모더니즘 지구",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "gracia",
+          "name": "Vila de Gràcia",
+          "nameKo": "그라시아",
+          "type": "neighborhood",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "pa-amb-tomaquet",
+          "name": "Pa amb tomàquet",
+          "nameKo": "파 암 토마켓",
+          "type": "food",
+          "status": "reference",
+          "importance": "supporting",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-08-31",
+      "dateLabel": "8/31 월",
+      "baseCity": "Barcelona",
+      "theme": "책·도시기억·현대미술",
+      "core": "Concepció 시장, Gòtic, Biblioteca de Catalunya, MACBA",
+      "option": "Llibreria Finestres·운동 선택",
+      "fatigue": "3",
+      "lock": "식당·MACBA",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "barcelona",
+          "name": "Barcelona",
+          "nameKo": "바르셀로나",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "mercat-de-la-concepcio",
+          "name": "Mercat de la Concepció",
+          "nameKo": "콘셉시오 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "barri-gotic",
+          "name": "Barri Gòtic",
+          "nameKo": "고딕 지구",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "biblioteca-de-catalunya",
+          "name": "Biblioteca de Catalunya",
+          "nameKo": "카탈루냐 도서관",
+          "type": "library",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "macba",
+          "name": "Museu d’Art Contemporani de Barcelona (MACBA)",
+          "nameKo": "바르셀로나 현대미술관",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "llibreria-finestres",
+          "name": "Llibreria Finestres",
+          "nameKo": "피네스트레스 서점",
+          "type": "bookshop",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "crema-catalana",
+          "name": "Crema catalana",
+          "nameKo": "크레마 카탈라나",
+          "type": "food",
+          "status": "reference",
+          "importance": "supporting",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-09-01",
+      "dateLabel": "9/1 화",
+      "baseCity": "Bàscara",
+      "theme": "Barcelona→Sitges→Girona 또는 Bàscara",
+      "core": "Sants 렌터카, Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동",
+      "option": "체크인 창 미확인 시 Girona 관광 삭제",
+      "fatigue": "4",
+      "lock": "렌터카·Airbnb 체크인",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "barcelona-sants",
+          "name": "Barcelona Sants",
+          "nameKo": "바르셀로나 산츠역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "sitges",
+          "name": "Sitges",
+          "nameKo": "시체스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "cau-ferrat",
+          "name": "Museu del Cau Ferrat",
+          "nameKo": "카우 페라트 미술관",
+          "type": "museum",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "palau-de-maricel",
+          "name": "Palau de Maricel",
+          "nameKo": "마리셀 궁전",
+          "type": "attraction",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "barcelona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+          ]
+        },
+        {
+          "id": "bascara",
+          "name": "Bàscara",
+          "nameKo": "바스카라",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "bascara-private-stay",
+          "name": "Bàscara private stay",
+          "nameKo": "바스카라 비공개 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "girona",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "girona",
+          "name": "Girona",
+          "nameKo": "지로나",
+          "type": "city",
+          "status": "optional",
+          "importance": "hero",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-09-02",
+      "dateLabel": "9/2 수",
+      "baseCity": "Bàscara",
+      "theme": "Collioure와 Cadaqués",
+      "core": "Bàscara→Collioure→Cadaqués→Bàscara (해안 쪽 우회)",
+      "option": "Portlligat·Dalí House는 예약 미확인으로 제외",
+      "fatigue": "4",
+      "lock": "주차·국경운전·지도 재확인",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "bascara-private-stay",
+          "name": "Bàscara private stay",
+          "nameKo": "바스카라 비공개 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "girona",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "collioure",
+          "name": "Collioure",
+          "nameKo": "콜리우르",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "cadaques",
+          "name": "Cadaqués",
+          "nameKo": "카다케스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-09-03",
+      "dateLabel": "9/3 목",
+      "baseCity": "Bàscara",
+      "theme": "Tossa·Sant Feliu와 귀로 마을",
+      "core": "Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara",
+      "option": "지연·악천후 시 Pals 삭제, GI-682 회피",
+      "fatigue": "4",
+      "lock": "주차·해안도로·운전피로",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "bascara-private-stay",
+          "name": "Bàscara private stay",
+          "nameKo": "바스카라 비공개 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "girona",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "tossa-de-mar",
+          "name": "Tossa de Mar",
+          "nameKo": "토사 데 마르",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "sant-feliu-de-guixols",
+          "name": "Sant Feliu de Guíxols",
+          "nameKo": "산트 펠리우 데 기솔스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "pals",
+          "name": "Pals",
+          "nameKo": "팔스",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "peratallada",
+          "name": "Peratallada",
+          "nameKo": "페라탈랴다",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "girona",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-09-04",
+      "dateLabel": "9/4 금",
+      "baseCity": "Nice",
+      "theme": "Bàscara→Nice 이동",
+      "core": "Bàscara 체크아웃 후 이동수단·차량 반납지에 따라 실행",
+      "option": "도착 후 일정은 이동 확정 뒤 조정",
+      "fatigue": "4~5",
+      "lock": "이동수단·차량반납",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "bascara-private-stay",
+          "name": "Bàscara private stay",
+          "nameKo": "바스카라 비공개 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "girona",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+          ]
+        },
+        {
+          "id": "nice",
+          "name": "Nice",
+          "nameKo": "니스",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-09-05",
+      "dateLabel": "9/5 토",
+      "baseCity": "Nice",
+      "theme": "Nice 시장·구시가지·지형",
+      "core": "Cours Saleya, Vieux Nice, Castle Hill",
+      "option": "Port 또는 해변",
+      "fatigue": "3",
+      "lock": "시장·숙소",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "nice",
+          "name": "Nice",
+          "nameKo": "니스",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "cours-saleya",
+          "name": "Cours Saleya",
+          "nameKo": "쿠르 살레야 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "vieux-nice",
+          "name": "Vieux Nice",
+          "nameKo": "니스 구시가지",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "colline-du-chateau",
+          "name": "Colline du Château",
+          "nameKo": "니스 성채 언덕",
+          "type": "viewpoint",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "port-de-nice",
+          "name": "Port de Nice",
+          "nameKo": "니스 항구",
+          "type": "harbor",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "nice-beach",
+          "name": "Nice seafront",
+          "nameKo": "니스 해변",
+          "type": "beach",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date": "2026-09-06",
+      "dateLabel": "9/6 일",
+      "baseCity": "Nice",
+      "theme": "Cannes 당일치기",
+      "core": "Forville, Le Suquet, Vieux-Port, Croisette",
+      "option": "쇼핑·해변 연장 삭제 가능",
+      "fatigue": "4",
+      "lock": "TER",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "cannes",
+          "name": "Cannes",
+          "nameKo": "칸",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "marche-forville",
+          "name": "Marché Forville",
+          "nameKo": "포르빌 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "le-suquet",
+          "name": "Le Suquet",
+          "nameKo": "르 쉬케 구시가지",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "vieux-port-cannes",
+          "name": "Vieux-Port de Cannes",
+          "nameKo": "칸 구항",
+          "type": "harbor",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "croisette",
+          "name": "Boulevard de la Croisette",
+          "nameKo": "크루아제트 대로",
+          "type": "street",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2026-09-07",
+      "dateLabel": "9/7 월",
+      "baseCity": "Nice",
+      "theme": "Monaco 도시국가",
+      "core": "Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo",
+      "option": "Japanese Garden 또는 Larvotto 택1",
+      "fatigue": "4",
+      "lock": "TER",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "monaco",
+          "name": "Monaco",
+          "nameKo": "모나코",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "monaco-ville",
+          "name": "Monaco-Ville",
+          "nameKo": "모나코빌 구시가지",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "place-du-palais",
+          "name": "Place du Palais",
+          "nameKo": "모나코 궁전 광장",
+          "type": "square",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "monaco-cathedral",
+          "name": "Cathédrale de Monaco",
+          "nameKo": "모나코 대성당",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "port-hercule",
+          "name": "Port Hercule",
+          "nameKo": "에르퀼 항구",
+          "type": "harbor",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "monte-carlo",
+          "name": "Monte-Carlo",
+          "nameKo": "몬테카를로",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "japanese-garden-monaco",
+          "name": "Japanese Garden Monaco",
+          "nameKo": "모나코 일본정원",
+          "type": "garden",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "larvotto",
+          "name": "Larvotto",
+          "nameKo": "라르보토 해변",
+          "type": "beach",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "date": "2026-09-08",
+      "dateLabel": "9/8 화",
+      "baseCity": "Nice",
+      "theme": "생활·회복·선택문화",
+      "core": "Libération 시장, 사진미술관 선택, 세탁·Promenade",
+      "option": "사진미술관·추가마을 삭제 가능",
+      "fatigue": "2",
+      "lock": "사진미술관·렌터카 준비",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "nice",
+          "name": "Nice",
+          "nameKo": "니스",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "marche-de-la-liberation",
+          "name": "Marché de la Libération",
+          "nameKo": "리베라시옹 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "musee-photographie-charles-negre",
+          "name": "Musée de la Photographie Charles Nègre",
+          "nameKo": "샤를 네그르 사진미술관",
+          "type": "museum",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "promenade-des-anglais",
+          "name": "Promenade des Anglais",
+          "nameKo": "영국인 산책로",
+          "type": "promenade",
+          "status": "optional",
+          "importance": "hero",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "date": "2026-09-09",
+      "dateLabel": "9/9 수",
+      "baseCity": "Aix-en-Provence",
+      "theme": "NCE 렌터카와 Provence 진입",
+      "core": "NCE T2 렌터카, Saint-Paul, Grasse, Aix 체크인",
+      "option": "지연 시 Grasse 우선 삭제",
+      "fatigue": "5",
+      "lock": "렌터카·Aix 숙소",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "nice-airport-t2",
+          "name": "Nice Côte d’Azur Airport Terminal 2",
+          "nameKo": "니스 공항 제2터미널",
+          "type": "airport",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "nice",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+          ]
+        },
+        {
+          "id": "saint-paul-de-vence",
+          "name": "Saint-Paul-de-Vence",
+          "nameKo": "생폴드방스",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "grasse",
+          "name": "Grasse",
+          "nameKo": "그라스",
+          "type": "town",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "aix-en-provence",
+          "name": "Aix-en-Provence",
+          "nameKo": "엑상프로방스",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "date": "2026-09-10",
+      "dateLabel": "9/10 목",
+      "baseCity": "Aix-en-Provence",
+      "theme": "Aix 구시가지와 Granet",
+      "core": "목요시장, Cours Mirabeau, Musée Granet, Mazarin",
+      "option": "성당·카페",
+      "fatigue": "3",
+      "lock": "Granet·식당",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "aix-en-provence",
+          "name": "Aix-en-Provence",
+          "nameKo": "엑상프로방스",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "aix-markets",
+          "name": "Aix-en-Provence markets",
+          "nameKo": "엑상프로방스 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "cours-mirabeau",
+          "name": "Cours Mirabeau",
+          "nameKo": "미라보 거리",
+          "type": "street",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "musee-granet",
+          "name": "Musée Granet",
+          "nameKo": "그라네 미술관",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "quartier-mazarin",
+          "name": "Quartier Mazarin",
+          "nameKo": "마자랭 지구",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "aix-cathedral",
+          "name": "Cathédrale Saint-Sauveur",
+          "nameKo": "생소뵈르 대성당",
+          "type": "attraction",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "date": "2026-09-11",
+      "dateLabel": "9/11 금",
+      "baseCity": "Aix-en-Provence",
+      "theme": "Cassis와 Calanques",
+      "core": "Cassis 항구, 5 Calanques 보트, 해안휴식",
+      "option": "강풍 시 Marseille·Mucem으로 교체",
+      "fatigue": "4",
+      "lock": "보트·주차",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "cassis",
+          "name": "Cassis",
+          "nameKo": "카시스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "calanques",
+          "name": "Calanques National Park",
+          "nameKo": "칼랑크 국립공원",
+          "type": "nature",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "marseille",
+          "name": "Marseille",
+          "nameKo": "마르세유",
+          "type": "city",
+          "status": "reference",
+          "importance": "supporting",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "mucem",
+          "name": "Mucem",
+          "nameKo": "유럽지중해문명박물관",
+          "type": "museum",
+          "status": "reference",
+          "importance": "supporting",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "date": "2026-09-12",
+      "dateLabel": "9/12 토",
+      "baseCity": "Aix-en-Provence",
+      "theme": "Cézanne·스케치·생활",
+      "core": "토요시장, Atelier de Cézanne, 스케치·선택수영",
+      "option": "러닝·쇼핑 축소",
+      "fatigue": "2~3",
+      "lock": "Atelier",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "aix-en-provence",
+          "name": "Aix-en-Provence",
+          "nameKo": "엑상프로방스",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "aix-markets",
+          "name": "Aix-en-Provence markets",
+          "nameKo": "엑상프로방스 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        },
+        {
+          "id": "atelier-des-lauves",
+          "name": "Atelier de Cézanne",
+          "nameKo": "세잔 아틀리에",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "aix",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "date": "2026-09-13",
+      "dateLabel": "9/13 일",
+      "baseCity": "Luberon",
+      "theme": "Aix→Lourmarin→농가",
+      "core": "Lourmarin 스케치행사, Coustellet 장보기, 농가 체크인",
+      "option": "Cucuron/Goult 추가 금지",
+      "fatigue": "3",
+      "lock": "농가·행사",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "lourmarin",
+          "name": "Lourmarin",
+          "nameKo": "루르마랭",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "coustellet",
+          "name": "Coustellet",
+          "nameKo": "쿠스텔레",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "luberon",
+          "name": "Luberon",
+          "nameKo": "뤼베롱",
+          "type": "region",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "luberon-private-stay",
+          "name": "Luberon private farmhouse",
+          "nameKo": "뤼베롱 비공개 농가 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "luberon",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "date": "2026-09-14",
+      "dateLabel": "9/14 월",
+      "baseCity": "Luberon",
+      "theme": "오커색과 생활마을",
+      "core": "Roussillon, Sentier des Ocres",
+      "option": "Goult 또는 Bonnieux 택1",
+      "fatigue": "3",
+      "lock": "오커길",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "roussillon",
+          "name": "Roussillon",
+          "nameKo": "루시용",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "sentier-des-ocres",
+          "name": "Sentier des Ocres",
+          "nameKo": "오커 산책로",
+          "type": "trail",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "goult",
+          "name": "Goult",
+          "nameKo": "굴트",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "bonnieux",
+          "name": "Bonnieux",
+          "nameKo": "보니외",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "luberon-private-stay",
+          "name": "Luberon private farmhouse",
+          "nameKo": "뤼베롱 비공개 농가 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "luberon",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "date": "2026-09-15",
+      "dateLabel": "9/15 화",
+      "baseCity": "Luberon",
+      "theme": "Gordes 시장과 돌의 문화",
+      "core": "Gordes 시장, Village des Bories",
+      "option": "Sénanque 선택",
+      "fatigue": "3",
+      "lock": "시장·주차",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "gordes",
+          "name": "Gordes",
+          "nameKo": "고르드",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "village-des-bories",
+          "name": "Village des Bories",
+          "nameKo": "보리 석조마을",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "abbaye-de-senanque",
+          "name": "Abbaye Notre-Dame de Sénanque",
+          "nameKo": "세낭크 수도원",
+          "type": "attraction",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "luberon-private-stay",
+          "name": "Luberon private farmhouse",
+          "nameKo": "뤼베롱 비공개 농가 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "luberon",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "date": "2026-09-16",
+      "dateLabel": "9/16 수",
+      "baseCity": "Luberon",
+      "theme": "농가생활·스케치 완충일",
+      "core": "농가 아침·산책·세탁·스케치",
+      "option": "Ménerbes 또는 Oppède 택1",
+      "fatigue": "1~2",
+      "lock": "없음/숙소",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "luberon",
+          "name": "Luberon",
+          "nameKo": "뤼베롱",
+          "type": "region",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "menerbes",
+          "name": "Ménerbes",
+          "nameKo": "메네르브",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "oppede-le-vieux",
+          "name": "Oppède-le-Vieux",
+          "nameKo": "오페드 르 비외",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "luberon-private-stay",
+          "name": "Luberon private farmhouse",
+          "nameKo": "뤼베롱 비공개 농가 숙소",
+          "type": "accommodation",
+          "status": "private",
+          "importance": "text-only",
+          "chapter": "luberon",
+          "visibility": "private",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "date": "2026-09-17",
+      "dateLabel": "9/17 목",
+      "baseCity": "Avignon",
+      "theme": "Luberon→L’Isle→Avignon",
+      "core": "L’Isle 목요시장, 체크인, 성벽도시 적응",
+      "option": "Fontaine 또는 Nocturne 선택",
+      "fatigue": "3",
+      "lock": "Avignon 숙소",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "l-isle-sur-la-sorgue",
+          "name": "L’Isle-sur-la-Sorgue",
+          "nameKo": "릴쉬르라소르그",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "avignon",
+          "name": "Avignon",
+          "nameKo": "아비뇽",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "date": "2026-09-18",
+      "dateLabel": "9/18 금",
+      "baseCity": "Avignon",
+      "theme": "교황도시 핵심",
+      "core": "Les Halles, Palais des Papes, Rocher, Pont",
+      "option": "추가 미술관 1곳 이하",
+      "fatigue": "3",
+      "lock": "Palais·식당",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "les-halles-avignon",
+          "name": "Les Halles d’Avignon",
+          "nameKo": "아비뇽 레 알 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "palais-des-papes",
+          "name": "Palais des Papes",
+          "nameKo": "교황청 궁전",
+          "type": "palace",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "rocher-des-doms",
+          "name": "Rocher des Doms",
+          "nameKo": "로셰 데 돔",
+          "type": "garden",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "pont-saint-benezet",
+          "name": "Pont Saint-Bénézet",
+          "nameKo": "생 베네제 다리",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "date": "2026-09-19",
+      "dateLabel": "9/19 토",
+      "baseCity": "Avignon",
+      "theme": "Uzès 시장과 Pont du Gard",
+      "core": "Uzès 토요시장·구시가지, Pont du Gard",
+      "option": "박물관 또는 일몰 택1",
+      "fatigue": "4",
+      "lock": "주차·입장",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "uzes",
+          "name": "Uzès",
+          "nameKo": "위제스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "pont-du-gard",
+          "name": "Pont du Gard",
+          "nameKo": "퐁 뒤 가르",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "date": "2026-09-20",
+      "dateLabel": "9/20 일",
+      "baseCity": "Avignon",
+      "theme": "Alpilles 마을과 경관",
+      "core": "Les Baux, Saint-Rémy",
+      "option": "Glanum 또는 Carrières 택1",
+      "fatigue": "4",
+      "lock": "주차",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "les-baux-de-provence",
+          "name": "Les Baux-de-Provence",
+          "nameKo": "레 보 드 프로방스",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "saint-remy-de-provence",
+          "name": "Saint-Rémy-de-Provence",
+          "nameKo": "생레미드프로방스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "glanum",
+          "name": "Glanum",
+          "nameKo": "글라눔",
+          "type": "historic-site",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "carrieres-des-lumieres",
+          "name": "Carrières des Lumières",
+          "nameKo": "카리에르 드 뤼미에르",
+          "type": "attraction",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "date": "2026-09-21",
+      "dateLabel": "9/21 월",
+      "baseCity": "Lyon",
+      "theme": "차량반납·TGV·Lyon 적응",
+      "core": "Avignon TGV 반납, Lyon 도착, Ainay·Bellecour",
+      "option": "Jacobins·Saône 짧은 산책",
+      "fatigue": "4",
+      "lock": "렌터카 반납·TGV",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "avignon-tgv",
+          "name": "Avignon TGV",
+          "nameKo": "아비뇽 TGV역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "lyon",
+          "name": "Lyon",
+          "nameKo": "리옹",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "ainay",
+          "name": "Ainay",
+          "nameKo": "에네 지구",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "place-bellecour",
+          "name": "Place Bellecour",
+          "nameKo": "벨쿠르 광장",
+          "type": "square",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "place-des-jacobins",
+          "name": "Place des Jacobins",
+          "nameKo": "자코뱅 광장",
+          "type": "square",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "saone",
+          "name": "Saône riverfront",
+          "nameKo": "손강변",
+          "type": "riverfront",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "date": "2026-09-22",
+      "dateLabel": "9/22 화",
+      "baseCity": "Lyon",
+      "theme": "Fourvière와 Vieux Lyon",
+      "core": "Fourvière, Rosaire 하산, Saint-Jean, traboules",
+      "option": "로마극장 선택",
+      "fatigue": "4",
+      "lock": "푸니쿨라·저녁",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "fourviere",
+          "name": "Fourvière",
+          "nameKo": "푸르비에르",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "vieux-lyon",
+          "name": "Vieux Lyon",
+          "nameKo": "리옹 구시가지",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "cathedrale-saint-jean-lyon",
+          "name": "Cathédrale Saint-Jean-Baptiste",
+          "nameKo": "리옹 생장 대성당",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "traboules",
+          "name": "Vieux Lyon traboules",
+          "nameKo": "리옹 트라불",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "roman-theatres-lyon",
+          "name": "Ancient Theatre of Fourvière",
+          "nameKo": "푸르비에르 로마극장",
+          "type": "historic-site",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "date": "2026-09-23",
+      "dateLabel": "9/23 수",
+      "baseCity": "Lyon",
+      "theme": "Croix-Rousse·Halles·공원",
+      "core": "Croix-Rousse 시장, canut 맥락, Halles",
+      "option": "Parc de la Tête d’Or",
+      "fatigue": "3",
+      "lock": "식당",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "croix-rousse",
+          "name": "Croix-Rousse",
+          "nameKo": "크루아루스",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "halles-de-lyon-paul-bocuse",
+          "name": "Halles de Lyon Paul Bocuse",
+          "nameKo": "폴 보퀴즈 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "parc-de-la-tete-d-or",
+          "name": "Parc de la Tête d’Or",
+          "nameKo": "테트 도르 공원",
+          "type": "park",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "date": "2026-09-24",
+      "dateLabel": "9/24 목",
+      "baseCity": "Lyon",
+      "theme": "Annecy 당일치기",
+      "core": "Vieille Ville, Thiou 운하, 호숫가",
+      "option": "1시간 크루즈 선택",
+      "fatigue": "4",
+      "lock": "TER·크루즈",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "annecy",
+          "name": "Annecy",
+          "nameKo": "안시",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "annecy-vieille-ville",
+          "name": "Vieille Ville d’Annecy",
+          "nameKo": "안시 구시가지",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "thiou",
+          "name": "Thiou",
+          "nameKo": "티우 운하",
+          "type": "canal",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "lake-annecy",
+          "name": "Lake Annecy",
+          "nameKo": "안시 호수",
+          "type": "lake",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "date": "2026-09-25",
+      "dateLabel": "9/25 금",
+      "baseCity": "Paris",
+      "theme": "Lyon→Paris·15박 정착",
+      "core": "TGV, 체크인, 첫 장보기, 숙소권 학습",
+      "option": "가벼운 동네저녁",
+      "fatigue": "3",
+      "lock": "TGV·Paris 숙소",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "lyon-part-dieu",
+          "name": "Lyon Part-Dieu",
+          "nameKo": "리옹 파르디외역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "paris",
+          "name": "Paris",
+          "nameKo": "파리",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "gare-de-lyon-paris",
+          "name": "Gare de Lyon",
+          "nameKo": "파리 리옹역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "date": "2026-09-26",
+      "dateLabel": "9/26 토",
+      "baseCity": "Paris",
+      "theme": "Latin Quarter·Notre-Dame",
+      "core": "시장·러닝, Latin Quarter, Notre-Dame, Île Saint-Louis",
+      "option": "Panthéon 내부 삭제 가능",
+      "fatigue": "3",
+      "lock": "Notre-Dame",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "latin-quarter",
+          "name": "Latin Quarter",
+          "nameKo": "라탱 지구",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "notre-dame-de-paris",
+          "name": "Notre-Dame de Paris",
+          "nameKo": "노트르담 대성당",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "ile-saint-louis",
+          "name": "Île Saint-Louis",
+          "nameKo": "생루이섬",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "pantheon-paris",
+          "name": "Panthéon",
+          "nameKo": "팡테옹",
+          "type": "historic-site",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "date": "2026-09-27",
+      "dateLabel": "9/27 일",
+      "baseCity": "Paris",
+      "theme": "일요일 생활과 Marais",
+      "core": "Luxembourg, Marché Monge, Marais",
+      "option": "Hamlet 공연 시 Marais 이동",
+      "fatigue": "2~4",
+      "lock": "공연 조건부",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "jardin-du-luxembourg",
+          "name": "Jardin du Luxembourg",
+          "nameKo": "뤽상부르 공원",
+          "type": "park",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "marche-monge",
+          "name": "Marché Monge",
+          "nameKo": "몽주 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "le-marais",
+          "name": "Le Marais",
+          "nameKo": "마레 지구",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "date": "2026-09-28",
+      "dateLabel": "9/28 월",
+      "baseCity": "Paris",
+      "theme": "Louvre 선택관람",
+      "core": "gym·세탁, Louvre 2~3개 섹션, Palais Royal",
+      "option": "야간일정 금지",
+      "fatigue": "4",
+      "lock": "Louvre",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "musee-du-louvre",
+          "name": "Musée du Louvre",
+          "nameKo": "루브르 박물관",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "palais-royal",
+          "name": "Palais-Royal",
+          "nameKo": "팔레 루아얄",
+          "type": "palace",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "date": "2026-09-29",
+      "dateLabel": "9/29 화",
+      "baseCity": "Paris",
+      "theme": "Montmartre→South Pigalle",
+      "core": "북사면 접근, Sacré-Cœur, Abbesses, 9구",
+      "option": "PSG UCL 조건부",
+      "fatigue": "3~5",
+      "lock": "식당·축구",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "montmartre",
+          "name": "Montmartre",
+          "nameKo": "몽마르트르",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "sacre-coeur",
+          "name": "Basilique du Sacré-Cœur",
+          "nameKo": "사크레쾨르 대성당",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "abbesses",
+          "name": "Abbesses",
+          "nameKo": "아베스",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "south-pigalle",
+          "name": "South Pigalle",
+          "nameKo": "사우스 피갈",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "date": "2026-09-30",
+      "dateLabel": "9/30 수",
+      "baseCity": "Paris",
+      "theme": "BnF·Passages·Philharmonie",
+      "core": "BnF Richelieu, passages",
+      "option": "Philharmonie 20:00",
+      "fatigue": "4",
+      "lock": "공연",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "bnf-richelieu",
+          "name": "BnF Richelieu",
+          "nameKo": "프랑스 국립도서관 리슐리외",
+          "type": "library",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "passages-couverts",
+          "name": "Passages couverts",
+          "nameKo": "파리 아케이드",
+          "type": "promenade",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "philharmonie-de-paris",
+          "name": "Philharmonie de Paris",
+          "nameKo": "파리 필하모니",
+          "type": "performance-venue",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "date": "2026-10-01",
+      "dateLabel": "10/1 목",
+      "baseCity": "Paris",
+      "theme": "Cézanne 전시와 강변",
+      "core": "운동·장보기, Grand Palais Cézanne",
+      "option": "오페라/발레 선택",
+      "fatigue": "4",
+      "lock": "전시·공연",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "grand-palais",
+          "name": "Grand Palais",
+          "nameKo": "그랑 팔레",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "date": "2026-10-02",
+      "dateLabel": "10/2 금",
+      "baseCity": "Paris",
+      "theme": "Marais 생활·사진·패션",
+      "core": "Enfants Rouges, Marais, 선택문화시설 1곳",
+      "option": "재즈·연극 또는 자유",
+      "fatigue": "3",
+      "lock": "공연 조건부",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "marche-des-enfants-rouges",
+          "name": "Marché des Enfants Rouges",
+          "nameKo": "앙팡 루주 시장",
+          "type": "market",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "le-marais",
+          "name": "Le Marais",
+          "nameKo": "마레 지구",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "date": "2026-10-03",
+      "dateLabel": "10/3 토",
+      "baseCity": "Paris",
+      "theme": "Versailles 옵션일",
+      "core": "Versailles 궁전·정원·Trianon 중 2개",
+      "option": "대체: 15구 생활일",
+      "fatigue": "4/2",
+      "lock": "Versailles",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "versailles",
+          "name": "Palace of Versailles",
+          "nameKo": "베르사유 궁전",
+          "type": "palace",
+          "status": "optional",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "versailles-gardens",
+          "name": "Gardens of Versailles",
+          "nameKo": "베르사유 정원",
+          "type": "garden",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "trianon",
+          "name": "Grand and Petit Trianon",
+          "nameKo": "트리아농",
+          "type": "palace",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "paris-15e",
+          "name": "15th arrondissement of Paris",
+          "nameKo": "파리 15구",
+          "type": "neighborhood",
+          "status": "reference",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "date": "2026-10-04",
+      "dateLabel": "10/4 일",
+      "baseCity": "Paris",
+      "theme": "완충·스케치·무계획",
+      "core": "늦은 아침, Canal Saint-Martin 또는 공원",
+      "option": "숙소식",
+      "fatigue": "1~2",
+      "lock": "없음",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "canal-saint-martin",
+          "name": "Canal Saint-Martin",
+          "nameKo": "생마르탱 운하",
+          "type": "canal",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "date": "2026-10-05",
+      "dateLabel": "10/5 월",
+      "baseCity": "Paris",
+      "theme": "동부·남부 생활모듈",
+      "core": "gym·세탁, 11·12구 또는 13·15구",
+      "option": "동네 비스트로",
+      "fatigue": "2",
+      "lock": "없음",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "paris-east-south-neighborhoods",
+          "name": "Eastern and southern Paris neighborhoods",
+          "nameKo": "파리 동부·남부 생활권",
+          "type": "neighborhood",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "date": "2026-10-06",
+      "dateLabel": "10/6 화",
+      "baseCity": "Paris",
+      "theme": "Orsay와 Mary Cassatt",
+      "core": "Seine 러닝, Musée d’Orsay",
+      "option": "UCL 조건부 또는 휴식",
+      "fatigue": "4~5",
+      "lock": "Orsay·축구",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "seine",
+          "name": "Seine riverfront",
+          "nameKo": "센강변",
+          "type": "riverfront",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "musee-d-orsay",
+          "name": "Musée d’Orsay",
+          "nameKo": "오르세 미술관",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "date": "2026-10-07",
+      "dateLabel": "10/7 수",
+      "baseCity": "Paris",
+      "theme": "Bourse de Commerce 개막",
+      "core": "Bourse, Montorgueil",
+      "option": "Manon/연극/축구 중 1",
+      "fatigue": "4~5",
+      "lock": "전시·공연",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "bourse-de-commerce",
+          "name": "Bourse de Commerce — Pinault Collection",
+          "nameKo": "부르스 드 코메르스",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "montorgueil",
+          "name": "Rue Montorgueil",
+          "nameKo": "몽토르게유 거리",
+          "type": "street",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "date": "2026-10-08",
+      "dateLabel": "10/8 목",
+      "baseCity": "Paris",
+      "theme": "Giverny 옵션일",
+      "core": "Giverny 또는 Orangerie·Tuileries",
+      "option": "가벼운 저녁",
+      "fatigue": "4/3",
+      "lock": "Giverny",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "giverny",
+          "name": "Giverny",
+          "nameKo": "지베르니",
+          "type": "village",
+          "status": "optional",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "musee-de-l-orangerie",
+          "name": "Musée de l’Orangerie",
+          "nameKo": "오랑주리 미술관",
+          "type": "museum",
+          "status": "reference",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "jardin-des-tuileries",
+          "name": "Jardin des Tuileries",
+          "nameKo": "튈르리 정원",
+          "type": "garden",
+          "status": "reference",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "date": "2026-10-09",
+      "dateLabel": "10/9 금",
+      "baseCity": "Paris",
+      "theme": "마지막 자유선택·짐정리",
+      "core": "마지막 운동, FLV 또는 미완료 일정",
+      "option": "송별저녁·최종포장",
+      "fatigue": "3",
+      "lock": "식당",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "paris",
+          "name": "Paris",
+          "nameKo": "파리",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "fondation-louis-vuitton",
+          "name": "Fondation Louis Vuitton",
+          "nameKo": "루이비통 재단 미술관",
+          "type": "museum",
+          "status": "optional",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "date": "2026-10-10",
+      "dateLabel": "10/10 토",
+      "baseCity": "Paris→Seoul",
+      "theme": "체크아웃·CDG·출국",
+      "core": "시장·체크아웃, CDG 이동, 19:10 출국 예정",
+      "option": "도심 추가관광 금지",
+      "fatigue": "3",
+      "lock": "항공·공항이동",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "paris",
+          "name": "Paris",
+          "nameKo": "파리",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "charles-de-gaulle-airport",
+          "name": "Paris Charles de Gaulle Airport",
+          "nameKo": "파리 샤를 드골 공항",
+          "type": "airport",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

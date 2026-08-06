@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0",
+  "day": 10,
+  "date": "2026-09-07",
+  "city": "Nice",
+  "title": "Monaco 도시국가",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": "08:30",
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": "TER 왕복 + 도보 약 3km",
+  "fatigue": "4",
+  "hotel": {
+    "name": "AMMI Masséna (후보)",
+    "lat": 43.6978,
+    "lng": 7.26836,
+    "status": "candidate"
+  },
+  "stops": [
+    {
+      "id": "nice-ville",
+      "order": 1,
+      "start": "08:30",
+      "end": null,
+      "name": "Nice-Ville역 출발",
+      "category": "transport",
+      "lat": 43.70499,
+      "lng": 7.26199,
+      "summary": "TER 20분 여유 — 역·언덕 이동 30분 완충",
+      "menu": null,
+      "reservation": "TER 시각표 재확인",
+      "optional": false
+    },
+    {
+      "id": "le-rocher",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Le Rocher·대공궁 광장",
+      "category": "sight",
+      "lat": 43.7310478,
+      "lng": 7.4209436,
+      "summary": "위병 교대는 정오 직전 — 정확한 시각을 출발 전 확인",
+      "menu": null,
+      "reservation": "위병 교대 시각 재확인",
+      "optional": false
+    },
+    {
+      "id": "cathedrale-monaco",
+      "order": 3,
+      "start": null,
+      "end": null,
+      "name": "모나코 대성당",
+      "category": "sight",
+      "lat": 43.730247,
+      "lng": 7.4226535,
+      "summary": "Le Rocher 구시가지와 함께 본다",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "port-hercule",
+      "order": 4,
+      "start": null,
+      "end": null,
+      "name": "Port Hercule",
+      "category": "sight",
+      "lat": 43.737092,
+      "lng": 7.42115,
+      "summary": "언덕에서 항구로 내려오는 경사 주의",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "monte-carlo",
+      "order": 5,
+      "start": null,
+      "end": null,
+      "name": "Monte Carlo",
+      "category": "sight",
+      "lat": 43.7391605,
+      "lng": 7.428023,
+      "summary": "카지노 광장 외관 중심 — 상세는 원고 보완 필요 상태",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "nice-return",
+      "order": 6,
+      "start": null,
+      "end": null,
+      "name": "Nice 귀환",
+      "category": "hotel",
+      "lat": 43.6978,
+      "lng": 7.26836,
+      "summary": "월요일 운영 변수 — 무리하지 않는다",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    }
+  ],
+  "legs": [
+    {
+      "from": "nice-ville",
+      "to": "le-rocher",
+      "mode": "train",
+      "duration": null,
+      "distance": null,
+      "line": "TER Nice→Monaco 후 도보·언덕",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "le-rocher",
+      "to": "cathedrale-monaco",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cathedrale-monaco",
+      "to": "port-hercule",
+      "mode": "walk",
+      "duration": "15분 (내리막)",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "port-hercule",
+      "to": "monte-carlo",
+      "mode": "walk",
+      "duration": "15분 (오르막)",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "monte-carlo",
+      "to": "nice-return",
+      "mode": "train",
+      "duration": null,
+      "distance": null,
+      "line": "TER Monaco→Nice",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
+  "transport": [
+    "TER 왕복",
+    "모나코 시내 도보·경사"
+  ],
+  "food": [
+    "Monaco-Ville 또는 Port 인근"
+  ],
+  "highlights": [
+    "셍겐이지만 별도 국가",
+    "위병 교대 정오 직전",
+    "Japanese Garden/Larvotto 택1"
+  ],
+  "backup": "월요일 운영·혼잡 시 구시가지·대성당 중심",
+  "map": {
+    "zoom": 12,
+    "center": [
+      43.717,
+      7.345
+    ],
+    "routeCache": null
+  },
+  "needsReview": [
+    "니스 챕터 헤딩(Day 11 모나코)과 정본 일정표(Day 10 모나코) 번호 불일치 — 정본 기준 적용",
+    "위병 교대 시각·TER 시각표 확정",
+    "몬테카를로·항구·해양박물관 상세 원고 보완 필요",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-10",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-10",
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-11-모나코",
+    "OSM Nominatim 지오코딩 2026-08-06: 대공궁 광장·대성당·Port Hercule·카지노·모나코역",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+  ]
+}

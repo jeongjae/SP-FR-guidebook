@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "day": 39,
+  "date": "2026-10-06",
+  "city": "Paris",
+  "title": "Orsay와 Mary Cassatt",
+  "sourceStatus": "candidate-latest-needs-review",
+  "prototypeType": null,
+  "startTime": null,
+  "endTime": null,
+  "totalDuration": null,
+  "totalDistance": null,
+  "fatigue": "4~5",
+  "hotel": {
+    "name": null,
+    "lat": null,
+    "lng": null,
+    "status": "needs-review"
+  },
+  "stops": [
+    {
+      "id": "seine",
+      "order": 1,
+      "start": null,
+      "end": null,
+      "name": "Seine 러닝",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Seine 러닝",
+      "menu": null,
+      "reservation": "Orsay·축구",
+      "optional": false
+    },
+    {
+      "id": "mus-e-d-orsay",
+      "order": 2,
+      "start": null,
+      "end": null,
+      "name": "Musée d’Orsay",
+      "category": "sight",
+      "lat": null,
+      "lng": null,
+      "summary": "Musée d’Orsay",
+      "menu": null,
+      "reservation": "Orsay·축구",
+      "optional": false
+    }
+  ],
+  "legs": [],
+  "transport": [
+    "Orsay·축구"
+  ],
+  "food": [
+    "Orsay 전 가벼운 식사"
+  ],
+  "highlights": [
+    "Seine 러닝, Musée d’Orsay",
+    "선택·축소: UCL 조건부 또는 휴식"
+  ],
+  "backup": "Orsay 핵심만",
+  "map": null,
+  "needsReview": [
+    "숙소명과 좌표 확정",
+    "각 일정의 시작·종료 시각 확정",
+    "방문지 좌표 검증",
+    "모든 이동구간의 교통수단·거리·시간·경로 확정",
+    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+  ],
+  "sourceRefs": [
+    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+  ]
+}
