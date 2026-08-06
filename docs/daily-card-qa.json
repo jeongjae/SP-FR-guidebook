@@ -8,9 +8,6 @@
   ],
   "errors": [],
   "warnings": [
-    "Day 26: 4 coordinate fields need review",
-    "Day 27: 5 coordinate fields need review",
-    "Day 28: 4 coordinate fields need review",
     "Day 29: 5 coordinate fields need review",
     "Day 30: 4 coordinate fields need review",
     "Day 31: 4 coordinate fields need review",
@@ -356,26 +353,41 @@
     {
       "day": 26,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 6
+      }
     },
     {
       "day": 27,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 28,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 35,
+        "marker-count": 3
+      }
     },
     {
       "day": 29,
