@@ -2414,11 +2414,11 @@
       "checkIn": "2026-08-29",
       "checkOut": "2026-09-01",
       "nights": 3,
-      "status": "미조사",
-      "area": "Eixample/Gràcia",
-      "address": null,
+      "status": "예약완료",
+      "area": "호텔 · Occidental Barcelona 1929",
+      "address": "Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain",
       "bookingNumber": null,
-      "sourceUrl": null
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona"
     },
     {
       "id": "stay:b-scara",
@@ -2513,10 +2513,10 @@
       "dayId": "day:001",
       "category": "숙소",
       "name": "숙소 3박",
-      "status": "미조사",
+      "status": "예약완료",
       "priority": "P0",
       "targetDate": "2026-08-05",
-      "sourceUrl": null
+      "sourceUrl": "https://www.barcelo.com/en-us/occidental-barcelona-1929/"
     },
     {
       "id": "reservation:r002",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
-<Placemark><name>[숙소 후보] Praktik Garden</name><Point><coordinates>2.17132,41.39382,0</coordinates></Point></Placemark>
+<Placemark><name>[확정 숙소] Barcelona 확정 숙소 — Occidental Barcelona 1929 — 2026-08-29~09-01</name><description>Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain</description><Point><coordinates>2.1476619,41.3752738,0</coordinates></Point></Placemark>
 <Placemark><name>[핵심 방문지] Sagrada Família</name><Point><coordinates>2.17436,41.40363,0</coordinates></Point></Placemark>
 <Placemark><name>[핵심 방문지] Sant Pau</name><Point><coordinates>2.17438,41.41193,0</coordinates></Point></Placemark>
 <Placemark><name>[핵심 방문지] Gòtic</name><Point><coordinates>2.1761,41.3838,0</coordinates></Point></Placemark>
