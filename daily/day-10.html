@@ -11,6 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="fr">
@@ -131,6 +134,24 @@
 <hr>
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>월요일 운영·경사·혼잡</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>정원/Larvotto 중 하나</dd></div><div class="ds-item"><dt>대체안</dt><dd>구시가지·대성당 중심</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Monaco-Ville 또는 Port</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>TER</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
+<section class="daily-map-section" aria-labelledby="daily-map-title-10">
+<h2 id="daily-map-title-10" class="ic ic-map">Google 실행지도</h2>
+<p class="note">Monaco 당일 — Monaco-Ville · Port Hercule · Monte Carlo</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="station" aria-pressed="false">역</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
+<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=43.70499%2C7.26199&amp;destination=43.73893%2C7.41904&amp;travelmode=transit">오늘 동선 열기</a></div>
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="nice-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="nice-stay-candidate" aria-pressed="false"><strong>0. AMMI Masséna</strong><span>숙소 · 08:40 전후 출발</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=AMMI+Mass%C3%A9na">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.6978%2C7.26836&amp;travelmode=transit">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="nice-ville" data-type="station"><button class="gm-card-main" type="button" data-place-id="nice-ville" aria-pressed="false"><strong>1. Nice-Ville</strong><span>역 · 09:00 전후 TER</span><small>역내 엘리베이터·출구 확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Nice-Ville">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.70499%2C7.26199&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="monaco" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="monaco" aria-pressed="false"><strong>2. Monaco</strong><span>방문지 · 10:15–17:00</span><small>Monaco-Ville → Port Hercule → Casino Square.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Monaco">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.73893%2C7.41904&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+</div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.70499%2C7.26199&amp;travelmode=walking&amp;origin=43.6978%2C7.26836">AMMI Masséna → Nice-Ville · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.73893%2C7.41904&amp;travelmode=transit&amp;origin=43.70499%2C7.26199">Nice-Ville → Monaco · 대중교통</a></li></ol></details>
+<script type="application/json">{"center":[43.719,7.341],"zoom":11,"places":[{"id":"nice-stay-candidate","name":"AMMI Masséna","city":"Nice","type":"accommodation","lat":43.6978,"lng":7.26836,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=AMMI+Mass%C3%A9na","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"]},{"id":"nice-ville","name":"Nice-Ville","city":"Nice","type":"station","lat":43.70499,"lng":7.26199,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Nice-Ville","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"]},{"id":"monaco","name":"Monaco","city":"Nice","type":"attraction","lat":43.73893,"lng":7.41904,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Monaco","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-07","city":"Nice · Monaco","title":"Monaco 당일 — Monaco-Ville · Port Hercule · Monte Carlo","center":[43.719,7.341],"zoom":11,"defaultMode":"transit","stops":[{"placeId":"nice-stay-candidate","order":0,"plannedTime":"08:40 전후 출발","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"nice-ville","order":1,"plannedTime":"09:00 전후 TER","note":"역내 엘리베이터·출구 확인."},{"placeId":"monaco","order":2,"plannedTime":"10:15–17:00","note":"Monaco-Ville → Port Hercule → Casino Square."}],"segments":[{"from":"nice-stay-candidate","to":"nice-ville","mode":"walking"},{"from":"nice-ville","to":"monaco","mode":"transit"}]}}</script>
+</section>
+</section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
   <a href="../assets/daily-cards/full/day-10-nice.webp" aria-label="Day 10 Daily Action Map 원본 확대">
@@ -160,5 +181,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
