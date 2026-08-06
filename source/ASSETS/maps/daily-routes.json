@@ -300,6 +300,167 @@
           "note": "개인 숙소 복귀는 공개 링크를 만들지 않음."
         }
       ]
+    },
+    {
+      "date": "2026-09-04",
+      "city": "Nice",
+      "title": "Nice 도착 — 공항에서 숙소 정착",
+      "center": [
+        43.679,
+        7.236
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "nice-airport-terminal-2",
+          "order": 0,
+          "plannedTime": "도착 직후",
+          "note": "도착터미널에 따라 Tram 2 또는 택시."
+        },
+        {
+          "placeId": "nice-stay-candidate",
+          "order": 1,
+          "plannedTime": "도착 +60분 체크인",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        }
+      ],
+      "segments": [
+        {
+          "from": "nice-airport-terminal-2",
+          "to": "nice-stay-candidate",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "city": "Nice",
+      "title": "Cours Saleya 시장과 Castle Hill 조망",
+      "center": [
+        43.6962,
+        7.2765
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "nice-stay-candidate",
+          "order": 0,
+          "plannedTime": "09:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "cours-saleya",
+          "order": 1,
+          "plannedTime": "09:20–10:20",
+          "note": "과일·올리브·치즈·꽃시장."
+        },
+        {
+          "placeId": "colline-du-chateau",
+          "order": 2,
+          "plannedTime": "11:35–12:35",
+          "note": "해변·구시가지·항구 조망."
+        }
+      ],
+      "segments": [
+        {
+          "from": "nice-stay-candidate",
+          "to": "cours-saleya",
+          "mode": "walking"
+        },
+        {
+          "from": "cours-saleya",
+          "to": "colline-du-chateau",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "city": "Nice · Cannes",
+      "title": "Cannes 당일 — TER · Forville · Le Suquet",
+      "center": [
+        43.625,
+        7.141
+      ],
+      "zoom": 11,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "nice-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:20 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "nice-ville",
+          "order": 1,
+          "plannedTime": "08:40 전후 TER",
+          "note": "당일 운행 재확인."
+        },
+        {
+          "placeId": "cannes",
+          "order": 2,
+          "plannedTime": "09:30–15:40",
+          "note": "Marché Forville → Le Suquet → Vieux-Port."
+        }
+      ],
+      "segments": [
+        {
+          "from": "nice-stay-candidate",
+          "to": "nice-ville",
+          "mode": "walking"
+        },
+        {
+          "from": "nice-ville",
+          "to": "cannes",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "city": "Nice · Monaco",
+      "title": "Monaco 당일 — Monaco-Ville · Port Hercule · Monte Carlo",
+      "center": [
+        43.719,
+        7.341
+      ],
+      "zoom": 11,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "nice-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:40 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "nice-ville",
+          "order": 1,
+          "plannedTime": "09:00 전후 TER",
+          "note": "역내 엘리베이터·출구 확인."
+        },
+        {
+          "placeId": "monaco",
+          "order": 2,
+          "plannedTime": "10:15–17:00",
+          "note": "Monaco-Ville → Port Hercule → Casino Square."
+        }
+      ],
+      "segments": [
+        {
+          "from": "nice-stay-candidate",
+          "to": "nice-ville",
+          "mode": "walking"
+        },
+        {
+          "from": "nice-ville",
+          "to": "monaco",
+          "mode": "transit"
+        }
+      ]
     }
   ]
 }
