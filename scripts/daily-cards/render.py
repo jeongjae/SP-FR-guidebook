@@ -118,8 +118,11 @@ def render_with_chrome_cli(html_path: Path, png_path: Path) -> dict:
 
 def render(day_number: int, browser=None) -> dict:
     day = json.loads((DATA / f"day-{day_number:02d}.json").read_text(encoding="utf-8"))
-    if not day.get("prototypeType"):
-        raise SystemExit(f"Day {day_number:02d} is not a prototype")
+    # Prototype gate retired after the 3-card approval (2026-08-05).
+    # Mass generation stays impossible: only explicitly listed days render,
+    # and days whose schedule data is still a scaffold fail below on null stops.
+    if all(s.get("lat") is None for s in day.get("stops", [])):
+        raise SystemExit(f"Day {day_number:02d} has no coordinates yet — fill data first")
     html_path, slug = build_html(day)
     full_dir, thumb_dir = OUTPUT / "full", OUTPUT / "thumbs"
     full_dir.mkdir(parents=True, exist_ok=True); thumb_dir.mkdir(parents=True, exist_ok=True)

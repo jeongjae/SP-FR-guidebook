@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data" / "daily-cards" / "routes"
 USER_AGENT = "SP-FR-guidebook-daily-card-builder/1.0 (prototype route cache)"
 ROUTES = {
+    1: [(2.0790474, 41.2969440), (2.17132, 41.39382)],
     4: [(2.14005, 41.37914), (1.8086, 41.2403), (2.9101005, 42.1603007)],
     5: [(2.9101005, 42.1603007), (3.08322, 42.52505),
         (3.2584, 42.2886), (2.9101005, 42.1603007)],

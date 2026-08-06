@@ -26,7 +26,8 @@
   const timeline = $("timeline");
   timeline.dataset.count = data.stops.length;
   timeline.innerHTML = data.stops.map((stop) => {
-    const time = stop.start === stop.end ? stop.start : `${stop.start}–${stop.end}`;
+    const time = (!stop.end || stop.start === stop.end) ? (stop.start || '')
+      : (!stop.start ? stop.end : `${stop.start}–${stop.end}`);
     const detail = stop.menu || stop.reservation;
     return `<article class="timeline-item cat-${esc(stop.category)}">
       <div class="timeline-top"><time class="timeline-time">${esc(time)}</time><h3 class="timeline-name">${esc(stop.name)}</h3></div>
