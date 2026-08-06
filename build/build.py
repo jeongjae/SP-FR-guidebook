@@ -69,10 +69,12 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from validate_map_data import validate as validate_map_data  # noqa: E402
 MEDIA_CATALOG = media.load_catalog(ROOT)
 PHOTO_MANIFEST = media.load_photo_manifest(ROOT)
-# Barcelona is migrated to the responsive photo manifest. Keep the legacy
-# catalog only for Girona/Nice until their later batches are approved.
+# Barcelona (Pilot), Girona and Nice (Batch 1) are migrated to the responsive
+# photo manifest; their legacy catalog entries stay filtered so a page never
+# renders the same subject from two pipelines.
+PHOTO_REGIONS = {"barcelona", "girona", "nice"}
 MEDIA_CATALOG["assets"] = [asset for asset in MEDIA_CATALOG.get("assets", [])
-                           if asset.get("regionSlug") != "barcelona"]
+                           if asset.get("regionSlug") not in PHOTO_REGIONS]
 
 SITE_TITLE = "2026 유럽 여행 가이드북"
 SITE_SHORT = "2026 유럽 여행 가이드북"
@@ -487,13 +489,10 @@ VISUALS = {
 
 def hero_figure(slug, rel=".."):
     """지역소개 첫머리의 대표 사진 (CC 저작자·라이선스 표시)."""
-    if slug == "04":
-        return media.photo_figure(media.photo_region_hero(PHOTO_MANIFEST), rel,
-                                  variant="hero", priority=True)
-    sample_region = {"05": "girona", "06": "nice"}.get(slug)
-    if sample_region:
-        return media.figure(media.region_hero(MEDIA_CATALOG, sample_region), rel,
-                            variant="hero", priority=True)
+    manifest_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+    if manifest_region:
+        return media.photo_figure(media.photo_region_hero(PHOTO_MANIFEST, manifest_region),
+                                  rel, variant="hero", priority=True)
     if slug not in HERO_PHOTOS:
         return ""
     fname, subject, author, lic, lic_url, src_url = HERO_PHOTOS[slug]
@@ -2220,14 +2219,9 @@ def build_split_chapter(c, body_md, map_links):
         sample_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(c["slug"])
         sample_media = ""
         if sample_region and fname == "food.html":
-            if sample_region == "barcelona":
-                sample_media = media.photo_gallery(
-                    media.photos_for_usage(PHOTO_MANIFEST, "chapters/barcelona/food.html"),
-                    rel, "지역 음식과 시장 대표 이미지", limit=3)
-            else:
-                sample_media = media.gallery(
-                    media.region_extras(MEDIA_CATALOG, sample_region, ("food", "market")),
-                    rel, "지역 음식과 시장 대표 이미지")
+            sample_media = media.photo_gallery(
+                media.photos_for_usage(PHOTO_MANIFEST, f"chapters/{c['name']}/food.html"),
+                rel, "지역 음식과 시장 대표 이미지", limit=3)
         elif sample_region and fname == "places.html":
             unlinked = [a for a in media.region_extras(
                 MEDIA_CATALOG, sample_region, ("place",)) if not a.get("placeSlug")]
@@ -3263,7 +3257,7 @@ def build_daily():
         photo_block = ""
         if hero_asset:
             photo_block = media.photo_figure(hero_asset, "..", variant="hero", priority=True)
-            photo_block += media.photo_gallery(other_photos, "..", "오늘의 주요 장소", limit=3)
+            photo_block += media.photo_gallery(other_photos, "..", "오늘의 주요 장소", limit=4)
 
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
@@ -4309,10 +4303,14 @@ def build_places(timetable):
             detail = wrap_tables(rewrite_asset_links(html_body, rel))
         ex = "" if detail else place_excerpt(r)
 
-        # 파일별 라이선스를 확인한 로컬 사진만 쓴다. 카탈로그 연결이 없으면
-        # 임의의 유사 사진으로 대체하지 않고 이미지 영역 자체를 생략한다.
-        photo = media.figure(media.by_place(MEDIA_CATALOG, r["slug"]), rel,
-                             variant="place")
+        # 파일별 라이선스를 확인한 로컬 사진만 쓴다. manifest → 레거시 카탈로그
+        # 순으로 찾고, 둘 다 없으면 임의의 유사 사진으로 대체하지 않고 이미지
+        # 영역 자체를 생략한다.
+        pilot_photo = media.photo_by_place(PHOTO_MANIFEST, r["slug"])
+        photo = (media.photo_figure(pilot_photo, rel, variant="content")
+                 if pilot_photo else
+                 media.figure(media.by_place(MEDIA_CATALOG, r["slug"]), rel,
+                              variant="place"))
 
         # 참고 링크 — 근거가 있는 것만. 지도 좌표는 실행지도 핀에서, 위키 제목은
         # 레지스트리에서 온다. 둘 다 없으면 그 칩은 나오지 않는다.
@@ -4905,18 +4903,13 @@ def check_phase7_visual_guards():
         chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
         hub = SITE / chapter_url(chapter)
         page_text = hub.read_text(encoding="utf-8")
-        sample_region = {"05": "girona", "06": "nice"}.get(slug)
-        if slug == "04":
-            asset = media.photo_region_hero(PHOTO_MANIFEST)
+        manifest_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+        if manifest_region:
+            asset = media.photo_region_hero(PHOTO_MANIFEST, manifest_region)
             default_variant = media._photo_variants(asset, "hero")[-1]
             expected = (default_variant["sitePath"], f'alt="{html.escape(asset["altKo"])}"',
                         html.escape(asset["creator"]), asset["license"],
                         "사진 정보", "data-photo-id")
-        elif sample_region:
-            asset = media.region_hero(MEDIA_CATALOG, sample_region)
-            expected = (asset["localPath"], f'alt="{html.escape(asset["altKo"])}"',
-                        html.escape(asset["author"]), asset["licenseName"],
-                        "Wikimedia Commons", "data-media-id")
         else:
             expected = (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
                         html.escape(author), lic, "Wikimedia Commons", "크롭·리사이즈")
