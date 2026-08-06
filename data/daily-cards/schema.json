@@ -92,7 +92,7 @@
       "properties": {
         "from": {"type": "string"},
         "to": {"type": "string"},
-        "mode": {"enum": ["walk", "metro", "train", "car", "bus", "tram", "taxi", "flight"]},
+        "mode": {"enum": ["walk", "metro", "train", "car", "bus", "tram", "taxi", "flight", "unconfirmed"]},
         "duration": {"type": ["string", "null"]},
         "distance": {"type": ["string", "null"]},
         "line": {"type": ["string", "null"]},

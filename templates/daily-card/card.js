@@ -12,10 +12,12 @@
   $("date-line").textContent = `${date.getFullYear()}. ${String(date.getMonth()+1).padStart(2,"0")}. ${String(date.getDate()).padStart(2,"0")} ${weekdays[date.getDay()]}요일`;
   $("city-line").textContent = data.city;
   $("title-line").textContent = data.title;
-  $("duration-line").textContent = `${data.startTime}–${data.endTime}`;
+  $("duration-line").textContent = data.startTime && data.endTime
+    ? `${data.startTime}–${data.endTime}`
+    : (data.startTime ? `${data.startTime}–` : "시각 미정");
   $("fatigue-line").textContent = `피로도 ${data.fatigue}/5`;
   $("distance-line").textContent = data.totalDistance;
-  $("total-duration-line").textContent = `총 ${data.totalDuration}`;
+  $("total-duration-line").textContent = data.totalDuration ? `총 ${data.totalDuration}` : "";
 
   const list = (id, items) => { $(id).innerHTML = items.map((x) => `<li>${esc(x)}</li>`).join(""); };
   list("transport-list", data.transport.slice(0, 3));
@@ -41,6 +43,7 @@
   if (modes.has("walk")) labels.push('<span class="walk"><i></i>도보</span>');
   if (["metro","train","bus","tram"].some((m) => modes.has(m))) labels.push('<span class="transit"><i></i>대중교통</span>');
   if (["car","taxi"].some((m) => modes.has(m))) labels.push('<span class="car"><i></i>차량</span>');
+  if (modes.has("unconfirmed")) labels.push('<span class="unconfirmed"><i></i>이동 미확정</span>');
   $("legend").innerHTML = labels.join("");
 
   const map = $("map");
