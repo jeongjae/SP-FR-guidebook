@@ -160,7 +160,9 @@ PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 DAILY_V2_DIR = DAILY_IMG_DIR / "v2"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
-GOOGLE_MAP_PILOT_DATES = {"2026-08-30", "2026-09-03"}
+# Phase 5 배치 전환 — 배치 1 (Day 1~5) + 파일럿 Day 6. Day 4 는 비지도 이동일.
+GOOGLE_MAP_PILOT_DATES = {"2026-08-29", "2026-08-30", "2026-08-31",
+                          "2026-09-02", "2026-09-03"}
 GOOGLE_MAP_PILOT_REGIONS = {
     "barcelona.html": "barcelona", "girona.html": "girona", "nice.html": "nice",
     "aix.html": "aix", "luberon.html": "luberon", "avignon.html": "avignon",
@@ -4832,10 +4834,10 @@ def check_phase6_map_guards():
 
 
 def check_daily_map_guards():
-    """Leaflet 3일 + Google Maps 파일럿 2일의 fallback 계약을 잠근다."""
+    """Google Maps 전환일의 fallback 계약을 잠근다. Leaflet 일자는 배치 전환으로 소진됐다."""
     payload, by_date = load_daily_maps()
     problems = []
-    legacy = {"2026-08-29", "2026-08-31", "2026-09-02"}
+    legacy = set()
     pilots = GOOGLE_MAP_PILOT_DATES
     expected = legacy | pilots
     missing = sorted(expected - set(by_date))
@@ -4891,7 +4893,7 @@ def check_daily_map_guards():
         for problem in problems:
             print("  " + problem)
         sys.exit(1)
-    print("날짜별 인터랙티브 지도 가드: Leaflet 3일 · Google Maps 파일럿 2일 · 정적 fallback 이상 없음")
+    print(f"날짜별 인터랙티브 지도 가드: Google Maps {len(pilots)}일 · 정적 fallback 이상 없음")
 
 
 def check_phase7_visual_guards():
