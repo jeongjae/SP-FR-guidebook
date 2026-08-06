@@ -594,3 +594,560 @@
 - Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
 - Used in:
   - `/daily/day-09.html`
+
+## 생폴드방스 성벽 마을
+
+<a id="aix-saint-paul-01"></a>
+
+- Image ID: `aix-saint-paul-01`
+- Place ID: `saint-paul-de-vence`
+- Photo: Yair Haklai
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Vues_g%C3%A9n%C3%A9rales_-_Saint-Paul-de-Vence.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/d/d2/Vues_g%C3%A9n%C3%A9rales_-_Saint-Paul-de-Vence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-12.html`
+  - `/places/saint-paul-de-vence.html`
+
+## 그라스 구시가
+
+<a id="aix-grasse-01"></a>
+
+- Image ID: `aix-grasse-01`
+- Place ID: `grasse`
+- Photo: Irene Grassi from Italy
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grasse_-_Flickr_-_Irene_Grassi_(sun_sand_%5E_sea).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/3/30/Grasse_-_Flickr_-_Irene_Grassi_%28sun_sand_%5E_sea%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-12.html`
+  - `/places/grasse.html`
+
+## 엑상프로방스와 로통드 분수
+
+<a id="aix-city-01"></a>
+
+- Image ID: `aix-city-01`
+- Place ID: `aix-en-provence`
+- Photo: FrogsLegs71
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Fontaine_de_la_Rotonde_with_Cours_Mirabeau_in_the_distance_Aix_en_Provence.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/b/b6/Fontaine_de_la_Rotonde_with_Cours_Mirabeau_in_the_distance_Aix_en_Provence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-12.html`
+
+## 엑상프로방스 노천시장
+
+<a id="aix-markets-01"></a>
+
+- Image ID: `aix-markets-01`
+- Place ID: `aix-markets`
+- Photo: Tmv
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:March%C3%A9_aux_Fruits_et_L%C3%A9gumes_%C3%A0_Aix-en-Provence.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/b/b6/March%C3%A9_aux_Fruits_et_L%C3%A9gumes_%C3%A0_Aix-en-Provence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-13.html`
+
+## 미라보 거리
+
+<a id="aix-mirabeau-01"></a>
+
+- Image ID: `aix-mirabeau-01`
+- Place ID: `cours-mirabeau`
+- Photo: Georges Seguin ( Okki )
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cours_Mirabeau_20100508_Aix-en-Provence_1.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/0/0a/Cours_Mirabeau_20100508_Aix-en-Provence_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-13.html`
+  - `/places/cours-mirabeau.html`
+
+## 그라네 미술관
+
+<a id="aix-granet-01"></a>
+
+- Image ID: `aix-granet-01`
+- Place ID: `musee-granet`
+- Photo: François GOGLINS
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aix_en_Provence-FR-13-musee_Granet-a1.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/8/8e/Aix_en_Provence-FR-13-musee_Granet-a1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-13.html`
+  - `/places/musee-granet.html`
+
+## 카시스와 지중해
+
+<a id="aix-cassis-01"></a>
+
+- Image ID: `aix-cassis-01`
+- Place ID: `cassis`
+- Photo: Marion Schneider & Christoph Aistleitner --- Contact: Mediocrity
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cassis.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/c/c3/Cassis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [Public Domain](https://creativecommons.org/publicdomain/mark/1.0/)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-14.html`
+  - `/places/cassis.html`
+
+## 앙보 칼랑크
+
+<a id="aix-calanques-01"></a>
+
+- Image ID: `aix-calanques-01`
+- Place ID: `calanques`
+- Photo: kallerna
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:En-Vau_calanque_10.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/7/73/En-Vau_calanque_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-14.html`
+  - `/places/calanques.html`
+
+## 세잔 아틀리에
+
+<a id="aix-cezanne-01"></a>
+
+- Image ID: `aix-cezanne-01`
+- Place ID: `atelier-des-lauves`
+- Photo: Bjs
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aix-Atelier_C%C3%A9zanne-bjs180816-01.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/1/15/Aix-Atelier_C%C3%A9zanne-bjs180816-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-15.html`
+  - `/places/atelier-des-lauves.html`
+
+## 루르마랭 전경
+
+<a id="luberon-lourmarin-01"></a>
+
+- Image ID: `luberon-lourmarin-01`
+- Place ID: `lourmarin`
+- Photo: Véronique PAGNIER
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lourmarin_-_vue_g%C3%A9n%C3%A9rale.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/e/e6/Lourmarin_-_vue_g%C3%A9n%C3%A9rale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-16.html`
+  - `/places/lourmarin.html`
+
+## 뤼베롱과 보니외
+
+<a id="luberon-valley-01"></a>
+
+- Image ID: `luberon-valley-01`
+- Place ID: `luberon`
+- Photo: Mathieu BROSSAIS
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bonnieux_au_coeur_du_Luberon_(Vaucluse).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/0/05/Bonnieux_au_coeur_du_Luberon_%28Vaucluse%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-16.html`
+  - `/daily/day-19.html`
+
+## 루시용의 오커빛 집들
+
+<a id="luberon-roussillon-01"></a>
+
+- Image ID: `luberon-roussillon-01`
+- Place ID: `roussillon`
+- Photo: Jfdo
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Village_de_Roussillon,_Vaucluse,_France_-_panoramio.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/4/4b/Village_de_Roussillon%2C_Vaucluse%2C_France_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-17.html`
+
+## 오커 산책로
+
+<a id="luberon-ocres-01"></a>
+
+- Image ID: `luberon-ocres-01`
+- Place ID: `sentier-des-ocres`
+- Photo: Velvet
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Roussillon_chemin_des_ocres.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/5/5e/Roussillon_chemin_des_ocres.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-17.html`
+
+## 고르드 전경
+
+<a id="luberon-gordes-01"></a>
+
+- Image ID: `luberon-gordes-01`
+- Place ID: `gordes`
+- Photo: Jean-Christophe BENOIST
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gordes_pano.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/b/b3/Gordes_pano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-18.html`
+  - `/places/gordes.html`
+
+## 보리 석조마을
+
+<a id="luberon-bories-01"></a>
+
+- Image ID: `luberon-bories-01`
+- Place ID: `village-des-bories`
+- Photo: Tulipanos
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Village_des_bories._1.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/2/2a/Village_des_bories._1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-18.html`
+  - `/places/village-des-bories.html`
+
+## 세낭크 수도원
+
+<a id="luberon-senanque-01"></a>
+
+- Image ID: `luberon-senanque-01`
+- Place ID: `abbaye-de-senanque`
+- Photo: Peter Broster
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:S%C3%A9nanque_Abbey.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/a/a4/S%C3%A9nanque_Abbey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-18.html`
+  - `/places/abbaye-de-senanque.html`
+
+## 론강 건너에서 본 아비뇽
+
+<a id="avignon-city-01"></a>
+
+- Image ID: `avignon-city-01`
+- Place ID: `avignon`
+- Photo: Jean-Marc Rosier (de/from http://www.cjrosier.com + http://www.gordes-immobilier.com )
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Avignon,_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/a/a3/Avignon%2C_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-20.html`
+
+## 소르그 강의 물레방아
+
+<a id="luberon-sorgue-01"></a>
+
+- Image ID: `luberon-sorgue-01`
+- Place ID: `l-isle-sur-la-sorgue`
+- Photo: Marianne Casamance
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Isle_sur_la_Sorgue_-_Roue_1.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/2/2c/Isle_sur_la_Sorgue_-_Roue_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-20.html`
+  - `/places/l-isle-sur-la-sorgue.html`
+
+## 레 알 시장의 수직 정원
+
+<a id="avignon-halles-01"></a>
+
+- Image ID: `avignon-halles-01`
+- Place ID: `les-halles-avignon`
+- Photo: say_cheddar
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:March%C3%A9_sur_la_place_Pie_devant_les_Halles_d%27Avignon.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/1/19/March%C3%A9_sur_la_place_Pie_devant_les_Halles_d%27Avignon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-21.html`
+
+## 교황청 궁전 정면
+
+<a id="avignon-palais-papes-01"></a>
+
+- Image ID: `avignon-palais-papes-01`
+- Place ID: `palais-des-papes`
+- Photo: Jean-Marc Rosier (de/from http://www.cjrosier.com + http://www.gordes-immobilier.com )
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Avignon,_Palais_des_Papes_by_JM_Rosier.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/d/db/Avignon%2C_Palais_des_Papes_by_JM_Rosier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-21.html`
+  - `/places/palais-des-papes.html`
+
+## 로셰 데 돔 정원의 연못
+
+<a id="avignon-rocher-doms-01"></a>
+
+- Image ID: `avignon-rocher-doms-01`
+- Place ID: `rocher-des-doms`
+- Photo: Txllxt TxllxT
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Avignon_-_Jardin_des_Doms_(Rocher_des_Doms)_-_Lac_de_la_Promenade_du_Rocher-des-Doms_-_Panorama_View_on_Koi_pond_%26_V%C3%A9nus_aux_Hirondelles_1895_by_F%C3%A9lix_Charpentier_01.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/c/c3/Avignon_-_Jardin_des_Doms_%28Rocher_des_Doms%29_-_Lac_de_la_Promenade_du_Rocher-des-Doms_-_Panorama_View_on_Koi_pond_%26_V%C3%A9nus_aux_Hirondelles_1895_by_F%C3%A9lix_Charpentier_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-21.html`
+  - `/places/rocher-des-doms.html`
+
+## 생 베네제 다리
+
+<a id="avignon-pont-benezet-01"></a>
+
+- Image ID: `avignon-pont-benezet-01`
+- Place ID: `pont-saint-benezet`
+- Photo: Rolf Kranz
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pont_d%C2%B4Avignon.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/f/ff/Pont_d%C2%B4Avignon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-21.html`
+  - `/places/pont-saint-benezet.html`
+
+## 퐁 뒤 가르
+
+<a id="avignon-pont-du-gard-01"></a>
+
+- Image ID: `avignon-pont-du-gard-01`
+- Place ID: `pont-du-gard`
+- Photo: Benh LIEU SONG ( Flickr )
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pont_du_Gard_BLS.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/4/42/Pont_du_Gard_BLS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-22.html`
+  - `/places/pont-du-gard.html`
+
+## 위제스 에르브 광장
+
+<a id="avignon-uzes-01"></a>
+
+- Image ID: `avignon-uzes-01`
+- Place ID: `uzes`
+- Photo: Daniel Villafruela .
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Uz%C3%A8s-Place_aux_Herbes-20140501.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/9/98/Uz%C3%A8s-Place_aux_Herbes-20140501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-22.html`
+  - `/places/uzes.html`
+
+## 바위 위의 레 보 드 프로방스
+
+<a id="avignon-les-baux-01"></a>
+
+- Image ID: `avignon-les-baux-01`
+- Place ID: `les-baux-de-provence`
+- Photo: Benh LIEU SONG
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Baux_de_Provence.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/2/25/Baux_de_Provence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-23.html`
+  - `/places/les-baux-de-provence.html`
+
+## 생레미의 카페 광장
+
+<a id="avignon-saint-remy-01"></a>
+
+- Image ID: `avignon-saint-remy-01`
+- Place ID: `saint-remy-de-provence`
+- Photo: Jorge Franganillo
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Saint-R%C3%A9my-de-Provence_-_54740044205.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/2/2f/Saint-R%C3%A9my-de-Provence_-_54740044205.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-23.html`
+  - `/places/saint-remy-de-provence.html`
+
+## 푸르비에르에서 본 리옹
+
+<a id="lyon-city-01"></a>
+
+- Image ID: `lyon-city-01`
+- Place ID: `lyon`
+- Photo: Dennis G. Jarvis
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lyon_cityscape_from_Notre-Dame_de_Fourvi%C3%A8re_-_from_Flickr.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/a/a9/Lyon_cityscape_from_Notre-Dame_de_Fourvi%C3%A8re_-_from_Flickr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-24.html`
+
+## 벨쿠르 광장
+
+<a id="lyon-bellecour-01"></a>
+
+- Image ID: `lyon-bellecour-01`
+- Place ID: `place-bellecour`
+- Photo: Guilhem Vellut from Annecy, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Statue_of_Louis_XIV_@_Place_Bellecour_@_Lyon_(35580147953).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/6/6a/Statue_of_Louis_XIV_%40_Place_Bellecour_%40_Lyon_%2835580147953%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-24.html`
+
+## 푸르비에르 대성당
+
+<a id="lyon-fourviere-01"></a>
+
+- Image ID: `lyon-fourviere-01`
+- Place ID: `fourviere`
+- Photo: Clément Bardot
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Notre_Dame_de_Fourvi%C3%A8re.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/6/60/Notre_Dame_de_Fourvi%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-25.html`
+  - `/places/fourviere.html`
+
+## 리옹 구시가지 골목
+
+<a id="lyon-vieux-01"></a>
+
+- Image ID: `lyon-vieux-01`
+- Place ID: `vieux-lyon`
+- Photo: Weekend Wayfarers
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Vieux_Lyon_(25667252093).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/3/32/Vieux_Lyon_%2825667252093%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-25.html`
+  - `/places/vieux-lyon.html`
+
+## 생장 대성당
+
+<a id="lyon-saint-jean-01"></a>
+
+- Image ID: `lyon-saint-jean-01`
+- Place ID: `cathedrale-saint-jean-lyon`
+- Photo: Guilhem Vellut from Annecy, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Saint-Jean-Baptiste_@_Lyon_(35581360383).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/d/dd/Cath%C3%A9drale_Saint-Jean-Baptiste_%40_Lyon_%2835581360383%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-25.html`
+
+## 트라불 안뜰
+
+<a id="lyon-traboules-01"></a>
+
+- Image ID: `lyon-traboules-01`
+- Place ID: `traboules`
+- Photo: Fred Romero from Paris, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lyon_-_Traboule_de_la_Rue_du_Boeuf_(16163505286).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/c/ca/Lyon_-_Traboule_de_la_Rue_du_Boeuf_%2816163505286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-25.html`
+
+## 크루아루스 언덕길
+
+<a id="lyon-croix-rousse-01"></a>
+
+- Image ID: `lyon-croix-rousse-01`
+- Place ID: `croix-rousse`
+- Photo: Guilhem Vellut from Annecy, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mont%C3%A9e_de_la_Grande_C%C3%B4te_@_Croix-Rousse_@_Lyon_(36347972426).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/f/f3/Mont%C3%A9e_de_la_Grande_C%C3%B4te_%40_Croix-Rousse_%40_Lyon_%2836347972426%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-26.html`
+  - `/places/croix-rousse.html`
+
+## 폴 보퀴즈 시장 내부
+
+<a id="lyon-halles-bocuse-01"></a>
+
+- Image ID: `lyon-halles-bocuse-01`
+- Place ID: `halles-de-lyon-paul-bocuse`
+- Photo: Benoît Prieur
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Fromagerie_Halles_de_Lyon-Paul_Bocuse_en_2017_%C3%A0_Lyon.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/7/71/Fromagerie_Halles_de_Lyon-Paul_Bocuse_en_2017_%C3%A0_Lyon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-26.html`
+  - `/places/halles-de-lyon-paul-bocuse.html`
+
+## 안시와 팔레 드 릴
+
+<a id="lyon-annecy-01"></a>
+
+- Image ID: `lyon-annecy-01`
+- Place ID: `annecy`
+- Photo: chisloup
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Palais_de_l%27Isle_Annecy_et_le_Thiou.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/c/c5/Palais_de_l%27Isle_Annecy_et_le_Thiou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-27.html`
+  - `/places/annecy.html`
+
+## 안시 구시가지 아케이드
+
+<a id="lyon-annecy-vieille-01"></a>
+
+- Image ID: `lyon-annecy-vieille-01`
+- Place ID: `annecy-vieille-ville`
+- Photo: Sebleouf
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Annecy_-_Rue_Sainte-Claire_(juil_2022).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/e/ee/Annecy_-_Rue_Sainte-Claire_%28juil_2022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-27.html`
+
+## 티우 운하의 저녁
+
+<a id="lyon-thiou-01"></a>
+
+- Image ID: `lyon-thiou-01`
+- Place ID: `thiou`
+- Photo: Florian Pépellin
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Canal_du_Thiou_dans_le_vieil_Annecy_en_soir%C3%A9e_(ao%C3%BBt_2019).JPG)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/a/a5/Canal_du_Thiou_dans_le_vieil_Annecy_en_soir%C3%A9e_%28ao%C3%BBt_2019%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-27.html`
+
+## 안시 호수
+
+<a id="lyon-lake-annecy-01"></a>
+
+- Image ID: `lyon-lake-annecy-01`
+- Place ID: `lake-annecy`
+- Photo: Tatiana Decrocq
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lac_Annecy_%C3%A9t%C3%A9.JPG)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/6/60/Lac_Annecy_%C3%A9t%C3%A9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-27.html`
