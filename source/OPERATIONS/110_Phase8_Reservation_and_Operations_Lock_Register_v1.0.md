@@ -2,7 +2,7 @@
 
 ## 결론
 
-Phase 8의 **Known-Facts Lock**과 Girona 권역 숙소 예약 잠금을 반영했다. 다른 예약은 외부 입력이 없어 차단되어 있다.
+Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금을 반영했다. 다른 예약은 외부 입력이 없어 차단되어 있다.
 현재 문서와 Tracker에 존재하지 않는 예약번호·편명·열차번호·결제금액·체크인 시간·주차·조식 조건을 임의 생성하지 않았다.
 
 ## 잠금 완료
@@ -16,6 +16,16 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역 숙소 예약 잠금을 반영�
 - 10/10 Paris 19:10 출국 계획
 - Sagrada Família 8/30 10:30 계획
 - Peralada: 본 일정에서 제외·실제 예약 없음
+
+## Barcelona 숙소 예약 확정
+
+- 상태: 예약 확정 (2026-08-05)
+- 일정: 2026-08-29 체크인 14:00–00:00 · 2026-09-01 체크아웃 09:30–12:00 · 3박
+- 표시명: Occidental Barcelona 1929
+- 주소: Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain (Hostafrancs·Sants-Montjuïc)
+- 전화: +34 936 26 88 44
+- 여행자: Jason·Julia
+- 예약번호·금액·결제조건·취소기한: 재확인
 
 ## Girona 권역 숙소 예약 확정
 
@@ -39,8 +49,8 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역 숙소 예약 잠금을 반영�
 1. 국제선·Bàscara→Nice 이동수단과 차량 반납 상세
 2. 두 렌터카 예약서
 3. Avignon→Lyon, Lyon→Paris 열차표
-4. 나머지 7개 숙소의 확정명·주소·예약번호·금액·취소기한
-5. Bàscara 숙소의 확정번호·금액·결제·체크인·주차·조식·취소조건
+4. 나머지 6개 숙소의 확정명·주소·예약번호·금액·취소기한
+5. Bàscara 숙소의 확정번호·금액·결제·체크인·주차·조식·취소조건과 Barcelona 숙소의 예약번호·금액·취소기한
 6. 핵심 입장권·공연·축구 예약정보
 7. 여행자보험·통신
 
