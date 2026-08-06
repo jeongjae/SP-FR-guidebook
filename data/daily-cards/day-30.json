@@ -3,86 +3,181 @@
   "day": 30,
   "date": "2026-09-27",
   "city": "Paris",
-  "title": "일요일 생활과 Marais",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Tuileries·Palais Royal·Opéra 지구",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "2~4",
+  "totalDistance": "약 2km · 도보 + 메트로",
+  "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "luxembourg",
+      "id": "slow-morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Luxembourg",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Luxembourg",
+      "start": "09:00",
+      "end": "10:00",
+      "name": "느린 아침",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "전날 보행 피로 확인",
       "menu": null,
-      "reservation": "공연 조건부",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "march-monge",
+      "id": "tuileries",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Marché Monge",
+      "start": "10:30",
+      "end": "12:00",
+      "name": "Jardin des Tuileries",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Marché Monge",
+      "lat": 48.8635662,
+      "lng": 2.3269552,
+      "summary": "정원축과 Louvre 외관 — 내부 입장 없음",
       "menu": null,
-      "reservation": "공연 조건부",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "marais",
+      "id": "pr-lunch",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Marais",
+      "start": "12:00",
+      "end": "13:30",
+      "name": "Palais Royal 주변 점심",
+      "category": "food",
+      "lat": 48.864,
+      "lng": 2.337,
+      "summary": "혼잡한 중심가 — 체류시간 통제",
+      "menu": "비스트로",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "palais-royal",
+      "order": 4,
+      "start": "13:30",
+      "end": "15:30",
+      "name": "Palais Royal 정원·회랑",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Marais",
+      "lat": 48.8649078,
+      "lng": 2.3377594,
+      "summary": "스케치 20–30분 포함",
       "menu": null,
-      "reservation": "공연 조건부",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "opera",
+      "order": 5,
+      "start": "15:30",
+      "end": "17:30",
+      "name": "Avenue de l'Opéra·Opéra 지구",
+      "category": "sight",
+      "lat": 48.8720949,
+      "lng": 2.3323339,
+      "summary": "Palais Garnier 외관 — 당일 입장 가능 시에만 짧은 주간 방문",
+      "menu": null,
+      "reservation": "Garnier 당일 입장 여부 확인",
+      "optional": true
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
+      "start": "18:30",
+      "end": null,
+      "name": "숙소 귀환·가벼운 저녁",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "Hamlet 마티네를 기본안에 넣지 않음",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "slow-morning",
+      "to": "tuileries",
+      "mode": "metro",
+      "duration": "20분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "tuileries",
+      "to": "pr-lunch",
+      "mode": "walk",
+      "duration": "12분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "pr-lunch",
+      "to": "palais-royal",
+      "mode": "walk",
+      "duration": "2분",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "palais-royal",
+      "to": "opera",
+      "mode": "walk",
+      "duration": "12분",
+      "distance": "0.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "opera",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "공연 조건부"
+    "메트로 왕복 + 도보"
   ],
   "food": [
-    "시장·Marais"
+    "Palais Royal 주변 점심",
+    "가벼운 저녁"
   ],
   "highlights": [
-    "Luxembourg, Marché Monge, Marais",
-    "선택·축소: Hamlet 공연 시 Marais 이동"
+    "고전적 파리 방향잡기",
+    "Louvre 내부 입장 없음",
+    "스케치 20–30분"
   ],
-  "backup": "공원·시장 중심",
-  "map": null,
+  "backup": "혼잡 시 Tuileries·Palais Royal만",
+  "map": {
+    "zoom": 14,
+    "center": [
+      48.857,
+      2.336
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Paris 숙소 후보 확정",
+    "Garnier 주간 입장 여부 당일 확인",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-4-9월27일",
+    "OSM Nominatim 지오코딩 2026-08-06: Tuileries·Palais Royal·Opéra"
   ]
 }
