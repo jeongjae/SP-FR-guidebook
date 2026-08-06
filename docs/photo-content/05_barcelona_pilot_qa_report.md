@@ -21,25 +21,25 @@
 | Hero 평균 | 129,309 bytes |
 | Content 평균 | 136,584 bytes |
 | Thumbnail 평균 | 21,430 bytes |
-| 빌드 사이트 | 20,266,671 bytes |
-| 작업 전 사이트 | 14,880,426 bytes |
-| 순증가 | 5,386,245 bytes |
-| PWA 전체 저장 | 497개 파일 · 19.3 MiB |
+| 빌드 사이트 | 29,077,852 bytes |
+| 최신 main 기준 사이트 | 23,691,453 bytes |
+| 순증가 | 5,386,399 bytes |
+| PWA 전체 저장 | 519개 파일 · 27.7 MiB |
 
 대표 일자 초기 전송 추정치는 공통 CSS/JS, HTML, eager hero만 합산했다.
 
 | 페이지 | 추정 초기 전송량 |
 |---|---:|
-| Day 1 | 578,841 bytes |
-| Day 2 | 478,010 bytes |
-| Day 3 | 501,782 bytes |
-| Day 4 | 510,012 bytes |
+| Day 1 | 583,326 bytes |
+| Day 2 | 482,827 bytes |
+| Day 3 | 506,267 bytes |
+| Day 4 | 514,969 bytes |
 
 네 페이지 모두 2MB 기준 이하이며, 원본은 사이트와 PWA에 포함하지 않는다.
 
 ## 자동 검사
 
-- `python3 build/build.py`: 315 HTML, 전체 Phase 1–10·링크·날짜·장소 가드 통과
+- `python3 build/build.py`: 328 HTML, 전체 Phase 1–10·링크·날짜·장소 가드 통과
 - `python3 build/image_check.py`: 원본/파생/배포/HTML/개인정보/초기 전송량 통과
 - `python3 scripts/validate_image_licenses.py`: 13장, 누락 0, private 0
 - `python3 scripts/detect_duplicate_images.py`: exact/near duplicate 0
