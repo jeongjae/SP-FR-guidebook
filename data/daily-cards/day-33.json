@@ -3,72 +3,181 @@
   "day": 33,
   "date": "2026-09-30",
   "city": "Paris",
-  "title": "BnF·Passages·Philharmonie",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Fashion Week — 공개 공간으로 읽는 패션 반일",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4",
+  "totalDistance": "약 2km · 도보 + 메트로",
+  "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "bnf-richelieu",
+      "id": "slow-morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "BnF Richelieu",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "BnF Richelieu",
+      "start": "09:00",
+      "end": "12:30",
+      "name": "느린 아침·수면 보존",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "다음 날 오페라를 위해 수면 보존, 11:30 가벼운 점심",
       "menu": null,
-      "reservation": "공연",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "passages",
+      "id": "palais-tokyo",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "passages",
+      "start": "13:00",
+      "end": "14:00",
+      "name": "Palais de Tokyo 권역",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "passages",
+      "lat": 48.8639905,
+      "lng": 2.2965215,
+      "summary": "건축·공공공간·거리 분위기 — 전시는 공식 확인된 경우에만",
       "menu": null,
-      "reservation": "공연",
+      "reservation": "공개 전시 여부 확인",
+      "optional": false
+    },
+    {
+      "id": "montaigne",
+      "order": 3,
+      "start": "14:00",
+      "end": "15:15",
+      "name": "Avenue Montaigne",
+      "category": "sight",
+      "lat": 48.868459,
+      "lng": 2.3091111,
+      "summary": "쇼윈도·거리 관찰, 매장 입장 집착 금지",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "st-honore",
+      "order": 4,
+      "start": "15:30",
+      "end": "17:00",
+      "name": "Rue Saint-Honoré",
+      "category": "sight",
+      "lat": 48.8613168,
+      "lng": 2.3432679,
+      "summary": "공개 팝업이 공식 발표됐을 때 한 곳만 교체",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "palais-royal",
+      "order": 5,
+      "start": "17:00",
+      "end": "18:00",
+      "name": "Palais Royal 마무리",
+      "category": "sight",
+      "lat": 48.8649078,
+      "lng": 2.3377594,
+      "summary": "회랑·정원 — 스케치·카페",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
+      "start": "18:30",
+      "end": null,
+      "name": "숙소 귀환·가벼운 저녁",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "Philharmonie·야간행사 제외 — FHCM 9/30 일반 공개행사 미게시(8/5 기준)",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "slow-morning",
+      "to": "palais-tokyo",
+      "mode": "metro",
+      "duration": "30분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "palais-tokyo",
+      "to": "montaigne",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "1.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "montaigne",
+      "to": "st-honore",
+      "mode": "metro",
+      "duration": "15분",
+      "distance": null,
+      "line": "메트로 또는 도보 30분",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "st-honore",
+      "to": "palais-royal",
+      "mode": "walk",
+      "duration": "8분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "palais-royal",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "공연"
+    "메트로 + 도보"
   ],
   "food": [
-    "Passages/숙소권"
+    "가벼운 점심 (11:30)",
+    "가벼운 저녁"
   ],
   "highlights": [
-    "BnF Richelieu, passages",
-    "선택·축소: Philharmonie 20:00"
+    "초청제 쇼를 일반 입장처럼 기대하지 않는다",
+    "공개 공간·거리 중심",
+    "야간행사 제외"
   ],
-  "backup": "BnF 축소·공연 유지",
-  "map": null,
+  "backup": "혼잡 시 Palais Royal 축으로 단축",
+  "map": {
+    "zoom": 13,
+    "center": [
+      48.862,
+      2.325
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "FHCM 공개행사 게시 여부 출발 전 재확인",
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-7-9월30일",
+    "OSM Nominatim 지오코딩 2026-08-06: Palais de Tokyo·Avenue Montaigne·Rue Saint-Honoré"
   ]
 }
