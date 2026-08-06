@@ -131,35 +131,7 @@
         3648
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-avinguda-gaudi-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-avinguda-gaudi-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 52020,
-            "sha256": "bdb3f3fa2637ff56b10aa486a8a5984670b472756a47132f88813400999b5a8f",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-avinguda-gaudi-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-avinguda-gaudi-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 114046,
-            "sha256": "a8ae093ab915a346b313b50593989b9397986e16b03feb0fbbe69eee6a111d4e",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-avinguda-gaudi-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-avinguda-gaudi-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 238704,
-            "sha256": "dda05c1cc47980792b84d22d35c398fdf771e2c038f972fb9f390bc3634e6853",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-avinguda-gaudi-01-content-1280.webp",
@@ -192,35 +164,7 @@
         3681
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-sant-pau-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-sant-pau-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 54180,
-            "sha256": "c5175a3d3f0ae13bcb31a66d25186b17b7f23d0d50ed4ea9e92741dce5040d13",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-sant-pau-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-sant-pau-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 125964,
-            "sha256": "60dcce006274201bd0bfde97f49050de2070ccdede5da97745cabc3c6eddbdac",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-sant-pau-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-sant-pau-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 265416,
-            "sha256": "e13fe67a1c4feee22bf8a9b175128c6595d40f421f52ece89f40e41d35f78d08",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-sant-pau-01-content-1280.webp",
@@ -347,35 +291,7 @@
         2000
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-biblioteca-catalunya-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-biblioteca-catalunya-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 40280,
-            "sha256": "e79ad0cc3a5837c71f3085274c707d6ea264f0baa63c1f4007b4f80a06d54b2a",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-biblioteca-catalunya-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-biblioteca-catalunya-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 76072,
-            "sha256": "67ec4ff158d5414e7cecdc15b0457a003f3de426cb5cf4bd0728a2c20e5cc660",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-biblioteca-catalunya-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-biblioteca-catalunya-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 130916,
-            "sha256": "85b3979c01dafd60fe7f22cc75a46015094b52983eb586eb9677d8a448376add",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-biblioteca-catalunya-01-content-1280.webp",
@@ -408,35 +324,7 @@
         2592
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-macba-exterior-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-macba-exterior-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 32198,
-            "sha256": "aebd295e357121bd7ab563631f5132019922e9439d6b69a15fb4e19c8b107da1",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-macba-exterior-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-macba-exterior-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 62064,
-            "sha256": "45a415c57e25dde7f2dfb448628f104ade06d57e1139211ff2a5071319cfbad8",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-macba-exterior-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-macba-exterior-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 108950,
-            "sha256": "6d101628153a3fb86c2a1dcd0f0f78ad222645b6574bd3a734deb19a34585f3a",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-macba-exterior-01-content-1280.webp",
@@ -530,17 +418,7 @@
         1654
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-cau-ferrat-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-cau-ferrat-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 34896,
-            "sha256": "cd199aad1e4e957bf2f6ca9432cdc1a0dcce2a92f9ed1c99f3e26749ceaf06c8",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-cau-ferrat-01-content-1240.webp",
@@ -573,35 +451,7 @@
         3120
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-palau-maricel-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-palau-maricel-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 43524,
-            "sha256": "05cfb84d8b89fc03ecd919bd1d8a7333a1468283c634882c819df8b51aee2a97",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-palau-maricel-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-palau-maricel-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 100700,
-            "sha256": "993899451090f0801a6c24c4ba04dc1f5d149487d5a28eee15cc0b4c7f36fffd",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-palau-maricel-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-palau-maricel-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 199302,
-            "sha256": "2db2ad9e504d4e3ef46c637fd840dbf813a7ee4cb35991b5b479a1bda0f158ac",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-palau-maricel-01-content-1280.webp",
@@ -634,35 +484,7 @@
         2903
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-pa-amb-tomaquet-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-pa-amb-tomaquet-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 46508,
-            "sha256": "99e79155eeadecbe6c966ad617f1b6e831c3a8b7ae355fceb99f586353dfeaa6",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-pa-amb-tomaquet-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-pa-amb-tomaquet-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 96946,
-            "sha256": "3dea166833bbe6c01108f49c79cd1f68601cd706756f4e30b00c84c715a73c68",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-pa-amb-tomaquet-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-pa-amb-tomaquet-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 177792,
-            "sha256": "d501f52692c8955e61a2298ba68a05cc583734314d6f2c2f347add1aed0471dd",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-pa-amb-tomaquet-01-content-1280.webp",
@@ -695,35 +517,7 @@
         3888
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-crema-catalana-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-crema-catalana-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 41708,
-            "sha256": "89edd3db88c4142b0cb4929f13c001cd1302f25b38eb9b021ed6e46a74d03cb9",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-crema-catalana-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-crema-catalana-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 77890,
-            "sha256": "1d9db7effac33cb888d3a1cfaeee84513ac44047a9aee7c0f0b7ab522d3dbcea",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-crema-catalana-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-crema-catalana-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 133780,
-            "sha256": "93cc49688705f05296451420c3c531bbcc62d1fb4e148d48e04e085c657df167",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-crema-catalana-01-content-1280.webp",
@@ -817,35 +611,7 @@
         4000
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-cathedral-01-hero-800.webp",
-            "sitePath": "assets/images/hero/girona-cathedral-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 48124,
-            "sha256": "72adfbecc2114ebacfddf84259c3a72b806c63ccf62495f726def3edb7553f8a",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-cathedral-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/girona-cathedral-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 107672,
-            "sha256": "ac084a8be89b9bc04fa13fb0796b8394dea344162e9c87b0537b60004b90f66c",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-cathedral-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/girona-cathedral-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 223216,
-            "sha256": "78980302dab96a8a5555f9a5f8d45a50f3650f777eb6aa58675f2f1baaeaf149",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/girona-cathedral-01-content-1280.webp",
@@ -939,35 +705,7 @@
         2000
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-peratallada-01-hero-800.webp",
-            "sitePath": "assets/images/hero/girona-peratallada-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 73932,
-            "sha256": "8fbfa1efa8244de7fa526056a55b1fe95a122ac9e3bce16bb444e2fb89fb08a0",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-peratallada-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/girona-peratallada-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 158766,
-            "sha256": "e41cae8341010aeec297d8706a77178c98572afa9f1a44aa24d3fc1f87f31519",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-peratallada-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/girona-peratallada-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 280666,
-            "sha256": "15b33a67247b6471169b060e035c06020ece0a764c1df6f79884f269a30ff675",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/girona-peratallada-01-content-1280.webp",
@@ -1000,35 +738,7 @@
         1300
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-calella-01-hero-800.webp",
-            "sitePath": "assets/images/hero/girona-calella-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 81140,
-            "sha256": "360a96d7d530c609fdf60abd57db5bf6ccd2a4fc2d583338539ec5c029f4bbdd",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-calella-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/girona-calella-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 181908,
-            "sha256": "403f0484fc4ea9fd0ee52d10eebe7db1653dfef7f723d7e1b0d1072bd072a675",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-calella-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/girona-calella-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 347478,
-            "sha256": "e1c62f7be9f5a523bf2e1c2b7bb0a56e6a205feef44b153c76b692309f6a84b0",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/girona-calella-01-content-1280.webp",
@@ -1061,35 +771,7 @@
         1944
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-xuixo-01-hero-800.webp",
-            "sitePath": "assets/images/hero/girona-xuixo-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 48458,
-            "sha256": "e7606e6f51bc28594fcf6ea1d5ec3f2026776cd01b5ad122973def7c08d96298",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-xuixo-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/girona-xuixo-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 103928,
-            "sha256": "f2fe9baca320d9e0ca4e1291964a342938b14181d79247e3b78f1d1505efa5b8",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-xuixo-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/girona-xuixo-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 186730,
-            "sha256": "18b3b0eda855a0cb6b836177b06b048e8b556a7b08bfa37de474f68cb0813735",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/girona-xuixo-01-content-1280.webp",
@@ -1122,26 +804,7 @@
         960
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-suquet-01-hero-800.webp",
-            "sitePath": "assets/images/hero/girona-suquet-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 59534,
-            "sha256": "73a52ff09bff420eb2f1aab2239ba01a778517ac3e52c50f38cf8bd70040fbf8",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-suquet-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/girona-suquet-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 137676,
-            "sha256": "0175fd9977b2a1001c4205e16abdd1617e880049b18d751a3552c18b3c0c9f59",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/girona-suquet-01-content-1280.webp",
@@ -1235,35 +898,7 @@
         2996
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-cours-saleya-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-cours-saleya-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 67518,
-            "sha256": "9e3fe48d729d2795650af42d08a4881416fff87cfd575b10a2aa6667211c0d0e",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-cours-saleya-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-cours-saleya-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 145640,
-            "sha256": "e1631fd98fab8fbb3d55f9037f5dfac7d58949a6c2bc92b34271a38bc7b2865e",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-cours-saleya-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-cours-saleya-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 277984,
-            "sha256": "9640b8984adb0fa09156b57ab9a6c0f06d89878565ea142d8f4d1f46c6a26d90",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-cours-saleya-01-content-1280.webp",
@@ -1357,35 +992,7 @@
         1647
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-colline-chateau-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-colline-chateau-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 61334,
-            "sha256": "7bc1e0ddc1800eca07bb8538ce31a6822b3d2399221da37b4e33f76da5cd9ac6",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-colline-chateau-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-colline-chateau-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 146582,
-            "sha256": "54bd90335e32e0a71c3d1f8cf80e6ccb32e0133f3087b36569ea0d495cb5cc70",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-colline-chateau-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-colline-chateau-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 313142,
-            "sha256": "ca3375650bc62195a417aa00fa423fcf2ced12a5b5288135756c833ce25c92a1",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-colline-chateau-01-content-1280.webp",
@@ -1418,35 +1025,7 @@
         2996
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-suquet-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-suquet-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 43356,
-            "sha256": "9832e33eed0fb1268fcf646f44fc479363883580f25ed4bf6abbbc989b409988",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-suquet-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-suquet-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 99392,
-            "sha256": "2cdc9a754c2aaec518cf0a70865374a4b8d916f03bf6f517db19b12c4b644bc2",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-suquet-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-suquet-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 205660,
-            "sha256": "e3225c10106c11d7c4c9d9a77c9c070ade507726b467eedba77b8045cc3e3517",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-suquet-01-content-1280.webp",
@@ -1479,35 +1058,7 @@
         2736
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-socca-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-socca-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 35396,
-            "sha256": "0e0d24f0a3bf88b4a9eda37f3a3fb7fa0e2444927f88b42a329ac26bea33faa8",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-socca-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-socca-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 68790,
-            "sha256": "361ddafbdbeac60e5cf9485364c3233d054e90ec3681da6be5974aff49644e02",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-socca-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-socca-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 124090,
-            "sha256": "9158d39e3b96405dd58b6d264f95c0eed12dcc747481368d36987449bc9bc8cc",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-socca-01-content-1280.webp",
@@ -1540,35 +1091,7 @@
         2448
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-pissaladiere-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-pissaladiere-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 47802,
-            "sha256": "f8e170376e3db97213bf09b8c27c8521246d4d6e307fbfd5c9c30380c1daea1d",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-pissaladiere-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-pissaladiere-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 91864,
-            "sha256": "879d44db88a51cc9d15e7caf8a7b50d409b6397986e2e09c04963b01d83421d2",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-pissaladiere-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-pissaladiere-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 160784,
-            "sha256": "0909125105aec2eaa6f78071b040fbfd53d382c530f675819f9a06d51dfda00a",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-pissaladiere-01-content-1280.webp",
@@ -1601,35 +1124,7 @@
         2736
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-eixample-01-hero-800.webp",
-            "sitePath": "assets/images/hero/barcelona-eixample-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 51356,
-            "sha256": "f16de1e1f0930186cc85ba716ebdc88c310ecececb1ba71dab948f4918838248",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-eixample-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/barcelona-eixample-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 104504,
-            "sha256": "1f4649fcd72b62bae185340c2b80d4fcd374a2f8e6b3a6364bb3150634f53a25",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/barcelona-eixample-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/barcelona-eixample-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 182544,
-            "sha256": "be36f035095da512864ddad7cf3530e3e85704625819b044d101cc368e6a2020",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/barcelona-eixample-01-content-1280.webp",
@@ -1784,35 +1279,7 @@
         3000
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-sant-feliu-01-hero-800.webp",
-            "sitePath": "assets/images/hero/girona-sant-feliu-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 68858,
-            "sha256": "f581076e6a88fa79b6a7bd0f9d561e91bd4aee8a528e5d94c9e45966e251a725",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-sant-feliu-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/girona-sant-feliu-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 171476,
-            "sha256": "018969409d14ea2a2aa8e81c6387f5292b8c6b20e69ff8deed99d103c5a67752",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/girona-sant-feliu-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/girona-sant-feliu-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 370532,
-            "sha256": "25f0071fe7c35f2945ab4c8e4c2ef4e0755b1391597889a17925ad42e853d047",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/girona-sant-feliu-01-content-1280.webp",
@@ -1906,35 +1373,7 @@
         3000
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monaco-ville-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-monaco-ville-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 54720,
-            "sha256": "c26deaf7f03935d06632da86b8450fee458dfc789dd576358319d86a5b272309",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monaco-ville-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-monaco-ville-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 123890,
-            "sha256": "79d10e7895e16589db2091f64a9d70f9726e8a17baeb6d46653d3e724535f170",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monaco-ville-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-monaco-ville-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 248208,
-            "sha256": "8513790a7a30a2656ba7e2c1fcfa2c0975fefc444a961328fdd322e12394137a",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-monaco-ville-01-content-1280.webp",
@@ -1967,35 +1406,7 @@
         1681
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-palais-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-palais-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 48514,
-            "sha256": "534daef0d3cb20adecc04a5836bbadf7ffa644670ef1dc163fbf07271581ba5c",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-palais-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-palais-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 106142,
-            "sha256": "c84e9d9343c73784fa61ac80f43c8dff4ac3ff62b9f3367b95ebc9f81e6a508c",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-palais-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-palais-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 207084,
-            "sha256": "d8cbcc0553a0813e8c94d05810065f330f27fab7ed2dceb1c46d2a6e47f26c72",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-palais-01-content-1280.webp",
@@ -2028,35 +1439,7 @@
         2667
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monaco-cathedral-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-monaco-cathedral-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 70524,
-            "sha256": "fefca3468afea74d2acd80835d23af7b72d8bf2927550a432ae82cb7f2af1312",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monaco-cathedral-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-monaco-cathedral-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 167574,
-            "sha256": "62bc48113cb0c6ae3294354b068bcb82d7e468e520a0a47310d3292acb6bad2f",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monaco-cathedral-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-monaco-cathedral-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 344380,
-            "sha256": "5197363cb8c1273675b6a6c04b460a70ba9eed8086b6fe0e2650c04c44c97dde",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-monaco-cathedral-01-content-1280.webp",
@@ -2089,35 +1472,7 @@
         2667
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monte-carlo-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-monte-carlo-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 65664,
-            "sha256": "aca392a0d40133c0a477a42b7abcfafde38567b627f5f36efbb7e565226f249c",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monte-carlo-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-monte-carlo-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 148194,
-            "sha256": "b7bee2cb2dcebd70983dbaef3db0f175b5fc997806ab32f67e8598aad05a84c1",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-monte-carlo-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-monte-carlo-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 294552,
-            "sha256": "b65017f1fe7bdc81a6e058919860449f1f3bc8fed9cf791aa39ef46db5892704",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-monte-carlo-01-content-1280.webp",
@@ -2272,35 +1627,7 @@
         2250
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-forville-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-forville-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 125664,
-            "sha256": "c3392204cc1dbd5a01bcc8550b55f4baa22689a4a839a30e3a50709af753d655",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-forville-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-forville-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 281430,
-            "sha256": "0ae8f2d32f63b76df0a16db1033c972f97befabf10dedd132cf671ffef24aaf7",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-forville-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-forville-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 448514,
-            "sha256": "b28cfa7c2067fb6110056154bae0f3f163e1a68b24f1d6f5dcaca4c6ef0da52e",
-            "quality": 74
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-forville-01-content-1280.webp",
@@ -2333,35 +1660,7 @@
         2736
       ],
       "variants": {
-        "hero": [
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-croisette-01-hero-800.webp",
-            "sitePath": "assets/images/hero/nice-croisette-01-hero-800.webp",
-            "width": 800,
-            "height": 450,
-            "bytes": 96788,
-            "sha256": "242e6c29c6bfd85f0d322207abfe0fd9176f681792a96e4ac5dfa7f60a586f8a",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-croisette-01-hero-1280.webp",
-            "sitePath": "assets/images/hero/nice-croisette-01-hero-1280.webp",
-            "width": 1280,
-            "height": 720,
-            "bytes": 206042,
-            "sha256": "07a1d960340b99a1e1e6c7cac854526874f9252dd448d9c4219b64fc1fb4ffaa",
-            "quality": 80
-          },
-          {
-            "path": "source/ASSETS/photos/processed/hero/nice-croisette-01-hero-1920.webp",
-            "sitePath": "assets/images/hero/nice-croisette-01-hero-1920.webp",
-            "width": 1920,
-            "height": 1080,
-            "bytes": 372566,
-            "sha256": "ab1a63ab1e9e55b09bdff57637575ca29ad778afec5c6e1b3642ca3ca17bea0d",
-            "quality": 80
-          }
-        ],
+        "hero": [],
         "content": [
           {
             "path": "source/ASSETS/photos/processed/content/nice-croisette-01-content-1280.webp",
@@ -2381,6 +1680,1727 @@
             "height": 320,
             "bytes": 36336,
             "sha256": "36e2da1d9b72ab7e3361d7c1bc5131398279f7cda02296031a2c0c44cc2cf482",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-saint-paul-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-saint-paul-01.jpg",
+      "originalSize": [
+        4000,
+        2250
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-saint-paul-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-saint-paul-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 173534,
+            "sha256": "418df46ddf2a6f9b937e29f625ca29e88d7aae422532e889454622573f958f18",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-saint-paul-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-saint-paul-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 29380,
+            "sha256": "9dfc0bdd69dd990b5ad6128935c8b9bf1f0dc83224afa14fafb6bbf57afd9afb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-grasse-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-grasse-01.jpg",
+      "originalSize": [
+        4000,
+        2659
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-grasse-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-grasse-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 92600,
+            "sha256": "2cf71d7f3c3e55b2d3cae313e122a7d44ff28fba5d0bce3e252a6cc1b4341d21",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-grasse-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-grasse-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 14732,
+            "sha256": "6fef464c85c3ed2bf2cea39d7d640966e3faa7e990db65e26a1ebac3cb52915f",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-city-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-city-01.jpg",
+      "originalSize": [
+        4000,
+        2249
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-city-01-hero-800.webp",
+            "sitePath": "assets/images/hero/aix-city-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 155464,
+            "sha256": "289c5eff8e0b8936995c778b1b5320aac0ed1230da7b645e9c429bfc7f0bdb5b",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-city-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/aix-city-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 376084,
+            "sha256": "c265f613e19ebfa202e49cac451f191d355b05d6894ebf1ef8df8ab85c7ccb7f",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-city-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-city-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 298868,
+            "sha256": "7e1b2cb6ffddd4c017175ed0f92d8540590695c288357e84dc7c55607f79f216",
+            "quality": 66
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-city-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-city-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 57526,
+            "sha256": "0b11da246f0e76874febe06ead184aa96e370b92d79a94d585cc138f2bcfd1fb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-markets-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-markets-01.jpg",
+      "originalSize": [
+        4000,
+        2670
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-markets-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-markets-01-content-1280.webp",
+            "width": 1280,
+            "height": 854,
+            "bytes": 186854,
+            "sha256": "d829af98791d4f6fc6cfa02be22f9acd77737cf303f51d41e9af110288821678",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-markets-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-markets-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 40080,
+            "sha256": "66e36add0f9c5bdbde8582bd940c3b5af5467af5312c0eb3ddf4c60a34cd56b4",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-mirabeau-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-mirabeau-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-mirabeau-01-hero-800.webp",
+            "sitePath": "assets/images/hero/aix-mirabeau-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 90152,
+            "sha256": "4d5c4a5d02e6d44898c8825c1cf0e71229b3b253b47200f8e75e354999334ea8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-mirabeau-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/aix-mirabeau-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 211826,
+            "sha256": "2b03fe0a70c81858fd30f7db970aa7f05dbf801368503a4ad4a32ffc962d5d6e",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-mirabeau-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/aix-mirabeau-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 425806,
+            "sha256": "dbd61f3f87078517133c7e4fe29faae71ecbc1b7efb977e5cd1978916bb57b05",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-mirabeau-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-mirabeau-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 230016,
+            "sha256": "7d5d991502ebd5e3e9f9d32db3a9b494931fd6a8b9bc01f860e7f80c912f8d20",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-mirabeau-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-mirabeau-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 32366,
+            "sha256": "c6efcc35422eec1545c8f9bcad5016afe6c677dfa0c1c4f22c665c93e5413daa",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-granet-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-granet-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-granet-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-granet-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 159874,
+            "sha256": "3b63e942b3702e60dcfe0673f1c0cfb0dfa6f56ca8dddc55fc68f6baae42f8b7",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-granet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-granet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21932,
+            "sha256": "8b32ae3d638b08702eebe7c6d897f7a7b33431d93dde94ad61250549e5acb65e",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-cassis-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-cassis-01.jpg",
+      "originalSize": [
+        3888,
+        2592
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-cassis-01-hero-800.webp",
+            "sitePath": "assets/images/hero/aix-cassis-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 69358,
+            "sha256": "5436ea99c2cb9871772b9cf75e44de1b49f9e0245209f9b561bf6515ad3e494f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-cassis-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/aix-cassis-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 164428,
+            "sha256": "d1c9003512434594fefd5a6195682fd028027a7fc70e6e3cb1942fd04d5a4b82",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/aix-cassis-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/aix-cassis-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 330768,
+            "sha256": "c1b01a432bbbc0534b52d5098b0bb35241fcd4d633bda0f4d2d9303258e012b0",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-cassis-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-cassis-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 185550,
+            "sha256": "617255127dd09949170e304edc53600cf72ae32824d7a5eb03b628025b9ca173",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-cassis-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-cassis-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24698,
+            "sha256": "ccca83733d3c4af9643daebf9cfa6768621b9d2a2bd6b91f08c0cac1c888da5f",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-calanques-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-calanques-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-calanques-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-calanques-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 265452,
+            "sha256": "091d87312810d52a359b9393225f84076af971dd9fb625c0597b332c261d7d06",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-calanques-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-calanques-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34190,
+            "sha256": "dcf3b0ac7bdffcf36e782f660c241ad7ec530872116b8b3f1a69395eacfaf304",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-cezanne-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-cezanne-01.jpg",
+      "originalSize": [
+        3444,
+        2296
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-cezanne-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-cezanne-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 297590,
+            "sha256": "a5a1fd5c166b43544904534c9f99fa69ee2fc522db5ddd1057bb4a9d46b197a2",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-cezanne-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-cezanne-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 47812,
+            "sha256": "5bcbcaeeba38a1e80021373565a5f6f425637636d31f9f9115af537aadf888fe",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-lourmarin-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-lourmarin-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-lourmarin-01-hero-800.webp",
+            "sitePath": "assets/images/hero/luberon-lourmarin-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 49406,
+            "sha256": "c2cd5496144762ab1defcb15681570f51d21a01995ae113b3a7c0bbd8b34d263",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-lourmarin-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/luberon-lourmarin-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 110894,
+            "sha256": "58f73cbccefd5aba0cdff12a13254548272586ac3d49790080660c662f45c591",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-lourmarin-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/luberon-lourmarin-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 209388,
+            "sha256": "628595937ac5087f1a37af06a6f1caad348912fe86a7dd0ee02fa990a04bac10",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-lourmarin-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-lourmarin-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 150946,
+            "sha256": "16f429d5a6fc7644d6889962c3ad041017c309f6e7f60782bdb7e0810a6eef83",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-lourmarin-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-lourmarin-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17288,
+            "sha256": "9dacc09bc23136175338530aebe6742ac27332ccfef4100a12bdf7d54151770e",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-valley-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-valley-01.jpg",
+      "originalSize": [
+        4000,
+        2250
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-valley-01-hero-800.webp",
+            "sitePath": "assets/images/hero/luberon-valley-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 68822,
+            "sha256": "61d4f57f2cf6ade6953701cdca144ac256ce3949dad8a65d5929cf86e04a9fce",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-valley-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/luberon-valley-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 183340,
+            "sha256": "84b17babc5bafda68eda46775b94500dcef0f59a0598b204b8f3212b702a9f5a",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-valley-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/luberon-valley-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 417500,
+            "sha256": "840cdd0c6d703f4e0252695260ad968d20a3f08928874a3756aa2bf0f66299a0",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-valley-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-valley-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 172740,
+            "sha256": "c562b1d00baffe6314f8de1feefa4a32db512f1a177dc09a28547697128ec1db",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-valley-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-valley-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21546,
+            "sha256": "000405a3e91eb76dc1a56923dc54db16b5dda7cede455f9cdffa7b80e8c752cd",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-roussillon-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-roussillon-01.jpg",
+      "originalSize": [
+        3024,
+        1998
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-roussillon-01-hero-800.webp",
+            "sitePath": "assets/images/hero/luberon-roussillon-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 62466,
+            "sha256": "0b797439c28948245c1f0192c828d77be93edc63c51d331fa7a4b2c093cfe3ab",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-roussillon-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/luberon-roussillon-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 146224,
+            "sha256": "36d089f5a579fd3215e187e1e6c5ae0bbe8cdf92e2bdeb308a6b26de0cfad7a5",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-roussillon-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/luberon-roussillon-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 291186,
+            "sha256": "e3cf3b55ae5365c4f88fb88dd846d984b3cd998fb75ecc937b1fe16aceb17030",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-roussillon-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-roussillon-01-content-1280.webp",
+            "width": 1280,
+            "height": 846,
+            "bytes": 171580,
+            "sha256": "abaeb28cf16d49d9241aef0b8a32893d6488842d7ef0d89727fb451f70ff063f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-roussillon-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-roussillon-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23622,
+            "sha256": "a6eb89d3f8d544700d2df2d68cb138f7ece4da507be1edf0b9fde2603b32cee6",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-ocres-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-ocres-01.jpg",
+      "originalSize": [
+        3302,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-ocres-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-ocres-01-content-1280.webp",
+            "width": 1280,
+            "height": 1163,
+            "bytes": 293478,
+            "sha256": "24ecc460054f72afe1c3a80ffe3655d6997ea4a8bb7d523502676119b14752b0",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-ocres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-ocres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35664,
+            "sha256": "b38c93bc99c1e418075993af2e08ce1f6db4092072eca351d9d5b6555f01e2dc",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-gordes-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-gordes-01.jpg",
+      "originalSize": [
+        4000,
+        1858
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-gordes-01-hero-800.webp",
+            "sitePath": "assets/images/hero/luberon-gordes-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 108418,
+            "sha256": "dde2cff0f6421a0b303f0145c3408225a2782cb72ee152f9ac81571adbc8654b",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-gordes-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/luberon-gordes-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 259194,
+            "sha256": "9e4d8f7ce30d429ad880a1c9be95559fb8e438f02a0b66e54a8cf83be807a463",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-gordes-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/luberon-gordes-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 445190,
+            "sha256": "c2cd96c175315957769723bc8ac2fa03c92548fd9ad4451cb6482c30af0d24cb",
+            "quality": 74
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-gordes-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-gordes-01-content-1280.webp",
+            "width": 1280,
+            "height": 595,
+            "bytes": 195140,
+            "sha256": "d84a0f29e0e26521ea5913b7af5150c231be8d8c7b4abae65883da18052d85ee",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-gordes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-gordes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 40202,
+            "sha256": "f8175c5f3346b1927bea3fb4d9817ba001f2ca9c3d263e4db41ba66b922a8f3d",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-bories-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-bories-01.jpg",
+      "originalSize": [
+        2816,
+        2112
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-bories-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-bories-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 192246,
+            "sha256": "d321bc1e03b124e34260f596e95b09a72ee9d2f7dd7b012c5ff8552342164231",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-bories-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-bories-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26006,
+            "sha256": "0f8ba0a30a1bd12f2e7d0b8dbb2878ea57cba382540b05f7448a05a445a5819c",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-senanque-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-senanque-01.jpg",
+      "originalSize": [
+        4000,
+        2248
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-senanque-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-senanque-01-content-1280.webp",
+            "width": 1280,
+            "height": 719,
+            "bytes": 287050,
+            "sha256": "85fdd6e9e26563b3a8f320c857c66b03b36d177b3fa2fb5502730b85e4a7f698",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-senanque-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-senanque-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 41076,
+            "sha256": "f07308de40fd6724ea539a837df9cd316c55ed2ca807a3ff50b0a187355229d8",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-city-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-city-01.jpg",
+      "originalSize": [
+        4000,
+        2394
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-city-01-hero-800.webp",
+            "sitePath": "assets/images/hero/avignon-city-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 63686,
+            "sha256": "b957fdfc2ee22de28cca390aff38c396c28efa1efc65f6d1bb96453824d1eb1b",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-city-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/avignon-city-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 148856,
+            "sha256": "f84d485b279ff05604636ec976eb5a972da6b01d08d3b4e804cf007396a8af70",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-city-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/avignon-city-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 286964,
+            "sha256": "de67b75686bc0339d9d06c51eef9ba6242399f3358c5b9861f8c9d342da67087",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-city-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-city-01-content-1280.webp",
+            "width": 1280,
+            "height": 766,
+            "bytes": 157278,
+            "sha256": "3f4169fe7b689ef87c4e5d0e39f500c48c46531b05873e18ae4726b720a545fb",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-city-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-city-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24060,
+            "sha256": "d7c40bf689b5c5e46c0856bb7ff52732126ac04c0a80e5ce8dfd3ecd9063fec9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-sorgue-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-sorgue-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-sorgue-01-hero-800.webp",
+            "sitePath": "assets/images/hero/luberon-sorgue-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 90224,
+            "sha256": "02bddb1d2e70bdb19705ddb2112bd5e6b02cc412382f939f5a2ec3342264fef9",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-sorgue-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/luberon-sorgue-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 214342,
+            "sha256": "1e727273d99f9044bbf989e65be4aa8e706e45e9885cb7ea03ac9f23b08ad1ea",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/luberon-sorgue-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/luberon-sorgue-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 434416,
+            "sha256": "772c00d9cb8a3daa9386612ab6c481231b9d083068e14671b1ddc015a0eeb7f1",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-sorgue-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-sorgue-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 229698,
+            "sha256": "bf9e52096aa8a3e6967e583383cd0b07d78ebcc3cc079739cb8a54b2e1372846",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-sorgue-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-sorgue-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31058,
+            "sha256": "016d73ed3ba060c4f5338ce81052b87f15865d79aa47d14575ef34b9f2ceeefb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-halles-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-halles-01.jpg",
+      "originalSize": [
+        2578,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-halles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-halles-01-content-1280.webp",
+            "width": 1280,
+            "height": 1986,
+            "bytes": 289718,
+            "sha256": "105ffd716f44b80e4998cbec63d4ab812abe903d1a3fe01d8c351b29b99794f0",
+            "quality": 66
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-halles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-halles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27978,
+            "sha256": "2361f6b4f1355f1f668b045471c333a2e2ed080b967684f5c3e423a3ce4b7728",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-palais-papes-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-palais-papes-01.jpg",
+      "originalSize": [
+        4000,
+        1630
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-palais-papes-01-hero-800.webp",
+            "sitePath": "assets/images/hero/avignon-palais-papes-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 58820,
+            "sha256": "c4a2d4b268718b31c6c76d67e9b5cf90895fcba95b2e761a58d3fb5d176ac269",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-palais-papes-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/avignon-palais-papes-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 134454,
+            "sha256": "8c07c9808a3d93a879d823c6c061ea18afd1122e4781d46d885c15adec426901",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-palais-papes-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/avignon-palais-papes-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 261288,
+            "sha256": "17fc11df960b651d91c971d7eddcc7f0dfcd9bcee08d84efd71e1adb5705d745",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-palais-papes-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-palais-papes-01-content-1280.webp",
+            "width": 1280,
+            "height": 522,
+            "bytes": 100234,
+            "sha256": "4948e04817ed8d9731bd40b1cc48edf7a8d32a22aba1c099a78925288ce35240",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-palais-papes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-palais-papes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21970,
+            "sha256": "6ffe4783fab9b4fee038cc4d24c30fcfbfb77f4d8ba2b67eacd4ee1288502eb2",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-rocher-doms-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-rocher-doms-01.jpg",
+      "originalSize": [
+        3249,
+        1575
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-rocher-doms-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-rocher-doms-01-content-1280.webp",
+            "width": 1280,
+            "height": 620,
+            "bytes": 234430,
+            "sha256": "a39321ff8bbf1e69adbbec48ee8a1b7f27d0244753acb1731eb99d85a1f3137e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-rocher-doms-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-rocher-doms-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 46302,
+            "sha256": "02ef5e98eabbe1153dfc6356b56e5e057f3a368c5915010e7b3d14f6ffca9385",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-pont-benezet-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-pont-benezet-01.jpg",
+      "originalSize": [
+        4000,
+        2819
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-pont-benezet-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-pont-benezet-01-content-1280.webp",
+            "width": 1280,
+            "height": 902,
+            "bytes": 161226,
+            "sha256": "b63b05eeaddf6d2806edbca4a4672d0c44e028ed1eeecdf81be57e2c597ed3f7",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-pont-benezet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-pont-benezet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17688,
+            "sha256": "87f737020bddb4f8496042a32db5ccb6c61ad3e700a395380ea2697cf3451f9d",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-pont-du-gard-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-pont-du-gard-01.jpg",
+      "originalSize": [
+        4000,
+        1544
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-pont-du-gard-01-hero-800.webp",
+            "sitePath": "assets/images/hero/avignon-pont-du-gard-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 95468,
+            "sha256": "9a0a77418b06915e5451a89ed6f8c8f019434721746907a00512d5a650101db8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-pont-du-gard-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/avignon-pont-du-gard-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 230178,
+            "sha256": "9c66ec367ce576dc20516a2aed7cae4e3309ed38db4deeb2ab7a420573516242",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-pont-du-gard-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/avignon-pont-du-gard-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 416576,
+            "sha256": "cd1fd6a319c971135f462634e4b7b075811d68c5455c17e99afd218db621f057",
+            "quality": 74
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-pont-du-gard-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-pont-du-gard-01-content-1280.webp",
+            "width": 1280,
+            "height": 494,
+            "bytes": 158344,
+            "sha256": "be010825407be11e93d431533b99d34c11caad18aa9da60a8ca75649d1478063",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-pont-du-gard-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-pont-du-gard-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34356,
+            "sha256": "39b031847ef3ac01a464b49b20c4c33e7ce7eefeb1d4ea5b9b273a3217cbac3e",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-uzes-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-uzes-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-uzes-01-hero-800.webp",
+            "sitePath": "assets/images/hero/avignon-uzes-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 127838,
+            "sha256": "816b52df215c4fe1aa5f835780617af3b5e76b1737bea7c3aa64b41b9f8858d0",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-uzes-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/avignon-uzes-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 302828,
+            "sha256": "02844697fb57269c4401c9a3791fc7e898bd206bbcf054ee8cf8f5a5ed61c30e",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-uzes-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/avignon-uzes-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 445860,
+            "sha256": "af202565919ada95dd32aee4452eb87ff3e0690e593c3aab80135127c30f612a",
+            "quality": 62
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-uzes-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-uzes-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 293752,
+            "sha256": "374ba58cb6c22b0c34afc2633d9feffc988bccba404e7bfa5ccb562af41d4de4",
+            "quality": 72
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-uzes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-uzes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 50752,
+            "sha256": "130921629c3b1243651c801f1e2df3c17eeec2df22dab913c9a89d5fcd51a8ae",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-les-baux-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-les-baux-01.jpg",
+      "originalSize": [
+        4000,
+        1325
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-les-baux-01-hero-800.webp",
+            "sitePath": "assets/images/hero/avignon-les-baux-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 72096,
+            "sha256": "e281b5f1096adf7f8e6933f1b8e17bfb57a075e2248cbc2ab1232bbdc5c0335c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-les-baux-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/avignon-les-baux-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 169330,
+            "sha256": "40de18412c17f64425511877f513dd89b38ff1f749e5ccf3cf688325fa8d93ed",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/avignon-les-baux-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/avignon-les-baux-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 355042,
+            "sha256": "b8d12437d2e139642aef8d4ded6e7a17aecdc6734cd698778d843e18d4f0f7ee",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-les-baux-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-les-baux-01-content-1280.webp",
+            "width": 1280,
+            "height": 424,
+            "bytes": 94684,
+            "sha256": "321799e4f2eb10594c4a36a54dcf844427ffb97e929729dcf01559e1d0cea704",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-les-baux-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-les-baux-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26602,
+            "sha256": "35bf84fb69bb5621eb1a5f9b9a627f43e11492c132280db6c9fb4879b5dedb10",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-saint-remy-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-saint-remy-01.jpg",
+      "originalSize": [
+        4000,
+        2400
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-saint-remy-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-saint-remy-01-content-1280.webp",
+            "width": 1280,
+            "height": 768,
+            "bytes": 273512,
+            "sha256": "5b13aa09ce83d512d29c5c38b62e66d94a8f1d6d5d2d47695d17f9d41b8826cf",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-saint-remy-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-saint-remy-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 48464,
+            "sha256": "c63a68086c79a0bf42d553f812d452e8c52516dc445dc6fbdc03a422d2d86313",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-city-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-city-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-city-01-hero-800.webp",
+            "sitePath": "assets/images/hero/lyon-city-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 121466,
+            "sha256": "101de47df38669631efb86f9278e9a67684a11386794204ec577c521fb447b94",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-city-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/lyon-city-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 284900,
+            "sha256": "273aae3efce8baf235cc886b75322c950859c6372d0f8c31718c519e8daf19af",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-city-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/lyon-city-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 435760,
+            "sha256": "2051bf8ed10de508f1da0c009f11c00d8e80ff8738107b7c2ac206b418c6086a",
+            "quality": 65
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-city-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-city-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 290240,
+            "sha256": "43884d830c5e1eef80d2d653a8f3ad4c96cacc9f636bdcb6649a7da8b6f3c854",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-city-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-city-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 43464,
+            "sha256": "2304ee9982866c89b3db76785a74215e4bb94f734053a6b58e7f6974068deec5",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-bellecour-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-bellecour-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-bellecour-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-bellecour-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 107548,
+            "sha256": "37333f906f90ba71bdc21af257d76344ae5cea5c8f0ad98e58332fd6fd0e2f85",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-bellecour-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16612,
+            "sha256": "d53d6033f7d4155f746a1b2d4d7f06a2e8808fe9dd03391d8729364603d578fa",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-fourviere-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-fourviere-01.jpg",
+      "originalSize": [
+        4000,
+        2485
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-fourviere-01-hero-800.webp",
+            "sitePath": "assets/images/hero/lyon-fourviere-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 52024,
+            "sha256": "a3377decd56422a7976b716ae2e7fb3dd9c44da1be1885bc3afe1503159585a7",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-fourviere-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/lyon-fourviere-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 121594,
+            "sha256": "ce546b4121a7c395ae2bd5a00a272d29f325f63830be757ad370231b9f2ba3bf",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-fourviere-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/lyon-fourviere-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 258330,
+            "sha256": "737fd1451d9ec51a2e5fd375ad11cf2bb21b1fb9502563c68d513441eeb9a1b4",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-fourviere-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-fourviere-01-content-1280.webp",
+            "width": 1280,
+            "height": 795,
+            "bytes": 139074,
+            "sha256": "40617b03535d83975c4ee769c1d44023f729d2b2d574d11290483cd149fa28c4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-fourviere-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-fourviere-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20352,
+            "sha256": "6c0638c7eecc258e688e525679754248d90782f1d05433be40f4c5f691da3354",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-vieux-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-vieux-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-vieux-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-vieux-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 215298,
+            "sha256": "b13b37bdd55f9c656e4b9c7ac20856725bfbf94c0f73922afc79cf5fca76bf69",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-vieux-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-vieux-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 37050,
+            "sha256": "4c52026a84af67c787af3a12438ff091f1f35c2084e3a21bbd66aeed0f3582af",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-saint-jean-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-saint-jean-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-saint-jean-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-saint-jean-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 159320,
+            "sha256": "9883618fc42edc60fc3523bd30e4b3e598d1850e658a22784f4bee4c7807a97a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-saint-jean-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-saint-jean-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21226,
+            "sha256": "917b5a6cee935dfc558502d473c911cf6c80527877fe7924e45dfca72ffc2096",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-traboules-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-traboules-01.jpg",
+      "originalSize": [
+        3920,
+        2940
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-traboules-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-traboules-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 81468,
+            "sha256": "9a0fb5d7ad9fb1ed5546e08e17d3fbd3979b961a3b809068aa7bba0121ec6b40",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-traboules-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-traboules-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16898,
+            "sha256": "ea9d3bd6b1c67bfb14f0506fdb6afcf455647893d0f1c3920b3f70163997b0e1",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-croix-rousse-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-croix-rousse-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-croix-rousse-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-croix-rousse-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 152892,
+            "sha256": "685a27a2ab07feb1c40381a7bf991f2406eb2fd26a3e9cb5e9d395b37a957505",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-croix-rousse-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-croix-rousse-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25188,
+            "sha256": "2f8ce25245f9635ddb32dd20ae69bb908c2cb84724c7f9479c289c8da784abfb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-halles-bocuse-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-halles-bocuse-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-halles-bocuse-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-halles-bocuse-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 186760,
+            "sha256": "3f0a9ed9b6b6084d56197aa47921ae1a3b9c3324e4eda02f76e0f5377fc09f9c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-halles-bocuse-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-halles-bocuse-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 33544,
+            "sha256": "9d9d711d83b355df6288078aa30d2d1c5fc94cdf765d31036db23125690557d3",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-annecy-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-annecy-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-annecy-01-hero-800.webp",
+            "sitePath": "assets/images/hero/lyon-annecy-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 80516,
+            "sha256": "e3a91c628bfec4d06defd6ec4c3496f07958b8a996c9b9acf4d1bbbba1319b7f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-annecy-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/lyon-annecy-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 187936,
+            "sha256": "4ac577d19b949176d8fe67dd84524f1a1c0f7d18016f3454b7d6ff1ff6a0e515",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-annecy-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/lyon-annecy-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 371478,
+            "sha256": "ab3077a92d5582ba2e970cf3b19111fd194fa835ee2c0c91e03dc57b6e8c51dd",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-annecy-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-annecy-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 205536,
+            "sha256": "8e690692aac0b8ab373cae6b6196844b47da8df2f65a5bc5bdfb8597d307e132",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-annecy-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-annecy-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27956,
+            "sha256": "ac555ff51adf514f11341876e26091695ef9a1a2aa74ac4bf20dfeff6e521101",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-annecy-vieille-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-annecy-vieille-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-annecy-vieille-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-annecy-vieille-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 190294,
+            "sha256": "bb5db6493b80a70afcc09f63ddec94c088257040600a121c92064dd6f5f7b5fd",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-annecy-vieille-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-annecy-vieille-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28282,
+            "sha256": "f67c9866ced543783e3cb3ba0432b413b7c708830ee414e09ed965944d97c002",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-thiou-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-thiou-01.jpg",
+      "originalSize": [
+        3264,
+        2448
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-thiou-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-thiou-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 187346,
+            "sha256": "dfcb2de8db0d4a331d9417d027a26afebda6ea050d7fe2f96982ab34dec35747",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-thiou-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-thiou-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27778,
+            "sha256": "5ded421ff5a697b7bad65099529c7284a16742c927b65c0fba4f515ee6055cfd",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-lake-annecy-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-lake-annecy-01.jpg",
+      "originalSize": [
+        3645,
+        2440
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-lake-annecy-01-hero-800.webp",
+            "sitePath": "assets/images/hero/lyon-lake-annecy-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 46420,
+            "sha256": "e8edd0d5b35b0c5d4b14a22d50a504daf988eb18f9887fd2b824bd00f6cd593a",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-lake-annecy-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/lyon-lake-annecy-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 104298,
+            "sha256": "72e5a7e6c26c0138fcefc754c81d40908034e866803485f01f0703b26fc3c61c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/lyon-lake-annecy-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/lyon-lake-annecy-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 199338,
+            "sha256": "5dd23a12d7e6bfd299c94b9ac6ff24162c44c5ba7038a3d5baa8e7ec0733acfe",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-lake-annecy-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-lake-annecy-01-content-1280.webp",
+            "width": 1280,
+            "height": 857,
+            "bytes": 126234,
+            "sha256": "1ff1e88765d85e1745a92de2b3a34d6d035d33bf0cfd7fd0c71b3a15be9bb133",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-lake-annecy-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-lake-annecy-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 18134,
+            "sha256": "808bbbacf7d501b3f23c1e13b62241e573bc987f4f3f18e5eb311313e08d2ccc",
             "quality": 73
           }
         ]
