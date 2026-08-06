@@ -127,8 +127,7 @@
   "needsReview": [
     "이동수단·차량 반납지 미확정 (감사 문서 시나리오: Girona→BCN 반납→항공→Nice)",
     "Nice 숙소 후보(AMMI Masséna) 승인",
-    "Bàscara 체크아웃 조건 확인",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Bàscara 체크아웃 조건 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",

@@ -4,18 +4,18 @@
   "date": "2026-08-30",
   "city": "Barcelona",
   "title": "사그라다 파밀리아와 산파우",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": "urban",
   "startTime": "07:30",
   "endTime": "21:20",
   "totalDuration": "13시간 50분",
-  "totalDistance": "약 9km · 도보+대중교통",
+  "totalDistance": "약 12km · 도보+대중교통",
   "fatigue": "3",
   "hotel": {
-    "name": "Praktik Garden (후보)",
-    "lat": 41.39382,
-    "lng": 2.17132,
-    "status": "candidate"
+    "name": "Occidental Barcelona 1929",
+    "lat": 41.3752738,
+    "lng": 2.1476619,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -109,36 +109,99 @@
       "end": "21:20",
       "name": "숙소 귀환",
       "category": "hotel",
-      "lat": 41.39382,
-      "lng": 2.17132,
+      "lat": 41.3752738,
+      "lng": 2.1476619,
       "summary": "다음 날 일정 확인 후 늦지 않게 취침",
       "menu": null,
-      "reservation": "숙소 후보 확정 필요",
+      "reservation": null,
       "optional": false
     }
   ],
   "legs": [
-    {"from": "sagrada-familia", "to": "avinguda-gaudi", "mode": "walk", "duration": "20분", "distance": "0.5km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "avinguda-gaudi", "to": "la-paradeta-sagrada", "mode": "walk", "duration": "10분", "distance": "0.6km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "la-paradeta-sagrada", "to": "sant-pau", "mode": "walk", "duration": "15분", "distance": "0.8km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "sant-pau", "to": "gracia", "mode": "metro", "duration": "25분", "distance": "약 3km", "line": "버스/Metro 재확인", "geometryStatus": "coordinate-line"},
-    {"from": "gracia", "to": "bodega-joan", "mode": "walk", "duration": "20분", "distance": "1.3km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "bodega-joan", "to": "barcelona-stay-return", "mode": "walk", "duration": "20분", "distance": "약 1.3km", "line": null, "geometryStatus": "coordinate-line"}
+    {
+      "from": "sagrada-familia",
+      "to": "avinguda-gaudi",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "avinguda-gaudi",
+      "to": "la-paradeta-sagrada",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "la-paradeta-sagrada",
+      "to": "sant-pau",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "sant-pau",
+      "to": "gracia",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": "약 3km",
+      "line": "버스/Metro 재확인",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "gracia",
+      "to": "bodega-joan",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": "1.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "bodega-joan",
+      "to": "barcelona-stay-return",
+      "mode": "walk",
+      "duration": "30분",
+      "distance": "약 1.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
   ],
-  "transport": ["도보", "버스/Metro · 현장 재계산"],
-  "food": ["La Paradeta · 제철 해산물", "Bodega Joan · 타파스"],
-  "highlights": ["10:30 Sagrada 입장", "Avinguda de Gaudí 보행축", "Sant Pau 후 45분 이상 휴식"],
+  "transport": [
+    "도보",
+    "버스/Metro · 현장 재계산"
+  ],
+  "food": [
+    "La Paradeta · 제철 해산물",
+    "Bodega Joan · 타파스"
+  ],
+  "highlights": [
+    "10:30 Sagrada 입장",
+    "Avinguda de Gaudí 보행축",
+    "Sant Pau 후 45분 이상 휴식"
+  ],
   "backup": "혼잡·피로 시 Gràcia 산책 삭제, Sant Pau 실내와 카페 중심",
-  "map": {"zoom": 14, "center": [41.4013, 2.1658], "routeCache": null},
+  "map": {
+    "zoom": 14,
+    "center": [
+      41.4013,
+      2.1658
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "Barcelona 숙소 후보 승인 및 실제 출발점 교체",
-    "총거리와 대중교통 노선은 숙소·예약 확정 후 재계산",
+    "숙소→사그라다 아침 이동수단(Metro/버스) 현장 확정",
     "La Paradeta·Bodega Joan 좌표와 2026 운영 여부 출발 전 재확인",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "예약번호·총액·무료취소 기한 기록 (챕터 pending 배지)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-2",
-    "source/ASSETS/76_Daily_Execution_Maps/daily-maps.json#2026-08-30",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+    "source/ASSETS/76_Daily_Execution_Maps/daily-maps.json#2026-08-30"
   ]
 }
