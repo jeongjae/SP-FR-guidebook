@@ -529,20 +529,32 @@
           "note": "자동변속·보험·편도반납·차체촬영."
         },
         {
+          "placeId": "saint-paul-parking-route-de-vence",
+          "plannedTime": "09:25 전후 도착",
+          "note": "공식 공영주차 4곳 중 마을 입구 지하주차. 만차 시 Route des Serres 등 대체.",
+          "order": 2
+        },
+        {
           "placeId": "saint-paul-de-vence",
-          "order": 2,
+          "order": 3,
           "plannedTime": "09:30–11:00",
-          "note": "골목·성벽. 주차장은 현장 안내 확인 — 사전 미지정."
+          "note": "골목·성벽. 주차 후 도보 진입."
+        },
+        {
+          "placeId": "grasse-parking-notre-dame-des-fleurs",
+          "plannedTime": "12:20 전후 도착",
+          "note": "시영 주차장 — 구시가지 인접. 요금·만차 여부 현장 확인.",
+          "order": 4
         },
         {
           "placeId": "grasse-vieille-ville",
-          "order": 3,
+          "order": 5,
           "plannedTime": "12:30–14:00",
-          "note": "구시가지 도보. 주차장은 현장 안내 확인 — 사전 미지정."
+          "note": "구시가지 도보. 주차 후 도보 진입."
         },
         {
           "placeId": "aix-stay-candidate",
-          "order": 4,
+          "order": 6,
           "plannedTime": "17:00 이후 체크인",
           "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
         }
@@ -555,13 +567,23 @@
         },
         {
           "from": "nice-airport-terminal-2",
-          "to": "saint-paul-de-vence",
+          "to": "saint-paul-parking-route-de-vence",
           "mode": "driving"
         },
         {
+          "from": "saint-paul-parking-route-de-vence",
+          "to": "saint-paul-de-vence",
+          "mode": "walking"
+        },
+        {
           "from": "saint-paul-de-vence",
-          "to": "grasse-vieille-ville",
+          "to": "grasse-parking-notre-dame-des-fleurs",
           "mode": "driving"
+        },
+        {
+          "from": "grasse-parking-notre-dame-des-fleurs",
+          "to": "grasse-vieille-ville",
+          "mode": "walking"
         },
         {
           "from": "grasse-vieille-ville",
@@ -793,14 +815,20 @@
           "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
         },
         {
+          "placeId": "roussillon-parking-des-ocres",
+          "plannedTime": "오전 도착",
+          "note": "오커길 입구 인접 공식 주차장. 요금·운영 현장 확인.",
+          "order": 1
+        },
+        {
           "placeId": "roussillon-sentier-des-ocres",
-          "order": 1,
+          "order": 2,
           "plannedTime": "오전",
-          "note": "오커길 후 60분 휴식. 주차장은 현장 안내 확인 — 사전 미지정."
+          "note": "오커길 후 60분 휴식. 주차 후 도보 진입."
         },
         {
           "placeId": "goult",
-          "order": 2,
+          "order": 3,
           "plannedTime": "오후",
           "note": "실행 감사 기준 Goult 또는 Bonnieux 중 택일. 주차장은 현장 안내 확인 — 사전 미지정."
         }
@@ -808,8 +836,13 @@
       "segments": [
         {
           "from": "luberon-stay-candidate",
-          "to": "roussillon-sentier-des-ocres",
+          "to": "roussillon-parking-des-ocres",
           "mode": "driving"
+        },
+        {
+          "from": "roussillon-parking-des-ocres",
+          "to": "roussillon-sentier-des-ocres",
+          "mode": "walking"
         },
         {
           "from": "roussillon-sentier-des-ocres",
@@ -842,10 +875,16 @@
           "note": "시장주차 30분 확보. 주차장은 현장 안내 확인 — 사전 미지정."
         },
         {
+          "placeId": "bories-parking",
+          "plannedTime": "이어서 도착",
+          "note": "유적 전용 주차장 — 진입로 좁음, 서행.",
+          "order": 2
+        },
+        {
           "placeId": "village-des-bories",
-          "order": 2,
+          "order": 3,
           "plannedTime": "이어서",
-          "note": "돌집 유적 — 마을에서 차량 이동."
+          "note": "돌집 유적 — 주차 후 도보 진입."
         }
       ],
       "segments": [
@@ -856,8 +895,13 @@
         },
         {
           "from": "gordes",
-          "to": "village-des-bories",
+          "to": "bories-parking",
           "mode": "driving"
+        },
+        {
+          "from": "bories-parking",
+          "to": "village-des-bories",
+          "mode": "walking"
         }
       ]
     },
