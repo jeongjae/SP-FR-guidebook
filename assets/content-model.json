@@ -2189,10 +2189,8 @@
         "Giverny — Day 41 A안"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:041"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/giverny.html"
     },
     {
@@ -2212,7 +2210,7 @@
       "dayIds": [
         "day:034"
       ],
-      "dayEvidence": "실행 감사표",
+      "dayEvidence": "본문 표기",
       "url": "places/grand-palais.html"
     },
     {
@@ -2228,10 +2226,8 @@
         "Latin Quarter"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:029"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/latin-quarter.html"
     },
     {
@@ -2284,10 +2280,8 @@
         "Montorgueil"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:040"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/montorgueil.html"
     },
     {
@@ -2360,10 +2354,8 @@
         "Musée du Louvre"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:031"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/musee-du-louvre.html"
     },
     {
@@ -2380,10 +2372,8 @@
         "Notre-Dame de Paris"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:029"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/notre-dame-de-paris.html"
     },
     {
@@ -2400,10 +2390,8 @@
         "Versailles — Day 36 A안"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:036"
-      ],
-      "dayEvidence": "실행 감사표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/versailles.html"
     }
   ],
