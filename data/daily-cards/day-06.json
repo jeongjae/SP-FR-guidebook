@@ -13,8 +13,8 @@
   "fatigue": "4",
   "hotel": {
     "name": "Bàscara B&B",
-    "lat": 42.1603007,
-    "lng": 2.9101005,
+    "lat": 42.164,
+    "lng": 2.914,
     "status": "private-approximate"
   },
   "stops": [
@@ -25,8 +25,8 @@
       "end": "08:20",
       "name": "Bàscara 출발",
       "category": "hotel",
-      "lat": 42.1603007,
-      "lng": 2.9101005,
+      "lat": 42.164,
+      "lng": 2.914,
       "summary": "차량·주차·운전피로 확인 후 출발",
       "menu": "물·운전 간식",
       "reservation": null,
@@ -95,8 +95,8 @@
       "end": null,
       "name": "Bàscara 복귀",
       "category": "hotel",
-      "lat": 42.1603007,
-      "lng": 2.9101005,
+      "lat": 42.164,
+      "lng": 2.914,
       "summary": "저녁은 숙소식, 다음 날 이동 준비",
       "menu": null,
       "reservation": null,

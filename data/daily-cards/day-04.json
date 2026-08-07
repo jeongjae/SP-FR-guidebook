@@ -13,8 +13,8 @@
   "fatigue": "4",
   "hotel": {
     "name": "Bàscara B&B",
-    "lat": 42.1603007,
-    "lng": 2.9101005,
+    "lat": 42.164,
+    "lng": 2.914,
     "status": "private-approximate"
   },
   "stops": [
@@ -95,8 +95,8 @@
       "end": "19:30",
       "name": "Bàscara 체크인",
       "category": "hotel",
-      "lat": 42.1603007,
-      "lng": 2.9101005,
+      "lat": 42.164,
+      "lng": 2.914,
       "summary": "숙소 진입·주차 지침을 우선하고 저녁은 반경 10분",
       "menu": "숙소 인근 간단식",
       "reservation": "체크인 창 재확인",

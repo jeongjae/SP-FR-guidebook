@@ -3684,10 +3684,9 @@ def build_maps():
 
 # ---------------------------------------------------------------- tracker
 
-PRIVATE_PUBLICATION_TOKENS = (
-    "Plaça de l’Església, 6",
-    "Pla%C3%A7a+de+l%27Esgl%C3%A9sia%2C+6",
-)
+# 정확 주소 리터럴을 코드에 남기지 않는다 — 거리명+번지 패턴으로 탐지한다.
+PRIVATE_PUBLICATION_PATTERN = re.compile(
+    r"(?:de\s+l[’']?Esgl[ée]sia|de\+l%27Esgl%C3%A9sia)[^0-9]{0,4}\d")
 
 
 def format_cell(v):
@@ -3700,7 +3699,7 @@ def format_cell(v):
     if isinstance(v, float) and v.is_integer():
         return str(int(v))
     text = str(v)
-    if any(token in text for token in PRIVATE_PUBLICATION_TOKENS):
+    if PRIVATE_PUBLICATION_PATTERN.search(text):
         return "비공개 — 예약자료에서 확인"
     return text
 
