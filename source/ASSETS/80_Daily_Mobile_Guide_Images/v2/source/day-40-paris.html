@@ -35,11 +35,11 @@ body{font-synthesis:none;text-rendering:geometricPrecision}
 .timeline-top{display:flex;gap:14px;align-items:flex-start}.timeline-time{flex:0 0 112px;font-size:23px;line-height:1.1;color:var(--cat);font-weight:700;letter-spacing:-.02em}.timeline-name{font-size:24px;line-height:1.18;font-weight:700;letter-spacing:-.025em;overflow-wrap:anywhere}
 .timeline-summary{margin:10px 0 0;font-size:19px;line-height:1.35;color:#33495c}.timeline-detail{margin:7px 0 0;font-size:17px;line-height:1.25;color:#6b4c18;font-weight:700}
 .cat-sight{--cat:var(--blue)}.cat-culture{--cat:var(--green)}.cat-food,.cat-cafe{--cat:var(--purple)}.cat-shopping{--cat:var(--orange)}.cat-transport{--cat:var(--gray)}.cat-hotel{--cat:var(--hotel)}
-.map-heading{padding-right:0}.legend{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;max-width:380px;padding-top:8px}.legend span{font-size:15px;letter-spacing:0;color:#405365;display:inline-flex;align-items:center;gap:6px}.legend i{width:25px;height:4px;border-radius:5px;background:var(--route)}.legend .walk i{background:repeating-linear-gradient(90deg,var(--route) 0 5px,transparent 5px 9px)}.legend .car i{height:6px}.legend .transit i{background:#7049af}.legend .unconfirmed i{background:repeating-linear-gradient(90deg,#6b7885 0 9px,transparent 9px 16px)}
+.map-heading{padding-right:0}.legend{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;max-width:380px;padding-top:8px}.legend span{font-size:15px;letter-spacing:0;color:#405365;display:inline-flex;align-items:center;gap:6px}.legend i{width:25px;height:4px;border-radius:5px;background:var(--route)}.legend .walk i{background:repeating-linear-gradient(90deg,var(--route) 0 5px,transparent 5px 9px)}.legend .car i{height:6px}.legend .transit i{background:#7049af}.legend .unconfirmed i{background:repeating-linear-gradient(90deg,#6b7885 0 9px,transparent 9px 16px)}.legend .flight i{background:repeating-linear-gradient(90deg,#7049af 0 12px,transparent 12px 18px)}
 .map{position:relative;flex:1;overflow:hidden;border-radius:18px;border:1px solid #ccd5dd;background:#dfe7ea;box-shadow:0 5px 18px rgba(20,37,54,.08)}
 .tiles{position:absolute;inset:0}.map-tile{position:absolute;width:256px;height:256px;image-rendering:auto;user-select:none}
 .map:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,0) 20%,rgba(20,37,54,.05));z-index:2}
-.route-layer{position:absolute;inset:0;width:100%;height:100%;z-index:3;overflow:visible}.route-halo{fill:none;stroke:#fff;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;opacity:.92}.route-path{fill:none;stroke:var(--route);stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.route-path.walk{stroke-width:5;stroke-dasharray:4 13}.route-path.metro,.route-path.train,.route-path.bus,.route-path.tram{stroke:#7049af;stroke-width:6}.route-path.car,.route-path.taxi{stroke-width:8}.route-path.unconfirmed{stroke:#6b7885;stroke-width:6;stroke-dasharray:10 12}
+.route-layer{position:absolute;inset:0;width:100%;height:100%;z-index:3;overflow:visible}.route-halo{fill:none;stroke:#fff;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;opacity:.92}.route-path{fill:none;stroke:var(--route);stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.route-path.walk{stroke-width:5;stroke-dasharray:4 13}.route-path.metro,.route-path.train,.route-path.bus,.route-path.tram{stroke:#7049af;stroke-width:6}.route-path.car,.route-path.taxi{stroke-width:8}.route-path.unconfirmed{stroke:#6b7885;stroke-width:6;stroke-dasharray:10 12}.route-path.flight{stroke:#7049af;stroke-width:5;stroke-dasharray:14 10}
 .markers{position:absolute;inset:0;z-index:4}.map-marker{--cat:var(--blue);position:absolute;width:38px;height:38px;margin:-19px 0 0 -19px;border:4px solid #fff;border-radius:50%;background:var(--cat);color:#fff;display:grid;place-items:center;font-size:17px;font-weight:700;box-shadow:0 2px 8px rgba(20,37,54,.42);z-index:6}.map-marker.cat-culture{--cat:var(--green)}.map-marker.cat-food,.map-marker.cat-cafe{--cat:var(--purple)}.map-marker.cat-transport{--cat:var(--gray)}.map-marker.cat-hotel{--cat:var(--hotel)}
 .map-label{position:absolute;z-index:5;max-width:235px;min-width:126px;padding:10px 12px;background:rgba(255,255,255,.96);border:1px solid #cbd4dd;border-radius:9px;box-shadow:0 3px 10px rgba(20,37,54,.18);line-height:1.13;pointer-events:none}.map-label strong{display:block;font-size:17px;overflow-wrap:anywhere}.map-label span{display:block;margin-top:4px;color:#4c5f72;font-size:14px;font-weight:700}.label-connector{stroke:#6d7d8d;stroke-width:2;opacity:.78}
 .north{position:absolute;right:18px;top:18px;z-index:8;width:52px;height:72px;background:rgba(255,255,255,.93);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(20,37,54,.2);font-weight:700}.north i{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:25px solid var(--ink);margin-bottom:3px}.north span{font-size:15px}
@@ -168,6 +168,7 @@ body{font-synthesis:none;text-rendering:geometricPrecision}
   if (["metro","train","bus","tram"].some((m) => modes.has(m))) labels.push('<span class="transit"><i></i>대중교통</span>');
   if (["car","taxi"].some((m) => modes.has(m))) labels.push('<span class="car"><i></i>차량</span>');
   if (modes.has("unconfirmed")) labels.push('<span class="unconfirmed"><i></i>이동 미확정</span>');
+  if (modes.has("flight")) labels.push('<span class="flight"><i></i>항공</span>');
   $("legend").innerHTML = labels.join("");
 
   const map = $("map");
@@ -200,17 +201,23 @@ body{font-synthesis:none;text-rendering:geometricPrecision}
     const p = screen(coord[1], coord[0]);
     return `${index ? "L" : "M"}${p.x.toFixed(1)},${p.y.toFixed(1)}`;
   }).join(" ");
+  // The cached OSRM geometry covers the driving legs only; non-driving legs
+  // (flight, walk, transit) must still be drawn as coordinate lines.
+  const byId = Object.fromEntries(data.stops.map((stop) => [stop.id, stop]));
+  const drawLeg = (leg) => {
+    const from = byId[leg.from], to = byId[leg.to];
+    if (!from || !to) return;
+    const path = pathFor([[from.lng, from.lat], [to.lng, to.lat]]);
+    svg.insertAdjacentHTML("beforeend", `<path class="route-halo" d="${path}"></path><path class="route-path ${esc(leg.mode)}" d="${path}"></path>`);
+  };
   if (route && route.length) {
     const path = pathFor(route);
     svg.insertAdjacentHTML("beforeend", `<path class="route-halo" d="${path}"></path><path class="route-path car" d="${path}"></path>`);
-  } else {
-    const byId = Object.fromEntries(data.stops.map((stop) => [stop.id, stop]));
     for (const leg of data.legs) {
-      const from = byId[leg.from], to = byId[leg.to];
-      if (!from || !to) continue;
-      const path = pathFor([[from.lng, from.lat], [to.lng, to.lat]]);
-      svg.insertAdjacentHTML("beforeend", `<path class="route-halo" d="${path}"></path><path class="route-path ${esc(leg.mode)}" d="${path}"></path>`);
+      if (!["car", "taxi"].includes(leg.mode)) drawLeg(leg);
     }
+  } else {
+    for (const leg of data.legs) drawLeg(leg);
   }
 
   const markerRoot = $("markers");
