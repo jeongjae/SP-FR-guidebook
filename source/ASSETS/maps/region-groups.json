@@ -42,7 +42,12 @@
         "pont-du-gard",
         "les-baux-de-provence",
         "saint-remy-de-provence",
-        "rocher-des-doms"
+        "rocher-des-doms",
+        "avignon-centre",
+        "arles-arenes",
+        "arles-theatre-antique",
+        "cloitre-saint-trophime",
+        "avignon-tgv"
       ]
     },
     {
@@ -125,7 +130,8 @@
         "croix-rousse",
         "halles-de-lyon-paul-bocuse",
         "parc-de-la-tete-d-or",
-        "annecy"
+        "annecy",
+        "lyon-part-dieu"
       ]
     },
     {
