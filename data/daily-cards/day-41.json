@@ -3,58 +3,158 @@
   "day": 41,
   "date": "2026-10-08",
   "city": "Paris",
-  "title": "Giverny 옵션일",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Trocadéro와 Chaillot — 선택 현대무용",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4/3",
+  "totalDistance": "약 1km · 도보 + 메트로",
+  "fatigue": "2–4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "giverny-orangerie-tuileries",
+      "id": "morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Giverny 또는 Orangerie·Tuileries",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Giverny 또는 Orangerie·Tuileries",
+      "start": "09:30",
+      "end": "14:00",
+      "name": "늦은 아침·숙소권 카페·짐정리 일부",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "전날 축제 피로 확인 — 정식운동 생략 가능, 12:30 가벼운 점심",
       "menu": null,
-      "reservation": "Giverny",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "trocadero",
+      "order": 2,
+      "start": "14:30",
+      "end": "17:00",
+      "name": "Trocadéro·Chaillot 권역",
+      "category": "sight",
+      "lat": 48.8623703,
+      "lng": 2.2880959,
+      "summary": "전망·건축·카페 — 장거리 산책 금지",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "rest-dinner",
+      "order": 3,
+      "start": "17:00",
+      "end": "19:00",
+      "name": "휴식·이른 저녁",
+      "category": "food",
+      "lat": 48.8628,
+      "lng": 2.288,
+      "summary": "공연 선택에 따라 조정",
+      "menu": "Chaillot 부근 또는 숙소",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "este-mundo",
+      "order": 4,
+      "start": "20:30",
+      "end": "21:30",
+      "name": "Bouchra Ouizguen, Este Mundo",
+      "category": "culture",
+      "lat": 48.8623703,
+      "lng": 2.2880959,
+      "summary": "Chaillot · 1시간 · €8–25 — 한 명이라도 피곤하면 사지 않는다",
+      "menu": null,
+      "reservation": "공연 선택 시 예매",
+      "optional": true
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "22:00",
+      "end": null,
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "공연 미선택 시 숙소식·자유 저녁 — 10/9 Hamlet 체력 보존",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "morning",
+      "to": "trocadero",
+      "mode": "metro",
+      "duration": "30분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "trocadero",
+      "to": "rest-dinner",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "rest-dinner",
+      "to": "este-mundo",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "este-mundo",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "30분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "Giverny"
+    "메트로 왕복"
   ],
   "food": [
-    "Giverny"
+    "가벼운 점심 12:30",
+    "이른 저녁 또는 숙소식"
   ],
   "highlights": [
-    "Giverny 또는 Orangerie·Tuileries",
-    "선택·축소: 가벼운 저녁"
+    "연속 이벤트 3일의 가운데 — 체력 우선",
+    "공연은 선택 (€8–25)",
+    "Götterdämmerung은 10/8에 없음 — 제외 확정"
   ],
-  "backup": "Orangerie·Tuileries",
-  "map": null,
+  "backup": "피로 시 공연 미구매, Trocadéro 전망·카페만",
+  "map": {
+    "zoom": 13,
+    "center": [
+      48.851,
+      2.317
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Este Mundo 예매 여부 당일 판단",
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-15-10월8일",
+    "OSM Nominatim 지오코딩 2026-08-07: Trocadéro"
   ]
 }

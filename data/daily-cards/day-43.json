@@ -2,87 +2,139 @@
   "schemaVersion": "1.0",
   "day": 43,
   "date": "2026-10-10",
-  "city": "Paris→Seoul",
-  "title": "체크아웃·CDG·출국",
-  "sourceStatus": "candidate-latest-needs-review",
+  "city": "Paris",
+  "title": "체크아웃과 공항 — 출국일",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
+  "totalDistance": "공항 이동 약 30km",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "시장·체크아웃",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "시장·체크아웃",
+      "start": "08:00",
+      "end": "10:00",
+      "name": "아침·남은 음식 정리·빵집 산책",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "유리병·냉장식품 처리 — 멀리 이동하지 않음",
       "menu": null,
-      "reservation": "항공·공항이동",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "checkout",
+      "order": 2,
+      "start": "10:00",
+      "end": "13:00",
+      "name": "체크아웃·짐 인수·가벼운 점심",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "숙소조건 확인, 시내 추가관광 없음 — 과식 금지",
+      "menu": null,
+      "reservation": "체크아웃 조건·짐 보관 확인",
       "optional": false
     },
     {
       "id": "cdg",
-      "order": 2,
-      "start": null,
-      "end": null,
-      "name": "CDG 이동",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "CDG 이동",
+      "order": 3,
+      "start": "14:00",
+      "end": "16:10",
+      "name": "CDG 이동·수속",
+      "category": "transport",
+      "lat": 49.0068908,
+      "lng": 2.571082,
+      "summary": "14:00 이전 출발 권장 — 국제선 3시간 전, détaxe(PABLO) 줄 완충 포함",
       "menu": null,
-      "reservation": "항공·공항이동",
+      "reservation": "공항·터미널·이동수단 확정 (pending)",
       "optional": false
     },
     {
-      "id": "19-10",
-      "order": 3,
-      "start": null,
+      "id": "departure",
+      "order": 4,
+      "start": "19:10",
       "end": null,
-      "name": "19:10 출국 예정",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "19:10 출국 예정",
+      "name": "인천행 출국",
+      "category": "transport",
+      "lat": 49.0068908,
+      "lng": 2.571082,
+      "summary": "실제 항공권 기준 재확인 — 43일 여정 종료",
       "menu": null,
-      "reservation": "항공·공항이동",
+      "reservation": "항공편 재확인",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "morning",
+      "to": "checkout",
+      "mode": "walk",
+      "duration": "0분",
+      "distance": "숙소",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "checkout",
+      "to": "cdg",
+      "mode": "taxi",
+      "duration": "약 1시간 (여유 포함)",
+      "distance": "약 30km",
+      "line": "RER B 대안 — 숙소 위치별 확인",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cdg",
+      "to": "departure",
+      "mode": "walk",
+      "duration": "0분",
+      "distance": "터미널 내",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "항공·공항이동"
+    "택시 또는 RER B (확정 필요)"
   ],
   "food": [
-    "도심 또는 공항 간단식"
+    "가벼운 점심 — 과식 금지",
+    "기내식"
   ],
   "highlights": [
-    "시장·체크아웃, CDG 이동, 19:10 출국 예정",
-    "선택·축소: 도심 추가관광 금지"
+    "P0 연결 — 오전에 아무것도 넣지 않는다",
+    "짐은 43일 누적 — 전날 완료",
+    "détaxe PABLO 줄 완충"
   ],
-  "backup": "숙소권 짧은 산책만",
-  "map": null,
+  "backup": "교통장애 시 즉시 출발 — Grand Défilé·모든 공연 제외 확정",
+  "map": {
+    "zoom": 10,
+    "center": [
+      48.923,
+      2.46
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "공항(CDG/Orly)·터미널·이동수단 확정",
+    "항공편 19:10 재확인",
+    "détaxe 대상 물품·서류 정리",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-17-10월10일",
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-43-귀국",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-43",
+    "OSM Nominatim 지오코딩 2026-08-07: CDG"
   ]
 }
