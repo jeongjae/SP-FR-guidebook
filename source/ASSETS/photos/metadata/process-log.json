@@ -1,5 +1,5 @@
 {
-  "processedAt": "2026-08-06",
+  "processedAt": "2026-08-07",
   "images": [
     {
       "imageId": "barcelona-city-aerial-01",
@@ -3401,6 +3401,1097 @@
             "height": 320,
             "bytes": 18134,
             "sha256": "808bbbacf7d501b3f23c1e13b62241e573bc987f4f3f18e5eb311313e08d2ccc",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-city-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-city-01.jpg",
+      "originalSize": [
+        2048,
+        1152
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-city-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-city-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 99674,
+            "sha256": "4891e636641b58c3398aea51fe54689172cbcb847581e833ccda1e823c225ac2",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-city-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-city-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 234734,
+            "sha256": "eb60cc19923940b6a758b4cd9dce4e686af66e7149f2d2fde49eadf432b7e6f8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-city-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-city-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 424256,
+            "sha256": "d4162a31aa5d98e70168a7c4fd401de079b134256ca06d8969aea5cc4cc0a64f",
+            "quality": 77
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-city-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-city-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 218190,
+            "sha256": "547bae56afd3fe65d83f31652d196c8ec52665de70a5c2a938f2a6186125d664",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-city-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-city-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34098,
+            "sha256": "9b34665b1aef6dbcf4369e8dcd8c40931fcc96451ecee1d28a9722983cdaaebd",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-notre-dame-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-notre-dame-01.jpg",
+      "originalSize": [
+        2963,
+        4000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-notre-dame-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-notre-dame-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 65654,
+            "sha256": "c48b43c71567f39073632881acc12037274f039e5eef2e2500c36a2e8da6005f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-notre-dame-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-notre-dame-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 139318,
+            "sha256": "97831124a89191513d6051d0c4a8ac7d52913b334f73f87e9e714f3fe6b0ed1c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-notre-dame-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-notre-dame-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 250212,
+            "sha256": "f909ad2c150f17309cfe65db445f2d2a5f0a1f4d1fe0b41f9aa7398ead82d6ff",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-notre-dame-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-notre-dame-01-content-1280.webp",
+            "width": 1280,
+            "height": 1728,
+            "bytes": 274902,
+            "sha256": "c7a3560e2287f07933218e5294aad7a5206af1293852f6ba1d1ddb05a9fee82c",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-notre-dame-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-notre-dame-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26218,
+            "sha256": "c3d020d5f384de41380af0beb6d86b878bc06881c38985bcaad5168a73d2ba49",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-latin-quarter-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-latin-quarter-01.jpg",
+      "originalSize": [
+        3885,
+        2573
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-latin-quarter-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-latin-quarter-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 79344,
+            "sha256": "bd231dbcaa39d7b6a97d4ec1a8dc1248ac6c61247cbfcde9e595322375772cd2",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-latin-quarter-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-latin-quarter-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 190370,
+            "sha256": "6021ed6cb1d617f54219724ef5d93f340b4d58734baaa55c000cf714b58ef862",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-latin-quarter-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-latin-quarter-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 423762,
+            "sha256": "a7ea03a4b3b3d5197f50692e67749ad5b31a9dd9dc6843c047872a803aab262f",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-latin-quarter-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-latin-quarter-01-content-1280.webp",
+            "width": 1280,
+            "height": 848,
+            "bytes": 203340,
+            "sha256": "db52f9faa362685caec3716be9481b8ca23540d07363ed983310df73560b2e5c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-latin-quarter-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28644,
+            "sha256": "2ea6082c2dcb8372e715edab35cd97612d0b6d046e9ad08ffe4e8fb8986f23d8",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-pantheon-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-pantheon-01.jpg",
+      "originalSize": [
+        4000,
+        2857
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-pantheon-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-pantheon-01-content-1280.webp",
+            "width": 1280,
+            "height": 914,
+            "bytes": 132550,
+            "sha256": "7e16ca2350c49e8e984aaf63f0736cba434b4c875a519c9f1ce234e88ace5e08",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-pantheon-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-pantheon-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21072,
+            "sha256": "01e80b254d80ac20ce0c5e430cc074346ea0592b820b05b7ab8e3ef10b4b9744",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-marais-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-marais-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-marais-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-marais-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 65992,
+            "sha256": "770094e2a00945ff4597f08dab0d2894d0cfce5366c3ca346e0aba2778415079",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-marais-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-marais-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 149142,
+            "sha256": "2809c6a04bf4f3d8c73318d60eada16f8315c83542115eb99a69f027ef7ff222",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-marais-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-marais-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 297482,
+            "sha256": "a4548add4fcfde65708b4d5ff850c071b8d1bf09da39d8bb5be49105f4895b6c",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-marais-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-marais-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 163564,
+            "sha256": "6af2724599050648ef7d8c4d9f0cf4f6bbded4931fcdf7dfa54a81173bc2b432",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-marais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-marais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24584,
+            "sha256": "21ab80b812a376b54d1d592db458f7e4a6aea5d1d23f9c1c64def3fe6778c473",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-luxembourg-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-luxembourg-01.jpg",
+      "originalSize": [
+        4000,
+        1240
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-luxembourg-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-luxembourg-01-content-1280.webp",
+            "width": 1280,
+            "height": 397,
+            "bytes": 76838,
+            "sha256": "a684563bbf62a7f06e3f6360af0aa8610be6f5d13468f607e4d5b9abd49c49d9",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-luxembourg-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-luxembourg-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21696,
+            "sha256": "11346b7f0a03a8c31f03c42c0ce190288db21ed6aa3f000342ca418309321efb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-marche-monge-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-marche-monge-01.jpg",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-marche-monge-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-marche-monge-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 95006,
+            "sha256": "a00b7417ee8b5fe8716f2d18b5ee9b1f41dfac8b3a1a8f55abafbfc0dab9278b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-marche-monge-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-marche-monge-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15988,
+            "sha256": "7a4b881c25635aaca04b81716cdb3fddfa37dcc774510744cfa66b5c6a953901",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-louvre-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-louvre-01.jpg",
+      "originalSize": [
+        3008,
+        2000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-louvre-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-louvre-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 54514,
+            "sha256": "745da2ba5fce3582f668ba7fafbf0718e6e2a30ca33d44cd6de459886f4358c4",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-louvre-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-louvre-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 126688,
+            "sha256": "fc60598bb57b75869d0563f2fa6281c6304fc2ac6fc1e376cac8972b8b774814",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-louvre-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-louvre-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 257812,
+            "sha256": "efb785095a8316c1d9400ead70f5940ff91a568699e00598aeae9f58d2ccc8ae",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-louvre-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-louvre-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 141952,
+            "sha256": "53afb805bf8cf357bb0f01d9050dfb2133f93ee7a90f6161d5b422721a1e8b28",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-louvre-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-louvre-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20310,
+            "sha256": "105554851956df4f1e1344d5251a3440692db7756230a09a3b4f5577c96a61d7",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-palais-royal-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-palais-royal-01.jpg",
+      "originalSize": [
+        2667,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-palais-royal-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-palais-royal-01-content-1280.webp",
+            "width": 1280,
+            "height": 1920,
+            "bytes": 294484,
+            "sha256": "5cc210dc284924deb301badcd1a1e2539bff5c631ceafe7f037860ff05c63c26",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-palais-royal-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-palais-royal-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27226,
+            "sha256": "986676fea57710ed56c6ff0570ede8283d7ccb732c32963c1541a20580dc0a12",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-montmartre-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-montmartre-01.jpg",
+      "originalSize": [
+        2667,
+        4000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-montmartre-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-montmartre-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 86106,
+            "sha256": "97a8559f22d503647639582d9c3bb6768e189cf641801ac60df13e9e4a3f4dc0",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-montmartre-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-montmartre-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 155506,
+            "sha256": "484ccc1d5d872ef386d7305a58a34d2647f54e416e056822c77d50241dfd881f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-montmartre-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-montmartre-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 259076,
+            "sha256": "8181a044969982cf76cafc32adee04c4d42dbdfe12d28630a254b2c8925b3f6a",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-montmartre-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-montmartre-01-content-1280.webp",
+            "width": 1280,
+            "height": 1920,
+            "bytes": 296346,
+            "sha256": "162fa2aa4ba7ea5223712bd81157c721543a0ae87f2da3ba5b4c613476bbb8cf",
+            "quality": 66
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-montmartre-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-montmartre-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 40634,
+            "sha256": "2e5b81fb259cae45fba6da0c55ee8ea970e69910c624bf1a08cfda2204905479",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-sacre-coeur-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-sacre-coeur-01.jpg",
+      "originalSize": [
+        4000,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-sacre-coeur-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-sacre-coeur-01-content-1280.webp",
+            "width": 1280,
+            "height": 1280,
+            "bytes": 184566,
+            "sha256": "f3cbc4f887650ecf0e1dafe97263c1351639f93c0356aff00918281aa6681e4e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-sacre-coeur-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-sacre-coeur-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13954,
+            "sha256": "3ab8e39fa94385ead8e6590870c02eeedcc7a819a2c66701538a386ed06ae7a6",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-bnf-richelieu-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-bnf-richelieu-01.jpg",
+      "originalSize": [
+        4000,
+        2819
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-bnf-richelieu-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-bnf-richelieu-01-content-1280.webp",
+            "width": 1280,
+            "height": 902,
+            "bytes": 261006,
+            "sha256": "d0898d9e129443baffb869038e71d5e4f31167dd18734d87804e33689d8f5eaf",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-bnf-richelieu-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 43522,
+            "sha256": "92654c7dcab3cb5c2e37148e1275fd12a3211e84c4b3c0061fa0f3049b3d98d2",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-passages-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-passages-01.jpg",
+      "originalSize": [
+        4000,
+        2021
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-passages-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-passages-01-content-1280.webp",
+            "width": 1280,
+            "height": 647,
+            "bytes": 168738,
+            "sha256": "73b98d297f76efe94ca2e969c9f9a5f453583bd952708c00672cddffacbbba57",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-passages-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-passages-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34046,
+            "sha256": "d1ba59ca9f00b42cb47f33cae579e37f835feed9b08d22afadf8477d570fe0a5",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-grand-palais-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-grand-palais-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-grand-palais-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-grand-palais-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 121996,
+            "sha256": "08f0c6f72395fc383f5f91a411b45b35af7d4c9fad57421ac6e39735c4bbb8a9",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-grand-palais-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-grand-palais-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 270416,
+            "sha256": "3d8ff3364dc73da5613b4f0588975490931ec14d7f487978210263ba93340db3",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-grand-palais-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-grand-palais-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 436758,
+            "sha256": "a582ab9523ac86773072980376b0fde721513b6fb27981268806e19ccea211ce",
+            "quality": 74
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-grand-palais-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-grand-palais-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 261350,
+            "sha256": "fd73966aea5b8a04536ec2d99cbc8168776b4083fbb1fa6113a27279f3a67a4b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-grand-palais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-grand-palais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 43648,
+            "sha256": "4cbfd3c62462eafc464ca5299e6355b3128544da218f7c4271131639ac20a3d4",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-enfants-rouges-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-enfants-rouges-01.jpg",
+      "originalSize": [
+        2780,
+        1853
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-enfants-rouges-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-enfants-rouges-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 129712,
+            "sha256": "75c412f08a13be42fa91bf3e4886607bdd923b28dbb63fd7924d460f77bee6f4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-enfants-rouges-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-enfants-rouges-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22888,
+            "sha256": "ac0949d33bdbbb4db073dc805fe8ad58a27e8744e505fe485ee0d4d71695ea54",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-versailles-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-versailles-01.jpg",
+      "originalSize": [
+        4000,
+        2098
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-versailles-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-versailles-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 97606,
+            "sha256": "53db4b05434bec2c774562505a54176b9487b480d8f5fe790721b90f9dbba64d",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-versailles-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-versailles-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 244028,
+            "sha256": "2b6e5e4b3ad96509b7f98134bd8dd05c581476cda3930747fee4e68c008fd61b",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-versailles-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-versailles-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 445486,
+            "sha256": "f7413527d899effcf6d49fd927489ec219c8b9af6ea6c8cec1fad00867278be9",
+            "quality": 71
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-versailles-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-versailles-01-content-1280.webp",
+            "width": 1280,
+            "height": 671,
+            "bytes": 211608,
+            "sha256": "96b28066434139ab71c237b5b28e54893920e305d76b39d9ca0b67b10c1db75f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-versailles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-versailles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34900,
+            "sha256": "53ccaec6be03e472c1c5814d4a13122eaf3160cff5bcea97cefbdd43feed8ca4",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-versailles-gardens-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-versailles-gardens-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-versailles-gardens-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-versailles-gardens-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 179928,
+            "sha256": "7c9310ae65d666b24eae742e80ee07d5604a037c44e0c4332aca10b2eb0a86c0",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-versailles-gardens-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-versailles-gardens-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22512,
+            "sha256": "09cf2960478fa12bbde70b333cfbd1eab92b48306e7dfe6c8314908377772220",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-trianon-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-trianon-01.jpg",
+      "originalSize": [
+        3240,
+        2160
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-trianon-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-trianon-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 170438,
+            "sha256": "39be2440a6585dfd5686590fc6c1051e9b576e72fb4b0cc3ef063d2dddaae41f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-trianon-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-trianon-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21176,
+            "sha256": "f91fecf78253522ff7d993afc67eed1ada0fe01913ba35f03b3d191de6508985",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-canal-saint-martin-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-canal-saint-martin-01.jpg",
+      "originalSize": [
+        4000,
+        2608
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-canal-saint-martin-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-canal-saint-martin-01-content-1280.webp",
+            "width": 1280,
+            "height": 835,
+            "bytes": 214716,
+            "sha256": "edf74f0008b455bb272f49872b94c8c3c96b2751769a2e19e689cc4621b936ab",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-canal-saint-martin-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-canal-saint-martin-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31686,
+            "sha256": "cd56e1ac2396f51faf110d74d8e157c3308bdfd794c5f101c94d2984f31c8872",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-orsay-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-orsay-01.jpg",
+      "originalSize": [
+        4000,
+        1160
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-orsay-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-orsay-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 60854,
+            "sha256": "3a5cfeadb551c8eb86f79741cb856d30c2c67ce952fe2e3c7d2c206b78926ddd",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-orsay-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-orsay-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 142286,
+            "sha256": "d26cdc9dc2b1c7bbfc9666c5bfa384f679596682600969ff53caac846650f523",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-orsay-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-orsay-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 285660,
+            "sha256": "5ab5c32ff3187a91c95b21dc0147c65375c51d18c932301eb98d4e0ac71613c6",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-orsay-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-orsay-01-content-1280.webp",
+            "width": 1280,
+            "height": 371,
+            "bytes": 61246,
+            "sha256": "e1a51f9adc76b4c0e19f697d0658071e851f496d7955640825c16d37e3a09d09",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-orsay-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-orsay-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22886,
+            "sha256": "0dae9eeafd497c06c5c41dafeb051d4ab8990e5ad803bdc39f176614579b908e",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-seine-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-seine-01.jpg",
+      "originalSize": [
+        2768,
+        1625
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-seine-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-seine-01-content-1280.webp",
+            "width": 1280,
+            "height": 751,
+            "bytes": 279486,
+            "sha256": "4bde70ca07170c5a708f8280a8fa63e05052a669d934fa836f68ce1505494d2f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-seine-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-seine-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 46660,
+            "sha256": "1def22a0149a6222f2f98ccb86f073fa3b17ba245e3c647267a7965bccbf22a7",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-bourse-commerce-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-bourse-commerce-01.jpg",
+      "originalSize": [
+        4000,
+        2961
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-bourse-commerce-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-bourse-commerce-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 54552,
+            "sha256": "f39b63d14f25df3d441eb2d81b93c8c4d3ed76891b8c9bf99d1cb8f3619bca50",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-bourse-commerce-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-bourse-commerce-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 118536,
+            "sha256": "5a3e93c523dc81546365bd07c7cb74d2f1023609a17d09f624da338af6c521b4",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-bourse-commerce-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-bourse-commerce-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 222202,
+            "sha256": "48233a30879c71d1acfc6f06b0f8feefd9ccdcc2f0c47eb4645d39e44450077d",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-bourse-commerce-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-bourse-commerce-01-content-1280.webp",
+            "width": 1280,
+            "height": 948,
+            "bytes": 151368,
+            "sha256": "f8d180bdaacb88c00bbc77744ff13a15529d3ea0aadb9d30d66ac5e25f7833cd",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-bourse-commerce-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-bourse-commerce-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22302,
+            "sha256": "bf63cd0f3d36663e18ec68f62edbcb50ef253b5381987ae690fdc499208c9047",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-montorgueil-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-montorgueil-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-montorgueil-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-montorgueil-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 236678,
+            "sha256": "180cf2528ab75825ab17a2a1a97fa5a1d7d62e13d4c01962c83ee672d86312da",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-montorgueil-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-montorgueil-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36368,
+            "sha256": "6c5113aab7cba210b16320a84c77d05b28174686d2c8d1bd144a12ed08dacea0",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-giverny-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-giverny-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-giverny-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-giverny-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 167210,
+            "sha256": "55404df34c245d4e788af971057cf7f4a95f4ee6edaec305734f3e2c8389ead6",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-giverny-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-giverny-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 404824,
+            "sha256": "306d1b35a0c0edc734c10aa506f2b1bbdd82baa71e237c3d5a956d3de3714081",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-giverny-01-content-1080.webp",
+            "sitePath": "assets/images/content/paris-giverny-01-content-1080.webp",
+            "width": 1080,
+            "height": 810,
+            "bytes": 293504,
+            "sha256": "e3bb7de3eae69be644303b12762e8221b5b7965657603eb728c748bcb55489b2",
+            "quality": 57
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-giverny-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-giverny-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 61128,
+            "sha256": "771f4a0899d08f3b035912831d0bd4475c87c2954d6ae145230861cfb884a527",
             "quality": 73
           }
         ]
