@@ -11,6 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="fr">
@@ -86,6 +89,24 @@
 <hr>
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>교통장애·수하물·체크아웃</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>도심 추가관광 전부</dd></div><div class="ds-item"><dt>대체안</dt><dd>숙소권 짧은 산책만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>도심 또는 공항 간단식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>항공·공항이동</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
+<section class="daily-map-section" aria-labelledby="daily-map-title-43">
+<h2 id="daily-map-title-43" class="ic ic-map">Google 실행지도</h2>
+<p class="note">귀국 — CDG 19:10 인천행</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="airport" aria-pressed="false">공항</button></nav>
+<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.0068908%2C2.571082&amp;travelmode=transit">오늘 동선 열기</a></div>
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="paris-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="paris-stay-candidate" aria-pressed="false"><strong>0. Pepper &amp; Paper</strong><span>숙소 · 10:00–12:00 체크아웃</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시내 추가관광 없음.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pepper+%26+Paper">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.83966%2C2.34644&amp;travelmode=transit">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="cdg-airport" data-type="airport"><button class="gm-card-main" type="button" data-place-id="cdg-airport" aria-pressed="false"><strong>1. Paris CDG 공항</strong><span>공항 · 14:00 이전 이동 시작</span><small>항공편 19:10 기준 — 실제 항공권·터미널 재확인. 교통장애·보안 여유 확보.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=A%C3%A9roport+Paris-Charles-de-Gaulle">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.0068908%2C2.571082&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+</div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.0068908%2C2.571082&amp;travelmode=transit&amp;origin=48.83966%2C2.34644">Pepper &amp; Paper → Paris CDG 공항 · 대중교통</a></li></ol></details>
+<script type="application/json">{"center":[48.93,2.45],"zoom":11,"places":[{"id":"paris-stay-candidate","name":"Pepper \u0026 Paper","city":"Paris","type":"accommodation","lat":48.83966,"lng":2.34644,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pepper+%26+Paper","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"]},{"id":"cdg-airport","name":"Paris CDG 공항","city":"Paris","type":"airport","lat":49.0068908,"lng":2.571082,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=A%C3%A9roport+Paris-Charles-de-Gaulle","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"}],"day":{"date":"2026-10-10","city":"Paris → Seoul","title":"귀국 — CDG 19:10 인천행","center":[48.93,2.45],"zoom":11,"defaultMode":"transit","stops":[{"placeId":"paris-stay-candidate","order":0,"plannedTime":"10:00–12:00 체크아웃","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시내 추가관광 없음."},{"placeId":"cdg-airport","order":1,"plannedTime":"14:00 이전 이동 시작","note":"항공편 19:10 기준 — 실제 항공권·터미널 재확인. 교통장애·보안 여유 확보."}],"segments":[{"from":"paris-stay-candidate","to":"cdg-airport","mode":"transit"}]}}</script>
+</section>
+</section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
   <a href="../assets/daily-cards/full/day-43-paris.webp" aria-label="Day 43 Daily Action Map 원본 확대">
@@ -115,5 +136,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
