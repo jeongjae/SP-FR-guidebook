@@ -968,6 +968,15 @@ CARD_PLACE_SLUGS = {
     "Croix-Rousse": "croix-rousse",
     "Halles Paul Bocuse": "halles-de-lyon-paul-bocuse",
     "Annecy": "annecy",
+    "Notre-Dame": "notre-dame-de-paris",
+    "Louvre": "musee-du-louvre",
+    "Montmartre": "montmartre",
+    "BnF Richelieu": "bnf-richelieu",
+    "Grand Palais": "grand-palais",
+    "Orsay": "musee-d-orsay",
+    "Bourse de Commerce": "bourse-de-commerce",
+    "Versailles": "versailles",
+    "Giverny": "giverny",
 }
 
 
