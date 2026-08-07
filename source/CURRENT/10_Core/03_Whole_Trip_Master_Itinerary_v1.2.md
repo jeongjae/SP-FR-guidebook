@@ -13,10 +13,10 @@ status: "chapter-derived master itinerary; booking values pending"
 | 1 | 8/29 토 | Barcelona | 도착·생활권 적응 | BCN 도착, 체크인, 첫 장보기 | 숙소 인근 짧은 산책·가벼운 저녁 | 2 | 항공·숙소 |
 | 2 | 8/30 일 | Barcelona | Gaudí와 Catalan Modernisme | Sagrada Família 10:30, Avinguda de Gaudí, Sant Pau | Gràcia 저녁 산책 | 3 | Sagrada·Sant Pau |
 | 3 | 8/31 월 | Barcelona | 책·도시기억·현대미술 | Concepció 시장, Gòtic, Biblioteca de Catalunya, MACBA | Llibreria Finestres·운동 선택 | 3 | 식당·MACBA |
-| 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카, Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | 렌터카·Airbnb 체크인 |
+| 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카 (예약완료·07:00부터 인수 가능), Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | Sitges 점심·Airbnb 체크인 |
 | 5 | 9/2 수 | Bàscara | Collioure와 Cadaqués | Bàscara→Collioure→Cadaqués→Bàscara (해안 쪽 우회) | Portlligat·Dalí House는 예약 미확인으로 제외 | 4 | 주차·국경운전·지도 재확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu와 귀로 마을 | Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara | 지연·악천후 시 Pals 삭제, GI-682 회피 | 4 | 주차·해안도로·운전피로 |
-| 7 | 9/4 금 | Nice | Bàscara→Nice 이동 | Bàscara 체크아웃 후 이동수단·차량 반납지에 따라 실행 | 도착 후 일정은 이동 확정 뒤 조정 | 4~5 | 이동수단·차량반납 |
+| 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN 공항 T1/T2 렌터카 반납 14:00 (확정), 항공으로 Nice | 도착 후 일정은 항공 확정 뒤 조정 | 4~5 | BCN→NCE 항공 예매·Nice 숙소 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
 | 10 | 9/7 월 | Nice | Monaco 도시국가 | Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo | Japanese Garden 또는 Larvotto 택1 | 4 | TER |
