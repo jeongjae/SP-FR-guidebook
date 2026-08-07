@@ -1151,3 +1151,349 @@
 - Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
 - Used in:
   - `/daily/day-27.html`
+
+## 파리 전경
+
+<a id="paris-city-01"></a>
+
+- Image ID: `paris-city-01`
+- Place ID: `paris`
+- Photo: Amaya & Laurent
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_as_seen_from_the_Tour_Montparnasse,_11_May_2014.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/3/3f/Paris_as_seen_from_the_Tour_Montparnasse%2C_11_May_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-28.html`
+
+## 노트르담 대성당
+
+<a id="paris-notre-dame-01"></a>
+
+- Image ID: `paris-notre-dame-01`
+- Place ID: `notre-dame-de-paris`
+- Photo: P e z i
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/a/af/Notre-Dame_de_Paris_2013-07-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-29.html`
+  - `/places/notre-dame-de-paris.html`
+
+## 무프타르 거리
+
+<a id="paris-latin-quarter-01"></a>
+
+- Image ID: `paris-latin-quarter-01`
+- Place ID: `latin-quarter`
+- Photo: Matt Casagrande from Somerville, MA
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rue_Mouffetard,_Paris_24_Mai_2014.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/6/6e/Rue_Mouffetard%2C_Paris_24_Mai_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-29.html`
+  - `/places/latin-quarter.html`
+
+## 팡테옹
+
+<a id="paris-pantheon-01"></a>
+
+- Image ID: `paris-pantheon-01`
+- Place ID: `pantheon-paris`
+- Photo: Nick Loyless from Dallas, TX, United States
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Facade_of_the_Panth%C3%A9on_de_Paris,_3_May_2012.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/9/90/Facade_of_the_Panth%C3%A9on_de_Paris%2C_3_May_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-29.html`
+
+## 마레 지구
+
+<a id="paris-marais-01"></a>
+
+- Image ID: `paris-marais-01`
+- Place ID: `le-marais`
+- Photo: Guilhem Vellut from Paris, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jewish_quarter,_rue_des_Rosiers,_Le_Marais,_Paris_2016.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/f/fd/Jewish_quarter%2C_rue_des_Rosiers%2C_Le_Marais%2C_Paris_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-30.html`
+  - `/places/le-marais.html`
+
+## 뤽상부르 공원
+
+<a id="paris-luxembourg-01"></a>
+
+- Image ID: `paris-luxembourg-01`
+- Place ID: `jardin-du-luxembourg`
+- Photo: JLPC
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_Palais_du_Luxembourg_fa%C3%A7ade_s_printemps_2014.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/d/df/Paris_Palais_du_Luxembourg_fa%C3%A7ade_s_printemps_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-30.html`
+
+## 몽주 시장
+
+<a id="paris-marche-monge-01"></a>
+
+- Image ID: `paris-marche-monge-01`
+- Place ID: `marche-monge`
+- Photo: yisris from Morioka, Japan
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:March%C3%A9_Monge,_Paris_30_March_2008.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/f/f2/March%C3%A9_Monge%2C_Paris_30_March_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-30.html`
+
+## 루브르 박물관
+
+<a id="paris-louvre-01"></a>
+
+- Image ID: `paris-louvre-01`
+- Place ID: `musee-du-louvre`
+- Photo: King of Hearts
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Louvre_Cour_Carr%C3%A9e_June_2010.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/1/11/Louvre_Cour_Carr%C3%A9e_June_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-31.html`
+  - `/places/musee-du-louvre.html`
+
+## 팔레 루아얄
+
+<a id="paris-palais-royal-01"></a>
+
+- Image ID: `paris-palais-royal-01`
+- Place ID: `palais-royal`
+- Photo: GFreihalter
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_Palais_Royal_Jardin_184.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/7/79/Paris_Palais_Royal_Jardin_184.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-31.html`
+
+## 몽마르트르
+
+<a id="paris-montmartre-01"></a>
+
+- Image ID: `paris-montmartre-01`
+- Place ID: `montmartre`
+- Photo: Maria Eklind
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_75018_Rue_Foyatier_20161030_-_1300_handrails.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/d/d7/Paris_75018_Rue_Foyatier_20161030_-_1300_handrails.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-32.html`
+
+## 사크레쾨르 대성당
+
+<a id="paris-sacre-coeur-01"></a>
+
+- Image ID: `paris-sacre-coeur-01`
+- Place ID: `sacre-coeur`
+- Photo: Terragio67
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre_-_Paris_-_GT-01_-_2024.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/3/3f/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre_-_Paris_-_GT-01_-_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-32.html`
+
+## 프랑스 국립도서관 리슐리외
+
+<a id="paris-bnf-richelieu-01"></a>
+
+- Image ID: `paris-bnf-richelieu-01`
+- Place ID: `bnf-richelieu`
+- Photo: Jean-Pierre Dalbéra
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:La_salle_ovale_du_site_Richelieu,_Biblioth%C3%A8que_nationale_de_France,_Paris_2022.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/4/44/La_salle_ovale_du_site_Richelieu%2C_Biblioth%C3%A8que_nationale_de_France%2C_Paris_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-33.html`
+  - `/places/bnf-richelieu.html`
+
+## 파리 아케이드
+
+<a id="paris-passages-01"></a>
+
+- Image ID: `paris-passages-01`
+- Place ID: `passages-couverts`
+- Photo: Benh LIEU SONG
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Galerie_Vivienne,_12_March_2015.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/6/6a/Galerie_Vivienne%2C_12_March_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-33.html`
+
+## 그랑 팔레
+
+<a id="paris-grand-palais-01"></a>
+
+- Image ID: `paris-grand-palais-01`
+- Place ID: `grand-palais`
+- Photo: Thesupermat
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grand_Palais_-_PA00088877_-_Bonhams_2013_-_Vue_d%27ensemble_-_007.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/b/b2/Grand_Palais_-_PA00088877_-_Bonhams_2013_-_Vue_d%27ensemble_-_007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-34.html`
+  - `/places/grand-palais.html`
+
+## 앙팡 루주 시장
+
+<a id="paris-enfants-rouges-01"></a>
+
+- Image ID: `paris-enfants-rouges-01`
+- Place ID: `marche-des-enfants-rouges`
+- Photo: besopha
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:March%C3%A9_des_Enfants-Rouges,_Paris_May_2016.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/2/2e/March%C3%A9_des_Enfants-Rouges%2C_Paris_May_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-35.html`
+
+## 베르사유 궁전
+
+<a id="paris-versailles-01"></a>
+
+- Image ID: `paris-versailles-01`
+- Place ID: `versailles`
+- Photo: Basile Morin
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Parterre_du_Midi_Garden_pond_and_Palace_of_Versailles_at_golden_hour_with_blue_sky_in_France.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/8/8a/Parterre_du_Midi_Garden_pond_and_Palace_of_Versailles_at_golden_hour_with_blue_sky_in_France.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-36.html`
+  - `/places/versailles.html`
+
+## 베르사유 정원
+
+<a id="paris-versailles-gardens-01"></a>
+
+- Image ID: `paris-versailles-gardens-01`
+- Place ID: `versailles-gardens`
+- Photo: ToucanWings
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_113.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/0/02/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-36.html`
+
+## 트리아농
+
+<a id="paris-trianon-01"></a>
+
+- Image ID: `paris-trianon-01`
+- Place ID: `trianon`
+- Photo: Jean-Pierre Dalbéra from Paris, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Petit_Trianon,_Versailles,_29_September_2012.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/0/0e/Petit_Trianon%2C_Versailles%2C_29_September_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-36.html`
+
+## 생마르탱 운하
+
+<a id="paris-canal-saint-martin-01"></a>
+
+- Image ID: `paris-canal-saint-martin-01`
+- Place ID: `canal-saint-martin`
+- Photo: JLPC
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_Canal_St-Martin_%C3%A9cluses_R%C3%A9collets_2013.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/d/d2/Paris_Canal_St-Martin_%C3%A9cluses_R%C3%A9collets_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-37.html`
+
+## 오르세 미술관
+
+<a id="paris-orsay-01"></a>
+
+- Image ID: `paris-orsay-01`
+- Place ID: `musee-d-orsay`
+- Photo: DXR
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Musee_d%27Orsay_and_Pont_Royal,_North-West_view_140402_1.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/0/0c/Musee_d%27Orsay_and_Pont_Royal%2C_North-West_view_140402_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-39.html`
+  - `/places/musee-d-orsay.html`
+
+## 센강변
+
+<a id="paris-seine-01"></a>
+
+- Image ID: `paris-seine-01`
+- Place ID: `seine`
+- Photo: Ninara from Helsinki, Finland
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_75006_Quai_de_Conti_Bouquinistes_20150902.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/8/82/Paris_75006_Quai_de_Conti_Bouquinistes_20150902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-39.html`
+
+## 부르스 드 코메르스
+
+<a id="paris-bourse-commerce-01"></a>
+
+- Image ID: `paris-bourse-commerce-01`
+- Place ID: `bourse-de-commerce`
+- Photo: Chabe01
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bourse_Commerce_-_Paris_I_(FR75)_-_2021-06-05_-_1.jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/a/a0/Bourse_Commerce_-_Paris_I_%28FR75%29_-_2021-06-05_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-40.html`
+
+## 몽토르게유 거리
+
+<a id="paris-montorgueil-01"></a>
+
+- Image ID: `paris-montorgueil-01`
+- Place ID: `montorgueil`
+- Photo: Jean-Christophe BENOIST
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paris_-_Rue_Montorgueil.JPG)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/c/c8/Paris_-_Rue_Montorgueil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
+- Used in:
+  - `/daily/day-40.html`
+  - `/places/montorgueil.html`
+
+## 지베르니
+
+<a id="paris-giverny-01"></a>
+
+- Image ID: `paris-giverny-01`
+- Place ID: `giverny`
+- Photo: Jean-Pierre Dalbéra from Paris, France
+- Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Le_jardin_d%27eau_de_Claude_Monet_(Giverny)_(48751405171).jpg)
+- Original: [원본 파일](https://upload.wikimedia.org/wikipedia/commons/8/8e/Le_jardin_d%27eau_de_Claude_Monet_%28Giverny%29_%2848751405171%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original)
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+- Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
+- Used in:
+  - `/daily/day-41.html`
+  - `/places/giverny.html`
