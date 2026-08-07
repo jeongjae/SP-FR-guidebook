@@ -11,6 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="fr">
@@ -86,6 +89,24 @@
 <hr>
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>보상심리로 일정 추가</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>공원 산책</dd></div><div class="ds-item"><dt>대체안</dt><dd>숙소만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>브런치·숙소식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>없음</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
+<section class="daily-map-section" aria-labelledby="daily-map-title-38">
+<h2 id="daily-map-title-38" class="ic ic-map">Google 실행지도</h2>
+<p class="note">회복일 — 세탁·장보기·완전 휴식</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button></nav>
+
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="paris-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="paris-stay-candidate" aria-pressed="false"><strong>0. Pepper &amp; Paper</strong><span>숙소 · 종일 생활권</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 공연·박물관 금지 — 원고 지침.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pepper+%26+Paper">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.83966%2C2.34644&amp;travelmode=walking">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li></ol>
+</div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol></ol></details>
+<script type="application/json">{"center":[48.846,2.34],"zoom":15,"places":[{"id":"paris-stay-candidate","name":"Pepper \u0026 Paper","city":"Paris","type":"accommodation","lat":48.83966,"lng":2.34644,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pepper+%26+Paper","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-10-05","city":"Paris","title":"회복일 — 세탁·장보기·완전 휴식","center":[48.846,2.34],"zoom":15,"defaultMode":"walking","stops":[{"placeId":"paris-stay-candidate","order":0,"plannedTime":"종일 생활권","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 공연·박물관 금지 — 원고 지침."}],"segments":[]}}</script>
+</section>
+</section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
   <a href="../assets/daily-cards/full/day-38-paris.webp" aria-label="Day 38 Daily Action Map 원본 확대">
@@ -115,5 +136,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
