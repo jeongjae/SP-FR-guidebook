@@ -3,72 +3,157 @@
   "day": 42,
   "date": "2026-10-09",
   "city": "Paris",
-  "title": "마지막 자유선택·짐정리",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Hamlet — 마지막 대형 문화행사",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "3",
+  "totalDistance": "약 1km · 도보 + 메트로/택시",
+  "fatigue": "4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "morning-pack",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "마지막 운동",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "마지막 운동",
+      "start": "09:30",
+      "end": "12:00",
+      "name": "늦은 기상·짐 70% 포장",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "냉장고 정리, 액체·깨지기 쉬운 물품 분리 — 정식운동 없음",
       "menu": null,
-      "reservation": "식당",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "flv",
+      "id": "neighborhood",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "FLV 또는 미완료 일정",
+      "start": "14:00",
+      "end": "17:00",
+      "name": "숙소권 동네산책·카페·공항동선 확인",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "FLV 또는 미완료 일정",
+      "lat": 48.8399,
+      "lng": 2.3455,
+      "summary": "새 박물관·쇼핑권 추가 금지, 16:00 여권·티켓·수하물 확인",
       "menu": null,
-      "reservation": "식당",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "early-dinner",
+      "order": 3,
+      "start": "17:30",
+      "end": "18:30",
+      "name": "Bastille 부근 이른 저녁",
+      "category": "food",
+      "lat": 48.8525,
+      "lng": 2.369,
+      "summary": "송별 식사는 이 시간으로",
+      "menu": "가볍게",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "hamlet",
+      "order": 4,
+      "start": "19:30",
+      "end": "23:10",
+      "name": "Hamlet · Opéra Bastille",
+      "category": "culture",
+      "lat": 48.8515018,
+      "lng": 2.3707417,
+      "summary": "18:30–18:45 도착 — 3시간 40분·1회 인터미션",
+      "menu": null,
+      "reservation": "티켓 예매 잠금 (€28–155, 8/5 확인)",
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "23:30",
+      "end": null,
+      "name": "직접 귀환",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "야간산책·추가 술자리 없음 — 내일 출국",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "morning-pack",
+      "to": "neighborhood",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "neighborhood",
+      "to": "early-dinner",
+      "mode": "metro",
+      "duration": "20분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "early-dinner",
+      "to": "hamlet",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "hamlet",
+      "to": "paris-return",
+      "mode": "taxi",
+      "duration": "20분",
+      "distance": null,
+      "line": "택시 권장 (심야)",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "식당"
+    "메트로·택시"
   ],
   "food": [
-    "송별저녁"
+    "숙소 점심 (남은 재료)",
+    "17:30 이른 저녁"
   ],
   "highlights": [
-    "마지막 운동, FLV 또는 미완료 일정",
-    "선택·축소: 송별저녁·최종포장"
+    "짐 70%는 낮에 끝낸다",
+    "Jazz sur Seine 등 같은 저녁 추가 금지",
+    "공연 후 바로 귀환"
   ],
-  "backup": "숙소·근처 산책",
-  "map": null,
+  "backup": "공연 불발 시(10/6 백업 사용) 저녁은 자유·최종 포장",
+  "map": {
+    "zoom": 14,
+    "center": [
+      48.847,
+      2.357
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Hamlet 10/9 티켓 예매",
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일"
   ]
 }
