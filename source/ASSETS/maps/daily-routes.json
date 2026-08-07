@@ -1594,6 +1594,176 @@
         }
       ],
       "segments": []
+    },
+    {
+      "date": "2026-10-03",
+      "city": "Paris",
+      "title": "유동일 — 오후 한 권역만 (BnF Richelieu 등 택1)",
+      "center": [
+        48.85,
+        2.34
+      ],
+      "zoom": 14,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "오전 생활권",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 다음 날 이른 이동 대비."
+        },
+        {
+          "placeId": "bnf-richelieu",
+          "order": 1,
+          "plannedTime": "14:00–17:00 택1",
+          "note": "선택 — 박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나만. 3시간 상한."
+        }
+      ],
+      "segments": []
+    },
+    {
+      "date": "2026-10-04",
+      "city": "Paris",
+      "title": "Qatar Prix de l'Arc de Triomphe — ParisLongchamp",
+      "center": [
+        48.858,
+        2.233
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "09:00 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 티켓·교통 최종 확인 후 역산 이동."
+        },
+        {
+          "placeId": "hippodrome-parislongchamp",
+          "order": 1,
+          "plannedTime": "오전–오후 종일",
+          "note": "메인 레이스 데이 — 경기장 식사·휴식 포함. 종료 후 혼잡 감안 귀환, 추가 일정 금지."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "hippodrome-parislongchamp",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "city": "Paris",
+      "title": "회복일 — 세탁·장보기·완전 휴식",
+      "center": [
+        48.846,
+        2.34
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "종일 생활권",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 공연·박물관 금지 — 원고 지침."
+        }
+      ],
+      "segments": []
+    },
+    {
+      "date": "2026-10-06",
+      "city": "Paris",
+      "title": "Canal Saint-Martin과 Belleville",
+      "center": [
+        48.87,
+        2.376
+      ],
+      "zoom": 14,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "canal-saint-martin",
+          "order": 1,
+          "plannedTime": "10:30–12:30",
+          "note": "물가 산책·카페."
+        },
+        {
+          "placeId": "parc-de-belleville",
+          "order": 2,
+          "plannedTime": "14:00–17:00",
+          "note": "Belleville 또는 한 동네 경로 — 공원·거리·서점 중심."
+        },
+        {
+          "placeId": "opera-bastille",
+          "order": 3,
+          "plannedTime": "백업 19:30",
+          "note": "선택 — 10/9 Hamlet 표가 없을 때만 이날 관람으로 대체."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "canal-saint-martin",
+          "mode": "transit"
+        },
+        {
+          "from": "canal-saint-martin",
+          "to": "parc-de-belleville",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "city": "Paris",
+      "title": "Montmartre 수확축제 — Clos Montmartre",
+      "center": [
+        48.886,
+        2.34
+      ],
+      "zoom": 15,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:30 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 당일 취소·예약제 행사 대조."
+        },
+        {
+          "placeId": "clos-montmartre",
+          "order": 1,
+          "plannedTime": "11:30–13:00",
+          "note": "외관·북사면 골목 기본 동선. 내부는 표 확보 시에만 (9/14 예약 개시)."
+        },
+        {
+          "placeId": "place-des-abbesses",
+          "order": 2,
+          "plannedTime": "17:30–19:00 하산",
+          "note": "군중이 커지기 전에 종료."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "clos-montmartre",
+          "mode": "transit"
+        },
+        {
+          "from": "clos-montmartre",
+          "to": "place-des-abbesses",
+          "mode": "walking"
+        }
+      ]
     }
   ]
 }
