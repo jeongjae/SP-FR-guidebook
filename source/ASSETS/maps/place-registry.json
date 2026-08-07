@@ -1808,6 +1808,54 @@
       "optional": false,
       "status": "planned",
       "coordinatesVerified": "OSM Nominatim, 2026-08-07"
+    },
+    {
+      "id": "place-du-trocadero",
+      "name": "Place du Trocadéro",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8617742,
+      "lng": 2.2880925,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Place+du+Trocad%C3%A9ro%2C+Paris",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "coordinatesVerified": "OSM Nominatim, 2026-08-07"
+    },
+    {
+      "id": "palais-de-chaillot",
+      "name": "Palais de Chaillot",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8628893,
+      "lng": 2.2890401,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Palais+de+Chaillot%2C+Paris",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "coordinatesVerified": "OSM Nominatim, 2026-08-07"
+    },
+    {
+      "id": "cdg-airport",
+      "name": "Paris CDG 공항",
+      "city": "Paris",
+      "type": "airport",
+      "lat": 49.0068908,
+      "lng": 2.571082,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=A%C3%A9roport+Paris-Charles-de-Gaulle",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "coordinatesVerified": "OSM Nominatim, 2026-08-07"
     }
   ]
 }
