@@ -20,7 +20,7 @@ status: "active"
 | France 렌터카 | 9/9 NCE T2 인수, 9/20 Avignon TGV 반납 | Nice~Avignon | 기존 예약 날짜 변경 필요 |
 | TGV | Avignon→Lyon, Lyon→Paris | Avignon·Lyon·Paris | 예약값 대기 |
 | 숙소 | 8개 거점 주소·객실·총액·취소기한·체크인 | 전 챕터 | 후보단계 |
-| 핵심 티켓 | Sagrada, Palais des Papes, Louvre, Orsay, Grand Palais | 해당 챕터 | 판매창 확인 |
+| 핵심 티켓 | Sagrada, Palais des Papes, Il Barbiere(10/1), Arc de Triomphe 경마(10/4), Hamlet(10/9) | 해당 챕터 | 판매창 확인 |
 
 ## 3. 지역별 P1
 

@@ -1,6 +1,6 @@
 # 100. Whole Trip 43-Day Execution Audit v1.0
 
-**기준일:** 2026-08-03
+**기준일:** 2026-08-07 (파리 구간 Day 29–42 를 현행 Master Itinerary 기준으로 재감사)
 **범위:** Day 1–43 전체  
 **근거:** 최신 Master Itinerary 및 8개 authoritative 지역 챕터  
 **주의:** 실제 예약값·숙소주소·열차시각·주차장은 Phase 8에서 잠근다.
@@ -47,20 +47,20 @@
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | 08:00 전후 역 이동 | TER 20분 전 도착 | Annecy 구시가지 | 철도지연·날씨·시장 없음 | 크루즈 | Lyon 생활일로 전환 | TER·크루즈 |
 | 27 | 9/24 목 | Paris | TGV→16박 체크인 | 열차 기준 역산 | Gare de Lyon→숙소 택시·체크인 2시간 | 숙소권 간단식 | 대형수하물·체크인 | 외부관광 전부 | 짐정리·최소 장보기만 | TGV·숙소 변경 |
 | 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 늦은 시작 | 세탁·휴식 3시간 보호 | 숙소식·동네 카페 | 새 하루를 관광으로 과밀화 | 장거리 산책 | 슈퍼·빵집·약국 확인만 | 없음 |
-| 29 | 9/26 토 | Paris | Latin Quarter·Notre-Dame | 09:00 전후 | Notre-Dame 예약 30분 전 | Latin Quarter | 주말혼잡·보행 | Panthéon 내부 | Notre-Dame+카페 | Notre-Dame |
-| 30 | 9/27 일 | Paris | 일요일 생활·Marais | 느린 시작 | 공연 시 오후 2시간 보호 | 시장·Marais | 일요일 혼잡·공연조건 | Marais 일부 | 공원·시장 중심 | 공연 조건부 |
-| 31 | 9/28 월 | Paris | Louvre 선택관람 | 예약 60분 전 출발 | 관람 3.5시간 상한 | 관람 전 가벼운 점심 | 박물관 피로·월요일 | Palais Royal | Louvre 핵심섹션만 | Louvre |
-| 32 | 9/29 화 | Paris | Montmartre→South Pigalle | 09:00 북사면 접근 | 오후 60분 휴식 | Abbesses/9구 | 언덕·축구조건 | 9구 산책 | Montmartre 핵심만 | 식당·축구 |
-| 33 | 9/30 수 | Paris | BnF·Passages·Philharmonie | 10:00 전후 | 공연 전 2시간 휴식·식사 | Passages/숙소권 | 낮+야간 복합일 | passages 일부 | BnF 축소·공연 유지 | Philharmonie |
-| 34 | 10/1 목 | Paris | Grand Palais Cézanne | 오후 예약 기준 | 공연 선택 시 2시간 보호 | 전시 전후 가벼운 식사 | 전시+공연 과밀 | 오페라/발레 | 전시만 유지 | 전시·공연 |
-| 35 | 10/2 금 | Paris | Marais 생활·선택문화 | 09:30 전후 | 선택시설 1곳만 | Enfants Rouges | 금요일 혼잡·야간행사 | 공연 | 시장·카페 중심 | 공연 조건부 |
-| 36 | 10/3 토 | Paris | Versailles 옵션 | 07:30–08:00 출발 | 입장 45분 전·귀환 후 휴식 | 현지 조기점심 | 주말혼잡·장거리보행 | Trianon/정원 일부 | 15구 생활일 | Versailles |
-| 37 | 10/4 일 | Paris | 완충·무계획 | 알람 최소화 | 완전 회복일 | 숙소식 | 보상심리로 일정 추가 | 모든 선택일정 | 숙소·공원 | 없음 |
-| 38 | 10/5 월 | Paris | 생활모듈·세탁 | 느린 시작 | 세탁 2시간 보호 | 동네식 | 휴관일·생활업무 | 동부/남부 중 하나 | 숙소권 생활 | 없음 |
-| 39 | 10/6 화 | Paris | Orsay·조건부 UCL | 예약 60분 전 출발 | 경기 시 오후 3시간 휴식 | Orsay 전 가벼운 식사 | 박물관+경기 과밀 | UCL 또는 추가관람 | Orsay 핵심만 | Orsay·축구 |
-| 40 | 10/7 수 | Paris | Bourse·Montorgueil·저녁행사 | 10:00 전후 | 저녁행사 시 2시간 보호 | Montorgueil | 개막일 혼잡·복수행사 | 저녁행사 중 하나만 | Bourse 단축·행사 1개 | 전시·공연 |
-| 41 | 10/8 목 | Paris | Giverny 옵션 | 07:30 전후 | 교통 연결 30분 여유 | Giverny | 계절운영·날씨·철도 | 정원 일부 | Orangerie·Tuileries | Giverny |
-| 42 | 10/9 금 | Paris | 미완료 회수·짐정리 | 느린 시작 | 오전 포장 70% 보호 | 송별저녁 | 마지막날 과밀 | FLV/미완료 중 하나 | 숙소·근처 산책 | 식당 |
+| 29 | 9/26 토 | Paris | 첫 파리 생활일 — Saint-Germain·Luxembourg·Seine | 늦은 시작 | 무예약·시간압박 없음 | Saint-Germain 카페 | 주말 혼잡·보행 과다 | Seine 산책 | 숙소권·공원 중심 | 없음 |
+| 30 | 9/27 일 | Paris | Tuileries·Palais Royal·Opéra 지구 | 09:30 전후 | Garnier 낮 관람은 조건 확인 후만 | Opéra 지구 | 일요일 혼잡·Garnier 조건 | Garnier 내부 | 외관·정원 중심 | Garnier 조건부 |
+| 31 | 9/28 월 | Paris | 로컬 라이프·Fashion Week 개막 | 느린 시작 | 세탁·운동 시간 보호 | 동네식 | 월요일 휴관·일정 과밀화 | 쇼핑 | 주거지 산책만 | 없음 |
+| 32 | 9/29 화 | Paris | Orsay 또는 Orangerie 한 곳 | 예약 60분 전 출발 | 관람 3.5시간 상한·저녁 비움 | 관람 전 가벼운 식사 | 시간지정·박물관 피로 | 추가 관람 | 핵심 섹션만 | 미술관 시간지정 |
+| 33 | 9/30 수 | Paris | Fashion Week 공개동선 반일 — Palais de Tokyo→Montaigne→Saint-Honoré→Palais Royal | 여유로운 오전 | 공식 확인된 공개 팝업만 | 동선 중 카페 | 비공개 행사 오인·혼잡 | 동선 후반부 | Palais Royal 일대만 | 공개행사 재확인 |
+| 34 | 10/1 목 | Paris | Il Barbiere di Siviglia 19:30 (약 22:45 종료) | 공연 기준 역산 | 17:30 이른 저녁·공연 전 휴식 | 이른 저녁 필수 | 늦은 종료·다음날 피로 | 낮 Vosges·Bastille 산책 | 낮 일정 전부 축소 | Paris Opera P0 |
+| 35 | 10/2 금 | Paris | 회복·로컬 라이프 | 늦은 시작 | 고정행사 없음 | 시장·카페 | 보상심리 과밀화 | 모든 선택일정 | 숙소권 중심 | 없음 |
+| 36 | 10/3 토 | Paris | 유연한 문화일 — 박물관·서점·동네 중 하나 | 09:30 전후 | 시설 하나만 선택 | 동네식 | 주말 혼잡 | 선택시설 | 동네 산책 | 선택시설만 |
+| 37 | 10/4 일 | Paris | Qatar Prix de l'Arc 메인 레이스 — ParisLongchamp | 근전일 기준 역산 | 귀환 혼잡 대비·저녁 비움 | 경마장 내 간단식 | 대규모 인파·귀환 교통 | 부대행사 | 메인 레이스만 관전 | France Galop P0 |
+| 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 아침 | 무예약 | 장보기·카페 | 전일 피로·월요일 휴관 | 공원 | 숙소권 생활 | 없음 |
+| 39 | 10/6 화 | Paris | 동부 파리 생활일 — Canal Saint-Martin·Belleville | 10:00 전후 | Hamlet 백업 발동 시 저녁 보호 | 운하변 카페 | 백업 공연 조건 | Belleville | 한 동네만 | Hamlet 백업 |
+| 40 | 10/7 수 | Paris | Vendanges de Montmartre 낮 축제 | 10:00 전후 | 이른 귀가·추가 공연 없음 | 축제 마켓 | 축제 혼잡·언덕 보행 | 골목 산책 | Clos 외관·마켓만 | 포도밭 일정 감시 |
+| 41 | 10/8 목 | Paris | Trocadéro·Chaillot — Este Mundo 20:30 선택 | 가벼운 오전 | 공연 선택 시 저녁 보호 | Chaillot 일대 | 선택공연 조건 | Este Mundo | 낮 일정만 | Festival 선택 |
+| 42 | 10/9 금 | Paris | Hamlet 19:30 — 마지막 대형 문화행사 | 공연 기준 역산 | 이른 저녁·오전 짐정리 시작 | 이른 저녁 필수 | 마지막 공연일 과밀·짐 부담 | 동네 산책 | 낮 일정 최소화 | Paris Opera P0 |
 | 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·19:10 출국 | 호텔 기준 14:00 전후 출발 권장 | 공항 3시간 전 도착 | 도심 또는 공항 간단식 | 교통장애·수하물·체크아웃 | 도심 추가관광 전부 | 숙소권 짧은 산책만 | 항공·공항이동 |
 
 ## 3. 위험도 분류
@@ -81,7 +81,7 @@
 - Day 22 Pont du Gard: 폭우·홍수주의
 - Day 22 Arles: JEP 혼잡·시설별 운영 변동
 - Day 26 Annecy: 철도와 호수날씨
-- Day 36 Versailles, Day 41 Giverny: 날씨·계절운영·교통
+- Day 37 Prix de l'Arc, Day 40 Vendanges de Montmartre: 야외 행사·날씨·인파
 
 ### C. 과밀화 방지가 필요한 복합일
 
@@ -89,10 +89,10 @@
 - Day 6 Tossa de Mar + Sant Feliu + Pals + Peratallada (지연 시 Pals 삭제)
 - Day 12 Saint-Paul + Grasse + Aix 체크인
 - Day 19 농가 체크아웃 + Avignon 체크인
-- Day 33 BnF + Philharmonie
-- Day 34 Grand Palais + 공연
-- Day 39 Orsay + UCL 조건부
-- Day 40 Bourse + 저녁행사
+- Day 33 Fashion Week 공개동선 반일 (공식 확인된 공개 행사만)
+- Day 34 낮 산책 + Il Barbiere 야간 공연
+- Day 37 ParisLongchamp 왕복 + 대규모 인파
+- Day 42 짐정리 + Hamlet 야간 공연
 
 ## 4. 전 여행 운영규칙
 
@@ -111,6 +111,7 @@
 - 교정 후 구조적으로 실행 불가능한 날짜는 발견되지 않았다.
 - 실제 예약값이 없는 일정은 Operational Complete가 아니며 Phase 8 잠금이 필요하다.
 - P0 6일과 날씨의존 일정은 출발 전 재검증 우선순위로 지정한다.
+- 2026-08-07: 파리 재편(3개 고정 P0 행사) 반영해 Day 29–42 를 재감사했다. 구조적 실행 불가 없음.
 
 ## 6. 2026-08-03 공식 운영 검증
 
@@ -120,4 +121,4 @@
 - [MACBA](https://www.macba.cat/en/plan-your-visit/): 월요일 운영, 화요일 휴관. Day 3의 8월 31일 월요일 일정은 유지 가능.
 - [Museus de Sitges](https://museusdesitges.cat/en/schedule): 4–10월 화–일 10:00–19:00, 월요일 휴관. Day 4의 9월 1일 화요일 일정은 유지 가능.
 - [Collioure 공식 관광청](https://www.collioure.com/a-voir-a-faire/les-marches): 전통시장은 수·일 오전. Day 5의 9월 2일 수요일 일정은 유지 가능.
-- [Grand Palais — Cézanne et nous](https://www.grandpalais.fr/en/program/cezanne-et-nous): 2026년 9월 23일–2027년 1월 17일. Day 34의 10월 1일 관람 가능 기간과 일치.
+- [Grand Palais — Cézanne et nous](https://www.grandpalais.fr/en/program/cezanne-et-nous): 2026년 9월 23일–2027년 1월 17일. 현 일정에는 고정 배정 없음 — Day 36 유연한 문화일의 선택지로만 남긴다.
