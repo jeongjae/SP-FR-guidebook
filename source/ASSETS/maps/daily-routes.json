@@ -1430,6 +1430,170 @@
           "mode": "walking"
         }
       ]
+    },
+    {
+      "date": "2026-09-28",
+      "city": "Paris",
+      "title": "생활일 — 세탁·북마레 또는 숙소권 산책",
+      "center": [
+        48.846,
+        2.34
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "종일 생활권",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 새 명소 추가 금지 — 원고 지침."
+        }
+      ],
+      "segments": []
+    },
+    {
+      "date": "2026-09-29",
+      "city": "Paris",
+      "title": "Musée d'Orsay — 시간지정권 오후 관람",
+      "center": [
+        48.86,
+        2.326
+      ],
+      "zoom": 15,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "13:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "musee-d-orsay",
+          "order": 1,
+          "plannedTime": "13:30–17:00",
+          "note": "시간지정권 · 3시간 30분 상한. Orangerie와 택일."
+        },
+        {
+          "placeId": "musee-de-l-orangerie",
+          "order": 2,
+          "plannedTime": "택일 대안",
+          "note": "선택 — Orsay 대신 갈 경우만."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "musee-d-orsay",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "city": "Paris",
+      "title": "Palais de Tokyo 권역과 Saint-Honoré 축",
+      "center": [
+        48.864,
+        2.315
+      ],
+      "zoom": 14,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "12:30 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "palais-de-tokyo",
+          "order": 1,
+          "plannedTime": "13:00–14:00",
+          "note": "건축·공공공간. 전시는 공식 확인된 경우에만."
+        },
+        {
+          "placeId": "palais-royal",
+          "order": 2,
+          "plannedTime": "17:00–18:00",
+          "note": "회랑·정원 마무리 · 스케치·카페."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "palais-de-tokyo",
+          "mode": "transit"
+        },
+        {
+          "from": "palais-de-tokyo",
+          "to": "palais-royal",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "city": "Paris",
+      "title": "Vosges·Bastille 산책과 Il Barbiere di Siviglia",
+      "center": [
+        48.853,
+        2.368
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "13:40 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "place-des-vosges",
+          "order": 1,
+          "plannedTime": "14:00–16:30",
+          "note": "정원·골목 — 체력에 맞춰 축소."
+        },
+        {
+          "placeId": "opera-bastille",
+          "order": 2,
+          "plannedTime": "18:30 도착 · 19:30 공연",
+          "note": "Il Barbiere di Siviglia · 1회 인터미션 · 약 22:45 종료 후 바로 귀환."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "place-des-vosges",
+          "mode": "transit"
+        },
+        {
+          "from": "place-des-vosges",
+          "to": "opera-bastille",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "city": "Paris",
+      "title": "생활일 — 숙소권 시장·서점·회복",
+      "center": [
+        48.846,
+        2.34
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "종일 생활권",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시장·독립서점·카페 — 고정 행사 없음."
+        }
+      ],
+      "segments": []
     }
   ]
 }
