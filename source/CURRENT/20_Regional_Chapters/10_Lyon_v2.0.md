@@ -659,7 +659,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 이
 |---|---|---|
 | 07:15–08:00 | Jason 선택 러닝 | Rhône 강변 5–7km. 전날 무릎피로가 있으면 생략 |
 | 08:00–09:00 | 숙소 아침·샤워 | 시장에서 간식·과일 구매 예정 |
-| 09:20–10:10 | **Croix-Rousse 시장** | 수요일 식품시장 06:00–13:00. 과일·치즈·빵 소량 구매 |
+| 09:20–10:10 | **Croix-Rousse 시장** | 화·금·토·일 식품시장 06:00–13:30 (lyon.fr 기준) {{badge:pending|현행 확인}}. 과일·치즈·빵 소량 구매 |
 | 10:15–12:00 | **Croix-Rousse 평지와 slopes** | Place de la Croix-Rousse→Maison des Canuts 외관→Mur des Canuts 선택→경사면 traboule |
 | 12:00–12:30 | 대중교통으로 Halles 이동 | C선·메트로·트램 조합, 혼잡 시 택시 |
 | 12:35–14:05 | **Halles de Lyon Paul Bocuse 점심** | Giraudet quenelle, Sibilia charcuterie, Mère Richard cheese 등 2–3곳을 나눠 맛봄 |
