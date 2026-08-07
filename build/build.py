@@ -4704,8 +4704,8 @@ def check_phase6_map_guards():
             if page_text.count('>길찾기</a>') != count:
                 problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 106 or len(google_places) != 106:
-        problems.append(f"지도 기준점 총 {total}개 (기대 106) / 레지스트리 {len(google_places)}개 (기대 106)")
+    if total != 110 or len(google_places) != 110:
+        problems.append(f"지도 기준점 총 {total}개 (기대 110) / 레지스트리 {len(google_places)}개 (기대 110)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4718,7 +4718,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 106개(레지스트리 기준) · 43일 라우팅 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 110개(레지스트리 기준) · 43일 라우팅 이상 없음")
 
 
 def check_daily_map_guards():
