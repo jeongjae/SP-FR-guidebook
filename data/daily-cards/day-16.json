@@ -4,85 +4,161 @@
   "date": "2026-09-13",
   "city": "Luberon",
   "title": "Aix→Lourmarin→농가",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
+  "startTime": "07:30",
+  "endTime": "20:30",
+  "totalDuration": "13시간",
+  "totalDistance": "약 67km · 차량 경로",
   "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Domaine des Peyre (후보)",
+    "lat": 43.87088,
+    "lng": 5.12202,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "lourmarin",
+      "id": "aix-checkout",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Lourmarin 스케치행사",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Lourmarin 스케치행사",
+      "start": "07:30",
+      "end": "08:40",
+      "name": "Aix 체크아웃·출발",
+      "category": "hotel",
+      "lat": 43.528998,
+      "lng": 5.440842,
+      "summary": "냉장고 비우기, 차량에 전 짐 — 귀중품은 몸에 휴대",
       "menu": null,
-      "reservation": "농가·행사",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "lourmarin",
+      "order": 2,
+      "start": "09:35",
+      "end": "11:15",
+      "name": "Lourmarin",
+      "category": "sight",
+      "lat": 43.76373,
+      "lng": 5.36383,
+      "summary": "여행스케치 행사 60분 + 마을·카페 30–40분, 성 내부 기본 제외",
+      "menu": null,
+      "reservation": "스케치 행사 일정 재확인",
       "optional": false
     },
     {
       "id": "coustellet",
-      "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Coustellet 장보기",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Coustellet 장보기",
-      "menu": null,
-      "reservation": "농가·행사",
+      "order": 3,
+      "start": "12:00",
+      "end": "13:45",
+      "name": "Coustellet 생산자시장",
+      "category": "shopping",
+      "lat": 43.86673,
+      "lng": 5.14544,
+      "summary": "일요일 08:00–13:00 — 3–4일분 1차 장보기 후 시장 점심",
+      "menu": "빵·치즈·토마토·과일·샐러드",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "stop",
-      "order": 3,
-      "start": null,
-      "end": null,
-      "name": "농가 체크인",
+      "id": "goult-buffer",
+      "order": 4,
+      "start": "13:45",
+      "end": "15:15",
+      "name": "체크인 전 완충 — Goult",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "농가 체크인",
+      "lat": 43.86306,
+      "lng": 5.24417,
+      "summary": "짧은 산책 또는 카페, 피곤하면 그늘 휴식",
       "menu": null,
-      "reservation": "농가·행사",
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "farm-checkin",
+      "order": 5,
+      "start": "15:30",
+      "end": "20:30",
+      "name": "농가 체크인·테라스 첫 저녁",
+      "category": "hotel",
+      "lat": 43.87088,
+      "lng": 5.12202,
+      "summary": "주방·세탁기·주차·대문 확인 → 첫 세탁·간단 요리 → 19:15 테라스 저녁",
+      "menu": null,
+      "reservation": "농가 체크인 시각·경로 확정 필요",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "aix-checkout",
+      "to": "lourmarin",
+      "mode": "car",
+      "duration": "약 37분",
+      "distance": "36.8km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "lourmarin",
+      "to": "coustellet",
+      "mode": "car",
+      "duration": "약 31분",
+      "distance": "28.0km",
+      "line": "D973·D2 계열",
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "coustellet",
+      "to": "goult-buffer",
+      "mode": "car",
+      "duration": "약 15분",
+      "distance": "약 9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "goult-buffer",
+      "to": "farm-checkin",
+      "mode": "car",
+      "duration": "약 13분",
+      "distance": "약 11km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "농가·행사"
+    "렌터카",
+    "차량 짐 완전 은폐"
   ],
   "food": [
-    "Lourmarin 점심"
+    "Coustellet 시장 점심",
+    "농가 첫 저녁 (테라스)"
   ],
   "highlights": [
-    "Lourmarin 스케치행사, Coustellet 장보기, 농가 체크인",
-    "선택·축소: Cucuron/Goult 추가 금지"
+    "Lourmarin 스케치 행사",
+    "일요시장 13시 마감",
+    "Cucuron·Goult 추가 금지"
   ],
-  "backup": "행사·시장 축소 후 조기체크인",
-  "map": null,
+  "backup": "지연 시 Lourmarin 체류 축소, 행사·시장 축소 후 조기 체크인",
+  "map": {
+    "zoom": 10,
+    "center": [
+      43.71,
+      5.26
+    ],
+    "routeCache": "routes/day-16-driving-osrm.json"
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Luberon 농가 후보(Domaine des Peyre) 승인·체크인 시각 확정",
+    "Lourmarin 스케치 행사 일정 확인",
+    "Coustellet→농가 구간은 완충 경유(Goult) 포함 재계산"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-16",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-16",
+    "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md#Day-16",
+    "source/ASSETS/75_Execution_Maps/Luberon_Execution_Map_v0.2.kml",
+    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml (Lourmarin)"
   ]
 }

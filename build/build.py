@@ -160,9 +160,15 @@ PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 DAILY_V2_DIR = DAILY_IMG_DIR / "v2"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
-# Phase 5 배치 전환 — 배치 1 (Day 1~5) + 파일럿 Day 6. Day 4 는 비지도 이동일.
+# Phase 5 배치 전환 — 배치 1~5 (Day 1~25) + 파일럿 Day 6. Day 4 는 비지도 이동일.
 GOOGLE_MAP_PILOT_DATES = {"2026-08-29", "2026-08-30", "2026-08-31",
-                          "2026-09-02", "2026-09-03"}
+                          "2026-09-02", "2026-09-03", "2026-09-04",
+                          "2026-09-05", "2026-09-06", "2026-09-07",
+                          "2026-09-08", "2026-09-09", "2026-09-10",
+                          "2026-09-11", "2026-09-12", "2026-09-13",
+                          "2026-09-14", "2026-09-15", "2026-09-16",
+                          "2026-09-17", "2026-09-18", "2026-09-19",
+                          "2026-09-20", "2026-09-21", "2026-09-22"}
 GOOGLE_MAP_PILOT_REGIONS = {
     "barcelona.html": "barcelona", "girona.html": "girona", "nice.html": "nice",
     "aix.html": "aix", "luberon.html": "luberon", "avignon.html": "avignon",
@@ -946,6 +952,34 @@ CARD_PLACE_SLUGS = {
     "Castle Hill": "colline-du-chateau",
     "Cannes": "le-suquet",
     "Monaco": "monaco",
+    "Cours Mirabeau": "cours-mirabeau",
+    "Musée Granet": "musee-granet",
+    "Roussillon": "roussillon",
+    "Gordes": "gordes",
+    "Village des Bories": "village-des-bories",
+    "L’Isle-sur-la-Sorgue": "l-isle-sur-la-sorgue",
+    "Les Halles": "les-halles-avignon",
+    "Palais des Papes": "palais-des-papes",
+    "Pont Saint-Bénézet": "pont-saint-benezet",
+    "Uzès": "uzes",
+    "Pont du Gard": "pont-du-gard",
+    "Les Baux": "les-baux-de-provence",
+    "Saint-Rémy": "saint-remy-de-provence",
+    "Bellecour": "place-bellecour",
+    "Fourvière": "fourviere",
+    "Vieux Lyon": "vieux-lyon",
+    "Croix-Rousse": "croix-rousse",
+    "Halles Paul Bocuse": "halles-de-lyon-paul-bocuse",
+    "Annecy": "annecy",
+    "Notre-Dame": "notre-dame-de-paris",
+    "Louvre": "musee-du-louvre",
+    "Montmartre": "montmartre",
+    "BnF Richelieu": "bnf-richelieu",
+    "Grand Palais": "grand-palais",
+    "Orsay": "musee-d-orsay",
+    "Bourse de Commerce": "bourse-de-commerce",
+    "Versailles": "versailles",
+    "Giverny": "giverny",
 }
 
 
@@ -4816,8 +4850,8 @@ def check_phase6_map_guards():
             if page_text.count('>길찾기</a>') != count:
                 problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 72 or len(google_places) != 72:
-        problems.append(f"지도 기준점 총 {total}개 (기대 72) / 레지스트리 {len(google_places)}개 (기대 72)")
+    if total != 88 or len(google_places) != 88:
+        problems.append(f"지도 기준점 총 {total}개 (기대 88) / 레지스트리 {len(google_places)}개 (기대 88)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4830,7 +4864,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 72개(레지스트리 기준) · 43일 라우팅 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 88개(레지스트리 기준) · 43일 라우팅 이상 없음")
 
 
 def check_daily_map_guards():
@@ -4839,10 +4873,11 @@ def check_daily_map_guards():
     problems = []
     legacy = set()
     pilots = GOOGLE_MAP_PILOT_DATES
-    expected = legacy | pilots
-    missing = sorted(expected - set(by_date))
+    # 레거시 daily-maps.json 은 Leaflet 시절 샘플만 담는다. 전환일 자체는
+    # 아래 google_days(daily-routes.json) 검사가 담당한다.
+    missing = sorted(legacy - set(by_date))
     if missing:
-        problems.append("샘플 날짜 누락: " + ", ".join(missing))
+        problems.append("레거시 샘플 날짜 누락: " + ", ".join(missing))
     required_assets = ("daily-map.js", "daily-map-data.js", "google-map-loader.js",
                        "google-map.js", "google-map.css")
     if any(not (SITE / "assets" / name).exists() for name in required_assets):

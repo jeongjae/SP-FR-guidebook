@@ -3,70 +3,135 @@
   "day": 37,
   "date": "2026-10-04",
   "city": "Paris",
-  "title": "완충·스케치·무계획",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Arc de Triomphe 경마 — 메인 레이스 데이",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "1~2",
+  "totalDistance": "대중교통 왕복 (Bois de Boulogne)",
+  "fatigue": "5",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "prep",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "늦은 아침",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "늦은 아침",
+      "start": "08:00",
+      "end": "09:00",
+      "name": "아침·티켓·교통 최종 확인",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "공식 개장·경주시간 기준 이동 역산",
       "menu": null,
       "reservation": null,
       "optional": false
     },
     {
-      "id": "canal-saint-martin",
+      "id": "to-longchamp",
       "order": 2,
-      "start": null,
+      "start": "09:00",
+      "end": "10:30",
+      "name": "ParisLongchamp 이동",
+      "category": "transport",
+      "lat": 48.8577383,
+      "lng": 2.2329812,
+      "summary": "환승·입장 대기 여유",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "arc-race",
+      "order": 3,
+      "start": "10:30",
+      "end": "18:00",
+      "name": "Qatar Prix de l'Arc de Triomphe",
+      "category": "activity",
+      "lat": 48.8577383,
+      "lng": 2.2329812,
+      "summary": "경기장 식사·휴식·관람 포함 거의 종일 — 같은 날 공연은 충돌로 제외",
+      "menu": null,
+      "reservation": "티켓 BOOK NOW 상태 (8/5 확인) — 예매 잠금",
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 4,
+      "start": "18:00",
       "end": null,
-      "name": "Canal Saint-Martin 또는 공원",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Canal Saint-Martin 또는 공원",
+      "name": "혼잡 감안 귀환·완전 휴식",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "추가 명소·쇼핑 금지, 저녁은 숙소식",
       "menu": null,
       "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
-  "transport": [],
+  "legs": [
+    {
+      "from": "prep",
+      "to": "to-longchamp",
+      "mode": "metro",
+      "duration": "약 1시간",
+      "distance": null,
+      "line": "메트로+환승 (셔틀 여부 확인)",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "to-longchamp",
+      "to": "arc-race",
+      "mode": "walk",
+      "duration": "0분",
+      "distance": "현장",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "arc-race",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "약 1시간",
+      "distance": null,
+      "line": "혼잡 — 여유 확보",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
+  "transport": [
+    "메트로+환승 왕복"
+  ],
   "food": [
-    "숙소식"
+    "경기장 식사",
+    "저녁 숙소식"
   ],
   "highlights": [
-    "늦은 아침, Canal Saint-Martin 또는 공원",
-    "선택·축소: 숙소식"
+    "P0 고정 스포츠 — 종일",
+    "10/3–4 개최·10/4 메인 확인됨",
+    "야간행사 전면 금지"
   ],
-  "backup": "숙소·공원",
-  "map": null,
+  "backup": "우천 시 복장·체류 조절 — 일정 자체는 유지",
+  "map": {
+    "zoom": 12,
+    "center": [
+      48.849,
+      2.29
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Arc 티켓 예매·수령 방식 확정",
+    "Longchamp 접근 교통(셔틀/메트로) 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-11-10월4일",
+    "OSM Nominatim 지오코딩 2026-08-06: Hippodrome de Longchamp"
   ]
 }

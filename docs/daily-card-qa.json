@@ -7,36 +7,7 @@
     5
   ],
   "errors": [],
-  "warnings": [
-    "Day 16: 4 coordinate fields need review",
-    "Day 17: 3 coordinate fields need review",
-    "Day 18: 3 coordinate fields need review",
-    "Day 19: 5 coordinate fields need review",
-    "Day 20: 5 coordinate fields need review",
-    "Day 21: 3 coordinate fields need review",
-    "Day 22: 6 coordinate fields need review",
-    "Day 23: 4 coordinate fields need review",
-    "Day 24: 5 coordinate fields need review",
-    "Day 25: 4 coordinate fields need review",
-    "Day 26: 4 coordinate fields need review",
-    "Day 27: 5 coordinate fields need review",
-    "Day 28: 4 coordinate fields need review",
-    "Day 29: 5 coordinate fields need review",
-    "Day 30: 4 coordinate fields need review",
-    "Day 31: 4 coordinate fields need review",
-    "Day 32: 5 coordinate fields need review",
-    "Day 33: 3 coordinate fields need review",
-    "Day 34: 3 coordinate fields need review",
-    "Day 35: 4 coordinate fields need review",
-    "Day 36: 2 coordinate fields need review",
-    "Day 37: 3 coordinate fields need review",
-    "Day 38: 3 coordinate fields need review",
-    "Day 39: 3 coordinate fields need review",
-    "Day 40: 3 coordinate fields need review",
-    "Day 41: 2 coordinate fields need review",
-    "Day 42: 3 coordinate fields need review",
-    "Day 43: 4 coordinate fields need review"
-  ],
+  "warnings": [],
   "results": [
     {
       "day": 1,
@@ -236,226 +207,366 @@
     {
       "day": 16,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 5
+      }
     },
     {
       "day": 17,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 18,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 19,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 3
+      }
     },
     {
       "day": 20,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 6
+      }
     },
     {
       "day": 21,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 3
+      }
     },
     {
       "day": 22,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 6,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 7
+      }
     },
     {
       "day": 23,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 5
+      }
     },
     {
       "day": 24,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 5
+      }
     },
     {
       "day": 25,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 5
+      }
     },
     {
       "day": 26,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 6
+      }
     },
     {
       "day": 27,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 28,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 35,
+        "marker-count": 3
+      }
     },
     {
       "day": 29,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 40,
+        "marker-count": 5
+      }
     },
     {
       "day": 30,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 5
+      }
     },
     {
       "day": 31,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 3
+      }
     },
     {
       "day": 32,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 5,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 4
+      }
     },
     {
       "day": 33,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 5
+      }
     },
     {
       "day": 34,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 4
+      }
     },
     {
       "day": 35,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 35,
+        "marker-count": 4
+      }
     },
     {
       "day": 36,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 2,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 3
+      }
     },
     {
       "day": 37,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 2
+      }
     },
     {
       "day": 38,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 4
+      }
     },
     {
       "day": 39,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 40,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 5
+      }
     },
     {
       "day": 41,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 2,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 3
+      }
     },
     {
       "day": 42,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 3,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 42,
+        "marker-count": 4
+      }
     },
     {
       "day": 43,
       "prototype": false,
-      "rendered": false,
+      "rendered": true,
       "errors": [],
-      "unresolvedCoordinates": 4,
-      "visual": null
+      "unresolvedCoordinates": 0,
+      "visual": {
+        "label-overlaps": 0,
+        "overflow": 0,
+        "tile-count": 48,
+        "marker-count": 2
+      }
     }
   ]
 }

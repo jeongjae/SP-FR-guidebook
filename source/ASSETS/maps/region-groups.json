@@ -16,7 +16,13 @@
         "musee-granet",
         "cassis",
         "atelier-des-lauves",
-        "lourmarin"
+        "lourmarin",
+        "place-richelme",
+        "marseille-vieux-port",
+        "place-de-lenche",
+        "mucem",
+        "fort-saint-jean",
+        "marseille-saint-charles"
       ]
     },
     {
@@ -35,7 +41,13 @@
         "uzes",
         "pont-du-gard",
         "les-baux-de-provence",
-        "saint-remy-de-provence"
+        "saint-remy-de-provence",
+        "rocher-des-doms",
+        "avignon-centre",
+        "arles-arenes",
+        "arles-theatre-antique",
+        "cloitre-saint-trophime",
+        "avignon-tgv"
       ]
     },
     {
@@ -118,7 +130,8 @@
         "croix-rousse",
         "halles-de-lyon-paul-bocuse",
         "parc-de-la-tete-d-or",
-        "annecy"
+        "annecy",
+        "lyon-part-dieu"
       ]
     },
     {
@@ -137,7 +150,10 @@
         "cannes",
         "monaco",
         "marche-de-la-liberation",
-        "nice-airport-terminal-2"
+        "nice-airport-terminal-2",
+        "saint-paul-de-vence",
+        "grasse-vieille-ville",
+        "musee-photographie-charles-negre"
       ]
     },
     {

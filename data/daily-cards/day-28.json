@@ -3,86 +3,136 @@
   "day": 28,
   "date": "2026-09-25",
   "city": "Paris",
-  "title": "생활권 적응 완충일",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "세탁과 생활권 적응 — 완충일",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "1~2",
+  "totalDistance": "약 2km · 도보 (반경 800m)",
+  "fatigue": "1–2",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "slow-morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "슈퍼·빵집·약국 확인",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "슈퍼·빵집·약국 확인",
+      "start": "08:30",
+      "end": "12:00",
+      "name": "늦은 아침·세탁·짐 배치",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "알람 없이 시작 — 16박 수납·세탁 루틴을 정한다",
       "menu": null,
-      "reservation": "숙소 생활권",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "stop-2",
+      "id": "neighborhood",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "느린 장보기",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "느린 장보기",
-      "menu": null,
-      "reservation": "숙소 생활권",
+      "start": "14:00",
+      "end": "16:30",
+      "name": "슈퍼·빵집·약국·세탁소 확인",
+      "category": "shopping",
+      "lat": 48.8404,
+      "lng": 2.3475,
+      "summary": "반경 800m 안에서만, 운영시간을 사진으로 기록",
+      "menu": "생활용품 목록 기준",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "stop-3",
+      "id": "cafe-bench",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "동네 카페",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "동네 카페",
+      "start": "16:30",
+      "end": "18:00",
+      "name": "카페 또는 공원 벤치",
+      "category": "cafe",
+      "lat": 48.8394,
+      "lng": 2.344,
+      "summary": "피로하면 숙소로 즉시 귀환",
       "menu": null,
-      "reservation": "숙소 생활권",
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "paris-return",
+      "order": 4,
+      "start": "18:30",
+      "end": null,
+      "name": "가까운 저녁 또는 숙소식",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "예약형 식당·공연 없음 — 고정 일정을 당겨 채우지 않는다",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "slow-morning",
+      "to": "neighborhood",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "neighborhood",
+      "to": "cafe-bench",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cafe-bench",
+      "to": "paris-return",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "숙소 생활권"
+    "도보 (반경 800m)"
   ],
   "food": [
-    "숙소식·동네 카페"
+    "숙소식·휴식",
+    "가까운 저녁"
   ],
   "highlights": [
-    "슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페",
-    "선택·축소: 피로가 적으면 강변·공원 1곳"
+    "새로 생긴 하루 = 회복",
+    "낮·저녁 귀가동선 2회 확인",
+    "보상심리로 일정 추가 금지"
   ],
-  "backup": "슈퍼·빵집·약국 확인만",
-  "map": null,
+  "backup": "컨디션 좋아도 대형 일정 금지 — 완충일 유지",
+  "map": {
+    "zoom": 15,
+    "center": [
+      48.8399,
+      2.3455
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Paris 숙소 후보 확정 — 생활권 앵커가 숙소 위치에 종속",
+    "세탁 시설 확인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-28",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-28",
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-2",
+    "source/ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.kml"
   ]
 }

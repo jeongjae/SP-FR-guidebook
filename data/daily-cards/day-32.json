@@ -3,100 +3,159 @@
   "day": 32,
   "date": "2026-09-29",
   "city": "Paris",
-  "title": "Montmartre→South Pigalle",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Orsay 또는 Orangerie — 대형관 하나",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "3~5",
+  "totalDistance": "약 1km · 도보 + 메트로",
+  "fatigue": "3–4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "slow-morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "북사면 접근",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "북사면 접근",
+      "start": "08:30",
+      "end": "12:00",
+      "name": "느린 아침·숙소업무",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "박물관 전 체력 보존 — 예약시간 전 충분히 쉬기",
       "menu": null,
-      "reservation": "식당·축구",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "sacr-c-ur",
+      "id": "lunch",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Sacré-Cœur",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Sacré-Cœur",
-      "menu": null,
-      "reservation": "식당·축구",
+      "start": "12:00",
+      "end": "13:00",
+      "name": "숙소 또는 근처 점심",
+      "category": "food",
+      "lat": 48.8399,
+      "lng": 2.3459,
+      "summary": "대형관 안에서 끼니를 미루지 않음",
+      "menu": "가볍게",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "abbesses",
+      "id": "orsay",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "Abbesses",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Abbesses",
+      "start": "13:30",
+      "end": "17:00",
+      "name": "Musée d'Orsay 또는 Orangerie",
+      "category": "culture",
+      "lat": 48.85996,
+      "lng": 2.32656,
+      "summary": "둘 중 하나만 — 시간지정권, 3시간 30분 상한",
       "menu": null,
-      "reservation": "식당·축구",
+      "reservation": "시간지정권 예약 잠금",
       "optional": false
     },
     {
-      "id": "9",
+      "id": "buffer",
       "order": 4,
-      "start": null,
-      "end": null,
-      "name": "9구",
+      "start": "17:00",
+      "end": "18:00",
+      "name": "Seine·Tuileries 완충",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "9구",
+      "lat": 48.8617,
+      "lng": 2.325,
+      "summary": "두 번째 미술관 금지",
       "menu": null,
-      "reservation": "식당·축구",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "18:30",
+      "end": null,
+      "name": "숙소 귀환·저녁",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "Orsay 선택 시 인상주의 또는 19세기 조각 한 권역만 추가",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "slow-morning",
+      "to": "lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "lunch",
+      "to": "orsay",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "orsay",
+      "to": "buffer",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "buffer",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "식당·축구"
+    "메트로 왕복"
   ],
   "food": [
-    "Abbesses/9구"
+    "박물관 전 가벼운 점심",
+    "숙소 저녁"
   ],
   "highlights": [
-    "북사면 접근, Sacré-Cœur, Abbesses, 9구",
-    "선택·축소: PSG UCL 조건부"
+    "대형관 하루 한 곳",
+    "3시간 30분 상한",
+    "화요일 — Orsay 개관 확인"
   ],
-  "backup": "Montmartre 핵심만",
-  "map": null,
+  "backup": "피로 시 Orangerie(소형)로 교체",
+  "map": {
+    "zoom": 14,
+    "center": [
+      48.852,
+      2.335
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Orsay/Orangerie 시간지정권 예약",
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-6-9월29일",
+    "source/ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.kml (Orsay)",
+    "OSM Nominatim 지오코딩 2026-08-06: Orangerie"
   ]
 }

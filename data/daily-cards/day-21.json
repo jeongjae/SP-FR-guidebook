@@ -4,71 +4,137 @@
   "date": "2026-09-18",
   "city": "Avignon",
   "title": "Uzès와 Pont du Gard",
-  "sourceStatus": "candidate-latest-needs-review",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4",
+  "startTime": "07:15",
+  "endTime": "20:00",
+  "totalDuration": "12시간 45분",
+  "totalDistance": "약 84km · 차량 경로",
+  "fatigue": "3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "La Terrasse du Clocher (후보)",
+    "lat": 43.94993,
+    "lng": 4.81302,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "uz-s",
+      "id": "avignon-depart",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Uzès 구시가지",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Uzès 구시가지",
+      "start": "07:15",
+      "end": "08:00",
+      "name": "숙소 아침·출발",
+      "category": "hotel",
+      "lat": 43.94993,
+      "lng": 4.81302,
+      "summary": "시장가방·물·모자, 차량에 아무것도 보이지 않게",
       "menu": null,
-      "reservation": "주차·입장",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "uzes",
+      "order": 2,
+      "start": "09:00",
+      "end": "13:00",
+      "name": "Uzès 구시가지·점심",
+      "category": "sight",
+      "lat": 44.0115423,
+      "lng": 4.4187698,
+      "summary": "외곽주차 후 도보 — Place aux Herbes 아케이드→Duché 외관→Tour Fenestrelle",
+      "menu": "비스트로 금요일 영업 재확인",
+      "reservation": "외곽 관리주차장 확인",
       "optional": false
     },
     {
       "id": "pont-du-gard",
-      "order": 2,
-      "start": null,
-      "end": null,
+      "order": 3,
+      "start": "13:45",
+      "end": "17:15",
       "name": "Pont du Gard",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Pont du Gard",
+      "lat": 43.9475,
+      "lng": 4.53502,
+      "summary": "좌안 전망→다리 하부·상류/하류 시점→우안 또는 Mémoires de Garrigue 선택, 강변 카페 휴식",
       "menu": null,
-      "reservation": "주차·입장",
+      "reservation": "주차·운영 재확인",
+      "optional": false
+    },
+    {
+      "id": "avignon-return",
+      "order": 4,
+      "start": "18:15",
+      "end": "20:00",
+      "name": "Avignon 귀환·저녁",
+      "category": "hotel",
+      "lat": 43.94993,
+      "lng": 4.81302,
+      "summary": "JEP 주말 교통 혼잡 고려 — 저녁은 숙소식 또는 예약된 곳",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "avignon-depart",
+      "to": "uzes",
+      "mode": "car",
+      "duration": "약 45분",
+      "distance": "40.7km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "uzes",
+      "to": "pont-du-gard",
+      "mode": "car",
+      "duration": "약 21분",
+      "distance": "13.8km",
+      "line": "시장 구매품 은폐",
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "pont-du-gard",
+      "to": "avignon-return",
+      "mode": "car",
+      "duration": "약 38분",
+      "distance": "29.5km",
+      "line": null,
+      "geometryStatus": "verified-cache"
+    }
+  ],
   "transport": [
-    "주차·입장"
+    "렌터카 · 외곽주차 우선"
   ],
   "food": [
-    "Uzès 빵집/비스트로"
+    "Uzès 가벼운 점심",
+    "저녁은 가볍게 (금요일 영업 재확인)"
   ],
   "highlights": [
-    "Uzès 구시가지, Pont du Gard",
-    "선택·축소: 시장은 금요일 운영 재확인; 박물관·일몰 택1"
+    "09:00 이전 Uzès 도착",
+    "금요일 — 토요시장 없음 전제",
+    "폭우·홍수 변수 주의"
   ],
-  "backup": "Uzès 단축·Pont 축소",
-  "map": null,
+  "backup": "악천후 시 Uzès 단축·Pont 축소, 박물관 또는 일몰 택1",
+  "map": {
+    "zoom": 11,
+    "center": [
+      43.975,
+      4.615
+    ],
+    "routeCache": "routes/day-21-driving-osrm.json"
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Avignon 숙소 후보 승인",
+    "Uzès 외곽주차장·비스트로 금요일 영업 확인",
+    "Pont du Gard 운영·주차 재확인"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-21",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-21",
+    "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md#Day-21",
+    "source/ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml",
+    "OSM Nominatim 지오코딩 2026-08-06: Place aux Herbes"
   ]
 }

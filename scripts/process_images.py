@@ -64,7 +64,7 @@ def crop_box(size, ratio, focus):
 def save_under_limit(image, target, role):
     target.parent.mkdir(parents=True, exist_ok=True)
     limit = BYTE_LIMIT[role]
-    for quality in range(QUALITY[role], 63, -3):
+    for quality in range(QUALITY[role], 44, -3):
         image.save(target, "WEBP", quality=quality, method=6, exif=b"")
         if target.stat().st_size <= limit:
             return quality
@@ -89,6 +89,11 @@ def variant(image, image_id, role, width, height=None, focus=None):
     role_name = "thumb" if role == "thumbnail" else role
     target = PROCESSED / folder / f"{image_id}-{role_name}-{width}.webp"
     quality = save_under_limit(output, target, role)
+    if target.stat().st_size > BYTE_LIMIT[role] and role == "hero" and width >= 1920:
+        # Extremely detailed frames may not fit the byte budget even at the
+        # quality floor; serve up to 1280 instead of shipping an oversize file.
+        target.unlink()
+        return None
     return {
         "path": str(target.relative_to(ROOT)).replace("\\", "/"),
         "sitePath": f"assets/images/{folder}/{target.name}",
@@ -110,13 +115,23 @@ def main():
         with Image.open(source_path) as source:
             image = srgb_image(source)
         variants = {"hero": [], "content": [], "thumbnail": []}
-        for width in HERO_WIDTHS:
-            made = variant(image, item["imageId"], "hero", width, round(width * 9 / 16), item["focus"])
+        # Hero variants are only rendered for day/region heroes; majors and
+        # supporting images use content/thumbnail, so skipping their hero set
+        # keeps the deployed and PWA-precached payload lean.
+        if item["role"] == "hero" or item.get("regionHero"):
+            for width in HERO_WIDTHS:
+                made = variant(image, item["imageId"], "hero", width, round(width * 9 / 16), item["focus"])
+                if made:
+                    variants["hero"].append(made)
+        # Extremely detailed frames can exceed the content byte budget even at
+        # the quality floor; step the width down until the file fits.
+        for content_width in (1280, 1080, 960):
+            made = variant(image, item["imageId"], "content", content_width)
+            if made and made["bytes"] <= BYTE_LIMIT["content"]:
+                variants["content"].append(made)
+                break
             if made:
-                variants["hero"].append(made)
-        made = variant(image, item["imageId"], "content", 1280)
-        if made:
-            variants["content"].append(made)
+                (ROOT / made["path"]).unlink()
         made = variant(image, item["imageId"], "thumbnail", 480, 320, item["focus"])
         if made:
             variants["thumbnail"].append(made)

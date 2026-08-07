@@ -3,86 +3,156 @@
   "day": 35,
   "date": "2026-10-02",
   "city": "Paris",
-  "title": "Marais 생활·사진·패션",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "시장·서점·카페·스케치 — 오페라 다음 날",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "3",
+  "totalDistance": "약 1.5km · 도보",
+  "fatigue": "1–2",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "enfants-rouges",
+      "id": "late-morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Enfants Rouges",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Enfants Rouges",
+      "start": "09:30",
+      "end": "11:00",
+      "name": "늦은 기상·느린 아침",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "정식운동 생략 — 전날 수면 회수",
       "menu": null,
-      "reservation": "공연 조건부",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "marais",
+      "id": "market",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Marais",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Marais",
-      "menu": null,
-      "reservation": "공연 조건부",
+      "start": "11:00",
+      "end": "13:30",
+      "name": "숙소권 시장·점심",
+      "category": "shopping",
+      "lat": 48.8404,
+      "lng": 2.3475,
+      "summary": "필요한 식재료만 — 줄이 길면 즉시 대체",
+      "menu": "시장식 또는 숙소 점심",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "1",
+      "id": "bookshop",
       "order": 3,
-      "start": null,
-      "end": null,
-      "name": "선택문화시설 1곳",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "선택문화시설 1곳",
+      "start": "14:00",
+      "end": "15:30",
+      "name": "동네 독립서점·카페",
+      "category": "cafe",
+      "lat": 48.8394,
+      "lng": 2.344,
+      "summary": "앉는 시간을 일정에 포함",
       "menu": null,
-      "reservation": "공연 조건부",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "sketch",
+      "order": 4,
+      "start": "15:30",
+      "end": "17:00",
+      "name": "Jason 스케치 / Julia 산책·카페",
+      "category": "activity",
+      "lat": 48.8399,
+      "lng": 2.3459,
+      "summary": "같은 권역에서 각자 회복 — 스케치는 오래 앉는 장치",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "17:00",
+      "end": null,
+      "name": "숙소 귀환·세탁 또는 자유",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "고정 저녁행사 없음 — 재즈·연극·교회공연 추가 금지",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "late-morning",
+      "to": "market",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "market",
+      "to": "bookshop",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "bookshop",
+      "to": "sketch",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "sketch",
+      "to": "paris-return",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "공연 조건부"
+    "도보 (한 생활권)"
   ],
   "food": [
-    "Enfants Rouges"
+    "시장식 또는 숙소 점심",
+    "숙소 저녁"
   ],
   "highlights": [
-    "Enfants Rouges, Marais, 선택문화시설 1곳",
-    "선택·축소: 재즈·연극 또는 자유"
+    "알람 끄고 수면 회수",
+    "시장·서점·카페를 한 생활권에서",
+    "고정행사 없음"
   ],
-  "backup": "시장·카페 중심",
-  "map": null,
+  "backup": "비·피로 시 숙소·카페만",
+  "map": {
+    "zoom": 15,
+    "center": [
+      48.8399,
+      2.3455
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Paris 숙소 후보 확정 — 생활권 앵커 종속",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-9-10월2일"
   ]
 }
