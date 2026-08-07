@@ -1764,6 +1764,113 @@
           "mode": "walking"
         }
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "city": "Paris",
+      "title": "Trocadéro·Chaillot — 선택 공연의 저녁",
+      "center": [
+        48.862,
+        2.288
+      ],
+      "zoom": 15,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "14:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "place-du-trocadero",
+          "order": 1,
+          "plannedTime": "14:30–17:00",
+          "note": "전망·건축·카페 — 장거리 산책 금지."
+        },
+        {
+          "placeId": "palais-de-chaillot",
+          "order": 2,
+          "plannedTime": "20:30 선택 공연",
+          "note": "선택 — Bouchra Ouizguen 'Este Mundo' · 1시간 · €8–25. 미선택 시 숙소식."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "place-du-trocadero",
+          "mode": "transit"
+        },
+        {
+          "from": "place-du-trocadero",
+          "to": "palais-de-chaillot",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "city": "Paris",
+      "title": "짐 포장과 Hamlet — Opéra Bastille",
+      "center": [
+        48.85,
+        2.365
+      ],
+      "zoom": 15,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "오전–오후 짐 70% 포장",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 새 박물관·쇼핑권 추가 금지."
+        },
+        {
+          "placeId": "opera-bastille",
+          "order": 1,
+          "plannedTime": "18:30 도착 · 19:30 공연",
+          "note": "Hamlet · 프랑스어(불·영 자막) · 1회 인터미션 · 약 23:10 종료 후 직접 귀환."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "opera-bastille",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "city": "Paris → Seoul",
+      "title": "귀국 — CDG 19:10 인천행",
+      "center": [
+        48.93,
+        2.45
+      ],
+      "zoom": 11,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:00–12:00 체크아웃",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시내 추가관광 없음."
+        },
+        {
+          "placeId": "cdg-airport",
+          "order": 1,
+          "plannedTime": "14:00 이전 이동 시작",
+          "note": "항공편 19:10 기준 — 실제 항공권·터미널 재확인. 교통장애·보안 여유 확보."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "cdg-airport",
+          "mode": "transit"
+        }
+      ]
     }
   ]
 }
