@@ -84,9 +84,16 @@ def static_checks(problems):
 
     offline = json.loads((SITE / "offline-files.json").read_text(encoding="utf-8"))
     records = {item["path"]: item for item in offline.get("files", [])}
+    def precached(rel):
+        if rel in EXCLUDED:
+            return False
+        # 검수용 Action Map PNG 원본은 온라인 전용 (build.py와 같은 규칙).
+        return not (rel.startswith("assets/daily-cards/full/") and rel.endswith(".png"))
+
     actual_files = {
         path.relative_to(SITE).as_posix()
-        for path in SITE.rglob("*") if path.is_file() and path.relative_to(SITE).as_posix() not in EXCLUDED
+        for path in SITE.rglob("*")
+        if path.is_file() and precached(path.relative_to(SITE).as_posix())
     }
     if set(records) != actual_files:
         missing = sorted(actual_files - set(records))
