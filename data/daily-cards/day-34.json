@@ -3,72 +3,159 @@
   "day": 34,
   "date": "2026-10-01",
   "city": "Paris",
-  "title": "Cézanne 전시와 강변",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Rossini 오페라 — Bastille와 한 호흡",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "08:30",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
+  "totalDistance": "약 2km · 도보 + 메트로",
   "fatigue": "4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "stop",
+      "id": "morning-life",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "운동·장보기",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "운동·장보기",
+      "start": "08:30",
+      "end": "13:30",
+      "name": "운동·아침·가벼운 점심",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "공연일 오전을 서두르지 않음 — 생활업무 짧게",
       "menu": null,
-      "reservation": "전시·공연",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "grand-palais-c-zanne",
+      "id": "vosges",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Grand Palais Cézanne",
+      "start": "14:00",
+      "end": "16:30",
+      "name": "Place des Vosges→Bastille 산책",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Grand Palais Cézanne",
+      "lat": 48.8550655,
+      "lng": 2.3653311,
+      "summary": "정원·골목·운하 초입 — 체력에 맞춰 축소",
       "menu": null,
-      "reservation": "전시·공연",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "early-dinner",
+      "order": 3,
+      "start": "17:30",
+      "end": "18:30",
+      "name": "이른 저녁",
+      "category": "food",
+      "lat": 48.8525,
+      "lng": 2.369,
+      "summary": "Opéra Bastille 도보권 — 과식·음주 제한",
+      "menu": "가벼운 코스",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "opera-bastille",
+      "order": 4,
+      "start": "19:30",
+      "end": "22:45",
+      "name": "Il Barbiere di Siviglia",
+      "category": "culture",
+      "lat": 48.8515018,
+      "lng": 2.3707417,
+      "summary": "18:30–18:45 도착, 3시간 15분·1회 인터미션 — 종료 후 바로 귀환",
+      "menu": null,
+      "reservation": "티켓 예매 잠금 (€77–205, 8/5 확인)",
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": "23:00",
+      "end": null,
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "다른 야간산책 없이 귀환",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "morning-life",
+      "to": "vosges",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "vosges",
+      "to": "early-dinner",
+      "mode": "walk",
+      "duration": "8분",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "early-dinner",
+      "to": "opera-bastille",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "opera-bastille",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로 또는 택시",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "전시·공연"
+    "메트로 왕복",
+    "Bastille 도보권"
   ],
   "food": [
-    "전시 전후 가벼운 식사"
+    "이른 저녁 17:30",
+    "공연 후 추가 식사 없음"
   ],
   "highlights": [
-    "운동·장보기, Grand Palais Cézanne",
-    "선택·축소: 오페라/발레 선택"
+    "고정 공연 19:30",
+    "매진 시 10/7 19:30만 백업",
+    "쇼핑·추가 내부관람 금지"
   ],
-  "backup": "전시만 유지",
-  "map": null,
+  "backup": "공연 취소·매진 시 Bastille 산책일로 전환, 10/7 백업 검토",
+  "map": {
+    "zoom": 14,
+    "center": [
+      48.849,
+      2.358
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Il Barbiere 10/1 티켓 예매",
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-8-10월1일",
+    "OSM Nominatim 지오코딩 2026-08-06: Place des Vosges·Opéra Bastille"
   ]
 }
