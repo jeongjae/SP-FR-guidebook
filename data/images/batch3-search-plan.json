@@ -1,0 +1,467 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-3-paris",
+  "downloadDate": "2026-08-07",
+  "subjects": [
+    {
+      "placeId": "paris",
+      "imageId": "paris-city-01",
+      "region": "paris",
+      "query": "Paris skyline from Tour Montparnasse",
+      "selectedTitle": "File:Paris as seen from the Tour Montparnasse, 11 May 2014.jpg",
+      "titleKo": "파리 전경",
+      "altKo": "몽파르나스 타워 전망대에서 본 파리 시가지와 에펠탑, 멀리 라데팡스",
+      "captionKo": "몽파르나스 타워에서 본 파리 — 에펠탑과 샹드마르스, 지평선의 라데팡스 고층지구.",
+      "role": "hero",
+      "focus": {
+        "x": 0.35,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-28.html"
+      ]
+    },
+    {
+      "placeId": "notre-dame-de-paris",
+      "imageId": "paris-notre-dame-01",
+      "region": "paris",
+      "query": "Notre-Dame de Paris west facade",
+      "selectedTitle": "File:Notre-Dame de Paris 2013-07-24.jpg",
+      "titleKo": "노트르담 대성당",
+      "altKo": "노트르담 대성당 서쪽 정면 — 쌍탑과 장미창이 있는 고딕 파사드",
+      "captionKo": "노트르담 대성당 서쪽 파사드. 2019년 화재 후 복원을 거쳐 2024년 12월 재개관했다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-29.html",
+        "places/notre-dame-de-paris.html"
+      ]
+    },
+    {
+      "placeId": "latin-quarter",
+      "imageId": "paris-latin-quarter-01",
+      "region": "paris",
+      "query": "rue Mouffetard Paris",
+      "selectedTitle": "File:Rue Mouffetard, Paris 24 Mai 2014.jpg",
+      "titleKo": "무프타르 거리",
+      "altKo": "비에 젖은 무프타르 거리의 자갈길과 카페, 상점 앞을 걷는 행인들",
+      "captionKo": "라탱 지구 무프타르 거리 — 파리에서 가장 오래된 시장 거리 중 하나.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-29.html",
+        "places/latin-quarter.html"
+      ]
+    },
+    {
+      "placeId": "pantheon-paris",
+      "imageId": "paris-pantheon-01",
+      "region": "paris",
+      "query": "Panthéon Paris facade",
+      "selectedTitle": "File:Facade of the Panthéon de Paris, 3 May 2012.jpg",
+      "titleKo": "팡테옹",
+      "altKo": "팡테옹의 코린트식 열주 파사드와 돔 전경",
+      "captionKo": "팡테옹 — 'AUX GRANDS HOMMES LA PATRIE RECONNAISSANTE' 명문이 새겨진 정면과 돔.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-29.html"
+      ]
+    },
+    {
+      "placeId": "le-marais",
+      "imageId": "paris-marais-01",
+      "region": "paris",
+      "query": "rue des Rosiers Marais",
+      "selectedTitle": "File:Jewish quarter, rue des Rosiers, Le Marais, Paris 2016.jpg",
+      "titleKo": "마레 지구",
+      "altKo": "마레 지구 로지에 거리의 자갈길과 상점들, 걸어가는 사람들",
+      "captionKo": "마레 지구 로지에 거리(rue des Rosiers) — 좁은 자갈길을 따라 상점과 빵집이 이어진다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.45,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-30.html",
+        "places/le-marais.html"
+      ]
+    },
+    {
+      "placeId": "jardin-du-luxembourg",
+      "imageId": "paris-luxembourg-01",
+      "region": "paris",
+      "query": "Jardin du Luxembourg palais bassin",
+      "selectedTitle": "File:Paris Palais du Luxembourg façade s printemps 2014.jpg",
+      "titleKo": "뤽상부르 공원",
+      "altKo": "뤽상부르 궁전 남쪽 파사드와 그랑 바생 연못가에 앉은 사람들",
+      "captionKo": "뤽상부르 공원 — 궁전(현 상원 의사당) 앞 그랑 바생 연못.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-30.html"
+      ]
+    },
+    {
+      "placeId": "marche-monge",
+      "imageId": "paris-marche-monge-01",
+      "region": "paris",
+      "query": "Marché Monge",
+      "selectedTitle": "File:Marché Monge, Paris 30 March 2008.jpg",
+      "titleKo": "몽주 시장",
+      "altKo": "몽주 시장 빵 가판대 — 바게트와 시골빵, 손글씨 가격표",
+      "captionKo": "몽주 광장의 노천 시장 가판대.",
+      "role": "major",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-30.html"
+      ]
+    },
+    {
+      "placeId": "musee-du-louvre",
+      "imageId": "paris-louvre-01",
+      "region": "paris",
+      "query": "Louvre Cour Carrée",
+      "selectedTitle": "File:Louvre Cour Carrée June 2010.jpg",
+      "titleKo": "루브르 박물관",
+      "altKo": "루브르 쿠르 카레 안뜰과 중앙의 파비용 쉴리 시계탑",
+      "captionKo": "루브르 박물관의 쿠르 카레(Cour Carrée) 안뜰 — 옛 궁전 파사드가 사방을 둘러싼다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-31.html",
+        "places/musee-du-louvre.html"
+      ]
+    },
+    {
+      "placeId": "palais-royal",
+      "imageId": "paris-palais-royal-01",
+      "region": "paris",
+      "query": "Palais-Royal jardin galerie",
+      "selectedTitle": "File:Paris Palais Royal Jardin 184.jpg",
+      "titleKo": "팔레 루아얄",
+      "altKo": "팔레 루아얄 정원 쪽 파사드와 아케이드 아치, 카페 테라스",
+      "captionKo": "팔레 루아얄 정원에서 본 회랑 파사드.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-31.html"
+      ]
+    },
+    {
+      "placeId": "montmartre",
+      "imageId": "paris-montmartre-01",
+      "region": "paris",
+      "query": "Montmartre escaliers",
+      "selectedTitle": "File:Paris 75018 Rue Foyatier 20161030 - 1300 handrails.jpg",
+      "titleKo": "몽마르트르",
+      "altKo": "몽마르트르 언덕 계단과 난간, 가로등, 나무 사이로 보이는 사크레쾨르 돔",
+      "captionKo": "몽마르트르 언덕의 계단길 — 계단 위 나무 사이로 사크레쾨르 돔이 살짝 보인다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "usage": [
+        "daily/day-32.html"
+      ]
+    },
+    {
+      "placeId": "sacre-coeur",
+      "imageId": "paris-sacre-coeur-01",
+      "region": "paris",
+      "query": "Basilique du Sacré-Cœur",
+      "selectedTitle": "File:Basilique du Sacré-Cœur de Montmartre - Paris - GT-01 - 2024.jpg",
+      "titleKo": "사크레쾨르 대성당",
+      "altKo": "푸른 하늘 아래 흰 돔 세 개가 솟은 사크레쾨르 대성당 정면",
+      "captionKo": "몽마르트르 언덕 위의 사크레쾨르 대성당 — 흰 석재의 돔이 정면 계단 위로 솟아 있다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "usage": [
+        "daily/day-32.html"
+      ]
+    },
+    {
+      "placeId": "bnf-richelieu",
+      "imageId": "paris-bnf-richelieu-01",
+      "region": "paris",
+      "query": "Salle Ovale BnF Richelieu",
+      "selectedTitle": "File:La salle ovale du site Richelieu, Bibliothèque nationale de France, Paris 2022.jpg",
+      "titleKo": "프랑스 국립도서관 리슐리외",
+      "altKo": "BnF 리슐리외관 살 오발 타원형 열람실 내부",
+      "captionKo": "리슐리외관의 타원형 열람실 '살 오발' — 1932년부터 일반에 개방된 공간이다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "usage": [
+        "daily/day-33.html",
+        "places/bnf-richelieu.html"
+      ]
+    },
+    {
+      "placeId": "passages-couverts",
+      "imageId": "paris-passages-01",
+      "region": "paris",
+      "query": "Galerie Vivienne",
+      "selectedTitle": "File:Galerie Vivienne, 12 March 2015.jpg",
+      "titleKo": "파리 아케이드",
+      "altKo": "갤러리 비비엔 유리 지붕 아케이드 내부와 서점",
+      "captionKo": "갤러리 비비엔 — 유리 지붕 아래 모자이크 바닥과 고서점이 이어지는 2구의 아케이드.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "usage": [
+        "daily/day-33.html"
+      ]
+    },
+    {
+      "placeId": "grand-palais",
+      "imageId": "paris-grand-palais-01",
+      "region": "paris",
+      "query": "nef du Grand Palais",
+      "selectedTitle": "File:Grand Palais - PA00088877 - Bonhams 2013 - Vue d'ensemble - 007.jpg",
+      "titleKo": "그랑 팔레",
+      "altKo": "그랑 팔레 유리 천장 아래 강철 아치가 이어지는 대전시장 내부",
+      "captionKo": "1900년 만국박람회 때 지은 그랑 팔레의 대전시장(네프) — 강철 아치와 유리 지붕이 실내를 덮는다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.6,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-34.html",
+        "places/grand-palais.html"
+      ]
+    },
+    {
+      "placeId": "marche-des-enfants-rouges",
+      "imageId": "paris-enfants-rouges-01",
+      "region": "paris",
+      "query": "Marché des Enfants Rouges",
+      "selectedTitle": "File:Marché des Enfants-Rouges, Paris May 2016.jpg",
+      "titleKo": "앙팡 루주 시장",
+      "altKo": "앙팡 루주 시장 정문의 철제 아치 간판과 안쪽 시장 풍경",
+      "captionKo": "브르타뉴 거리 쪽 앙팡 루주 시장 입구 — 철제 아치 간판 너머로 시장 통로가 이어진다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-35.html"
+      ]
+    },
+    {
+      "placeId": "versailles",
+      "imageId": "paris-versailles-01",
+      "region": "paris",
+      "query": "Palace of Versailles garden facade",
+      "selectedTitle": "File:Parterre du Midi Garden pond and Palace of Versailles at golden hour with blue sky in France.jpg",
+      "titleKo": "베르사유 궁전",
+      "altKo": "베르사유 궁전 정원 쪽 파사드와 남쪽 화단",
+      "captionKo": "정원에서 본 베르사유 궁전 — 남쪽 화단과 연못 너머로 서쪽 파사드가 펼쳐진다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-36.html",
+        "places/versailles.html"
+      ]
+    },
+    {
+      "placeId": "versailles-gardens",
+      "imageId": "paris-versailles-gardens-01",
+      "region": "paris",
+      "query": "Versailles Grand Canal aerial",
+      "selectedTitle": "File:Vue aérienne du domaine de Versailles par ToucanWings - Creative Commons By Sa 3.0 - 113.jpg",
+      "titleKo": "베르사유 정원",
+      "altKo": "아폴론 분수와 그랑 카날 축선 항공 사진",
+      "captionKo": "아폴론 분수에서 그랑 카날로 이어지는 정원의 대축선.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-36.html"
+      ]
+    },
+    {
+      "placeId": "trianon",
+      "imageId": "paris-trianon-01",
+      "region": "paris",
+      "query": "Petit Trianon facade",
+      "selectedTitle": "File:Petit Trianon, Versailles, 29 September 2012.jpg",
+      "titleKo": "트리아농",
+      "altKo": "프티 트리아농 파사드와 화분에 심긴 오렌지 나무",
+      "captionKo": "9월 오후의 프티 트리아농 — 신고전주의 별궁이다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-36.html"
+      ]
+    },
+    {
+      "placeId": "canal-saint-martin",
+      "imageId": "paris-canal-saint-martin-01",
+      "region": "paris",
+      "query": "Canal Saint-Martin écluses",
+      "selectedTitle": "File:Paris Canal St-Martin écluses Récollets 2013.jpg",
+      "titleKo": "생마르탱 운하",
+      "altKo": "생마르탱 운하 레콜레 갑문과 아치형 철제 인도교, 가로수 우거진 강둑",
+      "captionKo": "생마르탱 운하 — 갑문과 아치형 인도교가 이어지는 10구의 산책로.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "usage": [
+        "daily/day-37.html"
+      ]
+    },
+    {
+      "placeId": "musee-d-orsay",
+      "imageId": "paris-orsay-01",
+      "region": "paris",
+      "query": "Musée d'Orsay Seine facade",
+      "selectedTitle": "File:Musee d'Orsay and Pont Royal, North-West view 140402 1.jpg",
+      "titleKo": "오르세 미술관",
+      "altKo": "센강 너머에서 본 오르세 미술관의 시계탑 파사드와 루아얄 다리",
+      "captionKo": "센강변의 오르세 미술관 — 1900년 기차역을 개조한 미술관이다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.6,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-39.html",
+        "places/musee-d-orsay.html"
+      ]
+    },
+    {
+      "placeId": "seine",
+      "imageId": "paris-seine-01",
+      "region": "paris",
+      "query": "bouquinistes quai de Conti",
+      "selectedTitle": "File:Paris 75006 Quai de Conti Bouquinistes 20150902.jpg",
+      "titleKo": "센강변",
+      "altKo": "센강변 콩티 강둑의 부키니스트(헌책·판화 노점) 가판대와 구경하는 사람들",
+      "captionKo": "센강변의 부키니스트 — 강둑 난간을 따라 늘어선 초록색 노점.",
+      "role": "major",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-39.html"
+      ]
+    },
+    {
+      "placeId": "bourse-de-commerce",
+      "imageId": "paris-bourse-commerce-01",
+      "region": "paris",
+      "query": "Bourse de commerce Paris",
+      "selectedTitle": "File:Bourse Commerce - Paris I (FR75) - 2021-06-05 - 1.jpg",
+      "titleKo": "부르스 드 코메르스",
+      "altKo": "부르스 드 코메르스의 곡면 파사드와 페디먼트 조각, 정문 앞 사람들",
+      "captionKo": "옛 곡물거래소 건물인 부르스 드 코메르스(1889) — 원형 로톤다의 곡면 파사드가 특징이다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "usage": [
+        "daily/day-40.html"
+      ]
+    },
+    {
+      "placeId": "montorgueil",
+      "imageId": "paris-montorgueil-01",
+      "region": "paris",
+      "query": "rue Montorgueil",
+      "selectedTitle": "File:Paris - Rue Montorgueil.JPG",
+      "titleKo": "몽토르게유 거리",
+      "altKo": "카페 테라스로 가득한 몽토르게유 거리 초입의 화창한 풍경",
+      "captionKo": "몽토르게유 거리 남쪽 초입 — 보행자 거리 양쪽으로 카페 테라스와 차양이 이어진다.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-40.html",
+        "places/montorgueil.html"
+      ]
+    },
+    {
+      "placeId": "giverny",
+      "imageId": "paris-giverny-01",
+      "region": "paris",
+      "query": "Giverny jardin d'eau Monet",
+      "selectedTitle": "File:Le jardin d'eau de Claude Monet (Giverny) (48751405171).jpg",
+      "titleKo": "지베르니",
+      "altKo": "지베르니 모네의 물의 정원, 수련이 핀 연못과 수양버들",
+      "captionKo": "모네가 만든 지베르니의 물의 정원 — 9월에도 수련이 피어 있다.",
+      "role": "hero",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "usage": [
+        "daily/day-41.html",
+        "places/giverny.html"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "placeId": "philharmonie-de-paris",
+      "reason": "프랑스는 파노라마의 자유가 없어 장 누벨 설계 건물(2015)이 주 피사체인 사진은 사진가 라이선스로 건축 저작권이 해소되지 않는다. text-only."
+    },
+    {
+      "placeId": "fondation-louis-vuitton",
+      "reason": "프랭크 게리 설계 건물(2014), 동일한 무파노라마 자유 문제. text-only."
+    },
+    {
+      "placeId": "musee-de-l-orangerie",
+      "reason": "일정 신분이 reference(설명 언급) — 방문 확정 장소가 아니라 사진 대상에서 제외."
+    },
+    {
+      "placeId": "jardin-des-tuileries",
+      "reason": "일정 신분이 reference — 동일 사유로 제외."
+    }
+  ]
+}
