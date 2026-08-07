@@ -14,15 +14,17 @@ Barcelona 3박 → Bàscara 3박 → Nice 5박 → Aix 4박
 
 | 경로 | 내용 |
 |---|---|
-| `site/` | **빌드된 정적 웹사이트** — 이 폴더만 있으면 열람 가능 |
-| `source/40_Master_Guidebook/` | 리더 에디션 원본 MD 11챕터 + 마스터 인덱스 |
-| `source/maps/` | Nice·Lyon 실행지도 원본 HTML (Leaflet) |
-| `source/TP_Europe_Travel_Master_Tracker_v1.1.xlsx` | 마스터 트래커 원본 |
-| `build/build.py` | MD·xlsx → 정적 HTML 빌드 스크립트 |
+| `site/` | **빌드된 정적 웹사이트** (git 미추적 — 빌드로 생성) |
+| `source/CURRENT/` | 정본 원고 — 거버넌스·코어(itinerary.json 포함)·지역 챕터 8편 |
+| `source/ASSETS/` | 장소 레지스트리·실행지도·지도 JSON(maps/)·데일리 카드 이미지·사진 |
+| `source/OPERATIONS/` | 운영 레지스터·`TP_Europe_Travel_Master_Tracker_v1.2.xlsx` |
+| `source/ARCHIVE/` | 폐기 원고 — 여행 판단에 사용 금지 |
+| `data/` | 감사 산출물·미디어 카탈로그·데일리 카드 데이터 |
+| `build/build.py` | MD·JSON·xlsx → 정적 HTML 빌드 (가드 포함) |
 | `serve.sh` / `serve.bat` | 로컬 서버 실행 스크립트 |
 
-사이트에는 가이드북 11챕터, 실행지도 2종(Leaflet 로컬 번들), 트래커 5개 시트
-(일정·예약·이동·숙소·대시보드)가 포함된다.
+사이트에는 지역 챕터 8편, 데일리 페이지 43일, 장소 페이지, 지역 실행지도 8종
+(Google Maps), 트래커 6개 시트가 포함된다.
 
 ## 사용법
 
@@ -135,5 +137,5 @@ Day 1–3(2026-08-29~31)은 기존 Barcelona 실행지도와 일정 원고를 �
 
 ## 콘텐츠 기준
 
-- 리더 에디션은 통합 패키지 v1.24의 `40_Master_Guidebook`(Nice 5박·Aix 4박 반영 최신본) 기준.
-- 구버전·작업문서는 사이트에 포함하지 않는다 (`37_Source_of_Truth_and_Supersession_Matrix_v1.1` 기준).
+- 정본 목록은 `source/CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md` 기준.
+- 구버전·작업문서는 `source/ARCHIVE/`에만 있고 사이트에 포함하지 않는다.

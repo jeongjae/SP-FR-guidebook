@@ -14,10 +14,10 @@
 | Bàscara·Girona·Empordà | Day 4–7 | [HTML](75_Execution_Maps/Girona_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Girona_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Girona_Execution_Map_v0.2.kml) | 11 | 확정 숙소 1 · 핵심 방문지 5 · 대체안 2 · 기준점 2 |
 | Nice·Côte d’Azur | Day 7–12 | [HTML](75_Execution_Maps/Nice_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Nice_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Nice_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 시장·생활 2 · 핵심 방문지 1 · 교통 2 · 근교·이동지 2 |
 | Aix-en-Provence | Day 12–16 | [HTML](75_Execution_Maps/Aix_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Aix_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Aix_Execution_Map_v0.2.kml) | 7 | 숙소 후보 1 · 교통 1 · 핵심 방문지 3 · 근교·이동지 2 |
-| Luberon | Day 16–20 | [HTML](75_Execution_Maps/Luberon_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Luberon_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 시장·생활 1 · 근교·이동지 6 |
-| Avignon·Alpilles | Day 20–24 | [HTML](75_Execution_Maps/Avignon_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Avignon_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 시장·생활 1 · 핵심 방문지 2 · 근교·이동지 4 |
-| Lyon·Annecy | Day 24–28 | [HTML](75_Execution_Maps/Lyon_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Lyon_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 핵심 방문지 5 · 시장·생활 1 · 근교·이동지 1 |
-| Paris | Day 28–43 | [HTML](75_Execution_Maps/Paris_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Paris_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Paris_Execution_Map_v0.2.kml) | 10 | 숙소 후보 1 · 핵심 방문지 7 · 근교·이동지 2 |
+| Luberon | Day 16–19 | [HTML](75_Execution_Maps/Luberon_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Luberon_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 시장·생활 1 · 근교·이동지 6 |
+| Avignon·Alpilles | Day 19–23 | [HTML](75_Execution_Maps/Avignon_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Avignon_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 시장·생활 1 · 핵심 방문지 2 · 근교·이동지 4 |
+| Lyon·Annecy | Day 23–27 | [HTML](75_Execution_Maps/Lyon_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Lyon_Execution_Map_v0.2.kml) | 8 | 숙소 후보 1 · 핵심 방문지 5 · 시장·생활 1 · 근교·이동지 1 |
+| Paris | Day 27–43 | [HTML](75_Execution_Maps/Paris_Execution_Map_v0.2.html) | [GeoJSON](75_Execution_Maps/Paris_Execution_Map_v0.2.geojson) | [KML](75_Execution_Maps/Paris_Execution_Map_v0.2.kml) | 10 | 숙소 후보 1 · 핵심 방문지 7 · 근교·이동지 2 |
 
 ## Phase 6 검증결과
 
