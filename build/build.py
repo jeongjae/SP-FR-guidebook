@@ -160,7 +160,7 @@ PHASE4_DIR = DAILY_IMG_DIR / "Phase4_Provence_Final"
 DAILY_V2_DIR = DAILY_IMG_DIR / "v2"
 PHASE4_DAYS = set(range(12, 25))  # Day 12–24는 Phase 4 카드 우선
 DAILY_MAPS_JSON = SOURCE / "ASSETS" / "76_Daily_Execution_Maps" / "daily-maps.json"
-# Phase 5 배치 전환 — 배치 1~5 (Day 1~25) + 파일럿 Day 6. Day 4 는 비지도 이동일.
+# Phase 5 배치 전환 — 배치 1~6 (Day 1~30) + 파일럿 Day 6. Day 4 는 비지도 이동일.
 GOOGLE_MAP_PILOT_DATES = {"2026-08-29", "2026-08-30", "2026-08-31",
                           "2026-09-02", "2026-09-03", "2026-09-04",
                           "2026-09-05", "2026-09-06", "2026-09-07",
@@ -168,7 +168,9 @@ GOOGLE_MAP_PILOT_DATES = {"2026-08-29", "2026-08-30", "2026-08-31",
                           "2026-09-11", "2026-09-12", "2026-09-13",
                           "2026-09-14", "2026-09-15", "2026-09-16",
                           "2026-09-17", "2026-09-18", "2026-09-19",
-                          "2026-09-20", "2026-09-21", "2026-09-22"}
+                          "2026-09-20", "2026-09-21", "2026-09-22",
+                          "2026-09-23", "2026-09-24", "2026-09-25",
+                          "2026-09-26", "2026-09-27"}
 GOOGLE_MAP_PILOT_REGIONS = {
     "barcelona.html": "barcelona", "girona.html": "girona", "nice.html": "nice",
     "aix.html": "aix", "luberon.html": "luberon", "avignon.html": "avignon",
@@ -4850,8 +4852,8 @@ def check_phase6_map_guards():
             if page_text.count('>길찾기</a>') != count:
                 problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 88 or len(google_places) != 88:
-        problems.append(f"지도 기준점 총 {total}개 (기대 88) / 레지스트리 {len(google_places)}개 (기대 88)")
+    if total != 94 or len(google_places) != 94:
+        problems.append(f"지도 기준점 총 {total}개 (기대 94) / 레지스트리 {len(google_places)}개 (기대 94)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
@@ -4864,7 +4866,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 88개(레지스트리 기준) · 43일 라우팅 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 94개(레지스트리 기준) · 43일 라우팅 이상 없음")
 
 
 def check_daily_map_guards():
