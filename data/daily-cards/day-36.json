@@ -3,58 +3,135 @@
   "day": 36,
   "date": "2026-10-03",
   "city": "Paris",
-  "title": "Versailles 옵션일",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Arc 전날의 유연한 문화일",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4/2",
+  "totalDistance": "약 1km · 도보 + 메트로",
+  "fatigue": "2–3",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "versailles-trianon-2",
+      "id": "slow-morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Versailles 궁전·정원·Trianon 중 2개",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Versailles 궁전·정원·Trianon 중 2개",
+      "start": "09:00",
+      "end": "10:30",
+      "name": "느린 아침",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "다음 날 이른 이동(Arc)을 고려",
       "menu": null,
-      "reservation": "Versailles",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "bookshop-market",
+      "order": 2,
+      "start": "11:00",
+      "end": "12:30",
+      "name": "서점 또는 숙소권 시장",
+      "category": "shopping",
+      "lat": 48.8404,
+      "lng": 2.3475,
+      "summary": "예약 없는 선택",
+      "menu": null,
+      "reservation": null,
+      "optional": true
+    },
+    {
+      "id": "culture-pick",
+      "order": 3,
+      "start": "14:00",
+      "end": "17:00",
+      "name": "박물관 1곳 / BnF Richelieu / 동네 권역",
+      "category": "culture",
+      "lat": 48.867,
+      "lng": 2.33838,
+      "summary": "미완료 우선, 3시간 상한 — 한 권역만",
+      "menu": null,
+      "reservation": "당일 운영 확인",
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 4,
+      "start": "17:00",
+      "end": null,
+      "name": "장보기·숙소식",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "Arc 티켓·교통 확인, 야간행사 없음",
+      "menu": null,
+      "reservation": "Arc 입장권·교통 최종 확인",
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "slow-morning",
+      "to": "bookshop-market",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "bookshop-market",
+      "to": "culture-pick",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "culture-pick",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "Versailles"
+    "도보·메트로"
   ],
   "food": [
-    "현지 조기점심"
+    "점심·휴식 12:30–14:00",
+    "숙소 저녁"
   ],
   "highlights": [
-    "Versailles 궁전·정원·Trianon 중 2개",
-    "선택·축소: 대체: 15구 생활일"
+    "오후 한 권역만 · 3시간 상한",
+    "Arc 토요 프로그램·Hamlet 조합 제외",
+    "저녁은 Arc 준비"
   ],
-  "backup": "15구 생활일",
-  "map": null,
+  "backup": "피로 시 문화일정 삭제, 생활일 전환",
+  "map": {
+    "zoom": 13,
+    "center": [
+      48.855,
+      2.342
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Arc 입장권·이동 교통 최종 확인",
+    "박물관/BnF 당일 운영 확인",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-10-10월3일",
+    "source/ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.kml (BnF Richelieu)"
   ]
 }
