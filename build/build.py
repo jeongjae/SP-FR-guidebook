@@ -4557,6 +4557,11 @@ def build_pwa():
         relpath = path.relative_to(SITE).as_posix()
         if relpath in excluded:
             continue
+        # 검수용 Action Map PNG 원본(약 40MB)은 화면 표시에 쓰이지 않는다 —
+        # 표시용 WebP만 선캐시하고 원본은 온라인 전용으로 남겨 오프라인
+        # 전체 저장을 가볍게 유지한다.
+        if relpath.startswith("assets/daily-cards/full/") and relpath.endswith(".png"):
+            continue
         content = path.read_bytes()
         digest = hashlib.sha256(content).hexdigest()
         records.append({"path": relpath, "size": len(content), "sha256": digest})
