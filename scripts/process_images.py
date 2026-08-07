@@ -123,9 +123,15 @@ def main():
                 made = variant(image, item["imageId"], "hero", width, round(width * 9 / 16), item["focus"])
                 if made:
                     variants["hero"].append(made)
-        made = variant(image, item["imageId"], "content", 1280)
-        if made:
-            variants["content"].append(made)
+        # Extremely detailed frames can exceed the content byte budget even at
+        # the quality floor; step the width down until the file fits.
+        for content_width in (1280, 1080, 960):
+            made = variant(image, item["imageId"], "content", content_width)
+            if made and made["bytes"] <= BYTE_LIMIT["content"]:
+                variants["content"].append(made)
+                break
+            if made:
+                (ROOT / made["path"]).unlink()
         made = variant(image, item["imageId"], "thumbnail", 480, 320, item["focus"])
         if made:
             variants["thumbnail"].append(made)

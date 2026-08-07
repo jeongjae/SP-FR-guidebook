@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-06",
+  "generatedAt": "2026-08-07",
   "regions": [
     "aix",
     "avignon",
@@ -8,7 +8,8 @@
     "girona",
     "luberon",
     "lyon",
-    "nice"
+    "nice",
+    "paris"
   ],
   "images": [
     {
@@ -5657,7 +5658,1788 @@
       },
       "selectionScore": 98,
       "originalBytes": 5007952
+    },
+    {
+      "imageId": "paris-city-01",
+      "placeId": "paris",
+      "title": "Paris as seen from the Tour Montparnasse, 11 May 2014.jpg",
+      "titleKo": "파리 전경",
+      "description": "Paris",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_as_seen_from_the_Tour_Montparnasse,_11_May_2014.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Paris_as_seen_from_the_Tour_Montparnasse%2C_11_May_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Amaya & Laurent",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 2048,
+      "originalHeight": 1152,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-city-01.jpg",
+      "originalSha256": "da75de5e92bef5948f10d69ec9677acd2eeb79fb2010cf2bfcef468051a44b7e",
+      "usage": [
+        "daily/day-28.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "몽파르나스 타워 전망대에서 본 파리 시가지와 에펠탑, 멀리 라데팡스",
+      "captionKo": "몽파르나스 타워에서 본 파리 — 에펠탑과 샹드마르스, 지평선의 라데팡스 고층지구.",
+      "focus": {
+        "x": 0.35,
+        "y": 0.4
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-city-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-city-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 99674,
+            "sha256": "4891e636641b58c3398aea51fe54689172cbcb847581e833ccda1e823c225ac2",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-city-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-city-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 234734,
+            "sha256": "eb60cc19923940b6a758b4cd9dce4e686af66e7149f2d2fde49eadf432b7e6f8",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-city-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-city-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 424256,
+            "sha256": "d4162a31aa5d98e70168a7c4fd401de079b134256ca06d8969aea5cc4cc0a64f",
+            "quality": 77
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-city-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-city-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 218190,
+            "sha256": "547bae56afd3fe65d83f31652d196c8ec52665de70a5c2a938f2a6186125d664",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-city-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-city-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34098,
+            "sha256": "9b34665b1aef6dbcf4369e8dcd8c40931fcc96451ecee1d28a9722983cdaaebd",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 2636392
+    },
+    {
+      "imageId": "paris-notre-dame-01",
+      "placeId": "notre-dame-de-paris",
+      "title": "Notre-Dame de Paris 2013-07-24.jpg",
+      "titleKo": "노트르담 대성당",
+      "description": "Cathedral Notre Dame de Paris, West view, Paris, France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/af/Notre-Dame_de_Paris_2013-07-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "P e z i",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 3348,
+      "originalHeight": 4519,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-notre-dame-01.jpg",
+      "originalSha256": "a2928dc0fbd831348ce9c5f189a12e6ac73a2d7829327184fdb952588d60ed2a",
+      "usage": [
+        "daily/day-29.html",
+        "places/notre-dame-de-paris.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "노트르담 대성당 서쪽 정면 — 쌍탑과 장미창이 있는 고딕 파사드",
+      "captionKo": "노트르담 대성당 서쪽 파사드. 2019년 화재 후 복원을 거쳐 2024년 12월 재개관했다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-notre-dame-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-notre-dame-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 65654,
+            "sha256": "c48b43c71567f39073632881acc12037274f039e5eef2e2500c36a2e8da6005f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-notre-dame-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-notre-dame-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 139318,
+            "sha256": "97831124a89191513d6051d0c4a8ac7d52913b334f73f87e9e714f3fe6b0ed1c",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-notre-dame-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-notre-dame-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 250212,
+            "sha256": "f909ad2c150f17309cfe65db445f2d2a5f0a1f4d1fe0b41f9aa7398ead82d6ff",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-notre-dame-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-notre-dame-01-content-1280.webp",
+            "width": 1280,
+            "height": 1728,
+            "bytes": 274902,
+            "sha256": "c7a3560e2287f07933218e5294aad7a5206af1293852f6ba1d1ddb05a9fee82c",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-notre-dame-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-notre-dame-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26218,
+            "sha256": "c3d020d5f384de41380af0beb6d86b878bc06881c38985bcaad5168a73d2ba49",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 2963,
+      "storedHeight": 4000,
+      "originalBytes": 4140764
+    },
+    {
+      "imageId": "paris-latin-quarter-01",
+      "placeId": "latin-quarter",
+      "title": "Rue Mouffetard, Paris 24 Mai 2014.jpg",
+      "titleKo": "무프타르 거리",
+      "description": "Rue Mouffetard, Paris.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rue_Mouffetard,_Paris_24_Mai_2014.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Rue_Mouffetard%2C_Paris_24_Mai_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Matt Casagrande from Somerville, MA",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 3885,
+      "originalHeight": 2573,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-latin-quarter-01.jpg",
+      "originalSha256": "f2f55d064501856c24f043b143356369bdbb77468c1dba3153a2b1cc67a27ad3",
+      "usage": [
+        "daily/day-29.html",
+        "places/latin-quarter.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "비에 젖은 무프타르 거리의 자갈길과 카페, 상점 앞을 걷는 행인들",
+      "captionKo": "라탱 지구 무프타르 거리 — 파리에서 가장 오래된 시장 거리 중 하나.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-latin-quarter-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-latin-quarter-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 79344,
+            "sha256": "bd231dbcaa39d7b6a97d4ec1a8dc1248ac6c61247cbfcde9e595322375772cd2",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-latin-quarter-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-latin-quarter-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 190370,
+            "sha256": "6021ed6cb1d617f54219724ef5d93f340b4d58734baaa55c000cf714b58ef862",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-latin-quarter-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-latin-quarter-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 423762,
+            "sha256": "a7ea03a4b3b3d5197f50692e67749ad5b31a9dd9dc6843c047872a803aab262f",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-latin-quarter-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-latin-quarter-01-content-1280.webp",
+            "width": 1280,
+            "height": 848,
+            "bytes": 203340,
+            "sha256": "db52f9faa362685caec3716be9481b8ca23540d07363ed983310df73560b2e5c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-latin-quarter-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28644,
+            "sha256": "2ea6082c2dcb8372e715edab35cd97612d0b6d046e9ad08ffe4e8fb8986f23d8",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 9010397
+    },
+    {
+      "imageId": "paris-pantheon-01",
+      "placeId": "pantheon-paris",
+      "title": "Facade of the Panthéon de Paris, 3 May 2012.jpg",
+      "titleKo": "팡테옹",
+      "description": "Facade of the Panthéon de Paris.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Facade_of_the_Panth%C3%A9on_de_Paris,_3_May_2012.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/90/Facade_of_the_Panth%C3%A9on_de_Paris%2C_3_May_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Nick Loyless from Dallas, TX, United States",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4770,
+      "originalHeight": 3407,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-pantheon-01.jpg",
+      "originalSha256": "db3f287ad0db5dbb3e4e1bb28c9e57d1940941b89e2a923157245fa879ba6964",
+      "usage": [
+        "daily/day-29.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "팡테옹의 코린트식 열주 파사드와 돔 전경",
+      "captionKo": "팡테옹 — 'AUX GRANDS HOMMES LA PATRIE RECONNAISSANTE' 명문이 새겨진 정면과 돔.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-pantheon-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-pantheon-01-content-1280.webp",
+            "width": 1280,
+            "height": 914,
+            "bytes": 132550,
+            "sha256": "7e16ca2350c49e8e984aaf63f0736cba434b4c875a519c9f1ce234e88ace5e08",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-pantheon-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-pantheon-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21072,
+            "sha256": "01e80b254d80ac20ce0c5e430cc074346ea0592b820b05b7ab8e3ef10b4b9744",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2857,
+      "originalBytes": 3547692
+    },
+    {
+      "imageId": "paris-marais-01",
+      "placeId": "le-marais",
+      "title": "Jewish quarter, rue des Rosiers, Le Marais, Paris 2016.jpg",
+      "titleKo": "마레 지구",
+      "description": "Jewish quarter @ Rue des Rosiers @ Le Marais @ Paris",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jewish_quarter,_rue_des_Rosiers,_Le_Marais,_Paris_2016.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Jewish_quarter%2C_rue_des_Rosiers%2C_Le_Marais%2C_Paris_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Guilhem Vellut from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 5472,
+      "originalHeight": 3648,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-marais-01.jpg",
+      "originalSha256": "259b7d2bb1338d123a78e1d7aa3e6a1f7e2497eb1c82f3c27f455bd669df4fd4",
+      "usage": [
+        "daily/day-30.html",
+        "places/le-marais.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "마레 지구 로지에 거리의 자갈길과 상점들, 걸어가는 사람들",
+      "captionKo": "마레 지구 로지에 거리(rue des Rosiers) — 좁은 자갈길을 따라 상점과 빵집이 이어진다.",
+      "focus": {
+        "x": 0.45,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-marais-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-marais-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 65992,
+            "sha256": "770094e2a00945ff4597f08dab0d2894d0cfce5366c3ca346e0aba2778415079",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-marais-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-marais-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 149142,
+            "sha256": "2809c6a04bf4f3d8c73318d60eada16f8315c83542115eb99a69f027ef7ff222",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-marais-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-marais-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 297482,
+            "sha256": "a4548add4fcfde65708b4d5ff850c071b8d1bf09da39d8bb5be49105f4895b6c",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-marais-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-marais-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 163564,
+            "sha256": "6af2724599050648ef7d8c4d9f0cf4f6bbded4931fcdf7dfa54a81173bc2b432",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-marais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-marais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24584,
+            "sha256": "21ab80b812a376b54d1d592db458f7e4a6aea5d1d23f9c1c64def3fe6778c473",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "originalBytes": 3660052
+    },
+    {
+      "imageId": "paris-luxembourg-01",
+      "placeId": "jardin-du-luxembourg",
+      "title": "Paris Palais du Luxembourg façade s printemps 2014.jpg",
+      "titleKo": "뤽상부르 공원",
+      "description": "South facade and basin of the Luxembourg Palace(built from 1615 to 1631) in spring, Paris (6th arr.)",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_Palais_du_Luxembourg_fa%C3%A7ade_s_printemps_2014.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/df/Paris_Palais_du_Luxembourg_fa%C3%A7ade_s_printemps_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "JLPC",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 10333,
+      "originalHeight": 3204,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-luxembourg-01.jpg",
+      "originalSha256": "10e5acc5367a85d43cd6c085d47f7156ab15354b54cf678b663a34bfdfa9c3c5",
+      "usage": [
+        "daily/day-30.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "뤽상부르 궁전 남쪽 파사드와 그랑 바생 연못가에 앉은 사람들",
+      "captionKo": "뤽상부르 공원 — 궁전(현 상원 의사당) 앞 그랑 바생 연못.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-luxembourg-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-luxembourg-01-content-1280.webp",
+            "width": 1280,
+            "height": 397,
+            "bytes": 76838,
+            "sha256": "a684563bbf62a7f06e3f6360af0aa8610be6f5d13468f607e4d5b9abd49c49d9",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-luxembourg-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-luxembourg-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21696,
+            "sha256": "11346b7f0a03a8c31f03c42c0ce190288db21ed6aa3f000342ca418309321efb",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 1240,
+      "originalBytes": 2017084
+    },
+    {
+      "imageId": "paris-marche-monge-01",
+      "placeId": "marche-monge",
+      "title": "Marché Monge, Paris 30 March 2008.jpg",
+      "titleKo": "몽주 시장",
+      "description": "Marché Monge",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:March%C3%A9_Monge,_Paris_30_March_2008.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f2/March%C3%A9_Monge%2C_Paris_30_March_2008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "yisris from Morioka, Japan",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 1920,
+      "originalHeight": 1080,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-marche-monge-01.jpg",
+      "originalSha256": "e3148e4c479dc9f631a4ec5d474892eab4c4a22e9ab8e0785c20b013e210a0b1",
+      "usage": [
+        "daily/day-30.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "몽주 시장 빵 가판대 — 바게트와 시골빵, 손글씨 가격표",
+      "captionKo": "몽주 광장의 노천 시장 가판대.",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-marche-monge-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-marche-monge-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 95006,
+            "sha256": "a00b7417ee8b5fe8716f2d18b5ee9b1f41dfac8b3a1a8f55abafbfc0dab9278b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-marche-monge-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-marche-monge-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15988,
+            "sha256": "7a4b881c25635aaca04b81716cdb3fddfa37dcc774510744cfa66b5c6a953901",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 1026183
+    },
+    {
+      "imageId": "paris-louvre-01",
+      "placeId": "musee-du-louvre",
+      "title": "Louvre Cour Carrée June 2010.jpg",
+      "titleKo": "루브르 박물관",
+      "description": "West wing of the Cour Carrée of the Louvre .",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Louvre_Cour_Carr%C3%A9e_June_2010.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/11/Louvre_Cour_Carr%C3%A9e_June_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "King of Hearts",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 3008,
+      "originalHeight": 2000,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-louvre-01.jpg",
+      "originalSha256": "3293d6165ce4a5c2a7d1f107f206a0ef6df8c7bd879a7595f4b9ccf29f449c54",
+      "usage": [
+        "daily/day-31.html",
+        "places/musee-du-louvre.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "루브르 쿠르 카레 안뜰과 중앙의 파비용 쉴리 시계탑",
+      "captionKo": "루브르 박물관의 쿠르 카레(Cour Carrée) 안뜰 — 옛 궁전 파사드가 사방을 둘러싼다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-louvre-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-louvre-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 54514,
+            "sha256": "745da2ba5fce3582f668ba7fafbf0718e6e2a30ca33d44cd6de459886f4358c4",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-louvre-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-louvre-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 126688,
+            "sha256": "fc60598bb57b75869d0563f2fa6281c6304fc2ac6fc1e376cac8972b8b774814",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-louvre-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-louvre-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 257812,
+            "sha256": "efb785095a8316c1d9400ead70f5940ff91a568699e00598aeae9f58d2ccc8ae",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-louvre-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-louvre-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 141952,
+            "sha256": "53afb805bf8cf357bb0f01d9050dfb2133f93ee7a90f6161d5b422721a1e8b28",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-louvre-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-louvre-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20310,
+            "sha256": "105554851956df4f1e1344d5251a3440692db7756230a09a3b4f5577c96a61d7",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2662171
+    },
+    {
+      "imageId": "paris-palais-royal-01",
+      "placeId": "palais-royal",
+      "title": "Paris Palais Royal Jardin 184.jpg",
+      "titleKo": "팔레 루아얄",
+      "description": "Palais Royal im 1. Arrondissement in Paris (Île-de-France/Frankreich), Fassade zum Garten (Jardin du Palais Royal)",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_Palais_Royal_Jardin_184.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/79/Paris_Palais_Royal_Jardin_184.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "GFreihalter",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 3264,
+      "originalHeight": 4896,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-palais-royal-01.jpg",
+      "originalSha256": "74e129a033cb5e94f57fed68f599fce654709694857315babd544336d144b441",
+      "usage": [
+        "daily/day-31.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "팔레 루아얄 정원 쪽 파사드와 아케이드 아치, 카페 테라스",
+      "captionKo": "팔레 루아얄 정원에서 본 회랑 파사드.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-palais-royal-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-palais-royal-01-content-1280.webp",
+            "width": 1280,
+            "height": 1920,
+            "bytes": 294484,
+            "sha256": "5cc210dc284924deb301badcd1a1e2539bff5c631ceafe7f037860ff05c63c26",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-palais-royal-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-palais-royal-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27226,
+            "sha256": "986676fea57710ed56c6ff0570ede8283d7ccb732c32963c1541a20580dc0a12",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 2667,
+      "storedHeight": 4000,
+      "originalBytes": 3432961
+    },
+    {
+      "imageId": "paris-montmartre-01",
+      "placeId": "montmartre",
+      "title": "Paris 75018 Rue Foyatier 20161030 - 1300 handrails.jpg",
+      "titleKo": "몽마르트르",
+      "description": "Escaliers de Montmartre, main courante rue Foyatier, XVIIIe arrondissement, Paris, France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_75018_Rue_Foyatier_20161030_-_1300_handrails.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Paris_75018_Rue_Foyatier_20161030_-_1300_handrails.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Maria Eklind",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4000,
+      "originalHeight": 6000,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-montmartre-01.jpg",
+      "originalSha256": "b76164bbc7ea50d159481681e973eab10aa4ebd3b205c11a77fa9cbc89194eaf",
+      "usage": [
+        "daily/day-32.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "몽마르트르 언덕 계단과 난간, 가로등, 나무 사이로 보이는 사크레쾨르 돔",
+      "captionKo": "몽마르트르 언덕의 계단길 — 계단 위 나무 사이로 사크레쾨르 돔이 살짝 보인다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-montmartre-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-montmartre-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 86106,
+            "sha256": "97a8559f22d503647639582d9c3bb6768e189cf641801ac60df13e9e4a3f4dc0",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-montmartre-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-montmartre-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 155506,
+            "sha256": "484ccc1d5d872ef386d7305a58a34d2647f54e416e056822c77d50241dfd881f",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-montmartre-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-montmartre-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 259076,
+            "sha256": "8181a044969982cf76cafc32adee04c4d42dbdfe12d28630a254b2c8925b3f6a",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-montmartre-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-montmartre-01-content-1280.webp",
+            "width": 1280,
+            "height": 1920,
+            "bytes": 296346,
+            "sha256": "162fa2aa4ba7ea5223712bd81157c721543a0ae87f2da3ba5b4c613476bbb8cf",
+            "quality": 66
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-montmartre-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-montmartre-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 40634,
+            "sha256": "2e5b81fb259cae45fba6da0c55ee8ea970e69910c624bf1a08cfda2204905479",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 2667,
+      "storedHeight": 4000,
+      "originalBytes": 3627403
+    },
+    {
+      "imageId": "paris-sacre-coeur-01",
+      "placeId": "sacre-coeur",
+      "title": "Basilique du Sacré-Cœur de Montmartre - Paris - GT-01 - 2024.jpg",
+      "titleKo": "사크레쾨르 대성당",
+      "description": "Basilica of the Sacred Heart of Montmatre, seen from Square Louise Michel, Paris.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre_-_Paris_-_GT-01_-_2024.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre_-_Paris_-_GT-01_-_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Terragio67",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 9998,
+      "originalHeight": 9998,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-sacre-coeur-01.jpg",
+      "originalSha256": "14d500a27e521b917c403142374c8294b3a4adbc0735d8385ec98ec96c639932",
+      "usage": [
+        "daily/day-32.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "푸른 하늘 아래 흰 돔 세 개가 솟은 사크레쾨르 대성당 정면",
+      "captionKo": "몽마르트르 언덕 위의 사크레쾨르 대성당 — 흰 석재의 돔이 정면 계단 위로 솟아 있다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-sacre-coeur-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-sacre-coeur-01-content-1280.webp",
+            "width": 1280,
+            "height": 1280,
+            "bytes": 184566,
+            "sha256": "f3cbc4f887650ecf0e1dafe97263c1351639f93c0356aff00918281aa6681e4e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-sacre-coeur-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-sacre-coeur-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13954,
+            "sha256": "3ab8e39fa94385ead8e6590870c02eeedcc7a819a2c66701538a386ed06ae7a6",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 4000,
+      "originalBytes": 4576190
+    },
+    {
+      "imageId": "paris-bnf-richelieu-01",
+      "placeId": "bnf-richelieu",
+      "title": "La salle ovale du site Richelieu, Bibliothèque nationale de France, Paris 2022.jpg",
+      "titleKo": "프랑스 국립도서관 리슐리외",
+      "description": "La salle ovale, (1897), architectes Jean-Louis Pascal et son successeur Alfred Recoura. Site Richelieu, BNF, Paris <a href=\" https://salleovale.bnf.fr/ \" rel=\"noreferrer nofollow\">salleovale.bnf.fr/</a> présentation sonore <a href=\" https://bnf.visite.zone/group/6239fa13c434f97940409fda/ \" rel=\"noreferrer nofollow\">bnf.visite.zone/group/6239fa13c434f97940409fda/</a> \"Salle emblématique de la BnF I Richelieu, la salle Ovale est ouverte à tous, gratuitement et sans limite d’âge. Parmi les 20 000 volumes disponibles en libre accès, une collection de 9 000 bandes dessinées à découvrir seul ou en famille..\". Extrait du site de la BNF <a href=\" https://www.bnf.fr/fr/la-salle-ovale \" rel=\"noreferrer nofollow\">www.bnf.fr/fr/la-salle-ovale</a>",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:La_salle_ovale_du_site_Richelieu,_Biblioth%C3%A8que_nationale_de_France,_Paris_2022.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/4/44/La_salle_ovale_du_site_Richelieu%2C_Biblioth%C3%A8que_nationale_de_France%2C_Paris_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 7952,
+      "originalHeight": 5605,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-bnf-richelieu-01.jpg",
+      "originalSha256": "8c28a1706b66a9b1988077b1d61ec209fa33b172d3956339cd1234bf508c5c6a",
+      "usage": [
+        "daily/day-33.html",
+        "places/bnf-richelieu.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "BnF 리슐리외관 살 오발 타원형 열람실 내부",
+      "captionKo": "리슐리외관의 타원형 열람실 '살 오발' — 1932년부터 일반에 개방된 공간이다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.42
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-bnf-richelieu-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-bnf-richelieu-01-content-1280.webp",
+            "width": 1280,
+            "height": 902,
+            "bytes": 261006,
+            "sha256": "d0898d9e129443baffb869038e71d5e4f31167dd18734d87804e33689d8f5eaf",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-bnf-richelieu-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 43522,
+            "sha256": "92654c7dcab3cb5c2e37148e1275fd12a3211e84c4b3c0061fa0f3049b3d98d2",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2819,
+      "originalBytes": 4952431
+    },
+    {
+      "imageId": "paris-passages-01",
+      "placeId": "passages-couverts",
+      "title": "Galerie Vivienne, 12 March 2015.jpg",
+      "titleKo": "파리 아케이드",
+      "description": "Vivienne covered passage, in Paris, 2nd arrondissement. Galerie Vivienne is home of several fashion and haute couture stores, including Jean-Paul Gaultier's.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galerie_Vivienne,_12_March_2015.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Galerie_Vivienne%2C_12_March_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Benh LIEU SONG",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 7706,
+      "originalHeight": 3893,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-passages-01.jpg",
+      "originalSha256": "c3821d5e95ec00a2b2fc95d4786891c112ec951e9eb54d2392bdc452c1c228aa",
+      "usage": [
+        "daily/day-33.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "갤러리 비비엔 유리 지붕 아케이드 내부와 서점",
+      "captionKo": "갤러리 비비엔 — 유리 지붕 아래 모자이크 바닥과 고서점이 이어지는 2구의 아케이드.",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-passages-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-passages-01-content-1280.webp",
+            "width": 1280,
+            "height": 647,
+            "bytes": 168738,
+            "sha256": "73b98d297f76efe94ca2e969c9f9a5f453583bd952708c00672cddffacbbba57",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-passages-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-passages-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34046,
+            "sha256": "d1ba59ca9f00b42cb47f33cae579e37f835feed9b08d22afadf8477d570fe0a5",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2021,
+      "originalBytes": 3846535
+    },
+    {
+      "imageId": "paris-grand-palais-01",
+      "placeId": "grand-palais",
+      "title": "Grand Palais - PA00088877 - Bonhams 2013 - Vue d'ensemble - 007.jpg",
+      "titleKo": "그랑 팔레",
+      "description": "Vue du grand Palais lors de la vente Bonhams 2013.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grand_Palais_-_PA00088877_-_Bonhams_2013_-_Vue_d%27ensemble_-_007.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Grand_Palais_-_PA00088877_-_Bonhams_2013_-_Vue_d%27ensemble_-_007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Thesupermat",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4752,
+      "originalHeight": 3168,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-grand-palais-01.jpg",
+      "originalSha256": "3786ffbf5d6befa6b078939959bb2171487de358af292e2e964362bdc95fa1de",
+      "usage": [
+        "daily/day-34.html",
+        "places/grand-palais.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "그랑 팔레 유리 천장 아래 강철 아치가 이어지는 대전시장 내부",
+      "captionKo": "1900년 만국박람회 때 지은 그랑 팔레의 대전시장(네프) — 강철 아치와 유리 지붕이 실내를 덮는다.",
+      "focus": {
+        "x": 0.6,
+        "y": 0.35
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-grand-palais-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-grand-palais-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 121996,
+            "sha256": "08f0c6f72395fc383f5f91a411b45b35af7d4c9fad57421ac6e39735c4bbb8a9",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-grand-palais-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-grand-palais-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 270416,
+            "sha256": "3d8ff3364dc73da5613b4f0588975490931ec14d7f487978210263ba93340db3",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-grand-palais-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-grand-palais-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 436758,
+            "sha256": "a582ab9523ac86773072980376b0fde721513b6fb27981268806e19ccea211ce",
+            "quality": 74
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-grand-palais-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-grand-palais-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 261350,
+            "sha256": "fd73966aea5b8a04536ec2d99cbc8168776b4083fbb1fa6113a27279f3a67a4b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-grand-palais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-grand-palais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 43648,
+            "sha256": "4cbfd3c62462eafc464ca5299e6355b3128544da218f7c4271131639ac20a3d4",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "originalBytes": 4625097
+    },
+    {
+      "imageId": "paris-enfants-rouges-01",
+      "placeId": "marche-des-enfants-rouges",
+      "title": "Marché des Enfants-Rouges, Paris May 2016.jpg",
+      "titleKo": "앙팡 루주 시장",
+      "description": "Le marché",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:March%C3%A9_des_Enfants-Rouges,_Paris_May_2016.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/2/2e/March%C3%A9_des_Enfants-Rouges%2C_Paris_May_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "besopha",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 2780,
+      "originalHeight": 1853,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-enfants-rouges-01.jpg",
+      "originalSha256": "2e580b6f1523ee00e44e9d0fb569ef48ee3cf5f78cc1bf6f042be627b2217be6",
+      "usage": [
+        "daily/day-35.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "앙팡 루주 시장 정문의 철제 아치 간판과 안쪽 시장 풍경",
+      "captionKo": "브르타뉴 거리 쪽 앙팡 루주 시장 입구 — 철제 아치 간판 너머로 시장 통로가 이어진다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-enfants-rouges-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-enfants-rouges-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 129712,
+            "sha256": "75c412f08a13be42fa91bf3e4886607bdd923b28dbb63fd7924d460f77bee6f4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-enfants-rouges-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-enfants-rouges-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22888,
+            "sha256": "ac0949d33bdbbb4db073dc805fe8ad58a27e8744e505fe485ee0d4d71695ea54",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1313938
+    },
+    {
+      "imageId": "paris-versailles-01",
+      "placeId": "versailles",
+      "title": "Parterre du Midi Garden pond and Palace of Versailles at golden hour with blue sky in France.jpg",
+      "titleKo": "베르사유 궁전",
+      "description": "Parterre du Midi , Garden, pond and Palace of Versailles , a sunny day with blue sky at golden hour , Yvelines department, in France .",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Parterre_du_Midi_Garden_pond_and_Palace_of_Versailles_at_golden_hour_with_blue_sky_in_France.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Parterre_du_Midi_Garden_pond_and_Palace_of_Versailles_at_golden_hour_with_blue_sky_in_France.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 7761,
+      "originalHeight": 4070,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-versailles-01.jpg",
+      "originalSha256": "36edf25fb26db9edabc2613add18bdfb7792f42035f99c6ae29412944ed4453a",
+      "usage": [
+        "daily/day-36.html",
+        "places/versailles.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "베르사유 궁전 정원 쪽 파사드와 남쪽 화단",
+      "captionKo": "정원에서 본 베르사유 궁전 — 남쪽 화단과 연못 너머로 서쪽 파사드가 펼쳐진다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-versailles-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-versailles-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 97606,
+            "sha256": "53db4b05434bec2c774562505a54176b9487b480d8f5fe790721b90f9dbba64d",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-versailles-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-versailles-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 244028,
+            "sha256": "2b6e5e4b3ad96509b7f98134bd8dd05c581476cda3930747fee4e68c008fd61b",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-versailles-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-versailles-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 445486,
+            "sha256": "f7413527d899effcf6d49fd927489ec219c8b9af6ea6c8cec1fad00867278be9",
+            "quality": 71
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-versailles-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-versailles-01-content-1280.webp",
+            "width": 1280,
+            "height": 671,
+            "bytes": 211608,
+            "sha256": "96b28066434139ab71c237b5b28e54893920e305d76b39d9ca0b67b10c1db75f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-versailles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-versailles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34900,
+            "sha256": "53ccaec6be03e472c1c5814d4a13122eaf3160cff5bcea97cefbdd43feed8ca4",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2098,
+      "originalBytes": 4723123
+    },
+    {
+      "imageId": "paris-versailles-gardens-01",
+      "placeId": "versailles-gardens",
+      "title": "Vue aérienne du domaine de Versailles par ToucanWings - Creative Commons By Sa 3.0 - 113.jpg",
+      "titleKo": "베르사유 정원",
+      "description": "Aerial view of the bassin d'Apollon and the Grand Canal in the gardens of Palace of Versailles , France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_113.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/02/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_113.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "ToucanWings",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4470,
+      "originalHeight": 3352,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-versailles-gardens-01.jpg",
+      "originalSha256": "161e5aa644d5780e6cd3bc34b31e8142e3e105295d981b64342093ac9c3fe2c2",
+      "usage": [
+        "daily/day-36.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아폴론 분수와 그랑 카날 축선 항공 사진",
+      "captionKo": "아폴론 분수에서 그랑 카날로 이어지는 정원의 대축선.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-versailles-gardens-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-versailles-gardens-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 179928,
+            "sha256": "7c9310ae65d666b24eae742e80ee07d5604a037c44e0c4332aca10b2eb0a86c0",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-versailles-gardens-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-versailles-gardens-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22512,
+            "sha256": "09cf2960478fa12bbde70b333cfbd1eab92b48306e7dfe6c8314908377772220",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 3000,
+      "originalBytes": 4075183
+    },
+    {
+      "imageId": "paris-trianon-01",
+      "placeId": "trianon",
+      "title": "Petit Trianon, Versailles, 29 September 2012.jpg",
+      "titleKo": "트리아농",
+      "description": "Le Petit Trianon a été édifié en 1750 par l'architecte Gabriel.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Petit_Trianon,_Versailles,_29_September_2012.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Petit_Trianon%2C_Versailles%2C_29_September_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Jean-Pierre Dalbéra from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 3240,
+      "originalHeight": 2160,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-trianon-01.jpg",
+      "originalSha256": "7c16c5e9ca008f9c73b2b9b0d520c7cced37831328a276dcf02ff0a86bd488d5",
+      "usage": [
+        "daily/day-36.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "프티 트리아농 파사드와 화분에 심긴 오렌지 나무",
+      "captionKo": "9월 오후의 프티 트리아농 — 신고전주의 별궁이다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-trianon-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-trianon-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 170438,
+            "sha256": "39be2440a6585dfd5686590fc6c1051e9b576e72fb4b0cc3ef063d2dddaae41f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-trianon-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-trianon-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21176,
+            "sha256": "f91fecf78253522ff7d993afc67eed1ada0fe01913ba35f03b3d191de6508985",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 4704396
+    },
+    {
+      "imageId": "paris-canal-saint-martin-01",
+      "placeId": "canal-saint-martin",
+      "title": "Paris Canal St-Martin écluses Récollets 2013.jpg",
+      "titleKo": "생마르탱 운하",
+      "description": "Canal Saint-Martin : the locks of Récollets as seen from the passerelle Bichat, Paris, 10th arrondissement, France.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_Canal_St-Martin_%C3%A9cluses_R%C3%A9collets_2013.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Paris_Canal_St-Martin_%C3%A9cluses_R%C3%A9collets_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "JLPC",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4774,
+      "originalHeight": 3113,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-canal-saint-martin-01.jpg",
+      "originalSha256": "6d14caf620e4cdb1b6155a8214793f3fd1f2d8c6f00b9610b54f43606ef09d70",
+      "usage": [
+        "daily/day-37.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "생마르탱 운하 레콜레 갑문과 아치형 철제 인도교, 가로수 우거진 강둑",
+      "captionKo": "생마르탱 운하 — 갑문과 아치형 인도교가 이어지는 10구의 산책로.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-canal-saint-martin-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-canal-saint-martin-01-content-1280.webp",
+            "width": 1280,
+            "height": 835,
+            "bytes": 214716,
+            "sha256": "edf74f0008b455bb272f49872b94c8c3c96b2751769a2e19e689cc4621b936ab",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-canal-saint-martin-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-canal-saint-martin-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31686,
+            "sha256": "cd56e1ac2396f51faf110d74d8e157c3308bdfd794c5f101c94d2984f31c8872",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2608,
+      "originalBytes": 4026214
+    },
+    {
+      "imageId": "paris-orsay-01",
+      "placeId": "musee-d-orsay",
+      "title": "Musee d'Orsay and Pont Royal, North-West view 140402 1.jpg",
+      "titleKo": "오르세 미술관",
+      "description": "The Musée d'Orsay and its surroundings as seen from the Passerelle Léopold Sédar Senghor",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Musee_d%27Orsay_and_Pont_Royal,_North-West_view_140402_1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Musee_d%27Orsay_and_Pont_Royal%2C_North-West_view_140402_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "DXR",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 11745,
+      "originalHeight": 3406,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-orsay-01.jpg",
+      "originalSha256": "5f016b5b4fda1262e81276034f9d59d3e62377ff92cb2799ca3abbc706f5c7d9",
+      "usage": [
+        "daily/day-39.html",
+        "places/musee-d-orsay.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "센강 너머에서 본 오르세 미술관의 시계탑 파사드와 루아얄 다리",
+      "captionKo": "센강변의 오르세 미술관 — 1900년 기차역을 개조한 미술관이다.",
+      "focus": {
+        "x": 0.6,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-orsay-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-orsay-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 60854,
+            "sha256": "3a5cfeadb551c8eb86f79741cb856d30c2c67ce952fe2e3c7d2c206b78926ddd",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-orsay-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-orsay-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 142286,
+            "sha256": "d26cdc9dc2b1c7bbfc9666c5bfa384f679596682600969ff53caac846650f523",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-orsay-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-orsay-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 285660,
+            "sha256": "5ab5c32ff3187a91c95b21dc0147c65375c51d18c932301eb98d4e0ac71613c6",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-orsay-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-orsay-01-content-1280.webp",
+            "width": 1280,
+            "height": 371,
+            "bytes": 61246,
+            "sha256": "e1a51f9adc76b4c0e19f697d0658071e851f496d7955640825c16d37e3a09d09",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-orsay-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-orsay-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22886,
+            "sha256": "0dae9eeafd497c06c5c41dafeb051d4ab8990e5ad803bdc39f176614579b908e",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 1160,
+      "originalBytes": 1518562
+    },
+    {
+      "imageId": "paris-seine-01",
+      "placeId": "seine",
+      "title": "Paris 75006 Quai de Conti Bouquinistes 20150902.jpg",
+      "titleKo": "센강변",
+      "description": "Les bouquinistes des Quais de Seine, Paris, France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_75006_Quai_de_Conti_Bouquinistes_20150902.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/82/Paris_75006_Quai_de_Conti_Bouquinistes_20150902.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Ninara from Helsinki, Finland",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 2768,
+      "originalHeight": 1625,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-seine-01.jpg",
+      "originalSha256": "b61950a29fd1d855bee8480e84ed84ead630feaee1f82a3f9f7535095329d3f0",
+      "usage": [
+        "daily/day-39.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "센강변 콩티 강둑의 부키니스트(헌책·판화 노점) 가판대와 구경하는 사람들",
+      "captionKo": "센강변의 부키니스트 — 강둑 난간을 따라 늘어선 초록색 노점.",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-seine-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-seine-01-content-1280.webp",
+            "width": 1280,
+            "height": 751,
+            "bytes": 279486,
+            "sha256": "4bde70ca07170c5a708f8280a8fa63e05052a669d934fa836f68ce1505494d2f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-seine-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-seine-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 46660,
+            "sha256": "1def22a0149a6222f2f98ccb86f073fa3b17ba245e3c647267a7965bccbf22a7",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 4953855
+    },
+    {
+      "imageId": "paris-bourse-commerce-01",
+      "placeId": "bourse-de-commerce",
+      "title": "Bourse Commerce - Paris I (FR75) - 2021-06-05 - 1.jpg",
+      "titleKo": "부르스 드 코메르스",
+      "description": "Bourse du Commerce, Paris.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bourse_Commerce_-_Paris_I_(FR75)_-_2021-06-05_-_1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Bourse_Commerce_-_Paris_I_%28FR75%29_-_2021-06-05_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4968,
+      "originalHeight": 3678,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-bourse-commerce-01.jpg",
+      "originalSha256": "3cf50e9fcfeb7a5f49e1ad7887966cfc5cd0361a9a1ecef5dd9515b02e8f74ec",
+      "usage": [
+        "daily/day-40.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "부르스 드 코메르스의 곡면 파사드와 페디먼트 조각, 정문 앞 사람들",
+      "captionKo": "옛 곡물거래소 건물인 부르스 드 코메르스(1889) — 원형 로톤다의 곡면 파사드가 특징이다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-bourse-commerce-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-bourse-commerce-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 54552,
+            "sha256": "f39b63d14f25df3d441eb2d81b93c8c4d3ed76891b8c9bf99d1cb8f3619bca50",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-bourse-commerce-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-bourse-commerce-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 118536,
+            "sha256": "5a3e93c523dc81546365bd07c7cb74d2f1023609a17d09f624da338af6c521b4",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-bourse-commerce-01-hero-1920.webp",
+            "sitePath": "assets/images/hero/paris-bourse-commerce-01-hero-1920.webp",
+            "width": 1920,
+            "height": 1080,
+            "bytes": 222202,
+            "sha256": "48233a30879c71d1acfc6f06b0f8feefd9ccdcc2f0c47eb4645d39e44450077d",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-bourse-commerce-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-bourse-commerce-01-content-1280.webp",
+            "width": 1280,
+            "height": 948,
+            "bytes": 151368,
+            "sha256": "f8d180bdaacb88c00bbc77744ff13a15529d3ea0aadb9d30d66ac5e25f7833cd",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-bourse-commerce-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-bourse-commerce-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22302,
+            "sha256": "bf63cd0f3d36663e18ec68f62edbcb50ef253b5381987ae690fdc499208c9047",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2961,
+      "originalBytes": 3284629
+    },
+    {
+      "imageId": "paris-montorgueil-01",
+      "placeId": "montorgueil",
+      "title": "Paris - Rue Montorgueil.JPG",
+      "titleKo": "몽토르게유 거리",
+      "description": "Vue prise du forum des Halles, perspective de la rue Montorgueil vers le nord; restaurant La Pointe de Saint-Eustache, 1 rue Montorgueil, Ier arrondissement, Paris, France.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paris_-_Rue_Montorgueil.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Paris_-_Rue_Montorgueil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Jean-Christophe BENOIST",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 4000,
+      "originalHeight": 3000,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-montorgueil-01.jpg",
+      "originalSha256": "fda1baeebb2bc4984a5510cd87b3859a9c5c4a843f0cbb9fdb6da6d21e893376",
+      "usage": [
+        "daily/day-40.html",
+        "places/montorgueil.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "카페 테라스로 가득한 몽토르게유 거리 초입의 화창한 풍경",
+      "captionKo": "몽토르게유 거리 남쪽 초입 — 보행자 거리 양쪽으로 카페 테라스와 차양이 이어진다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-montorgueil-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-montorgueil-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 236678,
+            "sha256": "180cf2528ab75825ab17a2a1a97fa5a1d7d62e13d4c01962c83ee672d86312da",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-montorgueil-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-montorgueil-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36368,
+            "sha256": "6c5113aab7cba210b16320a84c77d05b28174686d2c8d1bd144a12ed08dacea0",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 3545983
+    },
+    {
+      "imageId": "paris-giverny-01",
+      "placeId": "giverny",
+      "title": "Le jardin d'eau de Claude Monet (Giverny) (48751405171).jpg",
+      "titleKo": "지베르니",
+      "description": "Amateur d'art japonais et de jardins, le peintre impressionniste Claude Monet a étendu le terrain de sa maison de Giverny en 1893 pour y créer un jardin d'eau, planté de nombreux végétaux dont des nénuphars. Il y a fait construire un pont japonais qu'il a fait peindre en vert pour se démarquer de la tradition des jardins japonais. Ce jardin d'eau a été pour lui une importante source d'inspiration, il est à l'origine de la série de ses tableaux Nymphéas, donnés par le peintre à la France en 1918 comme symbole de la paix. Ils sont exposés dès 1927 au musée de l'Orangerie à Paris. Ce musée a été créé par l'État français, sous l'impulsion de Georges Clémenceau, grand ami de Claude Monet. <a href=\" https://www.musee-orangerie.fr/fr/article/lensemble-de-lorangerie \" rel=\"noreferrer nofollow\">www.musee-orangerie.fr/fr/article/lensemble-de-lorangerie</a> Le jardin d'eau sur le site de la Fondation Monet <a href=\" https://fondation-monet.com/giverny/le-jardin-deau/ \" rel=\"noreferrer nofollow\">fondation-monet.com/giverny/le-jardin-deau/</a> Le Bassin aux nymphéas de Claude Monet au Musée d'Orsay, Paris (photo dalbera) <a href=\" https://www.flickr.com/photos/dalbera/48704550181/in/album-72157615185207405/ \">www.flickr.com/photos/dalbera/48704550181/in/album-721576...</a>",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Le_jardin_d%27eau_de_Claude_Monet_(Giverny)_(48751405171).jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Le_jardin_d%27eau_de_Claude_Monet_%28Giverny%29_%2848751405171%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Jean-Pierre Dalbéra from Paris, France",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-07",
+      "originalWidth": 6728,
+      "originalHeight": 5046,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-giverny-01.jpg",
+      "originalSha256": "67eb5586c2a30e342235379b0f74957190f527fdd864b4d5990a4be4ec7c0b49",
+      "usage": [
+        "daily/day-41.html",
+        "places/giverny.html"
+      ],
+      "role": "hero",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "지베르니 모네의 물의 정원, 수련이 핀 연못과 수양버들",
+      "captionKo": "모네가 만든 지베르니의 물의 정원 — 9월에도 수련이 피어 있다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-giverny-01-hero-800.webp",
+            "sitePath": "assets/images/hero/paris-giverny-01-hero-800.webp",
+            "width": 800,
+            "height": 450,
+            "bytes": 167210,
+            "sha256": "55404df34c245d4e788af971057cf7f4a95f4ee6edaec305734f3e2c8389ead6",
+            "quality": 80
+          },
+          {
+            "path": "source/ASSETS/photos/processed/hero/paris-giverny-01-hero-1280.webp",
+            "sitePath": "assets/images/hero/paris-giverny-01-hero-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 404824,
+            "sha256": "306d1b35a0c0edc734c10aa506f2b1bbdd82baa71e237c3d5a956d3de3714081",
+            "quality": 80
+          }
+        ],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-giverny-01-content-1080.webp",
+            "sitePath": "assets/images/content/paris-giverny-01-content-1080.webp",
+            "width": 1080,
+            "height": 810,
+            "bytes": 293504,
+            "sha256": "e3bb7de3eae69be644303b12762e8221b5b7965657603eb728c748bcb55489b2",
+            "quality": 57
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-giverny-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-giverny-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 61128,
+            "sha256": "771f4a0899d08f3b035912831d0bd4475c87c2954d6ae145230861cfb884a527",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 3000,
+      "originalBytes": 7635236
     }
   ],
-  "processedAt": "2026-08-06"
+  "processedAt": "2026-08-07"
 }
