@@ -11,6 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="fr">
@@ -95,6 +98,24 @@
 <hr>
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>짐 노출·체크인</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>저녁 산책 연장</dd></div><div class="ds-item"><dt>대체안</dt><dd>Avignon 직행·숙소 휴식</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>이동 중 간단식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>농가 변경·Avignon 숙소</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
+<section class="daily-map-section" aria-labelledby="daily-map-title-19">
+<h2 id="daily-map-title-19" class="ic ic-map">Google 실행지도</h2>
+<p class="note">농가 체크아웃 → Avignon 정착</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button></nav>
+
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="luberon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="luberon-stay-candidate" aria-pressed="false"><strong>0. Domaine des Peyre</strong><span>숙소 · 10:30 체크아웃</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Domaine+des+Peyre">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.87088%2C5.12202&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="avignon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="avignon-stay-candidate" aria-pressed="false"><strong>1. La Terrasse du Clocher</strong><span>숙소 · 이동·주차·체크인 90분</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=La+Terrasse+du+Clocher">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li></ol>
+</div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=driving&amp;origin=43.87088%2C5.12202">Domaine des Peyre → La Terrasse du Clocher · 자동차</a></li></ol></details>
+<script type="application/json">{"center":[43.93,4.98],"zoom":11,"places":[{"id":"luberon-stay-candidate","name":"Domaine des Peyre","city":"Luberon","type":"accommodation","lat":43.87088,"lng":5.12202,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Domaine+des+Peyre","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"]},{"id":"avignon-stay-candidate","name":"La Terrasse du Clocher","city":"Avignon","type":"accommodation","lat":43.94993,"lng":4.81302,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=La+Terrasse+du+Clocher","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-16","city":"Luberon · Avignon","title":"농가 체크아웃 → Avignon 정착","center":[43.93,4.98],"zoom":11,"defaultMode":"driving","stops":[{"placeId":"luberon-stay-candidate","order":0,"plannedTime":"10:30 체크아웃","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"avignon-stay-candidate","order":1,"plannedTime":"이동·주차·체크인 90분","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."}],"segments":[{"from":"luberon-stay-candidate","to":"avignon-stay-candidate","mode":"driving"}]}}</script>
+</section>
+</section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
   <a href="../assets/daily-cards/full/day-19-avignon.webp" aria-label="Day 19 Daily Action Map 원본 확대">
@@ -124,5 +145,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
