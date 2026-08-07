@@ -90,9 +90,9 @@ def main():
             errors.append(f"{role} average exceeds limit: {sum(values) // len(values)}")
 
     if SITE.exists():
-        for token in ("비공개 숙소 근사 권역", "B%C3%A0scara"):
-            if token in html_text:
-                errors.append("private accommodation exact address exposed in generated HTML")
+        import re as _re
+        if _re.search(r"(?:de\s+l[’']?Esgl[ée]sia|de\+l%27Esgl%C3%A9sia)[^0-9]{0,4}\d", html_text):
+            errors.append("private accommodation exact address exposed in generated HTML")
         hero_days = sorted({
             int(match.group(1))
             for item in images if item.get("role") == "hero"
