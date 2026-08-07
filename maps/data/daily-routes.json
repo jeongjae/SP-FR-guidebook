@@ -957,6 +957,265 @@
           "mode": "walking"
         }
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "city": "Avignon · Uzès · Pont du Gard",
+      "title": "Uzès 구시가지와 Pont du Gard",
+      "center": [
+        43.96,
+        4.53
+      ],
+      "zoom": 11,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:30 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "uzes",
+          "order": 1,
+          "plannedTime": "오전",
+          "note": "구시가지. 주차장은 현장 안내 확인 — 사전 미지정."
+        },
+        {
+          "placeId": "pont-du-gard",
+          "order": 2,
+          "plannedTime": "오후",
+          "note": "주차 후 Pont까지 이동 45분 확보."
+        }
+      ],
+      "segments": [
+        {
+          "from": "avignon-stay-candidate",
+          "to": "uzes",
+          "mode": "driving"
+        },
+        {
+          "from": "uzes",
+          "to": "pont-du-gard",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "city": "Avignon · Arles",
+      "title": "Arles 당일 — Arènes · Théâtre antique · Saint-Trophime",
+      "center": [
+        43.677,
+        4.63
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "avignon-centre",
+          "order": 1,
+          "plannedTime": "08:10–09:00 철도",
+          "note": "직행편·공사 여부 전날 확인."
+        },
+        {
+          "placeId": "arles-arenes",
+          "order": 2,
+          "plannedTime": "09:00–10:15",
+          "note": "원형경기장 자체를 우선."
+        },
+        {
+          "placeId": "arles-theatre-antique",
+          "order": 3,
+          "plannedTime": "10:20–11:05",
+          "note": "45분 상한."
+        },
+        {
+          "placeId": "cloitre-saint-trophime",
+          "order": 4,
+          "plannedTime": "12:40–13:40",
+          "note": "실내관람은 둘 중 하나만."
+        }
+      ],
+      "segments": [
+        {
+          "from": "avignon-stay-candidate",
+          "to": "avignon-centre",
+          "mode": "walking"
+        },
+        {
+          "from": "avignon-centre",
+          "to": "arles-arenes",
+          "mode": "transit"
+        },
+        {
+          "from": "arles-arenes",
+          "to": "arles-theatre-antique",
+          "mode": "walking"
+        },
+        {
+          "from": "arles-theatre-antique",
+          "to": "cloitre-saint-trophime",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "city": "Avignon · Lyon",
+      "title": "Avignon TGV 렌터카 반납 → Lyon 이동",
+      "center": [
+        44.85,
+        4.82
+      ],
+      "zoom": 8,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 0,
+          "plannedTime": "오전 체크아웃",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "avignon-tgv",
+          "order": 1,
+          "plannedTime": "오전 렌터카 반납",
+          "note": "주유·차량사진·영수증·보증금 해제 확인."
+        },
+        {
+          "placeId": "lyon-part-dieu",
+          "order": 2,
+          "plannedTime": "10:20–12:30 범위 TGV",
+          "note": "승강장 20분 전 진입 · 짐 시야 확보."
+        },
+        {
+          "placeId": "lyon-stay-candidate",
+          "order": 3,
+          "plannedTime": "도착 후 30–45분 택시",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 큰 짐은 메트로 환승 금지, 공식 택시승강장."
+        }
+      ],
+      "segments": [
+        {
+          "from": "avignon-stay-candidate",
+          "to": "avignon-tgv",
+          "mode": "driving"
+        },
+        {
+          "from": "avignon-tgv",
+          "to": "lyon-part-dieu",
+          "mode": "transit"
+        },
+        {
+          "from": "lyon-part-dieu",
+          "to": "lyon-stay-candidate",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "city": "Lyon",
+      "title": "Fourvière와 Vieux Lyon — 푸니쿨라 언덕",
+      "center": [
+        45.76,
+        4.825
+      ],
+      "zoom": 14,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "lyon-stay-candidate",
+          "order": 0,
+          "plannedTime": "09:10 출발 Metro D",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "vieux-lyon",
+          "order": 1,
+          "plannedTime": "09:10–09:40 환승·F2",
+          "note": "TCL 24시간권 또는 컨택트리스."
+        },
+        {
+          "placeId": "fourviere",
+          "order": 2,
+          "plannedTime": "09:40–10:40",
+          "note": "성당 내부 20–30분 · 전망 위주."
+        }
+      ],
+      "segments": [
+        {
+          "from": "lyon-stay-candidate",
+          "to": "vieux-lyon",
+          "mode": "transit"
+        },
+        {
+          "from": "vieux-lyon",
+          "to": "fourviere",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "city": "Lyon",
+      "title": "Croix-Rousse 시장 · Halles Paul Bocuse · Tête d'Or",
+      "center": [
+        45.772,
+        4.842
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "lyon-stay-candidate",
+          "order": 0,
+          "plannedTime": "09:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "croix-rousse",
+          "order": 1,
+          "plannedTime": "09:20–10:10",
+          "note": "식품시장 — 요일·운영시간 전날 재확인."
+        },
+        {
+          "placeId": "halles-de-lyon-paul-bocuse",
+          "order": 2,
+          "plannedTime": "12:35–14:05",
+          "note": "C선·메트로·트램 조합, 혼잡 시 택시."
+        },
+        {
+          "placeId": "parc-de-la-tete-d-or",
+          "order": 3,
+          "plannedTime": "15:15–17:15",
+          "note": "호수·장미원·벤치 휴식."
+        }
+      ],
+      "segments": [
+        {
+          "from": "lyon-stay-candidate",
+          "to": "croix-rousse",
+          "mode": "transit"
+        },
+        {
+          "from": "croix-rousse",
+          "to": "halles-de-lyon-paul-bocuse",
+          "mode": "transit"
+        },
+        {
+          "from": "halles-de-lyon-paul-bocuse",
+          "to": "parc-de-la-tete-d-or",
+          "mode": "walking"
+        }
+      ]
     }
   ]
 }

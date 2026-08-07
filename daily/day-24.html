@@ -11,6 +11,9 @@
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body data-rel=".." data-country="fr">
@@ -153,6 +156,24 @@
 <hr>
 <details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>월요일 휴관·경사·보행</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>로마극장 내부</dd></div><div class="ds-item"><dt>대체안</dt><dd>야외축+카페</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Vieux Lyon 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>푸니쿨라·저녁</dd></div></dl></details>
 <div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
+<section class="daily-map-section" aria-labelledby="daily-map-title-24">
+<h2 id="daily-map-title-24" class="ic ic-map">Google 실행지도</h2>
+<p class="note">Fourvière와 Vieux Lyon — 푸니쿨라 언덕</p>
+<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
+<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
+<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=45.76075%2C4.82754&amp;destination=45.76227%2C4.82259&amp;travelmode=transit">오늘 동선 열기</a></div>
+<div class="gm-grid">
+<details class="gm-map-disclosure">
+  <summary>지도 펼치기</summary>
+  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
+  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
+</details>
+<ol class="gm-place-list"><li class="gm-place-card" data-place-id="lyon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="lyon-stay-candidate" aria-pressed="false"><strong>0. Hôtel de Verdun</strong><span>숙소 · 09:10 출발 Metro D</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=H%C3%B4tel+de+Verdun">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.74965%2C4.82968&amp;travelmode=transit">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="vieux-lyon" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="vieux-lyon" aria-pressed="false"><strong>1. Vieux Lyon</strong><span>방문지 · 09:10–09:40 환승·F2</span><small>TCL 24시간권 또는 컨택트리스.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Vieux+Lyon">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.76075%2C4.82754&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="fourviere" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="fourviere" aria-pressed="false"><strong>2. Fourvière</strong><span>방문지 · 09:40–10:40</span><small>성당 내부 20–30분 · 전망 위주.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Fourvi%C3%A8re">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.76227%2C4.82259&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+</div>
+<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.76075%2C4.82754&amp;travelmode=transit&amp;origin=45.74965%2C4.82968">Hôtel de Verdun → Vieux Lyon · 대중교통</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.76227%2C4.82259&amp;travelmode=transit&amp;origin=45.76075%2C4.82754">Vieux Lyon → Fourvière · 대중교통</a></li></ol></details>
+<script type="application/json">{"center":[45.76,4.825],"zoom":14,"places":[{"id":"lyon-stay-candidate","name":"Hôtel de Verdun","city":"Lyon","type":"accommodation","lat":45.74965,"lng":4.82968,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=H%C3%B4tel+de+Verdun","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"]},{"id":"vieux-lyon","name":"Vieux Lyon","city":"Lyon","type":"attraction","lat":45.76075,"lng":4.82754,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Vieux+Lyon","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"]},{"id":"fourviere","name":"Fourvière","city":"Lyon","type":"attraction","lat":45.76227,"lng":4.82259,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Fourvi%C3%A8re","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-21","city":"Lyon","title":"Fourvière와 Vieux Lyon — 푸니쿨라 언덕","center":[45.76,4.825],"zoom":14,"defaultMode":"transit","stops":[{"placeId":"lyon-stay-candidate","order":0,"plannedTime":"09:10 출발 Metro D","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"vieux-lyon","order":1,"plannedTime":"09:10–09:40 환승·F2","note":"TCL 24시간권 또는 컨택트리스."},{"placeId":"fourviere","order":2,"plannedTime":"09:40–10:40","note":"성당 내부 20–30분 · 전망 위주."}],"segments":[{"from":"lyon-stay-candidate","to":"vieux-lyon","mode":"transit"},{"from":"vieux-lyon","to":"fourviere","mode":"transit"}]}}</script>
+</section>
+</section>
 <details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
 <figure class="daily-card daily-card-v2">
   <a href="../assets/daily-cards/full/day-24-lyon.webp" aria-label="Day 24 Daily Action Map 원본 확대">
@@ -182,5 +203,7 @@
 <script src="../assets/data.js" defer></script>
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
+<script src="../assets/google-map-loader.js" defer></script>
+<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
