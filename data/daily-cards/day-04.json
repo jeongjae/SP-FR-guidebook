@@ -41,9 +41,9 @@
       "category": "transport",
       "lat": 41.37914,
       "lng": 2.14005,
-      "summary": "택시 이동 후 렌터카 상태·연료·주행거리 기록",
+      "summary": "Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록",
       "menu": null,
-      "reservation": "09:00 인수 목표",
+      "reservation": "예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능",
       "optional": false
     },
     {
@@ -174,13 +174,14 @@
     "routeCache": "routes/day-04-driving-osrm.json"
   },
   "needsReview": [
-    "체크아웃 창 09:30–12:00 — 08:00 출발 계획과 충돌, 조기 체크아웃·짐 보관 협의 필요",
-    "렌터카 영업소·ZBE·국경 운전 조건",
+    "체크아웃 창 09:30–12:00 vs 07:00 인수 가능 — 인수·짐 적재·체크아웃 순서 협의",
+    "ZBE(저배출구역)·국경 운전 조건 확인",
     "Sitges 주차와 식당 예약",
-    "예약번호·총액·무료취소 기한 기록 (챕터 pending 배지)"
+    "Bàscara 체크인 창 재확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-4",
-    "data/daily-cards/routes/day-04-driving-osrm.json"
+    "data/daily-cards/routes/day-04-driving-osrm.json",
+    "Hertz 예약 확인 메일 L671E2E0288 (2026-08-05): Sants 9/1 07:00 픽업 · 공항 T1/T2 9/4 14:00 반납"
   ]
 }

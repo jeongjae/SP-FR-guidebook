@@ -44,6 +44,7 @@
   if (["metro","train","bus","tram"].some((m) => modes.has(m))) labels.push('<span class="transit"><i></i>대중교통</span>');
   if (["car","taxi"].some((m) => modes.has(m))) labels.push('<span class="car"><i></i>차량</span>');
   if (modes.has("unconfirmed")) labels.push('<span class="unconfirmed"><i></i>이동 미확정</span>');
+  if (modes.has("flight")) labels.push('<span class="flight"><i></i>항공</span>');
   $("legend").innerHTML = labels.join("");
 
   const map = $("map");
@@ -76,17 +77,23 @@
     const p = screen(coord[1], coord[0]);
     return `${index ? "L" : "M"}${p.x.toFixed(1)},${p.y.toFixed(1)}`;
   }).join(" ");
+  // The cached OSRM geometry covers the driving legs only; non-driving legs
+  // (flight, walk, transit) must still be drawn as coordinate lines.
+  const byId = Object.fromEntries(data.stops.map((stop) => [stop.id, stop]));
+  const drawLeg = (leg) => {
+    const from = byId[leg.from], to = byId[leg.to];
+    if (!from || !to) return;
+    const path = pathFor([[from.lng, from.lat], [to.lng, to.lat]]);
+    svg.insertAdjacentHTML("beforeend", `<path class="route-halo" d="${path}"></path><path class="route-path ${esc(leg.mode)}" d="${path}"></path>`);
+  };
   if (route && route.length) {
     const path = pathFor(route);
     svg.insertAdjacentHTML("beforeend", `<path class="route-halo" d="${path}"></path><path class="route-path car" d="${path}"></path>`);
-  } else {
-    const byId = Object.fromEntries(data.stops.map((stop) => [stop.id, stop]));
     for (const leg of data.legs) {
-      const from = byId[leg.from], to = byId[leg.to];
-      if (!from || !to) continue;
-      const path = pathFor([[from.lng, from.lat], [to.lng, to.lat]]);
-      svg.insertAdjacentHTML("beforeend", `<path class="route-halo" d="${path}"></path><path class="route-path ${esc(leg.mode)}" d="${path}"></path>`);
+      if (!["car", "taxi"].includes(leg.mode)) drawLeg(leg);
     }
+  } else {
+    for (const leg of data.legs) drawLeg(leg);
   }
 
   const markerRoot = $("markers");

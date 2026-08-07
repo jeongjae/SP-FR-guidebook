@@ -3,13 +3,13 @@
   "day": 7,
   "date": "2026-09-04",
   "city": "Nice",
-  "title": "Bàscara→Nice 이동",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Bàscara→BCN 공항 반납→Nice 이동",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": null,
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": "이동수단 확정 후 계산",
+  "totalDistance": "차량 약 137km + 항공",
   "fatigue": "4–5",
   "hotel": {
     "name": "AMMI Masséna (후보)",
@@ -27,14 +27,28 @@
       "category": "hotel",
       "lat": 42.1603007,
       "lng": 2.9101005,
-      "summary": "체크아웃 조건 재확인, 이동수단 확정 후 출발 시각 역산",
+      "summary": "반납 14:00 기준 출발 역산 — 주유·차량사진 준비",
       "menu": null,
-      "reservation": "체크아웃 조건·이동수단 확정 필요",
+      "reservation": "체크아웃 조건 재확인",
+      "optional": false
+    },
+    {
+      "id": "bcn-airport-return",
+      "order": 2,
+      "start": null,
+      "end": "14:00",
+      "name": "BCN 공항 렌터카 반납",
+      "category": "transport",
+      "lat": 41.296944,
+      "lng": 2.0790474,
+      "summary": "T1/T2 영업소 — 주유 영수증·차량사진·보증금 해제 확인",
+      "menu": null,
+      "reservation": "예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 9/4 14:00 반납",
       "optional": false
     },
     {
       "id": "nice-checkin",
-      "order": 2,
+      "order": 3,
       "start": null,
       "end": null,
       "name": "Nice 체크인",
@@ -48,7 +62,7 @@
     },
     {
       "id": "promenade",
-      "order": 3,
+      "order": 4,
       "start": null,
       "end": null,
       "name": "Promenade des Anglais 적응 산책",
@@ -62,7 +76,7 @@
     },
     {
       "id": "nice-stay-return",
-      "order": 4,
+      "order": 5,
       "start": null,
       "end": null,
       "name": "숙소 귀환",
@@ -78,11 +92,20 @@
   "legs": [
     {
       "from": "bascara-checkout",
+      "to": "bcn-airport-return",
+      "mode": "car",
+      "duration": "약 1시간 40분",
+      "distance": "137.2km",
+      "line": "AP-7 · 주유 포함 여유",
+      "geometryStatus": "verified-cache"
+    },
+    {
+      "from": "bcn-airport-return",
       "to": "nice-checkin",
-      "mode": "unconfirmed",
+      "mode": "flight",
       "duration": null,
       "distance": null,
-      "line": "차량반납·항공/철도 시나리오 검토 중",
+      "line": "BCN→NCE 항공 — 예매 필요",
       "geometryStatus": "needs-review"
     },
     {
@@ -105,27 +128,31 @@
     }
   ],
   "transport": [
-    "이동수단 미확정 — 차량반납지 확정이 선행"
+    "렌터카 — BCN 공항 T1/T2 반납 14:00 (확정)",
+    "BCN→NCE 항공 — 예매 필요",
+    "NCE 도착 후 택시/트램"
   ],
   "food": [
-    "이동계획 확정 후 결정"
+    "이동 중 간단식",
+    "도착 저녁은 가볍게"
   ],
   "highlights": [
     "P0 이동일 — 관광 없음",
-    "도착 후 체크인만",
-    "저녁 Promenade 산책 선택"
+    "반납 14:00 확정 — 출발 역산",
+    "항공편 예매가 다음 잠금"
   ],
-  "backup": "NCE 도착 후 체크인만, Nice 적응 산책 삭제",
+  "backup": "항공 지연 시 NCE 도착 후 체크인만, 적응 산책 삭제",
   "map": {
     "zoom": 7,
     "center": [
-      42.95,
-      5.1
+      42.6,
+      4.7
     ],
-    "routeCache": null
+    "routeCache": "routes/day-07-driving-osrm.json"
   },
   "needsReview": [
-    "이동수단·차량 반납지 미확정 (감사 문서 시나리오: Girona→BCN 반납→항공→Nice)",
+    "BCN→NCE 항공편 예매 (반납 14:00 이후 출발 기준)",
+    "Bàscara 출발 시각 — 반납 14:00·주유·공항 수속 기준 역산 확정",
     "Nice 숙소 후보(AMMI Masséna) 승인",
     "Bàscara 체크아웃 조건 확인"
   ],
@@ -133,7 +160,7 @@
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-7",
     "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-7-8",
-    "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+    "Hertz 예약 확인 메일 L671E2E0288 (2026-08-05): 공항 T1/T2 9/4 14:00 반납",
+    "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml"
   ]
 }
