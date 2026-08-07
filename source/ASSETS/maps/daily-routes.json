@@ -720,6 +720,243 @@
           "mode": "walking"
         }
       ]
+    },
+    {
+      "date": "2026-09-13",
+      "city": "Aix · Lourmarin · Luberon",
+      "title": "Aix → Luberon — Lourmarin 경유 농가 체크인",
+      "center": [
+        43.72,
+        5.35
+      ],
+      "zoom": 11,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "aix-stay-candidate",
+          "order": 0,
+          "plannedTime": "09:15 체크아웃 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "lourmarin",
+          "order": 1,
+          "plannedTime": "10:30–13:30",
+          "note": "마을·스케치·가벼운 점심. 차량 내 짐 완전은폐. 주차장은 현장 안내 확인 — 사전 미지정."
+        },
+        {
+          "placeId": "coustellet",
+          "order": 2,
+          "plannedTime": "13:30 이후 장보기",
+          "note": "농가 체크인 전 장보기 — 해지기 전 진입."
+        },
+        {
+          "placeId": "luberon-stay-candidate",
+          "order": 3,
+          "plannedTime": "해지기 전 체크인",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        }
+      ],
+      "segments": [
+        {
+          "from": "aix-stay-candidate",
+          "to": "lourmarin",
+          "mode": "driving"
+        },
+        {
+          "from": "lourmarin",
+          "to": "coustellet",
+          "mode": "driving"
+        },
+        {
+          "from": "coustellet",
+          "to": "luberon-stay-candidate",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "city": "Luberon",
+      "title": "Roussillon 오커길과 Goult",
+      "center": [
+        43.88,
+        5.26
+      ],
+      "zoom": 12,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "luberon-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:30 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "roussillon-sentier-des-ocres",
+          "order": 1,
+          "plannedTime": "오전",
+          "note": "오커길 후 60분 휴식. 주차장은 현장 안내 확인 — 사전 미지정."
+        },
+        {
+          "placeId": "goult",
+          "order": 2,
+          "plannedTime": "오후",
+          "note": "실행 감사 기준 Goult 또는 Bonnieux 중 택일. 주차장은 현장 안내 확인 — 사전 미지정."
+        }
+      ],
+      "segments": [
+        {
+          "from": "luberon-stay-candidate",
+          "to": "roussillon-sentier-des-ocres",
+          "mode": "driving"
+        },
+        {
+          "from": "roussillon-sentier-des-ocres",
+          "to": "goult",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "city": "Luberon",
+      "title": "Gordes 시장과 Village des Bories",
+      "center": [
+        43.89,
+        5.2
+      ],
+      "zoom": 12,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "luberon-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:15 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "gordes",
+          "order": 1,
+          "plannedTime": "오전 시장",
+          "note": "시장주차 30분 확보. 주차장은 현장 안내 확인 — 사전 미지정."
+        },
+        {
+          "placeId": "village-des-bories",
+          "order": 2,
+          "plannedTime": "이어서",
+          "note": "돌집 유적 — 마을에서 차량 이동."
+        }
+      ],
+      "segments": [
+        {
+          "from": "luberon-stay-candidate",
+          "to": "gordes",
+          "mode": "driving"
+        },
+        {
+          "from": "gordes",
+          "to": "village-des-bories",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "city": "Luberon · Avignon",
+      "title": "농가 체크아웃 → Avignon 정착",
+      "center": [
+        43.93,
+        4.98
+      ],
+      "zoom": 11,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "luberon-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:30 체크아웃",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 1,
+          "plannedTime": "이동·주차·체크인 90분",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        }
+      ],
+      "segments": [
+        {
+          "from": "luberon-stay-candidate",
+          "to": "avignon-stay-candidate",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "city": "Avignon",
+      "title": "Les Halles · Palais des Papes · Rocher · Pont",
+      "center": [
+        43.951,
+        4.806
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:20 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "les-halles-avignon",
+          "order": 1,
+          "plannedTime": "08:30",
+          "note": "실내시장 아침."
+        },
+        {
+          "placeId": "palais-des-papes",
+          "order": 2,
+          "plannedTime": "입장 30분 전 도착",
+          "note": "오전 관람."
+        },
+        {
+          "placeId": "rocher-des-doms",
+          "order": 3,
+          "plannedTime": "이어서",
+          "note": "정원·론강 조망."
+        },
+        {
+          "placeId": "pont-saint-benezet",
+          "order": 4,
+          "plannedTime": "이어서",
+          "note": "다리 관람."
+        }
+      ],
+      "segments": [
+        {
+          "from": "avignon-stay-candidate",
+          "to": "les-halles-avignon",
+          "mode": "walking"
+        },
+        {
+          "from": "les-halles-avignon",
+          "to": "palais-des-papes",
+          "mode": "walking"
+        },
+        {
+          "from": "palais-des-papes",
+          "to": "rocher-des-doms",
+          "mode": "walking"
+        },
+        {
+          "from": "rocher-des-doms",
+          "to": "pont-saint-benezet",
+          "mode": "walking"
+        }
+      ]
     }
   ]
 }
