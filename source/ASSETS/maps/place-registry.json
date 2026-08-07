@@ -1456,6 +1456,22 @@
       "optional": false,
       "status": "planned",
       "coordinatesVerified": "OSM Nominatim, 2026-08-06"
+    },
+    {
+      "id": "rocher-des-doms",
+      "name": "Rocher des Doms",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 43.952656,
+      "lng": 4.8079195,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rocher+des+Doms%2C+Avignon",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "coordinatesVerified": "OSM Nominatim, 2026-08-06"
     }
   ]
 }
