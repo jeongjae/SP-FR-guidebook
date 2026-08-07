@@ -1216,6 +1216,220 @@
           "mode": "walking"
         }
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "city": "Lyon · Annecy",
+      "title": "Annecy 당일 — TER · Vieille Ville · 호수",
+      "center": [
+        45.899,
+        6.128
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "lyon-stay-candidate",
+          "order": 0,
+          "plannedTime": "06:40–07:20 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "lyon-part-dieu",
+          "order": 1,
+          "plannedTime": "07:40 이전 도착",
+          "note": "07:30–08:30 출발 직행 TER 우선 · 실제 시간표 재확인."
+        },
+        {
+          "placeId": "annecy",
+          "order": 2,
+          "plannedTime": "10:15–18:00",
+          "note": "Vieille Ville → Thiou 운하 → Pâquier. 귀환 직행 재확인."
+        }
+      ],
+      "segments": [
+        {
+          "from": "lyon-stay-candidate",
+          "to": "lyon-part-dieu",
+          "mode": "transit"
+        },
+        {
+          "from": "lyon-part-dieu",
+          "to": "annecy",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "city": "Lyon · Paris",
+      "title": "Lyon → Paris TGV — 16박 장기체류 시작",
+      "center": [
+        47.3,
+        3.6
+      ],
+      "zoom": 7,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "lyon-stay-candidate",
+          "order": 0,
+          "plannedTime": "기차 2시간 전 체크아웃",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "lyon-part-dieu",
+          "order": 1,
+          "plannedTime": "기차 90분 전 택시 이동",
+          "note": "큰 짐 — 메트로 환승보다 택시."
+        },
+        {
+          "placeId": "paris-gare-de-lyon",
+          "order": 2,
+          "plannedTime": "오전–오후 TGV",
+          "note": "TGV 확정 후 문전시간 고정."
+        },
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 3,
+          "plannedTime": "도착 후 45–75분",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 16박 수하물 — 택시 이동."
+        }
+      ],
+      "segments": [
+        {
+          "from": "lyon-stay-candidate",
+          "to": "lyon-part-dieu",
+          "mode": "driving"
+        },
+        {
+          "from": "lyon-part-dieu",
+          "to": "paris-gare-de-lyon",
+          "mode": "transit"
+        },
+        {
+          "from": "paris-gare-de-lyon",
+          "to": "paris-stay-candidate",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "city": "Paris",
+      "title": "회복일 — 숙소 반경 800m 생활권",
+      "center": [
+        48.846,
+        2.34
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "종일 생활권",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 슈퍼·빵집·약국·세탁소 반경 800m 확인."
+        }
+      ],
+      "segments": []
+    },
+    {
+      "date": "2026-09-26",
+      "city": "Paris",
+      "title": "Saint-Germain과 Luxembourg Garden",
+      "center": [
+        48.85,
+        2.335
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:40 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "saint-germain-des-pres",
+          "order": 1,
+          "plannedTime": "11:00–12:30",
+          "note": "서점·카페 — 생활 리듬 파악."
+        },
+        {
+          "placeId": "jardin-du-luxembourg",
+          "order": 2,
+          "plannedTime": "14:00–16:00",
+          "note": "산책·벤치 휴식 포함."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "saint-germain-des-pres",
+          "mode": "walking"
+        },
+        {
+          "from": "saint-germain-des-pres",
+          "to": "jardin-du-luxembourg",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "city": "Paris",
+      "title": "Tuileries · Palais Royal · Opéra 지구",
+      "center": [
+        48.866,
+        2.331
+      ],
+      "zoom": 15,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "10:00 전후 출발",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+        },
+        {
+          "placeId": "jardin-des-tuileries",
+          "order": 1,
+          "plannedTime": "10:30–12:00",
+          "note": "정원축·Louvre 외관 — 내부 입장 없음."
+        },
+        {
+          "placeId": "palais-royal",
+          "order": 2,
+          "plannedTime": "13:30–15:30",
+          "note": "정원·회랑 · 스케치 20–30분."
+        },
+        {
+          "placeId": "palais-garnier",
+          "order": 3,
+          "plannedTime": "15:30–17:30",
+          "note": "외관 중심 · 당일 입장 가능 시에만 짧은 방문."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "jardin-des-tuileries",
+          "mode": "transit"
+        },
+        {
+          "from": "jardin-des-tuileries",
+          "to": "palais-royal",
+          "mode": "walking"
+        },
+        {
+          "from": "palais-royal",
+          "to": "palais-garnier",
+          "mode": "walking"
+        }
+      ]
     }
   ]
 }
