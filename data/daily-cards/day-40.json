@@ -3,72 +3,183 @@
   "day": 40,
   "date": "2026-10-07",
   "city": "Paris",
-  "title": "Bourse de Commerce 개막",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Fête des Vendanges de Montmartre",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": null,
-  "fatigue": "4~5",
+  "totalDistance": "약 2km · 도보 + 메트로",
+  "fatigue": "3–4",
   "hotel": {
-    "name": null,
-    "lat": null,
-    "lng": null,
-    "status": "needs-review"
+    "name": "Pepper & Paper (후보)",
+    "lat": 48.83966,
+    "lng": 2.34644,
+    "status": "candidate"
   },
   "stops": [
     {
-      "id": "bourse",
+      "id": "morning",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Bourse",
-      "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Bourse",
+      "start": "09:00",
+      "end": "10:00",
+      "name": "느린 아침·축제 프로그램 확인",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "당일 취소·예약제 행사 대조",
       "menu": null,
-      "reservation": "전시·공연",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "montorgueil",
+      "id": "clos",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Montorgueil",
+      "start": "11:00",
+      "end": "13:00",
+      "name": "Clos Montmartre 외관·북사면 골목",
       "category": "sight",
-      "lat": null,
-      "lng": null,
-      "summary": "Montorgueil",
+      "lat": 48.8881857,
+      "lng": 2.339834,
+      "summary": "11:00 내부 방문은 9/14 예약 개시 — 표 확보 시에만",
       "menu": null,
-      "reservation": "전시·공연",
+      "reservation": "Vignes 내부표 예약 (9/14 개시)",
+      "optional": false
+    },
+    {
+      "id": "fest-lunch",
+      "order": 3,
+      "start": "13:00",
+      "end": "14:00",
+      "name": "축제권 가벼운 점심",
+      "category": "food",
+      "lat": 48.8869,
+      "lng": 2.3405,
+      "summary": "공식 운영 부스·지역상점 우선",
+      "menu": "축제 부스",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "festival",
+      "order": 4,
+      "start": "14:00",
+      "end": "17:30",
+      "name": "Fête des Vendanges 공식 프로그램",
+      "category": "activity",
+      "lat": 48.8867,
+      "lng": 2.3431,
+      "summary": "시장/부스·side streets — 공개 프로그램 한두 개만",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "abbesses",
+      "order": 5,
+      "start": "17:30",
+      "end": "19:00",
+      "name": "이른 저녁·Abbesses 하산",
+      "category": "sight",
+      "lat": 48.8843999,
+      "lng": 2.3383885,
+      "summary": "군중이 커지기 전에 종료",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
+      "start": "19:00",
+      "end": null,
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "추가 오페라 없음 (10/1 불발 시에만 19:30 백업 공연·축제 16:30 종료)",
+      "menu": null,
+      "reservation": null,
       "optional": false
     }
   ],
-  "legs": [],
+  "legs": [
+    {
+      "from": "morning",
+      "to": "clos",
+      "mode": "metro",
+      "duration": "35분",
+      "distance": null,
+      "line": "메트로 (북사면 접근)",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "clos",
+      "to": "fest-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "fest-lunch",
+      "to": "festival",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "festival",
+      "to": "abbesses",
+      "mode": "walk",
+      "duration": "8분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "abbesses",
+      "to": "paris-return",
+      "mode": "metro",
+      "duration": "35분",
+      "distance": null,
+      "line": "메트로",
+      "geometryStatus": "coordinate-line"
+    }
+  ],
   "transport": [
-    "전시·공연"
+    "메트로 왕복",
+    "몽마르트르 도보·경사"
   ],
   "food": [
-    "Montorgueil"
+    "축제권 점심",
+    "이른 저녁"
   ],
   "highlights": [
-    "Bourse, Montorgueil",
-    "선택·축소: Manon/연극/축구 중 1"
+    "고정 축제 (10/7–11 확인)",
+    "북사면 접근·남쪽 하산",
+    "군중 전에 종료"
   ],
-  "backup": "Bourse 단축·행사 1개",
-  "map": null,
+  "backup": "혼잡 시 외관 동선만, 부스 축소",
+  "map": {
+    "zoom": 13,
+    "center": [
+      48.864,
+      2.342
+    ],
+    "routeCache": null
+  },
   "needsReview": [
-    "숙소명과 좌표 확정",
-    "각 일정의 시작·종료 시각 확정",
-    "방문지 좌표 검증",
-    "모든 이동구간의 교통수단·거리·시간·경로 확정",
-    "최신 후보 일정 브랜치 승인: 43b1ce441fbc"
+    "Vignes 내부표 예약 여부 (9/14 개시)",
+    "Paris 숙소 후보 확정",
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-14-10월7일",
+    "OSM Nominatim 지오코딩 2026-08-07: Clos Montmartre·Abbesses",
+    "source/ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.kml (Montmartre)"
   ]
 }
