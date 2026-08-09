@@ -90,9 +90,9 @@ def main():
             errors.append(f"{role} average exceeds limit: {sum(values) // len(values)}")
 
     if SITE.exists():
-        import re as _re
-        if _re.search(r"(?:de\s+l[’']?Esgl[ée]sia|de\+l%27Esgl%C3%A9sia)[^0-9]{0,4}\d", html_text):
-            errors.append("private accommodation exact address exposed in generated HTML")
+        # D-11 (2026-08-09, 사용자 지시): Bàscara 확정 숙소는 전면 공개로 복구되어
+        # 기존 주소 노출 검사를 해제한다. 다른 개인숙소 보호 원칙은 유지되며,
+        # 새 비공개 숙소가 생기면 그 식별 토큰 검사를 여기에 다시 추가한다.
         hero_days = sorted({
             int(match.group(1))
             for item in images if item.get("role") == "hero"
