@@ -185,3 +185,14 @@
     }
   }
 })();
+
+// Phase B 파일럿 — 홈 준비 스트립의 D-day. 기기 시계 기준 점진 향상이며
+// JS 없이는 정적 출발일 표기가 그대로 남는다.
+(function () {
+  var el = document.getElementById("plan-dday");
+  if (!el || !window.GUIDE || !GUIDE.tripStart) return;
+  var start = new Date(GUIDE.tripStart + "T00:00:00");
+  var days = Math.ceil((start - new Date()) / 86400000);
+  if (days > 0) el.textContent = "D-" + days;
+  else if (days === 0) el.textContent = "오늘 출발";
+})();
