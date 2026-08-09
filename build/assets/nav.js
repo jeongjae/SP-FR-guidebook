@@ -170,9 +170,11 @@
     var p = window.location.pathname;
     if (/\/daily\//.test(p)) return "today";
     if (/\/chapters\/itinerary\.html$/.test(p)) return "itinerary";
-    // 지역 챕터는 지명 디렉터리를 쓴다 — 분할 여부와 무관하게 하위 페이지 전부
-    if (/\/regions\.html$/.test(p) || /\/chapters\/[^/]+\/[^/]*$/.test(p))
-      return "regions";
+    if (/\/maps\//.test(p)) return "map";
+    // 가이드 축 — 지역 목록·지역 챕터·장소. 분할 여부와 무관하게 하위 전부
+    if (/\/regions\.html$/.test(p) || /\/chapters\/[^/]+\/[^/]*$/.test(p)
+        || /\/places\//.test(p))
+      return "guide";
     if (/\/tracker\//.test(p)) return "prepare";
     return "";
   }

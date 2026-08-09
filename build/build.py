@@ -1974,9 +1974,9 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 <nav class="bottomnav" aria-label="주요 메뉴">
   <a href="#" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
   <a href="{rel}/{ITINERARY_URL}" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="{rel}/regions.html" data-tab="regions"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>지역</span></a>
+  <a href="{rel}/maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="{rel}/regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
   <a href="{rel}/tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
-  <a href="#search" class="nav-search" data-tab="search"><b class="ic ic-only ic-search" aria-hidden="true"></b><span>검색</span></a>
 </nav>
 <button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
 <script src="{rel}/assets/data.js" defer></script>
@@ -4747,8 +4747,9 @@ def check_phase3_navigation_guards():
     home = (SITE / "index.html").read_text(encoding="utf-8")
     tabs = re.findall(r'<a [^>]*data-tab="([^"]+)"[^>]*>.*?<span>([^<]+)</span></a>',
                       home, re.S)
-    expected = [("today", "오늘"), ("itinerary", "일정"), ("regions", "지역"),
-                ("prepare", "준비"), ("search", "검색")]
+    # D-03 (2026-08-09 구현): 검색은 상단바 전역 버튼으로, 지도가 L0 로 승격.
+    expected = [("today", "오늘"), ("itinerary", "일정"), ("map", "지도"),
+                ("guide", "가이드"), ("prepare", "준비")]
     if tabs != expected:
         problems.append(f"전역 메뉴 {tabs} (기대값 {expected})")
     for label in ("43일 일정", "지역별 가이드", "여행 준비", "통합 검색", "비상 · 오프라인"):
@@ -4871,7 +4872,10 @@ def check_phase6_map_guards():
         problems.append(f"지도 기준점 총 {total}개 (기대 110) / 레지스트리 {len(google_places)}개 (기대 110)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
+        # 하단탭(D-03)이 모든 페이지에 지도 허브 링크를 넣는다 — 일자별
+        # 지도 링크 검사에서는 허브(index)와 오프라인 안내를 제외한다.
         actual = set(re.findall(r'href="\.\./maps/([^"/]+\.html)"', text))
+        actual -= {"index.html", "offline.html"}
         actual.discard("offline.html")
         expected = {name for name, days in MAP_DAY_SPANS.items() if n in days}
         if actual != expected:
