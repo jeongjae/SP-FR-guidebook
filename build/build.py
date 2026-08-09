@@ -3045,6 +3045,38 @@ def google_map_component(*, scope, places, center, zoom, day=None):
 </section>'''
 
 
+def load_reservations():
+    """예약 시트를 날짜별 상태 목록으로 묶는다 — 파일럿 요약·홈 준비 스트립용.
+
+    상태와 건수만 밖으로 나간다. 주소·예약번호·금액 등 셀 값은 여기서
+    렌더되지 않는다 — 개인정보 비노출 규칙.
+    """
+    from openpyxl import load_workbook
+    wb = load_workbook(TRACKER_XLSX, data_only=True)
+    if "Reservations" not in wb.sheetnames:
+        return {}, 0, 0
+    rows = list(wb["Reservations"].iter_rows(values_only=True))
+    hdr_i = next((i for i, r in enumerate(rows) if r and r[0] == "ID"), None)
+    if hdr_i is None:
+        return {}, 0, 0
+    hdr = list(rows[hdr_i])
+    ix = {name: hdr.index(name) for name in ("ID", "날짜", "상태")}
+    by_date, total, undone = {}, 0, 0
+    for r in rows[hdr_i + 1:]:
+        if not r or not r[ix["ID"]]:
+            continue
+        status = str(r[ix["상태"]] or "").strip()
+        if status == "취소":
+            continue
+        total += 1
+        if status != "예약완료":
+            undone += 1
+        d = r[ix["날짜"]]
+        if hasattr(d, "date"):
+            by_date.setdefault(d.date().isoformat(), []).append(status)
+    return by_date, total, undone
+
+
 def build_daily():
     out_dir = SITE / "daily"
     img_dir = out_dir / "img"
@@ -3068,6 +3100,7 @@ def build_daily():
     audit = load_audit()
     google_places, google_days, _google_regions = load_google_map_data()
     fatigue, timetable, conflicts = load_day_details()
+    res_by_date, _res_total, _res_undone = load_reservations()
     TIMETABLE.update(timetable)
     for x in conflicts:
         print(f"  주의: 피로도 값이 챕터마다 다름 — {x} (도착 챕터 값을 쓴다)")
@@ -3098,6 +3131,17 @@ def build_daily():
             f'<div class="dq-item dq-{k}"><dt>{AUDIT_LABELS[k]}</dt>'
             f'<dd>{html.escape(row[k])}</dd></div>'
             for k in ("core", "depart", "buffer"))
+        # Phase B 파일럿 — 그 날짜에 걸린 예약을 건수로만 요약한다.
+        if n in PILOT_DAYS:
+            states = res_by_date.get(key, [])
+            if states:
+                done = sum(1 for s in states if s == "예약완료")
+                res_txt = f"{len(states)}건 — 완료 {done} · 미확정 {len(states) - done}"
+            else:
+                res_txt = "이 날짜로 잡힌 예약 없음"
+            quick_summary += (f'<div class="dq-item dq-book"><dt>예약</dt>'
+                              f'<dd>{html.escape(res_txt)} · '
+                              f'<a href="../tracker/reservations.html">현황</a></dd></div>')
         summary = "".join(
             f"<div class=\"ds-item\"><dt>{AUDIT_LABELS[k]}</dt>"
             f"<dd>{html.escape(row[k])}</dd></div>"
@@ -3163,7 +3207,9 @@ def build_daily():
         spots = PLACES_BY_DAY.get(n, [])
         if spots:
             def chip(s):
-                g = f' <b>{GRADE_LABEL[s["grade"]]}</b>' if s["grade"] else ""
+                # 파일럿 3일은 등급을 영문(D-04)으로 보여 검수를 받는다.
+                lab = (GRADE_EN if n in PILOT_DAYS else GRADE_LABEL).get(s["grade"])
+                g = f' <b>{lab}</b>' if s["grade"] and lab else ""
                 return (f'<a class="pl-day" href="../places/{s["slug"]}.html">'
                         f'{html.escape(s["name"])}{g}</a>')
 
@@ -3232,6 +3278,22 @@ def build_daily():
             photo_block = media.photo_figure(hero_asset, "..", variant="hero", priority=True)
             photo_block += media.photo_gallery(other_photos, "..", "오늘의 주요 장소", limit=4)
 
+        # Phase B 파일럿 — 거점 이동일은 실행 요약을 이동 순서로 다시 편다.
+        # 값은 실행성 감사에서 그대로 온다. 시간·주차 등 미확정 값을 지어내지 않는다.
+        transfer_block = ""
+        if n in PILOT_DAYS and multi:
+            steps = [("출발·체크아웃", row["depart"]), ("경유·핵심", row["core"]),
+                     ("완충", row["buffer"]), ("지연 시 생략", row["cut"]),
+                     ("대체안", row["alt"]), ("잠금·예약", row["lock"])]
+            items = "".join(f'<li><b>{k}</b><span>{html.escape(v)}</span></li>'
+                            for k, v in steps if v and v != "없음")
+            transfer_block = (
+                '<section class="transfer-day" aria-label="이동일 체크리스트">'
+                '<h2 class="ic ic-check">이동일 체크리스트</h2>'
+                f'<ol class="td-steps">{items}</ol>'
+                '<p class="note">실행성 감사의 값을 이동 순서로 재배열한 것이다. '
+                '체크인 시각·주차 등 미확정 값은 확정 후 채운다.</p></section>')
+
         prev_link = f'<a href="day-{n-1:02d}.html">← Day {n-1}</a>' if n > 1 else ""
         next_link = f'<a href="day-{n+1:02d}.html">Day {n+1} →</a>' if n < 43 else ""
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
@@ -3242,6 +3304,7 @@ def build_daily():
 <dl class="day-quick">{quick_summary}</dl>
 <nav class="day-actions" aria-label="오늘 바로가기">{''.join(links)}</nav>
 </section>
+{transfer_block}
 {tt_block}
 {fat_block}
 {place_block}
@@ -3387,12 +3450,22 @@ def build_home():
             ("book", "chapters/how-to-use.html", "가이드 사용법", "이 가이드북을 읽는 법"),
             ("license", "credits.html", "사진 저작자 표시", "CC 라이선스와 출처")))
 
+    # Phase B 파일럿 — 출발 전 준비 스트립. 건수만 집계한다 (개인정보 비노출).
+    # D-day 는 nav.js 가 기기 시계로 계산한다. 정적 fallback 은 출발일 표기.
+    _by_date, res_total, res_undone = load_reservations()
+    plan_strip = (
+        '<section class="plan-strip" aria-label="출발 준비 현황">'
+        f'<b class="ps-dday" id="plan-dday">{date_label(TRIP_START)} 출발</b>'
+        f'<span class="ps-copy">예약 {res_total}건 중 미확정 <b>{res_undone}건</b></span>'
+        '<a class="ps-link" href="tracker/reservations.html">예약 현황</a></section>')
+
     body = f"""<section class="hero">
   <div class="today-bar">
     <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
     <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
   </div>
 </section>
+{plan_strip}
 <nav class="home-actions" aria-label="여행 주요 기능">{primary_rows}</nav>
 <h2 class="ic ic-list">전체 여정</h2>
 <ol class="timeline">{''.join(stops)}</ol>
@@ -3889,6 +3962,11 @@ PLACE_REGISTRY = SOURCE / "ASSETS" / "91_Place_Registry_v1.0.md"
 GRADE_KO2SLUG = {"필수": "essential", "우선 추천": "priority", "선택": "optional",
                  "대체": "alternative", "비추천": "excluded"}
 GRADE_LABEL = {v: k for k, v in GRADE_KO2SLUG.items()}
+# Phase B 파일럿(D-04): 등급 영문 표기. PILOT_DAYS 화면에서만 쓴다 —
+# 전면 전환은 파일럿 검수 후 Phase E 에서 일괄 매핑한다.
+GRADE_EN = {"essential": "Must", "priority": "Recommended", "optional": "Optional",
+            "alternative": "Backup", "excluded": "Skip First"}
+PILOT_DAYS = {2, 4, 28}
 TIMETABLE = {}        # 데일리 빌드가 채운다 — 장소 페이지가 Day 매핑에 쓴다
 PLACES_BY_DAY = {}    # 장소 빌드가 채운다 — 데일리 카드가 그 날 장소를 싣는다
 

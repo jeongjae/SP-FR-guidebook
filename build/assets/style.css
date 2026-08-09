@@ -2144,3 +2144,30 @@ footer {
   .event-actions { padding: var(--s2); }
   .event-button { flex: 1 1 100%; width: 100%; }
 }
+
+/* ---- Phase B 파일럿 — 홈 준비 스트립 · 이동일 체크리스트 · 예약 요약 ---- */
+.plan-strip {
+  display: flex; align-items: center; gap: 12px;
+  margin: 12px 0 4px; padding: 12px 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.ps-dday { font-size: 1.15rem; font-weight: 800; color: var(--text); white-space: nowrap; }
+.ps-copy { flex: 1; color: var(--text); min-width: 0; }
+.ps-link {
+  min-height: 44px; display: inline-flex; align-items: center;
+  color: var(--text); text-decoration: underline; text-underline-offset: 3px;
+  font-weight: 700; white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .plan-strip { flex-wrap: wrap; }
+  .ps-copy { flex-basis: 100%; order: 3; }
+}
+.td-steps { list-style: none; margin: 8px 0; padding: 0; }
+.td-steps li {
+  display: flex; gap: 10px; padding: 10px 0;
+  border-bottom: 1px solid var(--separator);
+}
+.td-steps li b { flex: 0 0 6.5em; color: var(--text); }
+.td-steps li span { color: var(--text); min-width: 0; }
+.dq-book dd a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
