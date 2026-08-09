@@ -3,13 +3,13 @@
   "day": 12,
   "date": "2026-09-09",
   "city": "Aix-en-Provence",
-  "title": "NCE 렌터카와 Provence 진입",
+  "title": "Nice역 렌터카와 Provence 진입",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:30",
+  "startTime": "09:00",
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": "약 199km · 차량 경로",
+  "totalDistance": "약 204km · 차량 경로",
   "fatigue": "5",
   "hotel": {
     "name": "Adagio Aix Centre (후보)",
@@ -19,17 +19,17 @@
   },
   "stops": [
     {
-      "id": "nce-t2",
+      "id": "nice-station-pickup",
       "order": 1,
-      "start": "08:30",
+      "start": "09:00",
       "end": null,
-      "name": "NCE T2 렌터카 인수",
+      "name": "Nice역 렌터카 인수",
       "category": "transport",
-      "lat": 43.65971,
-      "lng": 7.20461,
-      "summary": "인수 60–90분 완충 — Nice 숙소에서 08:30 출발",
+      "lat": 43.70499,
+      "lng": 7.26199,
+      "summary": "Avenue Thiers 영업소 — 숙소에서 도보권, 인수 수속 30–60분",
       "menu": null,
-      "reservation": "렌터카 예약·보험 재확인",
+      "reservation": "예약완료 Hertz L672E080313 — 9/9 09:00 인수",
       "optional": false
     },
     {
@@ -105,11 +105,11 @@
   ],
   "legs": [
     {
-      "from": "nce-t2",
+      "from": "nice-station-pickup",
       "to": "saint-paul",
       "mode": "car",
-      "duration": "약 20분",
-      "distance": "14.2km",
+      "duration": "약 26분",
+      "distance": "18.7km",
       "line": null,
       "geometryStatus": "verified-cache"
     },
@@ -151,7 +151,7 @@
     }
   ],
   "transport": [
-    "렌터카 (NCE T2 인수)",
+    "렌터카 — Nice역 09:00 인수 (확정)",
     "A8 고속도로"
   ],
   "food": [
@@ -160,8 +160,8 @@
   ],
   "highlights": [
     "P0 연결일 — 어느 경유지도 늘리지 않는다",
-    "줄이는 순서: Maeght 내부→마을→Grasse",
-    "피로도 5/5"
+    "09:00 Nice역 인수 (확정)",
+    "줄이는 순서: Maeght 내부→마을→Grasse"
   ],
   "backup": "지연 시 Grasse 우선 삭제, Saint-Paul 체류 축소",
   "map": {
@@ -173,7 +173,6 @@
     "routeCache": "routes/day-12-driving-osrm.json"
   },
   "needsReview": [
-    "렌터카 예약 확정(NCE T2)",
     "Aix 숙소 후보(Adagio) 승인",
     "Fondation Maeght 운영·요금 재확인",
     "각 경유지 시각은 인수 완료 시각 기준 역산"
@@ -183,6 +182,7 @@
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-12",
     "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-12",
     "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Saint-Paul·Fondation Maeght·Grasse"
+    "OSM Nominatim 지오코딩 2026-08-06: Saint-Paul·Fondation Maeght·Grasse",
+    "예약 확정 (2026-08-09 반영): Hertz L672E080313 — Nice역 9/9 09:00 인수, Avignon TGV 9/20 09:00 반납"
   ]
 }
