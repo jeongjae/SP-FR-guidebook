@@ -2171,3 +2171,16 @@ footer {
 .td-steps li b { flex: 0 0 6.5em; color: var(--text); }
 .td-steps li span { color: var(--text); min-width: 0; }
 .dq-book dd a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+
+/* ---- 검수 반영 — 상단바 뒤로가기 · 등급 배지 ---- */
+.tb-back {
+  min-width: 44px; min-height: 44px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: none; border: 0; color: var(--text);
+  font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 0;
+}
+.pl-day b {
+  margin-left: 8px; padding: 2px 8px; border-radius: 6px;
+  background: var(--surface-sunk); border: 1px solid var(--border);
+  color: var(--text); font-size: .85em; white-space: nowrap;
+}

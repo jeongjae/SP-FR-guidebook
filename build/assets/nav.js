@@ -196,3 +196,13 @@
   if (days > 0) el.textContent = "D-" + days;
   else if (days === 0) el.textContent = "오늘 출발";
 })();
+
+// 모든 페이지 뒤로가기 — 사용자 요청(D-10). 브라우저 이력이 있을 때만 보인다.
+(function () {
+  var b = document.querySelector(".tb-back");
+  if (!b) return;
+  if (window.history.length > 1) {
+    b.hidden = false;
+    b.addEventListener("click", function () { window.history.back(); });
+  }
+})();
