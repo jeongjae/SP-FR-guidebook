@@ -1955,6 +1955,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 </head>
 <body data-rel="{rel}"{country_attr}>
 <header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden>‹</button>
   {lead}
   <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
@@ -3758,10 +3759,8 @@ def build_maps():
 # ---------------------------------------------------------------- tracker
 
 # 정확 주소 리터럴을 코드에 남기지 않는다 — 거리명+번지 패턴으로 탐지한다.
-PRIVATE_PUBLICATION_PATTERN = re.compile(
-    r"(?:de\s+l[’']?Esgl[ée]sia|de\+l%27Esgl%C3%A9sia)[^0-9]{0,4}\d")
-
-
+# Bàscara 확정 숙소 주소는 2026-08-09 사용자 결정(D-11)으로 공개 전환 —
+# 렌더 단계 마스킹을 제거했다. 다른 개인숙소가 생기면 그때 다시 판단한다.
 def format_cell(v):
     if v is None:
         return ""
@@ -3771,10 +3770,7 @@ def format_cell(v):
         return v.strftime("%Y-%m-%d %H:%M")
     if isinstance(v, float) and v.is_integer():
         return str(int(v))
-    text = str(v)
-    if PRIVATE_PUBLICATION_PATTERN.search(text):
-        return "비공개 — 예약자료에서 확인"
-    return text
+    return str(v)
 
 
 def sheet_to_table(ws):
