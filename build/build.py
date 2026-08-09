@@ -3555,43 +3555,12 @@ def sanitize_kml(text, label):
 
 
 def build_offline_maps():
-    """Organic Maps 북마크 임포트 안내 + KML 직접 다운로드.
+    """오프라인 준비 페이지 — PWA 전체 저장 안내·패널.
 
+    Organic Maps·KML 임포트 안내는 2026-08-09 사용자 지시로 제거했다.
     자체 타일 지도는 구현하지 않는다 (용량·라이선스로 폐기된 안이다).
-    Organic Maps 는 KML 북마크 임포트와 오프라인 턴바이턴 안내를 제공한다.
     """
     out_dir = SITE / "maps"
-    kml_dir = out_dir / "kml"
-    kml_dir.mkdir(parents=True, exist_ok=True)
-    region_by_map = {c["map"]: c["region"] for c in CHAPTERS if c["kind"] == "region"}
-    order = [out_name for _, out_name, _ in MAPS]
-
-    files, total_pins, candidate_pins, confirmed_pins, repaired = [], 0, 0, 0, 0
-    for out_name in order:
-        region = region_by_map[out_name]
-        src = MAP_DIR / f"{region}_Execution_Map_v0.2.kml"
-        if not src.exists():
-            sys.exit(f"KML 없음: {src}")
-        text, names, fixed_amps = sanitize_kml(
-            src.read_text(encoding="utf-8"), src.name)
-        pins = len(names)
-        cand = sum(1 for n in names if "숙소 후보" in n)
-        conf = sum(1 for n in names if "확정 숙소" in n)
-        total_pins += pins
-        candidate_pins += cand
-        confirmed_pins += conf
-        repaired += fixed_amps
-        slug = out_name.replace(".html", "")
-        dest = kml_dir / f"{slug}.kml"
-        dest.write_text(text, encoding="utf-8")
-        files.append((slug, region, pins, cand, conf, dest.stat().st_size))
-
-    rows = "".join(
-        f"<tr><td>{html.escape(region)}</td>"
-        f'<td><a href="kml/{slug}.kml" download>{slug}.kml</a></td>'
-        f"<td>{pins}</td><td>{cand or ''} / {conf or ''}</td><td>{size:,} B</td></tr>"
-        for slug, region, pins, cand, conf, size in files)
-
     body = f"""<h1>오프라인 준비</h1>
 <p class="meta">가이드북과 실제 길찾기를 출발 전 Wi-Fi에서 준비한다.
 저장 완료 표시는 비행기 모드 점검까지 끝났다는 뜻이 아니다.</p>
@@ -3630,72 +3599,13 @@ def build_offline_maps():
 저장 시각을 다시 확인한다.</p>
 </section>
 
-<section aria-labelledby="organic-heading">
-<h2 id="organic-heading" class="ic ic-map">Organic Maps 준비</h2>
-<p>로밍이 끊겨도 도보·운전 안내가 되게 하는 별도 지도 준비다.
-출발 전 Wi-Fi에서 한 번만 해두면 된다.</p>
-
-{net_note("KML 파일은 이미 이 기기에 있어 지금도 내려받을 수 있습니다.")}
-
-<p class="offline-note"><b>실기기 검증 전이다.</b>
-아래 KML {len(files)}개는 빌드가 매번 XML 파서로 열어보고 핀 {total_pins}개의 이름이
-UTF-8 로 온전한지 확인한 파일이다. 한글·프랑스어 이름이 섞여 있다.
-<b>다만 Organic Maps 가 기기에서 이 이름들을 어떻게 표시하는지는 확인하지 않았다.</b>
-출발 전에 한 지역만 먼저 임포트해 핀 이름이 깨지지 않는지 직접 보고,
-깨지면 나머지는 이 앱의 실행지도로 대신한다.</p>
-
-<h2>준비 순서</h2>
-<ol>
-<li><b>Organic Maps 설치</b> — 무료·오픈소스·광고 없음. 계정이 필요 없다.</li>
-<li><b>지도 내려받기 (Wi-Fi 에서)</b> — 앱에서 프랑스와 스페인 지도를 받는다.
-  용량이 크므로 반드시 출발 전 Wi-Fi 에서 한다.</li>
-<li><b>KML 내려받기</b> — 아래 표의 파일을 이 기기에 저장한다.</li>
-<li><b>임포트</b> — 저장한 파일을 열어 <i>Organic Maps 로 열기</i> 를 고른다.
-  핀이 앱의 북마크로 들어간다.</li>
-<li><b>확인</b> — 앱의 북마크 목록에서 핀 {total_pins}개가 보이고
-  이름이 깨지지 않았는지 본다.</li>
-</ol>
-
-<h2>지역별 북마크 파일</h2>
-<div class="table-wrap"><table>
-<thead><tr><th>지역</th><th>파일</th><th>핀</th><th>숙소 후보 / 확정</th><th>크기</th></tr></thead>
-<tbody>{rows}</tbody>
-</table></div>
-<p class="meta">전체 {total_pins}개 핀. 이동 순서대로 정렬돼 있다.</p>
-
-<h2 id="숙소-상태">숙소 핀 상태</h2>
-<p class="offline-note"><b><code>[확정 숙소]</code> {confirmed_pins}개, <code>[숙소 후보]</code> {candidate_pins}개다.</b>
-확정 숙소는 예약 주소를 지도에서 재확인한 핀이다. 후보 핀은 목적지로 잡고 이동하면 안 된다. 현재 상태는
-<a href="../tracker/accommodation.html">숙소 후보·확정</a> 과
-<a href="../tracker/reservations.html">예약 현황</a> 에서 확인한다.
-예약이 잠길 때마다 KML 을 다시 만들어 이 페이지에 올린다.</p>
-
-<h2>이 앱의 실행지도와 무엇이 다른가</h2>
-<div class="table-wrap"><table>
-<thead><tr><th></th><th>이 앱의 실행지도</th><th>Organic Maps</th></tr></thead>
-<tbody>
-<tr><td>핀 위치</td><td>오프라인 동작</td><td>오프라인 동작</td></tr>
-<tr><td>배경 지도</td><td>연결 필요</td><td>오프라인 동작</td></tr>
-<tr><td>길찾기</td><td>없음 (Google Maps 로 넘김)</td><td>도보·운전 턴바이턴 음성 안내</td></tr>
-<tr><td>검색</td><td>이 가이드북 안에서만</td><td>주변 상점·주유소·화장실</td></tr>
-</tbody>
-</table></div>
-<p>둘 다 쓴다. 계획과 설명은 이 가이드북에서 보고, 실제 길찾기는 Organic Maps 로 한다.</p>
-
-<p class="offline-note">Organic Maps 는 이 가이드북과 무관한 별도 앱이다.
-설치 링크를 여기에 걸지 않은 것은 스토어 주소가 바뀔 수 있어서다.
-앱스토어·Play 스토어에서 <b>Organic Maps</b> 로 검색한다.</p>
-</section>
-
 <nav class="pager"><a href="index.html">← 실행지도 목록</a><span></span></nav>"""
     (out_dir / "offline.html").write_text(
         page("오프라인 준비", body, rel="..",
              back=crumbs_for(("지도", "maps/index.html"), ("오프라인", None))), encoding="utf-8")
-    SEARCH_INDEX.append({"t": "오프라인 준비 — iPhone PWA·Organic Maps", "c": "실행지도",
+    SEARCH_INDEX.append({"t": "오프라인 준비 — 가이드북 전체 저장", "c": "실행지도",
                          "u": "maps/offline.html"})
-    amp_note = f" · & 이스케이프 {repaired}건 교정" if repaired else ""
-    print(f"  오프라인 지도: KML {len(files)}개 · 핀 {total_pins}개"
-          f"(숙소 후보 {candidate_pins} · 확정 {confirmed_pins}){amp_note} → maps/offline.html")
+    print("  오프라인 준비: PWA 안내 → maps/offline.html")
 
 
 POPUP_SRC = ("marker.bindPopup(`<b>${i+1}. ${p.name}</b><br>${p.category}"
@@ -3788,7 +3698,7 @@ def build_maps():
             '마커 또는 기준점 목록의 길찾기를 누르면 Google Maps가 열린다. '
             '배경 타일은 인터넷 연결 시 표시된다.</p>'
             '<div class="related"><a href="offline.html"><b class="ic ic-download" aria-hidden="true"></b>'
-            '오프라인 준비 — iPhone·Organic Maps</a></div>'
+            '오프라인 준비 — 가이드북 전체 저장</a></div>'
             + net_note("핀 위치와 목록은 그대로 보입니다. 배경 지도와 Google Maps 링크만 연결이 필요합니다.")
             + f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
@@ -3859,8 +3769,7 @@ def build_tracker():
             print(f"  경고: 시트 없음 — {sheet_name}")
             continue
         table = sheet_to_table(wb[sheet_name])
-        visual = (visual_figure("risk", "예약·운영 리스크 매트릭스")
-                  if slug == "reservations" else "")
+        visual = ""  # 리스크 매트릭스 도식은 2026-08-09 사용자 지시로 제거
         body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{table}"
         (out_dir / f"{slug}.html").write_text(
             page(label, body, rel="..", topbar_title=label,
@@ -5014,7 +4923,6 @@ def check_phase7_visual_guards():
 
     expected_visuals = {
         "chapters/how-to-use.html": ("rhythm",),
-        "tracker/reservations.html": ("risk",),
         "chapters/aix/transport.html": ("cardays",),
         "chapters/luberon/transport.html": ("cardays",),
         "chapters/avignon/transport.html": ("cardays",),
