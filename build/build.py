@@ -2300,10 +2300,34 @@ def build_split_chapter(c, body_md, map_links):
     intro_html, _ = md_convert(header_md) if header_md else ("", None)
     intro_html = wrap_tables(rewrite_asset_links(
         mark_layer_headings(intro_html), rel)) if header_md else ""
+    # Phase B-2 파일럿 — §8.1 요약 헤더. 요약과 링크만 두고 본문은 복제하지
+    # 않는다. Verdict 전체는 about.html 이 정본이다.
+    pilot_header = ""
+    if c["name"] == PILOT_HUB_REGION:
+        card = commercial_card_summary("Barcelona · Sitges")
+        by_slug = {p["slug"]: p for p in (load_place_registry() or [])}
+        chips = "".join(
+            f'<a class="pl-day" href="{rel}/places/{s}.html">'
+            f'{html.escape(by_slug[s]["name"])} <b>{GRADE_EN[by_slug[s]["grade"]]}</b></a>'
+            for s in PILOT_HUB_MUST if s in by_slug and by_slug[s].get("grade"))
+        rain = card.get("rain", "")
+        strength = card.get("strength", "")
+        pilot_header = (
+            '<section class="region-verdict" aria-label="이 지역 한눈에">'
+            + (f'<p class="rv-def">{html.escape(card["sub"])}</p>' if card.get("sub") else "")
+            + (f'<div class="rv-must"><b>반드시 할 경험</b>'
+               f'<div class="pl-chips">{chips}</div></div>' if chips else "")
+            + (f'<p class="rv-skip"><b>강도·우천</b> '
+               + html.escape(" · ".join(x for x in (strength, rain) if x)) + '</p>'
+               if (rain or strength) else "")
+            + f'<p class="rv-more"><a href="about.html">Editor’s Verdict 전체 보기</a></p>'
+            + '</section>')
+
     hub_body = (
         related_box(c)
         + hero_figure(c["slug"], rel)
         + intro_html
+        + pilot_header
         + (visual_figure("cycles", "Paris 16박의 세 사이클", "../../assets")
            if c["slug"] == "11" else "")
         + f'<h2 class="ic ic-clock">일자</h2><div class="grid">{day_cards}</div>'
@@ -3963,6 +3987,62 @@ GRADE_LABEL = {v: k for k, v in GRADE_KO2SLUG.items()}
 GRADE_EN = {"essential": "Must", "priority": "Recommended", "optional": "Optional",
             "alternative": "Backup", "excluded": "Skip First"}
 PILOT_DAYS = {2, 4, 28}
+# Phase B-2 파일럿 — Barcelona 허브 §8.1 요약 헤더와 dossier 표준화 대상.
+# Must 3곳 순서는 챕터 '놓치면 아쉬운 선택' 표의 상위 3행을 따른다 (원고가 정본).
+PILOT_HUB_REGION = "barcelona"
+PILOT_HUB_MUST = ["sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic"]
+PILOT_PLACE_SLUGS = {"sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic",
+                     "biblioteca-de-catalunya", "macba"}
+# 레지스트리 슬러그 ↔ compendium(90) dossier 헤딩. 이름이 다른 곳이 있어 명시한다.
+PILOT_OFFICIAL_HEAD = {
+    "sagrada-familia": "Sagrada Família",
+    "sant-pau-recinte-modernista": "Recinte Modernista de Sant Pau",
+    "barri-gotic": "Gothic Quarter·Plaça del Rei",
+    "biblioteca-de-catalunya": "Biblioteca de Catalunya",
+    "macba": "MACBA",
+}
+
+
+def load_official_urls():
+    """compendium(90)의 dossier 별 '공식정보' URL 을 헤딩으로 묶는다."""
+    try:
+        t = PLACE_DOSSIERS.read_text(encoding="utf-8")
+    except OSError:
+        return {}
+    out = {}
+    for m in re.finditer(r"^## (.+)$", t, re.M):
+        seg = t[m.end():]
+        nxt = seg.find("\n## ")
+        seg = seg[:nxt] if nxt != -1 else seg
+        u = re.search(r"공식정보:\s*(https?://\S+)", seg)
+        if u:
+            out[m.group(1).strip()] = u.group(1).rstrip(".,)")
+    return out
+
+
+def commercial_card_summary(region_head):
+    """89 도시 카드에서 서브타이틀·강도·우천 줄만 발췌한다 — 허브 요약용.
+
+    본문 복제가 아니라 L0 한 줄 판단의 재사용이다. 파싱 실패는 빈 값으로
+    떨어져 허브가 그 줄을 생략한다 — 지어내지 않는다.
+    """
+    try:
+        t = COMMERCIAL_CARDS.read_text(encoding="utf-8")
+    except OSError:
+        return {}
+    m = re.search(rf"^## {re.escape(region_head)}\n(.*?)(?=^## |\Z)", t, re.S | re.M)
+    if not m:
+        return {}
+    sec = m.group(1)
+    out = {}
+    sub = re.search(r"^> (.+)$", sec, re.M)
+    if sub:
+        out["sub"] = sub.group(1).strip()
+    for key, label in (("strength", "강도"), ("rain", "비 오는 날")):
+        mm = re.search(rf"\*\*{label}:\*\*\s*(.+)$", sec, re.M)
+        if mm:
+            out[key] = mm.group(1).strip()
+    return out
 TIMETABLE = {}        # 데일리 빌드가 채운다 — 장소 페이지가 Day 매핑에 쓴다
 PLACES_BY_DAY = {}    # 장소 빌드가 채운다 — 데일리 카드가 그 날 장소를 싣는다
 
@@ -4228,6 +4308,7 @@ def build_places(timetable):
     reg = load_place_registry()
     if not reg:
         return
+    official_urls = load_official_urls()
     out_dir = SITE / "places"
     out_dir.mkdir(parents=True, exist_ok=True)
     rel = ".."
@@ -4241,8 +4322,11 @@ def build_places(timetable):
     for r in spots:
         c = by_ch[r["chapter"]]
         days, basis = days_of.get(r["slug"], ([], ""))
-        grade = (f'<span class="grade grade-{r["grade"]}">{GRADE_LABEL[r["grade"]]}</span>'
-                 if r["grade"] else '<span class="badge badge-pending">등급 미정</span>')
+        # 파일럿 dossier 5곳은 등급을 영문(D-04)으로 보여 검수를 받는다.
+        g_label = ((GRADE_EN if r["slug"] in PILOT_PLACE_SLUGS else GRADE_LABEL)
+                   .get(r["grade"]) if r["grade"] else None)
+        grade = (f'<span class="grade grade-{r["grade"]}">{g_label}</span>'
+                 if g_label else '<span class="badge badge-pending">등급 미정</span>')
         rows = [("지역", f'<a href="{rel}/{chapter_url(c)}">{html.escape(c["region"])}</a>'),
                 ("등급", grade)]
         if days:
@@ -4281,6 +4365,12 @@ def build_places(timetable):
         # 참고 링크 — 근거가 있는 것만. 지도 좌표는 실행지도 핀에서, 위키 제목은
         # 레지스트리에서 온다. 둘 다 없으면 그 칩은 나오지 않는다.
         refs = []
+        # 파일럿 dossier — compendium(90)의 '공식정보' 링크를 참고 칩으로
+        # 끌어올린다 (§9.2: 공식 사이트 1탭). 등록부에 없으면 만들지 않는다.
+        head = PILOT_OFFICIAL_HEAD.get(r["slug"])
+        if head and official_urls.get(head):
+            refs.append(f'<a class="ref ic ic-link" target="_blank" rel="noopener"'
+                        f' href="{html.escape(official_urls[head])}">공식 사이트</a>')
         if r.get("wiki"):
             wurl = (f'https://{r["wlang"]}.wikipedia.org/wiki/'
                     + urllib.parse.quote(r["wiki"].replace(" ", "_")))
