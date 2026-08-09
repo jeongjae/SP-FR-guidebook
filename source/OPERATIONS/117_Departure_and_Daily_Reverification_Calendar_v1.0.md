@@ -18,15 +18,15 @@
 |---|---|
 | 8/30 | Sagrada 입장상태·예배·보안, Sant Pau 운영 |
 | 8/31 | MACBA 월요일 운영; MACBA Library는 8월 휴관 |
-| 9/1 | Sitges 박물관 여름 폐관시간·렌터카 인수 |
+| 9/1 | Sitges 박물관 여름 폐관시간·Sants 렌터카 07:00 인수 |
 | 9/2 | Collioure 주차·시장·Cadaqués Saba·해안 우회 지도 |
-| 9/4 | Bàscara 체크아웃→Nice 이동·차량 반납 |
-| 9/9 | NCE 렌터카·Saint-Paul 주차·Aix 체크인 |
+| 9/4 | Bàscara 체크아웃·BCN T1 반납 14:00·VY1521 15:30 수속 |
+| 9/9 | Nice역 렌터카 09:00 인수·Saint-Paul 주차·Aix 체크인 |
 | 9/11 | Marseille 왕복 열차·MuCEM 운영·Vieux-Port 치안 |
 | 9/13 | Lourmarin 행사·Coustellet 시장·농가 체크인 |
 | 9/15 | Gordes 시장·Bories·Sénanque 운영 |
 | 9/18–9/19 | Uzès 시장·Pont du Gard 홍수·주차 (9/18) · Arles JEP 혼잡·시설 운영 (9/19) |
-| 9/20 | 주유·렌터카 반납·TGV 플랫폼 |
+| 9/20 | 주유·Avignon TGV역 반납 09:00·TGV 12176 10:22 플랫폼 |
 | 9/23 | Annecy TER·호수날씨 |
 | 9/30 | Fashion Week 공개행사·공식 확인된 팝업만 |
 | 10/1 | Il Barbiere 19:30 — 티켓·입장시간·귀가 교통 |
