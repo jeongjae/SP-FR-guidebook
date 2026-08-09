@@ -119,6 +119,55 @@
       ]
     },
     {
+      "date": "2026-09-01",
+      "city": "Barcelona · Sitges · Bàscara",
+      "title": "Sants 렌터카 인수 → Sitges → Bàscara 체크인",
+      "center": [
+        41.62,
+        2.35
+      ],
+      "zoom": 9,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "barcelona-sants",
+          "order": 0,
+          "plannedTime": "07:00 렌터카 인수",
+          "note": "Hertz 확정 L671E2E0288 · 인수 후 숙소로 돌아와 짐 적재."
+        },
+        {
+          "placeId": "barcelona-stay",
+          "order": 1,
+          "plannedTime": "복귀·짐 적재 · 체크아웃 ~12:00",
+          "note": "Occidental Barcelona 1929 — 인수 후 복귀해 짐을 싣고 출발."
+        },
+        {
+          "placeId": "sitges",
+          "order": 2,
+          "plannedTime": "낮",
+          "note": "박물관 여름 폐관시간 전날 확인. 체크인 창에 따라 Girona 관광 축소·삭제."
+        },
+        {
+          "placeId": "girona-stay-private",
+          "order": 3,
+          "plannedTime": "체크인",
+          "note": "Airbnb 체크인 — 조건 재확인."
+        }
+      ],
+      "segments": [
+        {
+          "from": "barcelona-sants",
+          "to": "barcelona-stay",
+          "mode": "driving"
+        },
+        {
+          "from": "barcelona-stay",
+          "to": "sitges",
+          "mode": "driving"
+        }
+      ]
+    },
+    {
       "date": "2026-09-02",
       "city": "Bàscara · Collioure · Cadaqués",
       "title": "Collioure 오전 장날과 Cadaqués 해안 쪽 우회",
@@ -303,29 +352,46 @@
     },
     {
       "date": "2026-09-04",
-      "city": "Nice",
-      "title": "Nice 도착 — 공항에서 숙소 정착",
+      "city": "Bàscara · Barcelona · Nice",
+      "title": "BCN 반납 → VY1521 → Nice 도착",
       "center": [
-        43.679,
-        7.236
+        42.0,
+        4.5
       ],
-      "zoom": 13,
-      "defaultMode": "transit",
+      "zoom": 7,
+      "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "nice-airport-terminal-2",
+          "placeId": "girona-stay-private",
           "order": 0,
-          "plannedTime": "도착 직후",
-          "note": "도착터미널에 따라 Tram 2 또는 택시."
+          "plannedTime": "오전 체크아웃",
+          "note": "Bàscara 체크아웃 · 주유 후 남하."
+        },
+        {
+          "placeId": "bcn-airport-t1",
+          "order": 1,
+          "plannedTime": "14:00 렌터카 반납",
+          "note": "Hertz L671E2E0288 T1 반납 확정 · VY1521 15:30 출발 (예약 NMGI4Q)."
+        },
+        {
+          "placeId": "nice-airport-terminal-2",
+          "order": 2,
+          "plannedTime": "16:55 NCE 도착",
+          "note": "도착 터미널은 항공권 기준 재확인. 도착터미널에 따라 Tram 2 또는 택시."
         },
         {
           "placeId": "nice-stay-candidate",
-          "order": 1,
+          "order": 3,
           "plannedTime": "도착 +60분 체크인",
           "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
         }
       ],
       "segments": [
+        {
+          "from": "bcn-airport-t1",
+          "to": "nice-airport-terminal-2",
+          "mode": "transit"
+        },
         {
           "from": "nice-airport-terminal-2",
           "to": "nice-stay-candidate",
@@ -523,10 +589,10 @@
           "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
         },
         {
-          "placeId": "nice-airport-terminal-2",
-          "order": 1,
-          "plannedTime": "08:15 전후 렌터카 인수",
-          "note": "자동변속·보험·편도반납·차체촬영."
+          "placeId": "nice-ville",
+          "plannedTime": "09:00 렌터카 인수",
+          "note": "Hertz 확정 L672E080313 · Nice역(Avenue Thiers) 인수 — NCE T2 아님.",
+          "order": 1
         },
         {
           "placeId": "saint-paul-parking-route-de-vence",
@@ -562,11 +628,11 @@
       "segments": [
         {
           "from": "nice-stay-candidate",
-          "to": "nice-airport-terminal-2",
-          "mode": "transit"
+          "to": "nice-ville",
+          "mode": "walking"
         },
         {
-          "from": "nice-airport-terminal-2",
+          "from": "nice-ville",
           "to": "saint-paul-parking-route-de-vence",
           "mode": "driving"
         },
@@ -1130,14 +1196,14 @@
         {
           "placeId": "avignon-tgv",
           "order": 1,
-          "plannedTime": "오전 렌터카 반납",
-          "note": "주유·차량사진·영수증·보증금 해제 확인."
+          "plannedTime": "09:00 렌터카 반납",
+          "note": "Hertz L672E080313 반납 확정 · 주유·차량사진·보증금 해제 확인."
         },
         {
           "placeId": "lyon-part-dieu",
           "order": 2,
-          "plannedTime": "10:20–12:30 범위 TGV",
-          "note": "승강장 20분 전 진입 · 짐 시야 확보."
+          "plannedTime": "TGV 12176 10:22→11:28",
+          "note": "1등석 확정 · 승강장 20분 전 진입."
         },
         {
           "placeId": "lyon-stay-candidate",
