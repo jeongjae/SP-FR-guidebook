@@ -2983,11 +2983,12 @@
       "originalPath": "source/ASSETS/photos/originals/aix/aix-city-01.jpg",
       "originalSha256": "9a1751d4329dda33326a567c040566497a9843f020e426b0bd18e8b94e78addb",
       "usage": [
-        "daily/day-12.html"
+        "daily/day-12.html",
+        "chapters/aix/index.html"
       ],
       "role": "hero",
       "region": "aix",
-      "regionHero": false,
+      "regionHero": true,
       "status": "processed",
       "altKo": "공중에서 내려다본 로통드 분수 로터리와 엑상프로방스 구시가의 지붕들",
       "captionKo": "로통드 분수 너머로 엑상프로방스 구시가의 지붕들이 펼쳐진다.",
@@ -3822,11 +3823,12 @@
       "originalSha256": "6020c25f0dc497d8ae4aa26fa7175a214b2a86d91bc6352c908dd320c5e94cf7",
       "usage": [
         "daily/day-18.html",
-        "places/gordes.html"
+        "places/gordes.html",
+        "chapters/luberon/index.html"
       ],
       "role": "hero",
       "region": "luberon",
-      "regionHero": false,
+      "regionHero": true,
       "status": "processed",
       "altKo": "돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마",
       "captionKo": "언덕 위로 돌집이 층층이 이어지는 고르드 마을 전경.",
@@ -4034,11 +4036,12 @@
       "originalPath": "source/ASSETS/photos/originals/avignon/avignon-city-01.jpg",
       "originalSha256": "e9050245d924b6bc4f2f167040bcca4813fbb91c35a0645945f5e897850f4c5d",
       "usage": [
-        "daily/day-20.html"
+        "daily/day-20.html",
+        "chapters/avignon/index.html"
       ],
       "role": "hero",
       "region": "avignon",
-      "regionHero": false,
+      "regionHero": true,
       "status": "processed",
       "altKo": "론강 건너편에서 바라본 아비뇽 구시가 — 교황청 궁전과 노트르담 데 돔 대성당, 성벽, 왼쪽 아래로 생 베네제 다리가 보인다",
       "captionKo": "빌뇌브레자비뇽의 필리프 르 벨 탑 쪽에서 바라본 아비뇽 — 교황청 궁전과 대성당, 성벽이 구시가 스카이라인을 이룬다.",
@@ -4826,11 +4829,12 @@
       "originalPath": "source/ASSETS/photos/originals/lyon/lyon-city-01.jpg",
       "originalSha256": "78d889b9ad43c9eb8567cac85f42168300475a215fafd5f057e4c156202ce4ad",
       "usage": [
-        "daily/day-24.html"
+        "daily/day-24.html",
+        "chapters/lyon/index.html"
       ],
       "role": "hero",
       "region": "lyon",
-      "regionHero": false,
+      "regionHero": true,
       "status": "processed",
       "altKo": "푸르비에르 언덕에서 내려다본 리옹 프레스킬 지구의 붉은 지붕과 벨쿠르 광장",
       "captionKo": "푸르비에르 언덕에서 내려다본 프레스킬 지구 — 사진 중앙의 넓은 광장이 벨쿠르 광장이다.",
@@ -5679,11 +5683,12 @@
       "originalPath": "source/ASSETS/photos/originals/paris/paris-city-01.jpg",
       "originalSha256": "da75de5e92bef5948f10d69ec9677acd2eeb79fb2010cf2bfcef468051a44b7e",
       "usage": [
-        "daily/day-28.html"
+        "daily/day-28.html",
+        "chapters/paris/index.html"
       ],
       "role": "hero",
       "region": "paris",
-      "regionHero": false,
+      "regionHero": true,
       "status": "processed",
       "altKo": "몽파르나스 타워 전망대에서 본 파리 시가지와 에펠탑, 멀리 라데팡스",
       "captionKo": "몽파르나스 타워에서 본 파리 — 에펠탑과 샹드마르스, 지평선의 라데팡스 고층지구.",
