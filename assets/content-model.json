@@ -2596,11 +2596,11 @@
       "scheduledDate": "2026-09-01",
       "dayId": "day:004",
       "category": "렌터카",
-      "name": "BCN 구간 차량 인수·반납",
-      "status": "미조사",
+      "name": "BCN 렌터카 — Sants 인수→El Prat 반납",
+      "status": "예약완료",
       "priority": "P0",
       "targetDate": "2026-08-01",
-      "sourceUrl": null
+      "sourceUrl": "https://www.hertz.com"
     },
     {
       "id": "reservation:r010",
@@ -2608,11 +2608,11 @@
       "scheduledDate": "2026-09-04",
       "dayId": "day:007",
       "category": "항공",
-      "name": "Girona권→Nice 이동",
-      "status": "미조사",
+      "name": "BCN→NCE 항공 VY1521",
+      "status": "예약완료",
       "priority": "P0",
       "targetDate": "2026-08-01",
-      "sourceUrl": null
+      "sourceUrl": "https://www.vueling.com/en"
     },
     {
       "id": "reservation:r011",
@@ -2620,11 +2620,11 @@
       "scheduledDate": "2026-09-09",
       "dayId": "day:012",
       "category": "렌터카",
-      "name": "NCE 인수→Avignon TGV 반납",
-      "status": "재확인",
+      "name": "니스 렌터카 — Nice역 인수→Avignon TGV역 반납",
+      "status": "예약완료",
       "priority": "P0",
       "targetDate": "2026-08-01",
-      "sourceUrl": null
+      "sourceUrl": "https://www.hertz.com"
     },
     {
       "id": "reservation:r012",
@@ -2632,11 +2632,11 @@
       "scheduledDate": "2026-09-20",
       "dayId": "day:023",
       "category": "철도",
-      "name": "Avignon TGV→Lyon",
-      "status": "재확인",
+      "name": "Avignon TGV→Lyon Part Dieu — INOUI 12176 1등석",
+      "status": "예약완료",
       "priority": "P0",
       "targetDate": "2026-08-10",
-      "sourceUrl": null
+      "sourceUrl": "https://www.sncf-connect.com"
     },
     {
       "id": "reservation:r013",
@@ -2849,8 +2849,8 @@
       "from": "Barcelona",
       "to": "Sitges→Girona 또는 Bàscara",
       "mode": "렌터카",
-      "status": "미조사",
-      "operator": null,
+      "status": "예약완료",
+      "operator": "Hertz L671E2E0288",
       "risk": "짐 노출·주차·반납",
       "fallback": "Sitges 지연 시 Girona 관광 삭제·Bàscara 직행"
     },
@@ -2859,9 +2859,9 @@
       "dayId": "day:007",
       "from": "Bàscara",
       "to": "Nice",
-      "mode": "미정",
-      "status": "미조사",
-      "operator": null,
+      "mode": "렌터카 반납 후 항공",
+      "status": "예약완료",
+      "operator": "Vueling VY1521",
       "risk": "차량 반납·공항 이동·수하물",
       "fallback": "이동수단·차량 반납지 확정 후 실행"
     },
@@ -2871,8 +2871,8 @@
       "from": "Nice",
       "to": "Aix-en-Provence",
       "mode": "렌터카",
-      "status": "미조사",
-      "operator": null,
+      "status": "예약완료",
+      "operator": "Hertz L672E080313",
       "risk": "인수지연·A8 정체",
       "fallback": "Grasse 삭제·Aix 직행"
     },
@@ -2903,9 +2903,9 @@
       "dayId": "day:023",
       "from": "Avignon",
       "to": "Lyon",
-      "mode": "렌터카+TGV",
-      "status": "재확인",
-      "operator": null,
+      "mode": "렌터카 반납+TGV",
+      "status": "예약완료",
+      "operator": "TGV INOUI 12176",
       "risk": "렌터카 반납·TGV 날짜 변경 필요",
       "fallback": "더 이른 열차 또는 택시"
     },
