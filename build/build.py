@@ -2324,6 +2324,11 @@ def build_split_chapter(c, body_md, map_links):
                if (rain or strength) else "")
             + f'<p class="rv-more"><a href="about.html">Editor’s Verdict 전체 보기</a></p>'
             + '</section>')
+        if rain:
+            # Phase F — "비 오는 날"·"우천" 검색이 지역별 대안으로 닿게 한다.
+            SEARCH_INDEX.append({"t": f'{c["region"]} 비 오는 날 — {rain}',
+                                 "c": "우천 대안", "u": f'chapters/{c["name"]}/about.html',
+                                 "k": "비 오는 날 우천 대안"})
 
     hub_body = (
         related_box(c)
@@ -3081,14 +3086,14 @@ def load_reservations():
     from openpyxl import load_workbook
     wb = load_workbook(TRACKER_XLSX, data_only=True)
     if "Reservations" not in wb.sheetnames:
-        return {}, 0, 0
+        return {}, 0, 0, []
     rows = list(wb["Reservations"].iter_rows(values_only=True))
     hdr_i = next((i for i, r in enumerate(rows) if r and r[0] == "ID"), None)
     if hdr_i is None:
-        return {}, 0, 0
+        return {}, 0, 0, []
     hdr = list(rows[hdr_i])
-    ix = {name: hdr.index(name) for name in ("ID", "날짜", "상태")}
-    by_date, total, undone = {}, 0, 0
+    ix = {name: hdr.index(name) for name in ("ID", "날짜", "상태", "예약항목")}
+    by_date, total, undone, items = {}, 0, 0, []
     for r in rows[hdr_i + 1:]:
         if not r or not r[ix["ID"]]:
             continue
@@ -3101,7 +3106,8 @@ def load_reservations():
         d = r[ix["날짜"]]
         if hasattr(d, "date"):
             by_date.setdefault(d.date().isoformat(), []).append(status)
-    return by_date, total, undone
+        items.append((str(r[ix["예약항목"]] or "").strip(), status))
+    return by_date, total, undone, items
 
 
 def build_daily():
@@ -3127,7 +3133,7 @@ def build_daily():
     audit = load_audit()
     google_places, google_days, _google_regions = load_google_map_data()
     fatigue, timetable, conflicts = load_day_details()
-    res_by_date, _res_total, _res_undone = load_reservations()
+    res_by_date, _res_total, _res_undone, _res_items = load_reservations()
     TIMETABLE.update(timetable)
     for x in conflicts:
         print(f"  주의: 피로도 값이 챕터마다 다름 — {x} (도착 챕터 값을 쓴다)")
@@ -3370,7 +3376,9 @@ def build_daily():
             f'<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
             f'<span class="di-region">{html.escape(row["base"])}</span>'
             f'<span class="di-core">{html.escape(row["core"])}</span></a>'))
-        SEARCH_INDEX.append({"t": title, "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
+        # Phase F — "9월 4일"·"금요일" 같은 자연어 날짜로도 그 날에 닿게 한다.
+        SEARCH_INDEX.append({"t": title, "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html",
+                             "k": f"{d.month}월 {d.day}일 {wd}요일 {d.month}/{d.day}"})
         SEARCH_INDEX.append({"t": f"Day {n} 핵심 실행 — {row['core']}",
                              "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
         for slug, region, rows in timetable.get(key, []):
@@ -3479,7 +3487,12 @@ def build_home():
 
     # Phase B 파일럿 — 출발 전 준비 스트립. 건수만 집계한다 (개인정보 비노출).
     # D-day 는 nav.js 가 기기 시계로 계산한다. 정적 fallback 은 출발일 표기.
-    _by_date, res_total, res_undone = load_reservations()
+    _by_date, res_total, res_undone, res_items = load_reservations()
+    # Phase F — 예약 항목을 검색에 싣는다. 항목명·상태만, 예약번호는 싣지 않는다.
+    for item, status in res_items:
+        if item:
+            SEARCH_INDEX.append({"t": f"예약 — {item}", "c": f"예약 현황 · {status}",
+                                 "u": "tracker/reservations.html", "k": "예약 " + status})
     plan_strip = (
         '<section class="plan-strip" aria-label="출발 준비 현황">'
         f'<b class="ps-dday" id="plan-dday">{date_label(TRIP_START)} 출발</b>'
@@ -5254,8 +5267,15 @@ def check_phase10_official_fact_guards():
         problems.append("공식 검증일 누락")
     else:
         try:
-            if date.fromisoformat(verified_date.group(1)) > TRIP_START:
+            vd = date.fromisoformat(verified_date.group(1))
+            if vd > TRIP_START:
                 problems.append("공식 검증일이 여행 시작일보다 늦음")
+            # Phase F — 검증이 오래 묵으면 경고한다 (빌드는 막지 않는다).
+            # 운영정보는 변하는 값이라, 출발이 다가올수록 재검증이 필요하다.
+            age = (date.today() - vd).days
+            if age > 14:
+                print(f"  주의: 공식 검증일 {vd} — {age}일 경과. "
+                      f"topics/reverify 의 재확인 대상을 갱신할 때다.")
         except ValueError:
             problems.append("공식 검증일 형식 오류")
 

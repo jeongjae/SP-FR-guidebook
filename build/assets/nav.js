@@ -99,7 +99,8 @@
       for (var j = 0; j < idx.length; j++) {
         var e = idx[j];
         var title = e.t.toLowerCase(), category = e.c.toLowerCase();
-        if ((title + " " + category).indexOf(q) === -1) continue;
+        var kw = (e.k || "").toLowerCase();
+        if ((title + " " + category + " " + kw).indexOf(q) === -1) continue;
         var score = title === q ? 0
           : title.indexOf(q) === 0 ? 1
           : category.indexOf("장소") === 0 ? 2
