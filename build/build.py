@@ -3156,17 +3156,17 @@ def build_daily():
             f'<div class="dq-item dq-{k}"><dt>{AUDIT_LABELS[k]}</dt>'
             f'<dd>{html.escape(row[k])}</dd></div>'
             for k in ("core", "depart", "buffer"))
-        # Phase B 파일럿 — 그 날짜에 걸린 예약을 건수로만 요약한다.
-        if n in PILOT_DAYS:
-            states = res_by_date.get(key, [])
-            if states:
-                done = sum(1 for s in states if s == "예약완료")
-                res_txt = f"{len(states)}건 — 완료 {done} · 미확정 {len(states) - done}"
-            else:
-                res_txt = "이 날짜로 잡힌 예약 없음"
-            quick_summary += (f'<div class="dq-item dq-book"><dt>예약</dt>'
-                              f'<dd>{html.escape(res_txt)} · '
-                              f'<a href="../tracker/reservations.html">현황</a></dd></div>')
+        # Phase D — 그 날짜에 걸린 예약을 건수로만 요약한다 (파일럿 검수 승인
+        # 후 43일 전면 적용). 셀 값은 비노출, 상태·건수만 쓴다.
+        states = res_by_date.get(key, [])
+        if states:
+            done = sum(1 for s in states if s == "예약완료")
+            res_txt = f"{len(states)}건 — 완료 {done} · 미확정 {len(states) - done}"
+        else:
+            res_txt = "이 날짜로 잡힌 예약 없음"
+        quick_summary += (f'<div class="dq-item dq-book"><dt>예약</dt>'
+                          f'<dd>{html.escape(res_txt)} · '
+                          f'<a href="../tracker/reservations.html">현황</a></dd></div>')
         summary = "".join(
             f"<div class=\"ds-item\"><dt>{AUDIT_LABELS[k]}</dt>"
             f"<dd>{html.escape(row[k])}</dd></div>"
@@ -3232,8 +3232,8 @@ def build_daily():
         spots = PLACES_BY_DAY.get(n, [])
         if spots:
             def chip(s):
-                # 파일럿 3일은 등급을 영문(D-04)으로 보여 검수를 받는다.
-                lab = (GRADE_EN if n in PILOT_DAYS else GRADE_LABEL).get(s["grade"])
+                # D-04 확정 — 데일리의 등급 표기는 영문 5종이다.
+                lab = GRADE_EN.get(s["grade"])
                 g = f' <b>{lab}</b>' if s["grade"] and lab else ""
                 return (f'<a class="pl-day" href="../places/{s["slug"]}.html">'
                         f'{html.escape(s["name"])}{g}</a>')
@@ -3303,10 +3303,10 @@ def build_daily():
             photo_block = media.photo_figure(hero_asset, "..", variant="hero", priority=True)
             photo_block += media.photo_gallery(other_photos, "..", "오늘의 주요 장소", limit=4)
 
-        # Phase B 파일럿 — 거점 이동일은 실행 요약을 이동 순서로 다시 편다.
+        # Phase D — 거점 이동일은 실행 요약을 이동 순서로 다시 편다 (전 이동일).
         # 값은 실행성 감사에서 그대로 온다. 시간·주차 등 미확정 값을 지어내지 않는다.
         transfer_block = ""
-        if n in PILOT_DAYS and multi:
+        if multi:
             steps = [("출발·체크아웃", row["depart"]), ("경유·핵심", row["core"]),
                      ("완충", row["buffer"]), ("지연 시 생략", row["cut"]),
                      ("대체안", row["alt"]), ("잠금·예약", row["lock"])]
@@ -3982,11 +3982,10 @@ PLACE_REGISTRY = SOURCE / "ASSETS" / "91_Place_Registry_v1.0.md"
 GRADE_KO2SLUG = {"필수": "essential", "우선 추천": "priority", "선택": "optional",
                  "대체": "alternative", "비추천": "excluded"}
 GRADE_LABEL = {v: k for k, v in GRADE_KO2SLUG.items()}
-# Phase B 파일럿(D-04): 등급 영문 표기. PILOT_DAYS 화면에서만 쓴다 —
-# 전면 전환은 파일럿 검수 후 Phase E 에서 일괄 매핑한다.
+# D-04 등급 영문 표기. 데일리는 전면 적용(Phase D), 장소·주제 등 나머지
+# 화면은 Phase E 에서 일괄 전환한다.
 GRADE_EN = {"essential": "Must", "priority": "Recommended", "optional": "Optional",
             "alternative": "Backup", "excluded": "Skip First"}
-PILOT_DAYS = {2, 4, 28}
 # Phase B-2 파일럿 — Barcelona 허브 §8.1 요약 헤더와 dossier 표준화 대상.
 # Must 3곳 순서는 챕터 '놓치면 아쉬운 선택' 표의 상위 3행을 따른다 (원고가 정본).
 PILOT_HUB_REGION = "barcelona"
