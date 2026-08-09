@@ -2145,6 +2145,33 @@ footer {
   .event-button { flex: 1 1 100%; width: 100%; }
 }
 
+/* ---- Phase B 파일럿 — 홈 준비 스트립 · 이동일 체크리스트 · 예약 요약 ---- */
+.plan-strip {
+  display: flex; align-items: center; gap: 12px;
+  margin: 12px 0 4px; padding: 12px 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.ps-dday { font-size: 1.15rem; font-weight: 800; color: var(--text); white-space: nowrap; }
+.ps-copy { flex: 1; color: var(--text); min-width: 0; }
+.ps-link {
+  min-height: 44px; display: inline-flex; align-items: center;
+  color: var(--text); text-decoration: underline; text-underline-offset: 3px;
+  font-weight: 700; white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .plan-strip { flex-wrap: wrap; }
+  .ps-copy { flex-basis: 100%; order: 3; }
+}
+.td-steps { list-style: none; margin: 8px 0; padding: 0; }
+.td-steps li {
+  display: flex; gap: 10px; padding: 10px 0;
+  border-bottom: 1px solid var(--separator);
+}
+.td-steps li b { flex: 0 0 6.5em; color: var(--text); }
+.td-steps li span { color: var(--text); min-width: 0; }
+.dq-book dd a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+
 /* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */
 .ic-today::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228.2%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223.2%22%20fill%3D%22currentColor%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
 .ic-list::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%206.5h16M4%2012h16M4%2017.5h16%22%2F%3E%3C%2Fsvg%3E"); }
