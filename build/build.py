@@ -1129,6 +1129,9 @@ def render_inline_tokens(text):
         kind, label = m.group(1), m.group(2).strip()
         if kind not in GRADE_KINDS:
             return m.group(0)
+        # D-04 — 표기는 영문 5종으로 통일한다. 원고의 한글 라벨은 그대로 두고
+        # 렌더에서만 바꾼다 (원고 수정 없는 일괄 매핑).
+        label = GRADE_EN.get(kind, label)
         return f'<span class="grade grade-{kind}">{html.escape(label)}</span>'
 
     return GRADE_RE.sub(grade, BADGE_RE.sub(badge, text))
@@ -2300,16 +2303,15 @@ def build_split_chapter(c, body_md, map_links):
     intro_html, _ = md_convert(header_md) if header_md else ("", None)
     intro_html = wrap_tables(rewrite_asset_links(
         mark_layer_headings(intro_html), rel)) if header_md else ""
-    # Phase B-2 파일럿 — §8.1 요약 헤더. 요약과 링크만 두고 본문은 복제하지
-    # 않는다. Verdict 전체는 about.html 이 정본이다.
+    # Phase E — §8.1 요약 헤더 (8지역). 요약과 링크만 두고 본문은 복제하지
+    # 않는다. Verdict·추천표 전체는 about.html 이 정본이다.
     pilot_header = ""
-    if c["name"] == PILOT_HUB_REGION:
-        card = commercial_card_summary("Barcelona · Sitges")
-        by_slug = {p["slug"]: p for p in (load_place_registry() or [])}
+    if c["name"] in CARD_HEAD:
+        card = commercial_card_summary(CARD_HEAD[c["name"]])
         chips = "".join(
-            f'<a class="pl-day" href="{rel}/places/{s}.html">'
-            f'{html.escape(by_slug[s]["name"])} <b>{GRADE_EN[by_slug[s]["grade"]]}</b></a>'
-            for s in PILOT_HUB_MUST if s in by_slug and by_slug[s].get("grade"))
+            f'<a class="pl-day" href="about.html">'
+            f'{html.escape(name)} <b>{GRADE_EN[g]}</b></a>'
+            for g, name in chapter_top_picks(body_md))
         rain = card.get("rain", "")
         strength = card.get("strength", "")
         pilot_header = (
@@ -3986,20 +3988,51 @@ GRADE_LABEL = {v: k for k, v in GRADE_KO2SLUG.items()}
 # 화면은 Phase E 에서 일괄 전환한다.
 GRADE_EN = {"essential": "Must", "priority": "Recommended", "optional": "Optional",
             "alternative": "Backup", "excluded": "Skip First"}
-# Phase B-2 파일럿 — Barcelona 허브 §8.1 요약 헤더와 dossier 표준화 대상.
-# Must 3곳 순서는 챕터 '놓치면 아쉬운 선택' 표의 상위 3행을 따른다 (원고가 정본).
-PILOT_HUB_REGION = "barcelona"
-PILOT_HUB_MUST = ["sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic"]
-PILOT_PLACE_SLUGS = {"sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic",
-                     "biblioteca-de-catalunya", "macba"}
-# 레지스트리 슬러그 ↔ compendium(90) dossier 헤딩. 이름이 다른 곳이 있어 명시한다.
-PILOT_OFFICIAL_HEAD = {
-    "sagrada-familia": "Sagrada Família",
+# Phase E — 지역 허브 §8.1 요약 헤더 (8지역). 정의는 89 도시카드, 필수 경험은
+# 각 챕터 '놓치면 아쉬운 선택' 표 상위 3행에서 발췌한다 (원고가 정본).
+CARD_HEAD = {
+    "barcelona": "Barcelona · Sitges", "girona": "Girona · Collioure · Empordà",
+    "nice": "Nice · Côte d’Azur", "aix": "Aix-en-Provence",
+    "luberon": "Luberon Farmhouse", "avignon": "Avignon · Uzès · Alpilles",
+    "lyon": "Lyon · Annecy", "paris": "Paris Long Stay",
+}
+# 레지스트리 슬러그 ↔ compendium(90) dossier 헤딩 — 이름이 정확히 일치하지
+# 않는 곳만 명시한다. 여기도 없으면 그 장소는 공식 사이트 칩이 없다.
+OFFICIAL_HEAD_OVERRIDES = {
     "sant-pau-recinte-modernista": "Recinte Modernista de Sant Pau",
     "barri-gotic": "Gothic Quarter·Plaça del Rei",
-    "biblioteca-de-catalunya": "Biblioteca de Catalunya",
-    "macba": "MACBA",
+    "cau-ferrat": "Cau Ferrat·Maricel, Sitges",
+    "palau-de-maricel": "Cau Ferrat·Maricel, Sitges",
+    "cassis": "Cassis Harbour",
+    "roussillon-sentier-des-ocres": "Roussillon·Sentier des Ocres",
+    "uzes": "Uzès Saturday Market",
+    "vieux-lyon": "Vieux Lyon·Traboules",
+    "annecy": "Annecy Old Town·Lake",
+    "musee-du-louvre": "Louvre Museum",
+    "musee-d-orsay": "Musée d’Orsay",
+    "montmartre-south-pigalle": "Montmartre·South Pigalle",
 }
+
+
+def chapter_top_picks(body_md, limit=3):
+    """챕터 '놓치면 아쉬운 선택' 표의 상위 행에서 (등급 슬러그, 경험명)을 발췌."""
+    m = re.search(r"^## 놓치면 아쉬운 선택\n(.*?)(?=^## |\Z)", body_md, re.S | re.M)
+    if not m:
+        return []
+    picks = []
+    for row in m.group(1).splitlines():
+        cells = [x.strip() for x in row.strip().strip("|").split("|")]
+        if len(cells) < 2 or cells[0] in ("등급", "") or set(cells[0]) <= {"-", ":"}:
+            continue
+        # build_split_chapter 시점엔 등급 셀이 이미 span 으로 렌더되어 있다.
+        gm = re.search(r"grade grade-([a-z]+)", cells[0])
+        slug = gm.group(1) if gm else GRADE_KO2SLUG.get(cells[0].strip("*").strip())
+        name = re.sub(r"<[^>]+>|\*\*", "", cells[1]).strip()
+        if slug and name:
+            picks.append((slug, name))
+        if len(picks) >= limit:
+            break
+    return picks
 
 
 def load_official_urls():
@@ -4321,9 +4354,8 @@ def build_places(timetable):
     for r in spots:
         c = by_ch[r["chapter"]]
         days, basis = days_of.get(r["slug"], ([], ""))
-        # 파일럿 dossier 5곳은 등급을 영문(D-04)으로 보여 검수를 받는다.
-        g_label = ((GRADE_EN if r["slug"] in PILOT_PLACE_SLUGS else GRADE_LABEL)
-                   .get(r["grade"]) if r["grade"] else None)
+        # D-04 확정 — 등급 표기는 영문 5종이다.
+        g_label = GRADE_EN.get(r["grade"]) if r["grade"] else None
         grade = (f'<span class="grade grade-{r["grade"]}">{g_label}</span>'
                  if g_label else '<span class="badge badge-pending">등급 미정</span>')
         rows = [("지역", f'<a href="{rel}/{chapter_url(c)}">{html.escape(c["region"])}</a>'),
@@ -4364,12 +4396,13 @@ def build_places(timetable):
         # 참고 링크 — 근거가 있는 것만. 지도 좌표는 실행지도 핀에서, 위키 제목은
         # 레지스트리에서 온다. 둘 다 없으면 그 칩은 나오지 않는다.
         refs = []
-        # 파일럿 dossier — compendium(90)의 '공식정보' 링크를 참고 칩으로
-        # 끌어올린다 (§9.2: 공식 사이트 1탭). 등록부에 없으면 만들지 않는다.
-        head = PILOT_OFFICIAL_HEAD.get(r["slug"])
-        if head and official_urls.get(head):
+        # Phase E — compendium(90)의 '공식정보' 링크를 참고 칩으로 끌어올린다
+        # (§9.2: 공식 사이트 1탭). 이름 일치 → 명시 매핑 순서. 없으면 안 만든다.
+        o_url = (official_urls.get(r["name"])
+                 or official_urls.get(OFFICIAL_HEAD_OVERRIDES.get(r["slug"], "")))
+        if o_url:
             refs.append(f'<a class="ref ic ic-link" target="_blank" rel="noopener"'
-                        f' href="{html.escape(official_urls[head])}">공식 사이트</a>')
+                        f' href="{html.escape(o_url)}">공식 사이트</a>')
         if r.get("wiki"):
             wurl = (f'https://{r["wlang"]}.wikipedia.org/wiki/'
                     + urllib.parse.quote(r["wiki"].replace(" ", "_")))
