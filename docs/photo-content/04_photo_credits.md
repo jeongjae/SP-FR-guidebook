@@ -638,6 +638,7 @@
 - Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
 - Used in:
   - `/daily/day-12.html`
+  - `/chapters/aix/index.html`
 
 ## 엑상프로방스 노천시장
 
@@ -800,6 +801,7 @@
 - Used in:
   - `/daily/day-18.html`
   - `/places/gordes.html`
+  - `/chapters/luberon/index.html`
 
 ## 보리 석조마을
 
@@ -844,6 +846,7 @@
 - Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
 - Used in:
   - `/daily/day-20.html`
+  - `/chapters/avignon/index.html`
 
 ## 소르그 강의 물레방아
 
@@ -992,6 +995,7 @@
 - Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px
 - Used in:
   - `/daily/day-24.html`
+  - `/chapters/lyon/index.html`
 
 ## 벨쿠르 광장
 
@@ -1165,6 +1169,7 @@
 - Changes: EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed
 - Used in:
   - `/daily/day-28.html`
+  - `/chapters/paris/index.html`
 
 ## 노트르담 대성당
 
