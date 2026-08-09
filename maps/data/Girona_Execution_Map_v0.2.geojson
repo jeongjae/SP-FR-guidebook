@@ -12,13 +12,13 @@
         "address": "비공개 숙소 · 정확 주소는 개인 보관본에서 확인",
         "coordinates_verified": "Public approximate area only",
         "phase": "Confirmed booking",
-        "description": "Plaça de l'Església, 6, 17483 Bàscara · 교회 광장"
+        "description": "비공개 숙소 근사 권역· 교회 광장"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.90964,
-          42.16036
+          2.914,
+          42.164
         ]
       }
     },
