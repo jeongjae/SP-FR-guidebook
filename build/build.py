@@ -506,7 +506,8 @@ VISUALS = {
 
 def hero_figure(slug, rel=".."):
     """지역소개 첫머리의 대표 사진 (CC 저작자·라이선스 표시)."""
-    manifest_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+    manifest_region = {"04": "barcelona", "05": "girona", "06": "nice", "07": "aix",
+                       "08": "luberon", "09": "avignon", "10": "lyon", "11": "paris"}.get(slug)
     if manifest_region:
         return media.photo_figure(media.photo_region_hero(PHOTO_MANIFEST, manifest_region),
                                   rel, variant="hero", priority=True)
@@ -4898,7 +4899,8 @@ def check_phase7_visual_guards():
         chapter = next(c for c in CHAPTERS if c.get("slug") == slug)
         hub = SITE / chapter_url(chapter)
         page_text = hub.read_text(encoding="utf-8")
-        manifest_region = {"04": "barcelona", "05": "girona", "06": "nice"}.get(slug)
+        manifest_region = {"04": "barcelona", "05": "girona", "06": "nice", "07": "aix",
+                           "08": "luberon", "09": "avignon", "10": "lyon", "11": "paris"}.get(slug)
         if manifest_region:
             asset = media.photo_region_hero(PHOTO_MANIFEST, manifest_region)
             default_variant = media._photo_variants(asset, "hero")[-1]

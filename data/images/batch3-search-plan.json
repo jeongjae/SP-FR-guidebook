@@ -18,8 +18,10 @@
         "y": 0.4
       },
       "usage": [
-        "daily/day-28.html"
-      ]
+        "daily/day-28.html",
+        "chapters/paris/index.html"
+      ],
+      "regionHero": true
     },
     {
       "placeId": "notre-dame-de-paris",

@@ -56,8 +56,10 @@
         "y": 0.65
       },
       "usage": [
-        "daily/day-12.html"
-      ]
+        "daily/day-12.html",
+        "chapters/aix/index.html"
+      ],
+      "regionHero": true
     },
     {
       "placeId": "aix-markets",
@@ -262,8 +264,10 @@
       },
       "usage": [
         "daily/day-18.html",
-        "places/gordes.html"
-      ]
+        "places/gordes.html",
+        "chapters/luberon/index.html"
+      ],
+      "regionHero": true
     },
     {
       "placeId": "village-des-bories",
@@ -318,8 +322,10 @@
         "y": 0.4
       },
       "usage": [
-        "daily/day-20.html"
-      ]
+        "daily/day-20.html",
+        "chapters/avignon/index.html"
+      ],
+      "regionHero": true
     },
     {
       "placeId": "l-isle-sur-la-sorgue",
@@ -506,8 +512,10 @@
         "y": 0.5
       },
       "usage": [
-        "daily/day-24.html"
-      ]
+        "daily/day-24.html",
+        "chapters/lyon/index.html"
+      ],
+      "regionHero": true
     },
     {
       "placeId": "place-bellecour",
