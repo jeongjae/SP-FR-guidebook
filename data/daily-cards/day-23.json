@@ -36,28 +36,28 @@
       "id": "avignon-tgv",
       "order": 2,
       "start": null,
-      "end": "10:20",
+      "end": "09:00",
       "name": "Avignon TGV 렌터카 반납",
       "category": "transport",
       "lat": 43.9217832,
       "lng": 4.786072,
-      "summary": "10시 전후 반납 목표 — 보증금 해제절차 확인, 열차 60–90분 전 완료",
+      "summary": "09:00 반납 준수 — 주유·차량사진·보증금 해제, 열차까지 82분",
       "menu": null,
-      "reservation": "반납 시각·TGV 예약 잠금",
+      "reservation": "예약완료 Hertz L672E080313 — 9/20 09:00 반납",
       "optional": false
     },
     {
       "id": "part-dieu",
       "order": 3,
-      "start": null,
-      "end": "12:30",
-      "name": "TGV→Lyon Part-Dieu",
+      "start": "10:22",
+      "end": "11:28",
+      "name": "TGV 12176→Lyon Part-Dieu",
       "category": "transport",
       "lat": 45.7605725,
       "lng": 4.8601628,
-      "summary": "10:20–11:10대 직행 TGV, 짐은 시야 안쪽 — 도착 후 공식 택시승강장",
+      "summary": "1등석 — 짐은 시야 안쪽, 도착 후 공식 택시승강장",
       "menu": null,
-      "reservation": "TGV 편성 예약창 개방 후 확정",
+      "reservation": "예약완료 TGV INOUI 12176 · 1등석",
       "optional": false
     },
     {
@@ -117,9 +117,9 @@
       "from": "avignon-tgv",
       "to": "part-dieu",
       "mode": "train",
-      "duration": "약 1시간 10분",
+      "duration": "1시간 6분",
       "distance": "약 230km",
-      "line": "TGV 직행",
+      "line": "TGV INOUI 12176 (확정)",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -151,8 +151,8 @@
     }
   ],
   "transport": [
-    "렌터카 반납 (Avignon TGV)",
-    "TGV 직행",
+    "렌터카 반납 09:00 (Avignon TGV·확정)",
+    "TGV 12176 10:22→11:28 1등석 (확정)",
     "Part-Dieu 택시"
   ],
   "food": [
@@ -160,8 +160,8 @@
     "Café Comptoir Abel 저녁"
   ],
   "highlights": [
-    "P0 이동일 — 반납·수하물·열차",
-    "열차 60–90분 전 반납 완료",
+    "P0 이동일 — 반납 09:00 준수",
+    "반납→열차 완충 82분",
     "도착일 부숑 코스 금지"
   ],
   "backup": "지연 시 Lyon 도착 후 체크인만, 산책 삭제",
@@ -174,8 +174,6 @@
     "routeCache": null
   },
   "needsReview": [
-    "TGV 9/20 편성 예약 (예약창 개방 후)",
-    "렌터카 반납 조건·보증금 확인",
     "Lyon 숙소 후보(Hôtel de Verdun) 승인"
   ],
   "sourceRefs": [
@@ -183,6 +181,7 @@
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-23",
     "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-23",
     "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml",
-    "OSM Overpass 2026-08-06: Avignon TGV·Lyon Part-Dieu 역 좌표"
+    "OSM Overpass 2026-08-06: Avignon TGV·Lyon Part-Dieu 역 좌표",
+    "예약 확정 (2026-08-09 반영): Hertz L672E080313 반납 9/20 09:00 · TGV INOUI 12176 10:22→11:28 1등석"
   ]
 }
