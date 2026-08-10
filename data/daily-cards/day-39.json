@@ -79,13 +79,13 @@
       "order": 5,
       "start": "17:00",
       "end": null,
-      "name": "숙소 귀환 (기본안)",
+      "name": "숙소 귀환",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "저녁 무예약 — 10/9 Hamlet 표가 없을 때만 이날 19:30 Hamlet 백업",
+      "summary": "저녁 무예약",
       "menu": null,
-      "reservation": "Hamlet 10/9 확보 여부에 따라 백업 판단",
+      "reservation": null,
       "optional": false
     }
   ],
@@ -136,10 +136,10 @@
   ],
   "highlights": [
     "동부 파리 생활권",
-    "기본 피로도 2/5 (백업 공연 시 5/5)",
+    "저녁 무예약",
     "화요일 — 휴관 변수 무관"
   ],
-  "backup": "Hamlet 백업 사용 시 17:30 Bastille 이른 식사·19:30 공연, 10/9 저녁은 포장으로 전환",
+  "backup": "피로 시 Belleville 축소, 조기 귀환",
   "map": {
     "zoom": 13,
     "center": [
@@ -149,7 +149,6 @@
     "routeCache": null
   },
   "needsReview": [
-    "Hamlet 10/9 티켓 확보 확인 (백업 분기)",
     "Paris 숙소 후보 확정",
     "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],

@@ -3,14 +3,14 @@
   "day": 41,
   "date": "2026-10-08",
   "city": "Paris",
-  "title": "Trocadéro와 Chaillot — 선택 현대무용",
+  "title": "Trocadéro와 Chaillot — 전망과 건축의 오후",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "09:30",
   "endTime": null,
   "totalDuration": null,
   "totalDistance": "약 1km · 도보 + 메트로",
-  "fatigue": "2–4",
+  "fatigue": "2",
   "hotel": {
     "name": "Pepper & Paper (후보)",
     "lat": 48.83966,
@@ -51,33 +51,19 @@
       "order": 3,
       "start": "17:00",
       "end": "19:00",
-      "name": "휴식·이른 저녁",
+      "name": "휴식·자유 저녁",
       "category": "food",
       "lat": 48.8628,
       "lng": 2.288,
-      "summary": "공연 선택에 따라 조정",
+      "summary": "무예약 — Chaillot 부근 또는 숙소",
       "menu": "Chaillot 부근 또는 숙소",
       "reservation": null,
       "optional": false
     },
     {
-      "id": "este-mundo",
-      "order": 4,
-      "start": "20:30",
-      "end": "21:30",
-      "name": "Bouchra Ouizguen, Este Mundo",
-      "category": "culture",
-      "lat": 48.8623703,
-      "lng": 2.2880959,
-      "summary": "Chaillot · 1시간 · €8–25 — 한 명이라도 피곤하면 사지 않는다",
-      "menu": null,
-      "reservation": "공연 선택 시 예매",
-      "optional": true
-    },
-    {
       "id": "paris-return",
-      "order": 5,
-      "start": "22:00",
+      "order": 4,
+      "start": "19:30",
       "end": null,
       "name": "숙소 귀환",
       "category": "hotel",
@@ -110,15 +96,6 @@
     },
     {
       "from": "rest-dinner",
-      "to": "este-mundo",
-      "mode": "walk",
-      "duration": "3분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "este-mundo",
       "to": "paris-return",
       "mode": "metro",
       "duration": "30분",
@@ -135,11 +112,11 @@
     "이른 저녁 또는 숙소식"
   ],
   "highlights": [
-    "연속 이벤트 3일의 가운데 — 체력 우선",
-    "공연은 선택 (€8–25)",
-    "Götterdämmerung은 10/8에 없음 — 제외 확정"
+    "축제 다음 날 — 체력 우선",
+    "전망·건축·카페",
+    "저녁 무예약"
   ],
-  "backup": "피로 시 공연 미구매, Trocadéro 전망·카페만",
+  "backup": "피로 시 Trocadéro 전망·카페만",
   "map": {
     "zoom": 13,
     "center": [
@@ -149,9 +126,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Este Mundo 예매 여부 당일 판단",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "공연 취소(2026-08-10, 비용) — 저녁 대체안 검토 중"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-15-10월8일",

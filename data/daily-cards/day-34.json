@@ -3,14 +3,14 @@
   "day": 34,
   "date": "2026-10-01",
   "city": "Paris",
-  "title": "Rossini 오페라 — Bastille와 한 호흡",
+  "title": "Bastille 동네의 날 — 저녁 대체 검토",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:30",
   "endTime": null,
   "totalDuration": null,
   "totalDistance": "약 2km · 도보 + 메트로",
-  "fatigue": "4",
+  "fatigue": "2–3",
   "hotel": {
     "name": "Pepper & Paper (후보)",
     "lat": 48.83966,
@@ -36,54 +36,26 @@
       "id": "vosges",
       "order": 2,
       "start": "14:00",
-      "end": "16:30",
+      "end": "17:00",
       "name": "Place des Vosges→Bastille 산책",
       "category": "sight",
       "lat": 48.8550655,
       "lng": 2.3653311,
-      "summary": "정원·골목·운하 초입 — 체력에 맞춰 축소",
+      "summary": "정원·골목·운하 초입 — 공연이 빠져 여유, 체력에 맞춰",
       "menu": null,
       "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "early-dinner",
-      "order": 3,
-      "start": "17:30",
-      "end": "18:30",
-      "name": "이른 저녁",
-      "category": "food",
-      "lat": 48.8525,
-      "lng": 2.369,
-      "summary": "Opéra Bastille 도보권 — 과식·음주 제한",
-      "menu": "가벼운 코스",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "opera-bastille",
-      "order": 4,
-      "start": "19:30",
-      "end": "22:45",
-      "name": "Il Barbiere di Siviglia",
-      "category": "culture",
-      "lat": 48.8515018,
-      "lng": 2.3707417,
-      "summary": "18:30–18:45 도착, 3시간 15분·1회 인터미션 — 종료 후 바로 귀환",
-      "menu": null,
-      "reservation": "티켓 예매 잠금 (€77–205, 8/5 확인)",
       "optional": false
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "23:00",
+      "order": 3,
+      "start": "18:30",
       "end": null,
-      "name": "숙소 귀환",
+      "name": "자유 저녁·귀환",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "다른 야간산책 없이 귀환",
+      "summary": "저녁 무예약 — 대체안 검토 중",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -101,29 +73,11 @@
     },
     {
       "from": "vosges",
-      "to": "early-dinner",
-      "mode": "walk",
-      "duration": "8분",
-      "distance": "0.6km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "early-dinner",
-      "to": "opera-bastille",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "opera-bastille",
       "to": "paris-return",
       "mode": "metro",
       "duration": "25분",
       "distance": null,
-      "line": "메트로 또는 택시",
+      "line": "메트로",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -132,15 +86,15 @@
     "Bastille 도보권"
   ],
   "food": [
-    "이른 저녁 17:30",
-    "공연 후 추가 식사 없음"
+    "가벼운 점심",
+    "자유 저녁 (무예약)"
   ],
   "highlights": [
-    "고정 공연 19:30",
-    "매진 시 10/7 19:30만 백업",
-    "쇼핑·추가 내부관람 금지"
+    "공연 취소 — 저녁 여유",
+    "Vosges·Bastille 산책 중심",
+    "대체 저녁안 검토 중"
   ],
-  "backup": "공연 취소·매진 시 Bastille 산책일로 전환, 10/7 백업 검토",
+  "backup": "피로 시 Vosges만 보고 조기 귀환",
   "map": {
     "zoom": 14,
     "center": [
@@ -150,12 +104,12 @@
     "routeCache": null
   },
   "needsReview": [
-    "Il Barbiere 10/1 티켓 예매",
+    "저녁 대체안 결정 (검토 중)",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "공연 취소(2026-08-10, 비용) — 저녁 대체안 검토 중"
   ],
   "sourceRefs": [
-    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-8-10월1일",
-    "OSM Nominatim 지오코딩 2026-08-06: Place des Vosges·Opéra Bastille"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-8-10월1일"
   ]
 }
