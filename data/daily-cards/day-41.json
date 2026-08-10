@@ -51,25 +51,39 @@
       "order": 3,
       "start": "17:00",
       "end": "19:00",
-      "name": "휴식·자유 저녁",
+      "name": "휴식·이른 저녁",
       "category": "food",
       "lat": 48.8628,
       "lng": 2.288,
-      "summary": "무예약 — Chaillot 부근 또는 숙소",
+      "summary": "Chaillot 부근 또는 숙소 — 무예약",
       "menu": "Chaillot 부근 또는 숙소",
       "reservation": null,
       "optional": false
     },
     {
-      "id": "paris-return",
+      "id": "eiffel-lights",
       "order": 4,
-      "start": "19:30",
+      "start": "일몰 무렵",
+      "end": null,
+      "name": "Trocadéro 에펠탑 점등 조망",
+      "category": "sight",
+      "lat": 48.8623703,
+      "lng": 2.2880959,
+      "summary": "이미 있는 자리 — 무료, 당일 일몰 시각 기준. 야간 혼잡·소매치기 주의",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 5,
+      "start": null,
       "end": null,
       "name": "숙소 귀환",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "공연 미선택 시 숙소식·자유 저녁 — 10/9 Hamlet 체력 보존",
+      "summary": "점등 조망 후 메트로 귀환 — 야간산책 추가 없음",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -96,6 +110,15 @@
     },
     {
       "from": "rest-dinner",
+      "to": "eiffel-lights",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "eiffel-lights",
       "to": "paris-return",
       "mode": "metro",
       "duration": "30분",
@@ -112,11 +135,11 @@
     "이른 저녁 또는 숙소식"
   ],
   "highlights": [
-    "축제 다음 날 — 체력 우선",
-    "전망·건축·카페",
+    "공연 취소 → 일몰 점등 조망으로 대체 (2026-08-10 확정)",
+    "이미 있는 자리 — 이동 추가 없음",
     "저녁 무예약"
   ],
-  "backup": "피로 시 Trocadéro 전망·카페만",
+  "backup": "우천·피로 시 점등 조망 삭제, 조기 귀환",
   "map": {
     "zoom": 13,
     "center": [

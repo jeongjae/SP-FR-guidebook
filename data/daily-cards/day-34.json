@@ -3,7 +3,7 @@
   "day": 34,
   "date": "2026-10-01",
   "city": "Paris",
-  "title": "Bastille 동네의 날 — 저녁 대체 검토",
+  "title": "Bastille 동네와 저녁 산책",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:30",
@@ -47,15 +47,29 @@
       "optional": false
     },
     {
-      "id": "paris-return",
+      "id": "coulee-verte",
       "order": 3,
-      "start": "18:30",
+      "start": "17:00",
+      "end": "19:00",
+      "name": "Coulée verte·Seine 야경 산책",
+      "category": "sight",
+      "lat": 48.8453375,
+      "lng": 2.3798965,
+      "summary": "Bastille에서 바로 진입 — 무료, 체력에 맞춰 축소",
+      "menu": null,
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 4,
+      "start": "19:00",
       "end": null,
-      "name": "자유 저녁·귀환",
+      "name": "동네 저녁·귀환",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "저녁 무예약 — 대체안 검토 중",
+      "summary": "무예약 동네 저녁",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -73,6 +87,15 @@
     },
     {
       "from": "vosges",
+      "to": "coulee-verte",
+      "mode": "walk",
+      "duration": "12분",
+      "distance": "0.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "coulee-verte",
       "to": "paris-return",
       "mode": "metro",
       "duration": "25분",
@@ -87,14 +110,14 @@
   ],
   "food": [
     "가벼운 점심",
-    "자유 저녁 (무예약)"
+    "동네 저녁 (무예약)"
   ],
   "highlights": [
-    "공연 취소 — 저녁 여유",
-    "Vosges·Bastille 산책 중심",
-    "대체 저녁안 검토 중"
+    "공연 취소 → 무료 저녁 산책으로 대체 (2026-08-10 확정)",
+    "Coulée verte는 Bastille에서 진입",
+    "저녁 무예약"
   ],
-  "backup": "피로 시 Vosges만 보고 조기 귀환",
+  "backup": "피로·우천 시 산책 삭제, 동네 저녁만",
   "map": {
     "zoom": 14,
     "center": [
@@ -104,12 +127,11 @@
     "routeCache": null
   },
   "needsReview": [
-    "저녁 대체안 결정 (검토 중)",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "공연 취소(2026-08-10, 비용) — 저녁 대체안 검토 중"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
   ],
   "sourceRefs": [
-    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-8-10월1일"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-8-10월1일",
+    "OSM Nominatim 지오코딩 2026-08-10: Coulée verte René-Dumont"
   ]
 }

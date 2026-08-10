@@ -43,15 +43,15 @@ status: "chapter-derived master itinerary; booking values pending"
 | 31 | 9/28 월 | Paris | 로컬 라이프·Fashion Week 개막 | 운동·세탁·쇼핑, 북마레 또는 주거지 산책 | 무예약 | 2 | 없음 |
 | 32 | 9/29 화 | Paris | 박물관일 | Musée d’Orsay 또는 Orangerie 한 곳 | 저녁 비움 | 3 | 미술관 시간지정 |
 | 33 | 9/30 수 | Paris | Fashion Week 공개동선 반일 | 여유로운 오전, Palais de Tokyo 일대→Avenue Montaigne→Rue Saint-Honoré→Palais Royal | 공식 확인된 공개 팝업만·늦은 행사 없음 | 3 | 공개행사 재확인 |
-| 34 | 10/1 목 | Paris | Bastille 동네의 날 | 운동·느린 아침, Place des Vosges·Bastille 산책 | 자유 저녁 — 공연 취소(2026-08-10), 대체 검토 중 | 2~3 | 없음 |
+| 34 | 10/1 목 | Paris | Bastille 동네의 날 | 운동·느린 아침, Place des Vosges·Bastille, Coulée verte·Seine 야경 산책 | 동네 저녁 — 무예약 | 2~3 | 없음 |
 | 35 | 10/2 금 | Paris | 회복·로컬 라이프 | 늦은 시작, 시장·서점·카페·스케치 | 고정행사 없음 | 1~2 | 없음 |
 | 36 | 10/3 토 | Paris | 유연한 문화일 | 박물관·서점·동네 중 하나 | Arc 전날 — 무리 금지 | 2~3 | 선택시설만 |
 | 37 | 10/4 일 | Paris | Qatar Prix de l’Arc 메인 레이스 | ParisLongchamp 근전일 일정 | 저녁 비움 | 5 | France Galop P0 |
 | 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 아침, 장보기·세탁·카페, 선택 짧은 공원 | 무예약 | 1 | 없음 |
 | 39 | 10/6 화 | Paris | 동부 파리 생활일 | Canal Saint-Martin·Belleville 또는 다른 동네 | 저녁 무예약 | 2 | 없음 |
 | 40 | 10/7 수 | Paris | Vendanges de Montmartre | 낮 축제, Clos Montmartre 외관·마켓·골목 | 이른 귀가. 추가 오페라 제외 | 3 | 포도밭 방문 감시 |
-| 41 | 10/8 목 | Paris | Trocadéro·Chaillot 오후 | 가벼운 오전, Trocadéro·Chaillot | 자유 저녁 — 공연 취소(2026-08-10) | 2 | 없음 |
-| 42 | 10/9 금 | Paris | 마지막 정리·송별 저녁 | 늦은 시작, 짐 70% 포장, 동네산책·카페 | 송별 저녁 — 공연 취소(2026-08-10), 장소 검토 중 | 2 | 송별 저녁 예약 |
+| 41 | 10/8 목 | Paris | Trocadéro·Chaillot 오후 | 가벼운 오전, Trocadéro·Chaillot, 일몰 에펠 점등 조망 | 무예약 저녁 | 2 | 없음 |
+| 42 | 10/9 금 | Paris | 마지막 정리·송별 저녁 | 늦은 시작, 짐 70% 포장, 동네산책·카페 | 송별 저녁 상향 — 장소는 숙소 확정 후 선정 | 2 | 송별 저녁 예약 |
 | 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·출국 | 짐·체크아웃, 안전여유를 둔 공항 이동, 19:10 출국 예정 | Grand Défilé·고정공연 제외 | 3 | 항공·공항이동 |
 
 ## 장거리 이동일
