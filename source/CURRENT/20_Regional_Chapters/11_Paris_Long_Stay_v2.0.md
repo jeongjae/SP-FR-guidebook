@@ -151,15 +151,15 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | 31 | 9/28 월 | {{badge:rest|로컬 라이프}} | 운동·세탁 | 쇼핑·북마레/주거지 | Fashion Week 개막 메모 |
 | 32 | 9/29 화 | {{badge:rest|박물관}} | 느린 아침 | Orsay 또는 Orangerie | 무예약 |
 | 33 | 9/30 수 | {{badge:p0|고정 경험}} | 여유로운 오전 | **Fashion Week 공개동선 반일** | 일찍 귀가 |
-| 34 | 10/1 목 | {{badge:pending|저녁 대체 검토}} | 운동·아침 | Place des Vosges·Bastille | 자유 저녁 (공연 취소) |
+| 34 | 10/1 목 | {{badge:rest|로컬 라이프}} | 운동·아침 | Place des Vosges·Bastille | Coulée verte·Seine 산책 후 동네 저녁 |
 | 35 | 10/2 금 | {{badge:pending|회복}} {{badge:rest|로컬 라이프}} | 늦은 시작 | 시장·서점·카페·스케치 | 무예약 |
 | 36 | 10/3 토 | {{grade:optional|선택 문화}} | 느린 아침 | 박물관·서점·동네 중 하나 | 무예약 |
 | 37 | 10/4 일 | {{badge:p0|고정 스포츠}} | ParisLongchamp 이동 | **Qatar Prix de l’Arc** | 비움 |
 | 38 | 10/5 월 | {{badge:pending|회복}} | 늦은 아침·세탁 | 카페·짧은 공원 | 무예약 |
 | 39 | 10/6 화 | {{badge:rest|로컬 라이프}} | 동부 파리 | Canal/Belleville | 저녁 무예약 |
 | 40 | 10/7 수 | {{badge:p0|고정 축제}} | **Vendanges de Montmartre** | 포도밭 외관·축제·골목 | 이른 귀가 |
-| 41 | 10/8 목 | {{badge:rest|로컬 라이프}} | 가벼운 오전 | Trocadéro·Chaillot | 자유 저녁 (공연 취소) |
-| 42 | 10/9 금 | {{badge:pending|저녁 대체 검토}} | 늦은 시작 | 동네산책·카페 | 송별 저녁 (공연 취소) |
+| 41 | 10/8 목 | {{badge:rest|로컬 라이프}} | 가벼운 오전 | Trocadéro·Chaillot | 일몰 에펠 점등 조망 후 저녁 |
+| 42 | 10/9 금 | {{badge:pending|송별 저녁 예약}} | 늦은 시작 | 동네산책·카페 | 송별 저녁 (상향·장소 미정) |
 | 43 | 10/10 토 | {{badge:p0|출국}} | 체크아웃·짐 | 안전여유 두고 공항 | 고정행사 제외 |
 
 ## 추천 고정 이벤트 {{badge:p0|RECOMMENDED FIXED EVENTS}}
@@ -698,15 +698,15 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 9/28 월 | 로컬 라이프 | 운동·세탁 | 쇼핑·북마레/주거지 | 이른 귀가 | 2 |
 | 9/29 화 | 박물관 | 느린 아침 | Orsay 또는 Orangerie | 비움 | 3–4 |
 | 9/30 수 | Fashion Week | 느린 오전 | Palais de Tokyo 권역→Montaigne→Saint-Honoré→Palais Royal | 늦은 행사 없음 | 3 |
-| 10/1 목 | 저녁 대체 검토 | 운동·느린 아침 | Place des Vosges·Bastille | 자유 저녁 (공연 취소) | 2–3 |
+| 10/1 목 | 로컬 라이프 | 운동·느린 아침 | Place des Vosges·Bastille | Coulée verte·Seine 산책 | 2–3 |
 | 10/2 금 | 회복·로컬 라이프 | 늦은 시작 | 시장·서점·카페·스케치 | 무예약 | 1–2 |
 | 10/3 토 | 선택 문화 | 느린 아침 | 박물관·서점·동네 중 하나 | 비움 | 2–3 |
 | 10/4 일 | 고정 스포츠 | ParisLongchamp 이동 | **Arc 메인 레이스 데이** | 비움 | 5 |
 | 10/5 월 | 회복 | 늦은 아침·세탁 | 장보기·카페·짧은 공원 | 무예약 | 1 |
 | 10/6 화 | 로컬 라이프 | Canal Saint-Martin | Belleville/동부 파리 | 저녁 무예약 | 2 |
 | 10/7 수 | 고정 축제 | **Vendanges de Montmartre** | 포도밭·축제·골목 | 이른 귀가 | 3–4 |
-| 10/8 목 | 로컬 라이프 | 가벼운 오전 | Trocadéro·Chaillot | 자유 저녁 (공연 취소) | 2 |
-| 10/9 금 | 저녁 대체 검토 | 늦은 시작 | 가벼운 동네산책·카페 | 송별 저녁 (공연 취소) | 2 |
+| 10/8 목 | 로컬 라이프 | 가벼운 오전 | Trocadéro·Chaillot | 일몰 에펠 점등 조망 | 2 |
+| 10/9 금 | 송별 저녁 예약 | 늦은 시작 | 가벼운 동네산책·카페 | 송별 저녁 (상향) | 2 |
 | 10/10 토 | 출국 | 체크아웃·짐 | 공항 이동 | 19:10 출국 예정 | 4 |
 
 ---
@@ -854,7 +854,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 ---
 
 ## 12. Day 8 — 10월 1일 목요일
-### Bastille 동네의 날 — 공연 취소, 저녁 대체 검토 {{badge:pending|대체 검토}}
+### Bastille 동네의 날 — 낮 산책과 무료 저녁 산책 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
@@ -863,7 +863,8 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 11:00–12:30 | 휴식·작은 장보기 | 낮 관광을 위해 생활업무를 짧게 |
 | 12:30–13:30 | 가벼운 점심 | 저녁 식사까지 안정적으로 이어지게 |
 | 14:00–16:30 | **Place des Vosges→Bastille 동네 산책** | 정원·골목·운하 초입 중 체력에 맞춰 축소 |
-| 17:00 이후 | 자유 저녁 | 대체안 검토 중 — 무예약 |
+| 17:00–19:00 | **Coulée verte 또는 Seine 야경 산책** | Bastille에서 바로 진입 — 무료, 체력에 맞춰 축소 |
+| 19:00 이후 | 동네 저녁 | 무예약 |
 
 **피로도:** 2–3/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
 
@@ -977,7 +978,8 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 11:00–12:30 | 숙소권 카페·짐정리 일부 | 정식운동 생략 가능 |
 | 12:30–14:00 | 가벼운 점심 | 선택 공연일까지 체력 보존 |
 | 14:30–17:00 | Trocadéro·Chaillot 권역 | 전망·건축·카페, 장거리 산책 금지 |
-| 17:00 이후 | 숙소 또는 Chaillot 부근 휴식·자유 저녁 | 무예약 |
+| 17:00–19:00 | 휴식·이른 저녁 | Chaillot 부근 또는 숙소 — 무예약 |
+| 일몰 무렵 | **Trocadéro 에펠탑 점등 조망** | 이미 있는 자리 — 무료, 당일 일몰 시각 기준 |
 
 **피로도:** 2/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
 
@@ -993,7 +995,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 12:00 | 가벼운 숙소 점심 | 남은 재료 사용 |
 | 14:00–16:00 | 숙소권 가벼운 동네산책·카페 | 새 박물관·쇼핑권 추가 금지 |
 | 16:00–17:00 | 숙소 휴식·공항동선 최종 확인 | 여권·티켓·수하물 확인 |
-| 19:00–21:00 | **송별 저녁** | 장소는 대체안 검토 중 — 다음 날 출국 기준 과음 금지 |
+| 19:00–21:00 | **송별 저녁 (상향)** | 공연비 절감분으로 한 단계 상향 — 장소는 숙소 확정 후 도보권에서 선정·예약 |
 | 21:30 이전 | 숙소 귀환 | 마지막 포장 마무리, 야간산책 없음 |
 
 **피로도:** 2/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
