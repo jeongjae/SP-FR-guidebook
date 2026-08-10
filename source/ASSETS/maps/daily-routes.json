@@ -130,10 +130,10 @@
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "barcelona-sants",
+          "placeId": "hertz-barcelona-sants",
           "order": 0,
           "plannedTime": "07:00 렌터카 인수",
-          "note": "Hertz 확정 L671E2E0288 · 인수 후 숙소로 돌아와 짐 적재."
+          "note": "Hertz 확정 L671E2E0288 · Sants 역 입구 옆 Carrer de Viriat 45. 인수 후 숙소로 복귀해 짐 적재."
         },
         {
           "placeId": "barcelona-stay",
@@ -156,7 +156,7 @@
       ],
       "segments": [
         {
-          "from": "barcelona-sants",
+          "from": "hertz-barcelona-sants",
           "to": "barcelona-stay",
           "mode": "driving"
         },
@@ -368,29 +368,35 @@
           "note": "Bàscara 체크아웃 · 주유 후 남하."
         },
         {
-          "placeId": "bcn-airport-t1",
-          "order": 1,
+          "placeId": "hertz-bcn-airport",
           "plannedTime": "14:00 렌터카 반납",
-          "note": "Hertz L671E2E0288 T1 반납 확정 · VY1521 15:30 출발 (예약 NMGI4Q)."
+          "note": "Hertz L671E2E0288 · T1 터미널 카운터. 공항 진입 후 Rental Car Return 표지 따름.",
+          "order": 1
+        },
+        {
+          "placeId": "bcn-airport-t1",
+          "plannedTime": "VY1521 15:30 출발",
+          "note": "Vueling VY1521 (예약 NMGI4Q) · T1 출발.",
+          "order": 2
         },
         {
           "placeId": "nice-airport-terminal-2",
-          "order": 2,
+          "order": 3,
           "plannedTime": "16:55 NCE 도착",
           "note": "도착 터미널은 항공권 기준 재확인. 도착터미널에 따라 Tram 2 또는 택시."
         },
         {
           "placeId": "nice-stay-candidate",
-          "order": 3,
+          "order": 4,
           "plannedTime": "도착 +60분 체크인",
           "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
         }
       ],
       "segments": [
         {
-          "from": "bcn-airport-t1",
-          "to": "nice-airport-terminal-2",
-          "mode": "transit"
+          "from": "hertz-bcn-airport",
+          "to": "bcn-airport-t1",
+          "mode": "walking"
         },
         {
           "from": "nice-airport-terminal-2",

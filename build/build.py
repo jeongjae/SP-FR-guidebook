@@ -2913,7 +2913,7 @@ DAILY_MAP_TYPES = {"accommodation", "attraction", "restaurant", "cafe",
 
 GOOGLE_MAP_TYPE_LABELS = {
     "accommodation": "숙소", "attraction": "방문지", "market": "시장",
-    "parking": "주차", "station": "역", "airport": "공항",
+    "parking": "주차", "station": "역", "airport": "공항", "rental": "렌터카",
 }
 GOOGLE_MAP_MODE_LABELS = {
     "walking": "도보", "driving": "자동차", "transit": "대중교통", "bicycling": "자전거",
@@ -4823,8 +4823,8 @@ def check_phase6_map_guards():
             if page_text.count('>길찾기</a>') != count:
                 problems.append(f"{out_name}: 기준점 길찾기 {page_text.count('>길찾기</a>')}건 (기대 {count})")
 
-    if total != 111 or len(google_places) != 111:
-        problems.append(f"지도 기준점 총 {total}개 (기대 111) / 레지스트리 {len(google_places)}개 (기대 111)")
+    if total != 113 or len(google_places) != 113:
+        problems.append(f"지도 기준점 총 {total}개 (기대 113) / 레지스트리 {len(google_places)}개 (기대 113)")
     for n in range(1, 44):
         text = (SITE / "daily" / f"day-{n:02d}.html").read_text(encoding="utf-8")
         # 하단탭(D-03)이 모든 페이지에 지도 허브 링크를 넣는다 — 일자별
@@ -4840,7 +4840,7 @@ def check_phase6_map_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 111개(레지스트리 기준) · 43일 라우팅 이상 없음")
+    print("Phase 6 실행지도 가드: 8지역 전부 Google Maps · 기준점 113개(레지스트리 기준) · 43일 라우팅 이상 없음")
 
 
 def check_daily_map_guards():

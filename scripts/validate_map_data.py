@@ -18,7 +18,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_DIR = ROOT / "source" / "ASSETS" / "maps"
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-PLACE_TYPES = {"accommodation", "attraction", "market", "station", "airport", "parking"}
+PLACE_TYPES = {"accommodation", "attraction", "market", "station", "airport", "parking", "rental"}
 MODES = {"walking", "driving", "transit", "bicycling"}
 STATUSES = {"confirmed", "planned", "candidate", "alternative"}
 
