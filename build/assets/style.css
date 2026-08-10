@@ -2203,3 +2203,37 @@ footer {
   color: var(--text); text-decoration: underline; text-underline-offset: 3px;
   font-weight: 700;
 }
+
+/* ---- 국기 혼합 크롬 (사용자 요청 2026-08-10) — 색은 장식 띠·저알파 틴트로만.
+   글자는 계속 var(--text) 위에서 읽힌다 (명암비 기준 유지). ---- */
+.topbar {
+  background:
+    linear-gradient(90deg, rgba(170,21,27,.07), rgba(241,191,0,.06) 33%,
+      rgba(0,35,149,.06) 67%, rgba(239,65,53,.07)),
+    var(--bar-bg);
+}
+.topbar::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: linear-gradient(90deg,
+    #AA151B 0 16%, #F1BF00 16% 34%, #AA151B 34% 50%,
+    #002395 50% 66.5%, #FFFFFF 66.5% 83%, #EF4135 83% 100%);
+}
+.bottomnav {
+  background:
+    linear-gradient(90deg, rgba(170,21,27,.07), rgba(241,191,0,.06) 33%,
+      rgba(0,35,149,.06) 67%, rgba(239,65,53,.07)),
+    var(--tabbar-bg);
+}
+.bottomnav::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px;
+  background: linear-gradient(90deg,
+    #AA151B 0 16%, #F1BF00 16% 34%, #AA151B 34% 50%,
+    #002395 50% 66.5%, #FFFFFF 66.5% 83%, #EF4135 83% 100%);
+}
+.tb-back {
+  background: var(--surface-sunk);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  min-width: 44px; min-height: 44px;
+}
+.tb-back .ic { width: 22px; height: 22px; }
