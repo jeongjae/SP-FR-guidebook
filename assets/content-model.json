@@ -464,7 +464,7 @@
       "date": "2026-10-01",
       "regionId": "region:paris",
       "theme": "Rossini 오페라일",
-      "dayType": "고정 공연",
+      "dayType": "동네 산책",
       "fatigue": 5,
       "status": "검토중",
       "url": "daily/day-34.html"
@@ -518,7 +518,7 @@
       "number": 39,
       "date": "2026-10-06",
       "regionId": "region:paris",
-      "theme": "동부 파리 또는 Hamlet 백업",
+      "theme": "동부 파리 생활일",
       "dayType": "로컬 라이프",
       "fatigue": 2,
       "status": "검토중",
@@ -551,8 +551,8 @@
       "number": 42,
       "date": "2026-10-09",
       "regionId": "region:paris",
-      "theme": "Hamlet·최종 포장",
-      "dayType": "고정 공연",
+      "theme": "최종 포장·마지막 저녁",
+      "dayType": "짐 포장",
       "fatigue": 5,
       "status": "검토중",
       "url": "daily/day-42.html"
@@ -2741,7 +2741,7 @@
       "dayId": "day:034",
       "category": "공연",
       "name": "1/6 Il Barbiere di Siviglia — Opéra Bastille",
-      "status": "예약대기",
+      "status": "취소",
       "priority": "P1",
       "targetDate": "2026-08-05",
       "sourceUrl": "https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229122672727&lang=en"
@@ -2753,7 +2753,7 @@
       "dayId": "day:042",
       "category": "공연",
       "name": "2/6 Hamlet — Opéra Bastille",
-      "status": "예약대기",
+      "status": "취소",
       "priority": "P1",
       "targetDate": "2026-08-05",
       "sourceUrl": "https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229118155385&lang=en"
@@ -2777,7 +2777,7 @@
       "dayId": "day:041",
       "category": "공연",
       "name": "4/6 Este Mundo — Chaillot (선택)",
-      "status": "예약대기",
+      "status": "취소",
       "priority": "P2",
       "targetDate": "2026-09-15",
       "sourceUrl": "https://www.festival-automne.com/fr/edition-2026/bouchra-ouizguen-este-mundo"
