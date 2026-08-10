@@ -74,6 +74,7 @@
 }
 .gm-marker-parking { background: #1f5e45; }
 .gm-marker-accommodation { background: #7d5400; }
+.gm-marker-rental { background: #5b3f94; }
 @media (max-width: 600px) {
   .gm-canvas { min-height: 320px; }
   .gm-toolbar, .gm-actions, .gm-place-card { padding-left: var(--s3); padding-right: var(--s3); }
