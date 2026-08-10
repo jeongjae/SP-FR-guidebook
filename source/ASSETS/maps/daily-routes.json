@@ -1861,7 +1861,7 @@
     {
       "date": "2026-10-08",
       "city": "Paris",
-      "title": "Trocadéro·Chaillot — 선택 공연의 저녁",
+      "title": "Trocadéro·Chaillot 오후",
       "center": [
         48.862,
         2.288
@@ -1885,7 +1885,7 @@
           "placeId": "palais-de-chaillot",
           "order": 2,
           "plannedTime": "20:30 선택 공연",
-          "note": "선택 — Bouchra Ouizguen 'Este Mundo' · 1시간 · €8–25. 미선택 시 숙소식."
+          "note": "낮 방문 — 저녁은 자유(대체안 검토 중)."
         }
       ],
       "segments": [

@@ -31,5 +31,5 @@
 | 9/30 | Fashion Week 공개행사·공식 확인된 팝업만 |
 | 10/1 | 저녁 대체안 확정 여부·예약 필요 시 마감 확인 |
 | 10/4 | Prix de l'Arc — ParisLongchamp 입장·셔틀·귀환 혼잡 |
-| 10/7–10/8 | Vendanges de Montmartre 일정 (10/7) · Este Mundo 선택공연 예약 상태 (10/8) |
+| 10/7–10/8 | Vendanges de Montmartre 일정 (10/7) · Chaillot 권역 오후·자유 저녁 (10/8) |
 | 10/9–10/10 | 짐 포장·저녁 대체안 (10/9) · CDG 교통·항공 체크인·수하물 (10/10) |
