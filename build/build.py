@@ -1959,7 +1959,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
 </head>
 <body data-rel="{rel}"{country_attr}>
 <header class="topbar">
-  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden>‹</button>
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
   {lead}
   <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>

@@ -12,6 +12,7 @@ from urllib.parse import quote
 ICONS = {
  "today":   '<circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/>',
  "list":    '<path d="M4 6.5h16M4 12h16M4 17.5h16"/>',
+ "back":    '<path d="M19 12H5.5M11.5 6l-6 6 6 6"/>',
  "region":  '<path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
  "topic":   '<rect x="3.8" y="3.8" width="7" height="7" rx="1.6"/><rect x="13.2" y="3.8" width="7" height="7" rx="1.6"/><rect x="3.8" y="13.2" width="7" height="7" rx="1.6"/><rect x="13.2" y="13.2" width="7" height="7" rx="1.6"/>',
  "map":     '<circle cx="12" cy="12" r="7.6"/><path d="M12 2.6v3.4M12 18v3.4M2.6 12H6M18 12h3.4"/>',
