@@ -1936,6 +1936,38 @@
       "optional": false,
       "status": "confirmed",
       "coordinatesVerified": "OSM Nominatim, 2026-08-09"
+    },
+    {
+      "id": "hertz-barcelona-sants",
+      "name": "Hertz Sants",
+      "city": "Barcelona",
+      "type": "rental",
+      "lat": 41.3806859,
+      "lng": 2.1410595,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hertz%2C+Carrer+de+Viriat+45%2C+Barcelona",
+      "address": "Carrer de Viriat, 45, Sants-Montjuïc, 08014 Barcelona, Spain (Sants 역 입구 옆)",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "confirmed",
+      "coordinatesVerified": "OSM Nominatim car_rental POI, 2026-08-10"
+    },
+    {
+      "id": "hertz-bcn-airport",
+      "name": "Hertz 반납 — BCN T1",
+      "city": "Barcelona",
+      "type": "rental",
+      "lat": 41.2889548,
+      "lng": 2.0746657,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hertz%2C+Aeropuerto+de+Barcelona+Terminal+1",
+      "address": "Mostrador Hertz en Terminal, Aeropuerto de Barcelona T1, 08820 Barcelona, Spain",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "confirmed",
+      "coordinatesVerified": "T1 터미널 좌표 (OSM Nominatim) · 반납 동선은 공항 표지 따름"
     }
   ]
 }
