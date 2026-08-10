@@ -38,20 +38,20 @@ status: "chapter-derived master itinerary; booking values pending"
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
 | 27 | 9/24 목 | Paris | Lyon→Paris·16박 정착 | TGV, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | TGV·Paris 숙소 |
 | 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페 | 피로가 적으면 강변·공원 1곳 | 1~2 | 숙소 생활권 |
-| 29 | 9/26 토 | Paris | 첫 파리 생활일 | 늦은 시작·가벼운 운동, Saint-Germain, Luxembourg, Seine | 무예약. Il Barbiere 회차는 선택하지 않음 | 2 | 없음 |
+| 29 | 9/26 토 | Paris | 첫 파리 생활일 | 늦은 시작·가벼운 운동, Saint-Germain, Luxembourg, Seine | 무예약 | 2 | 없음 |
 | 30 | 9/27 일 | Paris | 고전 파리 방향잡기 | Tuileries, Palais Royal, Opéra 지구, Garnier 외관/가능 시 낮 관람 | 자유저녁 | 3 | Garnier 조건부 |
 | 31 | 9/28 월 | Paris | 로컬 라이프·Fashion Week 개막 | 운동·세탁·쇼핑, 북마레 또는 주거지 산책 | 무예약 | 2 | 없음 |
 | 32 | 9/29 화 | Paris | 박물관일 | Musée d’Orsay 또는 Orangerie 한 곳 | 저녁 비움 | 3 | 미술관 시간지정 |
 | 33 | 9/30 수 | Paris | Fashion Week 공개동선 반일 | 여유로운 오전, Palais de Tokyo 일대→Avenue Montaigne→Rue Saint-Honoré→Palais Royal | 공식 확인된 공개 팝업만·늦은 행사 없음 | 3 | 공개행사 재확인 |
-| 34 | 10/1 목 | Paris | Rossini 오페라일 | 운동·느린 아침, Place des Vosges·Bastille, 17:30 이른 저녁 | **Il Barbiere di Siviglia 19:30**·약 22:45 종료 | 5 | Paris Opera P0 |
+| 34 | 10/1 목 | Paris | Bastille 동네의 날 | 운동·느린 아침, Place des Vosges·Bastille 산책 | 자유 저녁 — 공연 취소(2026-08-10), 대체 검토 중 | 2~3 | 없음 |
 | 35 | 10/2 금 | Paris | 회복·로컬 라이프 | 늦은 시작, 시장·서점·카페·스케치 | 고정행사 없음 | 1~2 | 없음 |
-| 36 | 10/3 토 | Paris | 유연한 문화일 | 박물관·서점·동네 중 하나 | Arc 토요일+Hamlet 조합은 제외 | 2~3 | 선택시설만 |
+| 36 | 10/3 토 | Paris | 유연한 문화일 | 박물관·서점·동네 중 하나 | Arc 전날 — 무리 금지 | 2~3 | 선택시설만 |
 | 37 | 10/4 일 | Paris | Qatar Prix de l’Arc 메인 레이스 | ParisLongchamp 근전일 일정 | 저녁 비움 | 5 | France Galop P0 |
 | 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 아침, 장보기·세탁·카페, 선택 짧은 공원 | 무예약 | 1 | 없음 |
-| 39 | 10/6 화 | Paris | 동부 파리 생활일 | Canal Saint-Martin·Belleville 또는 다른 동네 | Hamlet 19:30은 10/9 매진 시에만 백업 | 2/5 | Hamlet 백업 |
+| 39 | 10/6 화 | Paris | 동부 파리 생활일 | Canal Saint-Martin·Belleville 또는 다른 동네 | 저녁 무예약 | 2 | 없음 |
 | 40 | 10/7 수 | Paris | Vendanges de Montmartre | 낮 축제, Clos Montmartre 외관·마켓·골목 | 이른 귀가. 추가 오페라 제외 | 3 | 포도밭 방문 감시 |
-| 41 | 10/8 목 | Paris | 유연한 현대문화일 | 가벼운 오전, Trocadéro·Chaillot | Este Mundo 20:30 선택. Wagner 패키지는 공식 회차 불일치로 제외 | 2/4 | Festival 선택 |
-| 42 | 10/9 금 | Paris | 마지막 대형 문화행사 | 늦은 시작, 가벼운 동네산책·카페, 이른 저녁 | **Hamlet 19:30**·Jazz/교회공연 제외 | 5 | Paris Opera P0 |
+| 41 | 10/8 목 | Paris | Trocadéro·Chaillot 오후 | 가벼운 오전, Trocadéro·Chaillot | 자유 저녁 — 공연 취소(2026-08-10) | 2 | 없음 |
+| 42 | 10/9 금 | Paris | 마지막 정리·송별 저녁 | 늦은 시작, 짐 70% 포장, 동네산책·카페 | 송별 저녁 — 공연 취소(2026-08-10), 장소 검토 중 | 2 | 송별 저녁 예약 |
 | 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·출국 | 짐·체크아웃, 안전여유를 둔 공항 이동, 19:10 출국 예정 | Grand Défilé·고정공연 제외 | 3 | 항공·공항이동 |
 
 ## 장거리 이동일

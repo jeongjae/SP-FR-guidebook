@@ -3,14 +3,14 @@
   "day": 42,
   "date": "2026-10-09",
   "city": "Paris",
-  "title": "Hamlet — 마지막 대형 문화행사",
+  "title": "마지막 정리와 송별 저녁",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "09:30",
-  "endTime": null,
+  "endTime": "21:30",
   "totalDuration": null,
-  "totalDistance": "약 1km · 도보 + 메트로/택시",
-  "fatigue": "4",
+  "totalDistance": "약 1km · 도보 (숙소권)",
+  "fatigue": "2",
   "hotel": {
     "name": "Pepper & Paper (후보)",
     "lat": 48.83966,
@@ -47,37 +47,23 @@
       "optional": false
     },
     {
-      "id": "early-dinner",
+      "id": "farewell-dinner",
       "order": 3,
-      "start": "17:30",
-      "end": "18:30",
-      "name": "Bastille 부근 이른 저녁",
+      "start": "19:00",
+      "end": "21:00",
+      "name": "송별 저녁",
       "category": "food",
-      "lat": 48.8525,
-      "lng": 2.369,
-      "summary": "송별 식사는 이 시간으로",
-      "menu": "가볍게",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "hamlet",
-      "order": 4,
-      "start": "19:30",
-      "end": "23:10",
-      "name": "Hamlet · Opéra Bastille",
-      "category": "culture",
-      "lat": 48.8515018,
-      "lng": 2.3707417,
-      "summary": "18:30–18:45 도착 — 3시간 40분·1회 인터미션",
-      "menu": null,
-      "reservation": "티켓 예매 잠금 (€28–155, 8/5 확인)",
+      "lat": 48.8399,
+      "lng": 2.3459,
+      "summary": "장소는 대체안 검토 중 — 다음 날 출국, 과음 금지",
+      "menu": "숙소권 또는 예약 1곳",
+      "reservation": "송별 저녁 장소 결정·예약",
       "optional": false
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "23:30",
+      "order": 4,
+      "start": null,
       "end": null,
       "name": "직접 귀환",
       "category": "hotel",
@@ -101,16 +87,7 @@
     },
     {
       "from": "neighborhood",
-      "to": "early-dinner",
-      "mode": "metro",
-      "duration": "20분",
-      "distance": null,
-      "line": "메트로",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "early-dinner",
-      "to": "hamlet",
+      "to": "farewell-dinner",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
@@ -118,28 +95,28 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "hamlet",
+      "from": "farewell-dinner",
       "to": "paris-return",
-      "mode": "taxi",
-      "duration": "20분",
-      "distance": null,
-      "line": "택시 권장 (심야)",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "메트로·택시"
+    "도보 (숙소권)"
   ],
   "food": [
     "숙소 점심 (남은 재료)",
-    "17:30 이른 저녁"
+    "19:00 송별 저녁 — 장소 검토 중"
   ],
   "highlights": [
     "짐 70%는 낮에 끝낸다",
-    "Jazz sur Seine 등 같은 저녁 추가 금지",
-    "공연 후 바로 귀환"
+    "공연 취소 — 저녁 여유",
+    "21:30 이전 귀환·야간산책 없음"
   ],
-  "backup": "공연 불발 시(10/6 백업 사용) 저녁은 자유·최종 포장",
+  "backup": "피로 시 송별 저녁은 숙소식",
   "map": {
     "zoom": 14,
     "center": [
@@ -149,9 +126,10 @@
     "routeCache": null
   },
   "needsReview": [
-    "Hamlet 10/9 티켓 예매",
+    "송별 저녁 장소 결정·예약",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "공연 취소(2026-08-10, 비용) — 저녁 대체안 검토 중"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일"

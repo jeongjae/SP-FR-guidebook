@@ -27,7 +27,7 @@
 | 우선 추천 | **Notre-Dame–Latin Quarter** | 도시의 역사와 현재의 생활을 함께 보는 첫 주말 코스다. |
 | 우선 추천 | **Montmartre–South Pigalle** | 관광언덕과 실제 생활·문화권을 한 방향으로 내려온다. |
 | 선택 | **Versailles·Giverny** | 날씨와 예약상태에 따라 15구 생활일·Orangerie로 교체한다. |
-| 필수 | **10/4 Arc·10/5 회복일·10/9 Hamlet** | 큰 이벤트 뒤 회복을 두고 마지막 공연일의 낮을 비운다. |
+| 필수 | **10/4 Arc·10/5 회복일** | 큰 이벤트 뒤 회복을 둔다. 오페라·무용 공연 3건은 취소됨(2026-08-10) — 저녁 대체 검토 중. |
 
 ## 하루를 완성하는 네 가지 선택
 
@@ -151,15 +151,15 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | 31 | 9/28 월 | {{badge:rest|로컬 라이프}} | 운동·세탁 | 쇼핑·북마레/주거지 | Fashion Week 개막 메모 |
 | 32 | 9/29 화 | {{badge:rest|박물관}} | 느린 아침 | Orsay 또는 Orangerie | 무예약 |
 | 33 | 9/30 수 | {{badge:p0|고정 경험}} | 여유로운 오전 | **Fashion Week 공개동선 반일** | 일찍 귀가 |
-| 34 | 10/1 목 | {{badge:p0|고정 공연}} | 운동·아침 | Place des Vosges·Bastille | **Il Barbiere 19:30** |
+| 34 | 10/1 목 | {{badge:pending|저녁 대체 검토}} | 운동·아침 | Place des Vosges·Bastille | 자유 저녁 (공연 취소) |
 | 35 | 10/2 금 | {{badge:pending|회복}} {{badge:rest|로컬 라이프}} | 늦은 시작 | 시장·서점·카페·스케치 | 무예약 |
 | 36 | 10/3 토 | {{grade:optional|선택 문화}} | 느린 아침 | 박물관·서점·동네 중 하나 | 무예약 |
 | 37 | 10/4 일 | {{badge:p0|고정 스포츠}} | ParisLongchamp 이동 | **Qatar Prix de l’Arc** | 비움 |
 | 38 | 10/5 월 | {{badge:pending|회복}} | 늦은 아침·세탁 | 카페·짧은 공원 | 무예약 |
-| 39 | 10/6 화 | {{badge:rest|로컬 라이프}} | 동부 파리 | Canal/Belleville | Hamlet 백업만 |
+| 39 | 10/6 화 | {{badge:rest|로컬 라이프}} | 동부 파리 | Canal/Belleville | 저녁 무예약 |
 | 40 | 10/7 수 | {{badge:p0|고정 축제}} | **Vendanges de Montmartre** | 포도밭 외관·축제·골목 | 이른 귀가 |
-| 41 | 10/8 목 | {{grade:optional|선택 공연}} | 가벼운 오전 | Trocadéro·Chaillot | **Este Mundo 20:30 선택** |
-| 42 | 10/9 금 | {{badge:p0|고정 공연}} | 늦은 시작 | 동네산책·카페 | **Hamlet 19:30** |
+| 41 | 10/8 목 | {{badge:rest|로컬 라이프}} | 가벼운 오전 | Trocadéro·Chaillot | 자유 저녁 (공연 취소) |
+| 42 | 10/9 금 | {{badge:pending|저녁 대체 검토}} | 늦은 시작 | 동네산책·카페 | 송별 저녁 (공연 취소) |
 | 43 | 10/10 토 | {{badge:p0|출국}} | 체크아웃·짐 | 안전여유 두고 공항 | 고정행사 제외 |
 
 ## 추천 고정 이벤트 {{badge:p0|RECOMMENDED FIXED EVENTS}}
@@ -171,11 +171,11 @@ Fashion Week 경험 1회, 스포츠 1회, 지역축제 1회, 서로 다른 성�
 | 날짜·시간 | 이벤트 | 상태 | 피로 | 충돌 | 예매 우선 |
 |---|---|---|---|---|---|
 | 9/30 오후 | Paris Fashion Week 공개동선 반일 | {{badge:p0|고정 경험}} | {{badge:rest|중}} | {{badge:rest|야간 없음}} | {{badge:pending|공개행사 재확인}} |
-| 10/1 19:30 | Il Barbiere di Siviglia · Opéra Bastille | {{badge:p0|고정 공연}} | {{badge:p0|높음}} | {{badge:rest|낮 일정 축소}} | {{badge:p0|1순위}} |
+| 10/1 19:30 | Il Barbiere di Siviglia · Opéra Bastille | **취소 (2026-08-10, 비용)** | — | — | — |
 | 10/4 종일 | Qatar Prix de l’Arc de Triomphe · ParisLongchamp | {{badge:p0|고정 스포츠}} | {{badge:p0|높음}} | {{badge:rest|저녁 비움}} | {{badge:p0|3순위}} |
 | 10/7 낮–이른 저녁 | Fête des Vendanges de Montmartre | {{badge:p0|고정 축제}} | {{badge:rest|중}} | {{badge:rest|오페라 제외}} | {{badge:pending|포도밭 방문 감시}} |
-| 10/8 20:30 | Bouchra Ouizguen, Este Mundo · Chaillot | {{grade:optional|선택 공연}} | {{badge:p0|높음}} | {{badge:pending|3일 연속}} | {{grade:optional|4순위}} |
-| 10/9 19:30 | Hamlet · Opéra Bastille | {{badge:p0|고정 공연}} | {{badge:p0|높음}} | {{badge:rest|낮 일정 축소}} | {{badge:p0|2순위}} |
+| 10/8 20:30 | Bouchra Ouizguen, Este Mundo · Chaillot | **취소 (2026-08-10, 비용)** | — | — | — |
+| 10/9 19:30 | Hamlet · Opéra Bastille | **취소 (2026-08-10, 비용)** | — | — | — |
 | 10/10 | 출국 | {{badge:p0|고정 이동}} | {{badge:p0|높음}} | {{badge:p0|공연·퍼레이드 제외}} | — |
 
 ### Fashion Week 공개 접근 원칙
@@ -184,12 +184,9 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 
 <nav class="event-actions" aria-label="파리 고정 이벤트 공식 링크">
   <a class="event-button" href="https://www.fhcm.paris/en/paris-fashion-week">Fashion Week 공식정보</a>
-  <a class="event-button" href="https://www.operadeparis.fr/en/season-26-27/opera/il-barbiere-di-siviglia">Il Barbiere 공식정보</a>
   <a class="event-button event-button-primary" href="https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229122672727&amp;lang=en">10/1 공식예매</a>
   <a class="event-button" href="https://billetterie.france-galop.com/en/event/qatar-prix-de-larc-de-triomphe/">Arc 공식정보·예매</a>
   <a class="event-button" href="https://fetedesvendangesdemontmartre.com/le-programme/">Vendanges 공식 프로그램</a>
-  <a class="event-button" href="https://www.festival-automne.com/fr/edition-2026/bouchra-ouizguen-este-mundo">Este Mundo 공식정보·예매</a>
-  <a class="event-button" href="https://www.operadeparis.fr/en/season-26-27/opera/hamlet">Hamlet 공식정보</a>
   <a class="event-button event-button-primary" href="https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229118155385&amp;lang=en">10/9 공식예매</a>
 </nav>
 
@@ -221,7 +218,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 
 ### Day 37(10/4 일)을 Arc에만 쓰는 이유
 
-Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이동·입장·레이스 사이 대기·귀가까지 합치면 사실상 근전일이다. 같은 날 14:30 Il Barbiere나 저녁 공연을 붙이지 않고, 귀가 뒤 일정도 비운다.
+Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이동·입장·레이스 사이 대기·귀가까지 합치면 사실상 근전일이다. 같은 날 저녁 일정을 붙이지 않고, 귀가 뒤 일정도 비운다.
 
 **43일 중 37일차다.** 남은 6일을 버티기 위한 회복은 바로 다음 날 10/5에 둔다. Arc를 선택한 대신 10/4의 예전 산책·스케치 모듈은 삭제하며, 날씨 때문에 경마를 취소할 때만 그 가벼운 모듈을 되살린다.
 
@@ -231,10 +228,10 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 
 | 순위 | 대상 | 이유 | 상태 |
 |---:|---|---|---|
-| 1 | **Il Barbiere 10/1** | 공식판매 또는 공식 재판매 | €77–205 좌석 확인 |
-| 2 | **Hamlet 10/9** | 공식판매 또는 공식 재판매 | €28–155 좌석 확인·10/6 백업 |
+| 1 | ~~Il Barbiere 10/1~~ | **취소 (2026-08-10, 비용)** | — |
+| 2 | ~~Hamlet 10/9~~ | **취소 (2026-08-10, 비용)** | — |
 | 3 | **Qatar Prix de l’Arc 10/4** | France Galop 공식판매 | `BOOK NOW` 확인 |
-| 4 | **Este Mundo 10/8** | 3일 연속 행사 허용 시만 | €8–25 예약 가능 |
+| 4 | ~~Este Mundo 10/8~~ | **취소 (2026-08-10, 비용)** | — |
 | 5 | **Clos Montmartre 내부방문** | 공식 예약 개시 감시 | 9/14 예약 오픈 예고 |
 | 6 | **교회공연** | 작품·연주자·날짜 검증 후 | O2에서만 추가 |
 
@@ -481,7 +478,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 > 전시를 다 보려 하지 말고 **중앙 원형공간 하나에 시간을 쓴다.**
 
 > **대체 규칙**
-> 부르스 표가 없거나 피곤하면 몽토르괴이 산책만 남긴다. 10/9는 Hamlet 낮 강도 보호일이라 미술관을 옮겨 넣지 않는다.
+> 부르스 표가 없거나 피곤하면 몽토르괴이 산책만 남긴다. 10/9는 짐 정리일이라 미술관을 옮겨 넣지 않는다.
 
 ### 15구 생활일 {{grade:alternative|대체}}
 
@@ -597,9 +594,9 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 오후 | 하루 핵심 1곳 또는 동네 1권역. 대형관은 3–4시간 상한 |
 | 저녁 | **오페라 2회 고정**, 현대무용 1회 선택, 숙소식·포장식으로 회복일 보호 |
 | 필수 문화 | Louvre, Orsay, BnF Richelieu, Notre-Dame·Île de la Cité |
-| 고정 문화·스포츠 | 9/30 Fashion Week 공개동선 · 10/1 Il Barbiere · 10/4 Arc · 10/7 Vendanges · 10/9 Hamlet |
-| 선택 공연 | 10/8 Este Mundo. 10/7–9 연속 피로를 감수할 때만 구매 |
-| 오페라 기본 | **O1: Il Barbiere 10/1 + Hamlet 10/9**. 10/6 Hamlet은 백업 |
+| 고정 문화·스포츠 | 9/30 Fashion Week 공개동선 · 10/4 Arc · 10/7 Vendanges |
+| 선택 공연 | 없음 — 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다. |
+| 오페라 기본 | 없음 — 전 회차 취소(2026-08-10, 비용) |
 | 근교 옵션 | 이번 고정 이벤트 프레임워크에서는 기본 일정에서 제외하고, 별도 교체일이 생길 때만 검토 |
 | 교통 | 9/24–27 개별 승차, 9/28–10/4 및 10/5–11 Navigo Weekly 2주 연속 권장 |
 | 피로 관리 | 문화 집중일 다음 날은 생활일·공원·시장. 공연 다음 날 오전은 늦게 시작 |
@@ -631,12 +628,12 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 |---|---|---|---|---|
 | 1. 정착과 방향잡기 | 9/24–9/29 | 체크인 완충, 숙소생활권, Saint-Germain, 고전 도심, 박물관 1곳 | 9/24 대형 일정 금지·첫 장보기·도착 다음 날 무공연 | 9/29 박물관만 Orsay/Orangerie 교환 |
 | 2. 공개문화와 메인 이벤트 | 9/30–10/5 | Fashion Week, Rossini, 회복, 선택문화, Arc, 회복 | 10/2·10/5 회복일과 10/4 저녁 비움 | 10/3 선택문화만 자유 교체 |
-| 3. 동네·축제·마지막 오페라 | 10/6–10/10 | 동부 파리, Vendanges, 선택무용, Hamlet, 출국 | 10/9 낮 강도 축소, 10/10 고정행사 금지 | Hamlet만 10/6으로 백업 이동 |
+| 3. 동네·축제·마무리 | 10/6–10/10 | 동부 파리, Vendanges, 짐 정리·송별, 출국 | 10/10 고정행사 금지 | — |
 
 ### 고정·조건부·자유 블록
 
 - **고정 블록:** 숙소 체크인·체크아웃, 9/30 Fashion Week 반일, 10/1·10/9 오페라, 10/4 Arc, 10/7 Vendanges, 출국.
-- **조건부 블록:** 10/8 Este Mundo, 10/7 Clos Montmartre 내부 방문, 10/6 Hamlet 백업, 공식 발표 뒤의 9/30 공개 팝업.
+- **조건부 블록:** 10/7 Clos Montmartre 내부 방문, 공식 발표 뒤의 9/30 공개 팝업.
 - **자유 블록:** 9/28 생활일, 10/2 회복·생활일, 10/3 선택문화, 10/5 회복일.
 
 조건부 일정은 ‘추가’하지 않고 같은 시간대의 기본일정을 **교체**한다. 공연·축구가 확정되면 당일 오후를 60–90분 줄이고, 다음 날 오전 운동을 선택으로 낮춘다.
@@ -701,15 +698,15 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 9/28 월 | 로컬 라이프 | 운동·세탁 | 쇼핑·북마레/주거지 | 이른 귀가 | 2 |
 | 9/29 화 | 박물관 | 느린 아침 | Orsay 또는 Orangerie | 비움 | 3–4 |
 | 9/30 수 | Fashion Week | 느린 오전 | Palais de Tokyo 권역→Montaigne→Saint-Honoré→Palais Royal | 늦은 행사 없음 | 3 |
-| 10/1 목 | 고정 공연 | 운동·느린 아침 | Place des Vosges·Bastille | **Il Barbiere 19:30** | 4 |
+| 10/1 목 | 저녁 대체 검토 | 운동·느린 아침 | Place des Vosges·Bastille | 자유 저녁 (공연 취소) | 2–3 |
 | 10/2 금 | 회복·로컬 라이프 | 늦은 시작 | 시장·서점·카페·스케치 | 무예약 | 1–2 |
 | 10/3 토 | 선택 문화 | 느린 아침 | 박물관·서점·동네 중 하나 | 비움 | 2–3 |
 | 10/4 일 | 고정 스포츠 | ParisLongchamp 이동 | **Arc 메인 레이스 데이** | 비움 | 5 |
 | 10/5 월 | 회복 | 늦은 아침·세탁 | 장보기·카페·짧은 공원 | 무예약 | 1 |
-| 10/6 화 | 로컬 라이프 | Canal Saint-Martin | Belleville/동부 파리 | Hamlet 19:30 백업만 | 2 / 5 |
+| 10/6 화 | 로컬 라이프 | Canal Saint-Martin | Belleville/동부 파리 | 저녁 무예약 | 2 |
 | 10/7 수 | 고정 축제 | **Vendanges de Montmartre** | 포도밭·축제·골목 | 이른 귀가 | 3–4 |
-| 10/8 목 | 선택 공연 | 가벼운 오전 | Trocadéro·Chaillot | **Este Mundo 20:30 선택** | 2 / 4 |
-| 10/9 금 | 고정 공연 | 늦은 시작 | 가벼운 동네산책·카페 | **Hamlet 19:30** | 4 |
+| 10/8 목 | 로컬 라이프 | 가벼운 오전 | Trocadéro·Chaillot | 자유 저녁 (공연 취소) | 2 |
+| 10/9 금 | 저녁 대체 검토 | 늦은 시작 | 가벼운 동네산책·카페 | 송별 저녁 (공연 취소) | 2 |
 | 10/10 토 | 출국 | 체크아웃·짐 | 공항 이동 | 19:10 출국 예정 | 4 |
 
 ---
@@ -754,7 +751,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 **오늘의 필수:** 생활권을 한 번 더 걸어 낮과 저녁의 귀가동선을 확인한다.
 **오늘의 피로도:** 1–2/5.
 
-> 날짜가 고정된 이벤트(10/1 Il Barbiere · 10/4 Arc · 10/9 Hamlet)는 움직이지 않는다. 이 하루는 빈틈을 메우는 완충일이며 고정 일정을 당겨 채우는 날이 아니다.
+> 날짜가 고정된 이벤트(10/4 Arc · 10/7 Vendanges)는 움직이지 않는다. 이 하루는 빈틈을 메우는 완충일이며 고정 일정을 당겨 채우는 날이 아니다.
 
 ---
 
@@ -770,7 +767,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 12:30–14:00 | 가벼운 점심 | 긴 대기 회피 |
 | 14:00–16:00 | Luxembourg Garden | 함께 산책하고 앉아서 쉬는 시간 포함 |
 | 16:00–18:00 | Seine 좌안 산책 | 날씨와 피로에 따라 Pont Neuf 전후에서 종료 |
-| 19:00 이후 | 숙소식 또는 가까운 동네식당 | **Il Barbiere 19:30 공연이 있어도 기본안에서는 선택하지 않음** |
+| 19:00 이후 | 숙소식 또는 가까운 동네식당 | 공연 없음 — 무예약 저녁 |
 
 **피로도:** 2–3/5. **고정행사:** 없음. 9/26 오페라는 도착 다음 날이라는 이유로 기본안에서 제외한다.
 **우천 대체:** Saint-Germain 서점·카페를 중심으로 압축한다.
@@ -792,7 +789,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 12:00–13:30 | Palais Royal 주변 점심 | 혼잡한 중심가에서 체류시간 통제 |
 | 13:30–15:30 | Palais Royal 정원·회랑 | 스케치 20–30분 포함 |
 | 15:30–17:30 | Avenue de l’Opéra·Opéra 지구 | Palais Garnier 외관, 당일 입장 가능 시에만 짧은 주간 방문 |
-| 18:30 이후 | 숙소 귀환·가벼운 저녁 | Hamlet 마티네를 기본안에 넣지 않음 |
+| 18:30 이후 | 숙소 귀환·가벼운 저녁 | 무예약 저녁 |
 
 **피로도:** 3/5. **고정행사:** 없음. Garnier 내부가 불가하면 외관과 Opéra 지구 산책만으로 완결한다.
 
@@ -857,7 +854,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 ---
 
 ## 12. Day 8 — 10월 1일 목요일
-### Rossini 오페라 — Bastille 동네와 한 호흡으로 묶는 날 {{badge:p0|고정 공연}}
+### Bastille 동네의 날 — 공연 취소, 저녁 대체 검토 {{badge:pending|대체 검토}}
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
@@ -866,13 +863,9 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 11:00–12:30 | 휴식·작은 장보기 | 낮 관광을 위해 생활업무를 짧게 |
 | 12:30–13:30 | 가벼운 점심 | 저녁 식사까지 안정적으로 이어지게 |
 | 14:00–16:30 | **Place des Vosges→Bastille 동네 산책** | 정원·골목·운하 초입 중 체력에 맞춰 축소 |
-| 17:00 | 산책 종료·공연 준비 | 쇼핑·추가 내부관람 금지 |
-| **17:30** | **이른 저녁** | Opéra Bastille 도보권, 과식·음주 제한 |
-| **18:30–18:45** | **Opéra Bastille 도착** | 보안·화장실·좌석 확인 여유 |
-| **19:30** | **Il Barbiere di Siviglia** | 이탈리아어, 프랑스어·영어 자막, 1회 인터미션 |
-| **약 22:45** | 공연 종료 | 다른 야간산책 없이 숙소로 바로 귀환 |
+| 17:00 이후 | 자유 저녁 | 대체안 검토 중 — 무예약 |
 
-**피로도:** 4/5. **상영시간:** 3시간 15분. **현재 예매 가능 범위:** €77–205(10/1 활성 카테고리, 8/5 확인). 10/1이 매진되면 10/7 19:30만 백업으로 쓰고, 9/26·10/4·10/10은 각각 도착 직후·Arc 충돌·출국 때문에 기본안에서 제외한다.
+**피로도:** 2–3/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
 
 ---
 
@@ -908,7 +901,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 14:00–17:00 | 박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나 | 미완료 우선, 3시간 상한 |
 | 17:00 이후 | 장보기·숙소식 | Arc 준비·교통 확인, 야간행사 없음 |
 
-**피로도:** 2–3/5. Arc 토요일 프로그램과 Hamlet 19:30을 함께 넣는 안은 기본 일정에서 제외한다.
+**피로도:** 2–3/5. Arc 토요일 프로그램은 기본 일정에서 제외한다.
 
 ---
 
@@ -944,7 +937,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 ---
 
 ## 17. Day 13 — 10월 6일 화요일
-### Canal Saint-Martin과 Belleville — 동부 파리 또는 Hamlet 백업 {{badge:rest|로컬 라이프}}
+### Canal Saint-Martin과 Belleville — 동부 파리 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
@@ -952,11 +945,9 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 10:30–12:30 | Canal Saint-Martin | 물가 산책·카페 |
 | 12:30–14:00 | 동부 파리 점심 | 오후 언덕 대비 과식 금지 |
 | 14:00–17:00 | Belleville 또는 한 동네 경로 | 공원·거리·작은 서점 중심 |
-| 17:00 이후 | 기본안은 숙소 귀환 | 저녁 무예약 |
-| **백업 17:30–19:00** | Bastille 부근 이른 식사·입장 | 10/9 Hamlet 표가 없을 때만 |
-| **백업 19:30** | **Hamlet · Opéra Bastille** | 기본안 10/9을 대체, 중복관람 아님 |
+| 17:00 이후 | 숙소 귀환 | 저녁 무예약 |
 
-**피로도:** 기본 2/5, Hamlet 백업 사용 시 5/5. 백업을 쓰면 10/9 저녁은 자유·최종 포장으로 전환한다.
+**피로도:** 2/5. Hamlet 취소로 백업 분기는 폐기됐다.
 
 ---
 
@@ -973,12 +964,12 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 17:30–19:00 | 이른 저녁 또는 Abbesses로 하산 | 군중이 커지기 전에 종료 |
 | 19:00 이후 | 숙소 귀환 | **추가 오페라 없음** |
 
-**피로도:** 3–4/5. 공식 축제는 10/7–11로 확인됐다. 10/1 Il Barbiere가 불가할 때에만 10/7 19:30 공연을 백업으로 쓰며, 그 경우 축제는 16:30에 종료한다.
+**피로도:** 3–4/5. 공식 축제는 10/7–11로 확인됐다. 공연 백업 분기는 취소로 폐기됐다.
 
 ---
 
 ## 19. Day 15 — 10월 8일 목요일
-### Trocadéro와 Chaillot — 선택 현대무용의 날 {{grade:optional|선택 공연}}
+### Trocadéro와 Chaillot — 전망과 건축의 오후 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
@@ -986,16 +977,14 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 11:00–12:30 | 숙소권 카페·짐정리 일부 | 정식운동 생략 가능 |
 | 12:30–14:00 | 가벼운 점심 | 선택 공연일까지 체력 보존 |
 | 14:30–17:00 | Trocadéro·Chaillot 권역 | 전망·건축·카페, 장거리 산책 금지 |
-| 17:00–19:00 | 숙소 또는 Chaillot 부근 휴식·이른 저녁 | 공연 선택에 따라 조정 |
-| **20:30 선택** | **Bouchra Ouizguen, Este Mundo** | Chaillot, 1시간, €8–25 |
-| 공연 미선택 | 숙소식·자유 저녁 | 10/9 Hamlet 체력 보존 |
+| 17:00 이후 | 숙소 또는 Chaillot 부근 휴식·자유 저녁 | 무예약 |
 
-**피로도:** 공연 없음 2/5, 공연 있음 4/5. 10/7–9가 연속 이벤트 3일이 되므로 두 사람 중 한 명이라도 피곤하면 공연을 사지 않는다. **Götterdämmerung은 공식 Paris Opera 일정이 11/13·11/22이므로 10/8 선택지에서 제외한다.**
+**피로도:** 2/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
 
 ---
 
 ## 20. Day 16 — 10월 9일 금요일
-### Hamlet — 마지막 대형 문화행사 {{badge:p0|고정 공연}}
+### 마지막 정리와 송별 저녁 — Hamlet 취소 {{badge:pending|대체 검토}}
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
@@ -1004,12 +993,10 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 12:00 | 가벼운 숙소 점심 | 남은 재료 사용 |
 | 14:00–16:00 | 숙소권 가벼운 동네산책·카페 | 새 박물관·쇼핑권 추가 금지 |
 | 16:00–17:00 | 숙소 휴식·공항동선 최종 확인 | 여권·티켓·수하물 확인 |
-| **17:30** | Bastille 부근 이른 저녁 | 송별 식사는 점심 또는 이 시간으로 이동 |
-| **18:30–18:45** | Opéra Bastille 도착 | 보안·화장실·좌석 확인 |
-| **19:30** | **Hamlet** | 프랑스어, 프랑스어·영어 자막, 1회 인터미션 |
-| **약 23:10** | 공연 종료·직접 귀환 | 마지막 야간산책·추가 술자리 없음 |
+| 19:00–21:00 | **송별 저녁** | 장소는 대체안 검토 중 — 다음 날 출국 기준 과음 금지 |
+| 21:30 이전 | 숙소 귀환 | 마지막 포장 마무리, 야간산책 없음 |
 
-**피로도:** 4/5. **상영시간:** 3시간 40분. **현재 예매 가능 범위:** €28–155(10/9 활성 카테고리, 8/5 확인). Jazz sur Seine·교회공연·송별 야간식사는 같은 저녁에 넣지 않는다.
+**피로도:** 2/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
 
 ---
 
