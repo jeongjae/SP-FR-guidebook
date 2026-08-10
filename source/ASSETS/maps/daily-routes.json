@@ -1645,7 +1645,7 @@
     {
       "date": "2026-10-01",
       "city": "Paris",
-      "title": "Vosges·Bastille 산책과 Il Barbiere di Siviglia",
+      "title": "Vosges·Bastille 산책",
       "center": [
         48.853,
         2.368
@@ -1664,12 +1664,6 @@
           "order": 1,
           "plannedTime": "14:00–16:30",
           "note": "정원·골목 — 체력에 맞춰 축소."
-        },
-        {
-          "placeId": "opera-bastille",
-          "order": 2,
-          "plannedTime": "18:30 도착 · 19:30 공연",
-          "note": "Il Barbiere di Siviglia · 1회 인터미션 · 약 22:45 종료 후 바로 귀환."
         }
       ],
       "segments": [
@@ -1677,11 +1671,6 @@
           "from": "paris-stay-candidate",
           "to": "place-des-vosges",
           "mode": "transit"
-        },
-        {
-          "from": "place-des-vosges",
-          "to": "opera-bastille",
-          "mode": "walking"
         }
       ]
     },
@@ -1811,12 +1800,6 @@
           "order": 2,
           "plannedTime": "14:00–17:00",
           "note": "Belleville 또는 한 동네 경로 — 공원·거리·서점 중심."
-        },
-        {
-          "placeId": "opera-bastille",
-          "order": 3,
-          "plannedTime": "백업 19:30",
-          "note": "선택 — 10/9 Hamlet 표가 없을 때만 이날 관람으로 대체."
         }
       ],
       "segments": [
@@ -1878,7 +1861,7 @@
     {
       "date": "2026-10-08",
       "city": "Paris",
-      "title": "Trocadéro·Chaillot — 선택 공연의 저녁",
+      "title": "Trocadéro·Chaillot 오후",
       "center": [
         48.862,
         2.288
@@ -1902,7 +1885,7 @@
           "placeId": "palais-de-chaillot",
           "order": 2,
           "plannedTime": "20:30 선택 공연",
-          "note": "선택 — Bouchra Ouizguen 'Este Mundo' · 1시간 · €8–25. 미선택 시 숙소식."
+          "note": "낮 방문 — 저녁은 자유(대체안 검토 중)."
         }
       ],
       "segments": [
@@ -1921,7 +1904,7 @@
     {
       "date": "2026-10-09",
       "city": "Paris",
-      "title": "짐 포장과 Hamlet — Opéra Bastille",
+      "title": "짐 포장과 마지막 파리 저녁",
       "center": [
         48.85,
         2.365
@@ -1933,22 +1916,10 @@
           "placeId": "paris-stay-candidate",
           "order": 0,
           "plannedTime": "오전–오후 짐 70% 포장",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 새 박물관·쇼핑권 추가 금지."
-        },
-        {
-          "placeId": "opera-bastille",
-          "order": 1,
-          "plannedTime": "18:30 도착 · 19:30 공연",
-          "note": "Hamlet · 프랑스어(불·영 자막) · 1회 인터미션 · 약 23:10 종료 후 직접 귀환."
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 저녁 대체안 검토 중 — 새 박물관·쇼핑권 추가 금지."
         }
       ],
-      "segments": [
-        {
-          "from": "paris-stay-candidate",
-          "to": "opera-bastille",
-          "mode": "transit"
-        }
-      ]
+      "segments": []
     },
     {
       "date": "2026-10-10",

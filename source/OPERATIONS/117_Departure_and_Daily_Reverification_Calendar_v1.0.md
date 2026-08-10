@@ -5,7 +5,7 @@
 | 시점 | 확인 |
 |---|---|
 | 즉시 | 숙소 8개, 항공, 렌터카 2구간, TGV 2구간 예약 잠금 |
-| 8/15까지 | Sagrada, Sant Pau, Atelier Cézanne, Palais des Papes, Paris 공연·행사(Il Barbiere·Arc·Hamlet) |
+| 8/15까지 | Sagrada, Sant Pau, Atelier Cézanne, Palais des Papes, Arc de Triomphe 경마 입장권 |
 | 8/22 | 모든 무료취소기한·수하물·보험·eSIM |
 | 8/27 | Barcelona 3일 운영시간·공항교통·기상 |
 | 매 도시 이동 48시간 전 | 체크인, 주차, 열차·항공, 도로, 시장일 |
@@ -29,7 +29,7 @@
 | 9/20 | 주유·Avignon TGV역 반납 09:00·TGV 12176 10:22 플랫폼 |
 | 9/23 | Annecy TER·호수날씨 |
 | 9/30 | Fashion Week 공개행사·공식 확인된 팝업만 |
-| 10/1 | Il Barbiere 19:30 — 티켓·입장시간·귀가 교통 |
+| 10/1 | 저녁 대체안 확정 여부·예약 필요 시 마감 확인 |
 | 10/4 | Prix de l'Arc — ParisLongchamp 입장·셔틀·귀환 혼잡 |
-| 10/7–10/8 | Vendanges de Montmartre 일정 (10/7) · Este Mundo 선택공연 예약 상태 (10/8) |
-| 10/9–10/10 | Hamlet 19:30 티켓·이른 저녁 (10/9) · CDG 교통·항공 체크인·수하물 (10/10) |
+| 10/7–10/8 | Vendanges de Montmartre 일정 (10/7) · Chaillot 권역 오후·자유 저녁 (10/8) |
+| 10/9–10/10 | 짐 포장·저녁 대체안 (10/9) · CDG 교통·항공 체크인·수하물 (10/10) |
