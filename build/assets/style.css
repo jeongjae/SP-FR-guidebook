@@ -2491,8 +2491,19 @@ a.rz-day:hover { background: var(--accent-soft); }
   list-style: none;
 }
 .rz-more > summary::-webkit-details-marker { display: none; }
-.rz-more > summary::after { content: "▾"; margin-left: 6px; }
-.rz-more[open] > summary::after { content: "▴"; }
+/* 셰브런은 글리프가 아니라 테두리 두 변으로 그린다. ▾▴ 는 번들 나눔고딕의
+   unicode-range 밖이라 폴백 폰트에 기대게 되고, 커버리지가 없는 기기에서
+   두부(□)가 뜬다 — 현장에서 그건 못 쓰는 화면이다. */
+.rz-more > summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin: -3px 0 0 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+.rz-more[open] > summary::after { margin-top: 2px; transform: rotate(-135deg); }
 .rz-src {
   display: inline-flex;
   align-items: center;
