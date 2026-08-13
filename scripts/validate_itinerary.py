@@ -31,9 +31,12 @@ def main():
             expected_by_date[cursor.isoformat()] = stay["base"]
             cursor += timedelta(days=1)
 
+    # 마지막 밤은 숙소가 아니라 기내다 (OZ502, 10/9 CDG → 10/10 인천).
+    # 그 박을 거점 숙박으로 세면 파리 체크아웃이 하루 밀린다.
+    lodging_nights = trip["nights"] - trip.get("inflightNights", 0)
     expected_dates = {
         (date.fromisoformat(trip["start"]) + timedelta(days=i)).isoformat()
-        for i in range(trip["nights"])
+        for i in range(lodging_nights)
     }
     missing = sorted(expected_dates - set(expected_by_date))
     extra = sorted(set(expected_by_date) - expected_dates)
@@ -93,7 +96,11 @@ def main():
                     errors.append(f"검색 링크 대상 없음: {url}")
 
             today = guide.get("today", {})
-            if set(today) != expected_dates | {trip["end"]}:
+            all_dates = {
+                (date.fromisoformat(trip["start"]) + timedelta(days=i)).isoformat()
+                for i in range(trip["days"])
+            }
+            if set(today) != all_dates:
                 errors.append(f"오늘 일정 날짜 매핑 {len(today)}개 (기대 {trip['days']}개)")
             if len(set(today.values())) != trip["days"]:
                 errors.append("오늘 일정 링크 중복 또는 누락")
@@ -108,7 +115,7 @@ def main():
         "daily/day-14.html": ("Marseille", "Vieux-Port", "Mucem", "Fort Saint-Jean"),
         "daily/day-22.html": ("Arles", "Arènes d’Arles", "Saint-Trophime", "La Roquette"),
         "chapters/luberon/index.html": ("3박", "9/13", "9/16"),
-        "chapters/paris/index.html": ("16박", "9/24", "10/10"),
+        "chapters/paris/index.html": ("15박", "9/24", "10/9"),
     }
     for relative, terms in required_page_terms.items():
         path = ROOT / "site" / relative
