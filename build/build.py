@@ -3107,7 +3107,8 @@ def load_reservations():
         d = r[ix["날짜"]]
         if hasattr(d, "date"):
             by_date.setdefault(d.date().isoformat(), []).append(status)
-        items.append((str(r[ix["예약항목"]] or "").strip(), status))
+        items.append((str(r[ix["ID"]] or "").strip(),
+                      str(r[ix["예약항목"]] or "").strip(), status))
     return by_date, total, undone, items
 
 
@@ -3490,10 +3491,12 @@ def build_home():
     # D-day 는 nav.js 가 기기 시계로 계산한다. 정적 fallback 은 출발일 표기.
     _by_date, res_total, res_undone, res_items = load_reservations()
     # Phase F — 예약 항목을 검색에 싣는다. 항목명·상태만, 예약번호는 싣지 않는다.
-    for item, status in res_items:
+    # 검색 결과는 그 예약 카드로 바로 내려앉는다 (rz.js 가 필터를 풀고 표시).
+    for rid, item, status in res_items:
         if item:
             SEARCH_INDEX.append({"t": f"예약 — {item}", "c": f"예약 현황 · {status}",
-                                 "u": "tracker/reservations.html", "k": "예약 " + status})
+                                 "u": f"tracker/reservations.html#{rid}",
+                                 "k": "예약 " + status})
     plan_strip = (
         '<section class="plan-strip" aria-label="출발 준비 현황">'
         f'<b class="ps-dday" id="plan-dday">{date_label(TRIP_START)} 출발</b>'
@@ -3723,6 +3726,20 @@ def format_cell(v):
     return str(v)
 
 
+def sheet_caption_html(ws):
+    """머리쪽 제목 행(값이 한 칸뿐인 행)만 뽑는다 — 표와 카드가 같이 쓴다."""
+    out = []
+    for row in ws.iter_rows(values_only=True):
+        cells = [format_cell(v) for v in row]
+        filled = [c for c in cells if c.strip()]
+        if not filled:
+            continue
+        if len(filled) != 1:
+            break
+        out.append(f'<p class="meta">{html.escape(filled[0])}</p>')
+    return "".join(out)
+
+
 def sheet_to_table(ws):
     rows = []
     for row in ws.iter_rows(values_only=True):
@@ -3752,6 +3769,213 @@ def sheet_to_table(ws):
             f'<tbody>{"".join(body_rows)}</tbody></table></div>')
 
 
+# ---------------------------------------------------------------- 예약 현황
+#
+# 22개 열짜리 시트를 그대로 표로 뿌리면 390px 화면에서 가로로 4번 밀어야
+# 한 행을 다 읽는다. 현장에서 예약 화면에 던지는 질문은 사실상 두 개다 —
+# "무엇이 아직 안 잡혔나", "이 건 지금 어떻게 되어 있나". 상태가 1축이고
+# 날짜가 2축이다. 그래서 행이 아니라 카드로 세우고, 앞면에는 그 두 질문에
+# 답하는 값만 놓는다. 나머지 열은 <details> 안에 있고 값이 있을 때만 나온다.
+# 열은 하나도 버리지 않는다 — 접혀 있을 뿐이다.
+
+RES_CAT_ICON = {"숙소": "stay", "렌터카": "car", "항공": "plane", "철도": "train",
+                "입장권": "ticket", "공연": "music", "기타": "note"}
+# 왼쪽이 덜 된 것이다. 기본 정렬(상태순)이 할 일부터 위로 올린다.
+RES_STATUS_ORDER = ("미조사", "예약대기", "재확인", "예약완료", "취소")
+RES_STATUS_KEY = {"미조사": "none", "예약대기": "wait", "재확인": "recheck",
+                  "예약완료": "done", "취소": "cancel"}
+RES_OPEN_STATES = ("미조사", "예약대기", "재확인")   # 아직 확정 아님
+RES_PRIO_KEY = {"P0": "p0", "P1": "p1", "P2": "p2"}
+# 카드 뒷면(<details>) 순서. 앞면에 세우는 열은 _res_card 가 따로 고른다.
+RES_DETAIL_FIELDS = ("주소/역", "무료취소기한", "최종확인일", "리스크/대체안",
+                     "기준 챕터", "비고")
+
+
+def res_records(ws):
+    """Reservations 시트를 헤더 기준 dict 목록으로 읽는다 (셀은 표시형 문자열)."""
+    rows = list(ws.iter_rows(values_only=True))
+    hdr_i = next((i for i, r in enumerate(rows) if r and r[0] == "ID"), None)
+    if hdr_i is None:
+        return []
+    hdr = [str(c).strip() if c is not None else "" for c in rows[hdr_i]]
+    out = []
+    for r in rows[hdr_i + 1:]:
+        if not r or not r[0]:
+            continue
+        out.append({h: format_cell(v).strip() for h, v in zip(hdr, r) if h})
+    return out
+
+
+def res_amount(value, currency):
+    """0 과 빈칸은 '없음'으로 본다 — 미입력을 0원 확정처럼 보이게 하지 않는다."""
+    if not value:
+        return ""
+    try:
+        n = float(value)
+    except ValueError:
+        return f"{value} {currency}".strip()
+    if n == 0:
+        return ""
+    text = f"{n:,.0f}" if n == int(n) else f"{n:,.2f}"
+    return f"{text} {currency}".strip()
+
+
+def res_short_cat(cat):
+    """필터 목록에 쓰는 짧은 이름. 시트에 설명문이 들어간 칸이 있다."""
+    head = re.split(r"\s+[—–-]\s+", cat)[0].strip()
+    return head[:12] + "…" if len(head) > 12 else (head or "미분류")
+
+
+def _res_rows_html(pairs):
+    return "".join(
+        f'<div class="rz-row"><dt>{html.escape(k)}</dt><dd>{v}</dd></div>'
+        for k, v in pairs if v)
+
+
+def _res_card(rec):
+    rid = rec.get("ID", "")
+    status = rec.get("상태", "")
+    skey = RES_STATUS_KEY.get(status, "none")
+    cat = rec.get("카테고리", "")
+    prio = rec.get("우선순위", "")
+    region = rec.get("지역", "")
+    item = rec.get("예약항목", "")
+    cur = rec.get("통화", "")
+
+    # ── 날짜 칩. 여행 43일 안이면 그 날 데일리 카드로 건너뛴다 (축 사이 링크,
+    #    사본이 아니다). 여행 시작 전 준비 항목과 날짜 미정 건은 링크가 없다.
+    iso = rec.get("날짜", "")[:10]
+    try:
+        d = date.fromisoformat(iso)
+    except ValueError:
+        d = None
+    if d:
+        n = day_no(d)
+        label = f"{d.month}/{d.day} {WEEKDAY_KO[d.weekday()]}"
+        if 1 <= n <= 43:
+            chip = (f'<a class="rz-day" href="../daily/day-{n:02d}.html">'
+                    f'<b>{label}</b><span>Day {n}</span>'
+                    f'<span class="lr-go" aria-hidden="true">›</span></a>')
+        else:
+            chip = f'<span class="rz-day rz-day-flat"><b>{label}</b><span>출발 전</span></span>'
+        sort_date = d.isoformat()
+    else:
+        chip = '<span class="rz-day rz-day-flat"><b>날짜 미정</b></span>'
+        sort_date = "9999-12-31"
+
+    # ── 앞면. 확정된 건은 "무엇으로 확정됐나"(예약번호·금액), 미확정 건은
+    #    "언제까지 해야 하나"(예약목표일)가 그 자리에 온다.
+    front = [("시간", html.escape(rec.get("시간", ""))),
+             ("사업자", html.escape(rec.get("사업자", "")))]
+    if status == "예약완료":
+        front.append(("예약번호", html.escape(rec.get("예약번호", ""))))
+        front.append(("총액", html.escape(res_amount(rec.get("총액", ""), cur))))
+    else:
+        goal = rec.get("예약목표일", "")
+        if goal:
+            front.append(("예약목표일",
+                          f'<span class="rz-goal" data-goal="{html.escape(goal)}">'
+                          f'{html.escape(goal)}</span>'))
+        front.append(("예약번호", html.escape(rec.get("예약번호", ""))))
+
+    detail = [("총액" if status != "예약완료" else "결제액",
+               html.escape(res_amount(
+                   rec.get("총액" if status != "예약완료" else "결제액", ""), cur))),
+              ("잔액", html.escape(res_amount(rec.get("잔액", ""), cur)))]
+    if status == "예약완료":
+        detail.insert(0, ("예약목표일", html.escape(rec.get("예약목표일", ""))))
+    detail += [(k, html.escape(rec.get(k, ""))) for k in RES_DETAIL_FIELDS]
+    url = rec.get("소스 URL", "")
+    if url.startswith("http"):
+        detail.append(("소스", f'<a class="rz-src" href="{html.escape(url)}" '
+                               f'rel="noopener" target="_blank">'
+                               f'<b class="ic ic-link" aria-hidden="true"></b>'
+                               f'공식 페이지 열기</a>'))
+    detail_html = _res_rows_html(detail)
+
+    haystack = " ".join(x for x in (rid, cat, region, item, rec.get("사업자", ""),
+                                    rec.get("예약번호", ""), rec.get("주소/역", ""),
+                                    rec.get("비고", ""), status, iso) if x).lower()
+    return f'''<article class="rz-card rz-{skey}" id="{html.escape(rid)}"
+ data-status="{html.escape(status)}" data-cat="{html.escape(cat)}"
+ data-region="{html.escape(region)}" data-prio="{html.escape(prio)}"
+ data-date="{sort_date}" data-sort-status="{RES_STATUS_ORDER.index(status) if status in RES_STATUS_ORDER else 9}"
+ data-q="{html.escape(haystack)}">
+<div class="rz-head">{chip}<span class="rz-tags">\
+{f'<span class="rz-badge rz-{RES_PRIO_KEY.get(prio, "p2")}">{html.escape(prio)}</span>' if prio else ''}\
+<span class="rz-badge rz-b-{skey}">{html.escape(status)}</span></span></div>
+<h3 class="rz-title"><b class="ic ic-{RES_CAT_ICON.get(cat, "note")}" aria-hidden="true"></b>\
+<span>{html.escape(item)}</span></h3>
+<p class="rz-where">{html.escape(region)}{f' · {html.escape(res_short_cat(cat))}' if cat else ''}</p>
+<dl class="rz-facts">{_res_rows_html(front)}</dl>
+{f'<details class="rz-more"><summary>남은 항목 모두 보기</summary><dl class="rz-facts">{detail_html}</dl></details>' if detail_html else ''}
+</article>'''
+
+
+def reservations_body(ws, label, tabs_html, caption_html):
+    """예약 현황 화면 전체. 표 대신 카드 + 상태 필터 + 즉시 검색."""
+    recs = res_records(ws)
+    counts = {s: sum(1 for r in recs if r.get("상태") == s) for s in RES_STATUS_ORDER}
+    total = len(recs)
+    open_n = sum(counts[s] for s in RES_OPEN_STATES)
+
+    bar = "".join(
+        f'<span class="rz-seg rz-b-{RES_STATUS_KEY[s]}" style="flex:{counts[s]}"></span>'
+        for s in RES_STATUS_ORDER if counts[s])
+    bar_label = " · ".join(f"{s} {counts[s]}건" for s in RES_STATUS_ORDER if counts[s])
+
+    chips = [f'<button type="button" class="rz-chip is-on" data-status="">'
+             f'전체<b>{total}</b></button>',
+             f'<button type="button" class="rz-chip rz-chip-open" data-status="__open">'
+             f'미확정<b>{open_n}</b></button>']
+    chips += [f'<button type="button" class="rz-chip rz-chip-{RES_STATUS_KEY[s]}" '
+              f'data-status="{html.escape(s)}">{html.escape(s)}<b>{counts[s]}</b></button>'
+              for s in RES_STATUS_ORDER if counts[s]]
+
+    def options(field, first):
+        vals = sorted({r.get(field, "") for r in recs if r.get(field)})
+        opts = [f'<option value="">{first}</option>']
+        opts += [f'<option value="{html.escape(v)}">{html.escape(res_short_cat(v))}</option>'
+                 for v in vals]
+        return "".join(opts)
+
+    cards = "".join(_res_card(r) for r in sorted(
+        recs, key=lambda r: (RES_STATUS_ORDER.index(r.get("상태", ""))
+                             if r.get("상태") in RES_STATUS_ORDER else 9,
+                             r.get("날짜", "9999") or "9999")))
+
+    # 도구 막대는 hidden 으로 나가고 rz.js 가 연다. 스크립트가 죽어도 28장의
+    # 카드는 그대로 읽힌다 — 필터가 없을 뿐이지 화면이 비지 않는다.
+    return f'''<h1>{label}</h1>{tabs_html}{caption_html}
+<section class="rz-sum" aria-label="예약 상태 요약">
+  <p class="rz-sum-line">전체 <b>{total}건</b> 중 아직 확정 전 <b class="rz-open-n">{open_n}건</b></p>
+  <div class="rz-bar" role="img" aria-label="{html.escape(bar_label)}">{bar}</div>
+</section>
+<section class="rz-tools" role="search" aria-label="예약 검색과 필터" hidden>
+  <div class="rz-search">
+    <b class="ic ic-search" aria-hidden="true"></b>
+    <input type="search" id="rz-q" placeholder="항목 · 사업자 · 지역 · 예약번호" autocomplete="off"
+           aria-label="예약 검색">
+  </div>
+  <div class="rz-chips" role="group" aria-label="상태로 거르기">{"".join(chips)}</div>
+  <div class="rz-selects">
+    <label class="rz-sel"><span>분류</span><select id="rz-cat">{options("카테고리", "전체 분류")}</select></label>
+    <label class="rz-sel"><span>지역</span><select id="rz-region">{options("지역", "전체 지역")}</select></label>
+    <label class="rz-sel"><span>정렬</span><select id="rz-sort">
+      <option value="status">할 일 먼저</option>
+      <option value="date">날짜순</option>
+      <option value="prio">우선순위순</option>
+    </select></label>
+  </div>
+  <p class="rz-count" role="status" aria-live="polite"></p>
+</section>
+<div class="rz-list">{cards}</div>
+<p class="rz-empty" hidden>조건에 맞는 예약이 없습니다.
+  <button type="button" class="rz-reset">필터 초기화</button></p>
+<p class="note">금액·예약번호는 시트에 입력된 값 그대로입니다. 상태가 <b>예약완료</b>가
+아닌 항목은 아직 잠기지 않았습니다 — 확정으로 보고 움직이지 마세요.</p>'''
+
+
 def build_tracker():
     out_dir = SITE / "tracker"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -3769,13 +3993,21 @@ def build_tracker():
         if sheet_name not in wb.sheetnames:
             print(f"  경고: 시트 없음 — {sheet_name}")
             continue
-        table = sheet_to_table(wb[sheet_name])
-        visual = ""  # 리스크 매트릭스 도식은 2026-08-09 사용자 지시로 제거
-        body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{table}"
+        # 예약 현황만 카드 화면이다. 22개 열을 가로로 미는 표로는 현장에서
+        # 한 건도 읽히지 않는다. 나머지 시트는 열이 적어 표가 그대로 낫다.
+        if sheet_name == "Reservations":
+            body = reservations_body(wb[sheet_name], label, tabs_of(slug),
+                                     sheet_caption_html(wb[sheet_name]))
+            scripts = '<script src="../assets/rz.js" defer></script>'
+        else:
+            visual = ""  # 리스크 매트릭스 도식은 2026-08-09 사용자 지시로 제거
+            body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{sheet_to_table(wb[sheet_name])}"
+            scripts = ""
         (out_dir / f"{slug}.html").write_text(
             page(label, body, rel="..", topbar_title=label,
                  back=crumbs_for(("트래커", "tracker/index.html"), (label, None)),
-                 meta_line="TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준"),
+                 meta_line="TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준",
+                 extra_scripts=scripts),
             encoding="utf-8")
         cards.append(f'<a class="card card-alt" href="{slug}.html">'
                      f'<span class="card-title">{label}</span>'
@@ -5292,6 +5524,7 @@ def main():
         (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
         encoding="utf-8")
     shutil.copy(ASSETS / "nav.js", SITE / "assets" / "nav.js")
+    shutil.copy(ASSETS / "rz.js", SITE / "assets" / "rz.js")
     shutil.copy(ASSETS / "pwa.js", SITE / "assets" / "pwa.js")
     shutil.copytree(PWA_ASSETS, SITE / "assets" / "pwa", dirs_exist_ok=True)
     shutil.copy(ASSETS / "google-map-loader.js", SITE / "assets" / "google-map-loader.js")

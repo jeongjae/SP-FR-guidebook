@@ -2237,3 +2237,295 @@ footer {
   min-width: 44px; min-height: 44px;
 }
 .tb-back .ic { width: 22px; height: 22px; }
+
+/* ================= 예약 현황 (rz-) =================
+   22개 열짜리 시트를 가로 스크롤 표로 뿌리면 390px 에서 한 행도 못 읽는다.
+   행을 카드로 세우고 상태를 1축으로 올린다. 색은 상태 신호로만 쓴다 —
+   완료는 steady, 재확인·미조사는 caution, 대기는 rest, 취소는 muted 다.
+
+   배지는 채움이 아니라 테두리다. 신호색을 면으로 깔면 그 위 글자가
+   본문 기준 7:1 을 못 넘긴다 (틴트 7% 에서도 6.9:1). 흰 카드 위에서
+   신호색을 글자색으로 쓰면 라이트 7.6:1 · 다크 8.4:1 로 둘 다 통과한다. */
+
+.rz-sum { margin: var(--s4) 0 var(--s3); }
+.rz-sum-line { margin: 0 0 var(--s2); color: var(--text); }
+.rz-sum-line b { font-weight: 800; }
+.rz-open-n { color: var(--sig-caution-ink); }
+.rz-bar {
+  display: flex;
+  height: 10px;
+  gap: 2px;
+  border-radius: var(--r-chip);
+  overflow: hidden;
+  background: var(--surface-sunk);
+}
+.rz-seg { display: block; min-width: 4px; }
+.rz-seg.rz-b-done   { background: var(--sig-steady); }
+.rz-seg.rz-b-recheck{ background: var(--sig-caution); }
+.rz-seg.rz-b-wait   { background: var(--sig-rest); }
+.rz-seg.rz-b-none   { background: var(--muted); }
+.rz-seg.rz-b-cancel { background: var(--border); }
+
+/* ---- 도구 막대. 상단바 아래에 붙어 따라온다 — 28장을 스크롤해 내려가도
+   상태 필터가 늘 손 닿는 곳에 있다. ---- */
+.rz-tools {
+  position: sticky;
+  top: calc(var(--topbar-h) + env(safe-area-inset-top));
+  z-index: 120;
+  display: grid;
+  gap: var(--s2);
+  margin: 0 calc(-1 * var(--s4)) var(--s3);
+  padding: var(--s3) var(--s4);
+  background: var(--bar-bg);
+  -webkit-backdrop-filter: var(--bar-blur);
+  backdrop-filter: var(--bar-blur);
+  box-shadow: inset 0 -0.5px 0 var(--separator);
+}
+.rz-search {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  min-height: var(--tap);
+  padding: 0 var(--s3);
+  border: 1px solid var(--border);
+  border-radius: var(--r-ctrl);
+  background: var(--surface);
+}
+.rz-search .ic { width: 18px; height: 18px; color: var(--muted); flex: none; }
+.rz-search input {
+  flex: 1;
+  min-width: 0;
+  min-height: calc(var(--tap) - 2px);
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: var(--t-callout);
+}
+.rz-search input:focus { outline: none; }
+.rz-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+
+.rz-chips {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 0 calc(-1 * var(--s4));
+  padding: 2px var(--s4);
+}
+.rz-chips::-webkit-scrollbar { display: none; }
+.rz-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  min-height: var(--tap);
+  padding: 0 var(--s3);
+  border: 1px solid var(--border);
+  border-radius: var(--r-chip);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--t-subhead);
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.rz-chip b {
+  font-size: var(--t-cap1);
+  font-weight: 800;
+  padding: 1px 7px;
+  border-radius: var(--r-chip);
+  background: var(--surface-sunk);
+  color: var(--text-2);
+}
+.rz-chip.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.rz-chip.is-on b { background: rgba(255, 255, 255, 0.22); color: var(--accent-ink); }
+.rz-chip-open { border-color: var(--sig-caution); color: var(--sig-caution-ink); }
+
+/* 그리드 아이템의 기본 min-width:auto 는 select 의 '가장 긴 옵션' 폭을 그대로
+   최소폭으로 밀어 올린다 — 320px 에서 페이지가 통째로 69px 옆으로 밀렸다.
+   도구 막대 안의 모든 칸은 0 까지 줄어들 수 있어야 한다. */
+.rz-tools > * { min-width: 0; }
+.rz-selects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 6px;
+  min-width: 0;
+}
+.rz-sel { display: grid; gap: 2px; min-width: 0; }
+.rz-sel > span { font-size: var(--t-cap1); color: var(--muted); padding-left: 2px; }
+.rz-sel select {
+  min-height: var(--tap);
+  width: 100%;
+  max-width: 100%;
+  padding: 0 var(--s2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-ctrl);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--t-foot);
+  font-weight: 600;
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+.rz-count { margin: 0; font-size: var(--t-foot); color: var(--muted); }
+
+/* ---- 카드 ---- */
+.rz-list { display: grid; gap: var(--s3); }
+.rz-card {
+  padding: var(--s3);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: var(--r-card);
+  background: var(--surface);
+  /* --shadow-1 은 이 파일 어디에도 정의돼 있지 않다 (기존 3곳도 무효값이다).
+     여기서는 값을 직접 쓴다 — 없는 토큰에 기대지 않는다. */
+  box-shadow: 0 1px 2px rgba(15, 26, 30, 0.06);
+  scroll-margin-top: 180px;
+}
+.rz-card[hidden] { display: none; }
+.rz-done    { border-left-color: var(--sig-steady); }
+.rz-recheck { border-left-color: var(--sig-caution); }
+.rz-wait    { border-left-color: var(--sig-rest); }
+.rz-none    { border-left-color: var(--muted); }
+/* 취소 건은 바탕을 어둡게 하지 않는다 — sunk 위에서는 muted 글자가 6.5:1 로
+   떨어져 본문 기준(7:1)을 못 넘긴다. 취소 표시는 파선 테두리와 취소선이 맡는다. */
+.rz-cancel  { border-left-color: var(--border); border-style: dashed; }
+.rz-card.is-target { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+
+.rz-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+.rz-day {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--tap);
+  padding: 0 var(--s2) 0 var(--s3);
+  border-radius: var(--r-chip);
+  background: var(--surface-sunk);
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--t-foot);
+}
+.rz-day b { font-size: var(--t-callout); font-weight: 800; }
+.rz-day span { color: var(--text-2); }
+.rz-day .lr-go { color: var(--accent); font-weight: 800; }
+a.rz-day:hover { background: var(--accent-soft); }
+.rz-day-flat { background: none; padding-left: 0; }
+
+.rz-tags { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.rz-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border: 1.5px solid currentColor;
+  border-radius: var(--r-chip);
+  font-size: var(--t-cap1);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.rz-p0 { color: var(--sig-critical-ink); }
+.rz-p1 { color: var(--text-2); }
+.rz-p2 { color: var(--muted); border-style: dashed; }
+.rz-b-done    { color: var(--sig-steady); }
+.rz-b-recheck { color: var(--sig-caution-ink); border-style: dashed; }
+.rz-b-wait    { color: var(--sig-rest); }
+.rz-b-none    { color: var(--muted); border-style: dashed; }
+.rz-b-cancel  { color: var(--muted); text-decoration: line-through; }
+
+.rz-title {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  margin: var(--s3) 0 2px;
+  font-size: var(--t-title3);
+  line-height: 1.35;
+}
+.rz-title .ic { width: 22px; height: 22px; flex: none; margin-top: 2px; color: var(--text-2); }
+.rz-cancel .rz-title span { text-decoration: line-through; color: var(--text-2); }
+.rz-where { margin: 0 0 var(--s3); font-size: var(--t-foot); color: var(--muted); }
+
+.rz-facts { margin: 0; display: grid; gap: 1px; }
+.rz-row {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: var(--s2);
+  padding: 7px 0;
+  box-shadow: inset 0 0.5px 0 var(--separator);
+}
+.rz-row dt { color: var(--muted); font-size: var(--t-foot); }
+.rz-row dd { margin: 0; font-size: var(--t-subhead); overflow-wrap: anywhere; }
+.rz-goal b {
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: var(--r-chip);
+  border: 1px solid currentColor;
+  font-size: var(--t-cap1);
+  color: var(--text-2);
+}
+.rz-goal.is-late { color: var(--sig-critical-ink); font-weight: 700; }
+.rz-goal.is-late b { color: var(--sig-critical-ink); }
+
+.rz-more { margin-top: var(--s2); }
+.rz-more > summary {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+  color: var(--accent);
+  font-size: var(--t-foot);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+.rz-more > summary::-webkit-details-marker { display: none; }
+.rz-more > summary::after { content: "▾"; margin-left: 6px; }
+.rz-more[open] > summary::after { content: "▴"; }
+.rz-src {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--tap);
+  color: var(--accent);
+  font-weight: 700;
+}
+.rz-src .ic { width: 16px; height: 16px; }
+
+.rz-empty {
+  padding: var(--s6) var(--s4);
+  border: 1px dashed var(--border);
+  border-radius: var(--r-card);
+  text-align: center;
+  color: var(--text-2);
+}
+.rz-reset {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  margin-left: var(--s2);
+  padding: 0 var(--s4);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-ctrl);
+  background: var(--surface);
+  color: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 360px) {
+  .rz-row { grid-template-columns: 1fr; gap: 0; }
+  .rz-row dt { font-size: var(--t-cap1); }
+}

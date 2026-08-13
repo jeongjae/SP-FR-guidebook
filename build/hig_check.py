@@ -59,7 +59,7 @@ SAMPLE = [
     "topics/index.html", "topics/food.html", "topics/reverify.html",
     "places/index.html", "places/palais-des-papes.html",
     "maps/index.html", "maps/offline.html",
-    "tracker/index.html", "tracker/dashboard.html",
+    "tracker/index.html", "tracker/dashboard.html", "tracker/reservations.html",
 ]
 
 # 본문 안의 문장 링크는 컨트롤이 아니다. 크롬·카드·칩만 44pt 를 요구한다.
@@ -69,6 +69,7 @@ CONTROL_SEL = (
     ".daily-item, .day-actions a, .day-details > summary, .related a, "
     ".pager a, #back-top, #sheet-close"
     ", .pwa-actions button, .pwa-update button"
+    ", .rz-chip, .rz-day, .rz-more > summary, .rz-sel select, .rz-reset, .rz-src"
 )
 
 JS = r"""
