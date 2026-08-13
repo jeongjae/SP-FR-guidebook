@@ -2427,9 +2427,9 @@
       "checkOut": "2026-09-09",
       "nights": 5,
       "status": "재확인",
-      "area": "Palais ALZIRA · 12 Rue Verdi (Nice 06000)",
+      "area": "Airbnb · Palais ALZIRA · 12 Rue Verdi (Nice 06000)",
       "address": "12 Rue Verdi, Palais ALZIRA, 06000 Nice, France",
-      "bookingNumber": null,
+      "bookingNumber": "HMJ3HX8QAY",
       "sourceUrl": null
     },
     {
@@ -2829,6 +2829,30 @@
       "priority": "P2",
       "targetDate": "2026-08-20",
       "sourceUrl": null
+    },
+    {
+      "id": "reservation:r029",
+      "regionId": null,
+      "scheduledDate": "2026-08-29",
+      "dayId": "day:001",
+      "category": "항공",
+      "name": "인천→바르셀로나 국제선 OZ511",
+      "status": "예약완료",
+      "priority": "P0",
+      "targetDate": "2026-08-10",
+      "sourceUrl": "https://flyasiana.com"
+    },
+    {
+      "id": "reservation:r030",
+      "regionId": null,
+      "scheduledDate": "2026-10-09",
+      "dayId": "day:042",
+      "category": "항공",
+      "name": "파리→인천 국제선 OZ502",
+      "status": "재확인",
+      "priority": "P0",
+      "targetDate": "2026-08-13",
+      "sourceUrl": "https://flyasiana.com"
     }
   ],
   "transports": [
