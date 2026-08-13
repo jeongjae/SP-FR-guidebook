@@ -4,7 +4,8 @@
     "start": "2026-08-29",
     "end": "2026-10-10",
     "days": 43,
-    "nights": 42
+    "nights": 42,
+    "inflightNights": 1
   },
   "stays": [
     {"key": "barcelona", "base": "Barcelona", "checkin": "2026-08-29", "checkout": "2026-09-01", "nights": 3},
@@ -14,6 +15,6 @@
     {"key": "luberon", "base": "Luberon", "checkin": "2026-09-13", "checkout": "2026-09-16", "nights": 3},
     {"key": "avignon", "base": "Avignon", "checkin": "2026-09-16", "checkout": "2026-09-20", "nights": 4},
     {"key": "lyon", "base": "Lyon", "checkin": "2026-09-20", "checkout": "2026-09-24", "nights": 4},
-    {"key": "paris", "base": "Paris", "checkin": "2026-09-24", "checkout": "2026-10-10", "nights": 16}
+    {"key": "paris", "base": "Paris", "checkin": "2026-09-24", "checkout": "2026-10-09", "nights": 15}
   ]
 }

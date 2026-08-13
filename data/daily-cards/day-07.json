@@ -12,10 +12,10 @@
   "totalDistance": "차량 약 137km + 항공",
   "fatigue": "4–5",
   "hotel": {
-    "name": "AMMI Masséna (후보)",
-    "lat": 43.6978,
-    "lng": 7.26836,
-    "status": "candidate"
+    "name": "Palais ALZIRA · 12 Rue Verdi",
+    "lat": 43.6996749,
+    "lng": 7.2608829,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -25,8 +25,8 @@
       "end": null,
       "name": "Bàscara 체크아웃",
       "category": "hotel",
-      "lat": 42.164,
-      "lng": 2.914,
+      "lat": 42.16036,
+      "lng": 2.90964,
       "summary": "반납 14:00 기준 출발 역산 — 주유·차량사진 준비",
       "menu": null,
       "reservation": "체크아웃 조건 재확인",
@@ -65,13 +65,13 @@
       "order": 4,
       "start": null,
       "end": null,
-      "name": "Nice 체크인",
+      "name": "Nice 체크인 — Palais ALZIRA",
       "category": "hotel",
-      "lat": 43.6978,
-      "lng": 7.26836,
-      "summary": "16:55 NCE 도착 → 택시/트램 — 체크인만 (P0 이동일)",
+      "lat": 43.6996749,
+      "lng": 7.2608829,
+      "summary": "16:55 NCE 도착 → 택시/트램. 체크인 15:00부터 가능 — 체크인만 (P0 이동일)",
       "menu": null,
-      "reservation": "Nice 숙소 후보 확정 필요",
+      "reservation": "예약완료 — 12 Rue Verdi, Palais ALZIRA (체크인 15:00)",
       "optional": false
     },
     {
@@ -95,8 +95,8 @@
       "end": null,
       "name": "숙소 귀환",
       "category": "hotel",
-      "lat": 43.6978,
-      "lng": 7.26836,
+      "lat": 43.6996749,
+      "lng": 7.2608829,
       "summary": "이동일 저녁 — 일찍 마무리하고 다음 날 시장 아침",
       "menu": null,
       "reservation": null,
@@ -175,8 +175,8 @@
   },
   "needsReview": [
     "Bàscara 출발 시각 확정 — 반납 14:00·주유 기준 역산",
-    "Nice 숙소 후보(AMMI Masséna) 승인",
-    "Bàscara 체크아웃 조건 확인"
+    "Bàscara 체크아웃 조건 확인",
+    "Nice 숙소 확정 (2026-08-13): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",

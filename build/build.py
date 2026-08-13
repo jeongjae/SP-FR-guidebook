@@ -1799,7 +1799,8 @@ ITINERARY_REGION_SLUGS = {
     "Avignon": "avignon",
     "Lyon": "lyon",
     "Paris": "paris",
-    "Paris→Seoul": "paris",
+    "Paris→CDG": "paris",   # Day 42 출국일 — 여전히 파리 허브로 보낸다
+    "기내→Seoul": "paris",  # Day 43 기내박·인천 도착 — 파리에서 떠난 비행
 }
 
 
@@ -2695,8 +2696,8 @@ def find_daily_images():
     return images
 
 
-# ⚠ 세 플래그는 뜻이 다르다. 뭉치면 Day 43(귀국 항공)에 경고가 안 뜬다.
-P0_CONNECTION = [4, 7, 12, 23, 27, 43]        # 놓치면 대안이 없는 교통 연결
+# ⚠ 세 플래그는 뜻이 다르다. 뭉치면 Day 42(출국 항공)에 경고가 안 뜬다.
+P0_CONNECTION = [4, 7, 12, 23, 27, 42]        # 놓치면 대안이 없는 교통 연결
 MAP_TRANSITION = [4, 7, 12, 16, 19, 23, 27]   # 실행지도 2장이 필요한 날
 DUAL_CHAPTER = [12, 16, 19, 23, 27]           # 양쪽 챕터에 원고가 있는 날
 
@@ -3372,7 +3373,8 @@ def build_daily():
                  extra_head=daily_map_head, extra_scripts=daily_map_scripts),
             encoding="utf-8")
 
-        index_items.append((c["region"] if c else "이동",
+        # Day 43 은 어느 지역에도 없다 — 기내에서 자고 인천에 내린다.
+        index_items.append((c["region"] if c else "귀국",
             f'<a class="daily-item{" is-p0" if n in P0_CONNECTION else ""}" href="day-{n:02d}.html">'
             f'<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
             f'<span class="di-region">{html.escape(row["base"])}</span>'
@@ -4739,8 +4741,8 @@ def check_phase4_daily_guards():
         if '<figure class="daily-card">' in text.split('<details class="day-details day-card-archive"', 1)[0]:
             problems.append(f"Day {n}: 카드 이미지가 첫 화면에 노출됨")
     index = (SITE / "daily" / "index.html").read_text(encoding="utf-8")
-    if index.count('class="daily-region"') != 8:
-        problems.append("일정 목록이 8개 지역 구간으로 묶이지 않음")
+    if index.count('class="daily-region"') != 9:
+        problems.append("일정 목록이 8개 지역 + 귀국 구간으로 묶이지 않음")
     if index.count('class="daily-item') != 43:
         problems.append("일정 목록이 43일이 아님")
     if index.count('class="di-core"') != 43:
@@ -4750,7 +4752,7 @@ def check_phase4_daily_guards():
         for p in problems[:30]:
             print("  " + p)
         sys.exit(1)
-    print("Phase 4 데일리 템플릿 가드: 43일 공통 순서 · 8지역 목록 · 카드 접기 이상 없음")
+    print("Phase 4 데일리 템플릿 가드: 43일 공통 순서 · 8지역+귀국 목록 · 카드 접기 이상 없음")
 
 
 def check_phase5_execution_guards():
@@ -5016,14 +5018,13 @@ def check_phase8_operations_guards():
         if actual != (checkin, checkout, nights):
             problems.append(f"{base}: 숙박배분 {actual} (기대 {(checkin, checkout, nights)})")
         if row.get("상태") == "예약완료":
-            # 개인 숙소는 안전한 비공개 안내 문구만 요구하고 공개 URL은 금지한다.
-            required = (("주소",) if base == "Bàscara"
+            # Bàscara 비공개 예외는 폐기됐다 (2026-08-13 사용자 지시, D-11 확장).
+            # Airbnb 라 공개 소스 URL 이 없을 수 있어 URL 만 면제한다.
+            required = (("실제총액", "예약번호", "주소") if base == "Bàscara"
                         else ("실제총액", "예약번호", "주소", "소스 URL"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{base}: 숙소 예약완료인데 필수값 누락 — {", ".join(absent)}')
-            if base == "Bàscara" and (row.get("소스 URL") or "개인 보관본" not in str(row.get("주소"))):
-                problems.append("Bàscara: 공개 트래커 개인정보 비공개 규칙 위반")
 
     locks = records("Phase8 Lock Status")
     allowed_lock_states = {"LOCKED", "PARTIAL", "BLOCKED"}

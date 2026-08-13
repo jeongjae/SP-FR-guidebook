@@ -25,12 +25,12 @@
 | 4 | 9/1 화 | Bàscara | Sants 렌터카→Sitges→Bàscara | 08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능) | 인수 60분·Sitges 출차 30분 | Sitges 점심 | 인수·체크아웃 순서·짐 노출 | 해변산책·실내 1곳 | Sitges 1곳만 보고 Bàscara 직행 | 렌터카 완료(Hertz L671E2E0288)·Sitges·Bàscara 체크인 조건 재확인 |
 | 5 | 9/2 수 | Bàscara | Collioure·Cadaqués | 07:45 출발 | 오전 10시 이전 Collioure 주차 | Collioure 09:00–12:15·Cadaqués 14:45–17:30 | 해안 쪽 우회·주차·지도 재확인 | Cadaqués 해안 산책·구시가지 | 17:30 Bàscara 출발 | Portlligat·Dalí House 예약 미확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu·Pals·Peratallada | 08:20 출발 | Tossa 주차·Vila Vella 접근 재확인 | Tossa 09:45–12:30·Sant Feliu 점심 | GI-682·운전피로 | Pals 압축·Peratallada 유지 | 17:40 Bàscara 출발 | 지연 시 Pals 삭제 |
-| 7 | 9/4 금 | Nice | Bàscara 체크아웃→BCN 반납 14:00→VY1521 15:30→NCE 16:55 | 반납 14:00 기준 역산 | 주유·반납·수속 완충 | 이동 중 간단식 | 반납 지연·수속 혼잡 | Nice 적응산책 | NCE 도착 후 체크인만 | Bàscara 체크아웃 조건·Nice 숙소 |
+| 7 | 9/4 금 | Nice | Bàscara 체크아웃→BCN 반납 14:00→VY1521 15:30→NCE 16:55 | 반납 14:00 기준 역산 | 주유·반납·수속 완충 | 이동 중 간단식 | 반납 지연·수속 혼잡 | Nice 적응산책 | NCE 도착 후 체크인만 (12 Rue Verdi, 15:00부터) | Bàscara 체크아웃 조건 |
 | 8 | 9/5 토 | Nice | Cours Saleya·Vieux Nice·Castle Hill | 08:30 시장 도착 | Castle Hill 전후 45분 휴식 | 시장 또는 구시가지 | 계단·더위·토요일 혼잡 | Port·해변 | 구시가지 실내·카페 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | 08:30 Nice 출발 권장 | TER 20분 여유 | Forville 인근 점심 | 일요일 열차·해안혼잡 | 쇼핑·해변연장 | Cannes 핵심만 후 조기귀환 | TER |
 | 10 | 9/7 월 | Nice | Monaco 당일치기 | 08:30 출발 권장 | 역·언덕 이동 30분 | Monaco-Ville 또는 Port | 월요일 운영·경사·혼잡 | 정원/Larvotto 중 하나 | 구시가지·대성당 중심 | TER |
 | 11 | 9/8 화 | Nice | 회복·시장·사진미술관 선택 | 느린 시작 | 세탁·렌터카 준비 2시간 보호 | Libération 시장·숙소식 | 화요일 휴관·회복일 과밀화 | 사진미술관·추가마을 | 숙소생활·카페 | 사진미술관·렌터카 준비 |
-| 12 | 9/9 수 | Aix | Nice역 09:00 인수→Saint-Paul→Grasse→Aix | 09:00 인수 기준 | 인수 수속 30–60분 | Grasse 점심 | 인수지연·체크인·주차 | Grasse 실내→Saint-Paul 체류 축소 | Grasse 실내 후 Aix 조기도착 | 렌터카·Aix 숙소 |
+| 12 | 9/9 수 | Aix | Nice 체크아웃 08:45→Nice역 09:00 인수→Saint-Paul→Grasse→Aix | 08:00 기상·09:00 인수 기준 | 인수 수속 30–60분 | Grasse 점심 | 인수지연·체크인·주차 | Grasse 실내→Saint-Paul 체류 축소 | Grasse 실내 후 Aix 조기도착 | 렌터카·Aix 숙소 |
 | 13 | 9/10 목 | Aix | 목요시장·Granet | 08:00 시장 | 시장 후 60분 휴식 | 시장점심 | 시장혼잡·보행 | Mazarin·성당 | Granet·카페 중심 | Granet |
 | 14 | 9/11 금 | Aix | Marseille 대중교통 당일치기 | L50 시각 기준 역산 | 버스 20분 전·점심과 카페 90분 | Vieux-Port/Le Panier 점심 | 혼잡·소매치기·Mucem 화요일 휴관 변수 없음 | Notre-Dame de la Garde | Mucem·Fort만 또는 Aix 생활일 | L50·Mucem 운영 |
 | 15 | 9/12 토 | Aix | 시장·Cézanne·스케치 | 08:30 시장 | Atelier 전 30분 | 시장점심 | 주말혼잡·개인일정 충돌 | 러닝·쇼핑 | 실내 드로잉·카페 | Atelier·수영 |
@@ -59,9 +59,9 @@
 | 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 기상 | 완전 회복 | 브런치·숙소식 | 보상심리로 일정 추가 | 공원 산책 | 숙소만 | 없음 |
 | 39 | 10/6 화 | Paris | Canal Saint-Martin·Belleville | 08:30 가벼운 운동 | 저녁 무예약 | 동부 파리 점심 | 언덕·보행 | Belleville 일부 | 숙소 조기 귀환 | 없음 |
 | 40 | 10/7 수 | Paris | Fête des Vendanges de Montmartre | 09:00 프로그램 확인 | 군중이 커지기 전 종료 | 축제권 점심 | 축제 혼잡·경사 | 부스·프로그램 축소 | 외관 동선만 | 포도밭 내부표 선택 |
-| 41 | 10/8 목 | Paris | Trocadéro·Chaillot 오후·일몰 점등 조망 | 늦은 아침 | 축제 다음 날 — 체력 우선 | 가벼운 점심·이른 저녁 | 야간 혼잡·소매치기 | 점등 조망 | 전망·카페만 | 없음 |
-| 42 | 10/9 금 | Paris | 짐 70% 포장·송별 저녁 (상향) | 낮 포장 완료 | 저녁은 과음 금지 | 숙소 점심·송별 저녁 | 마지막 날 과밀 | 동네산책 | 숙소 송별식 | 송별 저녁 장소·예약 |
-| 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·19:10 출국 | 호텔 기준 14:00 전후 출발 권장 | 공항 3시간 전 도착 | 도심 또는 공항 간단식 | 교통장애·수하물·체크아웃 | 도심 추가관광 전부 | 숙소권 짧은 산책만 | 항공·공항이동 |
+| 41 | 10/8 목 | Paris | Trocadéro·Chaillot·점등 조망·송별 저녁 | 늦은 아침 | 오전에 짐 절반 포장 | 가벼운 점심·저녁은 송별식 | 늦은 귀가·다음 날 출국 | 송별 저녁 상향분 | 숙소권 송별식 | 송별 저녁 장소·예약 |
+| 42 | 10/9 금 | Paris→CDG | 체크아웃·CDG·OZ502 19:10 출국 | 14:00 이전 공항 출발 | 국제선 3시간 전 도착·détaxe 줄 | 숙소권 가벼운 점심 | 교통장애·수하물·체크아웃 | 도심 추가 일정 전부 | 숙소권 짧은 산책만 | 공항 이동수단 |
+| 43 | 10/10 토 | 기내→Seoul | 기내박·인천 14:10 도착 | 기내 취침 | 도착 후 입국·수하물 60–90분 | 기내식 | 시차·수하물 | 없음 | 없음 | 없음 |
 
 ## 3. 위험도 분류
 
@@ -72,7 +72,7 @@
 - Day 12: NCE 렌터카 인수 → Aix 체크인
 - Day 23: Avignon 렌터카 반납 → TGV → Lyon
 - Day 27: Lyon → Paris 장거리 수하물 이동
-- Day 43: Paris → CDG → 국제선 출국
+- Day 42: Paris → CDG → OZ502 국제선 출국 (10/9 19:10)
 
 ### B. 날씨·운영조건 의존도가 높은 일정
 

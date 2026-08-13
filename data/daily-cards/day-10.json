@@ -12,10 +12,10 @@
   "totalDistance": "TER 왕복 + 도보 약 3km",
   "fatigue": "4",
   "hotel": {
-    "name": "AMMI Masséna (후보)",
-    "lat": 43.6978,
-    "lng": 7.26836,
-    "status": "candidate"
+    "name": "Palais ALZIRA · 12 Rue Verdi",
+    "lat": 43.6996749,
+    "lng": 7.2608829,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -95,8 +95,8 @@
       "end": null,
       "name": "Nice 귀환",
       "category": "hotel",
-      "lat": 43.6978,
-      "lng": 7.26836,
+      "lat": 43.6996749,
+      "lng": 7.2608829,
       "summary": "월요일 운영 변수 — 무리하지 않는다",
       "menu": null,
       "reservation": null,
@@ -174,7 +174,8 @@
   "needsReview": [
     "니스 챕터 헤딩(Day 11 모나코)과 정본 일정표(Day 10 모나코) 번호 불일치 — 정본 기준 적용",
     "위병 교대 시각·TER 시각표 확정",
-    "몬테카를로·항구·해양박물관 상세 원고 보완 필요"
+    "몬테카를로·항구·해양박물관 상세 원고 보완 필요",
+    "Nice 숙소 확정 (2026-08-13): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-10",

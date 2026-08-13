@@ -99,8 +99,8 @@ def main() -> None:
             missing_legs = [(a, b) for a, b in zip(stop_ids, stop_ids[1:]) if (a, b) not in legs]
             if missing_legs:
                 day_errors.append(f"missing adjacent legs: {missing_legs}")
-            # Day 43 is the departure day: it must end at the airport, not a stay.
-            if index == 43:
+            # Day 42 leaves for CDG and Day 43 lands at Incheon: neither ends at a stay.
+            if index in (42, 43):
                 if payload["stops"][-1]["category"] != "transport":
                     day_errors.append("departure day does not end at the airport")
             elif payload["stops"][-1]["category"] != "hotel":

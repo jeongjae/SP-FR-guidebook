@@ -2,139 +2,112 @@
   "schemaVersion": "1.0",
   "day": 43,
   "date": "2026-10-10",
-  "city": "Paris",
-  "title": "체크아웃과 공항 — 출국일",
+  "city": "Seoul",
+  "title": "기내와 인천 도착 — 43일의 끝",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:00",
+  "startTime": null,
   "endTime": null,
   "totalDuration": null,
-  "totalDistance": "공항 이동 약 30km",
+  "totalDistance": "비행 약 9,000km",
   "fatigue": "3",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "기내 (OZ502) — 숙소 없음",
+    "lat": 49.0068908,
+    "lng": 2.571082,
+    "status": "needs-review"
   },
   "stops": [
     {
-      "id": "morning",
+      "id": "inflight",
       "order": 1,
-      "start": "08:00",
-      "end": "10:00",
-      "name": "아침·남은 음식 정리·빵집 산책",
-      "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
-      "summary": "유리병·냉장식품 처리 — 멀리 이동하지 않음",
+      "start": "기내",
+      "end": null,
+      "name": "기내박 — 취침·수분 섭취",
+      "category": "transport",
+      "lat": 49.0068908,
+      "lng": 2.571082,
+      "summary": "전날 19:10 CDG 출발. 비행 약 12시간, 시차 +7시간",
+      "menu": "기내식",
+      "reservation": "예약완료 OZ502",
+      "optional": false
+    },
+    {
+      "id": "icn",
+      "order": 2,
+      "start": "14:10",
+      "end": null,
+      "name": "인천공항 도착 (ICN)",
+      "category": "transport",
+      "lat": 37.4601908,
+      "lng": 126.4406957,
+      "summary": "입국·수하물·세관 60–90분. 43일치 수하물 — 카트를 먼저 확보한다",
       "menu": null,
       "reservation": null,
       "optional": false
     },
     {
-      "id": "checkout",
-      "order": 2,
-      "start": "10:00",
-      "end": "13:00",
-      "name": "체크아웃·짐 인수·가벼운 점심",
-      "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
-      "summary": "숙소조건 확인, 시내 추가관광 없음 — 과식 금지",
-      "menu": null,
-      "reservation": "체크아웃 조건·짐 보관 확인",
-      "optional": false
-    },
-    {
-      "id": "cdg",
+      "id": "home",
       "order": 3,
-      "start": "14:00",
-      "end": "16:10",
-      "name": "CDG 이동·수속",
-      "category": "transport",
-      "lat": 49.0068908,
-      "lng": 2.571082,
-      "summary": "14:00 이전 출발 권장 — 국제선 3시간 전, détaxe(PABLO) 줄 완충 포함",
-      "menu": null,
-      "reservation": "공항·터미널·이동수단 확정 (pending)",
-      "optional": false
-    },
-    {
-      "id": "departure",
-      "order": 4,
-      "start": "19:10",
+      "start": null,
       "end": null,
-      "name": "인천행 출국",
+      "name": "귀가",
       "category": "transport",
-      "lat": 49.0068908,
-      "lng": 2.571082,
-      "summary": "실제 항공권 기준 재확인 — 43일 여정 종료",
+      "lat": 37.4601908,
+      "lng": 126.4406957,
+      "summary": "공항철도·리무진·픽업 중 선택 — 출발 전에 정해 둔다",
       "menu": null,
-      "reservation": "항공편 재확인",
+      "reservation": "귀가 수단 결정 (pending)",
       "optional": false
     }
   ],
   "legs": [
     {
-      "from": "morning",
-      "to": "checkout",
-      "mode": "walk",
-      "duration": "0분",
-      "distance": "숙소",
-      "line": null,
+      "from": "inflight",
+      "to": "icn",
+      "mode": "flight",
+      "duration": "약 12시간",
+      "distance": "약 9,000km",
+      "line": "OZ502 CDG→ICN",
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "checkout",
-      "to": "cdg",
-      "mode": "taxi",
-      "duration": "약 1시간 (여유 포함)",
-      "distance": "약 30km",
-      "line": "RER B 대안 — 숙소 위치별 확인",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cdg",
-      "to": "departure",
-      "mode": "walk",
-      "duration": "0분",
-      "distance": "터미널 내",
-      "line": null,
+      "from": "icn",
+      "to": "home",
+      "mode": "unconfirmed",
+      "duration": "60–90분 (입국 절차 포함)",
+      "distance": null,
+      "line": "공항철도·리무진 — 미정",
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "택시 또는 RER B (확정 필요)"
+    "OZ502 (아시아나)",
+    "인천공항 → 귀가 수단 미정"
   ],
   "food": [
-    "가벼운 점심 — 과식 금지",
     "기내식"
   ],
   "highlights": [
-    "P0 연결 — 오전에 아무것도 넣지 않는다",
-    "짐은 43일 누적 — 전날 완료",
-    "détaxe PABLO 줄 완충"
+    "14:10 인천 도착 — 43일 여정 종료",
+    "입국·수하물 60–90분",
+    "파리 일정은 전날(10/9)로 끝났다"
   ],
-  "backup": "교통장애 시 즉시 출발 — Grand Défilé·모든 공연 제외 확정",
+  "backup": "항공 지연 시 도착 후 일정만 밀린다 — 다음 날 일정 없음",
   "map": {
-    "zoom": 10,
+    "zoom": 9,
     "center": [
-      48.923,
-      2.46
+      37.46,
+      126.44
     ],
     "routeCache": null
   },
   "needsReview": [
-    "공항(CDG/Orly)·터미널·이동수단 확정",
-    "항공편 19:10 재확인",
-    "détaxe 대상 물품·서류 정리",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "귀가 수단 결정",
+    "항공권 확정 (2026-08-13 반영): OZ502 CDG 10/9 19:10 → 인천 10/10 14:10"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-17-10월10일",
-    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-43-귀국",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-43",
-    "OSM Nominatim 지오코딩 2026-08-07: CDG"
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-43"
   ]
 }
