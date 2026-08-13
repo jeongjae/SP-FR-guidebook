@@ -71,7 +71,7 @@
       "lng": 7.2608829,
       "summary": "16:55 NCE 도착 → 택시/트램. 체크인 15:00부터 가능 — 체크인만 (P0 이동일)",
       "menu": null,
-      "reservation": "예약완료 — 12 Rue Verdi, Palais ALZIRA (체크인 15:00)",
+      "reservation": "예약완료 Airbnb HMJ3HX8QAY — 12 Rue Verdi, Palais ALZIRA (체크인 15:00)",
       "optional": false
     },
     {
@@ -176,7 +176,7 @@
   "needsReview": [
     "Bàscara 출발 시각 확정 — 반납 14:00·주유 기준 역산",
     "Bàscara 체크아웃 조건 확인",
-    "Nice 숙소 확정 (2026-08-13): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
+    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",
