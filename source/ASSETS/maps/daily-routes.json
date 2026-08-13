@@ -232,7 +232,7 @@
           "placeId": "girona-stay-private",
           "order": 0,
           "plannedTime": "08:20 출발",
-          "note": "정확한 출발 위치는 개인 보관본에서 확인."
+          "note": "확정 숙소 — Plaça de l'Església, 6, 17483 Bàscara."
         },
         {
           "placeId": "tossa-parking-pelegri",
@@ -286,7 +286,7 @@
           "placeId": "girona-stay-private",
           "order": 9,
           "plannedTime": "18:20–18:40 복귀",
-          "note": "정확한 목적지는 개인 보관본에서 확인."
+          "note": "확정 숙소 — Plaça de l'Església, 6, 17483 Bàscara."
         }
       ],
       "segments": [
@@ -389,7 +389,7 @@
           "placeId": "nice-stay-candidate",
           "order": 4,
           "plannedTime": "도착 +60분 체크인",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
         }
       ],
       "segments": [
@@ -420,7 +420,7 @@
           "placeId": "nice-stay-candidate",
           "order": 0,
           "plannedTime": "09:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
         },
         {
           "placeId": "cours-saleya",
@@ -463,7 +463,7 @@
           "placeId": "nice-stay-candidate",
           "order": 0,
           "plannedTime": "08:20 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
         },
         {
           "placeId": "nice-ville",
@@ -506,7 +506,7 @@
           "placeId": "nice-stay-candidate",
           "order": 0,
           "plannedTime": "08:40 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
         },
         {
           "placeId": "nice-ville",
@@ -549,7 +549,7 @@
           "placeId": "nice-stay-candidate",
           "order": 0,
           "plannedTime": "09:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
         },
         {
           "placeId": "marche-de-la-liberation",
@@ -592,7 +592,7 @@
           "placeId": "nice-stay-candidate",
           "order": 0,
           "plannedTime": "07:00–08:00 체크아웃",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
         },
         {
           "placeId": "nice-ville",
@@ -1867,7 +1867,7 @@
     {
       "date": "2026-10-08",
       "city": "Paris",
-      "title": "Trocadéro·Chaillot 오후",
+      "title": "Trocadéro·Chaillot과 송별 저녁",
       "center": [
         48.862,
         2.288
@@ -1878,7 +1878,7 @@
         {
           "placeId": "paris-stay-candidate",
           "order": 0,
-          "plannedTime": "14:00 전후 출발",
+          "plannedTime": "오전 짐 절반 포장 · 14:00 전후 출발",
           "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
         },
         {
@@ -1890,8 +1890,8 @@
         {
           "placeId": "palais-de-chaillot",
           "order": 2,
-          "plannedTime": "20:30 선택 공연",
-          "note": "낮 방문 — 저녁은 자유(대체안 검토 중)."
+          "plannedTime": "일몰 점등 조망 후 송별 저녁",
+          "note": "낮 방문 뒤 같은 자리에서 일몰 점등 조망. 송별 저녁 장소는 숙소 확정 후 선정 — 21:30 이전 귀환."
         }
       ],
       "segments": [
@@ -1909,28 +1909,8 @@
     },
     {
       "date": "2026-10-09",
-      "city": "Paris",
-      "title": "짐 포장과 마지막 파리 저녁",
-      "center": [
-        48.85,
-        2.365
-      ],
-      "zoom": 15,
-      "defaultMode": "transit",
-      "stops": [
-        {
-          "placeId": "paris-stay-candidate",
-          "order": 0,
-          "plannedTime": "오전–오후 짐 70% 포장",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 저녁 대체안 검토 중 — 새 박물관·쇼핑권 추가 금지."
-        }
-      ],
-      "segments": []
-    },
-    {
-      "date": "2026-10-10",
-      "city": "Paris → Seoul",
-      "title": "귀국 — CDG 19:10 인천행",
+      "city": "Paris → CDG",
+      "title": "체크아웃과 CDG — OZ502 19:10 출국",
       "center": [
         48.93,
         2.45
@@ -1941,14 +1921,14 @@
         {
           "placeId": "paris-stay-candidate",
           "order": 0,
-          "plannedTime": "10:00–12:00 체크아웃",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시내 추가관광 없음."
+          "plannedTime": "10:00–11:00 체크아웃",
+          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 체크아웃 후 숙소 반경 점심 — 도심 추가 일정 없음."
         },
         {
           "placeId": "cdg-airport",
           "order": 1,
-          "plannedTime": "14:00 이전 이동 시작",
-          "note": "항공편 19:10 기준 — 실제 항공권·터미널 재확인. 교통장애·보안 여유 확보."
+          "plannedTime": "14:00 이전 이동 시작 · 19:10 출국",
+          "note": "OZ502 CDG 19:10 → 인천 10/10 14:10 (확정). 터미널·이동수단 재확인, détaxe(PABLO) 줄 완충."
         }
       ],
       "segments": [
@@ -1958,6 +1938,26 @@
           "mode": "transit"
         }
       ]
+    },
+    {
+      "date": "2026-10-10",
+      "city": "기내 → Seoul",
+      "title": "기내박과 인천 14:10 도착",
+      "center": [
+        49.0069,
+        2.5711
+      ],
+      "zoom": 11,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "cdg-airport",
+          "order": 0,
+          "plannedTime": "전날 19:10 출발",
+          "note": "파리 일정은 10/9로 끝났다. 이 날은 기내와 인천 도착뿐 — 지도에 파리 동선을 두지 않는다."
+        }
+      ],
+      "segments": []
     }
   ]
 }

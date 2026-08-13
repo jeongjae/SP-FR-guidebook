@@ -1,7 +1,7 @@
 """Structured stay-plan loader and continuity validation."""
 
 import json
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 
@@ -26,6 +26,12 @@ def validate_itinerary(payload):
         problems.append("전체 여행 일수 불일치")
     if (end - start).days != trip.get("nights"):
         problems.append("전체 여행 박수 불일치")
+    # 마지막 밤은 숙소가 아니라 기내다 — OZ502 는 10/9 저녁 CDG 를 떠나 10/10 인천에
+    # 닿는다. 이 한 박을 거점 숙박과 뭉치면 파리 체크아웃 날짜가 하루 밀린다.
+    inflight = trip.get("inflightNights", 0)
+    if not isinstance(inflight, int) or inflight < 0:
+        problems.append("기내박 수 형식 오류")
+        inflight = 0
     if not stays:
         problems.append("숙박 거점 누락")
 
@@ -52,10 +58,12 @@ def validate_itinerary(payload):
     if stays:
         if stays[0].get("checkin") != trip.get("start"):
             problems.append("첫 거점 체크인과 여행 시작일 불일치")
-        if stays[-1].get("checkout") != trip.get("end"):
+        expected_checkout = (end - timedelta(days=inflight)).isoformat()
+        if stays[-1].get("checkout") != expected_checkout:
             problems.append("마지막 거점 체크아웃과 여행 종료일 불일치")
-    if total_nights != trip.get("nights"):
-        problems.append(f"숙박 합계 {total_nights}박 (기대 {trip.get('nights')}박)")
+    if total_nights + inflight != trip.get("nights"):
+        problems.append(f"숙박 합계 {total_nights}박 + 기내 {inflight}박 "
+                        f"(기대 {trip.get('nights')}박)")
 
     if problems:
         raise ValueError("; ".join(problems))

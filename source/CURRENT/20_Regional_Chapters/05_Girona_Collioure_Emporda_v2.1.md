@@ -516,7 +516,7 @@ Day 3의 세 곳은 **서로 20~30분 거리인데 성격이 전부 다르다.**
 |---|---|
 | 여행 성격 | Bàscara 농촌 숙소를 차량 거점으로 Girona·Collioure·Empordà 연결 |
 | 숙박 | Bàscara 3박 · 예약 확정 · 2026-09-01~09-04 |
-| 확정 숙소 | Airbnb · 바스카라의 B&B · 정확 주소는 개인 보관본에서 확인 |
+| 확정 숙소 | Airbnb · 바스카라의 B&B — Plaça de l'Església, 6, 17483 Bàscara, Girona, Spain |
 | Day 1 | Sitges → Girona 축소 방문 또는 Bàscara 선체크인 |
 | Day 2 | Bàscara → Collioure → Cadaqués → Bàscara |
 | Day 3 | Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara |
@@ -595,7 +595,7 @@ Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으�
 | 체크인 | 2026-09-01 12:00 |
 | 체크아웃 | 2026-09-04 11:00 |
 | 숙박 | 3박 |
-| 주소 | 비공개 숙소 · 정확 주소는 개인 보관본에서 확인 |
+| 주소 | Plaça de l'Església, 6, 17483 Bàscara |
 | 여행자 | Jason·Julia |
 | 예약코드·가격 | HM2YPHDRW5 · €330 |
 | 결제조건·주차·조식·취소조건 | 재확인 |
@@ -1506,7 +1506,7 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 - 체크인: 2026-09-01 12:00
 - 체크아웃: 2026-09-04 11:00
 - 숙박: 3박
-- 주소: 비공개 숙소 · 정확 주소는 개인 보관본에서 확인
+- 주소: Plaça de l'Església, 6, 17483 Bàscara
 - 예약코드 HM2YPHDRW5 · €330
 - 결제조건·주차·조식·취소조건: 재확인
 

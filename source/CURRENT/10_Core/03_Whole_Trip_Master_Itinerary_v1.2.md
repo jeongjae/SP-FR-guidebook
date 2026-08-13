@@ -16,7 +16,7 @@ status: "chapter-derived master itinerary; booking values pending"
 | 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카 07:00 인수 (확정 L671E2E0288), Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | Sitges 점심·Airbnb 체크인 |
 | 5 | 9/2 수 | Bàscara | Collioure와 Cadaqués | Bàscara→Collioure→Cadaqués→Bàscara (해안 쪽 우회) | Portlligat·Dalí House는 예약 미확인으로 제외 | 4 | 주차·국경운전·지도 재확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu와 귀로 마을 | Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara | 지연·악천후 시 Pals 삭제, GI-682 회피 | 4 | 주차·해안도로·운전피로 |
-| 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN T1 렌터카 반납 14:00 (확정), **VY1521 15:30→NCE 16:55** (확정 NMGI4Q) | 도착 후 저녁은 도착 시각 기준 조정 | 4~5 | Nice 숙소 |
+| 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN T1 렌터카 반납 14:00 (확정), **VY1521 15:30→NCE 16:55** (확정 NMGI4Q), Palais ALZIRA 체크인 | 도착 후 저녁은 도착 시각 기준 조정 | 4~5 | 없음 — 항공·숙소 확정 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
 | 10 | 9/7 월 | Nice | Monaco 도시국가 | Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo | Japanese Garden 또는 Larvotto 택1 | 4 | TER |
@@ -36,7 +36,7 @@ status: "chapter-derived master itinerary; booking values pending"
 | 24 | 9/21 월 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·월요일 운영 |
 | 25 | 9/22 화 | Lyon | Croix-Rousse·Halles·공원 | Croix-Rousse 시장, canut 맥락, Halles | Parc de la Tête d’Or | 3 | 시장·식당 |
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
-| 27 | 9/24 목 | Paris | Lyon→Paris·16박 정착 | TGV, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | TGV·Paris 숙소 |
+| 27 | 9/24 목 | Paris | Lyon→Paris·15박 정착 | TGV, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | TGV·Paris 숙소 |
 | 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페 | 피로가 적으면 강변·공원 1곳 | 1~2 | 숙소 생활권 |
 | 29 | 9/26 토 | Paris | 첫 파리 생활일 | 늦은 시작·가벼운 운동, Saint-Germain, Luxembourg, Seine | 무예약 | 2 | 없음 |
 | 30 | 9/27 일 | Paris | 고전 파리 방향잡기 | Tuileries, Palais Royal, Opéra 지구, Garnier 외관/가능 시 낮 관람 | 자유저녁 | 3 | Garnier 조건부 |
@@ -50,9 +50,9 @@ status: "chapter-derived master itinerary; booking values pending"
 | 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 아침, 장보기·세탁·카페, 선택 짧은 공원 | 무예약 | 1 | 없음 |
 | 39 | 10/6 화 | Paris | 동부 파리 생활일 | Canal Saint-Martin·Belleville 또는 다른 동네 | 저녁 무예약 | 2 | 없음 |
 | 40 | 10/7 수 | Paris | Vendanges de Montmartre | 낮 축제, Clos Montmartre 외관·마켓·골목 | 이른 귀가. 추가 오페라 제외 | 3 | 포도밭 방문 감시 |
-| 41 | 10/8 목 | Paris | Trocadéro·Chaillot 오후 | 가벼운 오전, Trocadéro·Chaillot, 일몰 에펠 점등 조망 | 무예약 저녁 | 2 | 없음 |
-| 42 | 10/9 금 | Paris | 마지막 정리·송별 저녁 | 늦은 시작, 짐 70% 포장, 동네산책·카페 | 송별 저녁 상향 — 장소는 숙소 확정 후 선정 | 2 | 송별 저녁 예약 |
-| 43 | 10/10 토 | Paris→Seoul | 체크아웃·CDG·출국 | 짐·체크아웃, 안전여유를 둔 공항 이동, 19:10 출국 예정 | Grand Défilé·고정공연 제외 | 3 | 항공·공항이동 |
+| 41 | 10/8 목 | Paris | Trocadéro·Chaillot과 송별 저녁 | 오전 짐 절반 포장, Trocadéro·Chaillot, 일몰 에펠 점등 조망, 송별 저녁 | 피로 시 송별 저녁은 숙소권으로 축소 | 3 | 송별 저녁 예약 |
+| 42 | 10/9 금 | Paris→CDG | 체크아웃·CDG·출국 | 최종 포장·체크아웃, 숙소권 가벼운 점심, 14:00 이전 공항 출발, **OZ502 19:10 CDG 출발 (확정)** | 도심 추가 일정 없음 | 4 | 없음 — 항공 확정, 공항 이동수단 |
+| 43 | 10/10 토 | 기내→Seoul | 기내박·귀국 | 기내 취침, **인천 14:10 도착 (OZ502)**, 입국·수하물·귀가 | 없음 | 3 | 없음 |
 
 ## 장거리 이동일
 
@@ -64,5 +64,5 @@ status: "chapter-derived master itinerary; booking values pending"
 | 9/13 | Aix→Lourmarin→Luberon | 4박 체크아웃 후 장보기·농가 진입 |
 | 9/16 | Luberon→Avignon | 3박 농가 체크아웃 후 성벽도시 체크인·주차 안정성 우선 |
 | 9/20 | Avignon→Lyon | 주유·반납·TGV 완충시간 확보 |
-| 9/24 | Lyon→Paris | 16박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |
-| 10/10 | Paris→CDG | 출국일 도심 관광 금지, 공항 도착여유 최우선 |
+| 9/24 | Lyon→Paris | 15박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |
+| 10/9 | Paris→CDG | 출국일 도심 관광 금지, 공항 도착여유 최우선. OZ502 19:10 출발 |

@@ -33,7 +33,7 @@ status: "active"
 | Luberon | **농가 4박→3박 예약 변경**, 재고·도로·주방·세탁, 시장일, 행사 | 즉시·3일 전 |
 | Avignon | 숙소 9/16 체크인 변경, Palais 시간지정, Uzès 금요일 운영, Pont du Gard, Arles TER·JEP, 9/20 TGV 반납 | 예약 시·전날 |
 | Lyon | Annecy 직행 TER, 크루즈, 숙소·야간귀가 | 7일 전·전날 |
-| Paris | **숙소 9/24부터 16박·Lyon TGV 변경**, 특별전·공연·PSG 고정일, Versailles·Giverny, Navigo 정책 | 즉시·판매창·7일 전 |
+| Paris | **숙소 9/24~10/9 15박·Lyon TGV 변경**, 특별전·공연·PSG 고정일, Versailles·Giverny, Navigo 정책 | 즉시·판매창·7일 전 |
 
 ## 4. P2 생활정보
 

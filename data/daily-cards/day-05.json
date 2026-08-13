@@ -12,10 +12,10 @@
   "totalDistance": "약 181km · 차량 경로",
   "fatigue": "4",
   "hotel": {
-    "name": "Bàscara B&B",
-    "lat": 42.164,
-    "lng": 2.914,
-    "status": "private-approximate"
+    "name": "바스카라의 B&B",
+    "lat": 42.16036,
+    "lng": 2.90964,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -25,8 +25,8 @@
       "end": "07:45",
       "name": "Bàscara 출발",
       "category": "hotel",
-      "lat": 42.164,
-      "lng": 2.914,
+      "lat": 42.16036,
+      "lng": 2.90964,
       "summary": "차량·국경운전·해안 주차를 확인하고 출발",
       "menu": "물·운전 간식",
       "reservation": null,
@@ -81,8 +81,8 @@
       "end": "19:00",
       "name": "Bàscara 복귀",
       "category": "hotel",
-      "lat": 42.164,
-      "lng": 2.914,
+      "lat": 42.16036,
+      "lng": 2.90964,
       "summary": "17:30 출발을 지키고 숙소에서 간단한 저녁",
       "menu": "숙소식",
       "reservation": null,

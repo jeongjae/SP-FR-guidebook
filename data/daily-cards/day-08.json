@@ -12,10 +12,10 @@
   "totalDistance": "약 3km · 도보",
   "fatigue": "3",
   "hotel": {
-    "name": "AMMI Masséna (후보)",
-    "lat": 43.6978,
-    "lng": 7.26836,
-    "status": "candidate"
+    "name": "Palais ALZIRA · 12 Rue Verdi",
+    "lat": 43.6996749,
+    "lng": 7.2608829,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -81,8 +81,8 @@
       "end": null,
       "name": "숙소 귀환",
       "category": "hotel",
-      "lat": 43.6978,
-      "lng": 7.26836,
+      "lat": 43.6996749,
+      "lng": 7.2608829,
       "summary": "Castle Hill 전후 45분 휴식을 지킨다",
       "menu": null,
       "reservation": "숙소 후보 확정 필요",
@@ -148,9 +148,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Nice 숙소 후보(AMMI Masséna) 승인 및 출발점 교체",
     "시장 이후 각 일정 시각 확정",
-    "구시가지 점심 식당 미정 — 현장 선택"
+    "구시가지 점심 식당 미정 — 현장 선택",
+    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-8",
