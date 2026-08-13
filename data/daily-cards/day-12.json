@@ -6,7 +6,7 @@
   "title": "Nice역 렌터카와 Provence 진입",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "09:00",
+  "startTime": "08:00",
   "endTime": null,
   "totalDuration": null,
   "totalDistance": "약 204km · 차량 경로",
@@ -19,8 +19,22 @@
   },
   "stops": [
     {
-      "id": "nice-station-pickup",
+      "id": "nice-checkout",
       "order": 1,
+      "start": "08:00",
+      "end": "08:45",
+      "name": "Nice 체크아웃 — Palais ALZIRA",
+      "category": "hotel",
+      "lat": 43.6996749,
+      "lng": 7.2608829,
+      "summary": "체크아웃 11:00까지 가능하지만 09:00 렌터카 인수 전에 나온다 — Nice역까지 도보권",
+      "menu": null,
+      "reservation": "예약완료 — 12 Rue Verdi (체크아웃 11:00)",
+      "optional": false
+    },
+    {
+      "id": "nice-station-pickup",
+      "order": 2,
       "start": "09:00",
       "end": null,
       "name": "Nice역 렌터카 인수",
@@ -34,7 +48,7 @@
     },
     {
       "id": "saint-paul",
-      "order": 2,
+      "order": 3,
       "start": null,
       "end": null,
       "name": "Saint-Paul-de-Vence",
@@ -48,7 +62,7 @@
     },
     {
       "id": "grasse",
-      "order": 3,
+      "order": 4,
       "start": null,
       "end": null,
       "name": "Grasse 점심·향수",
@@ -62,7 +76,7 @@
     },
     {
       "id": "aix-checkin",
-      "order": 4,
+      "order": 5,
       "start": null,
       "end": null,
       "name": "Aix 체크인",
@@ -76,7 +90,7 @@
     },
     {
       "id": "rotonde",
-      "order": 5,
+      "order": 6,
       "start": null,
       "end": null,
       "name": "Rotonde·Mirabeau 방향 익히기",
@@ -90,7 +104,7 @@
     },
     {
       "id": "aix-stay-return",
-      "order": 6,
+      "order": 7,
       "start": "19:30",
       "end": null,
       "name": "숙소권 저녁",
@@ -104,6 +118,15 @@
     }
   ],
   "legs": [
+    {
+      "from": "nice-checkout",
+      "to": "nice-station-pickup",
+      "mode": "walk",
+      "duration": "약 15분",
+      "distance": "1.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
     {
       "from": "nice-station-pickup",
       "to": "saint-paul",
@@ -175,7 +198,8 @@
   "needsReview": [
     "Aix 숙소 후보(Adagio) 승인",
     "Fondation Maeght 운영·요금 재확인",
-    "각 경유지 시각은 인수 완료 시각 기준 역산"
+    "각 경유지 시각은 인수 완료 시각 기준 역산",
+    "Nice 숙소 확정 (2026-08-13): 체크아웃 9/9 11:00 — 09:00 렌터카 인수와 순서 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-12",

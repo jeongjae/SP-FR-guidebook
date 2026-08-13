@@ -920,21 +920,22 @@
     },
     {
       "id": "nice-stay-candidate",
-      "name": "AMMI Masséna",
+      "name": "Palais ALZIRA (12 Rue Verdi)",
       "city": "Nice",
       "type": "accommodation",
-      "lat": 43.6978,
-      "lng": 7.26836,
+      "lat": 43.6996749,
+      "lng": 7.2608829,
       "googlePlaceId": "",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=AMMI+Mass%C3%A9na",
-      "address": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=12+Rue+Verdi%2C+06000+Nice",
+      "address": "12 Rue Verdi, 06000 Nice, France",
       "private": false,
-      "approximate": true,
-      "optional": true,
-      "status": "candidate",
+      "approximate": false,
+      "optional": false,
+      "status": "confirmed",
       "legacySources": [
         "75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"
-      ]
+      ],
+      "coordinatesVerified": "OSM Nominatim, 2026-08-13"
     },
     {
       "id": "cours-saleya",

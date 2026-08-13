@@ -3,14 +3,14 @@
   "day": 41,
   "date": "2026-10-08",
   "city": "Paris",
-  "title": "Trocadéro와 Chaillot — 전망과 건축의 오후",
+  "title": "Trocadéro 점등 조망과 송별 저녁",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "09:30",
-  "endTime": null,
+  "endTime": "21:30",
   "totalDuration": null,
-  "totalDistance": "약 1km · 도보 + 메트로",
-  "fatigue": "2",
+  "totalDistance": "약 2km · 도보 + 메트로",
+  "fatigue": "3",
   "hotel": {
     "name": "Pepper & Paper (후보)",
     "lat": 48.83966,
@@ -22,12 +22,12 @@
       "id": "morning",
       "order": 1,
       "start": "09:30",
-      "end": "14:00",
-      "name": "늦은 아침·숙소권 카페·짐정리 일부",
+      "end": "13:00",
+      "name": "늦은 아침·숙소권 카페·짐 절반 포장",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "전날 축제 피로 확인 — 정식운동 생략 가능, 12:30 가벼운 점심",
+      "summary": "전날 축제 피로 확인 — 정식운동 생략 가능. 출국 전날에 포장을 몰지 않는다",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -36,7 +36,7 @@
       "id": "trocadero",
       "order": 2,
       "start": "14:30",
-      "end": "17:00",
+      "end": "17:30",
       "name": "Trocadéro·Chaillot 권역",
       "category": "sight",
       "lat": 48.8623703,
@@ -49,14 +49,14 @@
     {
       "id": "rest-dinner",
       "order": 3,
-      "start": "17:00",
-      "end": "19:00",
-      "name": "휴식·이른 저녁",
+      "start": "17:30",
+      "end": "일몰 무렵",
+      "name": "같은 자리에서 카페 휴식",
       "category": "food",
       "lat": 48.8628,
       "lng": 2.288,
-      "summary": "Chaillot 부근 또는 숙소 — 무예약",
-      "menu": "Chaillot 부근 또는 숙소",
+      "summary": "점등을 보려고 다시 오지 않는다 — 자리를 지킨다",
+      "menu": null,
       "reservation": null,
       "optional": false
     },
@@ -75,15 +75,29 @@
       "optional": false
     },
     {
-      "id": "paris-return",
+      "id": "farewell-dinner",
       "order": 5,
+      "start": "점등 직후",
+      "end": "21:30",
+      "name": "송별 저녁 (상향)",
+      "category": "food",
+      "lat": 48.8628,
+      "lng": 2.288,
+      "summary": "공연비 절감분으로 한 단계 상향 — 다음 날 출국, 과음 금지",
+      "menu": "Chaillot 권역 또는 숙소 도보권 — 숙소 확정 후 선정",
+      "reservation": "송별 저녁 장소 선정·예약 (숙소 확정 후)",
+      "optional": false
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
       "start": null,
       "end": null,
       "name": "숙소 귀환",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "점등 조망 후 메트로 귀환 — 야간산책 추가 없음",
+      "summary": "송별 저녁 후 메트로 귀환 — 야간산책 추가 없음, 21:30 이전",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -119,6 +133,15 @@
     },
     {
       "from": "eiffel-lights",
+      "to": "farewell-dinner",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "farewell-dinner",
       "to": "paris-return",
       "mode": "metro",
       "duration": "30분",
@@ -131,15 +154,16 @@
     "메트로 왕복"
   ],
   "food": [
-    "가벼운 점심 12:30",
-    "이른 저녁 또는 숙소식"
+    "가벼운 점심 13:00",
+    "송별 저녁 (상향) — 장소 검토 중"
   ],
   "highlights": [
-    "공연 취소 → 일몰 점등 조망으로 대체 (2026-08-10 확정)",
-    "이미 있는 자리 — 이동 추가 없음",
-    "저녁 무예약"
+    "파리의 마지막 온전한 하루 — 다음 날은 체크아웃과 공항뿐",
+    "오전에 짐 절반 포장",
+    "점등 조망 자리 부근에서 송별 저녁",
+    "21:30 이전 귀환 · 과음 금지"
   ],
-  "backup": "우천·피로 시 점등 조망 삭제, 조기 귀환",
+  "backup": "우천·피로 시 점등 조망 삭제, 송별 저녁을 숙소 도보권으로",
   "map": {
     "zoom": 13,
     "center": [
@@ -149,9 +173,10 @@
     "routeCache": null
   },
   "needsReview": [
+    "송별 저녁 장소 선정·예약 — 숙소 확정 선행",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "공연 취소(2026-08-10, 비용) — 저녁 대체안 검토 중"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 15박 운영판",
+    "송별 저녁 10/9→10/8 이동 (2026-08-13, OZ502 확정 반영)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-15-10월8일",

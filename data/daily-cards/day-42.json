@@ -3,14 +3,14 @@
   "day": 42,
   "date": "2026-10-09",
   "city": "Paris",
-  "title": "마지막 정리와 송별 저녁",
+  "title": "체크아웃과 CDG — 출국일",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "09:30",
-  "endTime": "21:30",
+  "startTime": "08:00",
+  "endTime": null,
   "totalDuration": null,
-  "totalDistance": "약 1km · 도보 (숙소권)",
-  "fatigue": "2",
+  "totalDistance": "공항 이동 약 30km",
+  "fatigue": "4",
   "hotel": {
     "name": "Pepper & Paper (후보)",
     "lat": 48.83966,
@@ -19,66 +19,112 @@
   },
   "stops": [
     {
-      "id": "morning-pack",
+      "id": "morning",
       "order": 1,
-      "start": "09:30",
-      "end": "12:00",
-      "name": "늦은 기상·짐 70% 포장",
+      "start": "08:00",
+      "end": "09:00",
+      "name": "아침·냉장고·남은 음식 정리",
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "냉장고 정리, 액체·깨지기 쉬운 물품 분리 — 정식운동 없음",
+      "summary": "유리병·냉장식품 처리 — 멀리 이동하지 않음",
       "menu": null,
       "reservation": null,
       "optional": false
     },
     {
-      "id": "neighborhood",
+      "id": "pack",
       "order": 2,
-      "start": "14:00",
-      "end": "17:00",
-      "name": "숙소권 동네산책·카페·공항동선 확인",
-      "category": "sight",
-      "lat": 48.8399,
-      "lng": 2.3455,
-      "summary": "새 박물관·쇼핑권 추가 금지, 16:00 여권·티켓·수하물 확인",
+      "start": "09:00",
+      "end": "10:00",
+      "name": "최종 포장",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "전날 절반을 싸 뒀으므로 마무리만 — 액체·깨지기 쉬운 물품 분리",
       "menu": null,
       "reservation": null,
       "optional": false
     },
     {
-      "id": "farewell-dinner",
+      "id": "checkout",
       "order": 3,
-      "start": "19:00",
-      "end": "21:00",
-      "name": "송별 저녁 (상향)",
+      "start": "10:00",
+      "end": "11:00",
+      "name": "체크아웃·짐 인수",
+      "category": "hotel",
+      "lat": 48.83966,
+      "lng": 2.34644,
+      "summary": "숙소조건 확인 — 짐 보관 가능 여부는 전날까지 확인해 둔다",
+      "menu": null,
+      "reservation": "체크아웃 조건·짐 보관 확인",
+      "optional": false
+    },
+    {
+      "id": "last-walk",
+      "order": 4,
+      "start": "11:00",
+      "end": "13:00",
+      "name": "숙소 반경 마지막 산책·가벼운 점심",
       "category": "food",
       "lat": 48.8399,
-      "lng": 2.3459,
-      "summary": "공연비 절감분으로 한 단계 상향 — 다음 날 출국, 과음 금지",
-      "menu": "장소는 숙소 확정 후 도보권에서 선정",
-      "reservation": "송별 저녁 장소 선정·예약 (숙소 확정 후)",
+      "lng": 2.3455,
+      "summary": "새 지역·쇼핑권 추가 금지, 과식 금지. 13:00 여권·탑승권·수하물 최종 확인",
+      "menu": "숙소 도보권 — 무예약",
+      "reservation": null,
       "optional": false
     },
     {
-      "id": "paris-return",
-      "order": 4,
-      "start": null,
-      "end": null,
-      "name": "직접 귀환",
-      "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
-      "summary": "야간산책·추가 술자리 없음 — 내일 출국",
+      "id": "cdg",
+      "order": 5,
+      "start": "14:00",
+      "end": "16:10",
+      "name": "CDG 이동·수속·détaxe",
+      "category": "transport",
+      "lat": 49.0068908,
+      "lng": 2.571082,
+      "summary": "14:00 이전 출발 권장 — 국제선 3시간 전, détaxe(PABLO) 줄 완충 포함",
       "menu": null,
-      "reservation": null,
+      "reservation": "터미널·이동수단 확인 (pending)",
+      "optional": false
+    },
+    {
+      "id": "departure",
+      "order": 6,
+      "start": "19:10",
+      "end": null,
+      "name": "OZ502 인천행 출국",
+      "category": "transport",
+      "lat": 49.0068908,
+      "lng": 2.571082,
+      "summary": "아시아나 OZ502 — 10/10 14:10 인천 도착. 예약 확정",
+      "menu": null,
+      "reservation": "예약완료 OZ502 — CDG 19:10 출발",
       "optional": false
     }
   ],
   "legs": [
     {
-      "from": "morning-pack",
-      "to": "neighborhood",
+      "from": "morning",
+      "to": "pack",
+      "mode": "walk",
+      "duration": "0분",
+      "distance": "숙소",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "pack",
+      "to": "checkout",
+      "mode": "walk",
+      "duration": "0분",
+      "distance": "숙소",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "checkout",
+      "to": "last-walk",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
@@ -86,51 +132,55 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "neighborhood",
-      "to": "farewell-dinner",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
+      "from": "last-walk",
+      "to": "cdg",
+      "mode": "taxi",
+      "duration": "약 1시간 (여유 포함)",
+      "distance": "약 30km",
+      "line": "RER B 대안 — 숙소 위치별 확인",
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "farewell-dinner",
-      "to": "paris-return",
+      "from": "cdg",
+      "to": "departure",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "duration": "0분",
+      "distance": "터미널 내",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "도보 (숙소권)"
+    "택시 또는 RER B (확정 필요)"
   ],
   "food": [
-    "숙소 점심 (남은 재료)",
-    "19:00 송별 저녁 — 장소 검토 중"
+    "숙소권 가벼운 점심 — 과식 금지",
+    "기내식"
   ],
   "highlights": [
-    "짐 70%는 낮에 끝낸다",
-    "공연 취소 — 저녁 여유",
-    "21:30 이전 귀환·야간산책 없음"
+    "P0 연결 — 오후에 도심 일정을 넣지 않는다",
+    "14:00 이전 공항 출발",
+    "짐은 42일 누적 — 전날 절반 포장",
+    "détaxe PABLO 줄 완충"
   ],
-  "backup": "피로 시 송별 저녁은 숙소식",
+  "backup": "교통장애 시 즉시 출발 — 도심 일정 전부 삭제",
   "map": {
-    "zoom": 14,
+    "zoom": 10,
     "center": [
-      48.847,
-      2.357
+      48.923,
+      2.46
     ],
     "routeCache": null
   },
   "needsReview": [
-    "송별 저녁 장소 선정·예약 — 숙소 확정 선행",
+    "CDG 터미널·공항 이동수단 확정",
+    "détaxe 대상 물품·서류 정리",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "항공권 확정 (2026-08-13 반영): OZ502 CDG 19:10 → 인천 10/10 14:10"
   ],
   "sourceRefs": [
-    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일",
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-42",
+    "OSM Nominatim 지오코딩 2026-08-07: CDG"
   ]
 }

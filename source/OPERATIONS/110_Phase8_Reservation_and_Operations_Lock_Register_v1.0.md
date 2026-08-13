@@ -13,7 +13,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금
 - 9/8 Nice 회복일
 - 9/9 NCE 렌터카 인수 전제와 Aix 이동
 - 9/21 Avignon TGV 반납·Lyon 이동 구조
-- 10/10 Paris 19:10 출국 계획
+- 10/9 Paris CDG 19:10 출국 확정 (OZ502 · 10/10 14:10 인천 도착)
 - Sagrada Família 8/30 10:30 계획
 - Peralada: 본 일정에서 제외·실제 예약 없음
 
@@ -36,7 +36,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금
 - 채널: Airbnb · 예약코드 HM2YPHDRW5
 - 가격: €330
 - 표시명: 바스카라의 B&B
-- 주소: 비공개 숙소 · 정확 주소는 개인 보관본에서 확인
+- 주소: Plaça de l'Església, 6, 17483 Bàscara
 - 여행자: Jason·Julia
 - 결제조건·주차·조식·취소조건: 재확인
 - 운영 변경: Girona 시내 숙박이 아닌 Bàscara 농촌 거점으로 Day 4–7 출발·귀환 기준 변경
