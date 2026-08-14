@@ -166,15 +166,25 @@
 
   /* ---------- 하단 탭 활성 표시 ----------
      '오늘' 은 href 가 없고(JS 로 그날 카드를 연다) '지역' 은 지역 챕터
-     8개를 대표한다. 경로 접미사 비교만으로는 둘 다 판정되지 않는다. */
+     8개를 대표한다. 경로 접미사 비교만으로는 둘 다 판정되지 않는다.
+
+     '오늘' 탭은 지금 보는 카드가 정말 오늘일 때만 켠다 — Day 21(9/18)을
+     보는데 "오늘"이 켜져 있으면 탭이 거짓말을 한다 (HIG 진단 4-2).
+     다른 날짜의 데일리 카드·데일리 목록은 일자 축이므로 '일정' 이다.
+     주제 축은 가이드 탭 아래다 — 홈·관련 페이지에서 진입하는 보조 탐색
+     (D-03) 이라 제 탭이 없고, 내용상 가이드 축을 다시 써는 색인이다. */
   function currentTab() {
     var p = window.location.pathname;
-    if (/\/daily\//.test(p)) return "today";
+    if (/\/daily\//.test(p)) {
+      var G = window.GUIDE || {};
+      var todaysCard = (G.today || {})[parisToday()] || "";
+      return todaysCard && p.indexOf("/" + todaysCard) >= 0 ? "today" : "itinerary";
+    }
     if (/\/chapters\/itinerary\.html$/.test(p)) return "itinerary";
     if (/\/maps\//.test(p)) return "map";
-    // 가이드 축 — 지역 목록·지역 챕터·장소. 분할 여부와 무관하게 하위 전부
+    // 가이드 축 — 지역 목록·지역 챕터·장소·주제. 분할 여부와 무관하게 하위 전부
     if (/\/regions\.html$/.test(p) || /\/chapters\/[^/]+\/[^/]*$/.test(p)
-        || /\/places\//.test(p))
+        || /\/places\//.test(p) || /\/topics\//.test(p))
       return "guide";
     if (/\/tracker\//.test(p)) return "prepare";
     return "";
