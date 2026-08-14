@@ -23,32 +23,32 @@
 | `palau-de-maricel` | Palau de Maricel | spot | 우선 추천 | — | chapters/barcelona/places.html | Palau de Maricel | Maricel Museum |
 | `sagrada-familia` | Sagrada Família | spot | 필수 | Sagrada Família | chapters/barcelona/places.html | Sagrada Família | Sagrada Família |
 | `sant-pau-recinte-modernista` | Sant Pau Recinte Modernista | spot | 필수 | Sant Pau | chapters/barcelona/places.html | Sant Pau Recinte Modernista | Hospital de Sant Pau |
-| `sitges` | Sitges | spot | 선택* | Sitges | — | — | Sitges |
+| `sitges` | Sitges | spot | 선택 | Sitges | chapters/barcelona/places.html | Sitges | Sitges |
 
 ## girona (05)
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수* | Calella de Palafrugell | — | — | Calella de Palafrugell |
-| `collioure` | Collioure | spot | 필수* | Collioure | — | — | Collioure |
-| `girona-cathedral` | Girona Cathedral | spot | 필수* | Girona Cathedral | — | — | Girona Cathedral |
-| `onyar` | Onyar 강변 | spot | 필수* | Onyar Houses | — | — | Onyar |
-| `pals` | Pals | spot | 우선 추천* | Pals | — | — | Pals |
-| `peralada` | Peralada | spot | 우선 추천* | Peralada | — | — | Peralada |
-| `peratallada` | Peratallada | spot | 필수* | Peratallada | — | — | Peratallada |
+| `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수 | Calella de Palafrugell | chapters/girona/places.html | Calella de Palafrugell | Calella de Palafrugell |
+| `collioure` | Collioure | spot | 필수 | Collioure | chapters/girona/places.html | Collioure | Collioure |
+| `girona-cathedral` | Girona Cathedral | spot | 필수 | Girona Cathedral | chapters/girona/places.html | Girona Cathedral | Girona Cathedral |
+| `onyar` | Onyar 강변 | spot | 필수 | Onyar Houses | chapters/girona/places.html | Onyar 강변 | Onyar |
+| `pals` | Pals | spot | 우선 추천 | Pals | chapters/girona/places.html | Pals | Pals |
+| `peralada` | Peralada | spot | 우선 추천 | Peralada | chapters/girona/places.html | Peralada | Peralada |
+| `peratallada` | Peratallada | spot | 필수 | Peratallada | chapters/girona/places.html | Peratallada | Peratallada |
 
 ## nice (06)
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `cannes` | Cannes | spot | 우선 추천* | Cannes | — | — | Cannes |
+| `cannes` | Cannes | spot | 우선 추천 | Cannes | chapters/nice/places.html | Cannes | Cannes |
 | `colline-du-chateau` | Colline du Château (성채 언덕) | spot | 필수 | Castle Hill | chapters/nice/places.html | Colline du Château (성채 언덕) | Castle Hill, Nice |
 | `cours-saleya` | Cours Saleya | spot | 필수 | Cours Saleya | chapters/nice/places.html | Cours Saleya | Cours Saleya |
 | `le-rocher` | Le Rocher — 모나코 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Rocher — 모나코 구시가지 | Rock of Monaco |
 | `le-suquet` | Le Suquet — 칸 구시가지 | spot | 필수 | — | chapters/nice/places.html | Le Suquet — 칸 구시가지 | Le Suquet |
 | `marche-forville` | Marché Forville | spot | 필수 | — | chapters/nice/places.html | Marché Forville | fr:Marché Forville |
 | `marche-de-la-liberation` | Marché de la Libération | spot | 우선 추천 | Libération Market | chapters/nice/places.html | Marché de la Libération | — |
-| `monaco` | Monaco | spot | 우선 추천* | Monaco | — | — | Monaco |
+| `monaco` | Monaco | spot | 우선 추천 | Monaco | chapters/nice/places.html | Monaco | Monaco |
 | `nce-t2` | NCE T2 | node | — | NCE T2 | — | — | — |
 | `nice-ville` | Nice-Ville | node | — | Nice-Ville | — | — | — |
 | `promenade-des-anglais` | Promenade des Anglais | spot | 필수 | — | chapters/nice/places.html | Promenade des Anglais | Promenade des Anglais |
@@ -73,7 +73,7 @@
 | `notre-dame-de-la-garde` | Notre-Dame de la Garde | spot | 선택 | Notre-Dame de la Garde | chapters/aix/places.html | Notre-Dame de la Garde | Notre-Dame de la Garde |
 | `montagne-sainte-victoire-terrain-des-peintres` | Montagne Sainte-Victoire · Terrain des Peintres | spot | 우선 추천 | — | chapters/aix/places.html | Montagne Sainte-Victoire · Terrain des Peintres | Montagne Sainte-Victoire |
 | `musee-granet` | Musée Granet | spot | 우선 추천 | Musée Granet | chapters/aix/places.html | Musée Granet | Musée Granet |
-| `rotonde` | Rotonde | spot | 미정 | Rotonde | — | — | Fontaine de la Rotonde |
+| `rotonde` | Rotonde | spot | 선택 | Rotonde | chapters/aix/places.html | Rotonde | Fontaine de la Rotonde |
 | `saint-paul-de-vence` | Saint-Paul-de-Vence | spot | 우선 추천 | — | chapters/aix/places.html | Saint-Paul-de-Vence | Saint-Paul-de-Vence |
 | `place-richelme-place-des-precheurs` | 시장 — Place Richelme · Place des Prêcheurs | spot | 필수 | — | chapters/aix/places.html | 시장 — Place Richelme · Place des Prêcheurs | — |
 
@@ -87,7 +87,7 @@
 | `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes | Gordes |
 | `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult | Goult |
 | `lourmarin` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
-| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 대체* | L’Isle-sur-la-Sorgue | — | — | L'Isle-sur-la-Sorgue |
+| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 대체 | L’Isle-sur-la-Sorgue | chapters/luberon/places.html | L’Isle-sur-la-Sorgue | L'Isle-sur-la-Sorgue |
 | `menerbes` | Ménerbes | spot | 우선 추천 | Ménerbes | chapters/luberon/places.html | Ménerbes — A안 | Ménerbes |
 | `oppede-le-vieux` | Oppède-le-Vieux | spot | 대체 | — | chapters/luberon/places.html | Oppède-le-Vieux — B안 | Oppède |
 | `roussillon-sentier-des-ocres` | Roussillon · Sentier des Ocres | spot | 필수 | Roussillon | chapters/luberon/places.html | Roussillon · Sentier des Ocres | Roussillon, Vaucluse |
@@ -121,7 +121,7 @@
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
 | `annecy` | Annecy 구시가지 | spot | 필수 | Annecy | chapters/lyon/places.html | Annecy 구시가지 | Annecy |
-| `bellecour` | Bellecour | spot | 미정 | Bellecour | — | — | Place Bellecour |
+| `bellecour` | Bellecour | spot | 선택 | Bellecour | chapters/lyon/places.html | Bellecour | Place Bellecour |
 | `croix-rousse` | Croix-Rousse | spot | 필수 | Croix-Rousse | chapters/lyon/places.html | Croix-Rousse | La Croix-Rousse |
 | `fourviere` | Fourvière | spot | 필수 | Fourvière | chapters/lyon/places.html | Fourvière | Basilica of Notre-Dame de Fourvière |
 | `halles-de-lyon-paul-bocuse` | Halles de Lyon Paul Bocuse | spot | 필수 | Halles Paul Bocuse | chapters/lyon/places.html | Halles de Lyon Paul Bocuse | Les Halles de Lyon-Paul Bocuse |

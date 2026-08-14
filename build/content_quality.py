@@ -309,6 +309,9 @@ def collect():
 # 없이 개관시간이나 요금을 새로 쓰면 이 게이트에서 멈춘다.
 GATES: dict[str, tuple[str, int]] = {
     "무근거 운영정보": ("C3.unsourced", 0),
+    # R2 (2026-08-14): 모든 spot 이 본문을 갖고, dossier 는 전부 레지스트리와 이어진다.
+    "본문 없는 spot": ("C1.no_body", 0),
+    "dossier 이름 불일치": ("C2.unmatched", 0),
 }
 
 
