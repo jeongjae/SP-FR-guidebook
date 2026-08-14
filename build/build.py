@@ -4010,6 +4010,154 @@ def reservations_body(ws, label, tabs_html, caption_html):
 아닌 항목은 아직 잠기지 않았습니다 — 확정으로 보고 움직이지 마세요.</p>'''
 
 
+# ---------------------------------------------------------------- 트래커 카드
+#
+# 예약현황에서 검증한 카드 패턴을 나머지 넓은 시트에 재사용한다. 20열 표를
+# 390px 에서 가로로 미는 대신, 행을 카드로 세우고 앞면에 그 시트에서 가장
+# 먼저 보는 값만 놓는다. 나머지 열은 헤더 순서대로 <details> 로 접힌다 —
+# 열이 늘어도 자동으로 뒷면에 실린다. 열은 하나도 버리지 않는다.
+
+LOCK_STATUS_KEY = {"LOCKED": "done", "PARTIAL": "recheck", "BLOCKED": "blocked"}
+
+# 시트별 설정. title/ sub 는 열 이름(튜플이면 " → " 로 잇는다). front 원소가
+# 튜플이면 (금액열, 통화열) 로 res_amount 를 쓴다. status_key 없는 값은 none.
+TRACKER_CARDS = {
+    "Accommodation": {
+        "icon": "stay", "title": "거점", "sub": "생활권/후보",
+        "chip": "체크인", "status": "상태", "status_key": RES_STATUS_KEY,
+        "order": RES_STATUS_ORDER,
+        "front": ["박수", "체크인/아웃", ("실제총액", "예산통화"), "무료취소기한"],
+    },
+    "Transport": {
+        "icon": "train", "title": ("출발지", "도착지"), "sub": "수단",
+        # 아이콘은 수단에 맞춘다 — 항공 구간에 기차 아이콘이 붙지 않게.
+        "icon_map": ("수단", {"항공": "plane", "렌터카": "car", "철도": "train",
+                              "기차": "train", "페리": "map", "버스": "car"}),
+        "chip": "날짜", "status": "예약상태", "status_key": RES_STATUS_KEY,
+        "order": RES_STATUS_ORDER,
+        "front": ["사업자/편명", "목표 출발", "목표 도착", "예약번호"],
+    },
+    "Phase8 Lock Status": {
+        "icon": "lock", "title": "항목", "sub": "분류",
+        "chip": None, "status": "잠금상태", "status_key": LOCK_STATUS_KEY,
+        "order": ("LOCKED", "PARTIAL", "BLOCKED"),
+        "front": ["현재 확정값", "필요 입력", "책임 단계"],
+    },
+}
+
+
+def sheet_records(ws):
+    """넓은 시트를 (헤더순서, dict목록) 로 읽는다. 헤더 = 비어있지 않은 셀이
+    셋 이상인 첫 행(선두의 제목 행을 건너뛴다)."""
+    rows = list(ws.iter_rows(values_only=True))
+    hdr_i = next((i for i, r in enumerate(rows)
+                  if r and sum(1 for c in r if c is not None) > 2), None)
+    if hdr_i is None:
+        return [], []
+    hdr = [str(c).strip() if c is not None else "" for c in rows[hdr_i]]
+    recs = []
+    for r in rows[hdr_i + 1:]:
+        if not r or all(c is None for c in r):
+            continue
+        rec = {h: format_cell(v).strip() for h, v in zip(hdr, r) if h}
+        if any(rec.values()):
+            recs.append(rec)
+    return [h for h in hdr if h], recs
+
+
+def _tracker_day_chip(cell):
+    """날짜 셀 → 칩. 여행 43일 안이면 그 날 데일리 카드로 링크(축 사이 링크)."""
+    iso = str(cell or "")[:10]
+    try:
+        d = date.fromisoformat(iso)
+    except ValueError:
+        return ""
+    n = day_no(d)
+    label = f"{d.month}/{d.day} {WEEKDAY_KO[d.weekday()]}"
+    if 1 <= n <= 43:
+        return (f'<a class="rz-day" href="../daily/day-{n:02d}.html"><b>{label}</b>'
+                f'<span>Day {n}</span><span class="lr-go" aria-hidden="true">›</span></a>')
+    return f'<span class="rz-day rz-day-flat"><b>{label}</b></span>'
+
+
+def tracker_cards_body(ws, cfg, label, tabs_html, caption_html):
+    hdr, recs = sheet_records(ws)
+    smap = cfg.get("status_key") or {}
+    order = cfg.get("order", ())
+    scol = cfg.get("status")
+
+    def title_of(r):
+        t = cfg["title"]
+        if isinstance(t, tuple):
+            return " → ".join(r.get(c, "") for c in t if r.get(c))
+        return r.get(t, "")
+
+    # 앞면에 쓴 열은 뒷면에서 뺀다. 나머지는 헤더 순서대로 <details>.
+    front_cols = [c[0] if isinstance(c, tuple) else c for c in cfg["front"]]
+    used = set(front_cols) | {cfg.get("sub"), cfg.get("chip"), scol}
+    if isinstance(cfg["title"], tuple):
+        used |= set(cfg["title"])
+    else:
+        used.add(cfg["title"])
+
+    def card(r):
+        status = r.get(scol, "") if scol else ""
+        key = smap.get(status, "none")
+        icon = cfg["icon"]
+        if cfg.get("icon_map"):
+            col, mp = cfg["icon_map"]
+            icon = mp.get(r.get(col, ""), cfg["icon"])
+        chip = _tracker_day_chip(r.get(cfg["chip"], "")) if cfg.get("chip") else ""
+        badge = (f'<span class="rz-badge rz-b-{key}">{html.escape(status)}</span>'
+                 if status else "")
+        front = []
+        for c in cfg["front"]:
+            if isinstance(c, tuple):
+                front.append((c[0], html.escape(res_amount(r.get(c[0], ""), r.get(c[1], "")))))
+            else:
+                front.append((c, html.escape(r.get(c, ""))))
+        # 뒷면 = 앞면에 안 쓴 열 전부(헤더 순서). 소스 URL 열은 링크로.
+        detail = []
+        for h in hdr:
+            if h in used:
+                continue
+            v = r.get(h, "")
+            if h.endswith("URL") and v.startswith("http"):
+                v = (f'<a class="rz-src" href="{html.escape(v)}" rel="noopener" '
+                     f'target="_blank"><b class="ic ic-link" aria-hidden="true"></b>'
+                     f'공식 페이지 열기</a>')
+            else:
+                v = html.escape(v)
+            detail.append((h, v))
+        detail_html = _res_rows_html(detail)
+        more = (f'<details class="rz-more"><summary>남은 항목 모두 보기</summary>'
+                f'<dl class="rz-facts">{detail_html}</dl></details>') if detail_html else ""
+        return (f'<article class="rz-card rz-{key}">'
+                f'<div class="rz-head">{chip}<span class="rz-tags">{badge}</span></div>'
+                f'<h3 class="rz-title"><b class="ic ic-{icon}" aria-hidden="true"></b>'
+                f'<span>{html.escape(title_of(r))}</span></h3>'
+                f'<p class="rz-where">{html.escape(r.get(cfg.get("sub", ""), ""))}</p>'
+                f'<dl class="rz-facts">{_res_rows_html(front)}</dl>{more}</article>')
+
+    counts = {s: sum(1 for r in recs if r.get(scol) == s) for s in order} if scol else {}
+    bar = "".join(f'<span class="rz-seg rz-b-{smap.get(s, "none")}" style="flex:{counts[s]}"></span>'
+                  for s in order if counts.get(s))
+    bar_label = " · ".join(f"{s} {counts[s]}건" for s in order if counts.get(s))
+    summary = (f'<section class="rz-sum"><p class="rz-sum-line">전체 <b>{len(recs)}건</b>'
+               f'{" · " + bar_label if bar_label else ""}</p>'
+               f'<div class="rz-bar" role="img" aria-label="{html.escape(bar_label)}">{bar}</div>'
+               f'</section>') if recs else ""
+
+    # 상태순(할 일 먼저) 정렬 — order 인덱스, 그 안에서 날짜순.
+    def sort_key(r):
+        s = r.get(scol, "")
+        si = order.index(s) if s in order else len(order)
+        return (si, r.get(cfg.get("chip") or "", "") or "")
+    cards = "".join(card(r) for r in sorted(recs, key=sort_key))
+    return (f'<h1>{label}</h1>{tabs_html}{caption_html}{summary}'
+            f'<div class="rz-list">{cards}</div>')
+
+
 def build_tracker():
     out_dir = SITE / "tracker"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -4027,16 +4175,20 @@ def build_tracker():
         if sheet_name not in wb.sheetnames:
             print(f"  경고: 시트 없음 — {sheet_name}")
             continue
-        # 예약 현황만 카드 화면이다. 22개 열을 가로로 미는 표로는 현장에서
-        # 한 건도 읽히지 않는다. 나머지 시트는 열이 적어 표가 그대로 낫다.
+        # 넓은 시트는 카드로. 20열을 가로로 미는 표로는 현장에서 한 건도 읽히지
+        # 않는다. 예약현황은 검색·필터가 붙는 전용 화면(rz.js), 숙소·교통·잠금은
+        # 공용 카드 렌더. 일정·대시보드는 별도 과제라 아직 표로 둔다.
+        scripts = ""
         if sheet_name == "Reservations":
             body = reservations_body(wb[sheet_name], label, tabs_of(slug),
                                      sheet_caption_html(wb[sheet_name]))
             scripts = '<script src="../assets/rz.js" defer></script>'
+        elif sheet_name in TRACKER_CARDS:
+            body = tracker_cards_body(wb[sheet_name], TRACKER_CARDS[sheet_name], label,
+                                      tabs_of(slug), sheet_caption_html(wb[sheet_name]))
         else:
             visual = ""  # 리스크 매트릭스 도식은 2026-08-09 사용자 지시로 제거
             body = f"<h1>{label}</h1>{tabs_of(slug)}{visual}{sheet_to_table(wb[sheet_name])}"
-            scripts = ""
         (out_dir / f"{slug}.html").write_text(
             page(label, body, rel="..", topbar_title=label,
                  back=crumbs_for(("트래커", "tracker/index.html"), (label, None)),
