@@ -5713,6 +5713,27 @@ def check_glyphs():
     print(f"글리프 가드: 금지 도형 {len(BANNED_GLYPHS)}종 output 에 없음")
 
 
+def check_tokens():
+    """빌드된 style.css 의 모든 var(--x) 가 정의된 토큰인지 본다.
+
+    미정의 토큰을 var() 로 참조하면 그 선언이 계산 시점에 통째로 무효가 되어
+    의도한 스타일이 조용히 사라진다 (HIG 진단 6-1: .guide-photo 그림자가 그랬다).
+    빌드된 파일을 본다 — --ic 는 icons.css() 가 append 하며 정의하기 때문이다.
+    주석은 제외한다 (금지 토큰을 설명하는 주석이 오탐을 내지 않게)."""
+    css = (SITE / "assets" / "style.css").read_text(encoding="utf-8")
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    defined = set(re.findall(r"(--[a-z0-9-]+)\s*:", css))
+    used = set(re.findall(r"var\((--[a-z0-9-]+)", css))
+    undef = sorted(used - defined)
+    if undef:
+        print("토큰 가드 실패 — 정의 없이 var() 로 쓰이는 CSS 토큰:")
+        for t in undef:
+            print(f"  {t}")
+        print("  (:root 에 정의하거나 참조를 걷어내라. build/assets/style.css)")
+        sys.exit(1)
+    print(f"토큰 가드: var() 토큰 {len(used)}종 전부 정의됨")
+
+
 def check_dates():
     d = TRIP_START
     missing = []
@@ -5814,6 +5835,7 @@ def main():
     check_phase10_official_fact_guards()
     check_links()
     check_glyphs()
+    check_tokens()
     check_dates()
     check_places()
     print(f"\n완료: {SITE} ({sum(1 for _ in SITE.rglob('*.html'))}개 HTML 페이지)")
