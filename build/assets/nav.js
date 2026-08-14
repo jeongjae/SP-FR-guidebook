@@ -211,10 +211,13 @@
 })();
 
 // 모든 페이지 뒤로가기 — 사용자 요청(D-10). 브라우저 이력이 있을 때만 보인다.
+// 단 홈은 계층의 뿌리라 '위로 갈 곳'이 없다 — 이력이 있어도 숨긴다 (HIG 진단 G-1).
+// 홈 판별: 위치 경로에 조상 링크(<a>)가 하나도 없는 유일한 페이지다.
 (function () {
   var b = document.querySelector(".tb-back");
   if (!b) return;
-  if (window.history.length > 1) {
+  var isRoot = !document.querySelector(".tb-crumbs a");
+  if (window.history.length > 1 && !isRoot) {
     b.hidden = false;
     b.addEventListener("click", function () { window.history.back(); });
   }

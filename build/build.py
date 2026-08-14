@@ -1989,7 +1989,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
      <a href="{rel}/maps/offline.html">오프라인 지도 준비</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="#" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="{rel}/daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
   <a href="{rel}/{ITINERARY_URL}" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
   <a href="{rel}/maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
   <a href="{rel}/regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
@@ -3538,7 +3538,7 @@ def build_home():
 <section class="hero">
   <div class="today-bar">
     <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
-    <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
+    <a href="daily/index.html" class="nav-today btn-today">오늘 일정 열기</a>
   </div>
 </section>
 {plan_strip}
