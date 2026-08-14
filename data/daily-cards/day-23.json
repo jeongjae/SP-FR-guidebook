@@ -12,10 +12,10 @@
   "totalDistance": "차량 반납 + TGV 약 230km",
   "fatigue": "4",
   "hotel": {
-    "name": "Hôtel de Verdun (후보)",
-    "lat": 45.74965,
-    "lng": 4.82968,
-    "status": "candidate"
+    "name": "Lagrange Aparthotel Lyon Lumière",
+    "lat": 45.746467,
+    "lng": 4.868933,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -63,15 +63,15 @@
     {
       "id": "lyon-checkin",
       "order": 4,
-      "start": "13:00",
+      "start": "12:00",
       "end": "15:30",
-      "name": "체크인·점심·휴식",
+      "name": "숙소 이동·점심·체크인",
       "category": "hotel",
-      "lat": 45.74965,
-      "lng": 4.82968,
-      "summary": "큰 짐 메트로 환승 금지. 도착일 부숑 코스 금지 — 빵집·샐러드",
+      "lat": 45.746467,
+      "lng": 4.868933,
+      "summary": "Part-Dieu→메트로 B 환승(Saxe-Gambetta)→D선 Sans Souci. 체크인은 15:00부터 — 그 전 짐 보관 가능 여부 확인",
       "menu": null,
-      "reservation": "Lyon 숙소 후보 확정 필요",
+      "reservation": "예약완료 Lagrange Aparthotel Lyon Lumière (5882.730.884) — 체크인 15:00",
       "optional": false
     },
     {
@@ -95,8 +95,8 @@
       "end": "21:00",
       "name": "Café Comptoir Abel 저녁·귀가",
       "category": "hotel",
-      "lat": 45.74965,
-      "lng": 4.82968,
+      "lat": 45.746467,
+      "lng": 4.868933,
       "summary": "quenelle 공유, 과식 금지 — 피로·음주 시 택시",
       "menu": null,
       "reservation": "저녁 예약 권장",
@@ -174,7 +174,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Lyon 숙소 후보(Hôtel de Verdun) 승인"
+    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884",
+    "도착 11:28 vs 체크인 15:00 — 짐 보관 가능 여부 숙소에 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-23",

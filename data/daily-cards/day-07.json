@@ -6,7 +6,7 @@
   "title": "Bàscara→BCN 반납→VY1521→Nice",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
+  "startTime": "09:30",
   "endTime": null,
   "totalDuration": null,
   "totalDistance": "차량 약 137km + 항공",
@@ -21,13 +21,13 @@
     {
       "id": "bascara-checkout",
       "order": 1,
-      "start": null,
-      "end": null,
+      "start": "09:30",
+      "end": "10:30",
       "name": "Bàscara 체크아웃",
       "category": "hotel",
       "lat": 42.16036,
       "lng": 2.90964,
-      "summary": "반납 14:00 기준 출발 역산 — 주유·차량사진 준비",
+      "summary": "10:30 출발 — 반납 12:30 기준 역산. 주유 영수증·차량사진 준비",
       "menu": null,
       "reservation": "체크아웃 조건 재확인",
       "optional": false
@@ -35,15 +35,15 @@
     {
       "id": "bcn-airport-return",
       "order": 2,
-      "start": null,
-      "end": "14:00",
-      "name": "BCN 공항 T1 렌터카 반납·수속",
+      "start": "12:30",
+      "end": "13:00",
+      "name": "BCN 공항 T1 렌터카 반납",
       "category": "transport",
       "lat": 41.296944,
       "lng": 2.0790474,
-      "summary": "T1 영업소 — 주유 영수증·차량사진·보증금 해제 후 수속",
+      "summary": "12:00 공항 진입 전 주유 → 12:30 반납. 점검·서류 20–30분을 완충으로 확보한 시각이다",
       "menu": null,
-      "reservation": "예약완료 Hertz L671E2E0288 — 9/4 14:00 반납",
+      "reservation": "Hertz L671E2E0288 — 예약서 14:00 반납, **12:30 으로 변경 요청 필요**",
       "optional": false
     },
     {
@@ -55,7 +55,7 @@
       "category": "transport",
       "lat": 43.65971,
       "lng": 7.20461,
-      "summary": "BCN T1 15:30 출발 — NCE T1 16:55 도착",
+      "summary": "BCN T1 15:30 출발 — NCE T1 16:55 도착. 수하물 위탁 마감 14:45",
       "menu": null,
       "reservation": "예약완료 Vueling VY1521 (NMGI4Q)",
       "optional": false
@@ -108,7 +108,7 @@
       "from": "bascara-checkout",
       "to": "bcn-airport-return",
       "mode": "car",
-      "duration": "약 1시간 40분",
+      "duration": "약 1시간 40분 (휴게·주유 포함)",
       "distance": "137.2km",
       "line": "AP-7 · 주유 포함 여유",
       "geometryStatus": "verified-cache"
@@ -161,10 +161,11 @@
   ],
   "highlights": [
     "P0 이동일 — 관광 없음",
-    "반납 14:00·VY1521 15:30 확정",
+    "반납 12:30 으로 당김 · VY1521 15:30",
+    "수하물 위탁 마감 14:45",
     "도착 후 체크인만"
   ],
-  "backup": "항공 지연 시 NCE 도착 후 체크인만, 적응 산책 삭제",
+  "backup": "Hertz 변경 불가 시 기내반입 위주로 줄이고 전날 온라인 체크인",
   "map": {
     "zoom": 7,
     "center": [
@@ -174,9 +175,9 @@
     "routeCache": "routes/day-07-driving-osrm.json"
   },
   "needsReview": [
-    "Bàscara 출발 시각 확정 — 반납 14:00·주유 기준 역산",
     "Bàscara 체크아웃 조건 확인",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
+    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00",
+    "Hertz L671E2E0288 반납시각 14:00→12:30 변경 요청 (2026-08-14 결정)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",

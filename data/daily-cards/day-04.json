@@ -41,9 +41,9 @@
       "category": "transport",
       "lat": 41.37914,
       "lng": 2.14005,
-      "summary": "Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록",
+      "summary": "Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록. **프랑스 주행(9/2 콜리우르)을 반드시 신고한다**",
       "menu": null,
-      "reservation": "예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능",
+      "reservation": "예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요",
       "optional": false
     },
     {
@@ -175,9 +175,10 @@
   },
   "needsReview": [
     "체크아웃 창 09:30–12:00 vs 07:00 인수 가능 — 인수·짐 적재·체크아웃 순서 협의",
-    "ZBE(저배출구역)·국경 운전 조건 확인",
     "Sitges 주차와 식당 예약",
-    "Bàscara 체크인 창 재확인"
+    "Bàscara 체크인 창 재확인",
+    "Hertz 크로스보더: 프랑스 주행 신고 필수 — 미신고 시 보험 전체 무효(스페인 약관, 2026-08-14 확인). 요금·위약금 액수는 계약서 확인",
+    "ZBE(저배출구역)·국경 운전 조건 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-4",

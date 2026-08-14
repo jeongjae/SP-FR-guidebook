@@ -3,7 +3,7 @@
   "day": 32,
   "date": "2026-09-29",
   "city": "Paris",
-  "title": "Orsay 또는 Orangerie — 대형관 하나",
+  "title": "Musée d'Orsay — 대형관 하나",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:30",
@@ -51,11 +51,11 @@
       "order": 3,
       "start": "13:30",
       "end": "17:00",
-      "name": "Musée d'Orsay 또는 Orangerie",
+      "name": "Musée d'Orsay",
       "category": "culture",
       "lat": 48.85996,
       "lng": 2.32656,
-      "summary": "둘 중 하나만 — 시간지정권, 3시간 30분 상한",
+      "summary": "시간지정권, 3시간 30분 상한. 화요일이라 Orangerie 는 휴관 — 선택지가 아니다",
       "menu": null,
       "reservation": "시간지정권 예약 잠금",
       "optional": false
@@ -83,7 +83,7 @@
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "Orsay 선택 시 인상주의 또는 19세기 조각 한 권역만 추가",
+      "summary": "인상주의 또는 19세기 조각 한 권역만 추가",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -149,9 +149,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Orsay/Orangerie 시간지정권 예약",
     "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "Orangerie 화요일 휴관 확인 (2026-08-14 공식) — 9/29 은 Orsay 고정, Orangerie 는 10/3 후보"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-6-9월29일",

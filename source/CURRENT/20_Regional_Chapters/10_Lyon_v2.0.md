@@ -453,7 +453,7 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 - [GeoJSON](../../ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson)
 - [KML](../../ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml)
 - 대상 일정: **Day 23–27**
-- 숙소 핀은 현재 **후보 위치**이며 실제 예약주소가 아니다.
+- 숙소 핀은 **확정 주소**다 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (2026-08-14).
 - 연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.
 - HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.
 
@@ -463,12 +463,13 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 
 | 항목 | 확정·권장 내용 |
 |---|---|
-| 체류 | 2026년 9월 20일 일요일 체크인 → 9월 24일 목요일 체크아웃, 4박 |
+| 체류 | 2026년 9월 20일 일요일 15:00 체크인 → 9월 24일 목요일 11:00 체크아웃, 4박 |
+| 숙소 | **확정 — Lagrange Aparthotel Lyon Lumière** · 81-85 Cours Albert Thomas, 69003 Lyon · +33 4 81 76 28 00 · €433.82 · booking.com 5882.730.884 |
 | 이동 | 9/20 Avignon TGV역 렌터카 반납 → Lyon Part-Dieu TGV. 9/24 Lyon→Paris TGV |
 | 여행 주제 | Fourvière 지형 · Vieux Lyon과 traboules · Presqu’île 광장과 강변 · Croix-Rousse 비단동네 · Lyon 음식 · Annecy 호수도시 |
-| 기본 숙소권 | **Ainay–Ampère–Bellecour 남부** 1순위. **Brotteaux–Masséna–Foch** 2순위 |
-| 숙박 형태 | 4박이므로 아파트호텔 또는 조용한 호텔. 24시간 또는 야간 프런트, 엘리베이터, 냉방, 객실금고, 밝은 귀가동선 확인 |
-| 계획 숙박예산 | 2인 4박 **€500–900** 실속·중간급 목표. 프리미엄 아파트·부티크호텔은 €900–1,300까지 가능. 실시간 총액 아님 |
+| 실제 숙소권 | **Monplaisir (3구 동쪽)** — 아래 1·2순위 권역이 아니다. 메트로 D 의존 동선으로 운영한다 |
+| 숙박 형태 | 아파트호텔(주방 포함)로 확정. 야간 프런트·엘리베이터·객실금고·밝은 귀가동선은 체크인 때 확인 {{badge:pending|현장 확인}} |
+| 숙박비 | **€433.82 확정** (2인 4박). 계획범위 €500–900 아래다 |
 | 필수 | Fourvière 전망·Vieux Lyon·traboules·Presqu’île·Croix-Rousse·Halles Paul Bocuse 또는 전통시장 |
 | 당일치기 | **9/23 Annecy** — 구시가지·운하·호숫가·1시간 크루즈 선택 |
 | 미술관 | 기본 일정에서 제외. 비·피로 시 Musée des Beaux-Arts 또는 Musée des Confluences 중 1곳만 |
@@ -544,6 +545,17 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 
 ### 4.2 숙소계획에 반영한 원칙
 
+> **확정 숙소는 이 권역들 밖이다 (2026-08-14).**
+> Lagrange Aparthotel Lyon Lumière 는 **3구 Monplaisir**, Cours Albert Thomas 다.
+> 아래 1·2순위는 선정 과정의 기준이었고, 지금은 **다음 세 가지가 실제 운영조건**이다.
+>
+> - **메트로 D 두 역이 도보권이다** — Sans Souci 약 300m, Monplaisir-Lumière 약 250m.
+>   D 선은 Bellecour 와 Vieux Lyon 을 **환승 없이** 잇는다 (OSM 노선 확인, 2026-08-14).
+> - **Part-Dieu 는 환승이 필요하다** — D선 Saxe-Gambetta 에서 B선으로 갈아탄다.
+>   9/20 도착일과 9/24 출발일은 짐이 크므로 **택시를 먼저 고려한다.**
+> - **Institut Lumière 가 도보 600m 안이다** — 영화 탄생지가 숙소 동네다.
+>   비·피로로 계획이 무너진 날의 선택 모듈로 가장 가깝다 {{badge:pending|운영시간 확인}}.
+
 - **1순위 Ainay–Ampère**: 비교적 차분한 주거·상업 혼합지역이며 Bellecour와 Perrache 사이 이동이 편하다.
 - **2순위 Brotteaux–Masséna–Foch**: 주거환경과 Parc 접근이 좋고, Part-Dieu에도 접근하기 쉽다.
 - **도심형 Célestins–Bellecour**: 매우 편리하지만 관광객·야간 유동이 많으므로 조용한 객실과 프런트 운영을 확인한다.
@@ -577,8 +589,9 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 이
 |---|---|---|
 | 오전 | Avignon TGV 렌터카 반납 | 주유·차량사진·영수증·보증금 해제절차 확인 |
 | 10:20–12:30 범위 | TGV로 Lyon Part-Dieu 이동 | 열차 20분 전 승강장권 진입, 짐은 시야 안쪽에 둔다 |
-| 도착 후 30–45분 | Part-Dieu→숙소 택시 | 큰 짐을 가지고 메트로 환승하지 않는다. 공식 택시승강장 이용 |
-| 13:00 전후 | 체크인 또는 짐 보관 | 객실금고·엘리베이터·야간출입 확인 |
+| 도착 후 30–45분 | Part-Dieu→숙소 택시 | Cours Albert Thomas 까지 약 4km. 큰 짐을 가지고 메트로 B→D 환승을 하지 않는다 |
+| 12:00–15:00 | 짐 보관·가벼운 점심 | **체크인은 15:00부터다.** 도착이 11:28 이므로 짐 보관 가능 여부를 미리 확인한다 {{badge:pending|숙소 확인}} |
+| 15:00 | 체크인 | 객실금고·엘리베이터·야간출입·주방 집기 확인 |
 | 13:15–14:00 | 가벼운 점심 | 숙소권 빵집·샐러드·샌드위치. 도착일 부숑 코스 금지 |
 | 14:30–15:30 | 숙소 휴식 | 차량반납과 기차이동 뒤 1시간 휴식 |
 | 15:45–17:45 | **Ainay→Bellecour→Jacobins→Célestins** 산책 | 도시 중심방향과 귀가로를 익힌다 |

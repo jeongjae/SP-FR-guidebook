@@ -25,11 +25,11 @@
       "end": null,
       "name": "Lyon 체크아웃",
       "category": "hotel",
-      "lat": 45.74965,
-      "lng": 4.82968,
-      "summary": "16박 수하물 — 열차 기준 역산, Part-Dieu까지 택시",
+      "lat": 45.746467,
+      "lng": 4.868933,
+      "summary": "체크아웃 11:00 — 메트로 D Sans Souci→Saxe-Gambetta 환승→B선 Part-Dieu, 짐이 크면 택시",
       "menu": null,
-      "reservation": "TGV 예약 잠금",
+      "reservation": "예약완료 Lagrange Aparthotel Lyon Lumière — 체크아웃 11:00",
       "optional": false
     },
     {
@@ -152,7 +152,8 @@
   "needsReview": [
     "TGV 9/24 편성·시각 확정",
     "Paris 숙소 후보(Pepper & Paper) 확정 — 16박의 중심",
-    "체크인 가능 시각 확인"
+    "체크인 가능 시각 확인",
+    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-27",

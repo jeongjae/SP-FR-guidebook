@@ -25,7 +25,7 @@
 | 4 | 9/1 화 | Bàscara | Sants 렌터카→Sitges→Bàscara | 08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능) | 인수 60분·Sitges 출차 30분 | Sitges 점심 | 인수·체크아웃 순서·짐 노출 | 해변산책·실내 1곳 | Sitges 1곳만 보고 Bàscara 직행 | 렌터카 완료(Hertz L671E2E0288)·Sitges·Bàscara 체크인 조건 재확인 |
 | 5 | 9/2 수 | Bàscara | Collioure·Cadaqués | 07:45 출발 | 오전 10시 이전 Collioure 주차 | Collioure 09:00–12:15·Cadaqués 14:45–17:30 | 해안 쪽 우회·주차·지도 재확인 | Cadaqués 해안 산책·구시가지 | 17:30 Bàscara 출발 | Portlligat·Dalí House 예약 미확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu·Pals·Peratallada | 08:20 출발 | Tossa 주차·Vila Vella 접근 재확인 | Tossa 09:45–12:30·Sant Feliu 점심 | GI-682·운전피로 | Pals 압축·Peratallada 유지 | 17:40 Bàscara 출발 | 지연 시 Pals 삭제 |
-| 7 | 9/4 금 | Nice | Bàscara 체크아웃→BCN 반납 14:00→VY1521 15:30→NCE 16:55 | 반납 14:00 기준 역산 | 주유·반납·수속 완충 | 이동 중 간단식 | 반납 지연·수속 혼잡 | Nice 적응산책 | NCE 도착 후 체크인만 (12 Rue Verdi, 15:00부터) | Bàscara 체크아웃 조건 |
+| 7 | 9/4 금 | Nice | Bàscara 체크아웃→BCN 반납 12:30→VY1521 15:30→NCE 16:55 | 10:30 Bàscara 출발 | 반납 12:30→위탁마감 14:45 (135분) | 이동 중 간단식 | 반납 지연·수속 혼잡 | Nice 적응산책 | NCE 도착 후 체크인만 (12 Rue Verdi, 15:00부터) | Hertz 반납 12:30 변경 |
 | 8 | 9/5 토 | Nice | Cours Saleya·Vieux Nice·Castle Hill | 08:30 시장 도착 | Castle Hill 전후 45분 휴식 | 시장 또는 구시가지 | 계단·더위·토요일 혼잡 | Port·해변 | 구시가지 실내·카페 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | 08:30 Nice 출발 권장 | TER 20분 여유 | Forville 인근 점심 | 일요일 열차·해안혼잡 | 쇼핑·해변연장 | Cannes 핵심만 후 조기귀환 | TER |
 | 10 | 9/7 월 | Nice | Monaco 당일치기 | 08:30 출발 권장 | 역·언덕 이동 30분 | Monaco-Ville 또는 Port | 월요일 운영·경사·혼잡 | 정원/Larvotto 중 하나 | 구시가지·대성당 중심 | TER |
@@ -41,16 +41,16 @@
 | 20 | 9/17 목 | Avignon | Palais·Rocher·Pont | 08:30 Les Halles | Palais 입장 30분 전 | Les Halles/구시가지 | 시간지정·보행 | 추가미술관 | Palais 중심 실내일 | Palais·식당 |
 | 21 | 9/18 금 | Avignon | Uzès 구시가지·Pont du Gard | 08:30 출발 | 주차·Pont 이동 45분 | Uzès 빵집/비스트로 | 금요일 시장 없음·폭우/홍수 | 박물관 또는 일몰 | Uzès 단축·Pont 축소 | 주차·Pont |
 | 22 | 9/19 토 | Avignon | Arles 철도 당일치기 | 열차 기준 역산 | 열차 20분 전·점심/카페 90분 | Place du Forum 인근 | JEP 혼잡·운영변동·소매치기 | 선택시설·강변 연장 | Arènes·Théâtre·구도심만 | TER·JEP 재확인 |
-| 23 | 9/20 일 | Lyon | 주유·09:00 반납·TGV 12176 10:22 | 07:00 포장 | 반납 09:00→열차 10:22 (82분) | 역 간단식 | 주유·반납·수하물·열차 | 아침산책 | Lyon 도착 후 체크인만 | 반납 09:00 준수 |
+| 23 | 9/20 일 | Lyon | 주유·09:00 반납·TGV 12176 10:22·Lyon 15:00 체크인 | 07:00 포장 | 반납 09:00→열차 10:22 (82분) · 도착 11:28→체크인 15:00 | 역 간단식·숙소권 점심 | 주유·반납·수하물·열차 | 아침산책 | 짐 보관 후 도심 산책 | 반납 09:00 준수 · 짐 보관 확인 |
 | 24 | 9/21 월 | Lyon | Fourvière·Vieux Lyon | 09:00 전후 | 경사·하산 후 60분 휴식 | Vieux Lyon 점심 | 월요일 휴관·경사·보행 | 로마극장 내부 | 야외축+카페 | 푸니쿨라·저녁 |
 | 25 | 9/22 화 | Lyon | Croix-Rousse·Halles·공원 | 08:30 시장 | Halles 전후 60분 | Halles 점심 | 지역간 이동 3회 | 공원 | 시장+Halles만 | 식당 휴무 |
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | 08:00 전후 역 이동 | TER 20분 전 도착 | Annecy 구시가지 | 철도지연·날씨·시장 없음 | 크루즈 | Lyon 생활일로 전환 | TER·크루즈 |
-| 27 | 9/24 목 | Paris | TGV→16박 체크인 | 열차 기준 역산 | Gare de Lyon→숙소 택시·체크인 2시간 | 숙소권 간단식 | 대형수하물·체크인 | 외부관광 전부 | 짐정리·최소 장보기만 | TGV·숙소 변경 |
+| 27 | 9/24 목 | Paris | Lyon 11:00 체크아웃→TGV→15박 체크인 | 체크아웃 11:00·열차 기준 역산 | Gare de Lyon→숙소 택시·체크인 2시간 | 숙소권 간단식 | 대형수하물·체크인 | 외부관광 전부 | 짐정리·최소 장보기만 | TGV·Paris 숙소 |
 | 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 늦은 시작 | 세탁·휴식 3시간 보호 | 숙소식·동네 카페 | 새 하루를 관광으로 과밀화 | 장거리 산책 | 슈퍼·빵집·약국 확인만 | 없음 |
 | 29 | 9/26 토 | Paris | Saint-Germain·Luxembourg·Seine | 늦은 시작 | 도착 다음 날 — 강도 낮춤 | 가벼운 점심·숙소 저녁 | 주말 혼잡·보행 | Seine 좌안 산책 | Luxembourg까지만 | 없음 |
 | 30 | 9/27 일 | Paris | Tuileries·Palais Royal·Opéra 지구 | 느린 시작 | Louvre 내부 입장 없음 | Palais Royal 주변 점심 | 중심가 혼잡 | Opéra 지구 | Tuileries·Palais Royal만 | Garnier 조건부 |
 | 31 | 9/28 월 | Paris | 운동·세탁·생활일 (Fashion Week 개막) | 느린 시작 | 생활업무 보호 | 숙소 점심 | Fashion Week 혼잡 | 북마레 산책 | 숙소권 회귀 | 없음 |
-| 32 | 9/29 화 | Paris | Orsay 또는 Orangerie 한 곳 | 예약 60분 전 출발 | 관람 3시간 30분 상한 | 관람 전 가벼운 점심 | 박물관 피로 | 두 번째 미술관 | Orangerie로 축소 | 미술관 시간지정 |
+| 32 | 9/29 화 | Paris | Musée d’Orsay (화요일 — Orangerie 휴관) | 예약 60분 전 출발 | 관람 3시간 30분 상한 | 관람 전 가벼운 점심 | 박물관 피로 | 두 번째 미술관 | 관람 축소 후 Tuileries 산책 | 미술관 시간지정 |
 | 33 | 9/30 수 | Paris | Fashion Week 공개동선 반일 | 오전 수면 보존 | 야간행사 제외 | 11:30 가벼운 점심 | 초청제 혼동·혼잡 | Rue Saint-Honoré | Palais Royal 축 단축 | 공개행사 재확인 |
 | 34 | 10/1 목 | Paris | Bastille 동네·Coulée verte 저녁 산책 | 느린 시작 | 일몰 전 산책 시작 | Bastille 도보권 동네 저녁 | 야간 보행 | Seine 구간 | 산책 축소·동네 저녁만 | 없음 |
 | 35 | 10/2 금 | Paris | 회복·시장·서점·스케치 | 늦은 시작 | 정식운동 생략 | 시장식 또는 숙소 점심 | 회복일 과밀화 | 저녁행사 전부 | 숙소·카페만 | 없음 |
