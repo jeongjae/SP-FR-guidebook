@@ -207,6 +207,16 @@ img { max-width: 100%; height: auto; }
 [data-size="l"] body, body[data-size="l"] { font-size: 19px; }
 [data-size="xl"] body, body[data-size="xl"] { font-size: 21px; }
 
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* 포커스 — 키보드 접근성 */
 :focus-visible {
   outline: 3px solid var(--accent);

@@ -2135,7 +2135,7 @@ def split_day_sections(schedule_md):
     return head, days
 
 
-def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra="",
+def render_split_page(c, title, sub, body_md, prev_nx, map_links, extra="",
                       coords="", subnav=""):
     """분할 페이지 하나를 기존 페이지 셸로 렌더한다.
 
@@ -2144,16 +2144,19 @@ def render_split_page(c, title, sub, body_md, crumbs, prev_nx, map_links, extra=
     """
     rel = "../.."
     body, toc_tokens = md_convert(body_md)
-    body = first_heading_icon(
-        mark_category_icons(
-            link_place_cards(wrap_tables(rewrite_asset_links(body, rel)), rel)),
-        CAT_ICON.get(title) or ("clock" if title.startswith("일정") else None))
+    # 카테고리 아이콘은 이제 페이지 h1 이 진다 — 첫 h2(섹션)에 또 달지 않는다.
+    body = mark_category_icons(
+        link_place_cards(wrap_tables(rewrite_asset_links(body, rel)), rel))
     prev_link, next_link = prev_nx
     pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
-    crumb_html = ('<nav class="crumbs" aria-label="위치">'
-                  + " › ".join(crumbs) + "</nav>")
+    # 위치 경로는 상단바(back=region_crumbs)가 맡는다. 본문 크럼은 같은 것을
+    # 두 번 말하던 중복이라 없앤다 (HIG 진단 3-2). 문서 제목은 h1 이 진다 —
+    # 이 페이지들은 여태 h2 로 시작해 개요에 제목이 없었다 (HIG 진단 3-1).
+    icon = CAT_ICON.get(title) or ("clock" if title.startswith("일정") else None)
+    h1_cls = f' class="ic ic-{icon}"' if icon else ""
+    h1_html = f'<h1{h1_cls}>{html.escape(title)}</h1>'
     sub_html = f'<p class="page-sub">{html.escape(sub)}</p>' if sub else ""
-    content = crumb_html + sub_html + extra + body + pager
+    content = h1_html + sub_html + extra + body + pager
     return (page(title, content, rel=rel, topbar_title=title, coords=coords, subnav=subnav,
                  back=region_crumbs((c["region"], f'chapters/{c["name"]}/index.html'),
                                     (title, None)),
@@ -2231,7 +2234,6 @@ def build_split_chapter(c, body_md, map_links):
     out_dir.mkdir(parents=True, exist_ok=True)
     rel = "../.."
     hub_url = f'chapters/{c["name"]}/index.html'
-    hub_crumb = f'<a href="index.html">{html.escape(c["title"])}</a>'
 
     header_md, sections = split_sections(body_md)
     by_cat = {k: v for k, v in sections}
@@ -2274,8 +2276,6 @@ def build_split_chapter(c, body_md, map_links):
         if idx < len(pages) - 1:
             nx = pages[idx + 1]
             next_link = f'<a href="{href(nx[0])}">{html.escape(nx[1])} →</a>'
-        crumbs = [f'<a href="{rel}/regions.html">지역</a>', hub_crumb,
-                  f'<span>{html.escape(title)}</span>']
         fig = ""
         if fname == "transport.html" and c["slug"] in ("07", "08", "09"):
             fig = visual_figure("cardays", "Provence 차량일 운영 논리", "../../assets")
@@ -2290,7 +2290,7 @@ def build_split_chapter(c, body_md, map_links):
                 MEDIA_CATALOG, sample_region, ("place",)) if not a.get("placeSlug")]
             sample_media = media.gallery(unlinked, rel, "추가 장소 대표 이미지")
         rendered, flat, page_body = render_split_page(
-            c, title, sub, md_body, crumbs, (prev_link, next_link), map_links,
+            c, title, sub, md_body, (prev_link, next_link), map_links,
             extra=fig + sample_media
             + (places_block(c, map_links, "../..") if fname == "places.html" else ""),
             subnav=chapter_siblings(pages, fname, with_days=fname == "schedule.html"))
@@ -3534,7 +3534,8 @@ def build_home():
         f'<span class="ps-copy">유효 예약 {res_total}건 중 미확정 <b>{res_undone}건</b></span>'
         '<a class="ps-link" href="tracker/reservations.html">예약 현황</a></section>')
 
-    body = f"""<section class="hero">
+    body = f"""<h1 class="sr-only">{SITE_TITLE}</h1>
+<section class="hero">
   <div class="today-bar">
     <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
     <a href="#" class="nav-today btn-today">오늘 일정 열기</a>
