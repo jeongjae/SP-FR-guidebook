@@ -3500,7 +3500,7 @@ def build_home():
             ("region", "regions.html", "지역별 가이드", "8개 거점의 일정과 생활권", ""),
             ("check", "tracker/index.html", "여행 준비", "예약 · 교통 · 숙소 상태", ""),
             ("search", "#search", "통합 검색", "날짜 · 장소 · 식당 · 교통 찾기", " nav-search"),
-            ("flag", "maps/offline.html", "비상 · 오프라인", "연결이 약할 때 필요한 정보", "")))
+            ("alert", "maps/offline.html", "비상 · 오프라인", "연결이 약할 때 필요한 정보", "")))
 
     # 하단탭(L0)이 없는 보조 진입점은 홈에 남긴다. 본문을 복제하지 않고
     # 원본 목록으로만 연결해 길이 끊기지 않게 한다.
@@ -3811,7 +3811,7 @@ def sheet_to_table(ws):
 # 열은 하나도 버리지 않는다 — 접혀 있을 뿐이다.
 
 RES_CAT_ICON = {"숙소": "stay", "렌터카": "car", "항공": "plane", "철도": "train",
-                "입장권": "ticket", "공연": "music", "기타": "note"}
+                "입장권": "ticket", "공연": "stage", "기타": "note"}
 # 왼쪽이 덜 된 것이다. 기본 정렬(상태순)이 할 일부터 위로 올린다.
 RES_STATUS_ORDER = ("미조사", "예약대기", "재확인", "예약완료", "취소")
 RES_STATUS_KEY = {"미조사": "none", "예약대기": "wait", "재확인": "recheck",
