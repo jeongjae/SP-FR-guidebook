@@ -185,6 +185,51 @@ def check_page(pg, rel, width, problems):
                         f"{c['px']}px  \"{c['t']}\" .{c['c']}")
 
 
+# ---- 리플로 예산 (v2.0 제안 가드 3종 중 마지막) ----
+# 컨테이너 안 가로 스크롤은 표·코드가 좁은 화면에서 취하는 정상 수단이지만,
+# 정도가 있다. 화면 폭의 몇 배를 밀어야 읽히는 표(+2500px)가 그렇게 나갔었다.
+# 진단 시점의 최악(표 +388 · pre +659, 트래커 시트 카드화 이후)을 기준으로
+# 상한을 두고 회귀를 막는다 — 수치를 넘는 새 표·코드블록이 들어오면 실패한다.
+# 상한을 정당하게 올릴 일이 생기면 이 상수를 근거와 함께 갱신한다.
+REFLOW_TABLE_MAX = 450   # .table-wrap 하나가 390px 에서 넘칠 수 있는 최대 px
+REFLOW_PRE_MAX = 700     # <pre> 하나가 넘칠 수 있는 최대 px
+# 알려진 예외 — 시트 원본 20열 표. 일자 축 통합(진단 4-1)에서 부록으로
+# 강등하며 해소 예정. 그 전까지 이 한 쪽만 예산에서 뺀다.
+REFLOW_EXEMPT = {"tracker/itinerary.html"}
+
+REFLOW_JS = """() => {
+  const t = [...document.querySelectorAll('.table-wrap')].map(e => e.scrollWidth - e.clientWidth);
+  const p = [...document.querySelectorAll('pre')].map(e => e.scrollWidth - e.clientWidth);
+  return {t: Math.max(0, ...t, 0), p: Math.max(0, ...p, 0)};
+}"""
+
+
+def check_reflow_budget(browser, problems):
+    """표·코드블록이 390px 에서 넘치는 정도를 전 페이지에서 잰다."""
+    targets = []
+    for f in SITE.rglob("*.html"):
+        text = f.read_text(encoding="utf-8")
+        if 'http-equiv="refresh"' in text[:800]:
+            continue
+        if "table-wrap" in text or "<pre" in text:
+            targets.append(str(f.relative_to(SITE)))
+    pg = browser.new_page(viewport={"width": 390, "height": 844})
+    checked = 0
+    for rel in sorted(targets):
+        pg.goto("file://" + str((SITE / rel).resolve()))
+        r = pg.evaluate(REFLOW_JS)
+        checked += 1
+        if rel in REFLOW_EXEMPT:
+            continue
+        if r["t"] > REFLOW_TABLE_MAX:
+            problems.append(f"[리플로예산] {rel}: 표 넘침 +{r['t']}px (허용 {REFLOW_TABLE_MAX})")
+        if r["p"] > REFLOW_PRE_MAX:
+            problems.append(f"[리플로예산] {rel}: pre 넘침 +{r['p']}px (허용 {REFLOW_PRE_MAX})")
+    pg.close()
+    print(f"  리플로 예산: 표·pre 있는 {checked}쪽 @390px — "
+          f"표 ≤{REFLOW_TABLE_MAX}px · pre ≤{REFLOW_PRE_MAX}px (예외 {len(REFLOW_EXEMPT)}쪽)")
+
+
 def main():
     pages = SAMPLE
     if "--all" in sys.argv:
@@ -229,6 +274,7 @@ def main():
                 for rel in pages:
                     check_page(pg, rel, f"{w}·{scheme}", problems)
                 pg.close()
+        check_reflow_budget(b, problems)
         b.close()
 
     if problems:
