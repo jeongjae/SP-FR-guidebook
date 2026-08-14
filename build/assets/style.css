@@ -1337,17 +1337,25 @@ section.places .note { margin: 2px 0 10px; }
 
 /* 추천등급 배지 5종 — 모양으로 구분 */
 .grade { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.02em; }
-.grade::before { margin-right: 5px; font-size: 0.9em; }
+/* 마커는 유니코드 도형이 아니라 CSS 마스크다 (HIG 진단 1-1). --ic 는 icons.py 가
+   .grade-*::before 로 구워 넣는다. 색은 아래 .grade-* 가 currentColor 로 정하고,
+   모양(채움/외곽선/사선)이 색과 별개로 등급을 전달한다 — 색맹·두부 양쪽에 강하다. */
+.grade::before {
+  content: "";
+  display: inline-block;
+  width: 0.95em;
+  height: 0.95em;
+  margin-right: 5px;
+  vertical-align: -0.14em;
+  background-color: currentColor;
+  -webkit-mask: var(--ic) center / contain no-repeat;
+  mask: var(--ic) center / contain no-repeat;
+}
 .grade-essential   { color: var(--sig-critical-ink); }
-.grade-essential::before   { content: "■"; }
 .grade-priority    { color: var(--accent); }
-.grade-priority::before    { content: "●"; }
 .grade-optional    { color: var(--text-2); }
-.grade-optional::before    { content: "○"; }
 .grade-alternative { color: var(--sig-caution-ink); }
-.grade-alternative::before { content: "◇"; }
 .grade-excluded    { color: var(--muted); }
-.grade-excluded::before    { content: "▨"; }
 
 /* ================= 데일리 가이드 ================= */
 /* ================= 분할 챕터 — 빵부스러기 · 부제 ================= */

@@ -13,9 +13,12 @@ ICONS = {
  "today":   '<circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/>',
  "list":    '<path d="M4 6.5h16M4 12h16M4 17.5h16"/>',
  "back":    '<path d="M19 12H5.5M11.5 6l-6 6 6 6"/>',
- "region":  '<path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
+ # 가이드 탭 = 나침반. 장소 핀(ic-pin)과 겹치던 물방울 핀에서 교체 (HIG 진단 1-6).
+ # ic-region 은 하단탭 '가이드' 한 곳에만 쓰인다 — 지역 위치 마커로는 안 쓴다.
+ "region":  '<circle cx="12" cy="12" r="8.4"/><path d="M12 6.6 14.1 12 12 17.4 9.9 12Z" fill="currentColor" stroke="none"/>',
  "topic":   '<rect x="3.8" y="3.8" width="7" height="7" rx="1.6"/><rect x="13.2" y="3.8" width="7" height="7" rx="1.6"/><rect x="3.8" y="13.2" width="7" height="7" rx="1.6"/><rect x="13.2" y="13.2" width="7" height="7" rx="1.6"/>',
- "map":     '<circle cx="12" cy="12" r="7.6"/><path d="M12 2.6v3.4M12 18v3.4M2.6 12H6M18 12h3.4"/>',
+ # 지도 = 접힌 지도. 원+십자(나침반처럼 읽히던 것)에서 교체 (HIG 진단 1-6).
+ "map":     '<path d="M3 6.2 9 3.8l6 2.4 6-2.4v13.6l-6 2.4-6-2.4-6 2.4Z"/><path d="M9 3.8v13.6M15 6.2v13.6"/>',
  "clock":   '<circle cx="12" cy="12" r="8.4"/><path d="M12 7.2V12l3.4 2.1"/>',
  "gauge":   '<path d="M4 16.5a8.6 8.6 0 1 1 16 0"/><path d="M12 16.5 16 10"/><circle cx="12" cy="16.5" r="1.4" fill="currentColor" stroke="none"/>',
  "note":    '<path d="M6 3.6h8.2L19 8.4v12H6z"/><path d="M14 3.6v5h5"/><path d="M9 13h7M9 16.6h5"/>',
@@ -46,6 +49,18 @@ ICONS = {
  "filter":  '<path d="M3.8 5.6h16.4l-6.4 7.4v5.6l-3.6 1.8v-7.4z"/>',
 }
 
+# 장소 추천등급 5종. 유니코드 도형(■●○◇▨)을 마스크로 바꾼다 — CLAUDE.md 가
+# 금지한 방식이고 번들 폰트 범위 밖이라 기기에 따라 두부(□)가 된다 (HIG 진단 1-1).
+# 모양 언어는 그대로다: 채움=중요, 외곽선=보조, 사선=회피. 색맹 대비가 색이
+# 아니라 모양에 실려 있어야 한다. 채운 도형은 fill=currentColor 로 마스크에 싣는다.
+GRADE_ICONS = {
+ "essential":   '<path d="M12 2.6 21.4 12 12 21.4 2.6 12Z" fill="currentColor" stroke="none"/>',
+ "priority":    '<circle cx="12" cy="12" r="7.6" fill="currentColor" stroke="none"/>',
+ "optional":    '<circle cx="12" cy="12" r="7" stroke-width="2.4"/>',
+ "alternative": '<path d="M12 3 21 12 12 21 3 12Z" stroke-width="2.2"/>',
+ "excluded":    '<circle cx="12" cy="12" r="7.4" stroke-width="2.2"/><path d="M6.9 6.9 17.1 17.1" stroke-width="2.2"/>',
+}
+
 def uri(body):
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" '
            'stroke="#000" stroke-width="1.7" stroke-linecap="round" '
@@ -53,9 +68,11 @@ def uri(body):
     return 'url("data:image/svg+xml,' + quote(svg, safe="") + '")'
 
 def css():
-    """마스크 변수만 내보낸다. 상자·크기는 style.css 의 `.ic` 가 정한다."""
+    """마스크 변수만 내보낸다. 상자·크기는 style.css 의 `.ic`·`.grade` 가 정한다."""
     out = ["/* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */"]
     out += [f".ic-{n}::before {{ --ic: {uri(b)}; }}" for n, b in ICONS.items()]
+    # 등급 마커도 같은 마스크 파이프라인. 색은 .grade-* 가 currentColor 로 정한다.
+    out += [f".grade-{n}::before {{ --ic: {uri(b)}; }}" for n, b in GRADE_ICONS.items()]
     return "\n".join(out) + "\n"
 
 
