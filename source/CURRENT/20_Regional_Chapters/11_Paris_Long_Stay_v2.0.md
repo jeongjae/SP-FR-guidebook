@@ -149,7 +149,7 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | 29 | 9/26 토 | {{badge:rest|로컬 라이프}} | 늦은 시작·가벼운 운동 | Saint-Germain·Luxembourg·Seine | 무예약 |
 | 30 | 9/27 일 | {{badge:rest|도시 방향잡기}} | Tuileries | Palais Royal·Opéra 지구 | 무예약 |
 | 31 | 9/28 월 | {{badge:rest|로컬 라이프}} | 운동·세탁 | 쇼핑·북마레/주거지 | Fashion Week 개막 메모 |
-| 32 | 9/29 화 | {{badge:rest|박물관}} | 느린 아침 | Orsay 또는 Orangerie | 무예약 |
+| 32 | 9/29 화 | {{badge:rest|박물관}} | 느린 아침 | **Orsay** (화요일 — Orangerie 휴관) | 무예약 |
 | 33 | 9/30 수 | {{badge:p0|고정 경험}} | 여유로운 오전 | **Fashion Week 공개동선 반일** | 일찍 귀가 |
 | 34 | 10/1 목 | {{badge:rest|로컬 라이프}} | 운동·아침 | Place des Vosges·Bastille | Coulée verte·Seine 산책 후 동네 저녁 |
 | 35 | 10/2 금 | {{badge:pending|회복}} {{badge:rest|로컬 라이프}} | 늦은 시작 | 시장·서점·카페·스케치 | 무예약 |
@@ -627,7 +627,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 
 | 사이클 | 날짜 | 역할 | 반드시 지킬 것 | 이동 가능한 일정 |
 |---|---|---|---|---|
-| 1. 정착과 방향잡기 | 9/24–9/29 | 체크인 완충, 숙소생활권, Saint-Germain, 고전 도심, 박물관 1곳 | 9/24 대형 일정 금지·첫 장보기·도착 다음 날 무공연 | 9/29 박물관만 Orsay/Orangerie 교환 |
+| 1. 정착과 방향잡기 | 9/24–9/29 | 체크인 완충, 숙소생활권, Saint-Germain, 고전 도심, 박물관 1곳 | 9/24 대형 일정 금지·첫 장보기·**9/29 는 Orsay 고정** | 9/29 박물관은 다른 날과만 교환 (Orangerie 대체 불가) |
 | 2. 공개문화와 메인 이벤트 | 9/30–10/5 | Fashion Week, Rossini, 회복, 선택문화, Arc, 회복 | 10/2·10/5 회복일과 10/4 저녁 비움 | 10/3 선택문화만 자유 교체 |
 | 3. 동네·축제·마무리 | 10/6–10/9 | 동부 파리, Vendanges, 송별 저녁, 출국 | 10/9 낮 이후 고정행사 금지 | — |
 
@@ -697,7 +697,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 9/26 토 | 로컬 라이프 | 늦은 시작·가벼운 운동 | Saint-Germain·Luxembourg·Seine | 무예약 | 2–3 |
 | 9/27 일 | 방향잡기 | Tuileries | Palais Royal·Opéra 지구 | 무예약 | 3 |
 | 9/28 월 | 로컬 라이프 | 운동·세탁 | 쇼핑·북마레/주거지 | 이른 귀가 | 2 |
-| 9/29 화 | 박물관 | 느린 아침 | Orsay 또는 Orangerie | 비움 | 3–4 |
+| 9/29 화 | 박물관 | 느린 아침 | **Orsay** — Orangerie 는 화요일 휴관 | 비움 | 3–4 |
 | 9/30 수 | Fashion Week | 느린 오전 | Palais de Tokyo 권역→Montaigne→Saint-Honoré→Palais Royal | 늦은 행사 없음 | 3 |
 | 10/1 목 | 로컬 라이프 | 운동·느린 아침 | Place des Vosges·Bastille | Coulée verte·Seine 산책 | 2–3 |
 | 10/2 금 | 회복·로컬 라이프 | 늦은 시작 | 시장·서점·카페·스케치 | 무예약 | 1–2 |
@@ -818,21 +818,26 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 ---
 
 ## 10. Day 6 — 9월 29일 화요일
-### Orsay 또는 Orangerie — 대형관 하나만 보는 박물관 날 {{badge:rest|박물관}}
+### Orsay — 대형관 하나만 보는 박물관 날 {{badge:rest|박물관}}
+
+> ⚠ **이 날은 화요일이라 Orangerie 를 고를 수 없다.**
+> Musée de l’Orangerie 는 **화요일 휴관**이다 (공식 사이트, 2026-08-14 확인).
+> 원고가 오래 "Orsay 또는 Orangerie 택1" 로 적어 두었지만 9/29 에는 선택지가 하나뿐이다.
+> Orangerie 를 보고 싶으면 **10/3 선택 문화일**로 옮긴다 — 그날은 토요일이다.
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
 | 08:30–10:00 | 느린 아침·카페 | 예약시간 전 충분히 쉬기 |
 | 10:00–12:00 | 숙소업무·가벼운 산책 | 박물관 전 체력 보존 |
 | 12:00–13:00 | 숙소 또는 근처 점심 | 대형관 안에서 끼니를 미루지 않음 |
-| 13:30–17:00 | **Musée d’Orsay 또는 Musée de l’Orangerie 중 하나** | 시간지정권, 3시간 30분 상한 |
+| 13:30–17:00 | **Musée d’Orsay** | 시간지정권, 3시간 30분 상한. 화요일 개관 (월요일 휴관) |
 | 17:00–18:00 | Seine 또는 Tuileries에서 완충 | 두 번째 미술관 금지 |
 | 저녁 | 숙소식 또는 동네 저녁 | 고정행사 없음 |
 
 **피로도:** 3–4/5. Orsay를 택하면 인상주의 또는 19세기 조각 한 권역만 추가한다.
 
 ### 금지 규칙
-- Orsay와 Orangerie를 같은 날 모두 보지 않는다.
+- Orsay와 Orangerie를 같은 날 모두 보지 않는다. 9/29 에 Orangerie 는 **휴관이라 애초에 불가능하다.**
 - 박물관 뒤에 야간공연이나 Fashion Week 비공개 쇼를 붙이지 않는다.
 
 ---
@@ -913,10 +918,17 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
 | 08:00–09:00 | 아침·날씨·티켓·교통 최종 확인 | 공식 개장·경주시간에 맞춰 이동 역산 |
-| 09:00–10:30 전후 | ParisLongchamp 이동 | 환승·입장 대기 여유 |
+| 09:00–10:30 전후 | ParisLongchamp 이동 | **무료 셔틀**을 쓴다 — 메트로로 Porte Maillot(1호선) 또는 Porte d'Auteuil(10호선)까지 간 뒤 경마장행 무료 셔틀버스. 환승·입장 대기 여유 |
 | 오전–오후 | **Qatar Prix de l’Arc de Triomphe 메인 레이스 데이** | 경기장 식사·휴식·관람을 포함한 거의 종일 일정 |
 | 종료 후 | 혼잡을 감안해 숙소 귀환 | 추가 명소·쇼핑 금지 |
 | 저녁 | 숙소식·완전 휴식 | **오페라·식당 예약·야간행사 없음** |
+
+> **경마장까지는 무료 셔틀이 정답이다**
+> ParisLongchamp 은 지하철역이 없다. France Galop 공식 안내는 **Porte d'Auteuil 과 Porte Maillot
+> 두 곳에서 무료 셔틀버스**를 운행한다고 명시한다 (2026-08-14 확인). 첫차 시각·배차 간격·
+> 막차 시각은 회차마다 공지되므로 **당일 공식 공지로 확인한다** {{badge:pending|첫차·배차·막차 확인}}.
+> 돌아올 때도 같은 두 곳으로 나오며, **메인 레이스 직후가 가장 붐빈다** — 한 경주를 흘려보내고
+> 나오는 편이 낫다.
 
 **피로도:** 5/5. France Galop 공식 페이지에서 10/3–4 개최와 10/4 메인 레이스 데이, `BOOK NOW` 상태를 확인했다. 같은 날 14:30 Il Barbiere는 충돌로 제외한다.
 
@@ -1049,7 +1061,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 9/26 | 09:30 이후 | Saint-Germain 부근 점심 | 도착 다음 날 과도한 보행 | Seine 연장 | Luxembourg까지만 |
 | 9/27 | 10:30 Tuileries | Palais Royal 점심 | Garnier 입장 대기 | 내부 방문 | 외관·Opéra 지구만 |
 | 9/28 | 오전 운동·세탁 | 숙소 점심 | Fashion Week 혼잡 | 북마레 연장 | 숙소권 쇼핑만 |
-| 9/29 | 박물관 30분 전 | 관람 전 점심 | 대형관 2곳 욕심 | 두 번째 관 | Orsay/Orangerie 택1 |
+| 9/29 | 박물관 30분 전 | 관람 전 점심 | 대형관 2곳 욕심 | 두 번째 관 | Orsay 하나만 (화요일) |
 | 9/30 | 13:00 Palais de Tokyo 권역 | 진입 전 점심 | 미확인 팝업 추종 | Rue Saint-Honoré 연장 | 공식 공개동선만 |
 | 10/1 | 14:00 Place des Vosges | 17:30 이른 저녁 | 낮 일정+오페라 과밀 | 운하·쇼핑 | Bastille 산책+공연 |
 | 10/2 | 11:00 이후 | 시장/숙소 점심 | 회복일을 공연으로 채움 | 모든 저녁행사 | 시장+서점+카페 |
@@ -1079,7 +1091,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 | 문화 1차 | Il Barbiere 10/1·Hamlet 10/9 | 10/7 Barbiere·10/6 Hamlet 백업 또는 O2 축소 |
 | 스포츠 | Qatar Prix de l’Arc 10/4 | 취소 시 10/4 가벼운 산책·스케치 회복모듈 |
 | 조건부 행사 | Este Mundo 10/8·Clos Montmartre 내부방문 | 공연은 빼고, 포도밭은 외관·축제만 유지 |
-| 미술관 | Orsay/Orangerie·10/3 선택관 | 시간지정 실패 시 동네·서점 모듈 |
+| 미술관 | 9/29 Orsay · 10/3 선택관(Orangerie 가능) | 시간지정 실패 시 동네·서점 모듈 |
 | 출발 72시간 전 | CDG 교통·보안·파업 | 택시/공식차량 조기출발 |
 
 ---
@@ -1146,7 +1158,7 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 | 공연 2회 | **우선 추천** | 파리의 저녁문화를 여행의 중심으로 만듦 |
 | PSG 경기 | **조건부 우선 추천** | UCL 홈경기 일정·정식표 확보 시만 |
 | Bourse de Commerce | **선택** | 10/7 신규전과 건축 관심 시 |
-| Orangerie | **선택** | Giverny 대체 또는 Monet 집중일 |
+| Orangerie | **선택** | Giverny 대체 또는 Monet 집중일. **화요일 휴관** — 9/29 에는 불가, 10/3 토요일로 |
 | Fondation Louis Vuitton | **제외** | 신규전 개막이 10/9 — 그날 출국한다 |
 | Versailles | **근교 선택 1** | 대표성은 최고이나 하루 전체 소요 |
 | Giverny | **근교 선택 2** | 날씨 좋은 날, Monet 관심과 연결 |

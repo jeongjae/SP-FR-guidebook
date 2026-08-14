@@ -12,10 +12,10 @@
   "totalDistance": "TER 왕복 + 도보 약 4km",
   "fatigue": "3",
   "hotel": {
-    "name": "Hôtel de Verdun (후보)",
-    "lat": 45.74965,
-    "lng": 4.82968,
-    "status": "candidate"
+    "name": "Lagrange Aparthotel Lyon Lumière",
+    "lat": 45.746467,
+    "lng": 4.868933,
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -95,8 +95,8 @@
       "end": "21:00",
       "name": "Lyon 귀환",
       "category": "hotel",
-      "lat": 45.74965,
-      "lng": 4.82968,
+      "lat": 45.746467,
+      "lng": 4.868933,
       "summary": "역에서 바로 택시 — 저녁은 숙소권 간단식",
       "menu": null,
       "reservation": null,
@@ -175,7 +175,7 @@
   "needsReview": [
     "9/23 TER 시각표·직행 여부 확정",
     "크루즈 운항·요금 재확인",
-    "Lyon 숙소 후보 승인"
+    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-26",

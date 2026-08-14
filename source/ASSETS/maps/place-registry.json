@@ -773,21 +773,22 @@
     },
     {
       "id": "lyon-stay-candidate",
-      "name": "Hôtel de Verdun",
+      "name": "Lagrange Aparthotel Lyon Lumière (확정 숙소)",
       "city": "Lyon",
       "type": "accommodation",
-      "lat": 45.74965,
-      "lng": 4.82968,
+      "lat": 45.746467,
+      "lng": 4.868933,
       "googlePlaceId": "",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=H%C3%B4tel+de+Verdun",
-      "address": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=81-85+Cours+Albert+Thomas%2C+69003+Lyon",
+      "address": "81-85 Cours Albert Thomas, 69003 Lyon",
       "private": false,
-      "approximate": true,
-      "optional": true,
-      "status": "candidate",
+      "approximate": false,
+      "optional": false,
+      "status": "confirmed",
       "legacySources": [
         "75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"
-      ]
+      ],
+      "coordinatesVerified": "OSM Nominatim, 2026-08-14"
     },
     {
       "id": "place-bellecour",

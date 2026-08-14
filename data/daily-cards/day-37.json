@@ -37,11 +37,11 @@
       "order": 2,
       "start": "09:00",
       "end": "10:30",
-      "name": "ParisLongchamp 이동",
+      "name": "ParisLongchamp 이동 — 무료 셔틀",
       "category": "transport",
       "lat": 48.8577383,
       "lng": 2.2329812,
-      "summary": "환승·입장 대기 여유",
+      "summary": "메트로 Porte Maillot(1) 또는 Porte d'Auteuil(10)까지 간 뒤 경마장행 무료 셔틀버스. 환승·입장 대기 여유",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -69,7 +69,7 @@
       "category": "hotel",
       "lat": 48.83966,
       "lng": 2.34644,
-      "summary": "추가 명소·쇼핑 금지, 저녁은 숙소식",
+      "summary": "셔틀은 메인 레이스 직후가 가장 붐빈다 — 한 경주 흘려보내고 나온다. 추가 명소·쇼핑 금지, 저녁은 숙소식",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -105,7 +105,7 @@
     }
   ],
   "transport": [
-    "메트로+환승 왕복"
+    "메트로 + 무료 셔틀 (Porte Maillot · Porte d'Auteuil)"
   ],
   "food": [
     "경기장 식사",
@@ -127,8 +127,8 @@
   },
   "needsReview": [
     "Arc 티켓 예매·수령 방식 확정",
-    "Longchamp 접근 교통(셔틀/메트로) 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "Arc 무료 셔틀 첫차·배차·막차 시각 당일 공식 공지 확인 (운행 자체는 2026-08-14 France Galop 확인)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-11-10월4일",

@@ -1215,7 +1215,7 @@
           "placeId": "lyon-stay-candidate",
           "order": 3,
           "plannedTime": "도착 후 30–45분 택시",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 큰 짐은 메트로 환승 금지, 공식 택시승강장."
+          "note": "확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."
         }
       ],
       "segments": [
@@ -1251,7 +1251,7 @@
           "placeId": "lyon-stay-candidate",
           "order": 0,
           "plannedTime": "09:10 출발 Metro D",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."
         },
         {
           "placeId": "vieux-lyon",
@@ -1294,7 +1294,7 @@
           "placeId": "lyon-stay-candidate",
           "order": 0,
           "plannedTime": "09:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."
         },
         {
           "placeId": "croix-rousse",
@@ -1348,7 +1348,7 @@
           "placeId": "lyon-stay-candidate",
           "order": 0,
           "plannedTime": "06:40–07:20 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."
         },
         {
           "placeId": "lyon-part-dieu",
@@ -1391,7 +1391,7 @@
           "placeId": "lyon-stay-candidate",
           "order": 0,
           "plannedTime": "기차 2시간 전 체크아웃",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."
         },
         {
           "placeId": "lyon-part-dieu",
