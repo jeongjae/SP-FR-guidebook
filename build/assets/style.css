@@ -2292,6 +2292,7 @@ footer {
 .rz-seg.rz-b-wait   { background: var(--sig-rest); }
 .rz-seg.rz-b-none   { background: var(--muted); }
 .rz-seg.rz-b-cancel { background: var(--border); }
+.rz-seg.rz-b-blocked { background: var(--sig-critical); }   /* 잠금 BLOCKED */
 
 /* ---- 도구 막대. 상단바 아래에 붙어 따라온다 — 28장을 스크롤해 내려가도
    상태 필터가 늘 손 닿는 곳에 있다. ---- */
@@ -2425,6 +2426,7 @@ footer {
 /* 취소 건은 바탕을 어둡게 하지 않는다 — sunk 위에서는 muted 글자가 6.5:1 로
    떨어져 본문 기준(7:1)을 못 넘긴다. 취소 표시는 파선 테두리와 취소선이 맡는다. */
 .rz-cancel  { border-left-color: var(--border); border-style: dashed; }
+.rz-blocked { border-left-color: var(--sig-critical); }   /* 잠금 BLOCKED — 주의 */
 .rz-card.is-target { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 
 .rz-head {
@@ -2472,6 +2474,7 @@ a.rz-day:hover { background: var(--accent-soft); }
 .rz-b-wait    { color: var(--sig-rest); }
 .rz-b-none    { color: var(--muted); border-style: dashed; }
 .rz-b-cancel  { color: var(--muted); text-decoration: line-through; }
+.rz-b-blocked { color: var(--sig-critical-ink); }
 
 .rz-title {
   display: flex;
