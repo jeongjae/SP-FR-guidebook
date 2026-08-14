@@ -1,6 +1,6 @@
 # 116. Phase 10 Official-Source Fact Verification Register v1.0
 
-**검증일:** 2026-08-04
+**검증일:** 2026-08-04 · **2차 검증 2026-08-14 (F024–F036, 콘텐츠 품질 R1)**
 **원칙:** 공식 운영기관·지자체·국립공원·관광기관의 현재 웹페이지를 우선한다.
 
 ## 상태 정의
@@ -40,6 +40,19 @@
 | F021 | Avignon/Arles | Arènes d’Arles | 운영 | VERIFIED_CURRENT | Arles 관광청 현행 안내상 9/14–30 매일 09:00–19:00. 행사·JEP로 동선이 바뀔 수 있음. | [공식](https://www.arlestourisme.com/fr/d%C3%A9tails.html?culture=L%27+Amphith%C3%A9%C3%A2tre+romain&ident=5538604%3F%3F) | 9/19 출발 전 공식 페이지 재확인 |
 | F022 | Avignon/Arles | Cloître Saint-Trophime | 운영 | VERIFIED_CURRENT | Arles 관광청 현행 안내상 9/14–30 매일 09:00–19:00. Théâtre antique와 함께 볼 때 Saint-Trophime 또는 Fondation 중 하나만 선택. | [공식](https://www.arlestourisme.com/fr/d%C3%A9tails.html?culture=Clo%C3%AEtre+Saint+Trophime&ident=5538418) | 9/19 운영·마지막 입장 재확인 |
 | F023 | Avignon/Arles | Journées européennes du patrimoine | 운영·행사 | DATE_GATE | 2026 공식 날짜는 9/19–20. 공식 프로그램에 Théâtre antique와 Arènes의 무료 플래시 투어가 게시되어 있으나 회차·집합장소·예약·혼잡은 변동 가능. | [공식](https://journeesdupatrimoine.culture.gouv.fr/w/377623/evenement/19064472/visite-flash-du-theatre-antique) | Arènes 프로그램도 공식 포털에서 함께 확인하고 모든 세부는 **출발 전 재확인** |
+| F024 | Barcelona | Sagrada Família | 요금 | VERIFIED_CURRENT | Basilica €26 · 가이드 €30 · 타워 €36 · 가이드+타워 €40 (2026-08-14). | [공식](https://sagradafamilia.org/en/prices) | 예약화면에서 최종 확정 |
+| F025 | Barcelona | MACBA | 운영·요금 | VERIFIED | 여름(6/25–9/24) 월·수·목·금·토 10:00–20:00, 일 10:00–15:00, 화 휴관. 온라인 €13.50 · 현장 €15. 8/31 월요일 개관. | [공식](https://www.macba.cat/en/plan-your-visit/) | 8/31 방문 48시간 전 전시실 폐쇄 확인 |
+| F026 | Barcelona | Recinte Modernista de Sant Pau | 운영·요금 | VERIFIED | 4–10월 매일 09:30–18:30(월요일 개관). 자율관람 14시 전 €18 · 14시 이후 €17. 8/30 14:30 입장은 €17 요율. | [공식](https://santpaubarcelona.org/en/prepara-la-teva-visita/) | 원고에 없던 운영·요금을 추가 |
+| F027 | Sitges | Museu del Cau Ferrat · Maricel | 요금 | CORRECTED | 통합권 일반 €12 · 감면 €8 · 초감면 €6. **원고의 €6 은 초감면 요율이었다** — 일반 €12/인, 2인 €24 로 정정. | [공식](https://museusdesitges.cat/ca/tarifes) | 예상 현지비용표 총계 함께 정정 |
+| F028 | Aix | Musée Granet | 운영·요금 | VERIFIED | 2026-11-01 까지 화–일 10:00–18:00, 월 휴관. 특별전 기간(7/4–11/1) 일반 €14. | [공식](https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions) | 9/10 방문 전 재확인 |
+| F029 | Luberon | Village des Bories | 운영·요금 | VERIFIED | 9월 매일 09:00–19:00, 마지막 입장 마감 30분 전, 성인 €8. | [공식](https://luberon.fr/tourisme/les-sites-touristiques/monuments/annu+village-des-bories+1712.html) | 9/15 방문 전 재확인 |
+| F030 | Luberon | Sentier des Ocres | 운영·요금 | CORRECTED | 9월 09:30–18:30 개방, 탐방로 퇴장 19:00, 성인 €3.50. 원고의 '09:30–19:00 · 마지막 입장 18:30' 표현을 공식 표기에 맞춰 정정. | [공식](https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/) | 우천·산불 시 폐쇄 당일 확인 |
+| F031 | Paris | Musée du Louvre | 운영·요금 | VERIFIED | 화요일 휴관. 월·목·토·일 09:00–18:00, 수·금 21:00. 마지막 입장 마감 1시간 전. 비EEA €32 · EEA €22. | [공식](https://www.louvre.fr/en/visit) | 9/28 시간지정권 예약 |
+| F032 | Girona | Girona Cathedral | 요금 | VERIFIED_CURRENT | 대성당+Sant Feliu 통합권 일반 €7.50, 미술관 포함 €12. | [공식](https://tickets.catedraldegirona.cat/en) | 9/1 축소안 실행 시 현장 확인 |
+| F033 | Paris | Musée de l’Orangerie | 휴관 | CORRECTED | **화요일 휴관.** 9/29(화)에 'Orsay 또는 Orangerie 택1' 로 적혀 있던 선택지를 Orsay 고정으로 정정하고 Orangerie 는 10/3 후보로 이동. | [공식](https://www.musee-orangerie.fr/en/visit-orangerie) | 10/3 방문 시 재확인 |
+| F034 | Aix | Atelier des Lauves (Cézanne) | 운영·요금·예약 | VERIFIED | 2026 시즌 7/4–10/31. 9월 매일 09:00–18:00(마지막 관람 17:00), 10월 10:00–17:00. 예약 필수. 오디오 €9.50 · 가이드 €12 · 심화 €15. | [공식](https://www.cezanne-en-provence.com/L-Atelier-des-Lauves?lang=fr) | 9/12 시간지정 예약 |
+| F035 | Paris | ParisLongchamp (Arc) | 접근 | DATE_GATE | Porte d’Auteuil·Porte Maillot 에서 경마장행 **무료 셔틀** 운행 확인. 첫차·배차·막차는 회차 공지에서만 확정된다. | [공식](https://www.france-galop.com/en/content/qatar-prix-de-larc-de-triomphe-worlds-greatest-horse-race) | 10/4 당일 공지 확인 |
+| F036 | Barcelona | Hertz (스페인 렌터카) | 국경운전 | VERIFIED | 스페인 밖 운행 시 크로스보더 요금이 부과되고, **신고하지 않으면 제3자·CDW·도난·SuperCover 가 무효**가 된다. 프랑스는 허용 국가. | [공식](https://www.hertz.com/rentacar/reservation/reviewmodifycancel/templates/rentalTerms.jsp?KEYWORD=DRIVINGRESTRICTIONS&EOAG=MADT50) | 9/1 인수 창구에서 프랑스 주행 신고 |
 
 ## 범위와 한계
 

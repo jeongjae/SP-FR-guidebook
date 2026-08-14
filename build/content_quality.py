@@ -50,9 +50,16 @@ DOSSIER_ELEMENTS = {
 }
 
 # C3 — 운영정보를 말하는 줄인가. 우리 일정 시각(계획값)은 대상이 아니다.
-OPERATION_RE = re.compile(r"(개관|운영시간|휴관|휴무|입장료|요금|€\s?\d|무료입장|영업)")
+# `영업소`(렌터카 지점)는 운영정보가 아니라 장소다 — 영업시간·영업일만 잡는다.
+OPERATION_RE = re.compile(r"(개관|운영시간|휴관|휴무|입장료|요금|€\s?\d|무료입장|영업(?!소))")
 NUMBER_RE = re.compile(r"(€\s?\d|\d{1,2}:\d{2}|\d+\s?분|\d+시|\d+\s?유로)")
-EVIDENCE_RE = re.compile(r"(공식|출처|badge:pending|https?://|재확인|확인)")
+# 근거로 인정하는 표기. `계획가`·`확정` 은 **날짜를 요구한다** — 상속을 허용하는
+# 대신 통과 문턱을 좁혔다. 맨 '확인' 두 글자로는 통과하지 않는다.
+EVIDENCE_RE = re.compile(
+    r"(공식\s*(사이트|페이지|안내|정보|출처)|출처\s*[:：]|https?://|badge:pending"
+    r"|20\d\d-\d\d(-\d\d)?\s*확인|20\d\d년?\s*\d{1,2}월\s*확인|계획가\(20\d\d-\d\d"
+    r"|확정\(20\d\d-\d\d|출발 전 재확인|\[재확인\]|기록\(20\d\d-\d\d"
+    r"|복수 출처 확인|\|\s*확인\s*\|)")
 
 # C6 — 본문에 남으면 안 되는 잔재
 CANCELLED_TERMS = ("Hamlet", "Il Barbiere", "Este Mundo")
@@ -109,6 +116,87 @@ def prose_length(body: str) -> int:
     return len("".join(keep))
 
 
+def walk_with_context(text: str):
+    """(줄번호, 줄, 근거유무) — 근거는 그 줄이 속한 **블록**에서 상속된다.
+
+    사람이 읽는 단위를 따른다.
+    - 문단은 한 덩어리다. 문단 어느 줄에 출처가 있으면 그 문단 전체가 근거를 갖는다.
+    - 표·목록은 바로 앞 문단(또는 인용 쪽지)과 표 머리글에서 상속한다.
+    - 하위 헤딩은 상위 헤딩의 근거를 물려받는다 — `## 13. 레스토랑` 아래
+      `계획가(2026-08 조사)` 쪽지가 있으면 `### 13.2` 도 그 안이다.
+
+    상속을 허용하는 대신 **근거로 인정하는 표기는 좁다** (EVIDENCE_RE) —
+    `계획가`·`확정` 은 날짜를 요구하고, 맨 '확인' 두 글자로는 통과하지 않는다.
+    """
+    lines = text.splitlines()
+    n_lines = len(lines)
+    result = [False] * (n_lines + 1)
+
+    stack = []          # [(heading_level, evidence)]
+    prelude_ev = False
+    table_ev = False
+    in_table = False
+    para: list[int] = []
+    para_ev = False
+
+    def flush_para():
+        nonlocal para, para_ev, prelude_ev
+        if para:
+            for idx in para:
+                result[idx] = result[idx] or para_ev or prelude_ev or _ancestor()
+            # 근거 쪽지는 다음 헤딩까지 산다. 중간의 라벨 문단('**주문 예시 A**')이
+            # 쪽지를 지워버리면 바로 아래 목록이 근거를 잃는다.
+            prelude_ev = prelude_ev or para_ev
+        para, para_ev = [], False
+
+    def _ancestor():
+        return any(ev for _, ev in stack)
+
+    for i, line in enumerate(lines, 1):
+        stripped = line.strip()
+        own = bool(EVIDENCE_RE.search(line))
+
+        if stripped.startswith("#"):
+            flush_para()
+            level = len(stripped) - len(stripped.lstrip("#"))
+            while stack and stack[-1][0] >= level:
+                stack.pop()
+            stack.append((level, own))
+            prelude_ev = table_ev = in_table = False
+            result[i] = own or _ancestor()
+            continue
+
+        if not stripped:
+            flush_para()
+            in_table = False
+            continue
+
+        if stripped.startswith("|"):
+            flush_para()
+            if not in_table:                       # 표의 첫 줄 = 머리글
+                in_table, table_ev = True, own or prelude_ev
+            result[i] = own or table_ev or _ancestor()
+            continue
+
+        in_table = False
+        if stripped.startswith(">"):
+            # 인용 쪽지는 뒤따르는 표·목록의 근거가 된다
+            prelude_ev = own or prelude_ev
+            result[i] = own or prelude_ev or _ancestor()
+            continue
+
+        if stripped.startswith(("- ", "* ", "1.")):
+            result[i] = own or prelude_ev or _ancestor()
+            continue
+
+        para.append(i)
+        para_ev = para_ev or own
+
+    flush_para()
+    for i, line in enumerate(lines, 1):
+        yield i, line, result[i]
+
+
 def has_element(body: str, aliases) -> bool:
     return any(re.search(rf"(^|\n)\s*[-*]?\s*\*{{0,2}}{a}", body) for a in aliases)
 
@@ -153,10 +241,10 @@ def collect():
     op_total = op_evidenced = 0
     unsourced = []
     for path in sorted(CHAPTER_DIR.glob("*.md")):
-        for n, line in enumerate(read(path).splitlines(), 1):
+        for n, line, evidence in walk_with_context(read(path)):
             if OPERATION_RE.search(line) and NUMBER_RE.search(line):
                 op_total += 1
-                if EVIDENCE_RE.search(line):
+                if evidence:
                     op_evidenced += 1
                 else:
                     unsourced.append({"file": path.name, "line": n,
@@ -217,8 +305,11 @@ def collect():
 
 
 # 라운드가 끝날 때마다 그 라운드의 지표를 여기서 조인다 (계획서 §4 회귀 방지).
-# R0 은 측정만 한다 — 지금 잠그면 baseline 자체가 실패한다.
-GATES: dict[str, tuple[str, int]] = {}
+# R1 (2026-08-14): 근거 없는 운영정보를 0 으로 잠근다. 앞으로 출처·확인일·pending
+# 없이 개관시간이나 요금을 새로 쓰면 이 게이트에서 멈춘다.
+GATES: dict[str, tuple[str, int]] = {
+    "무근거 운영정보": ("C3.unsourced", 0),
+}
 
 
 def gate(data) -> int:

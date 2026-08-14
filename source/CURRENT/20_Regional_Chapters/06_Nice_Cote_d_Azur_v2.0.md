@@ -307,7 +307,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 이번 챕터의 우선순위 | **Nice 시내 1일, Cannes 1일, Monaco 1일, Nice 생활·회복 1일, 9/9 Saint-Paul-de-Vence·Grasse 경유 후 Aix 이동** |
 | 미술관 전략 | 9/8에는 화요일 운영하는 Musée de la Photographie Charles Nègre만 선택. Matisse·Chagall은 모두 휴관 |
 | 숙소 1순위권 | Place Masséna 북동, Jean Médecin 동쪽, Garibaldi–Port 서쪽 |
-| 숙박예산 | 2인 5박 총액 **€700–1,000 내외**를 계획범위로 사용. 주방·세탁·조용한 방향이 명확하면 상단 허용 |
+| 숙박예산 | **확정(2026-08-13)** — 실제 예약은 Palais ALZIRA. 아래는 선정 당시 계획범위 €700–1,000. 주방·세탁·조용한 방향이 명확하면 상단 허용 |
 | 필수 경험 | Cours Saleya, Vieux Nice, Castle Hill, Cannes Forville·Le Suquet, Monaco-Ville·Palace Square, 9/8 생활형 시장·완충시간 |
 | 선택 경험 | Matisse 또는 Chagall, Cimiez 정원, Nice Port, Saint-Paul 골목 스케치, Grasse 향수 체험 |
 | 운동 | Jason Promenade 5–8km 러닝 1–2회, Julia는 9/8 수영 선택 |
@@ -776,6 +776,8 @@ Jason·Julia의 선호를 반영해 이번 챕터에서 미술관은 기본안�
 - 설명: 니스에서 꼭 먹어볼 전형적인 지역음식을 보여주는 이미지.
 
 ### 16.1 저녁식당 추천
+
+> 가격은 **계획가(2026-08 조사)** — 메뉴·구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 
 | 식당 | 성격 | 꼭 먹을 것 | 1인 예산 | 예약 |
 |---|---|---|---:|---|
