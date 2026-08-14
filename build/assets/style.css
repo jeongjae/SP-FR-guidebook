@@ -443,6 +443,16 @@ body.has-large-title.scrolled-past .tb-crumbs { opacity: 1; }
 .tb-sep { flex: 0 0 auto; padding: 0 3px; color: var(--muted); }
 .tb-crumbs-none { flex: 1 1 auto; }
 
+/* 좁은 화면에서 4단계 경로는 조상과 현재가 둘 다 잘렸다 —
+   `홈 › 지역 › Avi… › Palais de…`. 잘린 조상은 정보가 아니라 소음이다.
+   중간 축 링크를 접어 `홈 › Avignon › Palais des Papes` 로 만든다.
+   홈은 남긴다 — 크롬에서 홈으로 가는 유일한 문이다 (하단탭에 홈 없음).
+   2단계(홈›현재)는 중간이 없어 영향이 없고, 3단계 이상에서만 접힌다. */
+@media (max-width: 480px) {
+  .tb-crumbs a:not(:first-of-type):not(:last-of-type),
+  .tb-crumbs .tb-sep:not(:first-of-type):not(:last-of-type) { display: none; }
+}
+
 
 
 /* ================= 챕터 서브내비 ================= */
