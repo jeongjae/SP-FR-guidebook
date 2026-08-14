@@ -136,6 +136,14 @@
   --rail-x: 5.75rem;        /* 타임라인 레일 x — 매직넘버 제거 */
   --dur: 160ms;
   --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  /* 여태 참조만 되고 정의가 없던 토큰들 (HIG 진단 6-1). var() 는 미정의면 계산
+     시점에 무효가 되어 선언째 사라진다 — .guide-photo 등 114쪽의 그림자가 그렇게
+     조용히 안 나왔다. 이제 정의한다. 재발은 check_tokens 가드가 막는다. */
+  --shadow-1:    0 1px 2px rgba(15, 26, 30, 0.06);
+  --surface-2:   #E9ECF3;
+  --sig-es-ink:  #5E4000;          /* ES 금색 글자용 (소비자는 레거시 지도 CSS) */
+  --marker-color: var(--accent);   /* 마커 기본색 — 개별 마커가 인라인으로 덮는다 */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -168,6 +176,8 @@
     --bar-bg:    rgba(16, 26, 29, 0.82);
     --tabbar-bg: rgba(16, 26, 29, 0.97);
     --separator: rgba(227, 235, 234, 0.24);
+    --shadow-1:  0 1px 2px rgba(0, 0, 0, 0.32);
+    --surface-2: #18262A;
   }
 }
 
@@ -206,6 +216,16 @@ img { max-width: 100%; height: auto; }
 [data-size="s"] body, body[data-size="s"] { font-size: 16px; }
 [data-size="l"] body, body[data-size="l"] { font-size: 19px; }
 [data-size="xl"] body, body[data-size="xl"] { font-size: 21px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* 포커스 — 키보드 접근성 */
 :focus-visible {
