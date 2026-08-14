@@ -1190,6 +1190,25 @@ thead th .badge, thead th .grade { color: var(--accent-ink); }
 .fatigue[data-v="4"] i.on { background: var(--sig-caution); }
 .fatigue[data-v="5"] i.on { background: var(--sig-critical); }
 
+/* 적합도 — ★★★★★ 를 대신하는 막대+숫자 (HIG 진단 1-2). 별 글리프처럼
+   두부가 되지 않고, 색을 빼도 채운 칸 수로 값이 읽힌다. 피로도와 같은 원리. */
+.stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: -2px;
+  font-variant-numeric: tabular-nums;
+}
+.stars .sb { display: inline-flex; gap: 2px; }
+.stars .sb i {
+  display: inline-block;
+  width: 14px; height: 8px;
+  border-radius: 2px;
+  background: var(--surface-sunk);
+}
+.stars .sb i.on { background: var(--sig-caution); }
+.stars b { font-weight: 800; font-size: 0.85em; }
+
 /* ================= 대표 사진 · 편집 도식 ================= */
 figure.hero-photo, figure.ed-visual { margin: 16px 0 20px; }
 figure.hero-photo img, figure.ed-visual img {

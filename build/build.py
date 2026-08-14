@@ -1095,6 +1095,7 @@ def strip_visual_tokens(md_text):
 
 BADGE_RE = re.compile(r"\{\{badge:([a-z0-9]+)\|([^}|]+)\}\}")
 GRADE_RE = re.compile(r"\{\{grade:([a-z]+)\|([^}|]+)\}\}")
+STAR_RE = re.compile(r"★{1,5}")
 BADGE_KINDS = {"p0", "pending", "done", "rest"}
 GRADE_KINDS = {"essential", "priority", "optional", "alternative", "excluded"}
 
@@ -1135,7 +1136,15 @@ def render_inline_tokens(text):
         label = GRADE_EN.get(kind, label)
         return f'<span class="grade grade-{kind}">{html.escape(label)}</span>'
 
-    return GRADE_RE.sub(grade, BADGE_RE.sub(badge, text))
+    # ★★★★★ 적합도 → 막대+숫자. 별 글리프는 기호가 곧 값이라 두부가 되면
+    # 평가가 통째로 사라진다 (HIG 진단 1-2). 피로도와 같은 막대 컴포넌트로 통일.
+    def stars(m):
+        n = len(m.group())
+        cells = "".join(f'<i class="{"on" if k < n else ""}"></i>' for k in range(5))
+        return (f'<span class="stars" role="img" aria-label="적합도 {n}점 (5점 만점)">'
+                f'<span class="sb">{cells}</span><b>{n}.0</b></span>')
+
+    return STAR_RE.sub(stars, GRADE_RE.sub(grade, BADGE_RE.sub(badge, text)))
 
 
 def annotate_tables(md_text):
@@ -1499,8 +1508,11 @@ def extract_place_bodies(md_text, slug, rel):
     skip, note = set(), {}
     for s, e, r in cut:
         skip.update(range(s, e))
-        note[s] = (f'[◈ {r["name"]} — 장소 카드에서 보기]'
-                   f'({rel}/places/{r["slug"]}.html)')
+        # 유니코드 도형(◈) 대신 pin 아이콘. 원 블록 HTML 이라 md_convert 가
+        # 그대로 통과시킨다 (HIG 진단 1-1 · 글리프 추방).
+        note[s] = (f'<p class="place-jump"><a href="{rel}/places/{r["slug"]}.html">'
+                   f'<b class="ic ic-pin" aria-hidden="true"></b>'
+                   f'{html.escape(r["name"])} — 장소 카드에서 보기</a></p>')
     out = []
     for i, line in enumerate(lines):
         if i in note:
@@ -3647,7 +3659,7 @@ def link_map_places(text, out_name):
             "<br><small>${p.status}</small><br>"
             '<a target="_blank" href="${p.url}">Google Maps 열기</a>'
             "${PLACE[p.name]?`<br><a href=\"../places/${PLACE[p.name]}.html\">"
-            "◇ 장소 카드</a>`:''}`);")
+            "<b class=\"ic ic-pin\" aria-hidden=\"true\"></b>장소 카드</a>`:''}`);")
     return text.replace(POPUP_SRC, repl, 1)
 
 
@@ -5492,6 +5504,41 @@ def check_links():
     print("링크 검사: 이상 없음")
 
 
+# 폰트 커버리지에 기대는 기하 도형·딩벳. CLAUDE.md 가 금지한 부류(◉ ▤ ◇ ▧)와
+# 이번에 걷어낸 것들(■ ● ▨ ◈ ★ ▾ ▴)을 output 에서 영구 차단한다. 마스크·컴포넌트로
+# 바꿨으니 다시 새면 그건 회귀다. 번들 폰트 unicode-range 밖이라 기기에 따라
+# 두부(□)가 된다 — 현장에서 못 쓰는 화면이 되는 것.
+#
+# 아직 원고에 남아 별도 단계에서 처리할 것은 여기 넣지 않는다 — 넣으면 지금
+# 빌드가 멈춘다: 박스드로잉 트리(─ │ ├ └, 의사결정 트리 재구성 필요), ⚠(신뢰성
+# 있는 경고 기호라 유지), ○ ✓ ✗ △ 등 의미 표기. 각각 해소될 때 이 집합에 더한다.
+BANNED_GLYPHS = "◉▤◇▧■●▨◈★▾▴"
+
+
+def check_glyphs():
+    # 주석은 렌더되지 않는다. CSS·HTML 주석을 걷어내고 본문만 본다 — 금지 도형을
+    # "쓰지 마라"고 설명하는 주석 자체는 그 도형을 이름으로 담을 수밖에 없다.
+    css_comment = re.compile(r"/\*.*?\*/", re.S)
+    html_comment = re.compile(r"<!--.*?-->", re.S)
+    hits = []
+    for f in SITE.rglob("*.html"):
+        text = html_comment.sub("", f.read_text(encoding="utf-8"))
+        found = {ch for ch in BANNED_GLYPHS if ch in text}
+        if found:
+            hits.append(f"{f.relative_to(SITE)} → {' '.join(sorted(found))}")
+    css = css_comment.sub("", (SITE / "assets" / "style.css").read_text(encoding="utf-8"))
+    css_found = {ch for ch in BANNED_GLYPHS if ch in css}
+    if css_found:
+        hits.append(f"assets/style.css → {' '.join(sorted(css_found))}")
+    if hits:
+        print("글리프 가드 실패 — 금지된 기하 도형/딩벳이 output 에 있다:")
+        for h in hits[:40]:
+            print("  " + h)
+        print("  (아이콘은 CSS 마스크로, 등급·별점은 컴포넌트로 낸다. icons.py 참조.)")
+        sys.exit(1)
+    print(f"글리프 가드: 금지 도형 {len(BANNED_GLYPHS)}종 output 에 없음")
+
+
 def check_dates():
     d = TRIP_START
     missing = []
@@ -5592,6 +5639,7 @@ def main():
     check_phase9_commercial_depth_guards()
     check_phase10_official_fact_guards()
     check_links()
+    check_glyphs()
     check_dates()
     check_places()
     print(f"\n완료: {SITE} ({sum(1 for _ in SITE.rglob('*.html'))}개 HTML 페이지)")
