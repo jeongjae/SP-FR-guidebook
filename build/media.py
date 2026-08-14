@@ -4,8 +4,24 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import shutil
 from pathlib import Path
+
+
+def credit_display(creator: str) -> str:
+    """본문 캡션용 저작자 표시 이름.
+
+    Commons 의 author 필드에는 원문 URL 이 통째로 들어오기도 한다 —
+    `Jean-Marc Rosier (de/from http://… + http://… )`. 캡션 3줄을 URL 로
+    채울 필요는 없다. URL 을 걷어내고, 그 결과 알맹이가 없어진 괄호를
+    지운다. 표시 의무는 그대로다 — 저작자 이름은 남고, 원문 전체는
+    about/photo-credits.html (사진 정보 링크의 목적지)에 보존된다.
+    """
+    name = re.sub(r"https?://\S+", "", creator)
+    # 내용이 연결어(de/from·+·쉼표 등)뿐인 괄호는 통째로 제거
+    name = re.sub(r"\(\s*(?:de|from|and|by|[+·,/\s])*\s*\)", "", name)
+    return re.sub(r"\s{2,}", " ", name).strip(" ·,")
 
 
 ALLOWED_LICENSES = {
@@ -62,7 +78,7 @@ def figure(asset: dict | None, rel: str, variant: str = "place",
            show_caption: bool = True, priority: bool = False) -> str:
     if not asset:
         return ""
-    author = html.escape(asset.get("author") or asset["sourceName"])
+    author = html.escape(credit_display(asset.get("author") or asset["sourceName"]))
     caption = html.escape(asset.get("captionKo") or asset["subjectName"])
     loading = "eager" if priority else "lazy"
     fetch_priority = ' fetchpriority="high"' if priority else ""
@@ -177,7 +193,7 @@ def photo_figure(asset: dict | None, rel: str, variant: str = "content",
              "(max-width: 720px) 44vw, 320px")
     loading = "eager" if priority else "lazy"
     fetch_priority = ' fetchpriority="high"' if priority else ""
-    credit = (f'<span class="media-credit">Photo: {html.escape(asset["creator"])} · '
+    credit = (f'<span class="media-credit">Photo: {html.escape(credit_display(asset["creator"]))} · '
               f'<a href="{html.escape(asset["licenseUrl"], quote=True)}" target="_blank" '
               f'rel="noopener license">{html.escape(asset["license"])}</a> · '
               f'<a href="{rel}/about/photo-credits.html#{html.escape(asset["imageId"])}">사진 정보</a></span>')
