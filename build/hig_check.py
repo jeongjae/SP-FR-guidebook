@@ -59,7 +59,7 @@ SAMPLE = [
     "topics/index.html", "topics/food.html", "topics/reverify.html",
     "places/index.html", "places/palais-des-papes.html",
     "maps/index.html", "maps/offline.html",
-    "tracker/index.html", "tracker/dashboard.html",
+    "tracker/index.html", "tracker/dashboard.html", "tracker/reservations.html",
 ]
 
 # 본문 안의 문장 링크는 컨트롤이 아니다. 크롬·카드·칩만 44pt 를 요구한다.
@@ -69,6 +69,7 @@ CONTROL_SEL = (
     ".daily-item, .day-actions a, .day-details > summary, .related a, "
     ".pager a, #back-top, #sheet-close"
     ", .pwa-actions button, .pwa-update button"
+    ", .rz-chip, .rz-day, .rz-more > summary, .rz-sel select, .rz-reset, .rz-src"
 )
 
 JS = r"""
@@ -220,7 +221,9 @@ def main():
         b = pw.chromium.launch(**({"executable_path": executable} if executable else {}))
         # 라이트·다크 양쪽을 본다. 다크에서 신호색이 밝아지면 그 위 글자가 뒤집혀야 한다.
         for scheme in ("light", "dark"):
-            for w, h in ((320, 568), (390, 844)):
+            # 320 SE · 390 표준 · 430 iPhone Pro Max(15/16). Pro(393·402)와
+            # Pro Max(440)는 430과 같은 폭 구간이라 대표값 하나로 잠근다.
+            for w, h in ((320, 568), (390, 844), (430, 932)):
                 pg = b.new_page(viewport={"width": w, "height": h},
                                 color_scheme=scheme)
                 for rel in pages:
@@ -235,7 +238,7 @@ def main():
         if len(problems) > 40:
             print(f"  … 외 {len(problems) - 40}건")
         return 1
-    print(f"HIG 검사: {len(pages)}쪽 × 2폭 × 라이트/다크 — 터치타깃 · 글자크기 · 명암비 · "
+    print(f"HIG 검사: {len(pages)}쪽 × 3폭(320·390·430) × 라이트/다크 — 터치타깃 · 글자크기 · 명암비 · "
           f"안전영역 · 리플로 · 뷰포트 이상 없음")
     if stubs:
         print(f"  (리다이렉트 스텁 {len(stubs)}쪽은 검사하지 않았다)")

@@ -1,0 +1,254 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>가이드북 디자인 시안</title><style>
+:root{
+ --bg:#EFF1F6;--surface:#FFFFFF;--surface-sunk:#E3E7F0;
+ --text:#0F1A1E;--text-2:#34464D;--muted:#41535C;
+ --accent:#000091;--accent-ink:#FFFFFF;--accent-soft:#DFE3F2;--border:#C8CEDD;
+ --flag-es-red:#AA151B;--flag-es-gold:#F1BF00;--flag-fr-blue:#002395;--flag-fr-white:#FFFFFF;--flag-fr-red:#EF4135;
+ --sig-critical:#AA151B;--sig-critical-ink:#921118;--sig-caution:#7D5400;--sig-caution-ink:#5E4000;
+ --sig-steady:#1F5E45;--sig-rest:#2C4A9A;
+ --r-card:12px;--r-ctrl:10px;--r-chip:999px;--tap:44px;
+ --ok:#1F5E45;--bad:#921118;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --bg:#0C1416;--surface:#152023;--surface-sunk:#1B2A2E;
+ --text:#E3EBEA;--text-2:#B7C5C8;--muted:#A0B0B5;
+ --accent:#A9BEF5;--accent-ink:#08101A;--accent-soft:#1E2540;--border:#333B52;
+ --sig-critical:#F79AA2;--sig-critical-ink:#F79AA2;--sig-caution:#D3A63A;--sig-caution-ink:#EFC96A;
+ --sig-steady:#74C7A6;--sig-rest:#9FB4EE;--ok:#74C7A6;--bad:#F79AA2;
+}}
+[data-theme="dark"]{
+ --bg:#0C1416;--surface:#152023;--surface-sunk:#1B2A2E;
+ --text:#E3EBEA;--text-2:#B7C5C8;--muted:#A0B0B5;
+ --accent:#A9BEF5;--accent-ink:#08101A;--accent-soft:#1E2540;--border:#333B52;
+ --sig-critical:#F79AA2;--sig-critical-ink:#F79AA2;--sig-caution:#D3A63A;--sig-caution-ink:#EFC96A;
+ --sig-steady:#74C7A6;--sig-rest:#9FB4EE;--ok:#74C7A6;--bad:#F79AA2;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+ font-family:"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",system-ui,sans-serif;
+ line-height:1.6;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+/* 아이폰 Pro·Pro Max 안전영역 — 다이내믹 아일랜드(위)·홈 인디케이터(아래),
+   가로 모드의 노치(좌우)를 피한다. env() 가 0이면(구형·데스크톱) 기본값이 이긴다. */
+.wrap{max-width:960px;margin:0 auto;
+ padding:max(28px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right))
+         max(80px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+.lede{color:var(--text-2);font-size:15px;max-width:62ch}
+h1{font-size:26px;letter-spacing:-.02em;margin:0 0 6px;text-wrap:balance}
+h2{font-size:19px;letter-spacing:-.01em;margin:0;padding-bottom:8px}
+.sec{margin-top:34px;border:1px solid var(--border);border-radius:var(--r-card);
+ background:var(--surface);overflow:hidden}
+.sec-h{padding:16px 18px;border-bottom:1px solid var(--border);
+ background:linear-gradient(90deg,rgba(170,21,27,.05),rgba(241,191,0,.04) 33%,rgba(0,35,149,.05) 67%,rgba(239,65,53,.05))}
+.sec-h .n{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.04em}
+.sec-h p{margin:4px 0 0;color:var(--text-2);font-size:13.5px;max-width:64ch}
+.sec-b{padding:18px}
+.flag{height:4px;display:flex}
+.flag i{flex:1}
+.flag .es1{background:var(--flag-es-red)}.flag .es2{background:var(--flag-es-gold)}
+.flag .fb{background:var(--flag-fr-blue)}.flag .fw{background:var(--flag-fr-white)}.flag .fr{background:var(--flag-fr-red)}
+
+/* 아이콘 비교 */
+.cmp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.cmp{border:1px solid var(--border);border-radius:var(--r-ctrl);overflow:hidden;background:var(--bg)}
+.cmp-h{padding:9px 12px;font-weight:700;font-size:13.5px;border-bottom:1px solid var(--border);background:var(--surface)}
+.cmp-h span{display:block;font-weight:400;font-size:11.5px;color:var(--muted);margin-top:2px}
+.cmp-b{display:flex;align-items:center;gap:8px;padding:16px 12px;justify-content:center}
+.cmp-c{display:grid;justify-items:center;gap:7px;flex:1}
+.tag{font-size:10px;font-weight:800;letter-spacing:.03em;padding:2px 8px;border-radius:999px}
+.bad .tag{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+.good .tag{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.arw{color:var(--muted);font-weight:800}
+.ic26 svg{width:28px;height:28px;color:var(--text)}
+
+/* 탭바 */
+.tabbar{display:flex;justify-content:space-around;background:var(--surface);
+ border:1px solid var(--border);border-radius:var(--r-card);padding:10px 4px;position:relative}
+.tabbar::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;
+ background:linear-gradient(90deg,#AA151B 0 16%,#F1BF00 16% 34%,#AA151B 34% 50%,#002395 50% 66.5%,#FFFFFF 66.5% 83%,#EF4135 83%)}
+.tab{display:grid;justify-items:center;gap:4px;font-size:10.5px;color:var(--muted);min-width:52px}
+.tab b{font-weight:600}
+.tab.on{color:var(--accent)}
+.ti svg{width:26px;height:26px}
+.barlabel{font-size:12px;font-weight:800;color:var(--muted);margin:0 0 8px;letter-spacing:.02em}
+
+/* 등급 마커 */
+.grades{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.g-old{display:inline-flex;align-items:center;font-size:14px;font-weight:700}
+.g-old .u{margin-right:6px;font-size:13px}
+.g-new{display:inline-flex;align-items:center;font-size:14px;font-weight:700}
+.g-new .gi{width:15px;height:15px;margin-right:7px;display:inline-flex}
+.g-new .gi svg{width:15px;height:15px}
+.note{margin:14px 0 0;padding:11px 13px;border:1px dashed var(--border);border-radius:var(--r-ctrl);
+ font-size:12.5px;color:var(--text-2);background:var(--bg)}
+.note b{color:var(--text)}
+.dbl{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.dbl{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:var(--r-ctrl);overflow:hidden}
+.panel-h{padding:8px 12px;font-size:11.5px;font-weight:800;letter-spacing:.03em;display:flex;align-items:center;gap:7px}
+.panel-h.bad{background:color-mix(in srgb,var(--bad) 10%,var(--surface));color:var(--bad)}
+.panel-h.good{background:color-mix(in srgb,var(--ok) 11%,var(--surface));color:var(--ok)}
+.panel-b{padding:13px;background:var(--surface)}
+
+/* place row */
+.plist{display:grid;gap:8px}
+.prow{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid var(--border);
+ border-radius:var(--r-ctrl);background:var(--surface)}
+.prow .pn{font-weight:700;font-size:14px}
+.prow .pg{margin-left:auto;display:inline-flex;align-items:center;font-size:12px;font-weight:700}
+.prow .pg .gi{width:13px;height:13px;margin-right:5px;display:inline-flex}
+.prow .pg .gi svg{width:13px;height:13px}
+
+/* 표 오버플로 데모 */
+.tover{overflow-x:auto;border:1px solid var(--border);border-radius:8px}
+table{border-collapse:collapse;font-size:12px;white-space:nowrap;min-width:820px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--border);text-align:left}
+thead th{background:var(--accent);color:var(--accent-ink);font-size:11px}
+.clip{position:relative}
+.clip::after{content:"⋯ +1857px";position:absolute;right:0;top:0;bottom:0;width:120px;
+ display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:11px;font-weight:800;color:var(--bad);
+ background:linear-gradient(90deg,transparent,var(--surface) 55%)}
+
+/* 숙소 카드 (제안) */
+.scard{border:1px solid var(--border);border-left:4px solid var(--sig-caution);border-radius:var(--r-card);
+ background:var(--surface);padding:13px}
+.scard .sh{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;background:var(--surface-sunk);
+ font-size:12px;font-weight:700}
+.chip.warn{background:none;border:1.5px dashed var(--sig-caution);color:var(--sig-caution-ink)}
+.chip.p0{background:none;border:1.5px solid var(--sig-critical-ink);color:var(--sig-critical-ink)}
+.scard h3{margin:11px 0 2px;font-size:19px;display:flex;align-items:center;gap:8px}
+.scard .sw{margin:0 0 11px;font-size:12.5px;color:var(--muted)}
+.facts{display:grid;gap:1px}
+.frow{display:grid;grid-template-columns:5rem 1fr;gap:8px;padding:6px 0;box-shadow:inset 0 .5px 0 var(--border)}
+.frow dt{color:var(--muted);font-size:12.5px}
+.frow dd{margin:0;font-size:13.5px}
+.more{margin-top:9px;color:var(--accent);font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+.more::after{content:"";width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px}
+
+/* 의사결정 트리 (제안) */
+.pre-old{margin:0;padding:12px;background:var(--surface-sunk);border-radius:8px;
+ font-family:ui-monospace,Menlo,monospace;font-size:12px;white-space:pre;overflow:hidden;position:relative}
+.pre-old::after{content:"결론이 잘림 →";position:absolute;right:0;top:0;bottom:0;width:130px;
+ display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:10.5px;font-weight:800;color:var(--bad);
+ background:linear-gradient(90deg,transparent,var(--surface-sunk) 60%);font-family:system-ui}
+.tree{margin:0;padding:0;list-style:none}
+.tree li{position:relative;padding:7px 0 7px 26px}
+.tree li::before{content:"";position:absolute;left:8px;top:14px;width:10px;height:2px;background:var(--border)}
+.tree li::after{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
+.tree>li:last-child::after{height:14px}
+.tree .q{font-weight:700}
+.tree .yes{color:var(--sig-steady)}.tree .no{color:var(--muted)}
+.tree .res{display:inline-block;margin-left:4px;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
+.tree ul{margin:4px 0 0;padding:0;list-style:none}
+
+/* 별점 (제안) */
+.stars-old{font-size:15px;color:var(--sig-caution);letter-spacing:2px}
+.rate{display:inline-flex;align-items:center;gap:8px}
+.rate .bar{display:flex;gap:3px}
+.rate .bar i{width:16px;height:9px;border-radius:2px;background:var(--surface-sunk)}
+.rate .bar i.on{background:var(--sig-caution)}
+.rate b{font-weight:800;font-size:13px}
+.rate small{color:var(--muted);font-size:12px}
+
+.foot{margin-top:30px;font-size:12px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
+.toggle{position:fixed;right:max(16px,env(safe-area-inset-right));top:max(16px,env(safe-area-inset-top));
+ z-index:9;border:1px solid var(--border);background:var(--surface);min-height:36px;
+ color:var(--text);border-radius:999px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
+</style></head>
+<body>
+<button class="toggle" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">라이트 / 다크</button>
+<div class="wrap">
+<h1>가이드북 디자인 시안 v1.0</h1>
+<p class="lede">HIG 통합 진단(v2.0)의 발견을 실제 렌더 가능한 개선안으로 옮긴 것이다.
+모든 시안은 프로젝트의 실제 팔레트·토큰 위에서 그렸고, 라이트·다크 양쪽에서 성립한다.
+오른쪽 위 버튼으로 테마를 바꿔 볼 수 있다. <b>이것은 제안이지 소스가 아니다 — site/ 를 건드리지 않는다.</b></p>
+
+<section class="sec"><div class="flag"><i class="es1"></i><i class="es2"></i><i class="es1"></i><i class="fb"></i><i class="fw"></i><i class="fr"></i></div>
+<div class="sec-h"><div class="n">시안 A · 진단 1-1 · 1-6</div><h2>아이콘 — 금지된 유니코드 도형을 마스크로, 겹치는 은유를 분리</h2>
+<p>등급 5종이 지금 ■●○◇▨ 유니코드 도형으로 그려진다(322회). CLAUDE.md 가 금지한 방식이고, 번들 폰트 범위 밖이라 기기에 따라 두부(□)가 된다.
+아래 제안은 <b>도형 언어(채움=중요, 외곽선=보조, 사선=회피)를 그대로 유지</b>하면서 CSS 마스크로 바꾼다 — 색맹 대비도 유지된다.</p></div>
+<div class="sec-b">
+<div class="dbl">
+<div class="panel"><div class="panel-h bad">현행 · 유니코드 도형</div><div class="panel-b"><div class="grades"><span class="g-old" style="color:var(--sig-critical-ink)"><b class="u">■</b>필수</span><span class="g-old" style="color:var(--accent)"><b class="u">●</b>우선 추천</span><span class="g-old" style="color:var(--text-2)"><b class="u">○</b>선택</span><span class="g-old" style="color:var(--sig-caution-ink)"><b class="u">◇</b>대체</span><span class="g-old" style="color:var(--muted)"><b class="u">▨</b>비추천</span></div></div></div>
+<div class="panel"><div class="panel-h good">제안 · CSS 마스크 아이콘</div><div class="panel-b"><div class="grades"><span class="g-new" style="color:var(--sig-critical-ink)"><i class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6 21.4 12 12 21.4 2.6 12Z" fill="currentColor" stroke="none"/></svg></i>필수</span><span class="g-new" style="color:var(--accent)"><i class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.6" fill="currentColor" stroke="none"/></svg></i>우선 추천</span><span class="g-new" style="color:var(--text-2)"><i class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7" stroke-width="2.4"/></svg></i>선택</span><span class="g-new" style="color:var(--sig-caution-ink)"><i class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 21 12 12 21 3 12Z" stroke-width="2.2"/></svg></i>대체</span><span class="g-new" style="color:var(--muted)"><i class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.4" stroke-width="2.2"/><path d="M6.9 6.9 17.1 17.1" stroke-width="2.2"/></svg></i>비추천</span></div></div></div>
+</div>
+<div class="note"><b>은유 충돌 정리.</b> 하단탭 5개 중 3개가 원/핀 계열이라 20px 에서 구분이 안 된다. 셋을 서로 다른 실루엣으로 가른다.</div>
+<div class="cmp-grid" style="margin-top:14px">
+<div class="cmp"><div class="cmp-h">지도<span>나침반으로 읽히던 것 → 접힌 지도</span></div><div class="cmp-b"><div class="cmp-c bad"><span class="tag">현행</span><i class="ic26"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.6"/><path d="M12 2.6v3.4M12 18v3.4M2.6 12H6M18 12h3.4"/></svg></i></div><div class="arw">→</div><div class="cmp-c good"><span class="tag">제안</span><i class="ic26"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.2 9 3.8l6 2.4 6-2.4v13.6l-6 2.4-6-2.4-6 2.4Z"/><path d="M9 3.8v13.6M15 6.2v13.6"/></svg></i></div></div></div>
+<div class="cmp"><div class="cmp-h">가이드<span>장소 핀과 겹치던 것 → 나침반</span></div><div class="cmp-b"><div class="cmp-c bad"><span class="tag">현행</span><i class="ic26"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></i></div><div class="arw">→</div><div class="cmp-c good"><span class="tag">제안</span><i class="ic26"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 6.6 14.1 12 12 17.4 9.9 12Z" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.1" fill="var(--surface)" stroke="none"/></svg></i></div></div></div>
+</div>
+<p class="barlabel" style="margin-top:18px">현행 하단탭 — 오늘·지도·가이드가 모두 원/핀</p>
+<div class="tabbar"><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg></i><b>오늘</b></span><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg></i><b>일정</b></span><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.6"/><path d="M12 2.6v3.4M12 18v3.4M2.6 12H6M18 12h3.4"/></svg></i><b>지도</b></span><span class="tab on"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></i><b>가이드</b></span><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.2 4.6h13.6v14.8H5.2z"/><path d="M8.6 12.2l2.5 2.5 4.6-5"/></svg></i><b>준비</b></span></div>
+<p class="barlabel" style="margin-top:16px">제안 하단탭 — 다섯 실루엣이 서로 다르다</p>
+<div class="tabbar"><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg></i><b>오늘</b></span><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg></i><b>일정</b></span><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.2 9 3.8l6 2.4 6-2.4v13.6l-6 2.4-6-2.4-6 2.4Z"/><path d="M9 3.8v13.6M15 6.2v13.6"/></svg></i><b>지도</b></span><span class="tab on"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 6.6 14.1 12 12 17.4 9.9 12Z" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.1" fill="var(--surface)" stroke="none"/></svg></i><b>가이드</b></span><span class="tab"><i class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.2 4.6h13.6v14.8H5.2z"/><path d="M8.6 12.2l2.5 2.5 4.6-5"/></svg></i><b>준비</b></span></div>
+</div></section>
+
+<section class="sec"><div class="sec-h"><div class="n">시안 B · 진단 1-1</div><h2>등급 마커가 실제로 붙는 자리 — 장소 목록</h2>
+<p><code>places/index.html</code> 의 94개 장소가 등급으로 정렬·구분된다. 도형이 두부가 되면 이 화면에서 등급이 사라진다.</p></div>
+<div class="sec-b"><div class="dbl">
+<div class="panel"><div class="panel-h bad">현행</div><div class="panel-b"><div class="plist">
+<div class="prow"><b class="pn">Palais des Papes</b><span class="pg" style="color:var(--sig-critical-ink)"><b class="u" style="margin-right:5px">■</b>필수</span></div>
+<div class="prow"><b class="pn">Pont Saint-Bénézet</b><span class="pg" style="color:var(--accent)"><b class="u" style="margin-right:5px">●</b>우선 추천</span></div>
+<div class="prow"><b class="pn">Musée du Petit Palais</b><span class="pg" style="color:var(--text-2)"><b class="u" style="margin-right:5px">○</b>선택</span></div>
+</div></div></div>
+<div class="panel"><div class="panel-h good">제안</div><div class="panel-b"><div class="plist">
+<div class="prow"><b class="pn">Palais des Papes</b><span class="pg" style="color:var(--sig-critical-ink)"><span class="gi" style="color:var(--sig-critical-ink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6 21.4 12 12 21.4 2.6 12Z" fill="currentColor" stroke="none"/></svg></span>필수</span></div>
+<div class="prow"><b class="pn">Pont Saint-Bénézet</b><span class="pg" style="color:var(--accent)"><span class="gi" style="color:var(--accent)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.6" fill="currentColor" stroke="none"/></svg></span>우선 추천</span></div>
+<div class="prow"><b class="pn">Musée du Petit Palais</b><span class="pg" style="color:var(--text-2)"><span class="gi" style="color:var(--text-2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7" stroke-width="2.4"/></svg></span>선택</span></div>
+</div></div></div>
+</div></div></section>
+
+<section class="sec"><div class="sec-h"><div class="n">시안 C · 진단 2-1</div><h2>가로 스크롤 표 → 카드 (예약 현황에서 검증된 패턴 재사용)</h2>
+<p><code>tracker/accommodation.html</code> 은 20열 × 8행이라 390px 에서 +1857px 넘친다. 예약 현황에 이미 넣은 카드 패턴을 그대로 쓴다 — 열은 하나도 안 버리고 <code>&lt;details&gt;</code> 로 접는다.</p></div>
+<div class="sec-b">
+<p class="panel-h bad" style="border-radius:8px;margin:0 0 10px">현행 · 한 행을 읽으려면 가로로 4번 민다</p>
+<div class="tover clip"><table><thead><tr><th>거점</th><th>체크인</th><th>체크아웃</th><th>박수</th><th>상태</th><th>실제총액</th><th>통화</th><th>예약번호</th><th>주소</th><th>소스 URL</th><th>주차</th><th>세탁</th><th>냉방</th></tr></thead>
+<tbody><tr><td>Nice</td><td>2026-09-04</td><td>2026-09-09</td><td>5</td><td>미조사</td><td>—</td><td>EUR</td><td>—</td><td>—</td><td>—</td><td>?</td><td>?</td><td>?</td></tr></tbody></table></div>
+<p class="panel-h good" style="border-radius:8px;margin:16px 0 10px">제안 · 카드 1장 = 숙소 1곳</p>
+<div class="scard">
+<div class="sh"><span class="chip">9/4 금 · Day 7</span><span class="chip p0">P0</span><span class="chip warn">미조사</span></div>
+<h3><span class="gi" style="width:20px;height:20px;color:var(--text-2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.4 19.4v-9.2M3.4 14.6h17.2v4.8M20.6 14.6v-3a2.6 2.6 0 0 0-2.6-2.6h-6.2v5.6"/><circle cx="7.4" cy="11.4" r="1.9"/></svg></span>Nice 숙소 · 5박</h3>
+<p class="sw">Nice · 숙소</p>
+<dl class="facts">
+<div class="frow"><dt>박수</dt><dd>5박 (9/4 → 9/9)</dd></div>
+<div class="frow"><dt>예약목표일</dt><dd><span style="color:var(--sig-critical-ink);font-weight:700">2026-08-05 <b style="border:1px solid;padding:1px 7px;border-radius:999px;font-size:11px">기한 지남</b></span></dd></div>
+<div class="frow"><dt>재확인</dt><dd>5박 총액·조용한 방향·계단·냉방·9/9 체크아웃</dd></div>
+</dl>
+<div class="more">남은 항목 모두 보기</div>
+</div>
+</div></section>
+
+<section class="sec"><div class="sec-h"><div class="n">시안 D · 진단 2-2</div><h2>ASCII 의사결정 트리 → 중첩 목록</h2>
+<p><code>chapters/barcelona/stay.html</code> 의 숙소 선택 알고리즘은 <code>&lt;pre&gt;</code> 고정폭이라 390px 에서 <b>결론(어느 숙소인가)이 화면 밖</b>이다. 중첩 목록으로 바꾸면 폭에 맞춰 접히고 기호(─├└)도 사라진다.</p></div>
+<div class="sec-b"><div class="dbl">
+<div class="panel"><div class="panel-h bad">현행 · &lt;pre&gt; · 결론 잘림</div><div class="panel-b">
+<pre class="pre-old">세금 포함 총액 ≤ 80만원?
+├─ 예 → 에어컨·엘리베이터 확인
+│   ├─ 모두 충족 → Praktik Ga
+│   └─ 하나 미충족 → Hotel Gl
+└─ 아니오 → 85만원 이내이며 위치</pre></div></div>
+<div class="panel"><div class="panel-h good">제안 · 중첩 목록 · 결론이 캡슐로</div><div class="panel-b">
+<ul class="tree">
+<li><span class="q">세금 포함 총액 ≤ 80만원?</span>
+<ul><li><span class="yes">예</span> → 에어컨·엘리베이터·무료취소 확인
+<ul><li>모두 충족 <span class="res">Praktik Garden / SERHS Carlit</span></li>
+<li>하나 미충족 <span class="res">Hotel Glòries / Leonardo</span></li></ul></li>
+<li><span class="no">아니오</span> → 위치가 크게 우수? <span class="res">Motel One 허용</span></li></ul></li>
+</ul></div></div>
+</div></div></section>
+
+<section class="sec"><div class="sec-h"><div class="n">시안 E · 진단 1-2</div><h2>별점 ★★★★★ → 막대 + 숫자</h2>
+<p>별점은 기호가 곧 값이라 두부가 되면 평가가 통째로 사라진다. 피로도(.fatigue)에 이미 쓰는 <b>막대+숫자</b> 컴포넌트로 통일한다.</p></div>
+<div class="sec-b"><div class="dbl">
+<div class="panel"><div class="panel-h bad">현행</div><div class="panel-b"><span class="stars-old">★★★★★</span> <span style="color:var(--text-2);font-size:13px">Jason·Julia 생활형 여행 적합도</span></div></div>
+<div class="panel"><div class="panel-h good">제안</div><div class="panel-b"><span class="rate"><span class="bar"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b>5.0</b><small>Jason·Julia 생활형 여행 적합도</small></span></div></div>
+</div></div></section>
+
+<p class="foot">시안 v1.0 · 2026-08-13 · 프로젝트 실제 토큰 위에 렌더 · 라이트/다크 검증 ·
+iPhone Pro(393·402)·Pro Max(430·440) 세로·가로 가로넘침 0 · 안전영역(다이내믹 아일랜드·홈 인디케이터·노치) 대응.
+개별 아이콘 SVG 는 build/icons.py 에, 컴포넌트 CSS 는 build/assets/style.css 에 들어간다.
+명료함·경의·깊이 같은 원칙은 이 시안으로 확인되지 않는다 — 실제 기기에서 한 번 봐야 한다.</p>
+</div></body></html>
