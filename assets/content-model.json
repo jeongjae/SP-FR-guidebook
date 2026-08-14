@@ -2334,10 +2334,8 @@
         "Musée de l'Orangerie"
       ],
       "legacySlugs": [],
-      "dayIds": [
-        "day:032"
-      ],
-      "dayEvidence": "시간표",
+      "dayIds": [],
+      "dayEvidence": null,
       "url": "places/musee-de-l-orangerie.html"
     },
     {
@@ -2474,11 +2472,11 @@
       "checkIn": "2026-09-20",
       "checkOut": "2026-09-24",
       "nights": 4,
-      "status": "재확인",
-      "area": "Presqu'île/Ainay/Part-Dieu 서쪽",
-      "address": null,
-      "bookingNumber": null,
-      "sourceUrl": null
+      "status": "예약완료",
+      "area": "Lagrange Aparthotel Lyon Lumière · Monplaisir (3구)",
+      "address": "81-85 Cours Albert Thomas, 69003 Lyon, France",
+      "bookingNumber": "5882.730.884",
+      "sourceUrl": "https://www.booking.com"
     },
     {
       "id": "stay:paris",
@@ -2572,11 +2570,11 @@
       "scheduledDate": "2026-09-20",
       "dayId": "day:023",
       "category": "숙소",
-      "name": "숙소 4박",
-      "status": "재확인",
+      "name": "Lagrange Aparthotel Lyon Lumière · 4박",
+      "status": "예약완료",
       "priority": "P0",
       "targetDate": "2026-08-05",
-      "sourceUrl": null
+      "sourceUrl": "https://www.booking.com"
     },
     {
       "id": "reservation:r008",
@@ -2597,7 +2595,7 @@
       "dayId": "day:004",
       "category": "렌터카",
       "name": "BCN 렌터카 — Sants 인수→El Prat 반납",
-      "status": "예약완료",
+      "status": "재확인",
       "priority": "P0",
       "targetDate": "2026-08-01",
       "sourceUrl": "https://www.hertz.com"
