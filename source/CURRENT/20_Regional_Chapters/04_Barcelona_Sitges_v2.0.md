@@ -876,15 +876,14 @@ Cau Ferrat는 Rusiñol의 전 거주지·작업실로 회화, 철공예, 도자�
 
 ### 12.7 숙소 최종 선택 알고리즘
 
-```text
-세금 포함 총액 ≤ 80만원?
- ├─ 예 → 에어컨·엘리베이터·무료취소 확인
- │        ├─ 모두 충족 → Praktik Garden / SERHS Carlit 우선
- │        └─ 하나 미충족 → Hotel Glòries / Leonardo 비교
- └─ 아니오 → 85만원 이내이며 위치가 크게 우수한가?
-          ├─ 예 → Praktik Garden 또는 Motel One 허용
-          └─ 아니오 → Hotel Glòries·Leonardo로 이동
-```
+**세금 포함 총액이 80만원 이하인가?**
+
+- **예** → 에어컨·엘리베이터·무료취소를 확인한다.
+    - 모두 충족 → **Praktik Garden / SERHS Carlit** 우선
+    - 하나라도 미충족 → **Hotel Glòries / Leonardo** 비교
+- **아니오** → 85만원 이내이면서 위치가 크게 우수한가?
+    - **예** → **Praktik Garden 또는 Motel One** 허용
+    - **아니오** → **Hotel Glòries·Leonardo**로 이동
 
 ---
 
