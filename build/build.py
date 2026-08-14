@@ -575,12 +575,21 @@ def build_regions():
     라벨에 챕터 번호를 쓰지 않는다 (명명규칙 v1.0).
     """
     cards = []
+    prev_country = None
     for c in CHAPTERS:
         if c["kind"] != "region":
             continue
         first, last = day_no(c["start"]), day_no(c["end"])
+        country = country_of(c["name"])
+        # Day 7 에 국경을 넘는다. 여행 전체를 조망하는 이 화면에 그 사실이
+        # 보여야 한다 — 시장 요일·공휴일·긴급번호·언어가 여기서 바뀐다.
+        if prev_country and country != prev_country:
+            cards.append(f'<div class="rg-border" role="separator">'
+                         f'<span>국경 · Day {first} 스페인 → 프랑스</span></div>')
+        prev_country = country
         # a 안에 a 를 넣을 수 없다. 카드는 div 로 두고 제목만 링크로 만든다.
-        cards.append(f"""<div class="card rg-card">
+        # 국기 띠는 카드 위 모서리의 '면' — 국기 원색은 면에만 쓴다는 규칙 그대로.
+        cards.append(f"""<div class="card rg-card rg-{country}">
 <a class="card-title" href="{chapter_url(c)}">{html.escape(c["title"])}</a>
 <span class="card-sub">Day {first}–{last} · {date_label(c["start"])}–{date_label(c["end"])}
  · {c["nights"]}박</span>
