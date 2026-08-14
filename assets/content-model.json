@@ -733,6 +733,7 @@
       "type": "spot",
       "grade": "optional",
       "aliases": [
+        "Sitges",
         "Sitges"
       ],
       "legacySlugs": [],
@@ -752,6 +753,7 @@
       "type": "spot",
       "grade": "essential",
       "aliases": [
+        "Calella de Palafrugell",
         "Calella de Palafrugell"
       ],
       "legacySlugs": [],
@@ -769,6 +771,7 @@
       "type": "spot",
       "grade": "essential",
       "aliases": [
+        "Collioure",
         "Collioure"
       ],
       "legacySlugs": [],
@@ -788,6 +791,7 @@
       "type": "spot",
       "grade": "essential",
       "aliases": [
+        "Girona Cathedral",
         "Girona Cathedral"
       ],
       "legacySlugs": [],
@@ -805,7 +809,8 @@
       "type": "spot",
       "grade": "essential",
       "aliases": [
-        "Onyar Houses"
+        "Onyar Houses",
+        "Onyar 강변"
       ],
       "legacySlugs": [],
       "dayIds": [],
@@ -822,6 +827,7 @@
       "type": "spot",
       "grade": "priority",
       "aliases": [
+        "Pals",
         "Pals"
       ],
       "legacySlugs": [],
@@ -841,6 +847,7 @@
       "type": "spot",
       "grade": "priority",
       "aliases": [
+        "Peralada",
         "Peralada"
       ],
       "legacySlugs": [],
@@ -858,6 +865,7 @@
       "type": "spot",
       "grade": "essential",
       "aliases": [
+        "Peratallada",
         "Peratallada"
       ],
       "legacySlugs": [],
@@ -877,6 +885,7 @@
       "type": "spot",
       "grade": "priority",
       "aliases": [
+        "Cannes",
         "Cannes"
       ],
       "legacySlugs": [],
@@ -1011,6 +1020,7 @@
       "type": "spot",
       "grade": "priority",
       "aliases": [
+        "Monaco",
         "Monaco"
       ],
       "legacySlugs": [],
@@ -1380,8 +1390,9 @@
         "region:aix"
       ],
       "type": "spot",
-      "grade": null,
+      "grade": "optional",
       "aliases": [
+        "Rotonde",
         "Rotonde"
       ],
       "legacySlugs": [],
@@ -1551,6 +1562,7 @@
       "type": "spot",
       "grade": "alternative",
       "aliases": [
+        "L’Isle-sur-la-Sorgue",
         "L’Isle-sur-la-Sorgue"
       ],
       "legacySlugs": [],
@@ -2007,8 +2019,9 @@
         "region:lyon"
       ],
       "type": "spot",
-      "grade": null,
+      "grade": "optional",
       "aliases": [
+        "Bellecour",
         "Bellecour"
       ],
       "legacySlugs": [],
