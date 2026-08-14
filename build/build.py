@@ -3079,11 +3079,27 @@ def google_map_component(*, scope, places, center, zoom, day=None):
 </section>'''
 
 
+def res_headline(statuses):
+    """홈과 예약현황이 '예약 몇 건'을 같은 정의로 말하게 하는 단일 출처.
+
+    한때 홈은 유효 27건(취소 제외), 예약현황은 전체 30건(취소 포함)을 둘 다
+    '예약 건수'라 불러 같은 것이 두 수로 보였다 (HIG 진단). 분모를 여기 한
+    곳에서만 정의한다 — 유효 = 전체 − 취소, 미확정 = 유효 − 예약완료.
+    """
+    from collections import Counter
+    c = Counter(s for s in statuses if s)
+    total = sum(c.values())
+    cancelled = c.get("취소", 0)
+    active = total - cancelled
+    undone = active - c.get("예약완료", 0)
+    return {"total": total, "cancelled": cancelled, "active": active, "undone": undone}
+
+
 def load_reservations():
     """예약 시트를 날짜별 상태 목록으로 묶는다 — 파일럿 요약·홈 준비 스트립용.
 
     상태와 건수만 밖으로 나간다. 주소·예약번호·금액 등 셀 값은 여기서
-    렌더되지 않는다 — 개인정보 비노출 규칙.
+    렌더되지 않는다 — 개인정보 비노출 규칙. 건수는 res_headline 이 정의한다.
     """
     from openpyxl import load_workbook
     wb = load_workbook(TRACKER_XLSX, data_only=True)
@@ -3095,22 +3111,23 @@ def load_reservations():
         return {}, 0, 0, []
     hdr = list(rows[hdr_i])
     ix = {name: hdr.index(name) for name in ("ID", "날짜", "상태", "예약항목")}
-    by_date, total, undone, items = {}, 0, 0, []
+    by_date, all_statuses, items = {}, [], []
     for r in rows[hdr_i + 1:]:
         if not r or not r[ix["ID"]]:
             continue
         status = str(r[ix["상태"]] or "").strip()
+        all_statuses.append(status)
         if status == "취소":
-            continue
-        total += 1
-        if status != "예약완료":
-            undone += 1
+            continue   # 취소는 날짜별 목록·검색 인덱스에는 넣지 않는다
         d = r[ix["날짜"]]
         if hasattr(d, "date"):
             by_date.setdefault(d.date().isoformat(), []).append(status)
         items.append((str(r[ix["ID"]] or "").strip(),
                       str(r[ix["예약항목"]] or "").strip(), status))
-    return by_date, total, undone, items
+    # 건수는 res_headline 이 정의한다 — 예약현황 페이지와 같은 분모. total 은
+    # '유효(취소 제외)' 로, 홈이 지금까지 보여 온 27과 같은 값이다.
+    h = res_headline(all_statuses)
+    return by_date, h["active"], h["undone"], items
 
 
 def build_daily():
@@ -3502,7 +3519,7 @@ def build_home():
     plan_strip = (
         '<section class="plan-strip" aria-label="출발 준비 현황">'
         f'<b class="ps-dday" id="plan-dday">{date_label(TRIP_START)} 출발</b>'
-        f'<span class="ps-copy">예약 {res_total}건 중 미확정 <b>{res_undone}건</b></span>'
+        f'<span class="ps-copy">유효 예약 {res_total}건 중 미확정 <b>{res_undone}건</b></span>'
         '<a class="ps-link" href="tracker/reservations.html">예약 현황</a></section>')
 
     body = f"""<section class="hero">
@@ -3920,6 +3937,9 @@ def reservations_body(ws, label, tabs_html, caption_html):
     counts = {s: sum(1 for r in recs if r.get("상태") == s) for s in RES_STATUS_ORDER}
     total = len(recs)
     open_n = sum(counts[s] for s in RES_OPEN_STATES)
+    # 헤드라인 건수는 홈과 같은 정의(res_headline)로 낸다 — 유효(취소 제외)를
+    # 분모로 쓴다. total(전체 30)은 '전체' 필터 칩에만 남는다.
+    head = res_headline([r.get("상태", "") for r in recs])
 
     bar = "".join(
         f'<span class="rz-seg rz-b-{RES_STATUS_KEY[s]}" style="flex:{counts[s]}"></span>'
@@ -3950,7 +3970,7 @@ def reservations_body(ws, label, tabs_html, caption_html):
     # 카드는 그대로 읽힌다 — 필터가 없을 뿐이지 화면이 비지 않는다.
     return f'''<h1>{label}</h1>{tabs_html}{caption_html}
 <section class="rz-sum" aria-label="예약 상태 요약">
-  <p class="rz-sum-line">전체 <b>{total}건</b> 중 아직 확정 전 <b class="rz-open-n">{open_n}건</b></p>
+  <p class="rz-sum-line">유효 예약 <b>{head["active"]}건</b> 중 미확정 <b class="rz-open-n">{head["undone"]}건</b>{f' · 취소 {head["cancelled"]}건 별도' if head["cancelled"] else ''}</p>
   <div class="rz-bar" role="img" aria-label="{html.escape(bar_label)}">{bar}</div>
 </section>
 <section class="rz-tools" role="search" aria-label="예약 검색과 필터" hidden>
