@@ -20,7 +20,7 @@
 - 주의: 일요일 오전 혼잡, 큰 가방·보안검색, 타워는 계단 하산.
 - 공식정보: https://sagradafamilia.org/en/opening-hours-and-getting-here
 
-## Recinte Modernista de Sant Pau
+## Sant Pau Recinte Modernista
 1902–1930년대에 조성된 병원단지로 Lluís Domènech i Montaner가 위생·정원·공예를 통합했다.
 
 - 방문: Sagrada Família에서 Avinguda de Gaudí를 따라 도보 약 10분.
@@ -30,7 +30,7 @@
 - 주의: 야외 비중이 있어 한낮 더위에는 실내부터.
 - 공식정보: https://santpaubarcelona.org/en/
 
-## Gothic Quarter·Plaça del Rei
+## Barri Gòtic
 중세 Barcelona의 행정·왕실·상업 중심이지만 현재 골목의 상당수는 후대 복원과 재구성의 결과다.
 
 - 방문: Jaume I 또는 Liceu역에서 접근.
@@ -60,7 +60,7 @@ Richard Meier의 백색 건축과 Raval 광장의 스케이트 문화가 함께 
 - 주의: 현대미술 피로가 있으면 60분으로 제한.
 - 공식정보: https://www.macba.cat/en/visit/
 
-## Cau Ferrat·Maricel, Sitges
+## Cau Ferrat
 Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주는 Sitges의 핵심 문화시설이다.
 
 - 방문: 렌터카 주차 후 구시가지 도보 접근.
@@ -87,7 +87,7 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 주의: 계단과 경사, 늦은 도착 시 내부관람 불가.
 - 공식정보: https://www.girona.cat/turisme/eng/monuments_catedral.php
 
-## Girona Walls
+## Girona Cathedral
 로마·중세 방어선이 산책로로 바뀐 곳으로 도시의 지형을 가장 잘 이해할 수 있다.
 
 - 방문: 대성당 뒤편 여러 출입구.
@@ -97,7 +97,7 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 주의: 노출된 구간, 비·강풍·한낮 더위.
 - 공식정보: https://www.girona.cat/turisme/eng/monuments_muralla.php
 
-## Collioure Château Royal
+## Collioure
 마요르카 왕국과 프랑스 군사사의 층을 가진 해안요새다.
 
 - 방문: Cap Dourats 등 외곽주차 후 항구 도보.
@@ -107,8 +107,7 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 주의: 시장일 주차혼잡, 계단.
 - 공식정보: https://www.tourisme-collioure.com/activites-collioure/les-sites-a-ne-pas-manquer-collioure/le-chateau-royal-collioure/
 
-## Chemin du Fauvisme
-Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경과 비교하는 야외코스다.
+**Chemin du Fauvisme (야수파 길)** — Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경과 비교하는 야외코스다.
 
 - 방문: 항구와 구시가지 곳곳의 복제패널을 따라 걷는다.
 - 관람: 작품복제와 현재 풍경을 같은 시점에서 비교한다.
@@ -117,7 +116,7 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 - 주의: 햇빛이 강해 오전 또는 늦은 오후 적합.
 - 공식정보: https://www.tourisme-collioure.com/itineraire/chemin-du-fauvisme/
 
-## Pals Medieval Quarter
+## Pals
 평야 위 언덕마을로, 복원된 중세가로와 Empordà 조망이 강점이다.
 
 - 방문: 외곽주차 후 오르막 도보.
@@ -164,7 +163,7 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 - 주의: 월요일 골동품시장 등 요일 차이.
 - 공식정보: https://www.explorenicecotedazur.com/
 
-## Colline du Château
+## Colline du Château (성채 언덕)
 성은 사라졌지만 Nice의 해안·항구·구시가지 지형을 가장 잘 보여주는 언덕이다.
 
 - 방문: 도보계단 또는 엘리베이터.
@@ -174,7 +173,7 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 - 주의: 엘리베이터 운영·강풍·한낮 더위.
 - 공식정보: https://www.explorenicecotedazur.com/
 
-## Cannes Le Suquet·Croisette
+## Le Suquet — 칸 구시가지
 중세 언덕과 영화제 해안대로가 대비되는 도시다.
 
 - 방문: Nice-Ville에서 TER, Cannes역 도보.
@@ -184,7 +183,7 @@ Matisse와 Derain이 Collioure에서 실험한 강렬한 색채를 실제 풍경
 - 주의: 일요일 시장·열차시간 확인.
 - 공식정보: https://www.cannes-france.com/
 
-## Monaco-Ville
+## Le Rocher — 모나코 구시가지
 왕궁·대성당·해양박물관이 모인 절벽 위 구시가지로 도시국가의 정치적 상징공간이다.
 
 - 방문: TER Monaco-Monte-Carlo 후 버스 또는 도보상승.
@@ -251,7 +250,7 @@ Cézanne가 말년에 사용한 작업실로 오브제·창·빛이 작품제작
 - 주의: 15분 전 도착, 공간이 작음.
 - 공식정보: https://travel.aixenprovencetourism.com/en/fiche/lauves-studio-5538099/
 
-## Cassis Harbour
+## Cassis 항구
 어항·리조트·Calanques 관문이 겹친 해안마을이다.
 
 - 방문: Aix에서 차량, 외곽주차+셔틀 우선.
@@ -288,7 +287,7 @@ Luberon 남쪽의 르네상스 성과 플라타너스 가로가 있는 문화마
 - **문화:** 마른돌 건축, 오커 채굴, 수도원, 포도밭, 작가·예술가의 이미지가 지역정체성을 만든다.
 - **여행해석:** 농가의 시간과 장보기를 중심에 두고 하루 두 마을 이상을 피해야 지역의 느린 성격이 살아난다.
 
-## Roussillon·Sentier des Ocres
+## Roussillon · Sentier des Ocres
 오커 채굴과 침식지형이 붉은 마을경관을 만든 장소다.
 
 - 방문: 외곽주차 후 마을·오커길 도보.
@@ -375,7 +374,7 @@ Rhône의 유속·범람·교역을 보여주는 중세 교량 유적이다.
 - 주의: 강풍·한낮 노출.
 - 공식정보: https://palais-des-papes.com/informations-pratiques/
 
-## Les Halles Avignon
+## Les Halles
 성벽도시 주민생활을 보여주는 실내시장으로 일정의 식사·장보기 기반이다.
 
 - 방문: 도심 남동, 도보.
@@ -385,7 +384,7 @@ Rhône의 유속·범람·교역을 보여주는 중세 교량 유적이다.
 - 주의: 오전 방문, 점포별 휴무.
 - 공식정보: https://avignon-tourisme.com/offres/les-halles-marche-couvert-avignon-fr-4194968/
 
-## Uzès Saturday Market
+## Uzès Place aux Herbes·구시가지
 귀족도시의 아케이드 광장과 광역시장 기능이 결합된 대표 토요시장이다.
 
 - 방문: Avignon에서 차량, 외곽주차.
@@ -432,7 +431,7 @@ Alpilles 석회암 능선 위 성채마을로 자연지형이 방어도시를 �
 - **문화:** traboule, canut, bouchon, 영화의 기원, 현대건축이 도시의 다층성을 만든다.
 - **여행해석:** Fourvière에서 아래로 걷고, 다음날 Croix-Rousse와 Halles를 보는 순서가 도시를 가장 쉽게 이해하게 한다.
 
-## Fourvière Basilica·Roman Hill
+## Fourvière
 로마도시의 중심언덕이자 19세기 가톨릭 상징공간이다.
 
 - 방문: Vieux Lyon에서 funicular.
@@ -442,7 +441,7 @@ Alpilles 석회암 능선 위 성채마을로 자연지형이 방어도시를 �
 - 주의: 경사·강풍·푸니쿨라 운휴.
 - 공식정보: https://en.visiterlyon.com/
 
-## Vieux Lyon·Traboules
+## Vieux Lyon · 트라불
 르네상스 상업도시의 골목·안뜰·통로가 남은 UNESCO 핵심지구다.
 
 - 방문: Fourvière에서 하산 또는 Vieux Lyon역.
@@ -472,7 +471,7 @@ Lyon 미식산업을 한 공간에 압축한 실내시장이다.
 - 주의: 점포별 휴무·가격대 높음.
 - 공식정보: https://en.visiterlyon.com/
 
-## Annecy Old Town·Lake
+## Annecy 구시가지
 Savoy 역사도시와 알프스 호수가 결합된 대표 당일치기다.
 
 - 방문: Lyon Part-Dieu에서 TER.
@@ -499,7 +498,7 @@ Savoy 역사도시와 알프스 호수가 결합된 대표 당일치기다.
 - 주의: 보안·예배시간·대기열.
 - 공식정보: https://www.notredamedeparis.fr/en/
 
-## Louvre Museum
+## Musée du Louvre
 왕궁에서 국립박물관으로 변한 세계 최대급 미술관으로 건축 자체가 프랑스 권력사의 기록이다.
 
 - 방문: Palais Royal–Musée du Louvre역.
@@ -509,7 +508,7 @@ Savoy 역사도시와 알프스 호수가 결합된 대표 당일치기다.
 - 주의: 월요일 개관·화요일 휴관 등 요일 확인, 대형가방.
 - 공식정보: https://www.louvre.fr/en/visit/hours-admission
 
-## Musée d’Orsay
+## Musée d'Orsay
 옛 철도역을 개조한 1848–1914년 미술 중심 박물관이다.
 
 - 방문: RER C Musée d’Orsay 또는 Seine 도보.
@@ -529,7 +528,7 @@ Savoy 역사도시와 알프스 호수가 결합된 대표 당일치기다.
 - 주의: 열람구역 출입제한.
 - 공식정보: https://www.bnf.fr/en/richelieu-site
 
-## Montmartre·South Pigalle
+## Montmartre · South Pigalle
 종교언덕·예술가 신화·관광지와 실제 9·18구 생활권이 이어지는 지역이다.
 
 - 방문: 북사면 또는 Lamarck-Caulaincourt에서 접근해 남쪽으로 하산.
@@ -549,7 +548,7 @@ Savoy 역사도시와 알프스 호수가 결합된 대표 당일치기다.
 - 주의: 토요일 혼잡·장거리보행.
 - 공식정보: https://en.chateauversailles.fr/plan-your-visit
 
-## Giverny Fondation Monet
+## Giverny
 Monet의 정원과 작업환경을 통해 후기 작품의 색·구도를 이해하는 장소다.
 
 - 방문: Paris–Vernon 열차 후 셔틀·택시.
@@ -559,7 +558,7 @@ Monet의 정원과 작업환경을 통해 후기 작품의 색·구도를 이해
 - 주의: 비·철도·폐장시기.
 - 공식정보: https://fondation-monet.com/en/
 
-## Bourse de Commerce
+## Bourse de Commerce — Pinault Collection
 옛 곡물거래소를 Tadao Ando가 개조한 현대미술관으로 역사건축과 원형전시공간이 핵심이다.
 
 - 방문: Les Halles·Louvre권 도보.

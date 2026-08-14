@@ -5073,7 +5073,7 @@ def check_phase9_commercial_depth_guards():
     cards_text = COMMERCIAL_CARDS.read_text(encoding="utf-8")
     dossier_text = PLACE_DOSSIERS.read_text(encoding="utf-8")
     expected_regions = {
-        "barcelona": ("Barcelona", 6), "girona": ("Girona", 7),
+        "barcelona": ("Barcelona", 6), "girona": ("Girona", 6),
         "nice": ("Nice", 6), "aix": ("Aix", 6),
         "luberon": ("Luberon", 6), "avignon": ("Avignon", 7),
         "lyon": ("Lyon", 5), "paris": ("Paris", 8),
@@ -5081,9 +5081,10 @@ def check_phase9_commercial_depth_guards():
 
     if len(re.findall(r"^## .+$", cards_text, re.M)) != 8:
         problems.append("Commercial City Experience Card는 정확히 8개 지역이어야 함")
+    # 2026-08-14 R2: Chemin du Fauvisme dossier 를 Collioure 항목에 병합 (51 → 50).
     dossier_count = len(re.findall(r"^## .+$", dossier_text, re.M))
-    if dossier_count != 51:
-        problems.append(f"장소 dossier {dossier_count}개 (기대 51개)")
+    if dossier_count != 50:
+        problems.append(f"장소 dossier {dossier_count}개 (기대 50개)")
 
     # 최신 Regional Chapter만 검사한다. superseded 원고가 통과 근거가 되어서는 안 된다.
     for chapter in (c for c in CHAPTERS if c["kind"] == "region"):
@@ -5120,7 +5121,7 @@ def check_phase9_commercial_depth_guards():
 
     # 모든 dossier는 현장에서 확인할 수 있는 공식 출발점을 가져야 한다.
     official_links = re.findall(r"^- 공식정보:\s+https?://\S+", dossier_text, re.M)
-    if len(official_links) != 51:
+    if len(official_links) != 51:   # 50개 dossier + Collioure 병합분의 야수파 링크 1
         problems.append(f"dossier 공식정보 링크 {len(official_links)}개 (기대 51개)")
 
     if problems:
@@ -5128,7 +5129,7 @@ def check_phase9_commercial_depth_guards():
         for problem in problems[:40]:
             print("  " + problem)
         sys.exit(1)
-    print("Phase 9 상용편집·장소심화 가드: 8개 지역 카드 · 최신 챕터 8개 · 장소 dossier 51개 · 공식링크 51개 이상 없음")
+    print("Phase 9 상용편집·장소심화 가드: 8개 지역 카드 · 최신 챕터 8개 · 장소 dossier 50개 · 공식링크 50개 이상 없음")
 
 
 def check_phase10_official_fact_guards():
