@@ -5332,8 +5332,11 @@ def check_phase7_visual_guards():
         if manifest_region:
             asset = media.photo_region_hero(PHOTO_MANIFEST, manifest_region)
             default_variant = media._photo_variants(asset, "hero")[-1]
+            # 캡션의 저작자는 표시 이름(credit_display)이다 — 원문 URL 접기(#130)
+            # 이후 원문 그대로를 기대하면 가드가 거짓 실패한다. 원문 전체는
+            # 아래 photo-credits 검사가 따로 잠근다.
             expected = (default_variant["sitePath"], f'alt="{html.escape(asset["altKo"])}"',
-                        html.escape(asset["creator"]), asset["license"],
+                        html.escape(media.credit_display(asset["creator"])), asset["license"],
                         "사진 정보", "data-photo-id")
         else:
             expected = (f'assets/heroes/{slug}.jpg', f'alt="{html.escape(subject)}"',
@@ -5341,6 +5344,13 @@ def check_phase7_visual_guards():
         for token in expected:
             if token not in page_text:
                 problems.append(f"{chapter['region']} 허브 대표사진·크레딧 누락: {token}")
+
+    # 캡션은 표시 이름으로 접지만, 저작자 원문 전체는 크레딧 페이지에 남아야
+    # 한다 — CC 표시 의무의 기계 잠금. 접기가 기록까지 지우면 여기서 멈춘다.
+    credits_text = (SITE / "about" / "photo-credits.html").read_text(encoding="utf-8")
+    for asset in media.photos(PHOTO_MANIFEST):
+        if html.escape(asset["creator"]) not in credits_text:
+            problems.append(f"크레딧 페이지에 저작자 원문 누락: {asset['imageId']}")
 
     for key, fname in VISUALS.items():
         source = VISUALS_DIR / fname
