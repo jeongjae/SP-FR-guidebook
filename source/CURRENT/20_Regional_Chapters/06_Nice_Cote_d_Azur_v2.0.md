@@ -347,7 +347,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - [GeoJSON](../../ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.geojson)
 - [KML](../../ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml)
 - 대상 일정: **Day 7–12**
-- 숙소 핀은 현재 **후보 위치**이며 실제 예약주소가 아니다.
+- 숙소 핀은 **확정 주소**다 — Palais ALZIRA, 12 Rue Verdi (2026-08-13 확정).
 - 연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.
 - HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.
 
@@ -788,7 +788,7 @@ Jason·Julia의 선호를 반영해 이번 챕터에서 미술관은 기본안�
 ### 15.2 실제 숙소 후보
 
 > **확정됐다 (2026-08-13).** **Palais ALZIRA · 12 Rue Verdi, 06000 Nice** — 체크인 9/4 15:00, 체크아웃 9/9 11:00.
-> 아래 표는 선정 과정의 기록이며 더는 선택지가 아니다. Airbnb 예약번호는 HMJ3HX8QAY 이고, 총액만 트래커에 입력하면 잠긴다 {{badge:pending|총액 입력}}.
+> 아래 표는 선정 과정의 기록이며 더는 선택지가 아니다. Airbnb 예약번호는 HMJ3HX8QAY 이고, 총액만 트래커에 입력하면 잠긴다 {{badge:pending|총액 입력 결정}}.
 
 | 후보 | 생활권·형태 | 장점 | 확인사항 | 적합도 |
 |---|---|---|---|---:|

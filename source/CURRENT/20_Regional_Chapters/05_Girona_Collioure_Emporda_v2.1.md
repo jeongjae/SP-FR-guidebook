@@ -504,7 +504,7 @@ Day 3의 세 곳은 **서로 20~30분 거리인데 성격이 전부 다르다.**
 - [GeoJSON](../../ASSETS/75_Execution_Maps/Girona_Execution_Map_v0.2.geojson)
 - [KML](../../ASSETS/75_Execution_Maps/Girona_Execution_Map_v0.2.kml)
 - 대상 일정: **Day 4–7**
-- 숙소 핀은 현재 **후보 위치**이며 실제 예약주소가 아니다.
+- 숙소 핀은 **확정 주소**다 — 바스카라의 B&B, Plaça de l'Església 6 (예약 HM2YPHDRW5).
 - 연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.
 - HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.
 
