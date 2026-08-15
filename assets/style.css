@@ -443,6 +443,16 @@ body.has-large-title.scrolled-past .tb-crumbs { opacity: 1; }
 .tb-sep { flex: 0 0 auto; padding: 0 3px; color: var(--muted); }
 .tb-crumbs-none { flex: 1 1 auto; }
 
+/* 좁은 화면에서 4단계 경로는 조상과 현재가 둘 다 잘렸다 —
+   `홈 › 지역 › Avi… › Palais de…`. 잘린 조상은 정보가 아니라 소음이다.
+   중간 축 링크를 접어 `홈 › Avignon › Palais des Papes` 로 만든다.
+   홈은 남긴다 — 크롬에서 홈으로 가는 유일한 문이다 (하단탭에 홈 없음).
+   2단계(홈›현재)는 중간이 없어 영향이 없고, 3단계 이상에서만 접힌다. */
+@media (max-width: 480px) {
+  .tb-crumbs a:not(:first-of-type):not(:last-of-type),
+  .tb-crumbs .tb-sep:not(:first-of-type):not(:last-of-type) { display: none; }
+}
+
 
 
 /* ================= 챕터 서브내비 ================= */
@@ -1137,7 +1147,47 @@ nav.pager a {
 }
 .card-title { font-weight: 700; line-height: 1.4; }
 /* 지역 카드 — 제목이 링크라 카드 전체를 a 로 감싸지 않는다 */
-.rg-card { gap: 6px; }
+.rg-card { gap: 6px; position: relative; overflow: hidden; padding-top: 18px; }
+/* 국기 띠 — 카드 위 모서리의 면. 어느 나라 거점인지가 목록에서 보인다 (진단 E-3).
+   방향은 국기 그대로다: 스페인 가로 3줄(1:2:1), 프랑스 세로 3칸. 상단바 띠와
+   같은 문법이라 새 시각 언어가 아니다. */
+.rg-card::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 6px;
+  box-shadow: inset 0 0 0 0.5px var(--separator);
+}
+.rg-es::before {
+  background: linear-gradient(to bottom,
+    var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%, var(--flag-es-red) 75%);
+}
+.rg-fr::before {
+  background:
+    linear-gradient(to right, transparent 0 33.34%, var(--separator) 33.34% calc(33.34% + 1px),
+      transparent calc(33.34% + 1px) 66.67%, var(--separator) 66.67% calc(66.67% + 1px),
+      transparent calc(66.67% + 1px)),
+    linear-gradient(to right, var(--flag-fr-blue) 0 33.34%,
+      var(--flag-fr-white) 33.34% 66.67%, var(--flag-fr-red) 66.67%);
+}
+/* 국경 구분선 — Girona 와 Nice 사이. 그리드 전폭을 차지한다. */
+.rg-border {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  margin: var(--s2) 0;
+  color: var(--muted);
+  font-size: var(--t-foot);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.rg-border::before, .rg-border::after {
+  content: "";
+  flex: 1;
+  border-top: 2px dashed var(--border);
+}
+.rg-border span { flex: 0 0 auto; }
 .rg-card .card-title {
   display: flex;
   align-items: center;
