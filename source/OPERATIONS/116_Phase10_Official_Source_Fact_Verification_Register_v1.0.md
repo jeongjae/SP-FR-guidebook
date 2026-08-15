@@ -1,6 +1,6 @@
 # 116. Phase 10 Official-Source Fact Verification Register v1.0
 
-**검증일:** 2026-08-04 · **2차 검증 2026-08-14 (F024–F036, 콘텐츠 품질 R1)**
+**검증일:** 2026-08-04 · **2차 검증 2026-08-14 (F024–F036, 콘텐츠 품질 R1)** · **3차 검증 2026-08-15 (F037–F042, R4 식당 영업일)**
 **원칙:** 공식 운영기관·지자체·국립공원·관광기관의 현재 웹페이지를 우선한다.
 
 ## 상태 정의
@@ -53,6 +53,12 @@
 | F034 | Aix | Atelier des Lauves (Cézanne) | 운영·요금·예약 | VERIFIED | 2026 시즌 7/4–10/31. 9월 매일 09:00–18:00(마지막 관람 17:00), 10월 10:00–17:00. 예약 필수. 오디오 €9.50 · 가이드 €12 · 심화 €15. | [공식](https://www.cezanne-en-provence.com/L-Atelier-des-Lauves?lang=fr) | 9/12 시간지정 예약 |
 | F035 | Paris | ParisLongchamp (Arc) | 접근 | DATE_GATE | Porte d’Auteuil·Porte Maillot 에서 경마장행 **무료 셔틀** 운행 확인. 첫차·배차·막차는 회차 공지에서만 확정된다. | [공식](https://www.france-galop.com/en/content/qatar-prix-de-larc-de-triomphe-worlds-greatest-horse-race) | 10/4 당일 공지 확인 |
 | F036 | Barcelona | Hertz (스페인 렌터카) | 국경운전 | VERIFIED | 스페인 밖 운행 시 크로스보더 요금이 부과되고, **신고하지 않으면 제3자·CDW·도난·SuperCover 가 무효**가 된다. 프랑스는 허용 국가. | [공식](https://www.hertz.com/rentacar/reservation/reviewmodifycancel/templates/rentalTerms.jsp?KEYWORD=DRIVINGRESTRICTIONS&EOAG=MADT50) | 9/1 인수 창구에서 프랑스 주행 신고 |
+| F037 | Lyon | Daniel et Denise Créqui | 영업일 | CORRECTED | 월–금 12–14 · 19–22, **토·일 휴무.** 원고의 '화요일 휴무' 리스크는 반대로 틀린 정보 — 9/22(화) 예약 정상. | [공식](https://danieletdenise.fr/) | 예약 시 지각정책 확인 |
+| F038 | Lyon | Café Comptoir Abel | 영업일 | CORRECTED | **매일 영업** (월–목 12–14 · 19:30–22 등). 원고의 '월요일 휴무' 우려 해소 — 9/21(월) 예약 정상. | [공식](https://www.maisonabel.fr/maison-abel/le-cafe-comptoir-chez-abel/) | 예약 시 취소정책 확인 |
+| F039 | Sitges | La Zorra | 영업일 | CONFLICT_RECHECK | 공식 사이트 매일 13:00–16:30 · 20:30–23:00, 일부 포털 월요일 휴무 표기 — 상충. 방문일 9/1(화)은 어느 기준으로도 영업일. | [공식](https://restaurantelazorra.com/horario-y-contacto/) | 예약 확정 문자로 해소 |
+| F040 | Barcelona | Bar Cañete | 영업일 | VERIFIED | 월–토 13:00–24:00, **일요일 휴무** — 8/31(월) 점심 정상. | [공식](https://barcanete.com/en/bookings/) | 온라인 예약 우선 |
+| F041 | Barcelona | La Paradeta Sagrada Família | 영업일 | VERIFIED | 일요일 13:00–16:00 영업 · 일 저녁·월요일 휴무 — 8/30(일) 점심 정상. 예약 없음(줄서기). | [공식](https://www.laparadeta.com/en/seafood-restaurants/) | 개점 직전 도착 |
+| F042 | Barcelona | Bodega Joan | 영업일 | VERIFIED | 매일 영업 — 점심 12:00–18:00 · 저녁 18:00~. 8/29·30 저녁 후보 정상. | [공식](https://www.bodegajoan.com/en) | 예약 선택 |
 
 ## 범위와 한계
 
