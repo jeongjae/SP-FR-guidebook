@@ -77,6 +77,10 @@ SCHEDULED_RESTAURANTS = [
 
 # C6 — 본문에 남으면 안 되는 잔재
 CANCELLED_TERMS = ("Hamlet", "Il Barbiere", "Este Mundo")
+# '후보' 단어 자체는 정당하다 (점심 후보·행사 후보·선정 기록). 잔재는
+# **확정된 예약을 아직 후보라고 말하는 줄**이다.
+CONFIRMED_STAYS = ("Palais ALZIRA", "Lagrange", "Occidental", "바스카라의 B&B",
+                   "12 Rue Verdi", "Cours Albert Thomas")
 CANDIDATE_RE = re.compile(r"후보")
 
 PENDING_RE = re.compile(r"\{\{badge:pending\|([^}]*)\}\}")
@@ -315,11 +319,27 @@ def collect():
 
     # ---- C6 잔재 · pending 분류
     cancelled = candidate = 0
+    cancelled_lines = []
     pending_kinds = Counter()
+    HISTORY_MARK = re.compile(r"(취소|폐기|기록|~~|당시|이었다|였다|했다|없었고)")
     for path in sorted(CHAPTER_DIR.glob("*.md")):
         text = read(path)
-        cancelled += sum(text.count(t) for t in CANCELLED_TERMS)
-        candidate += len(CANDIDATE_RE.findall(text))
+        for n, line in enumerate(text.splitlines(), 1):
+            hits = sum(line.count(t) for t in CANCELLED_TERMS)
+            if hits and not HISTORY_MARK.search(line):
+                # 이력 서술은 잔재가 아니다 — 잔재는 지금도 실행하라고 읽히는 지시문이다.
+                cancelled += hits
+                cancelled_lines.append({"file": path.name, "line": n,
+                                        "text": line.strip()[:90]})
+        for line in text.splitlines():
+            if "후보" not in line:
+                continue
+            if any(k in line for k in CONFIRMED_STAYS) \
+                    and "결정 완료" not in line and "확정" not in line:
+                candidate += 1
+            elif re.search(r"(Nice|Lyon|니스|리옹).{0,14}숙소.{0,10}후보|후보 위치", line) \
+                    and not any(w in line for w in ("기록", "선정", "미확정")):
+                candidate += 1
         for label in PENDING_RE.findall(text):
             kind = next((k for k, words in PENDING_KINDS.items()
                          if any(w in label for w in words)), "미분류")
@@ -360,7 +380,9 @@ def collect():
                "day_conflicts": day_conflicts,
                "_missing_count": len(card_missing) + len(card_field_gaps),
                "_conflict_count": len(day_conflicts)},
-        "C6": {"cancelled_mentions": cancelled, "candidate_mentions": candidate,
+        "C6": {"cancelled_mentions": cancelled, "cancelled_lines": cancelled_lines[:60],
+               "candidate_mentions": candidate,
+               "_unclassified": pending_kinds.get("미분류", 0),
                "pending_by_kind": dict(pending_kinds),
                "pending_total": sum(pending_kinds.values())},
         "photos": {"spots": len(spots), "with_photo": len(spots) - len(photo_missing_all),
@@ -385,6 +407,10 @@ GATES: dict[str, tuple[str, int]] = {
     # R4 (2026-08-15): 확정 식당은 9필드 카드를 갖고, 방문 요일과 휴무가 충돌하지 않는다.
     "식당 카드 없음": ("C5._missing_count", 0),
     "식당 요일 충돌": ("C5._conflict_count", 0),
+    # R5a (2026-08-15): 취소·후보 잔재 지시문과 pending 미분류를 0 으로 잠근다.
+    "취소 공연 지시형 잔재": ("C6.cancelled_mentions", 0),
+    "확정 숙소의 후보 표기": ("C6.candidate_mentions", 0),
+    "pending 미분류": ("C6._unclassified", 0),
 }
 
 
