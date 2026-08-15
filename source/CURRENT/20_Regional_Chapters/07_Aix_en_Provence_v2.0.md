@@ -1045,19 +1045,38 @@ Julia의 수영장 접근성은 숙소평가 가중치에서 제외한다.
 
 ## 12. 실제 숙소 후보
 
+> **현지 결정 방침 (DEC-039, 2026-08-15).** 이 구간 숙소는 사전 예약하지 않고
+> 현지에서 결정한다. 아래 후보는 현장 결정용 자료다 — 도착 1–2일 전 전화·공식
+> 페이지로 재고·요금·설비를 확인한 뒤 고른다. 아래 순위 문구 중 "우선 예약"은
+> 사전예약 모드에서 작성된 것으로, 현지 결정 모드에서는 "우선 확인"으로 읽는다.
+
 ### 1순위 — Aparthotel Adagio Aix-en-Provence Centre
 
 - 위치: 3–5 Rue des Chartreux, Sextius·Rotonde 북서쪽
 - 장점: 구시가지·Allées Provençales 도보, 주방, 냉방, 아파트형, 중심 외곽 진입
 - 주차: 공식 예약과 차량 높이·요금 확인 필요
 - 적합 이유: **4박 생활형 체류와 차량 진입의 균형이 가장 좋다.**
-- 판단: 실제 총액이 상한 내이면 우선 예약
+- 연락처: 04 42 37 98 98 {{badge:pending|재확인}}
+- 판단: 실제 총액이 상한 내이면 우선 확인
 
 ### 2순위 — Odalys City Aix Centre Rotonde / Les Floridianes
 
 - 위치: Rotonde 남쪽·역/버스터미널권
 - 장점: kitchenette, 냉방, Cours Mirabeau 도보, 유료 실내주차, 4–10월 계절수영장
 - 주의: Julia의 수영운동용 시설로 평가하지 않음. 차량 높이 제한과 주차예약 확인
+- 연락처: 04 42 37 23 23 {{badge:pending|재확인}}
+
+### 추가 후보 — Maison Dauphine (2026-08-15 조사)
+
+> 아래 값은 2026-08-15 조언 문서 기반의 **미검증 참고치**다. 현지 결정 전
+> 공식 페이지에서 확인한다.
+
+- 위치·형태: 구시가지 안쪽(Mazarin 방향) guest house · self-catering
+- 연락처: 06 51 06 18 75 {{badge:pending|재확인}}
+- 참고 요금: 1박 €170–276 수준 {{badge:pending|재확인}}
+- 장점: 구시가지 한가운데 도보 생활권, 생활형 숙박, garage 보유로 알려짐
+- 확인사항: 실제 요금·garage 진입 조건·Aix 관광청 등록 여부
+- 성격: Adagio(생활 편의)와 반대편 — **분위기·도시생활 경험 우선**일 때의 후보
 - 적합 이유: Marseille 버스, Mazarin, Yves Blanc 접근이 좋다.
 
 ### 3순위 — Séjours & Affaires Aix-en-Provence Mirabeau
