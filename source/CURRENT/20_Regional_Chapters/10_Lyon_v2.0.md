@@ -833,10 +833,10 @@ Annecy **구시가지 시장**은 화·금·일 07:00–13:00에 열리므로 �
 | P0 | Avignon TGV→Lyon | 9/20 오전 | 차량반납 여유 60–90분, 직행편 |
 | P0 | Lyon→Paris | 9/24 | 숙소 체크아웃과 Part-Dieu 도착 여유 |
 | P1 | Lyon↔Annecy | 9/23 | 직행·좌석·마지막 귀환편·공사 |
-| P1 | Daniel et Denise | 9/22 19:30 | 화요일 휴무·메뉴·지각정책 {{badge:pending|영업일 확인}} |
+| P1 | Daniel et Denise Créqui | 9/22 19:30 | **화요일 정상 영업** (월–금 영업 · 토일 휴무 — danieletdenise.fr · 2026-08-15 확인) · 메뉴·지각정책만 재확인 |
 | P1 | Annecy 점심 | 9/23 11:50–12:00 | Chez Mamie Lise 또는 Le Freti |
 | P2 | Annecy 크루즈 | 9/23 14:30 전후 | 계절 운항·날씨·선착장 |
-| P2 | Café Comptoir Abel | 9/21 19:30 | 월요일 휴무·취소정책 {{badge:pending|영업일 확인}} |
+| P2 | Café Comptoir Abel | 9/21 19:30 | **월요일 정상 영업** (매일 영업 — maisonabel.fr · 2026-08-15 확인) · 취소정책만 재확인 |
 | P3 | LOU Piscine | 선택 | 자유수영 레인·운영시간·수영모 규정 |
 
 ---
@@ -1216,9 +1216,37 @@ Part-Dieu는 철도·업무·상업 허브이고, Confluence는 산업지에서 
 | 식당 | 성격 | 추천메뉴 | 계획가격 | 예약 |
 |---|---|---|---:|---|
 | **Café Comptoir Abel** | Ainay 인근 역사적 전통식당 | quenelle, poulet aux morilles, cervelle de canut | 메인 €20–30대 | 권장 |
-| **Daniel et Denise Part-Dieu** | Joseph Viola의 정통 bouchon | pâté en croûte, quenelle Nantua, praline 디저트 | 점심 €21, 계절메뉴 약 €41 | **권장** |
-| **Daniel et Denise Croix-Rousse** | 시장·언덕 일정과 연결 | 전통 리옹 메뉴 | 메뉴 약 €33, 시식메뉴 약 €41 | 권장 |
-| **Halles Paul Bocuse 점포** | 시장형 점심 | Giraudet quenelle, Sibilia charcuterie, Mère Richard 치즈 | 2인 €35–70 | 불필요·혼잡 대비 |
+
+#### 식당 카드 — Café Comptoir Abel {{badge:p0|9/21 확정 저녁}}
+
+| 필드 | 내용 |
+|---|---|
+| 역할 | 특별저녁 (Day 24 · 9/21 월 19:30) |
+| 가격대 | €€ — 메인 €20–30대, 계획가(2026-08 조사) |
+| 대표메뉴 | quenelle de brochet, poulet aux morilles, cervelle de canut |
+| 분위기 | 1726년부터의 건물, 리옹에서 가장 오래된 축의 비스트로 — 나무 카운터·옛 벽화 |
+| 예약난이도 | 중 — 전화 예약 권장 (+33 4 78 37 46 18) |
+| 추천시간 | 저녁 첫 회전 19:30 |
+| 숙소·동선 | Ainay 권역 — 메트로 D Bellecour 하차 후 도보. 숙소(Sans Souci)에서 환승 없이 접근 |
+| 휴무·재확인 | **매일 영업 (maisonabel.fr · 2026-08-15 확인)** — 9/21(월) 정상. 취소정책만 예약 시 확인 |
+| 대체 후보 | 숙소권 간단식 또는 Bellecour 권역 브라세리 |
+| **Daniel et Denise Part-Dieu** | Joseph Viola의 정통 bouchon | pâté en croûte, quenelle Nantua, praline 디저트 | 점심 €21, 계절메뉴 약 €41 — 계획가(2026-08 조사) | **권장** |
+
+#### 식당 카드 — Daniel et Denise Créqui {{badge:p0|9/22 확정 저녁}}
+
+| 필드 | 내용 |
+|---|---|
+| 역할 | 특별저녁 (Day 25 · 9/22 화 19:30) — 이 체류의 부숑 대표 경험 |
+| 가격대 | €€–€€€ — 점심 €21 · 계절메뉴 약 €41, 계획가(2026-08 조사) |
+| 대표메뉴 | pâté en croûte(세계 챔피언 타이틀), quenelle de brochet sauce Nantua, tarte praline |
+| 분위기 | MOF 셰프 Joseph Viola 의 정통 부숑 — 체크 테이블보, 좁고 활기찬 홀 |
+| 예약난이도 | 중상 — 온라인·전화 (+33 4 78 60 66 53), 1주 전 권장 |
+| 추천시간 | 저녁 첫 회전 19:00–19:30 |
+| 숙소·동선 | 3구 Créqui 지점 기준 — **숙소(Cours Albert Thomas)에서 도보·버스권**, 시내 지점보다 가깝다 |
+| 휴무·재확인 | **월–금 영업 · 토일 휴무 (danieletdenise.fr · 2026-08-15 확인)** — 9/22(화) 정상 |
+| 대체 후보 | Daniel et Denise Croix-Rousse 지점 또는 Halles 내 식당 |
+| **Daniel et Denise Croix-Rousse** | 시장·언덕 일정과 연결 | 전통 리옹 메뉴 | 메뉴 약 €33, 시식메뉴 약 €41 — 계획가(2026-08 조사) | 권장 |
+| **Halles Paul Bocuse 점포** | 시장형 점심 | Giraudet quenelle, Sibilia charcuterie, Mère Richard 치즈 | 2인 €35–70 | 불필요·혼잡 대비 — 계획가(2026-08 조사) |
 | **L’Artichaut** | Hôtel de l’Abbaye 내 현대 비스트로 | 제철 프랑스요리 | 공식메뉴 재확인 | 숙박 시 권장 |
 
 ### 19.2 음식 주문 원칙
@@ -1530,8 +1558,8 @@ Avignon 챕터에서 이어진다. 요점만 반복한다.
 
 ### 카드 E — 대표 저녁
 
-- Café Comptoir Abel: 9/21 월요일 영업 확인 후
-- Daniel et Denise: 9/22 화요일 영업 확인 후
+- Café Comptoir Abel: **월요일 영업 확인 완료** (2026-08-15) — 예약만 하면 된다
+- Daniel et Denise Créqui: **화요일 영업 확인 완료** (2026-08-15) — 예약만 하면 된다
 - 늦은 귀가는 택시 가능하도록 식당 위치와 숙소 관계 확인
 
 ---

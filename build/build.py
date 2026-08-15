@@ -5581,8 +5581,8 @@ def check_phase10_official_fact_guards():
     rows = md_table_rows(verify_text,
                          ["ID", "지역", "장소", "상태", "확인내용", "공식출처", "조치"])
     ids = [row.get("ID") for row in rows]
-    if ids != [f"F{i:03d}" for i in range(1, 37)]:
-        problems.append("공식 검증 레코드는 F001~F036의 연속된 36건이어야 함")
+    if ids != [f"F{i:03d}" for i in range(1, 43)]:
+        problems.append("공식 검증 레코드는 F001~F042의 연속된 42건이어야 함")
 
     allowed_states = set(VERIFY_STATUS)
     state_counts = {state: 0 for state in allowed_states}
@@ -5602,15 +5602,15 @@ def check_phase10_official_fact_guards():
         else:
             official_urls.append(match.group(1))
 
-    # 2026-08-14 콘텐츠 품질 R1 에서 F024~F036 을 추가했다.
+    # R1(F024~F036)·R4(F037~F042 식당 영업일)에서 확장했다.
     expected_counts = {
-        "VERIFIED": 20, "CORRECTED": 6, "VERIFIED_CURRENT": 6,
-        "CONFLICT_RECHECK": 1, "DATE_GATE": 3,
+        "VERIFIED": 23, "CORRECTED": 8, "VERIFIED_CURRENT": 6,
+        "CONFLICT_RECHECK": 2, "DATE_GATE": 3,
     }
     if state_counts != expected_counts:
         problems.append(f"검증상태 집계 {state_counts} (기대 {expected_counts})")
-    if len(official_urls) != 36:
-        problems.append(f"공식출처 URL {len(official_urls)}개 (기대 36개)")
+    if len(official_urls) != 42:
+        problems.append(f"공식출처 URL {len(official_urls)}개 (기대 42개)")
 
     # 검증일은 명시되어야 하고 여행 시작일보다 뒤일 수 없다.
     verified_date = re.search(r"\*\*검증일:\*\*\s*(\d{4}-\d{2}-\d{2})", verify_text)
@@ -5673,7 +5673,7 @@ def check_phase10_official_fact_guards():
         for problem in problems[:50]:
             print("  " + problem)
         sys.exit(1)
-    print("Phase 10 공식정보 가드: 36개 공식검증 · 정정 3건 · 충돌 1건 · 날짜게이트 17개 · 8지역 배포 이상 없음")
+    print("Phase 10 공식정보 가드: 42개 공식검증 · 정정 3건 · 충돌 1건 · 날짜게이트 17개 · 8지역 배포 이상 없음")
 
 
 def check_links():

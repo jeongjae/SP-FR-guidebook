@@ -61,6 +61,20 @@ EVIDENCE_RE = re.compile(
     r"|확정\(20\d\d-\d\d|출발 전 재확인|\[재확인\]|기록\(20\d\d-\d\d"
     r"|복수 출처 확인|\|\s*확인\s*\|)")
 
+# C5 — 일정에 이름이 박힌 식당의 실용 카드 (표준 89 의 9필드).
+# 방문 예정으로 확정된 식당만 검사한다 — 후보 나열은 대상이 아니다.
+CARD_FIELDS = ("역할", "가격대", "대표메뉴", "분위기", "예약난이도",
+               "추천시간", "숙소·동선", "휴무·재확인", "대체 후보")
+# (카드 헤딩 이름, 방문 날짜 ISO, 알려진 휴무 요일 번호 {월=0..일=6})
+SCHEDULED_RESTAURANTS = [
+    ("La Paradeta Sagrada Família", "2026-08-30", {0}),        # 월 휴무 · 일 점심만
+    ("Bar Cañete", "2026-08-31", {6}),                          # 일 휴무
+    ("Bodega Joan", "2026-08-30", set()),                       # 매일
+    ("La Zorra", "2026-09-01", set()),                          # 공식 매일 (포털 상충: 월)
+    ("Café Comptoir Abel", "2026-09-21", set()),                # 매일
+    ("Daniel et Denise Créqui", "2026-09-22", {5, 6}),          # 토·일 휴무
+]
+
 # C6 — 본문에 남으면 안 되는 잔재
 CANCELLED_TERMS = ("Hamlet", "Il Barbiere", "Este Mundo")
 CANDIDATE_RE = re.compile(r"후보")
@@ -282,6 +296,23 @@ def collect():
                     unsourced.append({"file": path.name, "line": n,
                                       "text": line.strip()[:100]})
 
+    # ---- C5 실용 카드 — 확정 식당의 9필드와 방문 요일 충돌
+    from datetime import date as _date
+    all_text = "\n".join(read(p) for p in sorted(CHAPTER_DIR.glob("*.md")))
+    card_missing, card_field_gaps, day_conflicts = [], [], []
+    for name, visit_iso, closed in SCHEDULED_RESTAURANTS:
+        m = re.search(rf"^#{{3,5}} 식당 카드 — {re.escape(name)}.*?$(.*?)(?=^#{{2,5}} |\Z)",
+                      all_text, re.M | re.S)
+        if not m:
+            card_missing.append(name)
+            continue
+        body = m.group(1)
+        gaps = [fld for fld in CARD_FIELDS if f"| {fld} |" not in body]
+        if gaps:
+            card_field_gaps.append({"name": name, "missing": gaps})
+        if _date.fromisoformat(visit_iso).weekday() in closed:
+            day_conflicts.append({"name": name, "date": visit_iso})
+
     # ---- C6 잔재 · pending 분류
     cancelled = candidate = 0
     pending_kinds = Counter()
@@ -324,6 +355,11 @@ def collect():
                "rate": round(op_evidenced / op_total, 4) if op_total else 1.0,
                "samples": unsourced[:15]},
         "C4": {"element_gaps": dict(element_gaps)},
+        "C5": {"restaurants": len(SCHEDULED_RESTAURANTS),
+               "card_missing": card_missing, "field_gaps": card_field_gaps,
+               "day_conflicts": day_conflicts,
+               "_missing_count": len(card_missing) + len(card_field_gaps),
+               "_conflict_count": len(day_conflicts)},
         "C6": {"cancelled_mentions": cancelled, "candidate_mentions": candidate,
                "pending_by_kind": dict(pending_kinds),
                "pending_total": sum(pending_kinds.values())},
@@ -346,6 +382,9 @@ GATES: dict[str, tuple[str, int]] = {
     "dossier 이름 불일치": ("C2.unmatched", 0),
     # R3 (2026-08-14): 등급별 서술 하한. 새 장소를 스텁으로 추가하면 여기서 멈춘다.
     "등급별 분량 하한 미달": ("C2.below_floor", 0),
+    # R4 (2026-08-15): 확정 식당은 9필드 카드를 갖고, 방문 요일과 휴무가 충돌하지 않는다.
+    "식당 카드 없음": ("C5._missing_count", 0),
+    "식당 요일 충돌": ("C5._conflict_count", 0),
 }
 
 
@@ -369,6 +408,7 @@ def gate(data) -> int:
 
 def render(data) -> str:
     c1, c2, c3, c6, ph = data["C1"], data["C2"], data["C3"], data["C6"], data["photos"]
+    c5s = data["C5"]
     lines = [
         "# 콘텐츠 품질 스코어카드",
         "",
@@ -387,6 +427,8 @@ def render(data) -> str:
         f"| C3 | 운영정보 줄 | {c3['operational_lines']} |",
         f"| C3 | 근거 표기 | {c3['evidenced']} ({c3['rate']:.0%}) |",
         f"| C3 | **무근거** | **{c3['unsourced']}** |",
+        f"| C5 | 확정 식당 카드 (9필드) | {c5s['restaurants'] - len(c5s['card_missing'])} / {c5s['restaurants']} |",
+        f"| C5 | 방문 요일 충돌 | **{len(c5s['day_conflicts'])}** |",
         f"| C6 | 취소 공연 잔재 | {c6['cancelled_mentions']} |",
         f"| C6 | `후보` 표기 | {c6['candidate_mentions']} |",
         f"| C6 | pending 미분류 | {c6['pending_by_kind'].get('미분류', 0)} / {c6['pending_total']} |",
@@ -449,6 +491,9 @@ def main():
     print(f"C3 근거    : 운영정보 {c3['operational_lines']}줄 · 근거 {c3['evidenced']} "
           f"({c3['rate']:.0%}) · 무근거 {c3['unsourced']}")
     print(f"C4 구조    : 결측 {data['C4']['element_gaps']}")
+    c5 = data["C5"]
+    print(f"C5 실용카드: 확정 식당 {c5['restaurants']} · 카드 없음 {len(c5['card_missing'])} "
+          f"· 필드 결측 {len(c5['field_gaps'])} · 요일 충돌 {len(c5['day_conflicts'])}")
     print(f"C6 무모순  : 취소 잔재 {c6['cancelled_mentions']} · 후보 {c6['candidate_mentions']} "
           f"· pending {c6['pending_total']} (미분류 {c6['pending_by_kind'].get('미분류', 0)})")
     print(f"사진       : 필수 {ph['essential'] - ph['essential_missing']}/{ph['essential']} "
