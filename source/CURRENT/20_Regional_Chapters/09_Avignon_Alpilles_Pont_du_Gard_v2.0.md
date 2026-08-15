@@ -1107,12 +1107,32 @@ Arènes와 Théâtre antique를 본 뒤 Place du Forum, Saint-Trophime, La Roque
 | **ibis budget Avignon Centre** | 서남 성벽 밖, 예산호텔 | 예약형 유료주차 가능, 24시간 프런트, 예산관리 | 객실·생활공간 작음, 장기체류감 약함 | **78/100** |
 | **Hôtel Cloître Saint-Louis** | 성벽 안 남부, 역사호텔 | 수도원 건축·정원, Gare Centre 접근, 저녁식당 편리 | 주차·객실 리노베이션 상태·엘리베이터 재확인 | **조건부** |
 
+### 14.2b 추가 후보 — 동쪽 Carmes–Teinturiers 생활권 (2026-08-15 조사)
+
+> **현지 결정 방침 (DEC-039).** 이 구간 숙소는 사전 예약하지 않고 현지에서
+> 결정한다. 아래 값은 2026-08-15 조언 문서 기반의 **미검증 참고치**다 —
+> 도착 1–2일 전 전화·공식 페이지로 확인한다.
+
+14.2 의 후보가 남부·성벽 밖(주차·역 접근) 중심이라면, 아래는 **동쪽
+Carmes–Place Pie–Teinturiers 생활권** 축이다. Les Halles 시장·Place Pie·
+Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 10–15분이라,
+"관광지가 아니라 나흘 살아보는 도시"로 접근할 때 가장 강하다. 대신 구시가지
+차량 통행 제한이 있어 주차는 Palais des Papes·Les Halles 등 공영주차장
+이용이 전제다.
+
+| 후보 | 위치·형태 | 연락처 | 참고 정보 | 장점 | 확인사항 |
+|---|---|---|---|---|---|
+| **Appartements des Teinturiers** | Rue des Teinturiers, 아파트 4채 | 06 20 95 19 25 | 40–85㎡ · 2–6인 (참고치) | 완전 아파트형, 시장·식당·카페 도보, Teinturiers 생활감 | 구옥 가능성 — 엘리베이터·층수·냉방·세탁 객실별 확인, 차량은 공영주차 |
+| **Dream Avignon** | Carnot–Carmes–Place Pie 일대, 가구 완비 아파트/주택 그룹 | 공식 페이지 확인 | 일부 주방·거실·안뜰 (참고치) | 생활권+주방+구시가지 조합 | 개별 물건별 설비·위치 편차 큼 — 물건 단위 확인 |
+| **Hôtel Mercure Pont d'Avignon Centre** | Palais des Papes 옆, 호텔 | 04 90 80 93 93 | 주방 없음 | 위치 최상, Palais 주차장 직접 접근, 늦은 귀가 편리 | 생활형 체류에는 불리, 가장 관광객 많은 구역 |
+
 ### 14.3 최종 선택순서
 
 1. **주방·생활형 우선**: Les Cordeliers → Sainte-Marthe
 2. **주차·역·편안함 우선**: Le Magnan → Avignon Grand Hotel → Novotel
 3. **분위기 우선**: Cloître Saint-Louis, 단 주차와 객실후기 확인
 4. **가격 최우선**: ibis budget 또는 유사 성벽 외곽 호텔
+5. **나흘 생활 우선(동쪽 생활권)**: Appartements des Teinturiers → Dream Avignon — 14.2b, 주차는 공영 전제
 
 ### 14.4 계획예산
 

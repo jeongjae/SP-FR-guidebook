@@ -5490,14 +5490,14 @@ def check_phase8_operations_guards():
         if state not in allowed_reservation_states:
             problems.append(f'{row.get("ID")}: 알 수 없는 예약상태 {state!r}')
         if state == "예약완료":
-            # R002는 개인 숙소다. 공개 배포용 트래커에 예약 URL을 복제하지 않는다.
-            required = (("사업자", "최종확인일") if row.get("ID") == "R002"
+            # 개인 숙소 비공개 규칙은 DEC-039(2026-08-15)로 폐지됐다. R002 는
+            # Airbnb 라 공개 소스 URL 이 없을 수 있어 URL 만 면제한다 —
+            # 시트에 URL 이 채워지면 이 면제도 걷어낸다.
+            required = (("예약번호", "사업자", "최종확인일") if row.get("ID") == "R002"
                         else ("예약번호", "사업자", "소스 URL", "최종확인일"))
             absent = [key for key in required if not row.get(key)]
             if absent:
                 problems.append(f'{row.get("ID")}: 예약완료인데 필수값 누락 — {", ".join(absent)}')
-            if row.get("ID") == "R002" and row.get("소스 URL"):
-                problems.append("R002: 개인 숙소 소스 URL이 공개 트래커에 남아 있음")
 
     expected_stays = {
         stay["base"]: (stay["checkin"], stay["checkout"], stay["nights"])
