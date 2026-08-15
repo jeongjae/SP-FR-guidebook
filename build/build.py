@@ -96,7 +96,7 @@ CHAPTERS = [
     dict(path=f"{CORE}/02_Whole_Trip_Experience_Highlights_v1.0.md", slug="02", name="highlights",
          kind="intro", title="전체 여행 하이라이트", sub="43일의 경험 설계"),
     dict(path=f"{CORE}/03_Whole_Trip_Master_Itinerary_v1.2.md", slug="03", name="itinerary",
-         kind="schedule", title="전체 일정", sub="43일 날짜별 기준 일정"),
+         kind="schedule", title="43일 일정", sub="43일 날짜별 기준 일정"),
     dict(path=f"{REGIONAL}/04_Barcelona_Sitges_v2.0.md", slug="04", name="barcelona", kind="region",
          title="Barcelona · Sitges", start=date.fromisoformat(STAYS["barcelona"]["checkin"]), end=date.fromisoformat(STAYS["barcelona"]["checkout"]),
          nights=STAYS["barcelona"]["nights"], map="barcelona.html", region="Barcelona"),
@@ -187,7 +187,7 @@ PLACE_DOSSIERS = SOURCE / "ASSETS" / "90_Regional_Context_and_Place_Dossier_Comp
 COMMERCIAL_STANDARD = SOURCE / "CURRENT" / "00_Governance" / "89_Commercial_Guidebook_Editorial_and_Layout_Standard_v1.0.md"
 DOSSIER_STANDARD = SOURCE / "CURRENT" / "00_Governance" / "90_Regional_and_Place_Dossier_Editorial_Standard_v1.0.md"
 TRACKER_SHEETS = [
-    ("Master Itinerary", "itinerary", "43일 전체 일정표"),
+    ("Master Itinerary", "itinerary", "일정 시트 원본"),   # 부록 — 탭에는 안 나온다
     ("Reservations", "reservations", "예약 현황"),
     ("Transport", "transport", "이동·교통"),
     ("Accommodation", "accommodation", "숙소 후보·확정"),
@@ -214,7 +214,9 @@ def chapter_rel(c):
     return "../.." if c["kind"] == "region" else ".."
 
 
-ITINERARY_URL = "chapters/itinerary.html"
+# 일자 축의 뿌리는 daily/ 다 — 하루(day-NN)가 사는 곳이 축의 집이다 (B안, 2026-08-15
+# 사용자 결정). 옛 주소 chapters/itinerary.html 은 리다이렉트로만 남는다.
+ITINERARY_URL = "daily/index.html"
 
 # 원본의 Day 섹션 헤딩. 레벨(#~######)과 섹션번호 접두어("5. ")가 챕터마다 다르다.
 #   `### Day 1 — 8월 29일 토요일`   (04·07)
@@ -600,8 +602,7 @@ def build_regions():
 <p class="meta">8개 거점을 이동 순서대로 놓았다. 각 지역 챕터로 바로 들어간다.</p>
 <div class="grid">{"".join(cards)}</div>
 
-<div class="related"><a href="{ITINERARY_URL}"><b class="ic ic-list" aria-hidden="true"></b>43일 전체 일정표</a>
-<a href="daily/index.html"><b class="ic ic-today" aria-hidden="true"></b>데일리 카드 43일</a>
+<div class="related"><a href="{ITINERARY_URL}"><b class="ic ic-list" aria-hidden="true"></b>43일 일정</a>
 <a href="maps/offline.html"><b class="ic ic-map" aria-hidden="true"></b>오프라인 지도 준비</a></div>"""
     (SITE / "regions.html").write_text(
         page("지역", body, rel=".", back=crumbs_for(("지역", None)),
@@ -1825,6 +1826,9 @@ ITINERARY_REGION_SLUGS = {
 }
 
 
+SCHEDULE_PAGE_BODY = None   # 일정 챕터 본문 — build_chapters 가 채우고 build_daily 가 싣는다
+
+
 def enhance_itinerary_table(body):
     """43일 표에 이동 링크와 모바일 카드용 의미 클래스를 붙인다.
 
@@ -1858,13 +1862,15 @@ def enhance_itinerary_table(body):
         values = [cell[1] for cell in cells]
         values[1] = (f'<a class="itinerary-date-link" href="../daily/day-{day:02d}.html">'
                      f'{values[1]}</a>')
-        values[2] = (f'<a class="itinerary-region-link" href="{region_slug}/index.html">'
+        # ../chapters/… 는 한 단계 깊이의 어느 디렉터리에서도 풀린다 —
+        # 이 표가 daily/index.html 에 실리므로 chapters/ 기준 경로를 쓰면 안 된다.
+        values[2] = (f'<a class="itinerary-region-link" href="../chapters/{region_slug}/index.html">'
                      f'{values[2]}</a>')
         rendered = []
         for (attrs, _value), value, label, class_name in zip(cells, values, labels, classes):
             rendered.append(
                 f'<td{attrs} class="itinerary-{class_name}" data-label="{label}">{value}</td>')
-        return f'<tr data-day="{day}">{"".join(rendered)}</tr>'
+        return f'<tr data-day="{day}" id="day-{day:02d}">{"".join(rendered)}</tr>'
 
     table = re.sub(r'<tr>(?:(?!</tr>).)*</tr>', enhance_row, match.group(0), flags=re.S)
     if linked_days != set(range(1, 44)):
@@ -1881,7 +1887,7 @@ def coords_bar(rel, *, day=None, region=None, topic=None):
     각 인자는 (라벨, URL 또는 None) 이다. URL 이 None 이면 현재 페이지다.
     """
     cells = []
-    for axis, item in (("일자", day), ("지역", region), ("주제", topic)):
+    for axis, item in (("일정", day), ("지역", region), ("주제", topic)):
         if item is None:
             continue
         label, url = item
@@ -2042,7 +2048,7 @@ def related_box(chapter):
     links = [f'<a href="{rel}/maps/{chapter["map"]}"><b class="ic ic-map" aria-hidden="true"></b>{chapter["region"]} 실행지도</a>',
              f'<a href="{rel}/daily/day-{day_no(chapter["start"]):02d}.html"><b class="ic ic-today" aria-hidden="true"></b>데일리 카드</a>',
              f'<a href="{rel}/tracker/reservations.html"><b class="ic ic-table" aria-hidden="true"></b>예약 현황</a>',
-             f'<a href="{rel}/{ITINERARY_URL}"><b class="ic ic-list" aria-hidden="true"></b>43일 일정표</a>']
+             f'<a href="{rel}/{ITINERARY_URL}"><b class="ic ic-list" aria-hidden="true"></b>43일 일정</a>']
     return f'<div class="related">{"".join(links)}</div>'
 
 
@@ -2671,9 +2677,20 @@ def build_chapters():
             next_link = f'<a href="{rel}/{chapter_url(nx)}">{nx["title"]} →</a>'
         pager = f'<nav class="pager">{prev_link}<span></span>{next_link}</nav>'
 
-        scan_sections(c, body, chapter_url(c))
+        # 일정 챕터는 일자 축의 뿌리(daily/index.html)로 이사한다 (B안).
+        # 검색·섹션 색인도 새 주소로 싣고, 옛 주소는 리다이렉트만 남긴다.
+        page_url = ITINERARY_URL if c["slug"] == "03" else chapter_url(c)
+        scan_sections(c, body, page_url)
         chapter_toc = "" if c["slug"] == "03" else toc_html(toc_tokens)
         content = related_box(c) + chapter_toc + link_day_cards(body, rel) + pager
+        if c["slug"] == "03":
+            global SCHEDULE_PAGE_BODY
+            SCHEDULE_PAGE_BODY = re.sub(r"<h1[^>]*>.*?</h1>", "",
+                                        link_day_cards(body, rel), count=1)
+            write_redirect(SITE / chapter_url(c), f"../{ITINERARY_URL}", c["title"])
+            write_legacy_redirect(c)
+            print(f'  {c["name"]}: {Path(c["path"]).name} → {ITINERARY_URL} (챕터 주소는 리다이렉트)')
+            continue
         dest = SITE / chapter_url(c)
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(
@@ -3409,7 +3426,7 @@ def build_daily():
         window = [(f"{date_label(date_of_day(k))}", f"day-{k:02d}.html", k == n,
                    f"Day {k}") for k in range(lo, hi + 1)]
         day_nav = siblings_nav([
-            ("일자", "sn-layers", [("전체 목록", "index.html", False, ""),
+            ("일정", "sn-layers", [("전체 목록", "index.html", False, ""),
                                  ("← 앞", f"day-{max(1, n - 1):02d}.html", False, ""),
                                  ("뒤 →", f"day-{min(43, n + 1):02d}.html", False, "")]),
             ("날짜", "sn-days", window)])
@@ -3428,16 +3445,27 @@ def build_daily():
             encoding="utf-8")
 
         # Day 43 은 어느 지역에도 없다 — 기내에서 자고 인천에 내린다.
+        # 피로도·잠금은 이 화면의 존재 이유다 (B안 — 챕터 일정표의 요약 흡수).
+        # 값이 없으면 아무것도 그리지 않는다 — 없는 것을 있다고 말하지 않는다.
+        lock_txt = (row.get("lock") or "").strip()
+        flags = ""
+        if value:
+            lead = int(re.match(r"\d+", value).group(0))
+            pips = "".join(f'<i class="{"on" if k < lead else ""}"></i>' for k in range(5))
+            flags += f'<span class="fatigue" data-v="{lead}" aria-label="피로도 {html.escape(value)}/5">{pips}</span>'
+        if lock_txt and lock_txt not in ("없음", "-", "–"):
+            flags += '<b class="ic ic-lock di-lock" aria-hidden="true"></b>'
+        flags_html = f'<span class="di-flags">{flags}</span>' if flags else ""
         index_items.append((c["region"] if c else "귀국",
             f'<a class="daily-item{" is-p0" if n in P0_CONNECTION else ""}" href="day-{n:02d}.html">'
-            f'<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
+            f'{flags_html}<b>Day {n}</b><span>{date_label(d)} {wd}</span>'
             f'<span class="di-region">{html.escape(row["base"])}</span>'
             f'<span class="di-core">{html.escape(row["core"])}</span></a>'))
         # Phase F — "9월 4일"·"금요일" 같은 자연어 날짜로도 그 날에 닿게 한다.
-        SEARCH_INDEX.append({"t": title, "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html",
+        SEARCH_INDEX.append({"t": title, "c": "43일 일정", "u": f"daily/day-{n:02d}.html",
                              "k": f"{d.month}월 {d.day}일 {wd}요일 {d.month}/{d.day}"})
         SEARCH_INDEX.append({"t": f"Day {n} 핵심 실행 — {row['core']}",
-                             "c": "데일리 가이드", "u": f"daily/day-{n:02d}.html"})
+                             "c": "43일 일정", "u": f"daily/day-{n:02d}.html"})
         for slug, region, rows in timetable.get(key, []):
             for cells in rows:
                 if len(cells) >= 2:
@@ -3451,13 +3479,20 @@ def build_daily():
         cards = "".join(x[1] for x in items)
         groups.append(f'<section class="daily-region"><h2>{html.escape(region)}</h2>'
                       f'<div class="daily-grid">{cards}</div></section>')
-    body = ('<h1>43일 실행 일정</h1>'
+    # 일자 축의 뿌리 (B안). 위는 지역별 요약 그리드(피로도·잠금 흡수), 아래는
+    # 이관된 일정 챕터 본문(테마·선택·축소까지 전 열)을 접어 둔다 — 같은 정본의
+    # 두 밀도이지 두 목록이 아니다. 옛 chapters/itinerary.html 은 리다이렉트.
+    sched = SCHEDULE_PAGE_BODY or ""
+    body = ('<h1>43일 일정</h1>'
             '<p class="meta">지역별로 날짜·거점·핵심 실행을 확인한다. '
             '빨간 표시는 놓치면 대안이 없는 교통 연결일이다.</p>'
-            f'{"".join(groups)}')
+            f'{"".join(groups)}'
+            '<details class="day-details sched-full"><summary>전체 일정표와 운영 원칙 — '
+            '테마·선택·축소까지 한 표</summary>'
+            f'{sched}</details>')
     (out_dir / "index.html").write_text(
-        page("데일리 가이드", body, rel="..", topbar_title="데일리 가이드",
-             back=crumbs_for(("데일리", None)),
+        page("43일 일정", body, rel="..", topbar_title="43일 일정",
+             back=crumbs_for(("43일 일정", None)),
              coords=coords_bar("..", day=("43일", None),
                                region=("8곳", "regions.html"),
                                topic=("분류·상태", "topics/index.html"))),
@@ -3542,7 +3577,6 @@ def build_home():
         f'<span class="lr-sub">{s}</span></span>'
         f'<span class="lr-go" aria-hidden="true">›</span></a>'
         for g, u, n, s in (
-            ("today", "daily/index.html", "데일리 카드 전체", "43일을 한 줄씩"),
             ("pin", "places/index.html", "장소", "갈 곳 전체 목록"),
             ("topic", "topics/index.html", "주제별 보기", "먹거리 · 교통 · 숙박 등"),
             ("map", "maps/index.html", "지역 지도", "주요 기준점과 외부 길찾기"),
@@ -4198,6 +4232,8 @@ def build_tracker():
     def tabs_of(active):
         links = []
         for _, s, label in TRACKER_SHEETS:
+            if s == "itinerary":
+                continue   # 시트 원본은 부록 — 일자 축 뿌리는 daily/index 다 (B안)
             cls = ' class="active"' if s == active else ""
             links.append(f'<a href="{s}.html"{cls}>{label}</a>')
         return '<nav class="tabs">' + "".join(links) + "</nav>"
@@ -4227,15 +4263,18 @@ def build_tracker():
                  meta_line="TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준",
                  extra_scripts=scripts),
             encoding="utf-8")
-        cards.append(f'<a class="card card-alt" href="{slug}.html">'
-                     f'<span class="card-title">{label}</span>'
-                     f'<span class="card-sub">{sheet_name}</span></a>')
+        if slug != "itinerary":   # 부록은 색인 하단 링크로만
+            cards.append(f'<a class="card card-alt" href="{slug}.html">'
+                         f'<span class="card-title">{label}</span>'
+                         f'<span class="card-sub">{sheet_name}</span></a>')
         SEARCH_INDEX.append({"t": label, "c": "트래커", "u": f"tracker/{slug}.html"})
     print(f"  트래커: {len(cards)}개 시트 → tracker/")
 
     body = ('<h1>마스터 트래커</h1>'
             '<p class="meta">TP_Europe_Travel_Master_Tracker_v1.2.xlsx에서 변환</p>'
-            f'<div class="grid">{"".join(cards)}</div>')
+            f'<div class="grid">{"".join(cards)}</div>'
+            '<p class="note">부록: <a href="itinerary.html">일정 시트 원본</a> — '
+            '20열 원형 열람용. 일정은 <a href="../daily/index.html">43일 일정</a>이 정본 화면이다.</p>')
     (out_dir / "index.html").write_text(
         page("마스터 트래커", body, rel="..", topbar_title="트래커",
              back=crumbs_for(("트래커", None))),

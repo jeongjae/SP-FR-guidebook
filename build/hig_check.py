@@ -54,7 +54,6 @@ SAMPLE = [
     "index.html", "regions.html", "credits.html",
     "chapters/paris/index.html", "chapters/paris/food.html",
     "chapters/paris/day-37.html", "chapters/girona/places.html",
-    "chapters/itinerary.html",
     "daily/index.html", "daily/day-21.html", "daily/day-01.html",
     "topics/index.html", "topics/food.html", "topics/reverify.html",
     "places/index.html", "places/palais-des-papes.html",
