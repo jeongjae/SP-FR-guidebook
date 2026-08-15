@@ -4224,6 +4224,81 @@ def tracker_cards_body(ws, cfg, label, tabs_html, caption_html):
             f'<div class="rz-list">{cards}</div>')
 
 
+
+DASH_STATUS_KEY = {"완료": "done", "재확인": "recheck", "차단": "blocked"}
+
+
+def dashboard_body(ws, res_ws, label, tabs_html):
+    """진행 대시보드 — KPI 타일(실집계) + P0 행동 카드 + 완성도 막대.
+
+    시트의 예약 KPI 표는 수식 캐시가 없어 전부 빈칸으로 렌더되고 있었고,
+    '실제 예약 잠금률 0' 은 죽은 스냅샷이었다 (HIG 진단 2-3). 예약 수치는
+    Reservations 에서 직접 센다 — 홈·예약현황과 같은 함수, 같은 분모.
+    완성도(사람 판정)와 P0 다음 행동(사람이 고른 순서)만 시트를 정본으로 쓴다.
+    """
+    recs = res_records(res_ws)
+    statuses = [r.get("상태", "") for r in recs]
+    h = res_headline(statuses)
+    p0 = sum(1 for r in recs if r.get("우선순위") == "P0")
+    p0_done = sum(1 for r in recs if r.get("우선순위") == "P0" and r.get("상태") == "예약완료")
+    stay_done = sum(1 for r in recs if r.get("카테고리") == "숙소" and r.get("상태") == "예약완료")
+    n_st = {s: statuses.count(s) for s in ("미조사", "재확인", "예약대기")}
+
+    # 시트에서 캡션·완성도·P0 행동을 읽는다
+    rows = [[format_cell(v).strip() for v in row] for row in ws.iter_rows(values_only=True)]
+    caption = next((r[0] for r in rows if r and r[0]), "")
+    # 시트는 좌(단계·완성도)·우(P0 다음 행동)가 같은 물리 행을 공유한다 —
+    # '단계' 헤더 아래의 왼쪽 두 칸이 완성도, 상태 열이 아는 값인 행이 행동이다.
+    stages, actions, in_stage = [], [], False
+    overall = next((r[1] for r in rows if r and r[0] == "현재 전체 완성도"), "")
+    for r in rows:
+        c0 = r[0] if r else ""
+        c3 = r[3] if len(r) > 3 else ""
+        if c0 == "단계":
+            in_stage = True
+        elif in_stage and c0 and len(r) > 1 and r[1]:
+            try:
+                stages.append((c0, round(float(r[1]) * 100)))
+            except ValueError:
+                in_stage = False
+        if len(r) > 4 and c3 and r[4] in DASH_STATUS_KEY:
+            actions.append((c3, r[4], r[5] if len(r) > 5 else ""))
+
+    tiles = [
+        ("active", "유효 예약", h["active"], "건", f"취소 {h['cancelled']}건 별도"),
+        ("undone", "미확정", h["undone"], "건",
+         f"미조사 {n_st['미조사']} · 재확인 {n_st['재확인']} · 대기 {n_st['예약대기']}"),
+        ("done", "예약완료", h["active"] - h["undone"], "건",
+         f"유효의 {round((h['active'] - h['undone']) / h['active'] * 100)}%"),
+        ("p0", "P0 완료", p0_done, f"/{p0}", f"숙소 확정 {stay_done}/8"),
+    ]
+    tile_html = "".join(
+        f'<a class="kpi kpi-{k}" href="reservations.html" data-kpi-{k}="{v}">'
+        f'<b>{v}<small>{unit}</small></b><span class="kl">{name}</span>'
+        f'<span class="ks">{html.escape(sub)}</span></a>'
+        for k, name, v, unit, sub in tiles)
+
+    act_html = "".join(
+        f'<article class="rz-card rz-{DASH_STATUS_KEY[s]}"><div class="rz-head">'
+        f'<span class="rz-tags"><span class="rz-badge rz-b-{DASH_STATUS_KEY[s]}">{s}</span></span></div>'
+        f'<h3 class="rz-title"><span>{html.escape(n)}</span></h3>'
+        f'<p class="rz-where">{html.escape(memo)}</p></article>'
+        for n, s, memo in actions)
+
+    bars = ([("전체", round(float(overall) * 100))] if overall else []) + stages
+    prog_html = "".join(
+        f'<div class="pg"><span class="pgl">{html.escape(n)}</span>'
+        f'<span class="pgbar"><i style="width:{v}%"></i></span><b>{v}%</b></div>'
+        for n, v in bars)
+
+    return (f'<h1>{label}</h1>{tabs_html}'
+            f'<p class="meta">{html.escape(caption)} · 예약 수치는 Reservations 실집계</p>'
+            f'<h2 class="ic ic-check">예약, 지금 어디까지 잠겼나</h2>'
+            f'<div class="kpis">{tile_html}</div>'
+            f'<h2 class="ic ic-tip">P0 다음 행동</h2>{act_html}'
+            f'<h2 class="ic ic-gauge">완성도</h2>{prog_html}')
+
+
 def build_tracker():
     out_dir = SITE / "tracker"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -4251,6 +4326,8 @@ def build_tracker():
             body = reservations_body(wb[sheet_name], label, tabs_of(slug),
                                      sheet_caption_html(wb[sheet_name]))
             scripts = '<script src="../assets/rz.js" defer></script>'
+        elif sheet_name == "Dashboard":
+            body = dashboard_body(wb[sheet_name], wb["Reservations"], label, tabs_of(slug))
         elif sheet_name in TRACKER_CARDS:
             body = tracker_cards_body(wb[sheet_name], TRACKER_CARDS[sheet_name], label,
                                       tabs_of(slug), sheet_caption_html(wb[sheet_name]))
@@ -5545,8 +5622,9 @@ def check_phase8_operations_guards():
     completed = sum(row.get("상태") == "예약완료" for row in reservations)
     dashboard_text = (SITE / "tracker" / "dashboard.html").read_text(encoding="utf-8")
     lock_text = (SITE / "tracker" / "locks.html").read_text(encoding="utf-8")
-    if completed == 0 and "실제 예약 잠금률</td><td>0" not in dashboard_text:
-        problems.append("Dashboard 실제 예약 잠금률이 예약 데이터와 불일치")
+    # 대시보드 KPI 는 실집계 타일이다 — 예약완료 수가 타일과 어긋나면 실패.
+    if f'data-kpi-done="{completed}"' not in dashboard_text:
+        problems.append(f"Dashboard 예약완료 타일이 실집계({completed})와 불일치")
     for token in ("43일·42박", allocation, "BLOCKED", "필요 입력"):
         if token not in lock_text:
             problems.append(f"잠금 현황 배포 페이지 누락: {token}")
