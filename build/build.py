@@ -2799,7 +2799,13 @@ def load_day_details():
                         cells = [x.strip() for x in lines[j].strip().strip("|").split("|")]
                         if len(cells) > max(fi, di):
                             dm = re.match(r"(\d+)/(\d+)", cells[di])
-                            fm = FATIGUE_RE.search(cells[fi])
+                            # 피로도 열은 헤더로 이미 식별됐다. `3/5` 뿐 아니라
+                            # 표에 흔한 맨 값(`3` · `3–4`)도 받는다 — Avignon·Luberon
+                            # 표가 이 형식이라 다섯 날의 값이 '없음'으로 버려졌다.
+                            # "원고에 있는 피로도를 없다고 표시"하는 사고 부류다.
+                            cell = cells[fi].replace("**", "").strip()
+                            fm = (FATIGUE_RE.search(cell)
+                                  or re.fullmatch(r"([1-5](?:[–\-~][1-5])?)", cell))
                             if dm and fm:
                                 key = date(TRIP_START.year, int(dm[1]), int(dm[2])).isoformat()
                                 fatigue.setdefault(key, {})[c["slug"]] = fm[1]
@@ -3181,6 +3187,7 @@ def build_daily():
 
     index_items = []
     n_fat = n_tt = 0
+    fat_missing = []
     for n in range(1, 44):
         d = date_of_day(n)
         key = d.isoformat()
@@ -3255,10 +3262,18 @@ def build_daily():
             where = CHAPTER_DATE_URL.get(key, ITINERARY_URL)
             tt_block = ('<h2 class="ic ic-clock">시간표</h2><p class="note">이 날은 원고에 시각표가 없다. '
                         f'구간 일정은 <a href="../{where}">일정 한눈에</a> 에 있다.</p>')
+        if not value:
+            # Day 섹션에 인라인 표기가 없으면 챕터의 피로도·삭제 우선순위 표
+            # 값으로 폴백한다. 이 dict 는 여태 풀리기만 하고 안 쓰였다 —
+            # Avignon 5일이 원고에 값이 있는데 '없음'으로 나가던 원인.
+            # 챕터가 갈리면 도착 챕터 값을 쓴다 (위 conflicts 정책 그대로).
+            per = fatigue.get(key) or {}
+            value = (per.get(c["slug"]) if c else None) or next(iter(per.values()), None)
         if value:
             n_fat += 1
             fat_block = f'<h2 class="ic ic-gauge">피로도</h2><p>{fatigue_html(value)}</p>'
         else:
+            fat_missing.append(n)
             fat_block = ""
         note_block = ('<h2 class="ic ic-note">이 날의 메모</h2>' + "".join(note_parts)) if note_parts else ""
 
@@ -3447,8 +3462,15 @@ def build_daily():
                                region=("8곳", "regions.html"),
                                topic=("분류·상태", "topics/index.html"))),
         encoding="utf-8")
+    # 피로도 커버리지 가드 — "원고에 있는 것을 없다고 표시" 사고의 재발 방지.
+    # 정당한 부재는 Day 5·6 뿐이다 (Girona 원고 어디에도 값이 없음 — 추정해
+    # 채우지 않는다). 원고에 값이 더해지면 이 집합에서 빼고, 다른 날이 새로
+    # 비면 그건 추출기 회귀다 — 빌드를 멈춘다.
+    if set(fat_missing) != {5, 6}:
+        print(f"피로도 커버리지 가드 실패 — 값 없는 날 {sorted(fat_missing)} (기대 [5, 6])")
+        sys.exit(1)
     print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)"
-          f" · 피로도 {n_fat}일 · 시간표 {n_tt}건")
+          f" · 피로도 {n_fat}일 · 시간표 {n_tt}건 · 커버리지 가드 41+2")
 
 
 # ---------------------------------------------------------------- home
