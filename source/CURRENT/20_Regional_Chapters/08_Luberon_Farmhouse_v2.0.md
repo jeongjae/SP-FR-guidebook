@@ -1338,6 +1338,20 @@ A swimming pool is not required and should not affect the quotation or room reco
 | **Maison de la Truffe et du Vin** | Ménerbes, wine bar·garden | 지역 와인, 치즈·charcuterie, 정원 전망 | 중간 | 운영시간 확인 |
 | **Le p’tit coin des gourmands** | Bonnieux, tea room·light meal | 샐러드·오늘의 요리·허브티 | dish €13.50부터 | 보통 |
 
+### 18.2b 추가 후보 (2026-08-15 조사)
+
+> AI 자문 자료(2026-08-15)에서 추린 후보다. 가격은 **미검증 참고치** {{badge:pending|재확인}}. 미슐랭 표기는 2026-08-15 guide.michelin.com 에서 직접 확인한 것만 적었다.
+
+| 식당 | 위치·성격 | 참고 | 참고가격 | 연락처 |
+|---|---|---|---:|---|
+| **Le Mas – Alexis Osmont** | Gordes(Les Imberts), 옛 농가·시장 식재료 | 미슐랭 가이드 등재 — 별 아님 (확인) | €60–90/인 | 04 90 04 03 57 |
+| **La Trinquette** | Gordes, 편안한 비스트로 | 고급 호텔 식당이 많은 고르드에서 현실적 대안 | €30–50 | 04 90 72 11 62 |
+| **Restaurant Omma** | Roussillon | 오커 절벽 관람 뒤 점심 | €40–80 | 04 90 05 60 13 |
+| **La Grappe de Raisin** | Roussillon, 캐주얼 | 가장 현실적인 점심 형태 | €20–30 | 04 90 71 38 06 |
+| **Bouchon** | Lourmarin, 마을 비스트로 | Day 16 뤼르마랭 점심 후보 | €30–40 | 04 90 09 18 16 |
+
+자문 자료의 판단: 뤼베롱은 저녁 특별식보다 **언덕마을 관람 뒤 12:30–14:30 테라스에서 먹는 긴 점심**이 핵심 경험이다. 기존 원고의 "시장에서 산 재료로 한 끼 완성"과 병행하면 — 외식 1회 원칙(18.1)은 그대로 두고, 그 1회를 저녁 대신 점심으로 옮기는 선택지가 생긴다.
+
 ### 18.3 추천 배치
 
 - 9/13: 농가 첫 테라스 저녁
