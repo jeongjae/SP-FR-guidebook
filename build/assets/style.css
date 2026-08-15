@@ -2500,3 +2500,50 @@ a.rz-day:hover { background: var(--accent-soft); }
   .rz-row { grid-template-columns: 1fr; gap: 0; }
   .rz-row dt { font-size: var(--t-cap1); }
 }
+
+
+/* ================= 진행 대시보드 (kpi·pg) =================
+   수치 타일은 Reservations 실집계다 — 빈 셀·죽은 스냅샷을 표로 뿌리지 않는다
+   (HIG 진단 2-3). P0 행동 카드는 rz-card 재사용. */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--s3);
+  margin: var(--s3) 0 var(--s5);
+}
+.kpi {
+  display: grid;
+  gap: 2px;
+  min-height: var(--tap);
+  padding: var(--s4);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--text);
+}
+.kpi:hover { border-color: var(--accent); }
+.kpi b { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.kpi b small { font-size: 0.9rem; font-weight: 700; color: var(--muted); margin-left: 2px; }
+.kpi .kl { font-weight: 700; font-size: var(--t-foot); }
+.kpi .ks { font-size: var(--t-cap1); color: var(--muted); }
+.kpi-undone b { color: var(--sig-caution-ink); }
+.kpi-done b { color: var(--sig-steady); }
+
+.pg {
+  display: grid;
+  grid-template-columns: 9.5em 1fr 3.2em;
+  gap: var(--s3);
+  align-items: center;
+  min-height: 32px;
+}
+.pgl { font-size: var(--t-subhead); font-weight: 600; }
+.pgbar {
+  height: 9px;
+  border-radius: var(--r-chip);
+  background: var(--surface-sunk);
+  overflow: hidden;
+}
+.pgbar i { display: block; height: 100%; background: var(--accent); border-radius: var(--r-chip); }
+.pg b { font-size: var(--t-foot); text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 360px) { .pg { grid-template-columns: 7.5em 1fr 3.2em; } }
