@@ -180,7 +180,6 @@
       var todaysCard = (G.today || {})[parisToday()] || "";
       return todaysCard && p.indexOf("/" + todaysCard) >= 0 ? "today" : "itinerary";
     }
-    if (/\/chapters\/itinerary\.html$/.test(p)) return "itinerary";
     if (/\/maps\//.test(p)) return "map";
     // 가이드 축 — 지역 목록·지역 챕터·장소·주제. 분할 여부와 무관하게 하위 전부
     if (/\/regions\.html$/.test(p) || /\/chapters\/[^/]+\/[^/]*$/.test(p)
