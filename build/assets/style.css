@@ -1600,6 +1600,21 @@ figure.daily-card-v2 figcaption { margin-top: 8px; font-size: var(--t-foot); }
   color: var(--text); font-size: .82rem; line-height: 1.45;
 }
 .daily-item.is-p0 { border-left-color: var(--sig-critical); }
+/* 피로도·잠금 칩 — 챕터 일정표 요약을 흡수한 자리 (B안). 오른쪽 위 한 줄,
+   카드 높이를 늘리지 않는다. 값이 없는 날은 아무것도 그리지 않는다. */
+.daily-item { position: relative; }
+.daily-item .di-flags {
+  position: absolute;
+  top: 9px; right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.daily-item .di-flags .fatigue i { width: 5px; height: 11px; }
+.daily-item .di-flags .di-lock { width: 13px; height: 13px; color: var(--sig-caution-ink); }
+/* 접힌 전체 일정표 — 같은 정본의 두 번째 밀도. 그리드와 동시에 펼쳐 보이지 않는다. */
+.sched-full { margin-top: var(--s6); }
+.sched-full > summary { font-weight: 700; }
 @media (max-width: 380px) {
   .day-command { padding: 13px; }
   .dq-item { grid-template-columns: 1fr; gap: 2px; }
