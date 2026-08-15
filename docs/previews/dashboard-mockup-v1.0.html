@@ -1,0 +1,206 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>대시보드 재구성 시안</title><style>
+:root{
+ --bg:#EFF1F6;--surface:#FFFFFF;--surface-sunk:#E3E7F0;
+ --text:#0F1A1E;--text-2:#34464D;--muted:#41535C;
+ --accent:#000091;--accent-ink:#FFFFFF;--accent-soft:#DFE3F2;--border:#C8CEDD;
+ --flag-es-red:#AA151B;--flag-es-gold:#F1BF00;--flag-fr-blue:#002395;--flag-fr-white:#FFFFFF;--flag-fr-red:#EF4135;
+ --sig-critical:#AA151B;--sig-critical-ink:#921118;--sig-caution:#7D5400;--sig-caution-ink:#5E4000;
+ --sig-steady:#1F5E45;--sig-rest:#2C4A9A;
+ --r-card:12px;--r-ctrl:10px;--r-chip:999px;--tap:44px;
+ --ok:#1F5E45;--bad:#921118;
+}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --bg:#0C1416;--surface:#152023;--surface-sunk:#1B2A2E;
+ --text:#E3EBEA;--text-2:#B7C5C8;--muted:#A0B0B5;
+ --accent:#A9BEF5;--accent-ink:#08101A;--accent-soft:#1E2540;--border:#333B52;
+ --sig-critical:#F79AA2;--sig-critical-ink:#F79AA2;--sig-caution:#D3A63A;--sig-caution-ink:#EFC96A;
+ --sig-steady:#74C7A6;--sig-rest:#9FB4EE;--ok:#74C7A6;--bad:#F79AA2;
+}}
+[data-theme="dark"]{
+ --bg:#0C1416;--surface:#152023;--surface-sunk:#1B2A2E;
+ --text:#E3EBEA;--text-2:#B7C5C8;--muted:#A0B0B5;
+ --accent:#A9BEF5;--accent-ink:#08101A;--accent-soft:#1E2540;--border:#333B52;
+ --sig-critical:#F79AA2;--sig-critical-ink:#F79AA2;--sig-caution:#D3A63A;--sig-caution-ink:#EFC96A;
+ --sig-steady:#74C7A6;--sig-rest:#9FB4EE;--ok:#74C7A6;--bad:#F79AA2;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+ font-family:"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",system-ui,sans-serif;
+ line-height:1.6;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+/* 아이폰 Pro·Pro Max 안전영역 — 다이내믹 아일랜드(위)·홈 인디케이터(아래),
+   가로 모드의 노치(좌우)를 피한다. env() 가 0이면(구형·데스크톱) 기본값이 이긴다. */
+.wrap{max-width:960px;margin:0 auto;
+ padding:max(28px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right))
+         max(80px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+.lede{color:var(--text-2);font-size:15px;max-width:62ch}
+h1{font-size:26px;letter-spacing:-.02em;margin:0 0 6px;text-wrap:balance}
+h2{font-size:19px;letter-spacing:-.01em;margin:0;padding-bottom:8px}
+.sec{margin-top:34px;border:1px solid var(--border);border-radius:var(--r-card);
+ background:var(--surface);overflow:hidden}
+.sec-h{padding:16px 18px;border-bottom:1px solid var(--border);
+ background:linear-gradient(90deg,rgba(170,21,27,.05),rgba(241,191,0,.04) 33%,rgba(0,35,149,.05) 67%,rgba(239,65,53,.05))}
+.sec-h .n{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.04em}
+.sec-h p{margin:4px 0 0;color:var(--text-2);font-size:13.5px;max-width:64ch}
+.sec-b{padding:18px}
+.flag{height:4px;display:flex}
+.flag i{flex:1}
+.flag .es1{background:var(--flag-es-red)}.flag .es2{background:var(--flag-es-gold)}
+.flag .fb{background:var(--flag-fr-blue)}.flag .fw{background:var(--flag-fr-white)}.flag .fr{background:var(--flag-fr-red)}
+
+/* 아이콘 비교 */
+.cmp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.cmp{border:1px solid var(--border);border-radius:var(--r-ctrl);overflow:hidden;background:var(--bg)}
+.cmp-h{padding:9px 12px;font-weight:700;font-size:13.5px;border-bottom:1px solid var(--border);background:var(--surface)}
+.cmp-h span{display:block;font-weight:400;font-size:11.5px;color:var(--muted);margin-top:2px}
+.cmp-b{display:flex;align-items:center;gap:8px;padding:16px 12px;justify-content:center}
+.cmp-c{display:grid;justify-items:center;gap:7px;flex:1}
+.tag{font-size:10px;font-weight:800;letter-spacing:.03em;padding:2px 8px;border-radius:999px}
+.bad .tag{background:color-mix(in srgb,var(--bad) 15%,transparent);color:var(--bad)}
+.good .tag{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.arw{color:var(--muted);font-weight:800}
+.ic26 svg{width:28px;height:28px;color:var(--text)}
+
+/* 탭바 */
+.tabbar{display:flex;justify-content:space-around;background:var(--surface);
+ border:1px solid var(--border);border-radius:var(--r-card);padding:10px 4px;position:relative}
+.tabbar::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;
+ background:linear-gradient(90deg,#AA151B 0 16%,#F1BF00 16% 34%,#AA151B 34% 50%,#002395 50% 66.5%,#FFFFFF 66.5% 83%,#EF4135 83%)}
+.tab{display:grid;justify-items:center;gap:4px;font-size:10.5px;color:var(--muted);min-width:52px}
+.tab b{font-weight:600}
+.tab.on{color:var(--accent)}
+.ti svg{width:26px;height:26px}
+.barlabel{font-size:12px;font-weight:800;color:var(--muted);margin:0 0 8px;letter-spacing:.02em}
+
+/* 등급 마커 */
+.grades{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.g-old{display:inline-flex;align-items:center;font-size:14px;font-weight:700}
+.g-old .u{margin-right:6px;font-size:13px}
+.g-new{display:inline-flex;align-items:center;font-size:14px;font-weight:700}
+.g-new .gi{width:15px;height:15px;margin-right:7px;display:inline-flex}
+.g-new .gi svg{width:15px;height:15px}
+.note{margin:14px 0 0;padding:11px 13px;border:1px dashed var(--border);border-radius:var(--r-ctrl);
+ font-size:12.5px;color:var(--text-2);background:var(--bg)}
+.note b{color:var(--text)}
+.dbl{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.dbl{grid-template-columns:1fr}}
+.panel{border:1px solid var(--border);border-radius:var(--r-ctrl);overflow:hidden}
+.panel-h{padding:8px 12px;font-size:11.5px;font-weight:800;letter-spacing:.03em;display:flex;align-items:center;gap:7px}
+.panel-h.bad{background:color-mix(in srgb,var(--bad) 10%,var(--surface));color:var(--bad)}
+.panel-h.good{background:color-mix(in srgb,var(--ok) 11%,var(--surface));color:var(--ok)}
+.panel-b{padding:13px;background:var(--surface)}
+
+/* place row */
+.plist{display:grid;gap:8px}
+.prow{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid var(--border);
+ border-radius:var(--r-ctrl);background:var(--surface)}
+.prow .pn{font-weight:700;font-size:14px}
+.prow .pg{margin-left:auto;display:inline-flex;align-items:center;font-size:12px;font-weight:700}
+.prow .pg .gi{width:13px;height:13px;margin-right:5px;display:inline-flex}
+.prow .pg .gi svg{width:13px;height:13px}
+
+/* 표 오버플로 데모 */
+.tover{overflow-x:auto;border:1px solid var(--border);border-radius:8px}
+table{border-collapse:collapse;font-size:12px;white-space:nowrap;min-width:820px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--border);text-align:left}
+thead th{background:var(--accent);color:var(--accent-ink);font-size:11px}
+.clip{position:relative}
+.clip::after{content:"⋯ +1857px";position:absolute;right:0;top:0;bottom:0;width:120px;
+ display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:11px;font-weight:800;color:var(--bad);
+ background:linear-gradient(90deg,transparent,var(--surface) 55%)}
+
+/* 숙소 카드 (제안) */
+.scard{border:1px solid var(--border);border-left:4px solid var(--sig-caution);border-radius:var(--r-card);
+ background:var(--surface);padding:13px}
+.scard .sh{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;background:var(--surface-sunk);
+ font-size:12px;font-weight:700}
+.chip.warn{background:none;border:1.5px dashed var(--sig-caution);color:var(--sig-caution-ink)}
+.chip.p0{background:none;border:1.5px solid var(--sig-critical-ink);color:var(--sig-critical-ink)}
+.scard h3{margin:11px 0 2px;font-size:19px;display:flex;align-items:center;gap:8px}
+.scard .sw{margin:0 0 11px;font-size:12.5px;color:var(--muted)}
+.facts{display:grid;gap:1px}
+.frow{display:grid;grid-template-columns:5rem 1fr;gap:8px;padding:6px 0;box-shadow:inset 0 .5px 0 var(--border)}
+.frow dt{color:var(--muted);font-size:12.5px}
+.frow dd{margin:0;font-size:13.5px}
+.more{margin-top:9px;color:var(--accent);font-size:12.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+.more::after{content:"";width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px}
+
+/* 의사결정 트리 (제안) */
+.pre-old{margin:0;padding:12px;background:var(--surface-sunk);border-radius:8px;
+ font-family:ui-monospace,Menlo,monospace;font-size:12px;white-space:pre;overflow:hidden;position:relative}
+.pre-old::after{content:"결론이 잘림 →";position:absolute;right:0;top:0;bottom:0;width:130px;
+ display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:10.5px;font-weight:800;color:var(--bad);
+ background:linear-gradient(90deg,transparent,var(--surface-sunk) 60%);font-family:system-ui}
+.tree{margin:0;padding:0;list-style:none}
+.tree li{position:relative;padding:7px 0 7px 26px}
+.tree li::before{content:"";position:absolute;left:8px;top:14px;width:10px;height:2px;background:var(--border)}
+.tree li::after{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
+.tree>li:last-child::after{height:14px}
+.tree .q{font-weight:700}
+.tree .yes{color:var(--sig-steady)}.tree .no{color:var(--muted)}
+.tree .res{display:inline-block;margin-left:4px;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
+.tree ul{margin:4px 0 0;padding:0;list-style:none}
+
+/* 별점 (제안) */
+.stars-old{font-size:15px;color:var(--sig-caution);letter-spacing:2px}
+.rate{display:inline-flex;align-items:center;gap:8px}
+.rate .bar{display:flex;gap:3px}
+.rate .bar i{width:16px;height:9px;border-radius:2px;background:var(--surface-sunk)}
+.rate .bar i.on{background:var(--sig-caution)}
+.rate b{font-weight:800;font-size:13px}
+.rate small{color:var(--muted);font-size:12px}
+
+.foot{margin-top:30px;font-size:12px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
+.toggle{position:fixed;right:max(16px,env(safe-area-inset-right));top:max(16px,env(safe-area-inset-top));
+ z-index:9;border:1px solid var(--border);background:var(--surface);min-height:36px;
+ color:var(--text);border-radius:999px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.kpi{display:grid;gap:2px;padding:14px;border:1px solid var(--border);border-radius:var(--r-card);
+ background:var(--surface);text-decoration:none;color:var(--text)}
+.kpi b{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.kpi b small{font-size:14px;font-weight:700;color:var(--muted);margin-left:2px}
+.kpi .kl{font-weight:700;font-size:13px}
+.kpi .ks{font-size:11.5px;color:var(--muted)}
+.kpi:nth-child(2) b{color:var(--sig-caution-ink)}
+.kpi:nth-child(3) b{color:var(--sig-steady)}
+.rz-card{border:1px solid var(--border);border-left:4px solid var(--border);border-radius:var(--r-card);
+ background:var(--surface);padding:11px 13px;margin:8px 0}
+.rz-done{border-left-color:var(--sig-steady)}.rz-recheck{border-left-color:var(--sig-caution)}
+.rz-blocked{border-left-color:var(--sig-critical)}
+.rz-badge{display:inline-flex;padding:2px 9px;border:1.5px solid currentColor;border-radius:999px;
+ font-size:11px;font-weight:800}
+.rz-b-done{color:var(--sig-steady)}.rz-b-recheck{color:var(--sig-caution-ink);border-style:dashed}
+.rz-b-blocked{color:var(--sig-critical-ink)}
+.rz-title{margin:7px 0 1px;font-size:15.5px}.rz-where{margin:0;font-size:12px;color:var(--muted)}
+.pg{display:grid;grid-template-columns:9.5em 1fr 3.2em;gap:10px;align-items:center;padding:7px 0}
+.pgl{font-size:13px;font-weight:600}
+.pgbar{height:9px;border-radius:999px;background:var(--surface-sunk);overflow:hidden}
+.pgbar i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.pg b{font-size:12.5px;text-align:right;font-variant-numeric:tabular-nums}
+h2.sec2{font-size:16px;margin:24px 0 4px}
+.src{font-size:11.5px;color:var(--muted)}
+</style></head><body>
+<button class="toggle" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">라이트 / 다크</button>
+<div class="wrap">
+<h1>진행 대시보드 — 재구성 시안</h1>
+<p class="lede">현행은 시트의 무관한 두 표를 4열 한 표로 붙여 렌더하고, 예약 KPI 열은 수식 캐시가 없어
+<b>전부 빈칸</b>이며, '실제 예약 잠금률 0' 은 현실(예약완료 7건)과 어긋난 스냅샷이다.
+아래 시안은 <b>수치를 시트에서 읽지 않고 Reservations 에서 직접 집계</b>한다 — 홈·예약현황과 같은 함수(res_headline), 같은 분모.</p>
+<section class="sec"><div class="sec-h"><div class="n">1 · 예약 KPI — 수치 타일 (시트 KPI 표 대체)</div>
+<h2>지금 어디까지 잠겼나</h2><p>각 타일은 예약 현황의 해당 필터로 딥링크. 빈 셀·죽은 스냅샷이 아니라 빌드 시점 실집계다.</p></div>
+<div class="sec-b"><div class="kpis"><a class="kpi" href="reservations.html"><b>27<small>건</small></b><span class="kl">유효 예약</span><span class="ks">취소 3건 별도</span></a><a class="kpi" href="reservations.html"><b>20<small>건</small></b><span class="kl">미확정</span><span class="ks">할 일 — 미조사 9·재확인 10·대기 1</span></a><a class="kpi" href="reservations.html"><b>7<small>건</small></b><span class="kl">예약완료</span><span class="ks">유효의 26%</span></a><a class="kpi" href="reservations.html"><b>7<small>/15</small></b><span class="kl">P0 완료</span><span class="ks">숙소 확정 3/8</span></a></div>
+<p class="src">출처: Reservations 시트 실집계 (res_headline — 홈·예약현황과 단일 정의)</p></div></section>
+<section class="sec"><div class="sec-h"><div class="n">2 · P0 다음 행동 — 카드 (두 번째 표 대체)</div>
+<h2>지금 해야 하는 것</h2><p>검증된 rz-card 재사용. 차단(빨강)이 맨 위 정렬이 아니라 시트 순서 유지 — 이 목록은 이미 사람이 고른 순서다.</p></div>
+<div class="sec-b"><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>Nice allocation</span></h3><p class="rz-where">9/4~9/9 · 5박</p></article><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>Aix allocation</span></h3><p class="rz-where">9/9~9/13 · 4박</p></article><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>9/8 schedule</span></h3><p class="rz-where">Nice 생활·회복일</p></article><article class="rz-card rz-recheck"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-recheck">재확인</span></span></div><h3 class="rz-title"><span>Luberon allocation</span></h3><p class="rz-where">9/13~9/16 · 3박 · 예약 변경 필요</p></article><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>Marseille / Arles</span></h3><p class="rz-where">9/11·9/19 기본 일정</p></article><article class="rz-card rz-recheck"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-recheck">재확인</span></span></div><h3 class="rz-title"><span>Paris allocation</span></h3><p class="rz-where">9/24~10/10 · 16박 · 예약 변경 필요</p></article><article class="rz-card rz-blocked"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-blocked">차단</span></span></div><h3 class="rz-title"><span>Phase 8 actual bookings</span></h3><p class="rz-where">변경 예약번호·주소·금액 미입력</p></article></div></section>
+<section class="sec"><div class="sec-h"><div class="n">3 · 완성도 — 막대 (첫 번째 표 대체)</div>
+<h2>어디가 덜 됐나</h2><p>0.93 같은 맨숫자 대신 라벨+막대+%. '실제 예약 잠금률' 죽은 스냅샷 행은 KPI 타일이 대체하므로 삭제.</p></div>
+<div class="sec-b"><div class="pg"><span class="pgl">지역별 콘텐츠</span><span class="pgbar"><i style="width:93%"></i></span><b>93%</b></div><div class="pg"><span class="pgl">일정·교통 실행성</span><span class="pgbar"><i style="width:90%"></i></span><b>90%</b></div><div class="pg"><span class="pgl">예약·여행 준비</span><span class="pgbar"><i style="width:72%"></i></span><b>72%</b></div><div class="pg"><span class="pgl">지도·사진·도식</span><span class="pgbar"><i style="width:35%"></i></span><b>35%</b></div><div class="pg"><span class="pgl">Word/PDF 출판</span><span class="pgbar"><i style="width:20%"></i></span><b>20%</b></div>
+<p class="src">출처: Dashboard 시트 '단계·완성도' 표 (사람이 판정하는 값이라 시트 유지)</p></div></section>
+<p class="foot">여행기간·지역 8 같은 '프로젝트 기준' 행은 사이트 전역에 이미 있어 중복 — 메타 줄로만.
+시안 · 프로젝트 실토큰 · 라이트/다크 · 실데이터(예약 30건 기준).</p>
+</div></body></html>
