@@ -106,11 +106,23 @@ def dossier_sections():
 
 
 def prose_length(body: str) -> int:
-    """운영 블록(`- 방문:` 류 목록)과 표를 뺀 순수 서술 자수."""
+    """운영 블록(목록·표)을 뺀 서술 자수.
+
+    인용 블록(>)은 이 원고에서 팁·해설 카드로 쓰인다 — 독자에게는 서술이다.
+    다만 출처 쪽지·배지 줄은 서술이 아니라 근거 표기이므로 뺀다.
+    """
     keep = []
     for line in body.splitlines():
         s = line.strip()
-        if not s or s.startswith(("|", "-", "*", ">")) or s.startswith("#"):
+        # `- ` `* ` 만 목록이다 — `**볼드` 로 시작하는 문단을 목록으로 오인하지 않는다.
+        if not s or s.startswith(("| ", "|-", "- ", "* ")) or s.startswith("#") or s == "|":
+            continue
+        if s.startswith(">"):
+            inner = s.lstrip("> ").strip()
+            if (not inner or inner.startswith(("출처", "{{badge", "가격은 **계획가"))
+                    or "계획가(20" in inner[:30]):
+                continue
+            keep.append(inner)
             continue
         keep.append(s)
     return len("".join(keep))
@@ -210,32 +222,52 @@ def collect():
     no_body = [r["name"] for r in spots if r["body"] in EMPTY]
     no_wiki = [r["name"] for r in rows if r["wiki"] in EMPTY]
 
-    # ---- C2 밀도 · C4 구조
-    dossiers = dossier_sections()
-    lengths = [prose_length(b) for _, b in dossiers]
-    total_lengths = [len(b) for _, b in dossiers]
-    grade_by_name = {r["name"]: r["grade"] for r in rows}
-    below, element_gaps, unmatched = [], Counter(), []
-    for title, body in dossiers:
-        # 레지스트리에 없는 제목을 '미정'으로 흘려보내면 하한 검사를 통째로 빠져나간다.
-        if title not in grade_by_name:
-            unmatched.append(title)
-        grade = grade_by_name.get(title, "우선 추천")
-        floor = max(GRADE_MIN_CHARS.get(grade, 350), 350)
-        if prose_length(body) < floor:
-            below.append({"place": title, "grade": grade,
-                          "chars": prose_length(body), "floor": floor})
-        for key, aliases in DOSSIER_ELEMENTS.items():
-            if aliases is None:
+    # ---- C2 밀도 · C4 구조 — **독자가 읽는 챕터 등급 절**을 잰다.
+    # dossier(90) 는 사이트에 렌더되지 않는 빌드 보조 문서다 (공식 URL 의 소스).
+    # 안 보이는 문서의 밀도는 품질이 아니다 — R3 에서 측정 대상을 교정했다 (2026-08-14).
+    grade_head = re.compile(r"^(#{2,5}) (.+?) \{\{grade:(\w+)\|", re.M)
+
+    def graded_section(text, m):
+        """등급 헤딩부터 다음 실질 헤딩까지. 사진·VISUAL 헤딩은 절을 끊지 않는다."""
+        level = len(m.group(1))
+        rest = text[m.end():]
+        for h in re.finditer(rf"^(#{{2,{level}}}) (.+)$", rest, re.M):
+            if h.group(2).startswith(("{{VISUAL", "사진 에셋")):
                 continue
-            if not has_element(body, aliases):
-                element_gaps[key] += 1
-        # 정체성·why-go 는 라벨이 아니라 서술로 판정한다.
-        first = body.strip().split("\n", 1)[0].strip()
-        if len(first) < 40:
-            element_gaps["정체성"] += 1
-        if prose_length(body) < 200:
+            return rest[:h.start()]
+        return rest
+
+    sections = {}          # 헤딩 → 가장 긴 절 (실행표 헤딩과 상세 절이 같은 이름일 때)
+    for path in sorted(CHAPTER_DIR.glob("*.md")):
+        text = read(path)
+        for m in grade_head.finditer(text):
+            name = m.group(2).strip()
+            body = graded_section(text, m)
+            if name not in sections or prose_length(body) > prose_length(sections[name][1]):
+                sections[name] = (path.name, body)
+
+    heading_grade = {r["heading"]: r["grade"] for r in rows if r["heading"] not in EMPTY}
+    lengths = [prose_length(b) for _, b in sections.values()]
+    total_lengths = [len(b) for _, b in sections.values()]
+    below, element_gaps = [], Counter()
+    for name, (fname, body) in sections.items():
+        grade = heading_grade.get(name, "선택")
+        floor = max(GRADE_MIN_CHARS.get(grade, 350), 350)
+        pl = prose_length(body)
+        if pl < floor:
+            below.append({"place": name, "grade": grade, "chars": pl,
+                          "floor": floor, "file": fname})
+        # C4 — why-go(왜 이 여행인가) 와 정체성 서술을 절 안에서 본다.
+        if pl < 200:
             element_gaps["why_go"] += 1
+        first = body.strip().split("\n", 1)[0].strip()
+        if len(first) < 30 and pl < 350:
+            element_gaps["정체성"] += 1
+
+    # dossier ↔ 레지스트리 이름 대조는 유지한다 (공식 URL 연결이 여기 걸린다).
+    dossiers = dossier_sections()
+    name_set = {r["name"] for r in rows}
+    unmatched = [t for t, _ in dossiers if t not in name_set]
 
     # ---- C3 근거
     op_total = op_evidenced = 0
@@ -280,12 +312,12 @@ def collect():
     return {
         "C1": {"spots": len(spots), "no_body": len(no_body), "no_body_names": no_body,
                "no_wiki": len(no_wiki), "grades": dict(grades)},
-        "C2": {"dossiers": len(dossiers),
+        "C2": {"dossiers": len(sections),
                "median": int(statistics.median(lengths)) if lengths else 0,
                "min": min(lengths) if lengths else 0,
                "max": max(lengths) if lengths else 0,
                "total_median": result_c2_total,  # 표·목록 포함 전체 자수
-               "below_floor": len(below), "below": below[:20],
+               "below_floor": len(below), "below": below[:90],
                "unmatched": len(unmatched), "unmatched_names": unmatched},
         "C3": {"operational_lines": op_total, "evidenced": op_evidenced,
                "unsourced": op_total - op_evidenced,
@@ -312,6 +344,8 @@ GATES: dict[str, tuple[str, int]] = {
     # R2 (2026-08-14): 모든 spot 이 본문을 갖고, dossier 는 전부 레지스트리와 이어진다.
     "본문 없는 spot": ("C1.no_body", 0),
     "dossier 이름 불일치": ("C2.unmatched", 0),
+    # R3 (2026-08-14): 등급별 서술 하한. 새 장소를 스텁으로 추가하면 여기서 멈춘다.
+    "등급별 분량 하한 미달": ("C2.below_floor", 0),
 }
 
 
@@ -348,8 +382,8 @@ def render(data) -> str:
         f"| C1 | 본문 없는 spot | **{c1['no_body']}** / {c1['spots']} |",
         f"| C1 | 위키 참고 없는 항목 | {c1['no_wiki']} |",
         f"| C1 | dossier ↔ 레지스트리 이름 불일치 | **{c2['unmatched']}** / {c2['dossiers']} |",
-        f"| C2 | dossier 서술 중앙값 | **{c2['median']}자** (표·목록 포함 전체 {c2['total_median']}자) |",
-        f"| C2 | 등급별 분량 하한 미달 | **{c2['below_floor']}** / {c2['dossiers']} |",
+        f"| C2 | 등급 절(독자 화면) 서술 중앙값 | **{c2['median']}자** (표·목록 포함 {c2['total_median']}자) |",
+        f"| C2 | 등급별 분량 하한 미달 절 | **{c2['below_floor']}** / {c2['dossiers']} |",
         f"| C3 | 운영정보 줄 | {c3['operational_lines']} |",
         f"| C3 | 근거 표기 | {c3['evidenced']} ({c3['rate']:.0%}) |",
         f"| C3 | **무근거** | **{c3['unsourced']}** |",
@@ -409,7 +443,7 @@ def main():
 
     c1, c2, c3, c6, ph = data["C1"], data["C2"], data["C3"], data["C6"], data["photos"]
     print(f"C1 커버리지: spot {c1['spots']} · 본문 없음 {c1['no_body']} · 위키 없음 {c1['no_wiki']}")
-    print(f"C2 밀도    : dossier {c2['dossiers']} · 서술 중앙값 {c2['median']}자 "
+    print(f"C2 밀도    : 등급 절 {c2['dossiers']} · 서술 중앙값 {c2['median']}자 "
           f"(전체 {c2['total_median']}자) · 하한 미달 {c2['below_floor']} "
           f"· 레지스트리 미매칭 {c2['unmatched']}")
     print(f"C3 근거    : 운영정보 {c3['operational_lines']}줄 · 근거 {c3['evidenced']} "
