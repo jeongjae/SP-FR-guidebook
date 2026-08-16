@@ -32,11 +32,11 @@ status: "chapter-derived master itinerary; booking values pending"
 | 20 | 9/17 목 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher, Pont | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
 | 21 | 9/18 금 | Avignon | Uzès와 Pont du Gard | Uzès 구시가지, Pont du Gard | 시장은 금요일 운영 재확인; 박물관·일몰 택1 | 4 | 주차·입장 |
 | 22 | 9/19 토 | Avignon | Arles 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 4 | 문화유산의 날·철도/주차 |
-| 23 | 9/20 일 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV역 반납 09:00, **TGV 12176 10:22→11:28** (1등석 확정), Lagrange Lumière 15:00 체크인, Bellecour·Célestins | Jacobins·Saône 짧은 산책 | 4 | 반납 09:00 준수 |
+| 23 | 9/20 일 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV역 반납 09:00, **TGV 12176 10:22→11:28** (1등석 확정 4YMAGT), Lagrange Lumière 15:00 체크인, Bellecour·Célestins | Jacobins·Saône 짧은 산책 | 4 | 반납 09:00 준수 · 일요일 개점(10:00) 전 키드롭 확인 |
 | 24 | 9/21 월 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·월요일 운영 |
 | 25 | 9/22 화 | Lyon | Croix-Rousse·Halles·공원 | Croix-Rousse 시장, canut 맥락, Halles | Parc de la Tête d’Or | 3 | 시장·식당 |
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
-| 27 | 9/24 목 | Paris | Lyon→Paris·15박 정착 | Lyon 11:00 체크아웃, TGV 6618 13:04→15:00 (Jeongjae 확정 X6CVW5), 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | Julia TGV 승차권·Paris 숙소 |
+| 27 | 9/24 목 | Paris | Lyon→Paris·15박 정착 | Lyon 11:00 체크아웃, **TGV 6618 13:04→15:00 (두 사람 확정 X6CVW5)**, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | Paris 숙소 |
 | 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페 | 피로가 적으면 강변·공원 1곳 | 1~2 | 숙소 생활권 |
 | 29 | 9/26 토 | Paris | 첫 파리 생활일 | 늦은 시작·가벼운 운동, Saint-Germain, Luxembourg, Seine | 무예약 | 2 | 없음 |
 | 30 | 9/27 일 | Paris | 고전 파리 방향잡기 | Tuileries, Palais Royal, Opéra 지구, Garnier 외관/가능 시 낮 관람 | 자유저녁 | 3 | Garnier 조건부 |
