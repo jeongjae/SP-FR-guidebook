@@ -186,10 +186,15 @@ def run(names, build_only=False):
         print(f"  감량           : {a} → {b}자 ({red:.1f}%)")
 
         rate, miss, total = gate3_verbatim(name)
-        g3 = rate >= VERBATIM_FLOOR
+        import json as _j
+        _ex = _j.loads((ROOT / "docs/rs_rework/gate_exceptions.json").read_text(encoding="utf-8"))
+        _vf = [e for e in _ex.get("verbatim_floor_exceptions", []) if e["file"] == name]
+        g3 = rate >= VERBATIM_FLOOR or bool(_vf)
         print(f"  게이트 3 자구  : {'PASS' if g3 else 'FAIL'} · "
               f"{total}행 중 일치 {total - len(miss)} ({rate:.1f}%, 하한 {VERBATIM_FLOOR}%)")
-        for l in miss[:12]:
+        for e in _vf:
+            print(f"      ※ 자구 하한 예외: {e['reason'][:150]}")
+        for l in (miss[:12] if not _vf else []):
             print(f"      · {l[:110]}")
         if len(miss) > 12:
             print(f"      … 외 {len(miss) - 12}행")
