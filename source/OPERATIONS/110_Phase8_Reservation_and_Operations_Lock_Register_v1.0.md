@@ -20,12 +20,12 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금
 ## Barcelona 숙소 예약 확정
 
 - 상태: 예약 확정 (2026-08-05)
-- 일정: 2026-08-29 체크인 14:00–00:00 · 2026-09-01 체크아웃 09:30–12:00 · 3박
+- 일정: 2026-08-29 체크인 14:00–00:00 · 2026-09-01 체크아웃 12:00까지 · 3박
 - 표시명: Occidental Barcelona 1929
 - 주소: Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain (Hostafrancs·Sants-Montjuïc)
 - 전화: +34 936 26 88 44
 - 여행자: Jason·Julia
-- 채널: Trip.com · 확인번호 365585SG255002 · 예약번호 1400827967207904
+- 채널: Trip.com · 확인번호 36558SG255002 (2026-08 바우처 대조 정정) · 예약번호 1400827967207904
 - 결제: 선결제 KRW 701,054 (VAT 포함) · 현장 결제 €46.2 (도시세 포함, 약 KRW 76,428)
 - 무료취소기한: 재확인
 
