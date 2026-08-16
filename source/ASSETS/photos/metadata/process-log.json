@@ -1,5 +1,5 @@
 {
-  "processedAt": "2026-08-07",
+  "processedAt": "2026-08-15",
   "images": [
     {
       "imageId": "barcelona-city-aerial-01",
@@ -4492,6 +4492,435 @@
             "height": 320,
             "bytes": 61128,
             "sha256": "771f4a0899d08f3b035912831d0bd4475c87c2954d6ae145230861cfb884a527",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-le-rocher-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-le-rocher-01.jpg",
+      "originalSize": [
+        4000,
+        1820
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-le-rocher-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-le-rocher-01-content-1280.webp",
+            "width": 1280,
+            "height": 582,
+            "bytes": 210016,
+            "sha256": "2fc5e768dcd824d0c6f001c2cf06f1024c98fac03284e3bca41afc24101cdf1d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-le-rocher-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-le-rocher-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36638,
+            "sha256": "b292c6a07b802d51cd648e75d327ce9f54c7041cef5fd61e06df02f4a3f1ce27",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-marseille-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-marseille-01.jpg",
+      "originalSize": [
+        4000,
+        3002
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-marseille-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-marseille-01-content-1280.webp",
+            "width": 1280,
+            "height": 961,
+            "bytes": 297080,
+            "sha256": "10797cf46d1dc9cfb3b215725547c740d18c613952f36a4132fc4095750348cf",
+            "quality": 60
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-marseille-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-marseille-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 53298,
+            "sha256": "5c0757e47418cc1b61c428e29802ec88857fd44a1d0eaa6477606b5302907496",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-vieux-port-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-vieux-port-01.jpg",
+      "originalSize": [
+        4000,
+        2600
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-vieux-port-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-vieux-port-01-content-1280.webp",
+            "width": 1280,
+            "height": 832,
+            "bytes": 182590,
+            "sha256": "7a6217683fa434b32960440568e97a3d7718d88d73a9631c874b3ebed0420d73",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-vieux-port-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-vieux-port-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30962,
+            "sha256": "d848118f1b1c7fc362d3246961ae9dbf14df020f7e16f207e25cec543fffabff",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-mucem-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-mucem-01.jpg",
+      "originalSize": [
+        4000,
+        2659
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-mucem-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-mucem-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 221402,
+            "sha256": "812560d966028dcb9cd867a813ee352ae8d5f17cc00bd2bbe7e25e91254542f6",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-mucem-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-mucem-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30140,
+            "sha256": "438e20885c285b05797674bdeb29d0b1e493adb67515d14a4e40d036e6ee351d",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-fort-saint-jean-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-fort-saint-jean-01.jpg",
+      "originalSize": [
+        2816,
+        1584
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-fort-saint-jean-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-fort-saint-jean-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 116218,
+            "sha256": "407da261d4284f541a9bd644664ecc133cec36a729f2c5a66dc138c749ac103e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-fort-saint-jean-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-fort-saint-jean-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17738,
+            "sha256": "2f9e89309338bfa96700563a15e9d41647670aad245a5608b580a4b5d7ddd093",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-place-richelme-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-place-richelme-01.jpg",
+      "originalSize": [
+        2592,
+        1728
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-place-richelme-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-place-richelme-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 167452,
+            "sha256": "7c1cc7b15b42a9c0ed0f145a8f06822b7999bbaba2795245b5645ce974b3f05b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-place-richelme-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-place-richelme-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36756,
+            "sha256": "7d3a088ab1ff408ca0237013cfc7e1da12a438f9a4d7b1efdc66764e1ef984eb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-coustellet-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-coustellet-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-coustellet-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-coustellet-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 132230,
+            "sha256": "04936e955c2c2a8250cff9d15e55a30cbb532df46ce317e3081d3afe895549ee",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-coustellet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-coustellet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21452,
+            "sha256": "cf092827e7ad13d13d7ab2465e68daba8d81d547ec623d88d429e0672262d8ef",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-roussillon-ocres-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-roussillon-ocres-01.jpg",
+      "originalSize": [
+        4000,
+        3360
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-roussillon-ocres-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-roussillon-ocres-01-content-1280.webp",
+            "width": 1280,
+            "height": 1075,
+            "bytes": 235358,
+            "sha256": "910e2c7b29ab4af37ad9ca353fb360fd72c653201860bdcc800e4686820c9a0b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-roussillon-ocres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-roussillon-ocres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24716,
+            "sha256": "ea8e7281c6a6d15466c4789db173eff6d736f78d3cdc8d40ffa04e989eb9beb7",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-les-halles-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-les-halles-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-les-halles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-les-halles-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 208006,
+            "sha256": "7b0b1baba3d3ac565ab5b0a62692c29a9154c45924406573e7863159f9e2305f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-les-halles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-les-halles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 38206,
+            "sha256": "cbd34bc541479a84a6399932af7cef868a2c4b581b2717ca89c999a7aa7199c8",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-arles-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-arles-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 145126,
+            "sha256": "6506b4f6b528c18b85833287143cd78815d7ff2ef78393b7d9b883b6601afd46",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23788,
+            "sha256": "5c289c654d3fb55279dfad674caa63ea50d1fb8bd8cbcd8ef451deea33e90c2a",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-arenes-arles-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-arenes-arles-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-arenes-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-arenes-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 86004,
+            "sha256": "9efbed1b66b881525a3d2378aa2ad9cf27890e560e34f1d35ec4e36b110d2c1c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-arenes-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-arenes-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13402,
+            "sha256": "d8e6aed7b6d5690dee12d8f32f572c1d7e6c5cbef44915647214ace6bf2738d9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-theatre-antique-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-theatre-antique-01.jpg",
+      "originalSize": [
+        3240,
+        2160
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-theatre-antique-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-theatre-antique-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 138068,
+            "sha256": "03c9b8c45c8ebe0120ecf40fd9a64d0fe71c2df45e6dae194b297ea14fbf4448",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-theatre-antique-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-theatre-antique-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20928,
+            "sha256": "7aa7e6d512b8e9cf77fef526e675b15224b03c7bde887c593a1f17a9f8fc5682",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-montmartre-sopi-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-montmartre-sopi-01.jpg",
+      "originalSize": [
+        3061,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-montmartre-sopi-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-montmartre-sopi-01-content-1280.webp",
+            "width": 1280,
+            "height": 1673,
+            "bytes": 251728,
+            "sha256": "54ca0682bf1b593549b0b904ae9fbe5cd51a8e87dff0b46cbd6da26b0f7a0309",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-montmartre-sopi-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-montmartre-sopi-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17244,
+            "sha256": "1ab942e6fefa30614345ba13966048b3a7173d2cbe1a9397e3dbd23d61c6ed1a",
             "quality": 73
           }
         ]

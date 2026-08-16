@@ -411,6 +411,8 @@ GATES: dict[str, tuple[str, int]] = {
     "취소 공연 지시형 잔재": ("C6.cancelled_mentions", 0),
     "확정 숙소의 후보 표기": ("C6.candidate_mentions", 0),
     "pending 미분류": ("C6._unclassified", 0),
+    # R5b (2026-08-15): 필수 등급은 전부 검증된 라이선스의 사진을 갖는다.
+    "필수 등급 사진 없음": ("photos.essential_missing", 0),
 }
 
 
