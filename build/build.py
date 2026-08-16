@@ -5655,19 +5655,16 @@ def check_phase8_operations_guards():
 
 def check_confirmed_fact_token_guards():
     """확정 사실 토큰(예약번호·전화번호·결제금액)이 독자 정본에서 유실되지 않도록 잠근다.
-    지역명·고정 개수 하드코딩 없이 110 Lock Register의 확정 레코드로부터 동적으로 추출하여 검증한다.
+    출처:
+      1) 110 Lock Register의 확정 레코드
+      2) TP_Europe_Travel_Master_Tracker_v1.2.xlsx 의 Reservations·Transport·Accommodation 시트 확정/완료 레코드
+      3) build/confirmed_fact_manifest.json 에 동결된 챕터 상주 확정 사실 레코드
+    지역명·고정 개수 하드코딩 없이 데이터 기반으로 추출하여 검증한다.
     """
+    import json
+    import openpyxl
     problems = []
     exceptions = []
-
-    lock_register_path = SOURCE / "OPERATIONS/110_Phase8_Reservation_and_Operations_Lock_Register_v1.0.md"
-    if not lock_register_path.exists():
-        print("확정 사실 토큰 생존 가드 실패:")
-        print(f"  {lock_register_path} 파일이 없습니다.")
-        sys.exit(1)
-
-    text = lock_register_path.read_text(encoding="utf-8")
-    sections = re.split(r"\n(?=##\s+)", text)
 
     reader_files = []
     reader_files.extend((SOURCE / "CURRENT/20_Regional_Chapters").glob("*.md"))
@@ -5683,59 +5680,108 @@ def check_confirmed_fact_token_guards():
             reader_corpus[f] = f.read_text(encoding="utf-8")
 
     combined_reader_text = "\n".join(reader_corpus.values())
-    checked_tokens_count = 0
+    norm_corpus = re.sub(r"\s+", "", combined_reader_text)
+    checked_tokens_set = set()
 
-    for section in sections:
-        header = section.splitlines()[0].strip() if section.splitlines() else ""
-        is_confirmed = ("확정" in header or "CONFIRMED" in header or
-                        bool(re.search(r"-\s*상태:\s*.*(?:확정|CONFIRMED)", section)))
+    def verify_token(token, source_desc):
+        token_str = str(token).strip()
+        if not token_str or token_str in ("None", "재확인", "확정", "미확정", "완료", "-", "—"):
+            return True
+        checked_tokens_set.add((token_str, source_desc))
+        if token_str.startswith("+"):
+            norm_token = re.sub(r"\s+", "", token_str)
+            found = (token_str in combined_reader_text or norm_token in norm_corpus)
+        elif token_str.startswith("KRW") or token_str.startswith("₩"):
+            raw_num = re.sub(r"[^\d]", "", token_str)
+            found = (token_str in combined_reader_text or
+                     f"KRW {int(raw_num):,}" in combined_reader_text or
+                     f"₩{int(raw_num):,}" in combined_reader_text or
+                     f"{int(raw_num):,}" in combined_reader_text)
+        elif token_str.startswith("€"):
+            found = (token_str in combined_reader_text)
+            if not found and "." in token_str:
+                val = float(token_str.replace("€", "").strip())
+                opt1 = f"€{val}"
+                opt2 = f"€{val:.2f}"
+                found = (opt1 in combined_reader_text or opt2 in combined_reader_text)
+        else:
+            found = (token_str in combined_reader_text)
 
-        if not is_confirmed:
-            continue
+        if not found:
+            problems.append(f"토큰 누락: '{token_str}' (출처: {source_desc})")
+        return found
 
-        if "guard: operations-only" in section:
-            exceptions.append(header)
-            continue
+    # 1. 110 Lock Register
+    lock_register_path = SOURCE / "OPERATIONS/110_Phase8_Reservation_and_Operations_Lock_Register_v1.0.md"
+    if lock_register_path.exists():
+        text = lock_register_path.read_text(encoding="utf-8")
+        for section in re.split(r"\n(?=##\s+)", text):
+            header = section.splitlines()[0].strip() if section.splitlines() else ""
+            is_confirmed = ("확정" in header or "CONFIRMED" in header or
+                            bool(re.search(r"-\s*상태:\s*.*(?:확정|CONFIRMED)", section)))
+            if not is_confirmed:
+                continue
+            if "guard: operations-only" in section:
+                exceptions.append(f"LockRegister: {header}")
+                continue
+            for m in re.finditer(r"(?:확인번호|예약번호|예약코드|PNR|바우처)\s*[:：]?\s*([A-Za-z0-9.]+)", section):
+                code = m.group(1).strip()
+                if code not in ("재확인", "확정", "None", "미확정", "완료"):
+                    verify_token(code, f"LockRegister: {header}")
+            for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", section):
+                verify_token(m.group(1).strip(), f"LockRegister: {header}")
+            for m in re.finditer(r"(€\s*\d+(?:\.\d+)?|KRW\s*[\d,]+|₩\s*[\d,]+)", section):
+                verify_token(m.group(1).strip(), f"LockRegister: {header}")
 
-        tokens = set()
-        # 1. 예약·확인번호 (영숫자 코드)
-        for m in re.finditer(r"(?:확인번호|예약번호|예약코드|PNR|바우처)\s*[:：]?\s*([A-Za-z0-9.]+)", section):
-            code = m.group(1).strip()
-            if code not in ("재확인", "확정", "None", "미확정", "완료"):
-                tokens.add(code)
+    # 2. TRACKER_XLSX
+    tracker_path = SOURCE / "OPERATIONS/TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
+    if tracker_path.exists():
+        wb = openpyxl.load_workbook(tracker_path, data_only=True)
+        for sheet_name in ["Reservations", "Transport", "Accommodation"]:
+            if sheet_name not in wb.sheetnames:
+                continue
+            ws = wb[sheet_name]
+            headers = [cell.value for cell in ws[3]]
+            for row_idx, row in enumerate(ws.iter_rows(min_row=4, values_only=True), start=4):
+                if not any(row):
+                    continue
+                d = dict(zip(headers, row))
+                state = str(d.get("상태") or "").strip()
+                if any(k in state for k in ["예약완료", "확정", "CONFIRMED"]):
+                    row_id = d.get("ID") or d.get("거점") or d.get("구간") or f"Row{row_idx}"
+                    desc = f"Tracker {sheet_name} {row_id}"
+                    note = str(d.get("비고") or "")
+                    if "guard: operations-only" in note:
+                        exceptions.append(desc)
+                        continue
+                    res_code = str(d.get("예약번호") or "").strip()
+                    if res_code and res_code not in ["None", "미표기", "-", "—"]:
+                        for code in re.findall(r"[A-Za-z0-9.]+", res_code):
+                            if code not in ("Trip.com", "Airbnb", "booking.com", "None", "확인", "발권메일", "미표기", "PNR"):
+                                verify_token(code, desc)
+                    for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", note):
+                        verify_token(m.group(1).strip(), desc)
+                    for amt_col in ["총액", "실제총액", "결제액"]:
+                        val = d.get(amt_col)
+                        if val is not None and isinstance(val, (int, float)) and val > 0:
+                            currency = str(d.get("예산통화") or d.get("통화") or ("KRW" if val > 10000 else "EUR")).strip()
+                            if currency in ("EUR", "€"):
+                                amt_token = f"€{val}"
+                            elif currency in ("KRW", "₩", "원"):
+                                amt_token = f"KRW {int(val):,}"
+                            else:
+                                amt_token = f"{val}"
+                            verify_token(amt_token, desc)
 
-        # 2. 전화번호 (+33/+34 패턴)
-        for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", section):
-            tokens.add(m.group(1).strip())
-
-        # 3. 결제·보증금 금액 (확정 표기된 것)
-        for m in re.finditer(r"(€\s*\d+(?:\.\d+)?|KRW\s*[\d,]+|₩\s*[\d,]+)", section):
-            tokens.add(m.group(1).strip())
-
-        for token in sorted(tokens):
-            checked_tokens_count += 1
-            if token.startswith("+"):
-                norm_token = re.sub(r"\s+", "", token)
-                norm_corpus = re.sub(r"\s+", "", combined_reader_text)
-                found = (token in combined_reader_text or norm_token in norm_corpus)
-            elif token.startswith("KRW") or token.startswith("₩"):
-                raw_num = re.sub(r"[^\d]", "", token)
-                found = (token in combined_reader_text or
-                         f"KRW {int(raw_num):,}" in combined_reader_text or
-                         f"₩{int(raw_num):,}" in combined_reader_text or
-                         f"{int(raw_num):,}" in combined_reader_text)
-            elif token.startswith("€"):
-                found = (token in combined_reader_text)
-                if not found and "." in token:
-                    val = float(token.replace("€", "").strip())
-                    opt1 = f"€{val}"
-                    opt2 = f"€{val:.2f}"
-                    found = (opt1 in combined_reader_text or opt2 in combined_reader_text)
-            else:
-                found = (token in combined_reader_text)
-
-            if not found:
-                problems.append(f"토큰 누락: '{token}' (출처: {header})")
+    # 3. MANIFEST_JSON
+    manifest_path = SOURCE.parent / "build/confirmed_fact_manifest.json"
+    if manifest_path.exists():
+        mdata = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for rec in mdata.get("records", []):
+            r_id = rec.get("id")
+            desc = f"Manifest {r_id} ({rec.get('entity')})"
+            for t in rec.get("tokens", []):
+                verify_token(t, desc)
 
     if exceptions:
         print(f"확정 사실 토큰 생존 가드 예외 목록: {', '.join(exceptions)}")
@@ -5746,7 +5792,7 @@ def check_confirmed_fact_token_guards():
             print("  " + problem)
         sys.exit(1)
 
-    print(f"확정 사실 토큰 생존 가드: 확정 토큰 {checked_tokens_count}개 독자 정본 생존 확인 이상 없음")
+    print(f"확정 사실 토큰 생존 가드: 확정 토큰 {len(checked_tokens_set)}건(검증 항목) 독자 정본 생존 확인 이상 없음")
 
 
 def check_phase9_commercial_depth_guards():

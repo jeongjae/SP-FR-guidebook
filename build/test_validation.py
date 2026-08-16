@@ -219,5 +219,30 @@ class TestValidationGuards(unittest.TestCase):
         finally:
             barcelona_path.write_text(barcelona_backup, encoding="utf-8")
 
+    def test_missing_manifest_fact_token(self):
+        # Remove chapter-resident token (€809.54) from Nice chapter
+        nice_path = SOURCE / "CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+        nice_backup = nice_path.read_text(encoding="utf-8")
+        try:
+            bad_content = nice_backup.replace("€809.54", "€000.00")
+            nice_path.write_text(bad_content, encoding="utf-8")
+
+            old_stdout = sys.stdout
+            sys.stdout = StringIO()
+            try:
+                build.check_confirmed_fact_token_guards()
+                success = True
+            except SystemExit as e:
+                success = (e.code == 0)
+            finally:
+                output = sys.stdout.getvalue()
+                sys.stdout = old_stdout
+
+            self.assertFalse(success)
+            self.assertIn("확정 사실 토큰 생존 가드 실패:", output)
+            self.assertIn("토큰 누락: '€809.54'", output)
+        finally:
+            nice_path.write_text(nice_backup, encoding="utf-8")
+
 if __name__ == "__main__":
     unittest.main()
