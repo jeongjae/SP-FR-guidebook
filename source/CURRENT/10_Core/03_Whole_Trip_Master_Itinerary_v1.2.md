@@ -59,7 +59,7 @@ status: "chapter-derived master itinerary; booking values pending"
 | 날짜 | 이동 | 운영원칙 |
 |---|---|---|
 | 9/1 | Barcelona→Sitges→Girona | 렌터카 인수 지연 시 Sitges 축소, Girona 도착 안정성 우선 |
-| 9/4 | Bàscara 체크아웃→Nice 이동 | 이동수단·차량 반납지·소요시간 재확인 필요 |
+| 9/4 | Bàscara 체크아웃→Nice 이동 | 렌터카 BCN 반납 + VY1521 15:30 항공 이동 확정 |
 | **9/9** | Nice→Saint-Paul→Grasse→Aix | 렌터카 인수 지연 시 Grasse부터 삭제 |
 | 9/13 | Aix→Lourmarin→Luberon | 4박 체크아웃 후 장보기·농가 진입 |
 | 9/16 | Luberon→Avignon | 3박 농가 체크아웃 후 성벽도시 체크인·주차 안정성 우선 |

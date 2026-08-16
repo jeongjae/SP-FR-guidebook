@@ -70,6 +70,16 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 주의: 이동일에는 한 시설만 선택.
 - 공식정보: https://museusdesitges.cat/en/fees
 
+## Barcelona 역사도심 — Barri Gòtic·Rambla 권역
+Barcelona의 오래된 역사 지구와 중심 람블라스 대로를 잇는 셀프가이드 도보 경로이다.
+
+- 공식정보: https://www.barcelonaturisme.com/
+
+## Barcelona Modernisme — Eixample 권역
+에샴플레 지구의 모더니즘 건축 유산들을 도보로 둘러보는 셀프가이드 도보 경로이다.
+
+- 공식정보: https://www.barcelonaturisme.com/
+
 # Girona
 - **역사:** 로마 Gerunda, 중세 주교도시, 유대인 공동체의 번영과 추방, 근현대 카탈루냐 도시가 층층이 남아 있다.
 - **경제:** 관광뿐 아니라 대학·식품산업·지역서비스의 중심이며, Costa Brava와 프랑스 국경권을 연결하는 교통거점이다.
@@ -87,7 +97,7 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 주의: 계단과 경사, 늦은 도착 시 내부관람 불가.
 - 공식정보: https://www.girona.cat/turisme/eng/monuments_catedral.php
 
-## Girona Cathedral
+## Passeig de la Muralla
 로마·중세 방어선이 산책로로 바뀐 곳으로 도시의 지형을 가장 잘 이해할 수 있다.
 
 - 방문: 대성당 뒤편 여러 출입구.
@@ -145,6 +155,11 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 요금·예약: 마을·해안산책 무료.
 - 주의: 주차혼잡, 긴 트레킹 금지.
 - 공식정보: https://visitpalafrugell.cat/en/calella/
+
+## Girona 구시가지 — Call·성벽·대성당 권역
+지로나 구시가지의 유대인 지구(Call), 중세 성벽, 대성당을 잇는 셀프가이드 도보 경로이다.
+
+- 공식정보: https://www.girona.cat/turisme/
 
 # Nice
 - **역사:** 그리스 식민도시 Nikaia, 사보이아 지배, 1860년 프랑스 편입, 19세기 겨울휴양지의 역사가 겹친다.
@@ -212,6 +227,21 @@ Santiago Rusiñol의 작업실·수집공간과 해안 모더니즘을 보여주
 - 요금·예약: 박물관·공방별 상이, 일부 무료 투어.
 - 주의: Aix 체크인 지연 시 내부관람 삭제.
 - 공식정보: https://www.paysdegrassetourisme.fr/
+
+## Nice Old Town–Castle Hill Walk
+Nice의 구시가지와 성채 언덕의 지형을 따라 걷는 셀프가이드 도보 경로이다.
+
+- 공식정보: https://www.explorenicecotedazur.com/
+
+## Cannes Forville–Suquet–Croisette Walk
+Cannes Forville 시장에서 시작해 Le Suquet 언덕과 해안 Croisette 대로를 잇는 도보 가이드이다.
+
+- 공식정보: https://www.cannes-france.com/
+
+## Monaco Rocher–Port–Monte Carlo Walk
+Monaco 절벽 위 구시가지(Rocher)에서 시작해 항구를 지나 Monte Carlo 광장까지 이어지는 도보 가이드이다.
+
+- 공식정보: https://www.visitmonaco.com/
 
 # Aix
 - **역사:** 로마 온천도시 Aquae Sextiae에서 시작해 프로방스 백작령의 수도, 근대 법률·행정·대학도시로 발전했다.

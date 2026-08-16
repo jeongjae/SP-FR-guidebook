@@ -184,10 +184,8 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 
 <nav class="event-actions" aria-label="파리 고정 이벤트 공식 링크">
   <a class="event-button" href="https://www.fhcm.paris/en/paris-fashion-week">Fashion Week 공식정보</a>
-  <a class="event-button event-button-primary" href="https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229122672727&amp;lang=en">10/1 공식예매</a>
   <a class="event-button" href="https://billetterie.france-galop.com/en/event/qatar-prix-de-larc-de-triomphe/">Arc 공식정보·예매</a>
   <a class="event-button" href="https://fetedesvendangesdemontmartre.com/le-programme/">Vendanges 공식 프로그램</a>
-  <a class="event-button event-button-primary" href="https://billetterie.operadeparis.fr/api/1/redirect/product/performance?id=10229118155385&amp;lang=en">10/9 공식예매</a>
 </nav>
 
 ## 15박의 운영 원칙
@@ -1046,7 +1044,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 
 ---
 
-## 21. 일정 교체 매트릭스
+## 21A. 일정 교체 매트릭스
 
 | 상황 | 바꿀 일정 |
 |---|---|
@@ -1058,7 +1056,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 
 ---
 
-## 21A. 실행성 감사 — 15박 운영판
+## 21B. 실행성 감사 — 15박 운영판
 
 ### 날짜별 핵심 통제표
 
@@ -1089,7 +1087,7 @@ Qatar Prix de l’Arc de Triomphe 메인 레이스 데이는 ParisLongchamp 이�
 4. 10/7–8 이틀(축제와 송별 저녁)이 이 구간의 고강도 상한이다. 사흘 연속 고강도를 만들지 않는다.
 5. 10/9 출국일에는 오전 체크아웃과 공항 이동 외의 모든 일정을 금지한다.
 
-## 21B. 출발 전 예약 게이트
+## 21C. 출발 전 예약 게이트
 
 | 게이트 | 확정 내용 | 실패 시 기본대안 |
 |---|---|---|

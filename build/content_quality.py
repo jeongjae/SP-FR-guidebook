@@ -233,7 +233,7 @@ def has_element(body: str, aliases) -> bool:
 
 def collect():
     rows = registry_rows()
-    spots = [r for r in rows if r["type"] == "spot"]
+    spots = [r for r in rows if r["type"] in ("spot", "walk")]
     grades = Counter(r["grade"] for r in rows)
 
     # ---- C1 커버리지

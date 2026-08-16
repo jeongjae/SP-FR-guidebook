@@ -24,6 +24,8 @@
 | `sagrada-familia` | Sagrada Família | spot | 필수 | Sagrada Família | chapters/barcelona/places.html | Sagrada Família | Sagrada Família |
 | `sant-pau-recinte-modernista` | Sant Pau Recinte Modernista | spot | 필수 | Sant Pau | chapters/barcelona/places.html | Sant Pau Recinte Modernista | Hospital de Sant Pau |
 | `sitges` | Sitges | spot | 선택 | Sitges | chapters/barcelona/places.html | Sitges | Sitges |
+| `barcelona-historic-walk` | Barcelona 역사도심 — Barri Gòtic·Rambla 권역 | walk | 필수 | — | chapters/barcelona/places.html | Barcelona 역사도심 — Barri Gòtic·Rambla 권역 | — |
+| `barcelona-modernisme-walk` | Barcelona Modernisme — Eixample 권역 | walk | 필수 | — | chapters/barcelona/places.html | Barcelona Modernisme — Eixample 권역 | — |
 
 ## girona (05)
 
@@ -32,10 +34,12 @@
 | `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수 | Calella de Palafrugell | chapters/girona/places.html | Calella de Palafrugell | Calella de Palafrugell |
 | `collioure` | Collioure | spot | 필수 | Collioure | chapters/girona/places.html | Collioure | Collioure |
 | `girona-cathedral` | Girona Cathedral | spot | 필수 | Girona Cathedral | chapters/girona/places.html | Girona Cathedral | Girona Cathedral |
+| `passeig-de-la-muralla` | Passeig de la Muralla | spot | 필수 | — | chapters/girona/places.html | 성벽 (Passeig de la Muralla) | Passeig de la Muralla |
 | `onyar` | Onyar 강변 | spot | 필수 | Onyar Houses | chapters/girona/places.html | Onyar 강변 | Onyar |
 | `pals` | Pals | spot | 우선 추천 | Pals | chapters/girona/places.html | Pals | Pals |
 | `peralada` | Peralada | spot | 우선 추천 | Peralada | chapters/girona/places.html | Peralada | Peralada |
 | `peratallada` | Peratallada | spot | 필수 | Peratallada | chapters/girona/places.html | Peratallada | Peratallada |
+| `girona-old-town-walk` | Girona 구시가지 — Call·성벽·대성당 권역 | walk | 필수 | — | chapters/girona/places.html | Girona 구시가지 — Call·성벽·대성당 권역 | — |
 
 ## nice (06)
 
@@ -49,6 +53,9 @@
 | `marche-forville` | Marché Forville | spot | 필수 | — | chapters/nice/places.html | Marché Forville | fr:Marché Forville |
 | `marche-de-la-liberation` | Marché de la Libération | spot | 우선 추천 | Libération Market | chapters/nice/places.html | Marché de la Libération | — |
 | `monaco` | Monaco | spot | 우선 추천 | Monaco | chapters/nice/places.html | Monaco | Monaco |
+| `nice-walk` | Nice Old Town–Castle Hill Walk | walk | 필수 | — | chapters/nice/places.html | Nice Old Town–Castle Hill Walk | — |
+| `cannes-walk` | Cannes Forville–Suquet–Croisette Walk | walk | 필수 | — | chapters/nice/places.html | Cannes Forville–Suquet–Croisette Walk | — |
+| `monaco-walk` | Monaco Rocher–Port–Monte Carlo Walk | walk | 필수 | — | chapters/nice/places.html | Monaco Rocher–Port–Monte Carlo Walk | — |
 | `nce-t2` | NCE T2 | node | — | NCE T2 | — | — | — |
 | `nice-ville` | Nice-Ville | node | — | Nice-Ville | — | — | — |
 | `promenade-des-anglais` | Promenade des Anglais | spot | 필수 | — | chapters/nice/places.html | Promenade des Anglais | Promenade des Anglais |
