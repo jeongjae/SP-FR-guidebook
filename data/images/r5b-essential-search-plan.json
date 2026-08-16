@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "r5b-essential-13",
+  "downloadDate": "2026-08-15",
+  "subjects": [
+    {
+      "placeId": "le-rocher",
+      "imageId": "nice-le-rocher-01",
+      "region": "nice",
+      "query": "Rocher de Monaco Monaco-Ville",
+      "selectedTitle": "File:Hafen und Felsen von Monaco-La Turbie.jpg",
+      "titleKo": "르 로셰와 모나코 항",
+      "altKo": "라 튀르비에서 내려다본 모나코 — 바다로 돌출한 르 로셰 곶 위의 구시가지와 에르퀼 항의 요트들",
+      "captionKo": "라 튀르비 방향에서 내려다본 모나코. 오른쪽 바다로 뻗은 바위 곶이 르 로셰 구시가지다.",
+      "role": "major",
+      "focus": { "x": 0.68, "y": 0.4 },
+      "usage": [
+        "places/le-rocher.html"
+      ]
+    },
+    {
+      "placeId": "marseille",
+      "imageId": "aix-marseille-01",
+      "region": "aix",
+      "query": "Marseille Vieux-Port Notre-Dame de la Garde vue",
+      "selectedTitle": "File:Marseille Basilique Notre-Dame-de-la-Garde Vue sur le Vieux-Port 1.jpg",
+      "titleKo": "노트르담드라가르드에서 본 마르세유",
+      "altKo": "노트르담드라가르드 대성당에서 내려다본 마르세유 — 구항의 요트들과 라 마조르 대성당, 시가지",
+      "captionKo": "노트르담드라가르드에서 내려다본 마르세유. 구항 너머로 라 마조르 대성당과 시가지가 이어진다.",
+      "role": "major",
+      "focus": { "x": 0.5, "y": 0.55 },
+      "usage": [
+        "places/marseille.html"
+      ]
+    },
+    {
+      "placeId": "vieux-port-marseille",
+      "imageId": "aix-vieux-port-01",
+      "region": "aix",
+      "query": "Vieux-Port Marseille bateaux",
+      "selectedTitle": "File:Vieux-Port de Marseille, France.jpg",
+      "titleKo": "마르세유 구항의 목선들",
+      "altKo": "마르세유 구항 부두에 정박한 전통 목선들과 돛대, 그 너머의 항구변 건물들",
+      "captionKo": "구항 부두의 전통 목선들. 부두 산책로에서 바로 이 높이로 배를 만난다.",
+      "role": "major",
+      "focus": { "x": 0.5, "y": 0.5 },
+      "usage": [
+        "places/vieux-port-marseille.html"
+      ]
+    },
+    {
+      "placeId": "mucem",
+      "imageId": "aix-mucem-01",
+      "region": "aix",
+      "query": "Mucem Marseille",
+      "selectedTitle": "File:View from the Mucem rooftop garden towards Cathédrale La Major, Marseille, 2015.jpg",
+      "titleKo": "Mucem 옥상 정원에서 본 라 마조르",
+      "altKo": "Mucem 포르 생장 성벽 정원의 지중해 식물 사이로 보이는 라 마조르 대성당",
+      "captionKo": "Mucem 경내 포르 생장 성벽 정원에서 라 마조르 대성당 방향의 조망.",
+      "role": "major",
+      "focus": { "x": 0.4, "y": 0.35 },
+      "usage": [
+        "places/mucem.html"
+      ]
+    },
+    {
+      "placeId": "fort-saint-jean",
+      "imageId": "aix-fort-saint-jean-01",
+      "region": "aix",
+      "query": "Fort Saint-Jean Marseille",
+      "selectedTitle": "File:Marseille, Fort Saint-Jean, view from Fort Saint-Nicolas 03.JPG",
+      "titleKo": "포르 생니콜라에서 본 포르 생장",
+      "altKo": "항구 입구 너머로 본 포르 생장 요새 — 파날 탑과 르네 왕 탑, 뒤로 노트르담드라가르드 언덕",
+      "captionKo": "맞은편 포르 생니콜라에서 본 포르 생장. 항구 입구를 지키는 두 요새가 마주 본다.",
+      "role": "major",
+      "focus": { "x": 0.45, "y": 0.4 },
+      "usage": [
+        "places/fort-saint-jean.html"
+      ]
+    },
+    {
+      "placeId": "place-richelme-place-des-precheurs",
+      "imageId": "aix-place-richelme-01",
+      "region": "aix",
+      "query": "Place Richelme marché Aix-en-Provence",
+      "selectedTitle": "File:Marche-Richelme-Aix.jpg",
+      "titleKo": "플라스 리셸므 아침 시장",
+      "altKo": "플라타너스 그늘 아래 플라스 리셸므 시장 — 채소 좌판과 해바라기 다발, 장 보는 사람들",
+      "captionKo": "플라스 리셸므의 아침 시장. 플라타너스 아래 좌판이 매일 선다.",
+      "role": "major",
+      "focus": { "x": 0.45, "y": 0.55 },
+      "usage": [
+        "places/place-richelme-place-des-precheurs.html"
+      ]
+    },
+    {
+      "placeId": "coustellet",
+      "imageId": "luberon-coustellet-01",
+      "region": "luberon",
+      "query": "Coustellet marché",
+      "selectedTitle": "File:Coustellet - marché 1.jpg",
+      "titleKo": "쿠스텔레 생산자 시장",
+      "altKo": "쿠스텔레 생산자 시장 거리 — 차양 아래 비누·직물·올리브유 좌판과 장 보는 사람들",
+      "captionKo": "쿠스텔레 생산자 시장. 좌판 줄 사이 거리가 장터가 된다 (촬영은 4월 초 — 9월엔 잎이 무성하다).",
+      "role": "major",
+      "focus": { "x": 0.55, "y": 0.5 },
+      "usage": [
+        "places/coustellet.html"
+      ]
+    },
+    {
+      "placeId": "roussillon-sentier-des-ocres",
+      "imageId": "luberon-roussillon-ocres-01",
+      "region": "luberon",
+      "query": "Sentier des Ocres Roussillon",
+      "selectedTitle": "File:Roussillon Vaucluse sentier des ocres 2013 08.jpg",
+      "titleKo": "루시용 황토 절벽",
+      "altKo": "소나무 사이로 솟은 루시용의 붉은 황토 절벽 — 아래 오솔길의 사람들이 절벽의 규모를 보여준다",
+      "captionKo": "상티에 데 조크르의 황토 절벽. 오른쪽 아래 사람들과 견주면 규모가 보인다.",
+      "role": "major",
+      "focus": { "x": 0.5, "y": 0.45 },
+      "usage": [
+        "places/roussillon-sentier-des-ocres.html"
+      ]
+    },
+    {
+      "placeId": "les-halles",
+      "imageId": "avignon-les-halles-01",
+      "region": "avignon",
+      "query": "marché place Pie Avignon",
+      "selectedTitle": "File:Marché sur la place Pie d'Avignon, tournesols et patissons.jpg",
+      "titleKo": "플라스 피의 노천 시장",
+      "altKo": "아비뇽 플라스 피 노천 좌판 — 해바라기 다발과 호박, 감자, 초가을 채소",
+      "captionKo": "레알 앞 플라스 피의 노천 좌판. 9월 하순 촬영 — 방문 시기의 계절감 그대로다.",
+      "role": "major",
+      "focus": { "x": 0.6, "y": 0.45 },
+      "usage": [
+        "places/les-halles.html"
+      ]
+    },
+    {
+      "placeId": "arles",
+      "imageId": "avignon-arles-01",
+      "region": "avignon",
+      "query": "Arles vue depuis les arènes toits",
+      "selectedTitle": "File:Arles-Vue depuis les Arènes-bjs180820-04.jpg",
+      "titleKo": "원형경기장에서 본 아를",
+      "altKo": "원형경기장 북탑에서 본 아를 — 기와지붕 물결과 생쥘리앵 교회, 뒤로 론강",
+      "captionKo": "원형경기장 북탑에서 본 아를 구시가. 기와지붕 너머로 론강이 흐른다.",
+      "role": "major",
+      "focus": { "x": 0.45, "y": 0.5 },
+      "usage": [
+        "places/arles.html"
+      ]
+    },
+    {
+      "placeId": "arenes-d-arles",
+      "imageId": "avignon-arenes-arles-01",
+      "region": "avignon",
+      "query": "Arènes d'Arles amphithéâtre",
+      "selectedTitle": "File:Les Arènes, Arles, Provence.jpg",
+      "titleKo": "아를 원형경기장",
+      "altKo": "아침 빛의 아를 원형경기장 — 2층 아치 회랑과 중세의 방어탑",
+      "captionKo": "아를 원형경기장. 아치 위에 솟은 사각 탑은 중세에 요새로 쓰이던 흔적이다.",
+      "role": "major",
+      "focus": { "x": 0.5, "y": 0.45 },
+      "usage": [
+        "places/arenes-d-arles.html"
+      ]
+    },
+    {
+      "placeId": "theatre-antique-arles",
+      "imageId": "avignon-theatre-antique-01",
+      "region": "avignon",
+      "query": "Théâtre antique Arles",
+      "selectedTitle": "File:Roman theatre, Arles - panoramio.jpg",
+      "titleKo": "아를 고대 극장",
+      "altKo": "아를 고대 극장 — 반원형 객석과 무대 터, 홀로 남은 두 개의 기둥",
+      "captionKo": "고대 극장의 객석과 무대 터. 홀로 선 두 기둥이 무대벽의 전부다.",
+      "role": "major",
+      "focus": { "x": 0.55, "y": 0.5 },
+      "usage": [
+        "places/theatre-antique-arles.html"
+      ]
+    },
+    {
+      "placeId": "montmartre-south-pigalle",
+      "imageId": "paris-montmartre-sopi-01",
+      "region": "paris",
+      "query": "escalier Sacré-Cœur Montmartre",
+      "selectedTitle": "File:L'escalier de droite menant à la Basilique de Montmartre - GT 03 - 2024.jpg",
+      "titleKo": "사크레쾨르로 오르는 계단",
+      "altKo": "몽마르트르 언덕 잔디밭 사이 계단 위로 솟은 사크레쾨르 대성당의 흰 돔",
+      "captionKo": "사크레쾨르로 오르는 계단. 언덕 잔디밭이 동네의 거실 노릇을 한다.",
+      "role": "major",
+      "focus": { "x": 0.5, "y": 0.45 },
+      "usage": [
+        "places/montmartre-south-pigalle.html"
+      ]
+    }
+  ],
+  "excluded": [],
+  "notes": "R5b 필수 등급 13곳. 프랑스 무FoP 원칙 적용 — Mucem 은 2013년 리코티 건물 정면을 주제로 삼지 않고 경내 포르 생장 성벽 정원 프레임을 썼다. Vieux-Port 는 2013년 거울 캐노피가 없는 프레임, 아비뇽 Les Halles 는 파트리크 블랑 수직정원(2005)이 화면 주제가 되는 프레임을 배제하고 플라스 피 노천시장 프레임을 썼다. Marseille 는 극단 파노라마(5.7:1)와 1895년 사진채색 엽서를 기각하고 2021년 촬영 구항 부감을 승인."
+}

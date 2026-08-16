@@ -20,8 +20,8 @@
 | C6 | 취소 공연 잔재 | 0 |
 | C6 | `후보` 표기 | 0 |
 | C6 | pending 미분류 | 0 / 296 |
-| 사진 | 필수 등급 커버리지 | 35 / 48 |
-| 사진 | 전체 spot 커버리지 | 55 / 94 |
+| 사진 | 필수 등급 커버리지 | 48 / 48 |
+| 사진 | 전체 spot 커버리지 | 68 / 94 |
 
 ## C4 — dossier 요소 결측
 
@@ -41,7 +41,7 @@
 
 ## 필수 등급 사진 없음
 
-Le Rocher — 모나코 구시가지, Marseille, Vieux-Port, Mucem, Fort Saint-Jean, 시장 — Place Richelme · Place des Prêcheurs, Coustellet 생산자 시장, Roussillon · Sentier des Ocres, Les Halles, Arles, Arènes d’Arles, Théâtre antique, Montmartre · South Pigalle
+없다.
 
 ---
 

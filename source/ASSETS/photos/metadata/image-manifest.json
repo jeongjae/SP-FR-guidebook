@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-07",
+  "generatedAt": "2026-08-15",
   "regions": [
     "aix",
     "avignon",
@@ -7444,7 +7444,803 @@
       "storedWidth": 4000,
       "storedHeight": 3000,
       "originalBytes": 7635236
+    },
+    {
+      "imageId": "nice-le-rocher-01",
+      "placeId": "le-rocher",
+      "title": "Hafen und Felsen von Monaco-La Turbie.jpg",
+      "titleKo": "르 로셰와 모나코 항",
+      "description": "harbour and Rock of Monaco seen from a viewpoint near the village of La Turbie",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hafen_und_Felsen_von_Monaco-La_Turbie.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Hafen_und_Felsen_von_Monaco-La_Turbie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Tobi 87",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 9319,
+      "originalHeight": 4239,
+      "originalPath": "source/ASSETS/photos/originals/nice/nice-le-rocher-01.jpg",
+      "originalSha256": "46f38b8707d45caa0d7a0244d43a064b43d2642f860790455b649da8fff2eed7",
+      "usage": [
+        "places/le-rocher.html"
+      ],
+      "role": "major",
+      "region": "nice",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "라 튀르비에서 내려다본 모나코 — 바다로 돌출한 르 로셰 곶 위의 구시가지와 에르퀼 항의 요트들",
+      "captionKo": "라 튀르비 방향에서 내려다본 모나코. 오른쪽 바다로 뻗은 바위 곶이 르 로셰 구시가지다.",
+      "focus": {
+        "x": 0.68,
+        "y": 0.4
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-le-rocher-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-le-rocher-01-content-1280.webp",
+            "width": 1280,
+            "height": 582,
+            "bytes": 210016,
+            "sha256": "2fc5e768dcd824d0c6f001c2cf06f1024c98fac03284e3bca41afc24101cdf1d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-le-rocher-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-le-rocher-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36638,
+            "sha256": "b292c6a07b802d51cd648e75d327ce9f54c7041cef5fd61e06df02f4a3f1ce27",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 1820,
+      "originalBytes": 4167909
+    },
+    {
+      "imageId": "aix-marseille-01",
+      "placeId": "marseille",
+      "title": "Marseille Basilique Notre-Dame-de-la-Garde Vue sur le Vieux-Port 1.jpg",
+      "titleKo": "노트르담드라가르드에서 본 마르세유",
+      "description": "View from the Basilica of Our Lady of the Guard to the Old Port, Marseille, Department of Bouches-du-Rhône, Region of Provence-Alpes-Côte d'Azur, France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Marseille_Basilique_Notre-Dame-de-la-Garde_Vue_sur_le_Vieux-Port_1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/13/Marseille_Basilique_Notre-Dame-de-la-Garde_Vue_sur_le_Vieux-Port_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 4592,
+      "originalHeight": 3446,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-marseille-01.jpg",
+      "originalSha256": "7f97bfa8b455eac6f89c50efe9e0d277ca172ddbc7d74f355b452d1cbb7124d4",
+      "usage": [
+        "places/marseille.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "노트르담드라가르드 대성당에서 내려다본 마르세유 — 구항의 요트들과 라 마조르 대성당, 시가지",
+      "captionKo": "노트르담드라가르드에서 내려다본 마르세유. 구항 너머로 라 마조르 대성당과 시가지가 이어진다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-marseille-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-marseille-01-content-1280.webp",
+            "width": 1280,
+            "height": 961,
+            "bytes": 297080,
+            "sha256": "10797cf46d1dc9cfb3b215725547c740d18c613952f36a4132fc4095750348cf",
+            "quality": 60
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-marseille-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-marseille-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 53298,
+            "sha256": "5c0757e47418cc1b61c428e29802ec88857fd44a1d0eaa6477606b5302907496",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 3002,
+      "originalBytes": 5483499
+    },
+    {
+      "imageId": "aix-vieux-port-01",
+      "placeId": "vieux-port-marseille",
+      "title": "Vieux-Port de Marseille, France.jpg",
+      "titleKo": "마르세유 구항의 목선들",
+      "description": "Old Port of Marseille, France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vieux-Port_de_Marseille,_France.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Vieux-Port_de_Marseille%2C_France.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Clément Bardot",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 5873,
+      "originalHeight": 3818,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-vieux-port-01.jpg",
+      "originalSha256": "72dbc707d5f6ccc840561eec62e035a8983d035347f48a8bff06913368dc1f48",
+      "usage": [
+        "places/vieux-port-marseille.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "마르세유 구항 부두에 정박한 전통 목선들과 돛대, 그 너머의 항구변 건물들",
+      "captionKo": "구항 부두의 전통 목선들. 부두 산책로에서 바로 이 높이로 배를 만난다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-vieux-port-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-vieux-port-01-content-1280.webp",
+            "width": 1280,
+            "height": 832,
+            "bytes": 182590,
+            "sha256": "7a6217683fa434b32960440568e97a3d7718d88d73a9631c874b3ebed0420d73",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-vieux-port-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-vieux-port-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30962,
+            "sha256": "d848118f1b1c7fc362d3246961ae9dbf14df020f7e16f207e25cec543fffabff",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2600,
+      "originalBytes": 3434196
+    },
+    {
+      "imageId": "aix-mucem-01",
+      "placeId": "mucem",
+      "title": "View from the Mucem rooftop garden towards Cathédrale La Major, Marseille, 2015.jpg",
+      "titleKo": "Mucem 옥상 정원에서 본 라 마조르",
+      "description": "View from the Mucem rooftop garden towards Cathédrale La Major, Marseille, 2015",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_the_Mucem_rooftop_garden_towards_Cath%C3%A9drale_La_Major,_Marseille,_2015.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/77/View_from_the_Mucem_rooftop_garden_towards_Cath%C3%A9drale_La_Major%2C_Marseille%2C_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "DimiTalen",
+      "license": "CC0 1.0",
+      "licenseCode": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 5902,
+      "originalHeight": 3924,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-mucem-01.jpg",
+      "originalSha256": "97114e870d14fb0e2bd7bfee9dad4883ba692a0ec0658bbda107015e03c9c6c5",
+      "usage": [
+        "places/mucem.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "Mucem 포르 생장 성벽 정원의 지중해 식물 사이로 보이는 라 마조르 대성당",
+      "captionKo": "Mucem 경내 포르 생장 성벽 정원에서 라 마조르 대성당 방향의 조망.",
+      "focus": {
+        "x": 0.4,
+        "y": 0.35
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-mucem-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-mucem-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 221402,
+            "sha256": "812560d966028dcb9cd867a813ee352ae8d5f17cc00bd2bbe7e25e91254542f6",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-mucem-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-mucem-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30140,
+            "sha256": "438e20885c285b05797674bdeb29d0b1e493adb67515d14a4e40d036e6ee351d",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2659,
+      "originalBytes": 4050560
+    },
+    {
+      "imageId": "aix-fort-saint-jean-01",
+      "placeId": "fort-saint-jean",
+      "title": "Marseille, Fort Saint-Jean, view from Fort Saint-Nicolas 03.JPG",
+      "titleKo": "포르 생니콜라에서 본 포르 생장",
+      "description": "Marseille, Blick vom Fort Saint-Nicolas auf das Fort Saint-Jean",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Marseille,_Fort_Saint-Jean,_view_from_Fort_Saint-Nicolas_03.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Marseille%2C_Fort_Saint-Jean%2C_view_from_Fort_Saint-Nicolas_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Sinuhe20",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 2816,
+      "originalHeight": 1584,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-fort-saint-jean-01.jpg",
+      "originalSha256": "29fae94a9e6c6b95b4d69b5c0b57b3ec1863010a610b6c983e2195ecf17e4ae5",
+      "usage": [
+        "places/fort-saint-jean.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "항구 입구 너머로 본 포르 생장 요새 — 파날 탑과 르네 왕 탑, 뒤로 노트르담드라가르드 언덕",
+      "captionKo": "맞은편 포르 생니콜라에서 본 포르 생장. 항구 입구를 지키는 두 요새가 마주 본다.",
+      "focus": {
+        "x": 0.45,
+        "y": 0.4
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-fort-saint-jean-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-fort-saint-jean-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 116218,
+            "sha256": "407da261d4284f541a9bd644664ecc133cec36a729f2c5a66dc138c749ac103e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-fort-saint-jean-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-fort-saint-jean-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17738,
+            "sha256": "2f9e89309338bfa96700563a15e9d41647670aad245a5608b580a4b5d7ddd093",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1215679
+    },
+    {
+      "imageId": "aix-place-richelme-01",
+      "placeId": "place-richelme-place-des-precheurs",
+      "title": "Marche-Richelme-Aix.jpg",
+      "titleKo": "플라스 리셸므 아침 시장",
+      "description": "The daily vegetable market in place Richelme in Aix-en-Provence ( Bouches-du-Rhône , France).",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Marche-Richelme-Aix.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Marche-Richelme-Aix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "fretless88",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 2592,
+      "originalHeight": 1728,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-place-richelme-01.jpg",
+      "originalSha256": "551c1b1f2d7bbbbec9a6a2ef3b6d148675e0d060a2d1ad072171c6f81f26c59d",
+      "usage": [
+        "places/place-richelme-place-des-precheurs.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "플라타너스 그늘 아래 플라스 리셸므 시장 — 채소 좌판과 해바라기 다발, 장 보는 사람들",
+      "captionKo": "플라스 리셸므의 아침 시장. 플라타너스 아래 좌판이 매일 선다.",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-place-richelme-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-place-richelme-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 167452,
+            "sha256": "7c1cc7b15b42a9c0ed0f145a8f06822b7999bbaba2795245b5645ce974b3f05b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-place-richelme-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-place-richelme-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36756,
+            "sha256": "7d3a088ab1ff408ca0237013cfc7e1da12a438f9a4d7b1efdc66764e1ef984eb",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2334944
+    },
+    {
+      "imageId": "luberon-coustellet-01",
+      "placeId": "coustellet",
+      "title": "Coustellet - marché 1.jpg",
+      "titleKo": "쿠스텔레 생산자 시장",
+      "description": "marché de Coustellet (84)",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Coustellet_-_march%C3%A9_1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/34/Coustellet_-_march%C3%A9_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Marianne Casamance",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 4000,
+      "originalHeight": 3000,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-coustellet-01.jpg",
+      "originalSha256": "8bf8b1c0615881393d262b6b7bf1f939520f70cc5b89edc1b32e7a83ae53ed85",
+      "usage": [
+        "places/coustellet.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "쿠스텔레 생산자 시장 거리 — 차양 아래 비누·직물·올리브유 좌판과 장 보는 사람들",
+      "captionKo": "쿠스텔레 생산자 시장. 좌판 줄 사이 거리가 장터가 된다 (촬영은 4월 초 — 9월엔 잎이 무성하다).",
+      "focus": {
+        "x": 0.55,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-coustellet-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-coustellet-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 132230,
+            "sha256": "04936e955c2c2a8250cff9d15e55a30cbb532df46ce317e3081d3afe895549ee",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-coustellet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-coustellet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21452,
+            "sha256": "cf092827e7ad13d13d7ab2465e68daba8d81d547ec623d88d429e0672262d8ef",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2164647
+    },
+    {
+      "imageId": "luberon-roussillon-ocres-01",
+      "placeId": "roussillon-sentier-des-ocres",
+      "title": "Roussillon Vaucluse sentier des ocres 2013 08.jpg",
+      "titleKo": "루시용 황토 절벽",
+      "description": "Sentier des ocres de Roussillon (Vaucluse)",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Roussillon_Vaucluse_sentier_des_ocres_2013_08.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Roussillon_Vaucluse_sentier_des_ocres_2013_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "François de Dijon",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 7750,
+      "originalHeight": 6510,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-roussillon-ocres-01.jpg",
+      "originalSha256": "19f0aac710db0664d5cd516f25b5144b07be79afbbaf848214761901b7b65700",
+      "usage": [
+        "places/roussillon-sentier-des-ocres.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "소나무 사이로 솟은 루시용의 붉은 황토 절벽 — 아래 오솔길의 사람들이 절벽의 규모를 보여준다",
+      "captionKo": "상티에 데 조크르의 황토 절벽. 오른쪽 아래 사람들과 견주면 규모가 보인다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-roussillon-ocres-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-roussillon-ocres-01-content-1280.webp",
+            "width": 1280,
+            "height": 1075,
+            "bytes": 235358,
+            "sha256": "910e2c7b29ab4af37ad9ca353fb360fd72c653201860bdcc800e4686820c9a0b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-roussillon-ocres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-roussillon-ocres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24716,
+            "sha256": "ea8e7281c6a6d15466c4789db173eff6d736f78d3cdc8d40ffa04e989eb9beb7",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 3360,
+      "originalBytes": 5146932
+    },
+    {
+      "imageId": "avignon-les-halles-01",
+      "placeId": "les-halles",
+      "title": "Marché sur la place Pie d'Avignon, tournesols et patissons.jpg",
+      "titleKo": "플라스 피의 노천 시장",
+      "description": "Marché sur la place Pie d'Avignon, tournesols et patissons",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:March%C3%A9_sur_la_place_Pie_d%27Avignon,_tournesols_et_patissons.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/c3/March%C3%A9_sur_la_place_Pie_d%27Avignon%2C_tournesols_et_patissons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "levork",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 4000,
+      "originalHeight": 3000,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-les-halles-01.jpg",
+      "originalSha256": "44dccf2e083930471139673f8355adbbbcc6e190df420c3a44c2f548b263db4b",
+      "usage": [
+        "places/les-halles.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아비뇽 플라스 피 노천 좌판 — 해바라기 다발과 호박, 감자, 초가을 채소",
+      "captionKo": "레알 앞 플라스 피의 노천 좌판. 9월 하순 촬영 — 방문 시기의 계절감 그대로다.",
+      "focus": {
+        "x": 0.6,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-les-halles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-les-halles-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 208006,
+            "sha256": "7b0b1baba3d3ac565ab5b0a62692c29a9154c45924406573e7863159f9e2305f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-les-halles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-les-halles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 38206,
+            "sha256": "cbd34bc541479a84a6399932af7cef868a2c4b581b2717ca89c999a7aa7199c8",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 3646340
+    },
+    {
+      "imageId": "avignon-arles-01",
+      "placeId": "arles",
+      "title": "Arles-Vue depuis les Arènes-bjs180820-04.jpg",
+      "titleKo": "원형경기장에서 본 아를",
+      "description": "Aussicht vom Nordturm des Amphitheaters von Arles aus nach Nordnordwesten mit der Kirche Saint-Julien und der Rhone",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Arles-Vue_depuis_les_Ar%C3%A8nes-bjs180820-04.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Arles-Vue_depuis_les_Ar%C3%A8nes-bjs180820-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Bjs",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 4619,
+      "originalHeight": 3080,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-arles-01.jpg",
+      "originalSha256": "6aa7907057eec508b8216008d5525e9af0be43308419ef55a294eb49d527d695",
+      "usage": [
+        "places/arles.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "원형경기장 북탑에서 본 아를 — 기와지붕 물결과 생쥘리앵 교회, 뒤로 론강",
+      "captionKo": "원형경기장 북탑에서 본 아를 구시가. 기와지붕 너머로 론강이 흐른다.",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 145126,
+            "sha256": "6506b4f6b528c18b85833287143cd78815d7ff2ef78393b7d9b883b6601afd46",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23788,
+            "sha256": "5c289c654d3fb55279dfad674caa63ea50d1fb8bd8cbcd8ef451deea33e90c2a",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "originalBytes": 3246197
+    },
+    {
+      "imageId": "avignon-arenes-arles-01",
+      "placeId": "arenes-d-arles",
+      "title": "Les Arènes, Arles, Provence.jpg",
+      "titleKo": "아를 원형경기장",
+      "description": "Amfiteátr v Arles",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Les_Ar%C3%A8nes,_Arles,_Provence.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Les_Ar%C3%A8nes%2C_Arles%2C_Provence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Pimlico27",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 5472,
+      "originalHeight": 3648,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-arenes-arles-01.jpg",
+      "originalSha256": "5617181192d1678cadc9d5a85cecfb1a3e4218e7e03db1293fc283dbeae65294",
+      "usage": [
+        "places/arenes-d-arles.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아침 빛의 아를 원형경기장 — 2층 아치 회랑과 중세의 방어탑",
+      "captionKo": "아를 원형경기장. 아치 위에 솟은 사각 탑은 중세에 요새로 쓰이던 흔적이다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-arenes-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-arenes-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 86004,
+            "sha256": "9efbed1b66b881525a3d2378aa2ad9cf27890e560e34f1d35ec4e36b110d2c1c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-arenes-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-arenes-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13402,
+            "sha256": "d8e6aed7b6d5690dee12d8f32f572c1d7e6c5cbef44915647214ace6bf2738d9",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "originalBytes": 2776958
+    },
+    {
+      "imageId": "avignon-theatre-antique-01",
+      "placeId": "theatre-antique-arles",
+      "title": "Roman theatre, Arles - panoramio.jpg",
+      "titleKo": "아를 고대 극장",
+      "description": "Roman theatre, Arles",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Roman_theatre,_Arles_-_panoramio.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Roman_theatre%2C_Arles_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "PJMarriott",
+      "license": "CC BY 3.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 3240,
+      "originalHeight": 2160,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-theatre-antique-01.jpg",
+      "originalSha256": "03f4cd090623d29c6f4a74f3a914bf5c3f845032aacb85847506af69c797efc5",
+      "usage": [
+        "places/theatre-antique-arles.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아를 고대 극장 — 반원형 객석과 무대 터, 홀로 남은 두 개의 기둥",
+      "captionKo": "고대 극장의 객석과 무대 터. 홀로 선 두 기둥이 무대벽의 전부다.",
+      "focus": {
+        "x": 0.55,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-theatre-antique-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-theatre-antique-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 138068,
+            "sha256": "03c9b8c45c8ebe0120ecf40fd9a64d0fe71c2df45e6dae194b297ea14fbf4448",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-theatre-antique-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-theatre-antique-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20928,
+            "sha256": "7aa7e6d512b8e9cf77fef526e675b15224b03c7bde887c593a1f17a9f8fc5682",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 984298
+    },
+    {
+      "imageId": "paris-montmartre-sopi-01",
+      "placeId": "montmartre-south-pigalle",
+      "title": "L'escalier de droite menant à la Basilique de Montmartre - GT 03 - 2024.jpg",
+      "titleKo": "사크레쾨르로 오르는 계단",
+      "description": "The staircase on the right leading to the Basilic of Montmartre.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:L%27escalier_de_droite_menant_%C3%A0_la_Basilique_de_Montmartre_-_GT_03_-_2024.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/78/L%27escalier_de_droite_menant_%C3%A0_la_Basilique_de_Montmartre_-_GT_03_-_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Terragio67",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-15",
+      "originalWidth": 5480,
+      "originalHeight": 7161,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-montmartre-sopi-01.jpg",
+      "originalSha256": "a2e0c81bbff3fb3b22c65e9bbc3f3eb5088909733bce417ac8fc46d23b0a443a",
+      "usage": [
+        "places/montmartre-south-pigalle.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "몽마르트르 언덕 잔디밭 사이 계단 위로 솟은 사크레쾨르 대성당의 흰 돔",
+      "captionKo": "사크레쾨르로 오르는 계단. 언덕 잔디밭이 동네의 거실 노릇을 한다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-montmartre-sopi-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-montmartre-sopi-01-content-1280.webp",
+            "width": 1280,
+            "height": 1673,
+            "bytes": 251728,
+            "sha256": "54ca0682bf1b593549b0b904ae9fbe5cd51a8e87dff0b46cbd6da26b0f7a0309",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-montmartre-sopi-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-montmartre-sopi-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17244,
+            "sha256": "1ab942e6fefa30614345ba13966048b3a7173d2cbe1a9397e3dbd23d61c6ed1a",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 3061,
+      "storedHeight": 4000,
+      "originalBytes": 3820136
     }
   ],
-  "processedAt": "2026-08-07"
+  "processedAt": "2026-08-15"
 }
