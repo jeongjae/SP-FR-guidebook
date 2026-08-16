@@ -454,8 +454,12 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 | 항목 | 내용 |
 |---|---|
 | 역 | Gare de Lyon-Part-Dieu |
+| 열차 | **확정(Jeongjae) — TGV INOUI 6618 · 9/24 목 13:04 Part-Dieu → 15:00 Paris Gare de Lyon** (1시간 56분) |
+| 좌석 | 1등석 · 13호차(위층) 356번 · Duo Côte à Côte · 예약번호 X6CVW5 · €64 (Trip.com 발권) |
+| ⚠ 승차권 | **Julia 승차권은 이 예약서에 없다** — 별도 발권·동일 열차 여부 확인 {{badge:pending|Julia 승차권 확인}} |
 | ⚠ | 리옹에는 **Part-Dieu**와 **Perrache** 두 주요 역이 있다. 승차역 확인 |
-| 짐 | 4박치 + 43일 여행 누적. 이동 동선 미리 확인 |
+| 짐 | 4박치 + 43일 여행 누적. 1인 최대 캐리어 2개(90×70×50cm) + 손가방 1개, **이름표 부착 의무** (SNCF). 출발 2분 전 탑승 마감 |
+| 환불·변경 | D-7까지 무료 환불·교환, D-6부터 출발 전까지 수수료 €19 (발권서 기준) |
 | 완충 | 60분 이상 |
 
 > **알 폴 보퀴즈가 파르디외 역에서 도보 5분이다.**
@@ -480,7 +484,7 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 |---|---|
 | 체류 | 2026년 9월 20일 일요일 15:00 체크인 → 9월 24일 목요일 11:00 체크아웃, 4박 |
 | 숙소 | **확정(2026-08-14)** — Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas, 69003 Lyon · +33 4 81 76 28 00 · €433.82 · booking.com 5882.730.884 |
-| 이동 | 9/20 Avignon TGV역 렌터카 반납 → Lyon Part-Dieu TGV. 9/24 Lyon→Paris TGV |
+| 이동 | 9/20 Avignon TGV역 렌터카 반납 → Lyon Part-Dieu TGV. 9/24 Lyon→Paris **TGV INOUI 6618 13:04→15:00 (Jeongjae 확정 X6CVW5 · Julia 승차권 확인 필요)** |
 | 여행 주제 | Fourvière 지형 · Vieux Lyon과 traboules · Presqu’île 광장과 강변 · Croix-Rousse 비단동네 · Lyon 음식 · Annecy 호수도시 |
 | 실제 숙소권 | **Monplaisir (3구 동쪽)** — 아래 1·2순위 권역이 아니다. 메트로 D 의존 동선으로 운영한다 |
 | 숙박 형태 | 아파트호텔(주방 포함)로 확정. 야간 프런트·엘리베이터·객실금고·밝은 귀가동선은 체크인 때 확인 {{badge:pending|현장 확인}} |
