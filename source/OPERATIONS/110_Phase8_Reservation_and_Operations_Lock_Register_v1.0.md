@@ -36,6 +36,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금
 - 채널: Airbnb · 예약코드 HM2YPHDRW5
 - 가격: €330
 - 표시명: 바스카라의 B&B
+- 예약서 리스팅명·호스트: Torre de Báscara · Luc +34 622 66 14 31 (2026-08 예약서)
 - 주소: Plaça de l'Església, 6, 17483 Bàscara
 - 여행자: Jason·Julia
 - 결제조건·주차·조식·취소조건: 재확인
