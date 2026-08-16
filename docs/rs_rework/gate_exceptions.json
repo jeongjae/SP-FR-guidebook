@@ -1,0 +1,12 @@
+{
+  "description": "게이트 4(창작 스캔)의 명시적 예외. 사용자가 확정한 값만 등재하며, 게이트 실행 시 항상 로그에 출력된다. 지역명 하드코딩이 아니라 결정 단위로 관리한다.",
+  "exceptions": [
+    {
+      "file": "05_Girona_Collioure_Emporda_v2.1.md",
+      "tokens": ["4/5", "3/5"],
+      "reason": "Day 5(9/2)=4/5, Day 6(9/3)=3/5 — main 원고에 피로도 값이 없던 자리. 총괄 지시문 사전확정 결정 2(사용자 확정)에 따라 기입하고 day-05·06.json 을 동기화했다.",
+      "decided": "2026-08-17",
+      "source": "RS_RESTRUCTURE_FINAL_RUN_INSTRUCTION_v1.0 사전확정 2"
+    }
+  ]
+}

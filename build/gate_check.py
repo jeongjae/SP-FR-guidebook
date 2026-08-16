@@ -106,14 +106,30 @@ def gate3_verbatim(name):
     return rate, miss, len(body)
 
 
+def load_exceptions(name):
+    """게이트 4의 명시적 예외 (사용자 확정값). 항상 로그에 노출한다."""
+    import json
+    path = ROOT / "docs/rs_rework/gate_exceptions.json"
+    if not path.exists():
+        return [], []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    toks, notes = [], []
+    for e in data.get("exceptions", []):
+        if e.get("file") == name:
+            toks.extend(e.get("tokens", []))
+            notes.append(f"{', '.join(e.get('tokens', []))} — {e.get('reason', '')}")
+    return toks, notes
+
+
 def gate4_invention(name, miss):
     """미소급 행 중 사실값을 담았고, 그 사실값이 main 어디에도 없는 것."""
     old = main_text(name)
     oldn = norm(old)
+    allowed, _ = load_exceptions(name)
     found = []
     for line in miss:
         for tok in set(FACT_RE.findall(line)):
-            if not tok or len(tok) < 2:
+            if not tok or len(tok) < 2 or tok in allowed:
                 continue
             if tok not in old and norm(tok) not in oldn:
                 found.append((tok, line))
@@ -181,6 +197,8 @@ def run(names, build_only=False):
         inv = gate4_invention(name, miss)
         g4 = not inv
         print(f"  게이트 4 창작  : {'PASS' if g4 else 'FAIL'} · 신규 사실값 {len(inv)}건")
+        for note in load_exceptions(name)[1]:
+            print(f"      ※ 사용자 확정 예외: {note}")
         for tok, line in inv[:10]:
             print(f"      · '{tok}' ← {line[:90]}")
 
