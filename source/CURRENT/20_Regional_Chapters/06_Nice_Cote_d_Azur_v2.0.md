@@ -19,13 +19,12 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ## Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계
 
 | 항목 | 평가 |
-|---|---|
+|---|--- |
 | 여행 적합도 | ★★★★★ Jason·Julia의 생활형 여행에 최적화 |
 | 예산 체감 | 중상 |
 | 일정 강도 | 당일치기 2회 + 회복일 |
 | 예약 핵심 | TER 기차 이동 유연 · NCE 렌터카 P0 |
 | 우천 전환 | Nice 미술관 1곳 and 시장·카페 중심 |
-
 니스는 화려함 뒤에 숨은 생생한 삶의 현장이 매력적인 지중해 생활도시이다. 이번 5박 일정은 명소 위주의 분주한 질주를 멈추고, 니스에 거점을 둔 채 칸(Cannes)과 모나코(Monaco)를 기차로 다녀오는 최적의 방사형 여정을 제안한다. 특히 장기 여행 11일 차에 배치된 생활·회복일은 누적된 피로를 털어내고 프로방스 렌터카 이동을 준비하는 완벽한 완충 구간이다.
 
 ## 꼭 경험할 세 장면
@@ -80,7 +79,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ## 도착·출발·지역 내 교통
 
 - **공항 도착**: 니스 코트다쥐르 공항에서 시내 진입 시 **트램 2호선(Ligne 2)**을 이용해 숙소 근처 정거장에서 내린다. 단발권은 €1.80이며, 도시 이동이 잦은 날은 1일권(€5.00)이 경제적이다.
-- **철도 당일치기**: 칸과 모나코는 니스-빌(Nice-Ville) 역에서 **TER 열차**를 이용한다. 칸 약 35–40분, 모나코 약 20–25분이다 {{badge:pending|시각·요금 공식 확인}}. 모나코 시내 이동 시 오르막 도보가 부담되면 시내버스를 활용한다.
+- **철도 당일치기**: 칸과 모나코는 니스-빌(Nice-Ville) 역에서 **TER 열차**를 이용한다. 칸 약 35–40분, 모나코 약 20–25분이다 {{badge:unverified|시각·요금 공식 확인}}. 모나코 시내 이동 시 오르막 도보가 부담되면 시내버스를 활용한다.
 - **렌터카 인수**: **Day 12(9/9) 오전 09:00**, Nice-Ville 역 Hertz 영업소(Avenue Thiers)에서 자동변속 컴팩트 차량을 인수해 그라스를 거쳐 프로방스로 이동한다. 생폴드방스는 9/8 당일치기로 옮겼다(DEC-A03).
 
 ## 핵심 셀프가이드
@@ -88,8 +87,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 이 구역의 셀프 가이드는 아래 11개 세부 항목을 정본으로 삼는다.
 
 #### Promenade des Anglais {{grade:essential|필수}}
-> **요금** {{fact:promenade-des-anglais.price_adult}} · **운영** {{fact:promenade-des-anglais.hours}} · **휴관** {{fact:promenade-des-anglais.closed}}
-> **예약** {{fact:promenade-des-anglais.booking}} · **소요** {{fact:promenade-des-anglais.duration}} · **가는 법** {{fact:promenade-des-anglais.getting_there}}
+> **운영** {{fact:promenade-des-anglais.hours}} · **휴관** {{fact:promenade-des-anglais.closed}}
+> **예약** {{fact:promenade-des-anglais.booking}} · **소요** {{fact:promenade-des-anglais.duration}}
 
 니스를 상징하는 7km의 평탄한 해안 대로다. 단순한 관광 도로가 아닌 니스 시티 라이프의 심장부다.
 - **왜 가는가**: 지중해의 파란 수평선을 바라보며 평지를 걷는 것만으로도 시차 적응과 피로 회복에 좋다.
@@ -97,8 +96,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **실무 안내**: 자전거 및 롤러블레이드 전용 차선과 보행자 도로가 명확히 분리되어 있으므로 산책 시 충돌에 유의해야 한다. 해변 근처 공용 벤치에 잠시 앉아 바다 소리를 듣는 것 자체가 니스의 대표 경험이다.
 
 #### Cours Saleya {{grade:essential|필수}}
-> **요금** {{fact:cours-saleya.price_adult}} · **운영** {{fact:cours-saleya.hours}} · **휴관** {{fact:cours-saleya.closed}}
-> **예약** {{fact:cours-saleya.booking}} · **소요** {{fact:cours-saleya.duration}} · **가는 법** {{fact:cours-saleya.getting_there}}
+> **운영** {{fact:cours-saleya.hours}} · **휴관** {{fact:cours-saleya.closed}}
+> **예약** {{fact:cours-saleya.booking}} · **소요** {{fact:cours-saleya.duration}}
 
 구시가지 진입로에 늘어선 니스의 대표 시장 광장이다.
 - **왜 가는가**: 남프랑스의 제철 과일, 올리브, 치즈와 꽃들이 늘어서 있어 오감으로 니스 요리의 원재료를 만나는 곳이다.
@@ -107,7 +106,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### Colline du Château (성채 언덕) {{grade:essential|필수}}
 > **요금** {{fact:colline-du-chateau.price_adult}} · **운영** {{fact:colline-du-chateau.hours}} · **휴관** {{fact:colline-du-chateau.closed}}
-> **예약** {{fact:colline-du-chateau.booking}} · **소요** {{fact:colline-du-chateau.duration}} · **가는 법** {{fact:colline-du-chateau.getting_there}}
+> **예약** {{fact:colline-du-chateau.booking}} · **소요** {{fact:colline-du-chateau.duration}}
 
 구시가지와 항구 사이에 92m 높이로 솟은 공원 전망대다.
 - **왜 가는가**: 니스 요새가 있던 자리로, 현재 요새는 철거되었으나 니스 해안선의 부드러운 곡선과 구시가지의 지붕들을 한눈에 전망할 수 있는 독보적 위치다.
@@ -115,8 +114,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **실무 안내**: 벨랑다 탑 옆에 위치한 무료 공공 엘리베이터를 타면 5분 만에 수월하게 오를 수 있으며, 하산 시 계단을 이용하면 다양한 각도에서 뷰를 즐길 수 있다.
 
 #### Vieux Nice — 구시가지 {{grade:essential|필수}}
-> **요금** {{fact:vieux-nice.price_adult}} · **운영** {{fact:vieux-nice.hours}} · **휴관** {{fact:vieux-nice.closed}}
-> **예약** {{fact:vieux-nice.booking}} · **소요** {{fact:vieux-nice.duration}} · **가는 법** {{fact:vieux-nice.getting_there}}
+> **운영** {{fact:vieux-nice.hours}} · **휴관** {{fact:vieux-nice.closed}}
+> **예약** {{fact:vieux-nice.booking}} · **소요** {{fact:vieux-nice.duration}}
 
 파스텔톤 주황빛 벽면과 녹색 덧창이 특징인 니스의 역사적 삼각형 도심 구역이다.
 - **왜 가는가**: 1860년 병합 전까지 이탈리아 사보이 백작령의 통치를 500년간 받았던 역사적 지문이 골목과 대성당에 그대로 남아 있어 이탈리아 문화를 강하게 환기시킨다.
@@ -130,8 +129,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **실무 안내**: 시장 통로가 협소하므로 백팩보다는 숄더백이 이동하기 편리하며, 상인에게 간단한 동의를 구한 뒤 시식이나 촬영을 진행하는 것이 좋다.
 
 #### Le Suquet — 칸 구시가지 {{grade:essential|필수}}
-> **요금** {{fact:le-suquet-cannes.price_adult}} · **운영** {{fact:le-suquet-cannes.hours}} · **휴관** {{fact:le-suquet-cannes.closed}}
-> **예약** {{fact:le-suquet-cannes.booking}} · **소요** {{fact:le-suquet-cannes.duration}} · **가는 법** {{fact:le-suquet-cannes.getting_there}}
+> **운영** {{fact:le-suquet-cannes.hours}} · **휴관** {{fact:le-suquet-cannes.closed}}
+> **예약** {{fact:le-suquet-cannes.booking}} · **소요** {{fact:le-suquet-cannes.duration}}
 
 11세기 요새가 세워지며 칸의 역사가 시작된 언덕 마을이다.
 - **왜 가는가**: 크루아제트 대로의 화려한 리조트 호텔 파사드를 보기 전, 칸이 본래 작고 한적한 어촌이었다는 원시적 풍경을 가장 잘 보여주는 역사적 지점이다.
@@ -139,8 +138,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **관람 포인트**: 가파르고 좁은 계단길(Rue Saint-Antoine)을 올라 정상의 노트르담 드 레스페랑스 성당 광장에 서면 칸 구항구와 바다가 극적으로 조망된다.
 
 #### Le Rocher — 모나코 구시가지 {{grade:essential|필수}}
-> **요금** {{fact:le-rocher.price_adult}} · **운영** {{fact:le-rocher.hours}} · **휴관** {{fact:le-rocher.closed}}
-> **예약** {{fact:le-rocher.booking}} · **소요** {{fact:le-rocher.duration}} · **가는 법** {{fact:le-rocher.getting_there}}
+> **운영** {{fact:le-rocher.hours}} · **휴관** {{fact:le-rocher.closed}}
+> **예약** {{fact:le-rocher.booking}} · **소요** {{fact:le-rocher.duration}}
 
 지중해로 60m 솟아오른 거대한 바위 절벽 위에 조성된 모나코 대공국의 심장부다.
 - **왜 가는가**: 대공궁, 대성당, 정부청사가 밀집한 바위 위 마을로, 영토 전체가 한 동네 크기인 소국의 독특한 정치적, 공간적 상징성을 체감할 수 있는 곳이다.
@@ -148,7 +147,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **실무 안내**: 기차역에서 바위 위까지는 오르막 경사가 심하므로 역사 내 공공 엘리베이터와 터널 통로를 활용해 수평 이동하는 경로를 반드시 파악해 두어야 한다.
 
 #### Marché de la Libération {{grade:priority|우선추천}}
-> 📍 {{fact:marche-de-la-liberation.address}} · 🚶 {{fact:marche-de-la-liberation.getting_there}} · 🕐 {{fact:marche-de-la-liberation.hours}} · 휴무 {{fact:marche-de-la-liberation.closed}} · {{fact:marche-de-la-liberation.booking}} · {{fact:marche-de-la-liberation.price_range}}
+> 🕐 {{fact:marche-de-la-liberation.hours}} · 휴무 {{fact:marche-de-la-liberation.closed}} · {{fact:marche-de-la-liberation.booking}}
 
 니스 제네랄 드골 광장에 서는 넓고 쾌적한 니스 현지인들의 생활형 시장이다.
 - **왜 가는가**: 관광객 위주의 쿠르 살레야와 달리, 합리적인 가격의 과일, 야채, 식료품이 가득하여 니스 주민의 진짜 일상과 부엌을 엿볼 수 있는 공간이다.
@@ -157,7 +156,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### Nice Old Town–Castle Hill Walk {{grade:essential|필수}}
 > **요금** {{fact:nice-old-town-castle-hill-walk.price_adult}} · **운영** {{fact:nice-old-town-castle-hill-walk.hours}} · **휴관** {{fact:nice-old-town-castle-hill-walk.closed}}
-> **예약** {{fact:nice-old-town-castle-hill-walk.booking}} · **소요** {{fact:nice-old-town-castle-hill-walk.duration}} · **가는 법** {{fact:nice-old-town-castle-hill-walk.getting_there}}
+> **예약** {{fact:nice-old-town-castle-hill-walk.booking}}
 
 *   **추천 대상**: 니스의 활기찬 아침 시장과 유서 깊은 구시가지 골목을 지나 성채 언덕의 지중해 파노라마 조망까지 한 번에 완료하고 싶은 여행자.
 *   **경로 개요**: Cours Saleya (출발) → Place Rossetti (Sainte-Réparate 대성당) → Rue Droite (Palais Lascaris) → Castle Hill Elevator → Colline du Château 공원 및 인공폭포 → Bellanda Tower 계단 → Promenade des Anglais (도착).
@@ -171,8 +170,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
     5. **벨랑다 탑**: 해변으로 굽어지는 웅장한 해안선(Promenade) 뷰를 확인하며 계단으로 내려온다.
 
 #### Cannes Forville–Suquet–Croisette Walk {{grade:essential|필수}}
-> **요금** {{fact:cannes-forville-suquet-croisette-walk.price_adult}} · **운영** {{fact:cannes-forville-suquet-croisette-walk.hours}} · **휴관** {{fact:cannes-forville-suquet-croisette-walk.closed}}
-> **예약** {{fact:cannes-forville-suquet-croisette-walk.booking}} · **소요** {{fact:cannes-forville-suquet-croisette-walk.duration}} · **가는 법** {{fact:cannes-forville-suquet-croisette-walk.getting_there}}
+> **운영** {{fact:cannes-forville-suquet-croisette-walk.hours}} · **휴관** {{fact:cannes-forville-suquet-croisette-walk.closed}}
+> **예약** {{fact:cannes-forville-suquet-croisette-walk.booking}}
 
 *   **추천 대상**: 영화제의 현대적인 화려함을 목격하기 전, 칸의 소박하고 역사 깊은 옛 어촌 지형을 체계적으로 걷고 싶은 여행자.
 *   **경로 개요**: Cannes역 (출발) → Marché Forville → Le Suquet (Rue Saint-Antoine 계단길) → Notre-Dame d'Espérance 성당 (전망대) → Vieux-Port → Palais des Festivals → La Croisette (도착).
@@ -186,15 +185,15 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
     5. **Palais des Festivals**: 영화제의 상징인 붉은 카펫에서 가벼운 촬영 후 해변 대로를 걷는다.
 
 #### Monaco Rocher–Port–Monte Carlo Walk {{grade:essential|필수}}
-> **요금** {{fact:monaco-rocher-port-monte-carlo-walk.price_adult}} · **운영** {{fact:monaco-rocher-port-monte-carlo-walk.hours}} · **휴관** {{fact:monaco-rocher-port-monte-carlo-walk.closed}}
-> **예약** {{fact:monaco-rocher-port-monte-carlo-walk.booking}} · **소요** {{fact:monaco-rocher-port-monte-carlo-walk.duration}} · **가는 법** {{fact:monaco-rocher-port-monte-carlo-walk.getting_there}}
+> **운영** {{fact:monaco-rocher-port-monte-carlo-walk.hours}} · **휴관** {{fact:monaco-rocher-port-monte-carlo-walk.closed}}
+> **예약** {{fact:monaco-rocher-port-monte-carlo-walk.booking}}
 
-> **요금** {{fact:monaco.price_adult}} · **운영** {{fact:monaco.hours}} · **휴관** {{fact:monaco.closed}}
-> **예약** {{fact:monaco.booking}} · **소요** {{fact:monaco.duration}} · **가는 법** {{fact:monaco.getting_there}}
+> **운영** {{fact:monaco.hours}} · **휴관** {{fact:monaco.closed}}
+> **예약** {{fact:monaco.booking}} · **소요** {{fact:monaco.duration}}
 
 *   **추천 대상**: 요새 유적부터 포뮬러 1 서킷이 열리는 해안 도로, 몬테카를로의 카지노 구역까지 모나코의 세 가지 핵심 레이어를 수직적으로 하강하며 통과하고 싶은 여행자.
 *   **경로 개요**: Monaco-Monte-Carlo역 (출발) → Place du Palais (대공궁 광장) → Monaco Cathedral → Rampe Major 돌계단 → Port Hercule → F1 GP Start/Finish Line → Casino Square (도착).
-*   **소요 시간**: {{badge:pending|정차점 실측 소요 확인}}
+*   **소요 시간**: {{badge:unverified|정차점 실측 소요 확인}}
 *   **최적 시간대**: 오전 10:30 - 12:30 (정오의 대공궁 위병 교대식 관람 동선 최적화).
 *   **도보 경로 및 관찰 지점**:
     1. **대공궁 광장**: 11:55 위병 교대식을 관람하고 절벽 아래 항구를 내려다본다.
@@ -218,7 +217,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 - **근교 대체안**:
   - **Villefranche-sur-Mer**: 니스 바로 옆 만. 기차로 몇 분이면 닿아 가볍게 다녀올 수 있는 바다 산책 대안이다.
-  - **Èze Village**: 절벽 위 중세 마을. 니스에서 Lignes d'Azur 버스로 접근한다 — 단발권 **€1.80** 체계 {{badge:pending|버스 편·소요시간 출발 전 재확인}}.
+  - **Èze Village**: 절벽 위 중세 마을. 니스에서 Lignes d'Azur 버스로 접근한다 — 단발권 **€1.80** 체계 {{badge:field-recheck|버스 편·소요시간 출발 전 재확인}}.
 - **우천 대안**:
   - 니스 도시일이나 칸 당일치기 시 비가 오면 실외 도보(Castle Hill, Croisette)를 대폭 생략하고, 니스 시내의 **Matisse Museum** (수~월 10:00-18:00, 화요일 휴관, €12) 또는 **Chagall Museum** (화요일 휴관) 실내 관람으로 빠르게 전환한다.
 - **피로 누적 시**:
@@ -241,14 +240,13 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **Monaco 위병 교대식**: {{fact:monaco.note}} — 궁정 행사에 따라 변동 가능하므로 방문 당일 아침 모나코 관광청 공식 사이트에서 재확인한다.
 
 | 항목 | 상태 |
-|---|---|
-| 트램·기차 요금 체계·티켓 각인 규정 | **복수 출처 확인** — Lignes d'Azur 단발권 **€1.80**(1시간 내 버스·트램 환승 무제한), 10회권 €12.60, **1일권 €5**, 7일권 €15, 월정기 €40(26세 미만 €20). **각인(validation)은 의무이고 환승·차량 교체 때마다 매번 찍어야 한다.** 차내 또는 승강장 단말기에서 한다. **도시 이동이 잦은 날은 1일권 €5 가 유리하다.** 출처: lignesdazur.com · 니스시 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
-| 에즈·빌프랑슈·마티스·샤갈 상세 | **복수 출처 확인** — **마티스 미술관**(164 av. des Arènes de Cimiez) 4–9월 **화요일 휴관, 10:00–18:00**, €12(18세 미만·학생·구직자 무료). **샤갈 국립미술관**도 **화요일 휴관**이고, 「Chagall at Work」 2부가 **2026/5/23–9/21** 이라 **니스 체류(9/4–9/9)가 회기 안**이다. 참고로 **Villa Ephrussi de Rothschild**(생장캅페라)는 연중무휴 10:00–18:00, €18/€12. **두 미술관이 같은 화요일에 쉬므로 화요일에 미술관 날을 잡으면 안 된다.** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
-
+|---|--- |
+| 트램·기차 요금 체계·티켓 각인 규정 | **복수 출처 확인** — Lignes d'Azur 단발권 **€1.80**(1시간 내 버스·트램 환승 무제한), 10회권 €12.60, **1일권 €5**, 7일권 €15, 월정기 €40(26세 미만 €20). **각인(validation)은 의무이고 환승·차량 교체 때마다 매번 찍어야 한다.** 차내 또는 승강장 단말기에서 한다. **도시 이동이 잦은 날은 1일권 €5 가 유리하다.** 출처: lignesdazur.com · 니스시 {{badge:field-recheck|2026-08 확인 · 출발 전 재확인}} |
+| 에즈·빌프랑슈·마티스·샤갈 상세 | **복수 출처 확인** — **마티스 미술관**(164 av. des Arènes de Cimiez) 4–9월 **화요일 휴관, 10:00–18:00**, €12(18세 미만·학생·구직자 무료). **샤갈 국립미술관**도 **화요일 휴관**이고, 「Chagall at Work」 2부가 **2026/5/23–9/21** 이라 **니스 체류(9/4–9/9)가 회기 안**이다. 참고로 **Villa Ephrussi de Rothschild**(생장캅페라)는 연중무휴 10:00–18:00, €18/€12. **두 미술관이 같은 화요일에 쉬므로 화요일에 미술관 날을 잡으면 안 된다.** {{badge:field-recheck|2026-08 확인 · 출발 전 재확인}} |
 ## 검증 상태 — 보강본 근거
 
 | 항목 | 상태 | 출처 및 근거 |
-|---|---|---|
+|---|---|--- |
 | 니스 역사 (1388 사보이 통치, 1860 프랑스 병합, 가리발디 생가) | 검증 완료 | 니스 시 역사 박물관 공식 기록 |
 | 1853년 자유항 폐지가 주민 투표 병합 찬성의 직접적 경제 원인 | 검증 완료 | 코트다쥐르 대학 역사 논문 |
 | 성채 요새 파괴 (1706년 루이 14세 철거 지시, 92m 높이) | 검증 완료 | 니스 성채 공원 안내 공식 보드 |
@@ -256,7 +254,6 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 마티스/샤갈 미술관 요금 및 화요일 휴관 조건 | 검증 완료 | 각 국립박물관 공식 연간 일정표 |
 | Lignes d'Azur 시내 교통 요금 (단발 €1.80, 10회권 €12.60, 1일권 €5.00, 월정기 €40) | 검증 완료 | lignesdazur.com 공식 요금표 |
 | Hertz 렌터카 예약 (Captur급, 편도 반납비 포함 €608.09) | 검증 완료 | Hertz 2026-08 예약 확인서 |
-
 ---
 
 ## 4. Day 1 — 9월 4일 금요일
@@ -275,12 +272,11 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 도착–+60분 | 공항 → 숙소 이동·체크인 | **12 Rue Verdi (Palais ALZIRA)** — Tram 2 또는 택시. 체크인 15:00부터 |
 | +60–+120분 | 짐 정리·근처 슈퍼 장보기 | 물, 요거트, 빵, 과일, 햄·치즈, 샐러드 |
 | 일몰 전 45–60분 | Masséna·Jardin Albert 1er·Promenade | 방향만 익히고 장거리 도보는 피함 |
 | 19:30 전후 | 가벼운 저녁 | 숙소권 캐주얼 식당 또는 숙소식 |
-
 #### 오늘 지도
 {{VISUAL:VIS-MAP-042|type=map|status=linked|strategy=execution-map}}
 
@@ -312,7 +308,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 07:20–08:05 | Jason 선택 러닝 | Promenade 5km 내외 |
 | 09:20–10:20 | **Cours Saleya** | 과일·올리브·치즈·꽃시장 |
 | 10:20–11:30 | **Vieux Nice** | [Nice Old Town–Castle Hill Walk](../../places/nice-walk.html) 시작 |
@@ -321,7 +317,6 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 13:30–16:00 | Promenade 또는 Port·카페 | 폭염이면 숙소휴식 |
 | 16:30–18:00 | 선택 | Port 또는 Garibaldi 중 1개 |
 | 19:30–21:00 | 전통 Nice 저녁 | **La Table Alziari** ({{fact:la-table-alziari.hours}}) 또는 **Chez Pipo** ({{fact:chez-pipo.hours}}) — Acchiardo 는 {{fact:acchiardo.closed}} 라 토요일 불가 |
-
 #### 오늘 지도
 {{VISUAL:VIS-MAP-042|type=map|status=linked|strategy=execution-map}}
 
@@ -354,7 +349,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:40 전후 | Nice-Ville → Cannes TER | 당일 운행 재확인 |
 | 09:30–10:20 | **Marché Forville** | [Cannes Forville–Suquet–Croisette Walk](../../places/cannes-walk.html) 시작. **개보수 중 — 기존 홀 주소로 가면 헛걸음이다** ({{fact:marche-forville.note}}) |
 | 10:20–11:20 | **Le Suquet** | 골목·전망 |
@@ -362,7 +357,6 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 12:00–13:00 | 가벼운 점심 | 시장식 또는 간단한 해산물 |
 | 13:00–15:40 | Palais·Croisette·해변 선택 | 쇼핑연장은 삭제 가능 |
 | 16:00 전후 | Nice 귀환 | 저녁 전 숙소휴식 |
-
 #### 오늘 지도
 {{VISUAL:VIS-MAP-043|type=map|status=linked|strategy=execution-map}}
 
@@ -395,7 +389,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:00 전후 | Nice-Ville → Monaco TER | 역내 엘리베이터·출구 확인 |
 | 10:15–12:30 | Monaco-Ville·Palace Square·Cathedral | [Monaco Rocher–Port–Monte Carlo Walk](../../places/monaco-walk.html) 시작 |
 | 12:40–13:30 | 가벼운 점심 | Old Town 또는 항구 |
@@ -403,7 +397,6 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 14:50–16:10 | Casino Square·Monte Carlo | 외관·정원 중심 |
 | 16:10–17:00 | Japanese Garden 또는 Larvotto | 둘 중 하나만 |
 | 17:20 전후 | Nice 귀환 | 저녁은 가볍게 |
-
 #### 오늘 지도
 {{VISUAL:VIS-MAP-044|type=map|status=linked|strategy=execution-map}}
 
@@ -436,7 +429,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 07:30–08:15 | Jason 선택 러닝 또는 늦잠 | 다리 피로가 있으면 완전휴식 |
 | 09:20–10:30 | **Marché de la Libération** | 실제 장보기·9/9 차량간식 준비 |
 | 10:45–12:30 | **Musée de la Photographie Charles Nègre 선택** | 화요일 10:00–18:00 운영. 피로하면 생략 |
@@ -445,7 +438,6 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 15:30–17:30 | 선택 모듈 | Promenade 카페, 해변산책, Julia 수영 중 1개 |
 | 17:30–18:30 | 9/9 준비 | 물·간식·면허·예약번호·주유/보험 확인 |
 | 19:30–21:00 | Nice 마지막 저녁 | 과식하지 않고 이동일 전 음주 최소화 |
-
 #### 오늘 지도
 {{VISUAL:VIS-MAP-045|type=map|status=linked|strategy=execution-map}}
 
@@ -478,7 +470,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:00–08:45 | 체크아웃·간단한 아침 | 체크아웃은 11:00까지 가능하지만 인수 시각에 맞춰 나온다. 차량용 물·간식 준비 |
 | 08:45–09:00 | Nice역(Avenue Thiers)까지 도보 | 숙소에서 약 1.2km — 짐이 많으면 택시 |
 | 09:00 | **Nice역 렌터카 인수** (Hertz L672E080313) | Nice Railway Station 영업소 (Avenue Thiers, +33 4 97 03 01 20 · 수요일 08:00 개점). 자동변속·보험·편도반납·차체촬영. 수속 30–60분. **영업소는 {{fact:hertz-nice-ville.closed}}** — 09:00 인수는 이 창을 피한다 |
@@ -488,7 +480,6 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 12:30–14:00 | **Grasse vieille ville** | 향수 시향 또는 짧은 공방 |
 | 14:30–17:00 | Grasse → Aix | A8 정체에 따라 변동 |
 | 17:00 이후 | Aix 체크인 | 다음 챕터의 Day 1로 연결 |
-
 #### 오늘 지도
 {{VISUAL:VIS-MAP-046|type=map|status=linked|strategy=execution-map}}
 

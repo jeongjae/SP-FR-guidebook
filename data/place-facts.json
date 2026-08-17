@@ -13,31 +13,6 @@
     "note": 90
   },
   "places": {
-    "2-30": {
-      "displayName": "시체스 2시간 30분 핵심 동선",
-      "region": "barcelona",
-      "grade": "essential",
-      "facts": {
-        "closed": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음 — 구성 시설별로 확인 필요"
-        },
-        "hours": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
-        },
-        "booking": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
-        }
-      }
-    },
     "a-d-aligre-butte-aux-cailles-convention-batignolles": {
       "displayName": "월요일 모듈 A–D (Aligre·Butte-aux-Cailles·Convention·Batignolles)",
       "region": "paris",
@@ -155,18 +130,17 @@
       "grade": "essential",
       "facts": {
         "note": {
-          "value": "Novel 시장은 목요일 전용 — 수요일 방문일 대안 불가",
+          "value": "Palais de l'Île·Musée-Château 는 화요일 휴관이다.",
           "confidence": "official",
-          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
-          "verified_at": "2026-08-16",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         },
         "closed": {
-          "value": "구시가지 거리는 연중무휴(공공 공간). 단 Palais de l'Île·Musée-Château는 화요일 휴관",
-          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
-          "verified_at": "2026-08-17",
+          "value": "구시가지 거리는 연중무휴 (공공 공간)",
           "confidence": "official",
-          "ttl_days": 90
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile"
         },
         "hours": {
           "value": "여름(6/1~9/30) 10:30~18:00 / 겨울(10/1~5/31) 10:00~12:30, 14:00~17:30. 9/23은 여름 시간 적용",
@@ -214,6 +188,43 @@
         }
       },
       "phone": "04 50 51 08 40"
+    },
+    "annecy-palais-de-l-ile": {
+      "displayName": "Palais de l'Île·Musée-Château (Annecy)",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "note": {
+          "value": "Novel 시장은 목요일 전용 — 수요일 방문일 대안 불가",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "화요일 휴관",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "여름(6/1~9/30) 10:30~18:00",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile"
+        },
+        "booking": {
+          "value": "구시가지 산책 예약 불필요. 박물관도 개인 방문 예약 불필요(단체 예약 04 85 46 76 78)",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 85 46 76 70",
+      "parent": "annecy"
     },
     "arc-de-triomphe-longchamp": {
       "displayName": "Prix de l'Arc de Triomphe (Longchamp)",
@@ -319,6 +330,82 @@
         }
       }
     },
+    "arles-la-roquette": {
+      "displayName": "La Roquette",
+      "region": "avignon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "60분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1588",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        }
+      }
+    },
+    "arles-theatre-antique": {
+      "displayName": "Théâtre antique",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "45분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1584",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        }
+      }
+    },
     "atelier-des-lauves": {
       "displayName": "Atelier des Lauves (Atelier de Cézanne)",
       "region": "aix",
@@ -395,9 +482,48 @@
           "ttl_days": 180,
           "verified_at": "2026-08-17",
           "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
+        },
+        "duration": {
+          "value": "75분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md L1400",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "address": {
+          "value": "Carrer de la Unió 17, 08001 Barcelona",
+          "source": "https://barcanete.com/contacto/",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       },
       "phone": "+34 932 703 458"
+    },
+    "barcelona-gracia": {
+      "displayName": "Gràcia 저녁 산책",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
+        }
+      }
     },
     "barri-gotic": {
       "displayName": "Barri Gòtic",
@@ -477,6 +603,13 @@
           "confidence": "unreachable",
           "blocked_reason": "공식 사이트 bnc.cat SSL 인증서 검증 실패",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "55분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md L1399",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+34 93 270 23 00"
@@ -542,6 +675,20 @@
           "ttl_days": 180,
           "verified_at": "2026-08-17",
           "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
+        },
+        "duration": {
+          "value": "90분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md L1378",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "address": {
+          "value": "Carrer del Rosselló 164, 08036 Barcelona",
+          "source": "https://www.bodegajoan.com/en",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       },
       "phone": "+34 93 220 47 56"
@@ -642,37 +789,21 @@
           "ttl_days": 90,
           "source": "https://cafecomptoirabel.com/",
           "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "90분",
+          "confidence": "editorial",
+          "source": "원고 10_Lyon_v2.0.md L987",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "address": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "cafecomptoirabel.com SSL 핸드셰이크 실패 (S2·S4 각 2회)",
+          "ttl_days": 730
         }
       }
-    },
-    "call": {
-      "displayName": "Call (유대인 지구)",
-      "region": "girona",
-      "grade": "priority",
-      "facts": {
-        "closed": {
-          "value": "유대인 지구 골목 자체는 상시 개방(공식 휴무 규정 없음). 지구 내 유대사 박물관은 1/1·1/6·12/25·12/26만 휴관",
-          "confidence": "unverified",
-          "ttl_days": 90,
-          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
-          "verified_at": "2026-08-17"
-        },
-        "hours": {
-          "value": "골목은 24시간 통행 가능(공식 시간 고지 없음). 유대사 박물관: 9/1~6/30 화~토 10:00-18:00, 월·일·공휴일 10:00-14:00",
-          "confidence": "unverified",
-          "ttl_days": 90,
-          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
-          "verified_at": "2026-08-17"
-        },
-        "booking": {
-          "value": "지구 산책은 예약 불필요. 박물관 입장료 6유로(할인 3유로), 사전예약 요구 규정 확인되지 않음",
-          "confidence": "unverified",
-          "ttl_days": 90,
-          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
-          "verified_at": "2026-08-17"
-        }
-      },
-      "phone": "+34 972 216 761"
     },
     "cannes-forville-suquet-croisette-walk": {
       "displayName": "Cannes Forville–Suquet–Croisette Walk",
@@ -680,10 +811,9 @@
       "grade": "essential",
       "facts": {
         "closed": {
-          "value": "도보 코스 자체는 공공 도로로 연중 개방. 단 구간별 휴무 있음 — 마르셰 포르빌은 9/1~6/30 월요일 휴장(월요일은 8~16시 브로캉트로 전환), 르 쉬케 정상 Musée des explorations du monde는 9월 월요일 휴관",
-          "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
-          "verified_at": "2026-08-17",
+          "value": "도보 코스 자체는 공공 도로로 연중 개방",
           "confidence": "official",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         },
         "hours": {
@@ -698,6 +828,12 @@
           "source": "https://www.cannes.com/fr/discover-cannes/marches-provencaux-et-brocantes.html",
           "verified_at": "2026-08-17",
           "confidence": "official",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "구간별 휴무가 있다 — 마르셰 포르빌 9/1~6/30 월요일 휴장 · 르 쉬케 정상 박물관 9월 월요일 휴관",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         }
       },
@@ -764,6 +900,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "address": {
+          "value": "Plaça de la Independència 5–6, 17001 Girona",
+          "source": "https://casamarieta.com/en/",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       },
       "phone": "+34 972 201 016"
@@ -1073,6 +1216,13 @@
           "ttl_days": 90,
           "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
           "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "60분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1586",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -1145,6 +1295,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "45–75분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L114",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "3906"
@@ -1245,6 +1402,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "45–60분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L105",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -1279,6 +1443,13 @@
           "confidence": "secondary",
           "ttl_days": 180,
           "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
+        },
+        "address": {
+          "value": "Place du marché, 84660 Maubec",
+          "source": "https://www.destinationluberon.com/savourer/marches/marche-paysan-de-coustellet",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       }
     },
@@ -1295,17 +1466,23 @@
           "ttl_days": 90
         },
         "closed": {
-          "value": "Maison des Canuts 일요일·월요일 휴관, 공휴일 휴관. Cour des Voraces 등 트라불은 연중무휴",
-          "source": "https://maisondescanuts.fr/",
-          "verified_at": "2026-08-17",
+          "value": "동네·트라불(Cour des Voraces 등) 연중무휴 — 트라불 매일 07:00~19:00",
           "confidence": "official",
-          "ttl_days": 90
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://maisondescanuts.fr/"
         },
         "booking": {
           "value": "동네 산책 자체는 예약 불필요. Maison des Canuts 가이드 투어만 예약 필수(온라인 maisondescanuts.mapado.com)",
           "source": "https://maisondescanuts.fr/",
           "verified_at": "2026-08-17",
           "confidence": "official",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "Maison des Canuts 는 일·월 휴관이다. 트라불 자체는 매일 연다.",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         }
       },
@@ -1514,6 +1691,13 @@
           "confidence": "secondary",
           "ttl_days": 180,
           "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
+        },
+        "duration": {
+          "value": "70분",
+          "confidence": "editorial",
+          "source": "원고 07_Aix_en_Provence_v2.0.md L1502",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+33 4 84 35 13 13"
@@ -1559,11 +1743,11 @@
       "grade": "essential",
       "facts": {
         "closed": {
-          "value": "바실리카 연중무휴. Lugdunum 박물관 월요일 휴관. 로마극장 연중무휴",
-          "source": "http://lugdunum.grandlyon.com/fr/",
-          "verified_at": "2026-08-17",
+          "value": "바실리카·로마극장·전망대 연중무휴",
           "confidence": "official",
-          "ttl_days": 90
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "http://lugdunum.grandlyon.com/fr/"
         },
         "hours": {
           "value": "바실리카 7:00~20:00(일요일 21:00), 크립트 8:30~18:30, 정원 6:30~22:30. Lugdunum 박물관 화~금 11:00~18:00, 토·일 10:00~18:00. 로마극장 5/2~9/30 7:00~21:00",
@@ -1584,9 +1768,44 @@
           "confidence": "secondary",
           "ttl_days": 180,
           "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
+        },
+        "note": {
+          "value": "Lugdunum 박물관은 월요일 휴관이라 9/21(월)에는 못 들어간다. 보려면 9/22(화)·9/23(수) 오후 — 선택 항목이고 새로 배정하지 않는다.",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
         }
       },
       "phone": "04 72 38 49 30"
+    },
+    "girona-call": {
+      "displayName": "Call (유대인 지구)",
+      "region": "girona",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "유대인 지구 골목 자체는 상시 개방(공식 휴무 규정 없음). 지구 내 유대사 박물관은 1/1·1/6·12/25·12/26만 휴관",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "골목은 24시간 통행 가능(공식 시간 고지 없음). 유대사 박물관: 9/1~6/30 화~토 10:00-18:00, 월·일·공휴일 10:00-14:00",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "지구 산책은 예약 불필요. 박물관 입장료 6유로(할인 3유로), 사전예약 요구 규정 확인되지 않음",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 972 216 761"
     },
     "girona-cathedral": {
       "displayName": "Girona Cathedral",
@@ -1646,6 +1865,12 @@
           "confidence": "unreachable",
           "blocked_reason": "fondation-monet.com 접속 실패 (2회 시도)",
           "ttl_days": 90
+        },
+        "address": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "fondation-monet.com 접속 실패 ECONNRESET (S2·S4)",
+          "ttl_days": 730
         }
       }
     },
@@ -1703,6 +1928,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "105분",
+          "confidence": "editorial",
+          "source": "원고 08_Luberon_Farmhouse_v2.0.md L1372",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -1742,31 +1974,6 @@
       },
       "phone": "04 90 04 73 52"
     },
-    "gracia": {
-      "displayName": "Gràcia 저녁 산책",
-      "region": "barcelona",
-      "grade": "priority",
-      "facts": {
-        "closed": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
-        },
-        "hours": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
-        },
-        "booking": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
-        }
-      }
-    },
     "grand-palais": {
       "displayName": "Grand Palais",
       "region": "paris",
@@ -1799,6 +2006,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "120분",
+          "confidence": "editorial",
+          "source": "원고 11_Paris_Long_Stay_v2.0.md L2176",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -1843,6 +2057,20 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "90분",
+          "confidence": "editorial",
+          "source": "원고 10_Lyon_v2.0.md L1080",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "address": {
+          "value": "102 Cours Lafayette, 69003 Lyon",
+          "source": "https://www.halles-de-lyon-paulbocuse.com/informations-utiles/",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       }
     },
@@ -2043,37 +2271,6 @@
       },
       "phone": "+34 972 634 172 / +34 606 911 243"
     },
-    "la-roquette": {
-      "displayName": "La Roquette",
-      "region": "avignon",
-      "grade": "priority",
-      "facts": {
-        "closed": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
-          "ttl_days": 90,
-          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
-          "verified_at": "2026-08-17"
-        },
-        "hours": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
-          "ttl_days": 90,
-          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
-          "verified_at": "2026-08-17"
-        },
-        "booking": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
-          "ttl_days": 90,
-          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
-          "verified_at": "2026-08-17"
-        }
-      }
-    },
     "la-table-alziari": {
       "displayName": "La Table Alziari",
       "region": "nice",
@@ -2128,6 +2325,20 @@
           "ttl_days": 180,
           "verified_at": "2026-08-17",
           "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
+        },
+        "duration": {
+          "value": "60분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md L1049",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "address": {
+          "value": "Passeig Marítim 1–3, 08870 Sitges",
+          "source": "https://restaurantelazorra.com/horario-y-contacto/",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       }
     },
@@ -2277,34 +2488,6 @@
         }
       }
     },
-    "le-panier": {
-      "displayName": "Le Panier",
-      "region": "aix",
-      "grade": "priority",
-      "facts": {
-        "closed": {
-          "value": "공개 구역 — 공식 페이지에 휴무·개방시간 고지 없음(상시 통행). 개별 상점·미술관은 별도",
-          "confidence": "unverified",
-          "ttl_days": 90,
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
-          "verified_at": "2026-08-17"
-        },
-        "hours": {
-          "value": "공식 개방시간 고지 없음 — 공공 가로. 경사·계단 많음",
-          "confidence": "unverified",
-          "ttl_days": 90,
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
-          "verified_at": "2026-08-17"
-        },
-        "booking": {
-          "value": "예약 불필요",
-          "confidence": "unverified",
-          "ttl_days": 90,
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
-          "verified_at": "2026-08-17"
-        }
-      }
-    },
     "le-rocher": {
       "displayName": "Le Rocher / Monaco-Ville",
       "region": "nice",
@@ -2337,6 +2520,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "90–120분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L147",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -2346,11 +2536,11 @@
       "grade": "essential",
       "facts": {
         "closed": {
-          "value": "언덕 골목·전망대는 연중 개방. 정상의 Musée des explorations du monde(Place de la Castre)는 9월 월요일 휴관",
-          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
-          "verified_at": "2026-08-17",
+          "value": "언덕 골목·전망대 연중 개방",
           "confidence": "official",
-          "ttl_days": 90
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html"
         },
         "hours": {
           "value": "골목은 시간 제한 없음. 정상 박물관 9월 화~일 10:00~13:00·14:00~18:00, 매표·입장은 폐관 30분 전 마감",
@@ -2364,6 +2554,19 @@
           "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
           "verified_at": "2026-08-17",
           "confidence": "official",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L138",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "note": {
+          "value": "정상의 Musée des explorations du monde 는 9월 월요일 휴관이다.",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         }
       },
@@ -2564,6 +2767,42 @@
       },
       "phone": "04 90 68 04 13"
     },
+    "lugdunum": {
+      "displayName": "Lugdunum 박물관·로마극장 (Fourvière)",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "월요일 휴관 (화–금 11:00–18:00 · 토·일 10:00–18:00)",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "source": "http://lugdunum.grandlyon.com/fr/",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화–금 11:00–18:00 · 토·일 10:00–18:00",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://www.fourviere.org/fr/horaires/"
+        },
+        "booking": {
+          "value": "바실리카 개인 방문 무료·예약 불필요, 가이드 투어(지붕·보물관)만 reservation.fourviere.org 예약. Lugdunum 개인 방문 예약 불필요",
+          "source": "https://www.fourviere.org/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
+        }
+      },
+      "phone": "04 72 38 49 30",
+      "parent": "fourviere-lugdunum"
+    },
     "macba": {
       "displayName": "MACBA",
       "region": "barcelona",
@@ -2591,6 +2830,35 @@
           "ttl_days": 180
         }
       }
+    },
+    "maison-des-canuts": {
+      "displayName": "Maison des Canuts (Croix-Rousse)",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "화~금 10:00~13:00·14:00~18:00 · 토 10:00~18:00",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://maisondescanuts.fr/"
+        },
+        "closed": {
+          "value": "일요일·월요일 휴관 (공휴일 휴관)",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "source": "https://maisondescanuts.fr/",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "가이드 투어 예약 필수 — maisondescanuts.mapado.com",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 78 28 62 04",
+      "parent": "croix-rousse"
     },
     "marche-collioure": {
       "displayName": "콜리우르 시장 (수요일)",
@@ -2646,6 +2914,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "50분",
+          "confidence": "editorial",
+          "source": "원고 10_Lyon_v2.0.md L1077",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -2674,6 +2949,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "45–60분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L155",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "3906"
@@ -2776,10 +3058,9 @@
       "grade": "essential",
       "facts": {
         "closed": {
-          "value": "도시 축 — 휴무 개념 없음. 단 Mucem·Fort Saint-Jean 은 화요일 휴관 (9/11 금요일 방문은 해당 없음)",
-          "source": "https://www.mucem.org/infos-pratiques",
-          "verified_at": "2026-08-17",
+          "value": "도시 축 — 휴무 개념 없음",
           "confidence": "official",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         },
         "hours": {
@@ -2795,9 +3076,86 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "note": {
+          "value": "Mucem·Fort Saint-Jean 은 화요일 휴관 (9/11 금요일 방문은 해당 없음)",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
         }
       },
       "phone": "+33 4 84 35 13 13"
+    },
+    "marseille-le-panier": {
+      "displayName": "Le Panier",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "공개 구역 — 공식 페이지에 휴무·개방시간 고지 없음(상시 통행). 개별 상점·미술관은 별도",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "공식 개방시간 고지 없음 — 공공 가로. 경사·계단 많음",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
+          "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "60분",
+          "confidence": "editorial",
+          "source": "원고 07_Aix_en_Provence_v2.0.md L1499",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        }
+      }
+    },
+    "marseille-vieux-port": {
+      "displayName": "Vieux-Port",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "공공 항구 — 연중무휴, 휴무 없음",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "항구 자체 시간 제한 없음. 어시장(Quai des Belges) 매일 07:30–12:30, 화·토 오전 화훼시장",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요. 칼랑크 유람선·페리보트만 별도",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "40–50분",
+          "confidence": "editorial",
+          "source": "원고 07_Aix_en_Provence_v2.0.md L609",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        }
+      },
+      "phone": "+33 826 500 500"
     },
     "menerbes": {
       "displayName": "Ménerbes",
@@ -2831,6 +3189,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "110분",
+          "confidence": "editorial",
+          "source": "원고 08_Luberon_Farmhouse_v2.0.md L1418",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "04 90 72 22 05"
@@ -2861,6 +3226,20 @@
           "source": "https://www.laconcepcio.cat/en/",
           "verified_at": "2026-08-17",
           "blocked_reason": "공설시장 — 공식 페이지에 예약 관련 안내 없음"
+        },
+        "duration": {
+          "value": "40분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md L1397",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        },
+        "address": {
+          "value": "Carrer d'Aragó 313–317, 08009 Barcelona",
+          "source": "https://www.laconcepcio.cat/en/",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       }
     },
@@ -2917,6 +3296,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "135분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L400",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -3292,6 +3678,36 @@
       },
       "phone": "+33 1 40 20 53 17"
     },
+    "musee-explorations-du-monde": {
+      "displayName": "Musée des explorations du monde (Le Suquet)",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "9월 월요일 휴관",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "9월 화~일 10:00~13:00·14:00~18:00 (입장 마감 30분 전)",
+          "confidence": "official",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html"
+        },
+        "booking": {
+          "value": "예약 불필요 — 개별 방문 자유 입장",
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 89 82 26 26",
+      "parent": "le-suquet-cannes"
+    },
     "musee-gadagne": {
       "displayName": "Musée Gadagne",
       "region": "lyon",
@@ -3338,6 +3754,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "150분",
+          "confidence": "editorial",
+          "source": "원고 07_Aix_en_Provence_v2.0.md L1479",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+33 4 42 52 88 32"
@@ -3432,6 +3855,13 @@
           "source": "https://museusdesitges.cat/en/schedule",
           "verified_at": "2026-08-17",
           "blocked_reason": "공식 일정 페이지에 예약 필요 여부 미게재; 요금 페이지 404"
+        },
+        "duration": {
+          "value": "75분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md L1428",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+34 93 894 03 64"
@@ -3880,6 +4310,13 @@
           "ttl_days": 90,
           "source": "https://forallac.cat/",
           "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "75분",
+          "confidence": "editorial",
+          "source": "원고 05_Girona_Collioure_Emporda_v2.1.md L1481",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+34 872 987 030"
@@ -3966,6 +4403,13 @@
           "ttl_days": 90,
           "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
           "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "75분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1585",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -3994,6 +4438,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "address": {
+          "value": "Place Richelme, 13100 Aix-en-Provence",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-marche-aux-fruits-et-legumes-d-aix-en-provence-5466992/",
+          "verified_at": "2026-08-18",
+          "confidence": "official",
+          "ttl_days": 730
         }
       }
     },
@@ -4071,6 +4522,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "55분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1488",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+33 4 32 74 32 74"
@@ -4100,6 +4558,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "30–60분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L96",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "3906"
@@ -4185,6 +4650,13 @@
           "confidence": "secondary",
           "ttl_days": 180,
           "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
+        },
+        "duration": {
+          "value": "50분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1487",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "04 90 80 80 00"
@@ -4487,6 +4959,31 @@
         }
       }
     },
+    "sitges-core-walk-2h30": {
+      "displayName": "시체스 2시간 30분 핵심 동선",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음 — 구성 시설별로 확인 필요"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
+        }
+      }
+    },
     "taxi-avignon": {
       "displayName": "택시 (Avignon Centre→TGV)",
       "region": "avignon",
@@ -4542,37 +5039,6 @@
         }
       }
     },
-    "theatre-antique": {
-      "displayName": "Théâtre antique",
-      "region": "avignon",
-      "grade": "essential",
-      "facts": {
-        "closed": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
-          "ttl_days": 90,
-          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
-          "verified_at": "2026-08-17"
-        },
-        "hours": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
-          "ttl_days": 90,
-          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
-          "verified_at": "2026-08-17"
-        },
-        "booking": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
-          "ttl_days": 90,
-          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
-          "verified_at": "2026-08-17"
-        }
-      }
-    },
     "uzes": {
       "displayName": "Uzès Place aux Herbes·구시가지",
       "region": "avignon",
@@ -4603,6 +5069,13 @@
           "ttl_days": 90,
           "source": "https://www.uzes-pontdugard.com/en/",
           "verified_at": "2026-08-17"
+        },
+        "duration": {
+          "value": "95분",
+          "confidence": "editorial",
+          "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1534",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -4696,38 +5169,16 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "60–75분",
+          "confidence": "editorial",
+          "source": "원고 06_Nice_Cote_d_Azur_v2.0.md L123",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "3906"
-    },
-    "vieux-port": {
-      "displayName": "Vieux-Port",
-      "region": "aix",
-      "grade": "essential",
-      "facts": {
-        "closed": {
-          "value": "공공 항구 — 연중무휴, 휴무 없음",
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
-          "verified_at": "2026-08-17",
-          "confidence": "official",
-          "ttl_days": 90
-        },
-        "hours": {
-          "value": "항구 자체 시간 제한 없음. 어시장(Quai des Belges) 매일 07:30–12:30, 화·토 오전 화훼시장",
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
-          "verified_at": "2026-08-17",
-          "confidence": "official",
-          "ttl_days": 90
-        },
-        "booking": {
-          "value": "예약 불필요. 칼랑크 유람선·페리보트만 별도",
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
-          "verified_at": "2026-08-17",
-          "confidence": "official",
-          "ttl_days": 90
-        }
-      },
-      "phone": "+33 826 500 500"
     },
     "village-des-bories": {
       "displayName": "Village des Bories",

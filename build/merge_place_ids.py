@@ -48,6 +48,16 @@ RENAME = {
     "gordes-3": "marche-gordes",             # 마을이 아니라 화요시장
     "croix-rousse-2": "marche-croix-rousse",  # 동네가 아니라 시장
     "place": "marche-collioure",             # 'place' 는 ID 가 아니다
+    # T4-2 — 도시 접두 없는 일반명사형. region 으로 구분되더라도 ID 자체가
+    # 자기설명적이어야 한다. 모호한 ID 는 중복보다 위험하다 — 중복은 값이
+    # 갈라지지만, 모호한 ID 는 **엉뚱한 도시의 값이 붙어도 아무도 모른다.**
+    "theatre-antique": "arles-theatre-antique",   # 리옹에도 Théâtre antique 가 있다
+    "vieux-port": "marseille-vieux-port",         # 칸에도 Vieux-Port 가 있다
+    "le-panier": "marseille-le-panier",
+    "call": "girona-call",                        # 바르셀로나에도 Call 이 있다
+    "la-roquette": "arles-la-roquette",           # 마르세유에도 La Roquette 가 있다
+    "gracia": "barcelona-gracia",
+    "2-30": "sitges-core-walk-2h30",              # 숫자는 이름이 아니다
 }
 
 # 건물과 전시는 별개다. 전시 레코드에서 **시설 사실을 뗀다** — 시설 사실은 건물에만 둔다.
