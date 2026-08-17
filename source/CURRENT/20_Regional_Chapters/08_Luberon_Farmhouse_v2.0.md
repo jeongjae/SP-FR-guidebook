@@ -298,19 +298,7 @@ source_priority: "공식 관광기구·지자체·시설·숙박업체 → 지�
 
 ### 16.6 숙소에 보낼 필수 문의문
 
-```text
-We are a couple staying from 13 to 17 September 2026.
-Could you please confirm in writing:
-1) whether the kitchen and washing machine are private or shared;
-2) the kitchen equipment available for normal meal preparation;
-3) whether the access road is fully paved and easy to drive after dark;
-4) whether private parking is available and secure;
-5) the driving time to the nearest supermarket, bakery and restaurant;
-6) the total price including cleaning, tourist tax and any deposit;
-7) whether a four-night stay is accepted and the check-in procedure.
-
-A swimming pool is not required and should not affect the quotation or room recommendation.
-```
+> **문의문 템플릿은 삭제했다.** 이 구간 숙소는 현지에서 결정한다(DEC-A10). 체류는 **3박(9/13–16)** 이고, 사전 문의·예약을 하지 않는다.
 
 ---
 
@@ -837,7 +825,7 @@ Day 13에 본 엑상의 바로크 저택, Day 2의 사그라다 파밀리아와 
 | 시장 | 운영 | 이번 일정 역할 |
 |---|---|---|
 | **Coustellet 생산자시장** | 일요일 08:00–13:00, 4월–12월 말 | 9/13 체크인 전 핵심 장보기 |
-| **Gordes 시장** | 화요일 08:00–13:00 | 9/15 관광+장보기 |
+| **Gordes 시장** | {{fact:gordes.hours}} | 9/15 관광+장보기 |
 | **L’Isle 시장** | 목·일 06:00–14:00, 연중 | 9/17 정보 보존, 기본 일정 아님 |
 | Bonnieux·Lourmarin | 금요일 오전 | 체류요일과 불일치 |
 | Apt 대형시장 | 토요일 오전 | 체류 전날이라 제외 |
@@ -1156,7 +1144,7 @@ Day 2 대체안이다. 금요일 오전에 시장이 선다. 9월 14일은 월�
 출발 목표: 08:10
 주차 목표:
 시장 종료: 13:00
-Village des Bories: 09:00–19:00 / €8 (2026-08-14 확인)
+Village des Bories: {{fact:village-des-bories.hours}} / {{fact:village-des-bories.price_adult}}
 Sénanque: 내부 선택 / €8 / HistoPad 한국어 {{badge:pending|공식 확인}}
 삭제기준: 주차지연·폭염·피로
 ```
@@ -1275,7 +1263,7 @@ Sénanque: 내부 선택 / €8 / HistoPad 한국어 {{badge:pending|공식 확�
 | **Salon du Carnet de Voyage 2026** | **복수 출처 확인** — `Lourmarin des Carnets · 9e Salon` , **2026/9/12–13**, La Fruitière Numérique(Avenue du 8 Mai, Lourmarin). 카르네티스트 45명. 일요일 09:00–18:30. **Day 16(9/13)이 마지막 날 — 원고의 날짜가 맞았다.** 판 번호만 8e → 9e 로 고쳤다. 출처: lourmarindescarnets.fr · lourmarin.com · 뤼브롱 지역자연공원 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | **Goult 상세** | **[보완 필요]** |
 | **Ménerbes · Oppède-le-Vieux 상세** | **[보완 필요]** |
-| **Village des Bories 운영·요금** | **복수 출처 확인** — 연중무휴(1/1·12/25 제외). **9월은 09:00–19:00**, 마지막 입장 30분 전. 성인 €8 · 12–17세 €4 · 학생 €4 · **12세 미만 무료**. 출처: levillagedesbories.com 공식 · 보클뤼즈 관광청 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
+| **Village des Bories 운영·요금** | 운영 {{fact:village-des-bories.hours}} · 요금 {{fact:village-des-bories.price_adult}} · 연중무휴(1/1·12/25 제외) · 학생 감액 있음 |
 | **Château de Lourmarin 운영·요금** | **복수 출처 확인** — **5/1–9/30 10:30–18:45**(매표는 45분 전 마감). 10월은 10:30–17:45. 12/25·1/1 및 1/5–16 휴관. 일반 €8 · 감액 €6.50 · 6–12세 €3.50 · 6세 미만 무료. **Day 16(9/13)은 여름 시간이다.** 출처: chateaudelourmarin.com 공식 · 보클뤼즈 관광청 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | Sentier des Ocres 9월 운영시간 | **[재확인]** — 계절 편차 큼 |
 | Sénanque 자유관람 시간 | **[재확인]** — 출처가 2024년 |
@@ -1311,7 +1299,7 @@ Sénanque: 내부 선택 / €8 / HistoPad 한국어 {{badge:pending|공식 확�
 
 **오늘의 피로도: 3/5.**
 
-9월 13일에는 Lourmarin의 **9e Salon du Carnet de Voyage**(Lourmarin des Carnets) 마지막 날이 열린다. 행사는 9월 12–13일 이틀이고 일요일은 09:00–18:30 이다. 입장료 €6–10 범위는 {{badge:pending|2026-08 확인 · 출발 전 재확인}}. 일반적인 마을 산책보다 Jason에게 특별한 가치가 있으므로, 이번 이동일의 핵심으로 둔다.
+9월 13일에는 Lourmarin의 **9e Salon du Carnet de Voyage**(Lourmarin des Carnets) 마지막 날이 열린다. 행사 일정은 {{fact:lourmarin.note}} 이고 시간·입장료는 공식 미게시다. 입장료 €6–10 범위는 {{badge:pending|2026-08 확인 · 출발 전 재확인}}. 일반적인 마을 산책보다 Jason에게 특별한 가치가 있으므로, 이번 이동일의 핵심으로 둔다.
 
 #### 실행 시간표
 

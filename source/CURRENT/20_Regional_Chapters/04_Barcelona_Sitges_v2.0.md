@@ -608,7 +608,10 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 |요금·운영|{{badge:pending|재확인}}|
 
 ---
-#### Palau de Maricel {{grade:priority|우선추천}}
+#### Palau de Maricel {{grade:alternative|대체}}
+
+> **⚠ 9/1(화)에는 관람할 수 없다.** {{fact:palau-de-maricel.hours}} · {{fact:palau-de-maricel.note}}
+> 이 날의 대안은 **Cau Ferrat + Museu de Maricel 통합권** — {{fact:cau-ferrat.hours}} · {{fact:cau-ferrat.price_adult}} {{badge:decision-pending|대안 확정 대기}}
 
 1909년, 미국인 사업가이자 미술 수집가 찰스 디어링이 마리셀 궁 건설을 후원했다. 카우 페라트 바로 옆이다.
 
@@ -664,7 +667,7 @@ Can Robert 또는 Pou Vedre 주차
 
 Cau Ferrat는 Rusiñol의 전 거주지·작업실로 회화, 철공예, 도자기, 유리 컬렉션이 집의 분위기와 함께 남아 있다. Maricel은 로마네스크부터 근대까지의 작품과 해안 건축을 연결한다.
 
-**운영:** 4–10월 화–일 10:00–19:00, 월요일 휴관. Cau Ferrat+Maricel 통합권은 **일반 €12**
+**운영:** {{fact:cau-ferrat.hours}} · 휴관 {{fact:cau-ferrat.closed}} · 통합권 {{fact:cau-ferrat.price_adult}}
 (감면 €8 · 초감면 €6). 9월 1일은 화요일이므로 정상 개관일이다.
 출처: museusdesitges.cat 공식 요금표 — **2026-08-14 확인.**
 
@@ -1052,7 +1055,7 @@ Jason이 같은 날 헬스를 할 수 있어 가장 실용적이다. 수영모, 
 | P1 | Bar Cañete | 8/31 13:20 | 2–4주 전 | 카운터/테이블, 지각 정책 |
 | P2 | Sant Pau | 8/30 14:30 전후 | 1–2주 전 또는 현장 | 특별전 포함 범위, 최종 입장시간 |
 | P2 | MACBA | 8/31 15:15 | 전날까지 | 월요일 개관(2026-08 확인)·전시실 폐쇄 여부 |
-| P3 | Cau Ferrat·Maricel | 9/1 11:00 | 현장 가능, 사전구매 권장 | 화요일 개관·€12/인 (2026-08 확인) |
+| P3 | Cau Ferrat·Maricel | 9/1 11:00 | 현장 가능, 사전구매 권장 | {{fact:cau-ferrat.hours}} · {{fact:cau-ferrat.price_adult}} |
 
 ---
 
@@ -1141,7 +1144,7 @@ Jason이 같은 날 헬스를 할 수 있어 가장 실용적이다. 수영모, 
 
 |대상                         |요금    |상태             |
 |---------------------------|------|---------------|
-|Sagrada Família (타워 포함)    |€36   |{{badge:pending|재확인}}|
+|Sagrada Família (타워 포함)    |{{fact:sagrada-familia.price_adult}}|—|
 |Sant Pau Recinte Modernista|—     |{{badge:pending|재확인}}|
 |Cau Ferrat + Maricel       |결합권 여부|{{badge:pending|재확인}}|
 |MACBA                      |—     |{{badge:pending|재확인}}|

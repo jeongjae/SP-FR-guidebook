@@ -15,6 +15,17 @@ from common import FACT_RE, chapter_files, facts, report
 
 MONEY = re.compile(r"€\s?\d[\d.,]*")
 TIME = re.compile(r"\b\d{1,2}:\d{2}\b")
+# 2인 합계·범위·예산은 1인 요금과 다른 축이다 — 충돌이 아니다.
+PER_TWO = re.compile(r"/\s*2\s*인|2인\s*€|€[\d.,]+\s*[–\-~]\s*[\d.,]+|예산|예상")
+
+
+def money_norm(s):
+    """€36.00 과 €36 을 같은 값으로 본다."""
+    v = s.replace("€", "").replace(" ", "").rstrip(".,")
+    try:
+        return f"{float(v):.2f}"
+    except ValueError:
+        return v
 
 
 def main():
@@ -32,33 +43,27 @@ def main():
             pa = p.get("facts", {}).get("price_adult", {}).get("value", "")
             if not pa:
                 continue
-            known = set(MONEY.findall(pa))
+            known = {money_norm(x) for x in MONEY.findall(pa)}
             if not known:
                 continue
             for i, line in enumerate(text.splitlines(), 1):
                 if name not in line:
                     continue
+                # 시설명이 다른 고유명사의 일부인 경우 (La Paradeta Sagrada Família)
+                pos = line.find(name)
+                if pos > 0 and line[pos - 1] not in " |*·(>":
+                    continue
+                if PER_TWO.search(line):
+                    continue
                 bare = FACT_RE.sub("", line)
-                found = set(MONEY.findall(bare))
-                odd = {x for x in found if x.replace(" ", "") not in
-                       {k.replace(" ", "") for k in known}}
+                found = {money_norm(x) for x in MONEY.findall(bare)}
+                odd = found - known
                 if odd:
                     problems.append(
                         f"{f.name}:{i} {name} — 원고 {sorted(odd)} vs facts {sorted(known)}")
 
-    # (b) 같은 (파일, 시설명) 에서 서로 다른 시각 집합이 3회 이상 흩어져 있는가
-    for f in chapter_files():
-        text = f.read_text(encoding="utf-8")
-        per = defaultdict(set)
-        for line in text.splitlines():
-            for pid, p in places.items():
-                name = p["displayName"]
-                if len(name) >= 4 and name in line:
-                    for t in TIME.findall(FACT_RE.sub("", line)):
-                        per[(f.name, name)].add(t)
-        for (fn, name), times in per.items():
-            if len(times) >= 6:
-                problems.append(f"{fn} {name} — 시각 {len(times)}종 흩어짐: {sorted(times)[:6]}…")
+    # (b) '시각 흩어짐' 규칙은 제거했다 — 시간표에는 원래 여러 시각이 있어
+    #     오탐만 냈다. 시각 충돌은 G1(요일)·G1c(날짜)가 다른 축으로 잡는다.
 
     scanned = sum(1 for pid, p in places.items()
                   if p.get("facts", {}).get("price_adult", {}).get("value"))

@@ -81,7 +81,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 - **공항 도착**: 니스 코트다쥐르 공항에서 시내 진입 시 **트램 2호선(Ligne 2)**을 이용해 숙소 근처 정거장에서 내린다. 단발권은 €1.80이며, 도시 이동이 잦은 날은 1일권(€5.00)이 경제적이다.
 - **철도 당일치기**: 칸과 모나코는 니스-빌(Nice-Ville) 역에서 **TER 열차**를 이용한다. 칸 약 35–40분, 모나코 약 20–25분이다 {{badge:pending|시각·요금 공식 확인}}. 모나코 시내 이동 시 오르막 도보가 부담되면 시내버스를 활용한다.
-- **렌터카 인수**: **Day 12(9/9) 오전 09:00**, Nice역 Hertz 영업소(Avenue Thiers)에서 자동변속 컴팩트 차량을 인수하여 생폴드방스를 거쳐 프로방스로 이동한다.
+- **렌터카 인수**: **Day 12(9/9) 오전 09:00**, Nice-Ville 역 Hertz 영업소(Avenue Thiers)에서 자동변속 컴팩트 차량을 인수해 그라스를 거쳐 프로방스로 이동한다. 생폴드방스는 9/8 당일치기로 옮겼다(DEC-A03).
 
 ## 핵심 셀프가이드
 
@@ -179,7 +179,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
   2. **Pissaladière (피살라디에르)**: 두툼한 빵 반죽 위에 캐러멜라이즈한 양파, 안초비, 블랙 올리브를 올린 타르트다. 페이스트리 도우는 피하는 것이 현지식이다.
   3. **Salade Niçoise (니수아즈 샐러드)**: 익힌 감자나 그린빈 없이 오직 토마토, 피망, 오이 등 생채소와 참치, 안초비, 올리브, 달걀만 들어가는 것이 정본이다. 감자가 들어가면 관광객용 변형이다.
 - **식당 전략**:
-  - **Acchiardo**: Vieux Nice의 오랜 가족식당으로 Petits Farcis(속을 채운 채소 구이)와 소고기 스튜 라비올리가 잘 알려져 있다.
+  - **Acchiardo**: Vieux Nice의 오랜 가족식당으로 Petits Farcis(속을 채운 채소 구이)와 소고기 스튜 라비올리가 잘 알려져 있다. 영업은 {{fact:acchiardo.hours}} — 휴무 {{fact:acchiardo.closed}} 라 주말 저녁에는 쓸 수 없다.
   - **La Table Alziari**: 올리브유와 제철 생선 요리 (€35–55, 권장). 속 편한 저녁을 원할 때 알맞다.
 
 ## 당일치기·우천·피로 대안
@@ -197,7 +197,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **렌터카 예약 (Hertz)**:
   - **인수**: 9/9 09:00 Nice역 (Hertz L672E080313). Compact Automatic (Captur급).
   - **비용**: €608.09 (VISA ASIA CARDS 10% 할인가 반영, 편도 반납비 €180 포함).
-  - **반납**: 9/20 09:00 Avignon TGV. (영업소 개점인 10:00 이전이므로 무인 키드롭 박스 위치 사전 확인 필요)
+  - **반납**: **9/19(토) 18:15까지 Avignon TGV** (토요일 영업 09:00–19:00, 버퍼 45분). 주차는 Parking Loueurs P0 — DEC-A08
 - **주차 지침**:
   - 생폴드방스 및 그라스에서는 노상 주차 대신 도심 외곽의 유료 공영주차장(구시가지 진입 차단선 밖)을 이용하고, 차 안의 장기 여행 짐이 외부에 노출되지 않도록 철저히 캐리어 가림막을 쳐둔다.
 
@@ -205,7 +205,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 - **미술관 휴관일**: Matisse 및 Chagall 미술관은 매주 **화요일 휴관**이다. 수~월요일 운영 시간을 현장에서 다시 한 번 확인한다.
 - **Cannes Forville 시장**: 시장은 오전이 본체다 — 정오를 넘기면 좌판이 접히기 시작하므로 일요일(Day 9) 아침 방문을 유지한다.
-- **Monaco 위병 교대식**: 대공궁 앞 위병 교대식은 매일 **11:55**에 시작하나, 궁정 행사 일정에 따라 변동 가능하므로 방문 당일 아침 모나코 관광청 공식 사이트에서 재확인한다.
+- **Monaco 위병 교대식**: {{fact:monaco.note}} — 궁정 행사에 따라 변동 가능하므로 방문 당일 아침 모나코 관광청 공식 사이트에서 재확인한다.
 
 | 항목 | 상태 |
 |---|---|
@@ -287,14 +287,14 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 12:45–13:30 | 가벼운 점심 | socca·salade niçoise·pan bagnat 중 1개 |
 | 13:30–16:00 | Promenade 또는 Port·카페 | 폭염이면 숙소휴식 |
 | 16:30–18:00 | 선택 | Port 또는 Garibaldi 중 1개 |
-| 19:30–21:00 | 전통 Nice 저녁 | Acchiardo 또는 La Table Alziari |
+| 19:30–21:00 | 전통 Nice 저녁 | **La Table Alziari** ({{fact:la-table-alziari.hours}}) 또는 **Chez Pipo** ({{fact:chez-pipo.hours}}) — Acchiardo 는 {{fact:acchiardo.closed}} 라 토요일 불가 {{badge:decision-pending|대안 확정 대기}} |
 
 #### 오늘 지도
 {{VISUAL:VIS-MAP-042|type=map|status=linked|strategy=execution-map}}
 
 #### 식사 및 카페
 *   **점심**: Cours Saleya 시장 및 Vieux Nice 캐주얼 식사 (소카, 팡 바냐 등) - 예산 €10–20/인
-*   **저녁**: Acchiardo 또는 La Table Alziari (니스 전통요리 및 제철 생선) - 예산 €30–55/인
+*   **저녁**: La Table Alziari 또는 Chez Pipo (니스 전통요리 및 제철 생선). Acchiardo 는 {{fact:acchiardo.closed}} 휴무 {{badge:decision-pending|대안 확정 대기}}
 
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
 1. **[1순위 삭제]**: 16:30 Port 또는 Garibaldi 추가 산책 (숙소 복귀 및 휴식으로 대체)
@@ -449,7 +449,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 08:00–08:45 | 체크아웃·간단한 아침 | 체크아웃은 11:00까지 가능하지만 인수 시각에 맞춰 나온다. 차량용 물·간식 준비 |
 | 08:45–09:00 | Nice역(Avenue Thiers)까지 도보 | 숙소에서 약 1.2km — 짐이 많으면 택시 |
 | 09:00 | **Nice역 렌터카 인수** (Hertz L672E080313) | Nice Railway Station 영업소 (Avenue Thiers, +33 4 97 03 01 20 · 수요일 08:00 개점). 자동변속·보험·편도반납·차체촬영. 수속 30–60분 |
-| | 예약 내용 (2026-08 예약서) | 컴팩트 자동변속 (그룹 F0, Renault Captur급) · 후지불 **€608.09** (기본 11일 €326.73 + 편도반납 €180 + 세금, VISA ASIA CARDS 10% 할인) · CDW·Super Cover·PAI/PEC·도난보험 포함 · 무제한 주행 · 반납 Avignon TGV 영업소 (Place de l'Europe, +33 4 32 74 62 80) — **9/20 일요일 09:00 반납은 개점(10:00) 전, 키드롭 확인** {{badge:pending|무인반납 확인}} |
+| | 예약 내용 (2026-08 예약서) | 컴팩트 자동변속 (그룹 F0, Renault Captur급) · 후지불 **€608.09** (기본 11일 €326.73 + 편도반납 €180 + 세금, VISA ASIA CARDS 10% 할인) · CDW·Super Cover·PAI/PEC·도난보험 포함 · 무제한 주행 · 반납 Avignon TGV 영업소 (Place de l'Europe, +33 4 32 74 62 80) — **9/19(토) 18:15까지 조기 반납(DEC-A08)** |
 | 09:30–11:00 | **Saint-Paul-de-Vence** | 골목·성벽·짧은 스케치 |
 | 11:00–12:00 | 가벼운 점심·이동 | 긴 코스식 금지 |
 | 12:30–14:00 | **Grasse vieille ville** | 향수 시향 또는 짧은 공방 |

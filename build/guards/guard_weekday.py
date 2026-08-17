@@ -23,6 +23,9 @@ from common import (DAY_RE, FACT_RE, ITINERARY, ROOT, WD, chapter_files,
 PLACE_DAYS = ROOT / "data/place-days.json"
 
 CLOSED_WD = re.compile(r"([월화수목금토일])(?:요일)?")
+# "그 날은 닫혀서 못 간다"고 이미 쓴 줄은 충돌이 아니라 회피 서술이다.
+AVOID = re.compile(r"불가|휴관|휴무|제외|대신|아니다|않는다|금지|피한|못\s|없다|"
+                   r"decision-pending|대안|대체")
 # 9/22 · 9월 22일 · 09/22
 DATE_LIT = re.compile(r"(?<!\d)(\d{1,2})\s*[/월]\s*(\d{1,2})\s*일?(?!\d)")
 
@@ -72,7 +75,7 @@ def main():
     year = trip_start().year
 
     problems, g1c = [], []
-    checked = skipped_no_closed = skipped_no_day = 0
+    checked = skipped_no_closed = skipped_no_day = avoided = 0
     by_source = {"literal": 0, "day-heading": 0, "place-days": 0}
 
     # 이름 → placeId (본문에 토큰이 없어도 시설명으로 잡는다)
@@ -126,6 +129,9 @@ def main():
                 checked += 1
                 by_source[src] = by_source.get(src, 0) + 1
                 wd = WD[d.weekday()]
+                if AVOID.search(line):
+                    avoided += 1
+                    continue
                 if wd in closed_weekdays(cl["value"]):
                     problems.append(
                         f"{f.name}:{idx+1} [{src}] {d.isoformat()}({wd}) "
@@ -134,9 +140,10 @@ def main():
     rc = report("G1", "방문 요일 vs 휴관일", problems)
     rc_c = report("G1c", "Day 헤딩 ↔ itinerary 3자 대조", g1c)
 
-    total = checked + skipped_no_closed + skipped_no_day
+    total = checked + skipped_no_closed + skipped_no_day + avoided
     print(f"    커버리지: 검사 {checked} / 후보 {total} · "
-          f"건너뜀 {skipped_no_closed}(closed 없음) + {skipped_no_day}(방문일 판정 실패)")
+          f"건너뜀 {skipped_no_closed}(closed 없음) + {skipped_no_day}(방문일 판정 실패) "
+          f"+ {avoided}(회피 서술)")
     print(f"    판정 출처: " + " · ".join(f"{k} {v}" for k, v in by_source.items() if v))
     if checked == 0:
         print("[G1d] WARN · 검사 대상 0 — 통과가 아니라 미검사다")
