@@ -5149,6 +5149,22 @@ def check_visual_tokens():
     HTML 만 검사하면 검색 결과에 토큰이 뜨는 것을 놓친다.
     `<pre>`·`<code>` 안은 챕터 01이 토큰 문법을 예시로 보여주는 자리라 제외한다.
     """
+    # 원고 단계 가드 — 백틱으로 감싼 토큰은 <code> 로 렌더돼 위 코드블록 제외 규칙을
+    # 통과해 버린다. 그러면 독자 화면에 `{{badge:...}}` 문자열이 그대로 보인다.
+    # 챕터 01(문법 설명)만 예외로 둔다.
+    backticked = []
+    for f in sorted((SOURCE / "CURRENT").rglob("*.md")):
+        if f.name.startswith("01_"):
+            continue
+        for i, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            for m in re.finditer(r"`\{\{(?:badge|grade|VISUAL):[^`]*\}\}`", line):
+                backticked.append(f"{f.relative_to(SOURCE)}:{i}: {m.group(0)}")
+    if backticked:
+        print("백틱으로 감싼 토큰 — 독자 화면에 그대로 노출된다:")
+        for x in backticked[:20]:
+            print("  " + x)
+        sys.exit(1)
+
     leftover = []
     for f in sorted(SITE.rglob("*")):
         if not f.is_file() or f.suffix not in (".html", ".js", ".json"):
