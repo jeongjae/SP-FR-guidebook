@@ -627,6 +627,8 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 #### 식당 카드 — Café Comptoir Abel {{badge:p0|9/21 확정 저녁}}
 
+> 📍 {{fact:cafe-comptoir-abel.address}} · 🚶 {{fact:cafe-comptoir-abel.getting_there}} · 🕐 {{fact:cafe-comptoir-abel.hours}} · 휴무 {{fact:cafe-comptoir-abel.closed}} · {{fact:cafe-comptoir-abel.booking}} · {{fact:cafe-comptoir-abel.price_range}}
+
 | 필드 | 내용 |
 |---|---|
 | 역할 | 특별저녁 (Day 24 · 9/21 월 19:30) |
@@ -640,6 +642,8 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 | 대체 후보 | 숙소권 간단식 또는 Bellecour 권역 브라세리 |
 
 #### 식당 카드 — Daniel et Denise Créqui {{badge:p0|9/22 확정 저녁}}
+
+> 📍 {{fact:daniel-et-denise-crequi.address}} · 🚶 {{fact:daniel-et-denise-crequi.getting_there}} · 🕐 {{fact:daniel-et-denise-crequi.hours}} · 휴무 {{fact:daniel-et-denise-crequi.closed}} · {{fact:daniel-et-denise-crequi.booking}} · {{fact:daniel-et-denise-crequi.price_range}}
 
 | 필드 | 내용 |
 |---|---|

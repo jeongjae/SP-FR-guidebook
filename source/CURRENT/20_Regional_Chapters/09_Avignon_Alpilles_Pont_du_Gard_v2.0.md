@@ -1324,6 +1324,8 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 #### Restaurant SEVIN — 교황궁 권역의 고급식은 목적을 분명히
 
+> 📍 {{fact:restaurant-sevin.address}} · 🚶 {{fact:restaurant-sevin.getting_there}} · 🕐 {{fact:restaurant-sevin.hours}} · 휴무 {{fact:restaurant-sevin.closed}} · {{fact:restaurant-sevin.booking}} · {{fact:restaurant-sevin.price_range}}
+
 위치와 서비스, 코스경험을 위해 가는 곳이다. 여행 전체에 이미 특별식이 많다면 생략해도 된다. 선택할 경우 다른 비스트로를 줄여 총예산과 식사피로를 조정한다.
 
 #### Les Cocottes Saint-Louis — 정원과 건축을 함께 누리는 안정적 선택

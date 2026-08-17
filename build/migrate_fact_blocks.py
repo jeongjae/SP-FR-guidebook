@@ -91,8 +91,10 @@ def main():
     apply = "--apply" in sys.argv
     doc = json.loads(FACTS.read_text(encoding="utf-8"))
     places = doc["places"]
+    # T3-5 — 식당·시장은 등급과 무관하게 정보줄을 붙인다. 진단 기준 최악 구간이
+    # 여기다 (B3 가는 법 12.5% · B5 휴무 14.8% · B4 영업시간 27.4%).
     conf = {pid: p for pid, p in places.items()
-            if p.get("grade") in ("essential", "priority")}
+            if p.get("grade") in ("essential", "priority") or is_eatery(pid, p)}
 
     files = {}
     for reg, pre in REGION_PREFIX.items():
