@@ -890,7 +890,7 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 
 | 식당 | 성격 | 추천 주문·이용법 | 계획가격/인 | 예약 |
 |---|---|---|---:|---|
-| **Fou de Fafa** | 작은 창작 비스트로 | 계절메뉴에서 생선·오리·채소요리 2–3개 공유 | €35–55 | 강권 |
+| **Fou de Fafa** | 작은 창작 비스트로 · 휴무 {{fact:fou-de-fafa.closed}} | 계절메뉴에서 생선·오리·채소요리 2–3개 공유 | €35–55 | 강권 |
 | **Le Goût du Jour** | 정제된 지역재료 코스 | Inspiration 또는 dégustation, 특별저녁 1회 | €55–95 | 강권 |
 | **Restaurant SEVIN** | Palais 인근 고급식 | 2026 계절메뉴, 토마토·남프랑스 재료 중심 | €90–160+ | 필수 |
 | **Les Cocottes Saint-Louis** | 수도원정원 캐주얼 프렌치 | 2026 메뉴 €33–38, rouget·ravioles·채소 | €35–55 | 권장 |
@@ -1283,7 +1283,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 ### 식당 소개 보강
 
-#### Fou de Fafa — 작은 비스트로의 친밀한 저녁
+#### Fou de Fafa — 작은 비스트로의 친밀한 저녁 (휴무 {{fact:fou-de-fafa.closed}})
 
 코스가 과도하게 길지 않고 계절메뉴를 공유하기 좋아, 아비뇽 첫 정식저녁에 적합하다. 인기와 좌석수 때문에 예약을 우선한다.
 
@@ -1308,7 +1308,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - **유산의 날 혼잡이 크면:** Palais 입장시간 유지, 무료 특별개방은 포기
 - **Pont du Gard 날씨가 나쁘면:** Uzès 체류 연장 + Avignon 박물관
 - **로마유적이 반복되면:** Glanum 삭제
-- **특별식:** Fou de Fafa 또는 Le Goût du Jour 중 하나
+- **특별식:** Fou de Fafa(수요일 휴무 — 9/16 불가) 또는 Le Goût du Jour 중 하나
 - **가장 중요한 장면:** Palais 광장의 저녁빛 또는 Pont du Gard 강변의 전체전망
 
 ### 공식자료
@@ -1416,7 +1416,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | 15:15–16:15 | 숙소 생활권 장보기 | 물, 빵, 과일, 햄·치즈, 아침재료. 다음 날 Halles를 보므로 소량 |
 | 16:30–17:45 | **Porte Saint-Michel→Corps Saints→Rue des Teinturiers** 산책 | 첫날은 교황궁까지 가지 않고 남동부 생활권과 귀가로 파악 |
 | 18:00–19:00 | 선택: 성벽·Rhône 방향 산책 | 피로가 남으면 숙소 휴식으로 전환 |
-| 19:30–21:00 | 첫 저녁 | **Les Cocottes Saint-Louis** ({{fact:les-cocottes-saint-louis.hours}}) — Fou de Fafa 는 {{fact:fou-de-fafa.closed}} 라 9/16(수) 불가 {{badge:decision-pending|대안 확정 대기}} |
+| 19:30–21:00 | 첫 저녁 | **Les Cocottes Saint-Louis** ({{fact:les-cocottes-saint-louis.hours}}) — Fou de Fafa 는 {{fact:fou-de-fafa.closed}} 라 9/16(수) 불가 |
 | 21:00 이후 | 숙소 복귀 | 9/18 Palais 티켓·날씨·주차상태 최종 확인 |
 
 #### 오늘 꼭 해볼 것
@@ -1496,9 +1496,9 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
 | 07:15–08:00 | 숙소 아침·출발준비 | 시장가방, 물, 모자, 차량에 아무것도 보이지 않게 정리 |
-| 08:00–08:55 | Avignon→Uzès | 토요일 혼잡 때문에 09:00 이전 도착 목표 |
+| 08:00–08:55 | Avignon→Uzès | **금요일이라 시장이 없다** — 혼잡이 없으므로 도착 시각에 여유가 있다 |
 | 09:00–09:25 | 외곽주차→Place aux Herbes | 중심부 진입보다 외곽 관리주차장 후 도보 |
-| 09:25–11:00 | **Uzès Place aux Herbes·구시가지** | 금요일에는 토요시장을 전제로 하지 않음. 카페·아케이드·생활상점 중심 |
+| 09:25–11:00 | **Uzès Place aux Herbes·구시가지** | 시장 없는 날의 우제스 — 카페·아케이드·생활상점과 Tour Fenestrelle 중심 |
 | 11:00–12:00 | **Uzès 구시가지** | Place aux Herbes 아케이드→Duché 외관→Tour Fenestrelle→골목 |
 | 12:00–13:00 | 가벼운 점심 | Place aux Herbes 주변 비스트로 후보의 금요일 영업 {{badge:pending|영업일 확인}} |
 | 13:00–13:35 | Uzès→Pont du Gard | 시장 구매품은 차량 안에서 보이지 않게 보관 |

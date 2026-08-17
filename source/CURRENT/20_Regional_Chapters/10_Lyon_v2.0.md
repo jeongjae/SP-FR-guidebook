@@ -681,7 +681,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 | 상황 | 기본 대체안 |
 |---|---|
 | 9/21 비 | Fourvière는 푸니쿨라 왕복, Vieux Lyon 축소, 월요일 개관 실내시설 1곳만 |
-| 9/22 비 | Croix-Rousse 시장 짧게, **Halles 체류 연장** — Beaux-Arts 는 {{fact:musee-des-beaux-arts-lyon.closed}} 이라 이 날 불가 {{badge:decision-pending|대안 확정 대기}} |
+| 9/22 비 | **Halles Paul Bocuse 체류 연장**(실내) — Beaux-Arts 는 {{fact:musee-des-beaux-arts-lyon.closed}} 이라 이 날 불가. Croix-Rousse 시장은 노천이라 우천 대안이 못 된다. 2순위는 실내 시설인 **Musée des Confluences** {{badge:unverified|운영·요금 S2 조사}} |
 | Annecy 비 | Vieille Ville·Palais de l’Île·긴 점심, 크루즈 운항 시만 탑승 |
 | Annecy 철도장애 | Lyon Confluence·Navigône·Parc 생활일 |
 | 강한 피로 | Croix-Rousse와 Halles만 진행, Parc 삭제 |
@@ -1025,7 +1025,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 - **필수**: Fourvière 전망, Vieux Lyon, traboule 2–4개
 - **우선 추천**: Jardin du Rosaire 하산, Saône 강변
 - **선택**: 로마극장, Saint-Jean 성당 내부
-- **대체**: 비가 오면 Fourvière→푸니쿨라 하산→**Musée des Beaux-Arts**(월요일 개관 · {{fact:musee-des-beaux-arts-lyon.closed}}). Gadagne 는 {{fact:musee-gadagne.closed}} 이라 이 날 불가 {{badge:decision-pending|대안 확정 대기}}
+- **대체**: 비가 오면 Fourvière→푸니쿨라 하산→**Musée des Beaux-Arts**(월요일 개관 · {{fact:musee-des-beaux-arts-lyon.closed}}). Gadagne 는 {{fact:musee-gadagne.closed}} 이라 이 날 불가
 
 #### 대안 대책 (우천·휴관·교통 장애)
 
@@ -1072,7 +1072,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 - **도시경관 우선**: Croix-Rousse에서 Saône 방향으로 천천히 하산
 - **현대도시 우선**: 공원 대신 Confluence와 Navigône 수상교통
-- **비 오는 날**: Halles 체류 연장 (9/22 화는 Beaux-Arts {{fact:musee-des-beaux-arts-lyon.closed}}) {{badge:decision-pending|대안 확정 대기}}
+- **비 오는 날**: Halles 체류 연장 (9/22 화는 Beaux-Arts {{fact:musee-des-beaux-arts-lyon.closed}}). 노천 시장은 우천 대안이 아니다 — 실내는 Musée des Confluences {{badge:unverified|운영·요금 S2 조사}}
 - **Julia 수영**: LOU Piscine 25m 실내풀 또는 50m 야외풀의 당일 자유수영 시간을 별도 확인하여 공원 대신 배치
 
 #### 대안 대책 (우천·휴관·교통 장애)

@@ -323,7 +323,7 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 | 숙소→Granet | 25–40분 | 큰 가방 제한 |
 | 숙소→Atelier | 25–40분 | 오르막·예약 15분 전 |
 | Aix→Marseille | 60–90분 | Ligne 50·A7 정체, 실제 시간표 재확인 |
-| Aix→Cassis 선택 대안 | 80–110분 | **9/11(금)은 Gorguettes 셔틀 미운행** ({{fact:cassis.getting_there}}) — Presqu'île 유료주차 또는 대체안 필요 {{badge:decision-pending|대안 확정 대기}} |
+| Aix→Cassis 선택 대안 | 80–110분 | **9/11(금)은 Gorguettes 셔틀 미운행** ({{fact:cassis.getting_there}}) — Presqu'île 유료주차 또는 대체안 필요 |
 | Aix→Lourmarin | 70–90분 | 일요일 주차 |
 | Lourmarin→농가 | 60–120분 | 정확한 주소 확정 후 재계산 |
 

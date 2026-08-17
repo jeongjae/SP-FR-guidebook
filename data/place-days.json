@@ -3,12 +3,25 @@
   "source": "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv (days 열)",
   "note": "Day 번호는 글로벌 1–43. G1 이 방문일 판정의 마지막 단계로 쓴다.",
   "places": {
+    "2-30": {
+      "displayName": "시체스 2시간 30분 핵심 동선",
+      "region": "barcelona",
+      "days": [
+        4
+      ]
+    },
+    "a-d-aligre-butte-aux-cailles-convention-batignolles": {
+      "displayName": "월요일 모듈 A–D (Aligre·Butte-aux-Cailles·Convention·Batignolles)",
+      "region": "paris",
+      "days": [
+        38
+      ]
+    },
     "abbaye-de-senanque": {
       "displayName": "Abbaye de Sénanque",
       "region": "luberon",
       "days": [
-        9,
-        15
+        18
       ]
     },
     "acchiardo": {
@@ -18,6 +31,34 @@
         8
       ]
     },
+    "annecy-palais-de-l-ile-chateau": {
+      "displayName": "Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈)",
+      "region": "lyon",
+      "days": [
+        26
+      ]
+    },
+    "arenes-d-arles": {
+      "displayName": "Arènes d'Arles",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
+    "arles-2": {
+      "displayName": "Arles (도시)",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
+    "atelier-des-lauves-atelier-de-cezanne": {
+      "displayName": "Atelier des Lauves (Atelier de Cézanne)",
+      "region": "aix",
+      "days": [
+        15
+      ]
+    },
     "bar-canete": {
       "displayName": "Bar Cañete",
       "region": "barcelona",
@@ -25,11 +66,49 @@
         3
       ]
     },
+    "barri-gotic": {
+      "displayName": "Barri Gòtic",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "bastide-du-jas-de-bouffan": {
+      "displayName": "Bastide du Jas de Bouffan",
+      "region": "aix",
+      "days": [
+        15
+      ]
+    },
     "biblioteca-de-catalunya": {
       "displayName": "Biblioteca de Catalunya",
       "region": "barcelona",
       "days": [
         3
+      ]
+    },
+    "bnf-richelieu-salle-ovale": {
+      "displayName": "BnF Richelieu (Salle Ovale)",
+      "region": "paris",
+      "days": [
+        33,
+        36
+      ]
+    },
+    "bodega-joan": {
+      "displayName": "Bodega Joan",
+      "region": "barcelona",
+      "days": [
+        2,
+        3
+      ]
+    },
+    "bourse-de-commerce-pinault-collection": {
+      "displayName": "Bourse de Commerce — Pinault Collection",
+      "region": "paris",
+      "days": [
+        40,
+        41
       ]
     },
     "cadaques": {
@@ -44,11 +123,24 @@
       "region": "lyon",
       "days": [
         1,
-        9,
         19,
-        20,
-        21,
+        23,
+        24,
         30
+      ]
+    },
+    "call": {
+      "displayName": "Call (유대인 지구)",
+      "region": "girona",
+      "days": [
+        4
+      ]
+    },
+    "cannes-forville-suquet-croisette-walk": {
+      "displayName": "Cannes Forville–Suquet–Croisette Walk",
+      "region": "nice",
+      "days": [
+        9
       ]
     },
     "casa-marieta": {
@@ -69,8 +161,35 @@
       "displayName": "Cathédrale Saint-Jean",
       "region": "lyon",
       "days": [
-        9,
-        21
+        24
+      ]
+    },
+    "cau-ferrat": {
+      "displayName": "Cau Ferrat",
+      "region": "barcelona",
+      "days": [
+        4
+      ]
+    },
+    "cem-joan-miro": {
+      "displayName": "CEM Joan Miró",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "chateau-royal-de-collioure": {
+      "displayName": "Château Royal de Collioure",
+      "region": "girona",
+      "days": [
+        5
+      ]
+    },
+    "chemin-du-fauvisme": {
+      "displayName": "Chemin du Fauvisme",
+      "region": "girona",
+      "days": [
+        5
       ]
     },
     "chez-mamie-lise": {
@@ -78,10 +197,9 @@
       "region": "lyon",
       "days": [
         5,
-        9,
         11,
         13,
-        23
+        26
       ]
     },
     "chez-pipo": {
@@ -95,8 +213,21 @@
       "displayName": "Cloître Saint-Trophime",
       "region": "avignon",
       "days": [
-        9,
-        19
+        22
+      ]
+    },
+    "colline-du-chateau-2": {
+      "displayName": "Colline du Château",
+      "region": "nice",
+      "days": [
+        8
+      ]
+    },
+    "cours-mirabeau-4": {
+      "displayName": "Cours Mirabeau (분수 4기·세잔 흔적 포함)",
+      "region": "aix",
+      "days": [
+        13
       ]
     },
     "cours-saleya": {
@@ -110,8 +241,21 @@
       "displayName": "Coustellet 생산자 시장",
       "region": "luberon",
       "days": [
-        9,
-        13
+        16
+      ]
+    },
+    "croix-rousse-2": {
+      "displayName": "Croix-Rousse 시장",
+      "region": "lyon",
+      "days": [
+        25
+      ]
+    },
+    "croix-rousse-cour-des-voraces-maison-des-canuts": {
+      "displayName": "Croix-Rousse (동네·Cour des Voraces·Maison des Canuts)",
+      "region": "lyon",
+      "days": [
+        25
       ]
     },
     "daniel-et-denise-crequi": {
@@ -120,19 +264,38 @@
       "days": [
         2,
         3,
-        9,
         19,
-        21,
-        22,
+        24,
+        25,
         30
+      ]
+    },
+    "fonda-cal-ros": {
+      "displayName": "Fonda Cal Ros",
+      "region": "girona",
+      "days": [
+        4
+      ]
+    },
+    "fort-saint-jean": {
+      "displayName": "Fort Saint-Jean",
+      "region": "aix",
+      "days": [
+        14
       ]
     },
     "fou-de-fafa": {
       "displayName": "Fou de Fafa",
       "region": "avignon",
       "days": [
-        9,
-        16
+        19
+      ]
+    },
+    "fourviere-lugdunum": {
+      "displayName": "Fourvière (바실리카·로마극장·Lugdunum·전망대)",
+      "region": "lyon",
+      "days": [
+        24
       ]
     },
     "girona-cathedral": {
@@ -142,29 +305,76 @@
         4
       ]
     },
+    "giverny-fondation-claude-monet": {
+      "displayName": "Giverny — Fondation Claude Monet",
+      "region": "paris",
+      "days": [
+        41
+      ]
+    },
+    "gordes-2": {
+      "displayName": "Gordes (마을·성)",
+      "region": "luberon",
+      "days": [
+        18
+      ]
+    },
+    "gordes-3": {
+      "displayName": "Gordes 화요시장",
+      "region": "luberon",
+      "days": [
+        18
+      ]
+    },
+    "goult": {
+      "displayName": "Goult",
+      "region": "luberon",
+      "days": [
+        17
+      ]
+    },
     "gout-bistrot": {
       "displayName": "Goût Bistrot",
       "region": "luberon",
       "days": [
-        9,
-        14
+        17
+      ]
+    },
+    "gracia": {
+      "displayName": "Gràcia 저녁 산책",
+      "region": "barcelona",
+      "days": [
+        2
+      ]
+    },
+    "grand-palais-cezanne-et-nous": {
+      "displayName": "Grand Palais — 'Cezanne et nous'",
+      "region": "paris",
+      "days": [
+        34,
+        36
       ]
     },
     "halles-de-lyon-paul-bocuse": {
       "displayName": "Halles de Lyon Paul Bocuse",
       "region": "lyon",
       "days": [
-        9,
-        22,
-        24
+        25,
+        27
+      ]
+    },
+    "ju-maison-de-cuisine": {
+      "displayName": "JU – Maison de Cuisine",
+      "region": "luberon",
+      "days": [
+        17
       ]
     },
     "la-fourchette": {
       "displayName": "La Fourchette",
       "region": "avignon",
       "days": [
-        9,
-        17
+        20
       ]
     },
     "la-paradeta-sagrada-familia": {
@@ -181,6 +391,13 @@
         6
       ]
     },
+    "la-roquette": {
+      "displayName": "La Roquette",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
     "la-table-alziari": {
       "displayName": "La Table Alziari",
       "region": "nice",
@@ -188,35 +405,96 @@
         8
       ]
     },
+    "la-zorra": {
+      "displayName": "La Zorra",
+      "region": "barcelona",
+      "days": [
+        4
+      ]
+    },
+    "latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou": {
+      "displayName": "Latin Quarter (Panthéon 외관·Rue Mouffetard·Sorbonne·Île Saint-Louis)",
+      "region": "paris",
+      "days": [
+        29
+      ]
+    },
     "le-freti": {
       "displayName": "Le Freti (Annecy)",
       "region": "lyon",
       "days": [
-        9,
-        23
+        26
       ]
     },
     "le-gout-du-jour": {
       "displayName": "Le Goût du Jour",
       "region": "avignon",
       "days": [
-        9,
-        17,
-        19
+        20,
+        22
+      ]
+    },
+    "le-marais-place-des-vosges-carnavalet-archives": {
+      "displayName": "Le Marais (Place des Vosges·Carnavalet·Archives)",
+      "region": "paris",
+      "days": [
+        30,
+        35
+      ]
+    },
+    "le-panier": {
+      "displayName": "Le Panier",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "le-rocher-monaco-ville": {
+      "displayName": "Le Rocher / Monaco-Ville",
+      "region": "nice",
+      "days": [
+        10
+      ]
+    },
+    "le-suquet-cannes": {
+      "displayName": "Le Suquet (Cannes)",
+      "region": "nice",
+      "days": [
+        9
       ]
     },
     "les-cocottes-saint-louis": {
       "displayName": "Les Cocottes Saint-Louis",
       "region": "avignon",
       "days": [
-        9,
-        16,
-        17,
-        18
+        19,
+        20,
+        21
+      ]
+    },
+    "les-halles": {
+      "displayName": "Les Halles",
+      "region": "avignon",
+      "days": [
+        20
+      ]
+    },
+    "llibreria-finestres": {
+      "displayName": "Llibreria Finestres",
+      "region": "barcelona",
+      "days": [
+        3
       ]
     },
     "lourmarin": {
       "displayName": "Lourmarin",
+      "region": "luberon",
+      "days": [
+        16
+      ]
+    },
+    "lourmarin-2": {
+      "displayName": "Lourmarin (마을·카뮈 묘·성)",
       "region": "luberon",
       "days": [
         16
@@ -236,6 +514,27 @@
         11
       ]
     },
+    "marche-forville": {
+      "displayName": "Marché Forville",
+      "region": "nice",
+      "days": [
+        9
+      ]
+    },
+    "marseille": {
+      "displayName": "Marseille (당일치기 축)",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "menerbes": {
+      "displayName": "Ménerbes",
+      "region": "luberon",
+      "days": [
+        18
+      ]
+    },
     "mercat-de-la-concepcio": {
       "displayName": "Mercat de la Concepció",
       "region": "barcelona",
@@ -248,6 +547,35 @@
       "region": "girona",
       "days": [
         6
+      ]
+    },
+    "monaco-rocher-port-monte-carlo-walk": {
+      "displayName": "Monaco Rocher–Port–Monte Carlo Walk",
+      "region": "nice",
+      "days": [
+        10
+      ]
+    },
+    "montagne-sainte-victoire-terrain-des-peintres": {
+      "displayName": "Montagne Sainte-Victoire · Terrain des Peintres",
+      "region": "aix",
+      "days": [
+        15
+      ]
+    },
+    "montmartre-south-pigalle-sacre-c-ur": {
+      "displayName": "Montmartre · South Pigalle (Sacré-Cœur 포함)",
+      "region": "paris",
+      "days": [
+        32
+      ]
+    },
+    "montorgueil-les-halles": {
+      "displayName": "Montorgueil · Les Halles",
+      "region": "paris",
+      "days": [
+        36,
+        40
       ]
     },
     "mucem": {
@@ -270,10 +598,16 @@
       "displayName": "Musée d'Orsay",
       "region": "paris",
       "days": [
-        6,
-        9,
-        10,
-        29
+        32,
+        39
+      ]
+    },
+    "musee-de-l-orangerie-monet-peindre-le-temps": {
+      "displayName": "Musée de l'Orangerie — 'Monet, peindre le temps'",
+      "region": "paris",
+      "days": [
+        36,
+        41
       ]
     },
     "musee-de-la-photographie-charles-negre": {
@@ -287,33 +621,29 @@
       "displayName": "Musée des Beaux-Arts",
       "region": "lyon",
       "days": [
-        9,
-        21,
-        22
+        24,
+        25
       ]
     },
     "musee-des-tissus": {
       "displayName": "Musée des Tissus",
       "region": "lyon",
       "days": [
-        9,
-        22
+        25
       ]
     },
     "musee-du-louvre": {
       "displayName": "Musée du Louvre",
       "region": "paris",
       "days": [
-        9,
-        28
+        31
       ]
     },
     "musee-gadagne": {
       "displayName": "Musée Gadagne",
       "region": "lyon",
       "days": [
-        9,
-        21
+        24
       ]
     },
     "musee-granet": {
@@ -332,6 +662,20 @@
         11
       ]
     },
+    "museu-de-maricel": {
+      "displayName": "Museu de Maricel",
+      "region": "barcelona",
+      "days": [
+        4
+      ]
+    },
+    "nice-old-town-castle-hill-walk": {
+      "displayName": "Nice Old Town–Castle Hill Walk",
+      "region": "nice",
+      "days": [
+        8
+      ]
+    },
     "notre-dame-de-la-garde": {
       "displayName": "Notre-Dame de la Garde",
       "region": "aix",
@@ -343,16 +687,21 @@
       "displayName": "Notre-Dame de Paris",
       "region": "paris",
       "days": [
-        9,
-        26
+        29
+      ]
+    },
+    "onyar": {
+      "displayName": "Onyar 강변",
+      "region": "girona",
+      "days": [
+        4
       ]
     },
     "palais-des-papes": {
       "displayName": "Palais des Papes",
       "region": "avignon",
       "days": [
-        9,
-        17
+        20
       ]
     },
     "palau-de-maricel": {
@@ -369,6 +718,55 @@
         6
       ]
     },
+    "parc-de-la-tete-d-or": {
+      "displayName": "Parc de la Tête d'Or",
+      "region": "lyon",
+      "days": [
+        25
+      ]
+    },
+    "passeig-de-la-muralla-2": {
+      "displayName": "성벽 (Passeig de la Muralla)",
+      "region": "girona",
+      "days": [
+        4
+      ]
+    },
+    "peralada": {
+      "displayName": "Peralada",
+      "region": "girona",
+      "days": [
+        5
+      ]
+    },
+    "peratallada": {
+      "displayName": "Peratallada",
+      "region": "girona",
+      "days": [
+        6
+      ]
+    },
+    "placa-del-rei-carrer-del-bisbe": {
+      "displayName": "고딕지구 핵심 산책 (Plaça del Rei–Carrer del Bisbe)",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "place": {
+      "displayName": "콜리우르 시장 (수요일)",
+      "region": "girona",
+      "days": [
+        5
+      ]
+    },
+    "place-du-forum": {
+      "displayName": "Place du Forum",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
     "place-richelme-place-des-precheurs": {
       "displayName": "시장 — Place Richelme · Place des Prêcheurs",
       "region": "aix",
@@ -381,40 +779,58 @@
       "displayName": "Pont du Gard",
       "region": "avignon",
       "days": [
-        9,
-        18
+        21
       ]
     },
     "pont-saint-benezet": {
       "displayName": "Pont Saint-Bénézet",
       "region": "avignon",
       "days": [
-        9,
-        17
+        20
+      ]
+    },
+    "promenade-des-anglais": {
+      "displayName": "Promenade des Anglais",
+      "region": "nice",
+      "days": [
+        7,
+        8,
+        11
+      ]
+    },
+    "quartier-mazarin": {
+      "displayName": "Quartier Mazarin",
+      "region": "aix",
+      "days": [
+        13
       ]
     },
     "restaurant-sevin": {
       "displayName": "Restaurant SEVIN",
       "region": "avignon",
       "days": [
-        9,
-        19
+        22
       ]
     },
     "rocher-des-doms": {
       "displayName": "Rocher des Doms",
       "region": "avignon",
       "days": [
-        9,
-        17
+        20
       ]
     },
     "roussillon-sentier-des-ocres": {
       "displayName": "Roussillon · Sentier des Ocres",
       "region": "luberon",
       "days": [
-        9,
-        14
+        17
+      ]
+    },
+    "rue-des-teinturiers": {
+      "displayName": "Rue des Teinturiers",
+      "region": "avignon",
+      "days": [
+        19
       ]
     },
     "sagrada-familia": {
@@ -431,6 +847,13 @@
         12
       ]
     },
+    "saint-paul-de-vence-fondation-maeght": {
+      "displayName": "Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함)",
+      "region": "aix",
+      "days": [
+        12
+      ]
+    },
     "sant-pau-recinte-modernista": {
       "displayName": "Sant Pau Recinte Modernista",
       "region": "barcelona",
@@ -438,20 +861,63 @@
         2
       ]
     },
+    "saone-rhone": {
+      "displayName": "Saône·Rhône 강변 산책",
+      "region": "lyon",
+      "days": [
+        23,
+        24,
+        25
+      ]
+    },
+    "theatre-antique": {
+      "displayName": "Théâtre antique",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
     "uzes": {
       "displayName": "Uzès Place aux Herbes·구시가지",
       "region": "avignon",
       "days": [
+        21
+      ]
+    },
+    "versailles-2": {
+      "displayName": "Versailles (궁전·트리아농·정원)",
+      "region": "paris",
+      "days": [
+        36
+      ]
+    },
+    "vieux-lyon-traboules": {
+      "displayName": "Vieux Lyon · traboules",
+      "region": "lyon",
+      "days": [
+        24
+      ]
+    },
+    "vieux-nice": {
+      "displayName": "Vieux Nice",
+      "region": "nice",
+      "days": [
+        8
+      ]
+    },
+    "vieux-port": {
+      "displayName": "Vieux-Port",
+      "region": "aix",
+      "days": [
         9,
-        18
+        14
       ]
     },
     "village-des-bories": {
       "displayName": "Village des Bories",
       "region": "luberon",
       "days": [
-        9,
-        15
+        18
       ]
     }
   }

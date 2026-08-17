@@ -611,7 +611,7 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 #### Palau de Maricel {{grade:alternative|대체}}
 
 > **⚠ 9/1(화)에는 관람할 수 없다.** {{fact:palau-de-maricel.hours}} · {{fact:palau-de-maricel.note}}
-> 이 날의 대안은 **Cau Ferrat + Museu de Maricel 통합권** — {{fact:cau-ferrat.hours}} · {{fact:cau-ferrat.price_adult}} {{badge:decision-pending|대안 확정 대기}}
+> 이 날의 대안은 **Cau Ferrat + Museu de Maricel 통합권** — {{fact:cau-ferrat.hours}} · {{fact:cau-ferrat.price_adult}}
 
 1909년, 미국인 사업가이자 미술 수집가 찰스 디어링이 마리셀 궁 건설을 후원했다. 카우 페라트 바로 옆이다.
 

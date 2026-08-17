@@ -13,6 +13,56 @@
     "note": 90
   },
   "places": {
+    "2-30": {
+      "displayName": "시체스 2시간 30분 핵심 동선",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음 — 구성 시설별로 확인 필요"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
+        }
+      }
+    },
+    "a-d-aligre-butte-aux-cailles-convention-batignolles": {
+      "displayName": "월요일 모듈 A–D (Aligre·Butte-aux-Cailles·Convention·Batignolles)",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 모듈(단일 시설 아님) — paris.fr 마르셰 보보/알리그르 페이지 404, 공식 휴무일 미확인"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 모듈 — 공식 운영시간 정보원 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 모듈 — 예약 개념 없음, 공식 확인 불가"
+        }
+      }
+    },
     "abbaye-de-senanque": {
       "displayName": "Abbaye de Sénanque",
       "region": "luberon",
@@ -38,8 +88,16 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중 개방(주간 정기휴관 없음). 일요일은 오전 폐쇄, 13:00부터만 개방. 2026년 예외 휴장: 1/1, 1/12~13, 1/30, 4/3, 12/25 — 9/13~16 여행기간에는 휴장 없음",
+          "source": "https://www.senanque.fr/en/visits-of-the-abbey-2/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 90 72 18 24"
     },
     "acchiardo": {
       "displayName": "Acchiardo",
@@ -74,8 +132,16 @@
           "verified_at": "2026-08-16",
           "ttl_days": 180,
           "blocked_reason": "공식 페이지 판독 실패 · 3자 출처 €7.45 는 미확정 — pending 유지"
+        },
+        "closed": {
+          "value": "연중무휴 — 24시간 365일 운행",
+          "source": "https://aerobusbarcelona.es/trip/lines-timetables-and-real-time-information/?lang=en",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 900 92 96 92"
     },
     "annecy": {
       "displayName": "Annecy 구시가지",
@@ -88,8 +154,30 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "구시가지 거리는 연중무휴(공공 공간). 단 Palais de l'Île·Musée-Château는 화요일 휴관",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "거리 산책 24시간. 박물관 6/1~9/30 10:30~18:00",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "구시가지 산책 예약 불필요. 박물관도 개인 방문 예약 불필요(단체 예약 04 85 46 76 78)",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 85 46 76 70"
     },
     "annecy-cruise": {
       "displayName": "Annecy 호수 크루즈",
@@ -110,8 +198,45 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "공식 홈페이지에 운항일·휴항일 정보 없음 — 예약 사이트(resa-bateaux-annecy.com)에서 당일 확인 필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.bateaux-annecy.com/",
+          "verified_at": "2026-08-17"
         }
-      }
+      },
+      "phone": "04 50 51 08 40"
+    },
+    "annecy-palais-de-l-ile-chateau": {
+      "displayName": "Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈)",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "화요일 휴관 (9/23은 수요일이라 정상 개관)",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "여름(6/1~9/30) 10:30~18:00 / 겨울(10/1~5/31) 10:00~12:30, 14:00~17:30. 9/23은 여름 시간 적용",
+          "source": "https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 불필요, 현장 매표. 단체는 04 85 46 76 78",
+          "source": "https://www.lac-annecy.com/visite-du-musee-chateau-d-annecy/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 85 46 76 70"
     },
     "arc-de-triomphe-longchamp": {
       "displayName": "Prix de l'Arc de Triomphe (Longchamp)",
@@ -131,6 +256,44 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 30
+        },
+        "note": {
+          "value": "2026 Qatar Prix de l'Arc de Triomphe 개최일은 10/03(토)·10/04(일) — 일요일 게이트 11:00 개방, 메인 레이스 16:05경. 그 외 일자 개방 여부는 공식 페이지에 미기재",
+          "source": "https://billetterie.france-galop.com/evenement/qatar-prix-de-larc-de-triomphe/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "arenes-d-arles": {
+      "displayName": "Arènes d'Arles",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -160,6 +323,53 @@
           "verified_at": "2026-08-16",
           "ttl_days": 90,
           "blocked_reason": "아를 9월 개관시간 공식 페이지 403/404 — 추정값 금지, pending 유지"
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        }
+      }
+    },
+    "arles-2": {
+      "displayName": "Arles (도시)",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -195,13 +405,50 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 30
+        },
+        "closed": {
+          "value": "2026 시즌(7/4~10/31) 중 주간 정기 휴관일 없음 — 매일 개방",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 42 91 95 30"
+    },
+    "atelier-des-lauves-atelier-de-cezanne": {
+      "displayName": "Atelier des Lauves (Atelier de Cézanne)",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "2026 시즌(7/4~10/31) 중 주간 정기 휴관일 없음 — 매일 개방",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "7/4~9/30 매일 09:00–18:00 (마지막 방문 출발 17:00) · 10/1~10/31 매일 10:00–17:00 (마지막 출발 16:00)",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "사전 예약 필수(Réservation obligatoire)·정원 제한. 온라인 예매 cezanne-en-provence.com/Billetterie 또는 엑상 관광안내소",
+          "source": "https://www.cezanne-en-provence.com/les-sites-de-cezanne/atelier-des-lauves/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 42 91 95 30"
     },
     "bar-canete": {
       "displayName": "Bar Cañete",
       "region": "barcelona",
-      "grade": "none",
+      "grade": "essential",
       "facts": {
         "hours": {
           "value": "",
@@ -210,8 +457,77 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "공식 사이트(barcanete.com, /bookings)에 영업시간 미게재 — 추정값 금지"
+        },
+        "closed": {
+          "value": "일요일 정기 휴무 (그 외 12/24 저녁·12/25·12/31 저녁·1/1 휴무)",
+          "source": "https://barcanete.com/contacto/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 가능·권장 — 홈페이지 예약 시스템 또는 전화 932 703 458 / reservas@barcanete.com",
+          "source": "https://barcanete.com/contacto/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+34 932 703 458"
+    },
+    "barri-gotic": {
+      "displayName": "Barri Gòtic",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공공 시가지 구역 — 운영시간·휴무 개념이 없고 공식 페이지에 해당 정보 없음"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공공 시가지 구역 — 해당 정보 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공공 시가지 구역 — 해당 정보 없음"
         }
       }
+    },
+    "bastide-du-jas-de-bouffan": {
+      "displayName": "Bastide du Jas de Bouffan",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "2026 시즌(7/4~10/31) 중 주간 정기 휴관일 없음 — 매일 개방",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/bastide-du-jas-de-bouffan-5538713/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "7/4~9/30 매일 09:00–18:00 · 10/1~10/31 매일 10:00–17:00",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/bastide-du-jas-de-bouffan-5538713/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "정원 제한·사전 예약 강력 권장(성수기 사실상 필수). 정원(공원)만 볼 경우 현장 접수",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/bastide-du-jas-de-bouffan-5538713/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 42 91 94 30"
     },
     "biblioteca-de-catalunya": {
       "displayName": "Biblioteca de Catalunya",
@@ -225,8 +541,79 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "공식 사이트(bnc.cat) robots/TLS 차단으로 판독 실패 — 우회 시도 안 함"
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 사이트 bnc.cat SSL 인증서 검증 실패 (2회 시도: /eng, /eng/Visit-us)",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 사이트 bnc.cat SSL 인증서 검증 실패",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 93 270 23 00"
+    },
+    "bnf-richelieu-salle-ovale": {
+      "displayName": "BnF Richelieu (Salle Ovale)",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "월요일 휴관 (공휴일, 부활절·성령강림 일요일 휴관)",
+          "source": "https://www.bnf.fr/fr/richelieu",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화 10:00–20:00 · 수–일 10:00–18:00",
+          "source": "https://www.bnf.fr/fr/richelieu",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 무료 자유 입장",
+          "source": "https://www.bnf.fr/fr/richelieu",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 1 53 79 59 59"
+    },
+    "bodega-joan": {
+      "displayName": "Bodega Joan",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월–금 19:00–01:00 · 토 20:00–01:00 · 일 08:30–01:00",
+          "source": "https://www.bodegajoan.com/en",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 — 공식 페이지에 7일 전부 영업시간 표기, 정기 휴무일 표기 없음",
+          "source": "https://www.bodegajoan.com/en",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 예약(CoverManager) 또는 전화 93 220 47 56",
+          "source": "https://www.bodegajoan.com/en",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+34 93 220 47 56"
     },
     "bourse-de-commerce-pinault-collection": {
       "displayName": "Bourse de Commerce — Pinault Collection",
@@ -281,8 +668,16 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "마을 자체는 상시 개방·정기 휴무 없음. 다만 관광안내소는 여름 월~토 09:00-21:00, 일 10:00-13:00·17:00-20:00 운영 (공식 페이지에 마을 휴무 언급 없음)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.visitcadaques.org/",
+          "verified_at": "2026-08-17"
         }
-      }
+      },
+      "phone": "+34 972 258 315"
     },
     "cafe-comptoir-abel": {
       "displayName": "Café Comptoir Abel",
@@ -302,13 +697,79 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://cafecomptoirabel.com/",
+          "verified_at": "2026-08-17"
         }
       }
+    },
+    "call": {
+      "displayName": "Call (유대인 지구)",
+      "region": "girona",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "유대인 지구 골목 자체는 상시 개방(공식 휴무 규정 없음). 지구 내 유대사 박물관은 1/1·1/6·12/25·12/26만 휴관",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "골목은 24시간 통행 가능(공식 시간 고지 없음). 유대사 박물관: 9/1~6/30 화~토 10:00-18:00, 월·일·공휴일 10:00-14:00",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "지구 산책은 예약 불필요. 박물관 입장료 6유로(할인 3유로), 사전예약 요구 규정 확인되지 않음",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 972 216 761"
+    },
+    "cannes-forville-suquet-croisette-walk": {
+      "displayName": "Cannes Forville–Suquet–Croisette Walk",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "도보 코스 자체는 공공 도로로 연중 개방. 단 구간별 휴무 있음 — 마르셰 포르빌은 9/1~6/30 월요일 휴장(월요일은 8~16시 브로캉트로 전환), 르 쉬케 정상 Musée des explorations du monde는 9월 월요일 휴관",
+          "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "포르빌 시장 화~일 07:00~13:00 / 쉬케 박물관 9월 화~일 10:00~13:00·14:00~18:00(입장 마감 30분 전) / 크루아제트 산책로는 시간 제한 없음",
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 공공 도로·시장 자유 입장",
+          "source": "https://www.cannes.com/fr/discover-cannes/marches-provencaux-et-brocantes.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 97 06 40 00"
     },
     "carrieres-des-lumieres": {
       "displayName": "Carrières des Lumières",
       "region": "avignon",
-      "grade": "alternative",
+      "grade": "priority",
       "facts": {
         "hours": {
           "value": "요일 교대 — 피카소·프리다 월·금·일 / 「Océan」 화·수·목·토",
@@ -316,13 +777,27 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (공휴일 포함 매일. 12/25·1/1 은 11:00~18:00 단축)",
+          "source": "https://www.carrieres-lumieres.com/en/plan-visit/opening-times-rates",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 예약 권장 (무료 대상자는 예약 불필요). 9월 09:30~19:00, 마지막 입장 폐관 1시간 전",
+          "source": "https://www.carrieres-lumieres.com/en/plan-visit/opening-times-rates",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
     "casa-marieta": {
       "displayName": "Casa Marieta",
       "region": "girona",
-      "grade": "none",
+      "grade": "priority",
       "facts": {
         "hours": {
           "value": "12:30–15:30 / 19:30–22:30",
@@ -338,8 +813,16 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "주간 휴무 요일 공식 미표기 — 화요일 저녁 영업 확정 불가 (전화 확인 필요)"
+        },
+        "booking": {
+          "value": "예약 권장. 공식 홈페이지 예약 폼(casamarieta.com/en/reservation-request/) 또는 전화. 점심 12:30-15:30, 저녁 19:30-22:30",
+          "source": "https://casamarieta.com/en/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 972 201 016"
     },
     "cassis": {
       "displayName": "Cassis 항구",
@@ -352,8 +835,16 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 30
+        },
+        "closed": {
+          "value": "항구 자체의 휴무일 공식 고지 없음. 관광안내소(Quai des Moulins) 9월 운영일은 공식 페이지에서 확인 실패 — 재확인 필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.ot-cassis.com/l-office.html",
+          "verified_at": "2026-08-17"
         }
-      }
+      },
+      "phone": "+33 4 28 01 01 03"
     },
     "castle-hill-elevator": {
       "displayName": "Castle Hill 무료 엘리베이터",
@@ -367,8 +858,16 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "nice.fr 공식 페이지에 엘리베이터 미기재 · 다른 공식 소스 미확보"
+        },
+        "closed": {
+          "value": "UNVERIFIED — 니스시 공식 페이지에서 엘리베이터 운행시간·휴무 표기를 찾지 못함. 공원 자체는 연중무휴 08:30~20:00(4/1~10/31)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17"
         }
-      }
+      },
+      "phone": "3906"
     },
     "cathedrale-saint-jean": {
       "displayName": "Cathédrale Saint-Jean",
@@ -387,6 +886,13 @@
           "confidence": "official",
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴(정기 휴관 없음). 단 월요일은 오후 14시부터 개방",
+          "source": "https://cathedrale-lyon.fr/cathedrale/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         }
       }
@@ -416,8 +922,106 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 일정 페이지가 열렸으나 예약 필요 여부 미게재. 요금·예약 페이지는 404/403"
         }
-      }
+      },
+      "phone": "+34 93 894 03 64"
+    },
+    "cem-joan-miro": {
+      "displayName": "CEM Joan Miró",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월–목 06:20–22:30 · 금 07:00–22:30 · 토 08:00–14:30 · 일·공휴일 09:00–15:30 (시설은 마감 30분 전 종료)",
+          "source": "https://www.cejoanmiro.cat/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://www.cejoanmiro.cat/",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 페이지에 정기 휴관일 표기 없음 (7일 운영시간만 게재)"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://www.cejoanmiro.cat/",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "강습 예약 메뉴만 있고 비회원 1일 입장 가능 여부·예약 요건 미게재"
+        }
+      },
+      "phone": "+34 934 234 350"
+    },
+    "chateau-royal-de-collioure": {
+      "displayName": "Château Royal de Collioure",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴(1/1·5/1·8/15-16·12/25만 휴관). 9월 초 여행일 영향 없음",
+          "source": "https://www.ledepartement66.fr/dossier/le-chateau-royal-de-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "9~10월 10:00-18:00 (7~8월 09:30-18:30). 마지막 입장은 폐관 45분 전",
+          "source": "https://www.ledepartement66.fr/dossier/le-chateau-royal-de-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인은 예약 불필요(현장 발권, 성인 8유로·7~18세 4유로). 가이드 투어 10:30·14:30, 단체는 사전 예약 권장",
+          "source": "https://www.ledepartement66.fr/dossier/le-chateau-royal-de-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 68 82 06 43"
+    },
+    "chemin-du-fauvisme": {
+      "displayName": "Chemin du Fauvisme",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴. 야외 경로(마티스·드랭 복제화 17점)로 상시 자유 개방",
+          "source": "https://www.tourisme-collioure.com/activites-collioure/immersion-culturelle-collioure/le-chemin-du-fauvisme-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "시간 제한 없음(야외 무료 코스). 가이드 동반 산책은 4~11월 운영",
+          "source": "https://www.tourisme-collioure.com/activites-collioure/immersion-culturelle-collioure/le-chemin-du-fauvisme-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "자율 답사는 예약 불필요. 가이드 투어만 관광안내소·Vitrine sur le Fauvisme·온라인 예약. 해설 책자 6유로",
+          "source": "https://www.tourisme-collioure.com/activites-collioure/immersion-culturelle-collioure/le-chemin-du-fauvisme-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 68 82 15 47"
     },
     "chez-mamie-lise": {
       "displayName": "Chez Mamie Lise (Annecy)",
@@ -444,8 +1048,16 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (Ouvert tous les jours)",
+          "source": "https://www.mamie-lise.com/contact",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 50 45 41 18"
     },
     "chez-pipo": {
       "displayName": "Chez Pipo",
@@ -493,8 +1105,62 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
         }
       }
+    },
+    "cn-atletic-barceloneta": {
+      "displayName": "CN Atlètic-Barceloneta",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월–금 06:30–23:00 · 토 07:00–23:00 · 일·공휴일 08:00–20:00 (5/3–9/30), 08:00–17:00 (10/1–5/2)",
+          "source": "https://www.cnab.cat/el-club/tarifas/horarios-generales/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 — 365일 운영",
+          "source": "https://www.cnab.cat/el-club/tarifas/horarios-generales/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://www.cnab.cat/el-club/tarifas/horarios-generales/",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 페이지에 비회원 입장·예약 가능 여부 미게재"
+        }
+      },
+      "phone": "+34 93 221 00 10"
     },
     "colline-du-chateau": {
       "displayName": "Colline du Château (성채 언덕)",
@@ -521,8 +1187,52 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·무료 입장",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "3906"
+    },
+    "colline-du-chateau-2": {
+      "displayName": "Colline du Château",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "4/1~10/31 매일 08:30~20:00 (11/1~3/31은 08:30~18:00). 9월 방문은 20시 폐장",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·무료 입장",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "3906"
     },
     "collioure": {
       "displayName": "Collioure",
@@ -549,6 +1259,49 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴(마을 자체 휴무 없음). 성채는 1/1·5/1·8/15-16·12/25만 휴관",
+          "source": "https://www.ledepartement66.fr/dossier/le-chateau-royal-de-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "마을 방문 자체는 예약 불필요. 여름철 주차난으로 공식 안내가 대중교통 이용을 권고",
+          "source": "https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 68 82 15 47"
+    },
+    "cours-mirabeau-4": {
+      "displayName": "Cours Mirabeau (분수 4기·세잔 흔적 포함)",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "공공 가로 — 상시 개방, 휴무 없음 (Accès libre)",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-cours-mirabeau-5538184/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "공공 가로 — 개방 시간 제한 없음(24시간). 화·목·토 오전 직물·공예·골동 노점",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-cours-mirabeau-5538184/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요. 관광안내소 가이드 투어만 별도 예약",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-cours-mirabeau-5538184/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -563,6 +1316,20 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴이나 월요일은 성격이 바뀐다 — 꽃·청과 시장은 화~일요일이고, 월요일에는 약 180개 상인의 골동품(브로캉트) 시장으로 전환된다 (07:00~18:00)",
+          "source": "https://www.explorenicecotedazur.com/en/event/marche-a-la-brocante-saleya/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 개방형 노천시장",
+          "source": "https://www.explorenicecotedazur.com/en/culture/cours-saleya/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -576,6 +1343,20 @@
           "confidence": "official",
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "일요일 장터만 정기 개장(3/29~12/27). 수요일 저녁 장터는 9/2 로 종료 — 그 외 요일 시장 없음",
+          "source": "https://www.destinationluberon.com/savourer/marches/marche-paysan-de-coustellet",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·입장 무료 (뤼베롱 지역자연공원 marché paysan 인증 장터)",
+          "source": "https://www.destinationluberon.com/savourer/marches/marche-paysan-de-coustellet",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         }
       }
@@ -598,8 +1379,73 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "booking": {
+          "value": "동네 산책 자체는 예약 불필요. Maison des Canuts 가이드 투어만 예약 필수(온라인 maisondescanuts.mapado.com)",
+          "source": "https://maisondescanuts.fr/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 78 28 62 04"
+    },
+    "croix-rousse-2": {
+      "displayName": "Croix-Rousse 시장",
+      "region": "lyon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "월요일 휴장 (화·수·목·금·토·일 개장)",
+          "source": "https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화·금·토·일 6:00~13:30 / 수·목 6:00~13:00",
+          "source": "https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 (야외 노천시장)",
+          "source": "https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
+    },
+    "croix-rousse-cour-des-voraces-maison-des-canuts": {
+      "displayName": "Croix-Rousse (동네·Cour des Voraces·Maison des Canuts)",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "Maison des Canuts 일요일·월요일 휴관, 공휴일 휴관. Cour des Voraces 등 트라불은 연중무휴",
+          "source": "https://maisondescanuts.fr/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "Maison des Canuts 화~금 10:00~13:00, 14:00~18:00 / 토 10:00~18:00. 가이드 투어 화~토 11:00·15:30. 트라불 매일 7:00~19:00",
+          "source": "https://maisondescanuts.fr/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "Maison des Canuts 가이드 투어 예약 필수 — maisondescanuts.mapado.com 온라인 예약. 트라불은 예약 불필요",
+          "source": "https://maisondescanuts.fr/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 78 28 62 04"
     },
     "daniel-et-denise-crequi": {
       "displayName": "Daniel et Denise Créqui",
@@ -654,8 +1500,16 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "마을(중세 골목)은 공공 도로로 연중 개방. 정상 Jardin Exotique는 별도 유료 시설 — 공식 안내 페이지 접근 실패로 9월 운영시간 미확인",
+          "source": "https://www.eze-tourisme.com/fr/decouvrir-visiter-se-divertir/visiter-eze/le-village/24-horaires-et-tarifs.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 93 41 10 30"
     },
     "far-de-tossa": {
       "displayName": "Far de Tossa (Tossa de Mar)",
@@ -675,8 +1529,45 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴. 월~일 매일 개방",
+          "source": "https://visittossa.com/en/cultural-heritage/art-and-culture/tossas-lighthouse/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 972 343 359"
+    },
+    "fonda-cal-ros": {
+      "displayName": "Fonda Cal Ros",
+      "region": "girona",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "화요일·수요일 휴무",
+          "source": "https://fondacalros.com/en/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "13:00-16:00 / 19:00-23:00 (화·수 휴무)",
+          "source": "https://fondacalros.com/en/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 홈페이지 예약 페이지(fondacalros.com/en/book-a-table/) 또는 전화 예약",
+          "source": "https://fondacalros.com/en/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+34 972 621 017"
     },
     "fondation-maeght": {
       "displayName": "Fondation Maeght",
@@ -720,6 +1611,35 @@
         }
       }
     },
+    "fort-saint-jean": {
+      "displayName": "Fort Saint-Jean",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "화요일 휴관 (그 외 5/1·12/25 휴관)",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화요일 제외 매일 10:00–20:00 (J4와 동일). 야외 구역 입장 무료",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 불필요(야외 무료). 단체는 가이드 투어 15일 전·자율 관람 1주 전 예약",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 84 35 13 13"
+    },
     "fou-de-fafa": {
       "displayName": "Fou de Fafa",
       "region": "avignon",
@@ -755,6 +1675,35 @@
         }
       }
     },
+    "fourviere-lugdunum": {
+      "displayName": "Fourvière (바실리카·로마극장·Lugdunum·전망대)",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "바실리카 연중무휴. Lugdunum 박물관 월요일 휴관. 로마극장 연중무휴",
+          "source": "http://lugdunum.grandlyon.com/fr/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "바실리카 7:00~20:00(일요일 21:00), 크립트 8:30~18:30, 정원 6:30~22:30. Lugdunum 박물관 화~금 11:00~18:00, 토·일 10:00~18:00. 로마극장 5/2~9/30 7:00~21:00",
+          "source": "https://www.fourviere.org/fr/horaires/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "바실리카 개인 방문 무료·예약 불필요, 가이드 투어(지붕·보물관)만 reservation.fourviere.org 예약. Lugdunum 개인 방문 예약 불필요",
+          "source": "https://www.fourviere.org/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 72 38 49 30"
+    },
     "girona-cathedral": {
       "displayName": "Girona Cathedral",
       "region": "girona",
@@ -773,6 +1722,46 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "연중무휴(정기 휴관 없음). 연중 휴관은 12/25·1/1·성금요일이며, 임시 전례 시간에는 문화관람 중단",
+          "source": "https://catedraldegirona.cat/en/girona-cathedral-cultural-visit/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 티켓 사이트 tickets.catedraldegirona.cat 에서 온라인 구매 가능. 대성당+산 펠리우 통합권 7.5유로(오디오가이드 포함)",
+          "source": "https://www.girona.cat/turisme/cat/monuments_catedral.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+34 972 427 189"
+    },
+    "giverny-fondation-claude-monet": {
+      "displayName": "Giverny — Fondation Claude Monet",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "fondation-monet.com 접속 실패 (ECONNRESET / ECONNREFUSED, 2회 시도)",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "fondation-monet.com 접속 실패 (2회 시도)",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "fondation-monet.com 접속 실패 (2회 시도)",
+          "ttl_days": 90
         }
       }
     },
@@ -787,13 +1776,114 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "마을 자체는 상시 개방·휴무 없음. 장날은 화요일 오전 — 그 외 요일 시장 없음",
+          "source": "https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "마을 산책·주차 모두 예약 불필요",
+          "source": "https://www.gordes-village.com/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 72 02 08"
+    },
+    "gordes-2": {
+      "displayName": "Gordes (마을·성)",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "성(Château de Gordes, 전시공간)은 주 7일 개관. 2026년 휴관: 4/26~27(도서전), 12/19~22(크리스마스 마켓), 12/25, 1/1 — 9/13~16 휴관 없음",
+          "source": "https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "성 10:00~13:00(최종입장 12:30), 14:00~18:00(최종입장 17:30). 성인 6유로",
+          "source": "https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 불필요(현장 발권). 10인 이상 단체만 사전 문의",
+          "source": "https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 32 50 11 41"
+    },
+    "gordes-3": {
+      "displayName": "Gordes 화요시장",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "화요일 오전에만 개장 — 그 외 요일 시장 없음",
+          "source": "https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화요일 08:00~13:00, 마을 중심부(Place du Château·Place Genty Pantaly·Place du jeu de boules·시청 정원·Charité St-Eutrope 주차장)",
+          "source": "https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·무료",
+          "source": "https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 72 02 08"
+    },
+    "goult": {
+      "displayName": "Goult",
+      "region": "luberon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "마을 상시 개방·휴무 없음. 장날은 목요일 오전(Rue de la République, 상인회 주최) — 그 외 요일 시장 없음",
+          "source": "https://www.goult.fr/commerces/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "공식 페이지에 마을·시장 구체 시각 미표기(목요일 '오전'까지만 명시)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.goult.fr/commerces/",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "source": "https://www.goult.fr/commerces/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
     "gout-bistrot": {
       "displayName": "Goût Bistrot",
       "region": "luberon",
-      "grade": "none",
+      "grade": "priority",
       "facts": {
         "hours": {
           "value": "월 12:00–13:30 · 19:00–21:00 · 금–일 영업",
@@ -815,6 +1905,39 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "booking": {
+          "value": "예약 권장 — 공식 사이트 온라인 예약 또는 전화·이메일(contact@goutbistrot.com). 소재지는 Goult 가 아니라 Bonnieux(5 Place Carnot, 84480)",
+          "source": "https://www.goutbistrot.com/contact/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 04 73 52"
+    },
+    "gracia": {
+      "displayName": "Gràcia 저녁 산책",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "동네 산책 코스 — 공식 운영정보 대상 아님"
         }
       }
     },
@@ -828,6 +1951,55 @@
           "confidence": "official",
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 휴관 (12/25·5/1·7/14 휴관)",
+          "source": "https://www.grandpalais.fr/en/plan-your-visit",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화–일 09:30–20:00 · 금요일 야간 22:30까지",
+          "source": "https://www.grandpalais.fr/en/plan-your-visit",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 사전 예약 강력 권장 — 현장 구매는 잔여분 보장 없음",
+          "source": "https://www.grandpalais.fr/en/plan-your-visit",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "grand-palais-cezanne-et-nous": {
+      "displayName": "Grand Palais — 'Cezanne et nous'",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "월요일 휴관",
+          "source": "https://www.grandpalais.fr/en/program/cezanne-et-nous",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "전시 기간 2026-09-23 ~ 2027-01-17 · 화–일 10:00–19:30 · 금요일 야간 22:00까지",
+          "source": "https://www.grandpalais.fr/en/program/cezanne-et-nous",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 시간지정 예약 필수 (오픈권은 2027-01-03까지만 판매, 마지막 2주 제외)",
+          "source": "https://www.grandpalais.fr/en/program/cezanne-et-nous",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         }
       }
@@ -849,6 +2021,13 @@
           "confidence": "official",
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "시장 입장 예약 불필요. 내부 레스토랑·écailler는 각 점포에 개별 예약 권장",
+          "source": "https://www.halles-de-lyon-paulbocuse.com/informations-utiles/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         }
       }
@@ -879,6 +2058,13 @@
           "verified_at": "2026-08-16",
           "ttl_days": 90,
           "blocked_reason": "Hertz 공식이 키드롭 조건을 게시하지 않음 — 전화 확인 필요"
+        },
+        "closed": {
+          "value": "공식 Hertz 지점 페이지에서 영업일·영업시간 확인 불가 — 미확인",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.hertz.com/us/en/location/france/avignon/avnx92",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -901,8 +2087,45 @@
           "source": "decisions.json",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴이나 매일 13:00~14:00 점심 휴무가 있다. 일요일은 08:30~12:30 단축 영업",
+          "source": "https://www.hertz.fr/p/location-de-voiture/france/nice/gare-de-nice",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 97 03 01 20"
+    },
+    "ju-maison-de-cuisine": {
+      "displayName": "JU – Maison de Cuisine",
+      "region": "luberon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "수요일·목요일 휴무",
+          "source": "https://en.luberon-apt.fr/prepare-your-stay/restaurants/ju-maison-de-cuisine-1181855",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "월·화·금·토 12:00~13:30 및 19:00~21:00, 일 12:00~13:30(점심만). 소재지 Bonnieux(2 rue Lucien Blanc)",
+          "source": "https://en.luberon-apt.fr/prepare-your-stay/restaurants/ju-maison-de-cuisine-1181855",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 필수 — 공식 사이트 온라인 예약(Zenchef) 또는 전화·이메일(contact@ju-maisondecuisine.com)",
+          "source": "https://ju-maisondecuisine.com/EN/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 75 88 62"
     },
     "la-fourchette": {
       "displayName": "La Fourchette",
@@ -935,7 +2158,7 @@
     "la-paradeta-sagrada-familia": {
       "displayName": "La Paradeta Sagrada Família",
       "region": "barcelona",
-      "grade": "none",
+      "grade": "priority",
       "facts": {
         "hours": {
           "value": "화–토 13:00–16:00 / 20:00–23:30 · 일 13:00–16:00",
@@ -957,8 +2180,17 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 30
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://www.laparadeta.com/en/seafood-restaurants/",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 페이지에 예약 관련 안내 없음 (영업시간만 게재: 월 휴무, 화–일 13:00–16:00 / 20:00–23:30)"
         }
-      }
+      },
+      "phone": "+34 934 500 191"
     },
     "la-roca-peratallada": {
       "displayName": "La Roca (Peratallada)",
@@ -972,6 +2204,45 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "공식 사이트 접속 실패(robots/timeout) · 관광청 venue 페이지에 시간 정보 없음"
+        },
+        "closed": {
+          "value": "공식 홈페이지에 휴무일·영업시간 표기가 전혀 없음. 전화로 직접 확인 필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://restaurantlaroca.cat/",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 972 634 172 / +34 606 911 243"
+    },
+    "la-roquette": {
+      "displayName": "La Roquette",
+      "region": "avignon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -986,6 +2257,67 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "UNVERIFIED — 공식 지역관광청 페이지는 '2026년 연중 매일 영업'이라 하나 요일별 휴무를 명시하지 않는다. 식당 자체 공식 사이트 없음. 방문 전 전화 확인 필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://provence-alpes-cotedazur.com/en/plan-your-stay/restaurants/all-restaurants/restaurant-la-table-alziari-nice-en-2862337/",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+33 4 93 80 34 03"
+    },
+    "la-zorra": {
+      "displayName": "La Zorra",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "매일 13:00–16:30 · 20:30–23:00",
+          "source": "https://restaurantelazorra.com/horario-y-contacto/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 — 월–일 영업, 정기 휴무일 표기 없음",
+          "source": "https://restaurantelazorra.com/horario-y-contacto/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 예약 가능 (홈페이지 예약 시스템)",
+          "source": "https://restaurantelazorra.com/reserva-online/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou": {
+      "displayName": "Latin Quarter (Panthéon 외관·Rue Mouffetard·Sorbonne·Île Saint-Louis)",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구(district) 단위 항목 — 단일 공식 운영정보 없음. paris-pantheon.fr 실용정보 페이지 404"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 공식 운영시간 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 예약 대상 아님"
         }
       }
     },
@@ -1042,8 +2374,16 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (OUVERT 7/7 MIDI & SOIR)",
+          "source": "https://www.lefreti.fr/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 50 51 29 52"
     },
     "le-gout-du-jour": {
       "displayName": "Le Goût du Jour",
@@ -1057,6 +2397,70 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "공식 사이트에 영업시간 미게시 (전화 +33 4 32 76 32 16)"
+        },
+        "closed": {
+          "value": "화·수요일 휴무 (목~월 영업, 점심 12:00~13:30 / 저녁 19:00~21:30)",
+          "source": "https://en.grandavignon-destinations.fr/restaurant/restaurant-le-gout-du-jour/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 32 76 32 16"
+    },
+    "le-marais-place-des-vosges-carnavalet-archives": {
+      "displayName": "Le Marais (Place des Vosges·Carnavalet·Archives)",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "Musée Carnavalet 월요일 휴관 (화–일 개관)",
+          "source": "https://www.carnavalet.paris.fr/en/informations-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "Musée Carnavalet 화–일 10:00–18:00 (매표 17:15 마감)",
+          "source": "https://www.carnavalet.paris.fr/en/informations-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "Musée Carnavalet 상설전 무료·예약 불필요 / 기획전은 유료 온라인 사전예약 권장",
+          "source": "https://www.carnavalet.paris.fr/en/informations-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "le-panier": {
+      "displayName": "Le Panier",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "공개 구역 — 공식 페이지에 휴무·개방시간 고지 없음(상시 통행). 개별 상점·미술관은 별도",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "공식 개방시간 고지 없음 — 공공 가로. 경사·계단 많음",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -1071,8 +2475,86 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "구시가지 골목은 연중 개방. 대공궁(Palais Princier) 견학은 2026년 10/15까지 운영이며 9/25는 16시 조기 폐장, 10/1~3·10/7 휴관",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "골목은 시간 제한 없음. 대공궁 9월 10:00~18:00(매표 17:00 마감). 근위병 교대식은 매일 11:55 정각 Place du Palais",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "골목 산책은 예약 불필요. 대공궁은 온라인 사전 구매 가능(성인 10유로, 6~17세·학생 5유로)",
+          "source": "https://palais.mc/fr/musees-et-visites/vente-des-places-en-ligne-1-31.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
+    },
+    "le-rocher-monaco-ville": {
+      "displayName": "Le Rocher / Monaco-Ville",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "구시가지 골목은 연중 개방. 대공궁 견학은 2026년 10/15까지, 9/25 16시 조기 폐장",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "골목은 시간 제한 없음. 대공궁 9월 10:00~18:00(매표 17:00 마감), 근위병 교대식 매일 11:55",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "산책은 예약 불필요. 대공궁 입장권만 온라인 사전 구매 가능",
+          "source": "https://palais.mc/fr/musees-et-visites/vente-des-places-en-ligne-1-31.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "le-suquet-cannes": {
+      "displayName": "Le Suquet (Cannes)",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "언덕 골목·전망대는 연중 개방. 정상의 Musée des explorations du monde(Place de la Castre)는 9월 월요일 휴관",
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "골목은 시간 제한 없음. 정상 박물관 9월 화~일 10:00~13:00·14:00~18:00, 매표·입장은 폐관 30분 전 마감",
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 개별 방문 자유 입장",
+          "source": "https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 89 82 26 26"
     },
     "les-baux-de-provence": {
       "displayName": "Les Baux-de-Provence",
@@ -1092,8 +2574,16 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "마을 자체는 연중 개방. 관광안내소는 12/25·1/1 휴무 (5~9월 월~금 09:00~18:00, 주말·공휴일 10:00~17:30)",
+          "source": "https://www.lesbauxdeprovence.com/en/prepare-you-visit/practical-information/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 90 54 34 39"
     },
     "les-cocottes-saint-louis": {
       "displayName": "Les Cocottes Saint-Louis",
@@ -1113,8 +2603,16 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (매일 영업). 구체적 영업시간은 공식 페이지 미기재",
+          "source": "https://www.hotel-cloitre-saintlouis-avignon.fr/fr/restauration/les-cocottes-saintlouis",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 90 27 55 55"
     },
     "les-halles": {
       "displayName": "Les Halles",
@@ -1141,6 +2639,41 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 (자유 입장)",
+          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "les-halles-d-avignon": {
+      "displayName": "Les Halles d'Avignon",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "월요일 휴무 (화~일 영업)",
+          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "화~일 06:00~14:00",
+          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 (자유 입장)",
+          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -1162,8 +2695,46 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "트램·버스는 연중 운행. 단 Dubouchage 33번지 본점 창구는 월~금 07:30~19:00, 토 08:30~15:00, 일요일·공휴일 휴무. 일요일·공휴일 'À la Carte' 수요응답 노선은 09:00~18:00이며 사전 예약 필수(최대 14일 전)",
+          "source": "https://www.lignesdazur.com/fr/agences-lignes-dazur",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "08 1006 1006"
+    },
+    "llibreria-finestres": {
+      "displayName": "Llibreria Finestres",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월–토 10:00–21:00 (Diputació 249 본점 및 249/250 아트·코믹관 동일)",
+          "source": "https://www.llibreriafinestres.com/es/contacto/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "일요일 휴무 — 공식 영업일이 월–토",
+          "source": "https://www.llibreriafinestres.com/es/contacto/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://www.llibreriafinestres.com/es/contacto/",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 페이지에 예약 관련 안내 없음 (행사 참가는 별도)"
+        }
+      },
+      "phone": "+34 933 840 809"
     },
     "lourmarin": {
       "displayName": "Lourmarin",
@@ -1183,8 +2754,52 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "마을 상시 개방·휴무 없음. 장날은 금요일 오전(연중) — 그 외 요일 시장 없음. 4~10월 화요일 17:00부터 La Fruitière Numérique 에서 소규모 생산자 장터 추가",
+          "source": "https://lourmarin.com/marches/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "마을·시장 모두 예약 불필요",
+          "source": "https://lourmarin.com/marches/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 90 68 04 13"
+    },
+    "lourmarin-2": {
+      "displayName": "Lourmarin (마을·카뮈 묘·성)",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "성(Château de Lourmarin)은 주간 정기휴관 없이 매일 개관. 휴관은 12/25·1/1 및 연차휴관 1/5~16 — 9/13~16 휴관 없음",
+          "source": "https://chateaudelourmarin.com/infos-pratiques/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "성 5~9월 10:30~18:45, 최종 입장은 폐관 45분 전",
+          "source": "https://chateaudelourmarin.com/infos-pratiques/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 불필요. 12인 이상 단체 가이드투어만 사전 예약(불어 6.5유로·영어 8유로/인)",
+          "source": "https://chateaudelourmarin.com/infos-pratiques/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 68 15 23"
     },
     "macba": {
       "displayName": "MACBA",
@@ -1232,8 +2847,16 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 시가 관리하는 개방형 노천시장",
+          "source": "https://www.nice.fr/commerce-local/les-marches-de-plein-vent/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "3906"
     },
     "marche-forville": {
       "displayName": "Marché Forville",
@@ -1253,8 +2876,45 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 개방형 프로방스 시장",
+          "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 97 06 40 00"
+    },
+    "marche-forville-cannes": {
+      "displayName": "Marché Forville (Cannes)",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "9/1~6/30 월요일 휴장 (7~8월만 무휴). 월요일에는 같은 자리에서 08:00~16:00 브로캉트 시장이 선다 — 식재료 시장을 기대하고 월요일에 가면 안 된다",
+          "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "9/1~6/30 화~일 07:00~13:00 (7/1~8/31은 월~일 07:00~13:00). 2026년 현재 전면 개보수 공사 중이라 시장이 두 곳으로 분산 — 생산자는 Allées de la Liberté 가설 홀, 재판매상은 포르빌 동쪽 구역",
+          "source": "https://www.cannes.com/fr/cadre-de-vie/travaux-en-cours/marche-forville.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 97 06 40 00"
     },
     "marche-provencal-antibes": {
       "displayName": "Marché Provençal Antibes",
@@ -1277,10 +2937,75 @@
         }
       }
     },
+    "marseille": {
+      "displayName": "Marseille (당일치기 축)",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "도시 축 — 휴무 개념 없음. 단 Mucem·Fort Saint-Jean 은 화요일 휴관 (9/11 금요일 방문은 해당 없음)",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "시설별 상이 — Mucem/Fort Saint-Jean 10:00–20:00, 구항 어시장 매일 07:30–12:30",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "도시 자체 예약 없음. 개별 시설(Mucem 등)은 개인 방문 예약 불필요",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 84 35 13 13"
+    },
+    "menerbes": {
+      "displayName": "Ménerbes",
+      "region": "luberon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "마을 상시 개방·휴무 없음. 장날은 목요일(4월 중순~10월 말) — 그 외 요일 시장 없음",
+          "source": "https://www.menerbes.fr/en/street-market/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "목요일 시장 08:00~13:00(Parking Rossignol·rue Marcellin Poncet). Maison de la Truffe et du Vin 월·화 10:00~19:00, 금 10:00~22:00, 토·일 10:00~19:00",
+          "source": "https://www.menerbes.fr/events/marche/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "마을·시장 예약 불필요",
+          "source": "https://www.menerbes.fr/en/street-market/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "마을 안 Maison de la Truffe et du Vin 은 수·목 휴무",
+          "source": "https://www.menerbes.fr/en/street-market/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 72 22 05"
+    },
     "mercat-de-la-concepcio": {
       "displayName": "Mercat de la Concepció",
       "region": "barcelona",
-      "grade": "none",
+      "grade": "priority",
       "facts": {
         "hours": {
           "value": "월·토 08:00–15:00 · 화–금 08:00–20:00",
@@ -1288,6 +3013,21 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "일요일 휴장 (꽃집은 8월 제외 매일 운영)",
+          "source": "https://www.laconcepcio.cat/en/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://www.laconcepcio.cat/en/",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공설시장 — 공식 페이지에 예약 관련 안내 없음"
         }
       }
     },
@@ -1301,6 +3041,13 @@
           "confidence": "official",
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "일요일 휴무(월~토만 영업). 월~금 07:00-14:00, 토·공휴일 전날 07:00-14:30",
+          "source": "https://www.mercatlleo.cat/info-practica/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         }
       }
@@ -1316,6 +3063,80 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "도시 자체는 연중 개방. 대공궁은 2026년 10/15까지 견학 운영, 6/4~7 F1 그랑프리 기간과 10/1~3·10/7 휴관, 9/25는 16시 조기 폐장",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "9월 대공궁 10:00~18:00(매표 17:00 마감), 근위병 교대식 매일 11:55",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "입국·시내 이동에 예약 불필요. 대공궁 그랑 아파르트망만 온라인 사전 구매 가능 (성인 10유로)",
+          "source": "https://palais.mc/fr/musees-et-visites/vente-des-places-en-ligne-1-31.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "monaco-rocher-port-monte-carlo-walk": {
+      "displayName": "Monaco Rocher–Port–Monte Carlo Walk",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "도보 코스 전 구간(로셰 골목·포르 에르퀼·몬테카를로)은 공공 도로로 연중 개방",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "산책 자체는 시간 제한 없음. 코스 중 대공궁 광장 근위병 교대식 11:55에 맞추면 좋다",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "source": "https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
+    },
+    "montagne-sainte-victoire-terrain-des-peintres": {
+      "displayName": "Montagne Sainte-Victoire · Terrain des Peintres",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "공식 페이지에서 휴무 정보 확인 실패 — 현재 명칭 Jardin des Peintres, 무료 개방으로 알려져 있으나 공식 출처 미확보",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "공식 출처 미확보 — 재확인 필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "공식 출처 미확보 — 재확인 필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -1330,6 +3151,77 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 단일 공식 운영정보 없음"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 공식 운영시간 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 예약 대상 아님"
+        }
+      }
+    },
+    "montmartre-south-pigalle-sacre-c-ur": {
+      "displayName": "Montmartre · South Pigalle (Sacré-Cœur 포함)",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "Sacré-Cœur 대성당 연중무휴",
+          "source": "https://www.sacre-coeur-montmartre.com/english/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "Sacré-Cœur 대성당 매일 06:30–22:30",
+          "source": "https://www.sacre-coeur-montmartre.com/english/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공식 페이지에 예약 관련 안내 미게재"
+        }
+      },
+      "phone": "+33 1 53 41 89 00"
+    },
+    "montorgueil-les-halles": {
+      "displayName": "Montorgueil · Les Halles",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 단일 공식 운영정보 없음"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 공식 운영시간 없음"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "지구 단위 항목 — 예약 대상 아님"
         }
       }
     },
@@ -1351,13 +3243,28 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "hours": {
+          "value": "화요일 제외 매일 10:00–20:00 (5/1·12/25 휴관). 야외 구역 무료",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 의무 없음(통합권 1매로 전 전시). 단체는 가이드 15일 전·자율 1주 전 예약 필수",
+          "source": "https://www.mucem.org/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 84 35 13 13"
     },
     "musee-chagall": {
       "displayName": "Musée Chagall",
       "region": "nice",
-      "grade": "none",
+      "grade": "alternative",
       "facts": {
         "hours": {
           "value": "5/2–10/31 10:00–18:00 연속 개관 (점심 휴관 없음)",
@@ -1414,6 +3321,12 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orsay.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
         }
       }
     },
@@ -1436,13 +3349,56 @@
           "verified_at": "2026-08-17",
           "ttl_days": 180,
           "blocked_reason": "일반 성인 요금·휴관 요일 공식 페이지 403/404 — 확인 실패"
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orangerie.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orangerie.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orangerie.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
+        }
+      }
+    },
+    "musee-de-l-orangerie-monet-peindre-le-temps": {
+      "displayName": "Musée de l'Orangerie — 'Monet, peindre le temps'",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orangerie.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orangerie.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "musee-orangerie.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
         }
       }
     },
     "musee-de-la-photographie-charles-negre": {
       "displayName": "Musée de la Photographie Charles Nègre",
       "region": "nice",
-      "grade": "none",
+      "grade": "optional",
       "facts": {
         "hours": {
           "value": "화–일 10:00–18:00 (갤러리동 10:00–12:30 / 13:30–18:00)",
@@ -1463,7 +3419,7 @@
     "musee-des-beaux-arts-lyon": {
       "displayName": "Musée des Beaux-Arts",
       "region": "lyon",
-      "grade": "none",
+      "grade": "alternative",
       "facts": {
         "closed": {
           "value": "화요일",
@@ -1477,7 +3433,7 @@
     "musee-des-tissus": {
       "displayName": "Musée des Tissus",
       "region": "lyon",
-      "grade": "none",
+      "grade": "alternative",
       "facts": {
         "hours": {
           "value": "",
@@ -1486,6 +3442,13 @@
           "verified_at": "2026-08-16",
           "ttl_days": 90,
           "blocked_reason": "공식은 '폐관 중'만 안내 · 비엔날레 예외 개관 미확인 — 확정 서술 금지"
+        },
+        "closed": {
+          "value": "대규모 리노베이션으로 전면 폐관 중 — 2026년 9월 방문 불가",
+          "source": "https://www.museedestissus.fr/informations-pratiques/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -1507,13 +3470,28 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "hours": {
+          "value": "월·목·토·일 09:00–18:00 · 수·금 09:00–21:00 (입장 마감 폐관 1시간 전) · 화요일 휴관",
+          "source": "https://www.louvre.fr/en/visit",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 시간지정 예약 권장 (무료 입장 대상자 포함) — ticket.louvre.fr",
+          "source": "https://www.louvre.fr/en/visit",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 1 40 20 53 17"
     },
     "musee-gadagne": {
       "displayName": "Musée Gadagne",
       "region": "lyon",
-      "grade": "none",
+      "grade": "alternative",
       "facts": {
         "closed": {
           "value": "월·화",
@@ -1527,7 +3505,7 @@
     "musee-granet": {
       "displayName": "Musée Granet",
       "region": "aix",
-      "grade": "priority",
+      "grade": "essential",
       "facts": {
         "hours": {
           "value": "화–일 10:00–18:00 (~11/1) · 매표 17:30",
@@ -1537,10 +3515,10 @@
           "ttl_days": 90
         },
         "closed": {
-          "value": "월요일",
-          "confidence": "official",
-          "source": "2026-08-17 신규 검증",
+          "value": "월요일 휴관 (그 외 1/1·5/1·12/25). 화~일 10:00–18:00, 매표 17:30 마감",
+          "source": "https://www.museegranet-aixenprovence.fr/infos-pratiques",
           "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         },
         "price_adult": {
@@ -1549,8 +3527,16 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "booking": {
+          "value": "개인 방문 예약 의무 명시 없음. 온라인 예매 제공 — museegranet.tickeasy.com",
+          "source": "https://www.museegranet-aixenprovence.fr/infos-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 42 52 88 32"
     },
     "musee-marmottan-monet": {
       "displayName": "Musée Marmottan Monet",
@@ -1563,13 +3549,21 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 휴관 (5/1·12/25·1/1 휴관)",
+          "source": "https://www.marmottan.fr/en/informations-pratiques/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 1 44 96 50 33"
     },
     "musee-matisse-nice": {
       "displayName": "Musée Matisse",
       "region": "nice",
-      "grade": "none",
+      "grade": "alternative",
       "facts": {
         "closed": {
           "value": "화요일 (Chagall 과 동일 요일)",
@@ -1608,6 +3602,66 @@
         }
       }
     },
+    "museu-de-maricel": {
+      "displayName": "Museu de Maricel",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "4–10월 화–일 10:00–19:00 (11–3월 화–일 10:00–17:00)",
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 휴관",
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 일정 페이지에 예약 필요 여부 미게재; 요금 페이지 404"
+        }
+      },
+      "phone": "+34 93 894 03 64"
+    },
+    "museu-del-cau-ferrat": {
+      "displayName": "Museu del Cau Ferrat",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "4–10월 화–일 10:00–19:00 (11–3월 화–일 10:00–17:00)",
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 휴관",
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "blocked_reason": "공식 일정 페이지에 예약 필요 여부 미게재; 요금 페이지 404"
+        }
+      },
+      "phone": "+34 93 894 03 64"
+    },
     "museum-of-jewish-history": {
       "displayName": "Museum of Jewish History",
       "region": "girona",
@@ -1626,8 +3680,16 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "정기 휴관 없음(9/1~6/30 화~토 10:00-18:00, 월·일·공휴일 10:00-14:00 단축). 연중 휴관은 1/1·1/6·12/25·12/26",
+          "source": "https://www.girona.cat/turisme/cat/museus_call.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 972 216 761"
     },
     "navigo-idfm": {
       "displayName": "Navigo · IDFM (Paris 교통)",
@@ -1647,8 +3709,43 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "iledefrance-mobilites.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
         }
       }
+    },
+    "nice-old-town-castle-hill-walk": {
+      "displayName": "Nice Old Town–Castle Hill Walk",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "구시가지 골목은 연중 개방. 성채 언덕 공원만 폐장 시각이 있어 20시(4/1~10/31)까지 내려와야 한다. 쿠르 살레야는 월요일에 골동품 시장으로 바뀐다",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "구시가지는 시간 제한 없음. 성채 언덕 공원 08:30~20:00 (9월 기준)",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·전 구간 무료",
+          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "3906"
     },
     "nocturnes-avignon-musees": {
       "displayName": "Nocturnes d'Avignon Musées",
@@ -1668,8 +3765,16 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "공식 페이지에서 2026년 9월 야간개장 일정 확인 불가 — 미확인",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.avignon.fr/ma-ville/culture/les-musees/",
+          "verified_at": "2026-08-17"
         }
-      }
+      },
+      "phone": "04 90 80 80 00"
     },
     "notre-dame-de-la-garde": {
       "displayName": "Notre-Dame de la Garde",
@@ -1718,8 +3823,43 @@
           "verified_at": "2026-08-17",
           "ttl_days": 90,
           "blocked_reason": "공식 시간표 페이지 404 (/en/visit/schedules/ · /horaires-douverture/)"
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "notredamedeparis.fr HTTP 403 (2회 시도)",
+          "ttl_days": 90
         }
       }
+    },
+    "onyar": {
+      "displayName": "Onyar 강변",
+      "region": "girona",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "연중무휴(하천변 산책로, 공식 개폐 규정 없음)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "시간 제한 없음(공식 개방시간 고지 없음)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "예약 불필요(공개 하천변)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 972 010 001"
     },
     "palais-des-papes": {
       "displayName": "Palais des Papes",
@@ -1746,8 +3886,16 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (매일 개방, 3/1~11/1 09:00~19:00)",
+          "source": "https://www.palais-des-papes.com/fr/informations-pratiques",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 32 74 32 74"
     },
     "palau-de-maricel": {
       "displayName": "Palau de Maricel",
@@ -1774,8 +3922,23 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "가이드투어로만 개방 — 7·8월 화·수요일만(10시 영어/11시 스페인어/12시 카탈루냐어), 9월–6월 일요일만(10시 영어/11시·12시 카탈루냐어/13시 스페인어). 그 외 요일 개방 없음",
+          "source": "https://museusdesitges.cat/en/schedule",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "사전 예약 필수 — 전화 93 894 03 64 또는 reservesms@diba.cat, 예약 없이는 입장 불가",
+          "source": "https://museusdesitges.cat/es/museo/palau-de-maricel/visita-guiada",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 93 894 03 64"
     },
     "pals": {
       "displayName": "Pals",
@@ -1795,6 +3958,49 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "마을은 연중무휴. 주간 장은 매주 화요일 08:00-13:30 (Passeig d'Europa). 관광안내소는 화~토 09:15-13:00·15:00-18:00",
+          "source": "https://www.pals.cat/ca/agenda/mercat-setmanal/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "마을 방문은 예약 불필요",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.pals.cat/ca/",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 972 637 380"
+    },
+    "parc-de-la-tete-d-or": {
+      "displayName": "Parc de la Tête d'Or",
+      "region": "lyon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "연중무휴",
+          "source": "https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "여름(4/15~10/14) 6:30~22:30 / 겨울(10/15~4/14) 6:30~20:30. 폐장 15분 전 입장 마감",
+          "source": "https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·무료 입장",
+          "source": "https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -1809,8 +4015,52 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴(휴무일 고지 없음). 9~5월 08:00-21:00, 6~8월 08:00-23:00",
+          "source": "https://www.girona.cat/turisme/cat/monuments_muralla.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 페이지에 입장료·예약 관련 언급 없음(자유 통행 구간)",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/monuments_muralla.php",
+          "verified_at": "2026-08-17"
         }
-      }
+      },
+      "phone": "+34 972 010 001"
+    },
+    "passeig-de-la-muralla-2": {
+      "displayName": "성벽 (Passeig de la Muralla)",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴(휴무일 고지 없음)",
+          "source": "https://www.girona.cat/turisme/cat/monuments_muralla.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "9월~5월 08:00-21:00, 6월~8월 08:00-23:00 (9/1~9/4 여행일은 08:00-21:00 적용)",
+          "source": "https://www.girona.cat/turisme/cat/monuments_muralla.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 페이지에 예약·입장료 언급 없음",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.girona.cat/turisme/cat/monuments_muralla.php",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 972 010 001"
     },
     "peralada": {
       "displayName": "Peralada",
@@ -1823,8 +4073,59 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "성 박물관은 일요일·월요일 휴관, 공휴일 오후 휴관",
+          "source": "https://www.museucastellperalada.com/en/visit/section/hours/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "9/1~6/30 정시 가이드 투어 10:00·11:00·12:00·15:30·16:30·17:30 (7~8월 10:00·11:00·12:00·16:00·17:00·18:00·19:00). 투어 5분 전 Porta del Carme 집합",
+          "source": "https://www.museucastellperalada.com/en/visit/section/hours/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "10인 초과 단체는 사전 예약 필수(infomuseo@grupperalada.com). 개인은 가이드 투어 시각에 맞춰 방문. 입장 11유로/할인 7유로, 성+정원 통합 18유로",
+          "source": "https://www.museucastellperalada.com/en/visit/section/hours/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 972 538 125"
+    },
+    "peratallada": {
+      "displayName": "Peratallada",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "마을은 연중무휴(중세 지구 자유 통행). 공식 휴무일 없음",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://forallac.cat/",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "공식 개방시간 고지 없음(상시 통행). 관광안내소는 Pl. del Castell 3 소재",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://forallac.cat/",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "마을 산책은 예약 불필요. 포랄락 시청 주관 가이드 투어만 별도 신청",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://forallac.cat/",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+34 872 987 030"
     },
     "piscine-yves-blanc": {
       "displayName": "Piscine Yves Blanc",
@@ -1844,6 +4145,99 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "2026 여름시즌 6/29~8/30 매일 개장, 8/31~9/6 휴관. 9/7 이후 운영일정은 공식 미게시 — 재확인 필요",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/piscine-yves-blanc-5517994/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 65 48 87 80"
+    },
+    "placa-del-rei-carrer-del-bisbe": {
+      "displayName": "고딕지구 핵심 산책 (Plaça del Rei–Carrer del Bisbe)",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공공 광장·가로 산책 코스 — 공식 운영정보 대상 아님"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공공 광장·가로 산책 코스 — 공식 운영정보 대상 아님"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "공공 광장·가로 산책 코스 — 공식 운영정보 대상 아님"
+        }
+      }
+    },
+    "place": {
+      "displayName": "콜리우르 시장 (수요일)",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "장은 수요일·일요일 오전에만 선다. 그 외 요일에는 서지 않음 (9/2는 수요일이라 개장)",
+          "source": "https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "수·일 오전, Place du Maréchal Leclerc. 공식 안내는 혼잡을 피해 10시 이전 방문 권장 (종료 정각은 공식 미고지). 7~8월 야시장은 17:00-23:00",
+          "source": "https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요(자유 관람)",
+          "source": "https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 68 82 15 47"
+    },
+    "place-du-forum": {
+      "displayName": "Place du Forum",
+      "region": "avignon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -1857,6 +4251,20 @@
           "confidence": "official",
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "Place Richelme 청과시장은 연중무휴 매일 08:00–13:00. Place des Prêcheurs 시장 요일은 공식 페이지 표기가 엇갈려 미확정 — 재확인 필요",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-marche-aux-fruits-et-legumes-d-aix-en-provence-5466992/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 노천시장",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-marche-aux-fruits-et-legumes-d-aix-en-provence-5466992/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
           "ttl_days": 90
         }
       }
@@ -1886,6 +4294,20 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "부지·주차장 연중무휴(08:00~24:00). 단 문화시설은 11~2월 휴관, 그 외 기간에도 매주 월요일 오전 정비 휴무",
+          "source": "http://pontdugard.fr/en/practical-information/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "일반 입장 예약 불필요. 주차·교육공간·가이드투어·워크숍만 유료",
+          "source": "http://pontdugard.fr/en/practical-information/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -1900,6 +4322,85 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "연중무휴 (매일 개방)",
+          "source": "https://avignon-tourisme.com/en/offres/pont-davignon-saint-benezet-avignon-en-4143415/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "4/3~11/1 09:00~19:00 (매표 마감 18:30)",
+          "source": "https://avignon-tourisme.com/en/offres/pont-davignon-saint-benezet-avignon-en-4143415/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 필수 아님. 온라인·관광안내소·현장 매표 모두 가능 (온라인 권장)",
+          "source": "https://avignon-tourisme.com/en/offres/pont-davignon-saint-benezet-avignon-en-4143415/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 32 74 32 74"
+    },
+    "promenade-des-anglais": {
+      "displayName": "Promenade des Anglais",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴 — 공항·파크 피닉스에서 케 데 제타쥐니까지 7km 해안 산책로, 상시 개방. 단 대형 행사·공사 시 니스시가 구간별 통행 제한을 공지한다",
+          "source": "https://www.nice.fr/fr/patrimoine-et-culture/la-promenade-des-anglais",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "시간 제한 없음 (24시간 개방)",
+          "source": "https://www.nice.fr/fr/patrimoine-et-culture/la-promenade-des-anglais",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "source": "https://www.nice.fr/fr/patrimoine-et-culture/la-promenade-des-anglais",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "3906"
+    },
+    "quartier-mazarin": {
+      "displayName": "Quartier Mazarin",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "공공 주거·역사 구역 — 휴무 없음, 상시 통행",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-quartier-mazarin-5537915/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "공공 가로 — 개방시간 제한 없음. 구역 내 교회·미술관은 각자 시간",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-quartier-mazarin-5537915/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-quartier-mazarin-5537915/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
       }
     },
@@ -1936,8 +4437,23 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (매일 07:30 개방, 9월은 20:00 폐장)",
+          "source": "https://www.avignon.fr/les-equipements/les-parcs-et-jardins/les-parcs-du-centre-ville/parc-du-rocher-des-doms",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·무료 입장",
+          "source": "https://www.avignon.fr/les-equipements/les-parcs-et-jardins/les-parcs-du-centre-ville/parc-du-rocher-des-doms",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 90 80 80 00"
     },
     "roussillon-sentier-des-ocres": {
       "displayName": "Roussillon · Sentier des Ocres",
@@ -1957,8 +4473,23 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "9월은 매일 개방(주간 휴무 없음). 12/25·1/1 휴장, 1~2월 일부 휴장일. 단, 화재위험 도지사령·폭우·뇌우 시 임시 폐쇄 — 전날 18시에 공지",
+          "source": "https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불가·불필요 — 당일 현장 매표소에서만 구매(개인 3.5유로). 9월 09:30 개방·최종입장 18:30·폐장 19:00",
+          "source": "https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 90 05 60 16"
     },
     "rtm-lecar": {
       "displayName": "RTM lecar (Aix↔Marseille)",
@@ -1971,8 +4502,45 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 30
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.lecaraixmarseille.com/ligne-50",
+          "verified_at": "2026-08-17"
         }
       }
+    },
+    "rue-des-teinturiers": {
+      "displayName": "Rue des Teinturiers",
+      "region": "avignon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "연중무휴 (공공 도로, 상시 개방)",
+          "source": "https://avignon-tourisme.com/en/offres/water-wheels-of-teinturiers-avignon-en-4143892/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "상시 개방 (자유 접근)",
+          "source": "https://avignon-tourisme.com/en/offres/water-wheels-of-teinturiers-avignon-en-4143892/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요·무료",
+          "source": "https://avignon-tourisme.com/en/offres/water-wheels-of-teinturiers-avignon-en-4143892/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 90 80 80 00"
     },
     "sacre-coeur": {
       "displayName": "Sacré-Cœur",
@@ -2006,8 +4574,16 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 — 매일 06:30–22:30 개방",
+          "source": "https://www.sacre-coeur-montmartre.com/english/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 1 53 41 89 00"
     },
     "sagrada-familia": {
       "displayName": "Sagrada Família",
@@ -2027,8 +4603,52 @@
           "source": "https://sagradafamilia.org/en/schedules-how-to-get",
           "verified_at": "2026-08-17",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 — 4–9월 월–금 09:00–20:00 · 토 09:00–18:00 · 일 10:30–20:00. 단 성당 내부 행사로 개방일·시간이 변경될 수 있음",
+          "source": "https://sagradafamilia.org/en/schedules-how-to-get",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "온라인 시간지정 예약 권장 — 공식 홈페이지·앱에서 구매, 현장은 QR 직접구매만 가능하고 잔여분에 한함",
+          "source": "https://sagradafamilia.org/en/faqs",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+34 932 080 414"
+    },
+    "saint-paul-de-mausole": {
+      "displayName": "Saint-Paul-de-Mausole",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴 (주 7일 개방)",
+          "source": "https://www.saintpauldemausole.fr/van-gogh.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "여름 시즌(2026-04-05~) 09:30~19:00, 마지막 입장 18:15",
+          "source": "https://www.saintpauldemausole.fr/van-gogh.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 페이지에 예약 관련 안내 없음 — 미확인",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "source": "https://www.saintpauldemausole.fr/",
+          "verified_at": "2026-08-17"
+        }
+      },
+      "phone": "+33 4 90 92 77 00"
     },
     "saint-paul-de-vence": {
       "displayName": "Saint-Paul-de-Vence",
@@ -2041,8 +4661,59 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "마을 자체는 휴무 없음(상시 개방). 관광안내소는 1/1·12/25 휴무",
+          "source": "https://www.saint-pauldevence.com/en/practical-information/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "마을 상시 개방. 관광안내소 월~토 10:00–18:00(토·일·공휴일 13:00–14:00 휴식), 4~10월은 일요일·공휴일도 개방",
+          "source": "https://www.saint-pauldevence.com/en/practical-information/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "마을 입장 예약 불필요. 가이드 투어는 요청·예약제",
+          "source": "https://www.saint-pauldevence.com/en/practical-information/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 4 93 32 86 95"
+    },
+    "saint-paul-de-vence-fondation-maeght": {
+      "displayName": "Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함)",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "연중무휴 — 매일 개관 (12/24·12/31 은 16:00 조기 폐관)",
+          "source": "https://www.fondation-maeght.com/infos-pratiques/?lang=fr",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "매일 10:00–18:00 (7·8월 10:00–19:00). 마지막 입장 폐관 30분 전",
+          "source": "https://www.fondation-maeght.com/infos-pratiques/?lang=fr",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 불필요(현장·온라인 구매 가능). 단체는 이메일 사전 예약 필수",
+          "source": "https://www.fondation-maeght.com/infos-pratiques/?lang=fr",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 4 93 32 81 63"
     },
     "sant-pau-recinte-modernista": {
       "displayName": "Sant Pau Recinte Modernista",
@@ -2062,6 +4733,46 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "12월 25일만 휴관 — 그 외 연중무휴 (4–10월 매일 09:30–18:30, 입장 마감 30분 전)",
+          "source": "https://santpaubarcelona.org/en/prepara-la-teva-visita/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "자유관람은 예약 불요 표기 없음(현장 입장 가능), 가이드투어는 사전 예약 권장 — 주말·공휴일 11시 스페인어·12:30 카탈루냐어, 토요일 10:30 영어·12:00 프랑스어",
+          "source": "https://santpaubarcelona.org/en/prepara-la-teva-visita/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+34 93 551 78 76"
+    },
+    "saone-rhone": {
+      "displayName": "Saône·Rhône 강변 산책",
+      "region": "lyon",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "공식 페이지에서 강변 산책로 운영정보를 확인하지 못함 — 상시 개방 공공 공간으로 추정되나 미검증",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "공식 페이지에서 확인하지 못함",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "공식 페이지에서 확인하지 못함",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -2083,6 +4794,12 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "공식 소스 없음 — 미확인",
+          "confidence": "unverified",
+          "ttl_days": 90,
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -2097,6 +4814,45 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.tcl.fr/",
+          "verified_at": "2026-08-17"
+        }
+      }
+    },
+    "theatre-antique": {
+      "displayName": "Théâtre antique",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.arlestourisme.com/en/practical-information-monuments.html",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -2118,6 +4874,22 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.uzes-pontdugard.com/en/",
+          "verified_at": "2026-08-17"
+        },
+        "booking": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.uzes-pontdugard.com/en/",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -2132,8 +4904,146 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "궁전·트리아농 월요일 휴관 / 정원·공원은 연중무휴 (12/25·1/1·5/1 전체 휴관)",
+          "source": "https://en.chateauversailles.fr/plan-your-visit/practical-information",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "궁전 09:00–18:30 · 트리아농 영지 12:00–18:30 · 정원·공원 07:00–20:30",
+          "source": "https://en.chateauversailles.fr/plan-your-visit/practical-information",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 온라인 사전 구매 권장 · 성수기 시간지정 예약 권장",
+          "source": "https://en.chateauversailles.fr/plan-your-visit/practical-information",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "+33 1 30 83 78 00"
+    },
+    "versailles-2": {
+      "displayName": "Versailles (궁전·트리아농·정원)",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "closed": {
+          "value": "궁전·트리아농 월요일 휴관 / 정원·공원은 연중무휴 (12/25·1/1·5/1 전체 휴관)",
+          "source": "https://en.chateauversailles.fr/plan-your-visit/practical-information",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "궁전 09:00–18:30 · 트리아농 영지 12:00–18:30 · 정원·공원 07:00–20:30",
+          "source": "https://en.chateauversailles.fr/plan-your-visit/practical-information",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 온라인 사전 구매 권장 · 성수기 시간지정 예약 권장",
+          "source": "https://en.chateauversailles.fr/plan-your-visit/practical-information",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 1 30 83 78 00"
+    },
+    "vieux-lyon-traboules": {
+      "displayName": "Vieux Lyon · traboules",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "연중무휴 (365 jours par an)",
+          "source": "https://www.visiterlyon.com/decouvrir/sites-et-monuments/les-traboules-et-cours-de-lyon",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "협약 트라불 50곳 매일 7:00~19:00",
+          "source": "https://www.visiterlyon.com/decouvrir/sites-et-monuments/les-traboules-et-cours-de-lyon",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "자유 방문 예약 불필요. 관광청 가이드 투어는 별도 예약(단체 문의 04 72 77 72 33)",
+          "source": "https://www.visiterlyon.com/decouvrir/sites-et-monuments/les-traboules-et-cours-de-lyon",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "04 72 77 72 33"
+    },
+    "vieux-nice": {
+      "displayName": "Vieux Nice",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "골목은 연중 개방. 중심 쿠르 살레야는 화~일 꽃·청과 시장, 월요일은 골동품 시장으로 전환",
+          "source": "https://www.explorenicecotedazur.com/en/culture/cours-saleya/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "골목은 시간 제한 없음. 쿠르 살레야 시장은 오전 중심이며 월요일 골동품 시장은 07:00~18:00",
+          "source": "https://www.explorenicecotedazur.com/en/event/marche-a-la-brocante-saleya/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요",
+          "source": "https://www.explorenicecotedazur.com/en/culture/cours-saleya/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "3906"
+    },
+    "vieux-port": {
+      "displayName": "Vieux-Port",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "공공 항구 — 연중무휴, 휴무 없음",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "항구 자체 시간 제한 없음. 어시장(Quai des Belges) 매일 07:30–12:30, 화·토 오전 화훼시장",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요. 칼랑크 유람선·페리보트만 별도",
+          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      },
+      "phone": "+33 826 500 500"
     },
     "village-des-bories": {
       "displayName": "Village des Bories",
@@ -2153,8 +5063,23 @@
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "closed": {
+          "value": "연중무휴 (12/25·1/1 만 휴장)",
+          "source": "https://www.levillagedesbories.com/informations-pratiques.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 방문 예약 불필요. 10인 이상 단체만 사전 예약. 9월 09:00~19:00(최종입장 폐장 30분 전), 성인 8유로",
+          "source": "https://www.levillagedesbories.com/informations-pratiques.php",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
         }
-      }
+      },
+      "phone": "04 90 72 03 48"
     },
     "virgule-navette": {
       "displayName": "TER Virgule (Avignon Centre↔TGV)",
@@ -2181,6 +5106,14 @@
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
           "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 소스 접근 실패",
+          "ttl_days": 90,
+          "source": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/avignon-tgv-87318964",
+          "verified_at": "2026-08-17"
         }
       }
     },
@@ -2201,6 +5134,12 @@
           "confidence": "official",
           "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
           "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "blocked_reason": "공식 페이지 접근 차단 (ajuntament.barcelona.cat 418, amb.cat 403)",
           "ttl_days": 90
         }
       }

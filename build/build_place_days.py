@@ -11,13 +11,17 @@ import json
 import pathlib
 import re
 import unicodedata
+from datetime import date
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MATRIX = ROOT / "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv"
 FACTS = ROOT / "data/place-facts.json"
 OUT = ROOT / "data/place-days.json"
 
-DAY_NUM = re.compile(r"(\d{1,2})")
+# days 열은 두 형식이 섞여 있다 — "Day 4" · "9" · "9/22(화)" · "10/7;10/8"
+DATE_LIT = re.compile(r"(?<!\d)(\d{1,2})/(\d{1,2})(?!\d)")
+DAY_NUM = re.compile(r"(?<![\d/])(\d{1,2})(?![\d/])")
+TRIP_START = date(2026, 8, 29)
 
 
 def norm(s):
@@ -26,9 +30,36 @@ def norm(s):
 
 
 def parse_days(cell):
+    """'Day 4' · '9' · '9/22(화)' · '10/7;10/8' 을 모두 글로벌 Day 번호로."""
     if not cell or not cell.strip():
         return []
-    return sorted({int(n) for n in DAY_NUM.findall(cell) if 1 <= int(n) <= 43})
+    out = set()
+    rest = cell
+    for m in DATE_LIT.finditer(cell):
+        mo, dd = int(m.group(1)), int(m.group(2))
+        try:
+            d = date(TRIP_START.year, mo, dd)
+        except ValueError:
+            continue
+        n = (d - TRIP_START).days + 1
+        if 1 <= n <= 43:
+            out.add(n)
+        rest = rest.replace(m.group(0), " ")
+    for n in DAY_NUM.findall(rest):
+        if 1 <= int(n) <= 43:
+            out.add(int(n))
+    return sorted(out)
+
+
+# 매트릭스 표기와 place-facts displayName 이 다른 것들 — 직접 지정한다.
+ALIAS = {
+    "Les Halles d'Avignon": "les-halles",
+    "Les Halles d’Avignon": "les-halles",
+    "Museu del Cau Ferrat": "cau-ferrat",
+    "Marché Forville (Cannes)": "marche-forville",
+    "Saint-Paul-de-Vence (Fondation Maeght·마을 묘지)": "fondation-maeght",
+    "Halles de Lyon Paul Bocuse": "halles-de-lyon-paul-bocuse",
+}
 
 
 def main():
@@ -44,7 +75,25 @@ def main():
         days = parse_days(r.get("days", ""))
         if not days:
             continue
-        pid = by_norm.get(norm(r["name"]))
+        nm = r["name"]
+        pid = ALIAS.get(nm) or by_norm.get(norm(nm))
+        if pid and pid not in facts:
+            pid = None
+        if not pid:
+            for k, v in ALIAS.items():
+                if norm(k) in norm(nm) or norm(nm) in norm(k):
+                    pid = v if v in facts else None
+                    if pid:
+                        break
+        if not pid:
+            # "Museu del Cau Ferrat" · "Marché Forville (Cannes)" · "Croix-Rousse (동네…)"
+            base = re.sub(r"[（(].*", "", nm)
+            base = re.sub(r"^(Museu del|Museu de|Musée du|Musée de la|Musée)\s+", "", base).strip()
+            base = re.sub(r"\s+(d'|de |의 )?(Avignon|Cannes|Lyon|Paris|Nice)$", "", base).strip()
+            for cand in (base, base.split("·")[0].strip(), base.split("—")[0].strip()):
+                pid = by_norm.get(norm(cand))
+                if pid:
+                    break
         if not pid:
             unmatched.append((r["region"], r["name"], days))
             continue
