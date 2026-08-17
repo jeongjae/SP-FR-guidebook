@@ -2343,9 +2343,9 @@
       ],
       "legacySlugs": [],
       "dayIds": [
-        "day:034"
+        "day:035"
       ],
-      "dayEvidence": "본문 표기",
+      "dayEvidence": "시간표",
       "url": "places/grand-palais.html"
     },
     {
@@ -2487,8 +2487,10 @@
         "Musée du Louvre"
       ],
       "legacySlugs": [],
-      "dayIds": [],
-      "dayEvidence": null,
+      "dayIds": [
+        "day:036"
+      ],
+      "dayEvidence": "시간표",
       "url": "places/musee-du-louvre.html"
     },
     {
@@ -2505,8 +2507,10 @@
         "Notre-Dame de Paris"
       ],
       "legacySlugs": [],
-      "dayIds": [],
-      "dayEvidence": null,
+      "dayIds": [
+        "day:029"
+      ],
+      "dayEvidence": "시간표",
       "url": "places/notre-dame-de-paris.html"
     },
     {

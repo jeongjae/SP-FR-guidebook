@@ -1226,6 +1226,18 @@ thead th .badge, thead th .grade { color: var(--accent-ink); }
   border: 1.5px dashed var(--sig-caution);
 }
 .badge-done   { background: var(--sig-steady); color: #fff; }
+/* S1 — Jason 확정 대기. 확정값과 시각적으로 구분한다 */
+.badge-decision-pending {
+  background: transparent;
+  color: var(--sig-critical-ink);
+  border: 1.5px dashed var(--sig-critical);
+  font-weight: 700;
+}
+.badge-unverified {
+  background: transparent;
+  color: var(--sig-caution-ink);
+  border: 1.5px dotted var(--sig-caution);
+}
 .badge-rest   { background: var(--sig-rest);   color: #fff; }
 
 /* 미확정 블록 — 확정값처럼 보이면 안 되는 항목 */
