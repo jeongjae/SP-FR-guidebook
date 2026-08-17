@@ -132,13 +132,13 @@
 
 ## 11. 잔여 REVERIFY
 
-281건. 지역별 분포는 `RS_RESTRUCTURE_REVERIFY_REGISTER_v1.0.md`, 확인 시점은 `RS_RESTRUCTURE_DEPARTURE_RECHECK_CALENDAR_v1.0.md` 참조.
+282건. 지역별 분포는 `RS_RESTRUCTURE_REVERIFY_REGISTER_v1.0.md`, 확인 시점은 `RS_RESTRUCTURE_DEPARTURE_RECHECK_CALENDAR_v1.0.md` 참조.
 
 | 지역 | 건수 |
 |---|---:|
 | 04 Barcelona | 28 |
 | 05 Girona | 12 |
-| 06 Nice | 5 |
+| 06 Nice | 6 |
 | 07 Aix | 45 |
 | 08 Luberon | 32 |
 | 09 Avignon | 54 |
