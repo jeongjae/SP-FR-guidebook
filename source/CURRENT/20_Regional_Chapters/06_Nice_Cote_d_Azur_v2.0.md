@@ -153,7 +153,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 *   **소요 시간**: 약 1시간 15분.
 *   **최적 시간대**: 오전 09:30 - 11:00 (포르빌 시장의 활기와 깨끗한 아침 조망 확보).
 *   **도보 경로 및 관찰 지점**:
-    1. **Marché Forville**: 아침의 시장 분위기를 구경하고 신선한 무화과 등 간단한 도보용 간식을 산다.
+    1. **Marché Forville**: 아침의 시장 분위기를 구경하고 신선한 무화과 등 간단한 도보용 간식을 산다. **개보수로 위치가 둘로 나뉘어 있다** — {{fact:marche-forville.note}}
     2. **Le Suquet**: 좁은 수직형 계단 골목을 오르며 성벽 흔적을 확인한다.
     3. **Espérance 성당**: 정상 광장에서 요트가 밀집한 칸 항구와 Lérins 제도를 바라본다.
     4. **Vieux-Port**: 호화 요트들의 마스트 숲을 지나 평탄한 해안 산책로로 이어진다.
@@ -195,7 +195,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ## 예약·비용·안전·주차·귀가
 
 - **렌터카 예약 (Hertz)**:
-  - **인수**: 9/9 09:00 Nice역 (Hertz L672E080313). Compact Automatic (Captur급).
+  - **인수**: 9/9 09:00 Nice역 (Hertz L672E080313). Compact Automatic (Captur급). 영업소 {{fact:hertz-nice-ville.closed}} — 인수 시각이 점심 휴무에 걸리지 않는다.
   - **비용**: €608.09 (VISA ASIA CARDS 10% 할인가 반영, 편도 반납비 €180 포함).
   - **반납**: **9/19(토) 18:15까지 Avignon TGV** (토요일 영업 09:00–19:00, 버퍼 45분). 주차는 Parking Loueurs P0 — DEC-A08
 - **주차 지침**:
@@ -205,6 +205,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 - **미술관 휴관일**: Matisse 및 Chagall 미술관은 매주 **화요일 휴관**이다. 수~월요일 운영 시간을 현장에서 다시 한 번 확인한다.
 - **Cannes Forville 시장**: 시장은 오전이 본체다 — 정오를 넘기면 좌판이 접히기 시작하므로 일요일(Day 9) 아침 방문을 유지한다.
+  **⚠ 2026년 개보수로 시장이 옮겨 있다.** {{fact:marche-forville.note}} 휴장 {{fact:marche-forville.closed}} · 영업 {{fact:marche-forville.hours}}
 - **Monaco 위병 교대식**: {{fact:monaco.note}} — 궁정 행사에 따라 변동 가능하므로 방문 당일 아침 모나코 관광청 공식 사이트에서 재확인한다.
 
 | 항목 | 상태 |
@@ -323,7 +324,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
 | 08:40 전후 | Nice-Ville → Cannes TER | 당일 운행 재확인 |
-| 09:30–10:20 | **Marché Forville** | [Cannes Forville–Suquet–Croisette Walk](../../places/cannes-walk.html) 시작 |
+| 09:30–10:20 | **Marché Forville** | [Cannes Forville–Suquet–Croisette Walk](../../places/cannes-walk.html) 시작. **개보수 중 — 기존 홀 주소로 가면 헛걸음이다** ({{fact:marche-forville.note}}) |
 | 10:20–11:20 | **Le Suquet** | 골목·전망 |
 | 11:20–12:00 | **Vieux-Port** | 항구 보행 |
 | 12:00–13:00 | 가벼운 점심 | 시장식 또는 간단한 해산물 |
@@ -448,7 +449,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 |---|---|---|
 | 08:00–08:45 | 체크아웃·간단한 아침 | 체크아웃은 11:00까지 가능하지만 인수 시각에 맞춰 나온다. 차량용 물·간식 준비 |
 | 08:45–09:00 | Nice역(Avenue Thiers)까지 도보 | 숙소에서 약 1.2km — 짐이 많으면 택시 |
-| 09:00 | **Nice역 렌터카 인수** (Hertz L672E080313) | Nice Railway Station 영업소 (Avenue Thiers, +33 4 97 03 01 20 · 수요일 08:00 개점). 자동변속·보험·편도반납·차체촬영. 수속 30–60분 |
+| 09:00 | **Nice역 렌터카 인수** (Hertz L672E080313) | Nice Railway Station 영업소 (Avenue Thiers, +33 4 97 03 01 20 · 수요일 08:00 개점). 자동변속·보험·편도반납·차체촬영. 수속 30–60분. **영업소는 {{fact:hertz-nice-ville.closed}}** — 09:00 인수는 이 창을 피한다 |
 | | 예약 내용 (2026-08 예약서) | 컴팩트 자동변속 (그룹 F0, Renault Captur급) · 후지불 **€608.09** (기본 11일 €326.73 + 편도반납 €180 + 세금, VISA ASIA CARDS 10% 할인) · CDW·Super Cover·PAI/PEC·도난보험 포함 · 무제한 주행 · 반납 Avignon TGV 영업소 (Place de l'Europe, +33 4 32 74 62 80) — **9/19(토) 18:15까지 조기 반납(DEC-A08)** |
 | 09:30–11:00 | **Saint-Paul-de-Vence** | 골목·성벽·짧은 스케치 |
 | 11:00–12:00 | 가벼운 점심·이동 | 긴 코스식 금지 |

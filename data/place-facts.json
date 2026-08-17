@@ -2599,14 +2599,14 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "9/1~6/30 화~일 07:00~13:00 (7/1~8/31은 월~일 07:00~13:00). 2026년 현재 전면 개보수 공사 중이라 시장이 두 곳으로 분산 — 생산자는 Allées de la Liberté 가설 홀, 재판매상은 포르빌 동쪽 구역",
+          "value": "9/1~6/30 화~일 07:00~13:00 (7~8월은 월~일 07:00~13:00)",
           "source": "https://www.cannes.com/fr/cadre-de-vie/travaux-en-cours/marche-forville.html",
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
         },
         "closed": {
-          "value": "9/1~6/30 월요일 휴장 (7~8월만 무휴). 월요일에는 같은 자리에서 08:00~16:00 브로캉트 시장이 선다 — 식재료 시장을 기대하고 월요일에 가면 안 된다",
+          "value": "9/1~6/30 월요일 휴장 (7~8월만 무휴). 월요일에는 같은 자리에 08:00~16:00 브로캉트가 선다",
           "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
           "verified_at": "2026-08-17",
           "confidence": "official",
@@ -2615,6 +2615,13 @@
         "booking": {
           "value": "예약 불필요 — 개방형 프로방스 시장",
           "source": "https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html",
+          "verified_at": "2026-08-17",
+          "confidence": "official",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "2026년 전면 개보수 중이라 두 곳으로 분산 운영한다 — 생산자는 Allées de la Liberté 가설 홀, 재판매상은 포르빌 동쪽 구역. 기존 홀 주소로 가면 헛걸음이다.",
+          "source": "https://www.cannes.com/fr/cadre-de-vie/travaux-en-cours/marche-forville.html",
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
@@ -4445,26 +4452,22 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "시장 수·토만",
-          "confidence": "official",
-          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
-          "verified_at": "2026-08-16",
-          "ttl_days": 90
+          "value": "",
+          "confidence": "unreachable",
+          "ttl_days": 90,
+          "blocked_reason": "uzes-pontdugard.com 403 · uzes.fr 418 (S2, 우회 금지)"
         },
         "note": {
-          "value": "무료 셔틀(Mayac↔시내)은 토요일 오전만",
+          "value": "장은 수·토 오전만 선다 — 방문일 9/18(금)에는 시장이 없다. 무료 셔틀(Mayac↔시내)도 토요일 오전만 운행한다.",
           "confidence": "official",
-          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
-          "verified_at": "2026-08-16",
+          "verified_at": "2026-08-17",
           "ttl_days": 90
         },
         "closed": {
-          "value": "",
-          "confidence": "unreachable",
-          "blocked_reason": "공식 소스 접근 실패",
+          "value": "마을·구시가지는 연중 개방 (Place aux Herbes 아케이드·골목·Tour Fenestrelle)",
+          "confidence": "secondary",
           "ttl_days": 90,
-          "source": "https://www.uzes-pontdugard.com/en/",
-          "verified_at": "2026-08-17"
+          "note": "시장 일정은 note 를 본다 — 마을과 시장은 다른 것이다"
         },
         "booking": {
           "value": "",

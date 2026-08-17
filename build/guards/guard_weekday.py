@@ -29,6 +29,8 @@ WD_ORDER = "월화수목금토일"
 # "그 날은 닫혀서 못 간다"고 이미 쓴 줄은 충돌이 아니라 회피 서술이다.
 AVOID = re.compile(r"불가|휴관|휴무|제외|대신|아니다|않는다|금지|피한|못\s|없다|"
                    r"decision-pending|대안|대체")
+# 참고링크만 있는 줄은 배치가 아니다 — "- [Fou de Fafa](https://…)"
+LINK_ONLY = re.compile(r"^\s*[-*]?\s*\[[^\]]+\]\((https?:|\.{1,2}/)[^)]*\)\s*$")
 # 9/22 · 9월 22일 · 09/22
 DATE_LIT = re.compile(r"(?<!\d)(\d{1,2})\s*[/월]\s*(\d{1,2})\s*일?(?!\d)")
 
@@ -102,6 +104,8 @@ def main():
 
         # G1a/G1b — 전문 스캔
         for idx, line in enumerate(lines):
+            if LINK_ONLY.match(line):
+                continue
             hits = {(m.group(1), m.group(2)) for m in FACT_RE.finditer(line)}
             pids = {pid for pid, _ in hits}
             for nm, pid in name_to_pid.items():

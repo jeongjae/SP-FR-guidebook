@@ -68,7 +68,7 @@ source_priority: "공식 관광기관·문화부·시설·SNCF·숙박업체·�
 
 | 시간·역할 | 추천 | 이용법 |
 |---|---|---|
-| 아침 | **Les Halles 또는 Uzès 시장** | 지역의 생활밀도와 점심 재료를 함께 확보한다. |
+| 아침 | **Les Halles** (Uzès 시장은 수·토만 — 9/18 금요일엔 없다) | 지역의 생활밀도와 점심 재료를 함께 확보한다. |
 | 점심 | **시장·구시가지** | 차량일 저녁 예약을 피하고 귀환지연을 흡수한다. |
 | 저녁 | **성벽 안 숙소 생활권** | 도보귀가 가능한 범위에서 Provence 마지막 저녁을 보낸다. |
 | 스케치 | **Palais 광장 또는 Rhône 강변** | 기념비의 크기와 열린 공간을 단순한 선으로 잡는다. |
@@ -891,7 +891,7 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 | 식당 | 성격 | 추천 주문·이용법 | 계획가격/인 | 예약 |
 |---|---|---|---:|---|
 | **Fou de Fafa** | 작은 창작 비스트로 · 휴무 {{fact:fou-de-fafa.closed}} | 계절메뉴에서 생선·오리·채소요리 2–3개 공유 | €35–55 | 강권 |
-| **Le Goût du Jour** | 정제된 지역재료 코스 | Inspiration 또는 dégustation, 특별저녁 1회 | €55–95 | 강권 |
+| **Le Goût du Jour** | 정제된 지역재료 코스 · 휴무 {{fact:le-gout-du-jour.closed}} | Inspiration 또는 dégustation, 특별저녁 1회 | €55–95 | 강권 |
 | **Restaurant SEVIN** | Palais 인근 고급식 | 2026 계절메뉴, 토마토·남프랑스 재료 중심 | €90–160+ | 필수 |
 | **Les Cocottes Saint-Louis** | 수도원정원 캐주얼 프렌치 | 2026 메뉴 €33–38, rouget·ravioles·채소 | €35–55 | 권장 |
 | **La Fourchette** | 전통 남부 비스트로 | 남부풍 생선·고기·지역전통, 영업일 제한 큼 | €35–60 | 필수·휴무확인 |
@@ -913,7 +913,7 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 
 | 지역 | 기본 | 특별식 선택 | 피할 것 |
 |---|---|---|---|
-| Uzès | 시장 빵·치즈·과일·타르틴 | Place aux Herbes 비스트로 | 토요일 2시간 코스요리 |
+| Uzès | Place aux Herbes 빵집·치즈가게(시장은 수·토만 — 9/18 금요일엔 없다) | Place aux Herbes 비스트로 | 아케이드 광장의 느린 점심 |
 | Pont du Gard | Uzès에서 산 피크닉 | 사이트 카페 | 차량에 냉장식품 오래 방치 |
 | Arles | Place du Forum 주변 비스트로·샌드위치 | 구시가지 계절식당 | 유적 사이 긴 코스요리 |
 | Les Baux | 이른 샐러드·타르틴 | 전망 레스토랑은 예약·가격 확인 | 관광객 몰리는 12:30 무예약 |
@@ -1019,8 +1019,8 @@ Porte Saint-Michel
 
 ### 20.3 9/18 Uzès·Pont
 
-- 폭우: Uzès 아케이드·시장 축소, Pont 실내공간 후 조기귀환.
-- 시장 주차지연 45분 이상: Uzès 체류를 2시간으로 고정.
+- 폭우: Uzès 아케이드 축소, Pont 실내공간 후 조기귀환.
+- 주차지연 45분 이상: Uzès 체류를 2시간으로 고정.
 - 피로: 조명 대기 삭제.
 
 ### 20.4 9/19 Arles (대안 Alpilles)
@@ -1147,7 +1147,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | Pont du Gard | — | {{badge:pending|재확인}} |
 | Saint-Paul-de-Mausole | — | {{badge:pending|재확인}} |
 | Glanum | — | {{badge:pending|재확인}} |
-| **Les Halles · Uzès 시장 · 성벽 · Rocher des Doms** | **무료** | — |
+| **Les Halles · Uzès 구시가지 · 성벽 · Rocher des Doms** | **무료 · 상시 개방** | — |
 
 > **통합권을 확인하라.** 아비뇽은 교황궁+다리 통합권이 있는 것으로 알려져 있다 {{badge:pending|확인 필요}}.
 
@@ -1180,7 +1180,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | P0 | 렌터카 반납 | 9/21 Avignon TGV | 영업시간·주유·보증금·반납지 |
 | P0 | Avignon TGV→Lyon | 9/20 | Part-Dieu 직행, 변경조건, 수하물 |
 | P1 | Palais+Pont 티켓 | 9/18 09:45 | 공사구간·시간지정·결합권 |
-| P1 | 특별저녁 1회 | 9/18 또는 9/20 | Fou de Fafa·SEVIN·Le Goût du Jour |
+| P1 | 특별저녁 1회 | 9/18(금) 또는 9/20(일) | Fou de Fafa·SEVIN·Le Goût du Jour — 셋 다 그 두 날엔 연다 |
 | P1 | Arles JEP 운영 재확인 | 9/19 | Arènes·Théâtre antique 공식 프로그램의 회차·예약·집합장소 |
 | P2 | Carrières | 9/20 선택 | 프로그램·시간지정·환불 |
 | P3 | Pont du Gard | 9/19 | 주차·문화공간·조명·날씨 |
@@ -1224,7 +1224,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - [ ] 숙소까지 성벽 진입경로를 오프라인 지도에 저장
 - [ ] Palais des Papes 결합권 예약
 - [ ] 9/17 Requien Nocturne 프로그램 최종 확인
-- [ ] 9/19 Uzès 시장·Pont du Gard 날씨와 주차 확인
+- [ ] 9/18 Uzès·Pont du Gard 날씨와 주차 확인 (금요일이라 시장은 없다)
 - [ ] 9/19–20 JEP 예약 필요행사 확인
 - [ ] 차량으로 Arles를 갈 경우 9/19 외곽 공영주차·JEP 통제 확인
 - [ ] Carrières를 넣을지 전날 최종 결정
@@ -1277,7 +1277,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 1. **성벽 안 저녁산책:** 관광객이 빠진 Rue des Teinturiers와 작은 광장을 걷는다.
 2. **Les Halles에서 숙소식 한 끼 구입:** roast chicken, ratatouille, 치즈와 빵.
-3. **Uzès 시장 피크닉 준비:** Pont du Gard에서 먹을 빵·치즈·과일을 산다.
+3. **Pont du Gard 피크닉 준비:** 시장이 없는 금요일이므로 Place aux Herbes 의 상설 빵집·치즈가게·정육점에서 산다.
 4. **Pont du Gard에서 15분 아무것도 하지 않기:** 전체 아치를 바라보며 규모를 체감.
 5. **Arles의 시간층 관찰:** Arènes의 로마 구조에서 Saint-Trophime의 중세, La Roquette의 생활골목으로 걸어간다.
 
@@ -1289,6 +1289,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 #### Le Goût du Jour — 이번 구간의 한 번뿐인 특별식 후보
 
+**휴무 {{fact:le-gout-du-jour.closed}}** — 9/16(수) 첫 저녁에는 쓸 수 없다.
 정제된 코스를 선택한다면 Palais 관람일 저녁보다 생활일 또는 다음 날 운전이 짧은 날에 배치한다. 와인페어링은 운전 일정과 분리한다.
 
 #### Restaurant SEVIN — 교황궁 권역의 고급식은 목적을 분명히
@@ -1308,7 +1309,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - **유산의 날 혼잡이 크면:** Palais 입장시간 유지, 무료 특별개방은 포기
 - **Pont du Gard 날씨가 나쁘면:** Uzès 체류 연장 + Avignon 박물관
 - **로마유적이 반복되면:** Glanum 삭제
-- **특별식:** Fou de Fafa(수요일 휴무 — 9/16 불가) 또는 Le Goût du Jour 중 하나
+- **특별식:** Fou de Fafa({{fact:fou-de-fafa.closed}} — 9/16 수요일 불가) 또는 Le Goût du Jour({{fact:le-gout-du-jour.closed}}) 중 하나. **9/16 첫 저녁은 Les Cocottes Saint-Louis 단독이다** — 둘 다 수요일에 닫는다
 - **가장 중요한 장면:** Palais 광장의 저녁빛 또는 Pont du Gard 강변의 전체전망
 
 ### 공식자료
@@ -1372,7 +1373,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | **문화유산의 날 각 유적 운영 방침** | **날짜 확인 · 세부는 출발 전 재확인** — 2026년은 9/19–20(토·일). 공식 포털에 Arles의 Arènes와 Théâtre antique 플래시 투어가 게시되어 있다. **정확한 회차·집합장소·예약·다른 시설의 무료 여부는 개별 확인** {{badge:pending|출발 전 재확인}} |
 | 구궁/신궁 성격 차이 | **[교차 확인 권장]** — 일반적 서술 |
 | Avignon TGV ↔ Centre 셔틀 | **복수 출처 확인 — 전용 셔틀은 없다.** 세 가지가 있다. ① **TER 'La Virgule'** — Avignon Centre ↔ Avignon TGV 를 **4분**에 잇고 하루 약 35 왕복. 다만 **간격이 불규칙**하다(전용 셔틀이 아니라 TGV 역을 지나는 TER 다). ② Orizo 14번 버스 — 15–30분. ③ LER 20번 — 약 15분, 15–20분 간격. **렌터카 반납 후 TGV 를 타는 Day 23 에는 La Virgule 시각을 미리 확인할 것.** 출처: sncf-connect.com · garesetconnexions.sncf · Orizo {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
-| Uzès 주차·시장 | 확인 |
+| Uzès 주차 (금요일 — 시장 없음) | 확인 |
 | Carrières des Lumières 2026 요금 | 확인 |
 | **아를 반 고흐 시기 (1888.2–1889.5)** | **[확인 권장]** — 일반 지식 기반 |
 | **Châteauneuf-du-Pape 거리** | **복수 출처 확인** — 아비뇽에서 **약 17km, 차로 20분**. 주로 D907 경유. 출처: ViaMichelin · 노선 계산 사이트 복수 |
@@ -1455,7 +1456,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | 15:05–16:00 | **Pont Saint-Bénézet** | Palais+Pont 결합권이 합리적. 다리 위보다 강과 도시관계 이해가 핵심 |
 | 16:10–17:15 | Rhône 강변 또는 Île de la Barthelasse 시점 | 무료 강나룻배 운항 여부·바람 확인. 운항 불확실하면 강변만 |
 | 17:30–18:30 | 숙소 휴식·샤워 | 저녁 전 정식 휴식 |
-| 19:30–21:00 | **La Fourchette** 또는 **Le Goût du Jour** | {{badge:pending|영업일 확인}} 금요일 휴무 가능성이 있는 식당은 예약 전 영업일 재확인. 대체는 Cocottes |
+| 19:30–21:00 | **La Fourchette** 또는 **Le Goût du Jour** | 9/18 은 금요일이라 둘 다 연다 — La Fourchette 는 {{fact:la-fourchette.closed}}, Le Goût du Jour 는 {{fact:le-gout-du-jour.closed}}. 대체는 Cocottes |
 
 #### 오늘 꼭 해볼 것
 
@@ -1528,7 +1529,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - **A 경관형**: 다리 양측 시점+강변만, 1시간 30분
 - **B 이해형**: 박물관·수로 설명 추가, 2시간 30분
 - **C 저녁형**: 조명까지 대기하되 Avignon 귀환 20:30 이후 허용
-- **우천형**: Uzès 시장 축소+Pont 실내공간 후 조기귀환
+- **우천형**: Uzès 구시가지 축소+Pont 실내공간 후 조기귀환
 
 ---
 
