@@ -406,6 +406,9 @@ source_priority: "공식 관광기구·지자체·시설·숙박업체 → 지�
 
 ### Lourmarin {{grade:essential|필수}}
 
+> **요금** {{fact:lourmarin.price_adult}} · **운영** {{fact:lourmarin.hours}} · **휴관** {{fact:lourmarin.closed}}
+> **예약** {{fact:lourmarin.booking}} · **소요** {{fact:lourmarin.duration}} · **가는 법** {{fact:lourmarin.getting_there}}
+
 #### 무엇인가 — 카뮈가 익명을 찾아온 마을
 
 카뮈는 새 스승 장 그르니에를 만났는데, 그르니에가 1930–31년에 로랑비베르 재단(뤼르마랭 성)의 입주자였다. 그의 말을 통해 카뮈는 프로방스와 뤼르마랭을 알게 됐다. 마을 묘사에 끌린 그는 뒤늦게 정착했고, 자주 찾아가던 친구 르네 샤르가 권한 것도 계기였다.
@@ -461,6 +464,8 @@ L’Isle-sur-la-Sorgue를 별도 대안으로 고르면 두 작가의 우정이 
 
 ### Coustellet 생산자 시장 {{grade:essential|필수}}
 
+> 📍 {{fact:coustellet.address}} · 🚶 {{fact:coustellet.getting_there}} · 🕐 {{fact:coustellet.hours}} · 휴무 {{fact:coustellet.closed}} · {{fact:coustellet.booking}} · {{fact:coustellet.price_range}}
+
 쿠스텔레 시장은 4월부터 12월까지 일요일 8:00–13:00에 선다.
 
 **9월 13일이 일요일이다.** 개최 기간과 요일이 모두 맞는다.
@@ -485,6 +490,9 @@ L’Isle-sur-la-Sorgue를 별도 대안으로 고르면 두 작가의 우정이 
 ---
 
 ### Roussillon · Sentier des Ocres {{grade:essential|필수}}
+
+> **요금** {{fact:roussillon-sentier-des-ocres.price_adult}} · **운영** {{fact:roussillon-sentier-des-ocres.hours}} · **휴관** {{fact:roussillon-sentier-des-ocres.closed}}
+> **예약** {{fact:roussillon-sentier-des-ocres.booking}} · **소요** {{fact:roussillon-sentier-des-ocres.duration}} · **가는 법** {{fact:roussillon-sentier-des-ocres.getting_there}}
 
 #### 무엇인가 — 두 세기의 채굴이 만든 지형
 
@@ -532,6 +540,9 @@ L’Isle-sur-la-Sorgue를 별도 대안으로 고르면 두 작가의 우정이 
 ---
 
 ### Goult {{grade:priority|우선추천}}
+
+> **요금** {{fact:goult.price_adult}} · **운영** {{fact:goult.hours}} · **휴관** {{fact:goult.closed}}
+> **예약** {{fact:goult.booking}} · **소요** {{fact:goult.duration}} · **가는 법** {{fact:goult.getting_there}}
 
 **관광버스가 들르지 않는 언덕마을이라는 것이 이 마을의 가치다.** 고르드·루시용과 같은
 석조 마을이지만 상점 대신 주민의 화분과 고양이가 골목을 채운다. 마을 위 풍차(Moulin de
@@ -618,6 +629,9 @@ Jérusalem)까지 오르는 길이 짧은 산책 코스가 된다.
 
 ### Abbaye de Sénanque {{grade:priority|우선추천}}
 
+> **요금** {{fact:abbaye-de-senanque.price_adult}} · **운영** {{fact:abbaye-de-senanque.hours}} · **휴관** {{fact:abbaye-de-senanque.closed}}
+> **예약** {{fact:abbaye-de-senanque.booking}} · **소요** {{fact:abbaye-de-senanque.duration}} · **가는 법** {{fact:abbaye-de-senanque.getting_there}}
+
 #### 무엇인가 — 부패에 대한 반작용으로 태어난 건축
 
 1148년에 세워졌다. 문명에서 멀리 떨어진 외딴 곳에서 소박하게 살고자 한 소수의 수도사들이 창설했다.
@@ -668,6 +682,9 @@ Day 13에 본 엑상의 바로크 저택, Day 2의 사그라다 파밀리아와 
 기존 전일 농가생활에서 보존한 선택 모듈이다. 전일 휴식일은 삭제했고, 9/14 또는 9/15 오후의 선택마을을 빼는 대신 사용할 수 있다.
 
 ### Ménerbes — A안 {{grade:priority|우선추천}}
+
+> **요금** {{fact:menerbes.price_adult}} · **운영** {{fact:menerbes.hours}} · **휴관** {{fact:menerbes.closed}}
+> **예약** {{fact:menerbes.booking}} · **소요** {{fact:menerbes.duration}} · **가는 법** {{fact:menerbes.getting_there}}
 
 **피터 메일의 『프로방스에서의 1년』 무대가 된 능선 마을이다** — 그 책이 만든 관광 붐을
 마을은 오래전에 지나 보냈고, 지금은 다시 조용하다. 도라 마르(피카소의 연인이자 사진가)가
@@ -872,8 +889,8 @@ Day 13에 본 엑상의 바로크 저택, Day 2의 사그라다 파밀리아와 
 
 | 식당 | 위치·성격 | 추천 주문·경험 | 가격대 | 예약 |
 |---|---|---|---:|---|
-| **Goût Bistrot** | Bonnieux, 계절 bistro | 3코스 시장메뉴, 지역채소·육류·소스 | 2026 €39 메뉴 | **권장** |
-| **JU – Maison de Cuisine** | Bonnieux, Michelin급 | 3 act 점심부터, 지역 생산자 중심 | €65 점심, 상위코스 €95–145 | **필수** |
+| **Goût Bistrot** | Bonnieux, 계절 bistro | 3코스 시장메뉴, 지역채소·육류·소스 | {{fact:gout-bistrot.price_range}} | **권장** |
+| **JU – Maison de Cuisine** | Bonnieux, Michelin급 | 3 act 점심부터, 지역 생산자 중심 | {{fact:ju-maison-de-cuisine.price_range}} | **필수** |
 | **La Table des Ocres** | Roussillon, hotel-restaurant | 오커마을 관람 뒤 3코스 점심 | €36 set | 권장 |
 | **La Cuisine des Huguets** | Roussillon, casual Provençal | 오늘의 메뉴, 샐러드·전통식 | 중간 | 보통 |
 | **La Gaudina** | Goult 인근, bistronomic | 프로방스·지중해, 그늘 테라스 | 메뉴 변동 | **시간 재확인** |
@@ -1370,8 +1387,8 @@ Goult보다 전망과 식사를 우선하면 오후를 Bonnieux로 바꾼다.
 
 - 높은 마을에서 북쪽 Mont Ventoux 방향 전망
 - 교회 주변 오르막은 체력에 따라 축소
-- **Goût Bistrot**: €39 메뉴, 월요일 점심·저녁 운영 — 계획가(2026-08 조사)
-- **JU – Maison de Cuisine**: 점심 €65부터 — 계획가(2026-08 조사)
+- **Goût Bistrot**: {{fact:gout-bistrot.price_range}} · 영업 {{fact:gout-bistrot.hours}} · 휴무 {{fact:gout-bistrot.closed}}
+- **JU – Maison de Cuisine**: {{fact:ju-maison-de-cuisine.price_range}} · 휴무 {{fact:ju-maison-de-cuisine.closed}}
 
 ### 우천 대체
 - 오커길 폐쇄: Roussillon 골목 45분 → ôkhra 관련 실내 프로그램 또는 농가 요리·스케치

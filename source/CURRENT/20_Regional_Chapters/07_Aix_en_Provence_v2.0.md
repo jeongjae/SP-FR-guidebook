@@ -329,6 +329,9 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 
 ### Marseille 왕복
 
+> **요금** {{fact:marseille.price_adult}} · **운영** {{fact:marseille.hours}} · **휴관** {{fact:marseille.closed}}
+> **예약** {{fact:marseille.booking}} · **소요** {{fact:marseille.duration}} · **가는 법** {{fact:marseille.getting_there}}
+
 | 구간 | 기본안 | 실행 포인트 |
 |---|---|---|
 | Aix 숙소→Gare routière | 도보·시내버스 | 출발 20분 전 도착 |
@@ -347,6 +350,9 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 ---
 
 ### Saint-Paul-de-Vence {{grade:priority|우선추천}}
+
+> **요금** {{fact:saint-paul-de-vence.price_adult}} · **운영** {{fact:saint-paul-de-vence.hours}} · **휴관** {{fact:saint-paul-de-vence.closed}}
+> **예약** {{fact:saint-paul-de-vence.booking}} · **소요** {{fact:saint-paul-de-vence.duration}} · **가는 법** {{fact:saint-paul-de-vence.getting_there}}
 
 #### 무엇인가 — 화가들이 만든 마을
 
@@ -422,6 +428,9 @@ Place de la Rotonde
 ---
 
 ### Cours Mirabeau {{grade:essential|필수}}
+
+> **요금** {{fact:cours-mirabeau-4.price_adult}} · **운영** {{fact:cours-mirabeau-4.hours}} · **휴관** {{fact:cours-mirabeau-4.closed}}
+> **예약** {{fact:cours-mirabeau-4.booking}} · **소요** {{fact:cours-mirabeau-4.duration}} · **가는 법** {{fact:cours-mirabeau-4.getting_there}}
 
 #### 무엇인가 — 성벽을 헐어 만든 길
 
@@ -513,6 +522,8 @@ Place de la Rotonde
 
 ### 시장 — Place Richelme · Place des Prêcheurs {{grade:essential|필수}}
 
+> 📍 {{fact:place-richelme-place-des-precheurs.address}} · 🚶 {{fact:place-richelme-place-des-precheurs.getting_there}} · 🕐 {{fact:place-richelme-place-des-precheurs.hours}} · 휴무 {{fact:place-richelme-place-des-precheurs.closed}} · {{fact:place-richelme-place-des-precheurs.booking}} · {{fact:place-richelme-place-des-precheurs.price_range}}
+
 플라스 리셸므에서 식료품·꽃 시장이 매일 열리고, 화·목·토 오전에는 플라스 데 프레셰르와 주변 거리에서 식료품·공예·리넨·라벤더를 파는 전면 프로방스 시장이 열린다. 오후 1시경에 파장한다.
 
 **일정이 이미 맞아 있다.**
@@ -541,6 +552,9 @@ Place de la Rotonde
 ---
 
 ### Musée Granet {{grade:priority|우선추천}}
+
+> **요금** {{fact:musee-granet.price_adult}} · **운영** {{fact:musee-granet.hours}} · **휴관** {{fact:musee-granet.closed}}
+> **예약** {{fact:musee-granet.booking}} · **소요** {{fact:musee-granet.duration}} · **가는 법** {{fact:musee-granet.getting_there}}
 
 **세잔만 기대하면 안 되는 미술관이다.** 소장 구성, 세잔 작품 수, 플랑크 컬렉션, 2026년 기획전은 {{badge:pending|조사 필요}} 상태다.
 
@@ -589,6 +603,9 @@ Mucem 이라는 짧은 축 하나만 걷고, 그 축 위에서 도시의 시대�
 
 ### Vieux-Port {{grade:essential|필수}}
 
+> **요금** {{fact:vieux-port.price_adult}} · **운영** {{fact:vieux-port.hours}} · **휴관** {{fact:vieux-port.closed}}
+> **예약** {{fact:vieux-port.booking}} · **소요** {{fact:vieux-port.duration}} · **가는 법** {{fact:vieux-port.getting_there}}
+
 도착 직후 항구 양쪽 부두를 전부 돌지 않는다. Quai des Belges에서 항구의 축과 Notre-Dame de la Garde 방향을 확인한 뒤 북쪽 Quai du Port로 이동한다. 아침 어시장 흔적과 페리, 상업도시의 움직임을 40–50분만 본다.
 
 이 직사각형 물웅덩이가 그리스인들이 배를 댄 바로 그 라시돈(Lacydon) 만이다 — **항구의
@@ -603,6 +620,9 @@ Quai des Belges 쪽에 그날 잡은 생선을 파는 좌판이 서는 전통이
 
 ### Le Panier {{grade:priority|우선 추천}}
 
+> **요금** {{fact:le-panier.price_adult}} · **운영** {{fact:le-panier.hours}} · **휴관** {{fact:le-panier.closed}}
+> **예약** {{fact:le-panier.booking}} · **소요** {{fact:le-panier.duration}} · **가는 법** {{fact:le-panier.getting_there}}
+
 Vieux-Port 북쪽의 경사 골목을 Hôtel de Ville–Place de Lenche–Vieille Charité 방향으로 잇는다. 관광 상점만 따라가지 말고 주민 골목과 계단, 그늘진 작은 광장을 번갈아 본다. **45–60분 상한**으로 두고 점심시간을 잠식하지 않는다.
 
 파니에는 그리스 정착지 이래 사람이 계속 살아온, 마르세유에서 가장 오래된 구역이다.
@@ -613,7 +633,7 @@ Vieux-Port 북쪽의 경사 골목을 Hôtel de Ville–Place de Lenche–Vieill
 
 ### Mucem {{grade:essential|필수}}
 
-지중해 문명을 다루는 국립박물관이자 바다와 도시를 연결하는 건축이다. 전시 하나를 75–90분만 고르고, 외부 램프와 보행교에서 Fort Saint-Jean·항구·바다의 관계를 본다. 2026년 9월 공식 운영은 화요일 휴관, 10:00–19:00로 확인했지만 **9월 11일의 전시·입장 슬롯은 출발 전 재확인**한다.
+지중해 문명을 다루는 국립박물관이자 바다와 도시를 연결하는 건축이다. 전시 하나를 75–90분만 고르고, 외부 램프와 보행교에서 Fort Saint-Jean·항구·바다의 관계를 본다. 공식 운영은 휴관 {{fact:mucem.closed}} · {{fact:mucem.hours}} 이지만 **9월 11일의 전시·입장 슬롯은 출발 전 재확인**한다.
 
 2013년 개관한 이 박물관은 **파리 밖에 세워진 첫 국립박물관**이라는 상징성을 갖는다 —
 프랑스가 지중해 문명을 다루는 기관을 수도가 아니라 마르세유에 둔 것 자체가 선언이었다.
@@ -625,6 +645,9 @@ Vieux-Port 북쪽의 경사 골목을 Hôtel de Ville–Place de Lenche–Vieill
 남는다 — 전시가 다루는 '지중해'가 유리창 밖에 실물로 걸려 있는 셈이다. 소지품 검사가 있어 큰 배낭은 물품보관소로 보내게 된다. J4 부두의 신관과 요새 쪽 구관이 다리로 이어진 이중 구조라, 입구를 J4 쪽으로 잡아야 동선이 순방향이 된다.(요새에서 시작하면 다리를 역류하게 된다.)
 
 ### Fort Saint-Jean {{grade:essential|필수}}
+
+> **요금** {{fact:fort-saint-jean.price_adult}} · **운영** {{fact:fort-saint-jean.hours}} · **휴관** {{fact:fort-saint-jean.closed}}
+> **예약** {{fact:fort-saint-jean.booking}} · **소요** {{fact:fort-saint-jean.duration}} · **가는 법** {{fact:fort-saint-jean.getting_there}}
 
 Mucem과 보행교로 연결된 요새다. 정원과 성벽 동선에서 Vieux-Port 입구를 되돌아보는 데 45–60분을 쓴다. 전시를 더 추가하기보다 이곳에서 앉아 쉬는 편이 하루의 균형에 맞다.
 
@@ -771,6 +794,9 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 
 ### Bastide du Jas de Bouffan {{grade:priority|우선추천}} — 선택
 
+> **요금** {{fact:bastide-du-jas-de-bouffan.price_adult}} · **운영** {{fact:bastide-du-jas-de-bouffan.hours}} · **휴관** {{fact:bastide-du-jas-de-bouffan.closed}}
+> **예약** {{fact:bastide-du-jas-de-bouffan.booking}} · **소요** {{fact:bastide-du-jas-de-bouffan.duration}} · **가는 법** {{fact:bastide-du-jas-de-bouffan.getting_there}}
+
 #### 무엇인가 — 세잔이 화가가 된 집
 
 세잔이 20세이던 1859년에 아버지가 자스 드 부팡을 사들였고, 60세이던 1899년에 팔았다. 화가가 그토록 사랑한 프로방스의 '무게중심'이다.
@@ -819,6 +845,9 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 ---
 
 ### Montagne Sainte-Victoire · Terrain des Peintres {{grade:priority|우선추천}}
+
+> **요금** {{fact:montagne-sainte-victoire-terrain-des-peintres.price_adult}} · **운영** {{fact:montagne-sainte-victoire-terrain-des-peintres.hours}} · **휴관** {{fact:montagne-sainte-victoire-terrain-des-peintres.closed}}
+> **예약** {{fact:montagne-sainte-victoire-terrain-des-peintres.booking}} · **소요** {{fact:montagne-sainte-victoire-terrain-des-peintres.duration}} · **가는 법** {{fact:montagne-sainte-victoire-terrain-des-peintres.getting_there}}
 
 세잔이 평생 80회 넘게 그린 산이다. '화가들의 땅(Terrain des Peintres)'은 로브 언덕 위의
 작은 공원으로, 세잔이 실제로 이 산을 그리던 시점(視點)에 그의 그림 복제 패널이 서 있다 —

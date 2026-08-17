@@ -139,6 +139,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "hours": {
+          "value": "상시 개방 (시간 제한 없음)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "+34 900 92 96 92"
@@ -382,6 +388,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_range": {
+          "value": "2인 €60–90",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
         }
       },
       "phone": "+34 932 703 458"
@@ -522,6 +535,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_range": {
+          "value": "bomba picante €4.90 · escalivada+anchovy €11.30",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
         }
       },
       "phone": "+34 93 220 47 56"
@@ -586,6 +606,12 @@
           "ttl_days": 90,
           "source": "https://www.visitcadaques.org/",
           "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "상시 개방 (시간 제한 없음)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "+34 972 258 315"
@@ -702,6 +728,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "성인 €13–16.50 (2026)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고가 '복수 출처 확인'으로 표기하던 값을 T3-3 에서 이관"
         }
       }
     },
@@ -1240,6 +1273,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       }
     },
@@ -1469,6 +1508,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "+33 4 84 35 13 13"
@@ -1533,6 +1578,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "04 72 38 49 30"
@@ -1886,6 +1937,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_range": {
+          "value": "점심 €65 · 상위코스 €95–145",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
         }
       },
       "phone": "04 90 75 88 62"
@@ -1951,6 +2009,13 @@
           "source": "https://www.laparadeta.com/en/seafood-restaurants/",
           "verified_at": "2026-08-17",
           "blocked_reason": "공식 페이지에 예약 관련 안내 없음 (영업시간만 게재: 월 휴무, 화–일 13:00–16:00 / 20:00–23:30)"
+        },
+        "price_range": {
+          "value": "2인 €45–70 (당일 시세)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
         }
       },
       "phone": "+34 934 500 191"
@@ -2056,6 +2121,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_range": {
+          "value": "arroz a banda €25/인 · paella valenciana €24/인 · mejillones thai €16",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
         }
       }
     },
@@ -2196,6 +2268,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       }
     },
@@ -2316,6 +2394,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "주차 연중 08:00–19:00 유료 · 시간당 €5~ (최대 11시간)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "verified_at": "2026-08-17",
+          "note": "원고가 '복수 출처 확인'으로 표기하던 값을 T3-3 에서 이관"
         }
       },
       "phone": "+33 4 90 54 34 39"
@@ -2654,6 +2739,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "04 90 72 02 08"
@@ -2879,6 +2970,12 @@
           "confidence": "unverified",
           "ttl_days": 90,
           "verified_at": "2026-08-17"
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       }
     },
@@ -3420,6 +3517,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "3906"
@@ -3678,6 +3781,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       }
     },
@@ -4070,6 +4179,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "04 90 80 80 00"
@@ -4157,6 +4272,12 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       },
       "phone": "04 90 80 80 00"
@@ -4390,6 +4511,12 @@
           "confidence": "unverified",
           "ttl_days": 90,
           "verified_at": "2026-08-17"
+        },
+        "hours": {
+          "value": "상시 개방 (시간 제한 없음)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         }
       }
     },
@@ -4452,10 +4579,10 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "blocked_reason": "uzes-pontdugard.com 403 · uzes.fr 418 (S2, 우회 금지)"
+          "value": "상시 개방 (시간 제한 없음)",
+          "confidence": "secondary",
+          "ttl_days": 180,
+          "note": "이 장소의 다른 공식 사실에서 끌어낸 값 (T3-3)"
         },
         "note": {
           "value": "장은 수·토 오전만 선다 — 방문일 9/18(금)에는 시장이 없다. 무료 셔틀(Mayac↔시내)도 토요일 오전만 운행한다.",

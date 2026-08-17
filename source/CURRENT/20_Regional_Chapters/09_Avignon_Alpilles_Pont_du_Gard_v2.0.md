@@ -381,6 +381,9 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 
 ### 19.3 Uzès·Pont·Arles 주차
 
+> **요금** {{fact:arles.price_adult}} · **운영** {{fact:arles.hours}} · **휴관** {{fact:arles.closed}}
+> **예약** {{fact:arles.booking}} · **소요** {{fact:arles.duration}} · **가는 법** {{fact:arles.getting_there}}
+
 - Uzès: 중심부 외곽주차 후 Place aux Herbes 도보 진입.
 - Pont du Gard: 공식 사이트 주차장 사용, 자정 이후 주차 금지.
 - Les Baux: 유료주차가 사실상 필수, 앱결제 사용 가능.
@@ -472,6 +475,12 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 
 ### Rocher des Doms · Pont Saint-Bénézet {{grade:essential|필수}}
 
+> **요금** {{fact:rocher-des-doms.price_adult}} · **운영** {{fact:rocher-des-doms.hours}} · **휴관** {{fact:rocher-des-doms.closed}}
+> **예약** {{fact:rocher-des-doms.booking}} · **소요** {{fact:rocher-des-doms.duration}} · **가는 법** {{fact:rocher-des-doms.getting_there}}
+
+> **요금** {{fact:pont-saint-benezet.price_adult}} · **운영** {{fact:pont-saint-benezet.hours}} · **휴관** {{fact:pont-saint-benezet.closed}}
+> **예약** {{fact:pont-saint-benezet.booking}} · **소요** {{fact:pont-saint-benezet.duration}} · **가는 법** {{fact:pont-saint-benezet.getting_there}}
+
 **지형을 이해하는 한 세트다.** 따로 보면 의미가 반감된다.
 
 #### Rocher des Doms
@@ -513,6 +522,9 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 ---
 
 ### Uzès Place aux Herbes·구시가지 {{grade:essential|필수}}
+
+> **요금** {{fact:uzes.price_adult}} · **운영** {{fact:uzes.hours}} · **휴관** {{fact:uzes.closed}}
+> **예약** {{fact:uzes.booking}} · **소요** {{fact:uzes.duration}} · **가는 법** {{fact:uzes.getting_there}}
 
 우제스는 수요일과 토요일 오전 시장으로 유명하다. 수요일은 7:30–14:00에 마을 중심에서, **토요일은 7:30–13:00에 플라스 오 제르브**에서 열린다.
 
@@ -638,6 +650,9 @@ Arles는 로마 식민도시의 유적, 중세 성당과 회랑, 반 고흐의 �
 
 ### Théâtre antique {{grade:essential|필수}}
 
+> **요금** {{fact:theatre-antique.price_adult}} · **운영** {{fact:theatre-antique.hours}} · **휴관** {{fact:theatre-antique.closed}}
+> **예약** {{fact:theatre-antique.booking}} · **소요** {{fact:theatre-antique.duration}} · **가는 법** {{fact:theatre-antique.getting_there}}
+
 Arènes보다 한 세기 앞선 극장 유적이다. 남은 무대·기둥·객석의 비례를 35–45분만 보고, 인접한 다른 고대유적을 연달아 추가하지 않는다. 문화부 공식 사이트에 9월 19–20일 무료 현장 해설이 등록돼 있으나 정확한 회차는 출발 전 확인한다.
 
 기원전 1세기 아우구스투스 시대의 극장으로, 만 명이 앉던 객석은 채석장 신세를 오래 지나
@@ -650,6 +665,9 @@ veuves)'라는 별명**으로 불린다 — 그 둘이 오히려 사라진 전�
 
 ### Place du Forum {{grade:priority|우선추천}}
 
+> **요금** {{fact:place-du-forum.price_adult}} · **운영** {{fact:place-du-forum.hours}} · **휴관** {{fact:place-du-forum.closed}}
+> **예약** {{fact:place-du-forum.booking}} · **소요** {{fact:place-du-forum.duration}} · **가는 법** {{fact:place-du-forum.getting_there}}
+
 고대 포룸의 중심이 오늘날 카페 광장으로 바뀐 곳이다. Van Gogh Café의 재현 여부보다 광장의 실제 생활과 로마 도시축의 흔적을 본다. 점심 또는 카페 휴식을 60–75분 확보한다.
 
 광장 북쪽 호텔 벽에 로마 포룸 신전의 **코린트 기둥 두 개가 박혀 있다** — 광장 지하가
@@ -659,6 +677,9 @@ veuves)'라는 별명**으로 불린다 — 그 둘이 오히려 사라진 전�
 부흥 운동으로 노벨문학상을 받은 시인)의 동상이 광장을 지키고 있다. 점심 자리는 광장 테라스보다 광장에서 한 골목 들어간 안쪽이 값도 소음도 낫다. 광장 남쪽 모퉁이에서 시청 광장 쪽으로 이어지는 골목이 구시가 산책의 등뼈다. 저녁이면 광장 전체가 테라스가 되므로 낮과는 완전히 다른 장소가 된다. 카페 값은 관광지 요율이니 커피 한 잔의 자릿세라고 생각하는 편이 맞다.
 
 ### Cloître Saint-Trophime {{grade:priority|우선추천}}
+
+> **요금** {{fact:cloitre-saint-trophime.price_adult}} · **운영** {{fact:cloitre-saint-trophime.hours}} · **휴관** {{fact:cloitre-saint-trophime.closed}}
+> **예약** {{fact:cloitre-saint-trophime.booking}} · **소요** {{fact:cloitre-saint-trophime.duration}} · **가는 법** {{fact:cloitre-saint-trophime.getting_there}}
 
 로마네스크와 고딕 회랑이 이어지는 중세의 핵심이다. 2026년 9월 공식 운영은 09:00–19:00로 확인됐지만 문화유산의 날 동선·무료개방은 출발 전 재확인한다. 실내·그늘 비중이 있어 우천과 더위에 유리하며 45–60분이면 충분하다.
 
@@ -676,6 +697,9 @@ veuves)'라는 별명**으로 불린다 — 그 둘이 오히려 사라진 전�
 15세기 저택을 개조한 건물의 옥상 유리 설치작에서 아를 지붕이 내려다보인다. 체류 60분 상한이면 충분하다. 서점 겸 뮤지엄숍의 반 고흐 관련 서가가 알차서, 기념품보다 화집 쪽이 남는 소비다. 건물 자체가 도심 한복판이라 동선에서 벗어나지 않는다.
 
 ### La Roquette {{grade:priority|우선추천}}
+
+> **요금** {{fact:la-roquette.price_adult}} · **운영** {{fact:la-roquette.hours}} · **휴관** {{fact:la-roquette.closed}}
+> **예약** {{fact:la-roquette.booking}} · **소요** {{fact:la-roquette.duration}} · **가는 법** {{fact:la-roquette.getting_there}}
 
 론강과 가까운 생활 골목이다. 기념물 관람을 끝낸 뒤 45분 정도 걷고 카페에서 쉬며 Arles가 유적도시만이 아니라 현재의 주거도시임을 확인한다. 늦어지면 강변과 La Roquette 중 하나만 고른다.
 
@@ -723,6 +747,9 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 
 ### Carrières des Lumières {{grade:priority|우선추천}}
 
+> **요금** {{fact:carrieres-des-lumieres.price_adult}} · **운영** {{fact:carrieres-des-lumieres.hours}} · **휴관** {{fact:carrieres-des-lumieres.closed}}
+> **예약** {{fact:carrieres-des-lumieres.booking}} · **소요** {{fact:carrieres-des-lumieres.duration}} · **가는 법** {{fact:carrieres-des-lumieres.getting_there}}
+
 #### 2026년 프로그램이 확인됐다
 
 2026년 2월 13일부터 카리에르 데 뤼미에르는 두 개의 새 몰입형 전시를 선보인다 — **「피카소, 움직이는 예술」**, 큐비즘 공동 창시자의 예술 여정을 다시 보게 만드는 몰입 경험. 그리고 **「프리다 칼로, 한복판에서」**, 멕시코에서 가장 유명한 화가의 여정을 대표작과 자화상으로 따라가는 짧은 프로그램이다.
@@ -765,6 +792,9 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 생활도시의 얼굴이 앞으로 나온다. 우리 일정에서는 아를을 통째로 교체할 때만 쓰는 대안이라, 반나절 이상을 배정하지 않는다. 글라눔까지 보려면 마을에서 도보 30분 남짓의 가로수길을 걷는다.
 
 ### Saint-Paul-de-Mausole {{grade:essential|필수}}
+
+> **요금** {{fact:saint-paul-de-mausole.price_adult}} · **운영** {{fact:saint-paul-de-mausole.hours}} · **휴관** {{fact:saint-paul-de-mausole.closed}}
+> **예약** {{fact:saint-paul-de-mausole.booking}} · **소요** {{fact:saint-paul-de-mausole.duration}} · **가는 법** {{fact:saint-paul-de-mausole.getting_there}}
 
 #### 무엇인가 — 수도원이 병원이 된 곳
 
@@ -1141,7 +1171,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 | 대상 | 요금 | 상태 |
 |---|---|---|
-| **Carrières des Lumières** | **성인 €13–16.50** (2026) | 확인 |
+| **Carrières des Lumières** | {{fact:carrieres-des-lumieres.price_adult}} | 확인 |
 | Palais des Papes | — | {{badge:pending|재확인}} |
 | Pont Saint-Bénézet | — | {{badge:pending|재확인}} · 통합권 가능성 |
 | Pont du Gard | — | {{badge:pending|재확인}} |
@@ -1362,8 +1392,8 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | Pont Saint-Bénézet (12세기·22개 중 4개·920m·베네제 전설·아돌프 아당 19세기 작곡·15세기 이후 수문 변화·17세기 폐기·1995 유네스코·춤 허용) | 복수 출처 확인 |
 | Pont du Gard (1세기 중반·50.02km·외르 수원→님·48.8m·3층·아치 6/11/35·상단 273m 원래 360m·경사 34cm/km·17m 낙차·하루 4만㎥·회반죽 없음·6톤 석재·1840 역사기념물·1985 유네스코·통행료 다리로 존속·1400년대 우제스 주교와 공작이 유지) | 복수 출처 확인 |
 | Uzès (1세기 정착·1088 세뇌르·1565 공작·수 7:30–14:00 / 토 7:30–13:00 Place aux Herbes·아비뇽에서 45분·중세 중심가 차량 통제) | 확인 |
-| **Carrières des Lumières 2026** | **복수 출처 확인** — 피카소 + 프리다 칼로, 2/13부터 · 9월 9:30–19:00 · 성인 €13–16.50 |
-| Saint-Paul-de-Mausole (1000년경 수도원·1789 국유화·1807 메르퀴랭·페롱 박사·생조제프 수녀회·관람 구성·2026/2/9–2027/1/3·봄가을여름 9:30–18:45) | 복수 출처 확인 |
+| **Carrières des Lumières 2026** | **복수 출처 확인** — 피카소 + 프리다 칼로, 2/13부터 · {{fact:carrieres-des-lumieres.hours}} · {{fact:carrieres-des-lumieres.price_adult}} |
+| Saint-Paul-de-Mausole (1000년경 수도원·1789 국유화·1807 메르퀴랭·페롱 박사·생조제프 수녀회·관람 구성·2026/2/9–2027/1/3) | 복수 출처 확인 · 운영 {{fact:saint-paul-de-mausole.hours}} |
 | **반 고흐 입원 시작일** | **자료 불일치** — 5월 3일 vs 5월 8일. 공식 사이트 따라 8일 채택, 본문 명시 |
 | **Les Halles 운영 요일** | 운영 {{fact:les-halles-d-avignon.hours}} · 휴무 {{fact:les-halles-d-avignon.closed}} · Place Pie 의 실내시장, 상인 40여 곳. 축제 기간에는 주 7일 여는 때가 있다 {{badge:unverified|축제 기간 예외 미확인}} |
 | **Palais des Papes 요금·히스토패드 현행** | **2026-08-01 인상 반영** — 요금은 {{fact:palais-des-papes.price_adult}} 이 정본이다 (2026-08-01 이전 요금 서술은 폐기). 8세 미만 무료. 3월–11월 초 09:00–19:00, 마지막 입장 폐관 1시간 전. **히스토패드는 입구에서 무료 제공**(7개 언어, 증강현실). ⚠ **2026/5/1 부터 관람 구성이 바뀐다** — 새 해설 동선과 그동안 공개하지 않던 방이 열린다. 출처: palais-des-papes.com 공식. **바뀐 뒤의 요금·동선은 출발 전 재확인** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
@@ -1383,7 +1413,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | **Papeton d'Aubergine · Daube avignonnaise** | **[교차 확인 권장]** — 향토음식 서술 미검증 |
 | Brandade de Nîmes | 일반 지식 |
 | Tavel 로제 전용 AOC | 일반 지식. **[교차 확인 권장]** |
-| Pont du Gard 좌안·우안 주차 | **복수 출처 확인** — **어느 쪽이든 차량당 €9**(탑승 인원 무관). **좌안(rive gauche · Vers-Pont-du-Gard)이 정문**이고 박물관·영상관·상점이 이쪽이다(800대). **우안(rive droite · Remoulins)은 600대**로 피크닉·물놀이에 가깝다. **박물관을 볼 거면 좌안이다.** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
+| Pont du Gard 좌안·우안 주차 | **복수 출처 확인** — 요금 {{fact:pont-du-gard.price_adult}} (주차는 탑승 인원 무관 차량당). **좌안(rive gauche · Vers-Pont-du-Gard)이 정문**이고 박물관·영상관·상점이 이쪽이다(800대). **우안(rive droite · Remoulins)은 600대**로 피크닉·물놀이에 가깝다. **박물관을 볼 거면 좌안이다.** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | Les Baux · Saint-Rémy 주차 | **복수 출처 확인** — **레보는 연중 08:00–19:00 유료**, 시간당 €5~, 최대 11시간. 주차장은 **Parking Centre**(중세 마을 쪽)와 **Parking Carrières des Lumières** 둘. 미터기 또는 PrestoPark 앱. **생레미는 2026/5/4 부터 모든 유료구역 1시간 30분 무료**로 바뀌었다. 레보가 만차면 생레미·모산레잘피유에 대고 도보·자전거로 15–25분 접근하는 방법이 있다. {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 
 ## 실행지도 · 현장 사용

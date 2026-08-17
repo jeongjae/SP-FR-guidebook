@@ -88,24 +88,36 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 이 구역의 셀프 가이드는 아래 11개 세부 항목을 정본으로 삼는다.
 
 #### Promenade des Anglais {{grade:essential|필수}}
+> **요금** {{fact:promenade-des-anglais.price_adult}} · **운영** {{fact:promenade-des-anglais.hours}} · **휴관** {{fact:promenade-des-anglais.closed}}
+> **예약** {{fact:promenade-des-anglais.booking}} · **소요** {{fact:promenade-des-anglais.duration}} · **가는 법** {{fact:promenade-des-anglais.getting_there}}
+
 니스를 상징하는 7km의 평탄한 해안 대로다. 단순한 관광 도로가 아닌 니스 시티 라이프의 심장부다.
 - **왜 가는가**: 지중해의 파란 수평선을 바라보며 평지를 걷는 것만으로도 시차 적응과 피로 회복에 좋다.
 - **최적 방문**: 체류 30–60분 | 일몰 전 45–60분 (해안선 전체가 분홍빛으로 물드는 시간).
 - **실무 안내**: 자전거 및 롤러블레이드 전용 차선과 보행자 도로가 명확히 분리되어 있으므로 산책 시 충돌에 유의해야 한다. 해변 근처 공용 벤치에 잠시 앉아 바다 소리를 듣는 것 자체가 니스의 대표 경험이다.
 
 #### Cours Saleya {{grade:essential|필수}}
+> **요금** {{fact:cours-saleya.price_adult}} · **운영** {{fact:cours-saleya.hours}} · **휴관** {{fact:cours-saleya.closed}}
+> **예약** {{fact:cours-saleya.booking}} · **소요** {{fact:cours-saleya.duration}} · **가는 법** {{fact:cours-saleya.getting_there}}
+
 구시가지 진입로에 늘어선 니스의 대표 시장 광장이다.
 - **왜 가는가**: 남프랑스의 제철 과일, 올리브, 치즈와 꽃들이 늘어서 있어 오감으로 니스 요리의 원재료를 만나는 곳이다.
 - **최적 방문**: 체류 45–60분 | 오전 09:30 - 10:30 (시장이 가장 활기차고 식재료가 풍성한 시각).
 - **놓치지 말 것**: 화덕에서 갓 구워낸 소카(Socca)를 즉석에서 손으로 찢어 먹는 맛을 놓치지 말 것. 월요일(9/7)은 꽃시장 대신 골동품·벼룩시장으로 바뀐다 — 정상 시장은 화요일(9/8) 아침이 적기다.
 
 #### Colline du Château (성채 언덕) {{grade:essential|필수}}
+> **요금** {{fact:colline-du-chateau.price_adult}} · **운영** {{fact:colline-du-chateau.hours}} · **휴관** {{fact:colline-du-chateau.closed}}
+> **예약** {{fact:colline-du-chateau.booking}} · **소요** {{fact:colline-du-chateau.duration}} · **가는 법** {{fact:colline-du-chateau.getting_there}}
+
 구시가지와 항구 사이에 92m 높이로 솟은 공원 전망대다.
 - **왜 가는가**: 니스 요새가 있던 자리로, 현재 요새는 철거되었으나 니스 해안선의 부드러운 곡선과 구시가지의 지붕들을 한눈에 전망할 수 있는 독보적 위치다.
 - **최적 방문**: 체류 45–75분 | 늦은 오후 (일몰 1시간 전 벨랑다 탑 계단을 따라 내려오면 지중해 석양의 정점을 포착 가능).
 - **실무 안내**: 벨랑다 탑 옆에 위치한 무료 공공 엘리베이터를 타면 5분 만에 수월하게 오를 수 있으며, 하산 시 계단을 이용하면 다양한 각도에서 뷰를 즐길 수 있다.
 
 #### Vieux Nice — 구시가지 {{grade:essential|필수}}
+> **요금** {{fact:vieux-nice.price_adult}} · **운영** {{fact:vieux-nice.hours}} · **휴관** {{fact:vieux-nice.closed}}
+> **예약** {{fact:vieux-nice.booking}} · **소요** {{fact:vieux-nice.duration}} · **가는 법** {{fact:vieux-nice.getting_there}}
+
 파스텔톤 주황빛 벽면과 녹색 덧창이 특징인 니스의 역사적 삼각형 도심 구역이다.
 - **왜 가는가**: 1860년 병합 전까지 이탈리아 사보이 백작령의 통치를 500년간 받았던 역사적 지문이 골목과 대성당에 그대로 남아 있어 이탈리아 문화를 강하게 환기시킨다.
 - **최적 방문**: 체류 60–75분 | 오후 16:00 - 18:30 (낮의 열기가 가라앉고 골목 가로등이 켜지는 시각).
@@ -118,24 +130,35 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **실무 안내**: 시장 통로가 협소하므로 백팩보다는 숄더백이 이동하기 편리하며, 상인에게 간단한 동의를 구한 뒤 시식이나 촬영을 진행하는 것이 좋다.
 
 #### Le Suquet — 칸 구시가지 {{grade:essential|필수}}
+> **요금** {{fact:le-suquet-cannes.price_adult}} · **운영** {{fact:le-suquet-cannes.hours}} · **휴관** {{fact:le-suquet-cannes.closed}}
+> **예약** {{fact:le-suquet-cannes.booking}} · **소요** {{fact:le-suquet-cannes.duration}} · **가는 법** {{fact:le-suquet-cannes.getting_there}}
+
 11세기 요새가 세워지며 칸의 역사가 시작된 언덕 마을이다.
 - **왜 가는가**: 크루아제트 대로의 화려한 리조트 호텔 파사드를 보기 전, 칸이 본래 작고 한적한 어촌이었다는 원시적 풍경을 가장 잘 보여주는 역사적 지점이다.
 - **최적 방문**: 체류 60분 | 오전 10:30 - 11:30 (시장 방문 후 자연스럽게 오르기 좋은 오전 시간대).
 - **관람 포인트**: 가파르고 좁은 계단길(Rue Saint-Antoine)을 올라 정상의 노트르담 드 레스페랑스 성당 광장에 서면 칸 구항구와 바다가 극적으로 조망된다.
 
 #### Le Rocher — 모나코 구시가지 {{grade:essential|필수}}
+> **요금** {{fact:le-rocher.price_adult}} · **운영** {{fact:le-rocher.hours}} · **휴관** {{fact:le-rocher.closed}}
+> **예약** {{fact:le-rocher.booking}} · **소요** {{fact:le-rocher.duration}} · **가는 법** {{fact:le-rocher.getting_there}}
+
 지중해로 60m 솟아오른 거대한 바위 절벽 위에 조성된 모나코 대공국의 심장부다.
 - **왜 가는가**: 대공궁, 대성당, 정부청사가 밀집한 바위 위 마을로, 영토 전체가 한 동네 크기인 소국의 독특한 정치적, 공간적 상징성을 체감할 수 있는 곳이다.
 - **최적 방문**: 체류 90–120분 | 오전 10:30 - 12:30 (정오 직전에 대공궁 광장에서 진행되는 위병 교대식 관람 동선 연결).
 - **실무 안내**: 기차역에서 바위 위까지는 오르막 경사가 심하므로 역사 내 공공 엘리베이터와 터널 통로를 활용해 수평 이동하는 경로를 반드시 파악해 두어야 한다.
 
 #### Marché de la Libération {{grade:priority|우선추천}}
+> 📍 {{fact:marche-de-la-liberation.address}} · 🚶 {{fact:marche-de-la-liberation.getting_there}} · 🕐 {{fact:marche-de-la-liberation.hours}} · 휴무 {{fact:marche-de-la-liberation.closed}} · {{fact:marche-de-la-liberation.booking}} · {{fact:marche-de-la-liberation.price_range}}
+
 니스 제네랄 드골 광장에 서는 넓고 쾌적한 니스 현지인들의 생활형 시장이다.
 - **왜 가는가**: 관광객 위주의 쿠르 살레야와 달리, 합리적인 가격의 과일, 야채, 식료품이 가득하여 니스 주민의 진짜 일상과 부엌을 엿볼 수 있는 공간이다.
 - **최적 방문**: 체류 45–60분 | 오전 09:20 - 10:30 (화요일 회복일 오전에 신선한 식재료를 장보기 최적).
 - **실무 안내**: 트램 1호선 정거장(Gare du Sud) 바로 앞에 위치하여 접근이 쉬우며, 시장 주변의 푸드홀(옛 남부역 개조)을 가볍게 둘러보기도 좋다.
 
 #### Nice Old Town–Castle Hill Walk {{grade:essential|필수}}
+> **요금** {{fact:nice-old-town-castle-hill-walk.price_adult}} · **운영** {{fact:nice-old-town-castle-hill-walk.hours}} · **휴관** {{fact:nice-old-town-castle-hill-walk.closed}}
+> **예약** {{fact:nice-old-town-castle-hill-walk.booking}} · **소요** {{fact:nice-old-town-castle-hill-walk.duration}} · **가는 법** {{fact:nice-old-town-castle-hill-walk.getting_there}}
+
 *   **추천 대상**: 니스의 활기찬 아침 시장과 유서 깊은 구시가지 골목을 지나 성채 언덕의 지중해 파노라마 조망까지 한 번에 완료하고 싶은 여행자.
 *   **경로 개요**: Cours Saleya (출발) → Place Rossetti (Sainte-Réparate 대성당) → Rue Droite (Palais Lascaris) → Castle Hill Elevator → Colline du Château 공원 및 인공폭포 → Bellanda Tower 계단 → Promenade des Anglais (도착).
 *   **소요 시간**: 약 1시간 30분.
@@ -148,6 +171,9 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
     5. **벨랑다 탑**: 해변으로 굽어지는 웅장한 해안선(Promenade) 뷰를 확인하며 계단으로 내려온다.
 
 #### Cannes Forville–Suquet–Croisette Walk {{grade:essential|필수}}
+> **요금** {{fact:cannes-forville-suquet-croisette-walk.price_adult}} · **운영** {{fact:cannes-forville-suquet-croisette-walk.hours}} · **휴관** {{fact:cannes-forville-suquet-croisette-walk.closed}}
+> **예약** {{fact:cannes-forville-suquet-croisette-walk.booking}} · **소요** {{fact:cannes-forville-suquet-croisette-walk.duration}} · **가는 법** {{fact:cannes-forville-suquet-croisette-walk.getting_there}}
+
 *   **추천 대상**: 영화제의 현대적인 화려함을 목격하기 전, 칸의 소박하고 역사 깊은 옛 어촌 지형을 체계적으로 걷고 싶은 여행자.
 *   **경로 개요**: Cannes역 (출발) → Marché Forville → Le Suquet (Rue Saint-Antoine 계단길) → Notre-Dame d'Espérance 성당 (전망대) → Vieux-Port → Palais des Festivals → La Croisette (도착).
 *   **소요 시간**: 약 1시간 15분.
@@ -160,6 +186,12 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
     5. **Palais des Festivals**: 영화제의 상징인 붉은 카펫에서 가벼운 촬영 후 해변 대로를 걷는다.
 
 #### Monaco Rocher–Port–Monte Carlo Walk {{grade:essential|필수}}
+> **요금** {{fact:monaco-rocher-port-monte-carlo-walk.price_adult}} · **운영** {{fact:monaco-rocher-port-monte-carlo-walk.hours}} · **휴관** {{fact:monaco-rocher-port-monte-carlo-walk.closed}}
+> **예약** {{fact:monaco-rocher-port-monte-carlo-walk.booking}} · **소요** {{fact:monaco-rocher-port-monte-carlo-walk.duration}} · **가는 법** {{fact:monaco-rocher-port-monte-carlo-walk.getting_there}}
+
+> **요금** {{fact:monaco.price_adult}} · **운영** {{fact:monaco.hours}} · **휴관** {{fact:monaco.closed}}
+> **예약** {{fact:monaco.booking}} · **소요** {{fact:monaco.duration}} · **가는 법** {{fact:monaco.getting_there}}
+
 *   **추천 대상**: 요새 유적부터 포뮬러 1 서킷이 열리는 해안 도로, 몬테카를로의 카지노 구역까지 모나코의 세 가지 핵심 레이어를 수직적으로 하강하며 통과하고 싶은 여행자.
 *   **경로 개요**: Monaco-Monte-Carlo역 (출발) → Place du Palais (대공궁 광장) → Monaco Cathedral → Rampe Major 돌계단 → Port Hercule → F1 GP Start/Finish Line → Casino Square (도착).
 *   **소요 시간**: {{badge:pending|정차점 실측 소요 확인}}

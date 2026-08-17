@@ -10,12 +10,12 @@ import json
 import re
 import sys
 
-from common import FACT_RE, FACTS, allowlist, chapter_files, load_json, report
+from common import (FACT_RE, FACTS, allowed, allowlist, chapter_files,
+                    load_json, report)
 
 MONEY = re.compile(r"€\s?\d")
 TIME = re.compile(r"\b\d{1,2}:\d{2}\b")
 WEEKDAY = re.compile(r"[월화수목금토일]요일\s*(?:휴관|휴무|정기휴일|영업)")
-SKIP_LINE = re.compile(r"^\s*(?:>?\s*\||```|!\[|\[.*\]\(http)")
 
 # --scope grade 용: 시설의 '운영정보'를 말하는 줄만 본다.
 # 시간표 첫 칸의 방문 시각(| 09:20–10:10 | …)은 일정이지 사실값이 아니다.
@@ -41,17 +41,28 @@ def main():
     allow = allowlist()
     problems = []
     scanned = 0
+    universe = 0
     counts = {"money": 0, "time": 0, "weekday": 0}
     for f in chapter_files():
         for i, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
             s = line.strip()
-            if not s or s.startswith("#") or SKIP_LINE.match(s):
-                pass
-            if any(a in s for a in allow):
+            if not s:
                 continue
+            universe += 1
+            if allowed(s, allow):
+                continue
+            if names is not None and s.startswith("|"):
+                # 표 행의 주어는 첫 칸이다. 다른 칸에 이름이 스쳤다고 그 장소의
+                # 운영정보인 것은 아니다.
+                first = s.split("|")[1] if s.count("|") >= 2 else s
+                if not any(nm in first for nm in names):
+                    continue
             if names is not None:
-                # 필수·우선추천 시설을 말하면서 운영정보를 담은 줄만
-                if TIMETABLE_ROW.match(s) or not OPS_HINT.search(s):
+                # 필수·우선추천 시설을 말하는 줄 전량.
+                # 예전에는 여기서 OPS_HINT 로 한 번 더 걸렀고, 그래서 검사 대상이
+                # 18줄이었다. 운영정보 서술을 말로 알아내려 한 것이 잘못이다 —
+                # 아래 MONEY/TIME/WEEKDAY 가 이미 사실값만 고른다.
+                if False:
                     continue
                 if not any(nm in s for nm in names):
                     continue
@@ -67,7 +78,7 @@ def main():
             if hits:
                 problems.append(f"{f.name}:{i} [{'/'.join(hits)}] {s[:70]}")
     label = "fact 토큰 밖 하드코딩" + (" (필수·우선추천 운영정보)" if names is not None else "")
-    rc = report("G2", label, problems, scanned=scanned)
+    rc = report("G2", label, problems, scanned=scanned, universe=universe)
     print(f"    baseline: money {counts['money']} · time {counts['time']} · weekday {counts['weekday']}")
     return rc
 
