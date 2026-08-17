@@ -257,22 +257,37 @@ CAT_RULES = [
     ("appendix", r"공식자료|검증 상태|검증 기록|검증 범위|검증 출처|참고 출처|참고자료|편집 메모|최종 결론"
                  r"|최종 편집 판단|시각요소|공식정보 원칙"),
     ("cost", r"예상 현지비용|예상 경비|^경비"),
-    ("booking", r"^예약|예약카드|예약 게이트"),
-    ("tips", r"대체안|대안 루트|확인목록|현장 메모"),
+    ("booking", r"^예약|예약카드|예약 게이트|공식 확인 정보와 재확인 대상"),
+    ("tips", r"대체안|대안 루트|확인목록|현장 메모|당일치기·우천·피로 대안"),
     ("schedule", r"Day \d|날짜별|일정표|일정 요약|일정 교체|피로도|한눈에 보는|운영 원칙|동선 도식"
-                 r"|Quick Reference|실행성 감사|의사결정 게이트|세 사이클|삭제 우선순위|중요 정정"),
+                 r"|Quick Reference|실행성 감사|의사결정 게이트|세 사이클|삭제 우선순위|중요 정정|한눈에 보기"),
     ("transport", r"교통|렌터카|주차|공항|문전 이동|대중교통|자동차|철도"),
     ("stay", r"숙소|생활권|농가"),
     ("intro", r"이해하|어떻게 볼 것인가|도시층|읽는 법|지역 이해|편집자 큐레이션|열쇠|다섯 개의 층"
-              r"|Editor’s Verdict|Editor's Verdict"),
+              r"|Editor’s Verdict|Editor's Verdict|여행 전체에서의 역할|추천 체류 리듬"),
     ("food", r"레스토랑|카페|시장|먹어야|식당|장보기|음식|빵|식사체계|먹거리"),
     ("info", r"방문지|관광지|주요 장소|핵심 장소|추천등급|추천 등급|미술관|박물관|도서관|서점|공연|축구"
-             r"|근교|체험할|행사|특별전|특별운영|이벤트|선택표|전시|장소별|Top 10|놓치면 아쉬운|하루를 완성"),
+             r"|근교|체험할|행사|특별전|특별운영|이벤트|선택표|전시|장소별|Top 10|놓치면 아쉬운|하루를 완성|꼭 경험할 세 장면|생략해도 되는 것|핵심 셀프가이드"),
     ("tips", r"운동|수영|안전|치안|스케치|지속가능|현장 선택|출발 전|휴식"),
 ]
 
 # 규칙으로 판별이 어려운 제목의 명시적 지정 (챕터 슬러그, 원문 h2 제목) -> 카테고리
 CAT_OVERRIDES = {
+    ("06", "Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계"): "intro",
+    ("06", "여행 전체에서의 역할"): "intro",
+    ("06", "추천 체류 리듬"): "intro",
+    ("06", "꼭 경험할 세 장면"): "info",
+    ("06", "생략해도 되는 것"): "info",
+    ("06", "한눈에 보기 — 우선순위·권역·소요시간"): "schedule",
+    ("06", "구역별 이해와 숙소 생활권"): "stay",
+    ("06", "도착·출발·지역 내 교통"): "transport",
+    ("06", "핵심 셀프가이드"): "info",
+    ("06", "음식·시장·카페·생활체험"): "food",
+    ("06", "당일치기·우천·피로 대안"): "tips",
+    ("06", "예약·비용·안전·주차·귀가"): "booking",
+    ("06", "Nice Old Town–Castle Hill Walk"): "info",
+    ("06", "Cannes Forville–Suquet–Croisette Walk"): "info",
+    ("06", "Monaco Rocher–Port–Monte Carlo Walk"): "info",
     ("05", "시체스에서 지로나 도착, 대성당과 성벽"): "schedule",
     ("05", "콜리우르 시장·왕궁·야수파 산책과 페랄라다"): "schedule",
     ("05", "Pals·Peratallada·Calella de Palafrugell"): "schedule",
@@ -1409,7 +1424,7 @@ def merge_place_sections(md_text, slug):
     제목이 비슷하다는 이유로 합치면 다른 내용을 뭉갠다.
     """
     known = {place_key(r["name"]) for r in load_place_registry()
-             if r["chapter"] == slug and r["type"] == "spot"}
+             if r["chapter"] == slug and r["type"] in ("spot", "walk")}
     if not known:
         return md_text, 0
     lines = md_text.splitlines()
@@ -1478,7 +1493,7 @@ def extract_place_bodies(md_text, slug, rel):
     챕터를 훑을 때 무엇이 있는지 보이게 하려는 것이기도 하다.
     """
     by_key = {place_key(r["name"]): r for r in load_place_registry()
-              if r["chapter"] == slug and r["type"] == "spot"}
+              if r["chapter"] == slug and r["type"] in ("spot", "walk")}
     if not by_key:
         return md_text, 0
     lines = md_text.splitlines()
@@ -1662,6 +1677,8 @@ def rewrite_asset_links(body, rel=".."):
         body = body.replace(f"../../ASSETS/88_Representative_Public_Photos/{fname}",
                             f"{rel}/assets/heroes/{slug}.jpg")
     body = body.replace("../../ASSETS/85_Editorial_Visuals/", f"{rel}/assets/visuals/")
+    body = body.replace("../../places/", f"{rel}/places/")
+    body = body.replace("../../chapters/", f"{rel}/chapters/")
     return body
 
 
@@ -2588,7 +2605,7 @@ DATE_GATES = []
 def build_chapters():
     global VERIFIED_FACTS, REVERIFY_ITEMS, DATE_GATES
     for r in load_place_registry():
-        if r["type"] == "spot" and r["head"]:
+        if r["type"] in ("spot", "walk") and r["head"]:
             PLACE_BY_HEAD.setdefault(r["head"], r["slug"])
     VERIFIED_FACTS = load_verification()
     REVERIFY_ITEMS = load_reverify()
@@ -3262,7 +3279,7 @@ def build_daily():
             if table_md:
                 n_tt += 1
                 tbl, _ = md_convert(table_md)
-                tt_parts.append(head + wrap_tables(tbl).replace(
+                tt_parts.append(head + wrap_tables(rewrite_asset_links(tbl, "..")).replace(
                     "<table>", '<table class="day-time">'))
             # 첫 줄은 `## Day 9 · 9월 6일 일` 헤딩이다. h1 이 이미 같은 말을 한다.
             rest_md = re.sub(r"^#{1,6}\s*Day\s*\d+[^\n]*\n?", "", rest_md).strip()
@@ -3498,14 +3515,12 @@ def build_daily():
                                topic=("분류·상태", "topics/index.html"))),
         encoding="utf-8")
     # 피로도 커버리지 가드 — "원고에 있는 것을 없다고 표시" 사고의 재발 방지.
-    # 정당한 부재는 Day 5·6 뿐이다 (Girona 원고 어디에도 값이 없음 — 추정해
-    # 채우지 않는다). 원고에 값이 더해지면 이 집합에서 빼고, 다른 날이 새로
-    # 비면 그건 추출기 회귀다 — 빌드를 멈춘다.
-    if set(fat_missing) != {5, 6}:
-        print(f"피로도 커버리지 가드 실패 — 값 없는 날 {sorted(fat_missing)} (기대 [5, 6])")
+    # 43일 전수. 지역명·특정 Day 예외를 두지 않는다 (R4-05 에서 Day 5·6 예외를 제거했다).
+    if fat_missing:
+        print(f"피로도 커버리지 가드 실패 — 값 없는 날 {sorted(fat_missing)} (43일 전수 필요)")
         sys.exit(1)
     print(f"  데일리 카드: 43일 → daily/day-01~43.html (Phase4 적용 {len(PHASE4_DAYS)}일)"
-          f" · 피로도 {n_fat}일 · 시간표 {n_tt}건 · 커버리지 가드 41+2")
+          f" · 피로도 {n_fat}일 · 시간표 {n_tt}건 · 커버리지 가드 43일 전수")
 
 
 # ---------------------------------------------------------------- home
@@ -3729,7 +3744,7 @@ def link_map_places(text, out_name):
     # 뤼베롱 소속인데 핀은 Aix 지도다. 팝업 대조는 이 지도에 있는 핀 이름만
     # 실제로 쓰므로 전역 표가 넓어도 잘못 붙지 않는다.
     pin_names = set(re.findall(r'"name":\s*"([^"]+)"', text))
-    reg_spots = [r for r in load_place_registry() if r["type"] == "spot"]
+    reg_spots = [r for r in load_place_registry() if r["type"] in ("spot", "walk")]
     table = {}
     for r in sorted(reg_spots, key=lambda r: r["chapter"] != slug):
         for key in (r["pin"], r["name"]):
@@ -4677,7 +4692,7 @@ def place_days(registry, timetable):
         by_day[n] = place_match_text(txt)
     out = {}
     for r in registry:
-        if r["type"] != "spot":
+        if r["type"] not in ("spot", "walk"):
             continue
         k = place_key(r["name"])
         if len(k) < 3:
@@ -4723,8 +4738,8 @@ def check_places():
         if r["slug"] in seen:
             problems.append(f'슬러그 중복: {r["slug"]}')
         seen.add(r["slug"])
-        if r["type"] not in ("spot", "node"):
-            problems.append(f'{r["slug"]}: 타입이 spot·node 가 아니다 ({r["type"]})')
+        if r["type"] not in ("spot", "node", "walk"):
+            problems.append(f'{r["slug"]}: 타입이 spot·node·walk 가 아니다 ({r["type"]})')
         if r["pin"] and r["pin"] not in [p[0] for p in PLACES.get(r["chapter"], [])]:
             problems.append(f'{r["slug"]}: 지도 핀 "{r["pin"]}" 이 PLACES[{r["chapter"]}] 에 없다')
         if r["body"]:
@@ -4754,7 +4769,7 @@ def check_places():
         for p in problems[:20]:
             print("  " + p)
         sys.exit(1)
-    spots = [r for r in reg if r["type"] == "spot"]
+    spots = [r for r in reg if r["type"] in ("spot", "walk")]
     undecided = [r for r in spots if not r["grade"]]
     print(f"장소 레지스트리 검사: spot {len(spots)} · node {len(reg) - len(spots)}"
           f" · 등급 미정 {len(undecided)} 이상 없음")
@@ -4837,7 +4852,7 @@ def build_places(timetable):
     map_links_all = load_map_links()
     by_ch = {c["slug"]: c for c in CHAPTERS if c["kind"] == "region"}
     order = [c["slug"] for c in CHAPTERS if c["kind"] == "region"]
-    spots = [r for r in reg if r["type"] == "spot"]
+    spots = [r for r in reg if r["type"] in ("spot", "walk")]
     spots.sort(key=lambda r: (order.index(r["chapter"]), r["name"]))
 
     for r in spots:
@@ -5134,6 +5149,22 @@ def check_visual_tokens():
     HTML 만 검사하면 검색 결과에 토큰이 뜨는 것을 놓친다.
     `<pre>`·`<code>` 안은 챕터 01이 토큰 문법을 예시로 보여주는 자리라 제외한다.
     """
+    # 원고 단계 가드 — 백틱으로 감싼 토큰은 <code> 로 렌더돼 위 코드블록 제외 규칙을
+    # 통과해 버린다. 그러면 독자 화면에 `{{badge:...}}` 문자열이 그대로 보인다.
+    # 챕터 01(문법 설명)만 예외로 둔다.
+    backticked = []
+    for f in sorted((SOURCE / "CURRENT").rglob("*.md")):
+        if f.name.startswith("01_"):
+            continue
+        for i, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            for m in re.finditer(r"`\{\{(?:badge|grade|VISUAL):[^`]*\}\}`", line):
+                backticked.append(f"{f.relative_to(SOURCE)}:{i}: {m.group(0)}")
+    if backticked:
+        print("백틱으로 감싼 토큰 — 독자 화면에 그대로 노출된다:")
+        for x in backticked[:20]:
+            print("  " + x)
+        sys.exit(1)
+
     leftover = []
     for f in sorted(SITE.rglob("*")):
         if not f.is_file() or f.suffix not in (".html", ".js", ".json"):
@@ -5637,9 +5668,173 @@ def check_phase8_operations_guards():
     print("Phase 8 예약·운영 잠금 가드: 30개 예약 · P0 15개 · 8개 숙소 · Known-Facts/실예약 경계 이상 없음")
 
 
-def check_phase9_commercial_depth_guards():
-    """상용 편집모듈과 51개 장소 dossier가 원고·배포본에서 빠지지 않게 잠근다."""
+def check_confirmed_fact_token_guards():
+    """확정 사실 토큰(예약번호·전화번호·결제금액)이 독자 정본에서 유실되지 않도록 잠근다.
+    출처:
+      1) 110 Lock Register의 확정 레코드
+      2) TP_Europe_Travel_Master_Tracker_v1.2.xlsx 의 Reservations·Transport·Accommodation 시트 확정/완료 레코드
+      3) build/confirmed_fact_manifest.json 에 동결된 챕터 상주 확정 사실 레코드
+    지역명·고정 개수 하드코딩 없이 데이터 기반으로 추출하여 검증한다.
+    """
+    import json
+    import openpyxl
     problems = []
+    exceptions = []
+
+    reader_files = []
+    reader_files.extend((SOURCE / "CURRENT/20_Regional_Chapters").glob("*.md"))
+    reader_files.extend((SOURCE / "CURRENT/10_Core").glob("*.md"))
+    reader_files.append(SOURCE / "ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md")
+    reader_files.append(SOURCE / "ASSETS/91_Place_Registry_v1.0.md")
+    if (SOURCE.parent / "data/daily-cards").exists():
+        reader_files.extend((SOURCE.parent / "data/daily-cards").glob("*.json"))
+
+    reader_corpus = {}
+    for f in reader_files:
+        if f.exists():
+            reader_corpus[f] = f.read_text(encoding="utf-8")
+
+    combined_reader_text = "\n".join(reader_corpus.values())
+    norm_corpus = re.sub(r"\s+", "", combined_reader_text)
+    checked_tokens_set = set()
+
+    def verify_token(token, source_desc):
+        token_str = str(token).strip()
+        if not token_str or token_str in ("None", "재확인", "확정", "미확정", "완료", "-", "—"):
+            return True
+        checked_tokens_set.add((token_str, source_desc))
+        if token_str.startswith("+"):
+            norm_token = re.sub(r"\s+", "", token_str)
+            found = (token_str in combined_reader_text or norm_token in norm_corpus)
+        elif token_str.startswith("KRW") or token_str.startswith("₩"):
+            raw_num = re.sub(r"[^\d]", "", token_str)
+            found = (token_str in combined_reader_text or
+                     f"KRW {int(raw_num):,}" in combined_reader_text or
+                     f"₩{int(raw_num):,}" in combined_reader_text or
+                     f"{int(raw_num):,}" in combined_reader_text)
+        elif token_str.startswith("€"):
+            found = (token_str in combined_reader_text)
+            if not found and "." in token_str:
+                val = float(token_str.replace("€", "").strip())
+                opt1 = f"€{val}"
+                opt2 = f"€{val:.2f}"
+                found = (opt1 in combined_reader_text or opt2 in combined_reader_text)
+        else:
+            found = (token_str in combined_reader_text)
+
+        if not found:
+            problems.append(f"토큰 누락: '{token_str}' (출처: {source_desc})")
+        return found
+
+    # 1. 110 Lock Register
+    lock_register_path = SOURCE / "OPERATIONS/110_Phase8_Reservation_and_Operations_Lock_Register_v1.0.md"
+    if lock_register_path.exists():
+        text = lock_register_path.read_text(encoding="utf-8")
+        for section in re.split(r"\n(?=##\s+)", text):
+            header = section.splitlines()[0].strip() if section.splitlines() else ""
+            is_confirmed = ("확정" in header or "CONFIRMED" in header or
+                            bool(re.search(r"-\s*상태:\s*.*(?:확정|CONFIRMED)", section)))
+            if not is_confirmed:
+                continue
+            if "guard: operations-only" in section:
+                exceptions.append(f"LockRegister: {header}")
+                continue
+            for m in re.finditer(r"(?:확인번호|예약번호|예약코드|PNR|바우처)\s*[:：]?\s*([A-Za-z0-9.]+)", section):
+                code = m.group(1).strip()
+                if code not in ("재확인", "확정", "None", "미확정", "완료"):
+                    verify_token(code, f"LockRegister: {header}")
+            for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", section):
+                verify_token(m.group(1).strip(), f"LockRegister: {header}")
+            for m in re.finditer(r"(€\s*\d+(?:\.\d+)?|KRW\s*[\d,]+|₩\s*[\d,]+)", section):
+                verify_token(m.group(1).strip(), f"LockRegister: {header}")
+
+    # 2. TRACKER_XLSX
+    tracker_path = SOURCE / "OPERATIONS/TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
+    if tracker_path.exists():
+        wb = openpyxl.load_workbook(tracker_path, data_only=True)
+        for sheet_name in ["Reservations", "Transport", "Accommodation"]:
+            if sheet_name not in wb.sheetnames:
+                continue
+            ws = wb[sheet_name]
+            headers = [cell.value for cell in ws[3]]
+            for row_idx, row in enumerate(ws.iter_rows(min_row=4, values_only=True), start=4):
+                if not any(row):
+                    continue
+                d = dict(zip(headers, row))
+                state = str(d.get("상태") or "").strip()
+                if any(k in state for k in ["예약완료", "확정", "CONFIRMED"]):
+                    row_id = d.get("ID") or d.get("거점") or d.get("구간") or f"Row{row_idx}"
+                    desc = f"Tracker {sheet_name} {row_id}"
+                    note = str(d.get("비고") or "")
+                    if "guard: operations-only" in note:
+                        exceptions.append(desc)
+                        continue
+                    res_code = str(d.get("예약번호") or "").strip()
+                    if res_code and res_code not in ["None", "미표기", "-", "—"]:
+                        for code in re.findall(r"[A-Za-z0-9.]+", res_code):
+                            if code not in ("Trip.com", "Airbnb", "booking.com", "None", "확인", "발권메일", "미표기", "PNR"):
+                                verify_token(code, desc)
+                    for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", note):
+                        verify_token(m.group(1).strip(), desc)
+                    for amt_col in ["총액", "실제총액", "결제액"]:
+                        val = d.get(amt_col)
+                        if val is not None and isinstance(val, (int, float)) and val > 0:
+                            currency = str(d.get("예산통화") or d.get("통화") or ("KRW" if val > 10000 else "EUR")).strip()
+                            if currency in ("EUR", "€"):
+                                amt_token = f"€{val}"
+                            elif currency in ("KRW", "₩", "원"):
+                                amt_token = f"KRW {int(val):,}"
+                            else:
+                                amt_token = f"{val}"
+                            verify_token(amt_token, desc)
+
+    # 3. MANIFEST_JSON
+    manifest_path = SOURCE.parent / "build/confirmed_fact_manifest.json"
+    if manifest_path.exists():
+        mdata = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for rec in mdata.get("records", []):
+            r_id = rec.get("id")
+            desc = f"Manifest {r_id} ({rec.get('entity')})"
+            for t in rec.get("tokens", []):
+                verify_token(t, desc)
+
+    if exceptions:
+        print(f"확정 사실 토큰 생존 가드 예외 목록: {', '.join(exceptions)}")
+
+    if problems:
+        print("확정 사실 토큰 생존 가드 실패:")
+        for problem in problems:
+            print("  " + problem)
+        sys.exit(1)
+
+    print(f"확정 사실 토큰 생존 가드: 확정 토큰 {len(checked_tokens_set)}건(검증 항목) 독자 정본 생존 확인 이상 없음")
+
+
+def check_phase9_commercial_depth_guards():
+    """상용 편집모듈과 장소 dossier가 원고·배포본에서 빠지지 않게 잠근다.
+    하드코딩 매직 넘버와 지역별 분기를 제거하고 content_schema.json 데이터 기반으로 유연하게 검증한다.
+    """
+    import json
+    problems = []
+    
+    schema_path = SOURCE.parent / "build" / "content_schema.json"
+    if not schema_path.exists():
+        problems.append("콘텐츠 검증 스키마 파일(build/content_schema.json) 누락")
+        print("Phase 9 상용편집·장소심화 가드 실패:")
+        print("  build/content_schema.json 파일이 없습니다.")
+        sys.exit(1)
+        
+    try:
+        schema_data = json.loads(schema_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        problems.append(f"콘텐츠 검증 스키마 파일 파싱 실패: {e}")
+        print("Phase 9 상용편집·장소심화 가드 실패:")
+        print(f"  build/content_schema.json 파싱 중 예외 발생: {e}")
+        sys.exit(1)
+        
+    schemas = schema_data["schemas"]
+    dossier_mapping = schema_data["dossier_mapping"]
+    
     required_files = (COMMERCIAL_CARDS, PLACE_DOSSIERS, COMMERCIAL_STANDARD, DOSSIER_STANDARD)
     for path in required_files:
         if not path.exists() or path.stat().st_size < 500:
@@ -5647,64 +5842,163 @@ def check_phase9_commercial_depth_guards():
 
     cards_text = COMMERCIAL_CARDS.read_text(encoding="utf-8")
     dossier_text = PLACE_DOSSIERS.read_text(encoding="utf-8")
-    expected_regions = {
-        "barcelona": ("Barcelona", 6), "girona": ("Girona", 6),
-        "nice": ("Nice", 6), "aix": ("Aix", 6),
-        "luberon": ("Luberon", 6), "avignon": ("Avignon", 7),
-        "lyon": ("Lyon", 5), "paris": ("Paris", 8),
-    }
-
+    
     if len(re.findall(r"^## .+$", cards_text, re.M)) != 8:
         problems.append("Commercial City Experience Card는 정확히 8개 지역이어야 함")
-    # 2026-08-14 R2: Chemin du Fauvisme dossier 를 Collioure 항목에 병합 (51 → 50).
-    dossier_count = len(re.findall(r"^## .+$", dossier_text, re.M))
-    if dossier_count != 50:
-        problems.append(f"장소 dossier {dossier_count}개 (기대 50개)")
+        
+    registry = load_place_registry()
+    registry_spots = {r["slug"]: r for r in registry if r["type"] in ("spot", "walk")}
+    
+    actual_headings = [m.group(1).strip() for m in re.finditer(r"^## (.+)$", dossier_text, re.M)]
+    actual_headings_set = set(actual_headings)
+    
+    duplicates = [h for h in actual_headings_set if actual_headings.count(h) > 1]
+    for h in duplicates:
+        problems.append(f"Dossier 중복 헤딩 발견: {h}")
+        
+    expected_headings_set = set()
+    for slug, mapping in dossier_mapping.items():
+        heading = mapping["heading"]
+        if slug not in registry_spots:
+            problems.append(f"dossier_mapping에 정의된 슬러그 '{slug}'가 레지스트리에 존재하지 않음")
+            continue
+        expected_headings_set.add(heading)
+        if heading not in actual_headings_set:
+            problems.append(f"레지스트리에 대응되는 dossier 누락 발견 (ID: {slug}, 헤딩: {heading})")
+            
+    for heading in actual_headings_set:
+        if heading not in expected_headings_set:
+            problems.append(f"레지스트리 매핑이 없는 orphan dossier 발견: {heading}")
+            
+    dossiers_content = {}
+    for m in re.finditer(r"^## (.+)$", dossier_text, re.M):
+        name = m.group(1).strip()
+        seg = dossier_text[m.end():]
+        nxt = seg.find("\n## ")
+        if nxt == -1:
+            nxt = seg.find("\n# ")
+        seg = seg[:nxt] if nxt != -1 else seg
+        dossiers_content[name] = seg
 
-    # 최신 Regional Chapter만 검사한다. superseded 원고가 통과 근거가 되어서는 안 된다.
+    heading_to_slugs = {}
+    for slug, mapping in dossier_mapping.items():
+        heading_to_slugs.setdefault(mapping["heading"], []).append(slug)
+        
+    for name, content in dossiers_content.items():
+        slugs = heading_to_slugs.get(name, [])
+        if not slugs:
+            continue
+        slug = slugs[0]
+        r = registry_spots.get(slug)
+        if not r:
+            continue
+            
+        fields = {}
+        for line in content.splitlines():
+            if line.strip().startswith("- "):
+                key, value = line.split(":", 1) if ":" in line else (line, "")
+                fields[key.strip("- ").strip()] = value.strip()
+                
+        if r["type"] == "walk":
+            if "공식정보" not in fields or not fields["공식정보"].startswith("http"):
+                problems.append(f"Dossier {name} ({slug}): 필수 필드 누락 — 공식정보")
+        else:
+            required_spot_fields = ["방문", "관람", "체류", "주의", "공식정보"]
+            for field in required_spot_fields:
+                if field not in fields or not fields[field]:
+                    problems.append(f"Dossier {name} ({slug}): 필수 필드 누락 — {field}")
+            has_fee = any(x in fields for x in ["요금·예약", "요금", "예약"])
+            if not has_fee:
+                problems.append(f"Dossier {name} ({slug}): 필수 필드 누락 — 요금·예약")
+                
+    chapter_expected_unique_headings = {}
+    for slug, mapping in dossier_mapping.items():
+        r = registry_spots.get(slug)
+        if r:
+            region = mapping["region"]
+            chapter_expected_unique_headings.setdefault(region, set())
+            chapter_expected_unique_headings[region].add(mapping["heading"])
+    chapter_expected_unique_headings = {k: len(v) for k, v in chapter_expected_unique_headings.items()}
+
+    region_name_map = {
+        "barcelona": "Barcelona", "girona": "Girona", "nice": "Nice", "aix": "Aix",
+        "luberon": "Luberon", "avignon": "Avignon", "lyon": "Lyon", "paris": "Paris"
+    }
+
     for chapter in (c for c in CHAPTERS if c["kind"] == "region"):
         slug = chapter["name"]
-        region_heading, expected_places = expected_regions[slug]
+        region_heading = region_name_map[slug]
         source_path = SOURCE / chapter["path"]
         source_text = source_path.read_text(encoding="utf-8")
-        for token in ("# Commercial Guide Module", "## Editor’s Verdict",
-                      "## 놓치면 아쉬운 선택", "## 하루를 완성하는 네 가지 선택",
-                      "## 이 지역의 Top 10", "## 현장 메모",
-                      "# Regional Context & Scheduled Place Dossiers"):
-            if token not in source_text:
-                problems.append(f"{source_path.name}: Phase 9 모듈 누락 — {token}")
-        if not re.search(r"^## (?:지역을 이해하는 다섯 개의 층|이 (?:도시를|지역을) 이해하는 축)",
-                         source_text, re.M):
-            problems.append(f"{source_path.name}: 역사·경제·사회·문화 지역맥락 축 누락")
-
+        
+        meta, body_md = parse_frontmatter(source_text)
+        schema_name = meta.get("content_schema")
+        
+        if schema_name is None:
+            schema_name = "legacy-region-v1"
+            
+        if schema_name not in schemas:
+            problems.append(f"{source_path.name}: 알 수 없는 content_schema 값 — {schema_name}")
+            continue
+            
+        schema = schemas[schema_name]
+        
+        for module in schema["required_modules"]:
+            if not re.search(rf"^#\s+{re.escape(module)}\s*$", source_text, re.M):
+                problems.append(f"{source_path.name}: 필수 모듈 누락 — {module}")
+                
+        h2_headings_in_file = [m.group(1).strip() for m in re.finditer(r"^## (.+)$", source_text, re.M)]
+        h2_headings_set = set(h2_headings_in_file)
+        
+        for h2 in schema["required_h2"]:
+            if h2 == "Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계" and "Editor’s Verdict" in h2_headings_set and schema_name == "legacy-region-v1":
+                continue
+            if h2 not in h2_headings_set:
+                problems.append(f"{source_path.name}: 필수 헤딩 누락 — {h2}")
+                
+        if schema["strict_order"]:
+            positions = [source_text.find(f"## {h2}") for h2 in schema["required_h2"]]
+            valid_positions = [pos for pos in positions if pos != -1]
+            if valid_positions != sorted(valid_positions):
+                problems.append(f"{source_path.name}: 헤딩 순서 오류 (H2 순서가 올바르지 않음)")
+                
+        if not schema["allow_duplicates"]:
+            dups = [h for h in h2_headings_set if h2_headings_in_file.count(h) > 1]
+            for h in dups:
+                problems.append(f"{source_path.name}: 중복 헤딩 발견 — {h}")
+                
+        if schema_name == "legacy-region-v1":
+            if not re.search(r"^## (?:지역을 이해하는 다섯 개의 층|이 (?:도시를|지역을) 이해하는 축)",
+                             source_text, re.M):
+                problems.append(f"{source_path.name}: 역사·경제·사회·문화 지역맥락 축 누락")
+                
         region_match = re.search(
             rf"^# {re.escape(region_heading)}\s*$([\s\S]*?)(?=^# [^#]|\Z)",
             dossier_text, re.M)
         actual_places = len(re.findall(r"^## .+$", region_match.group(1), re.M)) if region_match else 0
+        expected_places = chapter_expected_unique_headings.get(slug, 0)
         if actual_places != expected_places:
             problems.append(f"{region_heading}: dossier {actual_places}개 (기대 {expected_places}개)")
 
         deployed = "\n".join(
             path.read_text(encoding="utf-8")
             for path in sorted((SITE / "chapters" / slug).glob("*.html")))
-        for token in ("Editor’s Verdict", "놓치면 아쉬운 선택", "이 지역의 Top 10"):
+            
+        for token in schema["required_deployed_tokens"]:
             if token not in deployed:
-                problems.append(f"{slug} 배포 챕터: Phase 9 콘텐츠 누락 — {token}")
-        if not ("지역을 이해하는 다섯 개의 층" in deployed or
-                "이 도시를 이해하는 축" in deployed or "이 지역을 이해하는 축" in deployed):
-            problems.append(f"{slug} 배포 챕터: 역사·경제·사회·문화 지역맥락 축 누락")
-
-    # 모든 dossier는 현장에서 확인할 수 있는 공식 출발점을 가져야 한다.
-    official_links = re.findall(r"^- 공식정보:\s+https?://\S+", dossier_text, re.M)
-    if len(official_links) != 51:   # 50개 dossier + Collioure 병합분의 야수파 링크 1
-        problems.append(f"dossier 공식정보 링크 {len(official_links)}개 (기대 51개)")
+                problems.append(f"{slug} 배포 챕터: Restructured 콘텐츠 누락 — {token}")
+                
+        for token in schema["required_deployed_context_tokens"]:
+            if not any(t in deployed for t in schema["required_deployed_context_tokens"]):
+                problems.append(f"{slug} 배포 챕터: 역사·경제·사회·문화 지역맥락 축 누락")
+                break
 
     if problems:
         print("Phase 9 상용편집·장소심화 가드 실패:")
         for problem in problems[:40]:
             print("  " + problem)
         sys.exit(1)
-    print("Phase 9 상용편집·장소심화 가드: 8개 지역 카드 · 최신 챕터 8개 · 장소 dossier 50개 · 공식링크 50개 이상 없음")
+    print("Phase 9 상용편집·장소심화 가드: 스키마 및 레지스트리-Dossier 검증 이상 없음")
 
 
 def check_phase10_official_fact_guards():
@@ -5991,6 +6285,7 @@ def main():
     check_daily_map_guards()
     check_phase7_visual_guards()
     check_phase8_operations_guards()
+    check_confirmed_fact_token_guards()
     check_phase9_commercial_depth_guards()
     check_phase10_official_fact_guards()
     check_links()

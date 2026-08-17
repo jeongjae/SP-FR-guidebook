@@ -1,0 +1,23 @@
+{
+  "description": "게이트 4(창작 스캔)의 명시적 예외. 사용자가 확정한 값만 등재하며, 게이트 실행 시 항상 로그에 출력된다. 지역명 하드코딩이 아니라 결정 단위로 관리한다.",
+  "exceptions": [
+    {
+      "file": "05_Girona_Collioure_Emporda_v2.1.md",
+      "tokens": [
+        "4/5",
+        "3/5"
+      ],
+      "reason": "Day 5(9/2)=4/5, Day 6(9/3)=3/5 — main 원고에 피로도 값이 없던 자리. 총괄 지시문 사전확정 결정 2(사용자 확정)에 따라 기입하고 day-05·06.json 을 동기화했다.",
+      "decided": "2026-08-17",
+      "source": "RS_RESTRUCTURE_FINAL_RUN_INSTRUCTION_v1.0 사전확정 2"
+    }
+  ],
+  "verbatim_floor_exceptions": [
+    {
+      "file": "06_Nice_Cote_d_Azur_v2.0.md",
+      "reason": "06은 총괄 지시문 Stage A 대상(08·09·04·05)이 아니다. R2/R2b 게이트에서 '오염본 국소 수선' 방식으로 별도 승인된 챕터라 main 대비 자구 일치율이 낮다(구조는 오염 브랜치 기반, 사실값은 R2b에서 main 정본으로 복원 완료). 게이트 3의 95% 하한은 main 원문 이동 조립 챕터에만 적용한다.",
+      "decided": "2026-08-17",
+      "gate": "3"
+    }
+  ]
+}
