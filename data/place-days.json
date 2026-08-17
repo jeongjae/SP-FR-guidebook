@@ -31,7 +31,7 @@
         8
       ]
     },
-    "annecy-palais-de-l-ile-chateau": {
+    "annecy": {
       "displayName": "Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈)",
       "region": "lyon",
       "days": [
@@ -45,14 +45,14 @@
         22
       ]
     },
-    "arles-2": {
+    "arles": {
       "displayName": "Arles (도시)",
       "region": "avignon",
       "days": [
         22
       ]
     },
-    "atelier-des-lauves-atelier-de-cezanne": {
+    "atelier-des-lauves": {
       "displayName": "Atelier des Lauves (Atelier de Cézanne)",
       "region": "aix",
       "days": [
@@ -165,7 +165,7 @@
       ]
     },
     "cau-ferrat": {
-      "displayName": "Cau Ferrat",
+      "displayName": "Museu del Cau Ferrat",
       "region": "barcelona",
       "days": [
         4
@@ -216,13 +216,6 @@
         22
       ]
     },
-    "colline-du-chateau-2": {
-      "displayName": "Colline du Château",
-      "region": "nice",
-      "days": [
-        8
-      ]
-    },
     "cours-mirabeau-4": {
       "displayName": "Cours Mirabeau (분수 4기·세잔 흔적 포함)",
       "region": "aix",
@@ -244,14 +237,7 @@
         16
       ]
     },
-    "croix-rousse-2": {
-      "displayName": "Croix-Rousse 시장",
-      "region": "lyon",
-      "days": [
-        25
-      ]
-    },
-    "croix-rousse-cour-des-voraces-maison-des-canuts": {
+    "croix-rousse": {
       "displayName": "Croix-Rousse (동네·Cour des Voraces·Maison des Canuts)",
       "region": "lyon",
       "days": [
@@ -275,6 +261,13 @@
       "region": "girona",
       "days": [
         4
+      ]
+    },
+    "fondation-maeght": {
+      "displayName": "Fondation Maeght (Saint-Paul-de-Vence)",
+      "region": "nice",
+      "days": [
+        12
       ]
     },
     "fort-saint-jean": {
@@ -312,15 +305,8 @@
         41
       ]
     },
-    "gordes-2": {
+    "gordes": {
       "displayName": "Gordes (마을·성)",
-      "region": "luberon",
-      "days": [
-        18
-      ]
-    },
-    "gordes-3": {
-      "displayName": "Gordes 화요시장",
       "region": "luberon",
       "days": [
         18
@@ -449,7 +435,7 @@
         14
       ]
     },
-    "le-rocher-monaco-ville": {
+    "le-rocher": {
       "displayName": "Le Rocher / Monaco-Ville",
       "region": "nice",
       "days": [
@@ -472,8 +458,8 @@
         21
       ]
     },
-    "les-halles": {
-      "displayName": "Les Halles",
+    "les-halles-d-avignon": {
+      "displayName": "Les Halles d'Avignon",
       "region": "avignon",
       "days": [
         20
@@ -487,13 +473,6 @@
       ]
     },
     "lourmarin": {
-      "displayName": "Lourmarin",
-      "region": "luberon",
-      "days": [
-        16
-      ]
-    },
-    "lourmarin-2": {
       "displayName": "Lourmarin (마을·카뮈 묘·성)",
       "region": "luberon",
       "days": [
@@ -507,6 +486,20 @@
         3
       ]
     },
+    "marche-collioure": {
+      "displayName": "콜리우르 시장 (수요일)",
+      "region": "girona",
+      "days": [
+        5
+      ]
+    },
+    "marche-croix-rousse": {
+      "displayName": "Croix-Rousse 시장",
+      "region": "lyon",
+      "days": [
+        25
+      ]
+    },
     "marche-de-la-liberation": {
       "displayName": "Marché de la Libération",
       "region": "nice",
@@ -515,10 +508,17 @@
       ]
     },
     "marche-forville": {
-      "displayName": "Marché Forville",
+      "displayName": "Marché Forville (Cannes)",
       "region": "nice",
       "days": [
         9
+      ]
+    },
+    "marche-gordes": {
+      "displayName": "Gordes 화요시장",
+      "region": "luberon",
+      "days": [
+        18
       ]
     },
     "marseille": {
@@ -563,7 +563,7 @@
         15
       ]
     },
-    "montmartre-south-pigalle-sacre-c-ur": {
+    "montmartre-south-pigalle": {
       "displayName": "Montmartre · South Pigalle (Sacré-Cœur 포함)",
       "region": "paris",
       "days": [
@@ -725,7 +725,7 @@
         25
       ]
     },
-    "passeig-de-la-muralla-2": {
+    "passeig-de-la-muralla": {
       "displayName": "성벽 (Passeig de la Muralla)",
       "region": "girona",
       "days": [
@@ -751,13 +751,6 @@
       "region": "barcelona",
       "days": [
         3
-      ]
-    },
-    "place": {
-      "displayName": "콜리우르 시장 (수요일)",
-      "region": "girona",
-      "days": [
-        5
       ]
     },
     "place-du-forum": {
@@ -847,13 +840,6 @@
         12
       ]
     },
-    "saint-paul-de-vence-fondation-maeght": {
-      "displayName": "Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함)",
-      "region": "aix",
-      "days": [
-        12
-      ]
-    },
     "sant-pau-recinte-modernista": {
       "displayName": "Sant Pau Recinte Modernista",
       "region": "barcelona",
@@ -884,7 +870,7 @@
         21
       ]
     },
-    "versailles-2": {
+    "versailles": {
       "displayName": "Versailles (궁전·트리아농·정원)",
       "region": "paris",
       "days": [
