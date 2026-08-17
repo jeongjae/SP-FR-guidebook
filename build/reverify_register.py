@@ -23,6 +23,8 @@ CARDS = ROOT / "data/daily-cards"
 DOCS = ROOT / "docs"
 
 TRIP_START = date(2026, 8, 29)
+# 캘린더 경과 표시 기준일. 재생성 시 이 값을 그날로 갱신한다.
+TODAY = "2026-08-17"
 WD = "월화수목금토일"
 
 PENDING_RE = re.compile(r"\{\{badge:pending\|([^}]*)\}\}")
@@ -198,11 +200,19 @@ def main():
     cal = ["# 출발 전 재검증 캘린더", "",
            "**생성:** `build/reverify_register.py`",
            "**기준:** 여행 시작 2026-08-29. 날짜가 걸린 pending 을 방문일 역산으로 배치한다.", ""]
+    today = date.fromisoformat(TODAY)
+    def mark(day_iso):
+        d = date.fromisoformat(day_iso)
+        if d < today:
+            return f"**경과 ({day_iso}) — 즉시 착수**"
+        return f"D-{(TRIP_START - d).days} ({day_iso})"
+    cal += [f"> **오늘 {TODAY} 기준.** 지난 시점은 '경과'로 표시한다 — "
+            "지난 날짜를 미래처럼 두면 현장에서 건너뛴다.", ""]
     cal += ["| 시점 | 할 일 | 근거 |", "|---|---|---|"]
-    cal += ["| D-14 (2026-08-15) | 숙소·렌터카 확정 예약 재확인, 미확정 숙소(Aix·Luberon) 현지 결정 자료 갱신 | 재작업 QA |",
-            "| D-7 (2026-08-22) | 미술관·전시 예약창 확인 (세잔 사이트·Granet·Mucem·Orsay·Grand Palais) | REVERIFY 레지스터 |",
-            "| D-3 (2026-08-26) | 시장 요일·휴관일 최종 확인, 파업·공사 공지 확인 | 요일 충돌 감사 |",
-            "| D-1 (2026-08-28) | 첫 3일(항공·숙소·사그라다) 최종 확인 | CF001·CF002 |",
+    cal += [f"| {mark('2026-08-15')} | 숙소·렌터카 확정 예약 재확인, 미확정 숙소(Aix·Luberon) 현지 결정 자료 갱신 | 재작업 QA |",
+            f"| {mark('2026-08-22')} | 미술관·전시 예약창 확인 (세잔 사이트·Granet·Mucem·Orsay·Grand Palais) | REVERIFY 레지스터 |",
+            f"| {mark('2026-08-26')} | 시장 요일·휴관일 최종 확인, 파업·공사 공지 확인 | 요일 충돌 감사 |",
+            f"| {mark('2026-08-28')} | 첫 3일(항공·숙소·사그라다) 최종 확인 | CF001·CF002 |",
             "| 각 지역 도착 전날 | 해당 지역 pending 항목 일괄 확인 (아래 지역별 건수) | 레지스터 |"]
     cal.append("")
     cal += ["| 지역 | 도착일 | pending 건수 |", "|---|---|---:|"]
