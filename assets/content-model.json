@@ -744,6 +744,39 @@
       "url": "places/sitges.html"
     },
     {
+      "id": "place:barcelona-historic-walk",
+      "slug": "barcelona-historic-walk",
+      "name": "Barcelona 역사도심 — Barri Gòtic·Rambla 권역",
+      "regionIds": [
+        "region:barcelona"
+      ],
+      "type": "walk",
+      "grade": "essential",
+      "aliases": [],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:003",
+        "day:004"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/barcelona-historic-walk.html"
+    },
+    {
+      "id": "place:barcelona-modernisme-walk",
+      "slug": "barcelona-modernisme-walk",
+      "name": "Barcelona Modernisme — Eixample 권역",
+      "regionIds": [
+        "region:barcelona"
+      ],
+      "type": "walk",
+      "grade": "essential",
+      "aliases": [],
+      "legacySlugs": [],
+      "dayIds": [],
+      "dayEvidence": null,
+      "url": "places/barcelona-modernisme-walk.html"
+    },
+    {
       "id": "place:calella-de-palafrugell",
       "slug": "calella-de-palafrugell",
       "name": "Calella de Palafrugell",
@@ -798,6 +831,23 @@
       "dayIds": [],
       "dayEvidence": null,
       "url": "places/girona-cathedral.html"
+    },
+    {
+      "id": "place:passeig-de-la-muralla",
+      "slug": "passeig-de-la-muralla",
+      "name": "Passeig de la Muralla",
+      "regionIds": [
+        "region:girona"
+      ],
+      "type": "spot",
+      "grade": "essential",
+      "aliases": [
+        "성벽 (Passeig de la Muralla)"
+      ],
+      "legacySlugs": [],
+      "dayIds": [],
+      "dayEvidence": null,
+      "url": "places/passeig-de-la-muralla.html"
     },
     {
       "id": "place:onyar",
@@ -876,6 +926,21 @@
       "url": "places/peratallada.html"
     },
     {
+      "id": "place:girona-old-town-walk",
+      "slug": "girona-old-town-walk",
+      "name": "Girona 구시가지 — Call·성벽·대성당 권역",
+      "regionIds": [
+        "region:girona"
+      ],
+      "type": "walk",
+      "grade": "essential",
+      "aliases": [],
+      "legacySlugs": [],
+      "dayIds": [],
+      "dayEvidence": null,
+      "url": "places/girona-old-town-walk.html"
+    },
+    {
       "id": "place:cannes",
       "slug": "cannes",
       "name": "Cannes",
@@ -892,7 +957,7 @@
       "dayIds": [
         "day:009"
       ],
-      "dayEvidence": "실행 감사표",
+      "dayEvidence": "시간표",
       "url": "places/cannes.html"
     },
     {
@@ -1029,6 +1094,63 @@
       ],
       "dayEvidence": "시간표",
       "url": "places/monaco.html"
+    },
+    {
+      "id": "place:nice-walk",
+      "slug": "nice-walk",
+      "name": "Nice Old Town–Castle Hill Walk",
+      "regionIds": [
+        "region:nice"
+      ],
+      "type": "walk",
+      "grade": "essential",
+      "aliases": [
+        "Nice Old Town–Castle Hill Walk"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:008"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/nice-walk.html"
+    },
+    {
+      "id": "place:cannes-walk",
+      "slug": "cannes-walk",
+      "name": "Cannes Forville–Suquet–Croisette Walk",
+      "regionIds": [
+        "region:nice"
+      ],
+      "type": "walk",
+      "grade": "essential",
+      "aliases": [
+        "Cannes Forville–Suquet–Croisette Walk"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:009"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/cannes-walk.html"
+    },
+    {
+      "id": "place:monaco-walk",
+      "slug": "monaco-walk",
+      "name": "Monaco Rocher–Port–Monte Carlo Walk",
+      "regionIds": [
+        "region:nice"
+      ],
+      "type": "walk",
+      "grade": "essential",
+      "aliases": [
+        "Monaco Rocher–Port–Monte Carlo Walk"
+      ],
+      "legacySlugs": [],
+      "dayIds": [
+        "day:010"
+      ],
+      "dayEvidence": "시간표",
+      "url": "places/monaco-walk.html"
     },
     {
       "id": "place:nce-t2",
@@ -2416,7 +2538,7 @@
       "status": "예약완료",
       "area": "호텔 · Occidental Barcelona 1929",
       "address": "Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain",
-      "bookingNumber": "365585SG255002 · Trip.com 1400827967207904",
+      "bookingNumber": "36558SG255002 · Trip.com 1400827967207904",
       "sourceUrl": "https://www.google.com/maps/search/?api=1&query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona"
     },
     {
