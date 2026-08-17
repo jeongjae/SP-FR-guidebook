@@ -231,7 +231,7 @@ Julia의 수영장 접근성은 숙소평가 가중치에서 제외한다.
 
 ## 도착·출발·지역 내 교통
 
-Day 12에 니스 공항에서 렌터카를 받는다. **그런데 엑상 구시가지에서는 차를 쓸 수 없다.**
+Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 엑상 구시가지에서는 차를 쓸 수 없다.**
 
 이 모순이 이 구간 교통 전략의 전부다.
 
@@ -323,7 +323,7 @@ Day 12에 니스 공항에서 렌터카를 받는다. **그런데 엑상 구시�
 | 숙소→Granet | 25–40분 | 큰 가방 제한 |
 | 숙소→Atelier | 25–40분 | 오르막·예약 15분 전 |
 | Aix→Marseille | 60–90분 | Ligne 50·A7 정체, 실제 시간표 재확인 |
-| Aix→Cassis 선택 대안 | 80–110분 | Gorguettes 주차·셔틀 포함 |
+| Aix→Cassis 선택 대안 | 80–110분 | **9/11(금)은 Gorguettes 셔틀 미운행** ({{fact:cassis.getting_there}}) — Presqu'île 유료주차 또는 대체안 필요 {{badge:decision-pending|대안 확정 대기}} |
 | Aix→Lourmarin | 70–90분 | 일요일 주차 |
 | Lourmarin→농가 | 60–120분 | 정확한 주소 확정 후 재계산 |
 
@@ -1153,8 +1153,8 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | 우선 | 항목 | 목표 | 확인사항 |
 |---:|---|---|---|
 | P0 | Aix 숙소+주차 | **9/9–9/13** | 총액·관광세·주차·냉방·주방·취소 |
-| P0 | Atelier des Lauves | 9/12 11:00 | 언어·입장·접근성 |
-| P1 | Mucem | **9/11** 13:15 전후 | 전시·입장·임시변경 |
+| P0 | Atelier des Lauves | 9/12 11:00 — **가이드 회차** | 11:00 은 가이드 전용이다. 요금 {{fact:atelier-des-lauves.price_adult}} · 예약 {{fact:atelier-des-lauves.booking}} |
+| P1 | Mucem | **9/11** 13:15 전후 | 휴관 {{fact:mucem.closed}} · 요금 {{fact:mucem.price_adult}} |
 | P1 | Musée Granet | **9/10** 13:40 | 특별전·보안검색 |
 | P1 | 저녁식당 | 9/10·9/12 | 휴무·지각정책 |
 | P2 | Cassis 선택 대안 | 9/11 | 기상·화재·보트, Marseille와 교체 시만 |
@@ -1175,7 +1175,7 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 
 | 대상 | 요금 | 상태 |
 |---|---|---|
-| **Atelier des Lauves** | **€9.50–15** | 2026-08-14 확인 |
+| **Atelier des Lauves** | {{fact:atelier-des-lauves.price_adult}} | — |
 | **Jas de Bouffan** | **€9.50–15** | 2026-08-14 확인 |
 | **Fondation Maeght** | 일반 €18 · 할인 €14 · 16세 미만 무료. 매일 10:00–18:00(7–8월 19:00) | **2026-08 재확인** — fondation-maeght.com 공식 요금·시간과 일치 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | Musée Granet | — | {{badge:pending|재확인}} |
@@ -1495,7 +1495,7 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 |---|---|---|
 | 07:15–08:00 | Jason 선택 러닝 | 피로가 남으면 생략 |
 | 09:10–10:15 | **토요일 큰 시장** | 점심·이동일 재료구매 |
-| 11:00–12:25 | **Atelier des Lauves** | 예약시간 15분 전 도착 |
+| 11:00–12:30 | **Atelier des Lauves** — 가이드 90분 | 11:00 은 가이드 회차(€12)다. 자율관람 €9.50 은 11:30부터라 이 시간에 성립하지 않는다. 예약시간 15분 전 도착 |
 | 12:40–13:30 | 숙소·시장 점심 | 오후 분리일정 준비 |
 | 14:00–16:00 | Jason 스케치 / Julia 선택 수영 | Albertas·Terrain / Yves Blanc |
 | 16:00–18:10 | 합류·카페·이동간식 | 짐 70% 정리 |

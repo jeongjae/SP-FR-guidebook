@@ -188,7 +188,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 **확정 열차 (2026-08 발권)** — **TGV INOUI 12176 · 10:22 Avignon TGV → 11:28 Lyon Part-Dieu** (1시간 6분) · 1등석 3호차 307(Jungah)·308(Jeongjae) Duo Côte à Côte · 예약번호 **4YMAGT** · €42/인 (Trip.com).
 
-> **⚠ 반납 영업소 개점 전이다.** Hertz Avignon TGV 영업소의 일요일 영업시간은 예약서 기준 **10:00–19:00**인데 반납은 **일요일 09:00**으로 잡혀 있다. 키 드롭(무인 반납) 가능 여부와 절차를 사전에 확인한다 {{badge:pending|무인반납 확인}}. 무인 반납이면 주유 영수증·차량 상태 사진·주차 위치 기록이 더 중요해진다.
+> **⚠ 반납은 전날이다.** 일요일은 Hertz Avignon TGV 가 10:00 에 열어 TGV 10:22 에 댈 수 없다. 그래서 **9/19(토) 18:15까지 조기 반납**한다(DEC-A08). 주차는 Parking Loueurs P0. 주유 영수증·차량 상태 사진·주차 위치 기록을 남긴다.
 
 ### 출발 — Part-Dieu에서 파리로
 
@@ -681,7 +681,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 | 상황 | 기본 대체안 |
 |---|---|
 | 9/21 비 | Fourvière는 푸니쿨라 왕복, Vieux Lyon 축소, 월요일 개관 실내시설 1곳만 |
-| 9/22 비 | Croix-Rousse 시장 짧게, Halles 체류 연장, Beaux-Arts 2시간 |
+| 9/22 비 | Croix-Rousse 시장 짧게, **Halles 체류 연장** — Beaux-Arts 는 {{fact:musee-des-beaux-arts-lyon.closed}} 이라 이 날 불가 {{badge:decision-pending|대안 확정 대기}} |
 | Annecy 비 | Vieille Ville·Palais de l’Île·긴 점심, 크루즈 운항 시만 탑승 |
 | Annecy 철도장애 | Lyon Confluence·Navigône·Parc 생활일 |
 | 강한 피로 | Croix-Rousse와 Halles만 진행, Parc 삭제 |
@@ -898,7 +898,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 |---|---|
 | **Annecy 구시가 시장 화·금·일 7–13시** | **복수 출처 확인** — 9/23 수요일은 해당 없음 |
 | **Halles Paul Bocuse 월요일 휴무 또는 제한** | **복수 출처 확인** — 건물은 월–토 09:00–22:00 · 일 09:00–16:00. **월요일은 점포별로 휴무·축소가 흔하다**(건물이 닫는 것이 아니다). 출처: 공식 halles-de-lyon-paulbocuse.com · 리옹시. {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
-| Croix-Rousse 시장 화–일 오전, 월요일 휴무 | 확인 |
+| Croix-Rousse 시장 운영 | {{fact:croix-rousse.hours}} · 휴무 {{fact:croix-rousse.closed}} |
 | 트라불 (trans ambulare 어원·4세기 기원·수도교 붕괴·약 400개 중 절반이 비외리옹·사유지·레지스탕스 이용·최장 구간 주소·예약 전화) | 복수 출처 확인 |
 | 카뉘 (자카르 1805·직조기 13피트·높은 천장·1831년 11월 첫 반란·1834 학살·1만 명 추방·Cour des Voraces 주소와 6층 계단·1848 집단명 유래·철근콘크리트 계단) | 복수 출처 확인 |
 | **카뉘 인원 수** | **자료 불일치** — 2.5만 / 3만 / 9만. 본문에 명시 |
@@ -957,7 +957,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 | 시간대 | 일정 | 실행 포인트 |
 |---|---|---|
-| 오전 | Avignon TGV 렌터카 반납 (09:00) | 주유·차량사진·영수증·보증금 해제절차 확인. 개점(일 10:00) 전이면 키 드롭 절차 |
+| 오전 | **전날(9/19) 반납 완료** — 이 날 차량 없음 | 9/20 아침은 TER Virgule 09:13 로 Avignon Centre→TGV 이동(DEC-A08) |
 | 10:22→11:28 | TGV 12176 으로 Lyon Part-Dieu 이동 | 열차 20분 전 승강장권 진입, 짐은 시야 안쪽에 둔다 |
 | 도착 후 30–45분 | Part-Dieu→숙소 택시 | Cours Albert Thomas 까지 약 4km. 큰 짐을 가지고 메트로 B→D 환승을 하지 않는다 |
 | 12:00–15:00 | 짐 보관·가벼운 점심 | **체크인은 15:00부터다.** 도착이 11:28 이므로 짐 보관 가능 여부를 미리 확인한다 {{badge:pending|숙소 확인}} |
@@ -1025,7 +1025,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 - **필수**: Fourvière 전망, Vieux Lyon, traboule 2–4개
 - **우선 추천**: Jardin du Rosaire 하산, Saône 강변
 - **선택**: 로마극장, Saint-Jean 성당 내부
-- **대체**: 비가 오면 Fourvière→푸니쿨라 하산→Musée Gadagne 또는 Musée des Beaux-Arts 중 1곳
+- **대체**: 비가 오면 Fourvière→푸니쿨라 하산→**Musée des Beaux-Arts**(월요일 개관 · {{fact:musee-des-beaux-arts-lyon.closed}}). Gadagne 는 {{fact:musee-gadagne.closed}} 이라 이 날 불가 {{badge:decision-pending|대안 확정 대기}}
 
 #### 대안 대책 (우천·휴관·교통 장애)
 
@@ -1054,7 +1054,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 |---|---|---|
 | 07:15–08:00 | Jason 선택 러닝 | Rhône 강변 5–7km. 전날 무릎피로가 있으면 생략 |
 | 08:00–09:00 | 숙소 아침·샤워 | 시장에서 간식·과일 구매 예정 |
-| 09:20–10:10 | **Croix-Rousse 시장** | 화·금·토·일 식품시장 06:00–13:30 (lyon.fr 기준) {{badge:pending|현행 확인}}. 과일·치즈·빵 소량 구매 |
+| 09:20–10:10 | **Croix-Rousse 시장** | {{fact:croix-rousse.hours}} · 휴무 {{fact:croix-rousse.closed}}. 과일·치즈·빵 소량 구매 |
 | 10:15–12:00 | **Croix-Rousse 평지와 slopes** | Place de la Croix-Rousse→Maison des Canuts 외관→Mur des Canuts 선택→경사면 traboule |
 | 12:00–12:30 | 대중교통으로 Halles 이동 | C선·메트로·트램 조합, 혼잡 시 택시 |
 | 12:35–14:05 | **Halles de Lyon Paul Bocuse 점심** | Giraudet quenelle, Sibilia charcuterie, Mère Richard cheese 등 2–3곳을 나눠 맛봄 |
@@ -1072,7 +1072,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 - **도시경관 우선**: Croix-Rousse에서 Saône 방향으로 천천히 하산
 - **현대도시 우선**: 공원 대신 Confluence와 Navigône 수상교통
-- **비 오는 날**: Halles 체류 연장 + Musée des Beaux-Arts 2시간
+- **비 오는 날**: Halles 체류 연장 (9/22 화는 Beaux-Arts {{fact:musee-des-beaux-arts-lyon.closed}}) {{badge:decision-pending|대안 확정 대기}}
 - **Julia 수영**: LOU Piscine 25m 실내풀 또는 50m 야외풀의 당일 자유수영 시간을 별도 확인하여 공원 대신 배치
 
 #### 대안 대책 (우천·휴관·교통 장애)

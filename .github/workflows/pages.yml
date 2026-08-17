@@ -7,6 +7,9 @@ on:
       - "source/**"
       - "build/**"
       - "scripts/**"
+      # S0~S2 는 전부 데이터 작업이다. 이게 없으면 데이터만 바꾼 커밋이 배포되지 않는다.
+      - "data/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -14,11 +17,14 @@ permissions:
 
 concurrency:
   group: pages-deploy
-  cancel-in-progress: true
+  # 배포 중 취소는 gh-pages 를 반쯤 덮은 상태로 남길 수 있다.
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # workflow_dispatch 를 아무 브랜치에서 돌리면 라이브가 그 브랜치로 덮인다.
+    if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
 

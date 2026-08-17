@@ -33,6 +33,29 @@ from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from fact_tokens import render_fact_tokens          # noqa: E402
+
+# `{{fact:}}` 치환 결과 집계 — 빌드 끝에 한 줄로 보고한다.
+FACT_TOKEN_STATS = {}
+
+
+def _build_sha():
+    """푸터에 노출할 빌드 커밋. CI 환경변수 → git → unknown 순."""
+    sha = os.environ.get("GITHUB_SHA")
+    if not sha:
+        try:
+            import subprocess as _sp
+            sha = _sp.run(["git", "rev-parse", "HEAD"], capture_output=True,
+                          text=True, cwd=str(Path(__file__).resolve().parent.parent)).stdout.strip()
+        except Exception:
+            sha = ""
+    return (sha or "unknown")[:7]
+
+
+BUILD_SHA = _build_sha()
+BUILD_AT = date.today().isoformat()
+
 # Windows' legacy console encoding (for example CP949) cannot represent every
 # punctuation character used by the build log. Keep normal invocations from
 # failing while printing diagnostics; CI and redirected logs stay UTF-8 too.
@@ -1118,10 +1141,12 @@ def strip_visual_tokens(md_text):
     return text, removed
 
 
-BADGE_RE = re.compile(r"\{\{badge:([a-z0-9]+)\|([^}|]+)\}\}")
+BADGE_RE = re.compile(r"\{\{badge:([a-z0-9-]+)\|([^}|]+)\}\}")
 GRADE_RE = re.compile(r"\{\{grade:([a-z]+)\|([^}|]+)\}\}")
 STAR_RE = re.compile(r"★{1,5}")
-BADGE_KINDS = {"p0", "pending", "done", "rest"}
+BADGE_KINDS = {"p0", "pending", "done", "rest",
+               # S1 — 사람이 정해야 하는 배치·대안. 확정값처럼 보이면 안 된다.
+               "decision-pending", "unverified"}
 GRADE_KINDS = {"essential", "priority", "optional", "alternative", "excluded"}
 
 # 원고의 추천등급 표기 → 등급 슬러그. 모양(■●○◇▨)으로 구분되므로 색만으로
@@ -1169,6 +1194,9 @@ def render_inline_tokens(text):
         return (f'<span class="stars" role="img" aria-label="적합도 {n}점 (5점 만점)">'
                 f'<span class="sb">{cells}</span><b>{n}.0</b></span>')
 
+    # `{{fact:}}` 를 먼저 편다 — 사실값의 단일 소스는 data/place-facts.json 이고
+    # 원고는 값을 하드코딩하지 않는다 (S0 T0-2).
+    text = render_fact_tokens(text, stats=FACT_TOKEN_STATS)
     return STAR_RE.sub(stars, GRADE_RE.sub(grade, BADGE_RE.sub(badge, text)))
 
 
@@ -2019,6 +2047,7 @@ def page(title, body, *, rel="..", topbar_title=None, meta_line="", subnav="",
   <p>{SITE_TITLE} · {TRIP_PERIOD}</p>
   <p><a href="{rel}/about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
      <a href="{rel}/maps/offline.html">오프라인 지도 준비</a></p>
+  <p class="buildstamp">빌드 {BUILD_SHA} · {BUILD_AT}</p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
   <a href="{rel}/daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
@@ -5004,7 +5033,13 @@ def build_data_js():
         d += timedelta(days=1)
     # 검색 결과는 독자 화면이다. 원고의 Markdown 강조·링크 문법을 노출하지 않는다.
     def clean_search_text(value):
-        rendered = md_inline(str(value))
+        # 인라인 토큰이 검색 결과에 문자열로 새지 않도록 먼저 편다.
+        # (badge·grade 는 라벨만 남기고, fact 는 값으로 치환한다.)
+        text = render_fact_tokens(str(value))
+        text = re.sub(r"\{\{(?:badge|grade):[a-z0-9-]+\|([^}|]+)\}\}", r"\1", text)
+        # 인덱스 문자열은 길이로 잘려 들어오기도 한다 — 꼬리가 끊긴 토큰 잔해도 지운다.
+        text = re.sub(r"\{\{[a-z]+:[^}]*$", "", text).rstrip()
+        rendered = md_inline(text)
         return html.unescape(re.sub(r"<[^>]+>", "", rendered)).strip()
 
     clean_index = []
@@ -6293,6 +6328,9 @@ def main():
     check_tokens()
     check_dates()
     check_places()
+    if FACT_TOKEN_STATS:
+        parts = " · ".join(f"{k} {v}" for k, v in sorted(FACT_TOKEN_STATS.items()))
+        print(f"fact 토큰 치환: {sum(FACT_TOKEN_STATS.values())}건 — {parts}")
     print(f"\n완료: {SITE} ({sum(1 for _ in SITE.rglob('*.html'))}개 HTML 페이지)")
 
 
