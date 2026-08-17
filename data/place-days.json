@@ -136,11 +136,8 @@
       "displayName": "Café Comptoir Abel",
       "region": "lyon",
       "days": [
-        1,
-        19,
         23,
-        24,
-        30
+        24
       ]
     },
     "cannes-forville-suquet-croisette-walk": {
@@ -203,9 +200,6 @@
       "displayName": "Chez Mamie Lise (Annecy)",
       "region": "lyon",
       "days": [
-        5,
-        11,
-        13,
         26
       ]
     },
@@ -255,12 +249,8 @@
       "displayName": "Daniel et Denise Créqui",
       "region": "lyon",
       "days": [
-        2,
-        3,
-        19,
         24,
-        25,
-        30
+        25
       ]
     },
     "fonda-cal-ros": {

@@ -90,6 +90,7 @@
   --sig-caution-ink: #5E4000; /* 본문 위 글자용 — 7:1 확보 */
   --sig-steady:    #1F5E45;   /* 확정·완료 */
   --sig-rest:      #2C4A9A;   /* 회복일·완충 — FR 파랑 계열, 흰 글자 8.6:1 */
+  --sig-rest-ink:  #233C7D;   /* 글자용 — 흰 바탕 10:1 */
 
   /* ---- 지역 액센트 8종 ---- */
   /* 국경이 색으로 보이게 한다. Day 7 에 스페인에서 프랑스로 넘어간다. */
@@ -166,6 +167,7 @@
     --sig-caution-ink: #EFC96A;
     --sig-steady:   #74C7A6;
     --sig-rest:     #9FB4EE;
+    --sig-rest-ink: #B9C9F4;
 
     --acc-bcn: #EE8B90; --acc-gir: #E0B44E; --acc-nce: #7FB6E8;
     --acc-aix: #9FB0EE; --acc-lub: #A8B4EF; --acc-avn: #A6A9F0;
@@ -1231,6 +1233,19 @@ thead th .badge, thead th .grade { color: var(--accent-ink); }
   background: transparent;
   color: var(--sig-critical-ink);
   border: 1.5px dashed var(--sig-critical);
+  font-weight: 700;
+}
+/* 값은 확인됐고 출발 전·현장에서 다시 본다 — 실선 */
+.badge-field-recheck {
+  background: transparent;
+  color: var(--sig-rest-ink);
+  border: 1.5px solid var(--sig-rest);
+}
+/* 공식 확인 불가 — 전화로 물어야 한다. 행동이 필요하므로 이중선으로 무겁게 */
+.badge-unreachable {
+  background: transparent;
+  color: var(--sig-critical-ink);
+  border: 3px double var(--sig-critical);
   font-weight: 700;
 }
 .badge-unverified {

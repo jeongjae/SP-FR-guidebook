@@ -623,9 +623,6 @@ def build_regions():
         country = country_of(c["name"])
         # Day 7 에 국경을 넘는다. 여행 전체를 조망하는 이 화면에 그 사실이
         # 보여야 한다 — 시장 요일·공휴일·긴급번호·언어가 여기서 바뀐다.
-        if prev_country and country != prev_country:
-            cards.append(f'<div class="rg-border" role="separator">'
-                         f'<span>국경 · Day {first} 스페인 → 프랑스</span></div>')
         prev_country = country
         # a 안에 a 를 넣을 수 없다. 카드는 div 로 두고 제목만 링크로 만든다.
         # 국기 띠는 카드 위 모서리의 '면' — 국기 원색은 면에만 쓴다는 규칙 그대로.
@@ -636,14 +633,14 @@ def build_regions():
 <span class="pl-links"><a href="maps/{c["map"]}">실행지도</a>
 <a href="daily/day-{first:02d}.html">첫날 카드</a></span>
 </div>""")
-    body = f"""<h1>지역</h1>
+    body = f"""<h1>가이드</h1>
 <p class="meta">8개 거점을 이동 순서대로 놓았다. 각 지역 챕터로 바로 들어간다.</p>
 <div class="grid">{"".join(cards)}</div>
 
 <div class="related"><a href="{ITINERARY_URL}"><b class="ic ic-list" aria-hidden="true"></b>43일 일정</a>
 <a href="maps/offline.html"><b class="ic ic-map" aria-hidden="true"></b>오프라인 지도 준비</a></div>"""
     (SITE / "regions.html").write_text(
-        page("지역", body, rel=".", back=crumbs_for(("지역", None)),
+        page("가이드", body, rel=".", back=crumbs_for(("가이드", None)),
              coords=coords_bar(".", day=("43일", "daily/index.html"),
                                region=("8곳", None),
                                topic=("분류·상태", "topics/index.html"))),
@@ -1144,9 +1141,16 @@ def strip_visual_tokens(md_text):
 BADGE_RE = re.compile(r"\{\{badge:([a-z0-9-]+)\|([^}|]+)\}\}")
 GRADE_RE = re.compile(r"\{\{grade:([a-z]+)\|([^}|]+)\}\}")
 STAR_RE = re.compile(r"★{1,5}")
-BADGE_KINDS = {"p0", "pending", "done", "rest",
+BADGE_KINDS = {"p0", "done", "rest",
                # S1 — 사람이 정해야 하는 배치·대안. 확정값처럼 보이면 안 된다.
-               "decision-pending", "unverified"}
+               "decision-pending",
+               # T4-4 — 'pending' 하나가 서로 다른 세 상태를 함께 뜻하고 있었다.
+               #   unverified    값을 모른다 (조사가 필요하다)
+               #   field-recheck 값은 확인됐고 출발 전·현장에서 다시 본다
+               #   unreachable   공식 확인 불가 — 전화로 물어야 한다
+               # 니스 교통요금이 'pending' 뒤에서 전 항목 오류인 채 남아 있었던 것은
+               # 이 셋이 한 낱말을 쓰고 있었기 때문이다.
+               "unverified", "field-recheck", "unreachable"}
 GRADE_KINDS = {"essential", "priority", "optional", "alternative", "excluded"}
 
 # 원고의 추천등급 표기 → 등급 슬러그. 모양(■●○◇▨)으로 구분되므로 색만으로
@@ -1221,7 +1225,7 @@ def annotate_tables(md_text):
         vol_cols = [k for k, h in enumerate(header) if VOLATILE_COL_RE.search(h)]
         if vol_cols:
             for k in vol_cols:
-                header[k] = f"{header[k]} {{{{badge:pending|재확인}}}}"
+                header[k] = f"{header[k]} {{{{badge:field-recheck|재확인}}}}"
             out[i] = "| " + " | ".join(header) + " |"
             volatile += len(vol_cols)
         if grade_col is not None:
@@ -1772,7 +1776,8 @@ STATUS_INDEX = defaultdict(list)   # 'badge:pending' 등 -> [항목]
 HEADING_SCAN_RE = re.compile(r'<h([12]) id="([^"]+)"[^>]*>(.*?)</h\1>', re.S)
 TAG_RE = re.compile(r"<[^>]+>")
 BADGE_SPAN_RE = re.compile(r'<span class="(badge|grade) \1-(\w+)">(.*?)</span>', re.S)
-STATUS_WANTED = {"badge:pending", "badge:p0", "grade:essential"}
+STATUS_WANTED = {"badge:unverified", "badge:field-recheck", "badge:unreachable",
+                 "badge:p0", "grade:essential"}
 
 
 def plain(fragment, limit=0):
@@ -2533,7 +2538,7 @@ def verification_block(c, verified, reverify, gates):
                 "| 장소 | 항목 | 상태 | 확인 내용 | 출처 |", "|---|---|---|---|---|"]
         for r in rows:
             label, pending = VERIFY_STATUS.get(r["상태"], (r["상태"], True))
-            badge = " {{badge:pending|재확인}}" if pending else ""
+            badge = " {{badge:field-recheck|재확인}}" if pending else ""
             src = re.sub(r"\[[^\]]*\]\(([^)]+)\)", r"[공식](\1)", r["공식출처"])
             out.append(f'| {r["장소"]} | {r["항목"]} | {label}{badge} | '
                        f'{r["확인내용"]} | {src} |')
@@ -2546,7 +2551,7 @@ def verification_block(c, verified, reverify, gates):
 
     if rv:
         out += ["### 이 지역에서 다시 확인할 것", "",
-                f'{rv["재확인 항목"]} {{{{badge:pending|재확인}}}}', "",
+                f'{rv["재확인 항목"]} {{{{badge:field-recheck|재확인}}}}', "",
                 f'**최종 확인시점** {rv["최종 확인시점"]}', ""]
 
     if mine:
@@ -3529,7 +3534,7 @@ def build_daily():
     # 이관된 일정 챕터 본문(테마·선택·축소까지 전 열)을 접어 둔다 — 같은 정본의
     # 두 밀도이지 두 목록이 아니다. 옛 chapters/itinerary.html 은 리다이렉트.
     sched = SCHEDULE_PAGE_BODY or ""
-    body = ('<h1>43일 일정</h1>'
+    body = ('<h1>전체 일정</h1>'
             '<p class="meta">지역별로 날짜·거점·핵심 실행을 확인한다. '
             '빨간 표시는 놓치면 대안이 없는 교통 연결일이다.</p>'
             f'{"".join(groups)}'
@@ -3537,7 +3542,7 @@ def build_daily():
             '테마·선택·축소까지 한 표</summary>'
             f'{sched}</details>')
     (out_dir / "index.html").write_text(
-        page("43일 일정", body, rel="..", topbar_title="43일 일정",
+        page("전체 일정", body, rel="..", topbar_title="전체 일정",
              back=crumbs_for(("43일 일정", None)),
              coords=coords_bar("..", day=("43일", None),
                                region=("8곳", "regions.html"),
@@ -3608,7 +3613,7 @@ def build_home():
         for g, u, n, s, extra in (
             ("list", ITINERARY_URL, "43일 일정", "날짜별 전체 여정을 확인", ""),
             ("region", "regions.html", "지역별 가이드", "8개 거점의 일정과 생활권", ""),
-            ("check", "tracker/index.html", "여행 준비", "예약 · 교통 · 숙소 상태", ""),
+            ("check", "tracker/index.html", "여행 준비", "여행 준비 상태를 점검", ""),
             ("search", "#search", "통합 검색", "날짜 · 장소 · 식당 · 교통 찾기", " nav-search"),
             ("alert", "maps/offline.html", "비상 · 오프라인", "연결이 약할 때 필요한 정보", "")))
 
@@ -4391,13 +4396,13 @@ def build_tracker():
         SEARCH_INDEX.append({"t": label, "c": "트래커", "u": f"tracker/{slug}.html"})
     print(f"  트래커: {len(cards)}개 시트 → tracker/")
 
-    body = ('<h1>마스터 트래커</h1>'
+    body = ('<h1>준비</h1>'
             '<p class="meta">TP_Europe_Travel_Master_Tracker_v1.2.xlsx에서 변환</p>'
             f'<div class="grid">{"".join(cards)}</div>'
             '<p class="note">부록: <a href="itinerary.html">일정 시트 원본</a> — '
             '20열 원형 열람용. 일정은 <a href="../daily/index.html">43일 일정</a>이 정본 화면이다.</p>')
     (out_dir / "index.html").write_text(
-        page("마스터 트래커", body, rel="..", topbar_title="트래커",
+        page("준비", body, rel="..", topbar_title="준비",
              back=crumbs_for(("트래커", None))),
         encoding="utf-8")
 

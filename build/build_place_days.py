@@ -20,7 +20,8 @@ OUT = ROOT / "data/place-days.json"
 
 # days 열은 두 형식이 섞여 있다 — "Day 4" · "9" · "9/22(화)" · "10/7;10/8"
 DATE_LIT = re.compile(r"(?<!\d)(\d{1,2})/(\d{1,2})(?!\d)")
-DAY_NUM = re.compile(r"(?<![\d/])(\d{1,2})(?![\d/])")
+# 시각(19:30)의 숫자를 Day 번호로 읽으면 안 된다 — 콜론 양옆을 배제한다.
+DAY_NUM = re.compile(r"(?<![\d/:])(\d{1,2})(?![\d/:])")
 TRIP_START = date(2026, 8, 29)
 
 
@@ -34,7 +35,7 @@ def parse_days(cell):
     if not cell or not cell.strip():
         return []
     out = set()
-    rest = cell
+    rest = re.sub(r"\d{1,2}:\d{2}", " ", cell)     # 시각 제거가 먼저다
     for m in DATE_LIT.finditer(cell):
         mo, dd = int(m.group(1)), int(m.group(2))
         try:
@@ -65,6 +66,12 @@ ALIAS = {
     "Croix-Rousse 시장": "marche-croix-rousse",
     "Gordes 화요시장": "marche-gordes",
 }
+
+
+# 지역 챕터가 덮는 Day 범위. 이 밖의 값은 파싱 사고다 —
+# "Day1 시간표" 같은 문서 이름의 숫자가 Day 번호로 잡히면 리옹 식당이 Day 1 에 선다.
+REGION_DAYS = {"barcelona": (1, 4), "girona": (4, 7), "nice": (7, 12), "aix": (12, 16),
+               "luberon": (16, 19), "avignon": (19, 23), "lyon": (23, 27), "paris": (27, 43)}
 
 
 def main():
@@ -102,6 +109,11 @@ def main():
         if not pid:
             unmatched.append((r["region"], r["name"], days))
             continue
+        rng = REGION_DAYS.get(facts[pid].get("region"))
+        if rng:
+            kept = [n for n in days if rng[0] <= n <= rng[1]]
+            if kept:                       # 전부 범위 밖이면 원값을 남겨 사람이 본다
+                days = kept
         mapping.setdefault(pid, {"displayName": facts[pid]["displayName"],
                                  "region": facts[pid]["region"], "days": []})
         mapping[pid]["days"] = sorted(set(mapping[pid]["days"]) | set(days))
