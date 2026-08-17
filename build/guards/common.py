@@ -68,10 +68,19 @@ def allowlist():
             if l.strip() and not l.startswith("#")]
 
 
-def report(gid, title, problems, warn=False):
-    """가드 하나의 결과를 찍고 실패 수를 돌려준다."""
-    tag = "WARN" if warn else ("PASS" if not problems else "FAIL")
-    print(f"[{gid}] {tag} · {title} — {len(problems)}건")
+def report(gid, title, problems, warn=False, scanned=None):
+    """가드 하나의 결과를 찍고 실패 수를 돌려준다.
+
+    G1d — scanned 를 주면 커버리지를 함께 찍는다. **검사 대상이 0이면
+    PASS 가 아니라 WARN 이다.** '대상 0'을 '이상 없음'으로 읽는 것이
+    S0 G1 이 아무것도 검사하지 않고 통과한 원인이었다.
+    """
+    zero_target = scanned is not None and scanned == 0
+    tag = "WARN" if (warn or zero_target) else ("PASS" if not problems else "FAIL")
+    print(f"[{gid}] {tag} · {title} — {len(problems)}건"
+          + (f" · 검사 대상 {scanned}" if scanned is not None else ""))
+    if zero_target:
+        print(f"    ※ 검사 대상 0 — 통과가 아니라 미검사다")
     for p in problems[:25]:
         print(f"    · {p}")
     if len(problems) > 25:

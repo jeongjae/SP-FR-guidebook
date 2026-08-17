@@ -60,7 +60,9 @@ def main():
             if len(times) >= 6:
                 problems.append(f"{fn} {name} — 시각 {len(times)}종 흩어짐: {sorted(times)[:6]}…")
 
-    return report("G4", "같은 사실 다중 하드코딩 충돌", problems)
+    scanned = sum(1 for pid, p in places.items()
+                  if p.get("facts", {}).get("price_adult", {}).get("value"))
+    return report("G4", "같은 사실 다중 하드코딩 충돌", problems, scanned=scanned)
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@
 
 출처는 두 개뿐이다 (웹 조사 금지):
   · docs/diagnosis-v2/SPFR_확정사실원장_v1.0.md      (2026-08-16 공식 소스 검증 완료)
-  · docs/diagnosis-v2/SPFR_신규확정사실_v2.0.csv     (2026-08-17 신규 75건)
+  · docs/diagnosis-v2/SPFR_신규확정사실_v2.1.csv     (2026-08-17 복구본 75건 — v2.0 의 fact·source 공란 결함 수정)
 
 placeId 는 source/ASSETS/91_Place_Registry_v1.0.md 의 slug 를 그대로 쓴다.
 값의 소속(placeId)을 확신할 수 없는 시드 행은 적재하지 않고 UNMAPPED 로 보고한다 —
@@ -22,6 +22,7 @@ REGISTRY = ROOT / "source/ASSETS/91_Place_Registry_v1.0.md"
 
 LEDGER = "2026-08-16 확정 원장 (공식 소스 검증 완료)"
 CSV_SRC = "2026-08-17 신규 검증"
+CSV21 = "2026-08-17 신규확정 v2.1 (복구본)"
 D16, D17 = "2026-08-16", "2026-08-17"
 
 TTL = {"price_adult": 180, "price_range": 180, "hours": 90, "closed": 90,
@@ -164,23 +165,28 @@ SEED = {
         price_adult=("Passport 고시즌 €35 · 트리아농 €15 · 분수쇼일 정원 €15 (2026-01-14 개정)",
                      LEDGER, D16)),
     "musee-d-orsay": dict(
-        hours=("화–일 09:30–18:00 · 목요일 21:45까지 (마지막 입장 21:00)", CSV_SRC, D17),
-        closed=("월요일 (+5/1·12/25)", CSV_SRC, D17),
-        price_adult=("온라인 €16 / 현장 €14", CSV_SRC, D17)),
+        hours=("화–일 09:30–18:00 · 목요일 21:45까지 (마지막 입장 21:00 · 전시실 21:15 폐쇄)", CSV21, D17),
+        closed=("월요일 (+5/1·12/25)", CSV21, D17),
+        price_adult=("온라인 €16 / 현장 €14", CSV21, D17),
+        note=("Mary Cassatt, L'indépendante 2026/10/6–2027/1/31 (프랑스 최초 대규모 카사트전)", CSV21, D17)),
     "musee-de-l-orangerie": dict(
         note=("'Monet, painting time' 2026/9/30–2027/1/25 · 금 18시부터 야간 €10 단일가", CSV_SRC, D17),
         price_adult=("", CSV_SRC, D17, "unreachable",
                      "일반 성인 요금·휴관 요일 공식 페이지 403/404 — 확인 실패")),
     "bourse-de-commerce-pinault-collection": dict(
-        hours=("월–일 11:00–19:00 · 금요일 21:00까지", CSV_SRC, D17),
-        closed=("화요일 (+5/1)", CSV_SRC, D17),
+        hours=("월–일 11:00–19:00 · 금요일 21:00까지 · 매월 첫 토요일 17:00–21:00 무료 야간", CSV21, D17),
+        closed=("화요일 (+5/1)", CSV21, D17),
         price_adult=("€15", LEDGER, D16),
-        note=("2026/8/26–10/5 전시 준비 기간 · 'Remember Me' 10/7 개막", CSV_SRC, D17)),
+        note=("2026/8/26–10/5 전시 준비 기간 · 'Remember Me' 10/7 개막 → 방문 가능일은 10/7·10/8",
+              CSV21, D17)),
     "grand-palais": dict(
-        note=("세잔전 2026/9/23–2027/1/17 갤러리 3·4 · 174점 · 예약 2026-07-07 개시", CSV_SRC, D17)),
+        note=("Cezanne et nous 2026/9/23–2027/1/17 갤러리 3·4 · 174점(세잔 69 + 타 작가 105) · 예약 2026-07-07 개시",
+              CSV21, D17)),
     "notre-dame-de-paris": dict(
         price_adult=("입장 100% 무료", CSV_SRC, D17),
-        booking=("공식 사이트(notredamedeparis.fr)에서만 · 제3자 플랫폼 판매 권한 없음", CSV_SRC, D17)),
+        booking=("공식 사이트(notredamedeparis.fr)에서만 · 제3자 플랫폼 판매 권한 없음", CSV_SRC, D17),
+        hours=("", CSV21, D17, "unreachable",
+               "공식 시간표 페이지 404 (/en/visit/schedules/ · /horaires-douverture/)")),
     "montmartre-south-pigalle": dict(
         note=("Fête des Vendanges 10/7–11 제93회 · Grande Parade 10/10", CSV_SRC, D17)),
 
@@ -358,44 +364,81 @@ EXTRA_PLACES = {
     "far-de-tossa": ("Far de Tossa (Tossa de Mar)", "girona", dict(
         price_adult=("€3", LEDGER, D16),
         note=("점심 휴관 있음 · 시립미술관은 개보수 휴관", LEDGER, D16))),
+
+    # ── v2.1 복구본으로 새로 매핑된 대상 (T1-0a) ──
+    "musee-de-la-photographie-charles-negre": ("Musée de la Photographie Charles Nègre", "nice", dict(
+        hours=("화–일 10:00–18:00 (갤러리동 10:00–12:30 / 13:30–18:00)", CSV21, D17),
+        closed=("월요일", CSV21, D17))),
+    "chez-pipo": ("Chez Pipo", "nice", dict(
+        hours=("화–일 11:30–14:30 · 17:30–22:00", CSV21, D17),
+        closed=("월요일", CSV21, D17),
+        booking=("워크인 전용 (단체 외 예약 불가)", CSV21, D17),
+        getting_there=("13 rue Bavastro", CSV21, D17))),
+    "la-table-alziari": ("La Table Alziari", "nice", dict(
+        hours=("니스 관광청 2026 리스팅 주 7일 영업 표기 (시간 미표기)", CSV21, D17, "secondary", None))),
+    "marche-forville": ("Marché Forville", "nice", dict(
+        hours=("9/1–6/30 화–일 07:00–13:00", CSV21, D17),
+        closed=("월요일", CSV21, D17))),
+    "castle-hill-elevator": ("Castle Hill 무료 엘리베이터", "nice", dict(
+        hours=("", CSV21, D17, "unreachable",
+               "nice.fr 공식 페이지에 엘리베이터 미기재 · 다른 공식 소스 미확보"))),
+    "hertz-nice-ville": ("Hertz Nice-Ville (Avenue Thiers)", "nice", dict(
+        hours=("", CSV21, D17, "unreachable",
+               "hertz.com/hertz.fr 위치 페이지 404 — 공식 소스 접근 실패"),
+        note=("DEC-A11 — 인수지는 Nice-Ville 역 (공항 T2 아님)", "decisions.json", D17))),
+    "notre-dame-de-la-garde": ("Notre-Dame de la Garde", "aix", dict(
+        hours=("매일 07:00–18:00", CSV21, D17),
+        closed=("주간 휴무 없음", CSV21, D17))),
+    "village-des-bories": ("Village des Bories", "luberon", dict(
+        hours=("9/1–9/30 09:00–19:00 · 최종입장 30분 전", CSV21, D17),
+        price_adult=("성인 €8 · 12–17세 €4 · 12세 미만 무료", CSV21, D17))),
+    "fou-de-fafa": ("Fou de Fafa", "avignon", dict(
+        hours=("목–월 19:00~", CSV21, D17),
+        closed=("수요일", CSV21, D17),
+        getting_there=("17 Rue des Trois Faucons", CSV21, D17),
+        note=("9/16(수) 첫 저녁 배정 불가", CSV21, D17))),
+    "restaurant-sevin": ("Restaurant SEVIN", "avignon", dict(
+        hours=("점심 12:00–13:30 · 저녁 19:30–21:00 도착", CSV21, D17, "secondary", None),
+        closed=("", CSV21, D17, "unreachable", "요일별 휴무 공식 미게시 — 예약으로 확정"))),
+    "le-gout-du-jour": ("Le Goût du Jour", "avignon", dict(
+        hours=("", CSV21, D17, "unreachable",
+               "공식 사이트에 영업시간 미게시 (전화 +33 4 32 76 32 16)"))),
+    "la-fourchette": ("La Fourchette", "avignon", dict(
+        hours=("월–금 12:30–13:30 · 19:15–21:30", CSV21, D17),
+        closed=("토·일", CSV21, D17),
+        note=("9/17(목) 저녁 배정 유효 · '금요일 휴무 가능성' 서술은 방향 오류", CSV21, D17))),
+    "les-cocottes-saint-louis": ("Les Cocottes Saint-Louis", "avignon", dict(
+        hours=("호텔 공식 'every day' (상세 시간 미게시)", CSV21, D17, "secondary", None),
+        note=("9/16(수) 첫 저녁 실질 후보", CSV21, D17))),
+    "le-criquet-arles": ("Le Criquet (Arles)", "avignon", dict(
+        hours=("화 점심–토 저녁 · 점심 12:00–13:30", CSV21, D17),
+        closed=("일·월", CSV21, D17),
+        getting_there=("21 rue Porte de Laure", CSV21, D17),
+        note=("9/19(토) 점심 가능", CSV21, D17))),
+    "nocturnes-avignon-musees": ("Nocturnes d'Avignon Musées", "avignon", dict(
+        hours=("2026-09-17(목) 18:00–21:00 Muséum Requien", CSV21, D17),
+        price_adult=("무료", CSV21, D17))),
+    "chez-mamie-lise": ("Chez Mamie Lise (Annecy)", "lyon", dict(
+        hours=("연중무휴 11:45–14:00 / 18:45–22:00", CSV21, D17),
+        booking=("+33 4 50 45 41 18", CSV21, D17),
+        note=("9/23(수) 유효", CSV21, D17))),
+    "le-freti": ("Le Freti (Annecy)", "lyon", dict(
+        hours=("연중무휴 12:00–14:00 / 18:30–22:00~", CSV21, D17),
+        note=("9/23(수) 유효", CSV21, D17))),
+    "annecy-cruise": ("Annecy 호수 크루즈", "lyon", dict(
+        hours=("", CSV21, D17, "unreachable",
+               "공식 사이트에서 9/20 이후 시간표·요금 확인 불가 (개별 페이지 404)"),
+        note=("'확정 금지 · 출발 전 확인' 처리 유지가 맞다", CSV21, D17))),
+    "musee-marmottan-monet": ("Musée Marmottan Monet", "paris", dict(
+        note=("place-facts 등재만 — 값은 S2 조사 대상", CSV21, D17, "unverified", None))),
 }
 
 # 원장·CSV 에 값이 있으나 placeId 를 확신할 수 없어 적재하지 않은 행
 UNMAPPED = [
-    ("nice", "월 휴관, 화-일 10:00-18:00 (갤러리동 10:00-12:30/13:30-18:00)", "대상 시설명 없음"),
-    ("nice", "화-일 11:30-14:30·17:30-22:00, 월 휴무, 워크인 전용, 13 rue Bavastro", "식당명 없음"),
-    ("nice", "니스 관광청 2026 리스팅 주 7일 영업 표기", "대상 없음"),
-    ("nice", "9/1-6/30 화-일 07:00-13:00 (월 휴무)", "시장명 없음 (Antibes 추정되나 미확정)"),
-    ("nice", "UNVERIFIED — hertz.com 위치 페이지 404", "Hertz Nice 인수지 — 레지스트리 spot 아님"),
-    ("aix", "RTM lecar 직행 노선 · 1회권 차내 판매 · 90분 환승", "교통 — 레지스트리 spot 아님"),
-    ("aix", "입장 €4/감액 €3 · 수영모 의무 · 26 av. des Écoles Militaires", "Piscine Yves Blanc — spot 아님"),
-    ("aix", "매일 07:00–18:00, 주간 휴무 없음", "대상 없음"),
-    ("luberon", "월 12:00-13:30·19:00-21:00, 수·목 휴무, 메뉴 39€/49€", "식당명 없음 (Goût Bistrot 추정)"),
-    ("avignon", "UNVERIFIED", "대상·내용 모두 없음"),
-    ("avignon", "목-월 19:00~, 수요일 휴무. 17 Rue des Trois Faucons", "식당명 없음"),
-    ("avignon", "점심 12:00-13:30·저녁 19:30-21:00", "식당명 없음"),
-    ("avignon", "공식 사이트에 영업시간 미게시(전화 +33 4 32 76 32 16)", "대상명 없음"),
-    ("avignon", "월-금 12:30-13:30·19:15-21:30, 토·일 휴무", "식당명 없음"),
-    ("avignon", "2026-09-17(목) 18:00-21:00 Muséum Requien, 무료", "이벤트 — spot 아님"),
-    ("avignon", "호텔 공식 'every day' 서술", "대상명 없음"),
-    ("avignon", "화 점심-토 저녁 · 21 rue Porte de Laure", "식당명 없음"),
-    ("lyon", "연중 매일 점심·저녁 · 04 78 37 46 18", "Café Comptoir Abel 추정 — 식당, spot 아님"),
-    ("lyon", "월-금 12-14/19-22 · 04 78 60 66 53", "Daniel et Denise 추정 — 식당, spot 아님"),
-    ("lyon", "연중무휴 11:45-14:00/18:45-22:00 · 04 50 45 41 18", "식당명 없음"),
-    ("lyon", "연중무휴 7/7 (12-14/18:30-22+)", "식당명 없음"),
-    ("lyon", "단발 존1-2 €2.10 · 24h €6.90 · 푸니쿨라 왕복 €3.60", "TCL 교통 — spot 아님"),
-    ("lyon", "UNVERIFIED — 9/20 이후 시간표 확인 불가", "대상명 없음"),
-    ("paris", "공식 시간표 페이지 404", "대상명 없음"),
-    ("paris", "Navigo Semaine €32.40 / Mois €90.80 / 단발 €2.55", "IDFM 교통 — spot 아님"),
-    ("paris", "Arc 10/3·10/4 · 본경주 10/4 16:05 · 무료 셔틀", "이벤트 — spot 아님"),
-    ("girona", "Casa Marieta 12:30-15:30 / 19:30-22:30", "식당 — spot 아님"),
-    ("girona", "Mercat del Lleó 월–금 07:00–14:00", "시장 — spot 아님"),
-    ("girona", "Museum of Jewish History 화–토 10:00–18:00 · €6", "spot 미등록"),
-    ("girona", "Cadaqués Parking Saba 실재", "Cadaqués spot 미등록 (S1 신규 dossier 대상)"),
-    ("girona", "La Roca (Peratallada) UNVERIFIED", "식당 — spot 아님"),
-    ("barcelona", "La Paradeta 월요일 휴무 · Passatge Simó 18", "식당 — spot 아님"),
-    ("barcelona", "Mercat de la Concepció 월·토 08:00–15:00", "시장 — spot 아님"),
-    ("barcelona", "Bar Cañete UNVERIFIED", "식당 — spot 아님"),
+    # v2.1 복구본으로 대부분 해소됐다. 남은 것은 레지스트리 spot 도 아니고
+    # place-facts 대상으로도 부적절한 항목뿐이다.
+    ("aix", "Ligne 50 Aix–Marseille 노선", "rtm-lecar 로 적재함 — 중복 방지 위해 별도 등재 안 함"),
+    ("paris", "Notre-Dame 슬롯 개방 시점", "값이 '확인 불가'뿐 — notre-dame-de-paris.hours 에 unreachable 로 흡수"),
 ]
 
 

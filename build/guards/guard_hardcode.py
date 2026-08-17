@@ -19,6 +19,7 @@ SKIP_LINE = re.compile(r"^\s*(?:>?\s*\||```|!\[|\[.*\]\(http)")
 def main():
     allow = allowlist()
     problems = []
+    scanned = 0
     counts = {"money": 0, "time": 0, "weekday": 0}
     for f in chapter_files():
         for i, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
@@ -27,6 +28,7 @@ def main():
                 pass
             if any(a in s for a in allow):
                 continue
+            scanned += 1
             bare = FACT_RE.sub("", s)          # 토큰이 낸 값은 하드코딩이 아니다
             hits = []
             if MONEY.search(bare):
@@ -37,7 +39,7 @@ def main():
                 hits.append("weekday"); counts["weekday"] += 1
             if hits:
                 problems.append(f"{f.name}:{i} [{'/'.join(hits)}] {s[:70]}")
-    rc = report("G2", "fact 토큰 밖 하드코딩", problems)
+    rc = report("G2", "fact 토큰 밖 하드코딩", problems, scanned=scanned)
     print(f"    baseline: money {counts['money']} · time {counts['time']} · weekday {counts['weekday']}")
     return rc
 

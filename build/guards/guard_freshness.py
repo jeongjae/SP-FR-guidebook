@@ -32,7 +32,8 @@ def main():
             over = (today - d).days - ttl
             if over > 0:
                 stale.append(f"{p['displayName']}.{k} — {va} +{ttl}일, {over}일 초과")
-    rc = report("G6", f"신선도 (기준 {today})", stale, warn=True)
+    scanned = sum(len(p.get("facts", {})) for p in doc.get("places", {}).values())
+    rc = report("G6", f"신선도 (기준 {today})", stale, warn=True, scanned=scanned)
     print(f"    unreachable {len(unreachable)}건 — 전화 문의 대상")
     return rc
 

@@ -29,7 +29,8 @@ def main():
         if missing:
             problems.append(f"{p['displayName']} ({pid}) 미참조: {', '.join(missing)}")
     warn = date.today() < STRICT_FROM
-    rc = report("G3", "필수·우선추천 필수항목 참조", problems, warn=warn)
+    scanned = sum(1 for p in places.values() if p.get("grade") in ("essential", "priority"))
+    rc = report("G3", "필수·우선추천 필수항목 참조", problems, warn=warn, scanned=scanned)
     if warn:
         print(f"    ※ {STRICT_FROM} 부터 실패로 승격")
     return rc

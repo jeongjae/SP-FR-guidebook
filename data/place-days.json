@@ -1,0 +1,458 @@
+{
+  "version": "1.0",
+  "source": "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv (days 열)",
+  "note": "Day 번호는 글로벌 1–43. G1 이 방문일 판정의 마지막 단계로 쓴다.",
+  "places": {
+    "abbaye-de-senanque": {
+      "displayName": "Abbaye de Sénanque",
+      "region": "luberon",
+      "days": [
+        9,
+        15
+      ]
+    },
+    "acchiardo": {
+      "displayName": "Acchiardo",
+      "region": "nice",
+      "days": [
+        8
+      ]
+    },
+    "bar-canete": {
+      "displayName": "Bar Cañete",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "biblioteca-de-catalunya": {
+      "displayName": "Biblioteca de Catalunya",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "cadaques": {
+      "displayName": "Cadaqués",
+      "region": "girona",
+      "days": [
+        5
+      ]
+    },
+    "cafe-comptoir-abel": {
+      "displayName": "Café Comptoir Abel",
+      "region": "lyon",
+      "days": [
+        1,
+        9,
+        19,
+        20,
+        21,
+        30
+      ]
+    },
+    "casa-marieta": {
+      "displayName": "Casa Marieta",
+      "region": "girona",
+      "days": [
+        4
+      ]
+    },
+    "cassis": {
+      "displayName": "Cassis 항구",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "cathedrale-saint-jean": {
+      "displayName": "Cathédrale Saint-Jean",
+      "region": "lyon",
+      "days": [
+        9,
+        21
+      ]
+    },
+    "chez-mamie-lise": {
+      "displayName": "Chez Mamie Lise (Annecy)",
+      "region": "lyon",
+      "days": [
+        5,
+        9,
+        11,
+        13,
+        23
+      ]
+    },
+    "chez-pipo": {
+      "displayName": "Chez Pipo",
+      "region": "nice",
+      "days": [
+        7
+      ]
+    },
+    "cloitre-saint-trophime": {
+      "displayName": "Cloître Saint-Trophime",
+      "region": "avignon",
+      "days": [
+        9,
+        19
+      ]
+    },
+    "cours-saleya": {
+      "displayName": "Cours Saleya",
+      "region": "nice",
+      "days": [
+        8
+      ]
+    },
+    "coustellet": {
+      "displayName": "Coustellet 생산자 시장",
+      "region": "luberon",
+      "days": [
+        9,
+        13
+      ]
+    },
+    "daniel-et-denise-crequi": {
+      "displayName": "Daniel et Denise Créqui",
+      "region": "lyon",
+      "days": [
+        2,
+        3,
+        9,
+        19,
+        21,
+        22,
+        30
+      ]
+    },
+    "fou-de-fafa": {
+      "displayName": "Fou de Fafa",
+      "region": "avignon",
+      "days": [
+        9,
+        16
+      ]
+    },
+    "girona-cathedral": {
+      "displayName": "Girona Cathedral",
+      "region": "girona",
+      "days": [
+        4
+      ]
+    },
+    "gout-bistrot": {
+      "displayName": "Goût Bistrot",
+      "region": "luberon",
+      "days": [
+        9,
+        14
+      ]
+    },
+    "halles-de-lyon-paul-bocuse": {
+      "displayName": "Halles de Lyon Paul Bocuse",
+      "region": "lyon",
+      "days": [
+        9,
+        22,
+        24
+      ]
+    },
+    "la-fourchette": {
+      "displayName": "La Fourchette",
+      "region": "avignon",
+      "days": [
+        9,
+        17
+      ]
+    },
+    "la-paradeta-sagrada-familia": {
+      "displayName": "La Paradeta Sagrada Família",
+      "region": "barcelona",
+      "days": [
+        2
+      ]
+    },
+    "la-roca-peratallada": {
+      "displayName": "La Roca (Peratallada)",
+      "region": "girona",
+      "days": [
+        6
+      ]
+    },
+    "la-table-alziari": {
+      "displayName": "La Table Alziari",
+      "region": "nice",
+      "days": [
+        8
+      ]
+    },
+    "le-freti": {
+      "displayName": "Le Freti (Annecy)",
+      "region": "lyon",
+      "days": [
+        9,
+        23
+      ]
+    },
+    "le-gout-du-jour": {
+      "displayName": "Le Goût du Jour",
+      "region": "avignon",
+      "days": [
+        9,
+        17,
+        19
+      ]
+    },
+    "les-cocottes-saint-louis": {
+      "displayName": "Les Cocottes Saint-Louis",
+      "region": "avignon",
+      "days": [
+        9,
+        16,
+        17,
+        18
+      ]
+    },
+    "lourmarin": {
+      "displayName": "Lourmarin",
+      "region": "luberon",
+      "days": [
+        16
+      ]
+    },
+    "macba": {
+      "displayName": "MACBA",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "marche-de-la-liberation": {
+      "displayName": "Marché de la Libération",
+      "region": "nice",
+      "days": [
+        11
+      ]
+    },
+    "mercat-de-la-concepcio": {
+      "displayName": "Mercat de la Concepció",
+      "region": "barcelona",
+      "days": [
+        3
+      ]
+    },
+    "mercat-del-lleo": {
+      "displayName": "Mercat del Lleó",
+      "region": "girona",
+      "days": [
+        6
+      ]
+    },
+    "mucem": {
+      "displayName": "Mucem",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "musee-chagall": {
+      "displayName": "Musée Chagall",
+      "region": "nice",
+      "days": [
+        8,
+        9,
+        11
+      ]
+    },
+    "musee-d-orsay": {
+      "displayName": "Musée d'Orsay",
+      "region": "paris",
+      "days": [
+        6,
+        9,
+        10,
+        29
+      ]
+    },
+    "musee-de-la-photographie-charles-negre": {
+      "displayName": "Musée de la Photographie Charles Nègre",
+      "region": "nice",
+      "days": [
+        11
+      ]
+    },
+    "musee-des-beaux-arts-lyon": {
+      "displayName": "Musée des Beaux-Arts",
+      "region": "lyon",
+      "days": [
+        9,
+        21,
+        22
+      ]
+    },
+    "musee-des-tissus": {
+      "displayName": "Musée des Tissus",
+      "region": "lyon",
+      "days": [
+        9,
+        22
+      ]
+    },
+    "musee-du-louvre": {
+      "displayName": "Musée du Louvre",
+      "region": "paris",
+      "days": [
+        9,
+        28
+      ]
+    },
+    "musee-gadagne": {
+      "displayName": "Musée Gadagne",
+      "region": "lyon",
+      "days": [
+        9,
+        21
+      ]
+    },
+    "musee-granet": {
+      "displayName": "Musée Granet",
+      "region": "aix",
+      "days": [
+        13
+      ]
+    },
+    "musee-matisse-nice": {
+      "displayName": "Musée Matisse",
+      "region": "nice",
+      "days": [
+        8,
+        9,
+        11
+      ]
+    },
+    "notre-dame-de-la-garde": {
+      "displayName": "Notre-Dame de la Garde",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "notre-dame-de-paris": {
+      "displayName": "Notre-Dame de Paris",
+      "region": "paris",
+      "days": [
+        9,
+        26
+      ]
+    },
+    "palais-des-papes": {
+      "displayName": "Palais des Papes",
+      "region": "avignon",
+      "days": [
+        9,
+        17
+      ]
+    },
+    "palau-de-maricel": {
+      "displayName": "Palau de Maricel",
+      "region": "barcelona",
+      "days": [
+        4
+      ]
+    },
+    "pals": {
+      "displayName": "Pals",
+      "region": "girona",
+      "days": [
+        6
+      ]
+    },
+    "place-richelme-place-des-precheurs": {
+      "displayName": "시장 — Place Richelme · Place des Prêcheurs",
+      "region": "aix",
+      "days": [
+        13,
+        15
+      ]
+    },
+    "pont-du-gard": {
+      "displayName": "Pont du Gard",
+      "region": "avignon",
+      "days": [
+        9,
+        18
+      ]
+    },
+    "pont-saint-benezet": {
+      "displayName": "Pont Saint-Bénézet",
+      "region": "avignon",
+      "days": [
+        9,
+        17
+      ]
+    },
+    "restaurant-sevin": {
+      "displayName": "Restaurant SEVIN",
+      "region": "avignon",
+      "days": [
+        9,
+        19
+      ]
+    },
+    "rocher-des-doms": {
+      "displayName": "Rocher des Doms",
+      "region": "avignon",
+      "days": [
+        9,
+        17
+      ]
+    },
+    "roussillon-sentier-des-ocres": {
+      "displayName": "Roussillon · Sentier des Ocres",
+      "region": "luberon",
+      "days": [
+        9,
+        14
+      ]
+    },
+    "sagrada-familia": {
+      "displayName": "Sagrada Família",
+      "region": "barcelona",
+      "days": [
+        2
+      ]
+    },
+    "saint-paul-de-vence": {
+      "displayName": "Saint-Paul-de-Vence",
+      "region": "aix",
+      "days": [
+        12
+      ]
+    },
+    "sant-pau-recinte-modernista": {
+      "displayName": "Sant Pau Recinte Modernista",
+      "region": "barcelona",
+      "days": [
+        2
+      ]
+    },
+    "uzes": {
+      "displayName": "Uzès Place aux Herbes·구시가지",
+      "region": "avignon",
+      "days": [
+        9,
+        18
+      ]
+    },
+    "village-des-bories": {
+      "displayName": "Village des Bories",
+      "region": "luberon",
+      "days": [
+        9,
+        15
+      ]
+    }
+  }
+}
