@@ -721,7 +721,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 | **D** | Batignolles – Parc Monceau | 9구 숙소 또는 북서부 생활권이 궁금할 때 |
 
 > **⚠ 모듈 A 는 월요일 시장 휴무를 확인하고 고른다**
-> **10/5(월)에는 Aligre–Beauvau 도 Marché Convention 도 서지 않는다** — 전자는 월요일 휴무, 후자는 화·목·일이다 (`31. 시장과 장보기`). 월요일 모듈은 시장이 아니라 **상설 상점가·Coulée Verte 산책** 으로 잡는다 {{badge:decision-pending|대안 확정 대기}}
+> **10/5(월)에는 Aligre–Beauvau 도 Marché Convention 도 서지 않는다** — 전자는 월요일 휴무, 후자는 화·목·일이다 (`31. 시장과 장보기`). 월요일 모듈은 시장이 아니라 **상설 상점가·Coulée Verte 산책** 으로 잡는다
 > 시장을 보러 모듈 A 를 고르면 헛걸음한다. **Coulée Verte 산책이 목적이면 여전히 유효하다.**
 
 > **오전은 공통이다**
@@ -1018,7 +1018,7 @@ Day 41의 선택이다.
 | 원칙 | 내용 |
 |---|---|
 | **하루 하나** | 큰 미술관은 하루에 하나 |
-| **2회 방문 금지** | 같은 미술관에 두 번 가지 않는다. 15박이어도 |
+| **2회 방문 금지** | 같은 미술관에 두 번 가지 않는다. 15박이어도. **예외 — Musée d'Orsay 만 2회**(9/29 상설 · 10/6 Cassatt 전 개막일). 10/7·10/8 은 Bourse de Commerce 방문 가능일이라 비워 둔다 (DEC-A12) |
 | **개막일 주의** | Day 39는 예외적으로 개막일이다 |
 | **월요일·화요일 확인** | 파리 미술관은 이 두 요일에 많이 닫는다 |
 | **예약이 기본** | 대형 전시는 현장 발권이 사실상 불가능 |
@@ -2025,7 +2025,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 12:30–14:00 | 가벼운 점심 | 긴 대기 회피 |
 | 14:00–16:00 | Luxembourg Garden | 함께 산책하고 앉아서 쉬는 시간 포함 |
 | 16:00–18:00 | Seine 좌안 산책 | 날씨와 피로에 따라 Pont Neuf 전후에서 종료 |
-| 16:30–17:30 | **Notre-Dame de Paris** {{badge:decision-pending|배치 확정 대기}} | 입장 {{fact:notre-dame-de-paris.price_adult}} · 예약 {{fact:notre-dame-de-paris.booking}} · 개관 {{fact:notre-dame-de-paris.hours}} |
+| 16:30–17:30 | **Notre-Dame de Paris** | 입장 {{fact:notre-dame-de-paris.price_adult}} · 예약 {{fact:notre-dame-de-paris.booking}} · 개관 {{fact:notre-dame-de-paris.hours}} |
 | 19:00 이후 | 숙소식 또는 가까운 동네식당 | 공연 없음 — 무예약 저녁 |
 
 **피로도:** 2–3/5. **고정행사:** 없음. 9/26 오페라는 도착 다음 날이라는 이유로 기본안에서 제외한다.
@@ -2145,7 +2145,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 14:00–15:30 | 동네 독립서점·카페 | 앉는 시간을 일정에 포함 |
 | 15:30–17:00 | Jason 스케치 / Julia 산책·카페 | 같은 권역에서 각자 회복 |
 | 17:00 이후 | 숙소 귀환·세탁 또는 자유 | **고정 저녁행사 없음** |
-| 14:00–16:00 | **Grand Palais — Cezanne et nous** {{badge:decision-pending|배치 확정 대기}} | {{fact:grand-palais.note}} · Aix 에서 본 작업실·풍경의 결과물을 본다 |
+| 14:00–16:00 | **Grand Palais — Cezanne et nous** | {{fact:grand-palais.note}} · Aix 에서 본 작업실·풍경의 결과물을 본다 |
 
 **피로도:** 1–2/5. 회복과 생활 자체가 목적이므로 재즈·연극·교회공연을 추가하지 않는다.
 
@@ -2166,7 +2166,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 12:30–14:00 | 점심·휴식 | 오후 한 권역만 |
 | 14:00–17:00 | 박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나 | 미완료 우선, 3시간 상한 |
 | 17:00 이후 | 장보기·숙소식 | Arc 준비·교통 확인, 야간행사 없음 |
-| 10:00–13:00 | **Musée du Louvre** {{badge:decision-pending|배치 확정 대기}} | 요금 {{fact:musee-du-louvre.price_adult}} · 휴관 {{fact:musee-du-louvre.closed}} · 드농관 한 축만 |
+| 10:00–13:00 | **Musée du Louvre** | 요금 {{fact:musee-du-louvre.price_adult}} · 휴관 {{fact:musee-du-louvre.closed}} · 드농관 한 축만. **토요일 혼잡 — 개장 시각에 도착한다. 대안 Day 31(9/28 월)** |
 
 **피로도:** 2–3/5. Arc 토요일 프로그램은 기본 일정에서 제외한다.
 

@@ -7,36 +7,67 @@
       "id": "DEC-A01",
       "date": "2026-08-16",
       "decision": "Peralada 일정 제외 (박물관 투어 예약 안 함)",
-      "forbidden_patterns": ["페랄라다 17:30", "Peralada 투어 예약", "페랄라다 예약", "17:30 페랄라다", "17:30 투어"],
+      "forbidden_patterns": [
+        "페랄라다 17:30",
+        "Peralada 투어 예약",
+        "페랄라다 예약",
+        "17:30 페랄라다",
+        "17:30 투어"
+      ],
       "required_patterns": [],
-      "scope": ["05_Girona_*.md"],
+      "scope": [
+        "05_Girona_*.md"
+      ],
       "note": "Day 5 오후는 Cadaqués 로 재설계한다"
     },
     {
       "id": "DEC-A02",
       "date": "2026-08-16",
       "decision": "렌터카 9/19(토) 조기 반납 — 18:15까지 Hertz Avignon TGV",
-      "forbidden_patterns": ["9/20 09:00 반납", "9월 20일 09:00 반납", "무인 키드롭", "무인반납", "키 드롭"],
+      "forbidden_patterns": [
+        "9/20 09:00 반납",
+        "9월 20일 09:00 반납",
+        "무인 키드롭",
+        "무인반납",
+        "키 드롭"
+      ],
       "required_patterns": [],
-      "scope": ["06_Nice_*.md", "09_Avignon_*.md", "10_Lyon_*.md"],
+      "scope": [
+        "06_Nice_*.md",
+        "09_Avignon_*.md",
+        "10_Lyon_*.md"
+      ],
       "note": "일요일 10:00 개점이라 09:00 반납 불가 · TGV 10:22. 9/20 아침은 TER Virgule 09:13 권장"
     },
     {
       "id": "DEC-A03",
       "date": "2026-08-16",
       "decision": "Saint-Paul-de-Vence → 9/8 Nice 당일치기 (Fondation Maeght 와 함께)",
-      "forbidden_patterns": ["9/9 생폴", "9/9 Saint-Paul", "생폴드방스를 거쳐"],
+      "forbidden_patterns": [
+        "9/9 생폴",
+        "9/9 Saint-Paul",
+        "생폴드방스를 거쳐"
+      ],
       "required_patterns": [],
-      "scope": ["06_Nice_*.md", "07_Aix_*.md"],
+      "scope": [
+        "06_Nice_*.md",
+        "07_Aix_*.md"
+      ],
       "note": "Aix 챕터에서 제외. Grasse 는 9/9 이동일 유지"
     },
     {
       "id": "DEC-A04",
       "date": "2026-08-16",
       "decision": "Philharmonie de Paris 제외",
-      "forbidden_patterns": ["필하모니 밤", "Philharmonie 공연", "필하모니 예약"],
+      "forbidden_patterns": [
+        "필하모니 밤",
+        "Philharmonie 공연",
+        "필하모니 예약"
+      ],
       "required_patterns": [],
-      "scope": ["11_Paris_*.md"]
+      "scope": [
+        "11_Paris_*.md"
+      ]
     },
     {
       "id": "DEC-A05",
@@ -44,59 +75,118 @@
       "decision": "Bourse de Commerce 일정 편입 (€15 · 화요일 휴관)",
       "forbidden_patterns": [],
       "required_patterns": [],
-      "scope": ["11_Paris_*.md"],
+      "scope": [
+        "11_Paris_*.md"
+      ],
       "note": "2026/8/26–10/5 전시 준비 기간 — 10/3 배치 시 충돌 확인 필요"
     },
     {
       "id": "DEC-A06",
       "date": "2026-08-16",
       "decision": "Cadaqués 확정 방문지",
-      "forbidden_patterns": ["카다케스 — 본 일정에서 제외", "왜 뺐나: 거리다", "Cadaqués | 비추천", "카다케스 | 비추천"],
+      "forbidden_patterns": [
+        "카다케스 — 본 일정에서 제외",
+        "왜 뺐나: 거리다",
+        "Cadaqués | 비추천",
+        "카다케스 | 비추천"
+      ],
       "required_patterns": [],
-      "scope": ["05_Girona_*.md"],
+      "scope": [
+        "05_Girona_*.md"
+      ],
       "note": "'비추천' 분류 금지. 전용 dossier 신규 작성 대상(S1)"
     },
     {
       "id": "DEC-A07",
       "date": "2026-08-16",
       "decision": "Avignon 체류 9/16–9/20",
-      "forbidden_patterns": ["9/17–9/21", "9월 17일–9월 21일", "9/17-9/21"],
+      "forbidden_patterns": [
+        "9/17–9/21",
+        "9월 17일–9월 21일",
+        "9/17-9/21"
+      ],
       "required_patterns": [],
-      "scope": ["09_Avignon_*.md"],
+      "scope": [
+        "09_Avignon_*.md"
+      ],
       "note": "본문 일정표가 정본. 예약카드·확인목록·대체안이 9/17–9/21 로 남아 있다"
     },
     {
-      "id":"DEC-A08",
-      "date":"2026-08-17",
-      "decision":"Hertz Avignon TGV 렌터카 9/19(토) 18:15 조기 반납 확정",
-      "forbidden_patterns":["9/20 09:00 반납","9월 20일 09:00","무인 키드롭","키드롭 박스","9/20 렌터카 반납"],
-      "required_patterns":["9/19","18:15"],
-      "scope":["06_Nice_*.md","09_Avignon_*.md","10_Lyon_*.md"],
-      "note":"토요일 영업 09:00-19:00, 버퍼 45분. 주차 Parking Loueurs P0. 9/20 아침 이동은 TER Virgule 09:13"
+      "id": "DEC-A08",
+      "date": "2026-08-17",
+      "decision": "Hertz Avignon TGV 렌터카 9/19(토) 18:15 조기 반납 확정",
+      "forbidden_patterns": [
+        "9/20 09:00 반납",
+        "9월 20일 09:00",
+        "무인 키드롭",
+        "키드롭 박스",
+        "9/20 렌터카 반납"
+      ],
+      "required_patterns": [
+        "9/19",
+        "18:15"
+      ],
+      "scope": [
+        "06_Nice_*.md",
+        "09_Avignon_*.md",
+        "10_Lyon_*.md"
+      ],
+      "note": "토요일 영업 09:00-19:00, 버퍼 45분. 주차 Parking Loueurs P0. 9/20 아침 이동은 TER Virgule 09:13"
     },
     {
-      "id":"DEC-A09",
-      "date":"2026-08-17",
-      "decision":"Paris 날짜 충돌은 실행표(§5–§20)를 정본으로 한다",
-      "scope":["11_Paris_*.md"],
-      "note":"도시에 절의 날짜 표기를 실행표에 맞춰 정정한다. 단 실행표에 '아예 없는' 필수 4곳은 삭제가 아니라 신규 배치 대상 — §1 T1-1b 참조"
+      "id": "DEC-A09",
+      "date": "2026-08-17",
+      "decision": "Paris 날짜 충돌은 실행표(§5–§20)를 정본으로 한다",
+      "scope": [
+        "11_Paris_*.md"
+      ],
+      "note": "도시에 절의 날짜 표기를 실행표에 맞춰 정정한다. 단 실행표에 '아예 없는' 필수 4곳은 삭제가 아니라 신규 배치 대상 — §1 T1-1b 참조"
     },
     {
-      "id":"DEC-A10",
-      "date":"2026-08-17",
-      "decision":"Luberon 농가 숙소는 현지에서 결정한다 — 사전 문의·예약 없음",
-      "forbidden_patterns":["four-night stay","13 to 17 September","4박 문의","숙소 문의문","문의 메일 템플릿"],
-      "scope":["08_Luberon_*.md"],
-      "note":"기존 DEC-039(현지 결정 방침)과 동일 취지. 문의문 템플릿 자체를 삭제한다. 체류는 3박(9/13–16) 확정"
+      "id": "DEC-A10",
+      "date": "2026-08-17",
+      "decision": "Luberon 농가 숙소는 현지에서 결정한다 — 사전 문의·예약 없음",
+      "forbidden_patterns": [
+        "four-night stay",
+        "13 to 17 September",
+        "4박 문의",
+        "숙소 문의문",
+        "문의 메일 템플릿"
+      ],
+      "scope": [
+        "08_Luberon_*.md"
+      ],
+      "note": "기존 DEC-039(현지 결정 방침)과 동일 취지. 문의문 템플릿 자체를 삭제한다. 체류는 3박(9/13–16) 확정"
     },
     {
-      "id":"DEC-A11",
-      "date":"2026-08-17",
-      "decision":"Hertz Nice 렌터카 인수지는 Nice-Ville 역이다",
-      "forbidden_patterns":["NCE 공항 T2","공항 T2 인수","니스 공항에서 렌터카","Terminal 2 인수"],
-      "required_patterns":["Nice-Ville"],
-      "scope":["06_Nice_*.md","07_Aix_*.md"],
-      "note":"9/9 09:00 Nice-Ville 역 인수 (Hertz L672E080313). 공항 인수 서술은 전량 삭제"
+      "id": "DEC-A11",
+      "date": "2026-08-17",
+      "decision": "Hertz Nice 렌터카 인수지는 Nice-Ville 역이다",
+      "forbidden_patterns": [
+        "NCE 공항 T2",
+        "공항 T2 인수",
+        "니스 공항에서 렌터카",
+        "Terminal 2 인수"
+      ],
+      "required_patterns": [
+        "Nice-Ville"
+      ],
+      "scope": [
+        "06_Nice_*.md",
+        "07_Aix_*.md"
+      ],
+      "note": "9/9 09:00 Nice-Ville 역 인수 (Hertz L672E080313). 공항 인수 서술은 전량 삭제"
+    },
+    {
+      "id": "DEC-A12",
+      "date": "2026-08-17",
+      "decision": "Musée d'Orsay 2회 방문 허용 (9/29 · 10/6)",
+      "forbidden_patterns": [],
+      "required_patterns": [],
+      "scope": [
+        "11_Paris_*.md"
+      ],
+      "note": "본문 원칙 '같은 미술관에 두 번 가지 않는다'는 유지하고 예외를 병기한다. 2회차는 10/6(화) Cassatt 전 개막일로 고정 — 10/7·10/8 은 Bourse de Commerce 방문 가능일(준비기간 8/26–10/5, Remember Me 10/7 개막)이라 비워 둔다."
     }
   ]
 }

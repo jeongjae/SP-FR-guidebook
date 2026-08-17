@@ -781,7 +781,7 @@ Mercat de la Devesa:
 | Casa Marieta | 도착일 전통식 | 우선 추천 |
 | Normal | 특별한 창작요리 저녁 | 선택 |
 | Mimolet | 구시가지 창작요리 | 선택 |
-| Fonda Cal Ros | 전통 카탈루냐 요리 | 우선 추천 |
+| Fonda Cal Ros | 전통 카탈루냐 요리 · 휴무 {{fact:fonda-cal-ros.closed}} | 우선 추천 |
 | La Cerveseria del Barri Vell | 피로한 날 타파스 | 대체 |
 | Kulmado | 가벼운 타파스 | 대체 |
 
@@ -1269,7 +1269,7 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 
 ### 대체
 
-- Fonda Cal Ros — 카탈루냐 요리
+- Fonda Cal Ros — 카탈루냐 요리 (화·수 휴무 — 도착일 9/1 화요일엔 불가)
 - La Cerveseria del Barri Vell — 가벼운 타파스
 - La Tasca — Rambla의 간단한 타파스
 
@@ -1451,7 +1451,7 @@ Tossa의 해안·성곽을 먼저 보고 GI-682 해안도로로 Sant Feliu에 �
 | 12:30–13:10 | GI-682 해안도로로 Sant Feliu 이동 |
 | 13:10–14:30 | Sant Feliu 해안 산책·점심(운전자는 음주하지 않음) |
 | 14:30–15:20 | Pals 이동 |
-| 15:20–16:10 | Pals 전망대·구시가지 압축 산책 — **시간의 탑은 이 시간대에 닫는다** ({{fact:pals.hours}}) {{badge:decision-pending|대안 확정 대기}} |
+| 15:20–16:10 | Pals 전망대·구시가지 압축 산책 — **시간의 탑은 이 시간대에 닫는다** ({{fact:pals.hours}}) |
 | 16:10–16:25 | Peratallada 이동 |
 | 16:25–17:40 | Peratallada 석조 골목·광장 |
 | 17:40 | Bàscara 출발 |

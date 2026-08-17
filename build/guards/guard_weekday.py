@@ -22,7 +22,16 @@ from common import (DAY_RE, FACT_RE, ITINERARY, ROOT, WD, chapter_files,
 
 PLACE_DAYS = ROOT / "data/place-days.json"
 
-CLOSED_WD = re.compile(r"([월화수목금토일])(?:요일)?")
+WD_ORDER = "월화수목금토일"
+# 앞 글자가 한글이면 '공휴일'·'평일', 숫자면 '12월'·'25일' 의 끝글자를 요일로 오독한 것이다.
+_WD = r"(?<![가-힣0-9])[월화수목금토일](?:요일)?"
+# 요일(들) 바로 뒤에 휴관 표현이 붙은 것만 휴관 요일로 본다.
+# "화요일 휴관" · "일요일·월요일 휴관" · "월–금 휴무" · "9/1~6/30 월요일 휴장"
+CLOSED_WD = re.compile(
+    rf"((?:{_WD})(?:\s*[·,및]\s*(?:{_WD}))*(?:\s*[~\-–]\s*(?:{_WD}))?)"
+    r"\s*(?:은|는|만|에|엔|과|와)?\s*"
+    r"(?:정기\s*)?(?:휴관|휴무|휴장|휴점|폐관|폐장|closed)")
+WD_TOKEN = re.compile(_WD)
 # "그 날은 닫혀서 못 간다"고 이미 쓴 줄은 충돌이 아니라 회피 서술이다.
 AVOID = re.compile(r"불가|휴관|휴무|제외|대신|아니다|않는다|금지|피한|못\s|없다|"
                    r"decision-pending|대안|대체")
@@ -31,10 +40,19 @@ DATE_LIT = re.compile(r"(?<!\d)(\d{1,2})\s*[/월]\s*(\d{1,2})\s*일?(?!\d)")
 
 
 def closed_weekdays(value):
+    """휴관 요일만 뽑는다. 영업시간 나열('월–금 09:00')을 휴관으로 읽으면 안 된다."""
     if not value:
         return set()
-    head = value.split("(")[0]
-    return {m.group(1) for m in CLOSED_WD.finditer(head)}
+    out = set()
+    for m in CLOSED_WD.finditer(value):
+        span = m.group(1)
+        wds = [t[0] for t in WD_TOKEN.findall(span)]
+        if len(wds) == 2 and re.search(r"[~\-–]", span):     # "월–금" 은 범위다
+            a, b = (WD_ORDER.index(w) for w in wds)
+            out |= {WD_ORDER[i] for i in range(a, b + 1)} if a <= b else {wds[0], wds[1]}
+        else:
+            out |= set(wds)
+    return out
 
 
 def line_date(line, year):

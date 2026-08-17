@@ -287,14 +287,14 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 12:45–13:30 | 가벼운 점심 | socca·salade niçoise·pan bagnat 중 1개 |
 | 13:30–16:00 | Promenade 또는 Port·카페 | 폭염이면 숙소휴식 |
 | 16:30–18:00 | 선택 | Port 또는 Garibaldi 중 1개 |
-| 19:30–21:00 | 전통 Nice 저녁 | **La Table Alziari** ({{fact:la-table-alziari.hours}}) 또는 **Chez Pipo** ({{fact:chez-pipo.hours}}) — Acchiardo 는 {{fact:acchiardo.closed}} 라 토요일 불가 {{badge:decision-pending|대안 확정 대기}} |
+| 19:30–21:00 | 전통 Nice 저녁 | **La Table Alziari** ({{fact:la-table-alziari.hours}}) 또는 **Chez Pipo** ({{fact:chez-pipo.hours}}) — Acchiardo 는 {{fact:acchiardo.closed}} 라 토요일 불가 |
 
 #### 오늘 지도
 {{VISUAL:VIS-MAP-042|type=map|status=linked|strategy=execution-map}}
 
 #### 식사 및 카페
 *   **점심**: Cours Saleya 시장 및 Vieux Nice 캐주얼 식사 (소카, 팡 바냐 등) - 예산 €10–20/인
-*   **저녁**: La Table Alziari 또는 Chez Pipo (니스 전통요리 및 제철 생선). Acchiardo 는 {{fact:acchiardo.closed}} 휴무 {{badge:decision-pending|대안 확정 대기}}
+*   **저녁**: La Table Alziari 또는 Chez Pipo (니스 전통요리 및 제철 생선). Acchiardo 는 {{fact:acchiardo.closed}} 휴무
 
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
 1. **[1순위 삭제]**: 16:30 Port 또는 Garibaldi 추가 산책 (숙소 복귀 및 휴식으로 대체)
