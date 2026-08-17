@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "place-facts.schema.json",
+  "title": "SP-FR place facts",
+  "description": "장소별 사실값의 단일 소스. 원고는 {{fact:<placeId>.<key>}} 로 참조하고 값을 하드코딩하지 않는다.",
+  "type": "object",
+  "required": ["version", "places"],
+  "properties": {
+    "version": {"type": "string"},
+    "generated": {"type": "string"},
+    "ttl_defaults": {
+      "type": "object",
+      "description": "fact_key 별 기본 TTL(일). 개별 레코드의 ttl_days 가 우선한다.",
+      "additionalProperties": {"type": "integer", "minimum": 1}
+    },
+    "places": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9][a-z0-9-]*$"},
+      "additionalProperties": {"$ref": "#/$defs/place"}
+    }
+  },
+  "$defs": {
+    "place": {
+      "type": "object",
+      "required": ["displayName", "region", "facts"],
+      "properties": {
+        "displayName": {"type": "string", "minLength": 1},
+        "region": {
+          "type": "string",
+          "enum": ["barcelona", "girona", "nice", "aix", "luberon", "avignon", "lyon", "paris"]
+        },
+        "grade": {
+          "type": "string",
+          "enum": ["essential", "priority", "optional", "alternative", "excluded", "none"]
+        },
+        "address": {"type": "string"},
+        "phone": {"type": "string"},
+        "url": {"type": "string"},
+        "facts": {
+          "type": "object",
+          "propertyNames": {
+            "enum": ["hours", "closed", "price_adult", "price_range", "booking",
+                     "getting_there", "duration", "note"]
+          },
+          "additionalProperties": {"$ref": "#/$defs/fact"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "fact": {
+      "type": "object",
+      "required": ["value", "confidence"],
+      "properties": {
+        "value": {"type": "string"},
+        "source": {"type": "string"},
+        "verified_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+        "confidence": {
+          "type": "string",
+          "enum": ["official", "secondary", "unverified", "unreachable"],
+          "description": "official=공식 소스 확인 · secondary=신뢰 가능한 3자 · unverified=미확인 · unreachable=공식 접근 실패"
+        },
+        "ttl_days": {"type": "integer", "minimum": 1},
+        "blocked_reason": {
+          "type": "string",
+          "description": "confidence 가 unreachable 일 때 필수. 다음 세션이 같은 도메인을 다시 두드리지 않게 한다."
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"confidence": {"const": "unreachable"}}, "required": ["confidence"]},
+          "then": {"required": ["blocked_reason"]}
+        },
+        {
+          "if": {"properties": {"confidence": {"const": "official"}}, "required": ["confidence"]},
+          "then": {"required": ["source", "verified_at"]}
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

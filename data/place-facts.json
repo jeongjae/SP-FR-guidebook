@@ -1,0 +1,1762 @@
+{
+  "$schema": "./place-facts.schema.json",
+  "version": "1.0",
+  "generated": "2026-08-17",
+  "ttl_defaults": {
+    "price_adult": 180,
+    "price_range": 180,
+    "hours": 90,
+    "closed": 90,
+    "booking": 90,
+    "getting_there": 30,
+    "duration": 365,
+    "note": 90
+  },
+  "places": {
+    "abbaye-de-senanque": {
+      "displayName": "Abbaye de Sénanque",
+      "region": "luberon",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "9월 09:30 개장 · 최종입장 18:30 · 폐장 19:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "개인 €3.50",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "booking": {
+          "value": "자유관람 예약 불필요 · 가이드 투어·HistoPad 는 tickeasy 예약",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "acchiardo": {
+      "displayName": "Acchiardo",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월–금만 영업",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "토·일",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "aerobus": {
+      "displayName": "Aerobús",
+      "region": "barcelona",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180,
+          "blocked_reason": "공식 페이지 판독 실패 · 3자 출처 €7.45 는 미확정 — pending 유지"
+        }
+      }
+    },
+    "annecy": {
+      "displayName": "Annecy 구시가지",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "note": {
+          "value": "Novel 시장은 목요일 전용 — 수요일 방문일 대안 불가",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "arc-de-triomphe-longchamp": {
+      "displayName": "Prix de l'Arc de Triomphe (Longchamp)",
+      "region": "paris",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "10/3(토)·10/4(일) 개최 · 본경주 10/4 16:05",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "무료 셔틀 Porte Maillot(1호선)·Porte d'Auteuil(10호선) · 토 11:30부터·일 10:30부터 약 15분 간격",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 30
+        }
+      }
+    },
+    "arles": {
+      "displayName": "Arles",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "price_adult": {
+          "value": "원형경기장+고대극장 €11 · Pass Avantage €19 · Pass Liberté €15",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "JEP 43회 9/19–20 기념물·박물관 무료 (아를 관광청)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90,
+          "blocked_reason": "아를 9월 개관시간 공식 페이지 403/404 — 추정값 금지, pending 유지"
+        }
+      }
+    },
+    "atelier-des-lauves": {
+      "displayName": "Atelier des Lauves",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "7/1–9/30 매일 09:00–18:00 (2026 개방 7/4–10/31)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€9.50 자율(11:30부터) / €12 가이드 1.5h / €15 심화 2h",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "booking": {
+          "value": "예약 의무 — places limitées (Réservation obligatoire)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "13 avenue Paul Cézanne, 13090 Aix-en-Provence",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 30
+        }
+      }
+    },
+    "bar-canete": {
+      "displayName": "Bar Cañete",
+      "region": "barcelona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "blocked_reason": "공식 사이트(barcanete.com, /bookings)에 영업시간 미게재 — 추정값 금지"
+        }
+      }
+    },
+    "biblioteca-de-catalunya": {
+      "displayName": "Biblioteca de Catalunya",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "blocked_reason": "공식 사이트(bnc.cat) robots/TLS 차단으로 판독 실패 — 우회 시도 안 함"
+        }
+      }
+    },
+    "bourse-de-commerce-pinault-collection": {
+      "displayName": "Bourse de Commerce — Pinault Collection",
+      "region": "paris",
+      "grade": "optional",
+      "facts": {
+        "hours": {
+          "value": "월–일 11:00–19:00 · 금요일 21:00까지",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "화요일 (+5/1)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€15",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "2026/8/26–10/5 전시 준비 기간 · 'Remember Me' 10/7 개막",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "cadaques": {
+      "displayName": "Cadaqués",
+      "region": "girona",
+      "grade": "none",
+      "facts": {
+        "getting_there": {
+          "value": "Parking Saba Riera Sant Vicenç 실재 (요금·만차 조건 미확인)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 30
+        },
+        "note": {
+          "value": "Jason 확정 방문지 — '비추천' 분류 금지",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "cafe-comptoir-abel": {
+      "displayName": "Café Comptoir Abel",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "연중 매일 점심·저녁 (일·월 포함)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "+33 4 78 37 46 18",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "carrieres-des-lumieres": {
+      "displayName": "Carrières des Lumières",
+      "region": "avignon",
+      "grade": "alternative",
+      "facts": {
+        "hours": {
+          "value": "요일 교대 — 피카소·프리다 월·금·일 / 「Océan」 화·수·목·토",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "casa-marieta": {
+      "displayName": "Casa Marieta",
+      "region": "girona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "12:30–15:30 / 19:30–22:30",
+          "confidence": "secondary",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "blocked_reason": "주간 휴무 요일 공식 미표기 — 화요일 저녁 영업 확정 불가 (전화 확인 필요)"
+        }
+      }
+    },
+    "cassis": {
+      "displayName": "Cassis 항구",
+      "region": "aix",
+      "grade": "alternative",
+      "facts": {
+        "getting_there": {
+          "value": "Gorguettes 셔틀은 9월 주말·방학·공휴일만 운행 — 평일 무효",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 30
+        }
+      }
+    },
+    "cathedrale-saint-jean": {
+      "displayName": "Cathédrale Saint-Jean",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월요일 14:00 개관 (오전 잠김)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "천문시계 하루 4회 작동",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "cau-ferrat": {
+      "displayName": "Cau Ferrat",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "4–10월 화–일 10:00–19:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "Cau Ferrat + Museu de Maricel 통합권 €12 (3관 통합 €17)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "cloitre-saint-trophime": {
+      "displayName": "Cloître Saint-Trophime",
+      "region": "avignon",
+      "grade": "priority",
+      "facts": {
+        "price_adult": {
+          "value": "생트로핌 회랑 €6",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "colline-du-chateau": {
+      "displayName": "Colline du Château (성채 언덕)",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "4/1–10/31 매일 08:30–20:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "공식 페이지에 엘리베이터 언급 없음",
+          "confidence": "unverified",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "collioure": {
+      "displayName": "Collioure",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "Château Royal 9/1–10/31 10:00–18:00 (마지막 입장 45분 전)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "Château Royal 성인 €9",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "전통시장 수·일 오전 Place du Maréchal Leclerc",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "cours-saleya": {
+      "displayName": "Cours Saleya",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "화–일 꽃·식품 오전 시장 · 월요일 골동품시장 07:00–18:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "coustellet": {
+      "displayName": "Coustellet 생산자 시장",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "생산자시장 매주 일요일 08:00–13:00 (2026-03-29~12-27)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "croix-rousse": {
+      "displayName": "Croix-Rousse",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "시장 화·금·토·일 06:00–13:30 (약 95팀) / 수·목 06:00–13:00 (약 23팀)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "daniel-et-denise-crequi": {
+      "displayName": "Daniel et Denise Créqui",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월–금 12:00–14:00 / 19:00–22:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "토·일",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "+33 4 78 60 66 53",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "eze": {
+      "displayName": "Èze",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "getting_there": {
+          "value": "Lignes d'Azur 82번 (Nice Vauban 발) €2.50",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 30
+        },
+        "hours": {
+          "value": "Jardin Exotique 9월 09:00–19:30",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "Jardin Exotique €10",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "far-de-tossa": {
+      "displayName": "Far de Tossa (Tossa de Mar)",
+      "region": "girona",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "€3",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "점심 휴관 있음 · 시립미술관은 개보수 휴관",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "fondation-maeght": {
+      "displayName": "Fondation Maeght",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "9월 10:00–18:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€18 / 감액 €14",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "closed": {
+          "value": "2026/9/5·6·7 특별휴관 (9/8 화 정상)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "직통 없음 — 니스빌→TER 15분→Cagnes-sur-Mer→ZOU! 655번 20–25분→도보 10–12분 급경사 · 구간별 약 €2.10",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 30
+        },
+        "note": {
+          "value": "Maeght–Matisse 셔틀 2026 시즌 7/4–8/29 종료 → 9/8 사용 불가",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "girona-cathedral": {
+      "displayName": "Girona Cathedral",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "고시즌 6/15–9/15 월–금 10:00–19:00 · 토 –20:00 · 일 12:00–19:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "대성당+Sant Feliu €7.50 (오디오가이드 포함)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "gordes": {
+      "displayName": "Gordes",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "시장 2026 연중 화요일 08:00–13:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "gout-bistrot": {
+      "displayName": "Goût Bistrot",
+      "region": "luberon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월 12:00–13:30 · 19:00–21:00 · 금–일 영업",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "수·목",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "메뉴 €39 / €49",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "grand-palais": {
+      "displayName": "Grand Palais",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "note": {
+          "value": "세잔전 2026/9/23–2027/1/17 갤러리 3·4 · 174점 · 예약 2026-07-07 개시",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "halles-de-lyon-paul-bocuse": {
+      "displayName": "Halles de Lyon Paul Bocuse",
+      "region": "lyon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "대부분 상점 월–토 07:30–19:30 · 일 07:30–13:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 다수 점포 휴무",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "hertz-avignon-tgv": {
+      "displayName": "Hertz Avignon TGV (AVNX92)",
+      "region": "avignon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월–목 08:00–21:00 · 금 –22:00 · 토 09:00–19:00 · 일 10:00–19:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "Place de l'Europe · 반납주차 Parking Loueurs P0 · +33 4 32 74 62 80",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 30
+        },
+        "note": {
+          "value": "영업시간 외 키드롭 제공 여부·요금·책임은 미확인",
+          "confidence": "unreachable",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90,
+          "blocked_reason": "Hertz 공식이 키드롭 조건을 게시하지 않음 — 전화 확인 필요"
+        }
+      }
+    },
+    "la-paradeta-sagrada-familia": {
+      "displayName": "La Paradeta Sagrada Família",
+      "region": "barcelona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "화–토 13:00–16:00 / 20:00–23:30 · 일 13:00–16:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "Passatge Simó 18",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 30
+        }
+      }
+    },
+    "la-roca-peratallada": {
+      "displayName": "La Roca (Peratallada)",
+      "region": "girona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90,
+          "blocked_reason": "공식 사이트 접속 실패(robots/timeout) · 관광청 venue 페이지에 시간 정보 없음"
+        }
+      }
+    },
+    "le-rocher": {
+      "displayName": "Le Rocher — 모나코 구시가지",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "note": {
+          "value": "위병 교대식 매일 11:55 (Place du Palais)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "les-baux-de-provence": {
+      "displayName": "Les Baux-de-Provence",
+      "region": "avignon",
+      "grade": "alternative",
+      "facts": {
+        "hours": {
+          "value": "Château des Baux 9월 09:00–19:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€10 (Carrières 통합권 €21)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "les-halles": {
+      "displayName": "Les Halles",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "화–금 06:00–13:30 · 토·일 –14:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "Les Halles 먼저, Palais 나중 순서",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "lignes-dazur": {
+      "displayName": "Lignes d'Azur (Nice 시내교통)",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "단발 €1.70 (74분 환승 포함) · 1일권 €7 · 7일권 €20",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "구값 €1.80/€5/€15/€40 계열은 전부 오류",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "lourmarin": {
+      "displayName": "Lourmarin",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "시장 금요일 08:00–13:00 연중 · 일요일 시장 없음",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "Lourmarin des Carnets 2026-09-12~13 · 50 carnettistes",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "macba": {
+      "displayName": "MACBA",
+      "region": "barcelona",
+      "grade": "optional",
+      "facts": {
+        "hours": {
+          "value": "6/25–9/24 10:00–20:00 · 일 10:00–15:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "화요일 (월요일 개관)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "현장 €15.00 · 온라인 €13.50",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "marche-de-la-liberation": {
+      "displayName": "Marché de la Libération",
+      "region": "nice",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "화–일 06:00–12:30",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "marche-provencal-antibes": {
+      "displayName": "Marché Provençal Antibes",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "9월 07:30–13:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "9/1–5/31 월요일 휴무",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "mercat-de-la-concepcio": {
+      "displayName": "Mercat de la Concepció",
+      "region": "barcelona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월·토 08:00–15:00 · 화–금 08:00–20:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "mercat-del-lleo": {
+      "displayName": "Mercat del Lleó",
+      "region": "girona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "월–금 07:00–14:00 · 토·공휴일 전날 07:00–14:30",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "monaco": {
+      "displayName": "Monaco",
+      "region": "nice",
+      "grade": "priority",
+      "facts": {
+        "note": {
+          "value": "위병 교대식 매일 11:55 (Place du Palais)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "montmartre-south-pigalle": {
+      "displayName": "Montmartre · South Pigalle",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "note": {
+          "value": "Fête des Vendanges 10/7–11 제93회 · Grande Parade 10/10",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "mucem": {
+      "displayName": "Mucem",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "closed": {
+          "value": "화요일 (+5/1·12/25)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€11 / 감액 €7.50 / 가족 €18 · 매월 첫 일요일 무료 · 야외 동선 무료",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "musee-chagall": {
+      "displayName": "Musée Chagall",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "5/2–10/31 10:00–18:00 연속 개관 (점심 휴관 없음)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "화요일",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "특별전 5/23–9/21 기간 €10",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "musee-d-orsay": {
+      "displayName": "Musée d'Orsay",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "화–일 09:30–18:00 · 목요일 21:45까지 (마지막 입장 21:00)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 (+5/1·12/25)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "온라인 €16 / 현장 €14",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "musee-de-l-orangerie": {
+      "displayName": "Musée de l'Orangerie",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "note": {
+          "value": "'Monet, painting time' 2026/9/30–2027/1/25 · 금 18시부터 야간 €10 단일가",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180,
+          "blocked_reason": "일반 성인 요금·휴관 요일 공식 페이지 403/404 — 확인 실패"
+        }
+      }
+    },
+    "musee-des-beaux-arts-lyon": {
+      "displayName": "Musée des Beaux-Arts",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "closed": {
+          "value": "화요일",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "musee-des-tissus": {
+      "displayName": "Musée des Tissus",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90,
+          "blocked_reason": "공식은 '폐관 중'만 안내 · 비엔날레 예외 개관 미확인 — 확정 서술 금지"
+        }
+      }
+    },
+    "musee-du-louvre": {
+      "displayName": "Musée du Louvre",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "price_adult": {
+          "value": "비EEA €32",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "closed": {
+          "value": "화요일",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "musee-gadagne": {
+      "displayName": "Musée Gadagne",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "closed": {
+          "value": "월·화",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "musee-granet": {
+      "displayName": "Musée Granet",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "화–일 10:00–18:00 (~11/1) · 매표 17:30",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "일반 €14 / 감액 €12 — 상설 단독권 없음 (McCartney전 포함 단일권)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "musee-matisse-nice": {
+      "displayName": "Musée Matisse",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "closed": {
+          "value": "화요일 (Chagall 과 동일 요일)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "musee-picasso-antibes": {
+      "displayName": "Musée Picasso Antibes",
+      "region": "nice",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "6/15–9/15 10:00–18:00 연속 · 매표 17:30 마감",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 (화–일 개관)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€12",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "museum-of-jewish-history": {
+      "displayName": "Museum of Jewish History",
+      "region": "girona",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "9–6월 화–토 10:00–18:00 · 월·일·공휴일 10:00–14:00",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€6",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "navigo-idfm": {
+      "displayName": "Navigo · IDFM (Paris 교통)",
+      "region": "paris",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "Navigo Mois 전존 €90.80 · Semaine €32.40 · 단발 €2.55 (버스·트램 €2.05) · Orly €14 · CDG RER B €7",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "2026-01-01 시행 · 구값 €88.80 계열은 오류",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "notre-dame-de-paris": {
+      "displayName": "Notre-Dame de Paris",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "price_adult": {
+          "value": "입장 100% 무료",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "booking": {
+          "value": "공식 사이트(notredamedeparis.fr)에서만 · 제3자 플랫폼 판매 권한 없음",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "palais-des-papes": {
+      "displayName": "Palais des Papes",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "3/1–11/1 09:00–19:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€16 (통합권 궁+정원+다리 €19.50, 2026-08-01 인상)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "booking": {
+          "value": "시간지정 예약 의무 아님 (권장)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "palau-de-maricel": {
+      "displayName": "Palau de Maricel",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "가이드 투어 전용 — 7·8월 화·수 / 9월–6월 일요일만",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "별도 €12",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "9/1(화) 관람 불가",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "pals": {
+      "displayName": "Pals",
+      "region": "girona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "시간의 탑 6/15–9/30 수–일 10:30–14:30 / 17:00–20:00",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "점심대(15:20–16:10) 방문 불가",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "passeig-de-la-muralla": {
+      "displayName": "Passeig de la Muralla",
+      "region": "girona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "9월–5월 08:00–21:00 (6–8월 –23:00)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "peralada": {
+      "displayName": "Peralada",
+      "region": "girona",
+      "grade": "priority",
+      "facts": {
+        "note": {
+          "value": "Jason 확정 — 일정에서 제외 (박물관 투어 예약 안 함)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "piscine-yves-blanc": {
+      "displayName": "Piscine Yves Blanc",
+      "region": "aix",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "입장 €4 / 감액 €3",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "수영모 의무(9/1–6/30) · 수영반바지 금지 · 26 av. des Écoles Militaires",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "place-richelme-place-des-precheurs": {
+      "displayName": "시장 — Place Richelme · Place des Prêcheurs",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "Richelme 식품시장 매일 08:00–13:00 · 화·목·토 큰장(직물·공예·골동)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "pont-du-gard": {
+      "displayName": "Pont du Gard",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "price_adult": {
+          "value": "부지·다리 무료 · 주차 €9/차량 · 실내 전시 €8",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "hours": {
+          "value": "9월 09:00–19:00 (매표 18:30 마감)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "야간 조명 5/15–9/20 운영 (쇼 Les Féeries 는 7/4–8/30 종료)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "pont-saint-benezet": {
+      "displayName": "Pont Saint-Bénézet",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "price_adult": {
+          "value": "통합권(궁+정원+다리) €19.50",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "rocher-des-doms": {
+      "displayName": "Rocher des Doms",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "9월 07:30–20:00 (10월 –18:00)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "roussillon-sentier-des-ocres": {
+      "displayName": "Roussillon · Sentier des Ocres",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "9/1–9/30 09:00–19:00 · 최종입장 30분 전",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "성인 €8 · 12–17세 €4 · 12세 미만 무료",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "rtm-lecar": {
+      "displayName": "RTM lecar (Aix↔Marseille)",
+      "region": "aix",
+      "grade": "none",
+      "facts": {
+        "getting_there": {
+          "value": "직행(고속도로) 노선 · 1회권 차내 판매 · 90분 환승 유효",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 30
+        }
+      }
+    },
+    "sacre-coeur": {
+      "displayName": "Sacré-Cœur",
+      "region": "paris",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "돔 10:30 개방",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "돔 €8",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "booking": {
+          "value": "현장판매만",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "계단 300개",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "sagrada-familia": {
+      "displayName": "Sagrada Família",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "price_adult": {
+          "value": "기본 €26.00 / 타워 포함 €36.00",
+          "confidence": "official",
+          "source": "https://sagradafamilia.org/en/prices",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        },
+        "hours": {
+          "value": "일요일 10:30 개장 (4–9월 10:30–20:00)",
+          "confidence": "official",
+          "source": "https://sagradafamilia.org/en/schedules-how-to-get",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        }
+      }
+    },
+    "saint-paul-de-vence": {
+      "displayName": "Saint-Paul-de-Vence",
+      "region": "aix",
+      "grade": "priority",
+      "facts": {
+        "note": {
+          "value": "Jason 확정 — 9/8(화) Nice 당일치기로 이설. Aix 챕터에서 제외",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "sant-pau-recinte-modernista": {
+      "displayName": "Sant Pau Recinte Modernista",
+      "region": "barcelona",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "월–일 09:30–18:30 (4–10월)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "성인 €18 (14시 이전) / €17 (14시 이후)",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "taxi-avignon": {
+      "displayName": "택시 (Avignon Centre→TGV)",
+      "region": "avignon",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "€12–15 · 8–15분 · 24시간",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "booking": {
+          "value": "전날 예약 필수",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "tcl": {
+      "displayName": "TCL (Lyon 시내교통)",
+      "region": "lyon",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "단발 존1-2 €2.10 (1h) · 전존 €3.70 · 24h 존1-2 €6.90 · 전존 24h €9.80 · 푸니쿨라 왕복 €3.60",
+          "confidence": "official",
+          "source": "2026-08-17 신규 검증",
+          "verified_at": "2026-08-17",
+          "ttl_days": 180
+        }
+      }
+    },
+    "uzes": {
+      "displayName": "Uzès Place aux Herbes·구시가지",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "시장 수·토만",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "무료 셔틀(Mayac↔시내)은 토요일 오전만",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "versailles": {
+      "displayName": "Versailles",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "price_adult": {
+          "value": "Passport 고시즌 €35 · 트리아농 €15 · 분수쇼일 정원 €15 (2026-01-14 개정)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        }
+      }
+    },
+    "virgule-navette": {
+      "displayName": "TER Virgule (Avignon Centre↔TGV)",
+      "region": "avignon",
+      "grade": "none",
+      "facts": {
+        "hours": {
+          "value": "일요일 08:44 / 09:13 / 10:13 / 10:44 (09:13 권장)",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "€4 · 5–6분",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "'셔틀 없음' 서술은 오류 · Orizo 10번 버스는 일요일 무운행",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    },
+    "zbe-barcelona": {
+      "displayName": "ZBE (Barcelona 저배출구역)",
+      "region": "barcelona",
+      "grade": "none",
+      "facts": {
+        "price_adult": {
+          "value": "등록 €5 · €2/일 · 과태료 100유로부터",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "구값 '€7·과태료 €1,800' 은 오류",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        }
+      }
+    }
+  }
+}
