@@ -24,13 +24,12 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 ## Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계
 
 | 항목 | 평가 |
-|---|---|
+|---|--- |
 | 여행 적합도 | ★★★★★ Jason·Julia의 생활형 여행에 최적화 |
 | 예산 체감 | 높음 |
 | 일정 강도 | 16일 3사이클 |
 | 예약 핵심 | 숙소 P0 · 미술관/공연 조건부 P1 |
 | 우천 전환 | 대형미술관·Passages·BnF·카페 |
-
 > **이 체류의 역할**: 파리는 이번 43일 일정·42박 여행의 마지막 도시이자 하이라이트다. 관광지를 매일 정복하는 방식이 아니라, 같은 빵집과 시장을 다시 찾고, 오전 운동과 세탁·장보기를 반복하며, 오후에는 미술관·동네·도서관을 하나씩 보고, 저녁에는 비스트로 또는 고정 공연 하나를 선택하는 **16일짜리 파리 생활 실험**으로 운영한다.
 
 > **Jason·Julia 맞춤 원칙**: Jason은 러닝·gym과 미술·도시 스케치를, Julia는 동네산책·시장·카페와 선택 수영을 즐긴다. Julia의 수영은 숙소 선정조건이 아니다. 아침은 숙소, 점심은 샌드위치·시장·가벼운 현지식, 저녁은 레스토랑과 숙소식을 섞는다.
@@ -40,7 +39,6 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 > **디자인 메모**: 최종 Word/PDF에는 지도와 사진을 실제 삽입한다. 현재 문서에는 삽입 위치·제목·설명만 자리표시자로 둔다.
 
 ---
-
 
 ## 꼭 경험할 세 장면
 
@@ -55,13 +53,12 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | Centre Pompidou 본관 | **방문 불가** | 2030 재개관 목표 개보수 폐관 |
 | 대형미술관 3일 연속 | **비추천** | 장기여행의 생활감과 집중도를 훼손 |
 | Eiffel Tower 정상 입장 | **선택 이하** | 도시 산책·공연·생활체험보다 우선하지 않음 |
-
 ---
 
 ## 한눈에 보기 — 우선순위·권역·소요시간
 
 | 장소·체험 | 등급 | 왜 Jason·Julia에게 추천하는가 |
-|---|---|---|
+|---|---|--- |
 | Notre-Dame·Île de la Cité | **필수** | 복원 후 파리의 역사와 현재를 동시에 봄 |
 | Louvre 선택관람 | **필수** | 박물관 자체보다 왕궁·컬렉션의 역사층을 이해 |
 | Musée d’Orsay | **필수** | Jason의 미술취향과 2026 Cassatt 전시가 맞음 |
@@ -74,14 +71,12 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | Bourse de Commerce | **선택** | 10/7 신규전과 건축 관심 시 |
 | Orangerie | **선택** | Giverny 대체 또는 Monet 집중일. **화요일 휴관** — 9/29 에는 불가, 10/3 토요일로 |
 | Fondation Louis Vuitton | **제외** | 신규전 개막이 10/9 — 그날 출국한다 |
-
 | 시간·역할 | 추천 | 이용법 |
-|---|---|---|
+|---|---|--- |
 | 아침 | **운동·시장·동네 카페** | 명소보다 반복 가능한 생활루틴을 먼저 고정한다. |
 | 점심 | **샌드위치·시장·숙소식** | 저녁 공연일에는 점심을 가장 안정적인 식사로 만든다. |
 | 저녁 | **고정공연 또는 동네식 중 하나** | 한날에 복수 야간행사를 넣지 않는다. |
 | 스케치 | **Luxembourg·Seine·Palais Royal** | 관광객 흐름과 앉을 장소가 함께 있는 곳을 고른다. |
-
 ## ‘한 달 살기’의 축소판 — 운동하는 아침, 문화가 있는 오후, 공연과 동네 저녁
 
 - **대표 촬영 장면:** Seine 일몰보다 동네시장·식탁·공원 스케치 장면
@@ -106,11 +101,10 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 `22.1 세 개의 파리` 개념을 유지한다.
 
 | 층 | 무엇 |
-|---|---|
+|---|--- |
 | **기념비의 파리** | 루브르·노트르담·베르사유. 한 번씩 |
 | **문화의 파리** | 오르세·Opéra Bastille·Fashion Week. 이번 체류의 축 |
 | **생활의 파리** | 시장·동네·러닝·빵집. **가장 많은 시간** |
-
 **세 번째가 이 체류의 목적이다.** 앞의 둘은 그 안에 배치되는 것이지 그 반대가 아니다.
 
 ### 왜 이 설계가 옳은가
@@ -122,7 +116,7 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 ## 추천 체류 리듬
 
 | 항목 | 확정·권장 내용 |
-|---|---|
+|---|--- |
 | 체류 | 2026년 9월 24일 목요일–10월 9일 금요일, 15박 (10/9 19:10 CDG 출국) |
 | 여행 방식 | **관광 50% + 생활 35% + 공연·축구 15%** |
 | 숙소 1순위 | **5구 Maubert–Mutualité / Jardin des Plantes–Gobelins 북부** |
@@ -137,7 +131,6 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | 근교 옵션 | 이번 고정 이벤트 프레임워크에서는 기본 일정에서 제외하고, 별도 교체일이 생길 때만 검토 |
 | 교통 | 9/24–27 개별 승차, 9/28–10/4 및 10/5–11 Navigo Weekly 2주 연속 권장 |
 | 피로 관리 | 문화 집중일 다음 날은 생활일·공원·시장. 공연 다음 날 오전은 늦게 시작 |
-
 ### 파리 15박의 배분
 
 ```text
@@ -160,11 +153,10 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 파리 일정을 17개의 독립된 날짜로 보지 않고 **정착–문화집중–회수와 출국**의 세 사이클로 운영한다. 이 구조를 유지하면 공연·축구·날씨가 바뀌어도 전체 리듬이 무너지지 않는다.
 
 | 사이클 | 날짜 | 역할 | 반드시 지킬 것 | 이동 가능한 일정 |
-|---|---|---|---|---|
+|---|---|---|---|--- |
 | 1. 정착과 방향잡기 | 9/24–9/29 | 체크인 완충, 숙소생활권, Saint-Germain, 고전 도심, 박물관 1곳 | 9/24 대형 일정 금지·첫 장보기·**9/29 는 Orsay 고정** | 9/29 박물관은 다른 날과만 교환 (Orangerie 대체 불가) |
 | 2. 공개문화와 메인 이벤트 | 9/30–10/5 | Fashion Week, Rossini, 회복, 선택문화, Arc, 회복 | 10/2·10/5 회복일과 10/4 저녁 비움 | 10/3 선택문화만 자유 교체 |
 | 3. 동네·축제·마무리 | 10/6–10/9 | 동부 파리, Vendanges, 송별 저녁, 출국 | 10/9 낮 이후 고정행사 금지 | — |
-
 ### 고정·조건부·자유 블록
 
 - **고정 블록:** 숙소 체크인·체크아웃, 9/30 Fashion Week 반일, 10/4 Arc, 10/7 Vendanges, 10/8 송별 저녁, 10/9 출국.
@@ -178,7 +170,7 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 ### 3.1 표준 하루
 
 | 시간 | 기본 리듬 |
-|---|---|
+|---|--- |
 | 07:30–08:30 | 숙소 아침 |
 | 08:30–10:00 | 러닝·gym·선택 수영 또는 시장산책 |
 | 10:00–12:00 | 샤워·세탁·장보기·카페·아무것도 하지 않는 시간 |
@@ -187,7 +179,6 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | 14:00–18:00 | 미술관 1곳 또는 동네 1권역 |
 | 18:00–19:15 | 숙소 귀환·휴식 또는 공연장 근처 이른 식사 |
 | 19:30–22:30 | 레스토랑·공연·축구 중 하나 |
-
 ### 3.2 강도 규칙
 
 - **피로도 4 이상**: 다음 날 오전 정식운동 생략, 산책만 한다.
@@ -199,7 +190,7 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 ---
 
 | 날짜 | 성격 | 오전 | 오후 | 저녁 | 피로도 |
-|---|---|---|---|---|---:|
+|---|---|---|---|---|---: |
 | 9/24 목 | 도착 | Lyon→Paris 이동 | 체크인·짐정리·필수 장보기 | 무예약·800m 산책 | 3 |
 | 9/25 금 | 생활 완충 | 늦은 아침·세탁 | 슈퍼·빵집·약국·생활권 파악 | 무예약 | 1–2 |
 | 9/26 토 | 로컬 라이프 | 늦은 시작·가벼운 운동 | Saint-Germain·Luxembourg·Seine | 무예약 | 2–3 |
@@ -217,7 +208,6 @@ source_priority: "공식기관·시설·사업자 → 파리시·공식 관광�
 | 10/8 목 | 송별 저녁 예약 | 짐 절반 포장 | Trocadéro·Chaillot | 점등 조망 후 송별 저녁 (상향) | 3 |
 | 10/9 금 | 출국 | 최종 포장·체크아웃 | 숙소권 점심·공항 이동 | OZ502 19:10 CDG 출발 | 4 |
 | 10/10 토 | 귀국 | 기내 | 인천 14:10 도착 | 입국·수하물·귀가 | 3 |
-
 ---
 
 ## 구역별 이해와 숙소 생활권
@@ -266,7 +256,7 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 ### 숙소 생활권 비교
 
 | 생활권 | 도시 성격 | 생활 편의 | 문화 접근 | 야간환경 | Jason·Julia 적합성 |
-|---|---|---:|---:|---:|---|
+|---|---|---:|---:|---:|--- |
 | **Maubert–Mutualité** | 시장·Notre-Dame·Latin Quarter | 매우 높음 | 매우 높음 | 비교적 안정 | **1순위** |
 | **Jardin des Plantes–Gobelins 북부** | 주거·공원·시장 | 매우 높음 | 높음 | 조용한 편 | **1순위** |
 | **Convention–Commerce** | 실제 주거생활·시장·상점 | 매우 높음 | 중간 | 비교적 안정 | **가성비 1순위** |
@@ -275,7 +265,6 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 | **École Militaire–Gros-Caillou** | 중심·세느·7구 | 중간 | 높음 | 안정적 | 예산 허용 시 |
 | Vieux Marais·Saint-Michel 바로 중심 | 관광·야간활기 | 중간 | 매우 높음 | 소음·혼잡 | 15박에는 후순위 |
 | Gare du Nord·Châtelet 바로 인접 | 환승·유동인구 | 높음 | 높음 | 혼잡·소매치기 관리 필요 | 생활거점 비추천 |
-
 ### 최종 권고
 
 > **예산 내 5구 서비스드 아파트가 확보되면 5구를 선택한다.**
@@ -288,7 +277,7 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 ### 30.1 15박에 필요한 조건
 
 | 평가항목 | 가중치 |
-|---|---:|
+|---|---: |
 | 생활권·야간환경 | 20 |
 | 주방·냉장고·식탁 | 20 |
 | 교통·공연 귀가 | 15 |
@@ -296,20 +285,18 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 | 총비용·취소조건 | 15 |
 | 엘리베이터·저층·수하물 | 10 |
 | 체크인·프런트 지원 | 5 |
-
 > 수영장 접근성은 숙소 점수에 넣지 않는다.
 
 ### 30.2 실제 숙소 후보
 
 | 후보 | 권역·형태 | 장점 | 확인사항 | 가격 제외 적합도 |
-|---|---|---|---|---:|
+|---|---|---|---|---: |
 | **Pepper & Paper Apartments** | 5구, 아파트호텔 | 완비 주방·24시간 세탁실·정원, 생활형 위치 | 15박 총액·엘리베이터·객실 냉방 | **92** |
 | **Citadines Austerlitz Paris** | 13구 북부/5구 인접 | kitchenette·세탁·Jardin des Plantes 접근, 비교적 생활형 | 중심지 이동·객실 리노베이션 상태 | **88** |
 | **Citadines Tour Eiffel Paris** | 15구 Motte-Picquet | 주방·세탁·교통 3개 노선, 시장·상점 | Eiffel 관광객·도로소음 | **87** |
 | **Adagio Paris Centre Tour Eiffel** | 15구 Grenelle | 아파트·주방·세탁·fitness/실내풀 | 대형시설 느낌·객실상태 편차 | **84** |
 | **Citadines Opéra Paris** | 2구/9구 인접 | 공연·BnF·회랑 접근, kitchen·launderette | 생활감보다 중심성, 가격 | **83** |
 | **Adagio Paris XV** | 15구 남서 | 넓은 생활형 아파트·주방·세탁, 예산 가능성 | 중심부 이동 25–40분 | **81** |
-
 ### 30.3 숙소 선택 의사결정
 
 ```text
@@ -339,15 +326,13 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### 승차권
 
-
 **15박이다.** 낱장 티켓은 비효율적이다.
 
 | 선택지 | 성격 |
-|---|---|
+|---|--- |
 | 주간 정기권 | 월요일 시작 주 단위 {{badge:pending|명칭·조건 확인}} |
 | 충전식 카드 | 회수권 방식 {{badge:pending|확인}} |
 | 1일권 | 근교 이동일에 |
-
 ⚠ **파리 교통 요금 체계가 최근 개편된 것으로 알려져 있다** {{badge:pending|확인 필수}}. 출발 전 현행 체계를 반드시 확인한다.
 
 > **근교는 별도 요금대다.** 베르사유(RER C)와 지베르니는 시내 요금권으로 안 된다.
@@ -355,12 +340,11 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 ### 도착 — Day 27
 
 | 항목 | 내용 |
-|---|---|
+|---|--- |
 | 도착역 | **Gare de Lyon** |
 | 숙소 이동 | {{badge:pending|숙소 결정 후}} |
 | 짐 | 27일치. **지하철 계단이 부담** |
 | 대안 | 택시·차량호출 |
-
 > **도착일에 대중교통을 고집하지 마라.** 짐이 많다. 이 날만은 택시가 합리적이다.
 
 ### 야간 귀가
@@ -368,23 +352,20 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
  공연이 주 1–2회 있고 늦게 끝난다.
 
 | 원칙 | 내용 |
-|---|---|
+|---|--- |
 | **막차 시각 확인** | 공연 예매 시점에 |
 | 야간 버스 | 노선 확인 |
 | 택시 | **미리 앱을 설치해 둔다** |
 | 도보 | 숙소가 가까우면 최선 |
-
 ### 안전
 
-
 | 원칙 | 내용 |
-|---|---|
+|---|--- |
 | 소매치기 | **지하철·관광지에서 가방을 앞으로** |
 | 야간 | 인적 드문 곳 회피 |
 | 역 주변 | 일부 역 주변은 야간 주의 |
 | 숙소권 | **생활권 선택이 안전의 대부분** |
 | 짐 | 43일 누적. 도난 시 손실이 크다 |
-
 ---
 
 ## 34. 대중교통·문전 이동
@@ -394,17 +375,16 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 > **계획가(2026-08 조사)** — 실제 결제액이 아니라 예산 설계용 범위다.
 
 | 기간 | 추천 |
-|---|---|
+|---|--- |
 | 9/24 목–9/27 일 | 개별 Metro-Train-RER 티켓 또는 충전식 카드 |
 | 9/28 월–10/4 일 | Navigo Weekly all zones |
 | 10/5 월–10/11 일 | Navigo Weekly all zones — CDG 출국 포함 |
-
 2026 공식 안내 기준 Weekly all zones €32.40, 개별 Metro-Train-RER €2.55, 공항티켓 €14 {{badge:pending|출발 전 재확인}}. 두 주 연속 Weekly가 Monthly보다 이번 날짜구조에 맞는다.
 
 ### 34.2 핵심 문전시간
 
 | 구간 | 현실적 문전시간 |
-|---|---:|
+|---|---: |
 | Gare de Lyon→5구 숙소 | 택시 25–45분, 교통상황 포함 |
 | Gare de Lyon→15구 숙소 | 택시 35–60분 |
 | 5구→Louvre/Orsay | 25–45분 |
@@ -412,7 +392,6 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 | 중심→Philharmonie | 45–70분 |
 | 중심→Parc des Princes | 45–75분 |
 | 중심→CDG | RER/택시 포함 60–100분, 장애 여유 별도 |
-
 ### 34.3 야간 귀가
 
 - 공연 종료 후 메트로는 일반적으로 운행하지만 노선공사·막차를 당일 확인.
@@ -428,14 +407,13 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 ⚠ **이 날은 지도 전환일이 아니다.** 설계 문서의 플래그 체계에서 `MAP_TRANSITION`에는 없고 `P0_CONNECTION`에만 있다. **그래서 누락되기 쉽다.**
 
 | 항목 | 내용 |
-|---|---|
+|---|--- |
 | 항공 | **OZ502 · CDG 19:10 → 인천 10/10 14:10 (확정)** |
 | 공항 | CDG {{badge:pending|터미널 확인}} |
 | 이동 | RER B·버스·택시 {{badge:pending|숙소 위치별 확인}} |
 | 완충 | **국제선 3시간 전 도착 기준** — 14:00 이전 숙소 출발 |
 | 짐 | **42일 누적.** 출발 때보다 훨씬 무겁다 |
 | 전날 | Day 41(10/8) 오전에 절반을 싼다. 송별 저녁이 그날 밤이므로 낮에 끝낸다 |
-
 > **Day 42 오후에 도심 일정을 넣지 마라.**
 > 체크아웃과 공항 사이의 두세 시간은 여유가 아니라 완충이다. **숙소 반경 산책과 가벼운 점심**이면 충분하다.
 
@@ -486,7 +464,7 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 #### 운영
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 월–금 | 7:50–19:00 · **목요일만 22:00까지** |
 | 토·일 | 8:15–19:30 |
 | 마지막 입장 | 폐관 30분 전 |
@@ -495,12 +473,11 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 | 종탑 시간 | 9월 24일–10월 31일 9:00–23:00, 마감 1시간 전 입장 |
 | 고고학 지하실 | €9 {{badge:pending|출발 전 재확인}} |
 | 보물관 | 평일 9:30–18:00(목 21:00까지) · 토 9:30–18:00 · 일 13:00–17:00 · 유료 |
-
 #### 무료로 얻을 수 있는 것 두 가지
 
 > **일요일 16시 대오르간 연주**
 > 일요일 16:00에 무료 대오르간 연주가 있다. 모든 방문객에게 열려 있다.
->
+
 > **Day 30(9/27 일)과 Day 37(10/4 일)이 일요일이다.** 특히 **Day 37은 의도적으로 비운 날**이다. 계획 없이 이 연주를 들으러 가는 것이 그 날의 성격에 정확히 맞는다.
 
 > **화요일 저녁 성음악 연주회**
@@ -519,8 +496,8 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### Latin Quarter {{grade:essential|필수}}
 
-> **요금** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.price_adult}} · **운영** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.hours}} · **휴관** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.closed}}
-> **예약** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.booking}} · **소요** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.duration}} · **가는 법** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.getting_there}}
+> **운영** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.hours}} · **휴관** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.closed}}
+> **예약** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.booking}}
 
 **'라틴'은 학생들이 라틴어로 말하던 동네라는 뜻이다 — 800년째 학생 구역이다.**
 
@@ -537,14 +514,13 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 아래 시간표 순서를 그대로 쓴다.
 
 | 구간 | 내용 |
-|---|---|
+|---|--- |
 | 아침 | Luxembourg 또는 Seine 좌안 러닝·산책 |
 | 오전 | **Marché Maubert** 또는 숙소권 시장·빵집 — 토요일 시장과 생활점포 파악 |
 | 이른 오후 | **Panthéon 외관** · **Rue Mouffetard** 또는 **Sorbonne** 주변 |
 | 오후 | **Notre-Dame** |
 | 늦은 오후 | **Île de la Cité → Île Saint-Louis** — 강변·서점·카페 |
 | 저녁 | 5구 동네 비스트로 — Les Papilles · Bouillon Racine 또는 숙소권 |
-
 > **실내를 욕심내지 마라**
 > **팡테옹 내부가 삭제 1순위다.** 도착 다음 날이고, 이 날의 목적은 기념물이 아니라 **집 주변을 익히는 것**이다.
 > 우천이면 노트르담 + **Shakespeare and Company** 주변 서점 + 카페로 압축한다.
@@ -564,16 +540,15 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 ### Le Marais {{grade:essential|필수}}
 
 > **요금** {{fact:le-marais-place-des-vosges-carnavalet-archives.price_adult}} · **운영** {{fact:le-marais-place-des-vosges-carnavalet-archives.hours}} · **휴관** {{fact:le-marais-place-des-vosges-carnavalet-archives.closed}}
-> **예약** {{fact:le-marais-place-des-vosges-carnavalet-archives.booking}} · **소요** {{fact:le-marais-place-des-vosges-carnavalet-archives.duration}} · **가는 법** {{fact:le-marais-place-des-vosges-carnavalet-archives.getting_there}}
+> **예약** {{fact:le-marais-place-des-vosges-carnavalet-archives.booking}}
 
 **Day 30 (9/27 일) · Day 35 (10/2 금)**
 
-**이 체류에서 두 번 가는 유일한 동네다.** 
+**이 체류에서 두 번 가는 유일한 동네다.**
 | 방문 | 성격 |
-|---|---|
+|---|--- |
 | Day 30 (일) | **일요일의 마레** — 파리에서 일요일에 문을 여는 드문 구역 |
 | Day 35 (금) | **평일의 마레** — 생활·역사·패션 |
-
 > **같은 곳을 다른 요일에 본다**
 > 일요일 파리는 대부분 닫는다. 마레는 예외로 알려져 있다 {{badge:pending|확인 권장}}. 그래서 일요일과 평일의 얼굴이 다르다.
 > **두 번 가는 것이 낭비가 아니라 설계다.**
@@ -583,13 +558,12 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 | | Day 30 (9/27 일) | Day 35 (10/2 금) |
-|---|---|---|
+|---|---|--- |
 | 오전 | Luxembourg 러닝 · **Marché Monge** 장보기 | 세탁·우편·카페 (생활블록) |
 | 점심 | 숙소 | **Marché des Enfants Rouges** |
 | 오후 | Marais 골목 · **Place des Vosges** · **Carnavalet** 선택 | Marais 골목 · **Archives** · Place des Vosges |
 | 실내 | 박물관은 **한 곳만** | **Carnavalet / MEP / Palais Galliera 중 1곳** |
 | 저녁 | 숙소식 또는 **Café des Musées** | 재즈 또는 연극 선택 |
-
 > **일요일에 마레를 넣은 이유**
 > 파리는 일요일에 대부분 닫는다. **Marché des Enfants Rouges 는 화–일 운영이고 월요일이 휴무다** ( `31. 시장과 장보기`). 그래서 일요일에 열리고 월요일에 닫는다.
 > Day 30 이 일요일, Day 38 이 월요일인 것과 맞물린다.
@@ -608,8 +582,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Montmartre · South Pigalle {{grade:essential|필수}}
 
-> **요금** {{fact:montmartre-south-pigalle.price_adult}} · **운영** {{fact:montmartre-south-pigalle.hours}} · **휴관** {{fact:montmartre-south-pigalle.closed}}
-> **예약** {{fact:montmartre-south-pigalle.booking}} · **소요** {{fact:montmartre-south-pigalle.duration}} · **가는 법** {{fact:montmartre-south-pigalle.getting_there}}
+> **운영** {{fact:montmartre-south-pigalle.hours}} · **휴관** {{fact:montmartre-south-pigalle.closed}}
+> **예약** {{fact:montmartre-south-pigalle.booking}}
 
 **Day 32 (9/29 화)**
 
@@ -627,13 +601,12 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 저장소의 방문지 자료(`ASSETS/90 Regional Context & Place Dossier Compendium`)와  Day 32 시간표가 같은 동선을 지시한다.
 
 | 구간 | 내용 |
-|---|---|
+|---|--- |
 | 접근 | **Lamarck-Caulaincourt** 역에서 **북사면**으로 진입 |
 | 언덕 | Sacré-Cœur · 전망 — **광장 체류는 짧게** |
 | 하산 | **Abbesses → South Pigalle** |
 | 저녁 | **Le Bon Georges** 또는 9구 비스트로 (예약 권장) |
 | 체류 | 2.5–4시간 · 거리는 무료 |
-
 > **푸니쿨라를 타지 마라**
 > 지시다. **푸니쿨라보다 북쪽에서 완만하게 접근한다.** 라마르크-콜랭쿠르에서 들어가면 오르막이 줄고, 관광 동선이 아니라 실제 주거 골목을 지난다.
 
@@ -648,7 +621,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Montorgueil {{grade:priority|우선추천}}
 
-> 📍 {{fact:montorgueil-les-halles.address}} · 🚶 {{fact:montorgueil-les-halles.getting_there}} · 🕐 {{fact:montorgueil-les-halles.hours}} · 휴무 {{fact:montorgueil-les-halles.closed}} · {{fact:montorgueil-les-halles.booking}} · {{fact:montorgueil-les-halles.price_range}}
+> 🕐 {{fact:montorgueil-les-halles.hours}} · 휴무 {{fact:montorgueil-les-halles.closed}} · {{fact:montorgueil-les-halles.booking}}
 
 **10/3 유연한 문화일의 선택 모듈**
 
@@ -662,11 +635,10 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
  Day 40 시간표는 **부르스 오후 → Rue Montorgueil · Les Halles 주변**으로 이어진다. 시장거리와 카페가 이 구간의 내용이다.
 
 | 구간 | 내용 |
-|---|---|
+|---|--- |
 | 오후 | **Bourse de Commerce** — 중앙 원형공간과 전시 1개에 집중 · 90–120분 |
 | 이어서 | **Rue Montorgueil · Les Halles 주변** — 도보권 |
 | 저녁 | 숙소식 또는 가까운 비스트로. 고정공연 없음 |
-
 > **부르스와 몽토르괴이가 도보로 붙어 있다**
 > 저장소 방문지 자료가 부르스를 **"Les Halles·Louvre권 도보"** 로 적고 있다. 두 곳을 한 날에 넣은 것이 이동 때문이 아니라 **거리가 붙어 있어서**다.
 
@@ -692,10 +664,9 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
  `23. 숙소 생활권 비교`가 이 구역을 이렇게 적었다.
 
 | 생활권 | 성격 | 평가 |
-|---|---|---|
+|---|---|--- |
 | **Convention–Commerce** | 실제 주거생활·시장·상점 | 생활 편의 매우 높음 · **가성비 1순위** |
 | **Motte-Picquet–Grenelle** | 교통·에펠·상점 | 문화 접근 높음 · 2순위 |
-
 **Marché Convention 은 화·목·일**, **Marché Grenelle 은 수·일**이다 ( `31. 시장과 장보기`). **Day 36 은 토요일이라 둘 다 서지 않는다.**
 
 > **그러면 이 날 무엇을 하는가**
@@ -707,8 +678,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### 월요일 모듈 {{grade:priority|우선추천}}
 
-> **요금** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.price_adult}} · **운영** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.hours}} · **휴관** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.closed}}
-> **예약** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.booking}} · **소요** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.duration}} · **가는 법** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.getting_there}}
+> **운영** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.hours}} · **휴관** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.closed}}
+> **예약** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.booking}}
 
 **Day 38 (10/5 월)**
 
@@ -728,12 +699,11 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
  Day 38 이 네 개를 두었다. **하나만 고른다.**
 
 | 모듈 | 동선 | 고르는 경우 |
-|---|---|---|
+|---|---|--- |
 | **A** | Aligre – Coulée Verte – Bastille | 시장·생활·산책을 원할 때 |
 | **B** | Butte-aux-Cailles – Gobelins – Jardin des Plantes | 5구 숙소에서 생활권을 넓힐 때 |
 | **C** | Convention – Parc André Citroën – Grenelle | 15구를 실제 거주지처럼 체험할 때 |
 | **D** | Batignolles – Parc Monceau | 9구 숙소 또는 북서부 생활권이 궁금할 때 |
-
 > **⚠ 모듈 A 는 월요일 시장 휴무를 확인하고 고른다**
 > **10/5(월)에는 Aligre–Beauvau 도 Marché Convention 도 서지 않는다** — 전자는 월요일 휴무, 후자는 화·목·일이다 (`31. 시장과 장보기`). 월요일 모듈은 시장이 아니라 **상설 상점가·Coulée Verte 산책** 으로 잡는다
 > 시장을 보러 모듈 A 를 고르면 헛걸음한다. **Coulée Verte 산책이 목적이면 여전히 유효하다.**
@@ -761,14 +731,13 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 `파리에서의 장소 선택 원칙`에 대응해 실행 규칙만 정리한다.
 
 | 원칙 | 내용 |
-|---|---|
+|---|--- |
 | **하루 한 구역** | 두 구역을 하루에 넣지 않는다 |
 | **지하철보다 걷기** | 15박이다. 구역 안은 걷는다 |
 | **같은 곳 다시 가기** | 마레가 그 사례다 |
 | **아침에 관광지** | 사크레쾨르·노트르담은 개장 직후 |
 | **오후에 생활권** | 사람이 흩어진다 |
 | **저녁은 동네에서** | 관광지에서 저녁을 먹지 않는다 |
-
 ---
 
 ## 2026년 가을 전시 캘린더
@@ -776,7 +745,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 체류 기간(9/24–10/9)에 열려 있는 것만 정리한다.
 
 | 전시 | 장소 | 기간 | 체류 중 |
-|---|---|---|:---:|
+|---|---|---|:---: |
 | **Cezanne et nous** | Grand Palais | 9/23 – 2027/1/17 | ○ |
 | **Monet, peindre le temps** | Orangerie | 9/30 – 2027/1/25 | ○ |
 | **Mary Cassatt. L'indépendante** | Musée d'Orsay | 10/6 – 2027/1/31 | **10/6부터** |
@@ -784,7 +753,6 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 | Histoires de Paysages, de Monet à Hockney | Marmottan Monet | 9/24 – 2027/1/31 | ○ |
 | Un vestiaire à soi | Palais Galliera | 9/26 – 2027/2/14 | 9/26부터 |
 | Jenny Holzer — J'ai Vu | Musée d'Orsay | 10/20 – 2027/2/21 | **✗ 체류 후** |
-
 > **Jenny Holzer는 못 본다.** 10월 20일 개막이고 10월 9일에 떠난다. 기대하지 말 것.
 
 ## Cezanne et nous — Grand Palais {{grade:essential|필수}}
@@ -826,13 +794,12 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 ### 실용
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 기간 | 2026/9/23 – 2027/1/17 |
 | 운영 | 화·수·금·주말 9:30–18:00 · **목요일 9:30–21:45** |
 | 예약 | 티켓 판매 개시됨 · **필수** |
 | 체류 | 120–150분 |
 | 공동주최 | 그랑팔레Rmn · 퐁피두 센터 · 오르세·오랑주리 공공기관 |
-
 > **Day 34가 목요일인 것이 유리하다.** 목요일만 21:45까지 연다. **오후 늦게 들어가면 인파가 준다.**
 
 ## Mary Cassatt. L'indépendante — Musée d'Orsay {{grade:essential|필수}}
@@ -862,11 +829,10 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 **"개막일은 짧고 집중해서"** 라는 규칙을 그대로 따른다.
 
 | 위험 | 대응 |
-|---|---|
+|---|--- |
 | 언론·초대객 혼재 | **사전 예약 필수** |
 | 관람 동선 혼잡 | 이른 시간 또는 늦은 시간 |
 | 오래 머물기 어려움 | **60–90분으로 계획.** 완주하려 하지 않는다 |
-
 > **개막일을 피할 수 없는가**
 > **파리 체류가 10월 9일 낮에 끝난다.** 10/9는 체크아웃과 공항뿐이므로 **10/6·7·8 중 하루**다. Day 40(10/7)은 Vendanges, Day 41(10/8)은 Trocadéro와 송별 저녁이다. **10/6이 구조적으로 유일하다.**
 
@@ -879,12 +845,11 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 ### 실용
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 기간 | 2026/10/6 – 2027/1/31 |
 | 휴관 | **월요일** |
 | 예약 | **필수** (개막일) |
 | 체류 | 60–90분 (개막일 기준) |
-
 ## Musée du Louvre {{grade:essential|필수}}
 
 **Day 31 (9/28 월)**
@@ -919,13 +884,12 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 ### 실용 — 저장소 자료 기준
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 접근 | **Palais Royal–Musée du Louvre** 역 |
 | 관람 | **한 시대·한 동선만** 정하고 3시간 30분 상한 |
 | 체류 | 3–3.5시간 |
 | 요금 | 2026 비EEA 성인 **약 €32** 안내 {{badge:pending|예약 화면에서 재확인}} |
 | 주의 | 월요일 개관·화요일 휴관 등 요일 확인 · 대형가방 |
-
 관람 루트는 `Jason·Julia 추천 관람 루트`를 따른다.
 
 {{badge:pending|야간 개장 요일 확인 필요}}
@@ -948,18 +912,17 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Giverny와 어느 쪽인가
 
-> 📍 {{fact:giverny-fondation-claude-monet.address}} · 🚶 {{fact:giverny-fondation-claude-monet.getting_there}} · 🕐 {{fact:giverny-fondation-claude-monet.hours}} · 휴무 {{fact:giverny-fondation-claude-monet.closed}} · {{fact:giverny-fondation-claude-monet.booking}} · {{fact:giverny-fondation-claude-monet.price_range}}
+> 📍 {{fact:giverny-fondation-claude-monet.address}} · 🕐 {{fact:giverny-fondation-claude-monet.hours}} · 휴무 {{fact:giverny-fondation-claude-monet.closed}} · {{fact:giverny-fondation-claude-monet.booking}}
 
 Day 41의 선택이다.
 
 | | A. Giverny | B. Orangerie |
-|---|---|---|
+|---|---|--- |
 | 무엇 | **모네가 그린 정원** | **모네가 그린 그림** |
 | 이동 | 반나절 이상 | 지하철 |
 | 날씨 | 좌우된다 | 무관 |
 | 2026 특별성 | 평시와 같음 | **100주년 전시** |
 | 피로 | 크다 | 작다 |
-
 > **43일 중 41일차다.** 체력이 판단 기준이 될 가능성이 높다.
 > 그리고 **2026년에는 B안의 가치가 평소보다 크다.** 100주년 전시는 내년에 없다.
 
@@ -996,13 +959,12 @@ Day 41의 선택이다.
 ### 실용 — 저장소 자료 기준
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 접근 | **Richelieu–Drouot** 또는 **Palais Royal** |
 | 관람 | **Oval Room → Cour d'honneur → 서점·Passages** 를 하나로 잇는다 |
 | 체류 | 60–90분 |
 | 요금 | **Oval Room 무료.** 박물관·전시는 유료 가능 {{badge:pending|현행 확인}} |
 | 주의 | **열람 구역은 출입 제한이 있다** |
-
 > **무료로 볼 수 있는 것이 핵심이다**
 > 저장소 자료가 **Oval Room(타원 열람실)을 무료**로 적고 있다. 이 방을 보는 것이 이 방문의 목적이고, 그 부분에는 돈이 들지 않는다.
 > 다만 **연구자 전용 열람 구역은 따로 있고 출입이 제한된다.** 일반 관람 구역과 다르다.
@@ -1030,16 +992,14 @@ Day 41의 선택이다.
 
 ## 미술관 선택 원칙
 
-
 | 원칙 | 내용 |
-|---|---|
+|---|--- |
 | **하루 하나** | 큰 미술관은 하루에 하나 |
 | **2회 방문 금지** | 같은 미술관에 두 번 가지 않는다. 15박이어도. **예외 — Musée d'Orsay 만 2회**(9/29 상설 · 10/6 Cassatt 전 개막일). 10/7·10/8 은 Bourse de Commerce 방문 가능일이라 비워 둔다 (DEC-A12) |
 | **개막일 주의** | Day 39는 예외적으로 개막일이다 |
 | **월요일·화요일 확인** | 파리 미술관은 이 두 요일에 많이 닫는다 |
 | **예약이 기본** | 대형 전시는 현장 발권이 사실상 불가능 |
 | **Paris Museum Pass** | 15박에 유리할 수 있다. 다만 **특별전은 포함되지 않는다** — 이 일정의 주요 전시가 대부분 특별전이라 패스만으로는 덮이지 않는다 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
-
 > **⚠ 뮤지엄 패스와 특별전**
 > 상설 전시는 패스로 들어가지만 **특별전은 포함되지 않는다** — 복수 출처 확인. 세잔·카사트·모네·Remember Me 가 모두 특별전이라 **건별로 €12–18 을 따로 잡아야 한다.**
 
@@ -1070,11 +1030,10 @@ Day 41의 선택이다.
 
 ### 25.3 Grand Palais — Cézanne et nous
 
-> **요금** {{fact:grand-palais-cezanne-et-nous.price_adult}} · **운영** {{fact:grand-palais-cezanne-et-nous.hours}} · **휴관** {{fact:grand-palais-cezanne-et-nous.closed}}
-> **예약** {{fact:grand-palais-cezanne-et-nous.booking}} · **소요** {{fact:grand-palais-cezanne-et-nous.duration}} · **가는 법** {{fact:grand-palais-cezanne-et-nous.getting_there}}
+> **예약** {{fact:grand-palais-cezanne-et-nous.booking}}
 
-> **요금** {{fact:grand-palais.price_adult}} · **운영** {{fact:grand-palais.hours}} · **휴관** {{fact:grand-palais.closed}}
-> **예약** {{fact:grand-palais.booking}} · **소요** {{fact:grand-palais.duration}} · **가는 법** {{fact:grand-palais.getting_there}}
+> **운영** {{fact:grand-palais.hours}} · **휴관** {{fact:grand-palais.closed}}
+> **예약** {{fact:grand-palais.booking}} · **소요** {{fact:grand-palais.duration}}
 
 - 2026년 9월 23일–2027년 1월 17일.
 - Cézanne 약 70점과 후대 작가들의 작업을 병치.
@@ -1102,8 +1061,8 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 
 ### BnF Richelieu — 우선 추천
 
-> **요금** {{fact:bnf-richelieu-salle-ovale.price_adult}} · **운영** {{fact:bnf-richelieu-salle-ovale.hours}} · **휴관** {{fact:bnf-richelieu-salle-ovale.closed}}
-> **예약** {{fact:bnf-richelieu-salle-ovale.booking}} · **소요** {{fact:bnf-richelieu-salle-ovale.duration}} · **가는 법** {{fact:bnf-richelieu-salle-ovale.getting_there}}
+> **운영** {{fact:bnf-richelieu-salle-ovale.hours}} · **휴관** {{fact:bnf-richelieu-salle-ovale.closed}}
+> **예약** {{fact:bnf-richelieu-salle-ovale.booking}}
 
 - Oval Room은 무료.
 - 화요일 10:00–20:00, 수–일 10:00–18:00, 월요일 휴관 {{badge:pending|공식 확인}}
@@ -1113,13 +1072,12 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 ### 서점 선택
 
 | 서점 | 성격 | 추천 방식 |
-|---|---|---|
+|---|---|--- |
 | Galignani | 영어책·미술·역사, Rue de Rivoli | Louvre/Palais Royal 날 30분 |
 | Librairie Gallimard | 프랑스 문학·인문 | Saint-Germain 동선 |
 | Shakespeare and Company | 상징성·혼잡 | Notre-Dame 날 외관·짧은 입장 |
 | BnF 서점 | 전시·책·디자인 | Richelieu 관람 후 |
 | 동네 독립서점 | 생활체험 | 숙소 반경에서 한 곳 반복 방문 |
-
 ---
 
 ---
@@ -1140,11 +1098,10 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 ⚠ **2026년 9–10월 경기 일정은 조사하지 않았다** {{badge:pending|확인 필요}}.
 
 | 확인할 것 | 내용 |
-|---|---|
+|---|--- |
 | 홈경기 일정 | 체류 기간과 겹치는가 |
 | 티켓 | 판매 방식·시점 |
 | 귀가 | **경기 종료 후 대중교통 혼잡** |
-
 > **일정이 맞지 않으면 포기한다.** 이것 때문에 다른 일정을 흔들지 않는다.
 
 ---
@@ -1154,23 +1111,19 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 ### 27.1 오페라 비교표
 
 | 작품 | 작곡가·언어 | 공식 일정·길이 | 이번 여행 선택 | 피로 | 충돌 | 예매 |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|--- |
 | **Götterdämmerung** | Wagner · 독일어 | Bastille, **11/13·11/22** · 5h50/인터미션 1회 | {{grade:excluded|체류 중 공연 없음}} | {{badge:p0|매우 높음}} | {{badge:p0|10/8 날짜 불일치}} | {{grade:excluded|패키지 불가}} |
-
 **Götterdämmerung 정정 (기록):** 8/5 확인 당시 Paris Opera 공식 페이지와 실시간 공연 JSON에는 10/8 공연이 없었고, 11/13 18:00·11/22 14:00 두 회차만 있다. 따라서 10/8 Wagner + 10/9 Hamlet 조합은 피로도 이전에 날짜가 성립하지 않는다.
 
-
 | 날짜·시간 | 실시간 상태 | 판단 |
-|---|---|---|
+|---|---|--- |
 | 9/26 19:30 | 예매 가능, `Last seats` | 도착 다음 날이라 기본 제외 |
 | 10/4 14:30 | 예매 가능 | Arc 메인 레이스와 충돌, 제외 |
 | 10/10 19:30 | 예매 가능 | 이미 출국한 뒤, 제외 |
-
 ### 27.3 세 가지 오페라 패키지
 
 | 패키지 | 구성 | 상태·판단 |
-|---|---|---|
-
+|---|---|--- |
 세 패키지 모두 2026-08-10 비용 사유 취소로 폐기됐다. 예매 버튼도 함께 내렸다 —
 **취소한 공연의 예매 버튼이 살아 있는 것이 이 문서에서 가장 위험한 잔재였다.**
 저녁의 대체는 10/8 송별 저녁 하나이고, 공연비 절감분이 그 상향분이다.
@@ -1216,7 +1169,7 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 ### Versailles {{grade:priority|우선추천}} — Day 36 A안
 
 > **요금** {{fact:versailles.price_adult}} · **운영** {{fact:versailles.hours}} · **휴관** {{fact:versailles.closed}}
-> **예약** {{fact:versailles.booking}} · **소요** {{fact:versailles.duration}} · **가는 법** {{fact:versailles.getting_there}}
+> **예약** {{fact:versailles.booking}}
 
 **Day 36 (10/3 토)**
 
@@ -1231,13 +1184,12 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 #### 판단 기준
 
 | | Versailles | 15구 생활일 |
-|---|---|---|
+|---|---|--- |
 | 소요 | 하루 | 반나절 |
 | 혼잡 | **매우 높음** | 없음 |
 | 대표성 | 절대왕정의 정본 | 없음 |
 | 체력 | 큼 | 작음 |
 | 이 체류의 목적 | 어긋남 | **부합** |
-
 > **43일 중 36일차다.**
 > A/B 선택으로 남긴 것이 옳다. **현장에서 체력으로 결정한다.**
 > 다만 베르사유를 택한다면 **정원까지 보려 하지 말 것.** 궁전만으로도 하루가 찬다.
@@ -1245,12 +1197,11 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 #### 실용
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 접근 | RER C로 약 35분 |
 | 휴관 | **월요일** {{badge:pending|확인}} — Day 36은 토요일이라 무관 |
 | 예약 | 시간지정제 {{badge:pending|확인}} |
 | 혼잡 | **토요일은 최악에 가깝다** |
-
 ---
 
 ### Giverny {{grade:priority|우선추천}} — Day 41 A안
@@ -1266,11 +1217,10 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 **10월 8일이면 시즌 막바지다.** 정원의 상태가 여름과 다르다.
 
 | 시기 | 정원 |
-|---|---|
+|---|--- |
 | 5–6월 | 절정 (등나무·붓꽃) |
 | 7–8월 | 수련 |
 | **10월** | **가을 색. 꽃은 줄어 있다** |
-
 > **기대를 조정하라.** 그림 속 정원을 기대하면 어긋난다. 다만 **사람이 적다.**
 
 #### B안이 강한 해다
@@ -1317,27 +1267,24 @@ Day 41의 B안은 **오랑주리**다.
 **43일 여행에서 식당에 가장 많이 갈 수 있는 구간이자, 가장 적게 가도 되는 구간이다.**
 
 | 유형 | 횟수 | 비고 |
-|---|---:|---|
+|---|---:|--- |
 | 숙소 조리·조달 | 6–8회 | **기본값** |
 | 동네 식당 | 5–6회 | 저녁 |
 | 대표 식당 | 1–2회 | 오페라 없는 날 또는 공연 전 이른 저녁 |
 | 공연일 간단식 | 2–3회 | 공연 전후 |
-
 **매일 외식하면 16일을 못 버틴다.** `32.1 저녁 배분`이 이 문제를 다룬다.
 
 ### 시장 — 주간 패턴
-
 
 파리 시장은 **구역별로 요일이 다르다.** 숙소 생활권의 시장 요일을 도착 직후에 파악하는 것이 15박의 리듬을 만든다.
 
 {{badge:pending|숙소 확정 후 인근 시장 요일 조사 필요}}
 
 | 주간 패턴 | 내용 |
-|---|---|
+|---|--- |
 | 주 2–3회 | 동네 시장에서 채소·과일·치즈 |
 | 상시 | 빵집은 매일 |
 | 주 1회 | 슈퍼에서 생필품 |
-
 > **한 곳을 단골로 만든다**
 > 15박이다. 같은 빵집에 열 번 가면 응대가 달라진다. **이것이 관광과 생활의 차이다.**
 
@@ -1346,14 +1293,13 @@ Day 41의 B안은 **오랑주리**다.
 이 여행은 이미 카탈루냐·프로방스·리옹을 지나왔다. **파리 음식은 지역 요리가 아니라 집합이다.**
 
 | 유형 | 내용 |
-|---|---|
+|---|--- |
 | **빵집** | 바게트·크루아상. **매일 한 곳씩 바꿔 보는 것도 방법** |
 | **비스트로** | 파리의 기본 형식 |
 | **브라스리** | 늦게까지. 공연 후에 유용 |
 | **치즈** | 프로마주리. 프랑스 전역이 모인다 |
 | **와인** | **앞 구간에서 사지 않고 미룬 것을 여기서** |
 | **각국 음식** | 15박이다. 프랑스 음식만 먹을 이유가 없다 |
-
 > **앞 구간에서 미룬 구매를 여기서 한다**
 > Aix의 칼리송, Avignon의 론 와인, Lyon의 보졸레 — 전부 **운반 부담 때문에 파리로 미뤘다.** 파리에서 사면 이동이 공항까지뿐이다.
 
@@ -1376,7 +1322,7 @@ Day 41의 B안은 **오랑주리**다.
 > 가격은 **계획가(2026-08 조사)** — 메뉴·구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 
 | 식당 | 권역·성격 | 추천 주문 | 1인 계획가 | 예약 |
-|---|---|---|---:|---|
+|---|---|---|---:|--- |
 | **Le CasseNoix** | 15구, 계절 비스트로 | 3코스 선택메뉴 | 공식 저녁 €44부터 | 강권 |
 | **Le Bon Georges** | 9구, 제품·고기 중심 비스트로 | 제철 전채·스테이크·오늘의 요리 | €60–100 | 강권 |
 | **Bouillon Chartier Grands Boulevards** | 9구, 역사적 bouillon | œuf mayonnaise, blanquette, mousse | 공식 목표 €20 이하 | 보통 현장대기 |
@@ -1387,7 +1333,6 @@ Day 41의 B안은 **오랑주리**다.
 | **Bistrot Paul Bert** | 11구, 클래식 비스트로 | steak-frites·soufflé 계열 | €45–70 | 강권 |
 | **Le Servan** | 11구, 현대적 프랑스·아시아 영향 | 제철 소접시·메인 | €45–75 | 강권 |
 | **L’Avant Comptoir** | 6구, 서서 먹는 와인바 | 소접시·charcuterie | €25–50 | 보통 불가/현장 |
-
 > 가격은 계획범위이며 2026 실제 메뉴·서비스조건을 예약 직전에 확인한다.
 
 ### 32.3 공연일 식사
@@ -1404,14 +1349,13 @@ Day 41의 B안은 **오랑주리**다.
 ### 시장과 장보기
 
 | 시장 | 운영 기본 | 역할 |
-|---|---|---|
+|---|---|--- |
 | **Marché Monge** | 수·금 오전, 일요일 14:30까지 | 5구 숙소의 생활시장 |
 | **Marché Maubert** | 화·목 오전, 토요일 14:30까지 | Notre-Dame·Latin Quarter 동선 |
 | **Enfants Rouges** | 화–일, 월 휴무 | Marais 점심·국제음식 |
 | **Marché Convention** | 화·목·일 | 15구 생활시장 1순위 |
 | **Marché Grenelle** | 수·일 | Motte-Picquet 숙소권 |
 | **Aligre–Beauvau** | 화–일 중심, 월 휴무 | 11·12구 생활체험 |
-
 ### 주간 구매 패턴
 
 **첫 장보기 — 9/24 최소 장보기, 9/25 생활 장보기**
@@ -1426,27 +1370,24 @@ Day 41의 B안은 **오랑주리**다.
 ### 시장에서 살 것
 
 | 용도 | 추천 |
-|---|---|
+|---|--- |
 | 바로 먹기 | quiche, pâté en croûte, rotisserie chicken, 샐러드, 타르트 |
 | 숙소 조리 | 달걀, 버섯, 토마토, 샐러드채소, 파스타, 수프 |
 | 샌드위치 | jambon blanc/cru, comté, chèvre, cornichon |
 | 제철 과일 | 포도, 무화과, 배, 사과, 자두 |
 | 선물 | 차·초콜릿·통조림·마른 향신료·작은 잼 |
 | 주의 | 냉장치즈·버터를 너무 일찍 선물용으로 사지 않음 |
-
 ---
 
 ### 운동·러닝·수영
 
-
 **15박이다. 이 구간에서 운동 리듬을 회복할 수 있다.**
 
 | 항목 | 내용 |
-|---|---|
+|---|--- |
 | 러닝 | 강변·공원 {{badge:pending|숙소 인근 코스 확인}} |
 | 강도 | **43일 중 28–43일차.** 무리하지 않는다 |
 | 수영 | 시립 수영장 {{badge:pending|위치·요금·시간 확인}} |
-
 > **아침 러닝이 이 체류의 리듬을 만든다.** '표준 하루'가 아침 운동으로 시작한다.
 
 ---
@@ -1456,13 +1397,12 @@ Day 41의 B안은 **오랑주리**다.
 ### 33.1 Jason 러닝
 
 | 코스 | 거리 조절 | 특징 |
-|---|---:|---|
+|---|---:|--- |
 | Luxembourg 순환 | 4–7km | 5구 숙소에서 가장 반복하기 좋음 |
 | Seine 좌안 | 5–10km | 평탄·경관, 출퇴근 보행자 주의 |
 | Parc Montsouris | 4–8km | 언덕과 녹지, 생활형 |
 | Champ-de-Mars–Île aux Cygnes | 5–9km | 15구 숙소에 적합 |
 | Canal Saint-Martin | 5–8km | 일요일 산책과 결합 |
-
 ### 33.2 강도
 
 - 주 3회 30–50분.
@@ -1472,11 +1412,10 @@ Day 41의 B안은 **오랑주리**다.
 ### 33.3 Julia 선택 수영
 
 | 시설 후보 | 적합 숙소권 | 판단 |
-|---|---|---|
+|---|---|--- |
 | Piscine Pontoise | 5구 | 역사적 실내수영장, 생활권과 자연스럽게 결합 |
 | Piscine Blomet | 15구 | 15구 숙소에서 현실적 |
 | Piscine Keller | 15구 | 50m 풀 장점, 2026 재개장 후 시간표 확인 |
-
 - 9–10월 자유수영 시간표는 파리시 공식 실시간표에서 숙소 확정 후 확인.
 - 수영모·수영복 규정, 락커·입장권을 전날 확인.
 - 16일 동안 1–2회면 충분하다.
@@ -1486,7 +1425,7 @@ Day 41의 B안은 **오랑주리**다.
 ## 당일치기·우천·피로 대안
 
 | 원래 일정 | 대체안 |
-|---|---|
+|---|--- |
 | Montmartre | BnF·Passages couverts·9구 카페 |
 | Versailles | 15구 생활일·Grand Palais·서점 |
 | Giverny | Orangerie·Tuileries·Saint-Germain |
@@ -1495,7 +1434,6 @@ Day 41의 B안은 **오랑주리**다.
 | 미술관 파업·휴관 | 동네시장·서점·건축산책 |
 | 누적피로 | 10/5 오후·FLV·근교 1곳부터 삭제 |
 | 공연취소 | 비스트로 저녁·Seine 야간산책 |
-
 ### 가장 먼저 삭제할 것
 
 1. Fondation Louis Vuitton 신규전
@@ -1519,11 +1457,10 @@ Day 41의 B안은 **오랑주리**다.
 `37. 우천·파업·피로 대체안`에 `끝까지 유지할 것` 항목이 있다. 그 원칙을 명시한다.
 
 | # | 항목 | 이유 |
-|---|---|---|
+|---|---|--- |
 | 2 | **Day 37 Qatar Prix de l’Arc** | 이번 체류의 스포츠 고정행사 |
 | 3 | **Day 40 Vendanges** | 날짜가 고정된 지역축제 |
 | 5 | **Day 42 출국** | {{badge:p0|P0}} 오후 도심 일정 금지 |
-
 **가장 먼저 삭제할 것**은 별도 항목이 있다. 순서를 유지한다.
 
 ## 대안 A — 비 오는 날
@@ -1531,13 +1468,12 @@ Day 41의 B안은 **오랑주리**다.
 파리는 9–10월에 비가 잦다.
 
 | 대체 대상 | 대안 | 비고 |
-|---|---|---|
+|---|---|--- |
 | Day 33 Fashion Week 공개동선 | **Palais de Tokyo 일대 카페·파사주** | 공식 공개행사가 없으면 실내 관찰로 축소 |
 | Day 36 유연한 문화일 | **실내 미술관 하나** | 하루 한 곳 원칙 |
 | Day 38 월요일 모듈 | **파사주(passages couverts)** | 19세기 유리 지붕 상가. **비 오는 날의 정답** |
 | Day 40 Vendanges | **실내 카페·Musée de Montmartre 선택** | 축제의 야외 체류를 단축 |
 | 동네 걷기 전반 | 서점·카페 | `26. 도서관·서점` |
-
 > **파사주가 이 체류의 우천 자산이다**
 > 19세기 파리의 유리 지붕 상가들이 2구·9구 일대에 남아 있다. **비를 맞지 않고 여러 개를 이어 걸을 수 있다.**
 > 동선에 걸리는 셋은 **Galerie Vivienne**(1823년 건립·1826년 개관, 매일 08:30–20:30) · **Passage des Panoramas**(가장 오래된 축, 매일 06:00–24:00, 본 갤러리 + 부속 5개) · **Passage Jouffroy**(1847년, 철골 구조, 매일 07:00–21:30) 다. 셋 다 Montorgueil·Grands Boulevards 권역이라 한 번에 묶인다. {{badge:pending|2026-08 확인 · 출발 전 재확인}}
@@ -1547,12 +1483,11 @@ Day 41의 B안은 **오랑주리**다.
 프랑스에서 교통 파업은 드물지 않다.
 
 | 영향 | 대응 |
-|---|---|
+|---|--- |
 | 지하철 일부 노선 정지 | **걷는다.** 파리는 걸어서 통과 가능한 크기다 |
 | RER 정지 | **근교 포기** — Day 36·41을 시내 B안으로 |
 | 전면 파업 | 동네 중심 하루로 전환 |
 | 항공 파업 | **Day 42. 가장 위험** |
-
 > ⚠ **Day 42 출국일 파업이 최악의 시나리오다** {{badge:p0|P0}}
 > 대응은 하나뿐이다 — **출발 전날 항공편 상태를 확인하고, 공항에 평소보다 일찍 간다.**
 > 파업 예고는 보통 며칠 전에 나온다. **체류 후반에 뉴스를 확인하는 습관**을 들인다.
@@ -1562,12 +1497,11 @@ Day 41의 B안은 **오랑주리**다.
 **43일 여행의 마지막 구간이다.** 이것이 가장 현실적인 대안 사유다.
 
 | 신호 | 대응 |
-|---|---|
+|---|--- |
 | 아침에 일어나기 어렵다 | **그날의 큰 것 하나를 뺀다** |
 | 미술관에서 집중이 안 된다 | 1시간에 나온다. 완주하지 않는다 |
 | 저녁에 나가기 싫다 | **숙소식으로 바꾼다** |
 | 이틀 연속 그렇다 | **하루를 통째로 비운다** |
-
 > **15박이라 비울 여유가 있다.** 이것이 이 체류 설계의 안전장치다.
 > Day 38 회복일 외에 하루를 더 비워도 일정이 무너지지 않는다.
 
@@ -1578,7 +1512,7 @@ Day 41의 B안은 **오랑주리**다.
 ### 교체 가능한 날
 
 | Day | 원안 | 교체 가능 대상 |
-|---|---|---|
+|---|---|--- |
 | 29 (토) | Saint-Germain·Luxembourg | 다른 가벼운 동네 |
 | 30 (일) | Tuileries·Palais Royal·Opéra 지구 | 비 오면 Garnier/파사주 |
 | 31 (월) | 세탁·북마레 | 다른 주거지 |
@@ -1588,18 +1522,16 @@ Day 41의 B안은 **오랑주리**다.
 | 38 (월) | Arc 뒤 회복 | 구역 자유, 강도는 유지 |
 | 39 (화) | Canal·Belleville | 저녁 무예약 — 산책만 |
 | 41 (목) | Trocadéro·Chaillot | 송별 저녁 — 장소 확정 후 예약 |
-
 ### 교체 불가한 날
 
 | Day | 이유 |
-|---|---|
+|---|--- |
 | 28 (금) | **도착** — 고정행사 금지 |
 | 33 (수) | **Fashion Week 공개동선 반일** — 공식 팝업이 없어도 도시 관찰로 유지 |
 | 37 (일) | **Qatar Prix de l’Arc 메인 레이스** — 저녁까지 비움 |
 | 40 (수) | **Vendanges 낮 방문** — 추가 오페라 금지 |
 | 42 (금) | **OZ502 출국일** — 저녁 없음 |
 | 43 (토) | **귀국** — Grand Défilé·공연 금지 |
-
 ## 대안 E — 추가하고 싶어질 것들
 
 **15박이면 "이것도 넣을까"가 반드시 생긴다.** 아래는 그 후보와 판단이다.
@@ -1607,17 +1539,16 @@ Day 41의 B안은 **오랑주리**다.
 ### 넣어도 되는 것
 
 | 항목 | 조건 |
-|---|---|
+|---|--- |
 | **Sainte-Chapelle** | 노트르담과 같은 시테섬. Day 29에 붙일 수 있다 {{badge:pending|운영·요금 확인}} |
 | **파사주** | 우천 시 · Day 38 |
 | **Musée Marmottan Monet** | 「풍경의 역사들, 모네에서 호크니까지」 9/24–2027/1/31 · 모네를 더 볼 때 |
 | **동네 시장 추가** | 언제든 |
 | **일요일 오르간 연주** | 무료 · 일요일 16시 |
-
 ### 넣지 말아야 할 것
 
 | 항목 | 이유 |
-|---|---|
+|---|--- |
 | **에펠탑 등정** | 대기가 길다. **아래에서 보는 것으로 충분** |
 | **개선문·샹젤리제** | 관광 밀도 최고. 이 체류의 성격과 어긋남 |
 | **크루즈** | 15박이다. 걸어서 강변을 여러 번 본다 |
@@ -1625,7 +1556,6 @@ Day 41의 B안은 **오랑주리**다.
 | **런던 당일치기** | 유로스타. **43일 중 이 시점에 국경을 넘지 않는다** |
 | **미술관 세 번째·네 번째** | 하루 하나 원칙 위반 |
 | **10/4 Arc 뒤 야간행사** | 근전일의 저녁은 회복을 위해 비운다 |
-
 > **에펠탑에 대하여**
 > 안 올라가는 것이 이 체류의 성격에 맞는다. 원한다면 10/8 낮 Trocadéro 외관 동선과 그날 일몰 점등 조망으로 충분하다.
 
@@ -1634,13 +1564,12 @@ Day 41의 B안은 **오랑주리**다.
 앞 구간에서 파리로 미룬 것들이다.
 
 | 항목 | 출처 | 처리 |
-|---|---|---|
+|---|---|--- |
 | **세잔 작품 관람** | Aix 구간 | 10/3 유연한 문화일에 선택 가능 |
 | 반 고흐 작품 | Avignon 구간 (아를 미방문) | 9/29 Orsay 선택 시 상설에서 연결 |
 | 와인 구매 | Aix·Avignon·Lyon | 파리에서 구입 |
 | 칼리송 등 과자 | Aix 구간 | 파리에서 구입 |
 | 기념품 전반 | 전 구간 | **운반이 공항까지뿐** |
-
 > **오르세 상설에 반 고흐가 있다.** 9/29 Orsay를 선택하면 상설에서 연결한다.
 > Avignon 구간에서 아를(반 고흐의 1888–89년)을 대안으로만 남겼는데, **그 시기 작품의 상당수가 오르세에 있다** {{badge:pending|확인 권장}}.
 
@@ -1657,14 +1586,13 @@ Day 41의 B안은 **오랑주리**다.
 **도심 일정을 넣지 않는다.**
 
 | 시간 | 내용 |
-|---|---|
+|---|--- |
 | 08:00–10:00 | 아침·최종 포장 |
 | 10:00–11:00 | 체크아웃·짐 인수 |
 | 11:00–13:00 | 숙소 반경 산책·가벼운 점심 |
 | 14:00 이전 | 안전여유를 둔 공항 이동 |
 | 16:10까지 | 국제선 3시간 전 도착·détaxe |
 | **19:10** | **OZ502 CDG→인천 출국 (확정)** |
-
 > **파리는 여기서 끝난다.**
 > 마지막 오후에 새로운 것을 보려 하지 말 것. 남는 두세 시간은 여유가 아니라 교통장애용 완충이다.
 
@@ -1683,12 +1611,11 @@ Fashion Week 경험 1회, 스포츠 1회, 지역축제 1회, 서로 다른 성�
 ### 날짜순 이벤트 타임라인
 
 | 날짜·시간 | 이벤트 | 상태 | 피로 | 충돌 | 예매 우선 |
-|---|---|---|---|---|---|
+|---|---|---|---|---|--- |
 | 9/30 오후 | Paris Fashion Week 공개동선 반일 | {{badge:p0|고정 경험}} | {{badge:rest|중}} | {{badge:rest|야간 없음}} | {{badge:pending|공개행사 재확인}} |
 | 10/4 종일 | Qatar Prix de l’Arc de Triomphe · ParisLongchamp | {{badge:p0|고정 스포츠}} | {{badge:p0|높음}} | {{badge:rest|저녁 비움}} | {{badge:p0|3순위}} |
 | 10/7 낮–이른 저녁 | Fête des Vendanges de Montmartre | {{badge:p0|고정 축제}} | {{badge:rest|중}} | {{badge:rest|오페라 제외}} | {{badge:pending|예약 오픈 재확인}} |
 | 10/9 19:10 | OZ502 CDG→인천 출국 | {{badge:p0|확정}} | {{badge:p0|높음}} | {{badge:p0|당일 저녁 일정 전면 제외}} | — |
-
 ### Fashion Week 공개 접근 원칙
 
 FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–10/6**이다. 8/5 현재 FHCM의 9/30 공개 이벤트 목록은 비어 있고, 초청제 쇼와 업계 쇼룸을 일반 입장처럼 쓰지 않는다. 따라서 9/30은 **Palais de Tokyo 건축·공공공간 → Avenue Montaigne → Rue Saint-Honoré → Palais Royal**의 거리 관찰 반일로 운영한다. 공식 기관이나 브랜드가 일반 공개 전시·팝업을 발표하면 같은 동선의 한 곳만 교체해 넣고, 발표가 없으면 외부 관찰과 카페로 완결한다.
@@ -1703,30 +1630,27 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 
 ### 예약 게이트
 
-
 | 순위 | 대상 | 이유 | 상태 |
-|---:|---|---|---|
+|---:|---|---|--- |
 | 3 | **Qatar Prix de l’Arc 10/4** | France Galop 공식판매 | `BOOK NOW` 확인 |
 | 5 | **Clos Montmartre 내부방문** | 공식 예약 개시 감시 | 9/14 예약 오픈 예고 |
 | 6 | **교회공연** | 작품·연주자·날짜 검증 후 | O2에서만 추가 |
-
 항공·숙소·도시간 이동은 여행 전체 P0로 별도 관리한다. 파리 문화 예약은 위 순서를 바꾸지 않는다.
 
 | 게이트 | 확정 내용 | 실패 시 기본대안 |
-|---|---|---|
+|---|---|--- |
 | 숙소 확정 | 5구 또는 15구 생활권, 세탁·주방·엘리베이터·소음 | 9구는 교통과 야간동선 확인 후 3순위 |
 | 철도 확정 | Lyon→Paris 도착시각 | 도착일 외식과 산책 축소 |
 | 스포츠 | Qatar Prix de l’Arc 10/4 | 취소 시 10/4 가벼운 산책·스케치 회복모듈 |
 | 조건부 행사 | Clos Montmartre 내부방문 (공연은 2026-08-10 취소) | 포도밭은 외관·축제만 유지 |
 | 미술관 | 9/29 Orsay · 10/3 선택관(Orangerie 가능) | 시간지정 실패 시 동네·서점 모듈 |
 | 출발 72시간 전 | CDG 교통·보안·파업 | 택시/공식차량 조기출발 |
-
 ---
 
 ### 예약카드
 
 | 우선순위 | 항목 | 목표일 | 조치 |
-|---:|---|---|---|
+|---:|---|---|--- |
 | P0 | 파리 숙소 | 9/24–10/9, 15박 | **기존 예약 날짜 변경 필요(9/24 체크인·10/9 체크아웃)**, 총액·세탁·주방·엘리베이터 확인 |
 | P0 | Lyon→Paris TGV | 9/24 | Gare de Lyon 도착편 우선 |
 | P0 | CDG 이동·항공 | 10/9 OZ502 19:10 (확정) | 터미널·공항 이동수단 확인 |
@@ -1735,7 +1659,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | WATCH-5 | **Clos Montmartre 내부방문** | **10/7** | 공식 예약 오픈 감시 |
 | VERIFY-6 | **교회공연** | 날짜 미정 | 정확한 프로그램·날짜·공식판매처 검증 뒤 O2에만 추가 |
 | P2 | Louvre·Orsay/Orangerie | 9/29 또는 10/3 | 하루 한 곳, 시간지정 필요 시 예약 |
-
 ---
 
 ### 치안과 일상 안전
@@ -1764,18 +1687,17 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 15박 구조 (2인)
 
 | 항목 | 특징 |
-|---|---|
+|---|--- |
 | **숙소 15박** | **이 구간 최대 지출.** 43일 중 가장 긴 체류 |
 | 교통 | 정기권 2주 + 근교 2회 |
 | **전시·미술관** | **세잔·카사트·루브르 등 5–6곳** |
 | 공연 | 기본 오페라 2회, 현대무용 1회 선택 |
 | 식사 | 외식 8–10회 + 조달 |
 | **귀국 관련** | 기념품·와인·초과 수하물 |
-
 ### 입장료 — 확인된 값
 
 | 대상 | 요금 | 상태 |
-|---|---|---|
+|---|---|--- |
 | **Notre-Dame 본당** | **무료** | 확인 |
 | Notre-Dame 종탑 | **€16** | 확인 |
 | Notre-Dame 고고학 지하실 | **€9** | 확인 |
@@ -1785,7 +1707,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | Louvre | — | {{badge:pending|재확인}} |
 | Orangerie | — | {{badge:pending|재확인}} |
 | Versailles / Giverny | — | {{badge:pending|재확인}} |
-
 ### Paris Museum Pass 판단
 
 15박에 유리해 보이지만 **함정이 있다.**
@@ -1799,27 +1720,25 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 절감 여지
 
 | 항목 | 방법 |
-|---|---|
+|---|--- |
 | **무료 자산** | 노트르담 본당·일요일 오르간·동네 걷기·시장 |
 | **자가 조달** | 15박 중 절반 이상 |
 | 교통 정기권 | 낱장 대비 |
 | Day 36·41 B안 | 근교 대신 시내 |
 | 미리 예매 | 전시·공연 |
-
 ### 예산 증가 요인
 
 | 항목 | 주의 |
-|---|---|
+|---|--- |
 | **앞 구간에서 미룬 구매** | 와인·기념품이 여기 몰린다 |
 | **초과 수하물** | 43일치 + 구매품. **항공사 규정 확인** |
 | 공항 이동 | Day 42 |
-
 ---
 
 ## 39. 예상 경비 — 파리 2인 15박 계획범위
 
 | 항목 | 계획 기준 |
-|---|---:|
+|---|---: |
 | 숙박 | 약 500만 원 내외 |
 | 시내교통 | Weekly 2주 + 첫 주말 개별티켓 |
 | 미술관·전시 | 2인 6–8개 유료시설 기준 중간예산 확보 |
@@ -1827,7 +1746,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 축구 | 공식 일반표 또는 Ticketplace 가격 확정 후 별도 |
 | 근교 | Versailles·Giverny 각각 독립 예산, 취소 시 절감 |
 | 저녁식사 | 일반 7회 + 특별 2회 + 숙소식 4–5회 |
-
 > 숙박 실시간가격과 공연 좌석등급을 확정하기 전에는 총액을 단일 숫자로 고정하지 않는다. 가장 큰 조정 레버는 숙소, 공연 좌석, 근교 2곳째다.
 
 ---
@@ -1837,7 +1755,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 2026년 특별 이벤트와 변동요인
 
 | 이벤트 | 기간 | 일정 영향 |
-|---|---|---|
+|---|---|--- |
 | Paris Fashion Week Women SS27 | 9/28–10/6 | **9/30 공개동선 반일**. 쇼는 초청제 중심, 공개 팝업은 발표 후만 추가 |
 | Qatar Prix de l’Arc de Triomphe | 10/3–4 | **10/4 메인 레이스 고정**, 저녁 비움 |
 | Fête des Vendanges de Montmartre | 10/7–11 | **10/7 낮–이른 저녁 고정**, 내부방문 예약 감시 |
@@ -1848,7 +1766,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | Bourse ‘Remember Me’ | 10/7 개막 | Vendanges 와 겹치므로 기본안 제외, 10/3 다른 전시로만 선택 |
 | Fondation Louis Vuitton Gustave Fayet | 10/9 개막 | **관람 불가 — 그날 19:10 출국** |
 | PSG UCL | 추첨·일정 확정 대기 | 기본안에서 제외. 스포츠 중심 대체안에서만 검토 |
-
 ---
 
 ### 출발 전 확인목록
@@ -1934,7 +1851,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ## 검증 상태 — 보강본 근거
 
 | 항목 | 상태 |
-|---|---|
+|---|--- |
 | **Cézanne et nous — 그랑팔레 2026/9/23–2027/1/17** | **복수 출처 확인** · 180점 중 세잔 70점 · 티켓 개시 |
 | **Mary Cassatt — 오르세 2026/10/6–2027/1/31** | **복수 출처 확인** (오르세 공식 포함) · 약 80점 · 사후 100주년 |
 | **Monet, peindre le temps — 오랑주리 2026/9/30–2027/1/25** | 확인 |
@@ -1989,7 +1906,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | **오르세 상설의 반 고흐 소장** | **[확인 권장]** |
 | 프랑스 파업 경향 | 일반적 서술 |
 | 에펠탑·개선문 혼잡 | 일반적 서술 |
-
 ## 실행지도 · 현장 사용
 
 - [대화형 HTML 지도](../../ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.html)
@@ -2004,14 +1920,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Gare de Lyon 도착, ‘관광객’이 아니라 ‘16일 거주자’가 되는 날 {{badge:rest|도착}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 오전–오후 | Lyon Part-Dieu → Paris Gare de Lyon | 정확한 TGV 확정 후 문전시간 고정 |
 | 도착 후 45–75분 | 숙소 이동·체크인 | 15박 수하물이므로 5구·15구 모두 택시가 합리적 |
 | +60분 | 객실 점검 | 주방, 세탁기/세탁실, 냉장고, 환기, 엘리베이터, 쓰레기 배출 확인 |
 | 17:00 전후 | 슈퍼·빵집 첫 장보기 | 아침·물 등 필수품만 구매. 시장 방문 전 대량구매 금지 |
 | 18:30–19:15 | 숙소 반경 800m 산책 | 약국·세탁·시장·메트로·택시 승강장 위치만 파악 |
 | 19:30 이후 | 숙소식 또는 가까운 식당 | 긴 이동일에는 유명식당 예약 금지 |
-
 **오늘의 필수:** 체크인·짐정리·최소 장보기·귀가길 학습. 대형 미술관·공연·근교 일정은 넣지 않는다.
 **오늘의 피로도:** 3/5.
 
@@ -2026,14 +1941,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 세탁과 생활권 적응 — 새로 생긴 하루를 여행 회복에 쓰기
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:30–10:00 | 늦은 아침·컨디션 확인 | 알람 없이 시작하고 장거리 이동 피로를 기록 |
 | 10:00–12:00 | 세탁·짐 배치 | 15박 동안 반복할 수납·세탁 루틴을 정함 |
 | 12:00–14:00 | 숙소식·휴식 | 남은 식재료와 필요한 생활용품 목록 작성 |
 | 14:00–16:30 | 슈퍼·빵집·약국·세탁소 파악 | 반경 800m 안에서만 이동. 각 시설 영업시간을 현장에서 사진으로 남긴다 {{badge:pending|현장 확인}} |
 | 16:30–18:00 | 카페 또는 공원 벤치 | 피로하면 숙소로 즉시 귀환 |
 | 18:30 이후 | 가까운 저녁 또는 숙소식 | 예약형 식당·공연 없음 |
-
 **오늘의 필수:** 생활권을 한 번 더 걸어 낮과 저녁의 귀가동선을 확인한다.
 **오늘의 피로도:** 1–2/5.
 
@@ -2043,11 +1957,10 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 
 ## 7. Day 3 — 9월 26일 토요일
 
-
 ### Saint-Germain, Luxembourg, Seine — 도착 다음 날의 가벼운 첫 산책 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:30–10:30 | 늦은 아침·가벼운 러닝/산책 | 장거리 이동 다음 날, 속도·거리 욕심 금지 |
 | 11:00–12:30 | Saint-Germain 서점·카페 | 쇼핑보다 생활 리듬 파악 |
 | 12:30–14:00 | 가벼운 점심 | 긴 대기 회피 |
@@ -2055,7 +1968,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 16:00–18:00 | Seine 좌안 산책 | 날씨와 피로에 따라 Pont Neuf 전후에서 종료 |
 | 16:30–17:30 | **Notre-Dame de Paris** | 입장 {{fact:notre-dame-de-paris.price_adult}} · 예약 {{fact:notre-dame-de-paris.booking}} · 개관 {{fact:notre-dame-de-paris.hours}} |
 | 19:00 이후 | 숙소식 또는 가까운 동네식당 | 공연 없음 — 무예약 저녁 |
-
 **피로도:** 2–3/5. **고정행사:** 없음. 9/26 오페라는 도착 다음 날이라는 이유로 기본안에서 제외한다.
 **우천 대체:** Saint-Germain 서점·카페를 중심으로 압축한다.
 
@@ -2070,14 +1982,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Tuileries, Palais Royal, Opéra 지구 — 고전적 파리의 방향잡기 {{badge:rest|도시 방향잡기}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:00–10:00 | 느린 아침 | 전날 보행 피로 확인 |
 | 10:30–12:00 | Tuileries Garden | 정원축과 Louvre 외관을 보되 내부 입장 없음 |
 | 12:00–13:30 | Palais Royal 주변 점심 | 혼잡한 중심가에서 체류시간 통제 |
 | 13:30–15:30 | Palais Royal 정원·회랑 | 스케치 20–30분 포함 |
 | 15:30–17:30 | Avenue de l’Opéra·Opéra 지구 | Palais Garnier 외관, 당일 입장 가능 시에만 짧은 주간 방문 |
 | 18:30 이후 | 숙소 귀환·가벼운 저녁 | 무예약 저녁 |
-
 **피로도:** 3/5. **고정행사:** 없음. Garnier 내부가 불가하면 외관과 Opéra 지구 산책만으로 완결한다.
 
 ### 꼭 해볼 것
@@ -2091,14 +2002,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 운동, 세탁, 쇼핑 — Fashion Week가 시작되는 생활일 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:00–09:00 | 운동 | Jason gym 또는 러닝, Julia 산책/선택 수영 |
 | 09:30–11:30 | 세탁·냉장고 정리 | 첫 주 생활업무를 미루지 않음 |
 | 12:00–13:00 | 숙소 점심 | 오후 예약 없음 |
 | 13:30–16:30 | 북마레 또는 숙소권 주거지 산책 | 독립상점·생활상권, 새 명소 추가 금지 |
 | 16:30–18:00 | 필요한 쇼핑·장보기 | Fashion Week 혼잡이 심하면 숙소권으로 회귀 |
 | 저녁 | 숙소식·일찍 귀가 | **Paris Fashion Week 개막일**이지만 초청제 쇼를 일정화하지 않음 |
-
 **피로도:** 2/5. **성격:** 회복을 겸한 생활일. Fashion Week의 교통·식당 혼잡은 변수로만 기록한다.
 
 ---
@@ -2112,14 +2022,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 > Orangerie 를 보고 싶으면 **10/3 선택 문화일**로 옮긴다 — 그날은 토요일이다.
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:30–10:00 | 느린 아침·카페 | 예약시간 전 충분히 쉬기 |
 | 10:00–12:00 | 숙소업무·가벼운 산책 | 박물관 전 체력 보존 |
 | 12:00–13:00 | 숙소 또는 근처 점심 | 대형관 안에서 끼니를 미루지 않음 |
 | 13:30–17:00 | **Musée d’Orsay** | 시간지정권, 3시간 30분 상한. 화요일 개관 (월요일 휴관) |
 | 17:00–18:00 | Seine 또는 Tuileries에서 완충 | 두 번째 미술관 금지 |
 | 저녁 | 숙소식 또는 동네 저녁 | 고정행사 없음 |
-
 **피로도:** 3–4/5. Orsay를 택하면 인상주의 또는 19세기 조각 한 권역만 추가한다.
 
 ### 금지 규칙
@@ -2132,7 +2041,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Paris Fashion Week — 공개 공간으로 읽는 패션 반일 {{badge:p0|고정 경험}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:00–10:30 | 느린 아침·숙소업무 | 다음 날 오페라를 위해 수면 보존 |
 | 11:30–12:30 | 가벼운 점심 | 혼잡한 권역 진입 전 식사 |
 | 13:00–14:00 | **Palais de Tokyo 권역** | 건축·공공공간·거리 분위기. 전시는 날짜·장소가 공식 확인된 경우에만 |
@@ -2140,7 +2049,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 15:30–17:00 | Rue Saint-Honoré | 공개 팝업이 공식 발표됐을 때 한 곳만 교체 |
 | 17:00–18:00 | Palais Royal | 회랑·정원에서 마무리, 스케치·카페 |
 | 18:30 이후 | 숙소 귀환·가벼운 저녁 | **Philharmonie·야간행사 제외** |
-
 **피로도:** 3/5. 8/5 현재 FHCM은 9/30 일반 공개행사를 게시하지 않았다. 초청제 쇼·SPHERE 업계 쇼룸을 일반 입장처럼 표시하지 않는다.
 
 ---
@@ -2149,7 +2057,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Bastille 동네의 날 — 낮 산책과 무료 저녁 산책 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:30–09:30 | 가벼운 운동 | Jason 러닝/gym, Julia 산책/선택 수영 |
 | 09:30–11:00 | 샤워·느긋한 아침 | 공연일 오전을 서두르지 않음 |
 | 11:00–12:30 | 휴식·작은 장보기 | 낮 관광을 위해 생활업무를 짧게 |
@@ -2157,7 +2065,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 14:00–16:30 | **Place des Vosges→Bastille 동네 산책** | 정원·골목·운하 초입 중 체력에 맞춰 축소 |
 | 17:00–19:00 | **Coulée verte 또는 Seine 야경 산책** | Bastille에서 바로 진입 — 무료, 체력에 맞춰 축소 |
 | 19:00 이후 | 동네 저녁 | 무예약 |
-
 **피로도:** 2–3/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다.
 
 ---
@@ -2166,7 +2073,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 시장, 서점, 카페, 스케치 — 오페라 다음 날의 회복 {{badge:rest|회복}} {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:30–10:30 | 늦은 기상·느린 아침 | 정식운동 생략 |
 | 11:00–12:00 | 숙소권 시장 | 필요한 식재료만 구매 |
 | 12:00–13:30 | 시장식 또는 숙소 점심 | 줄이 길면 즉시 대체 |
@@ -2174,7 +2081,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 15:30–17:00 | Jason 스케치 / Julia 산책·카페 | 같은 권역에서 각자 회복 |
 | 17:00 이후 | 숙소 귀환·세탁 또는 자유 | **고정 저녁행사 없음** |
 | 14:00–16:00 | **Grand Palais — Cezanne et nous** | {{fact:grand-palais.note}} · Aix 에서 본 작업실·풍경의 결과물을 본다 |
-
 **피로도:** 1–2/5. 회복과 생활 자체가 목적이므로 재즈·연극·교회공연을 추가하지 않는다.
 
 ### 꼭 해볼 것
@@ -2188,14 +2094,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 박물관, 서점, 동네 — Arc 전날의 유연한 문화일 {{grade:optional|선택 문화}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:00–10:30 | 느린 아침 | 다음 날 이른 이동을 고려 |
 | 11:00–12:30 | 서점 또는 숙소권 시장 | 예약 없는 선택 |
 | 12:30–14:00 | 점심·휴식 | 오후 한 권역만 |
 | 14:00–17:00 | 박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나 | 미완료 우선, 3시간 상한 |
 | 17:00 이후 | 장보기·숙소식 | Arc 준비·교통 확인, 야간행사 없음 |
 | 10:00–13:00 | **Musée du Louvre** | 요금 {{fact:musee-du-louvre.price_adult}} · 휴관 {{fact:musee-du-louvre.closed}} · 드농관 한 축만. **토요일 혼잡 — 개장 시각에 도착한다. 대안 Day 31(9/28 월)** |
-
 **피로도:** 2–3/5. Arc 토요일 프로그램은 기본 일정에서 제외한다.
 
 이 날은 장소가 아니라 **여백**이다. 체류 32일째, 다음 날은 종일 경마장 — 이 사이에 끼운
@@ -2210,16 +2115,15 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Qatar Prix de l’Arc de Triomphe — 메인 레이스 데이 {{badge:p0|고정 스포츠}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:00–09:00 | 아침·날씨·티켓·교통 최종 확인 | 공식 개장·경주시간에 맞춰 이동 역산 |
 | 09:00–10:30 전후 | ParisLongchamp 이동 | **무료 셔틀**을 쓴다 — 메트로로 Porte Maillot(1호선) 또는 Porte d'Auteuil(10호선)까지 간 뒤 경마장행 무료 셔틀버스. 환승·입장 대기 여유 |
 | 오전–오후 | **Qatar Prix de l’Arc de Triomphe 메인 레이스 데이** | 경기장 식사·휴식·관람을 포함한 거의 종일 일정 |
 | 종료 후 | 혼잡을 감안해 숙소 귀환 | 추가 명소·쇼핑 금지 |
 | 저녁 | 숙소식·완전 휴식 | **오페라·식당 예약·야간행사 없음** |
-
 > **경마장까지는 무료 셔틀이 정답이다**
 > ParisLongchamp 은 지하철역이 없다. France Galop 공식 안내는 **Porte d'Auteuil 과 Porte Maillot
-> 두 곳에서 무료 셔틀버스**를 운행한다고 명시한다 (2026-08-14 확인). 첫차 시각·배차 간격·
+> 두 곳에서 무료 셔틀버스**를 운행한다고 명시한다 (2026-08-14 확인). 첫차 시각·배차 간격
 > 막차 시각은 회차마다 공지되므로 **당일 공식 공지로 확인한다** {{badge:pending|첫차·배차·막차 확인}}.
 > 돌아올 때도 같은 두 곳으로 나오며, **메인 레이스 직후가 가장 붐빈다** — 한 경주를 흘려보내고
 > 나오는 편이 낫다.
@@ -2232,14 +2136,13 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Arc 다음 날 — 늦은 아침, 장보기, 세탁, 카페 {{badge:rest|회복}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 10:00 이후 | 늦은 기상·브런치 | 알람 없이 회복 우선 |
 | 11:30–13:00 | 세탁·냉장고 정리 | 다음 5일 생활 준비 |
 | 13:00–14:00 | 장보기·숙소 점심 | 원거리 이동 없음 |
 | 15:00–16:30 | 동네 카페·독서 | 예약 없음 |
 | 16:30–17:30 | 선택 짧은 공원 산책 | 몸이 가벼울 때만 |
 | 저녁 | 숙소식·일찍 취침 | 공연·박물관 금지 |
-
 **피로도:** 1/5. 비가 오거나 다리가 무거우면 공원도 삭제한다.
 
 ---
@@ -2248,13 +2151,12 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Canal Saint-Martin과 Belleville — 동부 파리 {{badge:rest|로컬 라이프}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:30–10:00 | 가벼운 운동·아침 | 전날 회복 상태 확인 |
 | 10:30–12:30 | Canal Saint-Martin | 물가 산책·카페 |
 | 12:30–14:00 | 동부 파리 점심 | 오후 언덕 대비 과식 금지 |
 | 14:00–17:00 | Belleville 또는 한 동네 경로 | 공원·거리·작은 서점 중심 |
 | 17:00 이후 | 숙소 귀환 | 저녁 무예약 |
-
 **피로도:** 2/5. Hamlet 취소로 백업 분기는 폐기됐다.
 
 ---
@@ -2263,7 +2165,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### Fête des Vendanges de Montmartre — 평일 낮의 수확축제 {{badge:p0|고정 축제}}
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:00–10:00 | 느린 아침·축제 프로그램 확인 | 당일 취소·예약제 행사 대조 |
 | **11:00 선택** | **Vignes du Clos Montmartre 제한 방문** | 9/14 예약 개시, 표 확보 시에만 내부 방문 |
 | 11:30–13:00 | Clos Montmartre 외관·북사면 골목 | 내부표가 없어도 가능한 기본 동선 |
@@ -2271,7 +2173,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 14:00–17:30 | 공식 축제 프로그램·시장/부스·side streets | 공개 프로그램 중 한두 개만 선택 |
 | 17:30–19:00 | 이른 저녁 또는 Abbesses로 하산 | 군중이 커지기 전에 종료 |
 | 19:00 이후 | 숙소 귀환 | **추가 오페라 없음** |
-
 **피로도:** 3–4/5. 공식 축제는 10/7–11로 확인됐다. 공연 백업 분기는 취소로 폐기됐다.
 
 ---
@@ -2282,7 +2183,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 **파리의 마지막 온전한 하루다.** 다음 날은 체크아웃과 공항뿐이므로, 송별 저녁을 이 날 밤으로 옮겼다.
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 09:30–10:30 | 늦고 가벼운 아침 | 전날 축제 피로 확인 |
 | 10:30–13:00 | 숙소권 카페·**짐 절반 포장** | 정식운동 생략 가능. 출국 전날에 포장을 몰지 않는다 |
 | 13:00–14:00 | 가벼운 점심 | 저녁이 송별식이므로 낮은 가볍게 |
@@ -2291,7 +2192,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 일몰 무렵 | **Trocadéro 에펠탑 점등 조망** | 이미 있는 자리 — 무료, 당일 일몰 시각 기준 |
 | 점등 직후–21:30 | **송별 저녁 (상향)** | 공연비 절감분으로 한 단계 상향. 장소는 숙소 확정 후 Chaillot 권역 또는 숙소 도보권에서 선정·예약 {{badge:pending|장소 미정}} |
 | 21:30 이전 | 숙소 귀환 | 다음 날 08:00 기상·체크아웃·공항 — **과음 금지** |
-
 **피로도:** 3/5. 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 그 절감분을 이 날 송별 저녁에 쓴다.
 
 ---
@@ -2302,7 +2202,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 **항공 확정: OZ502 (아시아나) CDG 19:10 → 인천 10/10 14:10.** 이 날은 파리에서 보내는 마지막 날이 아니라 **이동일**이다. 도심 일정을 넣지 않는다.
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:00–09:00 | 아침·냉장고·남은 음식 정리 | 유리병·냉장식품 처리 |
 | 09:00–10:00 | 최종 포장 | 전날 절반을 싸 뒀으므로 마무리만. 액체·깨지기 쉬운 물품 분리 |
 | 10:00–11:00 | 체크아웃·짐 인수 | 숙소조건 확인. 짐 보관이 되는지 전날까지 확인해 둔다 |
@@ -2311,7 +2211,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | **14:00 이전 출발 권장** | CDG 이동 시작 | 19:10 출발 기준. 교통장애·보안 여유 확보 {{badge:pending|터미널·이동수단 확인}} |
 | 16:10까지 | 터미널 도착·수속·détaxe(PABLO) | **국제선 3시간 전 도착 기준**, 환급 줄 완충 포함 |
 | **19:10** | **OZ502 인천행 출국** | 예약 확정 |
-
 **제외:** 저녁 공연·퍼레이드·미술관·시내 쇼핑 전부. 모두 출국 안전여유와 충돌한다.
 
 **피로도:** 4/5.
@@ -2324,24 +2223,22 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 **이 날은 파리 일정이 아니다.** 전날 밤 CDG를 떠난 비행기 안에서 시작한다.
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 기내 | 취침·수분 섭취 | 비행 약 12시간, 시차 +7시간 |
 | **14:10** | **인천 도착 (OZ502)** | 예약 확정 |
 | 도착 후 60–90분 | 입국·수하물·세관 | 43일치 수하물 — 카트 먼저 확보 |
 | 이후 | 귀가 | 공항철도·리무진·픽업 {{badge:pending|귀가 수단 결정}} |
-
 ---
 
 ## 일정 교체 매트릭스
 
 | 상황 | 바꿀 일정 |
-|---|---|
+|---|--- |
 | 10/7 축제 피로 큼 | 10/8 Trocadéro를 짧게 하고 송별 저녁은 숙소 도보권으로 |
 | Arc 종료 지연·교통혼잡 | 10/4 저녁 전체 삭제, 10/5 공원 산책도 삭제 가능 |
 | 9/30 공식 공개 팝업 발표 | 기존 공개동선 안의 한 정차지만 교체, 야간으로 연장하지 않음 |
 | Clos Montmartre 내부표 없음 | 포도밭 외관·공개 축제·side streets만 유지 |
 | 누적 피로 | 10/3 선택문화 → 10/8 Trocadéro 순으로 삭제. 송별 저녁은 숙소권으로 낮춘다 |
-
 ---
 
 ## 실행성 감사 — 15박 운영판
@@ -2349,7 +2246,7 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 ### 날짜별 핵심 통제표
 
 | 날짜 | 오전 출발·시작 | 점심·휴식 기준 | 일정상 위험 | 첫 삭제항목 | 대체안 |
-|---|---|---|---|---|---|
+|---|---|---|---|---|--- |
 | 9/25 | Lyon 열차시각 기준 | 체크인 후 장보기, 외식보다 숙소식 우선 | 철도지연·큰 짐 | 저녁 외식 | 숙소권 산책 20분만 |
 | 9/26 | 09:30 이후 | Saint-Germain 부근 점심 | 도착 다음 날 과도한 보행 | Seine 연장 | Luxembourg까지만 |
 | 9/27 | 10:30 Tuileries | Palais Royal 점심 | Garnier 입장 대기 | 내부 방문 | 외관·Opéra 지구만 |
@@ -2366,7 +2263,6 @@ FHCM이 확인한 Women’s Ready-to-Wear Spring/Summer 2027 기간은 **9/28–
 | 10/8 | 09:30 이후 | 가벼운 점심·저녁은 송별식 | 늦은 귀가·다음 날 출국 | 송별 저녁 상향분 | 숙소권 송별식 |
 | 10/9 | 08:00 기상·14:00 이전 공항 출발 | 숙소권 가벼운 점심 | 교통장애·체크아웃 지연 | 도심 추가 일정 전부 | 숙소권 짧은 산책만 |
 | 10/10 | 기내 | 기내식 | 시차·수하물 | 없음 | 없음 |
-
 ### 예약 충돌 방지 규칙
 
 1. 같은 날 **주요 낮 이벤트 1개 + 저녁행사 1개**를 상한으로 한다.

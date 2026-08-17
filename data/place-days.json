@@ -3,13 +3,6 @@
   "source": "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv (days 열)",
   "note": "Day 번호는 글로벌 1–43. G1 이 방문일 판정의 마지막 단계로 쓴다.",
   "places": {
-    "2-30": {
-      "displayName": "시체스 2시간 30분 핵심 동선",
-      "region": "barcelona",
-      "days": [
-        4
-      ]
-    },
     "a-d-aligre-butte-aux-cailles-convention-batignolles": {
       "displayName": "월요일 모듈 A–D (Aligre·Butte-aux-Cailles·Convention·Batignolles)",
       "region": "paris",
@@ -52,6 +45,20 @@
         22
       ]
     },
+    "arles-la-roquette": {
+      "displayName": "La Roquette",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
+    "arles-theatre-antique": {
+      "displayName": "Théâtre antique",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
     "atelier-des-lauves": {
       "displayName": "Atelier des Lauves (Atelier de Cézanne)",
       "region": "aix",
@@ -64,6 +71,13 @@
       "region": "barcelona",
       "days": [
         3
+      ]
+    },
+    "barcelona-gracia": {
+      "displayName": "Gràcia 저녁 산책",
+      "region": "barcelona",
+      "days": [
+        2
       ]
     },
     "barri-gotic": {
@@ -127,13 +141,6 @@
         23,
         24,
         30
-      ]
-    },
-    "call": {
-      "displayName": "Call (유대인 지구)",
-      "region": "girona",
-      "days": [
-        4
       ]
     },
     "cannes-forville-suquet-croisette-walk": {
@@ -291,6 +298,13 @@
         24
       ]
     },
+    "girona-call": {
+      "displayName": "Call (유대인 지구)",
+      "region": "girona",
+      "days": [
+        4
+      ]
+    },
     "girona-cathedral": {
       "displayName": "Girona Cathedral",
       "region": "girona",
@@ -324,13 +338,6 @@
       "region": "luberon",
       "days": [
         17
-      ]
-    },
-    "gracia": {
-      "displayName": "Gràcia 저녁 산책",
-      "region": "barcelona",
-      "days": [
-        2
       ]
     },
     "grand-palais-cezanne-et-nous": {
@@ -377,13 +384,6 @@
         6
       ]
     },
-    "la-roquette": {
-      "displayName": "La Roquette",
-      "region": "avignon",
-      "days": [
-        22
-      ]
-    },
     "la-table-alziari": {
       "displayName": "La Table Alziari",
       "region": "nice",
@@ -426,13 +426,6 @@
       "days": [
         30,
         35
-      ]
-    },
-    "le-panier": {
-      "displayName": "Le Panier",
-      "region": "aix",
-      "days": [
-        14
       ]
     },
     "le-rocher": {
@@ -525,6 +518,21 @@
       "displayName": "Marseille (당일치기 축)",
       "region": "aix",
       "days": [
+        14
+      ]
+    },
+    "marseille-le-panier": {
+      "displayName": "Le Panier",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "marseille-vieux-port": {
+      "displayName": "Vieux-Port",
+      "region": "aix",
+      "days": [
+        9,
         14
       ]
     },
@@ -856,11 +864,11 @@
         25
       ]
     },
-    "theatre-antique": {
-      "displayName": "Théâtre antique",
-      "region": "avignon",
+    "sitges-core-walk-2h30": {
+      "displayName": "시체스 2시간 30분 핵심 동선",
+      "region": "barcelona",
       "days": [
-        22
+        4
       ]
     },
     "uzes": {
@@ -889,14 +897,6 @@
       "region": "nice",
       "days": [
         8
-      ]
-    },
-    "vieux-port": {
-      "displayName": "Vieux-Port",
-      "region": "aix",
-      "days": [
-        9,
-        14
       ]
     },
     "village-des-bories": {

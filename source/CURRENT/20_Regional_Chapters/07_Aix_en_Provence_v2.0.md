@@ -22,13 +22,12 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ## Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계
 
 | 항목 | 평가 |
-|---|---|
+|---|--- |
 | 여행 적합도 | ★★★★★ Jason·Julia의 생활형 여행에 최적화 |
 | 예산 체감 | 중상 |
 | 일정 강도 | 보통, Marseille day만 높음 |
 | 예약 핵심 | 숙소주차·Atelier·Mucem·Aix–Marseille 교통 확인 |
 | 우천 전환 | Mucem 실내 비중 확대, Le Panier 축소 |
-
 > **여행의 역할**: Nice 5박 뒤 프로방스 내륙의 생활 리듬으로 전환하는 4박 거점이다. 엑상은 시장·분수·대학·법원·카페가 압축된 **걷기 좋은 생활도시**다. 기본안은 엑상과 세잔, 그리고 대중교통으로 다녀오는 Marseille 항구도시 하루에 집중한다. Cassis·Calanques는 날씨와 취향이 맞을 때 Marseille를 완전히 교체하는 **선택 대안**이다.
 
 > **여행자 기준**: Julia의 수영은 선택 일정이며 숙소 선정조건으로 사용하지 않는다. 아침은 숙소, 점심은 샌드위치·시장·가벼운 현지식, 저녁은 레스토랑을 기본으로 한다. Jason의 스케치 2시간과 Julia의 선택 수영을 9월 12일 같은 시간 블록에 배치한다.
@@ -44,18 +43,17 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ## 생략해도 되는 것
 
 | 장소·경험 | 판단 | 이유 |
-|---|---|---|
+|---|---|--- |
 | Sainte-Victoire 장거리 하이킹 | **비추천** | 4박 일정에서 더위·산불·보행 피로 대비 효율 낮음 |
 | Aix에서 Arles 추가 | 제외 | Arles는 9/19 Avignon 기본 당일치기로 배정되어 중복 이동하지 않음 |
 | Saint-Tropez | **비추천** | 이동·정체 대비 프로젝트 취향과 밀도 낮음 |
-
 엑상의 단정한 시장도시와 마르세유의 다층적인 항구도시를 대비한다. Marseille에서는 Vieux-Port–Le Panier–Mucem–Fort Saint-Jean만 이어 과밀을 피한다. **Cassis와 Marseille를 같은 날 결합하지 않는다.**
 
 Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이다. **경유지 이상으로 늘리지 않는다.**
 
 ## 한눈에 보기 — 우선순위·권역·소요시간
 
-|---|---|---|
+|---|---|--- |
 | Cours Mirabeau·Vieil Aix | **필수** | 시장·광장·분수·생활이 연결된 도시 핵심 |
 | Place Richelme 시장 | **필수** | 숙소 식사와 프로방스 식재료를 연결 |
 | Musée Granet | **필수** | Cézanne·프로방스 미술과 2026 특별전 |
@@ -68,7 +66,6 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 | Bibémus quarries | **선택** | 채석장 형태와 후기회화 관계, 가이드 언어 제약 |
 | Cathédrale Saint-Sauveur | **선택** | 여러 시대 건축이 겹친 성당, 일정 과밀 시 외관 |
 | Fondation Vasarely | **선택** | 옵아트·현대건축 선호 시 Cassis 우천대체 |
-
 ## 세잔의 도시, 시장생활과 마르세유의 항구
 
 > **이전 챕터와의 연결**: **9월 9일** 니스공항에서 렌터카를 인수해 Saint-Paul-de-Vence와 Grasse를 거쳐 엑상에 도착한다. Day 1은 관광일이 아니라 **운전 종료·주차·체크인·생활권 확보일**이다.
@@ -99,13 +96,12 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 ```
 
 | Day | 날짜 | 점심 | 저녁 |
-|---|---|---|---|
+|---|---|---|--- |
 | 12 | 9/9 수 | 이동 중 (그라스 인근) | **엑상 도착 후 가벼운 한 끼** |
 | 13 | 9/10 목 | **시장에서 조달** | 구시가지 식당 |
 | 14 | 9/11 금 | **Marseille panisse·지중해식 가벼운 점심** | 엑상 복귀 후 가볍게 |
 | 15 | 9/12 토 | 시장 조달 또는 아틀리에 근처 | 마지막 밤. 제대로 된 한 끼 |
 | 16 | 9/13 일 | 뤼베롱 이동 중 | 농가 |
-
 > **Day 12 저녁에 야심을 부리지 마라.** 니스에서 차를 받아 두 곳을 경유해 도착하는 날이다. 숙소 근처로 정한다.
 
 ## 구역별 이해와 숙소 생활권
@@ -133,27 +129,24 @@ Aix는 라틴어 **aquae**(물)에서 왔다. 로마인이 온천 때문에 여�
 세잔은 셋으로 나눠 봐야 한다.
 
 | 축 | 어디서 |
-|---|---|
+|---|--- |
 | **작품** | Musée Granet · 파리 오르세 |
 | **작업실** | Atelier des Lauves · Jas de Bouffan |
 | **풍경** | Montagne Sainte-Victoire · Bibémus |
-
 **이번 일정은 작업실과 풍경 중심이다.** 작품은 상대적으로 적다. 그런데 이 여행에는 후반부가 있다 — **Day 27부터 파리에 15박 한다.** 아래 '대안 루트'의 오르세 항목을 참조.
 
 ### 엑상과 마르세유를 축으로, 카시스는 선택 대안으로
 
-
 ### 권역별 성격과 숙소 적합성
 
 | 생활권 | 성격 | 낮 | 밤 | 차량·생활 편의 | Jason·Julia 적합성 | 숙소 판단 |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|--- |
 | **Sextius–Allées Provençales–Rotonde 북서** | 신구시가지 경계·상점·버스터미널 | 장보기·이동 매우 편리 | 중심과 가깝고 비교적 안정 | 진입·주차·Cassis 출차 우수 | 4박 생활+차량의 최적 균형 | **1순위** |
 | **Rotonde 남쪽–Parc Jourdan** | 역·버스·주거·Mazarin 접근 | 조용하고 실용적 | 중심보다 한산 | Marseille 버스·Mignet 주차 유리 | 운동·수영·시내 균형 | **2순위** |
 | **Mazarin–Mignet 외곽** | 귀족건축·Granet·조용한 골목 | 산책 최고 | 조용함 | 보행구역·주차 진입 확인 필요 | 문화·산책 우선일 때 | 조건부 추천 |
 | **Vieil Aix 내부** | 시장·성당·카페 | 관광 분위기 최고 | 소음·계단·배달차량 | 차량진입·짐 이동 불리 | 관광에는 좋으나 4박 렌터카에는 불리 | 신중 |
 | **Libération/Saint-Mitre 서쪽** | 주거·아파트·가성비 | 생활편의는 양호 | 조용 | 도심보다 차량 편리 | 숙박비 절감 시 | 대안 |
 | **Encagnane** | 현지 주거·교통 | 실용적 | 관광 분위기 약함 | 출차와 슈퍼 유리 | 아파트 품질이 압도적일 때 | 예산형 대안 |
-
 ### 최종 권고 범위
 
 > Rotonde에서 북서쪽 5–15분, Cours Sextius 서쪽과 Allées Provençales 북쪽. 구시가지까지 도보 10–20분이면서 숙소 주차장으로 **보행구역을 통과하지 않고 접근**할 수 있어야 한다.
@@ -161,7 +154,7 @@ Aix는 라틴어 **aquae**(물)에서 왔다. 로마인이 온천 때문에 여�
 ### 숙소 조건과 숙박예산
 
 | 항목 | 가중치 | 이유 |
-|---|---:|---|
+|---|---:|--- |
 | 예약 가능한 주차·진입 | 20 | 렌터카를 4박 유지하며 Cassis·Luberon 이동 |
 | 구시가지 도보 접근 | 20 | 시내일에는 차량을 쓰지 않음 |
 | 주방·냉장고 | 15 | 아침·샌드위치 점심 운영 |
@@ -169,7 +162,6 @@ Aix는 라틴어 **aquae**(물)에서 왔다. 로마인이 온천 때문에 여�
 | 슈퍼·빵집·시장 | 10 | 생활형 체류 |
 | 세탁 또는 세탁방식 | 10 | 여행 2주차 진입 |
 | 총비용·취소조건 | 10 | 주차·관광세 포함 비교 |
-
 Julia의 수영장 접근성은 숙소평가 가중치에서 제외한다.
 
 > **계획가(2026-08 조사)** — 실제 결제액이 아니라 예산 설계용 범위다.
@@ -218,7 +210,6 @@ Julia의 수영장 접근성은 숙소평가 가중치에서 제외한다.
 - 성격: Adagio(생활 편의)와 반대편 — **분위기·도시생활 경험 우선**일 때의 후보
 - 적합 이유: Marseille 버스, Mazarin, Yves Blanc 접근이 좋다.
 
-
 ### 숙소 선택 결론
 
 1. Adagio Centre
@@ -236,27 +227,25 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 이 모순이 이 구간 교통 전략의 전부다.
 
 | Day | 차량 |
-|---|---|
+|---|--- |
 | 12 | 인수 · 이동 · **숙소 주차장에 넣는다** |
 | 13 | **쓰지 않는다.** 전부 도보 |
 | 14 | Marseille는 대중교통, 차량은 숙소에 유지 |
 | 15 | 아틀리에까지 도보 또는 짧게 사용 |
 | 16 | 뤼베롱 이동 |
-
 ### 렌터카 인수와 프랑스 도로
 
 | 항목 | 내용 |
-|---|---|
+|---|--- |
 | 장소 | 니스 코트다쥐르 공항 T2 |
 | 완충 | **60–90분** — 서류·점검·출차 |
 | 필수 확인 | 연료 종류 · 주유구 라벨 촬영 · 외관 전체 영상 |
 | 경로 | 니스 → 생폴드방스 → 그라스 → 엑상 |
 | 최고 위험 | 인수 지연 · 체크인 · 주차 |
-
 > **08:30 출발을 지켜라.** 이 날 오전에 새로운 것을 넣지 않는다.
 
 | 항목 | 내용 |
-|---|---|
+|---|--- |
 | 유료 | **A-** (Autoroute) 대부분 |
 | 무료 | **N-**, **D-** |
 | 무연 95 | SP95 / Sans Plomb 95 |
@@ -264,7 +253,6 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 | 원형교차로 | 안에 있는 차가 우선 |
 | 제한속도 | 시내 50 · 국도 80 · 고속 130 (우천 110) |
 | 국제운전면허 | **필수** |
-
 ⚠ **전자 태그(télépéage) 전용 차선에 들어가지 마라.** 렌터카에 태그가 없으면 후진해야 한다.
 
 니스 → 엑상은 **A8**이 기본이다. 유료 구간이다.
@@ -274,12 +262,11 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 구시가지는 보행 구역이 넓고 일방통행이 많다. **골목에 차를 넣으면 나올 수 없다.**
 
 | 원칙 | 내용 |
-|---|---|
+|---|--- |
 | 기본 | **숙소 주차장에 두고 도보** |
 | 노상 | 파랑=유료 시간제 · 초록=거주자 우선 · 노랑=금지 |
 | 시장일 | **화·목·토 오전은 중심가 진입 금지에 가깝다** |
 | 야간 | 차 안에 보이는 짐을 남기지 않는다 |
-
 > **Day 13이 목요일 시장일이다.** 차를 뺄 생각을 하지 마라.
 
 - Vieil Aix와 Cours Mirabeau 주변은 보행·차량제한 구역이 많다.
@@ -290,12 +277,11 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 ### 주요 공영주차
 
 | 주차장 | 규모·특징 | 사용 판단 |
-|---|---|---|
+|---|---|--- |
 | Rotonde | 약 1,800면, 24시간, 승강기, 24시간 상한 €25 — 계획가(2026-08 조사) | 숙소주차 불가 시 가장 안정적 |
 | Mignet | Mazarin·Cours Mirabeau 접근 | Granet·남쪽 숙소권 |
 | Carnot | 동쪽 구시가지 접근 | Atelier·Cimiez 방향이 아니라 Aix 동부 |
 | Pasteur | 성당·북부 구시가지 | Aquabella·Saint-Sauveur권 |
-
 ### 차량 내 짐
 
 - 9/13 Lourmarin 방문에는 전 일정 짐이 차량에 있다.
@@ -308,17 +294,16 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 카시스는 작은 항구 마을에 방문객이 몰린다. **중심 주차가 매우 어렵다.**
 
 | 대응 | 내용 |
-|---|---|
+|---|--- |
 | 외곽 주차 후 도보 또는 셔틀 | 표준 방식 {{badge:pending|셔틀 운영 확인}} |
 | 도착 시각 | **이를수록 유리하다** |
 | 칼랑크 방면 | 차량 규제가 별도로 있다. 방문지 파일 참조 |
-
 프랑스 주요 도시권에 저배출구역이 있다. 마르세유·엑상 광역권 해당 여부와 렌터카 스티커(Crit'Air) 부착을 인수 시 확인한다 {{badge:pending|확인 필요}}.
 
 ### 문전 이동 실행표
 
 | 구간 | 현실적 문전시간 | 방법·주의 |
-|---|---:|---|
+|---|---:|--- |
 | 숙소→구시가지 | 10–25분 | 시내일 차량 사용금지 |
 | 숙소→Granet | 25–40분 | 큰 가방 제한 |
 | 숙소→Atelier | 25–40분 | 오르막·예약 15분 전 |
@@ -326,19 +311,17 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 | Aix→Cassis 선택 대안 | 80–110분 | **9/11(금)은 Gorguettes 셔틀 미운행** ({{fact:cassis.getting_there}}) — Presqu'île 유료주차 또는 대체안 필요 |
 | Aix→Lourmarin | 70–90분 | 일요일 주차 |
 | Lourmarin→농가 | 60–120분 | 정확한 주소 확정 후 재계산 |
-
 ### Marseille 왕복
 
-> **요금** {{fact:marseille.price_adult}} · **운영** {{fact:marseille.hours}} · **휴관** {{fact:marseille.closed}}
-> **예약** {{fact:marseille.booking}} · **소요** {{fact:marseille.duration}} · **가는 법** {{fact:marseille.getting_there}}
+> **운영** {{fact:marseille.hours}} · **휴관** {{fact:marseille.closed}}
+> **예약** {{fact:marseille.booking}}
 
 | 구간 | 기본안 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | Aix 숙소→Gare routière | 도보·시내버스 | 출발 20분 전 도착 |
 | Aix→Marseille Saint-Charles | 광역버스 Ligne 50 | 직행축을 기본으로 하되 2026-09-11 실제 시각·정류장은 전날 공식 앱에서 재확인 |
 | Saint-Charles→Vieux-Port | Métro M1 | 혼잡한 에스컬레이터에서 휴대전화·지갑을 꺼내지 않음 |
 | Fort Saint-Jean→Saint-Charles→Aix | 도보·Métro M1·Ligne 50 | 막차가 아니라 저녁 전 귀환편을 선택 |
-
 철도는 운행·숙소 위치가 더 유리할 때의 대안이다. 차량은 주차와 도심운전 부담 때문에 기본안으로 쓰지 않는다.
 
 ## 핵심 셀프가이드
@@ -351,8 +334,8 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 
 ### Saint-Paul-de-Vence {{grade:priority|우선추천}}
 
-> **요금** {{fact:saint-paul-de-vence.price_adult}} · **운영** {{fact:saint-paul-de-vence.hours}} · **휴관** {{fact:saint-paul-de-vence.closed}}
-> **예약** {{fact:saint-paul-de-vence.booking}} · **소요** {{fact:saint-paul-de-vence.duration}} · **가는 법** {{fact:saint-paul-de-vence.getting_there}}
+> **운영** {{fact:saint-paul-de-vence.hours}} · **휴관** {{fact:saint-paul-de-vence.closed}}
+> **예약** {{fact:saint-paul-de-vence.booking}}
 
 #### 무엇인가 — 화가들이 만든 마을
 
@@ -373,12 +356,11 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 > 창립자의 뜻에 따라 재단은 근현대 미술을 주제별 기획전과 소장품 전시로 보여준다. **갈 때마다 걸린 작품이 다르다.** 특정 작품을 보러 가는 곳이 아니다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 운영 | 매일 10:00–18:00 (7·8월 10:00–19:00) {{badge:pending|재확인}} |
 | 요금 | 일반 €18 · 할인 €14 · 16세 미만 무료 {{badge:pending|재확인 — 출처가 오래됨}} |
 | 주차 | 무료 주차장 있음 |
 | 체류 | 90–120분 |
-
 #### 마을 묘지 — 샤갈이 있다
 
 샤갈은 1966년부터 1985년까지 생폴드방스에서 말년을 보냈고, 마을 안 '니스 문' 뒤편 묘지에 묻혔다. 1985년 3월 28일에 죽었다.
@@ -389,7 +371,6 @@ Day 12에 **Nice-Ville 역**에서 렌터카를 받는다(DEC-A11). **그런데 
 
 > **재단과 묘지를 이어서 보라**
 > 마그가 아들을 위해 만든 재단, 그 아들의 무덤, 그리고 재단에 작품을 준 샤갈의 무덤이 걸어서 닿는 거리에 있다. **한 마을 안에서 이야기가 닫힌다.**
-
 
 ---
 
@@ -429,8 +410,8 @@ Place de la Rotonde
 
 ### Cours Mirabeau {{grade:essential|필수}}
 
-> **요금** {{fact:cours-mirabeau-4.price_adult}} · **운영** {{fact:cours-mirabeau-4.hours}} · **휴관** {{fact:cours-mirabeau-4.closed}}
-> **예약** {{fact:cours-mirabeau-4.booking}} · **소요** {{fact:cours-mirabeau-4.duration}} · **가는 법** {{fact:cours-mirabeau-4.getting_there}}
+> **운영** {{fact:cours-mirabeau-4.hours}} · **휴관** {{fact:cours-mirabeau-4.closed}}
+> **예약** {{fact:cours-mirabeau-4.booking}}
 
 #### 무엇인가 — 성벽을 헐어 만든 길
 
@@ -512,27 +493,24 @@ Place de la Rotonde
 > **55번지를 찾아라.** 표지가 크지 않다. Day 15에 아틀리에를 보기 전에 여기를 먼저 보면 **한 사람의 생애가 이 도시 안에서 어떻게 이동했는지**가 잡힌다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 요금 | 무료 |
 | 체류 | 45–60분 |
 | 카페 | **한 번만 이용한다.** 쿠르 면한 테라스는 비싸다 |
-
-
 ---
 
 ### 시장 — Place Richelme · Place des Prêcheurs {{grade:essential|필수}}
 
-> 📍 {{fact:place-richelme-place-des-precheurs.address}} · 🚶 {{fact:place-richelme-place-des-precheurs.getting_there}} · 🕐 {{fact:place-richelme-place-des-precheurs.hours}} · 휴무 {{fact:place-richelme-place-des-precheurs.closed}} · {{fact:place-richelme-place-des-precheurs.booking}} · {{fact:place-richelme-place-des-precheurs.price_range}}
+> 📍 {{fact:place-richelme-place-des-precheurs.address}} · 🕐 {{fact:place-richelme-place-des-precheurs.hours}} · 휴무 {{fact:place-richelme-place-des-precheurs.closed}} · {{fact:place-richelme-place-des-precheurs.booking}}
 
 플라스 리셸므에서 식료품·꽃 시장이 매일 열리고, 화·목·토 오전에는 플라스 데 프레셰르와 주변 거리에서 식료품·공예·리넨·라벤더를 파는 전면 프로방스 시장이 열린다. 오후 1시경에 파장한다.
 
 **일정이 이미 맞아 있다.**
 
 | Day | 날짜 | 요일 | 큰 시장 |
-|---|---|---|:---:|
+|---|---|---|:---: |
 | 13 | 9/10 | 목 | ○ |
 | 15 | 9/12 | 토 | ○ |
-
 > **13시에 파장한다는 것**
 > 오전 일정이다. 늦게 가면 좌판을 접는 중이다. **9시–11시**가 본편이다.
 
@@ -554,7 +532,7 @@ Place de la Rotonde
 ### Musée Granet {{grade:priority|우선추천}}
 
 > **요금** {{fact:musee-granet.price_adult}} · **운영** {{fact:musee-granet.hours}} · **휴관** {{fact:musee-granet.closed}}
-> **예약** {{fact:musee-granet.booking}} · **소요** {{fact:musee-granet.duration}} · **가는 법** {{fact:musee-granet.getting_there}}
+> **예약** {{fact:musee-granet.booking}} · **소요** {{fact:musee-granet.duration}}
 
 **세잔만 기대하면 안 되는 미술관이다.** 소장 구성, 세잔 작품 수, 플랑크 컬렉션, 2026년 기획전은 {{badge:pending|조사 필요}} 상태다.
 
@@ -567,11 +545,10 @@ Place de la Rotonde
 관람은 특별전 하나 + 상설 한 바퀴로 90분이면 충분하다. 마자랭 지구 산책과 같은 오후에 묶이는 위치라 동선 낭비가 없다. 수도원 회랑이던 안뜰 공간이 남아 있어 건물 자체가 소장품 이전의 볼거리다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 요금·운영·휴관일 | {{badge:pending|재확인 필수}} |
 | 체류 | 90분 |
 | 성격 | **실내.** 폭염·우천 대체안으로 가치 높음 |
-
 - 2026년 11월 1일까지 화–일 10:00–18:00, 월요일 휴관 (출처: museegranet-aixenprovence.fr · 2026-08-14 확인)
 - 티켓마감 17:30
 - 2026 하계 일반권 €14 — 특별전 기간(7/4–11/1) 요율이다 (2026-08-14 확인)
@@ -603,8 +580,8 @@ Mucem 이라는 짧은 축 하나만 걷고, 그 축 위에서 도시의 시대�
 
 ### Vieux-Port {{grade:essential|필수}}
 
-> **요금** {{fact:vieux-port.price_adult}} · **운영** {{fact:vieux-port.hours}} · **휴관** {{fact:vieux-port.closed}}
-> **예약** {{fact:vieux-port.booking}} · **소요** {{fact:vieux-port.duration}} · **가는 법** {{fact:vieux-port.getting_there}}
+> **운영** {{fact:marseille-vieux-port.hours}} · **휴관** {{fact:marseille-vieux-port.closed}}
+> **예약** {{fact:marseille-vieux-port.booking}} · **소요** {{fact:marseille-vieux-port.duration}}
 
 도착 직후 항구 양쪽 부두를 전부 돌지 않는다. Quai des Belges에서 항구의 축과 Notre-Dame de la Garde 방향을 확인한 뒤 북쪽 Quai du Port로 이동한다. 아침 어시장 흔적과 페리, 상업도시의 움직임을 40–50분만 본다.
 
@@ -620,8 +597,8 @@ Quai des Belges 쪽에 그날 잡은 생선을 파는 좌판이 서는 전통이
 
 ### Le Panier {{grade:priority|우선 추천}}
 
-> **요금** {{fact:le-panier.price_adult}} · **운영** {{fact:le-panier.hours}} · **휴관** {{fact:le-panier.closed}}
-> **예약** {{fact:le-panier.booking}} · **소요** {{fact:le-panier.duration}} · **가는 법** {{fact:le-panier.getting_there}}
+> **운영** {{fact:marseille-le-panier.hours}} · **휴관** {{fact:marseille-le-panier.closed}}
+> **예약** {{fact:marseille-le-panier.booking}} · **소요** {{fact:marseille-le-panier.duration}}
 
 Vieux-Port 북쪽의 경사 골목을 Hôtel de Ville–Place de Lenche–Vieille Charité 방향으로 잇는다. 관광 상점만 따라가지 말고 주민 골목과 계단, 그늘진 작은 광장을 번갈아 본다. **45–60분 상한**으로 두고 점심시간을 잠식하지 않는다.
 
@@ -647,7 +624,7 @@ Vieux-Port 북쪽의 경사 골목을 Hôtel de Ville–Place de Lenche–Vieill
 ### Fort Saint-Jean {{grade:essential|필수}}
 
 > **요금** {{fact:fort-saint-jean.price_adult}} · **운영** {{fact:fort-saint-jean.hours}} · **휴관** {{fact:fort-saint-jean.closed}}
-> **예약** {{fact:fort-saint-jean.booking}} · **소요** {{fact:fort-saint-jean.duration}} · **가는 법** {{fact:fort-saint-jean.getting_there}}
+> **예약** {{fact:fort-saint-jean.booking}} · **소요** {{fact:fort-saint-jean.duration}}
 
 Mucem과 보행교로 연결된 요새다. 정원과 성벽 동선에서 Vieux-Port 입구를 되돌아보는 데 45–60분을 쓴다. 전시를 더 추가하기보다 이곳에서 앉아 쉬는 편이 하루의 균형에 맞다.
 
@@ -709,10 +686,9 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 #### 두 가지 접근 방식
 
 | 방식 | 특징 | 화재 규제 시 |
-|---|---|---|
+|---|---|--- |
 | **보트** | 카시스 항구 출발. 여러 칼랑크를 해상에서 본다 | **운항되나 상륙 불가** |
 | **도보** | 포르미우 → 포르팽 → 앙보. 석회암 노면 | **금지될 수 있음** |
-
 > **보트를 기본안으로 잡아라**
 > 보트가 기본안이다. 도보는 규제·체력·더위 세 변수에 걸린다. 43일 중 14일차에 석회암 오르내리기는 부담이 크다.
 
@@ -722,12 +698,11 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 #### 실용
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 보트 | 예약 권장 {{badge:pending|운항사·소요·요금 재확인}} |
 | 준비 | 모자·선글라스·자외선차단·물·미끄럽지 않은 신발 |
 | 해상 | 300m 이내 속도 5노트 제한 (개인 보트 시) |
 | 비상 | 해상구조 CROSS MED — VHF 16번, +33 (0)4 94 61 16 16, 휴대전화에서 196 |
-
 ---
 
 ### ⚠ 2026년 한정 개방 — 이 여행의 최대 행운
@@ -739,12 +714,11 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 **여행 날짜(9월 12일)가 이 개방 기간 안에 있다.** 겨울에는 닫힌다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 기간 | 2026년 7월 4일 – 10월 31일 |
 | 시간 | 7월 4일–9월 30일 9:00–18:00, 10월 10:00–17:00, 매일 |
 | 요금 | €9.50(오디오 자율) – €15(심화) (출처: cezanne-en-provence.com · 2026-08-14 확인) |
 | 예약 | 정원 제한으로 예약 필수. cezanne-en-provence.com 온라인 또는 현장 매표소(잔여분 한정) |
-
 > ⚠ **예약이 필수이고 정원이 제한된다.** 아래 예약카드를 반드시 실행할 것. 현장 발권은 잔여분에 한한다.
 
 ---
@@ -776,7 +750,7 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 새 안내 건물에 모든 관람객을 위한 매개실이 들어섰다. VR 헤드셋, 복제 실물, 촉각 작품 재현 같은 도구가 있다. 정원에는 당시 모습을 되살린 새 올리브밭이 조성됐다. 로브 아틀리에 정원에는 푸드트럭이 들어온다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 주소 | 13 avenue Paul Cézanne, 13090 Aix-en-Provence |
 | 접근 | 중심부에서 오르막. 도보 15분 또는 버스·택시 |
 | 2026 개방 | **7월 4일–10월 31일.** 9/12 는 이 안에 있다 |
@@ -785,7 +759,6 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 | 요금 | 오디오 자율 €9.50 / 가이드 €12 / 심화 €15 (감면 €7.50 · €10 · €13) (출처: cezanne-en-provence.com · 2026-08-14 확인) |
 | 체류 | 45–60분 |
 | 주의 | **15분 전 도착.** 공간이 작다. 수하물 보관소가 없다 |
-
 > 출처: cezanne-en-provence.com 공식 페이지 — 2026-08-14 확인. 예약은 같은 사이트 또는
 > 아익스 관광청 예약창구를 통한다 {{badge:pending|2026-08 확인 · 출발 전 재확인}}.
 > **9/12 는 토요일이라 오전 시장과 겹친다.** 시장 → 아틀리에 순서로 시각을 먼저 잡는다.
@@ -794,8 +767,8 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 
 ### Bastide du Jas de Bouffan {{grade:priority|우선추천}} — 선택
 
-> **요금** {{fact:bastide-du-jas-de-bouffan.price_adult}} · **운영** {{fact:bastide-du-jas-de-bouffan.hours}} · **휴관** {{fact:bastide-du-jas-de-bouffan.closed}}
-> **예약** {{fact:bastide-du-jas-de-bouffan.booking}} · **소요** {{fact:bastide-du-jas-de-bouffan.duration}} · **가는 법** {{fact:bastide-du-jas-de-bouffan.getting_there}}
+> **운영** {{fact:bastide-du-jas-de-bouffan.hours}} · **휴관** {{fact:bastide-du-jas-de-bouffan.closed}}
+> **예약** {{fact:bastide-du-jas-de-bouffan.booking}}
 
 #### 무엇인가 — 세잔이 화가가 된 집
 
@@ -815,12 +788,11 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 > 자스 드 부팡은 **시작**(20–60세, 첫 생트빅투아르), 로브 아틀리에는 **끝**(마지막 4년, 대수욕도)이다. 두 곳을 같은 날 보면 40년이 한 문장이 된다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 주소 | 4 rue de Valcros, 13090 Aix-en-Provence |
 | 기간·요금 | 로브 아틀리에와 동일 |
 | 소요 | 90분 내외 {{badge:pending|재확인}} |
 | 식사 | 오랑주리 레스토랑 운영 |
-
 > **⚠ 두 곳을 다 넣으면 Day 15가 꽉 찬다.** 시장·아틀리에·스케치 구성에 자스 드 부팡을 더하면 스케치 시간이 사라진다. **선택 등급으로 둔다.**
 
 ---
@@ -835,11 +807,10 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 1시간 30분 동안 거대한 황토 암괴를 따라 가이드가 안내하며, 화가가 도구를 보관하던 오두막을 지나 생트빅투아르 산의 장엄한 파노라마로 마무리한다.
 
 | 항목 | 값 |
-|---|---|
+|---|--- |
 | 운영 | 연중 예약제. 1월 1일·5월 1일·12월 25일 휴관 |
 | ⚠ 제약 | 6월부터 9월까지 화재 안전상 제한될 수 있다. **9월 12일이 해당** |
 | 소요 | 1시간 30분 (가이드 투어) |
-
 **이번 일정에서는 대체안으로 둔다.** 예약제이고, 화재 제한 가능성이 있고, 아틀리에·자스 드 부팡과 시간이 겹친다.
 
 ---
@@ -847,7 +818,7 @@ Mucem은 유럽·지중해 문명박물관으로, 단순 미술관이 아니라 
 ### Montagne Sainte-Victoire · Terrain des Peintres {{grade:priority|우선추천}}
 
 > **요금** {{fact:montagne-sainte-victoire-terrain-des-peintres.price_adult}} · **운영** {{fact:montagne-sainte-victoire-terrain-des-peintres.hours}} · **휴관** {{fact:montagne-sainte-victoire-terrain-des-peintres.closed}}
-> **예약** {{fact:montagne-sainte-victoire-terrain-des-peintres.booking}} · **소요** {{fact:montagne-sainte-victoire-terrain-des-peintres.duration}} · **가는 법** {{fact:montagne-sainte-victoire-terrain-des-peintres.getting_there}}
+> **예약** {{fact:montagne-sainte-victoire-terrain-des-peintres.booking}}
 
 세잔이 평생 80회 넘게 그린 산이다. '화가들의 땅(Terrain des Peintres)'은 로브 언덕 위의
 작은 공원으로, 세잔이 실제로 이 산을 그리던 시점(視點)에 그의 그림 복제 패널이 서 있다 —
@@ -886,7 +857,7 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 ### 먹어야 할 것
 
 | 이름 | 정체 | 적합한 때 |
-|---|---|---|
+|---|---|--- |
 | **Calisson d'Aix** | 아몬드·설탕에 절인 멜론·오렌지 껍질 | **엑상 특산.** 카페·선물. 하루 1–2개 |
 | **Tapenade** | 올리브·케이퍼 페이스트 | 숙소 샌드위치 |
 | **Anchoïade** | 안초비·마늘 소스 | 채소·가벼운 전채 |
@@ -896,7 +867,6 @@ Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이�
 | **Chèvre** | 프로방스 염소치즈 | 시장 점심 |
 | **Melon · figue · raisin** | 9월 제철 과일 | 숙소 아침·피크닉 |
 | **Petits farcis** | 토마토·주키니 등에 고기소를 채워 구운 요리 | 저녁 전채 또는 가벼운 메인 |
-
 ### 칼리송이 왜 엑상 것인가
 
 아몬드 반죽 위에 아이싱을 올린 마름모꼴 과자다. 엑상 특산이고 다른 도시에서는 관광용으로만 판다.
@@ -924,32 +894,29 @@ Day 14는 해안이다. **내륙 프로방스 요리가 아니라 지중해 생�
 > 가격은 **계획가(2026-08 조사)** — 메뉴·구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 
 | 식당 | 성격 | 추천 주문 | 계획가격 | 예약 |
-|---|---|---|---:|---|
+|---|---|---|---:|--- |
 | **Coucou** | 계절 지중해·이탈리아 | 오늘의 메뉴, 생선·채소, 파스타 | 주중 세트 약 €27, à la carte €25부터 | 권장 |
 | **La Brocherie** | 장작불 고기·생선·프로방스 | 생선구이, 고기, 지역 채소 | 메뉴 약 €31, 일일메뉴 약 €21 | 주말 권장 |
 | **Aux Papillons** | 창작 프렌치·특별식 | discovery 또는 tasting | 점심 €28/34, discovery €44, tasting €60 | 필수에 가까움 |
 | **La Kémia** | 작은 접시·와인바 | 채소·생선·공유접시 | 점심메뉴 약 €25, 저녁 à la carte | 권장 |
 | **Le Ramus** | 전통 프렌치·프로방스 | daube·생선·샐러드 | 1인 €30–60 계획 | 혼잡일 권장 |
 | **Chez Lulu** | 점심형 동네식당 | 오늘의 요리+디저트 | 약 €17 | 점심만, 현장 가능 |
-
 > AI 자문 자료(2026-08-15)에서 추린 후보다. 가격은 **미검증 참고치**이고 운영일·메뉴는 방문 전 확인한다. 미슐랭 표기는 2026-08-15 guide.michelin.com 에서 직접 확인한 것만 적었다.
 
 | 식당 | 성격 | 참고 | 참고가격 | 연락처 |
-|---|---|---|---:|---|
+|---|---|---|---:|--- |
 | **Les Galinas – La Table Provençale** | 구시가지 전통 프로방스 가정식 비스트로 | 미슐랭 빕 구르망 — 엑상 유일 (확인) | daube·양고기·계절 채소 {{badge:pending|재확인}} | 09 87 19 15 77 |
 | **Il Était une Fois** | 조금 더 세련된 프렌치 | 시장 식재료 기반 요리 | 2인 €60–140 {{badge:pending|재확인}} | 04 42 58 78 56 |
 | **Le Art – Château de la Gaude** | 시 외곽 샤토의 파인다이닝 | 미슐랭 별 1, 2026 (확인) | 고가 €€€€ {{badge:pending|재확인}} | 04 84 93 09 30 |
-
 자문 자료의 판단: 이 여행에는 파리·리옹이 남아 있어 **프로방스에서 미슐랭 식사를 여러 번 할 이유가 없다.** 특별식 1회를 아비뇽(Pollen) 또는 생레미(La Table de Tourrel)에서 할 계획이면 Le Art 는 넣지 않아도 된다. Les Galinas 는 "전통 프로방스 한 번" 역할로 기존 14.2 후보와 겹치지 않는다.
 
 **기존 방침이 우선한다** — 부야베스는 시간·가격·양 때문에 당일치기에서 제외한다. 방침을 바꿔 "제대로 된 부야베스 한 번"을 넣는 경우에만 아래를 참고한다.
 
 | 식당 | 성격 | 참고가격 | 연락처 |
-|---|---|---:|---|
+|---|---|---:|--- |
 | **Chez Madie Les Galinettes** | Vieux-Port 옆 프로방스 식당 — pieds et paquets·aïoli·생선. 기존 '가벼운 지중해식 점심' 방침과 맞는 유일한 후보 | €30–70 {{badge:pending|재확인}} | 04 91 90 40 87 |
 | **Restaurant Michel** | 전통 부야베스 전문 | €100+/인 {{badge:pending|재확인}} | 04 91 52 64 22 |
 | **Chez Fonfon** | Vallon des Auffes 항구 전망·생선요리 | 고가 {{badge:pending|재확인}} | 04 91 52 14 38 |
-
 ### 카페·디저트
 
 #### Pâtisserie Weibel
@@ -972,12 +939,11 @@ Calissoun은 화·목·토 Richelme 시장에 출점하는 공식 안내가 있�
 ### 시장과 장보기
 
 | 시장 | 요일·시간 | 역할 |
-|---|---|---|
+|---|---|--- |
 | Place Richelme 식품시장 | 매일 08:00–13:00 | 과일·채소·치즈·올리브·숙소식 |
 | Places Comtales 식품시장 | 화·목·토 08:30–13:00 | 큰 시장일 핵심 |
 | Cours Mirabeau·주변 직물/수공예 | 화·목·토 오전 | 스카프·바구니·생활용품 |
 | 꽃시장 | 화·목·토 Hôtel de Ville, 수·금·일 Places Comtales | 산책·사진 |
-
 #### 숙소 아침
 
 - baguette tradition 또는 pain de campagne
@@ -1053,11 +1019,10 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 지도가 매일 늦어도 오후 6시에 다음 날 기준으로 갱신된다. 칼랑크·캅 카나유·그랑 코네 산괴의 접근 가부를 초록(허용)·노랑·빨강(불허)으로 표시한다.
 
 | 수단 | 내용 |
-|---|---|
+|---|--- |
 | 앱 | **My Calanques** — 실시간 알림 |
 | 전화 | 0811 20 13 13 (유료, 분당 €0.06) {{badge:pending|공식 확인}} |
 | 웹 | 부슈뒤론 도청 및 국립공원 공식 사이트 |
-
 'My Calanques' 앱을 받아 실시간 경보를 받으라.
 
 #### 빨간 날이면 어떻게 되는가
@@ -1069,22 +1034,19 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 #### 9월 11일 기준으로 확인된 것
 
 | 규제 | 적용 여부 |
-|---|---|
+|---|--- |
 | 화재 위험 접근 규제 (6/1–9/30) | **복수 출처 확인 · 적용됨** — 부슈뒤론·보클뤼즈 모두 6/1–9/30 산림 접근이 일일 규제된다. **다음날 지도는 전날 공개된다** — 부슈뒤론 18시경, 보클뤼즈 19시 전. 녹색이면 통행 가능. 출처: bouches-du-rhone.gouv.fr · vaucluse.gouv.fr · risque-prevention-incendie.fr. **Calanques·뤼브롱 일정은 전날 저녁에 반드시 확인할 것** |
 | Route des Crêtes 기본 폐쇄 (6/1–9/1 적색일) | 기간 종료. 단 기상에 따라 폐쇄 가능 |
 | 차량 통행 금지 (8/31–9/27 주말 07–19시) | **9/11은 금요일이라 미적용** |
 | 쉬지통 사전 예약 (9월 첫 두 주말) | 마르세유 쪽 · 9/11은 평일이라 미적용 |
-
-
 ### 우천·폭염·산불·지연·피로
 
 | 원래 일정 | 대체 |
-|---|---|
+|---|--- |
 | Cassis | Bastide du Jas de Bouffan + Fondation Vasarely + 카페 |
 | Marseille | L50 운행 시 Mucem 중심으로 유지, Le Panier 삭제 |
 | Jason 야외스케치 | Musée Granet 서점·카페에서 실내 드로잉 |
 | Lourmarin | 60분 산책+점심 후 농가 조기 체크인 |
-
 ### 폭염
 
 - 시장은 09:00 이전 시작
@@ -1118,14 +1080,13 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 > 비가 오거나 예약이 깨졌을 때 쓰는 자료다. 계획이 살아 있으면 기존 일정이 우선이다.
 
 | 순위 | 대안 | 빼야 할 것 | 추가 | 난이도 |
-|---:|---|---|---|---|
+|---:|---|---|---|--- |
 | 1 | **Jas de Bouffan** | Day 15 스케치 시간 | 2h | 낮음 |
 | 2 | **Cassis·Calanques** | Day 14 Marseille 대체 | 하루 | 중간 |
 | 3 | **Carrières de Bibémus** | Day 15 재구성 | 2h | 중간 (예약·화재) |
 | 4 | **Sainte-Victoire 산기슭** | Day 15 오후 | 3h | 중간 |
 | 5 | Vence — 로사리오 예배당 | Day 12 그라스 대체 | 1.5h | 중간 |
 | 6 | Salon-de-Provence · Arles | 하루 | 하루 | 높음 |
-
 **이미 방문지 파일에 상세를 썼다.** 대안으로 분류한 이유는 시간 때문이지 가치 때문이 아니다.
 
 1859년 아버지가 사서 1899년에 판 집이다. 여기서 야외 그리기를 배웠고 1870년에 첫 생트빅투아르를 그렸다.
@@ -1180,7 +1141,7 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 ### 예약 우선순위
 
 | 우선 | 항목 | 목표 | 확인사항 |
-|---:|---|---|---|
+|---:|---|---|--- |
 | P0 | Aix 숙소+주차 | **9/9–9/13** | 총액·관광세·주차·냉방·주방·취소 |
 | P0 | Atelier des Lauves | 9/12 11:00 — **가이드 회차** | 11:00 은 가이드 전용이다. 요금 {{fact:atelier-des-lauves.price_adult}} · 예약 {{fact:atelier-des-lauves.booking}} |
 | P1 | Mucem | **9/11** 13:15 전후 | 휴관 {{fact:mucem.closed}} · 요금 {{fact:mucem.price_adult}} |
@@ -1188,22 +1149,20 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | P1 | 저녁식당 | 9/10·9/12 | 휴무·지각정책 |
 | P2 | Cassis 선택 대안 | 9/11 | 기상·화재·보트, Marseille와 교체 시만 |
 | P2 | Piscine Yves Blanc | 9/12 | 자유레인·수영모·수영복 |
-
 ### 경비 구조와 입장료
 
 > 예산 설계용 기준값이다. 확정값은 트래커에서 관리한다.
 
 | 항목 | 특징 |
-|---|---|
+|---|--- |
 | 숙소 4박 | **주차 포함 여부가 결정적.** 엑상 중심 주차가 비싸다 |
 | 연료 | 니스→엑상 A8 + 카시스 왕복 + 뤼베롱 |
 | 통행료 | A8 구간 |
 | 주차 | 숙소 + 카시스 + 시내 공영 |
 | 입장료 | **세잔 사이트 + 미술관 + 재단.** 중간 수준 |
 | 식사 | 점심 4 · 저녁 4 · **시장 조달로 2회 절감 가능** |
-
 | 대상 | 요금 | 상태 |
-|---|---|---|
+|---|---|--- |
 | **Atelier des Lauves** | {{fact:atelier-des-lauves.price_adult}} | — |
 | **Jas de Bouffan** | **€9.50–15** | 2026-08-14 확인 |
 | **Fondation Maeght** | 일반 €18 · 할인 €14 · 16세 미만 무료. 매일 10:00–18:00(7–8월 19:00) | **2026-08 재확인** — fondation-maeght.com 공식 요금·시간과 일치 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
@@ -1212,7 +1171,6 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | Calanques 보트 | — | {{badge:pending|재확인}} |
 | Grasse 향수 시설 | — | {{badge:pending|재확인}} |
 | **시장 · 쿠르 미라보 · 분수 · 전망대** | **무료** | — |
-
 **이 구간은 입장료가 중간이고 주차·연료가 크다.** Barcelona(입장료 중심)와 Nice(거의 무료) 사이다.
 
 ### 절감 여지
@@ -1220,35 +1178,32 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 > **계획가(2026-08 조사)** — 실제 결제액이 아니라 예산 설계용 범위다.
 
 | 항목 | 방법 | 효과 |
-|---|---|---|
+|---|---|--- |
 | **점심 2회 시장 조달** | Day 13·15 | 가장 크고, 경험도 는다 |
 | 세잔 사이트 | **€9.50 자율 관람** 선택 | 심화 €15과의 차이 확인 후 결정 |
 | Jas de Bouffan | 아틀리에만 | 시간과 비용 동시 절감 |
 | Fondation Maeght | 정원만 관람 가능한지 확인 | {{badge:pending|가능 여부 확인}} |
 | Calanques | 도보 (규제 허용 시) | 보트 비용 회피. **단 화재 규제 확인 필수** |
-
 ### 예약카드 — 요금·시각이 걸린 두 건
 
 | 항목 | 기록 |
-|---|---|
+|---|--- |
 | 날짜·시간 | **9/10 13:40** |
 | 티켓 | 일반 €14 (특별전 기간 요율 · 2026-08-14 확인) |
 | 특별전 | Paul McCartney 포함 여부 |
 | 주소 | Place Saint-Jean de Malte |
 | 도착 | 15분 전 |
 | 주의 | 큰 가방 금지·보안검색 |
-
 | 항목 | 기록 |
-|---|---|
+|---|--- |
 | 날짜·시간 | 9/12 11:00 (9월 운영 09:00–18:00, 마지막 관람 17:00) |
 | 방식 | 오디오 자율 €9.50 / 가이드 €12 / 심화 €15 — 택1 (출처: cezanne-en-provence.com · 2026-08-14 확인) |
 | 예약 | **온라인 시간지정 필수** · cezanne-en-provence.com 또는 아익스 관광청 예약창구 |
 | 시즌 | 2026년 7/4–10/31 개방 — 9/12 는 시즌 안 |
 | 주소 | 13 avenue Paul Cézanne, 13090 Aix-en-Provence |
 | 도착 | 15분 전 · 수하물 보관 없음 |
-| 예약번호 |  |
-| 취소조건 |  |
-
+| 예약번호 |
+| 취소조건 |
 ### 현장 안전
 
 - Saint-Charles, Métro, Vieux-Port 혼잡구간에서는 크로스백 지퍼를 닫고 몸 앞에 둔다. 카페 테이블 위에 휴대전화를 두지 않는다.
@@ -1260,14 +1215,13 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 ### 2026 행사·특별전
 
 | 행사·전시 | 기간 | 일정 반영 | 판단 |
-|---|---|---|---|
+|---|---|---|--- |
 | Paul McCartney, Photographer 1963–64: Eyes of the Storm | 2026-07-04–2027-01-03 | 9/9 Musée Granet | **우선 추천** |
 | Mossi Traoré: Fashion, Too | 2026-05-20–11-16 | 9/11 Mucem | 선택 전시 |
 | Clément Cogitore: Ferdinandea | –2026-09-20 | 9/11 Mucem | 선택 전시 |
 | Biennale d’Aix | 2026-09-12–11-14 후보 | 9/12 개막일 프로그램 확인 | 공식 세부프로그램 공개 후 선택 |
 | Fête Mistralienne·Salon des vins et gastronomie | 2026-09-12 시 일정 후보 | 토요일 시장일과 충돌 여부 확인 | 선택, 스케치·휴식 우선 |
 | Course des Vendanges | 2026-09-12 후보 | 도로통제 확인 | 관람보다 교통영향 확인 |
-
 > 시 행사목록의 시간·장소·예약방식은 변동될 수 있다. 9월 12일 행사는 기존 확정 일정에 추가하지 않고, 시장·Atelier·개인활동 중 무엇을 대체하는지 결정한 뒤 선택한다.
 
 ### 출발 전 확인목록
@@ -1370,11 +1324,10 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 - Pâtisserie Weibel: https://www.aixenprovencetourism.com/en/fiche/weibel-pastry-5537517/
 - Calissons: https://www.aixenprovencetourism.com/gastronomie/produits-locaux/les-calissons/
 
-
 ## 검증 상태 — 보강본 근거
 
 | 항목 | 상태 |
-|---|---|
+|---|--- |
 | Cours Mirabeau (1649–1651 조성·마자랭 대주교·성벽 돌 사용·1876 개명·느릅나무→플라타너스·상점 없던 초기·남북 비대칭·오텔 38번지/19번지·53bis 되 가르송 2019 화재·55번지 세잔 유년 집) | 복수 출처 확인 |
 | Rotonde 분수 (1860·지름 41m 높이 12m·주철 수반 최초·사자 4×2·정의/농상/예술 방향) | 복수 출처 확인 |
 | Fontaine Moussue (1666·자크 포세·쿠르 최초·바니에 수원 18℃·10년 뒤 온천수 인입) | 복수 출처 확인 |
@@ -1412,7 +1365,6 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 | 성게 제철 | **[확인 권장]** — 미검증 |
 | Cassis 화이트 와인 원산지 표기 | **[미검증]** — 본문에서 단정하지 않도록 수정함 |
 | Marseille MuCEM 성격 | 공식 소개 기반 |
-
 ## 실행지도 · 현장 사용
 
 - [대화형 HTML 지도](../../ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.html)
@@ -1433,32 +1385,27 @@ Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 �
 #### 실행 시간표
 
 | 상대시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 도착–+30분 | 숙소·지정주차장 진입 | 보행구역 진입금지, 숙소 안내 우선 |
 | +30–+90분 | 체크인·수하물·차량고정 | 냉방·주방·세탁·주차카드 확인 |
 | +90–+135분 | 최소 장보기 | 다음 날 시장을 보므로 물·아침재료 위주 |
 | 일몰 전 30–45분 | Rotonde·Cours Mirabeau 방향 익히기 | 도착이 늦으면 삭제 |
 | 19:30 이후 | 숙소권 저녁 또는 숙소식 | 특별식 금지 |
-
 Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재단(2시간) + 마을 + 그라스**를 다 하면 도착이 밤이 된다.
 
 압박이 오면 이 순서로 줄인다.
 
 | 줄이는 순서 | 항목 |
-|---:|---|
+|---:|--- |
 | 1 | Fondation Maeght 내부 → **정원만** |
 | 2 | 마을 산책 축소 |
 | 3 | 그라스 축소 (아래 참조) |
-
-
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
 
 | 피로도 | 5/5. 도착 후 관광·특별식·운동을 넣지 않는다. |
-
 #### 대안 대책 (우천·휴관·교통 장애)
 
 | 악천후 | Saint-Paul 골목이 미끄럽거나 폭우면 체류를 60–75분으로 줄이고 Grasse 실내 향수박물관 또는 Aix 조기체크인 중 하나만 택한다. |
-
 ---
 
 ## 18. Day 2 — 9월 10일 목요일
@@ -1471,7 +1418,7 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:30–10:00 | **Richelme·목요시장** | 과일·chèvre·토마토·빵 소량구매 |
 | 10:00–11:40 | Vieil Aix | Hôtel de Ville·Albertas·Cathédrale·Saporta |
 | 11:40–12:30 | 카페·시장구매 | Weibel 또는 작은 광장 |
@@ -1480,7 +1427,6 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 | 16:10–17:10 | Quartier Mazarin | 미술관 뒤 느린 산책 |
 | 17:15–18:30 | 숙소 휴식 | 저녁 전 회복 |
 | 19:30–21:00 | Coucou 또는 La Brocherie | 첫 정식저녁 |
-
 ---
 
 ## 19. Day 3 — 9월 11일 금요일
@@ -1493,7 +1439,7 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 08:10 | Aix 숙소 출발 | Ligne 50 실제 시각·정류장 전날 확인 |
 | 09:45–10:30 | **Vieux-Port** | 항구축을 읽고 북쪽 부두로 이동 |
 | 10:30–11:30 | **Le Panier** | Place de Lenche 중심, 경사골목 60분 상한 |
@@ -1502,7 +1448,6 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 | 15:00–16:10 | **Fort Saint-Jean** | 정원·전망·카페 휴식 포함 |
 | 16:10 이후 | Vieux-Port 또는 선택 전망 | Notre-Dame de la Garde는 체력·맑은 날만 |
 | 17:15–19:00 | Saint-Charles→Aix 귀환 | 귀환편 여유, 저녁은 숙소권에서 가볍게 |
-
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
 
 - 바다·석회암 경관을 항구대도시보다 우선하고 기상·화재통제가 안정적일 때만 Marseille 하루를 통째로 교체한다.
@@ -1521,7 +1466,7 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 07:15–08:00 | Jason 선택 러닝 | 피로가 남으면 생략 |
 | 09:10–10:15 | **토요일 큰 시장** | 점심·이동일 재료구매 |
 | 11:00–12:30 | **Atelier des Lauves** — 가이드 90분 | 11:00 은 가이드 회차(€12)다. 자율관람 €9.50 은 11:30부터라 이 시간에 성립하지 않는다. 예약시간 15분 전 도착 |
@@ -1529,7 +1474,6 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 | 14:00–16:00 | Jason 스케치 / Julia 선택 수영 | Albertas·Terrain / Yves Blanc |
 | 16:00–18:10 | 합류·카페·이동간식 | 짐 70% 정리 |
 | 19:45–21:15 | Aix 마지막 저녁 | 한 곳만 예약 |
-
 ---
 
 ## 21. Day 5 — 9월 13일 일요일
@@ -1542,9 +1486,8 @@ Day 12는 니스 공항에서 차를 받아 엑상까지 가는 날이다. **재
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
-|---|---|---|
+|---|---|--- |
 | 07:30–09:15 | 아침·최종정리·체크아웃 | 냉장고·쓰레기·주차카드 확인 |
 | 09:15–10:15 | Aix→Lourmarin | 차량 내 짐 완전은폐 |
 | 10:30–13:30 | Lourmarin | 마을·스케치행사·가벼운 점심 |
 | 13:30 이후 | Coustellet 장보기·농가 체크인 | 해지기 전 진입 |
-
