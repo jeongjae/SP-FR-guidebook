@@ -68,7 +68,7 @@ source_priority: "공식 관광기관·문화부·시설·SNCF·숙박업체·�
 
 | 시간·역할 | 추천 | 이용법 |
 |---|---|---|
-| 아침 | **Les Halles 또는 Uzès 시장** | 지역의 생활밀도와 점심 재료를 함께 확보한다. |
+| 아침 | **Les Halles** (Uzès 시장은 수·토만 — 9/18 금요일엔 없다) | 지역의 생활밀도와 점심 재료를 함께 확보한다. |
 | 점심 | **시장·구시가지** | 차량일 저녁 예약을 피하고 귀환지연을 흡수한다. |
 | 저녁 | **성벽 안 숙소 생활권** | 도보귀가 가능한 범위에서 Provence 마지막 저녁을 보낸다. |
 | 스케치 | **Palais 광장 또는 Rhône 강변** | 기념비의 크기와 열린 공간을 단순한 선으로 잡는다. |
@@ -381,6 +381,9 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 
 ### 19.3 Uzès·Pont·Arles 주차
 
+> **요금** {{fact:arles.price_adult}} · **운영** {{fact:arles.hours}} · **휴관** {{fact:arles.closed}}
+> **예약** {{fact:arles.booking}} · **소요** {{fact:arles.duration}} · **가는 법** {{fact:arles.getting_there}}
+
 - Uzès: 중심부 외곽주차 후 Place aux Herbes 도보 진입.
 - Pont du Gard: 공식 사이트 주차장 사용, 자정 이후 주차 금지.
 - Les Baux: 유료주차가 사실상 필수, 앱결제 사용 가능.
@@ -472,6 +475,12 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 
 ### Rocher des Doms · Pont Saint-Bénézet {{grade:essential|필수}}
 
+> **요금** {{fact:rocher-des-doms.price_adult}} · **운영** {{fact:rocher-des-doms.hours}} · **휴관** {{fact:rocher-des-doms.closed}}
+> **예약** {{fact:rocher-des-doms.booking}} · **소요** {{fact:rocher-des-doms.duration}} · **가는 법** {{fact:rocher-des-doms.getting_there}}
+
+> **요금** {{fact:pont-saint-benezet.price_adult}} · **운영** {{fact:pont-saint-benezet.hours}} · **휴관** {{fact:pont-saint-benezet.closed}}
+> **예약** {{fact:pont-saint-benezet.booking}} · **소요** {{fact:pont-saint-benezet.duration}} · **가는 법** {{fact:pont-saint-benezet.getting_there}}
+
 **지형을 이해하는 한 세트다.** 따로 보면 의미가 반감된다.
 
 #### Rocher des Doms
@@ -513,6 +522,9 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 ---
 
 ### Uzès Place aux Herbes·구시가지 {{grade:essential|필수}}
+
+> **요금** {{fact:uzes.price_adult}} · **운영** {{fact:uzes.hours}} · **휴관** {{fact:uzes.closed}}
+> **예약** {{fact:uzes.booking}} · **소요** {{fact:uzes.duration}} · **가는 법** {{fact:uzes.getting_there}}
 
 우제스는 수요일과 토요일 오전 시장으로 유명하다. 수요일은 7:30–14:00에 마을 중심에서, **토요일은 7:30–13:00에 플라스 오 제르브**에서 열린다.
 
@@ -638,6 +650,9 @@ Arles는 로마 식민도시의 유적, 중세 성당과 회랑, 반 고흐의 �
 
 ### Théâtre antique {{grade:essential|필수}}
 
+> **요금** {{fact:theatre-antique.price_adult}} · **운영** {{fact:theatre-antique.hours}} · **휴관** {{fact:theatre-antique.closed}}
+> **예약** {{fact:theatre-antique.booking}} · **소요** {{fact:theatre-antique.duration}} · **가는 법** {{fact:theatre-antique.getting_there}}
+
 Arènes보다 한 세기 앞선 극장 유적이다. 남은 무대·기둥·객석의 비례를 35–45분만 보고, 인접한 다른 고대유적을 연달아 추가하지 않는다. 문화부 공식 사이트에 9월 19–20일 무료 현장 해설이 등록돼 있으나 정확한 회차는 출발 전 확인한다.
 
 기원전 1세기 아우구스투스 시대의 극장으로, 만 명이 앉던 객석은 채석장 신세를 오래 지나
@@ -650,6 +665,9 @@ veuves)'라는 별명**으로 불린다 — 그 둘이 오히려 사라진 전�
 
 ### Place du Forum {{grade:priority|우선추천}}
 
+> **요금** {{fact:place-du-forum.price_adult}} · **운영** {{fact:place-du-forum.hours}} · **휴관** {{fact:place-du-forum.closed}}
+> **예약** {{fact:place-du-forum.booking}} · **소요** {{fact:place-du-forum.duration}} · **가는 법** {{fact:place-du-forum.getting_there}}
+
 고대 포룸의 중심이 오늘날 카페 광장으로 바뀐 곳이다. Van Gogh Café의 재현 여부보다 광장의 실제 생활과 로마 도시축의 흔적을 본다. 점심 또는 카페 휴식을 60–75분 확보한다.
 
 광장 북쪽 호텔 벽에 로마 포룸 신전의 **코린트 기둥 두 개가 박혀 있다** — 광장 지하가
@@ -659,6 +677,9 @@ veuves)'라는 별명**으로 불린다 — 그 둘이 오히려 사라진 전�
 부흥 운동으로 노벨문학상을 받은 시인)의 동상이 광장을 지키고 있다. 점심 자리는 광장 테라스보다 광장에서 한 골목 들어간 안쪽이 값도 소음도 낫다. 광장 남쪽 모퉁이에서 시청 광장 쪽으로 이어지는 골목이 구시가 산책의 등뼈다. 저녁이면 광장 전체가 테라스가 되므로 낮과는 완전히 다른 장소가 된다. 카페 값은 관광지 요율이니 커피 한 잔의 자릿세라고 생각하는 편이 맞다.
 
 ### Cloître Saint-Trophime {{grade:priority|우선추천}}
+
+> **요금** {{fact:cloitre-saint-trophime.price_adult}} · **운영** {{fact:cloitre-saint-trophime.hours}} · **휴관** {{fact:cloitre-saint-trophime.closed}}
+> **예약** {{fact:cloitre-saint-trophime.booking}} · **소요** {{fact:cloitre-saint-trophime.duration}} · **가는 법** {{fact:cloitre-saint-trophime.getting_there}}
 
 로마네스크와 고딕 회랑이 이어지는 중세의 핵심이다. 2026년 9월 공식 운영은 09:00–19:00로 확인됐지만 문화유산의 날 동선·무료개방은 출발 전 재확인한다. 실내·그늘 비중이 있어 우천과 더위에 유리하며 45–60분이면 충분하다.
 
@@ -676,6 +697,9 @@ veuves)'라는 별명**으로 불린다 — 그 둘이 오히려 사라진 전�
 15세기 저택을 개조한 건물의 옥상 유리 설치작에서 아를 지붕이 내려다보인다. 체류 60분 상한이면 충분하다. 서점 겸 뮤지엄숍의 반 고흐 관련 서가가 알차서, 기념품보다 화집 쪽이 남는 소비다. 건물 자체가 도심 한복판이라 동선에서 벗어나지 않는다.
 
 ### La Roquette {{grade:priority|우선추천}}
+
+> **요금** {{fact:la-roquette.price_adult}} · **운영** {{fact:la-roquette.hours}} · **휴관** {{fact:la-roquette.closed}}
+> **예약** {{fact:la-roquette.booking}} · **소요** {{fact:la-roquette.duration}} · **가는 법** {{fact:la-roquette.getting_there}}
 
 론강과 가까운 생활 골목이다. 기념물 관람을 끝낸 뒤 45분 정도 걷고 카페에서 쉬며 Arles가 유적도시만이 아니라 현재의 주거도시임을 확인한다. 늦어지면 강변과 La Roquette 중 하나만 고른다.
 
@@ -723,6 +747,9 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 
 ### Carrières des Lumières {{grade:priority|우선추천}}
 
+> **요금** {{fact:carrieres-des-lumieres.price_adult}} · **운영** {{fact:carrieres-des-lumieres.hours}} · **휴관** {{fact:carrieres-des-lumieres.closed}}
+> **예약** {{fact:carrieres-des-lumieres.booking}} · **소요** {{fact:carrieres-des-lumieres.duration}} · **가는 법** {{fact:carrieres-des-lumieres.getting_there}}
+
 #### 2026년 프로그램이 확인됐다
 
 2026년 2월 13일부터 카리에르 데 뤼미에르는 두 개의 새 몰입형 전시를 선보인다 — **「피카소, 움직이는 예술」**, 큐비즘 공동 창시자의 예술 여정을 다시 보게 만드는 몰입 경험. 그리고 **「프리다 칼로, 한복판에서」**, 멕시코에서 가장 유명한 화가의 여정을 대표작과 자화상으로 따라가는 짧은 프로그램이다.
@@ -765,6 +792,9 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 생활도시의 얼굴이 앞으로 나온다. 우리 일정에서는 아를을 통째로 교체할 때만 쓰는 대안이라, 반나절 이상을 배정하지 않는다. 글라눔까지 보려면 마을에서 도보 30분 남짓의 가로수길을 걷는다.
 
 ### Saint-Paul-de-Mausole {{grade:essential|필수}}
+
+> **요금** {{fact:saint-paul-de-mausole.price_adult}} · **운영** {{fact:saint-paul-de-mausole.hours}} · **휴관** {{fact:saint-paul-de-mausole.closed}}
+> **예약** {{fact:saint-paul-de-mausole.booking}} · **소요** {{fact:saint-paul-de-mausole.duration}} · **가는 법** {{fact:saint-paul-de-mausole.getting_there}}
 
 #### 무엇인가 — 수도원이 병원이 된 곳
 
@@ -891,7 +921,7 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 | 식당 | 성격 | 추천 주문·이용법 | 계획가격/인 | 예약 |
 |---|---|---|---:|---|
 | **Fou de Fafa** | 작은 창작 비스트로 · 휴무 {{fact:fou-de-fafa.closed}} | 계절메뉴에서 생선·오리·채소요리 2–3개 공유 | €35–55 | 강권 |
-| **Le Goût du Jour** | 정제된 지역재료 코스 | Inspiration 또는 dégustation, 특별저녁 1회 | €55–95 | 강권 |
+| **Le Goût du Jour** | 정제된 지역재료 코스 · 휴무 {{fact:le-gout-du-jour.closed}} | Inspiration 또는 dégustation, 특별저녁 1회 | €55–95 | 강권 |
 | **Restaurant SEVIN** | Palais 인근 고급식 | 2026 계절메뉴, 토마토·남프랑스 재료 중심 | €90–160+ | 필수 |
 | **Les Cocottes Saint-Louis** | 수도원정원 캐주얼 프렌치 | 2026 메뉴 €33–38, rouget·ravioles·채소 | €35–55 | 권장 |
 | **La Fourchette** | 전통 남부 비스트로 | 남부풍 생선·고기·지역전통, 영업일 제한 큼 | €35–60 | 필수·휴무확인 |
@@ -913,7 +943,7 @@ Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 �
 
 | 지역 | 기본 | 특별식 선택 | 피할 것 |
 |---|---|---|---|
-| Uzès | 시장 빵·치즈·과일·타르틴 | Place aux Herbes 비스트로 | 토요일 2시간 코스요리 |
+| Uzès | Place aux Herbes 빵집·치즈가게(시장은 수·토만 — 9/18 금요일엔 없다) | Place aux Herbes 비스트로 | 아케이드 광장의 느린 점심 |
 | Pont du Gard | Uzès에서 산 피크닉 | 사이트 카페 | 차량에 냉장식품 오래 방치 |
 | Arles | Place du Forum 주변 비스트로·샌드위치 | 구시가지 계절식당 | 유적 사이 긴 코스요리 |
 | Les Baux | 이른 샐러드·타르틴 | 전망 레스토랑은 예약·가격 확인 | 관광객 몰리는 12:30 무예약 |
@@ -950,7 +980,7 @@ Saint-Rémy·Les Baux 는 기본 일정이 아니라 Day 21 대안 축이다 —
 
 | 장소 | 운영·일정 | 역할 |
 |---|---|---|
-| **Les Halles d’Avignon** | {{fact:les-halles.hours}} · 휴무 {{fact:les-halles.closed}} | 아침장보기·점심·숙소식 |
+| **Les Halles d’Avignon** | {{fact:les-halles-d-avignon.hours}} · 휴무 {{fact:les-halles-d-avignon.closed}} | 아침장보기·점심·숙소식 |
 | **Uzès Place aux Herbes** | 9/18 금요일은 시장일이 아님 | 구시가지·상점·빵집 중심으로 실행 |
 | Uzès 토요시장 | 이번 체류와 불일치 | 9/19 Arles를 대체하지 않음 |
 | L’Isle 목요시장 | 이번 이동일과 불일치 | 선택 자료로만 보존 |
@@ -1019,8 +1049,8 @@ Porte Saint-Michel
 
 ### 20.3 9/18 Uzès·Pont
 
-- 폭우: Uzès 아케이드·시장 축소, Pont 실내공간 후 조기귀환.
-- 시장 주차지연 45분 이상: Uzès 체류를 2시간으로 고정.
+- 폭우: Uzès 아케이드 축소, Pont 실내공간 후 조기귀환.
+- 주차지연 45분 이상: Uzès 체류를 2시간으로 고정.
 - 피로: 조명 대기 삭제.
 
 ### 20.4 9/19 Arles (대안 Alpilles)
@@ -1141,13 +1171,13 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 | 대상 | 요금 | 상태 |
 |---|---|---|
-| **Carrières des Lumières** | **성인 €13–16.50** (2026) | 확인 |
+| **Carrières des Lumières** | {{fact:carrieres-des-lumieres.price_adult}} | 확인 |
 | Palais des Papes | — | {{badge:pending|재확인}} |
 | Pont Saint-Bénézet | — | {{badge:pending|재확인}} · 통합권 가능성 |
 | Pont du Gard | — | {{badge:pending|재확인}} |
 | Saint-Paul-de-Mausole | — | {{badge:pending|재확인}} |
 | Glanum | — | {{badge:pending|재확인}} |
-| **Les Halles · Uzès 시장 · 성벽 · Rocher des Doms** | **무료** | — |
+| **Les Halles · Uzès 구시가지 · 성벽 · Rocher des Doms** | **무료 · 상시 개방** | — |
 
 > **통합권을 확인하라.** 아비뇽은 교황궁+다리 통합권이 있는 것으로 알려져 있다 {{badge:pending|확인 필요}}.
 
@@ -1180,7 +1210,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | P0 | 렌터카 반납 | 9/21 Avignon TGV | 영업시간·주유·보증금·반납지 |
 | P0 | Avignon TGV→Lyon | 9/20 | Part-Dieu 직행, 변경조건, 수하물 |
 | P1 | Palais+Pont 티켓 | 9/18 09:45 | 공사구간·시간지정·결합권 |
-| P1 | 특별저녁 1회 | 9/18 또는 9/20 | Fou de Fafa·SEVIN·Le Goût du Jour |
+| P1 | 특별저녁 1회 | 9/18(금) 또는 9/20(일) | Fou de Fafa·SEVIN·Le Goût du Jour — 셋 다 그 두 날엔 연다 |
 | P1 | Arles JEP 운영 재확인 | 9/19 | Arènes·Théâtre antique 공식 프로그램의 회차·예약·집합장소 |
 | P2 | Carrières | 9/20 선택 | 프로그램·시간지정·환불 |
 | P3 | Pont du Gard | 9/19 | 주차·문화공간·조명·날씨 |
@@ -1224,7 +1254,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - [ ] 숙소까지 성벽 진입경로를 오프라인 지도에 저장
 - [ ] Palais des Papes 결합권 예약
 - [ ] 9/17 Requien Nocturne 프로그램 최종 확인
-- [ ] 9/19 Uzès 시장·Pont du Gard 날씨와 주차 확인
+- [ ] 9/18 Uzès·Pont du Gard 날씨와 주차 확인 (금요일이라 시장은 없다)
 - [ ] 9/19–20 JEP 예약 필요행사 확인
 - [ ] 차량으로 Arles를 갈 경우 9/19 외곽 공영주차·JEP 통제 확인
 - [ ] Carrières를 넣을지 전날 최종 결정
@@ -1277,7 +1307,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 1. **성벽 안 저녁산책:** 관광객이 빠진 Rue des Teinturiers와 작은 광장을 걷는다.
 2. **Les Halles에서 숙소식 한 끼 구입:** roast chicken, ratatouille, 치즈와 빵.
-3. **Uzès 시장 피크닉 준비:** Pont du Gard에서 먹을 빵·치즈·과일을 산다.
+3. **Pont du Gard 피크닉 준비:** 시장이 없는 금요일이므로 Place aux Herbes 의 상설 빵집·치즈가게·정육점에서 산다.
 4. **Pont du Gard에서 15분 아무것도 하지 않기:** 전체 아치를 바라보며 규모를 체감.
 5. **Arles의 시간층 관찰:** Arènes의 로마 구조에서 Saint-Trophime의 중세, La Roquette의 생활골목으로 걸어간다.
 
@@ -1289,9 +1319,12 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 
 #### Le Goût du Jour — 이번 구간의 한 번뿐인 특별식 후보
 
+**휴무 {{fact:le-gout-du-jour.closed}}** — 9/16(수) 첫 저녁에는 쓸 수 없다.
 정제된 코스를 선택한다면 Palais 관람일 저녁보다 생활일 또는 다음 날 운전이 짧은 날에 배치한다. 와인페어링은 운전 일정과 분리한다.
 
 #### Restaurant SEVIN — 교황궁 권역의 고급식은 목적을 분명히
+
+> 📍 {{fact:restaurant-sevin.address}} · 🚶 {{fact:restaurant-sevin.getting_there}} · 🕐 {{fact:restaurant-sevin.hours}} · 휴무 {{fact:restaurant-sevin.closed}} · {{fact:restaurant-sevin.booking}} · {{fact:restaurant-sevin.price_range}}
 
 위치와 서비스, 코스경험을 위해 가는 곳이다. 여행 전체에 이미 특별식이 많다면 생략해도 된다. 선택할 경우 다른 비스트로를 줄여 총예산과 식사피로를 조정한다.
 
@@ -1308,7 +1341,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - **유산의 날 혼잡이 크면:** Palais 입장시간 유지, 무료 특별개방은 포기
 - **Pont du Gard 날씨가 나쁘면:** Uzès 체류 연장 + Avignon 박물관
 - **로마유적이 반복되면:** Glanum 삭제
-- **특별식:** Fou de Fafa(수요일 휴무 — 9/16 불가) 또는 Le Goût du Jour 중 하나
+- **특별식:** Fou de Fafa({{fact:fou-de-fafa.closed}} — 9/16 수요일 불가) 또는 Le Goût du Jour({{fact:le-gout-du-jour.closed}}) 중 하나. **9/16 첫 저녁은 Les Cocottes Saint-Louis 단독이다** — 둘 다 수요일에 닫는다
 - **가장 중요한 장면:** Palais 광장의 저녁빛 또는 Pont du Gard 강변의 전체전망
 
 ### 공식자료
@@ -1361,10 +1394,10 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | Pont Saint-Bénézet (12세기·22개 중 4개·920m·베네제 전설·아돌프 아당 19세기 작곡·15세기 이후 수문 변화·17세기 폐기·1995 유네스코·춤 허용) | 복수 출처 확인 |
 | Pont du Gard (1세기 중반·50.02km·외르 수원→님·48.8m·3층·아치 6/11/35·상단 273m 원래 360m·경사 34cm/km·17m 낙차·하루 4만㎥·회반죽 없음·6톤 석재·1840 역사기념물·1985 유네스코·통행료 다리로 존속·1400년대 우제스 주교와 공작이 유지) | 복수 출처 확인 |
 | Uzès (1세기 정착·1088 세뇌르·1565 공작·수 7:30–14:00 / 토 7:30–13:00 Place aux Herbes·아비뇽에서 45분·중세 중심가 차량 통제) | 확인 |
-| **Carrières des Lumières 2026** | **복수 출처 확인** — 피카소 + 프리다 칼로, 2/13부터 · 9월 9:30–19:00 · 성인 €13–16.50 |
-| Saint-Paul-de-Mausole (1000년경 수도원·1789 국유화·1807 메르퀴랭·페롱 박사·생조제프 수녀회·관람 구성·2026/2/9–2027/1/3·봄가을여름 9:30–18:45) | 복수 출처 확인 |
+| **Carrières des Lumières 2026** | **복수 출처 확인** — 피카소 + 프리다 칼로, 2/13부터 · {{fact:carrieres-des-lumieres.hours}} · {{fact:carrieres-des-lumieres.price_adult}} |
+| Saint-Paul-de-Mausole (1000년경 수도원·1789 국유화·1807 메르퀴랭·페롱 박사·생조제프 수녀회·관람 구성·2026/2/9–2027/1/3) | 복수 출처 확인 · 운영 {{fact:saint-paul-de-mausole.hours}} |
 | **반 고흐 입원 시작일** | **자료 불일치** — 5월 3일 vs 5월 8일. 공식 사이트 따라 8일 채택, 본문 명시 |
-| **Les Halles 운영 요일** | 운영 {{fact:les-halles.hours}} · 휴무 {{fact:les-halles.closed}} · Place Pie 의 실내시장, 상인 40여 곳. 축제 기간에는 주 7일 여는 때가 있다 {{badge:unverified|축제 기간 예외 미확인}} |
+| **Les Halles 운영 요일** | 운영 {{fact:les-halles-d-avignon.hours}} · 휴무 {{fact:les-halles-d-avignon.closed}} · Place Pie 의 실내시장, 상인 40여 곳. 축제 기간에는 주 7일 여는 때가 있다 {{badge:unverified|축제 기간 예외 미확인}} |
 | **Palais des Papes 요금·히스토패드 현행** | **2026-08-01 인상 반영** — 요금은 {{fact:palais-des-papes.price_adult}} 이 정본이다 (2026-08-01 이전 요금 서술은 폐기). 8세 미만 무료. 3월–11월 초 09:00–19:00, 마지막 입장 폐관 1시간 전. **히스토패드는 입구에서 무료 제공**(7개 언어, 증강현실). ⚠ **2026/5/1 부터 관람 구성이 바뀐다** — 새 해설 동선과 그동안 공개하지 않던 방이 열린다. 출처: palais-des-papes.com 공식. **바뀐 뒤의 요금·동선은 출발 전 재확인** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | **Pont du Gard 요금·운영·야간 조명 2026** | **요금 구조 정정** — {{fact:pont-du-gard.price_adult}} 이 정본이다 (종전의 '야외 입장료' 서술은 오류 — 부지·다리는 무료다). 18세 미만·학생·장애인 무료. 2026년 연중 매일 08:00–24:00. ⚠ **음향·조명쇼는 7/4–8/30 22:30 에만 있다 — Day 21(9/18)에는 열리지 않는다.** 출처: pontdugard.fr 공식 · 가르 관광청 {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | **Les Baux 마을·성 상세** | **[보완 필요]** — 조사 부족 |
@@ -1372,7 +1405,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | **문화유산의 날 각 유적 운영 방침** | **날짜 확인 · 세부는 출발 전 재확인** — 2026년은 9/19–20(토·일). 공식 포털에 Arles의 Arènes와 Théâtre antique 플래시 투어가 게시되어 있다. **정확한 회차·집합장소·예약·다른 시설의 무료 여부는 개별 확인** {{badge:pending|출발 전 재확인}} |
 | 구궁/신궁 성격 차이 | **[교차 확인 권장]** — 일반적 서술 |
 | Avignon TGV ↔ Centre 셔틀 | **복수 출처 확인 — 전용 셔틀은 없다.** 세 가지가 있다. ① **TER 'La Virgule'** — Avignon Centre ↔ Avignon TGV 를 **4분**에 잇고 하루 약 35 왕복. 다만 **간격이 불규칙**하다(전용 셔틀이 아니라 TGV 역을 지나는 TER 다). ② Orizo 14번 버스 — 15–30분. ③ LER 20번 — 약 15분, 15–20분 간격. **렌터카 반납 후 TGV 를 타는 Day 23 에는 La Virgule 시각을 미리 확인할 것.** 출처: sncf-connect.com · garesetconnexions.sncf · Orizo {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
-| Uzès 주차·시장 | 확인 |
+| Uzès 주차 (금요일 — 시장 없음) | 확인 |
 | Carrières des Lumières 2026 요금 | 확인 |
 | **아를 반 고흐 시기 (1888.2–1889.5)** | **[확인 권장]** — 일반 지식 기반 |
 | **Châteauneuf-du-Pape 거리** | **복수 출처 확인** — 아비뇽에서 **약 17km, 차로 20분**. 주로 D907 경유. 출처: ViaMichelin · 노선 계산 사이트 복수 |
@@ -1382,7 +1415,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | **Papeton d'Aubergine · Daube avignonnaise** | **[교차 확인 권장]** — 향토음식 서술 미검증 |
 | Brandade de Nîmes | 일반 지식 |
 | Tavel 로제 전용 AOC | 일반 지식. **[교차 확인 권장]** |
-| Pont du Gard 좌안·우안 주차 | **복수 출처 확인** — **어느 쪽이든 차량당 €9**(탑승 인원 무관). **좌안(rive gauche · Vers-Pont-du-Gard)이 정문**이고 박물관·영상관·상점이 이쪽이다(800대). **우안(rive droite · Remoulins)은 600대**로 피크닉·물놀이에 가깝다. **박물관을 볼 거면 좌안이다.** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
+| Pont du Gard 좌안·우안 주차 | **복수 출처 확인** — 요금 {{fact:pont-du-gard.price_adult}} (주차는 탑승 인원 무관 차량당). **좌안(rive gauche · Vers-Pont-du-Gard)이 정문**이고 박물관·영상관·상점이 이쪽이다(800대). **우안(rive droite · Remoulins)은 600대**로 피크닉·물놀이에 가깝다. **박물관을 볼 거면 좌안이다.** {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 | Les Baux · Saint-Rémy 주차 | **복수 출처 확인** — **레보는 연중 08:00–19:00 유료**, 시간당 €5~, 최대 11시간. 주차장은 **Parking Centre**(중세 마을 쪽)와 **Parking Carrières des Lumières** 둘. 미터기 또는 PrestoPark 앱. **생레미는 2026/5/4 부터 모든 유료구역 1시간 30분 무료**로 바뀌었다. 레보가 만차면 생레미·모산레잘피유에 대고 도보·자전거로 15–25분 접근하는 방법이 있다. {{badge:pending|2026-08 확인 · 출발 전 재확인}} |
 
 ## 실행지도 · 현장 사용
@@ -1455,7 +1488,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | 15:05–16:00 | **Pont Saint-Bénézet** | Palais+Pont 결합권이 합리적. 다리 위보다 강과 도시관계 이해가 핵심 |
 | 16:10–17:15 | Rhône 강변 또는 Île de la Barthelasse 시점 | 무료 강나룻배 운항 여부·바람 확인. 운항 불확실하면 강변만 |
 | 17:30–18:30 | 숙소 휴식·샤워 | 저녁 전 정식 휴식 |
-| 19:30–21:00 | **La Fourchette** 또는 **Le Goût du Jour** | {{badge:pending|영업일 확인}} 금요일 휴무 가능성이 있는 식당은 예약 전 영업일 재확인. 대체는 Cocottes |
+| 19:30–21:00 | **La Fourchette** 또는 **Le Goût du Jour** | 9/18 은 금요일이라 둘 다 연다 — La Fourchette 는 {{fact:la-fourchette.closed}}, Le Goût du Jour 는 {{fact:le-gout-du-jour.closed}}. 대체는 Cocottes |
 
 #### 오늘 꼭 해볼 것
 
@@ -1528,7 +1561,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - **A 경관형**: 다리 양측 시점+강변만, 1시간 30분
 - **B 이해형**: 박물관·수로 설명 추가, 2시간 30분
 - **C 저녁형**: 조명까지 대기하되 Avignon 귀환 20:30 이후 허용
-- **우천형**: Uzès 시장 축소+Pont 실내공간 후 조기귀환
+- **우천형**: Uzès 구시가지 축소+Pont 실내공간 후 조기귀환
 
 ---
 

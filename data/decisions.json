@@ -187,6 +187,20 @@
         "11_Paris_*.md"
       ],
       "note": "본문 원칙 '같은 미술관에 두 번 가지 않는다'는 유지하고 예외를 병기한다. 2회차는 10/6(화) Cassatt 전 개막일로 고정 — 10/7·10/8 은 Bourse de Commerce 방문 가능일(준비기간 8/26–10/5, Remember Me 10/7 개막)이라 비워 둔다."
+    },
+    {
+      "id": "DEC-A13",
+      "date": "2026-08-18",
+      "decision": "Abbaye de Sénanque 공식 도메인은 senanque.fr 다. senanque.com 은 무관한 사이트로 리다이렉트된다",
+      "forbidden_patterns": [
+        "senanque.com",
+        "abbayedesenanque.com"
+      ],
+      "required_patterns": [],
+      "scope": [
+        "*.md"
+      ],
+      "note": "가이드북이 엉뚱한 사이트로 보내는 것은 현장 사고다. S2 조사에서 확인 (2026-08-17)"
     }
   ]
 }

@@ -519,6 +519,9 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### Latin Quarter {{grade:essential|필수}}
 
+> **요금** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.price_adult}} · **운영** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.hours}} · **휴관** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.closed}}
+> **예약** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.booking}} · **소요** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.duration}} · **가는 법** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.getting_there}}
+
 **'라틴'은 학생들이 라틴어로 말하던 동네라는 뜻이다 — 800년째 학생 구역이다.**
 
 **Day 29 (9/26 토)**
@@ -559,6 +562,9 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 {{badge:pending|시장 운영 요일·시간 현행 확인}}
 
 ### Le Marais {{grade:essential|필수}}
+
+> **요금** {{fact:le-marais-place-des-vosges-carnavalet-archives.price_adult}} · **운영** {{fact:le-marais-place-des-vosges-carnavalet-archives.hours}} · **휴관** {{fact:le-marais-place-des-vosges-carnavalet-archives.closed}}
+> **예약** {{fact:le-marais-place-des-vosges-carnavalet-archives.booking}} · **소요** {{fact:le-marais-place-des-vosges-carnavalet-archives.duration}} · **가는 법** {{fact:le-marais-place-des-vosges-carnavalet-archives.getting_there}}
 
 **Day 30 (9/27 일) · Day 35 (10/2 금)**
 
@@ -602,6 +608,9 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Montmartre · South Pigalle {{grade:essential|필수}}
 
+> **요금** {{fact:montmartre-south-pigalle.price_adult}} · **운영** {{fact:montmartre-south-pigalle.hours}} · **휴관** {{fact:montmartre-south-pigalle.closed}}
+> **예약** {{fact:montmartre-south-pigalle.booking}} · **소요** {{fact:montmartre-south-pigalle.duration}} · **가는 법** {{fact:montmartre-south-pigalle.getting_there}}
+
 **Day 32 (9/29 화)**
 
 제목이 정확하다 — **"관광언덕에서 생활동네로 내려오기"**.
@@ -638,6 +647,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 {{badge:pending|Sacré-Cœur 운영시간·돔 입장 조건 확인 필요}}
 
 ### Montorgueil {{grade:priority|우선추천}}
+
+> 📍 {{fact:montorgueil-les-halles.address}} · 🚶 {{fact:montorgueil-les-halles.getting_there}} · 🕐 {{fact:montorgueil-les-halles.hours}} · 휴무 {{fact:montorgueil-les-halles.closed}} · {{fact:montorgueil-les-halles.booking}} · {{fact:montorgueil-les-halles.price_range}}
 
 **10/3 유연한 문화일의 선택 모듈**
 
@@ -695,6 +706,9 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 > 정리했다 — 궁전·역사건축에 대한 관심이 낮거나, 비·철도혼잡이 있으면 15구를 택한다. **베르사유를 취소해도 파리 체류의 완성도는 떨어지지 않는다.**
 
 ### 월요일 모듈 {{grade:priority|우선추천}}
+
+> **요금** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.price_adult}} · **운영** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.hours}} · **휴관** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.closed}}
+> **예약** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.booking}} · **소요** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.duration}} · **가는 법** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.getting_there}}
 
 **Day 38 (10/5 월)**
 
@@ -934,6 +948,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Giverny와 어느 쪽인가
 
+> 📍 {{fact:giverny-fondation-claude-monet.address}} · 🚶 {{fact:giverny-fondation-claude-monet.getting_there}} · 🕐 {{fact:giverny-fondation-claude-monet.hours}} · 휴무 {{fact:giverny-fondation-claude-monet.closed}} · {{fact:giverny-fondation-claude-monet.booking}} · {{fact:giverny-fondation-claude-monet.price_range}}
+
 Day 41의 선택이다.
 
 | | A. Giverny | B. Orangerie |
@@ -1054,6 +1070,12 @@ Day 41의 선택이다.
 
 ### 25.3 Grand Palais — Cézanne et nous
 
+> **요금** {{fact:grand-palais-cezanne-et-nous.price_adult}} · **운영** {{fact:grand-palais-cezanne-et-nous.hours}} · **휴관** {{fact:grand-palais-cezanne-et-nous.closed}}
+> **예약** {{fact:grand-palais-cezanne-et-nous.booking}} · **소요** {{fact:grand-palais-cezanne-et-nous.duration}} · **가는 법** {{fact:grand-palais-cezanne-et-nous.getting_there}}
+
+> **요금** {{fact:grand-palais.price_adult}} · **운영** {{fact:grand-palais.hours}} · **휴관** {{fact:grand-palais.closed}}
+> **예약** {{fact:grand-palais.booking}} · **소요** {{fact:grand-palais.duration}} · **가는 법** {{fact:grand-palais.getting_there}}
+
 - 2026년 9월 23일–2027년 1월 17일.
 - Cézanne 약 70점과 후대 작가들의 작업을 병치.
 - Aix에서 작업실과 도시를 본 Jason·Julia에게 일반 관광객보다 의미가 크다.
@@ -1079,6 +1101,9 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 ## 26. 도서관·서점
 
 ### BnF Richelieu — 우선 추천
+
+> **요금** {{fact:bnf-richelieu-salle-ovale.price_adult}} · **운영** {{fact:bnf-richelieu-salle-ovale.hours}} · **휴관** {{fact:bnf-richelieu-salle-ovale.closed}}
+> **예약** {{fact:bnf-richelieu-salle-ovale.booking}} · **소요** {{fact:bnf-richelieu-salle-ovale.duration}} · **가는 법** {{fact:bnf-richelieu-salle-ovale.getting_there}}
 
 - Oval Room은 무료.
 - 화요일 10:00–20:00, 수–일 10:00–18:00, 월요일 휴관 {{badge:pending|공식 확인}}
@@ -1189,6 +1214,9 @@ Beaubourg 본관은 개보수로 폐관 중이다. 외관만 보고 “닫힌 �
 ---
 
 ### Versailles {{grade:priority|우선추천}} — Day 36 A안
+
+> **요금** {{fact:versailles.price_adult}} · **운영** {{fact:versailles.hours}} · **휴관** {{fact:versailles.closed}}
+> **예약** {{fact:versailles.booking}} · **소요** {{fact:versailles.duration}} · **가는 법** {{fact:versailles.getting_there}}
 
 **Day 36 (10/3 토)**
 

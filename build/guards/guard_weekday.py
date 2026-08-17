@@ -22,37 +22,17 @@ from common import (DAY_RE, FACT_RE, ITINERARY, ROOT, WD, chapter_files,
 
 PLACE_DAYS = ROOT / "data/place-days.json"
 
+from closed_parser import (EMPTY, NO_WEEKLY, PARSED, UNPARSEABLE,
+                           closed_from_hours, parse_closed)
+
 WD_ORDER = "월화수목금토일"
-# 앞 글자가 한글이면 '공휴일'·'평일', 숫자면 '12월'·'25일' 의 끝글자를 요일로 오독한 것이다.
-_WD = r"(?<![가-힣0-9])[월화수목금토일](?:요일)?"
-# 요일(들) 바로 뒤에 휴관 표현이 붙은 것만 휴관 요일로 본다.
-# "화요일 휴관" · "일요일·월요일 휴관" · "월–금 휴무" · "9/1~6/30 월요일 휴장"
-CLOSED_WD = re.compile(
-    rf"((?:{_WD})(?:\s*[·,및]\s*(?:{_WD}))*(?:\s*[~\-–]\s*(?:{_WD}))?)"
-    r"\s*(?:은|는|만|에|엔|과|와)?\s*"
-    r"(?:정기\s*)?(?:휴관|휴무|휴장|휴점|폐관|폐장|closed)")
-WD_TOKEN = re.compile(_WD)
 # "그 날은 닫혀서 못 간다"고 이미 쓴 줄은 충돌이 아니라 회피 서술이다.
 AVOID = re.compile(r"불가|휴관|휴무|제외|대신|아니다|않는다|금지|피한|못\s|없다|"
                    r"decision-pending|대안|대체")
+# 참고링크만 있는 줄은 배치가 아니다 — "- [Fou de Fafa](https://…)"
+LINK_ONLY = re.compile(r"^\s*[-*]?\s*\[[^\]]+\]\((https?:|\.{1,2}/)[^)]*\)\s*$")
 # 9/22 · 9월 22일 · 09/22
 DATE_LIT = re.compile(r"(?<!\d)(\d{1,2})\s*[/월]\s*(\d{1,2})\s*일?(?!\d)")
-
-
-def closed_weekdays(value):
-    """휴관 요일만 뽑는다. 영업시간 나열('월–금 09:00')을 휴관으로 읽으면 안 된다."""
-    if not value:
-        return set()
-    out = set()
-    for m in CLOSED_WD.finditer(value):
-        span = m.group(1)
-        wds = [t[0] for t in WD_TOKEN.findall(span)]
-        if len(wds) == 2 and re.search(r"[~\-–]", span):     # "월–금" 은 범위다
-            a, b = (WD_ORDER.index(w) for w in wds)
-            out |= {WD_ORDER[i] for i in range(a, b + 1)} if a <= b else {wds[0], wds[1]}
-        else:
-            out |= set(wds)
-    return out
 
 
 def line_date(line, year):
@@ -94,7 +74,10 @@ def main():
 
     problems, g1c = [], []
     checked = skipped_no_closed = skipped_no_day = avoided = 0
+    skipped_unparseable = skipped_no_weekly = 0
+    unparseable = set()
     by_source = {"literal": 0, "day-heading": 0, "place-days": 0}
+    by_rule = {}
 
     # 이름 → placeId (본문에 토큰이 없어도 시설명으로 잡는다)
     name_to_pid = {}
@@ -121,6 +104,8 @@ def main():
 
         # G1a/G1b — 전문 스캔
         for idx, line in enumerate(lines):
+            if LINK_ONLY.match(line):
+                continue
             hits = {(m.group(1), m.group(2)) for m in FACT_RE.finditer(line)}
             pids = {pid for pid, _ in hits}
             for nm, pid in name_to_pid.items():
@@ -133,8 +118,23 @@ def main():
                 if not p:
                     continue
                 cl = p.get("facts", {}).get("closed")
-                if not cl or not cl.get("value"):
+                closed_wd, st = parse_closed((cl or {}).get("value"))
+                if st in (UNPARSEABLE, EMPTY):
+                    # 규칙 ③ — closed 로 판정 못 했을 때만 hours 의 여집합을 보조로 쓴다
+                    hv = p.get("facts", {}).get("hours", {}).get("value")
+                    from_hours = closed_from_hours(hv)
+                    if from_hours:
+                        closed_wd, st = from_hours, PARSED
+                        by_rule["hours-여집합"] = by_rule.get("hours-여집합", 0) + 1
+                if st == EMPTY:
                     skipped_no_closed += 1
+                    continue
+                if st == UNPARSEABLE:
+                    unparseable.add(pid)
+                    skipped_unparseable += 1
+                    continue
+                if st == NO_WEEKLY:
+                    skipped_no_weekly += 1
                     continue
                 d, src = day_of_line(lines, idx, spans, year)
                 if d is None:
@@ -150,7 +150,7 @@ def main():
                 if AVOID.search(line):
                     avoided += 1
                     continue
-                if wd in closed_weekdays(cl["value"]):
+                if wd in closed_wd:
                     problems.append(
                         f"{f.name}:{idx+1} [{src}] {d.isoformat()}({wd}) "
                         f"{p['displayName']} 휴관: {cl['value'][:40]}")
@@ -158,11 +158,20 @@ def main():
     rc = report("G1", "방문 요일 vs 휴관일", problems)
     rc_c = report("G1c", "Day 헤딩 ↔ itinerary 3자 대조", g1c)
 
-    total = checked + skipped_no_closed + skipped_no_day + avoided
+    total = (checked + skipped_no_closed + skipped_no_day + avoided
+             + skipped_unparseable + skipped_no_weekly)
     print(f"    커버리지: 검사 {checked} / 후보 {total} · "
-          f"건너뜀 {skipped_no_closed}(closed 없음) + {skipped_no_day}(방문일 판정 실패) "
-          f"+ {avoided}(회피 서술)")
-    print(f"    판정 출처: " + " · ".join(f"{k} {v}" for k, v in by_source.items() if v))
+          f"건너뜀 {skipped_no_closed}(closed 값 없음) + {skipped_no_weekly}(주간 휴무 없음) "
+          f"+ {skipped_no_day}(방문일 판정 실패) + {avoided}(회피 서술)")
+    print(f"    판정 출처: " + " · ".join(f"{k} {v}" for k, v in by_source.items() if v)
+          + ("".join(f" · {k} {v}" for k, v in by_rule.items())))
+    # G1e — 판정 불가를 조용히 빈 집합으로 만들지 않는다. 세 번 반복한 실패의 모양이다.
+    if unparseable:
+        print(f"[G1e] WARN · closed 판정 불가 {len(unparseable)}곳 "
+              f"(원고 참조 {skipped_unparseable}줄) — 값은 있는데 휴무 요일을 못 읽었다")
+        for pid in sorted(unparseable)[:12]:
+            v = (places[pid].get("facts", {}).get("closed", {}).get("value") or "")[:56]
+            print(f"    · {pid}: {v}")
     if checked == 0:
         print("[G1d] WARN · 검사 대상 0 — 통과가 아니라 미검사다")
         return 1

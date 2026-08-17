@@ -167,6 +167,9 @@ Bàscara
 
 ### Call — 600년이 사라진 자리
 
+> **요금** {{fact:call.price_adult}} · **운영** {{fact:call.hours}} · **휴관** {{fact:call.closed}}
+> **예약** {{fact:call.booking}} · **소요** {{fact:call.duration}} · **가는 법** {{fact:call.getting_there}}
+
 유대인 가족 스무 가구가 대성당 근처에 자리 잡은 것이 **890년**이다. 이후 500년 동안 이 골목은 지로나에서 가장 밀도 높은 지식 공간이었다. 상인과 의사와 공증인이 살았고, 전성기에는 도시 인구의 10분의 1을 차지했다.
 
 13세기의 지로나는 단순한 유대인 거주지가 아니라 **카발라의 중심지**였다. 나흐마니데스 — 카탈루냐 이름으로 보나스트룩 사 포르타 — 가 여기서 가르쳤다. 유럽 곳곳에서 카발라가 비밀리에 전수되던 시기에 지로나에서는 그것이 공개적으로 논의됐다.
@@ -402,6 +405,9 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 
 #### 2. 성벽 (Passeig de la Muralla) — 필수
 
+> **요금** {{fact:passeig-de-la-muralla.price_adult}} · **운영** {{fact:passeig-de-la-muralla.hours}} · **휴관** {{fact:passeig-de-la-muralla.closed}}
+> **예약** {{fact:passeig-de-la-muralla.booking}} · **소요** {{fact:passeig-de-la-muralla.duration}} · **가는 법** {{fact:passeig-de-la-muralla.getting_there}}
+
 ##### 무엇인가
 
 지로나 성벽은 두 시기의 것이 겹쳐 있다. **카롤링거 시대(9세기)** 와 **중세(14~15세기)**. 주의 깊게 보면 기원전 1세기 로마 성벽의 일부도 알아볼 수 있다.
@@ -476,6 +482,8 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 
 #### 5. 콜리우르 시장 (수요일) — 필수
 
+> 📍 {{fact:marche-collioure.address}} · 🚶 {{fact:marche-collioure.getting_there}} · 🕐 {{fact:marche-collioure.hours}} · 휴무 {{fact:marche-collioure.closed}} · {{fact:marche-collioure.booking}} · {{fact:marche-collioure.price_range}}
+
 **Day 2가 수요일이라 장날과 정확히 맞는다.** 우연이 아니라 일정 설계의 결과다.
 
 프랑스 남부 시장의 표준 구성이다. 채소·치즈·올리브·향신료·직물. 다만 콜리우르는 항구라 **안초비와 염장 생선 비중이 높다.**
@@ -492,6 +500,12 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 ---
 
 #### 6. Château Royal de Collioure — 필수
+
+> **요금** {{fact:collioure.price_adult}} · **운영** {{fact:collioure.hours}} · **휴관** {{fact:collioure.closed}}
+> **예약** {{fact:collioure.booking}} · **소요** {{fact:collioure.duration}} · **가는 법** {{fact:collioure.getting_there}}
+
+> **요금** {{fact:chateau-royal-de-collioure.price_adult}} · **운영** {{fact:chateau-royal-de-collioure.hours}} · **휴관** {{fact:chateau-royal-de-collioure.closed}}
+> **예약** {{fact:chateau-royal-de-collioure.booking}} · **소요** {{fact:chateau-royal-de-collioure.duration}} · **가는 법** {{fact:chateau-royal-de-collioure.getting_there}}
 
 ##### 무엇인가
 
@@ -515,6 +529,9 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 ---
 
 #### 7. Chemin du Fauvisme — 필수
+
+> **요금** {{fact:chemin-du-fauvisme.price_adult}} · **운영** {{fact:chemin-du-fauvisme.hours}} · **휴관** {{fact:chemin-du-fauvisme.closed}}
+> **예약** {{fact:chemin-du-fauvisme.booking}} · **소요** {{fact:chemin-du-fauvisme.duration}} · **가는 법** {{fact:chemin-du-fauvisme.getting_there}}
 
 ##### 무엇인가 — 석 달이 미술사를 바꾼 사건
 
@@ -615,6 +632,9 @@ Day 3의 세 곳은 **서로 20~30분 거리인데 성격이 전부 다르다.**
 ---
 
 #### 10. Peratallada — 필수
+
+> **요금** {{fact:peratallada.price_adult}} · **운영** {{fact:peratallada.hours}} · **휴관** {{fact:peratallada.closed}}
+> **예약** {{fact:peratallada.booking}} · **소요** {{fact:peratallada.duration}} · **가는 법** {{fact:peratallada.getting_there}}
 
 ##### 무엇인가
 
@@ -1242,6 +1262,9 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 
 ### Onyar 강변 — 우선 추천
 
+> **요금** {{fact:onyar.price_adult}} · **운영** {{fact:onyar.hours}} · **휴관** {{fact:onyar.closed}}
+> **예약** {{fact:onyar.booking}} · **소요** {{fact:onyar.duration}} · **가는 법** {{fact:onyar.getting_there}}
+
 - Pont de les Peixateries Velles
 - 강변의 다채로운 주택
 - 일몰 이후 조명이 들어오는 시간 추천
@@ -1261,6 +1284,8 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 ## 6.4 저녁식사
 
 ### Casa Marieta — 기본 추천
+
+> 📍 {{fact:casa-marieta.address}} · 🚶 {{fact:casa-marieta.getting_there}} · 🕐 {{fact:casa-marieta.hours}} · 휴무 {{fact:casa-marieta.closed}} · {{fact:casa-marieta.booking}} · {{fact:casa-marieta.price_range}}
 
 - Plaça de la Independència
 - 카탈루냐 전통요리

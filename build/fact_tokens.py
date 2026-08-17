@@ -21,7 +21,32 @@ from datetime import date, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FACTS_PATH = ROOT / "data" / "place-facts.json"
 
-FACT_RE = re.compile(r"\{\{fact:([a-z0-9][a-z0-9-]*)\.([a-z_]+)\}\}")
+FACT_RE = re.compile(r"\{\{fact:([a-z0-9][a-z0-9-]*)\.([a-z_]+)(?:\|(x\d+))?\}\}")
+
+# 파생값은 원본을 다시 적지 않고 연산으로 낸다. 2인 경비표가 1인 요금의 2배인데
+# 따로 적혀 있으면, 요금이 바뀌어도 경비표만 조용히 낡는다.
+MONEY_IN = re.compile(r"€\s?([\d.,]+)")
+
+
+def apply_op(text, op):
+    """`x2` → 문자열 안의 모든 € 금액을 2배로. 나머지 서술은 그대로 둔다."""
+    if not op or not op.startswith("x"):
+        return text
+    try:
+        k = int(op[1:])
+    except ValueError:
+        return text
+
+    def mul(m):
+        raw = m.group(1).rstrip(".,")
+        try:
+            v = float(raw.replace(",", ""))
+        except ValueError:
+            return m.group(0)
+        out = f"{v * k:,.2f}".rstrip("0").rstrip(".")
+        return m.group(0).replace(m.group(1), out, 1)
+
+    return MONEY_IN.sub(mul, text)
 
 _cache = None
 
@@ -86,6 +111,7 @@ def render_fact_tokens(text, doc=None, today=None, stats=None):
 
     def sub(m):
         out, status = resolve(m.group(1), m.group(2), doc, today)
+        out = apply_op(out, m.group(3))
         if stats is not None:
             stats[status] = stats.get(status, 0) + 1
         return out

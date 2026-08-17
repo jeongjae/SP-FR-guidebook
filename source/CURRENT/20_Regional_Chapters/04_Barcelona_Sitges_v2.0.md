@@ -456,6 +456,9 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 ---
 #### Sant Pau Recinte Modernista {{grade:essential|필수}}
 
+> **요금** {{fact:sant-pau-recinte-modernista.price_adult}} · **운영** {{fact:sant-pau-recinte-modernista.hours}} · **휴관** {{fact:sant-pau-recinte-modernista.closed}}
+> **예약** {{fact:sant-pau-recinte-modernista.booking}} · **소요** {{fact:sant-pau-recinte-modernista.duration}} · **가는 법** {{fact:sant-pau-recinte-modernista.getting_there}}
+
 ##### 무엇인가 — 병원을 도시로 지었다
 
 1401년 라발 지구 병원의 후신으로, 19세기 말 건축가 류이스 도메네크 이 몬타네르가 만들었다. 카탈루냐 건축 사상 최대의 모더니즘 복합체로 꼽히며 1997년 유네스코 세계유산이 됐다.
@@ -496,6 +499,9 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 
 #### Barri Gòtic {{grade:essential|필수}}
 
+> **요금** {{fact:barri-gotic.price_adult}} · **운영** {{fact:barri-gotic.hours}} · **휴관** {{fact:barri-gotic.closed}}
+> **예약** {{fact:barri-gotic.booking}} · **소요** {{fact:barri-gotic.duration}} · **가는 법** {{fact:barri-gotic.getting_there}}
+
 ##### 무엇인가
 
 로마 시대 바르시노(Barcino)의 성벽 안쪽이 그대로 중세 도시가 됐다. **길이 좁은 이유는 계획이 아니라 누적이기 때문**이다.
@@ -521,6 +527,9 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 
 ---
 #### Biblioteca de Catalunya {{grade:priority|우선추천}}
+
+> **요금** {{fact:biblioteca-de-catalunya.price_adult}} · **운영** {{fact:biblioteca-de-catalunya.hours}} · **휴관** {{fact:biblioteca-de-catalunya.closed}}
+> **예약** {{fact:biblioteca-de-catalunya.booking}} · **소요** {{fact:biblioteca-de-catalunya.duration}} · **가는 법** {{fact:biblioteca-de-catalunya.getting_there}}
 
 ##### 무엇인가 — 산 파우의 전편
 
@@ -610,6 +619,9 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 ---
 #### Palau de Maricel {{grade:alternative|대체}}
 
+> **요금** {{fact:museu-de-maricel.price_adult}} · **운영** {{fact:museu-de-maricel.hours}} · **휴관** {{fact:museu-de-maricel.closed}}
+> **예약** {{fact:museu-de-maricel.booking}} · **소요** {{fact:museu-de-maricel.duration}} · **가는 법** {{fact:museu-de-maricel.getting_there}}
+
 > **⚠ 9/1(화)에는 관람할 수 없다.** {{fact:palau-de-maricel.hours}} · {{fact:palau-de-maricel.note}}
 > 이 날의 대안은 **Cau Ferrat + Museu de Maricel 통합권** — {{fact:cau-ferrat.hours}} · {{fact:cau-ferrat.price_adult}}
 
@@ -630,6 +642,9 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 
 ---
 #### 시체스 2시간 30분 핵심 동선
+
+> **요금** {{fact:2-30.price_adult}} · **운영** {{fact:2-30.hours}} · **휴관** {{fact:2-30.closed}}
+> **예약** {{fact:2-30.booking}} · **소요** {{fact:2-30.duration}} · **가는 법** {{fact:2-30.getting_there}}
 
 동선은 아래 우선순위를 따른다.
 
@@ -766,12 +781,14 @@ Josep Lluís Sert의 건축과 Miró의 작품을 함께 보는 장소다. 2026�
 
 | 장소 | 지역·사용일 | 추천 메뉴 | 2인 예상 | 예약 |
 |---|---|---|---:|---|
-| **Bodega Joan** | Eixample, 8/29 또는 8/30 저녁 | bomba picante €4.90, escalivada+anchovy €11.30, cannelloni 약 €10.50, seafood paella €15.50/인, crema catalana €5.75 | €45–70 | **권장**. 매일 영업, 온라인 예약 가능 |
-| **La Paradeta Sagrada Família** | 8/30 점심 | 홍합·새우·오징어·생선 중 당일 가격을 보고 3종 선택, 튀김+그릴 혼합 | €45–70 | **예약 없음**, 줄 서기. 일요일 13:00–16:00 |
-| **Bar Cañete** | Raval, 8/31 점심 | pan con tomate, 제철 채소, 크로켓, 생선·해산물, 오늘의 쌀요리 또는 고기 | €60–90 | **필수에 가까움** |
-| **La Zorra** | Sitges, 9/1 점심 | arroz a banda €25/인 또는 paella valenciana €24/인, mejillones thai €16, cheesecake €7.5 | €60–85 | **필수**, 13:00 예약 |
+| **Bodega Joan** | Eixample, 8/29 또는 8/30 저녁 | {{fact:bodega-joan.price_range}}, cannelloni 약 €10.50, seafood paella €15.50/인, crema catalana €5.75 | €45–70 | **권장**. 매일 영업, 온라인 예약 가능 |
+| **La Paradeta Sagrada Família** | 8/30 점심 | 홍합·새우·오징어·생선 중 당일 가격을 보고 3종 선택, 튀김+그릴 혼합 | {{fact:la-paradeta-sagrada-familia.price_range}} | **예약 없음**, 줄 서기. 일요일 13:00–16:00 |
+| **Bar Cañete** | Raval, 8/31 점심 | pan con tomate, 제철 채소, 크로켓, 생선·해산물, 오늘의 쌀요리 또는 고기 | {{fact:bar-canete.price_range}} | **필수에 가까움** |
+| **La Zorra** | Sitges, 9/1 점심 | {{fact:la-zorra.price_range}}, cheesecake €7.5 | €60–85 | **필수**, 13:00 예약 |
 
 ### 13.2 Bodega Joan — 예산과 전통의 균형
+
+> 📍 {{fact:bodega-joan.address}} · 🚶 {{fact:bodega-joan.getting_there}} · 🕐 {{fact:bodega-joan.hours}} · 휴무 {{fact:bodega-joan.closed}} · {{fact:bodega-joan.booking}} · {{fact:bodega-joan.price_range}}
 
 > **계획가(2026-08 조사)** — 실제 결제액이 아니라 예산 설계용 범위다.
 
@@ -804,11 +821,15 @@ Josep Lluís Sert의 건축과 Miró의 작품을 함께 보는 장소다. 2026�
 
 ### 13.4 Bar Cañete — 한 번의 집중 타파스
 
+> 📍 {{fact:bar-canete.address}} · 🚶 {{fact:bar-canete.getting_there}} · 🕐 {{fact:bar-canete.hours}} · 휴무 {{fact:bar-canete.closed}} · {{fact:bar-canete.booking}} · {{fact:bar-canete.price_range}}
+
 Catalan 시장에서 들여온 생선·해산물과 제철 채소를 강조하는 인기 타파스바다. 공식 사이트에서 예약을 받는다. 메뉴는 변동성이 있으므로 가격은 2인 €60–90의 범위로 관리한다.
 
 **주문 원칙:** 빵+토마토, 채소 1, 해산물 2, 고기 또는 쌀요리 1의 네 축으로 주문하고, 직원에게 양이 과한지 확인한다. 카운터는 활기와 조리 장면이 장점이지만 장거리 여행 첫 주에는 테이블이 더 편하다.
 
 ### 13.5 La Zorra Sitges — 이동일 점심의 기준점
+
+> 📍 {{fact:la-zorra.address}} · 🚶 {{fact:la-zorra.getting_there}} · 🕐 {{fact:la-zorra.hours}} · 휴무 {{fact:la-zorra.closed}} · {{fact:la-zorra.booking}} · {{fact:la-zorra.price_range}}
 
 > 가격은 **계획가(2026-08 조사)** — 메뉴·세트 구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 
@@ -869,6 +890,8 @@ Catalan 시장에서 들여온 생선·해산물과 제철 채소를 강조하�
 ### 시장·슈퍼·제철
 
 ### 15.1 Mercat de la Concepció — 실제 장보기 1순위
+
+> 📍 {{fact:mercat-de-la-concepcio.address}} · 🚶 {{fact:mercat-de-la-concepcio.getting_there}} · 🕐 {{fact:mercat-de-la-concepcio.hours}} · 휴무 {{fact:mercat-de-la-concepcio.closed}} · {{fact:mercat-de-la-concepcio.booking}} · {{fact:mercat-de-la-concepcio.price_range}}
 
 > 가격은 **계획가(2026-08 조사)** — 메뉴·세트 구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 
@@ -941,6 +964,9 @@ Verdaguer 또는 Monumental
 아침 바다를 선호할 때 선택한다. Port Olímpic–Barceloneta–W Hotel 방향의 평탄한 산책로를 사용하되, 숙소에서 이동시간이 추가된다. 확정 일정에는 넣지 않는다.
 
 ### 16.3 CEM Joan Miró
+
+> **요금** {{fact:cem-joan-miro.price_adult}} · **운영** {{fact:cem-joan-miro.hours}} · **휴관** {{fact:cem-joan-miro.closed}}
+> **예약** {{fact:cem-joan-miro.booking}} · **소요** {{fact:cem-joan-miro.duration}} · **가는 법** {{fact:cem-joan-miro.getting_there}}
 
 **추천도: Priority — Jason 헬스와 Julia 수영을 한 시설에서 해결할 때**
 
@@ -1181,9 +1207,9 @@ Girona 구간이 차량 운용비 중심이었다면 **여기는 입장료 중�
 |---|---:|
 | 공항→숙소 | Aerobús 2인 €15.50 + 연결교통 또는 택시 실비 |
 | 시내교통 | T-casual 2장 €26 |
-| 사그라다 | €52, 타워 선택 시 €72 |
+| 사그라다 | 2인 {{fact:sagrada-familia.price_adult|x2}} |
 | Sant Pau | 티켓 종류에 따라 약 €30–40/2인 예상, 예약 시 확인 |
-| MACBA | 온라인 €27/2인 |
+| MACBA | 2인 {{fact:macba.price_adult|x2}} |
 | Cau Ferrat+Maricel | **€24/2인** (일반 €12/인) |
 | 시장·아침·샌드위치 | €56–89 |
 | 레스토랑·카페 | 약 €230–340 |

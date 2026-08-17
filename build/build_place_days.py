@@ -52,13 +52,18 @@ def parse_days(cell):
 
 
 # 매트릭스 표기와 place-facts displayName 이 다른 것들 — 직접 지정한다.
+# T3-1 이 정한 정본 ID 를 쓴다. 병합 전 ID 를 남겨 두면 매핑이 조용히 빈다.
 ALIAS = {
-    "Les Halles d'Avignon": "les-halles",
-    "Les Halles d’Avignon": "les-halles",
+    "Les Halles d'Avignon": "les-halles-d-avignon",
+    "Les Halles d’Avignon": "les-halles-d-avignon",
+    "Les Halles": "les-halles-d-avignon",
     "Museu del Cau Ferrat": "cau-ferrat",
     "Marché Forville (Cannes)": "marche-forville",
     "Saint-Paul-de-Vence (Fondation Maeght·마을 묘지)": "fondation-maeght",
     "Halles de Lyon Paul Bocuse": "halles-de-lyon-paul-bocuse",
+    "콜리우르 시장 (수요일)": "marche-collioure",
+    "Croix-Rousse 시장": "marche-croix-rousse",
+    "Gordes 화요시장": "marche-gordes",
 }
 
 

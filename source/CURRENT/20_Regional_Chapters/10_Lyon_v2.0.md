@@ -279,6 +279,9 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 ### Fourvière {{grade:essential|필수}}
 
+> **요금** {{fact:fourviere-lugdunum.price_adult}} · **운영** {{fact:fourviere-lugdunum.hours}} · **휴관** {{fact:fourviere-lugdunum.closed}}
+> **예약** {{fact:fourviere-lugdunum.booking}} · **소요** {{fact:fourviere-lugdunum.duration}} · **가는 법** {{fact:fourviere-lugdunum.getting_there}}
+
 #### 무엇인가 — 로마 도시가 시작된 자리
 
 리옹의 로마 시대 이름은 **루그두눔(Lugdunum)** 이고, 갈리아 로마의 수도였다.
@@ -314,6 +317,9 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 ---
 
 ### Vieux Lyon · 트라불 {{grade:essential|필수}}
+
+> **요금** {{fact:vieux-lyon-traboules.price_adult}} · **운영** {{fact:vieux-lyon-traboules.hours}} · **휴관** {{fact:vieux-lyon-traboules.closed}}
+> **예약** {{fact:vieux-lyon-traboules.booking}} · **소요** {{fact:vieux-lyon-traboules.duration}} · **가는 법** {{fact:vieux-lyon-traboules.getting_there}}
 
 #### 무엇인가 — 골목이 아니라 건물 안을 지나는 길
 
@@ -427,6 +433,8 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 ### Halles de Lyon Paul Bocuse {{grade:essential|필수}}
 
+> 📍 {{fact:halles-de-lyon-paul-bocuse.address}} · 🚶 {{fact:halles-de-lyon-paul-bocuse.getting_there}} · 🕐 {{fact:halles-de-lyon-paul-bocuse.hours}} · 휴무 {{fact:halles-de-lyon-paul-bocuse.closed}} · {{fact:halles-de-lyon-paul-bocuse.booking}} · {{fact:halles-de-lyon-paul-bocuse.price_range}}
+
 #### 무엇인가
 
 1859년 리옹은 프레스킬 중심가 코르들리에 광장에 커다란 금속 구조물로 첫 실내 식료품 시장을 열었다. 100년 뒤 이 도시는 미식에 대한 헌신을 상징하는 새 실내 시장을 짓기로 했다. 1971년 파르디외 지구에, 리옹 중앙역 가까이에 알이 문을 열었다. 2004년의 대대적 개보수로 지금은 3개 층 13,000㎡에 식품 상인들이 들어서 있다.
@@ -471,6 +479,9 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 ### Parc de la Tête d'Or {{grade:priority|우선추천}}
 
+> **요금** {{fact:parc-de-la-tete-d-or.price_adult}} · **운영** {{fact:parc-de-la-tete-d-or.hours}} · **휴관** {{fact:parc-de-la-tete-d-or.closed}}
+> **예약** {{fact:parc-de-la-tete-d-or.booking}} · **소요** {{fact:parc-de-la-tete-d-or.duration}} · **가는 법** {{fact:parc-de-la-tete-d-or.getting_there}}
+
 **19세기에 조성된 117ha 도시공원으로, 파리의 불로뉴 숲과 같은 세대의 작품이다.** 이름은
 공원 땅에 황금 예수 두상이 묻혀 있다는 전설에서 왔다. 호수·장미원·온실·무료 동물원이
 한 공원 안에 있고, 리옹 사람들의 주말 사용법(조깅·보트·잔디 피크닉)을 관찰하는 것이
@@ -496,6 +507,9 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 ---
 
 ### Annecy 구시가지 {{grade:essential|필수}}
+
+> **요금** {{fact:annecy.price_adult}} · **운영** {{fact:annecy.hours}} · **휴관** {{fact:annecy.closed}}
+> **예약** {{fact:annecy.booking}} · **소요** {{fact:annecy.duration}} · **가는 법** {{fact:annecy.getting_there}}
 
 #### 무엇인가 — 알프스의 베네치아
 
@@ -613,6 +627,8 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 #### 식당 카드 — Café Comptoir Abel {{badge:p0|9/21 확정 저녁}}
 
+> 📍 {{fact:cafe-comptoir-abel.address}} · 🚶 {{fact:cafe-comptoir-abel.getting_there}} · 🕐 {{fact:cafe-comptoir-abel.hours}} · 휴무 {{fact:cafe-comptoir-abel.closed}} · {{fact:cafe-comptoir-abel.booking}} · {{fact:cafe-comptoir-abel.price_range}}
+
 | 필드 | 내용 |
 |---|---|
 | 역할 | 특별저녁 (Day 24 · 9/21 월 19:30) |
@@ -626,6 +642,8 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 | 대체 후보 | 숙소권 간단식 또는 Bellecour 권역 브라세리 |
 
 #### 식당 카드 — Daniel et Denise Créqui {{badge:p0|9/22 확정 저녁}}
+
+> 📍 {{fact:daniel-et-denise-crequi.address}} · 🚶 {{fact:daniel-et-denise-crequi.getting_there}} · 🕐 {{fact:daniel-et-denise-crequi.hours}} · 휴무 {{fact:daniel-et-denise-crequi.closed}} · {{fact:daniel-et-denise-crequi.booking}} · {{fact:daniel-et-denise-crequi.price_range}}
 
 | 필드 | 내용 |
 |---|---|
@@ -1036,6 +1054,8 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 ## 19. Day 3 — 9월 22일 화요일
 ### Croix-Rousse 시장·비단동네, Halles Paul Bocuse와 도시공원
+
+> 📍 {{fact:marche-croix-rousse.address}} · 🚶 {{fact:marche-croix-rousse.getting_there}} · 🕐 {{fact:marche-croix-rousse.hours}} · 휴무 {{fact:marche-croix-rousse.closed}} · {{fact:marche-croix-rousse.booking}} · {{fact:marche-croix-rousse.price_range}}
 
 *   **오늘의 결론**: 시장·언덕·실내시장·공원이 성격이 달라 지루하지 않지만, 이동이 많다.
 *   **상태**: **고정**

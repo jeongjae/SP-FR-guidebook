@@ -22,25 +22,19 @@ acchiardo,hours,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 �
 acchiardo,booking,MISSING,P2,,,,,nice,none,Acchiardo,8
 acchiardo,price_adult,MISSING,P2,,,,,nice,none,Acchiardo,8
 aerobus,closed,FRESH,P0,2026-08-17,,+34 900 92 96 92,https://aerobusbarcelona.es/trip/lines-timetables-and-real-time-information/?lang=en,barcelona,none,Aerobús,
-aerobus,hours,MISSING,P2,,,+34 900 92 96 92,,barcelona,none,Aerobús,
+aerobus,hours,STALE,P2,,,+34 900 92 96 92,,barcelona,none,Aerobús,
 aerobus,booking,MISSING,P2,,,+34 900 92 96 92,,barcelona,none,Aerobús,
 aerobus,price_adult,BLOCKED,P2,2026-08-16,공식 페이지 판독 실패 · 3자 출처 €7.45 는 미확정 — pending 유지,+34 900 92 96 92,2026-08-16 확정 원장 (공식 소스 검증 완료),barcelona,none,Aerobús,
-annecy,closed,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지,
-annecy,hours,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지,
-annecy,booking,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지,
-annecy,price_adult,MISSING,P1,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지,
-annecy,getting_there,MISSING,P1,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지,
-annecy,duration,MISSING,P2,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지,
+annecy,closed,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
+annecy,hours,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
+annecy,booking,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
+annecy,price_adult,MISSING,P1,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
+annecy,getting_there,MISSING,P1,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
+annecy,duration,MISSING,P2,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
 annecy-cruise,closed,MISSING,P0,2026-08-17,,04 50 51 08 40,https://www.bateaux-annecy.com/,lyon,none,Annecy 호수 크루즈,
 annecy-cruise,hours,BLOCKED,P2,2026-08-17,공식 사이트에서 9/20 이후 시간표·요금 확인 불가 (개별 페이지 404),04 50 51 08 40,2026-08-17 신규확정 v2.1 (복구본),lyon,none,Annecy 호수 크루즈,
 annecy-cruise,booking,MISSING,P2,,,04 50 51 08 40,,lyon,none,Annecy 호수 크루즈,
 annecy-cruise,price_adult,MISSING,P2,,,04 50 51 08 40,,lyon,none,Annecy 호수 크루즈,
-annecy-palais-de-l-ile-chateau,closed,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
-annecy-palais-de-l-ile-chateau,hours,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.haute-savoie-tourisme.org/culture/sites-et-monuments/patrimoine-historique/maisons/173255-palais-de-l-ile,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
-annecy-palais-de-l-ile-chateau,booking,FRESH,P0,2026-08-17,,04 85 46 76 70,https://www.lac-annecy.com/visite-du-musee-chateau-d-annecy/,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
-annecy-palais-de-l-ile-chateau,price_adult,MISSING,P1,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
-annecy-palais-de-l-ile-chateau,getting_there,MISSING,P1,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
-annecy-palais-de-l-ile-chateau,duration,MISSING,P2,,,04 85 46 76 70,,lyon,essential,Annecy 구시가지 (Palais de l'Île·Château·호수·크루즈),26
 arc-de-triomphe-longchamp,closed,MISSING,P0,,,,,paris,none,Prix de l'Arc de Triomphe (Longchamp),
 arc-de-triomphe-longchamp,hours,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,paris,none,Prix de l'Arc de Triomphe (Longchamp),
 arc-de-triomphe-longchamp,booking,MISSING,P2,,,,,paris,none,Prix de l'Arc de Triomphe (Longchamp),
@@ -52,30 +46,18 @@ arenes-d-arles,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https:
 arenes-d-arles,price_adult,MISSING,P1,,,,,avignon,essential,Arènes d'Arles,22
 arenes-d-arles,getting_there,MISSING,P1,,,,,avignon,essential,Arènes d'Arles,22
 arenes-d-arles,duration,MISSING,P2,,,,,avignon,essential,Arènes d'Arles,22
-arles,closed,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles,
-arles,hours,BLOCKED,P0,2026-08-16,"아를 9월 개관시간 공식 페이지 403/404 — 추정값 금지, pending 유지",,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Arles,
-arles,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles,
-arles,price_adult,FRESH,P1,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Arles,
-arles,getting_there,MISSING,P1,,,,,avignon,essential,Arles,
-arles,duration,MISSING,P2,,,,,avignon,essential,Arles,
-arles-2,closed,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles (도시),22
-arles-2,hours,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles (도시),22
-arles-2,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles (도시),22
-arles-2,price_adult,MISSING,P1,,,,,avignon,essential,Arles (도시),22
-arles-2,getting_there,MISSING,P1,,,,,avignon,essential,Arles (도시),22
-arles-2,duration,MISSING,P2,,,,,avignon,essential,Arles (도시),22
-atelier-des-lauves,closed,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099,aix,essential,Atelier des Lauves,
-atelier-des-lauves,hours,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,2026-08-17 신규 검증,aix,essential,Atelier des Lauves,
-atelier-des-lauves,booking,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,2026-08-17 신규 검증,aix,essential,Atelier des Lauves,
-atelier-des-lauves,price_adult,FRESH,P1,2026-08-17,,+33 4 42 91 95 30,2026-08-17 신규 검증,aix,essential,Atelier des Lauves,
-atelier-des-lauves,getting_there,FRESH,P1,2026-08-17,,+33 4 42 91 95 30,2026-08-17 신규 검증,aix,essential,Atelier des Lauves,
-atelier-des-lauves,duration,MISSING,P2,,,+33 4 42 91 95 30,,aix,essential,Atelier des Lauves,
-atelier-des-lauves-atelier-de-cezanne,closed,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
-atelier-des-lauves-atelier-de-cezanne,hours,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
-atelier-des-lauves-atelier-de-cezanne,booking,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.cezanne-en-provence.com/les-sites-de-cezanne/atelier-des-lauves/,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
-atelier-des-lauves-atelier-de-cezanne,price_adult,MISSING,P1,,,+33 4 42 91 95 30,,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
-atelier-des-lauves-atelier-de-cezanne,getting_there,MISSING,P1,,,+33 4 42 91 95 30,,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
-atelier-des-lauves-atelier-de-cezanne,duration,MISSING,P2,,,+33 4 42 91 95 30,,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
+arles,closed,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles (도시),22
+arles,hours,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles (도시),22
+arles,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,essential,Arles (도시),22
+arles,price_adult,FRESH,P1,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Arles (도시),22
+arles,getting_there,MISSING,P1,,,,,avignon,essential,Arles (도시),22
+arles,duration,MISSING,P2,,,,,avignon,essential,Arles (도시),22
+atelier-des-lauves,closed,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
+atelier-des-lauves,hours,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.aixenprovencetourism.com/fr/fiche/atelier-de-cezanne-5538099,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
+atelier-des-lauves,booking,FRESH,P0,2026-08-17,,+33 4 42 91 95 30,https://www.cezanne-en-provence.com/les-sites-de-cezanne/atelier-des-lauves/,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
+atelier-des-lauves,price_adult,FRESH,P1,2026-08-17,,+33 4 42 91 95 30,2026-08-17 신규 검증,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
+atelier-des-lauves,getting_there,FRESH,P1,2026-08-17,,+33 4 42 91 95 30,2026-08-17 신규 검증,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
+atelier-des-lauves,duration,MISSING,P2,,,+33 4 42 91 95 30,,aix,essential,Atelier des Lauves (Atelier de Cézanne),15
 bar-canete,closed,FRESH,P0,2026-08-17,,+34 932 703 458,https://barcanete.com/contacto/,barcelona,essential,Bar Cañete,3
 bar-canete,hours,BLOCKED,P0,2026-08-17,"공식 사이트(barcanete.com, /bookings)에 영업시간 미게재 — 추정값 금지",+34 932 703 458,2026-08-17 신규 검증,barcelona,essential,Bar Cañete,3
 bar-canete,booking,FRESH,P0,2026-08-17,,+34 932 703 458,https://barcanete.com/contacto/,barcelona,essential,Bar Cañete,3
@@ -117,7 +99,7 @@ bourse-de-commerce-pinault-collection,hours,FRESH,P2,2026-08-17,,,2026-08-17 신
 bourse-de-commerce-pinault-collection,booking,MISSING,P2,,,,,paris,optional,Bourse de Commerce — Pinault Collection,40;41
 bourse-de-commerce-pinault-collection,price_adult,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),paris,optional,Bourse de Commerce — Pinault Collection,40;41
 cadaques,closed,MISSING,P0,2026-08-17,,+34 972 258 315,https://www.visitcadaques.org/,girona,none,Cadaqués,5
-cadaques,hours,MISSING,P2,,,+34 972 258 315,,girona,none,Cadaqués,5
+cadaques,hours,STALE,P2,,,+34 972 258 315,,girona,none,Cadaqués,5
 cadaques,booking,MISSING,P2,,,+34 972 258 315,,girona,none,Cadaqués,5
 cadaques,price_adult,MISSING,P2,,,+34 972 258 315,,girona,none,Cadaqués,5
 cadaques,getting_there,FRESH,P2,2026-08-17,,+34 972 258 315,2026-08-17 신규 검증,girona,none,Cadaqués,5
@@ -140,7 +122,7 @@ cannes-forville-suquet-croisette-walk,duration,MISSING,P2,,,04 97 06 40 00,,nice
 carrieres-des-lumieres,closed,FRESH,P0,2026-08-17,,,https://www.carrieres-lumieres.com/en/plan-visit/opening-times-rates,avignon,priority,Carrières des Lumières,
 carrieres-des-lumieres,hours,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,priority,Carrières des Lumières,
 carrieres-des-lumieres,booking,FRESH,P0,2026-08-17,,,https://www.carrieres-lumieres.com/en/plan-visit/opening-times-rates,avignon,priority,Carrières des Lumières,
-carrieres-des-lumieres,price_adult,MISSING,P1,,,,,avignon,priority,Carrières des Lumières,
+carrieres-des-lumieres,price_adult,FRESH,P1,2026-08-17,,,,avignon,priority,Carrières des Lumières,
 carrieres-des-lumieres,getting_there,MISSING,P1,,,,,avignon,priority,Carrières des Lumières,
 carrieres-des-lumieres,duration,MISSING,P2,,,,,avignon,priority,Carrières des Lumières,
 casa-marieta,closed,BLOCKED,P0,2026-08-17,주간 휴무 요일 공식 미표기 — 화요일 저녁 영업 확정 불가 (전화 확인 필요),+34 972 201 016,2026-08-17 신규 검증,girona,priority,Casa Marieta,4
@@ -162,12 +144,12 @@ cathedrale-saint-jean,closed,FRESH,P0,2026-08-17,,,https://cathedrale-lyon.fr/ca
 cathedrale-saint-jean,hours,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),lyon,none,Cathédrale Saint-Jean,24
 cathedrale-saint-jean,booking,MISSING,P2,,,,,lyon,none,Cathédrale Saint-Jean,24
 cathedrale-saint-jean,price_adult,MISSING,P2,,,,,lyon,none,Cathédrale Saint-Jean,24
-cau-ferrat,closed,FRESH,P0,2026-08-17,,+34 93 894 03 64,2026-08-17 신규 검증,barcelona,essential,Cau Ferrat,4
-cau-ferrat,hours,FRESH,P0,2026-08-17,,+34 93 894 03 64,2026-08-17 신규 검증,barcelona,essential,Cau Ferrat,4
-cau-ferrat,booking,BLOCKED,P0,2026-08-17,공식 일정 페이지가 열렸으나 예약 필요 여부 미게재. 요금·예약 페이지는 404/403,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Cau Ferrat,4
-cau-ferrat,price_adult,FRESH,P1,2026-08-17,,+34 93 894 03 64,2026-08-17 신규 검증,barcelona,essential,Cau Ferrat,4
-cau-ferrat,getting_there,MISSING,P1,,,+34 93 894 03 64,,barcelona,essential,Cau Ferrat,4
-cau-ferrat,duration,MISSING,P2,,,+34 93 894 03 64,,barcelona,essential,Cau Ferrat,4
+cau-ferrat,closed,FRESH,P0,2026-08-17,,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Museu del Cau Ferrat,4
+cau-ferrat,hours,FRESH,P0,2026-08-17,,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Museu del Cau Ferrat,4
+cau-ferrat,booking,BLOCKED,P0,2026-08-17,공식 일정 페이지가 열렸으나 예약 필요 여부 미게재. 요금·예약 페이지는 404/403,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Museu del Cau Ferrat,4
+cau-ferrat,price_adult,FRESH,P1,2026-08-17,,+34 93 894 03 64,2026-08-17 신규 검증,barcelona,essential,Museu del Cau Ferrat,4
+cau-ferrat,getting_there,MISSING,P1,,,+34 93 894 03 64,,barcelona,essential,Museu del Cau Ferrat,4
+cau-ferrat,duration,MISSING,P2,,,+34 93 894 03 64,,barcelona,essential,Museu del Cau Ferrat,4
 cem-joan-miro,closed,BLOCKED,P0,2026-08-17,공식 페이지에 정기 휴관일 표기 없음 (7일 운영시간만 게재),+34 934 234 350,https://www.cejoanmiro.cat/,barcelona,priority,CEM Joan Miró,3
 cem-joan-miro,hours,FRESH,P0,2026-08-17,,+34 934 234 350,https://www.cejoanmiro.cat/,barcelona,priority,CEM Joan Miró,3
 cem-joan-miro,booking,BLOCKED,P0,2026-08-17,강습 예약 메뉴만 있고 비회원 1일 입장 가능 여부·예약 요건 미게재,+34 934 234 350,https://www.cejoanmiro.cat/,barcelona,priority,CEM Joan Miró,3
@@ -208,17 +190,11 @@ cn-atletic-barceloneta,price_adult,MISSING,P1,,,+34 93 221 00 10,,barcelona,prio
 cn-atletic-barceloneta,getting_there,MISSING,P1,,,+34 93 221 00 10,,barcelona,priority,CN Atlètic-Barceloneta,
 cn-atletic-barceloneta,duration,MISSING,P2,,,+34 93 221 00 10,,barcelona,priority,CN Atlètic-Barceloneta,
 colline-du-chateau,closed,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Colline du Château (성채 언덕),
-colline-du-chateau,hours,FRESH,P0,2026-08-17,,3906,2026-08-17 신규 검증,nice,essential,Colline du Château (성채 언덕),
+colline-du-chateau,hours,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Colline du Château (성채 언덕),
 colline-du-chateau,booking,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Colline du Château (성채 언덕),
 colline-du-chateau,price_adult,FRESH,P1,2026-08-17,,3906,2026-08-17 신규 검증,nice,essential,Colline du Château (성채 언덕),
 colline-du-chateau,getting_there,MISSING,P1,,,3906,,nice,essential,Colline du Château (성채 언덕),
 colline-du-chateau,duration,MISSING,P2,,,3906,,nice,essential,Colline du Château (성채 언덕),
-colline-du-chateau-2,closed,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Colline du Château,8
-colline-du-chateau-2,hours,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Colline du Château,8
-colline-du-chateau-2,booking,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Colline du Château,8
-colline-du-chateau-2,price_adult,MISSING,P1,,,3906,,nice,essential,Colline du Château,8
-colline-du-chateau-2,getting_there,MISSING,P1,,,3906,,nice,essential,Colline du Château,8
-colline-du-chateau-2,duration,MISSING,P2,,,3906,,nice,essential,Colline du Château,8
 collioure,closed,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.ledepartement66.fr/dossier/le-chateau-royal-de-collioure/,girona,essential,Collioure,
 collioure,hours,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,2026-08-17 신규 검증,girona,essential,Collioure,
 collioure,booking,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,Collioure,
@@ -240,27 +216,15 @@ cours-saleya,duration,MISSING,P2,,,,,nice,essential,Cours Saleya,8
 coustellet,closed,FRESH,P0,2026-08-17,,,https://www.destinationluberon.com/savourer/marches/marche-paysan-de-coustellet,luberon,essential,Coustellet 생산자 시장,16
 coustellet,hours,FRESH,P0,2026-08-17,,,2026-08-17 신규 검증,luberon,essential,Coustellet 생산자 시장,16
 coustellet,booking,FRESH,P0,2026-08-17,,,https://www.destinationluberon.com/savourer/marches/marche-paysan-de-coustellet,luberon,essential,Coustellet 생산자 시장,16
-coustellet,price_adult,MISSING,P1,,,,,luberon,essential,Coustellet 생산자 시장,16
+coustellet,price_adult,STALE,P1,,,,,luberon,essential,Coustellet 생산자 시장,16
 coustellet,getting_there,MISSING,P1,,,,,luberon,essential,Coustellet 생산자 시장,16
 coustellet,duration,MISSING,P2,,,,,luberon,essential,Coustellet 생산자 시장,16
-croix-rousse,closed,FRESH,P0,2026-08-17,,04 78 28 62 04,2026-08-17 신규 검증,lyon,essential,Croix-Rousse,
-croix-rousse,hours,FRESH,P0,2026-08-17,,04 78 28 62 04,2026-08-17 신규 검증,lyon,essential,Croix-Rousse,
-croix-rousse,booking,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse,
-croix-rousse,price_adult,MISSING,P1,,,04 78 28 62 04,,lyon,essential,Croix-Rousse,
-croix-rousse,getting_there,MISSING,P1,,,04 78 28 62 04,,lyon,essential,Croix-Rousse,
-croix-rousse,duration,MISSING,P2,,,04 78 28 62 04,,lyon,essential,Croix-Rousse,
-croix-rousse-2,closed,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse,lyon,priority,Croix-Rousse 시장,25
-croix-rousse-2,hours,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse,lyon,priority,Croix-Rousse 시장,25
-croix-rousse-2,booking,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse,lyon,priority,Croix-Rousse 시장,25
-croix-rousse-2,price_adult,MISSING,P1,,,,,lyon,priority,Croix-Rousse 시장,25
-croix-rousse-2,getting_there,MISSING,P1,,,,,lyon,priority,Croix-Rousse 시장,25
-croix-rousse-2,duration,MISSING,P2,,,,,lyon,priority,Croix-Rousse 시장,25
-croix-rousse-cour-des-voraces-maison-des-canuts,closed,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
-croix-rousse-cour-des-voraces-maison-des-canuts,hours,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
-croix-rousse-cour-des-voraces-maison-des-canuts,booking,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
-croix-rousse-cour-des-voraces-maison-des-canuts,price_adult,MISSING,P1,,,04 78 28 62 04,,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
-croix-rousse-cour-des-voraces-maison-des-canuts,getting_there,MISSING,P1,,,04 78 28 62 04,,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
-croix-rousse-cour-des-voraces-maison-des-canuts,duration,MISSING,P2,,,04 78 28 62 04,,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
+croix-rousse,closed,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
+croix-rousse,hours,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
+croix-rousse,booking,FRESH,P0,2026-08-17,,04 78 28 62 04,https://maisondescanuts.fr/,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
+croix-rousse,price_adult,MISSING,P1,,,04 78 28 62 04,,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
+croix-rousse,getting_there,MISSING,P1,,,04 78 28 62 04,,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
+croix-rousse,duration,MISSING,P2,,,04 78 28 62 04,,lyon,essential,Croix-Rousse (동네·Cour des Voraces·Maison des Canuts),25
 daniel-et-denise-crequi,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규 검증,lyon,none,Daniel et Denise Créqui,2;3;19;24;25;30
 daniel-et-denise-crequi,hours,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,lyon,none,Daniel et Denise Créqui,2;3;19;24;25;30
 daniel-et-denise-crequi,booking,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,lyon,none,Daniel et Denise Créqui,2;3;19;24;25;30
@@ -280,15 +244,16 @@ fonda-cal-ros,booking,FRESH,P0,2026-08-17,,+34 972 621 017,https://fondacalros.c
 fonda-cal-ros,price_adult,MISSING,P1,,,+34 972 621 017,,girona,priority,Fonda Cal Ros,4
 fonda-cal-ros,getting_there,MISSING,P1,,,+34 972 621 017,,girona,priority,Fonda Cal Ros,4
 fonda-cal-ros,duration,MISSING,P2,,,+34 972 621 017,,girona,priority,Fonda Cal Ros,4
-fondation-maeght,closed,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,none,Fondation Maeght,
-fondation-maeght,hours,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,none,Fondation Maeght,
-fondation-maeght,booking,MISSING,P2,,,,,nice,none,Fondation Maeght,
-fondation-maeght,price_adult,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,none,Fondation Maeght,
-fondation-maeght,getting_there,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,none,Fondation Maeght,
+fondation-maeght,closed,FRESH,P0,2026-08-17,,+33 4 93 32 81 63,https://www.fondation-maeght.com/infos-pratiques/?lang=fr,nice,priority,Fondation Maeght (Saint-Paul-de-Vence),12
+fondation-maeght,hours,FRESH,P0,2026-08-17,,+33 4 93 32 81 63,https://www.fondation-maeght.com/infos-pratiques/?lang=fr,nice,priority,Fondation Maeght (Saint-Paul-de-Vence),12
+fondation-maeght,booking,FRESH,P0,2026-08-17,,+33 4 93 32 81 63,https://www.fondation-maeght.com/infos-pratiques/?lang=fr,nice,priority,Fondation Maeght (Saint-Paul-de-Vence),12
+fondation-maeght,price_adult,FRESH,P1,2026-08-16,,+33 4 93 32 81 63,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,priority,Fondation Maeght (Saint-Paul-de-Vence),12
+fondation-maeght,getting_there,FRESH,P1,2026-08-16,,+33 4 93 32 81 63,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,priority,Fondation Maeght (Saint-Paul-de-Vence),12
+fondation-maeght,duration,MISSING,P2,,,+33 4 93 32 81 63,,nice,priority,Fondation Maeght (Saint-Paul-de-Vence),12
 fort-saint-jean,closed,FRESH,P0,2026-08-17,,+33 4 84 35 13 13,https://www.mucem.org/infos-pratiques,aix,essential,Fort Saint-Jean,14
 fort-saint-jean,hours,FRESH,P0,2026-08-17,,+33 4 84 35 13 13,https://www.mucem.org/infos-pratiques,aix,essential,Fort Saint-Jean,14
 fort-saint-jean,booking,FRESH,P0,2026-08-17,,+33 4 84 35 13 13,https://www.mucem.org/infos-pratiques,aix,essential,Fort Saint-Jean,14
-fort-saint-jean,price_adult,MISSING,P1,,,+33 4 84 35 13 13,,aix,essential,Fort Saint-Jean,14
+fort-saint-jean,price_adult,STALE,P1,,,+33 4 84 35 13 13,,aix,essential,Fort Saint-Jean,14
 fort-saint-jean,getting_there,MISSING,P1,,,+33 4 84 35 13 13,,aix,essential,Fort Saint-Jean,14
 fort-saint-jean,duration,MISSING,P2,,,+33 4 84 35 13 13,,aix,essential,Fort Saint-Jean,14
 fou-de-fafa,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),avignon,none,Fou de Fafa,19
@@ -299,7 +264,7 @@ fou-de-fafa,getting_there,FRESH,P2,2026-08-17,,,2026-08-17 신규확정 v2.1 (�
 fourviere-lugdunum,closed,FRESH,P0,2026-08-17,,04 72 38 49 30,http://lugdunum.grandlyon.com/fr/,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
 fourviere-lugdunum,hours,FRESH,P0,2026-08-17,,04 72 38 49 30,https://www.fourviere.org/fr/horaires/,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
 fourviere-lugdunum,booking,FRESH,P0,2026-08-17,,04 72 38 49 30,https://www.fourviere.org/,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
-fourviere-lugdunum,price_adult,MISSING,P1,,,04 72 38 49 30,,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
+fourviere-lugdunum,price_adult,STALE,P1,,,04 72 38 49 30,,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
 fourviere-lugdunum,getting_there,MISSING,P1,,,04 72 38 49 30,,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
 fourviere-lugdunum,duration,MISSING,P2,,,04 72 38 49 30,,lyon,essential,Fourvière (바실리카·로마극장·Lugdunum·전망대),24
 girona-cathedral,closed,FRESH,P0,2026-08-17,,+34 972 427 189,https://catedraldegirona.cat/en/girona-cathedral-cultural-visit/,girona,essential,Girona Cathedral,4
@@ -314,24 +279,12 @@ giverny-fondation-claude-monet,booking,BLOCKED,P0,,fondation-monet.com 접속 �
 giverny-fondation-claude-monet,price_adult,MISSING,P1,,,,,paris,priority,Giverny — Fondation Claude Monet,41
 giverny-fondation-claude-monet,getting_there,MISSING,P1,,,,,paris,priority,Giverny — Fondation Claude Monet,41
 giverny-fondation-claude-monet,duration,MISSING,P2,,,,,paris,priority,Giverny — Fondation Claude Monet,41
-gordes,closed,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes,
-gordes,hours,FRESH,P0,2026-08-17,,04 90 72 02 08,2026-08-17 신규 검증,luberon,essential,Gordes,
-gordes,booking,FRESH,P0,2026-08-17,,04 90 72 02 08,https://www.gordes-village.com/,luberon,essential,Gordes,
-gordes,price_adult,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes,
-gordes,getting_there,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes,
-gordes,duration,MISSING,P2,,,04 90 72 02 08,,luberon,essential,Gordes,
-gordes-2,closed,FRESH,P0,2026-08-17,,04 32 50 11 41,"https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",luberon,essential,Gordes (마을·성),18
-gordes-2,hours,FRESH,P0,2026-08-17,,04 32 50 11 41,"https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",luberon,essential,Gordes (마을·성),18
-gordes-2,booking,FRESH,P0,2026-08-17,,04 32 50 11 41,"https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",luberon,essential,Gordes (마을·성),18
-gordes-2,price_adult,MISSING,P1,,,04 32 50 11 41,,luberon,essential,Gordes (마을·성),18
-gordes-2,getting_there,MISSING,P1,,,04 32 50 11 41,,luberon,essential,Gordes (마을·성),18
-gordes-2,duration,MISSING,P2,,,04 32 50 11 41,,luberon,essential,Gordes (마을·성),18
-gordes-3,closed,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes 화요시장,18
-gordes-3,hours,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes 화요시장,18
-gordes-3,booking,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes 화요시장,18
-gordes-3,price_adult,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes 화요시장,18
-gordes-3,getting_there,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes 화요시장,18
-gordes-3,duration,MISSING,P2,,,04 90 72 02 08,,luberon,essential,Gordes 화요시장,18
+gordes,closed,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",luberon,essential,Gordes (마을·성),18
+gordes,hours,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",luberon,essential,Gordes (마을·성),18
+gordes,booking,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/patrimoine,musee,le-chateau,102.html",luberon,essential,Gordes (마을·성),18
+gordes,price_adult,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes (마을·성),18
+gordes,getting_there,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes (마을·성),18
+gordes,duration,MISSING,P2,,,04 90 72 02 08,,luberon,essential,Gordes (마을·성),18
 goult,closed,FRESH,P0,2026-08-17,,,https://www.goult.fr/commerces/,luberon,priority,Goult,17
 goult,hours,MISSING,P0,2026-08-17,,,https://www.goult.fr/commerces/,luberon,priority,Goult,17
 goult,booking,FRESH,P0,2026-08-17,,,https://www.goult.fr/commerces/,luberon,priority,Goult,17
@@ -356,8 +309,8 @@ grand-palais,booking,FRESH,P0,2026-08-17,,,https://www.grandpalais.fr/en/plan-yo
 grand-palais,price_adult,MISSING,P1,,,,,paris,essential,Grand Palais,
 grand-palais,getting_there,MISSING,P1,,,,,paris,essential,Grand Palais,
 grand-palais,duration,MISSING,P2,,,,,paris,essential,Grand Palais,
-grand-palais-cezanne-et-nous,closed,FRESH,P0,2026-08-17,,,https://www.grandpalais.fr/en/program/cezanne-et-nous,paris,essential,Grand Palais — 'Cezanne et nous',34;36
-grand-palais-cezanne-et-nous,hours,FRESH,P0,2026-08-17,,,https://www.grandpalais.fr/en/program/cezanne-et-nous,paris,essential,Grand Palais — 'Cezanne et nous',34;36
+grand-palais-cezanne-et-nous,closed,MISSING,P0,,,,,paris,essential,Grand Palais — 'Cezanne et nous',34;36
+grand-palais-cezanne-et-nous,hours,MISSING,P0,,,,,paris,essential,Grand Palais — 'Cezanne et nous',34;36
 grand-palais-cezanne-et-nous,booking,FRESH,P0,2026-08-17,,,https://www.grandpalais.fr/en/program/cezanne-et-nous,paris,essential,Grand Palais — 'Cezanne et nous',34;36
 grand-palais-cezanne-et-nous,price_adult,MISSING,P1,,,,,paris,essential,Grand Palais — 'Cezanne et nous',34;36
 grand-palais-cezanne-et-nous,getting_there,MISSING,P1,,,,,paris,essential,Grand Palais — 'Cezanne et nous',34;36
@@ -435,7 +388,7 @@ le-gout-du-jour,price_adult,MISSING,P2,,,04 32 76 32 16,,avignon,none,Le Goût d
 le-marais-place-des-vosges-carnavalet-archives,closed,FRESH,P0,2026-08-17,,,https://www.carnavalet.paris.fr/en/informations-pratiques,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
 le-marais-place-des-vosges-carnavalet-archives,hours,FRESH,P0,2026-08-17,,,https://www.carnavalet.paris.fr/en/informations-pratiques,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
 le-marais-place-des-vosges-carnavalet-archives,booking,FRESH,P0,2026-08-17,,,https://www.carnavalet.paris.fr/en/informations-pratiques,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
-le-marais-place-des-vosges-carnavalet-archives,price_adult,MISSING,P1,,,,,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
+le-marais-place-des-vosges-carnavalet-archives,price_adult,STALE,P1,,,,,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
 le-marais-place-des-vosges-carnavalet-archives,getting_there,MISSING,P1,,,,,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
 le-marais-place-des-vosges-carnavalet-archives,duration,MISSING,P2,,,,,paris,essential,Le Marais (Place des Vosges·Carnavalet·Archives),30;35
 le-panier,closed,MISSING,P0,2026-08-17,,,https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/the-districts-of-marseille/the-panier-district/,aix,priority,Le Panier,14
@@ -444,18 +397,12 @@ le-panier,booking,MISSING,P0,2026-08-17,,,https://www.marseille-tourisme.com/en/
 le-panier,price_adult,MISSING,P1,,,,,aix,priority,Le Panier,14
 le-panier,getting_there,MISSING,P1,,,,,aix,priority,Le Panier,14
 le-panier,duration,MISSING,P2,,,,,aix,priority,Le Panier,14
-le-rocher,closed,FRESH,P0,2026-08-17,,,https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace,nice,essential,Le Rocher — 모나코 구시가지,
-le-rocher,hours,FRESH,P0,2026-08-17,,,https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace,nice,essential,Le Rocher — 모나코 구시가지,
-le-rocher,booking,FRESH,P0,2026-08-17,,,https://palais.mc/fr/musees-et-visites/vente-des-places-en-ligne-1-31.html,nice,essential,Le Rocher — 모나코 구시가지,
-le-rocher,price_adult,MISSING,P1,,,,,nice,essential,Le Rocher — 모나코 구시가지,
-le-rocher,getting_there,MISSING,P1,,,,,nice,essential,Le Rocher — 모나코 구시가지,
-le-rocher,duration,MISSING,P2,,,,,nice,essential,Le Rocher — 모나코 구시가지,
-le-rocher-monaco-ville,closed,FRESH,P0,2026-08-17,,,https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace,nice,essential,Le Rocher / Monaco-Ville,10
-le-rocher-monaco-ville,hours,FRESH,P0,2026-08-17,,,https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace,nice,essential,Le Rocher / Monaco-Ville,10
-le-rocher-monaco-ville,booking,FRESH,P0,2026-08-17,,,https://palais.mc/fr/musees-et-visites/vente-des-places-en-ligne-1-31.html,nice,essential,Le Rocher / Monaco-Ville,10
-le-rocher-monaco-ville,price_adult,MISSING,P1,,,,,nice,essential,Le Rocher / Monaco-Ville,10
-le-rocher-monaco-ville,getting_there,MISSING,P1,,,,,nice,essential,Le Rocher / Monaco-Ville,10
-le-rocher-monaco-ville,duration,MISSING,P2,,,,,nice,essential,Le Rocher / Monaco-Ville,10
+le-rocher,closed,FRESH,P0,2026-08-17,,,https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace,nice,essential,Le Rocher / Monaco-Ville,10
+le-rocher,hours,FRESH,P0,2026-08-17,,,https://www.visitmonaco.com/en/explore/the-12-must-sees-in-monaco/prince-s-palace,nice,essential,Le Rocher / Monaco-Ville,10
+le-rocher,booking,FRESH,P0,2026-08-17,,,https://palais.mc/fr/musees-et-visites/vente-des-places-en-ligne-1-31.html,nice,essential,Le Rocher / Monaco-Ville,10
+le-rocher,price_adult,MISSING,P1,,,,,nice,essential,Le Rocher / Monaco-Ville,10
+le-rocher,getting_there,MISSING,P1,,,,,nice,essential,Le Rocher / Monaco-Ville,10
+le-rocher,duration,MISSING,P2,,,,,nice,essential,Le Rocher / Monaco-Ville,10
 le-suquet-cannes,closed,FRESH,P0,2026-08-17,,04 89 82 26 26,https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html,nice,essential,Le Suquet (Cannes),9
 le-suquet-cannes,hours,FRESH,P0,2026-08-17,,04 89 82 26 26,https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html,nice,essential,Le Suquet (Cannes),9
 le-suquet-cannes,booking,FRESH,P0,2026-08-17,,04 89 82 26 26,https://www.cannes.com/fr/culture/musees-et-expositions/musee-des-explorations-du-monde.html,nice,essential,Le Suquet (Cannes),9
@@ -466,22 +413,17 @@ les-baux-de-provence,closed,FRESH,P0,2026-08-17,,+33 4 90 54 34 39,https://www.l
 les-baux-de-provence,hours,FRESH,P2,2026-08-16,,+33 4 90 54 34 39,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,alternative,Les Baux-de-Provence,
 les-baux-de-provence,booking,MISSING,P2,,,+33 4 90 54 34 39,,avignon,alternative,Les Baux-de-Provence,
 les-baux-de-provence,price_adult,FRESH,P2,2026-08-16,,+33 4 90 54 34 39,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,alternative,Les Baux-de-Provence,
+les-baux-de-provence,getting_there,FRESH,P2,2026-08-17,,+33 4 90 54 34 39,,avignon,alternative,Les Baux-de-Provence,
 les-cocottes-saint-louis,closed,FRESH,P0,2026-08-17,,+33 4 90 27 55 55,https://www.hotel-cloitre-saintlouis-avignon.fr/fr/restauration/les-cocottes-saintlouis,avignon,none,Les Cocottes Saint-Louis,19;20;21
 les-cocottes-saint-louis,hours,FRESH,P2,2026-08-17,,+33 4 90 27 55 55,2026-08-17 신규확정 v2.1 (복구본),avignon,none,Les Cocottes Saint-Louis,19;20;21
 les-cocottes-saint-louis,booking,MISSING,P2,,,+33 4 90 27 55 55,,avignon,none,Les Cocottes Saint-Louis,19;20;21
 les-cocottes-saint-louis,price_adult,MISSING,P2,,,+33 4 90 27 55 55,,avignon,none,Les Cocottes Saint-Louis,19;20;21
-les-halles,closed,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Les Halles,20
-les-halles,hours,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Les Halles,20
-les-halles,booking,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles,20
-les-halles,price_adult,MISSING,P1,,,,,avignon,essential,Les Halles,20
-les-halles,getting_there,MISSING,P1,,,,,avignon,essential,Les Halles,20
-les-halles,duration,MISSING,P2,,,,,avignon,essential,Les Halles,20
-les-halles-d-avignon,closed,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles d'Avignon,
-les-halles-d-avignon,hours,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles d'Avignon,
-les-halles-d-avignon,booking,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles d'Avignon,
-les-halles-d-avignon,price_adult,MISSING,P1,,,,,avignon,essential,Les Halles d'Avignon,
-les-halles-d-avignon,getting_there,MISSING,P1,,,,,avignon,essential,Les Halles d'Avignon,
-les-halles-d-avignon,duration,MISSING,P2,,,,,avignon,essential,Les Halles d'Avignon,
+les-halles-d-avignon,closed,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles d'Avignon,20
+les-halles-d-avignon,hours,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles d'Avignon,20
+les-halles-d-avignon,booking,FRESH,P0,2026-08-17,,,https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/,avignon,essential,Les Halles d'Avignon,20
+les-halles-d-avignon,price_adult,MISSING,P1,,,,,avignon,essential,Les Halles d'Avignon,20
+les-halles-d-avignon,getting_there,MISSING,P1,,,,,avignon,essential,Les Halles d'Avignon,20
+les-halles-d-avignon,duration,MISSING,P2,,,,,avignon,essential,Les Halles d'Avignon,20
 lignes-dazur,closed,FRESH,P0,2026-08-17,,08 1006 1006,https://www.lignesdazur.com/fr/agences-lignes-dazur,nice,none,Lignes d'Azur (Nice 시내교통),
 lignes-dazur,hours,MISSING,P2,,,08 1006 1006,,nice,none,Lignes d'Azur (Nice 시내교통),
 lignes-dazur,booking,MISSING,P2,,,08 1006 1006,,nice,none,Lignes d'Azur (Nice 시내교통),
@@ -492,40 +434,46 @@ llibreria-finestres,booking,BLOCKED,P0,2026-08-17,공식 페이지에 예약 관
 llibreria-finestres,price_adult,MISSING,P1,,,+34 933 840 809,,barcelona,priority,Llibreria Finestres,3
 llibreria-finestres,getting_there,MISSING,P1,,,+34 933 840 809,,barcelona,priority,Llibreria Finestres,3
 llibreria-finestres,duration,MISSING,P2,,,+34 933 840 809,,barcelona,priority,Llibreria Finestres,3
-lourmarin,closed,FRESH,P0,2026-08-17,,04 90 68 04 13,https://lourmarin.com/marches/,luberon,essential,Lourmarin,16
-lourmarin,hours,FRESH,P0,2026-08-17,,04 90 68 04 13,2026-08-17 신규 검증,luberon,essential,Lourmarin,16
-lourmarin,booking,FRESH,P0,2026-08-17,,04 90 68 04 13,https://lourmarin.com/marches/,luberon,essential,Lourmarin,16
-lourmarin,price_adult,MISSING,P1,,,04 90 68 04 13,,luberon,essential,Lourmarin,16
-lourmarin,getting_there,MISSING,P1,,,04 90 68 04 13,,luberon,essential,Lourmarin,16
-lourmarin,duration,MISSING,P2,,,04 90 68 04 13,,luberon,essential,Lourmarin,16
-lourmarin-2,closed,FRESH,P0,2026-08-17,,04 90 68 15 23,https://chateaudelourmarin.com/infos-pratiques/,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
-lourmarin-2,hours,FRESH,P0,2026-08-17,,04 90 68 15 23,https://chateaudelourmarin.com/infos-pratiques/,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
-lourmarin-2,booking,FRESH,P0,2026-08-17,,04 90 68 15 23,https://chateaudelourmarin.com/infos-pratiques/,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
-lourmarin-2,price_adult,MISSING,P1,,,04 90 68 15 23,,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
-lourmarin-2,getting_there,MISSING,P1,,,04 90 68 15 23,,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
-lourmarin-2,duration,MISSING,P2,,,04 90 68 15 23,,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
+lourmarin,closed,FRESH,P0,2026-08-17,,04 90 68 04 13,https://lourmarin.com/marches/,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
+lourmarin,hours,FRESH,P0,2026-08-17,,04 90 68 04 13,https://chateaudelourmarin.com/infos-pratiques/,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
+lourmarin,booking,FRESH,P0,2026-08-17,,04 90 68 04 13,https://chateaudelourmarin.com/infos-pratiques/,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
+lourmarin,price_adult,MISSING,P1,,,04 90 68 04 13,,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
+lourmarin,getting_there,MISSING,P1,,,04 90 68 04 13,,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
+lourmarin,duration,MISSING,P2,,,04 90 68 04 13,,luberon,essential,Lourmarin (마을·카뮈 묘·성),16
 macba,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규 검증,barcelona,optional,MACBA,3
 macba,hours,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,barcelona,optional,MACBA,3
 macba,booking,MISSING,P2,,,,,barcelona,optional,MACBA,3
 macba,price_adult,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,barcelona,optional,MACBA,3
+marche-collioure,closed,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,콜리우르 시장 (수요일),5
+marche-collioure,hours,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,콜리우르 시장 (수요일),5
+marche-collioure,booking,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,콜리우르 시장 (수요일),5
+marche-collioure,price_adult,MISSING,P1,,,+33 4 68 82 15 47,,girona,essential,콜리우르 시장 (수요일),5
+marche-collioure,getting_there,MISSING,P1,,,+33 4 68 82 15 47,,girona,essential,콜리우르 시장 (수요일),5
+marche-collioure,duration,MISSING,P2,,,+33 4 68 82 15 47,,girona,essential,콜리우르 시장 (수요일),5
+marche-croix-rousse,closed,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse,lyon,priority,Croix-Rousse 시장,25
+marche-croix-rousse,hours,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse,lyon,priority,Croix-Rousse 시장,25
+marche-croix-rousse,booking,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/marches-alimentaires/marche-alimentaire-de-la-croix-rousse,lyon,priority,Croix-Rousse 시장,25
+marche-croix-rousse,price_adult,MISSING,P1,,,,,lyon,priority,Croix-Rousse 시장,25
+marche-croix-rousse,getting_there,MISSING,P1,,,,,lyon,priority,Croix-Rousse 시장,25
+marche-croix-rousse,duration,MISSING,P2,,,,,lyon,priority,Croix-Rousse 시장,25
 marche-de-la-liberation,closed,FRESH,P0,2026-08-17,,3906,2026-08-17 신규 검증,nice,priority,Marché de la Libération,11
 marche-de-la-liberation,hours,FRESH,P0,2026-08-17,,3906,2026-08-17 신규 검증,nice,priority,Marché de la Libération,11
 marche-de-la-liberation,booking,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/commerce-local/les-marches-de-plein-vent/,nice,priority,Marché de la Libération,11
 marche-de-la-liberation,price_adult,MISSING,P1,,,3906,,nice,priority,Marché de la Libération,11
 marche-de-la-liberation,getting_there,MISSING,P1,,,3906,,nice,priority,Marché de la Libération,11
 marche-de-la-liberation,duration,MISSING,P2,,,3906,,nice,priority,Marché de la Libération,11
-marche-forville,closed,FRESH,P0,2026-08-17,,04 97 06 40 00,2026-08-17 신규확정 v2.1 (복구본),nice,essential,Marché Forville,9
-marche-forville,hours,FRESH,P0,2026-08-17,,04 97 06 40 00,2026-08-17 신규확정 v2.1 (복구본),nice,essential,Marché Forville,9
-marche-forville,booking,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html,nice,essential,Marché Forville,9
-marche-forville,price_adult,MISSING,P1,,,04 97 06 40 00,,nice,essential,Marché Forville,9
-marche-forville,getting_there,MISSING,P1,,,04 97 06 40 00,,nice,essential,Marché Forville,9
-marche-forville,duration,MISSING,P2,,,04 97 06 40 00,,nice,essential,Marché Forville,9
-marche-forville-cannes,closed,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html,nice,essential,Marché Forville (Cannes),
-marche-forville-cannes,hours,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/cadre-de-vie/travaux-en-cours/marche-forville.html,nice,essential,Marché Forville (Cannes),
-marche-forville-cannes,booking,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html,nice,essential,Marché Forville (Cannes),
-marche-forville-cannes,price_adult,MISSING,P1,,,04 97 06 40 00,,nice,essential,Marché Forville (Cannes),
-marche-forville-cannes,getting_there,MISSING,P1,,,04 97 06 40 00,,nice,essential,Marché Forville (Cannes),
-marche-forville-cannes,duration,MISSING,P2,,,04 97 06 40 00,,nice,essential,Marché Forville (Cannes),
+marche-forville,closed,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html,nice,essential,Marché Forville (Cannes),9
+marche-forville,hours,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/cadre-de-vie/travaux-en-cours/marche-forville.html,nice,essential,Marché Forville (Cannes),9
+marche-forville,booking,FRESH,P0,2026-08-17,,04 97 06 40 00,https://www.cannes.com/fr/mairie/annuaire-pratique/equipements-municipaux/marche-provencal-forville.html,nice,essential,Marché Forville (Cannes),9
+marche-forville,price_adult,MISSING,P1,,,04 97 06 40 00,,nice,essential,Marché Forville (Cannes),9
+marche-forville,getting_there,MISSING,P1,,,04 97 06 40 00,,nice,essential,Marché Forville (Cannes),9
+marche-forville,duration,MISSING,P2,,,04 97 06 40 00,,nice,essential,Marché Forville (Cannes),9
+marche-gordes,closed,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes 화요시장,18
+marche-gordes,hours,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes 화요시장,18
+marche-gordes,booking,FRESH,P0,2026-08-17,,04 90 72 02 08,"https://www.gordes-village.com/vie-quotidienne,marches-et-foires,111.html",luberon,essential,Gordes 화요시장,18
+marche-gordes,price_adult,STALE,P1,,,04 90 72 02 08,,luberon,essential,Gordes 화요시장,18
+marche-gordes,getting_there,MISSING,P1,,,04 90 72 02 08,,luberon,essential,Gordes 화요시장,18
+marche-gordes,duration,MISSING,P2,,,04 90 72 02 08,,luberon,essential,Gordes 화요시장,18
 marche-provencal-antibes,closed,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,none,Marché Provençal Antibes,
 marche-provencal-antibes,hours,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,none,Marché Provençal Antibes,
 marche-provencal-antibes,booking,MISSING,P2,,,,,nice,none,Marché Provençal Antibes,
@@ -567,21 +515,15 @@ monaco-rocher-port-monte-carlo-walk,duration,MISSING,P2,,,,,nice,essential,Monac
 montagne-sainte-victoire-terrain-des-peintres,closed,MISSING,P0,2026-08-17,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
 montagne-sainte-victoire-terrain-des-peintres,hours,MISSING,P0,2026-08-17,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
 montagne-sainte-victoire-terrain-des-peintres,booking,MISSING,P0,2026-08-17,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
-montagne-sainte-victoire-terrain-des-peintres,price_adult,MISSING,P1,,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
+montagne-sainte-victoire-terrain-des-peintres,price_adult,STALE,P1,,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
 montagne-sainte-victoire-terrain-des-peintres,getting_there,MISSING,P1,,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
 montagne-sainte-victoire-terrain-des-peintres,duration,MISSING,P2,,,,,aix,priority,Montagne Sainte-Victoire · Terrain des Peintres,15
-montmartre-south-pigalle,closed,BLOCKED,P0,,지구 단위 항목 — 단일 공식 운영정보 없음,,,paris,essential,Montmartre · South Pigalle,
-montmartre-south-pigalle,hours,BLOCKED,P0,,지구 단위 항목 — 공식 운영시간 없음,,,paris,essential,Montmartre · South Pigalle,
-montmartre-south-pigalle,booking,BLOCKED,P0,,지구 단위 항목 — 예약 대상 아님,,,paris,essential,Montmartre · South Pigalle,
-montmartre-south-pigalle,price_adult,MISSING,P1,,,,,paris,essential,Montmartre · South Pigalle,
-montmartre-south-pigalle,getting_there,MISSING,P1,,,,,paris,essential,Montmartre · South Pigalle,
-montmartre-south-pigalle,duration,MISSING,P2,,,,,paris,essential,Montmartre · South Pigalle,
-montmartre-south-pigalle-sacre-c-ur,closed,FRESH,P0,2026-08-17,,+33 1 53 41 89 00,https://www.sacre-coeur-montmartre.com/english/,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
-montmartre-south-pigalle-sacre-c-ur,hours,FRESH,P0,2026-08-17,,+33 1 53 41 89 00,https://www.sacre-coeur-montmartre.com/english/,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
-montmartre-south-pigalle-sacre-c-ur,booking,BLOCKED,P0,,공식 페이지에 예약 관련 안내 미게재,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
-montmartre-south-pigalle-sacre-c-ur,price_adult,MISSING,P1,,,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
-montmartre-south-pigalle-sacre-c-ur,getting_there,MISSING,P1,,,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
-montmartre-south-pigalle-sacre-c-ur,duration,MISSING,P2,,,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
+montmartre-south-pigalle,closed,FRESH,P0,2026-08-17,,+33 1 53 41 89 00,https://www.sacre-coeur-montmartre.com/english/,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
+montmartre-south-pigalle,hours,FRESH,P0,2026-08-17,,+33 1 53 41 89 00,https://www.sacre-coeur-montmartre.com/english/,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
+montmartre-south-pigalle,booking,BLOCKED,P0,,지구 단위 항목 — 예약 대상 아님,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
+montmartre-south-pigalle,price_adult,MISSING,P1,,,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
+montmartre-south-pigalle,getting_there,MISSING,P1,,,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
+montmartre-south-pigalle,duration,MISSING,P2,,,+33 1 53 41 89 00,,paris,essential,Montmartre · South Pigalle (Sacré-Cœur 포함),32
 montorgueil-les-halles,closed,BLOCKED,P0,,지구 단위 항목 — 단일 공식 운영정보 없음,,,paris,priority,Montorgueil · Les Halles,36;40
 montorgueil-les-halles,hours,BLOCKED,P0,,지구 단위 항목 — 공식 운영시간 없음,,,paris,priority,Montorgueil · Les Halles,36;40
 montorgueil-les-halles,booking,BLOCKED,P0,,지구 단위 항목 — 예약 대상 아님,,,paris,priority,Montorgueil · Les Halles,36;40
@@ -610,8 +552,8 @@ musee-de-l-orangerie,booking,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시�
 musee-de-l-orangerie,price_adult,BLOCKED,P1,2026-08-17,일반 성인 요금·휴관 요일 공식 페이지 403/404 — 확인 실패,,2026-08-17 신규 검증,paris,priority,Musée de l'Orangerie,
 musee-de-l-orangerie,getting_there,MISSING,P1,,,,,paris,priority,Musée de l'Orangerie,
 musee-de-l-orangerie,duration,MISSING,P2,,,,,paris,priority,Musée de l'Orangerie,
-musee-de-l-orangerie-monet-peindre-le-temps,closed,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
-musee-de-l-orangerie-monet-peindre-le-temps,hours,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
+musee-de-l-orangerie-monet-peindre-le-temps,closed,MISSING,P0,,,,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
+musee-de-l-orangerie-monet-peindre-le-temps,hours,MISSING,P0,,,,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
 musee-de-l-orangerie-monet-peindre-le-temps,booking,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
 musee-de-l-orangerie-monet-peindre-le-temps,price_adult,MISSING,P1,,,,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
 musee-de-l-orangerie-monet-peindre-le-temps,getting_there,MISSING,P1,,,,,paris,priority,"Musée de l'Orangerie — 'Monet, peindre le temps'",36;41
@@ -662,12 +604,6 @@ museu-de-maricel,booking,BLOCKED,P0,2026-08-17,공식 일정 페이지에 예약
 museu-de-maricel,price_adult,MISSING,P1,,,+34 93 894 03 64,,barcelona,essential,Museu de Maricel,4
 museu-de-maricel,getting_there,MISSING,P1,,,+34 93 894 03 64,,barcelona,essential,Museu de Maricel,4
 museu-de-maricel,duration,MISSING,P2,,,+34 93 894 03 64,,barcelona,essential,Museu de Maricel,4
-museu-del-cau-ferrat,closed,FRESH,P0,2026-08-17,,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Museu del Cau Ferrat,
-museu-del-cau-ferrat,hours,FRESH,P0,2026-08-17,,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Museu del Cau Ferrat,
-museu-del-cau-ferrat,booking,BLOCKED,P0,2026-08-17,공식 일정 페이지에 예약 필요 여부 미게재; 요금 페이지 404,+34 93 894 03 64,https://museusdesitges.cat/en/schedule,barcelona,essential,Museu del Cau Ferrat,
-museu-del-cau-ferrat,price_adult,MISSING,P1,,,+34 93 894 03 64,,barcelona,essential,Museu del Cau Ferrat,
-museu-del-cau-ferrat,getting_there,MISSING,P1,,,+34 93 894 03 64,,barcelona,essential,Museu del Cau Ferrat,
-museu-del-cau-ferrat,duration,MISSING,P2,,,+34 93 894 03 64,,barcelona,essential,Museu del Cau Ferrat,
 museum-of-jewish-history,closed,FRESH,P0,2026-08-17,,+34 972 216 761,https://www.girona.cat/turisme/cat/museus_call.php,girona,none,Museum of Jewish History,
 museum-of-jewish-history,hours,FRESH,P2,2026-08-17,,+34 972 216 761,2026-08-17 신규 검증,girona,none,Museum of Jewish History,
 museum-of-jewish-history,booking,MISSING,P2,,,+34 972 216 761,,girona,none,Museum of Jewish History,
@@ -679,7 +615,7 @@ navigo-idfm,price_adult,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,paris,non
 nice-old-town-castle-hill-walk,closed,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Nice Old Town–Castle Hill Walk,8
 nice-old-town-castle-hill-walk,hours,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Nice Old Town–Castle Hill Walk,8
 nice-old-town-castle-hill-walk,booking,FRESH,P0,2026-08-17,,3906,https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/,nice,essential,Nice Old Town–Castle Hill Walk,8
-nice-old-town-castle-hill-walk,price_adult,MISSING,P1,,,3906,,nice,essential,Nice Old Town–Castle Hill Walk,8
+nice-old-town-castle-hill-walk,price_adult,STALE,P1,,,3906,,nice,essential,Nice Old Town–Castle Hill Walk,8
 nice-old-town-castle-hill-walk,getting_there,MISSING,P1,,,3906,,nice,essential,Nice Old Town–Castle Hill Walk,8
 nice-old-town-castle-hill-walk,duration,MISSING,P2,,,3906,,nice,essential,Nice Old Town–Castle Hill Walk,8
 nocturnes-avignon-musees,closed,MISSING,P0,2026-08-17,,04 90 80 80 00,https://www.avignon.fr/ma-ville/culture/les-musees/,avignon,none,Nocturnes d'Avignon Musées,
@@ -723,27 +659,19 @@ pals,duration,MISSING,P2,,,+34 972 637 380,,girona,priority,Pals,6
 parc-de-la-tete-d-or,closed,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor,lyon,priority,Parc de la Tête d'Or,25
 parc-de-la-tete-d-or,hours,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor,lyon,priority,Parc de la Tête d'Or,25
 parc-de-la-tete-d-or,booking,FRESH,P0,2026-08-17,,,https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor,lyon,priority,Parc de la Tête d'Or,25
-parc-de-la-tete-d-or,price_adult,MISSING,P1,,,,,lyon,priority,Parc de la Tête d'Or,25
+parc-de-la-tete-d-or,price_adult,STALE,P1,,,,,lyon,priority,Parc de la Tête d'Or,25
 parc-de-la-tete-d-or,getting_there,MISSING,P1,,,,,lyon,priority,Parc de la Tête d'Or,25
 parc-de-la-tete-d-or,duration,MISSING,P2,,,,,lyon,priority,Parc de la Tête d'Or,25
-passeig-de-la-muralla,closed,FRESH,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,Passeig de la Muralla,
-passeig-de-la-muralla,hours,FRESH,P0,2026-08-17,,+34 972 010 001,2026-08-17 신규 검증,girona,essential,Passeig de la Muralla,
-passeig-de-la-muralla,booking,MISSING,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,Passeig de la Muralla,
-passeig-de-la-muralla,price_adult,MISSING,P1,,,+34 972 010 001,,girona,essential,Passeig de la Muralla,
-passeig-de-la-muralla,getting_there,MISSING,P1,,,+34 972 010 001,,girona,essential,Passeig de la Muralla,
-passeig-de-la-muralla,duration,MISSING,P2,,,+34 972 010 001,,girona,essential,Passeig de la Muralla,
-passeig-de-la-muralla-2,closed,FRESH,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,성벽 (Passeig de la Muralla),4
-passeig-de-la-muralla-2,hours,FRESH,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,성벽 (Passeig de la Muralla),4
-passeig-de-la-muralla-2,booking,MISSING,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,성벽 (Passeig de la Muralla),4
-passeig-de-la-muralla-2,price_adult,MISSING,P1,,,+34 972 010 001,,girona,essential,성벽 (Passeig de la Muralla),4
-passeig-de-la-muralla-2,getting_there,MISSING,P1,,,+34 972 010 001,,girona,essential,성벽 (Passeig de la Muralla),4
-passeig-de-la-muralla-2,duration,MISSING,P2,,,+34 972 010 001,,girona,essential,성벽 (Passeig de la Muralla),4
-peralada,closed,FRESH,P0,2026-08-17,,+34 972 538 125,https://www.museucastellperalada.com/en/visit/section/hours/,girona,priority,Peralada,5
-peralada,hours,FRESH,P0,2026-08-17,,+34 972 538 125,https://www.museucastellperalada.com/en/visit/section/hours/,girona,priority,Peralada,5
-peralada,booking,FRESH,P0,2026-08-17,,+34 972 538 125,https://www.museucastellperalada.com/en/visit/section/hours/,girona,priority,Peralada,5
-peralada,price_adult,MISSING,P1,,,+34 972 538 125,,girona,priority,Peralada,5
-peralada,getting_there,MISSING,P1,,,+34 972 538 125,,girona,priority,Peralada,5
-peralada,duration,MISSING,P2,,,+34 972 538 125,,girona,priority,Peralada,5
+passeig-de-la-muralla,closed,FRESH,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,성벽 (Passeig de la Muralla),4
+passeig-de-la-muralla,hours,FRESH,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,성벽 (Passeig de la Muralla),4
+passeig-de-la-muralla,booking,MISSING,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/monuments_muralla.php,girona,essential,성벽 (Passeig de la Muralla),4
+passeig-de-la-muralla,price_adult,MISSING,P1,,,+34 972 010 001,,girona,essential,성벽 (Passeig de la Muralla),4
+passeig-de-la-muralla,getting_there,MISSING,P1,,,+34 972 010 001,,girona,essential,성벽 (Passeig de la Muralla),4
+passeig-de-la-muralla,duration,MISSING,P2,,,+34 972 010 001,,girona,essential,성벽 (Passeig de la Muralla),4
+peralada,closed,FRESH,P0,2026-08-17,,+34 972 538 125,https://www.museucastellperalada.com/en/visit/section/hours/,girona,excluded,Peralada,5
+peralada,hours,FRESH,P2,2026-08-17,,+34 972 538 125,https://www.museucastellperalada.com/en/visit/section/hours/,girona,excluded,Peralada,5
+peralada,booking,FRESH,P2,2026-08-17,,+34 972 538 125,https://www.museucastellperalada.com/en/visit/section/hours/,girona,excluded,Peralada,5
+peralada,price_adult,MISSING,P2,,,+34 972 538 125,,girona,excluded,Peralada,5
 peratallada,closed,MISSING,P0,2026-08-17,,+34 872 987 030,https://forallac.cat/,girona,essential,Peratallada,6
 peratallada,hours,MISSING,P0,2026-08-17,,+34 872 987 030,https://forallac.cat/,girona,essential,Peratallada,6
 peratallada,booking,MISSING,P0,2026-08-17,,+34 872 987 030,https://forallac.cat/,girona,essential,Peratallada,6
@@ -760,12 +688,6 @@ placa-del-rei-carrer-del-bisbe,booking,BLOCKED,P0,,공공 광장·가로 산책 
 placa-del-rei-carrer-del-bisbe,price_adult,MISSING,P1,,,,,barcelona,essential,고딕지구 핵심 산책 (Plaça del Rei–Carrer del Bisbe),3
 placa-del-rei-carrer-del-bisbe,getting_there,MISSING,P1,,,,,barcelona,essential,고딕지구 핵심 산책 (Plaça del Rei–Carrer del Bisbe),3
 placa-del-rei-carrer-del-bisbe,duration,MISSING,P2,,,,,barcelona,essential,고딕지구 핵심 산책 (Plaça del Rei–Carrer del Bisbe),3
-place,closed,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,콜리우르 시장 (수요일),5
-place,hours,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,콜리우르 시장 (수요일),5
-place,booking,FRESH,P0,2026-08-17,,+33 4 68 82 15 47,https://www.tourisme-collioure.com/agenda-collioure/les-marches-collioure/,girona,essential,콜리우르 시장 (수요일),5
-place,price_adult,MISSING,P1,,,+33 4 68 82 15 47,,girona,essential,콜리우르 시장 (수요일),5
-place,getting_there,MISSING,P1,,,+33 4 68 82 15 47,,girona,essential,콜리우르 시장 (수요일),5
-place,duration,MISSING,P2,,,+33 4 68 82 15 47,,girona,essential,콜리우르 시장 (수요일),5
 place-du-forum,closed,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,priority,Place du Forum,22
 place-du-forum,hours,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,priority,Place du Forum,22
 place-du-forum,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.arlestourisme.com/en/practical-information-monuments.html,avignon,priority,Place du Forum,22
@@ -809,7 +731,7 @@ restaurant-sevin,price_adult,MISSING,P2,,,,,avignon,none,Restaurant SEVIN,22
 rocher-des-doms,closed,FRESH,P0,2026-08-17,,04 90 80 80 00,https://www.avignon.fr/les-equipements/les-parcs-et-jardins/les-parcs-du-centre-ville/parc-du-rocher-des-doms,avignon,essential,Rocher des Doms,20
 rocher-des-doms,hours,FRESH,P0,2026-08-16,,04 90 80 80 00,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Rocher des Doms,20
 rocher-des-doms,booking,FRESH,P0,2026-08-17,,04 90 80 80 00,https://www.avignon.fr/les-equipements/les-parcs-et-jardins/les-parcs-du-centre-ville/parc-du-rocher-des-doms,avignon,essential,Rocher des Doms,20
-rocher-des-doms,price_adult,MISSING,P1,,,04 90 80 80 00,,avignon,essential,Rocher des Doms,20
+rocher-des-doms,price_adult,STALE,P1,,,04 90 80 80 00,,avignon,essential,Rocher des Doms,20
 rocher-des-doms,getting_there,MISSING,P1,,,04 90 80 80 00,,avignon,essential,Rocher des Doms,20
 rocher-des-doms,duration,MISSING,P2,,,04 90 80 80 00,,avignon,essential,Rocher des Doms,20
 roussillon-sentier-des-ocres,closed,FRESH,P0,2026-08-17,,04 90 05 60 16,https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/,luberon,essential,Roussillon · Sentier des Ocres,17
@@ -826,7 +748,7 @@ rtm-lecar,getting_there,FRESH,P2,2026-08-17,,,2026-08-17 신규 검증,aix,none,
 rue-des-teinturiers,closed,FRESH,P0,2026-08-17,,04 90 80 80 00,https://avignon-tourisme.com/en/offres/water-wheels-of-teinturiers-avignon-en-4143892/,avignon,priority,Rue des Teinturiers,19
 rue-des-teinturiers,hours,FRESH,P0,2026-08-17,,04 90 80 80 00,https://avignon-tourisme.com/en/offres/water-wheels-of-teinturiers-avignon-en-4143892/,avignon,priority,Rue des Teinturiers,19
 rue-des-teinturiers,booking,FRESH,P0,2026-08-17,,04 90 80 80 00,https://avignon-tourisme.com/en/offres/water-wheels-of-teinturiers-avignon-en-4143892/,avignon,priority,Rue des Teinturiers,19
-rue-des-teinturiers,price_adult,MISSING,P1,,,04 90 80 80 00,,avignon,priority,Rue des Teinturiers,19
+rue-des-teinturiers,price_adult,STALE,P1,,,04 90 80 80 00,,avignon,priority,Rue des Teinturiers,19
 rue-des-teinturiers,getting_there,MISSING,P1,,,04 90 80 80 00,,avignon,priority,Rue des Teinturiers,19
 rue-des-teinturiers,duration,MISSING,P2,,,04 90 80 80 00,,avignon,priority,Rue des Teinturiers,19
 sacre-coeur,closed,FRESH,P0,2026-08-17,,+33 1 53 41 89 00,https://www.sacre-coeur-montmartre.com/english/,paris,none,Sacré-Cœur,
@@ -851,12 +773,6 @@ saint-paul-de-vence,booking,FRESH,P0,2026-08-17,,+33 4 93 32 86 95,https://www.s
 saint-paul-de-vence,price_adult,MISSING,P1,,,+33 4 93 32 86 95,,aix,priority,Saint-Paul-de-Vence,12
 saint-paul-de-vence,getting_there,MISSING,P1,,,+33 4 93 32 86 95,,aix,priority,Saint-Paul-de-Vence,12
 saint-paul-de-vence,duration,MISSING,P2,,,+33 4 93 32 86 95,,aix,priority,Saint-Paul-de-Vence,12
-saint-paul-de-vence-fondation-maeght,closed,FRESH,P0,2026-08-17,,+33 4 93 32 81 63,https://www.fondation-maeght.com/infos-pratiques/?lang=fr,aix,priority,Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함),12
-saint-paul-de-vence-fondation-maeght,hours,FRESH,P0,2026-08-17,,+33 4 93 32 81 63,https://www.fondation-maeght.com/infos-pratiques/?lang=fr,aix,priority,Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함),12
-saint-paul-de-vence-fondation-maeght,booking,FRESH,P0,2026-08-17,,+33 4 93 32 81 63,https://www.fondation-maeght.com/infos-pratiques/?lang=fr,aix,priority,Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함),12
-saint-paul-de-vence-fondation-maeght,price_adult,MISSING,P1,,,+33 4 93 32 81 63,,aix,priority,Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함),12
-saint-paul-de-vence-fondation-maeght,getting_there,MISSING,P1,,,+33 4 93 32 81 63,,aix,priority,Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함),12
-saint-paul-de-vence-fondation-maeght,duration,MISSING,P2,,,+33 4 93 32 81 63,,aix,priority,Saint-Paul-de-Vence (Fondation Maeght·마을 묘지 포함),12
 sant-pau-recinte-modernista,closed,FRESH,P0,2026-08-17,,+34 93 551 78 76,https://santpaubarcelona.org/en/prepara-la-teva-visita/,barcelona,essential,Sant Pau Recinte Modernista,2
 sant-pau-recinte-modernista,hours,FRESH,P0,2026-08-17,,+34 93 551 78 76,2026-08-17 신규 검증,barcelona,essential,Sant Pau Recinte Modernista,2
 sant-pau-recinte-modernista,booking,FRESH,P0,2026-08-17,,+34 93 551 78 76,https://santpaubarcelona.org/en/prepara-la-teva-visita/,barcelona,essential,Sant Pau Recinte Modernista,2
@@ -870,7 +786,7 @@ saone-rhone,price_adult,MISSING,P1,,,,,lyon,priority,Saône·Rhône 강변 산�
 saone-rhone,getting_there,MISSING,P1,,,,,lyon,priority,Saône·Rhône 강변 산책,23;24;25
 saone-rhone,duration,MISSING,P2,,,,,lyon,priority,Saône·Rhône 강변 산책,23;24;25
 taxi-avignon,closed,MISSING,P0,2026-08-17,,,,avignon,none,택시 (Avignon Centre→TGV),
-taxi-avignon,hours,MISSING,P2,,,,,avignon,none,택시 (Avignon Centre→TGV),
+taxi-avignon,hours,STALE,P2,,,,,avignon,none,택시 (Avignon Centre→TGV),
 taxi-avignon,booking,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,none,택시 (Avignon Centre→TGV),
 taxi-avignon,price_adult,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,none,택시 (Avignon Centre→TGV),
 tcl,closed,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.tcl.fr/,lyon,none,TCL (Lyon 시내교통),
@@ -883,24 +799,18 @@ theatre-antique,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https
 theatre-antique,price_adult,MISSING,P1,,,,,avignon,essential,Théâtre antique,22
 theatre-antique,getting_there,MISSING,P1,,,,,avignon,essential,Théâtre antique,22
 theatre-antique,duration,MISSING,P2,,,,,avignon,essential,Théâtre antique,22
-uzes,closed,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.uzes-pontdugard.com/en/,avignon,essential,Uzès Place aux Herbes·구시가지,21
-uzes,hours,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),avignon,essential,Uzès Place aux Herbes·구시가지,21
+uzes,closed,STALE,P0,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,21
+uzes,hours,STALE,P0,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,21
 uzes,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.uzes-pontdugard.com/en/,avignon,essential,Uzès Place aux Herbes·구시가지,21
 uzes,price_adult,MISSING,P1,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,21
 uzes,getting_there,MISSING,P1,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,21
 uzes,duration,MISSING,P2,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,21
-versailles,closed,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles,
-versailles,hours,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles,
-versailles,booking,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles,
-versailles,price_adult,FRESH,P1,2026-08-16,,+33 1 30 83 78 00,2026-08-16 확정 원장 (공식 소스 검증 완료),paris,priority,Versailles,
-versailles,getting_there,MISSING,P1,,,+33 1 30 83 78 00,,paris,priority,Versailles,
-versailles,duration,MISSING,P2,,,+33 1 30 83 78 00,,paris,priority,Versailles,
-versailles-2,closed,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),36
-versailles-2,hours,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),36
-versailles-2,booking,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),36
-versailles-2,price_adult,MISSING,P1,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),36
-versailles-2,getting_there,MISSING,P1,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),36
-versailles-2,duration,MISSING,P2,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),36
+versailles,closed,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),36
+versailles,hours,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),36
+versailles,booking,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),36
+versailles,price_adult,FRESH,P1,2026-08-16,,+33 1 30 83 78 00,2026-08-16 확정 원장 (공식 소스 검증 완료),paris,priority,Versailles (궁전·트리아농·정원),36
+versailles,getting_there,MISSING,P1,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),36
+versailles,duration,MISSING,P2,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),36
 vieux-lyon-traboules,closed,FRESH,P0,2026-08-17,,04 72 77 72 33,https://www.visiterlyon.com/decouvrir/sites-et-monuments/les-traboules-et-cours-de-lyon,lyon,essential,Vieux Lyon · traboules,24
 vieux-lyon-traboules,hours,FRESH,P0,2026-08-17,,04 72 77 72 33,https://www.visiterlyon.com/decouvrir/sites-et-monuments/les-traboules-et-cours-de-lyon,lyon,essential,Vieux Lyon · traboules,24
 vieux-lyon-traboules,booking,FRESH,P0,2026-08-17,,04 72 77 72 33,https://www.visiterlyon.com/decouvrir/sites-et-monuments/les-traboules-et-cours-de-lyon,lyon,essential,Vieux Lyon · traboules,24

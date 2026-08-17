@@ -15,8 +15,10 @@ from common import FACT_RE, chapter_files, facts, report
 
 MONEY = re.compile(r"€\s?\d[\d.,]*")
 TIME = re.compile(r"\b\d{1,2}:\d{2}\b")
-# 2인 합계·범위·예산은 1인 요금과 다른 축이다 — 충돌이 아니다.
-PER_TWO = re.compile(r"/\s*2\s*인|2인\s*€|€[\d.,]+\s*[–\-~]\s*[\d.,]+|예산|예상")
+# 범위·예산은 1인 요금과 다른 축이다 — 충돌이 아니다.
+# **'2인 합계'는 여기서 뺐다.** 오탐으로 눈감아 주면 1인 요금이 바뀔 때 경비표만
+# 조용히 낡는다. 2인 금액은 {{fact:x.price_adult|x2}} 로 적어 연동시킨다.
+PER_TWO = re.compile(r"€[\d.,]+\s*[–\-~]\s*[\d.,]+|예산|예상")
 
 
 def money_norm(s):
