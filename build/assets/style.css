@@ -13,37 +13,16 @@
    ============================================================ */
 
 /* ================= 서체 =================
-   나눔고딕을 번들한다 (OFL 1.1). CDN 을 쓰지 않는다 — 완전 오프라인으로
-   동작해야 하고 런타임 서드파티 의존성은 0 이다. */
-/* 라틴과 한글을 따로 싣는다. unicode-range 로 갈라 두면 라틴만 있는
-   화면에서 한글 파일(수백 KB)을 내려받지 않는다 — 현장에서 연결이
-   느릴 때 첫 화면이 그만큼 빨리 뜬다. */
-@font-face {
-  font-family: "NanumGothic";
-  src: url("vendor/nanum/nanum-gothic-latin-400-normal.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F,
-                 U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
-}
-@font-face {
-  font-family: "NanumGothic";
-  src: url("vendor/nanum/nanum-gothic-latin-700-normal.woff2") format("woff2");
-  font-weight: 700; font-style: normal; font-display: swap;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F,
-                 U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
-}
-@font-face {
-  font-family: "NanumGothic";
-  src: url("vendor/nanum/nanum-gothic-korean-400-normal.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
-  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
-}
-@font-face {
-  font-family: "NanumGothic";
-  src: url("vendor/nanum/nanum-gothic-korean-700-normal.woff2") format("woff2");
-  font-weight: 700; font-style: normal; font-display: swap;
-  unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
-}
+   기기의 기본 한글 글꼴을 쓴다. 번들 나눔고딕을 걷어냈다 —
+   스페인어·프랑스어의 발음기호(à é ç ñ í ü)가 나눔고딕에서 볼품없이 나왔고,
+   그 알파벳은 이 여행 43일 내내 화면에 있다.
+
+   윈도는 맑은 고딕, 아이폰·맥은 -apple-system(SF + Apple SD Gothic Neo)이다.
+   둘 다 라틴 글자를 제대로 그리고, 기기에 이미 있으므로 내려받을 것이 없다 —
+   오프라인 원칙에도 더 맞는다.
+
+   순서가 곧 규칙이다. 맑은 고딕이 먼저지만 아이폰엔 없으므로 -apple-system
+   으로 떨어진다. 맥에서도 마찬가지다. */
 
 :root {
   /* ---- 바탕 — warm off-white ----
@@ -188,8 +167,8 @@ body {
   margin: 0;
   background: var(--canvas);
   color: var(--text);
-  font-family: "NanumGothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
-               "Helvetica Neue", sans-serif;
+  font-family: "Malgun Gothic", "맑은 고딕", -apple-system, BlinkMacSystemFont,
+               "Apple SD Gothic Neo", "Segoe UI", system-ui, sans-serif;
   font-size: var(--t-body);
   line-height: var(--lh-body);
   /* 하단탭 + 홈 인디케이터. 이만큼 안 비우면 마지막 줄이 탭에 가린다. */
@@ -265,6 +244,9 @@ h1, h2, h3, h4 {
   line-height: var(--lh-tight);
   letter-spacing: -0.015em;
   text-wrap: balance;
+  /* 한국어는 어절 단위로 끊는다. 기본값이면 "유럽여행" 이 "유럽 / 여행" 으로
+     갈라져 읽는 사람이 한 번 멈춘다. */
+  word-break: keep-all;
 }
 h1 { font-size: var(--t-h1); }
 h2 { font-size: var(--t-h2); }
@@ -359,6 +341,7 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
 }
 .hero-eyebrow .label { color: var(--accent); }
 .hero h1 {
+  word-break: keep-all;
   font-size: var(--t-display);
   letter-spacing: -0.03em;
   margin-bottom: var(--s2);
@@ -372,6 +355,16 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   margin: var(--s4) 0 0;
   color: var(--text-2);
   font-size: var(--t-body);
+}
+/* 하루의 요약 한 줄 — 그날이 어떤 날인지 말한다. 제목 다음으로 눈에 들어와야
+   해서 굵은 파랑으로 둔다. ("국경의 시장과 해안마을 순환" 같은 줄) */
+.day-summary {
+  word-break: keep-all;
+  margin: var(--s2) 0 0;
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: var(--lh-snug);
 }
 
 @media (min-width: 768px) {
@@ -581,11 +574,12 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   align-items: center;
   justify-content: center;
   gap: 2px;
-  min-height: 52px;
+  min-height: 56px;
   padding: var(--s1) 2px;
   text-decoration: none;
   color: var(--muted);
-  font-size: var(--t-meta);
+  /* 12px 은 걸어가며 흘끗 보기엔 작다. 라벨은 목적지 이름이라 읽혀야 한다. */
+  font-size: var(--t-label);
   font-weight: 700;
   position: relative;
   transition: color var(--dur-fast) var(--ease);
@@ -812,7 +806,14 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   letter-spacing: var(--ls-label);
   color: var(--accent);
 }
-.day-date { font-size: var(--t-label); color: var(--muted); font-variant-numeric: tabular-nums; }
+/* 날짜 — 굵은 파랑. 하루 화면에서 "오늘이 며칠 무슨 요일인가" 가 가장 먼저
+   읽혀야 한다. 시장 요일·휴관일이 요일로 정해지는 여행이다. */
+.day-date {
+  font-size: var(--t-small);
+  font-weight: 700;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
 .day-route { font-size: var(--t-h3); font-weight: 700; color: var(--text); }
 
 /* ================= ActionCard =================
@@ -1073,12 +1074,45 @@ footer p { margin: 0 0 var(--s1); }
 }
 
 /* 지도의 목록 대체 — 타일이 없을 때 이게 유일한 조작 대상이다 */
+.map-name { flex: 1 1 auto; min-width: 0; }
+/* 지점 이름도 눌러서 장소 페이지로 간다. 한 줄짜리 이름은 글자 높이가
+   20px 뿐이라 손가락이 겨누기 어렵다 — 보이는 크기는 그대로 두고 눌리는
+   면적만 44pt 로 채운다. */
+.map-name a {
+  display: inline-block;
+  padding-block: 0.7rem;
+  margin-block: -0.7rem;
+}
+
+/* 지도 목록 — 시각 · 이름 · 열기 를 한 줄에 둔다. 열기가 아래로 떨어지면
+   한 지점이 두 줄을 먹고, 하루 7곳이면 화면이 두 배로 길어진다. */
 .map-list { margin: 0; padding: var(--s2) var(--s4) var(--s4); }
-.map-list li { margin: 0; }
-.map-list a {
+.map-list li {
   display: flex;
   align-items: center;
+  gap: var(--s2);
   min-height: var(--tap);
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+.map-list li:last-child { border-bottom: 0; }
+.map-list li > .meta {
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+  min-width: 3.1em;
+}
+/* 지점 이름이 남는 자리를 차지하고, 길면 줄을 바꾼다 */
+
+.map-open {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s1);
+  min-height: var(--tap);
+  min-width: var(--tap);
+  padding-inline: var(--s2);
+  margin-inline-end: calc(var(--s2) * -1);
 }
 
 /* NEXT 카드의 장소 링크 — 하루 화면에서 가장 먼저 눌리는 자리다 */
@@ -1180,3 +1214,12 @@ footer p { margin: 0 0 var(--s1); }
   background: var(--primary);
   border-radius: var(--r-full);
 }
+
+/* 홈 제목 — 무엇을 보고 있는지 말한다. 하단탭만 있으면 이 화면이 무엇인지
+   알려 주는 것이 없었다. */
+.home-head { margin-bottom: var(--s2); }
+.home-head h1 {
+  font-size: var(--t-h1);
+  letter-spacing: -0.02em;
+}
+.home-head .meta { margin-top: var(--s2); }

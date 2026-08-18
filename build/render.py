@@ -324,7 +324,8 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
             name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
         when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
         items.append(
-            f'<li data-pin="{esc(p["id"])}">{when}{name}'
+            f'<li data-pin="{esc(p["id"])}">{when}'
+            f'<span class="map-name">{name}</span>'
             f'<a class="map-open" rel="nofollow noopener" '
             f'href="https://www.google.com/maps/search/?api=1&query='
             f'{p["lat"]},{p["lng"]}">{ic("map")}'
@@ -500,7 +501,7 @@ def build_day(d: Day, trip: Trip) -> str:
   <div class="metarow"><span class="day-num">DAY {d.n}</span>
     <span class="day-date">{esc(d.date_label)}</span></div>
   <h1>{esc(d.city)}</h1>
-  <p class="hero-dek">{esc(d.title)}</p>
+  <p class="day-summary">{esc(d.title)}</p>
   <div class="metarow">{''.join(head_marks)}</div>
 </header>"""]
 
@@ -877,7 +878,10 @@ def build_home(trip: Trip, res: dict) -> str:
 
     body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 
-<h1 class="visually-hidden">오늘</h1>
+<header class="home-head">
+  <h1>2026년 유럽여행 가이드</h1>
+  <p class="meta">{trip.start.isoformat()} — {trip.end.isoformat()} · 43일 42박 · 8개 거점</p>
+</header>
 
 <section id="today-panel" class="stack" aria-live="polite">
   <noscript><p class="meta">오늘 화면은 기기의 날짜로 고릅니다.
@@ -1087,9 +1091,8 @@ def write_assets(trip: Trip) -> None:
         encoding="utf-8")
     for name in ("app.js", "pwa.js"):
         shutil.copy(ASSETS / name, out / name)
-    # 나눔고딕 — CDN 을 쓰지 않고 번들한다. 완전 오프라인으로 동작해야 한다.
-    if (ASSETS / "vendor").exists():
-        shutil.copytree(ASSETS / "vendor", out / "vendor", dirs_exist_ok=True)
+    # 글꼴은 번들하지 않는다. 기기의 기본 한글 글꼴을 쓰므로 내려받을 것이
+    # 없고, 그만큼 오프라인 패키지가 가벼워진다.
     pwa = ROOT / "source" / "ASSETS" / "pwa"
     if pwa.exists():
         shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
@@ -1134,10 +1137,6 @@ PWA_CORE_PATHS = (
     "assets/style.css",
     "assets/app.js",
     "assets/search-index.js",
-    "assets/vendor/nanum/nanum-gothic-latin-400-normal.woff2",
-    "assets/vendor/nanum/nanum-gothic-latin-700-normal.woff2",
-    "assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2",
-    "assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2",
 )
 
 
