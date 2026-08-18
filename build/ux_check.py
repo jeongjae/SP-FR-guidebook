@@ -151,7 +151,33 @@ def check_site() -> list[str]:
     else:
         print("데일리 카드: 43일 전수 존재")
 
-    # 3) 뷰포트 설정 — 확대를 막으면 저시력 사용자가 못 쓴다.
+    # 3) 글자로만 있는 URL. 누를 수 없는 주소는 현장에서 손으로 옮겨 적어야
+    #    한다는 뜻이고, 그러느니 없는 편이 낫다. 확인할 수 없는 근거는
+    #    근거가 아니다. (사실 출처 286건이 실제로 그런 상태였다.)
+    anchor = re.compile(r"<a\b[^>]*>.*?</a>", re.S | re.I)
+    scripts = re.compile(r"<script.*?</script>|<style.*?</style>", re.S | re.I)
+    bare_url = re.compile(r'(?:https?://|www\.)[^\s<>"\')\]]+')
+    naked = {}
+    for path in pages:
+        body = scripts.sub(" ", path.read_text(encoding="utf-8", errors="replace"))
+        text = re.sub(r"<[^>]+>", " ", anchor.sub(" ", body))
+        for url in bare_url.findall(text):
+            naked.setdefault(url, str(path.relative_to(SITE)))
+    if naked:
+        first = list(naked.items())[:3]
+        problems.append(
+            f"링크가 걸리지 않은 URL {len(naked)}종 — "
+            + " · ".join(f"{u[:48]} ({p})" for u, p in first))
+    else:
+        print("링크: 글자로만 있는 URL 0건")
+
+    # 4) 빈 href — 눌러도 제자리다
+    for path in pages:
+        if 'href=""' in path.read_text(encoding="utf-8", errors="replace"):
+            problems.append(f"빈 href: {path.relative_to(SITE)}")
+            break
+
+    # 5) 뷰포트 설정 — 확대를 막으면 저시력 사용자가 못 쓴다.
     for path in pages:
         body = path.read_text(encoding="utf-8", errors="replace")
         if "user-scalable=no" in body or "maximum-scale=1" in body:
