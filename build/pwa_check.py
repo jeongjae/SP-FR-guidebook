@@ -2,7 +2,7 @@
 """iPhone PWA 정적 무결성과 실제 오프라인 탐색을 검사한다.
 
 사용: python3 build/pwa_check.py
-사전조건: python3 build/build.py
+사전조건: python3 build/site.py
 """
 
 import hashlib
@@ -44,12 +44,15 @@ EXPECTED_ICONS = {
     "assets/pwa/icon-512.png": (512, 512),
     "assets/pwa/icon-maskable-512.png": (512, 512),
 }
+# 오프라인에서 깊은 곳까지 열리는가. 축마다 하나씩 고른다 —
+# 하루 · 지역 · 장소 · 준비 · 지도.
 OFFLINE_ROUTES = (
-    ("index.html", "2026 유럽 여행 가이드북"),
+    ("index.html", "유럽 43일 가이드북"),
     ("daily/day-43.html", "Day 43"),
-    ("chapters/paris/food.html", "먹거리"),
-    ("tracker/reservations.html", "예약"),
-    ("maps/paris.html", "Paris"),
+    ("guide/paris.html", "Paris"),
+    ("places/sagrada-familia.html", "Sagrada"),
+    ("prepare/index.html", "준비"),
+    ("map/paris.html", "Paris"),
 )
 
 
@@ -181,8 +184,8 @@ def browser_checks(offline, problems):
             page.on("console", record_console_error)
 
             print("PWA 브라우저 검사: 등록", flush=True)
-            page.goto(base + "maps/offline.html", wait_until="domcontentloaded")
-            if page.title() != "오프라인 준비 — 2026 유럽 여행 가이드북":
+            page.goto(base + "offline.html", wait_until="domcontentloaded")
+            if not page.title().startswith("오프라인 준비 —"):
                 problems.append("오프라인 준비 페이지 제목이 예상과 다르다")
             page.wait_for_function("() => 'serviceWorker' in navigator")
             page.evaluate("async () => { await navigator.serviceWorker.ready; return true; }")
@@ -213,7 +216,7 @@ def browser_checks(offline, problems):
                     problems.append(f"오프라인 페이지 내용 불일치: {rel}")
 
             response = page.goto(base + "not-in-offline-package.html", wait_until="domcontentloaded")
-            if not response or "아직 저장되지 않았습니다" not in page.locator("body").inner_text():
+            if not response or "아직 저장되지 않았다" not in page.locator("body").inner_text():
                 problems.append("저장되지 않은 경로가 오프라인 fallback을 표시하지 않는다")
             context.set_offline(False)
             context.close()
@@ -232,7 +235,7 @@ def browser_checks(offline, problems):
 
 def main():
     if not SITE.is_dir():
-        print("site/가 없다. 먼저 python3 build/build.py를 실행하라.")
+        print("site/가 없다. 먼저 python3 build/site.py 를 실행하라.")
         return 1
     problems = []
     offline = static_checks(problems)

@@ -59,32 +59,90 @@
   });
 
   /* ---- 지도 / 목록 전환 ----
-     지도 렌더러가 없어도 목록은 항상 남는다. 현장에서 스크립트가 안 뜨는
-     상황이 실제로 있다 — 그때 좌표 링크만이라도 손에 있어야 한다. */
+     지도는 눌렀을 때만 불러온다. 43일 내내 열리는 화면마다 지도 SDK 를
+     받으면 데이터가 약한 곳에서 첫 화면이 늦는다.
+     목록은 항상 남는다 — 스크립트나 네트워크가 없어도 좌표 링크는 손에
+     있어야 한다. */
   var toggle = document.querySelector('.map-toggle');
   if (toggle) {
     var canvas = document.getElementById('map-canvas');
     var list = document.getElementById('map-list');
+    var status = document.getElementById('map-status');
+    var dataEl = document.getElementById('map-data');
+    var mapReady = false, mapLoading = false;
+
+    function meta(name) {
+      var el = document.querySelector('meta[name="' + name + '"]');
+      return el ? el.content : '';
+    }
+    var apiKey = meta('google-maps-api-key');
+
+    function show(view) {
+      var wantMap = view === 'map';
+      list.hidden = wantMap;
+      canvas.hidden = !wantMap;
+      Array.prototype.forEach.call(toggle.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String((b.dataset.view === 'map') === wantMap));
+      });
+    }
+
+    function drawMap() {
+      if (mapReady || !dataEl) return;
+      var data = JSON.parse(dataEl.textContent);
+      var map = new google.maps.Map(canvas, {
+        center: { lat: data.center[0], lng: data.center[1] },
+        zoom: data.zoom,
+        mapId: meta('google-maps-map-id') || undefined,
+        mapTypeControl: false, streetViewControl: false, fullscreenControl: false
+      });
+      var bounds = new google.maps.LatLngBounds();
+      data.pins.forEach(function (pin, i) {
+        var marker = new google.maps.Marker({
+          map: map, position: { lat: pin.lat, lng: pin.lng },
+          title: pin.name, label: String(i + 1)
+        });
+        bounds.extend(marker.getPosition());
+        marker.addListener('click', function () {
+          var row = list.querySelector('[data-pin="' + pin.id + '"]');
+          if (row) { show('list'); row.scrollIntoView({ block: 'center' }); }
+        });
+      });
+      if (data.pins.length > 1) map.fitBounds(bounds, 40);
+      mapReady = true;
+      if (status) status.textContent = '';
+    }
+
+    function loadMap() {
+      if (mapReady) { show('map'); return; }
+      if (!apiKey) {
+        if (status) status.textContent =
+          '지도 키가 없어 목록으로 연다. 각 항목의 링크로 Google 지도를 열 수 있다.';
+        show('list');
+        return;
+      }
+      if (mapLoading) return;
+      mapLoading = true;
+      if (status) status.textContent = '지도를 불러오는 중';
+      show('map');
+      var s = document.createElement('script');
+      s.src = 'https://maps.googleapis.com/maps/api/js?key=' +
+        encodeURIComponent(apiKey) + '&loading=async&callback=__mapReady';
+      s.async = true;
+      window.__mapReady = function () { drawMap(); };
+      s.onerror = function () {
+        mapLoading = false;
+        if (status) status.textContent = '지도를 불러오지 못했다. 목록을 쓴다.';
+        show('list');
+      };
+      document.head.appendChild(s);
+    }
+
     toggle.addEventListener('click', function (e) {
       var btn = e.target.closest('button');
       if (!btn) return;
-      var wantList = btn.dataset.view === 'list';
-      list.hidden = !wantList;
-      if (canvas) canvas.style.display = wantList ? 'none' : '';
-      Array.prototype.forEach.call(toggle.querySelectorAll('button'), function (b) {
-        b.setAttribute('aria-pressed', String(b === btn));
-      });
+      if (btn.dataset.view === 'map') loadMap(); else show('list');
     });
-    /* 지도 타일이 아직 없다 — 목록을 기본으로 연다. 빈 회색 상자를
-       보여주는 것보다 낫다. */
-    if (canvas && !canvas.dataset.ready) {
-      list.hidden = false;
-      canvas.style.display = 'none';
-      var lb = toggle.querySelector('[data-view=list]');
-      var mb = toggle.querySelector('[data-view=map]');
-      if (lb) lb.setAttribute('aria-pressed', 'true');
-      if (mb) { mb.setAttribute('aria-pressed', 'false'); mb.disabled = true; }
-    }
+    show('list');   /* 목록이 기본이다 */
   }
 
   /* ---- Day 타임라인 — 지금 항목 강조 ----

@@ -9,10 +9,13 @@
 """
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+
+ROOT = Path(__file__).resolve().parent.parent
 
 # 390 이 여행 중 핵심 뷰포트다. 360 은 하한, 위로 태블릿·데스크톱.
 VIEWPORTS = [360, 390, 430, 768, 1024, 1440]
@@ -80,7 +83,9 @@ MEASURE = """() => {
 
 
 def main() -> int:
-    site = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("site")
+    # 상대경로면 as_uri() 가 깨진다 — CI 는 인자 없이 부른다.
+    site = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else \
+        Path(os.environ.get("SPFR_SITE_DIR") or (ROOT / "site")).resolve()
     pages = ["index.html", "schedule.html", "guide/index.html",
              "guide/barcelona.html", "daily/day-02.html", "daily/day-12.html",
              "places/sagrada-familia.html", "places/sant-pau-recinte-modernista.html",

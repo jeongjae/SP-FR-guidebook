@@ -38,6 +38,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DAILY_CARDS = ROOT / "data" / "daily-cards"
 ITINERARY = ROOT / "source" / "CURRENT" / "10_Core" / "itinerary.json"
 REGIONS_JSON = ROOT / "source" / "CURRENT" / "10_Core" / "regions.json"
+REGION_DIR = ROOT / "source" / "CURRENT" / "20_Regions"
 REGISTRY_MD = ROOT / "source" / "ASSETS" / "91_Place_Registry_v1.0.md"
 PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"
 PLACE_FACTS = ROOT / "data" / "place-facts.json"
@@ -231,6 +232,9 @@ class Region:
     days: list[Day] = field(default_factory=list)
     places: list[Place] = field(default_factory=list)
     hero: dict | None = None
+    # 원고에서 온 편집 층 — verdict · scenes · skip · overview · role · rhythm.
+    # 지역 페이지가 목록만 남지 않게 하는 부분이다.
+    editorial: dict = field(default_factory=dict)
 
     @property
     def url(self) -> str:
@@ -490,10 +494,42 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
     return sorted(days, key=lambda x: x.n)
 
 
+LAYER_KEY = {
+    "이 지역에 시간을 쓸 가치와 한계": "verdict",
+    "꼭 경험할 세 장면": "scenes",
+    "생략해도 되는 것": "skip",
+    "한눈에 보기": "overview",
+    "여행 전체에서의 역할": "role",
+    "추천 체류 리듬": "rhythm",
+}
+
+
+def load_region_editorial() -> dict[str, dict]:
+    """20_Regions/<slug>.md — 지역 편집 층. promote_regions.py 가 만든다."""
+    out: dict[str, dict] = {}
+    if not REGION_DIR.exists():
+        return out
+    for path in sorted(REGION_DIR.glob("*.md")):
+        text = re.sub(r"^---\n.*?\n---\n", "", path.read_text(encoding="utf-8"),
+                      flags=re.S)
+        layers, key = {}, None
+        for line in text.splitlines():
+            head = re.match(r"^##\s+(.+?)\s*$", line)
+            if head and head.group(1) in LAYER_KEY:
+                key = LAYER_KEY[head.group(1)]
+                layers[key] = []
+                continue
+            if key:
+                layers[key].append(line)
+        out[path.stem] = {k: "\n".join(v).strip() for k, v in layers.items()}
+    return out
+
+
 def load_trip() -> Trip:
     itin = json.loads(ITINERARY.read_text(encoding="utf-8"))
     stays = itin["stays"]
     regions_raw = json.loads(REGIONS_JSON.read_text(encoding="utf-8"))["regions"]
+    editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 
     days = load_days(by_slug, stays)
@@ -553,6 +589,7 @@ def load_trip() -> Trip:
             days=[d for d in days if r["slug"] in d.regions],
             places=[p for p in places.values() if p.region == r["slug"]],
             hero=heroes.get(r["slug"]),
+            editorial=editorial.get(r["slug"], {}),
         ))
 
     return Trip(

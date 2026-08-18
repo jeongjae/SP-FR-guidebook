@@ -39,6 +39,11 @@ IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 TRACKER_XLSX = ROOT / "source" / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
 
 SEARCH_INDEX: list[dict] = []
+
+# 지도 키는 환경에서 온다 (CI 시크릿). 없으면 지도 없이 목록만 남는다 —
+# 로컬 빌드가 키 때문에 막히지 않게 한다.
+MAPS_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "").strip()
+MAPS_ID = os.environ.get("GOOGLE_MAPS_MAP_ID", "").strip()
 IMAGES: dict = {}
 
 # 어휘표. daily-cards 가 쓰는 값을 화면 말로 옮긴다.
@@ -80,6 +85,8 @@ def md(text: str) -> str:
                   html_out).replace("</table>", "</table></div>")
 
 
+LAYER_LABEL = {"role": "여행 전체에서의 역할", "rhythm": "추천 체류 리듬"}
+
 FACTS: dict = {}   # slug → {key: Fact}. load_facts() 가 채운다.
 
 FACT_TOKEN = re.compile(r"\{\{fact:([a-z0-9-]+)\.([a-z_]+)\}\}")
@@ -105,8 +112,26 @@ def resolve_fact(match: "re.Match") -> str:
     return f"{esc(fact.value)} (재확인)"
 
 
+# 원고에 남아 있는 옛 주소. 승격된 본문이 그대로 들고 오면 링크가 깨진다.
+LEGACY_LINK = re.compile(
+    r"\((?:\.\./)*(chapters/([a-z]+)/[a-z-]+\.html|topics/[a-z-]+\.html"
+    r"|tracker/[a-z-]+\.html|regions\.html|daily/index\.html)([^)]*)\)")
+
+
+def _relink(m: "re.Match") -> str:
+    """옛 주소를 새 IA 로 옮긴다. 리다이렉트가 있긴 하지만 본문 링크가
+    한 번 더 튕기게 두지 않는다 — 오프라인에서는 그 왕복이 실패한다."""
+    target, region = m.group(1), m.group(2)
+    if target.startswith("chapters/") and region:
+        return f"(../guide/{region}.html{m.group(3)})"
+    if target.startswith("tracker/"):
+        return f"(../prepare/index.html{m.group(3)})"
+    return f"(../guide/index.html{m.group(3)})"
+
+
 def strip_tokens(text: str) -> str:
     """원고의 토큰을 사람이 읽는 형태로 바꾼다."""
+    text = LEGACY_LINK.sub(_relink, text)
     text = re.sub(r"\{\{grade:[^}]*\}\}", "", text)
     text = re.sub(r"\{\{badge:[^|}]*\|([^}]*)\}\}", r"(\1)", text)
     text = re.sub(r"\{\{badge:([^}]*)\}\}", r"(\1)", text)
@@ -270,10 +295,14 @@ def timeline(d: Day, rel: str) -> str:
 
 def map_card(stops, rel: str, center=None, zoom: int = 14,
              label: str = "지도") -> str:
-    """MapCard. 핀 데이터는 Place DB 에서 온다 — HTML 에 좌표를 따로 박지 않는다.
+    """MapCard. 핀은 Place DB 에서만 온다 — HTML 에 좌표를 따로 박지 않는다.
 
-    JS 가 없어도 목록과 Google Maps 링크가 남는다. 현장에서 스크립트가
-    안 뜨는 상황이 실제로 있다.
+    지도는 눌렀을 때만 불러온다. 43일 내내 열리는 화면마다 지도 SDK 를
+    받으면 데이터가 약한 곳에서 첫 화면이 늦는다.
+
+    JS 나 네트워크가 없어도 목록과 Google Maps 링크는 남는다. 현장에서
+    스크립트가 안 뜨는 상황이 실제로 있고, 그때 좌표 링크만이라도 손에
+    있어야 한다.
     """
     pins = [{"id": s.id, "name": s.name, "lat": s.lat, "lng": s.lng,
              "cat": s.category, "time": s.start,
@@ -285,22 +314,34 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
         center = [sum(p["lat"] for p in pins) / len(pins),
                   sum(p["lng"] for p in pins) / len(pins)]
     payload = json.dumps({"center": center, "zoom": zoom, "pins": pins},
-                         ensure_ascii=False)
-    items = "".join(
-        f'<li><a href="https://www.google.com/maps/search/?api=1&query='
-        f'{p["lat"]},{p["lng"]}" rel="nofollow noopener">{esc(p["name"])}</a></li>'
-        for p in pins)
+                         ensure_ascii=False, separators=(",", ":")) \
+        .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+
+    items = []
+    for i, p in enumerate(pins, 1):
+        name = esc(p["name"])
+        if p["place"]:
+            name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
+        when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
+        items.append(
+            f'<li data-pin="{esc(p["id"])}">{when}{name}'
+            f'<a class="map-open" rel="nofollow noopener" '
+            f'href="https://www.google.com/maps/search/?api=1&query='
+            f'{p["lat"]},{p["lng"]}">{ic("map")}'
+            f'<span class="visually-hidden">{esc(p["name"])} </span>열기</a></li>')
+
     return f"""<div class="map-card">
-  <div class="map-canvas" id="map-canvas" role="img" aria-label="{esc(label)}"></div>
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
   <script type="application/json" id="map-data">{payload}</script>
   <div class="map-card-foot">
-    <span class="label">{esc(label)}</span>
+    <span class="label">{esc(label)} · {len(pins)}곳</span>
     <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
-      <button type="button" data-view="map" aria-pressed="true">지도</button>
-      <button type="button" data-view="list" aria-pressed="false">목록</button>
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
     </div>
   </div>
-  <ol class="map-list" id="map-list" hidden>{items}</ol>
+  <ol class="map-list" id="map-list">{"".join(items)}</ol>
 </div>"""
 
 
@@ -592,6 +633,29 @@ def build_region(r: Region, trip: Trip) -> str:
 {credit_line(hero_img)}
 <div class="stack-lg" id="overview">"""]
 
+    ed = r.editorial
+
+    # --- Editor's Verdict — 이 지역에 시간을 쓸 가치와 한계 -----------------
+    # 목록보다 먼저 온다. "여기서 무엇을 볼 가치가 있는가" 가 Region 의
+    # 질문이고, 그 답이 판단이지 목록이 아니다.
+    if ed.get("verdict"):
+        # 레이블을 원고 표기 그대로 쓴다. 콘텐츠 스키마가 이 말을 배포
+        # 산출물에서 찾는다 — 편집 표준의 이름이기도 하다.
+        # 표기는 원고 그대로 둔다. 대문자는 CSS 가 입힌다 — 콘텐츠 스키마가
+        # 배포 산출물에서 이 말을 찾으므로 글자를 바꾸면 안 된다.
+        parts.append(sec_head("Editor’s Verdict", "시간을 쓸 가치와 한계",
+                              rule=True))
+        parts.append(f'<div class="prose">{md(strip_tokens(ed["verdict"]))}</div>')
+
+    # --- 꼭 경험할 세 장면 · 생략해도 되는 것 ------------------------------
+    if ed.get("scenes"):
+        parts.append(sec_head("EXPERIENCE", "꼭 경험할 세 장면", rule=True))
+        parts.append(f'<div class="prose">{md(strip_tokens(ed["scenes"]))}</div>')
+    if ed.get("skip"):
+        parts.append('<details class="acc"><summary>생략해도 되는 것</summary>'
+                     f'<div class="acc-body prose">{md(strip_tokens(ed["skip"]))}'
+                     "</div></details>")
+
     # --- Don't Miss -------------------------------------------------------
     must = [p for p in r.essential_places if p.summary][:6]
     if must:
@@ -608,6 +672,10 @@ def build_region(r: Region, trip: Trip) -> str:
                      + "".join(place_card(p, rel) for p in others) + "</div>")
 
     # --- Your days — 목록만. 시간표는 Day 가 갖는다 -----------------------
+    if ed.get("overview"):
+        parts.append(sec_head("AT A GLANCE", "한눈에 보기", rule=True))
+        parts.append(f'<div class="prose">{md(strip_tokens(ed["overview"]))}</div>')
+
     parts.append(f'<div id="days">{sec_head("YOUR DAYS", "이 지역의 날들", rule=True)}</div>')
     parts.append('<div class="grid grid-2">'
                  + "".join(day_card(d, rel, r) for d in r.days) + "</div>")
@@ -677,6 +745,13 @@ def build_region(r: Region, trip: Trip) -> str:
 </ul>
 {'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes[:10]) + '</ul>' if modes else ''}
 </div>""")
+
+    extra = [(k, LAYER_LABEL[k]) for k in ("role", "rhythm") if ed.get(k)]
+    if extra:
+        parts.append("".join(
+            f'<details class="acc"><summary>{esc(label)}</summary>'
+            f'<div class="acc-body prose">{md(strip_tokens(ed[key]))}</div></details>'
+            for key, label in extra))
 
     if r.rain_plan:
         parts.append(alert("caution",
@@ -1098,7 +1173,8 @@ def build_offline_page() -> str:
     <button class="btn btn-secondary" id="pwa-clear" type="button">
       {ic("close")}저장 비우기</button>
   </div>
-  <p class="meta" id="pwa-progress" aria-live="polite"></p>
+  <progress class="pwa-progress" id="pwa-progress" value="0" max="1"
+    aria-label="저장 진행률"></progress>
   <div id="pwa-update-box" hidden>
     {alert("caution", '새 버전이 있다. <button class="btn btn-quiet" '
            'id="pwa-activate-update" type="button">지금 적용</button>')}

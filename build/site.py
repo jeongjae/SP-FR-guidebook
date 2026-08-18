@@ -14,8 +14,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import content_guard
+import fact_guard
 import model
 import promote_places
+import promote_regions
 import render
 from render import SITE
 
@@ -46,7 +49,8 @@ def main() -> int:
     # 개편과 나란히 계속되므로, 원고를 고치면 사이트가 따라와야 한다.
     # 30_Places/ 는 손으로 유지하는 사본이 아니라 파생물이다.
     promoted = promote_places.regenerate()
-    print(f"장소 장문 승격: {len(promoted)}개")
+    regions_promoted = promote_regions.regenerate()
+    print(f"승격: 장소 장문 {len(promoted)}개 · 지역 편집 {len(regions_promoted)}개")
 
     trip = model.load_trip()
     problems = model.validate(trip)
@@ -67,6 +71,15 @@ def main() -> int:
           f"{sum(1 for p in trip.places.values() if p.has_deep_guide)})")
 
     clean_site()
+
+    import shell
+    metas = []
+    if render.MAPS_KEY:
+        metas.append(f'<meta name="google-maps-api-key" content="{render.MAPS_KEY}">')
+    if render.MAPS_ID:
+        metas.append(f'<meta name="google-maps-map-id" content="{render.MAPS_ID}">')
+    shell.MAPS_META = ("\n".join(metas) + "\n") if metas else ""
+    print(f"지도 키: {'있음' if render.MAPS_KEY else '없음 — 목록으로 연다'}")
 
     render.IMAGES = render.load_image_index()
     render.FACTS = model.load_facts()
@@ -102,6 +115,10 @@ def main() -> int:
 
     write("about/credits.html", render.build_credits(trip))
     write("about/sources.html", render.build_sources(trip))
+
+    # 원고 쪽 가드. 배포 산출물을 보는 것이 있어 페이지를 다 쓴 뒤 돈다.
+    fact_guard.check_confirmed_fact_token_guards()
+    content_guard.check_phase9_commercial_depth_guards()
 
     n_red = render.write_redirects(trip)
     print(f"리다이렉트 {n_red}쪽 — 옛 주소를 살려 둔다")

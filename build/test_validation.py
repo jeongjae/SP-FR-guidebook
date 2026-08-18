@@ -5,14 +5,19 @@ import json
 from pathlib import Path
 from io import StringIO
 
-# Ensure we can import build
 sys.path.append(str(Path(__file__).parent))
-import build
+import content_guard
+import fact_guard
+import model
 
-SOURCE = build.SOURCE
-COMMERCIAL_CARDS = build.COMMERCIAL_CARDS
-PLACE_DOSSIERS = build.PLACE_DOSSIERS
-PLACE_REGISTRY = build.PLACE_REGISTRY
+# 경로는 여기서 직접 잡는다. 예전에는 build.py 에서 빌려 왔는데, 그 파일이
+# 은퇴하면서 이 테스트가 렌더러에 묶일 이유가 없어졌다 — 여기서 보는 것은
+# 전부 **원고 쪽 규칙**이다.
+ROOT = Path(__file__).resolve().parent.parent
+SOURCE = ROOT / "source"
+COMMERCIAL_CARDS = SOURCE / "ASSETS/89_Commercial_City_Experience_Cards_v1.0.md"
+PLACE_DOSSIERS = SOURCE / "ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md"
+PLACE_REGISTRY = SOURCE / "ASSETS/91_Place_Registry_v1.0.md"
 NICE_CHAPTER = SOURCE / "CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
 SCHEMA_PATH = SOURCE.parent / "build" / "content_schema.json"
 
@@ -40,27 +45,43 @@ content_schema: rs-region-v1
 ## Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계
 """
 
+# 이 테스트는 추적 대상 원고를 **실제로 망가뜨렸다가 되돌린다**. 가드가
+# 진짜로 잡는지 보려면 그 방법밖에 없다. 다만 중간에 죽으면 리포가 더러운
+# 채 남고, 콘텐츠 편집이 병행되는 지금은 그 오염이 남의 커밋에 섞여 들어갈
+# 수 있다 — 실제로 dummy-slug 가 명부와 스키마에 남아 있었다.
+#
+# 그래서 복구를 addCleanup 에 건다. setUp 이 반쯤 끝나고 죽어도, 테스트가
+# 예외로 끝나도 등록된 것부터 되돌아간다.
+MUTATED_FILES = None   # 아래 setUp 이 채운다
+
+
 class TestValidationGuards(unittest.TestCase):
+    def _assert_clean(self):
+        """정리가 끝난 뒤 잔재가 없는지 본다. cleanup 은 LIFO 라 가장 먼저
+        등록한 이것이 가장 늦게 돈다."""
+        for path in (PLACE_REGISTRY, SCHEMA_PATH):
+            if "dummy-slug" in path.read_text(encoding="utf-8"):
+                raise AssertionError(
+                    f"테스트 잔재가 {path.name} 에 남았다 — git checkout 으로 되돌려라")
+
     def setUp(self):
-        # Back up files before editing
+        self.addCleanup(self._assert_clean)
+        for path in (NICE_CHAPTER, PLACE_DOSSIERS, PLACE_REGISTRY, SCHEMA_PATH):
+            original = path.read_text(encoding="utf-8")
+            self.addCleanup(path.write_text, original, encoding="utf-8")
         self.nice_backup = NICE_CHAPTER.read_text(encoding="utf-8")
         self.dossier_backup = PLACE_DOSSIERS.read_text(encoding="utf-8")
         self.registry_backup = PLACE_REGISTRY.read_text(encoding="utf-8")
         self.schema_backup = SCHEMA_PATH.read_text(encoding="utf-8")
 
-    def tearDown(self):
-        # Restore backups
-        NICE_CHAPTER.write_text(self.nice_backup, encoding="utf-8")
-        PLACE_DOSSIERS.write_text(self.dossier_backup, encoding="utf-8")
-        PLACE_REGISTRY.write_text(self.registry_backup, encoding="utf-8")
-        SCHEMA_PATH.write_text(self.schema_backup, encoding="utf-8")
+
 
     def run_validation(self):
         # Capture stdout
         old_stdout = sys.stdout
         sys.stdout = StringIO()
         try:
-            build.check_phase9_commercial_depth_guards()
+            content_guard.check_phase9_commercial_depth_guards()
             success = True
             output = sys.stdout.getvalue()
         except SystemExit as e:
@@ -174,25 +195,33 @@ class TestValidationGuards(unittest.TestCase):
         self.assertTrue(not success)
         self.assertIn("Dossier Cours Saleya (cours-saleya): 필수 필드 누락 — 공식정보", output)
 
-    def test_missing_fatigue_value(self):
-        # Remove fatigue line from Nice Day 1
-        bad_content = self.nice_backup.replace("**피로도 2/5.**", "")
-        NICE_CHAPTER.write_text(bad_content, encoding="utf-8")
-        
-        old_stdout = sys.stdout
-        sys.stdout = StringIO()
+    def test_broken_day_reference_is_caught(self):
+        """하루의 구간이 그날 없는 장소를 가리키면 잡아야 한다.
+
+        예전에는 챕터 원고의 피로도 표기 누락을 봤다. 이제 하루의 정본은
+        data/daily-cards/*.json 이고, 거기서 가장 위험한 파손은 동선이
+        존재하지 않는 지점을 가리키는 것이다 — 현장에서 길이 끊긴다.
+        """
+        trip = model.load_trip()
+        self.assertEqual(model.validate(trip), [], "정상 데이터가 검증에 걸린다")
+
+        day = trip.day(2)
+        original = list(day.legs)
         try:
-            build.build_chapters()
-            build.build_daily()
-            success = True
-        except SystemExit as e:
-            success = (e.code == 0)
+            day.legs.append(model.Leg(frm="does-not-exist", to=day.stops[0].id,
+                                      mode="walk"))
+            problems = model.validate(trip)
+            self.assertTrue(
+                any("does-not-exist" in p for p in problems),
+                "없는 지점을 가리키는 구간을 검증이 놓쳤다")
         finally:
-            output = sys.stdout.getvalue()
-            sys.stdout = old_stdout
-            
-        self.assertFalse(success)
-        self.assertIn("피로도 커버리지 가드 실패 — 값 없는 날", output)
+            day.legs[:] = original
+
+    def test_every_day_has_fatigue(self):
+        """43일 전부 피로도가 있어야 한다. 없으면 하루 강도를 못 읽는다."""
+        trip = model.load_trip()
+        missing = [d.n for d in trip.days if not d.fatigue]
+        self.assertEqual(missing, [], f"피로도 없는 날: {missing}")
 
     def test_missing_confirmed_fact_token(self):
         # Remove confirmed confirmation number from Barcelona chapter
@@ -205,7 +234,7 @@ class TestValidationGuards(unittest.TestCase):
             old_stdout = sys.stdout
             sys.stdout = StringIO()
             try:
-                build.check_confirmed_fact_token_guards()
+                fact_guard.check_confirmed_fact_token_guards()
                 success = True
             except SystemExit as e:
                 success = (e.code == 0)
@@ -230,7 +259,7 @@ class TestValidationGuards(unittest.TestCase):
             old_stdout = sys.stdout
             sys.stdout = StringIO()
             try:
-                build.check_confirmed_fact_token_guards()
+                fact_guard.check_confirmed_fact_token_guards()
                 success = True
             except SystemExit as e:
                 success = (e.code == 0)

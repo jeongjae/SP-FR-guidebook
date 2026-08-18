@@ -108,6 +108,9 @@ def alert(kind: str, body: str, icon: str = "alert") -> str:
             f"<div>{body}</div></div>")
 
 
+MAPS_META = ""   # render.py 가 빌드 시작에 채운다
+
+
 def page(*, title: str, body: str, rel: str, tab: str,
          trail: list[tuple[str, str | None]] | None = None,
          region: str = "", country: str = "", subnav: str = "",
@@ -133,7 +136,7 @@ def page(*, title: str, body: str, rel: str, tab: str,
 {desc}<link rel="manifest" href="{rel}/manifest.webmanifest">
 <link rel="apple-touch-icon" href="{rel}/assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="{rel}/assets/pwa/icon-192.png">
-{extra_head}<link rel="stylesheet" href="{rel}/assets/style.css">
+{MAPS_META}{extra_head}<link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
 <body{region_attr}>
 <a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
