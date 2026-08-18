@@ -1,0 +1,28 @@
+{
+ "schemaVersion": "1.0",
+ "batch": "batch6",
+ "downloadDate": "2026-08-18",
+ "region": "paris",
+ "subjects": [
+  {
+   "placeId": "musee-marmottan-monet",
+   "imageId": "paris-musee-marmottan-monet-01",
+   "region": "paris",
+   "query": "Musée Marmottan Monet 건물",
+   "selectedTitle": "File:Musée Marmottan Monet, Paris, March 2013.JPG",
+   "titleKo": "마르모탕 모네 미술관",
+   "altKo": "파리 16구 마르모탕 모네 미술관 건물 외관",
+   "captionKo": "마르모탕 모네 — 모네 유족이 기증한 컬렉션이 있는 저택 미술관.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/musee-marmottan-monet.html"
+   ],
+   "regionHero": false
+  }
+ ],
+ "excluded": []
+}

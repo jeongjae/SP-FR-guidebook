@@ -5849,6 +5849,105 @@
           }
         ]
       }
+    },
+    {
+      "imageId": "paris-musee-marmottan-monet-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-musee-marmottan-monet-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-marmottan-monet-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-marmottan-monet-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 188556,
+            "sha256": "603a85823a5154bf286c09caedff382a9a1d25843e4353812707d2d1d6b1a721",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-marmottan-monet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-marmottan-monet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27316,
+            "sha256": "18282efd3e7b38d99f7130bc952c576d6e487ee0243ad2cca0a15f39967a7128",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-centre-pompidou-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-centre-pompidou-01.jpg",
+      "originalSize": [
+        678,
+        452
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-centre-pompidou-01-content-678.webp",
+            "sitePath": "assets/images/content/paris-centre-pompidou-01-content-678.webp",
+            "width": 678,
+            "height": 452,
+            "bytes": 61072,
+            "sha256": "cf3990cab679769a050f7c354806f473b45488009c665637e15174cec37fc3f8",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-centre-pompidou-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30904,
+            "sha256": "5a66298d82e5c6ced5c9b10e90b0951a28c28cc3e22903b66077f3a98e0a3410",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-marche-liberation-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-marche-liberation-01.webp",
+      "originalSize": [
+        1200,
+        1200
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-marche-liberation-01-content-1200.webp",
+            "sitePath": "assets/images/content/nice-marche-liberation-01-content-1200.webp",
+            "width": 1200,
+            "height": 1200,
+            "bytes": 190154,
+            "sha256": "1c237f0f9f8239fb4ad40741aa9575f119941ad24df5331f6b15076fb030d29f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-marche-liberation-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-marche-liberation-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26060,
+            "sha256": "0e3f657a652aa52451fd49919ee4efca9409feaf1a6f70500238c733710d266d",
+            "quality": 73
+          }
+        ]
+      }
     }
   ]
 }
