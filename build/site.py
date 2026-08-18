@@ -45,12 +45,12 @@ def clean_site() -> None:
 
 
 def main() -> int:
-    # 장소 장문은 챕터 원고에서 매 빌드 다시 뽑는다. 콘텐츠 편집은 이
-    # 개편과 나란히 계속되므로, 원고를 고치면 사이트가 따라와야 한다.
-    # 30_Places/ 는 손으로 유지하는 사본이 아니라 파생물이다.
-    promoted = promote_places.regenerate()
+    # 30_Places/<slug>.md 가 장소 장문의 유일한 정본(Canonical SOT)이다.
+    # 매 빌드마다 챕터 원고에서 덮어쓰지 않고 30_Places 를 직접 사용한다.
+    place_bodies = model.load_place_bodies()
+    promoted = set(place_bodies.keys())
     regions_promoted = promote_regions.regenerate()
-    print(f"승격: 장소 장문 {len(promoted)}개 · 지역 편집 {len(regions_promoted)}개")
+    print(f"정본 장소: {len(promoted)}개 · 지역 편집 승격: {len(regions_promoted)}개")
 
     trip = model.load_trip()
     problems = model.validate(trip)

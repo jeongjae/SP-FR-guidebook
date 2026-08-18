@@ -24,6 +24,8 @@ from pathlib import Path
 
 import markdown as md_lib
 
+import md_tidy
+
 import icons
 import model
 from model import Day, Place, Region, Trip
@@ -142,6 +144,14 @@ def headerless_tables(text: str) -> tuple[str, dict[str, str]]:
 def md(text: str) -> str:
     if not text.strip():
         return ""
+    # 표 앞뒤를 빈 줄로 가른다. 원고는 사람이 쓴 것이라 표 바로 뒤에 문장이
+    # 붙어 있는 곳이 많고, 그러면 그 문장이 표의 한 행으로 빨려 들어가
+    # 열 너비가 문장 길이만큼 늘어난다.
+    #
+    # 승격 단계가 아니라 여기서 한다. 장소 장문(30_Places)은 이제 손으로
+    # 관리하는 정본이라 빌드가 고쳐 쓰지 않는다 — 원고는 쓴 대로 두고
+    # 렌더가 방어한다.
+    text = md_tidy.tidy(text)
     text, holes = headerless_tables(text)
     html_out = md_lib.markdown(
         text, extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
