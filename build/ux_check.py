@@ -75,6 +75,9 @@ PAIRS = [
     ("--sig-caution-ink", "--surface", BODY_MIN, "미확정 글자 / 카드"),
     ("--sig-ok-ink",      "--canvas",  BODY_MIN, "확정 글자 / 바탕"),
     ("--sig-ok-ink",      "--surface", BODY_MIN, "확정 글자 / 카드"),
+    # 상단바는 앱 아이콘 색이다. 여기 글자가 안 읽히면 위치를 잃는다.
+    ("--on-brand",    "--brand", BODY_MIN,      "상단바 글자 / 브랜드 면"),
+    ("--brand-accent", "--brand", SECONDARY_MIN, "브랜드 강조 / 브랜드 면"),
 ]
 
 
