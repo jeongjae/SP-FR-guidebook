@@ -12,6 +12,7 @@ source: source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md
 | 일정 강도 | 모든 일정을 차량으로 연결하므로 높음 |
 | 예약 핵심 | Bàscara 숙소 확정 · 렌터카·주차 P0 · Peralada 실제 예약 없음 |
 | 우천 전환 | Girona 실내와 Collioure 체류 축소 |
+
 Bàscara는 Girona 시내 숙소가 아니다. Girona 구시가지는 차량으로 따로 왕복해야 하므로 도착일의 대성당·성벽·Onyar 강변을 모두 고정하지 않는다. 대신 Collioure·Cadaqués 해안 우회와 Tossa·Sant Feliu·Pals·Peratallada 축의 출발·귀환 거점으로 사용하며 정시 출발과 선택 일정 삭제 기준을 둔다.
 
 - **Jason:** 중세도시 구조, 야수파 미술, 석조마을, 해안 스케치
@@ -94,6 +95,7 @@ Day 3의 석조마을들은 반대 방향이다. 팔스·페라타야다·칼레
 | 9/2 | 수 | Collioure와 Cadaqués | Bàscara → Collioure → Cadaqués → Bàscara |
 | 9/3 | 목 | Tossa·Sant Feliu와 귀로 마을 | Bàscara → Tossa de Mar → Sant Feliu de Guíxols → Pals → Peratallada → Bàscara |
 | 9/4 | 금 | 니스 이동 | Bàscara 체크아웃 후 렌터카·철도 구조에 따라 별도 확정 |
+
 ```text
 Day 1
 Sitges

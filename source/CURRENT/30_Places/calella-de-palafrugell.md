@@ -95,4 +95,5 @@ Calella 중심–El Canadell–Punta d’en Blanc 방향을 왕복한다.
 | 보안 | 차 안에 보이는 짐을 남기지 말 것 |
 | 식사 | 4개 후보(El Tragamar / El Didal / Calau / Sa Jambina) 참조 |
 | 성격 | **이른 저녁**에 가장 좋다. 낮에는 해수욕객, 밤에는 조용 |
+
 ---

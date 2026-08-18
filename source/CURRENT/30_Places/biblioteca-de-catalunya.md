@@ -34,4 +34,5 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 |체류   |30–45분 |
 |위치   |라발, Carrer de l’Hospital |
 |성격   |**실내.** 우천·폭염 대체안으로 가치가 높다 |
+
 ---

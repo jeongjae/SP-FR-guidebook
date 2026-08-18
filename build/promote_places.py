@@ -28,6 +28,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 ROOT = Path(__file__).resolve().parent.parent
 CHAPTERS = ROOT / "source" / "CURRENT" / "20_Regional_Chapters"
 OUT_DIR = ROOT / "source" / "CURRENT" / "30_Places"
@@ -63,30 +65,12 @@ def norm(s: str) -> str:
     return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
 
 
-LAYER_HEADS = ("왜 가는가", "더 깊이", "실용")
+from md_tidy import tidy as _tidy
 
 
 def tidy(md_text: str) -> str:
-    """마크다운 위생. 승격할 때마다 똑같이 적용된다.
-
-    1) 표 바로 뒤에 붙은 인용문 앞에 빈 줄을 넣는다. 붙어 있으면 마크다운이
-       인용으로 읽지 못하고 '>' 를 글자로 출력한다 — 원고 18개가 그랬다.
-    2) 절 안의 헤딩을 h3 으로 통일한다. 원고는 h4~h6 을 섞어 쓰는데,
-       장소 페이지에서는 '왜 가는가/더 깊이/실용' 이 뼈대고 그 아래는
-       전부 같은 층이다.
-    """
-    out, fence = [], False
-    for line in md_text.splitlines():
-        if line.strip().startswith("```"):
-            fence = not fence
-        if not fence:
-            if line.lstrip().startswith(">") and out and out[-1].strip().startswith("|"):
-                out.append("")
-            m = re.match(r"^(#{3,6})\s+(.*)$", line)
-            if m and m.group(2).strip() not in LAYER_HEADS:
-                line = "### " + m.group(2).strip()
-        out.append(line)
-    return "\n".join(out)
+    """장소 파일용 — 헤딩도 h3 으로 맞춘다."""
+    return _tidy(md_text, normalize_headings=True)
 
 
 def load_registry() -> list[dict]:

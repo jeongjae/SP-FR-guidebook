@@ -40,6 +40,7 @@ source: source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md
 | **베르동 협곡** | 왕복만 하루. 이 구간 리듬과 안 맞는다 |
 | **라벤더 밭 투어** | **9월에는 없다** |
 | **마을 5개 이상 하루** | 운전과 주차만 하다 끝난다 |
+
 ---
 
 ## 한눈에 보기
@@ -62,6 +63,7 @@ source: source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md
 | Fontaine-de-Vaucluse | 대체 | 이동일 자연경관, 수량·혼잡 변수 |
 | 모든 유명마을 순회 | 비추천 | 주차·중복·피로가 농가체험을 약화 |
 | Apt 대형시장 | 이번 체류 불가 | 토요일 시장으로 날짜 불일치 |
+
 ---
 
 ## 추천 체류 리듬
@@ -84,6 +86,7 @@ source: source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md
 | 9/14 | 월 | 오커색과 생활마을 | 농가 → Roussillon → Goult/Bonnieux → 농가 | 3/5 |
 | 9/15 | 화 | Gordes와 돌의 문화 | 농가 → Gordes → Bories → Ménerbes/Oppède 선택 → 농가 | 3/5 |
 | 9/16 | 수 | 농가 체크아웃과 아비뇽 이동 | 농가 → Avignon 숙소·주차 → 가벼운 산책 | 3/5 |
+
 ---
 
 | Day | 날짜 | 점심 | 저녁 |
@@ -93,6 +96,7 @@ source: source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md
 | 18 | 9/15 화 | **고르드 시장 조달** | 농가 또는 식당 한 번 |
 | 19 | 9/16 수 | **농가 테라스** | 농가 |
 | 선택 | 9/17 목 | 리슬 시장 조달 | 기본 일정 아님 |
+
 **식당은 3박 중 한 번이면 충분하다.** 이 구간의 목적이 농가 생활이다.
 
 ---

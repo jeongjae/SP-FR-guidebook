@@ -94,4 +94,5 @@ source: source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md
 | 요금 | 무료 |
 | 체류 | 45–60분 |
 | 카페 | **한 번만 이용한다.** 쿠르 면한 테라스는 비싸다 |
+
 ---

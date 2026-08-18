@@ -75,14 +75,82 @@ FACT_LABEL = {
 }
 
 
+SEP_ROW = re.compile(r"^\s*\|?[\s:|-]*-{2,}[\s:|-]*\|?\s*$")
+
+
+def _cells(line: str) -> list[str]:
+    row = line.strip()
+    if row.startswith("|"):
+        row = row[1:]
+    if row.endswith("|"):
+        row = row[:-1]
+    return [c.strip() for c in row.split("|")]
+
+
+def _inline(text: str) -> str:
+    """셀 안의 굵게·링크만 변환한다. 문단 태그는 벗긴다."""
+    out = md_lib.markdown(text, extensions=["attr_list"]).strip()
+    if out.startswith("<p>") and out.endswith("</p>"):
+        out = out[3:-4]
+    return out
+
+
+def headerless_tables(text: str) -> tuple[str, dict[str, str]]:
+    """헤더 없는 파이프 표를 직접 HTML 로 만든다.
+
+    마크다운 표는 헤더 행과 구분선이 있어야 표로 읽힌다. 원고에는 둘 없이
+    데이터 행만 있는 표가 있고(Barcelona·Paris), Aix 는 구분선만 있고 헤더가
+    없다. 그대로 두면 파이프가 글자로 나와 화면이 깨진다.
+
+    첫 행을 헤더로 승격시키지 않는다 — 'Essential' 은 열 이름이 아니라 값이다.
+    없는 열 이름을 지어내느니 헤더 없는 표로 둔다.
+    """
+    lines = text.splitlines()
+    parts, holes, i, n = [], {}, 0, 0
+    while i < len(lines):
+        if not lines[i].lstrip().startswith("|"):
+            parts.append(lines[i])
+            i += 1
+            continue
+        j = i
+        while j < len(lines) and lines[j].lstrip().startswith("|"):
+            j += 1
+        block = lines[i:j]
+        # 제대로 된 표(2행이 구분선)는 마크다운에게 맡긴다
+        if len(block) >= 2 and SEP_ROW.match(block[1]):
+            parts.extend(block)
+            i = j
+            continue
+        rows = [b for b in block if not SEP_ROW.match(b)]
+        if len(rows) < 2:
+            parts.extend(block)
+            i = j
+            continue
+        body = "".join(
+            "<tr>" + "".join(f"<td>{_inline(c)}</td>" for c in _cells(r)) + "</tr>"
+            for r in rows)
+        key = f"@@TABLE{n}@@"
+        holes[key] = f'<div class="table-wrap"><table><tbody>{body}</tbody></table></div>'
+        # 빈 줄로 감싼다. 표 뒤에 --- 가 오는 원고가 있는데, 그러면 마크다운이
+        # 바로 앞 줄(자리표시자)을 제목으로 읽어 표가 <h2> 안에 들어간다.
+        parts += ["", key, ""]
+        n += 1
+        i = j
+    return "\n".join(parts), holes
+
+
 def md(text: str) -> str:
     if not text.strip():
         return ""
+    text, holes = headerless_tables(text)
     html_out = md_lib.markdown(
         text, extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
     # 표는 감싸서 그 안에서만 가로 스크롤시킨다 — 본문이 가로로 흐르면 안 된다
-    return re.sub(r"<table>", '<div class="table-wrap"><table>',
-                  html_out).replace("</table>", "</table></div>")
+    html_out = re.sub(r"<table>", '<div class="table-wrap"><table>',
+                      html_out).replace("</table>", "</table></div>")
+    for key, block in holes.items():
+        html_out = html_out.replace(f"<p>{key}</p>", block).replace(key, block)
+    return html_out
 
 
 LAYER_LABEL = {"role": "여행 전체에서의 역할", "rhythm": "추천 체류 리듬"}

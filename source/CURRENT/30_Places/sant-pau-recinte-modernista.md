@@ -46,4 +46,5 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 |체류   |60–90분 |
 |접근   |사그라다 파밀리아에서 도보 10분 (Avinguda Gaudí) |
 |성격   |**야외 비중 높음.** 한여름 정오 회피 |
+
 ---

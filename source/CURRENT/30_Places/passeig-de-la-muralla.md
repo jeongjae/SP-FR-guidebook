@@ -37,4 +37,5 @@ source: source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md
 | 운영 | 야외 구간 상시 개방 |
 | 소요 | 전 구간 60~75분 / 부분 30분 |
 | 주의 | 그늘이 적다. 한낮 회피. 물 지참 |
+
 ---

@@ -171,13 +171,35 @@ def check_site() -> list[str]:
     else:
         print("링크: 글자로만 있는 URL 0건")
 
-    # 4) 빈 href — 눌러도 제자리다
+    # 4) 열 수가 들쭉날쭉한 표.
+    #    마크다운 표 바로 뒤에 빈 줄 없이 문장이 붙으면 그 문장이 표의 한
+    #    행으로 빨려 들어간다. 한 칸짜리 행이 생기고 열 너비가 문장 길이만큼
+    #    늘어나 표를 읽을 수 없게 된다. Nice 의 '시간을 쓸 가치와 한계' 가
+    #    그랬다 — 긴 산문 한 문단이 '항목' 열에 들어가 있었다.
+    row_re = re.compile(r"<tr>(.*?)</tr>", re.S)
+    cell_re = re.compile(r"<t[dh][^>]*>", re.S)
+    ragged = []
+    for path in pages:
+        body = path.read_text(encoding="utf-8", errors="replace")
+        for table in re.findall(r"<table>(.*?)</table>", body, re.S):
+            widths = {len(cell_re.findall(r)) for r in row_re.findall(table)}
+            widths.discard(0)
+            if len(widths) > 1:
+                ragged.append(f"{path.relative_to(SITE)} {sorted(widths)}")
+    if ragged:
+        problems.append(
+            f"열 수가 어긋난 표 {len(ragged)}건 — 표 뒤 문장이 행으로 빨려"
+            f" 들어갔을 수 있다: {ragged[0]}")
+    else:
+        print("표: 열 수 어긋난 것 0건")
+
+    # 5) 빈 href — 눌러도 제자리다
     for path in pages:
         if 'href=""' in path.read_text(encoding="utf-8", errors="replace"):
             problems.append(f"빈 href: {path.relative_to(SITE)}")
             break
 
-    # 5) 뷰포트 설정 — 확대를 막으면 저시력 사용자가 못 쓴다.
+    # 6) 뷰포트 설정 — 확대를 막으면 저시력 사용자가 못 쓴다.
     for path in pages:
         body = path.read_text(encoding="utf-8", errors="replace")
         if "user-scalable=no" in body or "maximum-scale=1" in body:
