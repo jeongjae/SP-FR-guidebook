@@ -1,2576 +1,1127 @@
 /* ============================================================
-   유럽 43일 가이드북 — style.css v3.0 (Apple HIG)
-   클래스명·구조 전부 호환. 시각 언어만 바꾼다.
+   SP-FR Guidebook — Design System
+   "Modern Mediterranean Editorial"
 
-   HIG 에서 가져온 것
-     타이포 스케일   largeTitle 34 … caption2 11
-     시스템 서체     SF + Apple SD Gothic Neo
-     재질            반투명 바 + backdrop-filter, 0.5px 헤어라인
-     레이아웃        8pt 그리드, 44pt 타깃, 안전영역
-     리스트          inset grouped — 12px 라운드, 앞쪽 들여쓴 구분선
-     컨트롤          이동 행에 셰브런
+   여행 가이드북 × 모바일 여행 앱 × 에디토리얼 매거진.
 
-   HIG 를 따르지 않은 것 — 야외 주광에서 읽는 도구이기 때문이다
-     명암비          본문 7:1 · 크롬 4.5:1.
-                     Apple 의 secondaryLabel 계열(≈4.6:1)로는 모자란다.
-     본문 크기       17px 유지하되 480px 이하에서 키운다.
+   설계 순서는 모바일 390px 이 먼저다. 데스크톱을 줄이지 않는다 —
+   390 에서 정보 우선순위를 정하고 위로 넓힌다.
+
+   색은 의미로만 쓴다. 명암비 하한은 HIG 최소치가 아니라 이 프로젝트
+   기준이다: 본문 7:1 · 보조 4.5:1. 야외 주광에서 읽는 도구이기 때문이다.
+   모든 조합은 build/ux_check.py 가 계산으로 검증한다.
    ============================================================ */
 
 /* ================= 서체 =================
-   나눔고딕 (NHN · Sandoll) — SIL Open Font License 1.1.
-   CDN 을 쓰지 않는다. woff2 를 저장소에 번들해 오프라인에서도 뜬다.
-   Leaflet 과 같은 방식이다. 라이선스 전문은 assets/vendor/nanum/LICENSE.txt.
-   font-display: swap — 폰트가 늦어도 시스템 서체로 먼저 읽힌다. */
+   나눔고딕을 번들한다 (OFL 1.1). CDN 을 쓰지 않는다 — 완전 오프라인으로
+   동작해야 하고 런타임 서드파티 의존성은 0 이다. */
+/* 라틴과 한글을 따로 싣는다. unicode-range 로 갈라 두면 라틴만 있는
+   화면에서 한글 파일(수백 KB)을 내려받지 않는다 — 현장에서 연결이
+   느릴 때 첫 화면이 그만큼 빨리 뜬다. */
 @font-face {
   font-family: "NanumGothic";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
   src: url("vendor/nanum/nanum-gothic-latin-400-normal.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2122, U+2191, U+2193, U+2212, U+FEFF, U+FFFD;
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F,
+                 U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
 }
 @font-face {
   font-family: "NanumGothic";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
+  src: url("vendor/nanum/nanum-gothic-latin-700-normal.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F,
+                 U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215;
+}
+@font-face {
+  font-family: "NanumGothic";
   src: url("vendor/nanum/nanum-gothic-korean-400-normal.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
   unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
 }
 @font-face {
   font-family: "NanumGothic";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("vendor/nanum/nanum-gothic-latin-700-normal.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+2000-206F, U+2122, U+2191, U+2193, U+2212, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "NanumGothic";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
   src: url("vendor/nanum/nanum-gothic-korean-700-normal.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
   unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
 }
 
 :root {
-  /* ---- 바탕 (냉색 미네랄 화이트) ---- */
-  --bg:            #EFF1F6;
-  --surface:       #FFFFFF;
-  --surface-sunk:  #E3E7F0;
-  --quote-bg:      #E3E7F0;
+  /* ---- 바탕 — warm off-white ----
+     기존 냉색 미네랄 화이트(#EFF1F6)를 버렸다. 지중해 낮의 빛은 따뜻하다. */
+  --canvas:      #FAF6EF;
+  --surface:     #FFFFFF;
+  --surface-2:   #F2ECE1;   /* 가라앉은 면 — 인용·보조 블록 */
+  --surface-3:   #E8E0D2;   /* 더 가라앉은 면 — 구분 띠 */
 
-  /* ---- 텍스트 ---- */
-  --text:          #0F1A1E;   /* 15.4:1 on --bg */
-  --text-2:        #34464D;   /*  9.1:1 — 보조 본문 */
-  --muted:         #41535C;   /*  7.1:1 on --bg — 캡션도 야외에서 읽혀야 한다.
-                                 HIG tertiaryLabel 보다 훨씬 진하다. 의도한 것이다. */
+  /* ---- 글자 ---- */
+  --text:        #221E19;   /* 15.4:1 on canvas */
+  --text-2:      #4A4239;   /*  9.2:1 — 보조 본문 */
+  --muted:       #5F5648;   /*  6.7:1 — 캡션·메타. HIG tertiaryLabel 보다 훨씬
+                               진하다. 야외에서 읽혀야 하므로 의도한 것이다. */
 
-  /* ---- 크롬 ---- */
-  /* 스페인·프랑스 국기에서 뽑았다. 파랑이 크롬, 빨강이 위험, 금색이 표시다.
-     노랑(#F1BF00)은 흰 바탕에 1.7:1 이라 글자색으로 쓰지 않는다 — 바탕·표시 전용. */
-  --accent:        #000091;   /* FR 파랑 — 14.9:1 */
-  --accent-ink:    #FFFFFF;
-  --accent-soft:   #DFE3F2;
-  --border:        #C8CEDD;
-  /* 국기 원색. 띠·리본 같은 '면' 에만 쓴다 — 금색은 흰 바탕에 1.7:1,
-     프랑스 빨강은 3.4:1 이라 어느 쪽도 글자색이 될 수 없다. 글자가 필요한
-     자리에는 아래 --sig-*-ink 를 쓴다. */
-  --flag-es-red:   #AA151B;
-  --flag-es-gold:  #F1BF00;
-  --flag-fr-blue:  #000091;
-  --flag-fr-white: #FFFFFF;
-  --flag-fr-red:   #EF4135;
+  /* ---- 주색 — Mediterranean blue ---- */
+  --primary:     #0F5878;   /* 7.3:1 on canvas · 흰 글자 7.8:1 */
+  --primary-ink: #0B4460;   /* 눌림·강조 */
+  --primary-soft:#E3EEF3;   /* 틴트 면 */
+  --on-primary:  #FFFFFF;
 
-  /* ---- 신호색 (의미 전용, 장식 금지) ---- */
-  --sig-critical:  #AA151B;   /* P0 연결·최고 리스크 — ES 국기 빨강. 채움용 (흰글자 7.4:1) */
-  --sig-critical-ink: #921118; /* 글자용 — 어느 표면에서도 7:1 이상 */
-  --sig-caution:   #7D5400;   /* 미확정·재확인 — ES 금색을 글자용으로 낮춘 값 */
-  --sig-caution-ink: #5E4000; /* 본문 위 글자용 — 7:1 확보 */
-  --sig-steady:    #1F5E45;   /* 확정·완료 */
-  --sig-rest:      #2C4A9A;   /* 회복일·완충 — FR 파랑 계열, 흰 글자 8.6:1 */
-  --sig-rest-ink:  #233C7D;   /* 글자용 — 흰 바탕 10:1 */
+  /* ---- 보조 — terracotta / ochre ---- */
+  --terracotta:  #B04A2B;   /* 면 전용. 흰 글자 5.4:1 */
+  --terracotta-soft: #F6E8E1;
+  --ochre:       #8A6212;
+  --ochre-soft:  #F5EDDA;
 
-  /* ---- 지역 액센트 8종 ---- */
-  /* 국경이 색으로 보이게 한다. Day 7 에 스페인에서 프랑스로 넘어간다. */
-  --acc-bcn: #AA151B;   /* 스페인 — 국기 빨강 */
-  --acc-gir: #7D5400;   /* 스페인 — 국기 금색 (글자용으로 낮춘 값) */
-  /* 프랑스 6곳은 국기 파랑 계열 안에서 밝기·채도로만 갈린다. 청록(#12506F)과
-     보라(#46318A)는 두 국기 어디에도 없는 색이라 파랑 쪽으로 당겼다. */
-  --acc-nce: #2E63AE;   /* 이하 프랑스 — 국기 파랑 안에서 밝기 사다리 */
-  --acc-aix: #2A54A2;
-  --acc-lub: #254696;
-  --acc-avn: #1E378C;
-  --acc-lyo: #142783;
-  --acc-par: #000091;   /* 종착지 — 국기 원색 */
+  /* ---- 신호색 ----
+     '면' 과 '글자' 를 분리한다. 채도 높은 면 위에는 흰 글자를 얹고,
+     바탕 위에 글자로 앉힐 때는 -ink 를 쓴다 (전부 7:1 이상). */
+  --sig-ok:        #2C6B4F;
+  --sig-ok-ink:    #255C43;   /* 확정 · 완료 */
+  --sig-caution:   #8A6212;
+  --sig-caution-ink: #6A4A08; /* 미확정 · 재확인 */
+  --sig-alert:     #A63329;
+  --sig-alert-ink: #96271F;   /* 위험 · 놓치면 안 되는 것 */
 
-  /* ---- 재질 (HIG Materials) — 바는 반투명, 뒤가 비친다 ---- */
-  --bar-bg:        rgba(246, 247, 252, 0.82);
-  --tabbar-bg:     rgba(246, 247, 252, 0.97);
-  --bar-blur:      saturate(180%) blur(20px);
-  --separator:     rgba(15, 26, 30, 0.22);   /* 헤어라인 */
+  /* ---- 지역 액센트 8종 ----
+     장식이 아니라 '지금 어느 지역인가' 표시다. 전부 흰 글자 4.5:1 이상. */
+  --region-barcelona: #B04A2B;  /* Terracotta */
+  --region-girona:    #5F6B3A;  /* Olive / Stone */
+  --region-nice:      #1A6E96;  /* Azure */
+  --region-aix:       #8A6212;  /* Ochre */
+  --region-luberon:   #4E6B57;  /* Sage */
+  --region-avignon:   #8C2F46;  /* Burgundy */
+  --region-lyon:      #5E5852;  /* Warm Gray */
+  --region-paris:     #23395B;  /* Deep Navy */
 
-  /* ---- 타이포 스케일 (HIG Typography, pt→px) ---- */
-  --t-large:  2.125rem;   /* 34 */
-  --t-title1: 1.75rem;    /* 28 */
-  --t-title2: 1.375rem;   /* 22 */
-  --t-title3: 1.25rem;    /* 20 */
-  --t-body:   1.0625rem;  /* 17 */
-  --t-callout: 1rem;      /* 16 */
-  --t-subhead: 0.9375rem; /* 15 */
-  --t-foot:   0.8125rem;  /* 13 */
-  --t-cap1:   0.75rem;    /* 12 */
-  --t-cap2:   0.6875rem;  /* 11 — HIG 최소 */
+  /* ---- 국가 신호 ----
+     지역 액센트와 별개다. Day 7 에 국경을 넘고 그 뒤로 긴급번호·시장 요일·
+     공휴일·언어가 바뀐다. 이건 취향이 아니라 사실이라 따로 둔다. */
+  --country-es: #AA151B;
+  --country-fr: #000091;
 
-  /* ---- 8pt 그리드 ---- */
-  --s1: 4px;  --s2: 8px;  --s3: 12px; --s4: 16px;
-  --s5: 20px; --s6: 24px; --s8: 32px;
+  /* ---- 선 ---- */
+  --line:        #E0D7C7;   /* 기본 구분선 */
+  --line-strong: #C9BCA6;
+  --hairline:    rgba(34, 30, 25, 0.14);
 
-  /* ---- 모서리 (HIG Controls) ---- */
-  --r-card: 12px;
-  --r-ctrl: 10px;
-  --r-chip: 999px;
+  /* ---- 타이포 스케일 ----
+     여덟 단계로 고정한다. 이 밖의 크기를 새로 만들지 않는다. */
+  --t-display: 2.5rem;      /* 40 — Region hero */
+  --t-h1:      2rem;        /* 32 */
+  --t-h2:      1.5rem;      /* 24 */
+  --t-h3:      1.1875rem;   /* 19 */
+  --t-body:    1.0625rem;   /* 17 */
+  --t-small:   0.9375rem;   /* 15 */
+  --t-label:   0.8125rem;   /* 13 */
+  --t-meta:    0.75rem;     /* 12 — 하한. 이보다 작게 쓰지 않는다 */
 
-  --topbar-h: 52px;
-  --tap: 44px;              /* 최소 터치 타깃 */
-  --rail-x: 5.75rem;        /* 타임라인 레일 x — 매직넘버 제거 */
-  --dur: 160ms;
-  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --lh-tight:  1.15;
+  --lh-snug:   1.35;
+  --lh-body:   1.7;         /* 긴 가이드 본문 가독성 */
 
-  /* 여태 참조만 되고 정의가 없던 토큰들 (HIG 진단 6-1). var() 는 미정의면 계산
-     시점에 무효가 되어 선언째 사라진다 — .guide-photo 등 114쪽의 그림자가 그렇게
-     조용히 안 나왔다. 이제 정의한다. 재발은 check_tokens 가드가 막는다. */
-  --shadow-1:    0 1px 2px rgba(15, 26, 30, 0.06);
-  --surface-2:   #E9ECF3;
+  /* ---- 자간 — 대문자 레이블용 ---- */
+  --ls-label:  0.08em;
+
+  /* ---- 여백 8pt 그리드 ---- */
+  --s1: 0.25rem;  --s2: 0.5rem;   --s3: 0.75rem;  --s4: 1rem;
+  --s5: 1.5rem;   --s6: 2rem;     --s7: 3rem;     --s8: 4rem;
+
+  /* ---- 폭 ---- */
+  --w-content: 42rem;       /* 읽는 본문 — 한 줄이 길어지지 않게 */
+  --w-container: 68rem;     /* 카드 그리드·지도 */
+
+  /* ---- 모서리 ---- */
+  --r-sm: 6px;  --r-md: 12px;  --r-lg: 18px;  --r-full: 999px;
+
+  /* ---- 그림자 — 종이의 들림 정도. 세 단계뿐이다 ---- */
+  --sh-1: 0 1px 2px rgba(34, 30, 25, 0.06), 0 1px 1px rgba(34, 30, 25, 0.04);
+  --sh-2: 0 2px 8px rgba(34, 30, 25, 0.08), 0 1px 2px rgba(34, 30, 25, 0.05);
+  --sh-3: 0 8px 24px rgba(34, 30, 25, 0.12), 0 2px 6px rgba(34, 30, 25, 0.06);
+
+  /* ---- 이미지 비율 ---- */
+  --ratio-hero: 4 / 3;
+  --ratio-card: 3 / 2;
+  --ratio-thumb: 1 / 1;
+
+  /* ---- 바 ---- */
+  --bar-bg:    rgba(250, 246, 239, 0.86);
+  --bar-blur:  saturate(180%) blur(20px);
+  --tabbar-bg: rgba(250, 246, 239, 0.96);
+
+  /* ---- 터치 ---- */
+  --tap: 44px;              /* HIG 최소 터치 타깃. 이보다 작게 만들지 않는다 */
+
+  /* ---- 모션 ---- */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --dur-fast: 120ms;
+  --dur:      200ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:           #0C1416;
-    --surface:      #152023;
-    --surface-sunk: #1B2A2E;
-    --quote-bg:     #1B2A2E;
+/* 지역 액센트를 한 변수로 받는다. 페이지가 data-region 을 달면
+   그 아래 컴포넌트가 전부 따라온다 — 컴포넌트마다 지역을 알 필요가 없다. */
+[data-region="barcelona"] { --accent: var(--region-barcelona); }
+[data-region="girona"]    { --accent: var(--region-girona); }
+[data-region="nice"]      { --accent: var(--region-nice); }
+[data-region="aix"]       { --accent: var(--region-aix); }
+[data-region="luberon"]   { --accent: var(--region-luberon); }
+[data-region="avignon"]   { --accent: var(--region-avignon); }
+[data-region="lyon"]      { --accent: var(--region-lyon); }
+[data-region="paris"]     { --accent: var(--region-paris); }
+:root { --accent: var(--primary); }
 
-    --text:         #E3EBEA;
-    --text-2:       #B7C5C8;
-    --muted:        #A0B0B5;   /* 7.4:1 on dark surface */
+/* ================= 리셋 ================= */
+*, *::before, *::after { box-sizing: border-box; }
 
-    --accent:       #A9BEF5;   /* FR 파랑 계열을 다크에서 밝힌 값 */
-    --accent-ink:   #08101A;
-    --accent-soft:  #1E2540;
-    --border:       #333B52;
-
-    --sig-critical: #F79AA2;   /* ES 빨강을 다크에서 밝힌 값 */
-    --sig-critical-ink: #F79AA2;
-    --sig-caution:  #D3A63A;
-    --sig-caution-ink: #EFC96A;
-    --sig-steady:   #74C7A6;
-    --sig-rest:     #9FB4EE;
-    --sig-rest-ink: #B9C9F4;
-
-    --acc-bcn: #EE8B90; --acc-gir: #E0B44E; --acc-nce: #7FB6E8;
-    --acc-aix: #9FB0EE; --acc-lub: #A8B4EF; --acc-avn: #A6A9F0;
-    --acc-lyo: #8FB0E4; --acc-par: #A9BEF5;
-
-    --bar-bg:    rgba(16, 26, 29, 0.82);
-    --tabbar-bg: rgba(16, 26, 29, 0.97);
-    --separator: rgba(227, 235, 234, 0.24);
-    --shadow-1:  0 1px 2px rgba(0, 0, 0, 0.32);
-    --surface-2: #18262A;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
-
-/* 다크모드 수동 토글 (data-theme 속성으로 강제) */
-[data-theme="light"] { color-scheme: light; }
-[data-theme="dark"]  { color-scheme: dark;  }
-
-* { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-padding-top: 104px; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: var(--canvas);
   color: var(--text);
-  /* HIG 시스템 서체. 라틴은 SF, 한글은 Apple SD Gothic Neo 가 먼저 잡힌다.
-     웹폰트를 받지 않는다 — 오프라인 규칙. */
-  font-family: "NanumGothic", -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", system-ui, sans-serif;
-  line-height: 1.65;
+  font-family: "NanumGothic", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Helvetica Neue", sans-serif;
   font-size: var(--t-body);
-  word-break: keep-all;
-  overflow-wrap: break-word;
-  font-variant-numeric: tabular-nums;   /* 시각·날짜 자릿수 정렬 */
+  line-height: var(--lh-body);
+  /* 하단탭 + 홈 인디케이터. 이만큼 안 비우면 마지막 줄이 탭에 가린다. */
+  padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  overflow-x: hidden;   /* 가로 오버플로 0 은 KPI 다 */
 }
 
-/* 원고에서 직접 삽입된 이미지가 뷰포트를 넘겨 가로 스크롤을 만들지 않게 한다.
-   (대표사진 원본이 1600px라 390px 화면에서 페이지 전체가 옆으로 밀렸다) */
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; height: auto; display: block; }
 
-/* 작은 화면에서 글자를 키운다. 야외 사용 확률이 가장 높은 조건. */
-@media (max-width: 480px) {
-  body { font-size: 17.5px; }
-}
+a { color: var(--primary); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--primary-ink); }
 
-/* 사용자 글자 크기 설정 (nav.js에서 data-size 부여) */
-[data-size="s"] body, body[data-size="s"] { font-size: 16px; }
-[data-size="l"] body, body[data-size="l"] { font-size: 19px; }
-[data-size="xl"] body, body[data-size="xl"] { font-size: 21px; }
+button { font: inherit; color: inherit; }
 
-.sr-only {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-/* 포커스 — 키보드 접근성 */
+/* 보이는 포커스. 키보드 사용자가 지금 어디에 있는지 알아야 한다. */
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--primary);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: var(--r-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 
-/* ================= 아이콘 =================
-   선 데이터는 build/icons.py 에 있고 마스크 변수(--ic)만 CSS 로 구워진다.
-   색은 currentColor 를 그대로 받는다 — 아이콘이 팔레트를 새로 만들지 않는다.
-   유니코드 도형(◉ ▤ ◇ ▧)을 쓰면 기기마다 글자꼴 커버리지가 달라 어떤 기기에선
-   두부(□)가 뜬다. 현장 도구에서 그건 못 쓰는 화면이다. */
-.ic::before {
-  content: "";
-  display: inline-block;
-  flex: 0 0 auto;
-  width: 1.15em;
-  height: 1.15em;
-  vertical-align: -0.19em;
-  margin-right: 0.42em;
-  background-color: currentColor;
-  -webkit-mask: var(--ic) center / contain no-repeat;
-  mask: var(--ic) center / contain no-repeat;
-}
-/* 글자 없이 아이콘만 있는 자리 — 탭·버튼·목록 앞머리 */
-.ic-only::before { margin-right: 0; }
+/* ================= 레이아웃 =================
+   폭은 두 가지뿐이다. 읽는 것은 content, 보는 것은 container. */
+main { padding: 0 0 var(--s7); }
 
-/* 헤딩 앞 아이콘은 글자보다 조금 작고 흐리다. 제목을 읽는 데 방해되면 안 된다. */
-h1.ic::before, h2.ic::before, h3.ic::before {
-  width: 0.86em;
-  height: 0.86em;
-  vertical-align: 0.02em;
-  opacity: 0.72;
+.wrap      { width: min(100% - 2rem, var(--w-container)); margin-inline: auto; }
+.wrap-read { width: min(100% - 2rem, var(--w-content));   margin-inline: auto; }
+
+.stack > * + * { margin-top: var(--s4); }
+.stack-lg > * + * { margin-top: var(--s6); }
+
+/* ================= 타이포 ================= */
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--t-h1); }
+h2 { font-size: var(--t-h2); }
+h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
+
+.wrap-read p, .prose p { margin: 0 0 var(--s4); color: var(--text-2); }
+.prose { line-height: var(--lh-body); }
+.prose h2 { margin: var(--s6) 0 var(--s3); }
+.prose h3 { margin: var(--s5) 0 var(--s2); }
+.prose ul, .prose ol { margin: 0 0 var(--s4); padding-left: 1.35em; color: var(--text-2); }
+.prose li + li { margin-top: var(--s2); }
+.prose strong { color: var(--text); }
+.prose blockquote {
+  margin: 0 0 var(--s4);
+  padding: var(--s3) var(--s4);
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
 }
 
-/* ================= 장소 사진 · 참고 링크 =================
-   사진은 온라인일 때만 온다. 오프라인이면 자리째 접힌다 — 빈 액자를 남기면
-   '사진이 있는데 안 뜬다' 로 읽힌다. */
-.pl-shot {
-  margin: var(--s3) 0 var(--s4);
-  border-radius: var(--r-card);
-  overflow: hidden;
-  background: var(--surface-sunk);
+/* 대문자 레이블 — 섹션 이름, 상태, 메타. editorial 의 골격이다. */
+.label {
+  font-size: var(--t-label);
+  font-weight: 700;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--muted);
 }
-.pl-shot img {
+
+.meta { font-size: var(--t-meta); color: var(--muted); margin: 0; }
+
+/* ================= SectionHeader ================= */
+.sec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s3);
+  margin: var(--s6) 0 var(--s3);
+  padding-bottom: var(--s2);
+  border-bottom: 1px solid var(--line);
+}
+.sec-head > h2 { font-size: var(--t-h2); }
+.sec-head .label { flex: 0 0 auto; }
+.sec-head a { font-size: var(--t-small); white-space: nowrap; }
+
+/* 섹션 이름을 액센트 규칙으로 여는 editorial 변형 */
+.sec-head-rule {
   display: block;
+  margin: var(--s7) 0 var(--s4);
+  border: 0;
+}
+.sec-head-rule .label { display: block; color: var(--accent); }
+.sec-head-rule::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: var(--s2);
+  background: var(--accent);
+  border-radius: var(--r-full);
+}
+
+/* ================= Hero =================
+   Region / Place 의 첫 화면. 사진 위에 글자를 얹으므로 아래쪽에 반드시
+   그라디언트를 깔아 명암비를 확보한다. */
+.hero {
+  position: relative;
+  margin-bottom: var(--s5);
+  background: var(--surface-3);
+}
+.hero-img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: var(--ratio-hero);
   object-fit: cover;
 }
-.pl-shot figcaption {
-  padding: var(--s2) var(--s3);
+.hero-body {
+  position: relative;
+  margin-top: -3.5rem;
+  padding: var(--s5) var(--s4) 0;
+}
+.hero-card {
   background: var(--surface);
-  font-size: var(--t-cap1);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-3);
+  padding: var(--s5);
 }
-.pl-shot .pl-credit { color: var(--muted); text-decoration: none; }
-.pl-shot .pl-credit:hover { text-decoration: underline; }
-
-.refs { display: flex; flex-wrap: wrap; gap: var(--s2); margin: var(--s2) 0 var(--s3); }
-.refs .ref {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 var(--s3);
-  border: 1px solid var(--border);
-  border-radius: var(--r-chip);
-  background: var(--surface);
-  color: var(--accent);
-  font-size: var(--t-subhead);
-  font-weight: 600;
-  text-decoration: none;
-}
-.refs .ref:hover { background: var(--accent-soft); }
-.refs .ref::before { opacity: 0.8; }
-
-/* ================= 상단바 ================= */
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  gap: var(--s1);
-  height: calc(var(--topbar-h) + env(safe-area-inset-top));
-  padding: env(safe-area-inset-top) var(--s1) 0;
-  background: var(--bar-bg);
-  -webkit-backdrop-filter: var(--bar-blur);
-  backdrop-filter: var(--bar-blur);
-  color: var(--text);
-  box-shadow: inset 0 -0.5px 0 var(--separator);   /* 헤어라인 */
-}
-
-/* ================= 국가 띠 =================
-   상단바 아래 모서리에 붙어 스크롤을 따라다닌다. 지금 어느 나라에 있는가 —
-   Day 7 에 국경을 넘고, 그 뒤로 시장 요일·공휴일·긴급번호·언어가 바뀐다.
-   장식이 아니라 그 정보다.
-
-   스페인 국기는 가로 3줄(1:2:1), 프랑스 국기는 세로 3칸이다. 방향을 그대로
-   쓴다 — 둘을 같은 방향으로 그리면 나라가 아니라 색 띠가 된다. */
-body[data-country] .topbar::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 6px;
-  /* 띠 전체에 테두리를 두른다. 없으면 프랑스 국기의 흰 칸이 바탕과 이어져
-     `파랑 블록`과 `빨강 블록`이 따로 떠 있는 것처럼 보인다. */
-  box-shadow: inset 0 0 0 0.5px var(--separator);
-}
-body[data-country="es"] .topbar::after {
-  background: linear-gradient(to bottom,
-    var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%, var(--flag-es-red) 75%);
-}
-/* 흰 칸은 밝은 바 위에서 바탕에 묻는다. 칸 경계에 실선을 그어 세 칸으로 읽히게
-   한다 — 없으면 `파랑 · 빈칸 · 빨강` 이 되고 국기로 안 보인다. */
-body[data-country="fr"] .topbar::after {
-  background:
-    linear-gradient(to right, transparent 0 33.34%, var(--separator) 33.34% calc(33.34% + 1px),
-      transparent calc(33.34% + 1px) 66.67%, var(--separator) 66.67% calc(66.67% + 1px),
-      transparent calc(66.67% + 1px)),
-    linear-gradient(to right, var(--flag-fr-blue) 0 33.34%,
-      var(--flag-fr-white) 33.34% 66.67%, var(--flag-fr-red) 66.67%);
-}
-/* 이동일은 두 나라에 걸친다. 반씩 나눠 그린다 — 그날 국경을 넘는다는 뜻이다. */
-body[data-country="es-fr"] .topbar::after {
-  background:
-    linear-gradient(to bottom, var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%,
-      var(--flag-es-red) 75%) left / 50% 100% no-repeat,
-    linear-gradient(to right, var(--flag-fr-blue) 0 33.34%,
-      var(--flag-fr-white) 33.34% 66.67%, var(--flag-fr-red) 66.67%)
-      right / 50% 100% no-repeat;
-}
-/* 밝은 바 위에서는 프랑스 흰 칸이 바탕에 묻는다. 띠의 끝을 선으로 잡아 준다. */
-body[data-country] .topbar {
-  box-shadow: inset 0 -0.5px 0 var(--separator), 0 0.5px 0 var(--separator);
-}
-
-/* 큰 제목이 화면에 있는 동안 상단바 제목은 비워 둔다 (HIG Large Title).
-   nav.js 가 클래스를 붙인다 — JS 가 없으면 처음부터 보인다. */
-body.has-large-title .tb-crumbs {
-  opacity: 0;
-  transition: opacity var(--dur) var(--ease);
-}
-body.has-large-title.scrolled-past .tb-crumbs { opacity: 1; }
-
-#search-btn {
-  min-width: var(--tap);
-  min-height: var(--tap);
-  background: none;
-  border: none;
-  color: var(--accent);
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: var(--r-ctrl);
-}
-#search-btn:hover { background: var(--accent-soft); }
-#search-btn { font-size: 22px; }
-/* 위치 경로 — 하위 페이지에서도 홈·지역으로 항상 올라갈 수 있게 */
-.tb-crumbs {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
-  min-width: 0;
-  min-height: var(--tap);
-  overflow: hidden;
-  font-size: var(--t-subhead);
-}
-.tb-crumbs a, .tb-crumbs b {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: var(--tap);
-  padding: 0 var(--s1);
-  white-space: nowrap;
-  text-decoration: none;
-}
-/* 짧은 라벨도 44pt 타깃을 유지한다 (HIG Layout).
-   중간 조각은 좁아지면 줄어든다 — 줄지 않게 뒀더니 320px 에서
-   `홈 › 지역 › Barcelona · Girona` 가 자리를 다 먹고 정작 `Day 4` 가
-   잘려 나갔다. 지금 어디인지를 못 보이는 위치 경로는 쓸모가 없다. */
-.tb-crumbs a {
-  color: var(--accent);
-  font-weight: 500;
-  flex: 0 1 auto;
-  min-width: var(--tap);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  line-height: var(--tap);
-  text-align: center;
-}
-.tb-crumbs a:first-child { flex: 0 0 auto; }   /* 홈은 줄이지 않는다 */
-.tb-crumbs a:hover { text-decoration: underline; }
-/* 마지막 조각이 지금 페이지다. 좁아지면 앞이 줄고 이것은 남는다. */
-.tb-crumbs b {
-  color: var(--text);
-  font-weight: 700;
-  flex: 1 1 auto;
-  min-width: 4rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  line-height: var(--tap);
-}
-.tb-sep { flex: 0 0 auto; padding: 0 3px; color: var(--muted); }
-.tb-crumbs-none { flex: 1 1 auto; }
-
-/* 좁은 화면에서 4단계 경로는 조상과 현재가 둘 다 잘렸다 —
-   `홈 › 지역 › Avi… › Palais de…`. 잘린 조상은 정보가 아니라 소음이다.
-   중간 축 링크를 접어 `홈 › Avignon › Palais des Papes` 로 만든다.
-   홈은 남긴다 — 크롬에서 홈으로 가는 유일한 문이다 (하단탭에 홈 없음).
-   2단계(홈›현재)는 중간이 없어 영향이 없고, 3단계 이상에서만 접힌다. */
-@media (max-width: 480px) {
-  .tb-crumbs a:not(:first-of-type):not(:last-of-type),
-  .tb-crumbs .tb-sep:not(:first-of-type):not(:last-of-type) { display: none; }
-}
-
-/* ================= 챕터 서브내비 ================= */
-/* 축마다 제 줄을 쓴다. 한 줄에 25개를 늘어놓으면 주제를 보려고 날짜를
-   가로질러 스크롤하게 된다. */
-.subnav {
-  position: sticky;
-  top: calc(var(--topbar-h) + env(safe-area-inset-top));
-  z-index: 150;
-  display: flex;
-  flex-direction: column;
-  gap: var(--s1);
-  padding: var(--s2) var(--s3);
-  background: var(--bar-bg);
-  -webkit-backdrop-filter: var(--bar-blur);
-  backdrop-filter: var(--bar-blur);
-  box-shadow: inset 0 -0.5px 0 var(--separator);
-}
-.subnav::-webkit-scrollbar { display: none; }
-/* 축마다 라벨을 달아 주제와 일자가 한 줄에 뭉개지지 않게 한다 */
-.sn-group {
+.hero-eyebrow {
   display: flex;
   align-items: center;
   gap: var(--s2);
-  min-width: 0;
+  margin-bottom: var(--s2);
 }
-/* 각 줄이 제 안에서만 스크롤한다 */
-.sn-group > div {
-  display: flex;
-  min-width: 0;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+.hero-eyebrow .label { color: var(--accent); }
+.hero h1 {
+  font-size: var(--t-display);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--s2);
 }
-.sn-group > div::-webkit-scrollbar { display: none; }
-.sn-label {
-  flex: none;
-  font-size: var(--t-cap2);
-  font-weight: 700;
-  letter-spacing: 0.1em;
+.hero-sub {
+  font-size: var(--t-small);
   color: var(--muted);
+  margin: 0;
 }
-.sn-layers {
-  border: 1.5px solid var(--accent);
-  border-radius: var(--r-ctrl);
-}
-.sn-layers a {
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto;
-  min-height: var(--tap);
-  padding: 0 var(--s3);
-  font-size: var(--t-foot);
-  font-weight: 700;
-  color: var(--accent);
-  text-decoration: none;
-  white-space: nowrap;
-}
-.sn-layers a + a { border-left: 1.5px solid var(--accent); }
-.sn-layers a:first-child { border-radius: 8px 0 0 8px; }
-.sn-layers a:last-child  { border-radius: 0 8px 8px 0; }
-.sn-layers a:hover { background: var(--accent-soft); }
-.sn-days { gap: var(--s1); }
-.sn-days a {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 var(--s3);
-  font-size: var(--t-foot);
-  font-weight: 600;
-  border-radius: var(--r-chip);
-  background: var(--accent-soft);
-  color: var(--accent);
-  text-decoration: none;
-  white-space: nowrap;
-}
-.sn-days a:hover { background: var(--accent); color: var(--accent-ink); }
-
-/* ================= 검색 시트 ================= */
-#overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 300;
-  background: rgba(6, 14, 17, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--dur) var(--ease);
-}
-#overlay.show { opacity: 1; pointer-events: auto; }
-/* 여는 버튼이 오른쪽 위에 있다. 시트도 그쪽에서 나와야 손이 따라간다. */
-#search-sheet {
-  position: fixed;
-  top: 0; right: 0; bottom: 0;
-  z-index: 310;
-  width: min(320px, 86vw);
-  background: var(--surface);
-  transform: translateX(100%);
-  transition: transform var(--dur) var(--ease);
-  overflow-y: auto;
-  padding: 10px 12px calc(24px + env(safe-area-inset-bottom));
-  padding-top: calc(10px + env(safe-area-inset-top));
-  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.28);
-}
-#search-sheet.open { transform: translateX(0); }
-.ss-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 8px;
-  padding-left: 8px;
-}
-#sheet-close {
-  min-width: var(--tap);
-  min-height: var(--tap);
-  background: none;
-  border: none;
+.hero-dek {
+  margin: var(--s4) 0 0;
   color: var(--text-2);
-  font-size: 17px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-#search-input {
-  width: 100%;
-  min-height: var(--tap);
-  padding: 10px 14px;
-  border: 1.5px solid var(--border);
-  border-radius: 6px;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 1rem;
-  font-family: inherit;
-}
-#search-results { margin: 6px 0; }
-#search-results a {
-  display: block;
-  min-height: var(--tap);
-  padding: 9px 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--text);
-}
-#search-results a:hover { background: var(--accent-soft); }
-#search-results .sr-t { display: block; font-size: 0.92rem; font-weight: 600; }
-#search-results .sr-c { display: block; font-size: 0.78rem; color: var(--muted); }
-.sr-none { color: var(--text-2); font-size: 0.9rem; padding: 10px; margin: 0; }
-
-/* 목록의 지역 링크에 지역 색 리본 — 국경이 색으로 보인다 */
-.list-row { border-left: 3px solid transparent; }
-.list-row[href*="/barcelona/"] { border-left-color: var(--acc-bcn); }
-.list-row[href*="/girona/"] { border-left-color: var(--acc-gir); }
-.list-row[href*="/nice/"] { border-left-color: var(--acc-nce); }
-.list-row[href*="/aix/"] { border-left-color: var(--acc-aix); }
-.list-row[href*="/luberon/"] { border-left-color: var(--acc-lub); }
-.list-row[href*="/avignon/"] { border-left-color: var(--acc-avn); }
-.list-row[href*="/lyon/"] { border-left-color: var(--acc-lyo); }
-.list-row[href*="/paris/"] { border-left-color: var(--acc-par); }
-
-/* ================= 하단 탭바 ================= */
-.bottomnav {
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
-  z-index: 200;
-  display: flex;
-  /* 상단바보다 불투명하다. 본문이 탭 라벨을 뚫고 올라오면 야외에서 '오늘'과
-     지나가는 지역 이름이 겹쳐 읽힌다. 재질보다 판독이 먼저다. */
-  background: var(--tabbar-bg);
-  -webkit-backdrop-filter: var(--bar-blur);
-  backdrop-filter: var(--bar-blur);
-  padding-bottom: env(safe-area-inset-bottom);   /* 홈 인디케이터 */
-  box-shadow: inset 0 0.5px 0 var(--separator);
-}
-.bottomnav a {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  min-height: 49px;                 /* HIG 컴팩트 탭바 */
-  padding: 5px 0 4px;
-  text-decoration: none;
-  color: var(--text-2);             /* 비활성도 4.5:1 위 — 야외에서 읽어야 한다 */
-  font-size: var(--t-cap2);
-  font-weight: 500;
-  line-height: 1.25;
-  position: relative;
-}
-.bottomnav a b { font-size: 22px; line-height: 1.05; font-weight: 400; }
-.bottomnav a.active { color: var(--accent); font-weight: 600; }
-/* 활성 표시를 색에만 맡기지 않는다 */
-.bottomnav a.active::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 22%; right: 22%;
-  height: 2.5px;
-  border-radius: 0 0 2px 2px;
-  background: var(--accent);
+  font-size: var(--t-body);
 }
 
 @media (min-width: 768px) {
-  .bottomnav {
-    left: 50%; right: auto;
-    width: min(560px, calc(100% - 32px));
-    transform: translateX(-50%);
-    border: 1px solid var(--separator);
-    border-bottom: 0;
-    border-radius: var(--r-card) var(--r-card) 0 0;
-  }
+  .hero-img { aspect-ratio: 21 / 9; }
+  .hero-body { max-width: var(--w-container); margin-inline: auto; }
 }
 
-/* ================= 본문 ================= */
-main {
-  max-width: 46rem;
-  margin: 0 auto;
-  padding: 20px 16px 48px;
-}
-main   { padding-bottom: 96px; }
-footer { padding-bottom: 84px !important; }
-
-h1 { font-size: 1.75rem; line-height: 1.3;  margin: 1.2em 0 0.5em; letter-spacing: -0.02em; }
-h2 {
-  font-size: 1.3rem;
-  line-height: 1.4;
-  margin: 1.8em 0 0.5em;
-  padding-bottom: 0.3em;
-  border-bottom: 2px solid var(--border);
-  color: var(--text);
-  letter-spacing: -0.01em;
-}
-h3 { font-size: 1.12rem; margin: 1.5em 0 0.4em; }
-h4 { font-size: 1rem;    margin: 1.2em 0 0.3em; }
-main > h1:first-of-type { margin-top: 0.4em; }
-
-h1.layer-h {
-  margin-top: 2.2em;
-  padding: 12px 16px;
-  background: var(--accent-soft);
-  border-left: 6px solid var(--accent);
-  border-radius: 0;
-  font-size: 1.25rem;
-  color: var(--text);
-}
-
-a { color: var(--accent); }
-
-p.meta { color: var(--text-2); font-size: 0.88rem; margin: 12px 0 0; }
-p.note { color: var(--text-2); font-size: 0.9rem; }
-
-blockquote {
-  margin: 1em 0;
-  padding: 12px 16px;
-  background: var(--quote-bg);
-  border-left: 4px solid var(--accent);
-  border-radius: 0;
-  color: var(--text);
-}
-blockquote p { margin: 0.4em 0; }
-
-hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
-
-code {
-  background: var(--surface-sunk);
-  padding: 1px 5px;
-  border-radius: 3px;
-  font-size: 0.9em;
-  /* 긴 파일 경로가 좁은 화면을 옆으로 밀지 않게 한다.
-     body 의 word-break: keep-all 이 여기서는 방해가 된다. */
-  word-break: break-all;
-}
-pre {
-  background: var(--surface-sunk);
-  padding: 12px 14px;
-  border-radius: 4px;
-  overflow-x: auto;
-}
-pre code { background: none; padding: 0; }
-
-/* ================= 표 ================= */
-.table-wrap {
-  overflow-x: auto;
-  margin: 1em 0;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  -webkit-overflow-scrolling: touch;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 0.95rem;
-  background: var(--surface);
-}
-th, td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--border);
-  text-align: left;
-  vertical-align: top;
-  min-width: 76px;
-}
-thead th {
-  background: var(--accent);
-  color: var(--accent-ink);
-  position: sticky;
-  top: 0;
-  white-space: nowrap;
-  font-size: 0.86rem;
-  letter-spacing: 0.02em;
-}
-tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--surface-sunk) 45%, transparent); }
-tbody tr:last-child td { border-bottom: none; }
-
-/* 전체 일정 — 데스크톱은 표, 모바일은 하루 한 장의 압축 카드다. */
-.itinerary-date-link,
-.itinerary-region-link {
+/* ================= 버튼 ================= */
+.btn {
   display: inline-flex;
   align-items: center;
-  min-height: var(--tap);
-  color: var(--accent);
-  font-weight: 700;
-  text-underline-offset: 3px;
-}
-
-@media (max-width: 700px) {
-  .itinerary-wrap {
-    overflow: visible;
-    border: 0;
-    background: transparent;
-  }
-  .itinerary-table,
-  .itinerary-table tbody {
-    display: block;
-    background: transparent;
-  }
-  .itinerary-table thead {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-  .itinerary-table tbody {
-    display: grid;
-    gap: var(--s3);
-  }
-  .itinerary-table tbody tr {
-    display: grid;
-    grid-template-columns: 64px minmax(74px, 1fr) minmax(74px, 1fr);
-    align-items: center;
-    padding: var(--s2) var(--s3) var(--s3);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--accent);
-    border-radius: var(--r-card);
-    background: var(--surface);
-    box-shadow: var(--shadow-1);
-  }
-  .itinerary-table tbody td {
-    min-width: 0;
-    padding: 2px var(--s2);
-    border: 0;
-    background: transparent !important;
-    overflow-wrap: anywhere;
-  }
-  .itinerary-day {
-    grid-column: 1;
-    grid-row: 1;
-    color: var(--accent);
-    font-size: var(--t-title3);
-    font-weight: 800;
-    font-variant-numeric: tabular-nums;
-  }
-  .itinerary-day::before {
-    content: "DAY";
-    display: block;
-    color: var(--muted);
-    font-size: var(--t-cap2);
-    letter-spacing: 0.08em;
-  }
-  .itinerary-date { grid-column: 2; grid-row: 1; }
-  .itinerary-region { grid-column: 3; grid-row: 1; text-align: right; }
-  .itinerary-date-link,
-  .itinerary-region-link {
-    width: 100%;
-    line-height: 1.35;
-  }
-  .itinerary-region-link { justify-content: flex-end; }
-  .itinerary-theme {
-    grid-column: 1 / -1;
-    margin-top: var(--s1);
-    padding-top: var(--s3) !important;
-    border-top: 1px solid var(--separator) !important;
-    font-weight: 800;
-    line-height: 1.45;
-  }
-  .itinerary-core {
-    grid-column: 1 / -1;
-    padding-top: var(--s2) !important;
-    color: var(--text);
-    font-size: var(--t-foot);
-    line-height: 1.55;
-  }
-  .itinerary-option {
-    grid-column: 1 / -1;
-    color: var(--text-2);
-    font-size: var(--t-foot);
-    line-height: 1.5;
-  }
-  .itinerary-fatigue,
-  .itinerary-lock {
-    margin-top: var(--s2);
-    padding-top: var(--s2) !important;
-    border-top: 1px dashed var(--separator) !important;
-    color: var(--text-2);
-    font-size: var(--t-cap1);
-  }
-  .itinerary-fatigue { grid-column: 1 / 2; }
-  .itinerary-lock { grid-column: 2 / -1; }
-  .itinerary-option::before,
-  .itinerary-lock::before {
-    content: attr(data-label) " · ";
-    color: var(--muted);
-    font-weight: 700;
-  }
-  .itinerary-fatigue::before {
-    content: "피로 · ";
-    color: var(--muted);
-    font-weight: 700;
-  }
-}
-
-/* ================= 관련 리소스 ================= */
-.related { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
-.related a {
-  display: flex;
-  align-items: center;
-  flex: 0 1 auto;
-  min-width: 0;
-  min-height: var(--tap);
-  padding: var(--s2) var(--s4);
-  border-radius: var(--r-chip);      /* HIG 캡슐 */
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: var(--t-subhead);
-  font-weight: 600;
-  text-decoration: none;
-  /* nowrap 을 두면 320px 에서 긴 라벨이 페이지를 밀어낸다 */
-  word-break: keep-all;
-}
-.related a:hover { background: var(--accent); color: var(--accent-ink); }
-
-/* ================= 목차 ================= */
-details.toc {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 4px 16px;
-  margin: 16px 0 24px;
-}
-details.toc summary {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--accent);
-  min-height: var(--tap);
-  display: flex;
-  align-items: center;
-}
-details.toc ul { margin: 8px 0 12px; padding-left: 20px; }
-details.toc li { margin: 6px 0; }
-details.toc li.toc-sub { list-style: circle; margin-left: 16px; font-size: 0.94em; }
-
-/* ================= 이전/다음 ================= */
-nav.pager {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: 40px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-  font-weight: 600;
-}
-nav.pager a {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  text-decoration: none;
-}
-
-/* ================= 홈 ================= */
-.hero { text-align: left; padding: 20px 0 4px; }
-.hero h1 { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: -0.02em; }
-.hero .period {
-  color: var(--text-2);
-  margin: 0 0 18px;
-  font-size: 0.94rem;
-  letter-spacing: 0.02em;
-}
-.btn-today {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 52px;
-  background: var(--accent);
-  color: var(--accent-ink) !important;
-  padding: 0 26px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 1.02rem;
-  text-decoration: none;
-}
-.btn-today:hover { background: color-mix(in srgb, var(--accent) 85%, #000); }
-
-/* ---- 여정 타임라인 (매직넘버 제거) ---- */
-.timeline { list-style: none; margin: var(--s3) 0 var(--s5); padding: 0; }
-.timeline li { margin-bottom: var(--s2); }
-.tl-body {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--s2);
-  padding: var(--s3) var(--s4);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
-  border-radius: var(--r-card);
-}
-/* 국경 — 여정 목록에서 스페인이 끝나고 프랑스가 시작하는 자리.
-   거점 사이의 여백을 나누는 선이 아니라, 그날 무엇이 바뀌는지를 말한다. */
-.tl-border { margin: var(--s4) 0; }
-.bc {
-  display: flex;
-  align-items: center;
-  gap: var(--s2);
-}
-.bc-label {
-  flex: 1 1 auto;
-  text-align: center;
-  font-size: var(--t-foot);
-  font-weight: 700;
-  color: var(--muted);
-  word-break: keep-all;
-}
-.bc-flag {
-  flex: 0 0 auto;
-  width: 30px;
-  height: 20px;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px var(--border);
-}
-.bc-es {
-  background: linear-gradient(to bottom,
-    var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%, var(--flag-es-red) 75%);
-}
-.bc-fr {
-  background: linear-gradient(to right,
-    var(--flag-fr-blue) 0 33.34%, var(--flag-fr-white) 33.34% 66.67%,
-    var(--flag-fr-red) 66.67%);
-}
-
-.tl-head { flex: 1 1 11rem; min-width: 0; }
-.tl-title {
-  display: block;
-  color: var(--text);
-  text-decoration: none;
-  font-size: var(--t-body);
-  font-weight: 700;
-  line-height: 1.35;
-  word-break: keep-all;
-}
-.tl-title:hover { color: var(--accent); }
-.tl-when {
-  display: block;
-  margin-top: 2px;
-  font-size: var(--t-foot);
-  color: var(--text-2);
-  font-variant-numeric: tabular-nums;
-}
-.tl-acts { display: flex; gap: var(--s1); flex: 0 0 auto; }
-.tl-act {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 var(--s3);
-  border-radius: var(--r-ctrl);
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: var(--t-foot);
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.tl-act:hover { background: var(--accent); color: var(--accent-ink); }
-
-/* 히어로의 오늘 줄 */
-.today-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s3);
-  flex-wrap: wrap;
-  margin-top: var(--s4);
-  padding: var(--s3) var(--s4);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r-card);
-}
-.today-date {
-  font-size: var(--t-title3);
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.01em;
-}
-.today-date.today-out { font-size: var(--t-callout); color: var(--text-2); }
-
-/* 홈의 첫 선택은 편집 분류가 아니라 여행 행동이다. 카드 그리드보다 빠르게
-   훑을 수 있는 단일 목록으로 두고, 모바일 첫 화면에 일부가 보이게 압축한다. */
-.home-actions {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--s2);
-  margin: var(--s4) 0 var(--s5);
-}
-.home-action {
-  display: grid;
-  grid-template-columns: 30px minmax(0, 1fr) 16px;
-  align-items: center;
-  gap: var(--s2);
-  min-height: 78px;
-  padding: var(--s3) var(--s4);
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r-card);
-  text-decoration: none;
-}
-.home-action:hover { border-color: var(--accent); }
-.ha-icon { color: var(--accent); font-size: 25px; }
-.ha-copy { min-width: 0; }
-.ha-copy b, .ha-copy span { display: block; }
-.ha-copy b { font-size: var(--t-subhead); line-height: 1.3; }
-.ha-copy span { margin-top: 3px; color: var(--text-2); font-size: var(--t-foot); line-height: 1.35; }
-@media (max-width: 560px) {
-  .home-actions { grid-template-columns: 1fr; }
-  .home-action { min-height: 68px; }
-}
-
-.tl-map:hover { background: var(--accent); color: var(--accent-ink); }
-
-/* 지역별 리본 — li 순서로 자동 부여 */
-/* 순서(nth-child)가 아니라 지역으로 건다. 국경 줄을 사이에 끼웠더니
-   리본이 한 칸씩 밀려 Nice 가 Aix 색을 쓰고 있었다. */
-.tl-body[data-region="barcelona"] { border-left-color: var(--acc-bcn); }
-.tl-body[data-region="girona"] { border-left-color: var(--acc-gir); }
-.tl-body[data-region="nice"] { border-left-color: var(--acc-nce); }
-.tl-body[data-region="aix"] { border-left-color: var(--acc-aix); }
-.tl-body[data-region="luberon"] { border-left-color: var(--acc-lub); }
-.tl-body[data-region="avignon"] { border-left-color: var(--acc-avn); }
-.tl-body[data-region="lyon"] { border-left-color: var(--acc-lyo); }
-.tl-body[data-region="paris"] { border-left-color: var(--acc-par); }
-
-/* ---- 카드 그리드 ---- */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 10px;
-  margin: 16px 0 8px;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-height: 88px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: var(--text);
-  transition: border-color var(--dur) var(--ease);
-}
-.card:hover { border-color: var(--accent); }   /* transform 제거: 터치 sticky hover 방지 */
-.card-num {
-  font-size: var(--t-cap1);
-  font-weight: 700;
-  color: var(--text-2);
-  letter-spacing: 0.14em;
-}
-.card-title { font-weight: 700; line-height: 1.4; }
-/* 지역 카드 — 제목이 링크라 카드 전체를 a 로 감싸지 않는다 */
-.rg-card { gap: 6px; position: relative; overflow: hidden; padding-top: 18px; }
-/* 국기 띠 — 카드 위 모서리의 면. 어느 나라 거점인지가 목록에서 보인다 (진단 E-3).
-   방향은 국기 그대로다: 스페인 가로 3줄(1:2:1), 프랑스 세로 3칸. 상단바 띠와
-   같은 문법이라 새 시각 언어가 아니다. */
-.rg-card::before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; top: 0;
-  height: 6px;
-  box-shadow: inset 0 0 0 0.5px var(--separator);
-}
-.rg-es::before {
-  background: linear-gradient(to bottom,
-    var(--flag-es-red) 0 25%, var(--flag-es-gold) 25% 75%, var(--flag-es-red) 75%);
-}
-.rg-fr::before {
-  background:
-    linear-gradient(to right, transparent 0 33.34%, var(--separator) 33.34% calc(33.34% + 1px),
-      transparent calc(33.34% + 1px) 66.67%, var(--separator) 66.67% calc(66.67% + 1px),
-      transparent calc(66.67% + 1px)),
-    linear-gradient(to right, var(--flag-fr-blue) 0 33.34%,
-      var(--flag-fr-white) 33.34% 66.67%, var(--flag-fr-red) 66.67%);
-}
-/* 국경 구분선 — Girona 와 Nice 사이. 그리드 전폭을 차지한다. */
-.rg-border {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: center;
-  gap: var(--s3);
-  margin: var(--s2) 0;
-  color: var(--muted);
-  font-size: var(--t-foot);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-.rg-border::before, .rg-border::after {
-  content: "";
-  flex: 1;
-  border-top: 2px dashed var(--border);
-}
-.rg-border span { flex: 0 0 auto; }
-.rg-card .card-title {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 1.05rem;
-}
-.rg-card .card-title:hover { text-decoration: underline; }
-.rg-card .pl-links { margin-top: 2px; }
-.card-sub { font-size: 0.88rem; color: var(--text-2); }
-.card-alt { background: var(--accent-soft); border-color: transparent; }
-
-/* 어두운 바탕(표 머리) 위에서는 잉크를 뒤집는다 — 같은 색이면 1.3:1 이 된다 */
-thead th .badge-pending {
-  color: var(--accent-ink);
-  border-color: var(--accent-ink);
-}
-thead th .badge, thead th .grade { color: var(--accent-ink); }
-
-/* ================= 신호 배지 (신규) ================= */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 10px;
-  border-radius: var(--r-chip);   /* HIG 캡슐 */
-  font-size: var(--t-cap1);
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  vertical-align: middle;
-}
-.badge-p0 {
-  background: var(--sig-critical);
-  color: #fff;
-  box-shadow: inset 3px 0 0 rgba(0, 0, 0, 0.35);
-}
-.badge-pending {
-  background: transparent;
-  color: var(--sig-caution-ink);
-  border: 1.5px dashed var(--sig-caution);
-}
-.badge-done   { background: var(--sig-steady); color: #fff; }
-/* S1 — Jason 확정 대기. 확정값과 시각적으로 구분한다 */
-.badge-decision-pending {
-  background: transparent;
-  color: var(--sig-critical-ink);
-  border: 1.5px dashed var(--sig-critical);
-  font-weight: 700;
-}
-/* 값은 확인됐고 출발 전·현장에서 다시 본다 — 실선 */
-.badge-field-recheck {
-  background: transparent;
-  color: var(--sig-rest-ink);
-  border: 1.5px solid var(--sig-rest);
-}
-/* 공식 확인 불가 — 전화로 물어야 한다. 행동이 필요하므로 이중선으로 무겁게 */
-.badge-unreachable {
-  background: transparent;
-  color: var(--sig-critical-ink);
-  border: 3px double var(--sig-critical);
-  font-weight: 700;
-}
-.badge-unverified {
-  background: transparent;
-  color: var(--sig-caution-ink);
-  border: 1.5px dotted var(--sig-caution);
-}
-.badge-rest   { background: var(--sig-rest);   color: #fff; }
-
-/* 미확정 블록 — 확정값처럼 보이면 안 되는 항목 */
-.pending {
-  border: 1.5px dashed var(--sig-caution) !important;
-  background: color-mix(in srgb, var(--sig-caution) 7%, var(--surface));
-}
-.pending .pl-body b, .pending b { color: var(--sig-caution); }
-
-/* 피로도 — 막대 + 숫자 병기 (색 제거해도 판독) */
-.fatigue {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-.fatigue i {
-  display: inline-block;
-  width: 7px; height: 14px;
-  background: var(--border);
-  border-radius: 1px;
-}
-.fatigue i.on { background: var(--text-2); }
-.fatigue[data-v="1"] i.on, .fatigue[data-v="2"] i.on { background: var(--sig-rest); }
-.fatigue[data-v="4"] i.on { background: var(--sig-caution); }
-.fatigue[data-v="5"] i.on { background: var(--sig-critical); }
-
-/* 적합도 — ★★★★★ 를 대신하는 막대+숫자 (HIG 진단 1-2). 별 글리프처럼
-   두부가 되지 않고, 색을 빼도 채운 칸 수로 값이 읽힌다. 피로도와 같은 원리. */
-.stars {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  vertical-align: -2px;
-  font-variant-numeric: tabular-nums;
-}
-.stars .sb { display: inline-flex; gap: 2px; }
-.stars .sb i {
-  display: inline-block;
-  width: 14px; height: 8px;
-  border-radius: 2px;
-  background: var(--surface-sunk);
-}
-.stars .sb i.on { background: var(--sig-caution); }
-.stars b { font-weight: 800; font-size: 0.85em; }
-
-/* ================= 대표 사진 · 편집 도식 ================= */
-figure.hero-photo, figure.ed-visual { margin: 16px 0 20px; }
-figure.hero-photo img, figure.ed-visual img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  display: block;
-}
-figure.hero-photo figcaption, figure.ed-visual figcaption {
-  font-size: 0.8rem;
-  color: var(--text-2);
-  margin-top: 8px;
-  line-height: 1.55;
-}
-figure.ed-visual figcaption { text-align: center; }
-
-/* 중앙 미디어 카탈로그 이미지 — 로컬 WebP, 확대 링크, 캡션·저작자 표시 */
-.guidebook-image {
-  margin: 16px 0 20px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--surface);
-}
-.guidebook-image .media-zoom { display: block; background: var(--surface-2); }
-.guidebook-image img {
-  width: 100%; height: auto; display: block; object-fit: cover;
-}
-.guidebook-image--hero img { aspect-ratio: 16 / 9; }
-.guidebook-image figcaption {
-  display: flex; flex-direction: column; gap: 4px;
-  padding: 10px 12px; color: var(--text-2); font-size: 0.8rem; line-height: 1.55;
-}
-.guidebook-image .media-credit { font-size: 0.72rem; }
-.guidebook-image .media-fallback {
-  min-height: 160px; align-items: center; justify-content: center;
-  padding: 20px; color: var(--text-2); background: var(--surface-2);
-}
-.guidebook-image.is-error .media-zoom { display: none; }
-.guidebook-image.is-error .media-fallback { display: flex; }
-.guidebook-image--card { margin: 0; border: 0; border-radius: 0; border-bottom: 1px solid var(--border); }
-.guidebook-image--card img { height: 170px; }
-.guidebook-image--card figcaption { padding: 7px 10px; }
-.media-gallery { margin: 12px 0 28px; }
-.media-gallery-title { font-size: 1.05rem; margin: 0 0 10px; }
-.media-gallery-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;
-}
-.media-gallery-grid .guidebook-image { margin: 0; }
-.media-gallery-grid .guidebook-image img { aspect-ratio: 4 / 3; height: auto; }
-
-/* Manifest-backed responsive guide photos (Barcelona Pilot). */
-.guide-photo {
-  margin: 18px 0 24px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
-  box-shadow: var(--shadow-1);
-}
-.guide-photo picture,
-.guide-photo img { display: block; width: 100%; }
-.guide-photo img { height: auto; object-fit: cover; background: var(--surface-sunk); }
-.guide-photo--hero img { aspect-ratio: 16 / 9; }
-.guide-photo figcaption {
-  display: grid;
-  gap: 5px;
-  padding: 11px 14px 13px;
-  color: var(--text-2);
-  font-size: .86rem;
-  line-height: 1.5;
-}
-.guide-photo .media-credit { font-size: .76rem; color: var(--muted); }
-.guide-photo-gallery { margin: 22px 0 28px; }
-.guide-photo-gallery .media-gallery-title { margin-bottom: 12px; }
-.guide-photo-gallery .media-gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-.guide-photo-gallery .guide-photo { margin: 0; border-radius: 12px; }
-.guide-photo-gallery .guide-photo img { aspect-ratio: 3 / 2; object-fit: cover; }
-.guide-photo-gallery .guide-photo figcaption { padding: 9px 11px 11px; }
-.photo-credit-list .credit-item { scroll-margin-top: 80px; }
-.photo-credit-list .credit-item > div { min-width: 0; }
-.photo-credit-list .credit-item h2 { margin: 0 0 8px; font-size: 1.05rem; }
-.photo-credit-list .credit-item p { margin: 4px 0; }
-.photo-credit-list .credit-item ul { margin-top: 4px; }
-
-@media (max-width: 720px) {
-  .guide-photo { margin-inline: -4px; border-radius: 12px; }
-  .guide-photo-gallery .media-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .guide-photo-gallery .guide-photo:last-child:nth-child(odd) { grid-column: 1 / -1; }
-}
-
-/* ================= 주요 방문지 카드 ================= */
-section.places { margin: 8px 0 24px; }
-section.places > h3 { margin-top: 0.8em; }
-section.places .note { margin: 2px 0 10px; }
-.pl-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 12px;
-}
-.pl-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.pl-photo { position: relative; }
-.pl-photo img { width: 100%; height: 150px; object-fit: cover; display: block; }
-.pl-credit {
-  position: absolute;
-  right: 0; bottom: 0;
-  display: flex;
-  align-items: center;
-  min-height: 32px;
-  padding: 0 10px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  background: rgba(6, 14, 17, 0.72);
-  color: #fff !important;
-  text-decoration: none;
-}
-.pl-body { padding: 12px; display: flex; flex-direction: column; gap: 5px; }
-.pl-body b { font-size: 1rem; }
-.pl-body p { margin: 0; font-size: 0.9rem; color: var(--text-2); line-height: 1.6; }
-.pl-links { display: flex; gap: 6px; margin-top: 6px; }
-.pl-links a {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 12px;
-  border-radius: 4px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.86rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-/* 추천등급 배지 5종 — 모양으로 구분 */
-.grade { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.02em; }
-/* 마커는 유니코드 도형이 아니라 CSS 마스크다 (HIG 진단 1-1). --ic 는 icons.py 가
-   .grade-*::before 로 구워 넣는다. 색은 아래 .grade-* 가 currentColor 로 정하고,
-   모양(채움/외곽선/사선)이 색과 별개로 등급을 전달한다 — 색맹·두부 양쪽에 강하다. */
-.grade::before {
-  content: "";
-  display: inline-block;
-  width: 0.95em;
-  height: 0.95em;
-  margin-right: 5px;
-  vertical-align: -0.14em;
-  background-color: currentColor;
-  -webkit-mask: var(--ic) center / contain no-repeat;
-  mask: var(--ic) center / contain no-repeat;
-}
-.grade-essential   { color: var(--sig-critical-ink); }
-.grade-priority    { color: var(--accent); }
-.grade-optional    { color: var(--text-2); }
-.grade-alternative { color: var(--sig-caution-ink); }
-.grade-excluded    { color: var(--muted); }
-
-/* ================= 데일리 가이드 ================= */
-/* ================= 분할 챕터 — 빵부스러기 · 부제 ================= */
-.crumbs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px;
-  margin: 0 0 4px;
-  font-size: 0.84rem;
-  color: var(--text-2);
-}
-.crumbs a {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding-right: 2px;
-  color: var(--accent);
-}
-.page-sub {
-  margin: 0 0 4px;
-  font-size: 1rem;
-  color: var(--text-2);
-  line-height: 1.6;
-}
-
-/* ================= 데일리 — 텍스트 우선 ================= */
-.day-command {
-  margin: 12px 0 22px;
-  padding: 16px;
-  border: 1px solid var(--border);
-  border-left: 5px solid var(--accent);
-  border-radius: 6px;
-  background: var(--surface);
-}
-.day-quick { margin: 0; }
-.dq-item {
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  gap: 10px;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border);
-}
-.dq-item:first-child { padding-top: 0; }
-.dq-item dt { color: var(--text-2); font-size: .8rem; font-weight: 700; }
-.dq-item dd { margin: 0; font-size: .98rem; line-height: 1.55; font-weight: 600; }
-.dq-core dd { color: var(--text); }
-.day-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 12px; }
-.day-actions a {
-  display: flex; align-items: center; min-height: var(--tap); padding: 7px 10px;
-  border: 1px solid var(--border); border-radius: 4px; background: var(--accent-soft);
-  color: var(--accent); text-decoration: none; font-size: .84rem; font-weight: 700;
-}
-.day-details { margin: 20px 0; border-top: 1px solid var(--border); }
-.day-details > summary {
-  display: flex; align-items: center; min-height: var(--tap); cursor: pointer;
-  color: var(--accent); font-size: .94rem; font-weight: 700;
-}
-.day-details > summary::after { content: "+"; margin-left: auto; font-size: 1.25rem; }
-.day-details[open] > summary::after { content: "−"; }
-.day-more { margin-top: 24px; }
-.day-flags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 10px 0 0;
-}
-.day-summary {
-  margin: 12px 0 0;
-  border-top: 1px solid var(--border);
-}
-.ds-item {
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  gap: 10px;
-  padding: 10px 2px;
-  border-bottom: 1px solid var(--border);
-}
-.ds-item dt {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--text-2);
-  line-height: 1.5;
-}
-.ds-item dd {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-@media (max-width: 380px) {
-  .ds-item { grid-template-columns: 1fr; gap: 2px; }
-}
-table.day-time td { vertical-align: top; }
-table.day-time td:first-child {
-  white-space: nowrap;
-  font-weight: 700;
-  color: var(--text-2);
-  font-variant-numeric: tabular-nums;
-}
-.day-card > summary {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 12px;
-  margin-top: 20px;
-  background: var(--surface-sunk);
-  border-radius: 4px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-figure.daily-card { margin: 16px 0; text-align: center; }
-figure.daily-card img {
-  max-width: min(100%, 480px);
-  height: auto;
-  border-radius: 6px;
-  border: 1px solid var(--border);
-}
-figure.daily-card-v2 a:first-child {
-  display: inline-flex;
-  min-width: var(--tap);
-  min-height: var(--tap);
-  border-radius: 6px;
-}
-figure.daily-card-v2 a:first-child:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
-}
-figure.daily-card-v2 figcaption { margin-top: 8px; font-size: var(--t-foot); }
-.daily-region { margin: 24px 0 32px; }
-.daily-region > h2 { margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
-.daily-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
-  gap: 8px;
-  margin: 16px 0;
-}
-.daily-item {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 2px;
+  gap: var(--s2);
   min-height: var(--tap);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--border);
-  border-radius: 4px;
-  padding: 10px 12px;
+  padding: 0 var(--s4);
+  border: 1px solid transparent;
+  border-radius: var(--r-full);
+  font-size: var(--t-small);
+  font-weight: 700;
   text-decoration: none;
-  color: var(--text);
-  font-size: 0.9rem;
-}
-.daily-item:hover { border-color: var(--accent); }
-.daily-item b { color: var(--text); font-variant-numeric: tabular-nums; }
-.daily-item .di-region { color: var(--text-2); font-size: 0.82rem; }
-.daily-item .di-core {
-  margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border);
-  color: var(--text); font-size: .82rem; line-height: 1.45;
-}
-.daily-item.is-p0 { border-left-color: var(--sig-critical); }
-/* 피로도·잠금 칩 — 챕터 일정표 요약을 흡수한 자리 (B안). 오른쪽 위 한 줄,
-   카드 높이를 늘리지 않는다. 값이 없는 날은 아무것도 그리지 않는다. */
-.daily-item { position: relative; }
-.daily-item .di-flags {
-  position: absolute;
-  top: 9px; right: 10px;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-}
-.daily-item .di-flags .fatigue i { width: 5px; height: 11px; }
-.daily-item .di-flags .di-lock { width: 13px; height: 13px; color: var(--sig-caution-ink); }
-/* 접힌 전체 일정표 — 같은 정본의 두 번째 밀도. 그리드와 동시에 펼쳐 보이지 않는다. */
-.sched-full { margin-top: var(--s6); }
-.sched-full > summary { font-weight: 700; }
-@media (max-width: 380px) {
-  .day-command { padding: 13px; }
-  .dq-item { grid-template-columns: 1fr; gap: 2px; }
-  .day-actions { grid-template-columns: 1fr; }
-}
-
-/* ================= 트래커 탭 ================= */
-nav.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 16px; }
-nav.tabs a {
-  display: flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 16px;
-  border-radius: 4px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.92rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-nav.tabs a.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-}
-
-/* ================= 맨 위로 ================= */
-#back-top {
-  position: fixed;
-  right: 14px;
-  bottom: calc(72px + env(safe-area-inset-bottom));
-  z-index: 190;
-  width: var(--tap); height: var(--tap);
-  border-radius: 50%;
-  border: none;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-size: 18px;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--dur) var(--ease);
+  transition: background var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease);
 }
-#back-top.show { opacity: 0.95; pointer-events: auto; }
-@media (min-width: 768px) { #back-top { bottom: 20px; } }
-
-/* ================= 오프라인 안내 ================= */
-.offline-note {
-  /* 산문 문단이라 flex 가 아니라 block 이다. flex 였을 때 한글 어절
-     (word-break: keep-all) 이 줄바꿈되지 않아 좁은 화면을 옆으로 밀었다. */
-  display: block;
-  padding: 12px 14px;
-  margin: 20px 0 0;
-  background: var(--surface-sunk);
-  border-left: 4px solid var(--sig-caution);
-  font-size: 0.9rem;
-  color: var(--text-2);
-  line-height: 1.6;
+.btn-primary { background: var(--primary); color: var(--on-primary); }
+.btn-primary:hover { background: var(--primary-ink); color: var(--on-primary); }
+.btn-secondary {
+  background: var(--surface);
+  color: var(--primary);
+  border-color: var(--line-strong);
 }
-body.is-offline .needs-net {
+.btn-secondary:hover { background: var(--primary-soft); color: var(--primary-ink); }
+.btn-quiet { background: transparent; color: var(--primary); padding-inline: var(--s2); }
+.btn[aria-disabled="true"], .btn:disabled {
   opacity: 0.45;
   pointer-events: none;
 }
-/* 저작자 표시는 라이선스 조건이라 오프라인에서도 읽혀야 한다.
-   링크만 죽이고 글자는 본문 대비를 유지한다. */
-body.is-offline .credit-item .needs-net,
-body.is-offline .offline-note .needs-net {
-  opacity: 1;
-  color: var(--text-2);
-  text-decoration: underline dotted;
-}
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--s2); }
 
-/* ================= iPhone PWA · 전체 오프라인 저장 ================= */
-.pwa-install-steps {
-  padding-left: 1.5rem;
-}
-.pwa-install-steps li {
-  margin: 0.45rem 0;
-}
-body.is-standalone .pwa-install-steps {
-  display: none;
-}
-.pwa-panel {
-  margin: 20px 0 8px;
-  padding: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r-card);
-}
-.pwa-panel[hidden],
-.pwa-update[hidden],
-.pwa-actions button[hidden] {
-  display: none;
-}
-.pwa-mode,
-.pwa-storage {
-  margin: 0 0 12px;
-  color: var(--text-2);
-  font-size: var(--t-foot);
-}
-.pwa-status {
-  display: grid;
-  gap: 3px;
-  padding: 12px 14px;
-  border-left: 4px solid var(--sig-caution);
-  background: var(--surface-sunk);
-}
-.pwa-panel[data-state="complete"] .pwa-status {
-  border-left-color: var(--sig-steady);
-}
-.pwa-panel[data-state="error"] .pwa-status {
-  border-left-color: var(--sig-critical);
-}
-.pwa-status b,
-.pwa-status span,
-.pwa-status small {
-  display: block;
-}
-.pwa-status span,
-.pwa-status small {
-  color: var(--text-2);
-}
-.pwa-status small {
-  font-size: var(--t-cap1);
-}
-.pwa-panel progress {
-  display: block;
-  width: 100%;
-  height: 12px;
-  margin: 16px 0;
-  accent-color: var(--accent);
-}
-.pwa-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.pwa-actions button,
-.pwa-update button {
-  min-height: var(--tap);
-  padding: 8px 16px;
-  border: 1px solid var(--accent);
-  border-radius: var(--r-ctrl);
-  background: var(--accent);
-  color: var(--accent-ink);
-  font: inherit;
-  font-size: var(--t-subhead);
+/* ================= 배지 =================
+   StatusBadge / PriorityBadge. 색만으로 뜻을 전하지 않는다 — 글자가 있다. */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  padding: 0.15em 0.6em;
+  border-radius: var(--r-full);
+  font-size: var(--t-label);
   font-weight: 700;
-  cursor: pointer;
-}
-.pwa-actions button:disabled {
-  opacity: 0.55;
-  cursor: progress;
-}
-.pwa-actions .pwa-clear {
-  background: transparent;
-  border-color: var(--sig-critical-ink);
-  color: var(--sig-critical-ink);
-}
-.pwa-storage {
-  margin: 12px 0 0;
-}
-.pwa-update {
-  margin-top: 14px;
-  padding: 12px;
-  background: var(--accent-soft);
-  border-radius: var(--r-ctrl);
-}
-.pwa-update b {
-  display: block;
-  margin-bottom: 8px;
-}
-.related .ic {
-  flex: 0 0 auto;
-  margin-right: 6px;
-}
-
-/* ================= 저작자 표시 ================= */
-.credit-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
-  margin: 20px 0 8px;
-}
-.credit-item {
-  margin: 0;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
-}
-/* 대표사진에는 지역명·저작자가 이미지 안에 새겨져 있다. 잘라내면 그 표시가
-   반쯤 잘리므로 원본 16:9 비율을 그대로 둔다. */
-.credit-item img { width: 100%; height: auto; display: block; }
-.credit-item figcaption {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 12px;
-  font-size: 0.86rem;
-  color: var(--text-2);
-  line-height: 1.55;
-}
-.credit-item figcaption b { font-size: 0.95rem; color: var(--text); }
-
-/* ================= 푸터 ================= */
-footer {
-  text-align: center;
-  color: var(--text-2);
-  font-size: 0.85rem;
-  padding: 20px 16px;
-  border-top: 1px solid var(--border);
-  line-height: 1.6;
-}
-
-/* 인쇄 */
-@media print {
-  .topbar, .bottomnav, #search-sheet, #overlay, #back-top, .subnav { display: none !important; }
-  main { max-width: none; padding: 0; }
-  body { background: #fff; font-size: 11pt; }
-}
-
-/* ================= 좌표 바 — 일자·지역·주제 축 전환 ================= */
-.coords {
-  display: flex;
-  gap: var(--s2);
-  margin: 0 0 var(--s5);
-  padding: 0;
-  background: none;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.coords::-webkit-scrollbar { display: none; }
-.coords > * {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-  flex: 1 1 0;
-  min-width: 0;
-  min-height: var(--tap);        /* HIG 44pt */
-  padding: var(--s2) var(--s3);
-  border: 1px solid var(--border);
-  border-radius: var(--r-ctrl);
-  background: var(--surface);
-  text-decoration: none;
-  color: var(--text);
-}
-.coords b {
-  flex: none;
-  font-size: var(--t-cap2);      /* HIG 최소 11pt */
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--muted);
-}
-.coords span {
-  font-size: var(--t-foot);
-  font-weight: 600;
+  letter-spacing: 0.02em;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.coords a:hover { border-color: var(--accent); }
-/* 현재 축 — 색만이 아니라 왼쪽 리본과 굵기로도 구분한다 */
-.coords .cd-here {
-  border-color: var(--accent);
-  border-left: 4px solid var(--accent);
-  background: var(--accent-soft);
-}
-.coords .cd-here b { color: var(--accent); }
+.badge-ok      { background: #E4F0EA; color: var(--sig-ok-ink); }
+.badge-caution { background: var(--ochre-soft); color: var(--sig-caution-ink); }
+.badge-alert   { background: var(--terracotta-soft); color: var(--sig-alert-ink); }
+.badge-neutral { background: var(--surface-2); color: var(--text-2); }
+.badge-must    { background: var(--accent); color: #FFFFFF; }
 
-/* 챕터 Day 섹션 → 그 날 데일리 카드 */
-.day-jump { margin: -2px 0 12px; }
-.day-jump a {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--tap);
-  padding: 0 12px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: var(--surface);
-  font-size: 0.88rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--accent);
-}
-.day-jump a:hover { border-color: var(--accent); }
-
-/* ================= 주제 페이지 ================= */
-.tp-list { margin: 12px 0 8px; }
-.tp-region {
-  margin: 22px 0 8px;
-  padding-bottom: 5px;
-  font-size: 1rem;
-  border-bottom: 2px solid var(--accent);
-}
-.tp-item {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 11px 13px;
-  margin-bottom: 6px;
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 4px;
-  background: var(--surface);
-  text-decoration: none;
-  color: var(--text);
-}
-.tp-item:hover { border-color: var(--accent); }
-.tp-title { font-weight: 700; line-height: 1.45; }
-.tp-ex {
-  font-size: 0.86rem;
-  line-height: 1.55;
-  color: var(--text-2);
-  word-break: keep-all;
-}
-.card-n {
-  margin-top: auto;
-  font-size: var(--t-cap1);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--text-2);
-}
-
-/* 분할 챕터의 형제 페이지 점프 — 현재 페이지는 채움으로 구분한다 */
-.sn-layers .sn-hub { font-weight: 700; }
-.subnav a.here {
-  background: var(--accent);
-  color: var(--accent-ink);
-}
-
-/* ================= 장소 카드 ================= */
-.pl-day {
-  display: inline-flex;
-  align-items: center;
-  min-height: var(--tap);
-  margin: 0 6px 4px 0;
-  padding: 0 12px;
-  border-radius: 4px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.86rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.pl-day:hover { background: var(--accent); color: var(--accent-ink); }
-.pl-basis {
-  display: inline-block;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-.pl-ex {
-  margin: 14px 0;
-  padding: 12px 14px;
-  border-left: 3px solid var(--border);
-  background: var(--surface);
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: var(--text-2);
-  word-break: keep-all;
-}
-.pl-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
-.pl-chips .pl-day { margin: 0; }
-.pl-chips .pl-day b { font-weight: 700; opacity: 0.72; font-size: 0.78rem; }
-
-/* ================= 다크 모드 잉크 반전 =================
-   신호색은 다크에서 밝아진다. 채워진 배지 위 글자를 흰색으로 두면
-   2:1 대까지 떨어진다. 규칙 순서상 여기(파일 끝)에 있어야 이긴다. */
-@media (prefers-color-scheme: dark) {
-  .badge-p0, .badge-rest, .badge-done, .p4-badge { color: #0B1418; }
-}
-[data-theme="dark"] .badge-p0,
-[data-theme="dark"] .badge-rest,
-[data-theme="dark"] .badge-done,
-[data-theme="dark"] .p4-badge { color: #0B1418; }
-[data-theme="light"] .badge-p0,
-[data-theme="light"] .badge-rest,
-[data-theme="light"] .badge-done,
-[data-theme="light"] .p4-badge { color: #fff; }
-
-/* ================= 날짜별 인터랙티브 실행지도 =================
-   구 Leaflet 일자 지도(.dem-* · .leaflet-*)는 Google Maps 전환으로 죽은
-   코드가 됐다 — site 의 어느 HTML·JS 에도 안 나온다 (HIG 진단 6-2). 지웠다.
-   되살릴 일이 생기면 git 이력(이 커밋 이전)에서 꺼낸다. */
-.daily-map-section { margin: var(--s6) 0; }
-
-/* ================= inset grouped list (HIG) =================
-   이동용 목록의 정석. 카드 격자보다 조밀하고 훑기 쉽다.
-   행 사이 구분선은 앞쪽을 들여써 글리프 열과 어긋나게 둔다. */
-.list-group {
-  margin: var(--s3) 0 var(--s5);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r-card);
-  overflow: hidden;
-}
-.list-row {
-  display: grid;
-  grid-template-columns: 28px 1fr 14px;
-  align-items: center;
-  gap: var(--s3);
-  min-height: 56px;
-  padding: var(--s2) var(--s4);
-  color: var(--text);
-  text-decoration: none;
-}
-.list-row + .list-row { box-shadow: inset 0 0.5px 0 var(--separator); }
-.list-row:hover { background: var(--accent-soft); }
-.lr-icon {
-  font-size: 19px;
-  line-height: 1;
-  text-align: center;
-  color: var(--accent);
-}
-.lr-text { min-width: 0; }
-.lr-title {
-  display: block;
-  font-size: var(--t-body);
-  font-weight: 600;
-  line-height: 1.3;
-}
-.lr-sub {
-  display: block;
-  font-size: var(--t-foot);
-  color: var(--text-2);
-  line-height: 1.35;
-  word-break: keep-all;
-}
-/* 셰브런 — 눌러서 들어간다는 표시 */
-.lr-go {
-  font-size: 19px;
-  line-height: 1;
-  color: var(--muted);
-  text-align: right;
-}
-
-/* Paris event anchors — official information and ticketing actions. */
-.event-actions {
+/* ================= MetadataRow ================= */
+.metarow {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s2);
-  margin: var(--s4) 0 var(--s5);
-  padding: var(--s3);
-  border: 1px solid var(--border);
-  border-radius: var(--r-card);
-  background: var(--surface);
+  align-items: center;
+  gap: var(--s2) var(--s3);
+  font-size: var(--t-small);
+  color: var(--muted);
+  margin: 0;
 }
-.event-button {
+.metarow > * { display: inline-flex; align-items: center; gap: var(--s1); }
+.metarow .sep { color: var(--line-strong); }
+
+/* ================= 카드 공통 ================= */
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-1);
+  overflow: hidden;
+  transition: box-shadow var(--dur) var(--ease),
+              transform var(--dur) var(--ease);
+}
+/* 카드 전체를 누를 수 있게 한다 — 링크 글자만 44px 인 것보다 낫다.
+   ::after 를 덮으므로 카드 안의 다른 링크는 z-index 로 올린다. */
+.card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.card:has(.card-link:hover),
+.card:hover { box-shadow: var(--sh-2); }
+@media (hover: hover) {
+  .card:hover { transform: translateY(-1px); }
+}
+.card-body { padding: var(--s4); }
+.card-title { font-size: var(--t-h3); margin-bottom: var(--s1); }
+.card-title a { color: var(--text); text-decoration: none; }
+.card-dek { font-size: var(--t-small); color: var(--text-2); margin: var(--s1) 0 0; }
+
+.grid {
+  display: grid;
+  gap: var(--s4);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 600px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+
+/* ================= 상단바 =================
+   앞: 위치 경로(홈까지). 뒤: 검색. 전체 메뉴 버튼은 두지 않는다 —
+   같은 목록을 네 번째로 늘어놓으면 메뉴가 사이트의 사본이 된다. */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  min-height: var(--tap);
+  padding: 0 var(--s3);
+  padding-top: env(safe-area-inset-top);
+  background: var(--bar-bg);
+  backdrop-filter: var(--bar-blur);
+  -webkit-backdrop-filter: var(--bar-blur);
+  border-bottom: 1px solid var(--hairline);
+}
+.topbar button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--tap);
-  padding: var(--s2) var(--s3);
-  border: 1px solid var(--accent);
-  border-radius: var(--r-ctrl);
-  color: var(--accent);
-  font-size: var(--t-foot);
-  font-weight: 700;
-  line-height: 1.3;
-  text-align: center;
-  text-decoration: none;
-}
-.event-button:hover,
-.event-button:focus-visible {
-  background: var(--accent-soft);
-  text-decoration: none;
-}
-.event-button-primary {
-  background: var(--accent);
-  color: var(--accent-ink);
-}
-.event-button-primary:hover,
-.event-button-primary:focus-visible {
-  background: var(--accent);
-  color: var(--accent-ink);
-  filter: brightness(.9);
-}
-
-@media (max-width: 600px) {
-  .event-actions { padding: var(--s2); }
-  .event-button { flex: 1 1 100%; width: 100%; }
-}
-
-/* ---- Phase B 파일럿 — 홈 준비 스트립 · 이동일 체크리스트 · 예약 요약 ---- */
-.plan-strip {
-  display: flex; align-items: center; gap: 12px;
-  margin: 12px 0 4px; padding: 12px 14px;
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px;
-}
-.ps-dday { font-size: 1.15rem; font-weight: 800; color: var(--text); white-space: nowrap; }
-.ps-copy { flex: 1; color: var(--text); min-width: 0; }
-.ps-link {
-  min-height: 44px; display: inline-flex; align-items: center;
-  color: var(--text); text-decoration: underline; text-underline-offset: 3px;
-  font-weight: 700; white-space: nowrap;
-}
-@media (max-width: 480px) {
-  .plan-strip { flex-wrap: wrap; }
-  .ps-copy { flex-basis: 100%; order: 3; }
-}
-.td-steps { list-style: none; margin: 8px 0; padding: 0; }
-.td-steps li {
-  display: flex; gap: 10px; padding: 10px 0;
-  border-bottom: 1px solid var(--separator);
-}
-.td-steps li b { flex: 0 0 6.5em; color: var(--text); }
-.td-steps li span { color: var(--text); min-width: 0; }
-.dq-book dd a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
-
-/* ---- 검수 반영 — 상단바 뒤로가기 · 등급 배지 ---- */
-.tb-back {
-  min-width: 44px; min-height: 44px; flex: 0 0 auto;
-  display: inline-flex; align-items: center; justify-content: center;
-  background: none; border: 0; color: var(--text);
-  font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 0;
-}
-.pl-day b {
-  margin-left: 8px; padding: 2px 8px; border-radius: 6px;
-  background: var(--surface-sunk); border: 1px solid var(--border);
-  color: var(--text); font-size: .85em; white-space: nowrap;
-}
-
-/* ---- Phase B-2 파일럿 — 지역 허브 요약 헤더 ---- */
-.region-verdict {
-  margin: 14px 0 6px; padding: 14px;
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px;
-}
-.region-verdict .rv-def { margin: 0 0 10px; font-weight: 700; color: var(--text); }
-.region-verdict .rv-must > b,
-.region-verdict .rv-skip > b {
-  display: inline-block; margin: 0 6px 6px 0; color: var(--text); font-size: .9em;
-}
-.region-verdict .rv-skip { margin: 10px 0 0; color: var(--text); }
-.region-verdict .rv-more { margin: 10px 0 0; }
-.region-verdict .rv-more a {
-  min-height: 44px; display: inline-flex; align-items: center;
-  color: var(--text); text-decoration: underline; text-underline-offset: 3px;
-  font-weight: 700;
-}
-
-/* ---- 국기 혼합 크롬 (사용자 요청 2026-08-10) — 색은 장식 띠·저알파 틴트로만.
-   글자는 계속 var(--text) 위에서 읽힌다 (명암비 기준 유지). ---- */
-.topbar {
-  background:
-    linear-gradient(90deg, rgba(170,21,27,.07), rgba(241,191,0,.06) 33%,
-      rgba(0,35,149,.06) 67%, rgba(239,65,53,.07)),
-    var(--bar-bg);
-}
-.topbar::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
-  background: linear-gradient(90deg,
-    #AA151B 0 16%, #F1BF00 16% 34%, #AA151B 34% 50%,
-    #002395 50% 66.5%, #FFFFFF 66.5% 83%, #EF4135 83% 100%);
-}
-.bottomnav {
-  background:
-    linear-gradient(90deg, rgba(170,21,27,.07), rgba(241,191,0,.06) 33%,
-      rgba(0,35,149,.06) 67%, rgba(239,65,53,.07)),
-    var(--tabbar-bg);
-}
-.bottomnav::before {
-  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px;
-  background: linear-gradient(90deg,
-    #AA151B 0 16%, #F1BF00 16% 34%, #AA151B 34% 50%,
-    #002395 50% 66.5%, #FFFFFF 66.5% 83%, #EF4135 83% 100%);
-}
-.tb-back {
-  background: var(--surface-sunk);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  min-width: 44px; min-height: 44px;
-}
-.tb-back .ic { width: 22px; height: 22px; }
-
-/* ================= 예약 현황 (rz-) =================
-   22개 열짜리 시트를 가로 스크롤 표로 뿌리면 390px 에서 한 행도 못 읽는다.
-   행을 카드로 세우고 상태를 1축으로 올린다. 색은 상태 신호로만 쓴다 —
-   완료는 steady, 재확인·미조사는 caution, 대기는 rest, 취소는 muted 다.
-
-   배지는 채움이 아니라 테두리다. 신호색을 면으로 깔면 그 위 글자가
-   본문 기준 7:1 을 못 넘긴다 (틴트 7% 에서도 6.9:1). 흰 카드 위에서
-   신호색을 글자색으로 쓰면 라이트 7.6:1 · 다크 8.4:1 로 둘 다 통과한다. */
-
-.rz-sum { margin: var(--s4) 0 var(--s3); }
-.rz-sum-line { margin: 0 0 var(--s2); color: var(--text); }
-.rz-sum-line b { font-weight: 800; }
-.rz-open-n { color: var(--sig-caution-ink); }
-.rz-bar {
-  display: flex;
-  height: 10px;
-  gap: 2px;
-  border-radius: var(--r-chip);
-  overflow: hidden;
-  background: var(--surface-sunk);
-}
-.rz-seg { display: block; min-width: 4px; }
-.rz-seg.rz-b-done   { background: var(--sig-steady); }
-.rz-seg.rz-b-recheck{ background: var(--sig-caution); }
-.rz-seg.rz-b-wait   { background: var(--sig-rest); }
-.rz-seg.rz-b-none   { background: var(--muted); }
-.rz-seg.rz-b-cancel { background: var(--border); }
-.rz-seg.rz-b-blocked { background: var(--sig-critical); }   /* 잠금 BLOCKED */
-
-/* ---- 도구 막대. 상단바 아래에 붙어 따라온다 — 28장을 스크롤해 내려가도
-   상태 필터가 늘 손 닿는 곳에 있다. ---- */
-.rz-tools {
-  position: sticky;
-  top: calc(var(--topbar-h) + env(safe-area-inset-top));
-  z-index: 120;
-  display: grid;
-  gap: var(--s2);
-  margin: 0 calc(-1 * var(--s4)) var(--s3);
-  padding: var(--s3) var(--s4);
-  background: var(--bar-bg);
-  -webkit-backdrop-filter: var(--bar-blur);
-  backdrop-filter: var(--bar-blur);
-  box-shadow: inset 0 -0.5px 0 var(--separator);
-}
-.rz-search {
-  display: flex;
-  align-items: center;
-  gap: var(--s2);
-  min-height: var(--tap);
-  padding: 0 var(--s3);
-  border: 1px solid var(--border);
-  border-radius: var(--r-ctrl);
-  background: var(--surface);
-}
-.rz-search .ic { width: 18px; height: 18px; color: var(--muted); flex: none; }
-.rz-search input {
-  flex: 1;
-  min-width: 0;
-  min-height: calc(var(--tap) - 2px);
-  border: 0;
+  width: var(--tap);
+  height: var(--tap);
+  flex: 0 0 auto;
   background: none;
-  color: var(--text);
-  font: inherit;
-  font-size: var(--t-callout);
-}
-.rz-search input:focus { outline: none; }
-.rz-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
-
-.rz-chips {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  margin: 0 calc(-1 * var(--s4));
-  padding: 2px var(--s4);
-}
-.rz-chips::-webkit-scrollbar { display: none; }
-.rz-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex: none;
-  min-height: var(--tap);
-  padding: 0 var(--s3);
-  border: 1px solid var(--border);
-  border-radius: var(--r-chip);
-  background: var(--surface);
-  color: var(--text);
-  font: inherit;
-  font-size: var(--t-subhead);
-  font-weight: 700;
-  white-space: nowrap;
+  border: 0;
+  border-radius: var(--r-full);
   cursor: pointer;
+  color: var(--primary);
 }
-.rz-chip b {
-  font-size: var(--t-cap1);
-  font-weight: 800;
-  padding: 1px 7px;
-  border-radius: var(--r-chip);
-  background: var(--surface-sunk);
-  color: var(--text-2);
-}
-.rz-chip.is-on {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-}
-.rz-chip.is-on b { background: rgba(255, 255, 255, 0.22); color: var(--accent-ink); }
-.rz-chip-open { border-color: var(--sig-caution); color: var(--sig-caution-ink); }
+.topbar button:hover { background: var(--primary-soft); }
 
-/* 그리드 아이템의 기본 min-width:auto 는 select 의 '가장 긴 옵션' 폭을 그대로
-   최소폭으로 밀어 올린다 — 320px 에서 페이지가 통째로 69px 옆으로 밀렸다.
-   도구 막대 안의 모든 칸은 0 까지 줄어들 수 있어야 한다. */
-.rz-tools > * { min-width: 0; }
-.rz-selects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 6px;
+/* Breadcrumb */
+.crumbs {
+  flex: 1 1 auto;
   min-width: 0;
-}
-.rz-sel { display: grid; gap: 2px; min-width: 0; }
-.rz-sel > span { font-size: var(--t-cap1); color: var(--muted); padding-left: 2px; }
-.rz-sel select {
-  min-height: var(--tap);
-  width: 100%;
-  max-width: 100%;
-  padding: 0 var(--s2);
-  border: 1px solid var(--border);
-  border-radius: var(--r-ctrl);
-  background: var(--surface);
-  color: var(--text);
-  font: inherit;
-  font-size: var(--t-foot);
-  font-weight: 600;
-  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  font-size: var(--t-label);
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
-.rz-count { margin: 0; font-size: var(--t-foot); color: var(--muted); }
-
-/* ---- 카드 ---- */
-.rz-list { display: grid; gap: var(--s3); }
-.rz-card {
-  padding: var(--s3);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--border);
-  border-radius: var(--r-card);
-  background: var(--surface);
-  /* --shadow-1 은 이 파일 어디에도 정의돼 있지 않다 (기존 3곳도 무효값이다).
-     여기서는 값을 직접 쓴다 — 없는 토큰에 기대지 않는다. */
-  box-shadow: 0 1px 2px rgba(15, 26, 30, 0.06);
-  scroll-margin-top: 180px;
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--primary); text-decoration: underline; }
+.crumbs b { color: var(--text); font-weight: 700; }
+.crumbs .sep { color: var(--line-strong); }
+/* 좁은 화면에선 마지막 두 조각만 남긴다 — 경로가 검색 버튼을 밀어내면 안 된다 */
+@media (max-width: 400px) {
+  .crumbs > :not(:nth-last-child(-n+3)) { display: none; }
 }
-.rz-card[hidden] { display: none; }
-.rz-done    { border-left-color: var(--sig-steady); }
-.rz-recheck { border-left-color: var(--sig-caution); }
-.rz-wait    { border-left-color: var(--sig-rest); }
-.rz-none    { border-left-color: var(--muted); }
-/* 취소 건은 바탕을 어둡게 하지 않는다 — sunk 위에서는 muted 글자가 6.5:1 로
-   떨어져 본문 기준(7:1)을 못 넘긴다. 취소 표시는 파선 테두리와 취소선이 맡는다. */
-.rz-cancel  { border-left-color: var(--border); border-style: dashed; }
-.rz-blocked { border-left-color: var(--sig-critical); }   /* 잠금 BLOCKED — 주의 */
-.rz-card.is-target { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 
-.rz-head {
+/* 국가 띠 — 지금 어느 나라인가. Day 7 에 국경을 넘고 그 뒤로 긴급번호·
+   시장 요일·공휴일·언어가 바뀐다. 이동일은 반씩 나뉜다. */
+.country-band { height: 3px; }
+.country-band[data-country="es"] { background: var(--country-es); }
+.country-band[data-country="fr"] { background: var(--country-fr); }
+.country-band[data-country="es-fr"] {
+  background: linear-gradient(to right,
+    var(--country-es) 0 50%, var(--country-fr) 50% 100%);
+}
+
+/* ================= 하단탭 =================
+   L0 전역. 여행 행동 5개. 항상 접근 가능하다. */
+.bottomnav {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: var(--tabbar-bg);
+  backdrop-filter: var(--bar-blur);
+  -webkit-backdrop-filter: var(--bar-blur);
+  border-top: 1px solid var(--hairline);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.bottomnav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 52px;
+  padding: var(--s1) 2px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: var(--t-meta);
+  font-weight: 700;
+  position: relative;
+  transition: color var(--dur-fast) var(--ease);
+}
+.bottomnav a[aria-current="page"] { color: var(--primary); }
+/* 활성 표시는 색만이 아니라 형태로도 준다 */
+.bottomnav a[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1.75rem;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 0 0 var(--r-full) var(--r-full);
+  animation: tab-in var(--dur) var(--ease);
+}
+@keyframes tab-in { from { width: 0; opacity: 0; } to { width: 1.75rem; opacity: 1; } }
+.bottomnav .ic { width: 22px; height: 22px; }
+
+/* 가로 화면에선 탭이 세로 공간을 너무 먹는다 — 한 줄로 눕힌다 */
+@media (orientation: landscape) and (max-height: 480px) {
+  .bottomnav a { flex-direction: row; gap: var(--s2); min-height: 44px; }
+}
+
+/* ================= Tabs (L2 형제 이동) ================= */
+.tabs {
+  position: sticky;
+  top: calc(var(--tap) + env(safe-area-inset-top));
+  z-index: 30;
+  display: flex;
+  gap: var(--s1);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: var(--s2) var(--s3);
+  background: var(--bar-bg);
+  backdrop-filter: var(--bar-blur);
+  -webkit-backdrop-filter: var(--bar-blur);
+  border-bottom: 1px solid var(--hairline);
+  scroll-snap-type: x proximity;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tabs a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 var(--s3);
+  border-radius: var(--r-full);
+  font-size: var(--t-small);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-2);
+  scroll-snap-align: start;
+}
+.tabs a:hover { background: var(--surface-2); }
+.tabs a[aria-current="page"] { background: var(--accent); color: #FFFFFF; }
+
+/* ================= FilterChip ================= */
+.chips { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  min-height: 34px;
+  padding: 0 var(--s3);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-full);
+  background: var(--surface);
+  font-size: var(--t-label);
+  font-weight: 700;
+  color: var(--text-2);
+  text-decoration: none;
+  cursor: pointer;
+}
+.chip[aria-pressed="true"], .chip[aria-current="page"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+}
+
+/* ================= QuickAction ================= */
+.quick {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s2);
+}
+.quick a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s1);
+  min-height: 76px;
+  padding: var(--s2);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  color: var(--text-2);
+  font-size: var(--t-meta);
+  font-weight: 700;
+  text-align: center;
+}
+.quick a:hover { border-color: var(--primary); color: var(--primary); }
+.quick .ic { width: 24px; height: 24px; color: var(--primary); }
+
+/* ================= Timeline (Day 실행) =================
+   하루의 뼈대. 시각이 왼쪽 고정폭에 서고 점선이 이어진다. */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.tl-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.75rem 1fr;
+  gap: var(--s3);
+  padding-bottom: var(--s4);
+}
+.tl-item::before {   /* 세로 연결선 */
+  content: "";
+  position: absolute;
+  left: 3.75rem;
+  top: 1.5rem;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--line);
+}
+.tl-item:last-child::before { display: none; }
+.tl-time {
+  font-size: var(--t-small);
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  padding-top: 1px;
+}
+.tl-body {
+  position: relative;
+  padding-left: var(--s4);
+}
+.tl-body::before {   /* 점 */
+  content: "";
+  position: absolute;
+  left: -0.32rem;
+  top: 0.45rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2.5px solid var(--line-strong);
+}
+.tl-item-now .tl-body::before {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.tl-name { font-weight: 700; color: var(--text); }
+.tl-name a { color: inherit; text-decoration: none; }
+.tl-name a:hover { text-decoration: underline; }
+.tl-note { font-size: var(--t-small); color: var(--muted); margin: var(--s1) 0 0; }
+
+/* RouteStep — 구간 이동. 시각 자리를 비우고 이동수단만 표시한다. */
+.tl-leg {
+  display: grid;
+  grid-template-columns: 3.75rem 1fr;
+  gap: var(--s3);
+  padding-bottom: var(--s4);
+  font-size: var(--t-label);
+  color: var(--muted);
+}
+.tl-leg .tl-body { padding-left: var(--s4); }
+.tl-leg .tl-body::before { display: none; }
+.tl-leg-line {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+/* ================= PlaceCard =================
+   장소 카드. 썸네일 + 이름 + 한 줄 설명 + 메타. 목록에서 이 형태 하나만 쓴다. */
+.place-card {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: var(--s3);
+  align-items: start;
+  padding: var(--s3);
+}
+.place-card .thumb {
+  width: 84px;
+  aspect-ratio: var(--ratio-thumb);
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  background: var(--surface-2);
+}
+.place-card .card-title { font-size: var(--t-body); }
+.place-card .card-dek {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 큰 변형 — Don't Miss 처럼 강조하는 자리 */
+.place-card-lg { display: block; padding: 0; }
+.place-card-lg .thumb {
+  width: 100%;
+  aspect-ratio: var(--ratio-card);
+  border-radius: 0;
+}
+.place-card-lg .card-body { padding: var(--s4); }
+
+/* ================= DayCard ================= */
+.day-card { display: block; }
+.day-card .card-body { display: grid; gap: var(--s2); }
+.day-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s2);
+}
+.day-num {
+  font-size: var(--t-label);
+  font-weight: 700;
+  letter-spacing: var(--ls-label);
+  color: var(--accent);
+}
+.day-date { font-size: var(--t-label); color: var(--muted); font-variant-numeric: tabular-nums; }
+.day-route { font-size: var(--t-h3); font-weight: 700; color: var(--text); }
+
+/* ================= ActionCard =================
+   지금 해야 할 것. 화면에서 가장 눈에 띄어야 하므로 액센트 면을 쓴다. */
+.action-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+  box-shadow: var(--sh-1);
+}
+.action-card .label { color: var(--accent); }
+.action-when {
+  font-size: var(--t-h1);
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  margin: var(--s2) 0 var(--s1);
+}
+.action-what { font-size: var(--t-h3); font-weight: 700; }
+
+/* ================= AlertCard ================= */
+.alert-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s3);
+  padding: var(--s4);
+  border-radius: var(--r-md);
+  border: 1px solid;
+  font-size: var(--t-small);
+}
+.alert-card .ic { width: 20px; height: 20px; margin-top: 2px; }
+.alert-alert   { background: var(--terracotta-soft); border-color: #E8C8BB; color: var(--sig-alert-ink); }
+.alert-caution { background: var(--ochre-soft);      border-color: #E4D3AC; color: var(--sig-caution-ink); }
+.alert-ok      { background: #E4F0EA;                border-color: #BFDCCC; color: var(--sig-ok-ink); }
+.alert-card strong { color: inherit; }
+.alert-card a { color: inherit; text-decoration: underline; }
+
+/* ================= BookingCard ================= */
+.booking-card { padding: var(--s4); display: grid; gap: var(--s2); }
+.booking-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: var(--s2);
 }
-.rz-day {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: var(--tap);
-  padding: 0 var(--s2) 0 var(--s3);
-  border-radius: var(--r-chip);
-  background: var(--surface-sunk);
-  color: var(--text);
-  text-decoration: none;
-  font-size: var(--t-foot);
-}
-.rz-day b { font-size: var(--t-callout); font-weight: 800; }
-.rz-day span { color: var(--text-2); }
-.rz-day .lr-go { color: var(--accent); font-weight: 800; }
-a.rz-day:hover { background: var(--accent-soft); }
-.rz-day-flat { background: none; padding-left: 0; }
-
-.rz-tags { display: inline-flex; gap: 6px; flex-wrap: wrap; }
-.rz-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 10px;
-  border: 1.5px solid currentColor;
-  border-radius: var(--r-chip);
-  font-size: var(--t-cap1);
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
-}
-.rz-p0 { color: var(--sig-critical-ink); }
-.rz-p1 { color: var(--text-2); }
-.rz-p2 { color: var(--muted); border-style: dashed; }
-.rz-b-done    { color: var(--sig-steady); }
-.rz-b-recheck { color: var(--sig-caution-ink); border-style: dashed; }
-.rz-b-wait    { color: var(--sig-rest); }
-.rz-b-none    { color: var(--muted); border-style: dashed; }
-.rz-b-cancel  { color: var(--muted); text-decoration: line-through; }
-.rz-b-blocked { color: var(--sig-critical-ink); }
-
-.rz-title {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--s2);
-  margin: var(--s3) 0 2px;
-  font-size: var(--t-title3);
-  line-height: 1.35;
-}
-.rz-title .ic { width: 22px; height: 22px; flex: none; margin-top: 2px; color: var(--text-2); }
-.rz-cancel .rz-title span { text-decoration: line-through; color: var(--text-2); }
-.rz-where { margin: 0 0 var(--s3); font-size: var(--t-foot); color: var(--muted); }
-
-.rz-facts { margin: 0; display: grid; gap: 1px; }
-.rz-row {
+.booking-name { font-weight: 700; }
+.booking-card dl {
   display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  gap: var(--s2);
-  padding: 7px 0;
-  box-shadow: inset 0 0.5px 0 var(--separator);
+  grid-template-columns: auto 1fr;
+  gap: var(--s1) var(--s3);
+  margin: 0;
+  font-size: var(--t-small);
 }
-.rz-row dt { color: var(--muted); font-size: var(--t-foot); }
-.rz-row dd { margin: 0; font-size: var(--t-subhead); overflow-wrap: anywhere; }
-.rz-goal b {
-  margin-left: 6px;
-  padding: 1px 8px;
-  border-radius: var(--r-chip);
-  border: 1px solid currentColor;
-  font-size: var(--t-cap1);
-  color: var(--text-2);
-}
-.rz-goal.is-late { color: var(--sig-critical-ink); font-weight: 700; }
-.rz-goal.is-late b { color: var(--sig-critical-ink); }
+.booking-card dt { color: var(--muted); }
+.booking-card dd { margin: 0; color: var(--text-2); }
 
-.rz-more { margin-top: var(--s2); }
-.rz-more > summary {
+/* ================= StayCard ================= */
+.stay-card { padding: 0; }
+.stay-card .thumb { width: 100%; aspect-ratio: var(--ratio-card); object-fit: cover; }
+.stay-card .card-body { display: grid; gap: var(--s2); }
+.stay-dates {
+  display: flex;
+  gap: var(--s5);
+  font-size: var(--t-small);
+  font-variant-numeric: tabular-nums;
+}
+.stay-dates div { display: grid; gap: 2px; }
+.stay-dates .label { font-size: var(--t-meta); }
+
+/* ================= FoodCard ================= */
+.food-card { padding: var(--s4); display: grid; gap: var(--s2); }
+.food-dish { font-weight: 700; color: var(--text); }
+.food-why { font-size: var(--t-small); color: var(--text-2); }
+
+/* ================= MapCard ================= */
+.map-card {
+  position: relative;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.map-card .map-canvas { width: 100%; aspect-ratio: 16 / 10; }
+.map-card-foot {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: var(--s2);
+  padding: var(--s3) var(--s4);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  font-size: var(--t-small);
+}
+
+/* map / list 전환 */
+.map-toggle { display: inline-flex; border: 1px solid var(--line-strong); border-radius: var(--r-full); overflow: hidden; }
+.map-toggle button {
+  min-height: 36px;
+  padding: 0 var(--s4);
+  border: 0;
+  background: var(--surface);
+  font-size: var(--t-label);
+  font-weight: 700;
+  color: var(--text-2);
+  cursor: pointer;
+}
+.map-toggle button[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); }
+
+/* ================= Accordion ================= */
+.acc {
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  overflow: hidden;
+}
+.acc + .acc { margin-top: var(--s2); }
+.acc > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
   min-height: var(--tap);
-  color: var(--accent);
-  font-size: var(--t-foot);
+  padding: var(--s3) var(--s4);
   font-weight: 700;
   cursor: pointer;
   list-style: none;
 }
-.rz-more > summary::-webkit-details-marker { display: none; }
-/* 셰브런은 글리프가 아니라 테두리 두 변으로 그린다. ▾▴ 는 번들 나눔고딕의
-   unicode-range 밖이라 폴백 폰트에 기대게 되고, 커버리지가 없는 기기에서
-   두부(□)가 뜬다 — 현장에서 그건 못 쓰는 화면이다. */
-.rz-more > summary::after {
+.acc > summary::-webkit-details-marker { display: none; }
+.acc > summary::after {
   content: "";
-  width: 7px;
-  height: 7px;
-  margin: -3px 0 0 8px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
+  flex: 0 0 auto;
+  width: 10px; height: 10px;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
   transform: rotate(45deg);
+  transition: transform var(--dur) var(--ease);
 }
-.rz-more[open] > summary::after { margin-top: 2px; transform: rotate(-135deg); }
-.rz-src {
-  display: inline-flex;
+.acc[open] > summary::after { transform: rotate(-135deg); }
+.acc > summary:hover { background: var(--surface-2); }
+.acc-body { padding: 0 var(--s4) var(--s4); }
+/* 부드러운 펼침 — 지원 브라우저에서만 */
+@supports (interpolate-size: allow-keywords) {
+  .acc::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition: block-size var(--dur) var(--ease), content-visibility var(--dur) allow-discrete;
+  }
+  .acc[open]::details-content { block-size: auto; }
+}
+
+/* ================= SearchResult ================= */
+.search-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: var(--canvas);
+  padding: env(safe-area-inset-top) var(--s4) var(--s4);
+  overflow-y: auto;
+}
+.search-sheet[hidden] { display: none; }
+.search-bar {
+  display: flex;
+  gap: var(--s2);
   align-items: center;
-  gap: 6px;
-  min-height: var(--tap);
-  color: var(--accent);
-  font-weight: 700;
+  padding: var(--s3) 0;
+  position: sticky;
+  top: 0;
+  background: var(--canvas);
 }
-.rz-src .ic { width: 16px; height: 16px; }
-
-.rz-empty {
-  padding: var(--s6) var(--s4);
-  border: 1px dashed var(--border);
-  border-radius: var(--r-card);
-  text-align: center;
-  color: var(--text-2);
-}
-.rz-reset {
-  display: inline-flex;
-  align-items: center;
+.search-bar input {
+  flex: 1;
   min-height: var(--tap);
-  margin-left: var(--s2);
-  padding: 0 var(--s4);
-  border: 1px solid var(--accent);
-  border-radius: var(--r-ctrl);
+  padding: 0 var(--s3);
+  font-size: var(--t-body);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-md);
   background: var(--surface);
-  color: var(--accent);
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-@media (max-width: 360px) {
-  .rz-row { grid-template-columns: 1fr; gap: 0; }
-  .rz-row dt { font-size: var(--t-cap1); }
-}
-
-
-/* ================= 진행 대시보드 (kpi·pg) =================
-   수치 타일은 Reservations 실집계다 — 빈 셀·죽은 스냅샷을 표로 뿌리지 않는다
-   (HIG 진단 2-3). P0 행동 카드는 rz-card 재사용. */
-.kpis {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--s3);
-  margin: var(--s3) 0 var(--s5);
-}
-.kpi {
-  display: grid;
-  gap: 2px;
-  min-height: var(--tap);
-  padding: var(--s4);
-  border: 1px solid var(--border);
-  border-radius: var(--r-card);
-  background: var(--surface);
-  text-decoration: none;
   color: var(--text);
 }
-.kpi:hover { border-color: var(--accent); }
-.kpi b { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
-.kpi b small { font-size: 0.9rem; font-weight: 700; color: var(--muted); margin-left: 2px; }
-.kpi .kl { font-weight: 700; font-size: var(--t-foot); }
-.kpi .ks { font-size: var(--t-cap1); color: var(--muted); }
-.kpi-undone b { color: var(--sig-caution-ink); }
-.kpi-done b { color: var(--sig-steady); }
+.search-result {
+  display: block;
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+.search-result .sr-title { font-weight: 700; color: var(--text); }
+.search-result .sr-path { font-size: var(--t-label); color: var(--muted); }
 
-.pg {
-  display: grid;
-  grid-template-columns: 9.5em 1fr 3.2em;
-  gap: var(--s3);
-  align-items: center;
-  min-height: 32px;
+/* ================= 표 =================
+   좁은 화면에서 표는 가로로 넘친다. 감싸서 그 안에서만 스크롤시킨다 —
+   본문(body)이 가로로 흐르면 안 된다. */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: var(--s4); }
+table { border-collapse: collapse; width: 100%; font-size: var(--t-small); }
+th, td { padding: var(--s2) var(--s3); text-align: left; border-bottom: 1px solid var(--line); }
+th { background: var(--surface-2); font-size: var(--t-label); letter-spacing: 0.02em; color: var(--text); }
+td { color: var(--text-2); }
+
+/* ================= 푸터 ================= */
+footer {
+  margin-top: var(--s8);
+  padding: var(--s5) var(--s4);
+  border-top: 1px solid var(--line);
+  font-size: var(--t-label);
+  color: var(--muted);
+  text-align: center;
 }
-.pgl { font-size: var(--t-subhead); font-weight: 600; }
-.pgbar {
-  height: 9px;
-  border-radius: var(--r-chip);
-  background: var(--surface-sunk);
+footer p { margin: 0 0 var(--s1); }
+
+/* ================= 유틸 ================= */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
   overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
-.pgbar i { display: block; height: 100%; background: var(--accent); border-radius: var(--r-chip); }
-.pg b { font-size: var(--t-foot); text-align: right; font-variant-numeric: tabular-nums; }
-@media (max-width: 360px) { .pg { grid-template-columns: 7.5em 1fr 3.2em; } }
+.scroll-x {
+  display: flex;
+  gap: var(--s3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--s2);
+  scrollbar-width: none;
+}
+.scroll-x::-webkit-scrollbar { display: none; }
+.scroll-x > * { flex: 0 0 78%; scroll-snap-align: start; }
+@media (min-width: 600px) { .scroll-x > * { flex-basis: 42%; } }
+@media (min-width: 900px) { .scroll-x > * { flex-basis: 30%; } }
+
+/* ================= 터치 타깃 보정 =================
+   실측(build/viewport_check.py)으로 44pt 를 못 채우던 것들. 장갑 낀 손과
+   흔들리는 기차 안에서도 눌려야 한다. 눈에 보이는 크기는 그대로 두고
+   눌리는 면적만 키운다. */
+
+/* 섹션 헤더의 '전체' 같은 보조 링크 */
+.sec-head a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding-inline: var(--s2);
+  margin-inline-end: calc(var(--s2) * -1);
+}
+
+/* L2 탭 · 칩 · 지도 전환 — 전부 44 로 올린다 */
+.tabs a,
+.chip,
+.map-toggle button { min-height: var(--tap); }
+
+/* 타임라인의 장소 링크. 하루 화면에서 장소로 넘어가는 주 경로다. */
+.tl-name a {
+  display: inline-block;
+  padding-block: 0.6rem;
+  margin-block: -0.6rem;
+}
+
+/* 지도의 목록 대체 — 타일이 없을 때 이게 유일한 조작 대상이다 */
+.map-list { margin: 0; padding: var(--s2) var(--s4) var(--s4); }
+.map-list li { margin: 0; }
+.map-list a {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+}
+
+/* NEXT 카드의 장소 링크 — 하루 화면에서 가장 먼저 눌리는 자리다 */
+.action-what a {
+  display: inline-block;
+  padding-block: 0.7rem;
+  margin-block: -0.7rem;
+}
+
+/* ================= 데스크톱 — 같은 mental model, 다른 자리 =================
+   탭 5개는 그대로다. 다만 마우스는 화면 아래 끝까지 내려가지 않는다 —
+   데스크톱에서는 위로 올린다. 순서·라벨·아이콘은 건드리지 않는다. */
+@media (min-width: 768px) {
+  body { padding-bottom: var(--s7); padding-top: 56px; }
+
+  .bottomnav {
+    top: 0;
+    bottom: auto;
+    grid-template-columns: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--s2);
+    height: 56px;
+    padding: 0 var(--s4);
+    border-top: 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .bottomnav a {
+    flex-direction: row;
+    gap: var(--s2);
+    min-height: var(--tap);   /* 데스크톱이라고 44 를 깎지 않는다 — 터치 노트북이 있다 */
+    align-self: center;
+    padding: 0 var(--s4);
+    border-radius: var(--r-full);
+    font-size: var(--t-small);
+  }
+  .bottomnav a:hover { background: var(--primary-soft); color: var(--primary); }
+  .bottomnav a[aria-current="page"] { background: var(--primary-soft); }
+  .bottomnav a[aria-current="page"]::before { display: none; }
+
+  /* 상단바와 탭 스트립은 전역 내비 아래로 내려간다 */
+  .topbar { top: 56px; }
+  .tabs { top: calc(56px + var(--tap)); }
+
+  /* 여정 — 데스크톱에선 스크롤이 아니라 격자로 편다 */
+  .scroll-x {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+  }
+  .scroll-x > * { flex-basis: auto; }
+}
+
+@media (min-width: 1100px) {
+  .scroll-x { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* 이동수단이 아직 안 정해진 구간. 확정된 구간과 같아 보이면 현장에서
+   "정해져 있는 줄" 알고 움직이게 된다. */
+.tl-leg-open .tl-leg-line {
+  color: var(--sig-caution-ink);
+  font-weight: 700;
+}
+.tl-leg-open .tl-body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: var(--s3);
+  border-top: 2px dashed var(--sig-caution);
+}
+
+/* 오프라인 준비 패널 — pwa.js 가 채운다 */
+.pwa-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s2) var(--s4);
+  margin: 0;
+  font-size: var(--t-small);
+}
+.pwa-facts dt { color: var(--muted); }
+.pwa-facts dd { margin: 0; color: var(--text); font-weight: 700; }
+#pwa-panel.is-busy { opacity: 0.7; }
+#pwa-panel[data-state="error"] { border-color: var(--sig-alert); }
+
+.pwa-progress {
+  width: 100%;
+  height: 8px;
+  border: 0;
+  border-radius: var(--r-full);
+  background: var(--surface-2);
+  accent-color: var(--primary);
+}
+.pwa-progress::-webkit-progress-bar {
+  background: var(--surface-2);
+  border-radius: var(--r-full);
+}
+.pwa-progress::-webkit-progress-value {
+  background: var(--primary);
+  border-radius: var(--r-full);
+}

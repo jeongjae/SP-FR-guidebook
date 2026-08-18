@@ -16,10 +16,10 @@ status: "chapter-derived master itinerary; booking values pending"
 | 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카 07:00 인수 (확정 L671E2E0288), Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | Sitges 점심·Airbnb 체크인 |
 | 5 | 9/2 수 | Bàscara | Collioure와 Cadaqués | Bàscara→Collioure→Cadaqués→Bàscara (해안 쪽 우회) | Portlligat·Dalí House는 예약 미확인으로 제외 | 4 | 주차·국경운전·지도 재확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu와 귀로 마을 | Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara | 지연·악천후 시 Pals 삭제, GI-682 회피 | 4 | 주차·해안도로·운전피로 |
-| 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN T1 렌터카 반납 **12:30 으로 변경 요청** (예약서 14:00), **VY1521 15:30→NCE 16:55** (확정 NMGI4Q), Palais ALZIRA 체크인 | 도착 후 저녁은 도착 시각 기준 조정 | 4~5 | 없음 — 항공·숙소 확정 |
+| 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN T1 렌터카 반납 **12:30 으로 변경 요청** (예약서 14:00), **VY1521 15:30→NCE 16:55** (확정 NMGI4Q), 트램 2호선 이동 후 Palais ALZIRA 체크인 (18:00~19:00) | 도착 후 숙소 주변 산책 및 가벼운 저녁 | 4~5 | 없음 — 항공·숙소 확정 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
-| 10 | 9/7 월 | Nice | Monaco 도시국가 | Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo | Japanese Garden 또는 Larvotto 택1 | 4 | TER |
+| 10 | 9/7 월 | Nice | Monaco + Menton 당일치기 | Nice→Monaco(오전·점심)→Menton(오후·저녁)→Nice: Le Rocher, Port Hercule, Monte-Carlo, Menton Old Town·해변 | 피로 시 Menton 저녁 생략 또는 Monaco 조기 복귀 | 4 | 전 구간 TER |
 | 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, 사진미술관 선택, 세탁·Promenade | 사진미술관·추가마을 삭제 가능 | 2 | 사진미술관·렌터카 준비 |
 | 12 | **9/9 수** | **Aix-en-Provence** | NCE 렌터카와 Provence 진입 | Nice역 렌터카 09:00 인수 (확정 L672E080313), Saint-Paul, Grasse, Aix 체크인 | 지연 시 Grasse 우선 삭제 | 5 | Aix 숙소 |
 | 13 | **9/10 목** | Aix-en-Provence | Aix 구시가지와 Granet | 목요시장, Cours Mirabeau, Musée Granet, Mazarin | 성당·카페 | 3 | Granet·식당 |

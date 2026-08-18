@@ -3,13 +3,13 @@
   "day": 10,
   "date": "2026-09-07",
   "city": "Nice",
-  "title": "Monaco 도시국가",
-  "sourceStatus": "candidate-latest-needs-review",
+  "title": "Monaco + Menton 당일치기",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:30",
-  "endTime": null,
+  "endTime": "22:00",
   "totalDuration": null,
-  "totalDistance": "TER 왕복 + 도보 약 3km",
+  "totalDistance": "전 구간 TER + 도보 약 4~5km",
   "fatigue": "4",
   "hotel": {
     "name": "Palais ALZIRA · 12 Rue Verdi",
@@ -22,84 +22,98 @@
       "id": "nice-ville",
       "order": 1,
       "start": "08:30",
-      "end": null,
+      "end": "09:30",
       "name": "Nice-Ville역 출발",
       "category": "transport",
       "lat": 43.70499,
       "lng": 7.26199,
-      "summary": "TER 20분 여유 — 역·언덕 이동 30분 완충",
+      "summary": "08:30 숙소 출발 → 09:00 전후 Nice-Ville에서 Monaco행 TER 탑승 (약 20~25분)",
       "menu": null,
-      "reservation": "TER 시각표 재확인",
+      "reservation": "당일 SNCF Connect에서 TER 시각 확인",
       "optional": false
     },
     {
       "id": "le-rocher",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "Le Rocher·대공궁 광장",
+      "start": "09:30",
+      "end": "11:30",
+      "name": "Le Rocher / Monaco-Ville",
       "category": "sight",
       "lat": 43.7310478,
       "lng": 7.4209436,
-      "summary": "위병 교대는 정오 직전 — 정확한 시각을 출발 전 확인",
-      "menu": null,
-      "reservation": "위병 교대 시각 재확인",
-      "optional": false
-    },
-    {
-      "id": "cathedrale-monaco",
-      "order": 3,
-      "start": null,
-      "end": null,
-      "name": "모나코 대성당",
-      "category": "sight",
-      "lat": 43.730247,
-      "lng": 7.4226535,
-      "summary": "Le Rocher 구시가지와 함께 본다",
+      "summary": "대공궁 언덕, 구시가지 골목, 모나코 대성당 및 바다 전망",
       "menu": null,
       "reservation": null,
       "optional": false
     },
     {
       "id": "port-hercule",
-      "order": 4,
-      "start": null,
-      "end": null,
+      "order": 3,
+      "start": "11:30",
+      "end": "12:00",
       "name": "Port Hercule",
       "category": "sight",
       "lat": 43.737092,
       "lng": 7.42115,
-      "summary": "언덕에서 항구로 내려오는 경사 주의",
+      "summary": "언덕에서 항구로 내려와 요트 선착장 및 F1 서킷 산책",
       "menu": null,
       "reservation": null,
       "optional": false
     },
     {
       "id": "monte-carlo",
-      "order": 5,
-      "start": null,
-      "end": null,
-      "name": "Monte Carlo",
+      "order": 4,
+      "start": "12:00",
+      "end": "14:00",
+      "name": "Monte-Carlo & 점심",
       "category": "sight",
       "lat": 43.7391605,
       "lng": 7.428023,
-      "summary": "카지노 광장 외관 중심 — 상세는 원고 보완 필요 상태",
-      "menu": null,
+      "summary": "Casino de Monte-Carlo 외관 및 Place du Casino 감상. 점심: Café de Paris Monte-Carlo (대안: Marché de la Condamine, Eqvita, Maya Bay)",
+      "menu": "점심: Café de Paris Monte-Carlo (대안: Marché de la Condamine)",
       "reservation": null,
-      "optional": true
+      "optional": false
+    },
+    {
+      "id": "menton-old-town",
+      "order": 5,
+      "start": "14:30",
+      "end": "18:30",
+      "name": "Menton 구시가지 & 해변 산책",
+      "category": "sight",
+      "lat": 43.7749,
+      "lng": 7.5065,
+      "summary": "Monaco → Menton TER(약 11분) 이동. Vieille Ville, Basilique Saint-Michel-Archange 일대, 구시가지 전망 포인트, 파스텔 골목 감상, 해변 산책 및 젤라또/카페 휴식",
+      "menu": "젤라또 또는 카페 휴식",
+      "reservation": null,
+      "optional": false
+    },
+    {
+      "id": "menton-dinner",
+      "order": 6,
+      "start": "19:00",
+      "end": "20:30",
+      "name": "Menton 저녁 — Le Petit Port",
+      "category": "food",
+      "lat": 43.7758,
+      "lng": 7.5098,
+      "summary": "항구 근처 해산물·생선 요리 저녁 식사 (대안: Le Bistrot du Port, La Belle Étoile / Special: Mirazur 사전예약 선택지)",
+      "menu": "해산물·생선 요리 (Le Petit Port)",
+      "reservation": "필요 시 현장 또는 사전 확인",
+      "optional": false
     },
     {
       "id": "nice-return",
-      "order": 6,
-      "start": null,
-      "end": null,
-      "name": "Nice 귀환",
+      "order": 7,
+      "start": "20:30",
+      "end": "22:00",
+      "name": "Menton → Nice 귀환",
       "category": "hotel",
       "lat": 43.6996749,
       "lng": 7.2608829,
-      "summary": "월요일 운영 변수 — 무리하지 않는다",
+      "summary": "Menton → Nice TER 탑승 (약 40~45분). 목표 21:00~22:00 Nice 숙소 도착. TER 시각은 당일 SNCF Connect에서 확인",
       "menu": null,
-      "reservation": null,
+      "reservation": "당일 SNCF Connect에서 TER 시각 확인",
       "optional": false
     }
   ],
@@ -108,25 +122,16 @@
       "from": "nice-ville",
       "to": "le-rocher",
       "mode": "train",
-      "duration": null,
+      "duration": "약 20~25분",
       "distance": null,
-      "line": "TER Nice→Monaco 후 도보·언덕",
+      "line": "TER Nice → Monaco",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "le-rocher",
-      "to": "cathedrale-monaco",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cathedrale-monaco",
       "to": "port-hercule",
       "mode": "walk",
-      "duration": "15분 (내리막)",
+      "duration": "15분",
       "distance": "0.8km",
       "line": null,
       "geometryStatus": "coordinate-line"
@@ -135,53 +140,70 @@
       "from": "port-hercule",
       "to": "monte-carlo",
       "mode": "walk",
-      "duration": "15분 (오르막)",
+      "duration": "15분",
       "distance": "0.6km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "monte-carlo",
+      "to": "menton-old-town",
+      "mode": "train",
+      "duration": "약 11분",
+      "distance": null,
+      "line": "TER Monaco → Menton",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "menton-old-town",
+      "to": "menton-dinner",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "menton-dinner",
       "to": "nice-return",
       "mode": "train",
-      "duration": null,
+      "duration": "약 40~45분",
       "distance": null,
-      "line": "TER Monaco→Nice",
+      "line": "TER Menton → Nice",
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "TER 왕복",
-    "모나코 시내 도보·경사"
+    "전 구간 TER (Nice → Monaco → Menton → Nice)",
+    "각 도시 내 도보 및 해변 산책"
   ],
   "food": [
-    "Monaco-Ville 또는 Port 인근"
+    "점심: Monaco (Café de Paris Monte-Carlo 등)",
+    "저녁: Menton (Le Petit Port 등)"
   ],
   "highlights": [
-    "셍겐이지만 별도 국가",
-    "위병 교대 정오 직전",
-    "Japanese Garden/Larvotto 택1"
+    "Le Rocher",
+    "Monte-Carlo",
+    "Menton Old Town",
+    "Menton seaside evening"
   ],
-  "backup": "월요일 운영·혼잡 시 구시가지·대성당 중심",
+  "backup": "1. Monaco 관광을 축소하고 Menton으로 일찍 이동\n2. Menton 저녁을 생략하고 Nice에서 저녁\n3. 가장 피로하면 Menton을 생략하고 Monaco → Nice 복귀",
   "map": {
-    "zoom": 12,
+    "zoom": 11,
     "center": [
-      43.717,
-      7.345
+      43.74,
+      7.42
     ],
     "routeCache": null
   },
   "needsReview": [
-    "니스 챕터 헤딩(Day 11 모나코)과 정본 일정표(Day 10 모나코) 번호 불일치 — 정본 기준 적용",
-    "위병 교대 시각·TER 시각표 확정",
-    "몬테카를로·항구·해양박물관 상세 원고 보완 필요",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00"
+    "당일 SNCF Connect에서 Nice↔Monaco↔Menton TER 시각 확인",
+    "Menton 저녁식사(Le Petit Port) 영업 및 좌석 확인",
+    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-10",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-10",
-    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-11-모나코",
-    "OSM Nominatim 지오코딩 2026-08-06: 대공궁 광장·대성당·Port Hercule·카지노·모나코역",
-    "43b1ce441fbcf54496703165024c305295f396cc:source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md"
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-4-9월7일월요일"
   ]
 }

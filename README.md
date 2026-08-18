@@ -20,7 +20,9 @@ Barcelona 3박 → Bàscara 3박 → Nice 5박 → Aix 4박
 | `source/OPERATIONS/` | 운영 레지스터·`TP_Europe_Travel_Master_Tracker_v1.2.xlsx` |
 | `source/ARCHIVE/` | 폐기 원고 — 여행 판단에 사용 금지 |
 | `data/` | 감사 산출물·미디어 카탈로그·데일리 카드 데이터 |
-| `build/build.py` | MD·JSON·xlsx → 정적 HTML 빌드 (가드 포함) |
+| `build/model.py` | 정본 계층 — Trip · Region · Day · Place |
+| `build/render.py` | 페이지 렌더러 — 모델만 읽는다 |
+| `build/site.py` | 빌드 드라이버 (가드 포함) |
 | `serve.sh` / `serve.bat` | 로컬 서버 실행 스크립트 |
 
 사이트에는 지역 챕터 8편, 데일리 페이지 43일, 장소 페이지, 지역 실행지도 8종
@@ -79,7 +81,7 @@ Google Maps 링크와 OpenStreetMap 배경 타일은 저장 대상이 아니며 
 
 ```bash
 pip install markdown openpyxl   # 최초 1회
-python3 build/build.py
+python3 build/site.py
 python3 build/pwa_check.py
 ```
 
@@ -100,7 +102,7 @@ Day 1–3(2026-08-29~31)은 기존 Barcelona 실행지도와 일정 원고를 �
 | `source/ASSETS/76_Daily_Execution_Maps/daily-maps.json` | 날짜별 `DailyMapData` 정본 |
 | `build/assets/daily-map.js` | 지도·핀·팝업·목록·Google Maps 링크 공통 UI |
 | `build/assets/style.css` | 모바일 우선 지도·목록·터치 상태 스타일 |
-| `build/build.py` | 데이터 검증, 정적 페이지 삽입, 브라우저용 데이터 생성 |
+| `build/site.py` | 데이터 검증, 페이지 생성, 오프라인 패키지 |
 
 `DailyMapData`는 `date`, `city`, `title`, `center`, `zoom`, `places[]`,
 `routes[]`를 가진다. `Place`는 `id`, `type`, `name`, `lat`, `lng`, `order`,
@@ -114,7 +116,7 @@ Day 1–3(2026-08-29~31)은 기존 Barcelona 실행지도와 일정 원고를 �
 2. `daily-maps.json`의 `days`에 날짜 객체를 하나 추가한다.
 3. 장소 `id`는 날짜 안에서 고유하게, `order`는 당일 실행 순서로 둔다.
 4. `routes`의 `from`과 `to`에는 같은 날짜의 장소 `id`만 사용한다.
-5. `python build/build.py`를 실행한다. 빌드는
+5. `python3 build/site.py`를 실행한다. 빌드는
    날짜·필수 필드·좌표 범위·장소 유형·경로 참조·개인정보 규칙을 검사한다.
 
 ### Google Maps URL 규칙

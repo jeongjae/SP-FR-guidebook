@@ -6,6 +6,7 @@ import html
 import json
 import re
 import shutil
+import time
 from pathlib import Path
 
 
@@ -238,7 +239,15 @@ def copy_photo_assets(root: Path, site: Path, manifest: dict) -> None:
                 source = root / variant["path"]
                 target = site / variant["sitePath"]
                 target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copy2(source, target)
+                for _ in range(5):
+                    try:
+                        shutil.copy2(source, target)
+                        break
+                    except OSError:
+                        time.sleep(0.05)
+                        target.parent.mkdir(parents=True, exist_ok=True)
+                else:
+                    shutil.copy2(source, target)
 
 
 def photo_attribution_rows(manifest: dict, rel: str = "..") -> str:

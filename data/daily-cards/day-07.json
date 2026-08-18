@@ -63,15 +63,15 @@
     {
       "id": "nice-checkin",
       "order": 4,
-      "start": null,
-      "end": null,
+      "start": "18:00",
+      "end": "19:00",
       "name": "Nice 체크인 — Palais ALZIRA",
       "category": "hotel",
       "lat": 43.6996749,
       "lng": 7.2608829,
-      "summary": "16:55 NCE 도착 → 택시/트램. 체크인 15:00부터 가능 — 체크인만 (P0 이동일)",
+      "summary": "16:55 NCE 도착 → 트램 2호선 이동 → 숙소 체크인(18:00~19:00) 및 짐 정리/휴식",
       "menu": null,
-      "reservation": "예약완료 Airbnb HMJ3HX8QAY — 12 Rue Verdi, Palais ALZIRA (체크인 15:00)",
+      "reservation": "예약완료 Airbnb HMJ3HX8QAY — 12 Rue Verdi, Palais ALZIRA (체크인 18:00~19:00)",
       "optional": false
     },
     {
@@ -79,11 +79,11 @@
       "order": 5,
       "start": null,
       "end": null,
-      "name": "Promenade des Anglais 적응 산책",
+      "name": "숙소 주변 산책 및 가벼운 저녁",
       "category": "sight",
       "lat": 43.695,
       "lng": 7.257,
-      "summary": "시차·이동 피로에는 평지 직선 산책 — 자갈 해변이다",
+      "summary": "숙소 주변 산책과 가벼운 저녁으로 여유 있게 마무리",
       "menu": null,
       "reservation": null,
       "optional": true
@@ -125,10 +125,10 @@
     {
       "from": "vy1521",
       "to": "nice-checkin",
-      "mode": "taxi",
-      "duration": "20–30분",
+      "mode": "tram",
+      "duration": "약 30~40분",
       "distance": "약 7km",
-      "line": "택시 또는 트램 2호선",
+      "line": "트램 2호선 (Ligne 2)",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -151,19 +151,19 @@
     }
   ],
   "transport": [
-    "렌터카 — BCN T1 반납 14:00 (확정)",
+    "렌터카 — BCN T1 반납 12:30 (요청)",
     "VY1521 15:30→16:55 (확정 NMGI4Q)",
-    "NCE 도착 후 택시/트램"
+    "NCE 도착 후 트램 2호선 이동"
   ],
   "food": [
     "이동 중 간단식",
-    "도착 저녁은 가볍게"
+    "숙소 주변 가벼운 저녁"
   ],
   "highlights": [
-    "P0 이동일 — 관광 없음",
-    "반납 12:30 으로 당김 · VY1521 15:30",
-    "수하물 위탁 마감 14:45",
-    "도착 후 체크인만"
+    "P0 이동일 — 관광 과적 방지",
+    "VY1521 15:30→16:55 도착",
+    "트램 2호선 이동 후 18~19시 체크인",
+    "숙소 주변 산책 및 가벼운 저녁"
   ],
   "backup": "Hertz 변경 불가 시 기내반입 위주로 줄이고 전날 온라인 체크인",
   "map": {
@@ -176,13 +176,13 @@
   },
   "needsReview": [
     "Bàscara 체크아웃 조건 확인",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 15:00 · 체크아웃 9/9 11:00",
+    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00",
     "Hertz L671E2E0288 반납시각 14:00→12:30 변경 요청 (2026-08-14 결정)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-7",
-    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-7-8",
+    "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-4-9월4일금요일",
     "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml",
     "예약 확정 (2026-08-09 반영): Hertz L671E2E0288 반납 9/4 14:00 BCN T1 · Vueling VY1521 15:30→16:55 (NMGI4Q)"
   ]
