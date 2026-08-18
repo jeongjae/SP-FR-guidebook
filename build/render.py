@@ -139,6 +139,47 @@ def strip_tokens(text: str) -> str:
     return re.sub(r"\{\{[^}]*\}\}", "", text)
 
 
+# 글자로만 있는 URL 을 누를 수 있게 만든다.
+#
+# 사실 출처(place-facts 의 source) 286건이 전부 맨 URL 이라 화면에 글자로만
+# 나왔다. 현장에서 "운영시간이 맞나" 를 확인하려면 그 주소를 손으로 옮겨
+# 적어야 했다는 뜻이다. 확인할 수 없는 근거는 근거가 아니다.
+URL_IN_TEXT = re.compile(r'https?://[^\s<>"\')\]]+')
+
+
+def domain_of(url: str) -> str:
+    """보여줄 이름. 전체 주소는 390px 에서 서너 줄을 먹고 읽히지도 않는다."""
+    host = url.split("//", 1)[-1].split("/", 1)[0]
+    return host[4:] if host.startswith("www.") else host
+
+
+def linkify(text: str, *, show: str = "domain") -> str:
+    """**이스케이프된** 문자열 안의 맨 URL 을 <a> 로 바꾼다.
+
+    이스케이프를 먼저 하고 여기 넣어야 한다. 순서를 뒤집으면 우리가 만든
+    태그가 다시 이스케이프돼 글자로 나온다.
+    """
+    def repl(m):
+        raw = m.group(0)
+        url = raw.rstrip(".,·;")
+        tail = raw[len(url):]
+        shown = domain_of(url) if show == "domain" else url
+        return (f'<a href="{url}" rel="nofollow noopener">{shown}</a>{tail}')
+    return URL_IN_TEXT.sub(repl, text)
+
+
+def first_source_url(place) -> str:
+    """이 장소의 근거 URL 하나. 공식 페이지인 경우가 대부분이라 상단
+    행동줄에 '공식 정보' 로 내보낸다 — 현장에서 눌러 지금 값을 확인한다."""
+    for key in ("booking", "hours", "price_adult", "closed", "getting_there"):
+        f = place.facts.get(key)
+        if f and f.source:
+            m = URL_IN_TEXT.search(f.source)
+            if m:
+                return m.group(0).rstrip(".,·;")
+    return ""
+
+
 # ---------------------------------------------------------------- 이미지
 
 def load_image_index() -> dict:
@@ -381,10 +422,12 @@ def build_place(p: Place, trip: Trip) -> str:
             f'<a class="btn btn-primary" rel="nofollow noopener" '
             f'href="https://www.google.com/maps/dir/?api=1&destination={p.lat},{p.lng}">'
             f'{ic("map")}길찾기</a>')
-    url_fact = p.fact("url") or p.fact("booking")
-    if url_fact and url_fact.value.startswith("http"):
-        actions.append(f'<a class="btn btn-secondary" href="{esc(url_fact.value)}" '
-                       f'rel="nofollow noopener">{ic("link")}공식 사이트</a>')
+    url_fact = p.fact("url")
+    official = (url_fact.value if url_fact and url_fact.value.startswith("http")
+                else first_source_url(p))
+    if official:
+        actions.append(f'<a class="btn btn-secondary" href="{esc(official)}" '
+                       f'rel="nofollow noopener">{ic("link")}공식 정보</a>')
     if p.wiki:
         wiki_url = (f"https://{p.wiki_lang}.wikipedia.org/wiki/"
                     f"{p.wiki.replace(' ', '_')}")
@@ -437,7 +480,7 @@ def build_place(p: Place, trip: Trip) -> str:
                 mark = badge("caution", "재확인")
                 value = esc(f.value) if f.value else \
                     f'<span class="meta">{esc(f.blocked_reason or "미확인")}</span>'
-            src = (f'<br><span class="meta">{esc(f.source)}</span>'
+            src = (f'<br><span class="meta">출처 {linkify(esc(f.source))}</span>'
                    if f.source else "")
             rows.append(f"<tr><th scope=\"row\">{esc(label)}</th>"
                         f"<td>{value} {mark}{src}</td></tr>")
@@ -1318,11 +1361,17 @@ def write_redirects(trip: Trip) -> int:
 def build_credits(trip: Trip) -> str:
     """사진 저작자 표시. 표시가 필요한 라이선스는 화면에 남긴다."""
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
+    def cell_link(url: str, label: str) -> str:
+        """주소가 없으면 링크를 만들지 않는다. 빈 href 는 눌러도 제자리다."""
+        if not url:
+            return esc(label) if label else "—"
+        return (f'<a href="{esc(url)}" rel="nofollow noopener">'
+                f'{esc(label) if label else domain_of(url)}</a>')
+
     rows = "".join(f"""<tr><td>{esc(i.get('titleKo') or i.get('title'))}</td>
-<td>{esc(i.get('creator'))}</td>
-<td><a href="{esc(i.get('licenseUrl') or '')}" rel="nofollow noopener">
-  {esc(i.get('license'))}</a></td>
-<td><a href="{esc(i.get('sourcePage') or '')}" rel="nofollow noopener">출처</a></td></tr>"""
+<td>{linkify(esc(i.get('creator') or '—'))}</td>
+<td>{cell_link(i.get('licenseUrl') or '', i.get('license') or '')}</td>
+<td>{cell_link(i.get('sourcePage') or '', '출처')}</td></tr>"""
         for i in raw.get("images", []))
     return page(
         title="사진 저작자 표시", rel="..", tab="guide",

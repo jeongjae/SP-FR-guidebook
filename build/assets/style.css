@@ -1238,3 +1238,13 @@ footer p { margin: 0 0 var(--s1); }
   display: inline-flex;
   visibility: hidden;
 }
+
+/* 실용 표의 출처 링크 — 현장에서 "지금도 이 값이 맞나" 를 확인하려고 누르는
+   자리다. 표 안 인라인 글자 그대로 두면 12px 짜리 과녁이 된다. */
+td .meta a,
+.meta a[href^="http"] {
+  display: inline-block;
+  padding-block: 0.8rem;
+  margin-block: -0.55rem;
+  font-weight: 700;
+}
