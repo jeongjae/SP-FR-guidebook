@@ -113,16 +113,29 @@ MAPS_META = ""   # render.py 가 빌드 시작에 채운다
 
 def page(*, title: str, body: str, rel: str, tab: str,
          trail: list[tuple[str, str | None]] | None = None,
+         bar_title: str = "",
          region: str = "", country: str = "", subnav: str = "",
          description: str = "", extra_head: str = "",
          extra_scripts: str = "") -> str:
-    """페이지 하나. 셸은 여기 한 곳에서만 만든다."""
+    """페이지 하나. 셸은 여기 한 곳에서만 만든다.
+
+    bar_title 을 주면 위치 경로 대신 상단바에 제목을 가운데 놓는다. 홈처럼
+    올라갈 위가 없는 화면용이다 — 빵부스러기가 빈 채로 남는 것보다 낫고,
+    사이트 이름이 크롬에 있으면 본문은 바로 '오늘' 부터 시작할 수 있다.
+    """
     region_attr = f' data-region="{region}"' if region else ""
+    bar_center = ' data-bar="center"' if bar_title else ""
     band = (f'<div class="country-band" data-country="{country}" '
             f'role="presentation"></div>') if country and country != "none" else ""
     desc = (f'<meta name="description" content="{esc(description)}">\n'
             if description else "")
-    trail_html = crumbs(rel, trail) if trail else '<span class="crumbs"></span>'
+    if bar_title:
+        # 홈의 제목은 여기가 h1 이다. 본문에 또 두면 h1 이 둘이 된다.
+        trail_html = f'<h1 class="tb-title">{esc(bar_title)}</h1>'
+    elif trail:
+        trail_html = crumbs(rel, trail)
+    else:
+        trail_html = '<span class="crumbs"></span>'
 
     return f"""<!DOCTYPE html>
 <html lang="ko">
@@ -139,7 +152,7 @@ def page(*, title: str, body: str, rel: str, tab: str,
 <link rel="icon" type="image/png" sizes="192x192" href="{rel}/assets/pwa/icon-192.png">
 {MAPS_META}{extra_head}<link rel="stylesheet" href="{rel}/assets/style.css">
 </head>
-<body{region_attr}>
+<body{region_attr}{bar_center}>
 <a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden>{ic("back")}</button>

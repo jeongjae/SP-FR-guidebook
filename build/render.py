@@ -878,11 +878,6 @@ def build_home(trip: Trip, res: dict) -> str:
 
     body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 
-<header class="home-head">
-  <h1>2026년 유럽여행 가이드</h1>
-  <p class="meta">{trip.start.isoformat()} — {trip.end.isoformat()} · 43일 42박 · 8개 거점</p>
-</header>
-
 <section id="today-panel" class="stack" aria-live="polite">
   <noscript><p class="meta">오늘 화면은 기기의 날짜로 고릅니다.
     <a href="schedule.html">전체 일정</a>을 여세요.</p></noscript>
@@ -921,6 +916,7 @@ def build_home(trip: Trip, res: dict) -> str:
      "days": days_payload}, ensure_ascii=False)}</script>"""
 
     return page(title="오늘", body=body, rel=rel, tab="today",
+                bar_title="2026년 유럽여행 가이드",
                 description=f"{SITE_TITLE} — 43일 여행 가이드")
 
 
