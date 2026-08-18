@@ -712,21 +712,21 @@ def build_credits():
 
 
 def build_photo_credits():
-    """Responsive Pilot manifest의 파일별 출처·사용 페이지."""
+    """사진 매니페스트의 파일별 출처·사용 페이지. 전 지역을 덮는다."""
     out_dir = SITE / "about"
     out_dir.mkdir(parents=True, exist_ok=True)
     rows = media.photo_attribution_rows(PHOTO_MANIFEST, "..")
-    body = f"""<h1>Barcelona Pilot 사진 크레딧</h1>
+    body = f"""<h1>사진 크레딧</h1>
 <p class="meta">승인 원본 {len(media.photos(PHOTO_MANIFEST))}장의 촬영자·원본 설명 페이지·라이선스·가공·사용 위치입니다.</p>
 {net_note("라이선스 전문과 Commons 원본 설명 페이지만 연결이 필요합니다.")}
 <div class="credit-list photo-credit-list">{rows}</div>
 <p class="offline-note">정본 — <code>data/images/image-manifest.json</code>. 원본 사진은 배포하지 않습니다.</p>"""
     (out_dir / "photo-credits.html").write_text(
-        page("Barcelona Pilot 사진 크레딧", body, rel="..",
+        page("사진 크레딧", body, rel="..",
              back=crumbs_for(("사진 크레딧", None))), encoding="utf-8")
-    SEARCH_INDEX.append({"t": "Barcelona Pilot 사진 크레딧", "c": "라이선스",
+    SEARCH_INDEX.append({"t": "사진 크레딧", "c": "라이선스",
                          "u": "about/photo-credits.html"})
-    print(f"  Pilot 사진 크레딧: {len(media.photos(PHOTO_MANIFEST))}장 → about/photo-credits.html")
+    print(f"  사진 크레딧: {len(media.photos(PHOTO_MANIFEST))}장 → about/photo-credits.html")
 
 
 def visual_figure(key, caption, rel="../assets"):

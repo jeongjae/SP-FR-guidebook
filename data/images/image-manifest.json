@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-15",
+  "generatedAt": "2026-08-18",
   "regions": [
     "aix",
     "avignon",
@@ -4901,68 +4901,6 @@
       "originalBytes": 5964813
     },
     {
-      "imageId": "lyon-bellecour-01",
-      "placeId": "place-bellecour",
-      "title": "Statue of Louis XIV @ Place Bellecour @ Lyon (35580147953).jpg",
-      "titleKo": "벨쿠르 광장",
-      "description": "Statue of Louis XIV @ Place Bellecour @ Lyon",
-      "source": "Wikimedia Commons",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Statue_of_Louis_XIV_@_Place_Bellecour_@_Lyon_(35580147953).jpg",
-      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Statue_of_Louis_XIV_%40_Place_Bellecour_%40_Lyon_%2835580147953%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "creator": "Guilhem Vellut from Annecy, France",
-      "license": "CC BY 2.0",
-      "licenseCode": "cc-by",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
-      "downloadDate": "2026-08-06",
-      "originalWidth": 5472,
-      "originalHeight": 3648,
-      "originalPath": "source/ASSETS/photos/originals/lyon/lyon-bellecour-01.jpg",
-      "originalSha256": "418bc58e41944f5d74951288b90e4b3bcf2ebf09a8b6a66af5cb846a52bb4c31",
-      "usage": [
-        "daily/day-24.html"
-      ],
-      "role": "major",
-      "region": "lyon",
-      "regionHero": false,
-      "status": "processed",
-      "altKo": "벨쿠르 광장의 루이 14세 기마상과 뒤편 푸르비에르 언덕",
-      "captionKo": "벨쿠르 광장 중앙의 루이 14세 기마상 — 뒤로 푸르비에르 언덕이 보인다.",
-      "focus": {
-        "x": 0.45,
-        "y": 0.4
-      },
-      "variants": {
-        "hero": [],
-        "content": [
-          {
-            "path": "source/ASSETS/photos/processed/content/lyon-bellecour-01-content-1280.webp",
-            "sitePath": "assets/images/content/lyon-bellecour-01-content-1280.webp",
-            "width": 1280,
-            "height": 853,
-            "bytes": 107548,
-            "sha256": "37333f906f90ba71bdc21af257d76344ae5cea5c8f0ad98e58332fd6fd0e2f85",
-            "quality": 78
-          }
-        ],
-        "thumbnail": [
-          {
-            "path": "source/ASSETS/photos/processed/thumbnails/lyon-bellecour-01-thumb-480.webp",
-            "sitePath": "assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp",
-            "width": 480,
-            "height": 320,
-            "bytes": 16612,
-            "sha256": "d53d6033f7d4155f746a1b2d4d7f06a2e8808fe9dd03391d8729364603d578fa",
-            "quality": 73
-          }
-        ]
-      },
-      "selectionScore": 98,
-      "storedWidth": 4000,
-      "storedHeight": 2667,
-      "originalBytes": 2993264
-    },
-    {
       "imageId": "lyon-fourviere-01",
       "placeId": "fourviere",
       "title": "Notre Dame de Fourvière.jpg",
@@ -8240,7 +8178,1757 @@
       "storedWidth": 3061,
       "storedHeight": 4000,
       "originalBytes": 3820136
+    },
+    {
+      "imageId": "avignon-cloitre-saint-trophime-01",
+      "placeId": "cloitre-saint-trophime",
+      "title": "Cloître Saint-Trophime Arles Conservation.jpg",
+      "titleKo": "생트로핌 회랑",
+      "description": "A temporary windowed partition along restoration work area in the cloister of the Church of St. Trophime, Arles",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Clo%C3%AEtre_Saint-Trophime_Arles_Conservation.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Clo%C3%AEtre_Saint-Trophime_Arles_Conservation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Etan J. Tal",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2560,
+      "originalHeight": 1920,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-cloitre-saint-trophime-01.jpg",
+      "originalSha256": "9f7d93fc59914eb74f36fea5d51ea6c6aa05180acfa0b852a39bd06c8a2b4ff0",
+      "usage": [
+        "places/cloitre-saint-trophime.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아를 생트로핌 성당의 로마네스크 회랑 안뜰과 조각 기둥",
+      "captionKo": "아를 생트로핌 회랑 — 로마네스크와 고딕이 한 안뜰에서 만난다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-cloitre-saint-trophime-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-cloitre-saint-trophime-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 52580,
+            "sha256": "f53f2456ed2f57ada192f1a940a53d86d619cc333f4a8e614623c1e31739fd49",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-cloitre-saint-trophime-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-cloitre-saint-trophime-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 8322,
+            "sha256": "448f1fb6d793a2e9941139d38053c47a2cf5bec888f20e3a477afa27b189e164",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 3058367
+    },
+    {
+      "imageId": "avignon-place-du-forum-arles-01",
+      "placeId": "place-du-forum-arles",
+      "title": "Arles - Place du Forum in the evening (Q109606553).jpg",
+      "titleKo": "포룸 광장",
+      "description": "Place du Forum in Arles by Night",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Arles_-_Place_du_Forum_in_the_evening_(Q109606553).jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/90/Arles_-_Place_du_Forum_in_the_evening_%28Q109606553%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Pieter van Everdingen",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4000,
+      "originalHeight": 6000,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-place-du-forum-arles-01.jpg",
+      "originalSha256": "15f4c65e7410553370a2691fd2b31be0d944234ba447459b07c43f813a33af66",
+      "usage": [
+        "places/place-du-forum-arles.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "저녁의 아를 포룸 광장과 카페 테라스",
+      "captionKo": "아를 포룸 광장의 저녁 — 반 고흐가 그린 카페 테라스가 있는 자리다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-place-du-forum-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-place-du-forum-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 1920,
+            "bytes": 222904,
+            "sha256": "1714ed7d030d1b6490b577691ea407fe3fd5395c95f94e5da31c492dce17313d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-place-du-forum-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-place-du-forum-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 29214,
+            "sha256": "ac1a9bf928dd0f616942cfd2bfcbd4f0cffa50a72e62f54474f77d2bb8d42204",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 2667,
+      "storedHeight": 4000,
+      "originalBytes": 3303008
+    },
+    {
+      "imageId": "avignon-la-roquette-01",
+      "placeId": "la-roquette",
+      "title": "Arles Roquette église Ste Croix3.jpg",
+      "titleKo": "라 로케트",
+      "description": "Arles (Bouches-du-Rhone, Provence, France), in the heart of the Roquette district, former Sainte-Croix church, now desecrated; the oldest parts of which date from the twelfth century as a priory under the Saint-Trophime cathedral ; at the 13th century church of the largest of the two parishes of the district of Vieux Bourg, current Roquette; the facade was redone in 1720. Thereafter the building was flanked by houses.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Arles_Roquette_%C3%A9glise_Ste_Croix3.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Arles_Roquette_%C3%A9glise_Ste_Croix3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Finoskov",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3467,
+      "originalHeight": 2774,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-la-roquette-01.jpg",
+      "originalSha256": "6c3f351aa2000b40f858030178f11457699da10be3a6557bb8d6e1ff37ceea53",
+      "usage": [
+        "places/la-roquette.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아를 라 로케트 구역의 골목과 생트크루아 교회",
+      "captionKo": "라 로케트 — 아를의 옛 뱃사람 동네.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-la-roquette-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-la-roquette-01-content-1280.webp",
+            "width": 1280,
+            "height": 1024,
+            "bytes": 105958,
+            "sha256": "63dcee346202f832a448ea9b2cfca9fd29c98282d67aed20d237f72a2d653afc",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-la-roquette-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-la-roquette-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15754,
+            "sha256": "d53d0ba5fe71174b3513dc80bee4727b15e1b5ec705609ea8fe658bb48d6713b",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 5257011
+    },
+    {
+      "imageId": "avignon-glanum-01",
+      "placeId": "glanum",
+      "title": "Glanum escalier source sacrée.jpg",
+      "titleKo": "글라눔",
+      "description": "L'escalier de la source sacrée",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Glanum_escalier_source_sacr%C3%A9e.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Glanum_escalier_source_sacr%C3%A9e.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Philippe hirou",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2048,
+      "originalHeight": 1536,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-glanum-01.jpg",
+      "originalSha256": "446d31c8de6e09cc72950804d77489d9d9c0b4b03c1657b09ebe13f772cb3311",
+      "usage": [
+        "places/glanum.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "글라눔 유적의 성스러운 샘으로 내려가는 계단",
+      "captionKo": "글라눔 — 생레미 남쪽의 그리스·로마 도시 유적.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-glanum-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-glanum-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 168696,
+            "sha256": "c04ddc9dde646ab58f514855cd55f3da9807f972956abb3931a5b396fbce0f0b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-glanum-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-glanum-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23340,
+            "sha256": "dd374dcfb6515e18bae50c1b9c065c5bb6e09b595ba22108e8aae9accb886617",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 558106
+    },
+    {
+      "imageId": "avignon-saint-paul-de-mausole-01",
+      "placeId": "saint-paul-de-mausole",
+      "title": "Chevet de Saint-Paul de Mausole.JPG",
+      "titleKo": "생폴 드 모솔",
+      "description": "Le Monastère Saint-Paul-de-Mausole à Saint-Rémy-de-Provence ( Bouches-du-Rhône , France).",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chevet_de_Saint-Paul_de_Mausole.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/88/Chevet_de_Saint-Paul_de_Mausole.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "EmDee",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2592,
+      "originalHeight": 1944,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-saint-paul-de-mausole-01.jpg",
+      "originalSha256": "cfb79b19fe7fd34e12c16f1ce3e60d0cf3d376d84f7a22f3dccac5bf8f5e1ea7",
+      "usage": [
+        "places/saint-paul-de-mausole.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "생폴 드 모솔 수도원의 후진",
+      "captionKo": "생폴 드 모솔 — 반 고흐가 1889–90년 머문 수도원.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-saint-paul-de-mausole-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-saint-paul-de-mausole-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 299926,
+            "sha256": "51f18a2d662ae165b6288236fa516c3da7ed582b2ac97effc3510de20b255815",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-saint-paul-de-mausole-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-saint-paul-de-mausole-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31758,
+            "sha256": "d737b1c574f2bb2366cff837f1aeee03195410c41ed035ed51a82bc41089c871",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 4336290
+    },
+    {
+      "imageId": "aix-montagne-sainte-victoire-terrain-des-peintres-01",
+      "placeId": "montagne-sainte-victoire-terrain-des-peintres",
+      "title": "Sainte-victoire landscape.jpg",
+      "titleKo": "생빅투아르 산",
+      "description": "Landscape of the Sainte-Victoire mountain",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sainte-victoire_landscape.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Sainte-victoire_landscape.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Clemsexplo",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3264,
+      "originalHeight": 2448,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-montagne-sainte-victoire-terrain-des-peintres-01.jpg",
+      "originalSha256": "d07d312f407f0b7067a65a59d00765b311bc26e56ed70cc770501b94f8b91fe5",
+      "usage": [
+        "places/montagne-sainte-victoire-terrain-des-peintres.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "엑상프로방스 동쪽으로 솟은 생빅투아르 산의 능선",
+      "captionKo": "생빅투아르 — 세잔이 평생 반복해 그린 산.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-montagne-sainte-victoire-terrain-des-peintres-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-montagne-sainte-victoire-terrain-des-peintres-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 115274,
+            "sha256": "64b30fbb3887c533cbd019058eb21ffb6a003ec15367171ded1eeb183dcbee46",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-montagne-sainte-victoire-terrain-des-peintres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-montagne-sainte-victoire-terrain-des-peintres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 10442,
+            "sha256": "a094a8c972a1dca1e446d192b12b0eafe221b4ab5821d56e278696277400e17b",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2349392
+    },
+    {
+      "imageId": "aix-le-panier-01",
+      "placeId": "le-panier",
+      "title": "Street in Marseille - Panier.jpg",
+      "titleKo": "르 파니에",
+      "description": "A street in Le Panier , a quarter of Marseille (France)",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Street_in_Marseille_-_Panier.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Street_in_Marseille_-_Panier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Michiel1972",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 1944,
+      "originalHeight": 2592,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-le-panier-01.jpg",
+      "originalSha256": "0120b1ad7cf8a3de9b48812f3e5fa35db6551b006b8ca18c90ae1e1b119d7d38",
+      "usage": [
+        "places/le-panier.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "마르세유 르 파니에 지구의 좁은 골목",
+      "captionKo": "르 파니에 — 마르세유에서 가장 오래된 동네.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-le-panier-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-le-panier-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 132666,
+            "sha256": "c36e62ea303d10d7f3e58f08b17fc9a440c4ac4d734fe49f02881338aa6f9109",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-le-panier-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-le-panier-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16084,
+            "sha256": "a1dec996cf088b5ace35513bd0382360c9ca853db27094bb4280e5cc9b7a8649",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1110685
+    },
+    {
+      "imageId": "aix-notre-dame-de-la-garde-01",
+      "placeId": "notre-dame-de-la-garde",
+      "title": "Hafen von Marseille-Notre Dame de la Garde.jpg",
+      "titleKo": "노트르담 드 라 가르드",
+      "description": "The Old Port of Marseille (Bouches-du-Rhône, Provence-Alpes-Côte d’Azur, France), seen from the cathedral Notre-Dame-de-la-Garde .",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hafen_von_Marseille-Notre_Dame_de_la_Garde.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/4/40/Hafen_von_Marseille-Notre_Dame_de_la_Garde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Tobi 87",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 11510,
+      "originalHeight": 3997,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-notre-dame-de-la-garde-01.jpg",
+      "originalSha256": "aaee0182a79279995bf60a65d76994d8d7a35b9c467da5998b0530b5016dfd06",
+      "usage": [
+        "places/notre-dame-de-la-garde.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "마르세유 항구 위 언덕의 노트르담 드 라 가르드 성당",
+      "captionKo": "노트르담 드 라 가르드 — 마르세유 어디서나 보이는 언덕 위 성당.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-notre-dame-de-la-garde-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-notre-dame-de-la-garde-01-content-1280.webp",
+            "width": 1280,
+            "height": 444,
+            "bytes": 132160,
+            "sha256": "82f316723c5668b14347dd64ffabc99735e5a1cc95313a5f8e8a43f2c803fafe",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-notre-dame-de-la-garde-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-notre-dame-de-la-garde-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34300,
+            "sha256": "e3750cee772c729ee56ec740f6f0f55408ea740283a7d9baabd1af3887f1edb1",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 1389,
+      "originalBytes": 2734513
+    },
+    {
+      "imageId": "lyon-bellecour-01",
+      "placeId": "bellecour",
+      "title": "Lyon PlaceBellecour.JPG",
+      "titleKo": "벨쿠르 광장",
+      "description": "City of Lyon (France) - Place Bellecour and Fourvière view",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lyon_PlaceBellecour.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Lyon_PlaceBellecour.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Claude",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2272,
+      "originalHeight": 1704,
+      "originalPath": "source/ASSETS/photos/originals/lyon/lyon-bellecour-01.jpg",
+      "originalSha256": "6cf6f46e5645be2351bb253e84df84ad1bbabc3cbb3e9de0f3e3c1abcf165acb",
+      "usage": [
+        "places/bellecour.html"
+      ],
+      "role": "major",
+      "region": "lyon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "리옹 벨쿠르 광장과 루이 14세 기마상",
+      "captionKo": "벨쿠르 광장 — 프레스킬의 중심이자 리옹의 좌표 원점.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-bellecour-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-bellecour-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 42204,
+            "sha256": "0a5ef36c5c269adbf502fe33a1e165917d5117c0588093668d4137b0b0fe13cc",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-bellecour-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 7374,
+            "sha256": "4f26619012f4babdb12fec0a95955f94673548306084f67ca1b55261736dbcef",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 718130
+    },
+    {
+      "imageId": "lyon-parc-de-la-tete-d-or-01",
+      "placeId": "parc-de-la-tete-d-or",
+      "title": "Parc de la Tête d'Or, Lyon, France - nature à proximité du vélodrome.jpg",
+      "titleKo": "테트 도르 공원",
+      "description": "Parc de la Tête d'Or, Lyon, France. La photo est prise depuis une passerelle reliant le Nord à la Grande île (sur laquelle se trouve le vélodrome).",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Parc_de_la_T%C3%AAte_d%27Or,_Lyon,_France_-_nature_%C3%A0_proximit%C3%A9_du_v%C3%A9lodrome.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Parc_de_la_T%C3%AAte_d%27Or%2C_Lyon%2C_France_-_nature_%C3%A0_proximit%C3%A9_du_v%C3%A9lodrome.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Benoît Prieur",
+      "license": "CC0 1.0",
+      "licenseCode": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4032,
+      "originalHeight": 3024,
+      "originalPath": "source/ASSETS/photos/originals/lyon/lyon-parc-de-la-tete-d-or-01.jpg",
+      "originalSha256": "4c5594c6ecb7b536a4935536bbacf877ddcf47270ffb88b1d3ff67971840aac5",
+      "usage": [
+        "places/parc-de-la-tete-d-or.html"
+      ],
+      "role": "major",
+      "region": "lyon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "리옹 테트 도르 공원의 호수와 산책로",
+      "captionKo": "테트 도르 공원 — 리옹의 큰 도시공원.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-parc-de-la-tete-d-or-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-parc-de-la-tete-d-or-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 299516,
+            "sha256": "b7a2aaffc02ef8ea202a8b8e1fa1854f56d759335012d2d1312bca1b982b0f72",
+            "quality": 45
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-parc-de-la-tete-d-or-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-parc-de-la-tete-d-or-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 47838,
+            "sha256": "b30be848b3a0b552d51ce892e53696c138e53a0522654052f31ddbab20bdaa5c",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 3000,
+      "originalBytes": 6766893
+    },
+    {
+      "imageId": "aix-rotonde-01",
+      "placeId": "rotonde",
+      "title": "Fontaine de la Rotonde - Aix-en-Provence.JPG",
+      "titleKo": "로통드 분수",
+      "description": "Fountain of the Rotonde in Aix-en-Provence",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Rainbow0413",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 1984,
+      "originalHeight": 1488,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-rotonde-01.jpg",
+      "originalSha256": "d862f11df09cbfc72f59d7da4dc2e5a53b4b4604c3eff8d9458f4f856895714d",
+      "usage": [
+        "places/rotonde.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "엑상프로방스 로통드 분수와 미라보 거리 입구",
+      "captionKo": "로통드 분수 — 미라보 거리가 시작되는 지점.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-rotonde-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-rotonde-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 163894,
+            "sha256": "f7199d4af63aa58418c92c5c74518887acd2c32bcbacd22a689d157d75c851b2",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-rotonde-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-rotonde-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22646,
+            "sha256": "ef8223553aac8b61b7af1ff8b9dd969e90825e0055d06a48008f0f23682bb0fc",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 654297
+    },
+    {
+      "imageId": "luberon-bonnieux-01",
+      "placeId": "bonnieux",
+      "title": "Bonnieux - Eglise Neuve.jpg",
+      "titleKo": "보니외",
+      "description": "After Lourmarin, our first photo stop was above the picturesque village of Bonnieux in The Luberon. It has a church at the centre of the village and a nice view of the Luberon countryside. Bonnieux is one of the Luberon's most attractive villages. It tilts gently down the north-westerly slope of the Luberon. Its control over the access to the river Durance and its political importance gave it a privileged status, whilst its relative geographical isolation protected it from the various scourages of these troubled times (it was only moderately affected by the ravages of the plague). The village started to grow by the churchside at the top of the promontory and gradually followed the slope down to where the new church is. The concentric levels are linked up by picturesque alleyways bordered with elegant houses. Our tour guide mentioned that the tiles of the rooftops were made by forming them over peoples legs and knees! The church in these shots is the new church. Church dating from the nineteenth century (1870), contains four primitive sixteenth century from the Old Church and scenes from the Passion.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bonnieux_-_Eglise_Neuve.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/82/Bonnieux_-_Eglise_Neuve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Elliott Brown",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3648,
+      "originalHeight": 2736,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-bonnieux-01.jpg",
+      "originalSha256": "13a4aa9afea09728d0c9ee26f2e582a34304b9c57bdfc6ffd7aa02af26050d6d",
+      "usage": [
+        "places/bonnieux.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "뤼베롱 언덕에 층층이 앉은 보니외 마을",
+      "captionKo": "보니외 — 뤼베롱 남사면의 계단식 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-bonnieux-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-bonnieux-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 137130,
+            "sha256": "8de0756a98097b8a3622d500551228d0bddd6eb3c310f5782c7581eb3bcbd167",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-bonnieux-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-bonnieux-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17870,
+            "sha256": "04b3bf7fdb54683cd2ef90930b692ff2aa784b337291c170004dd3118d729034",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2586326
+    },
+    {
+      "imageId": "luberon-goult-01",
+      "placeId": "goult",
+      "title": "Village de Goult dans le Luberon.JPG",
+      "titleKo": "굴트",
+      "description": "Square in Goult, in the Luberon, Vaucluse",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Village_de_Goult_dans_le_Luberon.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Village_de_Goult_dans_le_Luberon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Jackie McLelland",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3888,
+      "originalHeight": 2592,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-goult-01.jpg",
+      "originalSha256": "c9620d861828d4ee0476f0bf8d56bc7be5f0ac1b88077f5b10e1c450a3708d6e",
+      "usage": [
+        "places/goult.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "굴트 마을의 언덕과 지붕들",
+      "captionKo": "굴트 — 뤼베롱에서 조용한 편에 속하는 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-goult-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-goult-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 266158,
+            "sha256": "950d93b9d4660dadb1c4a09e824516c792ed7632152651d8b02e2670ef5c05fc",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-goult-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-goult-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35532,
+            "sha256": "4d513a66a3d1cf7f28da438e6ea0a28864cf5856ea2ad78b7695f960628fad45",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 6981210
+    },
+    {
+      "imageId": "luberon-menerbes-01",
+      "placeId": "menerbes",
+      "title": "Menerbes Plaine du Luberon.JPG",
+      "titleKo": "메네르브",
+      "description": "Plaine du Luberon vue de Ménerbes, Vaucluse, France",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Menerbes_Plaine_du_Luberon.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/db/Menerbes_Plaine_du_Luberon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Véronique PAGNIER",
+      "license": "Public Domain",
+      "licenseCode": "public-domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4000,
+      "originalHeight": 3000,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-menerbes-01.jpg",
+      "originalSha256": "20a82a9944edd088ef1c155020619cf4243cb5eeb3c502511a340bc306f3fabc",
+      "usage": [
+        "places/menerbes.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "메네르브 마을과 뤼베롱 평원",
+      "captionKo": "메네르브 — 능선을 따라 길게 앉은 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-menerbes-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-menerbes-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 263686,
+            "sha256": "5235e34bcc23708f5706e3458cea8b14247715cca6cccfc204e39996b1b6352a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-menerbes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-menerbes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27546,
+            "sha256": "7aa4d0d3dfa6b883590bf819da4b28214fd808bd80a1d74d9a7a6e3ab538ea15",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 3789344
+    },
+    {
+      "imageId": "luberon-oppede-le-vieux-01",
+      "placeId": "oppede-le-vieux",
+      "title": "Oppède le Vieux - Vue de l'aire de battage.jpg",
+      "titleKo": "오페드 르 비외",
+      "description": "Oppède le Vieux - Vue de l'aire de battage",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Opp%C3%A8de_le_Vieux_-_Vue_de_l%27aire_de_battage.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/55/Opp%C3%A8de_le_Vieux_-_Vue_de_l%27aire_de_battage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Nepomuk",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 1936,
+      "originalHeight": 1288,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-oppede-le-vieux-01.jpg",
+      "originalSha256": "2cc0e7cec411e42f17f2406259c14c20b6b8a971c26d0804db1591298ea2edbf",
+      "usage": [
+        "places/oppede-le-vieux.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "오페드 르 비외의 폐촌과 성터",
+      "captionKo": "오페드 르 비외 — 버려졌다가 부분적으로 되살아난 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-oppede-le-vieux-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-oppede-le-vieux-01-content-1280.webp",
+            "width": 1280,
+            "height": 852,
+            "bytes": 144604,
+            "sha256": "eb7f98b98d2b566f56f19e156c01c735e3169181cab2bfc6372d0277cdf3002e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-oppede-le-vieux-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-oppede-le-vieux-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23634,
+            "sha256": "1a278bef24416c175fe342137292e79c7df414f8b7b77c939ad0b5bd1345895f",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 624447
+    },
+    {
+      "imageId": "girona-passeig-de-la-muralla-01",
+      "placeId": "passeig-de-la-muralla",
+      "title": "Vistes des de la muralla de Girona 09.jpg",
+      "titleKo": "지로나 성벽",
+      "description": "Vistes des de la muralla de Girona",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vistes_des_de_la_muralla_de_Girona_09.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/50/Vistes_des_de_la_muralla_de_Girona_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Carles de Malavella",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2976,
+      "originalHeight": 2232,
+      "originalPath": "source/ASSETS/photos/originals/girona/girona-passeig-de-la-muralla-01.jpg",
+      "originalSha256": "24a71c7bfbfb86eba439824d6af76d7a53d3867a7d5f2ba27907f5771a8d0324",
+      "usage": [
+        "places/passeig-de-la-muralla.html"
+      ],
+      "role": "major",
+      "region": "girona",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "지로나 성벽 산책로에서 내려다본 구시가지",
+      "captionKo": "지로나 성벽 — 카롤링거 성벽 위를 걷는 길.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-passeig-de-la-muralla-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-passeig-de-la-muralla-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 264580,
+            "sha256": "c3dad536f6c7cabea31f8c8020a87475c678d37772532d5819d0978df4040931",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-passeig-de-la-muralla-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-passeig-de-la-muralla-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 38138,
+            "sha256": "6d07990673dbe8f212d5cdaf4778698d80966e2121b59d4fb52c38eefb2755d9",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1725921
+    },
+    {
+      "imageId": "girona-pals-01",
+      "placeId": "pals",
+      "title": "Torre de les Hores.jpg",
+      "titleKo": "팔스",
+      "description": "Castell de Pals",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Torre_de_les_Hores.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Torre_de_les_Hores.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "-- Joan301009 · Parlem-ne! ;)/Let's talk! ;)",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 1704,
+      "originalHeight": 2272,
+      "originalPath": "source/ASSETS/photos/originals/girona/girona-pals-01.jpg",
+      "originalSha256": "2c9038850bae0e3fb4ff45dd31c0854cd784fee43bcd8bce5cce3e3e83db75d7",
+      "usage": [
+        "places/pals.html"
+      ],
+      "role": "major",
+      "region": "girona",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "팔스의 시간의 탑(Torre de les Hores)",
+      "captionKo": "팔스 — 엠포르다의 중세 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-pals-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-pals-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 264456,
+            "sha256": "28cd108497213174eba042f8ee5b628e3b8db4d2d2562f3a46490b784c087bac",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-pals-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-pals-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19596,
+            "sha256": "c2c2443b2ef7251c2973c6240f66f7273c79540f99a99fc4447fd65382da8c10",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 2182359
+    },
+    {
+      "imageId": "girona-peralada-01",
+      "placeId": "peralada",
+      "title": "Castell de Peralada.JPG",
+      "titleKo": "페랄라다 성",
+      "description": "Castell de Peralada",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Castell_de_Peralada.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Castell_de_Peralada.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Josep Renalias Lohen11",
+      "license": "CC BY 3.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3008,
+      "originalHeight": 2000,
+      "originalPath": "source/ASSETS/photos/originals/girona/girona-peralada-01.jpg",
+      "originalSha256": "3db865190fbbc8e547b3bf6d57e6b21031384dff0235218f73cdd921f3dd6bac",
+      "usage": [
+        "places/peralada.html"
+      ],
+      "role": "major",
+      "region": "girona",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "페랄라다 성 외관",
+      "captionKo": "페랄라다 성 — 엠포르다 북부의 성과 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-peralada-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-peralada-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 193180,
+            "sha256": "fa0abd0e74d907873b61037ea92fb6aa46560b1dc4067d05ce419d89606ec088",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-peralada-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-peralada-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24170,
+            "sha256": "84d0becf347419d9bd62e87522c51fac4c0a431c4dd625a823b9762373cc739c",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1122125
+    },
+    {
+      "imageId": "aix-bastide-du-jas-de-bouffan-01",
+      "placeId": "bastide-du-jas-de-bouffan",
+      "title": "Bastide du Jas de Bouffan (30457411).jpg",
+      "titleKo": "자스 드 부팡",
+      "description": "Bastide du Jas de Bouffan",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bastide_du_Jas_de_Bouffan_(30457411).jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/17/Bastide_du_Jas_de_Bouffan_%2830457411%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "David Wong",
+      "license": "CC BY 3.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2048,
+      "originalHeight": 1365,
+      "originalPath": "source/ASSETS/photos/originals/aix/aix-bastide-du-jas-de-bouffan-01.jpg",
+      "originalSha256": "eb61140ec22cb8078783b5b1218f9ce51d9e841d474131f89c57af9ba31030df",
+      "usage": [
+        "places/bastide-du-jas-de-bouffan.html"
+      ],
+      "role": "major",
+      "region": "aix",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "세잔 가족의 바스티드 자스 드 부팡 건물",
+      "captionKo": "자스 드 부팡 — 세잔이 청년기를 보낸 집.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-bastide-du-jas-de-bouffan-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-bastide-du-jas-de-bouffan-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 298982,
+            "sha256": "8b760e2d7d17f11d29b3bc32926ea50433b43a51b9127ba6a50b6cf4fdcd7d00",
+            "quality": 57
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 45578,
+            "sha256": "429e81b60c67815c3c49296cb2fd768df2f9b94a728190917b65b5fa1b998319",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 2092066
+    },
+    {
+      "imageId": "avignon-fondation-vincent-van-gogh-arles-01",
+      "placeId": "fondation-vincent-van-gogh-arles",
+      "title": "Place Honoré Clair2.jpg",
+      "titleKo": "반 고흐 재단 (아를)",
+      "description": "Trônant au centre de la place Honoré Clair à Arles (Bouches-du-Rhône), un élégant hôtel particulier jouxtant le célèbre hôtel Léautaud de Donines.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Place_Honor%C3%A9_Clair2.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/95/Place_Honor%C3%A9_Clair2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Finoskov",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2648,
+      "originalHeight": 2112,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-fondation-vincent-van-gogh-arles-01.jpg",
+      "originalSha256": "ae2099c02d66b40831af46536f714e6ca5cefc48d984033ebb420976ac994c46",
+      "usage": [
+        "places/fondation-vincent-van-gogh-arles.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "아를 오노레 클레르 광장과 재단 건물 외관",
+      "captionKo": "반 고흐 재단 — 15세기 저택을 고쳐 쓴 아를의 전시공간.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-fondation-vincent-van-gogh-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-fondation-vincent-van-gogh-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 1021,
+            "bytes": 162608,
+            "sha256": "41713cb8118c20348baa09c11e8d82c6cb4fcd3b43e7589d5833259fde3ad362",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-fondation-vincent-van-gogh-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-fondation-vincent-van-gogh-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24596,
+            "sha256": "dbb79333164d5ae1dd1b8e6121e78da5539f27b1beae21d48f6d21ff9e3b34d9",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1250374
+    },
+    {
+      "imageId": "paris-musee-de-l-orangerie-01",
+      "placeId": "musee-de-l-orangerie",
+      "title": "Musée de l’Orangerie exterior.JPG",
+      "titleKo": "오랑주리 미술관",
+      "description": "Exterior of Musée de l'Orangerie in Paris",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_l%E2%80%99Orangerie_exterior.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mus%C3%A9e_de_l%E2%80%99Orangerie_exterior.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Homonihilis",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3072,
+      "originalHeight": 2304,
+      "originalPath": "source/ASSETS/photos/originals/paris/paris-musee-de-l-orangerie-01.jpg",
+      "originalSha256": "57e4b0582cfc06977211d5ddb51c566439dcefe05a9b6f1cc86f44eaaf0afc91",
+      "usage": [
+        "places/musee-de-l-orangerie.html"
+      ],
+      "role": "major",
+      "region": "paris",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "튈르리 정원의 오랑주리 미술관 외관",
+      "captionKo": "오랑주리 — 모네의 수련 대장식화가 있는 미술관.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-de-l-orangerie-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-de-l-orangerie-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 110488,
+            "sha256": "67a1791df98c411022ffe2b596f0876de7c6bdf69ea2cd18d4adceda7980e00c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-de-l-orangerie-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-de-l-orangerie-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16800,
+            "sha256": "d4c1f40e4bd4a048fb0d8ffdf23b0f41c198da811a6add7a3e9033b0659fb2c0",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 661981
+    },
+    {
+      "imageId": "avignon-carrieres-des-lumieres-01",
+      "placeId": "carrieres-des-lumieres",
+      "title": "Carrières de Lumières Les Baux de Provence 2.JPG",
+      "titleKo": "카리에르 데 뤼미에르",
+      "description": "Carrières de Lumières Les Baux de Provence 2",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carri%C3%A8res_de_Lumi%C3%A8res_Les_Baux_de_Provence_2.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/06/Carri%C3%A8res_de_Lumi%C3%A8res_Les_Baux_de_Provence_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Juanglard",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4000,
+      "originalHeight": 2248,
+      "originalPath": "source/ASSETS/photos/originals/avignon/avignon-carrieres-des-lumieres-01.jpg",
+      "originalSha256": "728485f2ad0a57d6426ed74348063d5a443529e082ea8430e715268f989b88b6",
+      "usage": [
+        "places/carrieres-des-lumieres.html"
+      ],
+      "role": "major",
+      "region": "avignon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "레보 채석장 내부의 거대한 석벽 공간",
+      "captionKo": "카리에르 데 뤼미에르 — 채석장 석벽이 영상의 스크린이 된다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-carrieres-des-lumieres-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-carrieres-des-lumieres-01-content-1280.webp",
+            "width": 1280,
+            "height": 719,
+            "bytes": 30584,
+            "sha256": "13bd4293c07c8285d40183f5bfeb23a4083f8a5f3f5b1110aa627b7dc37ae0db",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-carrieres-des-lumieres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-carrieres-des-lumieres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 6384,
+            "sha256": "35bb341bd06cac0392dd1a5f1188c411376dd2a749749d03ce9acc16eb482563",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1852401
+    },
+    {
+      "imageId": "barcelona-barcelona-historic-walk-01",
+      "placeId": "barcelona-historic-walk",
+      "title": "Barri Gòtic at night.jpg",
+      "titleKo": "고딕지구 산책",
+      "description": "Nagtelike straattoneel in die Barri Gòtic.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Barri_G%C3%B2tic_at_night.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/54/Barri_G%C3%B2tic_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Pierre Phaneuf from Montréal, Canada",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 2272,
+      "originalHeight": 1704,
+      "originalPath": "source/ASSETS/photos/originals/barcelona/barcelona-barcelona-historic-walk-01.jpg",
+      "originalSha256": "0599c4f7a743af76bf80f3be2c24306ba1d5086afcc77bf7bfce1b8f185ace93",
+      "usage": [
+        "places/barcelona-historic-walk.html"
+      ],
+      "role": "major",
+      "region": "barcelona",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "밤의 바르셀로나 고딕지구 골목",
+      "captionKo": "고딕지구 — 로마 성벽 위에 중세가 얹힌 구시가.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-barcelona-historic-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-barcelona-historic-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 54552,
+            "sha256": "1057bf8948035c9d5e45ed290667d81cd983fbf49dde29cbd1351caac61c7e22",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-barcelona-historic-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-barcelona-historic-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 11700,
+            "sha256": "e67b647cfb76d59b09b5fd91662331e64d5a16f7cd123f29e030f4ed9fe5f226",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 96,
+      "originalBytes": 1403415
+    },
+    {
+      "imageId": "barcelona-barcelona-modernisme-walk-01",
+      "placeId": "barcelona-modernisme-walk",
+      "title": "Casa Batlló 09.JPG",
+      "titleKo": "모데르니스메 산책",
+      "description": "Casa Batlló - Catalan Modernisme (Antoni Gaudí et Josep Maria Jujol i Gibert, 1906).",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Casa_Batll%C3%B3_09.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/86/Casa_Batll%C3%B3_09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "böhringer friedrich",
+      "license": "CC BY-SA 2.5",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4272,
+      "originalHeight": 2848,
+      "originalPath": "source/ASSETS/photos/originals/barcelona/barcelona-barcelona-modernisme-walk-01.jpg",
+      "originalSha256": "cedfccfd5b2de3499434e7b70e5fc22dd8ceba222654abfd3324caf2d421d1d7",
+      "usage": [
+        "places/barcelona-modernisme-walk.html"
+      ],
+      "role": "major",
+      "region": "barcelona",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "파세이그 데 그라시아의 카사 바트요 외관",
+      "captionKo": "모데르니스메 산책 — 파세이그 데 그라시아를 따라 걷는다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-barcelona-modernisme-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-barcelona-modernisme-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 117838,
+            "sha256": "296d599edfc84b2d6b81f7f56b2cd63663821de54b5e1a8f96848ee8c81ace25",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-barcelona-modernisme-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-barcelona-modernisme-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25504,
+            "sha256": "b2dbbb722045709399a95517cd04b38f335e370b7087334e3d830da44eac7dbf",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "originalBytes": 2650609
+    },
+    {
+      "imageId": "girona-girona-old-town-walk-01",
+      "placeId": "girona-old-town-walk",
+      "title": "Pont Eiffel and river Onyar in Girona, Catalonia, Spain.JPG",
+      "titleKo": "지로나 구시가 산책",
+      "description": "Pont Eiffel and river Onyar in Girona, Catalonia, Spain",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pont_Eiffel_and_river_Onyar_in_Girona,_Catalonia,_Spain.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pont_Eiffel_and_river_Onyar_in_Girona%2C_Catalonia%2C_Spain.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Florent Pécassou",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 3664,
+      "originalHeight": 2748,
+      "originalPath": "source/ASSETS/photos/originals/girona/girona-girona-old-town-walk-01.jpg",
+      "originalSha256": "9aef545e057e851cdaadae6f68a3cfda56efae46c7122565843da679cee691e8",
+      "usage": [
+        "places/girona-old-town-walk.html"
+      ],
+      "role": "major",
+      "region": "girona",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "오냐르 강변의 색색 집들과 에펠 다리",
+      "captionKo": "지로나 구시가 — 오냐르 강을 사이에 두고 걷는다.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-girona-old-town-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-girona-old-town-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 144908,
+            "sha256": "1b7ed62e66232d581bbac6ffad0d3cb00324ade448665c96d4a523aab104218f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-girona-old-town-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-girona-old-town-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21450,
+            "sha256": "3d73187a77813baf1cb03c6952342e0185e2db51473354b285a74ee08057ac85",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 1806459
+    },
+    {
+      "imageId": "nice-nice-walk-01",
+      "placeId": "nice-walk",
+      "title": "Nice-ruelle-vieux-quartiers.jpg",
+      "titleKo": "비외 니스 산책",
+      "description": "Une ruelle dans un vieux quartier de Nice.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nice-ruelle-vieux-quartiers.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Nice-ruelle-vieux-quartiers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Rundvald",
+      "license": "Public Domain",
+      "licenseCode": "public-domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 1944,
+      "originalHeight": 2592,
+      "originalPath": "source/ASSETS/photos/originals/nice/nice-nice-walk-01.jpg",
+      "originalSha256": "4f5f801f4a9d13177f8aac2f5d000e6a806a01b9d96c869f0205ac8044537b05",
+      "usage": [
+        "places/nice-walk.html"
+      ],
+      "role": "major",
+      "region": "nice",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "비외 니스의 좁은 골목",
+      "captionKo": "비외 니스 — 구시가 골목과 쿠르 살레야.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-nice-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-nice-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 219172,
+            "sha256": "366d62b32250f7fa0c03be9b426dc65f45b3212cfbd8a88a2100adc790111584",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-nice-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-nice-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22070,
+            "sha256": "fe5a4bdcfc395d5c84b8d890579df5540b5049d51742935dd9d1d2731e60deeb",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2321935
+    },
+    {
+      "imageId": "nice-cannes-walk-01",
+      "placeId": "cannes-walk",
+      "title": "Le Suquet 01.jpg",
+      "titleKo": "칸 산책",
+      "description": "Vue du vieux Cannes depuis le Port. On distingue le Suquet. Alpes-Maritimes, France.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Le_Suquet_01.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Le_Suquet_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Miniwark",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4000,
+      "originalHeight": 3000,
+      "originalPath": "source/ASSETS/photos/originals/nice/nice-cannes-walk-01.jpg",
+      "originalSha256": "8623c613713b5117bee1d665c5d0c38e6bbb88aaa62ae51726f7f4dd892b0165",
+      "usage": [
+        "places/cannes-walk.html"
+      ],
+      "role": "major",
+      "region": "nice",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "칸 르 쉬케 언덕에서 본 항구",
+      "captionKo": "칸 — 포르빌 시장에서 르 쉬케를 거쳐 크루아제트로.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-cannes-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-cannes-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 90762,
+            "sha256": "a550ab53149c77d6945ac68ecd075f702f384242c6ecab4d19421d49c61b3d06",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-cannes-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-cannes-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13982,
+            "sha256": "550bb8401d4f9902478385729e28fcd3cb66c3e59410fb42f4a81b342ce8437c",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 6521543
+    },
+    {
+      "imageId": "nice-monaco-walk-01",
+      "placeId": "monaco-walk",
+      "title": "Monaco-Ville-ruelle.jpg",
+      "titleKo": "모나코 산책",
+      "description": "Une ruelle de Monaco-Ville sur le Rocher.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco-Ville-ruelle.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Monaco-Ville-ruelle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Rundvald",
+      "license": "Public Domain",
+      "licenseCode": "public-domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 1944,
+      "originalHeight": 2592,
+      "originalPath": "source/ASSETS/photos/originals/nice/nice-monaco-walk-01.jpg",
+      "originalSha256": "c1a32058ed84d5c192bc61ebef5eef0e88f96389a445922edf07fc358d943845",
+      "usage": [
+        "places/monaco-walk.html"
+      ],
+      "role": "major",
+      "region": "nice",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "모나코빌 구시가지의 골목",
+      "captionKo": "모나코 — 로셰 골목에서 포르 에르퀼과 몬테카를로로.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-monaco-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-monaco-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 104844,
+            "sha256": "07cd89363365ef57133d57a4a6a36f81ff365be37384d0a26f3c43ab8cbe326e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-monaco-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-monaco-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 11138,
+            "sha256": "042d2d450a5e102abae2eb922dcb68d67db32a0f00fba7ab215ef3a805b80f44",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "originalBytes": 2129619
+    },
+    {
+      "imageId": "luberon-lourmarin-2-01",
+      "placeId": "lourmarin-2",
+      "title": "Lourmarin dans le Luberon (Vaucluse).jpg",
+      "titleKo": "루르마랭",
+      "description": "Le village de Lourmarin dans le Luberon (Vaucluse)",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lourmarin_dans_le_Luberon_(Vaucluse).jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Lourmarin_dans_le_Luberon_%28Vaucluse%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Mathieu BROSSAIS",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "EXIF orientation corrected; cropped, resized and converted to WebP; metadata removed; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-18",
+      "originalWidth": 4032,
+      "originalHeight": 2268,
+      "originalPath": "source/ASSETS/photos/originals/luberon/luberon-lourmarin-2-01.jpg",
+      "originalSha256": "125691e3f8650ad872472cbb97edb677b8653010e01a275fbfa9041271d329df",
+      "usage": [
+        "places/lourmarin-2.html"
+      ],
+      "role": "major",
+      "region": "luberon",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "뤼베롱의 루르마랭 마을 전경",
+      "captionKo": "루르마랭 — 카뮈의 묘가 있는 마을.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-lourmarin-2-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-lourmarin-2-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 130474,
+            "sha256": "f3c98e58b1428417b1ecd2da98f75cf8c41b80c85b40319604cea70546aaead4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-lourmarin-2-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-lourmarin-2-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 14812,
+            "sha256": "0ab78166e7e7ab2174bdc1bbd85d00471488cf2b0e5f8dbd3e6955a129865bb0",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 98,
+      "storedWidth": 4000,
+      "storedHeight": 2250,
+      "originalBytes": 3032962
     }
   ],
-  "processedAt": "2026-08-15"
+  "processedAt": "2026-08-18"
 }

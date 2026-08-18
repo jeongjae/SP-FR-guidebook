@@ -1,0 +1,163 @@
+{
+ "schemaVersion": "1.0",
+ "batch": "batch5",
+ "downloadDate": "2026-08-18",
+ "region": "mixed",
+ "subjects": [
+  {
+   "placeId": "barcelona-historic-walk",
+   "imageId": "barcelona-barcelona-historic-walk-01",
+   "region": "barcelona",
+   "query": "고딕지구 산책",
+   "selectedTitle": "File:Barri Gòtic at night.jpg",
+   "titleKo": "고딕지구 산책",
+   "altKo": "밤의 바르셀로나 고딕지구 골목",
+   "captionKo": "고딕지구 — 로마 성벽 위에 중세가 얹힌 구시가.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/barcelona-historic-walk.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "barcelona-modernisme-walk",
+   "imageId": "barcelona-barcelona-modernisme-walk-01",
+   "region": "barcelona",
+   "query": "모데르니스메 산책",
+   "selectedTitle": "File:Casa Batlló 09.JPG",
+   "titleKo": "모데르니스메 산책",
+   "altKo": "파세이그 데 그라시아의 카사 바트요 외관",
+   "captionKo": "모데르니스메 산책 — 파세이그 데 그라시아를 따라 걷는다.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/barcelona-modernisme-walk.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "girona-old-town-walk",
+   "imageId": "girona-girona-old-town-walk-01",
+   "region": "girona",
+   "query": "지로나 구시가 산책",
+   "selectedTitle": "File:Pont Eiffel and river Onyar in Girona, Catalonia, Spain.JPG",
+   "titleKo": "지로나 구시가 산책",
+   "altKo": "오냐르 강변의 색색 집들과 에펠 다리",
+   "captionKo": "지로나 구시가 — 오냐르 강을 사이에 두고 걷는다.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/girona-old-town-walk.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "nice-walk",
+   "imageId": "nice-nice-walk-01",
+   "region": "nice",
+   "query": "비외 니스 산책",
+   "selectedTitle": "File:Nice-ruelle-vieux-quartiers.jpg",
+   "titleKo": "비외 니스 산책",
+   "altKo": "비외 니스의 좁은 골목",
+   "captionKo": "비외 니스 — 구시가 골목과 쿠르 살레야.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/nice-walk.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "cannes-walk",
+   "imageId": "nice-cannes-walk-01",
+   "region": "nice",
+   "query": "칸 산책",
+   "selectedTitle": "File:Le Suquet 01.jpg",
+   "titleKo": "칸 산책",
+   "altKo": "칸 르 쉬케 언덕에서 본 항구",
+   "captionKo": "칸 — 포르빌 시장에서 르 쉬케를 거쳐 크루아제트로.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/cannes-walk.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "monaco-walk",
+   "imageId": "nice-monaco-walk-01",
+   "region": "nice",
+   "query": "모나코 산책",
+   "selectedTitle": "File:Monaco-Ville-ruelle.jpg",
+   "titleKo": "모나코 산책",
+   "altKo": "모나코빌 구시가지의 골목",
+   "captionKo": "모나코 — 로셰 골목에서 포르 에르퀼과 몬테카를로로.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/monaco-walk.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "lourmarin-2",
+   "imageId": "luberon-lourmarin-2-01",
+   "region": "luberon",
+   "query": "루르마랭",
+   "selectedTitle": "File:Lourmarin dans le Luberon (Vaucluse).jpg",
+   "titleKo": "루르마랭",
+   "altKo": "뤼베롱의 루르마랭 마을 전경",
+   "captionKo": "루르마랭 — 카뮈의 묘가 있는 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/lourmarin-2.html"
+   ],
+   "regionHero": false
+  }
+ ],
+ "excluded": [
+  {
+   "placeId": "centre-pompidou",
+   "reason": "프랑스는 파노라마의 자유가 없다 — 1977년 건축이 주 피사체인 사진은 쓸 수 없다."
+  },
+  {
+   "placeId": "bourse-de-commerce-pinault-collection",
+   "reason": "검색이 엉뚱한 교회 사진을 냈다. 틀린 사진은 넣지 않는다."
+  },
+  {
+   "placeId": "musee-marmottan-monet",
+   "reason": "건물 외관 사진이 없고 소장 회화만 나온다."
+  },
+  {
+   "placeId": "marche-de-la-liberation",
+   "reason": "Commons 에 적격 사진이 없다."
+  },
+  {
+   "placeId": "carrieres-de-bibemus",
+   "reason": "현장 사진이 없고 세잔 회화만 나온다."
+  }
+ ]
+}

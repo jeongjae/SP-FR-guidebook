@@ -109,6 +109,10 @@ def search_titles(query, limit=8):
             if page.get("title", "").lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff"))]
 
 
+# 재사용·재배포가 금지되지 않은 것. 여기 없는 값도 경고만 하고 통과시킨다.
+ALLOWED_LICENSES = {"public-domain", "cc0", "cc-by", "cc-by-sa"}
+
+
 def score(info, selected):
     width, height = info["originalWidth"], info["originalHeight"]
     return {
@@ -160,10 +164,19 @@ def main():
         if selected_title not in infos:
             raise SystemExit(f"selected Commons file not found: {selected_title}")
         selected_info = infos[selected_title]
-        if selected_info["licenseCode"] not in {"public-domain", "cc0", "cc-by", "cc-by-sa"}:
-            raise SystemExit(f"selected file has disallowed/unknown license: {selected_title}")
-        if not selected_info["creator"] and selected_info["licenseCode"] not in {"public-domain", "cc0"}:
-            raise SystemExit(f"selected file creator missing: {selected_title}")
+        # Jason 지시(2026-08-18) — 라이선스·저작자 강제를 **차단이 아니라 경고**로 내린다.
+        # 재사용이 금지되지 않은 공개 사진을 폭넓게 쓰기 위해서다.
+        #
+        # 다만 두 가지는 사실로 남겨 둔다.
+        #  · 이 사이트는 gh-pages 로 공개 배포된다. '개인 사용만' 라이선스는 검사를
+        #    없앤다고 쓸 수 있게 되는 것이 아니라 빌드가 알려주지 않게 되는 것이다.
+        #  · 저작자 표시는 CC BY·CC BY-SA 의 이용 조건이다. 그래서 저작자가 비어 있으면
+        #    거부하는 대신 '저작자 미상'으로 채워 크레딧 페이지에 그대로 드러낸다.
+        if selected_info["licenseCode"] not in ALLOWED_LICENSES:
+            print(f"  ! 라이선스 확인 필요: {selected_title} ({selected_info['license']})")
+        if not selected_info["creator"]:
+            print(f"  ! 저작자 미상: {selected_title}")
+            selected_info["creator"] = "저작자 미상 (Wikimedia Commons)"
 
         for rank, title in enumerate(titles, 1):
             if title not in infos:
