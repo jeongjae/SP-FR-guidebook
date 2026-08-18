@@ -624,8 +624,8 @@
       "dateLabel": "9/4 금",
       "baseCity": "Nice",
       "theme": "Bàscara→Nice 이동",
-      "core": "Bàscara 체크아웃 후 이동수단·차량 반납지에 따라 실행",
-      "option": "도착 후 일정은 이동 확정 뒤 조정",
+      "core": "Bàscara 체크아웃→BCN 반납 12:30→VY1521 15:30→NCE 16:55→트램 2호선 이동 후 체크인(18:00~19:00)",
+      "option": "도착 후 숙소 주변 산책 및 가벼운 저녁",
       "fatigue": "4~5",
       "lock": "이동수단·차량반납",
       "sourceFiles": [
@@ -882,11 +882,11 @@
       "date": "2026-09-07",
       "dateLabel": "9/7 월",
       "baseCity": "Nice",
-      "theme": "Monaco 도시국가",
-      "core": "Monaco-Ville, Palace Square, Cathedral, Port, Monte Carlo",
-      "option": "Japanese Garden 또는 Larvotto 택1",
+      "theme": "Monaco + Menton 당일치기",
+      "core": "Nice→Monaco(Le Rocher, Port Hercule, Monte-Carlo 점심)→Menton(구시가지, 해변, 저녁)→Nice",
+      "option": "피로 시 Menton 저녁 생략 또는 Monaco 조기 복귀",
       "fatigue": "4",
-      "lock": "TER",
+      "lock": "전 구간 TER",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"

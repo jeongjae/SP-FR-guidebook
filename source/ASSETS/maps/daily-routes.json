@@ -383,13 +383,13 @@
           "placeId": "nice-airport-terminal-2",
           "order": 3,
           "plannedTime": "16:55 NCE 도착",
-          "note": "도착 터미널은 항공권 기준 재확인. 도착터미널에 따라 Tram 2 또는 택시."
+          "note": "도착 후 Tram 2(트램 2호선)를 이용해 숙소로 이동."
         },
         {
           "placeId": "nice-stay-candidate",
           "order": 4,
-          "plannedTime": "도착 +60분 체크인",
-          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
+          "plannedTime": "18:00~19:00 체크인",
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 트램 2호선 이동 후 체크인."
         }
       ],
       "segments": [
@@ -493,11 +493,11 @@
     },
     {
       "date": "2026-09-07",
-      "city": "Nice · Monaco",
-      "title": "Monaco 당일 — Monaco-Ville · Port Hercule · Monte Carlo",
+      "city": "Nice · Monaco · Menton",
+      "title": "Monaco + Menton 당일 — Monaco-Ville · Monte Carlo · Menton",
       "center": [
-        43.719,
-        7.341
+        43.74,
+        7.42
       ],
       "zoom": 11,
       "defaultMode": "transit",
@@ -505,20 +505,20 @@
         {
           "placeId": "nice-stay-candidate",
           "order": 0,
-          "plannedTime": "08:40 전후 출발",
-          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."
+          "plannedTime": "08:30 전후 출발",
+          "note": "확정 숙소 — 12 Rue Verdi (Palais ALZIRA)."
         },
         {
           "placeId": "nice-ville",
           "order": 1,
           "plannedTime": "09:00 전후 TER",
-          "note": "역내 엘리베이터·출구 확인."
+          "note": "Nice-Ville → Monaco TER (약 20~25분)."
         },
         {
           "placeId": "monaco",
           "order": 2,
-          "plannedTime": "10:15–17:00",
-          "note": "Monaco-Ville → Port Hercule → Casino Square."
+          "plannedTime": "09:30~14:00 Monaco / 14:30~20:30 Menton",
+          "note": "Monaco-Ville → Port Hercule → Monte-Carlo(점심) → Menton(구시가지·해변·저녁)."
         }
       ],
       "segments": [
