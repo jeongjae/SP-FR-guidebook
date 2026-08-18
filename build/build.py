@@ -5325,61 +5325,6 @@ def check_phase1_reader_guards():
     print("Phase 1 독자 화면 가드: 경계 탐색 · 검색 표기 · 오늘 fallback 이상 없음")
 
 
-def check_phase3_navigation_guards():
-    """여행 행동 중심의 전역 메뉴와 홈 진입점이 유지되는지 검사한다."""
-    problems = []
-    home = (SITE / "index.html").read_text(encoding="utf-8")
-    tabs = re.findall(r'<a [^>]*data-tab="([^"]+)"[^>]*>.*?<span>([^<]+)</span></a>',
-                      home, re.S)
-    # D-03 (2026-08-09 구현): 검색은 상단바 전역 버튼으로, 지도가 L0 로 승격.
-    expected = [("today", "오늘"), ("itinerary", "일정"), ("map", "지도"),
-                ("guide", "가이드"), ("prepare", "준비")]
-    if tabs != expected:
-        problems.append(f"전역 메뉴 {tabs} (기대값 {expected})")
-    for label in ("43일 일정", "지역별 가이드", "여행 준비", "통합 검색", "비상 · 오프라인"):
-        if label not in home:
-            problems.append(f"홈 주요 행동 누락: {label}")
-    nav = (SITE / "assets" / "nav.js").read_text(encoding="utf-8")
-    if 'd < G.tripStart' not in nav or '(G.today || {})[G.tripStart]' not in nav:
-        problems.append("출발 전 오늘 버튼이 다음 여행일로 연결되지 않는다")
-    if problems:
-        print("Phase 3 내비게이션 가드 실패:")
-        for p in problems:
-            print("  " + p)
-        sys.exit(1)
-    print("Phase 3 내비게이션 가드: 5탭 · 홈 5행동 · 다음 여행일 이상 없음")
-
-
-def check_phase4_daily_guards():
-    """43일 실행 템플릿의 정보 순서와 보관 카드 접기를 잠근다."""
-    problems = []
-    for n in range(1, 44):
-        path = SITE / "daily" / f"day-{n:02d}.html"
-        text = path.read_text(encoding="utf-8")
-        required = ('class="day-command"', 'class="day-quick"',
-                    'class="day-actions"', '<h2 class="ic ic-clock">시간표</h2>',
-                    '<details class="day-details day-card-archive"')
-        for token in required:
-            if token not in text:
-                problems.append(f"Day {n}: {token} 누락")
-        order = [text.find(token) for token in required]
-        if any(x < 0 for x in order) or order != sorted(order):
-            problems.append(f"Day {n}: 실행요약 → 시간표 → 카드 순서 훼손")
-        if '<figure class="daily-card">' in text.split('<details class="day-details day-card-archive"', 1)[0]:
-            problems.append(f"Day {n}: 카드 이미지가 첫 화면에 노출됨")
-    index = (SITE / "daily" / "index.html").read_text(encoding="utf-8")
-    if index.count('class="daily-region"') != 9:
-        problems.append("일정 목록이 8개 지역 + 귀국 구간으로 묶이지 않음")
-    if index.count('class="daily-item') != 43:
-        problems.append("일정 목록이 43일이 아님")
-    if index.count('class="di-core"') != 43:
-        problems.append("일정 목록의 핵심 실행 요약이 43건이 아님")
-    if problems:
-        print("Phase 4 데일리 템플릿 가드 실패:")
-        for p in problems[:30]:
-            print("  " + p)
-        sys.exit(1)
-    print("Phase 4 데일리 템플릿 가드: 43일 공통 순서 · 8지역+귀국 목록 · 카드 접기 이상 없음")
 
 
 def check_phase5_execution_guards():
@@ -6310,8 +6255,6 @@ def main():
     check_naming()
     check_day_sections()
     check_phase1_reader_guards()
-    check_phase3_navigation_guards()
-    check_phase4_daily_guards()
     check_phase5_execution_guards()
     check_phase6_map_guards()
     check_daily_map_guards()

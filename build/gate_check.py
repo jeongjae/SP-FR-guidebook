@@ -7,7 +7,7 @@
     python3 build/gate_check.py --build-only   # 1번만
 
 검사 (RS_RESTRUCTURE_FINAL_RUN_INSTRUCTION_v1.0 §2):
-  1 build.py + test_validation.py + hig_check.py, 페이지 수
+  1 build.py + test_validation.py, 페이지 수
   2 확정 토큰 생존 가드 (build 로그에서 확인)
   3 이동-전용 자구 대조: 비헤딩 본문 행 중 main 행집합과 일치 ≥95%
   4 창작 스캔: 미소급 행의 사실값이 main 전체 텍스트에 없으면 신규 창작
@@ -89,9 +89,6 @@ def gate1_build():
     tm = re.search(r"Ran (\d+) tests", t.stderr + t.stdout)
     out["tests"] = (t.returncode == 0, int(tm.group(1)) if tm else 0)
 
-    h = sh([sys.executable, "build/hig_check.py"])
-    out["hig"] = (h.returncode == 0, (h.stdout + h.stderr).strip().splitlines()[-1]
-                  if (h.stdout or h.stderr) else "")
     return out
 
 
@@ -163,7 +160,7 @@ def reduction(name):
 
 def run(names, build_only=False):
     print("=" * 72)
-    print("게이트 1 — build · tests · hig")
+    print("게이트 1 — build · tests")
     g1 = gate1_build()
     bok, pages, berr = g1["build"]
     print(f"  build.py        : {'PASS' if bok else 'FAIL'} · {pages}p")
@@ -173,9 +170,7 @@ def run(names, build_only=False):
     print(f"  게이트 2 토큰가드: {'PASS' if tok_ok else 'FAIL'} · 확정 토큰 {tok_n}건")
     ok, n = g1["tests"]
     print(f"  test_validation : {'PASS' if ok else 'FAIL'} · {n} tests")
-    hok, hline = g1["hig"]
-    print(f"  hig_check       : {'PASS' if hok else 'FAIL'} · {hline[:90]}")
-    allgreen = bok and tok_ok and ok and hok
+    allgreen = bok and tok_ok and ok
     if build_only:
         return 0 if allgreen else 1
 

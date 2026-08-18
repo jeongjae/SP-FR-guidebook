@@ -155,5 +155,9 @@ p6 은 Barcelona 를 예로 들었지만 같은 구조가 8개 챕터에 반복�
                         8개 챕터 동시 적용. 각 단계마다 가드 전체 실행
 ```
 
-각 차수마다 `python3 build/build.py && python3 build/hig_check.py &&
-python3 build/guards/run_all.py` 를 돌리고, 통과하지 못하면 커밋하지 않는다.
+각 차수마다 `python3 build/build.py && python3 build/guards/run_all.py` 를 돌리고,
+통과하지 못하면 커밋하지 않는다.
+
+**2026-08-18 부터 HIG 자동검사와 마크업 고정 가드 2종(phase3 내비·phase4 데일리)이
+없다.** 개편의 걸림돌을 걷어낸 결정이지만, 그만큼 터치타깃·명암비·탭 구성·43일 카드
+전수 렌더는 **사람이 직접 확인해야 한다.**

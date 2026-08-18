@@ -16,7 +16,23 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-from hig_check import chromium_path
+import os
+import shutil
+
+
+def chromium_path():
+    """명시 override 또는 로컬 Chromium. Playwright 관리 브라우저가 최종 폴백이다.
+
+    (hig_check.py 삭제 2026-08-18 로 이쪽으로 옮겨 왔다.)
+    """
+    override = os.environ.get("TP_GUIDEBOOK_CHROMIUM")
+    if override:
+        return override
+    for candidate in ("chromium", "chromium-browser", "google-chrome", "chrome"):
+        found = shutil.which(candidate)
+        if found:
+            return found
+    return None
 
 
 ROOT = Path(__file__).resolve().parent.parent
