@@ -1215,14 +1215,29 @@ footer p { margin: 0 0 var(--s1); }
   border-radius: var(--r-full);
 }
 
-/* 홈 제목 — 무엇을 보고 있는지 말한다. 하단탭만 있으면 이 화면이 무엇인지
-   알려 주는 것이 없었다. */
-.home-head { margin-bottom: var(--s2); }
-.home-head h1 {
-  font-size: var(--t-h1);
-  letter-spacing: -0.02em;
+/* ================= 상단바 제목 =================
+   홈처럼 올라갈 위가 없는 화면에서는 위치 경로 대신 사이트 이름을 놓는다.
+   빵부스러기가 빈 채로 남는 것보다 낫고, 본문은 바로 '오늘' 부터 시작한다.
+
+   가운데 맞춤이 성립하려면 양쪽 버튼이 같은 폭을 차지해야 한다. 뒤로가기는
+   이력이 없을 때 숨는데, display:none 으로 사라지면 제목이 왼쪽으로 밀린다 —
+   자리는 두고 보이지만 않게 한다. */
+.tb-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: var(--t-callout);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--on-brand);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.home-head .meta { margin-top: var(--s2); }
+[data-bar="center"] .tb-title { text-align: center; }
+[data-bar="center"] .topbar .tb-back[hidden] {
+  display: inline-flex;
+  visibility: hidden;
+}
 
 /* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */
 .ic-today::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228.2%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223.2%22%20fill%3D%22currentColor%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
