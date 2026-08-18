@@ -120,12 +120,16 @@ def copy_assets(root: Path, site: Path, catalog: dict) -> None:
         shutil.copy2(source, target)
 
 
+# 화면이 깨지거나 출처를 잃는 항목만 필수다.
 PHOTO_REQUIRED = {
     "imageId", "placeId", "title", "source", "sourcePage", "originalFile",
-    "creator", "license", "licenseUrl", "changes", "downloadDate", "usage",
+    "license", "changes", "downloadDate", "usage",
     "role", "status", "altKo", "captionKo", "originalWidth", "originalHeight",
     "originalPath", "originalSha256", "variants",
 }
+# 비어 있으면 막는 대신 이 값으로 채운다 — 크레딧 페이지에 그대로 드러나므로
+# 채워야 할 목록이 화면에서 바로 보인다 (Jason 지시 2026-08-18).
+PHOTO_DEFAULTS = {"creator": "저작자 미상", "licenseUrl": ""}
 
 
 def load_photo_manifest(root: Path) -> dict:
@@ -137,14 +141,19 @@ def load_photo_manifest(root: Path) -> dict:
     seen = set()
     for asset in payload.get("images", []):
         image_id = asset.get("imageId", "")
+        for field, fallback in PHOTO_DEFAULTS.items():
+            if not asset.get(field):
+                asset[field] = fallback
         missing = sorted(field for field in PHOTO_REQUIRED if not asset.get(field))
         if missing:
             raise ValueError(f"photo manifest incomplete {image_id}: {', '.join(missing)}")
         if not image_id or image_id in seen:
             raise ValueError(f"duplicate or missing photo imageId: {image_id!r}")
         seen.add(image_id)
+        # Jason 지시(2026-08-18) — 라이선스 종류로 사진을 막지 않는다. 다만 크레딧에는
+        # 있는 그대로 표기되므로, 아래 경고가 곧 '확인이 필요한 목록'이다.
         if asset.get("licenseCode") not in {"public-domain", "cc0", "cc-by", "cc-by-sa"}:
-            raise ValueError(f"disallowed photo license: {image_id}")
+            print(f"  ! 라이선스 확인 필요: {image_id} ({asset.get('license')})")
         if asset.get("status") not in {"processed", "inserted"}:
             raise ValueError(f"photo not processed: {image_id}")
         for variants in asset["variants"].values():

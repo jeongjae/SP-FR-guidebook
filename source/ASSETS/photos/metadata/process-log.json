@@ -1,5 +1,5 @@
 {
-  "processedAt": "2026-08-15",
+  "processedAt": "2026-08-18",
   "images": [
     {
       "imageId": "barcelona-city-aerial-01",
@@ -2960,39 +2960,6 @@
       }
     },
     {
-      "imageId": "lyon-bellecour-01",
-      "source": "source/ASSETS/photos/originals/lyon/lyon-bellecour-01.jpg",
-      "originalSize": [
-        4000,
-        2667
-      ],
-      "variants": {
-        "hero": [],
-        "content": [
-          {
-            "path": "source/ASSETS/photos/processed/content/lyon-bellecour-01-content-1280.webp",
-            "sitePath": "assets/images/content/lyon-bellecour-01-content-1280.webp",
-            "width": 1280,
-            "height": 853,
-            "bytes": 107548,
-            "sha256": "37333f906f90ba71bdc21af257d76344ae5cea5c8f0ad98e58332fd6fd0e2f85",
-            "quality": 78
-          }
-        ],
-        "thumbnail": [
-          {
-            "path": "source/ASSETS/photos/processed/thumbnails/lyon-bellecour-01-thumb-480.webp",
-            "sitePath": "assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp",
-            "width": 480,
-            "height": 320,
-            "bytes": 16612,
-            "sha256": "d53d6033f7d4155f746a1b2d4d7f06a2e8808fe9dd03391d8729364603d578fa",
-            "quality": 73
-          }
-        ]
-      }
-    },
-    {
       "imageId": "lyon-fourviere-01",
       "source": "source/ASSETS/photos/originals/lyon/lyon-fourviere-01.jpg",
       "originalSize": [
@@ -4921,6 +4888,963 @@
             "height": 320,
             "bytes": 17244,
             "sha256": "1ab942e6fefa30614345ba13966048b3a7173d2cbe1a9397e3dbd23d61c6ed1a",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-cloitre-saint-trophime-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-cloitre-saint-trophime-01.jpg",
+      "originalSize": [
+        2560,
+        1920
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-cloitre-saint-trophime-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-cloitre-saint-trophime-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 52580,
+            "sha256": "f53f2456ed2f57ada192f1a940a53d86d619cc333f4a8e614623c1e31739fd49",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-cloitre-saint-trophime-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-cloitre-saint-trophime-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 8322,
+            "sha256": "448f1fb6d793a2e9941139d38053c47a2cf5bec888f20e3a477afa27b189e164",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-place-du-forum-arles-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-place-du-forum-arles-01.jpg",
+      "originalSize": [
+        2667,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-place-du-forum-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-place-du-forum-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 1920,
+            "bytes": 222904,
+            "sha256": "1714ed7d030d1b6490b577691ea407fe3fd5395c95f94e5da31c492dce17313d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-place-du-forum-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-place-du-forum-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 29214,
+            "sha256": "ac1a9bf928dd0f616942cfd2bfcbd4f0cffa50a72e62f54474f77d2bb8d42204",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-la-roquette-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-la-roquette-01.jpg",
+      "originalSize": [
+        3467,
+        2774
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-la-roquette-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-la-roquette-01-content-1280.webp",
+            "width": 1280,
+            "height": 1024,
+            "bytes": 105958,
+            "sha256": "63dcee346202f832a448ea9b2cfca9fd29c98282d67aed20d237f72a2d653afc",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-la-roquette-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-la-roquette-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15754,
+            "sha256": "d53d0ba5fe71174b3513dc80bee4727b15e1b5ec705609ea8fe658bb48d6713b",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-glanum-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-glanum-01.jpg",
+      "originalSize": [
+        2048,
+        1536
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-glanum-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-glanum-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 168696,
+            "sha256": "c04ddc9dde646ab58f514855cd55f3da9807f972956abb3931a5b396fbce0f0b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-glanum-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-glanum-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23340,
+            "sha256": "dd374dcfb6515e18bae50c1b9c065c5bb6e09b595ba22108e8aae9accb886617",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-saint-paul-de-mausole-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-saint-paul-de-mausole-01.jpg",
+      "originalSize": [
+        2592,
+        1944
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-saint-paul-de-mausole-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-saint-paul-de-mausole-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 299926,
+            "sha256": "51f18a2d662ae165b6288236fa516c3da7ed582b2ac97effc3510de20b255815",
+            "quality": 75
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-saint-paul-de-mausole-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-saint-paul-de-mausole-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31758,
+            "sha256": "d737b1c574f2bb2366cff837f1aeee03195410c41ed035ed51a82bc41089c871",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-montagne-sainte-victoire-terrain-des-peintres-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-montagne-sainte-victoire-terrain-des-peintres-01.jpg",
+      "originalSize": [
+        3264,
+        2448
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-montagne-sainte-victoire-terrain-des-peintres-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-montagne-sainte-victoire-terrain-des-peintres-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 115274,
+            "sha256": "64b30fbb3887c533cbd019058eb21ffb6a003ec15367171ded1eeb183dcbee46",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-montagne-sainte-victoire-terrain-des-peintres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-montagne-sainte-victoire-terrain-des-peintres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 10442,
+            "sha256": "a094a8c972a1dca1e446d192b12b0eafe221b4ab5821d56e278696277400e17b",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-le-panier-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-le-panier-01.jpg",
+      "originalSize": [
+        1944,
+        2592
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-le-panier-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-le-panier-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 132666,
+            "sha256": "c36e62ea303d10d7f3e58f08b17fc9a440c4ac4d734fe49f02881338aa6f9109",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-le-panier-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-le-panier-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16084,
+            "sha256": "a1dec996cf088b5ace35513bd0382360c9ca853db27094bb4280e5cc9b7a8649",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-notre-dame-de-la-garde-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-notre-dame-de-la-garde-01.jpg",
+      "originalSize": [
+        4000,
+        1389
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-notre-dame-de-la-garde-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-notre-dame-de-la-garde-01-content-1280.webp",
+            "width": 1280,
+            "height": 444,
+            "bytes": 132160,
+            "sha256": "82f316723c5668b14347dd64ffabc99735e5a1cc95313a5f8e8a43f2c803fafe",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-notre-dame-de-la-garde-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-notre-dame-de-la-garde-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34300,
+            "sha256": "e3750cee772c729ee56ec740f6f0f55408ea740283a7d9baabd1af3887f1edb1",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-bellecour-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-bellecour-01.jpg",
+      "originalSize": [
+        2272,
+        1704
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-bellecour-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-bellecour-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 42204,
+            "sha256": "0a5ef36c5c269adbf502fe33a1e165917d5117c0588093668d4137b0b0fe13cc",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-bellecour-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 7374,
+            "sha256": "4f26619012f4babdb12fec0a95955f94673548306084f67ca1b55261736dbcef",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "lyon-parc-de-la-tete-d-or-01",
+      "source": "source/ASSETS/photos/originals/lyon/lyon-parc-de-la-tete-d-or-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-parc-de-la-tete-d-or-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-parc-de-la-tete-d-or-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 299516,
+            "sha256": "b7a2aaffc02ef8ea202a8b8e1fa1854f56d759335012d2d1312bca1b982b0f72",
+            "quality": 45
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-parc-de-la-tete-d-or-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-parc-de-la-tete-d-or-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 47838,
+            "sha256": "b30be848b3a0b552d51ce892e53696c138e53a0522654052f31ddbab20bdaa5c",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-rotonde-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-rotonde-01.jpg",
+      "originalSize": [
+        1984,
+        1488
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-rotonde-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-rotonde-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 163894,
+            "sha256": "f7199d4af63aa58418c92c5c74518887acd2c32bcbacd22a689d157d75c851b2",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-rotonde-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-rotonde-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22646,
+            "sha256": "ef8223553aac8b61b7af1ff8b9dd969e90825e0055d06a48008f0f23682bb0fc",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-bonnieux-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-bonnieux-01.jpg",
+      "originalSize": [
+        3648,
+        2736
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-bonnieux-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-bonnieux-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 137130,
+            "sha256": "8de0756a98097b8a3622d500551228d0bddd6eb3c310f5782c7581eb3bcbd167",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-bonnieux-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-bonnieux-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17870,
+            "sha256": "04b3bf7fdb54683cd2ef90930b692ff2aa784b337291c170004dd3118d729034",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-goult-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-goult-01.jpg",
+      "originalSize": [
+        3888,
+        2592
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-goult-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-goult-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 266158,
+            "sha256": "950d93b9d4660dadb1c4a09e824516c792ed7632152651d8b02e2670ef5c05fc",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-goult-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-goult-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35532,
+            "sha256": "4d513a66a3d1cf7f28da438e6ea0a28864cf5856ea2ad78b7695f960628fad45",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-menerbes-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-menerbes-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-menerbes-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-menerbes-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 263686,
+            "sha256": "5235e34bcc23708f5706e3458cea8b14247715cca6cccfc204e39996b1b6352a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-menerbes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-menerbes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27546,
+            "sha256": "7aa4d0d3dfa6b883590bf819da4b28214fd808bd80a1d74d9a7a6e3ab538ea15",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-oppede-le-vieux-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-oppede-le-vieux-01.jpg",
+      "originalSize": [
+        1936,
+        1288
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-oppede-le-vieux-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-oppede-le-vieux-01-content-1280.webp",
+            "width": 1280,
+            "height": 852,
+            "bytes": 144604,
+            "sha256": "eb7f98b98d2b566f56f19e156c01c735e3169181cab2bfc6372d0277cdf3002e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-oppede-le-vieux-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-oppede-le-vieux-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23634,
+            "sha256": "1a278bef24416c175fe342137292e79c7df414f8b7b77c939ad0b5bd1345895f",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-passeig-de-la-muralla-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-passeig-de-la-muralla-01.jpg",
+      "originalSize": [
+        2976,
+        2232
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-passeig-de-la-muralla-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-passeig-de-la-muralla-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 264580,
+            "sha256": "c3dad536f6c7cabea31f8c8020a87475c678d37772532d5819d0978df4040931",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-passeig-de-la-muralla-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-passeig-de-la-muralla-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 38138,
+            "sha256": "6d07990673dbe8f212d5cdaf4778698d80966e2121b59d4fb52c38eefb2755d9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-pals-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-pals-01.jpg",
+      "originalSize": [
+        1704,
+        2272
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-pals-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-pals-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 264456,
+            "sha256": "28cd108497213174eba042f8ee5b628e3b8db4d2d2562f3a46490b784c087bac",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-pals-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-pals-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19596,
+            "sha256": "c2c2443b2ef7251c2973c6240f66f7273c79540f99a99fc4447fd65382da8c10",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-peralada-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-peralada-01.jpg",
+      "originalSize": [
+        3008,
+        2000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-peralada-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-peralada-01-content-1280.webp",
+            "width": 1280,
+            "height": 851,
+            "bytes": 193180,
+            "sha256": "fa0abd0e74d907873b61037ea92fb6aa46560b1dc4067d05ce419d89606ec088",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-peralada-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-peralada-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24170,
+            "sha256": "84d0becf347419d9bd62e87522c51fac4c0a431c4dd625a823b9762373cc739c",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-bastide-du-jas-de-bouffan-01",
+      "source": "source/ASSETS/photos/originals/aix/aix-bastide-du-jas-de-bouffan-01.jpg",
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-bastide-du-jas-de-bouffan-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-bastide-du-jas-de-bouffan-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 298982,
+            "sha256": "8b760e2d7d17f11d29b3bc32926ea50433b43a51b9127ba6a50b6cf4fdcd7d00",
+            "quality": 57
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 45578,
+            "sha256": "429e81b60c67815c3c49296cb2fd768df2f9b94a728190917b65b5fa1b998319",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-fondation-vincent-van-gogh-arles-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-fondation-vincent-van-gogh-arles-01.jpg",
+      "originalSize": [
+        2648,
+        2112
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-fondation-vincent-van-gogh-arles-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-fondation-vincent-van-gogh-arles-01-content-1280.webp",
+            "width": 1280,
+            "height": 1021,
+            "bytes": 162608,
+            "sha256": "41713cb8118c20348baa09c11e8d82c6cb4fcd3b43e7589d5833259fde3ad362",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-fondation-vincent-van-gogh-arles-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-fondation-vincent-van-gogh-arles-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24596,
+            "sha256": "dbb79333164d5ae1dd1b8e6121e78da5539f27b1beae21d48f6d21ff9e3b34d9",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-de-l-orangerie-01",
+      "source": "source/ASSETS/photos/originals/paris/paris-musee-de-l-orangerie-01.jpg",
+      "originalSize": [
+        3072,
+        2304
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-de-l-orangerie-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-de-l-orangerie-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 110488,
+            "sha256": "67a1791df98c411022ffe2b596f0876de7c6bdf69ea2cd18d4adceda7980e00c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-de-l-orangerie-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-de-l-orangerie-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16800,
+            "sha256": "d4c1f40e4bd4a048fb0d8ffdf23b0f41c198da811a6add7a3e9033b0659fb2c0",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "avignon-carrieres-des-lumieres-01",
+      "source": "source/ASSETS/photos/originals/avignon/avignon-carrieres-des-lumieres-01.jpg",
+      "originalSize": [
+        4000,
+        2248
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-carrieres-des-lumieres-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-carrieres-des-lumieres-01-content-1280.webp",
+            "width": 1280,
+            "height": 719,
+            "bytes": 30584,
+            "sha256": "13bd4293c07c8285d40183f5bfeb23a4083f8a5f3f5b1110aa627b7dc37ae0db",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-carrieres-des-lumieres-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-carrieres-des-lumieres-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 6384,
+            "sha256": "35bb341bd06cac0392dd1a5f1188c411376dd2a749749d03ce9acc16eb482563",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "barcelona-barcelona-historic-walk-01",
+      "source": "source/ASSETS/photos/originals/barcelona/barcelona-barcelona-historic-walk-01.jpg",
+      "originalSize": [
+        2272,
+        1704
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-barcelona-historic-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-barcelona-historic-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 54552,
+            "sha256": "1057bf8948035c9d5e45ed290667d81cd983fbf49dde29cbd1351caac61c7e22",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-barcelona-historic-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-barcelona-historic-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 11700,
+            "sha256": "e67b647cfb76d59b09b5fd91662331e64d5a16f7cd123f29e030f4ed9fe5f226",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "barcelona-barcelona-modernisme-walk-01",
+      "source": "source/ASSETS/photos/originals/barcelona/barcelona-barcelona-modernisme-walk-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-barcelona-modernisme-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-barcelona-modernisme-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 117838,
+            "sha256": "296d599edfc84b2d6b81f7f56b2cd63663821de54b5e1a8f96848ee8c81ace25",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-barcelona-modernisme-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-barcelona-modernisme-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25504,
+            "sha256": "b2dbbb722045709399a95517cd04b38f335e370b7087334e3d830da44eac7dbf",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "girona-girona-old-town-walk-01",
+      "source": "source/ASSETS/photos/originals/girona/girona-girona-old-town-walk-01.jpg",
+      "originalSize": [
+        3664,
+        2748
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-girona-old-town-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-girona-old-town-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 144908,
+            "sha256": "1b7ed62e66232d581bbac6ffad0d3cb00324ade448665c96d4a523aab104218f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-girona-old-town-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-girona-old-town-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21450,
+            "sha256": "3d73187a77813baf1cb03c6952342e0185e2db51473354b285a74ee08057ac85",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-nice-walk-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-nice-walk-01.jpg",
+      "originalSize": [
+        1944,
+        2592
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-nice-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-nice-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 219172,
+            "sha256": "366d62b32250f7fa0c03be9b426dc65f45b3212cfbd8a88a2100adc790111584",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-nice-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-nice-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22070,
+            "sha256": "fe5a4bdcfc395d5c84b8d890579df5540b5049d51742935dd9d1d2731e60deeb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-cannes-walk-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-cannes-walk-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-cannes-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-cannes-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 90762,
+            "sha256": "a550ab53149c77d6945ac68ecd075f702f384242c6ecab4d19421d49c61b3d06",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-cannes-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-cannes-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13982,
+            "sha256": "550bb8401d4f9902478385729e28fcd3cb66c3e59410fb42f4a81b342ce8437c",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-monaco-walk-01",
+      "source": "source/ASSETS/photos/originals/nice/nice-monaco-walk-01.jpg",
+      "originalSize": [
+        1944,
+        2592
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-monaco-walk-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-monaco-walk-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 104844,
+            "sha256": "07cd89363365ef57133d57a4a6a36f81ff365be37384d0a26f3c43ab8cbe326e",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-monaco-walk-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-monaco-walk-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 11138,
+            "sha256": "042d2d450a5e102abae2eb922dcb68d67db32a0f00fba7ab215ef3a805b80f44",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "luberon-lourmarin-2-01",
+      "source": "source/ASSETS/photos/originals/luberon/luberon-lourmarin-2-01.jpg",
+      "originalSize": [
+        4000,
+        2250
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-lourmarin-2-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-lourmarin-2-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 130474,
+            "sha256": "f3c98e58b1428417b1ecd2da98f75cf8c41b80c85b40319604cea70546aaead4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-lourmarin-2-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-lourmarin-2-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 14812,
+            "sha256": "0ab78166e7e7ab2174bdc1bbd85d00471488cf2b0e5f8dbd3e6955a129865bb0",
             "quality": 73
           }
         ]

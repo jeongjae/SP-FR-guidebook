@@ -1,0 +1,463 @@
+{
+ "schemaVersion": "1.0",
+ "batch": "batch4",
+ "downloadDate": "2026-08-18",
+ "region": "mixed",
+ "subjects": [
+  {
+   "placeId": "cloitre-saint-trophime",
+   "imageId": "avignon-cloitre-saint-trophime-01",
+   "region": "avignon",
+   "query": "생트로핌 회랑",
+   "selectedTitle": "File:Cloître Saint-Trophime Arles Conservation.jpg",
+   "titleKo": "생트로핌 회랑",
+   "altKo": "아를 생트로핌 성당의 로마네스크 회랑 안뜰과 조각 기둥",
+   "captionKo": "아를 생트로핌 회랑 — 로마네스크와 고딕이 한 안뜰에서 만난다.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/cloitre-saint-trophime.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "place-du-forum-arles",
+   "imageId": "avignon-place-du-forum-arles-01",
+   "region": "avignon",
+   "query": "포룸 광장",
+   "selectedTitle": "File:Arles - Place du Forum in the evening (Q109606553).jpg",
+   "titleKo": "포룸 광장",
+   "altKo": "저녁의 아를 포룸 광장과 카페 테라스",
+   "captionKo": "아를 포룸 광장의 저녁 — 반 고흐가 그린 카페 테라스가 있는 자리다.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/place-du-forum-arles.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "la-roquette",
+   "imageId": "avignon-la-roquette-01",
+   "region": "avignon",
+   "query": "라 로케트",
+   "selectedTitle": "File:Arles Roquette église Ste Croix3.jpg",
+   "titleKo": "라 로케트",
+   "altKo": "아를 라 로케트 구역의 골목과 생트크루아 교회",
+   "captionKo": "라 로케트 — 아를의 옛 뱃사람 동네.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/la-roquette.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "glanum",
+   "imageId": "avignon-glanum-01",
+   "region": "avignon",
+   "query": "글라눔",
+   "selectedTitle": "File:Glanum escalier source sacrée.jpg",
+   "titleKo": "글라눔",
+   "altKo": "글라눔 유적의 성스러운 샘으로 내려가는 계단",
+   "captionKo": "글라눔 — 생레미 남쪽의 그리스·로마 도시 유적.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/glanum.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "saint-paul-de-mausole",
+   "imageId": "avignon-saint-paul-de-mausole-01",
+   "region": "avignon",
+   "query": "생폴 드 모솔",
+   "selectedTitle": "File:Chevet de Saint-Paul de Mausole.JPG",
+   "titleKo": "생폴 드 모솔",
+   "altKo": "생폴 드 모솔 수도원의 후진",
+   "captionKo": "생폴 드 모솔 — 반 고흐가 1889–90년 머문 수도원.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/saint-paul-de-mausole.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "montagne-sainte-victoire-terrain-des-peintres",
+   "imageId": "aix-montagne-sainte-victoire-terrain-des-peintres-01",
+   "region": "aix",
+   "query": "생빅투아르 산",
+   "selectedTitle": "File:Sainte-victoire landscape.jpg",
+   "titleKo": "생빅투아르 산",
+   "altKo": "엑상프로방스 동쪽으로 솟은 생빅투아르 산의 능선",
+   "captionKo": "생빅투아르 — 세잔이 평생 반복해 그린 산.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/montagne-sainte-victoire-terrain-des-peintres.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "le-panier",
+   "imageId": "aix-le-panier-01",
+   "region": "aix",
+   "query": "르 파니에",
+   "selectedTitle": "File:Street in Marseille - Panier.jpg",
+   "titleKo": "르 파니에",
+   "altKo": "마르세유 르 파니에 지구의 좁은 골목",
+   "captionKo": "르 파니에 — 마르세유에서 가장 오래된 동네.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/le-panier.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "notre-dame-de-la-garde",
+   "imageId": "aix-notre-dame-de-la-garde-01",
+   "region": "aix",
+   "query": "노트르담 드 라 가르드",
+   "selectedTitle": "File:Hafen von Marseille-Notre Dame de la Garde.jpg",
+   "titleKo": "노트르담 드 라 가르드",
+   "altKo": "마르세유 항구 위 언덕의 노트르담 드 라 가르드 성당",
+   "captionKo": "노트르담 드 라 가르드 — 마르세유 어디서나 보이는 언덕 위 성당.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/notre-dame-de-la-garde.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "bellecour",
+   "imageId": "lyon-bellecour-01",
+   "region": "lyon",
+   "query": "벨쿠르 광장",
+   "selectedTitle": "File:Lyon PlaceBellecour.JPG",
+   "titleKo": "벨쿠르 광장",
+   "altKo": "리옹 벨쿠르 광장과 루이 14세 기마상",
+   "captionKo": "벨쿠르 광장 — 프레스킬의 중심이자 리옹의 좌표 원점.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/bellecour.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "parc-de-la-tete-d-or",
+   "imageId": "lyon-parc-de-la-tete-d-or-01",
+   "region": "lyon",
+   "query": "테트 도르 공원",
+   "selectedTitle": "File:Parc de la Tête d'Or, Lyon, France - nature à proximité du vélodrome.jpg",
+   "titleKo": "테트 도르 공원",
+   "altKo": "리옹 테트 도르 공원의 호수와 산책로",
+   "captionKo": "테트 도르 공원 — 리옹의 큰 도시공원.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/parc-de-la-tete-d-or.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "rotonde",
+   "imageId": "aix-rotonde-01",
+   "region": "aix",
+   "query": "로통드 분수",
+   "selectedTitle": "File:Fontaine de la Rotonde - Aix-en-Provence.JPG",
+   "titleKo": "로통드 분수",
+   "altKo": "엑상프로방스 로통드 분수와 미라보 거리 입구",
+   "captionKo": "로통드 분수 — 미라보 거리가 시작되는 지점.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/rotonde.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "bonnieux",
+   "imageId": "luberon-bonnieux-01",
+   "region": "luberon",
+   "query": "보니외",
+   "selectedTitle": "File:Bonnieux - Eglise Neuve.jpg",
+   "titleKo": "보니외",
+   "altKo": "뤼베롱 언덕에 층층이 앉은 보니외 마을",
+   "captionKo": "보니외 — 뤼베롱 남사면의 계단식 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/bonnieux.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "goult",
+   "imageId": "luberon-goult-01",
+   "region": "luberon",
+   "query": "굴트",
+   "selectedTitle": "File:Village de Goult dans le Luberon.JPG",
+   "titleKo": "굴트",
+   "altKo": "굴트 마을의 언덕과 지붕들",
+   "captionKo": "굴트 — 뤼베롱에서 조용한 편에 속하는 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/goult.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "menerbes",
+   "imageId": "luberon-menerbes-01",
+   "region": "luberon",
+   "query": "메네르브",
+   "selectedTitle": "File:Menerbes Plaine du Luberon.JPG",
+   "titleKo": "메네르브",
+   "altKo": "메네르브 마을과 뤼베롱 평원",
+   "captionKo": "메네르브 — 능선을 따라 길게 앉은 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/menerbes.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "oppede-le-vieux",
+   "imageId": "luberon-oppede-le-vieux-01",
+   "region": "luberon",
+   "query": "오페드 르 비외",
+   "selectedTitle": "File:Oppède le Vieux - Vue de l'aire de battage.jpg",
+   "titleKo": "오페드 르 비외",
+   "altKo": "오페드 르 비외의 폐촌과 성터",
+   "captionKo": "오페드 르 비외 — 버려졌다가 부분적으로 되살아난 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/oppede-le-vieux.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "lourmarin-2",
+   "imageId": "luberon-lourmarin-2-01",
+   "region": "luberon",
+   "query": "루르마랭 성",
+   "selectedTitle": "File:Le château renaissance à Lourmarin 2.JPG",
+   "titleKo": "루르마랭 성",
+   "altKo": "루르마랭 르네상스 성의 외관",
+   "captionKo": "루르마랭 성 — 프로방스 최초의 르네상스 성.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/lourmarin-2.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "passeig-de-la-muralla",
+   "imageId": "girona-passeig-de-la-muralla-01",
+   "region": "girona",
+   "query": "지로나 성벽",
+   "selectedTitle": "File:Vistes des de la muralla de Girona 09.jpg",
+   "titleKo": "지로나 성벽",
+   "altKo": "지로나 성벽 산책로에서 내려다본 구시가지",
+   "captionKo": "지로나 성벽 — 카롤링거 성벽 위를 걷는 길.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/passeig-de-la-muralla.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "pals",
+   "imageId": "girona-pals-01",
+   "region": "girona",
+   "query": "팔스",
+   "selectedTitle": "File:Torre de les Hores.jpg",
+   "titleKo": "팔스",
+   "altKo": "팔스의 시간의 탑(Torre de les Hores)",
+   "captionKo": "팔스 — 엠포르다의 중세 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/pals.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "peralada",
+   "imageId": "girona-peralada-01",
+   "region": "girona",
+   "query": "페랄라다 성",
+   "selectedTitle": "File:Castell de Peralada.JPG",
+   "titleKo": "페랄라다 성",
+   "altKo": "페랄라다 성 외관",
+   "captionKo": "페랄라다 성 — 엠포르다 북부의 성과 마을.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/peralada.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "bastide-du-jas-de-bouffan",
+   "imageId": "aix-bastide-du-jas-de-bouffan-01",
+   "region": "aix",
+   "query": "자스 드 부팡",
+   "selectedTitle": "File:Bastide du Jas de Bouffan (30457411).jpg",
+   "titleKo": "자스 드 부팡",
+   "altKo": "세잔 가족의 바스티드 자스 드 부팡 건물",
+   "captionKo": "자스 드 부팡 — 세잔이 청년기를 보낸 집.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/bastide-du-jas-de-bouffan.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "fondation-vincent-van-gogh-arles",
+   "imageId": "avignon-fondation-vincent-van-gogh-arles-01",
+   "region": "avignon",
+   "query": "반 고흐 재단 (아를)",
+   "selectedTitle": "File:Place Honoré Clair2.jpg",
+   "titleKo": "반 고흐 재단 (아를)",
+   "altKo": "아를 오노레 클레르 광장과 재단 건물 외관",
+   "captionKo": "반 고흐 재단 — 15세기 저택을 고쳐 쓴 아를의 전시공간.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/fondation-vincent-van-gogh-arles.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "musee-de-l-orangerie",
+   "imageId": "paris-musee-de-l-orangerie-01",
+   "region": "paris",
+   "query": "오랑주리 미술관",
+   "selectedTitle": "File:Musée de l’Orangerie exterior.JPG",
+   "titleKo": "오랑주리 미술관",
+   "altKo": "튈르리 정원의 오랑주리 미술관 외관",
+   "captionKo": "오랑주리 — 모네의 수련 대장식화가 있는 미술관.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/musee-de-l-orangerie.html"
+   ],
+   "regionHero": false
+  },
+  {
+   "placeId": "carrieres-des-lumieres",
+   "imageId": "avignon-carrieres-des-lumieres-01",
+   "region": "avignon",
+   "query": "카리에르 데 뤼미에르",
+   "selectedTitle": "File:Carrières de Lumières Les Baux de Provence 2.JPG",
+   "titleKo": "카리에르 데 뤼미에르",
+   "altKo": "레보 채석장 내부의 거대한 석벽 공간",
+   "captionKo": "카리에르 데 뤼미에르 — 채석장 석벽이 영상의 스크린이 된다.",
+   "role": "major",
+   "focus": {
+    "x": 0.5,
+    "y": 0.45
+   },
+   "usage": [
+    "places/carrieres-des-lumieres.html"
+   ],
+   "regionHero": false
+  }
+ ],
+ "excluded": [
+  {
+   "placeId": "centre-pompidou",
+   "reason": "프랑스는 파노라마의 자유가 없다. 1977년 건축이 주 피사체인 사진은 사진가 라이선스로 건축 저작권이 해소되지 않는다. text-only."
+  },
+  {
+   "placeId": "carrieres-de-bibemus",
+   "reason": "Commons 검색에서 현장 사진을 찾지 못했다. 세잔 회화만 나와 장소 식별용으로 쓸 수 없다."
+  },
+  {
+   "placeId": "musee-marmottan-monet",
+   "reason": "건물 외관 사진을 찾지 못했다. 소장 회화만 나온다."
+  },
+  {
+   "placeId": "marche-de-la-liberation",
+   "reason": "Commons 에 적격 사진이 없다."
+  }
+ ]
+}
