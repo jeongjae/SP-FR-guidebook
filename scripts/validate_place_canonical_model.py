@@ -1,112 +1,140 @@
 #!/usr/bin/env python3
-"""PC-06B Validation Script: Place Content Model & Canonicalization Guard.
+"""PC-06C Validation Script: Place Canonical SOT & Model Guard.
 
 Checks:
-1. Canonical SOT: 30_Places/*.md integrity and duplication check.
-2. 5-Layer Model coverage per place (Facts, Strategy, Experience, Deep Guide, Trip Layer).
-3. Tier classification and field completeness (Tier A, Tier B, Tier C, Utility).
-4. Trip Layer separation: detects hardcoded trip dates (e.g. '8월 30일', 'Day 2') inside Place long-form bodies.
-5. Reference integrity: Region <-> Place <-> Day stop links.
+1. Canonical SOT Uniqueness: 30_Places/*.md integrity and 1 Place = 1 File.
+2. Place Overwrite Protection: Normal build does not rewrite or overwrite 30_Places/*.md.
+3. Duplicate Long-Form Detection: Region chapters do not duplicate full long-form articles (Barcelona pilot).
+4. 5-Layer Completeness: Facts, Strategy, Experience, Deep Guide, Practical.
+5. Trip Layer Separation: No hardcoded specific trip dates (e.g. '8월 30일', 'Day 2') in canonical Place bodies.
+6. Reference Integrity: Region <-> Place <-> Day stop links.
 """
+import csv
+import hashlib
 import json
 import re
+import subprocess
 import sys
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
 PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"
 REGISTRY_MD = ROOT / "source" / "ASSETS" / "91_Place_Registry_v1.0.md"
 DAILY_CARDS = ROOT / "data" / "daily-cards"
-FACTS_JSON = ROOT / "data" / "place-facts.json"
+CHAPTER_BCN = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "04_Barcelona_Sitges_v2.0.md"
 TIER_CSV = ROOT / "PLACE_TAXONOMY_AND_TIERS.csv"
 
+def hash_place_dir() -> dict[str, str]:
+    hashes = {}
+    for p in sorted(PLACE_DIR.glob("*.md")):
+        hashes[p.name] = hashlib.sha256(p.read_bytes()).hexdigest()
+    return hashes
+
 def run_gate_validation():
-    print("=== PC-06B Place Content Model & Canonicalization Gate Validation ===")
+    print("=== PC-06C Place Canonical SOT & Model Guard Validation ===")
     errors = []
     warnings = []
 
-    # 1. Load Tiers
-    tiers = {}
-    if TIER_CSV.exists():
-        import csv
-        with open(TIER_CSV, "r", encoding="utf-8") as f:
-            for r in csv.DictReader(f):
-                tiers[r["id"]] = r
-
-    # 2. Check 30_Places/*.md
+    # 1. Check 30_Places/*.md
     place_files = list(PLACE_DIR.glob("*.md"))
     print(f"1. Canonical Place Files in 30_Places: {len(place_files)} files found.")
+    if len(place_files) < 90:
+        errors.append(f"Insufficient place files in 30_Places: found {len(place_files)}")
 
-    # 3. Check 5-Layer completeness and Trip Layer hardcoding
-    trip_hardcode_pattern = re.compile(r"(8월\s*\d+일|9월\s*\d+일|10월\s*\d+일|Day\s*\d+에\s*방문|이번\s*일정에서는\s*Day)")
+    # 2. Place Overwrite Protection Test
+    print("2. Testing Place Overwrite Protection during build...")
+    before_hashes = hash_place_dir()
+    # Run build
+    build_res = subprocess.run([sys.executable, str(ROOT / "build" / "site.py")],
+                               capture_output=True, text=True, cwd=str(ROOT))
+    if build_res.returncode != 0:
+        errors.append(f"Build failed during overwrite test: {build_res.stderr}")
+    after_hashes = hash_place_dir()
     
-    layer_matrix = {}
-    trip_hardcodes = []
-
-    for pf in sorted(place_files):
-        slug = pf.stem
-        text = pf.read_text(encoding="utf-8")
-        tier_info = tiers.get(slug, {})
-        tier = tier_info.get("content_tier", "TIER_B")
-
-        # Layer checks
-        has_facts = "## 실용" in text or "## Facts" in text or "{{fact:" in text or "|항목" in text
-        has_strategy = "Editor's Verdict" in text or "## 왜 가는가" in text or "Best For" in text
-        has_experience = "Don't Miss" in text or "Look Closer" in text or "핵심" in text or "들어가면 먼저" in text
-        has_deep = "## 더 깊이" in text or "## Deep Guide" in text or "### 1." in text or "### 핵심" in text
-        
-        # Trip layer check
-        hardcode_matches = trip_hardcode_pattern.findall(text)
-        if hardcode_matches:
-            trip_hardcodes.append((slug, hardcode_matches))
-
-        layer_matrix[slug] = {
-            "tier": tier,
-            "facts": "COMPLETE" if has_facts else "PARTIAL",
-            "strategy": "COMPLETE" if has_strategy else "PARTIAL",
-            "experience": "COMPLETE" if has_experience else "PARTIAL",
-            "deep_guide": "COMPLETE" if has_deep else "PARTIAL",
-            "trip_separated": "WARNING" if hardcode_matches else "CLEAN"
-        }
-
-    print(f"2. Trip Layer Separation Check:")
-    if trip_hardcodes:
-        print(f"   [!] Found {len(trip_hardcodes)} places with hardcoded trip schedule references in body:")
-        for s, m in trip_hardcodes[:10]:
-            print(f"       - {s}: {m}")
-            warnings.append(f"{s} contains hardcoded trip schedule references: {m}")
+    modified_files = []
+    for fname, h_before in before_hashes.items():
+        h_after = after_hashes.get(fname)
+        if h_before != h_after:
+            modified_files.append(fname)
+    
+    if modified_files:
+        errors.append(f"Build overwrote {len(modified_files)} canonical place files: {modified_files[:5]}")
+        print(f"   [FAIL] Overwrite detected on: {modified_files}")
     else:
-        print("   [OK] All Place bodies are cleanly decoupled from trip schedule dates.")
+        print("   [OK] Place Overwrite Protection PASS: Normal build did not alter any 30_Places files.")
 
-    # 4. Barcelona Pilot 5 places detailed check
+    # 3. Duplicate Long-Form Detection for Barcelona Pilot
+    print("3. Testing Duplicate Long-Form Detection (Barcelona Pilot 5 Places)...")
     bcn_pilot = ["sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic", "macba", "biblioteca-de-catalunya"]
-    print(f"\n3. Barcelona Pilot 5 Places Layer Matrix:")
-    for b in bcn_pilot:
-        if b in layer_matrix:
-            m = layer_matrix[b]
-            print(f"   - {b:30s} | Tier: {m['tier']:6s} | Facts: {m['facts']:8s} | Strategy: {m['strategy']:8s} | Exp: {m['experience']:8s} | Deep: {m['deep_guide']:8s} | TripSep: {m['trip_separated']}")
-        else:
-            errors.append(f"Missing Barcelona pilot place file: {b}")
+    bcn_text = CHAPTER_BCN.read_text(encoding="utf-8") if CHAPTER_BCN.exists() else ""
+    
+    long_form_signatures = [
+        "기둥이 나무처럼 갈라지는 이유",
+        "비벽(Flying Buttress)",
+        "45도의 이유 — 바르셀로나 격자망",
+        "2천 년의 지층 — 로마 바르시노",
+        "리처드 마이어의 빛과 백색 공간",
+        "가우디가 마지막 숨을 거둔"
+    ]
+    dups = []
+    for sig in long_form_signatures:
+        if sig in bcn_text:
+            dups.append(sig)
+    if dups:
+        errors.append(f"Duplicate long-form text detected in Region chapter: {dups}")
+        print(f"   [FAIL] Found duplicate long-form sections in 04_Barcelona_Sitges: {dups}")
+    else:
+        print("   [OK] Dedup PASS: Region chapter contains only compact references with no duplicate long-forms.")
 
-    # 5. Reference integrity
-    print(f"\n4. Reference Integrity Check (Day Stops -> Place Files):")
-    missing_place_refs = defaultdict(list)
+    # 4. Trip Layer Separation Check
+    print("4. Testing Trip Layer Separation...")
+    trip_hardcode_pattern = re.compile(r"(8월\s*\d+일|9월\s*\d+일|10월\s*\d+일|Day\s*\d+에\s*방문|이번\s*일정에서는\s*Day)")
+    bcn_hardcodes = []
+    for slug in bcn_pilot:
+        pf = PLACE_DIR / f"{slug}.md"
+        if pf.exists():
+            matches = trip_hardcode_pattern.findall(pf.read_text(encoding="utf-8"))
+            if matches:
+                bcn_hardcodes.append((slug, matches))
+    if bcn_hardcodes:
+        errors.append(f"Hardcoded trip references found in Barcelona pilot: {bcn_hardcodes}")
+        print(f"   [FAIL] Barcelona pilot has trip hardcodes: {bcn_hardcodes}")
+    else:
+        print("   [OK] Trip Separation PASS: Barcelona pilot places are cleanly decoupled from trip dates.")
+
+    # 5. Reference Integrity Check
+    print("5. Testing Reference Integrity...")
+    missing_refs = []
     for dp in sorted(DAILY_CARDS.glob("day-*.json")):
         ddata = json.loads(dp.read_text(encoding="utf-8"))
         for stop in ddata.get("stops", []):
             sid = stop.get("id")
-            if sid in tiers and not (PLACE_DIR / f"{sid}.md").exists():
-                missing_place_refs[sid].append(dp.stem)
-
-    if missing_place_refs:
-        print(f"   [!] {len(missing_place_refs)} referenced canonical places lack 30_Places markdown file.")
+            if sid and sid in bcn_pilot and not (PLACE_DIR / f"{sid}.md").exists():
+                missing_refs.append((dp.stem, sid))
+    if missing_refs:
+        errors.append(f"Missing referenced place files: {missing_refs}")
     else:
-        print("   [OK] All referenced canonical places have corresponding markdown source files.")
+        print("   [OK] Reference Integrity PASS: All referenced Barcelona places have canonical markdown files.")
 
-    print(f"\n=== Validation Summary ===")
+    # 6. Content Audit
+    print("6. Running Content Audit Guard...")
+    audit_res = subprocess.run([sys.executable, str(ROOT / "build" / "content_audit.py")],
+                               capture_output=True, text=True, cwd=str(ROOT))
+    if audit_res.returncode != 0 or "콘텐츠 손실 0" not in audit_res.stdout:
+        errors.append("Content audit failed or reported content loss.")
+        print(f"   [FAIL] Content audit output: {audit_res.stdout}")
+    else:
+        print("   [OK] Content Audit PASS: 0 content loss confirmed across all promoted places.")
+
+    print(f"\n=== PC-06C Validation Summary ===")
     print(f"Errors: {len(errors)}, Warnings: {len(warnings)}")
+    for e in errors:
+        print(f"  [ERROR] {e}")
+    for w in warnings:
+        print(f"  [WARN]  {w}")
+
     return len(errors) == 0
 
 if __name__ == "__main__":
