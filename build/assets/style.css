@@ -973,3 +973,93 @@ footer p { margin: 0 0 var(--s1); }
 .scroll-x > * { flex: 0 0 78%; scroll-snap-align: start; }
 @media (min-width: 600px) { .scroll-x > * { flex-basis: 42%; } }
 @media (min-width: 900px) { .scroll-x > * { flex-basis: 30%; } }
+
+/* ================= 터치 타깃 보정 =================
+   실측(build/viewport_check.py)으로 44pt 를 못 채우던 것들. 장갑 낀 손과
+   흔들리는 기차 안에서도 눌려야 한다. 눈에 보이는 크기는 그대로 두고
+   눌리는 면적만 키운다. */
+
+/* 섹션 헤더의 '전체' 같은 보조 링크 */
+.sec-head a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding-inline: var(--s2);
+  margin-inline-end: calc(var(--s2) * -1);
+}
+
+/* L2 탭 · 칩 · 지도 전환 — 전부 44 로 올린다 */
+.tabs a,
+.chip,
+.map-toggle button { min-height: var(--tap); }
+
+/* 타임라인의 장소 링크. 하루 화면에서 장소로 넘어가는 주 경로다. */
+.tl-name a {
+  display: inline-block;
+  padding-block: 0.6rem;
+  margin-block: -0.6rem;
+}
+
+/* 지도의 목록 대체 — 타일이 없을 때 이게 유일한 조작 대상이다 */
+.map-list { margin: 0; padding: var(--s2) var(--s4) var(--s4); }
+.map-list li { margin: 0; }
+.map-list a {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+}
+
+/* NEXT 카드의 장소 링크 — 하루 화면에서 가장 먼저 눌리는 자리다 */
+.action-what a {
+  display: inline-block;
+  padding-block: 0.7rem;
+  margin-block: -0.7rem;
+}
+
+/* ================= 데스크톱 — 같은 mental model, 다른 자리 =================
+   탭 5개는 그대로다. 다만 마우스는 화면 아래 끝까지 내려가지 않는다 —
+   데스크톱에서는 위로 올린다. 순서·라벨·아이콘은 건드리지 않는다. */
+@media (min-width: 768px) {
+  body { padding-bottom: var(--s7); padding-top: 56px; }
+
+  .bottomnav {
+    top: 0;
+    bottom: auto;
+    grid-template-columns: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--s2);
+    height: 56px;
+    padding: 0 var(--s4);
+    border-top: 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .bottomnav a {
+    flex-direction: row;
+    gap: var(--s2);
+    min-height: var(--tap);   /* 데스크톱이라고 44 를 깎지 않는다 — 터치 노트북이 있다 */
+    align-self: center;
+    padding: 0 var(--s4);
+    border-radius: var(--r-full);
+    font-size: var(--t-small);
+  }
+  .bottomnav a:hover { background: var(--primary-soft); color: var(--primary); }
+  .bottomnav a[aria-current="page"] { background: var(--primary-soft); }
+  .bottomnav a[aria-current="page"]::before { display: none; }
+
+  /* 상단바와 탭 스트립은 전역 내비 아래로 내려간다 */
+  .topbar { top: 56px; }
+  .tabs { top: calc(56px + var(--tap)); }
+
+  /* 여정 — 데스크톱에선 스크롤이 아니라 격자로 편다 */
+  .scroll-x {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: visible;
+  }
+  .scroll-x > * { flex-basis: auto; }
+}
+
+@media (min-width: 1100px) {
+  .scroll-x { grid-template-columns: repeat(4, 1fr); }
+}

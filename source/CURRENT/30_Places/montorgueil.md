@@ -19,6 +19,7 @@ source: source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md
 | 오후 | **Bourse de Commerce** — 중앙 원형공간과 전시 1개에 집중 · 90–120분 |
 | 이어서 | **Rue Montorgueil · Les Halles 주변** — 도보권 |
 | 저녁 | 숙소식 또는 가까운 비스트로. 고정공연 없음 |
+
 > **부르스와 몽토르괴이가 도보로 붙어 있다**
 > 저장소 방문지 자료가 부르스를 **"Les Halles·Louvre권 도보"** 로 적고 있다. 두 곳을 한 날에 넣은 것이 이동 때문이 아니라 **거리가 붙어 있어서**다.
 

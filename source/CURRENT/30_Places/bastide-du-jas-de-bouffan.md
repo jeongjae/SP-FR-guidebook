@@ -33,6 +33,7 @@ source: source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md
 | 기간·요금 | 로브 아틀리에와 동일 |
 | 소요 | 90분 내외 {{badge:field-recheck|재확인}} |
 | 식사 | 오랑주리 레스토랑 운영 |
+
 > **⚠ 두 곳을 다 넣으면 Day 15가 꽉 찬다.** 시장·아틀리에·스케치 구성에 자스 드 부팡을 더하면 스케치 시간이 사라진다. **선택 등급으로 둔다.**
 
 ---

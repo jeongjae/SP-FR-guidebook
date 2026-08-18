@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 from datetime import date
@@ -28,7 +29,9 @@ from shell import (GRADE_BADGE, SITE_TITLE, alert, badge, esc, ic, page,
                    redirect, sec_head, tabs_strip)
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = ROOT / "site"
+# 출력 경로. SPFR_SITE_DIR 로 바꿀 수 있다 — 같은 워크트리에서 다른 빌드가
+# 동시에 돌 때 서로의 산출물을 지우지 않게 하기 위한 것이다.
+SITE = Path(os.environ.get("SPFR_SITE_DIR") or (ROOT / "site"))
 ASSETS = ROOT / "build" / "assets"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 TRACKER_XLSX = ROOT / "source" / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
@@ -364,12 +367,13 @@ def build_place(p: Place, trip: Trip) -> str:
                         f"<td>{value} {mark}{src}</td></tr>")
         parts.append(f'<div class="table-wrap"><table><tbody>{"".join(rows)}'
                      f"</tbody></table></div>")
+    if p.practical_md.strip():
+        if not facts:
+            parts.append(sec_head("PRACTICAL", "실용", rule=True))
+        parts.append(f'<div class="prose">{md(strip_tokens(p.practical_md))}</div>')
 
     # --- Deep Guide -------------------------------------------------------
     body = strip_tokens(p.body_md)
-    body = re.sub(r"^##\s+(왜 가는가|실용)\s*$.*?(?=^##\s|\Z)", "", body,
-                  flags=re.M | re.S)
-    body = re.sub(r"^##\s+더 깊이\s*$", "", body, flags=re.M)
     if body.strip():
         parts.append(sec_head("DEEP GUIDE", "더 깊이", rule=True))
         parts.append(f'<div class="prose">{md(body)}</div>')
@@ -761,6 +765,8 @@ def build_home(trip: Trip, res: dict) -> str:
 </article>""" for r in trip.regions)
 
     body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+
+<h1 class="visually-hidden">오늘</h1>
 
 <section id="today-panel" class="stack" aria-live="polite">
   <noscript><p class="meta">오늘 화면은 기기의 날짜로 고릅니다.

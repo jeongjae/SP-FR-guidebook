@@ -98,6 +98,7 @@ class Place:
     why_go: str = ""            # Experience 층
     dont_miss: list[str] = field(default_factory=list)
     body_md: str = ""           # Deep Guide — 장문 정본
+    practical_md: str = ""      # 원고가 들고 있던 실용 표 (facts 를 보완한다)
     facts: dict[str, Fact] = field(default_factory=dict)
     photo: dict | None = None
     days: list[int] = field(default_factory=list)
@@ -407,7 +408,21 @@ def load_place_bodies() -> dict[str, dict]:
                 else:
                     meta[k] = v.strip('"')
             text = text[m.end():]
-        meta["body"] = text.strip()
+        # 본문을 세 층으로 가른다. 승격 스크립트가 '## 왜 가는가' ·
+        # '## 더 깊이' · '## 실용' 로 써 두었다. 여기서 나누지 않으면
+        # 렌더러가 층을 구분하지 못하고, 층을 구분하려다 절을 지우게 된다.
+        layers = {"why_go": [], "deep": [], "practical": []}
+        current = "deep"
+        for line in text.strip().splitlines():
+            head = re.match(r"^##\s+(왜 가는가|더 깊이|실용)\s*$", line)
+            if head:
+                current = {"왜 가는가": "why_go", "더 깊이": "deep",
+                           "실용": "practical"}[head.group(1)]
+                continue
+            layers[current].append(line)
+        meta["why_go"] = "\n".join(layers["why_go"]).strip()
+        meta["practical_md"] = "\n".join(layers["practical"]).strip()
+        meta["body"] = "\n".join(layers["deep"]).strip()
         out[path.stem] = meta
     return out
 
@@ -494,6 +509,7 @@ def load_trip() -> Trip:
             why_go=body.get("why_go", ""),
             dont_miss=body.get("dont_miss", []) or [],
             body_md=body.get("body", ""),
+            practical_md=body.get("practical_md", ""),
             facts=facts.get(row["slug"], {}),
             photo=images.get(row["slug"]),
         )

@@ -21,6 +21,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 | 오후 | Marais 골목 · **Place des Vosges** · **Carnavalet** 선택 | Marais 골목 · **Archives** · Place des Vosges |
 | 실내 | 박물관은 **한 곳만** | **Carnavalet / MEP / Palais Galliera 중 1곳** |
 | 저녁 | 숙소식 또는 **Café des Musées** | 재즈 또는 연극 선택 |
+
 > **일요일에 마레를 넣은 이유**
 > 파리는 일요일에 대부분 닫는다. **Marché des Enfants Rouges 는 화–일 운영이고 월요일이 휴무다** ( `31. 시장과 장보기`). 그래서 일요일에 열리고 월요일에 닫는다.
 > Day 30 이 일요일, Day 38 이 월요일인 것과 맞물린다.

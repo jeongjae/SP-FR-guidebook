@@ -21,6 +21,7 @@ source: source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md
 | 하산 | **Abbesses → South Pigalle** |
 | 저녁 | **Le Bon Georges** 또는 9구 비스트로 (예약 권장) |
 | 체류 | 2.5–4시간 · 거리는 무료 |
+
 > **푸니쿨라를 타지 마라**
 > 지시다. **푸니쿨라보다 북쪽에서 완만하게 접근한다.** 라마르크-콜랭쿠르에서 들어가면 오르막이 줄고, 관광 동선이 아니라 실제 주거 골목을 지난다.
 

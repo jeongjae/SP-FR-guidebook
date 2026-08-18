@@ -22,6 +22,7 @@ source: source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md
 | 오후 | **Notre-Dame** |
 | 늦은 오후 | **Île de la Cité → Île Saint-Louis** — 강변·서점·카페 |
 | 저녁 | 5구 동네 비스트로 — Les Papilles · Bouillon Racine 또는 숙소권 |
+
 > **실내를 욕심내지 마라**
 > **팡테옹 내부가 삭제 1순위다.** 도착 다음 날이고, 이 날의 목적은 기념물이 아니라 **집 주변을 익히는 것**이다.
 > 우천이면 노트르담 + **Shakespeare and Company** 주변 서점 + 카페로 압축한다.
