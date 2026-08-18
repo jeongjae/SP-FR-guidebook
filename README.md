@@ -81,7 +81,6 @@ Google Maps 링크와 OpenStreetMap 배경 타일은 저장 대상이 아니며 
 pip install markdown openpyxl   # 최초 1회
 python3 build/build.py
 python3 build/pwa_check.py
-python3 build/hig_check.py
 ```
 
 빌드는 내부 링크 무결성 검사를 포함하며, `site/`를 전부 새로 생성한다.
@@ -115,7 +114,7 @@ Day 1–3(2026-08-29~31)은 기존 Barcelona 실행지도와 일정 원고를 �
 2. `daily-maps.json`의 `days`에 날짜 객체를 하나 추가한다.
 3. 장소 `id`는 날짜 안에서 고유하게, `order`는 당일 실행 순서로 둔다.
 4. `routes`의 `from`과 `to`에는 같은 날짜의 장소 `id`만 사용한다.
-5. `python build/build.py`와 `python build/hig_check.py`를 실행한다. 빌드는
+5. `python build/build.py`를 실행한다. 빌드는
    날짜·필수 필드·좌표 범위·장소 유형·경로 참조·개인정보 규칙을 검사한다.
 
 ### Google Maps URL 규칙
