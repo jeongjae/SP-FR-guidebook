@@ -3,52 +3,95 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Roussillon · Sentier des Ocres — 2026 유럽 여행 가이드북</title>
+<title>Roussillon · Sentier des Ocres — 유럽 43일 가이드북</title>
+<meta name="description" content="옛 채석장 사이로 난 나무 그늘 길을 걷는다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="luberon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/luberon/index.html">Luberon</a><span class="tb-sep" aria-hidden="true">›</span><b>Roussillon · Sentier des Ocres</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/luberon.html">Luberon</a><span class="sep" aria-hidden="true">›</span><b>Roussillon · Sentier des Ocres</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Roussillon · Sentier des Ocres</h1><figure class="guide-photo guide-photo--content" data-photo-id="luberon-roussillon-ocres-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/luberon-roussillon-ocres-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/luberon-roussillon-ocres-01-content-1280.webp" alt="소나무 사이로 솟은 루시용의 붉은 황토 절벽 — 아래 오솔길의 사람들이 절벽의 규모를 보여준다"
-      width="1280" height="1075" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>상티에 데 조크르의 황토 절벽. 오른쪽 아래 사람들과 견주면 규모가 보인다.</span><span class="media-credit">Photo: François de Dijon · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#luberon-roussillon-ocres-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/luberon/index.html">Luberon</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><a class="pl-day" href="../daily/day-17.html">Day 17 · 9/14</a><span class="pl-basis">시간표 기준</span></td></tr><tr><th>상세</th><td><a href="../chapters/luberon/places.html#roussillon-sentier-des-ocres-must">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/luberon.html">Luberon 실행지도</a> · <span class="pl-basis">핀 이름 Roussillon</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://roussillon-en-provence.fr/">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Roussillon%2C_Vaucluse">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Roussillon">Google Maps</a><a class="ref ic ic-map" href="../maps/luberon.html">Luberon 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><blockquote>
-<p><strong>요금</strong> 성인 €8 · 12–17세 €4 · 12세 미만 무료 · <strong>운영</strong> 9/1–9/30 09:00–19:00 · 최종입장 30분 전 · <strong>휴관</strong> 9월은 매일 개방(주간 휴무 없음). 12/25·1/1 휴장, 1~2월 일부 휴장일. 단, 화재위험 도지사령·폭우·뇌우 시 임시 폐쇄 — 전날 18시에 공지
-<strong>예약</strong> 예약 불가·불필요 — 당일 현장 매표소에서만 구매(개인 3.5유로). 9월 09:30 개방·최종입장 18:30·폐장 19:00</p>
-</blockquote>
-<h2 id="무엇인가-두-세기의-채굴이-만든-지형">무엇인가 — 두 세기의 채굴이 만든 지형</h2>
-<p>옛 채석장 사이로 난 나무 그늘 길을 걷는다. 두 세기의 오커 채굴과 세월이 빚어낸 이 독특한 풍경의 강렬한 색을 본다.</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/content/luberon-roussillon-ocres-01-content-1280.webp" srcset="../assets/images/content/luberon-roussillon-ocres-01-content-1280.webp 1280w" sizes="100vw" alt="소나무 사이로 솟은 루시용의 붉은 황토 절벽 — 아래 오솔길의 사람들이 절벽의 규모를 보여준다" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Luberon</span></div>
+    <h1>Roussillon · Sentier des Ocres</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <p class="hero-dek">옛 채석장 사이로 난 나무 그늘 길을 걷는다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Roussillon,_Vaucluse" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Roussillon_Vaucluse_sentier_des_ocres_2013_08.jpg" rel="nofollow noopener">François de Dijon</a> · CC BY-SA 3.0</p>
+<div class="sec-head-rule"><span class="label">WHY GO</span><h2>왜 가는가</h2></div>
+<div class="prose"><p>옛 채석장 사이로 난 나무 그늘 길을 걷는다. 두 세기의 오커 채굴과 세월이 빚어낸 이 독특한 풍경의 강렬한 색을 본다.</p>
 <p>마을 바로 옆의 옛 오커 광산이다. 오랫동안 오커(천연 점토)를 캐낸 탓에 협곡이 대단히 깊다. 지금은 절벽의 물결과 능선 사이를 파고드는 탐방로가 됐다. 가장 인상적인 것은 길 위에서 보게 되는 점토 색의 다양성으로, 짙은 붉은색에서 황금빛 노랑, 짙은 갈색까지 이어진다.</p>
-<p>라벤더 밭을 기대하고 갔다가 화성을 만났다.</p>
-<h2 id="관람-요령">관람 요령</h2>
+<p>라벤더 밭을 기대하고 갔다가 화성을 만났다.</p></div>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>9/1–9/30 09:00–19:00 · 최종입장 30분 전 <br><span class="meta">2026-08-17 신규 검증</span></td></tr><tr><th scope="row">휴무</th><td>9월은 매일 개방(주간 휴무 없음). 12/25·1/1 휴장, 1~2월 일부 휴장일. 단, 화재위험 도지사령·폭우·뇌우 시 임시 폐쇄 — 전날 18시에 공지 <br><span class="meta">https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/</span></td></tr><tr><th scope="row">요금</th><td>성인 €8 · 12–17세 €4 · 12세 미만 무료 <br><span class="meta">2026-08-17 신규 검증</span></td></tr><tr><th scope="row">예약</th><td>예약 불가·불필요 — 당일 현장 매표소에서만 구매(개인 3.5유로). 9월 09:30 개방·최종입장 18:30·폐장 19:00 <br><span class="meta">https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/</span></td></tr></tbody></table></div>
+<div class="prose"><h4>실용</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>요금</td>
+<td><strong>€3.5</strong> 내외 (재확인)</td>
+</tr>
+<tr>
+<td>예약</td>
+<td>필요 없다. 매표소에 줄이 설 수 있다</td>
+</tr>
+<tr>
+<td>운영</td>
+<td>2월 중순–12월 매일. 여름 9:00–19:30 · 계절별 편차 크고 마감 30분 전 입장 마감 (9월 시간 재확인)</td>
+</tr>
+<tr>
+<td>소요</td>
+<td>30분 또는 50분 코스</td>
+</tr>
+<tr>
+<td>주차</td>
+<td>유료. 24시간 €4 정액 — 계획가(2026-08 조사). 탐방로에서 가장 가까운 주차장은 "Les Ocres"</td>
+</tr>
+<tr>
+<td>무료 주차</td>
+<td>경기장 주차장(약 1km)과 그리모 주차장(약 2km)이 무료</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>마을 시장은 목요일이다.</strong> 목요일에 오면 지역 농산물·라벤더 꿀·과일·샤퀴트리·수공예를 파는 주간 시장이 선다. <strong>9월 14일은 월요일이라 시장이 없다.</strong> 마을 자체를 보러 가는 날이다.</p>
+</blockquote>
+<hr />
+<hr /></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>관람 요령</h3>
 <blockquote>
 <p><strong>두 코스 중 긴 쪽을 택하라</strong>
 안내지에 30분 코스와 50분 코스 두 개가 표시돼 있다. 긴 쪽도 그리 오래 걸리지 않으니 가능하면 이쪽을 택하라. 풍경이 아름답고 난이도는 전혀 어렵지 않다.</p>
@@ -63,65 +106,66 @@
 여름에는 물과 자외선 차단제를 챙겨라. 협곡 벽이 빛을 되쏘아 밝기가 배가된다.</p>
 <p><strong>계단 350개로 시작한다</strong>
 탐방로는 350개의 계단으로 시작한다. 그래서 휠체어·유모차는 이용할 수 없다. 예약은 필요 없다. 목줄을 채운 개는 입장 가능하고, 피크닉은 금지다.</p>
-</blockquote>
-<h2 id="실용">실용</h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>값</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>요금</td>
-<td><strong>€3.5</strong> 내외 <span class="badge badge-field-recheck">재확인</span></td>
-</tr>
-<tr>
-<td>예약</td>
-<td>필요 없다. 매표소에 줄이 설 수 있다</td>
-</tr>
-<tr>
-<td>운영</td>
-<td>2월 중순–12월 매일. 여름 9:00–19:30 · 계절별 편차 크고 마감 30분 전 입장 마감 <span class="badge badge-field-recheck">9월 시간 재확인</span></td>
-</tr>
-<tr>
-<td>소요</td>
-<td>30분 또는 50분 코스</td>
-</tr>
-<tr>
-<td>주차</td>
-<td>유료. 24시간 €4 정액 — 계획가(2026-08 조사). 탐방로에서 가장 가까운 주차장은 "Les Ocres"</td>
-</tr>
-<tr>
-<td>무료 주차</td>
-<td>경기장 주차장(약 1km)과 그리모 주차장(약 2km)이 무료</td>
-</tr>
-<tr>
-<td>&gt; <strong>마을 시장은 목요일이다.</strong> 목요일에 오면 지역 농산물·라벤더 꿀·과일·샤퀴트리·수공예를 파는 주간 시장이 선다. <strong>9월 14일은 월요일이라 시장이 없다.</strong> 마을 자체를 보러 가는 날이다.</td>
-<td></td>
-</tr>
-</tbody>
-</table></div>
-<hr>
-<hr>
+</blockquote></div>
+<div class="sec-head"><h2>Luberon 의 다른 장소</h2><a href="../guide/luberon.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-senanque-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-senanque-01-thumb-480.webp 480w" sizes="84px" alt="종탑과 반원형 후진이 보이는 로마네스크 양식의 세낭크 수도원 석조 건물, 앞쪽에 꽃이 지지 않은 초록 라벤더 밭" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/abbaye-de-senanque.html">Abbaye de Sénanque</a></h3>
+    <p class="card-dek">1148년에 세워졌다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-bonnieux-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-bonnieux-01-thumb-480.webp 480w" sizes="84px" alt="뤼베롱 언덕에 층층이 앉은 보니외 마을" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bonnieux.html">Bonnieux</a></h3>
+    <p class="card-dek">계곡 건너 라코스트와 마주 보는 사면 마을로, 뤼베롱 마을 중 수직 낙차가 가장 크다</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-coustellet-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-coustellet-01-thumb-480.webp 480w" sizes="84px" alt="쿠스텔레 생산자 시장 거리 — 차양 아래 비누·직물·올리브유 좌판과 장 보는 사람들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/coustellet.html">Coustellet 생산자 시장</a></h3>
+    <p class="card-dek">쿠스텔레 시장은 4월부터 12월까지 일요일 8:00–13:00에 선다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-gordes-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-gordes-01-thumb-480.webp 480w" sizes="84px" alt="돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/gordes.html">Gordes</a></h3>
+    <p class="card-dek">바위 봉우리 위에 지어진 마을로, 갈로-로마 시대부터 방어의 기능을 가졌다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-goult-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-goult-01-thumb-480.webp 480w" sizes="84px" alt="굴트 마을의 언덕과 지붕들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/goult.html">Goult</a></h3>
+    <p class="card-dek">관광버스가 들르지 않는 언덕마을이라는 것이 이 마을의 가치다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-lourmarin-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-lourmarin-01-thumb-480.webp 480w" sizes="84px" alt="뤼베롱 산자락 아래 루르마랭 마을 전경, 성의 종탑과 교회 탑이 지붕들 위로 솟아 있다" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/lourmarin.html">Lourmarin</a></h3>
+    <p class="card-dek">카뮈는 새 스승 장 그르니에를 만났는데, 그르니에가 1930–31년에 로랑비베르 재단(뤼르마랭 성)의 입주자였다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

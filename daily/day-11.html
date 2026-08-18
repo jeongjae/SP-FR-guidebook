@@ -3,187 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 11 · 9/8 화 · Nice — 2026 유럽 여행 가이드북</title>
+<title>Day 11 · Nice — 유럽 43일 가이드북</title>
+<meta name="description" content="생활·회복·선택문화">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="nice">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/nice/index.html">Nice</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 11</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 11</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-10.html">← 앞</a><a href="day-12.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-06.html" title="Day 6">9/3</a><a href="day-07.html" title="Day 7">9/4</a><a href="day-08.html" title="Day 8">9/5</a><a href="day-09.html" title="Day 9">9/6</a><a href="day-10.html" title="Day 10">9/7</a><a href="day-11.html" class="here" title="Day 11">9/8</a><a href="day-12.html" title="Day 12">9/9</a><a href="day-13.html" title="Day 13">9/10</a><a href="day-14.html" title="Day 14">9/11</a><a href="day-15.html" title="Day 15">9/12</a><a href="day-16.html" title="Day 16">9/13</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-07.html">Day 7</a><a href="../daily/day-08.html">Day 8</a><a href="../daily/day-09.html">Day 9</a><a href="../daily/day-10.html">Day 10</a><a href="../daily/day-11.html" aria-current="page">Day 11</a><a href="../daily/day-12.html">Day 12</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 11 · 9/8 화</span></span><a href="../chapters/nice/schedule.html"><b>지역</b><span>Nice</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 11 · 9/8 화 · Nice</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="nice-promenade-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/nice-promenade-01-hero-800.webp 800w, ../assets/images/hero/nice-promenade-01-hero-1280.webp 1280w, ../assets/images/hero/nice-promenade-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/nice-promenade-01-hero-1280.webp" alt="니스 프롬나드 데 장글레와 푸른 지중해 해안선"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>니스의 해변 생활축인 프롬나드 데 장글레.</span><span class="media-credit">Photo: The original uploader was Floflo at French Wikipedia . · <a href="https://creativecommons.org/licenses/by-sa/2.5" target="_blank" rel="noopener license">CC BY-SA 2.5</a> · <a href="../about/photo-credits.html#nice-promenade-01">사진 정보</a></span></figcaption>
-</figure>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>회복·시장·사진미술관 선택</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>느린 시작</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>세탁·렌터카 준비 2시간 보호</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/nice/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/nice.html"><b class="ic ic-map" aria-hidden="true"></b>Nice 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>07:30–08:15</td>
-<td>Jason 선택 러닝 또는 늦잠</td>
-<td>다리 피로가 있으면 완전휴식</td>
-</tr>
-<tr>
-<td>09:20–10:30</td>
-<td><strong>Marché de la Libération</strong></td>
-<td>실제 장보기·9/9 차량간식 준비</td>
-</tr>
-<tr>
-<td>10:45–12:30</td>
-<td><strong>Musée de la Photographie Charles Nègre 선택</strong></td>
-<td>화요일 10:00–18:00 운영. 피로하면 생략</td>
-</tr>
-<tr>
-<td>12:45–13:30</td>
-<td>가벼운 점심</td>
-<td>시장재료 또는 숙소권 점심</td>
-</tr>
-<tr>
-<td>13:30–15:30</td>
-<td>숙소 휴식·세탁</td>
-<td>체크아웃·렌터카 서류·짐 재분류</td>
-</tr>
-<tr>
-<td>15:30–17:30</td>
-<td>선택 모듈</td>
-<td>Promenade 카페, 해변산책, Julia 수영 중 1개</td>
-</tr>
-<tr>
-<td>17:30–18:30</td>
-<td>9/9 준비</td>
-<td>물·간식·면허·예약번호·주유/보험 확인</td>
-</tr>
-<tr>
-<td>19:30–21:00</td>
-<td>Nice 마지막 저녁</td>
-<td>과식하지 않고 이동일 전 음주 최소화</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="2" aria-label="피로도 2 / 5"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><b>2/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/marche-de-la-liberation.html">Marché de la Libération <b>Recommended</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="nice-생활회복일-시장-사진미술관-선택-세탁과-해변">Nice 생활·회복일: 시장, 사진미술관 선택, 세탁과 해변</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 장거리 당일치기 후 누적된 피로를 니스 생활밀착형 동선으로 해소하고, 다음 날 차량 이동을 준비한다.</li>
-<li><strong>상태</strong>: <strong>자유</strong> | 날씨 의존성: 무</li>
-<li><strong>첫 행동·첫 예약</strong>: 09:20 Marché de la Libération 생활시장 장보기 | <strong>마지막 귀가</strong>: 자가 조리 저녁</li>
-</ul>
-<h4 id="핵심-행동-최대-3개">핵심 행동 (최대 3개)</h4>
-<ol>
-<li><strong>Marché de la Libération</strong>: 주민들이 애용하는 부엌 시장에서 저녁 조리용 식재료와 차량 간식 구매.</li>
-<li><strong>Musée de la Photographie</strong>: 화요일 유일하게 운영되는 사진미술관 선택적 관람 (Matisse, Chagall 휴관).</li>
-<li><strong>숙소 휴식 및 세탁</strong>: 빨래방 이용 및 짐 재분류, 다음 날 렌터카 서류 등 확인.</li>
-</ol>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-지도">오늘 지도</h4>
-<h4 id="식사-및-카페">식사 및 카페</h4>
-<ul>
-<li><strong>점심</strong>: Libération 시장 조달 푸드 또는 숙소권 간단식 - 예산 €10–20/인</li>
-<li><strong>저녁</strong>: <strong>숙소 자가 조리</strong> (시장 식재료 활용한 건강식 및 피로 회복)</li>
-</ul>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ol>
-<li><strong>[1순위 삭제]</strong>: 사진미술관 관람 (생략하고 늦잠 및 숙소 휴식 연장)</li>
-<li><strong>[2순위 삭제]</strong>: 오후 해변 산책 및 수영 모듈 (숙소 내 완전 휴식)</li>
-</ol>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<ul>
-<li><strong>우천 시</strong>: 해변 산책 생략, 숙소 바로 옆 코인세탁소 이용 및 실내 완전 휴식.</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>화요일 휴관·회복일 과밀화</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>사진미술관·추가마을</dd></div><div class="ds-item"><dt>대체안</dt><dd>숙소생활·카페</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Libération 시장·숙소식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>사진미술관·렌터카 준비</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-11">
-<h2 id="daily-map-title-11" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Libération 시장과 사진미술관 — 니스 마지막 날</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="market" aria-pressed="false">시장</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=43.6996749%2C7.2608829&amp;destination=43.70841%2C7.26133&amp;travelmode=walking">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="nice-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="nice-stay-candidate" aria-pressed="false"><strong>0. Palais ALZIRA (12 Rue Verdi)</strong><span>숙소 · 09:00 전후 출발</span><small>확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=12+Rue+Verdi%2C+06000+Nice">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.6996749%2C7.2608829&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="marche-de-la-liberation" data-type="market"><button class="gm-card-main" type="button" data-place-id="marche-de-la-liberation" aria-pressed="false"><strong>1. Libération Market</strong><span>시장 · 09:20–10:30</span><small>실제 장보기 · 9/9 차량 간식 준비.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Lib%C3%A9ration+Market">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.70841%2C7.26133&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="musee-photographie-charles-negre" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="musee-photographie-charles-negre" aria-pressed="false"><strong>2. Musée de la Photographie Charles Nègre</strong><span>방문지 · 10:45–12:30</span><small>선택. 화요일 10:00–18:00 운영. 피로하면 생략.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Mus%C3%A9e+de+la+photographie+Charles+N%C3%A8gre%2C+Nice">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.6959151%2C7.2745989&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.70841%2C7.26133&amp;travelmode=walking&amp;origin=43.6996749%2C7.2608829">Palais ALZIRA (12 Rue Verdi) → Libération Market · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.6959151%2C7.2745989&amp;travelmode=walking&amp;origin=43.70841%2C7.26133">Libération Market → Musée de la Photographie Charles Nègre · 도보</a></li></ol></details>
-<script type="application/json">{"center":[43.702,7.268],"zoom":14,"places":[{"id":"nice-stay-candidate","name":"Palais ALZIRA (12 Rue Verdi)","city":"Nice","type":"accommodation","lat":43.6996749,"lng":7.2608829,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=12+Rue+Verdi%2C+06000+Nice","address":"12 Rue Verdi, 06000 Nice, France","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"],"coordinatesVerified":"OSM Nominatim, 2026-08-13"},{"id":"marche-de-la-liberation","name":"Libération Market","city":"Nice","type":"market","lat":43.70841,"lng":7.26133,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Lib%C3%A9ration+Market","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"],"editorialSlug":"marche-de-la-liberation"},{"id":"musee-photographie-charles-negre","name":"Musée de la Photographie Charles Nègre","city":"Nice","type":"attraction","lat":43.6959151,"lng":7.2745989,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Mus%C3%A9e+de+la+photographie+Charles+N%C3%A8gre%2C+Nice","address":"","private":false,"approximate":false,"optional":true,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"}],"day":{"date":"2026-09-08","city":"Nice","title":"Libération 시장과 사진미술관 — 니스 마지막 날","center":[43.702,7.268],"zoom":14,"defaultMode":"walking","stops":[{"placeId":"nice-stay-candidate","order":0,"plannedTime":"09:00 전후 출발","note":"확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."},{"placeId":"marche-de-la-liberation","order":1,"plannedTime":"09:20–10:30","note":"실제 장보기 · 9/9 차량 간식 준비."},{"placeId":"musee-photographie-charles-negre","order":2,"plannedTime":"10:45–12:30","note":"선택. 화요일 10:00–18:00 운영. 피로하면 생략."}],"segments":[{"from":"nice-stay-candidate","to":"marche-de-la-liberation","mode":"walking"},{"from":"marche-de-la-liberation","to":"musee-photographie-charles-negre","mode":"walking"}]}}</script>
-</section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-11-nice.webp" aria-label="Day 11 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-11-nice-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 11 Nice 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-11-nice.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-10.html">← Day 10</a><span></span><a href="day-12.html">Day 12 →</a></nav>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 11</span>
+    <span class="day-date">9/8 화</span></div>
+  <h1>Nice</h1>
+  <p class="hero-dek">생활·회복·선택문화</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 2</span><span>약 4km · 도보</span></div>
+</header>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong> 사진미술관 Charles Nègre</strong> — 운영·요금 재확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Marché de la Libération </div>
+    <p class="tl-note">도시의 부엌 — 관광 시장이 아닌 생활 시장</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 20분 · 1.6km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-book" aria-hidden="true"></b> 사진미술관 Charles Nègre <span class="badge badge-neutral">선택</span><span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">화요일 유일의 선택 문화시설 (Matisse·Chagall은 화요일 휴관)</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>운영·요금 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 20분 · 1.4km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> 세탁 후 Promenade 산책 <span class="badge badge-neutral">선택</span></div>
+    <p class="tl-note">세탁·렌터카 준비 2시간을 보호한다</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.7km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 — 렌터카 준비 </div>
+    <p class="tl-note">다음 날 NCE T2 인수 서류·짐 정리, 새로운 것을 넣지 않는다</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 피로 시 사진미술관 삭제, 숙소생활·카페만</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>사진미술관 운영·요금 재확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>렌터카 인수 서류·보험 준비 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.7015,7.267],"zoom":14,"pins":[{"id":"liberation-market","name":"Marché de la Libération","lat":43.70841,"lng":7.26133,"cat":"shopping","time":null,"place":null},{"id":"charles-negre","name":"사진미술관 Charles Nègre","lat":43.6959151,"lng":7.2745989,"cat":"culture","time":null,"place":null},{"id":"promenade","name":"세탁 후 Promenade 산책","lat":43.695,"lng":7.257,"cat":"sight","time":null,"place":null},{"id":"nice-stay-return","name":"숙소 — 렌터카 준비","lat":43.6996749,"lng":7.2608829,"cat":"hotel","time":null,"place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 11 동선 · 4곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="liberation-market">Marché de la Libération<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.70841,7.26133"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Marché de la Libération </span>열기</a></li><li data-pin="charles-negre">사진미술관 Charles Nègre<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.6959151,7.2745989"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">사진미술관 Charles Nègre </span>열기</a></li><li data-pin="promenade">세탁 후 Promenade 산책<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.695,7.257"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">세탁 후 Promenade 산책 </span>열기</a></li><li data-pin="nice-stay-return">숙소 — 렌터카 준비<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.6996749,7.2608829"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 — 렌터카 준비 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>도보 · 느린 시작</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>Libération 시장 조달·숙소식</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>43일 중 11일차 — 회복일 과밀 금지</li><li>화요일 휴관 대비 완료</li><li>렌터카 준비 2시간 보호</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-10.html">← Day 10</a><a class="btn btn-secondary" href="../daily/day-12.html">Day 12 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

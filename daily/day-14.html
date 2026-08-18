@@ -3,178 +3,154 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 14 · 9/11 금 · Aix — 2026 유럽 여행 가이드북</title>
+<title>Day 14 · Aix-en-Provence — 유럽 43일 가이드북</title>
+<meta name="description" content="Marseille 당일치기">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="aix">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/aix/index.html">Aix</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 14</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 14</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-13.html">← 앞</a><a href="day-15.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-09.html" title="Day 9">9/6</a><a href="day-10.html" title="Day 10">9/7</a><a href="day-11.html" title="Day 11">9/8</a><a href="day-12.html" title="Day 12">9/9</a><a href="day-13.html" title="Day 13">9/10</a><a href="day-14.html" class="here" title="Day 14">9/11</a><a href="day-15.html" title="Day 15">9/12</a><a href="day-16.html" title="Day 16">9/13</a><a href="day-17.html" title="Day 17">9/14</a><a href="day-18.html" title="Day 18">9/15</a><a href="day-19.html" title="Day 19">9/16</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-12.html">Day 12</a><a href="../daily/day-13.html">Day 13</a><a href="../daily/day-14.html" aria-current="page">Day 14</a><a href="../daily/day-15.html">Day 15</a><a href="../daily/day-16.html">Day 16</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 14 · 9/11 금</span></span><a href="../chapters/aix/schedule.html"><b>지역</b><span>Aix</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 14 · 9/11 금 · Aix</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="aix-cassis-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/aix-cassis-01-hero-800.webp 800w, ../assets/images/hero/aix-cassis-01-hero-1280.webp 1280w, ../assets/images/hero/aix-cassis-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/aix-cassis-01-hero-1280.webp" alt="캅 카나유 절벽 위에서 내려다본 카시스 마을과 푸른 만"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>캅 카나유 절벽에서 내려다본 카시스 마을과 만.</span><span class="media-credit">Photo: Marion Schneider &amp; Christoph Aistleitner --- Contact: Mediocrity · <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener license">Public Domain</a> · <a href="../about/photo-credits.html#aix-cassis-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="aix-calanques-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/aix-calanques-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/aix-calanques-01-thumb-480.webp" alt="석회암 절벽 사이로 에메랄드빛 바다가 들어온 앙보 칼랑크와 자갈 해변"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>석회암 절벽 사이로 바다가 깊숙이 들어온 칼랑크 국립공원의 앙보 칼랑크.</span><span class="media-credit">Photo: kallerna · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#aix-calanques-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Marseille 대중교통 당일치기</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>L50 시각 기준 역산</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>버스 20분 전·점심과 카페 90분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/aix/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/aix.html"><b class="ic ic-map" aria-hidden="true"></b>Aix 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>08:10</td>
-<td>Aix 숙소 출발</td>
-<td>Ligne 50 실제 시각·정류장 전날 확인</td>
-</tr>
-<tr>
-<td>09:45–10:30</td>
-<td><strong>Vieux-Port</strong></td>
-<td>항구축을 읽고 북쪽 부두로 이동</td>
-</tr>
-<tr>
-<td>10:30–11:30</td>
-<td><strong>Le Panier</strong></td>
-<td>Place de Lenche 중심, 경사골목 60분 상한</td>
-</tr>
-<tr>
-<td>11:45–13:00</td>
-<td>점심·휴식</td>
-<td>Le Panier 또는 Mucem 관내 후보</td>
-</tr>
-<tr>
-<td>13:15–15:00</td>
-<td><strong>Mucem</strong></td>
-<td>전시 하나 + 건축·보행교</td>
-</tr>
-<tr>
-<td>15:00–16:10</td>
-<td><strong>Fort Saint-Jean</strong></td>
-<td>정원·전망·카페 휴식 포함</td>
-</tr>
-<tr>
-<td>16:10 이후</td>
-<td>Vieux-Port 또는 선택 전망</td>
-<td>Notre-Dame de la Garde는 체력·맑은 날만</td>
-</tr>
-<tr>
-<td>17:15–19:00</td>
-<td>Saint-Charles→Aix 귀환</td>
-<td>귀환편 여유, 저녁은 숙소권에서 가볍게</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="4" aria-label="피로도 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>4/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/fort-saint-jean.html">Fort Saint-Jean <b>Must</b></a><a class="pl-day" href="../places/le-panier.html">Le Panier <b>Recommended</b></a><a class="pl-day" href="../places/marseille.html">Marseille <b>Must</b></a><a class="pl-day" href="../places/mucem.html">Mucem <b>Must</b></a><a class="pl-day" href="../places/vieux-port-marseille.html">Vieux-Port <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="marseille-오래된-항구에서-현대-지중해-문화까지">Marseille — 오래된 항구에서 현대 지중해 문화까지</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: Cassis·Calanques, LUMA, 해안 장거리 산책을 추가하지 않는다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ul>
-<li>바다·석회암 경관을 항구대도시보다 우선하고 기상·화재통제가 안정적일 때만 Marseille 하루를 통째로 교체한다.</li>
-<li>Cassis 항구와 짧은 보트 또는 해안산책 하나만 선택한다.</li>
-<li>Marseille와 Cassis를 같은 날 결합하지 않는다.</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>혼잡·소매치기·Mucem 화요일 휴관 변수 없음</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Notre-Dame de la Garde</dd></div><div class="ds-item"><dt>대체안</dt><dd>Mucem·Fort만 또는 Aix 생활일</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Vieux-Port/Le Panier 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>L50·Mucem 운영</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-14">
-<h2 id="daily-map-title-14" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Marseille 당일 — Vieux-Port · Le Panier · Mucem</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button><button class="gm-filter" type="button" data-type="station" aria-pressed="false">역</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=43.2945804%2C5.3692811&amp;destination=43.3032296%2C5.3816416&amp;travelmode=transit&amp;waypoints=43.2975683%2C5.3656976%7C43.2967288%2C5.3610255%7C43.295454%2C5.3618104">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="aix-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="aix-stay-candidate" aria-pressed="false"><strong>0. Adagio Aix Centre</strong><span>숙소 · 08:10 출발</span><small>Ligne 50 실제 시각·정류장 전날 확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Adagio+Aix+Centre">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.528998%2C5.440842&amp;travelmode=transit">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="marseille-vieux-port" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="marseille-vieux-port" aria-pressed="false"><strong>1. Vieux-Port</strong><span>방문지 · 09:45–10:30</span><small>항구축을 읽고 북쪽 부두로.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Vieux-Port%2C+Marseille">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.2945804%2C5.3692811&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="place-de-lenche" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="place-de-lenche" aria-pressed="false"><strong>2. Le Panier · Place de Lenche</strong><span>방문지 · 10:30–11:30</span><small>Le Panier — 경사 골목 60분 상한.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Place+de+Lenche%2C+Marseille">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.2975683%2C5.3656976&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="mucem" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="mucem" aria-pressed="false"><strong>3. Mucem</strong><span>방문지 · 13:15–15:00</span><small>전시 하나 + 건축·보행교.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Mucem%2C+Marseille">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.2967288%2C5.3610255&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="fort-saint-jean" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="fort-saint-jean" aria-pressed="false"><strong>4. Fort Saint-Jean</strong><span>방문지 · 15:00–16:10</span><small>정원·전망·카페 휴식 포함.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Fort+Saint-Jean%2C+Marseille">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.295454%2C5.3618104&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="marseille-saint-charles" data-type="station"><button class="gm-card-main" type="button" data-place-id="marseille-saint-charles" aria-pressed="false"><strong>5. Marseille Saint-Charles</strong><span>역 · 17:15–19:00 귀환</span><small>귀환편 여유 확보.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gare+de+Marseille-Saint-Charles">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.3032296%2C5.3816416&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.2945804%2C5.3692811&amp;travelmode=transit&amp;origin=43.528998%2C5.440842">Adagio Aix Centre → Vieux-Port · 대중교통</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.2975683%2C5.3656976&amp;travelmode=walking&amp;origin=43.2945804%2C5.3692811">Vieux-Port → Le Panier · Place de Lenche · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.2967288%2C5.3610255&amp;travelmode=walking&amp;origin=43.2975683%2C5.3656976">Le Panier · Place de Lenche → Mucem · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.295454%2C5.3618104&amp;travelmode=walking&amp;origin=43.2967288%2C5.3610255">Mucem → Fort Saint-Jean · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.3032296%2C5.3816416&amp;travelmode=walking&amp;origin=43.295454%2C5.3618104">Fort Saint-Jean → Marseille Saint-Charles · 도보</a></li></ol></details>
-<script type="application/json">{"center":[43.3,5.37],"zoom":13,"places":[{"id":"aix-stay-candidate","name":"Adagio Aix Centre","city":"Aix-en-Provence","type":"accommodation","lat":43.528998,"lng":5.440842,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Adagio+Aix+Centre","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Aix_Execution_Map_v0.2.geojson"]},{"id":"marseille-vieux-port","name":"Vieux-Port","city":"Marseille","type":"attraction","lat":43.2945804,"lng":5.3692811,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Vieux-Port%2C+Marseille","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"},{"id":"place-de-lenche","name":"Le Panier · Place de Lenche","city":"Marseille","type":"attraction","lat":43.2975683,"lng":5.3656976,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Place+de+Lenche%2C+Marseille","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"},{"id":"mucem","name":"Mucem","city":"Marseille","type":"attraction","lat":43.2967288,"lng":5.3610255,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Mucem%2C+Marseille","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"},{"id":"fort-saint-jean","name":"Fort Saint-Jean","city":"Marseille","type":"attraction","lat":43.295454,"lng":5.3618104,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Fort+Saint-Jean%2C+Marseille","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"},{"id":"marseille-saint-charles","name":"Marseille Saint-Charles","city":"Marseille","type":"station","lat":43.3032296,"lng":5.3816416,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Gare+de+Marseille-Saint-Charles","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"}],"day":{"date":"2026-09-11","city":"Aix · Marseille","title":"Marseille 당일 — Vieux-Port · Le Panier · Mucem","center":[43.3,5.37],"zoom":13,"defaultMode":"transit","stops":[{"placeId":"aix-stay-candidate","order":0,"plannedTime":"08:10 출발","note":"Ligne 50 실제 시각·정류장 전날 확인."},{"placeId":"marseille-vieux-port","order":1,"plannedTime":"09:45–10:30","note":"항구축을 읽고 북쪽 부두로."},{"placeId":"place-de-lenche","order":2,"plannedTime":"10:30–11:30","note":"Le Panier — 경사 골목 60분 상한."},{"placeId":"mucem","order":3,"plannedTime":"13:15–15:00","note":"전시 하나 + 건축·보행교."},{"placeId":"fort-saint-jean","order":4,"plannedTime":"15:00–16:10","note":"정원·전망·카페 휴식 포함."},{"placeId":"marseille-saint-charles","order":5,"plannedTime":"17:15–19:00 귀환","note":"귀환편 여유 확보."}],"segments":[{"from":"aix-stay-candidate","to":"marseille-vieux-port","mode":"transit"},{"from":"marseille-vieux-port","to":"place-de-lenche","mode":"walking"},{"from":"place-de-lenche","to":"mucem","mode":"walking"},{"from":"mucem","to":"fort-saint-jean","mode":"walking"},{"from":"fort-saint-jean","to":"marseille-saint-charles","mode":"walking"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 14</span>
+    <span class="day-date">9/11 금</span></div>
+  <h1>Aix-en-Provence</h1>
+  <p class="hero-dek">Marseille 당일치기</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 4</span><span>L50 왕복 + 도보 약 4km</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-11">
+  <span class="label">NEXT</span>
+  <div class="action-when">08:10</div>
+  <div class="action-what">Aix 버스터미널 — Ligne 50</div>
+  <p class="card-dek">L50 실제 시각·정류장 전날 확인, 버스 20분 전 도착</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-14-aix-en-provence.webp" aria-label="Day 14 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-14-aix-en-provence-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 14 Aix 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-14-aix-en-provence.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-13.html">← Day 13</a><span></span><a href="day-15.html">Day 15 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>08:10 Aix 버스터미널 — Ligne 50</strong> — L50 시각표 확인</li><li><strong>13:15 Mucem</strong> — Mucem 운영 재확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="08:10" data-end="">
+  <div class="tl-time">08:10</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> Aix 버스터미널 — Ligne 50 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">L50 실제 시각·정류장 전날 확인, 버스 20분 전 도착</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>L50 시각표 확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    버스 · Ligne 50</span></div>
+</li><li class="tl-item" data-start="09:45" data-end="10:30">
+  <div class="tl-time">09:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Vieux-Port </div>
+    <p class="tl-note">Quai des Belges에서 항구축 확인 후 북쪽 부두 40–50분</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.8km</span></div>
+</li><li class="tl-item" data-start="10:30" data-end="11:30">
+  <div class="tl-time">10:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/le-panier.html">Le Panier</a> </div>
+    <p class="tl-note">Place de Lenche 중심 — 경사골목 60분 상한, 소매치기 주의</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.2km</span></div>
+</li><li class="tl-item" data-start="11:45" data-end="13:00">
+  <div class="tl-time">11:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> 점심·휴식 </div>
+    <p class="tl-note">Le Panier 또는 Mucem 관내 후보 — 점심과 카페 90분</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.4km</span></div>
+</li><li class="tl-item" data-start="13:15" data-end="15:00">
+  <div class="tl-time">13:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-book" aria-hidden="true"></b> <a href="../places/mucem.html">Mucem</a> <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">전시 하나 + 건축·보행교</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>Mucem 운영 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 (보행교) · 0.2km</span></div>
+</li><li class="tl-item" data-start="15:00" data-end="16:10">
+  <div class="tl-time">15:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/fort-saint-jean.html">Fort Saint-Jean</a> </div>
+    <p class="tl-note">정원·전망·카페 휴식 포함, 이후 선택 전망은 체력·맑은 날만</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    버스 · L50 또는 TER Saint-Charles</span></div>
+</li><li class="tl-item" data-start="17:15" data-end="19:00">
+  <div class="tl-time">17:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Saint-Charles→Aix 귀환 </div>
+    <p class="tl-note">귀환편 여유 — 저녁은 숙소권에서 가볍게</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 피로·우천 시 Mucem+항구만, 또는 Aix 생활일 전환</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>L50 시각표·정류장 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Mucem 2026 운영·전시 재확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Aix 숙소 후보(Adagio) 승인</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.41,5.407],"zoom":11,"pins":[{"id":"aix-gare-routiere","name":"Aix 버스터미널 — Ligne 50","lat":43.5234687,"lng":5.4383612,"cat":"transport","time":"08:10","place":null},{"id":"vieux-port","name":"Vieux-Port","lat":43.2951,"lng":5.374,"cat":"sight","time":"09:45","place":null},{"id":"le-panier","name":"Le Panier","lat":43.3006,"lng":5.3674,"cat":"sight","time":"10:30","place":"le-panier"},{"id":"panier-lunch","name":"점심·휴식","lat":43.2995,"lng":5.365,"cat":"food","time":"11:45","place":null},{"id":"mucem","name":"Mucem","lat":43.2967,"lng":5.3612,"cat":"culture","time":"13:15","place":"mucem"},{"id":"fort-saint-jean","name":"Fort Saint-Jean","lat":43.2959,"lng":5.3635,"cat":"sight","time":"15:00","place":"fort-saint-jean"},{"id":"aix-return","name":"Saint-Charles→Aix 귀환","lat":43.528998,"lng":5.440842,"cat":"hotel","time":"17:15","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 14 동선 · 7곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="aix-gare-routiere"><span class="meta">08:10</span>Aix 버스터미널 — Ligne 50<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.5234687,5.4383612"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Aix 버스터미널 — Ligne 50 </span>열기</a></li><li data-pin="vieux-port"><span class="meta">09:45</span>Vieux-Port<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.2951,5.374"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Vieux-Port </span>열기</a></li><li data-pin="le-panier"><span class="meta">10:30</span><a href="../places/le-panier.html">Le Panier</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.3006,5.3674"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Le Panier </span>열기</a></li><li data-pin="panier-lunch"><span class="meta">11:45</span>점심·휴식<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.2995,5.365"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">점심·휴식 </span>열기</a></li><li data-pin="mucem"><span class="meta">13:15</span><a href="../places/mucem.html">Mucem</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.2967,5.3612"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Mucem </span>열기</a></li><li data-pin="fort-saint-jean"><span class="meta">15:00</span><a href="../places/fort-saint-jean.html">Fort Saint-Jean</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.2959,5.3635"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Fort Saint-Jean </span>열기</a></li><li data-pin="aix-return"><span class="meta">17:15</span>Saint-Charles→Aix 귀환<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.528998,5.440842"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Saint-Charles→Aix 귀환 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>Ligne 50 버스 왕복 (TER 대안)</li><li>Marseille 도보</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>Le Panier 점심 또는 Mucem 관내</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>Vieux-Port→Panier→Mucem·Fort만 — 과밀 회피</li><li>Notre-Dame de la Garde는 체력·맑은 날만</li><li>Cassis와 같은 날 결합 금지</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-13.html">← Day 13</a><a class="btn btn-secondary" href="../daily/day-15.html">Day 15 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

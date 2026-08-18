@@ -3,210 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 20 · 9/17 목 · Avignon — 2026 유럽 여행 가이드북</title>
+<title>Day 20 · Avignon — 유럽 43일 가이드북</title>
+<meta name="description" content="교황도시 핵심">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="avignon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/avignon/index.html">Avignon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 20</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 20</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-19.html">← 앞</a><a href="day-21.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-15.html" title="Day 15">9/12</a><a href="day-16.html" title="Day 16">9/13</a><a href="day-17.html" title="Day 17">9/14</a><a href="day-18.html" title="Day 18">9/15</a><a href="day-19.html" title="Day 19">9/16</a><a href="day-20.html" class="here" title="Day 20">9/17</a><a href="day-21.html" title="Day 21">9/18</a><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a><a href="day-25.html" title="Day 25">9/22</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-19.html">Day 19</a><a href="../daily/day-20.html" aria-current="page">Day 20</a><a href="../daily/day-21.html">Day 21</a><a href="../daily/day-22.html">Day 22</a><a href="../daily/day-23.html">Day 23</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 20 · 9/17 목</span></span><a href="../chapters/avignon/schedule.html"><b>지역</b><span>Avignon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 20 · 9/17 목 · Avignon</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="avignon-city-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/avignon-city-01-hero-800.webp 800w, ../assets/images/hero/avignon-city-01-hero-1280.webp 1280w, ../assets/images/hero/avignon-city-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/avignon-city-01-hero-1280.webp" alt="론강 건너편에서 바라본 아비뇽 구시가 — 교황청 궁전과 노트르담 데 돔 대성당, 성벽, 왼쪽 아래로 생 베네제 다리가 보인다"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>빌뇌브레자비뇽의 필리프 르 벨 탑 쪽에서 바라본 아비뇽 — 교황청 궁전과 대성당, 성벽이 구시가 스카이라인을 이룬다.</span><span class="media-credit">Photo: Jean-Marc Rosier · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#avignon-city-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="luberon-sorgue-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/luberon-sorgue-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/luberon-sorgue-01-thumb-480.webp" alt="이끼로 덮인 물레방아가 소르그 강 수로에서 돌아가고 옆에 지붕 덮인 빨래터가 있는 릴쉬르라소르그 풍경"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>이끼 낀 물레방아가 남아 있는 릴쉬르라소르그의 소르그 강 수로.</span><span class="media-credit">Photo: Marianne Casamance · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#luberon-sorgue-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Palais·Rocher·Pont</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:30 Les Halles</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>Palais 입장 30분 전</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>1건 — 완료 0 · 미확정 1 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/avignon/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/avignon.html"><b class="ic ic-map" aria-hidden="true"></b>Avignon 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>07:30–08:20</td>
-<td>숙소 아침 또는 Jason 짧은 러닝</td>
-<td>러닝은 성벽 남쪽 4–5km, 전날 피로가 있으면 생략</td>
-</tr>
-<tr>
-<td>08:30–09:20</td>
-<td><strong>Les Halles d’Avignon</strong></td>
-<td>2026년 화–일 06:00–14:00. 치즈·올리브·빵·점심재료 구매</td>
-</tr>
-<tr>
-<td>09:20–09:40</td>
-<td>Place Pie→Palais 이동</td>
-<td>Rue des Marchands·Place de l’Horloge를 통과</td>
-</tr>
-<tr>
-<td>09:45–12:00</td>
-<td><strong>Palais des Papes</strong></td>
-<td>9월 공식 운영 09:00–19:00, 마지막 입장 1시간 전. 2026 새 방문해설·WebApp 활용</td>
-</tr>
-<tr>
-<td>12:05–13:00</td>
-<td>Place du Palais·구시가지 점심</td>
-<td>시장 샌드위치 또는 가벼운 비스트로. 긴 코스요리 금지</td>
-</tr>
-<tr>
-<td>13:00–14:00</td>
-<td>숙소 또는 그늘카페 휴식</td>
-<td>교황궁 2시간 뒤 휴식 필수</td>
-</tr>
-<tr>
-<td>14:10–15:00</td>
-<td><strong>Rocher des Doms</strong></td>
-<td>Rhône·Villeneuve·Mont Ventoux 방향 조망, 정원 벤치 휴식</td>
-</tr>
-<tr>
-<td>15:05–16:00</td>
-<td><strong>Pont Saint-Bénézet</strong></td>
-<td>Palais+Pont 결합권이 합리적. 다리 위보다 강과 도시관계 이해가 핵심</td>
-</tr>
-<tr>
-<td>16:10–17:15</td>
-<td>Rhône 강변 또는 Île de la Barthelasse 시점</td>
-<td>무료 강나룻배 운항 여부·바람 확인. 운항 불확실하면 강변만</td>
-</tr>
-<tr>
-<td>17:30–18:30</td>
-<td>숙소 휴식·샤워</td>
-<td>저녁 전 정식 휴식</td>
-</tr>
-<tr>
-<td>19:30–21:00</td>
-<td><strong>La Fourchette</strong> 또는 <strong>Le Goût du Jour</strong></td>
-<td>9/18 은 금요일이라 둘 다 연다 — La Fourchette 는 토·일, Le Goût du Jour 는 화·수요일 휴무 (목~월 영업, 점심 12:00~13:30 / 저녁 19:00~21:30). 대체는 Cocottes</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/les-halles.html">Les Halles <b>Must</b></a><a class="pl-day" href="../places/palais-des-papes.html">Palais des Papes <b>Must</b></a><a class="pl-day" href="../places/pont-saint-benezet.html">Pont Saint-Bénézet <b>Must</b></a><a class="pl-day" href="../places/rocher-des-doms.html">Rocher des Doms <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="les-halles-교황궁-론강과-성벽도시">Les Halles, 교황궁, 론강과 성벽도시</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 예상 보행 7–9km, 실내 관람 2시간.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-꼭-해볼-것">오늘 꼭 해볼 것</h4>
-<ul>
-<li>Palais 앞 광장에서 건물의 규모와 비대칭 파사드를 먼저 본 뒤 입장하기</li>
-<li>Histopad·WebApp은 모든 방에서 사용하지 말고 복원효과가 큰 3–4곳에 집중하기</li>
-<li>Rocher des Doms에서 Pont, Rhône, Villeneuve의 방향을 비교하기</li>
-<li>저녁은 관광광장 바로 앞보다 Corps Saints·Vernet·Teinturiers 주변으로 이동하기</li>
-</ul>
-<hr>
-<h4 id="대안실용-메모">대안·실용 메모</h4>
-<ul>
-<li><strong>운영</strong>: 3월 1일–11월 1일 매일 09:00–19:00, 마지막 입장 18:00.</li>
-<li><strong>요금</strong>: 공식 페이지 기준 Palais+Pont 성인 결합권 약 €17, Palais 단독 약 €14.50. 예약 화면에서 최종 확인.</li>
-<li><strong>권장시간</strong>: 1시간 45분–2시간 15분.</li>
-<li><strong>관람법</strong>: 방을 전부 기억하려 하지 말고, 대예배당·대중정치공간·교황 사적공간·벽화·요새적 외관의 대비를 본다.</li>
-<li><strong>2026 변화</strong>: 5월부터 새 해설과 일부 새 공개공간이 단계적으로 도입되며 공사는 2027년까지 이어질 수 있다. 폐쇄구간을 당일 확인한다.</li>
-</ul>
-<h3 id="오늘의-필수선택">오늘의 필수·선택</h3>
-<ul>
-<li><strong>필수</strong>: Les Halles, Palais, Rocher, Pont</li>
-<li><strong>우선 추천</strong>: Place de l’Horloge·Rue des Marchands, Rhône 강변</li>
-<li><strong>선택</strong>: Petit Palais 60분, Barthelasse 나룻배, Villeneuve 전망</li>
-<li><strong>삭제 1순위</strong>: 추가 박물관</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>시간지정·보행</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>추가미술관</dd></div><div class="ds-item"><dt>대체안</dt><dd>Palais 중심 실내일</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Les Halles/구시가지</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>Palais·식당</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-20">
-<h2 id="daily-map-title-20" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Les Halles · Palais des Papes · Rocher · Pont</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="market" aria-pressed="false">시장</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=43.94787%2C4.80903&amp;destination=43.95389%2C4.80508&amp;travelmode=walking&amp;waypoints=43.95078%2C4.8075%7C43.952656%2C4.8079195">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="avignon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="avignon-stay-candidate" aria-pressed="false"><strong>0. La Terrasse du Clocher</strong><span>숙소 · 08:20 전후 출발</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=La+Terrasse+du+Clocher">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=walking">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="les-halles-avignon" data-type="market"><button class="gm-card-main" type="button" data-place-id="les-halles-avignon" aria-pressed="false"><strong>1. Les Halles</strong><span>시장 · 08:30</span><small>실내시장 아침.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Les+Halles">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94787%2C4.80903&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="palais-des-papes" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="palais-des-papes" aria-pressed="false"><strong>2. Palais des Papes</strong><span>방문지 · 입장 30분 전 도착</span><small>오전 관람.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Palais+des+Papes">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.95078%2C4.8075&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="rocher-des-doms" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="rocher-des-doms" aria-pressed="false"><strong>3. Rocher des Doms</strong><span>방문지 · 이어서</span><small>정원·론강 조망.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Rocher+des+Doms%2C+Avignon">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.952656%2C4.8079195&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="pont-saint-benezet" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="pont-saint-benezet" aria-pressed="false"><strong>4. Pont Saint-Bénézet</strong><span>방문지 · 이어서</span><small>다리 관람.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pont+Saint-B%C3%A9n%C3%A9zet">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.95389%2C4.80508&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94787%2C4.80903&amp;travelmode=walking&amp;origin=43.94993%2C4.81302">La Terrasse du Clocher → Les Halles · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.95078%2C4.8075&amp;travelmode=walking&amp;origin=43.94787%2C4.80903">Les Halles → Palais des Papes · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.952656%2C4.8079195&amp;travelmode=walking&amp;origin=43.95078%2C4.8075">Palais des Papes → Rocher des Doms · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.95389%2C4.80508&amp;travelmode=walking&amp;origin=43.952656%2C4.8079195">Rocher des Doms → Pont Saint-Bénézet · 도보</a></li></ol></details>
-<script type="application/json">{"center":[43.951,4.806],"zoom":15,"places":[{"id":"avignon-stay-candidate","name":"La Terrasse du Clocher","city":"Avignon","type":"accommodation","lat":43.94993,"lng":4.81302,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=La+Terrasse+du+Clocher","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]},{"id":"les-halles-avignon","name":"Les Halles","city":"Avignon","type":"market","lat":43.94787,"lng":4.80903,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Les+Halles","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]},{"id":"palais-des-papes","name":"Palais des Papes","city":"Avignon","type":"attraction","lat":43.95078,"lng":4.8075,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Palais+des+Papes","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]},{"id":"rocher-des-doms","name":"Rocher des Doms","city":"Avignon","type":"attraction","lat":43.952656,"lng":4.8079195,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Rocher+des+Doms%2C+Avignon","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-06"},{"id":"pont-saint-benezet","name":"Pont Saint-Bénézet","city":"Avignon","type":"attraction","lat":43.95389,"lng":4.80508,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pont+Saint-B%C3%A9n%C3%A9zet","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-17","city":"Avignon","title":"Les Halles · Palais des Papes · Rocher · Pont","center":[43.951,4.806],"zoom":15,"defaultMode":"walking","stops":[{"placeId":"avignon-stay-candidate","order":0,"plannedTime":"08:20 전후 출발","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"les-halles-avignon","order":1,"plannedTime":"08:30","note":"실내시장 아침."},{"placeId":"palais-des-papes","order":2,"plannedTime":"입장 30분 전 도착","note":"오전 관람."},{"placeId":"rocher-des-doms","order":3,"plannedTime":"이어서","note":"정원·론강 조망."},{"placeId":"pont-saint-benezet","order":4,"plannedTime":"이어서","note":"다리 관람."}],"segments":[{"from":"avignon-stay-candidate","to":"les-halles-avignon","mode":"walking"},{"from":"les-halles-avignon","to":"palais-des-papes","mode":"walking"},{"from":"palais-des-papes","to":"rocher-des-doms","mode":"walking"},{"from":"rocher-des-doms","to":"pont-saint-benezet","mode":"walking"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 20</span>
+    <span class="day-date">9/17 목</span></div>
+  <h1>Avignon</h1>
+  <p class="hero-dek">교황도시 핵심</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>약 4km · 도보</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-17">
+  <span class="label">NEXT</span>
+  <div class="action-when">08:30</div>
+  <div class="action-what"><a href="../places/les-halles.html">Les Halles d&#x27;Avignon</a></div>
+  <p class="card-dek">화–일 06:00–14:00 — 치즈·올리브·빵·점심재료</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-20-avignon.webp" aria-label="Day 20 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-20-avignon-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 20 Avignon 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-20-avignon.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-19.html">← Day 19</a><span></span><a href="day-21.html">Day 21 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>09:45 Palais des Papes</strong> — Palais 티켓 시간지정 잠금</li><li><strong>15:05 Pont Saint-Bénézet·강변</strong> — 결합권·나룻배 운항 확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="08:30" data-end="09:20">
+  <div class="tl-time">08:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/les-halles.html">Les Halles d&#x27;Avignon</a> </div>
+    <p class="tl-note">화–일 06:00–14:00 — 치즈·올리브·빵·점심재료</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 20분 (Rue des Marchands 경유) · 0.5km</span></div>
+</li><li class="tl-item" data-start="09:45" data-end="12:00">
+  <div class="tl-time">09:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-book" aria-hidden="true"></b> Palais des Papes <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">9월 09:00–19:00, 마지막 입장 1시간 전 — 2026 방문해설·WebApp 활용</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>Palais 티켓 시간지정 잠금</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.1km</span></div>
+</li><li class="tl-item" data-start="12:05" data-end="14:00">
+  <div class="tl-time">12:05</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> 구시가지 점심·휴식 </div>
+    <p class="tl-note">긴 코스요리 금지 — 교황궁 2시간 뒤 휴식 필수</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 (오르막) · 0.3km</span></div>
+</li><li class="tl-item" data-start="14:10" data-end="15:00">
+  <div class="tl-time">14:10</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Rocher des Doms </div>
+    <p class="tl-note">Rhône·Villeneuve·Mont Ventoux 조망, 정원 벤치 휴식</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 (내리막) · 0.3km</span></div>
+</li><li class="tl-item" data-start="15:05" data-end="17:15">
+  <div class="tl-time">15:05</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Pont Saint-Bénézet·강변 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Palais+Pont 결합권 — 이후 Barthelasse 시점은 나룻배 운항·바람 확인</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>결합권·나룻배 운항 확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 15분 · 1.0km</span></div>
+</li><li class="tl-item" data-start="19:30" data-end="21:00">
+  <div class="tl-time">19:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 저녁·복귀 </div>
+    <p class="tl-note">추가 미술관은 1곳 이하</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 혼잡·더위 시 Palais 중심 실내일 전환</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Palais des Papes 티켓 시간지정 예약</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Palais+Pont 결합권·나룻배 운항 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Avignon 숙소 후보 승인</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.9497,4.809],"zoom":15,"pins":[{"id":"les-halles","name":"Les Halles d'Avignon","lat":43.94787,"lng":4.80903,"cat":"shopping","time":"08:30","place":"les-halles"},{"id":"palais","name":"Palais des Papes","lat":43.95078,"lng":4.8075,"cat":"culture","time":"09:45","place":null},{"id":"palais-lunch","name":"구시가지 점심·휴식","lat":43.9503,"lng":4.8068,"cat":"food","time":"12:05","place":null},{"id":"rocher-doms","name":"Rocher des Doms","lat":43.952656,"lng":4.8079195,"cat":"sight","time":"14:10","place":null},{"id":"pont","name":"Pont Saint-Bénézet·강변","lat":43.95389,"lng":4.80508,"cat":"sight","time":"15:05","place":null},{"id":"avignon-return","name":"저녁·복귀","lat":43.94993,"lng":4.81302,"cat":"hotel","time":"19:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 20 동선 · 6곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="les-halles"><span class="meta">08:30</span><a href="../places/les-halles.html">Les Halles d&#x27;Avignon</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94787,4.80903"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Les Halles d&#x27;Avignon </span>열기</a></li><li data-pin="palais"><span class="meta">09:45</span>Palais des Papes<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.95078,4.8075"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Palais des Papes </span>열기</a></li><li data-pin="palais-lunch"><span class="meta">12:05</span>구시가지 점심·휴식<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.9503,4.8068"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">구시가지 점심·휴식 </span>열기</a></li><li data-pin="rocher-doms"><span class="meta">14:10</span>Rocher des Doms<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.952656,4.8079195"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Rocher des Doms </span>열기</a></li><li data-pin="pont"><span class="meta">15:05</span>Pont Saint-Bénézet·강변<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.95389,4.80508"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Pont Saint-Bénézet·강변 </span>열기</a></li><li data-pin="avignon-return"><span class="meta">19:30</span>저녁·복귀<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">저녁·복귀 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>도보 (성벽 안 압축권)</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>Les Halles 조달</li><li>구시가지 점심 — 가볍게</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>Palais 09:45 입장 — 시간지정</li><li>교황궁 2시간 뒤 휴식 필수</li><li>선택 러닝은 성벽 남쪽 4–5km</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-19.html">← Day 19</a><a class="btn btn-secondary" href="../daily/day-21.html">Day 21 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6EF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>Luberon — 유럽 43일 가이드북</title>
+<meta name="description" content="속도를 낮추는 구간이다. 유명마을을 많이 수집하는 것이 목적이 아니라 농가 숙박 자체, 마을의 재료와 지형, 시장에서 산 식재료, 스케치·산책·테라스 식사를 하나의 생활 경험으로 만드는 것이 목적이다.">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-region="luberon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><b>Luberon</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="#overview">개요</a><a href="#places">장소</a><a href="#days">일정</a><a href="#food">먹거리</a><a href="#stay">숙박·생활</a><a href="#transport">교통</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/hero/luberon-gordes-01-hero-1920.webp" srcset="../assets/images/hero/luberon-gordes-01-hero-800.webp 800w, ../assets/images/hero/luberon-gordes-01-hero-1280.webp 1280w, ../assets/images/hero/luberon-gordes-01-hero-1920.webp 1920w" sizes="100vw" alt="돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">농가 · 언덕마을 · 느린 속도</span></div>
+    <h1>Luberon</h1>
+    <p class="hero-sub">9/13 — 9/16 · 3박 · Day 16–19
+      · 거점 Luberon</p>
+    <p class="hero-dek">속도를 낮추는 구간이다. 유명마을을 많이 수집하는 것이 목적이 아니라 농가 숙박 자체, 마을의 재료와 지형, 시장에서 산 식재료, 스케치·산책·테라스 식사를 하나의 생활 경험으로 만드는 것이 목적이다.</p>
+    <div class="btn-row" style="margin-top:1rem">
+      <a class="btn btn-primary" href="../map/luberon.html"><b class="ic ic-only ic-map" aria-hidden="true"></b>지역 지도</a>
+      <a class="btn btn-secondary" href="../daily/day-16.html"><b class="ic ic-only ic-today" aria-hidden="true"></b>첫날 열기</a>
+    </div>
+  </div></div>
+</div>
+<div class="wrap">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Gordes_pano.jpg" rel="nofollow noopener">Jean-Christophe BENOIST</a> · CC BY 3.0</p>
+<div class="stack-lg" id="overview">
+<div class="sec-head-rule"><span class="label">Editor’s Verdict</span><h2>시간을 쓸 가치와 한계</h2></div>
+<div class="prose"><div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>평가</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>여행 적합도</td>
+<td>★★★★★ Jason·Julia의 생활형 여행에 최적화</td>
+</tr>
+<tr>
+<td>예산 체감</td>
+<td>숙박비 높음</td>
+</tr>
+<tr>
+<td>일정 강도</td>
+<td>느림</td>
+</tr>
+<tr>
+<td>예약 핵심</td>
+<td>농가 주소·진입·체크인 P0</td>
+</tr>
+<tr>
+<td>우천 전환</td>
+<td>농가 독서·실내 스케치·가까운 마을 카페</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>여행의 역할</strong>: 엑상프로방스의 도시생활과 카시스·마르세유 당일치기를 마친 뒤, 뤼베롱에서는 속도를 낮춘다. 이 구간의 목적은 유명마을을 가능한 많이 수집하는 것이 아니라 <strong>농가 숙박 자체, 마을의 재료와 지형, 시장에서 산 식재료, 스케치·산책·테라스 식사</strong>를 하나의 생활 경험으로 만드는 것이다.</p>
+<p><strong>최신 확정사항</strong>: 프로방스는 <strong>엑상 4박 + 뤼베롱 농가 3박 + 아비뇽 4박</strong>으로 운영하며, 뤼베롱 농가 숙박은 옵션이 아니라 확정 일정이다. <strong>수영장 유무·가열·길이는 숙소 평가에서 완전히 제외</strong>하고, 중앙입지·농가환경·전용주방·세탁·주차·포장도로·생활편의·3박 총액을 우선한다. 기존 4박 예약표기는 변경 완료가 아니라 <strong>예약 변경 필요</strong> 상태다.</p>
+<p><strong>사용자 선호 반영</strong>: 실내 전시보다 <strong>Lourmarin, Roussillon, Goult 또는 Bonnieux, Gordes, Ménerbes 또는 Oppède</strong>의 서로 다른 성격을 비교한다. L’Isle-sur-la-Sorgue 목요시장은 새 날짜와 맞지 않아 기본 일정에서 제외했다.</p>
+</blockquote></div>
+<div class="sec-head-rule"><span class="label">EXPERIENCE</span><h2>꼭 경험할 세 장면</h2></div>
+<div class="prose"><ol>
+<li>
+<p><strong>시장에서 산 재료로 한 끼 완성</strong>
+가장 중요한 체험이다. 고급 레스토랑보다 시장에서 산 치즈·토마토·빵·과일을 농가 테라스에서 먹는 경험이 이 구간의 정체성에 더 가깝다.</p>
+</li>
+<li>
+<p><strong>pétanque 한 게임</strong>
+숙소에 코트가 있으면 규칙을 완벽히 알지 못해도 30분 즐긴다. 현지 생활의 리듬을 체험하는 간단한 방식이다.</p>
+</li>
+<li>
+<p><strong>포도밭·올리브밭 가장자리 산책</strong>
+- 사유지 경계를 지킨다
+- 수확 작업차량을 방해하지 않는다
+- 일몰 전 30–45분이 좋다</p>
+</li>
+</ol></div>
+<details class="acc"><summary>생략해도 되는 것</summary><div class="acc-body prose"><div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>마르세유·아비뇽 당일치기</strong></td>
+<td>마르세유는 Aix에서, 아비뇽은 9/16부터 4박 한다</td>
+</tr>
+<tr>
+<td><strong>베르동 협곡</strong></td>
+<td>왕복만 하루. 이 구간 리듬과 안 맞는다</td>
+</tr>
+<tr>
+<td><strong>라벤더 밭 투어</strong></td>
+<td><strong>9월에는 없다</strong></td>
+</tr>
+<tr>
+<td><strong>마을 5개 이상 하루</strong></td>
+<td>운전과 주차만 하다 끝난다</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+</tr>
+</tbody>
+</table></div></div></details>
+<div id="places"><div class="sec-head-rule"><span class="label">DON&#x27;T MISS</span><h2>놓치지 말 것</h2></div></div>
+<div class="grid grid-2"><article class="card place-card-lg">
+  <img class="thumb" src="../assets/images/content/luberon-coustellet-01-content-1280.webp" srcset="../assets/images/content/luberon-coustellet-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="쿠스텔레 생산자 시장 거리 — 차양 아래 비누·직물·올리브유 좌판과 장 보는 사람들" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <h3 class="card-title"><a class="card-link" href="../places/coustellet.html">Coustellet 생산자 시장</a></h3>
+    <p class="card-dek">쿠스텔레 시장은 4월부터 12월까지 일요일 8:00–13:00에 선다.</p>
+  </div>
+</article><article class="card place-card-lg">
+  <img class="thumb" src="../assets/images/content/luberon-gordes-01-content-1280.webp" srcset="../assets/images/content/luberon-gordes-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <h3 class="card-title"><a class="card-link" href="../places/gordes.html">Gordes</a></h3>
+    <p class="card-dek">바위 봉우리 위에 지어진 마을로, 갈로-로마 시대부터 방어의 기능을 가졌다.</p>
+  </div>
+</article><article class="card place-card-lg">
+  <img class="thumb" src="../assets/images/content/luberon-lourmarin-01-content-1280.webp" srcset="../assets/images/content/luberon-lourmarin-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="뤼베롱 산자락 아래 루르마랭 마을 전경, 성의 종탑과 교회 탑이 지붕들 위로 솟아 있다" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <h3 class="card-title"><a class="card-link" href="../places/lourmarin.html">Lourmarin</a></h3>
+    <p class="card-dek">카뮈는 새 스승 장 그르니에를 만났는데, 그르니에가 1930–31년에 로랑비베르 재단(뤼르마랭 성)의 입주자였다.</p>
+  </div>
+</article><article class="card place-card-lg">
+  <img class="thumb" src="../assets/images/content/luberon-roussillon-ocres-01-content-1280.webp" srcset="../assets/images/content/luberon-roussillon-ocres-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="소나무 사이로 솟은 루시용의 붉은 황토 절벽 — 아래 오솔길의 사람들이 절벽의 규모를 보여준다" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <h3 class="card-title"><a class="card-link" href="../places/roussillon-sentier-des-ocres.html">Roussillon · Sentier des Ocres</a></h3>
+    <p class="card-dek">옛 채석장 사이로 난 나무 그늘 길을 걷는다.</p>
+  </div>
+</article></div>
+<div class="sec-head"><h2>그 밖의 장소</h2></div>
+<div class="grid grid-2"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-senanque-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-senanque-01-thumb-480.webp 480w" sizes="84px" alt="종탑과 반원형 후진이 보이는 로마네스크 양식의 세낭크 수도원 석조 건물, 앞쪽에 꽃이 지지 않은 초록 라벤더 밭" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/abbaye-de-senanque.html">Abbaye de Sénanque</a></h3>
+    <p class="card-dek">1148년에 세워졌다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-bonnieux-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-bonnieux-01-thumb-480.webp 480w" sizes="84px" alt="뤼베롱 언덕에 층층이 앉은 보니외 마을" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bonnieux.html">Bonnieux</a></h3>
+    <p class="card-dek">계곡 건너 라코스트와 마주 보는 사면 마을로, 뤼베롱 마을 중 수직 낙차가 가장 크다</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-goult-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-goult-01-thumb-480.webp 480w" sizes="84px" alt="굴트 마을의 언덕과 지붕들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/goult.html">Goult</a></h3>
+    <p class="card-dek">관광버스가 들르지 않는 언덕마을이라는 것이 이 마을의 가치다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-menerbes-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-menerbes-01-thumb-480.webp 480w" sizes="84px" alt="메네르브 마을과 뤼베롱 평원" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/menerbes.html">Ménerbes</a></h3>
+    <p class="card-dek">피터 메일의 『프로방스에서의 1년』 무대가 된 능선 마을이다</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-oppede-le-vieux-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-oppede-le-vieux-01-thumb-480.webp 480w" sizes="84px" alt="오페드 르 비외의 폐촌과 성터" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/oppede-le-vieux.html">Oppède-le-Vieux</a></h3>
+    <p class="card-dek">버려졌던 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/luberon-bories-01-thumb-480.webp" srcset="../assets/images/thumbnails/luberon-bories-01-thumb-480.webp 480w" sizes="84px" alt="마른돌을 쌓아 지은 보리 오두막 여러 채와 돌담이 이어진 고르드 보리 석조마을" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/village-des-bories.html">Village des Bories</a></h3>
+    <p class="card-dek">모르타르 없이 돌만 쌓아 만든 오두막(보리) 20여 채가 남은 야외 박물관이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article></div>
+<div class="sec-head-rule"><span class="label">AT A GLANCE</span><h2>한눈에 보기</h2></div>
+<div class="prose"><div class="table-wrap"><table>
+<thead>
+<tr>
+<th>장소·경험</th>
+<th>등급</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>농가생활·테라스 식사</td>
+<td><strong>필수</strong></td>
+<td>이 구간 자체의 목적</td>
+</tr>
+<tr>
+<td>Coustellet 생산자시장</td>
+<td><strong>필수</strong></td>
+<td>체크인 당일 식재료와 생활리듬 확보</td>
+</tr>
+<tr>
+<td>Roussillon·오커길</td>
+<td><strong>필수</strong></td>
+<td>다른 마을과 완전히 다른 지질·색채 경험</td>
+</tr>
+<tr>
+<td>Gordes 시장·마을</td>
+<td><strong>필수</strong></td>
+<td>뤼베롱 상징성과 화요일 일정 결합</td>
+</tr>
+<tr>
+<td>Lourmarin</td>
+<td><strong>우선 추천</strong></td>
+<td>이동일에 맞고 스케치 행사와 결합</td>
+</tr>
+<tr>
+<td>Goult</td>
+<td><strong>우선 추천</strong></td>
+<td>관광객이 덜한 생활마을·스케치</td>
+</tr>
+<tr>
+<td>Ménerbes</td>
+<td><strong>우선 추천</strong></td>
+<td>포도밭·능선·와인·저녁 선택</td>
+</tr>
+<tr>
+<td>L’Isle 목요시장</td>
+<td><strong>대체</strong></td>
+<td>새 체크아웃 9/16과 맞지 않아 기본 일정 제외</td>
+</tr>
+<tr>
+<td>Village des Bories</td>
+<td>선택</td>
+<td>열린 농업유산, 30–45분이면 충분</td>
+</tr>
+<tr>
+<td>Sénanque 내부</td>
+<td>선택</td>
+<td>건축·정적은 좋으나 농가·마을보다 후순위</td>
+</tr>
+<tr>
+<td>Oppède-le-Vieux</td>
+<td>선택</td>
+<td>독특하지만 오르막과 돌길</td>
+</tr>
+<tr>
+<td>Bonnieux</td>
+<td>선택</td>
+<td>전망·식당 우수, Goult와 교환</td>
+</tr>
+<tr>
+<td>Lacoste</td>
+<td>선택</td>
+<td>성·예술마을, 일정이 과밀해지기 쉬움</td>
+</tr>
+<tr>
+<td>Fontaine-de-Vaucluse</td>
+<td>대체</td>
+<td>이동일 자연경관, 수량·혼잡 변수</td>
+</tr>
+<tr>
+<td>모든 유명마을 순회</td>
+<td>비추천</td>
+<td>주차·중복·피로가 농가체험을 약화</td>
+</tr>
+<tr>
+<td>Apt 대형시장</td>
+<td>이번 체류 불가</td>
+<td>토요일 시장으로 날짜 불일치</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div></div>
+<div id="days"><div class="sec-head-rule"><span class="label">YOUR DAYS</span><h2>이 지역의 날들</h2></div></div>
+<div class="grid grid-2"><article class="card day-card">
+  <div class="card-body">
+    <div class="day-card-head">
+      <span class="day-num">DAY 16</span>
+      <span class="day-date">9/13 일</span>
+    </div>
+    <div class="day-route"><a class="card-link" href="../daily/day-16.html">Luberon</a></div>
+    <p class="card-dek">Aix→Lourmarin→농가</p>
+    <div class="metarow"><span class="badge badge-caution">거점 이동</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로 3</span></div>
+  </div>
+</article><article class="card day-card">
+  <div class="card-body">
+    <div class="day-card-head">
+      <span class="day-num">DAY 17</span>
+      <span class="day-date">9/14 월</span>
+    </div>
+    <div class="day-route"><a class="card-link" href="../daily/day-17.html">Luberon</a></div>
+    <p class="card-dek">오커색과 생활마을</p>
+    <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로 3</span></div>
+  </div>
+</article><article class="card day-card">
+  <div class="card-body">
+    <div class="day-card-head">
+      <span class="day-num">DAY 18</span>
+      <span class="day-date">9/15 화</span>
+    </div>
+    <div class="day-route"><a class="card-link" href="../daily/day-18.html">Luberon</a></div>
+    <p class="card-dek">Gordes와 돌의 문화</p>
+    <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로 3</span></div>
+  </div>
+</article><article class="card day-card">
+  <div class="card-body">
+    <div class="day-card-head">
+      <span class="day-num">DAY 19</span>
+      <span class="day-date">9/16 수</span>
+    </div>
+    <div class="day-route"><a class="card-link" href="../daily/day-19.html">Avignon</a></div>
+    <p class="card-dek">Luberon 체크아웃→Avignon 정착</p>
+    <div class="metarow"><span class="badge badge-caution">거점 이동</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로 3</span></div>
+  </div>
+</article></div>
+<div id="food"><div class="sec-head-rule"><span class="label">EAT</span><h2>먹거리</h2></div></div>
+<div class="grid grid-2"><article class="card food-card">
+  <div class="food-dish">피크닉 점심</div>
+  <p class="food-why">시장에서 산 재료로</p>
+  
+</article></div>
+<div class="prose"><ul><li>Coustellet 시장 점심</li><li>농가 첫 저녁 (테라스)</li><li>Roussillon 가벼운 점심</li><li>농가 저녁 또는 Bonnieux</li><li>시장 재료 피크닉</li><li>농가 저녁</li><li>가벼운 점심 (체크인 지연 흡수)</li><li>Fou de Fafa 또는 Les Cocottes Saint-Louis</li></ul></div>
+<div id="stay"><div class="sec-head-rule"><span class="label">STAY</span><h2>숙박 · 생활</h2></div></div>
+<div class="grid grid-2"><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Domaine des Peyre (후보)</span><span class="badge badge-caution">미확정</span></div>
+  <dl><dt>체크인</dt><dd>2026-09-13</dd>
+      <dt>체크아웃</dt><dd>2026-09-16</dd>
+      <dt>박수</dt><dd>3박</dd></dl>
+  <div class="btn-row"><a class="btn btn-secondary" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.87088,5.12202"><b class="ic ic-only ic-map" aria-hidden="true"></b>지도</a></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">La Terrasse du Clocher (후보)</span><span class="badge badge-caution">미확정</span></div>
+  <dl><dt>체크인</dt><dd>2026-09-13</dd>
+      <dt>체크아웃</dt><dd>2026-09-16</dd>
+      <dt>박수</dt><dd>3박</dd></dl>
+  <div class="btn-row"><a class="btn btn-secondary" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b>지도</a></div>
+</article></div>
+<div id="transport"><div class="sec-head-rule"><span class="label">TRANSPORT</span><h2>교통</h2></div></div>
+<div class="prose">
+<ul>
+  <li><strong>도착</strong> — Day 16 · 9/13 일 · Luberon</li>
+  <li><strong>출발</strong> — Day 19 · 9/16 수 · Avignon</li>
+</ul>
+<ul><li>렌터카</li><li>차량 짐 완전 은폐</li><li>렌터카 (오전 오커길 · 오후 생활마을)</li><li>렌터카 · 외곽주차 우선</li><li>렌터카 (도착 후 주차 고정)</li><li>도보</li></ul>
+</div>
+<details class="acc"><summary>추천 체류 리듬</summary><div class="acc-body prose"><pre><code class="language-text">9/13 Aix → Lourmarin의 여행스케치 행사 → Coustellet 생산자시장 → 농가 체크인
+        ↓
+9/14 Roussillon 오커길 → 마을 → Goult 또는 Bonnieux → 농가 저녁
+        ↓
+9/15 Gordes·Village des Bories → Ménerbes 또는 Oppède 선택 → 농가 마지막 저녁
+        ↓
+9/16 느린 농가 아침 → 체크아웃 → Avignon 체크인·가벼운 성벽 산책
+</code></pre>
+<hr />
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>요일</th>
+<th>테마</th>
+<th>기본 동선</th>
+<th style="text-align: right;">피로도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9/13</td>
+<td>일</td>
+<td>엑상에서 농가로, 스케치와 시장</td>
+<td>Aix → Lourmarin → Coustellet → 농가</td>
+<td style="text-align: right;">3/5</td>
+</tr>
+<tr>
+<td>9/14</td>
+<td>월</td>
+<td>오커색과 생활마을</td>
+<td>농가 → Roussillon → Goult/Bonnieux → 농가</td>
+<td style="text-align: right;">3/5</td>
+</tr>
+<tr>
+<td>9/15</td>
+<td>화</td>
+<td>Gordes와 돌의 문화</td>
+<td>농가 → Gordes → Bories → Ménerbes/Oppède 선택 → 농가</td>
+<td style="text-align: right;">3/5</td>
+</tr>
+<tr>
+<td>9/16</td>
+<td>수</td>
+<td>농가 체크아웃과 아비뇽 이동</td>
+<td>농가 → Avignon 숙소·주차 → 가벼운 산책</td>
+<td style="text-align: right;">3/5</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Day</th>
+<th>날짜</th>
+<th>점심</th>
+<th>저녁</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td>9/13 일</td>
+<td>뤼르마랭 또는 이동 중</td>
+<td><strong>농가 — 쿠스텔레 장본 것으로</strong></td>
+</tr>
+<tr>
+<td>17</td>
+<td>9/14 월</td>
+<td>루시용 또는 고울트</td>
+<td>농가</td>
+</tr>
+<tr>
+<td>18</td>
+<td>9/15 화</td>
+<td><strong>고르드 시장 조달</strong></td>
+<td>농가 또는 식당 한 번</td>
+</tr>
+<tr>
+<td>19</td>
+<td>9/16 수</td>
+<td><strong>농가 테라스</strong></td>
+<td>농가</td>
+</tr>
+<tr>
+<td>선택</td>
+<td>9/17 목</td>
+<td>리슬 시장 조달</td>
+<td>기본 일정 아님</td>
+</tr>
+<tr>
+<td><strong>식당은 3박 중 한 번이면 충분하다.</strong> 이 구간의 목적이 농가 생활이다.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<hr /></div></details>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>우천 전환</strong> — 농가 독서 · 실내 스케치 · 가까운 마을 카페</div></div>
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>

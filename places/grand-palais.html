@@ -3,70 +3,164 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Grand Palais — 2026 유럽 여행 가이드북</title>
+<title>Grand Palais — 유럽 43일 가이드북</title>
+<meta name="description" content="폴 세잔이 한 세기가 넘는 예술 창작에 끼친 예외적 영향을 탐구하는 전시다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="paris">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/paris/index.html">Paris</a><span class="tb-sep" aria-hidden="true">›</span><b>Grand Palais</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/paris.html">Paris</a><span class="sep" aria-hidden="true">›</span><b>Grand Palais</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Grand Palais</h1><figure class="guide-photo guide-photo--content" data-photo-id="paris-grand-palais-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/paris-grand-palais-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/paris-grand-palais-01-content-1280.webp" alt="그랑 팔레 유리 천장 아래 강철 아치가 이어지는 대전시장 내부"
-      width="1280" height="853" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>1900년 만국박람회 때 지은 그랑 팔레의 대전시장(네프) — 강철 아치와 유리 지붕이 실내를 덮는다.</span><span class="media-credit">Photo: Thesupermat · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#paris-grand-palais-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/paris/index.html">Paris</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><a class="pl-day" href="../daily/day-35.html">Day 35 · 10/2</a><span class="pl-basis">시간표 기준</span></td></tr><tr><th>상세</th><td><a href="../chapters/paris/places.html#cezanne-et-nous-grand-palais-must">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/paris.html">Paris 실행지도</a> · <span class="pl-basis">핀 이름 Grand Palais</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Grand_Palais">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Palais">Google Maps</a><a class="ref ic ic-map" href="../maps/paris.html">Paris 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><blockquote>
-<p><strong>예약</strong> 온라인 시간지정 예약 필수 (오픈권은 2027-01-03까지만 판매, 마지막 2주 제외)</p>
-<p><strong>운영</strong> 화–일 09:30–20:00 · 금요일 야간 22:30까지 · <strong>휴관</strong> 월요일 휴관 (12/25·5/1·7/14 휴관)
-<strong>예약</strong> 온라인 사전 예약 강력 권장 — 현장 구매는 잔여분 보장 없음 · <strong>소요</strong> 120분</p>
-</blockquote>
-<ul>
-<li>2026년 9월 23일–2027년 1월 17일.</li>
-<li>Cézanne 약 70점과 후대 작가들의 작업을 병치.</li>
-<li>Aix에서 작업실과 도시를 본 Jason·Julia에게 일반 관광객보다 의미가 크다.</li>
-</ul>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/hero/paris-grand-palais-01-hero-1920.webp" srcset="../assets/images/hero/paris-grand-palais-01-hero-800.webp 800w, ../assets/images/hero/paris-grand-palais-01-hero-1280.webp 1280w, ../assets/images/hero/paris-grand-palais-01-hero-1920.webp 1920w" sizes="100vw" alt="그랑 팔레 유리 천장 아래 강철 아치가 이어지는 대전시장 내부" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Paris</span></div>
+    <h1>Grand Palais</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <p class="hero-dek">폴 세잔이 한 세기가 넘는 예술 창작에 끼친 예외적 영향을 탐구하는 전시다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Grand_Palais" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Grand_Palais_-_PA00088877_-_Bonhams_2013_-_Vue_d%27ensemble_-_007.jpg" rel="nofollow noopener">Thesupermat</a> · CC BY-SA 3.0</p>
+<div class="sec-head-rule"><span class="label">WHY GO</span><h2>왜 가는가</h2></div>
+<div class="prose"><p>폴 세잔이 한 세기가 넘는 예술 창작에 끼친 예외적 영향을 탐구하는 전시다.</p>
+<p>이 전시의 원리는 단순하지만 아찔하다. 엑상프로방스 화가의 전기를 또 한 번 늘어놓는 대신, 그의 그림을 그가 변모시킨 세대들의 그림과 대화시킨다.</p>
+<p>약 180점 중 세잔의 작품이 70점가량이다. 고갱·마티스·피카소·몬드리안, 그리고 조앤 미첼·브리짓 라일리·피터 도이그 같은 동시대 작가까지 영향과 계보와 재해석의 역사를 되짚는다.</p></div>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>화–일 09:30–20:00 · 금요일 야간 22:30까지 <br><span class="meta">https://www.grandpalais.fr/en/plan-your-visit</span></td></tr><tr><th scope="row">휴무</th><td>월요일 휴관 (12/25·5/1·7/14 휴관) <br><span class="meta">https://www.grandpalais.fr/en/plan-your-visit</span></td></tr><tr><th scope="row">예약</th><td>온라인 사전 예약 강력 권장 — 현장 구매는 잔여분 보장 없음 <br><span class="meta">https://www.grandpalais.fr/en/plan-your-visit</span></td></tr><tr><th scope="row">소요시간</th><td>120분 <span class="badge badge-caution">재확인</span><br><span class="meta">원고 11_Paris_Long_Stay_v2.0.md L2176</span></td></tr><tr><th scope="row">메모</th><td>Cezanne et nous 2026/9/23–2027/1/17 갤러리 3·4 · 174점(세잔 69 + 타 작가 105) · 예약 2026-07-07 개시 <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr></tbody></table></div>
+<div class="prose"><h3>실용</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기간</td>
+<td>2026/9/23 – 2027/1/17</td>
+</tr>
+<tr>
+<td>운영</td>
+<td>화·수·금·주말 9:30–18:00 · <strong>목요일 9:30–21:45</strong></td>
+</tr>
+<tr>
+<td>예약</td>
+<td>티켓 판매 개시됨 · <strong>필수</strong></td>
+</tr>
+<tr>
+<td>체류</td>
+<td>120–150분</td>
+</tr>
+<tr>
+<td>공동주최</td>
+<td>그랑팔레Rmn · 퐁피두 센터 · 오르세·오랑주리 공공기관</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Day 34가 목요일인 것이 유리하다.</strong> 목요일만 21:45까지 연다. <strong>오후 늦게 들어가면 인파가 준다.</strong></p>
+</blockquote></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>핵심 — 왜 이 순서가 옳은가</h3>
+<p>이 전시는 세잔을 인상주의 운동의 역사 안에 넣기보다, 1900년 모리스 드니가 「세잔에게 바치는 경의」에서 기린 태동기 상징주의와의 연결을 밝히는 데 더 힘을 쏟는다.</p>
+<p>전시 구성은 <strong>수용사</strong>를 따라간다.</p>
+<p>파리에서 잊혔던 세잔이 탕기 영감의 가게와 몇몇 수집가·화가를 통해 보이게 되고, 1895–1901년 앙브루아즈 볼라르의 개인전, 1894년 카유보트 유증을 통한 뤽상부르 미술관 입성, 이후 살롱 도톤과 대규모 국제전을 거치며 회화 논쟁의 중심에 서는 과정을 보여준다.</p>
+<h3>관람 요령</h3>
+<blockquote>
+<p><strong>Day 15에 본 것을 가지고 오라</strong>
+엑상에서 <strong>로브 아틀리에</strong>와 <strong>자스 드 부팡</strong>을 봤다. 벽에 낸 세로 홈, 북향 빛, 정원에서 그린 첫 생트빅투아르.
+<strong>여기서 그 결과물을 본다.</strong> 2주 간격으로 원인과 결과를 본다. 이 순서를 가진 관람객은 드물다.</p>
+<p><strong>생트빅투아르를 찾아라</strong>
+생트빅투아르 풍경이 좋은 예다. 산은 사실처럼 거기 놓여 있는데 붓질은 계속 움직이며 색을 색에 밀어붙여, 장면이 그저 보이는 것이 아니라 지어진 것처럼 느껴지게 만든다.
+<strong>Day 15에 실물 산을 봤다.</strong> 화가들의 터에서 본 그 산이다.</p>
+<p><strong>정물을 놓치지 마라</strong>
+유명한 사과와 병과 식탁 모서리가 얌전히 있지 않는다. 그릇이 기울고 천이 접히고 그림자가 물감 덩어리가 되는 조용한 긴장이 있다.</p>
+<p><strong>논쟁으로 읽어라</strong>
+초기 모더니즘과의 대화가 실제로 날이 서 있다. 피카소와 마티스의 작품은 세잔에게 아첨하지 않고 그와 논쟁한다.</p>
+</blockquote></div>
+<div class="sec-head"><h2>Paris 의 다른 장소</h2><a href="../guide/paris.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp 480w" sizes="84px" alt="BnF 리슐리외관 살 오발 타원형 열람실 내부" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bnf-richelieu.html">BnF Richelieu</a></h3>
+    <p class="card-dek">프랑스 국립도서관의 옛 본관이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-bourse-commerce-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-bourse-commerce-01-thumb-480.webp 480w" sizes="84px" alt="부르스 드 코메르스의 곡면 파사드와 페디먼트 조각, 정문 앞 사람들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bourse-de-commerce-pinault-collection.html">Bourse de Commerce — Pinault Collection</a></h3>
+    <p class="card-dek">옛 곡물거래소를 안도 다다오가 개조한 현대미술관이다</p>
+    <div class="metarow"><span class="badge badge-neutral">선택</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp 480w" sizes="84px" alt="파리 퐁피두 센터의 외부 배관·에스컬레이터 파사드와 광장" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/centre-pompidou.html">Centre Pompidou</a></h3>
+    <p class="card-dek">25.6 Centre Pompidou 대체로 두었다.</p>
+    <div class="metarow"><span class="badge badge-neutral">비추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-giverny-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-giverny-01-thumb-480.webp 480w" sizes="84px" alt="지베르니 모네의 물의 정원, 수련이 핀 연못과 수양버들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/giverny.html">Giverny</a></h3>
+    <p class="card-dek">모네가 정원을 만들고 수련을 그린 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp 480w" sizes="84px" alt="비에 젖은 무프타르 거리의 자갈길과 카페, 상점 앞을 걷는 행인들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/latin-quarter.html">Latin Quarter</a></h3>
+    <p class="card-dek">&#x27;라틴&#x27;은 학생들이 라틴어로 말하던 동네라는 뜻이다</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-marais-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-marais-01-thumb-480.webp 480w" sizes="84px" alt="마레 지구 로지에 거리의 자갈길과 상점들, 걸어가는 사람들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/le-marais.html">Le Marais</a></h3>
+    <p class="card-dek">Day 30 (9/27 일) · Day 35 (10/2 금)</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

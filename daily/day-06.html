@@ -3,133 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 6 · 9/3 목 · Bàscara — 2026 유럽 여행 가이드북</title>
+<title>Day 6 · Bàscara — 유럽 43일 가이드북</title>
+<meta name="description" content="Tossa·Sant Feliu와 귀로의 석조마을">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="es">
+<body data-region="girona">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/girona/index.html">Girona</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 6</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 6</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-05.html">← 앞</a><a href="day-07.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-01.html" title="Day 1">8/29</a><a href="day-02.html" title="Day 2">8/30</a><a href="day-03.html" title="Day 3">8/31</a><a href="day-04.html" title="Day 4">9/1</a><a href="day-05.html" title="Day 5">9/2</a><a href="day-06.html" class="here" title="Day 6">9/3</a><a href="day-07.html" title="Day 7">9/4</a><a href="day-08.html" title="Day 8">9/5</a><a href="day-09.html" title="Day 9">9/6</a><a href="day-10.html" title="Day 10">9/7</a><a href="day-11.html" title="Day 11">9/8</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="es" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-04.html">Day 4</a><a href="../daily/day-05.html">Day 5</a><a href="../daily/day-06.html" aria-current="page">Day 6</a><a href="../daily/day-07.html">Day 7</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 6 · 9/3 목</span></span><a href="../chapters/girona/schedule.html"><b>지역</b><span>Girona</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 6 · 9/3 목 · Bàscara</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="girona-tossa-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/girona-tossa-01-hero-800.webp 800w, ../assets/images/hero/girona-tossa-01-hero-1280.webp 1280w, ../assets/images/hero/girona-tossa-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/girona-tossa-01-hero-1280.webp" alt="해질녘 불이 켜진 토사 데 마르 빌라 베야 성벽과 그 앞 해변의 곡선"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>곶 위의 빌라 베야 중세 성벽이 해질녘 조명 속에 해변과 마주 서 있다.</span><span class="media-credit">Photo: Moahim · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#girona-tossa-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="girona-peratallada-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/girona-peratallada-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/girona-peratallada-01-thumb-480.webp" alt="페라타야다의 거친 석조 벽과 아치가 이어지는 중세 골목"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>석조 건물과 불규칙한 골목이 특징인 페라타야다 마을.</span><span class="media-credit">Photo: Carlos Pino Andújar · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#girona-peratallada-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="girona-calella-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/girona-calella-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/girona-calella-01-thumb-480.webp" alt="칼레야 데 팔라프루젤의 흰 집과 작은 모래 해변이 이어진 해안"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>흰 건물과 작은 만이 이어지는 코스타 브라바의 칼레야 데 팔라프루젤.</span><span class="media-credit">Photo: Jorge Franganillo · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#girona-calella-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="girona-sant-feliu-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/girona-sant-feliu-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/girona-sant-feliu-01-thumb-480.webp" alt="절벽 산책로에서 내려다본 산트 펠리우 데 기솔스의 만 — 해변, 요트 정박장, 곶 위의 시가지"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>붉은 바위 해안 너머로 산트 펠리우 데 기솔스의 해변과 요트 정박장이 만을 감싸고 있다.</span><span class="media-credit">Photo: Sgroey · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#girona-sant-feliu-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Tossa·Sant Feliu·Pals·Peratallada</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:20 출발</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>Tossa 주차·Vila Vella 접근 재확인</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/girona/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/girona.html"><b class="ic ic-map" aria-hidden="true"></b>Girona 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><p class="note">이 날은 원고에 시각표가 없다. 구간 일정은 <a href="../chapters/girona/schedule.html">일정 한눈에</a> 에 있다.</p>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/pals.html">Pals <b>Recommended</b></a><a class="pl-day" href="../places/peratallada.html">Peratallada <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>GI-682·운전피로</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Pals 압축·Peratallada 유지</dd></div><div class="ds-item"><dt>대체안</dt><dd>17:40 Bàscara 출발</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Tossa 09:45–12:30·Sant Feliu 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>지연 시 Pals 삭제</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-6">
-<h2 id="daily-map-title-6" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Tossa 해안축과 귀로의 석조마을</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="parking" aria-pressed="false">주차</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=41.719982%2C2.929307&amp;destination=41.976969%2C3.092513&amp;travelmode=driving&amp;waypoints=41.780968%2C3.024953">주차장 순서대로 운전</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="girona-stay-private" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="girona-stay-private" aria-pressed="false"><strong>0. 바스카라의 B&amp;B (확정 숙소)</strong><span>숙소 · 08:20 출발</span><small>확정 숙소 — Plaça de l&#x27;Església, 6, 17483 Bàscara.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pla%C3%A7a%20de%20l%27Esgl%C3%A9sia%206%2C%2017483%20B%C3%A0scara">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.16036%2C2.90964&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="tossa-parking-pelegri" data-type="parking"><button class="gm-card-main" type="button" data-place-id="tossa-parking-pelegri" aria-pressed="false"><strong>1. Avinguda del Pelegrí 공영주차 권역</strong><span>주차 · 09:45 도착</span><small>공식 주차 권역. 당일 운영·만차 여부 재확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Avinguda+del+Pelegr%C3%AD+parking%2C+Tossa+de+Mar">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.719982%2C2.929307&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="tossa-de-mar" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="tossa-de-mar" aria-pressed="false"><strong>2. Tossa de Mar</strong><span>방문지 · 09:45–12:30</span><small>Vila Vella → 등대 전망대 → Platja Gran.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Tossa+de+Mar">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.7195%2C2.9319&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="sant-feliu-la-corxera-parking" data-type="parking"><button class="gm-card-main" type="button" data-place-id="sant-feliu-la-corxera-parking" aria-pressed="false"><strong>3. Aparcament La Corxera</strong><span>주차 · 13:10 도착</span><small>La Corxera 주차 후 도보 이동.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Aparcament+La+Corxera%2C+Sant+Feliu+de+Gu%C3%ADxols">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.780968%2C3.024953&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="sant-feliu-de-guixols" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="sant-feliu-de-guixols" aria-pressed="false"><strong>4. Sant Feliu de Guíxols</strong><span>방문지 · 13:10–14:30</span><small>해안 산책·점심. 날씨·피로 시 우회.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sant+Feliu+de+Gu%C3%ADxols">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.78%2C3.0676&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="pals-abeurador-parking" data-type="parking"><button class="gm-card-main" type="button" data-place-id="pals-abeurador-parking" aria-pressed="false"><strong>5. Carrer de l’Abeurador 주차 권역</strong><span>주차 · 15:20 도착</span><small>Pals 선택 방문 때만 사용.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+l%27Abeurador+parking%2C+Pals">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.969806%2C3.146538&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="pals" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="pals" aria-pressed="false"><strong>6. Pals</strong><span>방문지 · 15:20–16:10</span><small>선택 일정. Tossa 출발이 13:00을 넘으면 삭제.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pals">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.97039%2C3.14843&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="peratallada-baix-parking" data-type="parking"><button class="gm-card-main" type="button" data-place-id="peratallada-baix-parking" aria-pressed="false"><strong>7. Aparcament Baix</strong><span>주차 · 16:25 도착</span><small>차량 통제 구역 밖 공식 주차장.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Aparcament+Baix%2C+Peratallada">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.976969%2C3.092513&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="peratallada" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="peratallada" aria-pressed="false"><strong>8. Peratallada</strong><span>방문지 · 16:25–17:40</span><small>석조 골목·광장.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Peratallada">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.97618%2C3.09007&amp;travelmode=driving">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.719982%2C2.929307&amp;travelmode=driving&amp;origin=42.16036%2C2.90964">바스카라의 B&amp;B (확정 숙소) → Avinguda del Pelegrí 공영주차 권역 · 자동차</a><small>현재 위치에서 공개 주차장까지 안내.</small></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.7195%2C2.9319&amp;travelmode=walking&amp;origin=41.719982%2C2.929307">Avinguda del Pelegrí 공영주차 권역 → Tossa de Mar · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.780968%2C3.024953&amp;travelmode=driving&amp;origin=41.7195%2C2.9319">Tossa de Mar → Aparcament La Corxera · 자동차</a><small>GI-682 해안도로. 악천후 시 회피.</small></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.78%2C3.0676&amp;travelmode=walking&amp;origin=41.780968%2C3.024953">Aparcament La Corxera → Sant Feliu de Guíxols · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.969806%2C3.146538&amp;travelmode=driving&amp;origin=41.78%2C3.0676">Sant Feliu de Guíxols → Carrer de l’Abeurador 주차 권역 · 자동차 · 선택</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.97039%2C3.14843&amp;travelmode=walking&amp;origin=41.969806%2C3.146538">Carrer de l’Abeurador 주차 권역 → Pals · 도보 · 선택</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.976969%2C3.092513&amp;travelmode=driving&amp;origin=41.97039%2C3.14843">Pals → Aparcament Baix · 자동차 · 선택</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.976969%2C3.092513&amp;travelmode=driving&amp;origin=41.78%2C3.0676">Sant Feliu de Guíxols → Aparcament Baix · 자동차</a><small>Pals 생략 시 직행.</small></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.97618%2C3.09007&amp;travelmode=walking&amp;origin=41.976969%2C3.092513">Aparcament Baix → Peratallada · 도보</a></li><li><span>Peratallada → 바스카라의 B&amp;B (확정 숙소) · 자동차 · 개인 보관본에서 직접 설정</span><small>개인 숙소 복귀는 공개 링크를 만들지 않음.</small></li></ol></details>
-<script type="application/json">{"center":[41.9,3.02],"zoom":9,"places":[{"id":"girona-stay-private","name":"바스카라의 B\u0026B (확정 숙소)","city":"Girona · Empordà","type":"accommodation","lat":42.16036,"lng":2.90964,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pla%C3%A7a%20de%20l%27Esgl%C3%A9sia%206%2C%2017483%20B%C3%A0scara","address":"Plaça de l'Església, 6, 17483 Bàscara","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]},{"id":"tossa-parking-pelegri","name":"Avinguda del Pelegrí 공영주차 권역","city":"Tossa de Mar","type":"parking","lat":41.719982,"lng":2.929307,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Avinguda+del+Pelegr%C3%AD+parking%2C+Tossa+de+Mar","address":"","private":false,"approximate":true,"optional":false,"status":"planned","sourceUrl":"https://visittossa.com/en/moure_s_tossa/car-parking-in-town/"},{"id":"tossa-de-mar","name":"Tossa de Mar","city":"Girona · Empordà","type":"attraction","lat":41.7195,"lng":2.9319,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Tossa+de+Mar","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"],"editorialSlug":"tossa-de-mar"},{"id":"sant-feliu-la-corxera-parking","name":"Aparcament La Corxera","city":"Sant Feliu de Guíxols","type":"parking","lat":41.780968,"lng":3.024953,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Aparcament+La+Corxera%2C+Sant+Feliu+de+Gu%C3%ADxols","address":"","private":false,"approximate":false,"optional":false,"status":"planned","sourceUrl":"https://ciutada.guixols.cat/OAC/downloadR/421f3f70-b5bd-4f8d-b75e-27f03c26a061"},{"id":"sant-feliu-de-guixols","name":"Sant Feliu de Guíxols","city":"Girona · Empordà","type":"attraction","lat":41.78,"lng":3.0676,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Sant+Feliu+de+Gu%C3%ADxols","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"],"editorialSlug":"sant-feliu-de-guixols"},{"id":"pals-abeurador-parking","name":"Carrer de l’Abeurador 주차 권역","city":"Pals","type":"parking","lat":41.969806,"lng":3.146538,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Carrer+de+l%27Abeurador+parking%2C+Pals","address":"","private":false,"approximate":true,"optional":true,"status":"planned","sourceUrl":"https://www.visitpals.com/en/what-to-do/accessible-tourism/"},{"id":"pals","name":"Pals","city":"Girona · Empordà","type":"attraction","lat":41.97039,"lng":3.14843,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pals","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]},{"id":"peratallada-baix-parking","name":"Aparcament Baix","city":"Peratallada","type":"parking","lat":41.976969,"lng":3.092513,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Aparcament+Baix%2C+Peratallada","address":"","private":false,"approximate":true,"optional":false,"status":"planned","sourceUrl":"https://www.visitperatallada.cat/es/aparcar-en-peratallada.html"},{"id":"peratallada","name":"Peratallada","city":"Girona · Empordà","type":"attraction","lat":41.97618,"lng":3.09007,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Peratallada","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-03","city":"Bàscara · Tossa de Mar · Sant Feliu · Pals · Peratallada","title":"Tossa 해안축과 귀로의 석조마을","center":[41.9,3.02],"zoom":9,"defaultMode":"driving","stops":[{"placeId":"girona-stay-private","order":0,"plannedTime":"08:20 출발","note":"확정 숙소 — Plaça de l'Església, 6, 17483 Bàscara."},{"placeId":"tossa-parking-pelegri","order":1,"plannedTime":"09:45 도착","note":"공식 주차 권역. 당일 운영·만차 여부 재확인."},{"placeId":"tossa-de-mar","order":2,"plannedTime":"09:45–12:30","note":"Vila Vella → 등대 전망대 → Platja Gran."},{"placeId":"sant-feliu-la-corxera-parking","order":3,"plannedTime":"13:10 도착","note":"La Corxera 주차 후 도보 이동."},{"placeId":"sant-feliu-de-guixols","order":4,"plannedTime":"13:10–14:30","note":"해안 산책·점심. 날씨·피로 시 우회."},{"placeId":"pals-abeurador-parking","order":5,"plannedTime":"15:20 도착","note":"Pals 선택 방문 때만 사용."},{"placeId":"pals","order":6,"plannedTime":"15:20–16:10","note":"선택 일정. Tossa 출발이 13:00을 넘으면 삭제."},{"placeId":"peratallada-baix-parking","order":7,"plannedTime":"16:25 도착","note":"차량 통제 구역 밖 공식 주차장."},{"placeId":"peratallada","order":8,"plannedTime":"16:25–17:40","note":"석조 골목·광장."},{"placeId":"girona-stay-private","order":9,"plannedTime":"18:20–18:40 복귀","note":"확정 숙소 — Plaça de l'Església, 6, 17483 Bàscara."}],"segments":[{"from":"girona-stay-private","to":"tossa-parking-pelegri","mode":"driving","note":"현재 위치에서 공개 주차장까지 안내."},{"from":"tossa-parking-pelegri","to":"tossa-de-mar","mode":"walking"},{"from":"tossa-de-mar","to":"sant-feliu-la-corxera-parking","mode":"driving","note":"GI-682 해안도로. 악천후 시 회피."},{"from":"sant-feliu-la-corxera-parking","to":"sant-feliu-de-guixols","mode":"walking"},{"from":"sant-feliu-de-guixols","to":"pals-abeurador-parking","mode":"driving","optional":true},{"from":"pals-abeurador-parking","to":"pals","mode":"walking","optional":true},{"from":"pals","to":"peratallada-baix-parking","mode":"driving","optional":true},{"from":"sant-feliu-de-guixols","to":"peratallada-baix-parking","mode":"driving","note":"Pals 생략 시 직행."},{"from":"peratallada-baix-parking","to":"peratallada","mode":"walking"},{"from":"peratallada","to":"girona-stay-private","mode":"driving","manual":true,"note":"개인 숙소 복귀는 공개 링크를 만들지 않음."}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 6</span>
+    <span class="day-date">9/3 목</span></div>
+  <h1>Bàscara</h1>
+  <p class="hero-dek">Tossa·Sant Feliu와 귀로의 석조마을</p>
+  <div class="metarow"><span class="badge badge-neutral">검토 중</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>약 176km · 차량 경로</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-03">
+  <span class="label">NEXT</span>
+  <div class="action-when">09:45</div>
+  <div class="action-what">Tossa de Mar</div>
+  <p class="card-dek">Vila Vella 성벽과 해변</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-06-bascara.webp" aria-label="Day 6 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-06-bascara-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 6 Bàscara 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-06-bascara.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-05.html">← Day 5</a><span></span><a href="day-07.html">Day 7 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>09:45 Tossa de Mar</strong> — 주차·Vila Vella 접근 재확인</li><li><strong> Pals</strong> — 지연 시 삭제 — 우선 압축 대상</li><li><strong> Peratallada</strong> — 골목에 차를 넣지 않는다</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="08:20" data-end="08:20">
+  <div class="tl-time">08:20</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Bàscara 출발 </div>
+    <p class="tl-note">차량·주차·운전피로 확인 후 출발</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 1시간 · 73.8km</span></div>
+</li><li class="tl-item" data-start="09:45" data-end="12:30">
+  <div class="tl-time">09:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Tossa de Mar <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Vila Vella 성벽과 해변</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>주차·Vila Vella 접근 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 31분 · 25.7km</span></div>
+</li><li class="tl-item" data-start="13:00" data-end="">
+  <div class="tl-time">13:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> Sant Feliu de Guíxols 점심 </div>
+    <p class="tl-note">점심 후 짧게 걷고 이동</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 30분 · 28.9km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/pals.html">Pals</a> <span class="badge badge-neutral">선택</span><span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Torre de les Hores와 Josep Pla 전망대</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>지연 시 삭제 — 우선 압축 대상</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 13분 · 8.5km</span></div>
+</li><li class="tl-item" data-start="" data-end="17:40">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/peratallada.html">Peratallada</a> <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">마을 진입 전에 해자를 먼저 본다</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>골목에 차를 넣지 않는다</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 46분 · 39.6km</span></div>
+</li><li class="tl-item" data-start="18:30" data-end="">
+  <div class="tl-time">18:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Bàscara 복귀 </div>
+    <p class="tl-note">저녁은 숙소식, 다음 날 이동 준비</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 지연·악천후 시 Pals 삭제, Peratallada 유지</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Bàscara 숙소 확정 좌표로 교체(현재 근사)</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Tossa 주차·Vila Vella 접근, Pals·Peratallada 체류 시각 확정</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Sant Feliu 점심 식당 미정 — 현장 선택</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[41.94,3.03],"zoom":10,"pins":[{"id":"bascara-stay","name":"Bàscara 출발","lat":42.16036,"lng":2.90964,"cat":"hotel","time":"08:20","place":null},{"id":"tossa","name":"Tossa de Mar","lat":41.7195,"lng":2.9319,"cat":"sight","time":"09:45","place":null},{"id":"sant-feliu","name":"Sant Feliu de Guíxols 점심","lat":41.78,"lng":3.0676,"cat":"food","time":"13:00","place":null},{"id":"pals","name":"Pals","lat":41.97039,"lng":3.14843,"cat":"sight","time":null,"place":"pals"},{"id":"peratallada","name":"Peratallada","lat":41.97618,"lng":3.09007,"cat":"sight","time":null,"place":"peratallada"},{"id":"bascara-return","name":"Bàscara 복귀","lat":42.16036,"lng":2.90964,"cat":"hotel","time":"18:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 6 동선 · 6곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="bascara-stay"><span class="meta">08:20</span>Bàscara 출발<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=42.16036,2.90964"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Bàscara 출발 </span>열기</a></li><li data-pin="tossa"><span class="meta">09:45</span>Tossa de Mar<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.7195,2.9319"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Tossa de Mar </span>열기</a></li><li data-pin="sant-feliu"><span class="meta">13:00</span>Sant Feliu de Guíxols 점심<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.78,3.0676"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Sant Feliu de Guíxols 점심 </span>열기</a></li><li data-pin="pals"><a href="../places/pals.html">Pals</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.97039,3.14843"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Pals </span>열기</a></li><li data-pin="peratallada"><a href="../places/peratallada.html">Peratallada</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.97618,3.09007"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Peratallada </span>열기</a></li><li data-pin="bascara-return"><span class="meta">18:30</span>Bàscara 복귀<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=42.16036,2.90964"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Bàscara 복귀 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>렌터카</li><li>GI-682 해안도로 회피 기본</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>Sant Feliu 점심 · 식당 선택보다 출발 시각</li><li>숙소 저녁</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>Tossa 09:45–12:30</li><li>Peratallada 해자 먼저</li><li>17:40 귀로 출발</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-05.html">← Day 5</a><a class="btn btn-secondary" href="../daily/day-07.html">Day 7 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

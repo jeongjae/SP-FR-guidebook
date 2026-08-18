@@ -3,172 +3,124 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 36 · 10/3 토 · Paris — 2026 유럽 여행 가이드북</title>
+<title>Day 36 · Paris — 유럽 43일 가이드북</title>
+<meta name="description" content="Arc 전날의 유연한 문화일">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="paris">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/paris/index.html">Paris</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 36</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 36</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-35.html">← 앞</a><a href="day-37.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-31.html" title="Day 31">9/28</a><a href="day-32.html" title="Day 32">9/29</a><a href="day-33.html" title="Day 33">9/30</a><a href="day-34.html" title="Day 34">10/1</a><a href="day-35.html" title="Day 35">10/2</a><a href="day-36.html" class="here" title="Day 36">10/3</a><a href="day-37.html" title="Day 37">10/4</a><a href="day-38.html" title="Day 38">10/5</a><a href="day-39.html" title="Day 39">10/6</a><a href="day-40.html" title="Day 40">10/7</a><a href="day-41.html" title="Day 41">10/8</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-27.html">Day 27</a><a href="../daily/day-28.html">Day 28</a><a href="../daily/day-29.html">Day 29</a><a href="../daily/day-30.html">Day 30</a><a href="../daily/day-31.html">Day 31</a><a href="../daily/day-32.html">Day 32</a><a href="../daily/day-33.html">Day 33</a><a href="../daily/day-34.html">Day 34</a><a href="../daily/day-35.html">Day 35</a><a href="../daily/day-36.html" aria-current="page">Day 36</a><a href="../daily/day-37.html">Day 37</a><a href="../daily/day-38.html">Day 38</a><a href="../daily/day-39.html">Day 39</a><a href="../daily/day-40.html">Day 40</a><a href="../daily/day-41.html">Day 41</a><a href="../daily/day-42.html">Day 42</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 36 · 10/3 토</span></span><a href="../chapters/paris/schedule.html"><b>지역</b><span>Paris</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 36 · 10/3 토 · Paris</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="paris-versailles-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/paris-versailles-01-hero-800.webp 800w, ../assets/images/hero/paris-versailles-01-hero-1280.webp 1280w, ../assets/images/hero/paris-versailles-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/paris-versailles-01-hero-1280.webp" alt="베르사유 궁전 정원 쪽 파사드와 남쪽 화단"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>정원에서 본 베르사유 궁전 — 남쪽 화단과 연못 너머로 서쪽 파사드가 펼쳐진다.</span><span class="media-credit">Photo: Basile Morin · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#paris-versailles-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="paris-versailles-gardens-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/paris-versailles-gardens-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/paris-versailles-gardens-01-thumb-480.webp" alt="아폴론 분수와 그랑 카날 축선 항공 사진"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>아폴론 분수에서 그랑 카날로 이어지는 정원의 대축선.</span><span class="media-credit">Photo: ToucanWings · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#paris-versailles-gardens-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="paris-trianon-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/paris-trianon-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/paris-trianon-01-thumb-480.webp" alt="프티 트리아농 파사드와 화분에 심긴 오렌지 나무"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>9월 오후의 프티 트리아농 — 신고전주의 별궁이다.</span><span class="media-credit">Photo: Jean-Pierre Dalbéra from Paris, France · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#paris-trianon-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>유연한 문화일 (박물관/BnF/동네)</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>느린 아침</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>한 권역 3시간 상한</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/paris/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/paris.html"><b class="ic ic-map" aria-hidden="true"></b>Paris 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>09:00–10:30</td>
-<td>느린 아침</td>
-<td>다음 날 이른 이동을 고려</td>
-</tr>
-<tr>
-<td>11:00–12:30</td>
-<td>서점 또는 숙소권 시장</td>
-<td>예약 없는 선택</td>
-</tr>
-<tr>
-<td>12:30–14:00</td>
-<td>점심·휴식</td>
-<td>오후 한 권역만</td>
-</tr>
-<tr>
-<td>14:00–17:00</td>
-<td>박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나</td>
-<td>미완료 우선, 3시간 상한</td>
-</tr>
-<tr>
-<td>17:00 이후</td>
-<td>장보기·숙소식</td>
-<td>Arc 준비·교통 확인, 야간행사 없음</td>
-</tr>
-<tr>
-<td>10:00–13:00</td>
-<td><strong>Musée du Louvre</strong></td>
-<td>요금 비EEA €32 · 휴관 화요일 · 드농관 한 축만. <strong>토요일 혼잡 — 개장 시각에 도착한다. 대안 Day 31(9/28 월)</strong></td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="2" aria-label="피로도 2–3 / 5"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><b>2–3/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/bnf-richelieu.html">BnF Richelieu <b>Recommended</b></a><a class="pl-day" href="../places/musee-du-louvre.html">Musée du Louvre <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="박물관-서점-동네-arc-전날의-유연한-문화일-optional">박물관, 서점, 동네 — Arc 전날의 유연한 문화일 <span class="grade grade-optional">Optional</span></h3>
-<p>Arc 토요일 프로그램은 기본 일정에서 제외한다.</p>
-<p>이 날은 장소가 아니라 <strong>여백</strong>이다. 체류 32일째, 다음 날은 종일 경마장 — 이 사이에 끼운
-'무엇이든 되는 날'이고, 후보는 세 갈래다: 1) 미뤄 둔 박물관 하나 (Orangerie 가 화요일
-휴관을 피해 올 수 있는 날이 바로 이 토요일이다), 2) BnF Richelieu 나 서점 산책,
-3) 아직 못 간 동네 (15구 또는 북마레) 하나. 셋 중 무엇을 고르든 규칙은 같다 —
-<strong>오후 한 권역, 3시간 상한, 저녁은 Arc 준비.</strong> 계획을 세우지 않는 것이 이 날의 계획이다. 이 여백이 있어서 앞의 고정 이벤트들이 밀려도 흡수된다.</p>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>다음 날 Arc 피로</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>문화일정</dd></div><div class="ds-item"><dt>대체안</dt><dd>생활일 전환</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>점심 후 한 권역</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>Arc 준비 확인</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-36">
-<h2 id="daily-map-title-36" class="ic ic-map">Google 실행지도</h2>
-<p class="note">유동일 — 오후 한 권역만 (BnF Richelieu 등 택1)</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.867%2C2.33838&amp;travelmode=walking">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="paris-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="paris-stay-candidate" aria-pressed="false"><strong>0. Pepper &amp; Paper</strong><span>숙소 · 오전 생활권</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 다음 날 이른 이동 대비.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pepper+%26+Paper">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.83966%2C2.34644&amp;travelmode=walking">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="bnf-richelieu" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="bnf-richelieu" aria-pressed="false"><strong>1. BnF Richelieu</strong><span>방문지 · 14:00–17:00 택1</span><small>선택 — 박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나만. 3시간 상한.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=BnF+Richelieu">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.867%2C2.33838&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol></ol></details>
-<script type="application/json">{"center":[48.85,2.34],"zoom":14,"places":[{"id":"paris-stay-candidate","name":"Pepper \u0026 Paper","city":"Paris","type":"accommodation","lat":48.83966,"lng":2.34644,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pepper+%26+Paper","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"]},{"id":"bnf-richelieu","name":"BnF Richelieu","city":"Paris","type":"attraction","lat":48.867,"lng":2.33838,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=BnF+Richelieu","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-10-03","city":"Paris","title":"유동일 — 오후 한 권역만 (BnF Richelieu 등 택1)","center":[48.85,2.34],"zoom":14,"defaultMode":"walking","stops":[{"placeId":"paris-stay-candidate","order":0,"plannedTime":"오전 생활권","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 다음 날 이른 이동 대비."},{"placeId":"bnf-richelieu","order":1,"plannedTime":"14:00–17:00 택1","note":"선택 — 박물관 1곳 / BnF Richelieu / 15구·북마레 중 하나만. 3시간 상한."}],"segments":[]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 36</span>
+    <span class="day-date">10/3 토</span></div>
+  <h1>Paris</h1>
+  <p class="hero-dek">Arc 전날의 유연한 문화일</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 2–3</span><span>약 1km · 도보 + 메트로</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-10-03">
+  <span class="label">NEXT</span>
+  <div class="action-when">11:00</div>
+  <div class="action-what">서점 또는 숙소권 시장</div>
+  <p class="card-dek">예약 없는 선택</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-36-paris.webp" aria-label="Day 36 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-36-paris-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 36 Paris 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-36-paris.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-35.html">← Day 35</a><span></span><a href="day-37.html">Day 37 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>14:00 박물관 1곳 / BnF Richelieu / 동네 권역</strong> — 당일 운영 확인</li><li><strong>17:00 장보기·숙소식</strong> — Arc 입장권·교통 최종 확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="09:00" data-end="10:30">
+  <div class="tl-time">09:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 느린 아침 </div>
+    <p class="tl-note">다음 날 이른 이동(Arc)을 고려</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.4km</span></div>
+</li><li class="tl-item" data-start="11:00" data-end="12:30">
+  <div class="tl-time">11:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> 서점 또는 숙소권 시장 <span class="badge badge-neutral">선택</span></div>
+    <p class="tl-note">예약 없는 선택</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    지하철 · 25분 · 메트로</span></div>
+</li><li class="tl-item" data-start="14:00" data-end="17:00">
+  <div class="tl-time">14:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-book" aria-hidden="true"></b> 박물관 1곳 / BnF Richelieu / 동네 권역 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">미완료 우선, 3시간 상한 — 한 권역만</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>당일 운영 확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    지하철 · 25분 · 메트로</span></div>
+</li><li class="tl-item" data-start="17:00" data-end="">
+  <div class="tl-time">17:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 장보기·숙소식 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Arc 티켓·교통 확인, 야간행사 없음</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>Arc 입장권·교통 최종 확인</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 피로 시 문화일정 삭제, 생활일 전환</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Arc 입장권·이동 교통 최종 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>박물관/BnF 당일 운영 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[48.855,2.342],"zoom":13,"pins":[{"id":"slow-morning","name":"느린 아침","lat":48.83966,"lng":2.34644,"cat":"hotel","time":"09:00","place":null},{"id":"bookshop-market","name":"서점 또는 숙소권 시장","lat":48.8404,"lng":2.3475,"cat":"shopping","time":"11:00","place":null},{"id":"culture-pick","name":"박물관 1곳 / BnF Richelieu / 동네 권역","lat":48.867,"lng":2.33838,"cat":"culture","time":"14:00","place":null},{"id":"paris-return","name":"장보기·숙소식","lat":48.83966,"lng":2.34644,"cat":"hotel","time":"17:00","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 36 동선 · 4곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="slow-morning"><span class="meta">09:00</span>느린 아침<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.83966,2.34644"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">느린 아침 </span>열기</a></li><li data-pin="bookshop-market"><span class="meta">11:00</span>서점 또는 숙소권 시장<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.8404,2.3475"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">서점 또는 숙소권 시장 </span>열기</a></li><li data-pin="culture-pick"><span class="meta">14:00</span>박물관 1곳 / BnF Richelieu / 동네 권역<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.867,2.33838"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">박물관 1곳 / BnF Richelieu / 동네 권역 </span>열기</a></li><li data-pin="paris-return"><span class="meta">17:00</span>장보기·숙소식<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.83966,2.34644"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">장보기·숙소식 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>도보·메트로</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>점심·휴식 12:30–14:00</li><li>숙소 저녁</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>오후 한 권역만 · 3시간 상한</li><li>Arc 토요 프로그램·Hamlet 조합 제외</li><li>저녁은 Arc 준비</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-35.html">← Day 35</a><a class="btn btn-secondary" href="../daily/day-37.html">Day 37 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6EF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>출처와 검증 — 유럽 43일 가이드북</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><b>출처와 검증</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>출처와 검증</h1></header>
+<div class="prose">
+<p>이 가이드북은 확인한 것만 싣는다. 확인하지 못한 운영시간·요금은
+기술하지 않거나 <strong>재확인</strong> 표시를 단다. 추측으로 채우지 않는다.</p>
+<ul>
+  <li>역사·건축·인물 — 복수 출처를 확인한 뒤 기술한다.</li>
+  <li>운영시간·요금 — 근거와 확인 날짜를 함께 들고 다닌다.
+    장소 페이지의 <strong>실용</strong> 표에서 볼 수 있다.</li>
+  <li>개인 해석 — 주어를 밝힌다.</li>
+  <li>미확인 — 기술하지 않는다.</li>
+</ul>
+<p>예약은 아직 전부 잠기지 않았다. <strong>확정 전 주소를 확정으로 믿고
+이동하지 않는다.</strong> 확정된 것만 화면에 확정으로 표시된다.</p>
+</div></div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>

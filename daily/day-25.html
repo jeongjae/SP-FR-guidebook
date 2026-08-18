@@ -3,225 +3,132 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 25 · 9/22 화 · Lyon — 2026 유럽 여행 가이드북</title>
+<title>Day 25 · Lyon — 유럽 43일 가이드북</title>
+<meta name="description" content="Croix-Rousse·Halles·공원">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="lyon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/lyon/index.html">Lyon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 25</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 25</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-24.html">← 앞</a><a href="day-26.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-20.html" title="Day 20">9/17</a><a href="day-21.html" title="Day 21">9/18</a><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a><a href="day-25.html" class="here" title="Day 25">9/22</a><a href="day-26.html" title="Day 26">9/23</a><a href="day-27.html" title="Day 27">9/24</a><a href="day-28.html" title="Day 28">9/25</a><a href="day-29.html" title="Day 29">9/26</a><a href="day-30.html" title="Day 30">9/27</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-23.html">Day 23</a><a href="../daily/day-24.html">Day 24</a><a href="../daily/day-25.html" aria-current="page">Day 25</a><a href="../daily/day-26.html">Day 26</a><a href="../daily/day-27.html">Day 27</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 25 · 9/22 화</span></span><a href="../chapters/lyon/schedule.html"><b>지역</b><span>Lyon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 25 · 9/22 화 · Lyon</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="lyon-fourviere-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/lyon-fourviere-01-hero-800.webp 800w, ../assets/images/hero/lyon-fourviere-01-hero-1280.webp 1280w, ../assets/images/hero/lyon-fourviere-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/lyon-fourviere-01-hero-1280.webp" alt="언덕 위 네 개의 탑이 있는 푸르비에르 노트르담 대성당"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>푸르비에르 언덕 위에 선 노트르담 대성당 — 네 모서리의 탑과 금색 성모상이 보인다.</span><span class="media-credit">Photo: Clément Bardot · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#lyon-fourviere-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="lyon-vieux-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/lyon-vieux-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/lyon-vieux-01-thumb-480.webp" alt="르네상스풍 건물이 늘어선 리옹 구시가지의 자갈길 골목"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>르네상스 시대 건물이 늘어선 리옹 구시가지의 자갈길 골목.</span><span class="media-credit">Photo: Weekend Wayfarers · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#lyon-vieux-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="lyon-saint-jean-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/lyon-saint-jean-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/lyon-saint-jean-01-thumb-480.webp" alt="리옹 구시가지 지붕 너머로 보이는 생장 대성당 전경"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>푸르비에르 사면에서 본 생장 대성당 — 서쪽 정면의 장미창과 두 탑이 보인다.</span><span class="media-credit">Photo: Guilhem Vellut from Annecy, France · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#lyon-saint-jean-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="lyon-traboules-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/lyon-traboules-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/lyon-traboules-01-thumb-480.webp" alt="뤼 뒤 뵈프 트라불 안뜰의 분홍색 나선계단 탑(투르 로즈)"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>뤼 뒤 뵈프의 트라불 안뜰에 있는 분홍색 나선계단 탑, 투르 로즈.</span><span class="media-credit">Photo: Fred Romero from Paris, France · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#lyon-traboules-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Croix-Rousse·Halles·공원</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:30 시장</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>Halles 전후 60분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/lyon/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/lyon.html"><b class="ic ic-map" aria-hidden="true"></b>Lyon 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>07:15–08:00</td>
-<td>Jason 선택 러닝</td>
-<td>Rhône 강변 5–7km. 전날 무릎피로가 있으면 생략</td>
-</tr>
-<tr>
-<td>08:00–09:00</td>
-<td>숙소 아침·샤워</td>
-<td>시장에서 간식·과일 구매 예정</td>
-</tr>
-<tr>
-<td>09:20–10:10</td>
-<td><strong>Croix-Rousse 시장</strong></td>
-<td>Maison des Canuts 화~금 10:00~13:00, 14:00~18:00 / 토 10:00~18:00. 가이드 투어 화~토 11:00·15:30. 트라불 매일 7:00~19:00 · 휴무 동네·트라불(Cour des Voraces 등) 연중무휴 — 트라불 매일 07:00~19:00. 과일·치즈·빵 소량 구매</td>
-</tr>
-<tr>
-<td>10:15–12:00</td>
-<td><strong>Croix-Rousse 평지와 slopes</strong></td>
-<td>Place de la Croix-Rousse→Maison des Canuts 외관→Mur des Canuts 선택→경사면 traboule</td>
-</tr>
-<tr>
-<td>12:00–12:30</td>
-<td>대중교통으로 Halles 이동</td>
-<td>C선·메트로·트램 조합, 혼잡 시 택시</td>
-</tr>
-<tr>
-<td>12:35–14:05</td>
-<td><strong>Halles de Lyon Paul Bocuse 점심</strong></td>
-<td>Giraudet quenelle, Sibilia charcuterie, Mère Richard cheese 등 2–3곳을 나눠 맛봄</td>
-</tr>
-<tr>
-<td>14:15–15:00</td>
-<td>숙소 또는 카페 휴식</td>
-<td>과식했으면 공원 이동을 30분 늦춤</td>
-</tr>
-<tr>
-<td>15:15–17:15</td>
-<td><strong>Parc de la Tête d’Or</strong></td>
-<td>호수, 장미원·식물원 외부, 벤치 휴식. Jason 짧은 스케치 가능</td>
-</tr>
-<tr>
-<td>17:15–18:00</td>
-<td>Julia 선택 수영 또는 공원 카페</td>
-<td>Julia는 LOU Piscine으로 이동하기보다 이날 공원 휴식을 기본으로 함</td>
-</tr>
-<tr>
-<td>18:30–19:15</td>
-<td>숙소 귀환·휴식</td>
-<td>저녁은 가볍게</td>
-</tr>
-<tr>
-<td>19:45–21:00</td>
-<td>가벼운 저녁</td>
-<td>cervelle de canut·샐러드·생선 등. 부숑 3회째는 피함</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/croix-rousse.html">Croix-Rousse <b>Must</b></a><a class="pl-day" href="../places/halles-de-lyon-paul-bocuse.html">Halles de Lyon Paul Bocuse <b>Must</b></a><a class="pl-day" href="../places/parc-de-la-tete-d-or.html">Parc de la Tête d&#x27;Or <b>Recommended</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="croix-rousse-시장비단동네-halles-paul-bocuse와-도시공원">Croix-Rousse 시장·비단동네, Halles Paul Bocuse와 도시공원</h3>
-<blockquote>
-<p>🕐 화·금·토·일 6:00~13:30 / 수·목 6:00~13:00 · 휴무 월요일 휴장 (화·수·목·금·토·일 개장) · 예약 불필요 (야외 노천시장)</p>
-</blockquote>
-<ul>
-<li><strong>오늘의 결론</strong>: 시장·언덕·실내시장·공원이 성격이 달라 지루하지 않지만, 이동이 많다.</li>
-<li><strong>상태</strong>: <strong>고정</strong></li>
-</ul>
-<h4 id="핵심-행동-최대-3개">핵심 행동 (최대 3개)</h4>
-<ul>
-<li>Croix-Rousse를 전망지가 아니라 비단노동자의 주거·작업도시로 보기</li>
-<li>Halles에서는 한 식당에 오래 앉기보다 지역 식재료를 2–3종 비교하기</li>
-<li>Parc de la Tête d’Or에서 장기여행의 완충시간을 확보하기</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-지도">오늘 지도</h4>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ul>
-<li><strong>도시경관 우선</strong>: Croix-Rousse에서 Saône 방향으로 천천히 하산</li>
-<li><strong>현대도시 우선</strong>: 공원 대신 Confluence와 Navigône 수상교통</li>
-<li><strong>비 오는 날</strong>: Halles 체류 연장 (9/22 화는 Beaux-Arts 화요일). 노천 시장은 우천 대안이 아니다 — 실내는 Musée des Confluences <span class="badge badge-unverified">운영·요금 S2 조사</span></li>
-<li><strong>Julia 수영</strong>: LOU Piscine 25m 실내풀 또는 50m 야외풀의 당일 자유수영 시간을 별도 확인하여 공원 대신 배치</li>
-</ul>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<ul>
-<li>Croix-Rousse 시장 짧게, Halles 체류 연장, Beaux-Arts 2시간</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>지역간 이동 3회</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>공원</dd></div><div class="ds-item"><dt>대체안</dt><dd>시장+Halles만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Halles 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>식당 휴무</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-25">
-<h2 id="daily-map-title-25" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Croix-Rousse 시장 · Halles Paul Bocuse · Tête d&#x27;Or</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button><button class="gm-filter" type="button" data-type="market" aria-pressed="false">시장</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=45.746467%2C4.868933&amp;destination=45.77969%2C4.85344&amp;travelmode=transit&amp;waypoints=45.77413%2C4.8318%7C45.76337%2C4.85042">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="lyon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="lyon-stay-candidate" aria-pressed="false"><strong>0. Lagrange Aparthotel Lyon Lumière (확정 숙소)</strong><span>숙소 · 09:00 전후 출발</span><small>확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권).</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=81-85+Cours+Albert+Thomas%2C+69003+Lyon">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.746467%2C4.868933&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="croix-rousse" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="croix-rousse" aria-pressed="false"><strong>1. Croix-Rousse</strong><span>방문지 · 09:20–10:10</span><small>식품시장 — 요일·운영시간 전날 재확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Croix-Rousse">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.77413%2C4.8318&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="halles-de-lyon-paul-bocuse" data-type="market"><button class="gm-card-main" type="button" data-place-id="halles-de-lyon-paul-bocuse" aria-pressed="false"><strong>2. Halles Paul Bocuse</strong><span>시장 · 12:35–14:05</span><small>C선·메트로·트램 조합, 혼잡 시 택시.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Halles+Paul+Bocuse">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.76337%2C4.85042&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="parc-de-la-tete-d-or" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="parc-de-la-tete-d-or" aria-pressed="false"><strong>3. Parc Tête d’Or</strong><span>방문지 · 15:15–17:15</span><small>호수·장미원·벤치 휴식.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Parc+T%C3%AAte+d%E2%80%99Or">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.77969%2C4.85344&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.77413%2C4.8318&amp;travelmode=transit&amp;origin=45.746467%2C4.868933">Lagrange Aparthotel Lyon Lumière (확정 숙소) → Croix-Rousse · 대중교통</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.76337%2C4.85042&amp;travelmode=transit&amp;origin=45.77413%2C4.8318">Croix-Rousse → Halles Paul Bocuse · 대중교통</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.77969%2C4.85344&amp;travelmode=walking&amp;origin=45.76337%2C4.85042">Halles Paul Bocuse → Parc Tête d’Or · 도보</a></li></ol></details>
-<script type="application/json">{"center":[45.772,4.842],"zoom":13,"places":[{"id":"lyon-stay-candidate","name":"Lagrange Aparthotel Lyon Lumière (확정 숙소)","city":"Lyon","type":"accommodation","lat":45.746467,"lng":4.868933,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=81-85+Cours+Albert+Thomas%2C+69003+Lyon","address":"81-85 Cours Albert Thomas, 69003 Lyon","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"],"coordinatesVerified":"OSM Nominatim, 2026-08-14"},{"id":"croix-rousse","name":"Croix-Rousse","city":"Lyon","type":"attraction","lat":45.77413,"lng":4.8318,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Croix-Rousse","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"]},{"id":"halles-de-lyon-paul-bocuse","name":"Halles Paul Bocuse","city":"Lyon","type":"market","lat":45.76337,"lng":4.85042,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Halles+Paul+Bocuse","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"],"editorialSlug":"halles-de-lyon-paul-bocuse"},{"id":"parc-de-la-tete-d-or","name":"Parc Tête d’Or","city":"Lyon","type":"attraction","lat":45.77969,"lng":4.85344,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Parc+T%C3%AAte+d%E2%80%99Or","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"],"editorialSlug":"parc-de-la-tete-d-or"}],"day":{"date":"2026-09-22","city":"Lyon","title":"Croix-Rousse 시장 · Halles Paul Bocuse · Tête d'Or","center":[45.772,4.842],"zoom":13,"defaultMode":"transit","stops":[{"placeId":"lyon-stay-candidate","order":0,"plannedTime":"09:00 전후 출발","note":"확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."},{"placeId":"croix-rousse","order":1,"plannedTime":"09:20–10:10","note":"식품시장 — 요일·운영시간 전날 재확인."},{"placeId":"halles-de-lyon-paul-bocuse","order":2,"plannedTime":"12:35–14:05","note":"C선·메트로·트램 조합, 혼잡 시 택시."},{"placeId":"parc-de-la-tete-d-or","order":3,"plannedTime":"15:15–17:15","note":"호수·장미원·벤치 휴식."}],"segments":[{"from":"lyon-stay-candidate","to":"croix-rousse","mode":"transit"},{"from":"croix-rousse","to":"halles-de-lyon-paul-bocuse","mode":"transit"},{"from":"halles-de-lyon-paul-bocuse","to":"parc-de-la-tete-d-or","mode":"walking"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 25</span>
+    <span class="day-date">9/22 화</span></div>
+  <h1>Lyon</h1>
+  <p class="hero-dek">Croix-Rousse·Halles·공원</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>대중교통 + 도보 약 6km</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-22">
+  <span class="label">NEXT</span>
+  <div class="action-when">09:20</div>
+  <div class="action-what">Croix-Rousse 시장</div>
+  <p class="card-dek">화요일 식품시장 06:00–13:00 — 과일·치즈·빵 소량</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-25-lyon.webp" aria-label="Day 25 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-25-lyon-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 25 Lyon 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-25-lyon.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-24.html">← Day 24</a><span></span><a href="day-26.html">Day 26 →</a></nav>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="09:20" data-end="10:10">
+  <div class="tl-time">09:20</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Croix-Rousse 시장 </div>
+    <p class="tl-note">화요일 식품시장 06:00–13:00 — 과일·치즈·빵 소량</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.2km</span></div>
+</li><li class="tl-item" data-start="10:15" data-end="12:00">
+  <div class="tl-time">10:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Croix-Rousse 평지와 slopes </div>
+    <p class="tl-note">Place→Maison des Canuts 외관→Mur des Canuts 선택→경사면 traboule</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    지하철 · 25분 · C선·메트로·트램 조합, 혼잡 시 택시</span></div>
+</li><li class="tl-item" data-start="12:35" data-end="14:05">
+  <div class="tl-time">12:35</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> Halles de Lyon Paul Bocuse 점심 </div>
+    <p class="tl-note">2–3곳을 나눠 맛봄 — 과식 시 공원 이동 30분 지연</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 20분 · 1.8km</span></div>
+</li><li class="tl-item" data-start="15:15" data-end="18:00">
+  <div class="tl-time">15:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Parc de la Tête d&#x27;Or </div>
+    <p class="tl-note">호수·장미원·벤치 휴식, Jason 짧은 스케치 — Julia는 공원 휴식 기본</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    지하철 · 25분 · 메트로·트램</span></div>
+</li><li class="tl-item" data-start="18:30" data-end="19:15">
+  <div class="tl-time">18:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 귀환 </div>
+    <p class="tl-note">저녁은 가볍게</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 피로 시 시장+Halles만, 공원 삭제</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>식당(Halles 내부 포함) 화요일 휴무 재확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[45.768,4.842],"zoom":13,"pins":[{"id":"croix-rousse-market","name":"Croix-Rousse 시장","lat":45.77413,"lng":4.8318,"cat":"shopping","time":"09:20","place":null},{"id":"croix-rousse-slopes","name":"Croix-Rousse 평지와 slopes","lat":45.7725,"lng":4.832,"cat":"sight","time":"10:15","place":null},{"id":"halles","name":"Halles de Lyon Paul Bocuse 점심","lat":45.76337,"lng":4.85042,"cat":"food","time":"12:35","place":null},{"id":"tete-dor","name":"Parc de la Tête d'Or","lat":45.77969,"lng":4.85344,"cat":"sight","time":"15:15","place":null},{"id":"lyon-return","name":"숙소 귀환","lat":45.746467,"lng":4.868933,"cat":"hotel","time":"18:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 25 동선 · 5곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="croix-rousse-market"><span class="meta">09:20</span>Croix-Rousse 시장<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.77413,4.8318"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Croix-Rousse 시장 </span>열기</a></li><li data-pin="croix-rousse-slopes"><span class="meta">10:15</span>Croix-Rousse 평지와 slopes<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.7725,4.832"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Croix-Rousse 평지와 slopes </span>열기</a></li><li data-pin="halles"><span class="meta">12:35</span>Halles de Lyon Paul Bocuse 점심<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.76337,4.85042"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Halles de Lyon Paul Bocuse 점심 </span>열기</a></li><li data-pin="tete-dor"><span class="meta">15:15</span>Parc de la Tête d&#x27;Or<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.77969,4.85344"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Parc de la Tête d&#x27;Or </span>열기</a></li><li data-pin="lyon-return"><span class="meta">18:30</span>숙소 귀환<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.746467,4.868933"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 귀환 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>대중교통 (지역간 이동 3회)</li><li>도보</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>Halles Paul Bocuse 점심</li><li>저녁은 가볍게</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>화요 시장 09:20 도착</li><li>지역간 이동 3회 — 동선 압축</li><li>선택 러닝은 Rhône 강변 5–7km</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-24.html">← Day 24</a><a class="btn btn-secondary" href="../daily/day-26.html">Day 26 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

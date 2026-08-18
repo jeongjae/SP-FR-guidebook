@@ -3,203 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 8 · 9/5 토 · Nice — 2026 유럽 여행 가이드북</title>
+<title>Day 8 · Nice — 유럽 43일 가이드북</title>
+<meta name="description" content="Nice 시장·구시가지·성채 언덕">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="nice">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/nice/index.html">Nice</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 8</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 8</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-07.html">← 앞</a><a href="day-09.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-03.html" title="Day 3">8/31</a><a href="day-04.html" title="Day 4">9/1</a><a href="day-05.html" title="Day 5">9/2</a><a href="day-06.html" title="Day 6">9/3</a><a href="day-07.html" title="Day 7">9/4</a><a href="day-08.html" class="here" title="Day 8">9/5</a><a href="day-09.html" title="Day 9">9/6</a><a href="day-10.html" title="Day 10">9/7</a><a href="day-11.html" title="Day 11">9/8</a><a href="day-12.html" title="Day 12">9/9</a><a href="day-13.html" title="Day 13">9/10</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-07.html">Day 7</a><a href="../daily/day-08.html" aria-current="page">Day 8</a><a href="../daily/day-09.html">Day 9</a><a href="../daily/day-10.html">Day 10</a><a href="../daily/day-11.html">Day 11</a><a href="../daily/day-12.html">Day 12</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 8 · 9/5 토</span></span><a href="../chapters/nice/schedule.html"><b>지역</b><span>Nice</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 8 · 9/5 토 · Nice</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="nice-vieux-nice-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/nice-vieux-nice-01-hero-800.webp 800w, ../assets/images/hero/nice-vieux-nice-01-hero-1280.webp 1280w, ../assets/images/hero/nice-vieux-nice-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/nice-vieux-nice-01-hero-1280.webp" alt="주황빛 지붕과 좁은 골목이 밀집한 니스 구시가지 전경"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>성채 언덕 쪽에서 바라본 비외 니스의 조밀한 도시 풍경.</span><span class="media-credit">Photo: Baptiste Rossi · <a href="https://creativecommons.org/publicdomain/mark/1.0/" target="_blank" rel="noopener license">Public Domain</a> · <a href="../about/photo-credits.html#nice-vieux-nice-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="nice-cours-saleya-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/nice-cours-saleya-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/nice-cours-saleya-01-thumb-480.webp" alt="니스 쿠르 살레야 시장에 과일과 채소가 진열된 노점"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>2026년 쿠르 살레야 시장의 식재료 노점 풍경.</span><span class="media-credit">Photo: Mike is Michi · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#nice-cours-saleya-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="nice-colline-chateau-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/nice-colline-chateau-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/nice-colline-chateau-01-thumb-480.webp" alt="니스 성채 언덕에서 내려다본 항구와 지중해 해안"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>성채 언덕 전망대에서 보는 니스 항구와 도시의 동쪽 축.</span><span class="media-credit">Photo: Spike · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#nice-colline-chateau-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Cours Saleya·Vieux Nice·Castle Hill</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:30 시장 도착</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>Castle Hill 전후 45분 휴식</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/nice/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/nice.html"><b class="ic ic-map" aria-hidden="true"></b>Nice 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>07:20–08:05</td>
-<td>Jason 선택 러닝</td>
-<td>Promenade 5km 내외</td>
-</tr>
-<tr>
-<td>09:20–10:20</td>
-<td><strong>Cours Saleya</strong></td>
-<td>과일·올리브·치즈·꽃시장</td>
-</tr>
-<tr>
-<td>10:20–11:30</td>
-<td><strong>Vieux Nice</strong></td>
-<td><a href="../places/nice-walk.html">Nice Old Town–Castle Hill Walk</a> 시작</td>
-</tr>
-<tr>
-<td>11:35–12:35</td>
-<td><strong>Colline du Château</strong></td>
-<td>해변·구시가지·항구 조망</td>
-</tr>
-<tr>
-<td>12:45–13:30</td>
-<td>가벼운 점심</td>
-<td>socca·salade niçoise·pan bagnat 중 1개</td>
-</tr>
-<tr>
-<td>13:30–16:00</td>
-<td>Promenade 또는 Port·카페</td>
-<td>폭염이면 숙소휴식</td>
-</tr>
-<tr>
-<td>16:30–18:00</td>
-<td>선택</td>
-<td>Port 또는 Garibaldi 중 1개</td>
-</tr>
-<tr>
-<td>19:30–21:00</td>
-<td>전통 Nice 저녁</td>
-<td><strong>La Table Alziari</strong> (니스 관광청 2026 리스팅 주 7일 영업 표기 (시간 미표기) (2차 출처)) 또는 <strong>Chez Pipo</strong> (화–일 11:30–14:30 · 17:30–22:00) — Acchiardo 는 토·일 라 토요일 불가</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/colline-du-chateau.html">Colline du Château (성채 언덕) <b>Must</b></a><a class="pl-day" href="../places/cours-saleya.html">Cours Saleya <b>Must</b></a><a class="pl-day" href="../places/nice-walk.html">Nice Old Town–Castle Hill Walk <b>Must</b></a><a class="pl-day" href="../places/vieux-nice.html">Vieux Nice — 구시가지 <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="nice-핵심-시장-구시가지-성채언덕-해변">Nice 핵심: 시장, 구시가지, 성채언덕, 해변</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 니스의 시장, 구시가지 골목, 성채 언덕의 지형을 하나의 완성된 도보 흐름으로 연결하여 파악한다.</li>
-<li><strong>상태</strong>: <strong>고정</strong> | 날씨 의존성: 유</li>
-<li><strong>첫 행동·첫 예약</strong>: 09:20 Cours Saleya 시장 투어 | <strong>마지막 귀가</strong>: 21:00 저녁식사 후 귀가</li>
-</ul>
-<h4 id="핵심-행동-최대-3개">핵심 행동 (최대 3개)</h4>
-<ol>
-<li><strong>Cours Saleya 식품시장</strong>: 아침의 시장을 통과하며 현지 식재료와 소카 간식 즐기기.</li>
-<li><strong>Vieux Nice 도보 산책</strong>: 바로크 양식의 성당들과 파스텔톤 이탈리아풍 골목 탐방.</li>
-<li><strong>Colline du Château (성채 언덕)</strong>: 엘리베이터로 올라 니스 전체 지형과 지중해 해안선 조망하기.</li>
-</ol>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-지도">오늘 지도</h4>
-<h4 id="식사-및-카페">식사 및 카페</h4>
-<ul>
-<li><strong>점심</strong>: Cours Saleya 시장 및 Vieux Nice 캐주얼 식사 (소카, 팡 바냐 등) - 예산 €10–20/인</li>
-<li><strong>저녁</strong>: La Table Alziari 또는 Chez Pipo (니스 전통요리 및 제철 생선). Acchiardo 는 토·일 휴무</li>
-</ul>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ol>
-<li><strong>[1순위 삭제]</strong>: 16:30 Port 또는 Garibaldi 추가 산책 (숙소 복귀 및 휴식으로 대체)</li>
-<li><strong>[2순위 삭제]</strong>: 오후 카페 체류 및 두 번째 산책 (식사 예약 전 숙소 완전휴식)</li>
-</ol>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<ul>
-<li><strong>우천 시</strong>: Castle Hill 등정 생략, Palais Lascaris 또는 Matisse/Chagall 미술관 실내 관람으로 전환.</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>계단·더위·토요일 혼잡</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Port·해변</dd></div><div class="ds-item"><dt>대체안</dt><dd>구시가지 실내·카페</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>시장 또는 구시가지</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>시장·숙소</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-8">
-<h2 id="daily-map-title-8" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Cours Saleya 시장과 Castle Hill 조망</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="market" aria-pressed="false">시장</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=43.6996749%2C7.2608829&amp;destination=43.69692%2C7.28077&amp;travelmode=walking&amp;waypoints=43.69518%2C7.2758">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="nice-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="nice-stay-candidate" aria-pressed="false"><strong>0. Palais ALZIRA (12 Rue Verdi)</strong><span>숙소 · 09:00 전후 출발</span><small>확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=12+Rue+Verdi%2C+06000+Nice">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.6996749%2C7.2608829&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="cours-saleya" data-type="market"><button class="gm-card-main" type="button" data-place-id="cours-saleya" aria-pressed="false"><strong>1. Cours Saleya</strong><span>시장 · 09:20–10:20</span><small>과일·올리브·치즈·꽃시장.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Cours+Saleya">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.69518%2C7.2758&amp;travelmode=walking">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="colline-du-chateau" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="colline-du-chateau" aria-pressed="false"><strong>2. Castle Hill</strong><span>방문지 · 11:35–12:35</span><small>해변·구시가지·항구 조망.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Castle+Hill">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.69692%2C7.28077&amp;travelmode=walking">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.69518%2C7.2758&amp;travelmode=walking&amp;origin=43.6996749%2C7.2608829">Palais ALZIRA (12 Rue Verdi) → Cours Saleya · 도보</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.69692%2C7.28077&amp;travelmode=walking&amp;origin=43.69518%2C7.2758">Cours Saleya → Castle Hill · 도보</a></li></ol></details>
-<script type="application/json">{"center":[43.6962,7.2765],"zoom":15,"places":[{"id":"nice-stay-candidate","name":"Palais ALZIRA (12 Rue Verdi)","city":"Nice","type":"accommodation","lat":43.6996749,"lng":7.2608829,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=12+Rue+Verdi%2C+06000+Nice","address":"12 Rue Verdi, 06000 Nice, France","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"],"coordinatesVerified":"OSM Nominatim, 2026-08-13"},{"id":"cours-saleya","name":"Cours Saleya","city":"Nice","type":"market","lat":43.69518,"lng":7.2758,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Cours+Saleya","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"]},{"id":"colline-du-chateau","name":"Castle Hill","city":"Nice","type":"attraction","lat":43.69692,"lng":7.28077,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Castle+Hill","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Nice_Execution_Map_v0.2.geojson"],"editorialSlug":"colline-du-chateau"}],"day":{"date":"2026-09-05","city":"Nice","title":"Cours Saleya 시장과 Castle Hill 조망","center":[43.6962,7.2765],"zoom":15,"defaultMode":"walking","stops":[{"placeId":"nice-stay-candidate","order":0,"plannedTime":"09:00 전후 출발","note":"확정 숙소 — 12 Rue Verdi (Palais ALZIRA). 체크인 15:00 · 체크아웃 11:00."},{"placeId":"cours-saleya","order":1,"plannedTime":"09:20–10:20","note":"과일·올리브·치즈·꽃시장."},{"placeId":"colline-du-chateau","order":2,"plannedTime":"11:35–12:35","note":"해변·구시가지·항구 조망."}],"segments":[{"from":"nice-stay-candidate","to":"cours-saleya","mode":"walking"},{"from":"cours-saleya","to":"colline-du-chateau","mode":"walking"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 8</span>
+    <span class="day-date">9/5 토</span></div>
+  <h1>Nice</h1>
+  <p class="hero-dek">Nice 시장·구시가지·성채 언덕</p>
+  <div class="metarow"><span class="badge badge-neutral">검토 중</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>약 3km · 도보</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-05">
+  <span class="label">NEXT</span>
+  <div class="action-when">08:30</div>
+  <div class="action-what"><a href="../places/cours-saleya.html">Cours Saleya 시장</a></div>
+  <p class="card-dek">시장에서 사고, 밥은 골목에서 — 광장 대형 테라스 회피</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-08-nice.webp" aria-label="Day 8 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-08-nice-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 8 Nice 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-08-nice.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-07.html">← Day 7</a><span></span><a href="day-09.html">Day 9 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong> 숙소 귀환</strong> — 숙소 후보 확정 필요</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="08:30" data-end="">
+  <div class="tl-time">08:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/cours-saleya.html">Cours Saleya 시장</a> </div>
+    <p class="tl-note">시장에서 사고, 밥은 골목에서 — 광장 대형 테라스 회피</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.2km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/vieux-nice.html">Vieux Nice 구시가지</a> </div>
+    <p class="tl-note">Rue Droite→로세티 광장, 파사드 상부의 트롱프뢰유는 위를 보라</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 + 엘리베이터 · 0.4km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Colline du Château </div>
+    <p class="tl-note">무료 엘리베이터 5분 또는 계단 30분 — 늦은 오후가 절충점</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.4km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Port 산책 <span class="badge badge-neutral">선택</span></div>
+    <p class="tl-note">피로 시 생략 — 우선 삭제 대상</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 20분 · 1.4km</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 귀환 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Castle Hill 전후 45분 휴식을 지킨다</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>숙소 후보 확정 필요</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 계단·더위 부담 시 구시가지 실내·카페 중심</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>시장 이후 각 일정 시각 확정</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>구시가지 점심 식당 미정 — 현장 선택</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.6962,7.2775],"zoom":15,"pins":[{"id":"cours-saleya","name":"Cours Saleya 시장","lat":43.69518,"lng":7.2758,"cat":"shopping","time":"08:30","place":"cours-saleya"},{"id":"vieux-nice","name":"Vieux Nice 구시가지","lat":43.6971832,"lng":7.2762796,"cat":"sight","time":null,"place":"vieux-nice"},{"id":"castle-hill","name":"Colline du Château","lat":43.69692,"lng":7.28077,"cat":"sight","time":null,"place":null},{"id":"port-lympia","name":"Port 산책","lat":43.6941576,"lng":7.2845515,"cat":"sight","time":null,"place":null},{"id":"nice-stay-return","name":"숙소 귀환","lat":43.6996749,"lng":7.2608829,"cat":"hotel","time":null,"place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 8 동선 · 5곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="cours-saleya"><span class="meta">08:30</span><a href="../places/cours-saleya.html">Cours Saleya 시장</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.69518,7.2758"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Cours Saleya 시장 </span>열기</a></li><li data-pin="vieux-nice"><a href="../places/vieux-nice.html">Vieux Nice 구시가지</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.6971832,7.2762796"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Vieux Nice 구시가지 </span>열기</a></li><li data-pin="castle-hill">Colline du Château<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.69692,7.28077"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Colline du Château </span>열기</a></li><li data-pin="port-lympia">Port 산책<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.6941576,7.2845515"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Port 산책 </span>열기</a></li><li data-pin="nice-stay-return">숙소 귀환<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.6996749,7.2608829"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 귀환 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>도보</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>시장 조달 또는 구시가지 골목 식당</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>08:30 시장 도착</li><li>Castle Hill 전후 45분 휴식</li><li>토요일 혼잡·더위 주의</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-07.html">← Day 7</a><a class="btn btn-secondary" href="../daily/day-09.html">Day 9 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

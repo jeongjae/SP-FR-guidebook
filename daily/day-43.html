@@ -3,133 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 43 · 10/10 토 · 기내→Seoul — 2026 유럽 여행 가이드북</title>
+<title>Day 43 · Seoul — 유럽 43일 가이드북</title>
+<meta name="description" content="기내와 인천 도착 — 43일의 끝">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel="..">
+<body data-region="return">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../daily/index.html">이동</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 43</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 43</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-42.html">← 앞</a><a href="day-43.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-38.html" title="Day 38">10/5</a><a href="day-39.html" title="Day 39">10/6</a><a href="day-40.html" title="Day 40">10/7</a><a href="day-41.html" title="Day 41">10/8</a><a href="day-42.html" title="Day 42">10/9</a><a href="day-43.html" class="here" title="Day 43">10/10</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 43 · 10/10 토</span></span><a href="../daily/index.html"><b>지역</b><span>이동 중</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 43 · 10/10 토 · 기내→Seoul</h1>
-
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>기내박·인천 14:10 도착</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>기내 취침</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>도착 후 입국·수하물 60–90분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/paris/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/paris.html"><b class="ic ic-map" aria-hidden="true"></b>Paris 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>기내</td>
-<td>취침·수분 섭취</td>
-<td>비행 약 12시간, 시차 +7시간</td>
-</tr>
-<tr>
-<td><strong>14:10</strong></td>
-<td><strong>인천 도착 (OZ502)</strong></td>
-<td>예약 확정</td>
-</tr>
-<tr>
-<td>도착 후 60–90분</td>
-<td>입국·수하물·세관</td>
-<td>43일치 수하물 — 카트 먼저 확보</td>
-</tr>
-<tr>
-<td>이후</td>
-<td>귀가</td>
-<td>공항철도·리무진·픽업 <span class="badge badge-unverified">귀가 수단 결정</span></td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="기내와-인천-도착-43일의-마지막-날-귀국">기내와 인천 도착 — 43일의 마지막 날 <span class="badge badge-p0">귀국</span></h3>
-<p><strong>이 날은 파리 일정이 아니다.</strong> 전날 밤 CDG를 떠난 비행기 안에서 시작한다.</p>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>시차·수하물</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>없음</dd></div><div class="ds-item"><dt>대체안</dt><dd>없음</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>기내식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>없음</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-43">
-<h2 id="daily-map-title-43" class="ic ic-map">Google 실행지도</h2>
-<p class="note">기내박과 인천 14:10 도착</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="airport" aria-pressed="false">공항</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.0068908%2C2.571082&amp;travelmode=transit">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="cdg-airport" data-type="airport"><button class="gm-card-main" type="button" data-place-id="cdg-airport" aria-pressed="false"><strong>0. Paris CDG 공항</strong><span>공항 · 전날 19:10 출발</span><small>파리 일정은 10/9로 끝났다. 이 날은 기내와 인천 도착뿐 — 지도에 파리 동선을 두지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=A%C3%A9roport+Paris-Charles-de-Gaulle">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.0068908%2C2.571082&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol></ol></details>
-<script type="application/json">{"center":[49.0069,2.5711],"zoom":11,"places":[{"id":"cdg-airport","name":"Paris CDG 공항","city":"Paris","type":"airport","lat":49.0068908,"lng":2.571082,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=A%C3%A9roport+Paris-Charles-de-Gaulle","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"}],"day":{"date":"2026-10-10","city":"기내 → Seoul","title":"기내박과 인천 14:10 도착","center":[49.0069,2.5711],"zoom":11,"defaultMode":"transit","stops":[{"placeId":"cdg-airport","order":0,"plannedTime":"전날 19:10 출발","note":"파리 일정은 10/9로 끝났다. 이 날은 기내와 인천 도착뿐 — 지도에 파리 동선을 두지 않는다."}],"segments":[]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 43</span>
+    <span class="day-date">10/10 토</span></div>
+  <h1>Seoul</h1>
+  <p class="hero-dek">기내와 인천 도착 — 43일의 끝</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>비행 약 9,000km</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-10-10">
+  <span class="label">NEXT</span>
+  <div class="action-when">기내</div>
+  <div class="action-what">기내박 — 취침·수분 섭취</div>
+  <p class="card-dek">전날 19:10 CDG 출발. 비행 약 12시간, 시차 +7시간</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-43-seoul.webp" aria-label="Day 43 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-43-seoul-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 43 기내→Seoul 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-43-seoul.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-42.html">← Day 42</a><span></span></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>기내 기내박 — 취침·수분 섭취</strong> — 예약완료 OZ502</li><li><strong> 귀가</strong> — 귀가 수단 결정 (pending)</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="기내" data-end="">
+  <div class="tl-time">기내</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> 기내박 — 취침·수분 섭취 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">전날 19:10 CDG 출발. 비행 약 12시간, 시차 +7시간</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>예약완료 OZ502</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-plane" aria-hidden="true"></b>
+    비행 · 약 12시간 · 약 9,000km · OZ502 CDG→ICN</span></div>
+</li><li class="tl-item" data-start="14:10" data-end="">
+  <div class="tl-time">14:10</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> 인천공항 도착 (ICN) </div>
+    <p class="tl-note">입국·수하물·세관 60–90분. 43일치 수하물 — 카트를 먼저 확보한다</p>
+  </div>
+</li><li class="tl-leg tl-leg-open">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-alert" aria-hidden="true"></b>
+    이동수단 미정 · 60–90분 (입국 절차 포함) · 공항철도·리무진 — 미정</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> 귀가 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">공항철도·리무진·픽업 중 선택 — 출발 전에 정해 둔다</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>귀가 수단 결정 (pending)</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 항공 지연 시 도착 후 일정만 밀린다 — 다음 날 일정 없음</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>귀가 수단 결정</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>항공권 확정 (2026-08-13 반영): OZ502 CDG 10/9 19:10 → 인천 10/10 14:10</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[37.46,126.44],"zoom":9,"pins":[{"id":"inflight","name":"기내박 — 취침·수분 섭취","lat":49.0068908,"lng":2.571082,"cat":"transport","time":"기내","place":null},{"id":"icn","name":"인천공항 도착 (ICN)","lat":37.4601908,"lng":126.4406957,"cat":"transport","time":"14:10","place":null},{"id":"home","name":"귀가","lat":37.4601908,"lng":126.4406957,"cat":"transport","time":null,"place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 43 동선 · 3곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="inflight"><span class="meta">기내</span>기내박 — 취침·수분 섭취<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=49.0068908,2.571082"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">기내박 — 취침·수분 섭취 </span>열기</a></li><li data-pin="icn"><span class="meta">14:10</span>인천공항 도착 (ICN)<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=37.4601908,126.4406957"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">인천공항 도착 (ICN) </span>열기</a></li><li data-pin="home">귀가<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=37.4601908,126.4406957"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">귀가 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>OZ502 (아시아나)</li><li>인천공항 → 귀가 수단 미정</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>기내식</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>14:10 인천 도착 — 43일 여정 종료</li><li>입국·수하물 60–90분</li><li>파리 일정은 전날(10/9)로 끝났다</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-42.html">← Day 42</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

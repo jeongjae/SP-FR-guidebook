@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6EF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>가이드 — 유럽 43일 가이드북</title>
+<meta name="description" content="8개 지역 가이드">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><b>가이드</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <h1>가이드</h1>
+  <p class="hero-dek">8개 거점을 이동 순서대로 놓았다. 각 지역에서 무엇을 보고
+    먹고 경험할지는 지역 페이지가 맡는다.</p>
+</header>
+<div class="grid grid-2"><article class="card place-card-lg" data-region="barcelona">
+  <img class="thumb" src="../assets/images/content/barcelona-sagrada-familia-01-content-1280.webp" srcset="../assets/images/content/barcelona-sagrada-familia-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="바르셀로나 사그라다 파밀리아의 탑과 외관 전경" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      가우디 · 시장 · 동네 생활</span></div>
+    <h3 class="card-title"><a class="card-link" href="barcelona.html">
+      Barcelona</a></h3>
+    <p class="card-dek">장기 유럽여행의 첫 거점에서 시차를 조절하면서 도시 구조와 카탈루냐 문화에 천천히 진입하는 구간이다. 유료 가우디 명소는 사그라다 파밀리아만 방문하고, 나머지는 산책·시장·도서관·현대미술·책방·현지 음식으로 채운다.</p>
+    <div class="metarow"><span>8/29 — 9/1</span><span class="sep">·</span>
+      <span>3박</span><span class="sep">·</span>
+      <span>Day 1–4</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="girona">
+  <img class="thumb" src="../assets/images/content/girona-onyar-01-content-1280.webp" srcset="../assets/images/content/girona-onyar-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="지로나 오냐르강을 따라 늘어선 색색의 강변 주택" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      중세도시 · 해안마을 · 석조마을</span></div>
+    <h3 class="card-title"><a class="card-link" href="girona.html">
+      Girona · Empordà</a></h3>
+    <p class="card-dek">Bàscara 농가를 거점으로 삼아 Collioure·Cadaqués 해안과 Tossa·Pals·Peratallada 석조마을을 차로 잇는 구간이다. Bàscara 는 Girona 시내가 아니다 — 구시가지는 따로 왕복해야 하므로 도착일 일정을 고정하지 않는다.</p>
+    <div class="metarow"><span>9/1 — 9/4</span><span class="sep">·</span>
+      <span>3박</span><span class="sep">·</span>
+      <span>Day 4–7</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="nice">
+  <img class="thumb" src="../assets/images/content/nice-city-01-content-1280.webp" srcset="../assets/images/content/nice-city-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="성채 언덕에서 내려다본 니스 전경 — 천사의 만 해안선과 영국인 산책로, 구시가지의 붉은 지붕" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      지중해 생활도시 · 방사형 당일치기 · 회복</span></div>
+    <h3 class="card-title"><a class="card-link" href="nice.html">
+      Nice · Côte d&#x27;Azur</a></h3>
+    <p class="card-dek">니스에 거점을 둔 채 칸과 모나코를 기차로 다녀오는 방사형 여정이다. 명소 위주의 질주를 멈추는 구간이고, 11일 차에 놓인 생활·회복일이 누적된 피로를 털어내며 프로방스 렌터카 이동을 준비한다.</p>
+    <div class="metarow"><span>9/4 — 9/9</span><span class="sep">·</span>
+      <span>5박</span><span class="sep">·</span>
+      <span>Day 7–12</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="aix">
+  <img class="thumb" src="../assets/images/content/aix-city-01-content-1280.webp" srcset="../assets/images/content/aix-city-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="공중에서 내려다본 로통드 분수 로터리와 엑상프로방스 구시가의 지붕들" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      시장과 분수 · 세잔 · 마르세유</span></div>
+    <h3 class="card-title"><a class="card-link" href="aix.html">
+      Aix-en-Provence</a></h3>
+    <p class="card-dek">니스 5박 뒤 프로방스 내륙의 생활 리듬으로 전환하는 거점이다. 시장·분수·대학·법원·카페가 압축된 걷기 좋은 생활도시이고, 대중교통으로 다녀오는 마르세유 하루가 붙는다.</p>
+    <div class="metarow"><span>9/9 — 9/13</span><span class="sep">·</span>
+      <span>4박</span><span class="sep">·</span>
+      <span>Day 12–16</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="luberon">
+  <img class="thumb" src="../assets/images/content/luberon-gordes-01-content-1280.webp" srcset="../assets/images/content/luberon-gordes-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      농가 · 언덕마을 · 느린 속도</span></div>
+    <h3 class="card-title"><a class="card-link" href="luberon.html">
+      Luberon</a></h3>
+    <p class="card-dek">속도를 낮추는 구간이다. 유명마을을 많이 수집하는 것이 목적이 아니라 농가 숙박 자체, 마을의 재료와 지형, 시장에서 산 식재료, 스케치·산책·테라스 식사를 하나의 생활 경험으로 만드는 것이 목적이다.</p>
+    <div class="metarow"><span>9/13 — 9/16</span><span class="sep">·</span>
+      <span>3박</span><span class="sep">·</span>
+      <span>Day 16–19</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="avignon">
+  <img class="thumb" src="../assets/images/content/avignon-city-01-content-1280.webp" srcset="../assets/images/content/avignon-city-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="론강 건너편에서 바라본 아비뇽 구시가 — 교황청 궁전과 노트르담 데 돔 대성당, 성벽, 왼쪽 아래로 생 베네제 다리가 보인다" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      교황궁 · 퐁뒤가르 · 아를</span></div>
+    <h3 class="card-title"><a class="card-link" href="avignon.html">
+      Avignon · Alpilles</a></h3>
+    <p class="card-dek">뤼베롱의 농가와 언덕마을을 떠나 론강 서부 프로방스로 옮기는 구간이다. 아비뇽에서 교황궁과 성벽도시를 이해하고, 근교에서 위제스·퐁뒤가르와 아를의 로마유적·중세·반 고흐를 본다.</p>
+    <div class="metarow"><span>9/16 — 9/20</span><span class="sep">·</span>
+      <span>4박</span><span class="sep">·</span>
+      <span>Day 19–23</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="lyon">
+  <img class="thumb" src="../assets/images/content/lyon-city-01-content-1280.webp" srcset="../assets/images/content/lyon-city-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="푸르비에르 언덕에서 내려다본 리옹 프레스킬 지구의 붉은 지붕과 벨쿠르 광장" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      구시가지 · 크루아루스 · 부숑</span></div>
+    <h3 class="card-title"><a class="card-link" href="lyon.html">
+      Lyon</a></h3>
+    <p class="card-dek">프로방스의 자동차 여행을 마치고 철도·도보 중심의 도시생활로 전환하는 구간이다. 박물관을 많이 보는 대신 도시 지형, 르네상스 구시가지, 프레스킬의 광장, 비단노동자 동네, 시장과 부숑 음식을 경험한다.</p>
+    <div class="metarow"><span>9/20 — 9/24</span><span class="sep">·</span>
+      <span>4박</span><span class="sep">·</span>
+      <span>Day 23–27</span></div>
+  </div>
+</article><article class="card place-card-lg" data-region="paris">
+  <img class="thumb" src="../assets/images/content/paris-city-01-content-1280.webp" srcset="../assets/images/content/paris-city-01-content-1280.webp 1280w" sizes="(min-width:600px) 50vw, 100vw" alt="몽파르나스 타워 전망대에서 본 파리 시가지와 에펠탑, 멀리 라데팡스" loading="lazy" decoding="async">
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      생활 실험 · 시장과 동네 · 미술관은 하나씩</span></div>
+    <h3 class="card-title"><a class="card-link" href="paris.html">
+      Paris</a></h3>
+    <p class="card-dek">43일 여정의 마지막 도시이자 하이라이트다. 관광지를 매일 정복하는 방식이 아니라 같은 빵집과 시장을 다시 찾고, 오전 운동과 세탁·장보기를 반복하며, 오후에 미술관·동네·도서관을 하나씩 보는 생활 실험으로 운영한다.</p>
+    <div class="metarow"><span>9/24 — 10/9</span><span class="sep">·</span>
+      <span>15박</span><span class="sep">·</span>
+      <span>Day 27–42</span></div>
+  </div>
+</article></div>
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>

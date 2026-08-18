@@ -3,74 +3,168 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Marseille — 2026 유럽 여행 가이드북</title>
+<title>Marseille — 유럽 43일 가이드북</title>
+<meta name="description" content="엑상의 질서정연한 시장·대학도시와 달리 Marseille는 이민, 어업, 상업, 현대문화가 한 항구에 겹친다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="aix">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/aix/index.html">Aix</a><span class="tb-sep" aria-hidden="true">›</span><b>Marseille</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/aix.html">Aix-en-Provence</a><span class="sep" aria-hidden="true">›</span><b>Marseille</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Marseille</h1><figure class="guide-photo guide-photo--content" data-photo-id="aix-marseille-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/aix-marseille-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/aix-marseille-01-content-1280.webp" alt="노트르담드라가르드 대성당에서 내려다본 마르세유 — 구항의 요트들과 라 마조르 대성당, 시가지"
-      width="1280" height="961" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>노트르담드라가르드에서 내려다본 마르세유. 구항 너머로 라 마조르 대성당과 시가지가 이어진다.</span><span class="media-credit">Photo: Zairon · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#aix-marseille-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/aix/index.html">Aix</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><a class="pl-day" href="../daily/day-14.html">Day 14 · 9/11</a><span class="pl-basis">실행 감사표 기준</span></td></tr><tr><th>상세</th><td><a href="../chapters/aix/places.html#marseille-must">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/aix.html">Aix 실행지도</a> · <span class="pl-basis">핀 이름 Marseille Saint-Charles</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Marseille">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Marseille+Saint-Charles">Google Maps</a><a class="ref ic ic-map" href="../maps/aix.html">Aix 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><p>엑상의 질서정연한 시장·대학도시와 달리 Marseille는 이민, 어업, 상업, 현대문화가 한 항구에 겹친다. 이번 하루의 목적은 많은 명소를 모으는 것이 아니라 <strong>Vieux-Port에서 오래된 항구도시를 읽고, Le Panier를 지나 Mucem과 Fort Saint-Jean에서 오늘의 지중해 도시로 시선을 넓히는 것</strong>이다.</p>
-<p><strong>권장 체류:</strong> 현지 7시간 안팎. 점심 60–75분과 오후 카페 30분을 일정에 포함한다.</p>
-<p>마르세유는 기원전 600년경 그리스인들이 세운 마살리아에서 출발한, <strong>프랑스에서 가장 오래된
-도시</strong>다. 파리보다 오래됐고, 파리와 가장 덜 닮았다. 2,600년 동안 항구가 도시의 전부였고
-지금도 그렇다 — 무역과 이민이 만든 겹겹의 정체성(이탈리아·아르메니아·마그레브·코르시카)이
-길거리 음식과 억양과 축구팀(OM)에 그대로 배어 있다.</p>
-<p>당일치기 여행자에게 이 도시가 어려운 이유는 크기가 아니라 <strong>밀도의 편차</strong>다. 화려한 재개발
-수변과 낡은 이민자 골목이 한 블록 사이로 붙어 있다. 그래서 이 하루는 항구 → 파니에 →
-Mucem 이라는 짧은 축 하나만 걷고, 그 축 위에서 도시의 시대들이 겹치는 것을 보는 일정이다. 대도시의 소매치기 수칙(가방 앞으로, 휴대전화 손에 들지 않기)은 이 하루에 가장 엄격하게 적용한다. 43일 중 이 날 하루만 대도시 항구를 걷는다 — 긴장할 날은 이 날이지, 매일이 아니다.(43일 중 이 날의 보행 밀도가 가장 높다.)</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/content/aix-marseille-01-content-1280.webp" srcset="../assets/images/content/aix-marseille-01-content-1280.webp 1280w" sizes="100vw" alt="노트르담드라가르드 대성당에서 내려다본 마르세유 — 구항의 요트들과 라 마조르 대성당, 시가지" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Aix-en-Provence</span></div>
+    <h1>Marseille</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <p class="hero-dek">엑상의 질서정연한 시장·대학도시와 달리 Marseille는 이민, 어업, 상업, 현대문화가 한 항구에 겹친다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Marseille" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Marseille_Basilique_Notre-Dame-de-la-Garde_Vue_sur_le_Vieux-Port_1.jpg" rel="nofollow noopener">Zairon</a> · CC BY-SA 4.0</p>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>시설별 상이 — Mucem/Fort Saint-Jean 10:00–20:00, 구항 어시장 매일 07:30–12:30 <br><span class="meta">https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/</span></td></tr><tr><th scope="row">휴무</th><td>도시 축 — 휴무 개념 없음 </td></tr><tr><th scope="row">예약</th><td>도시 자체 예약 없음. 개별 시설(Mucem 등)은 개인 방문 예약 불필요 <br><span class="meta">https://www.mucem.org/infos-pratiques</span></td></tr><tr><th scope="row">메모</th><td>Mucem·Fort Saint-Jean 은 화요일 휴관 (9/11 금요일 방문은 해당 없음) </td></tr></tbody></table></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>실행 시간표</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>시간</th>
+<th>일정</th>
+<th>실행 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:10</td>
+<td>Aix 숙소 출발</td>
+<td>Ligne 50 실제 시각·정류장 전날 확인</td>
+</tr>
+<tr>
+<td>09:45–10:30</td>
+<td><strong>Vieux-Port</strong></td>
+<td>항구축을 읽고 북쪽 부두로 이동</td>
+</tr>
+<tr>
+<td>10:30–11:30</td>
+<td><strong>Le Panier</strong></td>
+<td>Place de Lenche 중심, 경사골목 60분 상한</td>
+</tr>
+<tr>
+<td>11:45–13:00</td>
+<td>점심·휴식</td>
+<td>Le Panier 또는 Mucem 관내 후보</td>
+</tr>
+<tr>
+<td>13:15–15:00</td>
+<td><strong>Mucem</strong></td>
+<td>전시 하나 + 건축·보행교</td>
+</tr>
+<tr>
+<td>15:00–16:10</td>
+<td><strong>Fort Saint-Jean</strong></td>
+<td>정원·전망·카페 휴식 포함</td>
+</tr>
+<tr>
+<td>16:10 이후</td>
+<td>Vieux-Port 또는 선택 전망</td>
+<td>Notre-Dame de la Garde는 체력·맑은 날만</td>
+</tr>
+<tr>
+<td>17:15–19:00</td>
+<td>Saint-Charles→Aix 귀환</td>
+<td>귀환편 여유, 저녁은 숙소권에서 가볍게</td>
+</tr>
+</tbody>
+</table></div>
+<h3>삭제 및 단축 순서 (늦었거나 피곤할 때)</h3>
 <ul>
-<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Aix-en-Provence&amp;destination=Gare+de+Marseille-Saint-Charles&amp;travelmode=transit">Aix 출발 → Marseille Saint-Charles 대중교통 길찾기</a></li>
-<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Vieux-Port+Marseille&amp;destination=Mucem&amp;waypoints=Le+Panier+Marseille&amp;travelmode=walking">Vieux-Port → Le Panier → Mucem 도보 길찾기</a></li>
-<li><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Gare+de+Marseille-Saint-Charles&amp;destination=Aix-en-Provence&amp;travelmode=transit">Marseille → Aix 귀환 대중교통 길찾기</a></li>
+<li>바다·석회암 경관을 항구대도시보다 우선하고 기상·화재통제가 안정적일 때만 Marseille 하루를 통째로 교체한다.</li>
+<li>Cassis 항구와 짧은 보트 또는 해안산책 하나만 선택한다.</li>
+<li>Marseille와 Cassis를 같은 날 결합하지 않는다.</li>
 </ul>
+<hr /></div>
+<div class="sec-head"><h2>Aix-en-Provence 의 다른 장소</h2><a href="../guide/aix.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-cezanne-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-cezanne-01-thumb-480.webp 480w" sizes="84px" alt="정원 수풀 너머로 보이는 세잔 아틀리에 건물과 대형 북향 채광창" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/atelier-des-lauves.html">Atelier des Lauves</a></h3>
+    <p class="card-dek">세잔의 마지막 작업실이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp 480w" sizes="84px" alt="세잔 가족의 바스티드 자스 드 부팡 건물" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bastide-du-jas-de-bouffan.html">Bastide du Jas de Bouffan</a></h3>
+    <p class="card-dek">세잔이 20세이던 1859년에 아버지가 자스 드 부팡을 사들였고, 60세이던 1899년에 팔았다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-calanques-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-calanques-01-thumb-480.webp 480w" sizes="84px" alt="석회암 절벽 사이로 에메랄드빛 바다가 들어온 앙보 칼랑크와 자갈 해변" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/calanques.html">Calanques</a></h3>
+    <p class="card-dek">칼랑크 국립공원은 유럽에서 유일하게 육지·해양·도시 근교를 아우르는 공원이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/carrieres-de-bibemus.html">Carrières de Bibémus</a></h3>
+    <p class="card-dek">세잔이 1890년대 후반 오두막을 빌려 두고 연작을 그린 옛 채석장이다</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-cassis-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-cassis-01-thumb-480.webp 480w" sizes="84px" alt="캅 카나유 절벽 위에서 내려다본 카시스 마을과 푸른 만" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/cassis.html">Cassis 항구</a></h3>
+    <p class="card-dek">마르세유의 소란이 부담스러운 날을 위한 완전 대체안이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-mirabeau-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-mirabeau-01-thumb-480.webp 480w" sizes="84px" alt="플라타너스 가로수가 터널처럼 덮은 미라보 거리와 멀리 보이는 분수" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/cours-mirabeau.html">Cours Mirabeau</a></h3>
+    <p class="card-dek">&#x27;그랑 쿠르&#x27;는 1649년에서 1651년 사이, 옛 성벽 자리에 조성됐다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

@@ -3,215 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 18 · 9/15 화 · Luberon — 2026 유럽 여행 가이드북</title>
+<title>Day 18 · Luberon — 유럽 43일 가이드북</title>
+<meta name="description" content="Gordes와 돌의 문화">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="luberon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/luberon/index.html">Luberon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 18</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 18</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-17.html">← 앞</a><a href="day-19.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-13.html" title="Day 13">9/10</a><a href="day-14.html" title="Day 14">9/11</a><a href="day-15.html" title="Day 15">9/12</a><a href="day-16.html" title="Day 16">9/13</a><a href="day-17.html" title="Day 17">9/14</a><a href="day-18.html" class="here" title="Day 18">9/15</a><a href="day-19.html" title="Day 19">9/16</a><a href="day-20.html" title="Day 20">9/17</a><a href="day-21.html" title="Day 21">9/18</a><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-16.html">Day 16</a><a href="../daily/day-17.html">Day 17</a><a href="../daily/day-18.html" aria-current="page">Day 18</a><a href="../daily/day-19.html">Day 19</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 18 · 9/15 화</span></span><a href="../chapters/luberon/schedule.html"><b>지역</b><span>Luberon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 18 · 9/15 화 · Luberon</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="luberon-gordes-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/luberon-gordes-01-hero-800.webp 800w, ../assets/images/hero/luberon-gordes-01-hero-1280.webp 1280w, ../assets/images/hero/luberon-gordes-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/luberon-gordes-01-hero-1280.webp" alt="돌집들이 언덕을 따라 층층이 쌓여 성과 교회까지 이어지는 고르드 마을 파노라마"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>언덕 위로 돌집이 층층이 이어지는 고르드 마을 전경.</span><span class="media-credit">Photo: Jean-Christophe BENOIST · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener license">CC BY 3.0</a> · <a href="../about/photo-credits.html#luberon-gordes-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="luberon-bories-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/luberon-bories-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/luberon-bories-01-thumb-480.webp" alt="마른돌을 쌓아 지은 보리 오두막 여러 채와 돌담이 이어진 고르드 보리 석조마을"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>모르타르 없이 돌을 쌓아 지은 보리 오두막들이 모인 마을 유적.</span><span class="media-credit">Photo: Tulipanos · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#luberon-bories-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="luberon-senanque-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/luberon-senanque-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/luberon-senanque-01-thumb-480.webp" alt="종탑과 반원형 후진이 보이는 로마네스크 양식의 세낭크 수도원 석조 건물, 앞쪽에 꽃이 지지 않은 초록 라벤더 밭"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>12세기에 세워진 시토회 수도원인 세낭크 수도원.</span><span class="media-credit">Photo: Peter Broster · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener license">CC BY 3.0</a> · <a href="../about/photo-credits.html#luberon-senanque-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Gordes 시장·Bories·선택마을</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:15 출발</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>시장주차 30분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/luberon/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/luberon.html"><b class="ic ic-map" aria-hidden="true"></b>Luberon 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>07:15–08:00</td>
-<td>농가 아침</td>
-<td>시장일이므로 일찍 출발</td>
-</tr>
-<tr>
-<td>08:10</td>
-<td>농가 출발</td>
-<td>화요일 Gordes 중심 통과를 피하고 외곽주차장 목표</td>
-</tr>
-<tr>
-<td>08:45–10:15</td>
-<td><strong>Gordes 마을·화요일 혼잡 대응</strong></td>
-<td>시장은 운영·혼잡 재확인. 마을 구조와 전망이 핵심</td>
-</tr>
-<tr>
-<td>10:15–11:15</td>
-<td><strong>Gordes 마을·전망</strong></td>
-<td>Place du Château, 골목, 전망대. 내부 전시보다 마을 구조 중심</td>
-</tr>
-<tr>
-<td>11:15–11:40</td>
-<td>차량 이동</td>
-<td>Village des Bories 방향. 좁은 지방도로 주의</td>
-</tr>
-<tr>
-<td>11:40–12:30</td>
-<td><strong>Village des Bories</strong></td>
-<td>9월 매일 09:00–19:00, 마지막 입장 30분 전, 성인 €8 (2026-08-14 확인)</td>
-</tr>
-<tr>
-<td>12:35–13:20</td>
-<td>피크닉 점심</td>
-<td>시장에서 산 빵·치즈·토마토·과일</td>
-</tr>
-<tr>
-<td>13:30–15:20</td>
-<td><strong>Ménerbes 또는 Oppède 선택</strong></td>
-<td>한 곳만. 피로 시 곧바로 농가 귀환</td>
-</tr>
-<tr>
-<td>15:20–16:15</td>
-<td>농가 귀환</td>
-<td>Sénanque는 능선마을을 빼는 대체안</td>
-</tr>
-<tr>
-<td>16:15–18:30</td>
-<td>농가 휴식</td>
-<td>세탁·사진정리·마지막 테라스 시간</td>
-</tr>
-<tr>
-<td>19:30</td>
-<td>저녁</td>
-<td>농가식 또는 Gordes권 레스토랑은 귀로 동선상 미리 예약할 때만</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/gordes.html">Gordes <b>Must</b></a><a class="pl-day" href="../places/menerbes.html">Ménerbes <b>Recommended</b></a><a class="pl-day" href="../places/village-des-bories.html">Village des Bories <b>Recommended</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="gordes-bories와-선택-능선마을">Gordes, Bories와 선택 능선마을</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 핵심은 Gordes·Bories이며, Ménerbes/Oppède·Sénanque 가운데 하나만 더한다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-꼭-해볼-것">오늘 꼭 해볼 것</h4>
-<ul>
-<li>Gordes는 성 내부보다 <strong>마을 전체가 보이는 외부 전망점</strong>을 먼저 보기</li>
-<li>시장에서 과일·치즈·올리브 외에 작은 도자·직물도 살펴보기</li>
-<li>Bories에서는 “예쁜 오두막”보다 농업·목축 생활에 어떤 공간이 필요했는지 생각하기</li>
-<li>Sénanque는 라벤더꽃 기대보다 <strong>12세기 수도원과 계곡의 적막</strong>을 경험하기</li>
-</ul>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ol>
-<li>Bories 내부</li>
-<li>Gordes 마을은 유지</li>
-</ol>
-<hr>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<ul>
-<li>중심 주차는 07:00–08:30 사이 도착이 유리</li>
-<li>주차요금: 30분 무료 티켓 필요, 4시간까지 €8, 4–11시간 €10 <span class="badge badge-unverified">공식 확인</span></li>
-<li>화요일 오전에는 마을 관통 운전을 강하게 피한다</li>
-<li>주차장 이름보다 <strong>외곽 진입 후 도보 5–10분</strong>을 우선한다</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>시장혼잡·주차</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>Ménerbes/Oppède</dd></div><div class="ds-item"><dt>대체안</dt><dd>Gordes+Bories만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Gordes 피크닉</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>시장·주차</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-18">
-<h2 id="daily-map-title-18" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Gordes 시장과 Village des Bories</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button><button class="gm-filter" type="button" data-type="parking" aria-pressed="false">주차</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9011167%2C5.1927089&amp;travelmode=driving">주차장 순서대로 운전</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="luberon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="luberon-stay-candidate" aria-pressed="false"><strong>0. Domaine des Peyre</strong><span>숙소 · 08:15 출발</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Domaine+des+Peyre">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.87088%2C5.12202&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="gordes" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="gordes" aria-pressed="false"><strong>1. Gordes</strong><span>방문지 · 오전 시장</span><small>시장주차 30분 확보. 주차장은 현장 안내 확인 — 사전 미지정.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gordes">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.91181%2C5.20043&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="bories-parking" data-type="parking"><button class="gm-card-main" type="button" data-place-id="bories-parking" aria-pressed="false"><strong>2. Village des Bories 주차장</strong><span>주차 · 이어서 도착</span><small>유적 전용 주차장 — 진입로 좁음, 서행.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Parking+Village+des+Bories%2C+Gordes">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9011167%2C5.1927089&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="village-des-bories" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="village-des-bories" aria-pressed="false"><strong>3. Village des Bories</strong><span>방문지 · 이어서</span><small>돌집 유적 — 주차 후 도보 진입.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Village+des+Bories">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.89728%2C5.1857&amp;travelmode=driving">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.91181%2C5.20043&amp;travelmode=driving&amp;origin=43.87088%2C5.12202">Domaine des Peyre → Gordes · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9011167%2C5.1927089&amp;travelmode=driving&amp;origin=43.91181%2C5.20043">Gordes → Village des Bories 주차장 · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.89728%2C5.1857&amp;travelmode=walking&amp;origin=43.9011167%2C5.1927089">Village des Bories 주차장 → Village des Bories · 도보</a></li></ol></details>
-<script type="application/json">{"center":[43.89,5.2],"zoom":12,"places":[{"id":"luberon-stay-candidate","name":"Domaine des Peyre","city":"Luberon","type":"accommodation","lat":43.87088,"lng":5.12202,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Domaine+des+Peyre","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"]},{"id":"gordes","name":"Gordes","city":"Luberon","type":"attraction","lat":43.91181,"lng":5.20043,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Gordes","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"]},{"id":"bories-parking","name":"Village des Bories 주차장","city":"Luberon","type":"parking","lat":43.9011167,"lng":5.1927089,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Parking+Village+des+Bories%2C+Gordes","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"},{"id":"village-des-bories","name":"Village des Bories","city":"Luberon","type":"attraction","lat":43.89728,"lng":5.1857,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Village+des+Bories","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-15","city":"Luberon","title":"Gordes 시장과 Village des Bories","center":[43.89,5.2],"zoom":12,"defaultMode":"driving","stops":[{"placeId":"luberon-stay-candidate","order":0,"plannedTime":"08:15 출발","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"gordes","order":1,"plannedTime":"오전 시장","note":"시장주차 30분 확보. 주차장은 현장 안내 확인 — 사전 미지정."},{"placeId":"bories-parking","plannedTime":"이어서 도착","note":"유적 전용 주차장 — 진입로 좁음, 서행.","order":2},{"placeId":"village-des-bories","order":3,"plannedTime":"이어서","note":"돌집 유적 — 주차 후 도보 진입."}],"segments":[{"from":"luberon-stay-candidate","to":"gordes","mode":"driving"},{"from":"gordes","to":"bories-parking","mode":"driving"},{"from":"bories-parking","to":"village-des-bories","mode":"walking"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 18</span>
+    <span class="day-date">9/15 화</span></div>
+  <h1>Luberon</h1>
+  <p class="hero-dek">Gordes와 돌의 문화</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>약 33km · 차량 경로</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-15">
+  <span class="label">NEXT</span>
+  <div class="action-when">08:45</div>
+  <div class="action-what"><a href="../places/gordes.html">Gordes 마을·전망</a></div>
+  <p class="card-dek">화요일 시장 혼잡 대응 — Place du Château·골목·전망대, 마을 구조 중심</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-18-luberon.webp" aria-label="Day 18 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-18-luberon-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 18 Luberon 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-18-luberon.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-17.html">← Day 17</a><span></span><a href="day-19.html">Day 19 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>08:45 Gordes 마을·전망</strong> — 시장 운영·주차 재확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="07:15" data-end="08:10">
+  <div class="tl-time">07:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 농가 아침·출발 </div>
+    <p class="tl-note">화요일 Gordes 중심 통과를 피하고 외곽주차장 목표</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 12분 · 9.8km</span></div>
+</li><li class="tl-item" data-start="08:45" data-end="11:15">
+  <div class="tl-time">08:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/gordes.html">Gordes 마을·전망</a> <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">화요일 시장 혼잡 대응 — Place du Château·골목·전망대, 마을 구조 중심</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>시장 운영·주차 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 7분 · 4.4km · 좁은 지방도로</span></div>
+</li><li class="tl-item" data-start="11:40" data-end="12:30">
+  <div class="tl-time">11:40</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-book" aria-hidden="true"></b> Village des Bories </div>
+    <p class="tl-note">9월 09:00–19:00 · 성인 €8 · 평균 30–45분 — 좁은 지방도로 주의</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 0분 · 현장</span></div>
+</li><li class="tl-item" data-start="12:35" data-end="13:20">
+  <div class="tl-time">12:35</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> 피크닉 점심 </div>
+    <p class="tl-note">시장에서 산 재료로</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 12분 · 8.6km</span></div>
+</li><li class="tl-item" data-start="13:30" data-end="15:20">
+  <div class="tl-time">13:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/menerbes.html">Ménerbes 또는 Oppède</a> <span class="badge badge-neutral">선택</span></div>
+    <p class="tl-note">한 곳만 — 피로 시 곧바로 농가 귀환</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 12분 · 10.2km</span></div>
+</li><li class="tl-item" data-start="15:20" data-end="18:30">
+  <div class="tl-time">15:20</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 농가 귀환·휴식 </div>
+    <p class="tl-note">세탁·사진정리·마지막 테라스 시간</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 혼잡 시 Gordes+Bories만, Sénanque는 능선마을 대체안</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>농가 후보 승인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Gordes 화요 시장 운영·외곽주차 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Bories 운영·요금 재확인</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.873,5.175],"zoom":12,"pins":[{"id":"farm-depart","name":"농가 아침·출발","lat":43.87088,"lng":5.12202,"cat":"hotel","time":"07:15","place":null},{"id":"gordes","name":"Gordes 마을·전망","lat":43.91181,"lng":5.20043,"cat":"sight","time":"08:45","place":"gordes"},{"id":"bories","name":"Village des Bories","lat":43.89728,"lng":5.1857,"cat":"culture","time":"11:40","place":null},{"id":"picnic","name":"피크닉 점심","lat":43.89728,"lng":5.1857,"cat":"food","time":"12:35","place":null},{"id":"menerbes","name":"Ménerbes 또는 Oppède","lat":43.83274,"lng":5.20689,"cat":"sight","time":"13:30","place":"menerbes"},{"id":"farm-return","name":"농가 귀환·휴식","lat":43.87088,"lng":5.12202,"cat":"hotel","time":"15:20","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 18 동선 · 6곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="farm-depart"><span class="meta">07:15</span>농가 아침·출발<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.87088,5.12202"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">농가 아침·출발 </span>열기</a></li><li data-pin="gordes"><span class="meta">08:45</span><a href="../places/gordes.html">Gordes 마을·전망</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.91181,5.20043"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Gordes 마을·전망 </span>열기</a></li><li data-pin="bories"><span class="meta">11:40</span>Village des Bories<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.89728,5.1857"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Village des Bories </span>열기</a></li><li data-pin="picnic"><span class="meta">12:35</span>피크닉 점심<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.89728,5.1857"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">피크닉 점심 </span>열기</a></li><li data-pin="menerbes"><span class="meta">13:30</span><a href="../places/menerbes.html">Ménerbes 또는 Oppède</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.83274,5.20689"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Ménerbes 또는 Oppède </span>열기</a></li><li data-pin="farm-return"><span class="meta">15:20</span>농가 귀환·휴식<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.87088,5.12202"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">농가 귀환·휴식 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>렌터카 · 외곽주차 우선</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>시장 재료 피크닉</li><li>농가 저녁</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>화요 시장일 — 08:45 도착 목표</li><li>Bories €8·30–45분</li><li>Ménerbes/Oppède 택1</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-17.html">← Day 17</a><a class="btn btn-secondary" href="../daily/day-19.html">Day 19 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

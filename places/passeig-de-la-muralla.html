@@ -3,61 +3,138 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Passeig de la Muralla — 2026 유럽 여행 가이드북</title>
+<title>Passeig de la Muralla — 유럽 43일 가이드북</title>
+<meta name="description" content="지로나 성벽은 두 시기의 것이 겹쳐 있다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="es">
+<body data-region="girona">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/girona/index.html">Girona</a><span class="tb-sep" aria-hidden="true">›</span><b>Passeig de la Muralla</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/girona.html">Girona · Empordà</a><span class="sep" aria-hidden="true">›</span><b>Passeig de la Muralla</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="es" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Passeig de la Muralla</h1><figure class="guide-photo guide-photo--content" data-photo-id="girona-passeig-de-la-muralla-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/girona-passeig-de-la-muralla-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/girona-passeig-de-la-muralla-01-content-1280.webp" alt="지로나 성벽 산책로에서 내려다본 구시가지"
-      width="1280" height="960" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>지로나 성벽 — 카롤링거 성벽 위를 걷는 길.</span><span class="media-credit">Photo: Carles de Malavella · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#girona-passeig-de-la-muralla-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/girona/index.html">Girona</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><span class="pl-basis">일정에 배정된 날을 시간표에서 찾지 못했다</span></td></tr><tr><th>상세</th><td><a href="../chapters/girona/places.html#성벽-passeig-de-la-muralla-필수">챕터 본문에서 보기</a></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://www.girona.cat/turisme/eng/monuments_muralla.php">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Passeig_de_la_Muralla">위키백과</a><a class="ref ic ic-map" href="../maps/girona.html">Girona 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><p class="pl-ex">운영 9월~5월 08:00-21:00, 6월~8월 08:00-23:00 (9/1~9/4 여행일은 08:00-21:00 적용) · 휴관 연중무휴(휴무일 고지 없음). 9~5월 08:00-21:00, 6~8월 08:00-23:00 예약 공식 페이지에 입장료·예약 관련 언급 없음(자유 통행 구간) · 미확인 — 현장 확인 필요</p><p class="note">상세 서술은 챕터 본문에 있다. 여기서 복제하지 않는다.</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/content/girona-passeig-de-la-muralla-01-content-1280.webp" srcset="../assets/images/content/girona-passeig-de-la-muralla-01-content-1280.webp 1280w" sizes="100vw" alt="지로나 성벽 산책로에서 내려다본 구시가지" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Girona · Empordà</span></div>
+    <h1>Passeig de la Muralla</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <p class="hero-dek">지로나 성벽은 두 시기의 것이 겹쳐 있다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Passeig_de_la_Muralla" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Vistes_des_de_la_muralla_de_Girona_09.jpg" rel="nofollow noopener">Carles de Malavella</a> · CC BY-SA 3.0</p>
+<div class="sec-head-rule"><span class="label">WHY GO</span><h2>왜 가는가</h2></div>
+<div class="prose"><p>지로나 성벽은 두 시기의 것이 겹쳐 있다. <strong>카롤링거 시대(9세기)</strong> 와 <strong>중세(14~15세기)</strong>. 주의 깊게 보면 기원전 1세기 로마 성벽의 일부도 알아볼 수 있다.</p>
+<p>전체 산책로는 약 2km다. Passeig de la Reina Joana와 Jardins de la Francesa에서 시작해 Jardins de la Muralla까지 이어진다. 처음에는 성벽 옆 정원을 따라 걷다가, 곧 성벽 <strong>위로</strong> 올라가 중세 흉벽 통로를 걷게 된다. 현대에 추가한 금속 계단과 통로가 중간중간 있다.</p></div>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>9월~5월 08:00-21:00, 6월~8월 08:00-23:00 (9/1~9/4 여행일은 08:00-21:00 적용) <br><span class="meta">https://www.girona.cat/turisme/cat/monuments_muralla.php</span></td></tr><tr><th scope="row">휴무</th><td>연중무휴(휴무일 고지 없음). 9~5월 08:00-21:00, 6~8월 08:00-23:00 <br><span class="meta">https://www.girona.cat/turisme/cat/monuments_muralla.php</span></td></tr><tr><th scope="row">예약</th><td>공식 페이지에 입장료·예약 관련 언급 없음(자유 통행 구간) <span class="badge badge-caution">재확인</span><br><span class="meta">https://www.girona.cat/turisme/cat/monuments_muralla.php</span></td></tr></tbody></table></div>
+<div class="prose"><h5>실용</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>요금</td>
+<td><strong>무료</strong></td>
+</tr>
+<tr>
+<td>운영</td>
+<td>야외 구간 상시 개방</td>
+</tr>
+<tr>
+<td>소요</td>
+<td>전 구간 60~75분 / 부분 30분</td>
+</tr>
+<tr>
+<td>주의</td>
+<td>그늘이 적다. 한낮 회피. 물 지참</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>관람 요령</h3>
+<blockquote>
+<p><strong>위에서 3층 구조를 확인하라.</strong>
+언덕 꼭대기 대성당 → 그 아래 유대인 지구 → 강가 상인 구역. 아래에서 골목을 걸을 때는 이게 안 보인다. 성벽 위에서만 도시의 설계가 보인다.</p>
+<p><strong>중간에 내려올 수 있다.</strong>
+오르내리는 계단이 여러 개다. 2km를 다 걷지 않아도 된다. 더위나 피로에 따라 중간 이탈이 자유롭다.</p>
+<p><strong>토레 지로넬라로 짧게 우회하라.</strong>
+성벽 코스에서 조금 벗어난 곳에 지로넬라 탑 유적이 있다. <strong>1391년, 유대인 공동체가 17주간 포위당한 채 버틴 자리다.</strong> Call을 걸은 뒤에 여기를 보면 아침에 본 골목의 의미가 달라진다.</p>
+</blockquote></div>
+<div class="sec-head"><h2>Girona · Empordà 의 다른 장소</h2><a href="../guide/girona.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-calella-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-calella-01-thumb-480.webp 480w" sizes="84px" alt="칼레야 데 팔라프루젤의 흰 집과 작은 모래 해변이 이어진 해안" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/calella-de-palafrugell.html">Calella de Palafrugell</a></h3>
+    <p class="card-dek">소나무 덮인 바위와 투명한 만 사이의 어촌이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-pals-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-pals-01-thumb-480.webp 480w" sizes="84px" alt="팔스의 시간의 탑(Torre de les Hores)" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/pals.html">Pals</a></h3>
+    <p class="card-dek">언덕 위 고딕 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-peralada-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-peralada-01-thumb-480.webp 480w" sizes="84px" alt="페랄라다 성 외관" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/peralada.html">Peralada</a></h3>
+    <p class="card-dek">페랄라다</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-peratallada-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-peratallada-01-thumb-480.webp 480w" sizes="84px" alt="페라타야다의 거친 석조 벽과 아치가 이어지는 중세 골목" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/peratallada.html">Peratallada</a></h3>
+    <p class="card-dek">이름부터 설명이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

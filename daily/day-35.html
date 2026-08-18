@@ -3,162 +3,132 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 35 · 10/2 금 · Paris — 2026 유럽 여행 가이드북</title>
+<title>Day 35 · Paris — 유럽 43일 가이드북</title>
+<meta name="description" content="시장·서점·카페·스케치 — 오페라 다음 날">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="paris">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/paris/index.html">Paris</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 35</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 35</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-34.html">← 앞</a><a href="day-36.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-30.html" title="Day 30">9/27</a><a href="day-31.html" title="Day 31">9/28</a><a href="day-32.html" title="Day 32">9/29</a><a href="day-33.html" title="Day 33">9/30</a><a href="day-34.html" title="Day 34">10/1</a><a href="day-35.html" class="here" title="Day 35">10/2</a><a href="day-36.html" title="Day 36">10/3</a><a href="day-37.html" title="Day 37">10/4</a><a href="day-38.html" title="Day 38">10/5</a><a href="day-39.html" title="Day 39">10/6</a><a href="day-40.html" title="Day 40">10/7</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-27.html">Day 27</a><a href="../daily/day-28.html">Day 28</a><a href="../daily/day-29.html">Day 29</a><a href="../daily/day-30.html">Day 30</a><a href="../daily/day-31.html">Day 31</a><a href="../daily/day-32.html">Day 32</a><a href="../daily/day-33.html">Day 33</a><a href="../daily/day-34.html">Day 34</a><a href="../daily/day-35.html" aria-current="page">Day 35</a><a href="../daily/day-36.html">Day 36</a><a href="../daily/day-37.html">Day 37</a><a href="../daily/day-38.html">Day 38</a><a href="../daily/day-39.html">Day 39</a><a href="../daily/day-40.html">Day 40</a><a href="../daily/day-41.html">Day 41</a><a href="../daily/day-42.html">Day 42</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 35 · 10/2 금</span></span><a href="../chapters/paris/schedule.html"><b>지역</b><span>Paris</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 35 · 10/2 금 · Paris</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="paris-enfants-rouges-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/paris-enfants-rouges-01-content-1280.webp 1280w" sizes="100vw">
-    <img src="../assets/images/content/paris-enfants-rouges-01-content-1280.webp" alt="앙팡 루주 시장 정문의 철제 아치 간판과 안쪽 시장 풍경"
-      width="1280" height="853" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>브르타뉴 거리 쪽 앙팡 루주 시장 입구 — 철제 아치 간판 너머로 시장 통로가 이어진다.</span><span class="media-credit">Photo: besopha · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#paris-enfants-rouges-01">사진 정보</a></span></figcaption>
-</figure>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>회복·시장·서점·스케치</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>늦은 시작</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>정식운동 생략</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/paris/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/paris.html"><b class="ic ic-map" aria-hidden="true"></b>Paris 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>09:30–10:30</td>
-<td>늦은 기상·느린 아침</td>
-<td>정식운동 생략</td>
-</tr>
-<tr>
-<td>11:00–12:00</td>
-<td>숙소권 시장</td>
-<td>필요한 식재료만 구매</td>
-</tr>
-<tr>
-<td>12:00–13:30</td>
-<td>시장식 또는 숙소 점심</td>
-<td>줄이 길면 즉시 대체</td>
-</tr>
-<tr>
-<td>14:00–15:30</td>
-<td>동네 독립서점·카페</td>
-<td>앉는 시간을 일정에 포함</td>
-</tr>
-<tr>
-<td>15:30–17:00</td>
-<td>Jason 스케치 / Julia 산책·카페</td>
-<td>같은 권역에서 각자 회복</td>
-</tr>
-<tr>
-<td>17:00 이후</td>
-<td>숙소 귀환·세탁 또는 자유</td>
-<td><strong>고정 저녁행사 없음</strong></td>
-</tr>
-<tr>
-<td>14:00–16:00</td>
-<td><strong>Grand Palais — Cezanne et nous</strong></td>
-<td>Cezanne et nous 2026/9/23–2027/1/17 갤러리 3·4 · 174점(세잔 69 + 타 작가 105) · 예약 2026-07-07 개시 · Aix 에서 본 작업실·풍경의 결과물을 본다</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="1" aria-label="피로도 1–2 / 5"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><b>1–2/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/grand-palais.html">Grand Palais <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="시장-서점-카페-스케치-오페라-다음-날의-회복-회복-로컬-라이프">시장, 서점, 카페, 스케치 — 오페라 다음 날의 회복 <span class="badge badge-rest">회복</span> <span class="badge badge-rest">로컬 라이프</span></h3>
-<p>회복과 생활 자체가 목적이므로 재즈·연극·교회공연을 추가하지 않는다.</p>
-<h3 id="꼭-해볼-것">꼭 해볼 것</h3>
-<ul>
-<li>오전 알람을 끄고 전날 수면을 회수한다.</li>
-<li>시장·서점·카페를 모두 숙소에서 가까운 한 생활권 안에서 고른다.</li>
-<li>스케치는 결과물보다 한 자리에 오래 앉아 쉬는 장치로 쓴다.</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>회복일 과밀화</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>저녁행사 전부</dd></div><div class="ds-item"><dt>대체안</dt><dd>숙소·카페만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>시장식 또는 숙소 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>없음</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-35">
-<h2 id="daily-map-title-35" class="ic ic-map">Google 실행지도</h2>
-<p class="note">생활일 — 숙소권 시장·서점·회복</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button></nav>
-
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="paris-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="paris-stay-candidate" aria-pressed="false"><strong>0. Pepper &amp; Paper</strong><span>숙소 · 종일 생활권</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시장·독립서점·카페 — 고정 행사 없음.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pepper+%26+Paper">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.83966%2C2.34644&amp;travelmode=walking">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol></ol></details>
-<script type="application/json">{"center":[48.846,2.34],"zoom":15,"places":[{"id":"paris-stay-candidate","name":"Pepper \u0026 Paper","city":"Paris","type":"accommodation","lat":48.83966,"lng":2.34644,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pepper+%26+Paper","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-10-02","city":"Paris","title":"생활일 — 숙소권 시장·서점·회복","center":[48.846,2.34],"zoom":15,"defaultMode":"walking","stops":[{"placeId":"paris-stay-candidate","order":0,"plannedTime":"종일 생활권","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시장·독립서점·카페 — 고정 행사 없음."}],"segments":[]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 35</span>
+    <span class="day-date">10/2 금</span></div>
+  <h1>Paris</h1>
+  <p class="hero-dek">시장·서점·카페·스케치 — 오페라 다음 날</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 1–2</span><span>약 1.5km · 도보</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-10-02">
+  <span class="label">NEXT</span>
+  <div class="action-when">11:00</div>
+  <div class="action-what">숙소권 시장·점심</div>
+  <p class="card-dek">필요한 식재료만 — 줄이 길면 즉시 대체</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-35-paris.webp" aria-label="Day 35 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-35-paris-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 35 Paris 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-35-paris.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-34.html">← Day 34</a><span></span><a href="day-36.html">Day 36 →</a></nav>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="09:30" data-end="11:00">
+  <div class="tl-time">09:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 늦은 기상·느린 아침 </div>
+    <p class="tl-note">정식운동 생략 — 전날 수면 회수</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.4km</span></div>
+</li><li class="tl-item" data-start="11:00" data-end="13:30">
+  <div class="tl-time">11:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> 숙소권 시장·점심 </div>
+    <p class="tl-note">필요한 식재료만 — 줄이 길면 즉시 대체</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.3km</span></div>
+</li><li class="tl-item" data-start="14:00" data-end="15:30">
+  <div class="tl-time">14:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> 동네 독립서점·카페 </div>
+    <p class="tl-note">앉는 시간을 일정에 포함</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 3분 · 0.2km</span></div>
+</li><li class="tl-item" data-start="15:30" data-end="17:00">
+  <div class="tl-time">15:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-gauge" aria-hidden="true"></b> Jason 스케치 / Julia 산책·카페 <span class="badge badge-neutral">선택</span></div>
+    <p class="tl-note">같은 권역에서 각자 회복 — 스케치는 오래 앉는 장치</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.3km</span></div>
+</li><li class="tl-item" data-start="17:00" data-end="">
+  <div class="tl-time">17:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 귀환·세탁 또는 자유 </div>
+    <p class="tl-note">고정 저녁행사 없음 — 재즈·연극·교회공연 추가 금지</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 비·피로 시 숙소·카페만</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Paris 숙소 후보 확정 — 생활권 앵커 종속</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[48.8399,2.3455],"zoom":15,"pins":[{"id":"late-morning","name":"늦은 기상·느린 아침","lat":48.83966,"lng":2.34644,"cat":"hotel","time":"09:30","place":null},{"id":"market","name":"숙소권 시장·점심","lat":48.8404,"lng":2.3475,"cat":"shopping","time":"11:00","place":null},{"id":"bookshop","name":"동네 독립서점·카페","lat":48.8394,"lng":2.344,"cat":"cafe","time":"14:00","place":null},{"id":"sketch","name":"Jason 스케치 / Julia 산책·카페","lat":48.8399,"lng":2.3459,"cat":"activity","time":"15:30","place":null},{"id":"paris-return","name":"숙소 귀환·세탁 또는 자유","lat":48.83966,"lng":2.34644,"cat":"hotel","time":"17:00","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 35 동선 · 5곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="late-morning"><span class="meta">09:30</span>늦은 기상·느린 아침<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.83966,2.34644"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">늦은 기상·느린 아침 </span>열기</a></li><li data-pin="market"><span class="meta">11:00</span>숙소권 시장·점심<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.8404,2.3475"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소권 시장·점심 </span>열기</a></li><li data-pin="bookshop"><span class="meta">14:00</span>동네 독립서점·카페<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.8394,2.344"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">동네 독립서점·카페 </span>열기</a></li><li data-pin="sketch"><span class="meta">15:30</span>Jason 스케치 / Julia 산책·카페<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.8399,2.3459"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Jason 스케치 / Julia 산책·카페 </span>열기</a></li><li data-pin="paris-return"><span class="meta">17:00</span>숙소 귀환·세탁 또는 자유<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.83966,2.34644"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 귀환·세탁 또는 자유 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>도보 (한 생활권)</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>시장식 또는 숙소 점심</li><li>숙소 저녁</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>알람 끄고 수면 회수</li><li>시장·서점·카페를 한 생활권에서</li><li>고정행사 없음</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-34.html">← Day 34</a><a class="btn btn-secondary" href="../daily/day-36.html">Day 36 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

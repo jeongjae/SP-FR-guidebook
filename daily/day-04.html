@@ -3,305 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 4 · 9/1 화 · Bàscara — 2026 유럽 여행 가이드북</title>
+<title>Day 4 · Barcelona → Sitges → Bàscara — 유럽 43일 가이드북</title>
+<meta name="description" content="렌터카 인수와 지중해 연안 이동">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="es">
+<body data-region="girona">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/barcelona/index.html">Barcelona · Girona</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 4</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 4</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-03.html">← 앞</a><a href="day-05.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-01.html" title="Day 1">8/29</a><a href="day-02.html" title="Day 2">8/30</a><a href="day-03.html" title="Day 3">8/31</a><a href="day-04.html" class="here" title="Day 4">9/1</a><a href="day-05.html" title="Day 5">9/2</a><a href="day-06.html" title="Day 6">9/3</a><a href="day-07.html" title="Day 7">9/4</a><a href="day-08.html" title="Day 8">9/5</a><a href="day-09.html" title="Day 9">9/6</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="es" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-04.html" aria-current="page">Day 4</a><a href="../daily/day-05.html">Day 5</a><a href="../daily/day-06.html">Day 6</a><a href="../daily/day-07.html">Day 7</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 4 · 9/1 화</span></span><a href="../chapters/girona/schedule.html"><b>지역</b><span>Girona</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 4 · 9/1 화 · Bàscara</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="barcelona-sitges-seafront-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/barcelona-sitges-seafront-01-hero-800.webp 800w, ../assets/images/hero/barcelona-sitges-seafront-01-hero-1280.webp 1280w, ../assets/images/hero/barcelona-sitges-seafront-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/barcelona-sitges-seafront-01-hero-1280.webp" alt="시체스 해변 산책로와 바다를 내려다보는 산트 바르토메우 교회"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>해변과 모더니즘 문화가 맞닿은 시체스의 대표 전경.</span><span class="media-credit">Photo: Werner Lang (Wela49) · <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#barcelona-sitges-seafront-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="barcelona-cau-ferrat-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/barcelona-cau-ferrat-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/barcelona-cau-ferrat-01-thumb-480.webp" alt="시체스 카우 페라트 미술관의 푸른 장식과 석조 외관"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>산티아고 루시뇰의 집과 작업실이었던 카우 페라트.</span><span class="media-credit">Photo: Till F. Teenck · <a href="https://creativecommons.org/licenses/by-sa/2.5" target="_blank" rel="noopener license">CC BY-SA 2.5</a> · <a href="../about/photo-credits.html#barcelona-cau-ferrat-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="barcelona-palau-maricel-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/barcelona-palau-maricel-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/barcelona-palau-maricel-01-thumb-480.webp" alt="시체스 카레르 데 포놀라르 양쪽의 마리셀 궁전 건물"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>골목을 사이에 두고 이어지는 마리셀의 육지와 해안 건물.</span><span class="media-credit">Photo: Enric · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#barcelona-palau-maricel-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="girona-onyar-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/girona-onyar-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/girona-onyar-01-thumb-480.webp" alt="지로나 오냐르강을 따라 늘어선 색색의 강변 주택"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>오냐르강과 강변 주택이 만드는 지로나의 대표 전경.</span><span class="media-credit">Photo: Guyw4444 · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#girona-onyar-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="girona-cathedral-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/girona-cathedral-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/girona-cathedral-01-thumb-480.webp" alt="긴 계단 위로 정면 파사드가 보이는 지로나 대성당"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>구시가지의 계단축에서 바라본 지로나 대성당 외관.</span><span class="media-credit">Photo: Fernando · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#girona-cathedral-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-<p class="day-flags"><span class="badge badge-p0">P0 연결</span><span class="badge badge-pending">거점 이동</span></p>
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Sants 렌터카→Sitges→Bàscara</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능)</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>인수 60분·Sitges 출차 30분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>2건 — 완료 1 · 미확정 1 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/girona/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/girona.html"><b class="ic ic-map" aria-hidden="true"></b>Girona 실행지도</a><a href="../maps/barcelona.html"><b class="ic ic-map" aria-hidden="true"></b>Barcelona 실행지도</a></nav>
-</section>
-<section class="transfer-day" aria-label="이동일 체크리스트"><h2 class="ic ic-check">이동일 체크리스트</h2><ol class="td-steps"><li><b>출발·체크아웃</b><span>08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능)</span></li><li><b>경유·핵심</b><span>Sants 렌터카→Sitges→Bàscara</span></li><li><b>완충</b><span>인수 60분·Sitges 출차 30분</span></li><li><b>지연 시 생략</b><span>해변산책·실내 1곳</span></li><li><b>대체안</b><span>Sitges 1곳만 보고 Bàscara 직행</span></li><li><b>잠금·예약</b><span>렌터카 완료(Hertz L671E2E0288)·Sitges·Bàscara 체크인 조건 재확인</span></li></ol><p class="note">실행성 감사의 값을 이동 순서로 재배열한 것이다. 체크인 시각·주차 등 미확정 값은 확정 후 채운다.</p></section>
-<h2 class="ic ic-clock">시간표</h2><h3>Barcelona</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>06:50–07:40</td>
-<td>기상·숙소 아침·최종 짐 정리</td>
-<td>냉장고 비우기, 물 2L, 운전 간식, 선글라스, 주차 앱 준비</td>
-</tr>
-<tr>
-<td>07:40–08:10</td>
-<td>체크아웃</td>
-<td>숙소 체크아웃 09:30–12:00 (2026-08-05 확인) 이지만 인수 시각에 맞춰 일찍 나온다</td>
-</tr>
-<tr>
-<td>08:10–08:45</td>
-<td>Barcelona Sants 이동</td>
-<td>숙소에서 약 650m — 짐이 감당되면 도보 10분 안팎, 아니면 택시로 몇 분이다.</td>
-</tr>
-<tr>
-<td><strong>09:00–09:35</strong></td>
-<td><strong>렌터카 인수</strong></td>
-<td>Hertz Sants 영업소(C/ Viriat 45, +34 682 505 020) · <strong>확정(2026-08-05)</strong> 예약 L671E2E0288 · 07:00부터 인수 가능. 사진·동영상으로 차체, 휠, 유리, 연료, 주행거리 기록. <strong>프랑스 주행을 이 자리에서 신고한다 — 아래 참조</strong></td>
-</tr>
-<tr>
-<td></td>
-<td>예약 내용 (2026-08 예약서)</td>
-<td>컴팩트 자동변속 (그룹 E0, Ford Puma급) · 후지불 <strong>€176.01</strong> (기본요금 4일 €134.44 + 편도반납 €11 + 세금, VISA ASIA CARDS 10% 할인 적용) · CDW·Super Cover·PAI/PEC·도난보험 포함 · 무제한 주행 · 반납 El Prat T1·2 영업소 +34 682 505 010</td>
-</tr>
-<tr>
-<td>09:35–10:20</td>
-<td>바르셀로나→시체스</td>
-<td>C-32 유료구간 사용 권장. 렌터카의 ZBE 적합 여부는 업체가 보장하도록 계약서에 확인한다.</td>
-</tr>
-<tr>
-<td>10:20–10:40</td>
-<td><strong>Can Robert 주차</strong></td>
-<td>중심 진입을 피하는 유료 환승형 주차장. 대안은 24시간 운영 Plaça del Pou Vedre 지하주차장.</td>
-</tr>
-<tr>
-<td>10:40–11:05</td>
-<td>시체스 구시가지 도보</td>
-<td>Carrer de Sant Francesc → Plaça Cap de la Vila → 교회 언덕 방향</td>
-</tr>
-<tr>
-<td><strong>11:05–12:20</strong></td>
-<td><strong>Museu del Cau Ferrat + Museu de Maricel</strong></td>
-<td>화–일 10:00–19:00, 월요일 휴관. 통합 일반권 €12/인 (2026-08 확인). Rusiñol의 집·작업실과 모더니즘 컬렉션에 집중</td>
-</tr>
-<tr>
-<td>12:20–12:50</td>
-<td>Sant Bartomeu 교회 외관·해변 전망</td>
-<td>계단과 Baluard에서 스케치 사진 10분. 박물관 관람이 길어지면 해변 산책을 줄인다.</td>
-</tr>
-<tr>
-<td><strong>13:00–14:25</strong></td>
-<td><strong>La Zorra</strong> 점심</td>
-<td>쌀요리 전문. 2인 이상 공유. 13:00 예약. 평일 점심 세트 또는 arroz a banda 권장.</td>
-</tr>
-<tr>
-<td>14:25–14:55</td>
-<td>Passeig de la Ribera 짧은 산책</td>
-<td>바다에 들어가기보다 25–30분 산책. 9월 1일부터 해변 구조서비스는 10:00–18:00.</td>
-</tr>
-<tr>
-<td>14:55–15:15</td>
-<td>주차장 복귀·출발 준비</td>
-<td>화장실, 물, 목적지 주소, 연료 확인</td>
-</tr>
-<tr>
-<td><strong>15:15–17:30</strong></td>
-<td>시체스→지로나 방면</td>
-<td>C-32 → 바르셀로나 외곽순환 → AP-7. 정상 1시간 45분–2시간, 교통 지연 포함 2시간 15분 계획</td>
-</tr>
-<tr>
-<td>17:30 이후</td>
-<td>지로나 축소안 또는 Bàscara 직행</td>
-<td>시간·컨디션이 허락할 때만 지로나 성당 축소안을 실행한다. 세부는 지로나 챕터의 9/1 계획을 따른다.</td>
-</tr>
-<tr>
-<td>저녁</td>
-<td><strong>Bàscara 체크인·가벼운 저녁</strong></td>
-<td>숙소 체크인은 12:00부터 가능하다. 운전일이므로 거점 인근에서 간단히 먹는다.</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="4" aria-label="피로도 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>4/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/barcelona-historic-walk.html">Barcelona 역사도심 — Barri Gòtic·Rambla 권역 <b>Must</b></a><a class="pl-day" href="../places/cau-ferrat.html">Cau Ferrat <b>Must</b></a><a class="pl-day" href="../places/sitges.html">Sitges <b>Optional</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3>Barcelona</h3><h3 id="렌터카-인수-시체스-모더니즘과-바다-지로나-이동">렌터카 인수, 시체스 모더니즘과 바다, 지로나 이동</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 운전 3시간 안팎과 체크인 2회가 겹친다. 시체스에서 활동을 추가하지 않는다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h3 id="인수-창구에서-반드시-할-말-프랑스-주행-신고-보험">⚠ 인수 창구에서 반드시 할 말 — 프랑스 주행 신고 <span class="badge badge-p0">보험</span></h3>
-<p><strong>Day 5(9/2)에 콜리우르로 국경을 넘는다.</strong> Hertz 스페인 약관은 차량을 스페인 밖으로 가져갈 때
-<strong>크로스보더 요금</strong>이 붙고, <strong>신고하지 않으면 별도 위약금</strong>이 부과되며, 무엇보다
-<strong>신고 없이 국경을 넘으면 제3자·CDW·도난·SuperCover 가 전부 무효</strong>가 된다고 명시한다.
-프랑스는 허용 국가 목록에 있으므로 <strong>문제는 허용 여부가 아니라 신고 여부</strong>다.</p>
-<p>인수 창구에서 이 한 문장을 말한다 — <em>"We will drive to France (Collioure) on September 2."</em>
-계약서에 크로스보더 항목이 들어갔는지 <strong>서명 전에 눈으로 확인</strong>한다.
-금액과 조건은 계약서 기준이다 <span class="badge badge-unverified">요금·조건 계약서 확인</span>.
-출처: Hertz Rental Terms (Spain, DRIVINGRESTRICTIONS) — 2026-08-14 확인.</p>
-<h3 id="미결정-권고-시체스를-이-날-넣을-것인가-사용자-결정-대기">⚠ 미결정 권고 — 시체스를 이 날 넣을 것인가 <span class="badge badge-unverified">사용자 결정 대기</span></h3>
-<p><strong>결정하지 않았다. 다음 라운드로 넘긴 항목이고, 잊지 않으려고 여기 적어 둔다 (2026-08-14).</strong></p>
-<p>지리적으로 이 날은 <strong>남쪽으로 40km 내려갔다가 북쪽으로 130km 올라간다.</strong> 시체스를 넣지
-않으면 Sants → AP-7 북행 한 방향이다. 왕복분 약 80–90km, 고속도로 주행 1시간–1시간 30분,
-C-32 통행료가 순수하게 추가된다. 그 위에 렌터카 인수(09:00)·박물관·점심 예약·주차가 얹힌
-날이라 <strong>피로도 4/5 가 붙은 이유</strong>이기도 하다.</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>안</th>
-<th>내용</th>
-<th>얻는 것</th>
-<th>잃는 것</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>A. 현행 유지</strong></td>
-<td>Day 4 에 시체스를 넣고 Bàscara 로 북상</td>
-<td>시체스를 차로 편하게 본다. Day 2–3 이 가벼워진다</td>
-<td>왕복 80–90km·통행료·이동일 피로</td>
-</tr>
-<tr>
-<td><strong>B. 시체스를 Day 2 또는 3 으로</strong></td>
-<td>Sants 에서 Rodalies <strong>R2 Sud</strong> 근교열차로 당일 왕복, Day 4 는 AP-7 북행만</td>
-<td>이동일이 단순해지고 주차·통행료가 사라진다</td>
-<td>Day 2–3 밀도 상승, La Zorra 13:00 예약과 렌터카 09:00 인수 재조정</td>
-</tr>
-<tr>
-<td><strong>C. 시체스 삭제</strong></td>
-<td>해안 모더니즘을 콜리우르·카다케스로 대체</td>
-<td>가장 가볍다</td>
-<td>Rusiñol 의 집(Cau Ferrat)을 못 본다</td>
-</tr>
-<tr>
-<td><strong>B 를 고르면 함께 바뀌는 것:</strong> Day 2 또는 3 의 일정표, La Zorra 예약일, Hertz 인수 시각</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>(09:00 이 더는 필요 없을 수 있다), Day 4 카드·경로 캐시, 감사표 Day 4 행.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>열차 소요·운임은 확정 전에 공식 확인이 필요하다</strong> <span class="badge badge-unverified">Rodalies R2 Sud 시각·운임 확인</span>.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="9월-1일의-의사결정-기준">9월 1일의 의사결정 기준</h3>
-<ul>
-<li>렌터카 인수가 <strong>10:00 이전 완료</strong>되면 위 일정대로 진행한다.</li>
-<li>인수가 10:00–11:00에 끝나면 시체스 박물관을 60분으로 줄이고 15:15 출발을 유지한다.</li>
-<li>인수가 11:00 이후면 시체스는 <strong>점심+해변 전망 90분</strong>만 하고 지로나로 이동한다.</li>
-<li>폭우·파업·대규모 교통통제가 있으면 시체스를 생략하고 지로나 직행이 원칙이다.</li>
-</ul>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>인수·체크아웃 순서·짐 노출</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>해변산책·실내 1곳</dd></div><div class="ds-item"><dt>대체안</dt><dd>Sitges 1곳만 보고 Bàscara 직행</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Sitges 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>렌터카 완료(Hertz L671E2E0288)·Sitges·Bàscara 체크인 조건 재확인</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-4">
-<h2 id="daily-map-title-4" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Sants 렌터카 인수 → Sitges → Bàscara 체크인</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="rental" aria-pressed="false">렌터카</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="hertz-barcelona-sants" data-type="rental"><button class="gm-card-main" type="button" data-place-id="hertz-barcelona-sants" aria-pressed="false"><strong>0. Hertz Sants</strong><span>렌터카 · 07:00 렌터카 인수</span><small>Hertz 확정 L671E2E0288 · Sants 역 입구 옆 Carrer de Viriat 45. 인수 후 숙소로 복귀해 짐 적재.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Hertz%2C+Carrer+de+Viriat+45%2C+Barcelona">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3806859%2C2.1410595&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="barcelona-stay" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="barcelona-stay" aria-pressed="false"><strong>1. Occidental Barcelona 1929</strong><span>숙소 · 복귀·짐 적재 · 체크아웃 ~12:00</span><small>Occidental Barcelona 1929 — 인수 후 복귀해 짐을 싣고 출발.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3752738%2C2.1476619&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="sitges" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="sitges" aria-pressed="false"><strong>2. Sitges</strong><span>방문지 · 낮</span><small>박물관 여름 폐관시간 전날 확인. 체크인 창에 따라 Girona 관광 축소·삭제.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sitges">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.23512%2C1.81204&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="girona-stay-private" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="girona-stay-private" aria-pressed="false"><strong>3. 바스카라의 B&amp;B (확정 숙소)</strong><span>숙소 · 체크인</span><small>Airbnb 체크인 — 조건 재확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pla%C3%A7a%20de%20l%27Esgl%C3%A9sia%206%2C%2017483%20B%C3%A0scara">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=42.16036%2C2.90964&amp;travelmode=driving">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.3752738%2C2.1476619&amp;travelmode=driving&amp;origin=41.3806859%2C2.1410595">Hertz Sants → Occidental Barcelona 1929 · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.23512%2C1.81204&amp;travelmode=driving&amp;origin=41.3752738%2C2.1476619">Occidental Barcelona 1929 → Sitges · 자동차</a></li></ol></details>
-<script type="application/json">{"center":[41.62,2.35],"zoom":9,"places":[{"id":"hertz-barcelona-sants","name":"Hertz Sants","city":"Barcelona","type":"rental","lat":41.3806859,"lng":2.1410595,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Hertz%2C+Carrer+de+Viriat+45%2C+Barcelona","address":"Carrer de Viriat, 45, Sants-Montjuïc, 08014 Barcelona, Spain (Sants 역 입구 옆)","private":false,"approximate":false,"optional":false,"status":"confirmed","coordinatesVerified":"OSM Nominatim car_rental POI, 2026-08-10"},{"id":"barcelona-stay","name":"Occidental Barcelona 1929","city":"Barcelona","type":"accommodation","lat":41.3752738,"lng":2.1476619,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Carrer+de+la+Creu+Coberta+20-22%2C+08014+Barcelona","address":"Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]},{"id":"sitges","name":"Sitges","city":"Barcelona","type":"attraction","lat":41.23512,"lng":1.81204,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Sitges","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Barcelona_Execution_Map_v0.2.geojson"]},{"id":"girona-stay-private","name":"바스카라의 B\u0026B (확정 숙소)","city":"Girona · Empordà","type":"accommodation","lat":42.16036,"lng":2.90964,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pla%C3%A7a%20de%20l%27Esgl%C3%A9sia%206%2C%2017483%20B%C3%A0scara","address":"Plaça de l'Església, 6, 17483 Bàscara","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Girona_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-01","city":"Barcelona · Sitges · Bàscara","title":"Sants 렌터카 인수 → Sitges → Bàscara 체크인","center":[41.62,2.35],"zoom":9,"defaultMode":"driving","stops":[{"placeId":"hertz-barcelona-sants","order":0,"plannedTime":"07:00 렌터카 인수","note":"Hertz 확정 L671E2E0288 · Sants 역 입구 옆 Carrer de Viriat 45. 인수 후 숙소로 복귀해 짐 적재."},{"placeId":"barcelona-stay","order":1,"plannedTime":"복귀·짐 적재 · 체크아웃 ~12:00","note":"Occidental Barcelona 1929 — 인수 후 복귀해 짐을 싣고 출발."},{"placeId":"sitges","order":2,"plannedTime":"낮","note":"박물관 여름 폐관시간 전날 확인. 체크인 창에 따라 Girona 관광 축소·삭제."},{"placeId":"girona-stay-private","order":3,"plannedTime":"체크인","note":"Airbnb 체크인 — 조건 재확인."}],"segments":[{"from":"hertz-barcelona-sants","to":"barcelona-stay","mode":"driving"},{"from":"barcelona-stay","to":"sitges","mode":"driving"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 4</span>
+    <span class="day-date">9/1 화</span></div>
+  <h1>Barcelona → Sitges → Bàscara</h1>
+  <p class="hero-dek">렌터카 인수와 지중해 연안 이동</p>
+  <div class="metarow"><span class="badge badge-caution">거점 이동</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 4</span><span>약 198km · 차량 경로</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-01">
+  <span class="label">NEXT</span>
+  <div class="action-when">08:10</div>
+  <div class="action-what"><a href="../places/barcelona-sants.html">Barcelona Sants</a></div>
+  <p class="card-dek">Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록. **프랑스 주행(9/2 콜리우르)을 반드시 신고한다**</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-04-barcelona-sitges-bascara.webp" aria-label="Day 4 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-04-barcelona-sitges-bascara-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 4 Bàscara 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-04-barcelona-sitges-bascara.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-03.html">← Day 3</a><span></span><a href="day-05.html">Day 5 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>06:50 Barcelona 체크아웃</strong> — 숙소 후보 확정 필요</li><li><strong>08:10 Barcelona Sants</strong> — 예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요</li><li><strong>10:20 Can Robert · Sitges</strong> — 주차 운영 재확인</li><li><strong>11:05 Cau Ferrat + Maricel</strong> — 화요일 운영·통합권 재확인</li><li><strong>13:00 La Zorra</strong> — 13:00 예약</li><li><strong>17:30 Bàscara 체크인</strong> — 체크인 창 재확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="06:50" data-end="08:10">
+  <div class="tl-time">06:50</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Barcelona 체크아웃 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Sants까지 도보권 — 짐 끌고 10분</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>숙소 후보 확정 필요</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.8km</span></div>
+</li><li class="tl-item" data-start="08:10" data-end="09:35">
+  <div class="tl-time">08:10</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> <a href="../places/barcelona-sants.html">Barcelona Sants</a> <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록. **프랑스 주행(9/2 콜리우르)을 반드시 신고한다**</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 45분 · 약 40km · C-32</span></div>
+</li><li class="tl-item" data-start="10:20" data-end="10:40">
+  <div class="tl-time">10:20</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> Can Robert · Sitges <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">중심 진입을 피하고 주차 후 구시가지로 이동</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>주차 운영 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 25분 · 약 1.1km</span></div>
+</li><li class="tl-item" data-start="11:05" data-end="12:20">
+  <div class="tl-time">11:05</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-book" aria-hidden="true"></b> Cau Ferrat + Maricel <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">모더니즘 컬렉션과 Rusiñol의 집·작업실</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>화요일 운영·통합권 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 약 0.7km</span></div>
+</li><li class="tl-item" data-start="13:00" data-end="14:25">
+  <div class="tl-time">13:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-food" aria-hidden="true"></b> La Zorra <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">13:00 점심 후 15:15 출발 시각 보호</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>13:00 예약</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 2시간 15분 계획 · 약 158km · C-32 → AP-7</span></div>
+</li><li class="tl-item" data-start="17:30" data-end="19:30">
+  <div class="tl-time">17:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Bàscara 체크인 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">숙소 진입·주차 지침을 우선하고 저녁은 반경 10분</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>체크인 창 재확인</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 인수 11:00 이후면 박물관을 빼고 점심+해변 전망 90분만 진행</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>체크아웃 창 09:30–12:00 vs 07:00 인수 가능 — 인수·짐 적재·체크아웃 순서 협의</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Sitges 주차와 식당 예약</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Bàscara 체크인 창 재확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Hertz 크로스보더: 프랑스 주행 신고 필수 — 미신고 시 보험 전체 무효(스페인 약관, 2026-08-14 확인). 요금·위약금 액수는 계약서 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>ZBE(저배출구역)·국경 운전 조건 확인</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[41.72,2.34],"zoom":8,"pins":[{"id":"barcelona-checkout","name":"Barcelona 체크아웃","lat":41.3752738,"lng":2.1476619,"cat":"hotel","time":"06:50","place":null},{"id":"barcelona-sants","name":"Barcelona Sants","lat":41.37914,"lng":2.14005,"cat":"transport","time":"08:10","place":"barcelona-sants"},{"id":"can-robert","name":"Can Robert · Sitges","lat":41.2403,"lng":1.8086,"cat":"transport","time":"10:20","place":null},{"id":"cau-ferrat-maricel","name":"Cau Ferrat + Maricel","lat":41.23572,"lng":1.81145,"cat":"culture","time":"11:05","place":null},{"id":"la-zorra","name":"La Zorra","lat":41.2352,"lng":1.8069,"cat":"food","time":"13:00","place":null},{"id":"bascara-stay","name":"Bàscara 체크인","lat":42.16036,"lng":2.90964,"cat":"hotel","time":"17:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 4 동선 · 6곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="barcelona-checkout"><span class="meta">06:50</span>Barcelona 체크아웃<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.3752738,2.1476619"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Barcelona 체크아웃 </span>열기</a></li><li data-pin="barcelona-sants"><span class="meta">08:10</span><a href="../places/barcelona-sants.html">Barcelona Sants</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.37914,2.14005"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Barcelona Sants </span>열기</a></li><li data-pin="can-robert"><span class="meta">10:20</span>Can Robert · Sitges<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.2403,1.8086"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Can Robert · Sitges </span>열기</a></li><li data-pin="cau-ferrat-maricel"><span class="meta">11:05</span>Cau Ferrat + Maricel<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.23572,1.81145"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Cau Ferrat + Maricel </span>열기</a></li><li data-pin="la-zorra"><span class="meta">13:00</span>La Zorra<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=41.2352,1.8069"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">La Zorra </span>열기</a></li><li data-pin="bascara-stay"><span class="meta">17:30</span>Bàscara 체크인<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=42.16036,2.90964"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Bàscara 체크인 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>택시</li><li>렌터카 · C-32/AP-7</li><li>Sitges 도보</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>La Zorra · arroz a banda</li><li>이동용 물 2L·간식</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>09:00 렌터카 인수</li><li>13:00 점심 예약</li><li>15:15 Sitges 출발 고정</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-03.html">← Day 3</a><a class="btn btn-secondary" href="../daily/day-05.html">Day 5 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

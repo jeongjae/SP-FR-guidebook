@@ -2,54 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>진행 대시보드 — 2026 유럽 여행 가이드북</title>
-<link rel="manifest" href="../manifest.webmanifest">
-<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
-<link rel="stylesheet" href="../assets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url=../prepare/index.html">
+<link rel="canonical" href="../prepare/index.html">
+<title>준비로 이동</title>
 </head>
-<body data-rel="..">
-<header class="topbar">
-  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../tracker/index.html">트래커</a><span class="tb-sep" aria-hidden="true">›</span><b>진행 대시보드</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
-</header>
-
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
-  </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-<p class="meta">TP_Europe_Travel_Master_Tracker_v1.2.xlsx 기준</p>
-
-<h1>진행 대시보드</h1><nav class="tabs"><a href="reservations.html">예약 현황</a><a href="transport.html">이동·교통</a><a href="accommodation.html">숙소 후보·확정</a><a href="dashboard.html" class="active">진행 대시보드</a><a href="locks.html">예약·운영 잠금</a></nav><p class="meta">TP Europe Travel Master Tracker v1.2 — 2026-08-04 Itinerary Lock · 예약 수치는 Reservations 실집계</p><h2 class="ic ic-check">예약, 지금 어디까지 잠겼나</h2><div class="kpis"><a class="kpi kpi-active" href="reservations.html" data-kpi-active="27"><b>27<small>건</small></b><span class="kl">유효 예약</span><span class="ks">취소 3건 별도</span></a><a class="kpi kpi-undone" href="reservations.html" data-kpi-undone="20"><b>20<small>건</small></b><span class="kl">미확정</span><span class="ks">미조사 9 · 재확인 10 · 대기 1</span></a><a class="kpi kpi-done" href="reservations.html" data-kpi-done="7"><b>7<small>건</small></b><span class="kl">예약완료</span><span class="ks">유효의 26%</span></a><a class="kpi kpi-p0" href="reservations.html" data-kpi-p0="7"><b>7<small>/15</small></b><span class="kl">P0 완료</span><span class="ks">숙소 확정 3/8</span></a></div><h2 class="ic ic-tip">P0 다음 행동</h2><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>Nice allocation</span></h3><p class="rz-where">9/4~9/9 · 5박</p></article><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>Aix allocation</span></h3><p class="rz-where">9/9~9/13 · 4박</p></article><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>9/8 schedule</span></h3><p class="rz-where">Nice 생활·회복일</p></article><article class="rz-card rz-recheck"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-recheck">재확인</span></span></div><h3 class="rz-title"><span>Luberon allocation</span></h3><p class="rz-where">9/13~9/16 · 3박 · 예약 변경 필요</p></article><article class="rz-card rz-done"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-done">완료</span></span></div><h3 class="rz-title"><span>Marseille / Arles</span></h3><p class="rz-where">9/11·9/19 기본 일정</p></article><article class="rz-card rz-recheck"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-recheck">재확인</span></span></div><h3 class="rz-title"><span>Paris allocation</span></h3><p class="rz-where">9/24~10/10 · 16박 · 예약 변경 필요</p></article><article class="rz-card rz-blocked"><div class="rz-head"><span class="rz-tags"><span class="rz-badge rz-b-blocked">차단</span></span></div><h3 class="rz-title"><span>Phase 8 actual bookings</span></h3><p class="rz-where">변경 예약번호·주소·금액 미입력</p></article><h2 class="ic ic-gauge">완성도</h2><div class="pg"><span class="pgl">전체</span><span class="pgbar"><i style="width:98%"></i></span><b>98%</b></div><div class="pg"><span class="pgl">지역별 콘텐츠</span><span class="pgbar"><i style="width:93%"></i></span><b>93%</b></div><div class="pg"><span class="pgl">일정·교통 실행성</span><span class="pgbar"><i style="width:90%"></i></span><b>90%</b></div><div class="pg"><span class="pgl">예약·여행 준비</span><span class="pgbar"><i style="width:72%"></i></span><b>72%</b></div><div class="pg"><span class="pgl">지도·사진·도식</span><span class="pgbar"><i style="width:35%"></i></span><b>35%</b></div><div class="pg"><span class="pgl">Word/PDF 출판</span><span class="pgbar"><i style="width:20%"></i></span><b>20%</b></div>
-</main>
-<footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
-</footer>
-<nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
-</nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
-<script src="../assets/pwa.js" defer></script>
+<body>
+<p><a href="../prepare/index.html">준비로 이동합니다</a></p>
+<script>location.replace("../prepare/index.html");</script>
 </body>
 </html>

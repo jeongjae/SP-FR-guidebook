@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6EF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>오프라인 준비 — 유럽 43일 가이드북</title>
+<meta name="description" content="가이드북 전체를 기기에 저장한다">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="./index.html">홈</a><span class="sep" aria-hidden="true">›</span><b>오프라인 준비</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>오프라인 준비</h1>
+<p class="hero-dek">가이드북 전체를 기기에 저장한다. 연결이 없어도 일정 ·
+장소 · 지도 목록이 열린다.</p></header>
+
+<div class="card" id="pwa-panel"><div class="card-body stack">
+  <dl class="pwa-facts">
+    <dt>저장 상태</dt><dd id="pwa-status">확인 중</dd>
+    <dt>설치 형태</dt><dd id="pwa-install-mode">확인 중</dd>
+    <dt>저장 용량</dt><dd id="pwa-storage">—</dd>
+    <dt>버전</dt><dd id="pwa-version">—</dd>
+  </dl>
+  <p class="meta" id="pwa-detail"></p>
+  <div class="btn-row">
+    <button class="btn btn-primary" id="pwa-save" type="button">
+      <b class="ic ic-only ic-download" aria-hidden="true"></b>전체 저장</button>
+    <button class="btn btn-secondary" id="pwa-clear" type="button">
+      <b class="ic ic-only ic-close" aria-hidden="true"></b>저장 비우기</button>
+  </div>
+  <progress class="pwa-progress" id="pwa-progress" value="0" max="1"
+    aria-label="저장 진행률"></progress>
+  <div id="pwa-update-box" hidden>
+    <div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>새 버전이 있다. <button class="btn btn-quiet" id="pwa-activate-update" type="button">지금 적용</button></div></div>
+  </div>
+</div></div>
+
+<noscript><p class="meta">저장 기능은 자바스크립트가 필요하다.
+연결이 되는 곳에서 이 화면을 다시 열어라.</p></noscript>
+
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>출발 전과 장거리 이동 전에 다시 확인한다.</strong> iOS 는 저장 공간이 부족하거나 앱을 오래 쓰지 않으면 웹 데이터를 정리할 수 있다.</div></div>
+
+<div class="prose">
+<h2>담기는 것</h2>
+<ul>
+  <li>43일 일정과 하루별 시간표 · 이동 · 예약</li>
+  <li>장소 페이지 전체와 사진</li>
+  <li>지역 가이드 · 지도 목록과 좌표 링크</li>
+  <li>준비 화면과 긴급 연락처</li>
+</ul>
+<p>지도 타일은 담기지 않는다. 좌표와 Google Maps 링크는 저장되므로
+연결이 되는 곳에서 열 수 있다.</p>
+</div>
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="./about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="./index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="./schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="./guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="./map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="./prepare/index.html" data-tab="prepare" aria-current="page"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="./assets/search-index.js" defer></script>
+<script src="./assets/app.js" defer></script>
+<script src="./assets/pwa.js" defer></script>
+</body>
+</html>

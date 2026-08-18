@@ -3,75 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Bourse de Commerce — Pinault Collection — 2026 유럽 여행 가이드북</title>
+<title>Bourse de Commerce — Pinault Collection — 유럽 43일 가이드북</title>
+<meta name="description" content="옛 곡물거래소를 안도 다다오가 개조한 현대미술관이다">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="paris">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/paris/index.html">Paris</a><span class="tb-sep" aria-hidden="true">›</span><b>Bourse de Commerce — Pinault Collection</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/paris.html">Paris</a><span class="sep" aria-hidden="true">›</span><b>Bourse de Commerce — Pinault Collection</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Bourse de Commerce — Pinault Collection</h1><figure class="guide-photo guide-photo--content" data-photo-id="paris-bourse-commerce-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/paris-bourse-commerce-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/paris-bourse-commerce-01-content-1280.webp" alt="부르스 드 코메르스의 곡면 파사드와 페디먼트 조각, 정문 앞 사람들"
-      width="1280" height="948" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>옛 곡물거래소 건물인 부르스 드 코메르스(1889) — 원형 로톤다의 곡면 파사드가 특징이다.</span><span class="media-credit">Photo: Chabe01 · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#paris-bourse-commerce-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/paris/index.html">Paris</a></td></tr><tr><th>등급</th><td><span class="grade grade-optional">Optional</span></td></tr><tr><th>언제</th><td><span class="pl-basis">일정에 배정된 날을 시간표에서 찾지 못했다</span></td></tr><tr><th>상세</th><td><a href="../chapters/paris/places.html#bourse-de-commerce-pinault-collection-optional">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/paris.html">Paris 실행지도</a> · <span class="pl-basis">핀 이름 Bourse de Commerce</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://www.pinaultcollection.com/en/boursedecommerce">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Bourse_de_Commerce">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Bourse+de+Commerce">Google Maps</a><a class="ref ic ic-map" href="../maps/paris.html">Paris 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><p><strong>Day 40 (10/7 수)</strong></p>
-<p>옛 곡물거래소를 안도 다다오가 개조한 현대미술관이다 <span class="badge badge-unverified">건축가 확인 권장</span>.</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/hero/paris-bourse-commerce-01-hero-1920.webp" srcset="../assets/images/hero/paris-bourse-commerce-01-hero-800.webp 800w, ../assets/images/hero/paris-bourse-commerce-01-hero-1280.webp 1280w, ../assets/images/hero/paris-bourse-commerce-01-hero-1920.webp 1920w" sizes="100vw" alt="부르스 드 코메르스의 곡면 파사드와 페디먼트 조각, 정문 앞 사람들" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Paris</span></div>
+    <h1>Bourse de Commerce — Pinault Collection</h1>
+    <div class="metarow"><span class="badge badge-neutral">선택</span></div>
+    <p class="hero-dek">옛 곡물거래소를 안도 다다오가 개조한 현대미술관이다</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Bourse_de_Commerce" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Bourse_Commerce_-_Paris_I_(FR75)_-_2021-06-05_-_1.jpg" rel="nofollow noopener">Chabe01</a> · CC BY-SA 4.0</p>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>월–일 11:00–19:00 · 금요일 21:00까지 · 매월 첫 토요일 17:00–21:00 무료 야간 <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr><tr><th scope="row">휴무</th><td>화요일 (+5/1) <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr><tr><th scope="row">요금</th><td>€15 <br><span class="meta">2026-08-16 확정 원장 (공식 소스 검증 완료)</span></td></tr><tr><th scope="row">메모</th><td>2026/8/26–10/5 전시 준비 기간 · &#x27;Remember Me&#x27; 10/7 개막 → 방문 가능일은 10/7·10/8 <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr></tbody></table></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><p><strong>Day 40 (10/7 수)</strong></p>
+<p>옛 곡물거래소를 안도 다다오가 개조한 현대미술관이다 (건축가 확인 권장).</p>
 <p>이 날을 <strong>"Bourse de Commerce 개막과 Montorgueil — 현대 파리의 선택일"</strong> 로 잡고 <code>대체 규칙</code>을 두었다.</p>
-<p>⚠ <strong>'10/7 개막'의 내용을 확인하지 못했다.</strong> 2026년 가을 전시 프로그램이 <span class="badge badge-unverified">확인 필수</span> 상태다. 에만 근거가 있다.</p>
+<p>⚠ <strong>'10/7 개막'의 내용을 확인하지 못했다.</strong> 2026년 가을 전시 프로그램이 (확인 필수) 상태다. 에만 근거가 있다.</p>
 <blockquote>
 <p><strong>확인 결과에 따라 판단</strong>
 새 전시가 실제로 10/7 개막이면 <strong>개막일 혼잡</strong>을 감안한다. 아니면 <strong>Day 40 전체를 Montorgueil 중심으로</strong> 재구성한다.</p>
 </blockquote>
 <p>이 여행에는 현대미술이 거의 없다. 라스코부터 19세기까지를 27일간 봤다. <strong>현대를 한 번 넣는 것이 균형에 맞다.</strong></p>
-<p><strong>10/7 이후</strong></p>
 <ul>
 <li>8/26–10/5 전시교체로 휴관 후 10/7 <strong>Remember Me</strong> 개막.</li>
 <li>원형건축과 현대사진·기억이라는 테마가 결합.</li>
 <li>개막일 혼잡이 크면 10/8 오전으로 이동. <strong>10/9는 출국일이라 쓸 수 없다.</strong></li>
-</ul>
+</ul></div>
+<div class="sec-head"><h2>Paris 의 다른 장소</h2><a href="../guide/paris.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp 480w" sizes="84px" alt="BnF 리슐리외관 살 오발 타원형 열람실 내부" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bnf-richelieu.html">BnF Richelieu</a></h3>
+    <p class="card-dek">프랑스 국립도서관의 옛 본관이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp 480w" sizes="84px" alt="파리 퐁피두 센터의 외부 배관·에스컬레이터 파사드와 광장" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/centre-pompidou.html">Centre Pompidou</a></h3>
+    <p class="card-dek">25.6 Centre Pompidou 대체로 두었다.</p>
+    <div class="metarow"><span class="badge badge-neutral">비추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-giverny-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-giverny-01-thumb-480.webp 480w" sizes="84px" alt="지베르니 모네의 물의 정원, 수련이 핀 연못과 수양버들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/giverny.html">Giverny</a></h3>
+    <p class="card-dek">모네가 정원을 만들고 수련을 그린 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-grand-palais-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-grand-palais-01-thumb-480.webp 480w" sizes="84px" alt="그랑 팔레 유리 천장 아래 강철 아치가 이어지는 대전시장 내부" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/grand-palais.html">Grand Palais</a></h3>
+    <p class="card-dek">폴 세잔이 한 세기가 넘는 예술 창작에 끼친 예외적 영향을 탐구하는 전시다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp 480w" sizes="84px" alt="비에 젖은 무프타르 거리의 자갈길과 카페, 상점 앞을 걷는 행인들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/latin-quarter.html">Latin Quarter</a></h3>
+    <p class="card-dek">&#x27;라틴&#x27;은 학생들이 라틴어로 말하던 동네라는 뜻이다</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-marais-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-marais-01-thumb-480.webp 480w" sizes="84px" alt="마레 지구 로지에 거리의 자갈길과 상점들, 걸어가는 사람들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/le-marais.html">Le Marais</a></h3>
+    <p class="card-dek">Day 30 (9/27 일) · Day 35 (10/2 금)</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

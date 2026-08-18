@@ -3,53 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Fourvière — 2026 유럽 여행 가이드북</title>
+<title>Fourvière — 유럽 43일 가이드북</title>
+<meta name="description" content="리옹의 로마 시대 이름은 루그두눔(Lugdunum) 이고, 갈리아 로마의 수도였다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="lyon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/lyon/index.html">Lyon</a><span class="tb-sep" aria-hidden="true">›</span><b>Fourvière</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/lyon.html">Lyon</a><span class="sep" aria-hidden="true">›</span><b>Fourvière</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Fourvière</h1><figure class="guide-photo guide-photo--content" data-photo-id="lyon-fourviere-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/lyon-fourviere-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/lyon-fourviere-01-content-1280.webp" alt="언덕 위 네 개의 탑이 있는 푸르비에르 노트르담 대성당"
-      width="1280" height="795" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>푸르비에르 언덕 위에 선 노트르담 대성당 — 네 모서리의 탑과 금색 성모상이 보인다.</span><span class="media-credit">Photo: Clément Bardot · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#lyon-fourviere-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/lyon/index.html">Lyon</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><a class="pl-day" href="../daily/day-23.html">Day 23 · 9/20</a><a class="pl-day" href="../daily/day-24.html">Day 24 · 9/21</a><span class="pl-basis">시간표 기준</span></td></tr><tr><th>상세</th><td><a href="../chapters/lyon/places.html#fourvière-must">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/lyon.html">Lyon 실행지도</a> · <span class="pl-basis">핀 이름 Fourvière</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.visiterlyon.com/">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Basilica_of_Notre-Dame_de_Fourvi%C3%A8re">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Fourvière">Google Maps</a><a class="ref ic ic-map" href="../maps/lyon.html">Lyon 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><blockquote>
-<p><strong>요금</strong> 무료 (2차 출처) · <strong>운영</strong> 바실리카 7:00~20:00(일요일 21:00), 크립트 8:30~18:30, 정원 6:30~22:30. Lugdunum 박물관 화~금 11:00~18:00, 토·일 10:00~18:00. 로마극장 5/2~9/30 7:00~21:00 · <strong>휴관</strong> 바실리카·로마극장·전망대 연중무휴
-<strong>예약</strong> 바실리카 개인 방문 무료·예약 불필요, 가이드 투어(지붕·보물관)만 reservation.fourviere.org 예약. Lugdunum 개인 방문 예약 불필요</p>
-<p><strong>⚠ Lugdunum 박물관은 9/21(월)에 못 들어간다</strong>
-언덕 자체(바실리카·로마극장·전망대)는 연중무휴라 9/21 방문은 그대로 유지한다.
-박물관만 월요일 휴관 (화–금 11:00–18:00 · 토·일 10:00–18:00) 이다. 보려면 <strong>9/22(화)·9/23(수) 오후</strong> —
-운영 화–금 11:00–18:00 · 토·일 10:00–18:00. <strong>선택 항목이고 다른 날에 새로 배정하지 않았다.</strong></p>
-</blockquote>
-<h2 id="무엇인가-로마-도시가-시작된-자리">무엇인가 — 로마 도시가 시작된 자리</h2>
-<p>리옹의 로마 시대 이름은 <strong>루그두눔(Lugdunum)</strong> 이고, 갈리아 로마의 수도였다.</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/hero/lyon-fourviere-01-hero-1920.webp" srcset="../assets/images/hero/lyon-fourviere-01-hero-800.webp 800w, ../assets/images/hero/lyon-fourviere-01-hero-1280.webp 1280w, ../assets/images/hero/lyon-fourviere-01-hero-1920.webp 1920w" sizes="100vw" alt="언덕 위 네 개의 탑이 있는 푸르비에르 노트르담 대성당" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Lyon</span></div>
+    <h1>Fourvière</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span><a href="../daily/day-24.html">Day 24 · 9/21 월</a></div>
+    <p class="hero-dek">리옹의 로마 시대 이름은 루그두눔(Lugdunum) 이고, 갈리아 로마의 수도였다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-primary" rel="nofollow noopener" href="https://www.google.com/maps/dir/?api=1&destination=45.76227,4.82259"><b class="ic ic-only ic-map" aria-hidden="true"></b>길찾기</a><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Basilica_of_Notre-Dame_de_Fourvière" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Notre_Dame_de_Fourvi%C3%A8re.jpg" rel="nofollow noopener">Clément Bardot</a> · CC BY-SA 4.0</p>
+<div class="sec-head-rule"><span class="label">WHY GO</span><h2>왜 가는가</h2></div>
+<div class="prose"><p>리옹의 로마 시대 이름은 <strong>루그두눔(Lugdunum)</strong> 이고, 갈리아 로마의 수도였다.</p>
 <p>로마 제국이 무너지면서 초기 리옹 주민들은 수도교가 망가지기 시작하자 푸르비에르 언덕에서 손 강변으로 내려가야 했다.</p>
 <p><strong>즉 이 언덕은 도시가 시작된 곳이자 버려진 곳이다.</strong> 아래 구시가지는 그 결과로 생겼다.</p>
 <p><strong>리옹을 보기 전에 도시를 읽는 곳이다.</strong></p>
@@ -57,15 +53,16 @@
 <p><strong>먼저 올라가라</strong>
 Day 24의 동선이 <strong>위에서 아래로</strong> 설계돼 있다. 푸르비에르 → 구시가지 → 강. 이것은 관광 편의가 아니라 <strong>도시가 실제로 내려온 순서</strong>다.
 언덕에서 두 강과 반도, 그리고 맞은편 크루아루스 언덕을 한눈에 확인하고 내려가면 이후 사흘이 지도 위에서 정리된다.</p>
-</blockquote>
-<h2 id="볼-것">볼 것</h2>
+</blockquote></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>볼 것</h3>
 <ul>
 <li><strong>바실리카</strong> — 언덕 꼭대기의 대성당</li>
 <li><strong>로마 극장</strong> — 고대 원형극장 유적</li>
 <li><strong>갈로로마 문명 박물관</strong> — 전위적 건축과 엄선된 전시로 방문자를 놀라게 한다</li>
 <li><strong>전망대(에스플러네이드)</strong> — 여기서 보는 조망이 압도적이다</li>
 </ul>
-<p>⚠ 바실리카의 건축 연대·건축가, 푸니쿨라 운행, 박물관 운영은 조사가 부족하다 <span class="badge badge-unverified">조사 필요</span>.</p>
+<p>⚠ 바실리카의 건축 연대·건축가, 푸니쿨라 운행, 박물관 운영은 조사가 부족하다 (조사 필요).</p>
 <p>바실리카는 1870년 보불전쟁 때 "프로이센군이 리옹을 침공하지 않으면 성모에게 성당을
 바치겠다"는 서원의 결과물로, 1872–96년에 세워졌다. 흰 대리석의 비잔틴·로마네스크 절충
 양식이 화려하다 못해 과하다는 평과 함께 '거꾸로 선 코끼리'라는 별명을 얻었지만, <strong>모자이크로
@@ -73,24 +70,66 @@ Day 24의 동선이 <strong>위에서 아래로</strong> 설계돼 있다. 푸�
 기원이 이 언덕의 성모상 봉헌 행사라는 것도 리옹과 이 언덕의 관계를 말해 준다.</p>
 <p>로마 극장 두 곳(대극장·오데옹)은 무료로 개방된 야외 유적이라 바실리카와 묶어 한 동선이
 된다 — 기원전 15년경의 대극장은 여전히 여름 공연장으로 쓰인다.</p>
-<hr>
+<hr /></div>
+<div class="sec-head"><h2>Lyon 의 다른 장소</h2><a href="../guide/lyon.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/lyon-annecy-01-thumb-480.webp" srcset="../assets/images/thumbnails/lyon-annecy-01-thumb-480.webp 480w" sizes="84px" alt="티우 운하 한가운데 뱃머리처럼 선 팔레 드 릴과 꽃으로 장식된 강변" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/annecy.html">Annecy 구시가지</a></h3>
+    <p class="card-dek">티우 강이 먹이는 그림 같은 운하를 따라 걷는다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp" srcset="../assets/images/thumbnails/lyon-bellecour-01-thumb-480.webp 480w" sizes="84px" alt="리옹 벨쿠르 광장과 루이 14세 기마상" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bellecour.html">Bellecour</a></h3>
+    <p class="card-dek">유럽에서 가장 넓은 순수 보행 광장 중 하나이고, 리옹 지형의 원점이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">선택</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/lyon-croix-rousse-01-thumb-480.webp" srcset="../assets/images/thumbnails/lyon-croix-rousse-01-thumb-480.webp 480w" sizes="84px" alt="크루아루스 사면을 오르는 보행자 길 몽테 드 라 그랑드 코트" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/croix-rousse.html">Croix-Rousse</a></h3>
+    <p class="card-dek">언덕을 따라 줄지어 선 건물들이 놀라운 광경을 만든다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/lyon-halles-bocuse-01-thumb-480.webp" srcset="../assets/images/thumbnails/lyon-halles-bocuse-01-thumb-480.webp 480w" sizes="84px" alt="폴 보퀴즈 시장 안 치즈 가게 진열대" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/halles-de-lyon-paul-bocuse.html">Halles de Lyon Paul Bocuse</a></h3>
+    <p class="card-dek">1859년 리옹은 프레스킬 중심가 코르들리에 광장에 커다란 금속 구조물로 첫 실내 식료품 시장을 열었다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/lyon-parc-de-la-tete-d-or-01-thumb-480.webp" srcset="../assets/images/thumbnails/lyon-parc-de-la-tete-d-or-01-thumb-480.webp 480w" sizes="84px" alt="리옹 테트 도르 공원의 호수와 산책로" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/parc-de-la-tete-d-or.html">Parc de la Tête d&#x27;Or</a></h3>
+    <p class="card-dek">19세기에 조성된 117ha 도시공원으로, 파리의 불로뉴 숲과 같은 세대의 작품이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/lyon-vieux-01-thumb-480.webp" srcset="../assets/images/thumbnails/lyon-vieux-01-thumb-480.webp 480w" sizes="84px" alt="르네상스풍 건물이 늘어선 리옹 구시가지의 자갈길 골목" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/vieux-lyon.html">Vieux Lyon · 트라불</a></h3>
+    <p class="card-dek">트라불(traboule) 은 건물과 건물을 관통해 두 거리를 잇는 통로다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

@@ -3,48 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Calanques — 2026 유럽 여행 가이드북</title>
+<title>Calanques — 유럽 43일 가이드북</title>
+<meta name="description" content="칼랑크 국립공원은 유럽에서 유일하게 육지·해양·도시 근교를 아우르는 공원이다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="aix">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/aix/index.html">Aix</a><span class="tb-sep" aria-hidden="true">›</span><b>Calanques</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/aix.html">Aix-en-Provence</a><span class="sep" aria-hidden="true">›</span><b>Calanques</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Calanques</h1><figure class="guide-photo guide-photo--content" data-photo-id="aix-calanques-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/aix-calanques-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/aix-calanques-01-content-1280.webp" alt="석회암 절벽 사이로 에메랄드빛 바다가 들어온 앙보 칼랑크와 자갈 해변"
-      width="1280" height="853" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>석회암 절벽 사이로 바다가 깊숙이 들어온 칼랑크 국립공원의 앙보 칼랑크.</span><span class="media-credit">Photo: kallerna · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#aix-calanques-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/aix/index.html">Aix</a></td></tr><tr><th>등급</th><td><span class="grade grade-alternative">Backup</span></td></tr><tr><th>언제</th><td><span class="pl-basis">일정에 배정된 날을 시간표에서 찾지 못했다</span></td></tr><tr><th>상세</th><td><a href="../chapters/aix/places.html#calanques-backup">챕터 본문에서 보기</a></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://www.calanques-parcnational.fr/en/access-calanques-national-park">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Calanques_National_Park">위키백과</a><a class="ref ic ic-map" href="../maps/aix.html">Aix 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><p>석회암 절벽이 바다로 떨어지며 만든 좁은 만(칼랑크)들의 연쇄로, 2012년 국립공원이 됐다.</p>
-<h2 id="무엇인가">무엇인가</h2>
-<p>칼랑크 국립공원은 유럽에서 유일하게 육지·해양·도시 근교를 아우르는 공원이다. 보넬리수리, 큰 대왕조개, 포시도니아 해초 군락 같은 희귀종의 서식지다. 연간 200만 명 이상이 찾는다.</p>
-<p>앙보(En-Vau)·포르팽(Port-Pin)·포르미우(Port-Miou) 칼랑크는 접근이 규제된다.</p>
-<h2 id="두-가지-접근-방식">두 가지 접근 방식</h2>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/content/aix-calanques-01-content-1280.webp" srcset="../assets/images/content/aix-calanques-01-content-1280.webp 1280w" sizes="100vw" alt="석회암 절벽 사이로 에메랄드빛 바다가 들어온 앙보 칼랑크와 자갈 해변" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Aix-en-Provence</span></div>
+    <h1>Calanques</h1>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+    <p class="hero-dek">칼랑크 국립공원은 유럽에서 유일하게 육지·해양·도시 근교를 아우르는 공원이다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Calanques_National_Park" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:En-Vau_calanque_10.jpg" rel="nofollow noopener">kallerna</a> · CC BY-SA 4.0</p>
+<div class="sec-head-rule"><span class="label">WHY GO</span><h2>왜 가는가</h2></div>
+<div class="prose"><p>칼랑크 국립공원은 유럽에서 유일하게 육지·해양·도시 근교를 아우르는 공원이다. 보넬리수리, 큰 대왕조개, 포시도니아 해초 군락 같은 희귀종의 서식지다. 연간 200만 명 이상이 찾는다.</p>
+<p>앙보(En-Vau)·포르팽(Port-Pin)·포르미우(Port-Miou) 칼랑크는 접근이 규제된다.</p></div>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="prose"><h4>실용</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보트</td>
+<td>예약 권장 (운항사·소요·요금 재확인)</td>
+</tr>
+<tr>
+<td>준비</td>
+<td>모자·선글라스·자외선차단·물·미끄럽지 않은 신발</td>
+</tr>
+<tr>
+<td>해상</td>
+<td>300m 이내 속도 5노트 제한 (개인 보트 시)</td>
+</tr>
+<tr>
+<td>비상</td>
+<td>해상구조 CROSS MED — VHF 16번, +33 (0)4 94 61 16 16, 휴대전화에서 196</td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>두 가지 접근 방식</h3>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -64,70 +100,73 @@
 <td>포르미우 → 포르팽 → 앙보. 석회암 노면</td>
 <td><strong>금지될 수 있음</strong></td>
 </tr>
-<tr>
-<td>&gt; <strong>보트를 기본안으로 잡아라</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>&gt; 보트가 기본안이다. 도보는 규제·체력·더위 세 변수에 걸린다. 43일 중 14일차에 석회암 오르내리기는 부담이 크다.</td>
-<td></td>
-<td></td>
-</tr>
 </tbody>
 </table></div>
 <blockquote>
+<p><strong>보트를 기본안으로 잡아라</strong>
+보트가 기본안이다. 도보는 규제·체력·더위 세 변수에 걸린다. 43일 중 14일차에 석회암 오르내리기는 부담이 크다.</p>
 <p><strong>도보를 한다면</strong>
 포르미우까지만도 이 지형의 성격은 충분히 파악된다. 앙보까지는 왕복 3시간 이상이고 그늘이 거의 없다.</p>
-</blockquote>
-<h2 id="실용">실용</h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>값</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>보트</td>
-<td>예약 권장 <span class="badge badge-field-recheck">운항사·소요·요금 재확인</span></td>
-</tr>
-<tr>
-<td>준비</td>
-<td>모자·선글라스·자외선차단·물·미끄럽지 않은 신발</td>
-</tr>
-<tr>
-<td>해상</td>
-<td>300m 이내 속도 5노트 제한 (개인 보트 시)</td>
-</tr>
-<tr>
-<td>비상</td>
-<td>해상구조 CROSS MED — VHF 16번, +33 (0)4 94 61 16 16, 휴대전화에서 196</td>
-</tr>
-<tr>
-<td>---</td>
-<td></td>
-</tr>
-</tbody>
-</table></div>
+</blockquote></div>
+<div class="sec-head"><h2>Aix-en-Provence 의 다른 장소</h2><a href="../guide/aix.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-cezanne-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-cezanne-01-thumb-480.webp 480w" sizes="84px" alt="정원 수풀 너머로 보이는 세잔 아틀리에 건물과 대형 북향 채광창" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/atelier-des-lauves.html">Atelier des Lauves</a></h3>
+    <p class="card-dek">세잔의 마지막 작업실이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-bastide-du-jas-de-bouffan-01-thumb-480.webp 480w" sizes="84px" alt="세잔 가족의 바스티드 자스 드 부팡 건물" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bastide-du-jas-de-bouffan.html">Bastide du Jas de Bouffan</a></h3>
+    <p class="card-dek">세잔이 20세이던 1859년에 아버지가 자스 드 부팡을 사들였고, 60세이던 1899년에 팔았다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/carrieres-de-bibemus.html">Carrières de Bibémus</a></h3>
+    <p class="card-dek">세잔이 1890년대 후반 오두막을 빌려 두고 연작을 그린 옛 채석장이다</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-cassis-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-cassis-01-thumb-480.webp 480w" sizes="84px" alt="캅 카나유 절벽 위에서 내려다본 카시스 마을과 푸른 만" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/cassis.html">Cassis 항구</a></h3>
+    <p class="card-dek">마르세유의 소란이 부담스러운 날을 위한 완전 대체안이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-mirabeau-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-mirabeau-01-thumb-480.webp 480w" sizes="84px" alt="플라타너스 가로수가 터널처럼 덮은 미라보 거리와 멀리 보이는 분수" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/cours-mirabeau.html">Cours Mirabeau</a></h3>
+    <p class="card-dek">&#x27;그랑 쿠르&#x27;는 1649년에서 1651년 사이, 옛 성벽 자리에 조성됐다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/aix-grasse-01-thumb-480.webp" srcset="../assets/images/thumbnails/aix-grasse-01-thumb-480.webp 480w" sizes="84px" alt="그라스 구시가의 기와지붕 너머로 보이는 대성당 종탑과 탑" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/grasse.html">Grasse</a></h3>
+    <p class="card-dek">원래는 가죽 무두질 도시였고, 장갑의 냄새를 감추려고 향을 입힌 것이 향수 산업의 시작이라고 알려져 있다</p>
+    <div class="metarow"><span class="badge badge-neutral">선택</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

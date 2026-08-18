@@ -1,14 +1,14 @@
 {
   "id": "./",
-  "name": "2026 유럽 여행 가이드북",
+  "name": "유럽 43일 가이드북",
   "short_name": "유럽 가이드북",
-  "description": "Barcelona에서 Paris까지 43일 여행 현장 가이드북",
+  "description": "Barcelona 에서 Paris 까지 43일 여행 현장 가이드북",
   "lang": "ko",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#EFF1F6",
-  "theme_color": "#000091",
+  "background_color": "#FAF6EF",
+  "theme_color": "#FAF6EF",
   "icons": [
     {
       "src": "./assets/pwa/apple-touch-icon.png",

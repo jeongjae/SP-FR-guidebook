@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF6EF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>준비 — 유럽 43일 가이드북</title>
+<meta name="description" content="여행 준비 상태를 점검한다">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><b>준비</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>준비</h1>
+<p class="hero-dek">여행 준비 상태를 점검한다. 예약 27건 중
+  미확정 20건.</p></header>
+
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>확정되지 않은 예약이 있다.</strong> 확정 전 주소·시각을 믿고 이동하지 않는다. 확정된 것만 화면에 확정으로 표시된다.</div></div>
+
+<div class="sec-head-rule"><span class="label">TO LOCK</span><h2>미확정 20건</h2></div>
+<div class="grid grid-2"><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Nice 숙소 5박 — Palais ALZIRA</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Aix 숙소 4박</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">농가 숙소 3박</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">숙소 4박</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">숙소 15박</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">BCN 렌터카 — Sants 인수→El Prat 반납</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Lyon→Paris</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Sagrada Família</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Peralada — 본 일정에서 제외·실제 예약 없음</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Nice v1.2 핵심 미술관</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Cézanne 핵심 장소</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Palais des Papes 등</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Annecy 왕복</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">주요 미술관 시간지정권</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">3/6 Qatar Prix de l’Arc de Triomphe</span>
+    <span class="badge badge-caution">예약대기</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">5/6 Clos Montmartre 제한 내부방문</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">6/6 교회 콘서트 — 정확한 프로그램 확인 후</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">여행자보험</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">eSIM/통신</span>
+    <span class="badge badge-caution">미조사</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">파리→인천 국제선 OZ502</span>
+    <span class="badge badge-caution">재확인</span></div>
+</article></div>
+
+<div class="sec-head-rule"><span class="label">LOCKED</span><h2>확정 7건</h2></div>
+<div class="grid grid-2"><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">숙소 3박</span>
+    <span class="badge badge-ok">확정</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">바스카라의 B&amp;B · 3박</span>
+    <span class="badge badge-ok">확정</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Lagrange Aparthotel Lyon Lumière · 4박</span>
+    <span class="badge badge-ok">확정</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">BCN→NCE 항공 VY1521</span>
+    <span class="badge badge-ok">확정</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">니스 렌터카 — Nice역 인수→Avignon TGV역 반납</span>
+    <span class="badge badge-ok">확정</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">Avignon TGV→Lyon Part Dieu — INOUI 12176 1등석</span>
+    <span class="badge badge-ok">확정</span></div>
+</article><article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">인천→바르셀로나 국제선 OZ511</span>
+    <span class="badge badge-ok">확정</span></div>
+</article></div>
+
+<div class="btn-row"><a class="btn btn-secondary" href="emergency.html">
+  <b class="ic ic-only ic-alert" aria-hidden="true"></b>긴급 연락처</a></div>
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare" aria-current="page"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>

@@ -3,248 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 19 · 9/16 수 · Avignon — 2026 유럽 여행 가이드북</title>
+<title>Day 19 · Avignon — 유럽 43일 가이드북</title>
+<meta name="description" content="Luberon 체크아웃→Avignon 정착">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="avignon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/luberon/index.html">Luberon · Avignon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 19</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 19</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-18.html">← 앞</a><a href="day-20.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-14.html" title="Day 14">9/11</a><a href="day-15.html" title="Day 15">9/12</a><a href="day-16.html" title="Day 16">9/13</a><a href="day-17.html" title="Day 17">9/14</a><a href="day-18.html" title="Day 18">9/15</a><a href="day-19.html" class="here" title="Day 19">9/16</a><a href="day-20.html" title="Day 20">9/17</a><a href="day-21.html" title="Day 21">9/18</a><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-19.html" aria-current="page">Day 19</a><a href="../daily/day-20.html">Day 20</a><a href="../daily/day-21.html">Day 21</a><a href="../daily/day-22.html">Day 22</a><a href="../daily/day-23.html">Day 23</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 19 · 9/16 수</span></span><a href="../chapters/avignon/schedule.html"><b>지역</b><span>Avignon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 19 · 9/16 수 · Avignon</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="luberon-valley-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/luberon-valley-01-hero-800.webp 800w, ../assets/images/hero/luberon-valley-01-hero-1280.webp 1280w, ../assets/images/hero/luberon-valley-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/luberon-valley-01-hero-1280.webp" alt="뤼베롱 계곡 능선 위에 얹힌 보니외 마을을 멀리서 담은 넓은 풍경"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>능선 위 마을 보니외가 보이는 뤼베롱의 풍경.</span><span class="media-credit">Photo: Mathieu BROSSAIS · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#luberon-valley-01">사진 정보</a></span></figcaption>
-</figure>
-<p class="day-flags"><span class="badge badge-pending">거점 이동</span><span class="badge badge-rest">양쪽 챕터</span></p>
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>농가 체크아웃→Avignon 정착</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>10:30 체크아웃</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>이동·주차·체크인 90분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>1건 — 완료 0 · 미확정 1 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/avignon/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/avignon.html"><b class="ic ic-map" aria-hidden="true"></b>Avignon 실행지도</a><a href="../maps/luberon.html"><b class="ic ic-map" aria-hidden="true"></b>Luberon 실행지도</a></nav>
-</section>
-<section class="transfer-day" aria-label="이동일 체크리스트"><h2 class="ic ic-check">이동일 체크리스트</h2><ol class="td-steps"><li><b>출발·체크아웃</b><span>10:30 체크아웃</span></li><li><b>경유·핵심</b><span>농가 체크아웃→Avignon 정착</span></li><li><b>완충</b><span>이동·주차·체크인 90분</span></li><li><b>지연 시 생략</b><span>저녁 산책 연장</span></li><li><b>대체안</b><span>Avignon 직행·숙소 휴식</span></li><li><b>잠금·예약</b><span>농가 변경·Avignon 숙소</span></li></ol><p class="note">실행성 감사의 값을 이동 순서로 재배열한 것이다. 체크인 시각·주차 등 미확정 값은 확정 후 채운다.</p></section>
-<h2 class="ic ic-clock">시간표</h2><h3>Luberon</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>08:00–09:30</td>
-<td>느린 농가 아침</td>
-<td>테라스·정원에서 마지막 숙박 경험 보호</td>
-</tr>
-<tr>
-<td>09:30–10:45</td>
-<td>짐·세탁·냉장고·쓰레기 정리</td>
-<td>열쇠·보증금·대문·파손 확인</td>
-</tr>
-<tr>
-<td>10:45–11:15</td>
-<td>체크아웃</td>
-<td>변경된 3박 조건과 실제 시각 재확인</td>
-</tr>
-<tr>
-<td>11:15–12:30</td>
-<td>Avignon 이동</td>
-<td>차량 안 짐 비노출, 중간 관광 추가 금지</td>
-</tr>
-<tr>
-<td>12:30–13:30</td>
-<td>가벼운 점심</td>
-<td>주차가 준비되지 않으면 관리형 주차장 우선</td>
-</tr>
-<tr>
-<td>13:30–15:00</td>
-<td>숙소 주차·체크인</td>
-<td>성벽 진입안내·키·주방·세탁 확인</td>
-</tr>
-<tr>
-<td>15:30–17:00</td>
-<td>성벽 안 가벼운 산책</td>
-<td>Place de l’Horloge·론강 방향 중 한 축만</td>
-</tr>
-<tr>
-<td>17:00 이후</td>
-<td>휴식·장보기·가벼운 저녁</td>
-<td>본격 관광은 다음 날 시작</td>
-</tr>
-</tbody>
-</table></div><h3>Avignon</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>08:00–09:30</td>
-<td>느린 농가 아침</td>
-<td>마지막 테라스 시간, 중간 관광 추가 금지</td>
-</tr>
-<tr>
-<td>09:30–10:45</td>
-<td>짐·냉장식품·세탁·쓰레기 정리</td>
-<td>차량 짐 완전 은폐</td>
-</tr>
-<tr>
-<td>10:45–11:15</td>
-<td><strong>농가 체크아웃</strong></td>
-<td>3박 변경조건·열쇠·대문·보증금 확인</td>
-</tr>
-<tr>
-<td>11:15–12:30</td>
-<td>Avignon 이동</td>
-<td>숙소 주차지침을 먼저 확인하고 성벽 안 무작정 진입 금지</td>
-</tr>
-<tr>
-<td>12:30–13:30</td>
-<td>가벼운 점심</td>
-<td>체크인·주차 지연을 흡수하는 간단식</td>
-</tr>
-<tr>
-<td>14:00–15:00</td>
-<td>체크인·주차·짐 정리</td>
-<td>주차장 출입시간·차량 높이·재출차·21일 반납동선 확인</td>
-</tr>
-<tr>
-<td>15:15–16:15</td>
-<td>숙소 생활권 장보기</td>
-<td>물, 빵, 과일, 햄·치즈, 아침재료. 다음 날 Halles를 보므로 소량</td>
-</tr>
-<tr>
-<td>16:30–17:45</td>
-<td><strong>Porte Saint-Michel→Corps Saints→Rue des Teinturiers</strong> 산책</td>
-<td>첫날은 교황궁까지 가지 않고 남동부 생활권과 귀가로 파악</td>
-</tr>
-<tr>
-<td>18:00–19:00</td>
-<td>선택: 성벽·Rhône 방향 산책</td>
-<td>피로가 남으면 숙소 휴식으로 전환</td>
-</tr>
-<tr>
-<td>19:30–21:00</td>
-<td>첫 저녁</td>
-<td><strong>Les Cocottes Saint-Louis</strong> (호텔 공식 'every day' (상세 시간 미게시) (2차 출처)) — Fou de Fafa 는 수요일 라 9/16(수) 불가</td>
-</tr>
-<tr>
-<td>21:00 이후</td>
-<td>숙소 복귀</td>
-<td>9/18 Palais 티켓·날씨·주차상태 최종 확인</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-
-<h2 class="ic ic-note">이 날의 메모</h2><h3>Luberon</h3><h3 id="농가-체크아웃-아비뇽-이동과-정착">농가 체크아웃, 아비뇽 이동과 정착</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 체크아웃과 새 숙소 정착이 핵심이며 중간 마을은 넣지 않는다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<h3 id="선택-대안-삭제된-농가-전일에서-보존">선택 대안 — 삭제된 농가 전일에서 보존</h3>
-<p>농가에서 더 쉬고 싶으면 9/14의 Goult/Bonnieux 또는 9/15의 Ménerbes/Oppède를 삭제해 반나절을 되돌린다. 아래 두 능선마을 정보는 그때 한 곳만 고르는 자료다.</p><h3>Avignon</h3><h3 id="luberon-체크아웃-avignon-체크인과-첫-저녁">Luberon 체크아웃, Avignon 체크인과 첫 저녁</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 이동일이므로 체크인과 Avignon 첫 산책이면 충분하다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-꼭-해볼-것">오늘 꼭 해볼 것</h4>
-<ul>
-<li>농가의 마지막 아침을 지키고 체크아웃 상태를 사진으로 남기기</li>
-<li>아비뇽 성벽의 실제 규모와 출입문 위치를 도착일에 익히기</li>
-<li>Rue des Teinturiers 수로와 플라타너스 거리에서 축제도시의 일상적 얼굴 보기</li>
-</ul>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ol>
-<li>Rue des Teinturiers 연장산책</li>
-<li>Rhône 방향 산책</li>
-<li>외식은 숙소권 간단식으로 전환</li>
-</ol>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>짐 노출·체크인</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>저녁 산책 연장</dd></div><div class="ds-item"><dt>대체안</dt><dd>Avignon 직행·숙소 휴식</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>이동 중 간단식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>농가 변경·Avignon 숙소</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-19">
-<h2 id="daily-map-title-19" class="ic ic-map">Google 실행지도</h2>
-<p class="note">농가 체크아웃 → Avignon 정착</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button></nav>
-
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="luberon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="luberon-stay-candidate" aria-pressed="false"><strong>0. Domaine des Peyre</strong><span>숙소 · 10:30 체크아웃</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Domaine+des+Peyre">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.87088%2C5.12202&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="avignon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="avignon-stay-candidate" aria-pressed="false"><strong>1. La Terrasse du Clocher</strong><span>숙소 · 이동·주차·체크인 90분</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=La+Terrasse+du+Clocher">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=driving&amp;origin=43.87088%2C5.12202">Domaine des Peyre → La Terrasse du Clocher · 자동차</a></li></ol></details>
-<script type="application/json">{"center":[43.93,4.98],"zoom":11,"places":[{"id":"luberon-stay-candidate","name":"Domaine des Peyre","city":"Luberon","type":"accommodation","lat":43.87088,"lng":5.12202,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Domaine+des+Peyre","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"]},{"id":"avignon-stay-candidate","name":"La Terrasse du Clocher","city":"Avignon","type":"accommodation","lat":43.94993,"lng":4.81302,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=La+Terrasse+du+Clocher","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-16","city":"Luberon · Avignon","title":"농가 체크아웃 → Avignon 정착","center":[43.93,4.98],"zoom":11,"defaultMode":"driving","stops":[{"placeId":"luberon-stay-candidate","order":0,"plannedTime":"10:30 체크아웃","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"avignon-stay-candidate","order":1,"plannedTime":"이동·주차·체크인 90분","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."}],"segments":[{"from":"luberon-stay-candidate","to":"avignon-stay-candidate","mode":"driving"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 19</span>
+    <span class="day-date">9/16 수</span></div>
+  <h1>Avignon</h1>
+  <p class="hero-dek">Luberon 체크아웃→Avignon 정착</p>
+  <div class="metarow"><span class="badge badge-caution">거점 이동</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>약 30km · 차량 경로</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-16">
+  <span class="label">NEXT</span>
+  <div class="action-when">15:15</div>
+  <div class="action-what">숙소 생활권 장보기</div>
+  <p class="card-dek">다음 날 Halles를 보므로 소량만</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-19-avignon.webp" aria-label="Day 19 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-19-avignon-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 19 Avignon 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-19-avignon.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-18.html">← Day 18</a><span></span><a href="day-20.html">Day 20 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>08:00 농가 아침·체크아웃</strong> — 3박 변경조건·보증금 확인</li><li><strong>12:30 Avignon 점심·체크인·주차</strong> — Avignon 숙소 후보 확정 필요</li><li><strong>19:30 첫 저녁·복귀</strong> — 저녁 식당 예약</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="08:00" data-end="11:15">
+  <div class="tl-time">08:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 농가 아침·체크아웃 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">짐·냉장식품·세탁·쓰레기 정리, 10:45 체크아웃 — 중간 관광 추가 금지</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>3박 변경조건·보증금 확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 37분 · 30.1km</span></div>
+</li><li class="tl-item" data-start="12:30" data-end="15:00">
+  <div class="tl-time">12:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Avignon 점심·체크인·주차 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">숙소 주차지침 먼저 — 성벽 안 무작정 진입 금지, 재출차·21일 반납동선 확인</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>Avignon 숙소 후보 확정 필요</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.3km</span></div>
+</li><li class="tl-item" data-start="15:15" data-end="16:15">
+  <div class="tl-time">15:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> 숙소 생활권 장보기 </div>
+    <p class="tl-note">다음 날 Halles를 보므로 소량만</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 8분 · 0.6km</span></div>
+</li><li class="tl-item" data-start="16:30" data-end="17:45">
+  <div class="tl-time">16:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Teinturiers 산책 </div>
+    <p class="tl-note">Porte Saint-Michel→Corps Saints→Rue des Teinturiers — 남동부 생활권과 귀가로 파악</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 8분 · 0.6km</span></div>
+</li><li class="tl-item" data-start="19:30" data-end="21:00">
+  <div class="tl-time">19:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 첫 저녁·복귀 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Fou de Fafa 또는 Les Cocottes Saint-Louis, 이후 9/18 Palais 티켓·주차 최종 확인</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>저녁 식당 예약</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 피로 시 성벽·Rhône 산책 삭제, 숙소 휴식 전환</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Avignon 숙소 후보(La Terrasse du Clocher) 승인·주차지침 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>농가 체크아웃 조건 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>저녁 식당 예약</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.912,4.96],"zoom":11,"pins":[{"id":"farm-checkout","name":"농가 아침·체크아웃","lat":43.87088,"lng":5.12202,"cat":"hotel","time":"08:00","place":null},{"id":"avignon-checkin","name":"Avignon 점심·체크인·주차","lat":43.94993,"lng":4.81302,"cat":"hotel","time":"12:30","place":null},{"id":"grocery","name":"숙소 생활권 장보기","lat":43.94993,"lng":4.81302,"cat":"shopping","time":"15:15","place":null},{"id":"teinturiers","name":"Teinturiers 산책","lat":43.9451965,"lng":4.8129731,"cat":"sight","time":"16:30","place":null},{"id":"avignon-return","name":"첫 저녁·복귀","lat":43.94993,"lng":4.81302,"cat":"hotel","time":"19:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 19 동선 · 5곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="farm-checkout"><span class="meta">08:00</span>농가 아침·체크아웃<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.87088,5.12202"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">농가 아침·체크아웃 </span>열기</a></li><li data-pin="avignon-checkin"><span class="meta">12:30</span>Avignon 점심·체크인·주차<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Avignon 점심·체크인·주차 </span>열기</a></li><li data-pin="grocery"><span class="meta">15:15</span>숙소 생활권 장보기<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 생활권 장보기 </span>열기</a></li><li data-pin="teinturiers"><span class="meta">16:30</span>Teinturiers 산책<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.9451965,4.8129731"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Teinturiers 산책 </span>열기</a></li><li data-pin="avignon-return"><span class="meta">19:30</span>첫 저녁·복귀<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">첫 저녁·복귀 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>렌터카 (도착 후 주차 고정)</li><li>도보</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>가벼운 점심 (체크인 지연 흡수)</li><li>Fou de Fafa 또는 Les Cocottes Saint-Louis</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>첫날은 교황궁까지 가지 않는다</li><li>주차 출입시간·차량 높이 확인</li><li>L&#x27;Isle 목요시장은 기본안 제외</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-18.html">← Day 18</a><a class="btn btn-secondary" href="../daily/day-20.html">Day 20 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

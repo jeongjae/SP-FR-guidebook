@@ -3,67 +3,176 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Musée d&#x27;Orsay — 2026 유럽 여행 가이드북</title>
+<title>Musée d&#x27;Orsay — 유럽 43일 가이드북</title>
+<meta name="description" content="프랑스 국립미술관들이 인상파의 능동적 일원이자 기둥이던 메리 카사트에게 대규모 전시를 헌정한 적이 한 번도 없다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="paris">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/paris/index.html">Paris</a><span class="tb-sep" aria-hidden="true">›</span><b>Musée d&#x27;Orsay</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/paris.html">Paris</a><span class="sep" aria-hidden="true">›</span><b>Musée d&#x27;Orsay</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Musée d&#x27;Orsay</h1><figure class="guide-photo guide-photo--content" data-photo-id="paris-orsay-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/paris-orsay-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/paris-orsay-01-content-1280.webp" alt="센강 너머에서 본 오르세 미술관의 시계탑 파사드와 루아얄 다리"
-      width="1280" height="371" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>센강변의 오르세 미술관 — 1900년 기차역을 개조한 미술관이다.</span><span class="media-credit">Photo: DXR · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#paris-orsay-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/paris/index.html">Paris</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><a class="pl-day" href="../daily/day-32.html">Day 32 · 9/29</a><span class="pl-basis">시간표 기준</span></td></tr><tr><th>상세</th><td><a href="../chapters/paris/places.html#mary-cassatt-lindépendante-musée-dorsay-must">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/paris.html">Paris 실행지도</a> · <span class="pl-basis">핀 이름 Orsay</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://www.musee-orsay.fr/en/visit">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Orsay">Google Maps</a><a class="ref ic ic-map" href="../maps/paris.html">Paris 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><ul>
-<li>월요일 휴관, 목요일 야간개장.</li>
-<li>2026년 10월 6일 <strong>Mary Cassatt, L’indépendante</strong> 개막.</li>
-<li>9월부터 Bartholdi·자유의 여신 관련 전시도 진행.</li>
-<li>10/6 오후를 기본으로 하되 개막혼잡 시 이동.</li>
-</ul>
-<p><strong>관람 상한:</strong> 3시간 45분.</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/hero/paris-orsay-01-hero-1920.webp" srcset="../assets/images/hero/paris-orsay-01-hero-800.webp 800w, ../assets/images/hero/paris-orsay-01-hero-1280.webp 1280w, ../assets/images/hero/paris-orsay-01-hero-1920.webp 1920w" sizes="100vw" alt="센강 너머에서 본 오르세 미술관의 시계탑 파사드와 루아얄 다리" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Paris</span></div>
+    <h1>Musée d&#x27;Orsay</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    <p class="hero-dek">프랑스 국립미술관들이 인상파의 능동적 일원이자 기둥이던 메리 카사트에게 대규모 전시를 헌정한 적이 한 번도 없다.</p>
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Musée_d&#x27;Orsay" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Musee_d%27Orsay_and_Pont_Royal,_North-West_view_140402_1.jpg" rel="nofollow noopener">DXR</a> · CC BY-SA 3.0</p>
+<div class="sec-head-rule"><span class="label">WHY GO</span><h2>왜 가는가</h2></div>
+<div class="prose"><p>프랑스 국립미술관들이 인상파의 능동적 일원이자 기둥이던 메리 카사트에게 대규모 전시를 헌정한 적이 한 번도 없다. 오래 기다려 온 사건이다.</p>
+<p>1926년 사망 이후 프랑스에서 그에게 헌정된 대규모 국가 전시가 없었다. 오르세가 그 공백을 메운다.</p>
+<p>사후 100주년을 기려 런던 국립초상화미술관, 보스턴 미술관과 공동으로 기획했다.</p></div>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>화–일 09:30–18:00 · 목요일 21:45까지 (마지막 입장 21:00 · 전시실 21:15 폐쇄) <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr><tr><th scope="row">휴무</th><td>월요일 (+5/1·12/25) <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr><tr><th scope="row">요금</th><td>온라인 €16 / 현장 €14 <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr><tr><th scope="row">예약</th><td><span class="meta">musee-orsay.fr HTTP 403 (2회 시도)</span> <span class="badge badge-caution">재확인</span></td></tr><tr><th scope="row">메모</th><td>Mary Cassatt, L&#x27;indépendante 2026/10/6–2027/1/31 (프랑스 최초 대규모 카사트전) <br><span class="meta">2026-08-17 신규확정 v2.1 (복구본)</span></td></tr></tbody></table></div>
+<div class="prose"><h3>실용</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기간</td>
+<td>2026/10/6 – 2027/1/31</td>
+</tr>
+<tr>
+<td>휴관</td>
+<td><strong>월요일</strong></td>
+</tr>
+<tr>
+<td>예약</td>
+<td><strong>필수</strong> (개막일)</td>
+</tr>
+<tr>
+<td>체류</td>
+<td>60–90분 (개막일 기준)</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><h3>누구인가</h3>
+<p>드가의 친구였고, 하브마이어 부부 같은 미국 수집가들의 안목 있는 조언자였으며, 미국 여성 참정권의 열렬한 옹호자였다.</p>
+<p>80점이 넘는 회화·파스텔·판화가 그의 경력을 따라간다. 사적 컬렉션에서 온 좀처럼 전시되지 않은 작품들도 포함된다.</p>
+<p>미국 부르주아 출신인 그의 우아한 여성 초상, 혁명적 다정함이 배어 있는 모성 장면, 그리고 가족에게서 독립해 살 수 있게 해 준 사업 감각을 드러낸다. 마지막으로 더 평등한 사회를 옹호하는 작품들로 그의 페미니즘적 참여를 부각한다.</p>
+<p>인상파 그룹의 유일한 미국인 여성이었다.</p>
+<h3>⚠ 개막 당일이라는 것</h3>
+<p><strong>"개막일은 짧고 집중해서"</strong> 라는 규칙을 그대로 따른다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>위험</th>
+<th>대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>언론·초대객 혼재</td>
+<td><strong>사전 예약 필수</strong></td>
+</tr>
+<tr>
+<td>관람 동선 혼잡</td>
+<td>이른 시간 또는 늦은 시간</td>
+</tr>
+<tr>
+<td>오래 머물기 어려움</td>
+<td><strong>60–90분으로 계획.</strong> 완주하려 하지 않는다</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>개막일을 피할 수 없는가</strong>
+<strong>파리 체류가 10월 9일 낮에 끝난다.</strong> 10/9는 체크아웃과 공항뿐이므로 <strong>10/6·7·8 중 하루</strong>다. Day 40(10/7)은 Vendanges, Day 41(10/8)은 Trocadéro와 송별 저녁이다. <strong>10/6이 구조적으로 유일하다.</strong></p>
+</blockquote>
+<h3>함께 보는 것 — Bartholdi</h3>
+<p>'자유를 밝히는 자유의 여신' — 자유의 여신상 제작자를 기리는 몰입형 VR 체험이 2026년 9월 15일부터 2027년 1월 31일까지 열린다.</p>
+<p>같은 오르세다. 시간이 남으면.</p></div>
+<div class="sec-head"><h2>Paris 의 다른 장소</h2><a href="../guide/paris.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-bnf-richelieu-01-thumb-480.webp 480w" sizes="84px" alt="BnF 리슐리외관 살 오발 타원형 열람실 내부" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bnf-richelieu.html">BnF Richelieu</a></h3>
+    <p class="card-dek">프랑스 국립도서관의 옛 본관이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-bourse-commerce-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-bourse-commerce-01-thumb-480.webp 480w" sizes="84px" alt="부르스 드 코메르스의 곡면 파사드와 페디먼트 조각, 정문 앞 사람들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/bourse-de-commerce-pinault-collection.html">Bourse de Commerce — Pinault Collection</a></h3>
+    <p class="card-dek">옛 곡물거래소를 안도 다다오가 개조한 현대미술관이다</p>
+    <div class="metarow"><span class="badge badge-neutral">선택</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-centre-pompidou-01-thumb-480.webp 480w" sizes="84px" alt="파리 퐁피두 센터의 외부 배관·에스컬레이터 파사드와 광장" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/centre-pompidou.html">Centre Pompidou</a></h3>
+    <p class="card-dek">25.6 Centre Pompidou 대체로 두었다.</p>
+    <div class="metarow"><span class="badge badge-neutral">비추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-giverny-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-giverny-01-thumb-480.webp 480w" sizes="84px" alt="지베르니 모네의 물의 정원, 수련이 핀 연못과 수양버들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/giverny.html">Giverny</a></h3>
+    <p class="card-dek">모네가 정원을 만들고 수련을 그린 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-grand-palais-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-grand-palais-01-thumb-480.webp 480w" sizes="84px" alt="그랑 팔레 유리 천장 아래 강철 아치가 이어지는 대전시장 내부" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/grand-palais.html">Grand Palais</a></h3>
+    <p class="card-dek">폴 세잔이 한 세기가 넘는 예술 창작에 끼친 예외적 영향을 탐구하는 전시다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp" srcset="../assets/images/thumbnails/paris-latin-quarter-01-thumb-480.webp 480w" sizes="84px" alt="비에 젖은 무프타르 거리의 자갈길과 카페, 상점 앞을 걷는 행인들" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/latin-quarter.html">Latin Quarter</a></h3>
+    <p class="card-dek">&#x27;라틴&#x27;은 학생들이 라틴어로 말하던 동네라는 뜻이다</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

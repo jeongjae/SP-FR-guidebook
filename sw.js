@@ -1,12 +1,12 @@
 /* 2026 유럽 여행 가이드북 Service Worker — build.py가 버전을 삽입한다. */
 "use strict";
 
-const VERSION = "3bfcad90e1817948579bd3f581e3db3777e4a22bc2dba3a156f2593442c11653";
+const VERSION = "235233a34cda60b07d42a9025229382f7607c1e0d51e34ddbf290715522526fc";
 const CACHE_PREFIX = "sp-fr-guidebook-";
 const CORE_CACHE = CACHE_PREFIX + "core-" + VERSION;
 const FULL_CACHE = CACHE_PREFIX + "full-" + VERSION;
 const RUNTIME_CACHE = CACHE_PREFIX + "runtime-" + VERSION;
-const CORE_PATHS = ["index.html", "offline-fallback.html", "maps/offline.html", "chapters/itinerary.html", "daily/index.html", "regions.html", "tracker/index.html", "assets/style.css", "assets/data.js", "assets/nav.js", "assets/pwa.js", "assets/vendor/nanum/nanum-gothic-latin-400-normal.woff2", "assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2", "assets/vendor/nanum/nanum-gothic-latin-700-normal.woff2", "assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2", "manifest.webmanifest", "assets/pwa/apple-touch-icon.png", "assets/pwa/icon-192.png", "assets/pwa/icon-512.png", "assets/pwa/icon-maskable-512.png"];
+const CORE_PATHS = ["index.html", "offline.html", "offline-fallback.html", "schedule.html", "guide/index.html", "map/index.html", "prepare/index.html", "prepare/emergency.html", "assets/style.css", "assets/app.js", "assets/search-index.js", "assets/vendor/nanum/nanum-gothic-latin-400-normal.woff2", "assets/vendor/nanum/nanum-gothic-latin-700-normal.woff2", "assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2", "assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2"];
 const SCOPE = new URL("./", self.registration.scope);
 const COMPLETE_URL = new URL("__pwa_complete__", SCOPE).href;
 let downloadTask = null;

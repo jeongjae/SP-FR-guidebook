@@ -3,61 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Girona Cathedral — 2026 유럽 여행 가이드북</title>
+<title>Girona Cathedral — 유럽 43일 가이드북</title>
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="es">
+<body data-region="girona">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/girona/index.html">Girona</a><span class="tb-sep" aria-hidden="true">›</span><b>Girona Cathedral</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/girona.html">Girona · Empordà</a><span class="sep" aria-hidden="true">›</span><b>Girona Cathedral</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="es" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Girona Cathedral</h1><figure class="guide-photo guide-photo--content" data-photo-id="girona-cathedral-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/girona-cathedral-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/girona-cathedral-01-content-1280.webp" alt="긴 계단 위로 정면 파사드가 보이는 지로나 대성당"
-      width="1280" height="1600" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>구시가지의 계단축에서 바라본 지로나 대성당 외관.</span><span class="media-credit">Photo: Fernando · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#girona-cathedral-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/girona/index.html">Girona</a></td></tr><tr><th>등급</th><td><span class="grade grade-essential">Must</span></td></tr><tr><th>언제</th><td><span class="pl-basis">일정에 배정된 날을 시간표에서 찾지 못했다</span></td></tr><tr><th>상세</th><td><a href="../chapters/girona/places.html">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/girona.html">Girona 실행지도</a> · <span class="pl-basis">핀 이름 Girona Cathedral</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://www.girona.cat/turisme/eng/monuments_catedral.php">공식 사이트</a><a class="ref ic ic-link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Girona_Cathedral">위키백과</a><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Girona+Cathedral">Google Maps</a><a class="ref ic ic-map" href="../maps/girona.html">Girona 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><p class="note">상세 서술은 챕터 본문에 있다. 여기서 복제하지 않는다.</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/content/girona-cathedral-01-content-1280.webp" srcset="../assets/images/content/girona-cathedral-01-content-1280.webp 1280w" sizes="100vw" alt="긴 계단 위로 정면 파사드가 보이는 지로나 대성당" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Girona · Empordà</span></div>
+    <h1>Girona Cathedral</h1>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+    
+    <div class="btn-row" style="margin-top:1rem"><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Girona_Cathedral" rel="nofollow noopener"><b class="ic ic-only ic-book" aria-hidden="true"></b>위키백과</a></div>
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Girona_Cathedral_2020.jpg" rel="nofollow noopener">Fernando</a> · CC BY-SA 4.0</p>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td>고시즌 6/15–9/15 월–금 10:00–19:00 · 토 –20:00 · 일 12:00–19:00 <br><span class="meta">2026-08-17 신규 검증</span></td></tr><tr><th scope="row">휴무</th><td>연중무휴(정기 휴관 없음). 연중 휴관은 12/25·1/1·성금요일이며, 임시 전례 시간에는 문화관람 중단 <br><span class="meta">https://catedraldegirona.cat/en/girona-cathedral-cultural-visit/</span></td></tr><tr><th scope="row">요금</th><td>대성당+Sant Feliu €7.50 (오디오가이드 포함) <br><span class="meta">2026-08-17 신규 검증</span></td></tr><tr><th scope="row">예약</th><td>공식 티켓 사이트 tickets.catedraldegirona.cat 에서 온라인 구매 가능. 대성당+산 펠리우 통합권 7.5유로(오디오가이드 포함) <br><span class="meta">https://www.girona.cat/turisme/cat/monuments_catedral.php</span></td></tr></tbody></table></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><ul>
+<li>날짜: 2026-09-01</li>
+<li>목표입장: 18:00</li>
+<li>종료기준: 19:00</li>
+<li>통합권: Cathedral+Sant Feliu €7.50 / 미술관 포함 €12 (2026-08-14 확인)</li>
+<li>이번 일정: 기본권 권장</li>
+<li>지연대체: 9/3 오전</li>
+</ul></div>
+<div class="sec-head"><h2>Girona · Empordà 의 다른 장소</h2><a href="../guide/girona.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-calella-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-calella-01-thumb-480.webp 480w" sizes="84px" alt="칼레야 데 팔라프루젤의 흰 집과 작은 모래 해변이 이어진 해안" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/calella-de-palafrugell.html">Calella de Palafrugell</a></h3>
+    <p class="card-dek">소나무 덮인 바위와 투명한 만 사이의 어촌이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-passeig-de-la-muralla-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-passeig-de-la-muralla-01-thumb-480.webp 480w" sizes="84px" alt="지로나 성벽 산책로에서 내려다본 구시가지" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/passeig-de-la-muralla.html">Passeig de la Muralla</a></h3>
+    <p class="card-dek">지로나 성벽은 두 시기의 것이 겹쳐 있다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-pals-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-pals-01-thumb-480.webp 480w" sizes="84px" alt="팔스의 시간의 탑(Torre de les Hores)" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/pals.html">Pals</a></h3>
+    <p class="card-dek">언덕 위 고딕 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-peralada-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-peralada-01-thumb-480.webp 480w" sizes="84px" alt="페랄라다 성 외관" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/peralada.html">Peralada</a></h3>
+    <p class="card-dek">페랄라다</p>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/girona-peratallada-01-thumb-480.webp" srcset="../assets/images/thumbnails/girona-peratallada-01-thumb-480.webp 480w" sizes="84px" alt="페라타야다의 거친 석조 벽과 아치가 이어지는 중세 골목" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/peratallada.html">Peratallada</a></h3>
+    <p class="card-dek">이름부터 설명이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

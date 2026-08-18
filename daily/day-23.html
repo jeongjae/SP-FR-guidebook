@@ -3,261 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 23 · 9/20 일 · Lyon — 2026 유럽 여행 가이드북</title>
+<title>Day 23 · Lyon — 유럽 43일 가이드북</title>
+<meta name="description" content="차량반납·TGV·Lyon 적응">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="lyon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/avignon/index.html">Avignon · Lyon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 23</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 23</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-22.html">← 앞</a><a href="day-24.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-18.html" title="Day 18">9/15</a><a href="day-19.html" title="Day 19">9/16</a><a href="day-20.html" title="Day 20">9/17</a><a href="day-21.html" title="Day 21">9/18</a><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" class="here" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a><a href="day-25.html" title="Day 25">9/22</a><a href="day-26.html" title="Day 26">9/23</a><a href="day-27.html" title="Day 27">9/24</a><a href="day-28.html" title="Day 28">9/25</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-23.html" aria-current="page">Day 23</a><a href="../daily/day-24.html">Day 24</a><a href="../daily/day-25.html">Day 25</a><a href="../daily/day-26.html">Day 26</a><a href="../daily/day-27.html">Day 27</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 23 · 9/20 일</span></span><a href="../chapters/lyon/schedule.html"><b>지역</b><span>Lyon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 23 · 9/20 일 · Lyon</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="avignon-les-baux-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/avignon-les-baux-01-hero-800.webp 800w, ../assets/images/hero/avignon-les-baux-01-hero-1280.webp 1280w, ../assets/images/hero/avignon-les-baux-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/avignon-les-baux-01-hero-1280.webp" alt="알피유 산지의 바위 절벽 위에 마을과 성채 유적이 얹혀 있는 레 보 드 프로방스 전경"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>알피유의 바위 언덕 위에 마을과 성채 유적이 자리한 레 보 드 프로방스.</span><span class="media-credit">Photo: Benh LIEU SONG · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#avignon-les-baux-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="avignon-saint-remy-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/avignon-saint-remy-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/avignon-saint-remy-01-thumb-480.webp" alt="생레미드프로방스 구시가 광장 — 플라타너스 그늘 아래 붉은 파라솔을 편 카페 테라스가 늘어서 있다"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>생레미드프로방스 구시가의 광장에 늘어선 카페 테라스.</span><span class="media-credit">Photo: Jorge Franganillo · <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener license">CC BY 4.0</a> · <a href="../about/photo-credits.html#avignon-saint-remy-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-<p class="day-flags"><span class="badge badge-p0">P0 연결</span><span class="badge badge-pending">거점 이동</span><span class="badge badge-rest">양쪽 챕터</span></p>
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>주유·09:00 반납·TGV 12176 10:22·Lyon 15:00 체크인</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>07:00 포장</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>반납 09:00→열차 10:22 (82분) · 도착 11:28→체크인 15:00</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>2건 — 완료 2 · 미확정 0 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/lyon/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/lyon.html"><b class="ic ic-map" aria-hidden="true"></b>Lyon 실행지도</a><a href="../maps/avignon.html"><b class="ic ic-map" aria-hidden="true"></b>Avignon 실행지도</a></nav>
-</section>
-<section class="transfer-day" aria-label="이동일 체크리스트"><h2 class="ic ic-check">이동일 체크리스트</h2><ol class="td-steps"><li><b>출발·체크아웃</b><span>07:00 포장</span></li><li><b>경유·핵심</b><span>주유·09:00 반납·TGV 12176 10:22·Lyon 15:00 체크인</span></li><li><b>완충</b><span>반납 09:00→열차 10:22 (82분) · 도착 11:28→체크인 15:00</span></li><li><b>지연 시 생략</b><span>아침산책</span></li><li><b>대체안</b><span>짐 보관 후 도심 산책</span></li><li><b>잠금·예약</b><span>반납 09:00 준수 · 짐 보관 확인</span></li></ol><p class="note">실행성 감사의 값을 이동 순서로 재배열한 것이다. 체크인 시각·주차 등 미확정 값은 확정 후 채운다.</p></section>
-<h2 class="ic ic-clock">시간표</h2><h3>Avignon</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>목표시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>06:45–07:45</td>
-<td>기상·아침·최종짐</td>
-<td>냉장고 비우기, 쓰레기·세탁·충전기 확인</td>
-</tr>
-<tr>
-<td>07:45–08:15</td>
-<td>체크아웃</td>
-<td>숙소 주차정산·영수증 확인</td>
-</tr>
-<tr>
-<td>08:15–08:35</td>
-<td>주유</td>
-<td>Avignon TGV 인근 업체 영업시간·연료규칙 <span class="badge badge-field-recheck">출발 전 재확인</span></td>
-</tr>
-<tr>
-<td>08:35–09:15</td>
-<td>렌터카 반납</td>
-<td>차량 외관·연료계·주행거리 사진, 직원 검수·영수증 확보</td>
-</tr>
-<tr>
-<td>09:15 이후</td>
-<td>TGV역 대기</td>
-<td>큰 짐은 시야 안에 두고 카페·화장실 이용</td>
-</tr>
-<tr>
-<td>10시 전후–11시대</td>
-<td><strong>Avignon TGV→Lyon Part-Dieu</strong></td>
-<td>Part-Dieu 도착 직행 TGV 우선. Lyon Saint-Exupéry행 OUIGO는 도심 재이동 때문에 후순위</td>
-</tr>
-<tr>
-<td>도착 후</td>
-<td>Lyon 숙소 이동</td>
-<td>다음 챕터와 연결</td>
-</tr>
-</tbody>
-</table></div><h3>Lyon</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간대</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>오전</td>
-<td><strong>전날(9/19) 반납 완료</strong> — 이 날 차량 없음</td>
-<td>9/20 아침은 TER Virgule 09:13 로 Avignon Centre→TGV 이동(DEC-A08)</td>
-</tr>
-<tr>
-<td>10:22→11:28</td>
-<td>TGV 12176 으로 Lyon Part-Dieu 이동</td>
-<td>열차 20분 전 승강장권 진입, 짐은 시야 안쪽에 둔다</td>
-</tr>
-<tr>
-<td>도착 후 30–45분</td>
-<td>Part-Dieu→숙소 택시</td>
-<td>Cours Albert Thomas 까지 약 4km. 큰 짐을 가지고 메트로 B→D 환승을 하지 않는다</td>
-</tr>
-<tr>
-<td>12:00–15:00</td>
-<td>짐 보관·가벼운 점심</td>
-<td><strong>체크인은 15:00부터다.</strong> 도착이 11:28 이므로 짐 보관 가능 여부를 미리 확인한다 <span class="badge badge-unverified">숙소 확인</span></td>
-</tr>
-<tr>
-<td>15:00</td>
-<td>체크인</td>
-<td>객실금고·엘리베이터·야간출입·주방 집기 확인</td>
-</tr>
-<tr>
-<td>13:15–14:00</td>
-<td>가벼운 점심</td>
-<td>숙소권 빵집·샐러드·샌드위치. 도착일 부숑 코스 금지</td>
-</tr>
-<tr>
-<td>14:30–15:30</td>
-<td>숙소 휴식</td>
-<td>차량반납과 기차이동 뒤 1시간 휴식</td>
-</tr>
-<tr>
-<td>15:45–17:45</td>
-<td><strong>Ainay→Bellecour→Jacobins→Célestins</strong> 산책</td>
-<td>도시 중심방향과 귀가로를 익힌다</td>
-</tr>
-<tr>
-<td>17:45–18:30</td>
-<td>Saône 강변·카페</td>
-<td>Fourvière·Vieux Lyon을 건너다보기만 하고 깊게 들어가지 않음</td>
-</tr>
-<tr>
-<td>19:30–21:00</td>
-<td><strong>Café Comptoir Abel</strong> 저녁</td>
-<td>quenelle 또는 poulet aux morilles를 나눠 먹고 과식 금지</td>
-</tr>
-<tr>
-<td>21:00 이후</td>
-<td>숙소 귀가</td>
-<td>Ainay 숙소면 큰길을 따라 도보, 피로·음주 시 택시</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="4" aria-label="피로도 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>4/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/bellecour.html">Bellecour <b>Optional</b></a><a class="pl-day" href="../places/fourviere.html">Fourvière <b>Must</b></a><a class="pl-day" href="../places/vieux-lyon.html">Vieux Lyon · 트라불 <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3>Avignon</h3><h3 id="체크아웃-avignon-tgv-차량반납-lyon-이동">체크아웃, Avignon TGV 차량반납, Lyon 이동</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 차량반납과 대형짐 이동이 핵심 변수다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="대안실용-메모">대안·실용 메모</h4>
-<ul>
-<li>Avignon TGV–Lyon은 공식 노선 안내상 직행이 다수이며 평균 약 1시간대.</li>
-<li><strong>Lyon Part-Dieu 도착편</strong>을 우선한다.</li>
-<li>Lyon Saint-Exupéry TGV 도착 OUIGO는 표면시간이 짧아도 도심 환승이 추가되므로 피한다.</li>
-<li>목표 열차 출발 <strong>최소 75–90분 전 렌터카 영업소 도착</strong>. 우리 계획값이다.</li>
-</ul><h3>Lyon</h3><h3 id="avignon-tgv-차량반납-lyon-도착-ainay와-presquîle-적응">Avignon TGV 차량반납, Lyon 도착, Ainay와 Presqu’île 적응</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 차량 반납·TGV·큰 짐 이동이 겹치므로 핵심은 체크인, 생활권 파악, 첫 저녁뿐이다.</li>
-<li><strong>상태</strong>: <strong>고정</strong></li>
-</ul>
-<h4 id="핵심-행동-최대-3개">핵심 행동 (최대 3개)</h4>
-<ul>
-<li>Bellecour에서 Fourvière 언덕을 올려다보며 다음 날 지형을 미리 이해하기</li>
-<li>Place des Jacobins와 Célestins 주변의 19세기 도심 파사드를 천천히 보기</li>
-<li>첫 부숑 식사는 2개 요리만 선택하여 남은 리옹 일정의 위장 부담 줄이기</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-지도">오늘 지도</h4>
-<h4 id="삭제-및-단축-순서-늦었거나-피곤할-때">삭제 및 단축 순서 (늦었거나 피곤할 때)</h4>
-<ol>
-<li>Jacobins·Célestins 산책</li>
-<li>Saône 카페</li>
-<li>외식은 숙소권 간단식으로 전환</li>
-</ol>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<ul>
-<li>열차 지연 시 Bellecour 30분 산책과 숙소식만 유지</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>주유·반납·수하물·열차</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>아침산책</dd></div><div class="ds-item"><dt>대체안</dt><dd>짐 보관 후 도심 산책</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>역 간단식·숙소권 점심</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>반납 09:00 준수 · 짐 보관 확인</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-23">
-<h2 id="daily-map-title-23" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Avignon TGV 렌터카 반납 → Lyon 이동</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="station" aria-pressed="false">역</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=43.9218326%2C4.7857609&amp;destination=45.746467%2C4.868933&amp;travelmode=transit&amp;waypoints=45.7605725%2C4.8601628">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="avignon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="avignon-stay-candidate" aria-pressed="false"><strong>0. La Terrasse du Clocher</strong><span>숙소 · 오전 체크아웃</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=La+Terrasse+du+Clocher">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=transit">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="avignon-tgv" data-type="station"><button class="gm-card-main" type="button" data-place-id="avignon-tgv" aria-pressed="false"><strong>1. Avignon TGV 역</strong><span>역 · 09:00 렌터카 반납</span><small>Hertz L672E080313 반납 확정 · 주유·차량사진·보증금 해제 확인.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gare+d%27Avignon+TGV">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9218326%2C4.7857609&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="lyon-part-dieu" data-type="station"><button class="gm-card-main" type="button" data-place-id="lyon-part-dieu" aria-pressed="false"><strong>2. Lyon Part-Dieu 역</strong><span>역 · TGV 12176 10:22→11:28</span><small>1등석 확정 · 승강장 20분 전 진입.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gare+de+Lyon+Part-Dieu">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7605725%2C4.8601628&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="lyon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="lyon-stay-candidate" aria-pressed="false"><strong>3. Lagrange Aparthotel Lyon Lumière (확정 숙소)</strong><span>숙소 · 도착 후 30–45분 택시</span><small>확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권).</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=81-85+Cours+Albert+Thomas%2C+69003+Lyon">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.746467%2C4.868933&amp;travelmode=transit">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9218326%2C4.7857609&amp;travelmode=driving&amp;origin=43.94993%2C4.81302">La Terrasse du Clocher → Avignon TGV 역 · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7605725%2C4.8601628&amp;travelmode=transit&amp;origin=43.9218326%2C4.7857609">Avignon TGV 역 → Lyon Part-Dieu 역 · 대중교통</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.746467%2C4.868933&amp;travelmode=driving&amp;origin=45.7605725%2C4.8601628">Lyon Part-Dieu 역 → Lagrange Aparthotel Lyon Lumière (확정 숙소) · 자동차</a></li></ol></details>
-<script type="application/json">{"center":[44.85,4.82],"zoom":8,"places":[{"id":"avignon-stay-candidate","name":"La Terrasse du Clocher","city":"Avignon","type":"accommodation","lat":43.94993,"lng":4.81302,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=La+Terrasse+du+Clocher","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]},{"id":"avignon-tgv","name":"Avignon TGV 역","city":"Avignon","type":"station","lat":43.9218326,"lng":4.7857609,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Gare+d%27Avignon+TGV","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"},{"id":"lyon-part-dieu","name":"Lyon Part-Dieu 역","city":"Lyon","type":"station","lat":45.7605725,"lng":4.8601628,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Gare+de+Lyon+Part-Dieu","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"},{"id":"lyon-stay-candidate","name":"Lagrange Aparthotel Lyon Lumière (확정 숙소)","city":"Lyon","type":"accommodation","lat":45.746467,"lng":4.868933,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=81-85+Cours+Albert+Thomas%2C+69003+Lyon","address":"81-85 Cours Albert Thomas, 69003 Lyon","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"],"coordinatesVerified":"OSM Nominatim, 2026-08-14"}],"day":{"date":"2026-09-20","city":"Avignon · Lyon","title":"Avignon TGV 렌터카 반납 → Lyon 이동","center":[44.85,4.82],"zoom":8,"defaultMode":"transit","stops":[{"placeId":"avignon-stay-candidate","order":0,"plannedTime":"오전 체크아웃","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"avignon-tgv","order":1,"plannedTime":"09:00 렌터카 반납","note":"Hertz L672E080313 반납 확정 · 주유·차량사진·보증금 해제 확인."},{"placeId":"lyon-part-dieu","order":2,"plannedTime":"TGV 12176 10:22→11:28","note":"1등석 확정 · 승강장 20분 전 진입."},{"placeId":"lyon-stay-candidate","order":3,"plannedTime":"도착 후 30–45분 택시","note":"확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."}],"segments":[{"from":"avignon-stay-candidate","to":"avignon-tgv","mode":"driving"},{"from":"avignon-tgv","to":"lyon-part-dieu","mode":"transit"},{"from":"lyon-part-dieu","to":"lyon-stay-candidate","mode":"driving"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 23</span>
+    <span class="day-date">9/20 일</span></div>
+  <h1>Lyon</h1>
+  <p class="hero-dek">차량반납·TGV·Lyon 적응</p>
+  <div class="metarow"><span class="badge badge-caution">거점 이동</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 4</span><span>차량 반납 + TGV 약 230km</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-20">
+  <span class="label">NEXT</span>
+  <div class="action-when">10:22</div>
+  <div class="action-what">TGV 12176→Lyon Part-Dieu</div>
+  <p class="card-dek">1등석 — 짐은 시야 안쪽, 도착 후 공식 택시승강장</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-23-lyon.webp" aria-label="Day 23 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-23-lyon-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 23 Lyon 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-23-lyon.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-22.html">← Day 22</a><span></span><a href="day-24.html">Day 24 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong> Avignon TGV 렌터카 반납</strong> — 예약완료 Hertz L672E080313 — 9/20 09:00 반납</li><li><strong>10:22 TGV 12176→Lyon Part-Dieu</strong> — 예약완료 TGV INOUI 12176 · 1등석</li><li><strong>12:00 숙소 이동·점심·체크인</strong> — 예약완료 Lagrange Aparthotel Lyon Lumière (5882.730.884) — 체크인 15:00</li><li><strong>19:30 Café Comptoir Abel 저녁·귀가</strong> — 저녁 예약 권장</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="07:00" data-end="">
+  <div class="tl-time">07:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Avignon 체크아웃·포장 </div>
+    <p class="tl-note">07:00 포장 — 주유·차량사진·영수증 준비</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 15분 · 약 6km · 주유 포함 여유</span></div>
+</li><li class="tl-item" data-start="" data-end="09:00">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> Avignon TGV 렌터카 반납 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">09:00 반납 준수 — 주유·차량사진·보증금 해제, 열차까지 82분</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>예약완료 Hertz L672E080313 — 9/20 09:00 반납</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    기차 · 1시간 6분 · 약 230km · TGV INOUI 12176 (확정)</span></div>
+</li><li class="tl-item" data-start="10:22" data-end="11:28">
+  <div class="tl-time">10:22</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> TGV 12176→Lyon Part-Dieu <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">1등석 — 짐은 시야 안쪽, 도착 후 공식 택시승강장</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>예약완료 TGV INOUI 12176 · 1등석</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    택시 · 30–45분 · 공식 택시승강장</span></div>
+</li><li class="tl-item" data-start="12:00" data-end="15:30">
+  <div class="tl-time">12:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 이동·점심·체크인 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">Part-Dieu→메트로 B 환승(Saxe-Gambetta)→D선 Sans Souci. 체크인은 15:00부터 — 그 전 짐 보관 가능 여부 확인</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>예약완료 Lagrange Aparthotel Lyon Lumière (5882.730.884) — 체크인 15:00</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.8km</span></div>
+</li><li class="tl-item" data-start="15:45" data-end="18:30">
+  <div class="tl-time">15:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> Ainay→Bellecour→Célestins 산책 </div>
+    <p class="tl-note">도시 중심방향과 귀가로 익히기, Saône 강변 카페 — Vieux Lyon은 건너다보기만</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 10분 · 0.8km</span></div>
+</li><li class="tl-item" data-start="19:30" data-end="21:00">
+  <div class="tl-time">19:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Café Comptoir Abel 저녁·귀가 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">quenelle 공유, 과식 금지 — 피로·음주 시 택시</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>저녁 예약 권장</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 지연 시 Lyon 도착 후 체크인만, 산책 삭제</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>도착 11:28 vs 체크인 15:00 — 짐 보관 가능 여부 숙소에 확인</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[44.85,4.83],"zoom":8,"pins":[{"id":"avignon-checkout","name":"Avignon 체크아웃·포장","lat":43.94993,"lng":4.81302,"cat":"hotel","time":"07:00","place":null},{"id":"avignon-tgv","name":"Avignon TGV 렌터카 반납","lat":43.9217832,"lng":4.786072,"cat":"transport","time":null,"place":null},{"id":"part-dieu","name":"TGV 12176→Lyon Part-Dieu","lat":45.7605725,"lng":4.8601628,"cat":"transport","time":"10:22","place":null},{"id":"lyon-checkin","name":"숙소 이동·점심·체크인","lat":45.746467,"lng":4.868933,"cat":"hotel","time":"12:00","place":null},{"id":"ainay-walk","name":"Ainay→Bellecour→Célestins 산책","lat":45.75779,"lng":4.83202,"cat":"sight","time":"15:45","place":null},{"id":"lyon-return","name":"Café Comptoir Abel 저녁·귀가","lat":45.746467,"lng":4.868933,"cat":"hotel","time":"19:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 23 동선 · 6곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="avignon-checkout"><span class="meta">07:00</span>Avignon 체크아웃·포장<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Avignon 체크아웃·포장 </span>열기</a></li><li data-pin="avignon-tgv">Avignon TGV 렌터카 반납<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.9217832,4.786072"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Avignon TGV 렌터카 반납 </span>열기</a></li><li data-pin="part-dieu"><span class="meta">10:22</span>TGV 12176→Lyon Part-Dieu<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.7605725,4.8601628"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">TGV 12176→Lyon Part-Dieu </span>열기</a></li><li data-pin="lyon-checkin"><span class="meta">12:00</span>숙소 이동·점심·체크인<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.746467,4.868933"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 이동·점심·체크인 </span>열기</a></li><li data-pin="ainay-walk"><span class="meta">15:45</span>Ainay→Bellecour→Célestins 산책<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.75779,4.83202"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Ainay→Bellecour→Célestins 산책 </span>열기</a></li><li data-pin="lyon-return"><span class="meta">19:30</span>Café Comptoir Abel 저녁·귀가<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.746467,4.868933"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Café Comptoir Abel 저녁·귀가 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>렌터카 반납 09:00 (Avignon TGV·확정)</li><li>TGV 12176 10:22→11:28 1등석 (확정)</li><li>Part-Dieu 택시</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>도착 점심은 가볍게</li><li>Café Comptoir Abel 저녁</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>P0 이동일 — 반납 09:00 준수</li><li>반납→열차 완충 82분</li><li>도착일 부숑 코스 금지</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-22.html">← Day 22</a><a class="btn btn-secondary" href="../daily/day-24.html">Day 24 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

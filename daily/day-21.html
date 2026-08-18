@@ -3,231 +3,124 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 21 · 9/18 금 · Avignon — 2026 유럽 여행 가이드북</title>
+<title>Day 21 · Avignon — 유럽 43일 가이드북</title>
+<meta name="description" content="Uzès와 Pont du Gard">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="avignon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/avignon/index.html">Avignon</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 21</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 21</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-20.html">← 앞</a><a href="day-22.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-16.html" title="Day 16">9/13</a><a href="day-17.html" title="Day 17">9/14</a><a href="day-18.html" title="Day 18">9/15</a><a href="day-19.html" title="Day 19">9/16</a><a href="day-20.html" title="Day 20">9/17</a><a href="day-21.html" class="here" title="Day 21">9/18</a><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a><a href="day-25.html" title="Day 25">9/22</a><a href="day-26.html" title="Day 26">9/23</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-19.html">Day 19</a><a href="../daily/day-20.html">Day 20</a><a href="../daily/day-21.html" aria-current="page">Day 21</a><a href="../daily/day-22.html">Day 22</a><a href="../daily/day-23.html">Day 23</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 21 · 9/18 금</span></span><a href="../chapters/avignon/schedule.html"><b>지역</b><span>Avignon</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 21 · 9/18 금 · Avignon</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="avignon-palais-papes-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/avignon-palais-papes-01-hero-800.webp 800w, ../assets/images/hero/avignon-palais-papes-01-hero-1280.webp 1280w, ../assets/images/hero/avignon-palais-papes-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/avignon-palais-papes-01-hero-1280.webp" alt="팔레 광장에서 본 교황청 궁전 서쪽 정면 — 총안 성벽과 쌍둥이 첨탑의 정문이 한눈에 들어온다"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>팔레 광장(Place du Palais)에서 바라본 교황청 궁전의 서쪽 정면.</span><span class="media-credit">Photo: Jean-Marc Rosier · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#avignon-palais-papes-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="avignon-halles-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/avignon-halles-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/avignon-halles-01-thumb-480.webp" alt="아비뇽 레 알 시장 건물의 식물로 뒤덮인 수직 정원 외벽과 그 앞 피 광장의 꽃 노점"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>피 광장(Place Pie)의 레 알 시장 — 파트리크 블랑이 설계한 수직 정원이 외벽을 덮고 있다.</span><span class="media-credit">Photo: say_cheddar · <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener license">CC BY 2.0</a> · <a href="../about/photo-credits.html#avignon-halles-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="avignon-rocher-doms-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/avignon-rocher-doms-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/avignon-rocher-doms-01-thumb-480.webp" alt="로셰 데 돔 정원 연못 — 분수 조각상과 물가의 카페 테라스가 나무 그늘 아래 놓여 있다"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>로셰 데 돔 정원의 연못 — 펠릭스 샤르팡티에의 조각상(1895)이 분수 위에 서 있다.</span><span class="media-credit">Photo: Txllxt TxllxT · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#avignon-rocher-doms-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="avignon-pont-benezet-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/avignon-pont-benezet-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/avignon-pont-benezet-01-thumb-480.webp" alt="론강 위에 남은 생 베네제 다리의 네 아치와 다리 위 생 니콜라 예배당이 강물에 비친 모습"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>강 중간에서 끊긴 생 베네제 다리 — 남아 있는 아치 위에 생 니콜라 예배당이 서 있다.</span><span class="media-credit">Photo: Rolf Kranz · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#avignon-pont-benezet-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Uzès 구시가지·Pont du Gard</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>08:30 출발</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>주차·Pont 이동 45분</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>이 날짜로 잡힌 예약 없음 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/avignon/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/avignon.html"><b class="ic ic-map" aria-hidden="true"></b>Avignon 실행지도</a></nav>
-</section>
-
-<h2 class="ic ic-clock">시간표</h2><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>07:15–08:00</td>
-<td>숙소 아침·출발준비</td>
-<td>시장가방, 물, 모자, 차량에 아무것도 보이지 않게 정리</td>
-</tr>
-<tr>
-<td>08:00–08:55</td>
-<td>Avignon→Uzès</td>
-<td><strong>금요일이라 시장이 없다</strong> — 혼잡이 없으므로 도착 시각에 여유가 있다</td>
-</tr>
-<tr>
-<td>09:00–09:25</td>
-<td>외곽주차→Place aux Herbes</td>
-<td>중심부 진입보다 외곽 관리주차장 후 도보</td>
-</tr>
-<tr>
-<td>09:25–11:00</td>
-<td><strong>Uzès Place aux Herbes·구시가지</strong></td>
-<td>시장 없는 날의 우제스 — 카페·아케이드·생활상점과 Tour Fenestrelle 중심</td>
-</tr>
-<tr>
-<td>11:00–12:00</td>
-<td><strong>Uzès 구시가지</strong></td>
-<td>Place aux Herbes 아케이드→Duché 외관→Tour Fenestrelle→골목</td>
-</tr>
-<tr>
-<td>12:00–13:00</td>
-<td>가벼운 점심</td>
-<td>Place aux Herbes 주변 비스트로 후보의 금요일 영업 <span class="badge badge-unverified">영업일 확인</span></td>
-</tr>
-<tr>
-<td>13:00–13:35</td>
-<td>Uzès→Pont du Gard</td>
-<td>시장 구매품은 차량 안에서 보이지 않게 보관</td>
-</tr>
-<tr>
-<td>13:45–16:30</td>
-<td><strong>Pont du Gard</strong></td>
-<td>좌안 전망→다리 하부·상류/하류 시점→우안 또는 Mémoires de Garrigue 선택</td>
-</tr>
-<tr>
-<td>16:30–17:15</td>
-<td>강변 카페·휴식</td>
-<td>더위·바람에 따라 체류 조절</td>
-</tr>
-<tr>
-<td>17:15–18:15</td>
-<td>선택: 일몰 전 추가산책</td>
-<td>9/20까지 해질녘 조명 안내가 있으나 귀환과 피로 고려</td>
-</tr>
-<tr>
-<td>18:15–19:15</td>
-<td>Avignon 귀환</td>
-<td>JEP 주말 교통 혼잡 고려</td>
-</tr>
-<tr>
-<td>20:00 전후</td>
-<td>가벼운 저녁</td>
-<td>숙소식 또는 Fou de Fafa·Cocottes 중 예약된 곳</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="4" aria-label="피로도 4 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><b>4/5</b></span></p>
-<h2 class="ic ic-pin">이 날의 장소</h2><div class="pl-chips"><a class="pl-day" href="../places/pont-du-gard.html">Pont du Gard <b>Must</b></a><a class="pl-day" href="../places/uzes.html">Uzès Place aux Herbes·구시가지 <b>Must</b></a></div><p class="note">일자별 시간표와 본문 표기에서 찾은 것이다. 하루의 전부가 아니라 장소 카드가 있는 것만 담는다.</p>
-<h2 class="ic ic-note">이 날의 메모</h2><h3 id="uzès-구시가지와-pont-du-gard-생활도시와-로마공학">Uzès 구시가지와 Pont du Gard — 생활도시와 로마공학</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 시장 혼잡+운전+노출된 유적지 보행이 겹친다.</li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-꼭-해볼-것">오늘 꼭 해볼 것</h4>
-<ul>
-<li>Place aux Herbes를 한 바퀴 돌기 전에 카페 테이블에서 시장 전체를 먼저 관찰하기</li>
-<li>올리브·염소치즈·빵·과일 중 실제 먹을 수 있는 양만 사기</li>
-<li>관광상품 노점보다 지역 식품·바구니·도자기·직물 노점을 비교하기</li>
-<li>Duché 내부는 특별한 관심이 있을 때만 선택하고 골목·광장을 우선하기</li>
-</ul>
-<h4 id="대안실용-메모">대안·실용 메모</h4>
-<ul>
-<li><strong>사이트·주차장</strong>: 연중 08:00–24:00.</li>
-<li><strong>문화공간</strong>: 9월 공식 안내 09:00–19:00, 매주 월요일 오전 유지보수 가능.</li>
-<li><strong>조명</strong>: 2026년 5월 15일–9월 20일 매일 해질녘 조명 예정.</li>
-<li><strong>권장 체류</strong>: 경관만 1시간 30분, 전시·산책 포함 2시간 30분.</li>
-<li><strong>핵심</strong>: 박물관보다 강변에서 3층 아치의 비례와 수로 높이를 직접 보는 것이 우선.</li>
-</ul>
-<h3 id="선택모듈">선택모듈</h3>
-<ul>
-<li><strong>A 경관형</strong>: 다리 양측 시점+강변만, 1시간 30분</li>
-<li><strong>B 이해형</strong>: 박물관·수로 설명 추가, 2시간 30분</li>
-<li><strong>C 저녁형</strong>: 조명까지 대기하되 Avignon 귀환 20:30 이후 허용</li>
-<li><strong>우천형</strong>: Uzès 구시가지 축소+Pont 실내공간 후 조기귀환</li>
-</ul>
-<hr>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>금요일 시장 없음·폭우/홍수</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>박물관 또는 일몰</dd></div><div class="ds-item"><dt>대체안</dt><dd>Uzès 단축·Pont 축소</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>Uzès 빵집/비스트로</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>주차·Pont</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-21">
-<h2 id="daily-map-title-21" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Uzès 구시가지와 Pont du Gard</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="attraction" aria-pressed="false">방문지</button></nav>
-
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="avignon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="avignon-stay-candidate" aria-pressed="false"><strong>0. La Terrasse du Clocher</strong><span>숙소 · 08:30 출발</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=La+Terrasse+du+Clocher">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.94993%2C4.81302&amp;travelmode=driving">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li><li class="gm-place-card" data-place-id="uzes" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="uzes" aria-pressed="false"><strong>1. Uzès</strong><span>방문지 · 오전</span><small>구시가지. 주차장은 현장 안내 확인 — 사전 미지정.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Uz%C3%A8s">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=44.0121%2C4.41974&amp;travelmode=driving">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="pont-du-gard" data-type="attraction"><button class="gm-card-main" type="button" data-place-id="pont-du-gard" aria-pressed="false"><strong>2. Pont du Gard</strong><span>방문지 · 오후</span><small>주차 후 Pont까지 이동 45분 확보.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pont+du+Gard">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9475%2C4.53502&amp;travelmode=driving">현 위치에서 길찾기</a></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=44.0121%2C4.41974&amp;travelmode=driving&amp;origin=43.94993%2C4.81302">La Terrasse du Clocher → Uzès · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=43.9475%2C4.53502&amp;travelmode=driving&amp;origin=44.0121%2C4.41974">Uzès → Pont du Gard · 자동차</a></li></ol></details>
-<script type="application/json">{"center":[43.96,4.53],"zoom":11,"places":[{"id":"avignon-stay-candidate","name":"La Terrasse du Clocher","city":"Avignon","type":"accommodation","lat":43.94993,"lng":4.81302,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=La+Terrasse+du+Clocher","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]},{"id":"uzes","name":"Uzès","city":"Avignon","type":"attraction","lat":44.0121,"lng":4.41974,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Uz%C3%A8s","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"],"editorialSlug":"uzes"},{"id":"pont-du-gard","name":"Pont du Gard","city":"Avignon","type":"attraction","lat":43.9475,"lng":4.53502,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pont+du+Gard","address":"","private":false,"approximate":false,"optional":false,"status":"planned","legacySources":["75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-18","city":"Avignon · Uzès · Pont du Gard","title":"Uzès 구시가지와 Pont du Gard","center":[43.96,4.53],"zoom":11,"defaultMode":"driving","stops":[{"placeId":"avignon-stay-candidate","order":0,"plannedTime":"08:30 출발","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."},{"placeId":"uzes","order":1,"plannedTime":"오전","note":"구시가지. 주차장은 현장 안내 확인 — 사전 미지정."},{"placeId":"pont-du-gard","order":2,"plannedTime":"오후","note":"주차 후 Pont까지 이동 45분 확보."}],"segments":[{"from":"avignon-stay-candidate","to":"uzes","mode":"driving"},{"from":"uzes","to":"pont-du-gard","mode":"driving"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 21</span>
+    <span class="day-date">9/18 금</span></div>
+  <h1>Avignon</h1>
+  <p class="hero-dek">Uzès와 Pont du Gard</p>
+  <div class="metarow"><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 4</span><span>약 84km · 차량 경로</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-18">
+  <span class="label">NEXT</span>
+  <div class="action-when">09:00</div>
+  <div class="action-what"><a href="../places/uzes.html">Uzès 구시가지·점심</a></div>
+  <p class="card-dek">외곽주차 후 도보 — Place aux Herbes 아케이드→Duché 외관→Tour Fenestrelle</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-21-avignon.webp" aria-label="Day 21 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-21-avignon-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 21 Avignon 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-21-avignon.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-20.html">← Day 20</a><span></span><a href="day-22.html">Day 22 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong>09:00 Uzès 구시가지·점심</strong> — 외곽 관리주차장 확인</li><li><strong>13:45 Pont du Gard</strong> — 주차·운영 재확인</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="07:15" data-end="08:00">
+  <div class="tl-time">07:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 아침·출발 </div>
+    <p class="tl-note">시장가방·물·모자, 차량에 아무것도 보이지 않게</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 45분 · 40.7km</span></div>
+</li><li class="tl-item" data-start="09:00" data-end="13:00">
+  <div class="tl-time">09:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/uzes.html">Uzès 구시가지·점심</a> <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">외곽주차 후 도보 — Place aux Herbes 아케이드→Duché 외관→Tour Fenestrelle</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>외곽 관리주차장 확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 21분 · 13.8km · 시장 구매품 은폐</span></div>
+</li><li class="tl-item" data-start="13:45" data-end="17:15">
+  <div class="tl-time">13:45</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> <a href="../places/pont-du-gard.html">Pont du Gard</a> <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">좌안 전망→다리 하부·상류/하류 시점→우안 또는 Mémoires de Garrigue 선택, 강변 카페 휴식</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>주차·운영 재확인</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    운전 · 약 38분 · 29.5km</span></div>
+</li><li class="tl-item" data-start="18:15" data-end="20:00">
+  <div class="tl-time">18:15</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Avignon 귀환·저녁 </div>
+    <p class="tl-note">JEP 주말 교통 혼잡 고려 — 저녁은 숙소식 또는 예약된 곳</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 악천후 시 Uzès 단축·Pont 축소, 박물관 또는 일몰 택1</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Avignon 숙소 후보 승인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Uzès 외곽주차장·비스트로 금요일 영업 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Pont du Gard 운영·주차 재확인</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[43.975,4.615],"zoom":11,"pins":[{"id":"avignon-depart","name":"숙소 아침·출발","lat":43.94993,"lng":4.81302,"cat":"hotel","time":"07:15","place":null},{"id":"uzes","name":"Uzès 구시가지·점심","lat":44.0115423,"lng":4.4187698,"cat":"sight","time":"09:00","place":"uzes"},{"id":"pont-du-gard","name":"Pont du Gard","lat":43.9475,"lng":4.53502,"cat":"sight","time":"13:45","place":"pont-du-gard"},{"id":"avignon-return","name":"Avignon 귀환·저녁","lat":43.94993,"lng":4.81302,"cat":"hotel","time":"18:15","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 21 동선 · 4곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="avignon-depart"><span class="meta">07:15</span>숙소 아침·출발<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 아침·출발 </span>열기</a></li><li data-pin="uzes"><span class="meta">09:00</span><a href="../places/uzes.html">Uzès 구시가지·점심</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=44.0115423,4.4187698"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Uzès 구시가지·점심 </span>열기</a></li><li data-pin="pont-du-gard"><span class="meta">13:45</span><a href="../places/pont-du-gard.html">Pont du Gard</a><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.9475,4.53502"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Pont du Gard </span>열기</a></li><li data-pin="avignon-return"><span class="meta">18:15</span>Avignon 귀환·저녁<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=43.94993,4.81302"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Avignon 귀환·저녁 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>렌터카 · 외곽주차 우선</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>Uzès 가벼운 점심</li><li>저녁은 가볍게 (금요일 영업 재확인)</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>09:00 이전 Uzès 도착</li><li>금요일 — 토요시장 없음 전제</li><li>폭우·홍수 변수 주의</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-20.html">← Day 20</a><a class="btn btn-secondary" href="../daily/day-22.html">Day 22 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>

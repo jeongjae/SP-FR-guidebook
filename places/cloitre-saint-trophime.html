@@ -3,69 +3,118 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Cloître Saint-Trophime — 2026 유럽 여행 가이드북</title>
+<title>Cloître Saint-Trophime — 유럽 43일 가이드북</title>
+<meta name="description" content="로마네스크와 고딕 회랑이 이어지는 중세의 핵심이다.">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="avignon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/avignon/index.html">Avignon</a><span class="tb-sep" aria-hidden="true">›</span><b>Cloître Saint-Trophime</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../guide/index.html">가이드</a><span class="sep" aria-hidden="true">›</span><a href="../guide/avignon.html">Avignon · Alpilles</a><span class="sep" aria-hidden="true">›</span><b>Cloître Saint-Trophime</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">장소</span><div class="sn-layers"><a href="index.html">전체</a><a href="barcelona-modernisme-walk.html">Barcelona</a><a href="calella-de-palafrugell.html">Girona</a><a href="cannes.html">Nice</a><a href="atelier-des-lauves.html">Aix</a><a href="abbaye-de-senanque.html">Luberon</a><a href="arles.html">Avignon</a><a href="annecy.html">Lyon</a><a href="bnf-richelieu.html">Paris</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>Cloître Saint-Trophime</h1><figure class="guide-photo guide-photo--content" data-photo-id="avignon-cloitre-saint-trophime-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/content/avignon-cloitre-saint-trophime-01-content-1280.webp 1280w" sizes="(max-width: 720px) 100vw, 720px">
-    <img src="../assets/images/content/avignon-cloitre-saint-trophime-01-content-1280.webp" alt="아를 생트로핌 성당의 로마네스크 회랑 안뜰과 조각 기둥"
-      width="1280" height="960" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>아를 생트로핌 회랑 — 로마네스크와 고딕이 한 안뜰에서 만난다.</span><span class="media-credit">Photo: Etan J. Tal · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#avignon-cloitre-saint-trophime-01">사진 정보</a></span></figcaption>
-</figure><div class="table-wrap"><table><tbody><tr><th>지역</th><td><a href="../chapters/avignon/index.html">Avignon</a></td></tr><tr><th>등급</th><td><span class="grade grade-priority">Recommended</span></td></tr><tr><th>언제</th><td><a class="pl-day" href="../daily/day-22.html">Day 22 · 9/19</a><span class="pl-basis">시간표 기준</span></td></tr><tr><th>상세</th><td><a href="../chapters/avignon/places.html#cloître-saint-trophime-recommended">챕터 본문에서 보기</a></td></tr><tr><th>지도</th><td><a href="../maps/avignon.html">Avignon 실행지도</a> · <span class="pl-basis">핀 이름 Cloître Saint-Trophime</span></td></tr></tbody></table></div><h2 class="ic ic-link">참고</h2><div class="refs"><a class="ref ic ic-pin" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Clo%C3%AEtre+Saint-Trophime">Google Maps</a><a class="ref ic ic-map" href="../maps/avignon.html">Avignon 실행지도</a></div><p class="offline-note net-note" hidden><b>오프라인입니다.</b> 위키백과와 지도 링크는 연결되면 다시 동작합니다.</p><blockquote>
-<p><strong>요금</strong> 생트로핌 회랑 €6 · <strong>운영</strong> 공식 확인 불가 · <strong>휴관</strong> 공식 확인 불가
-<strong>예약</strong> 공식 확인 불가 · <strong>소요</strong> 60분</p>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="../assets/images/content/avignon-cloitre-saint-trophime-01-content-1280.webp" srcset="../assets/images/content/avignon-cloitre-saint-trophime-01-content-1280.webp 1280w" sizes="100vw" alt="아를 생트로핌 성당의 로마네스크 회랑 안뜰과 조각 기둥" fetchpriority="high" decoding="async">
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">Avignon · Alpilles</span></div>
+    <h1>Cloître Saint-Trophime</h1>
+    <div class="metarow"><span class="badge badge-neutral">우선 추천</span></div>
+    <p class="hero-dek">로마네스크와 고딕 회랑이 이어지는 중세의 핵심이다.</p>
+    
+  </div></div>
+</div>
+<div class="wrap-read">
+<p class="meta">사진 <a href="https://commons.wikimedia.org/wiki/File:Clo%C3%AEtre_Saint-Trophime_Arles_Conservation.jpg" rel="nofollow noopener">Etan J. Tal</a> · CC BY-SA 3.0</p>
+<div class="sec-head-rule"><span class="label">PRACTICAL</span><h2>실용</h2></div>
+<div class="table-wrap"><table><tbody><tr><th scope="row">운영시간</th><td><span class="meta">공식 소스 접근 실패</span> <span class="badge badge-caution">재확인</span><br><span class="meta">https://www.arlestourisme.com/en/practical-information-monuments.html</span></td></tr><tr><th scope="row">휴무</th><td><span class="meta">공식 소스 접근 실패</span> <span class="badge badge-caution">재확인</span><br><span class="meta">https://www.arlestourisme.com/en/practical-information-monuments.html</span></td></tr><tr><th scope="row">요금</th><td>생트로핌 회랑 €6 <br><span class="meta">2026-08-16 확정 원장 (공식 소스 검증 완료)</span></td></tr><tr><th scope="row">예약</th><td><span class="meta">공식 소스 접근 실패</span> <span class="badge badge-caution">재확인</span><br><span class="meta">https://www.arlestourisme.com/en/practical-information-monuments.html</span></td></tr><tr><th scope="row">소요시간</th><td>60분 <span class="badge badge-caution">재확인</span><br><span class="meta">원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1586</span></td></tr></tbody></table></div>
+<div class="sec-head-rule"><span class="label">DEEP GUIDE</span><h2>더 깊이</h2></div>
+<div class="prose"><blockquote>
+<p><strong>요금</strong> 생트로핌 회랑 €6 · <strong>운영</strong> (공식 소스 접근 실패) · <strong>휴관</strong> (공식 소스 접근 실패)
+<strong>예약</strong> (공식 소스 접근 실패) · <strong>소요</strong> 60분 (재확인)</p>
 </blockquote>
 <p>로마네스크와 고딕 회랑이 이어지는 중세의 핵심이다. 2026년 9월 공식 운영은 09:00–19:00로 확인됐지만 문화유산의 날 동선·무료개방은 출발 전 재확인한다. 실내·그늘 비중이 있어 우천과 더위에 유리하며 45–60분이면 충분하다.</p>
 <p>회랑 네 면 중 두 면은 12세기 로마네스크, 두 면은 14세기 고딕이다 — <strong>한 안뜰을 돌면서
 두 시대의 기둥머리 조각을 비교하게 되는 구조</strong>가 이 회랑의 교과서적 가치다. 성당 정면의
 「최후의 심판」 팀파눔은 프로방스 로마네스크 조각의 대표작으로, 산티아고 순례길 시대의
-조형 언어가 그대로 남아 있다. 성당 본당은 무료이고 회랑만 유료다 <span class="badge badge-unverified">요금 확인</span>. 회랑 2층 통로에서 성당 지붕과 종탑을 가까이 보는 각도가 나온다 — 올라갈 수 있는 날이면 놓치지 않는다. 팀파눔 조각은 정오 직사광보다 오전 사선광에서 입체가 산다. 회랑 안뜰의 정적은 아를 하루에서 가장 조용한 시간이 된다. 아레나의 함성 자리와 회랑의 침묵 자리를 같은 오후에 겪는 대비가 이 도시 하루의 구조다.</p>
+조형 언어가 그대로 남아 있다. 성당 본당은 무료이고 회랑만 유료다 (요금 확인). 회랑 2층 통로에서 성당 지붕과 종탑을 가까이 보는 각도가 나온다 — 올라갈 수 있는 날이면 놓치지 않는다. 팀파눔 조각은 정오 직사광보다 오전 사선광에서 입체가 산다. 회랑 안뜰의 정적은 아를 하루에서 가장 조용한 시간이 된다. 아레나의 함성 자리와 회랑의 침묵 자리를 같은 오후에 겪는 대비가 이 도시 하루의 구조다.</p></div>
+<div class="sec-head"><h2>Avignon · Alpilles 의 다른 장소</h2><a href="../guide/avignon.html">전체</a></div>
+<div class="scroll-x"><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/avignon-carrieres-des-lumieres-01-thumb-480.webp" srcset="../assets/images/thumbnails/avignon-carrieres-des-lumieres-01-thumb-480.webp 480w" sizes="84px" alt="레보 채석장 내부의 거대한 석벽 공간" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/carrieres-des-lumieres.html">Carrières des Lumières</a></h3>
+    <p class="card-dek">알피유 한복판의 거대한 카리에르 데 뤼미에르는 세계에서 유일한 멀티미디어 쇼를 연다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/avignon-glanum-01-thumb-480.webp" srcset="../assets/images/thumbnails/avignon-glanum-01-thumb-480.webp 480w" sizes="84px" alt="글라눔 유적의 성스러운 샘으로 내려가는 계단" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/glanum.html">Glanum</a></h3>
+    <p class="card-dek">생폴드모졸 바로 옆의 갈로로마 도시 유적이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/avignon-les-baux-01-thumb-480.webp" srcset="../assets/images/thumbnails/avignon-les-baux-01-thumb-480.webp 480w" sizes="84px" alt="알피유 산지의 바위 절벽 위에 마을과 성채 유적이 얹혀 있는 레 보 드 프로방스 전경" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/les-baux-de-provence.html">Les Baux-de-Provence</a></h3>
+    <p class="card-dek">석회암 바위산 위의 요새 마을이다.</p>
+    <div class="metarow"><span class="badge badge-neutral">대체</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/avignon-les-halles-01-thumb-480.webp" srcset="../assets/images/thumbnails/avignon-les-halles-01-thumb-480.webp 480w" sizes="84px" alt="아비뇽 플라스 피 노천 좌판 — 해바라기 다발과 호박, 감자, 초가을 채소" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/les-halles.html">Les Halles</a></h3>
+    <p class="card-dek">아비뇽의 실내 중앙시장이다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/avignon-palais-papes-01-thumb-480.webp" srcset="../assets/images/thumbnails/avignon-palais-papes-01-thumb-480.webp 480w" sizes="84px" alt="팔레 광장에서 본 교황청 궁전 서쪽 정면 — 총안 성벽과 쌍둥이 첨탑의 정문이 한눈에 들어온다" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/palais-des-papes.html">Palais des Papes</a></h3>
+    <p class="card-dek">1273년부터 교황들은 로마에서 안전하지도 자유롭지도 독립적이지도 못하게 되자 그곳을 떠났다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article><article class="card place-card">
+  <img class="thumb" src="../assets/images/thumbnails/avignon-pont-benezet-01-thumb-480.webp" srcset="../assets/images/thumbnails/avignon-pont-benezet-01-thumb-480.webp 480w" sizes="84px" alt="론강 위에 남은 생 베네제 다리의 네 아치와 다리 위 생 니콜라 예배당이 강물에 비친 모습" loading="lazy" decoding="async">
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="../places/pont-saint-benezet.html">Pont Saint-Bénézet</a></h3>
+    <p class="card-dek">전설에 따르면 12세기에 비바레 출신의 젊은 목동 베네제가 신의 명령으로 다리를 지었다.</p>
+    <div class="metarow"><span class="badge badge-must">필수</span></div>
+  </div>
+</article></div>
+</div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide" aria-current="page"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
 </body>
 </html>

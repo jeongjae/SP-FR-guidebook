@@ -3,59 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>오프라인 페이지 없음 — 2026 유럽 여행 가이드북</title>
+<title>저장되지 않은 페이지 — 유럽 43일 가이드북</title>
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="./assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="./assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
 <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body data-rel=".">
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="./index.html">2026 유럽 여행 가이드북</a><span class="tb-sep" aria-hidden="true">›</span><b>오프라인</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="./index.html">홈</a><span class="sep" aria-hidden="true">›</span><b>오프라인</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
 
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-
-<h1>이 페이지는 아직 저장되지 않았습니다</h1>
-<p class="offline-note"><b>인터넷 연결이 없고 요청한 페이지가 기기에 없습니다.</b>
-연결이 가능할 때 오프라인 준비 화면에서 전체 가이드북 저장을 완료하세요.</p>
-<div class="related">
-  <a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>저장된 홈 열기</a>
-  <a href="maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 준비 확인</a>
+  <div id="search-results" aria-live="polite"></div>
 </div>
+<main id="main">
+<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>이 페이지는 아직 저장되지 않았다</h1>
+<p class="hero-dek">연결이 없고, 요청한 페이지가 기기에 없다.</p></header>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>연결이 되는 곳에서 <strong>오프라인 준비</strong> 화면을 열어 전체 저장을 마치면 이런 일이 생기지 않는다.</div></div>
+<div class="btn-row">
+  <a class="btn btn-primary" href="index.html"><b class="ic ic-only ic-today" aria-hidden="true"></b>저장된 홈 열기</a>
+  <a class="btn btn-secondary" href="offline.html"><b class="ic ic-only ic-download" aria-hidden="true"></b>오프라인 준비</a>
+</div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="./about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="./maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="./about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="./daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="./daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="./maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="./regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="./tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="./index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="./schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="./guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="./map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="./prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="./assets/data.js" defer></script>
-<script src="./assets/nav.js" defer></script>
+<script src="./assets/search-index.js" defer></script>
+<script src="./assets/app.js" defer></script>
 <script src="./assets/pwa.js" defer></script>
 </body>
 </html>

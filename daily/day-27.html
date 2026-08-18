@@ -3,231 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0C1416" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF6EF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="유럽 가이드북">
-<title>Day 27 · 9/24 목 · Paris — 2026 유럽 여행 가이드북</title>
+<title>Day 27 · Paris — 유럽 43일 가이드북</title>
+<meta name="description" content="Lyon→Paris, 17일 거주자가 되는 날">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
 <meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
 <meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
-<link rel="stylesheet" href="../assets/google-map.css">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body data-rel=".." data-country="fr">
+<body data-region="paris">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
-  <nav class="tb-crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="tb-sep" aria-hidden="true">›</span><a href="../regions.html">지역</a><span class="tb-sep" aria-hidden="true">›</span><a href="../chapters/lyon/index.html">Lyon · Paris</a><span class="tb-sep" aria-hidden="true">›</span><b>Day 27</b></nav>
-  <button id="search-btn" aria-label="검색 열기"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../schedule.html">전체 일정</a><span class="sep" aria-hidden="true">›</span><b>Day 27</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
 </header>
-<nav class="subnav" aria-label="이 묶음 안에서 이동"><div class="sn-group"><span class="sn-label">일정</span><div class="sn-layers"><a href="index.html">전체 목록</a><a href="day-26.html">← 앞</a><a href="day-28.html">뒤 →</a></div></div><div class="sn-group"><span class="sn-label">날짜</span><div class="sn-days"><a href="day-22.html" title="Day 22">9/19</a><a href="day-23.html" title="Day 23">9/20</a><a href="day-24.html" title="Day 24">9/21</a><a href="day-25.html" title="Day 25">9/22</a><a href="day-26.html" title="Day 26">9/23</a><a href="day-27.html" class="here" title="Day 27">9/24</a><a href="day-28.html" title="Day 28">9/25</a><a href="day-29.html" title="Day 29">9/26</a><a href="day-30.html" title="Day 30">9/27</a><a href="day-31.html" title="Day 31">9/28</a><a href="day-32.html" title="Day 32">9/29</a></div></div></nav>
-<div id="overlay"></div>
-<aside id="search-sheet" aria-label="검색">
-  <div class="ss-head">
-    <button id="sheet-close" aria-label="닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
-    <span>검색</span>
+<div class="country-band" data-country="fr" role="presentation"></div>
+<nav class="tabs" aria-label="하위 메뉴"><a href="../daily/day-27.html" aria-current="page">Day 27</a><a href="../daily/day-28.html">Day 28</a><a href="../daily/day-29.html">Day 29</a><a href="../daily/day-30.html">Day 30</a><a href="../daily/day-31.html">Day 31</a><a href="../daily/day-32.html">Day 32</a><a href="../daily/day-33.html">Day 33</a><a href="../daily/day-34.html">Day 34</a><a href="../daily/day-35.html">Day 35</a><a href="../daily/day-36.html">Day 36</a><a href="../daily/day-37.html">Day 37</a><a href="../daily/day-38.html">Day 38</a><a href="../daily/day-39.html">Day 39</a><a href="../daily/day-40.html">Day 40</a><a href="../daily/day-41.html">Day 41</a><a href="../daily/day-42.html">Day 42</a></nav>
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
   </div>
-  <input id="search-input" type="search" placeholder="장소·섹션 검색" autocomplete="off">
-  <div id="search-results"></div>
-</aside>
-<main>
-
-<nav class="coords" aria-label="일자·지역·주제로 이동"><span class="cd-here"><b>일정</b><span>Day 27 · 9/24 목</span></span><a href="../chapters/paris/schedule.html"><b>지역</b><span>Paris</span></a><a href="../topics/index.html"><b>주제</b><span>전체 주제</span></a></nav>
-<h1>Day 27 · 9/24 목 · Paris</h1>
-<figure class="guide-photo guide-photo--hero" data-photo-id="lyon-annecy-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/hero/lyon-annecy-01-hero-800.webp 800w, ../assets/images/hero/lyon-annecy-01-hero-1280.webp 1280w, ../assets/images/hero/lyon-annecy-01-hero-1920.webp 1920w" sizes="100vw">
-    <img src="../assets/images/hero/lyon-annecy-01-hero-1280.webp" alt="티우 운하 한가운데 뱃머리처럼 선 팔레 드 릴과 꽃으로 장식된 강변"
-      width="1280" height="720" loading="eager"
-      decoding="async" fetchpriority="high">
-  </picture>
-  <figcaption><span>티우 운하 가운데 12세기 건물 팔레 드 릴이 뱃머리처럼 서 있다.</span><span class="media-credit">Photo: chisloup · <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener license">CC BY 3.0</a> · <a href="../about/photo-credits.html#lyon-annecy-01">사진 정보</a></span></figcaption>
-</figure><section class="media-gallery guide-photo-gallery" aria-label="오늘의 주요 장소"><h2 class="media-gallery-title">오늘의 주요 장소</h2><div class="media-gallery-grid"><figure class="guide-photo guide-photo--gallery" data-photo-id="lyon-annecy-vieille-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/lyon-annecy-vieille-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/lyon-annecy-vieille-01-thumb-480.webp" alt="석조 아케이드 아래 카페가 늘어선 안시 구시가지 생트클레르 거리"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>안시 구시가지의 중심 거리인 생트클레르 거리 — 양쪽에 석조 아케이드가 이어진다.</span><span class="media-credit">Photo: Sebleouf · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#lyon-annecy-vieille-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="lyon-thiou-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/lyon-thiou-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/lyon-thiou-01-thumb-480.webp" alt="꽃 화분이 걸린 티우 운하와 멀리 보이는 산줄기"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>구시가지를 관통하는 티우 운하 — 호수의 물이 이 운하를 통해 빠져나간다.</span><span class="media-credit">Photo: Florian Pépellin · <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener license">CC BY-SA 4.0</a> · <a href="../about/photo-credits.html#lyon-thiou-01">사진 정보</a></span></figcaption>
-</figure><figure class="guide-photo guide-photo--gallery" data-photo-id="lyon-lake-annecy-01">
-  <picture>
-    <source type="image/webp" srcset="../assets/images/thumbnails/lyon-lake-annecy-01-thumb-480.webp 480w" sizes="(max-width: 720px) 44vw, 320px">
-    <img src="../assets/images/thumbnails/lyon-lake-annecy-01-thumb-480.webp" alt="여름의 안시 호수 — 푸른 물과 호수를 둘러싼 산들, 물 위의 보트"
-      width="480" height="320" loading="lazy"
-      decoding="async">
-  </picture>
-  <figcaption><span>산으로 둘러싸인 안시 호수와 물 위의 보트들.</span><span class="media-credit">Photo: Tatiana Decrocq · <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener license">CC BY-SA 3.0</a> · <a href="../about/photo-credits.html#lyon-lake-annecy-01">사진 정보</a></span></figcaption>
-</figure></div></section>
-<p class="day-flags"><span class="badge badge-p0">P0 연결</span><span class="badge badge-pending">거점 이동</span><span class="badge badge-rest">양쪽 챕터</span></p>
-<section class="day-command" aria-label="오늘 실행 요약">
-<dl class="day-quick"><div class="dq-item dq-core"><dt>핵심 실행</dt><dd>Lyon 11:00 체크아웃→TGV→15박 체크인</dd></div><div class="dq-item dq-depart"><dt>권장 출발</dt><dd>체크아웃 11:00·열차 기준 역산</dd></div><div class="dq-item dq-buffer"><dt>완충</dt><dd>Gare de Lyon→숙소 택시·체크인 2시간</dd></div><div class="dq-item dq-book"><dt>예약</dt><dd>2건 — 완료 0 · 미확정 2 · <a href="../tracker/reservations.html">현황</a></dd></div></dl>
-<nav class="day-actions" aria-label="오늘 바로가기"><a href="../chapters/paris/schedule.html"><b class="ic ic-list" aria-hidden="true"></b>챕터 일정</a><a href="../maps/paris.html"><b class="ic ic-map" aria-hidden="true"></b>Paris 실행지도</a><a href="../maps/lyon.html"><b class="ic ic-map" aria-hidden="true"></b>Lyon 실행지도</a></nav>
-</section>
-<section class="transfer-day" aria-label="이동일 체크리스트"><h2 class="ic ic-check">이동일 체크리스트</h2><ol class="td-steps"><li><b>출발·체크아웃</b><span>체크아웃 11:00·열차 기준 역산</span></li><li><b>경유·핵심</b><span>Lyon 11:00 체크아웃→TGV→15박 체크인</span></li><li><b>완충</b><span>Gare de Lyon→숙소 택시·체크인 2시간</span></li><li><b>지연 시 생략</b><span>외부관광 전부</span></li><li><b>대체안</b><span>짐정리·최소 장보기만</span></li><li><b>잠금·예약</b><span>TGV·Paris 숙소</span></li></ol><p class="note">실행성 감사의 값을 이동 순서로 재배열한 것이다. 체크인 시각·주차 등 미확정 값은 확정 후 채운다.</p></section>
-<h2 class="ic ic-clock">시간표</h2><h3>Lyon</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>상대시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>기차 4시간 전</td>
-<td>기상·숙소 아침·짐정리</td>
-<td>여권·티켓·귀중품은 몸에 지닌 작은 가방으로 분리</td>
-</tr>
-<tr>
-<td>기차 3시간 전</td>
-<td>선택: Saint-Antoine 시장 또는 Rhône 강변 30분</td>
-<td>열차가 11시 이후일 때만. 시장은 금요일 오전 운영</td>
-</tr>
-<tr>
-<td>기차 2시간 전</td>
-<td>체크아웃</td>
-<td>숙소 영수증·분실물 확인</td>
-</tr>
-<tr>
-<td>기차 90분 전</td>
-<td>숙소→Part-Dieu 택시</td>
-<td>큰 짐이므로 메트로 환승보다 택시 우선</td>
-</tr>
-<tr>
-<td>기차 30분 전</td>
-<td>플랫폼 부근 대기</td>
-<td>카페에 짐을 흩어두지 않고, 캐리어 손잡이를 잡거나 다리 사이에 둔다</td>
-</tr>
-<tr>
-<td>탑승</td>
-<td>Lyon→Paris TGV</td>
-<td>짐 선반이 시야 밖이면 자물쇠·와이어스트랩 사용 고려</td>
-</tr>
-</tbody>
-</table></div><h3>Paris</h3><div class="table-wrap"><table class="day-time">
-<thead>
-<tr>
-<th>시간</th>
-<th>일정</th>
-<th>실행 포인트</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>오전–오후</td>
-<td>Lyon Part-Dieu → Paris Gare de Lyon</td>
-<td>정확한 TGV 확정 후 문전시간 고정</td>
-</tr>
-<tr>
-<td>도착 후 45–75분</td>
-<td>숙소 이동·체크인</td>
-<td>15박 수하물이므로 5구·15구 모두 택시가 합리적</td>
-</tr>
-<tr>
-<td>+60분</td>
-<td>객실 점검</td>
-<td>주방, 세탁기/세탁실, 냉장고, 환기, 엘리베이터, 쓰레기 배출 확인</td>
-</tr>
-<tr>
-<td>17:00 전후</td>
-<td>슈퍼·빵집 첫 장보기</td>
-<td>아침·물 등 필수품만 구매. 시장 방문 전 대량구매 금지</td>
-</tr>
-<tr>
-<td>18:30–19:15</td>
-<td>숙소 반경 800m 산책</td>
-<td>약국·세탁·시장·메트로·택시 승강장 위치만 파악</td>
-</tr>
-<tr>
-<td>19:30 이후</td>
-<td>숙소식 또는 가까운 식당</td>
-<td>긴 이동일에는 유명식당 예약 금지</td>
-</tr>
-</tbody>
-</table></div>
-<h2 class="ic ic-gauge">피로도</h2><p><span class="fatigue" data-v="3" aria-label="피로도 3 / 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><b>3/5</b></span></p>
-
-<h2 class="ic ic-note">이 날의 메모</h2><h3>Lyon</h3><h3 id="생활권의-마지막-아침-part-dieu에서-파리-이동">생활권의 마지막 아침, Part-Dieu에서 파리 이동</h3>
-<ul>
-<li><strong>오늘의 결론</strong>: 파리 체크인까지 이어지는 이동일이므로 리옹에서 새로운 관광을 추가하지 않는다.</li>
-<li><strong>상태</strong>: <strong>고정</strong></li>
-</ul>
-<h4 id="실행-시간표">실행 시간표</h4>
-<h4 id="오늘-지도">오늘 지도</h4>
-<h4 id="대안-대책-우천휴관교통-장애">대안 대책 (우천·휴관·교통 장애)</h4>
-<ul>
-<li>철도지연 시 파리 첫날 저녁 외식 삭제</li>
-</ul><h3>Paris</h3><h3 id="gare-de-lyon-도착-관광객이-아니라-16일-거주자가-되는-날-도착">Gare de Lyon 도착, ‘관광객’이 아니라 ‘16일 거주자’가 되는 날 <span class="badge badge-rest">도착</span></h3>
-<p><strong>오늘의 필수:</strong> 체크인·짐정리·최소 장보기·귀가길 학습. 대형 미술관·공연·근교 일정은 넣지 않는다.</p>
-<h3 id="꼭-해볼-것">꼭 해볼 것</h3>
-<ul>
-<li>한 번 이용할 슈퍼보다 매일 갈 빵집 한 곳을 먼저 정한다.</li>
-<li>메트로역의 어느 출구가 숙소와 가까운지 실제로 확인한다.</li>
-<li>파리 첫날 야경을 보러 멀리 가지 않고, 동네 카페에 30분 앉는다.</li>
-</ul>
-<hr>
-<details class="day-details"><summary>상세 실행 확인</summary><dl class="day-summary"><div class="ds-item"><dt>최고 리스크</dt><dd>대형수하물·체크인</dd></div><div class="ds-item"><dt>우선 삭제</dt><dd>외부관광 전부</dd></div><div class="ds-item"><dt>대체안</dt><dd>짐정리·최소 장보기만</dd></div><div class="ds-item"><dt>식사·휴식</dt><dd>숙소권 간단식</dd></div><div class="ds-item"><dt>잠금 필요</dt><dd>TGV·Paris 숙소</dd></div></dl></details>
-<div class="related day-more"><a href="../maps/offline.html"><b class="ic ic-download" aria-hidden="true"></b>오프라인 지도</a><a href="index.html"><b class="ic ic-today" aria-hidden="true"></b>전체 데일리 목록</a></div>
-<section class="daily-map-section" aria-labelledby="daily-map-title-27">
-<h2 id="daily-map-title-27" class="ic ic-map">Google 실행지도</h2>
-<p class="note">Lyon → Paris TGV — 16박 장기체류 시작</p>
-<section class="gm-component" data-scope="daily" aria-label="Google 실행지도">
-<nav class="gm-toolbar" aria-label="장소 유형 필터"><button class="gm-filter" type="button" data-type="all" aria-pressed="true">전체</button><button class="gm-filter" type="button" data-type="accommodation" aria-pressed="false">숙소</button><button class="gm-filter" type="button" data-type="station" aria-pressed="false">역</button></nav>
-<div class="gm-actions"><a class="gm-action gm-action-primary gm-route-all" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;origin=45.746467%2C4.868933&amp;destination=48.8446832%2C2.3737743&amp;travelmode=transit&amp;waypoints=45.7605725%2C4.8601628">오늘 동선 열기</a></div>
-<div class="gm-grid">
-<details class="gm-map-disclosure">
-  <summary>지도 펼치기</summary>
-  <p class="gm-status" data-state="idle" role="status" aria-live="polite">지도는 펼칠 때만 불러옵니다.</p>
-  <div class="gm-canvas" role="region" aria-label="Google 지도"></div>
-</details>
-<ol class="gm-place-list"><li class="gm-place-card" data-place-id="lyon-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="lyon-stay-candidate" aria-pressed="false"><strong>0. Lagrange Aparthotel Lyon Lumière (확정 숙소)</strong><span>숙소 · 기차 2시간 전 체크아웃</span><small>확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권).</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=81-85+Cours+Albert+Thomas%2C+69003+Lyon">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.746467%2C4.868933&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="lyon-part-dieu" data-type="station"><button class="gm-card-main" type="button" data-place-id="lyon-part-dieu" aria-pressed="false"><strong>1. Lyon Part-Dieu 역</strong><span>역 · 기차 90분 전 택시 이동</span><small>큰 짐 — 메트로 환승보다 택시.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gare+de+Lyon+Part-Dieu">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7605725%2C4.8601628&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="paris-gare-de-lyon" data-type="station"><button class="gm-card-main" type="button" data-place-id="paris-gare-de-lyon" aria-pressed="false"><strong>2. Paris Gare de Lyon</strong><span>역 · 오전–오후 TGV</span><small>TGV 확정 후 문전시간 고정.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Gare+de+Lyon%2C+Paris">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.8446832%2C2.3737743&amp;travelmode=transit">현 위치에서 길찾기</a></div></li><li class="gm-place-card" data-place-id="paris-stay-candidate" data-type="accommodation"><button class="gm-card-main" type="button" data-place-id="paris-stay-candidate" aria-pressed="false"><strong>3. Pepper &amp; Paper</strong><span>숙소 · 도착 후 45–75분</span><small>후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 16박 수하물 — 택시 이동.</small></button><div class="gm-card-actions"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pepper+%26+Paper">지도 열기</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.83966%2C2.34644&amp;travelmode=transit">현 위치에서 길찾기</a><span class="gm-private-note">근사 위치</span></div></li></ol>
+  <div id="search-results" aria-live="polite"></div>
 </div>
-<details class="gm-segments"><summary>구간별 길찾기</summary><ol><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7605725%2C4.8601628&amp;travelmode=driving&amp;origin=45.746467%2C4.868933">Lagrange Aparthotel Lyon Lumière (확정 숙소) → Lyon Part-Dieu 역 · 자동차</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.8446832%2C2.3737743&amp;travelmode=transit&amp;origin=45.7605725%2C4.8601628">Lyon Part-Dieu 역 → Paris Gare de Lyon · 대중교통</a></li><li><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=48.83966%2C2.34644&amp;travelmode=driving&amp;origin=48.8446832%2C2.3737743">Paris Gare de Lyon → Pepper &amp; Paper · 자동차</a></li></ol></details>
-<script type="application/json">{"center":[47.3,3.6],"zoom":7,"places":[{"id":"lyon-stay-candidate","name":"Lagrange Aparthotel Lyon Lumière (확정 숙소)","city":"Lyon","type":"accommodation","lat":45.746467,"lng":4.868933,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=81-85+Cours+Albert+Thomas%2C+69003+Lyon","address":"81-85 Cours Albert Thomas, 69003 Lyon","private":false,"approximate":false,"optional":false,"status":"confirmed","legacySources":["75_Execution_Maps/Lyon_Execution_Map_v0.2.geojson"],"coordinatesVerified":"OSM Nominatim, 2026-08-14"},{"id":"lyon-part-dieu","name":"Lyon Part-Dieu 역","city":"Lyon","type":"station","lat":45.7605725,"lng":4.8601628,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Gare+de+Lyon+Part-Dieu","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"},{"id":"paris-gare-de-lyon","name":"Paris Gare de Lyon","city":"Paris","type":"station","lat":48.8446832,"lng":2.3737743,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Gare+de+Lyon%2C+Paris","address":"","private":false,"approximate":false,"optional":false,"status":"planned","coordinatesVerified":"OSM Nominatim, 2026-08-07"},{"id":"paris-stay-candidate","name":"Pepper \u0026 Paper","city":"Paris","type":"accommodation","lat":48.83966,"lng":2.34644,"googlePlaceId":"","googleMapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Pepper+%26+Paper","address":"","private":false,"approximate":true,"optional":true,"status":"candidate","legacySources":["75_Execution_Maps/Paris_Execution_Map_v0.2.geojson"]}],"day":{"date":"2026-09-24","city":"Lyon · Paris","title":"Lyon → Paris TGV — 16박 장기체류 시작","center":[47.3,3.6],"zoom":7,"defaultMode":"transit","stops":[{"placeId":"lyon-stay-candidate","order":0,"plannedTime":"기차 2시간 전 체크아웃","note":"확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."},{"placeId":"lyon-part-dieu","order":1,"plannedTime":"기차 90분 전 택시 이동","note":"큰 짐 — 메트로 환승보다 택시."},{"placeId":"paris-gare-de-lyon","order":2,"plannedTime":"오전–오후 TGV","note":"TGV 확정 후 문전시간 고정."},{"placeId":"paris-stay-candidate","order":3,"plannedTime":"도착 후 45–75분","note":"후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 16박 수하물 — 택시 이동."}],"segments":[{"from":"lyon-stay-candidate","to":"lyon-part-dieu","mode":"driving"},{"from":"lyon-part-dieu","to":"paris-gare-de-lyon","mode":"transit"},{"from":"paris-gare-de-lyon","to":"paris-stay-candidate","mode":"driving"}]}}</script>
+<main id="main">
+<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY 27</span>
+    <span class="day-date">9/24 목</span></div>
+  <h1>Paris</h1>
+  <p class="hero-dek">Lyon→Paris, 17일 거주자가 되는 날</p>
+  <div class="metarow"><span class="badge badge-caution">거점 이동</span><span><b class="ic ic-only ic-gauge" aria-hidden="true"></b>피로도 3</span><span>TGV 약 465km + 택시</span></div>
+</header>
+<section class="action-card" id="next-action"
+    data-day="2026-09-24">
+  <span class="label">NEXT</span>
+  <div class="action-when">17:00</div>
+  <div class="action-what">첫 장보기·800m 산책</div>
+  <p class="card-dek">필수품만 — 시장 방문 전 대량구매 금지. 약국·세탁·메트로 위치 파악</p>
 </section>
-</section>
-<details class="day-details day-card-archive" open><summary>Daily Action Map</summary>
-<figure class="daily-card daily-card-v2">
-  <a href="../assets/daily-cards/full/day-27-paris.webp" aria-label="Day 27 Daily Action Map 원본 확대">
-    <img src="../assets/daily-cards/thumbs/day-27-paris-thumb.webp"
-      width="480" height="640" loading="lazy"
-      alt="Day 27 Paris 시간순 일정과 실제 지도 이동 동선 카드">
-  </a>
-  <figcaption><a href="../assets/daily-cards/full/day-27-paris.png">검수용 PNG 원본</a></figcaption>
-</figure>
-<p class="note">실제 좌표와 OpenStreetMap을 사용한 실행용 요약입니다. 도로·대중교통 상황은 출발 직전에 다시 확인하세요.</p>
-</details>
-<nav class="pager"><a href="day-26.html">← Day 26</a><span></span><a href="day-28.html">Day 28 →</a></nav>
+<div class="sec-head"><h2>오늘 예약</h2></div>
+<div class="prose"><ul><li><strong> Lyon 체크아웃</strong> — 예약완료 Lagrange Aparthotel Lyon Lumière — 체크아웃 11:00</li><li><strong> TGV→Paris Gare de Lyon</strong> — TGV 편성 확정 필요</li><li><strong> 숙소 이동·체크인·객실 점검</strong> — Paris 숙소 후보 확정 필요</li></ul></div>
+<div class="sec-head"><h2>오늘 일정</h2></div>
+<ol class="timeline"><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> Lyon 체크아웃 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">체크아웃 11:00 — 메트로 D Sans Souci→Saxe-Gambetta 환승→B선 Part-Dieu, 짐이 크면 택시</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>예약완료 Lagrange Aparthotel Lyon Lumière — 체크아웃 11:00</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-train" aria-hidden="true"></b>
+    기차 · 약 2시간 · TGV Part-Dieu→Gare de Lyon</span></div>
+</li><li class="tl-item" data-start="" data-end="">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-train" aria-hidden="true"></b> TGV→Paris Gare de Lyon <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">정확한 TGV 확정 후 문전시간 고정, 짐은 시야 안쪽</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>TGV 편성 확정 필요</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-car" aria-hidden="true"></b>
+    택시 · 45–75분 · 약 5km · 공식 택시승강장</span></div>
+</li><li class="tl-item" data-start="" data-end="17:00">
+  <div class="tl-time"></div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소 이동·체크인·객실 점검 <span class="badge badge-caution">예약</span></div>
+    <p class="tl-note">도착 후 45–75분 택시 — 주방·세탁기·냉장고·엘리베이터·쓰레기 배출 확인</p><p class="tl-note"><b class="ic ic-only ic-ticket" aria-hidden="true"></b>Paris 숙소 후보 확정 필요</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.3km</span></div>
+</li><li class="tl-item" data-start="17:00" data-end="19:15">
+  <div class="tl-time">17:00</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-pin" aria-hidden="true"></b> 첫 장보기·800m 산책 </div>
+    <p class="tl-note">필수품만 — 시장 방문 전 대량구매 금지. 약국·세탁·메트로 위치 파악</p>
+  </div>
+</li><li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line"><b class="ic ic-only ic-pin" aria-hidden="true"></b>
+    도보 · 5분 · 0.3km</span></div>
+</li><li class="tl-item" data-start="19:30" data-end="">
+  <div class="tl-time">19:30</div>
+  <div class="tl-body">
+    <div class="tl-name"><b class="ic ic-only ic-stay" aria-hidden="true"></b> 숙소식 또는 가까운 식당 </div>
+    <p class="tl-note">긴 이동일 — 유명식당 예약 금지, 대형 일정 없음</p>
+  </div>
+</li></ol>
+<div class="sec-head"><h2>확인할 것</h2></div>
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>Plan B</strong> — 지연 시 짐정리·최소 장보기만</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>TGV 9/24 편성·시각 확정</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Paris 숙소 후보(Pepper &amp; Paper) 확정 — 16박의 중심</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>체크인 가능 시각 확인</div></div><div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div>Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884</div></div>
+<div class="sec-head"><h2>오늘 지도</h2></div>
+<div class="map-card">
+  <div class="map-canvas" id="map-canvas" hidden></div>
+  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
+  <script type="application/json" id="map-data">{"center":[48.8425,2.361],"zoom":13,"pins":[{"id":"lyon-checkout","name":"Lyon 체크아웃","lat":45.746467,"lng":4.868933,"cat":"hotel","time":null,"place":null},{"id":"gare-de-lyon","name":"TGV→Paris Gare de Lyon","lat":48.8436635,"lng":2.3744869,"cat":"transport","time":null,"place":null},{"id":"paris-checkin","name":"숙소 이동·체크인·객실 점검","lat":48.83966,"lng":2.34644,"cat":"hotel","time":null,"place":null},{"id":"first-grocery","name":"첫 장보기·800m 산책","lat":48.8399,"lng":2.3459,"cat":"shopping","time":"17:00","place":null},{"id":"paris-return","name":"숙소식 또는 가까운 식당","lat":48.83966,"lng":2.34644,"cat":"hotel","time":"19:30","place":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Day 27 동선 · 5곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list"><li data-pin="lyon-checkout">Lyon 체크아웃<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=45.746467,4.868933"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Lyon 체크아웃 </span>열기</a></li><li data-pin="gare-de-lyon">TGV→Paris Gare de Lyon<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.8436635,2.3744869"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">TGV→Paris Gare de Lyon </span>열기</a></li><li data-pin="paris-checkin">숙소 이동·체크인·객실 점검<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.83966,2.34644"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소 이동·체크인·객실 점검 </span>열기</a></li><li data-pin="first-grocery"><span class="meta">17:00</span>첫 장보기·800m 산책<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.8399,2.3459"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">첫 장보기·800m 산책 </span>열기</a></li><li data-pin="paris-return"><span class="meta">19:30</span>숙소식 또는 가까운 식당<a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&query=48.83966,2.34644"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">숙소식 또는 가까운 식당 </span>열기</a></li></ol>
+</div>
+<div class="stack"><details class="acc"><summary>이동</summary><div class="acc-body"><ul><li>TGV (좌석·수하물 위치 확인)</li><li>Gare de Lyon 택시</li></ul></div></details><details class="acc"><summary>식사</summary><div class="acc-body"><ul><li>첫 장보기 — 필수품만</li><li>숙소식 또는 동네 식당</li></ul></div></details><details class="acc"><summary>오늘의 핵심</summary><div class="acc-body"><ul><li>P0 이동일 — 외부관광 전부 삭제</li><li>매일 갈 빵집 한 곳을 먼저 정한다</li><li>동네 카페 30분</li></ul></div></details></div>
+<div class="btn-row" style="justify-content:space-between"><a class="btn btn-secondary" href="../daily/day-26.html">← Day 26</a><a class="btn btn-secondary" href="../daily/day-28.html">Day 28 →</a></div>
+</div></div>
 </main>
 <footer>
-  <p>2026 유럽 여행 가이드북 · 2026-08-29 ~ 2026-10-10 · 43일 42박</p>
-  <p><a href="../about/photo-credits.html">사진 저작자 표시 · 라이선스</a> ·
-     <a href="../maps/offline.html">오프라인 지도 준비</a></p>
-  <p class="buildstamp">빌드 3bb39f3 · 2026-08-18</p>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 <nav class="bottomnav" aria-label="주요 메뉴">
-  <a href="../daily/index.html" class="nav-today" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
-  <a href="../daily/index.html" data-tab="itinerary"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>일정</span></a>
-  <a href="../maps/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
-  <a href="../regions.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
-  <a href="../tracker/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+  <a href="../index.html" data-tab="today" aria-current="page"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
 </nav>
-<button id="back-top" aria-label="맨 위로"><b class="ic ic-only ic-up" aria-hidden="true"></b></button>
-<script src="../assets/data.js" defer></script>
-<script src="../assets/nav.js" defer></script>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
 <script src="../assets/pwa.js" defer></script>
-<script src="../assets/google-map-loader.js" defer></script>
-<script src="../assets/google-map.js" defer></script>
 </body>
 </html>
