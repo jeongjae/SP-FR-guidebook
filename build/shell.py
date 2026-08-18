@@ -94,9 +94,11 @@ def badge(kind: str, text: str) -> str:
 
 GRADE_BADGE = {
     "essential": ("must", "필수"),
-    "priority": ("neutral", "우선"),
+    "priority": ("neutral", "우선 추천"),
     "optional": ("neutral", "선택"),
-    "alternative": ("neutral", "대안"),
+    # 대체안은 기본 일정이 아니다 — 우천·피로 때 바꿔 넣는 자리다.
+    "alternative": ("neutral", "대체"),
+    "discouraged": ("neutral", "비추천"),
 }
 
 

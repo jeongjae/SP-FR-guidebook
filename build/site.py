@@ -15,6 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import model
+import promote_places
 import render
 from render import SITE
 
@@ -41,6 +42,12 @@ def clean_site() -> None:
 
 
 def main() -> int:
+    # 장소 장문은 챕터 원고에서 매 빌드 다시 뽑는다. 콘텐츠 편집은 이
+    # 개편과 나란히 계속되므로, 원고를 고치면 사이트가 따라와야 한다.
+    # 30_Places/ 는 손으로 유지하는 사본이 아니라 파생물이다.
+    promoted = promote_places.regenerate()
+    print(f"장소 장문 승격: {len(promoted)}개")
+
     trip = model.load_trip()
     problems = model.validate(trip)
     if problems:
@@ -48,6 +55,13 @@ def main() -> int:
         for p in problems:
             print("  " + p)
         return 1
+    guard = render.check_vocabulary(trip) + render.check_place_prose(trip, promoted)
+    if guard:
+        print("가드 실패:")
+        for g in guard:
+            print("  " + g)
+        return 1
+
     print(f"모델: {trip.total_days}일 · 지역 {len(trip.regions)} · "
           f"장소 {len(trip.places)} (장문 "
           f"{sum(1 for p in trip.places.values() if p.has_deep_guide)})")

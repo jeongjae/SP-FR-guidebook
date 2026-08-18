@@ -1063,3 +1063,18 @@ footer p { margin: 0 0 var(--s1); }
 @media (min-width: 1100px) {
   .scroll-x { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* 이동수단이 아직 안 정해진 구간. 확정된 구간과 같아 보이면 현장에서
+   "정해져 있는 줄" 알고 움직이게 된다. */
+.tl-leg-open .tl-leg-line {
+  color: var(--sig-caution-ink);
+  font-weight: 700;
+}
+.tl-leg-open .tl-body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: var(--s3);
+  border-top: 2px dashed var(--sig-caution);
+}

@@ -63,6 +63,32 @@ def norm(s: str) -> str:
     return re.sub(r"[^a-z0-9가-힣]", "", s.lower())
 
 
+LAYER_HEADS = ("왜 가는가", "더 깊이", "실용")
+
+
+def tidy(md_text: str) -> str:
+    """마크다운 위생. 승격할 때마다 똑같이 적용된다.
+
+    1) 표 바로 뒤에 붙은 인용문 앞에 빈 줄을 넣는다. 붙어 있으면 마크다운이
+       인용으로 읽지 못하고 '>' 를 글자로 출력한다 — 원고 18개가 그랬다.
+    2) 절 안의 헤딩을 h3 으로 통일한다. 원고는 h4~h6 을 섞어 쓰는데,
+       장소 페이지에서는 '왜 가는가/더 깊이/실용' 이 뼈대고 그 아래는
+       전부 같은 층이다.
+    """
+    out, fence = [], False
+    for line in md_text.splitlines():
+        if line.strip().startswith("```"):
+            fence = not fence
+        if not fence:
+            if line.lstrip().startswith(">") and out and out[-1].strip().startswith("|"):
+                out.append("")
+            m = re.match(r"^(#{3,6})\s+(.*)$", line)
+            if m and m.group(2).strip() not in LAYER_HEADS:
+                line = "### " + m.group(2).strip()
+        out.append(line)
+    return "\n".join(out)
+
+
 def load_registry() -> list[dict]:
     rows, region = [], None
     for line in REGISTRY_MD.read_text(encoding="utf-8").splitlines():
@@ -181,13 +207,13 @@ def write_place(item: dict, dry: bool) -> Path:
 
     parts = list(fm)
     if item["why_go"]:
-        parts += ["## 왜 가는가", "", item["why_go"], ""]
+        parts += ["## 왜 가는가", "", tidy(item["why_go"]), ""]
     if item["deep"]:
-        parts += ["## 더 깊이", "", item["deep"], ""]
+        parts += ["## 더 깊이", "", tidy(item["deep"]), ""]
     if item["practical"]:
-        parts += ["## 실용", "", item["practical"], ""]
+        parts += ["## 실용", "", tidy(item["practical"]), ""]
     if not (item["why_go"] or item["deep"]) and item["lead"]:
-        parts += [item["lead"], ""]
+        parts += [tidy(item["lead"]), ""]
 
     out = OUT_DIR / f"{row['slug']}.md"
     if not dry:
@@ -196,11 +222,20 @@ def write_place(item: dict, dry: bool) -> Path:
     return out
 
 
+def regenerate(dry_run: bool = False) -> set[str]:
+    """빌드에서 부르는 진입점. 승격된 슬러그 집합을 돌려준다."""
+    return _run(argparse.Namespace(dry_run=dry_run, quiet=True))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
-    args = ap.parse_args()
+    _run(ap.parse_args())
+    return 0
 
+
+def _run(args) -> set[str]:
+    quiet = getattr(args, "quiet", False)
     registry = load_registry()
     by_key: dict[tuple[str, str], dict] = {}
     for row in registry:
@@ -251,29 +286,35 @@ def main() -> int:
     for item in promoted:
         by_region[item["row"]["region"]] = by_region.get(item["row"]["region"], 0) + 1
 
-    print(f"승격 {len(promoted)} / 명부 {len(registry)}  (여러 절을 병합한 장소 {merged}개)")
-    for region in CHAPTER_REGION.values():
-        total = sum(1 for r in registry if r["region"] == region)
-        print(f"  {region:10s} {by_region.get(region, 0):3d} / {total}")
+    # 이번에 나오지 않은 옛 파일은 지운다. 남겨 두면 원고에서 사라진 장소가
+    # 사이트에 계속 살아 있게 된다 — 정본이 둘이 되는 것과 같다.
+    if not args.dry_run:
+        keep = {i["row"]["slug"] for i in promoted}
+        for stale in sorted(OUT_DIR.glob("*.md")):
+            if stale.stem not in keep:
+                stale.unlink()
+                unmatched.append(f"{stale.stem}: 원고에 절이 없어 제거")
+
+    if not quiet:
+        print(f"승격 {len(promoted)} / 명부 {len(registry)}  "
+              f"(여러 절을 병합한 장소 {merged}개)")
+        for region in CHAPTER_REGION.values():
+            total = sum(1 for r in registry if r["region"] == region)
+            print(f"  {region:10s} {by_region.get(region, 0):3d} / {total}")
 
     covered = {i["row"]["slug"] for i in promoted}
-    absent = [r for r in registry if r["slug"] not in covered]
-    print(f"\n장문 없는 장소 {len(absent)}건 — 원고에 해당 절이 없다:")
-    for r in absent[:40]:
-        print(f"  {r['region']:10s} {r['slug']:38s} {r['name']}")
-    if len(absent) > 40:
-        print(f"  … 외 {len(absent) - 40}건")
-
-    if unmatched:
-        print(f"\n건너뛴 절 {len(unmatched)}건:")
-        for u in unmatched[:20]:
-            print("  " + u)
-
-    if args.dry_run:
-        print("\n(--dry-run — 파일을 쓰지 않았다)")
-    else:
-        print(f"\n{OUT_DIR.relative_to(ROOT)} 에 {len(promoted)}개 파일을 썼다.")
-    return 0
+    if not quiet:
+        absent = [r for r in registry if r["slug"] not in covered]
+        print(f"\n장문 없는 장소 {len(absent)}건 — 원고에 해당 절이 없다:")
+        for r in absent[:40]:
+            print(f"  {r['region']:10s} {r['slug']:38s} {r['name']}")
+        if unmatched:
+            print(f"\n건너뛴 절 {len(unmatched)}건:")
+            for u in unmatched[:20]:
+                print("  " + u)
+        print(f"\n{OUT_DIR.relative_to(ROOT)} 에 {len(promoted)}개 파일을 썼다."
+              if not args.dry_run else "\n(--dry-run)")
+    return covered
 
 
 if __name__ == "__main__":

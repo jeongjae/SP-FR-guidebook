@@ -39,18 +39,27 @@ TRACKER_XLSX = ROOT / "source" / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker
 SEARCH_INDEX: list[dict] = []
 IMAGES: dict = {}
 
-# 카테고리 → 아이콘. stop 의 성격을 한눈에 구분한다.
+# 어휘표. daily-cards 가 쓰는 값을 화면 말로 옮긴다.
+#
+# 여기 없는 값이 들어오면 빌드를 세운다 (check_vocabulary). 조용히 넘기면
+# 한국어 화면에 영어 코드가 그대로 새고, 더 나쁘게는 'unconfirmed' 같은
+# 미확정 표시가 확정처럼 보인다.
 CAT_ICON = {
-    "culture": "book", "sight": "pin", "food": "food", "hotel": "stay",
-    "transport": "train", "market": "food", "nature": "pin", "shop": "pin",
+    "culture": "book", "sight": "pin", "food": "food", "cafe": "food",
+    "hotel": "stay", "transport": "train", "activity": "gauge",
+    "shopping": "pin",
 }
 MODE_ICON = {
-    "walk": "pin", "metro": "train", "bus": "train", "train": "train",
-    "drive": "car", "car": "car", "flight": "plane", "taxi": "car",
+    "walk": "pin", "metro": "train", "tram": "train", "bus": "train",
+    "train": "train", "drive": "car", "car": "car", "flight": "plane",
+    "taxi": "car", "unconfirmed": "alert",
 }
 MODE_LABEL = {
-    "walk": "도보", "metro": "지하철", "bus": "버스", "train": "기차",
-    "drive": "운전", "car": "운전", "flight": "비행", "taxi": "택시",
+    "walk": "도보", "metro": "지하철", "tram": "트램", "bus": "버스",
+    "train": "기차", "drive": "운전", "car": "운전", "flight": "비행",
+    "taxi": "택시",
+    # 이동수단이 아직 안 정해진 구간. 확정처럼 보이면 안 된다.
+    "unconfirmed": "이동수단 미정",
 }
 FACT_LABEL = {
     "hours": "운영시간", "closed": "휴무", "price_adult": "요금",
@@ -220,13 +229,15 @@ def timeline(d: Day, rel: str) -> str:
         leg = legs.get((s.id, nxt.id)) if nxt else None
         if leg:
             bits = [MODE_LABEL.get(leg.mode, leg.mode)]
+            unconfirmed = leg.mode == "unconfirmed"
             if leg.duration:
                 bits.append(leg.duration)
             if leg.distance:
                 bits.append(leg.distance)
             if leg.line:
                 bits.append(leg.line)
-            rows.append(f"""<li class="tl-leg">
+            cls = "tl-leg tl-leg-open" if unconfirmed else "tl-leg"
+            rows.append(f"""<li class="{cls}">
   <div></div>
   <div class="tl-body"><span class="tl-leg-line">{ic(MODE_ICON.get(leg.mode, 'pin'))}
     {esc(' · '.join(bits))}</span></div>
@@ -1101,3 +1112,67 @@ def build_sources(trip: Trip) -> str:
 <p>예약은 아직 전부 잠기지 않았다. <strong>확정 전 주소를 확정으로 믿고
 이동하지 않는다.</strong> 확정된 것만 화면에 확정으로 표시된다.</p>
 </div></div></div>""")
+
+
+# ================================================================ 가드
+
+def check_vocabulary(trip: Trip) -> list[str]:
+    """데이터가 쓰는 값을 렌더러가 전부 아는가.
+
+    콘텐츠 편집은 이 개편과 나란히 계속된다. 편집자가 새 이동수단이나
+    새 카테고리를 쓰면 렌더러는 그 값을 모른 채 **영어 코드를 그대로**
+    화면에 흘린다. 실제로 그런 일이 있었다 — Nice 일정이 갱신되면서
+    'tram' 과 'unconfirmed' 가 들어왔고, 특히 'unconfirmed' 는 아직
+    이동수단이 안 정해졌다는 뜻인데 확정된 구간과 똑같이 보였다.
+
+    그래서 빌드를 세운다. 현장에서 읽는 화면이 조용히 틀리는 것보다
+    빌드가 시끄럽게 멈추는 편이 낫다.
+    """
+    problems = []
+    bad_modes, bad_cats, bad_status = {}, {}, {}
+    for d in trip.days:
+        for leg in d.legs:
+            if leg.mode not in MODE_LABEL:
+                bad_modes.setdefault(leg.mode, []).append(d.n)
+        for s in d.stops:
+            if s.category not in CAT_ICON:
+                bad_cats.setdefault(s.category, []).append(d.n)
+        if d.source_status not in ("authoritative", "candidate-latest-needs-review",
+                                   "prototype-reviewed"):
+            bad_status.setdefault(d.source_status, []).append(d.n)
+
+    for mode, days in bad_modes.items():
+        problems.append(
+            f"모르는 이동수단 '{mode}' — Day {sorted(set(days))[:6]}. "
+            f"render.py 의 MODE_LABEL·MODE_ICON 에 한국어 표기를 더한다.")
+    for cat, days in bad_cats.items():
+        problems.append(
+            f"모르는 장소 분류 '{cat}' — Day {sorted(set(days))[:6]}. "
+            f"render.py 의 CAT_ICON 에 아이콘을 지정한다.")
+    for st, days in bad_status.items():
+        problems.append(f"모르는 sourceStatus '{st}' — Day {sorted(set(days))[:6]}")
+
+    # 등급도 마찬가지다. 배지가 안 붙으면 '필수' 가 그냥 사라진다.
+    for pl in trip.places.values():
+        if pl.grade_label and pl.grade is None:
+            problems.append(
+                f"모르는 등급 '{pl.grade_label}' — {pl.slug}. "
+                f"model.py 의 grade_map 에 더한다.")
+    return problems
+
+
+def check_place_prose(trip: Trip, promoted: set[str]) -> list[str]:
+    """장문을 갖고 있던 장소가 장문을 잃지 않았는가.
+
+    챕터 원고에서 절 제목이 바뀌면 대조에 실패해 장소 페이지가 조용히
+    빈 껍데기가 된다. 그게 이 파이프라인에서 가장 잘 일어나는 사고다.
+    """
+    problems = []
+    for slug in sorted(promoted):
+        pl = trip.places.get(slug)
+        if pl is None:
+            problems.append(f"승격된 장문의 주인이 명부에 없다: {slug}")
+        elif not pl.has_deep_guide and not pl.why_go:
+            problems.append(f"장문이 사라졌다: {slug} — 챕터 원고의 절 제목이 "
+                            f"바뀌었을 수 있다")
+    return problems

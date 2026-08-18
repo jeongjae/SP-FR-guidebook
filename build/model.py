@@ -301,9 +301,15 @@ def load_registry() -> list[dict]:
     직접 고친다.
     """
     rows, region = [], None
+    # 명부에 실제로 쓰인 값만 담는다. 없는 값이 들어오면 render.check_vocabulary
+    # 가 빌드를 세운다 — 매핑에 없으면 등급 배지가 조용히 사라지고, 현장에서
+    # '필수' 와 '대체' 를 구분하지 못하게 된다. (실제로 '대체' 12곳이 그랬다.)
     grade_map = {
-        "필수": "essential", "우선 추천": "priority", "추천": "priority",
-        "선택": "optional", "대안": "alternative", "제외": "excluded",
+        "필수": "essential",
+        "우선 추천": "priority",
+        "선택": "optional",
+        "대체": "alternative",
+        "비추천": "discouraged",
     }
     chapter_region = {
         "04": "barcelona", "05": "girona", "06": "nice", "07": "aix",
