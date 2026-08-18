@@ -1,0 +1,1097 @@
+#!/usr/bin/env python3
+"""페이지 렌더러 — 콘텐츠 모델에서 사이트를 만든다.
+
+여기 있는 함수는 model.py 의 엔티티만 읽는다. 마크다운을 정규식으로 긁지
+않고, 빌드 산출물을 다시 파싱하지도 않는다. 그 두 가지가 이전 파이프라인이
+"문서를 웹으로 변환한 것"처럼 보였던 이유였다.
+
+축은 목록을 맡고 본문을 갖지 않는다.
+
+    Day    = 실행의 정본. 시간표·이동·예약·Plan B 가 여기에만 있다.
+    Region = 탐색과 이해. Day 시간표를 복제하지 않는다.
+    Place  = 장문의 정본. Region 과 Day 는 참조만 한다.
+"""
+from __future__ import annotations
+
+import json
+import re
+import shutil
+from datetime import date
+from pathlib import Path
+
+import markdown as md_lib
+
+import icons
+import model
+from model import Day, Place, Region, Trip
+from shell import (GRADE_BADGE, SITE_TITLE, alert, badge, esc, ic, page,
+                   redirect, sec_head, tabs_strip)
+
+ROOT = Path(__file__).resolve().parent.parent
+SITE = ROOT / "site"
+ASSETS = ROOT / "build" / "assets"
+IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
+TRACKER_XLSX = ROOT / "source" / "OPERATIONS" / "TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
+
+SEARCH_INDEX: list[dict] = []
+IMAGES: dict = {}
+
+# 카테고리 → 아이콘. stop 의 성격을 한눈에 구분한다.
+CAT_ICON = {
+    "culture": "book", "sight": "pin", "food": "food", "hotel": "stay",
+    "transport": "train", "market": "food", "nature": "pin", "shop": "pin",
+}
+MODE_ICON = {
+    "walk": "pin", "metro": "train", "bus": "train", "train": "train",
+    "drive": "car", "car": "car", "flight": "plane", "taxi": "car",
+}
+MODE_LABEL = {
+    "walk": "도보", "metro": "지하철", "bus": "버스", "train": "기차",
+    "drive": "운전", "car": "운전", "flight": "비행", "taxi": "택시",
+}
+FACT_LABEL = {
+    "hours": "운영시간", "closed": "휴무", "price_adult": "요금",
+    "price_range": "가격대", "booking": "예약", "getting_there": "가는 법",
+    "duration": "소요시간", "note": "메모",
+}
+
+
+def md(text: str) -> str:
+    if not text.strip():
+        return ""
+    html_out = md_lib.markdown(
+        text, extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
+    # 표는 감싸서 그 안에서만 가로 스크롤시킨다 — 본문이 가로로 흐르면 안 된다
+    return re.sub(r"<table>", '<div class="table-wrap"><table>',
+                  html_out).replace("</table>", "</table></div>")
+
+
+def strip_tokens(text: str) -> str:
+    """{{fact:...}} · {{badge:...}} · {{grade:...}} 를 사람이 읽는 형태로.
+
+    fact 토큰은 값을 여기서 채우지 않는다 — 값은 Practical 블록이 근거와
+    함께 보여준다. 본문에 확정처럼 박아 두면 출처가 사라진다.
+    """
+    text = re.sub(r"\{\{grade:[^}]*\}\}", "", text)
+    text = re.sub(r"\{\{badge:[^|}]*\|([^}]*)\}\}", r"(\1)", text)
+    text = re.sub(r"\{\{badge:([^}]*)\}\}", r"(\1)", text)
+    text = re.sub(r"\{\{fact:[^}]*\}\}", "확인 필요", text)
+    return re.sub(r"\{\{[^}]*\}\}", "", text)
+
+
+# ---------------------------------------------------------------- 이미지
+
+def load_image_index() -> dict:
+    if not IMAGE_MANIFEST.exists():
+        return {"by_place": {}, "heroes": {}}
+    raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
+    by_place, heroes = {}, {}
+    for img in raw.get("images", []):
+        pid = img.get("placeId")
+        if pid and pid not in by_place:
+            by_place[pid] = img
+        if img.get("regionHero") and img.get("region"):
+            heroes.setdefault(img["region"], img)
+    return {"by_place": by_place, "heroes": heroes}
+
+
+def img_src(img: dict, role: str, rel: str) -> tuple[str, str]:
+    """(src, srcset). 카탈로그에 없는 이미지는 애초에 여기 오지 않는다."""
+    variants = (img.get("variants") or {}).get(role) or []
+    if not variants:
+        for other in ("content", "hero", "thumbnail"):
+            variants = (img.get("variants") or {}).get(other) or []
+            if variants:
+                break
+    if not variants:
+        return "", ""
+    ordered = sorted(variants, key=lambda v: v.get("width", 0))
+    src = f"{rel}/{ordered[-1]['sitePath']}"
+    srcset = ", ".join(f"{rel}/{v['sitePath']} {v['width']}w" for v in ordered)
+    return src, srcset
+
+
+def figure(img: dict | None, rel: str, role: str = "content",
+           cls: str = "", sizes: str = "100vw") -> str:
+    """사진. 카탈로그에 항목이 없으면 자리를 아예 만들지 않는다.
+
+    저작자 표시가 필요한 라이선스는 화면에 표시한다 — 이 사이트는 공개
+    배포되므로 표시 의무가 실제로 발생한다.
+    """
+    if not img:
+        return ""
+    src, srcset = img_src(img, role, rel)
+    if not src:
+        return ""
+    alt = esc(img.get("altKo") or img.get("titleKo") or "")
+    ss = f' srcset="{srcset}" sizes="{sizes}"' if srcset else ""
+    return (f'<img class="{cls}" src="{src}"{ss} alt="{alt}" '
+            f'loading="lazy" decoding="async">')
+
+
+def credit_line(img: dict | None) -> str:
+    if not img:
+        return ""
+    who = esc(img.get("creator") or "")
+    lic = esc(img.get("license") or "")
+    src = img.get("sourcePage") or ""
+    if not (who or lic):
+        return ""
+    link = f'<a href="{esc(src)}" rel="nofollow noopener">{who}</a>' if src else who
+    return f'<p class="meta">사진 {link} · {lic}</p>'
+
+
+# ---------------------------------------------------------------- 컴포넌트
+
+def place_card(p: Place, rel: str, large: bool = False) -> str:
+    """PlaceCard. 목록에서는 이 형태 하나만 쓴다 — 페이지마다 카드를 새로
+    만들면 사이트가 조각난다."""
+    img = IMAGES["by_place"].get(p.slug)
+    grade = GRADE_BADGE.get(p.grade or "")
+    grade_html = badge(*grade) if grade else ""
+    url = f"{rel}/places/{p.slug}.html"
+
+    if large:
+        thumb = figure(img, rel, "content", "thumb", "(min-width:600px) 50vw, 100vw")
+        return f"""<article class="card place-card-lg">
+  {thumb}
+  <div class="card-body">
+    <div class="metarow">{grade_html}</div>
+    <h3 class="card-title"><a class="card-link" href="{url}">{esc(p.name)}</a></h3>
+    <p class="card-dek">{esc(p.summary)}</p>
+  </div>
+</article>"""
+
+    thumb = figure(img, rel, "thumbnail", "thumb", "84px")
+    return f"""<article class="card place-card">
+  {thumb}
+  <div class="card-body" style="padding:0">
+    <h3 class="card-title"><a class="card-link" href="{url}">{esc(p.name)}</a></h3>
+    <p class="card-dek">{esc(p.summary)}</p>
+    <div class="metarow">{grade_html}</div>
+  </div>
+</article>"""
+
+
+def day_card(d: Day, rel: str, region: Region | None = None) -> str:
+    transfer = badge("caution", "거점 이동") if d.is_transfer else ""
+    fatigue = f'<span>{ic("gauge")}피로 {esc(d.fatigue)}</span>' if d.fatigue else ""
+    return f"""<article class="card day-card">
+  <div class="card-body">
+    <div class="day-card-head">
+      <span class="day-num">DAY {d.n}</span>
+      <span class="day-date">{esc(d.date_label)}</span>
+    </div>
+    <div class="day-route"><a class="card-link" href="{rel}/{d.url}">{esc(d.city)}</a></div>
+    <p class="card-dek">{esc(d.title)}</p>
+    <div class="metarow">{transfer}{fatigue}</div>
+  </div>
+</article>"""
+
+
+def timeline(d: Day, rel: str) -> str:
+    """하루의 뼈대. stop 과 leg 를 순서대로 엮는다."""
+    legs = {(l.frm, l.to): l for l in d.legs}
+    rows, stops = [], d.stops
+    for i, s in enumerate(stops):
+        icon = CAT_ICON.get(s.category, "pin")
+        name = esc(s.name)
+        if s.place is not None:
+            name = f'<a href="{rel}/places/{s.place.slug}.html">{name}</a>'
+        marks = []
+        if s.optional:
+            marks.append(badge("neutral", "선택"))
+        if s.reservation:
+            marks.append(badge("caution", "예약"))
+        note = f'<p class="tl-note">{esc(s.summary)}</p>' if s.summary else ""
+        res = (f'<p class="tl-note">{ic("ticket")}{esc(s.reservation)}</p>'
+               if s.reservation else "")
+        rows.append(f"""<li class="tl-item" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
+  <div class="tl-time">{esc(s.start or '')}</div>
+  <div class="tl-body">
+    <div class="tl-name">{ic(icon)} {name} {''.join(marks)}</div>
+    {note}{res}
+  </div>
+</li>""")
+        nxt = stops[i + 1] if i + 1 < len(stops) else None
+        leg = legs.get((s.id, nxt.id)) if nxt else None
+        if leg:
+            bits = [MODE_LABEL.get(leg.mode, leg.mode)]
+            if leg.duration:
+                bits.append(leg.duration)
+            if leg.distance:
+                bits.append(leg.distance)
+            if leg.line:
+                bits.append(leg.line)
+            rows.append(f"""<li class="tl-leg">
+  <div></div>
+  <div class="tl-body"><span class="tl-leg-line">{ic(MODE_ICON.get(leg.mode, 'pin'))}
+    {esc(' · '.join(bits))}</span></div>
+</li>""")
+    return f'<ol class="timeline">{"".join(rows)}</ol>'
+
+
+def map_card(stops, rel: str, center=None, zoom: int = 14,
+             label: str = "지도") -> str:
+    """MapCard. 핀 데이터는 Place DB 에서 온다 — HTML 에 좌표를 따로 박지 않는다.
+
+    JS 가 없어도 목록과 Google Maps 링크가 남는다. 현장에서 스크립트가
+    안 뜨는 상황이 실제로 있다.
+    """
+    pins = [{"id": s.id, "name": s.name, "lat": s.lat, "lng": s.lng,
+             "cat": s.category, "time": s.start,
+             "place": s.place.slug if s.place else None}
+            for s in stops if s.lat and s.lng]
+    if not pins:
+        return ""
+    if center is None:
+        center = [sum(p["lat"] for p in pins) / len(pins),
+                  sum(p["lng"] for p in pins) / len(pins)]
+    payload = json.dumps({"center": center, "zoom": zoom, "pins": pins},
+                         ensure_ascii=False)
+    items = "".join(
+        f'<li><a href="https://www.google.com/maps/search/?api=1&query='
+        f'{p["lat"]},{p["lng"]}" rel="nofollow noopener">{esc(p["name"])}</a></li>'
+        for p in pins)
+    return f"""<div class="map-card">
+  <div class="map-canvas" id="map-canvas" role="img" aria-label="{esc(label)}"></div>
+  <script type="application/json" id="map-data">{payload}</script>
+  <div class="map-card-foot">
+    <span class="label">{esc(label)}</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="true">지도</button>
+      <button type="button" data-view="list" aria-pressed="false">목록</button>
+    </div>
+  </div>
+  <ol class="map-list" id="map-list" hidden>{items}</ol>
+</div>"""
+
+
+def index_search(title: str, url: str, kind: str, extra: str = "") -> None:
+    SEARCH_INDEX.append({"t": title, "u": url, "k": kind, "x": extra})
+
+
+# ================================================================ 페이지
+
+def build_place(p: Place, trip: Trip) -> str:
+    """Place — Action → Experience → Practical → Deep Guide.
+
+    길 찾는 손이 먼저 닿아야 하는 것은 서술이 아니라 지도와 시각이다.
+    긴 역사·건축 서술은 지우지 않고 아래로 내린다.
+    """
+    rel = ".."
+    region = trip.region(p.region)
+    img = IMAGES["by_place"].get(p.slug)
+    grade = GRADE_BADGE.get(p.grade or "")
+
+    # --- Action -----------------------------------------------------------
+    meta = []
+    if grade:
+        meta.append(badge(*grade))
+    dur = p.fact("duration")
+    if dur and dur.is_confirmed:
+        meta.append(f'<span>{ic("clock")}{esc(dur.value)}</span>')
+    for n in sorted(p.days):
+        d = trip.day(n)
+        if d:
+            meta.append(f'<a href="{rel}/{d.url}">Day {n} · {esc(d.date_label)}</a>')
+
+    actions = []
+    if p.lat and p.lng:
+        actions.append(
+            f'<a class="btn btn-primary" rel="nofollow noopener" '
+            f'href="https://www.google.com/maps/dir/?api=1&destination={p.lat},{p.lng}">'
+            f'{ic("map")}길찾기</a>')
+    url_fact = p.fact("url") or p.fact("booking")
+    if url_fact and url_fact.value.startswith("http"):
+        actions.append(f'<a class="btn btn-secondary" href="{esc(url_fact.value)}" '
+                       f'rel="nofollow noopener">{ic("link")}공식 사이트</a>')
+    if p.wiki:
+        wiki_url = (f"https://{p.wiki_lang}.wikipedia.org/wiki/"
+                    f"{p.wiki.replace(' ', '_')}")
+        actions.append(f'<a class="btn btn-secondary" href="{esc(wiki_url)}" '
+                       f'rel="nofollow noopener">{ic("book")}위키백과</a>')
+
+    hero = ""
+    if img:
+        src, srcset = img_src(img, "hero", rel)
+        if src:
+            hero = (f'<img class="hero-img" src="{src}" srcset="{srcset}" '
+                    f'sizes="100vw" alt="{esc(img.get("altKo") or p.name)}" '
+                    f'fetchpriority="high" decoding="async">')
+
+    parts = [f"""<div class="hero">
+  {hero}
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">{esc(region.name if region else '')}</span></div>
+    <h1>{esc(p.name)}</h1>
+    <div class="metarow">{''.join(meta)}</div>
+    {f'<p class="hero-dek">{esc(p.summary)}</p>' if p.summary else ''}
+    {f'<div class="btn-row" style="margin-top:1rem">{"".join(actions)}</div>' if actions else ''}
+  </div></div>
+</div>
+<div class="wrap-read">
+{credit_line(img)}"""]
+
+    # --- Experience -------------------------------------------------------
+    if p.why_go:
+        parts.append(sec_head("WHY GO", "왜 가는가", rule=True))
+        parts.append(f'<div class="prose">{md(strip_tokens(p.why_go))}</div>')
+    if p.dont_miss:
+        parts.append(sec_head("DON'T MISS", "놓치지 말 것", rule=True))
+        items = "".join(f"<li>{esc(x)}</li>" for x in p.dont_miss)
+        parts.append(f'<div class="prose"><ol>{items}</ol></div>')
+
+    # --- Practical --------------------------------------------------------
+    facts = [(k, f) for k, f in p.facts.items() if f.value or f.blocked_reason]
+    if facts:
+        parts.append(sec_head("PRACTICAL", "실용", rule=True))
+        rows = []
+        for key, f in sorted(facts, key=lambda kv: list(FACT_LABEL).index(kv[0])
+                             if kv[0] in FACT_LABEL else 99):
+            label = FACT_LABEL.get(key, key)
+            if f.is_confirmed:
+                mark = ""
+                value = esc(f.value)
+            else:
+                # 확정처럼 보이면 안 된다. 이걸 믿고 움직이는 것이 최악의 사고다.
+                mark = badge("caution", "재확인")
+                value = esc(f.value) if f.value else \
+                    f'<span class="meta">{esc(f.blocked_reason or "미확인")}</span>'
+            src = (f'<br><span class="meta">{esc(f.source)}</span>'
+                   if f.source else "")
+            rows.append(f"<tr><th scope=\"row\">{esc(label)}</th>"
+                        f"<td>{value} {mark}{src}</td></tr>")
+        parts.append(f'<div class="table-wrap"><table><tbody>{"".join(rows)}'
+                     f"</tbody></table></div>")
+
+    # --- Deep Guide -------------------------------------------------------
+    body = strip_tokens(p.body_md)
+    body = re.sub(r"^##\s+(왜 가는가|실용)\s*$.*?(?=^##\s|\Z)", "", body,
+                  flags=re.M | re.S)
+    body = re.sub(r"^##\s+더 깊이\s*$", "", body, flags=re.M)
+    if body.strip():
+        parts.append(sec_head("DEEP GUIDE", "더 깊이", rule=True))
+        parts.append(f'<div class="prose">{md(body)}</div>')
+
+    # 같은 지역의 다른 장소 — 길이 끊기지 않게 옆으로 나가는 문을 둔다
+    if region:
+        sibs = [x for x in region.places if x.slug != p.slug and x.summary][:6]
+        if sibs:
+            parts.append(sec_head("", f"{region.name} 의 다른 장소",
+                                   more=("전체", f"{rel}/guide/{region.slug}.html")))
+            parts.append('<div class="scroll-x">'
+                         + "".join(place_card(x, rel) for x in sibs) + "</div>")
+
+    parts.append("</div>")
+
+    index_search(p.name, f"places/{p.slug}.html", "place",
+                 region.name if region else "")
+
+    return page(
+        title=p.name, body="\n".join(parts), rel=rel, tab="guide",
+        region=p.region, country=region.country if region else "",
+        description=p.summary,
+        trail=[("홈", "index.html"), ("가이드", "guide/index.html"),
+               (region.name if region else "", f"guide/{p.region}.html"),
+               (p.name, None)],
+    )
+
+
+def build_day(d: Day, trip: Trip) -> str:
+    """Day — 실행 화면. 첫 1~2 스크린에서 다음이 보여야 한다.
+    지금 어디로 · 다음 일정 · 예약 · 주의 · 지도."""
+    rel = ".."
+    region = trip.region(d.region)
+    prev_d, next_d = trip.day(d.n - 1), trip.day(d.n + 1)
+
+    head_marks = []
+    if d.is_transfer:
+        head_marks.append(badge("caution", "거점 이동"))
+    if not d.is_authoritative:
+        head_marks.append(badge("neutral", "검토 중"))
+    if d.fatigue:
+        head_marks.append(f'<span>{ic("gauge")}피로도 {esc(d.fatigue)}</span>')
+    if d.total_distance:
+        head_marks.append(f'<span>{esc(d.total_distance)}</span>')
+
+    parts = [f"""<div class="wrap">
+<div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <div class="metarow"><span class="day-num">DAY {d.n}</span>
+    <span class="day-date">{esc(d.date_label)}</span></div>
+  <h1>{esc(d.city)}</h1>
+  <p class="hero-dek">{esc(d.title)}</p>
+  <div class="metarow">{''.join(head_marks)}</div>
+</header>"""]
+
+    # --- NEXT — 지금 시각 기준. 오늘이 아니면 첫 일정을 보여준다 ------------
+    real = [s for s in d.stops if s.category != "hotel" and s.start]
+    if real:
+        first = real[0]
+        name = esc(first.name)
+        if first.place:
+            name = f'<a href="{rel}/places/{first.place.slug}.html">{name}</a>'
+        parts.append(f"""<section class="action-card" id="next-action"
+    data-day="{d.date.isoformat()}">
+  <span class="label">NEXT</span>
+  <div class="action-when">{esc(first.start)}</div>
+  <div class="action-what">{name}</div>
+  {f'<p class="card-dek">{esc(first.summary)}</p>' if first.summary else ''}
+</section>""")
+
+    # --- 예약 — 당일에 잠긴 것 -------------------------------------------
+    reserved = d.reserved_stops
+    if reserved:
+        rows = "".join(
+            f'<li><strong>{esc(s.start or "")} {esc(s.name)}</strong> — '
+            f"{esc(s.reservation)}</li>" for s in reserved)
+        parts.append(sec_head("BOOKING", "오늘 예약"))
+        parts.append(f'<div class="prose"><ul>{rows}</ul></div>')
+
+    # --- 시간표 -----------------------------------------------------------
+    parts.append(sec_head("TODAY", "오늘 일정"))
+    parts.append(timeline(d, rel))
+
+    # --- 주의 ------------------------------------------------------------
+    checks = []
+    if d.backup:
+        checks.append(f"<strong>Plan B</strong> — {esc(d.backup)}")
+    for x in d.needs_review:
+        checks.append(esc(x))
+    if checks:
+        parts.append(sec_head("CHECK", "확인할 것"))
+        parts.append("".join(
+            alert("caution", c) for c in checks))
+
+    # --- 지도 ------------------------------------------------------------
+    m = d.map or {}
+    mc = map_card(d.stops, rel, center=m.get("center"), zoom=m.get("zoom", 14),
+                  label=f"Day {d.n} 동선")
+    if mc:
+        parts.append(sec_head("MAP", "오늘 지도"))
+        parts.append(mc)
+
+    # --- 보조 정보 --------------------------------------------------------
+    aside = []
+    if d.transport:
+        aside.append(("이동", d.transport))
+    if d.food:
+        aside.append(("식사", d.food))
+    if d.highlights:
+        aside.append(("오늘의 핵심", d.highlights))
+    if aside:
+        blocks = "".join(
+            f'<details class="acc"><summary>{esc(name)}</summary>'
+            f'<div class="acc-body"><ul>'
+            + "".join(f"<li>{esc(x)}</li>" for x in items)
+            + "</ul></div></details>" for name, items in aside)
+        parts.append(f'<div class="stack">{blocks}</div>')
+
+    # --- 이전/다음 --------------------------------------------------------
+    nav = []
+    if prev_d:
+        nav.append(f'<a class="btn btn-secondary" href="{rel}/{prev_d.url}">'
+                   f"← Day {prev_d.n}</a>")
+    if next_d:
+        nav.append(f'<a class="btn btn-secondary" href="{rel}/{next_d.url}">'
+                   f"Day {next_d.n} →</a>")
+    parts.append(f'<div class="btn-row" style="justify-content:space-between">'
+                 f'{"".join(nav)}</div>')
+    parts.append("</div></div>")
+
+    # 형제 이동 — 그 지역의 날들
+    sib = tabs_strip([
+        (f"Day {x.n}", f"{rel}/{x.url}", x.n == d.n)
+        for x in (region.days if region else [])])
+
+    index_search(f"Day {d.n} · {d.date_label} {d.city}", d.url, "day", d.title)
+
+    return page(
+        title=f"Day {d.n} · {d.city}", body="\n".join(parts), rel=rel,
+        tab="today", region=d.region, country=d.country, subnav=sib,
+        description=d.title,
+        trail=[("홈", "index.html"), ("전체 일정", "schedule.html"),
+               (f"Day {d.n}", None)],
+    )
+
+
+def build_region(r: Region, trip: Trip) -> str:
+    """Region — editorial destination landing. 상위 섹션 6개.
+
+    Overview · Places · Schedule · Food · Stay & Local Life · Transport
+    Day 의 상세 시간표를 여기에 복제하지 않는다.
+    """
+    rel = ".."
+    hero_img = IMAGES["heroes"].get(r.slug) or IMAGES["by_place"].get(r.slug)
+    hero = ""
+    if hero_img:
+        src, srcset = img_src(hero_img, "hero", rel)
+        if src:
+            hero = (f'<img class="hero-img" src="{src}" srcset="{srcset}" '
+                    f'sizes="100vw" alt="{esc(hero_img.get("altKo") or r.name)}" '
+                    f'fetchpriority="high" decoding="async">')
+
+    sections = [("overview", "개요"), ("places", "장소"), ("days", "일정"),
+                ("food", "먹거리"), ("stay", "숙박·생활"), ("transport", "교통")]
+    subnav = tabs_strip([(label, f"#{key}", False) for key, label in sections])
+
+    parts = [f"""<div class="hero">
+  {hero}
+  <div class="hero-body"><div class="hero-card">
+    <div class="hero-eyebrow"><span class="label">{esc(r.tagline)}</span></div>
+    <h1>{esc(r.name)}</h1>
+    <p class="hero-sub">{esc(r.date_range)} · {r.nights}박 · {esc(r.day_range)}
+      · 거점 {esc(r.base)}</p>
+    <p class="hero-dek">{esc(r.dek)}</p>
+    <div class="btn-row" style="margin-top:1rem">
+      <a class="btn btn-primary" href="{rel}/map/{r.slug}.html">{ic("map")}지역 지도</a>
+      <a class="btn btn-secondary" href="{rel}/{r.days[0].url}">{ic("today")}첫날 열기</a>
+    </div>
+  </div></div>
+</div>
+<div class="wrap">
+{credit_line(hero_img)}
+<div class="stack-lg" id="overview">"""]
+
+    # --- Don't Miss -------------------------------------------------------
+    must = [p for p in r.essential_places if p.summary][:6]
+    if must:
+        parts.append(f'<div id="places">{sec_head("DON\'T MISS", "놓치지 말 것", rule=True)}</div>')
+        parts.append('<div class="grid grid-2">'
+                     + "".join(place_card(p, rel, large=True) for p in must)
+                     + "</div>")
+
+    others = [p for p in r.places
+              if p.grade != "essential" and p.summary and p.kind == "spot"]
+    if others:
+        parts.append(sec_head("", "그 밖의 장소"))
+        parts.append('<div class="grid grid-2">'
+                     + "".join(place_card(p, rel) for p in others) + "</div>")
+
+    # --- Your days — 목록만. 시간표는 Day 가 갖는다 -----------------------
+    parts.append(f'<div id="days">{sec_head("YOUR DAYS", "이 지역의 날들", rule=True)}</div>')
+    parts.append('<div class="grid grid-2">'
+                 + "".join(day_card(d, rel, r) for d in r.days) + "</div>")
+
+    # --- Food -------------------------------------------------------------
+    dishes, spots = [], []
+    for d in r.days:
+        for item in d.food:
+            if item not in dishes:
+                dishes.append(item)
+        for s in d.stops:
+            if s.category == "food" and s.name not in [x.name for x in spots]:
+                spots.append(s)
+    if dishes or spots:
+        parts.append(f'<div id="food">{sec_head("EAT", "먹거리", rule=True)}</div>')
+        if spots:
+            cards = "".join(f"""<article class="card food-card">
+  <div class="food-dish">{esc(s.name)}</div>
+  <p class="food-why">{esc(s.summary)}</p>
+  {f'<div class="metarow">{ic("ticket")}{esc(s.reservation)}</div>' if s.reservation else ''}
+</article>""" for s in spots[:8])
+            parts.append(f'<div class="grid grid-2">{cards}</div>')
+        if dishes:
+            parts.append('<div class="prose"><ul>'
+                         + "".join(f"<li>{esc(x)}</li>" for x in dishes[:12])
+                         + "</ul></div>")
+
+    # --- Stay & Local Life ------------------------------------------------
+    hotels = {d.hotel.get("name"): d.hotel for d in r.days
+              if d.hotel.get("name")}
+    parts.append(f'<div id="stay">{sec_head("STAY", "숙박 · 생활", rule=True)}</div>')
+    if hotels:
+        cards = []
+        for name, h in hotels.items():
+            confirmed = h.get("status") == "confirmed"
+            mark = badge("ok", "확정") if confirmed else badge("caution", "미확정")
+            link = ""
+            if h.get("lat"):
+                link = (f'<a class="btn btn-secondary" rel="nofollow noopener" '
+                        f'href="https://www.google.com/maps/search/?api=1&query='
+                        f'{h["lat"]},{h["lng"]}">{ic("map")}지도</a>')
+            cards.append(f"""<article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">{esc(name)}</span>{mark}</div>
+  <dl><dt>체크인</dt><dd>{esc(r.checkin.isoformat())}</dd>
+      <dt>체크아웃</dt><dd>{esc(r.checkout.isoformat())}</dd>
+      <dt>박수</dt><dd>{r.nights}박</dd></dl>
+  <div class="btn-row">{link}</div>
+</article>""")
+        parts.append(f'<div class="grid grid-2">{"".join(cards)}</div>')
+    else:
+        parts.append(alert("caution",
+                           "<strong>숙소 미확정</strong> — 확정되면 여기에 표시된다. "
+                           "확정 전 주소를 믿고 이동하지 않는다.", "stay"))
+
+    # --- Transport --------------------------------------------------------
+    modes = []
+    for d in r.days:
+        for t in d.transport:
+            if t not in modes:
+                modes.append(t)
+    parts.append(f'<div id="transport">{sec_head("TRANSPORT", "교통", rule=True)}</div>')
+    arrive, leave = r.days[0], r.days[-1]
+    parts.append(f"""<div class="prose">
+<ul>
+  <li><strong>도착</strong> — Day {arrive.n} · {esc(arrive.date_label)} · {esc(arrive.city)}</li>
+  <li><strong>출발</strong> — Day {leave.n} · {esc(leave.date_label)} · {esc(leave.city)}</li>
+</ul>
+{'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes[:10]) + '</ul>' if modes else ''}
+</div>""")
+
+    if r.rain_plan:
+        parts.append(alert("caution",
+                           f"<strong>우천 전환</strong> — {esc(r.rain_plan)}"))
+
+    parts.append("</div></div>")
+
+    index_search(r.name, f"guide/{r.slug}.html", "region", r.tagline)
+
+    return page(
+        title=r.name, body="\n".join(parts), rel=rel, tab="guide",
+        region=r.slug, country=r.country, subnav=subnav, description=r.dek,
+        trail=[("홈", "index.html"), ("가이드", "guide/index.html"),
+               (r.name, None)],
+    )
+
+
+def build_guide_index(trip: Trip) -> str:
+    """가이드 — 8개 지역을 이동 순서대로. 축은 목록을 맡고 본문을 갖지 않는다."""
+    rel = ".."   # guide/index.html 은 하위 디렉터리에 있다
+    cards = []
+    for r in trip.regions:
+        img = IMAGES["heroes"].get(r.slug)
+        thumb = figure(img, rel, "content", "thumb",
+                       "(min-width:600px) 50vw, 100vw")
+        cards.append(f"""<article class="card place-card-lg" data-region="{r.slug}">
+  {thumb}
+  <div class="card-body">
+    <div class="metarow"><span class="label" style="color:var(--accent)">
+      {esc(r.tagline)}</span></div>
+    <h3 class="card-title"><a class="card-link" href="{r.slug}.html">
+      {esc(r.name)}</a></h3>
+    <p class="card-dek">{esc(r.dek)}</p>
+    <div class="metarow"><span>{esc(r.date_range)}</span><span class="sep">·</span>
+      <span>{r.nights}박</span><span class="sep">·</span>
+      <span>{esc(r.day_range)}</span></div>
+  </div>
+</article>""")
+    body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <h1>가이드</h1>
+  <p class="hero-dek">8개 거점을 이동 순서대로 놓았다. 각 지역에서 무엇을 보고
+    먹고 경험할지는 지역 페이지가 맡는다.</p>
+</header>
+<div class="grid grid-2">{''.join(cards)}</div>
+</div></div>"""
+    return page(title="가이드", body=body, rel=rel, tab="guide",
+                description="8개 지역 가이드",
+                trail=[("홈", "index.html"), ("가이드", None)])
+
+
+def build_schedule(trip: Trip) -> str:
+    """전체 일정 — 43일. 하루의 본문은 Day 가 갖는다, 여기는 목록이다."""
+    rel = "."
+    blocks = []
+    for r in trip.regions:
+        own = [d for d in r.days if d.region == r.slug]
+        if not own:
+            continue
+        blocks.append(f'<div id="{r.slug}" data-region="{r.slug}">'
+                      + sec_head(r.tagline, r.name,
+                                 more=("지역 가이드", f"guide/{r.slug}.html"),
+                                 rule=False) + "</div>")
+        blocks.append('<div class="grid grid-2">'
+                      + "".join(day_card(d, rel, r) for d in own) + "</div>")
+    last = trip.day(43)
+    if last and last.region == "return":
+        blocks.append(sec_head("", "귀국"))
+        blocks.append(f'<div class="grid grid-2">{day_card(last, rel)}</div>')
+
+    jump = tabs_strip([(r.name, f"#{r.slug}", False) for r in trip.regions])
+    body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <h1>전체 일정</h1>
+  <p class="hero-dek">{trip.start.isoformat()} — {trip.end.isoformat()} ·
+    43일 42박 · 8개 거점</p>
+</header>
+{''.join(blocks)}
+</div></div>"""
+    return page(title="전체 일정", body=body, rel=rel, tab="schedule",
+                subnav=jump, description="43일 전체 일정",
+                trail=[("홈", "index.html"), ("전체 일정", None)])
+
+
+def build_home(trip: Trip, res: dict) -> str:
+    """홈 — 중심은 Today.
+
+    여행 전에는 준비, 여행 중에는 오늘이 첫 화면이다. 정적 사이트라
+    빌드 시각에 모드를 굳히지 않고 브라우저가 오늘 날짜로 고른다 —
+    출발 전에 빌드한 페이지가 여행 중에도 맞아야 한다.
+    """
+    rel = "."
+    days_payload = [{
+        "n": d.n, "date": d.date.isoformat(), "city": d.city, "title": d.title,
+        "url": d.url, "region": d.region,
+        "next": [{"t": s.start, "n": s.name,
+                  "u": f"places/{s.place.slug}.html" if s.place else None}
+                 for s in d.stops if s.start and s.category != "hotel"][:4],
+    } for d in trip.days]
+
+    # 여행 전 화면 — 아직 잠기지 않은 것부터 보여준다
+    undone = res.get("undone", 0)
+    active = res.get("active", 0)
+    pre_items = "".join(
+        f"<li>{esc(name)} {badge('caution', esc(status))}</li>"
+        for _id, name, status in res.get("items", [])
+        if status not in ("예약완료", "확정", "취소"))[:0] or "".join(
+        f"<li>{esc(name)} {badge('caution', esc(status))}</li>"
+        for _id, name, status in res.get("items", [])
+        if status not in ("예약완료", "확정", "취소"))
+
+    region_cards = "".join(f"""<article class="card" data-region="{r.slug}"
+    style="min-width:0">
+  <div class="card-body">
+    <span class="label" style="color:var(--accent)">{esc(r.day_range)}</span>
+    <h3 class="card-title"><a class="card-link" href="guide/{r.slug}.html">
+      {esc(r.name)}</a></h3>
+    <p class="card-dek">{esc(r.tagline)}</p>
+  </div>
+</article>""" for r in trip.regions)
+
+    body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+
+<section id="today-panel" class="stack" aria-live="polite">
+  <noscript><p class="meta">오늘 화면은 기기의 날짜로 고릅니다.
+    <a href="schedule.html">전체 일정</a>을 여세요.</p></noscript>
+</section>
+
+<section>
+  {sec_head("JOURNEY", "여정", more=("전체 일정", "schedule.html"), rule=True)}
+  <div class="scroll-x">{region_cards}</div>
+</section>
+
+<section>
+  {sec_head("PREPARE", "준비", more=("준비 화면", "prepare/index.html"), rule=True)}
+  <div class="card"><div class="card-body">
+    <div class="metarow">
+      <span>{ic("check")}예약 {active}건</span>
+      <span class="sep">·</span>
+      <span>{badge('caution', f'미확정 {undone}건')}</span>
+    </div>
+    {f'<div class="prose"><ul>{pre_items}</ul></div>' if pre_items else ''}
+  </div></div>
+</section>
+
+<section>
+  {sec_head("TOOLS", "빠른 도구", rule=True)}
+  <nav class="quick" aria-label="빠른 도구">
+    <a href="#" id="quick-search">{ic("search")}<span>검색</span></a>
+    <a href="map/index.html">{ic("map")}<span>지도</span></a>
+    <a href="schedule.html">{ic("list")}<span>전체 일정</span></a>
+    <a href="prepare/emergency.html">{ic("alert")}<span>긴급</span></a>
+  </nav>
+</section>
+
+</div></div>
+<script type="application/json" id="trip-data">{json.dumps(
+    {"start": trip.start.isoformat(), "end": trip.end.isoformat(),
+     "days": days_payload}, ensure_ascii=False)}</script>"""
+
+    return page(title="오늘", body=body, rel=rel, tab="today",
+                description=f"{SITE_TITLE} — 43일 여행 가이드")
+
+
+def build_map_pages(trip: Trip) -> dict[str, str]:
+    """지도 — Trip · Region · Day 세 수준. 핀은 Place DB 에서만 온다."""
+    out = {}
+    rel = ".."
+    all_stops = []
+    seen = set()
+    for d in trip.days:
+        for s in d.stops:
+            if s.lat and s.id not in seen and s.category != "hotel":
+                seen.add(s.id)
+                all_stops.append(s)
+
+    links = "".join(
+        f'<li><a href="{r.slug}.html">{esc(r.name)}</a> — {esc(r.day_range)}</li>'
+        for r in trip.regions)
+    out["index.html"] = page(
+        title="지도", rel=rel, tab="map",
+        trail=[("홈", "index.html"), ("지도", None)],
+        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>지도</h1>
+<p class="hero-dek">전체 여정의 장소 {len(all_stops)}곳. 지역별 지도와 날짜별
+동선은 각각 지역 페이지와 Day 페이지에 있다.</p></header>
+{map_card(all_stops, rel, zoom=5, label="전체 여정")}
+{sec_head("", "지역별 지도")}
+<div class="prose"><ul>{links}</ul></div>
+</div></div>""")
+
+    for r in trip.regions:
+        stops, s_seen = [], set()
+        for d in r.days:
+            for s in d.stops:
+                if s.lat and s.id not in s_seen:
+                    s_seen.add(s.id)
+                    stops.append(s)
+        day_links = "".join(
+            f'<li><a href="../{d.url}">Day {d.n} · {esc(d.date_label)}</a> — '
+            f"{esc(d.title)}</li>" for d in r.days)
+        out[f"{r.slug}.html"] = page(
+            title=f"{r.name} 지도", rel=rel, tab="map", region=r.slug,
+            country=r.country,
+            trail=[("홈", "index.html"), ("지도", "map/index.html"),
+                   (r.name, None)],
+            body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>{esc(r.name)} 지도</h1>
+<p class="hero-dek">{esc(r.date_range)} · 장소 {len(stops)}곳</p></header>
+{map_card(stops, r_rel := rel, zoom=12, label=f"{r.name} 지도")}
+{sec_head("", "날짜별 동선")}
+<div class="prose"><ul>{day_links}</ul></div>
+<div class="btn-row"><a class="btn btn-secondary" href="../guide/{r.slug}.html">
+  {ic("region")}{esc(r.name)} 가이드</a></div>
+</div></div>""")
+    return out
+
+
+def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
+    """준비 — 무엇을 예약·확인해야 하는가.
+
+    개인정보는 나가지 않는다. 예약번호·주소·금액은 렌더하지 않고 상태와
+    건수만 보여준다.
+    """
+    rel = ".."
+    out = {}
+    items = res.get("items", [])
+    done = [i for i in items if i[2] in ("예약완료", "확정")]
+    open_ = [i for i in items if i[2] not in ("예약완료", "확정", "취소")]
+
+    def rows(group):
+        return "".join(
+            f"""<article class="card booking-card">
+  <div class="booking-head"><span class="booking-name">{esc(name)}</span>
+    {badge('ok', '확정') if status in ('예약완료', '확정') else badge('caution', esc(status))}</div>
+</article>""" for _id, name, status in group)
+
+    out["index.html"] = page(
+        title="준비", rel=rel, tab="prepare",
+        description="여행 준비 상태를 점검한다",
+        trail=[("홈", "index.html"), ("준비", None)],
+        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>준비</h1>
+<p class="hero-dek">여행 준비 상태를 점검한다. 예약 {res.get('active', 0)}건 중
+  미확정 {res.get('undone', 0)}건.</p></header>
+
+{alert('caution', '<strong>확정되지 않은 예약이 있다.</strong> 확정 전 주소·시각을 '
+       '믿고 이동하지 않는다. 확정된 것만 화면에 확정으로 표시된다.')
+ if open_ else ''}
+
+{sec_head('TO LOCK', f'미확정 {len(open_)}건', rule=True) if open_ else ''}
+<div class="grid grid-2">{rows(open_)}</div>
+
+{sec_head('LOCKED', f'확정 {len(done)}건', rule=True) if done else ''}
+<div class="grid grid-2">{rows(done)}</div>
+
+<div class="btn-row"><a class="btn btn-secondary" href="emergency.html">
+  {ic('alert')}긴급 연락처</a></div>
+</div></div>""")
+
+    out["emergency.html"] = page(
+        title="긴급", rel=rel, tab="prepare",
+        trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
+               ("긴급", None)],
+        body=f"""<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>긴급 연락처</h1>
+<p class="hero-dek">국경을 넘으면 번호가 바뀐다. Day 7 에 스페인에서
+  프랑스로 넘어간다.</p></header>
+<div class="table-wrap"><table>
+<thead><tr><th>국가</th><th>번호</th><th>용도</th></tr></thead>
+<tbody>
+<tr><td>공통 (EU)</td><td><strong>112</strong></td><td>모든 긴급 — 경찰·소방·구급</td></tr>
+<tr><td>스페인</td><td>091 / 061</td><td>경찰 / 구급</td></tr>
+<tr><td>프랑스</td><td>17 / 15</td><td>경찰 / 구급 (SAMU)</td></tr>
+</tbody></table></div>
+{alert('ok', '<strong>112 는 EU 전역에서 통한다.</strong> 어느 나라인지 '
+       '헷갈리면 112 를 누른다. 휴대폰 잠금 상태에서도 걸린다.', 'check')}
+</div></div>""")
+    return out
+
+
+# ================================================================ 자산·색인
+
+def load_reservations() -> dict:
+    """예약 상태. 개인정보는 나오지 않는다 — 상태와 건수만 밖으로 나간다.
+
+    주소·예약번호·금액은 렌더하지 않는다. 공개 배포되는 사이트다.
+    """
+    try:
+        from openpyxl import load_workbook
+    except ImportError:
+        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+    if not TRACKER_XLSX.exists():
+        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+    wb = load_workbook(TRACKER_XLSX, data_only=True)
+    if "Reservations" not in wb.sheetnames:
+        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+    rows = list(wb["Reservations"].iter_rows(values_only=True))
+    hdr_i = next((i for i, r in enumerate(rows) if r and r[0] == "ID"), None)
+    if hdr_i is None:
+        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+    hdr = list(rows[hdr_i])
+    ix = {n: hdr.index(n) for n in ("ID", "날짜", "상태", "예약항목")}
+    by_date, items, cancelled = {}, [], 0
+    for r in rows[hdr_i + 1:]:
+        if not r or not r[ix["ID"]]:
+            continue
+        status = str(r[ix["상태"]] or "").strip()
+        if status == "취소":
+            cancelled += 1
+            continue
+        d = r[ix["날짜"]]
+        if hasattr(d, "date"):
+            by_date.setdefault(d.date().isoformat(), []).append(status)
+        items.append((str(r[ix["ID"]] or "").strip(),
+                      str(r[ix["예약항목"]] or "").strip(), status))
+    undone = sum(1 for _i, _n, s in items if s not in ("예약완료", "확정"))
+    return {"active": len(items), "undone": undone, "items": items,
+            "by_date": by_date}
+
+
+def write_assets(trip: Trip) -> None:
+    out = SITE / "assets"
+    out.mkdir(parents=True, exist_ok=True)
+    # 아이콘은 CSS 마스크로 붙인다 — 페이지마다 스프라이트를 인라인하면
+    # 페이지 수만큼 무게가 붙는다. 마스크는 CSS 한 번이고 페이지 무게는 0 이다.
+    (out / "style.css").write_text(
+        (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
+        encoding="utf-8")
+    for name in ("app.js",):
+        shutil.copy(ASSETS / name, out / name)
+    # 나눔고딕 — CDN 을 쓰지 않고 번들한다. 완전 오프라인으로 동작해야 한다.
+    if (ASSETS / "vendor").exists():
+        shutil.copytree(ASSETS / "vendor", out / "vendor", dirs_exist_ok=True)
+    pwa = ROOT / "source" / "ASSETS" / "pwa"
+    if pwa.exists():
+        shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
+
+    # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
+    raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
+    copied = 0
+    for img in raw.get("images", []):
+        for variants in (img.get("variants") or {}).values():
+            for v in variants:
+                src = ROOT / v["path"]
+                dst = SITE / v["sitePath"]
+                if src.exists():
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    if not dst.exists():
+                        shutil.copy(src, dst)
+                        copied += 1
+    print(f"  사진 {copied}개 복사")
+
+    (out / "search-index.js").write_text(
+        "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False)
+        + ";", encoding="utf-8")
+
+
+def write_manifest() -> None:
+    (SITE / "manifest.webmanifest").write_text(json.dumps({
+        "name": SITE_TITLE, "short_name": "유럽 가이드북",
+        "start_url": "./index.html", "display": "standalone",
+        "background_color": "#FAF6EF", "theme_color": "#FAF6EF",
+        "icons": [
+            {"src": "assets/pwa/icon-192.png", "sizes": "192x192",
+             "type": "image/png"},
+            {"src": "assets/pwa/icon-512.png", "sizes": "512x512",
+             "type": "image/png"},
+        ],
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+# 옛 주소 → 새 주소. 404 를 늘리지 않는다.
+def write_redirects(trip: Trip) -> int:
+    n = 0
+    def put(path: str, target: str, label: str):
+        nonlocal n
+        p = SITE / path
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(redirect(target, label), encoding="utf-8")
+        n += 1
+
+    put("regions.html", "guide/index.html", "가이드")
+    put("daily/index.html", "../schedule.html", "전체 일정")
+    put("maps/index.html", "../map/index.html", "지도")
+    put("tracker/index.html", "../prepare/index.html", "준비")
+    put("places/index.html", "../guide/index.html", "가이드")
+
+    # 챕터 10개 카테고리 → 새 지역 페이지의 해당 섹션
+    section = {
+        "index": "", "about": "#overview", "schedule": "#days",
+        "places": "#places", "food": "#food", "stay": "#stay",
+        "transport": "#transport", "tips": "#overview",
+        "booking": "", "cost": "", "sources": "",
+    }
+    for r in trip.regions:
+        for name, anchor in section.items():
+            target = (f"../../prepare/index.html"
+                      if name in ("booking", "cost")
+                      else f"../../about/sources.html" if name == "sources"
+                      else f"../../guide/{r.slug}.html{anchor}")
+            put(f"chapters/{r.slug}/{name}.html", target, r.name)
+        for d in r.days:
+            put(f"chapters/{r.slug}/day-{d.n:02d}.html",
+                f"../../{d.url}", f"Day {d.n}")
+    for name in ("index", "days", "places", "food", "stay", "transport",
+                 "tips", "booking", "cost", "essential", "p0", "about",
+                 "sources", "reverify"):
+        put(f"topics/{name}.html", "../guide/index.html", "가이드")
+    for name in ("dashboard", "itinerary", "reservations", "accommodation",
+                 "transport", "locks"):
+        put(f"tracker/{name}.html", "../prepare/index.html", "준비")
+    return n
+
+
+def build_credits(trip: Trip) -> str:
+    """사진 저작자 표시. 표시가 필요한 라이선스는 화면에 남긴다."""
+    raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
+    rows = "".join(f"""<tr><td>{esc(i.get('titleKo') or i.get('title'))}</td>
+<td>{esc(i.get('creator'))}</td>
+<td><a href="{esc(i.get('licenseUrl') or '')}" rel="nofollow noopener">
+  {esc(i.get('license'))}</a></td>
+<td><a href="{esc(i.get('sourcePage') or '')}" rel="nofollow noopener">출처</a></td></tr>"""
+        for i in raw.get("images", []))
+    return page(
+        title="사진 저작자 표시", rel="..", tab="guide",
+        trail=[("홈", "index.html"), ("사진 저작자 표시", None)],
+        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>사진 저작자 표시 · 라이선스</h1>
+<p class="hero-dek">이 사이트는 공개 배포되므로 재배포가 허용된 이미지만
+쓴다. 저작자 표시가 필요한 라이선스는 여기에 표시한다.</p></header>
+<div class="table-wrap"><table>
+<thead><tr><th>사진</th><th>저작자</th><th>라이선스</th><th>출처</th></tr></thead>
+<tbody>{rows}</tbody></table></div>
+</div></div>""")
+
+
+def build_sources(trip: Trip) -> str:
+    return page(
+        title="출처와 검증", rel="..", tab="guide",
+        trail=[("홈", "index.html"), ("출처와 검증", None)],
+        body=f"""<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>출처와 검증</h1></header>
+<div class="prose">
+<p>이 가이드북은 확인한 것만 싣는다. 확인하지 못한 운영시간·요금은
+기술하지 않거나 <strong>재확인</strong> 표시를 단다. 추측으로 채우지 않는다.</p>
+<ul>
+  <li>역사·건축·인물 — 복수 출처를 확인한 뒤 기술한다.</li>
+  <li>운영시간·요금 — 근거와 확인 날짜를 함께 들고 다닌다.
+    장소 페이지의 <strong>실용</strong> 표에서 볼 수 있다.</li>
+  <li>개인 해석 — 주어를 밝힌다.</li>
+  <li>미확인 — 기술하지 않는다.</li>
+</ul>
+<p>예약은 아직 전부 잠기지 않았다. <strong>확정 전 주소를 확정으로 믿고
+이동하지 않는다.</strong> 확정된 것만 화면에 확정으로 표시된다.</p>
+</div></div></div>""")

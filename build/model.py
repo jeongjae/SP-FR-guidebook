@@ -221,9 +221,12 @@ class Region:
     base: str                   # 실제 숙박 거점 (Girona 지역인데 Bàscara 에서 잔다)
     tagline: str
     dek: str
-    checkin: date
-    checkout: date
-    nights: int
+    intensity: str = ""
+    budget: str = ""
+    rain_plan: str = ""
+    checkin: date = None
+    checkout: date = None
+    nights: int = 0
     days: list[Day] = field(default_factory=list)
     places: list[Place] = field(default_factory=list)
     hero: dict | None = None
@@ -521,6 +524,8 @@ def load_trip() -> Trip:
             slug=r["slug"], name=r["name"], name_ko=r.get("nameKo", r["name"]),
             country=r["country"], base=stay["base"],
             tagline=r.get("tagline", ""), dek=r.get("dek", ""),
+            intensity=r.get("intensity", ""), budget=r.get("budget", ""),
+            rain_plan=r.get("rainPlan", ""),
             checkin=_d(stay["checkin"]), checkout=_d(stay["checkout"]),
             nights=stay["nights"],
             days=[d for d in days if r["slug"] in d.regions],
