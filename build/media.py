@@ -122,14 +122,16 @@ def copy_assets(root: Path, site: Path, catalog: dict) -> None:
 
 # 화면이 깨지거나 출처를 잃는 항목만 필수다.
 PHOTO_REQUIRED = {
-    "imageId", "placeId", "title", "source", "sourcePage", "originalFile",
+    "imageId", "placeId", "title", "source",
     "license", "changes", "downloadDate", "usage",
     "role", "status", "altKo", "captionKo", "originalWidth", "originalHeight",
     "originalPath", "originalSha256", "variants",
 }
 # 비어 있으면 막는 대신 이 값으로 채운다 — 크레딧 페이지에 그대로 드러나므로
 # 채워야 할 목록이 화면에서 바로 보인다 (Jason 지시 2026-08-18).
-PHOTO_DEFAULTS = {"creator": "저작자 미상", "licenseUrl": ""}
+# 로컬 제공 사진은 Commons 설명 페이지가 없다. 비었다고 막지 않고 비운 채 둔다.
+PHOTO_DEFAULTS = {"creator": "저작자 미상", "licenseUrl": "",
+                  "sourcePage": "", "originalFile": ""}
 
 
 def load_photo_manifest(root: Path) -> dict:

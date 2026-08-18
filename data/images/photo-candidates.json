@@ -8397,6 +8397,29 @@
       "score": 72,
       "selected": false,
       "reason": "승인본보다 대표성 또는 모바일 구도가 낮아 대안 후보로 보류"
+    },
+    {
+      "placeId": "musee-marmottan-monet",
+      "candidateRank": 1,
+      "photoTitle": "Musée Marmottan Monet, Paris, March 2013.JPG",
+      "description": "Musée Marmottan Monet, Paris, March 2013",
+      "creator": "Ardfern",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Marmottan_Monet,_Paris,_March_2013.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Mus%C3%A9e_Marmottan_Monet%2C_Paris%2C_March_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "originalWidth": 5184,
+      "originalHeight": 3456,
+      "capturedAt": "2013-03-08",
+      "representativeness": 30,
+      "composition": 19,
+      "guidebookFit": 15,
+      "mobileRecognition": 14,
+      "resolution": 10,
+      "licenseClarity": 10,
+      "score": 98,
+      "selected": true,
+      "reason": "장소 대표성·구도·해상도·라이선스를 검토해 승인"
     }
   ]
 }
