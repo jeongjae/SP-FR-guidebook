@@ -30,8 +30,8 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 
 |항목   |값 |
 |-----|-------------------------- |
-|요금·운영|{{badge:field-recheck|재확인}} |
+|요금·운영|무료 / 월–금 09:00–20:00 · 토 09:00–14:00 (일 휴관) |
 |체류   |30–45분 |
-|위치   |라발, Carrer de l’Hospital |
+|위치   |라발, Carrer de l’Hospital 56 |
 |성격   |**실내.** 우천·폭염 대체안으로 가치가 높다 |
 ---
