@@ -28,6 +28,7 @@ source: source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md
 | 요금·운영·휴관일 | {{badge:field-recheck|재확인 필수}} |
 | 체류 | 90분 |
 | 성격 | **실내.** 폭염·우천 대체안으로 가치 높음 |
+
 - 2026년 11월 1일까지 화–일 10:00–18:00, 월요일 휴관 (출처: museegranet-aixenprovence.fr · 2026-08-14 확인)
 - 티켓마감 17:30
 - 2026 하계 일반권 €14 — 특별전 기간(7/4–11/1) 요율이다 (2026-08-14 확인)

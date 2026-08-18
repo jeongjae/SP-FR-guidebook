@@ -54,6 +54,9 @@ LAYER_TITLE = {
 
 HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from md_tidy import tidy  # noqa: E402
+
 
 def sections(text: str):
     out, cur, fence = [], None, False
@@ -70,19 +73,6 @@ def sections(text: str):
     if cur:
         out.append(cur)
     return out
-
-
-def tidy(md_text: str) -> str:
-    """표 뒤에 붙은 인용문 앞에 빈 줄. 붙어 있으면 '>' 가 글자로 나온다."""
-    out, fence = [], False
-    for line in md_text.splitlines():
-        if line.strip().startswith("```"):
-            fence = not fence
-        if not fence and line.lstrip().startswith(">") and out \
-                and out[-1].strip().startswith("|"):
-            out.append("")
-        out.append(line)
-    return "\n".join(out).strip()
 
 
 def extract(slug: str, path: Path) -> dict:

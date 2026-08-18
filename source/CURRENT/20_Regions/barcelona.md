@@ -32,6 +32,7 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 | **Optional** | 관심·날씨·휴관에 따라 교체 가능 | Picasso, MNAC, Miró, Disseny Hub, Barceloneta 수영 |
 | **Alternative** | 우천·피로·예약실패 때 사용 | Federal Café, Museu Picasso, Santa Caterina, 호텔 휴식 |
 | **Not recommended** | 이번 3박 일정과 개인 취향에 비해 시간 대비 효율이 낮음 | Park Güell, Casa Batlló·La Pedrera 유료입장, Montjuïc 과밀 일정, 당일 몬세라트 |
+
 ---
 
 ## 한눈에 보기
@@ -81,6 +82,7 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 | 운동 | Jason: 8/31 아침 35–45분 러닝 또는 CEM Joan Miró 1회권. Julia: 같은 시설 수영 또는 CN Atlètic-Barceloneta 선택 이용. |
 | 피로 관리 | 도착일 활동 2개 이하, 사그라다 방문일 오후 휴식 포함, 9/1 운전일에는 시체스 핵심 2곳만 방문 |
 | 주요 위험 | 8월 말 더위, 소매치기, 사그라다 입장시간 지각, 렌터카 인수 지연, 시체스 주차·바르셀로나 우회 교통 |
+
 ```text
 8/29 도착·생활권 적응
         ↓
@@ -99,6 +101,7 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 |--|----------------- |
 |점심|13:30 – 15:30 |
 |저녁|**20:30 – 22:30** |
+
 19시에 저녁을 먹으려 하면 문을 연 곳이 관광객 상대뿐이다. **한국 시계로 움직이면 관광지 식당만 만나게 된다.** 다만 도착 직후 시차 상태에서 22시 저녁은 무리이므로, Day 1–2는 이른 시간을 택하고 Day 3부터 현지 리듬으로 옮기는 것이 현실적이다.
 
 ---

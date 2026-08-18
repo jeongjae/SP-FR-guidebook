@@ -46,4 +46,5 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 |통합권  |마리셀과 결합권이 있는 경우가 많다 {{badge:field-recheck|재확인}} |
 |체류   |**60–90분 권장.** 작지만 밀도가 높다 |
 |요금·운영|{{badge:field-recheck|재확인}} |
+
 ---

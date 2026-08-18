@@ -47,6 +47,7 @@ source: source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md
 | 체류 | 3–3.5시간 |
 | 요금 | 2026 비EEA 성인 **약 €32** 안내 {{badge:field-recheck|예약 화면에서 재확인}} |
 | 주의 | 월요일 개관·화요일 휴관 등 요일 확인 · 대형가방 |
+
 관람 루트는 `Jason·Julia 추천 관람 루트`를 따른다.
 
 {{badge:unverified|야간 개장 요일 확인 필요}}

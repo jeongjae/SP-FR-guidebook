@@ -39,4 +39,5 @@ source: source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md
 | 준비 | 모자·선글라스·자외선차단·물·미끄럽지 않은 신발 |
 | 해상 | 300m 이내 속도 5노트 제한 (개인 보트 시) |
 | 비상 | 해상구조 CROSS MED — VHF 16번, +33 (0)4 94 61 16 16, 휴대전화에서 196 |
+
 ---

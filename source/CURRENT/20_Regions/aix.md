@@ -32,6 +32,7 @@ source: source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md
 | Sainte-Victoire 장거리 하이킹 | **비추천** | 4박 일정에서 더위·산불·보행 피로 대비 효율 낮음 |
 | Aix에서 Arles 추가 | 제외 | Arles는 9/19 Avignon 기본 당일치기로 배정되어 중복 이동하지 않음 |
 | Saint-Tropez | **비추천** | 이동·정체 대비 프로젝트 취향과 밀도 낮음 |
+
 엑상의 단정한 시장도시와 마르세유의 다층적인 항구도시를 대비한다. Marseille에서는 Vieux-Port–Le Panier–Mucem–Fort Saint-Jean만 이어 과밀을 피한다. **Cassis와 Marseille를 같은 날 결합하지 않는다.**
 
 Day 16은 엑상 체크아웃 후 뤼베롱 농가로 들어가는 이동일이다. **경유지 이상으로 늘리지 않는다.**
