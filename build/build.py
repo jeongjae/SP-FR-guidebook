@@ -26,6 +26,7 @@ import json
 import os
 import re
 import shutil
+import time
 import sys
 import unicodedata
 import urllib.parse
@@ -6088,7 +6089,9 @@ def check_phase10_official_fact_guards():
 
 def check_links():
     broken = []
-    for f in SITE.rglob("*.html"):
+    for f in list(SITE.rglob("*.html")):
+        if not f.is_file():
+            continue
         text = f.read_text(encoding="utf-8")
         for attr in ("href", "src"):
             for target in re.findall(rf'{attr}="([^"]+)"', text):
@@ -6189,9 +6192,17 @@ def main():
         sys.exit(1)
     print(f"Google 지도 데이터: 72개 지점 · 경고 {len(map_warnings)}건(Place ID 미확인)")
     if SITE.exists():
-        shutil.rmtree(SITE)
-    SITE.mkdir()
-    (SITE / "assets").mkdir()
+        for item in list(SITE.iterdir()):
+            if item.is_dir():
+                shutil.rmtree(item, ignore_errors=True)
+            else:
+                try:
+                    item.unlink()
+                except OSError:
+                    pass
+        time.sleep(0.3)
+    SITE.mkdir(parents=True, exist_ok=True)
+    (SITE / "assets").mkdir(parents=True, exist_ok=True)
     media.copy_assets(ROOT, SITE, MEDIA_CATALOG)
     media.copy_photo_assets(ROOT, SITE, PHOTO_MANIFEST)
     # 아이콘은 CSS 마스크로 붙인다. 스프라이트를 페이지마다 인라인하면
@@ -6209,10 +6220,10 @@ def main():
     # 나눔고딕 woff2 — CDN 을 쓰지 않고 번들한다 (OFL 1.1)
     shutil.copytree(ASSETS / "vendor" / "nanum", SITE / "assets" / "vendor" / "nanum",
                     dirs_exist_ok=True)
-    (SITE / "assets" / "heroes").mkdir()
+    (SITE / "assets" / "heroes").mkdir(parents=True, exist_ok=True)
     for slug, (fname, *_) in HERO_PHOTOS.items():
         shutil.copy(HERO_DIR / fname, SITE / "assets" / "heroes" / f"{slug}.jpg")
-    (SITE / "assets" / "visuals").mkdir()
+    (SITE / "assets" / "visuals").mkdir(parents=True, exist_ok=True)
     for fname in VISUALS.values():
         shutil.copy(VISUALS_DIR / fname, SITE / "assets" / "visuals" / fname)
 

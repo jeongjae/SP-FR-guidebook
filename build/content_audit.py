@@ -16,7 +16,13 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from render import strip_tokens   # noqa: E402  렌더러와 같은 토큰 변환을 쓴다
+import model                       # noqa: E402
+import render                      # noqa: E402
+from render import strip_tokens    # noqa: E402  렌더러와 같은 토큰 변환을 쓴다
+
+# 사실을 빌드와 똑같이 적재한다. 비워 두면 {{fact:...}} 가 원문 쪽에서는
+# "(확인 필요)" 로, 사이트 쪽에서는 실제 값으로 풀려 비교가 어긋난다.
+render.FACTS = model.load_facts()
 
 ROOT = Path(__file__).resolve().parent.parent
 PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"

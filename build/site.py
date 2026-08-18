@@ -69,6 +69,7 @@ def main() -> int:
     clean_site()
 
     render.IMAGES = render.load_image_index()
+    render.FACTS = model.load_facts()
     res = render.load_reservations()
     print(f"예약: 유효 {res['active']}건 · 미확정 {res['undone']}건")
 
@@ -105,8 +106,10 @@ def main() -> int:
     n_red = render.write_redirects(trip)
     print(f"리다이렉트 {n_red}쪽 — 옛 주소를 살려 둔다")
 
+    write("offline.html", render.build_offline_page())
+    write("offline-fallback.html", render.build_offline_fallback())
     render.write_assets(trip)
-    render.write_manifest()
+    render.write_pwa()
 
     total = sum(1 for _ in SITE.rglob("*.html"))
     print(f"\n완료: {SITE} ({total}쪽 · 검색 색인 {len(render.SEARCH_INDEX)}건)")

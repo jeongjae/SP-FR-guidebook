@@ -13,10 +13,12 @@
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
 import shutil
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -78,16 +80,37 @@ def md(text: str) -> str:
                   html_out).replace("</table>", "</table></div>")
 
 
-def strip_tokens(text: str) -> str:
-    """{{fact:...}} · {{badge:...}} · {{grade:...}} 를 사람이 읽는 형태로.
+FACTS: dict = {}   # slug → {key: Fact}. load_facts() 가 채운다.
 
-    fact 토큰은 값을 여기서 채우지 않는다 — 값은 Practical 블록이 근거와
-    함께 보여준다. 본문에 확정처럼 박아 두면 출처가 사라진다.
+FACT_TOKEN = re.compile(r"\{\{fact:([a-z0-9-]+)\.([a-z_]+)\}\}")
+
+
+def resolve_fact(match: "re.Match") -> str:
+    """{{fact:<장소>.<항목>}} 을 실제 값으로 바꾼다.
+
+    값을 감추지 않는다. 확인된 값 76곳을 전부 '확인 필요' 로 덮고 있었는데,
+    그건 규칙 3 을 반대 방향으로 어긴 것이다 — 아는 것을 모른다고 쓰면
+    현장에서 쓸 수 있는 정보를 버린다.
+
+    다만 확정되지 않은 값에는 반드시 표시를 붙인다. 요금·운영시간을
+    확정으로 믿고 움직이는 것이 이 프로젝트 최악의 사고다.
     """
+    slug, key = match.group(1), match.group(2)
+    fact = (FACTS.get(slug) or {}).get(key)
+    if fact is None or not fact.value:
+        reason = fact.blocked_reason if fact and fact.blocked_reason else "확인 필요"
+        return f"({esc(reason)})"
+    if fact.is_confirmed:
+        return esc(fact.value)
+    return f"{esc(fact.value)} (재확인)"
+
+
+def strip_tokens(text: str) -> str:
+    """원고의 토큰을 사람이 읽는 형태로 바꾼다."""
     text = re.sub(r"\{\{grade:[^}]*\}\}", "", text)
     text = re.sub(r"\{\{badge:[^|}]*\|([^}]*)\}\}", r"(\1)", text)
     text = re.sub(r"\{\{badge:([^}]*)\}\}", r"(\1)", text)
-    text = re.sub(r"\{\{fact:[^}]*\}\}", "확인 필요", text)
+    text = FACT_TOKEN.sub(resolve_fact, text)
     return re.sub(r"\{\{[^}]*\}\}", "", text)
 
 
@@ -772,6 +795,8 @@ def build_home(trip: Trip, res: dict) -> str:
     <h3 class="card-title"><a class="card-link" href="guide/{r.slug}.html">
       {esc(r.name)}</a></h3>
     <p class="card-dek">{esc(r.tagline)}</p>
+    <div class="metarow"><span>{esc(r.date_range)}</span><span class="sep">·</span>
+      <span>{r.nights}박</span></div>
   </div>
 </article>""" for r in trip.regions)
 
@@ -985,7 +1010,7 @@ def write_assets(trip: Trip) -> None:
     (out / "style.css").write_text(
         (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
         encoding="utf-8")
-    for name in ("app.js",):
+    for name in ("app.js", "pwa.js"):
         shutil.copy(ASSETS / name, out / name)
     # 나눔고딕 — CDN 을 쓰지 않고 번들한다. 완전 오프라인으로 동작해야 한다.
     if (ASSETS / "vendor").exists():
@@ -1014,18 +1039,166 @@ def write_assets(trip: Trip) -> None:
         + ";", encoding="utf-8")
 
 
-def write_manifest() -> None:
+PWA_ICON_SPECS = (
+    ("apple-touch-icon.png", "180x180", "any"),
+    ("icon-192.png", "192x192", "any"),
+    ("icon-512.png", "512x512", "any"),
+    ("icon-maskable-512.png", "512x512", "maskable"),
+)
+
+# 연결이 끊겨도 반드시 열려야 하는 것들. 없으면 빌드를 세운다.
+PWA_CORE_PATHS = (
+    "index.html",
+    "offline.html",
+    "offline-fallback.html",
+    "schedule.html",
+    "guide/index.html",
+    "map/index.html",
+    "prepare/index.html",
+    "prepare/emergency.html",
+    "assets/style.css",
+    "assets/app.js",
+    "assets/search-index.js",
+    "assets/vendor/nanum/nanum-gothic-latin-400-normal.woff2",
+    "assets/vendor/nanum/nanum-gothic-latin-700-normal.woff2",
+    "assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2",
+    "assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2",
+)
+
+
+def build_offline_page() -> str:
+    """오프라인 준비 화면. 여행 전에 전체를 기기에 저장시킨다.
+
+    43일 중 상당 구간이 데이터가 약하거나 로밍이 비싸다. 현장에서 페이지가
+    안 열리는 것이 이 도구의 실패다.
+
+    DOM 은 build/assets/pwa.js 의 계약이다 — id 를 바꾸면 저장 기능이
+    조용히 죽는다. 스크립트가 없으면 안내 문구만 남는다.
+    """
+    return page(
+        title="오프라인 준비", rel=".", tab="prepare",
+        description="가이드북 전체를 기기에 저장한다",
+        trail=[("홈", "index.html"), ("오프라인 준비", None)],
+        body=f"""<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>오프라인 준비</h1>
+<p class="hero-dek">가이드북 전체를 기기에 저장한다. 연결이 없어도 일정 ·
+장소 · 지도 목록이 열린다.</p></header>
+
+<div class="card" id="pwa-panel"><div class="card-body stack">
+  <dl class="pwa-facts">
+    <dt>저장 상태</dt><dd id="pwa-status">확인 중</dd>
+    <dt>설치 형태</dt><dd id="pwa-install-mode">확인 중</dd>
+    <dt>저장 용량</dt><dd id="pwa-storage">—</dd>
+    <dt>버전</dt><dd id="pwa-version">—</dd>
+  </dl>
+  <p class="meta" id="pwa-detail"></p>
+  <div class="btn-row">
+    <button class="btn btn-primary" id="pwa-save" type="button">
+      {ic("download")}전체 저장</button>
+    <button class="btn btn-secondary" id="pwa-clear" type="button">
+      {ic("close")}저장 비우기</button>
+  </div>
+  <p class="meta" id="pwa-progress" aria-live="polite"></p>
+  <div id="pwa-update-box" hidden>
+    {alert("caution", '새 버전이 있다. <button class="btn btn-quiet" '
+           'id="pwa-activate-update" type="button">지금 적용</button>')}
+  </div>
+</div></div>
+
+<noscript><p class="meta">저장 기능은 자바스크립트가 필요하다.
+연결이 되는 곳에서 이 화면을 다시 열어라.</p></noscript>
+
+{alert("caution", "<strong>출발 전과 장거리 이동 전에 다시 확인한다.</strong> "
+       "iOS 는 저장 공간이 부족하거나 앱을 오래 쓰지 않으면 웹 데이터를 "
+       "정리할 수 있다.")}
+
+<div class="prose">
+<h2>담기는 것</h2>
+<ul>
+  <li>43일 일정과 하루별 시간표 · 이동 · 예약</li>
+  <li>장소 페이지 전체와 사진</li>
+  <li>지역 가이드 · 지도 목록과 좌표 링크</li>
+  <li>준비 화면과 긴급 연락처</li>
+</ul>
+<p>지도 타일은 담기지 않는다. 좌표와 Google Maps 링크는 저장되므로
+연결이 되는 곳에서 열 수 있다.</p>
+</div>
+</div></div>""")
+
+
+def build_offline_fallback() -> str:
+    """저장되지 않은 페이지를 오프라인에서 열었을 때. 막다른 화면을 만들지 않는다."""
+    return page(
+        title="저장되지 않은 페이지", rel=".", tab="today",
+        trail=[("홈", "index.html"), ("오프라인", None)],
+        body=f"""<div class="wrap-read"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>이 페이지는 아직 저장되지 않았다</h1>
+<p class="hero-dek">연결이 없고, 요청한 페이지가 기기에 없다.</p></header>
+{alert("caution", "연결이 되는 곳에서 <strong>오프라인 준비</strong> 화면을 열어 "
+       "전체 저장을 마치면 이런 일이 생기지 않는다.")}
+<div class="btn-row">
+  <a class="btn btn-primary" href="index.html">{ic("today")}저장된 홈 열기</a>
+  <a class="btn btn-secondary" href="offline.html">{ic("download")}오프라인 준비</a>
+</div>
+</div></div>""")
+
+
+def write_pwa() -> None:
+    """manifest · 오프라인 목록 · 서비스워커.
+
+    버전은 파일 내용 해시다. 내용이 안 바뀌면 버전도 안 바뀌고, 그래서
+    기기가 헛되이 다시 받지 않는다.
+    """
     (SITE / "manifest.webmanifest").write_text(json.dumps({
-        "name": SITE_TITLE, "short_name": "유럽 가이드북",
-        "start_url": "./index.html", "display": "standalone",
-        "background_color": "#FAF6EF", "theme_color": "#FAF6EF",
+        "id": "./",
+        "name": SITE_TITLE,
+        "short_name": "유럽 가이드북",
+        "description": "Barcelona 에서 Paris 까지 43일 여행 현장 가이드북",
+        "lang": "ko",
+        "start_url": "./index.html",
+        "scope": "./",
+        "display": "standalone",
+        "background_color": "#FAF6EF",
+        "theme_color": "#FAF6EF",
         "icons": [
-            {"src": "assets/pwa/icon-192.png", "sizes": "192x192",
-             "type": "image/png"},
-            {"src": "assets/pwa/icon-512.png", "sizes": "512x512",
-             "type": "image/png"},
+            {"src": f"./assets/pwa/{name}", "sizes": sizes,
+             "type": "image/png", "purpose": purpose}
+            for name, sizes, purpose in PWA_ICON_SPECS
         ],
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    excluded = {"sw.js", "offline-files.json", ".nojekyll"}
+    records, version_hash = [], hashlib.sha256()
+    for path in sorted(p for p in SITE.rglob("*") if p.is_file()):
+        rel = path.relative_to(SITE).as_posix()
+        if rel in excluded:
+            continue
+        content = path.read_bytes()
+        digest = hashlib.sha256(content).hexdigest()
+        records.append({"path": rel, "size": len(content), "sha256": digest})
+        version_hash.update(rel.encode("utf-8") + b"\0")
+        version_hash.update(digest.encode("ascii") + b"\n")
+    version = version_hash.hexdigest()
+
+    (SITE / "offline-files.json").write_text(json.dumps({
+        "version": version,
+        "totalFiles": len(records),
+        "totalBytes": sum(r["size"] for r in records),
+        "files": records,
+    }, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+
+    missing = [p for p in PWA_CORE_PATHS if not (SITE / p).is_file()]
+    if missing:
+        sys.exit("PWA 핵심 파일 누락: " + ", ".join(missing))
+
+    template = (ASSETS / "service-worker.js").read_text(encoding="utf-8")
+    sw = template.replace("__PWA_VERSION__", version).replace(
+        "__PWA_CORE_PATHS__", json.dumps(list(PWA_CORE_PATHS), ensure_ascii=False))
+    if "__PWA_" in sw:
+        sys.exit("Service Worker 템플릿 토큰이 남아 있다")
+    (SITE / "sw.js").write_text(sw, encoding="utf-8")
+    mib = sum(r["size"] for r in records) / 1048576
+    print(f"  PWA: {len(records)}개 파일 · {mib:.1f} MiB · 버전 {version[:12]}")
 
 
 # 옛 주소 → 새 주소. 404 를 늘리지 않는다.

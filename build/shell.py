@@ -160,7 +160,8 @@ def page(*, title: str, body: str, rel: str, tab: str,
 </footer>
 {bottomnav(rel, tab)}
 <script src="{rel}/assets/search-index.js" defer></script>
-<script src="{rel}/assets/app.js" defer></script>{extra_scripts}
+<script src="{rel}/assets/app.js" defer></script>
+<script src="{rel}/assets/pwa.js" defer></script>{extra_scripts}
 </body>
 </html>
 """

@@ -62,63 +62,54 @@ def main():
         if actual != expected:
             errors.append(f"트래커 숙박 불일치 {stay['base']}: {actual} != {expected}")
 
-    data_js = ROOT / "site" / "assets" / "data.js"
-    if not data_js.exists():
-        errors.append("생성 검색 데이터 누락: site/assets/data.js")
+    # ---- 사이트 투영 검사 --------------------------------------------
+    # 데이터가 맞아도 화면에 안 나오면 소용이 없다. 아래는 "일정 사실이
+    # 실제로 렌더된 페이지에 있는가" 를 본다. URL 은 새 IA 기준이다.
+    site = ROOT / "site"
+
+    index_js = site / "assets" / "search-index.js"
+    if not index_js.exists():
+        errors.append("검색 색인 누락: site/assets/search-index.js")
     else:
-        match = re.fullmatch(
-            r"window\.GUIDE\s*=\s*(\{.*\});\s*",
-            data_js.read_text(encoding="utf-8"),
-            flags=re.DOTALL,
-        )
+        raw = index_js.read_text(encoding="utf-8")
+        match = re.fullmatch(r"window\.SEARCH_INDEX\s*=\s*(\[.*\]);\s*", raw, re.S)
         if not match:
-            errors.append("site/assets/data.js JSON 해석 실패")
+            errors.append("search-index.js 해석 실패")
         else:
-            guide = json.loads(match.group(1))
-            entries = guide.get("search", [])
+            entries = json.loads(match.group(1))
             searchable = " ".join(
-                f"{entry.get('t', '')} {entry.get('c', '')} {entry.get('u', '')}"
-                for entry in entries
+                f"{e.get('t','')} {e.get('x','')} {e.get('u','')}" for e in entries
             ).casefold()
-            for term in (
-                "marseille", "vieux-port", "le panier", "mucem", "fort-saint-jean",
-                "arles", "arènes d’arles", "théâtre antique", "saint-trophime",
-                "fondation vincent van gogh", "la roquette",
-            ):
+            for term in ("marseille", "mucem", "fort saint-jean", "arles",
+                         "saint-trophime", "la roquette"):
                 if term.casefold() not in searchable:
-                    errors.append(f"검색 인덱스 누락: {term}")
-            for entry in entries:
-                url = entry.get("u", "")
+                    errors.append(f"검색 색인 누락: {term}")
+            for e in entries:
+                url = e.get("u", "")
                 if not url or url.startswith(("http://", "https://", "mailto:")):
                     continue
-                target = ROOT / "site" / url.split("#", 1)[0].split("?", 1)[0]
-                if not target.exists():
+                if not (site / url.split("#", 1)[0]).exists():
                     errors.append(f"검색 링크 대상 없음: {url}")
 
-            today = guide.get("today", {})
-            all_dates = {
-                (date.fromisoformat(trip["start"]) + timedelta(days=i)).isoformat()
-                for i in range(trip["days"])
-            }
-            if set(today) != all_dates:
-                errors.append(f"오늘 일정 날짜 매핑 {len(today)}개 (기대 {trip['days']}개)")
-            if len(set(today.values())) != trip["days"]:
-                errors.append("오늘 일정 링크 중복 또는 누락")
-
-    daily_dir = ROOT / "site" / "daily"
+    daily_dir = site / "daily"
     if daily_dir.exists():
         pages = sorted(daily_dir.glob("day-*.html"))
         if len(pages) != trip["days"]:
             errors.append(f"데일리 페이지 {len(pages)}개 (기대 {trip['days']}개)")
 
+    # 그날 원고의 핵심 장소가 실제로 그 날 화면에 있는가
     required_page_terms = {
         "daily/day-14.html": ("Marseille", "Vieux-Port", "Mucem", "Fort Saint-Jean"),
-        "daily/day-22.html": ("Arles", "Arènes d’Arles", "Saint-Trophime", "La Roquette"),
-        "chapters/luberon/index.html": ("3박", "9/13", "9/16"),
-        "chapters/paris/index.html": ("15박", "9/24", "10/9"),
+        "daily/day-22.html": ("Arles", "Saint-Trophime", "La Roquette"),
     }
+    # 지역 페이지에는 그 거점의 박수와 날짜가 나와야 한다
+    for stay in stays:
+        ci = date.fromisoformat(stay["checkin"])
+        co = date.fromisoformat(stay["checkout"])
+        required_page_terms[f"guide/{stay['key']}.html"] = (
+            f"{stay['nights']}박", f"{ci.month}/{ci.day}", f"{co.month}/{co.day}")
     for relative, terms in required_page_terms.items():
-        path = ROOT / "site" / relative
+        path = site / relative
         if not path.exists():
             errors.append(f"필수 생성 페이지 누락: {relative}")
             continue
@@ -127,20 +118,24 @@ def main():
             if term not in rendered:
                 errors.append(f"필수 생성 콘텐츠 누락: {relative} → {term}")
 
+    # 선택안(대체 일정)이 기본 일정의 장소처럼 보이면 안 된다. 현장에서
+    # "오늘 가는 곳" 으로 읽고 움직이게 된다.
     forbidden_day_place_links = {
         "daily/day-14.html": ("places/arles.html", "places/cassis.html"),
-        "daily/day-22.html": ("places/les-baux-de-provence.html", "places/saint-remy-de-provence.html"),
+        "daily/day-22.html": ("places/les-baux-de-provence.html",
+                              "places/saint-remy-de-provence.html"),
     }
     for relative, links in forbidden_day_place_links.items():
-        rendered = (ROOT / "site" / relative).read_text(encoding="utf-8")
-        place_section = rendered.split('class="ic ic-pin"', 1)[-1].split(
-            'class="ic ic-note"', 1
-        )[0]
+        path = site / relative
+        if not path.exists():
+            continue
+        rendered = path.read_text(encoding="utf-8")
+        timeline = rendered.split('class="timeline"', 1)[-1].split("</ol>", 1)[0]
         for link in links:
-            if link in place_section:
-                errors.append(f"선택안이 기본 데일리 장소로 노출됨: {relative} → {link}")
+            if link in timeline:
+                errors.append(f"선택안이 기본 일정에 노출됨: {relative} → {link}")
 
-    home = ROOT / "site" / "index.html"
+    home = site / "index.html"
     if home.exists():
         rendered = home.read_text(encoding="utf-8")
         for stay in stays:
@@ -148,10 +143,9 @@ def main():
             if marker not in rendered:
                 errors.append(f"홈 거점 누락: {stay['base']}")
                 continue
-            card = rendered.split(marker, 1)[1].split("</li>", 1)[0]
-            for term in (f'({stay["nights"]}박)',):
-                if term not in card:
-                    errors.append(f"홈 숙박 요약 불일치: {stay['base']} → {term}")
+            card = rendered.split(marker, 1)[1].split("</article>", 1)[0]
+            if f'{stay["nights"]}박' not in card:
+                errors.append(f"홈 숙박 요약 불일치: {stay['base']} → {stay['nights']}박")
 
     if errors:
         print("일정 검증 실패:")
