@@ -65,12 +65,13 @@ def run_gate_validation():
     else:
         print("   [OK] Place Overwrite Protection PASS: Normal build did not alter any 30_Places files.")
 
-    # 3. Duplicate Long-Form Detection for Barcelona Pilot
-    print("3. Testing Duplicate Long-Form Detection (Barcelona Pilot 5 Places)...")
-    bcn_pilot = ["sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic", "macba", "biblioteca-de-catalunya"]
+    # 3. Duplicate Long-Form Detection for Barcelona & Girona Places
+    print("3. Testing Duplicate Long-Form Detection (Barcelona & Girona Places)...")
     bcn_text = CHAPTER_BCN.read_text(encoding="utf-8") if CHAPTER_BCN.exists() else ""
+    gro_chapter = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "05_Girona_Collioure_Emporda_v2.1.md"
+    gro_text = gro_chapter.read_text(encoding="utf-8") if gro_chapter.exists() else ""
     
-    long_form_signatures = [
+    long_form_signatures_bcn = [
         "기둥이 나무처럼 갈라지는 이유",
         "비벽(Flying Buttress)",
         "45도의 이유 — 바르셀로나 격자망",
@@ -78,31 +79,46 @@ def run_gate_validation():
         "리처드 마이어의 빛과 백색 공간",
         "가우디가 마지막 숨을 거둔"
     ]
+    long_form_signatures_gro = [
+        "23미터를 기둥 없이 건너뛴 결정",
+        "창조의 태피스트리 (11~12세기)",
+        "지형의 군사학 — 지로나가 불침의",
+        "석 달이 미술사를 바꾼 사건",
+        "자연 암반을 깎아 깊은 해자",
+        "Les Voltes는 식당 테라스가 아니었다"
+    ]
     dups = []
-    for sig in long_form_signatures:
+    for sig in long_form_signatures_bcn:
         if sig in bcn_text:
-            dups.append(sig)
+            dups.append(f"[BCN] {sig}")
+    for sig in long_form_signatures_gro:
+        if sig in gro_text:
+            dups.append(f"[GRO] {sig}")
     if dups:
-        errors.append(f"Duplicate long-form text detected in Region chapter: {dups}")
-        print(f"   [FAIL] Found duplicate long-form sections in 04_Barcelona_Sitges: {dups}")
+        errors.append(f"Duplicate long-form text detected in Region chapters: {dups}")
+        print(f"   [FAIL] Found duplicate long-form sections: {dups}")
     else:
-        print("   [OK] Dedup PASS: Region chapter contains only compact references with no duplicate long-forms.")
+        print("   [OK] Dedup PASS: Barcelona and Girona chapters contain only compact references with no duplicate long-forms.")
 
     # 4. Trip Layer Separation Check
-    print("4. Testing Trip Layer Separation...")
+    print("4. Testing Trip Layer Separation (Barcelona & Girona)...")
     trip_hardcode_pattern = re.compile(r"(8월\s*\d+일|9월\s*\d+일|10월\s*\d+일|Day\s*\d+에\s*방문|이번\s*일정에서는\s*Day)")
-    bcn_hardcodes = []
-    for slug in bcn_pilot:
+    check_slugs = [
+        "sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic", "macba", "biblioteca-de-catalunya",
+        "girona-cathedral", "passeig-de-la-muralla", "collioure", "onyar", "pals", "peratallada", "calella-de-palafrugell", "peralada"
+    ]
+    trip_hardcodes = []
+    for slug in check_slugs:
         pf = PLACE_DIR / f"{slug}.md"
         if pf.exists():
             matches = trip_hardcode_pattern.findall(pf.read_text(encoding="utf-8"))
             if matches:
-                bcn_hardcodes.append((slug, matches))
-    if bcn_hardcodes:
-        errors.append(f"Hardcoded trip references found in Barcelona pilot: {bcn_hardcodes}")
-        print(f"   [FAIL] Barcelona pilot has trip hardcodes: {bcn_hardcodes}")
+                trip_hardcodes.append((slug, matches))
+    if trip_hardcodes:
+        errors.append(f"Hardcoded trip references found in places: {trip_hardcodes}")
+        print(f"   [FAIL] Places have trip hardcodes: {trip_hardcodes}")
     else:
-        print("   [OK] Trip Separation PASS: Barcelona pilot places are cleanly decoupled from trip dates.")
+        print("   [OK] Trip Separation PASS: Barcelona and Girona places are cleanly decoupled from trip dates.")
 
     # 5. Reference Integrity Check
     print("5. Testing Reference Integrity...")
@@ -111,7 +127,7 @@ def run_gate_validation():
         ddata = json.loads(dp.read_text(encoding="utf-8"))
         for stop in ddata.get("stops", []):
             sid = stop.get("id")
-            if sid and sid in bcn_pilot and not (PLACE_DIR / f"{sid}.md").exists():
+            if sid and sid in check_slugs and not (PLACE_DIR / f"{sid}.md").exists():
                 missing_refs.append((dp.stem, sid))
     if missing_refs:
         errors.append(f"Missing referenced place files: {missing_refs}")
