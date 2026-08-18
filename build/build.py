@@ -3649,12 +3649,6 @@ def build_home():
         '<a class="ps-link" href="tracker/reservations.html">예약 현황</a></section>')
 
     body = f"""<h1 class="sr-only">{SITE_TITLE}</h1>
-<section class="hero">
-  <div class="today-bar">
-    <span class="today-date" id="today-date">{TRIP_START.isoformat()}</span>
-    <a href="daily/index.html" class="nav-today btn-today">오늘 일정 열기</a>
-  </div>
-</section>
 {plan_strip}
 <nav class="home-actions" aria-label="여행 주요 기능">{primary_rows}</nav>
 <h2 class="ic ic-list">전체 여정</h2>
@@ -4397,10 +4391,8 @@ def build_tracker():
     print(f"  트래커: {len(cards)}개 시트 → tracker/")
 
     body = ('<h1>준비</h1>'
-            '<p class="meta">TP_Europe_Travel_Master_Tracker_v1.2.xlsx에서 변환</p>'
-            f'<div class="grid">{"".join(cards)}</div>'
-            '<p class="note">부록: <a href="itinerary.html">일정 시트 원본</a> — '
-            '20열 원형 열람용. 일정은 <a href="../daily/index.html">43일 일정</a>이 정본 화면이다.</p>')
+            '<p class="meta">여행 준비 상태를 점검</p>'
+            f'<div class="grid">{"".join(cards)}</div>')
     (out_dir / "index.html").write_text(
         page("준비", body, rel="..", topbar_title="준비",
              back=crumbs_for(("트래커", None))),
