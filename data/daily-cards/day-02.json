@@ -19,29 +19,29 @@
   },
   "stops": [
     {
-      "id": "sagrada-familia",
+      "id": "sant-pau",
       "order": 1,
-      "start": "09:00",
-      "end": "12:10",
-      "name": "Sagrada Família",
+      "start": "09:30",
+      "end": "11:10",
+      "name": "Recinte Modernista de Sant Pau",
       "category": "culture",
-      "lat": 41.40363,
-      "lng": 2.17436,
-      "summary": "Plaça de Gaudí에서 외관을 본 뒤 10:30 입장",
+      "lat": 41.41193,
+      "lng": 2.17438,
+      "summary": "도메네크 이 몬타네르의 병원 단지. 09:30 개장 직후가 가장 한산하다",
       "menu": null,
-      "reservation": "예약완료 — 15:15 입장 (General · €29.12)",
+      "reservation": "자유관람 예약 불요 · 14시 이전 입장 €18 (이후 €17)",
       "optional": false
     },
     {
       "id": "avinguda-gaudi",
       "order": 2,
-      "start": "12:10",
-      "end": "12:50",
+      "start": "11:25",
+      "end": "12:30",
       "name": "Avinguda de Gaudí",
       "category": "sight",
       "lat": 41.40755,
       "lng": 2.17436,
-      "summary": "사그라다와 산파우를 잇는 직선 보행축",
+      "summary": "산파우와 사그라다를 잇는 직선 보행축 — 내려가며 사그라다 정면이 커진다. 점심까지 완충 시간이다",
       "menu": null,
       "reservation": null,
       "optional": false
@@ -61,24 +61,24 @@
       "optional": false
     },
     {
-      "id": "sant-pau",
+      "id": "sagrada-familia",
       "order": 4,
-      "start": "14:30",
-      "end": "16:10",
-      "name": "Recinte Modernista de Sant Pau",
+      "start": "14:45",
+      "end": "17:00",
+      "name": "Sagrada Família",
       "category": "culture",
-      "lat": 41.41193,
-      "lng": 2.17438,
-      "summary": "도메네크 이 몬타네르의 병원 단지",
+      "lat": 41.40363,
+      "lng": 2.17436,
+      "summary": "14:45 Plaça de Gaudí에서 외관을 본 뒤 15:15 입장 — 보안검색 대기를 30분 잡았다",
       "menu": null,
-      "reservation": "입장권 재확인",
+      "reservation": "예약완료 — 15:15 입장 (General · €29.12)",
       "optional": false
     },
     {
       "id": "gracia",
       "order": 5,
-      "start": "18:00",
-      "end": "19:10",
+      "start": "17:30",
+      "end": "18:40",
       "name": "Vila de Gràcia",
       "category": "sight",
       "lat": 41.40204,
@@ -119,11 +119,11 @@
   ],
   "legs": [
     {
-      "from": "sagrada-familia",
+      "from": "sant-pau",
       "to": "avinguda-gaudi",
       "mode": "walk",
-      "duration": "20분",
-      "distance": "0.5km",
+      "duration": "15분",
+      "distance": "약 0.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
@@ -138,15 +138,15 @@
     },
     {
       "from": "la-paradeta-sagrada",
-      "to": "sant-pau",
+      "to": "sagrada-familia",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "0.8km",
+      "duration": "5분",
+      "distance": "약 0.3km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "sant-pau",
+      "from": "sagrada-familia",
       "to": "gracia",
       "mode": "metro",
       "duration": "25분",
@@ -182,11 +182,11 @@
     "Bodega Joan · 타파스"
   ],
   "highlights": [
-    "10:30 Sagrada 입장",
-    "Avinguda de Gaudí 보행축",
-    "Sant Pau 후 45분 이상 휴식"
+    "15:15 Sagrada 입장 — 예약 시각 엄수",
+    "Sant Pau 09:30 개장 직후 · 14시 이전 €18",
+    "Avinguda de Gaudí 를 북→남으로 내려간다"
   ],
-  "backup": "혼잡·피로 시 Gràcia 산책 삭제, Sant Pau 실내와 카페 중심",
+  "backup": "혼잡·피로 시 Gràcia 산책 삭제. Sagrada 예약은 시각 고정이라 앞의 일정을 줄인다 — 뒤로 미룰 수 없다",
   "map": {
     "zoom": 14,
     "center": [
@@ -196,7 +196,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "⚠ Sagrada 입장이 15:15 로 확정됐다. 현재 시간표는 09:00 방문 기준이라 Sant Pau(14:30)와 겹친다 — 하루 순서 재배치가 필요하다.",
+    "Sant Pau→Avinguda·La Paradeta→Sagrada 도보 거리는 좌표에서 뽑은 추정치다 (약 표기) — 현장에서 확인",
     "숙소→사그라다 아침 이동수단(Metro/버스) 현장 확정",
     "La Paradeta·Bodega Joan 좌표와 2026 운영 여부 출발 전 재확인",
     "예약번호·총액·무료취소 기한 기록 (챕터 pending 배지)"
