@@ -996,16 +996,15 @@ def build_home(trip: Trip, res: dict) -> str:
                  for s in d.stops if s.start and s.category != "hotel"][:4],
     } for d in trip.days]
 
-    # 여행 전 화면 — 아직 잠기지 않은 것부터 보여준다
-    undone = res.get("undone", 0)
-    active = res.get("active", 0)
+    # 여행 전 화면 — 아직 예약하지 않은 것부터 보여준다.
+    # 예약목표일이 가까운 순으로 다섯 개만 — 홈은 요약이고, 전체는 준비 화면이다.
+    todo = res.get("todo", [])
+    done = res.get("confirmed", [])
     pre_items = "".join(
-        f"<li>{esc(name)} {badge('caution', esc(status))}</li>"
-        for _id, name, status in res.get("items", [])
-        if status not in ("예약완료", "확정", "취소"))[:0] or "".join(
-        f"<li>{esc(name)} {badge('caution', esc(status))}</li>"
-        for _id, name, status in res.get("items", [])
-        if status not in ("예약완료", "확정", "취소"))
+        f'<li>{esc(r["예약항목"])}'
+        + (f' <span class="meta">목표 {esc(r["예약목표일"])}</span>'
+           if r["예약목표일"] else "") + "</li>"
+        for r in todo[:5])
 
     region_cards = "".join(f"""<article class="card" data-region="{r.slug}"
     style="min-width:0">
@@ -1035,9 +1034,9 @@ def build_home(trip: Trip, res: dict) -> str:
   {sec_head("PREPARE", "준비", more=("준비 화면", "prepare/index.html"), rule=True)}
   <div class="card"><div class="card-body">
     <div class="metarow">
-      <span>{ic("check")}예약 {active}건</span>
+      <span>{ic("check")}확정 {len(done)}건</span>
       <span class="sep">·</span>
-      <span>{badge('caution', f'미확정 {undone}건')}</span>
+      <span>{badge('caution', f'미예약 {len(todo)}건')}</span>
     </div>
     {f'<div class="prose"><ul>{pre_items}</ul></div>' if pre_items else ''}
   </div></div>
@@ -1117,24 +1116,82 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
     return out
 
 
+def res_card(rec: dict, *, todo: bool = False) -> str:
+    """예약 하나. 목록이 아니라 **현장에서 쓰는 카드**다.
+
+    렌터카 카운터에서 필요한 것은 항목 이름이 아니라 예약번호이고, 체크인
+    때 필요한 것은 주소다. 그래서 접지 않고 펼쳐 둔다.
+    """
+    mark = badge("caution", "미예약") if todo else badge("ok", "확정")
+    when = rec["날짜"] + (f" {rec['시간']}" if rec["시간"] else "")
+    money = (f"{rec['총액']} {rec['통화']}"
+             if rec["총액"] and rec["총액"] != "0" else "")
+
+    facts = []
+    if when:
+        facts.append(("일시", when))
+    if rec["사업자"]:
+        facts.append(("사업자", rec["사업자"]))
+    if rec["예약번호"] and not todo:
+        facts.append(("예약번호", rec["예약번호"]))
+    if money:
+        facts.append(("금액", money))
+    if rec["주소/역"]:
+        facts.append(("장소", rec["주소/역"]))
+    if todo and rec["예약목표일"]:
+        facts.append(("예약 목표", rec["예약목표일"]))
+    if rec["무료취소기한"]:
+        facts.append(("무료취소", rec["무료취소기한"]))
+
+    rows = "".join(f"<dt>{esc(k)}</dt><dd>{linkify(esc(v))}</dd>" for k, v in facts)
+    # 리스크는 접어 둔다 — 평소엔 방해가 되고, 문제가 생겼을 때만 필요하다
+    extra = ""
+    detail = " · ".join(x for x in (rec["리스크/대체안"], rec["비고"]) if x)
+    if detail:
+        extra = (f'<details class="acc"><summary>주의·메모</summary>'
+                 f'<div class="acc-body"><p class="card-dek">{linkify(esc(detail))}'
+                 f"</p></div></details>")
+    region = f'<span class="meta">{esc(rec["지역"])}</span>' if rec["지역"] else ""
+    return f"""<article class="card booking-card">
+  <div class="booking-head">
+    <span class="booking-name">{esc(rec["예약항목"])}</span>{mark}</div>
+  <div class="metarow">{esc(rec["카테고리"])}{region}</div>
+  <dl>{rows}</dl>
+  {extra}
+</article>"""
+
+
 def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
     """준비 — 무엇을 예약·확인해야 하는가.
 
-    개인정보는 나가지 않는다. 예약번호·주소·금액은 렌더하지 않고 상태와
-    건수만 보여준다.
+    상태는 셋뿐이다: 확정 · 미예약 · 제외. 중간 상태를 두면 무엇을 해야
+    하는지 알 수 없다.
     """
     rel = ".."
     out = {}
-    items = res.get("items", [])
-    done = [i for i in items if i[2] in ("예약완료", "확정")]
-    open_ = [i for i in items if i[2] not in ("예약완료", "확정", "취소")]
+    todo, done, dropped = res["todo"], res["confirmed"], res["dropped"]
 
-    def rows(group):
-        return "".join(
-            f"""<article class="card booking-card">
-  <div class="booking-head"><span class="booking-name">{esc(name)}</span>
-    {badge('ok', '확정') if status in ('예약완료', '확정') else badge('caution', esc(status))}</div>
-</article>""" for _id, name, status in group)
+    def group(records, is_todo):
+        by_cat = {}
+        for r in records:
+            by_cat.setdefault(r["카테고리"] or "기타", []).append(r)
+        blocks = []
+        for cat, items in by_cat.items():
+            blocks.append(sec_head("", f"{cat} {len(items)}건"))
+            blocks.append('<div class="grid grid-2">'
+                          + "".join(res_card(r, todo=is_todo) for r in items)
+                          + "</div>")
+        return "".join(blocks)
+
+    dropped_html = ""
+    if dropped:
+        rows = "".join(
+            f'<li>{esc(r["예약항목"])}'
+            + (f' — {esc(r["비고"][:80])}' if r["비고"] else "") + "</li>"
+            for r in dropped)
+        dropped_html = (f'<details class="acc"><summary>이번 일정에서 뺀 것 '
+                        f'{len(dropped)}건</summary><div class="acc-body prose">'
+                        f"<ul>{rows}</ul></div></details>")
 
     out["index.html"] = page(
         title="준비", rel=rel, tab="prepare",
@@ -1142,21 +1199,26 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
         trail=[("홈", "index.html"), ("준비", None)],
         body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header><h1>준비</h1>
-<p class="hero-dek">여행 준비 상태를 점검한다. 예약 {res.get('active', 0)}건 중
-  미확정 {res.get('undone', 0)}건.</p></header>
+<p class="hero-dek">확정 {len(done)}건 · 미예약 {len(todo)}건.
+  상태는 셋뿐이다 — 확정 · 미예약 · 제외.</p></header>
 
-{alert('caution', '<strong>확정되지 않은 예약이 있다.</strong> 확정 전 주소·시각을 '
-       '믿고 이동하지 않는다. 확정된 것만 화면에 확정으로 표시된다.')
- if open_ else ''}
+{alert('caution',
+       f'<strong>아직 {len(todo)}건이 예약되지 않았다.</strong> 예약이 없는 항목은 '
+       f'주소·시각이 정해진 것이 아니다. 확정된 것만 확정으로 표시된다.')
+ if todo else alert('ok', '<strong>모든 예약이 확정됐다.</strong>', 'check')}
 
-{sec_head('TO LOCK', f'미확정 {len(open_)}건', rule=True) if open_ else ''}
-<div class="grid grid-2">{rows(open_)}</div>
+{sec_head('TO BOOK', f'아직 예약하지 않은 것 — {len(todo)}건', rule=True) if todo else ''}
+{group(todo, True)}
 
-{sec_head('LOCKED', f'확정 {len(done)}건', rule=True) if done else ''}
-<div class="grid grid-2">{rows(done)}</div>
+{sec_head('BOOKED', f'예약을 마친 것 — {len(done)}건', rule=True) if done else ''}
+{group(done, False)}
+
+{dropped_html}
 
 <div class="btn-row"><a class="btn btn-secondary" href="emergency.html">
-  {ic('alert')}긴급 연락처</a></div>
+  {ic('alert')}긴급 연락처</a>
+  <a class="btn btn-secondary" href="../offline.html">
+  {ic('download')}오프라인 준비</a></div>
 </div></div>""")
 
     out["emergency.html"] = page(
@@ -1183,41 +1245,75 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 # ================================================================ 자산·색인
 
 def load_reservations() -> dict:
-    """예약 상태. 개인정보는 나오지 않는다 — 상태와 건수만 밖으로 나간다.
+    """예약을 상세까지 읽는다.
 
-    주소·예약번호·금액은 렌더하지 않는다. 공개 배포되는 사이트다.
+    예전에는 상태와 건수만 꺼냈다. 그런데 목록만 있고 세부가 없으면 현장에서
+    쓸 수 없다 — "숙소 4박" 이라고만 적힌 줄은 어느 숙소인지 알려 주지 않고,
+    렌터카 카운터에서 필요한 것은 목록이 아니라 예약번호다.
+
+    상태는 셋뿐이다.
+        확정   예약이 있다 (예약번호가 있거나 본인이 확인했다)
+        미예약 아직 없다 — 해야 할 일이다
+        제외   이번 일정에서 뺐다
+    '재확인' 은 없앴다. 예약번호가 있는 것과 아예 없는 것을 한 낱말로 묶고
+    있어서, 무엇을 해야 하는지 알 수 없었다.
     """
+    empty = {"confirmed": [], "todo": [], "dropped": [],
+             "active": 0, "undone": 0, "items": [], "by_date": {}}
     try:
         from openpyxl import load_workbook
     except ImportError:
-        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+        return empty
     if not TRACKER_XLSX.exists():
-        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+        return empty
     wb = load_workbook(TRACKER_XLSX, data_only=True)
     if "Reservations" not in wb.sheetnames:
-        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+        return empty
     rows = list(wb["Reservations"].iter_rows(values_only=True))
-    hdr_i = next((i for i, r in enumerate(rows) if r and r[0] == "ID"), None)
+    hdr_i = next((k for k, r in enumerate(rows) if r and r[0] == "ID"), None)
     if hdr_i is None:
-        return {"active": 0, "undone": 0, "items": [], "by_date": {}}
+        return empty
     hdr = list(rows[hdr_i])
-    ix = {n: hdr.index(n) for n in ("ID", "날짜", "상태", "예약항목")}
-    by_date, items, cancelled = {}, [], 0
-    for r in rows[hdr_i + 1:]:
-        if not r or not r[ix["ID"]]:
+    ix = {name: hdr.index(name) for name in hdr if name}
+
+    def cell(row, key):
+        if key not in ix:
+            return ""
+        v = row[ix[key]]
+        if v is None:
+            return ""
+        if hasattr(v, "date"):
+            return v.date().isoformat()
+        if isinstance(v, float) and v.is_integer():
+            return str(int(v))
+        return str(v).strip()
+
+    confirmed, todo, dropped, by_date, items = [], [], [], {}, []
+    for row in rows[hdr_i + 1:]:
+        if not row or not row[ix["ID"]]:
             continue
-        status = str(r[ix["상태"]] or "").strip()
-        if status == "취소":
-            cancelled += 1
+        rec = {k: cell(row, k) for k in
+               ("ID", "카테고리", "지역", "예약항목", "날짜", "시간", "상태",
+                "총액", "통화", "예약번호", "사업자", "주소/역", "무료취소기한",
+                "예약목표일", "리스크/대체안", "비고")}
+        status = rec["상태"]
+        items.append((rec["ID"], rec["예약항목"], status))
+        if status == "제외":
+            dropped.append(rec)
             continue
-        d = r[ix["날짜"]]
-        if hasattr(d, "date"):
-            by_date.setdefault(d.date().isoformat(), []).append(status)
-        items.append((str(r[ix["ID"]] or "").strip(),
-                      str(r[ix["예약항목"]] or "").strip(), status))
-    undone = sum(1 for _i, _n, s in items if s not in ("예약완료", "확정"))
-    return {"active": len(items), "undone": undone, "items": items,
-            "by_date": by_date}
+        if rec["날짜"]:
+            by_date.setdefault(rec["날짜"], []).append(status)
+        (confirmed if status == "확정" else todo).append(rec)
+
+    order = {"숙소": 0, "항공": 1, "철도": 2, "렌터카": 3, "입장권": 4,
+             "공연": 5, "기타": 6}
+    key = lambda r: (order.get(r["카테고리"], 9), r["날짜"] or "9999")
+    confirmed.sort(key=key)
+    todo.sort(key=lambda r: (r["예약목표일"] or "9999", key(r)))
+
+    return {"confirmed": confirmed, "todo": todo, "dropped": dropped,
+            "active": len(confirmed) + len(todo), "undone": len(todo),
+            "items": items, "by_date": by_date}
 
 
 def write_assets(trip: Trip) -> None:
