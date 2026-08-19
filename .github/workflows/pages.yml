@@ -28,11 +28,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 머지가 연달아 일어나면 배포 런이 큐에 쌓이고, **오래된 런이 나중에
+      # 끝나면서 새 배포를 덮는다.** 2026-08-19 에 실제로 그랬다 — 최신 커밋이
+      # 먼저 배포된 뒤 30분 전 커밋의 런이 실행돼 라이브가 되돌아갈 뻔했다.
+      #
+      # 취소로 막지 않는다. 배포 중 취소는 gh-pages 를 반쯤 덮은 상태로 남길
+      # 수 있다(위 concurrency 주석). 대신 **자기가 최신이 아니면 스스로
+      # 비켜선다** — 뒤따르는 최신 런이 어차피 같은 자리를 덮는다.
+      - name: 최신 커밋인지 확인
+        id: freshness
+        run: |
+          git fetch --depth=1 origin main
+          head_sha=$(git rev-parse HEAD)
+          main_sha=$(git rev-parse FETCH_HEAD)
+          echo "이 런: $head_sha"
+          echo "origin/main: $main_sha"
+          if [ "$head_sha" != "$main_sha" ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::이 런은 최신이 아니다 — 배포를 건너뛴다. 최신 런이 배포한다."
+          else
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.freshness.outputs.stale != 'true'
         with:
           python-version: "3.12"
 
       - name: Build site
+        if: steps.freshness.outputs.stale != 'true'
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           GOOGLE_MAPS_MAP_ID: ${{ secrets.GOOGLE_MAPS_MAP_ID }}
@@ -52,6 +76,7 @@ jobs:
           touch site/.nojekyll
 
       - name: Publish to gh-pages
+        if: steps.freshness.outputs.stale != 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
