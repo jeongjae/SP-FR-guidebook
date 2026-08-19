@@ -259,6 +259,44 @@ def first_source_url(place) -> str:
     return ""
 
 
+
+# ---------------------------------------------------------------- 예약번호 가리기
+
+# 이 사이트는 gh-pages 로 공개 배포된다. 예약번호가 그대로 있으면 누구나
+# 그 예약을 조회할 수 있다. 원본(트래커·원고)에는 온전히 남겨 둔다 — 그게
+# 기록이고, 확정 사실 토큰 가드도 원고에서 코드가 살아 있는지 본다.
+# 가리는 것은 **화면에 나갈 때뿐**이다.
+#
+# 아는 코드만 정확히 겨냥한다. 정규식으로 '코드처럼 생긴 것' 을 찾으면
+# 주소나 전화번호가 함께 가려진다.
+BOOKING_CODES: set[str] = set()
+
+SKIP_CODE_WORDS = {"trip.com", "airbnb", "booking.com", "none", "미표기",
+                   "발권메일", "확인", "pnr"}
+
+
+def collect_codes(raw: str) -> None:
+    for token in re.findall(r"[A-Za-z0-9][A-Za-z0-9.]{3,}", raw or ""):
+        if token.lower() not in SKIP_CODE_WORDS:
+            BOOKING_CODES.add(token)
+
+
+def mask_code(code: str) -> str:
+    """뒤 4자리를 **** 로. 짧은 코드는 통째로 가린다."""
+    if len(code) <= 4:
+        return "****"
+    return code[:-4] + "****"
+
+
+def mask_booking_codes(html_text: str) -> str:
+    """알려진 예약번호를 화면에서 가린다. 긴 것부터 바꿔야 부분 일치로
+    짧은 코드가 긴 코드를 잘라먹지 않는다."""
+    for code in sorted(BOOKING_CODES, key=len, reverse=True):
+        if code in html_text:
+            html_text = html_text.replace(code, mask_code(code))
+    return html_text
+
+
 # ---------------------------------------------------------------- 이미지
 
 def load_image_index() -> dict:
@@ -1207,6 +1245,10 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
        f'주소·시각이 정해진 것이 아니다. 확정된 것만 확정으로 표시된다.')
  if todo else alert('ok', '<strong>모든 예약이 확정됐다.</strong>', 'check')}
 
+{alert('ok', '<strong>예약번호는 뒤 4자리를 가렸다.</strong> 이 사이트는 누구나 '
+       '열 수 있어서, 번호가 그대로 있으면 남이 그 예약을 조회할 수 있다. '
+       '온전한 번호는 예약 확인 메일과 트래커 파일에 있다.', 'lock')}
+
 {sec_head('TO BOOK', f'아직 예약하지 않은 것 — {len(todo)}건', rule=True) if todo else ''}
 {group(todo, True)}
 
@@ -1289,6 +1331,7 @@ def load_reservations() -> dict:
         return str(v).strip()
 
     confirmed, todo, dropped, by_date, items = [], [], [], {}, []
+    BOOKING_CODES.clear()
     for row in rows[hdr_i + 1:]:
         if not row or not row[ix["ID"]]:
             continue
@@ -1296,6 +1339,8 @@ def load_reservations() -> dict:
                ("ID", "카테고리", "지역", "예약항목", "날짜", "시간", "상태",
                 "총액", "통화", "예약번호", "사업자", "주소/역", "무료취소기한",
                 "예약목표일", "리스크/대체안", "비고")}
+        collect_codes(rec["예약번호"])
+
         status = rec["상태"]
         items.append((rec["ID"], rec["예약항목"], status))
         if status == "제외":
@@ -1304,6 +1349,17 @@ def load_reservations() -> dict:
         if rec["날짜"]:
             by_date.setdefault(rec["날짜"], []).append(status)
         (confirmed if status == "확정" else todo).append(rec)
+
+    # 같은 예약이 Reservations 와 Accommodation 에 나뉘어 적힌 경우가 있다.
+    # 한쪽만 훑으면 다른 쪽 코드가 화면으로 새어 나간다.
+    if "Accommodation" in wb.sheetnames:
+        acc = wb["Accommodation"]
+        acc_hdr = [c.value for c in acc[3]]
+        if "예약번호" in acc_hdr:
+            k = acc_hdr.index("예약번호")
+            for row in acc.iter_rows(min_row=4, values_only=True):
+                if k < len(row) and row[k]:
+                    collect_codes(str(row[k]))
 
     order = {"숙소": 0, "항공": 1, "철도": 2, "렌터카": 3, "입장권": 4,
              "공연": 5, "기타": 6}
