@@ -601,7 +601,7 @@ def build_place(p: Place, trip: Trip) -> str:
         if sibs:
             parts.append(sec_head("", f"{region.name} 의 다른 장소",
                                    more=("전체", f"{rel}/guide/{region.slug}.html")))
-            parts.append('<div class="scroll-x">'
+            parts.append('<div class="scroll-x place-siblings">'
                          + "".join(place_card(x, rel) for x in sibs) + "</div>")
 
     parts.append("</div>")
@@ -1027,7 +1027,7 @@ def build_home(trip: Trip, res: dict) -> str:
 
 <section>
   {sec_head("JOURNEY", "여정", more=("전체 일정", "schedule.html"), rule=True)}
-  <div class="scroll-x">{region_cards}</div>
+  <div class="scroll-x journey-grid">{region_cards}</div>
 </section>
 
 <section>
