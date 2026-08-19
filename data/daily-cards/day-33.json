@@ -12,10 +12,11 @@
   "totalDistance": "약 2km · 도보 + 메트로",
   "fatigue": "3",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -25,12 +26,13 @@
       "end": "12:30",
       "name": "느린 아침·수면 보존",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "다음 날 오페라를 위해 수면 보존, 11:30 가벼운 점심",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "palais-tokyo",
@@ -95,12 +97,13 @@
       "end": null,
       "name": "숙소 귀환·가벼운 저녁",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "Philharmonie·야간행사 제외 — FHCM 9/30 일반 공개행사 미게시(8/5 기준)",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     }
   ],
   "legs": [
@@ -173,8 +176,8 @@
   },
   "needsReview": [
     "FHCM 공개행사 게시 여부 출발 전 재확인",
-    "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-7-9월30일",

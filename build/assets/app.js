@@ -3,6 +3,11 @@
 (function () {
   "use strict";
 
+  /* 이 파일은 IIFE 하나다. var 는 함수 스코프라 블록이 달라도 같은 변수가
+     된다 — 지도 블록과 홈 블록이 각각 var dataEl 을 선언했더니 나중 것이
+     먼저 것을 null 로 덮었고, Day 페이지의 지도가 통째로 열리지 않았다.
+     블록마다 이름을 달리 짓는다. */
+
   var rel = document.querySelector('link[rel=stylesheet]').getAttribute('href')
               .replace(/assets\/style\.css$/, '').replace(/\/$/, '') || '.';
 
@@ -61,80 +66,109 @@
   /* ---- 지도 / 목록 전환 ----
      지도는 눌렀을 때만 불러온다. 43일 내내 열리는 화면마다 지도 SDK 를
      받으면 데이터가 약한 곳에서 첫 화면이 늦는다.
-     목록은 항상 남는다 — 스크립트나 네트워크가 없어도 좌표 링크는 손에
-     있어야 한다. */
+
+     목록은 항상 남는다. 스크립트도 네트워크도 없이 좌표 링크가 손에 있어야
+     한다 — 현장에서 그런 상황이 실제로 있다.
+
+     실패는 반드시 화면에 말한다. 처음 만들 때 전역 콜백(callback=)에 기댔다가
+     콜백이 돌지 않는 경우 "지도를 불러오는 중" 에서 영영 멈췄다. 사용자는
+     기다리면 되는 줄 알고 기다린다. 그건 목록으로 떨어지는 것보다 나쁘다. */
   var toggle = document.querySelector('.map-toggle');
   if (toggle) {
     var canvas = document.getElementById('map-canvas');
     var list = document.getElementById('map-list');
     var status = document.getElementById('map-status');
-    var dataEl = document.getElementById('map-data');
-    var mapReady = false, mapLoading = false;
+    var mapDataEl = document.getElementById('map-data');
+    var mapState = 'idle';   // idle | loading | ready | failed
 
     function meta(name) {
       var el = document.querySelector('meta[name="' + name + '"]');
-      return el ? el.content : '';
+      return el && el.content ? el.content : '';
     }
-    var apiKey = meta('google-maps-api-key');
+    function say(text) { if (status) status.textContent = text || ''; }
 
     function show(view) {
       var wantMap = view === 'map';
-      list.hidden = wantMap;
-      canvas.hidden = !wantMap;
+      if (list) list.hidden = wantMap;
+      if (canvas) canvas.hidden = !wantMap;
       Array.prototype.forEach.call(toggle.querySelectorAll('button'), function (b) {
         b.setAttribute('aria-pressed', String((b.dataset.view === 'map') === wantMap));
       });
     }
 
+    function fallback(reason) {
+      mapState = 'failed';
+      say(reason + ' 목록으로 연다 — 각 항목의 링크로 Google 지도를 열 수 있다.');
+      show('list');
+    }
+
     function drawMap() {
-      if (mapReady || !dataEl) return;
-      var data = JSON.parse(dataEl.textContent);
-      var map = new google.maps.Map(canvas, {
+      var data = JSON.parse(mapDataEl.textContent);
+      var opts = {
         center: { lat: data.center[0], lng: data.center[1] },
         zoom: data.zoom,
-        mapId: meta('google-maps-map-id') || undefined,
         mapTypeControl: false, streetViewControl: false, fullscreenControl: false
-      });
+      };
+      var mapId = meta('google-maps-map-id');
+      if (mapId) opts.mapId = mapId;
+
+      var map = new google.maps.Map(canvas, opts);
       var bounds = new google.maps.LatLngBounds();
       data.pins.forEach(function (pin, i) {
+        var pos = { lat: pin.lat, lng: pin.lng };
         var marker = new google.maps.Marker({
-          map: map, position: { lat: pin.lat, lng: pin.lng },
-          title: pin.name, label: String(i + 1)
+          map: map, position: pos, title: pin.name, label: String(i + 1)
         });
-        bounds.extend(marker.getPosition());
+        bounds.extend(pos);
         marker.addListener('click', function () {
-          var row = list.querySelector('[data-pin="' + pin.id + '"]');
+          var row = list && list.querySelector('[data-pin="' + pin.id + '"]');
           if (row) { show('list'); row.scrollIntoView({ block: 'center' }); }
         });
       });
       if (data.pins.length > 1) map.fitBounds(bounds, 40);
-      mapReady = true;
-      if (status) status.textContent = '';
+      mapState = 'ready';
+      say('');
+    }
+
+    function tryDraw() {
+      try { drawMap(); }
+      catch (err) { fallback('지도를 그리지 못했다 (' + err.message + ').'); }
+    }
+
+    /* SDK 가 준비될 때까지 짧게 기다린다. 전역 콜백에 기대지 않는다 —
+       콜백이 안 오면 알 방법이 없다. 여기서는 안 오면 목록으로 떨어진다. */
+    function waitForSdk(deadline) {
+      if (window.google && google.maps && google.maps.Map) { tryDraw(); return; }
+      if (Date.now() > deadline) {
+        fallback('지도를 불러오지 못했다.');
+        return;
+      }
+      setTimeout(function () { waitForSdk(deadline); }, 120);
     }
 
     function loadMap() {
-      if (mapReady) { show('map'); return; }
-      if (!apiKey) {
-        if (status) status.textContent =
-          '지도 키가 없어 목록으로 연다. 각 항목의 링크로 Google 지도를 열 수 있다.';
-        show('list');
-        return;
-      }
-      if (mapLoading) return;
-      mapLoading = true;
-      if (status) status.textContent = '지도를 불러오는 중';
+      if (mapState === 'ready') { show('map'); return; }
+      if (mapState === 'loading') { show('map'); return; }
+      var key = meta('google-maps-api-key');
+      if (!key) { fallback('지도 키가 없다.'); return; }
+
+      mapState = 'loading';
+      say('지도를 불러오는 중');
       show('map');
+
+      if (window.google && google.maps && google.maps.Map) { tryDraw(); return; }
+
       var s = document.createElement('script');
       s.src = 'https://maps.googleapis.com/maps/api/js?key=' +
-        encodeURIComponent(apiKey) + '&loading=async&callback=__mapReady';
+        encodeURIComponent(key) + '&language=ko&region=ES';
       s.async = true;
-      window.__mapReady = function () { drawMap(); };
-      s.onerror = function () {
-        mapLoading = false;
-        if (status) status.textContent = '지도를 불러오지 못했다. 목록을 쓴다.';
-        show('list');
-      };
+      s.onerror = function () { fallback('지도를 내려받지 못했다.'); };
+      s.onload = function () { waitForSdk(Date.now() + 8000); };
       document.head.appendChild(s);
+      /* onload 가 오지 않는 경우까지 덮는다 */
+      setTimeout(function () {
+        if (mapState === 'loading') waitForSdk(Date.now() + 4000);
+      }, 6000);
     }
 
     toggle.addEventListener('click', function (e) {
@@ -184,9 +218,9 @@
      빌드 시각에 모드를 굳히지 않는다. 출발 전에 만든 페이지가 여행 중에도
      맞아야 하기 때문이다. */
   var panel = document.getElementById('today-panel');
-  var dataEl = document.getElementById('trip-data');
-  if (panel && dataEl) {
-    var trip = JSON.parse(dataEl.textContent);
+  var tripDataEl = document.getElementById('trip-data');
+  if (panel && tripDataEl) {
+    var trip = JSON.parse(tripDataEl.textContent);
     var now2 = new Date();
     var iso = now2.getFullYear() + '-'
       + String(now2.getMonth() + 1).padStart(2, '0') + '-'

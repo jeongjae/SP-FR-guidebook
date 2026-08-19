@@ -12,10 +12,11 @@
   "totalDistance": "약 2km · 도보 (반경 800m)",
   "fatigue": "1–2",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -25,12 +26,13 @@
       "end": "12:00",
       "name": "늦은 아침·세탁·짐 배치",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "알람 없이 시작 — 16박 수납·세탁 루틴을 정한다",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "neighborhood",
@@ -67,12 +69,13 @@
       "end": null,
       "name": "가까운 저녁 또는 숙소식",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "예약형 식당·공연 없음 — 고정 일정을 당겨 채우지 않는다",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     }
   ],
   "legs": [
@@ -126,8 +129,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Paris 숙소 후보 확정 — 생활권 앵커가 숙소 위치에 종속",
-    "세탁 시설 확인"
+    "세탁 시설 확인",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-28",

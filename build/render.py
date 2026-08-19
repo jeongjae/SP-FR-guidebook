@@ -19,10 +19,13 @@ import os
 import re
 import shutil
 import sys
+from urllib.parse import quote
 from datetime import date
 from pathlib import Path
 
 import markdown as md_lib
+
+import md_tidy
 
 import icons
 import model
@@ -75,14 +78,90 @@ FACT_LABEL = {
 }
 
 
+SEP_ROW = re.compile(r"^\s*\|?[\s:|-]*-{2,}[\s:|-]*\|?\s*$")
+
+
+def _cells(line: str) -> list[str]:
+    row = line.strip()
+    if row.startswith("|"):
+        row = row[1:]
+    if row.endswith("|"):
+        row = row[:-1]
+    return [c.strip() for c in row.split("|")]
+
+
+def _inline(text: str) -> str:
+    """셀 안의 굵게·링크만 변환한다. 문단 태그는 벗긴다."""
+    out = md_lib.markdown(text, extensions=["attr_list"]).strip()
+    if out.startswith("<p>") and out.endswith("</p>"):
+        out = out[3:-4]
+    return out
+
+
+def headerless_tables(text: str) -> tuple[str, dict[str, str]]:
+    """헤더 없는 파이프 표를 직접 HTML 로 만든다.
+
+    마크다운 표는 헤더 행과 구분선이 있어야 표로 읽힌다. 원고에는 둘 없이
+    데이터 행만 있는 표가 있고(Barcelona·Paris), Aix 는 구분선만 있고 헤더가
+    없다. 그대로 두면 파이프가 글자로 나와 화면이 깨진다.
+
+    첫 행을 헤더로 승격시키지 않는다 — 'Essential' 은 열 이름이 아니라 값이다.
+    없는 열 이름을 지어내느니 헤더 없는 표로 둔다.
+    """
+    lines = text.splitlines()
+    parts, holes, i, n = [], {}, 0, 0
+    while i < len(lines):
+        if not lines[i].lstrip().startswith("|"):
+            parts.append(lines[i])
+            i += 1
+            continue
+        j = i
+        while j < len(lines) and lines[j].lstrip().startswith("|"):
+            j += 1
+        block = lines[i:j]
+        # 제대로 된 표(2행이 구분선)는 마크다운에게 맡긴다
+        if len(block) >= 2 and SEP_ROW.match(block[1]):
+            parts.extend(block)
+            i = j
+            continue
+        rows = [b for b in block if not SEP_ROW.match(b)]
+        if len(rows) < 2:
+            parts.extend(block)
+            i = j
+            continue
+        body = "".join(
+            "<tr>" + "".join(f"<td>{_inline(c)}</td>" for c in _cells(r)) + "</tr>"
+            for r in rows)
+        key = f"@@TABLE{n}@@"
+        holes[key] = f'<div class="table-wrap"><table><tbody>{body}</tbody></table></div>'
+        # 빈 줄로 감싼다. 표 뒤에 --- 가 오는 원고가 있는데, 그러면 마크다운이
+        # 바로 앞 줄(자리표시자)을 제목으로 읽어 표가 <h2> 안에 들어간다.
+        parts += ["", key, ""]
+        n += 1
+        i = j
+    return "\n".join(parts), holes
+
+
 def md(text: str) -> str:
     if not text.strip():
         return ""
+    # 표 앞뒤를 빈 줄로 가른다. 원고는 사람이 쓴 것이라 표 바로 뒤에 문장이
+    # 붙어 있는 곳이 많고, 그러면 그 문장이 표의 한 행으로 빨려 들어가
+    # 열 너비가 문장 길이만큼 늘어난다.
+    #
+    # 승격 단계가 아니라 여기서 한다. 장소 장문(30_Places)은 이제 손으로
+    # 관리하는 정본이라 빌드가 고쳐 쓰지 않는다 — 원고는 쓴 대로 두고
+    # 렌더가 방어한다.
+    text = md_tidy.tidy(text)
+    text, holes = headerless_tables(text)
     html_out = md_lib.markdown(
         text, extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
     # 표는 감싸서 그 안에서만 가로 스크롤시킨다 — 본문이 가로로 흐르면 안 된다
-    return re.sub(r"<table>", '<div class="table-wrap"><table>',
-                  html_out).replace("</table>", "</table></div>")
+    html_out = re.sub(r"<table>", '<div class="table-wrap"><table>',
+                      html_out).replace("</table>", "</table></div>")
+    for key, block in holes.items():
+        html_out = html_out.replace(f"<p>{key}</p>", block).replace(key, block)
+    return html_out
 
 
 LAYER_LABEL = {"role": "여행 전체에서의 역할", "rhythm": "추천 체류 리듬"}
@@ -137,6 +216,47 @@ def strip_tokens(text: str) -> str:
     text = re.sub(r"\{\{badge:([^}]*)\}\}", r"(\1)", text)
     text = FACT_TOKEN.sub(resolve_fact, text)
     return re.sub(r"\{\{[^}]*\}\}", "", text)
+
+
+# 글자로만 있는 URL 을 누를 수 있게 만든다.
+#
+# 사실 출처(place-facts 의 source) 286건이 전부 맨 URL 이라 화면에 글자로만
+# 나왔다. 현장에서 "운영시간이 맞나" 를 확인하려면 그 주소를 손으로 옮겨
+# 적어야 했다는 뜻이다. 확인할 수 없는 근거는 근거가 아니다.
+URL_IN_TEXT = re.compile(r'https?://[^\s<>"\')\]]+')
+
+
+def domain_of(url: str) -> str:
+    """보여줄 이름. 전체 주소는 390px 에서 서너 줄을 먹고 읽히지도 않는다."""
+    host = url.split("//", 1)[-1].split("/", 1)[0]
+    return host[4:] if host.startswith("www.") else host
+
+
+def linkify(text: str, *, show: str = "domain") -> str:
+    """**이스케이프된** 문자열 안의 맨 URL 을 <a> 로 바꾼다.
+
+    이스케이프를 먼저 하고 여기 넣어야 한다. 순서를 뒤집으면 우리가 만든
+    태그가 다시 이스케이프돼 글자로 나온다.
+    """
+    def repl(m):
+        raw = m.group(0)
+        url = raw.rstrip(".,·;")
+        tail = raw[len(url):]
+        shown = domain_of(url) if show == "domain" else url
+        return (f'<a href="{url}" rel="nofollow noopener">{shown}</a>{tail}')
+    return URL_IN_TEXT.sub(repl, text)
+
+
+def first_source_url(place) -> str:
+    """이 장소의 근거 URL 하나. 공식 페이지인 경우가 대부분이라 상단
+    행동줄에 '공식 정보' 로 내보낸다 — 현장에서 눌러 지금 값을 확인한다."""
+    for key in ("booking", "hours", "price_adult", "closed", "getting_there"):
+        f = place.facts.get(key)
+        if f and f.source:
+            m = URL_IN_TEXT.search(f.source)
+            if m:
+                return m.group(0).rstrip(".,·;")
+    return ""
 
 
 # ---------------------------------------------------------------- 이미지
@@ -306,14 +426,18 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
     """
     pins = [{"id": s.id, "name": s.name, "lat": s.lat, "lng": s.lng,
              "cat": s.category, "time": s.start,
+             "address": s.address,
              "place": s.place.slug if s.place else None}
-            for s in stops if s.lat and s.lng]
+            for s in stops if (s.lat and s.lng) or s.address]
     if not pins:
         return ""
+    located = [p for p in pins if p["lat"] and p["lng"]]
     if center is None:
-        center = [sum(p["lat"] for p in pins) / len(pins),
-                  sum(p["lng"] for p in pins) / len(pins)]
-    payload = json.dumps({"center": center, "zoom": zoom, "pins": pins},
+        if not located:
+            return ""
+        center = [sum(p["lat"] for p in located) / len(located),
+                  sum(p["lng"] for p in located) / len(located)]
+    payload = json.dumps({"center": center, "zoom": zoom, "pins": located},
                          ensure_ascii=False, separators=(",", ":")) \
         .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
 
@@ -323,11 +447,12 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
         if p["place"]:
             name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
         when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
+        href = maps_url(p["lat"], p["lng"], p.get("address") or "")
         items.append(
-            f'<li data-pin="{esc(p["id"])}">{when}{name}'
-            f'<a class="map-open" rel="nofollow noopener" '
-            f'href="https://www.google.com/maps/search/?api=1&query='
-            f'{p["lat"]},{p["lng"]}">{ic("map")}'
+            f'<li data-pin="{esc(p["id"])}">{when}'
+            f'<span class="map-name">{name}</span>'
+            f'<a class="map-open" rel="nofollow noopener" href="{esc(href)}">'
+            f'{ic("map")}'
             f'<span class="visually-hidden">{esc(p["name"])} </span>열기</a></li>')
 
     return f"""<div class="map-card">
@@ -343,6 +468,21 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
   </div>
   <ol class="map-list" id="map-list">{"".join(items)}</ol>
 </div>"""
+
+
+def maps_url(lat=None, lng=None, address: str = "") -> str:
+    """지도 링크. 좌표가 있으면 좌표로, 없으면 주소로 연다.
+
+    확정 숙소인데 검증된 좌표가 없는 경우가 있다. 틀린 좌표를 남기면
+    현장에서 엉뚱한 곳으로 간다 — 그게 이 프로젝트 최악의 사고다.
+    주소는 확정이므로 Google 지도가 정확히 찾는다.
+    """
+    if lat and lng:
+        return f"https://www.google.com/maps/search/?api=1&query={lat},{lng}"
+    if address:
+        return ("https://www.google.com/maps/search/?api=1&query="
+                + quote(address))
+    return ""
 
 
 def index_search(title: str, url: str, kind: str, extra: str = "") -> None:
@@ -380,10 +520,12 @@ def build_place(p: Place, trip: Trip) -> str:
             f'<a class="btn btn-primary" rel="nofollow noopener" '
             f'href="https://www.google.com/maps/dir/?api=1&destination={p.lat},{p.lng}">'
             f'{ic("map")}길찾기</a>')
-    url_fact = p.fact("url") or p.fact("booking")
-    if url_fact and url_fact.value.startswith("http"):
-        actions.append(f'<a class="btn btn-secondary" href="{esc(url_fact.value)}" '
-                       f'rel="nofollow noopener">{ic("link")}공식 사이트</a>')
+    url_fact = p.fact("url")
+    official = (url_fact.value if url_fact and url_fact.value.startswith("http")
+                else first_source_url(p))
+    if official:
+        actions.append(f'<a class="btn btn-secondary" href="{esc(official)}" '
+                       f'rel="nofollow noopener">{ic("link")}공식 정보</a>')
     if p.wiki:
         wiki_url = (f"https://{p.wiki_lang}.wikipedia.org/wiki/"
                     f"{p.wiki.replace(' ', '_')}")
@@ -436,7 +578,7 @@ def build_place(p: Place, trip: Trip) -> str:
                 mark = badge("caution", "재확인")
                 value = esc(f.value) if f.value else \
                     f'<span class="meta">{esc(f.blocked_reason or "미확인")}</span>'
-            src = (f'<br><span class="meta">{esc(f.source)}</span>'
+            src = (f'<br><span class="meta">출처 {linkify(esc(f.source))}</span>'
                    if f.source else "")
             rows.append(f"<tr><th scope=\"row\">{esc(label)}</th>"
                         f"<td>{value} {mark}{src}</td></tr>")
@@ -500,7 +642,7 @@ def build_day(d: Day, trip: Trip) -> str:
   <div class="metarow"><span class="day-num">DAY {d.n}</span>
     <span class="day-date">{esc(d.date_label)}</span></div>
   <h1>{esc(d.city)}</h1>
-  <p class="hero-dek">{esc(d.title)}</p>
+  <p class="day-summary">{esc(d.title)}</p>
   <div class="metarow">{''.join(head_marks)}</div>
 </header>"""]
 
@@ -704,24 +846,26 @@ def build_region(r: Region, trip: Trip) -> str:
                          + "</ul></div>")
 
     # --- Stay & Local Life ------------------------------------------------
+    # 그 지역에서 **자는** 날의 숙소만 싣는다. 이동일은 두 지역에 걸쳐 있어
+    # 그냥 모으면 다음 거점의 숙소가 이 지역 날짜를 달고 나타난다.
     hotels = {d.hotel.get("name"): d.hotel for d in r.days
-              if d.hotel.get("name")}
+              if d.region == r.slug and d.hotel.get("name")}
     parts.append(f'<div id="stay">{sec_head("STAY", "숙박 · 생활", rule=True)}</div>')
     if hotels:
         cards = []
         for name, h in hotels.items():
             confirmed = h.get("status") == "confirmed"
             mark = badge("ok", "확정") if confirmed else badge("caution", "미확정")
-            link = ""
-            if h.get("lat"):
-                link = (f'<a class="btn btn-secondary" rel="nofollow noopener" '
-                        f'href="https://www.google.com/maps/search/?api=1&query='
-                        f'{h["lat"]},{h["lng"]}">{ic("map")}지도</a>')
+            href = maps_url(h.get("lat"), h.get("lng"), h.get("address") or "")
+            link = (f'<a class="btn btn-secondary" rel="nofollow noopener" '
+                    f'href="{esc(href)}">{ic("map")}지도</a>') if href else ""
+            addr = (f'<dt>주소</dt><dd>{esc(h["address"])}</dd>'
+                    if h.get("address") else "")
             cards.append(f"""<article class="card booking-card">
   <div class="booking-head"><span class="booking-name">{esc(name)}</span>{mark}</div>
   <dl><dt>체크인</dt><dd>{esc(r.checkin.isoformat())}</dd>
       <dt>체크아웃</dt><dd>{esc(r.checkout.isoformat())}</dd>
-      <dt>박수</dt><dd>{r.nights}박</dd></dl>
+      <dt>박수</dt><dd>{r.nights}박</dd>{addr}</dl>
   <div class="btn-row">{link}</div>
 </article>""")
         parts.append(f'<div class="grid grid-2">{"".join(cards)}</div>')
@@ -877,8 +1021,6 @@ def build_home(trip: Trip, res: dict) -> str:
 
     body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 
-<h1 class="visually-hidden">오늘</h1>
-
 <section id="today-panel" class="stack" aria-live="polite">
   <noscript><p class="meta">오늘 화면은 기기의 날짜로 고릅니다.
     <a href="schedule.html">전체 일정</a>을 여세요.</p></noscript>
@@ -917,6 +1059,7 @@ def build_home(trip: Trip, res: dict) -> str:
      "days": days_payload}, ensure_ascii=False)}</script>"""
 
     return page(title="오늘", body=body, rel=rel, tab="today",
+                bar_title="2026년 유럽여행 가이드",
                 description=f"{SITE_TITLE} — 43일 여행 가이드")
 
 
@@ -1087,9 +1230,8 @@ def write_assets(trip: Trip) -> None:
         encoding="utf-8")
     for name in ("app.js", "pwa.js"):
         shutil.copy(ASSETS / name, out / name)
-    # 나눔고딕 — CDN 을 쓰지 않고 번들한다. 완전 오프라인으로 동작해야 한다.
-    if (ASSETS / "vendor").exists():
-        shutil.copytree(ASSETS / "vendor", out / "vendor", dirs_exist_ok=True)
+    # 글꼴은 번들하지 않는다. 기기의 기본 한글 글꼴을 쓰므로 내려받을 것이
+    # 없고, 그만큼 오프라인 패키지가 가벼워진다.
     pwa = ROOT / "source" / "ASSETS" / "pwa"
     if pwa.exists():
         shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
@@ -1134,10 +1276,6 @@ PWA_CORE_PATHS = (
     "assets/style.css",
     "assets/app.js",
     "assets/search-index.js",
-    "assets/vendor/nanum/nanum-gothic-latin-400-normal.woff2",
-    "assets/vendor/nanum/nanum-gothic-latin-700-normal.woff2",
-    "assets/vendor/nanum/nanum-gothic-korean-400-normal.woff2",
-    "assets/vendor/nanum/nanum-gothic-korean-700-normal.woff2",
 )
 
 
@@ -1323,11 +1461,17 @@ def write_redirects(trip: Trip) -> int:
 def build_credits(trip: Trip) -> str:
     """사진 저작자 표시. 표시가 필요한 라이선스는 화면에 남긴다."""
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
+    def cell_link(url: str, label: str) -> str:
+        """주소가 없으면 링크를 만들지 않는다. 빈 href 는 눌러도 제자리다."""
+        if not url:
+            return esc(label) if label else "—"
+        return (f'<a href="{esc(url)}" rel="nofollow noopener">'
+                f'{esc(label) if label else domain_of(url)}</a>')
+
     rows = "".join(f"""<tr><td>{esc(i.get('titleKo') or i.get('title'))}</td>
-<td>{esc(i.get('creator'))}</td>
-<td><a href="{esc(i.get('licenseUrl') or '')}" rel="nofollow noopener">
-  {esc(i.get('license'))}</a></td>
-<td><a href="{esc(i.get('sourcePage') or '')}" rel="nofollow noopener">출처</a></td></tr>"""
+<td>{linkify(esc(i.get('creator') or '—'))}</td>
+<td>{cell_link(i.get('licenseUrl') or '', i.get('license') or '')}</td>
+<td>{cell_link(i.get('sourcePage') or '', '출처')}</td></tr>"""
         for i in raw.get("images", []))
     return page(
         title="사진 저작자 표시", rel="..", tab="guide",

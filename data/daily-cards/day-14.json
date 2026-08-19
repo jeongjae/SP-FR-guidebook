@@ -12,10 +12,11 @@
   "totalDistance": "L50 왕복 + 도보 약 4km",
   "fatigue": "4",
   "hotel": {
-    "name": "Adagio Aix Centre (후보)",
-    "lat": 43.528998,
-    "lng": 5.440842,
-    "status": "candidate"
+    "name": "Les Toits de Méjanes (Airbnb)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
   },
   "stops": [
     {
@@ -109,12 +110,13 @@
       "end": "19:00",
       "name": "Saint-Charles→Aix 귀환",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
+      "lat": null,
+      "lng": null,
       "summary": "귀환편 여유 — 저녁은 숙소권에서 가볍게",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     }
   ],
   "legs": [
@@ -197,7 +199,7 @@
   "needsReview": [
     "L50 시각표·정류장 확인",
     "Mucem 2026 운영·전시 재확인",
-    "Aix 숙소 후보(Adagio) 승인"
+    "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-14",

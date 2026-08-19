@@ -12,10 +12,11 @@
   "totalDistance": "약 2.5km · 도보",
   "fatigue": "1",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -25,12 +26,13 @@
       "end": "13:00",
       "name": "늦은 기상·브런치·세탁",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "알람 없이 회복 우선 — 다음 5일 생활 준비",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "grocery",
@@ -81,12 +83,13 @@
       "end": null,
       "name": "숙소식·일찍 취침",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "공연·박물관 금지",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     }
   ],
   "legs": [
@@ -149,8 +152,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Paris 숙소 후보 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판"
+    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-12-10월5일"

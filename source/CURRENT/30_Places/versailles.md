@@ -41,4 +41,5 @@ source: source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md
 | 휴관 | **월요일** {{badge:unverified|확인}} — Day 36은 토요일이라 무관 |
 | 예약 | 시간지정제 {{badge:unverified|확인}} |
 | 혼잡 | **토요일은 최악에 가깝다** |
+
 ---

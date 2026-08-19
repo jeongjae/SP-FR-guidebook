@@ -12,10 +12,11 @@
   "totalDistance": "약 5km · 도보",
   "fatigue": "2–3",
   "hotel": {
-    "name": "Adagio Aix Centre (후보)",
-    "lat": 43.528998,
-    "lng": 5.440842,
-    "status": "candidate"
+    "name": "Les Toits de Méjanes (Airbnb)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
   },
   "stops": [
     {
@@ -53,12 +54,13 @@
       "end": "13:30",
       "name": "숙소·시장 점심",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
+      "lat": null,
+      "lng": null,
       "summary": "오후 분리일정 준비",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     },
     {
       "id": "sketch-swim",
@@ -81,12 +83,13 @@
       "end": "21:15",
       "name": "합류·카페·마지막 저녁",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
+      "lat": null,
+      "lng": null,
       "summary": "짐 70% 정리 후 19:45 Aix 마지막 저녁 — 한 곳만 예약",
       "menu": null,
       "reservation": "저녁 식당 예약",
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     }
   ],
   "legs": [
@@ -151,8 +154,8 @@
   "needsReview": [
     "Atelier de Cézanne 예약 잠금",
     "Yves Blanc 수영장 운영·요금 확인",
-    "Aix 숙소 후보(Adagio) 승인",
-    "저녁 식당 예약"
+    "저녁 식당 예약",
+    "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-15",

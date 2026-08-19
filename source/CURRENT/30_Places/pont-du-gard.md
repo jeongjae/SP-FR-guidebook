@@ -58,4 +58,5 @@ source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.
 | 체류 | 90–150분 (박물관 포함 시 더) |
 | ⚠ | **문화유산의 날 겹침.** 프랑스에서 가장 방문객이 많은 고대 기념물이다 |
 | 조명 | 야간 조명 운영 {{badge:unverified|2026 운영 확인}} |
+
 ---

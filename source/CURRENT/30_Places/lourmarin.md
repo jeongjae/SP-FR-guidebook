@@ -58,6 +58,7 @@ L’Isle-sur-la-Sorgue를 별도 대안으로 고르면 두 작가의 우정이 
 | 성 | 유료 {{badge:field-recheck|요금·운영 재확인}} |
 | 시장 | **일요일에는 없다.** 금요일 오전 · 화요일 저녁(4–10월) |
 | 체류 | 60–90분 |
+
 ✓ **개최 확인** — `Lourmarin des Carnets · 9e Salon du Carnet de Voyage` 는 **2026년 9월 12–13일**에 열린다. 장소는 La Fruitière Numérique(Avenue du 8 Mai). 카르네티스트 45명, 워크숍·강연·상영. **Day 16(9/13)이 마지막 날이다.** 출처: lourmarindescarnets.fr · lourmarin.com · 뤼브롱 지역자연공원. 시각·입장료는 {{badge:field-recheck|2026-08 확인 · 출발 전 재확인}}
 
 ---

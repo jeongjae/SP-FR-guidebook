@@ -12,10 +12,11 @@
   "totalDistance": "약 204km · 차량 경로",
   "fatigue": "5",
   "hotel": {
-    "name": "Adagio Aix Centre (후보)",
-    "lat": 43.528998,
-    "lng": 5.440842,
-    "status": "candidate"
+    "name": "Les Toits de Méjanes (Airbnb)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
   },
   "stops": [
     {
@@ -77,16 +78,17 @@
     {
       "id": "aix-checkin",
       "order": 5,
-      "start": null,
+      "start": "15:00",
       "end": null,
       "name": "Aix 체크인",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
-      "summary": "지정주차 진입 — 보행구역 진입 금지, 차량고정·주차카드 확인",
+      "lat": null,
+      "lng": null,
+      "summary": "체크인 15:00부터. Résidence Les Toits de Méjanes entrée A, 6층 — 엘리베이터·주차는 현장 확인",
       "menu": null,
-      "reservation": "Aix 숙소 후보 확정 필요",
-      "optional": false
+      "reservation": "예약완료 Airbnb HMSSBEA4PJ — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     },
     {
       "id": "rotonde",
@@ -109,12 +111,13 @@
       "end": null,
       "name": "숙소권 저녁",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
+      "lat": null,
+      "lng": null,
       "summary": "특별식 금지 — A8 운전을 마친 날 Aix 관광을 시작하지 않는다",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     }
   ],
   "legs": [
@@ -196,10 +199,10 @@
     "routeCache": "routes/day-12-driving-osrm.json"
   },
   "needsReview": [
-    "Aix 숙소 후보(Adagio) 승인",
     "Fondation Maeght 운영·요금 재확인",
     "각 경유지 시각은 인수 완료 시각 기준 역산",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): 체크아웃 9/9 11:00 — 09:00 렌터카 인수와 순서 확인"
+    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): 체크아웃 9/9 11:00 — 09:00 렌터카 인수와 순서 확인",
+    "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-12",

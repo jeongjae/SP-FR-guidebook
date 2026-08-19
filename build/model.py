@@ -52,8 +52,13 @@ def _d(iso: str) -> date:
 
 
 def date_label(d: date) -> str:
-    """9/4 금 — 현장에서 읽는 형식. 연도는 붙이지 않는다, 한 해 안의 여행이다."""
-    return f"{d.month}/{d.day} {WEEKDAY_KO[d.weekday()]}"
+    """9.4 (금) — 현장에서 읽는 형식.
+
+    연도는 붙이지 않는다. 한 해 안의 여행이고, 날짜 옆에 2026 이 있으면
+    정작 읽어야 할 월·일이 묻힌다. 요일은 괄호로 묶어 숫자와 갈라 놓는다 —
+    시장 요일과 휴관일이 요일로 정해지는 여행이라 요일이 빨리 읽혀야 한다.
+    """
+    return f"{d.month}.{d.day} ({WEEKDAY_KO[d.weekday()]})"
 
 
 # ---------------------------------------------------------------- Place
@@ -132,6 +137,9 @@ class Stop:
     menu: str | None = None
     reservation: str | None = None
     optional: bool = False
+    # 좌표를 모르지만 주소는 확정인 곳이 있다 (확정 숙소 등).
+    # 틀린 좌표를 남기느니 주소로 지도를 연다.
+    address: str | None = None
     place: Place | None = None  # 장소 페이지가 있는 stop 만 연결된다
 
     @property
@@ -478,6 +486,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 lat=s.get("lat"), lng=s.get("lng"), summary=s.get("summary") or "",
                 menu=s.get("menu"), reservation=s.get("reservation"),
                 optional=bool(s.get("optional")),
+                address=s.get("address"),
             ) for s in j.get("stops", [])],
             legs=[Leg(
                 frm=l["from"], to=l["to"], mode=l.get("mode", "walk"),

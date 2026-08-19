@@ -12,10 +12,11 @@
   "totalDistance": "약 2km · 도보 + 메트로",
   "fatigue": "3",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -25,12 +26,13 @@
       "end": "13:00",
       "name": "늦은 아침·숙소권 카페·짐 절반 포장",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "전날 축제 피로 확인 — 정식운동 생략 가능. 출국 전날에 포장을 몰지 않는다",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "trocadero",
@@ -95,12 +97,13 @@
       "end": null,
       "name": "숙소 귀환",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "송별 저녁 후 메트로 귀환 — 야간산책 추가 없음, 21:30 이전",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     }
   ],
   "legs": [
@@ -174,9 +177,9 @@
   },
   "needsReview": [
     "송별 저녁 장소 선정·예약 — 숙소 확정 선행",
-    "Paris 숙소 후보 확정",
     "2026-08-06 사용자 결정: 파리 정본 = 챕터 15박 운영판",
-    "송별 저녁 10/9→10/8 이동 (2026-08-13, OZ502 확정 반영)"
+    "송별 저녁 10/9→10/8 이동 (2026-08-13, OZ502 확정 반영)",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-15-10월8일",

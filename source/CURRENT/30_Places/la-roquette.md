@@ -18,6 +18,7 @@ source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.
 | Arles역→Arènes→Théâtre | 도보 | 역에서 구도심으로 진입, 오전 유적 두 곳 |
 | Place du Forum→Saint-Trophime | 도보 | 점심·카페 뒤 회랑 또는 Fondation 중 하나 |
 | La Roquette→Arles역 | 도보 | 저녁 전 Avignon 귀환, 막차 의존 금지 |
+
 차량을 쓰면 **Parking des Lices 등 구도심 외곽 관리형 주차 후 도보 진입**을 기본으로 검토한다. 정확한 운영·요금·JEP 통제는 출발 전 재확인한다.
 
 ### 식사·우천·혼잡 축소안

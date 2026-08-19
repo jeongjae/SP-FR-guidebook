@@ -50,6 +50,7 @@ source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.
 | 체류 | 90–120분 |
 | ⚠ 주의 | 특별 행사로 관람이 제한되는지 미리 확인할 것 |
 | 정원 | 가이드 투어에는 궁전 정원이 포함되지 않는다. 정원 입장권을 따로 살 수 있다 |
+
 ---
 
 ---

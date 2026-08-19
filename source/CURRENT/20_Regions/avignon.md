@@ -65,6 +65,7 @@ source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.
 | 행사 | 9/19–20 Journées européennes du patrimoine. Arles 세부 프로그램 출발 전 재확인 |
 | 피로도 | 도시일 3, Uzès·Pont 4, Arles 4, 이동일 4 |
 | 주요 위험 | 성벽 내부 차량진입·주차, 주말 JEP 혼잡, 당일치기 차량 내 짐, 강한 미스트랄, 유적지 노출·계단, TGV역 반납 지연 |
+
 ```text
 9/16 Luberon 체크아웃 → Avignon 체크인·생활권 적응
         ↓
@@ -86,6 +87,7 @@ source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.
 | 9/18 금 | 가르 지방과 로마공학 | Uzès 구시가지·Pont du Gard | 4/5 |
 | 9/19 토 | Arles 당일치기 | Arènes·Théâtre·Forum·Saint-Trophime·La Roquette | 4/5 |
 | 9/20 일 | 차량반납과 리옹 이동 | Avignon TGV·Lyon Part-Dieu | 4/5 |
+
 ---
 
 | Day | 날짜 | 점심 | 저녁 |

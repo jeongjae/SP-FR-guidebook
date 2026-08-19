@@ -4803,11 +4803,10 @@
       "grade": "essential",
       "facts": {
         "price_adult": {
-          "value": "기본 €26.00 / 타워 포함 €36.00",
+          "value": "General 29.12 EUR (2026-08-30 확정 예약 결제액)",
           "confidence": "official",
-          "source": "https://sagradafamilia.org/en/prices",
-          "verified_at": "2026-08-17",
-          "ttl_days": 180
+          "source": "본인 예약 확정분 · https://sagradafamilia.org/en/prices",
+          "verified_at": "2026-08-19"
         },
         "hours": {
           "value": "일요일 10:30 개장 (4–9월 10:30–20:00)",
@@ -4824,11 +4823,10 @@
           "ttl_days": 90
         },
         "booking": {
-          "value": "온라인 시간지정 예약 권장 — 공식 홈페이지·앱에서 구매, 현장은 QR 직접구매만 가능하고 잔여분에 한함",
-          "source": "https://sagradafamilia.org/en/faqs",
-          "verified_at": "2026-08-17",
+          "value": "예약완료 — 2026-08-30(일) 15:15 입장 · Ticket Type General",
           "confidence": "official",
-          "ttl_days": 90
+          "source": "본인 예약 확정분",
+          "verified_at": "2026-08-19"
         }
       },
       "phone": "+34 932 080 414"

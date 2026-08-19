@@ -103,6 +103,18 @@ def main() -> int:
                     problems.append(f"{rel}: 파일 없음")
                     continue
                 page.goto(f.as_uri(), wait_until="load")
+
+                # 스타일이 붙었는지 먼저 본다. CSS 가 아직 안 쓰인 상태에서
+                # 재면 모든 요소가 기본 크기라 가짜 실패가 쏟아지고, 그 소음이
+                # 진짜 문제를 덮는다. (빌드와 검사가 겹치면 실제로 그랬다.)
+                styled = page.evaluate(
+                    "() => getComputedStyle(document.body).backgroundColor")
+                if styled in ("rgba(0, 0, 0, 0)", "rgb(255, 255, 255)"):
+                    problems.append(
+                        f"{rel}: CSS 가 적용되지 않은 채 렌더됐다 — "
+                        f"빌드가 끝난 뒤 다시 돌려라")
+                    continue
+
                 r = page.evaluate(MEASURE)
                 if r["overflow"] > 1:
                     problems.append(
