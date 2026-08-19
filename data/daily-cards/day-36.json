@@ -39,11 +39,11 @@
       "order": 2,
       "start": "11:00",
       "end": "12:30",
-      "name": "서점 또는 숙소권 시장",
+      "name": "토요일 시장 — Marché Lecourbe",
       "category": "shopping",
       "lat": 48.8404,
       "lng": 2.3475,
-      "summary": "예약 없는 선택",
+      "summary": "Rue Lecourbe 07:00–14:30, 도보 15분. Lefebvre·Cervantès 도 토요일이지만 도보 22–25분",
       "menu": null,
       "reservation": null,
       "optional": true

@@ -55,6 +55,29 @@ content_schema: rs-region-v1
 MUTATED_FILES = None   # 아래 setUp 이 채운다
 
 
+# 이 스위트는 추적 대상 원고를 실제로 망가뜨렸다가 되돌린다. 두 프로세스가
+# 동시에 돌면 서로의 백업·복원이 엇갈려 **원고가 깨진 채 남는다.** 실제로
+# 그렇게 Nice 챕터의 필수 헤딩이 통째로 날아간 적이 있다.
+# 파일 잠금으로 한 번에 하나만 돌게 막는다.
+_LOCK_PATH = Path(__file__).resolve().parent / ".test_validation.lock"
+
+
+def _acquire_lock():
+    import fcntl
+    handle = open(_LOCK_PATH, "w")
+    try:
+        fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        handle.close()
+        raise SystemExit(
+            "test_validation 이 이미 다른 프로세스에서 돌고 있다. "
+            "이 스위트는 원고를 고쳤다 되돌리므로 동시에 돌리면 원고가 깨진다.")
+    return handle
+
+
+_LOCK_HANDLE = _acquire_lock()
+
+
 class TestValidationGuards(unittest.TestCase):
     def _assert_clean(self):
         """정리가 끝난 뒤 잔재가 없는지 본다. cleanup 은 LIFO 라 가장 먼저

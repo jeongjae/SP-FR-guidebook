@@ -99,7 +99,9 @@ def main():
 
     # 그날 원고의 핵심 장소가 실제로 그 날 화면에 있는가
     required_page_terms = {
-        "daily/day-14.html": ("Marseille", "Vieux-Port", "Mucem", "Fort Saint-Jean"),
+        # Day 14 는 2026-08-19 에 Marseille → Cassis·Calanques 로 바뀌었다
+        # (Jason 결정, docs/D5_CONFIRMED_BOOKING_REPLAN.md §B-2).
+        "daily/day-14.html": ("Cassis", "Calanques", "Port-Miou"),
         "daily/day-22.html": ("Arles", "Saint-Trophime", "La Roquette"),
     }
     # 지역 페이지에는 그 거점의 박수와 날짜가 나와야 한다
@@ -121,7 +123,10 @@ def main():
     # 선택안(대체 일정)이 기본 일정의 장소처럼 보이면 안 된다. 현장에서
     # "오늘 가는 곳" 으로 읽고 움직이게 된다.
     forbidden_day_place_links = {
-        "daily/day-14.html": ("places/arles.html", "places/cassis.html"),
+        # Marseille 는 이제 Day 14 의 대체안이다. 대체안이 기본 시간표에 섞이면
+        # 현장에서 "오늘 가는 곳" 으로 읽는다 — backup 문구에만 남아야 한다.
+        "daily/day-14.html": ("places/arles.html", "places/marseille.html",
+                              "places/mucem.html"),
         "daily/day-22.html": ("places/les-baux-de-provence.html",
                               "places/saint-remy-de-provence.html"),
     }
