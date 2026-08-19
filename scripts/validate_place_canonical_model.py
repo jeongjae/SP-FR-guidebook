@@ -65,11 +65,13 @@ def run_gate_validation():
     else:
         print("   [OK] Place Overwrite Protection PASS: Normal build did not alter any 30_Places files.")
 
-    # 3. Duplicate Long-Form Detection for Barcelona & Girona Places
-    print("3. Testing Duplicate Long-Form Detection (Barcelona & Girona Places)...")
+    # 3. Duplicate Long-Form Detection for Barcelona, Girona & Nice Places
+    print("3. Testing Duplicate Long-Form Detection (Barcelona, Girona & Nice Places)...")
     bcn_text = CHAPTER_BCN.read_text(encoding="utf-8") if CHAPTER_BCN.exists() else ""
     gro_chapter = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "05_Girona_Collioure_Emporda_v2.1.md"
     gro_text = gro_chapter.read_text(encoding="utf-8") if gro_chapter.exists() else ""
+    nice_chapter = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "06_Nice_Cote_d_Azur_v2.0.md"
+    nice_text = nice_chapter.read_text(encoding="utf-8") if nice_chapter.exists() else ""
     
     long_form_signatures_bcn = [
         "기둥이 나무처럼 갈라지는 이유",
@@ -87,6 +89,13 @@ def run_gate_validation():
         "자연 암반을 깎아 깊은 해자",
         "Les Voltes는 식당 테라스가 아니었다"
     ]
+    long_form_signatures_nice = [
+        "자전거 및 롤러블레이드 전용 차선과 보행자 도로가 명확히",
+        "정상 시장은 화요일(9/8) 아침이 적기다",
+        "현재 요새는 철거되었으나 니스 해안선의 부드러운",
+        "1860년 병합 전까지 이탈리아 사보이 백작령의 통치를 500년간",
+        "기차역에서 바위 위까지는 오르막 경사가 심하므로"
+    ]
     dups = []
     for sig in long_form_signatures_bcn:
         if sig in bcn_text:
@@ -94,18 +103,23 @@ def run_gate_validation():
     for sig in long_form_signatures_gro:
         if sig in gro_text:
             dups.append(f"[GRO] {sig}")
+    for sig in long_form_signatures_nice:
+        if sig in nice_text:
+            dups.append(f"[NICE] {sig}")
     if dups:
         errors.append(f"Duplicate long-form text detected in Region chapters: {dups}")
         print(f"   [FAIL] Found duplicate long-form sections: {dups}")
     else:
-        print("   [OK] Dedup PASS: Barcelona and Girona chapters contain only compact references with no duplicate long-forms.")
+        print("   [OK] Dedup PASS: Barcelona, Girona and Nice chapters contain only compact references with no duplicate long-forms.")
 
     # 4. Trip Layer Separation Check
-    print("4. Testing Trip Layer Separation (Barcelona & Girona)...")
+    print("4. Testing Trip Layer Separation (Barcelona, Girona & Nice)...")
     trip_hardcode_pattern = re.compile(r"(8월\s*\d+일|9월\s*\d+일|10월\s*\d+일|Day\s*\d+에\s*방문|이번\s*일정에서는\s*Day)")
     check_slugs = [
         "sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic", "macba", "biblioteca-de-catalunya",
-        "girona-cathedral", "passeig-de-la-muralla", "collioure", "onyar", "pals", "peratallada", "calella-de-palafrugell", "peralada"
+        "girona-cathedral", "passeig-de-la-muralla", "collioure", "onyar", "pals", "peratallada", "calella-de-palafrugell", "peralada",
+        "promenade-des-anglais", "vieux-nice", "colline-du-chateau", "cours-saleya", "le-rocher", "monaco", "le-suquet", "cannes",
+        "marche-forville", "marche-de-la-liberation", "nce-t2", "nice-ville", "nice-walk", "cannes-walk", "monaco-walk"
     ]
     trip_hardcodes = []
     for slug in check_slugs:
@@ -118,7 +132,7 @@ def run_gate_validation():
         errors.append(f"Hardcoded trip references found in places: {trip_hardcodes}")
         print(f"   [FAIL] Places have trip hardcodes: {trip_hardcodes}")
     else:
-        print("   [OK] Trip Separation PASS: Barcelona and Girona places are cleanly decoupled from trip dates.")
+        print("   [OK] Trip Separation PASS: Barcelona, Girona and Nice places are cleanly decoupled from trip dates.")
 
     # 5. Reference Integrity Check
     print("5. Testing Reference Integrity...")
