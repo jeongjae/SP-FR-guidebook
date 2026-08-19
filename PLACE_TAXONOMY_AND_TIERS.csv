@@ -9,8 +9,8 @@ annecy,Annecy 구시가지,lyon,spot,village,WORTHWHILE,TIER_B,,Y,DEEP_GUIDE,"�
 annecy-cruise,annecy-cruise,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 annecy-palais-de-l-ile,annecy-palais-de-l-ile,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 arc-de-triomphe-longchamp,arc-de-triomphe-longchamp,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-arenes-d-arles,Arènes d’Arles,avignon,spot,historic_site,MUST_SEE,TIER_A,Day 22,Y,SHORT_DESCRIPTION,기원전 1세기 로마 원형 투기장
-arles,Arles,avignon,spot,village,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,고흐의 도시이자 로마 유적 유네스코 세계유산 도시
+arenes-d-arles,Arènes d’Arles,avignon,spot,historic_site,MUST_SEE,TIER_A,Day 22,Y,DEEP_GUIDE,기원전 1세기 로마 원형 투기장
+arles,Arles,avignon,spot,village,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,고흐의 도시이자 로마 유적 유네스코 세계유산 도시
 arles-arenes,arles-arenes,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 arles-la-roquette,arles-la-roquette,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 arles-theatre-antique,arles-theatre-antique,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -28,12 +28,12 @@ barcelona-stay,barcelona-stay,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본
 barri-gotic,Barri Gòtic,barcelona,spot,neighborhood,MUST_SEE,TIER_A,Day 03,Y,SHORT_DESCRIPTION,"로마시대~중세 역사 지구, 도보 동선 및 심화 가이드 필수"
 bastide-du-jas-de-bouffan,Bastide du Jas de Bouffan,aix,spot,historic_site,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,세잔 가문의 저택 및 초기 작품 배경지
 bcn-airport-t1,bcn-airport-t1,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-bellecour,Bellecour,lyon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,"프랑스 최대 규모의 보행자 광장, 루이 14세 기마상과 생텍쥐페리 동상"
+bellecour,Bellecour,lyon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,"프랑스 최대 규모의 보행자 광장, 루이 14세 기마상과 생텍쥐페리 동상"
 biblioteca-de-catalunya,Biblioteca de Catalunya,barcelona,spot,historic_site,WORTHWHILE,TIER_B,Day 03,Y,SHORT_DESCRIPTION,"구 산타 크레우 병원 부지, 고딕 양식 중정과 역사 도서관"
 bnf-richelieu,BnF Richelieu,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,프랑스 국립도서관 라브루스트 열람실(Salle Labrouste)과 마자랭 갤러리
 bnf-richelieu-salle-ovale,bnf-richelieu-salle-ovale,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 bodega-joan,bodega-joan,unknown,spot,spot,WORTHWHILE,TIER_B,Day 02,N,NONE,기본 분류 배정
-bonnieux,Bonnieux,luberon,spot,village,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,뤼베롱 계곡을 마주보는 계단식 언덕 마을
+bonnieux,Bonnieux,luberon,spot,village,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,뤼베롱 계곡을 마주보는 계단식 언덕 마을
 bories-parking,bories-parking,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,paris,spot,museum,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,안도 타다오가 개조한 구 곡물거래소 피노 컬렉션 현대미술관
 cadaques,cadaques,unknown,spot,spot,WORTHWHILE,TIER_B,Day 05,N,NONE,기본 분류 배정
@@ -58,26 +58,27 @@ chateau-royal-de-collioure,chateau-royal-de-collioure,unknown,spot,spot,WORTHWHI
 chemin-du-fauvisme,chemin-du-fauvisme,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 chez-mamie-lise,chez-mamie-lise,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 chez-pipo,chez-pipo,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-cloitre-saint-trophime,Cloître Saint-Trophime,avignon,spot,architecture,WORTHWHILE,TIER_B,Day 22,Y,SHORT_DESCRIPTION,로마네스크/고딕 양식의 생 트로핌 성당 중정 회랑
+cloitre-saint-trophime,Cloître Saint-Trophime,avignon,spot,architecture,WORTHWHILE,TIER_B,Day 22,Y,MEDIUM_GUIDE,로마네스크/고딕 양식의 생 트로핌 성당 중정 회랑
 clos-montmartre,clos-montmartre,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 cn-atletic-barceloneta,cn-atletic-barceloneta,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 colline-du-chateau,Colline du Château (성채 언덕),nice,spot,viewpoint,MUST_SEE,TIER_B,Day 08,Y,SHORT_DESCRIPTION,천사의 만과 니스 구시가지 최고의 파노라마 전망 언덕
 collioure,Collioure,girona,spot,village,MUST_SEE,TIER_A,Day 05,Y,NONE,"야수파 마티스의 고향, 프랑스 국경 해안 요새 마을"
 cours-mirabeau,Cours Mirabeau,aix,spot,neighborhood,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,플라타너스 가로수와 분수대가 늘어선 엑스의 중심 거리
+vieil-aix,Vieil Aix — 구시가지,aix,spot,neighborhood,MUST_SEE,TIER_A,Day 13,Y,DEEP_GUIDE,로마 온천 도시 위에 지어진 엑상프로방스의 우아한 바로크 미로 구시가지
 cours-mirabeau-4,cours-mirabeau-4,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 cours-saleya,Cours Saleya,nice,spot,market,MUST_SEE,UTILITY,Day 08,Y,SHORT_DESCRIPTION,구시가지 꽃시장·청과시장·먹거리 마켓
-coustellet,Coustellet 생산자 시장,luberon,spot,market,WORTHWHILE,UTILITY,Day 16,Y,SHORT_DESCRIPTION,뤼베롱 일요 농민 직거래 시장 거점
-croix-rousse,Croix-Rousse,lyon,spot,neighborhood,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"견직공(Canuts)의 역사 언덕, 벽화, 공방과 계단길"
+coustellet,Coustellet 생산자 시장,luberon,spot,market,WORTHWHILE,UTILITY,Day 16,Y,PRACTICAL_GUIDE,뤼베롱 일요 농민 직거래 시장 거점
+croix-rousse,Croix-Rousse,lyon,spot,neighborhood,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"견직공(Canuts)의 역사 언덕, 벽화, 공방과 계단길"
 daniel-et-denise-crequi,daniel-et-denise-crequi,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 days,days,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 eze,eze,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 far-de-tossa,far-de-tossa,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 fonda-cal-ros,fonda-cal-ros,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 fondation-maeght,fondation-maeght,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-fondation-vincent-van-gogh-arles,Fondation Vincent van Gogh Arles,avignon,spot,museum,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,반 고흐의 예술적 유산과 현대미술 기획전
+fondation-vincent-van-gogh-arles,Fondation Vincent van Gogh Arles,avignon,spot,museum,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,반 고흐의 예술적 유산과 현대미술 기획전
 fort-saint-jean,Fort Saint-Jean,aix,spot,historic_site,WORTHWHILE,TIER_B,Day 14,Y,SHORT_DESCRIPTION,17세기 항구 요새 및 구름다리 보행로
 fou-de-fafa,fou-de-fafa,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-fourviere,Fourvière,lyon,spot,architecture,MUST_SEE,TIER_A,Day 24,Y,MEDIUM_GUIDE,푸르비에르 언덕 노트르담 바실리카 및 리옹 시내 조망
+fourviere,Fourvière,lyon,spot,architecture,MUST_SEE,TIER_A,Day 24,Y,DEEP_GUIDE,푸르비에르 언덕 노트르담 바실리카 및 리옹 시내 조망
 fourviere-lugdunum,fourviere-lugdunum,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 generatedAt,generatedAt,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 girona-call,girona-call,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -86,16 +87,16 @@ girona-old-town-walk,Girona 구시가지 — Call·성벽·대성당 권역,giro
 girona-stay-private,girona-stay-private,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 giverny,Giverny,paris,spot,historic_site,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,클로드 모네의 집과 수련 연못 정원
 giverny-fondation-claude-monet,giverny-fondation-claude-monet,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-glanum,Glanum,avignon,spot,historic_site,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,갈로-로마 시대 고대 도시 유적 및 개선문/묘탑
-gordes,Gordes,luberon,spot,village,MUST_SEE,TIER_A,Day 18,Y,MEDIUM_GUIDE,뤼베롱을 대표하는 절벽 위 석조 요새 마을
-goult,Goult,luberon,spot,village,WORTHWHILE,TIER_B,Day 17,Y,SHORT_DESCRIPTION,관광객이 적고 풍차가 있는 조용한 뤼베롱 숨은 보석 마을
+glanum,Glanum,avignon,spot,historic_site,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,갈로-로마 시대 고대 도시 유적 및 개선문/묘탑
+gordes,Gordes,luberon,spot,village,MUST_SEE,TIER_A,Day 18,Y,DEEP_GUIDE,뤼베롱을 대표하는 절벽 위 석조 요새 마을
+goult,Goult,luberon,spot,village,WORTHWHILE,TIER_B,Day 17,Y,MEDIUM_GUIDE,관광객이 적고 풍차가 있는 조용한 뤼베롱 숨은 보석 마을
 gout-bistrot,gout-bistrot,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 grand-palais,Grand Palais,paris,spot,architecture,WORTHWHILE,TIER_B,,Y,DEEP_GUIDE,1900년 만국박람회 유리 돔 궁전 및 기획전
 grand-palais-cezanne-et-nous,grand-palais-cezanne-et-nous,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 grasse,Grasse,aix,spot,village,WORTHWHILE,TIER_B,Day 12,Y,SHORT_DESCRIPTION,"세계 향수의 수도, 프라고나르 향수 공방과 역사 지구"
 grasse-parking-notre-dame-des-fleurs,grasse-parking-notre-dame-des-fleurs,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 grasse-vieille-ville,grasse-vieille-ville,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,spot,market,MUST_SEE,UTILITY,,Y,MEDIUM_GUIDE,"미식의 수도 리옹의 미식 상설 홀, 최고급 식재료와 부숑"
+halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,spot,market,MUST_SEE,UTILITY,,Y,PRACTICAL_GUIDE,"미식의 수도 리옹의 미식 상설 홀, 최고급 식재료와 부숑"
 hertz-avignon-tgv,hertz-avignon-tgv,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 hertz-barcelona-sants,hertz-barcelona-sants,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 hertz-bcn-airport,hertz-bcn-airport,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -104,11 +105,11 @@ hippodrome-parislongchamp,hippodrome-parislongchamp,unknown,spot,spot,WORTHWHILE
 jardin-des-tuileries,jardin-des-tuileries,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 jardin-du-luxembourg,jardin-du-luxembourg,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 ju-maison-de-cuisine,ju-maison-de-cuisine,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-l-isle-sur-la-sorgue,L’Isle-sur-la-Sorgue,luberon,spot,village,WORTHWHILE,TIER_B,,Y,NONE,소르그 강의 물레방아와 프랑스 최대 앤틱 시장의 도시
+l-isle-sur-la-sorgue,L’Isle-sur-la-Sorgue,luberon,spot,village,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,소르그 강의 물레방아와 프랑스 최대 앤틱 시장의 도시
 la-fourchette,la-fourchette,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 la-paradeta-sagrada-familia,la-paradeta-sagrada-familia,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 la-roca-peratallada,la-roca-peratallada,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-la-roquette,La Roquette,avignon,spot,neighborhood,OPTIONAL,TIER_C,Day 22,Y,SHORT_DESCRIPTION,아를 론 강변의 옛 어부 지구 및 현지인 주거 골목
+la-roquette,La Roquette,avignon,spot,neighborhood,OPTIONAL,TIER_C,Day 22,Y,PRACTICAL_GUIDE,아를 론 강변의 옛 어부 지구 및 현지인 주거 골목
 la-table-alziari,la-table-alziari,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 la-zorra,la-zorra,unknown,spot,spot,WORTHWHILE,TIER_B,Day 04,N,NONE,기본 분류 배정
 latin-quarter,Latin Quarter,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,"소르본 대학, 팡테옹, 룩셈부르크 공원과 서점 거리"
@@ -122,9 +123,9 @@ le-panier,Le Panier,aix,spot,neighborhood,WORTHWHILE,TIER_B,Day 14,Y,SHORT_DESCR
 le-rocher,Le Rocher — 모나코 구시가지,nice,spot,historic_site,WORTHWHILE,TIER_B,Day 10,Y,SHORT_DESCRIPTION,모나코 대공궁과 구시가지가 위치한 바위 언덕 요새
 le-suquet,Le Suquet — 칸 구시가지,nice,spot,neighborhood,WORTHWHILE,TIER_B,Day 09,Y,SHORT_DESCRIPTION,"칸 구시가지 언덕, 성채 박물관과 칸 만 전망"
 le-suquet-cannes,le-suquet-cannes,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-les-baux-de-provence,Les Baux-de-Provence,avignon,spot,historic_site,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,석회암 바위산 위 중세 요새 성채 마을
+les-baux-de-provence,Les Baux-de-Provence,avignon,spot,historic_site,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,석회암 바위산 위 중세 요새 성채 마을
 les-cocottes-saint-louis,les-cocottes-saint-louis,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-les-halles,Les Halles,avignon,spot,neighborhood,WORTHWHILE,TIER_B,Day 20,Y,SHORT_DESCRIPTION,"파리의 심장, 카노페 건축과 생퇴스타슈 성당"
+les-halles,Les Halles,avignon,spot,neighborhood,WORTHWHILE,TIER_B,Day 20,Y,PRACTICAL_GUIDE,"파리의 심장, 카노페 건축과 생퇴스타슈 성당"
 les-halles-avignon,les-halles-avignon,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 les-halles-d-avignon,les-halles-d-avignon,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 lignes-dazur,lignes-dazur,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -147,11 +148,11 @@ marseille,Marseille,aix,spot,neighborhood,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION
 marseille-le-panier,marseille-le-panier,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 marseille-saint-charles,marseille-saint-charles,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 marseille-vieux-port,marseille-vieux-port,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-menerbes,Ménerbes,luberon,spot,village,WORTHWHILE,TIER_B,Day 18,Y,SHORT_DESCRIPTION,"피터 메일의 소설 배경지, 고즈넉한 성채 마을"
+menerbes,Ménerbes,luberon,spot,village,WORTHWHILE,TIER_B,Day 18,Y,MEDIUM_GUIDE,"피터 메일의 소설 배경지, 고즈넉한 성채 마을"
 mercat-de-la-concepcio,mercat-de-la-concepcio,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 mercat-del-lleo,mercat-del-lleo,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 monaco,Monaco,nice,spot,village,WORTHWHILE,TIER_B,,Y,NONE,"모나코 공국, 르 로셰와 몬테카를로"
-menton,Menton,nice,spot,village,MUST_SEE,TIER_B,Day 10,Y,SHORT_DESCRIPTION,"프랑스·이탈리아 국경의 파스텔톤 구시가지와 바로크 생 미셸 대성당"
+menton,Menton,nice,spot,village,MUST_SEE,TIER_B,Day 10,Y,SHORT_DESCRIPTION,프랑스·이탈리아 국경의 파스텔톤 구시가지와 바로크 생 미셸 대성당
 monaco-rocher-port-monte-carlo-walk,monaco-rocher-port-monte-carlo-walk,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 monaco-walk,Monaco Rocher–Port–Monte Carlo Walk,nice,walk,walk,OPTIONAL,TIER_C,,Y,MEDIUM_GUIDE,헤라클레스 항구~대공궁~몬테카를로 도보 코스
 montagne-sainte-victoire-terrain-des-peintres,Montagne Sainte-Victoire · Terrain des Peintres,aix,spot,viewpoint,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,생트 빅투아르 산을 조망하는 세잔의 야외 화판 언덕
@@ -188,7 +189,7 @@ notre-dame-de-la-garde,Notre-Dame de la Garde,aix,spot,architecture,MUST_SEE,TIE
 notre-dame-de-paris,Notre-Dame de Paris,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"시테 섬의 고딕 걸작, 2024년 재개관 대성당"
 onyar,Onyar 강변,girona,spot,viewpoint,MUST_SEE,TIER_B,,Y,FACTS_ONLY,오냐르 강변 파사드와 에펠 다리 조망 포인트
 opera-bastille,opera-bastille,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-oppede-le-vieux,Oppède-le-Vieux,luberon,spot,historic_site,OPTIONAL,TIER_C,,Y,SHORT_DESCRIPTION,중세 유적과 폐허가 숲속에 남아있는 신비로운 옛 마을
+oppede-le-vieux,Oppède-le-Vieux,luberon,spot,historic_site,OPTIONAL,TIER_C,,Y,MEDIUM_GUIDE,중세 유적과 폐허가 숲속에 남아있는 신비로운 옛 마을
 palais-de-chaillot,palais-de-chaillot,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 palais-de-tokyo,palais-de-tokyo,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 palais-des-papes,Palais des Papes,avignon,spot,architecture,MUST_SEE,TIER_A,Day 20,Y,DEEP_GUIDE,14세기 아비뇽 유수의 교황청 요새 궁전
@@ -198,7 +199,7 @@ palau-de-maricel,Palau de Maricel,barcelona,spot,architecture,WORTHWHILE,TIER_B,
 pals,Pals,girona,spot,village,WORTHWHILE,TIER_B,Day 06,Y,MEDIUM_GUIDE,엠포르다 지역의 보존된 중세 석조 마을
 pals-abeurador-parking,pals-abeurador-parking,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 parc-de-belleville,parc-de-belleville,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-parc-de-la-tete-d-or,Parc de la Tête d'Or,lyon,spot,nature,WORTHWHILE,TIER_B,Day 25,Y,SHORT_DESCRIPTION,"황금머리 호수 공원, 식물원, 온실과 장미원"
+parc-de-la-tete-d-or,Parc de la Tête d'Or,lyon,spot,nature,WORTHWHILE,TIER_B,Day 25,Y,MEDIUM_GUIDE,"황금머리 호수 공원, 식물원, 온실과 장미원"
 paris-gare-de-lyon,paris-gare-de-lyon,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 paris-stay-candidate,paris-stay-candidate,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 passeig-de-la-muralla,Passeig de la Muralla,girona,spot,viewpoint,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"지로나 중세 성벽길, 구시가지와 피레네 조망 뷰포인트"
@@ -212,7 +213,7 @@ place-de-lenche,place-de-lenche,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기�
 place-des-abbesses,place-des-abbesses,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 place-des-vosges,place-des-vosges,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 place-du-forum,place-du-forum,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-place-du-forum-arles,Place du Forum,avignon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,고흐 <밤의 카페 테라스> 배경 광장
+place-du-forum-arles,Place du Forum,avignon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,고흐 <밤의 카페 테라스> 배경 광장
 place-du-trocadero,place-du-trocadero,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 place-richelme,place-richelme,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 place-richelme-place-des-precheurs,시장 — Place Richelme · Place des Prêcheurs,aix,spot,market,MUST_SEE,UTILITY,,Y,MEDIUM_GUIDE,플라타너스 그늘 아래 열리는 일일 청과·프로방스 시장
@@ -222,7 +223,7 @@ privacyRule,privacyRule,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분�
 promenade-des-anglais,Promenade des Anglais,nice,spot,viewpoint,MUST_SEE,TIER_A,"Day 07,Day 11",Y,SHORT_DESCRIPTION,니스 해변의 상징적 7km 산책로 및 지중해 조망
 quartier-mazarin,quartier-mazarin,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 restaurant-sevin,restaurant-sevin,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-rocher-des-doms,Rocher des Doms,avignon,spot,viewpoint,WORTHWHILE,TIER_B,Day 20,Y,FACTS_ONLY,"교황청 옆 언덕 정원, 론 강과 빌뇌브레자비뇽 조망"
+rocher-des-doms,Rocher des Doms,avignon,spot,viewpoint,WORTHWHILE,TIER_B,Day 20,Y,MEDIUM_GUIDE,"교황청 옆 언덕 정원, 론 강과 빌뇌브레자비뇽 조망"
 rotonde,Rotonde,aix,spot,viewpoint,MUST_SEE,TIER_B,Day 12,Y,SHORT_DESCRIPTION,"로통드 분수대, 엑스 구시가지 진입 관문"
 rotonde-aix,rotonde-aix,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 roussillon-parking-des-ocres,roussillon-parking-des-ocres,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -235,7 +236,7 @@ saint-germain-des-pres,saint-germain-des-pres,unknown,spot,spot,WORTHWHILE,TIER_
 saint-paul-de-mausole,Saint-Paul-de-Mausole,avignon,spot,historic_site,MUST_SEE,TIER_A,Day 12,Y,DEEP_GUIDE,반 고흐가 <별이 빛나는 밤>을 그린 수도원 정신병원
 saint-paul-de-vence,Saint-Paul-de-Vence,aix,spot,village,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"샤갈의 안식처, 성벽으로 둘러싸인 중세 예술가 마을"
 saint-paul-parking-route-de-vence,saint-paul-parking-route-de-vence,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-saint-remy-de-provence,Saint-Rémy-de-Provence,avignon,spot,village,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,"노스트라다무스의 탄생지, 알피유 산맥 기슭의 프로방스 소도시"
+saint-remy-de-provence,Saint-Rémy-de-Provence,avignon,spot,village,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"노스트라다무스의 탄생지, 알피유 산맥 기슭의 프로방스 소도시"
 sant-feliu-de-guixols,sant-feliu-de-guixols,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 sant-feliu-la-corxera-parking,sant-feliu-la-corxera-parking,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 sant-pau-recinte-modernista,Sant Pau Recinte Modernista,barcelona,spot,architecture,MUST_SEE,TIER_A,Day 02,Y,DEEP_GUIDE,"도메네크 이 몬타네르의 모더니즘 걸작 병원, 필수 관람지"
@@ -246,16 +247,16 @@ sitges-core-walk-2h30,sitges-core-walk-2h30,unknown,spot,spot,WORTHWHILE,TIER_B,
 sourceOfTruth,sourceOfTruth,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 taxi-avignon,taxi-avignon,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 tcl,tcl,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-theatre-antique-arles,Théâtre antique,avignon,spot,historic_site,WORTHWHILE,TIER_B,Day 22,Y,SHORT_DESCRIPTION,고대 로마 극장 유적과 아를의 비너스 발굴지
+theatre-antique-arles,Théâtre antique,avignon,spot,historic_site,WORTHWHILE,TIER_B,Day 22,Y,MEDIUM_GUIDE,고대 로마 극장 유적과 아를의 비너스 발굴지
 tossa-de-mar,tossa-de-mar,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 tossa-parking-pelegri,tossa-parking-pelegri,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 travelPeriod,travelPeriod,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-uzes,Uzès Place aux Herbes·구시가지,avignon,spot,village,MUST_SEE,TIER_A,Day 21,Y,SHORT_DESCRIPTION,"프랑스 제1의 공작 도시, 에르브 광장 시장과 토요 마켓"
+uzes,Uzès Place aux Herbes·구시가지,avignon,spot,village,MUST_SEE,TIER_A,Day 21,Y,DEEP_GUIDE,"프랑스 제1의 공작 도시, 에르브 광장 시장과 토요 마켓"
 versailles,Versailles,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"루이 14세의 절대왕정 궁전, 거울의 방과 정원, 트리아농"
 vieux-lyon,Vieux Lyon · 트라불,lyon,spot,neighborhood,MUST_SEE,TIER_A,Day 24,Y,DEEP_GUIDE,"르네상스 건축 지구, 비밀 통로 트라불(Traboules), 부숑"
 vieux-lyon-traboules,vieux-lyon-traboules,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 vieux-nice,Vieux Nice — 구시가지,nice,spot,neighborhood,MUST_SEE,TIER_A,Day 08,Y,SHORT_DESCRIPTION,"니스 구시가지의 바로크 성당, 골목길, 로컬 문화"
 vieux-port-marseille,Vieux-Port,aix,spot,viewpoint,MUST_SEE,TIER_B,Day 14,Y,SHORT_DESCRIPTION,"마르세유 구항구, 아침 어시장 및 포스터 거울 차양"
-village-des-bories,Village des Bories,luberon,spot,historic_site,WORTHWHILE,TIER_B,Day 18,Y,SHORT_DESCRIPTION,모르타르 없이 돌을 쌓아 올린 프로방스 고대 건식 석조 주거지
+village-des-bories,Village des Bories,luberon,spot,historic_site,WORTHWHILE,TIER_B,Day 18,Y,MEDIUM_GUIDE,모르타르 없이 돌을 쌓아 올린 프로방스 고대 건식 석조 주거지
 virgule-navette,virgule-navette,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 zbe-barcelona,zbe-barcelona,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
