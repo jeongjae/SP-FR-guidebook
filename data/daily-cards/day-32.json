@@ -60,7 +60,8 @@
       "summary": "시간지정권, 3시간 30분 상한. 화요일이라 Orangerie 는 휴관 — 선택지가 아니다",
       "menu": null,
       "reservation": "시간지정권 예약 잠금",
-      "optional": false
+      "optional": false,
+      "place_ref": "musee-d-orsay"
     },
     {
       "id": "buffer",

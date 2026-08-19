@@ -46,7 +46,8 @@
       "summary": "11:00 내부 방문은 9/14 예약 개시 — 표 확보 시에만",
       "menu": null,
       "reservation": "Vignes 내부표 예약 (9/14 개시)",
-      "optional": false
+      "optional": false,
+      "place_ref": "montmartre-south-pigalle"
     },
     {
       "id": "fest-lunch",
@@ -88,7 +89,8 @@
       "summary": "군중이 커지기 전에 종료",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "montmartre-south-pigalle"
     },
     {
       "id": "paris-return",
