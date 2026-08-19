@@ -1040,12 +1040,31 @@ footer p { margin: 0 0 var(--s1); }
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: var(--s2);
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-soft) transparent;
+  -webkit-overflow-scrolling: touch;
 }
-.scroll-x::-webkit-scrollbar { display: none; }
-.scroll-x > * { flex: 0 0 78%; scroll-snap-align: start; }
-@media (min-width: 600px) { .scroll-x > * { flex-basis: 42%; } }
-@media (min-width: 900px) { .scroll-x > * { flex-basis: 30%; } }
+.scroll-x::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-x::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-x::-webkit-scrollbar-thumb {
+  background: var(--border-soft);
+  border-radius: var(--r-full);
+}
+.scroll-x > * {
+  flex: 0 0 78%;
+  scroll-snap-align: start;
+  min-width: 0;
+}
+@media (min-width: 600px) {
+  .scroll-x > * { flex: 0 0 44%; }
+}
+@media (min-width: 900px) {
+  .scroll-x > * { flex: 0 0 290px; }
+}
 
 /* ================= 터치 타깃 보정 =================
    실측(build/viewport_check.py)으로 44pt 를 못 채우던 것들. 장갑 낀 손과
@@ -1157,17 +1176,17 @@ footer p { margin: 0 0 var(--s1); }
   .topbar { top: 56px; }
   .tabs { top: calc(56px + var(--tap)); }
 
-  /* 여정 — 데스크톱에선 스크롤이 아니라 격자로 편다 */
-  .scroll-x {
+  /* 여정 — 홈 화면 데스크톱에선 4열 격자로 편다 */
+  .journey-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow: visible;
   }
-  .scroll-x > * { flex-basis: auto; }
+  .journey-grid > * { flex-basis: auto; max-width: none; }
 }
 
 @media (min-width: 1100px) {
-  .scroll-x { grid-template-columns: repeat(4, 1fr); }
+  .journey-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* 이동수단이 아직 안 정해진 구간. 확정된 구간과 같아 보이면 현장에서
