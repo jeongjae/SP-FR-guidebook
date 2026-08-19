@@ -28,7 +28,7 @@ barcelona-stay,barcelona-stay,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본
 barri-gotic,Barri Gòtic,barcelona,spot,neighborhood,MUST_SEE,TIER_A,Day 03,Y,SHORT_DESCRIPTION,"로마시대~중세 역사 지구, 도보 동선 및 심화 가이드 필수"
 bastide-du-jas-de-bouffan,Bastide du Jas de Bouffan,aix,spot,historic_site,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,세잔 가문의 저택 및 초기 작품 배경지
 bcn-airport-t1,bcn-airport-t1,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-bellecour,Bellecour,lyon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,"프랑스 최대 규모의 보행자 광장, 루이 14세 기마상과 생텍쥐페리 동상"
+bellecour,Bellecour,lyon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,"프랑스 최대 규모의 보행자 광장, 루이 14세 기마상과 생텍쥐페리 동상"
 biblioteca-de-catalunya,Biblioteca de Catalunya,barcelona,spot,historic_site,WORTHWHILE,TIER_B,Day 03,Y,SHORT_DESCRIPTION,"구 산타 크레우 병원 부지, 고딕 양식 중정과 역사 도서관"
 bnf-richelieu,BnF Richelieu,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,프랑스 국립도서관 라브루스트 열람실(Salle Labrouste)과 마자랭 갤러리
 bnf-richelieu-salle-ovale,bnf-richelieu-salle-ovale,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -68,7 +68,7 @@ vieil-aix,Vieil Aix — 구시가지,aix,spot,neighborhood,MUST_SEE,TIER_A,Day 1
 cours-mirabeau-4,cours-mirabeau-4,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 cours-saleya,Cours Saleya,nice,spot,market,MUST_SEE,UTILITY,Day 08,Y,SHORT_DESCRIPTION,구시가지 꽃시장·청과시장·먹거리 마켓
 coustellet,Coustellet 생산자 시장,luberon,spot,market,WORTHWHILE,UTILITY,Day 16,Y,PRACTICAL_GUIDE,뤼베롱 일요 농민 직거래 시장 거점
-croix-rousse,Croix-Rousse,lyon,spot,neighborhood,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"견직공(Canuts)의 역사 언덕, 벽화, 공방과 계단길"
+croix-rousse,Croix-Rousse,lyon,spot,neighborhood,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"견직공(Canuts)의 역사 언덕, 벽화, 공방과 계단길"
 daniel-et-denise-crequi,daniel-et-denise-crequi,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 days,days,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 eze,eze,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -78,7 +78,7 @@ fondation-maeght,fondation-maeght,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,�
 fondation-vincent-van-gogh-arles,Fondation Vincent van Gogh Arles,avignon,spot,museum,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,반 고흐의 예술적 유산과 현대미술 기획전
 fort-saint-jean,Fort Saint-Jean,aix,spot,historic_site,WORTHWHILE,TIER_B,Day 14,Y,SHORT_DESCRIPTION,17세기 항구 요새 및 구름다리 보행로
 fou-de-fafa,fou-de-fafa,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-fourviere,Fourvière,lyon,spot,architecture,MUST_SEE,TIER_A,Day 24,Y,MEDIUM_GUIDE,푸르비에르 언덕 노트르담 바실리카 및 리옹 시내 조망
+fourviere,Fourvière,lyon,spot,architecture,MUST_SEE,TIER_A,Day 24,Y,DEEP_GUIDE,푸르비에르 언덕 노트르담 바실리카 및 리옹 시내 조망
 fourviere-lugdunum,fourviere-lugdunum,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 generatedAt,generatedAt,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 girona-call,girona-call,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -96,7 +96,7 @@ grand-palais-cezanne-et-nous,grand-palais-cezanne-et-nous,unknown,spot,spot,WORT
 grasse,Grasse,aix,spot,village,WORTHWHILE,TIER_B,Day 12,Y,SHORT_DESCRIPTION,"세계 향수의 수도, 프라고나르 향수 공방과 역사 지구"
 grasse-parking-notre-dame-des-fleurs,grasse-parking-notre-dame-des-fleurs,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 grasse-vieille-ville,grasse-vieille-ville,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,spot,market,MUST_SEE,UTILITY,,Y,MEDIUM_GUIDE,"미식의 수도 리옹의 미식 상설 홀, 최고급 식재료와 부숑"
+halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,spot,market,MUST_SEE,UTILITY,,Y,PRACTICAL_GUIDE,"미식의 수도 리옹의 미식 상설 홀, 최고급 식재료와 부숑"
 hertz-avignon-tgv,hertz-avignon-tgv,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 hertz-barcelona-sants,hertz-barcelona-sants,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 hertz-bcn-airport,hertz-bcn-airport,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -199,7 +199,7 @@ palau-de-maricel,Palau de Maricel,barcelona,spot,architecture,WORTHWHILE,TIER_B,
 pals,Pals,girona,spot,village,WORTHWHILE,TIER_B,Day 06,Y,MEDIUM_GUIDE,엠포르다 지역의 보존된 중세 석조 마을
 pals-abeurador-parking,pals-abeurador-parking,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 parc-de-belleville,parc-de-belleville,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-parc-de-la-tete-d-or,Parc de la Tête d'Or,lyon,spot,nature,WORTHWHILE,TIER_B,Day 25,Y,SHORT_DESCRIPTION,"황금머리 호수 공원, 식물원, 온실과 장미원"
+parc-de-la-tete-d-or,Parc de la Tête d'Or,lyon,spot,nature,WORTHWHILE,TIER_B,Day 25,Y,MEDIUM_GUIDE,"황금머리 호수 공원, 식물원, 온실과 장미원"
 paris-gare-de-lyon,paris-gare-de-lyon,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 paris-stay-candidate,paris-stay-candidate,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 passeig-de-la-muralla,Passeig de la Muralla,girona,spot,viewpoint,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"지로나 중세 성벽길, 구시가지와 피레네 조망 뷰포인트"

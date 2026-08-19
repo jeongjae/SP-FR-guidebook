@@ -43,6 +43,8 @@
 | `saint-paul-de-mausole` | Saint-Paul-de-Mausole | Historic Site / Monastery Hospital | **TIER_A** | MUST_SEE | 100% |
 | `glanum` | Glanum | Historic Site / Ancient City | **TIER_B** | WORTHWHILE | 100% |
 
+- **Tier 분류 합계**: Tier A = **9개**, Tier B = **8개**, Tier C = **1개** (총 **18개**)
+
 ---
 
 ## 3. 5-Layer 품질 검증 결과
