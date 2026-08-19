@@ -118,7 +118,7 @@ def run_gate_validation():
     check_slugs = [
         "sagrada-familia", "sant-pau-recinte-modernista", "barri-gotic", "macba", "biblioteca-de-catalunya",
         "girona-cathedral", "passeig-de-la-muralla", "collioure", "onyar", "pals", "peratallada", "calella-de-palafrugell", "peralada",
-        "promenade-des-anglais", "vieux-nice", "colline-du-chateau", "cours-saleya", "le-rocher", "monaco", "le-suquet", "cannes",
+        "promenade-des-anglais", "vieux-nice", "colline-du-chateau", "cours-saleya", "le-rocher", "monaco", "menton", "le-suquet", "cannes",
         "marche-forville", "marche-de-la-liberation", "nce-t2", "nice-ville", "nice-walk", "cannes-walk", "monaco-walk"
     ]
     trip_hardcodes = []
@@ -135,7 +135,7 @@ def run_gate_validation():
         print("   [OK] Trip Separation PASS: Barcelona, Girona and Nice places are cleanly decoupled from trip dates.")
 
     # 5. Reference Integrity Check
-    print("5. Testing Reference Integrity...")
+    print("5. Testing Reference Integrity (Day Stops & Region refs)...")
     missing_refs = []
     for dp in sorted(DAILY_CARDS.glob("day-*.json")):
         ddata = json.loads(dp.read_text(encoding="utf-8"))
@@ -145,8 +145,9 @@ def run_gate_validation():
                 missing_refs.append((dp.stem, sid))
     if missing_refs:
         errors.append(f"Missing referenced place files: {missing_refs}")
+        print(f"   [FAIL] Missing referenced place files: {missing_refs}")
     else:
-        print("   [OK] Reference Integrity PASS: All referenced Barcelona places have canonical markdown files.")
+        print("   [OK] Reference Integrity PASS: All referenced Canonical Places have valid markdown SOT files.")
 
     # 6. Content Audit
     print("6. Running Content Audit Guard...")

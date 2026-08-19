@@ -126,6 +126,14 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 - **상세 가이드**: [Le Rocher 전체 심화 가이드 보기](../places/le-rocher.html) · [Monaco 전체 가이드](../places/monaco.html)
 
 ---
+#### Menton (멘통) {{grade:essential|필수}}
+
+> **Editor's Verdict**: 프랑스·이탈리아 국경의 따뜻한 미기후 속에 지중해로 쏟아져 내리는 파스텔톤 가옥들과 바로크 생 미셸 대성당을 품은 '프랑스의 진주'.
+
+- **체류/요금**: 3–4시간 · **무료** (모나코 방문 후 TER 10분 연계, 사블레트 방파제 엽서 뷰 & 항구 해산물 저녁)
+- **상세 가이드**: [Menton 전체 심화 가이드 보기](../places/menton.html)
+
+---
 #### Le Suquet — 칸 구시가지 {{grade:essential|필수}}
 
 > **Editor's Verdict**: 크루아제트의 화려함 뒤에 숨겨진 11세기 옛 어촌의 가파른 돌계단 골목과 정상 성당에서 내려다보는 칸 만의 파노라마.

@@ -53,6 +53,7 @@
 | `marche-forville` | Marché Forville | spot | 필수 | — | chapters/nice/places.html | Marché Forville | fr:Marché Forville |
 | `marche-de-la-liberation` | Marché de la Libération | spot | 우선 추천 | Libération Market | chapters/nice/places.html | Marché de la Libération | — |
 | `monaco` | Monaco | spot | 우선 추천 | Monaco | chapters/nice/places.html | Monaco | Monaco |
+| `menton` | Menton (멘통) | spot | 필수 | Menton | chapters/nice/places.html | Menton (멘통) | Menton |
 | `nice-walk` | Nice Old Town–Castle Hill Walk | walk | 필수 | — | chapters/nice/places.html | Nice Old Town–Castle Hill Walk | — |
 | `cannes-walk` | Cannes Forville–Suquet–Croisette Walk | walk | 필수 | — | chapters/nice/places.html | Cannes Forville–Suquet–Croisette Walk | — |
 | `monaco-walk` | Monaco Rocher–Port–Monte Carlo Walk | walk | 필수 | — | chapters/nice/places.html | Monaco Rocher–Port–Monte Carlo Walk | — |
