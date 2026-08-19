@@ -1,34 +1,49 @@
 ---
 slug: la-roquette
 name: "La Roquette"
+local_name: "Quartier de la Roquette (Arles)"
 region: avignon
 kind: spot
 grade: "우선 추천"
-summary: "론강과 가까운 생활 골목이다."
-source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md
+priority: "OPTIONAL"
+content_tier: "TIER_C"
+summary: "론(Rhône) 강변을 따라 파스텔톤 가옥과 덧창, 조약돌 골목이 이어지는 아를의 옛 어부와 뱃사공 주거 지구. 관광지 인파를 벗어난 조용한 로컬 생활권과 폴 두메르 광장의 아늑한 카페 테라스."
+source: source/CURRENT/30_Places/la-roquette.md
 ---
+
+## 왜 가는가
+
+아를 남서쪽 론(Rhône) 강변 제방을 따라 형성된 **가장 아늑하고 진솔한 옛 어부와 선원들의 전통 주거 지구(Quartier des Mariniers)**다.
+
+거대한 로마 유적과 관광객 인파로 북적이는 중심부에서 불과 한 블록 벗어났을 뿐이지만, 좁은 조약돌 골목길마다 집주인들이 내놓은 화분, 파스텔톤 덧창, 17~18세기 소박한 석조 파사드가 정겨운 남프랑스 시골 골목의 정취를 고스란히 간직하고 있다.
+
+지구 중심인 **폴 두메르 광장(Place Paul Doumer)**은 현지 주민들이 모여 에스프레소나 맥주를 마시는 아담한 플라타너스 쉼터이며, 골목 끝에서 론 강 제방길(Quai de la Roquette)로 올라서면 탁 트인 강물과 노을을 감상할 수 있다.
+
+### Editor's Verdict
+> **"유적지 관람의 피로를 씻어내고, 카메라를 든 채 화려하지 않은 아를 주민들의 소박한 일상 속을 조용히 거닐기에 가장 평화로운 주거 골목이다."** 폴 두메르 광장의 로컬 카페에서 30분간 휴식을 취하고, 꽃 화분이 가득한 Rue Roquette 골목을 지나 론 강변 제방으로 나서는 45분 산책 코스를 추천한다.
+
+- **Best For**: 한적한 프로방스 주거 골목 사진 촬영, 로컬 광장 카페 휴식, 론 강변 노을 산책
+- **Best Time**: 늦은 오후 15:30~17:00 (따뜻한 햇살이 파스텔톤 골목을 비추는 시간)
+- **Recommended Duration**: 30분–45분 (골목 산책 + 광장 카페)
 
 ## 더 깊이
 
-### 기본 동선·교통
+### 1. 뱃사공과 어부의 역사 (알아야 보인다)
 
-| 구간 | 기본안 | 실행 포인트 |
-|---|---|--- |
-| Avignon Centre→Arles | 철도 | 실제 직행편·공사·파업을 전날 확인. 차량보다 주차 스트레스가 적어 기본안 |
-| Arles역→Arènes→Théâtre | 도보 | 역에서 구도심으로 진입, 오전 유적 두 곳 |
-| Place du Forum→Saint-Trophime | 도보 | 점심·카페 뒤 회랑 또는 Fondation 중 하나 |
-| La Roquette→Arles역 | 도보 | 저녁 전 Avignon 귀환, 막차 의존 금지 |
+- **론 강의 수상 교통 기지**: 철도가 놓이기 전, 론 강은 리옹과 지중해를 잇는 핵심 수운 통로였다. 라 로케트는 론 강의 거센 물살을 오가던 뱃사공(Mariniers)과 직조공, 어부들이 모여 살던 활기찬 항구 배후 마을이었다.
+- **건축적 특징**: 대저택 중심의 북쪽 구도심과 달리, 좁고 높은 2~3층 석조 서민 주택들이 빽빽하게 맞닿아 있어 골목마다 독특한 친밀감과 생활감을 자아낸다.
 
-차량을 쓰면 **Parking des Lices 등 구도심 외곽 관리형 주차 후 도보 진입**을 기본으로 검토한다. 정확한 운영·요금·JEP 통제는 출발 전 재확인한다.
+### 2. Don't Miss & Look Closer
 
-### 식사·우천·혼잡 축소안
+1. **Place Paul Doumer**: 플라타너스 그늘 아래 로컬 비스트로와 베이커리가 있는 마을 광장.
+2. **Rue de la Roquette**: 조약돌 바닥과 초록 덧창, 넝쿨 식물이 어우러진 시그니처 골목.
+3. **Quai de la Roquette**: 론 강 제방 위에 올라서서 바라보는 강 건너 트랭크타유(Trinquetaille) 지구와 강물 파노라마.
 
-- Place du Forum·Rue de la République 주변의 점심 후보는 당일 영업을 확인하고 75분 상한으로 둔다 {{badge:unverified|영업일 확인}}. Café Van Gogh는 외관 확인 이상의 우선순위를 주지 않는다.
-- 카페 휴식은 Place Paul Doumer 또는 La Roquette권에서 30분 확보한다.
-- 비가 오면 Arènes 상부와 La Roquette를 줄이고 **Saint-Trophime 또는 Fondation** 가운데 하나를 길게 본다.
-- 혼잡하면 무료 프로그램 대기를 포기하고 일반 유적 동선 또는 강변 산책으로 전환한다.
-- LUMA Arles, Alyscamps, Musée départemental Arles antique는 모두 선택자료다. **같은 날 전부 넣지 않고**, Camargue는 별도 하루가 없으므로 결합하지 않는다.
+## 실용 & 위치
 
----
-
-Arles 대신 풍경·마을을 우선하고 차량운전이 편할 때 하루 전체를 교체한다. Les Baux·Saint-Rémy·Glanum은 기본 확정 일정이 아니다.
+| 항목 | 상세 정보 |
+|---|---|
+| **위치** | Quartier de la Roquette, 13200 Arles |
+| **입장료** | 상시 개방 / **무료** |
+| **보행 팁** | 구도심 중심 Place de la République에서 도보 5분 거리 / 조용한 주거지이므로 정숙 유지 권장 |
+| **추천 카페** | Place Paul Doumer 주변의 로컬 카페 테라스 |
