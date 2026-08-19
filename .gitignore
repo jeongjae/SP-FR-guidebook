@@ -8,3 +8,4 @@ __pycache__/
 .uv-python/
 .venv/
 .media-downloads/
+.test_validation.lock

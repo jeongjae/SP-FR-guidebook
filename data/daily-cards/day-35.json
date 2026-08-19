@@ -39,11 +39,11 @@
       "order": 2,
       "start": "11:00",
       "end": "13:30",
-      "name": "숙소권 시장·점심",
+      "name": "금요일 시장 — Marché Saint-Charles",
       "category": "shopping",
       "lat": 48.8404,
       "lng": 2.3475,
-      "summary": "필요한 식재료만 — 줄이 길면 즉시 대체",
+      "summary": "Rue Saint-Charles 07:00–13:30. 숙소에서 도보 8분 — 금요일에 서는 15구 시장은 여기뿐이다",
       "menu": "시장식 또는 숙소 점심",
       "reservation": null,
       "optional": false

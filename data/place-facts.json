@@ -5276,6 +5276,37 @@
           "ttl_days": 90
         }
       }
+    },
+    "paris-15e-markets": {
+      "displayName": "파리 15구 요일장",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "화 Saint-Charles·Convention / 수 Grenelle·Lecourbe·Lefebvre·Cervantès / 목 Convention / 금 Saint-Charles / 토 Lecourbe·Lefebvre·Cervantès / 일 Grenelle·Convention. 평일 07:00–13:30, 토·일 07:00–14:30",
+          "confidence": "official",
+          "source": "파리시 오픈데이터 marches-decouverts · paris.fr 개별 페이지 · 15구청 3중 확인 — https://opendata.paris.fr/explore/dataset/marches-decouverts/",
+          "verified_at": "2026-08-19"
+        },
+        "closed": {
+          "value": "월요일은 파리 공설시장 공통 휴장 — 9/28·10/5 는 시장이 없다",
+          "confidence": "official",
+          "source": "파리시 오픈데이터",
+          "verified_at": "2026-08-19"
+        },
+        "getting_there": {
+          "value": "숙소(78 Rue de Lourmel) 기준 — Saint-Charles 도보 8분 · Grenelle 도보 9–12분 · Lecourbe 도보 15분",
+          "confidence": "secondary",
+          "source": "OpenStreetMap 지오코딩 직선거리 환산",
+          "verified_at": "2026-08-19"
+        },
+        "note": {
+          "value": "15구에는 상설 실내시장이 없다. 요일장을 못 가는 날은 Rue du Commerce (도보 7분, 약 140개 점포)나 Beaugrenelle(도보 7분)에서 장을 본다",
+          "confidence": "official",
+          "source": "paris.fr 상설시장 목록 · Rue du Commerce 상점가",
+          "verified_at": "2026-08-19"
+        }
+      }
     }
   }
 }

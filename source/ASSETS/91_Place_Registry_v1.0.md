@@ -68,16 +68,16 @@
 |---|---|---|---|---|---|---|---|
 | `atelier-des-lauves` | Atelier des Lauves | spot | 필수 | Atelier Cézanne | chapters/aix/places.html | Atelier des Lauves | Atelier de Cézanne |
 | `bastide-du-jas-de-bouffan` | Bastide du Jas de Bouffan | spot | 우선 추천 | — | chapters/aix/places.html | Bastide du Jas de Bouffan — 선택 | Bastide du Jas de Bouffan |
-| `calanques` | Calanques | spot | 대체 | — | chapters/aix/places.html | Calanques | Calanques National Park |
+| `calanques` | Calanques | spot | 필수 | — | chapters/aix/places.html | Calanques | Calanques National Park |
 | `carrieres-de-bibemus` | Carrières de Bibémus | spot | 대체 | — | chapters/aix/places.html | Carrières de Bibémus | fr:Carrières de Bibémus |
-| `cassis` | Cassis 항구 | spot | 대체 | Cassis | chapters/aix/places.html | Cassis 항구 | Cassis |
+| `cassis` | Cassis 항구 | spot | 필수 | Cassis | chapters/aix/places.html | Cassis 항구 | Cassis |
 | `cours-mirabeau` | Cours Mirabeau | spot | 필수 | Cours Mirabeau | chapters/aix/places.html | Cours Mirabeau | Cours Mirabeau |
 | `grasse` | Grasse | spot | 선택 | — | chapters/aix/places.html | Grasse | Grasse |
-| `marseille` | Marseille | spot | 필수 | Marseille Saint-Charles | chapters/aix/places.html | Marseille | Marseille |
-| `vieux-port-marseille` | Vieux-Port | spot | 필수 | Vieux-Port | chapters/aix/places.html | Vieux-Port | Old Port of Marseille |
-| `le-panier` | Le Panier | spot | 우선 추천 | Le Panier | chapters/aix/places.html | Le Panier | fr:Le Panier |
-| `mucem` | Mucem | spot | 필수 | Mucem | chapters/aix/places.html | Mucem | Museum of European and Mediterranean Civilisations |
-| `fort-saint-jean` | Fort Saint-Jean | spot | 필수 | Fort Saint-Jean | chapters/aix/places.html | Fort Saint-Jean | Fort Saint-Jean (Marseille) |
+| `marseille` | Marseille | spot | 대체 | Marseille Saint-Charles | chapters/aix/places.html | Marseille | Marseille |
+| `vieux-port-marseille` | Vieux-Port | spot | 대체 | Vieux-Port | chapters/aix/places.html | Vieux-Port | Old Port of Marseille |
+| `le-panier` | Le Panier | spot | 대체 | Le Panier | chapters/aix/places.html | Le Panier | fr:Le Panier |
+| `mucem` | Mucem | spot | 대체 | Mucem | chapters/aix/places.html | Mucem | Museum of European and Mediterranean Civilisations |
+| `fort-saint-jean` | Fort Saint-Jean | spot | 대체 | Fort Saint-Jean | chapters/aix/places.html | Fort Saint-Jean | Fort Saint-Jean (Marseille) |
 | `notre-dame-de-la-garde` | Notre-Dame de la Garde | spot | 선택 | Notre-Dame de la Garde | chapters/aix/places.html | Notre-Dame de la Garde | Notre-Dame de la Garde |
 | `montagne-sainte-victoire-terrain-des-peintres` | Montagne Sainte-Victoire · Terrain des Peintres | spot | 우선 추천 | — | chapters/aix/places.html | Montagne Sainte-Victoire · Terrain des Peintres | Montagne Sainte-Victoire |
 | `musee-granet` | Musée Granet | spot | 우선 추천 | Musée Granet | chapters/aix/places.html | Musée Granet | Musée Granet |
