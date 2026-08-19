@@ -1,7 +1,7 @@
 {
   "program_name": "Place Content Canonical SOT & 5-Layer Enrichment Program",
   "status": "COMPLETE",
-  "audit_phase": "PC-14",
+  "audit_phase": "PC-14B",
   "total_canonical_places": 102,
   "region_breakdown": {
     "luberon": 11,
@@ -12,6 +12,96 @@
     "paris": 15,
     "girona": 8,
     "nice": 16
+  },
+  "region_stats": {
+    "luberon": {
+      "name": "Luberon",
+      "count": 11,
+      "tier_a": 4,
+      "tier_b": 5,
+      "tier_c": 1,
+      "utility": 1,
+      "must_see": 5,
+      "worthwhile": 5,
+      "optional": 1
+    },
+    "lyon": {
+      "name": "Lyon & Annecy",
+      "count": 7,
+      "tier_a": 4,
+      "tier_b": 2,
+      "tier_c": 0,
+      "utility": 1,
+      "must_see": 5,
+      "worthwhile": 2,
+      "optional": 0
+    },
+    "avignon": {
+      "name": "Avignon, Pont du Gard & Arles",
+      "count": 18,
+      "tier_a": 9,
+      "tier_b": 8,
+      "tier_c": 1,
+      "utility": 0,
+      "must_see": 10,
+      "worthwhile": 7,
+      "optional": 1
+    },
+    "aix": {
+      "name": "Aix-en-Provence",
+      "count": 19,
+      "tier_a": 7,
+      "tier_b": 12,
+      "tier_c": 0,
+      "utility": 0,
+      "must_see": 11,
+      "worthwhile": 8,
+      "optional": 0
+    },
+    "barcelona": {
+      "name": "Barcelona",
+      "count": 8,
+      "tier_a": 3,
+      "tier_b": 5,
+      "tier_c": 0,
+      "utility": 0,
+      "must_see": 3,
+      "worthwhile": 5,
+      "optional": 0
+    },
+    "paris": {
+      "name": "Paris",
+      "count": 15,
+      "tier_a": 11,
+      "tier_b": 4,
+      "tier_c": 0,
+      "utility": 0,
+      "must_see": 11,
+      "worthwhile": 4,
+      "optional": 0
+    },
+    "girona": {
+      "name": "Girona & Costa Brava",
+      "count": 8,
+      "tier_a": 3,
+      "tier_b": 4,
+      "tier_c": 1,
+      "utility": 0,
+      "must_see": 4,
+      "worthwhile": 3,
+      "optional": 1
+    },
+    "nice": {
+      "name": "Nice & Côte d'Azur",
+      "count": 16,
+      "tier_a": 4,
+      "tier_b": 6,
+      "tier_c": 2,
+      "utility": 4,
+      "must_see": 8,
+      "worthwhile": 6,
+      "optional": 2
+    }
   },
   "tier_breakdown": {
     "TIER_A": 45,
@@ -32,6 +122,7 @@
   },
   "total_content_lines": 5521,
   "total_content_bytes": 431181,
+  "itinerary_days": 43,
   "day_stops_evaluated": 234,
   "resolved_canonical_stops": 90,
   "allowed_operational_exceptions": 144,
@@ -40,7 +131,12 @@
   "duplicate_long_forms": 0,
   "trip_specific_hardcodes": 0,
   "content_loss": 0,
-  "generated_html_pages": 337,
+  "canonical_place_pages": 102,
+  "additional_place_related_pages": 5,
+  "total_place_related_pages": 107,
+  "total_generated_html_pages": 337,
   "search_index_entries": 157,
+  "canonical_search_coverage": 102,
+  "canonical_map_coverage": 102,
   "editorial_quality_score_avg": 4.92
 }
