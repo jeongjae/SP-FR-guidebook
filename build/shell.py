@@ -110,6 +110,10 @@ def alert(kind: str, body: str, icon: str = "alert") -> str:
 
 MAPS_META = ""   # render.py 가 빌드 시작에 채운다
 
+# 예약번호 가리기. render.py 가 빌드 시작에 실제 함수로 갈아 끼운다 —
+# shell 이 render 를 import 하면 순환이 된다.
+MASK = lambda html_text: html_text
+
 
 def page(*, title: str, body: str, rel: str, tab: str,
          trail: list[tuple[str, str | None]] | None = None,
@@ -137,7 +141,7 @@ def page(*, title: str, body: str, rel: str, tab: str,
     else:
         trail_html = '<span class="crumbs"></span>'
 
-    return f"""<!DOCTYPE html>
+    doc = f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -182,6 +186,9 @@ def page(*, title: str, body: str, rel: str, tab: str,
 </body>
 </html>
 """
+    # 예약번호는 여기 한 곳에서 가린다. 페이지마다 따로 처리하면 언젠가
+    # 한 군데가 빠지고, 그 한 군데로 전부 새어 나간다.
+    return MASK(doc)
 
 
 def redirect(target: str, label: str) -> str:
@@ -190,7 +197,7 @@ def redirect(target: str, label: str) -> str:
     자바스크립트가 꺼져 있어도 meta refresh 로 넘어가고, 그것도 실패하면
     링크가 보인다 — 현장에서 막다른 화면을 만들지 않는다.
     """
-    return f"""<!DOCTYPE html>
+    doc = f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -205,3 +212,5 @@ def redirect(target: str, label: str) -> str:
 </body>
 </html>
 """
+    # 리다이렉트 쪽은 가릴 것이 없다 — 주소만 들어 있다.
+    return doc

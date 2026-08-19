@@ -83,6 +83,7 @@ def main() -> int:
 
     render.IMAGES = render.load_image_index()
     render.FACTS = model.load_facts()
+    shell.MASK = render.mask_booking_codes
     res = render.load_reservations()
     print(f"예약: 유효 {res['active']}건 · 미확정 {res['undone']}건")
 
