@@ -1,25 +1,41 @@
 ---
 slug: nice-walk
 name: "Nice Old Town–Castle Hill Walk"
+local_name: "Promenade du Vieux-Nice à la Colline du Château"
 region: nice
 kind: walk
 grade: "필수"
-summary: "추천 대상: 니스의 활기찬 아침 시장과 유서 깊은 구시가지 골목을 지나 성채 언덕의 지중해 파노라마 조망까지 한 번에 완료하고 싶은 여행자."
-source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
+priority: "WORTHWHILE"
+content_tier: "TIER_B"
+summary: "쿠르 살레야 시장에서 출발해 비외 니스 미로 골목을 지나 성채 언덕의 지중해 낙조 파노라마로 이어지는 니스의 시그니처 도보 코스."
+source: source/CURRENT/30_Places/nice-walk.md
 ---
+
+## 왜 가는가
+
+니스의 활기찬 아침 시장과 유서 깊은 구시가지 골목, 그리고 성채 언덕의 360도 지중해 파노라마 조망을 한 번에 완결하는 가장 대표적인 도보 코스다.
+
+### Editor's Verdict
+> 니스를 처음 방문한 여행자가 니스의 지형과 역사, 로컬 라이프스타일을 가장 압축적으로 체험할 수 있는 황금 동선이다. 일몰 1시간 반 전에 출발하여 성채 언덕 정상에서 붉게 물드는 천사의 만을 감상한 뒤 벨랑다 탑 계단으로 내려오는 일정이 가장 감동적이다.
+
+- **소요 시간**: 약 1시간 30분 (도보 거리 약 2.5km)
+- **최적 시간대**: 늦은 오후 16:30~18:30 (석양 조망) 또는 오전 09:30~11:30 (쿠르 살레야 시장 연계)
 
 ## 더 깊이
 
-> **요금** {{fact:nice-old-town-castle-hill-walk.price_adult}} · **운영** {{fact:nice-old-town-castle-hill-walk.hours}} · **휴관** {{fact:nice-old-town-castle-hill-walk.closed}}
-> **예약** {{fact:nice-old-town-castle-hill-walk.booking}}
+### 1. 도보 경로 및 관찰 지점
 
-*   **추천 대상**: 니스의 활기찬 아침 시장과 유서 깊은 구시가지 골목을 지나 성채 언덕의 지중해 파노라마 조망까지 한 번에 완료하고 싶은 여행자.
-*   **경로 개요**: Cours Saleya (출발) → Place Rossetti (Sainte-Réparate 대성당) → Rue Droite (Palais Lascaris) → Castle Hill Elevator → Colline du Château 공원 및 인공폭포 → Bellanda Tower 계단 → Promenade des Anglais (도착).
-*   **소요 시간**: 약 1시간 30분.
-*   **최적 시간대**: 늦은 오후 (일몰 1시간 반 전에 출발하면 성채 언덕에서 아름다운 지중해 낙조를 감상 가능).
-*   **도보 경로 및 관찰 지점**:
-    1. **Cours Saleya**: 꽃과 채소의 강렬한 색채를 느끼며 동쪽으로 이동한다.
-    2. **Place Rossetti**: 성당 내부를 조용히 관람한다.
-    3. **Rue Droite**: 제노바풍 건물들의 높이와 파사드 기둥 눈속임 그림(Trompe-l'œil)을 살핀다.
-    4. **성채 언덕**: 무료 엘리베이터로 올라 인공폭포와 대성당 유적지를 도보로 순환한다.
-    5. **벨랑다 탑**: 해변으로 굽어지는 웅장한 해안선(Promenade) 뷰를 확인하며 계단으로 내려온다.
+1. **Cours Saleya (출발)**: 활기찬 꽃과 과일 시장의 색채를 느끼며 동쪽으로 이동.
+2. **Place Rossetti**: 17세기 바로크 양식의 생트 레파라트 대성당 내부와 광장 풍경 감상.
+3. **Rue Droite**: 제노바풍 고밀도 건물과 파사드 눈속임 그림(Trompe-l'œil), 아틀리에 탐방.
+4. **성채 언덕 (Colline du Château)**: 무료 엘리베이터로 올라 인공폭포와 대성당 유적지를 순환.
+5. **벨랑다 탑 (Tour Bellanda)**: 부드럽게 굽어지는 천사의 만 해안선 뷰를 확인하며 프롬나드 데 장글레로 하산.
+
+## 실용
+
+| 항목 | 상세 정보 |
+|---|---|
+| **출발 지점** | Cours Saleya (트램 1호선 Opéra-Vieille Ville 하차) |
+| **종착 지점** | Promenade des Anglais (벨랑다 탑 하단 #ILoveNICE 광장) |
+| **비용** | **전 구간 무료 (Free)** |
+| **권장 복장** | 성채 언덕 하산 계단이 있으므로 편안한 운동화 착용 |
