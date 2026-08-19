@@ -75,7 +75,7 @@
       "optional": false
     },
     {
-      "id": "menton-old-town",
+      "id": "menton",
       "order": 5,
       "start": "14:30",
       "end": "18:30",
@@ -147,7 +147,7 @@
     },
     {
       "from": "monte-carlo",
-      "to": "menton-old-town",
+      "to": "menton",
       "mode": "train",
       "duration": "약 11분",
       "distance": null,
@@ -155,7 +155,7 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "menton-old-town",
+      "from": "menton",
       "to": "menton-dinner",
       "mode": "walk",
       "duration": "10분",
