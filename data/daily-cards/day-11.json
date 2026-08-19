@@ -30,7 +30,8 @@
       "summary": "도시의 부엌 — 관광 시장이 아닌 생활 시장",
       "menu": "과일·채소·가정식 재료",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "marche-de-la-liberation"
     },
     {
       "id": "charles-negre",
@@ -44,7 +45,8 @@
       "summary": "화요일 유일의 선택 문화시설 (Matisse·Chagall은 화요일 휴관)",
       "menu": null,
       "reservation": "운영·요금 재확인",
-      "optional": true
+      "optional": true,
+      "place_ref": "vieux-nice"
     },
     {
       "id": "promenade",
@@ -58,7 +60,8 @@
       "summary": "세탁·렌터카 준비 2시간을 보호한다",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": true,
+      "place_ref": "promenade-des-anglais"
     },
     {
       "id": "nice-stay-return",

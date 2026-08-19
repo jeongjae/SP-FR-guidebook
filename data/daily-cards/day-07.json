@@ -86,7 +86,8 @@
       "summary": "숙소 주변 산책과 가벼운 저녁으로 여유 있게 마무리",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": true,
+      "place_ref": "promenade-des-anglais"
     },
     {
       "id": "nice-stay-return",

@@ -72,7 +72,8 @@
       "summary": "Porte Saint-Michel→Corps Saints→Rue des Teinturiers — 남동부 생활권과 귀가로 파악",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "palais-des-papes"
     },
     {
       "id": "avignon-return",

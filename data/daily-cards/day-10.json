@@ -58,7 +58,8 @@
       "summary": "언덕에서 항구로 내려와 요트 선착장 및 F1 서킷 산책",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "monaco"
     },
     {
       "id": "monte-carlo",
@@ -72,7 +73,8 @@
       "summary": "Casino de Monte-Carlo 외관 및 Place du Casino 감상. 점심: Café de Paris Monte-Carlo (대안: Marché de la Condamine, Eqvita, Maya Bay)",
       "menu": "점심: Café de Paris Monte-Carlo (대안: Marché de la Condamine)",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "monaco"
     },
     {
       "id": "menton",

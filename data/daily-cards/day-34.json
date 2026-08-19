@@ -46,7 +46,8 @@
       "summary": "정원·골목·운하 초입 — 공연이 빠져 여유, 체력에 맞춰",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "le-marais"
     },
     {
       "id": "coulee-verte",

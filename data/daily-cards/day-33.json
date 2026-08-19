@@ -46,7 +46,8 @@
       "summary": "건축·공공공간·거리 분위기 — 전시는 공식 확인된 경우에만",
       "menu": null,
       "reservation": "공개 전시 여부 확인",
-      "optional": false
+      "optional": false,
+      "place_ref": "centre-pompidou"
     },
     {
       "id": "montaigne",
@@ -88,7 +89,8 @@
       "summary": "회랑·정원 — 스케치·카페",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "bnf-richelieu"
     },
     {
       "id": "paris-return",

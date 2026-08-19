@@ -88,7 +88,8 @@
       "summary": "미술관 뒤 느린 산책",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "vieil-aix"
     },
     {
       "id": "aix-stay-return",
