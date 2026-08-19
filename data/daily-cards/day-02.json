@@ -30,7 +30,8 @@
       "summary": "도메네크 이 몬타네르의 병원 단지. 09:30 개장 직후가 가장 한산하다",
       "menu": null,
       "reservation": "자유관람 예약 불요 · 14시 이전 입장 €18 (이후 €17)",
-      "optional": false
+      "optional": false,
+      "place_ref": "sant-pau-recinte-modernista"
     },
     {
       "id": "avinguda-gaudi",
@@ -44,7 +45,8 @@
       "summary": "산파우와 사그라다를 잇는 직선 보행축 — 내려가며 사그라다 정면이 커진다. 점심까지 완충 시간이다",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "sant-pau-recinte-modernista"
     },
     {
       "id": "la-paradeta-sagrada",
@@ -86,7 +88,8 @@
       "summary": "Virreina→Sol, 쇼핑보다 동네 생활감에 집중",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": true,
+      "place_ref": "barri-gotic"
     },
     {
       "id": "bodega-joan",

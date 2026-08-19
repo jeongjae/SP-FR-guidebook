@@ -44,7 +44,8 @@
       "summary": "Vila Vella 성벽과 해변",
       "menu": null,
       "reservation": "주차·Vila Vella 접근 재확인",
-      "optional": false
+      "optional": false,
+      "place_ref": "pals"
     },
     {
       "id": "sant-feliu",

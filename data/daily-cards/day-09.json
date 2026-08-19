@@ -58,7 +58,8 @@
       "summary": "해안 호텔·명품가를 먼저 본다 — 순서가 중요",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "cannes"
     },
     {
       "id": "vieux-port-cannes",
@@ -72,7 +73,8 @@
       "summary": "Quai Saint-Pierre를 따라 항구로",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "cannes"
     },
     {
       "id": "le-suquet",

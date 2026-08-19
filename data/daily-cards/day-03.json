@@ -30,7 +30,8 @@
       "summary": "다음 날 차량용 물·비상 간식까지 준비",
       "menu": "과일·빵·햄·치즈 소량",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "barri-gotic"
     },
     {
       "id": "barri-gotic",
@@ -100,7 +101,8 @@
       "summary": "여행·미술·건축 코너 중심, 아트·코믹 매장은 길 건너",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "barri-gotic"
     },
     {
       "id": "barcelona-stay-return",
