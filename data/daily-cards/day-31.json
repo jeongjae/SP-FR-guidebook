@@ -61,7 +61,8 @@
       "summary": "독립상점·생활상권 — 새 명소 추가 금지",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": true,
+      "place_ref": "le-marais"
     },
     {
       "id": "shopping",

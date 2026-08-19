@@ -46,7 +46,8 @@
       "summary": "정원축과 Louvre 외관 — 내부 입장 없음",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "musee-de-l-orangerie"
     },
     {
       "id": "pr-lunch",
@@ -74,7 +75,8 @@
       "summary": "스케치 20–30분 포함",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "bnf-richelieu"
     },
     {
       "id": "opera",

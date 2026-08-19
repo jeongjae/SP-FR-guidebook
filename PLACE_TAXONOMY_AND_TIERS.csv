@@ -30,12 +30,12 @@ bastide-du-jas-de-bouffan,Bastide du Jas de Bouffan,aix,spot,historic_site,WORTH
 bcn-airport-t1,bcn-airport-t1,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 bellecour,Bellecour,lyon,spot,viewpoint,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,"프랑스 최대 규모의 보행자 광장, 루이 14세 기마상과 생텍쥐페리 동상"
 biblioteca-de-catalunya,Biblioteca de Catalunya,barcelona,spot,historic_site,WORTHWHILE,TIER_B,Day 03,Y,SHORT_DESCRIPTION,"구 산타 크레우 병원 부지, 고딕 양식 중정과 역사 도서관"
-bnf-richelieu,BnF Richelieu,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,프랑스 국립도서관 라브루스트 열람실(Salle Labrouste)과 마자랭 갤러리
+bnf-richelieu,BnF Richelieu,paris,spot,architecture,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,프랑스 국립도서관 라브루스트 열람실(Salle Labrouste)과 마자랭 갤러리
 bnf-richelieu-salle-ovale,bnf-richelieu-salle-ovale,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 bodega-joan,bodega-joan,unknown,spot,spot,WORTHWHILE,TIER_B,Day 02,N,NONE,기본 분류 배정
 bonnieux,Bonnieux,luberon,spot,village,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,뤼베롱 계곡을 마주보는 계단식 언덕 마을
 bories-parking,bories-parking,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,paris,spot,museum,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,안도 타다오가 개조한 구 곡물거래소 피노 컬렉션 현대미술관
+bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,paris,spot,museum,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,안도 타다오가 개조한 구 곡물거래소 피노 컬렉션 현대미술관
 cadaques,cadaques,unknown,spot,spot,WORTHWHILE,TIER_B,Day 05,N,NONE,기본 분류 배정
 cafe-comptoir-abel,cafe-comptoir-abel,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 calanques,Calanques,aix,spot,nature,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,지중해 석회암 피오르드 해안 국립공원 (보트/하이킹)
@@ -53,7 +53,7 @@ cathedrale-saint-jean,cathedrale-saint-jean,unknown,spot,spot,WORTHWHILE,TIER_B,
 cau-ferrat,Cau Ferrat,barcelona,spot,museum,WORTHWHILE,TIER_B,,Y,DEEP_GUIDE,"시체스 루시뇰 아틀리에 미술관, 카탈루냐 모더니즘 핵심 컬렉션"
 cdg-airport,cdg-airport,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 cem-joan-miro,cem-joan-miro,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-centre-pompidou,Centre Pompidou,paris,spot,museum,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,렌조 피아노의 하이테크 건축과 국립현대미술관
+centre-pompidou,Centre Pompidou,paris,spot,museum,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,렌조 피아노의 하이테크 건축과 국립현대미술관
 chateau-royal-de-collioure,chateau-royal-de-collioure,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 chemin-du-fauvisme,chemin-du-fauvisme,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 chez-mamie-lise,chez-mamie-lise,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -85,7 +85,7 @@ girona-call,girona-call,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분�
 girona-cathedral,Girona Cathedral,girona,spot,architecture,MUST_SEE,TIER_A,,Y,FACTS_ONLY,"단일 신랑 세계 최대 폭 고딕 성당, 지로나 랜드마크"
 girona-old-town-walk,Girona 구시가지 — Call·성벽·대성당 권역,girona,walk,walk,WORTHWHILE,TIER_B,,Y,NONE,유대인 지구(El Call)와 중세 골목 도보 탐방
 girona-stay-private,girona-stay-private,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-giverny,Giverny,paris,spot,historic_site,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,클로드 모네의 집과 수련 연못 정원
+giverny,Giverny,paris,spot,historic_site,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,클로드 모네의 집과 수련 연못 정원
 giverny-fondation-claude-monet,giverny-fondation-claude-monet,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 glanum,Glanum,avignon,spot,historic_site,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,갈로-로마 시대 고대 도시 유적 및 개선문/묘탑
 gordes,Gordes,luberon,spot,village,MUST_SEE,TIER_A,Day 18,Y,DEEP_GUIDE,뤼베롱을 대표하는 절벽 위 석조 요새 마을
@@ -112,12 +112,12 @@ la-roca-peratallada,la-roca-peratallada,unknown,spot,spot,WORTHWHILE,TIER_B,,N,N
 la-roquette,La Roquette,avignon,spot,neighborhood,OPTIONAL,TIER_C,Day 22,Y,PRACTICAL_GUIDE,아를 론 강변의 옛 어부 지구 및 현지인 주거 골목
 la-table-alziari,la-table-alziari,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 la-zorra,la-zorra,unknown,spot,spot,WORTHWHILE,TIER_B,Day 04,N,NONE,기본 분류 배정
-latin-quarter,Latin Quarter,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,"소르본 대학, 팡테옹, 룩셈부르크 공원과 서점 거리"
+latin-quarter,Latin Quarter,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"소르본 대학, 팡테옹, 룩셈부르크 공원과 서점 거리"
 latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou,latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 le-criquet-arles,le-criquet-arles,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 le-freti,le-freti,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 le-gout-du-jour,le-gout-du-jour,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-le-marais,Le Marais,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"보주 광장, 귀족 저택 오텔 파르티퀼리에, 부티크와 갤러리"
+le-marais,Le Marais,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"보주 광장, 귀족 저택 오텔 파르티퀼리에, 부티크와 갤러리"
 le-marais-place-des-vosges-carnavalet-archives,le-marais-place-des-vosges-carnavalet-archives,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 le-panier,Le Panier,aix,spot,neighborhood,WORTHWHILE,TIER_B,Day 14,Y,SHORT_DESCRIPTION,"마르세유 최고(最古)의 언덕 골목 지구, 예술 공방과 벽화"
 le-rocher,Le Rocher — 모나코 구시가지,nice,spot,historic_site,WORTHWHILE,TIER_B,Day 10,Y,SHORT_DESCRIPTION,모나코 대공궁과 구시가지가 위치한 바위 언덕 요새
@@ -156,22 +156,22 @@ menton,Menton,nice,spot,village,MUST_SEE,TIER_B,Day 10,Y,SHORT_DESCRIPTION,프�
 monaco-rocher-port-monte-carlo-walk,monaco-rocher-port-monte-carlo-walk,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 monaco-walk,Monaco Rocher–Port–Monte Carlo Walk,nice,walk,walk,OPTIONAL,TIER_C,,Y,MEDIUM_GUIDE,헤라클레스 항구~대공궁~몬테카를로 도보 코스
 montagne-sainte-victoire-terrain-des-peintres,Montagne Sainte-Victoire · Terrain des Peintres,aix,spot,viewpoint,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,생트 빅투아르 산을 조망하는 세잔의 야외 화판 언덕
-montmartre-south-pigalle,Montmartre · South Pigalle,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,"사크레쾨르, 테르트르 광장, 예술가 거점과 피갈 카페거리"
-montorgueil,Montorgueil,paris,spot,neighborhood,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,파리에서 가장 오래된 보행자 미식 보행자 거리 (스토레 등)
+montmartre-south-pigalle,Montmartre · South Pigalle,paris,spot,neighborhood,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"사크레쾨르, 테르트르 광장, 예술가 거점과 피갈 카페거리"
+montorgueil,Montorgueil,paris,spot,neighborhood,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,파리에서 가장 오래된 보행자 미식 보행자 거리 (스토레 등)
 montorgueil-les-halles,montorgueil-les-halles,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 mucem,Mucem,aix,spot,museum,MUST_SEE,TIER_A,Day 14,Y,SHORT_DESCRIPTION,"유럽·지중해 문명 박물관, 루디 리치오티의 레이스 콘크리트 건축"
 musee-chagall,musee-chagall,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-d-orsay,Musée d'Orsay,paris,spot,museum,MUST_SEE,TIER_A,Day 32,Y,DEEP_GUIDE,구 기차역을 개조한 19세기 인상파·후기인상파의 성지
-musee-de-l-orangerie,Musée de l'Orangerie,paris,spot,museum,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,모네의 거대한 <수련> 연작 타원형 전용 전시실
+musee-de-l-orangerie,Musée de l'Orangerie,paris,spot,museum,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,모네의 거대한 <수련> 연작 타원형 전용 전시실
 musee-de-l-orangerie-monet-peindre-le-temps,musee-de-l-orangerie-monet-peindre-le-temps,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-de-la-photographie-charles-negre,musee-de-la-photographie-charles-negre,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-des-beaux-arts-lyon,musee-des-beaux-arts-lyon,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-des-tissus,musee-des-tissus,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
-musee-du-louvre,Musée du Louvre,paris,spot,museum,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"세계 최대 박물관, 모나리자·밀로의 비너스·사모트라케의 니케"
+musee-du-louvre,Musée du Louvre,paris,spot,museum,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"세계 최대 박물관, 모나리자·밀로의 비너스·사모트라케의 니케"
 musee-explorations-du-monde,musee-explorations-du-monde,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-gadagne,musee-gadagne,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-granet,Musée Granet,aix,spot,museum,WORTHWHILE,TIER_B,Day 13,Y,MEDIUM_GUIDE,"엑스 대표 미술관, 세잔 및 인상파/현대 회화 컬렉션"
-musee-marmottan-monet,Musée Marmottan Monet,paris,spot,museum,WORTHWHILE,TIER_B,,Y,SHORT_DESCRIPTION,"모네 <인상, 해돋이> 원작을 소장한 저택 미술관"
+musee-marmottan-monet,Musée Marmottan Monet,paris,spot,museum,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,"모네 <인상, 해돋이> 원작을 소장한 저택 미술관"
 musee-matisse-nice,musee-matisse-nice,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-photographie-charles-negre,musee-photographie-charles-negre,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 musee-picasso-antibes,musee-picasso-antibes,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
@@ -186,7 +186,7 @@ nice-ville,Nice-Ville,nice,node,transit,WORTHWHILE,UTILITY,"Day 09,Day 10",Y,NON
 nice-walk,Nice Old Town–Castle Hill Walk,nice,walk,walk,WORTHWHILE,TIER_B,,Y,MEDIUM_GUIDE,마세나 광장~구시가지~살레야~성 언덕 도보 코스
 nocturnes-avignon-musees,nocturnes-avignon-musees,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 notre-dame-de-la-garde,Notre-Dame de la Garde,aix,spot,architecture,MUST_SEE,TIER_A,,Y,SHORT_DESCRIPTION,"마르세유 최고봉 언덕 성당, 황금 성모상과 지중해 전경"
-notre-dame-de-paris,Notre-Dame de Paris,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"시테 섬의 고딕 걸작, 2024년 재개관 대성당"
+notre-dame-de-paris,Notre-Dame de Paris,paris,spot,architecture,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"시테 섬의 고딕 걸작, 2024년 재개관 대성당"
 onyar,Onyar 강변,girona,spot,viewpoint,MUST_SEE,TIER_B,,Y,FACTS_ONLY,오냐르 강변 파사드와 에펠 다리 조망 포인트
 opera-bastille,opera-bastille,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 oppede-le-vieux,Oppède-le-Vieux,luberon,spot,historic_site,OPTIONAL,TIER_C,,Y,MEDIUM_GUIDE,중세 유적과 폐허가 숲속에 남아있는 신비로운 옛 마을
@@ -252,7 +252,7 @@ tossa-de-mar,tossa-de-mar,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분
 tossa-parking-pelegri,tossa-parking-pelegri,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 travelPeriod,travelPeriod,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 uzes,Uzès Place aux Herbes·구시가지,avignon,spot,village,MUST_SEE,TIER_A,Day 21,Y,DEEP_GUIDE,"프랑스 제1의 공작 도시, 에르브 광장 시장과 토요 마켓"
-versailles,Versailles,paris,spot,architecture,MUST_SEE,TIER_A,,Y,MEDIUM_GUIDE,"루이 14세의 절대왕정 궁전, 거울의 방과 정원, 트리아농"
+versailles,Versailles,paris,spot,architecture,MUST_SEE,TIER_A,,Y,DEEP_GUIDE,"루이 14세의 절대왕정 궁전, 거울의 방과 정원, 트리아농"
 vieux-lyon,Vieux Lyon · 트라불,lyon,spot,neighborhood,MUST_SEE,TIER_A,Day 24,Y,DEEP_GUIDE,"르네상스 건축 지구, 비밀 통로 트라불(Traboules), 부숑"
 vieux-lyon-traboules,vieux-lyon-traboules,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 vieux-nice,Vieux Nice — 구시가지,nice,spot,neighborhood,MUST_SEE,TIER_A,Day 08,Y,SHORT_DESCRIPTION,"니스 구시가지의 바로크 성당, 골목길, 로컬 문화"
