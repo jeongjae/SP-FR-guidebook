@@ -12,10 +12,11 @@
   "totalDistance": "약 4km · 도보",
   "fatigue": "3",
   "hotel": {
-    "name": "Adagio Aix Centre (후보)",
-    "lat": 43.528998,
-    "lng": 5.440842,
-    "status": "candidate"
+    "name": "Les Toits de Méjanes (Airbnb)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
   },
   "stops": [
     {
@@ -53,12 +54,13 @@
       "end": "13:20",
       "name": "숙소 점심·휴식",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
+      "lat": null,
+      "lng": null,
       "summary": "40분 이상 앉아 쉼",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     },
     {
       "id": "granet",
@@ -95,12 +97,13 @@
       "end": null,
       "name": "숙소 휴식·저녁",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
+      "lat": null,
+      "lng": null,
       "summary": "19:30 Coucou 또는 La Brocherie — 첫 정식저녁",
       "menu": null,
       "reservation": "저녁 식당 예약",
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     }
   ],
   "legs": [
@@ -172,9 +175,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Aix 숙소 후보(Adagio) 승인 — 점심·귀환 동선 좌표 교체",
     "Granet 2026 특별전·요금 재확인",
-    "저녁 식당(Coucou/La Brocherie) 예약"
+    "저녁 식당(Coucou/La Brocherie) 예약",
+    "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-13",

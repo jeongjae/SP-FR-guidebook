@@ -12,10 +12,11 @@
   "totalDistance": "약 1km · 도보 + 메트로",
   "fatigue": "3–4",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -25,12 +26,13 @@
       "end": "12:00",
       "name": "느린 아침·숙소업무",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "박물관 전 체력 보존 — 예약시간 전 충분히 쉬기",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "lunch",
@@ -81,12 +83,13 @@
       "end": null,
       "name": "숙소 귀환·저녁",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "인상주의 또는 19세기 조각 한 권역만 추가",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     }
   ],
   "legs": [
@@ -149,9 +152,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Paris 숙소 후보 확정",
     "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "Orangerie 화요일 휴관 확인 (2026-08-14 공식) — 9/29 은 Orsay 고정, Orangerie 는 10/3 후보"
+    "Orangerie 화요일 휴관 확인 (2026-08-14 공식) — 9/29 은 Orsay 고정, Orangerie 는 10/3 후보",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-6-9월29일",

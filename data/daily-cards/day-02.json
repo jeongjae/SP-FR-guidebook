@@ -29,7 +29,7 @@
       "lng": 2.17436,
       "summary": "Plaça de Gaudí에서 외관을 본 뒤 10:30 입장",
       "menu": null,
-      "reservation": "10:30 Basilica 예약 잠금 필요",
+      "reservation": "예약완료 — 15:15 입장 (General · €29.12)",
       "optional": false
     },
     {
@@ -196,6 +196,7 @@
     "routeCache": null
   },
   "needsReview": [
+    "⚠ Sagrada 입장이 15:15 로 확정됐다. 현재 시간표는 09:00 방문 기준이라 Sant Pau(14:30)와 겹친다 — 하루 순서 재배치가 필요하다.",
     "숙소→사그라다 아침 이동수단(Metro/버스) 현장 확정",
     "La Paradeta·Bodega Joan 좌표와 2026 운영 여부 출발 전 재확인",
     "예약번호·총액·무료취소 기한 기록 (챕터 pending 배지)"

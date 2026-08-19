@@ -19,6 +19,7 @@ import os
 import re
 import shutil
 import sys
+from urllib.parse import quote
 from datetime import date
 from pathlib import Path
 
@@ -425,14 +426,18 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
     """
     pins = [{"id": s.id, "name": s.name, "lat": s.lat, "lng": s.lng,
              "cat": s.category, "time": s.start,
+             "address": s.address,
              "place": s.place.slug if s.place else None}
-            for s in stops if s.lat and s.lng]
+            for s in stops if (s.lat and s.lng) or s.address]
     if not pins:
         return ""
+    located = [p for p in pins if p["lat"] and p["lng"]]
     if center is None:
-        center = [sum(p["lat"] for p in pins) / len(pins),
-                  sum(p["lng"] for p in pins) / len(pins)]
-    payload = json.dumps({"center": center, "zoom": zoom, "pins": pins},
+        if not located:
+            return ""
+        center = [sum(p["lat"] for p in located) / len(located),
+                  sum(p["lng"] for p in located) / len(located)]
+    payload = json.dumps({"center": center, "zoom": zoom, "pins": located},
                          ensure_ascii=False, separators=(",", ":")) \
         .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
 
@@ -442,12 +447,12 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
         if p["place"]:
             name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
         when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
+        href = maps_url(p["lat"], p["lng"], p.get("address") or "")
         items.append(
             f'<li data-pin="{esc(p["id"])}">{when}'
             f'<span class="map-name">{name}</span>'
-            f'<a class="map-open" rel="nofollow noopener" '
-            f'href="https://www.google.com/maps/search/?api=1&query='
-            f'{p["lat"]},{p["lng"]}">{ic("map")}'
+            f'<a class="map-open" rel="nofollow noopener" href="{esc(href)}">'
+            f'{ic("map")}'
             f'<span class="visually-hidden">{esc(p["name"])} </span>열기</a></li>')
 
     return f"""<div class="map-card">
@@ -463,6 +468,21 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
   </div>
   <ol class="map-list" id="map-list">{"".join(items)}</ol>
 </div>"""
+
+
+def maps_url(lat=None, lng=None, address: str = "") -> str:
+    """지도 링크. 좌표가 있으면 좌표로, 없으면 주소로 연다.
+
+    확정 숙소인데 검증된 좌표가 없는 경우가 있다. 틀린 좌표를 남기면
+    현장에서 엉뚱한 곳으로 간다 — 그게 이 프로젝트 최악의 사고다.
+    주소는 확정이므로 Google 지도가 정확히 찾는다.
+    """
+    if lat and lng:
+        return f"https://www.google.com/maps/search/?api=1&query={lat},{lng}"
+    if address:
+        return ("https://www.google.com/maps/search/?api=1&query="
+                + quote(address))
+    return ""
 
 
 def index_search(title: str, url: str, kind: str, extra: str = "") -> None:
@@ -826,24 +846,26 @@ def build_region(r: Region, trip: Trip) -> str:
                          + "</ul></div>")
 
     # --- Stay & Local Life ------------------------------------------------
+    # 그 지역에서 **자는** 날의 숙소만 싣는다. 이동일은 두 지역에 걸쳐 있어
+    # 그냥 모으면 다음 거점의 숙소가 이 지역 날짜를 달고 나타난다.
     hotels = {d.hotel.get("name"): d.hotel for d in r.days
-              if d.hotel.get("name")}
+              if d.region == r.slug and d.hotel.get("name")}
     parts.append(f'<div id="stay">{sec_head("STAY", "숙박 · 생활", rule=True)}</div>')
     if hotels:
         cards = []
         for name, h in hotels.items():
             confirmed = h.get("status") == "confirmed"
             mark = badge("ok", "확정") if confirmed else badge("caution", "미확정")
-            link = ""
-            if h.get("lat"):
-                link = (f'<a class="btn btn-secondary" rel="nofollow noopener" '
-                        f'href="https://www.google.com/maps/search/?api=1&query='
-                        f'{h["lat"]},{h["lng"]}">{ic("map")}지도</a>')
+            href = maps_url(h.get("lat"), h.get("lng"), h.get("address") or "")
+            link = (f'<a class="btn btn-secondary" rel="nofollow noopener" '
+                    f'href="{esc(href)}">{ic("map")}지도</a>') if href else ""
+            addr = (f'<dt>주소</dt><dd>{esc(h["address"])}</dd>'
+                    if h.get("address") else "")
             cards.append(f"""<article class="card booking-card">
   <div class="booking-head"><span class="booking-name">{esc(name)}</span>{mark}</div>
   <dl><dt>체크인</dt><dd>{esc(r.checkin.isoformat())}</dd>
       <dt>체크아웃</dt><dd>{esc(r.checkout.isoformat())}</dd>
-      <dt>박수</dt><dd>{r.nights}박</dd></dl>
+      <dt>박수</dt><dd>{r.nights}박</dd>{addr}</dl>
   <div class="btn-row">{link}</div>
 </article>""")
         parts.append(f'<div class="grid grid-2">{"".join(cards)}</div>')

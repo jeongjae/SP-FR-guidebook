@@ -12,10 +12,11 @@
   "totalDistance": "공항 이동 약 30km",
   "fatigue": "4",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -25,12 +26,13 @@
       "end": "09:00",
       "name": "아침·냉장고·남은 음식 정리",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "유리병·냉장식품 처리 — 멀리 이동하지 않음",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "pack",
@@ -39,12 +41,13 @@
       "end": "10:00",
       "name": "최종 포장",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "전날 절반을 싸 뒀으므로 마무리만 — 액체·깨지기 쉬운 물품 분리",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "checkout",
@@ -53,12 +56,13 @@
       "end": "11:00",
       "name": "체크아웃·짐 인수",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
-      "summary": "숙소조건 확인 — 짐 보관 가능 여부는 전날까지 확인해 둔다",
+      "lat": null,
+      "lng": null,
+      "summary": "체크아웃 11:00까지. 짐은 전날 밤에 싼다 — 출국일 아침에 정리하지 않는다",
       "menu": null,
       "reservation": "체크아웃 조건·짐 보관 확인",
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "last-walk",
@@ -175,8 +179,8 @@
   "needsReview": [
     "CDG 터미널·공항 이동수단 확정",
     "détaxe 대상 물품·서류 정리",
-    "Paris 숙소 후보 확정",
-    "항공권 확정 (2026-08-13 반영): OZ502 CDG 19:10 → 인천 10/10 14:10"
+    "항공권 확정 (2026-08-13 반영): OZ502 CDG 19:10 → 인천 10/10 14:10",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일",
