@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""PC-06C Validation Script: Place Canonical SOT & Model Guard.
+"""PC-06C/PC-11 Validation Script: Place Canonical SOT & Model Guard.
 
 Checks:
 1. Canonical SOT Uniqueness: 30_Places/*.md integrity and 1 Place = 1 File.
 2. Place Overwrite Protection: Normal build does not rewrite or overwrite 30_Places/*.md.
-3. Duplicate Long-Form Detection: Region chapters do not duplicate full long-form articles (Barcelona, Girona, Nice, Aix, Luberon).
+3. Duplicate Long-Form Detection: Region chapters do not duplicate full long-form articles (Barcelona, Girona, Nice, Aix, Luberon, Avignon).
 4. 5-Layer Completeness: Facts, Strategy, Experience, Deep Guide, Practical.
 5. Trip Layer Separation: No hardcoded specific trip dates (e.g. '8월 30일', 'Day 2') in canonical Place bodies.
 6. Reference Integrity: Region <-> Place <-> Day stop links.
@@ -28,6 +28,7 @@ CHAPTER_GRO = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "05_Girona_
 CHAPTER_NICE = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "06_Nice_Cote_d_Azur_v2.0.md"
 CHAPTER_AIX = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "07_Aix_en_Provence_v2.0.md"
 CHAPTER_LUB = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "08_Luberon_Farmhouse_v2.0.md"
+CHAPTER_AV = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
 TIER_CSV = ROOT / "PLACE_TAXONOMY_AND_TIERS.csv"
 
 def hash_place_dir() -> dict[str, str]:
@@ -37,7 +38,7 @@ def hash_place_dir() -> dict[str, str]:
     return hashes
 
 def run_gate_validation():
-    print("=== PC-06C/PC-10 Place Canonical SOT & Model Guard Validation ===")
+    print("=== PC-06C/PC-11 Place Canonical SOT & Model Guard Validation ===")
     errors = []
     warnings = []
 
@@ -69,13 +70,14 @@ def run_gate_validation():
     else:
         print("   [OK] Place Overwrite Protection PASS: Normal build did not alter any 30_Places files.")
 
-    # 3. Duplicate Long-Form Detection for Barcelona, Girona, Nice, Aix & Luberon Places
-    print("3. Testing Duplicate Long-Form Detection (Barcelona, Girona, Nice, Aix & Luberon Places)...")
+    # 3. Duplicate Long-Form Detection for Barcelona, Girona, Nice, Aix, Luberon & Avignon Places
+    print("3. Testing Duplicate Long-Form Detection (Barcelona, Girona, Nice, Aix, Luberon & Avignon Places)...")
     bcn_text = CHAPTER_BCN.read_text(encoding="utf-8") if CHAPTER_BCN.exists() else ""
     gro_text = CHAPTER_GRO.read_text(encoding="utf-8") if CHAPTER_GRO.exists() else ""
     nice_text = CHAPTER_NICE.read_text(encoding="utf-8") if CHAPTER_NICE.exists() else ""
     aix_text = CHAPTER_AIX.read_text(encoding="utf-8") if CHAPTER_AIX.exists() else ""
     lub_text = CHAPTER_LUB.read_text(encoding="utf-8") if CHAPTER_LUB.exists() else ""
+    av_text = CHAPTER_AV.read_text(encoding="utf-8") if CHAPTER_AV.exists() else ""
     
     long_form_signatures_bcn = [
         "기둥이 나무처럼 갈라지는 이유",
@@ -120,6 +122,14 @@ def run_gate_validation():
         "피터 메일은 리슬쉬르라소르그에 대해",
         "주민들이 경작지 가까운 평지로 내려가면서"
     ]
+    long_form_signatures_av = [
+        "1309년 클레멘스 5세가 로마보다 교회 행정에 적합하다고 보아",
+        "목동이 거대한 바위를 들어 론 강에 던지려 하자",
+        "50.02km 수도교의 핵심 요소다",
+        "광장 북쪽 호텔 벽에 로마 포룸 신전의",
+        "두 개만 서 있어 '두 과부(les deux veuves)'라는 별명",
+        "1503년 『백시선』으로 유명한"
+    ]
     
     dups = []
     for sig in long_form_signatures_bcn:
@@ -137,6 +147,9 @@ def run_gate_validation():
     for sig in long_form_signatures_lub:
         if sig in lub_text:
             dups.append(f"[LUB] {sig}")
+    for sig in long_form_signatures_av:
+        if sig in av_text:
+            dups.append(f"[AV] {sig}")
             
     if dups:
         errors.append(f"Duplicate long-form text detected in Region chapters: {dups}")
@@ -145,7 +158,7 @@ def run_gate_validation():
         print("   [OK] Dedup PASS: Regional chapters contain only compact references with no duplicate long-forms.")
 
     # 4. Trip Layer Separation Check
-    print("4. Testing Trip Layer Separation (Barcelona, Girona, Nice, Aix & Luberon)...")
+    print("4. Testing Trip Layer Separation (Barcelona, Girona, Nice, Aix, Luberon & Avignon)...")
     trip_hardcode_pattern = re.compile(r"(8월\s*\d+일|9월\s*\d+일|10월\s*\d+일|Day\s*\d+에\s*방문|이번\s*일정에서는\s*Day)")
     check_slugs = [
         # Barcelona
@@ -162,7 +175,12 @@ def run_gate_validation():
         "saint-paul-de-vence", "grasse", "cassis", "calanques",
         # Luberon
         "lourmarin", "coustellet", "roussillon-sentier-des-ocres", "goult", "bonnieux", "gordes",
-        "village-des-bories", "abbaye-de-senanque", "menerbes", "oppede-le-vieux", "l-isle-sur-la-sorgue"
+        "village-des-bories", "abbaye-de-senanque", "menerbes", "oppede-le-vieux", "l-isle-sur-la-sorgue",
+        # Avignon / Pont du Gard / Arles / Alpilles
+        "palais-des-papes", "pont-saint-benezet", "rocher-des-doms", "les-halles", "pont-du-gard", "uzes",
+        "arles", "arenes-d-arles", "theatre-antique-arles", "place-du-forum-arles", "cloitre-saint-trophime",
+        "la-roquette", "fondation-vincent-van-gogh-arles", "les-baux-de-provence", "carrieres-des-lumieres",
+        "saint-remy-de-provence", "saint-paul-de-mausole", "glanum"
     ]
     trip_hardcodes = []
     for slug in check_slugs:
