@@ -19,7 +19,7 @@
   },
   "stops": [
     {
-      "id": "thursday-market",
+      "id": "place-richelme-place-des-precheurs",
       "order": 1,
       "start": "08:30",
       "end": "10:00",
@@ -61,7 +61,7 @@
       "optional": false
     },
     {
-      "id": "granet",
+      "id": "musee-granet",
       "order": 4,
       "start": "13:40",
       "end": "16:10",
@@ -105,7 +105,7 @@
   ],
   "legs": [
     {
-      "from": "thursday-market",
+      "from": "place-richelme-place-des-precheurs",
       "to": "vieil-aix",
       "mode": "walk",
       "duration": "5분",
@@ -124,7 +124,7 @@
     },
     {
       "from": "hotel-lunch",
-      "to": "granet",
+      "to": "musee-granet",
       "mode": "walk",
       "duration": "15분",
       "distance": "1.0km",
@@ -132,7 +132,7 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "granet",
+      "from": "musee-granet",
       "to": "mazarin",
       "mode": "walk",
       "duration": "5분",

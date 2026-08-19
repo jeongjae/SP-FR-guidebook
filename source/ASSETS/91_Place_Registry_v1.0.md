@@ -84,6 +84,7 @@
 | `rotonde` | Rotonde | spot | 선택 | Rotonde | chapters/aix/places.html | Rotonde | Fontaine de la Rotonde |
 | `saint-paul-de-vence` | Saint-Paul-de-Vence | spot | 우선 추천 | — | chapters/aix/places.html | Saint-Paul-de-Vence | Saint-Paul-de-Vence |
 | `place-richelme-place-des-precheurs` | 시장 — Place Richelme · Place des Prêcheurs | spot | 필수 | — | chapters/aix/places.html | 시장 — Place Richelme · Place des Prêcheurs | — |
+| `vieil-aix` | Vieil Aix — 구시가지 | spot | 필수 | — | chapters/aix/places.html | Vieil Aix — 구시가지 | fr:Aix-en-Provence |
 
 ## luberon (08)
 

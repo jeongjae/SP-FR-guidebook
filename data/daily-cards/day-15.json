@@ -19,7 +19,7 @@
   },
   "stops": [
     {
-      "id": "saturday-market",
+      "id": "place-richelme-place-des-precheurs",
       "order": 1,
       "start": "09:10",
       "end": "10:15",
@@ -33,7 +33,7 @@
       "optional": false
     },
     {
-      "id": "atelier-cezanne",
+      "id": "atelier-des-lauves",
       "order": 2,
       "start": "11:00",
       "end": "12:25",
@@ -91,8 +91,8 @@
   ],
   "legs": [
     {
-      "from": "saturday-market",
-      "to": "atelier-cezanne",
+      "from": "place-richelme-place-des-precheurs",
+      "to": "atelier-des-lauves",
       "mode": "walk",
       "duration": "20분 (오르막)",
       "distance": "1.3km",
@@ -100,7 +100,7 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "atelier-cezanne",
+      "from": "atelier-des-lauves",
       "to": "hotel-lunch",
       "mode": "walk",
       "duration": "18분",

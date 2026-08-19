@@ -33,7 +33,7 @@
       "optional": false
     },
     {
-      "id": "vieux-port",
+      "id": "vieux-port-marseille",
       "order": 2,
       "start": "09:45",
       "end": "10:30",
@@ -120,7 +120,7 @@
   "legs": [
     {
       "from": "aix-gare-routiere",
-      "to": "vieux-port",
+      "to": "vieux-port-marseille",
       "mode": "bus",
       "duration": null,
       "distance": null,
@@ -128,7 +128,7 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "vieux-port",
+      "from": "vieux-port-marseille",
       "to": "le-panier",
       "mode": "walk",
       "duration": "10분",
