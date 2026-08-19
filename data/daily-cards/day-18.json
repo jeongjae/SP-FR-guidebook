@@ -47,7 +47,7 @@
       "optional": false
     },
     {
-      "id": "bories",
+      "id": "village-des-bories",
       "order": 3,
       "start": "11:40",
       "end": "12:30",
@@ -115,7 +115,7 @@
     },
     {
       "from": "gordes",
-      "to": "bories",
+      "to": "village-des-bories",
       "mode": "car",
       "duration": "약 7분",
       "distance": "4.4km",
@@ -123,7 +123,7 @@
       "geometryStatus": "verified-cache"
     },
     {
-      "from": "bories",
+      "from": "village-des-bories",
       "to": "picnic",
       "mode": "walk",
       "duration": "0분",

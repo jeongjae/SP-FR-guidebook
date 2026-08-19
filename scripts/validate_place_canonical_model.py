@@ -4,7 +4,7 @@
 Checks:
 1. Canonical SOT Uniqueness: 30_Places/*.md integrity and 1 Place = 1 File.
 2. Place Overwrite Protection: Normal build does not rewrite or overwrite 30_Places/*.md.
-3. Duplicate Long-Form Detection: Region chapters do not duplicate full long-form articles (Barcelona, Girona, Nice, Aix).
+3. Duplicate Long-Form Detection: Region chapters do not duplicate full long-form articles (Barcelona, Girona, Nice, Aix, Luberon).
 4. 5-Layer Completeness: Facts, Strategy, Experience, Deep Guide, Practical.
 5. Trip Layer Separation: No hardcoded specific trip dates (e.g. '8월 30일', 'Day 2') in canonical Place bodies.
 6. Reference Integrity: Region <-> Place <-> Day stop links.
@@ -27,6 +27,7 @@ CHAPTER_BCN = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "04_Barcelo
 CHAPTER_GRO = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "05_Girona_Collioure_Emporda_v2.1.md"
 CHAPTER_NICE = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "06_Nice_Cote_d_Azur_v2.0.md"
 CHAPTER_AIX = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "07_Aix_en_Provence_v2.0.md"
+CHAPTER_LUB = ROOT / "source" / "CURRENT" / "20_Regional_Chapters" / "08_Luberon_Farmhouse_v2.0.md"
 TIER_CSV = ROOT / "PLACE_TAXONOMY_AND_TIERS.csv"
 
 def hash_place_dir() -> dict[str, str]:
@@ -36,14 +37,14 @@ def hash_place_dir() -> dict[str, str]:
     return hashes
 
 def run_gate_validation():
-    print("=== PC-06C/PC-09 Place Canonical SOT & Model Guard Validation ===")
+    print("=== PC-06C/PC-10 Place Canonical SOT & Model Guard Validation ===")
     errors = []
     warnings = []
 
     # 1. Check 30_Places/*.md
     place_files = list(PLACE_DIR.glob("*.md"))
     print(f"1. Canonical Place Files in 30_Places: {len(place_files)} files found.")
-    if len(place_files) < 90:
+    if len(place_files) < 95:
         errors.append(f"Insufficient place files in 30_Places: found {len(place_files)}")
 
     # 2. Place Overwrite Protection Test
@@ -68,12 +69,13 @@ def run_gate_validation():
     else:
         print("   [OK] Place Overwrite Protection PASS: Normal build did not alter any 30_Places files.")
 
-    # 3. Duplicate Long-Form Detection for Barcelona, Girona, Nice & Aix Places
-    print("3. Testing Duplicate Long-Form Detection (Barcelona, Girona, Nice & Aix Places)...")
+    # 3. Duplicate Long-Form Detection for Barcelona, Girona, Nice, Aix & Luberon Places
+    print("3. Testing Duplicate Long-Form Detection (Barcelona, Girona, Nice, Aix & Luberon Places)...")
     bcn_text = CHAPTER_BCN.read_text(encoding="utf-8") if CHAPTER_BCN.exists() else ""
     gro_text = CHAPTER_GRO.read_text(encoding="utf-8") if CHAPTER_GRO.exists() else ""
     nice_text = CHAPTER_NICE.read_text(encoding="utf-8") if CHAPTER_NICE.exists() else ""
     aix_text = CHAPTER_AIX.read_text(encoding="utf-8") if CHAPTER_AIX.exists() else ""
+    lub_text = CHAPTER_LUB.read_text(encoding="utf-8") if CHAPTER_LUB.exists() else ""
     
     long_form_signatures_bcn = [
         "기둥이 나무처럼 갈라지는 이유",
@@ -109,6 +111,15 @@ def run_gate_validation():
         "비베뮈 고원은 가족 저택 너머로 멀리 뻗어 있다",
         "에메 마그다. 판화가이자 화상이었다"
     ]
+    long_form_signatures_lub = [
+        "로랑비베르 재단(뤼르마랭 성)의 입주자였다",
+        "대장장이든 마을 골동품상이든 가리지 않고 어울리는",
+        "계단식으로 쌓아 올린 석조 마을의 형태는 안에 있으면",
+        "가장 인상적인 것은 길 위에서 보게 되는 점토 색의 다양성",
+        "1150년 기랑 드 시미안이 준 길이 1km",
+        "피터 메일은 리슬쉬르라소르그에 대해",
+        "주민들이 경작지 가까운 평지로 내려가면서"
+    ]
     
     dups = []
     for sig in long_form_signatures_bcn:
@@ -123,6 +134,9 @@ def run_gate_validation():
     for sig in long_form_signatures_aix:
         if sig in aix_text:
             dups.append(f"[AIX] {sig}")
+    for sig in long_form_signatures_lub:
+        if sig in lub_text:
+            dups.append(f"[LUB] {sig}")
             
     if dups:
         errors.append(f"Duplicate long-form text detected in Region chapters: {dups}")
@@ -131,7 +145,7 @@ def run_gate_validation():
         print("   [OK] Dedup PASS: Regional chapters contain only compact references with no duplicate long-forms.")
 
     # 4. Trip Layer Separation Check
-    print("4. Testing Trip Layer Separation (Barcelona, Girona, Nice & Aix)...")
+    print("4. Testing Trip Layer Separation (Barcelona, Girona, Nice, Aix & Luberon)...")
     trip_hardcode_pattern = re.compile(r"(8월\s*\d+일|9월\s*\d+일|10월\s*\d+일|Day\s*\d+에\s*방문|이번\s*일정에서는\s*Day)")
     check_slugs = [
         # Barcelona
@@ -145,7 +159,10 @@ def run_gate_validation():
         "cours-mirabeau", "vieil-aix", "atelier-des-lauves", "montagne-sainte-victoire-terrain-des-peintres",
         "place-richelme-place-des-precheurs", "musee-granet", "bastide-du-jas-de-bouffan", "carrieres-de-bibemus", "rotonde",
         "vieux-port-marseille", "le-panier", "mucem", "fort-saint-jean", "notre-dame-de-la-garde", "marseille",
-        "saint-paul-de-vence", "grasse", "cassis", "calanques"
+        "saint-paul-de-vence", "grasse", "cassis", "calanques",
+        # Luberon
+        "lourmarin", "coustellet", "roussillon-sentier-des-ocres", "goult", "bonnieux", "gordes",
+        "village-des-bories", "abbaye-de-senanque", "menerbes", "oppede-le-vieux", "l-isle-sur-la-sorgue"
     ]
     trip_hardcodes = []
     for slug in check_slugs:
@@ -167,8 +184,10 @@ def run_gate_validation():
         ddata = json.loads(dp.read_text(encoding="utf-8"))
         for stop in ddata.get("stops", []):
             sid = stop.get("id")
-            if sid and sid in check_slugs and not (PLACE_DIR / f"{sid}.md").exists():
-                missing_refs.append((dp.stem, sid))
+            pref = stop.get("place_ref")
+            target_slug = pref if pref else sid
+            if target_slug and target_slug in check_slugs and not (PLACE_DIR / f"{target_slug}.md").exists():
+                missing_refs.append((dp.stem, target_slug))
     if missing_refs:
         errors.append(f"Missing referenced place files: {missing_refs}")
         print(f"   [FAIL] Missing referenced place files: {missing_refs}")
