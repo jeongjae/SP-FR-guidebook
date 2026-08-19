@@ -72,7 +72,8 @@
       "summary": "모더니즘 컬렉션과 Rusiñol의 집·작업실",
       "menu": null,
       "reservation": "화요일 운영·통합권 재확인",
-      "optional": false
+      "optional": false,
+      "place_ref": "cau-ferrat"
     },
     {
       "id": "la-zorra",

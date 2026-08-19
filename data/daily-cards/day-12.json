@@ -59,7 +59,8 @@
       "summary": "Fondation Maeght는 정원·안뜰 중심 — 압박 시 정원만",
       "menu": null,
       "reservation": "Maeght 운영·요금 재확인 (원고 pending)",
-      "optional": false
+      "optional": false,
+      "place_ref": "saint-paul-de-vence"
     },
     {
       "id": "grasse",

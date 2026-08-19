@@ -58,7 +58,8 @@
       "summary": "무료 엘리베이터 5분 또는 계단 30분 — 늦은 오후가 절충점",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "colline-du-chateau"
     },
     {
       "id": "port-lympia",
@@ -72,7 +73,8 @@
       "summary": "피로 시 생략 — 우선 삭제 대상",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": true,
+      "place_ref": "vieux-nice"
     },
     {
       "id": "nice-stay-return",
