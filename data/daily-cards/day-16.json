@@ -25,12 +25,13 @@
       "end": "08:40",
       "name": "Aix 체크아웃·출발",
       "category": "hotel",
-      "lat": 43.528998,
-      "lng": 5.440842,
-      "summary": "냉장고 비우기, 차량에 전 짐 — 귀중품은 몸에 휴대",
+      "lat": null,
+      "lng": null,
+      "summary": "체크아웃 14:00까지. 냉장고 비우기, 차량에 전 짐 — 귀중품은 몸에 휴대",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
     },
     {
       "id": "lourmarin",

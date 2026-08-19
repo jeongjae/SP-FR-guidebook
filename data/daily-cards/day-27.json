@@ -12,10 +12,11 @@
   "totalDistance": "TGV 약 465km + 택시",
   "fatigue": "3",
   "hotel": {
-    "name": "Pepper & Paper (후보)",
-    "lat": 48.83966,
-    "lng": 2.34644,
-    "status": "candidate"
+    "name": "78 Rue de Lourmel (파리 15구)",
+    "lat": null,
+    "lng": null,
+    "status": "confirmed",
+    "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
@@ -53,12 +54,13 @@
       "end": "17:00",
       "name": "숙소 이동·체크인·객실 점검",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "도착 후 45–75분 택시 — 주방·세탁기·냉장고·엘리베이터·쓰레기 배출 확인",
       "menu": null,
-      "reservation": "Paris 숙소 후보 확정 필요",
-      "optional": false
+      "reservation": "예약완료 — 체크인 9/24 15:00 · 체크아웃 10/9 11:00",
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     },
     {
       "id": "first-grocery",
@@ -81,12 +83,13 @@
       "end": null,
       "name": "숙소식 또는 가까운 식당",
       "category": "hotel",
-      "lat": 48.83966,
-      "lng": 2.34644,
+      "lat": null,
+      "lng": null,
       "summary": "긴 이동일 — 유명식당 예약 금지, 대형 일정 없음",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
     }
   ],
   "legs": [
@@ -151,9 +154,9 @@
   },
   "needsReview": [
     "TGV 9/24 편성·시각 확정",
-    "Paris 숙소 후보(Pepper & Paper) 확정 — 16박의 중심",
     "체크인 가능 시각 확인",
-    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884"
+    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884",
+    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-27",

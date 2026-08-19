@@ -137,6 +137,9 @@ class Stop:
     menu: str | None = None
     reservation: str | None = None
     optional: bool = False
+    # 좌표를 모르지만 주소는 확정인 곳이 있다 (확정 숙소 등).
+    # 틀린 좌표를 남기느니 주소로 지도를 연다.
+    address: str | None = None
     place: Place | None = None  # 장소 페이지가 있는 stop 만 연결된다
 
     @property
@@ -483,6 +486,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 lat=s.get("lat"), lng=s.get("lng"), summary=s.get("summary") or "",
                 menu=s.get("menu"), reservation=s.get("reservation"),
                 optional=bool(s.get("optional")),
+                address=s.get("address"),
             ) for s in j.get("stops", [])],
             legs=[Leg(
                 frm=l["from"], to=l["to"], mode=l.get("mode", "walk"),
