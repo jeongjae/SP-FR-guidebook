@@ -74,7 +74,7 @@
  ➔ [Stop 1] Marché de la Croix-Rousse 화요 로컬 시장 탐방 (08:30~10:00)
  ➔ [Stop 2] Le Mur des Canuts (유럽 최대 트롱프뢰유 벽화) & 실크 직공 트라불 (10:00~12:00, 2시간)
     * 카뉘(Canuts) 작업실 거리 ➔ Cour des Voraces 6층 석조 계단 트라불을 통해 완만하게 하산
- ➔ [메트로 C+B선 20분] ➔ [Stop 3] Les Halles de Lyon Paul Bocuse & 미식 점심 (12:30~14:30)
+ ➔ [메트로 C선 ➔ Hôtel de Ville ➔ 버스 C3 직통 20분] ➔ [Stop 3] Les Halles de Lyon Paul Bocuse & 미식 점심 (12:30~14:30)
     * Mère Richard 생 마르슬랭 치즈, Sibilia 샤퀴테리 탐방 & 시장 내 굴/해산물 점심
  ➔ [도보 18분] ➔ [Stop 4] Parc de la Tête d'Or (황금머리 공원 호수·장미원 산책, 15:00~17:30)
  ➔ [메트로 B+D선 20분] ➔ [Stop 5] 숙소 복귀 & 익일 Annecy 당일치기 준비 (18:00~20:00)

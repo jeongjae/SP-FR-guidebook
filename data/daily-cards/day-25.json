@@ -57,7 +57,7 @@
       "category": "food",
       "lat": 45.7622,
       "lng": 4.8519,
-      "summary": "메트로 C+B선으로 이동 ➔ 폴 보퀴즈 미식 실내시장 내 전문 레스토랑/해산물 바에서 즐기는 본격적인 2차 리옹 미식 점심 식사 (1시간 45분)",
+      "summary": "메트로 C선(Hénon/Croix-Rousse ➔ Hôtel de Ville) ➔ 버스 C3 환승(Halles Paul Bocuse 정류장 직통 하차, 약 20~25분 소요) ➔ 폴 보퀴즈 미식 실내시장 내 전문 레스토랑/해산물 바에서 즐기는 본격적인 2차 리옹 미식 점심 식사 (1시간 45분)",
       "menu": "신선 생굴(Huîtres), 켄넬 드 브로셰(Quenelle de brochet), 샤퀴테리 플래터, 화이트 와인(샤블리)",
       "reservation": "시장 내 식당 현장 착석 (12:30)",
       "optional": false,
@@ -122,8 +122,8 @@
     {
       "from": "maison-des-canuts",
       "to": "halles-gastronomy",
-      "mode": "metro",
-      "duration": "메트로 C+B선 약 20분 (12:00~12:30 이동 및 착석)",
+      "mode": "bus",
+      "duration": "Metro C ➔ Hôtel de Ville ➔ Bus C3 직통 약 20~25분 (12:00~12:25 이동 및 착석)",
       "distance": "3.0km",
       "line": null,
       "geometryStatus": "coordinate-line"
@@ -157,7 +157,7 @@
     }
   ],
   "transport": [
-    "TCL 메트로 (Metro D ➔ Metro C선 실크 언덕 상행, Metro C ➔ Metro B선 Halles 이동)",
+    "TCL 대중교통 (Metro D ➔ Metro C선 실크 언덕 상행, Metro C ➔ Hôtel de Ville ➔ Bus C3 직통 Halles 이동, Metro B ➔ Metro D 숙소 복귀)",
     "크루아루스 실크 공방 및 테트도르 공원 도보"
   ],
   "food": [
