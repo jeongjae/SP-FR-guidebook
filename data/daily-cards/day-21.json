@@ -6,11 +6,11 @@
   "title": "Uzès와 Pont du Gard",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "07:15",
+  "startTime": "08:30",
   "endTime": "20:00",
-  "totalDuration": "12시간 45분",
-  "totalDistance": "약 84km · 차량 경로",
-  "fatigue": "4",
+  "totalDuration": "11시간 30분",
+  "totalDistance": "약 84km · 차량 이동",
+  "fatigue": "3",
   "hotel": {
     "name": "La Terrasse du Clocher (후보)",
     "lat": 43.94993,
@@ -21,58 +21,77 @@
     {
       "id": "avignon-depart",
       "order": 1,
-      "start": "07:15",
-      "end": "08:00",
-      "name": "숙소 아침·출발",
+      "start": "08:30",
+      "end": "09:15",
+      "name": "Avignon 숙소 출발 ➔ Uzès 이동",
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "시장가방·물·모자, 차량에 아무것도 보이지 않게",
+      "summary": "주차장에서 출차 후 D981 도로를 통해 위제스로 이동 (40.7km, 약 45분)",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "uzes",
       "order": 2,
-      "start": "09:00",
-      "end": "13:00",
-      "name": "Uzès 구시가지·점심",
+      "start": "09:30",
+      "end": "12:15",
+      "name": "Uzès 구시가지 & 에르브 광장",
       "category": "sight",
-      "lat": 44.0115423,
-      "lng": 4.4187698,
-      "summary": "외곽주차 후 도보 — Place aux Herbes 아케이드→Duché 외관→Tour Fenestrelle",
-      "menu": "비스트로 금요일 영업 재확인",
-      "reservation": "외곽 관리주차장 확인",
-      "optional": false
+      "lat": 44.0122,
+      "lng": 4.4197,
+      "summary": "프랑스 최초의 공작령 도시. Place aux Herbes 아치 회랑 광장, 공작성(Duché d'Uzès) 외관, 페네스트렐 탑(Tour Fenestrelle) 조망 (2시간 45분)",
+      "menu": "프로방스 빵, 에스프레소",
+      "reservation": "주차: Parking Cordeliers (Primary) / Parking Gide (Backup)",
+      "optional": false,
+      "place_ref": "uzes"
+    },
+    {
+      "id": "uzes-lunch",
+      "order": 3,
+      "start": "12:15",
+      "end": "13:30",
+      "name": "위제스 광장 테라스 점심",
+      "category": "food",
+      "lat": 44.0125,
+      "lng": 4.4201,
+      "summary": "Place aux Herbes 광장 플라타너스 그늘 아래 테라스 레스토랑 점심",
+      "menu": "타르틴, 샐러드 니스와즈, 로컬 가르 와인",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "pont-du-gard",
-      "order": 3,
-      "start": "13:45",
-      "end": "17:15",
-      "name": "Pont du Gard",
+      "order": 4,
+      "start": "14:15",
+      "end": "17:00",
+      "name": "Pont du Gard (퐁 뒤 가르 수로교)",
       "category": "sight",
       "lat": 43.9475,
-      "lng": 4.53502,
-      "summary": "좌안 전망→다리 하부·상류/하류 시점→우안 또는 Mémoires de Garrigue 선택, 강변 카페 휴식",
+      "lng": 4.535,
+      "summary": "기원전 1세기 고대 로마 3층 수로교(높이 49m). 좌안(Rive Gauche) 대형 주차장 이용 ➔ 박물관 관람 ➔ 수로교 도보 횡단 ➔ 가르동 강변 자갈밭 전경 조망 (2시간 45분). [주의] 그늘 부족, 모자/생수 필수",
       "menu": null,
-      "reservation": "주차·운영 재확인",
-      "optional": false
+      "reservation": "주차/입장권 (€9.50/차량 포함) / Left Bank (Rive Gauche) 주차장",
+      "optional": false,
+      "place_ref": "pont-du-gard"
     },
     {
       "id": "avignon-return",
-      "order": 4,
-      "start": "18:15",
+      "order": 5,
+      "start": "18:00",
       "end": "20:00",
-      "name": "Avignon 귀환·저녁",
+      "name": "Avignon 복귀 & 저녁",
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "JEP 주말 교통 혼잡 고려 — 저녁은 숙소식 또는 예약된 곳",
+      "summary": "D907 도로를 통해 아비뇽으로 복귀 (30km, 40분). 차량 안전 주차 후 저녁 식사",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -81,31 +100,33 @@
       "to": "uzes",
       "mode": "car",
       "duration": "약 45분",
-      "distance": "40.7km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "distance": "40.7km"
     },
     {
       "from": "uzes",
+      "to": "uzes-lunch",
+      "mode": "walk",
+      "duration": "2분",
+      "distance": "0.1km"
+    },
+    {
+      "from": "uzes-lunch",
       "to": "pont-du-gard",
       "mode": "car",
-      "duration": "약 21분",
-      "distance": "13.8km",
-      "line": "시장 구매품 은폐",
-      "geometryStatus": "verified-cache"
+      "duration": "약 20분",
+      "distance": "14.0km"
     },
     {
       "from": "pont-du-gard",
       "to": "avignon-return",
       "mode": "car",
-      "duration": "약 38분",
-      "distance": "29.5km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "duration": "약 40분",
+      "distance": "29.5km"
     }
   ],
   "transport": [
-    "렌터카 · 외곽주차 우선"
+    "렌터카 (Avignon ↔ Uzès ↔ Pont du Gard ↔ Avignon)",
+    "외곽 전용 주차장 (Parking Cordeliers / Pont du Gard Rive Gauche)"
   ],
   "food": [
     "Uzès 가벼운 점심",
@@ -116,7 +137,7 @@
     "금요일 — 토요시장 없음 전제",
     "폭우·홍수 변수 주의"
   ],
-  "backup": "악천후 시 Uzès 단축·Pont 축소, 박물관 또는 일몰 택1",
+  "backup": "폭염 또는 악천후 시 Pont du Gard 야외 체류를 60분으로 단축하고 실내 박물관 중심 관람 후 아비뇽 조기 복귀",
   "map": {
     "zoom": 11,
     "center": [
@@ -126,9 +147,8 @@
     "routeCache": "routes/day-21-driving-osrm.json"
   },
   "needsReview": [
-    "Avignon 숙소 후보 승인",
-    "Uzès 외곽주차장·비스트로 금요일 영업 확인",
-    "Pont du Gard 운영·주차 재확인"
+    "Pont du Gard 좌안(Rive Gauche) 주차장 네비게이션 설정",
+    "위제스 Parking Cordeliers 주차 잔여면 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-21",

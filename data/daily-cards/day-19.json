@@ -6,10 +6,10 @@
   "title": "Luberon 체크아웃→Avignon 정착",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:00",
-  "endTime": "21:00",
-  "totalDuration": "13시간",
-  "totalDistance": "약 30km · 차량 경로",
+  "startTime": "09:30",
+  "endTime": "20:30",
+  "totalDuration": "11시간",
+  "totalDistance": "약 35km · 차량 이동",
   "fatigue": "3",
   "hotel": {
     "name": "La Terrasse du Clocher (후보)",
@@ -21,55 +21,58 @@
     {
       "id": "farm-checkout",
       "order": 1,
-      "start": "08:00",
-      "end": "11:15",
-      "name": "농가 아침·체크아웃",
+      "start": "09:30",
+      "end": "10:30",
+      "name": "농가 숙소 체크아웃 & 출발",
       "category": "hotel",
       "lat": 43.87088,
       "lng": 5.12202,
-      "summary": "짐·냉장식품·세탁·쓰레기 정리, 10:45 체크아웃 — 중간 관광 추가 금지",
+      "summary": "Domaine des Peyre 체크아웃 후 차량 짐 적재. D900/N100 도로를 통해 아비뇽으로 이동 (35km, 약 40분)",
       "menu": null,
-      "reservation": "3박 변경조건·보증금 확인",
-      "optional": false
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "avignon-parking-lunch",
+      "order": 2,
+      "start": "11:30",
+      "end": "14:00",
+      "name": "Avignon 주차 & 구시가지 점심",
+      "category": "food",
+      "lat": 43.9493,
+      "lng": 4.8061,
+      "summary": "Parking des Halles 또는 Parking Palais des Papes 관리 지하주차장 입차 후 레 알 인근 비스트로 점심",
+      "menu": "프로방스 타르트, 샐러드, 에스프레소",
+      "reservation": "주차: Parking des Halles (Primary) / Parking Palais des Papes (Backup)",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "avignon-checkin",
-      "order": 2,
-      "start": "12:30",
-      "end": "15:00",
-      "name": "Avignon 점심·체크인·주차",
+      "order": 3,
+      "start": "14:30",
+      "end": "16:00",
+      "name": "Avignon 숙소 체크인",
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "숙소 주차지침 먼저 — 성벽 안 무작정 진입 금지, 재출차·21일 반납동선 확인",
+      "summary": "숙소 체크인 (15:00부터 가능). 짐 하역 및 객실 정리",
       "menu": null,
-      "reservation": "Avignon 숙소 후보 확정 필요",
-      "optional": false
+      "reservation": "숙소 예약/후보 (La Terrasse du Clocher 인근)",
+      "optional": false,
+      "place_ref": null
     },
     {
-      "id": "grocery",
-      "order": 3,
-      "start": "15:15",
-      "end": "16:15",
-      "name": "숙소 생활권 장보기",
-      "category": "shopping",
-      "lat": 43.94993,
-      "lng": 4.81302,
-      "summary": "다음 날 Halles를 보므로 소량만",
-      "menu": "물·빵·과일·아침재료",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "teinturiers",
+      "id": "teinturiers-walls",
       "order": 4,
       "start": "16:30",
-      "end": "17:45",
-      "name": "Teinturiers 산책",
+      "end": "18:30",
+      "name": "Rue des Teinturiers & 성벽 오리엔테이션",
       "category": "sight",
-      "lat": 43.9451965,
-      "lng": 4.8129731,
-      "summary": "Porte Saint-Michel→Corps Saints→Rue des Teinturiers — 남동부 생활권과 귀가로 파악",
+      "lat": 43.9458,
+      "lng": 4.8133,
+      "summary": "물레방아가 돌아가는 염색공의 거리(Rue des Teinturiers), 시계탑 광장(Place de l'Horloge), 14세기 아비뇽 석조 성벽 둘레길 산책",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -78,59 +81,52 @@
     {
       "id": "avignon-return",
       "order": 5,
-      "start": "19:30",
-      "end": "21:00",
-      "name": "첫 저녁·복귀",
+      "start": "19:00",
+      "end": "20:30",
+      "name": "아비뇽 첫 저녁 & 휴식",
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "Fou de Fafa 또는 Les Cocottes Saint-Louis, 이후 9/18 Palais 티켓·주차 최종 확인",
-      "menu": null,
-      "reservation": "저녁 식당 예약",
-      "optional": false
+      "summary": "구시가지 테라스 저녁 식사 후 숙소 귀환",
+      "menu": "프로방스식 양고기 구이, 로컬 론 와인(AOC Côtes du Rhône)",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
     {
       "from": "farm-checkout",
-      "to": "avignon-checkin",
+      "to": "avignon-parking-lunch",
       "mode": "car",
-      "duration": "약 37분",
-      "distance": "30.1km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "duration": "약 40분",
+      "distance": "35.0km"
+    },
+    {
+      "from": "avignon-parking-lunch",
+      "to": "avignon-checkin",
+      "mode": "walk",
+      "duration": "8분",
+      "distance": "0.5km"
     },
     {
       "from": "avignon-checkin",
-      "to": "grocery",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "grocery",
-      "to": "teinturiers",
+      "to": "teinturiers-walls",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.6km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.6km"
     },
     {
-      "from": "teinturiers",
+      "from": "teinturiers-walls",
       "to": "avignon-return",
       "mode": "walk",
-      "duration": "8분",
-      "distance": "0.6km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "10분",
+      "distance": "0.7km"
     }
   ],
   "transport": [
-    "렌터카 (도착 후 주차 고정)",
-    "도보"
+    "렌터카 (Domaine des Peyre ➔ Avignon 성벽 주차장)",
+    "아비뇽 시내 도보"
   ],
   "food": [
     "가벼운 점심 (체크인 지연 흡수)",
@@ -141,7 +137,7 @@
     "주차 출입시간·차량 높이 확인",
     "L'Isle 목요시장은 기본안 제외"
   ],
-  "backup": "피로 시 성벽·Rhône 산책 삭제, 숙소 휴식 전환",
+  "backup": "피로 시 성벽 외곽 산책을 생략하고 숙소권 카페 휴식 위주 오리엔테이션 진행",
   "map": {
     "zoom": 11,
     "center": [
@@ -151,9 +147,8 @@
     "routeCache": "routes/day-19-driving-osrm.json"
   },
   "needsReview": [
-    "Avignon 숙소 후보(La Terrasse du Clocher) 승인·주차지침 확인",
-    "농가 체크아웃 조건 확인",
-    "저녁 식당 예약"
+    "Avignon 성벽 내 차량 진입 제한 및 Parking des Halles 입차 확인",
+    "숙소 체크인 시각(15:00) 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-19",

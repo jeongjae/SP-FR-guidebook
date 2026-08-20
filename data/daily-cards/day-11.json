@@ -6,10 +6,10 @@
   "title": "생활·회복·선택문화",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 4km · 도보",
+  "startTime": "09:00",
+  "endTime": "19:30",
+  "totalDuration": "10시간 30분",
+  "totalDistance": "약 4km · 도보/트램",
   "fatigue": "2",
   "hotel": {
     "name": "Palais ALZIRA · 12 Rue Verdi",
@@ -21,94 +21,112 @@
     {
       "id": "liberation-market",
       "order": 1,
-      "start": null,
-      "end": null,
+      "start": "09:30",
+      "end": "11:30",
       "name": "Marché de la Libération",
       "category": "shopping",
-      "lat": 43.70841,
-      "lng": 7.26133,
-      "summary": "도시의 부엌 — 관광 시장이 아닌 생활 시장",
-      "menu": "과일·채소·가정식 재료",
+      "lat": 43.7102,
+      "lng": 7.2625,
+      "summary": "화요일 대형 로컬 시장. 니스 시민들의 일상 식재료·치즈·과일 탐방 및 Gare du Sud 카페",
+      "menu": "프로방스 과일, 에스프레소",
       "reservation": null,
       "optional": false,
       "place_ref": "marche-de-la-liberation"
     },
     {
-      "id": "charles-negre",
+      "id": "liberation-lunch",
       "order": 2,
-      "start": null,
-      "end": null,
+      "start": "12:00",
+      "end": "13:30",
+      "name": "리베라시옹 점심",
+      "category": "food",
+      "lat": 43.7095,
+      "lng": 7.2631,
+      "summary": "리베라시옹 시장 인근 비스트로 점심 또는 숙소 간단식",
+      "menu": "파니니, 니스식 샐러드",
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "charles-negre",
+      "order": 3,
+      "start": "14:30",
+      "end": "16:00",
       "name": "사진미술관 Charles Nègre",
       "category": "culture",
-      "lat": 43.6959151,
-      "lng": 7.2745989,
-      "summary": "화요일 유일의 선택 문화시설 (Matisse·Chagall은 화요일 휴관)",
+      "lat": 43.6975,
+      "lng": 7.2736,
+      "summary": "구시가지 입구의 사진 특화 미술관 기획전 관람. 피로 시 생략 가능",
       "menu": null,
-      "reservation": "운영·요금 재확인",
+      "reservation": "현장 발권 (€5)",
       "optional": true,
-      "place_ref": "vieux-nice"
+      "place_ref": null
     },
     {
       "id": "promenade",
-      "order": 3,
-      "start": null,
-      "end": null,
-      "name": "세탁 후 Promenade 산책",
+      "order": 4,
+      "start": "16:30",
+      "end": "18:00",
+      "name": "Promenade des Anglais 산책",
       "category": "sight",
-      "lat": 43.695,
-      "lng": 7.257,
-      "summary": "세탁·렌터카 준비 2시간을 보호한다",
+      "lat": 43.6944,
+      "lng": 7.2652,
+      "summary": "숙소 세탁 후 프롬나드 해변 벤치 휴식 및 카페",
       "menu": null,
       "reservation": null,
-      "optional": true,
+      "optional": false,
       "place_ref": "promenade-des-anglais"
     },
     {
       "id": "nice-stay-return",
-      "order": 4,
-      "start": null,
-      "end": null,
-      "name": "숙소 — 렌터카 준비",
+      "order": 5,
+      "start": "18:30",
+      "end": "19:30",
+      "name": "숙소 — 익일 렌터카 준비 & 휴식",
       "category": "hotel",
-      "lat": 43.6996749,
-      "lng": 7.2608829,
-      "summary": "다음 날 NCE T2 인수 서류·짐 정리, 새로운 것을 넣지 않는다",
+      "lat": 43.7002,
+      "lng": 7.2628,
+      "summary": "12 Rue Verdi 복귀, 9/9 09:00 렌터카 인수 서류/동선 확인, 조기 취침",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
     {
       "from": "liberation-market",
+      "to": "liberation-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km"
+    },
+    {
+      "from": "liberation-lunch",
       "to": "charles-negre",
       "mode": "walk",
-      "duration": "20분",
-      "distance": "1.6km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "15분",
+      "distance": "1.4km"
     },
     {
       "from": "charles-negre",
       "to": "promenade",
       "mode": "walk",
-      "duration": "20분",
-      "distance": "1.4km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "10분",
+      "distance": "0.6km"
     },
     {
       "from": "promenade",
       "to": "nice-stay-return",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.7km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.7km"
     }
   ],
   "transport": [
-    "도보 · 느린 시작"
+    "도보",
+    "트램 1호선 (선택)"
   ],
   "food": [
     "Libération 시장 조달·숙소식"
@@ -118,7 +136,7 @@
     "화요일 휴관 대비 완료",
     "렌터카 준비 2시간 보호"
   ],
-  "backup": "피로 시 사진미술관 삭제, 숙소생활·카페만",
+  "backup": "피로 시 사진미술관을 생략하고 숙소 세탁·휴식 및 프롬나드 카페 중심 생활일 유지",
   "map": {
     "zoom": 14,
     "center": [

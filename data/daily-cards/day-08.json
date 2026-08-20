@@ -7,9 +7,9 @@
   "sourceStatus": "candidate-latest-needs-review",
   "prototypeType": null,
   "startTime": "08:30",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 3km · 도보",
+  "endTime": "21:00",
+  "totalDuration": "12시간 30분",
+  "totalDistance": "약 5.5km · 도보",
   "fatigue": "3",
   "hotel": {
     "name": "Palais ALZIRA · 12 Rue Verdi",
@@ -22,73 +22,106 @@
       "id": "cours-saleya",
       "order": 1,
       "start": "08:30",
-      "end": null,
+      "end": "10:00",
       "name": "Cours Saleya 시장",
       "category": "shopping",
-      "lat": 43.69518,
-      "lng": 7.2758,
-      "summary": "시장에서 사고, 밥은 골목에서 — 광장 대형 테라스 회피",
-      "menu": "꽃·농산물·치즈 (체류 45–60분)",
+      "lat": 43.6958,
+      "lng": 7.2753,
+      "summary": "토요 꽃·청과·식품 시장. 신선한 과일과 즉석 소카(Socca) 맛보기",
+      "menu": "소카(Socca), 신선 무화과, 에스프레소",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "cours-saleya"
     },
     {
       "id": "vieux-nice",
       "order": 2,
-      "start": null,
-      "end": null,
+      "start": "10:15",
+      "end": "12:15",
       "name": "Vieux Nice 구시가지",
       "category": "sight",
-      "lat": 43.6971832,
-      "lng": 7.2762796,
-      "summary": "Rue Droite→로세티 광장, 파사드 상부의 트롱프뢰유는 위를 보라",
+      "lat": 43.6975,
+      "lng": 7.2783,
+      "summary": "사보이 공국 시대의 바로크 골목, 생레파라트 대성당, Fenocchio 젤라토",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "vieux-nice"
+    },
+    {
+      "id": "vieux-nice-lunch",
+      "order": 3,
+      "start": "12:30",
+      "end": "14:00",
+      "name": "구시가지 점심 — 니스와즈 요리",
+      "category": "food",
+      "lat": 43.6971,
+      "lng": 7.2778,
+      "summary": "Chez Acchiardo 또는 Lou Balico 인근의 정통 니스와즈 가정식 점심",
+      "menu": "살라드 니스와즈, 다우브(소고기 스튜), 팍시(Farcis)",
+      "reservation": "현장 방문 또는 점심 예약 권장",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "castle-hill",
-      "order": 3,
-      "start": null,
-      "end": null,
+      "order": 4,
+      "start": "14:30",
+      "end": "16:30",
       "name": "Colline du Château",
       "category": "sight",
-      "lat": 43.69692,
-      "lng": 7.28077,
-      "summary": "무료 엘리베이터 5분 또는 계단 30분 — 늦은 오후가 절충점",
+      "lat": 43.6953,
+      "lng": 7.2797,
+      "summary": "엘리베이터(Ascenseur) 탑승 상행, Baie des Anges와 니스 전경 조망, 인공 폭포 산책",
       "menu": null,
-      "reservation": null,
+      "reservation": "무료 입장 (엘리베이터 무료 운영)",
       "optional": false,
       "place_ref": "colline-du-chateau"
     },
     {
-      "id": "port-lympia",
-      "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Port 산책",
+      "id": "promenade",
+      "order": 5,
+      "start": "16:45",
+      "end": "18:00",
+      "name": "Promenade des Anglais",
       "category": "sight",
-      "lat": 43.6941576,
-      "lng": 7.2845515,
-      "summary": "피로 시 생략 — 우선 삭제 대상",
+      "lat": 43.6944,
+      "lng": 7.2652,
+      "summary": "Quai des États-Unis에서 프롬나드로 이어지는 지중해 해안 산책",
+      "menu": null,
+      "reservation": null,
+      "optional": false,
+      "place_ref": "promenade-des-anglais"
+    },
+    {
+      "id": "port-lympia",
+      "order": 6,
+      "start": "18:30",
+      "end": "20:00",
+      "name": "Port Lympia 산책 & 저녁",
+      "category": "sight",
+      "lat": 43.6978,
+      "lng": 7.2861,
+      "summary": "항구의 전통 목선(Pointu)과 요트 풍경, 가벼운 저녁 식사. 피로 시 생략 가능",
       "menu": null,
       "reservation": null,
       "optional": true,
-      "place_ref": "vieux-nice"
+      "place_ref": null
     },
     {
       "id": "nice-stay-return",
-      "order": 5,
-      "start": null,
-      "end": null,
-      "name": "숙소 귀환",
+      "order": 7,
+      "start": "20:30",
+      "end": "21:00",
+      "name": "숙소 귀환 — Palais ALZIRA",
       "category": "hotel",
-      "lat": 43.6996749,
-      "lng": 7.2608829,
-      "summary": "Castle Hill 전후 45분 휴식을 지킨다",
+      "lat": 43.7002,
+      "lng": 7.2628,
+      "summary": "12 Rue Verdi 숙소 복귀 및 휴식",
       "menu": null,
-      "reservation": "숙소 후보 확정 필요",
-      "optional": false
+      "reservation": "예약완료 Airbnb HMJ3HX8QAY — 12 Rue Verdi",
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -97,40 +130,46 @@
       "to": "vieux-nice",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.2km"
     },
     {
       "from": "vieux-nice",
+      "to": "vieux-nice-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.1km"
+    },
+    {
+      "from": "vieux-nice-lunch",
       "to": "castle-hill",
       "mode": "walk",
       "duration": "10분 + 엘리베이터",
-      "distance": "0.4km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.4km"
     },
     {
       "from": "castle-hill",
+      "to": "promenade",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "0.8km"
+    },
+    {
+      "from": "promenade",
       "to": "port-lympia",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.4km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "20분",
+      "distance": "1.2km"
     },
     {
       "from": "port-lympia",
       "to": "nice-stay-return",
       "mode": "walk",
-      "duration": "20분",
-      "distance": "1.4km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "25분",
+      "distance": "1.8km"
     }
   ],
   "transport": [
-    "도보"
+    "니스 시내 도보"
   ],
   "food": [
     "시장 조달 또는 구시가지 골목 식당"

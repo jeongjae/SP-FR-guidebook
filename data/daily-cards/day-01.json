@@ -7,8 +7,8 @@
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "19:10",
-  "endTime": null,
-  "totalDuration": null,
+  "endTime": "23:00",
+  "totalDuration": "3시간 50분",
   "totalDistance": "약 12km · 택시",
   "fatigue": "3",
   "hotel": {
@@ -26,39 +26,42 @@
       "name": "BCN T1 도착 — OZ511",
       "category": "transport",
       "lat": 41.296944,
-      "lng": 2.0790474,
-      "summary": "입국·수하물 75–90분 여유 — 저녁은 기내에서 해결",
+      "lng": 2.079047,
+      "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 택시 승강장으로 이동",
       "menu": null,
       "reservation": "예약완료 OZ511 (FRRL7R) — ICN T2 11:50 출발",
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "barcelona-checkin",
       "order": 2,
-      "start": "21:30",
-      "end": "22:30",
-      "name": "숙소 체크인·샤워",
+      "start": "21:10",
+      "end": "22:00",
+      "name": "숙소 체크인 — Occidental Barcelona 1929",
       "category": "hotel",
-      "lat": 41.3752738,
-      "lng": 2.1476619,
-      "summary": "체크인 창 00:00까지 — 에어컨·엘리베이터·짐 보관·냉장고 확인",
+      "lat": 41.375274,
+      "lng": 2.147662,
+      "summary": "체크인 완료 및 샤워. 여권 사본 및 익일 사그라다 QR 확인",
       "menu": null,
       "reservation": "예약완료 Occidental Barcelona 1929",
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "barcelona-sleep",
       "order": 3,
-      "start": "22:30",
-      "end": null,
+      "start": "22:00",
+      "end": "23:00",
       "name": "취침 준비",
       "category": "hotel",
-      "lat": 41.3752738,
-      "lng": 2.1476619,
-      "summary": "사그라다 QR·여권 사본만 확인하고 바로 잔다 — 장보기는 내일 아침",
+      "lat": 41.375274,
+      "lng": 2.147662,
+      "summary": "시차 적응 및 취침. 편의점 생수 구매 외 외부 관광 없음",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -66,24 +69,20 @@
       "from": "bcn-airport",
       "to": "barcelona-checkin",
       "mode": "taxi",
-      "duration": "약 50분 (야간·짐 기준 여유)",
-      "distance": "약 12km",
-      "line": "Aerobús 24시간 대안 (Plaça Espanya 하차)",
-      "geometryStatus": "verified-cache"
+      "duration": "약 30~40분",
+      "distance": "약 12km"
     },
     {
       "from": "barcelona-checkin",
       "to": "barcelona-sleep",
       "mode": "walk",
       "duration": "0분",
-      "distance": "숙소",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "숙소 내부"
     }
   ],
   "transport": [
-    "택시 기본 (야간·짐 2개)",
-    "Aerobús 24시간 대안"
+    "택시 (공항 T1 승강장 → 숙소)",
+    "Aerobús A1 (24시간 대안)"
   ],
   "food": [
     "기내 저녁으로 해결",

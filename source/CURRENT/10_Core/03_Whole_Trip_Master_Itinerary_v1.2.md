@@ -11,20 +11,20 @@ status: "chapter-derived master itinerary; booking values pending"
 | Day | 날짜 | 숙박거점 | 테마 | 핵심 일정 | 선택·축소 레버 | 피로도 | 잠금 필요 |
 |---:|---|---|---|---|---|---:|---|
 | 1 | 8/29 토 | Barcelona | 야간 도착·취침 | OZ511 19:10 T1 도착 (확정 FRRL7R), 택시, 야간 체크인 | 장보기·산책은 Day 2 아침으로 | 3 | 없음 — 항공·숙소 확정 |
-| 2 | 8/30 일 | Barcelona | Gaudí와 Catalan Modernisme | Sagrada Família 10:30, Avinguda de Gaudí, Sant Pau | Gràcia 저녁 산책 | 3 | Sagrada·Sant Pau |
+| 2 | 8/30 일 | Barcelona | Gaudí와 Catalan Modernisme | Sant Pau 09:30, Avinguda de Gaudí, Sagrada Família 15:15 (확정) | Gràcia 저녁 산책 | 3 | 없음 — Sagrada 15:15 확정 완료 |
 | 3 | 8/31 월 | Barcelona | 책·도시기억·현대미술 | Concepció 시장, Gòtic, Biblioteca de Catalunya, MACBA | Llibreria Finestres·운동 선택 | 3 | 식당·MACBA |
 | 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카 07:00 인수 (확정 L671E2E0288), Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | Sitges 점심·Airbnb 체크인 |
 | 5 | 9/2 수 | Bàscara | Collioure와 Cadaqués | Bàscara→Collioure→Cadaqués→Bàscara (해안 쪽 우회) | Portlligat·Dalí House는 예약 미확인으로 제외 | 4 | 주차·국경운전·지도 재확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu와 귀로 마을 | Bàscara→Tossa de Mar→Sant Feliu de Guíxols→Pals→Peratallada→Bàscara | 지연·악천후 시 Pals 삭제, GI-682 회피 | 4 | 주차·해안도로·운전피로 |
 | 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN T1 렌터카 반납 **12:30 으로 변경 요청** (예약서 14:00), **VY1521 15:30→NCE 16:55** (확정 NMGI4Q), 트램 2호선 이동 후 Palais ALZIRA 체크인 (18:00~19:00) | 도착 후 숙소 주변 산책 및 가벼운 저녁 | 4~5 | 없음 — 항공·숙소 확정 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
-| 9 | 9/6 일 | Nice | Cannes 당일치기 | Forville, Le Suquet, Vieux-Port, Croisette | 쇼핑·해변 연장 삭제 가능 | 4 | TER |
-| 10 | 9/7 월 | Nice | Monaco + Menton 당일치기 | Nice→Monaco(오전·점심)→Menton(오후·저녁)→Nice: Le Rocher, Port Hercule, Monte-Carlo, Menton Old Town·해변 | 피로 시 Menton 저녁 생략 또는 Monaco 조기 복귀 | 4 | 전 구간 TER |
+| 9 | 9/6 일 | Nice | 앙티브 요새마을과 Cannes 당일치기 | Nice→Antibes(Vieil Antibes·Marché Provençal)→Cannes(Forville·Le Suquet·Vieux-Port·Croisette)→Nice | 쇼핑·해변 연장 삭제 가능 | 3~4 | TER |
+| 10 | 9/7 월 | Nice | 빌프랑슈·에즈·모나코·망통 4개 도시 연계 당일치기 | Nice→Villefranche(구시가지·항만)→Èze Village(중세절벽마을)→Monaco(Le Rocher·점심)→Menton(구시가지·사블레트·저녁)→Nice | 지연 시 부속관람 축소, 피로 시 망통 저녁 생략 후 니스 조기 복귀 | 4 | TER + 버스 602 |
 | 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, 사진미술관 선택, 세탁·Promenade | 사진미술관·추가마을 삭제 가능 | 2 | 사진미술관·렌터카 준비 |
 | 12 | **9/9 수** | **Aix-en-Provence** | NCE 렌터카와 Provence 진입 | Nice역 렌터카 09:00 인수 (확정 L672E080313), Saint-Paul, Grasse, Aix 체크인 | 지연 시 Grasse 우선 삭제 | 5 | Aix 숙소 |
-| 13 | **9/10 목** | Aix-en-Provence | Aix 구시가지와 Granet | 목요시장, Cours Mirabeau, Musée Granet, Mazarin | 성당·카페 | 3 | Granet·식당 |
-| 14 | **9/11 금** | Aix-en-Provence | Marseille 당일치기 | 대중교통 왕복, Vieux-Port, Le Panier, Mucem, Fort Saint-Jean | 피로·우천 시 Mucem+항구만; Cassis는 별도 대체안 | 4 | L50/TER·Mucem |
-| 15 | 9/12 토 | Aix-en-Provence | Cézanne·스케치·생활 | 토요시장, Atelier de Cézanne, 스케치·선택수영 | 러닝·쇼핑 축소 | 2~3 | Atelier |
+| 13 | **9/10 목** | Aix-en-Provence | Aix 시장·구시가지·세잔 아틀리에·Granet | 목요시장, Vieil Aix, Atelier des Lauves(세잔 아틀리에), Musée Granet, Cours Mirabeau | 피로 시 Granet 압축·카페 휴식 | 3 | Atelier 예약·식당 |
+| 14 | **9/11 금** | Aix-en-Provence | Cassis와 Calanques 해안 당일치기 | Aix↔Cassis 차량 왕복, 칼랑크 유람선(3개 피오르드), 카시스 항구 점심, Port-Miou 도보 | 강풍·결항 시 Cap Canaille 드라이브 대체 | 3 | 유람선·주차 |
+| 15 | 9/12 토 | Aix-en-Provence | Marseille 전일 당일치기 | TER 왕복, Vieux-Port, Le Panier, Mucem/Fort Saint-Jean, Notre-Dame de la Garde | 피로 시 Vallon des Auffes 생략 후 조기 복귀 | 4 | TER·Mucem |
 | 16 | 9/13 일 | Luberon | Aix→Lourmarin→농가 | Lourmarin 스케치행사, Coustellet 장보기, 농가 체크인 | Cucuron/Goult 추가 금지 | 3 | 농가·행사 |
 | 17 | 9/14 월 | Luberon | 오커색과 생활마을 | Roussillon, Sentier des Ocres | Goult 또는 Bonnieux 택1 | 3 | 오커길 |
 | 18 | 9/15 화 | Luberon | Gordes와 돌의 문화 | Gordes, Village des Bories | Ménerbes 또는 Oppède 택1 | 3 | 주차·마을 운영 |

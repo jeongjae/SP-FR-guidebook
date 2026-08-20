@@ -44,7 +44,8 @@
       "summary": "수요시장→항구→교회→왕궁 외관",
       "menu": "멸치·생선구이·escalivade",
       "reservation": "오전 10시 전 주차",
-      "optional": false
+      "optional": false,
+      "place_ref": "collioure"
     },
     {
       "id": "collioure-lunch",
@@ -73,7 +74,7 @@
       "menu": "카페 1회",
       "reservation": "Saba 주차 재확인",
       "optional": false,
-      "place_ref": "collioure"
+      "place_ref": null
     },
     {
       "id": "bascara-return",

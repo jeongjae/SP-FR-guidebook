@@ -6,10 +6,10 @@
   "title": "Annecy 당일치기",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "06:40",
-  "endTime": "21:00",
-  "totalDuration": "14시간 20분",
-  "totalDistance": "TER 왕복 + 도보 약 4km",
+  "startTime": "07:30",
+  "endTime": "20:30",
+  "totalDuration": "13시간",
+  "totalDistance": "TER 기차 왕복 + 안시 도보 약 5km",
   "fatigue": "4",
   "hotel": {
     "name": "Lagrange Aparthotel Lyon Lumière",
@@ -19,143 +19,114 @@
   },
   "stops": [
     {
-      "id": "part-dieu",
+      "id": "part-dieu-departure",
       "order": 1,
-      "start": "06:40",
-      "end": "08:30",
-      "name": "Part-Dieu역 — TER 출발",
+      "start": "07:30",
+      "end": "10:15",
+      "name": "Lyon Part-Dieu ➔ Annecy 이동 (TER)",
       "category": "transport",
-      "lat": 45.7605725,
-      "lng": 4.8601628,
-      "summary": "07:30–08:30 출발 목표, 직행 TER 우선 (약 2시간) — 작은 지퍼가방만",
+      "lat": 45.7606,
+      "lng": 4.8594,
+      "summary": "07:45 Part-Dieu역 도착 ➔ 08:08 TER 직통 탑승 (1시간 58분 소요, 알프스 산자락 경유 10:06 Annecy역 도착). [Backup: 09:08 탑승]",
       "menu": null,
-      "reservation": "9/23 TER 시각표 재확인",
-      "optional": false
+      "reservation": "SNCF Connect (현장/사전 발권)",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "vieille-ville",
       "order": 2,
       "start": "10:15",
-      "end": "11:45",
-      "name": "Vieille Ville·Thiou 운하",
-      "place_ref": "annecy",
+      "end": "12:30",
+      "name": "Annecy Vieille Ville & Palais de l'Île",
       "category": "sight",
-      "lat": 45.8985664,
-      "lng": 6.1270556,
-      "summary": "역→Rue Sainte-Claire→Palais de l'Île 외관→운하 골목",
+      "lat": 45.8992,
+      "lng": 6.1286,
+      "summary": "안시역 도보 5분 ➔ 튜(Thiou) 운하 중심 ➔ Palais de l'Île (12세기 수상 감옥 요새) ➔ Rue Sainte-Claire 파스텔 아치 골목 산책 (2시간 15분)",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "annecy"
     },
     {
       "id": "savoy-lunch",
       "order": 3,
-      "start": "11:50",
-      "end": "13:05",
-      "name": "Savoy 점심",
+      "start": "12:30",
+      "end": "14:00",
+      "name": "사부아(Savoy) 로컬 점심 식사",
       "category": "food",
-      "lat": 45.899,
-      "lng": 6.1265,
-      "summary": "무거운 fondue는 2인 공유 또는 생략",
-      "menu": "Chez Mamie Lise · diots·polenta",
-      "reservation": null,
-      "optional": false
+      "lat": 45.8989,
+      "lng": 6.1292,
+      "summary": "운하변 테라스 레스토랑에서 즐기는 사부아 정통 점심 (타르티플레트 또는 호수 생선 퐁뒤)",
+      "menu": "타르티플레트(Tartiflette), 뻬르슈(호수 농어) 뫼니에르, 사부아 화이트 와인",
+      "reservation": "현장 선택 / 대기 적은 곳 우선",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "lakefront",
       "order": 4,
-      "start": "13:10",
-      "end": "15:30",
-      "name": "Jardins de l'Europe·Pont des Amours·Pâquier",
-      "place_ref": "annecy",
+      "start": "14:15",
+      "end": "16:45",
+      "name": "Lac d'Annecy & Pont des Amours & 유럽 정원",
       "category": "sight",
-      "lat": 45.9001957,
-      "lng": 6.1313565,
-      "summary": "호수와 산의 방향을 이해하는 핵심 산책 — 14:30 1시간 크루즈 선택(€19)",
-      "menu": null,
-      "reservation": "크루즈 날씨·운항 확인",
-      "optional": false
+      "lat": 45.9011,
+      "lng": 6.1333,
+      "summary": "알프스 설산 배경의 투명한 호숫가. 파키에(Le Pâquier) 잔디밭 ➔ Pont des Amours (사랑의 다리) ➔ Jardins de l'Europe 거목 산책로 (2시간 30분). (선택: 1시간 호수 크루즈)",
+      "menu": "로컬 젤라토, 에스프레소",
+      "reservation": "크루즈 현장 발권 (선택)",
+      "optional": false,
+      "place_ref": "annecy"
     },
     {
-      "id": "lake-free",
+      "id": "annecy-return",
       "order": 5,
-      "start": "15:40",
-      "end": "18:00",
-      "name": "호숫가 자유시간·역 이동",
-      "place_ref": "annecy",
-      "category": "sight",
-      "lat": 45.9018669,
-      "lng": 6.1324855,
-      "summary": "크루즈 생략 시 Imperial 방향 평지산책, 귀환열차 20분 전 역 도착",
-      "menu": null,
-      "reservation": null,
-      "optional": true
-    },
-    {
-      "id": "lyon-return",
-      "order": 6,
-      "start": "20:00",
-      "end": "21:00",
-      "name": "Lyon 귀환",
+      "start": "17:15",
+      "end": "20:30",
+      "name": "Annecy ➔ Lyon Part-Dieu 귀환 & 저녁",
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "역에서 바로 택시 — 저녁은 숙소권 간단식",
+      "summary": "안시역 복귀 ➔ 17:53 TER 직통 탑승 (19:52 Part-Dieu 도착). 숙소 귀환 및 익일 파리 이동 짐 정리. [Backup: 18:53 탑승]",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "SNCF Connect",
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "part-dieu",
+      "from": "part-dieu-departure",
       "to": "vieille-ville",
       "mode": "train",
-      "duration": "약 2시간",
-      "distance": null,
-      "line": "직행 TER 우선",
-      "geometryStatus": "coordinate-line"
+      "duration": "TER 1시간 58분 + 도보 5분",
+      "distance": "약 140km"
     },
     {
       "from": "vieille-ville",
       "to": "savoy-lunch",
       "mode": "walk",
       "duration": "3분",
-      "distance": "0.1km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.1km"
     },
     {
       "from": "savoy-lunch",
       "to": "lakefront",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "5분",
+      "distance": "0.3km"
     },
     {
       "from": "lakefront",
-      "to": "lake-free",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "lake-free",
-      "to": "lyon-return",
+      "to": "annecy-return",
       "mode": "train",
-      "duration": "약 2시간",
-      "distance": null,
-      "line": "직행 우선, 18:00–19:00대",
-      "geometryStatus": "coordinate-line"
+      "duration": "도보 10분 + TER 1시간 58분",
+      "distance": "약 140km"
     }
   ],
   "transport": [
-    "TER 왕복 (Part-Dieu)",
-    "Annecy 도보"
+    "SNCF TER 기차 왕복 (Lyon Part-Dieu ↔ Annecy, 직통 약 1시간 58분)",
+    "안시 구시가지 및 호숫가 도보"
   ],
   "food": [
     "Chez Mamie Lise 점심",
@@ -166,7 +137,7 @@
     "수요일 — 시장 없음",
     "크루즈는 날씨 조건부"
   ],
-  "backup": "철도 지연·악천후 시 Lyon 생활일 전환",
+  "backup": "악천후/폭우 시 호수 산책 및 크루즈를 축소하고 샤토 디아느시(Château d'Annecy) 박물관 및 구시가지 아케이드 카페 중심 진행",
   "map": {
     "zoom": 9,
     "center": [
@@ -176,9 +147,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "9/23 TER 시각표·직행 여부 확정",
-    "크루즈 운항·요금 재확인",
-    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884"
+    "Annecy행 TER 직통 시간표 확인 (08:08 / 17:53)",
+    "익일 Day 27 Lyon ➔ Paris TGV 6618 (13:04) 탑승 준비"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-26",

@@ -7,10 +7,10 @@
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:00",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 204km · 차량 경로",
-  "fatigue": "5",
+  "endTime": "20:30",
+  "totalDuration": "12시간 30분",
+  "totalDistance": "약 204km · 차량 이동",
+  "fatigue": "4",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
     "lat": null,
@@ -24,101 +24,105 @@
       "order": 1,
       "start": "08:00",
       "end": "08:45",
-      "name": "Nice 체크아웃 — Palais ALZIRA",
+      "name": "Nice 숙소 체크아웃 — Palais ALZIRA",
       "category": "hotel",
-      "lat": 43.6996749,
-      "lng": 7.2608829,
-      "summary": "체크아웃 11:00까지 가능하지만 09:00 렌터카 인수 전에 나온다 — Nice역까지 도보권",
+      "lat": 43.7002,
+      "lng": 7.2628,
+      "summary": "12 Rue Verdi 체크아웃 후 Nice-Ville 기차역 Hertz 영업소로 도보 이동 (10분)",
       "menu": null,
-      "reservation": "예약완료 Airbnb HMJ3HX8QAY — 체크아웃 11:00",
-      "optional": false
+      "reservation": "체크아웃 완료 (Airbnb HMJ3HX8QAY)",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "nice-station-pickup",
       "order": 2,
       "start": "09:00",
-      "end": null,
-      "name": "Nice역 렌터카 인수",
+      "end": "09:40",
+      "name": "Nice-Ville역 Hertz 렌터카 인수",
       "category": "transport",
-      "lat": 43.70499,
-      "lng": 7.26199,
-      "summary": "Avenue Thiers 영업소 — 숙소에서 도보권, 인수 수속 30–60분",
+      "lat": 43.7047,
+      "lng": 7.2619,
+      "summary": "09:00 렌터카 인수(서류·차량촬영·내비설정). 수하물 트렁크 적재",
       "menu": null,
-      "reservation": "예약완료 Hertz L672E080313 — 9/9 09:00 인수",
-      "optional": false
+      "reservation": "예약확정 Hertz L672E080313 — 9/9 09:00 인수",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "saint-paul",
       "order": 3,
-      "start": null,
-      "end": null,
+      "start": "10:15",
+      "end": "12:30",
       "name": "Saint-Paul-de-Vence",
       "category": "sight",
-      "lat": 43.697972,
-      "lng": 7.1216304,
-      "summary": "Fondation Maeght는 정원·안뜰 중심 — 압박 시 정원만",
-      "menu": null,
-      "reservation": "Maeght 운영·요금 재확인 (원고 pending)",
+      "lat": 43.6969,
+      "lng": 7.1222,
+      "summary": "중세 성벽마을, 샤갈의 묘지, 예술가들의 골목 및 퐁다시옹 매그(Fondation Maeght) 외관 (2시간 15분)",
+      "menu": "에스프레소, 크루아상",
+      "reservation": "주차: Parking Indigo Saint-Paul-de-Vence (Primary)",
       "optional": false,
       "place_ref": "saint-paul-de-vence"
     },
     {
       "id": "grasse",
       "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Grasse 점심·향수",
+      "start": "13:15",
+      "end": "14:30",
+      "name": "Grasse 점심 & Fragonard 역사공장",
       "category": "food",
-      "lat": 43.6579121,
-      "lng": 6.9228664,
-      "summary": "향수 가게 한 곳 30–40분 상한, 워크숍(90분+) 금지",
-      "menu": "Grasse 점심",
-      "reservation": null,
-      "optional": true
+      "lat": 43.6586,
+      "lng": 6.9242,
+      "summary": "향수의 수도 그라스 테라스 점심 및 프라고나르 향수 역사공장 관람. 지연 시 우선 축소 가능",
+      "menu": "프로방스 샐러드, 파니니",
+      "reservation": "주차: Parking Notre Dame des Fleurs",
+      "optional": true,
+      "place_ref": "grasse"
     },
     {
       "id": "aix-checkin",
       "order": 5,
-      "start": "15:00",
-      "end": null,
-      "name": "Aix 체크인",
+      "start": "16:45",
+      "end": "18:00",
+      "name": "Aix 숙소 체크인",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "체크인 15:00부터. Résidence Les Toits de Méjanes entrée A, 6층 — 엘리베이터·주차는 현장 확인",
+      "lat": 43.5283,
+      "lng": 5.4497,
+      "summary": "Aix 숙소 체크인(2 Place Coimbra, 15:00부터 가능). 짐 정리 및 차량 안전 주차",
       "menu": null,
       "reservation": "예약완료 Airbnb HMSSBEA4PJ — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
       "optional": false,
-      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
+      "place_ref": null
     },
     {
       "id": "rotonde",
       "order": 6,
-      "start": null,
-      "end": null,
-      "name": "Rotonde·Mirabeau 방향 익히기",
+      "start": "18:30",
+      "end": "19:30",
+      "name": "Place de la Rotonde & Cours Mirabeau 첫 산책",
       "category": "sight",
-      "lat": 43.5267,
-      "lng": 5.44582,
-      "summary": "일몰 전 30–45분 — 도착 늦으면 삭제",
+      "lat": 43.5263,
+      "lng": 5.4454,
+      "summary": "로통드 분수 및 쿠르 미라보 가로수길 첫 저녁 산책. 구시가지 지형 파악",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": true,
+      "place_ref": "rotonde"
     },
     {
       "id": "aix-stay-return",
       "order": 7,
       "start": "19:30",
-      "end": null,
-      "name": "숙소권 저녁",
+      "end": "20:30",
+      "name": "숙소권 저녁 식사 & 휴식",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "특별식 금지 — A8 운전을 마친 날 Aix 관광을 시작하지 않는다",
+      "lat": 43.5283,
+      "lng": 5.4497,
+      "summary": "숙소 인근 비스트로 저녁 식사 후 휴식",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
+      "place_ref": null
     }
   ],
   "legs": [
@@ -126,60 +130,48 @@
       "from": "nice-checkout",
       "to": "nice-station-pickup",
       "mode": "walk",
-      "duration": "약 15분",
-      "distance": "1.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "약 10분",
+      "distance": "1.0km"
     },
     {
       "from": "nice-station-pickup",
       "to": "saint-paul",
       "mode": "car",
-      "duration": "약 26분",
-      "distance": "18.7km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "duration": "약 30분",
+      "distance": "18.7km"
     },
     {
       "from": "saint-paul",
       "to": "grasse",
       "mode": "car",
-      "duration": "약 37분",
-      "distance": "22.1km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "duration": "약 35분",
+      "distance": "22.1km"
     },
     {
       "from": "grasse",
       "to": "aix-checkin",
       "mode": "car",
       "duration": "약 1시간 50분",
-      "distance": "162.9km",
-      "line": "A8",
-      "geometryStatus": "verified-cache"
+      "distance": "162.9km"
     },
     {
       "from": "aix-checkin",
       "to": "rotonde",
       "mode": "walk",
       "duration": "7분",
-      "distance": "0.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.5km"
     },
     {
       "from": "rotonde",
       "to": "aix-stay-return",
       "mode": "walk",
       "duration": "7분",
-      "distance": "0.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.5km"
     }
   ],
   "transport": [
-    "렌터카 — Nice역 09:00 인수 (확정)",
-    "A8 고속도로"
+    "렌터카 — Nice역 09:00 인수 (확정 L672E080313)",
+    "A8 고속도로 및 프로방스 국도"
   ],
   "food": [
     "Grasse 점심",
@@ -190,7 +182,7 @@
     "09:00 Nice역 인수 (확정)",
     "줄이는 순서: Maeght 내부→마을→Grasse"
   ],
-  "backup": "지연 시 Grasse 우선 삭제, Saint-Paul 체류 축소",
+  "backup": "렌터카 인수 지연 시 Grasse를 생략하고 Saint-Paul-de-Vence 관람 후 A8 고속도로를 통해 Aix로 직행",
   "map": {
     "zoom": 8,
     "center": [

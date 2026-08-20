@@ -1,0 +1,9 @@
+issue_id,day,severity,category,summary,detail,proposed_action,source_phase
+FEAS-TIGHT-04,4,P2,ITINERARY_TIGHTNESS,"Day 04 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & OPTIONALIZE,EX-01
+FEAS-TIGHT-05,5,P2,ITINERARY_TIGHTNESS,"Day 05 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01
+FEAS-TIGHT-06,6,P2,ITINERARY_TIGHTNESS,"Day 06 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01
+FEAS-TIGHT-10,10,P2,ITINERARY_TIGHTNESS,"Day 10 schedule is tight (Grade C, Load: Heavy)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01
+FEAS-TIGHT-12,12,P2,ITINERARY_TIGHTNESS,"Day 12 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & OPTIONALIZE,EX-01
+FEAS-TIGHT-22,22,P2,ITINERARY_TIGHTNESS,"Day 22 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01
+FEAS-TIGHT-23,23,P2,ITINERARY_TIGHTNESS,"Day 23 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & OPTIONALIZE,EX-01
+FEAS-TIGHT-37,37,P2,ITINERARY_TIGHTNESS,"Day 37 schedule is tight (Grade C, Load: Light)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01

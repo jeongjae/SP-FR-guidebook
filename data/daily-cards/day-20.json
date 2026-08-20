@@ -6,10 +6,10 @@
   "title": "교황도시 핵심",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "07:30",
+  "startTime": "08:30",
   "endTime": "21:00",
-  "totalDuration": "13시간 30분",
-  "totalDistance": "약 4km · 도보",
+  "totalDuration": "12시간 30분",
+  "totalDistance": "약 4.5km · 도보",
   "fatigue": "3",
   "hotel": {
     "name": "La Terrasse du Clocher (후보)",
@@ -22,88 +22,106 @@
       "id": "les-halles",
       "order": 1,
       "start": "08:30",
-      "end": "09:20",
-      "name": "Les Halles d'Avignon",
+      "end": "09:30",
+      "name": "Les Halles d'Avignon 아침 시장",
       "category": "shopping",
-      "lat": 43.94787,
-      "lng": 4.80903,
-      "summary": "화–일 06:00–14:00 — 치즈·올리브·빵·점심재료",
-      "menu": "치즈·올리브·빵",
+      "lat": 43.9483,
+      "lng": 4.8108,
+      "summary": "수직 정원 파사드가 유명한 중앙 실내시장. 신선한 과일, 치즈, 에스프레소",
+      "menu": "치즈 크루아상, 에스프레소, 무화과",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "les-halles"
     },
     {
       "id": "palais",
       "order": 2,
       "start": "09:45",
-      "end": "12:00",
-      "name": "Palais des Papes",
-      "place_ref": "palais-des-papes",
+      "end": "12:15",
+      "name": "Palais des Papes (교황청 궁전)",
       "category": "culture",
-      "lat": 43.95078,
+      "lat": 43.9508,
       "lng": 4.8075,
-      "summary": "9월 09:00–19:00, 마지막 입장 1시간 전 — 2026 방문해설·WebApp 활용",
+      "summary": "14세기 아비뇽 유수기 거대한 고딕 교황궁. 히스토패드(Histopad) 3D 증강현실 관람, 대예배당, 생마르샬 예배당 프레스코화 (2시간 30분 집중 관람)",
       "menu": null,
-      "reservation": "Palais 티켓 시간지정 잠금",
-      "optional": false
+      "reservation": "사전 시간지정 예약 필수 (€12 / 결합권 €14.50)",
+      "optional": false,
+      "place_ref": "palais-des-papes"
     },
     {
       "id": "palais-lunch",
       "order": 3,
-      "start": "12:05",
-      "end": "14:00",
-      "name": "구시가지 점심·휴식",
+      "start": "12:15",
+      "end": "13:45",
+      "name": "교황청 광장 비스트로 점심",
       "category": "food",
-      "lat": 43.9503,
+      "lat": 43.9501,
       "lng": 4.8068,
-      "summary": "긴 코스요리 금지 — 교황궁 2시간 뒤 휴식 필수",
-      "menu": "시장 샌드위치 또는 비스트로",
-      "reservation": null,
-      "optional": false
+      "summary": "교황청 광장 인근 테라스 레스토랑에서 프로방스식 점심 식사",
+      "menu": "생선 수프, 오리 콩피, 론 화이트 와인",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "rocher-doms",
       "order": 4,
-      "start": "14:10",
+      "start": "14:00",
       "end": "15:00",
-      "name": "Rocher des Doms",
-      "place_ref": "rocher-des-doms",
+      "name": "Rocher des Doms (돔 바위 정원)",
       "category": "sight",
-      "lat": 43.952656,
-      "lng": 4.8079195,
-      "summary": "Rhône·Villeneuve·Mont Ventoux 조망, 정원 벤치 휴식",
+      "lat": 43.9525,
+      "lng": 4.8078,
+      "summary": "교황청 북쪽 바위 언덕 위의 고즈넉한 정원. 론 강, 생베네제 다리, 빌뇌브레자비뇽 성채 파노라마 조망 (60분)",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "무료 입장",
+      "optional": false,
+      "place_ref": "rocher-des-doms"
     },
     {
       "id": "pont",
       "order": 5,
-      "start": "15:05",
-      "end": "17:15",
-      "name": "Pont Saint-Bénézet·강변",
-      "place_ref": "pont-saint-benezet",
+      "start": "15:15",
+      "end": "16:45",
+      "name": "Pont Saint-Bénézet (아비뇽 다리)",
       "category": "sight",
-      "lat": 43.95389,
-      "lng": 4.80508,
-      "summary": "Palais+Pont 결합권 — 이후 Barthelasse 시점은 나룻배 운항·바람 확인",
+      "lat": 43.9539,
+      "lng": 4.8047,
+      "summary": "노래 '아비뇽 다리 위에서'로 유명한 12세기 미완의 다리. 생니콜라 예배당 및 론 강변 조망 (90분)",
       "menu": null,
-      "reservation": "결합권·나룻배 운항 확인",
-      "optional": false
+      "reservation": "교황청 결합권 이용",
+      "optional": false,
+      "place_ref": "pont-saint-benezet"
+    },
+    {
+      "id": "vieil-avignon",
+      "order": 6,
+      "start": "17:00",
+      "end": "18:30",
+      "name": "Vieil Avignon 구시가지 산책",
+      "category": "sight",
+      "lat": 43.9489,
+      "lng": 4.8083,
+      "summary": "생피에르 성당의 화려한 고딕 목조 문, Rue des Marchands 부티크 거리 산책",
+      "menu": null,
+      "reservation": null,
+      "optional": true,
+      "place_ref": null
     },
     {
       "id": "avignon-return",
-      "order": 6,
+      "order": 7,
       "start": "19:30",
       "end": "21:00",
-      "name": "저녁·복귀",
+      "name": "아비뇽 저녁 식사 & 숙소 귀환",
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "추가 미술관은 1곳 이하",
+      "summary": "구시가지 레스토랑(SEVIN 또는 La Fourchette) 저녁 식사 후 숙소 귀환",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "저녁 예약 권장",
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -111,50 +129,47 @@
       "from": "les-halles",
       "to": "palais",
       "mode": "walk",
-      "duration": "20분 (Rue des Marchands 경유)",
-      "distance": "0.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "10분",
+      "distance": "0.5km"
     },
     {
       "from": "palais",
       "to": "palais-lunch",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.1km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "3분",
+      "distance": "0.1km"
     },
     {
       "from": "palais-lunch",
       "to": "rocher-doms",
       "mode": "walk",
-      "duration": "10분 (오르막)",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "8분 (오르막)",
+      "distance": "0.3km"
     },
     {
       "from": "rocher-doms",
       "to": "pont",
       "mode": "walk",
-      "duration": "10분 (내리막)",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "8분 (내리막)",
+      "distance": "0.3km"
     },
     {
       "from": "pont",
+      "to": "vieil-avignon",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.6km"
+    },
+    {
+      "from": "vieil-avignon",
       "to": "avignon-return",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "1.0km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "8분",
+      "distance": "0.5km"
     }
   ],
   "transport": [
-    "도보 (성벽 안 압축권)"
+    "아비뇽 구시가지 도보 (성벽 내 압축권)"
   ],
   "food": [
     "Les Halles 조달",
@@ -165,7 +180,7 @@
     "교황궁 2시간 뒤 휴식 필수",
     "선택 러닝은 성벽 남쪽 4–5km"
   ],
-  "backup": "혼잡·더위 시 Palais 중심 실내일 전환",
+  "backup": "우천 또는 폭염 시 야외 다리/성벽 도보를 축소하고 교황청 내부 관람 및 실내 미술관(Petit Palais) 중심 진행",
   "map": {
     "zoom": 15,
     "center": [
@@ -175,9 +190,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Palais des Papes 티켓 시간지정 예약",
-    "Palais+Pont 결합권·나룻배 운항 확인",
-    "Avignon 숙소 후보 승인"
+    "Palais des Papes 사전 시간지정(09:45) 예약 필수",
+    "Palais + Pont Saint-Bénézet 결합 티켓 구매"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-20",

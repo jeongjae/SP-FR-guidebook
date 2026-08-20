@@ -20,20 +20,20 @@
 | Day | 날짜 | 거점 | 핵심 실행 | 권장 출발 | 완충 | 식사·휴식 | 최고 리스크 | 우선 삭제 | 대체안 | 잠금 필요 |
 |---:|---|---|---|---|---|---|---|---|---|---|
 | 1 | 8/29 토 | Barcelona | OZ511 19:10 T1 도착·야간 체크인 | 19:10 도착 기준 | 입국·수하물·이동 120–150분 | 기내식으로 저녁 해결 | 야간 도착·수하물 지연 | 장보기·산책 전부 | 체크인·취침만 | 없음 — 항공·숙소 확정 |
-| 2 | 8/30 일 | Barcelona | Sagrada Família 10:30 | 09:30 숙소 출발 권장 | 입장 30분 전 도착 | Sant Pau 전후 가벼운 점심 | 시간지정 입장·주말 혼잡 | Gràcia 저녁 산책 | Sant Pau 실내 또는 카페 중심 | Sagrada·Sant Pau |
+| 2 | 8/30 일 | Barcelona | Sant Pau 09:30 · Sagrada Família 15:15 | 08:30 숙소 출발 권장 | 입장 30분 전(14:45) 도착 | La Paradeta 13:00 점심 | 시간지정 입장·주말 혼잡 | Gràcia 저녁 산책 | Sant Pau 실내 또는 카페 중심 | 없음 — Sagrada 15:15 확정 완료 |
 | 3 | 8/31 월 | Barcelona | 시장·Gòtic·도서관·MACBA | 09:00 전후 시작 | 오후 MACBA 전 60분 휴식 | 시장 또는 샌드위치 | 월요일 휴관·도보 누적 | Finestres·운동 | Biblioteca/MACBA 중심 | MACBA·식당 |
 | 4 | 9/1 화 | Bàscara | Sants 렌터카→Sitges→Bàscara | 08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능) | 인수 60분·Sitges 출차 30분 | Sitges 점심 | 인수·체크아웃 순서·짐 노출 | 해변산책·실내 1곳 | Sitges 1곳만 보고 Bàscara 직행 | 렌터카 완료(Hertz L671E2E0288)·Sitges·Bàscara 체크인 조건 재확인 |
 | 5 | 9/2 수 | Bàscara | Collioure·Cadaqués | 07:45 출발 | 오전 10시 이전 Collioure 주차 | Collioure 09:00–12:15·Cadaqués 14:45–17:30 | 해안 쪽 우회·주차·지도 재확인 | Cadaqués 해안 산책·구시가지 | 17:30 Bàscara 출발 | Portlligat·Dalí House 예약 미확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu·Pals·Peratallada | 08:20 출발 | Tossa 주차·Vila Vella 접근 재확인 | Tossa 09:45–12:30·Sant Feliu 점심 | GI-682·운전피로 | Pals 압축·Peratallada 유지 | 17:40 Bàscara 출발 | 지연 시 Pals 삭제 |
 | 7 | 9/4 금 | Nice | Bàscara 체크아웃→BCN 반납 12:30→VY1521 15:30→NCE 16:55 | 10:30 Bàscara 출발 | 반납 12:30→위탁마감 14:45 (135분) | 이동 중 간단식 | 반납 지연·수속 혼잡 | Nice 적응산책 | NCE 도착 후 체크인만 (12 Rue Verdi, 15:00부터) | Hertz 반납 12:30 변경 |
 | 8 | 9/5 토 | Nice | Cours Saleya·Vieux Nice·Castle Hill | 08:30 시장 도착 | Castle Hill 전후 45분 휴식 | 시장 또는 구시가지 | 계단·더위·토요일 혼잡 | Port·해변 | 구시가지 실내·카페 | 시장·숙소 |
-| 9 | 9/6 일 | Nice | Cannes 당일치기 | 08:30 Nice 출발 권장 | TER 20분 여유 | Forville 인근 점심 | 일요일 열차·해안혼잡 | 쇼핑·해변연장 | Cannes 핵심만 후 조기귀환 | TER |
-| 10 | 9/7 월 | Nice | Monaco 당일치기 | 08:30 출발 권장 | 역·언덕 이동 30분 | Monaco-Ville 또는 Port | 월요일 운영·경사·혼잡 | 정원/Larvotto 중 하나 | 구시가지·대성당 중심 | TER |
+| 9 | 9/6 일 | Nice | 앙티브 요새마을·Marché Provençal·Cannes 당일치기 | 08:00 출발 | TER 15분 여유 | Forville/Vieux-Port 인근 점심 | 일요일 열차·해안혼잡 | 쇼핑·해변연장 | 앙티브+칸 핵심만 후 조기귀환 | TER |
+| 10 | 9/7 월 | Nice | Villefranche·Èze·Monaco·Menton 4개 도시 연계 당일치기 | 08:00 출발 | 열차·버스 환승 15분 | Port Hercule 점심 / Menton 저녁 | 버스 배차·경사·환승 | 부속 시설 관람·쇼핑 | 망통 조기 복귀 또는 니스 저녁 전환 | TER·버스 602 |
 | 11 | 9/8 화 | Nice | 회복·시장·사진미술관 선택 | 느린 시작 | 세탁·렌터카 준비 2시간 보호 | Libération 시장·숙소식 | 화요일 휴관·회복일 과밀화 | 사진미술관·추가마을 | 숙소생활·카페 | 사진미술관·렌터카 준비 |
 | 12 | 9/9 수 | Aix | Nice 체크아웃 08:45→Nice역 09:00 인수→Saint-Paul→Grasse→Aix | 08:00 기상·09:00 인수 기준 | 인수 수속 30–60분 | Grasse 점심 | 인수지연·체크인·주차 | Grasse 실내→Saint-Paul 체류 축소 | Grasse 실내 후 Aix 조기도착 | 렌터카·Aix 숙소 |
-| 13 | 9/10 목 | Aix | 목요시장·Granet | 08:00 시장 | 시장 후 60분 휴식 | 시장점심 | 시장혼잡·보행 | Mazarin·성당 | Granet·카페 중심 | Granet |
-| 14 | 9/11 금 | Aix | Marseille 대중교통 당일치기 | L50 시각 기준 역산 | 버스 20분 전·점심과 카페 90분 | Vieux-Port/Le Panier 점심 | 혼잡·소매치기·Mucem 화요일 휴관 변수 없음 | Notre-Dame de la Garde | Mucem·Fort만 또는 Aix 생활일 | L50·Mucem 운영 |
-| 15 | 9/12 토 | Aix | 시장·Cézanne·스케치 | 08:30 시장 | Atelier 전 30분 | 시장점심 | 주말혼잡·개인일정 충돌 | 러닝·쇼핑 | 실내 드로잉·카페 | Atelier·수영 |
+| 13 | 9/10 목 | Aix | 목요시장·Vieil Aix·Atelier des Lauves·Granet | 08:30 시장 | 시장 후 구시가지·아틀리에 전 점심 | 시장/구시가지 점심 | 아틀리에 예약시간·도보 경사 | Granet 관람 압축 | Granet·카페 중심 | Atelier 예약·Granet |
+| 14 | 9/11 금 | Aix | Cassis·Calanques 해안 당일치기 | 08:30 출발 | 유람선 탑승 30분 전·항구 점심 90분 | Cassis 항구 점심 | 강풍/보트 결항·산불 위험 등급 | Port-Miou 도보 연장 | Cap Canaille 절벽 드라이브 | 유람선·주차 |
+| 15 | 9/12 토 | Aix | Marseille 전일 당일치기 (TER 왕복) | 08:30 출발 | TER 20분 여유·점심 75분 | Vieux-Port/Mucem 점심 | 토요일 도심 혼잡·소매치기 | Vallon des Auffes | Mucem/Fort/구항구 중심 | TER·Mucem |
 | 16 | 9/13 일 | Luberon | Lourmarin→Coustellet→농가 | 08:30 체크아웃 | 시장·장보기·농가진입 90분 | Lourmarin 점심 | 체크인·냉장식품·농가접근 | Lourmarin 체류 축소 | 행사·시장 축소 후 조기체크인 | 농가·행사 |
 | 17 | 9/14 월 | Luberon | Roussillon·Goult/Bonnieux | 08:30 출발 | 오커길 후 60분 휴식 | Roussillon 점심 | 월요일 식당·미끄럼 | 오후 마을 | 오커길 축소·카페 | 오커길 |
 | 18 | 9/15 화 | Luberon | Gordes 시장·Bories·선택마을 | 08:15 출발 | 시장주차 30분 | Gordes 피크닉 | 시장혼잡·주차 | Ménerbes/Oppède | Gordes+Bories만 | 시장·주차 |

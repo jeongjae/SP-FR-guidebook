@@ -6,11 +6,11 @@
   "title": "Fourvière와 Vieux Lyon",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "07:45",
-  "endTime": "21:15",
-  "totalDuration": "13시간 30분",
-  "totalDistance": "푸니쿨라 + 도보 약 5km",
-  "fatigue": "4",
+  "startTime": "08:30",
+  "endTime": "21:30",
+  "totalDuration": "13시간",
+  "totalDistance": "푸니쿨라 + 도보 약 5.5km",
+  "fatigue": "3",
   "hotel": {
     "name": "Lagrange Aparthotel Lyon Lumière",
     "lat": 45.746467,
@@ -19,142 +19,158 @@
   },
   "stops": [
     {
-      "id": "funicular",
+      "id": "funicular-ascent",
       "order": 1,
-      "start": "09:10",
-      "end": "09:40",
-      "name": "Metro D→Vieux Lyon→푸니쿨라 F2",
+      "start": "08:30",
+      "end": "09:00",
+      "name": "Metro D ➔ Vieux Lyon ➔ 푸니쿨라 F2 상행",
       "category": "transport",
-      "lat": 45.76075,
-      "lng": 4.82754,
-      "summary": "TCL 24시간권 또는 컨택트리스 — 오르막 대신 푸니쿨라",
+      "lat": 45.7597,
+      "lng": 4.8267,
+      "summary": "Monplaisir-Lumière역에서 메트로 D선 탑승 후 Vieux Lyon역 환승, Funicular F2 푸니쿨라로 푸르비에르 언덕 직통 상행 (수직고도 120m 5분 극복)",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "TCL 1회권/24시간권 (€2.00 / €6.70)",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "fourviere",
       "order": 2,
-      "start": "09:40",
-      "end": "11:30",
-      "name": "Basilique de Fourvière·로마극장",
-      "place_ref": "fourviere",
+      "start": "09:00",
+      "end": "11:00",
+      "name": "Basilique Notre-Dame de Fourvière & 로마극장",
       "category": "culture",
-      "lat": 45.76227,
-      "lng": 4.82259,
-      "summary": "성당 내부 20–30분, 전망·도시지형에 더 많은 시간. 고고학박물관 내부 생략",
+      "lat": 45.7622,
+      "lng": 4.8225,
+      "summary": "푸르비에르 대성당 내부 화려한 모자이크 관람, 에스플러나드 전망대(리옹 도심·벨쿠르·몽블랑 뷰), 기원전 15년 고대 로마 대극장/오데온 유적 (2시간)",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "대성당/로마극장 무료 입장",
+      "optional": false,
+      "place_ref": "fourviere"
     },
     {
-      "id": "rosaire",
+      "id": "rosaire-descent",
       "order": 3,
-      "start": "11:35",
-      "end": "12:15",
-      "name": "Jardin du Rosaire 하산",
+      "start": "11:00",
+      "end": "11:45",
+      "name": "Jardin du Rosaire 완만한 정원 하산길",
       "category": "sight",
-      "lat": 45.7617,
-      "lng": 4.8245,
-      "summary": "계단·경사 주의 — 비가 오면 푸니쿨라로 회귀",
+      "lat": 45.7611,
+      "lng": 4.8247,
+      "summary": "대성당 뒤편 로제르 정원의 완만한 숲길 산책로를 따라 Vieux Lyon 생장 대성당 방면으로 도보 하산 (무릎 부하 최소화, 45분)",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "vieux-lyon-lunch",
+      "order": 4,
+      "start": "12:00",
+      "end": "13:30",
+      "name": "Vieux Lyon 르네상스 비스트로 점심",
+      "category": "food",
+      "lat": 45.7619,
+      "lng": 4.8272,
+      "summary": "생장 거리 인근 비스트로 테라스 점심 (생라파엘 파스티세리, 프랄린 브리오슈)",
+      "menu": "리옹식 샐러드, 바게트 샌드위치, 프랄린 타르트",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "vieux-lyon",
-      "order": 4,
-      "start": "12:20",
-      "end": "15:15",
-      "name": "Vieux Lyon 점심·Saint-Jean·traboules",
-      "place_ref": "vieux-lyon",
-      "category": "sight",
-      "lat": 45.76075,
-      "lng": 4.82754,
-      "summary": "골목 외곽 점심 후 공개 통로만 — 주민공간에서 조용히",
-      "menu": "salade lyonnaise 또는 샌드위치",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "saone",
       "order": 5,
-      "start": "15:15",
-      "end": "17:15",
-      "name": "Saône 강변·Presqu'île 카페",
+      "start": "13:30",
+      "end": "15:30",
+      "name": "Vieux Lyon & Traboules (비외 리옹 & 트라불)",
       "category": "sight",
-      "lat": 45.7605,
-      "lng": 4.8283,
-      "summary": "Passerelle에서 구시가지 파사드·Fourvière 조망, 쇼핑 30분 이내",
+      "lat": 45.7628,
+      "lng": 4.8278,
+      "summary": "16세기 유네스코 르네상스 구시가지. Saint-Jean 대성당, 공개 트라불(Passage de la Tour Rose, 54 Rue Saint-Jean 등 공공 개방 통로) 도보 탐방 (2시간)",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": false,
+      "place_ref": "vieux-lyon"
     },
     {
-      "id": "lyon-return",
+      "id": "saone-presquile",
       "order": 6,
-      "start": "17:30",
-      "end": "21:15",
-      "name": "숙소 휴식·Daniel et Denise 저녁",
+      "start": "15:45",
+      "end": "17:15",
+      "name": "Saône 강변 산책 & Passerelle Saint-Georges",
+      "category": "sight",
+      "lat": 45.7572,
+      "lng": 4.8286,
+      "summary": "붉은 인도교 생조르주(Passerelle Saint-Georges)를 건너 프레스킬 서안 및 손 강변 파스텔 가옥 조망, 카페 에스프레소",
+      "menu": "에스프레소, 로컬 맥주",
+      "reservation": null,
+      "optional": true,
+      "place_ref": null
+    },
+    {
+      "id": "lyon-bouchon-dinner",
+      "order": 7,
+      "start": "19:00",
+      "end": "21:30",
+      "name": "정통 부숑 만찬 — Daniel et Denise & 귀환",
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "저녁 전 1시간 휴식 — pâté en croûte·quenelle 공유, 귀가는 택시/메트로",
-      "menu": null,
-      "reservation": "저녁 예약 잠금",
-      "optional": false
+      "summary": "리옹 미식 명가 정통 부숑(Bouchon Lyonnais) 저녁 만찬 후 숙소 복귀 (Lagrange Lumière)",
+      "menu": "파테 앙 크루트, 퀘넬 드 브로셰, 타블리에 드 사푀르, 코트 뒤 론",
+      "reservation": "저녁 예약 확정/권장 (Daniel & Denise Créqui / Saint-Jean)",
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "funicular",
+      "from": "funicular-ascent",
       "to": "fourviere",
       "mode": "tram",
-      "duration": "5분",
-      "distance": "0.6km",
-      "line": "Funicular F2",
-      "geometryStatus": "coordinate-line"
+      "duration": "푸니쿨라 5분",
+      "distance": "0.6km"
     },
     {
       "from": "fourviere",
-      "to": "rosaire",
+      "to": "rosaire-descent",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.2km"
     },
     {
-      "from": "rosaire",
+      "from": "rosaire-descent",
+      "to": "vieux-lyon-lunch",
+      "mode": "walk",
+      "duration": "15분 (정원 하산)",
+      "distance": "0.5km"
+    },
+    {
+      "from": "vieux-lyon-lunch",
       "to": "vieux-lyon",
       "mode": "walk",
-      "duration": "15분 (하산)",
-      "distance": "0.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "3분",
+      "distance": "0.1km"
     },
     {
       "from": "vieux-lyon",
-      "to": "saone",
+      "to": "saone-presquile",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "8분",
+      "distance": "0.4km"
     },
     {
-      "from": "saone",
-      "to": "lyon-return",
-      "mode": "walk",
-      "duration": "15분",
-      "distance": "1.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "from": "saone-presquile",
+      "to": "lyon-bouchon-dinner",
+      "mode": "metro",
+      "duration": "메트로 D선 15분",
+      "distance": "3.5km"
     }
   ],
   "transport": [
-    "Metro D + Funicular F2 (TCL 24시간권)",
-    "도보"
+    "TCL 대중교통 (Metro D + Funicular F2 푸니쿨라)",
+    "리옹 구시가지 및 손 강변 도보"
   ],
   "food": [
     "Vieux Lyon 골목 점심 — 가볍게",
@@ -165,7 +181,7 @@
     "오르막은 푸니쿨라, 하산은 Rosaire",
     "저녁 전 1시간 휴식"
   ],
-  "backup": "비·피로 시 야외축+카페 전환, 로마극장 내부 생략",
+  "backup": "우천 또는 피로 시 로마극장 야외 관람을 단축하고 푸르비에르 대성당 내부 및 비외 리옹 실내 트라불/카페 중심 진행",
   "map": {
     "zoom": 15,
     "center": [
@@ -175,9 +191,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Daniel et Denise 예약",
-    "Fourvière·푸니쿨라 운영 재확인",
-    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884"
+    "Funicular F2 푸니쿨라 정상 운행 확인",
+    "Vieux Lyon 공공 개방 트라불 출입 수칙 준수 (정숙 유지)",
+    "저녁 부숑(Daniel & Denise) 예약 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-24",

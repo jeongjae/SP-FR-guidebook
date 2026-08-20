@@ -6,10 +6,10 @@
   "title": "Gordes와 돌의 문화",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "07:15",
-  "endTime": "18:30",
+  "startTime": "08:15",
+  "endTime": "19:30",
   "totalDuration": "11시간 15분",
-  "totalDistance": "약 33km · 차량 경로",
+  "totalDistance": "약 42km · 차량 이동",
   "fatigue": "3",
   "hotel": {
     "name": "Domaine des Peyre (후보)",
@@ -21,86 +21,107 @@
     {
       "id": "farm-depart",
       "order": 1,
-      "start": "07:15",
-      "end": "08:10",
-      "name": "농가 아침·출발",
+      "start": "08:15",
+      "end": "08:45",
+      "name": "농가 숙소 조기 출발 ➔ Gordes 이동",
       "category": "hotel",
       "lat": 43.87088,
       "lng": 5.12202,
-      "summary": "화요일 Gordes 중심 통과를 피하고 외곽주차장 목표",
+      "summary": "화요 대형 시장 인파/주차 혼잡 회피를 위해 08:15 조기 출발. D15 도로를 통해 고르드 접근 (15분 소요)",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "gordes",
       "order": 2,
       "start": "08:45",
-      "end": "11:15",
-      "name": "Gordes 마을·전망",
+      "end": "11:30",
+      "name": "Gordes 화요 대형 시장 & 벨베데레 전망",
       "category": "sight",
-      "lat": 43.91181,
-      "lng": 5.20043,
-      "summary": "화요일 시장 혼잡 대응 — Place du Château·골목·전망대, 마을 구조 중심",
-      "menu": null,
-      "reservation": "시장 운영·주차 재확인",
-      "optional": false
+      "lat": 43.9114,
+      "lng": 5.2003,
+      "summary": "뤼베롱 최대 규모의 전통시장(08:30~13:00). 성곽 광장과 골목을 채우는 직물·비누·치즈·라벤더 꿀 탐방 및 Belvédère de Gordes 벼랑 뷰포인트 사진 촬영 (2시간 45분)",
+      "menu": "프로방스 꿀 사탕, 로컬 건과일, 페이스트리",
+      "reservation": "주차: Parking Bel-Air (Primary, 외곽) / Parking Charles de Gaulle (Backup)",
+      "optional": false,
+      "place_ref": "gordes"
     },
     {
       "id": "village-des-bories",
       "order": 3,
-      "start": "11:40",
-      "end": "12:30",
-      "name": "Village des Bories",
+      "start": "11:45",
+      "end": "12:45",
+      "name": "Village des Bories (돌의 문화)",
       "category": "culture",
-      "lat": 43.89728,
-      "lng": 5.1857,
-      "summary": "9월 09:00–19:00 · 성인 €8 · 평균 30–45분 — 좁은 지방도로 주의",
+      "lat": 43.9056,
+      "lng": 5.1819,
+      "summary": "고르드 남서쪽 4.4km. 회반죽 없이 쌓아올린 건식 석조 가옥(Bories) 야외 박물관 관람 (60분)",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "입장료 현장 €6 / 주차장 완비 (진입로 협소 주의)",
+      "optional": false,
+      "place_ref": "village-des-bories"
     },
     {
       "id": "picnic",
       "order": 4,
-      "start": "12:35",
-      "end": "13:20",
-      "name": "피크닉 점심",
+      "start": "12:45",
+      "end": "13:45",
+      "name": "피크닉 점심 식사",
       "category": "food",
-      "lat": 43.89728,
-      "lng": 5.1857,
-      "summary": "시장에서 산 재료로",
-      "menu": "빵·치즈·토마토·과일",
+      "lat": 43.905,
+      "lng": 5.1825,
+      "summary": "고르드 시장에서 구입한 신선 바게트, 샤퀴테리, 치즈, 과일로 그늘 아래 피크닉 또는 카페 간단식",
+      "menu": "바게트 샌드위치, 로컬 치즈, 멜론, 탄산수",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "senanque",
+      "order": 5,
+      "start": "14:00",
+      "end": "15:15",
+      "name": "Abbaye de Sénanque (세낭크 수도원 외관)",
+      "category": "sight",
+      "lat": 43.9283,
+      "lng": 5.1889,
+      "summary": "고르드 북쪽 좁은 협곡 도로(D177 일방통행 주의). 12세기 시토회 수도원의 절제된 석조 건축과 협곡 정경 감상 (9월 중순 라벤더 수확 후 차분한 수도원)",
+      "menu": null,
+      "reservation": "외관/주차 무료 (내부 가이드 투어 시 사전 예약)",
+      "optional": true,
+      "place_ref": "abbaye-de-senanque"
     },
     {
       "id": "menerbes",
-      "order": 5,
-      "start": "13:30",
-      "end": "15:20",
-      "name": "Ménerbes 또는 Oppède",
+      "order": 6,
+      "start": "15:45",
+      "end": "17:00",
+      "name": "Ménerbes (한적한 언덕마을 산책)",
       "category": "sight",
-      "lat": 43.83274,
-      "lng": 5.20689,
-      "summary": "한 곳만 — 피로 시 곧바로 농가 귀환",
-      "menu": null,
-      "reservation": null,
-      "optional": true
+      "lat": 43.8333,
+      "lng": 5.2083,
+      "summary": "피터 메일(A Year in Provence)의 무대. 언덕 꼭대기 성채와 포도밭 전경 산책. 피로 시 생략 가능",
+      "menu": "테라스 에스프레소",
+      "reservation": "주차: Parking de la Mairie / Parking du Lavoir",
+      "optional": true,
+      "place_ref": "menerbes"
     },
     {
       "id": "farm-return",
-      "order": 6,
-      "start": "15:20",
-      "end": "18:30",
-      "name": "농가 귀환·휴식",
+      "order": 7,
+      "start": "17:30",
+      "end": "19:30",
+      "name": "농가 복귀 & 익일 Avignon 이동 준비",
       "category": "hotel",
       "lat": 43.87088,
       "lng": 5.12202,
-      "summary": "세탁·사진정리·마지막 테라스 시간",
+      "summary": "17:30 숙소 복귀. Day 19 Avignon 이동(D900/N100, 45km)을 위한 차량 주유, 짐 패킹, 체크아웃 준비 및 조기 휴식",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -108,19 +129,17 @@
       "from": "farm-depart",
       "to": "gordes",
       "mode": "car",
-      "duration": "약 12분",
+      "duration": "약 15분",
       "distance": "9.8km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "roadType": "농로 ➔ 국도 D900 ➔ 지방도 D15 (고르드 오르막)"
     },
     {
       "from": "gordes",
       "to": "village-des-bories",
       "mode": "car",
-      "duration": "약 7분",
+      "duration": "약 8분",
       "distance": "4.4km",
-      "line": "좁은 지방도로",
-      "geometryStatus": "verified-cache"
+      "roadType": "지방도 D15 ➔ 좁은 포장길 (마주오는 차 교행 주의)"
     },
     {
       "from": "village-des-bories",
@@ -128,17 +147,23 @@
       "mode": "walk",
       "duration": "0분",
       "distance": "현장",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "roadType": "보행로"
     },
     {
       "from": "picnic",
-      "to": "menerbes",
+      "to": "senanque",
       "mode": "car",
       "duration": "약 12분",
-      "distance": "8.6km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "distance": "7.5km",
+      "roadType": "지방도 D177 (협곡 편도 일방통행 구간 주의)"
+    },
+    {
+      "from": "senanque",
+      "to": "menerbes",
+      "mode": "car",
+      "duration": "약 20분",
+      "distance": "15.0km",
+      "roadType": "지방도 D177 ➔ D2 ➔ 국도 D900 ➔ D3 (메네르브)"
     },
     {
       "from": "menerbes",
@@ -146,12 +171,12 @@
       "mode": "car",
       "duration": "약 12분",
       "distance": "10.2km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "roadType": "지방도 D3 ➔ 간선국도 D900 ➔ 농로"
     }
   ],
   "transport": [
-    "렌터카 · 외곽주차 우선"
+    "렌터카 (Domaine des Peyre ↔ Gordes ↔ Village des Bories ↔ Sénanque ➔ Ménerbes ➔ 숙소)",
+    "외곽 주차 후 도보 접근 (Parking Bel-Air / Parking Charles de Gaulle)"
   ],
   "food": [
     "시장 재료 피크닉",
@@ -162,7 +187,7 @@
     "Bories €8·30–45분",
     "Ménerbes/Oppède 택1"
   ],
-  "backup": "혼잡 시 Gordes+Bories만, Sénanque는 능선마을 대체안",
+  "backup": "1. Gordes 주차 극심 시 Bel-Air 외곽 주차장 대기 또는 셔틀 이용\n2. 피로/시간 지연 시 Sénanque와 Ménerbes를 생략하고 Bories 관람 후 14:30 조기 복귀\n3. 악천후 시 Gordes 실내 카페 및 Bories 야외 관람 축소",
   "map": {
     "zoom": 12,
     "center": [
@@ -172,9 +197,9 @@
     "routeCache": "routes/day-18-driving-osrm.json"
   },
   "needsReview": [
-    "농가 후보 승인",
-    "Gordes 화요 시장 운영·외곽주차 확인",
-    "Bories 운영·요금 재확인"
+    "Gordes 화요 시장 외곽 주차장(Parking Bel-Air) 08:45 이전 진입",
+    "Sénanque 수도원 진입 시 D177 일방통행 협곡 도로 서행",
+    "익일 Day 19 Avignon 이동(09:00 출발)을 위한 차량 주유 및 짐 정리"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-18",

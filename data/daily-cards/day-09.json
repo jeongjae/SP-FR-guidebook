@@ -2,15 +2,15 @@
   "schemaVersion": "1.0",
   "day": 9,
   "date": "2026-09-06",
-  "city": "Nice",
-  "title": "Cannes 당일치기",
+  "city": "Antibes & Cannes",
+  "title": "앙티브 요새마을과 칸 당일치기",
   "sourceStatus": "candidate-latest-needs-review",
   "prototypeType": null,
-  "startTime": "08:30",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "TER 왕복 + 도보 약 6km",
-  "fatigue": "4",
+  "startTime": "08:00",
+  "endTime": "18:00",
+  "totalDuration": "10시간",
+  "totalDistance": "TER 왕복 + 시내 도보 약 6.5km",
+  "fatigue": "3",
   "hotel": {
     "name": "Palais ALZIRA · 12 Rue Verdi",
     "lat": 43.6996749,
@@ -21,140 +21,178 @@
     {
       "id": "nice-ville",
       "order": 1,
-      "start": "08:30",
-      "end": null,
-      "name": "Nice-Ville역 출발",
+      "start": "08:00",
+      "end": "08:35",
+      "name": "Nice-Ville역 출발 ➔ Antibes 이동",
       "category": "transport",
-      "lat": 43.70499,
-      "lng": 7.26199,
-      "summary": "TER 20분 여유 — 일요일 배차 재확인",
+      "lat": 43.7047,
+      "lng": 7.2619,
+      "summary": "08:15 숙소(12 Rue Verdi) 출발 ➔ 08:24~08:42 TER 탑승 앙티브 이동 (18분 소요)",
       "menu": null,
-      "reservation": "TER 시각표 재확인",
-      "optional": false
+      "reservation": "SNCF Connect / 현장 발권 (15~20분 간격)",
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "antibes-old-town",
+      "order": 2,
+      "start": "08:45",
+      "end": "11:15",
+      "name": "Vieil Antibes & Marché Provençal",
+      "category": "sight",
+      "lat": 43.5811,
+      "lng": 7.1264,
+      "summary": "앙티브 구시가지 성벽길(Promenade Amiral de Grasse), 프로방스 전통시장(Marché Provençal 활성화 시간대), 포르 보방(Port Vauban) 조망 (2.5시간 compact visit)",
+      "menu": "프로방스 빵, 올리브, 소카",
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "marche-forville",
-      "order": 2,
-      "start": null,
-      "end": null,
+      "order": 3,
+      "start": "11:55",
+      "end": "12:45",
       "name": "Marché Forville",
       "category": "shopping",
-      "lat": 43.5521312,
-      "lng": 7.0121436,
-      "summary": "식자재 중심 시장 — Cours Saleya와 성격 비교",
-      "menu": "소카·피살라디에르·근대 파이",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "croisette",
-      "order": 3,
-      "start": null,
-      "end": null,
-      "name": "La Croisette",
-      "category": "sight",
-      "lat": 43.5415352,
-      "lng": 7.0344284,
-      "summary": "해안 호텔·명품가를 먼저 본다 — 순서가 중요",
-      "menu": null,
+      "lat": 43.5522,
+      "lng": 7.0125,
+      "summary": "11:30 TER 탑승 ➔ 11:42 칸 역 도착 ➔ 포르빌 시장 탐방 및 로컬 치즈·과일 관찰",
+      "menu": "소카, 포카치아, 프로방스 생치즈",
       "reservation": null,
       "optional": false,
-      "place_ref": "cannes"
+      "place_ref": "marche-forville"
     },
     {
       "id": "vieux-port-cannes",
       "order": 4,
-      "start": null,
-      "end": null,
-      "name": "Vieux-Port",
-      "category": "sight",
-      "lat": 43.5501963,
-      "lng": 7.0120893,
-      "summary": "Quai Saint-Pierre를 따라 항구로",
-      "menu": null,
-      "reservation": null,
+      "start": "12:45",
+      "end": "14:00",
+      "name": "Vieux-Port 점심",
+      "category": "food",
+      "lat": 43.5508,
+      "lng": 7.0161,
+      "summary": "구항구 테라스 레스토랑에서 신선한 지중해 해산물 점심 식사",
+      "menu": "오늘의 생선 그릴, 해산물 파스타",
+      "reservation": "현장 선택",
       "optional": false,
-      "place_ref": "cannes"
+      "place_ref": null
     },
     {
       "id": "le-suquet",
       "order": 5,
-      "start": null,
-      "end": null,
-      "name": "Le Suquet",
+      "start": "14:00",
+      "end": "15:15",
+      "name": "Le Suquet & 구시가지 언덕",
       "category": "sight",
-      "lat": 43.5500603,
-      "lng": 7.0104285,
-      "summary": "언덕에 오르면 칸이 원래 어촌이었음이 보인다",
+      "lat": 43.5511,
+      "lng": 7.0108,
+      "summary": "칸의 옛 어촌 언덕. 자갈 계단길을 올라 성채 광장에서 칸 만과 구항구 파노라마 조망",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "le-suquet"
+    },
+    {
+      "id": "croisette",
+      "order": 6,
+      "start": "15:30",
+      "end": "16:45",
+      "name": "Boulevard de la Croisette",
+      "category": "sight",
+      "lat": 43.5502,
+      "lng": 7.0255,
+      "summary": "팔레 데 페스티발 외관 및 야자수 해안 산책로. 벤치 휴식. 피로 시 단축 가능",
+      "menu": null,
+      "reservation": null,
+      "optional": true,
+      "place_ref": null
+    },
+    {
+      "id": "cannes-station",
+      "order": 7,
+      "start": "16:45",
+      "end": "17:30",
+      "name": "Gare de Cannes ➔ Nice TER 탑승",
+      "category": "transport",
+      "lat": 43.5539,
+      "lng": 7.0205,
+      "summary": "칸 역으로 복귀하여 니스행 TER 탑승 (약 30분 소요, 17:30 니스역 도착)",
+      "menu": null,
+      "reservation": "SNCF Connect",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "nice-return",
-      "order": 6,
-      "start": null,
-      "end": null,
-      "name": "Nice 귀환",
+      "order": 8,
+      "start": "17:30",
+      "end": "18:00",
+      "name": "Nice-Ville 도착 ➔ 숙소 귀환",
       "category": "hotel",
-      "lat": 43.6996749,
-      "lng": 7.2608829,
-      "summary": "혼잡 시 핵심만 보고 조기 귀환",
+      "lat": 43.7002,
+      "lng": 7.2628,
+      "summary": "니스역 도착 후 숙소 12 Rue Verdi로 복귀 및 휴식",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
     {
       "from": "nice-ville",
+      "to": "antibes-old-town",
+      "mode": "train",
+      "duration": "TER 18분 + 도보 8분",
+      "distance": "약 20km"
+    },
+    {
+      "from": "antibes-old-town",
       "to": "marche-forville",
       "mode": "train",
-      "duration": null,
-      "distance": null,
-      "line": "TER Nice→Cannes",
-      "geometryStatus": "coordinate-line"
+      "duration": "도보 10분 + TER 12분 + 도보 8분",
+      "distance": "약 12km"
     },
     {
       "from": "marche-forville",
-      "to": "croisette",
-      "mode": "walk",
-      "duration": "30분",
-      "distance": "2.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "croisette",
       "to": "vieux-port-cannes",
       "mode": "walk",
-      "duration": "30분",
-      "distance": "2.0km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "5분",
+      "distance": "0.3km"
     },
     {
       "from": "vieux-port-cannes",
       "to": "le-suquet",
       "mode": "walk",
-      "duration": "5분 (계단)",
-      "distance": "0.1km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "10분 (계단/경사)",
+      "distance": "0.4km"
     },
     {
       "from": "le-suquet",
+      "to": "croisette",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "0.8km"
+    },
+    {
+      "from": "croisette",
+      "to": "cannes-station",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "0.9km"
+    },
+    {
+      "from": "cannes-station",
       "to": "nice-return",
       "mode": "train",
-      "duration": null,
-      "distance": null,
-      "line": "TER Cannes→Nice",
-      "geometryStatus": "coordinate-line"
+      "duration": "TER 약 30분 + 도보 10분",
+      "distance": "약 32km"
     }
   ],
   "transport": [
-    "TER 왕복",
-    "칸 시내 도보"
+    "TER 왕복 (Nice-Ville ↔ Antibes ↔ Cannes)",
+    "앙티브 및 칸 시내 도보"
   ],
   "food": [
     "Forville 인근 점심"
@@ -164,12 +202,12 @@
     "크루아제트 먼저, 르 쉬케는 나중",
     "일요일 열차·해안 혼잡 주의"
   ],
-  "backup": "혼잡 시 쇼핑·해변 연장 삭제, 핵심만 후 조기 귀환",
+  "backup": "우천 시 Croisette 해변 산책을 생략하고 앙티브 피카소 미술관 외관 및 칸 포르빌·르 쉬케 위주로 관람 후 조기 귀환",
   "map": {
     "zoom": 11,
     "center": [
-      43.628,
-      7.14
+      43.58,
+      7.08
     ],
     "routeCache": null
   },

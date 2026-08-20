@@ -3,13 +3,13 @@
   "day": 13,
   "date": "2026-09-10",
   "city": "Aix-en-Provence",
-  "title": "시장, Vieil Aix와 Musée Granet",
+  "title": "Aix 목요시장, Vieil Aix, 세잔 아틀리에와 Musée Granet",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:30",
-  "endTime": "21:00",
-  "totalDuration": "12시간 30분",
-  "totalDistance": "약 4km · 도보",
+  "endTime": "20:30",
+  "totalDuration": "12시간",
+  "totalDistance": "약 5km · 도보",
   "fatigue": "3",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
@@ -24,87 +24,105 @@
       "order": 1,
       "start": "08:30",
       "end": "10:00",
-      "name": "Richelme·목요시장",
+      "name": "Place Richelme & 목요 대형 시장",
       "category": "shopping",
-      "lat": 43.5290025,
-      "lng": 5.4512995,
-      "summary": "리셸므는 매일 식료품, 프레셰르는 주 3회 종합 — 13시 파장",
-      "menu": "과일·chèvre·토마토·빵 소량",
+      "lat": 43.5297,
+      "lng": 5.4478,
+      "summary": "리셸름 광장 식품시장, 프레셔 광장 꽃시장, 쿠르 미라보 공예시장 탐방 (08:00~13:00 운영 중 아침 활성화 시간대)",
+      "menu": "프로방스 칼리송(Calisson), 제철 무화과, 에스프레소",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "place-richelme-place-des-precheurs"
     },
     {
       "id": "vieil-aix",
       "order": 2,
       "start": "10:00",
-      "end": "11:40",
-      "name": "Vieil Aix",
+      "end": "11:45",
+      "name": "Vieil Aix 구시가지 & 세잔의 흔적",
       "category": "sight",
-      "lat": 43.528963,
-      "lng": 5.4481344,
-      "summary": "Hôtel de Ville·Albertas·Cathédrale·Saporta, 이후 카페",
-      "menu": null,
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "hotel-lunch",
-      "order": 3,
-      "start": "12:30",
-      "end": "13:20",
-      "name": "숙소 점심·휴식",
-      "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "40분 이상 앉아 쉼",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
-    },
-    {
-      "id": "musee-granet",
-      "order": 4,
-      "start": "13:40",
-      "end": "16:10",
-      "name": "Musée Granet",
-      "category": "culture",
-      "lat": 43.52557,
-      "lng": 5.45251,
-      "summary": "Cézanne·프로방스·특별전 중 2개 축만",
-      "menu": null,
-      "reservation": "Granet 운영·특별전 재확인",
-      "optional": false
-    },
-    {
-      "id": "mazarin",
-      "order": 5,
-      "start": "16:10",
-      "end": "17:10",
-      "name": "Quartier Mazarin",
-      "category": "sight",
-      "lat": 43.5253676,
-      "lng": 5.4505977,
-      "summary": "미술관 뒤 느린 산책",
+      "lat": 43.5311,
+      "lng": 5.4472,
+      "summary": "17-18세기 귀족 저택(Hôtel Particulier), 생소뵈르 대성당, 네 마리 돌고래 분수, 세잔 탄생지/모교 흔적 도보 (105분)",
       "menu": null,
       "reservation": null,
       "optional": false,
       "place_ref": "vieil-aix"
     },
     {
-      "id": "aix-stay-return",
-      "order": 6,
-      "start": "17:15",
-      "end": null,
-      "name": "숙소 휴식·저녁",
-      "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "19:30 Coucou 또는 La Brocherie — 첫 정식저녁",
-      "menu": null,
-      "reservation": "저녁 식당 예약",
+      "id": "aix-lunch",
+      "order": 3,
+      "start": "12:00",
+      "end": "13:15",
+      "name": "구시가지 점심 식사",
+      "category": "food",
+      "lat": 43.5289,
+      "lng": 5.4468,
+      "summary": "구시가지 테라스 비스트로에서 프로방스식 점심 (La Brocherie 또는 Coucou 인근)",
+      "menu": "도브 프로방살(소고기 스튜), 팍시, 로제 와인",
+      "reservation": "현장 방문 또는 점심 예약 권장",
       "optional": false,
-      "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
+      "place_ref": null
+    },
+    {
+      "id": "atelier-des-lauves",
+      "order": 4,
+      "start": "13:30",
+      "end": "15:00",
+      "name": "Atelier des Lauves (세잔의 아틀리에)",
+      "category": "culture",
+      "lat": 43.5392,
+      "lng": 5.4461,
+      "summary": "폴 세잔이 생애 마지막 4년간(1902-1906) 대형 목욕자들과 생트빅투아르산을 그리던 작업실. 정물화 소품, 대형 이젤, 올리브 정원 [Cézanne Core]",
+      "menu": null,
+      "reservation": "사전 예약 필수 (Aix Tourism / €9.50)",
+      "optional": false,
+      "place_ref": "atelier-des-lauves"
+    },
+    {
+      "id": "musee-granet",
+      "order": 5,
+      "start": "15:30",
+      "end": "17:15",
+      "name": "Musée Granet (그라네 미술관)",
+      "category": "culture",
+      "lat": 43.5258,
+      "lng": 5.4522,
+      "summary": "세잔의 초기작 및 유화/수채화 컬렉션, 프랑수아 마리우스 그라네, 인상파 회화 컬렉션 (105분 compact visit)",
+      "menu": null,
+      "reservation": "현장 발권 / 뮤지엄 패스 (€8)",
+      "optional": false,
+      "place_ref": "musee-granet"
+    },
+    {
+      "id": "cours-mirabeau",
+      "order": 6,
+      "start": "17:30",
+      "end": "19:30",
+      "name": "Cours Mirabeau & 마자랭 지구 산책",
+      "category": "sight",
+      "lat": 43.5269,
+      "lng": 5.4486,
+      "summary": "플라타너스 가로수길 카페(Les Deux Garçons 터) 테라스 휴식 및 Quartier Mazarin 분수 산책 후 저녁 식사",
+      "menu": "테라스 와인/맥주, 프로방스 타파스",
+      "reservation": null,
+      "optional": false,
+      "place_ref": "cours-mirabeau"
+    },
+    {
+      "id": "aix-stay-return",
+      "order": 7,
+      "start": "19:30",
+      "end": "20:30",
+      "name": "숙소 귀환 & 휴식",
+      "category": "hotel",
+      "lat": 43.5283,
+      "lng": 5.4497,
+      "summary": "숙소 2 Place Coimbra 귀환 및 휴식",
+      "menu": null,
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -113,49 +131,46 @@
       "to": "vieil-aix",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.3km"
     },
     {
       "from": "vieil-aix",
-      "to": "hotel-lunch",
+      "to": "aix-lunch",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.6km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "5분",
+      "distance": "0.3km"
     },
     {
-      "from": "hotel-lunch",
+      "from": "aix-lunch",
+      "to": "atelier-des-lauves",
+      "mode": "walk",
+      "duration": "20분 (오르막)",
+      "distance": "1.3km"
+    },
+    {
+      "from": "atelier-des-lauves",
       "to": "musee-granet",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "1.0km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "25분 (내리막)",
+      "distance": "1.6km"
     },
     {
       "from": "musee-granet",
-      "to": "mazarin",
+      "to": "cours-mirabeau",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.3km"
     },
     {
-      "from": "mazarin",
+      "from": "cours-mirabeau",
       "to": "aix-stay-return",
       "mode": "walk",
-      "duration": "12분",
-      "distance": "0.9km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "duration": "10분",
+      "distance": "0.6km"
     }
   ],
   "transport": [
-    "도보 (구시가지 압축권)"
+    "Aix 시내 도보 (구시가지 및 북부 아틀리에 도보권)"
   ],
   "food": [
     "시장 조달·카페 Weibel",
@@ -166,7 +181,7 @@
     "Granet 3시간 30분 상한 내",
     "시장 후 60분 휴식"
   ],
-  "backup": "시장 혼잡·보행 피로 시 Mazarin·성당 삭제, Granet·카페 중심",
+  "backup": "1. Atelier des Lauves 예약 시간에 맞춰 오전/오후 순서 미세 조정\n2. 피로 누적 시 Musée Granet을 60분으로 압축하고 Cours Mirabeau 카페 휴식 확대\n3. 우천 시 야외 도보를 줄이고 Granet 미술관 및 구시가지 실내 카페 중심 진행",
   "map": {
     "zoom": 15,
     "center": [
@@ -176,9 +191,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "Granet 2026 특별전·요금 재확인",
-    "저녁 식당(Coucou/La Brocherie) 예약",
-    "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
+    "Atelier des Lauves 사전 예약 확정 (방문 시간대 지정)",
+    "Musée Granet 2026 특별전 확인",
+    "Aix 목요시장 08:00~13:00 운영 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-13",

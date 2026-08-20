@@ -6,10 +6,10 @@
   "title": "Lyon→Paris, 17일 거주자가 되는 날",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": null,
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "TGV 약 465km + 택시",
+  "startTime": "09:30",
+  "endTime": "21:30",
+  "totalDuration": "12시간",
+  "totalDistance": "TGV 약 465km + 파리 시내 이동",
   "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
@@ -22,117 +22,134 @@
     {
       "id": "lyon-checkout",
       "order": 1,
-      "start": null,
-      "end": null,
-      "name": "Lyon 체크아웃",
+      "start": "09:30",
+      "end": "11:15",
+      "name": "Lyon 숙소 체크아웃 & Part-Dieu역 이동",
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "체크아웃 11:00 — 메트로 D Sans Souci→Saxe-Gambetta 환승→B선 Part-Dieu, 짐이 크면 택시",
+      "summary": "Lagrange Aparthotel Lyon Lumière 체크아웃 후 택시/메트로로 Part-Dieu역 이동 (15분 소요)",
       "menu": null,
-      "reservation": "예약완료 Lagrange Aparthotel Lyon Lumière — 체크아웃 11:00",
-      "optional": false
+      "reservation": "체크아웃 완료 (Lagrange 5882.730.884)",
+      "optional": false,
+      "place_ref": null
     },
     {
-      "id": "gare-de-lyon",
+      "id": "part-dieu-lunch",
       "order": 2,
-      "start": null,
-      "end": null,
-      "name": "TGV→Paris Gare de Lyon",
+      "start": "11:30",
+      "end": "12:45",
+      "name": "Part-Dieu역 점심 & TGV 플랫폼 대기",
+      "category": "food",
+      "lat": 45.7606,
+      "lng": 4.8594,
+      "summary": "역사 내 카페/Paul에서 가벼운 샌드위치 점심 식사 후 12:45 전광판 플랫폼 확인 및 대기",
+      "menu": "바게트 샌드위치, 에스프레소, 에끌레어",
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "tgv-to-paris",
+      "order": 3,
+      "start": "13:04",
+      "end": "15:00",
+      "name": "TGV INOUI 6618 ➔ Paris Gare de Lyon 도착",
       "category": "transport",
-      "lat": 48.8436635,
-      "lng": 2.3744869,
-      "summary": "정확한 TGV 확정 후 문전시간 고정, 짐은 시야 안쪽",
+      "lat": 48.8449,
+      "lng": 2.3734,
+      "summary": "TGV INOUI 6618 탑승 (13:04 출발 ➔ 15:00 파리 리옹역 도착, 1등석 편안한 1시간 56분 고속주행)",
       "menu": null,
-      "reservation": "TGV 편성 확정 필요",
-      "optional": false
+      "reservation": "예약확정 TGV INOUI 6618 (X6CVW5, 1등석)",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "paris-checkin",
-      "order": 3,
-      "start": null,
-      "end": "17:00",
-      "name": "숙소 이동·체크인·객실 점검",
+      "order": 4,
+      "start": "15:30",
+      "end": "17:30",
+      "name": "Paris 15구 숙소 이동 & 체크인 (15박 정착)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "도착 후 45–75분 택시 — 주방·세탁기·냉장고·엘리베이터·쓰레기 배출 확인",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "Gare de Lyon에서 택시 탑승(약 30~45분) ➔ 78 Rue de Lourmel 도착. 정식 체크인, 짐 풀기, 세탁기/주방/Wi-Fi 시설 점검",
       "menu": null,
-      "reservation": "예약완료 — 체크인 9/24 15:00 · 체크아웃 10/9 11:00",
+      "reservation": "예약완료 78 Rue de Lourmel, 75015 Paris (9/24 15:00 체크인 ~ 10/9 11:00 체크아웃)",
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     },
     {
       "id": "first-grocery",
-      "order": 4,
-      "start": "17:00",
-      "end": "19:15",
-      "name": "첫 장보기·800m 산책",
+      "order": 5,
+      "start": "17:45",
+      "end": "19:30",
+      "name": "15구 생활권 첫 장보기 & 동네 산책",
       "category": "shopping",
-      "lat": 48.8399,
-      "lng": 2.3459,
-      "summary": "필수품만 — 시장 방문 전 대량구매 금지. 약국·세탁·메트로 위치 파악",
-      "menu": "빵·버터·과일·물",
+      "lat": 48.8468,
+      "lng": 2.2905,
+      "summary": "Monoprix Lourmel / Franprix에서 15박 생활용 식재료, 생수, 생필품 구매 및 Rue du Commerce / Champ de Mars 방향 800m 적응 산책",
+      "menu": "파리 바게트, 버터, 잼, 와인, 과일",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "19:30",
-      "end": null,
-      "name": "숙소식 또는 가까운 식당",
+      "order": 6,
+      "start": "19:45",
+      "end": "21:30",
+      "name": "숙소 첫 저녁 식사 & 파리 15박 시작",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "긴 이동일 — 유명식당 예약 금지, 대형 일정 없음",
-      "menu": null,
-      "reservation": null,
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "동네 비스트로 저녁 식사 또는 장보기 식재료로 숙소 첫 식사. 파리 15박 장기 체류 시작",
+      "menu": "스테이크 프리트 또는 홈메이드 파스타",
+      "reservation": "현장 선택",
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
       "from": "lyon-checkout",
-      "to": "gare-de-lyon",
-      "mode": "train",
-      "duration": "약 2시간",
-      "distance": null,
-      "line": "TGV Part-Dieu→Gare de Lyon",
-      "geometryStatus": "coordinate-line"
+      "to": "part-dieu-lunch",
+      "mode": "taxi",
+      "duration": "약 15분",
+      "distance": "3.5km"
     },
     {
-      "from": "gare-de-lyon",
+      "from": "part-dieu-lunch",
+      "to": "tgv-to-paris",
+      "mode": "train",
+      "duration": "TGV 1시간 56분",
+      "distance": "약 465km"
+    },
+    {
+      "from": "tgv-to-paris",
       "to": "paris-checkin",
       "mode": "taxi",
-      "duration": "45–75분",
-      "distance": "약 5km",
-      "line": "공식 택시승강장",
-      "geometryStatus": "coordinate-line"
+      "duration": "약 35분",
+      "distance": "7.5km"
     },
     {
       "from": "paris-checkin",
       "to": "first-grocery",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.3km"
     },
     {
       "from": "first-grocery",
       "to": "paris-return",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "distance": "0.3km"
     }
   ],
   "transport": [
-    "TGV (좌석·수하물 위치 확인)",
-    "Gare de Lyon 택시"
+    "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 확정 X6CVW5)",
+    "파리 택시 / 메트로 (Gare de Lyon ➔ 78 Rue de Lourmel, 15구)"
   ],
   "food": [
     "첫 장보기 — 필수품만",
@@ -143,7 +160,7 @@
     "매일 갈 빵집 한 곳을 먼저 정한다",
     "동네 카페 30분"
   ],
-  "backup": "지연 시 짐정리·최소 장보기만",
+  "backup": "TGV 지연 또는 피로 시 첫날 관광 산책을 일절 생략하고 숙소 체크인 및 최소 장보기 후 조기 휴식",
   "map": {
     "zoom": 13,
     "center": [
@@ -153,10 +170,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "TGV 9/24 편성·시각 확정",
-    "체크인 가능 시각 확인",
-    "Lyon 숙소 확정 (2026-08-14): Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas · 체크인 15:00 · 체크아웃 11:00 · 5882.730.884",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "TGV INOUI 6618 (13:04 출발) 탑승 확인",
+    "Paris 78 Rue de Lourmel 숙소 도어락/열쇠 수령 지침 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-27",

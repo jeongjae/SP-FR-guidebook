@@ -6,10 +6,10 @@
   "title": "오커색과 생활마을",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "07:45",
+  "startTime": "08:30",
   "endTime": "20:30",
-  "totalDuration": "12시간 45분",
-  "totalDistance": "약 56km · 차량 경로",
+  "totalDuration": "12시간",
+  "totalDistance": "약 56km · 차량 이동",
   "fatigue": "3",
   "hotel": {
     "name": "Domaine des Peyre (후보)",
@@ -21,88 +21,92 @@
     {
       "id": "farm-depart",
       "order": 1,
-      "start": "07:45",
-      "end": "09:15",
-      "name": "농가 아침·출발",
+      "start": "08:30",
+      "end": "09:00",
+      "name": "농가 숙소 아침 & 출발",
       "category": "hotel",
       "lat": 43.87088,
       "lng": 5.12202,
-      "summary": "느린 준비 — Roussillon 주차장 실시간 혼잡 확인",
-      "menu": null,
+      "summary": "숙소 테라스 아침식사 후 08:30 출발. 루시용 주차장(Parking Saint-Michel)으로 이동 (20분 소요)",
+      "menu": "크루아상, 잼, 커피",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "sentier-ocres",
       "order": 2,
-      "start": "09:30",
+      "start": "09:00",
       "end": "10:30",
-      "name": "Sentier des Ocres",
-      "place_ref": "roussillon-sentier-des-ocres",
+      "name": "Sentier des Ocres (오커 트레일)",
       "category": "sight",
-      "lat": 43.8996879,
-      "lng": 5.2985907,
-      "summary": "9월 09:30–19:00 · 성인 €3.50 — 비·폭풍·산불위험 시 폐쇄 가능",
+      "lat": 43.9019,
+      "lng": 5.2939,
+      "summary": "붉은 황토 절벽과 소나무 숲 트레일(30분/50분 루프). 오전 햇살에 가장 화려한 색채. [주의] 붉은 흙먼지로 인한 밝은색 옷/흰 신발 착용 절대 금지",
       "menu": null,
-      "reservation": "당일 운영 확인",
-      "optional": false
+      "reservation": "입장료 현장 €3.50 / 주차: Parking Saint-Michel (Primary)",
+      "optional": false,
+      "place_ref": "roussillon-sentier-des-ocres"
     },
     {
       "id": "roussillon",
       "order": 3,
       "start": "10:30",
-      "end": "12:40",
-      "name": "Roussillon 마을·점심",
-      "place_ref": "roussillon-sentier-des-ocres",
+      "end": "13:15",
+      "name": "Roussillon 구시가지 & 점심",
       "category": "sight",
-      "lat": 43.90202,
-      "lng": 5.29207,
-      "summary": "Place de la Mairie·전망점·오커 골목, 상점 1–2곳만",
-      "menu": "시장 준비식 또는 La Table des Ocres",
-      "reservation": null,
-      "optional": false
+      "lat": 43.9022,
+      "lng": 5.2928,
+      "summary": "오커 파스텔 건물 골목, 벨베데레 전망대 조망 후 마을 비스트로에서 여유로운 프로방스 점심 식사",
+      "menu": "라타투이, 오리 콩피, 니스식 샐러드, 로제 와인",
+      "reservation": "식당: Restaurant David 또는 Le Bistrot de Roussillon",
+      "optional": false,
+      "place_ref": "roussillon-sentier-des-ocres"
     },
     {
       "id": "farm-rest",
       "order": 4,
-      "start": "12:40",
-      "end": "15:30",
-      "name": "농가 귀환·휴식",
+      "start": "13:45",
+      "end": "15:45",
+      "name": "농가 숙소 한낮 휴식 (Siesta)",
       "category": "hotel",
       "lat": 43.87088,
       "lng": 5.12202,
-      "summary": "오커먼지 제거·샤워·낮잠",
+      "summary": "한낮 13:30~15:30 폭염 피하기. 농가 숙소로 복귀하여 수영장/에어컨 휴식 및 독서",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "goult",
       "order": 5,
-      "start": "15:30",
+      "start": "16:00",
       "end": "18:00",
-      "name": "Goult 생활마을",
+      "name": "Goult 조용한 생활마을 & 풍차 언덕",
       "category": "sight",
-      "lat": 43.86306,
-      "lng": 5.24417,
-      "summary": "중앙광장·골목·풍차 — Jason 스케치 30–45분 후 장보기 보완",
-      "menu": null,
-      "reservation": null,
-      "optional": false
+      "lat": 43.8631,
+      "lng": 5.2417,
+      "summary": "관광 인파가 적은 정통 석조 생활마을. 조용한 돌담길, 에밀 졸라 광장, Moulin de Jérusalem 풍차 언덕에서 북쪽 뤼베롱 계곡 조망 (2시간)",
+      "menu": "Café de la Poste 테라스 음료",
+      "reservation": "주차: Place de la Libération / Rue de la République",
+      "optional": false,
+      "place_ref": "goult"
     },
     {
       "id": "farm-return",
       "order": 6,
-      "start": "19:00",
+      "start": "18:30",
       "end": "20:30",
-      "name": "농가 저녁",
+      "name": "농가 숙소 복귀 & 저녁",
       "category": "hotel",
       "lat": 43.87088,
       "lng": 5.12202,
-      "summary": "농가 요리 또는 Bonnieux 선택식",
+      "summary": "숙소 귀환, 여유로운 저녁 식사 및 휴식. 익일 화요 고르드 시장(08:15 출발) 준비",
       "menu": null,
-      "reservation": "Bonnieux 식당은 월요일 운영 재확인",
-      "optional": false
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
@@ -110,10 +114,9 @@
       "from": "farm-depart",
       "to": "sentier-ocres",
       "mode": "car",
-      "duration": "약 19분",
+      "duration": "약 20분",
       "distance": "16.7km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "roadType": "국도 D900 ➔ 지방도 D104 ➔ D227 (루시용 오르막)"
     },
     {
       "from": "sentier-ocres",
@@ -121,17 +124,15 @@
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
+      "roadType": "루시용 마을 보행로"
     },
     {
       "from": "roussillon",
       "to": "farm-rest",
       "mode": "car",
-      "duration": "약 21분",
+      "duration": "약 20분",
       "distance": "17.2km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "roadType": "지방도 D227 ➔ 간선국도 D900 ➔ 농로"
     },
     {
       "from": "farm-rest",
@@ -139,8 +140,7 @@
       "mode": "car",
       "duration": "약 13분",
       "distance": "10.8km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "roadType": "농로 ➔ 간선국도 D900 ➔ 지방도 D218"
     },
     {
       "from": "goult",
@@ -148,12 +148,12 @@
       "mode": "car",
       "duration": "약 13분",
       "distance": "10.9km",
-      "line": null,
-      "geometryStatus": "verified-cache"
+      "roadType": "지방도 D218 ➔ 간선국도 D900 ➔ 농로"
     }
   ],
   "transport": [
-    "렌터카 (오전 오커길 · 오후 생활마을)"
+    "렌터카 (Domaine des Peyre ↔ Roussillon ↔ Goult ↔ 숙소)",
+    "황토길 오커 트레일 도보 (30분/50분 코스)"
   ],
   "food": [
     "Roussillon 가벼운 점심",
@@ -164,7 +164,7 @@
     "월요일 식당 휴무 주의",
     "Goult 또는 Bonnieux 택1"
   ],
-  "backup": "우천·폐쇄 시 오커길 축소, 마을·카페 중심",
+  "backup": "1. 우천/트레일 폐쇄 시 오커길 도보를 생략하고 루시용 구시가지 실내 갤러리 및 Goult 긴 점심/카페로 전환\n2. 피로 시 오후 Goult 방문을 생략하고 숙소 전일 휴식\n3. 원할 경우 Goult 대신 Bonnieux(남향 계곡 뷰)로 대체 가능",
   "map": {
     "zoom": 11,
     "center": [
@@ -174,9 +174,9 @@
     "routeCache": "routes/day-17-driving-osrm.json"
   },
   "needsReview": [
-    "농가 후보 승인",
-    "Sentier des Ocres 당일 운영·주차 확인",
-    "Bonnieux 식당 월요일 운영 확인"
+    "Sentier des Ocres 오커 흙먼지 대비 복장(어두운색 의류/편한 신발)",
+    "루시용 주차장(Parking Saint-Michel) 오전 09:00 이전 선점",
+    "루시용/구트 점심 식당 월요일 영업 여부 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-17",
