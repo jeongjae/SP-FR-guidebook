@@ -320,6 +320,12 @@
         },
         "optional": {
           "type": "boolean"
+        },
+        "place_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
         }
       },
       "additionalProperties": false

@@ -3,113 +3,115 @@
   "day": 36,
   "date": "2026-10-03",
   "city": "Paris",
-  "title": "Arc 전날의 유연한 문화일",
+  "title": "마르모탕 모네 <인상, 해돋이> & 파시 고급 지구 산책",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "09:00",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 1km · 도보 + 메트로",
-  "fatigue": "2–3",
+  "startTime": "08:00",
+  "endTime": "20:00",
+  "totalDuration": "12시간",
+  "totalDistance": "메트로/버스 + 16구 도보 약 4.0km",
+  "fatigue": "2",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "slow-morning",
+      "id": "morning-routine",
       "order": 1,
-      "start": "09:00",
-      "end": "10:30",
-      "name": "느린 아침",
+      "start": "08:00",
+      "end": "12:45",
+      "name": "Standard Home Morning (아침·운동·장보기·점심)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "다음 날 이른 이동(Arc)을 고려",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "익일 10/4 개선문상 경마 축제를 대비한 여유로운 오전 일상 및 가벼운 점심",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     },
     {
-      "id": "bookshop-market",
+      "id": "marmottan-monet",
       "order": 2,
-      "start": "11:00",
-      "end": "12:30",
-      "name": "토요일 시장 — Marché Lecourbe",
-      "category": "shopping",
-      "lat": 48.8404,
-      "lng": 2.3475,
-      "summary": "Rue Lecourbe 07:00–14:30, 도보 15분. Lefebvre·Cervantès 도 토요일이지만 도보 22–25분",
+      "start": "14:00",
+      "end": "16:00",
+      "name": "Musée Marmottan Monet (마르모탕 모네 미술관)",
+      "category": "culture",
+      "lat": 48.8592,
+      "lng": 2.2672,
+      "summary": "인상주의라는 이름을 탄생시킨 모네의 <인상, 해돋이(Impression, soleil levant)> 원작 및 지베르니 말년 대형 수련 컬렉션, 베르트 모리조 전시실 집중 감상 (2시간)",
       "menu": null,
-      "reservation": null,
-      "optional": true
+      "reservation": "사전 시간지정 예매 권장 (14:00 슬롯)",
+      "optional": false,
+      "place_ref": "musee-marmottan-monet"
     },
     {
-      "id": "culture-pick",
+      "id": "ranelagh-passy",
       "order": 3,
-      "start": "14:00",
-      "end": "17:00",
-      "name": "박물관 1곳 / BnF Richelieu / 동네 권역",
-      "category": "culture",
-      "lat": 48.867,
-      "lng": 2.33838,
-      "summary": "미완료 우선, 3시간 상한 — 한 권역만",
-      "menu": null,
-      "reservation": "당일 운영 확인",
+      "start": "16:00",
+      "end": "17:30",
+      "name": "Jardin du Ranelagh & Passy 역사지구 산책",
+      "category": "sight",
+      "lat": 48.858,
+      "lng": 2.2725,
+      "summary": "라늘라 정원 조각 산책 ➔ 16구 파시(Passy) 부르주아 지구, 발자크 생가 인근 고즈넉한 골목 산책 (90분)",
+      "menu": "파시 제과점 마카롱, 에스프레소",
+      "reservation": null,
       "optional": false,
-      "place_ref": "bnf-richelieu"
+      "place_ref": null
     },
     {
       "id": "paris-return",
       "order": 4,
-      "start": "17:00",
-      "end": null,
-      "name": "장보기·숙소식",
+      "start": "18:00",
+      "end": "20:00",
+      "name": "15구 조기 귀환 & 저녁 (익일 Arc 대회 휴식)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "Arc 티켓·교통 확인, 야간행사 없음",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "숙소 조기 복귀 후 편안한 저녁 식사 및 익일 경마 대회 드레스코드/티켓 점검",
       "menu": null,
-      "reservation": "Arc 입장권·교통 최종 확인",
+      "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "slow-morning",
-      "to": "bookshop-market",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.4km",
+      "from": "morning-routine",
+      "to": "marmottan-monet",
+      "mode": "bus",
+      "duration": "32번 버스 또는 메트로 9호선 약 25분",
+      "distance": "3.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "bookshop-market",
-      "to": "culture-pick",
-      "mode": "metro",
-      "duration": "25분",
-      "distance": null,
-      "line": "메트로",
+      "from": "marmottan-monet",
+      "to": "ranelagh-passy",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "culture-pick",
+      "from": "ranelagh-passy",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "25분",
-      "distance": null,
-      "line": "메트로",
+      "duration": "메트로 약 20분",
+      "distance": "3.2km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "도보·메트로"
+    "메트로 9호선 (La Muette역) 또는 32번 버스",
+    "파리 16구 라늘라 정원 및 파시 도보"
   ],
   "food": [
     "점심·휴식 12:30–14:00",
@@ -120,7 +122,7 @@
     "Arc 토요 프로그램·Hamlet 조합 제외",
     "저녁은 Arc 준비"
   ],
-  "backup": "피로 시 문화일정 삭제, 생활일 전환",
+  "backup": "우천 시 라늘라 공원 산책을 생략하고 마르모탕 미술관 내부 컬렉션 감상 후 15구 조기 복귀",
   "map": {
     "zoom": 13,
     "center": [
@@ -130,10 +132,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "Arc 입장권·이동 교통 최종 확인",
-    "박물관/BnF 당일 운영 확인",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "Musée Marmottan Monet 14:00 슬롯 예매 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-10-10월3일",

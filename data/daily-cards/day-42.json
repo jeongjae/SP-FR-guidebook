@@ -3,132 +3,87 @@
   "day": 42,
   "date": "2026-10-09",
   "city": "Paris",
-  "title": "체크아웃과 CDG — 출국일",
+  "title": "파리 15박 체크아웃 ➔ CDG 공항 ➔ 인천 귀국 (OZ502)",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:00",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "공항 이동 약 30km",
-  "fatigue": "4",
+  "endTime": "19:10",
+  "totalDuration": "11시간 10분",
+  "totalDistance": "택시/RER 약 35km + 비행",
+  "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "morning",
+      "id": "paris-packing-checkout",
       "order": 1,
       "start": "08:00",
-      "end": "09:00",
-      "name": "아침·냉장고·남은 음식 정리",
-      "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "유리병·냉장식품 처리 — 멀리 이동하지 않음",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
-    },
-    {
-      "id": "pack",
-      "order": 2,
-      "start": "09:00",
-      "end": "10:00",
-      "name": "최종 포장",
-      "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "전날 절반을 싸 뒀으므로 마무리만 — 액체·깨지기 쉬운 물품 분리",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
-    },
-    {
-      "id": "checkout",
-      "order": 3,
-      "start": "10:00",
       "end": "11:00",
-      "name": "체크아웃·짐 인수",
+      "name": "15구 숙소 최종 짐 정리 & 체크아웃",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "체크아웃 11:00까지. 짐은 전날 밤에 싼다 — 출국일 아침에 정리하지 않는다",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "15박 장기 체류 짐 최종 패킹, 분리수거 및 숙소 점검. 11:00 정식 체크아웃",
       "menu": null,
-      "reservation": "체크아웃 조건·짐 보관 확인",
+      "reservation": "체크아웃 11:00",
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     },
     {
-      "id": "last-walk",
-      "order": 4,
-      "start": "11:00",
+      "id": "farewell-lunch",
+      "order": 2,
+      "start": "11:30",
       "end": "13:00",
-      "name": "숙소 반경 마지막 산책·가벼운 점심",
+      "name": "15구 생활권 마지막 점심 식사",
       "category": "food",
-      "lat": 48.8399,
-      "lng": 2.3455,
-      "summary": "새 지역·쇼핑권 추가 금지, 과식 금지. 13:00 여권·탑승권·수하물 최종 확인",
-      "menu": "숙소 도보권 — 무예약",
+      "lat": 48.8468,
+      "lng": 2.2905,
+      "summary": "단골 15구 비스트로/카페에서 파리 생활을 회고하는 마지막 점심 식사",
+      "menu": "크로크무슈, 샐러드, 에스프레소",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": null
     },
     {
-      "id": "cdg",
-      "order": 5,
-      "start": "14:00",
-      "end": "16:10",
-      "name": "CDG 이동·수속·détaxe",
+      "id": "cdg-transfer",
+      "order": 3,
+      "start": "13:30",
+      "end": "15:00",
+      "name": "15구 숙소 ➔ CDG 공항 터미널 1 이동",
       "category": "transport",
-      "lat": 49.0068908,
-      "lng": 2.571082,
-      "summary": "14:00 이전 출발 권장 — 국제선 3시간 전, détaxe(PABLO) 줄 완충 포함",
+      "lat": 49.0097,
+      "lng": 2.5479,
+      "summary": "13:30 공식 택시 탑승(파리 우안/좌안 정액 요금 €65, 약 60~75분 소요). 15:00 CDG 터미널 1 여유롭게 도착 (출발 4시간 전 도착으로 교통체증/수속 리스크 완전 차단)",
       "menu": null,
-      "reservation": "터미널·이동수단 확인 (pending)",
-      "optional": false
+      "reservation": "공식 택시 G7 또는 호텔 콜택시",
+      "optional": false,
+      "place_ref": null
     },
     {
-      "id": "departure",
-      "order": 6,
-      "start": "19:10",
-      "end": null,
-      "name": "OZ502 인천행 출국",
+      "id": "cdg-departure",
+      "order": 4,
+      "start": "15:00",
+      "end": "19:10",
+      "name": "CDG 공항 출국 수속 & OZ502 탑승",
       "category": "transport",
-      "lat": 49.0068908,
-      "lng": 2.571082,
-      "summary": "아시아나 OZ502 — 10/10 14:10 인천 도착. 예약 확정",
+      "lat": 49.0097,
+      "lng": 2.5479,
+      "summary": "아시아나 카운터 수하물 위탁 ➔ PABLO 전자 택스리펀 ➔ 보안검색 및 출국심사 ➔ 면세점/라운지 휴식 ➔ 19:10 OZ502 탑승",
       "menu": null,
-      "reservation": "예약완료 OZ502 — CDG 19:10 출발",
-      "optional": false
+      "reservation": "예약확정 아시아나항공 OZ502 (CDG 19:10 ➔ ICN 10/10 14:10)",
+      "optional": false,
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "morning",
-      "to": "pack",
-      "mode": "walk",
-      "duration": "0분",
-      "distance": "숙소",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "pack",
-      "to": "checkout",
-      "mode": "walk",
-      "duration": "0분",
-      "distance": "숙소",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "checkout",
-      "to": "last-walk",
+      "from": "paris-packing-checkout",
+      "to": "farewell-lunch",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
@@ -136,26 +91,27 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "last-walk",
-      "to": "cdg",
+      "from": "farewell-lunch",
+      "to": "cdg-transfer",
       "mode": "taxi",
-      "duration": "약 1시간 (여유 포함)",
-      "distance": "약 30km",
-      "line": "RER B 대안 — 숙소 위치별 확인",
+      "duration": "택시 약 75분 (교통 완충 포함)",
+      "distance": "35.0km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "cdg",
-      "to": "departure",
+      "from": "cdg-transfer",
+      "to": "cdg-departure",
       "mode": "walk",
-      "duration": "0분",
-      "distance": "터미널 내",
+      "duration": "공항 내 이동",
+      "distance": "0.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "택시 또는 RER B (확정 필요)"
+    "파리 공식 택시 (15구 ➔ CDG 터미널 1 정액제 약 60분, €65)",
+    "아시아나항공 OZ502 (CDG 19:10 ➔ ICN 10/10 14:10, 확정)"
   ],
   "food": [
     "숙소권 가벼운 점심 — 과식 금지",
@@ -167,7 +123,7 @@
     "짐은 42일 누적 — 전날 절반 포장",
     "détaxe PABLO 줄 완충"
   ],
-  "backup": "교통장애 시 즉시 출발 — 도심 일정 전부 삭제",
+  "backup": "고속도로 정체 시 13:00 조기 출발하여 15:00 이전 공항 도착 완수",
   "map": {
     "zoom": 10,
     "center": [
@@ -177,10 +133,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "CDG 터미널·공항 이동수단 확정",
-    "détaxe 대상 물품·서류 정리",
-    "항공권 확정 (2026-08-13 반영): OZ502 CDG 19:10 → 인천 10/10 14:10",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "CDG 터미널 1 택스리펀(PABLO 바코드 스캔) 준비",
+    "아시아나 OZ502 19:10 탑승권 및 수하물 태그 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일",

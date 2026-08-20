@@ -100,28 +100,36 @@
       "to": "liberation-lunch",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.2km"
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "liberation-lunch",
       "to": "charles-negre",
       "mode": "walk",
       "duration": "15분",
-      "distance": "1.4km"
+      "distance": "1.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "charles-negre",
       "to": "promenade",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "promenade",
       "to": "nice-stay-return",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.7km"
+      "distance": "0.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

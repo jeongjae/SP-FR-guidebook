@@ -70,14 +70,18 @@
       "to": "barcelona-checkin",
       "mode": "taxi",
       "duration": "약 30~40분",
-      "distance": "약 12km"
+      "distance": "약 12km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "barcelona-checkin",
       "to": "barcelona-sleep",
       "mode": "walk",
       "duration": "0분",
-      "distance": "숙소 내부"
+      "distance": "숙소 내부",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

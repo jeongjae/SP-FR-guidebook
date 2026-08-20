@@ -100,28 +100,36 @@
       "to": "avignon-parking-lunch",
       "mode": "car",
       "duration": "약 40분",
-      "distance": "35.0km"
+      "distance": "35.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "avignon-parking-lunch",
       "to": "avignon-checkin",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "avignon-checkin",
       "to": "teinturiers-walls",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "teinturiers-walls",
       "to": "avignon-return",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.7km"
+      "distance": "0.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

@@ -130,42 +130,54 @@
       "to": "palais",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "palais",
       "to": "palais-lunch",
       "mode": "walk",
       "duration": "3분",
-      "distance": "0.1km"
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "palais-lunch",
       "to": "rocher-doms",
       "mode": "walk",
       "duration": "8분 (오르막)",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "rocher-doms",
       "to": "pont",
       "mode": "walk",
       "duration": "8분 (내리막)",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "pont",
       "to": "vieil-avignon",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieil-avignon",
       "to": "avignon-return",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

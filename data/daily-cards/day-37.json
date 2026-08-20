@@ -3,112 +3,91 @@
   "day": 37,
   "date": "2026-10-04",
   "city": "Paris",
-  "title": "Arc de Triomphe 경마 — 메인 레이스 데이",
+  "title": "개선문상 경마 대회 (Qatar Prix de l'Arc de Triomphe)",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:00",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "대중교통 왕복 (Bois de Boulogne)",
-  "fatigue": "5",
+  "startTime": "09:30",
+  "endTime": "20:30",
+  "totalDuration": "11시간",
+  "totalDistance": "메트로+셔틀 왕복 약 18km",
+  "fatigue": "4",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "prep",
+      "id": "longchamp-transfer",
       "order": 1,
-      "start": "08:00",
-      "end": "09:00",
-      "name": "아침·티켓·교통 최종 확인",
-      "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "공식 개장·경주시간 기준 이동 역산",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
-    },
-    {
-      "id": "to-longchamp",
-      "order": 2,
-      "start": "09:00",
-      "end": "10:30",
-      "name": "ParisLongchamp 이동 — 무료 셔틀",
-      "category": "transport",
-      "lat": 48.8577383,
-      "lng": 2.2329812,
-      "summary": "메트로 Porte Maillot(1) 또는 Porte d'Auteuil(10)까지 간 뒤 경마장행 무료 셔틀버스. 환승·입장 대기 여유",
-      "menu": null,
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "arc-race",
-      "order": 3,
       "start": "10:30",
-      "end": "18:00",
-      "name": "Qatar Prix de l'Arc de Triomphe",
-      "category": "activity",
-      "lat": 48.8577383,
-      "lng": 2.2329812,
-      "summary": "경기장 식사·휴식·관람 포함 거의 종일 — 같은 날 공연은 충돌로 제외",
+      "end": "11:30",
+      "name": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
+      "category": "transport",
+      "lat": 48.858,
+      "lng": 2.234,
+      "summary": "10:30 출발 ➔ 메트로 10호선 Porte d'Auteuil역 ➔ 개선문상 전용 무료 셔틀버스 탑승 ➔ 11:30 파리롱샹 경마장 도착",
       "menu": null,
-      "reservation": "티켓 BOOK NOW 상태 (8/5 확인) — 예매 잠금",
-      "optional": false
+      "reservation": "Qatar Prix de l'Arc 티켓 (General Admission / Grandstand)",
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "prix-de-l-arc",
+      "order": 2,
+      "start": "11:30",
+      "end": "18:00",
+      "name": "Qatar Prix de l'Arc de Triomphe (개선문상 본선)",
+      "category": "sight",
+      "lat": 48.858,
+      "lng": 2.234,
+      "summary": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 16:05 개선문상 메인 레이스(2,400m) 직관, 우승마 시상식 관람 (6.5시간)",
+      "menu": "푸드빌리지 버거/샴페인, 프렌치 프라이",
+      "reservation": "예약확정 Qatar Prix de l'Arc de Triomphe",
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "paris-return",
-      "order": 4,
-      "start": "18:00",
-      "end": null,
-      "name": "혼잡 감안 귀환·완전 휴식",
+      "order": 3,
+      "start": "18:30",
+      "end": "20:30",
+      "name": "파리롱샹 ➔ 15구 숙소 귀환 & 저녁",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "셔틀은 메인 레이스 직후가 가장 붐빈다 — 한 경주 흘려보내고 나온다. 추가 명소·쇼핑 금지, 저녁은 숙소식",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "경기 종료 후 셔틀버스 + 메트로 10호선 탑승 ➔ 15구 숙소 복귀. 15구 숙소식 저녁 식사 및 휴식",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "prep",
-      "to": "to-longchamp",
-      "mode": "metro",
-      "duration": "약 1시간",
-      "distance": null,
-      "line": "메트로+환승 (셔틀 여부 확인)",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "to-longchamp",
-      "to": "arc-race",
-      "mode": "walk",
-      "duration": "0분",
-      "distance": "현장",
+      "from": "longchamp-transfer",
+      "to": "prix-de-l-arc",
+      "mode": "bus",
+      "duration": "셔틀버스 15분",
+      "distance": "3.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "arc-race",
+      "from": "prix-de-l-arc",
       "to": "paris-return",
-      "mode": "metro",
-      "duration": "약 1시간",
-      "distance": null,
-      "line": "혼잡 — 여유 확보",
+      "mode": "bus",
+      "duration": "셔틀버스 + 메트로 10호선 약 40분 (인파 완충)",
+      "distance": "8.5km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "메트로 + 무료 셔틀 (Porte Maillot · Porte d'Auteuil)"
+    "메트로 10호선 (Porte d'Auteuil역) + France Galop 공식 무료 셔틀버스(Navette)",
+    "파리롱샹 경마장 보행"
   ],
   "food": [
     "경기장 식사",
@@ -119,7 +98,7 @@
     "10/3–4 개최·10/4 메인 확인됨",
     "야간행사 전면 금지"
   ],
-  "backup": "우천 시 복장·체류 조절 — 일정 자체는 유지",
+  "backup": "퇴장 시 셔틀버스 대기열 과다 시 Porte de Passy 방향 도보 15분 후 버스/우버 이용",
   "map": {
     "zoom": 12,
     "center": [
@@ -129,10 +108,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Arc 티켓 예매·수령 방식 확정",
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "Arc 무료 셔틀 첫차·배차·막차 시각 당일 공식 공지 확인 (운행 자체는 2026-08-14 France Galop 확인)",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "Prix de l'Arc 10/4 메인 레이스 시간표(16:05) 및 셔틀 운행 재확인",
+    "스마트 캐주얼 드레스코드 및 가방 반입 규정 준수"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-11-10월4일",

@@ -130,42 +130,54 @@
       "to": "arenes",
       "mode": "train",
       "duration": "TER 17분 + 도보 8분",
-      "distance": "약 36km"
+      "distance": "약 36km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "arenes",
       "to": "theatre",
       "mode": "walk",
       "duration": "3분",
-      "distance": "0.2km"
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "theatre",
       "to": "forum-lunch",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "forum-lunch",
       "to": "saint-trophime",
       "mode": "walk",
       "duration": "3분",
-      "distance": "0.2km"
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "saint-trophime",
       "to": "la-roquette",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "la-roquette",
       "to": "avignon-return",
       "mode": "train",
       "duration": "도보 12분 + TER 17분",
-      "distance": "약 36km"
+      "distance": "약 36km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

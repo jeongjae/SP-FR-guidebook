@@ -116,7 +116,9 @@
       "mode": "car",
       "duration": "약 20분",
       "distance": "16.7km",
-      "roadType": "국도 D900 ➔ 지방도 D104 ➔ D227 (루시용 오르막)"
+      "roadType": "국도 D900 ➔ 지방도 D104 ➔ D227 (루시용 오르막)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "sentier-ocres",
@@ -124,7 +126,9 @@
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
-      "roadType": "루시용 마을 보행로"
+      "roadType": "루시용 마을 보행로",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "roussillon",
@@ -132,7 +136,9 @@
       "mode": "car",
       "duration": "약 20분",
       "distance": "17.2km",
-      "roadType": "지방도 D227 ➔ 간선국도 D900 ➔ 농로"
+      "roadType": "지방도 D227 ➔ 간선국도 D900 ➔ 농로",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "farm-rest",
@@ -140,7 +146,9 @@
       "mode": "car",
       "duration": "약 13분",
       "distance": "10.8km",
-      "roadType": "농로 ➔ 간선국도 D900 ➔ 지방도 D218"
+      "roadType": "농로 ➔ 간선국도 D900 ➔ 지방도 D218",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "goult",
@@ -148,7 +156,9 @@
       "mode": "car",
       "duration": "약 13분",
       "distance": "10.9km",
-      "roadType": "지방도 D218 ➔ 간선국도 D900 ➔ 농로"
+      "roadType": "지방도 D218 ➔ 간선국도 D900 ➔ 농로",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

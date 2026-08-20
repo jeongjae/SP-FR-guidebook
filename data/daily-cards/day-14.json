@@ -131,42 +131,54 @@
       "to": "cassis-parking",
       "mode": "car",
       "duration": "35분",
-      "distance": "48.0km"
+      "distance": "48.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "cassis-parking",
       "to": "calanques",
       "mode": "walk",
       "duration": "15분",
-      "distance": "1.0km"
+      "distance": "1.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "calanques",
       "to": "cassis",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "cassis",
       "to": "cassis-port-miou",
       "mode": "walk",
       "duration": "15분",
-      "distance": "1.2km"
+      "distance": "1.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "cassis-port-miou",
       "to": "aix-return",
       "mode": "car",
       "duration": "35분",
-      "distance": "48.0km"
+      "distance": "48.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "aix-return",
       "to": "aix-stay-return",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

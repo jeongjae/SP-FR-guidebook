@@ -3,117 +3,96 @@
   "day": 35,
   "date": "2026-10-02",
   "city": "Paris",
-  "title": "시장·서점·카페·스케치 — 오페라 다음 날",
+  "title": "루브르 박물관 4시간 마스터피스 집중 관람",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "09:30",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 1.5km · 도보",
-  "fatigue": "1–2",
+  "startTime": "08:00",
+  "endTime": "21:00",
+  "totalDuration": "13시간",
+  "totalDistance": "메트로 + 루브르 실내 도보 약 6.0km",
+  "fatigue": "4",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "late-morning",
+      "id": "morning-routine",
       "order": 1,
-      "start": "09:30",
-      "end": "11:00",
-      "name": "늦은 기상·느린 아침",
+      "start": "08:00",
+      "end": "12:45",
+      "name": "Standard Home Morning (아침·운동·장보기·점심)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "정식운동 생략 — 전날 수면 회수",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "오전 숙소 생활 루틴 및 여유로운 점심 식사",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     },
     {
-      "id": "market",
+      "id": "musee-du-louvre",
       "order": 2,
-      "start": "11:00",
-      "end": "13:30",
-      "name": "금요일 시장 — Marché Saint-Charles",
-      "category": "shopping",
-      "lat": 48.8404,
-      "lng": 2.3475,
-      "summary": "Rue Saint-Charles 07:00–13:30. 숙소에서 도보 8분 — 금요일에 서는 15구 시장은 여기뿐이다",
-      "menu": "시장식 또는 숙소 점심",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "bookshop",
-      "order": 3,
       "start": "14:00",
-      "end": "15:30",
-      "name": "동네 독립서점·카페",
-      "category": "cafe",
-      "lat": 48.8394,
-      "lng": 2.344,
-      "summary": "앉는 시간을 일정에 포함",
+      "end": "18:00",
+      "name": "Musée du Louvre (루브르 박물관 4시간 집중 관람)",
+      "category": "culture",
+      "lat": 48.8606,
+      "lng": 2.3376,
+      "summary": "유리 피라미드 진입 ➔ 드농관 1층 <모나리자>, <사모트라케의 니케>, 다비드 <나폴레옹 대관식>, 들라크루아 <민중을 이끄는 자유의 여신> ➔ 쉴리관 <밀로의 비너스>, 스핑크스 ➔ 리슐리외관 나폴레옹 3세 아파트 (4시간)",
       "menu": null,
-      "reservation": null,
-      "optional": false
+      "reservation": "사전 시간지정 예약 필수 (14:00 슬롯)",
+      "optional": false,
+      "place_ref": "musee-du-louvre"
     },
     {
-      "id": "sketch",
-      "order": 4,
-      "start": "15:30",
-      "end": "17:00",
-      "name": "Jason 스케치 / Julia 산책·카페",
-      "category": "activity",
-      "lat": 48.8399,
-      "lng": 2.3459,
-      "summary": "같은 권역에서 각자 회복 — 스케치는 오래 앉는 장치",
+      "id": "cour-carree-seine",
+      "order": 3,
+      "start": "18:00",
+      "end": "19:15",
+      "name": "Cour Carrée & 센 강변 일몰 산책",
+      "category": "sight",
+      "lat": 48.8597,
+      "lng": 2.3389,
+      "summary": "루브르 르네상스 안뜰 쿠르 카레(Cour Carrée)를 통과하여 예술의 다리(Pont des Arts) 및 센 강변 일몰 산책 (75분)",
       "menu": null,
       "reservation": null,
-      "optional": true
+      "optional": false,
+      "place_ref": null
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "17:00",
-      "end": null,
-      "name": "숙소 귀환·세탁 또는 자유",
+      "order": 4,
+      "start": "19:45",
+      "end": "21:00",
+      "name": "15구 숙소 귀환 & 저녁",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "고정 저녁행사 없음 — 재즈·연극·교회공연 추가 금지",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "메트로 1+8호선으로 15구 귀환 후 저녁 식사",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "late-morning",
-      "to": "market",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.4km",
+      "from": "morning-routine",
+      "to": "musee-du-louvre",
+      "mode": "metro",
+      "duration": "메트로 8+1호선 약 25분",
+      "distance": "4.8km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "market",
-      "to": "bookshop",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "bookshop",
-      "to": "sketch",
+      "from": "musee-du-louvre",
+      "to": "cour-carree-seine",
       "mode": "walk",
       "duration": "3분",
       "distance": "0.2km",
@@ -121,17 +100,18 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "sketch",
+      "from": "cour-carree-seine",
       "to": "paris-return",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "mode": "metro",
+      "duration": "메트로 1+8호선 약 25분",
+      "distance": "5.0km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "도보 (한 생활권)"
+    "메트로 8호선 + 1호선 (Lourmel ➔ Palais Royal - Musée du Louvre)",
+    "루브르 박물관 회랑 도보"
   ],
   "food": [
     "시장식 또는 숙소 점심",
@@ -142,7 +122,7 @@
     "시장·서점·카페를 한 생활권에서",
     "고정행사 없음"
   ],
-  "backup": "비·피로 시 숙소·카페만",
+  "backup": "인지 피로 시 리슐리외관을 생략하고 드농관 핵심 걸작 위주 2.5시간 관람 후 카페 앙젤리나 휴식",
   "map": {
     "zoom": 15,
     "center": [
@@ -152,8 +132,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "Musée du Louvre 14:00 슬롯 사전 예매 필수"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-9-10월2일"

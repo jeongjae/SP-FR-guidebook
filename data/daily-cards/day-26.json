@@ -100,28 +100,36 @@
       "to": "vieille-ville",
       "mode": "train",
       "duration": "TER 1시간 58분 + 도보 5분",
-      "distance": "약 140km"
+      "distance": "약 140km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieille-ville",
       "to": "savoy-lunch",
       "mode": "walk",
       "duration": "3분",
-      "distance": "0.1km"
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "savoy-lunch",
       "to": "lakefront",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "lakefront",
       "to": "annecy-return",
       "mode": "train",
       "duration": "도보 10분 + TER 1시간 58분",
-      "distance": "약 140km"
+      "distance": "약 140km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

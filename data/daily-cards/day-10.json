@@ -145,49 +145,63 @@
       "to": "villefranche-sur-mer",
       "mode": "train",
       "duration": "TER 7분 + 도보 3분",
-      "distance": "약 6km"
+      "distance": "약 6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "villefranche-sur-mer",
       "to": "eze-village",
       "mode": "bus",
       "duration": "버스/환승 약 20~25분",
-      "distance": "약 6km"
+      "distance": "약 6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "eze-village",
       "to": "monaco-port-lunch",
       "mode": "bus",
       "duration": "버스 602 약 20분",
-      "distance": "약 8km"
+      "distance": "약 8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "monaco-port-lunch",
       "to": "le-rocher",
       "mode": "walk",
       "duration": "공공 엘리베이터 + 도보 10분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "le-rocher",
       "to": "menton",
       "mode": "train",
       "duration": "도보 12분 + TER 11분 + 도보 10분",
-      "distance": "약 10km"
+      "distance": "약 10km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "menton",
       "to": "menton-dinner",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "menton-dinner",
       "to": "nice-return",
       "mode": "train",
       "duration": "도보 12분 + TER 35분 + 도보 10분",
-      "distance": "약 25km"
+      "distance": "약 25km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

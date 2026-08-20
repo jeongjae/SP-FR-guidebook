@@ -130,42 +130,54 @@
       "to": "fourviere",
       "mode": "tram",
       "duration": "푸니쿨라 5분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "fourviere",
       "to": "rosaire-descent",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.2km"
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "rosaire-descent",
       "to": "vieux-lyon-lunch",
       "mode": "walk",
       "duration": "15분 (정원 하산)",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieux-lyon-lunch",
       "to": "vieux-lyon",
       "mode": "walk",
       "duration": "3분",
-      "distance": "0.1km"
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieux-lyon",
       "to": "saone-presquile",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.4km"
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "saone-presquile",
       "to": "lyon-bouchon-dinner",
       "mode": "metro",
       "duration": "메트로 D선 15분",
-      "distance": "3.5km"
+      "distance": "3.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

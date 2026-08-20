@@ -30,7 +30,7 @@
       "lng": 4.868933,
       "summary": "Lagrange Aparthotel Lyon Lumière 체크아웃 후 택시/메트로로 Part-Dieu역 이동 (15분 소요)",
       "menu": null,
-      "reservation": "체크아웃 완료 (Lagrange 5882.730.884)",
+      "reservation": "체크아웃 완료 (Lagrange Lumière [CONFIRMED])",
       "optional": false,
       "place_ref": null
     },
@@ -60,7 +60,7 @@
       "lng": 2.3734,
       "summary": "TGV INOUI 6618 탑승 (13:04 출발 ➔ 15:00 파리 리옹역 도착, 1등석 편안한 1시간 56분 고속주행)",
       "menu": null,
-      "reservation": "예약확정 TGV INOUI 6618 (X6CVW5, 1등석)",
+      "reservation": "예약확정 TGV INOUI 6618 (1등석 확정 [CONFIRMED])",
       "optional": false,
       "place_ref": null
     },
@@ -116,40 +116,50 @@
       "to": "part-dieu-lunch",
       "mode": "taxi",
       "duration": "약 15분",
-      "distance": "3.5km"
+      "distance": "3.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "part-dieu-lunch",
       "to": "tgv-to-paris",
       "mode": "train",
       "duration": "TGV 1시간 56분",
-      "distance": "약 465km"
+      "distance": "약 465km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "tgv-to-paris",
       "to": "paris-checkin",
       "mode": "taxi",
       "duration": "약 35분",
-      "distance": "7.5km"
+      "distance": "7.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "paris-checkin",
       "to": "first-grocery",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "first-grocery",
       "to": "paris-return",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 확정 X6CVW5)",
-    "파리 택시 / 메트로 (Gare de Lyon ➔ 78 Rue de Lourmel, 15구)"
+    "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 확정 [CONFIRMED])",
+    "Paris Gare de Lyon ➔ 15구 숙소 택시 이동 (약 35분 소요)"
   ],
   "food": [
     "첫 장보기 — 필수품만",

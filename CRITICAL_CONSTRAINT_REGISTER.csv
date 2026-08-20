@@ -27,18 +27,25 @@ CST-BKG-20,20,FIXED_BOOKING,Day 20 fixed booking(s): palais: 사전 시간지정
 CST-BKG-21,21,FIXED_BOOKING,Day 21 fixed booking(s): uzes: 주차: Parking Cordeliers (Primary) / Parking Gide (Backup); uzes-lunch: 현장 선택; pont-du-gard: 주차/입장권 (€9.50/차량 포함) / Left Bank (Rive Gauche) 주차장,HIGH,45
 CST-BKG-22,22,FIXED_BOOKING,Day 22 fixed booking(s): avignon-centre: SNCF Connect (30분 간격 배차); arenes: 현장 발권 / JEP 무료/특별 입장; forum-lunch: 현장 선택,HIGH,45
 CST-TRF-23,23,TRANSFER_DAY,"Day 23 lodging transition (): Check-out, luggage transit, check-in window.",HIGH,60
-CST-BKG-23,23,FIXED_BOOKING,Day 23 fixed booking(s): avignon-tgv: 예약확정 Hertz L672E080313 — 9/20 09:00 반납; part-dieu: 예약완료 TGV INOUI 12176 · 1등석 (10:22~11:28); lyon-checkin: 예약확정 Lagrange Aparthotel Lyon Lumière (5882.730.884) — 체크인 15:00; lyon-return: 저녁 예약 권장 (Café Comptoir Abel 등),CRITICAL,45
+CST-BKG-23,23,FIXED_BOOKING,Day 23 fixed booking(s): avignon-tgv: 예약확정 Hertz L672E080313 — 9/20 09:00 반납; part-dieu: 예약완료 TGV INOUI 12176 · 1등석 (10:22~11:28); lyon-checkin: 예약확정 Lagrange Aparthotel Lyon Lumière ([CONFIRMED]) — 체크인 15:00; lyon-return: 저녁 예약 권장 (Café Comptoir Abel 등),CRITICAL,45
 CST-BKG-24,24,FIXED_BOOKING,Day 24 fixed booking(s): funicular-ascent: TCL 1회권/24시간권 (€2.00 / €6.70); fourviere: 대성당/로마극장 무료 입장; vieux-lyon-lunch: 현장 선택; lyon-bouchon-dinner: 저녁 예약 확정/권장 (Daniel & Denise Créqui / Saint-Jean),HIGH,45
-CST-BKG-25,25,FIXED_BOOKING,Day 25 fixed booking(s): halles: 현장 선택; tete-dor: 무료 입장,HIGH,45
+CST-BKG-25,25,FIXED_BOOKING,Day 25 fixed booking(s): maison-des-canuts: 11:00 직조 시연 슬롯 현장/사전 예약 (€10); halles-gastronomy: 시장 내 식당 현장 착석 (12:30); tete-dor: 무료 입장,HIGH,45
 CST-BKG-26,26,FIXED_BOOKING,Day 26 fixed booking(s): part-dieu-departure: SNCF Connect (현장/사전 발권); savoy-lunch: 현장 선택 / 대기 적은 곳 우선; lakefront: 크루즈 현장 발권 (선택); annecy-return: SNCF Connect,HIGH,45
 CST-TRF-27,27,TRANSFER_DAY,"Day 27 lodging transition (): Check-out, luggage transit, check-in window.",MEDIUM,30
-CST-BKG-27,27,FIXED_BOOKING,"Day 27 fixed booking(s): lyon-checkout: 체크아웃 완료 (Lagrange 5882.730.884); tgv-to-paris: 예약확정 TGV INOUI 6618 (X6CVW5, 1등석); paris-checkin: 예약완료 78 Rue de Lourmel, 75015 Paris (9/24 15:00 체크인 ~ 10/9 11:00 체크아웃); paris-return: 현장 선택",CRITICAL,45
-CST-BKG-30,30,FIXED_BOOKING,Day 30 fixed booking(s): opera: Garnier 당일 입장 여부 확인,HIGH,45
-CST-BKG-32,32,FIXED_BOOKING,Day 32 fixed booking(s): orsay: 시간지정권 예약 잠금,HIGH,45
-CST-BKG-33,33,FIXED_BOOKING,Day 33 fixed booking(s): palais-tokyo: 공개 전시 여부 확인,HIGH,45
-CST-BKG-36,36,FIXED_BOOKING,Day 36 fixed booking(s): culture-pick: 당일 운영 확인; paris-return: Arc 입장권·교통 최종 확인,HIGH,45
-CST-BKG-37,37,FIXED_BOOKING,Day 37 fixed booking(s): arc-race: 티켓 BOOK NOW 상태 (8/5 확인) — 예매 잠금,CRITICAL,45
-CST-BKG-40,40,FIXED_BOOKING,Day 40 fixed booking(s): clos: Vignes 내부표 예약 (9/14 개시),HIGH,45
-CST-BKG-41,41,FIXED_BOOKING,Day 41 fixed booking(s): farewell-dinner: 송별 저녁 장소 선정·예약 (숙소 확정 후),HIGH,45
-CST-BKG-42,42,FIXED_BOOKING,Day 42 fixed booking(s): checkout: 체크아웃 조건·짐 보관 확인; cdg: 터미널·이동수단 확인 (pending); departure: 예약완료 OZ502 — CDG 19:10 출발,CRITICAL,45
-CST-BKG-43,43,FIXED_BOOKING,Day 43 fixed booking(s): inflight: 예약완료 OZ502; home: 귀가 수단 결정 (pending),HIGH,45
+CST-BKG-27,27,FIXED_BOOKING,"Day 27 fixed booking(s): lyon-checkout: 체크아웃 완료 (Lagrange Lumière [CONFIRMED]); tgv-to-paris: 예약확정 TGV INOUI 6618 (1등석 확정 [CONFIRMED]); paris-checkin: 예약완료 78 Rue de Lourmel, 75015 Paris (9/24 15:00 체크인 ~ 10/9 11:00 체크아웃); paris-return: 현장 선택",CRITICAL,45
+CST-BKG-28,28,FIXED_BOOKING,Day 28 fixed booking(s): city-bus-tour: Tootbus / Big Bus Discover 티켓 사전 예매; grand-palais-cezanne: 사전 시간지정 예약 필수 (17:00 슬롯); paris-return: 현장 선택,HIGH,45
+CST-BKG-29,29,FIXED_BOOKING,Day 29 fixed booking(s): luxembourg-warhol: 사전 시간지정 예약 필수 (13:00 슬롯),HIGH,45
+CST-BKG-30,30,FIXED_BOOKING,Day 30 fixed booking(s): orangerie: 사전 시간지정 예약 필수 (13:30 슬롯); opera-garnier-district: 내부 입장 선택(옵션),HIGH,45
+CST-BKG-31,31,FIXED_BOOKING,Day 31 fixed booking(s): gustave-moreau: 사전 시간지정 예약 권장 (10:30 슬롯); opera-lunch: 현장 선택,HIGH,45
+CST-BKG-32,32,FIXED_BOOKING,Day 32 fixed booking(s): musee-d-orsay: 사전 시간지정 예약 필수 (09:30 슬롯); rue-du-bac-lunch: 현장 선택; musee-rodin: 사전 시간지정 예약 권장 (14:30 슬롯),HIGH,45
+CST-BKG-33,33,FIXED_BOOKING,Day 33 fixed booking(s): petit-palais: 상설전 무료 자유 입장; champs-elysees-lunch: 현장 선택,HIGH,45
+CST-BKG-34,34,FIXED_BOOKING,Day 34 fixed booking(s): versailles-transfer: RER C 티켓 / 나비고; versailles-palace: Passport 티켓 사전 시간지정 예약 필수 (10:00 슬롯); versailles-lunch: 현장 선택; versailles-gardens: Passport 티켓 포함; trianon-hamlet: Passport 티켓 포함,HIGH,45
+CST-BKG-35,35,FIXED_BOOKING,Day 35 fixed booking(s): musee-du-louvre: 사전 시간지정 예약 필수 (14:00 슬롯),HIGH,45
+CST-BKG-36,36,FIXED_BOOKING,Day 36 fixed booking(s): marmottan-monet: 사전 시간지정 예매 권장 (14:00 슬롯),HIGH,45
+CST-BKG-37,37,FIXED_BOOKING,Day 37 fixed booking(s): longchamp-transfer: Qatar Prix de l'Arc 티켓 (General Admission / Grandstand); prix-de-l-arc: 예약확정 Qatar Prix de l'Arc de Triomphe,CRITICAL,45
+CST-BKG-38,38,FIXED_BOOKING,Day 38 fixed booking(s): jacquemart-andre: 사전 시간지정 예약 권장 (15:00 슬롯),HIGH,45
+CST-BKG-39,39,FIXED_BOOKING,Day 39 fixed booking(s): musee-picasso: 사전 시간지정 예약 필수 (13:00 슬롯); musee-carnavalet: 상설전 무료 예약 (15:30 권장),HIGH,45
+CST-BKG-40,40,FIXED_BOOKING,Day 40 fixed booking(s): bourse-de-commerce: 사전 시간지정 예매 필수 (10/7 개막일 11:00 슬롯); halles-lunch: 현장 선택,HIGH,45
+CST-BKG-41,41,FIXED_BOOKING,Day 41 fixed booking(s): musee-guimet: 사전 시간지정 예약 권장 (10:00 슬롯); iena-lunch: 현장 선택; musee-art-moderne: 상설전 무료 자유 입장; farewell-dinner: 저녁 예약 필수,HIGH,45
+CST-BKG-42,42,FIXED_BOOKING,Day 42 fixed booking(s): paris-packing-checkout: 체크아웃 11:00; cdg-transfer: 공식 택시 G7 또는 호텔 콜택시; cdg-departure: 예약확정 아시아나항공 OZ502 (CDG 19:10 ➔ ICN 10/10 14:10),CRITICAL,45
+CST-BKG-43,43,FIXED_BOOKING,Day 43 fixed booking(s): inflight: 아시아나항공 OZ502 탑승중,HIGH,45

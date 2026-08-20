@@ -7,3 +7,4 @@ FEAS-TIGHT-12,12,P2,ITINERARY_TIGHTNESS,"Day 12 schedule is tight (Grade C, Load
 FEAS-TIGHT-22,22,P2,ITINERARY_TIGHTNESS,"Day 22 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01
 FEAS-TIGHT-23,23,P2,ITINERARY_TIGHTNESS,"Day 23 schedule is tight (Grade C, Load: Moderate)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & OPTIONALIZE,EX-01
 FEAS-TIGHT-37,37,P2,ITINERARY_TIGHTNESS,"Day 37 schedule is tight (Grade C, Load: Light)",Requires strict timing adherence and carries vulnerability to transit/parking delays.,BUFFER & RESEQUENCE,EX-01
+FEAS-DUR-39,39,P2,VISIT_DURATION,Day 39 duration underallocated for major place(s): le-marais(30m < 60m min),Time window in Day JSON is tighter than recommended minimum stay duration for Tier A/B places.,BUFFER / SHORTEN MINOR STOPS,EX-01

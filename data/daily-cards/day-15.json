@@ -161,56 +161,72 @@
       "to": "vieux-port-marseille",
       "mode": "train",
       "duration": "TER 36분 + 도보 12분",
-      "distance": "약 32km"
+      "distance": "약 32km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieux-port-marseille",
       "to": "le-panier",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "le-panier",
       "to": "fort-saint-jean",
       "mode": "walk",
       "duration": "8분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "fort-saint-jean",
       "to": "marseille-lunch",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "marseille-lunch",
       "to": "notre-dame-de-la-garde",
       "mode": "bus",
       "duration": "RTM 버스 60번 약 15분",
-      "distance": "약 2.5km"
+      "distance": "약 2.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "notre-dame-de-la-garde",
       "to": "vallon-des-auffes",
       "mode": "bus",
       "duration": "버스/도보 약 20분",
-      "distance": "약 2.0km"
+      "distance": "약 2.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vallon-des-auffes",
       "to": "marseille-station",
       "mode": "bus",
       "duration": "버스 83번 + 지하철 M1 약 25분",
-      "distance": "약 3.8km"
+      "distance": "약 3.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "marseille-station",
       "to": "aix-stay-return",
       "mode": "train",
       "duration": "TER 36분 + 도보 10분",
-      "distance": "약 32km"
+      "distance": "약 32km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

@@ -142,7 +142,7 @@
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
 | `bnf-richelieu` | BnF Richelieu | spot | 우선 추천 | BnF Richelieu | chapters/paris/places.html | BnF Richelieu | Bibliothèque nationale de France |
-| `bourse-de-commerce-pinault-collection` | Bourse de Commerce — Pinault Collection | spot | 선택 | Bourse de Commerce | chapters/paris/places.html | Bourse de Commerce — Pinault Collection | Bourse de Commerce |
+| `bourse-de-commerce-pinault-collection` | Bourse de Commerce — Pinault Collection | spot | 필수 | Bourse de Commerce | chapters/paris/places.html | Bourse de Commerce — Pinault Collection | Bourse de Commerce |
 | `centre-pompidou` | Centre Pompidou | spot | 비추천 | — | chapters/paris/places.html | Centre Pompidou | Centre Pompidou |
 | `giverny` | Giverny | spot | 우선 추천 | Giverny | chapters/paris/places.html | Giverny — Day 41 A안 | Giverny |
 | `grand-palais` | Grand Palais | spot | 필수 | Grand Palais | chapters/paris/places.html | Cezanne et nous — Grand Palais | Grand Palais |
@@ -150,12 +150,21 @@
 | `le-marais` | Le Marais | spot | 필수 | — | chapters/paris/places.html | Le Marais | The Marais |
 | `montmartre-south-pigalle` | Montmartre · South Pigalle | spot | 필수 | Montmartre | chapters/paris/places.html | Montmartre · South Pigalle | Montmartre |
 | `montorgueil` | Montorgueil | spot | 우선 추천 | — | chapters/paris/places.html | Montorgueil | Rue Montorgueil |
-| `musee-marmottan-monet` | Musée Marmottan Monet | spot | 대체 | — | chapters/paris/places.html | Musée Marmottan Monet | Musée Marmottan Monet |
+| `musee-carnavalet` | Musée Carnavalet | spot | 필수 | Carnavalet | chapters/paris/places.html | Musée Carnavalet | Musée Carnavalet |
+| `musee-d-art-moderne-de-paris` | Musée d'Art Moderne de Paris | spot | 필수 | MAM | chapters/paris/places.html | Musée d'Art Moderne de Paris | Musée d'Art Moderne de Paris |
 | `musee-d-orsay` | Musée d'Orsay | spot | 필수 | Orsay | chapters/paris/places.html | Mary Cassatt. L'indépendante — Musée d'Orsay | Musée d'Orsay |
-| `musee-de-l-orangerie` | Musée de l'Orangerie | spot | 우선 추천 | — | chapters/paris/places.html | Musée de l'Orangerie | Musée de l'Orangerie |
+| `musee-de-l-orangerie` | Musée de l'Orangerie | spot | 필수 | Orangerie | chapters/paris/places.html | Musée de l'Orangerie | Musée de l'Orangerie |
 | `musee-du-louvre` | Musée du Louvre | spot | 필수 | Louvre | chapters/paris/places.html | Musée du Louvre | Louvre |
+| `musee-du-luxembourg` | Musée du Luxembourg | spot | 필수 | Luxembourg Museum | chapters/paris/places.html | Musée du Luxembourg | Musée du Luxembourg |
+| `musee-guimet` | Musée Guimet | spot | 필수 | Guimet | chapters/paris/places.html | Musée Guimet | Guimet Museum |
+| `musee-gustave-moreau` | Musée Gustave Moreau | spot | 필수 | Gustave Moreau | chapters/paris/places.html | Musée Gustave Moreau | Musée Gustave Moreau |
+| `musee-jacquemart-andre` | Musée Jacquemart-André | spot | 필수 | Jacquemart-André | chapters/paris/places.html | Musée Jacquemart-André | Musée Jacquemart-André |
+| `musee-marmottan-monet` | Musée Marmottan Monet | spot | 필수 | Marmottan Monet | chapters/paris/places.html | Musée Marmottan Monet | Musée Marmottan Monet |
+| `musee-picasso-paris` | Musée Picasso Paris | spot | 필수 | Picasso | chapters/paris/places.html | Musée Picasso Paris | Musée Picasso |
+| `musee-rodin` | Musée Rodin | spot | 필수 | Rodin | chapters/paris/places.html | Musée Rodin | Musée Rodin |
 | `notre-dame-de-paris` | Notre-Dame de Paris | spot | 필수 | Notre-Dame | chapters/paris/places.html | Notre-Dame de Paris | Notre-Dame de Paris |
-| `versailles` | Versailles | spot | 우선 추천 | Versailles | chapters/paris/places.html | Versailles — Day 36 A안 | Palace of Versailles |
+| `petit-palais` | Petit Palais | spot | 필수 | Petit Palais | chapters/paris/places.html | Petit Palais | Petit Palais |
+| `versailles` | Versailles | spot | 필수 | Versailles | chapters/paris/places.html | Versailles — Day 36 A안 | Palace of Versailles |
 
 ---
 

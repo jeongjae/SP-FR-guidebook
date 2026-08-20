@@ -42,16 +42,18 @@ source: source/CURRENT/30_Places/croix-rousse.md
 
 ### 3. Don't Miss & Look Closer
 
-1. **Cour des Voraces**: 6층 석조 계단탑이 안뜰을 압도하는 크루아루스 최고의 상징.
-2. **Montée de la Grande Côte**: 계단길을 따라 내려오며 프레스킬과 푸르비에르 언덕을 조망하는 보행자 전용 비탈길.
-3. **Le Mur des Canuts (카뉘의 벽화)**: 1,200㎡ 면적의 건물 외벽 전체에 크루아루스의 일상을 극사실 트롱프뢰유(착시 벽화)로 그린 유럽 최대의 벽화 (Boulevard des Canuts).
+1. **Maison des Canuts (메종 데 카뉘 비단공방)**: 10-12 Rue d'Ivry. 19세기 전통 자카르(Jacquard) 수동 직조기를 실제 가동하며 천공 카드에 따라 비단이 짜여지는 과정을 시연하는 실크 직조의 살아있는 유산 (화–토 개관, 11:00 직조 시연 슬롯 권장).
+2. **Cour des Voraces**: 6층 석조 계단탑이 안뜰을 압도하는 크루아루스 최고의 상징.
+3. **Montée de la Grande Côte**: 계단길을 따라 내려오며 프레스킬과 푸르비에르 언덕을 조망하는 보행자 전용 비탈길.
+4. **Le Mur des Canuts (카뉘의 벽화)**: 1,200㎡ 면적의 건물 외벽 전체에 크루아루스의 일상을 극사실 트롱프뢰유(착시 벽화)로 그린 유럽 최대의 벽화 (Boulevard des Canuts).
 
 ## 실용 & 교통/시장
 
 | 항목 | 상세 정보 |
 |---|---|
 | **위치** | Boulevard de la Croix-Rousse, 69004 Lyon |
-| **입장료** | 야외 거리, 트라불, 쿠르 데 보라스 전수 **무료** |
+| **입장료** | 야외 거리, 트라불, 쿠르 데 보라스 전수 **무료** / Maison des Canuts 직조 시연 가이드 투어 약 €10 |
 | **크루아루스 시장** | **화요일–일요일 06:00–13:30 (월요일 휴무)**: 크루아루스 대로 1km에 걸쳐 열리는 리옹 현지인들의 최고 인기 전통 시장 |
+| **Maison des Canuts** | **화요일–토요일 10:00–18:30 (월요일 휴무)**: 10-12 Rue d'Ivry, 11:00 직조 시연 데모 |
 | **교통 접근 (추천)** | **메트로 C호선 Croix-Rousse역** 또는 **Hénon역** (톱니바퀴 메트로를 타고 정상 도착 후 도보 하산 권장) |
-| **하산 루트** | Croix-Rousse역 → 대로 시장 → Place Colbert(Cour des Voraces) → Montée de la Grande Côte → Place des Terreaux(프레스킬) |
+| **하산 루트** | Croix-Rousse역 → 대로 시장 → Maison des Canuts → Place Colbert(Cour des Voraces) → Montée de la Grande Côte → Place des Terreaux(프레스킬) |

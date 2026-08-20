@@ -101,7 +101,9 @@
       "mode": "car",
       "duration": "약 40분",
       "distance": "36.8km",
-      "roadType": "국도 D543 ➔ 지방도 D943 (뤼베롱 산지 진입)"
+      "roadType": "국도 D543 ➔ 지방도 D943 (뤼베롱 산지 진입)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "lourmarin",
@@ -109,7 +111,9 @@
       "mode": "car",
       "duration": "약 30분",
       "distance": "28.0km",
-      "roadType": "지방도 D943 ➔ 간선국도 D900 (쿠스텔레 평지)"
+      "roadType": "지방도 D943 ➔ 간선국도 D900 (쿠스텔레 평지)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "coustellet",
@@ -117,7 +121,9 @@
       "mode": "car",
       "duration": "약 12분",
       "distance": "8.5km",
-      "roadType": "간선국도 D900 ➔ D218 언덕 진입로"
+      "roadType": "간선국도 D900 ➔ D218 언덕 진입로",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "goult",
@@ -125,7 +131,9 @@
       "mode": "car",
       "duration": "약 13분",
       "distance": "11.0km",
-      "roadType": "지방도 D900 ➔ 좁은 농로(Chemin des Peyres)"
+      "roadType": "지방도 D900 ➔ 좁은 농로(Chemin des Peyres)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

@@ -145,49 +145,63 @@
       "to": "antibes-old-town",
       "mode": "train",
       "duration": "TER 18분 + 도보 8분",
-      "distance": "약 20km"
+      "distance": "약 20km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "antibes-old-town",
       "to": "marche-forville",
       "mode": "train",
       "duration": "도보 10분 + TER 12분 + 도보 8분",
-      "distance": "약 12km"
+      "distance": "약 12km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "marche-forville",
       "to": "vieux-port-cannes",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieux-port-cannes",
       "to": "le-suquet",
       "mode": "walk",
       "duration": "10분 (계단/경사)",
-      "distance": "0.4km"
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "le-suquet",
       "to": "croisette",
       "mode": "walk",
       "duration": "15분",
-      "distance": "0.8km"
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "croisette",
       "to": "cannes-station",
       "mode": "walk",
       "duration": "15분",
-      "distance": "0.9km"
+      "distance": "0.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "cannes-station",
       "to": "nice-return",
       "mode": "train",
       "duration": "TER 약 30분 + 도보 10분",
-      "distance": "약 32km"
+      "distance": "약 32km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

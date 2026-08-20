@@ -3,137 +3,139 @@
   "day": 31,
   "date": "2026-09-28",
   "city": "Paris",
-  "title": "운동·세탁·생활일 (Fashion Week 개막)",
+  "title": "모로 아틀리에 & 파리 패션위크 개막 & 마레 지구",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:00",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 1.5km · 도보 + 메트로",
-  "fatigue": "2",
+  "endTime": "20:30",
+  "totalDuration": "12시간 30분",
+  "totalDistance": "메트로 + 도보 약 6.0km",
+  "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "exercise",
+      "id": "morning-routine",
       "order": 1,
       "start": "08:00",
-      "end": "09:00",
-      "name": "운동",
-      "category": "activity",
-      "lat": null,
-      "lng": null,
-      "summary": "Jason gym/러닝, Julia 산책·선택 수영",
-      "menu": null,
-      "reservation": null,
-      "optional": true,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
-    },
-    {
-      "id": "laundry",
-      "order": 2,
-      "start": "09:30",
-      "end": "13:00",
-      "name": "세탁·냉장고 정리·점심",
+      "end": "09:45",
+      "name": "Shortened Home Morning (아침·빠른 준비)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "첫 주 생활업무를 미루지 않음 — 오후 예약 없음",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "오전 모로 미술관 관람을 위해 아침식사 후 09:45 빠른 출발",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     },
     {
-      "id": "haut-marais",
-      "order": 3,
-      "start": "13:30",
-      "end": "16:30",
-      "name": "북마레 또는 숙소권 산책",
-      "category": "sight",
-      "lat": 48.8627951,
-      "lng": 2.361973,
-      "summary": "독립상점·생활상권 — 새 명소 추가 금지",
+      "id": "gustave-moreau",
+      "order": 2,
+      "start": "10:30",
+      "end": "12:00",
+      "name": "Musée Gustave Moreau (귀스타브 모로 미술관)",
+      "category": "culture",
+      "lat": 48.8778,
+      "lng": 2.3364,
+      "summary": "19세기 상징주의 화가의 아틀리에 저택. 전설적인 나선형 계단, 주피터와 세멜레, 신화적 대작 유화 및 회전식 데생 패널 집중 관람 (90분)",
       "menu": null,
-      "reservation": null,
-      "optional": true,
-      "place_ref": "le-marais"
+      "reservation": "사전 시간지정 예약 권장 (10:30 슬롯)",
+      "optional": false,
+      "place_ref": "musee-gustave-moreau"
     },
     {
-      "id": "shopping",
+      "id": "opera-lunch",
+      "order": 3,
+      "start": "12:15",
+      "end": "13:30",
+      "name": "9구 누벨 아테네 / 오페라 점심",
+      "category": "food",
+      "lat": 48.875,
+      "lng": 2.335,
+      "summary": "오페라 인근 정통 프렌치 비스트로 점심 식사",
+      "menu": "오늘의 요리(Plat du jour), 에스프레소",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "fashion-week-marais",
       "order": 4,
-      "start": "16:30",
-      "end": "18:00",
-      "name": "필요한 쇼핑·장보기",
-      "category": "shopping",
-      "lat": 48.8615,
-      "lng": 2.357,
-      "summary": "Fashion Week 혼잡이 심하면 숙소권으로 회귀",
-      "menu": "생활용품·식재료",
+      "start": "14:00",
+      "end": "17:30",
+      "name": "Paris Fashion Week 개막 분위기 & Le Marais",
+      "category": "sight",
+      "lat": 48.8589,
+      "lng": 2.3589,
+      "summary": "2026 파리 패션위크(SS27 여성복) 개막일. 마레 지구의 트렌디한 거리(Rue Vieille du Temple, Rue des Francs-Bourgeois) 팝업 스토어, 쇼윈도, 부티크 거리 산책 (3.5시간)",
+      "menu": "스페셜티 커피, 페이스트리",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "place_ref": "le-marais"
     },
     {
       "id": "paris-return",
       "order": 5,
-      "start": "18:30",
-      "end": null,
-      "name": "숙소 저녁",
+      "start": "18:15",
+      "end": "20:30",
+      "name": "15구 숙소 귀환 & 저녁",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "회복을 겸한 생활일",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "메트로 8호선(Saint-Paul/Chemin Vert ➔ Lourmel) 귀환 후 15구 저녁",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "exercise",
-      "to": "laundry",
-      "mode": "walk",
-      "duration": "0분",
-      "distance": "숙소",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "laundry",
-      "to": "haut-marais",
+      "from": "morning-routine",
+      "to": "gustave-moreau",
       "mode": "metro",
-      "duration": "25분",
-      "distance": null,
-      "line": "메트로",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "haut-marais",
-      "to": "shopping",
-      "mode": "walk",
-      "duration": "8분",
-      "distance": "0.6km",
+      "duration": "메트로 8+12호선 약 30분",
+      "distance": "5.8km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "shopping",
+      "from": "gustave-moreau",
+      "to": "opera-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "opera-lunch",
+      "to": "fashion-week-marais",
+      "mode": "metro",
+      "duration": "메트로 약 15분",
+      "distance": "2.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "fashion-week-marais",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "25분",
-      "distance": null,
-      "line": "메트로",
+      "duration": "메트로 8호선 약 25분",
+      "distance": "5.5km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "도보·메트로"
+    "메트로 12호선 / 8호선 (15구 ↔ 9구 / 마레)",
+    "누벨 아테네 및 마레 지구 패션 도보"
   ],
   "food": [
     "숙소 점심",
@@ -144,7 +146,7 @@
     "Fashion Week 혼잡은 변수로만",
     "월요일 휴관 무관한 날"
   ],
-  "backup": "혼잡 시 숙소권 회귀",
+  "backup": "피로 시 마레 지구 쇼핑 도보를 90분으로 단축하고 피카소 미술관 인근 카페 휴식으로 전환",
   "map": {
     "zoom": 13,
     "center": [
@@ -154,8 +156,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "Musée Gustave Moreau 화요일 휴관이므로 월요일(9/28) 10:30 슬롯 방문 엄수",
+    "Fashion Week 공개 팝업 및 거리 분위기 확인 (비공개 쇼 입장 전제 없음)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-5-9월28일",

@@ -130,42 +130,54 @@
       "to": "vieux-nice",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.2km"
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieux-nice",
       "to": "vieux-nice-lunch",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.1km"
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieux-nice-lunch",
       "to": "castle-hill",
       "mode": "walk",
       "duration": "10분 + 엘리베이터",
-      "distance": "0.4km"
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "castle-hill",
       "to": "promenade",
       "mode": "walk",
       "duration": "15분",
-      "distance": "0.8km"
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "promenade",
       "to": "port-lympia",
       "mode": "walk",
       "duration": "20분",
-      "distance": "1.2km"
+      "distance": "1.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "port-lympia",
       "to": "nice-stay-return",
       "mode": "walk",
       "duration": "25분",
-      "distance": "1.8km"
+      "distance": "1.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

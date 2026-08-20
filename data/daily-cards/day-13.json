@@ -131,42 +131,54 @@
       "to": "vieil-aix",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "vieil-aix",
       "to": "aix-lunch",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "aix-lunch",
       "to": "atelier-des-lauves",
       "mode": "walk",
       "duration": "20분 (오르막)",
-      "distance": "1.3km"
+      "distance": "1.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "atelier-des-lauves",
       "to": "musee-granet",
       "mode": "walk",
       "duration": "25분 (내리막)",
-      "distance": "1.6km"
+      "distance": "1.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "musee-granet",
       "to": "cours-mirabeau",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "cours-mirabeau",
       "to": "aix-stay-return",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.6km"
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

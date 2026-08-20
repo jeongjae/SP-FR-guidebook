@@ -131,7 +131,9 @@
       "mode": "car",
       "duration": "약 15분",
       "distance": "9.8km",
-      "roadType": "농로 ➔ 국도 D900 ➔ 지방도 D15 (고르드 오르막)"
+      "roadType": "농로 ➔ 국도 D900 ➔ 지방도 D15 (고르드 오르막)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "gordes",
@@ -139,7 +141,9 @@
       "mode": "car",
       "duration": "약 8분",
       "distance": "4.4km",
-      "roadType": "지방도 D15 ➔ 좁은 포장길 (마주오는 차 교행 주의)"
+      "roadType": "지방도 D15 ➔ 좁은 포장길 (마주오는 차 교행 주의)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "village-des-bories",
@@ -147,7 +151,9 @@
       "mode": "walk",
       "duration": "0분",
       "distance": "현장",
-      "roadType": "보행로"
+      "roadType": "보행로",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "picnic",
@@ -155,7 +161,9 @@
       "mode": "car",
       "duration": "약 12분",
       "distance": "7.5km",
-      "roadType": "지방도 D177 (협곡 편도 일방통행 구간 주의)"
+      "roadType": "지방도 D177 (협곡 편도 일방통행 구간 주의)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "senanque",
@@ -163,7 +171,9 @@
       "mode": "car",
       "duration": "약 20분",
       "distance": "15.0km",
-      "roadType": "지방도 D177 ➔ D2 ➔ 국도 D900 ➔ D3 (메네르브)"
+      "roadType": "지방도 D177 ➔ D2 ➔ 국도 D900 ➔ D3 (메네르브)",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "menerbes",
@@ -171,7 +181,9 @@
       "mode": "car",
       "duration": "약 12분",
       "distance": "10.2km",
-      "roadType": "지방도 D3 ➔ 간선국도 D900 ➔ 농로"
+      "roadType": "지방도 D3 ➔ 간선국도 D900 ➔ 농로",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

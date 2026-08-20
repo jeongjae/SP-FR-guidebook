@@ -3,100 +3,126 @@
   "day": 32,
   "date": "2026-09-29",
   "city": "Paris",
-  "title": "Musée d'Orsay — 대형관 하나",
+  "title": "오르세 미술관 집중 관람 & 로댕 조각 정원",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:30",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 1km · 도보 + 메트로",
-  "fatigue": "3–4",
+  "startTime": "07:30",
+  "endTime": "20:30",
+  "totalDuration": "13시간",
+  "totalDistance": "메트로 + 7구 예술도보 약 5.0km",
+  "fatigue": "4",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "slow-morning",
+      "id": "morning-routine",
       "order": 1,
-      "start": "08:30",
-      "end": "12:00",
-      "name": "느린 아침·숙소업무",
+      "start": "07:30",
+      "end": "08:45",
+      "name": "Art-Heavy Morning (빠른 아침·오르세 출발)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "박물관 전 체력 보존 — 예약시간 전 충분히 쉬기",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "오르세 미술관 09:30 개장 첫 슬롯 입장을 위해 아침식사 후 08:45 출발",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     },
     {
-      "id": "lunch",
+      "id": "musee-d-orsay",
       "order": 2,
-      "start": "12:00",
+      "start": "09:30",
       "end": "13:00",
-      "name": "숙소 또는 근처 점심",
-      "category": "food",
-      "lat": 48.8399,
-      "lng": 2.3459,
-      "summary": "대형관 안에서 끼니를 미루지 않음",
-      "menu": "가볍게",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "orsay",
-      "order": 3,
-      "start": "13:30",
-      "end": "17:00",
-      "name": "Musée d'Orsay",
+      "name": "Musée d'Orsay (오르세 미술관 3.5시간 집중 관람)",
       "category": "culture",
-      "lat": 48.85996,
-      "lng": 2.32656,
-      "summary": "시간지정권, 3시간 30분 상한. 화요일이라 Orangerie 는 휴관 — 선택지가 아니다",
+      "lat": 48.86,
+      "lng": 2.3266,
+      "summary": "옛 기차역 보자르 건축. 5층 인상주의 갤러리(마네 <풀밭 위의 점심식사>, 르누아르 <물랭 드 라 갈레트의 무도회>, 모네 <양산 쓴 여인>) ➔ 2층 후기인상주의(고흐 <자화상>, <아를의 별이 빛나는 밤>, 고갱, 쇠라) ➔ 0층 초기 아카데미즘 (3.5시간)",
       "menu": null,
-      "reservation": "시간지정권 예약 잠금",
+      "reservation": "사전 시간지정 예약 필수 (09:30 슬롯)",
       "optional": false,
       "place_ref": "musee-d-orsay"
     },
     {
-      "id": "buffer",
-      "order": 4,
-      "start": "17:00",
-      "end": "18:00",
-      "name": "Seine·Tuileries 완충",
-      "category": "sight",
-      "lat": 48.8617,
+      "id": "rue-du-bac-lunch",
+      "order": 3,
+      "start": "13:00",
+      "end": "14:15",
+      "name": "7구 Rue du Bac 점심 식사",
+      "category": "food",
+      "lat": 48.857,
       "lng": 2.325,
-      "summary": "두 번째 미술관 금지",
+      "summary": "오르세 미술관 인근 7구 품격 있는 비스트로 점심",
+      "menu": "타르틴, 뵈프 부르기뇽, 화이트 와인",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "musee-rodin",
+      "order": 4,
+      "start": "14:30",
+      "end": "16:30",
+      "name": "Musée Rodin & 조각 정원 (로댕 미술관)",
+      "category": "culture",
+      "lat": 48.8553,
+      "lng": 2.3158,
+      "summary": "18세기 오텔 비롱 저택 <키스>, 카미유 클로델 전시실 ➔ 야외 장미 정원 <생각하는 사람>, <지옥의 문>, <칼레의 시민> 사색 산책 (2시간)",
+      "menu": null,
+      "reservation": "사전 시간지정 예약 권장 (14:30 슬롯)",
+      "optional": false,
+      "place_ref": "musee-rodin"
+    },
+    {
+      "id": "invalides-exterior",
+      "order": 5,
+      "start": "16:30",
+      "end": "17:30",
+      "name": "Les Invalides (앵발리드 황금 돔 외관 산책)",
+      "category": "sight",
+      "lat": 48.8566,
+      "lng": 2.3125,
+      "summary": "나폴레옹의 무덤이 있는 앵발리드 황금 돔과 에스플러나드 잔디광장 산책 (60분)",
       "menu": null,
       "reservation": null,
-      "optional": false
+      "optional": true,
+      "place_ref": null
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "18:30",
-      "end": null,
-      "name": "숙소 귀환·저녁",
+      "order": 6,
+      "start": "18:00",
+      "end": "20:30",
+      "name": "15구 숙소 귀환 & 저녁",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "인상주의 또는 19세기 조각 한 권역만 추가",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "메트로 8호선(La Tour-Maubourg ➔ Lourmel) 귀환 후 15구 저녁",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "slow-morning",
-      "to": "lunch",
+      "from": "morning-routine",
+      "to": "musee-d-orsay",
+      "mode": "metro",
+      "duration": "메트로 8+12호선 약 20분",
+      "distance": "3.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "musee-d-orsay",
+      "to": "rue-du-bac-lunch",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
@@ -104,35 +130,36 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "lunch",
-      "to": "orsay",
-      "mode": "metro",
-      "duration": "25분",
-      "distance": null,
-      "line": "메트로",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "orsay",
-      "to": "buffer",
+      "from": "rue-du-bac-lunch",
+      "to": "musee-rodin",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.7km",
+      "duration": "8분",
+      "distance": "0.6km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "buffer",
+      "from": "musee-rodin",
+      "to": "invalides-exterior",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "invalides-exterior",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "25분",
-      "distance": null,
-      "line": "메트로",
+      "duration": "메트로 8호선 약 20분",
+      "distance": "3.5km",
+      "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "메트로 왕복"
+    "메트로 8호선 / 12호선 (Lourmel ➔ Solférino)",
+    "파리 7구 오르세·로댕 도보"
   ],
   "food": [
     "박물관 전 가벼운 점심",
@@ -143,7 +170,7 @@
     "3시간 30분 상한",
     "화요일 — Orsay 개관 확인"
   ],
-  "backup": "피로 시 Orangerie(소형)로 교체",
+  "backup": "오르세 관람 후 피로 시 앵발리드 산책을 생략하고 로댕 미술관 카페 정원에서 휴식 후 조기 복귀",
   "map": {
     "zoom": 14,
     "center": [
@@ -153,9 +180,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "Orangerie 화요일 휴관 확인 (2026-08-14 공식) — 9/29 은 Orsay 고정, Orangerie 는 10/3 후보",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "Musée d'Orsay 09:30 슬롯 예매 필수 (월요일 휴관이므로 화요일 9/29 방문)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-6-9월29일",

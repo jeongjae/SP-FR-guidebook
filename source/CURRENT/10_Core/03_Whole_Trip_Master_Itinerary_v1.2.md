@@ -32,26 +32,26 @@ status: "chapter-derived master itinerary; booking values pending"
 | 20 | 9/17 목 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher, Pont | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
 | 21 | 9/18 금 | Avignon | Uzès와 Pont du Gard | Uzès 구시가지, Pont du Gard | 시장은 금요일 운영 재확인; 박물관·일몰 택1 | 4 | 주차·입장 |
 | 22 | 9/19 토 | Avignon | Arles 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 4 | 문화유산의 날·철도/주차 |
-| 23 | 9/20 일 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV역 반납 09:00, **TGV 12176 10:22→11:28** (1등석 확정 4YMAGT), Lagrange Lumière 15:00 체크인, Bellecour·Célestins | Jacobins·Saône 짧은 산책 | 4 | 반납 09:00 준수 · 일요일 개점(10:00) 전 키드롭 확인 |
+| 23 | 9/20 일 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV역 반납 09:00, **TGV 12176 10:22→11:28** (1등석 확정 [CONFIRMED]), Lagrange Lumière 15:00 체크인, Bellecour·Célestins | Jacobins·Saône 짧은 산책 | 4 | 반납 09:00 준수 · 일요일 개점(10:00) 전 키드롭 확인 |
 | 24 | 9/21 월 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·월요일 운영 |
-| 25 | 9/22 화 | Lyon | Croix-Rousse·Halles·공원 | Croix-Rousse 시장, canut 맥락, Halles | Parc de la Tête d’Or | 3 | 시장·식당 |
+| 25 | 9/22 화 | Lyon | Silk & Gastronomy — 일하는 언덕과 먹는 도시 | Croix-Rousse 화요 시장(08:45), **Maison des Canuts 직조 시연(11:00)**, **Halles Paul Bocuse 2차 미식 점심(12:30~14:15)** & 식재료 탐방, Parc de la Tête d’Or(15:15~17:15) | 17:30 복귀·저녁 가볍게 | 3 | Maison des Canuts 11:00 직조 시연 |
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
-| 27 | 9/24 목 | Paris | Lyon→Paris·15박 정착 | Lyon 11:00 체크아웃, **TGV 6618 13:04→15:00 (두 사람 확정 X6CVW5)**, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | Paris 숙소 |
-| 28 | 9/25 금 | Paris | 생활권 적응 완충일 | 슈퍼·빵집·약국 확인, 느린 장보기, 동네 카페 | 피로가 적으면 강변·공원 1곳 | 1~2 | 숙소 생활권 |
-| 29 | 9/26 토 | Paris | 첫 파리 생활일 | 늦은 시작·가벼운 운동, Saint-Germain, Luxembourg, Seine | 무예약 | 2 | 없음 |
-| 30 | 9/27 일 | Paris | 고전 파리 방향잡기 | Tuileries, Palais Royal, Opéra 지구, Garnier 외관/가능 시 낮 관람 | 자유저녁 | 3 | Garnier 조건부 |
-| 31 | 9/28 월 | Paris | 로컬 라이프·Fashion Week 개막 | 운동·세탁·쇼핑, 북마레 또는 주거지 산책 | 무예약 | 2 | 없음 |
-| 32 | 9/29 화 | Paris | 박물관일 | **Musée d’Orsay** (화요일 — Orangerie 휴관) | 저녁 비움 | 3 | 미술관 시간지정 |
-| 33 | 9/30 수 | Paris | Fashion Week 공개동선 반일 | 여유로운 오전, Palais de Tokyo 일대→Avenue Montaigne→Rue Saint-Honoré→Palais Royal | 공식 확인된 공개 팝업만·늦은 행사 없음 | 3 | 공개행사 재확인 |
-| 34 | 10/1 목 | Paris | Bastille 동네의 날 | 운동·느린 아침, Place des Vosges·Bastille, Coulée verte·Seine 야경 산책 | 동네 저녁 — 무예약 | 2~3 | 없음 |
-| 35 | 10/2 금 | Paris | 회복·로컬 라이프 | 늦은 시작, 시장·서점·카페·스케치 | 고정행사 없음 | 1~2 | 없음 |
-| 36 | 10/3 토 | Paris | 유연한 문화일 | 박물관·서점·동네 중 하나 | Arc 전날 — 무리 금지 | 2~3 | 선택시설만 |
-| 37 | 10/4 일 | Paris | Qatar Prix de l’Arc 메인 레이스 | ParisLongchamp 근전일 일정 | 저녁 비움 | 5 | France Galop P0 |
-| 38 | 10/5 월 | Paris | Arc 뒤 회복일 | 늦은 아침, 장보기·세탁·카페, 선택 짧은 공원 | 무예약 | 1 | 없음 |
-| 39 | 10/6 화 | Paris | 동부 파리 생활일 | Canal Saint-Martin·Belleville 또는 다른 동네 | 저녁 무예약 | 2 | 없음 |
-| 40 | 10/7 수 | Paris | Vendanges de Montmartre | 낮 축제, Clos Montmartre 외관·마켓·골목 | 이른 귀가. 추가 오페라 제외 | 3 | 포도밭 방문 감시 |
-| 41 | 10/8 목 | Paris | Trocadéro·Chaillot과 송별 저녁 | 오전 짐 절반 포장, Trocadéro·Chaillot, 일몰 에펠 점등 조망, 송별 저녁 | 피로 시 송별 저녁은 숙소권으로 축소 | 3 | 송별 저녁 예약 |
-| 42 | 10/9 금 | Paris→CDG | 체크아웃·CDG·출국 | 최종 포장·체크아웃, 숙소권 가벼운 점심, 14:00 이전 공항 출발, **OZ502 19:10 CDG 출발 (확정)** | 도심 추가 일정 없음 | 4 | 없음 — 항공 확정, 공항 이동수단 |
+| 27 | 9/24 목 | Paris | Lyon→Paris·15박 정착 | Lyon 11:00 체크아웃, **TGV 6618 13:04→15:00 (두 사람 확정 [CONFIRMED])**, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | Paris 숙소 |
+| 28 | 9/25 금 | Paris | 파리 시티투어 버스 & 그랑 팔레 세잔 특별전 | Standard Morning, **Tootbus 풀 루프 파노라마 투어(14:00~16:15)**, **Grand Palais 특별전 <Cézanne et nous>(16:30~19:15)** | 15구 복귀 저녁 | 3 | Grand Palais 17:00 시간지정 |
+| 29 | 9/26 토 | Paris | 뤽상부르 워홀전 & 생제르맹 지성 산책 & 노트르담 | Standard Morning, **Musée du Luxembourg <Andy Warhol>(13:00~14:30)**, Jardin du Luxembourg, Saint-Germain-des-Prés, Notre-Dame 외관 | 15구 복귀 저녁 | 3 | Luxembourg 13:00 시간지정 |
+| 30 | 9/27 일 | Paris | 오랑주리 수련 & 튀일르리·팔레 루아얄·오페라 | Standard Morning, **Musée de l'Orangerie <수련>(13:30~15:15)**, Tuileries, Place Vendôme, Palais Royal, Opéra Garnier 외관 | 15구 복귀 저녁 | 3 | Orangerie 13:30 시간지정 |
+| 31 | 9/28 월 | Paris | 모로 아틀리에 & Fashion Week 개막 & 마레 지구 | Shortened Morning, **Musée Gustave Moreau(10:30~12:00)**, 누벨 아테네 점심, **Fashion Week 개막 & Le Marais 부티크 거리(14:00~17:30)** | 15구 복귀 저녁 | 3 | Moreau 10:30 시간지정 |
+| 32 | 9/29 화 | Paris | 오르세 미술관 집중 관람 & 로댕 조각 정원 | Art Morning, **Musée d'Orsay 3.5시간 집중 관람(09:30~13:00)**, 7구 점심, **Musée Rodin & 조각 정원(14:30~16:30)**, Invalides 외관 | 15구 복귀 저녁 | 4 | Orsay 09:30 시간지정, Rodin 14:30 |
+| 33 | 9/30 수 | Paris | 프티 팔레 & 몽테뉴 패션위크 & 팔레 드 도쿄 | Shortened Morning, **Petit Palais 상설전(10:00~12:00)**, 샹젤리제 점심, **Avenue Montaigne Fashion Week ➔ Grand Palais ➔ Palais de Tokyo(13:30~17:30)** | 15구 복귀 저녁 | 3 | Petit Palais 상설 무료 |
+| 34 | 10/1 목 | Paris | 베르사유 궁전 & 대정원 & 트리아농 전일 투어 | RER C 이동(08:30), **Château de Versailles 궁전(10:00~12:30)**, 대운하 점심, 프랑스식 대정원, **Grand/Petit Trianon & 왕비의 촌락(15:30~17:00)** | RER C 15구 복귀 저녁 | 4 | Versailles Passport 10:00 슬롯 |
+| 35 | 10/2 금 | Paris | 루브르 박물관 4시간 마스터피스 집중 관람 | Standard Morning, **Musée du Louvre 드농·쉴리·리슐리외 4시간(14:00~18:00)**, Cour Carrée & 센 강변 일몰 도보 | 15구 복귀 저녁 | 4 | Louvre 14:00 시간지정 |
+| 36 | 10/3 토 | Paris | 마르모탕 모네 <인상, 해돋이> & 파시 고급 지구 산책 | Standard Morning, **Musée Marmottan Monet(14:00~16:00)**, Jardin du Ranelagh & Passy 산책, 조기 귀환(익일 Arc 대비) | 15구 숙소식 저녁 | 2 | Marmottan 14:00 시간지정 |
+| 37 | 10/4 일 | Paris | Qatar Prix de l'Arc de Triomphe 경마 축제 | 셔틀 이동(10:30), **Hippodrome ParisLongchamp 개선문상 본선 직관(11:30~18:00)**, 메인 레이스 16:05 | 15구 복귀 저녁 | 4 | France Galop 확정 티켓 |
+| 38 | 10/5 월 | Paris | 개선문상 후 회복 & 자크마르-앙드레 & 몽소 공원 | Recovery Morning(느린 기상·브런치·세탁), **Musée Jacquemart-André(15:00~17:00)**, Parc Monceau 산책 | 15구 동네 저녁 | 2 | Jacquemart-André 15:00 시간지정 |
+| 39 | 10/6 화 | Paris | 마레 지구 예술 더블 — 피카소 & 카르나발레 & 보주 광장 | Standard Morning, **Musée Picasso Paris(13:00~15:00)**, **Musée Carnavalet(15:30~17:15)**, Place des Vosges | 15구 복귀 저녁 | 3 | Picasso 13:00 시간지정 |
+| 40 | 10/7 수 | Paris | 부르스 드 코메르스 개막일 & 몽마르트르 포도축제 | Shortened Morning, **Bourse de Commerce <Remember Me> 개막일(11:00~13:00)**, 몽토르게이 점심, **Fête des Vendanges de Montmartre(14:45~17:45)** | 15구 복귀 저녁 | 4 | Bourse de Commerce 11:00 슬롯 |
+| 41 | 10/8 목 | Paris | 기메 동양미술관 & 파리 현대미술관 & 트로카데로 고별 일몰 | Art Morning, **Musée Guimet(10:00~12:00)**, 이에나 점심, **Musée d'Art Moderne de Paris(13:30~15:45)**, Trocadéro 에펠 일몰, **고별 만찬** | 짐 패킹 | 3 | Guimet 10:00, 고별 식당 예약 |
+| 42 | 10/9 금 | Paris→CDG | 체크아웃·공항 이동·인천 귀국 (OZ502) | 11:00 체크아웃, 15구 마지막 점심, 13:30 택시 공항 이동, **15:00 CDG T1 도착(수속·택스리펀)**, **OZ502 19:10 CDG 출발 (확정)** | 기내식·휴식 | 3 | 항공 확정, 공식 택시 정액제 |
 | 43 | 10/10 토 | 기내→Seoul | 기내박·귀국 | 기내 취침, **인천 14:10 도착 (OZ502)**, 입국·수하물·귀가 | 없음 | 3 | 없음 |
 
 ## 장거리 이동일

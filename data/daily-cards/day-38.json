@@ -3,135 +3,115 @@
   "day": 38,
   "date": "2026-10-05",
   "city": "Paris",
-  "title": "Arc 다음 날 — 회복·생활",
+  "title": "개선문상 후 회복 & 자크마르-앙드레 & 몽소 공원",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "10:00",
-  "endTime": null,
-  "totalDuration": null,
-  "totalDistance": "약 2.5km · 도보",
-  "fatigue": "1",
+  "startTime": "09:00",
+  "endTime": "20:30",
+  "totalDuration": "11시간 30분",
+  "totalDistance": "메트로 + 도보 약 3.5km",
+  "fatigue": "2",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
   "stops": [
     {
-      "id": "late-brunch",
+      "id": "morning-routine",
       "order": 1,
-      "start": "10:00",
-      "end": "13:00",
-      "name": "늦은 기상·브런치·세탁",
+      "start": "09:00",
+      "end": "13:30",
+      "name": "Recovery Morning (느린 기상·브런치·세탁)",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "알람 없이 회복 우선 — 다음 5일 생활 준비",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "경마 축제 다음 날 느린 기상, 세탁, 숙소 브런치 및 가벼운 15구 동네 산책",
+      "menu": "프렌치 토스트, 커피, 과일",
+      "reservation": null,
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "jacquemart-andre",
+      "order": 2,
+      "start": "15:00",
+      "end": "17:00",
+      "name": "Musée Jacquemart-André (자크마르-앙드레 미술관)",
+      "category": "culture",
+      "lat": 48.8756,
+      "lng": 2.3106,
+      "summary": "19세기 벨 에포크 대저택, 나선형 계단과 겨울 정원, 보티첼리 <성모자상>, 티에폴로 천장 프레스코화 관람 (2시간)",
+      "menu": "Café Jacquemart-André 티 & 페이스트리",
+      "reservation": "사전 시간지정 예약 권장 (15:00 슬롯)",
+      "optional": false,
+      "place_ref": "musee-jacquemart-andre"
+    },
+    {
+      "id": "parc-monceau",
+      "order": 3,
+      "start": "17:00",
+      "end": "18:30",
+      "name": "Parc Monceau (몽소 공원 고즈넉한 산책)",
+      "category": "sight",
+      "lat": 48.8797,
+      "lng": 2.3089,
+      "summary": "8구 귀족적 풍경의 몽소 공원. 코린트식 고대 열주 나우마키아(Naumachia) 연못과 피라미드 조형물 산책 (90분)",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
-    },
-    {
-      "id": "grocery",
-      "order": 2,
-      "start": "13:00",
-      "end": "14:00",
-      "name": "장보기·숙소 점심",
-      "category": "shopping",
-      "lat": 48.8404,
-      "lng": 2.3475,
-      "summary": "원거리 이동 없음",
-      "menu": "식재료",
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "cafe",
-      "order": 3,
-      "start": "15:00",
-      "end": "16:30",
-      "name": "동네 카페·독서",
-      "category": "cafe",
-      "lat": 48.8394,
-      "lng": 2.344,
-      "summary": "예약 없음",
-      "menu": null,
-      "reservation": null,
-      "optional": false
-    },
-    {
-      "id": "park",
-      "order": 4,
-      "start": "16:30",
-      "end": "17:30",
-      "name": "선택 짧은 공원 산책",
-      "category": "sight",
-      "lat": 48.8467228,
-      "lng": 2.3364148,
-      "summary": "몸이 가벼울 때만 — Luxembourg 방향",
-      "menu": null,
-      "reservation": null,
-      "optional": true
+      "place_ref": null
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "18:00",
-      "end": null,
-      "name": "숙소식·일찍 취침",
+      "order": 4,
+      "start": "19:00",
+      "end": "20:30",
+      "name": "15구 숙소 귀환 & 저녁",
       "category": "hotel",
-      "lat": null,
-      "lng": null,
-      "summary": "공연·박물관 금지",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "메트로 9+8호선으로 15구 복귀. 15구 동네 비스트로 저녁 식사",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
+      "place_ref": null
     }
   ],
   "legs": [
     {
-      "from": "late-brunch",
-      "to": "grocery",
+      "from": "morning-routine",
+      "to": "jacquemart-andre",
+      "mode": "metro",
+      "duration": "메트로 8+9호선 약 25분",
+      "distance": "4.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "jacquemart-andre",
+      "to": "parc-monceau",
       "mode": "walk",
-      "duration": "5분",
+      "duration": "6분",
       "distance": "0.4km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "grocery",
-      "to": "cafe",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cafe",
-      "to": "park",
-      "mode": "walk",
-      "duration": "12분",
-      "distance": "0.9km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "park",
+      "from": "parc-monceau",
       "to": "paris-return",
-      "mode": "walk",
-      "duration": "15분",
-      "distance": "1.0km",
+      "mode": "metro",
+      "duration": "메트로 2+8호선 약 25분",
+      "distance": "5.0km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "도보 (숙소권)"
+    "메트로 8호선 + 9호선 (Lourmel ➔ Miromesnil)",
+    "8구 오스만·몽소 도보"
   ],
   "food": [
     "브런치·숙소 점심",
@@ -142,7 +122,7 @@
     "비·피로 시 공원도 삭제",
     "10/7–9 이벤트 3일 전 충전"
   ],
-  "backup": "몸이 무거우면 카페·공원 삭제, 숙소만",
+  "backup": "피로 시 몽소 공원 산책을 축소하고 미술관 내 카페에서 티타임 후 조기 복귀",
   "map": {
     "zoom": 15,
     "center": [
@@ -152,8 +132,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "2026-08-06 사용자 결정: 파리 정본 = 챕터 16박 운영판",
-    "파리 숙소 좌표 미확인 — 주소로 지도 확인 (78 Rue de Lourmel)"
+    "Musée Jacquemart-André 리노베이션 재개관 15:00 슬롯 예매 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-12-10월5일"

@@ -100,28 +100,36 @@
       "to": "uzes",
       "mode": "car",
       "duration": "약 45분",
-      "distance": "40.7km"
+      "distance": "40.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "uzes",
       "to": "uzes-lunch",
       "mode": "walk",
       "duration": "2분",
-      "distance": "0.1km"
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "uzes-lunch",
       "to": "pont-du-gard",
       "mode": "car",
       "duration": "약 20분",
-      "distance": "14.0km"
+      "distance": "14.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "pont-du-gard",
       "to": "avignon-return",
       "mode": "car",
       "duration": "약 40분",
-      "distance": "29.5km"
+      "distance": "29.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

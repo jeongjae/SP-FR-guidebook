@@ -131,42 +131,54 @@
       "to": "nice-station-pickup",
       "mode": "walk",
       "duration": "약 10분",
-      "distance": "1.0km"
+      "distance": "1.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "nice-station-pickup",
       "to": "saint-paul",
       "mode": "car",
       "duration": "약 30분",
-      "distance": "18.7km"
+      "distance": "18.7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "saint-paul",
       "to": "grasse",
       "mode": "car",
       "duration": "약 35분",
-      "distance": "22.1km"
+      "distance": "22.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "grasse",
       "to": "aix-checkin",
       "mode": "car",
       "duration": "약 1시간 50분",
-      "distance": "162.9km"
+      "distance": "162.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "aix-checkin",
       "to": "rotonde",
       "mode": "walk",
       "duration": "7분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "rotonde",
       "to": "aix-stay-return",
       "mode": "walk",
       "duration": "7분",
-      "distance": "0.5km"
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [

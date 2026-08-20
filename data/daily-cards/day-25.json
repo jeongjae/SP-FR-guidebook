@@ -3,13 +3,13 @@
   "day": 25,
   "date": "2026-09-22",
   "city": "Lyon",
-  "title": "Croix-Rousse·Halles·공원",
+  "title": "Silk & Gastronomy — 일하는 언덕과 먹는 도시",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:30",
-  "endTime": "20:00",
-  "totalDuration": "11시간 30분",
-  "totalDistance": "대중교통 + 도보 약 5.5km",
+  "startTime": "08:45",
+  "endTime": "19:30",
+  "totalDuration": "10시간 45분",
+  "totalDistance": "메트로 + 도보 약 5.0km",
   "fatigue": "3",
   "hotel": {
     "name": "Lagrange Aparthotel Lyon Lumière",
@@ -21,58 +21,73 @@
     {
       "id": "croix-rousse-market",
       "order": 1,
-      "start": "08:30",
-      "end": "10:00",
-      "name": "Marché de la Croix-Rousse (화요 로컬 시장)",
+      "start": "08:45",
+      "end": "10:15",
+      "name": "Marché de la Croix-Rousse & 마을 산책",
       "category": "shopping",
       "lat": 45.7744,
       "lng": 4.8319,
-      "summary": "메트로 C선을 타고 플라토 정상 하차 후 대로변(Boulevard de la Croix-Rousse) 화요 대형 로컬 시장 탐방 (신선 과일, 치즈, 로컬 빵)",
-      "menu": "에스프레소, 페이스트리",
+      "summary": "메트로 C선을 타고 플라토 정상(Croix-Rousse역) 하차 ➔ 대로변(Boulevard de la Croix-Rousse) 화요 대형 로컬 전통 시장(신선 과일, 치즈, 로컬 빵) 탐방 및 Le Mur des Canuts 벽화 외관 산책 (90분)",
+      "menu": "에스프레소, 크루아상",
       "reservation": null,
       "optional": false,
       "place_ref": "croix-rousse"
     },
     {
-      "id": "croix-rousse-slopes",
+      "id": "maison-des-canuts",
       "order": 2,
-      "start": "10:00",
-      "end": "12:00",
-      "name": "Le Mur des Canuts & 실크 직공 트라불",
-      "category": "sight",
-      "lat": 45.7761,
-      "lng": 4.8272,
-      "summary": "유럽 최대 트롱프뢰유 벽화(Le Mur des Canuts) ➔ 실크 작업실 거리 ➔ Cour des Voraces(보라스의 뜰 6층 석조 계단 트라불)을 통해 완만하게 하산 (2시간)",
+      "start": "10:15",
+      "end": "11:50",
+      "name": "Maison des Canuts — 자카르 직조기 실제 시연",
+      "category": "culture",
+      "lat": 45.7758,
+      "lng": 4.8322,
+      "summary": "10:15~10:45 메종 데 카뉘(10-12 Rue d'Ivry) 도보 이동 및 등록 ➔ 11:00~11:50 19세기 전통 자카르(Jacquard) 수동 직조기 실제 작동 시연 및 비단 직공(Canuts) 역사 해설 가이드 투어 (50분)",
       "menu": null,
-      "reservation": null,
+      "reservation": "11:00 직조 시연 슬롯 현장/사전 예약 (€10)",
       "optional": false,
       "place_ref": "croix-rousse"
     },
     {
-      "id": "halles",
+      "id": "halles-gastronomy",
       "order": 3,
       "start": "12:30",
-      "end": "14:30",
-      "name": "Les Halles de Lyon Paul Bocuse & 점심",
+      "end": "14:15",
+      "name": "Halles Paul Bocuse — 2차 리옹 미식 경험",
       "category": "food",
       "lat": 45.7622,
       "lng": 4.8519,
-      "summary": "메트로 C/B선 경유 폴 보퀴즈 미식 실내시장 도착. Mère Richard 생 마르슬랭 치즈, Sibilia 샤퀴테리 탐방 & 시장 내 해산물/비스트로 점심",
-      "menu": "신선 굴, 샤퀴테리 플래터, 생 마르슬랭 치즈, 로컬 화이트 와인",
-      "reservation": "현장 선택",
+      "summary": "메트로 C+B선으로 이동 ➔ 폴 보퀴즈 미식 실내시장 내 전문 레스토랑/해산물 바에서 즐기는 본격적인 2차 리옹 미식 점심 식사 (1시간 45분)",
+      "menu": "신선 생굴(Huîtres), 켄넬 드 브로셰(Quenelle de brochet), 샤퀴테리 플래터, 화이트 와인(샤블리)",
+      "reservation": "시장 내 식당 현장 착석 (12:30)",
+      "optional": false,
+      "place_ref": "halles-de-lyon-paul-bocuse"
+    },
+    {
+      "id": "halles-shopping",
+      "order": 4,
+      "start": "14:15",
+      "end": "14:45",
+      "name": "폴 보퀴즈 시장 식재료 & 아티장 상점 탐방",
+      "category": "shopping",
+      "lat": 45.7622,
+      "lng": 4.8519,
+      "summary": "Mère Richard 생마르슬랭 치즈 명가, Sibilia 소시송 브리오셰 샤퀴테리, Chocolatier Sève 핑크 프랄린 타르트 등 최고 명장(MOF) 부티크 컴팩트 탐방 (30분)",
+      "menu": "생마르슬랭 치즈, 프랄린 타르트 포장",
+      "reservation": null,
       "optional": false,
       "place_ref": "halles-de-lyon-paul-bocuse"
     },
     {
       "id": "tete-dor",
-      "order": 4,
-      "start": "15:00",
-      "end": "17:30",
-      "name": "Parc de la Tête d'Or (황금머리 공원 산책)",
+      "order": 5,
+      "start": "15:15",
+      "end": "17:15",
+      "name": "Parc de la Tête d'Or (황금머리 공원)",
       "category": "sight",
       "lat": 45.7772,
       "lng": 4.855,
-      "summary": "프랑스 최대 도심 공원. 센트럴 호수, 장미원(Roseraie), 열대 온실 식물원 산책 및 잔디밭 휴식 (2시간 30분)",
+      "summary": "프랑스 최대 도심 공원. 센트럴 호숫가 산책, 국제 장미원(Roseraie), 19세기 돔형 열대 온실 식물원 산책 및 평화로운 잔디밭 휴식 (2시간)",
       "menu": null,
       "reservation": "무료 입장",
       "optional": false,
@@ -80,15 +95,15 @@
     },
     {
       "id": "lyon-return",
-      "order": 5,
-      "start": "18:00",
-      "end": "20:00",
-      "name": "숙소 복귀 & 익일 Annecy 당일치기 준비",
+      "order": 6,
+      "start": "17:30",
+      "end": "19:30",
+      "name": "숙소 복귀 & 휴식 (저녁 가볍게)",
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "메트로 B/D선으로 숙소(Lagrange Lumière) 복귀. 가벼운 저녁 식사 및 익일 안시행 기차 시간표 확인",
-      "menu": null,
+      "summary": "메트로 B+D선으로 숙소(Lagrange Lumière) 복귀. 시장에서 구매한 치즈/과일로 가벼운 저녁 식사 및 익일 Annecy 당일치기 준비",
+      "menu": "생마르슬랭 치즈, 바게트, 과일, 차",
       "reservation": null,
       "optional": false,
       "place_ref": null
@@ -97,47 +112,65 @@
   "legs": [
     {
       "from": "croix-rousse-market",
-      "to": "croix-rousse-slopes",
+      "to": "maison-des-canuts",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km"
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
-      "from": "croix-rousse-slopes",
-      "to": "halles",
+      "from": "maison-des-canuts",
+      "to": "halles-gastronomy",
       "mode": "metro",
-      "duration": "메트로 C+B선 약 20분",
-      "distance": "2.8km"
+      "duration": "메트로 C+B선 약 20분 (12:00~12:30 이동 및 착석)",
+      "distance": "3.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
-      "from": "halles",
+      "from": "halles-gastronomy",
+      "to": "halles-shopping",
+      "mode": "walk",
+      "duration": "시장 내부 이동",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "halles-shopping",
       "to": "tete-dor",
       "mode": "walk",
-      "duration": "18분",
-      "distance": "1.4km"
+      "duration": "C4 버스 또는 도보 약 20분",
+      "distance": "1.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     },
     {
       "from": "tete-dor",
       "to": "lyon-return",
       "mode": "metro",
       "duration": "메트로 B+D선 약 20분",
-      "distance": "4.5km"
+      "distance": "4.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "TCL 메트로 (Metro D ➔ Metro C선 실크 언덕 상행)",
-    "크루아루스 하산길 및 테트도르 공원 도보"
+    "TCL 메트로 (Metro D ➔ Metro C선 실크 언덕 상행, Metro C ➔ Metro B선 Halles 이동)",
+    "크루아루스 실크 공방 및 테트도르 공원 도보"
   ],
   "food": [
-    "Halles Paul Bocuse 점심",
-    "저녁은 가볍게"
+    "Halles Paul Bocuse 2차 리옹 미식 경험 (12:30~14:15 점심)",
+    "저녁은 가볍게 (숙소식 또는 몽플레지르 카페)"
   ],
   "highlights": [
-    "화요 시장 09:20 도착",
-    "지역간 이동 3회 — 동선 압축",
-    "선택 러닝은 Rhône 강변 5–7km"
+    "08:45 크루아루스 화요 대형 로컬 시장 탐방",
+    "11:00 Maison des Canuts 자카르 직조기 실제 시연 견학",
+    "12:30 Les Halles Paul Bocuse 2차 리옹 미식 점심 & 식재료 탐방",
+    "15:15 Parc de la Tête d'Or 호숫가 산책 & 17:30 복귀"
   ],
-  "backup": "피로 시 Tête d'Or 공원 도보를 단축하고 숙소 몽플레지르 생활권 카페 휴식으로 전환",
+  "backup": "피로 시 Tête d'Or 공원 체류를 60분으로 단축하고 16:30 조기 복귀하여 휴식",
   "map": {
     "zoom": 13,
     "center": [
@@ -147,8 +180,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Les Halles Paul Bocuse 화요일 점심 식당 영업 확인",
-    "익일 Day 26 Annecy행 TER 왕복 시간표 확인"
+    "Maison des Canuts 11:00 직조 시연 가이드 투어 예약 확인 (화요일 9/22 정상 개관)",
+    "Les Halles Paul Bocuse 12:30 점심 식당 좌석 확보"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-25",
