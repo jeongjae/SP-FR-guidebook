@@ -229,27 +229,9 @@
         "summary": "Day 16–19는 농가 숙소와 여러 석조마을을 잇기 때문에 렌터카·외곽 주차·도보가 정본이다. 차량을 쓸 수 없으면 같은 일정을 버스로 재현하지 말고, 최신 시간표를 확인한 뒤 한 노선 축만 남긴다."
       },
       "products": [
-        {
-          "name": "ZOU! 917",
-          "price": "탑승 전 공식 운임 확인",
-          "shared": false,
-          "accessNote": "Apt–Gordes–Maubec",
-          "fit": "차량 장애 때 Gordes 한 축으로 일정을 줄이는 비상안"
-        },
-        {
-          "name": "ZOU! 915·907",
-          "price": "탑승 전 공식 운임 확인",
-          "shared": false,
-          "accessNote": "Avignon–Apt / Avignon–Cavaillon–Coustellet",
-          "fit": "Day 19 출발을 단순화할 때 출발지에 맞춰 검토하는 비상안"
-        },
-        {
-          "name": "ZOU! 989 Pays d’Apt",
-          "price": "예약할 때 공식 운임 확인",
-          "shared": false,
-          "accessNote": "고정 시각표 없는 사전예약형",
-          "fit": "즉흥 대체편이 아니며 예약이 성립한 경우에만 사용"
-        }
+        {"name": "ZOU! 917", "price": "탑승 전 공식 운임 확인", "shared": false, "accessNote": "Apt–Gordes–Maubec", "fit": "차량 장애 때 Gordes 한 축으로 일정을 줄이는 비상안"},
+        {"name": "ZOU! 915·907", "price": "탑승 전 공식 운임 확인", "shared": false, "accessNote": "Avignon–Apt / Avignon–Cavaillon–Coustellet", "fit": "Day 19 출발을 단순화할 때 출발지에 맞춰 검토하는 비상안"},
+        {"name": "ZOU! 989 Pays d’Apt", "price": "예약할 때 공식 운임 확인", "shared": false, "accessNote": "고정 시각표 없는 사전예약형", "fit": "즉흥 대체편이 아니며 예약이 성립한 경우에만 사용"}
       ],
       "howToUse": [
         "Vaucluse 노선은 9월 1일에 시간표가 바뀔 수 있다. 8월 28일에 2026년 9월판을 다시 내려받고 이용 당일 운행 여부를 확인한다.",
@@ -270,21 +252,85 @@
         {"day": 19, "label": "농가 체크아웃→Avignon은 렌터카; 915·907은 차량 장애 때만 검토"}
       ],
       "sources": [
+        {"label": "ZOU! Vaucluse 공식 노선별 시간표", "url": "https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Pays d’Apt Luberon 관광청 버스 노선 안내", "url": "https://www.luberon-apt.fr/horaires-des-lignes-de-bus", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Pays d’Apt Luberon 관광청 무차량 이동 안내", "url": "https://www.luberon-apt.fr/se-deplacer-sans-voiture", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"}
+      ]
+    },
+    "avignon": {
+      "recommendation": {
+        "title": "성벽 안은 도보 — Orizo 정기권 없이 TER 두 구간만 분리 구매",
+        "summary": "Day 19·21은 렌터카, Day 20은 도보라 Orizo 패스를 미리 사지 않는다. Day 22 Avignon Centre↔Arles TER는 별도 구매하고, Day 23 차량 반납 세부는 현장에서 처리한다."
+      },
+      "products": [
         {
-          "label": "ZOU! Vaucluse 공식 노선별 시간표",
-          "url": "https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse",
+          "name": "Orizo 단일 승차권",
+          "price": "탑승 전 공식 요금표 확인",
+          "shared": false,
+          "accessNote": "bus·tram 필요 시에만",
+          "fit": "성벽 안 도보가 힘들 때 쓰는 예외안; 이번 일정은 선구매하지 않음"
+        },
+        {
+          "name": "P+R Piot·Italiens 무료 셔틀",
+          "price": "주차·지정 셔틀 무료",
+          "shared": true,
+          "accessNote": "Piot–Porte de l’Oulle / Italiens–Place Pie",
+          "fit": "숙소 주차가 불가능할 때만 검토; 짐 보관용 장기주차로 권하지 않음"
+        },
+        {
+          "name": "SNCF TER Avignon↔Arles",
+          "price": "SNCF Connect 결제 화면 요금",
+          "shared": false,
+          "accessNote": "Avignon Centre↔Arles",
+          "fit": "Day 22 Arles 왕복; 실제 직행편과 귀환편 확인"
+        }
+      ],
+      "howToUse": [
+        "Orizo를 이용하면 승차 전에 표를 준비하고 bus·tram 탑승 때마다 검증한다. 이번 일정은 사용 횟수가 확정되지 않아 정기권이나 10회권을 미리 사지 않는다.",
+        "T1은 Gare Centre와 도심을 연결하지만 Avignon TGV역까지 가지 않는다.",
+        "Day 22에는 Avignon Centre↔Arles 왕복 열차를 따로 산다. ‘17분’은 특정 직행편의 소요시간이므로 당일 선택한 열차의 정차역과 시간을 다시 확인한다."
+      ],
+      "exceptions": [
+        "Day 21 Uzès·Pont du Gard는 렌터카가 정본이다. liO 115가 Avignon–Pont du Gard 축에 있어도 Uzès와 현장 체류를 같은 일정으로 재현하는 비상안으로 가정하지 않는다.",
+        "Day 23 차량 반납 방식과 시간은 현장에서 처리할 운영 항목이다. 지역 교통권 권고와 결합하지 않는다.",
+        "무료 P+R 셔틀은 노선과 운영시간이 맞을 때만 쓴다. 차량에 여행 짐을 둔 채 관광하는 근거로 삼지 않는다.",
+        "Orizo·liO·SNCF는 서로 다른 운임 체계다. 한 기관의 승차권이 다른 기관 구간에 적용된다고 추정하지 않는다."
+      ],
+      "itineraryUses": [
+        {"day": 19, "label": "Luberon→Avignon은 렌터카, 체크인 뒤 성벽 안 도보"},
+        {"day": 20, "label": "교황궁·성벽도시는 도보; Orizo는 피로 시 예외"},
+        {"day": 21, "label": "Uzès·Pont du Gard는 렌터카와 외곽 주차"},
+        {"day": 22, "label": "Avignon Centre↔Arles는 별도 TER"},
+        {"day": 23, "label": "Avignon TGV에서 차량 반납 후 확정 TGV로 Lyon 이동; 세부는 현장 처리"}
+      ],
+      "sources": [
+        {
+          "label": "Orizo 공식 요금표",
+          "url": "https://www.orizo.fr/tarifs/",
           "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         },
         {
-          "label": "Pays d’Apt Luberon 관광청 버스 노선 안내",
-          "url": "https://www.luberon-apt.fr/horaires-des-lignes-de-bus",
+          "label": "Orizo 2026–2027 공식 노선도",
+          "url": "https://www.orizo.fr/plan-du-reseau-2026-2027/",
           "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         },
         {
-          "label": "Pays d’Apt Luberon 관광청 무차량 이동 안내",
-          "url": "https://www.luberon-apt.fr/se-deplacer-sans-voiture",
+          "label": "Orizo 공식 P+R·무료 셔틀 안내",
+          "url": "https://www.orizo.fr/parking-relais/",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        },
+        {
+          "label": "liO 115 공식 2026년 9월 시간표 목록",
+          "url": "https://www.lio-occitanie.fr/horaires-et-plans/",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        },
+        {
+          "label": "SNCF TER Avignon–Arles 공식 여정",
+          "url": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/trajet-avignon-arles",
           "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         }

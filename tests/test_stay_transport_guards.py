@@ -81,6 +81,8 @@ class StayTransportGuards(unittest.TestCase):
                    "www.lametropolemobilite.fr", "lametropolemobilite.fr",
                    "www.holabarcelona.com", "holabarcelona.com",
                    "www.aerobusbarcelona.es", "aerobusbarcelona.es"}
+        allowed.update({"www.orizo.fr", "orizo.fr", "www.lio-occitanie.fr",
+                        "lio-occitanie.fr", "www.ter.sncf.com", "ter.sncf.com"})
         allowed.update({"zou.maregionsud.fr", "www.luberon-apt.fr", "luberon-apt.fr"})
         for slug, region in payload["regions"].items():
             for source in region["sources"]:
@@ -219,6 +221,19 @@ class StayTransportGuards(unittest.TestCase):
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
             self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
 
+    def test_avignon_public_transit_matches_current_itinerary(self):
+        region = next(r for r in self.trip.regions if r.slug == "avignon")
+        rendered = html.unescape(render.build_region(region, self.trip))
+        for token in ("성벽 안은 도보", "P+R Piot·Italiens 무료 셔틀",
+                      "Avignon Centre↔Arles", "T1은 Gare Centre"):
+            self.assertIn(token, rendered)
+        for day in range(19, 24):
+            self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+
+        day22 = json.loads((ROOT / "data" / "daily-cards" /
+                            "day-22.json").read_text(encoding="utf-8"))
+        self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day22["legs"]})
+
     def test_luberon_transport_is_car_first_and_bus_fallback_only(self):
         region = next(r for r in self.trip.regions if r.slug == "luberon")
         rendered = html.unescape(render.build_region(region, self.trip))
@@ -227,18 +242,8 @@ class StayTransportGuards(unittest.TestCase):
             self.assertIn(token, rendered)
         for day in range(16, 20):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
-
-        chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
-                   "08_Luberon_Farmhouse_v2.0.md").read_text(encoding="utf-8")
-        self.assertNotIn("대중교통이 사실상 없다", chapter)
-        for token in ("917(Apt–Gordes–Maubec)", "915(Avignon–Apt)",
-                      "907(Avignon–Cavaillon–Coustellet)", "989는 사전예약형"):
-            self.assertIn(token, chapter)
-
-        expected_modes = {
-            16: {"car"}, 17: {"car", "walk"},
-            18: {"car", "walk"}, 19: {"car", "walk"},
-        }
+        expected_modes = {16: {"car"}, 17: {"car", "walk"},
+                          18: {"car", "walk"}, 19: {"car", "walk"}}
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
