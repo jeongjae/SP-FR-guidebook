@@ -47,7 +47,7 @@
       "menu": null,
       "reservation": "주차 요금 현장 결제",
       "optional": false,
-      "place_ref": null
+      "place_ref": "cassis"
     },
     {
       "id": "calanques",
@@ -92,7 +92,7 @@
       "menu": null,
       "reservation": null,
       "optional": true,
-      "place_ref": null
+      "place_ref": "cassis"
     },
     {
       "id": "aix-return",

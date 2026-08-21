@@ -44,7 +44,8 @@
       "summary": "Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록. **프랑스 주행(9/2 콜리우르)을 반드시 신고한다**",
       "menu": null,
       "reservation": "예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요",
-      "optional": false
+      "optional": false,
+      "place_ref": "barcelona-sants"
     },
     {
       "id": "can-robert",

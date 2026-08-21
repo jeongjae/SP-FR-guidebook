@@ -76,7 +76,7 @@
       "menu": "리옹식 샐러드, 바게트 샌드위치, 프랄린 타르트",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "vieux-lyon"
     },
     {
       "id": "vieux-lyon",

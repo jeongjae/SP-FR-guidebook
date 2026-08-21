@@ -92,7 +92,7 @@
       "menu": "오늘의 생선 구이, 수프 드 푸아송(생선 수프), 지중해 샐러드",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "vieux-port-marseille"
     },
     {
       "id": "notre-dame-de-la-garde",
@@ -137,7 +137,7 @@
       "menu": null,
       "reservation": "SNCF Connect",
       "optional": false,
-      "place_ref": null
+      "place_ref": "marseille"
     },
     {
       "id": "aix-stay-return",

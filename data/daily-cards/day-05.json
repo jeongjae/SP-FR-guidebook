@@ -59,7 +59,8 @@
       "summary": "시장 조달 또는 항구권 생선 식당",
       "menu": "anchois marinés · 생선구이",
       "reservation": "Le Jardin 선택 시 사전예약",
-      "optional": false
+      "optional": false,
+      "place_ref": "collioure"
     },
     {
       "id": "cadaques",

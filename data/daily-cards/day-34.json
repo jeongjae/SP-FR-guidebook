@@ -32,7 +32,7 @@
       "menu": null,
       "reservation": "RER C 티켓 / 나비고",
       "optional": false,
-      "place_ref": null
+      "place_ref": "versailles"
     },
     {
       "id": "versailles-palace",
@@ -62,7 +62,7 @@
       "menu": "크레프, 키슈 로렌, 시드르(사과주)",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "versailles"
     },
     {
       "id": "versailles-gardens",

@@ -61,7 +61,7 @@
       "menu": "타르틴, 샐러드 니스와즈, 로컬 가르 와인",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "uzes"
     },
     {
       "id": "pont-du-gard",

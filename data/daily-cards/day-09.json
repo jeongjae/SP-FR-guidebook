@@ -31,7 +31,7 @@
       "menu": null,
       "reservation": "SNCF Connect / 현장 발권 (15~20분 간격)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "nice-ville"
     },
     {
       "id": "antibes-old-town",
@@ -76,7 +76,7 @@
       "menu": "오늘의 생선 그릴, 해산물 파스타",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "cannes"
     },
     {
       "id": "le-suquet",
@@ -121,7 +121,7 @@
       "menu": null,
       "reservation": "SNCF Connect",
       "optional": false,
-      "place_ref": null
+      "place_ref": "cannes"
     },
     {
       "id": "nice-return",

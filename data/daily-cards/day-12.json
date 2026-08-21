@@ -47,7 +47,7 @@
       "menu": null,
       "reservation": "예약확정 Hertz L672E080313 — 9/9 09:00 인수",
       "optional": false,
-      "place_ref": null
+      "place_ref": "nice-ville"
     },
     {
       "id": "saint-paul",

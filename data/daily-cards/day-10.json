@@ -31,7 +31,7 @@
       "menu": null,
       "reservation": "SNCF Connect / 현장 발권",
       "optional": false,
-      "place_ref": null
+      "place_ref": "nice-ville"
     },
     {
       "id": "villefranche-sur-mer",
@@ -76,7 +76,7 @@
       "menu": "바르바주앙(Barbajuan), 파스타, 포카치아",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "monaco"
     },
     {
       "id": "le-rocher",
@@ -121,7 +121,7 @@
       "menu": "구운 생선 요리, 해산물 리조또",
       "reservation": "사전 확인 권장",
       "optional": true,
-      "place_ref": null
+      "place_ref": "menton"
     },
     {
       "id": "nice-return",
