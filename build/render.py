@@ -926,9 +926,27 @@ def build_region(r: Region, trip: Trip) -> str:
                            "<strong>숙소 미확정</strong> — 확정되면 여기에 표시된다. "
                            "확정 전 주소를 믿고 이동하지 않는다.", "stay"))
 
+    essentials = r.essentials
+    if essentials:
+        parts.append(f'<div class="prose"><p>{esc(essentials["staySummary"])}</p>')
+        life = essentials.get("lifeEssentials") or []
+        if life:
+            parts.append('<h3>생활 필수</h3><ul>'
+                         + "".join(f'<li>{esc(item)}</li>' for item in life)
+                         + '</ul>')
+        if essentials.get("lateReturnRule"):
+            parts.append(f'<p><strong>늦은 귀가</strong> — '
+                         f'{esc(essentials["lateReturnRule"])}</p>')
+        parts.append('</div>')
+
     # --- Transport --------------------------------------------------------
+    # 자유문자열 교통 요약은 그날의 주 숙박 거점에만 귀속한다. 이동일은
+    # 양쪽 Region.days 에 잡히므로 필터 없이 모으면 다음 거점의 시내 교통이
+    # 앞 지역에 섞인다. 도착·출발의 상세는 아래 Day 링크가 맡는다.
     modes = []
     for d in r.days:
+        if d.region != r.slug:
+            continue
         for t in d.transport:
             if t not in modes:
                 modes.append(t)
@@ -936,11 +954,85 @@ def build_region(r: Region, trip: Trip) -> str:
     arrive, leave = r.days[0], r.days[-1]
     parts.append(f"""<div class="prose">
 <ul>
-  <li><strong>도착</strong> — Day {arrive.n} · {esc(arrive.date_label)} · {esc(arrive.city)}</li>
-  <li><strong>출발</strong> — Day {leave.n} · {esc(leave.date_label)} · {esc(leave.city)}</li>
+  <li><strong>도착</strong> — <a href="{rel}/{arrive.url}">Day {arrive.n} · {esc(arrive.date_label)} · {esc(arrive.city)}</a></li>
+  <li><strong>출발</strong> — <a href="{rel}/{leave.url}">Day {leave.n} · {esc(leave.date_label)} · {esc(leave.city)}</a></li>
 </ul>
-{'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes[:10]) + '</ul>' if modes else ''}
+{'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes) + '</ul>' if modes else ''}
 </div>""")
+
+    if essentials:
+        parts.append('<div class="grid grid-2">'
+                     f'<article class="card"><div class="card-body"><h3>도착</h3>'
+                     f'<p>{esc(essentials["arrivalStrategy"])}</p>'
+                     f'<a class="btn btn-secondary" href="{rel}/{arrive.url}">Day {arrive.n} 실행 보기</a>'
+                     '</div></article>'
+                     f'<article class="card"><div class="card-body"><h3>출발</h3>'
+                     f'<p>{esc(essentials["departureStrategy"])}</p>'
+                     f'<a class="btn btn-secondary" href="{rel}/{leave.url}">Day {leave.n} 실행 보기</a>'
+                     '</div></article></div>')
+
+    transit = r.transit
+    if transit:
+        rec = transit["recommendation"]
+        parts.append(sec_head("PUBLIC TRANSIT", "도시 공공교통"))
+        parts.append(alert("info", f'<strong>{esc(rec["title"])}</strong> — '
+                           f'{esc(rec["summary"])}', "train"))
+
+        products = transit.get("products") or []
+        if products:
+            product_cards = []
+            for product in products:
+                shared = "공동 사용" if product.get("shared") else "1인용"
+                product_cards.append(f'''<article class="card"><div class="card-body">
+  <h3>{esc(product.get("name"))}</h3>
+  <div class="metarow"><strong>{esc(product.get("price"))}</strong><span>{shared}</span><span>{esc(product.get("accessNote"))}</span></div>
+  <p>{esc(product.get("fit"))}</p>
+</div></article>''')
+            parts.append(f'<div class="grid grid-3">{"".join(product_cards)}</div>')
+
+        parts.append('<div class="grid grid-2"><div class="prose"><h3>이용법</h3><ul>'
+                     + "".join(f'<li>{esc(x)}</li>' for x in transit["howToUse"])
+                     + '</ul></div><div class="prose"><h3>적용되지 않는 이동·예외</h3><ul>'
+                     + "".join(f'<li>{esc(x)}</li>' for x in transit["exceptions"])
+                     + '</ul></div></div>')
+
+        uses = transit.get("itineraryUses") or []
+        if uses:
+            day_by_number = {day.n: day for day in trip.days}
+            parts.append('<div class="prose"><h3>이 일정에서 쓰는 교통</h3><ul>'
+                         + "".join(
+                             f'<li><a href="{rel}/{day_by_number[x["day"]].url}">Day {x["day"]}</a> — {esc(x["label"])}</li>'
+                             for x in uses) + '</ul></div>')
+
+        sources = transit.get("sources") or []
+        if sources:
+            parts.append('<details class="acc"><summary>공식 출처와 재확인일</summary>'
+                         '<div class="acc-body prose"><ul>'
+                         + "".join(
+                             f'<li><a href="{esc(x["url"])}" target="_blank" rel="noopener">{esc(x["label"])}</a>'
+                             f' · 확인 {esc(x["verifiedAt"])} · 재확인 {esc(x["recheckBy"])}</li>'
+                             for x in sources)
+                         + '</ul></div></details>')
+
+    resources = r.transport_resources
+    if resources:
+        parts.append(sec_head("OFFICIAL MAPS", "교통 지도·공식 자료"))
+        resource_cards = []
+        for resource in resources:
+            local_path = resource.get("localPath")
+            if local_path:
+                asset_rel = local_path.removeprefix("source/ASSETS/")
+                primary = (f'<a class="btn btn-secondary" href="{rel}/assets/{esc(asset_rel)}" '
+                           f'target="_blank">PDF 열기</a>')
+            else:
+                primary = ""
+            resource_cards.append(f'''<article class="card"><div class="card-body">
+  <h3>{esc(resource["title"])}</h3>
+  <div class="metarow"><span>{esc(resource["edition"])}</span></div>
+  <p>{esc(resource["usage"])}</p>
+  <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">공식 최신판</a></div>
+</div></article>''')
+        parts.append(f'<div class="grid grid-2">{"".join(resource_cards)}</div>')
 
     extra = [(k, LAYER_LABEL[k]) for k in ("role", "rhythm") if ed.get(k)]
     if extra:
@@ -1401,6 +1493,9 @@ def write_assets(trip: Trip) -> None:
     pwa = ROOT / "source" / "ASSETS" / "pwa"
     if pwa.exists():
         shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
+    transport_guides = ROOT / "source" / "ASSETS" / "transport-guides"
+    if transport_guides.exists():
+        shutil.copytree(transport_guides, out / "transport-guides", dirs_exist_ok=True)
 
     # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))

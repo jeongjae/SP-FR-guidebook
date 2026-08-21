@@ -9,7 +9,7 @@
   "startTime": "08:00",
   "endTime": "21:00",
   "totalDuration": "13시간",
-  "totalDistance": "TER 및 버스 4개 구간 + 도보 약 6km",
+  "totalDistance": "TER와 83번 버스 5개 이동 구간 + 도보 약 6km",
   "fatigue": "4",
   "hotel": {
     "name": "Palais ALZIRA · 12 Rue Verdi",
@@ -53,7 +53,7 @@
       "id": "eze-village",
       "order": 3,
       "start": "10:30",
-      "end": "12:15",
+      "end": "12:00",
       "name": "Èze Village 중세 절벽마을",
       "category": "sight",
       "lat": 43.7278,
@@ -67,13 +67,13 @@
     {
       "id": "monaco-port-lunch",
       "order": 4,
-      "start": "12:45",
+      "start": "13:00",
       "end": "13:45",
       "name": "Monaco Port Hercule & 점심",
       "category": "food",
       "lat": 43.7353,
       "lng": 7.4206,
-      "summary": "에즈에서 버스 602 탑승(20분) ➔ 모나코 플레이스 다르메 도착. 라 콘다민 시장/항구 인근 캐주얼 점심",
+      "summary": "83번으로 Gare d’Èze에 내려와 Èze-sur-Mer역에서 TER로 Monaco-Monte-Carlo 이동. 연결시간을 확보한 뒤 라 콘다민 시장·항구 인근에서 간단히 점심",
       "menu": "바르바주앙(Barbajuan), 파스타, 포카치아",
       "reservation": null,
       "optional": false,
@@ -153,19 +153,19 @@
     {
       "from": "villefranche-sur-mer",
       "to": "eze-village",
-      "mode": "bus",
-      "duration": "버스/환승 약 20~25분",
+      "mode": "train",
+      "duration": "TER로 Èze-sur-Mer 이동 후 83번 버스 환승 · 당일 연결 확인",
       "distance": "약 6km",
-      "line": null,
+      "line": "TER Villefranche-sur-Mer→Èze-sur-Mer + Lignes d’Azur 83 Gare d’Èze→Èze Village",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "eze-village",
       "to": "monaco-port-lunch",
       "mode": "bus",
-      "duration": "버스 602 약 20분",
+      "duration": "83번 버스로 Èze-sur-Mer 하산 후 TER Monaco 이동 · 당일 연결 확인",
       "distance": "약 8km",
-      "line": null,
+      "line": "Lignes d’Azur 83 Èze Village→Gare d’Èze + TER Èze-sur-Mer→Monaco",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -207,7 +207,7 @@
   ],
   "transport": [
     "TER (Nice ➔ Villefranche, Monaco ➔ Menton, Menton ➔ Nice)",
-    "Zou! / Lignes d'Azur 버스 (Villefranche ➔ Èze Village, Èze Village ➔ Monaco)",
+    "Lignes d’Azur 83 (Gare d’Èze ↔ Èze Village) + TER 환승",
     "각 도시 내 도보 및 공공 엘리베이터"
   ],
   "food": [
@@ -230,7 +230,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "당일 SNCF Connect에서 Nice↔Monaco↔Menton TER 시각 확인",
+    "9/7 SNCF Connect에서 TER 시각을 확인하고 Lignes d’Azur 83의 Gare d’Èze↔Èze Village 왕복 연결을 맞춘다. 연결이 나쁘면 Villefranche 또는 Èze 중 하나를 생략",
     "Menton 저녁식사(Le Petit Port) 영업 및 좌석 확인",
     "Nice 숙소 확정 (2026-08-13, Airbnb [CONFIRMED]): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00"
   ],

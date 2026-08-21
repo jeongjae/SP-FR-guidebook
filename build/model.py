@@ -23,6 +23,9 @@
     source/ASSETS/91_Place_Registry_v1.0.md 장소 명부
     source/CURRENT/30_Places/<slug>.md      장소 장문 (정본)
     data/place-facts.json                   운영시간·요금·예약 (근거·TTL 포함)
+    data/region-essentials.json             지역별 짧은 숙박·생활 실행 요약
+    data/transit-facts.json                 공공교통 선택·이용법·공식 출처
+    data/transit-resources.json             공식 노선도·오프라인 교통 자료
     data/images/image-manifest.json         사진
 """
 from __future__ import annotations
@@ -33,6 +36,8 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 
+import jsonschema
+
 ROOT = Path(__file__).resolve().parent.parent
 
 DAILY_CARDS = ROOT / "data" / "daily-cards"
@@ -42,6 +47,9 @@ REGION_DIR = ROOT / "source" / "CURRENT" / "20_Regions"
 REGISTRY_MD = ROOT / "source" / "ASSETS" / "91_Place_Registry_v1.0.md"
 PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"
 PLACE_FACTS = ROOT / "data" / "place-facts.json"
+REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
+TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
+TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 
 WEEKDAY_KO = "월화수목금토일"
@@ -49,6 +57,17 @@ WEEKDAY_KO = "월화수목금토일"
 
 def _d(iso: str) -> date:
     return date.fromisoformat(iso)
+
+
+def _load_validated_json(data_path: Path) -> dict:
+    """Load curated JSON only after its adjacent schema accepts it."""
+    payload = json.loads(data_path.read_text(encoding="utf-8"))
+    schema_path = data_path.with_suffix(".schema.json")
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    jsonschema.Draft202012Validator(
+        schema, format_checker=jsonschema.FormatChecker()
+    ).validate(payload)
+    return payload
 
 
 def date_label(d: date) -> str:
@@ -247,6 +266,9 @@ class Region:
     # 원고에서 온 편집 층 — verdict · scenes · skip · overview · role · rhythm.
     # 지역 페이지가 목록만 남지 않게 하는 부분이다.
     editorial: dict = field(default_factory=dict)
+    essentials: dict = field(default_factory=dict)
+    transit: dict = field(default_factory=dict)
+    transport_resources: list[dict] = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -543,6 +565,26 @@ def load_trip() -> Trip:
     itin = json.loads(ITINERARY.read_text(encoding="utf-8"))
     stays = itin["stays"]
     regions_raw = json.loads(REGIONS_JSON.read_text(encoding="utf-8"))["regions"]
+    essentials = _load_validated_json(REGION_ESSENTIALS).get("regions", {})
+    transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
+    transport_resources = _load_validated_json(TRANSIT_RESOURCES).get("regions", {})
+    trip_start = _d(itin["trip"]["start"])
+    for slug, facts in transit.items():
+        for source in facts["sources"]:
+            verified = _d(source["verifiedAt"])
+            recheck = _d(source["recheckBy"])
+            if verified > date.today():
+                raise ValueError(f"{slug}: transit source verifiedAt is in the future: {verified}")
+            if recheck < verified or recheck >= trip_start:
+                raise ValueError(
+                    f"{slug}: transit source recheckBy must be on/after verification "
+                    f"and before trip start: {recheck}"
+                )
+    for slug, resources in transport_resources.items():
+        for resource in resources:
+            local_path = resource.get("localPath")
+            if local_path and not (ROOT / local_path).is_file():
+                raise ValueError(f"{slug}: transport resource file missing: {local_path}")
     editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 
@@ -609,6 +651,9 @@ def load_trip() -> Trip:
             places=[p for p in places.values() if p.region == r["slug"]],
             hero=heroes.get(r["slug"]),
             editorial=editorial.get(r["slug"], {}),
+            essentials=essentials.get(r["slug"], {}),
+            transit=transit.get(r["slug"], {}),
+            transport_resources=transport_resources.get(r["slug"], []),
         ))
 
     return Trip(
@@ -669,6 +714,30 @@ def validate(trip: Trip) -> list[str]:
                 problems.append(
                     f"Day {d.n}: place_ref '{s.place_ref}' 가 링크로 실현되지 "
                     f"않았다 (stop {s.id})")
+
+    # 같은 숙소를 날짜마다 복제하는 현재 모델에서 일부 날짜만 주소·좌표가
+    # 빠지거나 달라지는 회귀를 막는다. 숙소 엔티티로 승격하기 전까지의
+    # 안전망이며, 값이 하나라도 알려졌다면 같은 이름의 모든 날에 있어야 한다.
+    hotels: dict[str, list[tuple[int, dict]]] = {}
+    for d in trip.days:
+        name = str(d.hotel.get("name") or "").strip()
+        if not name:
+            continue
+        hotels.setdefault(name, []).append((d.n, d.hotel))
+        if "숙소 없음" in name and any(d.hotel.get(k) is not None
+                                      for k in ("lat", "lng")):
+            problems.append(f"Day {d.n}: 숙소 없음 객체에 좌표가 있다")
+
+    for name, rows in hotels.items():
+        for key, label in (("status", "상태"), ("address", "주소"),
+                           ("lat", "위도"), ("lng", "경도")):
+            values = {row.get(key) for _, row in rows if row.get(key) is not None}
+            if len(values) > 1:
+                problems.append(f"숙소 {name}: 날짜별 {label} 불일치 — {sorted(map(str, values))}")
+            if values:
+                missing_days = [n for n, row in rows if row.get(key) is None]
+                if missing_days:
+                    problems.append(f"숙소 {name}: {label} 누락 Day {missing_days}")
 
     return problems
 
