@@ -13,8 +13,8 @@
   "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
-    "lat": null,
-    "lng": null,
+    "lat": 48.8472,
+    "lng": 2.2894,
     "status": "confirmed",
     "address": "78 Rue de Lourmel, 75015 Paris, Île-de-France, France"
   },
@@ -60,7 +60,7 @@
       "lng": 2.3734,
       "summary": "TGV INOUI 6618 탑승 (13:04 출발 ➔ 15:00 파리 리옹역 도착, 1등석 편안한 1시간 56분 고속주행)",
       "menu": null,
-      "reservation": "예약확정 TGV INOUI 6618 (1등석 확정 [CONFIRMED])",
+      "reservation": "예약확정 TGV INOUI 6618 · 1등석 13호차 356(Jeongjae)·357(Jungah) ([CONFIRMED]) — 13:04 발차",
       "optional": false,
       "place_ref": null
     },
@@ -158,7 +158,7 @@
     }
   ],
   "transport": [
-    "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 확정 [CONFIRMED])",
+    "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 13호차 356·357 확정 [CONFIRMED])",
     "Paris Gare de Lyon ➔ 15구 숙소 택시 이동 (약 35분 소요)"
   ],
   "food": [
@@ -188,6 +188,7 @@
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-27",
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-1",
     "source/ASSETS/75_Execution_Maps/Paris_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Gare de Lyon"
+    "OSM Nominatim 지오코딩 2026-08-06: Gare de Lyon",
+    "예약 증빙 확인 (2026-08-21): TGV INOUI 6618 승차권 9/24 13:04 Lyon Part-Dieu → 15:00 Paris Gare de Lyon · 1등석 13호차 356·357 · €64/인"
   ]
 }

@@ -15,7 +15,8 @@
     "name": "Occidental Barcelona 1929",
     "lat": 41.3752738,
     "lng": 2.1476619,
-    "status": "confirmed"
+    "status": "confirmed",
+    "address": "Carrer de la Creu Coberta 20-22, Sants-Montjuïc, 08014 Barcelona, Spain"
   },
   "stops": [
     {
@@ -44,7 +45,7 @@
       "lng": 2.147662,
       "summary": "체크인 완료 및 샤워. 여권 사본 및 익일 사그라다 QR 확인",
       "menu": null,
-      "reservation": "예약완료 Occidental Barcelona 1929",
+      "reservation": "예약완료 Occidental Barcelona 1929 — 체크인 8/29 14:00~",
       "optional": false,
       "place_ref": null
     },
@@ -113,6 +114,7 @@
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-1",
     "항공권 확정 (2026-08-10 반영): OZ511 ICN T2 11:50 → BCN T1 19:10, 예약 [CONFIRMED]",
     "source/ASSETS/75_Execution_Maps/Barcelona_Execution_Map_v0.2.kml",
-    "routes/day-01-driving-osrm.json (공항→확정 숙소 11.6km)"
+    "routes/day-01-driving-osrm.json (공항→확정 숙소 11.6km)",
+    "예약 증빙 확인 (2026-08-21): Trip.com 바우처 대조 — Occidental Barcelona 1929 · Carrer de la Creu Coberta 20-22 · 체크인 14:00~ · 체크아웃 12:00"
   ]
 }

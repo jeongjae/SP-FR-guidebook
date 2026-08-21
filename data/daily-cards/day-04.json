@@ -15,7 +15,8 @@
     "name": "바스카라의 B&B",
     "lat": 42.16036,
     "lng": 2.90964,
-    "status": "confirmed"
+    "status": "confirmed",
+    "address": "Plaça de l'Església 6, 17483 Bàscara, Catalonia, Spain"
   },
   "stops": [
     {
@@ -29,7 +30,7 @@
       "lng": 2.1476619,
       "summary": "Sants까지 도보권 — 짐 끌고 10분",
       "menu": "숙소 아침",
-      "reservation": "숙소 후보 확정 필요",
+      "reservation": "체크아웃 9/1 12:00까지 (Occidental Barcelona 1929)",
       "optional": false
     },
     {
@@ -102,7 +103,7 @@
       "lng": 2.90964,
       "summary": "숙소 진입·주차 지침을 우선하고 저녁은 반경 10분",
       "menu": "숙소 인근 간단식",
-      "reservation": "체크인 창 재확인",
+      "reservation": "예약완료 Airbnb [CONFIRMED] — 체크인 9/1 12:00~ · 체크아웃 9/4 11:00",
       "optional": false
     }
   ],
@@ -186,6 +187,7 @@
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-4",
     "data/daily-cards/routes/day-04-driving-osrm.json",
-    "Hertz 예약 확인 메일 [CONFIRMED] (2026-08-05): Sants 9/1 07:00 픽업 · 공항 T1/T2 9/4 14:00 반납"
+    "Hertz 예약 확인 메일 [CONFIRMED] (2026-08-05): Sants 9/1 07:00 픽업 · 공항 T1/T2 9/4 14:00 반납",
+    "예약 증빙 확인 (2026-08-21): Airbnb 확약서 (Torre de Báscara) — Plaça de l'Església 6, 17483 Bàscara · 체크인 12:00 · 체크아웃 11:00"
   ]
 }

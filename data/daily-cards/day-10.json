@@ -15,7 +15,8 @@
     "name": "Palais ALZIRA · 12 Rue Verdi",
     "lat": 43.6996749,
     "lng": 7.2608829,
-    "status": "confirmed"
+    "status": "confirmed",
+    "address": "12 Rue Verdi, Palais ALZIRA, 06000 Nice, France"
   },
   "stops": [
     {

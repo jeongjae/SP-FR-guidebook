@@ -15,7 +15,8 @@
     "name": "Lagrange Aparthotel Lyon Lumière",
     "lat": 45.746467,
     "lng": 4.868933,
-    "status": "confirmed"
+    "status": "confirmed",
+    "address": "81-85 Cours Albert Thomas, 69003 Lyon, France"
   },
   "stops": [
     {

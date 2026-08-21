@@ -15,7 +15,8 @@
     "name": "Palais ALZIRA · 12 Rue Verdi",
     "lat": 43.6996749,
     "lng": 7.2608829,
-    "status": "confirmed"
+    "status": "confirmed",
+    "address": "12 Rue Verdi, Palais ALZIRA, 06000 Nice, France"
   },
   "stops": [
     {
@@ -29,7 +30,7 @@
       "lng": 2.90964,
       "summary": "10:30 출발 — 반납 12:30 기준 역산. 주유 영수증·차량사진 준비",
       "menu": null,
-      "reservation": "체크아웃 조건 재확인",
+      "reservation": "체크아웃 9/4 11:00까지 (Airbnb [CONFIRMED])",
       "optional": false
     },
     {
@@ -71,7 +72,7 @@
       "lng": 7.2608829,
       "summary": "16:55 NCE 도착 → 트램 2호선 이동 → 숙소 체크인(18:00~19:00) 및 짐 정리/휴식",
       "menu": null,
-      "reservation": "예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi, Palais ALZIRA (체크인 18:00~19:00)",
+      "reservation": "예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi, Palais ALZIRA (체크인 9/4 15:00~ · 체크아웃 9/9 11:00)",
       "optional": false
     },
     {
@@ -185,6 +186,7 @@
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-7",
     "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-4-9월4일금요일",
     "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml",
-    "예약 확정 (2026-08-09 반영): Hertz [CONFIRMED] 반납 9/4 14:00 BCN T1 · Vueling VY1521 15:30→16:55 ([CONFIRMED])"
+    "예약 확정 (2026-08-09 반영): Hertz [CONFIRMED] 반납 9/4 14:00 BCN T1 · Vueling VY1521 15:30→16:55 ([CONFIRMED])",
+    "예약 증빙 확인 (2026-08-21): Airbnb 확약서 — 12 Rue Verdi Palais ALZIRA, 06000 Nice · 체크인 15:00 · 체크아웃 11:00"
   ]
 }
