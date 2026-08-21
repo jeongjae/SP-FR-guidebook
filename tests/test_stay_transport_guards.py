@@ -81,6 +81,7 @@ class StayTransportGuards(unittest.TestCase):
                    "www.lametropolemobilite.fr", "lametropolemobilite.fr",
                    "www.holabarcelona.com", "holabarcelona.com",
                    "www.aerobusbarcelona.es", "aerobusbarcelona.es",
+                   "www.iledefrance-mobilites.fr", "iledefrance-mobilites.fr",
                    "www.tcl.fr", "tcl.fr", "www.ter.sncf.com", "ter.sncf.com"}
         allowed.update({"www.orizo.fr", "orizo.fr", "www.lio-occitanie.fr",
                         "lio-occitanie.fr", "www.ter.sncf.com", "ter.sncf.com"})
@@ -234,6 +235,27 @@ class StayTransportGuards(unittest.TestCase):
         day22 = json.loads((ROOT / "data" / "daily-cards" /
                             "day-22.json").read_text(encoding="utf-8"))
         self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day22["legs"]})
+
+    def test_paris_uses_one_weekly_pass_and_individual_tickets_around_it(self):
+        region = next(r for r in self.trip.regions if r.slug == "paris")
+        rendered = html.unescape(render.build_region(region, self.trip))
+        for token in ("Weekly는 9/28–10/4 한 번만", "1인 1여정 €2.55", "1인 1여정 €2.05",
+                      "1인 €32.40", "고정된 월요일–일요일", "Navigo Easy에 넣지 않는다",
+                      "CDG Terminal 1은 공식 택시"):
+            self.assertIn(token, rendered)
+        for day in range(27, 43):
+            self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+        chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
+                   "11_Paris_Long_Stay_v2.0.md").read_text(encoding="utf-8")
+        for stale in ("Navigo Weekly 2주 연속 권장", "두 주 연속 Weekly", "월 €88.80", "주간권 2회의 유불리"):
+            self.assertNotIn(stale, chapter)
+        for token in ("9/28–10/4 Weekly 한 번만", "Monthly all zones **€90.80**"):
+            self.assertIn(token, chapter)
+        day37 = json.loads((ROOT / "data" / "daily-cards" / "day-37.json").read_text(encoding="utf-8"))
+        self.assertEqual({"bus", "metro"}, {leg["mode"] for leg in day37["legs"]})
+        self.assertIn("무료 셔틀", json.dumps(day37, ensure_ascii=False))
+        day42 = json.loads((ROOT / "data" / "daily-cards" / "day-42.json").read_text(encoding="utf-8"))
+        self.assertEqual({"taxi", "walk"}, {leg["mode"] for leg in day42["legs"]})
 
     def test_lyon_contactless_and_annecy_ter_match_itinerary(self):
         region = next(r for r in self.trip.regions if r.slug == "lyon")

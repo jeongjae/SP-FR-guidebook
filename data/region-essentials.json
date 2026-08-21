@@ -53,6 +53,19 @@
         "data/daily-cards/day-27.json", "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
       ]
     },
+    "paris": {
+      "staySummary": "15박 확정 숙소는 15구 78 Rue de Lourmel이다. 9월 24일 Gare de Lyon 도착과 10월 9일 CDG 출국은 큰 짐 때문에 택시로 고정하고, 체류 중에는 각자 휴대전화 또는 Navigo 매체로 이동한다.",
+      "lifeEssentials": [
+        "9월 24–27일과 10월 5–8일은 개별 승차권, 9월 28일–10월 4일만 Navigo Weekly all zones를 쓴다.",
+        "Metro·Train·RER 단일권과 Bus·Tram 단일권은 서로 다른 상품이다. 환승 체계를 섞어 한 여정으로 계산하지 않는다.",
+        "장기체류 장보기·세탁·약국은 숙소 반경 생활권에서 해결하고, 박물관일에는 귀가 동선을 추가 관광으로 늘리지 않는다.",
+        "10월 9일은 체크아웃·가벼운 점심·공식 택시로 CDG 이동만 한다. Weekly를 소진하려고 RER B로 바꾸지 않는다."
+      ],
+      "arrivalStrategy": "Day 27 Paris Gare de Lyon 도착 뒤 큰 짐을 들고 Metro로 환승하지 않고 택시로 15구 숙소에 간다. 생활권 확인만 하고 개별 교통권은 다음 날 첫 이동에서 시작한다.",
+      "departureStrategy": "Day 42에는 14:00 이전 공식 택시로 15구 숙소에서 CDG Terminal 1으로 출발한다. Paris Region Airports Ticket은 철도 비상안일 뿐 확정 동선이 아니다.",
+      "lateReturnRule": "야간에는 환승 수가 적고 밝은 출구로 연결되는 경로를 우선한다. 행사·경마 귀환 때 혼잡하면 다음 열차를 기다리고 휴대전화는 출입문 근처에서 꺼내지 않는다.",
+      "sourceRefs": ["data/daily-cards/day-27.json", "data/daily-cards/day-28.json", "data/daily-cards/day-34.json", "data/daily-cards/day-37.json", "data/daily-cards/day-42.json", "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"]
+    },
     "avignon": {
       "staySummary": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장에 두고 Day 21 근교 일정에 사용한다.",
       "lifeEssentials": [
