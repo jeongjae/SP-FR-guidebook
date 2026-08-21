@@ -2,14 +2,14 @@
   "schemaVersion": "1.0",
   "day": 11,
   "date": "2026-09-08",
-  "city": "Nice",
-  "title": "생활·회복·선택문화",
+  "city": "Nice & Saint-Jean-Cap-Ferrat",
+  "title": "생활·회복·로스차일드 빌라 런치",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "09:00",
-  "endTime": "19:30",
-  "totalDuration": "10시간 30분",
-  "totalDistance": "약 4km · 도보/트램",
+  "startTime": "08:45",
+  "endTime": "19:00",
+  "totalDuration": "10시간 15분",
+  "totalDistance": "약 5km · 버스/도보",
   "fatigue": "2",
   "hotel": {
     "name": "Palais ALZIRA · 12 Rue Verdi",
@@ -21,73 +21,88 @@
     {
       "id": "liberation-market",
       "order": 1,
-      "start": "09:30",
-      "end": "11:30",
+      "start": "08:45",
+      "end": "10:15",
       "name": "Marché de la Libération",
       "category": "shopping",
       "lat": 43.7102,
       "lng": 7.2625,
-      "summary": "화요일 대형 로컬 시장. 니스 시민들의 일상 식재료·치즈·과일 탐방 및 Gare du Sud 카페",
-      "menu": "프로방스 과일, 에스프레소",
+      "summary": "화요일 대형 로컬 시장. 니스 시민들의 일상 식재료·치즈·과일 탐방 및 Gare du Sud 주변 아침 에스프레소",
+      "menu": "프로방스 제철 과일, 에스프레소",
       "reservation": null,
       "optional": false,
       "place_ref": "marche-de-la-liberation"
     },
     {
-      "id": "liberation-lunch",
+      "id": "villa-ephrussi",
       "order": 2,
-      "start": "12:00",
-      "end": "13:30",
-      "name": "리베라시옹 점심",
+      "start": "11:00",
+      "end": "12:15",
+      "name": "Villa Ephrussi de Rothschild & 정원",
+      "category": "sight",
+      "lat": 43.6865,
+      "lng": 7.3323,
+      "summary": "15번 버스로 생장캅페라 이동 ➔ 베아트리스 남작부인의 분홍빛 팔라초 및 9개 테마 정원 산책",
+      "menu": null,
+      "reservation": "현장 발권 / 온라인 예매 (€17)",
+      "optional": false,
+      "place_ref": "villa-ephrussi-de-rothschild"
+    },
+    {
+      "id": "restaurant-beatrice",
+      "order": 3,
+      "start": "12:15",
+      "end": "13:45",
+      "name": "Restaurant & Salon de Thé Béatrice 점심 (WISH-02)",
       "category": "food",
-      "lat": 43.7095,
-      "lng": 7.2631,
-      "summary": "리베라시옹 시장 인근 비스트로 점심 또는 숙소 간단식",
-      "menu": "파니니, 니스식 샐러드",
+      "lat": 43.6865,
+      "lng": 7.3323,
+      "summary": "저택 내 테라스에서 빌프랑슈 만을 내려다보며 즐기는 여유로운 지중해식 점심 & 티 타임",
+      "menu": "Salade Béatrice(훈제연어·감귤), 제철 생선 요리(대구/도미 구이), 트로페시엔 타르트",
+      "reservation": "테라스석 점심 예약 권장 (12:15 슬롯)",
+      "optional": false,
+      "place_ref": "restaurant-beatrice"
+    },
+    {
+      "id": "villa-gardens-fountain",
+      "order": 4,
+      "start": "13:45",
+      "end": "14:30",
+      "name": "에프뤼시 분수 음악쇼 & 해안 귀환",
+      "category": "sight",
+      "lat": 43.6865,
+      "lng": 7.3323,
+      "summary": "클래식 음악 분수 쇼 관람 및 장미 정원 산책 후 15번 버스로 니스 시내 복귀",
+      "menu": null,
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "villa-ephrussi-de-rothschild"
     },
     {
-      "id": "charles-negre",
-      "order": 3,
-      "start": "14:30",
-      "end": "16:00",
-      "name": "사진미술관 Charles Nègre",
-      "category": "culture",
-      "lat": 43.6975,
-      "lng": 7.2736,
-      "summary": "구시가지 입구의 사진 특화 미술관 기획전 관람. 피로 시 생략 가능",
-      "menu": null,
-      "reservation": "현장 발권 (€5)",
-      "optional": true,
-      "place_ref": null
-    },
-    {
-      "id": "promenade",
-      "order": 4,
-      "start": "16:30",
-      "end": "18:00",
-      "name": "Promenade des Anglais 산책",
+      "id": "promenade-recovery",
+      "order": 5,
+      "start": "15:30",
+      "end": "17:30",
+      "name": "Promenade des Anglais 산책 & 숙소 휴식",
       "category": "sight",
       "lat": 43.6944,
       "lng": 7.2652,
-      "summary": "숙소 세탁 후 프롬나드 해변 벤치 휴식 및 카페",
-      "menu": null,
+      "summary": "숙소 복귀 및 세탁기 가동, 프롬나드 해변 벤치 휴식 및 카페 산책",
+      "menu": "파니니, 젤라토, 커피",
       "reservation": null,
       "optional": false,
       "place_ref": "promenade-des-anglais"
     },
     {
-      "id": "nice-stay-return",
-      "order": 5,
-      "start": "18:30",
-      "end": "19:30",
+      "id": "nice-stay-prep",
+      "order": 6,
+      "start": "18:00",
+      "end": "19:00",
       "name": "숙소 — 익일 렌터카 준비 & 휴식",
       "category": "hotel",
       "lat": 43.7002,
       "lng": 7.2628,
-      "summary": "12 Rue Verdi 복귀, 9/9 09:00 렌터카 인수 서류/동선 확인, 조기 취침",
+      "summary": "12 Rue Verdi 복귀, 9/9 09:00 렌터카 인수 서류/동선 최종 확인, 조기 취침",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -97,34 +112,43 @@
   "legs": [
     {
       "from": "liberation-market",
-      "to": "liberation-lunch",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.2km",
+      "to": "villa-ephrussi",
+      "mode": "bus",
+      "duration": "트램 1호선 8분 + 15번 버스 25분",
+      "distance": "약 7km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "liberation-lunch",
-      "to": "charles-negre",
+      "from": "villa-ephrussi",
+      "to": "restaurant-beatrice",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "1.4km",
+      "duration": "1분",
+      "distance": "0.05km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "charles-negre",
-      "to": "promenade",
+      "from": "restaurant-beatrice",
+      "to": "villa-gardens-fountain",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.6km",
+      "duration": "2분",
+      "distance": "0.1km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "promenade",
-      "to": "nice-stay-return",
+      "from": "villa-gardens-fountain",
+      "to": "promenade-recovery",
+      "mode": "bus",
+      "duration": "15번 버스 25분 + 도보 10분",
+      "distance": "약 7km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "promenade-recovery",
+      "to": "nice-stay-prep",
       "mode": "walk",
       "duration": "10분",
       "distance": "0.7km",
@@ -133,36 +157,37 @@
     }
   ],
   "transport": [
-    "도보",
-    "트램 1호선 (선택)"
+    "트램 1호선 및 Lignes d’Azur 15번 버스 (Nice ↔ Saint-Jean-Cap-Ferrat)",
+    "도보"
   ],
   "food": [
-    "Libération 시장 조달·숙소식"
+    "아침: Libération 시장 과일·카페",
+    "점심: Restaurant & Salon de Thé Béatrice (WISH-02)"
   ],
   "highlights": [
-    "43일 중 11일차 — 회복일 과밀 금지",
-    "화요일 휴관 대비 완료",
-    "렌터카 준비 2시간 보호"
+    "43일 중 11일차 — 생활·회복형 여정",
+    "08:45~10:15 Libération 로컬 시장 탐방",
+    "11:00~14:30 Villa Ephrussi de Rothschild & Béatrice 런치",
+    "15:30~17:30 숙소 세탁·휴식 & 프롬나드 해변 산책",
+    "18:00 익일 프로방스 렌터카 인수 서류/동선 확인"
   ],
-  "backup": "피로 시 사진미술관을 생략하고 숙소 세탁·휴식 및 프롬나드 카페 중심 생활일 유지",
+  "backup": "우천 시 야외 정원 산책을 실내 팔라초 관람 중심으로 전환하고, 오후 니스 시내 실내 카페 또는 숙소 휴식 집중",
   "map": {
-    "zoom": 14,
+    "zoom": 13,
     "center": [
-      43.7015,
-      7.267
+      43.695,
+      7.295
     ],
     "routeCache": null
   },
   "needsReview": [
-    "사진미술관 운영·요금 재확인",
-    "렌터카 인수 서류·보험 준비 확인",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00"
+    "Restaurant Béatrice 12:15 점심 예약 권장",
+    "15번 버스 Saint-Jean-Cap-Ferrat 운행 시각표 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-11",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-11",
     "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md#Day-10-생활회복일",
-    "source/ASSETS/75_Execution_Maps/Nice_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Musée Charles Nègre"
+    "OSM Nominatim 지오코딩 2026-08-06: Marché Libération·Villa Ephrussi·Promenade"
   ]
 }

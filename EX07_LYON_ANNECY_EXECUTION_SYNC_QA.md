@@ -13,7 +13,7 @@
 - **핵심 동기화 성과**:
   1. **언덕 수직 이동 부하 완벽 제어**: Fourvière(Day 24)와 Croix-Rousse(Day 25)를 분리하고, **푸니쿨라 F2 및 메트로 C선을 통해 언덕 정상으로 상행 후 완만한 정원/트라불 하산 동선**을 채택하여 무릎/체력 부하 최소화.
   2. **Day 26 Annecy 알프스 호수 철도 당일치기 정밀화**: Part-Dieu역 직통 TER(08:08 ➔ 10:06 / 귀환 17:53 ➔ 19:52)을 축으로 튜 운하, 팔레 드 릴, 사랑의 다리, 유럽 정원 및 사부아 점심을 완벽 연결.
-  3. **Day 27 Lyon ➔ Paris TGV 6618 확정 앵커 정렬**: **`TGV 6618 (13:04 Lyon Part-Dieu ➔ 15:00 Paris Gare de Lyon 확정 X6CVW5, 1등석)`** 탑승 후 파리 15구(78 Rue de Lourmel) 체크인 및 15박 생활권 장보기 완충 수립.
+  3. **Day 27 Lyon ➔ Paris TGV 6618 확정 앵커 정렬**: **`TGV 6618 (13:04 Lyon Part-Dieu ➔ 15:00 Paris Gare de Lyon 확정 [CONFIRMED], 1등석)`** 탑승 후 파리 15구(78 Rue de Lourmel) 체크인 및 15박 생활권 장보기 완충 수립.
   4. **EX-06 Day 23 환승 완충 수식 보정 완료**: 08:55 반납 ➔ 10:22 탑승 간 총 87분의 Gross Buffer (20분 역내 이동 공제 시 67분 Net 플랫폼 대기 완충)로 일치화.
 - **검증 게이트**: 4대 표준 검증 스크립트 전원 **100% PASS** (Content Loss = 0)
 
@@ -23,12 +23,12 @@
 
 - **대상 일차**: Days 24–27 (4개 일차, 리옹 거점 4박 중 후반 3일 및 파리 진입일)
 - **숙소 앵커**:
-  - Lyon: `Lagrange Aparthotel Lyon Lumière (81-85 Cours Albert Thomas, 확정 5882.730.884, 9/24 11:00 체크아웃)`
+  - Lyon: `Lagrange Aparthotel Lyon Lumière (81-85 Cours Albert Thomas, 확정 [CONFIRMED], 9/24 11:00 체크아웃)`
   - Paris: `78 Rue de Lourmel, 75015 Paris (확정, 9/24 15:00 체크인 ~ 10/9 11:00 체크아웃, 15박 거주)`
 - **교통 앵커**:
   - Lyon TCL: Metro D선 (Monplaisir ↔ Vieux Lyon), Funicular F2 (Vieux Lyon ↔ Fourvière), Metro C선 (Hôtel de Ville ↔ Croix-Rousse)
   - Annecy TER: `SNCF TER Lyon Part-Dieu ↔ Annecy (1시간 58분 소요)`
-  - Paris TGV: `TGV INOUI 6618 Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00 (1등석 확정 X6CVW5)`
+  - Paris TGV: `TGV INOUI 6618 Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00 (1등석 확정 [CONFIRMED])`
 
 ---
 
@@ -112,7 +112,7 @@
 [Day 27 Execution Chain]
 09:30~11:15 Lagrange Aparthotel Lyon Lumière 체크아웃 & Part-Dieu역 이동 (택시 15분)
  ➔ [Stop 1] Part-Dieu역 카페 점심 & TGV 플랫폼 대기 (11:30~12:45)
- ➔ 13:04~15:00 [TGV INOUI 6618 1등석, 1시간 56분] ➔ Paris Gare de Lyon 도착 (확정 X6CVW5)
+ ➔ 13:04~15:00 [TGV INOUI 6618 1등석, 1시간 56분] ➔ Paris Gare de Lyon 도착 (확정 [CONFIRMED])
  ➔ [택시 35분, 7.5km] ➔ [Stop 2] Paris 15구 숙소 체크인 (78 Rue de Lourmel, 15:30~17:30)
     * 15박 장기 체류 짐 풀기, 세탁기/주방/Wi-Fi 시설 점검
  ➔ [도보 5분] ➔ [Stop 3] 15구 생활권 첫 장보기 & 에펠탑 방향 산책 (17:45~19:30)

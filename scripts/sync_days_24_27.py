@@ -441,7 +441,7 @@ def update_day_27():
     d["totalDistance"] = "TGV 약 465km + 파리 시내 이동"
     d["fatigue"] = "3"
     d["transport"] = [
-        "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 확정 X6CVW5)",
+        "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 확정 [CONFIRMED])",
         "파리 택시 / 메트로 (Gare de Lyon ➔ 78 Rue de Lourmel, 15구)"
     ]
     d["stops"] = [
@@ -456,7 +456,7 @@ def update_day_27():
             "lng": 4.868933,
             "summary": "Lagrange Aparthotel Lyon Lumière 체크아웃 후 택시/메트로로 Part-Dieu역 이동 (15분 소요)",
             "menu": None,
-            "reservation": "체크아웃 완료 (Lagrange 5882.730.884)",
+            "reservation": "체크아웃 완료 (Lagrange [CONFIRMED])",
             "optional": False,
             "place_ref": None
         },
@@ -486,7 +486,7 @@ def update_day_27():
             "lng": 2.3734,
             "summary": "TGV INOUI 6618 탑승 (13:04 출발 ➔ 15:00 파리 리옹역 도착, 1등석 편안한 1시간 56분 고속주행)",
             "menu": None,
-            "reservation": "예약확정 TGV INOUI 6618 (X6CVW5, 1등석)",
+            "reservation": "예약확정 TGV INOUI 6618 ([CONFIRMED], 1등석)",
             "optional": False,
             "place_ref": None
         },

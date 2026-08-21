@@ -247,11 +247,11 @@ class TestValidationGuards(unittest.TestCase):
         self.assertEqual(missing, [], f"피로도 없는 날: {missing}")
 
     def test_missing_confirmed_fact_token(self):
-        # Remove confirmed confirmation number from Barcelona chapter
+        # Remove confirmed hotel phone token from Barcelona chapter
         barcelona_path = SOURCE / "CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
         barcelona_backup = barcelona_path.read_text(encoding="utf-8")
         try:
-            bad_content = barcelona_backup.replace("36558SG255002", "REMOVED_CODE")
+            bad_content = barcelona_backup.replace("+34 936 26 88 44", "+34 000 00 00 00")
             barcelona_path.write_text(bad_content, encoding="utf-8")
 
             old_stdout = sys.stdout
@@ -267,7 +267,7 @@ class TestValidationGuards(unittest.TestCase):
 
             self.assertFalse(success)
             self.assertIn("확정 사실 토큰 생존 가드 실패:", output)
-            self.assertIn("토큰 누락: '36558SG255002'", output)
+            self.assertIn("토큰 누락: '+34 936 26 88 44'", output)
         finally:
             barcelona_path.write_text(barcelona_backup, encoding="utf-8")
 

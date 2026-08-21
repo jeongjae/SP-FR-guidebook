@@ -22,7 +22,7 @@
 | 1 | 8/29 토 | Barcelona | OZ511 19:10 T1 도착·야간 체크인 | 19:10 도착 기준 | 입국·수하물·이동 120–150분 | 기내식으로 저녁 해결 | 야간 도착·수하물 지연 | 장보기·산책 전부 | 체크인·취침만 | 없음 — 항공·숙소 확정 |
 | 2 | 8/30 일 | Barcelona | Sant Pau 09:30 · Sagrada Família 15:15 | 08:30 숙소 출발 권장 | 입장 30분 전(14:45) 도착 | La Paradeta 13:00 점심 | 시간지정 입장·주말 혼잡 | Gràcia 저녁 산책 | Sant Pau 실내 또는 카페 중심 | 없음 — Sagrada 15:15 확정 완료 |
 | 3 | 8/31 월 | Barcelona | 시장·Gòtic·도서관·MACBA | 09:00 전후 시작 | 오후 MACBA 전 60분 휴식 | 시장 또는 샌드위치 | 월요일 휴관·도보 누적 | Finestres·운동 | Biblioteca/MACBA 중심 | MACBA·식당 |
-| 4 | 9/1 화 | Bàscara | Sants 렌터카→Sitges→Bàscara | 08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능) | 인수 60분·Sitges 출차 30분 | Sitges 점심 | 인수·체크아웃 순서·짐 노출 | 해변산책·실내 1곳 | Sitges 1곳만 보고 Bàscara 직행 | 렌터카 완료(Hertz L671E2E0288)·Sitges·Bàscara 체크인 조건 재확인 |
+| 4 | 9/1 화 | Bàscara | Sants 렌터카→Sitges→Bàscara | 08:00 체크아웃, 09:00 인수 (예약 07:00부터 가능) | 인수 60분·Sitges 출차 30분 | Sitges 점심 | 인수·체크아웃 순서·짐 노출 | 해변산책·실내 1곳 | Sitges 1곳만 보고 Bàscara 직행 | 렌터카 완료(Hertz [CONFIRMED])·Sitges·Bàscara 체크인 조건 재확인 |
 | 5 | 9/2 수 | Bàscara | Collioure·Cadaqués | 07:45 출발 | 오전 10시 이전 Collioure 주차 | Collioure 09:00–12:15·Cadaqués 14:45–17:30 | 해안 쪽 우회·주차·지도 재확인 | Cadaqués 해안 산책·구시가지 | 17:30 Bàscara 출발 | Portlligat·Dalí House 예약 미확인 |
 | 6 | 9/3 목 | Bàscara | Tossa·Sant Feliu·Pals·Peratallada | 08:20 출발 | Tossa 주차·Vila Vella 접근 재확인 | Tossa 09:45–12:30·Sant Feliu 점심 | GI-682·운전피로 | Pals 압축·Peratallada 유지 | 17:40 Bàscara 출발 | 지연 시 Pals 삭제 |
 | 7 | 9/4 금 | Nice | Bàscara 체크아웃→BCN 반납 12:30→VY1521 15:30→NCE 16:55 | 10:30 Bàscara 출발 | 반납 12:30→위탁마감 14:45 (135분) | 이동 중 간단식 | 반납 지연·수속 혼잡 | Nice 적응산책 | NCE 도착 후 체크인만 (12 Rue Verdi, 15:00부터) | Hertz 반납 12:30 변경 |

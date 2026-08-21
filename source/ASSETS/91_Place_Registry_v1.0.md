@@ -24,6 +24,11 @@
 | `sagrada-familia` | Sagrada Família | spot | 필수 | Sagrada Família | chapters/barcelona/places.html | Sagrada Família | Sagrada Família |
 | `sant-pau-recinte-modernista` | Sant Pau Recinte Modernista | spot | 필수 | Sant Pau | chapters/barcelona/places.html | Sant Pau Recinte Modernista | Hospital de Sant Pau |
 | `sitges` | Sitges | spot | 선택 | Sitges | chapters/barcelona/places.html | Sitges | Sitges |
+| `bodega-joan` | Bodega Joan | spot | 필수 | Bodega Joan | chapters/barcelona/places.html | Bodega Joan | — |
+| `la-paradeta-sagrada-familia` | La Paradeta Sagrada Família | spot | 필수 | La Paradeta | chapters/barcelona/places.html | La Paradeta Sagrada Família | — |
+| `bar-canete` | Bar Cañete | spot | 필수 | Bar Cañete | chapters/barcelona/places.html | Bar Cañete | — |
+| `mercat-concepcio` | Mercat de la Concepció | spot | 우선 추천 | Mercat de la Concepció | chapters/barcelona/places.html | Mercat de la Concepció | fr:Marché de la Concepció |
+| `la-zorra` | La Zorra | spot | 우선 추천 | La Zorra | chapters/barcelona/places.html | La Zorra | — |
 | `barcelona-historic-walk` | Barcelona 역사도심 — Barri Gòtic·Rambla 권역 | walk | 필수 | — | — | — | — |
 | `barcelona-modernisme-walk` | Barcelona Modernisme — Eixample 권역 | walk | 필수 | — | — | — | — |
 
@@ -39,6 +44,8 @@
 | `pals` | Pals | spot | 우선 추천 | Pals | chapters/girona/places.html | Pals | Pals |
 | `peralada` | Peralada | spot | 우선 추천 | Peralada | chapters/girona/places.html | Peralada | Peralada |
 | `peratallada` | Peratallada | spot | 필수 | Peratallada | chapters/girona/places.html | Peratallada | Peratallada |
+| `casa-marieta` | Casa Marieta | spot | 필수 | Casa Marieta | chapters/girona/places.html | Casa Marieta | — |
+| `mercat-del-lleo` | Mercat del Lleó | spot | 우선 추천 | Mercat del Lleó | chapters/girona/places.html | Mercat del Lleó | — |
 | `girona-old-town-walk` | Girona 구시가지 — Call·성벽·대성당 권역 | walk | 필수 | — | — | — | — |
 
 ## nice (06)
@@ -61,6 +68,9 @@
 | `nice-ville` | Nice-Ville | node | — | Nice-Ville | — | — | — |
 | `promenade-des-anglais` | Promenade des Anglais | spot | 필수 | — | chapters/nice/places.html | Promenade des Anglais | Promenade des Anglais |
 | `vieux-nice` | Vieux Nice — 구시가지 | spot | 필수 | — | chapters/nice/places.html | Vieux Nice — 구시가지 | fr:Vieux-Nice |
+| `le-figuier-de-saint-esprit` | Le Figuier de Saint-Esprit | spot | 필수 | Le Figuier de Saint-Esprit | chapters/nice/places.html | Le Figuier de Saint-Esprit | — |
+| `restaurant-beatrice` | Restaurant & Salon de Thé Béatrice | spot | 필수 | Restaurant Béatrice | chapters/nice/places.html | Restaurant & Salon de Thé Béatrice | — |
+| `villa-ephrussi-de-rothschild` | Villa Ephrussi de Rothschild | spot | 우선 추천 | Villa Ephrussi | chapters/nice/places.html | Villa Ephrussi de Rothschild | Villa Ephrussi de Rothschild |
 
 ## aix (07)
 

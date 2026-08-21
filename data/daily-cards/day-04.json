@@ -43,7 +43,7 @@
       "lng": 2.14005,
       "summary": "Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록. **프랑스 주행(9/2 콜리우르)을 반드시 신고한다**",
       "menu": null,
-      "reservation": "예약완료 Hertz L671E2E0288 · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요",
+      "reservation": "예약완료 Hertz [CONFIRMED] · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요",
       "optional": false,
       "place_ref": "barcelona-sants"
     },
@@ -185,6 +185,6 @@
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-4",
     "data/daily-cards/routes/day-04-driving-osrm.json",
-    "Hertz 예약 확인 메일 L671E2E0288 (2026-08-05): Sants 9/1 07:00 픽업 · 공항 T1/T2 9/4 14:00 반납"
+    "Hertz 예약 확인 메일 [CONFIRMED] (2026-08-05): Sants 9/1 07:00 픽업 · 공항 T1/T2 9/4 14:00 반납"
   ]
 }

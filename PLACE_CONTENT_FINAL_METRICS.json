@@ -2,16 +2,16 @@
   "program_name": "Place Content Canonical SOT & 5-Layer Enrichment Program",
   "status": "COMPLETE",
   "audit_phase": "PC-14B",
-  "total_canonical_places": 102,
+  "total_canonical_places": 114,
   "region_breakdown": {
     "luberon": 11,
     "lyon": 7,
     "avignon": 18,
     "aix": 19,
     "barcelona": 8,
-    "paris": 15,
+    "paris": 24,
     "girona": 8,
-    "nice": 16
+    "nice": 19
   },
   "region_stats": {
     "luberon": {
@@ -71,12 +71,12 @@
     },
     "paris": {
       "name": "Paris",
-      "count": 15,
-      "tier_a": 11,
+      "count": 24,
+      "tier_a": 20,
       "tier_b": 4,
       "tier_c": 0,
       "utility": 0,
-      "must_see": 11,
+      "must_see": 20,
       "worthwhile": 4,
       "optional": 0
     },
@@ -93,50 +93,51 @@
     },
     "nice": {
       "name": "Nice & Côte d'Azur",
-      "count": 16,
-      "tier_a": 4,
+      "count": 19,
+      "tier_a": 7,
       "tier_b": 6,
       "tier_c": 2,
       "utility": 4,
-      "must_see": 8,
+      "must_see": 10,
       "worthwhile": 6,
       "optional": 2
     }
   },
   "tier_breakdown": {
-    "TIER_A": 45,
+    "TIER_A": 57,
     "TIER_B": 46,
     "TIER_C": 5,
     "UTILITY": 6
   },
   "priority_breakdown": {
-    "MUST_SEE": 57,
+    "MUST_SEE": 68,
     "WORTHWHILE": 40,
-    "OPTIONAL": 5
+    "OPTIONAL": 5,
+    "PRIORITY": 1
   },
   "kind_breakdown": {
-    "spot": 96,
+    "spot": 108,
     "node": 1,
     "walk": 3,
     "transport": 2
   },
-  "total_content_lines": 5521,
-  "total_content_bytes": 431181,
+  "total_content_lines": 6127,
+  "total_content_bytes": 477755,
   "itinerary_days": 43,
-  "day_stops_evaluated": 234,
-  "resolved_canonical_stops": 90,
-  "allowed_operational_exceptions": 144,
-  "unresolved_stop_gaps": 0,
+  "day_stops_evaluated": 248,
+  "resolved_canonical_stops": 114,
+  "allowed_operational_exceptions": 109,
+  "unresolved_stop_gaps": 25,
   "regional_chapters_evaluated": 8,
   "duplicate_long_forms": 0,
   "trip_specific_hardcodes": 0,
   "content_loss": 0,
-  "canonical_place_pages": 102,
+  "canonical_place_pages": 111,
   "additional_place_related_pages": 5,
-  "total_place_related_pages": 107,
-  "total_generated_html_pages": 337,
+  "total_place_related_pages": 116,
+  "total_generated_html_pages": 346,
   "search_index_entries": 157,
-  "canonical_search_coverage": 102,
-  "canonical_map_coverage": 102,
+  "canonical_search_coverage": 114,
+  "canonical_map_coverage": 114,
   "editorial_quality_score_avg": 4.92
 }

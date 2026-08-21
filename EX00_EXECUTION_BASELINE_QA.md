@@ -150,7 +150,7 @@
    - `legs` 배열을 통해 각 구간의 이동 수단(`mode`: walk, metro, train, drive, flight), 노선 번호(`line`), 거리(`distance`)를 표현.
 3. **예약 데이터 구조**:
    - 항공편 3건 (OZ511, VY1521, OZ502 확정 PNR 수록)
-   - 렌터카 2건 (Hertz 스페인 L671E2E0288, 프랑스 L672E080313)
+   - 렌터카 2건 (Hertz 스페인 [CONFIRMED], 프랑스 [CONFIRMED])
    - 열차편 2건 (TGV 12176, TGV 6618 1등석 확정 PNR 수록)
    - 미술관/유적 19건 (Sagrada Família, Sant Pau, Granet, Pont du Gard, Orsay 등 예약 상태 관리)
 

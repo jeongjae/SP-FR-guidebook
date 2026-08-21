@@ -66,7 +66,7 @@
 - 숙소 장소
 ```
 **작업** — `stay` 카테고리에 확정 숙소 블록을 만든다. 예약 데이터는 이미 있다
-(Airbnb HMJ3HX8QAY, Lagrange 5882.730.884, Occidental 1929 등).
+(Airbnb [CONFIRMED], Lagrange [CONFIRMED], Occidental 1929 등).
 **주의** — CLAUDE.md 3번 규칙. **미확정 숙소를 확정처럼 쓰지 않는다.** 확정된 것만
 싣고 나머지는 `{{badge:unverified}}` 로 남긴다.
 

@@ -44,7 +44,7 @@
       "lng": 4.7861,
       "summary": "08:45 TGV역 도착 ➔ Hertz 전용 반납 베이 주차 ➔ 차량 사방 외관 촬영 및 키 반납(09:00 완료) ➔ 09:25 역사 메인홀 진입, 화장실/카페 대기. 10:22 열차 출발 전까지 52분 완충 확보",
       "menu": null,
-      "reservation": "예약확정 Hertz L672E080313 — 9/20 09:00 반납",
+      "reservation": "예약확정 Hertz [CONFIRMED] — 9/20 09:00 반납",
       "optional": false,
       "place_ref": null
     },
@@ -157,7 +157,7 @@
     }
   ],
   "transport": [
-    "렌터카 반납 (Avignon TGV역 Hertz 09:00 반납 완료, 확정 L672E080313)",
+    "렌터카 반납 (Avignon TGV역 Hertz 09:00 반납 완료, 확정 [CONFIRMED])",
     "TGV INOUI 12176 (Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28, 1등석 확정)",
     "Lyon 택시/지하철"
   ],
@@ -189,6 +189,6 @@
     "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-23",
     "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml",
     "OSM Overpass 2026-08-06: Avignon TGV·Lyon Part-Dieu 역 좌표",
-    "예약 확정 (2026-08-09 반영): Hertz L672E080313 반납 9/20 09:00 · TGV INOUI 12176 10:22→11:28 1등석"
+    "예약 확정 (2026-08-09 반영): Hertz [CONFIRMED] 반납 9/20 09:00 · TGV INOUI 12176 10:22→11:28 1등석"
   ]
 }
