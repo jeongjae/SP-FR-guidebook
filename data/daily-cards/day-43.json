@@ -29,7 +29,7 @@
       "lng": 126.4407,
       "summary": "기내 수면, 수분 섭취, 시차 적응 (비행시간 약 12시간 00분)",
       "menu": "기내식 2회",
-      "reservation": "아시아나항공 OZ502 탑승중",
+      "reservation": "아시아나항공 OZ502 탑승중 — 48G·48H · ICN 터미널 2 도착",
       "optional": false,
       "place_ref": null
     },
@@ -85,7 +85,7 @@
     }
   ],
   "transport": [
-    "OZ502 (아시아나)",
+    "OZ502 (아시아나 · ICN 터미널 2 14:10 도착)",
     "인천공항 → 귀가 수단 미정"
   ],
   "food": [
@@ -111,6 +111,7 @@
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-17-10월10일",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-43"
+    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-43",
+    "예약 증빙 확인 (2026-08-21): 아시아나 전자항공권 — OZ502 10OCT26 14:10 ICN 터미널 2 도착"
   ]
 }
