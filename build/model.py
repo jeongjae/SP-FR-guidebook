@@ -35,6 +35,8 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 
+import jsonschema
+
 ROOT = Path(__file__).resolve().parent.parent
 
 DAILY_CARDS = ROOT / "data" / "daily-cards"
@@ -53,6 +55,17 @@ WEEKDAY_KO = "월화수목금토일"
 
 def _d(iso: str) -> date:
     return date.fromisoformat(iso)
+
+
+def _load_validated_json(data_path: Path) -> dict:
+    """Load curated JSON only after its adjacent schema accepts it."""
+    payload = json.loads(data_path.read_text(encoding="utf-8"))
+    schema_path = data_path.with_suffix(".schema.json")
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    jsonschema.Draft202012Validator(
+        schema, format_checker=jsonschema.FormatChecker()
+    ).validate(payload)
+    return payload
 
 
 def date_label(d: date) -> str:
@@ -549,8 +562,20 @@ def load_trip() -> Trip:
     itin = json.loads(ITINERARY.read_text(encoding="utf-8"))
     stays = itin["stays"]
     regions_raw = json.loads(REGIONS_JSON.read_text(encoding="utf-8"))["regions"]
-    essentials = json.loads(REGION_ESSENTIALS.read_text(encoding="utf-8")).get("regions", {})
-    transit = json.loads(TRANSIT_FACTS.read_text(encoding="utf-8")).get("regions", {})
+    essentials = _load_validated_json(REGION_ESSENTIALS).get("regions", {})
+    transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
+    trip_start = _d(itin["trip"]["start"])
+    for slug, facts in transit.items():
+        for source in facts["sources"]:
+            verified = _d(source["verifiedAt"])
+            recheck = _d(source["recheckBy"])
+            if verified > date.today():
+                raise ValueError(f"{slug}: transit source verifiedAt is in the future: {verified}")
+            if recheck < verified or recheck >= trip_start:
+                raise ValueError(
+                    f"{slug}: transit source recheckBy must be on/after verification "
+                    f"and before trip start: {recheck}"
+                )
     editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 

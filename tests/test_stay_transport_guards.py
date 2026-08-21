@@ -82,11 +82,14 @@ class StayTransportGuards(unittest.TestCase):
                               f"{slug}: 비공식 교통 출처")
                 self.assertGreaterEqual(date.fromisoformat(source["recheckBy"]),
                                         date.fromisoformat(source["verifiedAt"]))
+                self.assertLessEqual(date.fromisoformat(source["verifiedAt"]), date.today())
+                self.assertLess(date.fromisoformat(source["recheckBy"]),
+                                date.fromisoformat("2026-08-29"))
 
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("도시 공공교통", "현재 일정은 단일 승차가 기본",
+        for token in ("도시 공공교통", "두 사람이 함께 타면 T-familiar가 기본",
                       "T-familiar 1 zone", "공항 L9 불가",
                       "공식 출처와 재확인일"):
             self.assertIn(token, rendered)
@@ -102,6 +105,12 @@ class StayTransportGuards(unittest.TestCase):
             for use in facts["itineraryUses"]:
                 self.assertIn(use["day"], region_days,
                               f"{slug}: Day {use['day']}는 해당 지역 일정이 아님")
+
+    def test_barcelona_chapter_has_no_superseded_transit_advice(self):
+        chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
+                   "04_Barcelona_Sitges_v2.0.md").read_text(encoding="utf-8")
+        for stale in ("Aerobús 우선", "각자 T-casual", "기본 권장 — 짐이 아주 많을 때만 택시"):
+            self.assertNotIn(stale, chapter)
 
 
 if __name__ == "__main__":

@@ -3,8 +3,8 @@
   "regions": {
     "barcelona": {
       "recommendation": {
-        "title": "현재 일정은 단일 승차가 기본",
-        "summary": "Day 2에 지하철·버스를 선택적으로 한 번 이용하고 나머지는 도보다. 승차가 실제로 필요할 때 1인당 단일권을 사고, 현장에서 이동이 늘어 두 사람 합계 4회 이상 탈 때만 공동 T-familiar를 검토한다."
+        "title": "두 사람이 함께 타면 T-familiar가 기본",
+        "summary": "Day 2·3에는 숙소와 첫 장소, 오후 장소, 숙소 귀환에서 대중교통을 쓸 가능성이 있다. 두 사람이 함께 2구간 이상 탈 계획이면 공동 T-familiar를 사고, 실제 승차가 그보다 적으면 단일권을 쓴다."
       },
       "products": [
         {
@@ -12,14 +12,14 @@
           "price": "€2.90",
           "shared": false,
           "airportMetro": false,
-          "fit": "현재 일정의 선택 1회 승차에 적합"
+          "fit": "두 사람이 합계 4회 미만 검증할 때 적합"
         },
         {
           "name": "T-familiar 1 zone",
           "price": "€11.50",
           "shared": true,
           "airportMetro": false,
-          "fit": "두 사람이 함께 8회까지 이용할 때만 검토"
+          "fit": "동행하는 두 사람이 합계 8회까지 검증할 때 적합"
         },
         {
           "name": "T-casual 1 zone",
@@ -31,19 +31,19 @@
       ],
       "howToUse": [
         "단일권은 TMB 버스의 비접촉식 단말과 일부 메트로 개찰구에서 카드·휴대전화로 바로 구매·검증할 수 있다. 두 사람이 같은 결제수단을 쓰면 두 번 태그한다.",
-        "T-familiar를 함께 쓰면 동행 인원수만큼 연속 검증하고 이동 내내 함께 다닌다.",
+        "T-familiar는 첫 검증일부터 30일 동안 8회 쓸 수 있다. 함께 이동하는 사람 수만큼 연속 검증하고, 공유한 사람들은 이동 내내 함께 다닌다.",
         "통합권은 첫 검증부터 1존 기준 75분 안에 최대 3회 환승할 수 있다. 메트로 간 직접 환승은 다시 검증하지 않는다.",
         "검표가 끝날 때까지 사용한 카드나 승차 매체를 보관한다. 비접촉 결제는 결제 카드 끝 네 자리로 구매를 확인한다."
       ],
       "exceptions": [
-        "T-casual과 T-familiar는 Metro L9 Sud의 Aeroport T1·T2 역에서 사용할 수 없다. 공항 메트로를 선택하면 별도 Airport ticket이 필요하다.",
+        "T-casual과 T-familiar는 Metro L9 Sud의 Aeroport T1·T2 역에서 사용할 수 없다. 공항 메트로를 선택하면 €5.90짜리 비통합 Airport ticket이 필요하다.",
         "Day 1 기본안은 택시이며 Aerobús A1은 별도 공항버스다. 시내 통합권 구매를 공항 이동 때문에 서두르지 않는다.",
-        "Day 4의 Sitges 이동은 예약 렌터카가 기본안이다. 철도로 바꾸면 출발역에서 Rodalies 승차권을 먼저 사고 승차 전에 검증하며, 시내 단일권과 같다고 가정하지 않는다."
+        "Day 4의 Sitges 이동은 예약 렌터카 일정이다. Barcelona 시내 교통권 사용 횟수에 포함하지 않는다."
       ],
       "itineraryUses": [
         {"day": 1, "label": "BCN T1→숙소는 택시 기본, Aerobús A1 대안"},
-        {"day": 2, "label": "Sagrada Família→Gràcia 구간만 버스·Metro 선택"},
-        {"day": 3, "label": "고딕지구·도서관·MACBA는 도보 중심"},
+        {"day": 2, "label": "숙소→Sant Pau, Sagrada Família→Gràcia, 저녁 뒤 숙소 귀환에서 Metro·버스 후보"},
+        {"day": 3, "label": "숙소→Concepció와 마지막 숙소 귀환은 Metro 후보, 도심 구간은 도보"},
         {"day": 4, "label": "Sants에서 렌터카 인수 후 Sitges·Bàscara 이동"}
       ],
       "sources": [
