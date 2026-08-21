@@ -135,8 +135,7 @@
       "displayName": "Café Comptoir Abel",
       "region": "lyon",
       "days": [
-        23,
-        24
+        23
       ]
     },
     "cannes-forville-suquet-croisette-walk": {
@@ -435,9 +434,8 @@
       "displayName": "Les Cocottes Saint-Louis",
       "region": "avignon",
       "days": [
-        19,
         20,
-        21
+        22
       ]
     },
     "les-halles-d-avignon": {
@@ -922,6 +920,86 @@
       "region": "barcelona",
       "days": [
         3
+      ]
+    },
+    "patisserie-weibel": {
+      "displayName": "Pâtisserie Weibel",
+      "region": "aix",
+      "days": [
+        13
+      ]
+    },
+    "chez-gilbert-cassis": {
+      "displayName": "Chez Gilbert (Cassis)",
+      "region": "aix",
+      "days": [
+        14
+      ]
+    },
+    "fou-de-fafa-avignon": {
+      "displayName": "Fou de Fafa (Avignon)",
+      "region": "avignon",
+      "days": [
+        19,
+        20
+      ]
+    },
+    "le-gibolin-arles": {
+      "displayName": "Le Gibolin (Arles)",
+      "region": "avignon",
+      "days": [
+        22
+      ]
+    },
+    "daniel-et-denise": {
+      "displayName": "Daniel et Denise",
+      "region": "lyon",
+      "days": [
+        24
+      ]
+    },
+    "boulangerie-pichard": {
+      "displayName": "Boulangerie Pichard",
+      "region": "paris",
+      "days": [
+        28,
+        29,
+        31,
+        35,
+        38,
+        42
+      ]
+    },
+    "marche-convention": {
+      "displayName": "Marché Convention",
+      "region": "paris",
+      "days": [
+        29,
+        31,
+        36
+      ]
+    },
+    "cafe-du-commerce": {
+      "displayName": "Café du Commerce",
+      "region": "paris",
+      "days": [
+        28,
+        32
+      ]
+    },
+    "le-grand-pan": {
+      "displayName": "Le Grand Pan",
+      "region": "paris",
+      "days": [
+        34,
+        41
+      ]
+    },
+    "bouillon-chartier-montparnasse": {
+      "displayName": "Bouillon Chartier Montparnasse",
+      "region": "paris",
+      "days": [
+        30
       ]
     }
   }

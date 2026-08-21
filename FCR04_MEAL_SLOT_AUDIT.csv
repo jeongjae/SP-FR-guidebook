@@ -1,0 +1,10 @@
+day,meal_slot,category,planned_venue,place_ref,selection_origin,meal_role,classification,backup_plan
+Day 23,Lunch,TGV Arrival Lunch,Lagrange 숙소 짐보관 후 Monplaisir 또는 Bellecour 가벼운 점심,bellecour,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,숙소 인근 베이커리 샌드위치
+Day 23,Dinner,Historic Bouchon,Café Comptoir Abel (리옹 最古 1726년 부숑 첫 만찬),cafe-comptoir-abel,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Bellecour 광장 브라세리 Le Sud
+Day 24,Lunch,Old Town Light Lunch,Vieux Lyon 르네상스 골목 비스트로 (살라드 리요네즈),vieux-lyon,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Boulangerie du Palais 프랄린 브리오슈
+Day 24,Dinner,Certified Bouchon Feast,Daniel et Denise (MOF 조제프 비올라 공인 부숑),daniel-et-denise,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,숙소권 가벼운 비스트로
+Day 25,Lunch,Gourmet Food Hall,Halles de Lyon Paul Bocuse (생굴 바 & 명장 샤퀴테리 점심),halles-de-lyon-paul-bocuse,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Halles 내 Giraudet 끄넬 바
+Day 25,Dinner,Rest & Light Meal,숙소 휴식 및 가벼운 저녁 (Halles 조달 치즈·바게트 숙소식),halles-de-lyon-paul-bocuse,RECOMMENDED,SELF_CATERING,D — HOME / SELF-CATERING,Monplaisir 로컬 비스트로
+Day 26,Lunch,Savoy Alpine Lunch,Chez Mamie Lise (안시 구시가지 전통 샬레 식당),chez-mamie-lise,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Lac d'Annecy 호수변 비스트로 생선구이
+Day 26,Dinner,Return Quick Dinner,Lyon Part-Dieu 귀환 후 숙소권 간단 저녁,bellecour,RECOMMENDED,PRIMARY,B — AREA-BASED WITH STRONG OPTIONS,숙소 인근 간단식 및 익일 파리 이동 짐정리
+Day 27,Lunch,TGV Travel Quick Meal,Part-Dieu역 / Halles Paul Bocuse 샌드위치 & 에스프레소,halles-de-lyon-paul-bocuse,RECOMMENDED,PRIMARY,E — MARKET / TAKEAWAY,Part-Dieu 역사 내 Paul 베이커리

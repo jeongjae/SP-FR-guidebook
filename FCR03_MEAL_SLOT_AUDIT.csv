@@ -1,0 +1,25 @@
+day,meal_slot,category,planned_venue,place_ref,selection_origin,meal_role,classification,backup_plan
+Day 12,Lunch,Village Lunch,Grasse 또는 Saint-Paul-de-Vence 로컬 비스트로,grasse,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,생폴드방스 성벽 카페 샌드위치
+Day 12,Dinner,Arrival Dinner,Aix-en-Provence 숙소권 캐주얼 저녁 (Coucou Soup / La Brocherie),vieil-aix,RECOMMENDED,PRIMARY,B — AREA-BASED WITH STRONG OPTIONS,숙소 인근 비스트로
+Day 13,Morning/Tea,Café / Pastry,Pâtisserie Weibel (리셸므 시장 테라스 카페 & 칼리송),patisserie-weibel,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Place des Cardeurs 테라스 카페
+Day 13,Lunch,Old Town Lunch,"Vieil Aix 구시가지 비스트로 런치 (라타투유, 도브)",vieil-aix,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Bistrot des Philosophes
+Day 13,Dinner,Casual Dinner,Aix 구시가지 저녁 또는 숙소 휴식,vieil-aix,RECOMMENDED,OPTIONAL,B — AREA-BASED WITH STRONG OPTIONS,숙소 간단식
+Day 14,Lunch,Seafood / Bouillabaisse,Chez Gilbert (Cassis 항구 셰 질베르),chez-gilbert-cassis,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Cassis 항구 Le Grand Large 테라스
+Day 14,Dinner,Rest Dinner,Aix 복귀 후 숙소 인근 저녁,vieil-aix,RECOMMENDED,PRIMARY,B — AREA-BASED WITH STRONG OPTIONS,숙소식
+Day 15,Lunch,Port Seafood / Panisse,Vieux-Port 마르세유 항구 점심 & 파니스,vieux-port-marseille,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Mucem 레스토랑 Le Môle Passedat
+Day 15,Dinner,Farewell Aix,Aix 구시가지 마지막 저녁,vieil-aix,RECOMMENDED,PRIMARY,B — AREA-BASED WITH STRONG OPTIONS,Aix 숙소 짐정리
+Day 16,Lunch,Market / Café,Coustellet 시장 푸드 가판 또는 Lourmarin 카페,coustellet,RECOMMENDED,MARKET,E — MARKET / TAKEAWAY,Lourmarin 샤토 앞 카페
+Day 16,Dinner,Farmhouse Terrace,Domaine des Peyre 농가 숙소 첫 저녁 (자가 조리),coustellet,RECOMMENDED,SELF_CATERING,D — HOME / SELF-CATERING,Goult 마을 로컬 식당 Café de la Poste
+Day 17,Lunch,Village Lunch,Roussillon 오커 마을 테라스 점심,roussillon-sentier-des-ocres,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Goult 마을 비스트로
+Day 17,Dinner,Farmhouse Dinner,Luberon 농가 숙소 저녁 (자가 조리),goult,RECOMMENDED,SELF_CATERING,D — HOME / SELF-CATERING,Bonnieux 언덕 식당
+Day 18,Lunch,Market Picnic,"Gordes 화요 시장 재료 피크닉 런치 (바농 치즈, 바게트)",gordes,RECOMMENDED,MARKET,E — MARKET / TAKEAWAY,Village des Bories 인근 그늘 벤치
+Day 18,Dinner,Farmhouse Farewell,Luberon 농가 숙소 마지막 저녁 (자가 조리 & 짐정리),goult,RECOMMENDED,SELF_CATERING,D — HOME / SELF-CATERING,농가 와인 및 간단식
+Day 19,Lunch,Arrival Lunch,Les Halles d'Avignon 주변 가벼운 점심 (체크인 지연 완충),les-halles,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Place Pie 테라스 브라세리
+Day 19,Dinner,Romantic Bistro,Fou de Fafa (아비뇽 탕튀리에 운하 비스트로),fou-de-fafa-avignon,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,La Fourchette (Avignon)
+Day 20,Lunch,Palace Bistro,Palais des Papes 교황청 광장 비스트로 점심,palais-des-papes,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Restaurant SEVIN 테라스
+Day 20,Dinner,Cloister Dining,Les Cocottes Saint-Louis (16세기 수도원 회랑 저녁),les-cocottes-saint-louis,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Les Halles 조리식품 숙소식
+Day 21,Lunch,Terrace Lunch,Uzès Place aux Herbes 에르브 광장 테라스 점심,uzes,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Pont du Gard 파크 내 비스트로
+Day 21,Dinner,Light Dinner,Avignon 복귀 후 가벼운 저녁,palais-des-papes,RECOMMENDED,PRIMARY,B — AREA-BASED WITH STRONG OPTIONS,아비뇽 숙소 휴식
+Day 22,Lunch,Camargue Bistro,Le Gibolin (아를 로케트 지구 카마르그 황소 스튜),le-gibolin-arles,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Place du Forum 야외 테라스
+Day 22,Dinner,Avignon Farewell,Les Cocottes Saint-Louis 또는 구시가지 마지막 만찬,les-cocottes-saint-louis,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Fou de Fafa 백업
+Day 23,Lunch,TGV Arrival Lunch,리옹 파르디외 도착 후 가벼운 점심,bellecour,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Bellecour 광장 카페

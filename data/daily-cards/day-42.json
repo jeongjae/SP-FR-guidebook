@@ -39,15 +39,15 @@
       "order": 2,
       "start": "11:30",
       "end": "13:00",
-      "name": "15구 생활권 마지막 점심 식사",
+      "name": "Café du Commerce 15구 마지막 점심",
       "category": "food",
       "lat": 48.8468,
       "lng": 2.2905,
       "summary": "단골 15구 비스트로/카페에서 파리 생활을 회고하는 마지막 점심 식사",
-      "menu": "크로크무슈, 샐러드, 에스프레소",
+      "menu": "가벼운 브라세리 런치, 샐러드, 커피",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "cafe-du-commerce"
     },
     {
       "id": "cdg-transfer",

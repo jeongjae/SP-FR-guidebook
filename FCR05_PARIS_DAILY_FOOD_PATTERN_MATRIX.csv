@@ -1,0 +1,18 @@
+day,pattern_type,breakfast_model,lunch_model,dinner_model,fatigue_level,notes
+Day 27,ARRIVAL,TGV 이동 아침,Halles Paul Bocuse 샌드위치 점심,15구 첫 장보기 & 정착 숙소식,LOW,정착 및 첫날 피로 관리
+Day 28,LOCAL-LIVING,피샤르 빵집 아침,숙소 점심,Café du Commerce 아르데코 디너,LOW,15구 생활권 적응
+Day 29,LOCAL-LIVING,Marché Convention 장보기,로티세리 치킨 숙소식,생제르맹 산책 후 숙소식,MODERATE,일요 시장 루틴
+Day 30,MUSEUM-AFTERNOON,숙소 아침,숙소 점심,Bouillon Chartier Montparnasse,MODERATE,오르세 관람 후 아르누보 부이용
+Day 31,LOCAL-LIVING,피샤르 빵집 아침,바게트 샌드위치 점심,숙소 저녁,LOW,기메/자크마르 여유 산책
+Day 32,LOCAL-LIVING,숙소 아침,숙소 점심,Café du Commerce 동네 저녁,LOW,BnF 리슐리외 탐방
+Day 33,EVENT,숙소 아침,샹젤리제/몽테뉴 카페 점심,숙소 저녁,MODERATE,패션위크 축제 분위기
+Day 34,DAY-TRIP,숙소 빠른 아침,베르사유 대운하 런치,Le Grand Pan 숯불 비스트로,HIGH,베르사유 투어 후 푸짐한 만찬
+Day 35,MUSEUM-AFTERNOON,피샤르 빵집 아침,숙소 든든한 점심,센 강변 일몰 후 숙소 저녁,MODERATE,루브르 4시간 집중 관람
+Day 36,RECOVERY,Marché Convention 아침,숙소 점심 & 휴식,익일 경마 대비 조기 귀환 숙소식,LOW,마르모탕 모네 여유 관람
+Day 37,EVENT,숙소 아침,파리롱샹 경마장 런치,숙소 저녁 & 휴식,HIGH,개선문상 본선 스포츠 앵커
+Day 38,RECOVERY,느린 기상 & 브런치,숙소 점심,숙소 저녁,LOW,경마 후 체력 회복 & 몽소 공원
+Day 39,LOCAL-LIVING,숙소 아침,마레 지구 비스트로 점심,15구 동네 저녁,MODERATE,피카소 & 카르나발레 예술 더블
+Day 40,EVENT,숙소 빠른 아침,Rue Montorgueil 미식거리 점심,몽마르트르 포도축제 이른 저녁,MODERATE,부르스 드 코메르스 & 포도축제
+Day 41,MUSEUM-AFTERNOON,숙소 아침,이에나 대로변 카페 점심,Le Grand Pan 고별 만찬 (코트 드 뵈프),MODERATE,15박 대미를 장식하는 고별 디너
+Day 42,DEPARTURE,피샤르 빵집 아침,Café du Commerce 마지막 점심,OZ502 기내식,MODERATE,체크아웃 & CDG 공항 출국
+Day 43,ARRIVAL,기내 아침,기내식,인천 자택 귀환,LOW,43일 대여정 공식 완결

@@ -58,10 +58,10 @@
       "lat": 43.9501,
       "lng": 4.8068,
       "summary": "교황청 광장 인근 테라스 레스토랑에서 프로방스식 점심 식사",
-      "menu": "생선 수프, 오리 콩피, 론 화이트 와인",
+      "menu": "프로방스 타파스, 제철 샐러드",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "palais-des-papes"
     },
     {
       "id": "rocher-doms",
@@ -113,15 +113,15 @@
       "order": 7,
       "start": "19:30",
       "end": "21:00",
-      "name": "아비뇽 저녁 식사 & 숙소 귀환",
-      "category": "hotel",
+      "name": "Les Cocottes Saint-Louis 저녁 식사",
+      "category": "food",
       "lat": 43.94993,
       "lng": 4.81302,
       "summary": "구시가지 레스토랑(SEVIN 또는 La Fourchette) 저녁 식사 후 숙소 귀환",
-      "menu": null,
-      "reservation": "저녁 예약 권장",
+      "menu": "도브 프로방살 냄비 요리, 양정강이 콩피",
+      "reservation": "회랑 정원 테라스 예약 권장 (20:00)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "les-cocottes-saint-louis"
     }
   ],
   "legs": [

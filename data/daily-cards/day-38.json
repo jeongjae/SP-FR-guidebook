@@ -24,15 +24,15 @@
       "order": 1,
       "start": "09:00",
       "end": "13:30",
-      "name": "Recovery Morning (느린 기상·브런치·세탁)",
+      "name": "Boulangerie Pichard 브런치 빵 조달 & 세탁",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
       "summary": "경마 축제 다음 날 느린 기상, 세탁, 숙소 브런치 및 가벼운 15구 동네 산책",
-      "menu": "프렌치 토스트, 커피, 과일",
+      "menu": "애플 턴오버, 브리오슈, 과일 샐러드",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "boulangerie-pichard"
     },
     {
       "id": "jacquemart-andre",

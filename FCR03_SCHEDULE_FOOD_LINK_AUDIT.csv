@@ -1,0 +1,13 @@
+day,stop_id,stop_name,place_ref,target_exists,link_status,menu_field_present,price_coverage,notes
+Day 13,place-richelme-place-des-precheurs,Place Richelme 목요 시장 & Pâtisserie Weibel,patisserie-weibel,YES,VALID,"Calisson d'Aix, 크루아상, 카페 오 레",€8~€15,리셸므 시장 바로 앞 테라스 살롱 드 테
+Day 13,aix-lunch,Vieil Aix 구시가지 점심 식사,vieil-aix,YES,VALID,"라타투유, 도브 프로방살, 로제 와인",€20~€35,세잔 보도블록 산책 중 점심
+Day 14,cassis,Chez Gilbert 점심 (Cassis 항구),chez-gilbert-cassis,YES,VALID,"Bouillabaisse de roche, 생선 수프, 카시스 화이트 와인",€35~€75,부야베스 헌장 인증 레스토랑 예약
+Day 15,marseille-lunch,Vieux-Port 마르세유 항구 점심,vieux-port-marseille,YES,VALID,"파니스(Panisse), 정어리 구이, 생선 수프",€15~€28,구항구 및 르 파니에 탐방 중 점심
+Day 16,coustellet,Marché Paysan de Coustellet & 장보기,coustellet,YES,VALID,"바농 치즈, 무화과, 샤퀴테리, 시골빵",€10~€30,일요 생산자 직거래 시장 장보기
+Day 18,picnic,Gordes 시장 재료 피크닉 점심,gordes,YES,VALID,"고르드 시장 바게트, 바농 염소치즈, 무화과, 하몽",€8~€15,보리 마을 / 세낭크 피크닉
+Day 19,avignon-parking-lunch,Les Halles d'Avignon 주변 점심,les-halles,YES,VALID,"프로방스 샐러드, 델리 조리식품",€12~€20,아비뇽 도착 주차 및 체크인 완충 점심
+Day 19,avignon-return,Fou de Fafa 아비뇽 첫 저녁,fou-de-fafa-avignon,YES,VALID,"프로방스 양갈비 구이, 계절 3코스 디너",€38~€45,탕튀리에 운하 골목 사전 예약
+Day 20,palais-lunch,교황청 광장 비스트로 점심,palais-des-papes,YES,VALID,"프로방스 타파스, 제철 샐러드",€15~€25,교황궁 관람 후 광장 점심
+Day 20,avignon-return,Les Cocottes Saint-Louis 저녁 식사,les-cocottes-saint-louis,YES,VALID,"도브 프로방살 냄비 요리, 양정강이 콩피",€25~€38,16세기 수도원 회랑 안뜰 디너
+Day 21,uzes-lunch,Uzès Place aux Herbes 광장 테라스 점심,uzes,YES,VALID,"에르브 광장 브라세리 런치, 로컬 치즈",€18~€28,에르브 광장 분수대 앞 테라스 점심
+Day 22,forum-lunch,Le Gibolin 점심 (아를 로케트 지구),le-gibolin-arles,YES,VALID,"카마르그 황소 스튜(Gardianne de taureau), 카마르그 적미 밥",€22~€26,아를 로케트 지구 12:00 점심

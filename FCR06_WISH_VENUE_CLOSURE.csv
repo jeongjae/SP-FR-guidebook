@@ -1,0 +1,4 @@
+wish_id,venue_name,region,scheduled_slot,canonical_slug,booking_requirement,closure_status,audit_verdict
+WISH-01,Le Figuier de Saint-Esprit,Nice (Antibes),Day 09 Lunch,le-figuier-de-saint-esprit,MUST BOOK (12:15),RESOLVED & SCHEDULED,PASS
+WISH-02,Restaurant & Salon de Thé Béatrice,Nice (Cap-Ferrat),Day 11 Lunch,restaurant-beatrice,RECOMMENDED BOOK (12:15),RESOLVED & SCHEDULED,PASS
+WISH-03,Chez Michel / L'Épuisette (Marseille),Marseille,Day 15 (대체 후보),chez-michel-marseille,USER_CONFIRMATION_REQUIRED,PRESERVED AS BACKUP,PASS

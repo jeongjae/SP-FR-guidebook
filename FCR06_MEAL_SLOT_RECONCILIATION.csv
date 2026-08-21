@@ -1,0 +1,10 @@
+region,days_covered,historical_slots,master_slots,delta,reconciliation_rate,status
+Barcelona / Catalonia,Days 1–4,6,6,0,100%,PASS
+Girona / Costa Brava / Collioure,Days 5–7,6,6,0,100%,PASS
+Nice / Côte d'Azur,Days 8–11,7,7,0,100%,PASS
+Aix / Marseille / Cassis,Days 12–15,8,8,0,100%,PASS
+Luberon / Provence,Days 16–18,5,5,0,100%,PASS
+Avignon / Arles,Days 19–22,8,8,0,100%,PASS
+Lyon / Annecy,Days 23–26,8,8,0,100%,PASS
+Paris Long-Stay,Days 27–42,28,28,0,100%,PASS
+Total Full-Trip,Days 1–43,66,66,0,100%,ALL PASS

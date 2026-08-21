@@ -99,15 +99,15 @@
       "order": 6,
       "start": "19:00",
       "end": "21:00",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "Bouillon Chartier Montparnasse 저녁",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 8호선(Opéra ➔ Lourmel)으로 귀환 후 저녁 식사",
-      "menu": null,
+      "summary": "1903년 역사기념물 등록 아르누보 식당에서 종이 식탁보에 연필로 주문하며 즐기는 전설적인 가성비 부이용 만찬",
+      "menu": "에스카르고, 뵈프 부르기뇽, 초콜릿 무스",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "bouillon-chartier-montparnasse"
     }
   ],
   "legs": [

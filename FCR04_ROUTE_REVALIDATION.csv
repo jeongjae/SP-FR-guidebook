@@ -1,0 +1,6 @@
+day,route_description,total_duration,total_distance,transport_modes,fatigue_score,fatigue_level,simulation_verdict,delay_buffer_minutes,risk_mitigation
+Day 23,Avignon TGV ➔ Lyon Part-Dieu (TGV 1시간 6분) ➔ 숙소 체크인 ➔ Presqu'île 산책 ➔ Café Comptoir Abel 저녁,8시간,TGV 고속철 + 메트로/도보,철도 + 대중교통,2,LOW,PASS,60,Part-Dieu 11:28 도착 후 여유로운 체크인 및 Abel 19:30 저녁 안착
+Day 24,푸니쿨라 ➔ Fourvière 대성당 ➔ Vieux Lyon (점심) ➔ 트라불 탐방 ➔ Daniel et Denise 저녁,8시간 30분,도보 약 5.5km + 푸니쿨라/메트로,대중교통 + 도보,3,MODERATE,PASS,45,"점심 60분 통제로 비외리옹 트라불 충분한 탐방 시간 확보, 19:45 저녁 안착"
+Day 25,Croix-Rousse 시장 & 실크 공방 ➔ Halles Paul Bocuse (점심 & 쇼핑) ➔ Tête d'Or 공원 ➔ 숙소 휴식,8시간,메트로 C/A선 + 트램 T1 + 도보,대중교통 + 도보,3,MODERATE,PASS,50,"Halles 점심 후 공원 산책, 저녁은 숙소식으로 다음 날 안시 당일치기 체력 비축"
+Day 26,Lyon Part-Dieu ➔ Annecy (TER 1시간 50분) ➔ Vieille Ville ➔ Chez Mamie Lise 점심 ➔ 호수 산책 ➔ Lyon 복귀,9시간 30분,TER 왕복 + 도보 약 5km,철도 + 도보,4,HIGH,PASS,45,+30분 점심 지연 시 호수 보트 대여를 생략하고 Pont des Amours 산책 후 16:45 안시 발 TER 탑승으로 Part-Dieu 안전 복귀
+Day 27,Lyon 체크아웃 ➔ Part-Dieu역 / Halles 점심 ➔ TGV 6618 (13:04 발차) ➔ Paris Gare de Lyon 도착 (15:00),6시간,TGV 고속철 + 택시/메트로,철도 + 대중교통,2,LOW,PASS,90,"12:00 역 도착으로 TGV 6618 완벽 탑승 마진 확보, 파리 15구 숙소 정착"

@@ -1,0 +1,4 @@
+market_slug,name,region,location,hours,closed_days,character,what_to_buy,what_to_eat_immediately,price_feel,self_catering_suitability,crowding_level,related_day
+halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,102 Cours Lafayette (3구),07:00-19:00 (식당 22:30까지),Mon,LUXURY_GOURMET_FOOD_HALL,"생마르슬랭 치즈, 로제트 드 리옹, 프랄린 타르트, 마카롱",스탠딩 굴 바 생굴 6미 + 샤블리 와인 한 잔 (€18),€€€ (럭셔리 미식),EXCELLENT (최고),MEDIUM-HIGH,Day 25 (점심 & 식재료 탐방)
+croix-rousse-market,Marché de la Croix-Rousse,lyon,Boulevard de la Croix-Rousse (4구),06:00-13:30 (화–일),Mon,LOCAL_STREET_MARKET,"제철 사과, 버섯, 로컬 염소치즈, 신선 채소",가판대 갓 구운 브리오슈 & 에스프레소,€ (매우 합리적),EXCELLENT,MEDIUM,Day 25 (오전 시장 산책)
+marche-saint-antoine,Marché Saint-Antoine,lyon,Quai Saint-Antoine (손 강변),06:00-13:30 (화–일),Mon,RIVERSIDE_PRODUCE,"손 강변 신선 과일, 치즈, 로티세리 치킨",로티세리 치킨 & 감자 구이 테이크아웃,€€ (보통),GOOD,HIGH,Day 24 (선택 대안)

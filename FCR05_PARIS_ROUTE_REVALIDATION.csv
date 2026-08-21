@@ -1,0 +1,18 @@
+day,route_description,total_duration,total_distance,transport_modes,fatigue_score,fatigue_level,simulation_verdict,delay_buffer_minutes,risk_mitigation
+Day 27,Lyon Part-Dieu ➔ TGV 6618 ➔ Paris Gare de Lyon ➔ 15구 숙소 체크인 ➔ 첫 장보기 & 숙소식,6시간,TGV 고속철 + 택시/메트로,철도 + 대중교통,2,LOW,PASS,90,15:00 파리 도착 후 여유로운 짐정리 및 첫 장보기
+Day 28,피샤르 빵집 ➔ Tootbus 파리 시티투어 ➔ 그랑 팔레 세잔전 ➔ Café du Commerce 저녁,7시간 30분,투어 버스 + 메트로/도보,시티투어 + 도보,2,LOW,PASS,60,파리 전경 조망 후 15구 브라세리에서 편안한 저녁
+Day 29,Marché Convention 장보기 ➔ 로티세리 숙소 점심 ➔ Saint-Germain/센 강 산책 ➔ 숙소 저녁,7시간,도보 약 6km + 메트로,대중교통 + 도보,3,MODERATE,PASS,50,일요 시장 루틴과 여유로운 좌안 산책
+Day 30,숙소 아침/점심 ➔ Musée d'Orsay (오르세) ➔ Bouillon Chartier Montparnasse 저녁,7시간 30분,메트로 12호선 + 도보,대중교통 + 도보,3,MODERATE,PASS,45,오르세 관람 후 몽파르나스로 이동하여 18:30 부이용 입장
+Day 31,피샤르 빵집 ➔ Musée Guimet (기메) ➔ 자크마르-앙드레 ➔ 숙소 저녁,7시간,메트로 9호선 + 도보,대중교통 + 도보,2,LOW,PASS,60,동양미술과 저택 미술관 여유 관람 후 숙소 휴식
+Day 32,숙소 아침/점심 ➔ BnF Richelieu (오발 열람실) ➔ 팔레 루아얄 ➔ Café du Commerce 저녁,7시간 30분,메트로 8/14호선 + 도보,대중교통 + 도보,2,LOW,PASS,60,도서관 관람 후 동네 브라세리 귀환 저녁
+Day 33,Petit Palais ➔ 샹젤리제 점심 ➔ Fashion Week 몽테뉴 축제 ➔ 숙소 저녁,8시간,메트로 1/9호선 + 도보,대중교통 + 도보,3,MODERATE,PASS,45,패션위크 축제 분위기 체험 후 숙소 조기 복귀
+Day 34,RER C ➔ Versailles (베르사유 전일 투어) ➔ 15구 귀환 ➔ Le Grand Pan 저녁 (20:00),9시간,RER C 왕복 + 정원 도보 8km,철도 + 도보,4,HIGH,PASS,60,베르사유 투어 후 숙소 샤워 및 20:00 숯불 비스트로 만찬
+Day 35,피샤르 빵집 ➔ 숙소 든든한 점심 ➔ Musée du Louvre (루브르 4시간) ➔ 센 강 일몰 ➔ 숙소 저녁,8시간,메트로 1/8호선 + 박물관 도보,대중교통 + 도보,3,MODERATE,PASS,45,루브르 집중 관람 후 숙소 복귀 & 가벼운 저녁
+Day 36,Marché Convention 장보기 ➔ 숙소 점심 ➔ Musée Marmottan Monet ➔ 파시 산책 ➔ 숙소 저녁,7시간,메트로 9호선 + 도보,대중교통 + 도보,2,LOW,PASS,60,모네 걸작 관람 후 익일 경마 대비 체력 비축
+Day 37,ParisLongchamp (개선문상 경마 대회) ➔ 경기장 점심 ➔ 15구 귀환 ➔ 숙소 저녁 & 휴식,8시간,메트로 10호선 + 셔틀버스,대중교통 + 셔틀,4,HIGH,PASS,60,세계 최고 경마 대회 관람 후 숙소에서 편안한 휴식
+Day 38,느린 기상 & 브런치 ➔ 몽소 공원 산책 ➔ 숙소 저녁,5시간 30분,메트로 2/8호선 + 도보,대중교통 + 도보,1,LOW,PASS,90,완벽한 회복과 로컬 라이프의 날
+Day 39,Musée Picasso ➔ 마레 골목 산책 ➔ Musée Carnavalet ➔ 보주 광장 ➔ 15구 저녁,8시간,메트로 1/8호선 + 도보,대중교통 + 도보,3,MODERATE,PASS,45,마레 지구 예술 더블 및 여유로운 티타임
+Day 40,Bourse de Commerce ➔ Rue Montorgueil 점심 ➔ 몽마르트르 포도축제 ➔ 이른 귀가,8시간 30분,메트로 4/12호선 + 언덕 도보,대중교통 + 도보,3,MODERATE,PASS,45,피노 컬렉션 관람 및 포도축제 산책
+Day 41,Musée Guimet / MAM ➔ 이에나 점심 ➔ 트로카데로 일몰 ➔ Le Grand Pan 고별 만찬 (20:00),8시간,메트로 9호선 + 도보,대중교통 + 도보,3,MODERATE,PASS,60,에펠탑 일몰 감상 후 대망의 파리 고별 디너
+Day 42,15구 체크아웃 ➔ Café du Commerce 마지막 점심 ➔ CDG 터미널 1 ➔ OZ502 탑승,7시간,택시 / RER B + 항공,대중교통 + 항공,3,MODERATE,PASS,120,여유로운 15구 점심 후 15:30 공항 출발로 완벽 마진 확보
+Day 43,OZ502 기내박 ➔ 인천국제공항 14:10 도착 ➔ 자택 귀환,12시간,국제선 항공,항공,2,LOW,PASS,N/A,43일 스페인-프랑스 대장정 완벽 완결

@@ -1,0 +1,4 @@
+bakery_slug,name,address,distance_from_hotel,hours,early_opening,baguette_tradition,croissant,sandwich,pastry,price_feel,takeaway,closure_days,verified_at,source_url
+boulangerie-pichard,Boulangerie Pichard,88 Rue Cambronne,10분 (800m),07:00-20:00,YES (07:00),YES (최고급 천연발효종),YES (AOP 버터),YES (잠봉 뵈르),"YES (과일 타르트, 쇼송)",€ (바게트 €1.30),YES,"Mon, Tue",2026-08-21,https://www.paris.fr/
+boulangerie-poilane,Poilâne (Cherche-Midi / Pasteur),8 Rue du Cherche-Midi,20분 (메트로 10분),07:15-20:00,YES (07:15),YES (사어도우 캉파뉴),YES (사블레 쿠키),YES (타르틴),YES (사과 타르트),€€ (명품 빵집),YES,Sun,2026-08-21,https://www.poilane.com/
+maison-landemaine,Maison Landemaine Convention,Rue de Vaugirard,12분 (950m),06:45-20:00,YES (06:45),YES (바게트 랑드멘),YES (크루아상),YES (바게트 샌드위치),YES (페이스트리),€ (바게트 €1.35),YES,Mon,2026-08-21,https://www.maisonlandemaine.com/

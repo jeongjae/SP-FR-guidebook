@@ -99,15 +99,15 @@
       "order": 6,
       "start": "17:30",
       "end": "19:30",
-      "name": "베르사유 ➔ 15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "Le Grand Pan 15구 비스트로 저녁",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "RER C선 탑승 ➔ 15구 Javel역 하차 후 숙소 복귀. 15구 숙소식 또는 동네 비스트로 저녁",
-      "menu": null,
-      "reservation": null,
+      "summary": "베르사유 투어 후 15구 브누아 고티에 셰프의 참나무 숯불 비스트로에서 즐기는 푸짐한 고기 요리와 와인",
+      "menu": "샤롤레 소 티본 스테이크 숯불구이, 송아지 흉선 요리",
+      "reservation": "사전 예약 필수 (20:00)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "le-grand-pan"
     }
   ],
   "legs": [

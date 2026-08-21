@@ -38,15 +38,15 @@
       "order": 2,
       "start": "11:30",
       "end": "14:00",
-      "name": "Avignon 주차 & 구시가지 점심",
+      "name": "Les Halles d'Avignon 주변 점심",
       "category": "food",
       "lat": 43.9493,
       "lng": 4.8061,
       "summary": "Parking des Halles 또는 Parking Palais des Papes 관리 지하주차장 입차 후 레 알 인근 비스트로 점심",
-      "menu": "프로방스 타르트, 샐러드, 에스프레소",
+      "menu": "프로방스 샐러드, 델리 조리식품",
       "reservation": "주차: Parking des Halles (Primary) / Parking Palais des Papes (Backup)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "les-halles"
     },
     {
       "id": "avignon-checkin",
@@ -83,15 +83,15 @@
       "order": 5,
       "start": "19:00",
       "end": "20:30",
-      "name": "아비뇽 첫 저녁 & 휴식",
-      "category": "hotel",
+      "name": "Fou de Fafa 아비뇽 첫 저녁",
+      "category": "food",
       "lat": 43.94993,
       "lng": 4.81302,
       "summary": "구시가지 테라스 저녁 식사 후 숙소 귀환",
-      "menu": "프로방스식 양고기 구이, 로컬 론 와인(AOC Côtes du Rhône)",
-      "reservation": "현장 선택",
+      "menu": "프로방스 양갈비 구이, 계절 3코스 디너",
+      "reservation": "사전 예약 필수 (19:30)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "fou-de-fafa-avignon"
     }
   ],
   "legs": [

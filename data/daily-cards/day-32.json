@@ -99,15 +99,15 @@
       "order": 6,
       "start": "18:00",
       "end": "20:30",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "Café du Commerce 동네 저녁",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
       "summary": "메트로 8호선(La Tour-Maubourg ➔ Lourmel) 귀환 후 15구 저녁",
-      "menu": null,
+      "menu": "에스카르고, 소고기 타르타르, 하우스 와인",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "cafe-du-commerce"
     }
   ],
   "legs": [

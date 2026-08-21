@@ -99,15 +99,15 @@
       "order": 6,
       "start": "19:00",
       "end": "21:30",
-      "name": "파리 15박 마무리 고별 만찬 (Farewell Dinner) & 숙소 귀환",
-      "category": "hotel",
+      "name": "Le Grand Pan 파리 15박 고별 만찬",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "15구/7구 엄선 프렌치 비스트로에서 43일 유럽 여행을 마무리하는 고별 저녁 만찬 후 숙소 복귀. 익일 출국 짐 패킹",
-      "menu": "프렌치 정통 코스 디너 (에스카르고, 스테이크, 수플레, 보르도 와인)",
-      "reservation": "저녁 예약 필수",
+      "summary": "15구 최고 권위의 비스트로에서 2인용 참나무 숯불 코트 드 뵈프와 제철 버섯 요리로 즐기는 대망의 고별 디너",
+      "menu": "Côte de boeuf 2인 숯불구이, 제철 그물버섯, 바스크 디저트",
+      "reservation": "사전 예약 필수 (20:00)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "le-grand-pan"
     }
   ],
   "legs": [

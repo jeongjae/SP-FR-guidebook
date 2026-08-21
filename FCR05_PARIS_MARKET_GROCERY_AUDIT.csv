@@ -1,0 +1,5 @@
+slug,name,location,hours,type,what_to_buy,immediate_food,living_suitability,tourist_crowding,scheduled_days
+marche-convention,Marché Convention,15구 (Rue de la Convention),"화·목 07:00-13:30, 일 07:00-14:30",OPEN_AIR_STREET_MARKET,"과일, 채소, 치즈, 샤퀴테리, 로티세리 치킨",로티세리 치킨 & 감자 구이 세트,EXCELLENT,LOW (관광객 거의 없음),"Day 29, 31, 36"
+marche-grenelle,Marché Grenelle,"15구 (Boulevard de Grenelle, 에펠탑 남측)","수 07:00-13:30, 일 07:00-15:00",OPEN_AIR_STREET_MARKET,"치즈, 해산물, 올리브, 빵, 꽃",크레페 & 갈레트 스탠드,GOOD,MEDIUM,Day 33 (수요 대안)
+monoprix-beaugrenelle,Monoprix Beaugrenelle,15구 (Place Charles Michels),"월–토 08:30-21:30, 일 09:00-13:00",FULL_SUPERMARKET,"에비앙, 봉본느 잼, 이즈니 버터, 샐러드팩, 와인",델리 코너 즉석 샐러드/파스타,EXCELLENT,LOW-MEDIUM,"Day 27, 28, 38"
+carrefour-city-lourmel,Carrefour City Lourmel,15구 (Rue de Lourmel 숙소 앞),"월–토 07:00-22:00, 일 09:00-13:00",CONVENIENCE_GROCERY,"우유, 요거트, 계란, 버터, 간식, 캡슐커피",간편 샌드위치 / 주스,EXCELLENT,LOW,Days 27-42 상시

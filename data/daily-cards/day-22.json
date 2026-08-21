@@ -68,15 +68,15 @@
       "order": 4,
       "start": "11:45",
       "end": "13:15",
-      "name": "Place du Forum & 반 고흐 카페 점심",
+      "name": "Le Gibolin 점심 (아를 로케트 지구)",
       "category": "food",
       "lat": 43.6764,
       "lng": 4.6267,
       "summary": "반 고흐의 '밤의 카페 테라스' 배경지인 포룸 광장 테라스 레스토랑에서 카마르그식 점심 식사",
-      "menu": "가르디안 드 토로(황소고기 스튜), 카마르그 붉은 쌀, 로컬 와인",
-      "reservation": "현장 선택",
+      "menu": "카마르그 황소 스튜(Gardianne de taureau), 카마르그 적미 밥",
+      "reservation": "12:00 오픈 시각 현장 방문 또는 사전 예약",
       "optional": false,
-      "place_ref": "place-du-forum-arles"
+      "place_ref": "le-gibolin-arles"
     },
     {
       "id": "saint-trophime",

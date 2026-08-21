@@ -1,0 +1,6 @@
+market_slug,name,region,location,hours,closed_days,character,what_to_buy,what_to_eat_immediately,price_feel,self_catering_suitability,crowding_level,related_day
+place-richelme-place-des-precheurs,Place Richelme & Prêcheurs,aix,Aix Centre,08:00-13:00 (리셸므 매일 / 프레셰르 화·목·토),Sun (프레셰르),LOCAL_PROVENCAL,"칼리송, 솔리에스 무화과, 염소치즈, 바게트, 꿀",Pâtisserie Weibel 테라스 커피 & 크루아상,€€ (보통),EXCELLENT,MEDIUM,Day 13 (목요 대형 시장)
+coustellet,Marché Paysan de Coustellet,luberon,Coustellet,08:00-13:00 (일요일),Mon-Sat,FARMERS_ONLY,"100% 농가 직거래 바농 치즈, 샤슬라 포도, 무화과, 소시송, 멜론","시장 가판 갓 구운 브리오슈, 치즈 시식",€ (합리적/정직),EXCELLENT (최고),MEDIUM-HIGH,Day 16 (농가 숙소 입소 장보기)
+gordes,Marché de Gordes,luberon,Gordes Castle,08:00-13:00 (화요일),Wed-Mon,TOURIST_ICONIC,"염소치즈, 린넨 직물, 라벤더 비누, 올리브 오일, 과일",바게트 샌드위치 (피크닉용 포장),€€€ (관광 프리미엄),GOOD,EXTREME (10시 이후),Day 18 (화요 시장 & 피크닉 조달)
+les-halles,Les Halles d'Avignon,avignon,Place Pie,06:00-14:00 (화–일),Mon,COVERED_GOURMET,"Chèvre du Ventoux, 트레퇴르 조리식품, 파르시, 샤퀴테리, 와인",시장 내 바 à Huîtres 굴 한 접시 & 샤르도네,€€ (보통),EXCELLENT,LOW-MEDIUM,Day 20 (교황도시 아침)
+uzes-place-aux-herbes,Marché d'Uzès (Place aux Herbes),avignon,Uzès Centre,07:30-14:00 (수요일 생산자장 / 토요일 종합장),"Sun, Mon, Tue, Thu, Fri",HISTORIC_PROVENCAL,"피숑 도자기, 올리브유, 트러플 제품, 염소치즈",광장 아케이드 카페 에스프레소 & 타르트,€€ (보통),GOOD,HIGH (수/토),Day 21 (금요일 방문으로 시장 대신 한적한 광장 산책)

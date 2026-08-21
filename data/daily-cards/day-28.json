@@ -24,15 +24,15 @@
       "order": 1,
       "start": "08:00",
       "end": "12:45",
-      "name": "Standard Home Morning (아침·운동·장보기·점심)",
+      "name": "Boulangerie Pichard 아침 빵 조달 & 루틴",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
       "summary": "08:00 숙소 아침식사 ➔ 09:00 러닝/운동 ➔ 10:15 샤워·세탁·생활용품 점검 ➔ 11:30 숙소 가벼운 점심 식사",
-      "menu": "바게트, 치즈, 샐러드, 에스프레소",
+      "menu": "바게트 트라디시옹, 크루아상, 에스프레소",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "boulangerie-pichard"
     },
     {
       "id": "city-bus-tour",
@@ -69,15 +69,15 @@
       "order": 4,
       "start": "19:45",
       "end": "21:00",
-      "name": "15구 숙소 귀환 & 동네 저녁 식사",
-      "category": "hotel",
+      "name": "Café du Commerce 15구 브라세리 첫 저녁",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 8호선으로 15구 귀환. Rue du Commerce 인근 비스트로 저녁 식사 후 휴식",
-      "menu": "오리 가슴살 스테이크, 하우스 와인",
+      "summary": "1921년 15구 상업거리 역사적 3층 아르데코 가든 브라세리에서 즐기는 편안한 클래식 프랑스 만찬",
+      "menu": "오리 다리 콩피, 샤롤레 소고기 스테이크 프릿, 프로피테롤",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": null
+      "place_ref": "cafe-du-commerce"
     }
   ],
   "legs": [

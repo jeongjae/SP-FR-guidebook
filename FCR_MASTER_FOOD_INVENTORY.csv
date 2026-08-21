@@ -1,0 +1,82 @@
+item_type,slug,name,region,status,notes
+REGIONAL_FOOD,socca,소카,,ACTIVE,Street Food
+REGIONAL_FOOD,pissaladiere,피살라디에르,,ACTIVE,Savory Tart
+REGIONAL_FOOD,salade-nicoise,살라드 뉘수아즈,,ACTIVE,Salad
+REGIONAL_FOOD,pan-bagnat,팡 바냐,,ACTIVE,Sandwich
+REGIONAL_FOOD,petits-farcis,프티 파르시,,ACTIVE,Main Dish
+REGIONAL_FOOD,daube-nicoise,도브 뉘수아즈,,ACTIVE,Stew / Pasta
+REGIONAL_FOOD,tourte-de-blettes,투르트 드 블레트,,ACTIVE,Pastry / Tart
+REGIONAL_FOOD,barbajuan,바르바주앙,,ACTIVE,Appetizer
+REGIONAL_FOOD,tarte-au-citron-de-menton,망통 레몬 타르트,,ACTIVE,Dessert
+REGIONAL_FOOD,pa-amb-tomaquet,판 콘 토마테 (판 암 투마케트),barcelona,ACTIVE,Bread / Tapas
+REGIONAL_FOOD,escalivada,에스칼리바다,barcelona,ACTIVE,Vegetable / Salad
+REGIONAL_FOOD,esqueixada,에스케이샤다,barcelona,ACTIVE,Seafood Salad
+REGIONAL_FOOD,botifarra-mongetes,부티파라 암 몬게테스,barcelona,ACTIVE,Main Dish
+REGIONAL_FOOD,fideua,피데우아,barcelona,ACTIVE,Noodle Paella
+REGIONAL_FOOD,arros-negre-banda,아로스 네그레 / 아로스 아 반다,barcelona,ACTIVE,Rice Dish
+REGIONAL_FOOD,bombes-barceloneta,봄바,barcelona,ACTIVE,Tapas / Fried
+REGIONAL_FOOD,crema-catalana,크레마 카탈라나,barcelona,ACTIVE,Dessert
+REGIONAL_FOOD,suquet-de-peix,수케트 데 페이시,girona,ACTIVE,Seafood Stew
+REGIONAL_FOOD,arros-cassola-pals,아로스 아 라 카솔라 (팔스 쌀 요리),girona,ACTIVE,Rice Casserole
+REGIONAL_FOOD,mar-i-muntanya,마르 이 문타냐 (바다와 산),girona,ACTIVE,Meat & Seafood
+REGIONAL_FOOD,xuixo-de-girona,추쇼 데 지로나,girona,ACTIVE,Pastry
+REGIONAL_FOOD,anxoves-de-lescala,레스칼라 앤초비,girona,ACTIVE,Cured Seafood
+REGIONAL_FOOD,anchois-de-collioure,콜리우르 앤초비 (IGP),collioure,ACTIVE,Cured Seafood
+REGIONAL_FOOD,banyuls-collioure-wine,콜리우르 & 바뉼스 와인 (AOC),collioure,ACTIVE,Wine
+REGIONAL_FOOD,calissons-d-aix,칼리송 덱스,aix,ACTIVE,Confectionery / Pastry
+REGIONAL_FOOD,bouillabaisse,정통 부야베스,marseille,ACTIVE,Seafood Stew
+REGIONAL_FOOD,panisse,파니스 (병아리콩 튀김),marseille,ACTIVE,Street Food / Snack
+REGIONAL_FOOD,navettes-de-marseille,나베트 (오렌지꽃 비스킷),marseille,ACTIVE,Biscuit / Pastry
+REGIONAL_FOOD,tapenade-anchoiade,타프나드 & 앙쇼이아드,luberon,ACTIVE,Spread / Dip
+REGIONAL_FOOD,banon-goat-cheese,바농 염소 치즈,luberon,ACTIVE,Artisan Cheese
+REGIONAL_FOOD,soupe-au-pistou,수프 오 피스투,luberon,ACTIVE,Vegetable Soup
+REGIONAL_FOOD,daube-provencale,도브 프로방살,avignon,ACTIVE,Braised Stew
+REGIONAL_FOOD,aioli-provencal,그랑 아이올리,avignon,ACTIVE,Platter
+REGIONAL_FOOD,gardianne-de-taureau,가르디안 드 토로 (카마르그 황소 스튜),arles,ACTIVE,Meat Stew
+REGIONAL_FOOD,tartiflette-reblochon,타르티플레트,annecy,ACTIVE,Alpine Comfort Dish
+REGIONAL_FOOD,fondue-savoyarde,정통 사부아 퐁뒤,annecy,ACTIVE,Cheese Fondue
+REGIONAL_FOOD,filets-de-perche-fera,안시 호수 생선구이 (페라 / 농어),annecy,ACTIVE,Lake Fish
+REGIONAL_FOOD,reblochon-tomme-savoie,사부아 치즈 (르블로숑 & 톰 드 사부아),annecy,ACTIVE,Artisan Cheese
+REGIONAL_FOOD,quenelle-de-brochet,강꼬치고기 끄넬 (낭튀아 가재 소스),lyon,ACTIVE,Main Dish
+REGIONAL_FOOD,salade-lyonnaise,살라드 리요네즈,lyon,ACTIVE,Salad / Entrée
+REGIONAL_FOOD,saucisson-brioche,소시송 브리오셰,lyon,ACTIVE,Charcuterie / Pastry
+REGIONAL_FOOD,tablier-de-sapeur,타블리에 드 사푀르 (소 양 튀김),lyon,ACTIVE,Offal Dish
+REGIONAL_FOOD,cervelle-de-canut,세르벨 드 카뉘 (허브 생치즈),lyon,ACTIVE,Cheese / Dip
+REGIONAL_FOOD,tarte-aux-pralines,타르트 오 프랄린 (분홍 프랄린 타르트),lyon,ACTIVE,Dessert / Pastry
+REGIONAL_FOOD,croissant-pain-au-chocolat,크루아상 & 팽 오 쇼콜라,paris,ACTIVE,Viennoiserie
+REGIONAL_FOOD,baguette-tradition,바게트 트라디시옹,paris,ACTIVE,Boulangerie
+REGIONAL_FOOD,jambon-beurre,잠봉 뵈르 샌드위치,paris,ACTIVE,Street / Quick Lunch
+REGIONAL_FOOD,confit-de-canard,오리 다리 콩피,paris,ACTIVE,Bistro Classic
+REGIONAL_FOOD,steak-frites,스테이크 프릿,paris,ACTIVE,Bistro Classic
+REGIONAL_FOOD,boeuf-bourguignon,뵈프 부르기뇽,paris,ACTIVE,Slow Cooked Stew
+REGIONAL_FOOD,escargots-de-bourgogne,에스카르고 (달팽이 구이),paris,ACTIVE,Entrée
+REGIONAL_FOOD,poulet-roti-marche,노천시장 로티세리 치킨 & 감자,paris,ACTIVE,Market Comfort
+FOOD_PLACE,bar-canete,Bar Cañete,barcelona,ACTIVE,restaurant
+FOOD_PLACE,bodega-joan,Bodega Joan,barcelona,ACTIVE,restaurant
+FOOD_PLACE,bouillon-chartier-montparnasse,Bouillon Chartier Montparnasse,paris,ACTIVE,restaurant
+FOOD_PLACE,boulangerie-pichard,Boulangerie Pichard,paris,ACTIVE,bakery
+FOOD_PLACE,cafe-comptoir-abel,Café Comptoir Abel,lyon,ACTIVE,restaurant
+FOOD_PLACE,cafe-du-commerce,Café du Commerce,paris,ACTIVE,restaurant
+FOOD_PLACE,casa-marieta,Casa Marieta,girona,ACTIVE,restaurant
+FOOD_PLACE,chez-gilbert-cassis,Chez Gilbert,aix,ACTIVE,restaurant
+FOOD_PLACE,chez-mamie-lise,Chez Mamie Lise,lyon,ACTIVE,restaurant
+FOOD_PLACE,cours-saleya,Cours Saleya,nice,ACTIVE,market
+FOOD_PLACE,coustellet,Coustellet 생산자 시장,luberon,ACTIVE,market
+FOOD_PLACE,daniel-et-denise,Daniel et Denise,lyon,ACTIVE,restaurant
+FOOD_PLACE,fou-de-fafa-avignon,Fou de Fafa,avignon,ACTIVE,restaurant
+FOOD_PLACE,halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,ACTIVE,market
+FOOD_PLACE,la-paradeta-sagrada-familia,La Paradeta Sagrada Família,barcelona,ACTIVE,restaurant
+FOOD_PLACE,la-zorra,La Zorra,barcelona,ACTIVE,restaurant
+FOOD_PLACE,le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit,nice,ACTIVE,restaurant
+FOOD_PLACE,le-gibolin-arles,Le Gibolin,avignon,ACTIVE,restaurant
+FOOD_PLACE,le-grand-pan,Le Grand Pan,paris,ACTIVE,restaurant
+FOOD_PLACE,les-cocottes-saint-louis,Les Cocottes Saint-Louis,avignon,ACTIVE,restaurant
+FOOD_PLACE,marche-convention,Marché Convention,paris,ACTIVE,market
+FOOD_PLACE,marche-de-la-liberation,Marché de la Libération,nice,ACTIVE,market
+FOOD_PLACE,marche-forville,Marché Forville,nice,ACTIVE,market
+FOOD_PLACE,mercat-concepcio,Mercat de la Concepció,barcelona,ACTIVE,market
+FOOD_PLACE,mercat-del-lleo,Mercat del Lleó,girona,ACTIVE,market
+FOOD_PLACE,patisserie-weibel,Pâtisserie Weibel,aix,ACTIVE,cafe
+FOOD_PLACE,place-richelme-place-des-precheurs,시장 — Place Richelme · Place des Prêcheurs,aix,ACTIVE,market
+FOOD_PLACE,restaurant-beatrice,Restaurant & Salon de Thé Béatrice,nice,ACTIVE,restaurant
+FOOD_PLACE,vieux-lyon,Vieux Lyon · 트라불,lyon,ACTIVE,neighborhood

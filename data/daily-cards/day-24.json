@@ -68,12 +68,12 @@
       "order": 4,
       "start": "12:00",
       "end": "13:30",
-      "name": "Vieux Lyon 르네상스 비스트로 점심",
+      "name": "Vieux Lyon 구시가지 점심",
       "category": "food",
       "lat": 45.7619,
       "lng": 4.8272,
       "summary": "생장 거리 인근 비스트로 테라스 점심 (생라파엘 파스티세리, 프랄린 브리오슈)",
-      "menu": "리옹식 샐러드, 바게트 샌드위치, 프랄린 타르트",
+      "menu": "살라드 리요네즈, 가벼운 비스트로 런치",
       "reservation": "현장 선택",
       "optional": false,
       "place_ref": "vieux-lyon"
@@ -113,15 +113,15 @@
       "order": 7,
       "start": "19:00",
       "end": "21:30",
-      "name": "정통 부숑 만찬 — Daniel et Denise & 귀환",
-      "category": "hotel",
+      "name": "Daniel et Denise 정통 부숑 만찬",
+      "category": "food",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "리옹 미식 명가 정통 부숑(Bouchon Lyonnais) 저녁 만찬 후 숙소 복귀 (Lagrange Lumière)",
-      "menu": "파테 앙 크루트, 퀘넬 드 브로셰, 타블리에 드 사푀르, 코트 뒤 론",
-      "reservation": "저녁 예약 확정/권장 (Daniel & Denise Créqui / Saint-Jean)",
+      "summary": "MOF 조제프 비올라 셰프의 공인 부숑. 세계 챔피언 파테 앙 크루트와 타블리에 드 사푀르",
+      "menu": "파테 앙 크루트, 타블리에 드 사푀르, 프랄린 타르트",
+      "reservation": "사전 예약 필수 (19:45)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "daniel-et-denise"
     }
   ],
   "legs": [

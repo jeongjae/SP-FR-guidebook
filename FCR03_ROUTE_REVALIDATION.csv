@@ -1,0 +1,12 @@
+day,route_description,total_duration,total_distance,transport_modes,fatigue_score,fatigue_level,simulation_verdict,delay_buffer_minutes,risk_mitigation
+Day 12,Nice ➔ Saint-Paul-de-Vence ➔ Grasse ➔ Aix-en-Provence 체크인,8시간,차량 약 180km,렌터카,3,MODERATE,PASS,60,"이동 중 생폴/그라스 2시간 이내 통제, 17:30 Aix 안착 보장"
+Day 13,Place Richelme (Weibel) ➔ Vieil Aix (점심) ➔ Atelier Cézanne ➔ Musée Granet,7시간 30분,도보 약 4.5km,도보,2,LOW,PASS,45,"Aix 구시가지 내부 도보 동선, 여유로운 미술관 관람"
+Day 14,Aix ➔ Cassis (유람선 ➔ Chez Gilbert 점심 ➔ Port-Miou 산책) ➔ Aix 복귀,8시간,차량 약 100km + 도보 4km,렌터카 + 도보,3,MODERATE,PASS,50,Chez Gilbert 12:30 예약(75분 식사) 후 16:30 Aix 복귀로 피로도 3 유지
+Day 15,Aix ➔ Marseille (TER 왕복: Vieux-Port ➔ Le Panier ➔ Mucem ➔ 점심 ➔ Notre-Dame),9시간,TER 기차 + 도보 약 6km,철도 + 대중교통,4,HIGH,PASS,45,"마르세유 시내 차량 운전 배제(TER 전철 이용), 부야베스 정찬 대신 가벼운 항구 런치로 시간 보호"
+Day 16,Aix 체크아웃 ➔ Lourmarin ➔ Coustellet (일요시장 장보기) ➔ Goult ➔ 농가 체크인,8시간 30분,차량 약 75km + 도보 3.5km,렌터카,3,MODERATE,PASS,60,"쿠스텔레 시장 10:30 안착으로 신선 식재료 확보, 16:00 농가 테라스 여유로운 체크인"
+Day 17,농가 ➔ Sentier des Ocres ➔ Roussillon 점심 ➔ Goult 풍차 ➔ 농가 숙소식,7시간,차량 약 35km + 트레일 3km,렌터카 + 도보,3,MODERATE,PASS,45,한낮 숙소 휴식(Siesta) 포함으로 체력 완벽 비축
+Day 18,농가 ➔ Gordes (화요 대형시장 & 피크닉 런치) ➔ Bories ➔ Sénanque ➔ Ménerbes ➔ 농가,8시간 30분,차량 약 45km + 도보 4km,렌터카 + 도보,3,MODERATE,PASS,45,"고르드 08:45 조기 주차로 시장 인파 회피, 피크닉으로 점심 식당 대기시간 0분 달성"
+Day 19,농가 체크아웃 ➔ Avignon 주차 ➔ Les Halles 인근 점심 ➔ 숙소 체크인 ➔ 탕튀리에 ➔ Fou de Fafa 저녁,8시간,차량 약 40km + 도보 4km,렌터카 + 도보,3,MODERATE,PASS,50,아비뇽 도심 12:00 주차 및 Fou de Fafa 19:30 예약 안착
+Day 20,Les Halles 시장 ➔ Palais des Papes ➔ 광장 점심 ➔ Rocher des Doms ➔ Pont ➔ Les Cocottes 저녁,8시간,도보 약 4.5km,도보,3,MODERATE,PASS,40,"교황도시 핵심 유적 도보 관람, Les Cocottes 20:00 회랑 정원 식사"
+Day 21,Avignon ➔ Uzès (Place aux Herbes 점심) ➔ Pont du Gard ➔ Avignon 복귀,8시간,차량 약 85km + 도보 5km,렌터카 + 도보,3,MODERATE,PASS,60,퐁 뒤 가르 오후 14:30 입장으로 3시간 충분한 관람 시간 확보
+Day 22,Avignon Centre ➔ Arles (TER 18분) ➔ 원형경기장 ➔ Le Gibolin 점심 ➔ 고대극장 ➔ Avignon 복귀,8시간,TER 기차 + 도보 약 5km,철도 + 도보,3,MODERATE,PASS,45,"아를 왕복 TER 활용으로 주차 스트레스 0, Le Gibolin 12:00 오픈 시각 점심 완료"
