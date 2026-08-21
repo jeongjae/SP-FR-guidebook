@@ -358,6 +358,30 @@ def figure(img: dict | None, rel: str, role: str = "content",
             f'loading="lazy" decoding="async">')
 
 
+# 사진이 없는 장소는 카드에서 자리를 아예 비웠다. 그러면 `84px 1fr` 그리드의
+# 첫 열이 빈 채 남아 제목과 설명이 사진 칸으로 밀려 들어간다 — 니스의 식당
+# 세 곳에서 실제로 그렇게 깨졌다. 사진이 없어도 **같은 크기의 자리**를 만든다.
+PLACEHOLDER_KIND = {
+    "food": ("food", "식당·카페 사진 자리"),
+    "cafe": ("food", "카페 사진 자리"),
+}
+
+
+def photo_placeholder(p: "Place", cls: str = "") -> str:
+    """사진이 없을 때 같은 비율의 자리를 채운다. 아이콘만 두지 않고
+    접근성 이름을 함께 준다 — 아이콘은 스크린리더에 아무 말도 하지 않는다."""
+    icon, label = PLACEHOLDER_KIND.get(place_visual_kind(p), ("pin", "장소 사진 자리"))
+    return (f'<div class="{cls} thumb-empty" role="img" aria-label="{esc(label)}">'
+            f'{ic(icon)}</div>')
+
+
+def place_visual_kind(p: "Place") -> str:
+    """카드에서 쓰는 시각 분류. 새 taxonomy 를 만들지 않고 정본 값을 읽는다."""
+    if getattr(p, "food_kind", None):
+        return "cafe" if str(p.food_kind).upper() in ("CAFE", "BAKERY") else "food"
+    return "place"
+
+
 def credit_line(img: dict | None) -> str:
     if not img:
         return ""
@@ -388,6 +412,7 @@ def place_card(p: Place, rel: str, large: bool = False) -> str:
 
     if large:
         thumb = figure(img, rel, "content", "thumb", "(min-width:600px) 50vw, 100vw")
+        thumb = thumb or photo_placeholder(p, "thumb")
         return f"""<article class="card place-card-lg">
   {thumb}
   <div class="card-body">
@@ -398,6 +423,7 @@ def place_card(p: Place, rel: str, large: bool = False) -> str:
 </article>"""
 
     thumb = figure(img, rel, "thumbnail", "thumb", "84px")
+    thumb = thumb or photo_placeholder(p, "thumb")
     return f"""<article class="card place-card">
   {thumb}
   <div class="card-body" style="padding:0">

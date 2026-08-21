@@ -1,0 +1,139 @@
+﻿place_id,place_name,region,place_kind,food_kind,currently_has_photo,photo_path_or_url,license,visual_type,used_in_guide,used_in_place_detail,layout_break_risk,status,action_required
+atelier-des-lauves,Atelier des Lauves,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-cezanne-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+bastide-du-jas-de-bouffan,Bastide du Jas de Bouffan,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-bastide-du-jas-de-bouffan-01.jpg,CC BY 3.0,place,YES,YES,LOW,HAS_PHOTO,
+calanques,Calanques,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-calanques-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+carrieres-de-bibemus,Carrières de Bibémus,aix,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+cassis,Cassis 항구,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-cassis-01.jpg,Public Domain,place,YES,YES,LOW,HAS_PHOTO,
+chez-gilbert-cassis,Chez Gilbert,aix,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+cours-mirabeau,Cours Mirabeau,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-mirabeau-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+fort-saint-jean,Fort Saint-Jean,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-fort-saint-jean-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+grasse,Grasse,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-grasse-01.jpg,CC BY-SA 2.0,place,YES,YES,LOW,HAS_PHOTO,
+le-panier,Le Panier,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-le-panier-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+marseille,Marseille,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-marseille-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+montagne-sainte-victoire-terrain-des-peintres,Montagne Sainte-Victoire · Terrain des Peintres,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-montagne-sainte-victoire-terrain-des-peintres-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+mucem,Mucem,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-mucem-01.jpg,CC0 1.0,place,YES,YES,LOW,HAS_PHOTO,
+musee-granet,Musée Granet,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-granet-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+notre-dame-de-la-garde,Notre-Dame de la Garde,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-notre-dame-de-la-garde-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+patisserie-weibel,Pâtisserie Weibel,aix,spot,CAFE,NO,,,cafe,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+place-richelme-place-des-precheurs,시장 — Place Richelme · Place des Prêcheurs,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-place-richelme-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+rotonde,Rotonde,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-rotonde-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+saint-paul-de-vence,Saint-Paul-de-Vence,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-saint-paul-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+vieil-aix,Vieil Aix — 구시가지,aix,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+vieux-port-marseille,Vieux-Port,aix,spot,,YES,source/ASSETS/photos/originals/aix/aix-vieux-port-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+arenes-d-arles,Arènes d’Arles,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-arenes-arles-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+arles,Arles,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-arles-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+carrieres-des-lumieres,Carrières des Lumières,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-carrieres-des-lumieres-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+cloitre-saint-trophime,Cloître Saint-Trophime,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-cloitre-saint-trophime-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+fondation-vincent-van-gogh-arles,Fondation Vincent van Gogh Arles,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-fondation-vincent-van-gogh-arles-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+fou-de-fafa-avignon,Fou de Fafa,avignon,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+glanum,Glanum,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-glanum-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+la-roquette,La Roquette,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-la-roquette-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+le-gibolin-arles,Le Gibolin,avignon,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+les-baux-de-provence,Les Baux-de-Provence,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-les-baux-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+les-cocottes-saint-louis,Les Cocottes Saint-Louis,avignon,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+les-halles,Les Halles,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-les-halles-01.jpg,CC BY-SA 2.0,place,YES,YES,LOW,HAS_PHOTO,
+palais-des-papes,Palais des Papes,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-palais-papes-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+place-du-forum-arles,Place du Forum,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-place-du-forum-arles-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+pont-du-gard,Pont du Gard,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-pont-du-gard-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+pont-saint-benezet,Pont Saint-Bénézet,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-pont-benezet-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+rocher-des-doms,Rocher des Doms,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-rocher-doms-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+saint-paul-de-mausole,Saint-Paul-de-Mausole,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-saint-paul-de-mausole-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+saint-remy-de-provence,Saint-Rémy-de-Provence,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-saint-remy-01.jpg,CC BY 4.0,place,YES,YES,LOW,HAS_PHOTO,
+theatre-antique-arles,Théâtre antique,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-theatre-antique-01.jpg,CC BY 3.0,place,YES,YES,LOW,HAS_PHOTO,
+uzes,Uzès Place aux Herbes·구시가지,avignon,spot,,YES,source/ASSETS/photos/originals/avignon/avignon-uzes-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+bar-canete,Bar Cañete,barcelona,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+barcelona-historic-walk,Barcelona 역사도심 — Barri Gòtic·Rambla 권역,barcelona,walk,,YES,source/ASSETS/photos/originals/barcelona/barcelona-barcelona-historic-walk-01.jpg,CC BY-SA 2.0,place,NO,YES,LOW,HAS_PHOTO,
+barcelona-modernisme-walk,Barcelona Modernisme — Eixample 권역,barcelona,walk,,YES,source/ASSETS/photos/originals/barcelona/barcelona-barcelona-modernisme-walk-01.jpg,CC BY-SA 2.5,place,NO,YES,LOW,HAS_PHOTO,
+barcelona-sants,Barcelona Sants,barcelona,node,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+barri-gotic,Barri Gòtic,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-barri-gotic-01.jpg,CC BY-SA 2.0,place,YES,YES,LOW,HAS_PHOTO,
+biblioteca-de-catalunya,Biblioteca de Catalunya,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-biblioteca-catalunya-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+bodega-joan,Bodega Joan,barcelona,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+cau-ferrat,Cau Ferrat,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-cau-ferrat-01.jpg,CC BY-SA 2.5,place,YES,YES,LOW,HAS_PHOTO,
+la-paradeta-sagrada-familia,La Paradeta Sagrada Família,barcelona,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+la-zorra,La Zorra,barcelona,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+macba,MACBA,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-macba-exterior-01.jpg,Public Domain,place,YES,YES,LOW,HAS_PHOTO,
+mercat-concepcio,Mercat de la Concepció,barcelona,spot,MARKET,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+palau-de-maricel,Palau de Maricel,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-palau-maricel-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+sagrada-familia,Sagrada Família,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-sagrada-familia-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+sant-pau-recinte-modernista,Sant Pau Recinte Modernista,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-sant-pau-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+sitges,Sitges,barcelona,spot,,YES,source/ASSETS/photos/originals/barcelona/barcelona-sitges-seafront-01.jpg,CC BY-SA 3.0,place,NO,YES,LOW,HAS_PHOTO,
+calella-de-palafrugell,Calella de Palafrugell,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-calella-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+casa-marieta,Casa Marieta,girona,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+collioure,Collioure,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-collioure-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+girona-cathedral,Girona Cathedral,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-cathedral-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+girona-old-town-walk,Girona 구시가지 — Call·성벽·대성당 권역,girona,walk,,YES,source/ASSETS/photos/originals/girona/girona-girona-old-town-walk-01.jpg,CC BY-SA 3.0,place,NO,YES,LOW,HAS_PHOTO,
+mercat-del-lleo,Mercat del Lleó,girona,spot,MARKET,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+onyar,Onyar 강변,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-onyar-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+pals,Pals,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-pals-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+passeig-de-la-muralla,Passeig de la Muralla,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-passeig-de-la-muralla-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+peralada,Peralada,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-peralada-01.jpg,CC BY 3.0,place,YES,YES,LOW,HAS_PHOTO,
+peratallada,Peratallada,girona,spot,,YES,source/ASSETS/photos/originals/girona/girona-peratallada-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+abbaye-de-senanque,Abbaye de Sénanque,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-senanque-01.jpg,CC BY 3.0,place,YES,YES,LOW,HAS_PHOTO,
+bonnieux,Bonnieux,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-bonnieux-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+coustellet,Coustellet 생산자 시장,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-coustellet-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+gordes,Gordes,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-gordes-01.jpg,CC BY 3.0,place,YES,YES,LOW,HAS_PHOTO,
+goult,Goult,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-goult-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+l-isle-sur-la-sorgue,L’Isle-sur-la-Sorgue,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-sorgue-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+lourmarin,Lourmarin,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-lourmarin-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+menerbes,Ménerbes,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-menerbes-01.jpg,Public Domain,place,YES,YES,LOW,HAS_PHOTO,
+oppede-le-vieux,Oppède-le-Vieux,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-oppede-le-vieux-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+roussillon-sentier-des-ocres,Roussillon · Sentier des Ocres,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-roussillon-ocres-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+village-des-bories,Village des Bories,luberon,spot,,YES,source/ASSETS/photos/originals/luberon/luberon-bories-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+annecy,Annecy 구시가지,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-annecy-01.jpg,CC BY 3.0,place,YES,YES,LOW,HAS_PHOTO,
+bellecour,Bellecour,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-bellecour-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+cafe-comptoir-abel,Café Comptoir Abel,lyon,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+chez-mamie-lise,Chez Mamie Lise,lyon,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+croix-rousse,Croix-Rousse,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-croix-rousse-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+daniel-et-denise,Daniel et Denise,lyon,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+fourviere,Fourvière,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-fourviere-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-halles-bocuse-01.jpg,CC0 1.0,place,YES,YES,LOW,HAS_PHOTO,
+parc-de-la-tete-d-or,Parc de la Tête d'Or,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-parc-de-la-tete-d-or-01.jpg,CC0 1.0,place,YES,YES,LOW,HAS_PHOTO,
+vieux-lyon,Vieux Lyon · 트라불,lyon,spot,,YES,source/ASSETS/photos/originals/lyon/lyon-vieux-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+cannes,Cannes,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-cannes-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+cannes-walk,Cannes Forville–Suquet–Croisette Walk,nice,walk,,YES,source/ASSETS/photos/originals/nice/nice-cannes-walk-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+colline-du-chateau,Colline du Château (성채 언덕),nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-colline-chateau-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+cours-saleya,Cours Saleya,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-cours-saleya-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit,nice,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+le-rocher,Le Rocher — 모나코 구시가지,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-le-rocher-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+le-suquet,Le Suquet — 칸 구시가지,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-suquet-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+marche-de-la-liberation,Marché de la Libération,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-marche-liberation-01.webp,확인 필요 — 출처 미상,place,YES,YES,LOW,HAS_PHOTO,
+marche-forville,Marché Forville,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-forville-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+menton,Menton (멘통),nice,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+monaco,Monaco,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-monaco-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+monaco-walk,Monaco Rocher–Port–Monte Carlo Walk,nice,walk,,YES,source/ASSETS/photos/originals/nice/nice-monaco-walk-01.jpg,Public Domain,place,YES,YES,LOW,HAS_PHOTO,
+nce-t2,NCE T2,nice,node,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+nice-ville,Nice-Ville,nice,node,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+nice-walk,Nice Old Town–Castle Hill Walk,nice,walk,,YES,source/ASSETS/photos/originals/nice/nice-nice-walk-01.jpg,Public Domain,place,YES,YES,LOW,HAS_PHOTO,
+promenade-des-anglais,Promenade des Anglais,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-promenade-01.jpg,CC BY-SA 2.5,place,YES,YES,LOW,HAS_PHOTO,
+restaurant-beatrice,Restaurant & Salon de Thé Béatrice,nice,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+vieux-nice,Vieux Nice — 구시가지,nice,spot,,YES,source/ASSETS/photos/originals/nice/nice-vieux-nice-01.jpg,Public Domain,place,YES,YES,LOW,HAS_PHOTO,
+villa-ephrussi-de-rothschild,Villa Ephrussi de Rothschild,nice,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+bnf-richelieu,BnF Richelieu,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-bnf-richelieu-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+bouillon-chartier-montparnasse,Bouillon Chartier Montparnasse,paris,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+boulangerie-pichard,Boulangerie Pichard,paris,spot,BAKERY,NO,,,cafe,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-bourse-commerce-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+cafe-du-commerce,Café du Commerce,paris,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+centre-pompidou,Centre Pompidou,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-centre-pompidou-01.jpg,확인 필요 — 출처 미상,place,YES,YES,LOW,HAS_PHOTO,
+giverny,Giverny,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-giverny-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+grand-palais,Grand Palais,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-grand-palais-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+latin-quarter,Latin Quarter,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-latin-quarter-01.jpg,CC BY-SA 2.0,place,YES,YES,LOW,HAS_PHOTO,
+le-grand-pan,Le Grand Pan,paris,spot,RESTAURANT,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+le-marais,Le Marais,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-marais-01.jpg,CC BY 2.0,place,YES,YES,LOW,HAS_PHOTO,
+marche-convention,Marché Convention,paris,spot,MARKET,NO,,,food,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+montmartre-south-pigalle,Montmartre · South Pigalle,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-montmartre-sopi-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
+montorgueil,Montorgueil,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-montorgueil-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+musee-carnavalet,Musée Carnavalet,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-d-art-moderne-de-paris,Musée d'Art Moderne de Paris,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-d-orsay,Musée d'Orsay,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-orsay-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+musee-de-l-orangerie,Musée de l'Orangerie,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-musee-de-l-orangerie-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+musee-du-louvre,Musée du Louvre,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-louvre-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+musee-du-luxembourg,Musée du Luxembourg,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-guimet,Musée Guimet,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-gustave-moreau,Musée Gustave Moreau,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-jacquemart-andre,Musée Jacquemart-André,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-marmottan-monet,Musée Marmottan Monet,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-musee-marmottan-monet-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+musee-picasso-paris,Musée Picasso Paris,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+musee-rodin,Musée Rodin,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+notre-dame-de-paris,Notre-Dame de Paris,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-notre-dame-01.jpg,CC BY-SA 3.0,place,YES,YES,LOW,HAS_PHOTO,
+petit-palais,Petit Palais,paris,spot,,NO,,,place,YES,YES,LOW,FALLBACK_ONLY,Commons 후보 조사 중 / placeholder 적용됨
+versailles,Versailles,paris,spot,,YES,source/ASSETS/photos/originals/paris/paris-versailles-01.jpg,CC BY-SA 4.0,place,YES,YES,LOW,HAS_PHOTO,
