@@ -1,0 +1,132 @@
+﻿region,card_type,place_id,has_photo,has_placeholder,placeholder_label,status
+aix,place-card-lg,atelier-des-lauves,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card-lg,calanques,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card-lg,cassis,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card-lg,cours-mirabeau,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card-lg,place-richelme-place-des-precheurs,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card-lg,vieil-aix,NO,YES,장소 사진 자리,FALLBACK_OK
+aix,place-card,patisserie-weibel,NO,YES,카페 사진 자리,FALLBACK_OK
+aix,place-card,chez-gilbert-cassis,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+aix,place-card,bastide-du-jas-de-bouffan,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,carrieres-de-bibemus,NO,YES,장소 사진 자리,FALLBACK_OK
+aix,place-card,grasse,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,marseille,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,vieux-port-marseille,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,le-panier,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,mucem,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,fort-saint-jean,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,notre-dame-de-la-garde,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,montagne-sainte-victoire-terrain-des-peintres,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,musee-granet,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,rotonde,YES,NO,명소·관광,HAS_PHOTO
+aix,place-card,saint-paul-de-vence,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card-lg,les-halles,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card-lg,palais-des-papes,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card-lg,pont-saint-benezet,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card-lg,pont-du-gard,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card-lg,rocher-des-doms,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card-lg,uzes,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,arles,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,arenes-d-arles,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,theatre-antique-arles,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,fou-de-fafa-avignon,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+avignon,place-card,les-cocottes-saint-louis,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+avignon,place-card,le-gibolin-arles,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+avignon,place-card,carrieres-des-lumieres,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,glanum,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,les-baux-de-provence,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,saint-paul-de-mausole,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,saint-remy-de-provence,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,place-du-forum-arles,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,cloitre-saint-trophime,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,fondation-vincent-van-gogh-arles,YES,NO,명소·관광,HAS_PHOTO
+avignon,place-card,la-roquette,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card-lg,barri-gotic,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card-lg,cau-ferrat,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card-lg,sagrada-familia,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card-lg,sant-pau-recinte-modernista,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card-lg,bodega-joan,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+barcelona,place-card-lg,la-paradeta-sagrada-familia,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+barcelona,place-card,bar-canete,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+barcelona,place-card,biblioteca-de-catalunya,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card,macba,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card,palau-de-maricel,YES,NO,명소·관광,HAS_PHOTO
+barcelona,place-card,mercat-concepcio,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+barcelona,place-card,la-zorra,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+girona,place-card-lg,calella-de-palafrugell,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card-lg,collioure,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card-lg,girona-cathedral,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card-lg,passeig-de-la-muralla,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card-lg,onyar,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card-lg,peratallada,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card,casa-marieta,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+girona,place-card,pals,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card,peralada,YES,NO,명소·관광,HAS_PHOTO
+girona,place-card,mercat-del-lleo,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+luberon,place-card-lg,coustellet,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card-lg,gordes,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card-lg,lourmarin,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card-lg,roussillon-sentier-des-ocres,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,abbaye-de-senanque,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,bonnieux,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,goult,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,l-isle-sur-la-sorgue,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,menerbes,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,oppede-le-vieux,YES,NO,명소·관광,HAS_PHOTO
+luberon,place-card,village-des-bories,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card-lg,annecy,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card-lg,croix-rousse,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card-lg,fourviere,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card-lg,halles-de-lyon-paul-bocuse,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card-lg,vieux-lyon,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card-lg,cafe-comptoir-abel,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+lyon,place-card,daniel-et-denise,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+lyon,place-card,chez-mamie-lise,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+lyon,place-card,bellecour,YES,NO,명소·관광,HAS_PHOTO
+lyon,place-card,parc-de-la-tete-d-or,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card-lg,colline-du-chateau,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card-lg,cours-saleya,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card-lg,le-rocher,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card-lg,le-suquet,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card-lg,marche-forville,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card-lg,menton,NO,YES,장소 사진 자리,FALLBACK_OK
+nice,place-card,nice-walk,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,cannes-walk,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,monaco-walk,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,promenade-des-anglais,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,vieux-nice,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,le-figuier-de-saint-esprit,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+nice,place-card,restaurant-beatrice,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+nice,place-card,cannes,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,marche-de-la-liberation,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,monaco,YES,NO,명소·관광,HAS_PHOTO
+nice,place-card,villa-ephrussi-de-rothschild,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card-lg,bourse-de-commerce-pinault-collection,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card-lg,grand-palais,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card-lg,latin-quarter,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card-lg,le-marais,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card-lg,montmartre-south-pigalle,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card-lg,musee-carnavalet,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-d-art-moderne-de-paris,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-d-orsay,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-de-l-orangerie,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-du-louvre,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-du-luxembourg,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-guimet,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-gustave-moreau,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-jacquemart-andre,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-marmottan-monet,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-picasso-paris,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-rodin,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,notre-dame-de-paris,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,petit-palais,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,versailles,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,boulangerie-pichard,NO,YES,카페 사진 자리,FALLBACK_OK
+paris,place-card,marche-convention,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+paris,place-card,cafe-du-commerce,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+paris,place-card,le-grand-pan,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+paris,place-card,bouillon-chartier-montparnasse,NO,YES,식당·카페 사진 자리,FALLBACK_OK
+paris,place-card,bnf-richelieu,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,centre-pompidou,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,giverny,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,montorgueil,YES,NO,명소·관광,HAS_PHOTO
