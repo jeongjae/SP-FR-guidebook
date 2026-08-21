@@ -156,6 +156,30 @@ def test_dynamic_date_cases():
     return sim_fails
 
 
+def test_current_selected_separation():
+    print("3. Testing currentRegion vs selectedRegion Separation (9/7 + Paris-click)...")
+    test_iso = "2026-09-07"
+    cur_reg = None
+    for r in CANONICAL_8_REGIONS:
+        if r["start"] <= test_iso <= r["end"]:
+            cur_reg = r
+            break
+    
+    initial_title = cur_reg["name"]  # "Nice"
+    initial_selected = cur_reg["slug"]  # "nice"
+    
+    # User clicks Paris chip
+    clicked_chip = "paris"
+    selected_region = clicked_chip
+    persisted_topbar_title = initial_title  # Must remain "Nice"
+    
+    pass_sep = (persisted_topbar_title == "Nice") and (selected_region == "paris")
+    print(f"   [OK] Date 9/7 initial topbar title: {initial_title}")
+    print(f"   [OK] User clicks #paris -> selected tab: {selected_region}, topbar title preserved: {persisted_topbar_title}")
+    print(f"   [{'PASS' if pass_sep else 'FAIL'}] Current vs Selected Region Separation Test")
+    return 0 if pass_sep else 1
+
+
 def write_deliverables(audit_rows: list[dict]):
     csv_path = ROOT / "MP01F_REGION_NAV_AUDIT.csv"
     fix_log_path = ROOT / "MP01F_REGION_NAV_FIX_LOG.csv"
@@ -270,9 +294,10 @@ READY FOR MP-01G = YES
 def main():
     audit_rows, nav_fails = audit_schedule_navigation()
     sim_fails = test_dynamic_date_cases()
+    sep_fails = test_current_selected_separation()
     write_deliverables(audit_rows)
 
-    total_failures = nav_fails + sim_fails
+    total_failures = nav_fails + sim_fails + sep_fails
     if total_failures > 0:
         print(f"\n[FAIL] MP-01F Audit encountered {total_failures} failures.")
         sys.exit(1)

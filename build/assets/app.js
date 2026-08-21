@@ -302,16 +302,22 @@
         }
       }
 
-      function updateActiveTab(slug, titlePrefix) {
+      // 1. Set topbar title strictly to currentRegion based on device date
+      if (curReg) {
         var tbTitle = document.querySelector('.topbar .tb-title');
-        var reg = regBySlug[slug];
-        if (tbTitle && reg) {
-          if (titlePrefix) {
-            tbTitle.textContent = titlePrefix + ' · ' + reg.name;
+        if (tbTitle) {
+          if (isPreTrip) {
+            tbTitle.textContent = 'NEXT · ' + curReg.name;
+          } else if (isPostTrip) {
+            tbTitle.textContent = 'Trip Complete · ' + curReg.name;
           } else {
-            tbTitle.textContent = reg.name;
+            tbTitle.textContent = curReg.name;
           }
         }
+      }
+
+      // 2. Manage selected/active region tab (independent of currentRegion title)
+      function selectTab(slug) {
         var allTabs = document.querySelectorAll('.tabs a[href^="#"]');
         for (var i = 0; i < allTabs.length; i++) {
           allTabs[i].removeAttribute('aria-current');
@@ -325,16 +331,17 @@
         }
       }
 
+      // Initially select currentRegion tab
       if (curReg) {
-        var prefix = isPreTrip ? 'NEXT' : (isPostTrip ? 'Trip Complete' : '');
-        updateActiveTab(curReg.slug, prefix);
+        selectTab(curReg.slug);
       }
 
+      // When user clicks a region chip, select that tab without changing topbar current-region title
       var tabLinks = document.querySelectorAll('.tabs a[href^="#"]');
       for (var tIdx = 0; tIdx < tabLinks.length; tIdx++) {
         tabLinks[tIdx].addEventListener('click', function () {
           var targetSlug = this.getAttribute('href').replace('#', '');
-          updateActiveTab(targetSlug, '');
+          selectTab(targetSlug);
         });
       }
     } catch (err) {
