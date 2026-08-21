@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SP-FR region essentials",
+  "type": "object",
+  "required": ["schemaVersion", "regions"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "regions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["staySummary", "lifeEssentials", "arrivalStrategy", "departureStrategy"],
+        "properties": {
+          "staySummary": {"type": "string", "minLength": 1, "maxLength": 360},
+          "lifeEssentials": {
+            "type": "array", "minItems": 1, "maxItems": 4,
+            "items": {"type": "string", "minLength": 1, "maxLength": 180}
+          },
+          "arrivalStrategy": {"type": "string", "minLength": 1, "maxLength": 300},
+          "departureStrategy": {"type": "string", "minLength": 1, "maxLength": 300},
+          "lateReturnRule": {"type": "string", "maxLength": 220},
+          "sourceRefs": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
