@@ -9,7 +9,7 @@
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
-  "totalDistance": "TER 왕복 + 마르세유 시내 대중교통/도보 약 6km",
+  "totalDistance": "약 74km · TER 왕복 + 마르세유 시내 대중교통·도보",
   "fatigue": "4",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
@@ -162,7 +162,7 @@
       "mode": "train",
       "duration": "TER 36분 + 도보 12분",
       "distance": "약 32km",
-      "line": null,
+      "line": "TER Aix-en-Provence Centre ↔ Marseille Saint-Charles",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -198,7 +198,7 @@
       "mode": "bus",
       "duration": "RTM 버스 60번 약 15분",
       "distance": "약 2.5km",
-      "line": null,
+      "line": "RTM 60 Vieux-Port → Notre-Dame de la Garde",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -207,7 +207,7 @@
       "mode": "bus",
       "duration": "버스/도보 약 20분",
       "distance": "약 2.0km",
-      "line": null,
+      "line": "RTM bus Notre-Dame de la Garde → Vallon des Auffes · 당일 경로 확인",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -216,7 +216,7 @@
       "mode": "bus",
       "duration": "버스 83번 + 지하철 M1 약 25분",
       "distance": "약 3.8km",
-      "line": null,
+      "line": "RTM 83 + Metro M1 → Marseille Saint-Charles",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -225,7 +225,7 @@
       "mode": "train",
       "duration": "TER 36분 + 도보 10분",
       "distance": "약 32km",
-      "line": null,
+      "line": "TER Marseille Saint-Charles → Aix-en-Provence Centre",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -235,13 +235,13 @@
     "마르세유 시내 도보 (Vieux-Port ➔ Le Panier ➔ Fort Saint-Jean ➔ Mucem)"
   ],
   "food": [
-    "토요시장 피크닉",
-    "19:45 마지막 저녁 (예약 1곳)"
+    "Vieux-Port에서 생선·해산물 점심",
+    "Aix 귀환 후 숙소권에서 가벼운 저녁"
   ],
   "highlights": [
-    "토요 큰 시장 09:10",
-    "Atelier 예약 15분 전 도착",
-    "스케치·수영 분리 후 16:00 합류"
+    "08:50 전후 Aix Centre발 TER",
+    "Vieux-Port·Le Panier·Mucem 도보축",
+    "RTM 60번으로 Notre-Dame de la Garde"
   ],
   "backup": "1. 우천 시: Vieux-Port/Le Panier 도보를 단축하고 Mucem 상설/특별전 관람을 2.5시간으로 확대\n2. 폭염 시: 야외 보행을 줄이고 점심 후 RTM 버스 60번으로 노트르담 대성당 이동\n3. TER 지연/파행 시: Aix ↔ Marseille L50 직행 버스 코치(Gare Routière) 백업 활용\n4. 피로 시: Vallon des Auffes를 생략하고 Vieux-Port 카페 휴식 후 18:00 조기 귀환",
   "map": {
