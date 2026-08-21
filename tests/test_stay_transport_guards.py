@@ -185,10 +185,18 @@ class StayTransportGuards(unittest.TestCase):
         day15_text = json.dumps(day15, ensure_ascii=False)
         for token in ("TER Aix-en-Provence Centre", "RTM 60", "RTM 83", "Metro M1"):
             self.assertIn(token, day15_text)
+        for stale in ("토요 큰 시장", "Atelier 예약", "스케치·수영"):
+            self.assertNotIn(stale, day15_text)
+        self.assertEqual(day15["highlights"], [
+            "08:50 전후 Aix Centre발 TER",
+            "Vieux-Port·Le Panier·Mucem 도보축",
+            "RTM 60번으로 Notre-Dame de la Garde",
+        ])
         self.assertNotIn("Ligne 50", day15_text)
         lines = {(leg["from"], leg["to"]): leg["line"] for leg in day15["legs"]}
         self.assertIsNone(lines[("vieux-port-marseille", "le-panier")])
         self.assertIsNone(lines[("le-panier", "fort-saint-jean")])
+        self.assertIsNone(lines[("fort-saint-jean", "marseille-lunch")])
         self.assertEqual(lines[("marseille-lunch", "notre-dame-de-la-garde")],
                          "RTM 60 Vieux-Port → Notre-Dame de la Garde")
         self.assertEqual(lines[("vallon-des-auffes", "marseille-station")],
@@ -196,8 +204,19 @@ class StayTransportGuards(unittest.TestCase):
         chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
                    "07_Aix_en_Provence_v2.0.md").read_text(encoding="utf-8")
         for stale in ("9/11 Marseille", "Day 14(9/11)는 Marseille",
-                      "Ligne 50 고속버스 이용", "Day 15에 그가 마지막"):
+                      "Ligne 50 고속버스 이용", "Day 15에 그가 마지막",
+                      "Marseille — 오래된 항구", "시장, Atelier de Cézanne",
+                      "Day 15 스케치", "Marseille 버스"):
             self.assertNotIn(stale, chapter, f"Aix 챕터에 폐기된 일정·교통 권고가 남음: {stale}")
+
+        expected_modes = {
+            12: {"car", "walk"}, 13: {"walk"}, 14: {"car", "walk"},
+            15: {"train", "bus", "walk"}, 16: {"car"},
+        }
+        for day, expected in expected_modes.items():
+            payload = json.loads((ROOT / "data" / "daily-cards" /
+                                  f"day-{day:02d}.json").read_text(encoding="utf-8"))
+            self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
 
 
 if __name__ == "__main__":
