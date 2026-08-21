@@ -1,0 +1,9 @@
+day,stop_id,stop_name,place_ref,target_exists,link_status,menu_field_present,price_coverage,notes
+Day 08,cours-saleya,Cours Saleya 시장,cours-saleya,YES,VALID,"소카(Socca), 신선 무화과, 에스프레소",€3~€10,시장 조달 및 즉석 소카
+Day 08,vieux-nice-lunch,구시가지 점심 — 니스와즈 요리,vieux-nice,YES,VALID,"살라드 니스와즈, 다우브(소고기 스튜), 팍시(Farcis)",€15~€30,Acchiardo / Lou Balico
+Day 09,antibes-old-town,Vieil Antibes & Marché Provençal,None,N/A,VALID,"프로방스 과일, 올리브, 에스프레소",€5~€12,앙티브 전통시장 조달
+Day 09,le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit 점심 (WISH-01),le-figuier-de-saint-esprit,YES,VALID,"시그니처 오징어 먹물 카넬로니, 런치 포뮬러(€55~€75), Menu du Figuier(€118)",€55~€118,WISH-01 미쉐린 1스타 정본 연결
+Day 10,monaco-port-lunch,Monaco Port Hercule & 점심,monaco,YES,VALID,"바르바주앙(Barbajuan), 파스타, 포카치아",€10~€25,라 콘다민 시장 및 항구
+Day 10,menton-dinner,Menton 저녁 — Le Petit Port,menton,YES,VALID,"구운 생선 요리, 해산물 리조또",€30~€60,구항구 테라스 해산물
+Day 11,liberation-market,Marché de la Libération,marche-de-la-liberation,YES,VALID,"프로방스 제철 과일, 에스프레소",€5~€15,화요일 로컬 부엌시장
+Day 11,restaurant-beatrice,Restaurant & Salon de Thé Béatrice 점심 (WISH-02),restaurant-beatrice,YES,VALID,"Salade Béatrice(훈제연어·감귤), 제철 생선 요리(대구/도미 구이), 트로페시엔 타르트",€24~€45,WISH-02 에프뤼시 빌라 테라스 정본 연결

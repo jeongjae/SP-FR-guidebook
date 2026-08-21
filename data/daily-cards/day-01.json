@@ -29,7 +29,7 @@
       "lng": 2.079047,
       "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 택시 승강장으로 이동",
       "menu": null,
-      "reservation": "예약완료 OZ511 (FRRL7R) — ICN T2 11:50 출발",
+      "reservation": "예약완료 OZ511 ([CONFIRMED]) — ICN T2 11:50 출발",
       "optional": false,
       "place_ref": null
     },
@@ -111,7 +111,7 @@
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-1",
-    "항공권 확정 (2026-08-10 반영): OZ511 ICN T2 11:50 → BCN T1 19:10, 예약 FRRL7R",
+    "항공권 확정 (2026-08-10 반영): OZ511 ICN T2 11:50 → BCN T1 19:10, 예약 [CONFIRMED]",
     "source/ASSETS/75_Execution_Maps/Barcelona_Execution_Map_v0.2.kml",
     "routes/day-01-driving-osrm.json (공항→확정 숙소 11.6km)"
   ]

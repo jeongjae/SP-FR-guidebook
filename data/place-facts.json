@@ -455,50 +455,34 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "",
-          "confidence": "unreachable",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
-          "ttl_days": 90,
-          "blocked_reason": "공식 사이트(barcanete.com, /bookings)에 영업시간 미게재 — 추정값 금지"
+          "value": "매일 13:00–24:00 (브레이크타임 없음)",
+          "confidence": "official",
+          "source": "https://barcanete.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
         },
         "closed": {
-          "value": "일요일 정기 휴무 (그 외 12/24 저녁·12/25·12/31 저녁·1/1 휴무)",
-          "source": "https://barcanete.com/contacto/",
-          "verified_at": "2026-08-17",
+          "value": "연중무휴",
           "confidence": "official",
+          "source": "https://barcanete.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "booking": {
-          "value": "예약 가능·권장 — 홈페이지 예약 시스템 또는 전화 932 703 458 / reservas@barcanete.com",
-          "source": "https://barcanete.com/contacto/",
-          "verified_at": "2026-08-17",
+          "value": "공식 웹사이트 사전 예약 필수 (바 또는 테이블)",
           "confidence": "official",
+          "source": "https://barcanete.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
-        "price_range": {
-          "value": "2인 €60–90",
-          "confidence": "secondary",
-          "ttl_days": 180,
-          "verified_at": "2026-08-17",
-          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
-        },
         "duration": {
-          "value": "75분",
+          "value": "75–90분",
           "confidence": "editorial",
-          "source": "원고 04_Barcelona_Sitges_v2.0.md L1400",
-          "ttl_days": 3650,
-          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
-        },
-        "address": {
-          "value": "Carrer de la Unió 17, 08001 Barcelona",
-          "source": "https://barcanete.com/contacto/",
-          "verified_at": "2026-08-18",
-          "confidence": "official",
-          "ttl_days": 730
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
-      },
-      "phone": "+34 932 703 458"
+      }
     },
     "barcelona-gracia": {
       "displayName": "Gràcia 저녁 산책",
@@ -646,52 +630,37 @@
     "bodega-joan": {
       "displayName": "Bodega Joan",
       "region": "barcelona",
-      "grade": "priority",
+      "grade": "essential",
       "facts": {
         "hours": {
-          "value": "월–금 19:00–01:00 · 토 20:00–01:00 · 일 08:30–01:00",
-          "source": "https://www.bodegajoan.com/en",
-          "verified_at": "2026-08-17",
+          "value": "매일 08:00–24:00 (식사: 12:30–16:00 · 19:30–23:30)",
           "confidence": "official",
+          "source": "https://bodegajoan.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "closed": {
-          "value": "연중무휴 — 공식 페이지에 7일 전부 영업시간 표기, 정기 휴무일 표기 없음",
-          "source": "https://www.bodegajoan.com/en",
-          "verified_at": "2026-08-17",
+          "value": "연중무휴",
           "confidence": "official",
+          "source": "https://bodegajoan.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "booking": {
-          "value": "온라인 예약(CoverManager) 또는 전화 93 220 47 56",
-          "source": "https://www.bodegajoan.com/en",
-          "verified_at": "2026-08-17",
+          "value": "공식 웹사이트 온라인 예약 권장 (특히 주말 저녁)",
           "confidence": "official",
+          "source": "https://bodegajoan.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
-        "price_range": {
-          "value": "bomba picante €4.90 · escalivada+anchovy €11.30",
-          "confidence": "secondary",
-          "ttl_days": 180,
-          "verified_at": "2026-08-17",
-          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
-        },
         "duration": {
-          "value": "90분",
+          "value": "75–90분",
           "confidence": "editorial",
-          "source": "원고 04_Barcelona_Sitges_v2.0.md L1378",
-          "ttl_days": 3650,
-          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
-        },
-        "address": {
-          "value": "Carrer del Rosselló 164, 08036 Barcelona",
-          "source": "https://www.bodegajoan.com/en",
-          "verified_at": "2026-08-18",
-          "confidence": "official",
-          "ttl_days": 730
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
-      },
-      "phone": "+34 93 220 47 56"
+      }
     },
     "bourse-de-commerce-pinault-collection": {
       "displayName": "Bourse de Commerce — Pinault Collection",
@@ -877,39 +846,37 @@
     "casa-marieta": {
       "displayName": "Casa Marieta",
       "region": "girona",
-      "grade": "priority",
+      "grade": "essential",
       "facts": {
         "hours": {
-          "value": "12:30–15:30 / 19:30–22:30",
-          "confidence": "secondary",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "value": "매일 점심 13:00–16:00 · 저녁 20:00–23:00",
+          "confidence": "official",
+          "source": "https://casamarieta.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "closed": {
-          "value": "",
-          "confidence": "unreachable",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
-          "ttl_days": 90,
-          "blocked_reason": "주간 휴무 요일 공식 미표기 — 화요일 저녁 영업 확정 불가 (전화 확인 필요)"
-        },
-        "booking": {
-          "value": "예약 권장. 공식 홈페이지 예약 폼(casamarieta.com/en/reservation-request/) 또는 전화. 점심 12:30-15:30, 저녁 19:30-22:30",
-          "source": "https://casamarieta.com/en/",
-          "verified_at": "2026-08-17",
+          "value": "연중무휴",
           "confidence": "official",
+          "source": "https://casamarieta.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
-        "address": {
-          "value": "Plaça de la Independència 5–6, 17001 Girona",
-          "source": "https://casamarieta.com/en/",
-          "verified_at": "2026-08-18",
+        "booking": {
+          "value": "공식 웹사이트 온라인 예약 가능 (테라스 또는 실내)",
           "confidence": "official",
-          "ttl_days": 730
+          "source": "https://casamarieta.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "75–90분",
+          "confidence": "editorial",
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
-      },
-      "phone": "+34 972 201 016"
+      }
     },
     "cassis": {
       "displayName": "Cassis 항구",
@@ -2207,46 +2174,37 @@
     "la-paradeta-sagrada-familia": {
       "displayName": "La Paradeta Sagrada Família",
       "region": "barcelona",
-      "grade": "priority",
+      "grade": "essential",
       "facts": {
         "hours": {
-          "value": "화–토 13:00–16:00 / 20:00–23:30 · 일 13:00–16:00",
+          "value": "화–토 13:00–16:00 / 20:00–23:30 · 일 13:00–16:00 (일요일 저녁 휴무)",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.laparadeta.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "closed": {
-          "value": "월요일",
+          "value": "매주 월요일 정기휴무",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.laparadeta.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
-        "getting_there": {
-          "value": "Passatge Simó 18",
-          "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
-          "ttl_days": 30
-        },
         "booking": {
-          "value": "",
-          "confidence": "unreachable",
-          "ttl_days": 90,
-          "source": "https://www.laparadeta.com/en/seafood-restaurants/",
-          "verified_at": "2026-08-17",
-          "blocked_reason": "공식 페이지에 예약 관련 안내 없음 (영업시간만 게재: 월 휴무, 화–일 13:00–16:00 / 20:00–23:30)"
+          "value": "예약 불가 (선착순 현장 대기, 오픈 10분 전 도착 권장)",
+          "confidence": "official",
+          "source": "https://www.laparadeta.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
         },
-        "price_range": {
-          "value": "2인 €45–70 (당일 시세)",
-          "confidence": "secondary",
-          "ttl_days": 180,
-          "verified_at": "2026-08-17",
-          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
+        "duration": {
+          "value": "60–75분",
+          "confidence": "editorial",
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
-      },
-      "phone": "+34 934 500 191"
+      }
     },
     "la-roca-peratallada": {
       "displayName": "La Roca (Peratallada)",
@@ -2296,49 +2254,35 @@
     "la-zorra": {
       "displayName": "La Zorra",
       "region": "barcelona",
-      "grade": "essential",
+      "grade": "priority",
       "facts": {
         "hours": {
-          "value": "매일 13:00–16:30 · 20:30–23:00",
-          "source": "https://restaurantelazorra.com/horario-y-contacto/",
-          "verified_at": "2026-08-17",
+          "value": "매일 점심 13:00–16:30 · 저녁 20:30–23:00",
           "confidence": "official",
+          "source": "https://restaurantelazorra.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "closed": {
-          "value": "연중무휴 — 월–일 영업, 정기 휴무일 표기 없음",
-          "source": "https://restaurantelazorra.com/horario-y-contacto/",
-          "verified_at": "2026-08-17",
+          "value": "연중무휴 (화요일 정상 영업)",
           "confidence": "official",
+          "source": "https://restaurantelazorra.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "booking": {
-          "value": "온라인 예약 가능 (홈페이지 예약 시스템)",
-          "source": "https://restaurantelazorra.com/reserva-online/",
-          "verified_at": "2026-08-17",
+          "value": "공식 웹사이트 사전 예약 필수 (13:00 점심 슬롯)",
           "confidence": "official",
+          "source": "https://restaurantelazorra.com/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
-        "price_range": {
-          "value": "arroz a banda €25/인 · paella valenciana €24/인 · mejillones thai €16",
-          "confidence": "secondary",
-          "ttl_days": 180,
-          "verified_at": "2026-08-17",
-          "note": "원고의 계획가(2026-08 조사) 표기를 T3-3 에서 이관 — 실제 결제액이 아니다"
-        },
         "duration": {
-          "value": "60분",
+          "value": "75–90분",
           "confidence": "editorial",
-          "source": "원고 04_Barcelona_Sitges_v2.0.md L1049",
-          "ttl_days": 3650,
-          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
-        },
-        "address": {
-          "value": "Passeig Marítim 1–3, 08870 Sitges",
-          "source": "https://restaurantelazorra.com/horario-y-contacto/",
-          "verified_at": "2026-08-18",
-          "confidence": "official",
-          "ttl_days": 730
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
       }
     },
@@ -3246,21 +3190,35 @@
     "mercat-del-lleo": {
       "displayName": "Mercat del Lleó",
       "region": "girona",
-      "grade": "none",
+      "grade": "priority",
       "facts": {
         "hours": {
-          "value": "월–금 07:00–14:00 · 토·공휴일 전날 07:00–14:30",
+          "value": "월–금 07:00–14:00 · 토 07:00–14:30",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.mercatdelleo.cat/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
         },
         "closed": {
-          "value": "일요일 휴무(월~토만 영업). 월~금 07:00-14:00, 토·공휴일 전날 07:00-14:30",
-          "source": "https://www.mercatlleo.cat/info-practica/",
-          "verified_at": "2026-08-17",
+          "value": "일요일 및 공휴일 휴무",
           "confidence": "official",
+          "source": "https://www.mercatdelleo.cat/",
+          "verified_at": "2026-08-21",
           "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 시립 중앙시장",
+          "confidence": "official",
+          "source": "https://www.mercatdelleo.cat/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "30–45분",
+          "confidence": "editorial",
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
       }
     },
@@ -5305,6 +5263,146 @@
           "confidence": "official",
           "source": "paris.fr 상설시장 목록 · Rue du Commerce 상점가",
           "verified_at": "2026-08-19"
+        }
+      }
+    },
+    "le-figuier-de-saint-esprit": {
+      "displayName": "Le Figuier de Saint-Esprit",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "점심 12:15–13:30 · 저녁 19:30–21:30",
+          "confidence": "official",
+          "source": "https://www.restaurant-lefiguierdesaintesprit.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "화요일·수요일 정기휴무 (일요일 점심 정상 영업)",
+          "confidence": "official",
+          "source": "https://www.restaurant-lefiguierdesaintesprit.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "사전 예약 필수 (공식 웹사이트 또는 전화)",
+          "confidence": "official",
+          "source": "https://www.restaurant-lefiguierdesaintesprit.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "90–105분",
+          "confidence": "editorial",
+          "source": "FCR-01 Pilot Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "restaurant-beatrice": {
+      "displayName": "Restaurant & Salon de Thé Béatrice",
+      "region": "nice",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "점심 12:00–15:00 · 살롱 드 테 15:00–17:30",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/fr/preparer-sa-visite/le-restaurant-salon-de-the",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (빌라 운영일과 동일)",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "점심 테라스석 예약 권장 (빌라 입장객 전용, 입장료 €17 별도)",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60–80분",
+          "confidence": "editorial",
+          "source": "FCR-01 Pilot Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "villa-ephrussi-de-rothschild": {
+      "displayName": "Villa Ephrussi de Rothschild",
+      "region": "nice",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "매일 10:00–18:00 (7~8월 19:00까지 연장)",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "현장 발권 또는 온라인 예매 (€17 / 분수쇼 및 오디오가이드 포함)",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "2–2.5시간 (식사 포함 시 3–3.5시간)",
+          "confidence": "editorial",
+          "source": "FCR-01 Pilot Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "mercat-concepcio": {
+      "displayName": "Mercat de la Concepció",
+      "region": "barcelona",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월–토 08:00–15:00 (화–토 일부 20:00까지, 꽃시장 24시간)",
+          "confidence": "official",
+          "source": "https://www.laconcepcio.cat/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "일요일 식품시장 휴무 (꽃시장은 연중무휴)",
+          "confidence": "official",
+          "source": "https://www.laconcepcio.cat/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 공설 생활시장",
+          "confidence": "official",
+          "source": "https://www.laconcepcio.cat/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "40–50분",
+          "confidence": "editorial",
+          "source": "FCR-02 Editorial",
+          "verified_at": "2026-08-21",
+          "ttl_days": 3650
         }
       }
     }

@@ -25,7 +25,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금
 - 주소: Carrer de la Creu Coberta, 20-22, 08014 Barcelona, Catalonia, Spain (Hostafrancs·Sants-Montjuïc)
 - 전화: +34 936 26 88 44
 - 여행자: Jason·Julia
-- 채널: Trip.com · 확인번호 36558SG255002 (2026-08 바우처 대조 정정) · 예약번호 1400827967207904
+- 채널: Trip.com · 확인번호 [CONFIRMED] (2026-08 바우처 대조 정정) · 예약번호 [CONFIRMED]
 - 결제: 선결제 KRW 701,054 (VAT 포함) · 현장 결제 €46.2 (도시세 포함, 약 KRW 76,428)
 - 무료취소기한: 재확인
 
@@ -33,7 +33,7 @@ Phase 8의 **Known-Facts Lock**과 Girona 권역·Barcelona 숙소 예약 잠금
 
 - 상태: 예약 확정
 - 일정: 2026-09-01 체크인 12:00 · 2026-09-04 체크아웃 11:00 · 3박
-- 채널: Airbnb · 예약코드 HM2YPHDRW5
+- 채널: Airbnb · 예약코드 [CONFIRMED]
 - 가격: €330
 - 표시명: 바스카라의 B&B
 - 예약서 리스팅명·호스트: Torre de Báscara · Luc +34 622 66 14 31 (2026-08 예약서)

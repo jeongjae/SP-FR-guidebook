@@ -1,0 +1,11 @@
+day,meal_slot,category,planned_venue,place_ref,selection_origin,meal_role,feasibility_status,backup_plan
+Day 07,Dinner,Casual / Rest,숙소 인근 캐주얼 식당 또는 자가 조리,palais-alzira,RECOMMENDED,PRIMARY,VERIFIED,슈퍼마켓 간단식 조달
+Day 08,Lunch,Traditional Nice,구시가지 점심 — 니스와즈 요리,vieux-nice,RECOMMENDED,PRIMARY,VERIFIED,Chez Acchiardo / Lou Balico / Cours Saleya 소카
+Day 08,Dinner,Traditional Nice,La Table Alziari 또는 Chez Pipo,vieux-nice,RECOMMENDED,PRIMARY,VERIFIED,림피아 항구 테라스 식당
+Day 09,Lunch,Fine Dining,Le Figuier de Saint-Esprit (WISH-01),le-figuier-de-saint-esprit,WISH,PRIMARY,VERIFIED,Vieil Antibes Marché Provençal 인근 비스트로
+Day 09,Dinner,Light / Home,숙소 복귀 후 가벼운 로컬 식사 또는 숙소식,palais-alzira,RECOMMENDED,PRIMARY,VERIFIED,니스 시내 카페 테라스
+Day 10,Lunch,Market / Casual,Monaco Port Hercule & Marché de La Condamine,monaco,RECOMMENDED,PRIMARY,VERIFIED,Café de Paris Monte-Carlo / 라 콘다민 시장
+Day 10,Dinner,Seafood,Menton 구항구 Le Petit Port,menton,RECOMMENDED,PRIMARY,VERIFIED,Le Bistrot du Port / 니스 조기 복귀
+Day 11,Lunch,Villa Ocean View,Restaurant & Salon de Thé Béatrice (WISH-02),restaurant-beatrice,WISH,PRIMARY,VERIFIED,Marché de la Libération 시장식 / 생장캅페라 항구 비스트로
+Day 11,Dinner,Home / Rest,숙소 자가 조리 (리베라시옹 시장 식재료),palais-alzira,RECOMMENDED,SELF_CATERING,VERIFIED,프롬나드 인근 캐주얼 파니니/피자
+Day 12,Lunch,Provencal Village,Saint-Paul-de-Vence 또는 Grasse 점심,saint-paul-de-vence,RECOMMENDED,PRIMARY,VERIFIED,생폴드방스 외곽 비스트로

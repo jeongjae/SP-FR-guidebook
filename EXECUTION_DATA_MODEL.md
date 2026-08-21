@@ -147,7 +147,7 @@ interface Stop {
   address?: string;             // 좌표 불명 시 정확한 주소
   summary?: string;             // 현장 행동 요약 (1~2줄)
   menu?: string;                // 식당/카페의 경우 추천 메뉴
-  reservation?: string;         // 예약 상태 ("10:30 확정 FRRL7R", "현장 구매" 등)
+  reservation?: string;         // 예약 상태 ("10:30 확정 [CONFIRMED]", "현장 구매" 등)
   optional?: boolean;           // true인 경우 시간 부족 시 우선 삭제 가능
 }
 ```

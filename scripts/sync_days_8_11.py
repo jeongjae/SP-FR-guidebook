@@ -117,7 +117,7 @@ def update_day_8():
             "lng": 7.2628,
             "summary": "12 Rue Verdi 숙소 복귀 및 휴식",
             "menu": None,
-            "reservation": "예약완료 Airbnb HMJ3HX8QAY — 12 Rue Verdi",
+            "reservation": "예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi",
             "optional": False,
             "place_ref": None
         }

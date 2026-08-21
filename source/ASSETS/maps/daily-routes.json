@@ -133,7 +133,7 @@
           "placeId": "hertz-barcelona-sants",
           "order": 0,
           "plannedTime": "07:00 렌터카 인수",
-          "note": "Hertz 확정 L671E2E0288 · Sants 역 입구 옆 Carrer de Viriat 45. 인수 후 숙소로 복귀해 짐 적재."
+          "note": "Hertz 확정 [CONFIRMED] · Sants 역 입구 옆 Carrer de Viriat 45. 인수 후 숙소로 복귀해 짐 적재."
         },
         {
           "placeId": "barcelona-stay",
@@ -370,13 +370,13 @@
         {
           "placeId": "hertz-bcn-airport",
           "plannedTime": "14:00 렌터카 반납",
-          "note": "Hertz L671E2E0288 · T1 터미널 카운터. 공항 진입 후 Rental Car Return 표지 따름.",
+          "note": "Hertz [CONFIRMED] · T1 터미널 카운터. 공항 진입 후 Rental Car Return 표지 따름.",
           "order": 1
         },
         {
           "placeId": "bcn-airport-t1",
           "plannedTime": "VY1521 15:30 출발",
-          "note": "Vueling VY1521 (예약 NMGI4Q) · T1 출발.",
+          "note": "Vueling VY1521 (예약 [CONFIRMED]) · T1 출발.",
           "order": 2
         },
         {
@@ -597,7 +597,7 @@
         {
           "placeId": "nice-ville",
           "plannedTime": "09:00 렌터카 인수",
-          "note": "Hertz 확정 L672E080313 · Nice역(Avenue Thiers) 인수 — NCE T2 아님.",
+          "note": "Hertz 확정 [CONFIRMED] · Nice역(Avenue Thiers) 인수 — NCE T2 아님.",
           "order": 1
         },
         {
@@ -1203,7 +1203,7 @@
           "placeId": "avignon-tgv",
           "order": 1,
           "plannedTime": "09:00 렌터카 반납",
-          "note": "Hertz L672E080313 반납 확정 · 주유·차량사진·보증금 해제 확인."
+          "note": "Hertz [CONFIRMED] 반납 확정 · 주유·차량사진·보증금 해제 확인."
         },
         {
           "placeId": "lyon-part-dieu",

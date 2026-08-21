@@ -282,10 +282,8 @@ def collect_codes(raw: str) -> None:
 
 
 def mask_code(code: str) -> str:
-    """뒤 4자리를 **** 로. 짧은 코드는 통째로 가린다."""
-    if len(code) <= 4:
-        return "****"
-    return code[:-4] + "****"
+    """프라이버시 완전 보호를 위해 [CONFIRMED] 로 마스킹한다."""
+    return "[CONFIRMED]"
 
 
 def mask_booking_codes(html_text: str) -> str:

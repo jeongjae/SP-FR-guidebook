@@ -24,10 +24,10 @@
 - **대상 일차**: Days 19–23 (5개 일차, 아비뇽 거점 4박 및 리옹 진입)
 - **숙소 앵커**:
   - Avignon: `La Terrasse du Clocher 인근 (9/16 15:00 체크인 ~ 9/20 08:15 체크아웃)`
-  - Lyon: `Lagrange Aparthotel Lyon Lumière (81-85 Cours Albert Thomas, 확정 5882.730.884, 9/20 15:00 체크인)`
+  - Lyon: `Lagrange Aparthotel Lyon Lumière (81-85 Cours Albert Thomas, 확정 [CONFIRMED], 9/20 15:00 체크인)`
 - **교통 앵커**:
-  - 렌터카 반납: `Hertz Avignon TGV역 9/20 09:00 반납 완료 (확정 L672E080313)`
-  - 열차: `TGV INOUI 12176 Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28 (1등석 확정 4YMAGT)`
+  - 렌터카 반납: `Hertz Avignon TGV역 9/20 09:00 반납 완료 (확정 [CONFIRMED])`
+  - 열차: `TGV INOUI 12176 Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28 (1등석 확정 [CONFIRMED])`
   - 아를 왕복: `SNCF TER Avignon Centre ↔ Arles (17분 소요, 30분 간격)`
 
 ---

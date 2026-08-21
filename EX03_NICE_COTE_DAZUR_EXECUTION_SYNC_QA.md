@@ -21,7 +21,7 @@
 ## 2. Scope & Baseline
 
 - **대상 일차**: Days 8–11 (4개 일차, 니스 거점 5박 중 4일)
-- **숙소 앵커**: `Nice Palais ALZIRA, 12 Rue Verdi (확정 Airbnb HMJ3HX8QAY, 9/4 18:00 체크인 ~ 9/9 11:00 체크아웃)`
+- **숙소 앵커**: `Nice Palais ALZIRA, 12 Rue Verdi (확정 Airbnb [CONFIRMED], 9/4 18:00 체크인 ~ 9/9 11:00 체크아웃)`
 - **교통망 앵커**:
   - SNCF TER 철도망: Nice-Ville ↔ Antibes (18분), Antibes ↔ Cannes (12분), Nice-Ville ↔ Villefranche (7분), Monaco ↔ Menton (11분), Menton ↔ Nice-Ville (35분)
   - Zou! 버스 602번 / Lignes d'Azur 버스 82·83번: Villefranche ➔ Èze Village (20분), Èze Village ➔ Monaco Place d'Armes (20분)

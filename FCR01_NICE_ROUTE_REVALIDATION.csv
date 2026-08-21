@@ -1,0 +1,5 @@
+day,route_description,total_duration,total_distance,transport_modes,fatigue_score,fatigue_level,simulation_verdict,delay_buffer_minutes,risk_mitigation
+Day 08,"Nice 구시가지, 쿠르 살레야, 성채언덕, 프롬나드 순환 도보",12시간 30분 (관람·휴식 포함),약 5.5km,도보,3,MODERATE,PASS,45,폭염 시 오후 항구 산책 생략 후 숙소 휴식
+Day 09,Nice ➔ 앙티브(구시가지·시장·Le Figuier 런치) ➔ 칸(르 쉬케·크루아제트) ➔ Nice,9시간 45분,TER 64km + 도보 약 5.5km,TER + 도보,3,MODERATE,PASS,40,식사 30분 지연 시 크루아제트 단축 후 17:30 니스 조기 복귀
+Day 10,Nice ➔ 빌프랑슈 ➔ 에즈 ➔ 모나코(점심) ➔ 망통(저녁) ➔ Nice,13시간,TER/버스 + 도보 약 6km,TER + 버스 + 도보,4,HIGH,PASS,35,지연 시 망통 저녁 생략 후 니스 조기 복귀 (Active P2 통제 중)
+Day 11,Nice(리베라시옹 시장) ➔ 생장캅페라(빌라 에프뤼시 & Béatrice 런치) ➔ Nice(해변휴식·세탁),10시간 15분,버스/트램 + 도보 약 5km,버스 + 트램 + 도보,2,LOW/RECOVERY,PASS,60,"화요일 미술관 휴관 완벽 회피, 익일 프로방스 렌터카 준비 2시간 완벽 보호"

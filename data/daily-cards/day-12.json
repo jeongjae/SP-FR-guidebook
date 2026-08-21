@@ -30,7 +30,7 @@
       "lng": 7.2628,
       "summary": "12 Rue Verdi 체크아웃 후 Nice-Ville 기차역 Hertz 영업소로 도보 이동 (10분)",
       "menu": null,
-      "reservation": "체크아웃 완료 (Airbnb HMJ3HX8QAY)",
+      "reservation": "체크아웃 완료 (Airbnb [CONFIRMED])",
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +45,7 @@
       "lng": 7.2619,
       "summary": "09:00 렌터카 인수(서류·차량촬영·내비설정). 수하물 트렁크 적재",
       "menu": null,
-      "reservation": "예약확정 Hertz L672E080313 — 9/9 09:00 인수",
+      "reservation": "예약확정 Hertz [CONFIRMED] — 9/9 09:00 인수",
       "optional": false,
       "place_ref": "nice-ville"
     },
@@ -90,7 +90,7 @@
       "lng": 5.4497,
       "summary": "Aix 숙소 체크인(2 Place Coimbra, 15:00부터 가능). 짐 정리 및 차량 안전 주차",
       "menu": null,
-      "reservation": "예약완료 Airbnb HMSSBEA4PJ — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
+      "reservation": "예약완료 Airbnb [CONFIRMED] — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
       "optional": false,
       "place_ref": null
     },
@@ -182,7 +182,7 @@
     }
   ],
   "transport": [
-    "렌터카 — Nice역 09:00 인수 (확정 L672E080313)",
+    "렌터카 — Nice역 09:00 인수 (확정 [CONFIRMED])",
     "A8 고속도로 및 프로방스 국도"
   ],
   "food": [
@@ -206,7 +206,7 @@
   "needsReview": [
     "Fondation Maeght 운영·요금 재확인",
     "각 경유지 시각은 인수 완료 시각 기준 역산",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): 체크아웃 9/9 11:00 — 09:00 렌터카 인수와 순서 확인",
+    "Nice 숙소 확정 (2026-08-13, Airbnb [CONFIRMED]): 체크아웃 9/9 11:00 — 09:00 렌터카 인수와 순서 확인",
     "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
   ],
   "sourceRefs": [
@@ -215,6 +215,6 @@
     "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-12",
     "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
     "OSM Nominatim 지오코딩 2026-08-06: Saint-Paul·Fondation Maeght·Grasse",
-    "예약 확정 (2026-08-09 반영): Hertz L672E080313 — Nice역 9/9 09:00 인수, Avignon TGV 9/20 09:00 반납"
+    "예약 확정 (2026-08-09 반영): Hertz [CONFIRMED] — Nice역 9/9 09:00 인수, Avignon TGV 9/20 09:00 반납"
   ]
 }

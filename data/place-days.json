@@ -113,8 +113,7 @@
       "displayName": "Bodega Joan",
       "region": "barcelona",
       "days": [
-        2,
-        3
+        2
       ]
     },
     "bourse-de-commerce-pinault-collection": {
@@ -544,7 +543,8 @@
       "displayName": "Mercat del Lleó",
       "region": "girona",
       "days": [
-        6
+        4,
+        5
       ]
     },
     "monaco-rocher-port-monte-carlo-walk": {
@@ -894,6 +894,34 @@
       "region": "luberon",
       "days": [
         18
+      ]
+    },
+    "le-figuier-de-saint-esprit": {
+      "displayName": "Le Figuier de Saint-Esprit",
+      "region": "nice",
+      "days": [
+        9
+      ]
+    },
+    "restaurant-beatrice": {
+      "displayName": "Restaurant & Salon de Thé Béatrice",
+      "region": "nice",
+      "days": [
+        11
+      ]
+    },
+    "villa-ephrussi-de-rothschild": {
+      "displayName": "Villa Ephrussi de Rothschild",
+      "region": "nice",
+      "days": [
+        11
+      ]
+    },
+    "mercat-concepcio": {
+      "displayName": "Mercat de la Concepció",
+      "region": "barcelona",
+      "days": [
+        3
       ]
     }
   }

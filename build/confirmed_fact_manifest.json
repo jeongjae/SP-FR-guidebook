@@ -9,15 +9,13 @@
       "chapter": "04_Barcelona_Sitges_v2.0.md",
       "entity": "Occidental Barcelona 1929",
       "tokens": [
-        "36558SG255002",
-        "1400827967207904",
         "+34 936 26 88 44",
         "KRW 701,054",
         "€46.20",
         "€46.2",
         "KRW 76,428"
       ],
-      "description": "바르셀로나 호텔 확인번호·예약번호·전화번호·선결제금액·현장시티택스"
+      "description": "바르셀로나 호텔 전화번호·선결제금액·현장시티택스"
     },
     {
       "id": "CF002",
@@ -25,10 +23,9 @@
       "chapter": "04_Barcelona_Sitges_v2.0.md",
       "entity": "OZ511 ICN→BCN",
       "tokens": [
-        "OZ511",
-        "FRRL7R"
+        "OZ511"
       ],
-      "description": "인천→바르셀로나 국제선 편명 및 예약번호"
+      "description": "인천→바르셀로나 국제선 편명"
     },
     {
       "id": "CF003",
@@ -36,10 +33,9 @@
       "chapter": "04_Barcelona_Sitges_v2.0.md",
       "entity": "Hertz Barcelona Sants",
       "tokens": [
-        "L671E2E0288",
         "€176.01"
       ],
-      "description": "바르셀로나 Sants 렌터카 예약번호 및 후지불 금액"
+      "description": "바르셀로나 Sants 렌터카 후지불 금액"
     },
     {
       "id": "CF004",
@@ -47,12 +43,11 @@
       "chapter": "05_Girona_Collioure_Emporda_v2.1.md",
       "entity": "Torre de Báscara",
       "tokens": [
-        "HM2YPHDRW5",
         "+34 622 66 14 31",
         "€330",
         "Luc"
       ],
-      "description": "바스카라 Airbnb 예약코드·호스트명·전화번호·숙박비"
+      "description": "바스카라 Airbnb 호스트명·전화번호·숙박비"
     },
     {
       "id": "CF005",
@@ -61,10 +56,9 @@
       "entity": "Vueling VY1521 BCN→NCE",
       "tokens": [
         "VY1521",
-        "NMGI4Q",
         "25kg"
       ],
-      "description": "바르셀로나→니스 항공편·예약코드·수하물 규격"
+      "description": "바르셀로나→니스 항공편·수하물 규격"
     },
     {
       "id": "CF006",
@@ -72,12 +66,9 @@
       "chapter": "06_Nice_Cote_d_Azur_v2.0.md",
       "entity": "Palais ALZIRA Nice",
       "tokens": [
-        "HMJ3HX8QAY",
-        "€809.54",
-        "+33 6 21 70 18 70",
-        "Catherine"
+        "€809.54"
       ],
-      "description": "니스 Airbnb 예약번호·결제총액·호스트명·전화번호"
+      "description": "니스 Airbnb 결제총액"
     },
     {
       "id": "CF007",
@@ -85,14 +76,13 @@
       "chapter": "06_Nice_Cote_d_Azur_v2.0.md",
       "entity": "Hertz Nice-Ville",
       "tokens": [
-        "L672E080313",
         "€608.09",
         "+33 4 97 03 01 20",
         "+33 4 32 74 62 80",
         "€326.73",
         "€180"
       ],
-      "description": "니스역 Hertz 렌터카 예약번호·후지불금액·영업소 전화번호·편도요금"
+      "description": "니스역 Hertz 렌터카 후지불금액·영업소 전화번호·편도요금"
     },
     {
       "id": "CF008",
@@ -102,10 +92,9 @@
       "tokens": [
         "TGV INOUI 12176",
         "12176",
-        "4YMAGT",
         "€42"
       ],
-      "description": "아비뇽TGV→리옹TGV 편명·예약번호·발권금액"
+      "description": "아비뇽TGV→리옹TGV 편명·발권금액"
     },
     {
       "id": "CF009",
@@ -115,10 +104,9 @@
       "tokens": [
         "TGV INOUI 6618",
         "6618",
-        "X6CVW5",
         "€64"
       ],
-      "description": "리옹Part-Dieu→파리Gare de Lyon 편명·예약번호·발권금액"
+      "description": "리옹Part-Dieu→파리Gare de Lyon 편명·발권금액"
     },
     {
       "id": "CF010",
@@ -126,12 +114,11 @@
       "chapter": "10_Lyon_v2.0.md",
       "entity": "Lagrange Aparthotel Lyon Lumière",
       "tokens": [
-        "5882.730.884",
         "€433.82",
         "+33 4 81 76 28 00",
         "€300"
       ],
-      "description": "리옹 아파트호텔 예약번호·확정총액·전화번호·보증금"
+      "description": "리옹 아파트호텔 확정총액·전화번호·보증금"
     },
     {
       "id": "CF011",
