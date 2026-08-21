@@ -76,7 +76,9 @@ class StayTransportGuards(unittest.TestCase):
     def test_transit_sources_are_official_and_scheduled_for_recheck(self):
         payload = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))
         allowed = {"www.tmb.cat", "tmb.cat", "rodalies.gencat.cat",
-                   "www.lignesdazur.com", "lignesdazur.com"}
+                   "www.lignesdazur.com", "lignesdazur.com",
+                   "www.holabarcelona.com", "holabarcelona.com",
+                   "www.aerobusbarcelona.es", "aerobusbarcelona.es"}
         for slug, region in payload["regions"].items():
             for source in region["sources"]:
                 self.assertIn(urlparse(source["url"]).hostname, allowed,
@@ -90,8 +92,8 @@ class StayTransportGuards(unittest.TestCase):
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("도시 공공교통", "두 사람이 2구간 이상 타면 T-familiar",
-                      "T-familiar 1 zone", "공항 L9 불가",
+        for token in ("도시 공공교통", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
+                      "Hola Barcelona Travel Card 48h", "BCN T1→Plaça Espanya",
                       "공식 출처와 재확인일"):
             self.assertIn(token, rendered)
         for day in range(1, 5):
@@ -110,8 +112,15 @@ class StayTransportGuards(unittest.TestCase):
     def test_barcelona_chapter_has_no_superseded_transit_advice(self):
         chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
                    "04_Barcelona_Sitges_v2.0.md").read_text(encoding="utf-8")
-        for stale in ("Aerobús 우선", "각자 T-casual", "기본 권장 — 짐이 아주 많을 때만 택시"):
+        for stale in ("T-familiar", "T-casual", "택시"):
             self.assertNotIn(stale, chapter, f"Barcelona 챕터에 폐기된 교통 권고가 남음: {stale}")
+
+        day1 = json.loads((ROOT / "data" / "daily-cards" / "day-01.json").read_text(encoding="utf-8"))
+        day1_text = json.dumps(day1, ensure_ascii=False)
+        self.assertNotIn("택시", day1_text)
+        self.assertNotIn('"mode": "taxi"', day1_text)
+        self.assertIn("Aerobús A1", day1_text)
+        self.assertIn("Plaça Espanya", day1_text)
 
     def test_every_region_has_official_transport_resources(self):
         payload = json.loads((ROOT / "data" / "transit-resources.json").read_text(encoding="utf-8"))

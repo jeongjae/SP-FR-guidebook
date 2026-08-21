@@ -3,79 +3,67 @@
   "regions": {
     "barcelona": {
       "recommendation": {
-        "title": "두 사람이 2구간 이상 타면 T-familiar",
-        "summary": "Day 2·3에는 숙소에서 첫 장소로 갈 때, Day 2 오후 장소 이동, Day 3 숙소 귀환에 대중교통을 쓸 가능성이 있다. 두 사람이 함께 2구간 이상 탈 계획이면 공동 T-familiar를 사고, 실제 승차가 그보다 적으면 단일권을 쓴다."
+        "title": "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
+        "summary": "Day 1에는 BCN T1에서 Aerobús A1 편도권으로 Plaça Espanya까지 간 뒤 숙소까지 걷는다. Day 2 아침부터는 각자 Hola Barcelona 48시간권을 처음 검증해 Day 2·3 시내 이동과 Day 4 이른 Sants 이동에 쓴다."
       },
       "products": [
         {
-          "name": "TMB 단일권",
-          "price": "€2.90",
+          "name": "Aerobús A1 편도",
+          "price": "€7.75/인",
           "shared": false,
-          "accessNote": "공항 L9 불가",
-          "fit": "두 사람이 합계 4회 미만 검증할 때 적합"
+          "accessNote": "BCN T1→Plaça Espanya",
+          "fit": "Day 1 확정 공항 이동; 모바일 QR로 탑승"
         },
         {
-          "name": "T-familiar 1 zone",
-          "price": "€11.50",
-          "shared": true,
-          "accessNote": "공항 L9 불가",
-          "fit": "동행하는 두 사람이 합계 8회까지 검증할 때 적합"
-        },
-        {
-          "name": "T-casual 1 zone",
-          "price": "€13.00",
+          "name": "Hola Barcelona Travel Card 48h",
+          "price": "공식 결제 화면의 48시간권 가격",
           "shared": false,
-          "accessNote": "공항 L9 불가",
-          "fit": "1인 10회권이라 현재 일정에는 과다"
+          "accessNote": "첫 검증부터 연속 48시간",
+          "fit": "한 사람당 1장; Day 2 아침부터 Day 4 이른 Sants 이동까지"
         }
       ],
       "howToUse": [
-        "단일권은 TMB 버스의 비접촉식 단말과 일부 메트로 개찰구에서 카드·휴대전화로 바로 구매·검증할 수 있다. 두 사람이 같은 결제수단을 쓰면 두 번 태그한다.",
-        "T-familiar는 첫 검증일부터 30일 동안 8회 쓸 수 있다. 함께 이동하는 사람 수만큼 연속 검증하고, 공유한 사람들은 이동 내내 함께 다닌다.",
-        "두 사람이 4구간을 타면 T-familiar 8회를 모두 쓴다. 이후 추가 승차는 단일권으로 보탠다.",
-        "통합권은 첫 검증부터 1존 기준 75분 안에 최대 3회 환승할 수 있다. 메트로 간 직접 환승은 다시 검증하지 않는다.",
-        "검표가 끝날 때까지 사용한 카드나 승차 매체를 보관한다. 비접촉 결제는 결제 카드 끝 네 자리로 구매를 확인한다."
+        "Aerobús A1 편도권은 공식 웹사이트나 앱에서 사고 모바일 QR을 준비한다. T1 도착층의 A1 정류장에서 탑승해 Plaça Espanya에서 내린다.",
+        "Hola Barcelona 48시간권은 두 사람이 각자 1장씩 산다. 온라인 바우처는 메트로 자동발매기에서 비접촉식 카드로 교환한다.",
+        "연속 48시간은 첫 검증 시각부터 계산된다. Day 1에는 사용하지 않고 Day 2 아침 첫 시내 이동에서 개시한다.",
+        "카드는 TMB 메트로·버스, NitBus, Montjuïc 푸니쿨라, FGC 1존, TRAM, Rodalies 1존에서 무제한 사용한다. 승차 또는 개찰 때마다 본인 카드를 검증한다.",
+        "Aerobús QR과 Hola Barcelona 카드는 따로 보관한다. 두 상품은 서로 다른 승차 매체다."
       ],
       "exceptions": [
-        "T-casual과 T-familiar는 Metro L9 Sud의 Aeroport T1·T2 역에서 사용할 수 없다. 공항 메트로를 선택하면 €5.90짜리 비통합 Airport ticket이 필요하다.",
-        "Day 1 기본안은 택시이며 Aerobús A1은 별도 공항버스다. 시내 통합권 구매를 공항 이동 때문에 서두르지 않는다.",
-        "Day 4의 Sitges 이동은 예약 렌터카 일정이다. Barcelona 시내 교통권 사용 횟수에 포함하지 않는다."
+        "Day 1 공항 이동은 Aerobús A1으로 확정한다. 택시는 선택지나 예비안에 넣지 않는다.",
+        "Hola Barcelona 단독권에는 Aerobús가 포함되지 않는다. 이번 일정은 공항으로 돌아가지 않으므로 왕복 Aerobús가 포함된 결합상품 대신 편도권을 따로 산다.",
+        "Montjuïc 푸니쿨라는 포함되지만 Montjuïc Cable Car는 포함되지 않는다.",
+        "Sitges는 Hola Barcelona의 Rodalies 1존 범위를 벗어난다. 다만 이번 Day 4는 Sants에서 렌터카를 인수해 이동한다."
       ],
       "itineraryUses": [
-        {"day": 1, "label": "BCN T1→숙소는 택시 기본, Aerobús A1 대안"},
-        {"day": 2, "label": "숙소→Sant Pau와 Sagrada Família→Gràcia에서 Metro·버스 후보"},
-        {"day": 3, "label": "숙소→Concepció와 마지막 숙소 귀환은 Metro 후보, 도심 구간은 도보"},
-        {"day": 4, "label": "Sants에서 렌터카 인수 후 Sitges·Bàscara 이동"}
+        {"day": 1, "label": "BCN T1→Plaça Espanya는 Aerobús A1, 정류장→숙소는 도보"},
+        {"day": 2, "label": "아침 첫 이동에서 Hola Barcelona 48h 개시; Sant Pau·Sagrada Família·Gràcia 이동"},
+        {"day": 3, "label": "시장·구도심·MACBA·Eixample 이동에 Hola Barcelona 사용"},
+        {"day": 4, "label": "첫 검증 후 48시간 안이면 숙소→Sants에 사용한 뒤 렌터카 인수"}
       ],
       "sources": [
         {
-          "label": "TMB 2026 승차권·요금",
-          "url": "https://www.tmb.cat/en/barcelona-fares-metro-bus/transport-ticket-fares",
-          "verifiedAt": "2026-08-21",
+          "label": "Hola Barcelona Travel Card 공식 상품·이용 범위",
+          "url": "https://www.holabarcelona.com/tickets/hola-bcn-barcelona-travel-card",
+          "verifiedAt": "2026-08-22",
           "recheckBy": "2026-08-28"
         },
         {
-          "label": "TMB 승차권 이용·환승 조건",
-          "url": "https://www.tmb.cat/en/barcelona-fares-metro-bus/terms-use-tickets",
-          "verifiedAt": "2026-08-21",
+          "label": "Hola Barcelona·Aerobús 결합상품 조건",
+          "url": "https://www.holabarcelona.com/transport-deals/hola-barcelona-aerobus",
+          "verifiedAt": "2026-08-22",
           "recheckBy": "2026-08-28"
         },
         {
-          "label": "TMB 비접촉식 카드 단일권",
-          "url": "https://www.tmb.cat/en/barcelona-fares-metro-bus/bank-card-validation",
-          "verifiedAt": "2026-08-21",
+          "label": "Aerobús 공식 노선·정류장·운행시간",
+          "url": "https://aerobusbarcelona.es/en/lines-stops-and-schedules/",
+          "verifiedAt": "2026-08-22",
           "recheckBy": "2026-08-28"
         },
         {
-          "label": "TMB 공항 메트로 승차권",
-          "url": "https://www.tmb.cat/en/barcelona-fares-metro-bus/aeroport-ticket",
-          "verifiedAt": "2026-08-21",
-          "recheckBy": "2026-08-28"
-        },
-        {
-          "label": "Rodalies Barcelona 승차권 이용 조건",
-          "url": "https://rodalies.gencat.cat/en/tarifes/servei_rodalia_barcelona/nomes_rodalies/",
-          "verifiedAt": "2026-08-21",
+          "label": "Aerobús 공식 요금·구매",
+          "url": "https://aerobusbarcelona.es/en/",
+          "verifiedAt": "2026-08-22",
           "recheckBy": "2026-08-28"
         }
       ]

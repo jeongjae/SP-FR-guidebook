@@ -10,7 +10,7 @@ status: "chapter-derived master itinerary; booking values pending"
 
 | Day | 날짜 | 숙박거점 | 테마 | 핵심 일정 | 선택·축소 레버 | 피로도 | 잠금 필요 |
 |---:|---|---|---|---|---|---:|---|
-| 1 | 8/29 토 | Barcelona | 야간 도착·취침 | OZ511 19:10 T1 도착 (확정 [CONFIRMED]), 택시, 야간 체크인 | 장보기·산책은 Day 2 아침으로 | 3 | 없음 — 항공·숙소 확정 |
+| 1 | 8/29 토 | Barcelona | 야간 도착·취침 | OZ511 19:10 T1 도착 (확정 [CONFIRMED]), Aerobús A1→Plaça Espanya, 도보 체크인 | 장보기·산책은 Day 2 아침으로 | 3 | Aerobús 편도 QR 준비 |
 | 2 | 8/30 일 | Barcelona | Gaudí와 Catalan Modernisme | Sant Pau 09:30, Avinguda de Gaudí, Sagrada Família 15:15 (확정) | Gràcia 저녁 산책 | 3 | 없음 — Sagrada 15:15 확정 완료 |
 | 3 | 8/31 월 | Barcelona | 책·도시기억·현대미술 | Concepció 시장, Gòtic, Biblioteca de Catalunya, MACBA | Llibreria Finestres·운동 선택 | 3 | 식당·MACBA |
 | 4 | 9/1 화 | Bàscara | Barcelona→Sitges→Girona 또는 Bàscara | Sants 렌터카 07:00 인수 (확정 [CONFIRMED]), Sitges, 체크인 시간에 따라 Girona 축소·Bàscara 이동 | 체크인 창 미확인 시 Girona 관광 삭제 | 4 | Sitges 점심·Airbnb 체크인 |
