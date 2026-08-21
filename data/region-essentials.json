@@ -19,6 +19,23 @@
         "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
       ]
     },
+    "luberon": {
+      "staySummary": "3박 거점은 대중교통 정류장이 아닌 농가 숙소다. Day 16–19의 마을 순회는 예약 렌터카를 정본으로 삼고, 도착 즉시 진입로·주차 위치와 야간 귀환 표식을 확인한다.",
+      "lifeEssentials": [
+        "식료품과 물은 Day 16 Coustellet에서 확보한다. 농가 도착 뒤 도보 장보기는 전제로 두지 않는다.",
+        "연료는 절반 아래로 내리지 않는다. 특히 일요일 도착 전과 Avignon 출발 전 유인 주유 가능 시간을 확인한다.",
+        "석조마을은 외곽 지정 주차장에 세우고 골목으로 진입하지 않는다. Roussillon 오커길에는 먼지에 강한 신발을 쓴다.",
+        "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다."
+      ],
+      "arrivalStrategy": "Day 16 Aix 체크아웃 뒤 렌터카로 Lourmarin·Coustellet·Goult를 거쳐 농가로 들어간다. 해 지기 전에 숙소 진입로와 주차 위치를 익힌다.",
+      "departureStrategy": "Day 19 체크아웃 뒤 렌터카로 Avignon에 이동한다. ZOU! 915·907은 차량 장애 때 일정을 단일 축으로 줄이는 대안일 뿐 정본 동선이 아니다.",
+      "lateReturnRule": "가로등 없는 좁은 도로를 피하려고 일몰 전 귀환을 원칙으로 한다. 늦어지면 마지막 방문지를 생략하고 바로 숙소로 돌아간다.",
+      "sourceRefs": [
+        "data/daily-cards/day-16.json", "data/daily-cards/day-17.json",
+        "data/daily-cards/day-18.json", "data/daily-cards/day-19.json",
+        "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+      ]
+    },
     "lyon": {
       "staySummary": "확정 숙소는 Monplaisir·Sans Souci 생활권의 Lagrange Aparthotel Lyon Lumière다. 도착·출발일에는 큰 짐 때문에 Part-Dieu↔숙소를 택시로 이동하고, 관광일에는 TCL Zone 1·2를 이용한다.",
       "lifeEssentials": [
@@ -31,12 +48,29 @@
       "departureStrategy": "Day 27 체크아웃 뒤 택시로 Lyon Part-Dieu에 이동해 13:04 Paris행 확정 TGV를 탄다. Perrache로 가지 않도록 승차역을 확인한다.",
       "lateReturnRule": "관광일에는 TCL 실시간 경로로 가장 단순한 Metro·tram·bus 귀환편을 고른다. Annecy 귀환 뒤에는 Part-Dieu에서 지체하지 않고 숙소로 바로 이동한다.",
       "sourceRefs": [
+        "data/daily-cards/day-23.json", "data/daily-cards/day-24.json",
+        "data/daily-cards/day-25.json", "data/daily-cards/day-26.json",
+        "data/daily-cards/day-27.json", "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+      ]
+    },
+    "avignon": {
+      "staySummary": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장에 두고 Day 21 근교 일정에 사용한다.",
+      "lifeEssentials": [
+        "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다.",
+        "Day 20 성벽 안은 전부 걷고 차량을 꺼내지 않는다. 피로할 때만 무료 도심 셔틀이나 Orizo 단일권을 검토한다.",
+        "Day 21은 Uzès·Pont du Gard 렌터카 왕복, Day 22는 Avignon Centre↔Arles TER 왕복으로 교통수단을 분리한다.",
+        "차량 안에는 보이는 짐을 남기지 않고, 반납할 때 주유·차량 사진·영수증을 확인한다."
+      ],
+      "arrivalStrategy": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
+      "departureStrategy": "Day 23 Avignon TGV에서 차량 반납과 10:22 Lyon행 확정 열차 탑승을 처리한다. 반납 방식과 완충은 현장에서 확인할 운영 항목으로 남긴다.",
+      "lateReturnRule": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon TGV까지 간다고 가정하지 않는다.",
+      "sourceRefs": [
+        "data/daily-cards/day-19.json",
+        "data/daily-cards/day-20.json",
+        "data/daily-cards/day-21.json",
+        "data/daily-cards/day-22.json",
         "data/daily-cards/day-23.json",
-        "data/daily-cards/day-24.json",
-        "data/daily-cards/day-25.json",
-        "data/daily-cards/day-26.json",
-        "data/daily-cards/day-27.json",
-        "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
       ]
     }
   }

@@ -634,8 +634,8 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   color: var(--text-2);
   scroll-snap-align: start;
 }
-.tabs a:hover { background: var(--surface-2); }
 .tabs a[aria-current="page"] { background: var(--accent); color: #FFFFFF; }
+[data-region] { scroll-margin-top: 6.5rem; }
 
 /* ================= FilterChip ================= */
 .chips { display: flex; flex-wrap: wrap; gap: var(--s2); }

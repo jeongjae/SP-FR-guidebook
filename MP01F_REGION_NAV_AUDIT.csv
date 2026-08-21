@@ -1,0 +1,9 @@
+region,region_id,first_day,anchor,anchor_exists,button_exists,button_target,current_region_test,mobile_centering,status
+Barcelona,barcelona,1,#barcelona,YES,YES,#barcelona,Barcelona,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Girona · Empordà,girona,4,#girona,YES,YES,#girona,Girona · Empordà,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Nice,nice,7,#nice,YES,YES,#nice,Nice,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Aix,aix,12,#aix,YES,YES,#aix,Aix,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Luberon,luberon,16,#luberon,YES,YES,#luberon,Luberon,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Avignon,avignon,19,#avignon,YES,YES,#avignon,Avignon,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Lyon,lyon,23,#lyon,YES,YES,#lyon,Lyon,SUPPORTED_SMOOTH_INLINE_CENTER,PASS
+Paris,paris,27,#paris,YES,YES,#paris,Paris,SUPPORTED_SMOOTH_INLINE_CENTER,PASS

@@ -64,10 +64,10 @@
     ],
     "luberon": [
       {
-        "title": "ZOU 13·84 regional network",
-        "kind": "network-map",
-        "edition": "2026-01",
-        "usage": "Luberon은 렌터카가 기본이다. 차량 운행이 불가능할 때 Apt·Gordes·Maubec·Avignon 방면의 지역 노선 존재 여부를 찾는 비상용이며, 이 지도만으로 당일 운행을 확정하지 않는다.",
+          "title": "ZOU! Vaucluse 노선별 시간표",
+          "kind": "route-map-page",
+          "edition": "2026-09",
+          "usage": "렌터카가 정본이다. 차량 장애 때 915·917·907 가운데 실제 출발지와 맞는 한 축만 검토하며, 예약형 989와 99xx 통학 노선을 일반 방문객 노선으로 혼동하지 않는다.",
         "officialUrl": "https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse",
         "verifiedAt": "2026-08-21",
         "recheckBy": "2026-08-28"
@@ -78,7 +78,7 @@
         "title": "Orizo schematic network",
         "kind": "network-map",
         "edition": "hiver 2026-2027",
-        "usage": "Avignon tram·시내 bus의 전체 연결을 확인한다. 성벽 안 이동은 도보 우선이고, 외곽 숙소·TGV·피로 시 대체 이동을 찾을 때 사용한다.",
+        "usage": "성벽 안은 도보가 기본이다. 피로할 때의 bus·tram과 P+R 셔틀을 찾는 자료이며, T1이 Avignon TGV까지 연결된다고 읽지 않는다. Centre–TGV는 SNCF TER Virgule를 별도로 확인한다.",
         "officialUrl": "https://www.orizo.fr/plan-du-reseau-2026-2027/",
         "verifiedAt": "2026-08-21",
         "recheckBy": "2026-08-28"
