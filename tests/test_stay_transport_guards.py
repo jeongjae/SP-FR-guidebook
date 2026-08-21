@@ -67,7 +67,7 @@ class StayTransportGuards(unittest.TestCase):
             self.assertIn(f'href="../{region.days[-1].url}"', rendered)
 
     def test_region_essentials_and_transit_facts_follow_schema(self):
-        for stem in ("region-essentials", "transit-facts"):
+        for stem in ("region-essentials", "transit-facts", "transit-resources"):
             payload = json.loads((ROOT / "data" / f"{stem}.json").read_text(encoding="utf-8"))
             schema = json.loads((ROOT / "data" / f"{stem}.schema.json").read_text(encoding="utf-8"))
             jsonschema.Draft202012Validator(schema,
@@ -111,6 +111,27 @@ class StayTransportGuards(unittest.TestCase):
                    "04_Barcelona_Sitges_v2.0.md").read_text(encoding="utf-8")
         for stale in ("Aerobús 우선", "각자 T-casual", "기본 권장 — 짐이 아주 많을 때만 택시"):
             self.assertNotIn(stale, chapter)
+
+    def test_every_region_has_official_transport_resources(self):
+        payload = json.loads((ROOT / "data" / "transit-resources.json").read_text(encoding="utf-8"))
+        self.assertEqual({region.slug for region in self.trip.regions}, set(payload["regions"]))
+        for slug, resources in payload["regions"].items():
+            for resource in resources:
+                local_path = resource.get("localPath")
+                if local_path:
+                    self.assertTrue((ROOT / local_path).is_file(), f"{slug}: missing {local_path}")
+                self.assertLess(date.fromisoformat(resource["recheckBy"]),
+                                date.fromisoformat("2026-08-29"))
+
+    def test_transport_resources_render_as_local_or_official_links(self):
+        for region in self.trip.regions:
+            rendered = html.unescape(render.build_region(region, self.trip))
+            self.assertIn("교통 지도·오프라인 자료", rendered)
+            for resource in region.transport_resources:
+                self.assertIn(resource["title"], rendered)
+                if resource.get("localPath"):
+                    self.assertIn("PDF 열기", rendered)
+                self.assertIn(resource["officialUrl"], rendered)
 
 
 if __name__ == "__main__":

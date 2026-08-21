@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "regions": {
+    "barcelona": [
+      {
+        "title": "Barcelona Metro network",
+        "kind": "network-map",
+        "edition": "2025-03",
+        "usage": "이번 일정에서는 Hostafrancs·Espanya·Sants Estació를 숙소권 역으로 보고, Sant Pau Dos de Maig·Sagrada Família·Diagonal·Passeig de Gràcia 연결을 확인한다. 공항 T1·T2는 L9 Sud 별도 승차권 예외를 함께 본다.",
+        "localPath": "source/ASSETS/transport-guides/barcelona/bcn-metro-network-2025-03.pdf",
+        "officialUrl": "https://www.tmb.cat/en/barcelona/metro/map",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      },
+      {
+        "title": "Telefèric de Montjuïc map",
+        "kind": "area-map",
+        "edition": "2025",
+        "usage": "Montjuïc 대안을 쓸 때 Parc Montjuïc·Mirador·Castell 세 정류장과 funicular·Metro·bus 연결 위치를 확인한다. 현재 Day 1~4의 확정 동선은 아니므로 현장 대안으로만 사용한다.",
+        "localPath": "source/ASSETS/transport-guides/barcelona/montjuic-cable-car-map-2025.pdf",
+        "officialUrl": "https://telefericdemontjuic.cat/en/teleferic",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "girona": [
+      {
+        "title": "ATM Girona integrated network",
+        "kind": "network-map",
+        "edition": "2026",
+        "usage": "Bàscara 체류는 렌터카가 기본이다. 차량 계획이 바뀔 때 Girona권 철도·버스 연결 범위를 확인하는 비상 자료로 사용하고, 실제 출발시각은 운영기관에서 다시 조회한다.",
+        "localPath": "source/ASSETS/transport-guides/girona/atm-girona-network-2026.pdf",
+        "officialUrl": "https://web2.girona.cat/tmg/cat/bus_linies.php",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "nice": [
+      {
+        "title": "Lignes d’Azur main lines",
+        "kind": "network-map",
+        "edition": "2026-09",
+        "usage": "Nice 시내 tram·주요 bus와 공항·해안축 연결을 확인한다. 여행 월과 같은 2026년 9월판이며, 운행 장애와 정류장 변경은 당일 공식 앱에서 다시 확인한다.",
+        "localPath": "source/ASSETS/transport-guides/nice/lignes-azur-main-lines-2026-09.pdf",
+        "officialUrl": "https://www.lignesdazur.com/fr/plan-lignes-azur",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "aix": [
+      {
+        "title": "Aix en Bus line maps",
+        "kind": "route-map-page",
+        "edition": "été 2026",
+        "usage": "Aix 일정은 도보·렌터카 중심이다. 버스가 필요한 날에만 공식 페이지에서 해당 노선 PDF를 골라 보고, 오래된 개별 노선도를 미리 저장하지 않는다.",
+        "officialUrl": "https://aixenbus.fr/fr/kQ8-Plans-des-lignes.html",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "luberon": [
+      {
+        "title": "ZOU 13·84 regional network",
+        "kind": "network-map",
+        "edition": "2026-01",
+        "usage": "Luberon은 렌터카가 기본이다. 차량 운행이 불가능할 때 Apt·Gordes·Maubec·Avignon 방면의 지역 노선 존재 여부를 찾는 비상용이며, 이 지도만으로 당일 운행을 확정하지 않는다.",
+        "localPath": "source/ASSETS/transport-guides/luberon/zou-regional-network-2026.pdf",
+        "officialUrl": "https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "avignon": [
+      {
+        "title": "Orizo schematic network",
+        "kind": "network-map",
+        "edition": "hiver 2026-2027",
+        "usage": "Avignon tram·시내 bus의 전체 연결을 확인한다. 성벽 안 이동은 도보 우선이고, 외곽 숙소·TGV·피로 시 대체 이동을 찾을 때 사용한다.",
+        "localPath": "source/ASSETS/transport-guides/avignon/orizo-network-2026-2027.pdf",
+        "officialUrl": "https://www.orizo.fr/plan-du-reseau-2026-2027/",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "lyon": [
+      {
+        "title": "TCL Lyon·Villeurbanne network",
+        "kind": "network-map",
+        "edition": "2026-08",
+        "usage": "Metro·funicular·tram·주요 bus 연결을 확인한다. Fourvière 이동에서는 funicular, Part-Dieu·Presqu’île·Vieux Lyon 사이에서는 Metro 환승을 우선 확인한다.",
+        "officialUrl": "https://www.tcl.fr/se-deplacer/plans-pdf-du-reseau",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ],
+    "paris": [
+      {
+        "title": "Île-de-France Mobilités Metro map",
+        "kind": "network-map",
+        "edition": "2026 current",
+        "usage": "Paris 체류의 Metro 환승 구조를 확인한다. 공항·RER·Transilien은 이 Metro 지도 하나로 판단하지 말고 해당 Day 카드와 RATP 실시간 경로를 함께 본다.",
+        "localPath": "source/ASSETS/transport-guides/paris/idf-metro-map.pdf",
+        "officialUrl": "https://www.iledefrance-mobilites.fr/en/le-reseau/plans",
+        "verifiedAt": "2026-08-21",
+        "recheckBy": "2026-08-28"
+      }
+    ]
+  }
+}

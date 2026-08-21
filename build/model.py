@@ -25,6 +25,7 @@
     data/place-facts.json                   운영시간·요금·예약 (근거·TTL 포함)
     data/region-essentials.json             지역별 짧은 숙박·생활 실행 요약
     data/transit-facts.json                 공공교통 선택·이용법·공식 출처
+    data/transit-resources.json             공식 노선도·오프라인 교통 자료
     data/images/image-manifest.json         사진
 """
 from __future__ import annotations
@@ -48,6 +49,7 @@ PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"
 PLACE_FACTS = ROOT / "data" / "place-facts.json"
 REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
 TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
+TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 
 WEEKDAY_KO = "월화수목금토일"
@@ -266,6 +268,7 @@ class Region:
     editorial: dict = field(default_factory=dict)
     essentials: dict = field(default_factory=dict)
     transit: dict = field(default_factory=dict)
+    transport_resources: list[dict] = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -564,6 +567,7 @@ def load_trip() -> Trip:
     regions_raw = json.loads(REGIONS_JSON.read_text(encoding="utf-8"))["regions"]
     essentials = _load_validated_json(REGION_ESSENTIALS).get("regions", {})
     transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
+    transport_resources = _load_validated_json(TRANSIT_RESOURCES).get("regions", {})
     trip_start = _d(itin["trip"]["start"])
     for slug, facts in transit.items():
         for source in facts["sources"]:
@@ -576,6 +580,11 @@ def load_trip() -> Trip:
                     f"{slug}: transit source recheckBy must be on/after verification "
                     f"and before trip start: {recheck}"
                 )
+    for slug, resources in transport_resources.items():
+        for resource in resources:
+            local_path = resource.get("localPath")
+            if local_path and not (ROOT / local_path).is_file():
+                raise ValueError(f"{slug}: transport resource file missing: {local_path}")
     editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 
@@ -644,6 +653,7 @@ def load_trip() -> Trip:
             editorial=editorial.get(r["slug"], {}),
             essentials=essentials.get(r["slug"], {}),
             transit=transit.get(r["slug"], {}),
+            transport_resources=transport_resources.get(r["slug"], []),
         ))
 
     return Trip(

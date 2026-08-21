@@ -1015,6 +1015,26 @@ def build_region(r: Region, trip: Trip) -> str:
                              for x in sources)
                          + '</ul></div></details>')
 
+    resources = r.transport_resources
+    if resources:
+        parts.append(sec_head("OFFLINE MAPS", "교통 지도·오프라인 자료"))
+        resource_cards = []
+        for resource in resources:
+            local_path = resource.get("localPath")
+            if local_path:
+                asset_rel = local_path.removeprefix("source/ASSETS/")
+                primary = (f'<a class="btn btn-secondary" href="{rel}/assets/{esc(asset_rel)}" '
+                           f'target="_blank">PDF 열기</a>')
+            else:
+                primary = ""
+            resource_cards.append(f'''<article class="card"><div class="card-body">
+  <h3>{esc(resource["title"])}</h3>
+  <div class="metarow"><span>{esc(resource["edition"])}</span></div>
+  <p>{esc(resource["usage"])}</p>
+  <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">공식 최신판</a></div>
+</div></article>''')
+        parts.append(f'<div class="grid grid-2">{"".join(resource_cards)}</div>')
+
     extra = [(k, LAYER_LABEL[k]) for k in ("role", "rhythm") if ed.get(k)]
     if extra:
         parts.append("".join(
@@ -1474,6 +1494,9 @@ def write_assets(trip: Trip) -> None:
     pwa = ROOT / "source" / "ASSETS" / "pwa"
     if pwa.exists():
         shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
+    transport_guides = ROOT / "source" / "ASSETS" / "transport-guides"
+    if transport_guides.exists():
+        shutil.copytree(transport_guides, out / "transport-guides", dirs_exist_ok=True)
 
     # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
