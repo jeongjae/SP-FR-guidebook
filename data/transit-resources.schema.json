@@ -19,11 +19,20 @@
             "edition": {"type": "string", "minLength": 1},
             "usage": {"type": "string", "minLength": 1, "maxLength": 420},
             "localPath": {"type": "string", "pattern": "^source/ASSETS/transport-guides/[^.].*\\.pdf$"},
+            "rightsHolder": {"type": "string", "minLength": 1},
+            "license": {"type": "string", "minLength": 1},
+            "redistributionBasis": {"type": "string", "minLength": 1},
             "officialUrl": {"type": "string", "pattern": "^https://"},
             "verifiedAt": {"type": "string", "format": "date"},
             "recheckBy": {"type": "string", "format": "date"}
           },
-          "additionalProperties": false
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {"required": ["localPath"]},
+              "then": {"required": ["rightsHolder", "license", "redistributionBasis"]}
+            }
+          ]
         }
       }
     }

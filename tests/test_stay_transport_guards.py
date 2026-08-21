@@ -127,7 +127,7 @@ class StayTransportGuards(unittest.TestCase):
     def test_transport_resources_render_as_local_or_official_links(self):
         for region in self.trip.regions:
             rendered = html.unescape(render.build_region(region, self.trip))
-            self.assertIn("교통 지도·오프라인 자료", rendered)
+            self.assertIn("교통 지도·공식 자료", rendered)
             for resource in region.transport_resources:
                 self.assertIn(resource["title"], rendered)
                 if resource.get("localPath"):
@@ -137,15 +137,19 @@ class StayTransportGuards(unittest.TestCase):
     def test_nice_public_transit_matches_daily_cards(self):
         region = next(r for r in self.trip.regions if r.slug == "nice")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("공항에서 공동 Multi voyages 6회를 준비", "74분",
-                      "Aéro 왕복", "별도 TER", "광역 ZOU"):
+        for token in ("공동 Multi voyages 12회로 시내·Èze 이동 준비", "74분",
+                      "Aéro 왕복", "별도 TER", "Gare d’Èze"):
             self.assertIn(token, rendered)
         for day in range(7, 13):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
         chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
                    "06_Nice_Cote_d_Azur_v2.0.md").read_text(encoding="utf-8")
-        for stale in ("단발권은 €1.80", "1일권(€5.00)"):
+        for stale in ("€1.80", "€12.60", "1일권 €5", "1일권(€5.00)"):
             self.assertNotIn(stale, chapter, f"Nice 챕터에 폐기된 교통 요금이 남음: {stale}")
+        day10 = json.loads((ROOT / "data" / "daily-cards" / "day-10.json").read_text(encoding="utf-8"))
+        self.assertNotIn("602", json.dumps(day10, ensure_ascii=False))
+        self.assertIn("Gare d’Èze", json.dumps(day10, ensure_ascii=False))
+        self.assertIn("83", json.dumps(day10, ensure_ascii=False))
 
 
 if __name__ == "__main__":

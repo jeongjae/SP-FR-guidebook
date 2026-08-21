@@ -1016,7 +1016,7 @@ def build_region(r: Region, trip: Trip) -> str:
 
     resources = r.transport_resources
     if resources:
-        parts.append(sec_head("OFFLINE MAPS", "교통 지도·오프라인 자료"))
+        parts.append(sec_head("OFFICIAL MAPS", "교통 지도·공식 자료"))
         resource_cards = []
         for resource in resources:
             local_path = resource.get("localPath")

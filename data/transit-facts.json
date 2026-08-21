@@ -82,8 +82,8 @@
     },
     "nice": {
       "recommendation": {
-        "title": "공항에서 공동 Multi voyages 6회를 준비",
-        "summary": "Day 7 공항→숙소와 Day 11 Nice↔Saint-Jean-Cap-Ferrat를 합치면 두 사람 기준 약 6회 이용이다. 공항 T2에서 익명 충전카드 La Carte를 받고 Multi voyages 6회를 담아 함께 쓰는 편이 일정에 맞다."
+        "title": "공동 Multi voyages 12회로 시내·Èze 이동 준비",
+        "summary": "Day 7 공항→숙소 2회, Day 10 Èze 83번 왕복 4회, Day 11 Saint-Jean-Cap-Ferrat 왕복 4회를 합치면 두 사람 기준 10회다. 공항 T2에서 익명 La Carte에 12회를 담아 환승 지연이나 시장 접근 2회를 여유로 둔다."
       },
       "products": [
         {
@@ -91,7 +91,7 @@
           "price": "회당 €1.70부터",
           "shared": true,
           "accessNote": "충전 카드로 공항 가능",
-          "fit": "두 사람이 Day 7·11에 함께 쓰는 기본안"
+          "fit": "두 사람이 Day 7·10·11에 함께 쓰고 2회 여유를 두는 기본안"
         },
         {
           "name": "La Carte 익명 카드",
@@ -112,19 +112,20 @@
         "승차권은 탑승 전에 준비한다. 공항 T2 tram 승강장의 자동발매기에서 La Carte와 Multi voyages를 살 수 있다.",
         "공동 카드를 쓰면 첫 탑승과 환승 때마다 동행 인원수만큼 검증한다. 두 사람이면 매번 두 번 검증한다.",
         "환승은 첫 검증부터 74분 안에 허용된다. 버스는 왕복이나 같은 노선 연장으로 쓸 수 없고, tram도 왕복은 허용되지 않는다.",
-        "Day 11의 Tram 1→15번 bus 환승도 각각 검증하되 74분 안의 한 여정으로 사용한다."
+        "Day 11의 Tram 1→15번 bus 환승도 각각 검증하되 74분 안의 한 여정으로 사용한다.",
+        "Multi voyages는 다시 충전할 수 있다. 12회를 모두 쓰면 필요한 횟수만 추가한다."
       ],
       "exceptions": [
         "Day 9 Nice-Ville↔Antibes↔Cannes는 SNCF TER다. Lignes d’Azur 시내권과 분리해 당일 SNCF Connect에서 표와 운행을 확인한다.",
-        "Day 10은 TER와 광역 ZOU 602 등을 섞는다. Multi voyages가 모든 광역·국경 구간을 덮는다고 가정하지 않고 각 구간을 당일 확인한다.",
+        "Day 10은 TER와 Lignes d’Azur 83을 조합한다. 83은 Gare d’Èze↔Èze Village만 이용하며 TER 연결이 나쁘면 Villefranche 또는 Èze 중 하나를 생략한다.",
         "Day 12는 Nice역에서 렌터카를 인수하므로 공항 왕복권을 소진할 귀환 이동이 없다."
       ],
       "itineraryUses": [
         {"day": 7, "label": "NCE T2→도심은 Tram 2; 두 사람 각 1회"},
         {"day": 8, "label": "시장·구시가지·성채 언덕은 도보"},
         {"day": 9, "label": "Antibes·Cannes는 별도 TER"},
-        {"day": 10, "label": "Villefranche·Monaco·Menton은 TER와 광역 bus를 구간별 구매"},
-        {"day": 11, "label": "Tram 1→15번 bus 환승과 귀환; 두 사람 각 2회 여정"},
+        {"day": 10, "label": "Villefranche→Èze-sur-Mer는 TER, Gare d’Èze↔Èze Village는 83번 왕복, 이후 Monaco·Menton은 TER"},
+        {"day": 11, "label": "숙소→Libération 시장은 도보 기본; Tram 1→15번 bus 환승과 귀환은 두 사람 각 2회 여정"},
         {"day": 12, "label": "Nice역에서 렌터카 인수 후 Provence 이동"}
       ],
       "sources": [
