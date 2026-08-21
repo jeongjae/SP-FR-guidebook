@@ -72,13 +72,13 @@ def _load_validated_json(data_path: Path) -> dict:
 
 
 def date_label(d: date) -> str:
-    """9.4 (금) — 현장에서 읽는 형식.
+    """8.29(토) — 현장에서 읽는 형식.
 
     연도는 붙이지 않는다. 한 해 안의 여행이고, 날짜 옆에 2026 이 있으면
     정작 읽어야 할 월·일이 묻힌다. 요일은 괄호로 묶어 숫자와 갈라 놓는다 —
     시장 요일과 휴관일이 요일로 정해지는 여행이라 요일이 빨리 읽혀야 한다.
     """
-    return f"{d.month}.{d.day} ({WEEKDAY_KO[d.weekday()]})"
+    return f"{d.month}.{d.day}({WEEKDAY_KO[d.weekday()]})"
 
 
 # ---------------------------------------------------------------- Place
@@ -115,6 +115,8 @@ class Place:
     kind: str = "spot"          # spot | walk | node
     grade: str | None = None    # essential | priority | optional | ...
     grade_label: str | None = None
+    food_kind: str | None = None
+    meal_role: str | None = None
     pin: str | None = None
     wiki: str | None = None
     wiki_lang: str = "en"
@@ -135,6 +137,15 @@ class Place:
     @property
     def url(self) -> str:
         return f"places/{self.slug}.html"
+
+    @property
+    def is_food(self) -> bool:
+        """식당·카페·미식 장소 여부."""
+        if self.food_kind in ("RESTAURANT", "CAFE", "BAKERY", "MARKET", "FOOD_HALL", "WINE_BAR"):
+            return True
+        if self.meal_role in ("PRIMARY", "BACKUP", "MARKET", "SELF_CATERING"):
+            return True
+        return False
 
     @property
     def has_deep_guide(self) -> bool:
@@ -609,6 +620,7 @@ def load_trip() -> Trip:
         places[row["slug"]] = Place(
             slug=row["slug"], name=row["name"], region=row["region"],
             kind=row["kind"], grade=row["grade"], grade_label=row["grade_label"],
+            food_kind=body.get("food_kind"), meal_role=body.get("meal_role"),
             pin=row["pin"], wiki=row["wiki"], wiki_lang=row["wiki_lang"],
             map_query=(map_queries.get(row["slug"]) or {}).get("query"),
             summary=body.get("summary", ""),

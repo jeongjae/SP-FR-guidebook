@@ -483,9 +483,7 @@
     "marche-de-la-liberation": {
       "displayName": "Marché de la Libération",
       "region": "nice",
-      "days": [
-        11
-      ]
+      "days": []
     },
     "marche-forville": {
       "displayName": "Marché Forville (Cannes)",

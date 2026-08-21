@@ -23,10 +23,10 @@ source: source/CURRENT/30_Places/restaurant-beatrice.md
 빌라 관람과 분수 정원 산책 사이에 즐기는 신선한 샐러드, 생선 요리, 그리고 프로방스 디저트는 단순한 식사를 넘어 벨 에포크 시대 귀족의 일상을 체험하는 특별한 순간을 선사한다.
 
 ### Editor’s Verdict
-> 여행자가 직접 희망한 빌라 런치 장소(WISH-02)로, 빌라 입장권 소지자만 이용할 수 있는 독점적 공간이다. 점심 식사(12:00~15:00)와 9개 테마 정원 산책을 하나의 완결된 데스티네이션 블록으로 구성하여 Day 11(화요일) 생활·회복일에 방문하면 무리 없이 깊이 있는 휴식을 완성할 수 있다.
+> 여행자가 직접 희망한 빌라 런치 장소(WISH-02)로, 빌라 입장권 소지자만 이용할 수 있는 독점적 공간이다. 점심 식사(12:00~15:00)와 9개 테마 정원 산책을 하나의 완결된 데스티네이션 블록으로 구성하여 Day 11(화요일) 빌프랑슈 및 생장캅페라 빌라 관람 연계 점심으로 방문하면 깊이 있는 여정을 완성할 수 있다.
 
 - **Best For**: 지중해 파노라마 오션뷰 런치, 저택 정원 산책과 결합된 티 타임
-- **Best Context**: Day 11 (화요일) 니스 오전 시장 후 생장캅페라 빌라 관람 연계 점심
+- **Best Context**: Day 11 (화요일) 빌프랑슈 항만 산책 후 생장캅페라 빌라 관람 연계 점심
 - **Recommended Duration**: 60~80분
 
 ## 더 깊이
@@ -51,4 +51,4 @@ source: source/CURRENT/30_Places/restaurant-beatrice.md
 | **이용 조건** | **빌라 에프뤼시 드 로스차일드 입장객 전용** (빌라 입장료 €17 별도) |
 | **예약** | 점심 피크 시간대(12:30~13:30) 테라스석 예약 권장 |
 | **접근 교통** | 니스 시내에서 15번 버스 탑승 후 Passable / Villa Ephrussi 정류장 하차 도보 5분 |
-| **공식 정보** | [공식 안내 페이지](https://www.villa-ephrussi.com/fr/preparer-sa-visite/le-restaurant-salon-de-the) (verified_at: 2026-08-21) |
+| **공식 정보** | [공식 웹사이트](https://www.villa-ephrussi.com/fr/preparer-sa-visite/le-restaurant-salon-de-the) (verified_at: 2026-08-21) |

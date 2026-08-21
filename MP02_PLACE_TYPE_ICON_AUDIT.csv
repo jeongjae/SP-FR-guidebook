@@ -1,0 +1,132 @@
+region,place_id,place_name,place_kind,visual_type,icon_present,badge_label,status
+barcelona,barri-gotic,Barri Gòtic,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+barcelona,cau-ferrat,Cau Ferrat,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+barcelona,sagrada-familia,Sagrada Família,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+barcelona,sant-pau-recinte-modernista,Sant Pau Recinte Modernista,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+barcelona,bodega-joan,Bodega Joan,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+barcelona,la-paradeta-sagrada-familia,La Paradeta Sagrada Família,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+barcelona,bar-canete,Bar Cañete,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+barcelona,biblioteca-de-catalunya,Biblioteca de Catalunya,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+barcelona,macba,MACBA,spot,ATTRACTION,YES,선택|명소,PASS_ATTRACTION_ICON
+barcelona,palau-de-maricel,Palau de Maricel,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+barcelona,mercat-concepcio,Mercat de la Concepció,MARKET,FOOD,YES,우선 추천|식당·미식,PASS_FOOD_ICON
+barcelona,la-zorra,La Zorra,RESTAURANT,FOOD,YES,우선 추천|식당·미식,PASS_FOOD_ICON
+girona,calella-de-palafrugell,Calella de Palafrugell,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+girona,collioure,Collioure,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+girona,girona-cathedral,Girona Cathedral,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+girona,passeig-de-la-muralla,Passeig de la Muralla,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+girona,onyar,Onyar 강변,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+girona,peratallada,Peratallada,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+girona,casa-marieta,Casa Marieta,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+girona,pals,Pals,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+girona,peralada,Peralada,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+girona,mercat-del-lleo,Mercat del Lleó,MARKET,FOOD,YES,우선 추천|식당·미식,PASS_FOOD_ICON
+nice,colline-du-chateau,Colline du Château (성채 언덕),spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,cours-saleya,Cours Saleya,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,le-rocher,Le Rocher — 모나코 구시가지,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,le-suquet,Le Suquet — 칸 구시가지,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,marche-forville,Marché Forville,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,menton,Menton (멘통),spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,nice-walk,Nice Old Town–Castle Hill Walk,walk,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,cannes-walk,Cannes Forville–Suquet–Croisette Walk,walk,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,monaco-walk,Monaco Rocher–Port–Monte Carlo Walk,walk,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,promenade-des-anglais,Promenade des Anglais,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,vieux-nice,Vieux Nice — 구시가지,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+nice,le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+nice,restaurant-beatrice,Restaurant & Salon de Thé Béatrice,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+nice,cannes,Cannes,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+nice,marche-de-la-liberation,Marché de la Libération,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+nice,monaco,Monaco,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+nice,villa-ephrussi-de-rothschild,Villa Ephrussi de Rothschild,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+aix,atelier-des-lauves,Atelier des Lauves,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+aix,calanques,Calanques,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+aix,cassis,Cassis 항구,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+aix,cours-mirabeau,Cours Mirabeau,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+aix,place-richelme-place-des-precheurs,시장 — Place Richelme · Place des Prêcheurs,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+aix,vieil-aix,Vieil Aix — 구시가지,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+aix,patisserie-weibel,Pâtisserie Weibel,CAFE,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+aix,chez-gilbert-cassis,Chez Gilbert,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+aix,bastide-du-jas-de-bouffan,Bastide du Jas de Bouffan,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+aix,carrieres-de-bibemus,Carrières de Bibémus,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+aix,grasse,Grasse,spot,ATTRACTION,YES,선택|명소,PASS_ATTRACTION_ICON
+aix,marseille,Marseille,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+aix,vieux-port-marseille,Vieux-Port,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+aix,le-panier,Le Panier,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+aix,mucem,Mucem,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+aix,fort-saint-jean,Fort Saint-Jean,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+aix,notre-dame-de-la-garde,Notre-Dame de la Garde,spot,ATTRACTION,YES,선택|명소,PASS_ATTRACTION_ICON
+aix,montagne-sainte-victoire-terrain-des-peintres,Montagne Sainte-Victoire · Terrain des Peintres,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+aix,musee-granet,Musée Granet,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+aix,rotonde,Rotonde,spot,ATTRACTION,YES,선택|명소,PASS_ATTRACTION_ICON
+aix,saint-paul-de-vence,Saint-Paul-de-Vence,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+luberon,coustellet,Coustellet 생산자 시장,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+luberon,gordes,Gordes,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+luberon,lourmarin,Lourmarin,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+luberon,roussillon-sentier-des-ocres,Roussillon · Sentier des Ocres,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+luberon,abbaye-de-senanque,Abbaye de Sénanque,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+luberon,bonnieux,Bonnieux,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+luberon,goult,Goult,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+luberon,l-isle-sur-la-sorgue,L’Isle-sur-la-Sorgue,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+luberon,menerbes,Ménerbes,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+luberon,oppede-le-vieux,Oppède-le-Vieux,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+luberon,village-des-bories,Village des Bories,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+avignon,les-halles,Les Halles,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,palais-des-papes,Palais des Papes,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,pont-saint-benezet,Pont Saint-Bénézet,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,pont-du-gard,Pont du Gard,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,rocher-des-doms,Rocher des Doms,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,uzes,Uzès Place aux Herbes·구시가지,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,arles,Arles,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,arenes-d-arles,Arènes d’Arles,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,theatre-antique-arles,Théâtre antique,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+avignon,fou-de-fafa-avignon,Fou de Fafa,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+avignon,les-cocottes-saint-louis,Les Cocottes Saint-Louis,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+avignon,le-gibolin-arles,Le Gibolin,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+avignon,carrieres-des-lumieres,Carrières des Lumières,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+avignon,glanum,Glanum,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+avignon,les-baux-de-provence,Les Baux-de-Provence,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+avignon,saint-paul-de-mausole,Saint-Paul-de-Mausole,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+avignon,saint-remy-de-provence,Saint-Rémy-de-Provence,spot,ATTRACTION,YES,대체|명소,PASS_ATTRACTION_ICON
+avignon,place-du-forum-arles,Place du Forum,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+avignon,cloitre-saint-trophime,Cloître Saint-Trophime,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+avignon,fondation-vincent-van-gogh-arles,Fondation Vincent van Gogh Arles,spot,ATTRACTION,YES,선택|명소,PASS_ATTRACTION_ICON
+avignon,la-roquette,La Roquette,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+lyon,annecy,Annecy 구시가지,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+lyon,croix-rousse,Croix-Rousse,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+lyon,fourviere,Fourvière,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+lyon,halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+lyon,vieux-lyon,Vieux Lyon · 트라불,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+lyon,cafe-comptoir-abel,Café Comptoir Abel,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+lyon,daniel-et-denise,Daniel et Denise,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+lyon,chez-mamie-lise,Chez Mamie Lise,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+lyon,bellecour,Bellecour,spot,ATTRACTION,YES,선택|명소,PASS_ATTRACTION_ICON
+lyon,parc-de-la-tete-d-or,Parc de la Tête d'Or,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+paris,bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,grand-palais,Grand Palais,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,latin-quarter,Latin Quarter,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,le-marais,Le Marais,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,montmartre-south-pigalle,Montmartre · South Pigalle,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-carnavalet,Musée Carnavalet,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-d-art-moderne-de-paris,Musée d'Art Moderne de Paris,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-d-orsay,Musée d'Orsay,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-de-l-orangerie,Musée de l'Orangerie,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-du-louvre,Musée du Louvre,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-du-luxembourg,Musée du Luxembourg,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-guimet,Musée Guimet,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-gustave-moreau,Musée Gustave Moreau,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-jacquemart-andre,Musée Jacquemart-André,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-marmottan-monet,Musée Marmottan Monet,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-picasso-paris,Musée Picasso Paris,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,musee-rodin,Musée Rodin,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,notre-dame-de-paris,Notre-Dame de Paris,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,petit-palais,Petit Palais,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,versailles,Versailles,spot,ATTRACTION,YES,필수|명소,PASS_ATTRACTION_ICON
+paris,boulangerie-pichard,Boulangerie Pichard,BAKERY,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+paris,marche-convention,Marché Convention,MARKET,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+paris,cafe-du-commerce,Café du Commerce,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+paris,le-grand-pan,Le Grand Pan,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+paris,bouillon-chartier-montparnasse,Bouillon Chartier Montparnasse,RESTAURANT,FOOD,YES,필수|식당·미식,PASS_FOOD_ICON
+paris,bnf-richelieu,BnF Richelieu,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+paris,centre-pompidou,Centre Pompidou,spot,ATTRACTION,YES,비추천|명소,PASS_ATTRACTION_ICON
+paris,giverny,Giverny,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON
+paris,montorgueil,Montorgueil,spot,ATTRACTION,YES,우선 추천|명소,PASS_ATTRACTION_ICON

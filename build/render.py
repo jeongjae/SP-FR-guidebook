@@ -380,12 +380,18 @@ def place_card(p: Place, rel: str, large: bool = False) -> str:
     grade_html = badge(*grade) if grade else ""
     url = f"{rel}/places/{p.slug}.html"
 
+    type_badge = (
+        f'<span class="badge" title="식당·미식" aria-label="식당·미식">{ic("food")}식당·미식</span>'
+        if p.is_food else
+        f'<span class="badge" title="명소·관광" aria-label="명소·관광">{ic("pin")}명소</span>'
+    )
+
     if large:
         thumb = figure(img, rel, "content", "thumb", "(min-width:600px) 50vw, 100vw")
         return f"""<article class="card place-card-lg">
   {thumb}
   <div class="card-body">
-    <div class="metarow">{grade_html}</div>
+    <div class="metarow">{grade_html}{type_badge}</div>
     <h3 class="card-title"><a class="card-link" href="{url}">{esc(p.name)}</a></h3>
     <p class="card-dek">{esc(p.summary)}</p>
   </div>
@@ -397,7 +403,7 @@ def place_card(p: Place, rel: str, large: bool = False) -> str:
   <div class="card-body" style="padding:0">
     <h3 class="card-title"><a class="card-link" href="{url}">{esc(p.name)}</a></h3>
     <p class="card-dek">{esc(p.summary)}</p>
-    <div class="metarow">{grade_html}</div>
+    <div class="metarow">{grade_html}{type_badge}</div>
   </div>
 </article>"""
 
@@ -408,8 +414,8 @@ def day_card(d: Day, rel: str, region: Region | None = None) -> str:
     return f"""<article class="card day-card">
   <div class="card-body">
     <div class="day-card-head">
-      <span class="day-num">DAY {d.n}</span>
       <span class="day-date">{esc(d.date_label)}</span>
+      <span class="day-num">DAY {d.n}</span>
     </div>
     <div class="day-route"><a class="card-link" href="{rel}/{d.url}">{esc(d.city)}</a></div>
     <p class="card-dek">{esc(d.title)}</p>
@@ -570,7 +576,7 @@ def build_place(p: Place, trip: Trip) -> str:
     for n in sorted(p.days):
         d = trip.day(n)
         if d:
-            meta.append(f'<a href="{rel}/{d.url}">Day {n} · {esc(d.date_label)}</a>')
+            meta.append(f'<a href="{rel}/{d.url}">{esc(d.date_label)} · Day {n}</a>')
 
     actions = []
     # 목적지도 이름을 먼저 쓴다. 좌표가 없어 길찾기 버튼 자체가 없던 장소가
@@ -701,8 +707,8 @@ def build_day(d: Day, trip: Trip) -> str:
     parts = [f"""<div class="wrap">
 <div class="stack-lg" style="padding-top:1.5rem">
 <header>
-  <div class="metarow"><span class="day-num">DAY {d.n}</span>
-    <span class="day-date">{esc(d.date_label)}</span></div>
+  <div class="metarow"><span class="day-date">{esc(d.date_label)}</span>
+    <span class="day-num">DAY {d.n}</span></div>
   <h1>{esc(d.city)}</h1>
   <p class="day-summary">{esc(d.title)}</p>
   <div class="metarow">{''.join(head_marks)}</div>
@@ -788,15 +794,92 @@ def build_day(d: Day, trip: Trip) -> str:
         (f"Day {x.n}", f"{rel}/{x.url}", x.n == d.n)
         for x in (region.days if region else [])])
 
-    index_search(f"Day {d.n} · {d.date_label} {d.city}", d.url, "day", d.title)
+    index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")
 
     return page(
-        title=f"Day {d.n} · {d.city}", body="\n".join(parts), rel=rel,
+        title=f"{d.date_label} · Day {d.n} · {d.city}", body="\n".join(parts), rel=rel,
         tab="today", region=d.region, country=d.country, subnav=sib,
         description=d.title,
         trail=[("홈", "index.html"), ("전체 일정", "schedule.html"),
-               (f"Day {d.n}", None)],
+               (f"{d.date_label} · Day {d.n}", None)],
     )
+
+
+def link_food_text(text: str, rel: str, trip: Trip) -> str:
+    """Link recognized canonical food places mentioned within text."""
+    escaped = esc(text)
+    name_to_place = getattr(trip, "_food_name_map", None)
+    if name_to_place is None:
+        name_to_place = {}
+        for p in trip.places.values():
+            name_to_place[p.name] = p
+            if p.slug == "bar-canete":
+                name_to_place["Bar Cañete"] = p
+            elif p.slug == "bodega-joan":
+                name_to_place["Bodega Joan"] = p
+            elif p.slug == "la-paradeta-sagrada-familia":
+                name_to_place["La Paradeta"] = p
+            elif p.slug == "la-zorra":
+                name_to_place["La Zorra"] = p
+            elif p.slug == "restaurant-beatrice":
+                name_to_place["Restaurant & Salon de Thé Béatrice"] = p
+                name_to_place["Restaurant Béatrice"] = p
+            elif p.slug == "le-figuier-de-saint-esprit":
+                name_to_place["Le Figuier de Saint-Esprit"] = p
+            elif p.slug == "patisserie-weibel":
+                name_to_place["Pâtisserie Weibel"] = p
+                name_to_place["Weibel"] = p
+            elif p.slug == "chez-gilbert-cassis":
+                name_to_place["Chez Gilbert"] = p
+            elif p.slug == "fou-de-fafa-avignon":
+                name_to_place["Fou de Fafa"] = p
+            elif p.slug == "les-cocottes-saint-louis":
+                name_to_place["Les Cocottes Saint-Louis"] = p
+            elif p.slug == "le-gibolin-arles":
+                name_to_place["Le Gibolin"] = p
+            elif p.slug == "cafe-comptoir-abel":
+                name_to_place["Café Comptoir Abel"] = p
+            elif p.slug == "daniel-et-denise":
+                name_to_place["Daniel et Denise"] = p
+            elif p.slug == "chez-mamie-lise":
+                name_to_place["Chez Mamie Lise"] = p
+            elif p.slug == "halles-de-lyon-paul-bocuse":
+                name_to_place["Halles Paul Bocuse"] = p
+                name_to_place["Halles de Lyon"] = p
+            elif p.slug == "cafe-du-commerce":
+                name_to_place["Café du Commerce"] = p
+            elif p.slug == "bouillon-chartier-montparnasse":
+                name_to_place["Bouillon Chartier Montparnasse"] = p
+                name_to_place["Bouillon Chartier"] = p
+            elif p.slug == "le-grand-pan":
+                name_to_place["Le Grand Pan"] = p
+            elif p.slug == "boulangerie-pichard":
+                name_to_place["Boulangerie Pichard"] = p
+                name_to_place["Pichard"] = p
+            elif p.slug == "marche-convention":
+                name_to_place["Marché Convention"] = p
+            elif p.slug == "mercat-concepcio":
+                name_to_place["Mercat de la Concepció"] = p
+            elif p.slug == "mercat-del-lleo":
+                name_to_place["Mercat del Lleó"] = p
+            elif p.slug == "marche-forville":
+                name_to_place["Marché Forville"] = p
+            elif p.slug == "cours-saleya":
+                name_to_place["Cours Saleya"] = p
+            elif p.slug == "marche-de-la-liberation":
+                name_to_place["Marché de la Libération"] = p
+            elif p.slug == "les-halles":
+                name_to_place["Les Halles d'Avignon"] = p
+                name_to_place["Les Halles"] = p
+
+        trip._food_name_map = sorted(name_to_place.items(), key=lambda x: len(x[0]), reverse=True)
+
+    for name, p in trip._food_name_map:
+        esc_name = esc(name)
+        pattern = re.compile(rf"(?<![\">])({re.escape(esc_name)})(?![^<]*</a>)")
+        if pattern.search(escaped):
+            escaped = pattern.sub(f'<a href="{rel}/{p.url}">\\1</a>', escaped, count=1)
+    return escaped
 
 
 def build_region(r: Region, trip: Trip) -> str:
@@ -895,23 +978,40 @@ def build_region(r: Region, trip: Trip) -> str:
     dishes, spots = [], []
     for d in r.days:
         for item in d.food:
-            if item not in dishes:
-                dishes.append(item)
+            clean_item = item.strip()
+            # Filter generic execution notes and logistics from Regional Food Guide UI
+            if any(g in clean_item for g in [
+                "기내", "편의점", "물만", "이동용 물", "출발 시각", "숙소 간단식", "숙소 저녁",
+                "숙소식", "숙소 점심", "숙소권 간단", "숙소권 저녁 또는 숙소식", "숙소식 또는 동네",
+                "이동 중 간단식", "숙소 주변 가벼운 저녁", "가벼운 저녁", "가벼운 점심",
+                "이른 저녁", "저녁 무예약", "동네 저녁 (무예약)", "가까운 저녁",
+                "첫 장보기", "필수품만", "점심·휴식", "브런치·숙소", "숙소권 가벼운 점심",
+            ]):
+                continue
+            if clean_item not in dishes:
+                dishes.append(clean_item)
         for s in d.stops:
             if s.category == "food" and s.name not in [x.name for x in spots]:
                 spots.append(s)
     if dishes or spots:
         parts.append(f'<div id="food">{sec_head("EAT", "먹거리", rule=True)}</div>')
         if spots:
-            cards = "".join(f"""<article class="card food-card">
-  <div class="food-dish">{esc(s.name)}</div>
+            cards = []
+            for s in spots[:8]:
+                p = s.place
+                if p:
+                    dish_title = f'<a class="card-link" href="{rel}/{p.url}">{esc(s.name)}</a>'
+                else:
+                    dish_title = link_food_text(s.name, rel, trip)
+                cards.append(f"""<article class="card food-card">
+  <div class="food-dish">{dish_title}</div>
   <p class="food-why">{esc(s.summary)}</p>
   {f'<div class="metarow">{ic("ticket")}{esc(s.reservation)}</div>' if s.reservation else ''}
-</article>""" for s in spots[:8])
-            parts.append(f'<div class="grid grid-2">{cards}</div>')
+</article>""")
+            parts.append(f'<div class="grid grid-2">{"".join(cards)}</div>')
         if dishes:
             parts.append('<div class="prose"><ul>'
-                         + "".join(f"<li>{esc(x)}</li>" for x in dishes[:12])
+                         + "".join(f"<li>{link_food_text(x, rel, trip)}</li>" for x in dishes[:12])
                          + "</ul></div>")
 
     # --- Stay & Local Life ------------------------------------------------
@@ -972,8 +1072,8 @@ def build_region(r: Region, trip: Trip) -> str:
     arrive, leave = r.days[0], r.days[-1]
     parts.append(f"""<div class="prose">
 <ul>
-  <li><strong>도착</strong> — <a href="{rel}/{arrive.url}">Day {arrive.n} · {esc(arrive.date_label)} · {esc(arrive.city)}</a></li>
-  <li><strong>출발</strong> — <a href="{rel}/{leave.url}">Day {leave.n} · {esc(leave.date_label)} · {esc(leave.city)}</a></li>
+  <li><strong>도착</strong> — <a href="{rel}/{arrive.url}">{esc(arrive.date_label)} · Day {arrive.n} · {esc(arrive.city)}</a></li>
+  <li><strong>출발</strong> — <a href="{rel}/{leave.url}">{esc(leave.date_label)} · Day {leave.n} · {esc(leave.city)}</a></li>
 </ul>
 {'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes) + '</ul>' if modes else ''}
 </div>""")
@@ -1135,6 +1235,12 @@ def build_schedule(trip: Trip) -> str:
         blocks.append(f'<div class="grid grid-2">{day_card(last, rel)}</div>')
 
     jump = tabs_strip([(r.name, f"#{r.slug}", False) for r in trip.regions])
+    regions_payload = json.dumps([{
+        "slug": r.slug, "name": r.name,
+        "start": r.days[0].date.isoformat(),
+        "end": r.days[-1].date.isoformat()
+    } for r in trip.regions], ensure_ascii=False)
+
     body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header>
   <h1>전체 일정</h1>
@@ -1142,9 +1248,11 @@ def build_schedule(trip: Trip) -> str:
     43일 42박 · 8개 거점</p>
 </header>
 {''.join(blocks)}
+<script type="application/json" id="schedule-regions-data">{regions_payload}</script>
 </div></div>"""
     return page(title="전체 일정", body=body, rel=rel, tab="schedule",
                 subnav=jump, description="43일 전체 일정",
+                bar_title="전체 일정",
                 trail=[("홈", "index.html"), ("전체 일정", None)])
 
 
@@ -1157,7 +1265,8 @@ def build_home(trip: Trip, res: dict) -> str:
     """
     rel = "."
     days_payload = [{
-        "n": d.n, "date": d.date.isoformat(), "city": d.city, "title": d.title,
+        "n": d.n, "date": d.date.isoformat(), "date_label": d.date_label,
+        "city": d.city, "title": d.title,
         "url": d.url, "region": d.region,
         "next": [{"t": s.start, "n": s.name,
                   "u": f"places/{s.place.slug}.html" if s.place else None}
@@ -1265,7 +1374,7 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
                     s_seen.add(s.id)
                     stops.append(s)
         day_links = "".join(
-            f'<li><a href="../{d.url}">Day {d.n} · {esc(d.date_label)}</a> — '
+            f'<li><a href="../{d.url}">{esc(d.date_label)} · Day {d.n}</a> — '
             f"{esc(d.title)}</li>" for d in r.days)
         out[f"{r.slug}.html"] = page(
             title=f"{r.name} 지도", rel=rel, tab="map", region=r.slug,

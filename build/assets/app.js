@@ -234,7 +234,9 @@
       var nx = today.next[0];
       panel.innerHTML =
         '<section class="action-card">'
-        + '<span class="label">TODAY · DAY ' + today.n + '</span>'
+        + '<div class="day-card-head" style="margin-bottom:var(--s2)">'
+        + '<span class="day-date">' + h(today.date_label || today.date) + '</span>'
+        + '<span class="day-num">DAY ' + today.n + '</span></div>'
         + '<div class="action-when" style="font-size:var(--t-h2)">' + h(today.city) + '</div>'
         + '<p class="card-dek">' + h(today.title) + '</p>'
         + (nx ? '<div style="margin-top:1rem"><span class="label">NEXT</span>'
@@ -262,6 +264,61 @@
         + '<div class="btn-row" style="margin-top:1rem">'
         + '<a class="btn btn-secondary" href="schedule.html">전체 일정 다시 보기</a>'
         + '</div></section>';
+    }
+  }
+
+  /* ---- Schedule 페이지 — 현재 날짜 기준 지역 감지 및 상단바/탭 활성화 ---- */
+  var schedDataEl = document.getElementById('schedule-regions-data');
+  if (schedDataEl) {
+    try {
+      var regions = JSON.parse(schedDataEl.textContent);
+      var now3 = new Date();
+      var iso3 = now3.getFullYear() + '-'
+        + String(now3.getMonth() + 1).padStart(2, '0') + '-'
+        + String(now3.getDate()).padStart(2, '0');
+
+      var curReg = null;
+      var isPreTrip = false;
+      var isPostTrip = false;
+
+      for (var rIdx = 0; rIdx < regions.length; rIdx++) {
+        if (iso3 >= regions[rIdx].start && iso3 <= regions[rIdx].end) {
+          curReg = regions[rIdx];
+          break;
+        }
+      }
+      if (!curReg && regions.length > 0) {
+        if (iso3 < regions[0].start) {
+          curReg = regions[0];
+          isPreTrip = true;
+        } else if (iso3 > regions[regions.length - 1].end) {
+          curReg = regions[regions.length - 1];
+          isPostTrip = true;
+        }
+      }
+
+      if (curReg) {
+        var tbTitle = document.querySelector('.topbar .tb-title');
+        if (tbTitle) {
+          if (isPreTrip) {
+            tbTitle.textContent = 'NEXT · ' + curReg.name;
+          } else if (isPostTrip) {
+            tbTitle.textContent = 'Trip Complete · ' + curReg.name;
+          } else {
+            tbTitle.textContent = curReg.name;
+          }
+        }
+
+        var tabLink = document.querySelector('.tabs a[href="#' + curReg.slug + '"]');
+        if (tabLink) {
+          tabLink.setAttribute('aria-current', 'page');
+          setTimeout(function () {
+            tabLink.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+          }, 150);
+        }
+      }
+    } catch (err) {
+      /* fallback gracefully */
     }
   }
 })();

@@ -19,8 +19,8 @@ status: "chapter-derived master itinerary; booking values pending"
 | 7 | 9/4 금 | Nice | Bàscara→BCN 공항 반납→Nice 이동 | Bàscara 체크아웃, BCN T1 렌터카 반납 **12:30 으로 변경 요청** (예약서 14:00), **VY1521 15:30→NCE 16:55** (확정 [CONFIRMED]), 트램 2호선 이동 후 Palais ALZIRA 체크인 (18:00~19:00) | 도착 후 숙소 주변 산책 및 가벼운 저녁 | 4~5 | 없음 — 항공·숙소 확정 |
 | 8 | 9/5 토 | Nice | Nice 시장·구시가지·지형 | Cours Saleya, Vieux Nice, Castle Hill | Port 또는 해변 | 3 | 시장·숙소 |
 | 9 | 9/6 일 | Nice | 앙티브 요새마을과 Cannes 당일치기 | Nice→Antibes(Vieil Antibes·Marché Provençal)→Cannes(Forville·Le Suquet·Vieux-Port·Croisette)→Nice | 쇼핑·해변 연장 삭제 가능 | 3~4 | TER |
-| 10 | 9/7 월 | Nice | 빌프랑슈·에즈·모나코·망통 4개 도시 연계 당일치기 | Nice→Villefranche(구시가지·항만)→Èze Village(중세절벽마을)→Monaco(Le Rocher·점심)→Menton(구시가지·사블레트·저녁)→Nice | 지연 시 부속관람 축소, 피로 시 망통 저녁 생략 후 니스 조기 복귀 | 4 | TER + 버스 602 |
-| 11 | **9/8 화** | **Nice** | 생활·회복·선택문화 | Libération 시장, 사진미술관 선택, 세탁·Promenade | 사진미술관·추가마을 삭제 가능 | 2 | 사진미술관·렌터카 준비 |
+| 10 | 9/7 월 | Nice | Monaco와 Menton 당일치기 | Nice→Monaco(Le Rocher·Port Hercule·점심)→Menton(구시가지·사블레트·저녁)→Nice | 지연 시 부속관람 축소, 피로 시 망통 저녁 생략 후 니스 조기 복귀 | 4 | TER |
+| 11 | 9/8 화 | Nice | Villefranche·Villa Ephrussi·Èze 코트다쥐르 해안 당일치기 | Nice→Villefranche(구시가지·항만)→Saint-Jean-Cap-Ferrat(Villa Ephrussi & Restaurant Béatrice 런치)→Èze Village(중세절벽마을·이국적정원)→Nice | 피로 시 에즈 축소 후 니스 조기 복귀 | 3 | TER + 버스 15/82/83 |
 | 12 | **9/9 수** | **Aix-en-Provence** | NCE 렌터카와 Provence 진입 | Nice역 렌터카 09:00 인수 (확정 [CONFIRMED]), Saint-Paul, Grasse, Aix 체크인 | 지연 시 Grasse 우선 삭제 | 5 | Aix 숙소 |
 | 13 | **9/10 목** | Aix-en-Provence | Aix 시장·구시가지·세잔 아틀리에·Granet | 목요시장, Vieil Aix, Atelier des Lauves(세잔 아틀리에), Musée Granet, Cours Mirabeau | 피로 시 Granet 압축·카페 휴식 | 3 | Atelier 예약·식당 |
 | 14 | **9/11 금** | Aix-en-Provence | Cassis와 Calanques 해안 당일치기 | Aix↔Cassis 차량 왕복, 칼랑크 유람선(3개 피오르드), 카시스 항구 점심, Port-Miou 도보 | 강풍·결항 시 Cap Canaille 드라이브 대체 | 3 | 유람선·주차 |
