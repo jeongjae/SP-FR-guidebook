@@ -1,0 +1,11 @@
+action_id,day_date,venue_name,time_slot,deadline_window,official_channel,user_action_tier,fallback_venue,status
+MB-01,Day 03 (8.31),Bar Cañete (Barcelona),13:30,T-30 (Done/Ready),barcanete.com,ACTION-A (T-7 Final Lock),Cervecería Catalana,PASS
+MB-02,Day 04 (9.01),La Zorra (Sitges),13:00,T-30 (Done/Ready),lazorra.es,ACTION-A (T-7 Final Lock),El Cable Tapas,PASS
+MB-03,Day 09 (9.06),Le Figuier de Saint-Esprit (Antibes),12:15,T-14 (8.23),lefiguierdesaintesprit.fr,ACTION-A (T-7 Window),Restaurant de Bacon,PASS
+MB-04,Day 14 (9.11),Chez Gilbert (Cassis),12:30,T-14 (8.28),chezgilbert.net,ACTION-B (Travel Leg),Le Grand Large Cassis,PASS
+MB-05,Day 19 (9.16),Fou de Fafa (Avignon),19:30,T-14 (9.02),foudefafa.com,ACTION-B (Travel Leg),L'Épicerie Avignon,PASS
+MB-06,Day 22 (9.19),Le Gibolin (Arles),12:00,T-14 (9.05),legibolin.fr,ACTION-B (Travel Leg),Le Criquet Arles,PASS
+MB-07,Day 23 (9.20),Café Comptoir Abel (Lyon),19:30,T-14 (9.06),maisonabel.fr,ACTION-B (Travel Leg),Bouchon Les Lyonnais,PASS
+MB-08,Day 24 (9.21),Daniel et Denise (Lyon),19:45,T-14 (9.07),danieletdenise.fr,ACTION-B (Travel Leg),Daniel & Denise Croix-Rousse,PASS
+MB-09,Day 34 (10.01),Le Grand Pan (Paris),20:00,T-14 (9.17),legrandpan.fr,ACTION-B (Paris Leg),Bistrot Paul Bert,PASS
+MB-10,Day 41 (10.08),Le Grand Pan (Paris Farewell),20:00,T-14 (9.24),legrandpan.fr,ACTION-B (Paris Leg),L'Ami Jean Paris,PASS

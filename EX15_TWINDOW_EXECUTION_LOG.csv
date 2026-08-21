@@ -1,0 +1,12 @@
+recheck_id,venue_slug,region,t_window,target_date,execution_status,operational_notes,status
+VR-01,le-figuier-de-saint-esprit,Antibes,T-14,2026-08-23,CHECKED_PASS,Sunday lunch booking channel active; fallback to Bacon verified,PASS
+VR-02,chez-gilbert-cassis,Cassis,T-14,2026-08-28,CHECKED_PASS,Bouillabaisse reservation window active; fallback to Le Grand Large,PASS
+VR-03,fou-de-fafa-avignon,Avignon,T-14,2026-09-02,CHECKED_PASS,Dinner reservation channel active; fallback to L'Épicerie,PASS
+VR-04,cafe-comptoir-abel,Lyon,T-14,2026-09-06,CHECKED_PASS,Dinner reservation open; fallback to Bouchon Les Lyonnais,PASS
+VR-05,daniel-et-denise,Lyon,T-14,2026-09-07,CHECKED_PASS,Créqui location dinner open; fallback to Daniel & Denise Croix-Rousse,PASS
+VR-06,chez-mamie-lise,Annecy,T-7,2026-08-21 (T-8/7 Prep),DUE_ACTION_READY,Lunch fondues operating; reservation recommended T-7,PASS
+VR-07,le-grand-pan,Paris,T-7,2026-08-21 (T-8/7 Prep),DUE_ACTION_READY,15e bistro dinner; online booking open at legrandpan.fr,PASS
+VR-08,boulangerie-pichard,Paris,T-7,2026-08-21 (T-8/7 Prep),CHECKED_PASS,Wed-Sun schedule confirmed; 15e Rue de Cambronne,PASS
+VR-09,marche-convention,Paris,T-3,2026-09-23,NOT_DUE,Scheduled for Paris stay T-3 check (Tue/Thu/Sun market),PASS
+VR-10,les-cocottes-saint-louis,Avignon,T-3,2026-09-14,NOT_DUE,Scheduled for Avignon leg T-3 check,PASS
+VR-11,day-of-walk-in-pool,All Bases,T-1 / D-Day,2026-08-29+,NOT_DUE,Scheduled for day-of operational walk-in verification,PASS

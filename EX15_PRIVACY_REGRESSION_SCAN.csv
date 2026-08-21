@@ -1,0 +1,2 @@
+scan_scope,target_layers,findings,status,notes
+Full Repository & Generated Artifacts,"Source, CSV, QA, Site, PWA",0 Leaks Found,PASS,All booking codes sanitized to [CONFIRMED]

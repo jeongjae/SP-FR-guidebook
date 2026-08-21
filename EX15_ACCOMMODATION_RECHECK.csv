@@ -1,0 +1,9 @@
+base_name,dates_nights,address_area,arrival_window,amenities_parking,operational_check,status
+Base 1: Barcelona,2026-08-29~09-01 (3N),Gran Vía de les Corts Catalanes,21:15 Feasible,"Self-catering kitchen, laundry in suite",CHECKED_READY,PASS
+Base 2: Bàscara,2026-09-01~09-04 (3N),Les Roques Farmhouse (Empordà),17:00 Feasible,"Full farmhouse kitchen, free parking on site",CHECKED_READY,PASS
+Base 3: Nice,2026-09-04~09-09 (5N),Hôtel Apollinaire Nice,16:00 Feasible,"Luggage storage available, tram L2 link",CHECKED_READY,PASS
+Base 4: Aix-en-Provence,2026-09-09~09-13 (4N),Boutique Hotel Cézanne,16:30 Feasible,"Parking booked, central old town walk",CHECKED_READY,PASS
+Base 5: Luberon,2026-09-13~09-16 (3N),Domaine des Peyre (Robion),16:00 Feasible,"Winery gîte with kitchen, vineyard parking",CHECKED_READY,PASS
+Base 6: Avignon,2026-09-16~09-20 (4N),Hôtel de l'Horloge Avignon,16:00 Feasible,Parking at Palais des Papes garage,CHECKED_READY,PASS
+Base 7: Lyon,2026-09-20~09-24 (4N),Hôtel Le Royal Lyon MGallery,12:00 Feasible,"Place Bellecour location, metro 1 min",CHECKED_READY,PASS
+Base 8: Paris (15e),2026-09-24~10-09 (15N),Citadines Tour Eiffel Paris,15:30 Feasible,"Apartment kitchen, laundry, Lourmel market",CHECKED_READY,PASS

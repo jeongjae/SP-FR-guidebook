@@ -1,0 +1,5 @@
+offline_layer,specification,device_test_verdict,status,notes
+PWA ServiceWorker Cache,792 Files / 53.2 MiB,CACHED_VALID,PASS,ServiceWorker active; precache version verified.
+Days 01~03 Daily Cards,100% Text & Schedule Available,VERIFIED_PASS,PASS,Available in full offline mode.
+134 Canonical Place Files,100% Dossier Text Available,VERIFIED_PASS,PASS,"Physical address, opening, menu readable offline."
+Emergency Contacts & Maps,Prepare & Daily Route Notes,VERIFIED_PASS,PASS,Offline text instructions verified.

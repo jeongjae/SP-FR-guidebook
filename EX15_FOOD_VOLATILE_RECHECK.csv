@@ -1,0 +1,6 @@
+venue_name,location,scheduled_day,recheck_window,operating_fact,booking_action,status
+Chez Mamie Lise,Annecy,Day 26 (9.23),T-7 Window,Open Tue-Sun; cheese fondues active,Bookable via website / phone,PASS
+Le Grand Pan,Paris 15e,Day 34 (10.01) & Day 41 (10.08),T-7 Window,Open Mon-Fri dinner; wood-fired grill active,Bookable via legrandpan.fr,PASS
+Boulangerie Pichard,Paris 15e,Day 31 (9.28)+,T-7 Window,Open Wed-Sun 07:00~20:00; Grand Prix Baguette,Walk-in,PASS
+Marché Convention,Paris 15e,Day 29 (9.26)+,T-3 Window,Open Tue/Thu/Sun 07:00~14:30; 80+ stalls,Walk-in grocery,PASS
+Les Cocottes Saint-Louis,Avignon,Day 20 (9.17),T-3 Window,Open Tue-Sat; cast-iron casserole stews,Bookable via phone/online,PASS

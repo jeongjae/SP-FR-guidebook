@@ -1,0 +1,9 @@
+transport_id,date,route_timing,type,confirmation_status,operational_check_notes,status
+OZ511,2026-08-29,ICN T1 (12:45) ➔ BCN T1 (19:40),Direct Flight,CONFIRMED,Online check-in opens T-24h (8.28 12:45),PASS
+VY1521,2026-09-04,BCN T1 (13:40) ➔ NCE T2 (15:00),Direct Hop,CONFIRMED,Vueling app check-in; baggage allowance confirmed,PASS
+OZ502,2026-10-09,CDG T1 (19:55) ➔ ICN T1 (14:50 +1),Direct Return,CONFIRMED,Paris stay T-3 check scheduled,PASS
+TGV 6814,2026-09-20,Avignon TGV (10:24) ➔ Lyon Part-Dieu (11:28),High-Speed Rail,CONFIRMED,SNCF Connect app e-ticket ready; 1h04 direct,PASS
+TER Annecy,2026-09-23,Lyon Part-Dieu (08:08) ➔ Annecy (10:07),Regional Rail,CONFIRMED,Return TER 16:45 protected; open seating,PASS
+TGV 6618,2026-09-24,Lyon Part-Dieu (13:04) ➔ Paris Gare de Lyon (15:00),High-Speed Rail,CONFIRMED,SNCF Connect app e-ticket ready; 1h56 direct,PASS
+Avis BCN,2026-09-01~04,Barcelona Sants (10:00) ➔ BCN T1 (12:00),Rental Car 1,CONFIRMED,Desk open 08:00~21:00; dropoff at T1 return lanes,PASS
+Hertz NCE,2026-09-09~20,Nice-Ville (10:00) ➔ Avignon TGV (10:00),Rental Car 2,CONFIRMED,Desk open 08:00~19:00; dropoff at Avignon TGV return,PASS

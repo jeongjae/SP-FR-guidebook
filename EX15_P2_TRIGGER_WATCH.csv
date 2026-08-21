@@ -1,0 +1,10 @@
+p2_id,day_context,monitored_trigger,activation_guard,current_trigger_state,status
+P2-01,Day 05 (Collioure/Cadaqués),Lunch overrun > 75m,Cap lunch at 75m; preserve 15:30 Dalí House,NO_TRIGGER (Normal Plan),PASS
+P2-02,Day 06 (Sant Feliu 드라이브),Excess coastal traffic,Leave by 09:30; return to Bàscara by 17:30,NO_TRIGGER (Normal Plan),PASS
+P2-03,Day 07 (Bàscara ➔ 니스 이동),Road rest stop delays,Lleó market picnic + VY1521 flight buffer,NO_TRIGGER (Normal Plan),PASS
+P2-04,Day 10 (모나코/망통 당일치기),TER coastal rail delay,Frequent TER intervals (every 20~30m),NO_TRIGGER (Normal Plan),PASS
+P2-05,Day 14 (Cassis / Calanques),Bouillabaisse lunch delay,Cap lunch at 90m; take 15:00 boat cruise,NO_TRIGGER (Normal Plan),PASS
+P2-06,Day 21 (Uzès & Pont du Gard),Market crowd parking delay,Park at Uzès outer lot; move to Pont du Gard at 13:30,NO_TRIGGER (Normal Plan),PASS
+P2-07,Day 26 (Annecy 당일치기),Restaurant delay > 20m,Drop boat rental; secure 16:45 TER return,NO_TRIGGER (Normal Plan),PASS
+P2-08,Day 34 (Versailles 전일투어),RER C evening rush,Return to Paris 15e by 18:00; dine at 20:00,NO_TRIGGER (Normal Plan),PASS
+P2-09,Day 37 (개선문상 경마대회),Post-race Longchamp crowd,Home cooking rest dinner in 15e apartment,NO_TRIGGER (Normal Plan),PASS

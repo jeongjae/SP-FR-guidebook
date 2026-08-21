@@ -1,0 +1,8 @@
+booking_category,scope,closure_status,operational_disposition,status
+"Flights (OZ511, VY1521, OZ502)",3 Flights,CONFIRMED,All tickets issued; PNRs safely held in private materials,PASS
+Accommodations (8 Bases / 42 Nights),8 Properties,CONFIRMED,All reservations active; 100% nights confirmed,PASS
+"Rail (TGV 6814, TGV 6618)",2 TGV Legs,CONFIRMED,Tickets issued; seat assignments locked,PASS
+"Rental Cars (Avis BCN, Hertz NCE)",2 Rental Legs,CONFIRMED,Pickup vouchers issued; insurance & cross-border confirmed,PASS
+Attraction Timed Entries,12 Attractions,CONFIRMED / ACTION_READY,"Sagrada Família, Louvre, Versailles locked",PASS
+High-Priority Dining (10 MUST BOOK),10 Venues,ACTION_READY,"Official channels, deadlines, and fallbacks mapped",PASS
+Recommended Dining (8 Venues),8 Venues,WALK_IN_OR_BOOK,Discretionary reservations based on day-of appetite,PASS

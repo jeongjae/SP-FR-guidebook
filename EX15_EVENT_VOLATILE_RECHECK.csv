@@ -1,0 +1,5 @@
+event_attraction,location,day_date,time_slot,operational_instructions,status_check,status
+Sagrada Família,Barcelona,Day 02 (8.30),09:00 Timed Entry,Official app audio guide downloaded,CONFIRMED,PASS
+Paris Fashion Week,Paris,Days 31~33 (9.28~30),Montaigne/Grand Palais,Crowd mitigation: early lunch at 11:30,OPERATIONAL_GUARD_SET,PASS
+Qatar Prix de l'Arc de Triomphe,ParisLongchamp,Day 37 (10.04),12:00~18:30,Metro 10 Porte d'Auteuil shuttle link confirmed,CONFIRMED,PASS
+Fête des Vendanges de Montmartre,Montmartre,Day 40 (10.07),14:00~18:00,Montorgueil morning lunch prior to hill crowd,CONFIRMED,PASS
