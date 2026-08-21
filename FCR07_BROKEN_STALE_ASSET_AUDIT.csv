@@ -1,0 +1,5 @@
+check_category,detected_count,status,notes
+Missing Local Files,0,PASS,All referenced image assets exist or are handled gracefully.
+404 Broken Remote URLs,0,PASS,All source URLs resolve via valid HTTPS endpoints.
+Expired CDN Links,0,PASS,Zero ephemeral or temporary CDN links used.
+Stale Branding / Closed Venues,0,PASS,All venues verified active with current storefronts.

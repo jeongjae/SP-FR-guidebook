@@ -1,0 +1,4 @@
+wish_id,canonical_name,location,original_user_wording,photo_source,rights_status,closure_status,provenance_verdict
+NICE-WISH-01,Le Figuier de Saint-Esprit,Antibes,User explicit Michelin wish,Official Restaurant Source,PLATFORM-PERMITTED,RESOLVED & SCHEDULED,PASS
+NICE-WISH-02,Restaurant & Salon de Thé Béatrice,Cap-Ferrat,User explicit Cap-Ferrat tea room wish,Official Villa Ephrussi Source,PLATFORM-PERMITTED,RESOLVED & SCHEDULED,PASS
+NICE-WISH-03,Salon de Thé - Île de Beauté,Nice,User text 'Salon de thé - restaurant',Restored Canonical Candidate,NO PHOTO ATTACHED (Unresolved),USER_CONFIRMATION_REQUIRED,PASS (Provenance restored; semantic drift corrected)

@@ -1,0 +1,3 @@
+scan_target,scope,pattern_type,matched_content,status,notes
+Photo EXIF Metadata,All Assets,Personal GPS / Device Info / Author PII,Sanitized / Clean,PASS,0 Leaks Found
+Attribution Text & URLs,All CSVs,Private Booking Numbers / Confirmation Codes,Sanitized via [CONFIRMED],PASS,0 Leaks Found

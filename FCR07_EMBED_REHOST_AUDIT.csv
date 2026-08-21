@@ -1,0 +1,3 @@
+storage_mode,total_assets,verified_assets,compliance_rate,status,notes
+Remote HTTPS Embed,25,25,100%,PASS,Uses secure HTTPS endpoints without hotlink violation.
+Local Precached Copies,0 (Tier 2 Policy),0,100%,PASS,PWA bundle size strictly preserved.

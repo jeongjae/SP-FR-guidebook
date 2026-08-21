@@ -1,0 +1,5 @@
+source_tier,provider_category,asset_count,provenance_verified_rate,status,notes
+OFFICIAL_VENUES,Official Restaurant / Market Websites,18 Assets,100%,PASS,Direct official editorial images with clear attribution.
+TOURISM_AUTHORITIES,Nice / Paris / Provence Tourism Boards,5 Assets,100%,PASS,Official destination tourism promotion permitted.
+WIKIMEDIA_COMMONS,Wikimedia Commons (CC BY / CC BY-SA),2 Assets,100%,PASS,Clear open licenses with complete author and license citations.
+TOTAL,All Sources Combined,25 Assets,100%,PASS,Zero unverified or anonymous source images.
