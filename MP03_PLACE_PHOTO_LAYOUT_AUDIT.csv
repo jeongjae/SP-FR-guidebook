@@ -4,11 +4,11 @@ aix,place-card-lg,calanques,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card-lg,cassis,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card-lg,cours-mirabeau,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card-lg,place-richelme-place-des-precheurs,YES,NO,명소·관광,HAS_PHOTO
-aix,place-card-lg,vieil-aix,NO,YES,장소 사진 자리,FALLBACK_OK
+aix,place-card-lg,vieil-aix,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card,patisserie-weibel,NO,YES,카페 사진 자리,FALLBACK_OK
 aix,place-card,chez-gilbert-cassis,NO,YES,식당·카페 사진 자리,FALLBACK_OK
 aix,place-card,bastide-du-jas-de-bouffan,YES,NO,명소·관광,HAS_PHOTO
-aix,place-card,carrieres-de-bibemus,NO,YES,장소 사진 자리,FALLBACK_OK
+aix,place-card,carrieres-de-bibemus,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card,grasse,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card,marseille,YES,NO,명소·관광,HAS_PHOTO
 aix,place-card,vieux-port-marseille,YES,NO,명소·관광,HAS_PHOTO
@@ -89,7 +89,7 @@ nice,place-card-lg,cours-saleya,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card-lg,le-rocher,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card-lg,le-suquet,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card-lg,marche-forville,YES,NO,명소·관광,HAS_PHOTO
-nice,place-card-lg,menton,NO,YES,장소 사진 자리,FALLBACK_OK
+nice,place-card-lg,menton,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card,nice-walk,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card,cannes-walk,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card,monaco-walk,YES,NO,명소·관광,HAS_PHOTO
@@ -100,26 +100,26 @@ nice,place-card,restaurant-beatrice,NO,YES,식당·카페 사진 자리,FALLBACK
 nice,place-card,cannes,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card,marche-de-la-liberation,YES,NO,명소·관광,HAS_PHOTO
 nice,place-card,monaco,YES,NO,명소·관광,HAS_PHOTO
-nice,place-card,villa-ephrussi-de-rothschild,NO,YES,장소 사진 자리,FALLBACK_OK
+nice,place-card,villa-ephrussi-de-rothschild,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card-lg,bourse-de-commerce-pinault-collection,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card-lg,grand-palais,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card-lg,latin-quarter,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card-lg,le-marais,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card-lg,montmartre-south-pigalle,YES,NO,명소·관광,HAS_PHOTO
-paris,place-card-lg,musee-carnavalet,NO,YES,장소 사진 자리,FALLBACK_OK
-paris,place-card,musee-d-art-moderne-de-paris,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card-lg,musee-carnavalet,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-d-art-moderne-de-paris,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,musee-d-orsay,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,musee-de-l-orangerie,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,musee-du-louvre,YES,NO,명소·관광,HAS_PHOTO
-paris,place-card,musee-du-luxembourg,NO,YES,장소 사진 자리,FALLBACK_OK
-paris,place-card,musee-guimet,NO,YES,장소 사진 자리,FALLBACK_OK
-paris,place-card,musee-gustave-moreau,NO,YES,장소 사진 자리,FALLBACK_OK
-paris,place-card,musee-jacquemart-andre,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-du-luxembourg,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-guimet,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-gustave-moreau,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-jacquemart-andre,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,musee-marmottan-monet,YES,NO,명소·관광,HAS_PHOTO
-paris,place-card,musee-picasso-paris,NO,YES,장소 사진 자리,FALLBACK_OK
-paris,place-card,musee-rodin,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,musee-picasso-paris,YES,NO,명소·관광,HAS_PHOTO
+paris,place-card,musee-rodin,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,notre-dame-de-paris,YES,NO,명소·관광,HAS_PHOTO
-paris,place-card,petit-palais,NO,YES,장소 사진 자리,FALLBACK_OK
+paris,place-card,petit-palais,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,versailles,YES,NO,명소·관광,HAS_PHOTO
 paris,place-card,boulangerie-pichard,NO,YES,카페 사진 자리,FALLBACK_OK
 paris,place-card,marche-convention,NO,YES,식당·카페 사진 자리,FALLBACK_OK

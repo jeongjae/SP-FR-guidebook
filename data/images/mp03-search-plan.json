@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "mp03-missing-photo-recovery",
+  "downloadDate": "2026-08-22",
+  "subjects": [
+    {
+      "placeId": "carrieres-de-bibemus",
+      "imageId": "aix-carrieres-de-bibemus-01",
+      "region": "aix",
+      "query": "carrieres de bibemus",
+      "selectedTitle": "File:Carrières de Bibémus - 1.JPG",
+      "titleKo": "비베뮈 채석장",
+      "altKo": "비베뮈 채석장의 주황빛 절개면과 주변 수풀",
+      "captionKo": "비베뮈 채석장의 주황빛 절개면과 주변 수풀.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/carrieres-de-bibemus.html"
+      ]
+    },
+    {
+      "placeId": "vieil-aix",
+      "imageId": "aix-vieil-aix-01",
+      "region": "aix",
+      "query": "vieil aix",
+      "selectedTitle": "File:Aix-en-Provence (13) Place d'Albertas 949.jpg",
+      "titleKo": "비에이 엑스 구시가지",
+      "altKo": "엑상프로방스 구시가지 알베르타 광장의 분수와 18세기 저택 정면",
+      "captionKo": "엑상프로방스 구시가지 알베르타 광장의 분수와 18세기 저택 정면.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/vieil-aix.html"
+      ]
+    },
+    {
+      "placeId": "barcelona-sants",
+      "imageId": "barcelona-barcelona-sants-01",
+      "region": "barcelona",
+      "query": "barcelona sants",
+      "selectedTitle": "File:Estacio Barcelona Sants - 1 - 2010-10-18 - JTCurses.jpg",
+      "titleKo": "바르셀로나 산츠역",
+      "altKo": "바르셀로나 산츠역 정면 출입구와 택시 승강장",
+      "captionKo": "바르셀로나 산츠역 정면 출입구와 택시 승강장.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/barcelona-sants.html"
+      ]
+    },
+    {
+      "placeId": "menton",
+      "imageId": "nice-menton-01",
+      "region": "nice",
+      "query": "menton",
+      "selectedTitle": "File:Menton-Côte d'Azur.jpg",
+      "titleKo": "멘통",
+      "altKo": "멘통 구시가지의 파스텔빛 건물군과 생미셸 성당 종탑 해변 전경",
+      "captionKo": "멘통 구시가지의 파스텔빛 건물군과 생미셸 성당 종탑 해변 전경.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/menton.html"
+      ]
+    },
+    {
+      "placeId": "nce-t2",
+      "imageId": "nice-nce-t2-01",
+      "region": "nice",
+      "query": "nce t2",
+      "selectedTitle": "File:Terminal 2 Interior Nice Côte d'Azur airport.jpg",
+      "titleKo": "니스 공항 제2터미널",
+      "altKo": "니스 코트다쥐르 공항 제2터미널 내부 대합실",
+      "captionKo": "니스 코트다쥐르 공항 제2터미널 내부 대합실.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/nce-t2.html"
+      ]
+    },
+    {
+      "placeId": "nice-ville",
+      "imageId": "nice-nice-ville-01",
+      "region": "nice",
+      "query": "nice ville",
+      "selectedTitle": "File:Nice train Station.JPG",
+      "titleKo": "니스빌역",
+      "altKo": "니스빌역 정면 파사드와 역 시계",
+      "captionKo": "니스빌역 정면 파사드와 역 시계.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/nice-ville.html"
+      ]
+    },
+    {
+      "placeId": "villa-ephrussi-de-rothschild",
+      "imageId": "nice-villa-ephrussi-de-rothschild-01",
+      "region": "nice",
+      "query": "villa ephrussi de rothschild",
+      "selectedTitle": "File:Villa ephrussi de rothschild.jpg",
+      "titleKo": "빌라 에프뤼시 드 로스차일드",
+      "altKo": "빌라 에프뤼시 드 로스차일드의 분홍빛 남쪽 파사드와 프랑스식 정원",
+      "captionKo": "빌라 에프뤼시 드 로스차일드의 분홍빛 남쪽 파사드와 프랑스식 정원.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/villa-ephrussi-de-rothschild.html"
+      ]
+    },
+    {
+      "placeId": "musee-carnavalet",
+      "imageId": "paris-musee-carnavalet-01",
+      "region": "paris",
+      "query": "musee carnavalet",
+      "selectedTitle": "File:Cour Louis XIV au Musée Carnavalet à Paris le 30 septembre 2016 - 17.jpg",
+      "titleKo": "카르나발레 박물관",
+      "altKo": "카르나발레 박물관 루이 14세 안뜰과 중앙의 루이 14세 청동상",
+      "captionKo": "카르나발레 박물관 루이 14세 안뜰과 중앙의 루이 14세 청동상.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-carnavalet.html"
+      ]
+    },
+    {
+      "placeId": "musee-d-art-moderne-de-paris",
+      "imageId": "paris-musee-d-art-moderne-de-paris-01",
+      "region": "paris",
+      "query": "musee d art moderne de paris",
+      "selectedTitle": "File:Entrée musée d'art moderne de Paris en 2025.jpg",
+      "titleKo": "파리 시립 현대미술관",
+      "altKo": "파리 시립 현대미술관 정문 계단과 전시 배너",
+      "captionKo": "파리 시립 현대미술관 정문 계단과 전시 배너.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-d-art-moderne-de-paris.html"
+      ]
+    },
+    {
+      "placeId": "musee-du-luxembourg",
+      "imageId": "paris-musee-du-luxembourg-01",
+      "region": "paris",
+      "query": "musee du luxembourg",
+      "selectedTitle": "File:Musée Luxembourg - Paris VI (FR75) - 2025-09-28 - 1.jpg",
+      "titleKo": "뤽상부르 미술관",
+      "altKo": "뤽상부르 미술관 정면 입구와 관람객 대기줄",
+      "captionKo": "뤽상부르 미술관 정면 입구와 관람객 대기줄.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-du-luxembourg.html"
+      ]
+    },
+    {
+      "placeId": "musee-guimet",
+      "imageId": "paris-musee-guimet-01",
+      "region": "paris",
+      "query": "musee guimet",
+      "selectedTitle": "File:Musée Guimet à Paris (janvier 2020).jpg",
+      "titleKo": "기메 국립아시아미술관",
+      "altKo": "기메 국립아시아미술관의 원형 로톤다 외관",
+      "captionKo": "기메 국립아시아미술관의 원형 로톤다 외관.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-guimet.html"
+      ]
+    },
+    {
+      "placeId": "musee-gustave-moreau",
+      "imageId": "paris-musee-gustave-moreau-01",
+      "region": "paris",
+      "query": "musee gustave moreau",
+      "selectedTitle": "File:Musée Gustave Moreau exterieur.jpg",
+      "titleKo": "귀스타브 모로 미술관",
+      "altKo": "귀스타브 모로 국립미술관 파사드와 돌출 간판",
+      "captionKo": "귀스타브 모로 국립미술관 파사드와 돌출 간판.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-gustave-moreau.html"
+      ]
+    },
+    {
+      "placeId": "musee-jacquemart-andre",
+      "imageId": "paris-musee-jacquemart-andre-01",
+      "region": "paris",
+      "query": "musee jacquemart andre",
+      "selectedTitle": "File:Musée Jacquemart-André, Paris 8e 3-1.jpg",
+      "titleKo": "자크마르-앙드레 미술관",
+      "altKo": "오스만 대로 자크마르-앙드레 미술관 저택 외관",
+      "captionKo": "오스만 대로 자크마르-앙드레 미술관 저택 외관.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-jacquemart-andre.html"
+      ]
+    },
+    {
+      "placeId": "musee-picasso-paris",
+      "imageId": "paris-musee-picasso-paris-01",
+      "region": "paris",
+      "query": "musee picasso paris",
+      "selectedTitle": "File:Hôtel Salé - Paris III (FR75) - 2024-05-22 - 3.jpg",
+      "titleKo": "국립 피카소 미술관",
+      "altKo": "피카소 미술관이 들어선 오텔 살레의 정원 쪽 파사드",
+      "captionKo": "피카소 미술관이 들어선 오텔 살레의 정원 쪽 파사드.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-picasso-paris.html"
+      ]
+    },
+    {
+      "placeId": "musee-rodin",
+      "imageId": "paris-musee-rodin-01",
+      "region": "paris",
+      "query": "musee rodin",
+      "selectedTitle": "File:L'hôtel Biron (musée Rodin) à Paris, 13 juin 2021 01.jpg",
+      "titleKo": "로댕 미술관",
+      "altKo": "로댕 미술관 오텔 비롱의 정원 쪽 파사드와 원형 수반",
+      "captionKo": "로댕 미술관 오텔 비롱의 정원 쪽 파사드와 원형 수반.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/musee-rodin.html"
+      ]
+    },
+    {
+      "placeId": "petit-palais",
+      "imageId": "paris-petit-palais-01",
+      "region": "paris",
+      "query": "petit palais",
+      "selectedTitle": "File:Petit-Palais-Paris-02-2018.jpg",
+      "titleKo": "프티 팔레",
+      "altKo": "윈스턴 처칠 대로에서 본 프티 팔레 정면 전경",
+      "captionKo": "윈스턴 처칠 대로에서 본 프티 팔레 정면 전경.",
+      "role": "major",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "usage": [
+        "places/petit-palais.html"
+      ]
+    }
+  ],
+  "excluded": []
+}
