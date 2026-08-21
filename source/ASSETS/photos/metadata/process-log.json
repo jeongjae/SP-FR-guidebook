@@ -1,5 +1,5 @@
 {
-  "processedAt": "2026-08-18",
+  "processedAt": "2026-08-05",
   "images": [
     {
       "imageId": "barcelona-city-aerial-01",
@@ -5944,6 +5944,534 @@
             "height": 320,
             "bytes": 26060,
             "sha256": "0e3f657a652aa52451fd49919ee4efca9409feaf1a6f70500238c733710d266d",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-carrieres-de-bibemus-01",
+      "source": "source/ASSETS/photos/originals/aix-carrieres-de-bibemus-01.jpg",
+      "originalSize": [
+        3264,
+        2448
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-carrieres-de-bibemus-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-carrieres-de-bibemus-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 295446,
+            "sha256": "64e7a2d3f42799e01f21877da2260dd42c1886d897fe13606e7b0e19f5cea7f7",
+            "quality": 63
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-carrieres-de-bibemus-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-carrieres-de-bibemus-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 45018,
+            "sha256": "387f744a4a71671da79f9d46b3804f29f85683eaf8c1a266a73d23980c65eac6",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "aix-vieil-aix-01",
+      "source": "source/ASSETS/photos/originals/aix-vieil-aix-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-vieil-aix-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-vieil-aix-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 145496,
+            "sha256": "edc6acb2ad979de29bc683b6b8cd61d427610eda0d16ffd42a0a20f28dcf8aad",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-vieil-aix-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-vieil-aix-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24846,
+            "sha256": "e69ece57a46d403adb8ccb14e1940f0114f8eb44a9ffaeb51a77b451d1368ab4",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "barcelona-barcelona-sants-01",
+      "source": "source/ASSETS/photos/originals/barcelona-barcelona-sants-01.jpg",
+      "originalSize": [
+        4000,
+        2657
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-barcelona-sants-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-barcelona-sants-01-content-1280.webp",
+            "width": 1280,
+            "height": 850,
+            "bytes": 82870,
+            "sha256": "55484a02b1f2bd6c7015ce275d7ff9660e3c94c08eff804058f9d58850e8270f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-barcelona-sants-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-barcelona-sants-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16484,
+            "sha256": "7adae1526c44e6e607b49f2f820f9c48fe8e815e4bb846b42f16c04d623f8cbb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-menton-01",
+      "source": "source/ASSETS/photos/originals/nice-menton-01.jpg",
+      "originalSize": [
+        4000,
+        2151
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-menton-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-menton-01-content-1280.webp",
+            "width": 1280,
+            "height": 688,
+            "bytes": 188350,
+            "sha256": "65b4f9e846b5273df35a226769170f4b720c9bd5a059ce03e4c3c424b25c1e58",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-menton-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-menton-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31418,
+            "sha256": "a618e932e4bfaf4a1ec0b75d991e78a553e4b59661f409ff72a9480f20183772",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-nce-t2-01",
+      "source": "source/ASSETS/photos/originals/nice-nce-t2-01.jpg",
+      "originalSize": [
+        4000,
+        2657
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-nce-t2-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-nce-t2-01-content-1280.webp",
+            "width": 1280,
+            "height": 850,
+            "bytes": 87214,
+            "sha256": "a493ec877514b3360d77d70a32768b18d91ea1ce39bb1f8038aae228443dee99",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-nce-t2-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-nce-t2-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21566,
+            "sha256": "8ca073a08ecc6270e7ef3ef5fb7928a2bba157b811170c0822585959b707c39b",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-nice-ville-01",
+      "source": "source/ASSETS/photos/originals/nice-nice-ville-01.jpg",
+      "originalSize": [
+        3984,
+        2656
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-nice-ville-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-nice-ville-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 116056,
+            "sha256": "2238ea1a3b3d83ee4fa39c08e11a74622bcc1b4cee3b2e5872c56415728cb70d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-nice-ville-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-nice-ville-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21082,
+            "sha256": "dece0d5ea7c2e966207f1516beab73488a750af01e75ee271727cc7280c6d188",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "nice-villa-ephrussi-de-rothschild-01",
+      "source": "source/ASSETS/photos/originals/nice-villa-ephrussi-de-rothschild-01.jpg",
+      "originalSize": [
+        4000,
+        2771
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-villa-ephrussi-de-rothschild-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-villa-ephrussi-de-rothschild-01-content-1280.webp",
+            "width": 1280,
+            "height": 887,
+            "bytes": 205728,
+            "sha256": "971e82f13d75a34db7d560aabc8d9fbf7c4e355f3f4ca30d78531a0f38450a68",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-villa-ephrussi-de-rothschild-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-villa-ephrussi-de-rothschild-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24668,
+            "sha256": "5fda22030c85792e13fb1e7dc66389333332985da19ffa4badd87ac2d57cdc55",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-carnavalet-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-carnavalet-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-carnavalet-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-carnavalet-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 143440,
+            "sha256": "219c52c77777691562712616ea12b80ebed2c80f08d3bf59ac9edc18d84bd353",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-carnavalet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-carnavalet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24528,
+            "sha256": "5b94ac27629a19f61329b10435ec867e0f83e0c4a1b9a832ce7931861e40c9eb",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-d-art-moderne-de-paris-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-d-art-moderne-de-paris-01.jpg",
+      "originalSize": [
+        3000,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-d-art-moderne-de-paris-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-d-art-moderne-de-paris-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 185778,
+            "sha256": "d4b5b165177518d5f811e1e85edf19b6cc20d4703cc70d26bcc1e91857f4c5b9",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-d-art-moderne-de-paris-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-d-art-moderne-de-paris-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17028,
+            "sha256": "d37a7c2c3b8569614b099aec7e6fc6bd13983a411d7c979068d6d05fd1c69b33",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-du-luxembourg-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-du-luxembourg-01.jpg",
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-du-luxembourg-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-du-luxembourg-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 259470,
+            "sha256": "9a42d254f3d238d5d5e158068494efcf610c90a29640bee0bcb79aa3a76604a0",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-du-luxembourg-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-du-luxembourg-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31092,
+            "sha256": "ae255213cdd9c73c786636054eafa37dc96bc094c4d42e137397494d1c01880e",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-guimet-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-guimet-01.jpg",
+      "originalSize": [
+        2936,
+        3328
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-guimet-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-guimet-01-content-1280.webp",
+            "width": 1280,
+            "height": 1451,
+            "bytes": 217342,
+            "sha256": "d6b891dbcb95987ae8d7caf21e4595d4865a1ba59daddbe09f79d568b89381aa",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-guimet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-guimet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25416,
+            "sha256": "e9e647fb8e9a3bd6229cd5e0a00cc69797310afae00c70897317d3f1bf02d164",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-gustave-moreau-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-gustave-moreau-01.jpg",
+      "originalSize": [
+        2250,
+        4000
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-gustave-moreau-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-gustave-moreau-01-content-1280.webp",
+            "width": 1280,
+            "height": 2276,
+            "bytes": 289230,
+            "sha256": "619efeead80733a8a62bc1edfed1dcc68276d6045acb7d8d916d614ceed87054",
+            "quality": 72
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-gustave-moreau-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-gustave-moreau-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24656,
+            "sha256": "5957695bd711705f62822d055b84a3e315e04d2caa803e097da08889314ef885",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-jacquemart-andre-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-jacquemart-andre-01.jpg",
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-jacquemart-andre-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-jacquemart-andre-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 271624,
+            "sha256": "e61805ed7ad4c2a1e5a2c71c67fb686342b008fcd104492989cdcc880a921aa1",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-jacquemart-andre-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-jacquemart-andre-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35424,
+            "sha256": "7248f6bd4ddfea87ef1e148cbd13f35028fe53f4ab19b6b4ed764729dafa8c9c",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-picasso-paris-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-picasso-paris-01.jpg",
+      "originalSize": [
+        4000,
+        2203
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-picasso-paris-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-picasso-paris-01-content-1280.webp",
+            "width": 1280,
+            "height": 705,
+            "bytes": 242520,
+            "sha256": "4455e5116c44b82e5c04eaecef07698e2ad00f23f9955d05229092c23285d82b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-picasso-paris-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-picasso-paris-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 37584,
+            "sha256": "b64bf4201af630381207d1ab566175262697fd4826bc54606c5c8d7b9aaebd30",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-musee-rodin-01",
+      "source": "source/ASSETS/photos/originals/paris-musee-rodin-01.jpg",
+      "originalSize": [
+        4000,
+        2666
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-rodin-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-rodin-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 213926,
+            "sha256": "260b3a94ad9744ae8a24e137e6bc04147245ed01f7c6a1f64340804249f02398",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-rodin-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-rodin-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 29452,
+            "sha256": "e9fc09a3d4ead741c9fcbbfd6dff2ace141512588c88c42a0c1a42f7682ac577",
+            "quality": 73
+          }
+        ]
+      }
+    },
+    {
+      "imageId": "paris-petit-palais-01",
+      "source": "source/ASSETS/photos/originals/paris-petit-palais-01.jpg",
+      "originalSize": [
+        4000,
+        1971
+      ],
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-petit-palais-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-petit-palais-01-content-1280.webp",
+            "width": 1280,
+            "height": 631,
+            "bytes": 93442,
+            "sha256": "852d58df1a82f0927a7d7ead7bbafaacfd588740eb5abe975bfb1839f10e4c7a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-petit-palais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-petit-palais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19596,
+            "sha256": "9c293445a01bb8319d001d808ff9dd81725da5ad7b14f2863b083a01242da99c",
             "quality": 73
           }
         ]
