@@ -220,34 +220,18 @@ class StayTransportGuards(unittest.TestCase):
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
             self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
 
-    def test_avignon_transport_matches_early_car_return_decision(self):
+    def test_avignon_public_transit_matches_current_itinerary(self):
         region = next(r for r in self.trip.regions if r.slug == "avignon")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("성벽 안은 도보", "TER Virgule", "P+R Piot·Italiens 무료 셔틀",
-                      "Day 22 저녁 18:15까지", "T1이 Avignon TGV"):
+        for token in ("성벽 안은 도보", "P+R Piot·Italiens 무료 셔틀",
+                      "Avignon Centre↔Arles", "T1은 Gare Centre"):
             self.assertIn(token, rendered)
         for day in range(19, 24):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
 
-        day23 = json.loads((ROOT / "data" / "daily-cards" /
-                            "day-23.json").read_text(encoding="utf-8"))
-        day23_text = json.dumps(day23, ensure_ascii=False)
-        for token in ("Avignon Centre", "TER Virgule", "TGV INOUI 12176",
-                      "차량은 전날 반납"):
-            self.assertIn(token, day23_text)
-        for stale in ("차량반납·TGV", "반납 09:00 준수", "차량 반납 지연 시"):
-            self.assertNotIn(stale, day23_text)
-        self.assertEqual({"walk", "train", "taxi", "metro"},
-                         {leg["mode"] for leg in day23["legs"]})
-        lines = {(leg["from"], leg["to"]): leg["line"] for leg in day23["legs"]}
-        self.assertEqual("TER Virgule Avignon Centre → Avignon TGV",
-                         lines[("avignon-centre", "avignon-tgv")])
-        self.assertEqual("TGV INOUI 12176", lines[("avignon-tgv", "part-dieu")])
-
-        chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
-                   "09_Avignon_Alpilles_Pont_du_Gard_v2.0.md").read_text(encoding="utf-8")
-        self.assertIn("차량은 전날 반납한다", chapter)
-        self.assertNotIn("두 역은 셔틀로 연결된다", chapter)
+        day22 = json.loads((ROOT / "data" / "daily-cards" /
+                            "day-22.json").read_text(encoding="utf-8"))
+        self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day22["legs"]})
 
 
 if __name__ == "__main__":

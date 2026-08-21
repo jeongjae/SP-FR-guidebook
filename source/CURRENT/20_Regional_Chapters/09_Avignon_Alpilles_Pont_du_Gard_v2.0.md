@@ -287,8 +287,8 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 | 19 | 뤼베롱 → 아비뇽 이동 · 숙소 주차장에 |
 | 20 | **쓰지 않는다.** 성벽 안은 전부 도보 |
 | 21 | 우제스·퐁 뒤 가르 왕복 |
-| 22 | 숙소에 두고 Arles 철도 왕복 · 귀환 뒤 **18:15까지 Avignon TGV 조기 반납** |
-| 23 | Avignon Centre→TGV **TER Virgule** → 10:22 Lyon행 TGV {{badge:p0|P0 연결}} |
+| 22 | 숙소에 두고 Arles 철도 왕복이 기본 · 차량은 외곽주차 대안 |
+| 23 | **Avignon TGV 반납** {{badge:p0|P0 연결}} |
 ## 아비뇽 주차 — 성벽 안에 넣지 마라
 
 성벽 안은 좁고 일방통행이 많다. **숙소에 주차장이 있는지가 숙소 선택의 핵심 조건**이다.
@@ -310,7 +310,7 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 | **Arles** | 철도가 기본. 차량 선택 시 구도심 외곽의 공식 공영주차에 세우고 도보 진입 {{badge:field-recheck|9/19 JEP 통제 재확인}} |
 | **Les Baux** | 마을 진입 불가. 외곽 주차 후 오르막 도보 {{badge:unverified|주차장 확인}} |
 | **Saint-Rémy** | 중심 외곽 |
-## Day 23 — TER Virgule와 Lyon행 TGV {{badge:p0|P0 연결}}
+## Day 23 — 렌터카 반납과 TGV {{badge:p0|P0 연결}}
 
 **이 여행에서 가장 실수하기 쉬운 이동이다.**
 
@@ -320,11 +320,11 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 |---|--- |
 | **Avignon TGV** | 고속철 전용. **시 외곽** |
 | **Avignon Centre** | 시내. 지역열차(TER) 중심 |
-두 역은 SNCF의 **TER Virgule**로 연결된다. 9월 20일 계획값은 Avignon Centre 09:13 출발이며, 8월 28일과 전날 실제 운행을 다시 확인한다.
+두 역은 셔틀로 연결된다 {{badge:unverified|소요·운행 간격 확인 필요}}.
 
-> **차량은 전날 반납한다.** Avignon TGV 영업소는 일요일 10:00에 열고 Lyon행 TGV는 10:22 출발하므로 당일 대면 반납은 성립하지 않는다. Day 23에는 Avignon Centre에서 TER Virgule로 TGV역에 간다.
+> **반납지와 승차역이 같은지 확인하라.** 이 일정은 Avignon TGV 반납을 전제한다. 표를 Avignon Centre 출발로 끊으면 셔틀 이동이 추가된다.
 
-### Day 22 저녁 반납 절차
+### 반납 절차
 
 | 순서 | 내용 | 완충 |
 |---:|---|--- |
@@ -1321,3 +1321,4 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 - **Lyon Part-Dieu 도착편**을 우선한다.
 - Lyon Saint-Exupéry TGV 도착 OUIGO는 표면시간이 짧아도 도심 환승이 추가되므로 피한다.
 - 목표 열차 출발 **최소 75–90분 전 렌터카 영업소 도착**. 우리 계획값이다.
+
