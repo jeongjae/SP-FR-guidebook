@@ -89,7 +89,7 @@ class StayTransportGuards(unittest.TestCase):
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("도시 공공교통", "두 사람이 함께 타면 T-familiar가 기본",
+        for token in ("도시 공공교통", "두 사람이 2구간 이상 타면 T-familiar",
                       "T-familiar 1 zone", "공항 L9 불가",
                       "공식 출처와 재확인일"):
             self.assertIn(token, rendered)
@@ -110,7 +110,7 @@ class StayTransportGuards(unittest.TestCase):
         chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
                    "04_Barcelona_Sitges_v2.0.md").read_text(encoding="utf-8")
         for stale in ("Aerobús 우선", "각자 T-casual", "기본 권장 — 짐이 아주 많을 때만 택시"):
-            self.assertNotIn(stale, chapter)
+            self.assertNotIn(stale, chapter, f"Barcelona 챕터에 폐기된 교통 권고가 남음: {stale}")
 
     def test_every_region_has_official_transport_resources(self):
         payload = json.loads((ROOT / "data" / "transit-resources.json").read_text(encoding="utf-8"))
