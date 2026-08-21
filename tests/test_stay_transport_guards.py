@@ -141,7 +141,18 @@ class StayTransportGuards(unittest.TestCase):
                 self.assertIn(resource["title"], rendered)
                 if resource.get("localPath"):
                     self.assertIn("PDF 열기", rendered)
+                    self.assertIn(resource["rightsHolder"], html.unescape(rendered))
+                    self.assertIn(resource["license"], html.unescape(rendered))
                 self.assertIn(resource["officialUrl"], rendered)
+
+    def test_barcelona_official_maps_use_original_local_pdfs(self):
+        payload = json.loads((ROOT / "data" / "transit-resources.json").read_text(encoding="utf-8"))
+        resources = payload["regions"]["barcelona"]
+        self.assertEqual(2, len(resources))
+        for resource in resources:
+            self.assertIn("localPath", resource)
+            self.assertIn("All rights reserved", resource["license"])
+            self.assertTrue((ROOT / resource["localPath"]).is_file())
 
     def test_nice_public_transit_matches_daily_cards(self):
         region = next(r for r in self.trip.regions if r.slug == "nice")
