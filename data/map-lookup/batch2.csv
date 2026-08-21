@@ -1,0 +1,21 @@
+slug,name,verdict,recommended_query,resolved_name,resolved_address,evidence_url,note
+cannes,Cannes,FOUND,"Cannes, France",Cannes,"Cannes, 06400, Alpes-Maritimes, France",https://en.cannes-france.com/,"도시명. 좌표 43.5539/7.0205 는 시내 중심과 일치. local_name 의 괄호는 검색어에 넣지 말 것"
+cannes-walk,Cannes Forville–Suquet–Croisette Walk,NOT_FOUND,,,,,"산책 코스명(가공). 구글맵 POI 아님"
+colline-du-chateau,Colline du Château (성채 언덕),FOUND,"Parc de la Colline du Château, Nice",Parc de la Colline du Château,"Montée du Château, 06300 Nice",https://www.explorenicecotedazur.com/,"'Parc de la' 접두가 단일 특정에 안전"
+cours-saleya,Cours Saleya,FOUND,"Cours Saleya, Nice",Cours Saleya (Marché aux fleurs),"Cours Saleya, 06300 Nice",https://www.explorenicecotedazur.com/,"좌표 일치"
+le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit,FOUND,"Le Figuier de Saint-Esprit, Antibes",Le Figuier de Saint-Esprit,"14 rue Saint-Esprit, 06600 Antibes",https://guide.michelin.com/us/en/provence-alpes-cote-dazur/antibes/restaurant/le-figuier-de-st-esprit,"실제 도시는 ANTIBES — city_hint(Nice) 오류"
+le-rocher,Le Rocher — 모나코 구시가지,FOUND,"Monaco-Ville, Monaco",Monaco-Ville (Le Rocher),"Monaco-Ville, 98000 Monaco",https://www.visitmonaco.com/,"'Le Rocher' 단독은 동명 다수 — Monaco-Ville 로 질의"
+le-suquet,Le Suquet — 칸 구시가지,FOUND,"Le Suquet, Cannes",Le Suquet,"Le Suquet, 06400 Cannes",https://en.cannes-france.com/,"실제 도시는 CANNES — city_hint 오류"
+marche-forville,Marché Forville,FOUND,"Marché Forville, Cannes",Marché Forville,"6 rue du Marché Forville, 06400 Cannes",https://www.marcheforville.com/,"좌표 비어 있음 — 약 43.5518/7.0122"
+marche-de-la-liberation,Marché de la Libération,FOUND,"Marché de la Libération, Nice",Marché aux fruits et légumes de la Libération,"Avenue Malausséna, 06000 Nice",https://www.explorenicecotedazur.com/en/event/marche-aux-fruits-et-legumes-de-la-liberation/,"시장이 여러 가로에 걸침"
+menton,Menton (멘통),FOUND,"Menton, France",Menton,"Menton, 06500, Alpes-Maritimes, France",https://www.tourisme-menton.fr/,
+monaco,Monaco,FOUND,"Monaco",Principauté de Monaco,"Monaco",https://www.visitmonaco.com/,
+monaco-walk,Monaco Rocher–Port–Monte Carlo Walk,NOT_FOUND,,,,,"산책 코스명(가공). 구글맵 POI 아님"
+nce-t2,NCE T2,FOUND,"Aéroport Terminal 2, Nice",Aéroport Nice Côte d'Azur Terminal 2,"Terminal 2, Aéroport Nice Côte d'Azur, 06206 Nice",https://fr.wikipedia.org/wiki/Ligne_2_du_tramway_de_Nice,"'NCE T2' 로는 검색 불가 — 프랑스어 정식명 필수"
+nice-walk,Nice Old Town–Castle Hill Walk,NOT_FOUND,,,,,"산책 코스명(가공). 구글맵 POI 아님"
+nice-ville,Nice-Ville,FOUND,"Gare de Nice-Ville",Gare de Nice-Ville,"Avenue Thiers, 06000 Nice",https://www.garesetconnexions.sncf/fr/gare/frnic/nice-ville,"'Gare de' 접두 필수"
+PALAIS-ALZIRA-HOTEL,Palais ALZIRA · 12 Rue Verdi,NOT_FOUND,,Palais Alzira,"12 rue Verdi, 06000 Nice",http://www.facades-de-nice.fr/facades/palaisalzira-palaisamneris---76.php,"사설 주거건물이라 상호 POI 없음 — 주소로 질의해야 함"
+promenade-des-anglais,Promenade des Anglais,FOUND,"Promenade des Anglais, Nice",Promenade des Anglais,"Promenade des Anglais, 06000 Nice",https://www.explorenicecotedazur.com/,"약 7km 구간이라 좌표는 대표점"
+restaurant-beatrice,Restaurant & Salon de Thé Béatrice,FOUND,"Restaurant Béatrice, Villa Ephrussi de Rothschild, Saint-Jean-Cap-Ferrat",Restaurant & Salon de thé Béatrice,"1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",https://www.villa-ephrussi.com/en/prepare-your-visit/restaurant-beatrice-tea-room,"'Béatrice' 단독은 동명 다수 — 빌라명 필수. 실제 도시는 SAINT-JEAN-CAP-FERRAT"
+vieux-nice,Vieux Nice — 구시가지,FOUND,"Vieux Nice, Nice",Vieux-Nice,"Vieux-Nice, 06300 Nice",https://www.explorenicecotedazur.com/,"'Babazouk' 는 별칭 — 검색어에 넣지 말 것"
+villa-ephrussi-de-rothschild,Villa Ephrussi de Rothschild,FOUND,"Villa Ephrussi de Rothschild, Saint-Jean-Cap-Ferrat",Villa & Jardins Ephrussi de Rothschild,"1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",https://villa-ephrussi.com/,"실제 도시는 SAINT-JEAN-CAP-FERRAT"

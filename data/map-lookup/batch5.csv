@@ -1,0 +1,32 @@
+slug,name,verdict,recommended_query,resolved_name,resolved_address,evidence_url,note
+LOURMEL-HOTEL,78 Rue de Lourmel (파리 15구),AMBIGUOUS,,,"78 Rue de Lourmel, 75015 Paris",,"업소명 없는 주소형 숙소 — 이름 검색 대상 아님. 좌표가 실제보다 300~400m 어긋남"
+bnf-richelieu,BnF Richelieu,FOUND,"BnF Richelieu, Paris",BnF – Site Richelieu,"5 Rue Vivienne, 75002 Paris",https://www.bnf.fr/en/the-bnfs-richelieu-site,"좌표 없음. 입구 2곳이나 단일 시설"
+bouillon-chartier-montparnasse,Bouillon Chartier Montparnasse,FOUND,"Bouillon Chartier Montparnasse, Paris",Bouillon Chartier Montparnasse,"59 Boulevard du Montparnasse, 75006 Paris",https://www.bouillon-chartier.com/en/bouillon-chartier-montparnasse-en/,"좌표 약 2.5km 오차(숙소 좌표 복사). 'Montparnasse' 필수 — 복수 지점"
+boulangerie-pichard,Boulangerie Pichard,FOUND,"Boulangerie Pichard, 88 rue Cambronne, Paris",Boulangerie Pichard,"88 Rue Cambronne, 75015 Paris",https://parisbymouth.com/boulangerie-pichard/,"좌표 약 1km 오차. 'La Maison Pichard' 로도 등재"
+bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,FOUND,"Bourse de Commerce — Pinault Collection, Paris",Bourse de Commerce — Pinault Collection,"2 Rue de Viarmes, 75001 Paris",https://www.pinaultcollection.com/en/boursedecommerce/practical-info,좌표 일치
+cafe-du-commerce,Café du Commerce,FOUND,"Le Café du Commerce, 51 rue du Commerce, Paris",Le Café du Commerce,"51 Rue du Commerce, 75015 Paris",https://www.lecafeducommerce.com/infos-pratiques/,"좌표 약 400m 오차. 동명 업소 다수 — 주소 병기 필수"
+centre-pompidou,Centre Pompidou,FOUND,"Centre Pompidou, Paris",Centre Pompidou,"Place Georges-Pompidou, 75004 Paris",https://www.centrepompidou.fr/en/centre-pompidou-is-transforming-itself,"2025-09-22 ~ 2030 전면 휴관 — 여행 기간 방문 불가. 좌표 없음"
+giverny,Giverny,FOUND,"Fondation Claude Monet, Giverny",Fondation Claude Monet,"84 Rue Claude Monet, 27620 Giverny",https://fondation-monet.com/en/useful-information/,"실제는 노르망디(파리 75km). region=paris 오해 소지"
+grand-palais,Grand Palais,FOUND,"Grand Palais, Paris",Grand Palais,"3 Avenue du Général Eisenhower, 75008 Paris",https://www.grandpalais.fr/,좌표 일치
+latin-quarter,Latin Quarter,AMBIGUOUS,,Quartier Latin,"Quartier Latin, 75005 Paris",https://en.wikipedia.org/wiki/Latin_Quarter,_Paris,"지구(동네) — 핀이 일정치 않음. 대표 지점 지정 필요"
+le-grand-pan,Le Grand Pan,FOUND,"Le Grand Pan, 20 rue Rosenwald, Paris",Le Grand Pan,"20 Rue Rosenwald, 75015 Paris",https://www.legrandpan.fr/,"좌표 약 2km 오차(숙소 좌표 복사)"
+le-marais,Le Marais,AMBIGUOUS,,Le Marais,"Le Marais, 75003/75004 Paris",https://en.wikipedia.org/wiki/Le_Marais,"지구 — 대표 지점(Place des Vosges 등) 지정 권장"
+marche-convention,Marché Convention,FOUND,"Marché Convention, Paris 15",Marché Convention,"Rue de la Convention, 75015 Paris",https://www.paris.fr/lieux/marche-convention-5501,"좌표 약 900m 오차. 파리시 공식 개장 화·목·일 — 원고 요일 확인 필요"
+montmartre-south-pigalle,Montmartre · South Pigalle,NOT_FOUND,,,,,"18구+9구 두 지구를 묶은 편집 명칭 — 단일 POI 없음"
+montorgueil,Montorgueil,FOUND,"Rue Montorgueil, 75002 Paris",Rue Montorgueil,"Rue Montorgueil, 75002 Paris",https://en.wikipedia.org/wiki/Rue_Montorgueil,"거리로 해석. 핀은 중간점"
+musee-carnavalet,Musée Carnavalet,FOUND,"Musée Carnavalet, Paris",Musée Carnavalet – Histoire de Paris,"23 Rue de Sévigné, 75003 Paris",https://www.carnavalet.paris.fr/,좌표 일치
+musee-guimet,Musée Guimet,FOUND,"Musée Guimet, Paris",MNAAG – Guimet,"6 Place d'Iéna, 75116 Paris",https://www.guimet.fr/en,좌표 일치
+musee-gustave-moreau,Musée Gustave Moreau,FOUND,"Musée Gustave Moreau, Paris",Musée national Gustave Moreau,"14 Rue de La Rochefoucauld, 75009 Paris",https://en.wikipedia.org/wiki/Mus%C3%A9e_national_Gustave_Moreau,좌표 일치
+musee-jacquemart-andre,Musée Jacquemart-André,FOUND,"Musée Jacquemart-André, Paris",Musée Jacquemart-André,"158 Boulevard Haussmann, 75008 Paris",https://www.musee-jacquemart-andre.com/,좌표 일치
+musee-marmottan-monet,Musée Marmottan Monet,FOUND,"Musée Marmottan Monet, Paris",Musée Marmottan Monet,"2 Rue Louis-Boilly, 75016 Paris",https://www.marmottan.fr/en/,좌표 일치
+musee-picasso-paris,Musée Picasso Paris,FOUND,"Musée Picasso Paris, Paris",Musée national Picasso-Paris,"5 Rue de Thorigny, 75003 Paris",https://www.museepicassoparis.fr/,좌표 일치
+musee-rodin,Musée Rodin,FOUND,"Musée Rodin, Paris",Musée Rodin,"77 Rue de Varenne, 75007 Paris",https://www.musee-rodin.fr/,"Meudon 별관 존재 — 'Paris' 필수"
+musee-d-art-moderne-de-paris,Musée d'Art Moderne de Paris,FOUND,"Musée d'Art Moderne de Paris, Paris",Musée d'Art Moderne de Paris,"11 Avenue du Président Wilson, 75116 Paris",https://www.mam.paris.fr/,"Palais de Tokyo 와 입구·기관 다름"
+musee-d-orsay,Musée d'Orsay,FOUND,"Musée d'Orsay, Paris",Musée d'Orsay,"1 Rue de la Légion d'Honneur, 75007 Paris",https://www.musee-orsay.fr/,좌표 일치
+musee-de-l-orangerie,Musée de l'Orangerie,FOUND,"Musée de l'Orangerie, Paris",Musée de l'Orangerie,"Jardin des Tuileries, 75001 Paris",https://www.musee-orangerie.fr/,좌표 일치
+musee-du-louvre,Musée du Louvre,FOUND,"Musée du Louvre, Paris",Musée du Louvre,"Rue de Rivoli, 75001 Paris",https://www.louvre.fr/,좌표 일치
+musee-du-luxembourg,Musée du Luxembourg,FOUND,"Musée du Luxembourg, Paris",Musée du Luxembourg,"19 Rue de Vaugirard, 75006 Paris",https://museeduluxembourg.fr/en/hours-and-access,"인접 Palais·Jardin 과 혼동 주의"
+notre-dame-de-paris,Notre-Dame de Paris,FOUND,"Cathédrale Notre-Dame de Paris, Paris",Cathédrale Notre-Dame de Paris,"6 Parvis Notre-Dame, 75004 Paris",https://www.notredamedeparis.fr/,좌표 일치
+petit-palais,Petit Palais,FOUND,"Petit Palais, Paris",Petit Palais,"Avenue Winston-Churchill, 75008 Paris",https://www.petitpalais.paris.fr/,좌표 일치
+versailles,Versailles,FOUND,"Château de Versailles, Versailles",Château de Versailles,"Place d'Armes, 78000 Versailles",https://en.chateauversailles.fr/,"'Versailles' 단독은 도시명 — 'Château de' 필수. 좌표 약 700m 오차"
+INFLIGHT,기내 (OZ502) — 숙소 없음,NOT_FOUND,,,,,"지리적 장소가 아님 — 지도 대상 제외"
