@@ -54,15 +54,15 @@
       "order": 3,
       "start": "12:30",
       "end": "14:00",
-      "name": "사부아(Savoy) 로컬 점심 식사",
+      "name": "Chez Mamie Lise 점심 (안시)",
       "category": "food",
       "lat": 45.8989,
       "lng": 6.1292,
-      "summary": "운하변 테라스 레스토랑에서 즐기는 사부아 정통 점심 (타르티플레트 또는 호수 생선 퐁뒤)",
-      "menu": "타르티플레트(Tartiflette), 뻬르슈(호수 농어) 뫼니에르, 사부아 화이트 와인",
-      "reservation": "현장 선택 / 대기 적은 곳 우선",
+      "summary": "안시 구시가지 운하 골목 알프스 샬레 산장 식당에서 즐기는 전통 사부아 치즈 요리와 호수 생선",
+      "menu": "사부아 치즈 퐁뒤 또는 타르티플레트, 안시 호수 생선구이",
+      "reservation": "사전 예약 권장 (12:30)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "chez-mamie-lise"
     },
     {
       "id": "lakefront",

@@ -24,15 +24,15 @@
       "order": 1,
       "start": "08:00",
       "end": "09:45",
-      "name": "Shortened Home Morning (아침·빠른 준비)",
+      "name": "Boulangerie Pichard 아침 빵 조달 & 숙소 생활",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
       "summary": "오전 모로 미술관 관람을 위해 아침식사 후 09:45 빠른 출발",
-      "menu": null,
+      "menu": "크루아상, 팽 오 쇼콜라, 과일, 커피",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "boulangerie-pichard"
     },
     {
       "id": "gustave-moreau",

@@ -1,0 +1,58 @@
+day,stop_id,stop_name,place_ref,region,status
+Day 02,la-paradeta-sagrada,La Paradeta Sagrada Família 점심,la-paradeta-sagrada-familia,general,VALID
+Day 02,bodega-joan,Bodega Joan 저녁,bodega-joan,general,VALID
+Day 03,mercat-concepcio,Mercat de la Concepció 아침 장보기,mercat-concepcio,general,VALID
+Day 03,bar-canete,Bar Cañete 점심,bar-canete,general,VALID
+Day 03,llibreria-finestres,Llibreria Finestres,,general,VALID
+Day 04,la-zorra,La Zorra 점심 (시체스),la-zorra,general,VALID
+Day 05,collioure-lunch,Collioure 점심,collioure,general,VALID
+Day 06,sant-feliu,Sant Feliu de Guíxols 점심,,general,VALID
+Day 08,cours-saleya,Cours Saleya 시장,cours-saleya,general,VALID
+Day 08,vieux-nice-lunch,구시가지 점심 — 니스와즈 요리,vieux-nice,general,VALID
+Day 09,le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit 점심 (WISH-01),le-figuier-de-saint-esprit,general,VALID
+Day 10,monaco-port-lunch,Monaco Port Hercule & 점심,monaco,general,VALID
+Day 10,menton-dinner,Menton 저녁 — Le Petit Port,menton,general,VALID
+Day 11,liberation-market,Marché de la Libération,marche-de-la-liberation,general,VALID
+Day 11,restaurant-beatrice,Restaurant & Salon de Thé Béatrice 점심 (WISH-02),restaurant-beatrice,general,VALID
+Day 12,grasse,Grasse 점심 & Fragonard 역사공장,grasse,general,VALID
+Day 13,place-richelme-place-des-precheurs,Place Richelme 목요 시장 & Pâtisserie Weibel,place-richelme-place-des-precheurs,general,VALID
+Day 13,aix-lunch,Vieil Aix 구시가지 점심 식사,vieil-aix,general,VALID
+Day 14,cassis,Chez Gilbert 점심 (Cassis 항구),chez-gilbert-cassis,general,VALID
+Day 15,marseille-lunch,Vieux-Port 마르세유 항구 점심,vieux-port-marseille,general,VALID
+Day 16,coustellet,Marché Paysan de Coustellet & 장보기,coustellet,general,VALID
+Day 18,picnic,Gordes 시장 재료 피크닉 점심,gordes,general,VALID
+Day 19,avignon-parking-lunch,Les Halles d'Avignon 주변 점심,les-halles,general,VALID
+Day 19,avignon-return,Fou de Fafa 아비뇽 첫 저녁,fou-de-fafa-avignon,general,VALID
+Day 20,les-halles,Les Halles d'Avignon 아침 시장,les-halles,general,VALID
+Day 20,palais-lunch,교황청 광장 비스트로 점심,palais-des-papes,general,VALID
+Day 20,avignon-return,Les Cocottes Saint-Louis 저녁 식사,les-cocottes-saint-louis,general,VALID
+Day 21,uzes-lunch,Uzès Place aux Herbes 광장 테라스 점심,uzes,general,VALID
+Day 22,forum-lunch,Le Gibolin 점심 (아를 로케트 지구),le-gibolin-arles,general,VALID
+Day 23,lyon-return,Café Comptoir Abel 부숑 첫 저녁,cafe-comptoir-abel,general,VALID
+Day 24,vieux-lyon-lunch,Vieux Lyon 구시가지 점심,vieux-lyon,general,VALID
+Day 24,vieux-lyon,Vieux Lyon & Traboules (비외 리옹 & 트라불),vieux-lyon,general,VALID
+Day 24,lyon-bouchon-dinner,Daniel et Denise 정통 부숑 만찬,daniel-et-denise,general,VALID
+Day 25,croix-rousse-market,Marché de la Croix-Rousse & 마을 산책,croix-rousse,general,VALID
+Day 25,halles-gastronomy,Halles Paul Bocuse 미식 점심,halles-de-lyon-paul-bocuse,general,VALID
+Day 25,halles-shopping,폴 보퀴즈 시장 식재료 & 아티장 상점 탐방,halles-de-lyon-paul-bocuse,general,VALID
+Day 26,savoy-lunch,Chez Mamie Lise 점심 (안시),chez-mamie-lise,general,VALID
+Day 27,part-dieu-lunch,Part-Dieu역 점심 & TGV 플랫폼 대기,,general,VALID
+Day 27,first-grocery,15구 생활권 첫 장보기 & 동네 산책,,general,VALID
+Day 28,morning-routine,Boulangerie Pichard 아침 빵 조달 & 루틴,boulangerie-pichard,general,VALID
+Day 28,paris-return,Café du Commerce 15구 브라세리 첫 저녁,cafe-du-commerce,general,VALID
+Day 29,morning-routine,Marché Convention 일요 노천시장 장보기,marche-convention,general,VALID
+Day 30,paris-return,Bouillon Chartier Montparnasse 저녁,bouillon-chartier-montparnasse,general,VALID
+Day 31,morning-routine,Boulangerie Pichard 아침 빵 조달 & 숙소 생활,boulangerie-pichard,general,VALID
+Day 31,opera-lunch,9구 누벨 아테네 / 오페라 점심,,general,VALID
+Day 32,rue-du-bac-lunch,7구 Rue du Bac 점심 식사,,general,VALID
+Day 32,paris-return,Café du Commerce 동네 저녁,cafe-du-commerce,general,VALID
+Day 33,champs-elysees-lunch,샹젤리제 인근 비스트로 점심,,general,VALID
+Day 34,versailles-lunch,베르사유 대운하 인근 점심 식사,versailles,general,VALID
+Day 34,paris-return,Le Grand Pan 15구 비스트로 저녁,le-grand-pan,general,VALID
+Day 35,morning-routine,Boulangerie Pichard 잠봉 뵈르 샌드위치 & 아침,boulangerie-pichard,general,VALID
+Day 36,morning-routine,Marché Convention 토요 장보기 & 아침 루틴,marche-convention,general,VALID
+Day 38,morning-routine,Boulangerie Pichard 브런치 빵 조달 & 세탁,boulangerie-pichard,general,VALID
+Day 40,halles-lunch,레 알 / 몽토르게이 점심 식사,montorgueil,general,VALID
+Day 41,iena-lunch,이에나 / 윌슨 대로변 점심 식사,,general,VALID
+Day 41,farewell-dinner,Le Grand Pan 파리 15박 고별 만찬,le-grand-pan,general,VALID
+Day 42,farewell-lunch,Café du Commerce 15구 마지막 점심,cafe-du-commerce,general,VALID

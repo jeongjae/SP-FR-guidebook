@@ -95,6 +95,8 @@
 | `saint-paul-de-vence` | Saint-Paul-de-Vence | spot | 우선 추천 | — | chapters/aix/places.html | Saint-Paul-de-Vence | Saint-Paul-de-Vence |
 | `place-richelme-place-des-precheurs` | 시장 — Place Richelme · Place des Prêcheurs | spot | 필수 | — | chapters/aix/places.html | 시장 — Place Richelme · Place des Prêcheurs | — |
 | `vieil-aix` | Vieil Aix — 구시가지 | spot | 필수 | — | chapters/aix/places.html | Vieil Aix — 구시가지 | fr:Aix-en-Provence |
+| `patisserie-weibel` | Pâtisserie Weibel | spot | 필수 | Pâtisserie Weibel | chapters/aix/places.html | Pâtisserie Weibel | — |
+| `chez-gilbert-cassis` | Chez Gilbert | spot | 필수 | Chez Gilbert | chapters/aix/places.html | Chez Gilbert | — |
 
 ## luberon (08)
 
@@ -134,6 +136,9 @@
 | `cloitre-saint-trophime` | Cloître Saint-Trophime | spot | 우선 추천 | Cloître Saint-Trophime | chapters/avignon/places.html | Cloître Saint-Trophime | — |
 | `fondation-vincent-van-gogh-arles` | Fondation Vincent van Gogh Arles | spot | 선택 | Fondation Vincent van Gogh | chapters/avignon/places.html | Fondation Vincent van Gogh Arles | — |
 | `la-roquette` | La Roquette | spot | 우선 추천 | La Roquette | chapters/avignon/places.html | La Roquette | — |
+| `fou-de-fafa-avignon` | Fou de Fafa | spot | 필수 | Fou de Fafa | chapters/avignon/places.html | Fou de Fafa | — |
+| `les-cocottes-saint-louis` | Les Cocottes Saint-Louis | spot | 필수 | Les Cocottes Saint-Louis | chapters/avignon/places.html | Les Cocottes Saint-Louis | — |
+| `le-gibolin-arles` | Le Gibolin | spot | 필수 | Le Gibolin | chapters/avignon/places.html | Le Gibolin | — |
 
 ## lyon (10)
 
@@ -146,6 +151,9 @@
 | `halles-de-lyon-paul-bocuse` | Halles de Lyon Paul Bocuse | spot | 필수 | Halles Paul Bocuse | chapters/lyon/places.html | Halles de Lyon Paul Bocuse | Les Halles de Lyon-Paul Bocuse |
 | `parc-de-la-tete-d-or` | Parc de la Tête d'Or | spot | 우선 추천 | Parc Tête d’Or | chapters/lyon/places.html | Parc de la Tête d'Or | Parc de la Tête d'or |
 | `vieux-lyon` | Vieux Lyon · 트라불 | spot | 필수 | Vieux Lyon | chapters/lyon/places.html | Vieux Lyon · 트라불 | Vieux Lyon |
+| `cafe-comptoir-abel` | Café Comptoir Abel | spot | 필수 | Café Comptoir Abel | chapters/lyon/places.html | Café Comptoir Abel | — |
+| `daniel-et-denise` | Daniel et Denise | spot | 필수 | Daniel et Denise | chapters/lyon/places.html | Daniel et Denise | — |
+| `chez-mamie-lise` | Chez Mamie Lise | spot | 필수 | Chez Mamie Lise | chapters/lyon/places.html | Chez Mamie Lise | — |
 
 ## paris (11)
 
@@ -175,6 +183,11 @@
 | `notre-dame-de-paris` | Notre-Dame de Paris | spot | 필수 | Notre-Dame | chapters/paris/places.html | Notre-Dame de Paris | Notre-Dame de Paris |
 | `petit-palais` | Petit Palais | spot | 필수 | Petit Palais | chapters/paris/places.html | Petit Palais | Petit Palais |
 | `versailles` | Versailles | spot | 필수 | Versailles | chapters/paris/places.html | Versailles — Day 36 A안 | Palace of Versailles |
+| `boulangerie-pichard` | Boulangerie Pichard | spot | 필수 | Boulangerie Pichard | chapters/paris/places.html | Boulangerie Pichard | — |
+| `marche-convention` | Marché Convention | spot | 필수 | Marché Convention | chapters/paris/places.html | Marché Convention | — |
+| `cafe-du-commerce` | Café du Commerce | spot | 필수 | Café du Commerce | chapters/paris/places.html | Café du Commerce | — |
+| `le-grand-pan` | Le Grand Pan | spot | 필수 | Le Grand Pan | chapters/paris/places.html | Le Grand Pan | — |
+| `bouillon-chartier-montparnasse` | Bouillon Chartier Montparnasse | spot | 필수 | Bouillon Chartier Montparnasse | chapters/paris/places.html | Bouillon Chartier Montparnasse | — |
 
 ---
 

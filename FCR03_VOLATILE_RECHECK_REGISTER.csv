@@ -1,0 +1,8 @@
+venue_slug,fact_item,verified_at,recheck_before,action_required,status
+patisserie-weibel,월요일 휴무 및 아침 영업 시간,2026-08-21,2026-09-03 (T-7),07:30 영업 시작 및 칼리송 입고 확인,ACTIVE
+chez-gilbert-cassis,수·목 휴무 및 금요일 점심 테라스 예약,2026-08-21,2026-09-04 (T-7),금요일 12:30 테라스 예약 확인,ACTIVE
+coustellet,일요일 생산자 시장 개장,2026-08-21,2026-09-06 (T-7),9/13(일) 08:00 개장 및 주차장 확인,ACTIVE
+gordes,화요일 대형 시장 개장 및 주차,2026-08-21,2026-09-08 (T-7),9/15(화) 08:30 Gordes 주차장 진입 슬롯 확인,ACTIVE
+fou-de-fafa-avignon,월·화 휴무 및 수요일 디너 예약,2026-08-21,2026-09-09 (T-7),9/16(수) 19:30 디너 예약 확인,ACTIVE
+les-cocottes-saint-louis,연중무휴 및 목요일 디너 회랑 테라스,2026-08-21,2026-09-10 (T-7),9/17(목) 20:00 테라스 좌석 확인,ACTIVE
+le-gibolin-arles,일·월 휴무 및 토요일 점심 영업,2026-08-21,2026-09-12 (T-7),9/19(토) 12:00 점심 슬롯 확인,ACTIVE

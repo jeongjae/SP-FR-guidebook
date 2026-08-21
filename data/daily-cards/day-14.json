@@ -69,15 +69,15 @@
       "order": 4,
       "start": "12:30",
       "end": "14:00",
-      "name": "Cassis 항구 해산물 점심",
+      "name": "Chez Gilbert 점심 (Cassis 항구)",
       "category": "food",
       "lat": 43.2144,
       "lng": 5.5375,
-      "summary": "파스텔 가옥이 늘어선 카시스 구항구 테라스 레스토랑에서 신선한 지중해 해산물 점심",
-      "menu": "문어 샐러드, 도미 구이, 카시스 화이트 와인(AOC Cassis)",
-      "reservation": "현장 선택",
+      "summary": "카시스 구항구 앞 공인 부야베스 헌장 인증 레스토랑. 지중해 암초 생선 수프/부야베스와 카시스 AOC 화이트 와인",
+      "menu": "Bouillabaisse de roche, 생선 수프(Soupe de poissons), 카시스 화이트 와인",
+      "reservation": "테라스석 사전 예약 권장 (12:30)",
       "optional": false,
-      "place_ref": "cassis"
+      "place_ref": "chez-gilbert-cassis"
     },
     {
       "id": "cassis-port-miou",

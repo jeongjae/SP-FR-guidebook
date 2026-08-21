@@ -1,0 +1,6 @@
+venue_slug,fact_item,verified_at,recheck_before,action_required,status
+cafe-comptoir-abel,일요일 저녁 영업 및 19:30 예약 슬롯,2026-08-21,2026-09-13 (T-7),일요일 저녁 19:30 온라인 예약 확인,ACTIVE
+daniel-et-denise,토·일 휴무 및 월요일 저녁 19:45 예약,2026-08-21,2026-09-14 (T-7),월요일 19:45 Créqui 지점 예약 확인,ACTIVE
+halles-de-lyon-paul-bocuse,화요일 점심 해산물 바 운영 시간,2026-08-21,2026-09-15 (T-7),11:30~13:30 굴 바 오픈 상태 확인,ACTIVE
+chez-mamie-lise,수요일 점심 영업 및 12:30 예약,2026-08-21,2026-09-16 (T-7),수요일 12:30 안시 점심 슬롯 확인,ACTIVE
+annecy-ter-trains,Lyon Part-Dieu - Annecy 왕복 TER 열차 시각표,2026-08-21,2026-09-20 (T-3),SNCF Connect 08:08 발차 및 16:45 복귀편 운행 확인,ACTIVE

@@ -1,0 +1,6 @@
+infrastructure_layer,coverage_rate,gap_count,status,notes
+Schedule ↔ Place Links,100%,0 Gaps,PASS,All scheduled food stops link to valid canonical places.
+Guide ↔ Place Links,100%,0 Gaps,PASS,All 8 regional chapters link to canonical place pages.
+Map Food Pin Density,100%,0 Gaps,PASS,Only scheduled and primary food places pinned.
+Search Index Coverage,100% (189 Items),0 Gaps,PASS,"All 134 places, regional foods, and aliases indexed."
+PWA Offline Readiness,"100% (792 Files, 53.2 MiB)",0 Gaps,PASS,"All food text, facts, and daily cards cached offline."

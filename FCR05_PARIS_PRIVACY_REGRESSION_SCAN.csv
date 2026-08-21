@@ -1,0 +1,5 @@
+scan_target,line_range,pattern_type,matched_content,status,notes
+FCR05 Baseline Scan,N/A,Airbnb / Hertz / Voucher / Contact / PNR,Full Repo Scan,PASS,0 Leaks Found
+source/CURRENT/30_Places/,Multiple,New Place Files (5 places),Verified Public Facts Only,PASS,0 Leaks Found
+data/daily-cards/,Days 27-43,Daily Cards Updates,Sanitized Place Refs,PASS,0 Leaks Found
+site/ (Build Output),All HTML,Static Web Output,Sanitized via [CONFIRMED] Mask,PASS,0 Leaks Found

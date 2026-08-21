@@ -1,0 +1,5 @@
+strategy_tier,slot_count,percentage,representative_venues,policy_notes
+MUST BOOK,10,15.2%,"le-figuier-de-saint-esprit, chez-gilbert-cassis, fou-de-fafa-avignon, le-gibolin-arles, cafe-comptoir-abel, daniel-et-denise, le-grand-pan (2회), bar-canete, la-zorra","미쉐린 스타, 정통 부숑, 인기 비스트로노미 저녁 (T-30 ~ T-14 사전 예약)"
+RECOMMENDED BOOK,8,12.1%,"bodega-joan, casa-marieta, restaurant-salon-de-the-beatrice, les-cocottes-saint-louis, chez-mamie-lise, aix-bistro, avignon-bistro, paris-bistro",좌석 제한이 있는 전통 식당 및 살롱 드 테 (T-7 ~ T-3 예약 권장)
+WALK-IN,26,39.4%,"la-paradeta, patisserie-weibel, halles-de-lyon-paul-bocuse, cafe-du-commerce, bouillon-chartier-montparnasse, boulangerie-pichard, 지역 비스트로/카페","대규모 좌석(250석) 또는 빠른 회전율의 브라세리, 부이용, 베이커리"
+NO BOOKING / SELF-CATERING,22,33.3%,"mercat-concepcio, marche-liberation, marche-convention, domaine-des-peyre, 15구 숙소식","시장 조달 피크닉, 베이커리 샌드위치, 숙소 주방 조리"

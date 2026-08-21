@@ -1,0 +1,7 @@
+day,stop_id,stop_name,place_ref,target_exists,link_status,menu_field_present,price_coverage,notes
+Day 23,lyon-return,Café Comptoir Abel 부숑 첫 저녁,cafe-comptoir-abel,YES,VALID,"강꼬치고기 끄넬(낭튀아 가재 소스), 뿔레 아 라 크렘, 보졸레 와인",€38~€48,1726년 리옹 最古 부숑 19:30 예약
+Day 24,vieux-lyon-lunch,Vieux Lyon 구시가지 점심,vieux-lyon,YES,VALID,"살라드 리요네즈, 가벼운 비스트로 런치",€15~€25,트라불 탐방 중 점심 60분 통제
+Day 24,lyon-bouchon-dinner,Daniel et Denise 정통 부숑 만찬,daniel-et-denise,YES,VALID,"파테 앙 크루트, 타블리에 드 사푀르, 프랄린 타르트",€39~€46,MOF 조제프 비올라 공인 부숑 19:45 예약
+Day 25,halles-gastronomy,Halles Paul Bocuse 미식 점심,halles-de-lyon-paul-bocuse,YES,VALID,"생굴 플래터, 로제트 드 리옹, 생마르슬랭 치즈",€15~€35,폴 보퀴즈 미식시장 스탠딩 굴 바
+Day 26,savoy-lunch,Chez Mamie Lise 점심 (안시),chez-mamie-lise,YES,VALID,"사부아 치즈 퐁뒤 또는 타르티플레트, 안시 호수 생선구이",€18~€28,안시 구시가지 샬레 산장 식당 12:30 예약
+Day 27,part-dieu-lunch,Part-Dieu / Halles 샌드위치 점심,halles-de-lyon-paul-bocuse,YES,VALID,"바게트 샌드위치, 프랄린 타르트, 탄산수",€8~€15,TGV 6618 탑승 전 조달

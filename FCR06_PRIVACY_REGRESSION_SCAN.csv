@@ -1,0 +1,2 @@
+scan_target,scope,pattern_type,matched_content,status,notes
+FCR06 Master Reconciliation Scan,Full Repo,Private Booking Identifiers,All Confirmation Codes,PASS,0 Leaks Found (Sanitized to [CONFIRMED])

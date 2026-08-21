@@ -563,6 +563,31 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 > **Avignon TGV**(고속철, 시 외곽)와 **Avignon Centre**(시내)가 다르다. 두 역 사이는 셔틀로 연결된다 {{badge:unverified|소요·운행 확인}}.
 > **반납지와 승차역이 같은지 반드시 확인할 것.** 이 혼동이 이 날 가장 큰 위험이다.
 
+#### Fou de Fafa {{grade:essential|필수}}
+
+> **Editor's Verdict**: 탕튀리에 운하 골목에 자리한 아늑하고 로맨틱한 프로방스 모던 비스트로. 친절한 호스피탈리티와 완성도 높은 제철 코스 요리.
+
+- **체류/가격**: 90–105분 · **3코스 1인 약 €38~€45** (저녁 18:30–21:30, 월·화 휴무, 조기 예약 필수)
+- **상세 가이드**: [Fou de Fafa 전체 가이드 보기](../places/fou-de-fafa-avignon.html)
+
+---
+#### Les Cocottes Saint-Louis {{grade:essential|필수}}
+
+> **Editor's Verdict**: 16세기 유서 깊은 수도원 회랑 안뜰 정원에서 즐기는 프랑스 무쇠 주물 냄비(Cocotte) 전통 가정식 비스트로.
+
+- **체류/가격**: 75–90분 · **2인 약 €50~€75** (점심 12:00–14:00 / 저녁 19:00–22:00, 연중무휴)
+- **상세 가이드**: [Les Cocottes Saint-Louis 전체 가이드 보기](../places/les-cocottes-saint-louis.html)
+
+---
+#### Le Gibolin {{grade:essential|필수}}
+
+> **Editor's Verdict**: 아를 로케트 역사 지구의 활기찬 골목 비스트로. 카마르그 황소 스튜(Gardianne de taureau)와 엄선된 내추럴 와인.
+
+- **체류/가격**: 60–75분 · **점심 코스 약 €22~€26** (점심 12:00–14:00, 일·월 휴무)
+- **상세 가이드**: [Le Gibolin 전체 가이드 보기](../places/le-gibolin-arles.html)
+
+---
+
 ## 음식·시장·카페·생활체험
 
 ## 이 구간의 성격 — 다시 사 먹는 구간이다

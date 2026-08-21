@@ -1,0 +1,8 @@
+day,stop_id,stop_name,place_ref,target_exists,link_status,menu_field_present,price_coverage,notes
+Day 28,morning-routine,Boulangerie Pichard 아침 빵 조달,boulangerie-pichard,YES,VALID,"바게트 트라디시옹, 크루아상, 에스프레소",€1.30~€3.00,15구 아티장 베이커리
+Day 28,paris-return,Café du Commerce 15구 브라세리 첫 저녁,cafe-du-commerce,YES,VALID,"오리 다리 콩피, 샤롤레 소고기 스테이크 프릿, 프로피테롤",€22~€35,1921년 3층 아르데코 브라세리
+Day 29,morning-routine,Marché Convention 일요 노천시장 장보기,marche-convention,YES,VALID,"로티세리 치킨 & 감자 구이, 콩테 치즈, 제철 과일",€5~€15,15구 전통 일요시장
+Day 30,paris-return,Bouillon Chartier Montparnasse 저녁,bouillon-chartier-montparnasse,YES,VALID,"에스카르고, 뵈프 부르기뇽, 초콜릿 무스",€15~€22,1903년 역사기념물 부이용 18:30 방문
+Day 34,paris-return,Le Grand Pan 15구 비스트로 저녁,le-grand-pan,YES,VALID,"샤롤레 소 티본 스테이크 숯불구이, 송아지 흉선 요리",€45~€65,베르사유 투어 후 20:00 예약
+Day 41,farewell-dinner,Le Grand Pan 파리 15박 고별 만찬,le-grand-pan,YES,VALID,"Côte de boeuf 2인 숯불구이, 제철 그물버섯, 바스크 디저트",€50~€70,파리 15박 대미를 장식하는 고별 디너 20:00 예약
+Day 42,farewell-lunch,Café du Commerce 15구 마지막 점심,cafe-du-commerce,YES,VALID,"가벼운 브라세리 런치, 샐러드, 커피",€19~€25,체크아웃 후 공항 이동 전 점심

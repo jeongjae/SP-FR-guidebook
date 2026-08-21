@@ -1,0 +1,10 @@
+day,transit_segment,planned_meal,backup_plan,feasibility,notes
+Day 01,인천 ➔ 바르셀로나,기내식 + 공항 간식,15구/공항 편의점,EXCELLENT,장거리 비행 피로 최소화
+Day 04,바르셀로나 ➔ 시체스 ➔ 바스카라,La Zorra 쌀 요리 런치,시체스 해변 카페,EXCELLENT,렌터카 이동 중간 여유로운 점심
+Day 07,바스카라 ➔ 지로나 ➔ 니스,Mercat del Lleó 조달 이동식 + 니스 도착 저녁,니스 숙소 인근 비스트로,EXCELLENT,국경 통과 450km 드라이브 중 식사 공백 방지
+Day 12,니스 ➔ 그라스 ➔ 엑상프로방스,Grasse 점심 + 엑스 체크인 저녁,쿠르 미라보 브라세리,EXCELLENT,향수 공장 견학 후 여유로운 엑스 도착
+Day 16,엑상프로방스 ➔ 쿠스텔레 ➔ 뤼베롱,Coustellet 시장 런치 + 농가 테라스 첫 저녁,농가 와이너리 식재료,EXCELLENT,농가 체크인 전 장보기 완벽 결합
+Day 19,뤼베롱 ➔ 아비뇽,Les Halles d'Avignon 점심 + Fou de Fafa 저녁,교황청 광장 카페,EXCELLENT,아비뇽 체크인 지연 흡수 및 정찬 안착
+Day 23,아비뇽 TGV ➔ 리옹 Part-Dieu,Lyon 도착 점심 + Café Comptoir Abel 저녁,벨쿠르 브라세리 Le Sud,EXCELLENT,TGV 11:28 도착 후 여유로운 Abel 19:30 안착
+Day 27,리옹 Part-Dieu ➔ 파리 Gare de Lyon,Halles Paul Bocuse 샌드위치 + 15구 숙소 저녁,15구 피자 테이크아웃,EXCELLENT,TGV 6618 기차 안 샌드위치 & 15구 첫 정착식
+Day 42,파리 15구 ➔ CDG 터미널 1,Café du Commerce 마지막 점심 + OZ502 기내식,CDG 라운지/카페,EXCELLENT,12:30 점심 후 15:30 공항 출발 완벽 마진

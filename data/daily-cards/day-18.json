@@ -68,15 +68,15 @@
       "order": 4,
       "start": "12:45",
       "end": "13:45",
-      "name": "피크닉 점심 식사",
+      "name": "Gordes 시장 재료 피크닉 점심",
       "category": "food",
       "lat": 43.905,
       "lng": 5.1825,
       "summary": "고르드 시장에서 구입한 신선 바게트, 샤퀴테리, 치즈, 과일로 그늘 아래 피크닉 또는 카페 간단식",
-      "menu": "바게트 샌드위치, 로컬 치즈, 멜론, 탄산수",
+      "menu": "고르드 시장 바게트, 바농 염소치즈, 무화과, 하몽",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "gordes"
     },
     {
       "id": "senanque",

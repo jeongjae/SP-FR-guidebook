@@ -1,0 +1,6 @@
+venue_slug,fact_item,verified_at,recheck_before,action_required,status
+boulangerie-pichard,월·화 정기휴무 및 영업시간 (07:00-20:00),2026-08-21,2026-09-17 (T-7),휴무일 및 바게트 수급 확인,ACTIVE
+marche-convention,화·목·일 노천시장 개장 확인,2026-08-21,2026-09-18 (T-7),일요시장 정상 운영 확인,ACTIVE
+cafe-du-commerce,연중무휴 영업 및 좌석 운영 (250석),2026-08-21,2026-09-18 (T-7),Day 28 워크인 및 저녁 입장 확인,ACTIVE
+le-grand-pan,Day 34 & Day 41 저녁 20:00 온라인 예약 슬롯,2026-08-21,2026-09-20 (T-7),사전 예약 확인 및 2인 코트 드 뵈프,ACTIVE
+bouillon-chartier-montparnasse,Day 30 저녁 18:30 워크인 대기 상황,2026-08-21,2026-09-23 (T-7),18:30 이전 입장 권장 확인,ACTIVE

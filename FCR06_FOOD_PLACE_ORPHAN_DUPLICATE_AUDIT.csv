@@ -1,0 +1,2 @@
+total_places_audited,active_linked_places,orphaned_places,duplicate_places,status,notes
+134 Canonical Places Audited,134 Active / Scheduled / Guide Linked,0,0,PASS,No orphan or duplicate food places across entire repository.

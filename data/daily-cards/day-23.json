@@ -99,15 +99,15 @@
       "order": 6,
       "start": "19:00",
       "end": "21:00",
-      "name": "리옹 부숑 저녁 식사 & 숙소 귀환",
-      "category": "hotel",
+      "name": "Café Comptoir Abel 부숑 첫 저녁",
+      "category": "food",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "전통 부숑(Bouchon Lyonnais) 저녁 식사 후 숙소 귀환",
-      "menu": "살치숑, 타블리에 드 사푀르, 코트 뒤 론 와인",
-      "reservation": "저녁 예약 권장 (Café Comptoir Abel 등)",
+      "summary": "1726년 리옹에서 가장 오래된 유서 깊은 부숑에서 즐기는 전통 끄넬(Quenelle de brochet)과 크림 치킨 만찬",
+      "menu": "강꼬치고기 끄넬(낭튀아 가재 소스), 뿔레 아 라 크렘, 보졸레 와인",
+      "reservation": "사전 예약 필수 (19:30)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "cafe-comptoir-abel"
     }
   ],
   "legs": [

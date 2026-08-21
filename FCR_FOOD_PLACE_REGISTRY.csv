@@ -1,0 +1,30 @@
+id,name,region,legacy_type,normalized_type,priority,content_tier,day_refs,has_dedicated_place_page,current_content_depth,rationale
+bar-canete,Bar Cañete,barcelona,spot,restaurant,MUST_SEE,TIER_A,Day 03,Y,DEEP_GUIDE,라발 지구 오픈 키친 제철 미식 타파스 바
+bodega-joan,Bodega Joan,barcelona,spot,restaurant,MUST_SEE,TIER_A,Day 02,Y,DEEP_GUIDE,1942년 에이샴플레 정통 카탈루냐 보데가
+bouillon-chartier-montparnasse,Bouillon Chartier Montparnasse,paris,spot,restaurant,MUST_SEE,TIER_A,Day 30,Y,DEEP_GUIDE,1903년 역사기념물 아르누보 가성비 부이용
+boulangerie-pichard,Boulangerie Pichard,paris,spot,bakery,MUST_SEE,TIER_A,Day 28,Y,DEEP_GUIDE,15구 바게트 그랑프리 수상 아티장 베이커리
+cafe-comptoir-abel,Café Comptoir Abel,lyon,spot,restaurant,MUST_SEE,TIER_A,Day 23,Y,DEEP_GUIDE,1726년 리옹 最古 유서 깊은 정통 부숑 및 끄넬
+cafe-du-commerce,Café du Commerce,paris,spot,restaurant,MUST_SEE,TIER_A,Day 28,Y,DEEP_GUIDE,1921년 15구 상업거리 3층 아르데코 역사적 브라세리
+casa-marieta,Casa Marieta,girona,spot,restaurant,MUST_SEE,TIER_A,Day 04,Y,DEEP_GUIDE,1892년 지로나 인디펜덴시아 광장 전통 엠포르다 식당
+chez-gilbert-cassis,Chez Gilbert,aix,spot,restaurant,MUST_SEE,TIER_A,Day 14,Y,DEEP_GUIDE,카시스 구항구 부야베스 헌장 인증 정통 해산물 레스토랑
+chez-mamie-lise,Chez Mamie Lise,lyon,spot,restaurant,MUST_SEE,TIER_A,Day 26,Y,DEEP_GUIDE,안시 구시가지 전통 알프스 목조 산장 사부아 치즈 요리 식당
+cours-saleya,Cours Saleya,nice,spot,market,MUST_SEE,UTILITY,Day 08,Y,SHORT_DESCRIPTION,구시가지 꽃시장·청과시장·먹거리 마켓
+coustellet,Coustellet 생산자 시장,luberon,spot,market,WORTHWHILE,UTILITY,Day 16,Y,PRACTICAL_GUIDE,뤼베롱 일요 농민 직거래 시장 거점
+daniel-et-denise,Daniel et Denise,lyon,spot,restaurant,MUST_SEE,TIER_A,Day 24,Y,DEEP_GUIDE,MOF 조제프 비올라 셰프의 세계 챔피언 파테 앙 크루트 부숑
+fou-de-fafa-avignon,Fou de Fafa,avignon,spot,restaurant,MUST_SEE,TIER_A,Day 19,Y,DEEP_GUIDE,탕튀리에 운하 골목 아늑한 프로방스 제철 비스트로
+halles-de-lyon-paul-bocuse,Halles de Lyon Paul Bocuse,lyon,spot,market,MUST_SEE,UTILITY,,Y,PRACTICAL_GUIDE,"미식의 수도 리옹의 미식 상설 홀, 최고급 식재료와 부숑"
+la-paradeta-sagrada-familia,La Paradeta Sagrada Família,barcelona,spot,restaurant,MUST_SEE,TIER_A,Day 02,Y,DEEP_GUIDE,사그라다 파밀리아 수산시장형 즉석 조리 해산물 전문점
+la-zorra,La Zorra,barcelona,spot,restaurant,WORTHWHILE,TIER_A,Day 04,Y,DEEP_GUIDE,시체스 해변 컨템퍼러리 쌀요리 전문점
+le-figuier-de-saint-esprit,Le Figuier de Saint-Esprit,nice,spot,restaurant,MUST_SEE,TIER_A,Day 09,Y,DEEP_GUIDE,앙티브 옛 성벽 안쪽 무화과나무 중정 미쉐린 1스타 파인다이닝
+le-gibolin-arles,Le Gibolin,avignon,spot,restaurant,MUST_SEE,TIER_A,Day 22,Y,DEEP_GUIDE,아를 로케트 역사 지구 카마르그 황소 스튜 비스트로
+le-grand-pan,Le Grand Pan,paris,spot,restaurant,MUST_SEE,TIER_A,Day 34,Y,DEEP_GUIDE,15구 브누아 고티에 셰프의 숯불 비스트로노미
+les-cocottes-saint-louis,Les Cocottes Saint-Louis,avignon,spot,restaurant,MUST_SEE,TIER_A,Day 20,Y,DEEP_GUIDE,16세기 수도원 회랑 정원 코코트 냄비 전통 요리
+marche-convention,Marché Convention,paris,spot,market,MUST_SEE,TIER_B,Day 29,Y,DEEP_GUIDE,15구 콩방시옹 대로 화목일 전통 노천 생활시장
+marche-de-la-liberation,Marché de la Libération,nice,spot,market,WORTHWHILE,UTILITY,Day 11,Y,SHORT_DESCRIPTION,현지 주민 중심의 니스 최대 로컬 식료품 시장
+marche-forville,Marché Forville,nice,spot,market,WORTHWHILE,UTILITY,Day 09,Y,SHORT_DESCRIPTION,칸 최고의 프로방스 상설 시장
+mercat-concepcio,Mercat de la Concepció,barcelona,spot,market,WORTHWHILE,TIER_A,Day 03,Y,DEEP_GUIDE,1888년 모더니즘 철골 에이샴플레 생활 시장
+mercat-del-lleo,Mercat del Lleó,girona,spot,market,WORTHWHILE,TIER_A,Day 04,Y,DEEP_GUIDE,지로나 중앙 공설시장 및 엠포르다 식재료 보고
+patisserie-weibel,Pâtisserie Weibel,aix,spot,cafe,MUST_SEE,TIER_A,Day 13,Y,DEEP_GUIDE,1954년 리셸므 광장 명물 살롱 드 테 및 칼리송
+place-richelme-place-des-precheurs,시장 — Place Richelme · Place des Prêcheurs,aix,spot,market,MUST_SEE,UTILITY,,Y,MEDIUM_GUIDE,플라타너스 그늘 아래 열리는 일일 청과·프로방스 시장
+restaurant-beatrice,Restaurant & Salon de Thé Béatrice,nice,spot,restaurant,MUST_SEE,TIER_A,Day 11,Y,DEEP_GUIDE,에프뤼시 드 로스차일드 빌라 테라스 지중해 오션뷰 런치
+vieux-lyon,Vieux Lyon · 트라불,lyon,spot,neighborhood,MUST_SEE,TIER_A,Day 24,Y,DEEP_GUIDE,"르네상스 건축 지구, 비밀 통로 트라불(Traboules), 부숑"

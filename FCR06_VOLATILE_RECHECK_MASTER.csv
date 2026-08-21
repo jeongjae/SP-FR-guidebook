@@ -1,0 +1,11 @@
+venue_slug,fact_item,verified_at,recheck_before,booking_requirement,status
+le-figuier-de-saint-esprit,Day 09 미쉐린 1스타 점심 예약,2026-08-21,2026-08-23 (T-14),MUST BOOK (12:15),ACTIVE
+chez-gilbert-cassis,Day 14 카시스 부야베스 점심 예약,2026-08-21,2026-08-28 (T-14),MUST BOOK (12:30),ACTIVE
+fou-de-fafa-avignon,Day 19 아비뇽 첫 저녁 예약,2026-08-21,2026-09-02 (T-14),MUST BOOK (19:30),ACTIVE
+le-gibolin-arles,Day 22 아를 로케트 지구 점심 예약,2026-08-21,2026-09-05 (T-14),MUST BOOK (12:00),ACTIVE
+cafe-comptoir-abel,Day 23 리옹 최원형 부숑 첫 저녁 예약,2026-08-21,2026-09-06 (T-14),MUST BOOK (19:30),ACTIVE
+daniel-et-denise,Day 24 리옹 MOF 공인 부숑 저녁 예약,2026-08-21,2026-09-07 (T-14),MUST BOOK (19:45),ACTIVE
+le-grand-pan,Day 34 & Day 41 15구 숯불 비스트로 예약,2026-08-21,2026-09-17 (T-14),MUST BOOK (20:00),ACTIVE
+chez-mamie-lise,Day 26 안시 사부아 점심 예약 권장,2026-08-21,2026-09-16 (T-7),RECOMMENDED BOOK (12:30),ACTIVE
+boulangerie-pichard,파리 15구 피샤르 빵집 영업일 (수–일),2026-08-21,2026-09-17 (T-7),WALK-IN,ACTIVE
+marche-convention,파리 15구 콩방시옹 시장 개장일 (화·목·일),2026-08-21,2026-09-18 (T-7),WALK-IN,ACTIVE
