@@ -162,7 +162,7 @@
       "mode": "train",
       "duration": "TER 36분 + 도보 12분",
       "distance": "약 32km",
-      "line": null,
+      "line": "TER Aix-en-Provence Centre ↔ Marseille Saint-Charles",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -198,7 +198,7 @@
       "mode": "bus",
       "duration": "RTM 버스 60번 약 15분",
       "distance": "약 2.5km",
-      "line": null,
+      "line": "RTM 60 Vieux-Port → Notre-Dame de la Garde",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -207,7 +207,7 @@
       "mode": "bus",
       "duration": "버스/도보 약 20분",
       "distance": "약 2.0km",
-      "line": null,
+      "line": "RTM bus Notre-Dame de la Garde → Vallon des Auffes · 당일 경로 확인",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -216,7 +216,7 @@
       "mode": "bus",
       "duration": "버스 83번 + 지하철 M1 약 25분",
       "distance": "약 3.8km",
-      "line": null,
+      "line": "RTM 83 + Metro M1 → Marseille Saint-Charles",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -225,7 +225,7 @@
       "mode": "train",
       "duration": "TER 36분 + 도보 10분",
       "distance": "약 32km",
-      "line": null,
+      "line": "TER Marseille Saint-Charles → Aix-en-Provence Centre",
       "geometryStatus": "coordinate-line"
     }
   ],
