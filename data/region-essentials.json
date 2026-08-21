@@ -18,6 +18,26 @@
         "data/daily-cards/day-04.json",
         "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
       ]
+    },
+    "avignon": {
+      "staySummary": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장에 두고 Day 21에만 사용하며, 9월 19일 저녁 Avignon TGV에서 조기 반납한다.",
+      "lifeEssentials": [
+        "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다.",
+        "Day 20 성벽 안은 전부 걷고 차량을 꺼내지 않는다. 피로할 때만 무료 도심 셔틀이나 Orizo 단일권을 검토한다.",
+        "Day 21은 Uzès·Pont du Gard 렌터카 왕복, Day 22는 Avignon Centre↔Arles TER 왕복으로 교통수단을 분리한다.",
+        "차량 안에는 보이는 짐을 남기지 않고, 9월 19일 반납 전에 주유·차량 사진·영수증을 마친다."
+      ],
+      "arrivalStrategy": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
+      "departureStrategy": "차량은 Day 22 Arles 귀환 후 Avignon TGV에서 조기 반납한다. Day 23에는 Avignon Centre에서 TER Virgule로 TGV역에 이동해 10:22 Lyon행 확정 열차를 탄다.",
+      "lateReturnRule": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon TGV까지 간다고 가정하지 않는다.",
+      "sourceRefs": [
+        "data/daily-cards/day-19.json",
+        "data/daily-cards/day-20.json",
+        "data/daily-cards/day-21.json",
+        "data/daily-cards/day-22.json",
+        "data/daily-cards/day-23.json",
+        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+      ]
     }
   }
 }
