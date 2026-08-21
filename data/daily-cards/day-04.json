@@ -81,14 +81,15 @@
       "order": 5,
       "start": "13:00",
       "end": "14:25",
-      "name": "La Zorra",
+      "name": "La Zorra 점심 (시체스)",
       "category": "food",
       "lat": 41.2352,
       "lng": 1.8069,
       "summary": "13:00 점심 후 15:15 출발 시각 보호",
       "menu": "arroz a banda · 2인 공유",
-      "reservation": "13:00 예약",
-      "optional": false
+      "reservation": "사전 예약 필수 (13:00 슬롯)",
+      "optional": false,
+      "place_ref": "la-zorra"
     },
     {
       "id": "bascara-stay",

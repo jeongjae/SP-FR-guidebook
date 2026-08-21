@@ -1,0 +1,7 @@
+market_slug,name,region,location,hours,closed_days,character,what_to_buy,what_to_eat_immediately,price_feel,self_catering_suitability,crowding_level,related_day
+mercat-concepcio,Mercat de la Concepció,barcelona,Eixample,"08:00-15:00 (월-토, 꽃시장 24h)",Sun,LOCAL_LIVING,"신선 무화과, 복숭아, 치즈, 하몽, 절임 올리브",시장 바 카운터 판 콘 토마테 & 에스프레소,€ (합리적),EXCELLENT,LOW,Day 03 (오전 장보기)
+mercat-santa-caterina,Mercat de Santa Caterina,barcelona,Ciutat Vella,07:30-15:30 (월/수/토) · 07:30-20:30 (화/목/금),Sun,LOCAL_AUTHENTIC,"이베리코 하몽, 카탈루냐 치즈, 올리브 오일",Cuines Santa Caterina 즉석 타파스,€€ (보통),EXCELLENT,MEDIUM,Day 03 (백업)
+mercat-sant-antoni,Mercat de Sant Antoni,barcelona,Sant Antoni,08:00-20:30 (월-토),Sun,LOCAL_LIVING,"샤퀴테리, 신선 과일, 지역 식료품",시장 복도 타파스 바,€ (합리적),EXCELLENT,LOW-MEDIUM,"Day 02, 03 (선택 대안)"
+mercat-boqueria,Mercat de la Boqueria,barcelona,Rambla,08:00-20:30 (월-토),Sun,TOURIST_ICONIC,"과일 주스, 하몽 콘, 기념품",Bar Pinotxo / El Quim (대기 극심),€€€ (높음),POOR (혼잡),EXTREME,Day 03 (외관 사진만)
+mercat-del-lleo,Mercat del Lleó,girona,Girona Centre,07:00-14:00 (월-금) · 07:00-14:30 (토),Sun,LOCAL_LIVING,"Xuixo, 엠포르다 소시지, 피레네 치즈, 앤초비",시장 내부 바 추쇼 & 코르타도,€ (매우 합리적),EXCELLENT,LOW,"Day 04, 05 (Bàscara 장보기)"
+marche-collioure,Marché de Collioure,collioure,Pl. 8 Mai 1945,08:00-13:00 (수요일·일요일),"Mon, Tue, Thu, Fri, Sat",LOCAL_PROVENÇAL,"콜리우르 앤초비 병입, 루시옹 과일, 치즈","노천 소시지 샌드위치, 탭나드",€€ (보통),GOOD,HIGH (수요일),Day 05 (수요일 장과 일치)

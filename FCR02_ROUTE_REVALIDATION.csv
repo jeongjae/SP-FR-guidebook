@@ -1,0 +1,8 @@
+day,route_description,total_duration,total_distance,transport_modes,fatigue_score,fatigue_level,simulation_verdict,delay_buffer_minutes,risk_mitigation
+Day 01,BCN 야간 도착 ➔ 메트로/택시 ➔ Eixample 숙소 체크인,3시간 30분,약 15km,항공 + 메트로/택시,2,LOW,PASS,60,도착 지연 시 기내식 또는 숙소 바로 옆 24시간 편의점 물 조달 후 즉시 취침
+Day 02,Eixample ➔ 사그라다 파밀리아 ➔ La Paradeta 점심 ➔ 산파우 병원 ➔ Bodega Joan 저녁,10시간 30분,도보 약 6.5km + 메트로,도보 + 메트로,3,MODERATE,PASS,45,La Paradeta 대기 지연 시 산파우 일정 30분 순연 후 저녁 20:30 Bodega Joan 정상 연결
+Day 03,Mercat Concepció ➔ 카탈루냐 도서관 ➔ Bar Cañete 점심 ➔ MACBA ➔ 고딕지구,10시간,도보 약 5.5km + 메트로,도보 + 메트로,3,MODERATE,PASS,40,식사 지연 시 MACBA 내부 관람을 외관 스케치로 전환하여 피로도 3 이하 유지
+Day 04,Eixample 체크아웃 ➔ Sants 렌터카 ➔ Sitges (La Zorra 점심) ➔ Girona ➔ Bàscara 체크인 ➔ Casa Marieta 저녁,11시간 30분,차량 180km + 도보 약 4km,렌터카 + 도보,3,MODERATE,PASS,50,"La Zorra 13:00 예약 엄수(75분 식사), 14:30 시체스 출발로 17:00 Bàscara 안착 보호"
+Day 05,Bàscara ➔ Collioure (시장·왕궁·점심) ➔ Peralada (선택) ➔ Cadaqués (선택) ➔ Bàscara,9시간 30분,차량 140km + 도보 약 4.5km,렌터카 + 도보,4,HIGH,PASS,45,+30분 점심 지연 시 Cadaqués 전면 생략하고 Peralada 와이너리 외관 후 Bàscara 조기 복귀
+Day 06,Bàscara ➔ Pals ➔ Peratallada ➔ Calella de Palafrugell (해변 점심/카페) ➔ Bàscara,9시간,차량 95km + 도보 약 5km,렌터카 + 도보,3,MODERATE,PASS,45,"음식으로 인한 팽창 방지(식사 75분 제한), 16:30 Bàscara 복귀로 익일 이동 짐정리 완벽 보호"
+Day 07,Bàscara 체크아웃 ➔ BCN T1 반납 (12:30) ➔ VY1521 (15:35 탑승) ➔ NCE (16:55) ➔ Nice 체크인,8시간 30분,차량 140km + 항공 + 트램,렌터카 + 항공 + 트램,2,LOW,PASS,90,"12:00 공항 진입 전 주유, 12:30 반납 후 탑승 게이트 2시간 전 도착 안전 마진 확보"

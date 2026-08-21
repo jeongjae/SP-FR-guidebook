@@ -53,15 +53,15 @@
       "order": 3,
       "start": "12:45",
       "end": "14:15",
-      "name": "La Paradeta Sagrada Família",
+      "name": "La Paradeta Sagrada Família 점심",
       "category": "food",
       "lat": 41.4022,
       "lng": 2.1764,
       "summary": "직접 고른 해산물을 즉석 조리하는 점심. 13:00 첫 회전 대기 진입",
       "menu": "새우, 맛조개(navajas), 칼라마리 튀김",
-      "reservation": "현장 선착순 대기 (13:00 오픈)",
+      "reservation": "현장 대기 (12:50 도착 권장)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "la-paradeta-sagrada-familia"
     },
     {
       "id": "sagrada-familia",
@@ -98,15 +98,15 @@
       "order": 6,
       "start": "19:15",
       "end": "20:45",
-      "name": "Bodega Joan",
+      "name": "Bodega Joan 저녁",
       "category": "food",
       "lat": 41.3892,
       "lng": 2.1585,
       "summary": "전통 카탈루냐 그릴 요리와 타파스 저녁 식사",
       "menu": "엠부티도스, 그릴 육류, 하우스 와인",
-      "reservation": "저녁 예약 권장",
+      "reservation": "사전 예약 권장 (20:30)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "bodega-joan"
     },
     {
       "id": "barcelona-stay-return",

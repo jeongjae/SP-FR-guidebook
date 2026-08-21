@@ -1,0 +1,8 @@
+day,stop_id,stop_name,place_ref,target_exists,link_status,menu_field_present,price_coverage,notes
+Day 02,la-paradeta-sagrada,La Paradeta Sagrada Família 점심,la-paradeta-sagrada-familia,YES,VALID,"새우, 맛조개(navajas), 칼라마리 튀김",€18~€28,사그라다 파밀리아 오전 후 선착순 12:50 도착
+Day 02,bodega-joan,Bodega Joan 저녁,bodega-joan,YES,VALID,"엠부티도스, 그릴 육류, 카넬로니, 하우스 와인",€25~€35,에이샴플레 1942 보데가 예약
+Day 03,mercat-concepcio,Mercat de la Concepció 아침 장보기,mercat-concepcio,YES,VALID,"신선 제철 과일(무화과·복숭아), 만체고 치즈",€5~€15,모더니즘 1888 시장 장보기
+Day 03,bar-canete,Bar Cañete 점심,bar-canete,YES,VALID,"소꼬리 샌드위치, 풋고추 튀김, 신선 해산물",€30~€45,라발 지구 제철 타파스 13:30 예약
+Day 04,la-zorra,La Zorra 점심 (시체스),la-zorra,YES,VALID,"arroz a banda · 2인 공유, 치즈케이크",€30~€45,시체스 해변 쌀요리 13:00 예약
+Day 05,collioure-lunch,Collioure 점심,collioure,YES,VALID,"anchois marinés · 생선구이, 바뉼스 와인",€25~€40,콜리우르 항구 해산물 점심 60~75분 통제
+Day 06,sant-feliu,Sant Feliu de Guíxols / Calella 점심,calella-de-palafrugell,YES,VALID,현지 생선 스튜(Suquet) 또는 팔스 쌀요리,€20~€35,시간 통제 및 13:00~14:15 식사

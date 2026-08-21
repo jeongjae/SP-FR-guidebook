@@ -23,7 +23,7 @@
       "order": 1,
       "start": "09:30",
       "end": "10:30",
-      "name": "Mercat de la Concepció",
+      "name": "Mercat de la Concepció 아침 장보기",
       "category": "shopping",
       "lat": 41.3965,
       "lng": 2.1695,
@@ -31,7 +31,7 @@
       "menu": null,
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "mercat-concepcio"
     },
     {
       "id": "barri-gotic",
@@ -74,9 +74,9 @@
       "lng": 2.1741,
       "summary": "라발 지구 최고의 정통 카운터 타파스 바. 13:45 예약 필수",
       "menu": "소꼬리 샌드위치, 풋고추 튀김(Pimientos de Padrón), 신선 해산물",
-      "reservation": "사전 예약 필수 (월요일 정상 영업)",
+      "reservation": "사전 예약 필수 (13:30 슬롯)",
       "optional": false,
-      "place_ref": null
+      "place_ref": "bar-canete"
     },
     {
       "id": "macba",
