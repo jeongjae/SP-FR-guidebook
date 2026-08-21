@@ -200,25 +200,25 @@
         {
           "label": "Aix en Bus 비접촉 결제·공동 검증",
           "url": "https://aixenbus.fr/fr/gd5-Le-paiement-sans-contact.html",
-          "verifiedAt": "2026-08-22",
+          "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         },
         {
           "label": "Aix en Bus 검증·1시간 환승 규칙",
           "url": "https://aixenbus.fr/fr/Pjb-Conseils-pour-bien-voyager.html",
-          "verifiedAt": "2026-08-22",
+          "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         },
         {
           "label": "RTM 비접촉 결제·L50 요금",
           "url": "https://www.rtm.fr/actualites/validation-par-carte-bancaire",
-          "verifiedAt": "2026-08-22",
+          "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         },
         {
           "label": "La Métropole Mobilité 노선·시간표",
           "url": "https://www.lametropolemobilite.fr/plans-et-horaires/",
-          "verifiedAt": "2026-08-22",
+          "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
         }
       ]
