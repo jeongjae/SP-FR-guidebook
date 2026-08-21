@@ -1,0 +1,204 @@
+day,segment_id,origin,destination,mode,expected_origin,expected_destination,map_status,card_status,endpoint_status,final_status
+1,day-01-leg-01,bcn-airport,barcelona-checkin,bus,BCN T1 도착 — OZ511,숙소 체크인 — Occidental Barcelona 1929,COMPLETE,COMPLETE,PASS_MATCH,PASS
+1,day-01-leg-02,barcelona-checkin,barcelona-sleep,walk,숙소 체크인 — Occidental Barcelona 1929,취침 준비,COMPLETE,COMPLETE,PASS_MATCH,PASS
+2,day-02-leg-01,sant-pau,avinguda-gaudi,walk,Recinte Modernista de Sant Pau,Avinguda de Gaudí,COMPLETE,COMPLETE,PASS_MATCH,PASS
+2,day-02-leg-02,avinguda-gaudi,la-paradeta-sagrada,walk,Avinguda de Gaudí,La Paradeta Sagrada Família 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+2,day-02-leg-03,la-paradeta-sagrada,sagrada-familia,walk,La Paradeta Sagrada Família 점심,Sagrada Família,COMPLETE,COMPLETE,PASS_MATCH,PASS
+2,day-02-leg-04,sagrada-familia,gracia,metro,Sagrada Família,Vila de Gràcia,COMPLETE,COMPLETE,PASS_MATCH,PASS
+2,day-02-leg-05,gracia,bodega-joan,walk,Vila de Gràcia,Bodega Joan 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+2,day-02-leg-06,bodega-joan,barcelona-stay-return,walk,Bodega Joan 저녁,숙소 귀환 — Occidental Barcelona 1929,COMPLETE,COMPLETE,PASS_MATCH,PASS
+3,day-03-leg-01,mercat-concepcio,barri-gotic,walk,Mercat de la Concepció 아침 장보기,고딕지구 핵심 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+3,day-03-leg-02,barri-gotic,biblioteca-de-catalunya,walk,고딕지구 핵심 산책,Biblioteca de Catalunya,COMPLETE,COMPLETE,PASS_MATCH,PASS
+3,day-03-leg-03,biblioteca-de-catalunya,bar-canete,walk,Biblioteca de Catalunya,Bar Cañete 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+3,day-03-leg-04,bar-canete,macba,walk,Bar Cañete 점심,MACBA,COMPLETE,COMPLETE,PASS_MATCH,PASS
+3,day-03-leg-05,macba,llibreria-finestres,walk,MACBA,Llibreria Finestres,COMPLETE,COMPLETE,PASS_MATCH,PASS
+3,day-03-leg-06,llibreria-finestres,barcelona-stay-return,walk,Llibreria Finestres,숙소 귀환 — 짐 정리 및 휴식,COMPLETE,COMPLETE,PASS_MATCH,PASS
+4,day-04-leg-01,barcelona-checkout,barcelona-sants,walk,Barcelona 체크아웃,Barcelona Sants,COMPLETE,COMPLETE,PASS_MATCH,PASS
+4,day-04-leg-02,barcelona-sants,can-robert,car,Barcelona Sants,Can Robert · Sitges,COMPLETE,COMPLETE,PASS_MATCH,PASS
+4,day-04-leg-03,can-robert,cau-ferrat-maricel,walk,Can Robert · Sitges,Cau Ferrat + Maricel,COMPLETE,COMPLETE,PASS_MATCH,PASS
+4,day-04-leg-04,cau-ferrat-maricel,la-zorra,walk,Cau Ferrat + Maricel,La Zorra 점심 (시체스),COMPLETE,COMPLETE,PASS_MATCH,PASS
+4,day-04-leg-05,la-zorra,bascara-stay,car,La Zorra 점심 (시체스),Bàscara 체크인,COMPLETE,COMPLETE,PASS_MATCH,PASS
+5,day-05-leg-01,bascara-stay,collioure,car,Bàscara 출발,Collioure,COMPLETE,COMPLETE,PASS_MATCH,PASS
+5,day-05-leg-02,collioure,collioure-lunch,walk,Collioure,Collioure 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+5,day-05-leg-03,collioure-lunch,cadaques,car,Collioure 점심,Cadaqués,COMPLETE,COMPLETE,PASS_MATCH,PASS
+5,day-05-leg-04,cadaques,bascara-return,car,Cadaqués,Bàscara 복귀,COMPLETE,COMPLETE,PASS_MATCH,PASS
+6,day-06-leg-01,bascara-stay,tossa,car,Bàscara 출발,Tossa de Mar,COMPLETE,COMPLETE,PASS_MATCH,PASS
+6,day-06-leg-02,tossa,sant-feliu,car,Tossa de Mar,Sant Feliu de Guíxols 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+6,day-06-leg-03,sant-feliu,pals,car,Sant Feliu de Guíxols 점심,Pals,COMPLETE,COMPLETE,PASS_MATCH,PASS
+6,day-06-leg-04,pals,peratallada,car,Pals,Peratallada,COMPLETE,COMPLETE,PASS_MATCH,PASS
+6,day-06-leg-05,peratallada,bascara-return,car,Peratallada,Bàscara 복귀,COMPLETE,COMPLETE,PASS_MATCH,PASS
+7,day-07-leg-01,bascara-checkout,bcn-airport-return,car,Bàscara 체크아웃,BCN 공항 T1 렌터카 반납,COMPLETE,COMPLETE,PASS_MATCH,PASS
+7,day-07-leg-02,bcn-airport-return,vy1521,flight,BCN 공항 T1 렌터카 반납,VY1521 → NCE 도착,COMPLETE,COMPLETE,PASS_MATCH,PASS
+7,day-07-leg-03,vy1521,nice-checkin,tram,VY1521 → NCE 도착,Nice 체크인 — Palais ALZIRA,COMPLETE,COMPLETE,PASS_MATCH,PASS
+7,day-07-leg-04,nice-checkin,promenade,walk,Nice 체크인 — Palais ALZIRA,숙소 주변 산책 및 가벼운 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+7,day-07-leg-05,promenade,nice-stay-return,walk,숙소 주변 산책 및 가벼운 저녁,숙소 귀환,COMPLETE,COMPLETE,PASS_MATCH,PASS
+8,day-08-leg-01,cours-saleya,vieux-nice,walk,Cours Saleya 시장,Vieux Nice 구시가지,COMPLETE,COMPLETE,PASS_MATCH,PASS
+8,day-08-leg-02,vieux-nice,vieux-nice-lunch,walk,Vieux Nice 구시가지,구시가지 점심 — 니스와즈 요리,COMPLETE,COMPLETE,PASS_MATCH,PASS
+8,day-08-leg-03,vieux-nice-lunch,castle-hill,walk,구시가지 점심 — 니스와즈 요리,Colline du Château,COMPLETE,COMPLETE,PASS_MATCH,PASS
+8,day-08-leg-04,castle-hill,promenade,walk,Colline du Château,Promenade des Anglais,COMPLETE,COMPLETE,PASS_MATCH,PASS
+8,day-08-leg-05,promenade,port-lympia,walk,Promenade des Anglais,Port Lympia 산책 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+8,day-08-leg-06,port-lympia,nice-stay-return,walk,Port Lympia 산책 & 저녁,숙소 귀환 — Palais ALZIRA,COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-01,nice-ville,antibes-old-town,train,Nice-Ville역 출발 ➔ Antibes 이동,Vieil Antibes & Marché Provençal,COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-02,antibes-old-town,le-figuier-de-saint-esprit,walk,Vieil Antibes & Marché Provençal,Le Figuier de Saint-Esprit 점심 (WISH-01),COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-03,le-figuier-de-saint-esprit,cannes-transfer,train,Le Figuier de Saint-Esprit 점심 (WISH-01),Antibes ➔ Cannes TER 이동,COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-04,cannes-transfer,le-suquet,walk,Antibes ➔ Cannes TER 이동,Le Suquet & 구시가지 언덕,COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-05,le-suquet,croisette,walk,Le Suquet & 구시가지 언덕,Boulevard de la Croisette,COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-06,croisette,cannes-station,walk,Boulevard de la Croisette,Gare de Cannes ➔ Nice TER 탑승,COMPLETE,COMPLETE,PASS_MATCH,PASS
+9,day-09-leg-07,cannes-station,nice-return,train,Gare de Cannes ➔ Nice TER 탑승,Nice-Ville 도착 ➔ 숙소 귀환,COMPLETE,COMPLETE,PASS_MATCH,PASS
+10,day-10-leg-01,nice-ville,le-rocher,train,Nice-Ville역 출발 ➔ Monaco 이동,Le Rocher / Monaco-Ville 대공궁 언덕,COMPLETE,COMPLETE,PASS_MATCH,PASS
+10,day-10-leg-02,le-rocher,monaco-port-lunch,walk,Le Rocher / Monaco-Ville 대공궁 언덕,Monaco Port Hercule & Monte-Carlo 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+10,day-10-leg-03,monaco-port-lunch,menton,train,Monaco Port Hercule & Monte-Carlo 점심,Menton 구시가지 & 사블레트 해변,COMPLETE,COMPLETE,PASS_MATCH,PASS
+10,day-10-leg-04,menton,menton-dinner,walk,Menton 구시가지 & 사블레트 해변,Menton 저녁 — Le Petit Port,COMPLETE,COMPLETE,PASS_MATCH,PASS
+10,day-10-leg-05,menton-dinner,nice-return,train,Menton 저녁 — Le Petit Port,Menton ➔ Nice-Ville 복귀 ➔ 숙소,COMPLETE,COMPLETE,PASS_MATCH,PASS
+11,day-11-leg-01,nice-ville,villefranche-sur-mer,train,Nice 숙소 출발 ➔ Villefranche 이동,Villefranche-sur-Mer 구시가지 & 항만 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+11,day-11-leg-02,villefranche-sur-mer,villa-ephrussi,bus,Villefranche-sur-Mer 구시가지 & 항만 산책,Villa Ephrussi de Rothschild & 테마 정원,COMPLETE,COMPLETE,PASS_MATCH,PASS
+11,day-11-leg-03,villa-ephrussi,restaurant-beatrice,walk,Villa Ephrussi de Rothschild & 테마 정원,Restaurant & Salon de Thé Béatrice 점심 (WISH-02),COMPLETE,COMPLETE,PASS_MATCH,PASS
+11,day-11-leg-04,restaurant-beatrice,eze-village,bus,Restaurant & Salon de Thé Béatrice 점심 (WISH-02),Èze Village 중세 절벽마을 & 이국적 정원,COMPLETE,COMPLETE,PASS_MATCH,PASS
+11,day-11-leg-05,eze-village,nice-stay-prep,bus,Èze Village 중세 절벽마을 & 이국적 정원,Nice 복귀 ➔ 숙소 휴식 & 9/9 렌터카 준비,COMPLETE,COMPLETE,PASS_MATCH,PASS
+12,day-12-leg-01,nice-checkout,nice-station-pickup,walk,Nice 숙소 체크아웃 — Palais ALZIRA,Nice-Ville역 Hertz 렌터카 인수,COMPLETE,COMPLETE,PASS_MATCH,PASS
+12,day-12-leg-02,nice-station-pickup,saint-paul,car,Nice-Ville역 Hertz 렌터카 인수,Saint-Paul-de-Vence,COMPLETE,COMPLETE,PASS_MATCH,PASS
+12,day-12-leg-03,saint-paul,grasse,car,Saint-Paul-de-Vence,Grasse 점심 & Fragonard 역사공장,COMPLETE,COMPLETE,PASS_MATCH,PASS
+12,day-12-leg-04,grasse,aix-checkin,car,Grasse 점심 & Fragonard 역사공장,Aix 숙소 체크인,COMPLETE,COMPLETE,PASS_MATCH,PASS
+12,day-12-leg-05,aix-checkin,rotonde,walk,Aix 숙소 체크인,Place de la Rotonde & Cours Mirabeau 첫 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+12,day-12-leg-06,rotonde,aix-stay-return,walk,Place de la Rotonde & Cours Mirabeau 첫 산책,숙소권 저녁 식사 & 휴식,COMPLETE,COMPLETE,PASS_MATCH,PASS
+13,day-13-leg-01,place-richelme-place-des-precheurs,vieil-aix,walk,Place Richelme 목요 시장 & Pâtisserie Weibel,Vieil Aix 구시가지 & 세잔의 흔적,COMPLETE,COMPLETE,PASS_MATCH,PASS
+13,day-13-leg-02,vieil-aix,aix-lunch,walk,Vieil Aix 구시가지 & 세잔의 흔적,Vieil Aix 구시가지 점심 식사,COMPLETE,COMPLETE,PASS_MATCH,PASS
+13,day-13-leg-03,aix-lunch,atelier-des-lauves,walk,Vieil Aix 구시가지 점심 식사,Atelier des Lauves (세잔의 아틀리에),COMPLETE,COMPLETE,PASS_MATCH,PASS
+13,day-13-leg-04,atelier-des-lauves,musee-granet,walk,Atelier des Lauves (세잔의 아틀리에),Musée Granet (그라네 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+13,day-13-leg-05,musee-granet,cours-mirabeau,walk,Musée Granet (그라네 미술관),Cours Mirabeau & 마자랭 지구 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+13,day-13-leg-06,cours-mirabeau,aix-stay-return,walk,Cours Mirabeau & 마자랭 지구 산책,숙소 귀환 & 휴식,COMPLETE,COMPLETE,PASS_MATCH,PASS
+14,day-14-leg-01,aix-depart,cassis-parking,car,Aix 숙소 출발 — 렌터카,Cassis 도착 & 주차,COMPLETE,COMPLETE,PASS_MATCH,PASS
+14,day-14-leg-02,cassis-parking,calanques,walk,Cassis 도착 & 주차,Calanques 국립공원 유람선 투어,COMPLETE,COMPLETE,PASS_MATCH,PASS
+14,day-14-leg-03,calanques,cassis,walk,Calanques 국립공원 유람선 투어,Chez Gilbert 점심 (Cassis 항구),COMPLETE,COMPLETE,PASS_MATCH,PASS
+14,day-14-leg-04,cassis,cassis-port-miou,walk,Chez Gilbert 점심 (Cassis 항구),Port-Miou 해안 트레일 초입 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+14,day-14-leg-05,cassis-port-miou,aix-return,car,Port-Miou 해안 트레일 초입 산책,Cassis ➔ Aix 귀환 (차량),COMPLETE,COMPLETE,PASS_MATCH,PASS
+14,day-14-leg-06,aix-return,aix-stay-return,walk,Cassis ➔ Aix 귀환 (차량),숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-01,aix-station,vieux-port-marseille,train,Aix-en-Provence역 출발 ➔ Marseille 이동 (TER),Vieux-Port (마르세유 구항구),COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-02,vieux-port-marseille,le-panier,walk,Vieux-Port (마르세유 구항구),Le Panier (르 파니에 역사 골목),COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-03,le-panier,fort-saint-jean,walk,Le Panier (르 파니에 역사 골목),Fort Saint-Jean & Mucem (유럽지중해문명박물관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-04,fort-saint-jean,marseille-lunch,walk,Fort Saint-Jean & Mucem (유럽지중해문명박물관),Vieux-Port 마르세유 항구 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-05,marseille-lunch,notre-dame-de-la-garde,bus,Vieux-Port 마르세유 항구 점심,Notre-Dame de la Garde (노트르담 드 라 가르드),COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-06,notre-dame-de-la-garde,vallon-des-auffes,bus,Notre-Dame de la Garde (노트르담 드 라 가르드),Vallon des Auffes & 코르니슈 (선택),COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-07,vallon-des-auffes,marseille-station,bus,Vallon des Auffes & 코르니슈 (선택),Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승,COMPLETE,COMPLETE,PASS_MATCH,PASS
+15,day-15-leg-08,marseille-station,aix-stay-return,train,Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승,Aix 숙소 귀환 & 익일 Luberon 이동 준비,COMPLETE,COMPLETE,PASS_MATCH,PASS
+16,day-16-leg-01,aix-checkout,lourmarin,car,Aix 숙소 체크아웃 & 차량 적재,Lourmarin 마을 & 르네상스 샤토 외관,COMPLETE,COMPLETE,PASS_MATCH,PASS
+16,day-16-leg-02,lourmarin,coustellet,car,Lourmarin 마을 & 르네상스 샤토 외관,Marché Paysan de Coustellet & 장보기,COMPLETE,COMPLETE,PASS_MATCH,PASS
+16,day-16-leg-03,coustellet,goult,car,Marché Paysan de Coustellet & 장보기,Goult 체크인 전 완충 & 카페,COMPLETE,COMPLETE,PASS_MATCH,PASS
+16,day-16-leg-04,goult,farm-checkin,car,Goult 체크인 전 완충 & 카페,Domaine des Peyre 농가 체크인 & 테라스 첫 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+17,day-17-leg-01,farm-depart,sentier-ocres,car,농가 숙소 아침 & 출발,Sentier des Ocres (오커 트레일),COMPLETE,COMPLETE,PASS_MATCH,PASS
+17,day-17-leg-02,sentier-ocres,roussillon,walk,Sentier des Ocres (오커 트레일),Roussillon 구시가지 & 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+17,day-17-leg-03,roussillon,farm-rest,car,Roussillon 구시가지 & 점심,농가 숙소 한낮 휴식 (Siesta),COMPLETE,COMPLETE,PASS_MATCH,PASS
+17,day-17-leg-04,farm-rest,goult,car,농가 숙소 한낮 휴식 (Siesta),Goult 조용한 생활마을 & 풍차 언덕,COMPLETE,COMPLETE,PASS_MATCH,PASS
+17,day-17-leg-05,goult,farm-return,car,Goult 조용한 생활마을 & 풍차 언덕,농가 숙소 복귀 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+18,day-18-leg-01,farm-depart,gordes,car,농가 숙소 조기 출발 ➔ Gordes 이동,Gordes 화요 대형 시장 & 벨베데레 전망,COMPLETE,COMPLETE,PASS_MATCH,PASS
+18,day-18-leg-02,gordes,village-des-bories,car,Gordes 화요 대형 시장 & 벨베데레 전망,Village des Bories (돌의 문화),COMPLETE,COMPLETE,PASS_MATCH,PASS
+18,day-18-leg-03,village-des-bories,picnic,walk,Village des Bories (돌의 문화),Gordes 시장 재료 피크닉 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+18,day-18-leg-04,picnic,senanque,car,Gordes 시장 재료 피크닉 점심,Abbaye de Sénanque (세낭크 수도원 외관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+18,day-18-leg-05,senanque,menerbes,car,Abbaye de Sénanque (세낭크 수도원 외관),Ménerbes (한적한 언덕마을 산책),COMPLETE,COMPLETE,PASS_MATCH,PASS
+18,day-18-leg-06,menerbes,farm-return,car,Ménerbes (한적한 언덕마을 산책),농가 복귀 & 익일 Avignon 이동 준비,COMPLETE,COMPLETE,PASS_MATCH,PASS
+19,day-19-leg-01,farm-checkout,avignon-parking-lunch,car,농가 숙소 체크아웃 & 출발,Les Halles d'Avignon 주변 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+19,day-19-leg-02,avignon-parking-lunch,avignon-checkin,walk,Les Halles d'Avignon 주변 점심,Avignon 숙소 체크인,COMPLETE,COMPLETE,PASS_MATCH,PASS
+19,day-19-leg-03,avignon-checkin,teinturiers-walls,walk,Avignon 숙소 체크인,Rue des Teinturiers & 성벽 오리엔테이션,COMPLETE,COMPLETE,PASS_MATCH,PASS
+19,day-19-leg-04,teinturiers-walls,avignon-return,walk,Rue des Teinturiers & 성벽 오리엔테이션,Fou de Fafa 아비뇽 첫 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+20,day-20-leg-01,les-halles,palais,walk,Les Halles d'Avignon 아침 시장,Palais des Papes (교황청 궁전),COMPLETE,COMPLETE,PASS_MATCH,PASS
+20,day-20-leg-02,palais,palais-lunch,walk,Palais des Papes (교황청 궁전),교황청 광장 비스트로 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+20,day-20-leg-03,palais-lunch,rocher-doms,walk,교황청 광장 비스트로 점심,Rocher des Doms (돔 바위 정원),COMPLETE,COMPLETE,PASS_MATCH,PASS
+20,day-20-leg-04,rocher-doms,pont,walk,Rocher des Doms (돔 바위 정원),Pont Saint-Bénézet (아비뇽 다리),COMPLETE,COMPLETE,PASS_MATCH,PASS
+20,day-20-leg-05,pont,vieil-avignon,walk,Pont Saint-Bénézet (아비뇽 다리),Vieil Avignon 구시가지 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+20,day-20-leg-06,vieil-avignon,avignon-return,walk,Vieil Avignon 구시가지 산책,Les Cocottes Saint-Louis 저녁 식사,COMPLETE,COMPLETE,PASS_MATCH,PASS
+21,day-21-leg-01,avignon-depart,uzes,car,Avignon 숙소 출발 ➔ Uzès 이동,Uzès 구시가지 & 에르브 광장,COMPLETE,COMPLETE,PASS_MATCH,PASS
+21,day-21-leg-02,uzes,uzes-lunch,walk,Uzès 구시가지 & 에르브 광장,Uzès Place aux Herbes 광장 테라스 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+21,day-21-leg-03,uzes-lunch,pont-du-gard,car,Uzès Place aux Herbes 광장 테라스 점심,Pont du Gard (퐁 뒤 가르 수로교),COMPLETE,COMPLETE,PASS_MATCH,PASS
+21,day-21-leg-04,pont-du-gard,avignon-return,car,Pont du Gard (퐁 뒤 가르 수로교),Avignon 복귀 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+22,day-22-leg-01,avignon-centre,arenes,train,Avignon Centre역 ➔ Arles 이동 (TER),Arènes d'Arles (아를 원형경기장),COMPLETE,COMPLETE,PASS_MATCH,PASS
+22,day-22-leg-02,arenes,theatre,walk,Arènes d'Arles (아를 원형경기장),Théâtre Antique & 공화국 광장,COMPLETE,COMPLETE,PASS_MATCH,PASS
+22,day-22-leg-03,theatre,forum-lunch,walk,Théâtre Antique & 공화국 광장,Le Gibolin 점심 (아를 로케트 지구),COMPLETE,COMPLETE,PASS_MATCH,PASS
+22,day-22-leg-04,forum-lunch,saint-trophime,walk,Le Gibolin 점심 (아를 로케트 지구),Cloître Saint-Trophime (생트로핌 회랑),COMPLETE,COMPLETE,PASS_MATCH,PASS
+22,day-22-leg-05,saint-trophime,la-roquette,walk,Cloître Saint-Trophime (생트로핌 회랑),La Roquette 구시가지 & 론 강변,COMPLETE,COMPLETE,PASS_MATCH,PASS
+22,day-22-leg-06,la-roquette,avignon-return,train,La Roquette 구시가지 & 론 강변,Arles ➔ Avignon 귀환 & 마지막 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+23,day-23-leg-01,avignon-checkout,avignon-tgv,car,Avignon 숙소 체크아웃 & 차량 적재,Avignon TGV역 Hertz 렌터카 반납 & 역사 진입,COMPLETE,COMPLETE,PASS_MATCH,PASS
+23,day-23-leg-02,avignon-tgv,part-dieu,train,Avignon TGV역 Hertz 렌터카 반납 & 역사 진입,TGV INOUI 12176 탑승 (10:22 발차 ➔ 11:28 Lyon 도착),COMPLETE,COMPLETE,PASS_MATCH,PASS
+23,day-23-leg-03,part-dieu,lyon-checkin,taxi,TGV INOUI 12176 탑승 (10:22 발차 ➔ 11:28 Lyon 도착),Lyon 숙소 이동 & 짐 보관 & 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+23,day-23-leg-04,lyon-checkin,ainay-walk,metro,Lyon 숙소 이동 & 짐 보관 & 점심,Presqu'île (벨쿠르 광장 & 셀레스탱 극장),COMPLETE,COMPLETE,PASS_MATCH,PASS
+23,day-23-leg-05,ainay-walk,lyon-return,walk,Presqu'île (벨쿠르 광장 & 셀레스탱 극장),Café Comptoir Abel 부숑 첫 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+24,day-24-leg-01,funicular-ascent,fourviere,tram,Metro D ➔ Vieux Lyon ➔ 푸니쿨라 F2 상행,Basilique Notre-Dame de Fourvière & 로마극장,COMPLETE,COMPLETE,PASS_MATCH,PASS
+24,day-24-leg-02,fourviere,rosaire-descent,walk,Basilique Notre-Dame de Fourvière & 로마극장,Jardin du Rosaire 완만한 정원 하산길,COMPLETE,COMPLETE,PASS_MATCH,PASS
+24,day-24-leg-03,rosaire-descent,vieux-lyon-lunch,walk,Jardin du Rosaire 완만한 정원 하산길,Vieux Lyon 구시가지 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+24,day-24-leg-04,vieux-lyon-lunch,vieux-lyon,walk,Vieux Lyon 구시가지 점심,Vieux Lyon & Traboules (비외 리옹 & 트라불),COMPLETE,COMPLETE,PASS_MATCH,PASS
+24,day-24-leg-05,vieux-lyon,saone-presquile,walk,Vieux Lyon & Traboules (비외 리옹 & 트라불),Saône 강변 산책 & Passerelle Saint-Georges,COMPLETE,COMPLETE,PASS_MATCH,PASS
+24,day-24-leg-06,saone-presquile,lyon-bouchon-dinner,metro,Saône 강변 산책 & Passerelle Saint-Georges,Daniel et Denise 정통 부숑 만찬,COMPLETE,COMPLETE,PASS_MATCH,PASS
+25,day-25-leg-01,croix-rousse-market,maison-des-canuts,walk,Marché de la Croix-Rousse & 마을 산책,Maison des Canuts — 자카르 직조기 실제 시연,COMPLETE,COMPLETE,PASS_MATCH,PASS
+25,day-25-leg-02,maison-des-canuts,halles-gastronomy,bus,Maison des Canuts — 자카르 직조기 실제 시연,Halles Paul Bocuse 미식 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+25,day-25-leg-03,halles-gastronomy,halles-shopping,walk,Halles Paul Bocuse 미식 점심,폴 보퀴즈 시장 식재료 & 아티장 상점 탐방,COMPLETE,COMPLETE,PASS_MATCH,PASS
+25,day-25-leg-04,halles-shopping,tete-dor,walk,폴 보퀴즈 시장 식재료 & 아티장 상점 탐방,Parc de la Tête d'Or (황금머리 공원),COMPLETE,COMPLETE,PASS_MATCH,PASS
+25,day-25-leg-05,tete-dor,lyon-return,metro,Parc de la Tête d'Or (황금머리 공원),숙소 복귀 & 휴식 (저녁 가볍게),COMPLETE,COMPLETE,PASS_MATCH,PASS
+26,day-26-leg-01,part-dieu-departure,vieille-ville,train,Lyon Part-Dieu ➔ Annecy 이동 (TER),Annecy Vieille Ville & Palais de l'Île,COMPLETE,COMPLETE,PASS_MATCH,PASS
+26,day-26-leg-02,vieille-ville,savoy-lunch,walk,Annecy Vieille Ville & Palais de l'Île,Chez Mamie Lise 점심 (안시),COMPLETE,COMPLETE,PASS_MATCH,PASS
+26,day-26-leg-03,savoy-lunch,lakefront,walk,Chez Mamie Lise 점심 (안시),Lac d'Annecy & Pont des Amours & 유럽 정원,COMPLETE,COMPLETE,PASS_MATCH,PASS
+26,day-26-leg-04,lakefront,annecy-return,train,Lac d'Annecy & Pont des Amours & 유럽 정원,Annecy ➔ Lyon Part-Dieu 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+27,day-27-leg-01,lyon-checkout,part-dieu-lunch,taxi,Lyon 숙소 체크아웃 & Part-Dieu역 이동,Part-Dieu역 점심 & TGV 플랫폼 대기,COMPLETE,COMPLETE,PASS_MATCH,PASS
+27,day-27-leg-02,part-dieu-lunch,tgv-to-paris,train,Part-Dieu역 점심 & TGV 플랫폼 대기,TGV INOUI 6618 ➔ Paris Gare de Lyon 도착,COMPLETE,COMPLETE,PASS_MATCH,PASS
+27,day-27-leg-03,tgv-to-paris,paris-checkin,taxi,TGV INOUI 6618 ➔ Paris Gare de Lyon 도착,Paris 15구 숙소 이동 & 체크인 (15박 정착),COMPLETE,COMPLETE,PASS_MATCH,PASS
+27,day-27-leg-04,paris-checkin,first-grocery,walk,Paris 15구 숙소 이동 & 체크인 (15박 정착),15구 생활권 첫 장보기 & 동네 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+27,day-27-leg-05,first-grocery,paris-return,walk,15구 생활권 첫 장보기 & 동네 산책,숙소 첫 저녁 식사 & 파리 15박 시작,COMPLETE,COMPLETE,PASS_MATCH,PASS
+28,day-28-leg-01,morning-routine,city-bus-tour,metro,Boulangerie Pichard 아침 빵 조달 & 루틴,Tootbus Paris Discovery (Champs-Élysées - Franklin D. Roosevelt 승차),COMPLETE,COMPLETE,PASS_MATCH,PASS
+28,day-28-leg-02,city-bus-tour,grand-palais-cezanne,walk,Tootbus Paris Discovery (Champs-Élysées - Franklin D. Roosevelt 승차),Grand Palais — 특별전 <Cézanne et nous>,COMPLETE,COMPLETE,PASS_MATCH,PASS
+28,day-28-leg-03,grand-palais-cezanne,paris-return,metro,Grand Palais — 특별전 <Cézanne et nous>,Café du Commerce 15구 브라세리 첫 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+29,day-29-leg-01,morning-routine,luxembourg-warhol,metro,Marché Convention 일요 노천시장 장보기,Musée du Luxembourg — 특별전 <Andy Warhol>,COMPLETE,COMPLETE,PASS_MATCH,PASS
+29,day-29-leg-02,luxembourg-warhol,jardin-luxembourg,walk,Musée du Luxembourg — 특별전 <Andy Warhol>,Jardin du Luxembourg & 메디시스 분수,COMPLETE,COMPLETE,PASS_MATCH,PASS
+29,day-29-leg-03,jardin-luxembourg,saint-germain,walk,Jardin du Luxembourg & 메디시스 분수,Saint-Germain-des-Prés 지성미 도보,COMPLETE,COMPLETE,PASS_MATCH,PASS
+29,day-29-leg-04,saint-germain,notre-dame-compact,walk,Saint-Germain-des-Prés 지성미 도보,Notre-Dame de Paris & 시테 섬 (컴팩트 외관 조망),COMPLETE,COMPLETE,PASS_MATCH,PASS
+29,day-29-leg-05,notre-dame-compact,paris-return,metro,Notre-Dame de Paris & 시테 섬 (컴팩트 외관 조망),15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+30,day-30-leg-01,morning-routine,orangerie,metro,Standard Home Morning (아침·운동·장보기·점심),Musée de l'Orangerie (오랑주리 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+30,day-30-leg-02,orangerie,tuileries-vendome,walk,Musée de l'Orangerie (오랑주리 미술관),Jardin des Tuileries & Place Vendôme,COMPLETE,COMPLETE,PASS_MATCH,PASS
+30,day-30-leg-03,tuileries-vendome,palais-royal,walk,Jardin des Tuileries & Place Vendôme,Palais Royal (팔레 루아얄 안뜰 & 정원),COMPLETE,COMPLETE,PASS_MATCH,PASS
+30,day-30-leg-04,palais-royal,opera-garnier-district,walk,Palais Royal (팔레 루아얄 안뜰 & 정원),Opéra Garnier 지구 외관 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+30,day-30-leg-05,opera-garnier-district,paris-return,metro,Opéra Garnier 지구 외관 산책,Bouillon Chartier Montparnasse 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+31,day-31-leg-01,morning-routine,gustave-moreau,metro,Boulangerie Pichard 아침 빵 조달 & 숙소 생활,Musée Gustave Moreau (귀스타브 모로 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+31,day-31-leg-02,gustave-moreau,opera-lunch,walk,Musée Gustave Moreau (귀스타브 모로 미술관),9구 누벨 아테네 / 오페라 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+31,day-31-leg-03,opera-lunch,fashion-week-marais,metro,9구 누벨 아테네 / 오페라 점심,Paris Fashion Week 개막 분위기 & Le Marais,COMPLETE,COMPLETE,PASS_MATCH,PASS
+31,day-31-leg-04,fashion-week-marais,paris-return,metro,Paris Fashion Week 개막 분위기 & Le Marais,15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+32,day-32-leg-01,morning-routine,musee-d-orsay,metro,Art-Heavy Morning (빠른 아침·오르세 출발),Musée d'Orsay (오르세 미술관 3.5시간 집중 관람),COMPLETE,COMPLETE,PASS_MATCH,PASS
+32,day-32-leg-02,musee-d-orsay,rue-du-bac-lunch,walk,Musée d'Orsay (오르세 미술관 3.5시간 집중 관람),7구 Rue du Bac 점심 식사,COMPLETE,COMPLETE,PASS_MATCH,PASS
+32,day-32-leg-03,rue-du-bac-lunch,musee-rodin,walk,7구 Rue du Bac 점심 식사,Musée Rodin & 조각 정원 (로댕 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+32,day-32-leg-04,musee-rodin,invalides-exterior,walk,Musée Rodin & 조각 정원 (로댕 미술관),Les Invalides (앵발리드 황금 돔 외관 산책),COMPLETE,COMPLETE,PASS_MATCH,PASS
+32,day-32-leg-05,invalides-exterior,paris-return,metro,Les Invalides (앵발리드 황금 돔 외관 산책),Café du Commerce 동네 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+33,day-33-leg-01,morning-routine,petit-palais,metro,Shortened Home Morning (아침·빠른 준비),Petit Palais (프티 팔레 파리 시립미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+33,day-33-leg-02,petit-palais,champs-elysees-lunch,walk,Petit Palais (프티 팔레 파리 시립미술관),샹젤리제 인근 비스트로 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+33,day-33-leg-03,champs-elysees-lunch,fashion-week-montaigne,walk,샹젤리제 인근 비스트로 점심,Paris Fashion Week 서부 축 & Palais de Tokyo,COMPLETE,COMPLETE,PASS_MATCH,PASS
+33,day-33-leg-04,fashion-week-montaigne,paris-return,metro,Paris Fashion Week 서부 축 & Palais de Tokyo,15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+34,day-34-leg-01,versailles-transfer,versailles-palace,walk,15구 숙소 출발 ➔ RER C ➔ 베르사유 이동,Château de Versailles (베르사유 궁전 본관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+34,day-34-leg-02,versailles-palace,versailles-lunch,walk,Château de Versailles (베르사유 궁전 본관),베르사유 대운하 인근 점심 식사,COMPLETE,COMPLETE,PASS_MATCH,PASS
+34,day-34-leg-03,versailles-lunch,versailles-gardens,walk,베르사유 대운하 인근 점심 식사,베르사유 프랑스식 대정원 & 분수 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+34,day-34-leg-04,versailles-gardens,trianon-hamlet,walk,베르사유 프랑스식 대정원 & 분수 산책,Grand Trianon & Petit Trianon & 왕비의 촌락,COMPLETE,COMPLETE,PASS_MATCH,PASS
+34,day-34-leg-05,trianon-hamlet,paris-return,train,Grand Trianon & Petit Trianon & 왕비의 촌락,Le Grand Pan 15구 비스트로 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+35,day-35-leg-01,morning-routine,musee-du-louvre,metro,Boulangerie Pichard 잠봉 뵈르 샌드위치 & 아침,Musée du Louvre (루브르 박물관 4시간 집중 관람),COMPLETE,COMPLETE,PASS_MATCH,PASS
+35,day-35-leg-02,musee-du-louvre,cour-carree-seine,walk,Musée du Louvre (루브르 박물관 4시간 집중 관람),Cour Carrée & 센 강변 일몰 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+35,day-35-leg-03,cour-carree-seine,paris-return,metro,Cour Carrée & 센 강변 일몰 산책,15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+36,day-36-leg-01,morning-routine,marmottan-monet,bus,Marché Convention 토요 장보기 & 아침 루틴,Musée Marmottan Monet (마르모탕 모네 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+36,day-36-leg-02,marmottan-monet,ranelagh-passy,walk,Musée Marmottan Monet (마르모탕 모네 미술관),Jardin du Ranelagh & Passy 역사지구 산책,COMPLETE,COMPLETE,PASS_MATCH,PASS
+36,day-36-leg-03,ranelagh-passy,paris-return,metro,Jardin du Ranelagh & Passy 역사지구 산책,15구 조기 귀환 & 저녁 (익일 Arc 대회 휴식),COMPLETE,COMPLETE,PASS_MATCH,PASS
+37,day-37-leg-01,longchamp-transfer,prix-de-l-arc,bus,15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp,Qatar Prix de l'Arc de Triomphe (개선문상 본선),COMPLETE,COMPLETE,PASS_MATCH,PASS
+37,day-37-leg-02,prix-de-l-arc,paris-return,bus,Qatar Prix de l'Arc de Triomphe (개선문상 본선),파리롱샹 ➔ 15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+38,day-38-leg-01,morning-routine,jacquemart-andre,metro,Boulangerie Pichard 브런치 빵 조달 & 세탁,Musée Jacquemart-André (자크마르-앙드레 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+38,day-38-leg-02,jacquemart-andre,parc-monceau,walk,Musée Jacquemart-André (자크마르-앙드레 미술관),Parc Monceau (몽소 공원 고즈넉한 산책),COMPLETE,COMPLETE,PASS_MATCH,PASS
+38,day-38-leg-03,parc-monceau,paris-return,metro,Parc Monceau (몽소 공원 고즈넉한 산책),15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+39,day-39-leg-01,morning-routine,musee-picasso,metro,Standard Home Morning (아침·운동·장보기·점심),Musée Picasso Paris (국립 피카소 미술관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+39,day-39-leg-02,musee-picasso,marais-walk-carnavalet,walk,Musée Picasso Paris (국립 피카소 미술관),마레 지구 골목 산책 ➔ 카르나발레 이동,COMPLETE,COMPLETE,PASS_MATCH,PASS
+39,day-39-leg-03,marais-walk-carnavalet,musee-carnavalet,walk,마레 지구 골목 산책 ➔ 카르나발레 이동,Musée Carnavalet (카르나발레 파리 역사박물관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+39,day-39-leg-04,musee-carnavalet,place-des-vosges,walk,Musée Carnavalet (카르나발레 파리 역사박물관),Place des Vosges (보주 광장 & 아치 회랑),COMPLETE,COMPLETE,PASS_MATCH,PASS
+39,day-39-leg-05,place-des-vosges,paris-return,metro,Place des Vosges (보주 광장 & 아치 회랑),15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+40,day-40-leg-01,morning-routine,bourse-de-commerce,metro,Shortened Home Morning (아침·빠른 준비),Bourse de Commerce — Pinault Collection,COMPLETE,COMPLETE,PASS_MATCH,PASS
+40,day-40-leg-02,bourse-de-commerce,halles-lunch,walk,Bourse de Commerce — Pinault Collection,레 알 / 몽토르게이 점심 식사,COMPLETE,COMPLETE,PASS_MATCH,PASS
+40,day-40-leg-03,halles-lunch,vendanges-montmartre,metro,레 알 / 몽토르게이 점심 식사,Fête des Vendanges de Montmartre (포도축제 & 몽마르트르),COMPLETE,COMPLETE,PASS_MATCH,PASS
+40,day-40-leg-04,vendanges-montmartre,paris-return,metro,Fête des Vendanges de Montmartre (포도축제 & 몽마르트르),15구 숙소 귀환 & 저녁,COMPLETE,COMPLETE,PASS_MATCH,PASS
+41,day-41-leg-01,morning-routine,musee-guimet,metro,Art-Heavy Morning (빠른 아침·기메 출발),Musée Guimet (국립 기메 동양박물관),COMPLETE,COMPLETE,PASS_MATCH,PASS
+41,day-41-leg-02,musee-guimet,iena-lunch,walk,Musée Guimet (국립 기메 동양박물관),이에나 / 윌슨 대로변 점심 식사,COMPLETE,COMPLETE,PASS_MATCH,PASS
+41,day-41-leg-03,iena-lunch,musee-art-moderne,walk,이에나 / 윌슨 대로변 점심 식사,Musée d'Art Moderne de Paris (MAM),COMPLETE,COMPLETE,PASS_MATCH,PASS
+41,day-41-leg-04,musee-art-moderne,trocadero-sunset,walk,Musée d'Art Moderne de Paris (MAM),Place du Trocadéro ➔ 에펠탑 고별 일몰 조망,COMPLETE,COMPLETE,PASS_MATCH,PASS
+41,day-41-leg-05,trocadero-sunset,farewell-dinner,metro,Place du Trocadéro ➔ 에펠탑 고별 일몰 조망,Le Grand Pan 파리 15박 고별 만찬,COMPLETE,COMPLETE,PASS_MATCH,PASS
+42,day-42-leg-01,paris-packing-checkout,farewell-lunch,walk,15구 숙소 최종 짐 정리 & 체크아웃,Café du Commerce 15구 마지막 점심,COMPLETE,COMPLETE,PASS_MATCH,PASS
+42,day-42-leg-02,farewell-lunch,cdg-transfer,taxi,Café du Commerce 15구 마지막 점심,15구 숙소 ➔ CDG 공항 터미널 1 이동,COMPLETE,COMPLETE,PASS_MATCH,PASS
+42,day-42-leg-03,cdg-transfer,cdg-departure,walk,15구 숙소 ➔ CDG 공항 터미널 1 이동,CDG 공항 출국 수속 & OZ502 탑승,COMPLETE,COMPLETE,PASS_MATCH,PASS
+43,day-43-leg-01,inflight,icn,flight,기내박 — OZ502 취침 및 수분 섭취,인천국제공항 제1여객터미널 도착 (ICN),COMPLETE,COMPLETE,PASS_MATCH,PASS
+43,day-43-leg-02,icn,home,unconfirmed,인천국제공항 제1여객터미널 도착 (ICN),자택 귀환 & 43일 스페인-프랑스 대여정 공식 완결,COMPLETE,COMPLETE,PASS_MATCH,PASS

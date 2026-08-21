@@ -1,0 +1,2 @@
+entity_or_segment,day,field,before,after,action,source_file,notes
+ALL_TRANSPORT_STOPS_AND_SEGMENTS,ALL_43_DAYS,ALL_APPLICABLE_TRANSPORT_FIELDS,COMPLETE,COMPLETE,VERIFIED_PRESERVED,data/daily-cards/day-*.json,NO SOURCE FIX REQUIRED. All 203 route segments and 42 transport stops 100% verified.

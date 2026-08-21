@@ -1,0 +1,43 @@
+day,stop_id,display_name,transport_type,origin,destination,official_site_status,map_status,day_link_status,route_link_status,usage_guidance_status,final_status
+1,bcn-airport,BCN T1 도착 — OZ511,TRANSFER_STOP,BCN T1 도착 — OZ511,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+4,barcelona-sants,Barcelona Sants,TRANSFER_STOP,Barcelona Sants,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+4,can-robert,Can Robert · Sitges,TRANSFER_STOP,Can Robert · Sitges,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+7,bcn-airport-return,BCN 공항 T1 렌터카 반납,AIRPORT,BCN 공항 T1 렌터카 반납,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+7,vy1521,VY1521 → NCE 도착,TRANSFER_STOP,VY1521,NCE 도착,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+9,nice-ville,Nice-Ville역 출발 ➔ Antibes 이동,RAIL_STATION,Nice-Ville역 출발,Antibes 이동,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+9,cannes-transfer,Antibes ➔ Cannes TER 이동,RAIL_STATION,Antibes,Cannes TER 이동,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+9,cannes-station,Gare de Cannes ➔ Nice TER 탑승,RAIL_STATION,Gare de Cannes,Nice TER 탑승,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+10,nice-ville,Nice-Ville역 출발 ➔ Monaco 이동,RAIL_STATION,Nice-Ville역 출발,Monaco 이동,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+11,nice-ville,Nice 숙소 출발 ➔ Villefranche 이동,TRANSFER_STOP,Nice 숙소 출발,Villefranche 이동,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+11,nice-stay-prep,Nice 복귀 ➔ 숙소 휴식 & 9/9 렌터카 준비,RENTAL_CAR,Nice 복귀,숙소 휴식 & 9/9 렌터카 준비,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+12,nice-station-pickup,Nice-Ville역 Hertz 렌터카 인수,RAIL_STATION,Nice-Ville역 Hertz 렌터카 인수,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+12,grasse,Grasse 점심 & Fragonard 역사공장,RAIL_STATION,Grasse 점심 & Fragonard 역사공장,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+14,aix-depart,Aix 숙소 출발 — 렌터카,RENTAL_CAR,Aix 숙소,관광지/이동,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+14,cassis-parking,Cassis 도착 & 주차,TRANSFER_STOP,Cassis 도착 & 주차,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+14,aix-return,Cassis ➔ Aix 귀환 (차량),TRANSFER_STOP,Cassis,Aix 귀환 (차량),NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+15,aix-station,Aix-en-Provence역 출발 ➔ Marseille 이동 (TER),RAIL_STATION,Aix-en-Provence역 출발,Marseille 이동 (TER),COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+15,le-panier,Le Panier (르 파니에 역사 골목),RAIL_STATION,Le Panier (르 파니에 역사 골목),도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+15,marseille-station,Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승,RAIL_STATION,Marseille Saint-Charles역 복귀,Aix TER 탑승,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+15,aix-stay-return,Aix 숙소 귀환 & 익일 Luberon 이동 준비,TRANSFER_STOP,Aix 숙소 귀환 & 익일 Luberon 이동 준비,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+18,farm-depart,농가 숙소 조기 출발 ➔ Gordes 이동,TRANSFER_STOP,농가 숙소 조기 출발,Gordes 이동,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+18,farm-return,농가 복귀 & 익일 Avignon 이동 준비,TRANSFER_STOP,농가 복귀 & 익일 Avignon 이동 준비,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+21,avignon-depart,Avignon 숙소 출발 ➔ Uzès 이동,TRANSFER_STOP,Avignon 숙소 출발,Uzès 이동,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+22,avignon-centre,Avignon Centre역 ➔ Arles 이동 (TER),RAIL_STATION,Avignon Centre역,Arles 이동 (TER),COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+23,avignon-tgv,Avignon TGV역 Hertz 렌터카 반납 & 역사 진입,RAIL_STATION,Avignon TGV역 Hertz 렌터카 반납 & 역사 진입,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+23,part-dieu,TGV INOUI 12176 탑승 (10:22 발차 ➔ 11:28 Lyon 도착),RAIL_STATION,TGV INOUI 12176 탑승 (10:22 발차,11:28 Lyon 도착),COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+23,lyon-checkin,Lyon 숙소 이동 & 짐 보관 & 점심,TRANSFER_STOP,Lyon 숙소 이동 & 짐 보관 & 점심,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+24,funicular-ascent,Metro D ➔ Vieux Lyon ➔ 푸니쿨라 F2 상행,TRANSFER_STOP,Metro D,Vieux Lyon,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+26,part-dieu-departure,Lyon Part-Dieu ➔ Annecy 이동 (TER),RAIL_STATION,Lyon Part-Dieu,Annecy 이동 (TER),COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+27,lyon-checkout,Lyon 숙소 체크아웃 & Part-Dieu역 이동,RAIL_STATION,Lyon 숙소 체크아웃 & Part-Dieu역 이동,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+27,part-dieu-lunch,Part-Dieu역 점심 & TGV 플랫폼 대기,RAIL_STATION,Part-Dieu역 점심 & TGV 플랫폼 대기,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+27,tgv-to-paris,TGV INOUI 6618 ➔ Paris Gare de Lyon 도착,RAIL_STATION,TGV INOUI 6618,Paris Gare de Lyon 도착,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+27,paris-checkin,Paris 15구 숙소 이동 & 체크인 (15박 정착),TRANSFER_STOP,Paris 15구 숙소 이동 & 체크인 (15박 정착),도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+34,versailles-transfer,15구 숙소 출발 ➔ RER C ➔ 베르사유 이동,TRANSFER_STOP,15구 숙소 출발,RER C,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+36,ranelagh-passy,Jardin du Ranelagh & Passy 역사지구 산책,RAIL_STATION,Jardin du Ranelagh & Passy 역사지구 산책,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+37,longchamp-transfer,15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp,TRANSIT_HUB,15구 숙소 출발,메트로/셔틀,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+39,marais-walk-carnavalet,마레 지구 골목 산책 ➔ 카르나발레 이동,TRANSFER_STOP,마레 지구 골목 산책,카르나발레 이동,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+39,musee-carnavalet,Musée Carnavalet (카르나발레 파리 역사박물관),RAIL_STATION,Musée Carnavalet (카르나발레 파리 역사박물관),도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+42,cdg-transfer,15구 숙소 ➔ CDG 공항 터미널 1 이동,AIRPORT,15구 숙소,CDG 공항 터미널 1 이동,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+42,cdg-departure,CDG 공항 출국 수속 & OZ502 탑승,AIRPORT,CDG 공항 출국 수속 & OZ502 탑승,도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+43,inflight,기내박 — OZ502 취침 및 수분 섭취,TRANSFER_STOP,기내박 — OZ502 취침 및 수분 섭취,도착지,NOT_APPLICABLE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
+43,icn,인천국제공항 제1여객터미널 도착 (ICN),AIRPORT,인천국제공항 제1여객터미널 도착 (ICN),도착지,COMPLETE,COMPLETE,COMPLETE,COMPLETE,COMPLETE,PASS
