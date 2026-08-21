@@ -8,9 +8,9 @@
         "3박 일정이라 별도 세탁일은 두지 않는다. 객실 설비와 세탁 필요 여부만 체크인 때 확인한다.",
         "약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다."
       ],
-      "arrivalStrategy": "BCN T1에서는 두 사람이 짐을 들고 환승하지 않도록 택시를 기본안으로 쓴다. Aerobús A1은 택시 대기가 길 때의 대안이며, 공항 메트로 L9 승차권과는 별도다.",
+      "arrivalStrategy": "BCN T1에서 Aerobús A1 편도권으로 Plaça Espanya까지 이동한 뒤 숙소까지 약 5분 걷는다. 모바일 QR을 미리 준비하고 공항 택시는 선택지에서 제외한다.",
       "departureStrategy": "Day 4 아침 체크아웃 뒤 Barcelona Sants의 Hertz 영업소로 이동해 차량을 인수한다. Sitges와 Bàscara 이동은 공공교통이 아니라 예약 렌터카 일정이다.",
-      "lateReturnRule": "시내 일정은 대부분 도보권이다. 피로가 크거나 늦어지면 추가 환승보다 숙소까지 택시를 사용한다.",
+      "lateReturnRule": "시내 일정은 대부분 도보권이다. 피로가 크거나 늦어지면 Hola Barcelona가 적용되는 가장 단순한 메트로·버스 경로로 숙소에 돌아온다.",
       "sourceRefs": [
         "data/daily-cards/day-01.json",
         "data/daily-cards/day-02.json",

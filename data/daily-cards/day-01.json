@@ -9,7 +9,7 @@
   "startTime": "19:10",
   "endTime": "23:00",
   "totalDuration": "3시간 50분",
-  "totalDistance": "약 12km · 택시",
+  "totalDistance": "Aerobús A1 약 25~35분 · Plaça Espanya에서 도보",
   "fatigue": "3",
   "hotel": {
     "name": "Occidental Barcelona 1929",
@@ -28,7 +28,7 @@
       "category": "transport",
       "lat": 41.296944,
       "lng": 2.079047,
-      "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 택시 승강장으로 이동",
+      "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 도착층 Aerobús A1 정류장으로 이동",
       "menu": null,
       "reservation": "예약완료 OZ511 ([CONFIRMED]) — ICN T2 11:50 출발",
       "optional": false,
@@ -69,10 +69,10 @@
     {
       "from": "bcn-airport",
       "to": "barcelona-checkin",
-      "mode": "taxi",
-      "duration": "약 30~40분",
-      "distance": "약 12km",
-      "line": null,
+      "mode": "bus",
+      "duration": "A1 약 25~35분 + 도보 약 5분",
+      "distance": "BCN T1→Plaça Espanya→숙소",
+      "line": "Aerobús A1",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -86,8 +86,8 @@
     }
   ],
   "transport": [
-    "택시 (공항 T1 승강장 → 숙소)",
-    "Aerobús A1 (24시간 대안)"
+    "Aerobús A1 편도 (BCN T1 → Plaça Espanya)",
+    "Plaça Espanya → 숙소 도보 약 5분"
   ],
   "food": [
     "기내 저녁으로 해결",
@@ -105,16 +105,16 @@
       41.345,
       2.125
     ],
-    "routeCache": "routes/day-01-driving-osrm.json"
+    "routeCache": null
   },
   "needsReview": [
-    "공항 택시 승강장 위치 확인 (T1)"
+    "출발 전 Aerobús A1 모바일 QR과 T1 승강장 표지 재확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md#Day-1",
     "항공권 확정 (2026-08-10 반영): OZ511 ICN T2 11:50 → BCN T1 19:10, 예약 [CONFIRMED]",
     "source/ASSETS/75_Execution_Maps/Barcelona_Execution_Map_v0.2.kml",
-    "routes/day-01-driving-osrm.json (공항→확정 숙소 11.6km)",
+    "Aerobús 공식 노선·정류장 확인 (2026-08-22): A1은 BCN T1↔도심, Plaça Espanya 정차, 24시간 운행",
     "예약 증빙 확인 (2026-08-21): Trip.com 바우처 대조 — Occidental Barcelona 1929 · Carrer de la Creu Coberta 20-22 · 체크인 14:00~ · 체크아웃 12:00",
     "예약 증빙 확인 (2026-08-21): 아시아나 전자항공권 — OZ511 · 29AUG26 11:50 ICN T2 ➔ 19:10 BCN T1 · 14H20M · 무료 수하물 2PC"
   ]

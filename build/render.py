@@ -1044,11 +1044,17 @@ def build_region(r: Region, trip: Trip) -> str:
                            f'target="_blank">PDF 열기</a>')
             else:
                 primary = ""
+            rights = ""
+            if resource.get("rightsHolder"):
+                rights = (f'<p class="fine-print"><strong>저작권</strong> · '
+                          f'{esc(resource["license"])} 권리자: {esc(resource["rightsHolder"])}<br>'
+                          f'{esc(resource["redistributionBasis"])}</p>')
             resource_cards.append(f'''<article class="card"><div class="card-body">
   <h3>{esc(resource["title"])}</h3>
   <div class="metarow"><span>{esc(resource["edition"])}</span></div>
   <p>{esc(resource["usage"])}</p>
-  <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">공식 최신판</a></div>
+  {rights}
+  <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">권리자 사이트</a></div>
 </div></article>''')
         parts.append(f'<div class="grid grid-2">{"".join(resource_cards)}</div>')
 
