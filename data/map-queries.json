@@ -1,0 +1,966 @@
+{
+  "schemaVersion": "1.0",
+  "verifiedAt": "2026-08-22",
+  "note": "구글맵 이름 검색어. 좌표가 아니라 이름으로 여는 것이 정확한 대상만 싣는다. 여기 없으면 좌표·주소로 폴백한다.",
+  "places": {
+    "abbaye-de-senanque": {
+      "query": "Abbaye Notre-Dame de Sénanque, Gordes",
+      "verdict": "FOUND",
+      "resolvedName": "Abbaye Notre-Dame de Sénanque",
+      "evidence": "https://www.senanque.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "annecy": {
+      "query": "Palais de l'Île, Annecy",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Annecy Vieille Ville",
+      "evidence": "https://en.wikipedia.org/wiki/Annecy",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Annecy 구시가지"
+    },
+    "arenes-d-arles": {
+      "query": "Arènes d'Arles, Arles",
+      "verdict": "FOUND",
+      "resolvedName": "Amphithéâtre romain d'Arles",
+      "evidence": "https://www.arlestourisme.com/en/arenas-amphitheatre.html",
+      "verifiedAt": "2026-08-22"
+    },
+    "arles": {
+      "query": "Arles, France",
+      "verdict": "FOUND",
+      "resolvedName": "Arles",
+      "evidence": "https://en.wikipedia.org/wiki/Arles",
+      "verifiedAt": "2026-08-22"
+    },
+    "atelier-des-lauves": {
+      "query": "Atelier de Cézanne, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Atelier de Cézanne",
+      "evidence": "https://www.atelier-cezanne.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "bar-canete": {
+      "query": "Bar Cañete, Carrer de la Unió 17, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Bar Cañete",
+      "evidence": "https://www.oadguides.com/restaurant/bar-canete",
+      "verifiedAt": "2026-08-22"
+    },
+    "barcelona-sants": {
+      "query": "Estació de Barcelona-Sants, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Estació de Barcelona-Sants",
+      "evidence": "https://en.wikipedia.org/wiki/Barcelona_Sants_railway_station",
+      "verifiedAt": "2026-08-22"
+    },
+    "barri-gotic": {
+      "query": "Barri Gòtic, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Barri Gòtic",
+      "evidence": "https://www.barcelonaturisme.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "bastide-du-jas-de-bouffan": {
+      "query": "Bastide du Jas de Bouffan, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "La Bastide du Jas de Bouffan",
+      "evidence": "https://www.cezanne-en-provence.com/les-sites-de-cezanne/bastide-du-jas-de-bouffan/",
+      "verifiedAt": "2026-08-22"
+    },
+    "bellecour": {
+      "query": "Place Bellecour, Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Place Bellecour",
+      "evidence": "https://en.wikipedia.org/wiki/Place_Bellecour",
+      "verifiedAt": "2026-08-22"
+    },
+    "biblioteca-de-catalunya": {
+      "query": "Biblioteca de Catalunya, Carrer de l'Hospital 56, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Biblioteca de Catalunya",
+      "evidence": "https://www.bnc.cat/eng",
+      "verifiedAt": "2026-08-22"
+    },
+    "bnf-richelieu": {
+      "query": "BnF Richelieu, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "BnF – Site Richelieu",
+      "evidence": "https://www.bnf.fr/en/the-bnfs-richelieu-site",
+      "verifiedAt": "2026-08-22"
+    },
+    "bodega-joan": {
+      "query": "Bodega Joan, Carrer del Rosselló 164, Barcelona",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Bodega Joan",
+      "evidence": "https://www.bodegajoan.com/en",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Bodega Joan"
+    },
+    "bonnieux": {
+      "query": "Bonnieux, France",
+      "verdict": "FOUND",
+      "resolvedName": "Bonnieux",
+      "evidence": "https://fr.wikipedia.org/wiki/Bonnieux",
+      "verifiedAt": "2026-08-22"
+    },
+    "bouillon-chartier-montparnasse": {
+      "query": "Bouillon Chartier Montparnasse, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Bouillon Chartier Montparnasse",
+      "evidence": "https://www.bouillon-chartier.com/en/bouillon-chartier-montparnasse-en/",
+      "verifiedAt": "2026-08-22"
+    },
+    "boulangerie-pichard": {
+      "query": "Boulangerie Pichard, 88 rue Cambronne, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Boulangerie Pichard",
+      "evidence": "https://parisbymouth.com/boulangerie-pichard/",
+      "verifiedAt": "2026-08-22"
+    },
+    "bourse-de-commerce-pinault-collection": {
+      "query": "Bourse de Commerce — Pinault Collection, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Bourse de Commerce — Pinault Collection",
+      "evidence": "https://www.pinaultcollection.com/en/boursedecommerce/practical-info",
+      "verifiedAt": "2026-08-22"
+    },
+    "cafe-comptoir-abel": {
+      "query": "Café Comptoir Abel, 25 rue Guynemer, Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Café Comptoir Abel",
+      "evidence": "https://www.visiterlyon.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cafe-du-commerce": {
+      "query": "Le Café du Commerce, 51 rue du Commerce, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Le Café du Commerce",
+      "evidence": "https://www.lecafeducommerce.com/infos-pratiques/",
+      "verifiedAt": "2026-08-22"
+    },
+    "calanques": {
+      "query": "Calanque de Port-Miou, Cassis",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Parc national des Calanques",
+      "evidence": "https://www.calanques-parcnational.fr/",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Calanques"
+    },
+    "calella-de-palafrugell": {
+      "query": "Calella de Palafrugell, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Calella de Palafrugell",
+      "evidence": "https://costabrava.org/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cannes": {
+      "query": "Cannes, France",
+      "verdict": "FOUND",
+      "resolvedName": "Cannes",
+      "evidence": "https://en.cannes-france.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "carrieres-de-bibemus": {
+      "query": "Carrières de Bibémus, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Carrières de Bibémus",
+      "evidence": "https://www.cezanne-en-provence.com/les-sites-de-cezanne/carrieres-de-bibemus/",
+      "verifiedAt": "2026-08-22"
+    },
+    "carrieres-des-lumieres": {
+      "query": "Carrières des Lumières, Les Baux-de-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Carrières des Lumières",
+      "evidence": "https://www.carrieres-lumieres.com/en/information-access",
+      "verifiedAt": "2026-08-22"
+    },
+    "casa-marieta": {
+      "query": "Casa Marieta 1892, Plaça de la Independència 5-6, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Restaurant Casa Marieta 1892",
+      "evidence": "https://casamarieta.com/en/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cassis": {
+      "query": "Port de Cassis, Cassis",
+      "verdict": "FOUND",
+      "resolvedName": "Port de Cassis",
+      "evidence": "https://www.ot-cassis.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cau-ferrat": {
+      "query": "Museu del Cau Ferrat, Sitges",
+      "verdict": "FOUND",
+      "resolvedName": "Museu del Cau Ferrat",
+      "evidence": "https://museusdesitges.cat/",
+      "verifiedAt": "2026-08-22"
+    },
+    "centre-pompidou": {
+      "query": "Centre Pompidou, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Centre Pompidou",
+      "evidence": "https://www.centrepompidou.fr/en/centre-pompidou-is-transforming-itself",
+      "verifiedAt": "2026-08-22"
+    },
+    "chez-gilbert-cassis": {
+      "query": "Chez Gilbert, Cassis",
+      "verdict": "FOUND",
+      "resolvedName": "Restaurant Chez Gilbert",
+      "evidence": "https://www.chezgilbert.net/",
+      "verifiedAt": "2026-08-22"
+    },
+    "chez-mamie-lise": {
+      "query": "Chez Mamie Lise, 11 rue Grenette, Annecy",
+      "verdict": "FOUND",
+      "resolvedName": "Chez Mamie Lise",
+      "evidence": "https://www.mamie-lise.com/restaurant-annecy/contact/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cloitre-saint-trophime": {
+      "query": "Cloître Saint-Trophime, Arles",
+      "verdict": "FOUND",
+      "resolvedName": "Cloître Saint-Trophime",
+      "evidence": "https://www.arlestourisme.com/en/saint-trophime-cloister.html",
+      "verifiedAt": "2026-08-22"
+    },
+    "colline-du-chateau": {
+      "query": "Parc de la Colline du Château, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Parc de la Colline du Château",
+      "evidence": "https://www.explorenicecotedazur.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "collioure": {
+      "query": "Collioure, France",
+      "verdict": "FOUND",
+      "resolvedName": "Collioure",
+      "evidence": "https://en.wikipedia.org/wiki/Collioure",
+      "verifiedAt": "2026-08-22"
+    },
+    "cours-mirabeau": {
+      "query": "Cours Mirabeau, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Cours Mirabeau",
+      "evidence": "https://www.aix.fr/incontournables/cours-mirabeau",
+      "verifiedAt": "2026-08-22"
+    },
+    "cours-saleya": {
+      "query": "Cours Saleya, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Cours Saleya (Marché aux fleurs)",
+      "evidence": "https://www.explorenicecotedazur.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "coustellet": {
+      "query": "Marché paysan de Coustellet, Maubec",
+      "verdict": "FOUND",
+      "resolvedName": "Marché paysan de Coustellet",
+      "evidence": "https://www.destinationluberon.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "croix-rousse": {
+      "query": "Place de la Croix-Rousse, Lyon",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "La Croix-Rousse",
+      "evidence": "https://en.wikipedia.org/wiki/Croix-Rousse",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Croix-Rousse"
+    },
+    "daniel-et-denise": {
+      "query": "Daniel et Denise Créqui, Lyon",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Daniel et Denise Créqui",
+      "evidence": "https://guide.michelin.com/fr/fr/auvergne-rhone-alpes/lyon/restaurant/daniel-et-denise-crequi",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Daniel et Denise"
+    },
+    "fondation-vincent-van-gogh-arles": {
+      "query": "Fondation Vincent van Gogh Arles, Arles",
+      "verdict": "FOUND",
+      "resolvedName": "Fondation Vincent van Gogh Arles",
+      "evidence": "https://www.fondation-vincentvangogh-arles.org/en/visit-us/",
+      "verifiedAt": "2026-08-22"
+    },
+    "fort-saint-jean": {
+      "query": "Fort Saint-Jean, Marseille",
+      "verdict": "FOUND",
+      "resolvedName": "Fort Saint-Jean (Mucem)",
+      "evidence": "https://www.mucem.org/",
+      "verifiedAt": "2026-08-22"
+    },
+    "fou-de-fafa-avignon": {
+      "query": "Fou de Fafa, 17 rue des Trois Faucons, Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Restaurant Fou de Fafa",
+      "evidence": "https://www.restaurantfoudefafa.com/contact",
+      "verifiedAt": "2026-08-22"
+    },
+    "fourviere": {
+      "query": "Basilique Notre-Dame de Fourvière, Lyon",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Basilique Notre-Dame de Fourvière",
+      "evidence": "https://en.wikipedia.org/wiki/Notre-Dame_de_Fourvi%C3%A8re",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Fourvière"
+    },
+    "girona-cathedral": {
+      "query": "Catedral de Santa Maria de Girona, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Catedral de Santa Maria de Girona",
+      "evidence": "https://www.girona.cat/turisme/eng/monuments_catedral.php",
+      "verifiedAt": "2026-08-22"
+    },
+    "giverny": {
+      "query": "Fondation Claude Monet, Giverny",
+      "verdict": "FOUND",
+      "resolvedName": "Fondation Claude Monet",
+      "evidence": "https://fondation-monet.com/en/useful-information/",
+      "verifiedAt": "2026-08-22"
+    },
+    "glanum": {
+      "query": "Site archéologique de Glanum, Saint-Rémy-de-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Site archéologique de Glanum",
+      "evidence": "https://www.site-glanum.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "gordes": {
+      "query": "Gordes, France",
+      "verdict": "FOUND",
+      "resolvedName": "Gordes",
+      "evidence": "https://fr.wikipedia.org/wiki/Gordes",
+      "verifiedAt": "2026-08-22"
+    },
+    "goult": {
+      "query": "Goult, France",
+      "verdict": "FOUND",
+      "resolvedName": "Goult",
+      "evidence": "https://fr.wikipedia.org/wiki/Goult",
+      "verifiedAt": "2026-08-22"
+    },
+    "grand-palais": {
+      "query": "Grand Palais, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Grand Palais",
+      "evidence": "https://www.grandpalais.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "grasse": {
+      "query": "Grasse, France",
+      "verdict": "FOUND",
+      "resolvedName": "Grasse",
+      "evidence": "https://fr.wikipedia.org/wiki/Grasse",
+      "verifiedAt": "2026-08-22"
+    },
+    "halles-de-lyon-paul-bocuse": {
+      "query": "Les Halles de Lyon Paul Bocuse, 102 cours Lafayette, Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Les Halles de Lyon — Paul Bocuse",
+      "evidence": "https://www.halles-de-lyon-paulbocuse.com/informations-utiles/",
+      "verifiedAt": "2026-08-22"
+    },
+    "l-isle-sur-la-sorgue": {
+      "query": "L'Isle-sur-la-Sorgue, France",
+      "verdict": "FOUND",
+      "resolvedName": "L'Isle-sur-la-Sorgue",
+      "evidence": "https://fr.wikipedia.org/wiki/L%27Isle-sur-la-Sorgue",
+      "verifiedAt": "2026-08-22"
+    },
+    "la-paradeta-sagrada-familia": {
+      "query": "La Paradeta Sagrada Família, Passatge de Simó 18, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "La Paradeta Sagrada Família",
+      "evidence": "https://www.laparadeta.com/en/seafood-restaurants/",
+      "verifiedAt": "2026-08-22"
+    },
+    "la-roquette": {
+      "query": "Église Saint-Césaire, Arles",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Quartier de la Roquette (Arles)",
+      "evidence": "https://fr.wikipedia.org/wiki/La_Roquette_(quartier_d%27Arles)",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "La Roquette"
+    },
+    "la-zorra": {
+      "query": "La Zorra, Passeig Marítim 1-3, Sitges",
+      "verdict": "FOUND",
+      "resolvedName": "La Zorra",
+      "evidence": "https://restaurantelazorra.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "latin-quarter": {
+      "query": "Place de la Sorbonne, Paris",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Quartier Latin",
+      "evidence": "https://en.wikipedia.org/wiki/Latin_Quarter",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Latin Quarter"
+    },
+    "le-figuier-de-saint-esprit": {
+      "query": "Le Figuier de Saint-Esprit, Antibes",
+      "verdict": "FOUND",
+      "resolvedName": "Le Figuier de Saint-Esprit",
+      "evidence": "https://guide.michelin.com/us/en/provence-alpes-cote-dazur/antibes/restaurant/le-figuier-de-st-esprit",
+      "verifiedAt": "2026-08-22"
+    },
+    "le-gibolin-arles": {
+      "query": "Le Gibolin, 13 rue des Porcelets, Arles",
+      "verdict": "FOUND",
+      "resolvedName": "Le Gibolin",
+      "evidence": "https://guide.michelin.com/us/en/provence-alpes-cote-dazur/arles/restaurant/le-gibolin",
+      "verifiedAt": "2026-08-22"
+    },
+    "le-grand-pan": {
+      "query": "Le Grand Pan, 20 rue Rosenwald, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Le Grand Pan",
+      "evidence": "https://www.legrandpan.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "le-marais": {
+      "query": "Place des Vosges, Paris",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Le Marais",
+      "evidence": "https://en.wikipedia.org/wiki/Le_Marais",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Le Marais"
+    },
+    "le-panier": {
+      "query": "Le Panier, Marseille",
+      "verdict": "FOUND",
+      "resolvedName": "Le Panier",
+      "evidence": "https://fr.wikipedia.org/wiki/Le_Panier",
+      "verifiedAt": "2026-08-22"
+    },
+    "le-rocher": {
+      "query": "Monaco-Ville, Monaco",
+      "verdict": "FOUND",
+      "resolvedName": "Monaco-Ville (Le Rocher)",
+      "evidence": "https://www.visitmonaco.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "le-suquet": {
+      "query": "Le Suquet, Cannes",
+      "verdict": "FOUND",
+      "resolvedName": "Le Suquet",
+      "evidence": "https://en.cannes-france.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "les-baux-de-provence": {
+      "query": "Les Baux-de-Provence, France",
+      "verdict": "FOUND",
+      "resolvedName": "Les Baux-de-Provence",
+      "evidence": "https://en.wikipedia.org/wiki/Les_Baux-de-Provence",
+      "verifiedAt": "2026-08-22"
+    },
+    "les-cocottes-saint-louis": {
+      "query": "Les Cocottes Saint Louis, 20 rue du Portail Boquier, Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Les Cocottes Saint Louis",
+      "evidence": "https://www.hotel-cloitre-saintlouis-avignon.fr/fr/restauration/les-cocottes-saintlouis",
+      "verifiedAt": "2026-08-22"
+    },
+    "les-halles": {
+      "query": "Les Halles d'Avignon, Place Pie, Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Les Halles d'Avignon",
+      "evidence": "https://fr.wikipedia.org/wiki/Halles_d%27Avignon",
+      "verifiedAt": "2026-08-22"
+    },
+    "lourmarin": {
+      "query": "Lourmarin, France",
+      "verdict": "FOUND",
+      "resolvedName": "Lourmarin",
+      "evidence": "https://fr.wikipedia.org/wiki/Lourmarin",
+      "verifiedAt": "2026-08-22"
+    },
+    "macba": {
+      "query": "Museu d'Art Contemporani de Barcelona, Plaça dels Àngels 1",
+      "verdict": "FOUND",
+      "resolvedName": "MACBA",
+      "evidence": "https://www.macba.cat/en/plan-your-visit/",
+      "verifiedAt": "2026-08-22"
+    },
+    "marche-convention": {
+      "query": "Marché Convention, Paris 15",
+      "verdict": "FOUND",
+      "resolvedName": "Marché Convention",
+      "evidence": "https://www.paris.fr/lieux/marche-convention-5501",
+      "verifiedAt": "2026-08-22"
+    },
+    "marche-de-la-liberation": {
+      "query": "Marché de la Libération, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Marché aux fruits et légumes de la Libération",
+      "evidence": "https://www.explorenicecotedazur.com/en/event/marche-aux-fruits-et-legumes-de-la-liberation/",
+      "verifiedAt": "2026-08-22"
+    },
+    "marche-forville": {
+      "query": "Marché Forville, Cannes",
+      "verdict": "FOUND",
+      "resolvedName": "Marché Forville",
+      "evidence": "https://www.marcheforville.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "marseille": {
+      "query": "Marseille, France",
+      "verdict": "FOUND",
+      "resolvedName": "Marseille",
+      "evidence": "https://fr.wikipedia.org/wiki/Marseille",
+      "verifiedAt": "2026-08-22"
+    },
+    "menerbes": {
+      "query": "Ménerbes, France",
+      "verdict": "FOUND",
+      "resolvedName": "Ménerbes",
+      "evidence": "https://fr.wikipedia.org/wiki/M%C3%A9nerbes",
+      "verifiedAt": "2026-08-22"
+    },
+    "menton": {
+      "query": "Menton, France",
+      "verdict": "FOUND",
+      "resolvedName": "Menton",
+      "evidence": "https://www.tourisme-menton.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "mercat-concepcio": {
+      "query": "Mercat de la Concepció, Carrer d'Aragó 313, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Mercat de la Concepció",
+      "evidence": "https://www.laconcepcio.cat/en/the-market/",
+      "verifiedAt": "2026-08-22"
+    },
+    "mercat-del-lleo": {
+      "query": "Mercat del Lleó, Plaça Calvet i Rubalcaba 15, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Mercat del Lleó",
+      "evidence": "https://www.mercatlleo.cat/",
+      "verifiedAt": "2026-08-22"
+    },
+    "monaco": {
+      "query": "Monaco",
+      "verdict": "FOUND",
+      "resolvedName": "Principauté de Monaco",
+      "evidence": "https://www.visitmonaco.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "montagne-sainte-victoire-terrain-des-peintres": {
+      "query": "Terrain des Peintres, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Jardin des Peintres",
+      "evidence": "https://www.aix.fr/incontournables/jardin-peintres",
+      "verifiedAt": "2026-08-22"
+    },
+    "montorgueil": {
+      "query": "Rue Montorgueil, 75002 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Rue Montorgueil",
+      "evidence": "https://en.wikipedia.org/wiki/Rue_Montorgueil",
+      "verifiedAt": "2026-08-22"
+    },
+    "mucem": {
+      "query": "Mucem, Marseille",
+      "verdict": "FOUND",
+      "resolvedName": "Mucem",
+      "evidence": "https://www.mucem.org/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-carnavalet": {
+      "query": "Musée Carnavalet, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée Carnavalet – Histoire de Paris",
+      "evidence": "https://www.carnavalet.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-d-art-moderne-de-paris": {
+      "query": "Musée d'Art Moderne de Paris, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée d'Art Moderne de Paris",
+      "evidence": "https://www.mam.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-d-orsay": {
+      "query": "Musée d'Orsay, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée d'Orsay",
+      "evidence": "https://www.musee-orsay.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-de-l-orangerie": {
+      "query": "Musée de l'Orangerie, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée de l'Orangerie",
+      "evidence": "https://www.musee-orangerie.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-du-louvre": {
+      "query": "Musée du Louvre, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée du Louvre",
+      "evidence": "https://www.louvre.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-du-luxembourg": {
+      "query": "Musée du Luxembourg, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée du Luxembourg",
+      "evidence": "https://museeduluxembourg.fr/en/hours-and-access",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-granet": {
+      "query": "Musée Granet, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Musée Granet",
+      "evidence": "https://www.museegranet-aixenprovence.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-guimet": {
+      "query": "Musée Guimet, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "MNAAG – Guimet",
+      "evidence": "https://www.guimet.fr/en",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-gustave-moreau": {
+      "query": "Musée Gustave Moreau, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée national Gustave Moreau",
+      "evidence": "https://en.wikipedia.org/wiki/Mus%C3%A9e_national_Gustave_Moreau",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-jacquemart-andre": {
+      "query": "Musée Jacquemart-André, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée Jacquemart-André",
+      "evidence": "https://www.musee-jacquemart-andre.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-marmottan-monet": {
+      "query": "Musée Marmottan Monet, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée Marmottan Monet",
+      "evidence": "https://www.marmottan.fr/en/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-picasso-paris": {
+      "query": "Musée Picasso Paris, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée national Picasso-Paris",
+      "evidence": "https://www.museepicassoparis.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "musee-rodin": {
+      "query": "Musée Rodin, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Musée Rodin",
+      "evidence": "https://www.musee-rodin.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "nce-t2": {
+      "query": "Aéroport Terminal 2, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Aéroport Nice Côte d'Azur Terminal 2",
+      "evidence": "https://fr.wikipedia.org/wiki/Ligne_2_du_tramway_de_Nice",
+      "verifiedAt": "2026-08-22"
+    },
+    "nice-ville": {
+      "query": "Gare de Nice-Ville",
+      "verdict": "FOUND",
+      "resolvedName": "Gare de Nice-Ville",
+      "evidence": "https://www.garesetconnexions.sncf/fr/gare/frnic/nice-ville",
+      "verifiedAt": "2026-08-22"
+    },
+    "notre-dame-de-la-garde": {
+      "query": "Basilique Notre-Dame de la Garde, Marseille",
+      "verdict": "FOUND",
+      "resolvedName": "Basilique Notre-Dame de la Garde",
+      "evidence": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame_de_la_Garde",
+      "verifiedAt": "2026-08-22"
+    },
+    "notre-dame-de-paris": {
+      "query": "Cathédrale Notre-Dame de Paris, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Cathédrale Notre-Dame de Paris",
+      "evidence": "https://www.notredamedeparis.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "onyar": {
+      "query": "Cases de l'Onyar, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Cases de l'Onyar",
+      "evidence": "https://www.google.co.uk/maps/place/Cases+de+l'Onyar/",
+      "verifiedAt": "2026-08-22"
+    },
+    "oppede-le-vieux": {
+      "query": "Oppède-le-Vieux, Oppède",
+      "verdict": "FOUND",
+      "resolvedName": "Oppède-le-Vieux",
+      "evidence": "https://fr.wikipedia.org/wiki/Opp%C3%A8de",
+      "verifiedAt": "2026-08-22"
+    },
+    "palais-des-papes": {
+      "query": "Palais des Papes, Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Palais des Papes",
+      "evidence": "https://en.wikipedia.org/wiki/Palais_des_Papes",
+      "verifiedAt": "2026-08-22"
+    },
+    "palau-de-maricel": {
+      "query": "Palau de Maricel, Sitges",
+      "verdict": "FOUND",
+      "resolvedName": "Palau de Maricel",
+      "evidence": "https://museusdesitges.cat/",
+      "verifiedAt": "2026-08-22"
+    },
+    "pals": {
+      "query": "Pals, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Pals",
+      "evidence": "https://en.wikipedia.org/wiki/Pals",
+      "verifiedAt": "2026-08-22"
+    },
+    "parc-de-la-tete-d-or": {
+      "query": "Parc de la Tête d'Or, Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Parc de la Tête d'Or",
+      "evidence": "https://en.wikipedia.org/wiki/Parc_de_la_T%C3%AAte_d%27Or",
+      "verifiedAt": "2026-08-22"
+    },
+    "passeig-de-la-muralla": {
+      "query": "Passeig de la Muralla, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Passeig de la Muralla",
+      "evidence": "https://www.tripadvisor.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "patisserie-weibel": {
+      "query": "Maison Weibel, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Maison Weibel",
+      "evidence": "http://www.maisonweibel.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "peralada": {
+      "query": "Castell de Peralada, Peralada",
+      "verdict": "FOUND",
+      "resolvedName": "Castell de Peralada",
+      "evidence": "https://www.museucastellperalada.com/en/gardens/",
+      "verifiedAt": "2026-08-22"
+    },
+    "peratallada": {
+      "query": "Peratallada, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Peratallada",
+      "evidence": "https://en.wikipedia.org/wiki/Peratallada",
+      "verifiedAt": "2026-08-22"
+    },
+    "petit-palais": {
+      "query": "Petit Palais, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Petit Palais",
+      "evidence": "https://www.petitpalais.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "place-du-forum-arles": {
+      "query": "Place du Forum, Arles",
+      "verdict": "FOUND",
+      "resolvedName": "Place du Forum",
+      "evidence": "https://www.tripadvisor.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "place-richelme-place-des-precheurs": {
+      "query": "Place Richelme, Aix-en-Provence",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Place Richelme / Place des Prêcheurs",
+      "evidence": "https://www.aix.fr/incontournables/place-richelme",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "시장 — Place Richelme · Place des Prêcheurs"
+    },
+    "pont-du-gard": {
+      "query": "Pont du Gard, Vers-Pont-du-Gard",
+      "verdict": "FOUND",
+      "resolvedName": "Site du Pont du Gard",
+      "evidence": "https://en.wikipedia.org/wiki/Pont_du_Gard",
+      "verifiedAt": "2026-08-22"
+    },
+    "pont-saint-benezet": {
+      "query": "Pont Saint-Bénézet, Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Pont Saint-Bénézet",
+      "evidence": "https://en.wikipedia.org/wiki/Pont_Saint-B%C3%A9n%C3%A9zet",
+      "verifiedAt": "2026-08-22"
+    },
+    "promenade-des-anglais": {
+      "query": "Promenade des Anglais, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Promenade des Anglais",
+      "evidence": "https://www.explorenicecotedazur.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "restaurant-beatrice": {
+      "query": "Restaurant Béatrice, Villa Ephrussi de Rothschild, Saint-Jean-Cap-Ferrat",
+      "verdict": "FOUND",
+      "resolvedName": "Restaurant & Salon de thé Béatrice",
+      "evidence": "https://www.villa-ephrussi.com/en/prepare-your-visit/restaurant-beatrice-tea-room",
+      "verifiedAt": "2026-08-22"
+    },
+    "rocher-des-doms": {
+      "query": "Jardin du Rocher des Doms, Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Jardin du Rocher des Doms",
+      "evidence": "https://avignon-tourisme.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "rotonde": {
+      "query": "Fontaine de la Rotonde, Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Fontaine de la Rotonde",
+      "evidence": "https://en.wikipedia.org/wiki/Fontaine_de_la_Rotonde",
+      "verifiedAt": "2026-08-22"
+    },
+    "roussillon-sentier-des-ocres": {
+      "query": "Sentier des Ocres, Roussillon",
+      "verdict": "FOUND",
+      "resolvedName": "Le Sentier des Ocres",
+      "evidence": "https://www.destinationluberon.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "sagrada-familia": {
+      "query": "Basílica de la Sagrada Família, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Basílica de la Sagrada Família",
+      "evidence": "https://www.sagradafamilia.org/",
+      "verifiedAt": "2026-08-22"
+    },
+    "saint-paul-de-mausole": {
+      "query": "Monastère Saint-Paul de Mausole, Saint-Rémy-de-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Monastère Saint-Paul de Mausole",
+      "evidence": "https://www.saintpauldemausole.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "saint-paul-de-vence": {
+      "query": "Saint-Paul-de-Vence, France",
+      "verdict": "FOUND",
+      "resolvedName": "Saint-Paul-de-Vence",
+      "evidence": "https://fr.wikipedia.org/wiki/Saint-Paul-de-Vence",
+      "verifiedAt": "2026-08-22"
+    },
+    "saint-remy-de-provence": {
+      "query": "Saint-Rémy-de-Provence, France",
+      "verdict": "FOUND",
+      "resolvedName": "Saint-Rémy-de-Provence",
+      "evidence": "https://en.wikipedia.org/wiki/Saint-R%C3%A9my-de-Provence",
+      "verifiedAt": "2026-08-22"
+    },
+    "sant-pau-recinte-modernista": {
+      "query": "Recinte Modernista de Sant Pau, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Sant Pau Recinte Modernista",
+      "evidence": "https://www.barcelonaturisme.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "sitges": {
+      "query": "Sitges, Barcelona, Spain",
+      "verdict": "FOUND",
+      "resolvedName": "Sitges",
+      "evidence": "https://www.visitsitges.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "theatre-antique-arles": {
+      "query": "Théâtre Antique d'Arles, Arles",
+      "verdict": "FOUND",
+      "resolvedName": "Théâtre antique d'Arles",
+      "evidence": "https://www.arlestourisme.com/en/roman-theatre.html",
+      "verifiedAt": "2026-08-22"
+    },
+    "uzes": {
+      "query": "Place aux Herbes, Uzès",
+      "verdict": "FOUND",
+      "resolvedName": "Place aux Herbes",
+      "evidence": "https://www.tripadvisor.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "versailles": {
+      "query": "Château de Versailles, Versailles",
+      "verdict": "FOUND",
+      "resolvedName": "Château de Versailles",
+      "evidence": "https://en.chateauversailles.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "vieil-aix": {
+      "query": "Place de l'Hôtel de Ville, Aix-en-Provence",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Vieil Aix",
+      "evidence": "https://www.aix.fr/incontournables/vieil-aix",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Vieil Aix — 구시가지"
+    },
+    "vieux-lyon": {
+      "query": "Cathédrale Saint-Jean-Baptiste, Lyon",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Vieux Lyon (Saint-Jean)",
+      "evidence": "https://en.wikipedia.org/wiki/Vieux_Lyon",
+      "verifiedAt": "2026-08-22",
+      "anchorFor": "Vieux Lyon · 트라불"
+    },
+    "vieux-nice": {
+      "query": "Vieux Nice, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Vieux-Nice",
+      "evidence": "https://www.explorenicecotedazur.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "vieux-port-marseille": {
+      "query": "Vieux-Port de Marseille, Marseille",
+      "verdict": "FOUND",
+      "resolvedName": "Vieux-Port de Marseille",
+      "evidence": "https://fr.wikipedia.org/wiki/Vieux-Port_de_Marseille",
+      "verifiedAt": "2026-08-22"
+    },
+    "villa-ephrussi-de-rothschild": {
+      "query": "Villa Ephrussi de Rothschild, Saint-Jean-Cap-Ferrat",
+      "verdict": "FOUND",
+      "resolvedName": "Villa & Jardins Ephrussi de Rothschild",
+      "evidence": "https://villa-ephrussi.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "village-des-bories": {
+      "query": "Village des Bories, Gordes",
+      "verdict": "FOUND",
+      "resolvedName": "Village des Bories",
+      "evidence": "https://luberon.fr/",
+      "verifiedAt": "2026-08-22"
+    }
+  },
+  "hotels": {
+    "Domaine des Peyre (후보)": {
+      "query": "Domaine des Peyre, Robion",
+      "verdict": "FOUND",
+      "resolvedName": "Domaine des Peyre",
+      "evidence": "https://www.domainedespeyre.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "Lagrange Aparthotel Lyon Lumière": {
+      "query": "Lagrange Apart'Hotel Lyon Lumière, 81-85 Cours Albert Thomas, Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Lagrange Apart'Hôtel Lyon Lumière",
+      "evidence": "https://www.lagrange-aparthotel.com/lyon/",
+      "verifiedAt": "2026-08-22"
+    },
+    "Occidental Barcelona 1929": {
+      "query": "Occidental Barcelona 1929, Carrer de la Creu Coberta 20-22, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Occidental Barcelona 1929",
+      "evidence": "https://www.barcelo.com/en-us/occidental-barcelona-1929/",
+      "verifiedAt": "2026-08-22"
+    },
+    "바스카라의 B&B": {
+      "query": "Casa Bascara, Bàscara",
+      "verdict": "FOUND",
+      "resolvedName": "Casa Bascara",
+      "evidence": "https://casabascara.cat/en/rooms/",
+      "verifiedAt": "2026-08-22"
+    }
+  }
+}

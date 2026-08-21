@@ -46,6 +46,10 @@ SEARCH_INDEX: list[dict] = []
 # 지도 키는 환경에서 온다 (CI 시크릿). 없으면 지도 없이 목록만 남는다 —
 # 로컬 빌드가 키 때문에 막히지 않게 한다.
 MAPS_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "").strip()
+
+# 숙소를 이름으로 여는 검색어. '바스카라의 B&B' 같은 우리끼리 쓰는 별칭은
+# 구글맵에 없다 — 정식 상호(Casa Bascara)로 열어야 찾아진다.
+HOTEL_QUERIES: dict[str, str] = {}
 MAPS_ID = os.environ.get("GOOGLE_MAPS_MAP_ID", "").strip()
 IMAGES: dict = {}
 
@@ -472,7 +476,8 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
     pins = [{"id": s.id, "name": s.name, "lat": s.lat, "lng": s.lng,
              "cat": s.category, "time": s.start,
              "address": s.address,
-             "place": s.place.slug if s.place else None}
+             "place": s.place.slug if s.place else None,
+             "query": s.place.map_query if s.place else None}
             for s in stops if (s.lat and s.lng) or s.address]
     if not pins:
         return ""
@@ -492,7 +497,8 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
         if p["place"]:
             name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
         when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
-        href = maps_url(p["lat"], p["lng"], p.get("address") or "")
+        href = maps_url(p["lat"], p["lng"], p.get("address") or "",
+                        p.get("query") or "")
         items.append(
             f'<li data-pin="{esc(p["id"])}">{when}'
             f'<span class="map-name">{name}</span>'
@@ -515,18 +521,25 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
 </div>"""
 
 
-def maps_url(lat=None, lng=None, address: str = "") -> str:
-    """지도 링크. 좌표가 있으면 좌표로, 없으면 주소로 연다.
+def maps_url(lat=None, lng=None, address: str = "", query: str = "") -> str:
+    """지도 링크. **이름이 있으면 이름으로**, 없으면 주소, 그다음 좌표.
 
-    확정 숙소인데 검증된 좌표가 없는 경우가 있다. 틀린 좌표를 남기면
-    현장에서 엉뚱한 곳으로 간다 — 그게 이 프로젝트 최악의 사고다.
-    주소는 확정이므로 Google 지도가 정확히 찾는다.
+    좌표는 틀리면 조용히 틀린다. 실제로 숙소 좌표가 식당 9곳에 복사돼
+    파리 Bouillon Chartier 는 2.5km, 리옹 Café Comptoir Abel 은 3km
+    어긋나 있었다. 이름은 틀리면 검색이 실패해서 눈에 보인다.
+
+    이름 검색어는 data/map-queries.json 이 정본이고, 이름으로 단일하게
+    특정되는 것만 들어 있다. 산책 코스명·Airbnb 상품명처럼 지도에 없는
+    이름은 애초에 담지 않으므로 여기서 자연히 좌표·주소로 떨어진다.
     """
-    if lat and lng:
-        return f"https://www.google.com/maps/search/?api=1&query={lat},{lng}"
+    if query:
+        return ("https://www.google.com/maps/search/?api=1&query="
+                + quote(query))
     if address:
         return ("https://www.google.com/maps/search/?api=1&query="
                 + quote(address))
+    if lat and lng:
+        return f"https://www.google.com/maps/search/?api=1&query={lat},{lng}"
     return ""
 
 
@@ -560,10 +573,14 @@ def build_place(p: Place, trip: Trip) -> str:
             meta.append(f'<a href="{rel}/{d.url}">Day {n} · {esc(d.date_label)}</a>')
 
     actions = []
-    if p.lat and p.lng:
+    # 목적지도 이름을 먼저 쓴다. 좌표가 없어 길찾기 버튼 자체가 없던 장소가
+    # 36곳 있었는데, 이름이 있으면 그 장소들도 길을 열 수 있다.
+    dest = quote(p.map_query) if p.map_query else (
+        f"{p.lat},{p.lng}" if p.lat and p.lng else "")
+    if dest:
         actions.append(
             f'<a class="btn btn-primary" rel="nofollow noopener" '
-            f'href="https://www.google.com/maps/dir/?api=1&destination={p.lat},{p.lng}">'
+            f'href="https://www.google.com/maps/dir/?api=1&destination={dest}">'
             f'{ic("map")}길찾기</a>')
     url_fact = p.fact("url")
     official = (url_fact.value if url_fact and url_fact.value.startswith("http")
@@ -908,7 +925,8 @@ def build_region(r: Region, trip: Trip) -> str:
         for name, h in hotels.items():
             confirmed = h.get("status") == "confirmed"
             mark = badge("ok", "확정") if confirmed else badge("caution", "미확정")
-            href = maps_url(h.get("lat"), h.get("lng"), h.get("address") or "")
+            href = maps_url(h.get("lat"), h.get("lng"), h.get("address") or "",
+                            HOTEL_QUERIES.get(name, ""))
             link = (f'<a class="btn btn-secondary" rel="nofollow noopener" '
                     f'href="{esc(href)}">{ic("map")}지도</a>') if href else ""
             addr = (f'<dt>주소</dt><dd>{esc(h["address"])}</dd>'
@@ -1026,11 +1044,17 @@ def build_region(r: Region, trip: Trip) -> str:
                            f'target="_blank">PDF 열기</a>')
             else:
                 primary = ""
+            rights = ""
+            if resource.get("rightsHolder"):
+                rights = (f'<p class="fine-print"><strong>저작권</strong> · '
+                          f'{esc(resource["license"])} 권리자: {esc(resource["rightsHolder"])}<br>'
+                          f'{esc(resource["redistributionBasis"])}</p>')
             resource_cards.append(f'''<article class="card"><div class="card-body">
   <h3>{esc(resource["title"])}</h3>
   <div class="metarow"><span>{esc(resource["edition"])}</span></div>
   <p>{esc(resource["usage"])}</p>
-  <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">공식 최신판</a></div>
+  {rights}
+  <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">권리자 사이트</a></div>
 </div></article>''')
         parts.append(f'<div class="grid grid-2">{"".join(resource_cards)}</div>')
 

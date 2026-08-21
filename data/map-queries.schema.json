@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "map-queries.schema.json",
+  "title": "SP-FR map name queries",
+  "description": "구글맵을 좌표가 아니라 이름으로 여는 대상. 이름으로 단일 특정되는 것만 싣고, 없으면 좌표·주소로 폴백한다.",
+  "type": "object",
+  "required": ["schemaVersion", "verifiedAt", "places"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "verifiedAt": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "note": {"type": "string"},
+    "places": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9][a-z0-9-]*$"},
+      "additionalProperties": {"$ref": "#/$defs/entry"}
+    },
+    "hotels": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/entry"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["query", "verdict", "verifiedAt"],
+      "properties": {
+        "query": {
+          "type": "string", "minLength": 2, "maxLength": 160,
+          "description": "구글맵에 그대로 넣는 검색어. 체류 거점이 아니라 실제 도시를 쓴다 — region 을 붙이면 Arles 가 Avignon 으로, Collioure 가 스페인으로 간다."
+        },
+        "verdict": {
+          "enum": ["FOUND", "AMBIGUOUS"],
+          "description": "FOUND=이름으로 단일 특정 · AMBIGUOUS=면·다지점이라 앵커 지점으로 대체"
+        },
+        "anchorFor": {"type": "string", "description": "AMBIGUOUS 일 때 원래 가리키던 대상"},
+        "resolvedName": {"type": "string"},
+        "evidence": {"type": "string"},
+        "verifiedAt": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
+      },
+      "allOf": [{
+        "if": {"properties": {"verdict": {"const": "AMBIGUOUS"}}, "required": ["verdict"]},
+        "then": {"required": ["anchorFor"]}
+      }],
+      "additionalProperties": false
+    }
+  }
+}

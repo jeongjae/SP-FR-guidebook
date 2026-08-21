@@ -47,6 +47,7 @@ REGION_DIR = ROOT / "source" / "CURRENT" / "20_Regions"
 REGISTRY_MD = ROOT / "source" / "ASSETS" / "91_Place_Registry_v1.0.md"
 PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"
 PLACE_FACTS = ROOT / "data" / "place-facts.json"
+MAP_QUERIES = ROOT / "data" / "map-queries.json"
 REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
 TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
 TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
@@ -119,6 +120,9 @@ class Place:
     wiki_lang: str = "en"
     lat: float | None = None
     lng: float | None = None
+    # 구글맵을 이름으로 여는 검색어. 좌표는 지도 핀·거리 계산이 계속 쓰지만,
+    # 링크는 이름이 정확하다 — 숙소 좌표가 식당에 복사된 사고가 31건 있었다.
+    map_query: str | None = None
     summary: str = ""           # 한 줄 — 카드에 쓴다
     why_go: str = ""            # Experience 층
     dont_miss: list[str] = field(default_factory=list)
@@ -596,6 +600,9 @@ def load_trip() -> Trip:
     heroes = images.pop("__heroes__", {})
     bodies = load_place_bodies()
 
+    # 지도를 이름으로 여는 검색어. 여기 없는 슬러그는 좌표·주소 폴백으로 남는다.
+    map_queries = _load_validated_json(MAP_QUERIES).get("places", {})
+
     places: dict[str, Place] = {}
     for row in load_registry():
         body = bodies.get(row["slug"], {})
@@ -603,6 +610,7 @@ def load_trip() -> Trip:
             slug=row["slug"], name=row["name"], region=row["region"],
             kind=row["kind"], grade=row["grade"], grade_label=row["grade_label"],
             pin=row["pin"], wiki=row["wiki"], wiki_lang=row["wiki_lang"],
+            map_query=(map_queries.get(row["slug"]) or {}).get("query"),
             summary=body.get("summary", ""),
             why_go=body.get("why_go", ""),
             dont_miss=body.get("dont_miss", []) or [],

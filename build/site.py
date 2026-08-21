@@ -8,9 +8,12 @@ model.py 가 맡는다.
 """
 from __future__ import annotations
 
+import json
 import shutil
 import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -83,6 +86,10 @@ def main() -> int:
 
     render.IMAGES = render.load_image_index()
     render.FACTS = model.load_facts()
+    render.HOTEL_QUERIES = {
+        k: v["query"] for k, v in
+        json.loads((ROOT / "data" / "map-queries.json").read_text(encoding="utf-8"))
+        .get("hotels", {}).items()}
     shell.MASK = render.mask_booking_codes
     res = render.load_reservations()
     print(f"예약: 유효 {res['active']}건 · 미확정 {res['undone']}건")
