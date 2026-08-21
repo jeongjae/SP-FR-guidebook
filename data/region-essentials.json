@@ -18,6 +18,26 @@
         "data/daily-cards/day-04.json",
         "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
       ]
+    },
+    "lyon": {
+      "staySummary": "확정 숙소는 Monplaisir·Sans Souci 생활권의 Lagrange Aparthotel Lyon Lumière다. 도착·출발일에는 큰 짐 때문에 Part-Dieu↔숙소를 택시로 이동하고, 관광일에는 TCL Zone 1·2를 이용한다.",
+      "lifeEssentials": [
+        "간이주방이 있으므로 체크인 뒤 숙소 주변에서 물·아침거리만 소량 산다.",
+        "Day 24·25는 같은 비접촉 카드로 두 사람을 검증하고, 환승 때도 같은 매체를 유지한다.",
+        "Day 26 Annecy는 SNCF TER 별도 왕복이다. TCL 결제나 일일 상한에 포함되지 않는다.",
+        "Part-Dieu에서는 휴대전화보다 수하물 관리가 우선이다. 플랫폼 확인 뒤 짐을 시야 안쪽에 둔다."
+      ],
+      "arrivalStrategy": "Day 23 Lyon Part-Dieu 도착 뒤 큰 짐을 들고 Metro B→D로 환승하지 않고 택시로 확정 숙소에 간다. 체크인 뒤 가벼운 시내 이동부터 TCL 비접촉 결제를 쓴다.",
+      "departureStrategy": "Day 27 체크아웃 뒤 택시로 Lyon Part-Dieu에 이동해 13:04 Paris행 확정 TGV를 탄다. Perrache로 가지 않도록 승차역을 확인한다.",
+      "lateReturnRule": "관광일에는 TCL 실시간 경로로 가장 단순한 Metro·tram·bus 귀환편을 고른다. Annecy 귀환 뒤에는 Part-Dieu에서 지체하지 않고 숙소로 바로 이동한다.",
+      "sourceRefs": [
+        "data/daily-cards/day-23.json",
+        "data/daily-cards/day-24.json",
+        "data/daily-cards/day-25.json",
+        "data/daily-cards/day-26.json",
+        "data/daily-cards/day-27.json",
+        "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+      ]
     }
   }
 }
