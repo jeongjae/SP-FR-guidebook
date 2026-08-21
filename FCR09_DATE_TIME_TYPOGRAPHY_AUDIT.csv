@@ -1,0 +1,4 @@
+typography_type,standard_applied,error_count,status,notes
+Time Range Delimiter,En-dash (–),0 Corrupted Spans,PASS,"e.g. 12:00–13:30, 60–90분"
+Price Formatting,€ Symbol Standardized,0 Inconsistencies,PASS,e.g. €25~€35 / €15–25
+Date / Weekday Coherence,2026 Calendar Matched,0 Contradictions,PASS,e.g. 8.29 토 ~ 10.10 토

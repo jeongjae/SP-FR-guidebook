@@ -1,0 +1,15 @@
+metric_name,canonical_baseline,current_audited_value,delta,status,reconciliation_notes
+Trip Duration (Days),43 Days,43 Days,0,PASS,2026-08-29 ~ 2026-10-10 Full Itinerary
+Trip Nights,42 Nights,42 Nights,0,PASS,Exact overnight count across 8 bases
+Accommodation Bases,8 Bases,8 Bases,0,PASS,"BCN, Bàscara, Nice, Aix, Luberon, Avignon, Lyon, Paris"
+Canonical Places,134 Places,134 Places,0,PASS,134 Canonical Place Markdowns in 30_Places
+Meal Slots Total,66 Slots,66 Slots,0,PASS,Exact historical 1:1 match across 43 days
+Meal Classification A,23 Slots (34.8%),23 Slots,0,PASS,Specific & Verified Venues
+Meal Classification B,20 Slots (30.3%),20 Slots,0,PASS,Area-Based with Strong Options
+Meal Classification D,16 Slots (24.2%),16 Slots,0,PASS,Home / Self-Catering
+Meal Classification E,7 Slots (10.6%),7 Slots,0,PASS,Market / Takeaway
+Meal Classification C,0 Slots (0.0%),0 Slots,0,PASS,Generic / Needs Research Completely Eliminated
+Regional Food Guides,8 Guides,8 Guides,0,PASS,1 Guide per Base Region
+Regional Foods,52 Foods,52 Foods,0,PASS,52 Regional Iconic Food Specialties
+Active Operational P2,9 Issues,9 Issues,0,PASS,FEAS-DUR-05 & FEAS-DUR-14 remain resolved
+Search Index Records,189 Records,189 Records,0,PASS,138 Place Pages + 43 Daily Cards + 8 Regional Guides

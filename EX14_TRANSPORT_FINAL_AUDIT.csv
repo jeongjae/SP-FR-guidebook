@@ -1,0 +1,9 @@
+transport_leg,date,route_timing,confirmation_status,status
+Flight OZ511,2026-08-29,ICN T1 12:45 ➔ BCN T1 19:40,Confirmed Direct Flight,PASS
+Flight VY1521,2026-09-04,BCN T1 13:40 ➔ NCE T2 15:00,Confirmed Vueling Hop,PASS
+Flight OZ502,2026-10-09,CDG T1 19:55 ➔ ICN T1 14:50 (+1),Confirmed Return Flight,PASS
+Rental Car 1 (Avis BCN),2026-09-01~09-04,BCN Sants ➔ Bàscara ➔ BCN T1 반납,Confirmed 3-Day Car,PASS
+Rental Car 2 (Hertz NCE),2026-09-09~09-20,Nice-Ville ➔ Aix ➔ Luberon ➔ Avignon TGV 반납,Confirmed 11-Day Car,PASS
+TGV 6814,2026-09-20,Avignon TGV 10:24 ➔ Lyon Part-Dieu 11:28,Confirmed High-Speed Rail,PASS
+TER Annecy,2026-09-23,Lyon Part-Dieu 08:08 ➔ Annecy 10:07 (Return 16:45),Confirmed Regional Rail,PASS
+TGV 6618,2026-09-24,Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00,Confirmed High-Speed Rail,PASS

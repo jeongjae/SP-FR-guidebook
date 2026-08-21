@@ -1,0 +1,2 @@
+scope,food_items_audited,link_resolution,success_rate,status,notes
+Days 1–43 Daily Cards,84 Food Items,84 Resolved / 0 Broken,100%,PASS,All named food stops link to valid canonical place pages.

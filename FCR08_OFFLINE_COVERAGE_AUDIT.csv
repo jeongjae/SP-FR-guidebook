@@ -1,0 +1,4 @@
+component,offline_availability,coverage_rate,status,notes
+66 Meal Slots Execution Plan,66 / 66 Cached,100%,PASS,Full meal instructions accessible offline.
+134 Canonical Place Text Dossiers,134 / 134 Cached,100%,PASS,"Opening hours, address, transit, booking advice offline."
+8 Regional Food Guides,8 / 8 Cached,100%,PASS,All culinary guide texts stored in PWA cache.

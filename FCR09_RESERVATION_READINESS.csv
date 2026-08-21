@@ -1,0 +1,5 @@
+tier,slot_count,readiness_rate,action_window,status,notes
+MUST BOOK,10 Slots,10 / 10,T-30 ~ T-14,PASS,"Booking channels, deadlines, and backup venues documented."
+RECOMMENDED BOOK,8 Slots,8 / 8,T-7 ~ T-3,PASS,Booking channels and walk-in probabilities documented.
+WALK-IN,26 Slots,26 / 26,Day-of,PASS,Peak waiting times and alternatives verified.
+NO BOOKING / SELF-CATERING,22 Slots,22 / 22,N/A,PASS,Market schedules and grocery locations verified.

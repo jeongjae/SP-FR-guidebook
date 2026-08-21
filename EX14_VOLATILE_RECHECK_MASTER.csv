@@ -1,0 +1,12 @@
+recheck_id,venue_slug,region,context,t_window,booking_requirement,disposition,status
+VR-01,le-figuier-de-saint-esprit,Antibes,Day 09 점심 미쉐린 1스타 만찬,T-14 (2026-08-23),MUST BOOK (12:15),ACTIVE_SCHEDULED,PASS
+VR-02,chez-gilbert-cassis,Cassis,Day 14 점심 공인 부야베스,T-14 (2026-08-28),MUST BOOK (12:30),ACTIVE_SCHEDULED,PASS
+VR-03,fou-de-fafa-avignon,Avignon,Day 19 저녁 아비뇽 프렌치,T-14 (2026-09-02),MUST BOOK (19:30),ACTIVE_SCHEDULED,PASS
+VR-04,cafe-comptoir-abel,Lyon,Day 23 저녁 리옹 最古 부숑,T-14 (2026-09-06),MUST BOOK (19:30),ACTIVE_SCHEDULED,PASS
+VR-05,daniel-et-denise,Lyon,Day 24 저녁 MOF 부숑 만찬,T-14 (2026-09-07),MUST BOOK (19:45),ACTIVE_SCHEDULED,PASS
+VR-06,chez-mamie-lise,Annecy,Day 26 점심 사부아 치즈 퐁뒤,T-7 (2026-09-16),RECOMMENDED BOOK (12:30),ACTIVE_SCHEDULED,PASS
+VR-07,le-grand-pan,Paris,Day 34 & Day 41 숯불 비스트로,T-7 (2026-09-17),MUST BOOK (20:00),ACTIVE_SCHEDULED,PASS
+VR-08,boulangerie-pichard,Paris,Day 31 수~일 영업 및 바게트,T-7 (2026-09-17),WALK-IN (12:00),ACTIVE_SCHEDULED,PASS
+VR-09,marche-convention,Paris,Day 29 화/목/일 노천시장 개장,T-3 (2026-09-23),WALK-IN (11:00),ACTIVE_SCHEDULED,PASS
+VR-10,les-cocottes-saint-louis,Avignon,Day 20 저녁 무쇠주물 스튜,T-3 (2026-09-14),RECOMMENDED BOOK (19:30),ACTIVE_SCHEDULED,PASS
+VR-11,day-of-walk-in-pool,All Bases,현장 워크인 식당 및 카페 영업일,T-1 / D-Day,WALK-IN,ACTIVE_SCHEDULED,PASS

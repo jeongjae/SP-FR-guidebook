@@ -1,0 +1,6 @@
+scenario,fallback_action,timing_impact,status
+Day 03 Bar Cañete Full,Switch to Bodega Joan / Gothic Tapas,0 min Delay Margin,PASS
+Day 09 Le Figuier Closed,Switch to Antibes Port Bistro,+15 min Recovery Margin,PASS
+Day 14 Chez Gilbert Booked,Switch to Cassis Port Seafood / Quay Market,0 min Delay Margin,PASS
+Day 24 Daniel et Denise Delay,Switch to Vieux Lyon Bouchon Pool,+20 min Recovery Margin,PASS
+Day 34 Le Grand Pan Full,Switch to Café du Commerce Brasserie,+10 min Recovery Margin,PASS

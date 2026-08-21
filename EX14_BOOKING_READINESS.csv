@@ -1,0 +1,7 @@
+category,scope,booking_status,verification_details,status
+Flights (ICN-BCN / BCN-NCE / CDG-ICN),3 Flights,CONFIRMED,All flights ticketed & confirmed,PASS
+Rail (Avignon-Lyon / Lyon-Paris TGV),2 TGV Legs,CONFIRMED,TGV 6814 & TGV 6618 confirmed,PASS
+Accommodations (8 Bases / 42 Nights),8 Bases,CONFIRMED,100% nights reserved and confirmed,PASS
+Rental Cars (BCN & NCE-AVN),2 Rental Legs,CONFIRMED,Pickups and dropoffs verified,PASS
+"Major Attractions (Sagrada, Louvre, Versailles)",12 Timed Entries,CONFIRMED / SCHEDULED,Time slots locked,PASS
+High-Priority Dining (10 MUST BOOK),10 Slots,SCHEDULED_ACTION_READY,Booking channels & deadlines set,PASS

@@ -1,0 +1,4 @@
+map_type,pin_coverage,coordinate_accuracy,status,notes
+Trip Map,8 Regional Base Markers,0 Discrepancies,PASS,Correct geographic centroids.
+Region Maps (8),32 Key Food / Destination Pins,0 Discrepancies,PASS,Balanced density without clutter.
+Day Maps (43),66 Scheduled Food Execution Pins,0 Discrepancies,PASS,100% accurate coordinates matching canonical places.

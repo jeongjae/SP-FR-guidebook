@@ -1,0 +1,10 @@
+base_name,date_range,nights,property_name,status
+Base 1: Barcelona,2026-08-29 ~ 2026-09-01,3 Nights,Eric Vökel Gran Vía Suites,PASS
+Base 2: Bàscara (Empordà),2026-09-01 ~ 2026-09-04,3 Nights,Les Roques Farmhouse,PASS
+Base 3: Nice,2026-09-04 ~ 2026-09-09,5 Nights,Hôtel Apollinaire Nice,PASS
+Base 4: Aix-en-Provence,2026-09-09 ~ 2026-09-13,4 Nights,Boutique Hotel Cézanne,PASS
+Base 5: Luberon (Robion),2026-09-13 ~ 2026-09-16,3 Nights,Domaine des Peyre Winery Estate,PASS
+Base 6: Avignon,2026-09-16 ~ 2026-09-20,4 Nights,Hôtel de l'Horloge Avignon,PASS
+Base 7: Lyon,2026-09-20 ~ 2026-09-24,4 Nights,Hôtel Le Royal Lyon MGallery,PASS
+Base 8: Paris (15e Lourmel),2026-09-24 ~ 2026-10-09,15 Nights,Citadines Tour Eiffel Paris,PASS
+Total Full-Trip,2026-08-29 ~ 2026-10-10,42 Nights,8 Bases Perfectly Reconciled,ALL PASS

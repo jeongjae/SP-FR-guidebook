@@ -1,0 +1,21 @@
+day,anchor_event,timing,type,status
+Day 01,OZ511 Incheon ➔ Barcelona,12:45~19:40,Flight,PASS
+Day 02,Sagrada Família Timed Entry,09:00,Attraction,PASS
+Day 03,MACBA & Gothic Tour,10:30,Attraction,PASS
+Day 04,Avis Car Pickup (Sants),10:00,Rental Car,PASS
+Day 07,VY1521 Flight to Nice,13:40,Flight,PASS
+Day 09,Le Figuier de Saint-Esprit (WISH-01),12:15,Dining,PASS
+Day 11,Villa Ephrussi & Béatrice (WISH-02),12:15,Dining & Attraction,PASS
+Day 12,Hertz Car Pickup (Nice-Ville),10:00,Rental Car,PASS
+Day 14,Chez Gilbert Cassis Bouillabaisse,12:30,Dining,PASS
+Day 20,Palais des Papes Timed Entry,10:00,Attraction,PASS
+Day 23,TGV 6814 to Lyon,10:24,High-Speed Rail,PASS
+Day 24,Daniel et Denise Bouchon Dinner,19:45,Dining,PASS
+Day 27,TGV 6618 to Paris,13:04,High-Speed Rail,PASS
+Day 32,Musée d'Orsay Timed Entry,09:30,Attraction,PASS
+Day 34,Versailles Palace Timed Entry,09:00,Attraction,PASS
+Day 35,Musée du Louvre Timed Entry,09:00,Attraction,PASS
+Day 37,Qatar Prix de l'Arc de Triomphe,12:00,Major Event,PASS
+Day 40,Fête des Vendanges de Montmartre,14:00,Major Event,PASS
+Day 41,Le Grand Pan Farewell Dinner,20:00,Dining,PASS
+Day 42,OZ502 CDG ➔ Incheon,19:55,Flight,PASS

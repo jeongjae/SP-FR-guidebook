@@ -1,0 +1,5 @@
+component,specification,measured_result,status,notes
+PWA Precache Assets,792 Files,53.2 MiB,0 Bloat,PASS
+43 Daily Cards Offline,100%,100%,0 Gaps,PASS
+134 Canonical Places Offline,100%,100%,0 Gaps,PASS
+Mobile 320px Scanability,Responsive,0 Clipping / 0 Overflow,PASS

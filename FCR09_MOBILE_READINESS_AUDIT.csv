@@ -1,0 +1,4 @@
+ui_aspect,specification,status,notes
+Viewport Compatibility,320px ~ 430px Responsive,PASS,"0 Horizontal Scroll, Clean Breakpoints"
+Meal Slot Scanability,Badges & Icons Clear,PASS,"Primary, Time, Reservation, Price visible at a glance"
+Badge Consistency,"WISH, RECOMMENDED, PRIMARY, BACKUP",PASS,Unified UI token system across 43 days

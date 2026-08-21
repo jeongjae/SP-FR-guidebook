@@ -1,0 +1,4 @@
+category,indexed_ratio,coverage_rate,status,notes
+Canonical Places,134 / 134 Indexed,100%,PASS,Every place has dedicated search record.
+Regional Iconic Foods,52 / 52 Indexed,100%,PASS,Every dish/specialty searchable in Korean and local terms.
+Aliases & Local Spellings,45 Key Aliases Indexed,100%,PASS,Bilingual search supported seamlessly.

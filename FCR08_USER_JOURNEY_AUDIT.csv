@@ -1,0 +1,5 @@
+journey_id,simulated_flow,status,notes
+Journey A — Today에서 식당 찾기,Today (Day 24) ➔ Daniel et Denise ➔ Day Map ➔ Dossier,PASS,Instant 1-tap navigation
+Journey B — Guide에서 음식 찾기,Guide (Lyon) ➔ Quenelle ➔ Café Comptoir Abel ➔ Dossier,PASS,Smooth cross-link flow
+Journey C — 검색(Search),Search 'Pichard' ➔ Boulangerie Pichard Dossier ➔ Day 31 Card,PASS,Accurate search destination
+Journey D — Offline 현장 실행,Network Off ➔ Today (Day 34) ➔ Le Grand Pan ➔ Directions & Booking,PASS,Complete offline readiness

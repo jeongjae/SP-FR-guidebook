@@ -1,0 +1,2 @@
+target_layer,scope,scan_pattern,result,status,notes
+All Source & Data Files,Full Repository,Booking IDs / PII / Door Codes,0 Leaks Found,PASS,Sanitized via [CONFIRMED]

@@ -1,0 +1,6 @@
+handoff_artifact,content_scope,intake_status,status,notes
+FCR_TO_EX14_HANDOFF.md,Complete Program Handoff,INTAKE_ACCEPTED,PASS,All 5 handoff sections processed.
+FCR09_ACTIVE_P2_HANDOFF.csv,9 Active Operational P2s,INTAKE_ACCEPTED,PASS,Mitigations & fallbacks assigned.
+FCR09_RESERVATION_READINESS.csv,10 MUST BOOK + 8 RECOMMENDED BOOK,INTAKE_ACCEPTED,PASS,Channels & deadlines assigned.
+FCR09_VOLATILE_RECHECK_READINESS.csv,10 T-Window Recheck Items,INTAKE_ACCEPTED,PASS,Reconciliation complete.
+FCR_66_MEAL_SLOT_MATRIX.csv,"66 Meal Slots (A:23, B:20, D:16, E:7, C:0)",INTAKE_ACCEPTED,PASS,No generic gaps.

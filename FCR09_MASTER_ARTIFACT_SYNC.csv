@@ -1,0 +1,9 @@
+master_file,record_scope,synchronization_status,status
+FCR_MASTER_FOOD_INVENTORY.csv,52 Regional Foods + 29 Food Places,SYNCED,PASS
+FCR_REGIONAL_FOOD_GUIDE_MATRIX.csv,52 Regional Foods across 8 Regions,SYNCED,PASS
+FCR_RESTAURANT_CAFE_MARKET_RESEARCH.csv,25 Verified Food Places,SYNCED,PASS
+FCR_66_MEAL_SLOT_MATRIX.csv,"66 Meal Slots (A:23, B:20, D:16, E:7, C:0)",SYNCED,PASS
+FCR_DAILY_FOOD_LINK_MATRIX.csv,43 Daily Cards Food Stops,SYNCED,PASS
+FCR_FOOD_PLACE_REGISTRY.csv,29 Food-Specific Canonical Places,SYNCED,PASS
+FCR_PHOTO_SOURCE_ATTRIBUTION.csv,25 Photo Assets & Attributions,SYNCED,PASS
+FCR_VOLATILE_RECHECK_REGISTER.csv,10 T-Window Recheck Entries,SYNCED,PASS

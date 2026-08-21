@@ -1,0 +1,10 @@
+p2_id,context,mitigation_strategy,handoff_target,status
+P2-01,Day 05 (Collioure/Cadaqués),FEAS-DUR-05 Resolved (75m lunch cap),EX-14 Final Freeze,ACTIVE_MONITORED
+P2-02,Day 06 (Sant Feliu 드라이브),Coastal scenic driving time buffer,EX-14 Final Freeze,ACTIVE_MONITORED
+P2-03,Day 07 (Bàscara ➔ 니스 이동),Cross-border 450km road rest stops,EX-14 Final Freeze,ACTIVE_MONITORED
+P2-04,Day 10 (모나코/망통 당일치기),Train timing & border coordination,EX-14 Final Freeze,ACTIVE_MONITORED
+P2-05,Day 14 (Cassis / Calanques),FEAS-DUR-14 Resolved (90m bouillabaisse cap),EX-14 Final Freeze,ACTIVE_MONITORED
+P2-06,Day 21 (Uzès & Pont du Gard),Market crowd & kayak timing buffer,EX-14 Final Freeze,ACTIVE_MONITORED
+P2-07,Day 26 (Annecy 당일치기),TER 16:45 return train protection buffer,EX-14 Final Freeze,ACTIVE_MONITORED
+P2-08,Day 34 (Versailles 전일투어),RER C transit & 20:00 dinner arrival,EX-14 Final Freeze,ACTIVE_MONITORED
+P2-09,Day 37 (개선문상 경마대회),Longchamp crowd dispersal & home recovery,EX-14 Final Freeze,ACTIVE_MONITORED

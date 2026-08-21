@@ -1,0 +1,2 @@
+scan_scope,target_layers,findings,status,notes
+Full Repository & Generated Site,"Source, Data, Site, PWA, EXIF",0 Leaks Found,PASS,Sanitized via [CONFIRMED]

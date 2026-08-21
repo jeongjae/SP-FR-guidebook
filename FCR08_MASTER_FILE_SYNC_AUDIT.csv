@@ -1,0 +1,9 @@
+master_file,sync_status,status,notes
+FCR_MASTER_FOOD_INVENTORY.csv,Synchronized,PASS,All foods and places accounted for.
+FCR_REGIONAL_FOOD_GUIDE_MATRIX.csv,Synchronized,PASS,52 regional foods matched.
+FCR_RESTAURANT_CAFE_MARKET_RESEARCH.csv,Synchronized,PASS,25 venues matched.
+FCR_66_MEAL_SLOT_MATRIX.csv,Synchronized,PASS,66 slots matched.
+FCR_DAILY_FOOD_LINK_MATRIX.csv,Synchronized,PASS,43 days matched.
+FCR_FOOD_PLACE_REGISTRY.csv,Synchronized,PASS,29 food places matched.
+FCR_PHOTO_SOURCE_ATTRIBUTION.csv,Synchronized,PASS,25 photos matched.
+FCR_VOLATILE_RECHECK_REGISTER.csv,Synchronized,PASS,10 rechecks matched.

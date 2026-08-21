@@ -1,0 +1,6 @@
+food_reservation_layer,specification,operational_state,status
+66 Total Meal Slots,23 A / 20 B / 16 D / 7 E / 0 C,100% Accounted For,PASS
+10 MUST BOOK Venues,Deadlines: T-30 ~ T-14,Action List Ready,PASS
+8 RECOMMENDED BOOK Venues,Deadlines: T-7 ~ T-3,Action List Ready,PASS
+WISH-01 & WISH-02,Antibes & Cap-Ferrat,Locked into Day 09 & Day 11,PASS
+WISH-03,Salon de Thé - Île de Beauté,Preserved as USER_CONFIRMATION_REQUIRED,PASS

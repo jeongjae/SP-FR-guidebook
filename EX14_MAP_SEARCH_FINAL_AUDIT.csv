@@ -1,0 +1,4 @@
+layer,coverage_scope,verification_verdict,status
+43 Daily Maps,66 Scheduled Food Pins + Daily Targets,0 Discrepancies,PASS
+Search Records,189 Records (138 Places + 43 Days + 8 Guides),100% Searchable,PASS
+Diacritics & Aliases,"Béatrice, Abel, Pichard, Daniel et Denise",100% Searchable,PASS

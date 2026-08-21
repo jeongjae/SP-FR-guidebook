@@ -1,0 +1,5 @@
+layer_boundary,editorial_separation,status,notes
+Day ↔ Guide,Clean,PASS,Day contains concise meal summaries; Guide contains regional food context.
+Guide ↔ Place,Clean,PASS,Guide cross-references Place dossiers; Place holds single source of truth.
+Market Intro ↔ Schedule,Clean,PASS,Schedule has execution timing; Market dossier has stalls & shopping tips.
+Restaurant Intro ↔ Schedule,Clean,PASS,Schedule has booking time & badge; Place has full menu & price breakdown.

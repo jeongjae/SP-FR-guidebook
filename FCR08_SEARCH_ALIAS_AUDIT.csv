@@ -1,0 +1,6 @@
+alias_query,target_slug,status,notes
+Béatrice / Beatrice,restaurant-beatrice,PASS,Diacritic normalization works
+Abel / Cafe Comptoir Abel,cafe-comptoir-abel,PASS,Oldest bouchon alias
+Viola / Daniel et Denise,daniel-et-denise,PASS,MOF chef alias
+Pichard / Baguette Grand Prix,boulangerie-pichard,PASS,Award alias
+Chartier Montparnasse / Bouillon 1903,bouillon-chartier-montparnasse,PASS,Art nouveau alias

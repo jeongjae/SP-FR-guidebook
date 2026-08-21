@@ -1,0 +1,2 @@
+scope,why_present,what_to_order_present,price_booking_present,backup_location_present,status,notes
+134 Canonical Places,100%,100%,100%,100%,PASS,"All places contain why, what to order/see, price, booking, location, and backup."

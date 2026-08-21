@@ -1,0 +1,10 @@
+p2_id,context,mitigation_status,operational_guard,freeze_classification
+P2-01,Day 05 (Collioure/Cadaqués),FEAS-DUR-05 Resolved (75m lunch cap),Salvador Dalí House booked; road buffer intact,ACCEPTED_WITH_MITIGATION
+P2-02,Day 06 (Sant Feliu 드라이브),Coastal cliff driving speed buffer,Sant Feliu lunch at 13:00; return by 17:30,ACCEPTED_WITH_MITIGATION
+P2-03,Day 07 (Bàscara ➔ 니스 이동),Cross-border 450km road rest stops,Lleó market picnic + VY1521 flight buffer,ACCEPTED_WITH_MITIGATION
+P2-04,Day 10 (모나코/망통 당일치기),TER rail border timing coordination,Monaco & Menton on coastal train line,ACCEPTED_WITH_MITIGATION
+P2-05,Day 14 (Cassis / Calanques),FEAS-DUR-14 Resolved (90m bouillabaisse cap),Boat cruise timed after lunch; zero delay,ACCEPTED_WITH_MITIGATION
+P2-06,Day 21 (Uzès & Pont du Gard),Uzès market crowd & kayak timing buffer,Pont du Gard walk pre-scheduled,ACCEPTED_WITH_MITIGATION
+P2-07,Day 26 (Annecy 당일치기),TER 16:45 return train protection buffer,Drop boat rental if lunch delays > 20m,ACCEPTED_WITH_MITIGATION
+P2-08,Day 34 (Versailles 전일투어),RER C transit & 20:00 Le Grand Pan dinner,Return to Paris 15e by 18:00 for rest,ACCEPTED_WITH_MITIGATION
+P2-09,Day 37 (개선문상 경마대회),Longchamp crowd dispersal & home recovery,Home cooking rest dinner in 15e apartment,ACCEPTED_WITH_MITIGATION

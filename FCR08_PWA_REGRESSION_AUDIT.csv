@@ -1,0 +1,4 @@
+metric,baseline,current,delta,status
+Precached File Count,792 files,792 files,0 files,PASS
+Precache Storage Size,53.2 MiB,53.2 MiB,0.0 MiB,PASS
+Offline Navigation Routing,ServiceWorker Cache-First,PASS,0 Gaps,PASS

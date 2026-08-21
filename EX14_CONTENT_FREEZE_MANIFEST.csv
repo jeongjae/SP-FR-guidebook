@@ -1,0 +1,6 @@
+artifact_component,version_scope,freeze_status,frozen_at,governing_gate
+43 Daily Cards (`data/daily-cards/*.json`),v2.0 Frozen,FROZEN,2026-08-21,EX-14 Gate
+134 Canonical Place Files (`source/CURRENT/30_Places/*.md`),v2.0 Frozen,FROZEN,2026-08-21,EX-14 Gate
+8 Regional Chapters (`source/CURRENT/20_Regional_Chapters/*.md`),v2.0 Frozen,FROZEN,2026-08-21,EX-14 Gate
+8 Master FCR Registries (`FCR_*.csv`),v1.0 Frozen,FROZEN,2026-08-21,EX-14 Gate
+Static Site Output (`site/**`),369 Pages / 189 Search Records,FROZEN,2026-08-21,EX-14 Gate
