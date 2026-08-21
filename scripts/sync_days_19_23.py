@@ -608,7 +608,7 @@ def update_day_23():
     d["totalDistance"] = "차량 반납 + TGV 약 230km"
     d["fatigue"] = "3"
     d["transport"] = [
-        "렌터카 반납 (Avignon TGV역 Hertz 09:00 반납 완료, 확정 L672E080313)",
+        "렌터카 반납 (Avignon TGV역 Hertz 09:00 반납 완료, 확정 [CONFIRMED])",
         "TGV INOUI 12176 (Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28, 1등석 확정)",
         "Lyon 택시/지하철"
     ]
@@ -639,7 +639,7 @@ def update_day_23():
             "lng": 4.7861,
             "summary": "08:45 TGV역 진입 ➔ 주유 완료 확인 ➔ Hertz 전용 반납 베이 주차 ➔ 차량 사방 외관/계기판 사진 촬영 ➔ 카운터/키드롭 박스 키 반납 (08:55 반납 완료). 10:22 열차까지 67분 완충 확보",
             "menu": None,
-            "reservation": "예약확정 Hertz L672E080313 — 9/20 09:00 반납",
+            "reservation": "예약확정 Hertz [CONFIRMED] — 9/20 09:00 반납",
             "optional": False,
             "place_ref": None
         },
@@ -669,7 +669,7 @@ def update_day_23():
             "lng": 4.868933,
             "summary": "택시로 숙소 이동 (15분). 짐 보관(Luggage Drop) 후 몽플레지르/파르디외 인근 점심 식사 ➔ 15:00 정식 체크인 및 짐 정리",
             "menu": "리옹식 샐러드, 퀘넬(Quenelle)",
-            "reservation": "예약확정 Lagrange Aparthotel Lyon Lumière (5882.730.884) — 체크인 15:00",
+            "reservation": "예약확정 Lagrange Aparthotel Lyon Lumière ([CONFIRMED]) — 체크인 15:00",
             "optional": False,
             "place_ref": None
         },

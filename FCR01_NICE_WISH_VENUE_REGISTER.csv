@@ -1,0 +1,4 @@
+wish_id,venue_name,region,city,selection_origin,meal_role,scheduled_day,scheduled_meal,reservation_status,price_tier,identity_status,verification_notes
+NICE-WISH-01,Le Figuier de Saint-Esprit,nice,Antibes,WISH,PRIMARY,Day 09,Lunch,REQUIRED_OPEN_SUNDAY,Fine Dining (€55~€118),RESOLVED,"Antibes old town ramparts, Michelin 1-star, Chef Christian Morisset, Sunday lunch 12:15-13:30 open"
+NICE-WISH-02,Restaurant & Salon de Thé Béatrice,nice,Saint-Jean-Cap-Ferrat,WISH,PRIMARY,Day 11,Lunch,RECOMMENDED_VILLA_ADMISSION,Bistro/Salon (€24~€45),RESOLVED,"Inside Villa Ephrussi de Rothschild, terrace with Villefranche bay view, 12:00-15:00 lunch"
+NICE-WISH-03,Salon de thé - restaurant (Candidate: Salon de Thé - Île de Beauté),nice,Nice,WISH,OPTIONAL,Day 08 (Candidate),Tea/Casual,UNLOCKED,Casual (€10~€25),USER_CONFIRMATION_REQUIRED,"Candidate identified at 7 Place Île de Beauté Port Lympia, pending explicit user confirmation before schedule lock"

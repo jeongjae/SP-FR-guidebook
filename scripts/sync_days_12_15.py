@@ -15,7 +15,7 @@ def update_day_12():
     d["totalDistance"] = "약 204km · 차량 이동"
     d["fatigue"] = "4"
     d["transport"] = [
-        "렌터카 — Nice역 09:00 인수 (확정 L672E080313)",
+        "렌터카 — Nice역 09:00 인수 (확정 [CONFIRMED])",
         "A8 고속도로 및 프로방스 국도"
     ]
     d["stops"] = [
@@ -30,7 +30,7 @@ def update_day_12():
             "lng": 7.2628,
             "summary": "12 Rue Verdi 체크아웃 후 Nice-Ville 기차역 Hertz 영업소로 도보 이동 (10분)",
             "menu": None,
-            "reservation": "체크아웃 완료 (Airbnb HMJ3HX8QAY)",
+            "reservation": "체크아웃 완료 (Airbnb [CONFIRMED])",
             "optional": False,
             "place_ref": None
         },
@@ -45,7 +45,7 @@ def update_day_12():
             "lng": 7.2619,
             "summary": "09:00 렌터카 인수(서류·차량촬영·내비설정). 수하물 트렁크 적재",
             "menu": None,
-            "reservation": "예약확정 Hertz L672E080313 — 9/9 09:00 인수",
+            "reservation": "예약확정 Hertz [CONFIRMED] — 9/9 09:00 인수",
             "optional": False,
             "place_ref": None
         },
@@ -90,7 +90,7 @@ def update_day_12():
             "lng": 5.4497,
             "summary": "Aix 숙소 체크인(2 Place Coimbra, 15:00부터 가능). 짐 정리 및 차량 안전 주차",
             "menu": None,
-            "reservation": "예약완료 Airbnb HMSSBEA4PJ — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
+            "reservation": "예약완료 Airbnb [CONFIRMED] — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
             "optional": False,
             "place_ref": None
         },

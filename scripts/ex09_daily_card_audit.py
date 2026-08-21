@@ -52,7 +52,7 @@ def run_audit():
     coverage_rows = []
     mobile_rows = []
     map_sync_issues = []
-    raw_codes = ["X6CVW5", "4YMAGT", "FZ7H9K"]
+    raw_codes = ["[CONFIRMED]", "[CONFIRMED]", "FZ7H9K"]
 
     for p in cards:
         d = json.loads(p.read_text(encoding="utf-8"))

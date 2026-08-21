@@ -209,7 +209,7 @@ Bàscara
 | 숙박 | 3박 |
 | 주소 | Plaça de l'Església, 6, 17483 Bàscara |
 | 여행자 | Jason·Julia |
-| 예약코드·가격 | HM2YPHDRW5 · €330 · **확정(2026-08-05 · Airbnb)** |
+| 예약코드·가격 | [CONFIRMED] · €330 · **확정(2026-08-05 · Airbnb)** |
 | 예약서 리스팅명·호스트 | Torre de Báscara · 호스트 Luc **+34 622 66 14 31** (2026-08 예약서) |
 | 결제조건·주차·조식·취소조건 | 재확인 |
 본문 표기는 확정 예약의 표시명 `바스카라의 B&B`를 유지한다. Airbnb 예약서의 리스팅명은 `Torre de Báscara`다 — 현장에서 호스트·이웃에게 물을 때는 이 이름이 통한다.
@@ -411,6 +411,23 @@ Bàscara → 콜리우르는 북쪽으로 AP-7 → 라 종케라 국경 → 프�
 | 운영 | 9월–6월 화–토 10:00–18:00 {{badge:field-recheck|재확인}} |
 | 요금 | 일반 €6 {{badge:field-recheck|재확인}} |
 | 소장 | 중세 히브리 묘비 컬렉션 |
+#### Casa Marieta {{grade:essential|필수}}
+
+> **Editor's Verdict**: 1892년 지로나 인디펜덴시아 광장에 문을 연 역사적인 전통 식당. 마르 이 문타냐와 엠포르다 오리 요리의 정수.
+
+- **체류/가격**: 75–90분 · **2인 약 €50~€75** (매일 13:00–16:00 / 20:00–23:00, 예약 가능)
+- **상세 가이드**: [Casa Marieta 전체 가이드 보기](../places/casa-marieta.html)
+
+---
+#### Mercat del Lleó {{grade:priority|우선추천}}
+
+> **Editor's Verdict**: 지로나 구시가지 남쪽의 활기찬 중앙 공설시장. 엠포르다 치즈, 샤퀴테리, 추쇼(Xuixo)의 보고.
+
+- **체류/입장**: 30–45분 · **무료 입장** (월–토 07:00–14:00)
+- **상세 가이드**: [Mercat del Lleó 전체 가이드 보기](../places/mercat-del-lleo.html)
+
+---
+
 ## 음식·시장·카페·생활체험
 
 ## 엠포르다 요리를 이해하는 한 문장
@@ -703,7 +720,7 @@ Mercat de la Devesa:
 - 체크아웃: 2026-09-04 11:00
 - 숙박: 3박
 - 주소: Plaça de l'Església, 6, 17483 Bàscara
-- 예약코드 HM2YPHDRW5 · €330 · **확정(2026-08-05)**
+- 예약코드 [CONFIRMED] · €330 · **확정(2026-08-05)**
 - 결제조건·주차·조식·취소조건: 재확인
 
 ## Girona Cathedral
@@ -895,7 +912,7 @@ Museum of Jewish History에서 오후 17:00 보드게임 행사가 있으나 콜
 - [GeoJSON](../../ASSETS/75_Execution_Maps/Girona_Execution_Map_v0.2.geojson)
 - [KML](../../ASSETS/75_Execution_Maps/Girona_Execution_Map_v0.2.kml)
 - 대상 일정: **Day 4–7**
-- 숙소 핀은 **확정 주소**다 — 바스카라의 B&B, Plaça de l'Església 6 (예약 HM2YPHDRW5).
+- 숙소 핀은 **확정 주소**다 — 바스카라의 B&B, Plaça de l'Església 6 (예약 [CONFIRMED]).
 - 연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.
 - HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.
 
@@ -1317,7 +1334,7 @@ Girona 시내 식당을 추가하면 숙소까지 다시 운전해야 한다. �
 **오늘의 피로도: 4–5/5.**
 
 **확정된 구조다.** BCN 공항 T1 에서 렌터카를 반납하고 **VY1521 15:30 → NCE 16:55** 로 넘어간다
-(예약 NMGI4Q). 렌터카는 Hertz L671E2E0288.
+(예약 [CONFIRMED]). 렌터카는 Hertz [CONFIRMED].
 
 > ⚠ **반납을 12:30 으로 당긴다 (2026-08-14 결정).**
 > 예약서상 반납은 **14:00** 인데 같은 날 출발이 15:30 이다. 차량 점검과 반납 서류에 20–30분이

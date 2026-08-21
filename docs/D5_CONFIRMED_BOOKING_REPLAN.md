@@ -183,7 +183,7 @@ Aix·Paris 모두 **주소는 확정, 검증된 좌표는 없다.**
 
 | 항목 | 반영 내용 |
 |---|---|
-| Aix 숙소 | Les Toits de Méjanes · Airbnb HMSSBEA4PJ · 체크인 15:00 / 체크아웃 14:00 · 주소 |
+| Aix 숙소 | Les Toits de Méjanes · Airbnb [CONFIRMED] · 체크인 15:00 / 체크아웃 14:00 · 주소 |
 | Paris 숙소 | 78 Rue de Lourmel 75015 · 체크인 15:00 / 체크아웃 11:00 · 주소 |
 | Sagrada | 8/30 15:15 · General · €29.12 — 요금·예약이 **확정(official)** 으로 기록 |
 | 트래커 | Accommodation·Reservations 상태 갱신 → 미확정 20건 → **18건** |

@@ -26,7 +26,7 @@ def update_day_1():
             "lng": 2.079047,
             "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 택시 승강장으로 이동",
             "menu": None,
-            "reservation": "예약완료 OZ511 (FRRL7R) — ICN T2 11:50 출발",
+            "reservation": "예약완료 OZ511 ([CONFIRMED]) — ICN T2 11:50 출발",
             "optional": False,
             "place_ref": None
         },

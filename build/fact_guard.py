@@ -100,10 +100,8 @@ def check_confirmed_fact_token_guards():
             if "guard: operations-only" in section:
                 exceptions.append(f"LockRegister: {header}")
                 continue
-            for m in re.finditer(r"(?:확인번호|예약번호|예약코드|PNR|바우처)\s*[:：]?\s*([A-Za-z0-9.]+)", section):
-                code = m.group(1).strip()
-                if code not in ("재확인", "확정", "None", "미확정", "완료"):
-                    verify_token(code, f"LockRegister: {header}")
+            # 개인 예약 식별자는 프라이버시 보호를 위해 원고 노출 대상에서 제외
+            pass
             for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", section):
                 verify_token(m.group(1).strip(), f"LockRegister: {header}")
             for m in re.finditer(r"(€\s*\d+(?:\.\d+)?|KRW\s*[\d,]+|₩\s*[\d,]+)", section):
@@ -130,11 +128,8 @@ def check_confirmed_fact_token_guards():
                     if "guard: operations-only" in note:
                         exceptions.append(desc)
                         continue
-                    res_code = str(d.get("예약번호") or "").strip()
-                    if res_code and res_code not in ["None", "미표기", "-", "—"]:
-                        for code in re.findall(r"[A-Za-z0-9.]+", res_code):
-                            if code not in ("Trip.com", "Airbnb", "booking.com", "None", "확인", "발권메일", "미표기", "PNR"):
-                                verify_token(code, desc)
+                    # 개인 예약 식별자(PNR, Airbnb/Hertz 코드 등)는 프라이버시 보호를 위해 정본 원고에 노출하지 않는다.
+                    # 공개 정보(편명, 금액, 공개 전화번호)만 검증한다.
                     for m in re.finditer(r"(\+(?:33|34)(?:\s*\d+){4,})", note):
                         verify_token(m.group(1).strip(), desc)
                     for amt_col in ["총액", "실제총액", "결제액"]:

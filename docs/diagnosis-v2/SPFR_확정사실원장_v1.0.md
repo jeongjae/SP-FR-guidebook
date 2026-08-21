@@ -7,7 +7,7 @@
 ## 1. 일정 구조 (마스터 일정표 = 단일 진실, TGV 예약이 고정)
 - Avignon 체류 **9/16(수)–9/20(일)** · Lyon 9/20–9/24 · Paris 9/24–10/9(15박)
 - TGV 12176: 9/20 10:22→11:28 Avignon TGV→Lyon (1등석 확정)
-- TGV 6618: 9/24 13:04→15:00 Lyon→Paris (확정 X6CVW5)
+- TGV 6618: 9/24 13:04→15:00 Lyon→Paris (확정 [CONFIRMED])
 - OZ502: 10/9 19:10 CDG 출국
 - 9/18(금) = Uzès+Pont du Gard. **우제스 시장은 수·토만** — 금요일 시장 없음이 맞는 서술
 - 9/19(토) = Arles 당일치기 (확정). Les Baux·Saint-Rémy는 대안

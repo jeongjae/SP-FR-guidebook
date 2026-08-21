@@ -139,7 +139,7 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 
 | 항목 | 내용 |
 |---|--- |
-| 숙소 | **확정(2026-08-14)** — Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas, 69003 Lyon · +33 4 81 76 28 00 · €433.82 (시티택스 포함) · booking.com 5882.730.884 · 스튜디오 2인, 간이주방, 조식 불포함 |
+| 숙소 | **확정(2026-08-14)** — Lagrange Aparthotel Lyon Lumière · 81-85 Cours Albert Thomas, 69003 Lyon · +33 4 81 76 28 00 · €433.82 (시티택스 포함) · booking.com [CONFIRMED] · 스튜디오 2인, 간이주방, 조식 불포함 |
 | 숙소 예약조건 (2026-08 예약서) | **보증금 €300 카드 (체크인 시, 체크아웃 시 반환)** · 주차 현장 €15/일 — 사전예약 불가 · **취소·변경·노쇼 시 전액 부과** · 도착 예정시간 사전 통지 요망 · 체크인 시 결제카드+사진 신분증 제시 |
 | 실제 숙소권 | **Monplaisir (3구 동쪽)** — 아래 1·2순위 권역이 아니다. 메트로 D 의존 동선으로 운영한다 |
 | 숙박 형태 | 아파트호텔(주방 포함)로 확정. 야간 프런트·엘리베이터·객실금고·밝은 귀가동선은 체크인 때 확인 {{badge:field-recheck|현장 확인}} |
@@ -179,7 +179,7 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 
 Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄다.
 
-**확정 열차 (2026-08 발권)** — **TGV INOUI 12176 · 10:22 Avignon TGV → 11:28 Lyon Part-Dieu** (1시간 6분) · 1등석 3호차 307(Jungah)·308(Jeongjae) Duo Côte à Côte · 예약번호 **4YMAGT** · €42/인 (Trip.com).
+**확정 열차 (2026-08 발권)** — **TGV INOUI 12176 · 10:22 Avignon TGV → 11:28 Lyon Part-Dieu** (1시간 6분) · 1등석 3호차 307(Jungah)·308(Jeongjae) Duo Côte à Côte · 예약번호 **[CONFIRMED]** · €42/인 (Trip.com).
 
 > **⚠ 반납은 전날이다.** 일요일은 Hertz Avignon TGV 가 10:00 에 열어 TGV 10:22 에 댈 수 없다. 그래서 **9/19(토) 18:15까지 조기 반납**한다(DEC-A08). 주차는 Parking Loueurs P0. 주유 영수증·차량 상태 사진·주차 위치 기록을 남긴다.
 
@@ -191,7 +191,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 |---|--- |
 | 역 | Gare de Lyon-Part-Dieu |
 | 열차 | **확정 (두 사람) — TGV INOUI 6618 · 9/24 목 13:04 Part-Dieu → 15:00 Paris Gare de Lyon** (1시간 56분) |
-| 좌석 | 1등석 · 13호차(위층) 356(Jeongjae)·357(Jungah) · Duo Côte à Côte · 예약번호 **X6CVW5** 공통 · €64/인 (Trip.com 발권) |
+| 좌석 | 1등석 · 13호차(위층) 356(Jeongjae)·357(Jungah) · Duo Côte à Côte · 예약번호 **[CONFIRMED]** 공통 · €64/인 (Trip.com 발권) |
 | ⚠ | 리옹에는 **Part-Dieu**와 **Perrache** 두 주요 역이 있다. 승차역 확인 |
 | 짐 | 4박치 + 43일 여행 누적. 1인 최대 캐리어 2개(90×70×50cm) + 손가방 1개, **이름표 부착 의무** (SNCF). 출발 2분 전 탑승 마감 |
 | 환불·변경 | D-7까지 무료 환불·교환, D-6부터 출발 전까지 수수료 €19 (발권서 기준) |

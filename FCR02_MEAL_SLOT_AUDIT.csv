@@ -1,0 +1,14 @@
+day,meal_slot,category,planned_venue,place_ref,selection_origin,meal_role,classification,backup_plan
+Day 01,Dinner,Arrival / Home,기내식 및 숙소 인근 캐주얼 식사 / Bodega Joan 백업,barcelona,RECOMMENDED,BACKUP,A — SPECIFIC & VERIFIED,숙소 인근 슈퍼마켓 물·간식 조달
+Day 02,Lunch,Seafood Plancha,La Paradeta Sagrada Família,la-paradeta-sagrada-familia,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,산파우 인근 타파스 카페
+Day 02,Dinner,Traditional Catalan,Bodega Joan (에이샴플레 숯불 요리),bodega-joan,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,그라시아 지구 로컬 타파스
+Day 03,Breakfast/Market,Market Visit,Mercat de la Concepció (꽃시장 & 과일 조달),mercat-concepcio,RECOMMENDED,MARKET,E — MARKET / TAKEAWAY,에이샴플레 베이커리 카페
+Day 03,Lunch,Gourmet Tapas,Bar Cañete (라발 지구 제철 타파스),bar-canete,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,산타 카테리나 시장 바 Cuines Santa Caterina
+Day 03,Dinner,Light / Tapas,고딕지구 로컬 타파스 또는 숙소 휴식,barri-gotic,RECOMMENDED,OPTIONAL,B — AREA-BASED WITH STRONG OPTIONS,숙소 인근 간단식
+Day 04,Lunch,Contemporary Rice,La Zorra (시체스 아로스 아 반다),la-zorra,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,시체스 해변 카페 테라스
+Day 04,Dinner,Empordà Heritage,Casa Marieta (지로나 인디펜덴시아 광장),casa-marieta,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,지로나 구시가지 타파스 바 또는 Bàscara 숙소식
+Day 05,Lunch,Collioure Seafood,Collioure 항구 해안 비스트로 (앤초비·생선구이),collioure,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,콜리우르 수요일 장 노천 샌드위치 / 페랄라다 이동
+Day 05,Dinner,Self-Catering / Local,Bàscara 숙소 자가 조리 (Mercat del Lleó 장보기 활용),girona,RECOMMENDED,SELF_CATERING,D — HOME / SELF-CATERING,바스카라 로컬 식당 Hostal Mas Solà
+Day 06,Lunch,Coastal Seafood / Rice,Calella de Palafrugell 또는 Sant Feliu 로컬 해산물,calella-de-palafrugell,RECOMMENDED,PRIMARY,A — SPECIFIC & VERIFIED,Peratallada 석조마을 전통 식당
+Day 06,Dinner,Home / Rest,Bàscara 숙소 자가 조리 및 이동 짐 정리,girona,RECOMMENDED,SELF_CATERING,D — HOME / SELF-CATERING,바스카라 마을 슈퍼 조달
+Day 07,Lunch,Transit Quick Meal,바르셀로나 공항 (BCN T1) 출국장 샌드위치,barcelona-sants,RECOMMENDED,PRIMARY,E — MARKET / TAKEAWAY,공항 카페테리아 간단식

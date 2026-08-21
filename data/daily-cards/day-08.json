@@ -120,7 +120,7 @@
       "lng": 7.2628,
       "summary": "12 Rue Verdi 숙소 복귀 및 휴식",
       "menu": null,
-      "reservation": "예약완료 Airbnb HMJ3HX8QAY — 12 Rue Verdi",
+      "reservation": "예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi",
       "optional": false,
       "place_ref": null
     }
@@ -204,7 +204,7 @@
   "needsReview": [
     "시장 이후 각 일정 시각 확정",
     "구시가지 점심 식당 미정 — 현장 선택",
-    "Nice 숙소 확정 (2026-08-13, Airbnb HMJ3HX8QAY): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00"
+    "Nice 숙소 확정 (2026-08-13, Airbnb [CONFIRMED]): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-8",

@@ -1,0 +1,54 @@
+---
+slug: la-zorra
+name: "La Zorra"
+local_name: "La Zorra — Arrosseria Contemporània"
+region: barcelona
+kind: spot
+grade: "우선 추천"
+priority: "PRIORITY"
+content_tier: "TIER_A"
+selection_origin: "RECOMMENDED"
+meal_role: "PRIMARY"
+food_kind: "RESTAURANT"
+summary: "시체스 해변 산책로에서 즐기는 현대적 감각의 카탈루냐 쌀요리와 아로스 아 반다 전문점."
+source: source/CURRENT/30_Places/la-zorra.md
+---
+
+## 왜 가는가
+
+바르셀로나 남쪽의 아름다운 해변 휴양지 시체스(Sitges) 해안 산책로(Passeig Marítim)에 위치한 라 소라(La Zorra)는 전통적인 스페인 빠에야의 문법을 현대적으로 재해석한 컨템퍼러리 쌀요리 전문점이다.
+
+식당 이름 'La Zorra'는 쌀(Arroz)의 철자를 뒤집은 위트 있는 아나그램(ARROZ ➔ ZORRA)에서 따왔으며, 짙은 생선 육수와 얇게 눌어붙은 완벽한 소카랏(Socarrat)을 자랑하는 쌀요리를 선보인다.
+
+카우 페랏과 마리셀 궁전을 관람한 뒤 푸른 지중해 바다가 내다보이는 테라스에 앉아 와인과 함께 즐기는 점심 식사는 바르셀로나에서 지로나로 이동하는 날의 미식 하이라이트가 된다.
+
+### Editor's Verdict
+> Day 04 바르셀로나 렌터카 인수 후 시체스 경유 일정의 핵심 점심 앵커다. 이동 시간과 렌터카 주차(Parking El Retiro 등)를 고려하여 13:00 슬롯 사전 예약이 필수적이며, 식사 시간을 75~90분으로 통제해야 오후 지로나 숙소 체크인을 무리 없이 마칠 수 있다.
+
+- **Best For**: 현대적 카탈루냐 쌀요리(Arroz a banda, 흑먹물 쌀요리), 오션뷰 테라스 런치
+- **Best Context**: Day 04 (화요일) 시체스 미술관 산책 후 점심
+- **Recommended Duration**: 75~90분
+
+## 더 깊이
+
+### 1. 정통 소카랏(Socarrat)과 감칠맛 육수
+두꺼운 전통 파에야 팬 대신 얇고 넓은 무쇠 팬을 사용하여 밥알이 얇게 펴지도록 조리하며, 바닥에 바삭하게 눌어붙은 소카랏의 고소한 풍미가 일품이다.
+
+### 2. 추천 대표 메뉴
+1. **Arròs a banda tradicional**: 진한 해산물 스톡으로 밥을 짓고 알리올리 소스를 곁들여 먹는 지중해 정통 쌀요리 (2인 약 €38).
+2. **Arròs negre amb sèpia**: 오징어와 먹물로 감칠맛을 극대화한 블랙 라이스.
+3. **Bunyols de bacallà**: 겉은 바삭하고 속은 부드러운 대구살 크로켓 전채.
+4. **Pastís de formatge**: 구운 풍미가 진한 수제 치즈케이크 디저트 (약 €7.50).
+
+## 실용
+
+| 항목 | 상세 정보 |
+|---|---|
+| **위치** | Passeig Marítim, 1-3, 08870 Sitges, Barcelona, Spain |
+| **좌표** | 41.2341, 1.8052 |
+| **운영 시간** | 매일 점심 13:00–16:30 · 저녁 20:30–23:00 |
+| **정기 휴무** | 연중무휴 (화요일 정상 영업 확인) |
+| **가격대** | 쌀요리 1인분 €18~€26 (2인 이상 주문) · 2인 예상 €60~€85 |
+| **예약** | [공식 웹사이트](https://restaurantelazorra.com/) **사전 예약 필수** (13:00 점심 슬롯) |
+| **주차** | Parking El Retiro 또는 Parking Nou Mercat 유료 지하주차장 이용 후 도보 5~8분 |
+| **공식 정보** | [공식 웹사이트](https://restaurantelazorra.com/) (verified_at: 2026-08-21) |
