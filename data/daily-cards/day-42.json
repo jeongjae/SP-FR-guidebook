@@ -75,7 +75,7 @@
       "lng": 2.5479,
       "summary": "아시아나 카운터 수하물 위탁 ➔ PABLO 전자 택스리펀 ➔ 보안검색 및 출국심사 ➔ 면세점/라운지 휴식 ➔ 19:10 OZ502 탑승",
       "menu": null,
-      "reservation": "예약확정 아시아나항공 OZ502 (CDG 19:10 ➔ ICN 10/10 14:10)",
+      "reservation": "예약확정 아시아나항공 OZ502 [CONFIRMED] — CDG 터미널 1 19:10 ➔ ICN 터미널 2 10/10 14:10 (12시간) · 48G(Jeongjae)·48H(Jungah)",
       "optional": false,
       "place_ref": null
     }
@@ -111,7 +111,7 @@
   ],
   "transport": [
     "파리 공식 택시 (15구 ➔ CDG 터미널 1 정액제 약 60분, €65)",
-    "아시아나항공 OZ502 (CDG 19:10 ➔ ICN 10/10 14:10, 확정)"
+    "아시아나항공 OZ502 (CDG 터미널 1 19:10 ➔ ICN 터미널 2 10/10 14:10, 확정 · 48G·48H)"
   ],
   "food": [
     "숙소권 가벼운 점심 — 과식 금지",
@@ -133,12 +133,14 @@
     "routeCache": null
   },
   "needsReview": [
+    "무료 수하물 주의 — 귀국편 OZ502 는 1인 1개(1PC)다. 출국편 OZ511 은 2개였다. 43일치 짐이 늘었다면 파리에서 미리 줄이거나 추가 수하물을 결제한다.",
     "CDG 터미널 1 택스리펀(PABLO 바코드 스캔) 준비",
     "아시아나 OZ502 19:10 탑승권 및 수하물 태그 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-16-10월9일",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-42",
-    "OSM Nominatim 지오코딩 2026-08-07: CDG"
+    "OSM Nominatim 지오코딩 2026-08-07: CDG",
+    "예약 증빙 확인 (2026-08-21): 아시아나 전자항공권 — OZ502 · 09OCT26 19:10 CDG T1 ➔ 10OCT26 14:10 ICN T2 · 12H00M · 좌석 48G·48H · 무료 수하물 1PC · 총액 KRW 485,400/인 (award, 2026-08-21 발권)"
   ]
 }
