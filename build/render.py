@@ -1002,22 +1002,25 @@ def build_region(r: Region, trip: Trip) -> str:
 
     # --- Food -------------------------------------------------------------
     dishes, spots = [], []
+    generic_food_patterns = [
+        "기내", "편의점", "물만", "이동용 물", "출발 시각", "숙소 간단식", "숙소 저녁",
+        "숙소식", "숙소 점심", "숙소권 간단", "숙소권 저녁", "숙소식 또는",
+        "이동 중 간단식", "숙소 주변 가벼운 저녁", "가벼운 저녁", "가벼운 점심",
+        "이른 저녁", "저녁 무예약", "동네 저녁", "가까운 저녁",
+        "첫 장보기", "필수품만", "점심·휴식", "브런치·숙소", "숙소권 가벼운",
+        "도착 점심은 가볍게", "점심 — 가볍게", "저녁은 가볍게", "마지막 저녁",
+        "농가 첫 저녁", "농가 저녁", "플랫폼 대기", "경기장 식사", "축제권 점심", "동부 파리 점심",
+    ]
     for d in r.days:
         for item in d.food:
             clean_item = item.strip()
             # Filter generic execution notes and logistics from Regional Food Guide UI
-            if any(g in clean_item for g in [
-                "기내", "편의점", "물만", "이동용 물", "출발 시각", "숙소 간단식", "숙소 저녁",
-                "숙소식", "숙소 점심", "숙소권 간단", "숙소권 저녁 또는 숙소식", "숙소식 또는 동네",
-                "이동 중 간단식", "숙소 주변 가벼운 저녁", "가벼운 저녁", "가벼운 점심",
-                "이른 저녁", "저녁 무예약", "동네 저녁 (무예약)", "가까운 저녁",
-                "첫 장보기", "필수품만", "점심·휴식", "브런치·숙소", "숙소권 가벼운 점심",
-            ]):
+            if any(g in clean_item for g in generic_food_patterns):
                 continue
             if clean_item not in dishes:
                 dishes.append(clean_item)
         for s in d.stops:
-            if s.category == "food" and s.name not in [x.name for x in spots]:
+            if s.category == "food" and not any(g in s.name for g in generic_food_patterns) and s.name not in [x.name for x in spots]:
                 spots.append(s)
     if dishes or spots:
         parts.append(f'<div id="food">{sec_head("EAT", "먹거리", rule=True)}</div>')
@@ -1029,9 +1032,10 @@ def build_region(r: Region, trip: Trip) -> str:
                     dish_title = f'<a class="card-link" href="{rel}/{p.url}">{esc(s.name)}</a>'
                 else:
                     dish_title = link_food_text(s.name, rel, trip)
+                why_text = s.menu or s.summary or (p.summary if p else "")
                 cards.append(f"""<article class="card food-card">
   <div class="food-dish">{dish_title}</div>
-  <p class="food-why">{esc(s.summary)}</p>
+  <p class="food-why">{esc(why_text)}</p>
   {f'<div class="metarow">{ic("ticket")}{esc(s.reservation)}</div>' if s.reservation else ''}
 </article>""")
             parts.append(f'<div class="grid grid-2">{"".join(cards)}</div>')

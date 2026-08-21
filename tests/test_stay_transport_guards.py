@@ -83,6 +83,7 @@ class StayTransportGuards(unittest.TestCase):
                    "www.aerobusbarcelona.es", "aerobusbarcelona.es"}
         allowed.update({"www.orizo.fr", "orizo.fr", "www.lio-occitanie.fr",
                         "lio-occitanie.fr", "www.ter.sncf.com", "ter.sncf.com"})
+        allowed.update({"zou.maregionsud.fr", "www.luberon-apt.fr", "luberon-apt.fr"})
         for slug, region in payload["regions"].items():
             for source in region["sources"]:
                 self.assertIn(urlparse(source["url"]).hostname, allowed,
@@ -232,6 +233,21 @@ class StayTransportGuards(unittest.TestCase):
         day22 = json.loads((ROOT / "data" / "daily-cards" /
                             "day-22.json").read_text(encoding="utf-8"))
         self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day22["legs"]})
+
+    def test_luberon_transport_is_car_first_and_bus_fallback_only(self):
+        region = next(r for r in self.trip.regions if r.slug == "luberon")
+        rendered = html.unescape(render.build_region(region, self.trip))
+        for token in ("교통권은 사지 않는다", "ZOU! 917", "ZOU! 915·907",
+                      "ZOU! 989 Pays d’Apt", "99xx 계열 통학 노선", "렌터카 업체 지원"):
+            self.assertIn(token, rendered)
+        for day in range(16, 20):
+            self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+        expected_modes = {16: {"car"}, 17: {"car", "walk"},
+                          18: {"car", "walk"}, 19: {"car", "walk"}}
+        for day, expected in expected_modes.items():
+            payload = json.loads((ROOT / "data" / "daily-cards" /
+                                  f"day-{day:02d}.json").read_text(encoding="utf-8"))
+            self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
 
 
 if __name__ == "__main__":

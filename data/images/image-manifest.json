@@ -10113,7 +10113,993 @@
       "selectionScore": 0,
       "note": "Jason 이 직접 제공. 출처·라이선스 미확인 — 크레딧에 그대로 표기한다.",
       "originalBytes": 190690
+    },
+    {
+      "imageId": "aix-carrieres-de-bibemus-01",
+      "placeId": "carrieres-de-bibemus",
+      "title": "Carrières de Bibémus - 1.JPG",
+      "titleKo": "비베뮈 채석장",
+      "description": "비베뮈 채석장의 주황빛 절개면과 주변 수풀",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carri%C3%A8res_de_Bib%C3%A9mus_-_1.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Carri%C3%A8res_de_Bib%C3%A9mus_-_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Camster",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "리사이즈·웹 포맷 변환",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 3264,
+      "originalHeight": 2448,
+      "originalPath": "source/ASSETS/photos/originals/aix-carrieres-de-bibemus-01.jpg",
+      "originalSha256": "4e1730e792d7a2b90dc622661c660e7c032a7d9526044596248d61e08dcb5478",
+      "usage": [
+        "places/carrieres-de-bibemus.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "비베뮈 채석장의 주황빛 절개면과 주변 수풀",
+      "captionKo": "비베뮈 채석장의 주황빛 절개면과 주변 수풀.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-carrieres-de-bibemus-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-carrieres-de-bibemus-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 295446,
+            "sha256": "64e7a2d3f42799e01f21877da2260dd42c1886d897fe13606e7b0e19f5cea7f7",
+            "quality": 63
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-carrieres-de-bibemus-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-carrieres-de-bibemus-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 45018,
+            "sha256": "387f744a4a71671da79f9d46b3804f29f85683eaf8c1a266a73d23980c65eac6",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "aix",
+      "originalBytes": 3150110
+    },
+    {
+      "imageId": "aix-vieil-aix-01",
+      "placeId": "vieil-aix",
+      "title": "Aix-en-Provence (13) Place d'Albertas 949.jpg",
+      "titleKo": "비에이 엑스 구시가지",
+      "description": "엑상프로방스 구시가지 알베르타 광장의 분수와 18세기 저택 정면",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aix-en-Provence_(13)_Place_d%27Albertas_949.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Aix-en-Provence_%2813%29_Place_d%27Albertas_949.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "GFreihalter",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 7728,
+      "originalHeight": 5152,
+      "originalPath": "source/ASSETS/photos/originals/aix-vieil-aix-01.jpg",
+      "originalSha256": "75c71cea60cee39a123b9690cc3fff0b16708d5745d846ba39f5dcaff0296c0b",
+      "usage": [
+        "places/vieil-aix.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "엑상프로방스 구시가지 알베르타 광장의 분수와 18세기 저택 정면",
+      "captionKo": "엑상프로방스 구시가지 알베르타 광장의 분수와 18세기 저택 정면.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-vieil-aix-01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-vieil-aix-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 145496,
+            "sha256": "edc6acb2ad979de29bc683b6b8cd61d427610eda0d16ffd42a0a20f28dcf8aad",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-vieil-aix-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-vieil-aix-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24846,
+            "sha256": "e69ece57a46d403adb8ccb14e1940f0114f8eb44a9ffaeb51a77b451d1368ab4",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "aix",
+      "originalBytes": 3450192,
+      "storedWidth": 4000,
+      "storedHeight": 2667
+    },
+    {
+      "imageId": "barcelona-barcelona-sants-01",
+      "placeId": "barcelona-sants",
+      "title": "Estacio Barcelona Sants - 1 - 2010-10-18 - JTCurses.jpg",
+      "titleKo": "바르셀로나 산츠역",
+      "description": "바르셀로나 산츠역 정면 출입구와 택시 승강장",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Estacio_Barcelona_Sants_-_1_-_2010-10-18_-_JTCurses.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Estacio_Barcelona_Sants_-_1_-_2010-10-18_-_JTCurses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "JT Curses",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 4288,
+      "originalHeight": 2848,
+      "originalPath": "source/ASSETS/photos/originals/barcelona-barcelona-sants-01.jpg",
+      "originalSha256": "42fbf9d9c58d9bfa040c66c56e04ec27745ce9f1fe2a4f3021ad831ef6871437",
+      "usage": [
+        "places/barcelona-sants.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "바르셀로나 산츠역 정면 출입구와 택시 승강장",
+      "captionKo": "바르셀로나 산츠역 정면 출입구와 택시 승강장.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-barcelona-sants-01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-barcelona-sants-01-content-1280.webp",
+            "width": 1280,
+            "height": 850,
+            "bytes": 82870,
+            "sha256": "55484a02b1f2bd6c7015ce275d7ff9660e3c94c08eff804058f9d58850e8270f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-barcelona-sants-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-barcelona-sants-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 16484,
+            "sha256": "7adae1526c44e6e607b49f2f820f9c48fe8e815e4bb846b42f16c04d623f8cbb",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "barcelona",
+      "originalBytes": 2325752,
+      "storedWidth": 4000,
+      "storedHeight": 2657
+    },
+    {
+      "imageId": "nice-menton-01",
+      "placeId": "menton",
+      "title": "Menton-Côte d'Azur.jpg",
+      "titleKo": "멘통",
+      "description": "멘통 구시가지의 파스텔빛 건물군과 생미셸 성당 종탑 해변 전경",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Menton-C%C3%B4te_d%27Azur.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/90/Menton-C%C3%B4te_d%27Azur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Tobi 87",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 5505,
+      "originalHeight": 2960,
+      "originalPath": "source/ASSETS/photos/originals/nice-menton-01.jpg",
+      "originalSha256": "42902d5c9bf621b291b53cd2f451ed2911fba133c358b1d7dbf4731df790af85",
+      "usage": [
+        "places/menton.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "멘통 구시가지의 파스텔빛 건물군과 생미셸 성당 종탑 해변 전경",
+      "captionKo": "멘통 구시가지의 파스텔빛 건물군과 생미셸 성당 종탑 해변 전경.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-menton-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-menton-01-content-1280.webp",
+            "width": 1280,
+            "height": 688,
+            "bytes": 188350,
+            "sha256": "65b4f9e846b5273df35a226769170f4b720c9bd5a059ce03e4c3c424b25c1e58",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-menton-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-menton-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31418,
+            "sha256": "a618e932e4bfaf4a1ec0b75d991e78a553e4b59661f409ff72a9480f20183772",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "nice",
+      "originalBytes": 4046788,
+      "storedWidth": 4000,
+      "storedHeight": 2151
+    },
+    {
+      "imageId": "nice-nce-t2-01",
+      "placeId": "nce-t2",
+      "title": "Terminal 2 Interior Nice Côte d'Azur airport.jpg",
+      "titleKo": "니스 공항 제2터미널",
+      "description": "니스 코트다쥐르 공항 제2터미널 내부 대합실",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Terminal_2_Interior_Nice_C%C3%B4te_d%27Azur_airport.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/15/Terminal_2_Interior_Nice_C%C3%B4te_d%27Azur_airport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "m-louis",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 4288,
+      "originalHeight": 2848,
+      "originalPath": "source/ASSETS/photos/originals/nice-nce-t2-01.jpg",
+      "originalSha256": "2df73d3778c9472b2b394d8e90572c9d5cf8b26c3b051ab47afce658938e4341",
+      "usage": [
+        "places/nce-t2.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "니스 코트다쥐르 공항 제2터미널 내부 대합실",
+      "captionKo": "니스 코트다쥐르 공항 제2터미널 내부 대합실.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-nce-t2-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-nce-t2-01-content-1280.webp",
+            "width": 1280,
+            "height": 850,
+            "bytes": 87214,
+            "sha256": "a493ec877514b3360d77d70a32768b18d91ea1ce39bb1f8038aae228443dee99",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-nce-t2-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-nce-t2-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21566,
+            "sha256": "8ca073a08ecc6270e7ef3ef5fb7928a2bba157b811170c0822585959b707c39b",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "nice",
+      "originalBytes": 2094249,
+      "storedWidth": 4000,
+      "storedHeight": 2657
+    },
+    {
+      "imageId": "nice-nice-ville-01",
+      "placeId": "nice-ville",
+      "title": "Nice train Station.JPG",
+      "titleKo": "니스빌역",
+      "description": "니스빌역 정면 파사드와 역 시계",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nice_train_Station.JPG",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Nice_train_Station.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "DV",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 3984,
+      "originalHeight": 2656,
+      "originalPath": "source/ASSETS/photos/originals/nice-nice-ville-01.jpg",
+      "originalSha256": "d1be5769aff421a402b45ee6aa1394af9444ca14a3a4744696c8a90b2ba5bdb1",
+      "usage": [
+        "places/nice-ville.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "니스빌역 정면 파사드와 역 시계",
+      "captionKo": "니스빌역 정면 파사드와 역 시계.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-nice-ville-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-nice-ville-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 116056,
+            "sha256": "2238ea1a3b3d83ee4fa39c08e11a74622bcc1b4cee3b2e5872c56415728cb70d",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-nice-ville-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-nice-ville-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21082,
+            "sha256": "dece0d5ea7c2e966207f1516beab73488a750af01e75ee271727cc7280c6d188",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "nice",
+      "originalBytes": 3740487
+    },
+    {
+      "imageId": "nice-villa-ephrussi-de-rothschild-01",
+      "placeId": "villa-ephrussi-de-rothschild",
+      "title": "Villa ephrussi de rothschild.jpg",
+      "titleKo": "빌라 에프뤼시 드 로스차일드",
+      "description": "빌라 에프뤼시 드 로스차일드의 분홍빛 남쪽 파사드와 프랑스식 정원",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_ephrussi_de_rothschild.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Villa_ephrussi_de_rothschild.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Velvet",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 4042,
+      "originalHeight": 2800,
+      "originalPath": "source/ASSETS/photos/originals/nice-villa-ephrussi-de-rothschild-01.jpg",
+      "originalSha256": "5c481aa6a36eae86069785b77397ac07dddf3df2b859647d566d20af76095602",
+      "usage": [
+        "places/villa-ephrussi-de-rothschild.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "빌라 에프뤼시 드 로스차일드의 분홍빛 남쪽 파사드와 프랑스식 정원",
+      "captionKo": "빌라 에프뤼시 드 로스차일드의 분홍빛 남쪽 파사드와 프랑스식 정원.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-villa-ephrussi-de-rothschild-01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-villa-ephrussi-de-rothschild-01-content-1280.webp",
+            "width": 1280,
+            "height": 887,
+            "bytes": 205728,
+            "sha256": "971e82f13d75a34db7d560aabc8d9fbf7c4e355f3f4ca30d78531a0f38450a68",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-villa-ephrussi-de-rothschild-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-villa-ephrussi-de-rothschild-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24668,
+            "sha256": "5fda22030c85792e13fb1e7dc66389333332985da19ffa4badd87ac2d57cdc55",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "nice",
+      "originalBytes": 4386735,
+      "storedWidth": 4000,
+      "storedHeight": 2771
+    },
+    {
+      "imageId": "paris-musee-carnavalet-01",
+      "placeId": "musee-carnavalet",
+      "title": "Cour Louis XIV au Musée Carnavalet à Paris le 30 septembre 2016 - 17.jpg",
+      "titleKo": "카르나발레 박물관",
+      "description": "카르나발레 박물관 루이 14세 안뜰과 중앙의 루이 14세 청동상",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cour_Louis_XIV_au_Mus%C3%A9e_Carnavalet_%C3%A0_Paris_le_30_septembre_2016_-_17.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Cour_Louis_XIV_au_Mus%C3%A9e_Carnavalet_%C3%A0_Paris_le_30_septembre_2016_-_17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Lionel Allorge",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 5184,
+      "originalHeight": 3456,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-carnavalet-01.jpg",
+      "originalSha256": "be94ba6b0f6116655453cd92dafd2b2beeea6783b681d4f722e975a2fdcb7541",
+      "usage": [
+        "places/musee-carnavalet.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "카르나발레 박물관 루이 14세 안뜰과 중앙의 루이 14세 청동상",
+      "captionKo": "카르나발레 박물관 루이 14세 안뜰과 중앙의 루이 14세 청동상.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-carnavalet-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-carnavalet-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 143440,
+            "sha256": "219c52c77777691562712616ea12b80ebed2c80f08d3bf59ac9edc18d84bd353",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-carnavalet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-carnavalet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24528,
+            "sha256": "5b94ac27629a19f61329b10435ec867e0f83e0c4a1b9a832ce7931861e40c9eb",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 2951032,
+      "storedWidth": 4000,
+      "storedHeight": 2667
+    },
+    {
+      "imageId": "paris-musee-d-art-moderne-de-paris-01",
+      "placeId": "musee-d-art-moderne-de-paris",
+      "title": "Entrée musée d'art moderne de Paris en 2025.jpg",
+      "titleKo": "파리 시립 현대미술관",
+      "description": "파리 시립 현대미술관 정문 계단과 전시 배너",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_mus%C3%A9e_d%27art_moderne_de_Paris_en_2025.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Entr%C3%A9e_mus%C3%A9e_d%27art_moderne_de_Paris_en_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Zen 38",
+      "license": "CC0",
+      "licenseCode": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 3024,
+      "originalHeight": 4032,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-d-art-moderne-de-paris-01.jpg",
+      "originalSha256": "9ab5c01fece8dd16bf251337016edd2384f077dbfbdccd7d29f799f658c5cb43",
+      "usage": [
+        "places/musee-d-art-moderne-de-paris.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "파리 시립 현대미술관 정문 계단과 전시 배너",
+      "captionKo": "파리 시립 현대미술관 정문 계단과 전시 배너.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-d-art-moderne-de-paris-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-d-art-moderne-de-paris-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 185778,
+            "sha256": "d4b5b165177518d5f811e1e85edf19b6cc20d4703cc70d26bcc1e91857f4c5b9",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-d-art-moderne-de-paris-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-d-art-moderne-de-paris-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17028,
+            "sha256": "d37a7c2c3b8569614b099aec7e6fc6bd13983a411d7c979068d6d05fd1c69b33",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 3417566,
+      "storedWidth": 3000,
+      "storedHeight": 4000
+    },
+    {
+      "imageId": "paris-musee-du-luxembourg-01",
+      "placeId": "musee-du-luxembourg",
+      "title": "Musée Luxembourg - Paris VI (FR75) - 2025-09-28 - 1.jpg",
+      "titleKo": "뤽상부르 미술관",
+      "description": "뤽상부르 미술관 정면 입구와 관람객 대기줄",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Luxembourg_-_Paris_VI_(FR75)_-_2025-09-28_-_1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Mus%C3%A9e_Luxembourg_-_Paris_VI_%28FR75%29_-_2025-09-28_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 5712,
+      "originalHeight": 4284,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-du-luxembourg-01.jpg",
+      "originalSha256": "76912bc852711c9ab451c0205611c93cdca841c56556e0564aa670af29646d7c",
+      "usage": [
+        "places/musee-du-luxembourg.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "뤽상부르 미술관 정면 입구와 관람객 대기줄",
+      "captionKo": "뤽상부르 미술관 정면 입구와 관람객 대기줄.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-du-luxembourg-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-du-luxembourg-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 259470,
+            "sha256": "9a42d254f3d238d5d5e158068494efcf610c90a29640bee0bcb79aa3a76604a0",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-du-luxembourg-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-du-luxembourg-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31092,
+            "sha256": "ae255213cdd9c73c786636054eafa37dc96bc094c4d42e137397494d1c01880e",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 4706768,
+      "storedWidth": 4000,
+      "storedHeight": 3000
+    },
+    {
+      "imageId": "paris-musee-guimet-01",
+      "placeId": "musee-guimet",
+      "title": "Musée Guimet à Paris (janvier 2020).jpg",
+      "titleKo": "기메 국립아시아미술관",
+      "description": "기메 국립아시아미술관의 원형 로톤다 외관",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Guimet_%C3%A0_Paris_(janvier_2020).jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/58/Mus%C3%A9e_Guimet_%C3%A0_Paris_%28janvier_2020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Benoît Prieur",
+      "license": "CC0",
+      "licenseCode": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "리사이즈·웹 포맷 변환",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 2936,
+      "originalHeight": 3328,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-guimet-01.jpg",
+      "originalSha256": "3509a0777dd4b05997fba39808e14c7cbcb5ec8a410b086b79c9a8a4c13cd114",
+      "usage": [
+        "places/musee-guimet.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "기메 국립아시아미술관의 원형 로톤다 외관",
+      "captionKo": "기메 국립아시아미술관의 원형 로톤다 외관.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-guimet-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-guimet-01-content-1280.webp",
+            "width": 1280,
+            "height": 1451,
+            "bytes": 217342,
+            "sha256": "d6b891dbcb95987ae8d7caf21e4595d4865a1ba59daddbe09f79d568b89381aa",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-guimet-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-guimet-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25416,
+            "sha256": "e9e647fb8e9a3bd6229cd5e0a00cc69797310afae00c70897317d3f1bf02d164",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 4643087
+    },
+    {
+      "imageId": "paris-musee-gustave-moreau-01",
+      "placeId": "musee-gustave-moreau",
+      "title": "Musée Gustave Moreau exterieur.jpg",
+      "titleKo": "귀스타브 모로 미술관",
+      "description": "귀스타브 모로 국립미술관 파사드와 돌출 간판",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Gustave_Moreau_exterieur.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mus%C3%A9e_Gustave_Moreau_exterieur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Ziqo",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 2592,
+      "originalHeight": 4608,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-gustave-moreau-01.jpg",
+      "originalSha256": "bf814fb4dd8ca5238380b3e9d338774920c84a9cdf3c2908ae84151173c173d9",
+      "usage": [
+        "places/musee-gustave-moreau.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "귀스타브 모로 국립미술관 파사드와 돌출 간판",
+      "captionKo": "귀스타브 모로 국립미술관 파사드와 돌출 간판.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-gustave-moreau-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-gustave-moreau-01-content-1280.webp",
+            "width": 1280,
+            "height": 2276,
+            "bytes": 289230,
+            "sha256": "619efeead80733a8a62bc1edfed1dcc68276d6045acb7d8d916d614ceed87054",
+            "quality": 72
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-gustave-moreau-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-gustave-moreau-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24656,
+            "sha256": "5957695bd711705f62822d055b84a3e315e04d2caa803e097da08889314ef885",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 2957032,
+      "storedWidth": 2250,
+      "storedHeight": 4000
+    },
+    {
+      "imageId": "paris-musee-jacquemart-andre-01",
+      "placeId": "musee-jacquemart-andre",
+      "title": "Musée Jacquemart-André, Paris 8e 3-1.jpg",
+      "titleKo": "자크마르-앙드레 미술관",
+      "description": "오스만 대로 자크마르-앙드레 미술관 저택 외관",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Jacquemart-Andr%C3%A9,_Paris_8e_3-1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/18/Mus%C3%A9e_Jacquemart-Andr%C3%A9%2C_Paris_8e_3-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Polymagou",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 5472,
+      "originalHeight": 3648,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-jacquemart-andre-01.jpg",
+      "originalSha256": "0b2b0c69a06c8ad122318dd4bc863aa58a40ee81e3b47e1c44759e851e12b788",
+      "usage": [
+        "places/musee-jacquemart-andre.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "오스만 대로 자크마르-앙드레 미술관 저택 외관",
+      "captionKo": "오스만 대로 자크마르-앙드레 미술관 저택 외관.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-jacquemart-andre-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-jacquemart-andre-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 271624,
+            "sha256": "e61805ed7ad4c2a1e5a2c71c67fb686342b008fcd104492989cdcc880a921aa1",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-jacquemart-andre-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-jacquemart-andre-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35424,
+            "sha256": "7248f6bd4ddfea87ef1e148cbd13f35028fe53f4ab19b6b4ed764729dafa8c9c",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 4800783,
+      "storedWidth": 4000,
+      "storedHeight": 2667
+    },
+    {
+      "imageId": "paris-musee-picasso-paris-01",
+      "placeId": "musee-picasso-paris",
+      "title": "Hôtel Salé - Paris III (FR75) - 2024-05-22 - 3.jpg",
+      "titleKo": "국립 피카소 미술관",
+      "description": "피카소 미술관이 들어선 오텔 살레의 정원 쪽 파사드",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Sal%C3%A9_-_Paris_III_(FR75)_-_2024-05-22_-_3.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/b/b3/H%C3%B4tel_Sal%C3%A9_-_Paris_III_%28FR75%29_-_2024-05-22_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 7079,
+      "originalHeight": 3899,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-picasso-paris-01.jpg",
+      "originalSha256": "9734c4425739bc33708690e37a7a58962ca574734f63271069626771bd8efca3",
+      "usage": [
+        "places/musee-picasso-paris.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "피카소 미술관이 들어선 오텔 살레의 정원 쪽 파사드",
+      "captionKo": "피카소 미술관이 들어선 오텔 살레의 정원 쪽 파사드.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-picasso-paris-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-picasso-paris-01-content-1280.webp",
+            "width": 1280,
+            "height": 705,
+            "bytes": 242520,
+            "sha256": "4455e5116c44b82e5c04eaecef07698e2ad00f23f9955d05229092c23285d82b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-picasso-paris-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-picasso-paris-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 37584,
+            "sha256": "b64bf4201af630381207d1ab566175262697fd4826bc54606c5c8d7b9aaebd30",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 4245180,
+      "storedWidth": 4000,
+      "storedHeight": 2203
+    },
+    {
+      "imageId": "paris-musee-rodin-01",
+      "placeId": "musee-rodin",
+      "title": "L'hôtel Biron (musée Rodin) à Paris, 13 juin 2021 01.jpg",
+      "titleKo": "로댕 미술관",
+      "description": "로댕 미술관 오텔 비롱의 정원 쪽 파사드와 원형 수반",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:L%27h%C3%B4tel_Biron_(mus%C3%A9e_Rodin)_%C3%A0_Paris,_13_juin_2021_01.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/39/L%27h%C3%B4tel_Biron_%28mus%C3%A9e_Rodin%29_%C3%A0_Paris%2C_13_juin_2021_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Jean-Pierre Dalbéra",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 7754,
+      "originalHeight": 5169,
+      "originalPath": "source/ASSETS/photos/originals/paris-musee-rodin-01.jpg",
+      "originalSha256": "af023537acc49231833cabe114f5d82ea350bd71b82386811a1568438a61e196",
+      "usage": [
+        "places/musee-rodin.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "로댕 미술관 오텔 비롱의 정원 쪽 파사드와 원형 수반",
+      "captionKo": "로댕 미술관 오텔 비롱의 정원 쪽 파사드와 원형 수반.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-musee-rodin-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-musee-rodin-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 213926,
+            "sha256": "260b3a94ad9744ae8a24e137e6bc04147245ed01f7c6a1f64340804249f02398",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-musee-rodin-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-musee-rodin-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 29452,
+            "sha256": "e9fc09a3d4ead741c9fcbbfd6dff2ace141512588c88c42a0c1a42f7682ac577",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 4720153,
+      "storedWidth": 4000,
+      "storedHeight": 2666
+    },
+    {
+      "imageId": "paris-petit-palais-01",
+      "placeId": "petit-palais",
+      "title": "Petit-Palais-Paris-02-2018.jpg",
+      "titleKo": "프티 팔레",
+      "description": "윈스턴 처칠 대로에서 본 프티 팔레 정면 전경",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Petit-Palais-Paris-02-2018.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/7/71/Petit-Palais-Paris-02-2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "creator": "Gunnar Klack",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "리사이즈·웹 포맷 변환; original stored downscaled to max 4000px",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 4059,
+      "originalHeight": 2000,
+      "originalPath": "source/ASSETS/photos/originals/paris-petit-palais-01.jpg",
+      "originalSha256": "6570c0e0d1d3746359bd0927302b4bde3f785399f0696fd844f2ae5a467a8d1f",
+      "usage": [
+        "places/petit-palais.html"
+      ],
+      "role": "major",
+      "regionHero": false,
+      "status": "processed",
+      "altKo": "윈스턴 처칠 대로에서 본 프티 팔레 정면 전경",
+      "captionKo": "윈스턴 처칠 대로에서 본 프티 팔레 정면 전경.",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-petit-palais-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-petit-palais-01-content-1280.webp",
+            "width": 1280,
+            "height": 631,
+            "bytes": 93442,
+            "sha256": "852d58df1a82f0927a7d7ead7bbafaacfd588740eb5abe975bfb1839f10e4c7a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-petit-palais-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-petit-palais-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19596,
+            "sha256": "9c293445a01bb8319d001d808ff9dd81725da5ad7b14f2863b083a01242da99c",
+            "quality": 73
+          }
+        ]
+      },
+      "selectionScore": 0,
+      "region": "paris",
+      "originalBytes": 2274335,
+      "storedWidth": 4000,
+      "storedHeight": 1971
     }
   ],
-  "processedAt": "2026-08-18"
+  "processedAt": "2026-08-05"
 }
