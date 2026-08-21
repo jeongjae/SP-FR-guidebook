@@ -670,6 +670,30 @@ def validate(trip: Trip) -> list[str]:
                     f"Day {d.n}: place_ref '{s.place_ref}' 가 링크로 실현되지 "
                     f"않았다 (stop {s.id})")
 
+    # 같은 숙소를 날짜마다 복제하는 현재 모델에서 일부 날짜만 주소·좌표가
+    # 빠지거나 달라지는 회귀를 막는다. 숙소 엔티티로 승격하기 전까지의
+    # 안전망이며, 값이 하나라도 알려졌다면 같은 이름의 모든 날에 있어야 한다.
+    hotels: dict[str, list[tuple[int, dict]]] = {}
+    for d in trip.days:
+        name = str(d.hotel.get("name") or "").strip()
+        if not name:
+            continue
+        hotels.setdefault(name, []).append((d.n, d.hotel))
+        if "숙소 없음" in name and any(d.hotel.get(k) is not None
+                                      for k in ("lat", "lng")):
+            problems.append(f"Day {d.n}: 숙소 없음 객체에 좌표가 있다")
+
+    for name, rows in hotels.items():
+        for key, label in (("status", "상태"), ("address", "주소"),
+                           ("lat", "위도"), ("lng", "경도")):
+            values = {row.get(key) for _, row in rows if row.get(key) is not None}
+            if len(values) > 1:
+                problems.append(f"숙소 {name}: 날짜별 {label} 불일치 — {sorted(map(str, values))}")
+            if values:
+                missing_days = [n for n, row in rows if row.get(key) is None]
+                if missing_days:
+                    problems.append(f"숙소 {name}: {label} 누락 Day {missing_days}")
+
     return problems
 
 

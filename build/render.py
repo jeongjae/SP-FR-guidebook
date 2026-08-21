@@ -927,8 +927,13 @@ def build_region(r: Region, trip: Trip) -> str:
                            "확정 전 주소를 믿고 이동하지 않는다.", "stay"))
 
     # --- Transport --------------------------------------------------------
+    # 자유문자열 교통 요약은 그날의 주 숙박 거점에만 귀속한다. 이동일은
+    # 양쪽 Region.days 에 잡히므로 필터 없이 모으면 다음 거점의 시내 교통이
+    # 앞 지역에 섞인다. 도착·출발의 상세는 아래 Day 링크가 맡는다.
     modes = []
     for d in r.days:
+        if d.region != r.slug:
+            continue
         for t in d.transport:
             if t not in modes:
                 modes.append(t)
@@ -936,10 +941,10 @@ def build_region(r: Region, trip: Trip) -> str:
     arrive, leave = r.days[0], r.days[-1]
     parts.append(f"""<div class="prose">
 <ul>
-  <li><strong>도착</strong> — Day {arrive.n} · {esc(arrive.date_label)} · {esc(arrive.city)}</li>
-  <li><strong>출발</strong> — Day {leave.n} · {esc(leave.date_label)} · {esc(leave.city)}</li>
+  <li><strong>도착</strong> — <a href="{rel}/{arrive.url}">Day {arrive.n} · {esc(arrive.date_label)} · {esc(arrive.city)}</a></li>
+  <li><strong>출발</strong> — <a href="{rel}/{leave.url}">Day {leave.n} · {esc(leave.date_label)} · {esc(leave.city)}</a></li>
 </ul>
-{'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes[:10]) + '</ul>' if modes else ''}
+{'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes) + '</ul>' if modes else ''}
 </div>""")
 
     extra = [(k, LAYER_LABEL[k]) for k in ("role", "rhythm") if ed.get(k)]
