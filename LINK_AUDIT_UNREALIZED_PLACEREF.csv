@@ -1,0 +1,90 @@
+﻿day,stop_id,place_ref,stop_name,ref_exists,linked_by_build
+2,sant-pau,sant-pau-recinte-modernista,Recinte Modernista de Sant Pau,True,False
+2,la-paradeta-sagrada,la-paradeta-sagrada-familia,La Paradeta Sagrada Família 점심,True,False
+4,cau-ferrat-maricel,cau-ferrat,Cau Ferrat + Maricel,True,False
+5,collioure-lunch,collioure,Collioure 점심,True,False
+7,promenade,promenade-des-anglais,숙소 주변 산책 및 가벼운 저녁,True,False
+8,vieux-nice-lunch,vieux-nice,구시가지 점심 — 니스와즈 요리,True,False
+8,castle-hill,colline-du-chateau,Colline du Château,True,False
+8,promenade,promenade-des-anglais,Promenade des Anglais,True,False
+9,cannes-transfer,cannes,Antibes ➔ Cannes TER 이동,True,False
+9,cannes-station,cannes,Gare de Cannes ➔ Nice TER 탑승,True,False
+10,monaco-port-lunch,monaco,Monaco Port Hercule & 점심,True,False
+10,menton-dinner,menton,Menton 저녁 — Le Petit Port,True,False
+11,liberation-market,marche-de-la-liberation,Marché de la Libération,True,False
+11,villa-ephrussi,villa-ephrussi-de-rothschild,Villa Ephrussi de Rothschild & 정원,True,False
+11,villa-gardens-fountain,villa-ephrussi-de-rothschild,에프뤼시 분수 음악쇼 & 해안 귀환,True,False
+11,promenade-recovery,promenade-des-anglais,Promenade des Anglais 산책 & 숙소 휴식,True,False
+12,nice-station-pickup,nice-ville,Nice-Ville역 Hertz 렌터카 인수,True,False
+12,saint-paul,saint-paul-de-vence,Saint-Paul-de-Vence,True,False
+13,aix-lunch,vieil-aix,Vieil Aix 구시가지 점심 식사,True,False
+14,cassis-parking,cassis,Cassis 도착 & 주차,True,False
+14,cassis,chez-gilbert-cassis,Chez Gilbert 점심 (Cassis 항구),True,False
+14,cassis-port-miou,cassis,Port-Miou 해안 트레일 초입 산책,True,False
+15,fort-saint-jean,mucem,Fort Saint-Jean & Mucem (유럽지중해문명박물관),True,False
+15,marseille-lunch,vieux-port-marseille,Vieux-Port 마르세유 항구 점심,True,False
+15,marseille-station,marseille,Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승,True,False
+17,sentier-ocres,roussillon-sentier-des-ocres,Sentier des Ocres (오커 트레일),True,False
+17,roussillon,roussillon-sentier-des-ocres,Roussillon 구시가지 & 점심,True,False
+18,picnic,gordes,Gordes 시장 재료 피크닉 점심,True,False
+18,senanque,abbaye-de-senanque,Abbaye de Sénanque (세낭크 수도원 외관),True,False
+19,avignon-parking-lunch,les-halles,Les Halles d'Avignon 주변 점심,True,False
+19,teinturiers-walls,palais-des-papes,Rue des Teinturiers & 성벽 오리엔테이션,True,False
+19,avignon-return,fou-de-fafa-avignon,Fou de Fafa 아비뇽 첫 저녁,True,False
+20,palais,palais-des-papes,Palais des Papes (교황청 궁전),True,False
+20,palais-lunch,palais-des-papes,교황청 광장 비스트로 점심,True,False
+20,rocher-doms,rocher-des-doms,Rocher des Doms (돔 바위 정원),True,False
+20,pont,pont-saint-benezet,Pont Saint-Bénézet (아비뇽 다리),True,False
+20,avignon-return,les-cocottes-saint-louis,Les Cocottes Saint-Louis 저녁 식사,True,False
+21,uzes-lunch,uzes,Uzès Place aux Herbes 광장 테라스 점심,True,False
+22,arenes,arenes-d-arles,Arènes d'Arles (아를 원형경기장),True,False
+22,theatre,theatre-antique-arles,Théâtre Antique & 공화국 광장,True,False
+22,forum-lunch,le-gibolin-arles,Le Gibolin 점심 (아를 로케트 지구),True,False
+22,saint-trophime,cloitre-saint-trophime,Cloître Saint-Trophime (생트로핌 회랑),True,False
+23,ainay-walk,bellecour,Presqu'île (벨쿠르 광장 & 셀레스탱 극장),True,False
+23,lyon-return,cafe-comptoir-abel,Café Comptoir Abel 부숑 첫 저녁,True,False
+24,vieux-lyon-lunch,vieux-lyon,Vieux Lyon 구시가지 점심,True,False
+24,lyon-bouchon-dinner,daniel-et-denise,Daniel et Denise 정통 부숑 만찬,True,False
+25,croix-rousse-market,croix-rousse,Marché de la Croix-Rousse & 마을 산책,True,False
+25,maison-des-canuts,croix-rousse,Maison des Canuts — 자카르 직조기 실제 시연,True,False
+25,halles-gastronomy,halles-de-lyon-paul-bocuse,Halles Paul Bocuse 미식 점심,True,False
+25,halles-shopping,halles-de-lyon-paul-bocuse,폴 보퀴즈 시장 식재료 & 아티장 상점 탐방,True,False
+25,tete-dor,parc-de-la-tete-d-or,Parc de la Tête d'Or (황금머리 공원),True,False
+26,vieille-ville,annecy,Annecy Vieille Ville & Palais de l'Île,True,False
+26,savoy-lunch,chez-mamie-lise,Chez Mamie Lise 점심 (안시),True,False
+26,lakefront,annecy,Lac d'Annecy & Pont des Amours & 유럽 정원,True,False
+28,morning-routine,boulangerie-pichard,Boulangerie Pichard 아침 빵 조달 & 루틴,True,False
+28,grand-palais-cezanne,grand-palais,Grand Palais — 특별전 <Cézanne et nous>,True,False
+28,paris-return,cafe-du-commerce,Café du Commerce 15구 브라세리 첫 저녁,True,False
+29,morning-routine,marche-convention,Marché Convention 일요 노천시장 장보기,True,False
+29,luxembourg-warhol,musee-du-luxembourg,Musée du Luxembourg — 특별전 <Andy Warhol>,True,False
+29,jardin-luxembourg,latin-quarter,Jardin du Luxembourg & 메디시스 분수,True,False
+29,saint-germain,latin-quarter,Saint-Germain-des-Prés 지성미 도보,True,False
+29,notre-dame-compact,notre-dame-de-paris,Notre-Dame de Paris & 시테 섬 (컴팩트 외관 조망),True,False
+30,orangerie,musee-de-l-orangerie,Musée de l'Orangerie (오랑주리 미술관),True,False
+30,paris-return,bouillon-chartier-montparnasse,Bouillon Chartier Montparnasse 저녁,True,False
+31,morning-routine,boulangerie-pichard,Boulangerie Pichard 아침 빵 조달 & 숙소 생활,True,False
+31,gustave-moreau,musee-gustave-moreau,Musée Gustave Moreau (귀스타브 모로 미술관),True,False
+31,fashion-week-marais,le-marais,Paris Fashion Week 개막 분위기 & Le Marais,True,False
+32,paris-return,cafe-du-commerce,Café du Commerce 동네 저녁,True,False
+33,fashion-week-montaigne,grand-palais,Paris Fashion Week 서부 축 & Palais de Tokyo,True,False
+34,versailles-transfer,versailles,15구 숙소 출발 ➔ RER C ➔ 베르사유 이동,True,False
+34,versailles-palace,versailles,Château de Versailles (베르사유 궁전 본관),True,False
+34,versailles-lunch,versailles,베르사유 대운하 인근 점심 식사,True,False
+34,versailles-gardens,versailles,베르사유 프랑스식 대정원 & 분수 산책,True,False
+34,trianon-hamlet,versailles,Grand Trianon & Petit Trianon & 왕비의 촌락,True,False
+34,paris-return,le-grand-pan,Le Grand Pan 15구 비스트로 저녁,True,False
+35,morning-routine,boulangerie-pichard,Boulangerie Pichard 잠봉 뵈르 샌드위치 & 아침,True,False
+36,morning-routine,marche-convention,Marché Convention 토요 장보기 & 아침 루틴,True,False
+36,marmottan-monet,musee-marmottan-monet,Musée Marmottan Monet (마르모탕 모네 미술관),True,False
+38,morning-routine,boulangerie-pichard,Boulangerie Pichard 브런치 빵 조달 & 세탁,True,False
+38,jacquemart-andre,musee-jacquemart-andre,Musée Jacquemart-André (자크마르-앙드레 미술관),True,False
+39,musee-picasso,musee-picasso-paris,Musée Picasso Paris (국립 피카소 미술관),True,False
+39,marais-walk-carnavalet,le-marais,마레 지구 골목 산책 ➔ 카르나발레 이동,True,False
+39,place-des-vosges,le-marais,Place des Vosges (보주 광장 & 아치 회랑),True,False
+40,bourse-de-commerce,bourse-de-commerce-pinault-collection,Bourse de Commerce — Pinault Collection,True,False
+40,halles-lunch,montorgueil,레 알 / 몽토르게이 점심 식사,True,False
+40,vendanges-montmartre,montmartre-south-pigalle,Fête des Vendanges de Montmartre (포도축제 & 몽마르트르),True,False
+41,musee-art-moderne,musee-d-art-moderne-de-paris,Musée d'Art Moderne de Paris (MAM),True,False
+41,farewell-dinner,le-grand-pan,Le Grand Pan 파리 15박 고별 만찬,True,False
+42,farewell-lunch,cafe-du-commerce,Café du Commerce 15구 마지막 점심,True,False
