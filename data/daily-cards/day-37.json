@@ -78,7 +78,7 @@
     {
       "from": "prix-de-l-arc",
       "to": "paris-return",
-      "mode": "bus",
+      "mode": "metro",
       "duration": "셔틀버스 + 메트로 10호선 약 40분 (인파 완충)",
       "distance": "8.5km",
       "line": null,
