@@ -272,6 +272,11 @@
   if (schedDataEl) {
     try {
       var regions = JSON.parse(schedDataEl.textContent);
+      var regBySlug = {};
+      for (var k = 0; k < regions.length; k++) {
+        regBySlug[regions[k].slug] = regions[k];
+      }
+
       var now3 = new Date();
       var iso3 = now3.getFullYear() + '-'
         + String(now3.getMonth() + 1).padStart(2, '0') + '-'
@@ -297,25 +302,40 @@
         }
       }
 
-      if (curReg) {
+      function updateActiveTab(slug, titlePrefix) {
         var tbTitle = document.querySelector('.topbar .tb-title');
-        if (tbTitle) {
-          if (isPreTrip) {
-            tbTitle.textContent = 'NEXT · ' + curReg.name;
-          } else if (isPostTrip) {
-            tbTitle.textContent = 'Trip Complete · ' + curReg.name;
+        var reg = regBySlug[slug];
+        if (tbTitle && reg) {
+          if (titlePrefix) {
+            tbTitle.textContent = titlePrefix + ' · ' + reg.name;
           } else {
-            tbTitle.textContent = curReg.name;
+            tbTitle.textContent = reg.name;
           }
         }
-
-        var tabLink = document.querySelector('.tabs a[href="#' + curReg.slug + '"]');
-        if (tabLink) {
-          tabLink.setAttribute('aria-current', 'page');
-          setTimeout(function () {
-            tabLink.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
-          }, 150);
+        var allTabs = document.querySelectorAll('.tabs a[href^="#"]');
+        for (var i = 0; i < allTabs.length; i++) {
+          allTabs[i].removeAttribute('aria-current');
         }
+        var targetTab = document.querySelector('.tabs a[href="#' + slug + '"]');
+        if (targetTab) {
+          targetTab.setAttribute('aria-current', 'page');
+          setTimeout(function () {
+            targetTab.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+          }, 100);
+        }
+      }
+
+      if (curReg) {
+        var prefix = isPreTrip ? 'NEXT' : (isPostTrip ? 'Trip Complete' : '');
+        updateActiveTab(curReg.slug, prefix);
+      }
+
+      var tabLinks = document.querySelectorAll('.tabs a[href^="#"]');
+      for (var tIdx = 0; tIdx < tabLinks.length; tIdx++) {
+        tabLinks[tIdx].addEventListener('click', function () {
+          var targetSlug = this.getAttribute('href').replace('#', '');
+          updateActiveTab(targetSlug, '');
+        });
       }
     } catch (err) {
       /* fallback gracefully */
