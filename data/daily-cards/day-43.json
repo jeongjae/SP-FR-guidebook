@@ -13,8 +13,8 @@
   "fatigue": "3",
   "hotel": {
     "name": "기내 (OZ502) — 숙소 없음",
-    "lat": 49.0068908,
-    "lng": 2.571082,
+    "lat": null,
+    "lng": null,
     "status": "needs-review"
   },
   "stops": [

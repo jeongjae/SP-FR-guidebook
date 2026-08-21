@@ -15,7 +15,8 @@
     "name": "Occidental Barcelona 1929",
     "lat": 41.3752738,
     "lng": 2.1476619,
-    "status": "confirmed"
+    "status": "confirmed",
+    "address": "Carrer de la Creu Coberta 20-22, Sants-Montjuïc, 08014 Barcelona, Spain"
   },
   "stops": [
     {
