@@ -783,6 +783,28 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   border-radius: var(--r-sm);
   background: var(--surface-2);
 }
+/* 사진 없는 자리. 이미지와 **같은 크기**여야 그리드가 무너지지 않는다 —
+   빈 문자열을 두면 84px 열이 남은 채 글자가 그 안으로 밀려 들어간다. */
+.thumb-empty {
+  display: grid;
+  place-items: center;
+  background: var(--surface-2);
+  border-radius: var(--r-sm);
+  color: var(--muted);
+}
+.thumb-empty .ic { width: 22px; height: 22px; }
+.place-card .thumb-empty {
+  width: 84px;
+  aspect-ratio: var(--ratio-thumb);
+  flex: 0 0 84px;
+}
+.place-card-lg .thumb-empty {
+  width: 100%;
+  aspect-ratio: var(--ratio-card);
+  border-radius: 0;
+}
+.place-card-lg .thumb-empty .ic { width: 34px; height: 34px; }
+
 .place-card .card-title { font-size: var(--t-body); }
 .place-card .card-dek {
   display: -webkit-box;
