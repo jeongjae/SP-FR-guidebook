@@ -260,17 +260,17 @@
     "lyon": {
       "recommendation": {
         "title": "TCL은 같은 비접촉 카드로 두 사람 검증 — 1시간 환승·일일 상한 자동 적용",
-        "summary": "Day 24·25는 Zone 1·2 안에서 Metro·tram·bus·F2를 이용한다. 별도 패스를 미리 사지 않고 한 비접촉 카드로 두 사람을 매번 검증하면 1인당 1회 €2.10, 하루 3회 초과 시 €6.90 상한이 자동 적용된다."
+        "summary": "Day 24·25는 Zone 1·2 안에서 Metro·bus·F2를 이용한다. 별도 패스를 미리 사지 않고 한 비접촉 카드로 두 사람을 매번 검증하면 1인당 1회 €2.10, 하루 3회 초과 시 €7.10 상한이 자동 적용된다(2026-09-01 개정 요금표 기준·출발 전 재확인)."
       },
       "products": [
-        {"name": "TCL 비접촉 결제 Zone 1·2", "price": "1인 1시간 €2.10 · 일일 상한 €6.90", "shared": true, "accessNote": "한 카드로 최대 5명", "fit": "두 사람의 Day 24·25 시내 이동 기본안"},
-        {"name": "TCL Pass 24h Zone 1·2", "price": "1인 €6.90", "shared": false, "accessNote": "첫 검증부터 24시간", "fit": "비접촉 일일 상한과 같은 금액이므로 이번 일정은 선구매하지 않음"},
-        {"name": "Lyon↔Annecy TER", "price": "일반 편도 €32.30 · 결제 전 실제 할인 확인", "shared": false, "accessNote": "TCL과 별도", "fit": "Day 26 왕복; 직행편 우선"}
+        {"name": "TCL 비접촉 결제 Zone 1·2", "price": "1인 1시간 €2.10 · 일일 상한 €7.10", "shared": true, "accessNote": "한 카드로 최대 5명", "fit": "두 사람의 Day 24·25 시내 이동 기본안; 2026-09-01 개정 요금 재확인"},
+        {"name": "TCL Pass 24h Zone 1·2", "price": "1인 €7.10", "shared": false, "accessNote": "첫 검증부터 24시간", "fit": "비접촉 일일 상한과 같은 금액이므로 이번 일정은 선구매하지 않음"},
+        {"name": "Lyon↔Annecy TER", "price": "일반 편도 €32.30 · 결제 전 실제 할인 확인", "shared": false, "accessNote": "TCL과 별도", "fit": "Day 26 왕복; 하루 12편 중 직행 3편이므로 직행편 우선"}
       ],
       "howToUse": [
         "첫 승차에서 비접촉 카드나 휴대전화를 빨간 검증기에 댄다. 두 사람이면 10초 안에 같은 매체를 한 번 더 대 ‘Voyageur 2 ajouté’를 확인한다.",
         "환승할 때도 두 사람 수만큼 다시 검증한다. 첫 검증부터 1시간 안이면 추가 차감 없이 Metro·tram·bus·funicular를 갈아탈 수 있다.",
-        "실물 카드와 그 카드가 등록된 휴대전화는 서로 다른 결제 매체로 처리된다. 하루 동안 하나만 정해 계속 사용한다.",
+        "실물 카드와 그 카드가 등록된 휴대전화는 서로 다른 결제 매체로 처리된다. 하루 동안 하나만 정해 계속 사용한다. 매체를 섞으면 출구에서 €20가 부과될 수 있다.",
         "Day 24 Vieux Lyon→Fourvière TCL F2도 Zone 1·2 비접촉 결제에 포함된다. 별도 푸니쿨라 표를 사지 않는다."
       ],
       "exceptions": [
@@ -281,16 +281,16 @@
       ],
       "itineraryUses": [
         {"day": 23, "label": "Part-Dieu→숙소는 짐 때문에 택시; 가벼운 시내 이동부터 TCL"},
-        {"day": 24, "label": "Metro D·F2·tram을 같은 비접촉 카드로 두 사람 검증"},
+        {"day": 24, "label": "Metro D·F2를 같은 비접촉 카드로 두 사람 검증"},
         {"day": 25, "label": "Metro C·B·D와 C13 bus를 같은 매체로 검증; 일일 상한 적용"},
         {"day": 26, "label": "Lyon Part-Dieu↔Annecy는 별도 TER, 현지는 도보"},
         {"day": 27, "label": "숙소→Part-Dieu는 택시, 이후 확정 TGV로 Paris 이동"}
       ],
       "sources": [
-        {"label": "TCL 비접촉 결제·공동 검증·일일 상한", "url": "https://www.tcl.fr/titres-et-tarifs/les-supports-des-titres-de-transports/tcl-carte-bancaire", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
-        {"label": "TCL Zone 1·2 1회권 공식 요금", "url": "https://www.tcl.fr/titres-et-tarifs/tous-les-titres-et-abonnements/1-voyage?trip-zone=433", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
-        {"label": "TCL F2 공식 노선·시간표", "url": "https://www.tcl.fr/lignes/funiculaire-f2", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
-        {"label": "SNCF TER Lyon–Annecy 공식 운임·운행 안내", "url": "https://www.ter.sncf.com/auvergne-rhone-alpes/trajet-lyon-annecy", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"}
+        {"label": "TCL 비접촉 결제·공동 검증·일일 상한", "url": "https://www.tcl.fr/titres-et-tarifs/les-supports-des-titres-de-transports/tcl-carte-bancaire", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"},
+        {"label": "TCL Zone 1·2 1회권 공식 요금", "url": "https://www.tcl.fr/titres-et-tarifs/tous-les-titres-et-abonnements/1-voyage?trip-zone=433", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"},
+        {"label": "TCL F2 공식 노선·시간표", "url": "https://www.tcl.fr/lignes/funiculaire-f2", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"},
+        {"label": "SNCF TER Lyon–Annecy 공식 운임·운행 안내", "url": "https://www.ter.sncf.com/auvergne-rhone-alpes/trajet-lyon-annecy", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"}
       ]
     },
     "paris": {
