@@ -2533,7 +2533,6 @@ guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PAS
 guide/luberon.html,HTML,INTERNAL_PAGE,../places/gordes.html,places/gordes.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,INTERNAL_PAGE,../places/les-halles.html,places/les-halles.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,INTERNAL_PAGE,../places/fou-de-fafa-avignon.html,places/fou-de-fafa-avignon.html,PASS,NONE,Valid internal link
-guide/luberon.html,HTML,INTERNAL_PAGE,../places/bonnieux.html,places/bonnieux.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,INTERNAL_PAGE,../places/fou-de-fafa-avignon.html,places/fou-de-fafa-avignon.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,INTERNAL_PAGE,../places/les-cocottes-saint-louis.html,places/les-cocottes-saint-louis.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,EXTERNAL,https://www.google.com/maps/search/?api=1&amp;query=Domaine%20des%20Peyre%2C%20Robion,https://www.google.com/maps/search/?api=1&amp;query=Domaine%20des%20Peyre%2C%20Robion,PASS,NONE,External link valid syntax
@@ -2773,8 +2772,9 @@ guide/paris.html,HTML,INTERNAL_PAGE,../daily/day-41.html,daily/day-41.html,PASS,
 guide/paris.html,HTML,INTERNAL_PAGE,../daily/day-42.html,daily/day-42.html,PASS,NONE,Valid internal link
 guide/paris.html,HTML,INTERNAL_PAGE,../places/cafe-du-commerce.html,places/cafe-du-commerce.html,PASS,NONE,Valid internal link
 guide/paris.html,HTML,INTERNAL_PAGE,../places/bouillon-chartier-montparnasse.html,places/bouillon-chartier-montparnasse.html,PASS,NONE,Valid internal link
-guide/paris.html,HTML,INTERNAL_PAGE,../places/cafe-du-commerce.html,places/cafe-du-commerce.html,PASS,NONE,Valid internal link
 guide/paris.html,HTML,INTERNAL_PAGE,../places/versailles.html,places/versailles.html,PASS,NONE,Valid internal link
+guide/paris.html,HTML,INTERNAL_PAGE,../places/le-grand-pan.html,places/le-grand-pan.html,PASS,NONE,Valid internal link
+guide/paris.html,HTML,INTERNAL_PAGE,../places/montorgueil.html,places/montorgueil.html,PASS,NONE,Valid internal link
 guide/paris.html,HTML,EXTERNAL,https://www.google.com/maps/search/?api=1&amp;query=78%20Rue%20de%20Lourmel%2C%2075015%20Paris%2C%20%C3%8Ele-de-France%2C%20France,https://www.google.com/maps/search/?api=1&amp;query=78%20Rue%20de%20Lourmel%2C%2075015%20Paris%2C%20%C3%8Ele-de-France%2C%20France,PASS,NONE,External link valid syntax
 guide/paris.html,HTML,INTERNAL_PAGE,../daily/day-27.html,daily/day-27.html,PASS,NONE,Valid internal link
 guide/paris.html,HTML,INTERNAL_PAGE,../daily/day-42.html,daily/day-42.html,PASS,NONE,Valid internal link
