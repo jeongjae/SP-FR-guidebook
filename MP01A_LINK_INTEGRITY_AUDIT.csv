@@ -2343,6 +2343,18 @@ guide/avignon.html,HTML,INTERNAL_PAGE,../places/cafe-comptoir-abel.html,places/c
 guide/avignon.html,HTML,EXTERNAL,"https://www.google.com/maps/search/?api=1&amp;query=43.94993,4.81302","https://www.google.com/maps/search/?api=1&amp;query=43.94993,4.81302",PASS,NONE,External link valid syntax
 guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PASS,NONE,Valid internal link
 guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-23.html,daily/day-23.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-23.html,daily/day-23.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-20.html,daily/day-20.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-21.html,daily/day-21.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-22.html,daily/day-22.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,INTERNAL_PAGE,../daily/day-23.html,daily/day-23.html,PASS,NONE,Valid internal link
+guide/avignon.html,HTML,EXTERNAL,https://www.orizo.fr/tarifs/,https://www.orizo.fr/tarifs/,PASS,NONE,External link valid syntax
+guide/avignon.html,HTML,EXTERNAL,https://www.orizo.fr/plan-du-reseau-2026-2027/,https://www.orizo.fr/plan-du-reseau-2026-2027/,PASS,NONE,External link valid syntax
+guide/avignon.html,HTML,EXTERNAL,https://www.orizo.fr/parking-relais/,https://www.orizo.fr/parking-relais/,PASS,NONE,External link valid syntax
+guide/avignon.html,HTML,EXTERNAL,https://www.lio-occitanie.fr/horaires-et-plans/,https://www.lio-occitanie.fr/horaires-et-plans/,PASS,NONE,External link valid syntax
+guide/avignon.html,HTML,EXTERNAL,https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/trajet-avignon-arles,https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/trajet-avignon-arles,PASS,NONE,External link valid syntax
 guide/avignon.html,HTML,EXTERNAL,https://www.orizo.fr/plan-du-reseau-2026-2027/,https://www.orizo.fr/plan-du-reseau-2026-2027/,PASS,NONE,External link valid syntax
 guide/avignon.html,HTML,INTERNAL_PAGE,../about/credits.html,about/credits.html,PASS,NONE,Valid internal link
 guide/avignon.html,HTML,INTERNAL_PAGE,../index.html,index.html,PASS,NONE,Valid internal link
@@ -2572,6 +2584,15 @@ guide/luberon.html,HTML,INTERNAL_PAGE,../places/les-cocottes-saint-louis.html,pl
 guide/luberon.html,HTML,EXTERNAL,https://www.google.com/maps/search/?api=1&amp;query=Domaine%20des%20Peyre%2C%20Robion,https://www.google.com/maps/search/?api=1&amp;query=Domaine%20des%20Peyre%2C%20Robion,PASS,NONE,External link valid syntax
 guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-16.html,daily/day-16.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-16.html,daily/day-16.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-16.html,daily/day-16.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-17.html,daily/day-17.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-18.html,daily/day-18.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,INTERNAL_PAGE,../daily/day-19.html,daily/day-19.html,PASS,NONE,Valid internal link
+guide/luberon.html,HTML,EXTERNAL,https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse,https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse,PASS,NONE,External link valid syntax
+guide/luberon.html,HTML,EXTERNAL,https://www.luberon-apt.fr/horaires-des-lignes-de-bus,https://www.luberon-apt.fr/horaires-des-lignes-de-bus,PASS,NONE,External link valid syntax
+guide/luberon.html,HTML,EXTERNAL,https://www.luberon-apt.fr/se-deplacer-sans-voiture,https://www.luberon-apt.fr/se-deplacer-sans-voiture,PASS,NONE,External link valid syntax
 guide/luberon.html,HTML,EXTERNAL,https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse,https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse,PASS,NONE,External link valid syntax
 guide/luberon.html,HTML,INTERNAL_PAGE,../about/credits.html,about/credits.html,PASS,NONE,Valid internal link
 guide/luberon.html,HTML,INTERNAL_PAGE,../index.html,index.html,PASS,NONE,Valid internal link
