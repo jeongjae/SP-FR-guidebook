@@ -1,7 +1,7 @@
 /* 2026 유럽 여행 가이드북 Service Worker — build.py가 버전을 삽입한다. */
 "use strict";
 
-const VERSION = "24611d15219651921011b471c280a1f7af9673fd5daad773d2d596b9edb8a977";
+const VERSION = "4d6714288456f8a4df1aeb3c2de4c960fafbdbd440044e8f87ec82e564fd7578";
 const CACHE_PREFIX = "sp-fr-guidebook-";
 const CORE_CACHE = CACHE_PREFIX + "core-" + VERSION;
 const FULL_CACHE = CACHE_PREFIX + "full-" + VERSION;
