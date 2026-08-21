@@ -36,8 +36,7 @@ aix,시장 조달·카페Weibel,DISH_LIST_ITEM,patisserie-weibel,CAFE,../places/
 aix,19:30 Coucou 또는 La Brocherie,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 aix,Cassis 항구생선 식당,DISH_LIST_ITEM,cassis,spot,../places/cassis.html,../places/cassis.html,PASS_LINKED
 aix,카시스 화이트와인 — 원산지 현지 확인,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-aix,토요시장 피크닉,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-aix,19:45 마지막 저녁 (예약 1곳),DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
+aix,Vieux-Port에서 생선·해산물 점심,DISH_LIST_ITEM,vieux-port-marseille,spot,../places/vieux-port-marseille.html,../places/vieux-port-marseille.html,PASS_LINKED
 aix,Coustellet 시장 점심,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 aix,농가 첫 저녁 (테라스),DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 luberon,Gordes 시장 재료 피크닉 점심,FOOD_CARD,gordes,spot,../places/gordes.html,../places/gordes.html,PASS_LINKED

@@ -7,7 +7,7 @@
 - **Baseline**: `EX-15 PASS / CONTENT FROZEN / TRIP READY TO EXECUTE`
 - **Scope**: 43 Days / 42 Nights / 8 Bases / 134 Canonical Places / 66 Meal Slots / 8 Regional Chapters / Full Generated HTML (369 Pages)
 - **Privacy Leak**: 0 leaks detected
-- **Overall Link Status**: 9019 links audited, 0 broken links
+- **Overall Link Status**: 9029 links audited, 0 broken links
 - **Entity Completeness**: 134 places/entities audited, 0 incomplete
 - **43-Day Date & Weekday Alignment**: 43/43 Valid (2026-08-29(토) ~ 2026-10-10(토))
 
@@ -15,11 +15,11 @@
 
 ## 1. Link Integrity Audit (MP-01A)
 
-- **Total Links Audited**: 9019
-  - Internal Page Links: 4442
+- **Total Links Audited**: 9029
+  - Internal Page Links: 4448
   - Internal Anchor Links: 112
   - Self Anchors: 264
-  - External Links: 1641
+  - External Links: 1645
   - Assets (Images/Scripts/CSS): 2560
 - **Broken Internal Links**: 0
 - **Wrong Internal Targets**: 0

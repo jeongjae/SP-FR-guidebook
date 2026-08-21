@@ -2211,9 +2211,19 @@ guide/aix.html,HTML,INTERNAL_PAGE,../places/vieux-port-marseille.html,places/vie
 guide/aix.html,HTML,INTERNAL_PAGE,../places/grasse.html,places/grasse.html,PASS,NONE,Valid internal link
 guide/aix.html,HTML,INTERNAL_PAGE,../places/patisserie-weibel.html,places/patisserie-weibel.html,PASS,NONE,Valid internal link
 guide/aix.html,HTML,INTERNAL_PAGE,../places/cassis.html,places/cassis.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,INTERNAL_PAGE,../places/vieux-port-marseille.html,places/vieux-port-marseille.html,PASS,NONE,Valid internal link
 guide/aix.html,HTML,EXTERNAL,https://www.google.com/maps/search/?api=1&amp;query=2%20Place%20Coimbra%2C%20R%C3%A9sidence%20Les%20Toits%20de%20M%C3%A9janes%2C%20entr%C3%A9e%20A%2C%206e%20%C3%A9tage%2C%2013090%20Aix-en-Provence%2C%20France,https://www.google.com/maps/search/?api=1&amp;query=2%20Place%20Coimbra%2C%20R%C3%A9sidence%20Les%20Toits%20de%20M%C3%A9janes%2C%20entr%C3%A9e%20A%2C%206e%20%C3%A9tage%2C%2013090%20Aix-en-Provence%2C%20France,PASS,NONE,External link valid syntax
 guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-12.html,daily/day-12.html,PASS,NONE,Valid internal link
 guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-16.html,daily/day-16.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-12.html,daily/day-12.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-13.html,daily/day-13.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-14.html,daily/day-14.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-15.html,daily/day-15.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,INTERNAL_PAGE,../daily/day-16.html,daily/day-16.html,PASS,NONE,Valid internal link
+guide/aix.html,HTML,EXTERNAL,https://aixenbus.fr/fr/gd5-Le-paiement-sans-contact.html,https://aixenbus.fr/fr/gd5-Le-paiement-sans-contact.html,PASS,NONE,External link valid syntax
+guide/aix.html,HTML,EXTERNAL,https://aixenbus.fr/fr/Pjb-Conseils-pour-bien-voyager.html,https://aixenbus.fr/fr/Pjb-Conseils-pour-bien-voyager.html,PASS,NONE,External link valid syntax
+guide/aix.html,HTML,EXTERNAL,https://www.rtm.fr/actualites/validation-par-carte-bancaire,https://www.rtm.fr/actualites/validation-par-carte-bancaire,PASS,NONE,External link valid syntax
+guide/aix.html,HTML,EXTERNAL,https://www.lametropolemobilite.fr/plans-et-horaires/,https://www.lametropolemobilite.fr/plans-et-horaires/,PASS,NONE,External link valid syntax
 guide/aix.html,HTML,EXTERNAL,https://aixenbus.fr/fr/kQ8-Plans-des-lignes.html,https://aixenbus.fr/fr/kQ8-Plans-des-lignes.html,PASS,NONE,External link valid syntax
 guide/aix.html,HTML,INTERNAL_PAGE,../about/credits.html,about/credits.html,PASS,NONE,Valid internal link
 guide/aix.html,HTML,INTERNAL_PAGE,../index.html,index.html,PASS,NONE,Valid internal link

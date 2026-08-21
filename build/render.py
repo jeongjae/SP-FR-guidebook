@@ -1108,11 +1108,11 @@ def build_region(r: Region, trip: Trip) -> str:
         parts.append('<div class="grid grid-2">'
                      f'<article class="card"><div class="card-body"><h3>도착</h3>'
                      f'<p>{esc(essentials["arrivalStrategy"])}</p>'
-                     f'<a class="btn btn-secondary" href="{rel}/{arrive.url}">Day {arrive.n} 실행 보기</a>'
+                     f'<a class="btn btn-secondary" href="{rel}/{arrive.url}">{esc(arrive.date_label)} · Day {arrive.n} 실행 보기</a>'
                      '</div></article>'
                      f'<article class="card"><div class="card-body"><h3>출발</h3>'
                      f'<p>{esc(essentials["departureStrategy"])}</p>'
-                     f'<a class="btn btn-secondary" href="{rel}/{leave.url}">Day {leave.n} 실행 보기</a>'
+                     f'<a class="btn btn-secondary" href="{rel}/{leave.url}">{esc(leave.date_label)} · Day {leave.n} 실행 보기</a>'
                      '</div></article></div>')
 
     transit = r.transit
@@ -1145,7 +1145,7 @@ def build_region(r: Region, trip: Trip) -> str:
             day_by_number = {day.n: day for day in trip.days}
             parts.append('<div class="prose"><h3>이 일정에서 쓰는 교통</h3><ul>'
                          + "".join(
-                             f'<li><a href="{rel}/{day_by_number[x["day"]].url}">Day {x["day"]}</a> — {esc(x["label"])}</li>'
+                             f'<li><a href="{rel}/{day_by_number[x["day"]].url}">{esc(day_by_number[x["day"]].date_label)} · Day {x["day"]}</a> — {esc(x["label"])}</li>'
                              for x in uses) + '</ul></div>')
 
         sources = transit.get("sources") or []
