@@ -101,9 +101,18 @@ def build_graph(pages, redirects):
     return folded, edges, external, broken
 
 
-def place_refs():
-    """daily-card 의 place_ref 전수. 빌드는 stop.id 만 보고 이 필드를 읽지 않는다."""
+def place_refs(trip):
+    """daily-card 의 place_ref 전수. 실제로 링크가 렌더됐는지 모델로 확인한다.
+
+    문자열 비교(ref == stop.id)로 판정하면 안 된다 — 그건 예전 렌더러의
+    한계였을 뿐 참조의 정합성이 아니다. 모델이 그 stop 을 장소에 이었는지가
+    유일한 판정 기준이다.
+    """
     slugs = {p.stem for p in (ROOT / "source/CURRENT/30_Places").glob("*.md")}
+    resolved = {
+        (day.n, stop.id): (stop.place.slug if stop.place else None)
+        for day in trip.days for stop in day.stops
+    }
     rows = []
     for path in sorted((ROOT / "data/daily-cards").glob("day-*.json")):
         card = json.loads(path.read_text(encoding="utf-8"))
@@ -111,13 +120,15 @@ def place_refs():
             ref = stop.get("place_ref")
             if not ref:
                 continue
+            got = resolved.get((card["day"], stop.get("id")))
             rows.append({
                 "day": card["day"],
                 "stop_id": stop.get("id", ""),
                 "place_ref": ref,
                 "stop_name": stop.get("name", ""),
                 "ref_exists": ref in slugs,
-                "linked_by_build": ref == stop.get("id"),
+                "linked_by_build": got == ref,
+                "resolved_to": got or "",
             })
     return rows
 
@@ -216,7 +227,7 @@ def main() -> int:
         })
 
     # B. 미실현 place_ref
-    refs = place_refs()
+    refs = place_refs(trip)
     unrealized = [r for r in refs if not r["linked_by_build"]]
 
     # C. 링크 가시성
@@ -227,14 +238,20 @@ def main() -> int:
     ]
 
     # D. 가이드가 상한 때문에 빠뜨린 필수 장소
+    # 지역 페이지 어디에도 나오지 않는 필수 장소만 결함이다. '놓치지 말 것'
+    # 상한을 넘겼더라도 '그 밖의 장소'에 실리면 독자는 닿을 수 있다.
     dropped = []
     for region in trip.regions:
-        essential = [p for p in region.essential_places if p.summary]
-        for place in essential[6:]:
+        page = pages.get(f"guide/{region.slug}.html", "")
+        for place in region.essential_places:
+            if not place.summary:
+                continue
+            if f"places/{place.slug}.html" in page:
+                continue
             dropped.append({
                 "region": region.slug, "slug": place.slug, "name": place.name,
                 "grade": str(place.grade),
-                "reason": "guide 'Don't Miss' 상한 6개 초과 · grade=essential 이라 '그 밖의 장소'에서도 제외",
+                "reason": "지역 가이드 페이지에서 링크되지 않음",
             })
 
     # E. 외부 링크
@@ -255,7 +272,7 @@ def main() -> int:
     write_csv(out / "LINK_AUDIT_ORPHAN_PLACES.csv",
               ["page", "slug", "region", "grade", "kind", "linked_days", "has_summary"], orphans)
     write_csv(out / "LINK_AUDIT_UNREALIZED_PLACEREF.csv",
-              ["day", "stop_id", "place_ref", "stop_name", "ref_exists", "linked_by_build"], unrealized)
+              ["day", "stop_id", "place_ref", "stop_name", "ref_exists", "linked_by_build", "resolved_to"], unrealized)
     write_csv(out / "LINK_AUDIT_INVISIBLE_LINKS.csv",
               ["page", "text", "cls", "href", "decoration", "color", "parent_color", "in_card"], invisible)
     write_csv(out / "LINK_AUDIT_GUIDE_DROPPED_ESSENTIAL.csv",

@@ -1,63 +1,12 @@
 ﻿page,text,cls,href,decoration,color,parent_color,in_card
-daily/day-02.html,Sagrada Família,,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-02.html,Bodega Joan 저녁,,../places/bodega-joan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-03.html,Mercat de la Concepció 아침 장보기,,../places/mercat-concepcio.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-03.html,고딕지구 핵심 산책,,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-03.html,Biblioteca de Catalunya,,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-03.html,Bar Cañete 점심,,../places/bar-canete.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-03.html,MACBA,,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-04.html,Barcelona Sants,,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-04.html,La Zorra 점심 (시체스),,../places/la-zorra.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-05.html,Collioure,,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-06.html,Pals,,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-06.html,Peratallada,,../places/peratallada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-08.html,Cours Saleya 시장,,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-08.html,Vieux Nice 구시가지,,../places/vieux-nice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-09.html,Nice-Ville역 출발 ➔ Antibes 이동,,../places/nice-ville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-09.html,Le Figuier de Saint-Esprit 점심 (WISH-01),,../places/le-figuier-de-saint-esprit.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-09.html,Le Suquet & 구시가지 언덕,,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-10.html,Nice-Ville역 출발 ➔ Villefranche 이동,,../places/nice-ville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-10.html,Le Rocher / Monaco-Ville,,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-10.html,Menton 구시가지 & 사블레트 해변,,../places/menton.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-11.html,Restaurant & Salon de Thé Béatrice 점심 (WISH-02),,../places/restaurant-beatrice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-12.html,Grasse 점심 & Fragonard 역사공장,,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-12.html,Place de la Rotonde & Cours Mirabeau 첫 산책,,../places/rotonde.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-13.html,Place Richelme 목요 시장 & Pâtisserie Weibel,,../places/place-richelme-place-des-precheurs.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-13.html,Vieil Aix 구시가지 & 세잔의 흔적,,../places/vieil-aix.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-13.html,Atelier des Lauves (세잔의 아틀리에),,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-13.html,Musée Granet (그라네 미술관),,../places/musee-granet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-13.html,Cours Mirabeau & 마자랭 지구 산책,,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-14.html,Calanques 국립공원 유람선 투어,,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-14.html,Chez Gilbert 점심 (Cassis 항구),,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-15.html,Vieux-Port (마르세유 구항구),,../places/vieux-port-marseille.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-15.html,Le Panier (르 파니에 역사 골목),,../places/le-panier.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-15.html,Fort Saint-Jean & Mucem (유럽지중해문명박물관),,../places/fort-saint-jean.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-15.html,Notre-Dame de la Garde (노트르담 드 라 가르드),,../places/notre-dame-de-la-garde.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-16.html,Lourmarin 마을 & 르네상스 샤토 외관,,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-16.html,Marché Paysan de Coustellet & 장보기,,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-16.html,Goult 체크인 전 완충 & 카페,,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-17.html,Goult 조용한 생활마을 & 풍차 언덕,,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-18.html,Gordes 화요 대형 시장 & 벨베데레 전망,,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-18.html,Village des Bories (돌의 문화),,../places/village-des-bories.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-18.html,Ménerbes (한적한 언덕마을 산책),,../places/menerbes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-20.html,Les Halles d'Avignon 아침 시장,,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-21.html,Uzès 구시가지 & 에르브 광장,,../places/uzes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-21.html,Pont du Gard (퐁 뒤 가르 수로교),,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-22.html,La Roquette 구시가지 & 론 강변,,../places/la-roquette.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-24.html,Basilique Notre-Dame de Fourvière & 로마극장,,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-24.html,Vieux Lyon & Traboules (비외 리옹 & 트라불),,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-32.html,Musée d'Orsay (오르세 미술관 3.5시간 집중 관람),,../places/musee-d-orsay.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-32.html,Musée Rodin & 조각 정원 (로댕 미술관),,../places/musee-rodin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-33.html,Petit Palais (프티 팔레 파리 시립미술관),,../places/petit-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-35.html,Musée du Louvre (루브르 박물관 4시간 집중 관람),,../places/musee-du-louvre.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-39.html,Musée Carnavalet (카르나발레 파리 역사박물관),,../places/musee-carnavalet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
-daily/day-41.html,Musée Guimet (국립 기메 동양박물관),,../places/musee-guimet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",False
 guide/aix.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,시장 — Place Richelme · Place des Prêcheurs,card-link,../places/place-richelme-place-des-precheurs.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Vieil Aix — 구시가지,card-link,../places/vieil-aix.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Pâtisserie Weibel,card-link,../places/patisserie-weibel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Chez Gilbert,card-link,../places/chez-gilbert-cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/aix.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
@@ -77,6 +26,12 @@ guide/avignon.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.h
 guide/avignon.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/avignon.html,Rocher des Doms,card-link,../places/rocher-des-doms.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/avignon.html,Uzès Place aux Herbes·구시가지,card-link,../places/uzes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Arles,card-link,../places/arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Arènes d’Arles,card-link,../places/arenes-d-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Théâtre antique,card-link,../places/theatre-antique-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Fou de Fafa,card-link,../places/fou-de-fafa-avignon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Les Cocottes Saint-Louis,card-link,../places/les-cocottes-saint-louis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Le Gibolin,card-link,../places/le-gibolin-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/avignon.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/avignon.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/avignon.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
@@ -92,6 +47,7 @@ guide/barcelona.html,Sagrada Família,card-link,../places/sagrada-familia.html,n
 guide/barcelona.html,Sant Pau Recinte Modernista,card-link,../places/sant-pau-recinte-modernista.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/barcelona.html,Bodega Joan,card-link,../places/bodega-joan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/barcelona.html,La Paradeta Sagrada Família,card-link,../places/la-paradeta-sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Bar Cañete,card-link,../places/bar-canete.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/barcelona.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/barcelona.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/barcelona.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
@@ -103,6 +59,7 @@ guide/girona.html,Girona Cathedral,card-link,../places/girona-cathedral.html,non
 guide/girona.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/girona.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/girona.html,Peratallada,card-link,../places/peratallada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Casa Marieta,card-link,../places/casa-marieta.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/girona.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/girona.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/girona.html,Mercat del Lleó,card-link,../places/mercat-del-lleo.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
@@ -131,6 +88,8 @@ guide/lyon.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 
 guide/lyon.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/lyon.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/lyon.html,Café Comptoir Abel,card-link,../places/cafe-comptoir-abel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Daniel et Denise,card-link,../places/daniel-et-denise.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Chez Mamie Lise,card-link,../places/chez-mamie-lise.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/lyon.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/lyon.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/nice.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
@@ -139,6 +98,13 @@ guide/nice.html,Le Rocher — 모나코 구시가지,card-link,../places/le-roch
 guide/nice.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/nice.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/nice.html,Menton (멘통),card-link,../places/menton.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Nice Old Town–Castle Hill Walk,card-link,../places/nice-walk.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Cannes Forville–Suquet–Croisette Walk,card-link,../places/cannes-walk.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Monaco Rocher–Port–Monte Carlo Walk,card-link,../places/monaco-walk.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Promenade des Anglais,card-link,../places/promenade-des-anglais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Vieux Nice — 구시가지,card-link,../places/vieux-nice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Le Figuier de Saint-Esprit,card-link,../places/le-figuier-de-saint-esprit.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Restaurant & Salon de Thé Béatrice,card-link,../places/restaurant-beatrice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/nice.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/nice.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/nice.html,Monaco,card-link,../places/monaco.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
@@ -149,6 +115,25 @@ guide/paris.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(
 guide/paris.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/paris.html,Montmartre · South Pigalle,card-link,../places/montmartre-south-pigalle.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/paris.html,Musée Carnavalet,card-link,../places/musee-carnavalet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée d'Art Moderne de Paris,card-link,../places/musee-d-art-moderne-de-paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée d'Orsay,card-link,../places/musee-d-orsay.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée de l'Orangerie,card-link,../places/musee-de-l-orangerie.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée du Louvre,card-link,../places/musee-du-louvre.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée du Luxembourg,card-link,../places/musee-du-luxembourg.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Guimet,card-link,../places/musee-guimet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Gustave Moreau,card-link,../places/musee-gustave-moreau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Jacquemart-André,card-link,../places/musee-jacquemart-andre.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Marmottan Monet,card-link,../places/musee-marmottan-monet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Picasso Paris,card-link,../places/musee-picasso-paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Rodin,card-link,../places/musee-rodin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Notre-Dame de Paris,card-link,../places/notre-dame-de-paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Petit Palais,card-link,../places/petit-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Versailles,card-link,../places/versailles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Boulangerie Pichard,card-link,../places/boulangerie-pichard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Marché Convention,card-link,../places/marche-convention.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Café du Commerce,card-link,../places/cafe-du-commerce.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Le Grand Pan,card-link,../places/le-grand-pan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Bouillon Chartier Montparnasse,card-link,../places/bouillon-chartier-montparnasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/paris.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/paris.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
 guide/paris.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
