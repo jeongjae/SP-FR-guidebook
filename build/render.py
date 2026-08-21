@@ -983,10 +983,9 @@ def build_region(r: Region, trip: Trip) -> str:
             product_cards = []
             for product in products:
                 shared = "공동 사용" if product.get("shared") else "1인용"
-                airport = "공항 L9 가능" if product.get("airportMetro") else "공항 L9 불가"
                 product_cards.append(f'''<article class="card"><div class="card-body">
   <h3>{esc(product.get("name"))}</h3>
-  <div class="metarow"><strong>{esc(product.get("price"))}</strong><span>{shared}</span><span>{airport}</span></div>
+  <div class="metarow"><strong>{esc(product.get("price"))}</strong><span>{shared}</span><span>{esc(product.get("accessNote"))}</span></div>
   <p>{esc(product.get("fit"))}</p>
 </div></article>''')
             parts.append(f'<div class="grid grid-3">{"".join(product_cards)}</div>')

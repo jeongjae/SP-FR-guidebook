@@ -75,7 +75,8 @@ class StayTransportGuards(unittest.TestCase):
 
     def test_transit_sources_are_official_and_scheduled_for_recheck(self):
         payload = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))
-        allowed = {"www.tmb.cat", "tmb.cat", "rodalies.gencat.cat"}
+        allowed = {"www.tmb.cat", "tmb.cat", "rodalies.gencat.cat",
+                   "www.lignesdazur.com", "lignesdazur.com"}
         for slug, region in payload["regions"].items():
             for source in region["sources"]:
                 self.assertIn(urlparse(source["url"]).hostname, allowed,
@@ -132,6 +133,19 @@ class StayTransportGuards(unittest.TestCase):
                 if resource.get("localPath"):
                     self.assertIn("PDF 열기", rendered)
                 self.assertIn(resource["officialUrl"], rendered)
+
+    def test_nice_public_transit_matches_daily_cards(self):
+        region = next(r for r in self.trip.regions if r.slug == "nice")
+        rendered = html.unescape(render.build_region(region, self.trip))
+        for token in ("공항에서 공동 Multi voyages 6회를 준비", "74분",
+                      "Aéro 왕복", "별도 TER", "광역 ZOU"):
+            self.assertIn(token, rendered)
+        for day in range(7, 13):
+            self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+        chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
+                   "06_Nice_Cote_d_Azur_v2.0.md").read_text(encoding="utf-8")
+        for stale in ("단발권은 €1.80", "1일권(€5.00)"):
+            self.assertNotIn(stale, chapter, f"Nice 챕터에 폐기된 교통 요금이 남음: {stale}")
 
 
 if __name__ == "__main__":
