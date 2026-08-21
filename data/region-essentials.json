@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "regions": {
+    "barcelona": {
+      "staySummary": "확정 숙소는 Plaça d’Espanya·Hostafrancs 생활권이다. 공항 도착일에는 바로 체크인하고, Sants 렌터카 영업소까지는 출발일에 도보로 이동한다.",
+      "lifeEssentials": [
+        "Day 1은 19:10 공항 도착 뒤 체크인만 한다. 장보기와 산책은 다음 날 아침으로 넘긴다.",
+        "3박 일정이라 별도 세탁일은 두지 않는다. 객실 설비와 세탁 필요 여부만 체크인 때 확인한다.",
+        "약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다."
+      ],
+      "arrivalStrategy": "BCN T1에서는 두 사람이 짐을 들고 환승하지 않도록 택시를 기본안으로 쓴다. Aerobús A1은 택시 대기가 길 때의 대안이며, 공항 메트로 L9 승차권과는 별도다.",
+      "departureStrategy": "Day 4 아침 체크아웃 뒤 Barcelona Sants의 Hertz 영업소로 이동해 차량을 인수한다. Sitges와 Bàscara 이동은 공공교통이 아니라 예약 렌터카 일정이다.",
+      "lateReturnRule": "시내 일정은 대부분 도보권이다. 피로가 크거나 늦어지면 추가 환승보다 숙소까지 택시를 사용한다.",
+      "sourceRefs": [
+        "data/daily-cards/day-01.json",
+        "data/daily-cards/day-02.json",
+        "data/daily-cards/day-03.json",
+        "data/daily-cards/day-04.json",
+        "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+      ]
+    }
+  }
+}

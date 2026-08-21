@@ -23,6 +23,8 @@
     source/ASSETS/91_Place_Registry_v1.0.md 장소 명부
     source/CURRENT/30_Places/<slug>.md      장소 장문 (정본)
     data/place-facts.json                   운영시간·요금·예약 (근거·TTL 포함)
+    data/region-essentials.json             지역별 짧은 숙박·생활 실행 요약
+    data/transit-facts.json                 공공교통 선택·이용법·공식 출처
     data/images/image-manifest.json         사진
 """
 from __future__ import annotations
@@ -42,6 +44,8 @@ REGION_DIR = ROOT / "source" / "CURRENT" / "20_Regions"
 REGISTRY_MD = ROOT / "source" / "ASSETS" / "91_Place_Registry_v1.0.md"
 PLACE_DIR = ROOT / "source" / "CURRENT" / "30_Places"
 PLACE_FACTS = ROOT / "data" / "place-facts.json"
+REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
+TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 
 WEEKDAY_KO = "월화수목금토일"
@@ -247,6 +251,8 @@ class Region:
     # 원고에서 온 편집 층 — verdict · scenes · skip · overview · role · rhythm.
     # 지역 페이지가 목록만 남지 않게 하는 부분이다.
     editorial: dict = field(default_factory=dict)
+    essentials: dict = field(default_factory=dict)
+    transit: dict = field(default_factory=dict)
 
     @property
     def url(self) -> str:
@@ -543,6 +549,8 @@ def load_trip() -> Trip:
     itin = json.loads(ITINERARY.read_text(encoding="utf-8"))
     stays = itin["stays"]
     regions_raw = json.loads(REGIONS_JSON.read_text(encoding="utf-8"))["regions"]
+    essentials = json.loads(REGION_ESSENTIALS.read_text(encoding="utf-8")).get("regions", {})
+    transit = json.loads(TRANSIT_FACTS.read_text(encoding="utf-8")).get("regions", {})
     editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 
@@ -609,6 +617,8 @@ def load_trip() -> Trip:
             places=[p for p in places.values() if p.region == r["slug"]],
             hero=heroes.get(r["slug"]),
             editorial=editorial.get(r["slug"], {}),
+            essentials=essentials.get(r["slug"], {}),
+            transit=transit.get(r["slug"], {}),
         ))
 
     return Trip(

@@ -926,6 +926,19 @@ def build_region(r: Region, trip: Trip) -> str:
                            "<strong>숙소 미확정</strong> — 확정되면 여기에 표시된다. "
                            "확정 전 주소를 믿고 이동하지 않는다.", "stay"))
 
+    essentials = r.essentials
+    if essentials:
+        parts.append(f'<div class="prose"><p>{esc(essentials["staySummary"])}</p>')
+        life = essentials.get("lifeEssentials") or []
+        if life:
+            parts.append('<h3>생활 필수</h3><ul>'
+                         + "".join(f'<li>{esc(item)}</li>' for item in life)
+                         + '</ul>')
+        if essentials.get("lateReturnRule"):
+            parts.append(f'<p><strong>늦은 귀가</strong> — '
+                         f'{esc(essentials["lateReturnRule"])}</p>')
+        parts.append('</div>')
+
     # --- Transport --------------------------------------------------------
     # 자유문자열 교통 요약은 그날의 주 숙박 거점에만 귀속한다. 이동일은
     # 양쪽 Region.days 에 잡히므로 필터 없이 모으면 다음 거점의 시내 교통이
@@ -946,6 +959,60 @@ def build_region(r: Region, trip: Trip) -> str:
 </ul>
 {'<ul>' + ''.join(f'<li>{esc(m)}</li>' for m in modes) + '</ul>' if modes else ''}
 </div>""")
+
+    if essentials:
+        parts.append('<div class="grid grid-2">'
+                     f'<article class="card"><div class="card-body"><h3>도착</h3>'
+                     f'<p>{esc(essentials["arrivalStrategy"])}</p>'
+                     f'<a class="text-link" href="{rel}/{arrive.url}">Day {arrive.n} 실행 보기</a>'
+                     '</div></article>'
+                     f'<article class="card"><div class="card-body"><h3>출발</h3>'
+                     f'<p>{esc(essentials["departureStrategy"])}</p>'
+                     f'<a class="text-link" href="{rel}/{leave.url}">Day {leave.n} 실행 보기</a>'
+                     '</div></article></div>')
+
+    transit = r.transit
+    if transit:
+        rec = transit["recommendation"]
+        parts.append(sec_head("PUBLIC TRANSIT", "도시 공공교통"))
+        parts.append(alert("info", f'<strong>{esc(rec["title"])}</strong> — '
+                           f'{esc(rec["summary"])}', "train"))
+
+        products = transit.get("products") or []
+        if products:
+            product_cards = []
+            for product in products:
+                shared = "공동 사용" if product.get("shared") else "1인용"
+                airport = "공항 L9 가능" if product.get("airportMetro") else "공항 L9 불가"
+                product_cards.append(f'''<article class="card"><div class="card-body">
+  <h3>{esc(product.get("name"))}</h3>
+  <div class="metarow"><strong>{esc(product.get("price"))}</strong><span>{shared}</span><span>{airport}</span></div>
+  <p>{esc(product.get("fit"))}</p>
+</div></article>''')
+            parts.append(f'<div class="grid grid-3">{"".join(product_cards)}</div>')
+
+        parts.append('<div class="grid grid-2"><div class="prose"><h3>이용법</h3><ul>'
+                     + "".join(f'<li>{esc(x)}</li>' for x in transit["howToUse"])
+                     + '</ul></div><div class="prose"><h3>적용되지 않는 이동·예외</h3><ul>'
+                     + "".join(f'<li>{esc(x)}</li>' for x in transit["exceptions"])
+                     + '</ul></div></div>')
+
+        uses = transit.get("itineraryUses") or []
+        if uses:
+            parts.append('<div class="prose"><h3>이 일정에서 쓰는 교통</h3><ul>'
+                         + "".join(
+                             f'<li><a href="{rel}/daily/day-{x["day"]:02d}.html">Day {x["day"]}</a> — {esc(x["label"])}</li>'
+                             for x in uses) + '</ul></div>')
+
+        sources = transit.get("sources") or []
+        if sources:
+            parts.append('<details class="acc"><summary>공식 출처와 재확인일</summary>'
+                         '<div class="acc-body prose"><ul>'
+                         + "".join(
+                             f'<li><a href="{esc(x["url"])}" target="_blank" rel="noopener">{esc(x["label"])}</a>'
+                             f' · 확인 {esc(x["verifiedAt"])} · 재확인 {esc(x["recheckBy"])}</li>'
+                             for x in sources)
+                         + '</ul></div></details>')
 
     extra = [(k, LAYER_LABEL[k]) for k in ("role", "rhythm") if ed.get(k)]
     if extra:

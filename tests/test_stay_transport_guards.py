@@ -2,9 +2,14 @@
 from __future__ import annotations
 
 import html
+import json
 import sys
 import unittest
+from datetime import date
 from pathlib import Path
+from urllib.parse import urlparse
+
+import jsonschema
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,6 +65,43 @@ class StayTransportGuards(unittest.TestCase):
             rendered = render.build_region(region, self.trip)
             self.assertIn(f'href="../{region.days[0].url}"', rendered)
             self.assertIn(f'href="../{region.days[-1].url}"', rendered)
+
+    def test_region_essentials_and_transit_facts_follow_schema(self):
+        for stem in ("region-essentials", "transit-facts"):
+            payload = json.loads((ROOT / "data" / f"{stem}.json").read_text(encoding="utf-8"))
+            schema = json.loads((ROOT / "data" / f"{stem}.schema.json").read_text(encoding="utf-8"))
+            jsonschema.Draft202012Validator(schema,
+                format_checker=jsonschema.FormatChecker()).validate(payload)
+
+    def test_transit_sources_are_official_and_scheduled_for_recheck(self):
+        payload = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))
+        allowed = {"www.tmb.cat", "tmb.cat", "rodalies.gencat.cat"}
+        for slug, region in payload["regions"].items():
+            for source in region["sources"]:
+                self.assertIn(urlparse(source["url"]).hostname, allowed,
+                              f"{slug}: 비공식 교통 출처")
+                self.assertGreaterEqual(date.fromisoformat(source["recheckBy"]),
+                                        date.fromisoformat(source["verifiedAt"]))
+
+    def test_barcelona_public_transit_pilot_is_rendered(self):
+        region = next(r for r in self.trip.regions if r.slug == "barcelona")
+        rendered = html.unescape(render.build_region(region, self.trip))
+        for token in ("도시 공공교통", "현재 일정은 단일 승차가 기본",
+                      "T-familiar 1 zone", "공항 L9 불가",
+                      "공식 출처와 재확인일"):
+            self.assertIn(token, rendered)
+        for day in range(1, 5):
+            self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+
+    def test_curated_region_days_belong_to_the_linked_region(self):
+        regions = {r.slug: r for r in self.trip.regions}
+        payload = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))
+        for slug, facts in payload["regions"].items():
+            self.assertIn(slug, regions)
+            region_days = {day.n for day in regions[slug].days}
+            for use in facts["itineraryUses"]:
+                self.assertIn(use["day"], region_days,
+                              f"{slug}: Day {use['day']}는 해당 지역 일정이 아님")
 
 
 if __name__ == "__main__":
