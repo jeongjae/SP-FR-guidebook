@@ -51,4 +51,4 @@ source: source/CURRENT/30_Places/restaurant-beatrice.md
 | **이용 조건** | **빌라 에프뤼시 드 로스차일드 입장객 전용** (빌라 입장료 €17 별도) |
 | **예약** | 점심 피크 시간대(12:30~13:30) 테라스석 예약 권장 |
 | **접근 교통** | 니스 시내에서 15번 버스 탑승 후 Passable / Villa Ephrussi 정류장 하차 도보 5분 |
-| **공식 정보** | [공식 안내 페이지]([공식 웹사이트](https://www.villa-ephrussi.com/)fr/preparer-sa-visite/le-restaurant-salon-de-the) (verified_at: 2026-08-21) |
+| **공식 정보** | [공식 안내 페이지](https://www.villa-ephrussi.com/fr/preparer-sa-visite/le-restaurant-salon-de-the) (verified_at: 2026-08-21) |

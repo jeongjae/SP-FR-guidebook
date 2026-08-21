@@ -59,7 +59,8 @@
       "summary": "BCN T1 15:30 출발 — NCE T1 16:55 도착. 수하물 위탁 마감 14:45",
       "menu": null,
       "reservation": "예약완료 Vueling VY1521 ([CONFIRMED])",
-      "optional": false
+      "optional": false,
+      "place_ref": "nce-t2"
     },
     {
       "id": "nice-checkin",

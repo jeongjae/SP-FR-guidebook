@@ -1,0 +1,984 @@
+﻿page,text,cls,href,decoration,color,parent_color,in_card
+guide/aix.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,시장 — Place Richelme · Place des Prêcheurs,card-link,../places/place-richelme-place-des-precheurs.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Vieil Aix — 구시가지,card-link,../places/vieil-aix.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Pâtisserie Weibel,card-link,../places/patisserie-weibel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Chez Gilbert,card-link,../places/chez-gilbert-cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Marseille,card-link,../places/marseille.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Vieux-Port,card-link,../places/vieux-port-marseille.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Le Panier,card-link,../places/le-panier.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Mucem,card-link,../places/mucem.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Fort Saint-Jean,card-link,../places/fort-saint-jean.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Notre-Dame de la Garde,card-link,../places/notre-dame-de-la-garde.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Montagne Sainte-Victoire · Terrain des Peintres,card-link,../places/montagne-sainte-victoire-terrain-des-peintres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Musée Granet,card-link,../places/musee-granet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Rotonde,card-link,../places/rotonde.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/aix.html,Saint-Paul-de-Vence,card-link,../places/saint-paul-de-vence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Rocher des Doms,card-link,../places/rocher-des-doms.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Uzès Place aux Herbes·구시가지,card-link,../places/uzes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Arles,card-link,../places/arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Arènes d’Arles,card-link,../places/arenes-d-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Théâtre antique,card-link,../places/theatre-antique-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Fou de Fafa,card-link,../places/fou-de-fafa-avignon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Les Cocottes Saint-Louis,card-link,../places/les-cocottes-saint-louis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Le Gibolin,card-link,../places/le-gibolin-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Saint-Paul-de-Mausole,card-link,../places/saint-paul-de-mausole.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Saint-Rémy-de-Provence,card-link,../places/saint-remy-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Place du Forum,card-link,../places/place-du-forum-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Cloître Saint-Trophime,card-link,../places/cloitre-saint-trophime.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,Fondation Vincent van Gogh Arles,card-link,../places/fondation-vincent-van-gogh-arles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/avignon.html,La Roquette,card-link,../places/la-roquette.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Sant Pau Recinte Modernista,card-link,../places/sant-pau-recinte-modernista.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Bodega Joan,card-link,../places/bodega-joan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,La Paradeta Sagrada Família,card-link,../places/la-paradeta-sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Bar Cañete,card-link,../places/bar-canete.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,Mercat de la Concepció,card-link,../places/mercat-concepcio.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/barcelona.html,La Zorra,card-link,../places/la-zorra.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Peratallada,card-link,../places/peratallada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Casa Marieta,card-link,../places/casa-marieta.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/girona.html,Mercat del Lleó,card-link,../places/mercat-del-lleo.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Barcelona,card-link,barcelona.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Girona · Empordà,card-link,girona.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Nice · Côte d'Azur,card-link,nice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Aix-en-Provence,card-link,aix.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Luberon,card-link,luberon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Avignon · Alpilles,card-link,avignon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Lyon,card-link,lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/index.html,Paris,card-link,paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Roussillon · Sentier des Ocres,card-link,../places/roussillon-sentier-des-ocres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Ménerbes,card-link,../places/menerbes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Oppède-le-Vieux,card-link,../places/oppede-le-vieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/luberon.html,Village des Bories,card-link,../places/village-des-bories.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Café Comptoir Abel,card-link,../places/cafe-comptoir-abel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Daniel et Denise,card-link,../places/daniel-et-denise.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Chez Mamie Lise,card-link,../places/chez-mamie-lise.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/lyon.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Menton (멘통),card-link,../places/menton.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Nice Old Town–Castle Hill Walk,card-link,../places/nice-walk.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Cannes Forville–Suquet–Croisette Walk,card-link,../places/cannes-walk.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Monaco Rocher–Port–Monte Carlo Walk,card-link,../places/monaco-walk.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Promenade des Anglais,card-link,../places/promenade-des-anglais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Vieux Nice — 구시가지,card-link,../places/vieux-nice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Le Figuier de Saint-Esprit,card-link,../places/le-figuier-de-saint-esprit.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Restaurant & Salon de Thé Béatrice,card-link,../places/restaurant-beatrice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Monaco,card-link,../places/monaco.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/nice.html,Villa Ephrussi de Rothschild,card-link,../places/villa-ephrussi-de-rothschild.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Montmartre · South Pigalle,card-link,../places/montmartre-south-pigalle.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Carnavalet,card-link,../places/musee-carnavalet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée d'Art Moderne de Paris,card-link,../places/musee-d-art-moderne-de-paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée d'Orsay,card-link,../places/musee-d-orsay.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée de l'Orangerie,card-link,../places/musee-de-l-orangerie.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée du Louvre,card-link,../places/musee-du-louvre.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée du Luxembourg,card-link,../places/musee-du-luxembourg.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Guimet,card-link,../places/musee-guimet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Gustave Moreau,card-link,../places/musee-gustave-moreau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Jacquemart-André,card-link,../places/musee-jacquemart-andre.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Marmottan Monet,card-link,../places/musee-marmottan-monet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Picasso Paris,card-link,../places/musee-picasso-paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Musée Rodin,card-link,../places/musee-rodin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Notre-Dame de Paris,card-link,../places/notre-dame-de-paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Petit Palais,card-link,../places/petit-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Versailles,card-link,../places/versailles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Boulangerie Pichard,card-link,../places/boulangerie-pichard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Marché Convention,card-link,../places/marche-convention.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Café du Commerce,card-link,../places/cafe-du-commerce.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Le Grand Pan,card-link,../places/le-grand-pan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Bouillon Chartier Montparnasse,card-link,../places/bouillon-chartier-montparnasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+guide/paris.html,Montorgueil,card-link,../places/montorgueil.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Barcelona,card-link,guide/barcelona.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Girona · Empordà,card-link,guide/girona.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Nice · Côte d'Azur,card-link,guide/nice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Aix-en-Provence,card-link,guide/aix.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Luberon,card-link,guide/luberon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Avignon · Alpilles,card-link,guide/avignon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Lyon,card-link,guide/lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+index.html,Paris,card-link,guide/paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/abbaye-de-senanque.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/abbaye-de-senanque.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/abbaye-de-senanque.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/abbaye-de-senanque.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/abbaye-de-senanque.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/abbaye-de-senanque.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/annecy.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/annecy.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/annecy.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/annecy.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/annecy.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/annecy.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arenes-d-arles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arenes-d-arles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arenes-d-arles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arenes-d-arles.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arenes-d-arles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arenes-d-arles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arles.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/arles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/atelier-des-lauves.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/atelier-des-lauves.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/atelier-des-lauves.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/atelier-des-lauves.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/atelier-des-lauves.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/atelier-des-lauves.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bar-canete.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bar-canete.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bar-canete.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bar-canete.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bar-canete.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bar-canete.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-historic-walk.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-historic-walk.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-historic-walk.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-historic-walk.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-historic-walk.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-historic-walk.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-modernisme-walk.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-modernisme-walk.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-modernisme-walk.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-modernisme-walk.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-modernisme-walk.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-modernisme-walk.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-sants.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-sants.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-sants.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-sants.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-sants.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barcelona-sants.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barri-gotic.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barri-gotic.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barri-gotic.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barri-gotic.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barri-gotic.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/barri-gotic.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bastide-du-jas-de-bouffan.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bastide-du-jas-de-bouffan.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bastide-du-jas-de-bouffan.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bastide-du-jas-de-bouffan.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bastide-du-jas-de-bouffan.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bastide-du-jas-de-bouffan.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bellecour.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bellecour.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bellecour.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bellecour.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bellecour.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bellecour.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/biblioteca-de-catalunya.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/biblioteca-de-catalunya.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/biblioteca-de-catalunya.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/biblioteca-de-catalunya.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/biblioteca-de-catalunya.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/biblioteca-de-catalunya.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bnf-richelieu.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bnf-richelieu.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bnf-richelieu.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bnf-richelieu.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bnf-richelieu.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bnf-richelieu.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bodega-joan.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bodega-joan.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bodega-joan.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bodega-joan.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bodega-joan.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bodega-joan.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bonnieux.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bonnieux.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bonnieux.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bonnieux.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bonnieux.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bonnieux.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bouillon-chartier-montparnasse.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bouillon-chartier-montparnasse.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bouillon-chartier-montparnasse.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bouillon-chartier-montparnasse.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bouillon-chartier-montparnasse.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bouillon-chartier-montparnasse.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/boulangerie-pichard.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/boulangerie-pichard.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/boulangerie-pichard.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/boulangerie-pichard.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/boulangerie-pichard.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/boulangerie-pichard.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bourse-de-commerce-pinault-collection.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bourse-de-commerce-pinault-collection.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bourse-de-commerce-pinault-collection.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bourse-de-commerce-pinault-collection.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bourse-de-commerce-pinault-collection.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/bourse-de-commerce-pinault-collection.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-comptoir-abel.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-comptoir-abel.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-comptoir-abel.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-comptoir-abel.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-comptoir-abel.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-comptoir-abel.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-du-commerce.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-du-commerce.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-du-commerce.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-du-commerce.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-du-commerce.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cafe-du-commerce.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calanques.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calanques.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calanques.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calanques.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calanques.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calanques.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calella-de-palafrugell.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calella-de-palafrugell.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calella-de-palafrugell.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calella-de-palafrugell.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calella-de-palafrugell.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/calella-de-palafrugell.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes-walk.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes-walk.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes-walk.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes-walk.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes-walk.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes-walk.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cannes.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-de-bibemus.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-de-bibemus.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-de-bibemus.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-de-bibemus.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-de-bibemus.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-de-bibemus.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-des-lumieres.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-des-lumieres.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-des-lumieres.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-des-lumieres.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-des-lumieres.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/carrieres-des-lumieres.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/casa-marieta.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/casa-marieta.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/casa-marieta.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/casa-marieta.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/casa-marieta.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/casa-marieta.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cassis.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cassis.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cassis.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cassis.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cassis.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cassis.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cau-ferrat.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cau-ferrat.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cau-ferrat.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cau-ferrat.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cau-ferrat.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cau-ferrat.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/centre-pompidou.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/centre-pompidou.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/centre-pompidou.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/centre-pompidou.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/centre-pompidou.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/centre-pompidou.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-gilbert-cassis.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-gilbert-cassis.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-gilbert-cassis.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-gilbert-cassis.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-gilbert-cassis.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-gilbert-cassis.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-mamie-lise.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-mamie-lise.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-mamie-lise.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-mamie-lise.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-mamie-lise.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/chez-mamie-lise.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cloitre-saint-trophime.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cloitre-saint-trophime.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cloitre-saint-trophime.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cloitre-saint-trophime.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cloitre-saint-trophime.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cloitre-saint-trophime.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/colline-du-chateau.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/colline-du-chateau.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/colline-du-chateau.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/colline-du-chateau.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/colline-du-chateau.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/colline-du-chateau.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/collioure.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/collioure.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/collioure.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/collioure.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/collioure.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/collioure.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-mirabeau.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-mirabeau.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-mirabeau.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-mirabeau.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-mirabeau.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-mirabeau.html,Grasse,card-link,../places/grasse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-saleya.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-saleya.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-saleya.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-saleya.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-saleya.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/cours-saleya.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/coustellet.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/coustellet.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/coustellet.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/coustellet.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/coustellet.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/coustellet.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/croix-rousse.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/croix-rousse.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/croix-rousse.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/croix-rousse.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/croix-rousse.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/croix-rousse.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/daniel-et-denise.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/daniel-et-denise.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/daniel-et-denise.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/daniel-et-denise.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/daniel-et-denise.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/daniel-et-denise.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fondation-vincent-van-gogh-arles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fondation-vincent-van-gogh-arles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fondation-vincent-van-gogh-arles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fondation-vincent-van-gogh-arles.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fondation-vincent-van-gogh-arles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fondation-vincent-van-gogh-arles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fort-saint-jean.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fort-saint-jean.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fort-saint-jean.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fort-saint-jean.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fort-saint-jean.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fort-saint-jean.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fou-de-fafa-avignon.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fou-de-fafa-avignon.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fou-de-fafa-avignon.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fou-de-fafa-avignon.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fou-de-fafa-avignon.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fou-de-fafa-avignon.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fourviere.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fourviere.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fourviere.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fourviere.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fourviere.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/fourviere.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-cathedral.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-cathedral.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-cathedral.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-cathedral.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-cathedral.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-cathedral.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-old-town-walk.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-old-town-walk.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-old-town-walk.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-old-town-walk.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-old-town-walk.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/girona-old-town-walk.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/giverny.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/giverny.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/giverny.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/giverny.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/giverny.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/giverny.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/glanum.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/glanum.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/glanum.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/glanum.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/glanum.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/glanum.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/gordes.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/gordes.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/gordes.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/gordes.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/gordes.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/gordes.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/goult.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/goult.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/goult.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/goult.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/goult.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/goult.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grand-palais.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grand-palais.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grand-palais.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grand-palais.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grand-palais.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grand-palais.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grasse.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grasse.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grasse.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grasse.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grasse.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/grasse.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/halles-de-lyon-paul-bocuse.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/halles-de-lyon-paul-bocuse.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/halles-de-lyon-paul-bocuse.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/halles-de-lyon-paul-bocuse.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/halles-de-lyon-paul-bocuse.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/halles-de-lyon-paul-bocuse.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Barcelona,card-link,barcelona.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Girona · Empordà,card-link,girona.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Nice · Côte d'Azur,card-link,nice.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Aix-en-Provence,card-link,aix.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Luberon,card-link,luberon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Avignon · Alpilles,card-link,avignon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Lyon,card-link,lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/index.html,Paris,card-link,paris.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/l-isle-sur-la-sorgue.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/l-isle-sur-la-sorgue.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/l-isle-sur-la-sorgue.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/l-isle-sur-la-sorgue.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/l-isle-sur-la-sorgue.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/l-isle-sur-la-sorgue.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-paradeta-sagrada-familia.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-paradeta-sagrada-familia.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-paradeta-sagrada-familia.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-paradeta-sagrada-familia.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-paradeta-sagrada-familia.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-paradeta-sagrada-familia.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-roquette.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-roquette.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-roquette.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-roquette.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-roquette.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-roquette.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-zorra.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-zorra.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-zorra.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-zorra.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-zorra.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/la-zorra.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/latin-quarter.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/latin-quarter.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/latin-quarter.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/latin-quarter.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/latin-quarter.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/latin-quarter.html,Le Marais,card-link,../places/le-marais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-figuier-de-saint-esprit.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-figuier-de-saint-esprit.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-figuier-de-saint-esprit.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-figuier-de-saint-esprit.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-figuier-de-saint-esprit.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-figuier-de-saint-esprit.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-gibolin-arles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-gibolin-arles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-gibolin-arles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-gibolin-arles.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-gibolin-arles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-gibolin-arles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-grand-pan.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-grand-pan.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-grand-pan.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-grand-pan.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-grand-pan.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-grand-pan.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-marais.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-marais.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-marais.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-marais.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-marais.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-marais.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-panier.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-panier.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-panier.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-panier.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-panier.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-panier.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-rocher.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-rocher.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-rocher.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-rocher.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-rocher.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-rocher.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-suquet.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-suquet.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-suquet.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-suquet.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-suquet.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/le-suquet.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-baux-de-provence.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-baux-de-provence.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-baux-de-provence.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-baux-de-provence.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-baux-de-provence.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-baux-de-provence.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-cocottes-saint-louis.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-cocottes-saint-louis.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-cocottes-saint-louis.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-cocottes-saint-louis.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-cocottes-saint-louis.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-cocottes-saint-louis.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-halles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-halles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-halles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-halles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-halles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/les-halles.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/lourmarin.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/lourmarin.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/lourmarin.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/lourmarin.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/lourmarin.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/lourmarin.html,L’Isle-sur-la-Sorgue,card-link,../places/l-isle-sur-la-sorgue.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/macba.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/macba.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/macba.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/macba.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/macba.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/macba.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-convention.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-convention.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-convention.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-convention.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-convention.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-convention.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-de-la-liberation.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-de-la-liberation.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-de-la-liberation.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-de-la-liberation.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-de-la-liberation.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-de-la-liberation.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-forville.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-forville.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-forville.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-forville.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-forville.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marche-forville.html,Marché de la Libération,card-link,../places/marche-de-la-liberation.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marseille.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marseille.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marseille.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marseille.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marseille.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/marseille.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menerbes.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menerbes.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menerbes.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menerbes.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menerbes.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menerbes.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menton.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menton.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menton.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menton.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menton.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/menton.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-concepcio.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-concepcio.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-concepcio.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-concepcio.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-concepcio.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-concepcio.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-del-lleo.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-del-lleo.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-del-lleo.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-del-lleo.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-del-lleo.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mercat-del-lleo.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco-walk.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco-walk.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco-walk.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco-walk.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco-walk.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco-walk.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/monaco.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montagne-sainte-victoire-terrain-des-peintres.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montagne-sainte-victoire-terrain-des-peintres.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montagne-sainte-victoire-terrain-des-peintres.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montagne-sainte-victoire-terrain-des-peintres.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montagne-sainte-victoire-terrain-des-peintres.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montagne-sainte-victoire-terrain-des-peintres.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montmartre-south-pigalle.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montmartre-south-pigalle.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montmartre-south-pigalle.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montmartre-south-pigalle.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montmartre-south-pigalle.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montmartre-south-pigalle.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montorgueil.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montorgueil.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montorgueil.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montorgueil.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montorgueil.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/montorgueil.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mucem.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mucem.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mucem.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mucem.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mucem.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/mucem.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-carnavalet.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-carnavalet.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-carnavalet.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-carnavalet.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-carnavalet.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-carnavalet.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-art-moderne-de-paris.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-art-moderne-de-paris.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-art-moderne-de-paris.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-art-moderne-de-paris.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-art-moderne-de-paris.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-art-moderne-de-paris.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-orsay.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-orsay.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-orsay.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-orsay.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-orsay.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-d-orsay.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-de-l-orangerie.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-de-l-orangerie.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-de-l-orangerie.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-de-l-orangerie.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-de-l-orangerie.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-de-l-orangerie.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-louvre.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-louvre.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-louvre.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-louvre.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-louvre.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-louvre.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-luxembourg.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-luxembourg.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-luxembourg.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-luxembourg.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-luxembourg.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-du-luxembourg.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-granet.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-granet.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-granet.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-granet.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-granet.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-granet.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-guimet.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-guimet.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-guimet.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-guimet.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-guimet.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-guimet.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-gustave-moreau.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-gustave-moreau.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-gustave-moreau.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-gustave-moreau.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-gustave-moreau.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-gustave-moreau.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-jacquemart-andre.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-jacquemart-andre.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-jacquemart-andre.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-jacquemart-andre.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-jacquemart-andre.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-jacquemart-andre.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-marmottan-monet.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-marmottan-monet.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-marmottan-monet.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-marmottan-monet.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-marmottan-monet.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-marmottan-monet.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-picasso-paris.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-picasso-paris.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-picasso-paris.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-picasso-paris.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-picasso-paris.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-picasso-paris.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-rodin.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-rodin.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-rodin.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-rodin.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-rodin.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/musee-rodin.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nce-t2.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nce-t2.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nce-t2.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nce-t2.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nce-t2.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nce-t2.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-ville.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-ville.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-ville.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-ville.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-ville.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-ville.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-walk.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-walk.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-walk.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-walk.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-walk.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/nice-walk.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-la-garde.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-la-garde.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-la-garde.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-la-garde.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-la-garde.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-la-garde.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-paris.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-paris.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-paris.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-paris.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-paris.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/notre-dame-de-paris.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/onyar.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/onyar.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/onyar.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/onyar.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/onyar.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/onyar.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/oppede-le-vieux.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/oppede-le-vieux.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/oppede-le-vieux.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/oppede-le-vieux.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/oppede-le-vieux.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/oppede-le-vieux.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palais-des-papes.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palais-des-papes.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palais-des-papes.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palais-des-papes.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palais-des-papes.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palais-des-papes.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palau-de-maricel.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palau-de-maricel.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palau-de-maricel.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palau-de-maricel.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palau-de-maricel.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/palau-de-maricel.html,Sagrada Família,card-link,../places/sagrada-familia.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pals.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pals.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pals.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pals.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pals.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pals.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/parc-de-la-tete-d-or.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/parc-de-la-tete-d-or.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/parc-de-la-tete-d-or.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/parc-de-la-tete-d-or.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/parc-de-la-tete-d-or.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/parc-de-la-tete-d-or.html,Vieux Lyon · 트라불,card-link,../places/vieux-lyon.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/passeig-de-la-muralla.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/passeig-de-la-muralla.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/passeig-de-la-muralla.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/passeig-de-la-muralla.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/passeig-de-la-muralla.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/passeig-de-la-muralla.html,Peralada,card-link,../places/peralada.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/patisserie-weibel.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/patisserie-weibel.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/patisserie-weibel.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/patisserie-weibel.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/patisserie-weibel.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/patisserie-weibel.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peralada.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peralada.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peralada.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peralada.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peralada.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peralada.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peratallada.html,Calella de Palafrugell,card-link,../places/calella-de-palafrugell.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peratallada.html,Collioure,card-link,../places/collioure.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peratallada.html,Girona Cathedral,card-link,../places/girona-cathedral.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peratallada.html,Passeig de la Muralla,card-link,../places/passeig-de-la-muralla.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peratallada.html,Onyar 강변,card-link,../places/onyar.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/peratallada.html,Pals,card-link,../places/pals.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/petit-palais.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/petit-palais.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/petit-palais.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/petit-palais.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/petit-palais.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/petit-palais.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-du-forum-arles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-du-forum-arles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-du-forum-arles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-du-forum-arles.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-du-forum-arles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-du-forum-arles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-richelme-place-des-precheurs.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-richelme-place-des-precheurs.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-richelme-place-des-precheurs.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-richelme-place-des-precheurs.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-richelme-place-des-precheurs.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/place-richelme-place-des-precheurs.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-du-gard.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-du-gard.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-du-gard.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-du-gard.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-du-gard.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-du-gard.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-saint-benezet.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-saint-benezet.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-saint-benezet.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-saint-benezet.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-saint-benezet.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/pont-saint-benezet.html,Pont du Gard,card-link,../places/pont-du-gard.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/promenade-des-anglais.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/promenade-des-anglais.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/promenade-des-anglais.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/promenade-des-anglais.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/promenade-des-anglais.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/promenade-des-anglais.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/restaurant-beatrice.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/restaurant-beatrice.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/restaurant-beatrice.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/restaurant-beatrice.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/restaurant-beatrice.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/restaurant-beatrice.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rocher-des-doms.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rocher-des-doms.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rocher-des-doms.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rocher-des-doms.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rocher-des-doms.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rocher-des-doms.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rotonde.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rotonde.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rotonde.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rotonde.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rotonde.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/rotonde.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/roussillon-sentier-des-ocres.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/roussillon-sentier-des-ocres.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/roussillon-sentier-des-ocres.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/roussillon-sentier-des-ocres.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/roussillon-sentier-des-ocres.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/roussillon-sentier-des-ocres.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sagrada-familia.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sagrada-familia.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sagrada-familia.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sagrada-familia.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sagrada-familia.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sagrada-familia.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-mausole.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-mausole.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-mausole.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-mausole.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-mausole.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-mausole.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-vence.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-vence.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-vence.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-vence.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-vence.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-paul-de-vence.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-remy-de-provence.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-remy-de-provence.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-remy-de-provence.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-remy-de-provence.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-remy-de-provence.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/saint-remy-de-provence.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sant-pau-recinte-modernista.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sant-pau-recinte-modernista.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sant-pau-recinte-modernista.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sant-pau-recinte-modernista.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sant-pau-recinte-modernista.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sant-pau-recinte-modernista.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sitges.html,Barcelona Sants,card-link,../places/barcelona-sants.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sitges.html,Barri Gòtic,card-link,../places/barri-gotic.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sitges.html,Biblioteca de Catalunya,card-link,../places/biblioteca-de-catalunya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sitges.html,Cau Ferrat,card-link,../places/cau-ferrat.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sitges.html,MACBA,card-link,../places/macba.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/sitges.html,Palau de Maricel,card-link,../places/palau-de-maricel.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/theatre-antique-arles.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/theatre-antique-arles.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/theatre-antique-arles.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/theatre-antique-arles.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/theatre-antique-arles.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/theatre-antique-arles.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/uzes.html,Carrières des Lumières,card-link,../places/carrieres-des-lumieres.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/uzes.html,Glanum,card-link,../places/glanum.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/uzes.html,Les Baux-de-Provence,card-link,../places/les-baux-de-provence.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/uzes.html,Les Halles,card-link,../places/les-halles.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/uzes.html,Palais des Papes,card-link,../places/palais-des-papes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/uzes.html,Pont Saint-Bénézet,card-link,../places/pont-saint-benezet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/versailles.html,BnF Richelieu,card-link,../places/bnf-richelieu.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/versailles.html,Bourse de Commerce — Pinault Collection,card-link,../places/bourse-de-commerce-pinault-collection.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/versailles.html,Centre Pompidou,card-link,../places/centre-pompidou.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/versailles.html,Giverny,card-link,../places/giverny.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/versailles.html,Grand Palais,card-link,../places/grand-palais.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/versailles.html,Latin Quarter,card-link,../places/latin-quarter.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieil-aix.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieil-aix.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieil-aix.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieil-aix.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieil-aix.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieil-aix.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-lyon.html,Annecy 구시가지,card-link,../places/annecy.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-lyon.html,Bellecour,card-link,../places/bellecour.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-lyon.html,Croix-Rousse,card-link,../places/croix-rousse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-lyon.html,Fourvière,card-link,../places/fourviere.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-lyon.html,Halles de Lyon Paul Bocuse,card-link,../places/halles-de-lyon-paul-bocuse.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-lyon.html,Parc de la Tête d'Or,card-link,../places/parc-de-la-tete-d-or.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-nice.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-nice.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-nice.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-nice.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-nice.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-nice.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-port-marseille.html,Atelier des Lauves,card-link,../places/atelier-des-lauves.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-port-marseille.html,Bastide du Jas de Bouffan,card-link,../places/bastide-du-jas-de-bouffan.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-port-marseille.html,Calanques,card-link,../places/calanques.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-port-marseille.html,Carrières de Bibémus,card-link,../places/carrieres-de-bibemus.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-port-marseille.html,Cassis 항구,card-link,../places/cassis.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/vieux-port-marseille.html,Cours Mirabeau,card-link,../places/cours-mirabeau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/villa-ephrussi-de-rothschild.html,Cannes,card-link,../places/cannes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/villa-ephrussi-de-rothschild.html,Colline du Château (성채 언덕),card-link,../places/colline-du-chateau.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/villa-ephrussi-de-rothschild.html,Cours Saleya,card-link,../places/cours-saleya.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/villa-ephrussi-de-rothschild.html,Le Rocher — 모나코 구시가지,card-link,../places/le-rocher.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/villa-ephrussi-de-rothschild.html,Le Suquet — 칸 구시가지,card-link,../places/le-suquet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/villa-ephrussi-de-rothschild.html,Marché Forville,card-link,../places/marche-forville.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/village-des-bories.html,Abbaye de Sénanque,card-link,../places/abbaye-de-senanque.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/village-des-bories.html,Bonnieux,card-link,../places/bonnieux.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/village-des-bories.html,Coustellet 생산자 시장,card-link,../places/coustellet.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/village-des-bories.html,Gordes,card-link,../places/gordes.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/village-des-bories.html,Goult,card-link,../places/goult.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True
+places/village-des-bories.html,Lourmarin,card-link,../places/lourmarin.html,none,"rgb(34, 30, 25)","rgb(34, 30, 25)",True

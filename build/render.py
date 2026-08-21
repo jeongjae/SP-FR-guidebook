@@ -142,6 +142,9 @@ def headerless_tables(text: str) -> tuple[str, dict[str, str]]:
     return "\n".join(parts), holes
 
 
+EXTERNAL_ANCHOR = re.compile(r'<a\s+href="(https?://[^"]+)"')
+
+
 def md(text: str) -> str:
     if not text.strip():
         return ""
@@ -161,6 +164,12 @@ def md(text: str) -> str:
                       html_out).replace("</table>", "</table></div>")
     for key, block in holes.items():
         html_out = html_out.replace(f"<p>{key}</p>", block).replace(key, block)
+    # 원고가 쓴 외부 링크에도 rel 을 붙인다. 렌더러가 직접 만드는 링크는
+    # 이미 붙이고 있었지만 마크다운을 거쳐 나온 것은 빠져 있었다.
+    html_out = EXTERNAL_ANCHOR.sub(
+        lambda m: m.group(0) if "rel=" in m.group(0)
+        else f'<a rel="nofollow noopener" href="{m.group(1)}"',
+        html_out)
     return html_out
 
 
@@ -835,15 +844,22 @@ def build_region(r: Region, trip: Trip) -> str:
                      "</div></details>")
 
     # --- Don't Miss -------------------------------------------------------
-    must = [p for p in r.essential_places if p.summary][:6]
+    # 앞의 여섯 곳만 크게 싣는다. **나머지 필수는 버리지 않는다** — 예전에는
+    # 여기서 잘린 필수 장소가 '그 밖의 장소'(essential 제외)에도 못 들어가
+    # 지역 페이지에서 통째로 사라졌다. 파리는 25곳 중 19곳이 그랬다.
+    essential = [p for p in r.essential_places if p.summary]
+    must, rest_essential = essential[:6], essential[6:]
     if must:
         parts.append(f'<div id="places">{sec_head("DON\'T MISS", "놓치지 말 것", rule=True)}</div>')
         parts.append('<div class="grid grid-2">'
                      + "".join(place_card(p, rel, large=True) for p in must)
                      + "</div>")
 
-    others = [p for p in r.places
-              if p.grade != "essential" and p.summary and p.kind == "spot"]
+    seen = {p.slug for p in must}
+    others = list(rest_essential) + [
+        p for p in r.places
+        if p.grade != "essential" and p.summary and p.kind == "spot"]
+    others = [p for p in others if p.slug not in seen and not seen.add(p.slug)]
     if others:
         parts.append(sec_head("", "그 밖의 장소"))
         parts.append('<div class="grid grid-2">'

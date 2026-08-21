@@ -140,6 +140,10 @@ class Stop:
     # 좌표를 모르지만 주소는 확정인 곳이 있다 (확정 숙소 등).
     # 틀린 좌표를 남기느니 주소로 지도를 연다.
     address: str | None = None
+    # 데일리 카드가 명시적으로 가리키는 장소 슬러그. stop.id 와 다를 때가
+    # 많다 — 같은 장소를 하루에 두 번 들르거나(cannes-transfer/cannes-station),
+    # stop 이 장소의 일부일 때(sant-pau → sant-pau-recinte-modernista).
+    place_ref: str | None = None
     place: Place | None = None  # 장소 페이지가 있는 stop 만 연결된다
 
     @property
@@ -487,6 +491,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 menu=s.get("menu"), reservation=s.get("reservation"),
                 optional=bool(s.get("optional")),
                 address=s.get("address"),
+                place_ref=s.get("place_ref"),
             ) for s in j.get("stops", [])],
             legs=[Leg(
                 frm=l["from"], to=l["to"], mode=l.get("mode", "walk"),
@@ -571,7 +576,12 @@ def load_trip() -> Trip:
     # 이제 daily-cards 의 stop.id 가 곧 슬러그라 추측이 필요 없다.
     for d in days:
         for s in d.stops:
-            p = places.get(s.id)
+            # place_ref 가 정본이다. 없을 때만 stop.id 로 되짚는다 —
+            # id 일치에만 기대면 같은 장소를 다른 id 로 부르는 stop 이
+            # 장소 페이지와 끊긴다. 실제로 89건이 그렇게 끊겨 있었다.
+            p = places.get(s.place_ref) if s.place_ref else None
+            if p is None:
+                p = places.get(s.id)
             if p is not None:
                 s.place = p
                 if d.n not in p.days:
@@ -643,6 +653,22 @@ def validate(trip: Trip) -> list[str]:
         for l in d.legs:
             if l.frm not in ids or l.to not in ids:
                 problems.append(f"Day {d.n}: leg {l.frm}→{l.to} 가 stop 을 벗어난다")
+
+    # place_ref 는 실재하는 장소를 가리켜야 하고, 반드시 링크로 실현돼야 한다.
+    # 한때 140개 중 89개가 조용히 죽은 데이터였다 — 렌더러가 stop.id 만 보고
+    # 이 필드를 읽지 않아서, 식당 34곳이 어디서도 닿을 수 없는 페이지가 됐다.
+    for d in trip.days:
+        for s in d.stops:
+            if not s.place_ref:
+                continue
+            if s.place_ref not in trip.places:
+                problems.append(
+                    f"Day {d.n}: place_ref '{s.place_ref}' 가 가리키는 장소가 없다 "
+                    f"(stop {s.id})")
+            elif s.place is None or s.place.slug != s.place_ref:
+                problems.append(
+                    f"Day {d.n}: place_ref '{s.place_ref}' 가 링크로 실현되지 "
+                    f"않았다 (stop {s.id})")
 
     return problems
 
