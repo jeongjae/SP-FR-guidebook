@@ -696,7 +696,7 @@ Saint-Rémy·Les Baux 는 기본 일정이 아니라 Day 21 대안 축이다 —
 
 | 장소 | 운영·일정 | 역할 |
 |---|---|--- |
-| **Les Halles d’Avignon** | {{fact:les-halles-d-avignon.hours}} · 휴무 {{fact:les-halles-d-avignon.closed}} | 아침장보기·점심·숙소식 |
+| **Les Halles d’Avignon** | {{fact:les-halles.hours}} · 휴무 {{fact:les-halles.closed}} · 입장 {{fact:les-halles.price_adult}} · 예약 {{fact:les-halles.booking}} | 아침장보기·점심·숙소식 |
 | **Uzès Place aux Herbes** | 9/18 금요일은 시장일이 아님 | 구시가지·상점·빵집 중심으로 실행 |
 | Uzès 토요시장 | 이번 체류와 불일치 | 9/19 Arles를 대체하지 않음 |
 | L’Isle 목요시장 | 이번 이동일과 불일치 | 선택 자료로만 보존 |
@@ -1104,7 +1104,7 @@ Day 19 뤼베롱–아비뇽 이동에 우회할 수 있지만, 체크인과 정
 | **Carrières des Lumières 2026** | **복수 출처 확인** — 피카소 + 프리다 칼로, 2/13부터 · {{fact:carrieres-des-lumieres.hours}} · {{fact:carrieres-des-lumieres.price_adult}} |
 | Saint-Paul-de-Mausole (1000년경 수도원·1789 국유화·1807 메르퀴랭·페롱 박사·생조제프 수녀회·관람 구성·2026/2/9–2027/1/3) | 복수 출처 확인 · 운영 {{fact:saint-paul-de-mausole.hours}} |
 | **반 고흐 입원 시작일** | **자료 불일치** — 5월 3일 vs 5월 8일. 공식 사이트 따라 8일 채택, 본문 명시 |
-| **Les Halles 운영 요일** | 운영 {{fact:les-halles-d-avignon.hours}} · 휴무 {{fact:les-halles-d-avignon.closed}} · Place Pie 의 실내시장, 상인 40여 곳. 축제 기간에는 주 7일 여는 때가 있다 {{badge:unverified|축제 기간 예외 미확인}} |
+| **Les Halles 운영 요일** | 운영 {{fact:les-halles.hours}} · 휴무 {{fact:les-halles.closed}} · Place Pie 의 실내시장, 상인 40여 곳. 축제 기간에는 주 7일 여는 때가 있다 {{badge:unverified|축제 기간 예외 미확인}} |
 | **Palais des Papes 요금·히스토패드 현행** | **2026-08-01 인상 반영** — 요금은 {{fact:palais-des-papes.price_adult}} 이 정본이다 (2026-08-01 이전 요금 서술은 폐기). 8세 미만 무료. 3월–11월 초 09:00–19:00, 마지막 입장 폐관 1시간 전. **히스토패드는 입구에서 무료 제공**(7개 언어, 증강현실). ⚠ **2026/5/1 부터 관람 구성이 바뀐다** — 새 해설 동선과 그동안 공개하지 않던 방이 열린다. 출처: palais-des-papes.com 공식. **바뀐 뒤의 요금·동선은 출발 전 재확인** {{badge:field-recheck|2026-08 확인 · 출발 전 재확인}} |
 | **Pont du Gard 요금·운영·야간 조명 2026** | **요금 구조 정정** — {{fact:pont-du-gard.price_adult}} 이 정본이다 (종전의 '야외 입장료' 서술은 오류 — 부지·다리는 무료다). 18세 미만·학생·장애인 무료. 2026년 연중 매일 08:00–24:00. ⚠ **음향·조명쇼는 7/4–8/30 22:30 에만 있다 — Day 21(9/18)에는 열리지 않는다.** 출처: pontdugard.fr 공식 · 가르 관광청 {{badge:field-recheck|2026-08 확인 · 출발 전 재확인}} |
 | **Les Baux 마을·성 상세** | **[보완 필요]** — 조사 부족 |

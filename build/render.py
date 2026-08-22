@@ -1236,8 +1236,9 @@ def build_region(r: Region, trip: Trip) -> str:
         # 정본 분류를 새로 만들지 않는다. 한 묶음뿐이면 제목을 달지 않는다.
         groups = [
             ("RESTAURANTS", "식당", ("restaurant", "wine-bar")),
-            ("CAFÉS", "카페·빵집", ("cafe", "bakery")),
-            ("MARKETS", "시장·푸드홀", ("market", "food-hall")),
+            ("CAFÉS", "카페", ("cafe",)),
+            ("BAKERY · MARKET · FOOD HALL", "빵집·시장·푸드홀",
+             ("bakery", "market", "food-hall")),
         ]
         filled = [(label, title, [p for p in food if p.entity_type in kinds])
                   for label, title, kinds in groups]
@@ -1358,7 +1359,9 @@ def build_region(r: Region, trip: Trip) -> str:
     transit = r.transit
     if transit:
         rec_t = transit["recommendation"]
-        parts.append(sec_head("PUBLIC TRANSPORT", "도시 교통"))
+        # 라벨이 '도시 교통' 이면 Girona 처럼 대중교통이 아예 없는 구간에서
+        # 거짓말이 된다. 슬롯은 같고 이름만 사실에 맞춘다.
+        parts.append(sec_head("GETTING AROUND", "구간 내 이동"))
         parts.append(alert("info", f'<strong>{esc(rec_t["title"])}</strong> — '
                            f'{esc(rec_t["summary"])}', "train"))
         products = transit.get("products") or []

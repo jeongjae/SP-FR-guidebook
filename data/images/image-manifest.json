@@ -11412,6 +11412,67 @@
         ]
       },
       "status": "processed"
+    },
+    {
+      "imageId": "girona-casa-marieta-01",
+      "placeId": "casa-marieta",
+      "region": "girona",
+      "creator": "Elcreueti",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Comedor_gran1.jpg",
+      "originalWidth": 700,
+      "originalHeight": 548,
+      "altKo": "지로나 카사 마리에타의 큰 홀 — 흰 식탁보를 씌운 테이블이 늘어선 실내",
+      "captionKo": "1892년 인디펜덴시아 광장에 문을 연 지로나의 전통 식당이다.",
+      "titleKo": "카사 마리에타 식당 내부",
+      "title": "Comedor gran1.jpg",
+      "description": "Commons 분류가 'Restaurants in the province of Girona'·'Buildings in Girona' 이고 설명이 'dinning area of Casa Marieta' — 지로나의 그 식당이다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Comedor_gran1.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalPath": "source/ASSETS/photos/originals/girona-casa-marieta-01.jpg",
+      "originalSha256": "ff5928f1ad34352a5fc74636aae4bfca43a9b9719f8e1b430a7b00104733ce3d",
+      "originalBytes": 63895,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/girona.html",
+        "places/casa-marieta.html"
+      ],
+      "selectionScore": 90,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-casa-marieta-01-content-700.webp",
+            "sitePath": "assets/images/content/girona-casa-marieta-01-content-700.webp",
+            "width": 700,
+            "height": 548,
+            "bytes": 31124,
+            "sha256": "cac0cf5d7e99eb58759e19b9404f4d5995e03239690c714befb01dfeb44c088c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-casa-marieta-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-casa-marieta-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13416,
+            "sha256": "0e7e7aa0b77863385998e2aba577029d0056a2cf206ba25ecdf347bd54040d23",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
     }
   ],
   "processedAt": "2026-08-05"

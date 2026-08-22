@@ -7,6 +7,8 @@ kind: spot
 grade: "필수"
 priority: "MUST_SEE"
 content_tier: "UTILITY"
+meal_role: "MARKET"
+food_kind: "FOOD_HALL"
 summary: "프랑스 요리의 교황 폴 보퀴즈의 이름을 딴 세계 최고의 실내 미식 시장. 프랑스 최고 장인(MOF)들의 50여 개 최고급 식료품점, 메르 리샤르 생마르슬랭 치즈, 시빌리아 샤퀴테리, 현장 굴·해산물 바."
 source: source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md
 ---

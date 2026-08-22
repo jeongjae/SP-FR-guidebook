@@ -6,74 +6,75 @@
   "verified                 사진 설명이 그 업소를 가리킨다 — 카탈로그에 있다",
   "missing-no-candidate     재사용 가능한 후보가 아예 없다",
   "missing-wrong-entity-risk 이름이 겹치는 결과는 있으나 전부 다른 대상이다.",
-  "                         넣으면 현장에서 엉뚱한 가게를 찾게 된다 — 비워 둔다"
+  "                         넣으면 현장에서 엉뚱한 가게를 찾게 된다 — 비워 둔다",
+  "2026-08-22 2차 조사 — 상호명에 도시명을 붙여 다시 훑었다. Casa Marieta 한 곳이 새로 확인됐고, 나머지는 결과가 없거나 다른 대상이었다."
  ],
- "searchedAt": "2026-08-22",
+ "searchedAt": "2026-08-22 (1차 상호명 · 2차 상호명+도시)",
  "source": "Wikimedia Commons search API",
  "places": {
   "bar-canete": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 1건이 전부 다른 대상이다 — 예: Demography graphic of Pichilemu.png"
+   "status": "missing-no-candidate",
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "bodega-joan": {
    "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: Blai 41.jpg"
+   "why": "2차 질의에서도 결과가 전부 다른 대상이다 (Bodega Joan → 1887년 바르셀로나 상점 사진, Le Grand Pan → 19세기 신문 판화). 넣으면 엉뚱한 곳을 찾게 된다"
   },
   "la-paradeta-sagrada-familia": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "la-zorra": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: La Zorra y el Cuervo.jpg"
+   "status": "missing-no-candidate",
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "mercat-concepcio": {
    "status": "verified",
    "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
   },
   "casa-marieta": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: 2017.07.17.-17-Tiefer See oder Grubensee-Storkow (Mark)"
+   "status": "verified",
+   "why": "Commons 분류 'Restaurants in the province of Girona' 로 신원 확인 — 2차 질의('Casa Marieta Girona')에서 나왔다"
   },
   "mercat-del-lleo": {
    "status": "verified",
    "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
   },
   "le-figuier-de-saint-esprit": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 1건이 전부 다른 대상이다 — 예: La Pointe de Grave depuis Royan - Gironde Garonne Chare"
+   "status": "missing-no-candidate",
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "restaurant-beatrice": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "chez-gilbert-cassis": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: Chez-Gilbert-Saigon(6).jpg"
+   "status": "missing-no-candidate",
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "patisserie-weibel": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "fou-de-fafa-avignon": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "le-gibolin-arles": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "les-cocottes-saint-louis": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 2건이 전부 다른 대상이다 — 예: Croquis parisiens 2 Un chien d'arrêt. G.33805.jpg"
+   "status": "missing-no-candidate",
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "cafe-comptoir-abel": {
-   "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 1건이 전부 다른 대상이다 — 예: Jean qui grogne et Jean qui rit (1895) (14752686485).jp"
+   "status": "missing-no-candidate",
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "chez-mamie-lise": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "daniel-et-denise": {
    "status": "verified",
@@ -85,7 +86,7 @@
   },
   "boulangerie-pichard": {
    "status": "missing-no-candidate",
-   "why": "Commons 검색 결과 0건"
+   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
   },
   "cafe-du-commerce": {
    "status": "verified",
@@ -93,11 +94,19 @@
   },
   "le-grand-pan": {
    "status": "missing-wrong-entity-risk",
-   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: Anfiteatro de las ruinas romanas de Itálica, Santiponce"
+   "why": "2차 질의에서도 결과가 전부 다른 대상이다 (Bodega Joan → 1887년 바르셀로나 상점 사진, Le Grand Pan → 19세기 신문 판화). 넣으면 엉뚱한 곳을 찾게 된다"
   },
   "marche-convention": {
    "status": "verified",
    "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  },
+  "les-halles": {
+   "status": "verified",
+   "why": "FOOD_HALL 로 재분류하며 들어왔다. 기존 사진(레 알 수직 정원)이 그 시장을 찍은 것이다"
+  },
+  "halles-de-lyon-paul-bocuse": {
+   "status": "verified",
+   "why": "FOOD_HALL 로 재분류하며 들어왔다. 기존 사진이 그 시장을 찍은 것이다"
   }
  }
 }

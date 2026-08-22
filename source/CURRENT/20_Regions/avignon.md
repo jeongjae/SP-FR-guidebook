@@ -464,7 +464,7 @@ Saint-Rémy·Les Baux 는 기본 일정이 아니라 Day 21 대안 축이다 —
 
 | 장소 | 운영·일정 | 역할 |
 |---|---|--- |
-| **Les Halles d’Avignon** | {{fact:les-halles-d-avignon.hours}} · 휴무 {{fact:les-halles-d-avignon.closed}} | 아침장보기·점심·숙소식 |
+| **Les Halles d’Avignon** | {{fact:les-halles.hours}} · 휴무 {{fact:les-halles.closed}} · 입장 {{fact:les-halles.price_adult}} · 예약 {{fact:les-halles.booking}} | 아침장보기·점심·숙소식 |
 | **Uzès Place aux Herbes** | 9/18 금요일은 시장일이 아님 | 구시가지·상점·빵집 중심으로 실행 |
 | Uzès 토요시장 | 이번 체류와 불일치 | 9/19 Arles를 대체하지 않음 |
 | L’Isle 목요시장 | 이번 이동일과 불일치 | 선택 자료로만 보존 |

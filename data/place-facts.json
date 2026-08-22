@@ -778,6 +778,13 @@
           "source": "FCR-04 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€38-€48/인",
+          "confidence": "official",
+          "source": "https://www.cafecomptoirabel.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -882,6 +889,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€25-€38/인",
+          "confidence": "official",
+          "source": "https://casamarieta.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -1116,6 +1130,13 @@
           "source": "FCR-04 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€18-€28/인",
+          "confidence": "official",
+          "source": "https://www.chez-mamie-lise.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -1423,6 +1444,13 @@
           "verified_at": "2026-08-18",
           "confidence": "official",
           "ttl_days": 730
+        },
+        "price_range": {
+          "value": "€10-€30",
+          "confidence": "official",
+          "source": "https://www.marchepaysandecoustellet.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -1872,6 +1900,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "price_range": {
+          "value": "€10-€25",
+          "confidence": "official",
+          "source": "https://www.gordes-village.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       },
       "phone": "04 90 72 02 08"
@@ -2044,6 +2079,13 @@
           "verified_at": "2026-08-18",
           "confidence": "official",
           "ttl_days": 730
+        },
+        "price_range": {
+          "value": "€15-€35/인",
+          "confidence": "official",
+          "source": "https://www.halles-de-lyon-paulbocuse.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -2604,41 +2646,13 @@
           "source": "FCR-03 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
-        }
-      }
-    },
-    "les-halles-d-avignon": {
-      "displayName": "Les Halles d'Avignon",
-      "region": "avignon",
-      "grade": "essential",
-      "facts": {
-        "closed": {
-          "value": "월요일 휴무 (화~일 영업)",
-          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
-          "verified_at": "2026-08-17",
-          "confidence": "official",
-          "ttl_days": 90
         },
-        "hours": {
-          "value": "화~일 06:00~14:00",
-          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
-          "verified_at": "2026-08-17",
+        "price_range": {
+          "value": "€25-€38/인",
           "confidence": "official",
-          "ttl_days": 90
-        },
-        "booking": {
-          "value": "예약 불필요 (자유 입장)",
-          "source": "https://avignon-tourisme.com/en/offres/les-halles-covered-market-avignon-en-4194968/",
-          "verified_at": "2026-08-17",
-          "confidence": "official",
-          "ttl_days": 90
-        },
-        "note": {
-          "value": "Les Halles 먼저, Palais 나중 순서",
-          "confidence": "official",
-          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
-          "verified_at": "2026-08-16",
-          "ttl_days": 90
+          "source": "https://www.cloitre-saint-louis.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -3245,6 +3259,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€5-€15",
+          "confidence": "official",
+          "source": "https://www.mercatdelleo.cat/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5324,6 +5345,13 @@
           "source": "FCR-01 Pilot Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€55-€145",
+          "confidence": "official",
+          "source": "https://www.restaurant-lefiguierdesaintesprit.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5359,6 +5387,13 @@
           "source": "FCR-01 Pilot Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€24-€48",
+          "confidence": "official",
+          "source": "https://www.villa-ephrussi.com/fr/preparer-sa-visite/le-restaurant-salon-de-the",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5471,6 +5506,13 @@
           "source": "FCR-03 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€8-€15/인",
+          "confidence": "official",
+          "source": "https://www.maisonweibel.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5506,6 +5548,13 @@
           "source": "FCR-03 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€35-€75/인",
+          "confidence": "official",
+          "source": "https://www.chezgilbert.net/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5541,6 +5590,13 @@
           "source": "FCR-03 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€38-€45/인",
+          "confidence": "official",
+          "source": "https://www.foudefafaavignon.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5576,6 +5632,13 @@
           "source": "FCR-03 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€22-€35/인",
+          "confidence": "official",
+          "source": "https://www.arlestourisme.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5611,6 +5674,13 @@
           "source": "FCR-04 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€39-€46/인",
+          "confidence": "official",
+          "source": "https://danieletdenise.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5646,6 +5716,13 @@
           "source": "FCR-05 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€1.30-€6.00",
+          "confidence": "official",
+          "source": "https://www.paris.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5681,6 +5758,13 @@
           "source": "FCR-05 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€5.00-€20.00",
+          "confidence": "official",
+          "source": "https://www.paris.fr/equipements/marche-convention-5460",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5716,6 +5800,13 @@
           "source": "FCR-05 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€22-€35/인",
+          "confidence": "official",
+          "source": "https://www.lecafeducommerce.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5751,6 +5842,13 @@
           "source": "FCR-05 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€45-€65/인",
+          "confidence": "official",
+          "source": "https://www.legrandpan.fr/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5786,6 +5884,62 @@
           "source": "FCR-05 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€15-€22/인",
+          "confidence": "official",
+          "source": "https://www.bouillon-chartier.com/montparnasse/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
+        }
+      }
+    },
+    "les-halles": {
+      "displayName": "Les Halles d'Avignon",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "화–일 06:00–14:00 (주말 14:30까지)",
+          "confidence": "official",
+          "source": "https://www.avignon-leshalles.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "월요일 휴장",
+          "confidence": "official",
+          "source": "https://www.avignon-leshalles.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "예약 불필요 — 공설 실내시장",
+          "confidence": "official",
+          "source": "https://www.avignon-leshalles.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "€5-€20",
+          "confidence": "official",
+          "source": "https://www.avignon-leshalles.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
+        },
+        "note": {
+          "value": "Les Halles 먼저, Palais 나중 순서",
+          "confidence": "official",
+          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
+          "verified_at": "2026-08-16",
+          "ttl_days": 90
+        },
+        "price_adult": {
+          "value": "무료 — 공설 실내시장 자유 입장",
+          "confidence": "official",
+          "source": "https://www.avignon-leshalles.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     }

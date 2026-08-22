@@ -19,6 +19,25 @@
         "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
       ]
     },
+    "girona": {
+      "staySummary": "거점은 Girona 시내가 아니라 Bàscara 의 농촌 B&B(Plaça de l'Església 6)다. 예약 확정 3박(9/1–9/4). 구시가지·해안마을은 전부 차로 왕복하므로 숙소는 잠자리와 출발점이고, 하루의 성패는 출발 시각이 정한다.",
+      "lifeEssentials": [
+        "농촌 거점이라 도보 생활권이 없다. 물·간식·아침거리는 이동 중 마을에서 사 둔다.",
+        "장보기는 Mercat del Lleó(지로나)가 기본이다. 시장 안 바에서 추쇼와 코르타도로 아침을 대신할 수 있다.",
+        "저녁은 숙소 또는 귀로 마을에서 해결한다. 지로나 시내에서 먹으면 Bàscara 까지 다시 운전해야 한다 — 음주와 늦은 귀환을 피한다.",
+        "숙소 주차조건과 야간 출입방법은 체크인 때 확인한다. 3박이라 별도 세탁일은 두지 않는다."
+      ],
+      "arrivalStrategy": "Day 4 Barcelona 체크아웃 뒤 Sants 에서 렌터카를 인수하고 C-32/AP-7 로 Sitges 를 들른 다음 Bàscara 로 들어간다. 17:30 체크인 예정. 인수 지연이 그날 전체를 미루므로 Sitges 는 축소 가능한 구간으로 둔다.",
+      "departureStrategy": "Day 7 09:30 체크아웃. BCN 공항 T1 에 12:30 렌터카를 반납하고 VY1521(15:30→16:55)로 Nice 로 간다. 반납 시각이 항공편을 잡고 있으므로 이날은 다른 일정을 넣지 않는다.",
+      "lateReturnRule": "모든 귀환이 야간 운전이다. Bàscara 복귀는 18:30 을 기준으로 잡고, 늦어지면 마지막 마을(Pals·Peratallada)을 먼저 뺀다.",
+      "sourceRefs": [
+        "data/daily-cards/day-04.json",
+        "data/daily-cards/day-05.json",
+        "data/daily-cards/day-06.json",
+        "data/daily-cards/day-07.json",
+        "source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md"
+      ]
+    },
     "nice": {
       "staySummary": "확정 숙소는 Masséna 광장 북서쪽 Verdi 가의 Palais ALZIRA(12 Rue Verdi)다. Nice-Ville 역과 Promenade des Anglais 가 모두 도보권이라 5박 내내 차 없이 움직인다. 주방과 세탁기를 갖춘 50㎡ 로프트다. 체크인 18:00–19:00 · 체크아웃 11:00.",
       "lifeEssentials": [
@@ -39,13 +58,33 @@
         "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
       ]
     },
+    "aix": {
+      "staySummary": "확정 숙소는 Les Toits de Méjanes(Airbnb) · 2 Place Coimbra, entrée A, 6층. 4박(9/9 15:00 체크인 – 9/13 14:00 체크아웃). 구시가지는 걸어 다니고 차는 세워 둔다 — 시내일(9/10·9/12)에는 차를 움직이지 않는다.",
+      "lifeEssentials": [
+        "장보기는 Place Richelme 식품시장이 기본이다. 매일 오전에 서고 목요일에는 규모가 커진다.",
+        "아침·샌드위치 점심은 숙소에서 만든다. 시장 재료(chèvre·토마토·tapenade·pain de campagne)가 그 전제다.",
+        "슈퍼는 상호를 고정하지 않는다. 체크인 뒤 도보 5–10분 안의 현재 영업점을 지도에 저장한다.",
+        "운동은 Rotonde–Cours Mirabeau–Parc Jourdan 왕복 4–6km 이지 헬스장이 아니다. 숙소 피트니스는 확인되지 않았다."
+      ],
+      "arrivalStrategy": "Day 12 Nice-Ville 역에서 09:00 렌터카를 인수해 Saint-Paul-de-Vence·Grasse 를 거쳐 A8 로 들어온다. 16:45 체크인 예정. 도착일 저녁에 야심을 부리지 않는다 — 로통드와 쿠르 미라보 첫 산책까지가 적당하다.",
+      "departureStrategy": "Day 16 08:00 체크아웃하고 차에 짐을 싣는다. Lourmarin·Coustellet·Goult 를 거쳐 뤼베롱 농가로 간다. 트렁크 짐은 가림막으로 완전히 가린다 — 마을 주차가 짧고 잦다.",
+      "lateReturnRule": "마르세유 당일치기(Day 15)는 TER 로 19:45 귀환이다. 막차 시각을 낮에 확인하고, 늦어지면 Vallon des Auffes 를 먼저 뺀다.",
+      "sourceRefs": [
+        "data/daily-cards/day-12.json",
+        "data/daily-cards/day-13.json",
+        "data/daily-cards/day-14.json",
+        "data/daily-cards/day-15.json",
+        "data/daily-cards/day-16.json",
+        "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
+      ]
+    },
     "luberon": {
       "staySummary": "3박 거점은 대중교통 정류장이 아닌 농가 숙소다. Day 16–19의 마을 순회는 예약 렌터카를 정본으로 삼고, 도착 즉시 진입로·주차 위치와 야간 귀환 표식을 확인한다.",
       "lifeEssentials": [
-        "식료품과 물은 Day 16 Coustellet에서 확보한다. 농가 도착 뒤 도보 장보기는 전제로 두지 않는다.",
-        "연료는 절반 아래로 내리지 않는다. 특히 일요일 도착 전과 Avignon 출발 전 유인 주유 가능 시간을 확인한다.",
-        "석조마을은 외곽 지정 주차장에 세우고 골목으로 진입하지 않는다. Roussillon 오커길에는 먼지에 강한 신발을 쓴다.",
-        "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다."
+        "식료품과 물은 Day 16 Coustellet 시장에서 확보한다. 프로방스 시장은 오전에 서고 13시에 접는다 — 농가 도착 뒤 도보 장보기는 전제로 두지 않는다.",
+        "숙소에 주방과 세탁 설비가 있다. 이 구간은 사 먹는 곳이 아니라 해 먹는 곳이라, 점심은 시장 재료로 숙소에서 만든다.",
+        "슈퍼·빵집은 Goult–Robion–Oppède 축에 있다. 영업요일이 마을마다 다르므로 도착 당일 한 곳을 정해 둔다. Roussillon 오커길에는 먼지에 강한 신발을 쓴다.",
+        "농가는 진입로가 좁다. 도착 즉시 진입로·주차 위치와 야간 귀환 표식을 확인한다."
       ],
       "arrivalStrategy": "Day 16 Aix 체크아웃 뒤 렌터카로 Lourmarin·Coustellet·Goult를 거쳐 농가로 들어간다. 해 지기 전에 숙소 진입로와 주차 위치를 익힌다.",
       "departureStrategy": "Day 19 체크아웃 뒤 렌터카로 Avignon에 이동한다. ZOU! 915·907은 차량 장애 때 일정을 단일 축으로 줄이는 대안일 뿐 정본 동선이 아니다.",
@@ -61,10 +100,10 @@
     "avignon": {
       "staySummary": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장에 두고 Day 21 근교 일정에 사용한다.",
       "lifeEssentials": [
-        "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다.",
-        "Day 20 성벽 안은 전부 걷고 차량을 꺼내지 않는다. 피로할 때만 무료 도심 셔틀이나 Orizo 단일권을 검토한다.",
-        "Day 21은 Uzès·Pont du Gard 렌터카 왕복, Day 22는 Avignon Centre↔Arles TER 왕복으로 교통수단을 분리한다.",
-        "차량 안에는 보이는 짐을 남기지 않고, 반납할 때 주유·차량 사진·영수증을 확인한다."
+        "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다. 시장은 화–일 오전이고 월요일은 쉰다.",
+        "성벽 안에 사람이 산다 — 학교와 약국과 빨래방이 있다. 생활용품은 관광 동선이 아니라 이 생활권에서 해결한다.",
+        "숙소는 주방·세탁이 있는 형태를 전제로 한다. 4박이라 세탁 1회를 넣을 수 있다.",
+        "운동은 성벽 남쪽·Rhône·Île de la Barthelasse 러닝이다. 수영장은 선택이며 숙소 조건과 분리한다."
       ],
       "arrivalStrategy": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
       "departureStrategy": "Day 23 Avignon TGV에서 차량 반납과 10:22 Lyon행 확정 열차 탑승을 처리한다. 반납 방식과 완충은 현장에서 확인할 운영 항목으로 남긴다.",
@@ -82,9 +121,9 @@
       "staySummary": "확정 숙소는 Monplaisir·Sans Souci 생활권의 Lagrange Aparthotel Lyon Lumière다. 도착·출발일에는 큰 짐 때문에 Part-Dieu↔숙소를 택시로 이동하고, 관광일에는 TCL Zone 1·2를 이용한다.",
       "lifeEssentials": [
         "간이주방이 있으므로 체크인 뒤 숙소 주변에서 물·아침거리만 소량 산다.",
-        "Day 24·25는 같은 비접촉 카드로 두 사람을 검증하고, 환승 때도 같은 매체를 유지한다.",
-        "Day 26 Annecy는 SNCF TER 별도 왕복이다. TCL 결제나 일일 상한에 포함되지 않는다.",
-        "Part-Dieu에서는 휴대전화보다 수하물 관리가 우선이다. 플랫폼 확인 뒤 짐을 시야 안쪽에 둔다."
+        "장보기와 미식 구경은 Halles de Lyon Paul Bocuse 가 겸한다. 다만 이곳은 생활 물가가 아니라 선물·미식 가격대다.",
+        "도착일 점심은 숙소권 빵집·샐러드·샌드위치로 가볍게 한다. 첫날 부숑 코스는 넣지 않는다.",
+        "운동은 Rhône 강변 5–7km 러닝이다. 수영은 선택이며 시간표·수영모 규정을 따로 확인해야 한다."
       ],
       "arrivalStrategy": "Day 23 Lyon Part-Dieu 도착 뒤 큰 짐을 들고 Metro B→D로 환승하지 않고 택시로 확정 숙소에 간다. 체크인 뒤 가벼운 시내 이동부터 TCL 비접촉 결제를 쓴다.",
       "departureStrategy": "Day 27 체크아웃 뒤 택시로 Lyon Part-Dieu에 이동해 13:04 Paris행 확정 TGV를 탄다. Perrache로 가지 않도록 승차역을 확인한다.",
@@ -101,10 +140,10 @@
     "paris": {
       "staySummary": "15박 확정 숙소는 15구 78 Rue de Lourmel이다. 9월 24일 Gare de Lyon 도착과 10월 9일 CDG 출국은 큰 짐 때문에 택시로 고정하고, 체류 중에는 각자 휴대전화 또는 Navigo 매체로 이동한다.",
       "lifeEssentials": [
-        "9월 24–27일과 10월 5–8일은 개별 승차권, 9월 28일–10월 4일만 Navigo Weekly all zones를 쓴다.",
-        "Metro·Train·RER 단일권과 Bus·Tram 단일권은 서로 다른 상품이다. 환승 체계를 섞어 한 여정으로 계산하지 않는다.",
-        "장기체류 장보기·세탁·약국은 숙소 반경 생활권에서 해결하고, 박물관일에는 귀가 동선을 추가 관광으로 늘리지 않는다.",
-        "10월 9일은 체크아웃·가벼운 점심·공식 택시로 CDG 이동만 한다. Weekly를 소진하려고 RER B로 바꾸지 않는다."
+        "장보기·세탁·약국은 15구 숙소 반경 생활권에서 해결한다. 같은 동네의 빵집·시장·슈퍼를 최소 두 번 쓰는 것이 이 체류의 방식이다.",
+        "오전은 생활, 오후는 도시다. 운동·장보기·세탁을 먼저 하고 그 뒤에 관광을 붙인다.",
+        "9/25 는 생활 완충일이다. 슈퍼·빵집·약국 위치를 이날 파악해 두면 남은 14박이 편해진다.",
+        "박물관일에도 귀가 동선을 추가 관광으로 늘리지 않는다. 15박은 길고, 저녁은 15구에서 끝낸다."
       ],
       "arrivalStrategy": "Day 27 Paris Gare de Lyon 도착 뒤 큰 짐을 들고 Metro로 환승하지 않고 택시로 15구 숙소에 간다. 생활권 확인만 하고 개별 교통권은 다음 날 첫 이동에서 시작한다.",
       "departureStrategy": "Day 42에는 14:00 이전 공식 택시로 15구 숙소에서 CDG Terminal 1으로 출발한다. Paris Region Airports Ticket은 철도 비상안일 뿐 확정 동선이 아니다.",

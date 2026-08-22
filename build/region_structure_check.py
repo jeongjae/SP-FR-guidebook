@@ -39,12 +39,12 @@ SECTION_ORDER = ["overview", "attractions", "food", "stay", "life", "transport"]
 # 식당·카페 섹션의 하위 묶음. 라벨 → 그 묶음에 들어와도 되는 엔티티.
 FOOD_GROUPS = {
     "식당": {"restaurant", "wine-bar"},
-    "카페·빵집": {"cafe", "bakery"},
-    "시장·푸드홀": {"market", "food-hall"},
+    "카페": {"cafe"},
+    "빵집·시장·푸드홀": {"bakery", "market", "food-hall"},
 }
 
 # 교통의 하위 순서. 도착·출발 → 도시 교통 → 참고자료.
-TRANSPORT_ORDER = ["도착과 출발", "도시 교통", "공식 자료와 재확인"]
+TRANSPORT_ORDER = ["도착과 출발", "구간 내 이동", "공식 자료와 재확인"]
 
 # 없앤 섹션. 섹션 제목(sec-head)으로 되살아나면 안 된다. 접이식 요약
 # (<summary>)으로 개요 안에 접혀 있는 것은 콘텐츠 보존이라 통과다.
