@@ -1,0 +1,103 @@
+{
+ "$comment": [
+  "식당·카페 사진 상태. 2026-08-22 Wikimedia Commons 검색 API 로 22곳을 훑고",
+  "결과를 사람이 하나씩 읽어 판정했다.",
+  "",
+  "verified                 사진 설명이 그 업소를 가리킨다 — 카탈로그에 있다",
+  "missing-no-candidate     재사용 가능한 후보가 아예 없다",
+  "missing-wrong-entity-risk 이름이 겹치는 결과는 있으나 전부 다른 대상이다.",
+  "                         넣으면 현장에서 엉뚱한 가게를 찾게 된다 — 비워 둔다"
+ ],
+ "searchedAt": "2026-08-22",
+ "source": "Wikimedia Commons search API",
+ "places": {
+  "bar-canete": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 1건이 전부 다른 대상이다 — 예: Demography graphic of Pichilemu.png"
+  },
+  "bodega-joan": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: Blai 41.jpg"
+  },
+  "la-paradeta-sagrada-familia": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "la-zorra": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: La Zorra y el Cuervo.jpg"
+  },
+  "mercat-concepcio": {
+   "status": "verified",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  },
+  "casa-marieta": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: 2017.07.17.-17-Tiefer See oder Grubensee-Storkow (Mark)"
+  },
+  "mercat-del-lleo": {
+   "status": "verified",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  },
+  "le-figuier-de-saint-esprit": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 1건이 전부 다른 대상이다 — 예: La Pointe de Grave depuis Royan - Gironde Garonne Chare"
+  },
+  "restaurant-beatrice": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "chez-gilbert-cassis": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: Chez-Gilbert-Saigon(6).jpg"
+  },
+  "patisserie-weibel": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "fou-de-fafa-avignon": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "le-gibolin-arles": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "les-cocottes-saint-louis": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 2건이 전부 다른 대상이다 — 예: Croquis parisiens 2 Un chien d'arrêt. G.33805.jpg"
+  },
+  "cafe-comptoir-abel": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 1건이 전부 다른 대상이다 — 예: Jean qui grogne et Jean qui rit (1895) (14752686485).jp"
+  },
+  "chez-mamie-lise": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "daniel-et-denise": {
+   "status": "verified",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  },
+  "bouillon-chartier-montparnasse": {
+   "status": "verified",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  },
+  "boulangerie-pichard": {
+   "status": "missing-no-candidate",
+   "why": "Commons 검색 결과 0건"
+  },
+  "cafe-du-commerce": {
+   "status": "verified",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  },
+  "le-grand-pan": {
+   "status": "missing-wrong-entity-risk",
+   "why": "검색 결과 8건이 전부 다른 대상이다 — 예: Anfiteatro de las ruinas romanas de Itálica, Santiponce"
+  },
+  "marche-convention": {
+   "status": "verified",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+  }
+ }
+}

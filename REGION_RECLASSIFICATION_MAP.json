@@ -1,0 +1,999 @@
+{
+ "generatedBy": "build/region_audit.py",
+ "regions": {
+  "barcelona": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "bar-canete",
+     "title": "Bar Cañete",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "bodega-joan",
+     "title": "Bodega Joan",
+     "from": "장소 — 놓치지 말 것",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "la-paradeta-sagrada-familia",
+     "title": "La Paradeta Sagrada Família",
+     "from": "장소 — 놓치지 말 것",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "la-zorra",
+     "title": "La Zorra",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "mercat-concepcio",
+     "title": "Mercat de la Concepció",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "market"
+    }
+   ],
+   "foodToDayOrAttraction": [],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "la-paradeta-sagrada-familia",
+     "title": "La Paradeta Sagrada Família 점심"
+    },
+    {
+     "id": "bodega-joan",
+     "title": "Bodega Joan 저녁"
+    },
+    {
+     "id": "bar-canete",
+     "title": "Bar Cañete 점심"
+    },
+    {
+     "id": "la-zorra",
+     "title": "La Zorra 점심 (시체스)"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:role",
+     "title": "여행 전체에서의 역할",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 4장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:Hola Barcelona Travel Card 공식 상품·이용 ",
+     "title": "Hola Barcelona Travel Card 공식 상품·이용 범위",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Hola Barcelona·Aerobús 결합상품 조건",
+     "title": "Hola Barcelona·Aerobús 결합상품 조건",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Aerobús 공식 노선·정류장·운행시간",
+     "title": "Aerobús 공식 노선·정류장·운행시간",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Aerobús 공식 요금·구매",
+     "title": "Aerobús 공식 요금·구매",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:Barcelona Metro network",
+     "title": "Barcelona Metro network",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:Telefèric de Montjuïc map",
+     "title": "Telefèric de Montjuïc map",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "girona": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "casa-marieta",
+     "title": "Casa Marieta",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "mercat-del-lleo",
+     "title": "Mercat del Lleó",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "market"
+    }
+   ],
+   "foodToDayOrAttraction": [
+    {
+     "id": "collioure",
+     "title": "Collioure 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Collioure' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "stop:sant-feliu",
+     "title": "Sant Feliu de Guíxols 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "la-zorra",
+     "title": "La Zorra 점심 (시체스)"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:role",
+     "title": "여행 전체에서의 역할",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 4장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transport-resource:ATM Girona integrated network",
+     "title": "ATM Girona integrated network",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "nice": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "le-figuier-de-saint-esprit",
+     "title": "Le Figuier de Saint-Esprit",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "restaurant-beatrice",
+     "title": "Restaurant & Salon de Thé Béatrice",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    }
+   ],
+   "foodToDayOrAttraction": [
+    {
+     "id": "vieux-nice",
+     "title": "구시가지 점심 — 니스와즈 요리",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Vieux Nice — 구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "monaco",
+     "title": "Monaco Port Hercule & Monte-Carlo 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Monaco' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "menton",
+     "title": "Menton 저녁 — Le Petit Port",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Menton (멘통)' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "grasse",
+     "title": "Grasse 점심 & Fragonard 역사공장",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Grasse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "le-figuier-de-saint-esprit",
+     "title": "Le Figuier de Saint-Esprit 점심 (WISH-01)"
+    },
+    {
+     "id": "restaurant-beatrice",
+     "title": "Restaurant & Salon de Thé Béatrice 점심 (WISH-02)"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:role",
+     "title": "여행 전체에서의 역할",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 6장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:Lignes d’Azur 여행권 요금",
+     "title": "Lignes d’Azur 여행권 요금",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Lignes d’Azur 공항 Tram·Aéro 조건",
+     "title": "Lignes d’Azur 공항 Tram·Aéro 조건",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Lignes d’Azur 환승·공동 사용법",
+     "title": "Lignes d’Azur 환승·공동 사용법",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Lignes d’Azur 카드 안내",
+     "title": "Lignes d’Azur 카드 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Lignes d’Azur 공식 노선도",
+     "title": "Lignes d’Azur 공식 노선도",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:Lignes d’Azur main lines",
+     "title": "Lignes d’Azur main lines",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "aix": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "chez-gilbert-cassis",
+     "title": "Chez Gilbert",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "patisserie-weibel",
+     "title": "Pâtisserie Weibel",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "cafe"
+    }
+   ],
+   "foodToDayOrAttraction": [
+    {
+     "id": "grasse",
+     "title": "Grasse 점심 & Fragonard 역사공장",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Grasse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "vieil-aix",
+     "title": "Vieil Aix 구시가지 점심 식사",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Vieil Aix — 구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "vieux-port-marseille",
+     "title": "Vieux-Port 마르세유 항구 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Vieux-Port' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "chez-gilbert-cassis",
+     "title": "Chez Gilbert 점심 (Cassis 항구)"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:role",
+     "title": "여행 전체에서의 역할",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 5장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:Aix en Bus 비접촉 결제·공동 검증",
+     "title": "Aix en Bus 비접촉 결제·공동 검증",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Aix en Bus 검증·1시간 환승 규칙",
+     "title": "Aix en Bus 검증·1시간 환승 규칙",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:RTM 비접촉 결제·L50 요금",
+     "title": "RTM 비접촉 결제·L50 요금",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:La Métropole Mobilité 노선·시간표",
+     "title": "La Métropole Mobilité 노선·시간표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:Aix en Bus line maps",
+     "title": "Aix en Bus line maps",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "luberon": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [],
+   "foodToDayOrAttraction": [
+    {
+     "id": "gordes",
+     "title": "Gordes 시장 재료 피크닉 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Gordes' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "les-halles",
+     "title": "Les Halles d'Avignon 주변 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "fou-de-fafa-avignon",
+     "title": "Fou de Fafa 아비뇽 첫 저녁"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 4장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:ZOU! Vaucluse 공식 노선별 시간표",
+     "title": "ZOU! Vaucluse 공식 노선별 시간표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Pays d’Apt Luberon 관광청 버스 노선 안내",
+     "title": "Pays d’Apt Luberon 관광청 버스 노선 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Pays d’Apt Luberon 관광청 무차량 이동 안내",
+     "title": "Pays d’Apt Luberon 관광청 무차량 이동 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:ZOU! Vaucluse 노선별 시간표",
+     "title": "ZOU! Vaucluse 노선별 시간표",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "avignon": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "fou-de-fafa-avignon",
+     "title": "Fou de Fafa",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "le-gibolin-arles",
+     "title": "Le Gibolin",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "les-cocottes-saint-louis",
+     "title": "Les Cocottes Saint-Louis",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    }
+   ],
+   "foodToDayOrAttraction": [
+    {
+     "id": "les-halles",
+     "title": "Les Halles d'Avignon 주변 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "palais-des-papes",
+     "title": "교황청 광장 비스트로 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Palais des Papes' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "uzes",
+     "title": "Uzès Place aux Herbes 광장 테라스 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Uzès Place aux Herbes·구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "fou-de-fafa-avignon",
+     "title": "Fou de Fafa 아비뇽 첫 저녁"
+    },
+    {
+     "id": "les-cocottes-saint-louis",
+     "title": "Les Cocottes Saint-Louis 저녁 식사"
+    },
+    {
+     "id": "le-gibolin-arles",
+     "title": "Le Gibolin 점심 (아를 로케트 지구)"
+    },
+    {
+     "id": "cafe-comptoir-abel",
+     "title": "Café Comptoir Abel 부숑 첫 저녁"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 5장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:Orizo 공식 요금표",
+     "title": "Orizo 공식 요금표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Orizo 2026–2027 공식 노선도",
+     "title": "Orizo 2026–2027 공식 노선도",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Orizo 공식 P+R·무료 셔틀 안내",
+     "title": "Orizo 공식 P+R·무료 셔틀 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:liO 115 공식 2026년 9월 시간표 목록",
+     "title": "liO 115 공식 2026년 9월 시간표 목록",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:SNCF TER Avignon–Arles 공식 여정",
+     "title": "SNCF TER Avignon–Arles 공식 여정",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:Orizo schematic network",
+     "title": "Orizo schematic network",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "lyon": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "cafe-comptoir-abel",
+     "title": "Café Comptoir Abel",
+     "from": "장소 — 놓치지 말 것",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "chez-mamie-lise",
+     "title": "Chez Mamie Lise",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "daniel-et-denise",
+     "title": "Daniel et Denise",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    }
+   ],
+   "foodToDayOrAttraction": [
+    {
+     "id": "vieux-lyon",
+     "title": "Vieux Lyon 구시가지 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Vieux Lyon · 트라불' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "halles-de-lyon-paul-bocuse",
+     "title": "Halles Paul Bocuse 미식 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Halles de Lyon Paul Bocuse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "stop:part-dieu-lunch",
+     "title": "Part-Dieu역 점심 & TGV 플랫폼 대기",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "cafe-comptoir-abel",
+     "title": "Café Comptoir Abel 부숑 첫 저녁"
+    },
+    {
+     "id": "daniel-et-denise",
+     "title": "Daniel et Denise 정통 부숑 만찬"
+    },
+    {
+     "id": "chez-mamie-lise",
+     "title": "Chez Mamie Lise 점심 (안시)"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:role",
+     "title": "여행 전체에서의 역할",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 5장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:TCL 비접촉 결제·공동 검증·일일 상한",
+     "title": "TCL 비접촉 결제·공동 검증·일일 상한",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:TCL Zone 1·2 1회권 공식 요금",
+     "title": "TCL Zone 1·2 1회권 공식 요금",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:TCL F2 공식 노선·시간표",
+     "title": "TCL F2 공식 노선·시간표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:SNCF TER Lyon–Annecy 공식 운임·운행 안내",
+     "title": "SNCF TER Lyon–Annecy 공식 운임·운행 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:TCL Lyon·Villeurbanne network",
+     "title": "TCL Lyon·Villeurbanne network",
+     "to": "transport.references"
+    }
+   ]
+  },
+  "paris": {
+   "targetStructure": [
+    "overview",
+    "attractions.mustVisit",
+    "attractions.recommended",
+    "restaurantsCafes",
+    "accommodation",
+    "localLife",
+    "transport.arrival",
+    "transport.departure",
+    "transport.publicTransport",
+    "transport.references"
+   ],
+   "attractionToFood": [
+    {
+     "id": "bouillon-chartier-montparnasse",
+     "title": "Bouillon Chartier Montparnasse",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "boulangerie-pichard",
+     "title": "Boulangerie Pichard",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "bakery"
+    },
+    {
+     "id": "cafe-du-commerce",
+     "title": "Café du Commerce",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "le-grand-pan",
+     "title": "Le Grand Pan",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
+    },
+    {
+     "id": "marche-convention",
+     "title": "Marché Convention",
+     "from": "장소 — 그 밖의 장소",
+     "to": "restaurantsCafes",
+     "entity_type": "market"
+    }
+   ],
+   "foodToDayOrAttraction": [
+    {
+     "id": "stop:part-dieu-lunch",
+     "title": "Part-Dieu역 점심 & TGV 플랫폼 대기",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    },
+    {
+     "id": "stop:opera-lunch",
+     "title": "9구 누벨 아테네 / 오페라 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    },
+    {
+     "id": "stop:rue-du-bac-lunch",
+     "title": "7구 Rue du Bac 점심 식사",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    },
+    {
+     "id": "stop:champs-elysees-lunch",
+     "title": "샹젤리제 인근 비스트로 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    },
+    {
+     "id": "versailles",
+     "title": "베르사유 대운하 인근 점심 식사",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Versailles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "montorgueil",
+     "title": "레 알 / 몽토르게이 점심 식사",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Montorgueil' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    },
+    {
+     "id": "stop:iena-lunch",
+     "title": "이에나 / 윌슨 대로변 점심 식사",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "meal-slot",
+     "reason": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
+    {
+     "id": "cafe-du-commerce",
+     "title": "Café du Commerce 15구 브라세리 첫 저녁"
+    },
+    {
+     "id": "bouillon-chartier-montparnasse",
+     "title": "Bouillon Chartier Montparnasse 저녁"
+    },
+    {
+     "id": "cafe-du-commerce",
+     "title": "Café du Commerce 동네 저녁"
+    },
+    {
+     "id": "le-grand-pan",
+     "title": "Le Grand Pan 15구 비스트로 저녁"
+    },
+    {
+     "id": "le-grand-pan",
+     "title": "Le Grand Pan 파리 15박 고별 만찬"
+    },
+    {
+     "id": "cafe-du-commerce",
+     "title": "Café du Commerce 15구 마지막 점심"
+    }
+   ],
+   "removedSections": [
+    {
+     "id": "editorial:overview",
+     "title": "한눈에 보기",
+     "to": "overview",
+     "reason": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+    },
+    {
+     "id": "editorial:role",
+     "title": "여행 전체에서의 역할",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "editorial:rhythm",
+     "title": "추천 체류 리듬",
+     "to": "overview",
+     "reason": "페이지 하단 꼬리말에서 Overview 로 올린다"
+    },
+    {
+     "id": "section:days",
+     "title": "이 지역의 날들 — Day 카드 16장",
+     "to": "overview",
+     "reason": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+    }
+   ],
+   "transportMerges": [
+    {
+     "id": "transit-source:Île-de-France Mobilités 2026 공식 요금",
+     "title": "Île-de-France Mobilités 2026 공식 요금",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Navigo Weekly 공식 유효기간·매체",
+     "title": "Navigo Weekly 공식 유효기간·매체",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Metro‑Train‑RER Ticket 공식 범위·환승",
+     "title": "Metro‑Train‑RER Ticket 공식 범위·환승",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Paris Region Airports Ticket 공식 조건",
+     "title": "Paris Region Airports Ticket 공식 조건",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:Île-de-France Mobilités Metro map",
+     "title": "Île-de-France Mobilités Metro map",
+     "to": "transport.references"
+    }
+   ]
+  }
+ }
+}

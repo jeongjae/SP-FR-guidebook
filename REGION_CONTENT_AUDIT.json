@@ -1,0 +1,7127 @@
+{
+ "summary": {
+  "regions": 8,
+  "inventory_rows": 459,
+  "food_in_attractions": 22,
+  "attraction_in_food": 17,
+  "mealslot_in_food": 7,
+  "schedule_sections": 8,
+  "at_a_glance_sections": 8,
+  "footer_role_rhythm": 14,
+  "transport_strings_copied_from_days": 86,
+  "transport_blocks_after_merge": 57,
+  "cross_region_food_duplicates": 5,
+  "food_places": 22,
+  "food_places_without_photo": 16,
+  "food_places_without_price": 1,
+  "photo_orphans": 11
+ },
+ "inventory": [
+  {
+   "region": "barcelona",
+   "item_id": "bar-canete",
+   "title": "Bar Cañete",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    3
+   ],
+   "source": "source/CURRENT/30_Places/bar-canete.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "barcelona-historic-walk",
+   "title": "Barcelona 역사도심 — Barri Gòtic·Rambla 권역",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "walk",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/ASSETS/91_Place_Registry_v1.0.md",
+   "action": "KEEP",
+   "note": "요약이 없어 카드를 만들지 않는다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "barcelona-modernisme-walk",
+   "title": "Barcelona Modernisme — Eixample 권역",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "walk",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/ASSETS/91_Place_Registry_v1.0.md",
+   "action": "KEEP",
+   "note": "요약이 없어 카드를 만들지 않는다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "barcelona-sants",
+   "title": "Barcelona Sants",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "transport-node",
+   "target_section": "(렌더하지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    4
+   ],
+   "source": "source/CURRENT/30_Places/barcelona-sants.md",
+   "action": "KEEP",
+   "note": "이동 기준점 — 장소 페이지도 카드도 만들지 않는다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "barri-gotic",
+   "title": "Barri Gòtic",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    3
+   ],
+   "source": "source/CURRENT/30_Places/barri-gotic.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "biblioteca-de-catalunya",
+   "title": "Biblioteca de Catalunya",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    3
+   ],
+   "source": "source/CURRENT/30_Places/biblioteca-de-catalunya.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "bodega-joan",
+   "title": "Bodega Joan",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    2
+   ],
+   "source": "source/CURRENT/30_Places/bodega-joan.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "cau-ferrat",
+   "title": "Cau Ferrat",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    4
+   ],
+   "source": "source/CURRENT/30_Places/cau-ferrat.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "la-paradeta-sagrada-familia",
+   "title": "La Paradeta Sagrada Família",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    2
+   ],
+   "source": "source/CURRENT/30_Places/la-paradeta-sagrada-familia.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "la-zorra",
+   "title": "La Zorra",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    4
+   ],
+   "source": "source/CURRENT/30_Places/la-zorra.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "macba",
+   "title": "MACBA",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    3
+   ],
+   "source": "source/CURRENT/30_Places/macba.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "mercat-concepcio",
+   "title": "Mercat de la Concepció",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "market",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    3
+   ],
+   "source": "source/CURRENT/30_Places/mercat-concepcio.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "palau-de-maricel",
+   "title": "Palau de Maricel",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/palau-de-maricel.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "sagrada-familia",
+   "title": "Sagrada Família",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    2
+   ],
+   "source": "source/CURRENT/30_Places/sagrada-familia.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "sant-pau-recinte-modernista",
+   "title": "Sant Pau Recinte Modernista",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    2
+   ],
+   "source": "source/CURRENT/30_Places/sant-pau-recinte-modernista.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "sitges",
+   "title": "Sitges",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/ASSETS/91_Place_Registry_v1.0.md",
+   "action": "KEEP",
+   "note": "요약이 없어 카드를 만들지 않는다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "la-paradeta-sagrada-familia",
+   "title": "La Paradeta Sagrada Família 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    2
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "bodega-joan",
+   "title": "Bodega Joan 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    2
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "bar-canete",
+   "title": "Bar Cañete 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    3
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "la-zorra",
+   "title": "La Zorra 점심 (시체스)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    4
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "dish:La Paradeta · 제철 해산물",
+   "title": "La Paradeta · 제철 해산물",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "dish:Bodega Joan · 타파스",
+   "title": "Bodega Joan · 타파스",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "dish:Bar Cañete · 타파스·해산물",
+   "title": "Bar Cañete · 타파스·해산물",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "dish:시장 장보기 · 과일·빵",
+   "title": "시장 장보기 · 과일·빵",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "dish:La Zorra · arroz a banda",
+   "title": "La Zorra · arroz a banda",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/barcelona.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/barcelona.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/barcelona.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/barcelona.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "editorial:role",
+   "title": "여행 전체에서의 역할",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/barcelona.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/barcelona.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 4장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "hotel:Occidental Barcelona 1929",
+   "title": "Occidental Barcelona 1929",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    1,
+    2,
+    3
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "확정"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:staySummary",
+   "title": "확정 숙소는 Plaça d’Espanya·Hostafrancs 생활권이다. 공항 도착일에는 바로 체크인하고,",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:life[0]",
+   "title": "Day 1은 19:10 공항 도착 뒤 체크인만 한다. 장보기와 산책은 다음 날 아침으로 넘긴다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:life[1]",
+   "title": "3박 일정이라 별도 세탁일은 두지 않는다. 객실 설비와 세탁 필요 여부만 체크인 때 확인한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:life[2]",
+   "title": "약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:lateReturnRule",
+   "title": "시내 일정은 대부분 도보권이다. 피로가 크거나 늦어지면 Hola Barcelona가 적용되는 가장 단순한 메",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "BCN T1에서 Aerobús A1 편도권으로 Plaça Espanya까지 이동한 뒤 숙소까지 약 5분 걷는",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 4 아침 체크아웃 뒤 Barcelona Sants의 Hertz 영업소로 이동해 차량을 인수한다. Si",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "mode:Aerobús A1 편도 (BCN T1 → Plaça Espanya)",
+   "title": "Aerobús A1 편도 (BCN T1 → Plaça Espanya)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    1
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "mode:Plaça Espanya → 숙소 도보 약 5분",
+   "title": "Plaça Espanya → 숙소 도보 약 5분",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    1
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "mode:도보",
+   "title": "도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    2
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "mode:버스/Metro · 현장 재계산",
+   "title": "버스/Metro · 현장 재계산",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    2
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "mode:도보 (각 구간이 짧다)",
+   "title": "도보 (각 구간이 짧다)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    3
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transit:recommendation",
+   "title": "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transit-source:Hola Barcelona Travel Card 공식 상품·이용 ",
+   "title": "Hola Barcelona Travel Card 공식 상품·이용 범위",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transit-source:Hola Barcelona·Aerobús 결합상품 조건",
+   "title": "Hola Barcelona·Aerobús 결합상품 조건",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transit-source:Aerobús 공식 노선·정류장·운행시간",
+   "title": "Aerobús 공식 노선·정류장·운행시간",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transit-source:Aerobús 공식 요금·구매",
+   "title": "Aerobús 공식 요금·구매",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transport-resource:Barcelona Metro network",
+   "title": "Barcelona Metro network",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "barcelona",
+   "item_id": "transport-resource:Telefèric de Montjuïc map",
+   "title": "Telefèric de Montjuïc map",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "calella-de-palafrugell",
+   "title": "Calella de Palafrugell",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/calella-de-palafrugell.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "casa-marieta",
+   "title": "Casa Marieta",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/casa-marieta.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "girona",
+   "item_id": "collioure",
+   "title": "Collioure",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    5
+   ],
+   "source": "source/CURRENT/30_Places/collioure.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "girona-cathedral",
+   "title": "Girona Cathedral",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/girona-cathedral.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "girona-old-town-walk",
+   "title": "Girona 구시가지 — Call·성벽·대성당 권역",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "walk",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/ASSETS/91_Place_Registry_v1.0.md",
+   "action": "KEEP",
+   "note": "요약이 없어 카드를 만들지 않는다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mercat-del-lleo",
+   "title": "Mercat del Lleó",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "market",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/mercat-del-lleo.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "girona",
+   "item_id": "onyar",
+   "title": "Onyar 강변",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/onyar.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "pals",
+   "title": "Pals",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    6
+   ],
+   "source": "source/CURRENT/30_Places/pals.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "passeig-de-la-muralla",
+   "title": "Passeig de la Muralla",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/passeig-de-la-muralla.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "peralada",
+   "title": "Peralada",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/peralada.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "peratallada",
+   "title": "Peratallada",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    6
+   ],
+   "source": "source/CURRENT/30_Places/peratallada.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "girona",
+   "item_id": "la-zorra",
+   "title": "La Zorra 점심 (시체스)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": true,
+   "day_refs": [
+    4
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "girona",
+   "item_id": "collioure",
+   "title": "Collioure 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    5
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Collioure' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "girona",
+   "item_id": "stop:sant-feliu",
+   "title": "Sant Feliu de Guíxols 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    6
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "girona",
+   "item_id": "dish:La Zorra · arroz a banda",
+   "title": "La Zorra · arroz a banda",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "girona",
+   "item_id": "dish:Collioure 시장·생선 점심",
+   "title": "Collioure 시장·생선 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "girona",
+   "item_id": "dish:Cadaqués 카페",
+   "title": "Cadaqués 카페",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "girona",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/girona.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "girona",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/girona.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "girona",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/girona.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "girona",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/girona.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "girona",
+   "item_id": "editorial:role",
+   "title": "여행 전체에서의 역할",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/girona.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "girona",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/girona.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "girona",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 4장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "girona",
+   "item_id": "hotel:바스카라의 B&B",
+   "title": "바스카라의 B&B",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    4,
+    5,
+    6
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "확정"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:택시",
+   "title": "택시",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    4
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:렌터카 · C-32/AP-7",
+   "title": "렌터카 · C-32/AP-7",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    4
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:Sitges 도보",
+   "title": "Sitges 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    4
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:렌터카 · 국경 통과",
+   "title": "렌터카 · 국경 통과",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    5
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:Collioure/Cadaqués 도보",
+   "title": "Collioure/Cadaqués 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    5
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:렌터카",
+   "title": "렌터카",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    6
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "mode:GI-682 해안도로 회피 기본",
+   "title": "GI-682 해안도로 회피 기본",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    6
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "girona",
+   "item_id": "transport-resource:ATM Girona integrated network",
+   "title": "ATM Girona integrated network",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "cannes",
+   "title": "Cannes",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    9
+   ],
+   "source": "source/CURRENT/30_Places/cannes.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "cannes-walk",
+   "title": "Cannes Forville–Suquet–Croisette Walk",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "walk",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/cannes-walk.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "colline-du-chateau",
+   "title": "Colline du Château (성채 언덕)",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    8
+   ],
+   "source": "source/CURRENT/30_Places/colline-du-chateau.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "cours-saleya",
+   "title": "Cours Saleya",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    8
+   ],
+   "source": "source/CURRENT/30_Places/cours-saleya.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "le-figuier-de-saint-esprit",
+   "title": "Le Figuier de Saint-Esprit",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    9
+   ],
+   "source": "source/CURRENT/30_Places/le-figuier-de-saint-esprit.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "nice",
+   "item_id": "le-rocher",
+   "title": "Le Rocher — 모나코 구시가지",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    10
+   ],
+   "source": "source/CURRENT/30_Places/le-rocher.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "le-suquet",
+   "title": "Le Suquet — 칸 구시가지",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    9
+   ],
+   "source": "source/CURRENT/30_Places/le-suquet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "marche-de-la-liberation",
+   "title": "Marché de la Libération",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/marche-de-la-liberation.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "marche-forville",
+   "title": "Marché Forville",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/marche-forville.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "menton",
+   "title": "Menton (멘통)",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    10
+   ],
+   "source": "source/CURRENT/30_Places/menton.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "monaco",
+   "title": "Monaco",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    10
+   ],
+   "source": "source/CURRENT/30_Places/monaco.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "monaco-walk",
+   "title": "Monaco Rocher–Port–Monte Carlo Walk",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "walk",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/monaco-walk.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "nce-t2",
+   "title": "NCE T2",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "transport-node",
+   "target_section": "(렌더하지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    7
+   ],
+   "source": "source/CURRENT/30_Places/nce-t2.md",
+   "action": "KEEP",
+   "note": "이동 기준점 — 장소 페이지도 카드도 만들지 않는다"
+  },
+  {
+   "region": "nice",
+   "item_id": "nice-ville",
+   "title": "Nice-Ville",
+   "current_section": "(렌더하지 않는다)",
+   "entity_type": "transport-node",
+   "target_section": "(렌더하지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "source": "source/CURRENT/30_Places/nice-ville.md",
+   "action": "KEEP",
+   "note": "이동 기준점 — 장소 페이지도 카드도 만들지 않는다"
+  },
+  {
+   "region": "nice",
+   "item_id": "nice-walk",
+   "title": "Nice Old Town–Castle Hill Walk",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "walk",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/nice-walk.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "promenade-des-anglais",
+   "title": "Promenade des Anglais",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    7,
+    8
+   ],
+   "source": "source/CURRENT/30_Places/promenade-des-anglais.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "restaurant-beatrice",
+   "title": "Restaurant & Salon de Thé Béatrice",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    11
+   ],
+   "source": "source/CURRENT/30_Places/restaurant-beatrice.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "nice",
+   "item_id": "vieux-nice",
+   "title": "Vieux Nice — 구시가지",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    8
+   ],
+   "source": "source/CURRENT/30_Places/vieux-nice.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "villa-ephrussi-de-rothschild",
+   "title": "Villa Ephrussi de Rothschild",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    11
+   ],
+   "source": "source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "vieux-nice",
+   "title": "구시가지 점심 — 니스와즈 요리",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    8
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Vieux Nice — 구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "nice",
+   "item_id": "le-figuier-de-saint-esprit",
+   "title": "Le Figuier de Saint-Esprit 점심 (WISH-01)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    9
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "nice",
+   "item_id": "monaco",
+   "title": "Monaco Port Hercule & Monte-Carlo 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    10
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Monaco' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "nice",
+   "item_id": "menton",
+   "title": "Menton 저녁 — Le Petit Port",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    10
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Menton (멘통)' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "nice",
+   "item_id": "restaurant-beatrice",
+   "title": "Restaurant & Salon de Thé Béatrice 점심 (WISH-02)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    11
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "nice",
+   "item_id": "grasse",
+   "title": "Grasse 점심 & Fragonard 역사공장",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": true,
+   "day_refs": [
+    12
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Grasse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:시장 조달 또는 구시가지 골목 식당",
+   "title": "시장 조달 또는 구시가지 골목 식당",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:점심: Le Figuier de Saint-Esprit (WISH-01,",
+   "title": "점심: Le Figuier de Saint-Esprit (WISH-01, 미쉐린 1스타)",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:점심: Monaco (Café de Paris Monte-Carlo 또는",
+   "title": "점심: Monaco (Café de Paris Monte-Carlo 또는 Marché de la Condamine)",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:저녁: Menton (Le Petit Port 등)",
+   "title": "저녁: Menton (Le Petit Port 등)",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:아침: Villefranche 항구 카페 에스프레소 & 크루아상",
+   "title": "아침: Villefranche 항구 카페 에스프레소 & 크루아상",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:점심: Restaurant & Salon de Thé Béatrice (",
+   "title": "점심: Restaurant & Salon de Thé Béatrice (WISH-02)",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "dish:Grasse 점심",
+   "title": "Grasse 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "nice",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/nice.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "nice",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/nice.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "nice",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/nice.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "nice",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/nice.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "nice",
+   "item_id": "editorial:role",
+   "title": "여행 전체에서의 역할",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/nice.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "nice",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/nice.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "nice",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 6장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "nice",
+   "item_id": "hotel:Palais ALZIRA · 12 Rue Verdi",
+   "title": "Palais ALZIRA · 12 Rue Verdi",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "확정"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:staySummary",
+   "title": "확정 숙소는 Masséna 광장 북서쪽 Verdi 가의 Palais ALZIRA(12 Rue Verdi)다.",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[0]",
+   "title": "Day 7 은 16:55 공항 도착이라 첫날은 체크인과 동네 산책까지만 한다. 장보기는 다음 날 아침으로 넘",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[1]",
+   "title": "주방과 세탁기가 있다. 5박 중 세탁 1회를 넣을 수 있고 아침은 숙소에서 해결한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[2]",
+   "title": "장보기는 Day 8 아침 Cours Saleya 시장이 기본이다. 슈퍼·약국은 상호를 고정하지 않고 필요할 ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[3]",
+   "title": "시내는 도보와 트램이다. 공항 T2 에서 La Carte(보증금 €2)에 Multi voyages 를 충전해",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:lateReturnRule",
+   "title": "당일치기는 TER 로 돌아온다. Day 10 은 망통에서 20:30 복귀라 낮에 막차 시각을 미리 확인한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "Day 7 NCE 16:55 도착. 수하물 수령 뒤 트램 2호선으로 숙소 생활권까지 이동해 18:00–19:",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 12 08:00 체크아웃. Nice-Ville 역 Hertz 영업소(Avenue Thiers)에서 0",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:렌터카 — BCN T1 반납 12:30 (요청)",
+   "title": "렌터카 — BCN T1 반납 12:30 (요청)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    7
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:VY1521 15:30→16:55 (확정 [CONFIRMED])",
+   "title": "VY1521 15:30→16:55 (확정 [CONFIRMED])",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    7
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:NCE 도착 후 트램 2호선 이동",
+   "title": "NCE 도착 후 트램 2호선 이동",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    7
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:니스 시내 도보",
+   "title": "니스 시내 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    8
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:TER 왕복 (Nice-Ville ↔ Antibes ↔ Cannes)",
+   "title": "TER 왕복 (Nice-Ville ↔ Antibes ↔ Cannes)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    9
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:앙티브 및 칸 시내 도보",
+   "title": "앙티브 및 칸 시내 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    9
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:TER (Nice-Ville ➔ Monaco-Monte-Carlo ➔ M",
+   "title": "TER (Nice-Ville ➔ Monaco-Monte-Carlo ➔ Menton ➔ Nice-Ville)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    10
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:모나코 시내 공공 엘리베이터 및 도보",
+   "title": "모나코 시내 공공 엘리베이터 및 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    10
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:TER (Nice ➔ Villefranche)",
+   "title": "TER (Nice ➔ Villefranche)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    11
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:Lignes d’Azur 15 (Villefranche ↔ Saint-J",
+   "title": "Lignes d’Azur 15 (Villefranche ↔ Saint-Jean-Cap-Ferrat)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    11
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "mode:Lignes d’Azur 83 / 82 (Èze ↔ Nice)",
+   "title": "Lignes d’Azur 83 / 82 (Èze ↔ Nice)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    11
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "nice",
+   "item_id": "transit:recommendation",
+   "title": "공동 Multi voyages 12회로 시내·Èze 이동 준비",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "transit-source:Lignes d’Azur 여행권 요금",
+   "title": "Lignes d’Azur 여행권 요금",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "nice",
+   "item_id": "transit-source:Lignes d’Azur 공항 Tram·Aéro 조건",
+   "title": "Lignes d’Azur 공항 Tram·Aéro 조건",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "nice",
+   "item_id": "transit-source:Lignes d’Azur 환승·공동 사용법",
+   "title": "Lignes d’Azur 환승·공동 사용법",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "nice",
+   "item_id": "transit-source:Lignes d’Azur 카드 안내",
+   "title": "Lignes d’Azur 카드 안내",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "nice",
+   "item_id": "transit-source:Lignes d’Azur 공식 노선도",
+   "title": "Lignes d’Azur 공식 노선도",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "nice",
+   "item_id": "transport-resource:Lignes d’Azur main lines",
+   "title": "Lignes d’Azur main lines",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "atelier-des-lauves",
+   "title": "Atelier des Lauves",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    13
+   ],
+   "source": "source/CURRENT/30_Places/atelier-des-lauves.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "bastide-du-jas-de-bouffan",
+   "title": "Bastide du Jas de Bouffan",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/bastide-du-jas-de-bouffan.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "calanques",
+   "title": "Calanques",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    14
+   ],
+   "source": "source/CURRENT/30_Places/calanques.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "carrieres-de-bibemus",
+   "title": "Carrières de Bibémus",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/carrieres-de-bibemus.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "cassis",
+   "title": "Cassis 항구",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    14
+   ],
+   "source": "source/CURRENT/30_Places/cassis.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "chez-gilbert-cassis",
+   "title": "Chez Gilbert",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    14
+   ],
+   "source": "source/CURRENT/30_Places/chez-gilbert-cassis.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "aix",
+   "item_id": "cours-mirabeau",
+   "title": "Cours Mirabeau",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    13
+   ],
+   "source": "source/CURRENT/30_Places/cours-mirabeau.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "fort-saint-jean",
+   "title": "Fort Saint-Jean",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/fort-saint-jean.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "grasse",
+   "title": "Grasse",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    12
+   ],
+   "source": "source/CURRENT/30_Places/grasse.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "le-panier",
+   "title": "Le Panier",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    15
+   ],
+   "source": "source/CURRENT/30_Places/le-panier.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "marseille",
+   "title": "Marseille",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    15
+   ],
+   "source": "source/CURRENT/30_Places/marseille.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "montagne-sainte-victoire-terrain-des-peintres",
+   "title": "Montagne Sainte-Victoire · Terrain des Peintres",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/montagne-sainte-victoire-terrain-des-peintres.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "mucem",
+   "title": "Mucem",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    15
+   ],
+   "source": "source/CURRENT/30_Places/mucem.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "musee-granet",
+   "title": "Musée Granet",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    13
+   ],
+   "source": "source/CURRENT/30_Places/musee-granet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "notre-dame-de-la-garde",
+   "title": "Notre-Dame de la Garde",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    15
+   ],
+   "source": "source/CURRENT/30_Places/notre-dame-de-la-garde.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "patisserie-weibel",
+   "title": "Pâtisserie Weibel",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "cafe",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/patisserie-weibel.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "aix",
+   "item_id": "place-richelme-place-des-precheurs",
+   "title": "시장 — Place Richelme · Place des Prêcheurs",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    13
+   ],
+   "source": "source/CURRENT/30_Places/place-richelme-place-des-precheurs.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "rotonde",
+   "title": "Rotonde",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    12
+   ],
+   "source": "source/CURRENT/30_Places/rotonde.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "saint-paul-de-vence",
+   "title": "Saint-Paul-de-Vence",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    12
+   ],
+   "source": "source/CURRENT/30_Places/saint-paul-de-vence.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "vieil-aix",
+   "title": "Vieil Aix — 구시가지",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    13
+   ],
+   "source": "source/CURRENT/30_Places/vieil-aix.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "vieux-port-marseille",
+   "title": "Vieux-Port",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    15
+   ],
+   "source": "source/CURRENT/30_Places/vieux-port-marseille.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "grasse",
+   "title": "Grasse 점심 & Fragonard 역사공장",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    12
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Grasse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "aix",
+   "item_id": "vieil-aix",
+   "title": "Vieil Aix 구시가지 점심 식사",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    13
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Vieil Aix — 구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "aix",
+   "item_id": "chez-gilbert-cassis",
+   "title": "Chez Gilbert 점심 (Cassis 항구)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    14
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "aix",
+   "item_id": "vieux-port-marseille",
+   "title": "Vieux-Port 마르세유 항구 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    15
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Vieux-Port' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:Grasse 점심",
+   "title": "Grasse 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:시장 조달·카페 Weibel",
+   "title": "시장 조달·카페 Weibel",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:19:30 Coucou 또는 La Brocherie",
+   "title": "19:30 Coucou 또는 La Brocherie",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:Cassis 항구 생선 식당",
+   "title": "Cassis 항구 생선 식당",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:카시스 화이트와인 — 원산지 현지 확인",
+   "title": "카시스 화이트와인 — 원산지 현지 확인",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:Vieux-Port에서 생선·해산물 점심",
+   "title": "Vieux-Port에서 생선·해산물 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "dish:Coustellet 시장 점심",
+   "title": "Coustellet 시장 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "aix",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/aix.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "aix",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/aix.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "aix",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/aix.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "aix",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/aix.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "aix",
+   "item_id": "editorial:role",
+   "title": "여행 전체에서의 역할",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/aix.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "aix",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/aix.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "aix",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 5장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "aix",
+   "item_id": "hotel:Les Toits de Méjanes (Airbnb)",
+   "title": "Les Toits de Méjanes (Airbnb)",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "확정"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:렌터카 — Nice역 09:00 인수 (확정 [CONFIRMED])",
+   "title": "렌터카 — Nice역 09:00 인수 (확정 [CONFIRMED])",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    12
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:A8 고속도로 및 프로방스 국도",
+   "title": "A8 고속도로 및 프로방스 국도",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    12
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:Aix 시내 도보 (구시가지 및 북부 아틀리에 도보권)",
+   "title": "Aix 시내 도보 (구시가지 및 북부 아틀리에 도보권)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    13
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:차량 왕복 (Aix ↔ Cassis, A52/A50 고속도로 48km)",
+   "title": "차량 왕복 (Aix ↔ Cassis, A52/A50 고속도로 48km)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    14
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:Cassis Presqu'île 또는 Gorguettes 주차",
+   "title": "Cassis Presqu'île 또는 Gorguettes 주차",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    14
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:칼랑크 유람선 (Cassis 항구 출발)",
+   "title": "칼랑크 유람선 (Cassis 항구 출발)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    14
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:TER 기차 왕복 (Aix-en-Provence ↔ Marseille S",
+   "title": "TER 기차 왕복 (Aix-en-Provence ↔ Marseille Saint-Charles, 36~45분)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    15
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:RTM 버스 60번 (Vieux-Port ↔ Notre-Dame de l",
+   "title": "RTM 버스 60번 (Vieux-Port ↔ Notre-Dame de la Garde 직통)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    15
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "mode:마르세유 시내 도보 (Vieux-Port ➔ Le Panier ➔ For",
+   "title": "마르세유 시내 도보 (Vieux-Port ➔ Le Panier ➔ Fort Saint-Jean ➔ Mucem)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    15
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "aix",
+   "item_id": "transit:recommendation",
+   "title": "Aix는 도보, Marseille에서는 같은 카드로 바로 태그",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "aix",
+   "item_id": "transit-source:Aix en Bus 비접촉 결제·공동 검증",
+   "title": "Aix en Bus 비접촉 결제·공동 검증",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "aix",
+   "item_id": "transit-source:Aix en Bus 검증·1시간 환승 규칙",
+   "title": "Aix en Bus 검증·1시간 환승 규칙",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "aix",
+   "item_id": "transit-source:RTM 비접촉 결제·L50 요금",
+   "title": "RTM 비접촉 결제·L50 요금",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "aix",
+   "item_id": "transit-source:La Métropole Mobilité 노선·시간표",
+   "title": "La Métropole Mobilité 노선·시간표",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "aix",
+   "item_id": "transport-resource:Aix en Bus line maps",
+   "title": "Aix en Bus line maps",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "abbaye-de-senanque",
+   "title": "Abbaye de Sénanque",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    18
+   ],
+   "source": "source/CURRENT/30_Places/abbaye-de-senanque.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "bonnieux",
+   "title": "Bonnieux",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/bonnieux.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "coustellet",
+   "title": "Coustellet 생산자 시장",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    16
+   ],
+   "source": "source/CURRENT/30_Places/coustellet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "gordes",
+   "title": "Gordes",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    18
+   ],
+   "source": "source/CURRENT/30_Places/gordes.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "goult",
+   "title": "Goult",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    16,
+    17
+   ],
+   "source": "source/CURRENT/30_Places/goult.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "l-isle-sur-la-sorgue",
+   "title": "L’Isle-sur-la-Sorgue",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/l-isle-sur-la-sorgue.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "lourmarin",
+   "title": "Lourmarin",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    16
+   ],
+   "source": "source/CURRENT/30_Places/lourmarin.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "menerbes",
+   "title": "Ménerbes",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    18
+   ],
+   "source": "source/CURRENT/30_Places/menerbes.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "oppede-le-vieux",
+   "title": "Oppède-le-Vieux",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/oppede-le-vieux.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "roussillon-sentier-des-ocres",
+   "title": "Roussillon · Sentier des Ocres",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    17
+   ],
+   "source": "source/CURRENT/30_Places/roussillon-sentier-des-ocres.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "village-des-bories",
+   "title": "Village des Bories",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    18
+   ],
+   "source": "source/CURRENT/30_Places/village-des-bories.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "gordes",
+   "title": "Gordes 시장 재료 피크닉 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    18
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Gordes' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "les-halles",
+   "title": "Les Halles d'Avignon 주변 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": true,
+   "day_refs": [
+    19
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "fou-de-fafa-avignon",
+   "title": "Fou de Fafa 아비뇽 첫 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": true,
+   "day_refs": [
+    19
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "dish:Coustellet 시장 점심",
+   "title": "Coustellet 시장 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "dish:시장 재료 피크닉",
+   "title": "시장 재료 피크닉",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "dish:Fou de Fafa 또는 Les Cocottes Saint-Louis",
+   "title": "Fou de Fafa 또는 Les Cocottes Saint-Louis",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/luberon.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "luberon",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/luberon.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "luberon",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/luberon.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "luberon",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/luberon.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/luberon.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 4장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "hotel:Domaine des Peyre (후보)",
+   "title": "Domaine des Peyre (후보)",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    16,
+    17,
+    18
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "미확정 — 확정처럼 보이면 안 된다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:staySummary",
+   "title": "3박 거점은 대중교통 정류장이 아닌 농가 숙소다. Day 16–19의 마을 순회는 예약 렌터카를 정본으로 삼",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:life[0]",
+   "title": "식료품과 물은 Day 16 Coustellet에서 확보한다. 농가 도착 뒤 도보 장보기는 전제로 두지 않는다",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:life[1]",
+   "title": "연료는 절반 아래로 내리지 않는다. 특히 일요일 도착 전과 Avignon 출발 전 유인 주유 가능 시간을 확",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:life[2]",
+   "title": "석조마을은 외곽 지정 주차장에 세우고 골목으로 진입하지 않는다. Roussillon 오커길에는 먼지에 강한 ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:life[3]",
+   "title": "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:lateReturnRule",
+   "title": "가로등 없는 좁은 도로를 피하려고 일몰 전 귀환을 원칙으로 한다. 늦어지면 마지막 방문지를 생략하고 바로 숙",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "Day 16 Aix 체크아웃 뒤 렌터카로 Lourmarin·Coustellet·Goult를 거쳐 농가로 들어",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 19 체크아웃 뒤 렌터카로 Avignon에 이동한다. ZOU! 915·907은 차량 장애 때 일정을 ",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "mode:렌터카 (Aix ➔ Lourmarin ➔ Coustellet ➔ Goul",
+   "title": "렌터카 (Aix ➔ Lourmarin ➔ Coustellet ➔ Goult ➔ Domaine des Peyre)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    16
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "mode:차량 내 수하물 완전 은폐 (가림막 장착, 짐 노출 금지)",
+   "title": "차량 내 수하물 완전 은폐 (가림막 장착, 짐 노출 금지)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    16
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "mode:렌터카 (Domaine des Peyre ↔ Roussillon ↔ Go",
+   "title": "렌터카 (Domaine des Peyre ↔ Roussillon ↔ Goult ↔ 숙소)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    17
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "mode:황토길 오커 트레일 도보 (30분/50분 코스)",
+   "title": "황토길 오커 트레일 도보 (30분/50분 코스)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    17
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "mode:렌터카 (Domaine des Peyre ↔ Gordes ↔ Villag",
+   "title": "렌터카 (Domaine des Peyre ↔ Gordes ↔ Village des Bories ↔ Sénanque ➔ Ménerbes ➔ 숙소)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    18
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "mode:외곽 주차 후 도보 접근 (Parking Bel-Air / Parking",
+   "title": "외곽 주차 후 도보 접근 (Parking Bel-Air / Parking Charles de Gaulle)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    18
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "transit:recommendation",
+   "title": "교통권은 사지 않는다 — 렌터카 고정, ZOU!는 차량 장애 때만",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "luberon",
+   "item_id": "transit-source:ZOU! Vaucluse 공식 노선별 시간표",
+   "title": "ZOU! Vaucluse 공식 노선별 시간표",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "transit-source:Pays d’Apt Luberon 관광청 버스 노선 안내",
+   "title": "Pays d’Apt Luberon 관광청 버스 노선 안내",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "transit-source:Pays d’Apt Luberon 관광청 무차량 이동 안내",
+   "title": "Pays d’Apt Luberon 관광청 무차량 이동 안내",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "luberon",
+   "item_id": "transport-resource:ZOU! Vaucluse 노선별 시간표",
+   "title": "ZOU! Vaucluse 노선별 시간표",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "arenes-d-arles",
+   "title": "Arènes d’Arles",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    22
+   ],
+   "source": "source/CURRENT/30_Places/arenes-d-arles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "arles",
+   "title": "Arles",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/arles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "carrieres-des-lumieres",
+   "title": "Carrières des Lumières",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/carrieres-des-lumieres.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "cloitre-saint-trophime",
+   "title": "Cloître Saint-Trophime",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    22
+   ],
+   "source": "source/CURRENT/30_Places/cloitre-saint-trophime.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "fondation-vincent-van-gogh-arles",
+   "title": "Fondation Vincent van Gogh Arles",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/fondation-vincent-van-gogh-arles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "fou-de-fafa-avignon",
+   "title": "Fou de Fafa",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    19
+   ],
+   "source": "source/CURRENT/30_Places/fou-de-fafa-avignon.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "glanum",
+   "title": "Glanum",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/glanum.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "la-roquette",
+   "title": "La Roquette",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    22
+   ],
+   "source": "source/CURRENT/30_Places/la-roquette.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "le-gibolin-arles",
+   "title": "Le Gibolin",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    22
+   ],
+   "source": "source/CURRENT/30_Places/le-gibolin-arles.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "les-baux-de-provence",
+   "title": "Les Baux-de-Provence",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/les-baux-de-provence.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "les-cocottes-saint-louis",
+   "title": "Les Cocottes Saint-Louis",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    20
+   ],
+   "source": "source/CURRENT/30_Places/les-cocottes-saint-louis.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "les-halles",
+   "title": "Les Halles",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    19,
+    20
+   ],
+   "source": "source/CURRENT/30_Places/les-halles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "palais-des-papes",
+   "title": "Palais des Papes",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    19,
+    20
+   ],
+   "source": "source/CURRENT/30_Places/palais-des-papes.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "place-du-forum-arles",
+   "title": "Place du Forum",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/place-du-forum-arles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "pont-du-gard",
+   "title": "Pont du Gard",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    21
+   ],
+   "source": "source/CURRENT/30_Places/pont-du-gard.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "pont-saint-benezet",
+   "title": "Pont Saint-Bénézet",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    20
+   ],
+   "source": "source/CURRENT/30_Places/pont-saint-benezet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "rocher-des-doms",
+   "title": "Rocher des Doms",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    20
+   ],
+   "source": "source/CURRENT/30_Places/rocher-des-doms.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "saint-paul-de-mausole",
+   "title": "Saint-Paul-de-Mausole",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/saint-paul-de-mausole.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "saint-remy-de-provence",
+   "title": "Saint-Rémy-de-Provence",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/saint-remy-de-provence.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "theatre-antique-arles",
+   "title": "Théâtre antique",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    22
+   ],
+   "source": "source/CURRENT/30_Places/theatre-antique-arles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "uzes",
+   "title": "Uzès Place aux Herbes·구시가지",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    21
+   ],
+   "source": "source/CURRENT/30_Places/uzes.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "les-halles",
+   "title": "Les Halles d'Avignon 주변 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    19
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "fou-de-fafa-avignon",
+   "title": "Fou de Fafa 아비뇽 첫 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    19,
+    20,
+    21,
+    22
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "palais-des-papes",
+   "title": "교황청 광장 비스트로 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    20
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Palais des Papes' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "les-cocottes-saint-louis",
+   "title": "Les Cocottes Saint-Louis 저녁 식사",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    19,
+    20,
+    21,
+    22
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "uzes",
+   "title": "Uzès Place aux Herbes 광장 테라스 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    21
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Uzès Place aux Herbes·구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "le-gibolin-arles",
+   "title": "Le Gibolin 점심 (아를 로케트 지구)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    22
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "cafe-comptoir-abel",
+   "title": "Café Comptoir Abel 부숑 첫 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": true,
+   "day_refs": [
+    23
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "dish:Fou de Fafa 또는 Les Cocottes Saint-Louis",
+   "title": "Fou de Fafa 또는 Les Cocottes Saint-Louis",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "dish:Les Halles 조달",
+   "title": "Les Halles 조달",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "dish:Place du Forum 점심",
+   "title": "Place du Forum 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "dish:Café Comptoir Abel 저녁",
+   "title": "Café Comptoir Abel 저녁",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/avignon.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "avignon",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/avignon.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "avignon",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/avignon.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "avignon",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/avignon.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/avignon.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 5장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    19,
+    20,
+    21,
+    22,
+    23
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "hotel:La Terrasse du Clocher (후보)",
+   "title": "La Terrasse du Clocher (후보)",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    19,
+    20,
+    21,
+    22
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "미확정 — 확정처럼 보이면 안 된다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:staySummary",
+   "title": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:life[0]",
+   "title": "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:life[1]",
+   "title": "Day 20 성벽 안은 전부 걷고 차량을 꺼내지 않는다. 피로할 때만 무료 도심 셔틀이나 Orizo 단일권을",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:life[2]",
+   "title": "Day 21은 Uzès·Pont du Gard 렌터카 왕복, Day 22는 Avignon Centre↔Arl",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:life[3]",
+   "title": "차량 안에는 보이는 짐을 남기지 않고, 반납할 때 주유·차량 사진·영수증을 확인한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:lateReturnRule",
+   "title": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 ",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 23 Avignon TGV에서 차량 반납과 10:22 Lyon행 확정 열차 탑승을 처리한다. 반납 방",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:렌터카 (Domaine des Peyre ➔ Avignon 성벽 주차장)",
+   "title": "렌터카 (Domaine des Peyre ➔ Avignon 성벽 주차장)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    19
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:아비뇽 시내 도보",
+   "title": "아비뇽 시내 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    19
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:아비뇽 구시가지 도보 (성벽 내 압축권)",
+   "title": "아비뇽 구시가지 도보 (성벽 내 압축권)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    20
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:렌터카 (Avignon ↔ Uzès ↔ Pont du Gard ↔ Avi",
+   "title": "렌터카 (Avignon ↔ Uzès ↔ Pont du Gard ↔ Avignon)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    21
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:외곽 전용 주차장 (Parking Cordeliers / Pont du ",
+   "title": "외곽 전용 주차장 (Parking Cordeliers / Pont du Gard Rive Gauche)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    21
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:SNCF TER 기차 왕복 (Avignon Centre ↔ Arles, ",
+   "title": "SNCF TER 기차 왕복 (Avignon Centre ↔ Arles, 단 17분 소요)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    22
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "mode:아를 시내 도보 (원형경기장 ➔ 고대극장 ➔ 포룸 광장 ➔ 생트로핌 ➔ ",
+   "title": "아를 시내 도보 (원형경기장 ➔ 고대극장 ➔ 포룸 광장 ➔ 생트로핌 ➔ 라 로케트)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    22
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "transit:recommendation",
+   "title": "성벽 안은 도보 — Orizo 정기권 없이 TER 두 구간만 분리 구매",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "avignon",
+   "item_id": "transit-source:Orizo 공식 요금표",
+   "title": "Orizo 공식 요금표",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "transit-source:Orizo 2026–2027 공식 노선도",
+   "title": "Orizo 2026–2027 공식 노선도",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "transit-source:Orizo 공식 P+R·무료 셔틀 안내",
+   "title": "Orizo 공식 P+R·무료 셔틀 안내",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "transit-source:liO 115 공식 2026년 9월 시간표 목록",
+   "title": "liO 115 공식 2026년 9월 시간표 목록",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "transit-source:SNCF TER Avignon–Arles 공식 여정",
+   "title": "SNCF TER Avignon–Arles 공식 여정",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "avignon",
+   "item_id": "transport-resource:Orizo schematic network",
+   "title": "Orizo schematic network",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "annecy",
+   "title": "Annecy 구시가지",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    26
+   ],
+   "source": "source/CURRENT/30_Places/annecy.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "bellecour",
+   "title": "Bellecour",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    23
+   ],
+   "source": "source/CURRENT/30_Places/bellecour.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "cafe-comptoir-abel",
+   "title": "Café Comptoir Abel",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    23
+   ],
+   "source": "source/CURRENT/30_Places/cafe-comptoir-abel.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "chez-mamie-lise",
+   "title": "Chez Mamie Lise",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    26
+   ],
+   "source": "source/CURRENT/30_Places/chez-mamie-lise.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "croix-rousse",
+   "title": "Croix-Rousse",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    25
+   ],
+   "source": "source/CURRENT/30_Places/croix-rousse.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "daniel-et-denise",
+   "title": "Daniel et Denise",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    24
+   ],
+   "source": "source/CURRENT/30_Places/daniel-et-denise.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "fourviere",
+   "title": "Fourvière",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    24
+   ],
+   "source": "source/CURRENT/30_Places/fourviere.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "halles-de-lyon-paul-bocuse",
+   "title": "Halles de Lyon Paul Bocuse",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    25
+   ],
+   "source": "source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "parc-de-la-tete-d-or",
+   "title": "Parc de la Tête d'Or",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    25
+   ],
+   "source": "source/CURRENT/30_Places/parc-de-la-tete-d-or.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "vieux-lyon",
+   "title": "Vieux Lyon · 트라불",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    24
+   ],
+   "source": "source/CURRENT/30_Places/vieux-lyon.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "cafe-comptoir-abel",
+   "title": "Café Comptoir Abel 부숑 첫 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    23,
+    25
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "vieux-lyon",
+   "title": "Vieux Lyon 구시가지 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    24
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Vieux Lyon · 트라불' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "daniel-et-denise",
+   "title": "Daniel et Denise 정통 부숑 만찬",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    24
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "halles-de-lyon-paul-bocuse",
+   "title": "Halles Paul Bocuse 미식 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    25
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Halles de Lyon Paul Bocuse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "chez-mamie-lise",
+   "title": "Chez Mamie Lise 점심 (안시)",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    26
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "stop:part-dieu-lunch",
+   "title": "Part-Dieu역 점심 & TGV 플랫폼 대기",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    27
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "dish:Café Comptoir Abel 저녁",
+   "title": "Café Comptoir Abel 저녁",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "dish:Daniel et Denise 특별 저녁",
+   "title": "Daniel et Denise 특별 저녁",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "dish:Halles Paul Bocuse 2차 리옹 미식 경험 (12:30~14",
+   "title": "Halles Paul Bocuse 2차 리옹 미식 경험 (12:30~14:15 점심)",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "dish:Chez Mamie Lise 점심",
+   "title": "Chez Mamie Lise 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/lyon.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "lyon",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/lyon.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "lyon",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/lyon.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "lyon",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/lyon.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "editorial:role",
+   "title": "여행 전체에서의 역할",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/lyon.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/lyon.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 5장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "hotel:Lagrange Aparthotel Lyon Lumière",
+   "title": "Lagrange Aparthotel Lyon Lumière",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    23,
+    24,
+    25,
+    26
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "확정"
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:staySummary",
+   "title": "확정 숙소는 Monplaisir·Sans Souci 생활권의 Lagrange Aparthotel Lyon L",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:life[0]",
+   "title": "간이주방이 있으므로 체크인 뒤 숙소 주변에서 물·아침거리만 소량 산다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:life[1]",
+   "title": "Day 24·25는 같은 비접촉 카드로 두 사람을 검증하고, 환승 때도 같은 매체를 유지한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:life[2]",
+   "title": "Day 26 Annecy는 SNCF TER 별도 왕복이다. TCL 결제나 일일 상한에 포함되지 않는다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:life[3]",
+   "title": "Part-Dieu에서는 휴대전화보다 수하물 관리가 우선이다. 플랫폼 확인 뒤 짐을 시야 안쪽에 둔다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:lateReturnRule",
+   "title": "관광일에는 TCL 실시간 경로로 가장 단순한 Metro·tram·bus 귀환편을 고른다. Annecy 귀환 ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "Day 23 Lyon Part-Dieu 도착 뒤 큰 짐을 들고 Metro B→D로 환승하지 않고 택시로 확정",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 27 체크아웃 뒤 택시로 Lyon Part-Dieu에 이동해 13:04 Paris행 확정 TGV를 탄",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:렌터카 반납 (Avignon TGV역 Hertz [CONFIRMED] —",
+   "title": "렌터카 반납 (Avignon TGV역 Hertz [CONFIRMED] — 반납 시점 재확인, 일요일 영업 10:00 시작)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    23
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:TGV INOUI 12176 (Avignon TGV 10:22 ➔ Lyo",
+   "title": "TGV INOUI 12176 (Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28, 1등석 확정)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    23
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:Lyon 택시/지하철",
+   "title": "Lyon 택시/지하철",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    23
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:TCL 대중교통 (Metro D + Funicular F2 푸니쿨라)",
+   "title": "TCL 대중교통 (Metro D + Funicular F2 푸니쿨라)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    24
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:리옹 구시가지 및 손 강변 도보",
+   "title": "리옹 구시가지 및 손 강변 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    24
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:TCL 대중교통 (Metro D ➔ Metro C선 실크 언덕 상행, C",
+   "title": "TCL 대중교통 (Metro D ➔ Metro C선 실크 언덕 상행, Croix-Rousse ➔ Bus C13 직통 Halles 이동, Metro B ➔ Metro D 숙소 복귀)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    25
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:크루아루스 실크 공방 및 테트도르 공원 도보",
+   "title": "크루아루스 실크 공방 및 테트도르 공원 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    25
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:SNCF TER 기차 왕복 (Lyon Part-Dieu ↔ Annecy,",
+   "title": "SNCF TER 기차 왕복 (Lyon Part-Dieu ↔ Annecy, 직통 약 1시간 58분)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    26
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "mode:안시 구시가지 및 호숫가 도보",
+   "title": "안시 구시가지 및 호숫가 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    26
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "transit:recommendation",
+   "title": "TCL은 같은 비접촉 카드로 두 사람 검증 — 1시간 환승·일일 상한 자동 적용",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "lyon",
+   "item_id": "transit-source:TCL 비접촉 결제·공동 검증·일일 상한",
+   "title": "TCL 비접촉 결제·공동 검증·일일 상한",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "transit-source:TCL Zone 1·2 1회권 공식 요금",
+   "title": "TCL Zone 1·2 1회권 공식 요금",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "transit-source:TCL F2 공식 노선·시간표",
+   "title": "TCL F2 공식 노선·시간표",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "transit-source:SNCF TER Lyon–Annecy 공식 운임·운행 안내",
+   "title": "SNCF TER Lyon–Annecy 공식 운임·운행 안내",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "lyon",
+   "item_id": "transport-resource:TCL Lyon·Villeurbanne network",
+   "title": "TCL Lyon·Villeurbanne network",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "bnf-richelieu",
+   "title": "BnF Richelieu",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/bnf-richelieu.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "bouillon-chartier-montparnasse",
+   "title": "Bouillon Chartier Montparnasse",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    30
+   ],
+   "source": "source/CURRENT/30_Places/bouillon-chartier-montparnasse.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "paris",
+   "item_id": "boulangerie-pichard",
+   "title": "Boulangerie Pichard",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "bakery",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    28,
+    31,
+    35,
+    38
+   ],
+   "source": "source/CURRENT/30_Places/boulangerie-pichard.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "paris",
+   "item_id": "bourse-de-commerce-pinault-collection",
+   "title": "Bourse de Commerce — Pinault Collection",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    40
+   ],
+   "source": "source/CURRENT/30_Places/bourse-de-commerce-pinault-collection.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "cafe-du-commerce",
+   "title": "Café du Commerce",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    28,
+    32,
+    42
+   ],
+   "source": "source/CURRENT/30_Places/cafe-du-commerce.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "paris",
+   "item_id": "centre-pompidou",
+   "title": "Centre Pompidou",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/centre-pompidou.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "giverny",
+   "title": "Giverny",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/30_Places/giverny.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "grand-palais",
+   "title": "Grand Palais",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    28,
+    33
+   ],
+   "source": "source/CURRENT/30_Places/grand-palais.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "latin-quarter",
+   "title": "Latin Quarter",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    29
+   ],
+   "source": "source/CURRENT/30_Places/latin-quarter.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "le-grand-pan",
+   "title": "Le Grand Pan",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    34,
+    41
+   ],
+   "source": "source/CURRENT/30_Places/le-grand-pan.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "paris",
+   "item_id": "le-marais",
+   "title": "Le Marais",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    31,
+    39
+   ],
+   "source": "source/CURRENT/30_Places/le-marais.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "marche-convention",
+   "title": "Marché Convention",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "market",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    29,
+    36
+   ],
+   "source": "source/CURRENT/30_Places/marche-convention.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
+  },
+  {
+   "region": "paris",
+   "item_id": "montmartre-south-pigalle",
+   "title": "Montmartre · South Pigalle",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    40
+   ],
+   "source": "source/CURRENT/30_Places/montmartre-south-pigalle.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "montorgueil",
+   "title": "Montorgueil",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.recommended",
+   "duplicate": false,
+   "day_refs": [
+    40
+   ],
+   "source": "source/CURRENT/30_Places/montorgueil.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-carnavalet",
+   "title": "Musée Carnavalet",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    39
+   ],
+   "source": "source/CURRENT/30_Places/musee-carnavalet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-d-art-moderne-de-paris",
+   "title": "Musée d'Art Moderne de Paris",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    41
+   ],
+   "source": "source/CURRENT/30_Places/musee-d-art-moderne-de-paris.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-d-orsay",
+   "title": "Musée d'Orsay",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    32
+   ],
+   "source": "source/CURRENT/30_Places/musee-d-orsay.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-de-l-orangerie",
+   "title": "Musée de l'Orangerie",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    30
+   ],
+   "source": "source/CURRENT/30_Places/musee-de-l-orangerie.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-du-louvre",
+   "title": "Musée du Louvre",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    35
+   ],
+   "source": "source/CURRENT/30_Places/musee-du-louvre.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-du-luxembourg",
+   "title": "Musée du Luxembourg",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    29
+   ],
+   "source": "source/CURRENT/30_Places/musee-du-luxembourg.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-guimet",
+   "title": "Musée Guimet",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    41
+   ],
+   "source": "source/CURRENT/30_Places/musee-guimet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-gustave-moreau",
+   "title": "Musée Gustave Moreau",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    31
+   ],
+   "source": "source/CURRENT/30_Places/musee-gustave-moreau.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-jacquemart-andre",
+   "title": "Musée Jacquemart-André",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    38
+   ],
+   "source": "source/CURRENT/30_Places/musee-jacquemart-andre.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-marmottan-monet",
+   "title": "Musée Marmottan Monet",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    36
+   ],
+   "source": "source/CURRENT/30_Places/musee-marmottan-monet.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-picasso-paris",
+   "title": "Musée Picasso Paris",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    39
+   ],
+   "source": "source/CURRENT/30_Places/musee-picasso-paris.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "musee-rodin",
+   "title": "Musée Rodin",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    32
+   ],
+   "source": "source/CURRENT/30_Places/musee-rodin.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "notre-dame-de-paris",
+   "title": "Notre-Dame de Paris",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    29
+   ],
+   "source": "source/CURRENT/30_Places/notre-dame-de-paris.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "petit-palais",
+   "title": "Petit Palais",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    33
+   ],
+   "source": "source/CURRENT/30_Places/petit-palais.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "versailles",
+   "title": "Versailles",
+   "current_section": "장소 — 그 밖의 장소",
+   "entity_type": "attraction",
+   "target_section": "attractions.mustVisit",
+   "duplicate": false,
+   "day_refs": [
+    34
+   ],
+   "source": "source/CURRENT/30_Places/versailles.md",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "stop:part-dieu-lunch",
+   "title": "Part-Dieu역 점심 & TGV 플랫폼 대기",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    27
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "paris",
+   "item_id": "cafe-du-commerce",
+   "title": "Café du Commerce 15구 브라세리 첫 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "paris",
+   "item_id": "bouillon-chartier-montparnasse",
+   "title": "Bouillon Chartier Montparnasse 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "paris",
+   "item_id": "stop:opera-lunch",
+   "title": "9구 누벨 아테네 / 오페라 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    31
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "paris",
+   "item_id": "stop:rue-du-bac-lunch",
+   "title": "7구 Rue du Bac 점심 식사",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    32
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "paris",
+   "item_id": "cafe-du-commerce",
+   "title": "Café du Commerce 동네 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "paris",
+   "item_id": "stop:champs-elysees-lunch",
+   "title": "샹젤리제 인근 비스트로 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    33
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "paris",
+   "item_id": "versailles",
+   "title": "베르사유 대운하 인근 점심 식사",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    34
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Versailles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "paris",
+   "item_id": "le-grand-pan",
+   "title": "Le Grand Pan 15구 비스트로 저녁",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "paris",
+   "item_id": "montorgueil",
+   "title": "레 알 / 몽토르게이 점심 식사",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "attraction",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "'Montorgueil' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+  },
+  {
+   "region": "paris",
+   "item_id": "stop:iena-lunch",
+   "title": "이에나 / 윌슨 대로변 점심 식사",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "meal-slot",
+   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "duplicate": false,
+   "day_refs": [
+    41
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "DELETE",
+   "note": "상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다"
+  },
+  {
+   "region": "paris",
+   "item_id": "le-grand-pan",
+   "title": "Le Grand Pan 파리 15박 고별 만찬",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    41
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "paris",
+   "item_id": "cafe-du-commerce",
+   "title": "Café du Commerce 15구 마지막 점심",
+   "current_section": "먹거리 — 카드",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
+   "duplicate": false,
+   "day_refs": [
+    42
+   ],
+   "source": "data/daily-cards/day-*.json (stops[])",
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
+  },
+  {
+   "region": "paris",
+   "item_id": "dish:Palais Royal 주변 점심",
+   "title": "Palais Royal 주변 점심",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "paris",
+   "item_id": "dish:송별 저녁 (상향) — 장소 검토 중",
+   "title": "송별 저녁 (상향) — 장소 검토 중",
+   "current_section": "먹거리 — 목록",
+   "entity_type": "regional-dish",
+   "target_section": "restaurantsCafes.regionalDishes",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/daily-cards/day-*.json (food[])",
+   "action": "KEEP",
+   "note": "업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다"
+  },
+  {
+   "region": "paris",
+   "item_id": "editorial:verdict",
+   "title": "이 지역에 시간을 쓸 가치와 한계",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/paris.md",
+   "action": "KEEP",
+   "note": "Overview 의 첫 블록"
+  },
+  {
+   "region": "paris",
+   "item_id": "editorial:scenes",
+   "title": "꼭 경험할 세 장면",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/paris.md",
+   "action": "KEEP",
+   "note": "Overview 안"
+  },
+  {
+   "region": "paris",
+   "item_id": "editorial:skip",
+   "title": "생략해도 되는 것",
+   "current_section": "개요",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/paris.md",
+   "action": "KEEP",
+   "note": "Overview 안 접이식"
+  },
+  {
+   "region": "paris",
+   "item_id": "editorial:overview",
+   "title": "한눈에 보기",
+   "current_section": "한눈에 보기",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/paris.md",
+   "action": "MOVE",
+   "note": "'한눈에 보기' 섹션을 없애고 Overview 안 접이식으로 흡수한다 — 예상 체류·확정 일정·추천 이유는 다른 곳에 없다"
+  },
+  {
+   "region": "paris",
+   "item_id": "editorial:role",
+   "title": "여행 전체에서의 역할",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/paris.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "paris",
+   "item_id": "editorial:rhythm",
+   "title": "추천 체류 리듬",
+   "current_section": "꼬리말",
+   "entity_type": "editorial",
+   "target_section": "overview",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "source/CURRENT/20_Regions/paris.md",
+   "action": "MOVE",
+   "note": "페이지 하단 꼬리말에서 Overview 로 올린다"
+  },
+  {
+   "region": "paris",
+   "item_id": "section:days",
+   "title": "이 지역의 날들 — Day 카드 16장",
+   "current_section": "일정",
+   "entity_type": "schedule-index",
+   "target_section": "overview",
+   "duplicate": true,
+   "day_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "source": "data/daily-cards/day-*.json",
+   "action": "MOVE",
+   "note": "일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다"
+  },
+  {
+   "region": "paris",
+   "item_id": "hotel:78 Rue de Lourmel (파리 15구)",
+   "title": "78 Rue de Lourmel (파리 15구)",
+   "current_section": "숙박·생활",
+   "entity_type": "stay",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "source": "data/daily-cards/day-*.json (hotel)",
+   "action": "KEEP",
+   "note": "확정"
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:staySummary",
+   "title": "15박 확정 숙소는 15구 78 Rue de Lourmel이다. 9월 24일 Gare de Lyon 도착과 ",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:life[0]",
+   "title": "9월 24–27일과 10월 5–8일은 개별 승차권, 9월 28일–10월 4일만 Navigo Weekly al",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:life[1]",
+   "title": "Metro·Train·RER 단일권과 Bus·Tram 단일권은 서로 다른 상품이다. 환승 체계를 섞어 한 여",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:life[2]",
+   "title": "장기체류 장보기·세탁·약국은 숙소 반경 생활권에서 해결하고, 박물관일에는 귀가 동선을 추가 관광으로 늘리지 ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:life[3]",
+   "title": "10월 9일은 체크아웃·가벼운 점심·공식 택시로 CDG 이동만 한다. Weekly를 소진하려고 RER B로 ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:lateReturnRule",
+   "title": "야간에는 환승 수가 적고 밝은 출구로 연결되는 경로를 우선한다. 행사·경마 귀환 때 혼잡하면 다음 열차를 기",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "Day 27 Paris Gare de Lyon 도착 뒤 큰 짐을 들고 Metro로 환승하지 않고 택시로 15",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 42에는 14:00 이전 공식 택시로 15구 숙소에서 CDG Terminal 1으로 출발한다. Par",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ P",
+   "title": "TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 13호차 356·357 확정 [CONFIRMED])",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    27
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:Paris Gare de Lyon ➔ 15구 숙소 택시 이동 (약 35분",
+   "title": "Paris Gare de Lyon ➔ 15구 숙소 택시 이동 (약 35분 소요)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    27
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:Tootbus / Big Bus 파리 시티투어 버스 (2층 파노라마 풀 ",
+   "title": "Tootbus / Big Bus 파리 시티투어 버스 (2층 파노라마 풀 루프 2시간 15분)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    28
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 (Lourmel ↔ Concorde/Champs-Élysé",
+   "title": "메트로 8호선 (Lourmel ↔ Concorde/Champs-Élysées)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    28
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 10호선 (La Motte-Picquet ➔ Mabillon/Od",
+   "title": "메트로 10호선 (La Motte-Picquet ➔ Mabillon/Odéon)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    29
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:파리 좌안(Left Bank) 역사문화 도보",
+   "title": "파리 좌안(Left Bank) 역사문화 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    29
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 (Lourmel ↔ Concorde)",
+   "title": "메트로 8호선 (Lourmel ↔ Concorde)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    30
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:파리 우안 고전 예술·정원 도보",
+   "title": "파리 우안 고전 예술·정원 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    30
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 12호선 / 8호선 (15구 ↔ 9구 / 마레)",
+   "title": "메트로 12호선 / 8호선 (15구 ↔ 9구 / 마레)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    31
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:누벨 아테네 및 마레 지구 패션 도보",
+   "title": "누벨 아테네 및 마레 지구 패션 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    31
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 / 12호선 (Lourmel ➔ Solférino)",
+   "title": "메트로 8호선 / 12호선 (Lourmel ➔ Solférino)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    32
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:파리 7구 오르세·로댕 도보",
+   "title": "파리 7구 오르세·로댕 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    32
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 / 9호선 (15구 ↔ 샹젤리제/알마)",
+   "title": "메트로 8호선 / 9호선 (15구 ↔ 샹젤리제/알마)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    33
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:몽테뉴 대로 및 센 강변 도보",
+   "title": "몽테뉴 대로 및 센 강변 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    33
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:RER C선 (Javel역 ↔ Versailles Château Rive",
+   "title": "RER C선 (Javel역 ↔ Versailles Château Rive Gauche역, 직통 25분)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    34
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:베르사유 광활한 영지 도보 (궁전 ➔ 정원 ➔ 대운하 ➔ 트리아농)",
+   "title": "베르사유 광활한 영지 도보 (궁전 ➔ 정원 ➔ 대운하 ➔ 트리아농)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    34
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 + 1호선 (Lourmel ➔ Palais Royal - ",
+   "title": "메트로 8호선 + 1호선 (Lourmel ➔ Palais Royal - Musée du Louvre)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    35
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:루브르 박물관 회랑 도보",
+   "title": "루브르 박물관 회랑 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    35
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 9호선 (La Muette역) 또는 32번 버스",
+   "title": "메트로 9호선 (La Muette역) 또는 32번 버스",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    36
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:파리 16구 라늘라 정원 및 파시 도보",
+   "title": "파리 16구 라늘라 정원 및 파시 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    36
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 10호선 (Porte d'Auteuil역) + France Gal",
+   "title": "메트로 10호선 (Porte d'Auteuil역) + France Galop 공식 무료 셔틀버스(Navette)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    37
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:파리롱샹 경마장 보행",
+   "title": "파리롱샹 경마장 보행",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    37
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 + 9호선 (Lourmel ➔ Miromesnil)",
+   "title": "메트로 8호선 + 9호선 (Lourmel ➔ Miromesnil)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    38
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:8구 오스만·몽소 도보",
+   "title": "8구 오스만·몽소 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    38
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 (Lourmel ↔ Saint-Sébastien - Fro",
+   "title": "메트로 8호선 (Lourmel ↔ Saint-Sébastien - Froissart / Saint-Paul)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    39
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:마레 지구 17세기 귀족 저택 도보",
+   "title": "마레 지구 17세기 귀족 저택 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    39
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 8호선 / 1호선 / 12호선 (15구 ↔ 레 알 ↔ 몽마르트르 ",
+   "title": "메트로 8호선 / 1호선 / 12호선 (15구 ↔ 레 알 ↔ 몽마르트르 Abbesses)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:몽마르트르 언덕 돌계단 도보",
+   "title": "몽마르트르 언덕 돌계단 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    40
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:메트로 9호선 / 6호선 (15구 ↔ Iéna / Trocadéro)",
+   "title": "메트로 9호선 / 6호선 (15구 ↔ Iéna / Trocadéro)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    41
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:이에나 광장 및 트로카데로 도보",
+   "title": "이에나 광장 및 트로카데로 도보",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    41
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:파리 공식 택시 (15구 ➔ CDG 터미널 1 정액제 약 60분, €65",
+   "title": "파리 공식 택시 (15구 ➔ CDG 터미널 1 정액제 약 60분, €65)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    42
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "mode:아시아나항공 OZ502 (CDG 터미널 1 19:10 ➔ ICN 터미널 ",
+   "title": "아시아나항공 OZ502 (CDG 터미널 1 19:10 ➔ ICN 터미널 2 10/10 14:10, 확정 · 48G·48H)",
+   "current_section": "교통 — 자유문자열 목록",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": true,
+   "day_refs": [
+    42
+   ],
+   "source": "data/daily-cards/day-*.json (transport[])",
+   "action": "DELETE",
+   "note": "Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다"
+  },
+  {
+   "region": "paris",
+   "item_id": "transit:recommendation",
+   "title": "Weekly는 9/28–10/4 한 번만 — 앞뒤는 각자 개별권, CDG는 확정 택시",
+   "current_section": "교통 — 도시 공공교통",
+   "entity_type": "transport",
+   "target_section": "transport.publicTransport",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "paris",
+   "item_id": "transit-source:Île-de-France Mobilités 2026 공식 요금",
+   "title": "Île-de-France Mobilités 2026 공식 요금",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "paris",
+   "item_id": "transit-source:Navigo Weekly 공식 유효기간·매체",
+   "title": "Navigo Weekly 공식 유효기간·매체",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "paris",
+   "item_id": "transit-source:Metro‑Train‑RER Ticket 공식 범위·환승",
+   "title": "Metro‑Train‑RER Ticket 공식 범위·환승",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "paris",
+   "item_id": "transit-source:Paris Region Airports Ticket 공식 조건",
+   "title": "Paris Region Airports Ticket 공식 조건",
+   "current_section": "교통 — 공식 출처 접이식",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-facts.json",
+   "action": "MOVE",
+   "note": "참고 링크는 Transport 맨 아래 References 로 모은다"
+  },
+  {
+   "region": "paris",
+   "item_id": "transport-resource:Île-de-France Mobilités Metro map",
+   "title": "Île-de-France Mobilités Metro map",
+   "current_section": "교통 — 교통 지도·공식 자료",
+   "entity_type": "transport-reference",
+   "target_section": "transport.references",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/transit-resources.json",
+   "action": "MOVE",
+   "note": ""
+  }
+ ],
+ "foodCompleteness": [
+  {
+   "slug": "chez-gilbert-cassis",
+   "name": "Chez Gilbert",
+   "region": "aix",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    14
+   ]
+  },
+  {
+   "slug": "patisserie-weibel",
+   "name": "Pâtisserie Weibel",
+   "region": "aix",
+   "entity_type": "cafe",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": []
+  },
+  {
+   "slug": "fou-de-fafa-avignon",
+   "name": "Fou de Fafa",
+   "region": "avignon",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    19
+   ]
+  },
+  {
+   "slug": "le-gibolin-arles",
+   "name": "Le Gibolin",
+   "region": "avignon",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    22
+   ]
+  },
+  {
+   "slug": "les-cocottes-saint-louis",
+   "name": "Les Cocottes Saint-Louis",
+   "region": "avignon",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    20
+   ]
+  },
+  {
+   "slug": "bar-canete",
+   "name": "Bar Cañete",
+   "region": "barcelona",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": "2026-08-21",
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    3
+   ]
+  },
+  {
+   "slug": "bodega-joan",
+   "name": "Bodega Joan",
+   "region": "barcelona",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": "2026-08-21",
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    2
+   ]
+  },
+  {
+   "slug": "la-paradeta-sagrada-familia",
+   "name": "La Paradeta Sagrada Família",
+   "region": "barcelona",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": "2026-08-21",
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    2
+   ]
+  },
+  {
+   "slug": "la-zorra",
+   "name": "La Zorra",
+   "region": "barcelona",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": "2026-08-21",
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    4
+   ]
+  },
+  {
+   "slug": "mercat-concepcio",
+   "name": "Mercat de la Concepció",
+   "region": "barcelona",
+   "entity_type": "market",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": "2026-08-21",
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    3
+   ]
+  },
+  {
+   "slug": "casa-marieta",
+   "name": "Casa Marieta",
+   "region": "girona",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": []
+  },
+  {
+   "slug": "mercat-del-lleo",
+   "name": "Mercat del Lleó",
+   "region": "girona",
+   "entity_type": "market",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": false,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": []
+  },
+  {
+   "slug": "cafe-comptoir-abel",
+   "name": "Café Comptoir Abel",
+   "region": "lyon",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    23
+   ]
+  },
+  {
+   "slug": "chez-mamie-lise",
+   "name": "Chez Mamie Lise",
+   "region": "lyon",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    26
+   ]
+  },
+  {
+   "slug": "daniel-et-denise",
+   "name": "Daniel et Denise",
+   "region": "lyon",
+   "entity_type": "restaurant",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    24
+   ]
+  },
+  {
+   "slug": "le-figuier-de-saint-esprit",
+   "name": "Le Figuier de Saint-Esprit",
+   "region": "nice",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    9
+   ]
+  },
+  {
+   "slug": "restaurant-beatrice",
+   "name": "Restaurant & Salon de Thé Béatrice",
+   "region": "nice",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    11
+   ]
+  },
+  {
+   "slug": "bouillon-chartier-montparnasse",
+   "name": "Bouillon Chartier Montparnasse",
+   "region": "paris",
+   "entity_type": "restaurant",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    30
+   ]
+  },
+  {
+   "slug": "boulangerie-pichard",
+   "name": "Boulangerie Pichard",
+   "region": "paris",
+   "entity_type": "bakery",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    28,
+    31,
+    35,
+    38
+   ]
+  },
+  {
+   "slug": "cafe-du-commerce",
+   "name": "Café du Commerce",
+   "region": "paris",
+   "entity_type": "restaurant",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    28,
+    32,
+    42
+   ]
+  },
+  {
+   "slug": "le-grand-pan",
+   "name": "Le Grand Pan",
+   "region": "paris",
+   "entity_type": "restaurant",
+   "photo": false,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    34,
+    41
+   ]
+  },
+  {
+   "slug": "marche-convention",
+   "name": "Marché Convention",
+   "region": "paris",
+   "entity_type": "market",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": false,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    29,
+    36
+   ]
+  }
+ ],
+ "photoOrphans": [
+  {
+   "placeId": "cadaques",
+   "imageId": "girona-cadaques-01",
+   "verdict": "unregistered",
+   "why": "Cadaqués 는 명부에 없다. Day 5 동선에 있으나 장소로 승격되지 않았다"
+  },
+  {
+   "placeId": "tossa-de-mar",
+   "imageId": "girona-tossa-01",
+   "verdict": "unregistered",
+   "why": "Tossa de Mar 는 명부에 없다"
+  },
+  {
+   "placeId": "sant-feliu-de-guixols",
+   "imageId": "girona-sant-feliu-01",
+   "verdict": "unregistered",
+   "why": "Day 6 점심 슬롯이 가리키는 곳인데 장소로 승격되지 않았다"
+  },
+  {
+   "placeId": "pantheon-paris",
+   "imageId": "paris-pantheon-01",
+   "verdict": "unregistered",
+   "why": "팡테옹은 명부에 없다. 라탱 지구 장소와 별개 건물이라 임의로 잇지 않는다"
+  },
+  {
+   "placeId": "jardin-du-luxembourg",
+   "imageId": "paris-luxembourg-01",
+   "verdict": "unregistered",
+   "why": "뤽상부르 공원은 명부에 없다. 뤽상부르 미술관과 다른 대상이다"
+  },
+  {
+   "placeId": "marche-monge",
+   "imageId": "paris-marche-monge-01",
+   "verdict": "unregistered",
+   "why": "몽주 시장은 명부에 없다"
+  },
+  {
+   "placeId": "palais-royal",
+   "imageId": "paris-palais-royal-01",
+   "verdict": "unregistered",
+   "why": "팔레 루아얄은 명부에 없다"
+  },
+  {
+   "placeId": "passages-couverts",
+   "imageId": "paris-passages-01",
+   "verdict": "unregistered",
+   "why": "갤러리 비비엔 등 아케이드는 명부에 없다"
+  },
+  {
+   "placeId": "marche-des-enfants-rouges",
+   "imageId": "paris-enfants-rouges-01",
+   "verdict": "unregistered",
+   "why": "앙팡 루주 시장은 명부에 없다. 마레 장소와 별개 대상이다"
+  },
+  {
+   "placeId": "canal-saint-martin",
+   "imageId": "paris-canal-saint-martin-01",
+   "verdict": "unregistered",
+   "why": "생마르탱 운하는 명부에 없다"
+  },
+  {
+   "placeId": "seine",
+   "imageId": "paris-seine-01",
+   "verdict": "unregistered",
+   "why": "센강변 부키니스트는 명부에 없다"
+  }
+ ]
+}

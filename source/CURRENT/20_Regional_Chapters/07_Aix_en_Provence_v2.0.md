@@ -172,51 +172,24 @@ Julia의 수영장 접근성은 숙소평가 가중치에서 제외한다.
 
 > 이 범위는 예약가가 아니라 계획예산이다. 2026년 9월 8–13일 실제 취소가능 총액을 동일 날짜·동일 객실조건으로 비교한다.
 
-### 숙소 후보 — 현지 결정용
+### 확정 숙소
 
-> **현지 결정 방침 (DEC-039, 2026-08-15).** 이 구간 숙소는 사전 예약하지 않고
-> 현지에서 결정한다. 아래 후보는 현장 결정용 자료다 — 도착 1–2일 전 전화·공식
-> 페이지로 재고·요금·설비를 확인한 뒤 고른다. 아래 순위 문구 중 "우선 예약"은
-> 사전예약 모드에서 작성된 것으로, 현지 결정 모드에서는 "우선 확인"으로 읽는다.
+**2026-08-19 예약 확정.** DEC-039(2026-08-15)의 '프로방스 3거점 현지 결정'
+방침은 Aix 에 한해 이 예약으로 끝났다. 위의 조건표와 예산 범위는 이 숙소를
+고른 근거로 남긴다 — 지금부터 읽을 것은 아래 확정값이다.
 
-### 1순위 — Aparthotel Adagio Aix-en-Provence Centre
+| 항목 | 확정 내용 |
+|---|--- |
+| 숙소 | **Les Toits de Méjanes** (Airbnb) |
+| 주소 | 2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence |
+| 체크인 | 9/9(수) **15:00**부터 — Day 12 도착 예정 16:45 |
+| 체크아웃 | 9/13(일) **14:00**까지 — Day 16 출발 08:00 |
+| 박수 | 4박 |
+| 예약 | Airbnb 확정 [CONFIRMED] |
+| 주차 | **확정되지 않았다** {{badge:field-recheck|숙소 주차 가능 여부·요금 확인}} 아래 공영주차(Rotonde·Mignet)를 예비안으로 둔다 |
 
-- 위치: 3–5 Rue des Chartreux, Sextius·Rotonde 북서쪽
-- 장점: 구시가지·Allées Provençales 도보, 주방, 냉방, 아파트형, 중심 외곽 진입
-- 주차: 공식 예약과 차량 높이·요금 확인 필요
-- 적합 이유: **4박 생활형 체류와 차량 진입의 균형이 가장 좋다.**
-- 연락처: 04 42 37 98 98 {{badge:field-recheck|재확인}}
-- 판단: 실제 총액이 상한 내이면 우선 확인
-
-### 2순위 — Odalys City Aix Centre Rotonde / Les Floridianes
-
-- 위치: Rotonde 남쪽·역/버스터미널권
-- 장점: kitchenette, 냉방, Cours Mirabeau 도보, 유료 실내주차, 4–10월 계절수영장
-- 주의: Julia의 수영운동용 시설로 평가하지 않음. 차량 높이 제한과 주차예약 확인
-- 연락처: 04 42 37 23 23 {{badge:field-recheck|재확인}}
-
-### 추가 후보 — Maison Dauphine (2026-08-15 조사)
-
-> 아래 값은 2026-08-15 조언 문서 기반의 **미검증 참고치**다. 현지 결정 전
-> 공식 페이지에서 확인한다.
-
-- 위치·형태: 구시가지 안쪽(Mazarin 방향) guest house · self-catering
-- 연락처: 06 51 06 18 75 {{badge:field-recheck|재확인}}
-- 참고 요금: 1박 €170–276 수준 {{badge:field-recheck|재확인}}
-- 장점: 구시가지 한가운데 도보 생활권, 생활형 숙박, garage 보유로 알려짐
-- 확인사항: 실제 요금·garage 진입 조건·Aix 관광청 등록 여부
-- 성격: Adagio(생활 편의)와 반대편 — **분위기·도시생활 경험 우선**일 때의 후보
-- 적합 이유: Aix Centre역, Mazarin, 도심 생활권 접근이 좋다.
-
-### 숙소 선택 결론
-
-1. Adagio Centre
-2. Les Floridianes
-3. Séjours & Affaires Mirabeau
-4. Adagio Access Université
-5. Hôtel Rotonde
-
-실제 총액이 비슷하면 **Adagio Centre**를 선택한다. 주차예약이 불가능하거나 늦은 체크인에 불리하면 Les Floridianes 또는 Hôtel Rotonde로 전환한다.
+> **도착일에 확인할 것.** 건물 진입(entrée A)과 6층 승강기, 주차 가능 여부,
+> 쓰레기 배출 요일. 차는 시내일(9/10·9/12)에는 움직이지 않는다.
 
 ## 도착·출발·지역 내 교통
 
@@ -645,9 +618,8 @@ Calissoun은 화·목·토 Richelme 시장에 출점하는 공식 안내가 있�
 
 Rotonde→Cours Mirabeau→Parc Jourdan 왕복 4–6km. 차량과 보행자가 많아 속도운동보다 easy run에 적합하다.
 
-- Adagio Access Université에는 피트니스 시설이 공식 안내되어 있어 숙소 선택 시 활용 가능
 - Basic-Fit Aix는 24시간 시설이 있으나 관광객 1일권이 공식 확인되지 않았으므로 기본 일정에 넣지 않는다.
-- 4박 동안 정식 근력운동 1회가 꼭 필요하면 숙소 확정 후 day pass 가능 시설을 다시 조사한다.
+- 4박 동안 정식 근력운동 1회가 꼭 필요하면 현장에서 day pass 가능 시설을 확인한다. 확정 숙소(Les Toits de Méjanes)에는 피트니스 시설이 확인되지 않았다.
 
 #### Piscine Yves Blanc — 기본 선택
 
@@ -952,15 +924,12 @@ Day 14 기본안이다. 기상·화재통제·보트 운항을 전날과 당일 
 - Piscine Yves Blanc practical page: https://www.aixenprovence.fr/Piscine-Yves-Blanc
 - Parc de la Torse: https://www.aixenprovence.fr/Promenade-de-la-Torse
 
-### 숙소 공식사이트
+### 숙소
 
-- Adagio Aix Centre: https://all.accor.com/hotel/6796/index.en.shtml
-- Adagio Access Aix Université: https://all.accor.com/hotel/C5J5/index.en.shtml
-- Odalys Les Floridianes: https://www.odalys-vacation-rental.com/country-holidays-france/provence-and-luberon/aix-en-provence/aix-en-provence-centre-rotonde-les-floridianes.html
-- Séjours & Affaires Mirabeau: https://www.sejours-affaires.com/uk/hotel-residence-aparthotel-aix-26.html
-- Hôtel Rotonde: https://www.hotel-rotonde.com/en/
-- Aquabella: https://www.aquabella.fr/en/
-- Grand Hôtel Roi René MGallery: https://mgallery.accor.com/en/hotels/1169.html
+숙소는 **Les Toits de Méjanes (Airbnb)** 로 확정됐다 (2026-08-19). 예약 상세와
+체크인·체크아웃 시각은 위 '확정 숙소' 표에 있고, 원본은 Airbnb 예약 확인서와
+`data/daily-cards/day-12.json` 이다. 검토했던 호텔 후보 목록은 2026-08-19
+예약으로 폐기했다.
 
 ### 음식·카페
 

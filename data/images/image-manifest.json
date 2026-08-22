@@ -378,7 +378,7 @@
     },
     {
       "imageId": "barcelona-mercat-concepcio-01",
-      "placeId": "mercat-de-la-concepcio",
+      "placeId": "mercat-concepcio",
       "title": "066 Mercat de la Concepció, c. Aragó 311 bis (Barcelona), interior.jpg",
       "titleKo": "콘셉시오 시장 내부",
       "description": "Mercat de la Concepció, c. Aragó 311 bis (Barcelona), interior",
@@ -11099,6 +11099,319 @@
       "originalBytes": 2274335,
       "storedWidth": 4000,
       "storedHeight": 1971
+    },
+    {
+      "imageId": "girona-mercat-del-lleo-01",
+      "placeId": "mercat-del-lleo",
+      "region": "girona",
+      "creator": "Winniepix",
+      "license": "CC BY 2.0",
+      "licenseCode": "cc-by",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Girona%27s_fresh_food_market%2C_the_Mercat_del_Lle%C3%B3_%2853700437309%29.jpg",
+      "originalWidth": 7606,
+      "originalHeight": 4275,
+      "altKo": "1944년 개장한 지로나 중앙시장 메르카트 델 레오의 내부 가판대",
+      "captionKo": "1993년에 올린 현대식 지붕 아래로 60여 개 가판대가 이어진다.",
+      "titleKo": "메르카트 델 레오",
+      "title": "Girona's fresh food market, the Mercat del Lleó (53700437309).jpg",
+      "description": "사진 설명이 'Girona's fresh food market, the Mercat del Lleó / Inaugurated in 1944' — 명부의 그 시장이다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Girona's_fresh_food_market,_the_Mercat_del_Lleó_(53700437309).jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalPath": "source/ASSETS/photos/originals/girona-mercat-del-lleo-01.jpg",
+      "originalSha256": "41a3454b538cd8f286102993354f487d4af274b073054dc83feae5a9abc63115",
+      "originalBytes": 2163531,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/girona.html",
+        "places/mercat-del-lleo.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 2248,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/girona-mercat-del-lleo-01-content-1280.webp",
+            "sitePath": "assets/images/content/girona-mercat-del-lleo-01-content-1280.webp",
+            "width": 1280,
+            "height": 719,
+            "bytes": 136888,
+            "sha256": "2848066ff085758f9e8514753bdbe74d4a6d84e19de993e8d98f04b05f5c2f9b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/girona-mercat-del-lleo-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/girona-mercat-del-lleo-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19388,
+            "sha256": "dffe433d221f6a20fdf60b09eba2c500d02e28a9e8769199238a628c9bd957ad",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "lyon-daniel-et-denise-01",
+      "placeId": "daniel-et-denise",
+      "region": "lyon",
+      "creator": "Romainbehar",
+      "license": "CC0",
+      "licenseCode": "cc0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Lyon_3e_-_Rue_de_Cr%C3%A9qui_-_Restaurant_Daniel_%26_Denise_-_En_configuration_Covid-19.jpg",
+      "originalWidth": 4128,
+      "originalHeight": 3096,
+      "altKo": "리옹 3구 크레키 거리의 부숑 다니엘 에 드니즈 외관",
+      "captionKo": "리옹에는 같은 이름의 지점이 여럿이다. 이 사진은 일정에 잡힌 크레키 거리 지점이다.",
+      "titleKo": "다니엘 에 드니즈",
+      "title": "Lyon 3e - Rue de Créqui - Restaurant Daniel & Denise - En configuration Covid-19.jpg",
+      "description": "파일명·설명이 'Lyon 3e - Rue de Créqui' — 장소 정본의 주소 156 Rue de Créqui, 69003 Lyon 과 같은 지점",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lyon_3e_-_Rue_de_Créqui_-_Restaurant_Daniel_&_Denise_-_En_configuration_Covid-19.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalPath": "source/ASSETS/photos/originals/lyon-daniel-et-denise-01.jpg",
+      "originalSha256": "ba1c2dc2237c9b4eb58569c571f76666fd10723733df8ad379ab99e60499de8f",
+      "originalBytes": 2763413,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/lyon.html",
+        "places/daniel-et-denise.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 3000,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-daniel-et-denise-01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-daniel-et-denise-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 192210,
+            "sha256": "bff4e1e3833f0438d1454c818136e32b63382a63946e15445da5a6c005336a8b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-daniel-et-denise-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-daniel-et-denise-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 22976,
+            "sha256": "ac60ee792b2e9970e8ff72edacc2701efcb2e55f9a10b58cc136a22ffcb5a923",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-bouillon-chartier-montparnasse-01",
+      "placeId": "bouillon-chartier-montparnasse",
+      "region": "paris",
+      "creator": "Arthur Weidmann",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/02/Bouillon_Chartier_Montparnasse.jpg",
+      "originalWidth": 4813,
+      "originalHeight": 3209,
+      "altKo": "몽파르나스 대로변 부이용 샤르티에의 아르누보 실내",
+      "captionKo": "1903년에 문을 연 역사기념물 등록 식당이다.",
+      "titleKo": "부이용 샤르티에 몽파르나스",
+      "title": "Bouillon Chartier Montparnasse.jpg",
+      "description": "사진 설명이 'Le Bouillon Chartier Montparnasse à Paris' — 이름과 지점이 일치한다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bouillon_Chartier_Montparnasse.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalPath": "source/ASSETS/photos/originals/paris-bouillon-chartier-montparnasse-01.jpg",
+      "originalSha256": "2edf14df3783ebb7eb97c9a3d8ad9e46c8c9391644d778a1147e16411fd2d968",
+      "originalBytes": 2142764,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/bouillon-chartier-montparnasse.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-bouillon-chartier-montparnasse-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-bouillon-chartier-montparnasse-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 170744,
+            "sha256": "76cd4e44ed00e4700f45bad2ae197d072f9728b9de50573f15f456b27b1caa2a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-bouillon-chartier-montparnasse-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-bouillon-chartier-montparnasse-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31514,
+            "sha256": "6a415d4e63e2b3cf7829224096b32b50ca698b741abc307e4a998610bc1fa250",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-cafe-du-commerce-01",
+      "placeId": "cafe-du-commerce",
+      "region": "paris",
+      "creator": "James Petts from London, England",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/2/26/Le_Caf%C3%A9_du_Commerce%2C_Paris_24_September_2016_001.jpg",
+      "originalWidth": 3456,
+      "originalHeight": 4608,
+      "altKo": "파리 15구 코메르스 거리의 브라세리 카페 뒤 코메르스 외관",
+      "captionKo": "1921년 노동자 식당으로 시작한 15구의 브라세리다.",
+      "titleKo": "카페 뒤 코메르스",
+      "title": "Le Café du Commerce, Paris 24 September 2016 001.jpg",
+      "description": "사진 설명이 '51 Rue du Commerce, 75015 Paris' — 장소 정본의 주소와 같다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Le_Café_du_Commerce,_Paris_24_September_2016_001.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalPath": "source/ASSETS/photos/originals/paris-cafe-du-commerce-01.jpg",
+      "originalSha256": "bf9a60a2c0c203184460ffed814250c4da7c9276e015784a20b47701b38d8390",
+      "originalBytes": 2113057,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/cafe-du-commerce.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 3000,
+      "storedHeight": 4000,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-cafe-du-commerce-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-cafe-du-commerce-01-content-1280.webp",
+            "width": 1280,
+            "height": 1707,
+            "bytes": 219932,
+            "sha256": "29ceb580e6fa62d2d8f28132b7df98d404c7ec96292de10f924715300259ce69",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-cafe-du-commerce-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-cafe-du-commerce-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28268,
+            "sha256": "0122bd06f876419fd8b09d2e823ac46d3df0b564f5ecd4a454ec57dfa74eee10",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-marche-convention-01",
+      "placeId": "marche-convention",
+      "region": "paris",
+      "creator": "Jean-François Gornet from Paris, France",
+      "license": "CC BY-SA 2.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/52/March%C3%A9_rue_de_la_Convention_1%2C_Paris_May_2011.jpg",
+      "originalWidth": 1731,
+      "originalHeight": 1735,
+      "altKo": "파리 15구 콩방시옹 거리를 따라 늘어선 노천시장 좌판",
+      "captionKo": "15구 주민이 쓰는 노천 생활시장이다.",
+      "titleKo": "마르셰 콩방시옹",
+      "title": "Marché rue de la Convention 1, Paris May 2011.jpg",
+      "description": "사진 설명이 'Marché rue de la Convention' — 장소 정본의 위치(Rue de la Convention, 75015)와 같다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Marché_rue_de_la_Convention_1,_Paris_May_2011.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalPath": "source/ASSETS/photos/originals/paris-marche-convention-01.jpg",
+      "originalSha256": "5b88b378feff71fa18b4b5cd68d6473434594ffc81122033941c51b91e71808d",
+      "originalBytes": 2730149,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/marche-convention.html"
+      ],
+      "selectionScore": 90,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-marche-convention-01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-marche-convention-01-content-1280.webp",
+            "width": 1280,
+            "height": 1283,
+            "bytes": 283574,
+            "sha256": "9c1ab5dd7184948180b187461d30e091bf29257e73cd6c62b804680d4a5624ef",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-marche-convention-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-marche-convention-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30456,
+            "sha256": "3f89c352a15c3ac3a805053a15a7417ccd6d9f23ea4c8432cff20304e24d677a",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
     }
   ],
   "processedAt": "2026-08-05"

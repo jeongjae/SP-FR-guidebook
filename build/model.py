@@ -52,6 +52,7 @@ REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
 TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
 TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
+IMAGE_ALIASES = ROOT / "data" / "images" / "place-aliases.json"
 
 WEEKDAY_KO = "월화수목금토일"
 
@@ -107,6 +108,20 @@ class Fact:
         return not self.is_confirmed
 
 
+# food_kind → 엔티티. 시장·푸드홀도 음식 엔티티로 본다 — 명부가 이미
+# meal_role 을 주고 있고, 식사 슬롯 감사도 이것들을 끼니로 세어 왔다.
+FOOD_KIND_ENTITY = {
+    "RESTAURANT": "restaurant",
+    "CAFE": "cafe",
+    "BAKERY": "bakery",
+    "MARKET": "market",
+    "FOOD_HALL": "food-hall",
+    "WINE_BAR": "wine-bar",
+}
+
+FOOD_ENTITIES = frozenset(FOOD_KIND_ENTITY.values())
+
+
 @dataclass
 class Place:
     slug: str
@@ -137,6 +152,28 @@ class Place:
     @property
     def url(self) -> str:
         return f"places/{self.slug}.html"
+
+    @property
+    def entity_type(self) -> str:
+        """엔티티 한 종류. 지역 페이지가 이 값으로 섹션을 가른다.
+
+        제목이 아니라 정본 필드로 판정한다. '…점심' 이라는 이름 때문에
+        관광지가 식당 섹션에 들어가 있던 것이 FCR-02 가 고친 것이다.
+        """
+        if self.kind == "node":
+            return "transport-node"
+        kind = str(self.food_kind or "").upper()
+        if kind in FOOD_KIND_ENTITY:
+            return FOOD_KIND_ENTITY[kind]
+        if kind:
+            return "restaurant"
+        if self.meal_role in ("PRIMARY", "BACKUP"):
+            return "restaurant"
+        if self.meal_role in ("MARKET", "SELF_CATERING"):
+            return "market"
+        if self.kind == "walk":
+            return "walk"
+        return "attraction"
 
     @property
     def is_food(self) -> bool:
@@ -305,9 +342,37 @@ class Region:
         """Don't Miss. 등급이 '필수' 인 것만."""
         return [p for p in self.places if p.grade == "essential"]
 
+    # --- FCR-02: 볼거리와 먹을거리를 엔티티로 가른다 ----------------------
+    # 예전에는 '장소' 한 덩어리에 식당·카페·시장이 섞여 있었다. 8개 지역에서
+    # 22곳이 그랬고, 반대로 '먹거리' 에는 실제 업소가 아닌 하루의 식사 슬롯이
+    # 관광지 카드로 들어와 있었다.
+
+    @property
+    def attractions(self) -> list[Place]:
+        """볼거리. 카드를 만들 수 있는 것만 (요약이 있어야 한다)."""
+        return [p for p in self.places
+                if p.entity_type in ("attraction", "walk") and p.summary]
+
+    @property
+    def must_visit(self) -> list[Place]:
+        return [p for p in self.attractions if p.grade == "essential"]
+
+    @property
+    def recommended(self) -> list[Place]:
+        return [p for p in self.attractions if p.grade != "essential"]
+
     @property
     def food_places(self) -> list[Place]:
-        return [p for p in self.places if p.kind == "spot" and p.grade == "food"]
+        """식당 · 카페 · 빵집 · 시장. 등급 순, 같은 등급이면 이름 순."""
+        order = {"essential": 0, "priority": 1, "optional": 2,
+                 "alternative": 3, "discouraged": 4}
+        return sorted([p for p in self.places if p.entity_type in FOOD_ENTITIES],
+                      key=lambda p: (order.get(p.grade or "", 5), p.name))
+
+    @property
+    def has_confirmed_stay(self) -> bool:
+        return any(d.hotel.get("status") == "confirmed"
+                   for d in self.days if d.region == self.slug)
 
 
 # ---------------------------------------------------------------- Trip
@@ -418,25 +483,67 @@ def load_facts() -> dict[str, dict[str, Fact]]:
     return out
 
 
-def load_images() -> dict[str, dict]:
-    """placeId → 이미지. 카탈로그에 없으면 사진 자리를 아예 만들지 않는다.
+def load_image_aliases() -> dict[str, dict]:
+    """사진 카탈로그의 placeId → 장소 명부 슬러그. 판정의 정본은 이 파일 하나다."""
+    if not IMAGE_ALIASES.exists():
+        return {}
+    raw = json.loads(IMAGE_ALIASES.read_text(encoding="utf-8"))
+    return raw.get("aliases", {})
+
+
+def load_images(known: set[str] | None = None) -> dict:
+    """사진 카탈로그를 장소·지역에 잇는다. **잇는 자리는 여기 하나다.**
 
     라이선스·출처·저작자가 없는 이미지는 빌드가 거부한다. 이 사이트는
     gh-pages 로 공개 배포되므로 '개인 사용만 허용' 은 실제로 쓸 수 없다.
+
+    카탈로그의 `placeId` 는 명부 슬러그가 아니다. 사진 프로그램이 명부보다
+    먼저 '주제 키'(socca · monaco-ville · versailles-gardens)로 사진을 모았고,
+    명부는 그 뒤에 다른 이름 공간으로 자랐다. 문자열 정규화로는 이어지지
+    않는다 — 의미가 다르기 때문이다. 그래서 사람이 판정한 별칭표
+    (`data/images/place-aliases.json`)를 통과시킨다.
+
+    돌려주는 것:
+        by_place      슬러그 → 대표 사진 한 장
+        extras        슬러그 → 그 다음 사진들 (장소 페이지 갤러리가 쓴다)
+        heroes        지역 → 지역 히어로
+        dishes        지역 → 요리 사진들 (장소가 아니다)
+        unregistered  명부에 없는 장소의 사진 (승격 후보)
+        unmapped      별칭표에 없는 placeId — 0 이어야 한다
     """
+    out = {"by_place": {}, "extras": {}, "heroes": {}, "dishes": {},
+           "unregistered": [], "unmapped": []}
     if not IMAGE_MANIFEST.exists():
-        return {}
+        return out
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
     images = raw if isinstance(raw, list) else raw.get("images", [])
-    by_place, heroes = {}, {}
+    aliases = load_image_aliases()
     for img in images:
-        pid = img.get("placeId")
-        if pid and pid not in by_place:
-            by_place[pid] = img
         if img.get("regionHero"):
-            heroes.setdefault(img.get("region") or img.get("regionSlug"), img)
-    by_place["__heroes__"] = heroes
-    return by_place
+            out["heroes"].setdefault(img.get("region") or img.get("regionSlug"), img)
+        pid = img.get("placeId")
+        if not pid:
+            continue
+        slug = pid
+        if known is not None and pid not in known:
+            rule = aliases.get(pid)
+            if rule is None:
+                out["unmapped"].append({"placeId": pid,
+                                        "imageId": img.get("imageId")})
+                continue
+            if rule["verdict"] == "dish":
+                out["dishes"].setdefault(rule.get("region"), []).append(
+                    {**img, "dishLabel": rule.get("label") or img.get("titleKo")})
+                continue
+            if rule["verdict"] != "place":
+                out["unregistered"].append({**img, "why": rule.get("why", "")})
+                continue
+            slug = rule["slug"]
+        if slug in out["by_place"]:
+            out["extras"].setdefault(slug, []).append(img)
+        else:
+            out["by_place"][slug] = img
+    return out
 
 
 PLACE_FM = re.compile(r"^---\n(.*?)\n---\n", re.S)
@@ -552,6 +659,13 @@ LAYER_KEY = {
     "한눈에 보기": "overview",
     "여행 전체에서의 역할": "role",
     "추천 체류 리듬": "rhythm",
+    # FCR-02 에서 승격한 심화 층. 원고에만 있고 사이트 어디에도 없던
+    # 덩어리들이다 — 숙소 생활권 · 지역 교통 · 음식과 시장.
+    "이 지역을 이해하는 층": "context",
+    "숙소 생활권과 동네": "neighborhoods",
+    "숙소 예산과 확인 기준": "stay_budget",
+    "지역 교통 심화": "transport_deep",
+    "음식·시장·카페·생활체험": "food_culture",
 }
 
 
@@ -616,15 +730,18 @@ def load_trip() -> Trip:
 
     # --- 장소 조립: 명부 + 장문 + 사실 + 사진 -----------------------------
     facts = load_facts()
-    images = load_images()
-    heroes = images.pop("__heroes__", {})
+    registry_rows = load_registry()
+    known_slugs = ({r["slug"] for r in registry_rows}
+                   | {r["slug"] for r in regions_raw})
+    images = load_images(known_slugs)
+    heroes = images["heroes"]
     bodies = load_place_bodies()
 
     # 지도를 이름으로 여는 검색어. 여기 없는 슬러그는 좌표·주소 폴백으로 남는다.
     map_queries = _load_validated_json(MAP_QUERIES).get("places", {})
 
     places: dict[str, Place] = {}
-    for row in load_registry():
+    for row in registry_rows:
         body = bodies.get(row["slug"], {})
         places[row["slug"]] = Place(
             slug=row["slug"], name=row["name"], region=row["region"],
@@ -638,7 +755,7 @@ def load_trip() -> Trip:
             body_md=body.get("body", ""),
             practical_md=body.get("practical_md", ""),
             facts=facts.get(row["slug"], {}),
-            photo=images.get(row["slug"]),
+            photo=images["by_place"].get(row["slug"]),
         )
 
     # --- Day ↔ Place: stop.id 로 직접 잇는다 ------------------------------

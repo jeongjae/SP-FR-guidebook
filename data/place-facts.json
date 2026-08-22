@@ -481,6 +481,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€30-€45/인",
+          "confidence": "official",
+          "source": "https://barcanete.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -659,6 +666,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€25-€35/인",
+          "confidence": "official",
+          "source": "https://bodegajoan.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -2195,6 +2209,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€18-€28/인",
+          "confidence": "official",
+          "source": "https://www.laparadeta.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -2275,6 +2296,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€30-€45/인",
+          "confidence": "official",
+          "source": "https://restaurantelazorra.com/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },
@@ -5401,6 +5429,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_range": {
+          "value": "€5-€15",
+          "confidence": "official",
+          "source": "https://www.laconcepcio.cat/",
+          "verified_at": "2026-08-21",
+          "ttl_days": 180
         }
       }
     },

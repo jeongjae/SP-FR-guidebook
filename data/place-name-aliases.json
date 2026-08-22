@@ -1,0 +1,95 @@
+{
+ "$comment": [
+  "본문 문장 안에서 식당·시장 이름을 장소 페이지로 잇는 별칭.",
+  "코드에 slug 별 분기를 두지 않는다 — 지역이 늘어날 때마다 렌더러를 고치게 되고,",
+  "그것이 지역 전용 우회로의 시작이다. 정식 이름(name)은 자동으로 잡히므로",
+  "여기에는 원고가 실제로 쓰는 **줄임말**만 적는다."
+ ],
+ "version": "1.0",
+ "aliases": {
+  "bar-canete": [
+   "Bar Cañete"
+  ],
+  "bodega-joan": [
+   "Bodega Joan"
+  ],
+  "la-paradeta-sagrada-familia": [
+   "La Paradeta"
+  ],
+  "la-zorra": [
+   "La Zorra"
+  ],
+  "restaurant-beatrice": [
+   "Restaurant & Salon de Thé Béatrice",
+   "Restaurant Béatrice"
+  ],
+  "le-figuier-de-saint-esprit": [
+   "Le Figuier de Saint-Esprit"
+  ],
+  "patisserie-weibel": [
+   "Pâtisserie Weibel",
+   "Weibel"
+  ],
+  "chez-gilbert-cassis": [
+   "Chez Gilbert"
+  ],
+  "fou-de-fafa-avignon": [
+   "Fou de Fafa"
+  ],
+  "les-cocottes-saint-louis": [
+   "Les Cocottes Saint-Louis"
+  ],
+  "le-gibolin-arles": [
+   "Le Gibolin"
+  ],
+  "cafe-comptoir-abel": [
+   "Café Comptoir Abel"
+  ],
+  "daniel-et-denise": [
+   "Daniel et Denise"
+  ],
+  "chez-mamie-lise": [
+   "Chez Mamie Lise"
+  ],
+  "halles-de-lyon-paul-bocuse": [
+   "Halles Paul Bocuse",
+   "Halles de Lyon"
+  ],
+  "cafe-du-commerce": [
+   "Café du Commerce"
+  ],
+  "bouillon-chartier-montparnasse": [
+   "Bouillon Chartier Montparnasse",
+   "Bouillon Chartier"
+  ],
+  "le-grand-pan": [
+   "Le Grand Pan"
+  ],
+  "boulangerie-pichard": [
+   "Boulangerie Pichard",
+   "Pichard"
+  ],
+  "marche-convention": [
+   "Marché Convention"
+  ],
+  "mercat-concepcio": [
+   "Mercat de la Concepció"
+  ],
+  "mercat-del-lleo": [
+   "Mercat del Lleó"
+  ],
+  "marche-forville": [
+   "Marché Forville"
+  ],
+  "cours-saleya": [
+   "Cours Saleya"
+  ],
+  "marche-de-la-liberation": [
+   "Marché de la Libération"
+  ],
+  "les-halles": [
+   "Les Halles d'Avignon",
+   "Les Halles"
+  ]
+ }
+}
