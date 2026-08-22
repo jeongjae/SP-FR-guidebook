@@ -14,7 +14,10 @@ ALLOW = pathlib.Path(__file__).resolve().parent / "allow_hardcode.txt"
 
 WD = "월화수목금토일"
 FACT_RE = re.compile(r"\{\{fact:([a-z0-9][a-z0-9-]*)\.([a-z_]+)(?:\|x\d+)?\}\}")
-DAY_RE = re.compile(r"^##\s*\d+\.\s*Day\s*(\d+)\s*—\s*(\d+)월\s*(\d+)일", re.M)
+# 원고 절 번호('## 17. Day 1 — …')는 선택이다. 통폐합을 끝낸 챕터는 번호를
+# 떼고 '## Day 1 — …' 로만 쓴다 — 번호를 필수로 두면 그 챕터의 Day 섹션이
+# 통째로 안 잡혀 요일·달력 대조가 조용히 건너뛴다.
+DAY_RE = re.compile(r"^##\s*(?:\d+\.\s*)?Day\s*(\d+)\s*—\s*(\d+)월\s*(\d+)일", re.M)
 
 
 def load_json(p, default=None):

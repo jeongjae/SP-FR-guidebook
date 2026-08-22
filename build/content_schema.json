@@ -54,6 +54,31 @@
         "이 도시를 이해하는 축",
         "이 지역을 이해하는 축"
       ]
+    },
+    "rc-region-v1": {
+      "_comment": "통폐합을 끝낸 지역 챕터. rs-region-v1 에서 개요 네 층(꼭 경험할 세 장면·생략해도 되는 것·여행 전체에서의 역할·추천 체류 리듬)을 Editor’s Verdict 하나로 합치고, 제외 후보는 ARCHIVE 로 내렸다. 나머지 척추 제목은 그대로다 — 승격 파이프라인이 그 제목들로 층을 잡는다.",
+      "required_h2": [
+        "Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계",
+        "한눈에 보기 — 일정",
+        "구역별 이해와 숙소 생활권",
+        "도착·출발·지역 내 교통",
+        "핵심 셀프가이드",
+        "음식·시장·카페·생활체험",
+        "당일치기·우천·피로 대안",
+        "예약·비용·안전·주차·귀가",
+        "공식 확인 정보와 재확인 대상",
+        "검증 상태 — 보강본 근거"
+      ],
+      "strict_order": true,
+      "allow_duplicates": false,
+      "required_modules": [
+        "Commercial Guide Module",
+        "Regional Context & Scheduled Place Dossiers"
+      ],
+      "required_deployed_tokens": [
+        "Editor’s Verdict"
+      ],
+      "required_deployed_context_tokens": []
     }
   },
   "dossier_mapping": {

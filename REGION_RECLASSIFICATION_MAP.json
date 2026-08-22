@@ -18,7 +18,7 @@
     {
      "id": "bar-canete",
      "title": "Bar Cañete",
-     "from": "장소 — 놓치지 말 것",
+     "from": "장소 — 그 밖의 장소",
      "to": "restaurantsCafes",
      "entity_type": "restaurant"
     },
@@ -42,19 +42,21 @@
      "from": "장소 — 그 밖의 장소",
      "to": "restaurantsCafes",
      "entity_type": "market"
-    }
-   ],
-   "foodToDayOrAttraction": [
+    },
     {
      "id": "puertecillo-sagrada-familia",
-     "title": "Puertecillo Sagrada Família 점심",
-     "from": "먹거리 — 카드",
-     "to": "(day page — 지역 페이지에 두지 않는다)",
-     "entity_type": "attraction",
-     "reason": "'Puertecillo Sagrada Família' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+     "title": "Puertecillo Sagrada Família",
+     "from": "장소 — 놓치지 말 것",
+     "to": "restaurantsCafes",
+     "entity_type": "restaurant"
     }
    ],
+   "foodToDayOrAttraction": [],
    "mergedIntoPlaceCard": [
+    {
+     "id": "puertecillo-sagrada-familia",
+     "title": "Puertecillo Sagrada Família 점심"
+    },
     {
      "id": "bodega-joan",
      "title": "Bodega Joan 저녁"
