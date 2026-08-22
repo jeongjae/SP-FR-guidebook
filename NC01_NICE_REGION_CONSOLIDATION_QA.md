@@ -411,6 +411,7 @@ Day 11 의 두 방문지가 `place_ref` 없이 stop 이름으로만 있다. 장�
 
 - **브랜치** `fix/nice-region-editorial-consolidation` (base `origin/main` `c3a935b4`)
 - **워크트리** `/mnt/c/Users/NB-24021500/source/worktrees/SP-FR-nice` (Girona 세션과 격리)
+- **커밋** `9f5b684d` · **PR** [#211](https://github.com/jeongjae/SP-FR-guidebook/pull/211)
 - **merge/deploy 하지 않았다.** 외부 Editorial Review 승인 대기
 - **주의**: `data/region-consolidation.json` 은 진행 중인 Girona 작업도 건드리는 파일이다.
   머지 시점에 conflict 가 예상되며, Git Integration Rule 에 따라 **자동 해결하지 않고
