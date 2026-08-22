@@ -148,19 +148,21 @@ Roussillon에서는 오커 지형을, Gordes와 주변 마을에서는 밝은 �
 
 ## 11. Places Actual / Optional / Archive Classification
 
-| 장소명 | 슬러그 | 등급 | 여행 내 역할 |
-|---|---|---|---|
-| **Lourmarin** | `lourmarin` | 필수 | Day 16 실제 방문지 (카뮈 묘소, 플라타너스 거리) |
-| **Coustellet 생산자 시장** | `coustellet` | 필수 | Day 16 실제 장보기 (일요 파머스 마켓) |
-| **Roussillon · Sentier des Ocres** | `roussillon-sentier-des-ocres` | 필수 | Day 17 실제 방문지 (오커 트레일) |
-| **Goult** | `goult` | 우선추천 | Day 17 실제 방문지 (석조 생활마을, 풍차) |
-| **Gordes** | `gordes` | 필수 | Day 18 실제 방문지 (화요 시장, 전망대) |
-| **Village des Bories** | `village-des-bories` | 우선추천 | Day 18 실제 방문지 (건식 석조 오두막) |
-| **Abbaye Notre-Dame de Sénanque** | `abbaye-de-senanque` | 선택 | Day 18 선택 옵션 (12세기 시토회 수도원) |
-| **Ménerbes** | `menerbes` | 선택 | Day 18 선택 옵션 (피터 메일 능선 성채 마을) |
-| **Bonnieux** | `bonnieux` | 대체 | Day 17 대체 옵션 (Goult 대체 전망마을) |
-| **Oppède-le-Vieux** | `oppede-le-vieux` | 선택 | 본 일정 미포함·대체 옵션 (옛 중세 폐허) |
-| **L'Isle-sur-la-Sorgue** | `l-isle-sur-la-Sorgue` | 선택 | 본 일정 미포함·대체 옵션 (수력 물레바퀴·앤틱) |
+## 11. Places Actual / Optional / Archive Classification
+
+| 장소명 | 슬러그 | 등급 | 여행 내 역할 | 최종 Region Card |
+|---|---|---|---|:---:|
+| **Lourmarin** | `lourmarin` | 필수 | Day 16 실제 방문지 (카뮈 묘소, 플라타너스 거리) | **유지** |
+| **Coustellet 생산자 시장** | `coustellet` | 필수 | Day 16 실제 장보기 (일요 파머스 마켓) | **유지** |
+| **Roussillon · Sentier des Ocres** | `roussillon-sentier-des-ocres` | 필수 | Day 17 실제 방문지 (오커 트레일) | **유지** |
+| **Goult** | `goult` | 우선추천 | Day 17 실제 방문지 (석조 생활마을, 풍차) | **유지** |
+| **Gordes** | `gordes` | 필수 | Day 18 실제 방문지 (화요 시장, 전망대) | **유지** |
+| **Village des Bories** | `village-des-bories` | 우선추천 | Day 18 실제 방문지 (건식 석조 오두막) | **유지** |
+| **Abbaye Notre-Dame de Sénanque** | `abbaye-de-senanque` | 선택 | Day 18 선택 옵션 (12세기 시토회 수도원) | **유지 (선택)** |
+| **Ménerbes** | `menerbes` | 선택 | Day 18 선택 옵션 (피터 메일 능선 성채 마을) | **유지 (선택)** |
+| **Bonnieux** | `bonnieux` | 대체 | Day 17 대체 옵션 (Goult 대체 전망마을) | **유지 (대체)** |
+| **Oppède-le-Vieux** | `oppede-le-vieux` | 선택 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
+| **L'Isle-sur-la-Sorgue** | `l-isle-sur-la-sorgue` | 선택 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
 
 ---
 
@@ -170,11 +172,11 @@ Roussillon에서는 오커 지형을, Gordes와 주변 마을에서는 밝은 �
 
 ---
 
-## 13. Food Cleanup
+## 13. Food Cleanup (LB01F 반영)
 
-- **뤼베롱에서 먹어볼 것**: Banon AOP, Cavaillon 멜론, 솔리에스 무화과, 타프나드&앙쇼이아드, 프로방스 꿀, 뤼베롱 올리브유 등 6종을 1문장으로 간결하게 기술.
+- **Luberon에서 맛볼 프로방스 식재료**: 과도한 Luberon 고유 귀속 표현을 완화하고, Banon AOP, Cavaillon 멜론, 솔리에스 무화과, 타프나드&앙쇼이아드, 프로방스 꿀, 뤼베롱 올리브유 등 6종을 1문장으로 간결하게 기술.
 - **로제 와인**: 음식 목록에서 제외하고 `프로방스에서는 지역 로제 와인도 대표적인 식문화 요소다. 운전하는 날에는 마시지 않고 저녁 식사 때 선택한다.`로 분리.
-- **시장 정보**: Coustellet 일요 시장, Gordes 화요 시장 2곳만 링크와 함께 수록.
+- **시장 정보**: 구체적인 08:00–13:00 운영시간을 제거하고 시장의 성격과 역할 수준으로만 Coustellet, Gordes 2곳 링크와 함께 수록.
 - **농가 식사**: generic한 원칙 1단락으로 정돈.
 
 ---
@@ -195,9 +197,9 @@ Roussillon에서는 오커 지형을, Gordes와 주변 마을에서는 밝은 �
 
 ---
 
-## 16. Lodging & Planning Residue Archive
+## 16. Lodging Planning Residue Archive
 
-- 모든 숙소 권역 비교표, 숙소 채점표, 수영장 평가 제외 메모, 과거 4박 변경 이력, L'Isle/Apt/Verdun 제외 판정표 등은 [`source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md`](file:///mnt/c/Users/NB-24021500/source/worktrees/SP-FR-session-3/source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md)에 보존 완료.
+- 모든 숙소 권역 비교표, 숙소 채점표, 수영장 평가 제외 메모, 과거 4박 변경 이력 등은 [`source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md`](file:///mnt/c/Users/NB-24021500/source/worktrees/SP-FR-session-3/source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md)에 분리 보존 완료.
 
 ---
 
@@ -213,16 +215,16 @@ Roussillon에서는 오커 지형을, Gordes와 주변 마을에서는 밝은 �
 
 ## 18. Quantitative Before / After
 
-| 지표 | Before (main) | After (LB01 Consolidation) | 변화 |
-|---|---:|---:|---:|
-| **원고 줄 수 (Chapter lines)** | 1,161 | **341** | -820 (-70.6%) |
-| **보이는 글자 수 (Visible chars, 공백 포함)** | ~18,500 | **7,075** | -11,425 (-61.8%) |
-| **순수 글자 수 (Visible chars, 공백 제외)** | ~14,200 | **5,447** | -8,753 (-61.6%) |
-| **표 개수 (Tables)** | 17 | **1** | -16 (-94.1%) |
-| **장소 카드 수** | 11 | **11** | 정합성 유지 |
-| **일정 표현 수 (Schedule representations)** | 4 | **1** | -3 (단일 정본) |
-| **원고 흔적 토큰 (Residue tokens)** | 34 | **0** | -34 (완전 박멸) |
-| **모바일 390px 스크롤 높이 (추정)** | ~55 screens | **~18 screens** | -67% 압축 |
+| 지표 | Before (main) | After (LB01) | Final (LB01F Cleanup) | 총 변화 |
+|---|---:|---:|---:|---:|
+| **원고 줄 수 (Chapter lines)** | 1,161 | 382 | **364** | -797 (-68.6%) |
+| **보이는 글자 수 (Visible chars, 공백 포함)** | ~18,500 | 7,075 | **7,010** | -11,490 (-62.1%) |
+| **순수 글자 수 (Visible chars, 공백 제외)** | ~14,200 | 5,447 | **5,396** | -8,804 (-62.0%) |
+| **표 개수 (Tables)** | 17 | 1 | **1** | -16 (-94.1%) |
+| **장소 카드 수 (Attraction cards)** | 11 | 11 | **9** | -2 (미포함 후보 카드 제거) |
+| **일정 표현 수 (Schedule representations)** | 4 | 1 | **1** | -3 (단일 정본) |
+| **원고 흔적 토큰 (Residue tokens)** | 34 | 0 | **0** | -34 (완전 박멸) |
+| **모바일 390px 스크롤 높이 (추정)** | ~55 screens | ~18 screens | **~17 screens** | -69% 압축 |
 
 ---
 

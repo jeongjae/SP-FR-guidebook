@@ -170,29 +170,11 @@ Luberon에서는 마을 한가운데보다 농가 숙소를 생활 거점으로 
 
 ---
 
-#### Oppède-le-Vieux {{grade:optional|선택}}
-
-> **Editor's Verdict (일정 미포함·대체안)**: 19세기 주민들이 떠난 뒤 시간 속에 멈춰버린 옛 중세 요새 마을 (본 일정에서는 제외·대체 옵션).
-
-- **체류/요금**: 45–60분 · **무료**
-- **상세 가이드**: [Oppède-le-Vieux 전체 가이드 보기](../places/oppede-le-vieux.html)
-
----
-
-#### L'Isle-sur-la-Sorgue {{grade:optional|선택}}
-
-> **Editor's Verdict (일정 미포함·대체안)**: 에메랄드빛 소르그강이 감싸 흐르는 물레바퀴와 앤틱의 도시 (본 일정에서는 제외·대체 옵션).
-
-- **체류/요금**: 60–90분 · **무료**
-- **상세 가이드**: [L'Isle-sur-la-Sorgue 전체 가이드 보기](../places/l-isle-sur-la-sorgue.html)
-
----
-
 ## 음식·시장·카페·생활체험
 
-## 뤼베롱에서 먹어볼 것
+## Luberon에서 맛볼 프로방스 식재료
 
-뤼베롱의 식문화는 생산자 직거래 시장과 농가 주방에서 완성되는 신선한 로컬 식재료가 중심이다.
+프로방스 내륙의 식문화는 생산자 직거래 시장과 신선한 제철 식재료를 중심으로 한다.
 
 - **Banon AOP** — 밤나무 잎으로 싸서 숙성시킨 프로방스 전통 염소 젖 치즈.
 - **Cavaillon 멜론** — 뤼베롱 인근 카바용의 당도 높은 주황색 과육 멜론.
@@ -205,8 +187,8 @@ Luberon에서는 마을 한가운데보다 농가 숙소를 생활 거점으로 
 
 ## 이번 일정의 시장
 
-- **Marché Paysan de Coustellet (일요일 08:00–13:00)** — 현지 농부들이 직접 가져온 채소, 치즈, 빵, 과일을 구입하는 핵심 직거래 시장이다. ([상세 정보](../places/coustellet.html))
-- **Marché de Gordes (화요일 08:00–13:00)** — 고르드 성채 광장 주변으로 서는 전통 시장으로 로컬 특산품과 수예품을 다룬다. ([상세 정보](../places/gordes.html))
+- **Marché Paysan de Coustellet** — 첫날 농가 체류용 식재료를 준비하는 생산자 시장이다. ([상세 정보](../places/coustellet.html))
+- **Marché de Gordes** — Gordes 방문일에 함께 둘러보는 화요 시장이다. ([상세 정보](../places/gordes.html))
 
 ## 농가에서 먹기
 
