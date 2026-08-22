@@ -1322,7 +1322,7 @@
       "evidence": "Drive Robion to Gordes",
       "verifiedAt": "2026-08-22"
     },
-    "day-21:avignon-depart": {
+    "day-20:avignon-depart": {
       "title": "Avignon 숙소 출발 ➔ Uzès 이동",
       "origin": "Avignon",
       "destination": "Uzès",
@@ -1330,7 +1330,7 @@
       "evidence": "Drive Avignon to Uzes",
       "verifiedAt": "2026-08-22"
     },
-    "day-22:avignon-centre": {
+    "day-21:avignon-centre": {
       "title": "Avignon Centre역 ➔ Arles 이동 (TER)",
       "origin": "Gare d'Avignon Centre",
       "destination": "Gare d'Arles",
@@ -1338,8 +1338,8 @@
       "evidence": "SNCF TER Avignon Centre to Arles",
       "verifiedAt": "2026-08-22"
     },
-    "day-22:avignon-return": {
-      "title": "Arles ➔ Avignon 귀환 & 마지막 저녁",
+    "day-21:avignon-return": {
+      "title": "Arles ➔ Avignon 귀환 & 저녁",
       "origin": "Gare d'Arles",
       "destination": "Gare d'Avignon Centre",
       "travelMode": "transit",

@@ -218,9 +218,12 @@ class StayTransportGuards(unittest.TestCase):
         for day in range(19, 24):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
 
+        day21 = json.loads((ROOT / "data" / "daily-cards" /
+                            "day-21.json").read_text(encoding="utf-8"))
+        self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day21["legs"]})
         day22 = json.loads((ROOT / "data" / "daily-cards" /
                             "day-22.json").read_text(encoding="utf-8"))
-        self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day22["legs"]})
+        self.assertEqual({"walk"}, {leg["mode"] for leg in day22["legs"]})
 
     def test_paris_uses_one_weekly_pass_and_individual_tickets_around_it(self):
         region = next(r for r in self.trip.regions if r.slug == "paris")
@@ -255,7 +258,7 @@ class StayTransportGuards(unittest.TestCase):
         for day in range(23, 28):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
         expected_modes = {
-            23: {"car", "metro", "taxi", "train", "walk"},
+            23: {"metro", "taxi", "train", "walk"},
             24: {"funicular", "metro", "walk"}, 25: {"bus", "metro", "walk"},
             26: {"train", "walk"}, 27: {"taxi", "train", "walk"},
         }
