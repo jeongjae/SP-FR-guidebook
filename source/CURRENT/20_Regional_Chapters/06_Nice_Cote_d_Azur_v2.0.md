@@ -54,7 +54,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 ## 구역별 이해와 숙소 생활권
 
-확정 숙소는 Nice 중심부의 Palais ALZIRA다. Nice-Ville 역과 Promenade des Anglais 사이에 있어 철도 당일치기와 해변 산책을 모두 연결하기 쉽고, 주방과 세탁기가 있어 5박 동안 생활 거점으로 쓰기 좋다. 5박 총액 **€809.54** 로 결제가 끝났다.
+확정 숙소는 Nice 중심부의 Palais ALZIRA다. Nice-Ville 역과 Promenade des Anglais 사이에 있어 철도 당일치기와 해변 산책을 모두 연결하기 쉽고, 주방과 세탁기가 있어 5박 동안 생활 거점으로 쓰기 좋다.
 
 숙소에서 남쪽으로는 Masséna와 해변, 동쪽으로는 Vieux Nice, 북쪽으로는 Nice-Ville 역이 이어진다. 당일치기에서 늦게 돌아오는 날에는 역에서 바로 숙소로 돌아오고, Nice에 머무는 날은 시장과 구시가지, 해변을 도보로 연결한다.
 
@@ -238,6 +238,9 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 ## 예약·비용·안전·주차·귀가
 
+- **숙소 예약 (Airbnb — Palais ALZIRA)**:
+  - **총액**: €809.54 결제 완료. 2026-08 예약서 대조로 확인된 값이다(commit f32549a3, 2026-08-16). 호스트 Catherine +33 6 21 70 18 70.
+  - **재확인**: `TP_Europe_Travel_Master_Tracker_v1.2.xlsx` Reservations 시트 R003 의 총액·결제액 칸이 비어 있다. 예약 자체는 있고 트래커 반영만 남았다 — Prepare 정본이 채운다.
 - **렌터카 예약 (Hertz)**:
   - **인수**: 9/9 09:00 Nice역 (Hertz [CONFIRMED]). Compact Automatic (Captur급). 영업소 {{fact:hertz-nice-ville.closed}} — 인수 시각이 점심 휴무에 걸리지 않는다.
   - **비용**: €608.09 (VISA ASIA CARDS 10% 할인가 반영, 편도 반납비 €180 포함).

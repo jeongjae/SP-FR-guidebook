@@ -32,7 +32,7 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 
 ## 숙소 생활권과 동네
 
-확정 숙소는 Nice 중심부의 Palais ALZIRA다. Nice-Ville 역과 Promenade des Anglais 사이에 있어 철도 당일치기와 해변 산책을 모두 연결하기 쉽고, 주방과 세탁기가 있어 5박 동안 생활 거점으로 쓰기 좋다. 5박 총액 **€809.54** 로 결제가 끝났다.
+확정 숙소는 Nice 중심부의 Palais ALZIRA다. Nice-Ville 역과 Promenade des Anglais 사이에 있어 철도 당일치기와 해변 산책을 모두 연결하기 쉽고, 주방과 세탁기가 있어 5박 동안 생활 거점으로 쓰기 좋다.
 
 숙소에서 남쪽으로는 Masséna와 해변, 동쪽으로는 Vieux Nice, 북쪽으로는 Nice-Ville 역이 이어진다. 당일치기에서 늦게 돌아오는 날에는 역에서 바로 숙소로 돌아오고, Nice에 머무는 날은 시장과 구시가지, 해변을 도보로 연결한다.
 
