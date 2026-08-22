@@ -215,7 +215,9 @@ class Stop:
     # 많다 — 같은 장소를 하루에 두 번 들르거나(cannes-transfer/cannes-station),
     # stop 이 장소의 일부일 때(sant-pau → sant-pau-recinte-modernista).
     place_ref: str | None = None
+    related_place_refs: list[str] = field(default_factory=list)
     place: Place | None = None  # 장소 페이지가 있는 stop 만 연결된다
+    related_places: list[Place] = field(default_factory=list)
     map_type: str = "place"     # place | route | non_map
     map_query: str | None = None
     route_origin: str | None = None
@@ -656,6 +658,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 optional=bool(s.get("optional")),
                 address=s.get("address"),
                 place_ref=s.get("place_ref"),
+                related_place_refs=s.get("related_place_refs") or [],
             ) for s in j.get("stops", [])],
             legs=[Leg(
                 frm=l["from"], to=l["to"], mode=l.get("mode", "walk"),
@@ -803,6 +806,13 @@ def load_trip() -> Trip:
                 s.place = p
                 if d.n not in p.days:
                     p.days.append(d.n)
+            # related_place_refs 지원 (단일 stop 내 복수 장소 연결, Option B)
+            for rp_slug in s.related_place_refs:
+                rp = places.get(rp_slug)
+                if rp is not None:
+                    s.related_places.append(rp)
+                    if d.n not in rp.days:
+                        rp.days.append(d.n)
             # 좌표는 daily-card 가 더 최신이다 — 장소에 없으면 채워 준다
             if p is not None and p.lat is None and s.lat:
                 p.lat, p.lng = s.lat, s.lng

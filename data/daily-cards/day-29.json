@@ -24,15 +24,15 @@
       "order": 1,
       "start": "08:00",
       "end": "12:30",
-      "name": "Marché Convention 일요 노천시장 장보기",
+      "name": "15구 토요 생활권 장보기 & 아침 루틴",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "15구 콩방시옹 일요 시장에서 갓 구운 로티세리 치킨, 콩테 치즈, 무화과 조달",
-      "menu": "로티세리 치킨 & 감자 구이, 콩테 치즈, 제철 과일",
+      "summary": "블랑제리 피샤르에서 갓 구운 전통 바게트·크루아상 조달, 에펠탑 방면 Marché Grenelle 토요 시장 및 15구 상점가 산책 후 숙소 점심",
+      "menu": "피샤르 전통 바게트, 크루아상, 햄·치즈 샌드위치, 과일",
       "reservation": null,
       "optional": false,
-      "place_ref": "marche-convention"
+      "place_ref": "boulangerie-pichard"
     },
     {
       "id": "luxembourg-warhol",

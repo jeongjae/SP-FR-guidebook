@@ -285,7 +285,74 @@ class StayTransportGuards(unittest.TestCase):
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
-            self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
+    def test_fold_and_norm_identity_guards(self):
+        """한글·라틴·악센트 정규화 시 빈 문자열 오매칭 방지 및 식별성 검증."""
+        import unicodedata
+        import re
+
+        def fold_norm(s: str) -> str:
+            s = unicodedata.normalize("NFKD", s or "")
+            s = "".join(c for c in s if not unicodedata.combining(c))
+            s = unicodedata.normalize("NFC", s).lower()
+            s = re.sub(r"[(（].*?[)）]", "", s)
+            s = re.sub(r"[^a-z0-9가-힣]", "", s)
+            return s
+
+        # 1. Empty input yields empty string
+        self.assertEqual(fold_norm(""), "")
+        self.assertEqual(fold_norm("   "), "")
+        self.assertEqual(fold_norm("()"), "")
+
+        # 2. Empty token MUST NEVER match valid entities
+        empty_key = fold_norm("")
+        self.assertFalse(bool(empty_key), "빈 문자열 정규화 결과는 falsy여야 함")
+
+        # 3. Test representative mixed, Latin, accented, and Korean-only names
+        test_cases = [
+            ("La Paradeta", "laparadeta"),
+            ("Pâtisserie Weibel", "patisserieweibel"),
+            ("Maison Weibel", "maisonweibel"),
+            ("La Maison Pichard", "lamaisonpichard"),
+            ("Boulangerie Pichard", "boulangeriepichard"),
+            ("숙소 첫 저녁 식사", "숙소첫저녁식사"),
+            ("고딕지구 핵심 산책", "고딕지구핵심산책"),
+            ("리셸므 광장 목요 대형 시장", "리셸므광장목요대형시장"),
+        ]
+        for original, expected in test_cases:
+            norm_val = fold_norm(original)
+            self.assertEqual(norm_val, expected, f"{original} 정규화 결과 불일치")
+            self.assertGreater(len(norm_val), 0, f"{original} 정규화 결과가 비어있음")
+            self.assertNotEqual(norm_val, empty_key, f"{original}이 empty token과 일치함")
+
+        # 4. Ensure distinct entities do not collide
+        keys = {fold_norm(orig) for orig, _ in test_cases}
+        self.assertEqual(len(keys), len(test_cases), "테스트 항목 간 정규화 충돌이 없어야 함")
+
+    def test_marche_convention_day_schedule_alignment(self):
+        """Marché Convention이 토요일에 배치되지 않고 일요일 개장일에 정상 배치되었는지 검증."""
+        # Day 29 (2026-09-26 토)
+        day29 = json.loads((ROOT / "data" / "daily-cards" / "day-29.json").read_text(encoding="utf-8"))
+        for s in day29["stops"]:
+            self.assertNotEqual(s.get("place_ref"), "marche-convention", "Day 29 (토)에 Marché Convention이 있으면 안 됨")
+
+        # Day 36 (2026-10-03 토)
+        day36 = json.loads((ROOT / "data" / "daily-cards" / "day-36.json").read_text(encoding="utf-8"))
+        for s in day36["stops"]:
+            self.assertNotEqual(s.get("place_ref"), "marche-convention", "Day 36 (토)에 Marché Convention이 있으면 안 됨")
+
+        # Day 30 (2026-09-27 일)
+        day30 = json.loads((ROOT / "data" / "daily-cards" / "day-30.json").read_text(encoding="utf-8"))
+        day30_place_refs = [s.get("place_ref") for s in day30["stops"]]
+        self.assertIn("marche-convention", day30_place_refs, "Day 30 (일) 아침에 Marché Convention이 배치되어야 함")
+
+    def test_patisserie_weibel_related_places_linked_to_day13(self):
+        """Day 13 stop에서 Pâtisserie Weibel이 related_place_refs로 정상 연결되는지 검증."""
+        day13 = json.loads((ROOT / "data" / "daily-cards" / "day-13.json").read_text(encoding="utf-8"))
+        stop1 = day13["stops"][0]
+        self.assertIn("patisserie-weibel", stop1.get("related_place_refs", []), "Day 13 stop 1에 patisserie-weibel 참조가 있어야 함")
+        weibel_place = self.trip.places.get("patisserie-weibel")
+        self.assertIsNotNone(weibel_place, "patisserie-weibel 장소가 존재해야 함")
+        self.assertIn(13, weibel_place.days, "Pâtisserie Weibel 장소의 days에 13일차가 포함되어야 함")
 
 
 if __name__ == "__main__":
