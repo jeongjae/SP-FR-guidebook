@@ -202,24 +202,38 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 
 ## 16. Quantitative Before / After
 
-| 지표 | Before (main) | After (AX01 Consolidation) | 변화 |
-|---|---:|---:|---:|
-| **원고 줄 수 (Chapter lines)** | 1,078 | **374** | -704 (-65.3%) |
-| **보이는 글자 수 (Visible chars)** | 19,840 | **10,526** | -9,314 (-46.9%) |
-| **표 개수 (Tables)** | 18 | **1** | -17 (-94.4%) |
-| **접이식 블록 (Accordions/Details)** | 8 | **5** | -3 |
-| **H4 / H5 개수** | 35 / 0 | **2 / 0** | -33 |
-| **장소 카드 (Attractions / Food)** | 21 / 2 | **21 / 2** | 유지 |
-| **일정 표현 수 (Schedule representations)** | 4 | **1** | -3 (단일 정본) |
-| **원고 흔적 (Residue tokens)** | 31 | **0** | -31 (완전 박멸) |
-| **모바일 390px 스크롤 높이 (추정)** | ~52 screens | **~25 screens** | -52% 압축 |
+| 지표 | Before (main) | After (AX01) | Final (AX01F Cleanup) | 총 변화 |
+|---|---:|---:|---:|---:|
+| **원고 줄 수 (Chapter lines)** | 1,078 | 374 | **354** | -724 (-67.2%) |
+| **보이는 글자 수 (Visible chars)** | 19,840 | 10,526 | **9,455** | -10,385 (-52.3%) |
+| **표 개수 (Tables)** | 18 | 1 | **1** | -17 (-94.4%) |
+| **접이식 블록 (Accordions/Details)** | 8 | 5 | **5** | -3 |
+| **H4 / H5 개수** | 35 / 0 | 2 / 0 | **2 / 0** | -33 |
+| **장소 카드 (Attractions / Food)** | 21 / 2 | 21 / 2 | **21 / 2** | 유지 |
+| **일정 표현 수 (Schedule representations)** | 4 | 1 | **1** | -3 (단일 정본) |
+| **원고 흔적 (Residue tokens)** | 31 | 0 | **0** | -31 (완전 박멸) |
+| **모바일 390px 스크롤 높이 (추정)** | ~52 screens | ~25 screens | **~22 screens** | -58% 압축 |
 
 ---
 
-## 17. Desktop / Mobile Visual QA
+## 17. AX01F 외부 편집검토 4건 보정 반영
+
+1. **Transport 압축**:
+   - `Aix에서 이동하기` 하위를 4개 핵심 소주제(시내 도보 / Cassis 렌터카 / Marseille TER / Luberon 출발)로 압축.
+   - 구체적인 주차장명, TER/운전 편도 분/km, RTM 60번 버스, 일반 도로 매뉴얼(`프랑스 도로와 운전 기본`)은 Day/Archive로 이전하고 Region 허브 수준으로 간소화.
+2. **Food 밀도 축소**:
+   - 7종 대표 요리 해설을 1문장 담백한 설명으로 축소하고 홍보형 수식어(소울 푸드, 유서 깊은, 신선한 지중해 해산물 등) 제거.
+3. **Day별 식사전략 중복 제거**:
+   - `일정별 식사 전략`의 Day 13/14/15별 세부 실행 문장을 제거하고 generic한 `### 식사 원칙` 1문장으로 정돈.
+4. **Rosé 와인 분류 분리**:
+   - `프로방스에서 먹어볼 것` 목록에서 Rosé 와인을 음식 리스트에서 제외하고, 별도 음주/식문화 안내 문장(`프로방스에서는 지역 로제 와인도 대표적인 식문화 요소다. 운전하는 날에는 마시지 않고 저녁 식사 때 선택한다.`)으로 분리.
+
+---
+
+## 18. Desktop / Mobile Visual QA
 
 - **Desktop (1440px / 1024px)**:
-  - 히어로 섹션 및 4개 날짜 칩 정상 렌더.
+  - 히어로 섹션 및 5개 날짜 칩 정상 렌더.
   - 일정 2열 표가 깔끔하게 렌더되며 하위 링크 정상 동작.
   - 볼거리 그리드 및 식당·카페 카드 정렬 정상.
   - 숙소/생활권/교통 탭 내비게이션 점프 정상 동작.
@@ -231,7 +245,7 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 
 ---
 
-## 18. Automated QA Results
+## 19. Automated QA Results
 
 | 검사 항목 | 명령어 | 결과 | 비고 |
 |---|---|---|---|
@@ -249,7 +263,7 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 
 ---
 
-## 19. Regression Result
+## 20. Regression Result
 
 - 다른 7개 지역(Barcelona, Girona, Nice, Luberon, Avignon, Lyon, Paris) 대상 전수 검사 결과:
   - 의도하지 않은 시각적 변화 = 0
@@ -258,20 +272,21 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 
 ---
 
-## 20. Scope 밖 Factual Issues (기록용)
+## 21. Scope 밖 Factual Issues (기록용)
 
 1. **Les Toits de Méjanes 현장 주차 확인 필요**:
-   - 숙소 예약은 확정되었으나 현장 건물 주차장 사용 가능 여부 및 주차 리모컨/키 수령 절차는 체크인 시 호스트와 확인 필요 (체크리스트 유지).
+   - 숙소 예약은 확정되었으나 건물 현장 주차장 사용 가능 여부 및 주차 리모컨 수령은 체크인 시 호스트와 확인 필요 (체크리스트 유지).
 2. **2026 Cézanne 120주년 관련 시설 개방**:
    - Atelier des Lauves(사전 예약 필수) 및 Terrain des Peintres는 정상 운영 중이며, Jas de Bouffan 및 Bibémus는 본 일정에서 제외하고 선택 옵션으로 분류.
 
 ---
 
-## 21. Git Branch / Commits / Changed Files
+## 22. Git Branch / Commits / PR / Changed Files
 
 - **작업 브랜치**: `fix/aix-region-editorial-consolidation`
+- **PR**: https://github.com/jeongjae/SP-FR-guidebook/pull/210
 - **변경 파일**:
-  1. `source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md` (수정 — 카노니컬 챕터 재편집)
+  1. `source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md` (수정 — 카노니컬 챕터 재편집 및 AX01F 반영)
   2. `source/CURRENT/20_Regions/aix.md` (자동 재생성 — 승격 지역 파일)
   3. `source/ARCHIVE/20_Regional_Chapters/07_Aix_Planning_Residue_v1.0.md` (신규 — 기획 잔재 아카이브)
   4. `data/region-consolidation.json` (수정 — aix consolidation 등록 및 레이어 제목 지정)
@@ -281,7 +296,7 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 
 ---
 
-## 22. STOP
+## 23. STOP
 
 - QA 완료 후 본 지시서 및 Git Integration Rule에 따라 **STOP**합니다.
 - Luberon 등 다음 지역 작업은 시작하지 않습니다.
