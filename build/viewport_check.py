@@ -88,6 +88,9 @@ def main() -> int:
         Path(os.environ.get("SPFR_SITE_DIR") or (ROOT / "site")).resolve()
     pages = ["index.html", "schedule.html", "guide/index.html",
              "guide/barcelona.html", "daily/day-02.html", "daily/day-12.html",
+             # Paris 는 형제 탭이 16개다 — 날짜 탭에서 가장 긴 스트립이라
+             # 가로 넘침이 생긴다면 여기서 먼저 생긴다.
+             "daily/day-31.html",
              "places/sagrada-familia.html", "places/sant-pau-recinte-modernista.html",
              "map/index.html", "map/barcelona.html", "prepare/index.html"]
     problems = []

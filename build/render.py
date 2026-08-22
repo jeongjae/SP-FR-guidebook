@@ -834,6 +834,25 @@ def build_place(p: Place, trip: Trip) -> str:
     )
 
 
+def sibling_days(d: Day, trip: Trip, region) -> list[Day]:
+    """이 날의 형제 — 옆으로 움직일 수 있는 날들.
+
+    보통은 그 지역의 날들이다. 그런데 정규 지역에 속하지 않는 날이 있다 —
+    귀국일(`region: return`)이 그렇다. 그 날은 지역이 없으니 형제도 없고,
+    스트립이 통째로 비어 **옆으로 갈 길이 화면에서 사라졌다.**
+
+    지역으로 승격하지 않고 푼다. 같은 `region` 값을 가진 연속된 날들을 묶고,
+    그 앞의 하루를 붙여 여정이 끊기지 않게 한다. Day 43 을 이름으로 부르지
+    않으므로, 앞뒤에 비슷한 날(출국일·경유일)이 생겨도 같은 규칙이 적용된다.
+    """
+    if region:
+        return list(region.days)
+    kin = [x for x in trip.days if x.region == d.region]
+    first = min(x.n for x in kin)
+    lead = trip.day(first - 1)
+    return ([lead] if lead else []) + kin
+
+
 def build_day(d: Day, trip: Trip) -> str:
     """Day — 실행 화면. 첫 1~2 스크린에서 다음이 보여야 한다.
     지금 어디로 · 다음 일정 · 예약 · 주의 · 지도."""
@@ -925,21 +944,29 @@ def build_day(d: Day, trip: Trip) -> str:
         parts.append(f'<div class="stack">{blocks}</div>')
 
     # --- 이전/다음 --------------------------------------------------------
+    # 라벨은 날짜다 — 현장에서 찾는 것은 "며칠"이다. Day 번호는 title 로 남는다.
+    def day_hint(x) -> str:
+        # 보이는 순서 그대로 읽히게 한다 — 날짜가 먼저, Day 번호가 뒤.
+        # ISO 날짜까지 붙여 툴팁만 봐도 연도를 안다.
+        return f"{x.date_label} · Day {x.n} · {x.date.isoformat()}"
+
     nav = []
     if prev_d:
-        nav.append(f'<a class="btn btn-secondary" href="{rel}/{prev_d.url}">'
-                   f"← Day {prev_d.n}</a>")
+        nav.append(f'<a class="btn btn-secondary" href="{rel}/{prev_d.url}" '
+                   f'title="{esc(day_hint(prev_d))}">'
+                   f"← {esc(prev_d.date_label)}</a>")
     if next_d:
-        nav.append(f'<a class="btn btn-secondary" href="{rel}/{next_d.url}">'
-                   f"Day {next_d.n} →</a>")
+        nav.append(f'<a class="btn btn-secondary" href="{rel}/{next_d.url}" '
+                   f'title="{esc(day_hint(next_d))}">'
+                   f"{esc(next_d.date_label)} →</a>")
     parts.append(f'<div class="btn-row" style="justify-content:space-between">'
                  f'{"".join(nav)}</div>')
     parts.append("</div></div>")
 
     # 형제 이동 — 그 지역의 날들
     sib = tabs_strip([
-        (f"Day {x.n}", f"{rel}/{x.url}", x.n == d.n)
-        for x in (region.days if region else [])])
+        (x.date_label, f"{rel}/{x.url}", x.n == d.n, f"Day {x.n}", day_hint(x))
+        for x in sibling_days(d, trip, region)])
 
     index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")
 
