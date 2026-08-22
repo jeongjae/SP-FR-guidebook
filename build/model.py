@@ -583,20 +583,29 @@ def load_trip() -> Trip:
     essentials = _load_validated_json(REGION_ESSENTIALS).get("regions", {})
     transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
     transport_resources = _load_validated_json(TRANSIT_RESOURCES).get("regions", {})
-    trip_start = _d(itin["trip"]["start"])
+    region_checkins = {stay["key"]: _d(stay["checkin"]) for stay in stays}
     for slug, facts in transit.items():
+        recheck_deadline = region_checkins.get(slug, _d(itin["trip"]["start"]))
         for source in facts["sources"]:
             verified = _d(source["verifiedAt"])
             recheck = _d(source["recheckBy"])
             if verified > date.today():
                 raise ValueError(f"{slug}: transit source verifiedAt is in the future: {verified}")
-            if recheck < verified or recheck >= trip_start:
+            if recheck < verified or recheck >= recheck_deadline:
                 raise ValueError(
                     f"{slug}: transit source recheckBy must be on/after verification "
-                    f"and before trip start: {recheck}"
+                    f"and before the region check-in ({recheck_deadline}): {recheck}"
                 )
     for slug, resources in transport_resources.items():
+        recheck_deadline = region_checkins.get(slug, _d(itin["trip"]["start"]))
         for resource in resources:
+            verified = _d(resource["verifiedAt"])
+            recheck = _d(resource["recheckBy"])
+            if recheck < verified or recheck >= recheck_deadline:
+                raise ValueError(
+                    f"{slug}: transport resource recheckBy must be on/after verification "
+                    f"and before the region check-in ({recheck_deadline}): {recheck}"
+                )
             local_path = resource.get("localPath")
             if local_path and not (ROOT / local_path).is_file():
                 raise ValueError(f"{slug}: transport resource file missing: {local_path}")

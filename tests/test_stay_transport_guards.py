@@ -93,8 +93,11 @@ class StayTransportGuards(unittest.TestCase):
                 self.assertGreaterEqual(date.fromisoformat(source["recheckBy"]),
                                         date.fromisoformat(source["verifiedAt"]))
                 self.assertLessEqual(date.fromisoformat(source["verifiedAt"]), date.today())
-                self.assertLess(date.fromisoformat(source["recheckBy"]),
-                                date.fromisoformat("2026-08-29"))
+                deadlines = {stay["key"]: date.fromisoformat(stay["checkin"])
+                             for stay in json.loads((ROOT / "source" / "CURRENT" / "10_Core" /
+                                                    "itinerary.json").read_text(encoding="utf-8"))["stays"]}
+                deadline = deadlines.get(slug, date.fromisoformat("2026-08-29"))
+                self.assertLess(date.fromisoformat(source["recheckBy"]), deadline)
 
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
@@ -137,8 +140,11 @@ class StayTransportGuards(unittest.TestCase):
                 local_path = resource.get("localPath")
                 if local_path:
                     self.assertTrue((ROOT / local_path).is_file(), f"{slug}: missing {local_path}")
-                self.assertLess(date.fromisoformat(resource["recheckBy"]),
-                                date.fromisoformat("2026-08-29"))
+                deadlines = {stay["key"]: date.fromisoformat(stay["checkin"])
+                             for stay in json.loads((ROOT / "source" / "CURRENT" / "10_Core" /
+                                                    "itinerary.json").read_text(encoding="utf-8"))["stays"]}
+                deadline = deadlines.get(slug, date.fromisoformat("2026-08-29"))
+                self.assertLess(date.fromisoformat(resource["recheckBy"]), deadline)
 
     def test_transport_resources_render_as_local_or_official_links(self):
         for region in self.trip.regions:
@@ -261,13 +267,13 @@ class StayTransportGuards(unittest.TestCase):
         region = next(r for r in self.trip.regions if r.slug == "lyon")
         rendered = html.unescape(render.build_region(region, self.trip))
         for token in ("같은 비접촉 카드로 두 사람 검증", "1인 1시간 €2.10",
-                      "일일 상한 €6.90", "Voyageur 2 ajouté", "TCL F2", "Lyon↔Annecy TER"):
+                      "일일 상한 €7.10", "Voyageur 2 ajouté", "TCL F2", "Lyon↔Annecy TER"):
             self.assertIn(token, rendered)
         for day in range(23, 28):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
         expected_modes = {
             23: {"car", "metro", "taxi", "train", "walk"},
-            24: {"metro", "tram", "walk"}, 25: {"bus", "metro", "walk"},
+            24: {"funicular", "metro", "walk"}, 25: {"bus", "metro", "walk"},
             26: {"train", "walk"}, 27: {"taxi", "train", "walk"},
         }
         for day, expected in expected_modes.items():
@@ -277,8 +283,11 @@ class StayTransportGuards(unittest.TestCase):
         chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
                    "10_Lyon_v2.0.md").read_text(encoding="utf-8")
         self.assertNotIn("푸니쿨라 F2호선 편도 €2.00", chapter)
-        for token in ("1인 1시간 €2.10", "1인 €6.90", "10초 안에"):
+        for token in ("1인 1시간 €2.10", "1인 €7.10", "10초 안에"):
             self.assertIn(token, chapter)
+        facts = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))["regions"]["lyon"]
+        self.assertTrue(all(date.fromisoformat(source["recheckBy"]) >= date.fromisoformat("2026-09-02")
+                            for source in facts["sources"]))
 
     def test_luberon_transport_is_car_first_and_bus_fallback_only(self):
         region = next(r for r in self.trip.regions if r.slug == "luberon")

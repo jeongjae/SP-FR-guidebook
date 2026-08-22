@@ -89,10 +89,10 @@
         "title": "TCL Lyon·Villeurbanne network",
         "kind": "network-map",
         "edition": "2026-08",
-        "usage": "Day 24·25의 Metro·F2·tram·C13 연결을 확인한다. 비접촉 결제는 Zone 1·2 안에서만 쓰고 Annecy TER와 Paris행 TGV는 이 지도 범위로 판단하지 않는다.",
+        "usage": "Day 24·25의 Metro·F2·C13 연결을 확인한다. 비접촉 결제는 Zone 1·2 안에서만 쓰고 Annecy TER와 Paris행 TGV는 이 지도 범위로 판단하지 않는다.",
         "officialUrl": "https://www.tcl.fr/se-deplacer/plans-pdf-du-reseau",
         "verifiedAt": "2026-08-21",
-        "recheckBy": "2026-08-28"
+        "recheckBy": "2026-09-02"
       }
     ],
     "paris": [

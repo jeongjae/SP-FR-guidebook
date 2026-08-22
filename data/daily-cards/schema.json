@@ -356,6 +356,7 @@
             "car",
             "bus",
             "tram",
+            "funicular",
             "taxi",
             "flight",
             "unconfirmed"

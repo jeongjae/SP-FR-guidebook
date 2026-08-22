@@ -64,12 +64,12 @@ CAT_ICON = {
     "shopping": "pin",
 }
 MODE_ICON = {
-    "walk": "pin", "metro": "train", "tram": "train", "bus": "train",
+    "walk": "pin", "metro": "train", "tram": "train", "funicular": "train", "bus": "train",
     "train": "train", "drive": "car", "car": "car", "flight": "plane",
     "taxi": "car", "unconfirmed": "alert",
 }
 MODE_LABEL = {
-    "walk": "도보", "metro": "지하철", "tram": "트램", "bus": "버스",
+    "walk": "도보", "metro": "지하철", "tram": "트램", "funicular": "푸니쿨라", "bus": "버스",
     "train": "기차", "drive": "운전", "car": "운전", "flight": "비행",
     "taxi": "택시",
     # 이동수단이 아직 안 정해진 구간. 확정처럼 보이면 안 된다.
