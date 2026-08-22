@@ -6,6 +6,7 @@
     "girona",
     "aix",
     "luberon",
+    "avignon",
     "nice"
   ],
   "layerTitles": {
@@ -37,6 +38,13 @@
       "transport_deep": "Luberon에서 이동하기",
       "food_culture": "먹고 장보기"
     },
+    "avignon": {
+      "verdict": "Avignon과 서부 Provence를 이렇게 본다",
+      "overview": "일정",
+      "neighborhoods": "숙소와 생활권",
+      "transport_deep": "Avignon에서 이동하기",
+      "food_culture": "먹고 장보기"
+    },
     "nice": {
       "verdict": "Nice와 Côte d'Azur를 이렇게 본다",
       "overview": "일정",
@@ -49,7 +57,8 @@
     "barcelona": "2026-08-23 통폐합(RC01) · 외부 편집 검토 반영(RC01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/04_Barcelona_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
     "girona": "2026-08-23 통폐합(GR01) · 외부 편집 검토 반영(GR01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/05_Girona_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
     "aix": "2026-08-23 통폐합(AX01) · 외부 편집 검토 반영(AX01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/07_Aix_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
-    "luberon": "2026-08-23 통폐합(LB01). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
+    "luberon": "2026-08-23 통폐합(LB01) · 외부 편집 검토 반영(LB01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
+    "avignon": "2026-08-23 통폐합(AV01). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/09_Avignon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
     "nice": "2026-08-23 통폐합(NC01) · 외부 편집 검토 반영(NC01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/06_Nice_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1."
   }
 }

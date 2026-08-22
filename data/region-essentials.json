@@ -111,7 +111,7 @@
         "운동은 성벽 남쪽·Rhône·Île de la Barthelasse 러닝이다. 수영장은 선택이며 숙소 조건과 분리한다."
       ],
       "arrivalStrategy": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
-      "departureStrategy": "Day 23 Avignon TGV에서 차량 반납과 10:22 Lyon행 확정 열차 탑승을 처리한다. 반납 방식과 완충은 현장에서 확인할 운영 항목으로 남긴다.",
+      "departureStrategy": "Day 23 체크아웃 뒤 TGV로 Lyon 이동한다. 렌터카는 Day 20 저녁 반납 완료되어 아침 이동에 차량 반납 절차가 없다.",
       "lateReturnRule": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon TGV까지 간다고 가정하지 않는다.",
       "sourceRefs": [
         "data/daily-cards/day-19.json",
@@ -119,7 +119,8 @@
         "data/daily-cards/day-21.json",
         "data/daily-cards/day-22.json",
         "data/daily-cards/day-23.json",
-        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md",
+        "source/ARCHIVE/20_Regional_Chapters/09_Avignon_Planning_Residue_v1.0.md"
       ]
     },
     "lyon": {
