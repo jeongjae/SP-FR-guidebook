@@ -245,21 +245,40 @@ Bàscara는 관광지가 아니라 이동 거점이다.
 
 ---
 
-## 18. Git Branch / Commits / Changed Files
+## 18. GR01F 외부 편집검토 3건 수정 반영
 
-- **작업 브랜치**: `fix/girona-region-editorial-consolidation`
-- **변경 파일**:
-  1. `source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md` (수정 — 카노니컬 챕터 재편집)
-  2. `source/CURRENT/20_Regions/girona.md` (자동 재생성 — 승격 지역 파일)
-  3. `source/ARCHIVE/20_Regional_Chapters/05_Girona_Planning_Residue_v1.0.md` (신규 — 기획 잔재 아카이브)
-  4. `data/region-consolidation.json` (수정 — girona consolidation 등록 및 레이어 제목 지정)
-  5. `data/region-essentials.json` (수정 — sourceRefs 아카이브 참조 추가)
-  6. `build/content_guard.py` (수정 — WSL 파일 접근 예외 안전 처리)
-  7. `GR01_GIRONA_RECONSOLIDATION_QA.md` (신규 — 종합 QA 보고서)
+1. **Generated Region Heading ↔ 최종 사용자 IA 완전 일치**:
+   - `build/promote_regions.py` 및 `build/model.py`가 `data/region-consolidation.json`의 `layerTitles`를 직접 참조하도록 개선.
+   - `20_Regions/girona.md` 승격 산출물의 H2가 `Girona와 Costa Brava를 이렇게 본다`, `일정`, `숙소와 생활권`, `이 지역에서 운전하기`, `먹고 장보기`로 완벽히 정렬됨.
+2. **식당 섹션 구조 분리**:
+   - `## 일정에서 이용하는 식당과 카페` 하위를 `### 방문 업소` (Casa Marieta)와 `### 일정별 식사 전략` (Collioure 점심, Sant Feliu 점심, 저녁 식사 원칙)으로 완전 분리하여 named restaurant와 generic meal strategy가 혼재되지 않음.
+3. **Calella de Palafrugell / Peralada Reconciliation**:
+   - `Calella de Palafrugell` 및 `Peralada`를 핵심 attraction 필수 배지에서 `선택` 및 `(일정 미포함·대체안)`으로 명확히 표기 정렬.
+   - `30_Places/calella-de-palafrugell.md` 및 `91_Place_Registry_v1.0.md`의 등급을 `선택`으로 정규화.
 
 ---
 
-## 19. STOP
+## 19. Git Branch / Commits / Changed Files
+
+- **작업 브랜치**: `fix/girona-region-editorial-consolidation`
+- **PR**: https://github.com/jeongjae/SP-FR-guidebook/pull/209
+- **변경 파일**:
+  1. `source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md` (수정 — 카노니컬 챕터 재편집 및 GR01F 반영)
+  2. `source/CURRENT/20_Regions/girona.md` (자동 재생성 — 승격 지역 파일)
+  3. `source/CURRENT/20_Regions/barcelona.md` (자동 재생성 — verdict heading 일치)
+  4. `source/CURRENT/30_Places/calella-de-palafrugell.md` (수정 — grade 선택 정규화)
+  5. `source/ASSETS/91_Place_Registry_v1.0.md` (수정 — calella/peralada 선택 반영)
+  6. `source/ARCHIVE/20_Regional_Chapters/05_Girona_Planning_Residue_v1.0.md` (신규 — 기획 잔재 아카이브)
+  7. `data/region-consolidation.json` (수정 — girona consolidation 등록, verdict/layerTitles 지정)
+  8. `data/region-essentials.json` (수정 — sourceRefs 아카이브 참조 추가)
+  9. `build/promote_regions.py` (수정 — consolidation layerTitles 반영)
+  10. `build/model.py` (수정 — consolidation layerTitles dynamic mapping)
+  11. `build/content_guard.py` (수정 — WSL 파일 접근 예외 안전 처리)
+  12. `GR01_GIRONA_RECONSOLIDATION_QA.md` (신규 — 종합 QA 보고서)
+
+---
+
+## 20. STOP
 
 - QA 완료 후 본 지시서 및 Git Integration Rule에 따라 **STOP**합니다.
 - Nice / Côte d’Azur 등 다음 지역 작업은 시작하지 않습니다.
