@@ -3,7 +3,7 @@ slug: nice
 source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 ---
 
-## 이 지역에 시간을 쓸 가치와 한계
+## Nice와 Côte d'Azur를 이렇게 본다
 
 니스는 이번 여행에서 처음으로 며칠 동안 짐을 풀어놓고 생활 리듬을 회복하는 해안 거점이다. 구시가지와 시장, 해변을 천천히 걷고, 기차로 Antibes·Cannes와 Monaco·Menton을 다녀오면서 서로 다른 성격의 리비에라 도시를 비교한다.
 
@@ -17,7 +17,7 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 
 하루를 모두 채우기보다 한두 개의 핵심 경험을 남기고, 늦은 오후나 저녁에는 니스로 돌아와 쉬는 것을 기본으로 한다.
 
-## 한눈에 보기
+## 일정
 
 | 날짜 | 핵심 일정 |
 |---|--- |
@@ -30,7 +30,7 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 
 상세 시각, 이동, 식사와 대체 일정은 각 날짜의 Day 페이지에서 확인한다.
 
-## 숙소 생활권과 동네
+## 숙소와 생활권
 
 확정 숙소는 Nice 중심부의 Palais ALZIRA다. Nice-Ville 역과 Promenade des Anglais 사이에 있어 철도 당일치기와 해변 산책을 모두 연결하기 쉽고, 주방과 세탁기가 있어 5박 동안 생활 거점으로 쓰기 좋다.
 
@@ -42,7 +42,7 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 
 운동은 숙소에서 해변 방향으로 걷거나 가볍게 뛰는 정도를 기본으로 하고, 수영은 실제 일정에 여유가 있을 때만 선택한다.
 
-## 지역 교통 심화
+## Nice와 Côte d'Azur에서 이동하기
 
 ### 공항에서 숙소로
 
@@ -58,7 +58,7 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 
 내륙 마을에서는 노상 주차 대신 구시가지 진입 차단선 밖의 유료 공영주차장을 쓰고, 장기 여행 짐이 밖에서 보이지 않게 가림막을 쳐 둔다.
 
-## 음식·시장·카페·생활체험
+## 먹고 장보기
 
 니스 음식은 프로방스와 가까우면서도 이탈리아 리구리아의 영향을 강하게 받은 별도의 지역 전통을 갖고 있다. 올리브유, 채소, 병아리콩, 앤초비를 많이 쓰며 시장과 간단한 길거리 음식에서 그 특징이 잘 드러난다.
 
