@@ -23,16 +23,19 @@
       "id": "morning-routine",
       "order": 1,
       "start": "08:00",
-      "end": "12:30",
-      "name": "Marché Convention 일요 노천시장 장보기",
+      "end": "12:45",
+      "name": "Marché Convention 일요 장보기 & Pichard 빵 조달",
       "category": "hotel",
       "lat": 48.8375,
       "lng": 2.2965,
-      "summary": "15구 콩방시옹 일요 시장(07:00~14:30 개장)에서 갓 구운 로티세리 치킨, 콩테 치즈, 무화과 조달 후 숙소 점심",
-      "menu": "로티세리 치킨 & 감자 구이, 콩테 치즈, 제철 과일",
+      "summary": "15구 콩방시옹 일요 시장에서 로티세리 치킨, 콩테 치즈, 무화과 조달. 같은 오전에 Pichard 에서 다음 날 아침 몫까지 산다 — 월·화는 이 빵집이 닫는다",
+      "menu": "로티세리 치킨 & 감자 구이, 콩테 치즈, 바게트 트라디시옹, 크루아상",
       "reservation": null,
       "optional": false,
-      "place_ref": "marche-convention"
+      "place_ref": "marche-convention",
+      "related_place_refs": [
+        "boulangerie-pichard"
+      ]
     },
     {
       "id": "orangerie",

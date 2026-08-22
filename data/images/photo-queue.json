@@ -104,6 +104,24 @@
       "captionKo": "15구 주민이 쓰는 노천 생활시장이다.",
       "identityEvidence": "사진 설명이 'Marché rue de la Convention' — 장소 정본의 위치(Rue de la Convention, 75015)와 같다",
       "verifiedAt": "2026-08-22"
+    },
+    {
+      "imageId": "girona-casa-marieta-01",
+      "placeId": "casa-marieta",
+      "region": "girona",
+      "commonsTitle": "Comedor gran1.jpg",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Comedor_gran1.jpg",
+      "creator": "Elcreueti",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalWidth": 700,
+      "originalHeight": 548,
+      "titleKo": "카사 마리에타 식당 내부",
+      "altKo": "지로나 카사 마리에타의 큰 홀 — 흰 식탁보를 씌운 테이블이 늘어선 실내",
+      "captionKo": "1892년 인디펜덴시아 광장에 문을 연 지로나의 전통 식당이다.",
+      "identityEvidence": "Commons 분류가 'Restaurants in the province of Girona'·'Buildings in Girona' 이고 설명이 'dinning area of Casa Marieta' — 지로나의 그 식당이다",
+      "verifiedAt": "2026-08-22"
     }
   ]
 }

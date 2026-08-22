@@ -1,0 +1,27 @@
+{
+ "auditedAt": "2026-08-22",
+ "policy": "FCR-03 · Google Maps 우선",
+ "results": [
+  {
+   "slug": "la-paradeta-sagrada-familia",
+   "region": "barcelona",
+   "name": "Puertecillo Sagrada Familia",
+   "address": "Passatge de Simó, 18, 08025 Barcelona",
+   "resolvedTitle": "Puertecillo Sagrada Familia",
+   "mapsUrl": "https://www.google.com/maps/place/Puertecillo+Sagrada+Familia/@41.404494,2.1734418,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2c33f9d6983:0x20e3e0cbae1446fe!8m2!3d41.404494!4d2.1734418!16s%2Fg%2F1hc2v7pw4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12a4a2c33f9d6983:0x20e3e0cbae1446fe",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "Simó"
+   ],
+   "addressHits": [
+    "Simó"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmczqUeXZ0MS0CoZfmxcuM7VP0a29PklbQR4oJcfFbp7gVodAbd0-mBMyR9NTI4vrXb_Y1dtBZ_cPDc5-ZDLzPDPT7I09JtSXXdUQO6q7yJ5NvlRjHq6sZFOykoYBIOeNa4cqloXw=w1600-h1200-k-no",
+   "photoCount": 1,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "barcelona-la-paradeta-sagrada-familia-gm01"
+  }
+ ]
+}

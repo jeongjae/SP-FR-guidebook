@@ -78,7 +78,7 @@ MODE_LABEL = {
 FACT_LABEL = {
     "hours": "운영시간", "closed": "휴무", "price_adult": "요금",
     "price_range": "가격대", "booking": "예약", "getting_there": "가는 법",
-    "duration": "소요시간", "note": "메모",
+    "duration": "소요시간", "address": "주소", "phone": "전화", "note": "메모",
 }
 
 
@@ -509,6 +509,14 @@ def timeline(d: Day, rel: str) -> str:
         if s.reservation:
             marks.append(badge("caution", "예약"))
         note = f'<p class="tl-note">{esc(s.summary)}</p>' if s.summary else ""
+        # 한 stop 이 두 장소를 담을 때 보조 장소를 명시한다. 시간표는 한 줄로
+        # 두되 장소 연결은 숨기지 않는다 — 그러지 않으면 그 장소가 어느
+        # 날에도 걸리지 않는다.
+        if s.related_places:
+            links = " · ".join(
+                f'<a href="{rel}/places/{x.slug}.html">{esc(x.name)}</a>'
+                for x in s.related_places)
+            note += f'<p class="tl-note">함께 보는 곳 — {links}</p>' 
         res = (f'<p class="tl-note">{ic("ticket")}{esc(s.reservation)}</p>'
                if s.reservation else "")
         rows.append(f"""<li class="tl-item" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
@@ -1049,6 +1057,10 @@ def place_visits(trip: Trip) -> dict[str, list[tuple[Day, Stop]]]:
         for s in d.stops:
             if s.place is not None:
                 out.setdefault(s.place.slug, []).append((d, s))
+            # 한 stop 이 두 장소를 담을 때 보조 장소도 그날을 갖는다.
+            # Day 13 의 시장 stop 이 Pâtisserie Weibel 을 함께 담는 것처럼.
+            for extra in s.related_places:
+                out.setdefault(extra.slug, []).append((d, s))
     for rows in out.values():
         rows.sort(key=lambda x: (x[0].n, x[1].order))
     return out
@@ -1285,8 +1297,9 @@ def build_region(r: Region, trip: Trip) -> str:
         # 정본 분류를 새로 만들지 않는다. 한 묶음뿐이면 제목을 달지 않는다.
         groups = [
             ("RESTAURANTS", "식당", ("restaurant", "wine-bar")),
-            ("CAFÉS", "카페·빵집", ("cafe", "bakery")),
-            ("MARKETS", "시장·푸드홀", ("market", "food-hall")),
+            ("CAFÉS", "카페", ("cafe",)),
+            ("BAKERY · MARKET · FOOD HALL", "빵집·시장·푸드홀",
+             ("bakery", "market", "food-hall")),
         ]
         filled = [(label, title, [p for p in food if p.entity_type in kinds])
                   for label, title, kinds in groups]
@@ -1407,7 +1420,9 @@ def build_region(r: Region, trip: Trip) -> str:
     transit = r.transit
     if transit:
         rec_t = transit["recommendation"]
-        parts.append(sec_head("PUBLIC TRANSPORT", "도시 교통"))
+        # 라벨이 '도시 교통' 이면 Girona 처럼 대중교통이 아예 없는 구간에서
+        # 거짓말이 된다. 슬롯은 같고 이름만 사실에 맞춘다.
+        parts.append(sec_head("GETTING AROUND", "구간 내 이동"))
         parts.append(alert("info", f'<strong>{esc(rec_t["title"])}</strong> — '
                            f'{esc(rec_t["summary"])}', "train"))
         products = transit.get("products") or []
@@ -2015,16 +2030,24 @@ def write_assets(trip: Trip) -> None:
     # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
     copied = 0
+    missing = []
     for img in raw.get("images", []):
         for variants in (img.get("variants") or {}).values():
             for v in variants:
                 src = ROOT / v["path"]
                 dst = SITE / v["sitePath"]
-                if src.exists():
-                    dst.parent.mkdir(parents=True, exist_ok=True)
-                    if not dst.exists():
-                        shutil.copy(src, dst)
-                        copied += 1
+                if not src.exists():
+                    # 조용히 건너뛰면 사진 자리만 비고 아무도 모른다.
+                    # 슬러그를 바꾸고 파일을 안 바꾼 적이 실제로 있었다.
+                    missing.append(f"{img.get('imageId')} — {v['path']}")
+                    continue
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                if not dst.exists():
+                    shutil.copy(src, dst)
+                    copied += 1
+    if missing:
+        raise SystemExit("매니페스트가 가리키는 사진 파일이 없다:\n  "
+                         + "\n  ".join(missing))
     print(f"  사진 {copied}개 복사")
 
     (out / "search-index.js").write_text(
@@ -2231,6 +2254,18 @@ def write_redirects(trip: Trip) -> int:
     for name in ("dashboard", "itinerary", "reservations", "accommodation",
                  "transport", "locks"):
         put(f"tracker/{name}.html", "../prepare/index.html", "준비")
+
+    # 슬러그가 바뀐 장소 — 주소창에 남은 옛 이름을 404 로 만들지 않는다
+    moved = ROOT / "data" / "slug-redirects.json"
+    if moved.exists():
+        table = json.loads(moved.read_text(encoding="utf-8")).get("places", {})
+        for old_slug, rule in table.items():
+            new_slug = rule["to"]
+            place = trip.places.get(new_slug)
+            if place is None:
+                raise SystemExit(
+                    f"슬러그 리다이렉트가 없는 곳을 가리킨다 — {old_slug} → {new_slug}")
+            put(f"places/{old_slug}.html", f"{new_slug}.html", place.name)
     return n
 
 
@@ -2320,6 +2355,18 @@ def check_vocabulary(trip: Trip) -> list[str]:
             f"render.py 의 CAT_ICON 에 아이콘을 지정한다.")
     for st, days in bad_status.items():
         problems.append(f"모르는 sourceStatus '{st}' — Day {sorted(set(days))[:6]}")
+
+    # fact 키도 마찬가지다. 라벨이 없으면 화면에 'address' 가 그대로 뜬다 —
+    # 실제로 주소·전화를 채운 날 영어 키가 새어 나왔다.
+    bad_keys = {}
+    for pl in trip.places.values():
+        for key in pl.facts:
+            if key not in FACT_LABEL:
+                bad_keys.setdefault(key, []).append(pl.slug)
+    for key, slugs in bad_keys.items():
+        problems.append(
+            f"모르는 fact 키 '{key}' — {sorted(slugs)[:4]}. "
+            f"render.py 의 FACT_LABEL 에 한국어 표기를 더한다.")
 
     # 등급도 마찬가지다. 배지가 안 붙으면 '필수' 가 그냥 사라진다.
     for pl in trip.places.values():

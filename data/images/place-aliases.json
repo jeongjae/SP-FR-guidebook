@@ -16,155 +16,221 @@
     "  unregistered 실재하는 장소지만 명부에 없다. 승격 후보이며 지금은 안 쓴다",
     "",
     "여기 없는 placeId 가 카탈로그에 들어오면 build/media_lookup_check.py 가",
-    "빌드를 세운다. 조용히 안 나오는 사진을 다시 만들지 않기 위해서다."
+    "빌드를 세운다. 조용히 안 나오는 사진을 다시 만들지 않기 위해서다.",
+    "FCR-02C 판정 — disposition 은 PROMOTE / PROMOTE-UTILITY / MEDIA-ONLY / DISH-SUBJECT / REJECT 다. PROMOTE 는 실제 방문 + canonical metadata + **검증된 서술**을 모두 갖춰야 한다. 사진이 있다는 이유만으로 장소 페이지를 만들지 않는다 — 빈 페이지가 늘면 사이트가 조각난다."
   ],
   "version": "1.0",
   "aliases": {
     "avinguda-de-gaudi": {
-      "verdict": "place", "slug": "sagrada-familia",
+      "verdict": "place",
+      "slug": "sagrada-familia",
       "why": "설명이 '산 파우에서 가우디 거리 너머로 바라본 사그라다 파밀리아'"
     },
     "eixample": {
-      "verdict": "place", "slug": "barcelona-modernisme-walk",
+      "verdict": "place",
+      "slug": "barcelona-modernisme-walk",
       "why": "에이샴플라 격자 항공 — 명부의 'Barcelona Modernisme — Eixample 권역' 워크"
     },
-    "pa-amb-tomaquet": {"verdict": "dish", "region": "barcelona", "label": "파 암 토마켓"},
-    "crema-catalana": {"verdict": "dish", "region": "barcelona", "label": "크레마 카탈라나"},
-    "xuixo": {"verdict": "dish", "region": "girona", "label": "추쇼"},
-    "suquet-de-peix": {"verdict": "dish", "region": "girona", "label": "수케트 데 페시"},
-    "socca": {"verdict": "dish", "region": "nice", "label": "소카"},
-    "pissaladiere": {"verdict": "dish", "region": "nice", "label": "피살라디에르"},
-
+    "pa-amb-tomaquet": {
+      "verdict": "dish",
+      "region": "barcelona",
+      "label": "파 암 토마켓",
+      "disposition": "DISH/SUBJECT"
+    },
+    "crema-catalana": {
+      "verdict": "dish",
+      "region": "barcelona",
+      "label": "크레마 카탈라나",
+      "disposition": "DISH/SUBJECT"
+    },
+    "xuixo": {
+      "verdict": "dish",
+      "region": "girona",
+      "label": "추쇼",
+      "disposition": "DISH/SUBJECT"
+    },
+    "suquet-de-peix": {
+      "verdict": "dish",
+      "region": "girona",
+      "label": "수케트 데 페시",
+      "disposition": "DISH/SUBJECT"
+    },
+    "socca": {
+      "verdict": "dish",
+      "region": "nice",
+      "label": "소카",
+      "disposition": "DISH/SUBJECT"
+    },
+    "pissaladiere": {
+      "verdict": "dish",
+      "region": "nice",
+      "label": "피살라디에르",
+      "disposition": "DISH/SUBJECT"
+    },
     "cadaques": {
-      "verdict": "unregistered", "region": "girona",
-      "why": "Cadaqués 는 명부에 없다. Day 5 동선에 있으나 장소로 승격되지 않았다"
+      "verdict": "unregistered",
+      "region": "girona",
+      "why": "Day 5 14:45 실제 방문(stop id cadaques). place-facts 에 주차 정보만 있고 장소 서술이 없다 — 서술 확보 시 PROMOTE 후보",
+      "disposition": "MEDIA-ONLY"
     },
     "tossa-de-mar": {
-      "verdict": "unregistered", "region": "girona",
-      "why": "Tossa de Mar 는 명부에 없다"
+      "verdict": "unregistered",
+      "region": "girona",
+      "why": "Day 6 09:45 실제 방문(stop id tossa). 원고는 동선 문장뿐이고 장소 서술이 없다 — 서술 확보 시 PROMOTE 후보",
+      "disposition": "MEDIA-ONLY"
     },
     "sant-feliu-de-guixols": {
-      "verdict": "unregistered", "region": "girona",
-      "why": "Day 6 점심 슬롯이 가리키는 곳인데 장소로 승격되지 않았다"
+      "verdict": "unregistered",
+      "region": "girona",
+      "why": "Day 6 13:00 식사 슬롯(stop id sant-feliu). 업소가 특정되지 않았고 장소 서술도 없다 — 서술 확보 시 PROMOTE 후보",
+      "disposition": "MEDIA-ONLY"
     },
-
     "monaco-ville": {
-      "verdict": "place", "slug": "le-rocher",
+      "verdict": "place",
+      "slug": "le-rocher",
       "why": "'바위 곶 르 로셰 위에 올라앉은 모나코빌 구시가지' — 명부의 Le Rocher"
     },
     "monaco-cathedral": {
-      "verdict": "place", "slug": "le-rocher",
+      "verdict": "place",
+      "slug": "le-rocher",
       "why": "모나코 대성당은 르 로셰(모나코빌) 안에 있다"
     },
     "place-du-palais": {
-      "verdict": "place", "slug": "monaco",
+      "verdict": "place",
+      "slug": "monaco",
       "why": "모나코 대공궁과 궁전 광장 — 모나코를 찍은 사진"
     },
     "monte-carlo": {
-      "verdict": "place", "slug": "monaco",
+      "verdict": "place",
+      "slug": "monaco",
       "why": "몬테카를로 카지노 — 모나코 구역"
     },
     "croisette": {
-      "verdict": "place", "slug": "cannes",
+      "verdict": "place",
+      "slug": "cannes",
       "why": "크루아제트 대로는 칸의 해안 산책로다"
     },
-
     "aix-en-provence": {
-      "verdict": "place", "slug": "rotonde",
+      "verdict": "place",
+      "slug": "rotonde",
       "why": "'로통드 분수 로터리와 엑상 구시가 지붕' — 명부의 Rotonde"
     },
     "aix-markets": {
-      "verdict": "place", "slug": "place-richelme-place-des-precheurs",
+      "verdict": "place",
+      "slug": "place-richelme-place-des-precheurs",
       "why": "엑상 구시가 광장의 노천시장 — 명부의 두 시장 광장"
     },
-
     "roussillon": {
-      "verdict": "place", "slug": "roussillon-sentier-des-ocres",
+      "verdict": "place",
+      "slug": "roussillon-sentier-des-ocres",
       "why": "루시용 마을 전경 — 명부가 마을과 오커 산책로를 한 장소로 든다"
     },
     "sentier-des-ocres": {
-      "verdict": "place", "slug": "roussillon-sentier-des-ocres",
+      "verdict": "place",
+      "slug": "roussillon-sentier-des-ocres",
       "why": "오커 산책로 — 같은 장소"
     },
     "lourmarin-2": {
-      "verdict": "place", "slug": "lourmarin",
+      "verdict": "place",
+      "slug": "lourmarin",
       "why": "슬러그 중복의 잔재. usage 도 places/lourmarin-2.html 을 가리킨다"
     },
-
     "les-halles-avignon": {
-      "verdict": "place", "slug": "les-halles",
+      "verdict": "place",
+      "slug": "les-halles",
       "why": "아비뇽 레 알 시장의 수직 정원 — 명부의 Les Halles"
     },
-
     "cathedrale-saint-jean-lyon": {
-      "verdict": "place", "slug": "vieux-lyon",
+      "verdict": "place",
+      "slug": "vieux-lyon",
       "why": "'리옹 구시가지 지붕 너머로 보이는 생장 대성당' — 구시가지를 찍은 사진"
     },
     "traboules": {
-      "verdict": "place", "slug": "vieux-lyon",
+      "verdict": "place",
+      "slug": "vieux-lyon",
       "why": "뤼 뒤 뵈프 트라불 안뜰은 구시가지 안에 있다"
     },
     "annecy-vieille-ville": {
-      "verdict": "place", "slug": "annecy",
+      "verdict": "place",
+      "slug": "annecy",
       "why": "안시 구시가지 생트클레르 거리"
     },
     "thiou": {
-      "verdict": "place", "slug": "annecy",
+      "verdict": "place",
+      "slug": "annecy",
       "why": "티우 운하는 안시 구시가지를 지난다"
     },
     "lake-annecy": {
-      "verdict": "place", "slug": "annecy",
+      "verdict": "place",
+      "slug": "annecy",
       "why": "안시 호수"
     },
-
     "montmartre": {
-      "verdict": "place", "slug": "montmartre-south-pigalle",
+      "verdict": "place",
+      "slug": "montmartre-south-pigalle",
       "why": "몽마르트르 언덕 계단 — 명부의 Montmartre·South Pigalle"
     },
     "sacre-coeur": {
-      "verdict": "place", "slug": "montmartre-south-pigalle",
+      "verdict": "place",
+      "slug": "montmartre-south-pigalle",
       "why": "사크레쾨르는 몽마르트르 언덕 위에 있다"
     },
     "versailles-gardens": {
-      "verdict": "place", "slug": "versailles",
+      "verdict": "place",
+      "slug": "versailles",
       "why": "아폴론 분수와 그랑 카날 — 베르사유"
     },
     "trianon": {
-      "verdict": "place", "slug": "versailles",
+      "verdict": "place",
+      "slug": "versailles",
       "why": "프티 트리아농은 베르사유 영지 안에 있다"
     },
-
     "pantheon-paris": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "팡테옹은 명부에 없다. 라탱 지구 장소와 별개 건물이라 임의로 잇지 않는다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "일정에 없다. 라탱 지구 장소와 별개 건물이라 임의로 잇지 않는다",
+      "disposition": "MEDIA-ONLY"
     },
     "jardin-du-luxembourg": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "뤽상부르 공원은 명부에 없다. 뤽상부르 미술관과 다른 대상이다"
+      "verdict": "place",
+      "slug": "latin-quarter",
+      "why": "Day 29 stop 'Jardin du Luxembourg & 메디시스 분수' 의 place_ref 가 latin-quarter 다 — 정본이 이미 이 공원을 라탱 지구의 일부로 잇고 있다"
     },
     "marche-monge": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "몽주 시장은 명부에 없다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "일정에 없다. 몽주 시장은 명부에도 조사 자료에도 없다",
+      "disposition": "MEDIA-ONLY"
     },
     "palais-royal": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "팔레 루아얄은 명부에 없다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "Day 30 16:15 실제 방문(stop id palais-royal). 원고에 하루 계획은 있으나 장소 서술·dossier 가 없다 — 서술 확보 시 PROMOTE 후보",
+      "disposition": "MEDIA-ONLY"
     },
     "passages-couverts": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "갤러리 비비엔 등 아케이드는 명부에 없다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "일정에 없다. 갤러리 비비엔은 우천 대안으로만 언급된다",
+      "disposition": "MEDIA-ONLY"
     },
     "marche-des-enfants-rouges": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "앙팡 루주 시장은 명부에 없다. 마레 장소와 별개 대상이다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "일정에 없다. 마레 장소와 별개 대상이라 잇지 않는다",
+      "disposition": "MEDIA-ONLY"
     },
     "canal-saint-martin": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "생마르탱 운하는 명부에 없다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "일정에 없다",
+      "disposition": "MEDIA-ONLY"
     },
     "seine": {
-      "verdict": "unregistered", "region": "paris",
-      "why": "센강변 부키니스트는 명부에 없다"
+      "verdict": "unregistered",
+      "region": "paris",
+      "why": "일정에 없다. 강변 부키니스트는 특정 장소가 아니라 구간이다",
+      "disposition": "MEDIA-ONLY"
     }
   }
 }

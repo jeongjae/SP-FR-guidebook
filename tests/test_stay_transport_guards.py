@@ -38,7 +38,7 @@ class StayTransportGuards(unittest.TestCase):
             self.assertIn(marker, rendered, f"{region.slug}: 교통 섹션 누락")
             self.assertIn("도착과 출발", rendered, f"{region.slug}: 도착/출발 섹션 누락")
             if region.transit:
-                self.assertIn("도시 교통", rendered, f"{region.slug}: 도시 교통 섹션 누락")
+                self.assertIn("구간 내 이동", rendered, f"{region.slug}: 구간 내 이동 섹션 누락")
 
     def test_region_arrival_and_departure_link_to_daily_cards(self):
         for region in self.trip.regions:
@@ -66,6 +66,10 @@ class StayTransportGuards(unittest.TestCase):
         allowed.update({"www.orizo.fr", "orizo.fr", "www.lio-occitanie.fr",
                         "lio-occitanie.fr", "www.ter.sncf.com", "ter.sncf.com"})
         allowed.update({"zou.maregionsud.fr", "www.luberon-apt.fr", "luberon-apt.fr"})
+        # 운영사만 공식인 것은 아니다. 자동차 접근·시장 접근처럼 운영사가 없는
+        # 항목은 시청·관광청 페이지가 1차 출처다.
+        allowed.update({"www.tourisme-collioure.com", "tourisme-collioure.com",
+                        "web.girona.cat"})
         for slug, region in payload["regions"].items():
             for source in region["sources"]:
                 self.assertIn(urlparse(source["url"]).hostname, allowed,
@@ -82,7 +86,7 @@ class StayTransportGuards(unittest.TestCase):
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("도시 교통", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
+        for token in ("구간 내 이동", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
                       "Hola Barcelona Travel Card 48h", "BCN T1→Plaça Espanya",
                       "공식 자료와 재확인"):
             self.assertIn(token, rendered)

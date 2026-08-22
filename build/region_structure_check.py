@@ -39,12 +39,12 @@ SECTION_ORDER = ["overview", "attractions", "food", "stay", "life", "transport"]
 # 식당·카페 섹션의 하위 묶음. 라벨 → 그 묶음에 들어와도 되는 엔티티.
 FOOD_GROUPS = {
     "식당": {"restaurant", "wine-bar"},
-    "카페·빵집": {"cafe", "bakery"},
-    "시장·푸드홀": {"market", "food-hall"},
+    "카페": {"cafe"},
+    "빵집·시장·푸드홀": {"bakery", "market", "food-hall"},
 }
 
 # 교통의 하위 순서. 도착·출발 → 도시 교통 → 참고자료.
-TRANSPORT_ORDER = ["도착과 출발", "도시 교통", "공식 자료와 재확인"]
+TRANSPORT_ORDER = ["도착과 출발", "구간 내 이동", "공식 자료와 재확인"]
 
 # 없앤 섹션. 섹션 제목(sec-head)으로 되살아나면 안 된다. 접이식 요약
 # (<summary>)으로 개요 안에 접혀 있는 것은 콘텐츠 보존이라 통과다.
@@ -211,7 +211,12 @@ FOOD_PHOTO_STATUS = ROOT / "data" / "images" / "food-photo-status.json"
 
 
 def photo_status() -> dict[str, dict]:
-    """사진 상태 판정. 없다는 것과 '넣으면 안 된다' 는 다른 상태다."""
+    """사진 상태 판정.
+
+    VALID_GOOGLE_MAPS / VALID_EXISTING / NO_IMAGE / WRONG_BUSINESS.
+    'NO_IMAGE' 는 실패가 아니라 **조사를 마친 정상 종료**다 — 신원이
+    확인되지 않았다는 사실이 근거와 함께 적혀 있다. 잘못된 사진보다 낫다.
+    """
     if not FOOD_PHOTO_STATUS.exists():
         return {}
     return json.loads(FOOD_PHOTO_STATUS.read_text(encoding="utf-8"))["places"]
@@ -226,8 +231,10 @@ def food_report(trip) -> list[dict]:
     for r in trip.regions:
         for p in r.food_places:
             price = p.fact("price_range") or p.fact("price_adult")
+            # 보조 참조(related_places)도 그 장소의 방문이다 — 한 stop 이 두
+            # 장소를 담는 경우가 있다. 리포트가 카드와 다른 수를 세면 안 된다.
             menus = sorted({s.menu for d in trip.days for s in d.stops
-                            if s.place is p and s.menu})
+                            if s.menu and (s.place is p or p in s.related_places)})
             rows.append({
                 "region": r.slug, "slug": p.slug, "name": p.name,
                 "entity_type": p.entity_type,

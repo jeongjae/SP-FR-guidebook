@@ -24,15 +24,15 @@
       "order": 1,
       "start": "09:00",
       "end": "13:30",
-      "name": "Boulangerie Pichard 브런치 빵 조달 & 세탁",
+      "name": "숙소 브런치 & 세탁 (경마 다음 날 회복 오전)",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "경마 축제 다음 날 느린 기상, 세탁, 숙소 브런치 및 가벼운 15구 동네 산책",
+      "summary": "경마 축제 다음 날 느린 기상, 세탁, 숙소 브런치 및 가벼운 15구 동네 산책. 15구 아티장 빵집은 월·화 휴무가 흔해 토요일 Marché Lecourbe 장보기로 채워 둔다",
       "menu": "애플 턴오버, 브리오슈, 과일 샐러드",
       "reservation": null,
       "optional": false,
-      "place_ref": "boulangerie-pichard"
+      "place_ref": null
     },
     {
       "id": "jacquemart-andre",

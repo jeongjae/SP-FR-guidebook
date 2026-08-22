@@ -7,6 +7,8 @@ kind: spot
 grade: "필수"
 priority: "WORTHWHILE"
 content_tier: "TIER_B"
+meal_role: "MARKET"
+food_kind: "FOOD_HALL"
 summary: "세계적인 식물학자 파트리크 블랑의 300㎡ 거대한 수직 정원(Mur Végétal) 외벽 아래 40여 개 프로방스 전통 식재료 좌판이 모인 아비뇽의 활기찬 실내 중앙 미식 시장."
 source: source/CURRENT/30_Places/les-halles.md
 ---
@@ -44,7 +46,10 @@ source: source/CURRENT/30_Places/les-halles.md
 | 항목 | 상세 정보 |
 |---|---|
 | **위치** | 18 Place Pie, 84000 Avignon |
-| **운영 시간** | **화요일–일요일 06:00–14:00 (주말 14:30까지) / 매주 월요일 정기 휴무** |
+| **운영 시간** | {{fact:les-halles.hours}} |
+| **정기 휴무** | {{fact:les-halles.closed}} |
+| **예약** | {{fact:les-halles.booking}} |
+| **가격대** | {{fact:les-halles.price_range}} |
 | **입장료** | **무료** |
 | **결제 방식** | 신용카드 및 현금 모두 사용 가능 |
 | **추천 주차장** | **Parking des Halles** (시장 건물 옥상/상부 직결 500대 규모 유료 주차장, 진입로 Boulevard Raspail/Place Pie) |

@@ -8,6 +8,7 @@ from io import StringIO
 sys.path.append(str(Path(__file__).parent))
 import content_guard
 import fact_guard
+import identity_match
 import model
 
 # 경로는 여기서 직접 잡는다. 예전에는 build.py 에서 빌려 왔는데, 그 파일이
@@ -295,6 +296,57 @@ class TestValidationGuards(unittest.TestCase):
             self.assertIn("토큰 누락: '€809.54'", output)
         finally:
             nice_path.write_text(nice_backup, encoding="utf-8")
+
+
+class TestIdentityMatch(unittest.TestCase):
+    """업소 신원 대조 — 빈 정규화가 통과하면 남의 가게 사진이 붙는다.
+
+    실제로 났던 일이다. Google Maps 가 'La Paradeta' 자리에서 번역된
+    분류명('푸에스토시요 해산물 요리')을 돌려줬고, 그것을 접으니 빈
+    문자열이 됐다. 빈 문자열은 어떤 문자열에도 들어 있어 부분일치가
+    무조건 참이 됐다.
+    """
+
+    def test_empty_fold_never_matches(self):
+        # 한글만 있는 표시 이름 — 접으면 빈 문자열이 된다
+        self.assertEqual(identity_match.fold("푸에스토시요 해산물 요리"), "")
+        self.assertFalse(
+            identity_match.names_match(["La Paradeta"], "푸에스토시요 해산물 요리"))
+
+    def test_empty_candidate_is_ignored(self):
+        self.assertFalse(identity_match.names_match(["한글만"], "La Paradeta"))
+        self.assertFalse(identity_match.names_match([""], "La Paradeta"))
+        self.assertFalse(identity_match.names_match([], "La Paradeta"))
+
+    def test_accent_and_case_are_folded(self):
+        self.assertTrue(
+            identity_match.names_match(["Café Comptoir Abel"],
+                                       "Cafe Comptoir Abel"))
+        self.assertTrue(
+            identity_match.names_match(["Bar Cañete"], "Bar Canete"))
+
+    def test_known_renames_match_through_accept_list(self):
+        # 상호가 바뀐 곳은 확인된 새 이름을 후보에 넣어야만 통과한다
+        self.assertFalse(
+            identity_match.names_match(["Boulangerie Pichard"],
+                                       "La Maison Pichard"))
+        self.assertTrue(
+            identity_match.names_match(["Boulangerie Pichard", "La Maison Pichard"],
+                                       "La Maison Pichard"))
+        self.assertTrue(
+            identity_match.names_match(["Pâtisserie Weibel", "Maison Weibel"],
+                                       "Maison Weibel"))
+
+    def test_different_business_does_not_match(self):
+        self.assertFalse(
+            identity_match.names_match(["La Paradeta Sagrada Família"],
+                                       "Puertecillo Sagrada Familia"))
+        self.assertFalse(
+            identity_match.names_match(["Le Grand Pan"], "Le Grand Palais"))
+
+    def test_short_noise_does_not_match(self):
+        self.assertFalse(identity_match.names_match(["Ab"], "Absolutely Anything"))
+
 
 if __name__ == "__main__":
     unittest.main()

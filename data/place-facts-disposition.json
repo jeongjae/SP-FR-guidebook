@@ -1,0 +1,472 @@
+{
+ "$comment": [
+  "place-facts 에 있으나 장소 명부(91_Place_Registry)에 없는 슬러그의 판정.",
+  "",
+  "A VALID_PLACE_NEEDS_FACTS   실제 방문지이고 명부 승격 후보 — 조사 대상",
+  "B ALIAS_OF_EXISTING_PLACE   같은 실체를 다른 슬러그로 부른다 — canonical 로 병합",
+  "C ROUTE_OR_UTILITY_NOT_PLACE 수단·설비·규제 — 장소가 아니다",
+  "D RESTAURANT_OR_CAFE        조사 자료의 후보 업소 — 일정에 없으면 승격하지 않는다",
+  "E REGION_OR_NEIGHBORHOOD    동네·권역 단위",
+  "F DAY_ONLY_REFERENCE        Day stop 이 가리키지만 명부에 없다",
+  "G OBSOLETE                  대체안·선택 모듈·이벤트의 잔재",
+  "H UNKNOWN_NEEDS_RESEARCH    판단 불가",
+  "",
+  "**86개를 일괄 승격하지 않는다.** 실제 canonical Place 인 경우에만 facts 를 만든다.",
+  "병합해 보니 official 끼리 값이 다른 곳이 14건 나왔다. 그중 11건은 상위 장소의 하위 시설(성·시장·박물관·트라불)이라 별칭이 아니었다 — VALID_PLACE_NEEDS_FACTS 로 바꾸고 facts 를 그대로 둔다. 나머지 3건만 같은 시설의 중복이며 conflictResolution 을 적었다."
+ ],
+ "version": "1.0",
+ "classifiedAt": "2026-08-22",
+ "slugs": {
+  "annecy-palais-de-l-ile": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 안시 구시가지 안의 독립 기념물. 개관시간이 마을과 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "annecy"
+  },
+  "arles-la-roquette": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "la-roquette",
+   "why": "같은 아를 로케트 지구"
+  },
+  "arles-theatre-antique": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "theatre-antique-arles",
+   "why": "같은 고대극장. 슬러그 어순만 다르다"
+  },
+  "cannes-forville-suquet-croisette-walk": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "cannes-walk",
+   "why": "같은 칸 도보 코스"
+  },
+  "cathedrale-saint-jean": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "vieux-lyon",
+   "why": "생장 대성당은 구시가지 안에 있다 — 사진 별칭과 같은 판정"
+  },
+  "chateau-royal-de-collioure": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 콜리우르 안의 성. 개관시간·요금이 마을과 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "collioure"
+  },
+  "chemin-du-fauvisme": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 콜리우르의 야수파 산책로. 상시 개방이라 마을 시설과 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "collioure"
+  },
+  "cours-mirabeau-4": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "cours-mirabeau",
+   "why": "번호만 붙은 잔재"
+  },
+  "daniel-et-denise-crequi": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "daniel-et-denise",
+   "why": "같은 지점(Rue de Créqui)",
+   "conflictResolution": "prefer-canonical",
+   "conflictWhy": "canonical(daniel-et-denise)은 공식 URL·2026-08-21. 이쪽의 전화번호는 note 로 보존한다",
+   "preserveAsNote": [
+    "booking"
+   ]
+  },
+  "far-de-tossa": {
+   "disposition": "DAY_ONLY_REFERENCE",
+   "canonical": null,
+   "parentPlace": "tossa-de-mar (명부 미등재)",
+   "why": "토사 등대. 상위인 Tossa de Mar 자체가 명부에 없고 FCR-03 에서 KEEP_IN_REGION_DAY_CONTEXT 로 판정했다 — 합칠 곳이 없다. Day 6 09:45 Tossa 방문 안의 지점으로 남긴다"
+  },
+  "fou-de-fafa": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "fou-de-fafa-avignon",
+   "why": "같은 식당",
+   "conflictResolution": "prefer-canonical",
+   "conflictWhy": "canonical(fou-de-fafa-avignon)은 공식 URL·2026-08-21, 이쪽은 '복구본' 표기로 URL 이 없다"
+  },
+  "fourviere-lugdunum": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "fourviere",
+   "why": "푸르비에르 언덕 묶음"
+  },
+  "giverny-fondation-claude-monet": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "giverny",
+   "why": "지베르니의 모네 재단"
+  },
+  "grand-palais-cezanne-et-nous": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 전시 단위 예약 정보. 상설 관람과 조건이 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "grand-palais"
+  },
+  "la-roca-peratallada": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "peratallada",
+   "why": "페라타야다의 라 로카"
+  },
+  "latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "latin-quarter",
+   "why": "합성 슬러그"
+  },
+  "le-marais-place-des-vosges-carnavalet-archives": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "le-marais",
+   "why": "합성 슬러그"
+  },
+  "le-suquet-cannes": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "le-suquet",
+   "why": "같은 칸 구시가지"
+  },
+  "lugdunum": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 푸르비에르 언덕의 박물관. 언덕·바실리카와 개관시간이 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "fourviere"
+  },
+  "marche-collioure": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 콜리우르 장날. 마을과 다른 요일·시간을 갖는다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "collioure"
+  },
+  "marche-croix-rousse": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 크루아루스 장. 동네와 다른 요일·시간 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "croix-rousse"
+  },
+  "marche-gordes": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 고르드 화요장. 마을과 다른 요일·시간 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "gordes"
+  },
+  "marseille-le-panier": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "le-panier",
+   "why": "같은 르 파니에"
+  },
+  "marseille-vieux-port": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "vieux-port-marseille",
+   "why": "같은 구항구. 어순만 다르다"
+  },
+  "mercat-de-la-concepcio": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "mercat-concepcio",
+   "why": "FCR-02B 에서 사진 별칭으로 이미 확인된 중복",
+   "conflictResolution": "prefer-canonical",
+   "conflictWhy": "canonical(mercat-concepcio)은 공식 URL·2026-08-21, 이쪽은 2026-08-17 이고 hours 출처가 URL 이 아니다"
+  },
+  "monaco-rocher-port-monte-carlo-walk": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "monaco-walk",
+   "why": "합성 도보 슬러그"
+  },
+  "montorgueil-les-halles": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "montorgueil",
+   "why": "합성 슬러그"
+  },
+  "musee-de-l-orangerie-monet-peindre-le-temps": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "musee-de-l-orangerie",
+   "why": "전시명이 붙은 잔재"
+  },
+  "museu-de-maricel": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 팔라우와 별개 시설. 팔라우는 가이드투어 전용, 무제우는 화–일 상설 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "palau-de-maricel"
+  },
+  "nice-old-town-castle-hill-walk": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "nice-walk",
+   "why": "합성 도보 슬러그"
+  },
+  "placa-del-rei-carrer-del-bisbe": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "barri-gotic",
+   "why": "고딕지구 안의 두 지점"
+  },
+  "place-du-forum": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "place-du-forum-arles",
+   "why": "같은 포룸 광장"
+  },
+  "sacre-coeur": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 몽마르트르 언덕 위의 대성당. 동네와 개방시간이 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "montmartre-south-pigalle"
+  },
+  "sitges-core-walk-2h30": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "sitges",
+   "why": "시간이 붙은 도보 잔재"
+  },
+  "vieux-lyon-traboules": {
+   "disposition": "VALID_PLACE_NEEDS_FACTS",
+   "canonical": null,
+   "why": "명부 상위 장소의 **하위 시설**이다. 협약 트라불의 개방시간. 구시가지 전체와 다르다 병합하면 현장에서 닫힌 문 앞에 서게 된다 — 합치지 않는다.",
+   "parentPlace": "vieux-lyon"
+  },
+  "bnf-richelieu-salle-ovale": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "bnf-richelieu",
+   "why": "리슐리외 관의 타원홀"
+  },
+  "a-d-aligre-butte-aux-cailles-convention-batignolles": {
+   "disposition": "ALIAS_OF_EXISTING_PLACE",
+   "canonical": "marche-convention",
+   "why": "파리 시장 네 곳을 묶은 합성 슬러그. 일정에 있는 것은 콩방시옹뿐이다"
+  },
+  "aerobus": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "공항버스 상품"
+  },
+  "tcl": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "리옹 교통 운영사"
+  },
+  "navigo-idfm": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "파리 교통권"
+  },
+  "lignes-dazur": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "니스 교통 운영사"
+  },
+  "rtm-lecar": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "마르세유 교통 상품"
+  },
+  "hertz-avignon-tgv": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "렌터카 영업소"
+  },
+  "hertz-nice-ville": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "렌터카 영업소"
+  },
+  "taxi-avignon": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "택시 호출"
+  },
+  "virgule-navette": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "셔틀 노선"
+  },
+  "zbe-barcelona": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "저배출구역 규제"
+  },
+  "castle-hill-elevator": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "성채 언덕 승강기 — colline-du-chateau 의 설비"
+  },
+  "annecy-cruise": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "호수 유람선 — 장소가 아니라 활동"
+  },
+  "nocturnes-avignon-musees": {
+   "disposition": "ROUTE_OR_UTILITY_NOT_PLACE",
+   "canonical": null,
+   "why": "야간개장 일정 정보"
+  },
+  "acchiardo": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "니스 구시가지 식당 후보"
+  },
+  "chez-pipo": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "니스 소카 가게 후보"
+  },
+  "fonda-cal-ros": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "지로나 식당 후보"
+  },
+  "gout-bistrot": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "아비뇽 비스트로 후보"
+  },
+  "le-gout-du-jour": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "아비뇽 식당 후보"
+  },
+  "ju-maison-de-cuisine": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "아비뇽 코스 식당 후보"
+  },
+  "la-fourchette": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "아비뇽 식당 후보"
+  },
+  "la-table-alziari": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "니스 식당 후보"
+  },
+  "le-criquet-arles": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "아를 식당 후보"
+  },
+  "le-freti": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "안시 퐁뒤 식당 후보"
+  },
+  "restaurant-sevin": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "아비뇽 식당 후보"
+  },
+  "marche-provencal-antibes": {
+   "disposition": "RESTAURANT_OR_CAFE",
+   "canonical": null,
+   "why": "앙티브 프로방스 시장 — 식재료·먹거리"
+  },
+  "barcelona-gracia": {
+   "disposition": "REGION_OR_NEIGHBORHOOD",
+   "canonical": null,
+   "why": "그라시아 동네"
+  },
+  "quartier-mazarin": {
+   "disposition": "REGION_OR_NEIGHBORHOOD",
+   "canonical": null,
+   "why": "엑상 마자랭 지구"
+  },
+  "girona-call": {
+   "disposition": "REGION_OR_NEIGHBORHOOD",
+   "canonical": null,
+   "why": "지로나 유대인 지구"
+  },
+  "saone-rhone": {
+   "disposition": "REGION_OR_NEIGHBORHOOD",
+   "canonical": null,
+   "why": "리옹 두 강 권역"
+  },
+  "paris-15e-markets": {
+   "disposition": "REGION_OR_NEIGHBORHOOD",
+   "canonical": null,
+   "why": "15구 시장 묶음"
+  },
+  "rue-des-teinturiers": {
+   "disposition": "REGION_OR_NEIGHBORHOOD",
+   "canonical": null,
+   "why": "아비뇽 테인튀리에 거리"
+  },
+  "cadaques": {
+   "disposition": "DAY_ONLY_REFERENCE",
+   "canonical": null,
+   "why": "Day 5 14:45 방문. FCR-02C 에서 MEDIA-ONLY 판정"
+  },
+  "llibreria-finestres": {
+   "disposition": "DAY_ONLY_REFERENCE",
+   "canonical": null,
+   "why": "Day 3 17:35 방문 서점"
+  },
+  "maison-des-canuts": {
+   "disposition": "DAY_ONLY_REFERENCE",
+   "canonical": null,
+   "why": "Day 25 방문 견직 공방"
+  },
+  "eze": {
+   "disposition": "DAY_ONLY_REFERENCE",
+   "canonical": null,
+   "why": "Day 11 14:30 에즈 마을 방문"
+  },
+  "arc-de-triomphe-longchamp": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "개선문상 경마 — 이벤트 잔재"
+  },
+  "cem-joan-miro": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "바르셀로나 운동시설 선택안"
+  },
+  "cn-atletic-barceloneta": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "바르셀로나 수영 선택안"
+  },
+  "piscine-yves-blanc": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "엑상 수영장 선택안"
+  },
+  "fondation-maeght": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "생폴드방스 미술관 대체안"
+  },
+  "musee-chagall": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "니스 미술관 대체안"
+  },
+  "musee-matisse-nice": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "니스 미술관 대체안"
+  },
+  "musee-de-la-photographie-charles-negre": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "니스 미술관 선택안"
+  },
+  "musee-des-beaux-arts-lyon": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "리옹 미술관 대체안"
+  },
+  "musee-des-tissus": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "리옹 직물박물관 대체안"
+  },
+  "musee-gadagne": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "리옹 박물관 대체안"
+  },
+  "musee-explorations-du-monde": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "칸 박물관 대체안"
+  },
+  "musee-picasso-antibes": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "앙티브 피카소 미술관 — 일정 제외"
+  },
+  "museum-of-jewish-history": {
+   "disposition": "OBSOLETE",
+   "canonical": null,
+   "why": "지로나 유대사 박물관 — girona-call 과 겹치는 대체안"
+  }
+ }
+}

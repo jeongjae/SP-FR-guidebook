@@ -157,6 +157,17 @@ def main() -> int:
         return 1
     print("사진 연결 가드: 미매핑 0 · 조용히 사라진 사진 0")
 
+    # FCR-03 — 조사 결과가 닫혀 있는가. 잘못된 업소 사진·중복 canonical·
+    # 미분류 판정을 막는다.
+    import research_closure_check
+    research_problems, _ = research_closure_check.check(trip)
+    if research_problems:
+        print("조사 종결 가드 실패:")
+        for problem in research_problems[:20]:
+            print("  " + problem)
+        return 1
+    print("조사 종결 가드: 잘못된 업소 사진 0 · 미분류 0 · 미병합 별칭 0")
+
     total = sum(1 for _ in SITE.rglob("*.html"))
     print(f"\n완료: {SITE} ({total}쪽 · 검색 색인 {len(render.SEARCH_INDEX)}건)")
     return 0

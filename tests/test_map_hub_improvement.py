@@ -216,12 +216,25 @@ class MapHubImprovementTests(unittest.TestCase):
         gmaps_urls = []
         pattern = re.compile(r'href="(https://www\.google\.com/maps/[^"]+)"')
 
+        # /maps/place/ 퍼머링크는 길찾기가 아니라 **출처 인용**이다. Google Maps
+        # 사진을 쓴 자리는 그 사진이 그 업소의 것이라는 근거로 placeKey 가 든
+        # 퍼머링크를 남긴다 — search?api=1 로 바꾸면 근거가 사라진다.
+        # 우리가 만드는 길찾기 링크는 언제나 /maps/dir/ 또는 /maps/search/ 다.
+        citations = []
         for f in all_html:
             content = f.read_text(encoding="utf-8")
             for m in pattern.finditer(content):
-                gmaps_urls.append((f.name, m.group(1).replace("&amp;", "&")))
+                url = m.group(1).replace("&amp;", "&")
+                target = (citations if urlparse(url).path.startswith("/maps/place/")
+                          else gmaps_urls)
+                target.append((f.name, url))
 
         self.assertGreater(len(gmaps_urls), 200, "전체 사이트에 구글맵 링크가 충분히 존재해야 함")
+
+        # 인용 링크도 아무 주소나 되어서는 안 된다 — placeKey 가 들어 있어야 한다.
+        for fname, url in citations:
+            self.assertIn("!1s0x", url,
+                          f"{fname}: 출처 인용에 placeKey 가 없다 — {url}")
 
         for fname, url in gmaps_urls:
             parsed = urlparse(url)

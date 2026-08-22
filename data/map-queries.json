@@ -366,8 +366,8 @@
       "evidence": "https://fr.wikipedia.org/wiki/L%27Isle-sur-la-Sorgue",
       "verifiedAt": "2026-08-22"
     },
-    "la-paradeta-sagrada-familia": {
-      "query": "La Paradeta Sagrada Família, Passatge de Simó 18, Barcelona",
+    "puertecillo-sagrada-familia": {
+      "query": "Puertecillo Sagrada Familia, Passatge de Simó 18, Barcelona",
       "verdict": "FOUND",
       "resolvedName": "La Paradeta Sagrada Família",
       "evidence": "https://www.laparadeta.com/en/seafood-restaurants/",

@@ -215,6 +215,10 @@ class Stop:
     # 많다 — 같은 장소를 하루에 두 번 들르거나(cannes-transfer/cannes-station),
     # stop 이 장소의 일부일 때(sant-pau → sant-pau-recinte-modernista).
     place_ref: str | None = None
+    # 한 stop 이 두 장소를 함께 담을 때가 있다. Day 13 08:30 이
+    # 'Place Richelme 목요 시장 & Pâtisserie Weibel' 인 것처럼 —
+    # 시간표를 쪼개는 것이 답이 아니라(한 블록에서 둘 다 본다) 참조를
+    # 하나 더 두는 것이 답이다. 시간표는 primary 하나로 간결하게 남는다.
     related_place_refs: list[str] = field(default_factory=list)
     place: Place | None = None  # 장소 페이지가 있는 stop 만 연결된다
     related_places: list[Place] = field(default_factory=list)
@@ -658,7 +662,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 optional=bool(s.get("optional")),
                 address=s.get("address"),
                 place_ref=s.get("place_ref"),
-                related_place_refs=s.get("related_place_refs") or [],
+                related_place_refs=list(s.get("related_place_refs") or []),
             ) for s in j.get("stops", [])],
             legs=[Leg(
                 frm=l["from"], to=l["to"], mode=l.get("mode", "walk"),
@@ -806,13 +810,14 @@ def load_trip() -> Trip:
                 s.place = p
                 if d.n not in p.days:
                     p.days.append(d.n)
-            # related_place_refs 지원 (단일 stop 내 복수 장소 연결, Option B)
-            for rp_slug in s.related_place_refs:
-                rp = places.get(rp_slug)
-                if rp is not None:
-                    s.related_places.append(rp)
-                    if d.n not in rp.days:
-                        rp.days.append(d.n)
+            # 보조 참조도 방문일을 갖는다 — 그날 실제로 들르기 때문이다
+            for ref in s.related_place_refs:
+                rp = places.get(ref)
+                if rp is None:
+                    continue
+                s.related_places.append(rp)
+                if d.n not in rp.days:
+                    rp.days.append(d.n)
             # 좌표는 daily-card 가 더 최신이다 — 장소에 없으면 채워 준다
             if p is not None and p.lat is None and s.lat:
                 p.lat, p.lng = s.lat, s.lng
@@ -926,6 +931,15 @@ def validate(trip: Trip) -> list[str]:
     # 이 필드를 읽지 않아서, 식당 34곳이 어디서도 닿을 수 없는 페이지가 됐다.
     for d in trip.days:
         for s in d.stops:
+            for ref in s.related_place_refs:
+                if ref not in trip.places:
+                    problems.append(
+                        f"Day {d.n}: related_place_refs '{ref}' 가 가리키는 장소가 "
+                        f"없다 (stop {s.id})")
+                elif ref == s.place_ref:
+                    problems.append(
+                        f"Day {d.n}: related_place_refs 가 place_ref 와 같다 — "
+                        f"'{ref}' (stop {s.id})")
             if not s.place_ref:
                 continue
             if s.place_ref not in trip.places:

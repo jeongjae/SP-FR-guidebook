@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """T1-0b — data/place-days.json 생성.
 
-엔트리매트릭스 CSV 의 `days` 열이 정본이다. Day 번호는 **글로벌**(1–43)이며
+**정본은 Day SOT 다.** 명부에 있는 장소는 `daily-cards` 가 말하는 날을 쓴다.
+엔트리매트릭스 CSV 는 명부에 아직 없는 장소를 위한 보조 출처다 — 진단 시점에
+얼어붙은 표라, 그 뒤에 일정이 바뀌면 조용히 옛 날을 가리킨다. 실제로 Marché
+Convention 이 그랬다: 일정에서 화요일(Day 39)로 옮긴 뒤에도 CSV 는 Day 29(토)
+를 들고 있었고 G1 은 옛 날짜로 휴무 충돌을 냈다. Day 번호는 **글로벌**(1–43)이며
 'Day 2' · '8;9;11' · 'Day 2;Day 3' 같은 표기를 모두 흡수한다.
 
 G1 이 "이 장소를 며칠에 가는가"를 판정할 때 마지막 단계로 쓴다.
@@ -10,10 +14,14 @@ import csv
 import json
 import pathlib
 import re
+import sys
 import unicodedata
 from datetime import date
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
+import model  # noqa: E402
 MATRIX = ROOT / "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv"
 FACTS = ROOT / "data/place-facts.json"
 OUT = ROOT / "data/place-days.json"
@@ -118,12 +126,33 @@ def main():
                                  "region": facts[pid]["region"], "days": []})
         mapping[pid]["days"] = sorted(set(mapping[pid]["days"]) | set(days))
 
-    doc = {"version": "1.0",
-           "source": "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv (days 열)",
-           "note": "Day 번호는 글로벌 1–43. G1 이 방문일 판정의 마지막 단계로 쓴다.",
+    # --- Day SOT 우선 ---------------------------------------------------
+    # 명부에 있는 장소는 일정표가 말하는 날이 정본이다. 일정에서 빠진 장소는
+    # 항목 자체를 지운다 — 옛 날을 남겨 두면 그 날 기준으로 휴무를 따진다.
+    trip = model.load_trip()
+    from_sot = dropped = 0
+    for slug, place in trip.places.items():
+        if slug not in facts:
+            continue
+        if place.days:
+            mapping.setdefault(slug, {"displayName": facts[slug]["displayName"],
+                                      "region": facts[slug]["region"], "days": []})
+            mapping[slug]["days"] = sorted(place.days)
+            mapping[slug]["source"] = "day-sot"
+            from_sot += 1
+        elif slug in mapping:
+            del mapping[slug]
+            dropped += 1
+
+    doc = {"version": "1.1",
+           "source": "data/daily-cards/*.json (Day SOT) + "
+                     "docs/diagnosis-v2/SPFR_전수진단_엔트리매트릭스_v2.0.csv (명부 밖 보조)",
+           "note": "Day 번호는 글로벌 1–43. G1 이 방문일 판정의 마지막 단계로 쓴다. "
+                   "명부에 있는 장소는 Day SOT 가 CSV 를 덮는다.",
            "places": dict(sorted(mapping.items()))}
     OUT.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"place-days: {len(mapping)}곳 매핑 · CSV 행 {len(rows)}")
+    print(f"place-days: {len(mapping)}곳 매핑 · CSV 행 {len(rows)} · "
+          f"Day SOT 로 확정 {from_sot} · 일정에서 빠져 삭제 {dropped}")
     print(f"place-facts 에 없어 건너뛴 엔트리 {len(unmatched)}건")
     for reg, name, days in unmatched[:10]:
         print(f"    · [{reg}] {name[:40]} {days}")

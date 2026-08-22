@@ -1,0 +1,51 @@
+{
+ "$comment": [
+  "식당·카페 완결성의 빈칸마다 판정을 남긴다. 무조건 24/24 를 만들지 않는다 —",
+  "'아직 안 봤다' 와 '보고 나서 채우지 않기로 했다' 는 다른 상태다.",
+  "",
+  "RESOLVED               채웠다",
+  "INTENTIONALLY_UNRESOLVED 채울 수 있으나 채우지 않는 것이 맞다",
+  "NOT_APPLICABLE         그 항목이 이 엔티티에 해당하지 않는다",
+  "BLOCKED_WITH_EVIDENCE  근거를 확인했고 지금은 채울 수 없다"
+ ],
+ "decidedAt": "2026-08-22",
+ "gaps": {
+  "menu": {
+   "mercat-concepcio": {
+    "disposition": "NOT_APPLICABLE",
+    "why": "공설 생활시장이다. '대표 메뉴' 는 가판대마다 다르고 고정 메뉴가 없다 — 무엇을 사는가는 지역 음식 목록이 맡는다"
+   },
+   "mercat-del-lleo": {
+    "disposition": "NOT_APPLICABLE",
+    "why": "같은 이유. 60여 개 가판대의 시립 중앙시장이다"
+   },
+   "casa-marieta": {
+    "disposition": "INTENTIONALLY_UNRESOLVED",
+    "why": "일정에 잡히지 않은 추천 식당이라 그날의 stop 이 없고, stop 이 없으면 추천 메뉴의 출처도 없다. 추정해서 적지 않는다"
+   }
+  },
+  "price": {
+   "puertecillo-sagrada-familia": {
+    "disposition": "BLOCKED_WITH_EVIDENCE",
+    "why": "상호가 La Paradeta → Puertecillo 로 바뀌어 옛 가격(2인 €35~€55)을 새 업소의 가격으로 승계할 수 없다. Puertecillo 공식 페이지는 가격을 공개하지 않고 영업정보를 Google 프로필로 넘긴다. 2026-08-22 확인",
+    "evidence": "https://puertecillo.es/puertecillo-sagrada-familia/"
+   }
+  },
+  "visit_day": {
+   "casa-marieta": {
+    "disposition": "INTENTIONALLY_UNRESOLVED",
+    "why": "Girona 일정의 어느 날에도 잡히지 않은 추천 식당이다. 없는 것이 맞다"
+   },
+   "mercat-del-lleo": {
+    "disposition": "INTENTIONALLY_UNRESOLVED",
+    "why": "같은 이유. 장보기 후보로만 든다"
+   }
+  },
+  "photo": {
+   "_all": {
+    "disposition": "RESOLVED",
+    "why": "24/24. Google Maps 15 · 기존 검증 9. 전부 업소 신원이 데이터에 붙어 있다"
+   }
+  }
+ }
+}

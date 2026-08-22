@@ -376,7 +376,7 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 | 장소 | 지역·사용일 | 추천 메뉴 | 2인 예상 | 예약 |
 |---|---|---|---:|--- |
 | **Bodega Joan** | Eixample, 8/29 또는 8/30 저녁 | {{fact:bodega-joan.price_range}}, cannelloni 약 €10.50, seafood paella €15.50/인, crema catalana €5.75 | €45–70 | **권장**. 매일 영업, 온라인 예약 가능 |
-| **La Paradeta Sagrada Família** | 8/30 점심 | 홍합·새우·오징어·생선 중 당일 가격을 보고 3종 선택, 튀김+그릴 혼합 | {{fact:la-paradeta-sagrada-familia.price_range}} | **예약 없음**, 줄 서기. 일요일 13:00–16:00 |
+| **Puertecillo Sagrada Família** | 8/30 점심 | 홍합·새우·오징어·생선 중 당일 가격을 보고 3종 선택, 튀김+그릴 혼합 | 상호 변경으로 재확인 {{badge:field-recheck|가격 재확인}} | {{fact:puertecillo-sagrada-familia.booking}} |
 | **Bar Cañete** | Raval, 8/31 점심 | pan con tomate, 제철 채소, 크로켓, 생선·해산물, 오늘의 쌀요리 또는 고기 | {{fact:bar-canete.price_range}} | **필수에 가까움** |
 | **La Zorra** | Sitges, 9/1 점심 | {{fact:la-zorra.price_range}}, cheesecake €7.5 | €60–85 | **필수**, 13:00 예약 |
 
@@ -407,11 +407,13 @@ Can Robert가 만차이거나 짐을 차 안에 오래 두는 것이 걱정되�
 
 **예약:** 매일 운영시간이 길고 온라인 예약이 가능하지만 일요일 저녁은 사전예약한다.
 
-#### 13.3 La Paradeta — 사그라다 뒤의 실용적 해산물
+#### 13.3 Puertecillo Sagrada Família — 사그라다 뒤의 실용적 해산물
 
 수산시장처럼 진열된 해산물을 무게로 고르고 조리법을 선택한다. 메뉴 가격은 고정 접시가 아니라 당일 중량·품목에 따라 달라진다.
 
-**주문법:** 2인 기준 홍합 1, 새우 또는 langostino 1, 오징어 또는 작은 생선 1, 샐러드·빵을 더한다. 처음부터 랍스터·대형 생선을 고르면 예산이 급증한다. 일요일은 점심만 13:00–16:00이며 예약을 받지 않으므로 **12:50 도착**한다.
+**주문법:** 2인 기준 홍합 1, 새우 또는 langostino 1, 오징어 또는 작은 생선 1, 샐러드·빵을 더한다. 처음부터 랍스터·대형 생선을 고르면 예산이 급증한다.
+
+**상호가 바뀌었다.** 이 자리는 오래 La Paradeta 였고, 그때는 예약을 받지 않았다. 지금 영업하는 Puertecillo 는 공식 예약 링크와 전화({{fact:puertecillo-sagrada-familia.phone}})를 안내한다. 영업시간은 {{fact:puertecillo-sagrada-familia.hours}} 이고 {{fact:puertecillo-sagrada-familia.closed}}. **옛 업소의 가격은 승계하지 않는다** — 새 업소는 가격을 공개하지 않는다.
 
 #### 13.4 Bar Cañete — 한 번의 집중 타파스
 
@@ -485,7 +487,7 @@ Catalan 시장에서 들여온 생선·해산물과 제철 채소를 강조하�
 
 #### 15.1 Mercat de la Concepció — 실제 장보기 1순위
 
-> 📍 {{fact:mercat-de-la-concepcio.address}} · 🕐 {{fact:mercat-de-la-concepcio.hours}} · 휴무 {{fact:mercat-de-la-concepcio.closed}} · {{fact:mercat-de-la-concepcio.booking}}
+> 📍 {{fact:mercat-concepcio.address}} · 🕐 {{fact:mercat-concepcio.hours}} · 휴무 {{fact:mercat-concepcio.closed}} · {{fact:mercat-concepcio.booking}}
 
 > 가격은 **계획가(2026-08 조사)** — 메뉴·세트 구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 

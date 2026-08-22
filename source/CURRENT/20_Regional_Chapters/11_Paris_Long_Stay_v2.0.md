@@ -502,8 +502,8 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### Latin Quarter {{grade:essential|필수}}
 
-> **운영** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.hours}} · **휴관** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.closed}}
-> **예약** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.booking}}
+> **운영** {{fact:latin-quarter.hours}} · **휴관** {{fact:latin-quarter.closed}}
+> **예약** {{fact:latin-quarter.booking}}
 
 **'라틴'은 학생들이 라틴어로 말하던 동네라는 뜻이다 — 800년째 학생 구역이다.**
 
@@ -545,34 +545,30 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### Le Marais {{grade:essential|필수}}
 
-> **요금** {{fact:le-marais-place-des-vosges-carnavalet-archives.price_adult}} · **운영** {{fact:le-marais-place-des-vosges-carnavalet-archives.hours}} · **휴관** {{fact:le-marais-place-des-vosges-carnavalet-archives.closed}}
-> **예약** {{fact:le-marais-place-des-vosges-carnavalet-archives.booking}}
+> **요금** {{fact:le-marais.price_adult}} · **운영** {{fact:le-marais.hours}} · **휴관** {{fact:le-marais.closed}}
+> **예약** {{fact:le-marais.booking}}
 
-**Day 30 (9/27 일) · Day 35 (10/2 금)**
+**Day 31 (9/28 월) · Day 39 (10/6 화)**
 
 **이 체류에서 두 번 가는 유일한 동네다.**
 | 방문 | 성격 |
 |---|--- |
-| Day 30 (일) | **일요일의 마레** — 파리에서 일요일에 문을 여는 드문 구역 |
-| Day 35 (금) | **평일의 마레** — 생활·역사·패션 |
+| Day 31 (월) | **거리의 마레** — 패션위크 개막 주의 분위기와 골목 |
+| Day 39 (화) | **실내의 마레** — 피카소·카르나발레·보주 광장 |
 > **같은 곳을 다른 요일에 본다**
-> 일요일 파리는 대부분 닫는다. 마레는 예외로 알려져 있다 {{badge:unverified|확인 권장}}. 그래서 일요일과 평일의 얼굴이 다르다.
+> 마레의 실내는 Day 31 에 거의 닫는다 — {{fact:le-marais.closed}}. 그래서 Day 31 은 거리를, Day 39 는 컬렉션을 본다.
 > **두 번 가는 것이 낭비가 아니라 설계다.**
 
 #### 두 번의 마레가 무엇이 다른가
 
-Day 30·Day 35 시간표에 이미 나뉘어 있다.
+Day 31·Day 39 시간표에 이미 나뉘어 있다.
 
-| | Day 30 (9/27 일) | Day 35 (10/2 금) |
-|---|---|--- |
-| 오전 | Luxembourg 러닝 · **Marché Monge** 장보기 | 세탁·우편·카페 (생활블록) |
-| 점심 | 숙소 | **Marché des Enfants Rouges** |
-| 오후 | Marais 골목 · **Place des Vosges** · **Carnavalet** 선택 | Marais 골목 · **Archives** · Place des Vosges |
-| 실내 | 박물관은 **한 곳만** | **Carnavalet / MEP / Palais Galliera 중 1곳** |
-| 저녁 | 숙소식 또는 **Café des Musées** | 재즈 또는 연극 선택 |
-> **일요일에 마레를 넣은 이유**
-> 파리는 일요일에 대부분 닫는다. **Marché des Enfants Rouges 는 화–일 운영이고 월요일이 휴무다** ( `31. 시장과 장보기`). 그래서 일요일에 열리고 월요일에 닫는다.
-> Day 30 이 일요일, Day 38 이 월요일인 것과 맞물린다.
+| | 마레에서 무엇을 하는가 |
+|---|--- |
+| Day 31 오후 | **Fashion Week 개막 분위기 · 마레 골목** — 실내는 넣지 않는다 |
+| Day 39 오후 | **Musée Picasso ➔ 골목 ➔ Carnavalet ➔ Place des Vosges** — 박물관 두 곳을 걸어서 잇는다 |
+> **Day 31 에 실내를 넣지 않은 이유**
+> 마레의 대표 실내가 이 날 닫는다 — {{fact:le-marais.closed}}. **Marché des Enfants Rouges 도 화–일 운영이라 이 날은 휴무다** ( `31. 시장과 장보기`). 실내를 기대하고 갔다가 닫힌 문 앞에 서지 않게, Day 31 은 거리만 본다.
 
 > **무엇을 볼 것인가 — 쇼핑이 아니라 건축이다**
 > 지시가 명확하다. **오텔 파르티퀼리에(hôtel particulier)의 안뜰과 거리의 관계를 관찰한다.**
@@ -582,9 +578,9 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 > 경고를 달아 두었다. 거리 분위기는 보되 **초청제 쇼를 '관람 일정'으로 기대하지 않는다.**
 
 > **공연이 걸리면 날을 바꾼다**
-> Day 30 오후에 공연(Opéra Bastille 등) 표가 잡히면 **마레를 Day 35 로 몰고** 그 날은 공연 중심으로 짠다. 판단 규칙이다.
+> Day 31 오후에 공연(Opéra Bastille 등) 표가 잡히면 **거리의 마레를 Day 39 로 몰고** 그 날은 공연 중심으로 짠다. 판단 규칙이다.
 
-⚠ 피카소 미술관과 유대인 지구는 시간표에 없다. 마레 안에 있지만 **이번 일정에 편성된 적이 없다** {{badge:unverified|넣으려면 별도 조사 필요}}.
+⚠ 유대인 지구(rue des Rosiers)는 시간표에 없다. 마레 안에 있지만 **이번 일정에 편성된 적이 없다** {{badge:unverified|넣으려면 별도 조사 필요}}. 피카소 미술관은 Day 39 오후에 편성돼 있다.
 
 ### Montmartre · South Pigalle {{grade:essential|필수}}
 
@@ -627,7 +623,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Montorgueil {{grade:priority|우선추천}}
 
-> 🕐 {{fact:montorgueil-les-halles.hours}} · 휴무 {{fact:montorgueil-les-halles.closed}} · {{fact:montorgueil-les-halles.booking}}
+> 🕐 {{fact:montorgueil.hours}} · 휴무 {{fact:montorgueil.closed}} · {{fact:montorgueil.booking}}
 
 **10/3 유연한 문화일의 선택 모듈**
 
@@ -673,7 +669,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 |---|---|--- |
 | **Convention–Commerce** | 실제 주거생활·시장·상점 | 생활 편의 매우 높음 · **가성비 1순위** |
 | **Motte-Picquet–Grenelle** | 교통·에펠·상점 | 문화 접근 높음 · 2순위 |
-**Marché Convention 은 화·목·일**, **Marché Grenelle 은 수·일**이다 ( `31. 시장과 장보기`). **Day 36 은 토요일이라 둘 다 서지 않는다.**
+**Marché Convention 은 화·목·일**, **Marché Grenelle 은 수·일**이다 ( `31. 시장과 장보기`). **Day 36 은 토요일이라 둘 다 서지 않는다** — 토요일 15구 시장은 **Lecourbe·Lefebvre·Cervantès(수·토)** 이고, 숙소에서 가장 가까운 것은 Marché Lecourbe(약 1.3km)다.
 
 > **그러면 이 날 무엇을 하는가**
 > 시장이 없는 것이 문제가 아니다. 이 날의 목적은 장보기가 아니라 **관광지가 없는 구역에서 하루를 보내는 것**이다. 공원·상점가·카페·수영장이 내용이다.
@@ -684,8 +680,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### 월요일 모듈 {{grade:priority|우선추천}}
 
-> **운영** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.hours}} · **휴관** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.closed}}
-> **예약** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.booking}}
+> **운영** {{fact:marche-convention.hours}} · **휴관** {{fact:marche-convention.closed}}
+> **예약** {{fact:marche-convention.booking}}
 
 **Day 38 (10/5 월)**
 
@@ -717,6 +713,9 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 > **오전은 공통이다**
 > 정식 운동(gym 45–60분 · 수영 또는 카페) · 세탁 · 냉장고 정리 · **둘째 주 장보기** · 숙소 점심.
 > 예약은 하루 **최대 1개**. 피로도 2/5 로 설계된 날이다.
+
+> **⚠ 월요일 아침에 빵집을 계획에 넣지 않는다**
+> 15구 아티장 빵집은 월·화 휴무가 흔하다. **Boulangerie Pichard 가 그렇고** ( {{fact:boulangerie-pichard.closed}} ), Poilâne 그르넬점도 월요일에 닫는다 {{badge:unverified|2차 출처}}. 그래서 월요일 아침 빵은 **전날 사 둔다.** Day 31 은 일요일(Day 30)에, Day 38 은 롱샹 경마로 일요일이 통째로 나가므로 토요일(Day 36) 장보기에 함께 담는다.
 
 {{badge:field-recheck|각 구역 시장 요일·공원 운영 현행 확인}}
 
@@ -847,7 +846,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 > **Editor's Verdict**: 17세기 귀족 저택(Hôtel particulier), 파리에서 가장 오래된 대칭 광장 보주 광장(Place des Vosges), 유대인 전통 미식 로지에 거리, 북마레의 감각적인 독립 부티크와 갤러리가 공존하는 역사·트렌드 지구.
 
-- **체류/요금**: 2–3시간 · 거리 무료 (일요일 정상 영업)
+- **체류/요금**: 2–3시간 · 거리 무료 · 일요일에도 여는 구역으로 알려져 있다 {{badge:unverified|확인 권장}}
 - **상세 가이드**: [Le Marais 전체 심화 가이드 보기](../places/le-marais.html)
 
 ---
@@ -882,8 +881,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### BnF Richelieu — 우선 추천
 
-> **운영** {{fact:bnf-richelieu-salle-ovale.hours}} · **휴관** {{fact:bnf-richelieu-salle-ovale.closed}}
-> **예약** {{fact:bnf-richelieu-salle-ovale.booking}}
+> **운영** {{fact:bnf-richelieu.hours}} · **휴관** {{fact:bnf-richelieu.closed}}
+> **예약** {{fact:bnf-richelieu.booking}}
 
 - Oval Room은 무료.
 - 화요일 10:00–20:00, 수–일 10:00–18:00, 월요일 휴관 {{badge:unverified|공식 확인}}
@@ -1033,7 +1032,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 > **Editor's Verdict**: 파리 최고의 바게트 그랑프리(Grand Prix de la Baguette) 수상에 빛나는 15구 대표 아티장 베이커리. 천연 발효 바게트 트라디시옹과 갓 구운 크루아상.
 
-- **체류/가격**: 10–15분 · **바게트 €1.30 · 크루아상 €1.40** (수–일 07:00–20:00, 월·화 휴무)
+- **체류/가격**: 10–15분 · {{fact:boulangerie-pichard.price_range}} · 운영 {{fact:boulangerie-pichard.hours}} · 휴무 {{fact:boulangerie-pichard.closed}} · {{fact:boulangerie-pichard.booking}}
 - **상세 가이드**: [Boulangerie Pichard 전체 가이드 보기](../places/boulangerie-pichard.html)
 
 ---

@@ -307,7 +307,7 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 
 ##### 식당 카드 — Daniel et Denise Créqui {{badge:p0|9/22 확정 저녁}}
 
-> 🕐 {{fact:daniel-et-denise-crequi.hours}} · 휴무 {{fact:daniel-et-denise-crequi.closed}} · {{fact:daniel-et-denise-crequi.booking}}
+> 🕐 {{fact:daniel-et-denise.hours}} · 휴무 {{fact:daniel-et-denise.closed}} · {{fact:daniel-et-denise.booking}}
 
 | 필드 | 내용 |
 |---|--- |

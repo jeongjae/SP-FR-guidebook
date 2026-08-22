@@ -50,19 +50,19 @@
       "place_ref": null
     },
     {
-      "id": "la-paradeta-sagrada",
+      "id": "puertecillo-sagrada",
       "order": 3,
       "start": "12:45",
       "end": "14:15",
-      "name": "La Paradeta Sagrada Família 점심",
+      "name": "Puertecillo Sagrada Família 점심",
       "category": "food",
       "lat": 41.4022,
       "lng": 2.1764,
-      "summary": "직접 고른 해산물을 즉석 조리하는 점심. 13:00 첫 회전 대기 진입",
+      "summary": "파사체 데 시모 18번지 해산물 마리스케리아. 점심 영업은 13:00 에 열고 16:00 에 닫는다 — 12:45 도착해 첫 회전에 들어간다",
       "menu": "새우, 맛조개(navajas), 칼라마리 튀김",
-      "reservation": "현장 대기 (12:50 도착 권장)",
+      "reservation": "공식 예약 링크 또는 +34 934 500 191",
       "optional": false,
-      "place_ref": "la-paradeta-sagrada-familia"
+      "place_ref": "puertecillo-sagrada-familia"
     },
     {
       "id": "sagrada-familia",
@@ -137,7 +137,7 @@
     },
     {
       "from": "avinguda-gaudi",
-      "to": "la-paradeta-sagrada",
+      "to": "puertecillo-sagrada",
       "mode": "walk",
       "duration": "10분",
       "distance": "0.6km",
@@ -145,7 +145,7 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "la-paradeta-sagrada",
+      "from": "puertecillo-sagrada",
       "to": "sagrada-familia",
       "mode": "walk",
       "duration": "5분",
