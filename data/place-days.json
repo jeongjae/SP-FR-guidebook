@@ -30,7 +30,7 @@
       "displayName": "Arènes d'Arles",
       "region": "avignon",
       "days": [
-        22
+        21
       ],
       "source": "day-sot"
     },
@@ -94,8 +94,10 @@
       "region": "paris",
       "days": [
         28,
+        29,
         30,
-        35
+        35,
+        36
       ],
       "source": "day-sot"
     },
@@ -196,7 +198,7 @@
       "displayName": "Cloître Saint-Trophime",
       "region": "avignon",
       "days": [
-        22
+        21
       ],
       "source": "day-sot"
     },
@@ -360,7 +362,7 @@
       "displayName": "La Roquette",
       "region": "avignon",
       "days": [
-        22
+        21
       ],
       "source": "day-sot"
     },
@@ -406,7 +408,7 @@
       "displayName": "Le Gibolin",
       "region": "avignon",
       "days": [
-        22
+        21
       ],
       "source": "day-sot"
     },
@@ -464,7 +466,7 @@
       "displayName": "Les Cocottes Saint-Louis",
       "region": "avignon",
       "days": [
-        20
+        22
       ],
       "source": "day-sot"
     },
@@ -473,7 +475,7 @@
       "region": "avignon",
       "days": [
         19,
-        20
+        22
       ],
       "source": "day-sot"
     },
@@ -511,6 +513,7 @@
       "displayName": "Marché Convention",
       "region": "paris",
       "days": [
+        30,
         39
       ],
       "source": "day-sot"
@@ -700,7 +703,7 @@
       "region": "avignon",
       "days": [
         19,
-        20
+        22
       ],
       "source": "day-sot"
     },
@@ -748,7 +751,7 @@
       "displayName": "Pont du Gard",
       "region": "avignon",
       "days": [
-        21
+        20
       ],
       "source": "day-sot"
     },
@@ -756,7 +759,7 @@
       "displayName": "Pont Saint-Bénézet",
       "region": "avignon",
       "days": [
-        20
+        22
       ],
       "source": "day-sot"
     },
@@ -803,7 +806,7 @@
       "displayName": "Rocher des Doms",
       "region": "avignon",
       "days": [
-        20
+        22
       ],
       "source": "day-sot"
     },
@@ -859,7 +862,7 @@
       "displayName": "Théâtre antique",
       "region": "avignon",
       "days": [
-        22
+        21
       ],
       "source": "day-sot"
     },
@@ -867,7 +870,7 @@
       "displayName": "Uzès Place aux Herbes·구시가지",
       "region": "avignon",
       "days": [
-        21
+        20
       ],
       "source": "day-sot"
     },

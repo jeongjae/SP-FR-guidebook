@@ -1173,9 +1173,34 @@ footer p { margin: 0 0 var(--s1); }
   margin-block: -0.7rem;
 }
 
-/* 지도 목록 — 시각 · 이름 · 열기 를 한 줄에 둔다. 열기가 아래로 떨어지면
-   한 지점이 두 줄을 먹고, 하루 7곳이면 화면이 두 배로 길어진다. */
+.region-map-section {
+  margin-block-end: var(--s6);
+}
+.region-map-section:last-child {
+  margin-block-end: 0;
+}
 .map-list { margin: 0; padding: var(--s2) var(--s4) var(--s4); }
+.map-region-group {
+  margin-block-end: var(--s5);
+}
+.map-region-group:last-child {
+  margin-block-end: 0;
+}
+.map-region-head {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brand);
+  padding-block: var(--s3) var(--s1);
+  margin: 0;
+  border-bottom: 2px solid var(--brand);
+}
+.map-region-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .map-list li {
   display: flex;
   align-items: center;
@@ -1185,10 +1210,18 @@ footer p { margin: 0 0 var(--s1); }
   border-bottom: 1px solid var(--line);
 }
 .map-list li:last-child { border-bottom: 0; }
+.map-list li > .map-num {
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  min-width: 1.6rem;
+}
 .map-list li > .meta {
   flex: 0 0 auto;
   font-variant-numeric: tabular-nums;
-  min-width: 3.1em;
+  white-space: nowrap;
 }
 /* 지점 이름이 남는 자리를 차지하고, 길면 줄을 바꾼다 */
 

@@ -547,7 +547,7 @@ def timeline(d: Day, rel: str) -> str:
 
 
 def map_card(stops, rel: str, center=None, zoom: int = 14,
-             label: str = "지도") -> str:
+             label: str = "지도", region_groups=None, numbered: bool = True) -> str:
     """MapCard. 핀은 Place DB 에서만 온다 — HTML 에 좌표를 따로 박지 않는다.
 
     지도는 눌렀을 때만 불러온다. 43일 내내 열리는 화면마다 지도 SDK 를
@@ -557,14 +557,30 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
     스크립트가 안 뜨는 상황이 실제로 있고, 그때 좌표 링크만이라도 손에
     있어야 한다.
     """
-    pins = [{"id": s.id, "name": s.name, "lat": s.lat, "lng": s.lng,
-             "cat": s.category, "time": s.start,
-             "address": s.address,
-             "place": s.place.slug if s.place else None,
-             "query": s.place.map_query if s.place else None}
-            for s in stops if (s.lat and s.lng) or s.address]
-    if not pins:
+    def _pin_dict(s):
+        name_text = getattr(s, "route_title", None) or s.name
+        return {
+            "id": s.id, "name": name_text, "lat": s.lat, "lng": s.lng,
+            "cat": s.category,
+            "time": getattr(s, "formatted_when", s.start or ""),
+            "address": s.address,
+            "place": s.place.slug if s.place else None,
+            "query": getattr(s, "map_query", None) or (s.place.map_query if s.place else None),
+            "map_type": getattr(s, "map_type", "place"),
+            "origin": getattr(s, "route_origin", None),
+            "destination": getattr(s, "route_destination", None),
+            "travel_mode": getattr(s, "route_mode", None),
+        }
+
+    valid_stops = [s for s in stops
+                   if getattr(s, "map_type", "place") != "non_map"
+                   and s.id not in {"cdg-departure", "inflight", "icn", "bcn-airport", "paris-return"}
+                   and (s.category != "hotel" or getattr(s, "map_type", "place") == "route")
+                   and ((s.lat and s.lng) or s.address)]
+    if not valid_stops:
         return ""
+
+    pins = [_pin_dict(s) for s in valid_stops]
     located = [p for p in pins if p["lat"] and p["lng"]]
     if center is None:
         if not located:
@@ -575,25 +591,53 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
                          ensure_ascii=False, separators=(",", ":")) \
         .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
 
-    items = []
-    for i, p in enumerate(pins, 1):
-        name = esc(p["name"])
-        if p["place"]:
-            name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
-        when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
-        href = maps_url(p["lat"], p["lng"], p.get("address") or "",
-                        p.get("query") or "")
-        items.append(
-            f'<li data-pin="{esc(p["id"])}">{when}'
-            f'<span class="map-name">{name}</span>'
-            f'<a class="map-open" rel="nofollow noopener" href="{esc(href)}">'
-            f'{ic("map")}'
-            f'<span class="visually-hidden">{esc(p["name"])} </span>열기</a></li>')
+    def _render_stop_li(s, idx: int | None = None) -> str:
+        name_text = getattr(s, "route_title", None) or s.name
+        name_esc = esc(name_text)
+        if s.place:
+            name_html = f'<a href="{rel}/places/{s.place.slug}.html">{name_esc}</a>'
+        else:
+            name_html = name_esc
+        when_text = getattr(s, "formatted_when", s.start or "")
+        when_html = f'<span class="meta">{esc(when_text)}</span>' if when_text else ""
+        num_html = f'<span class="map-num">{idx}.</span>' if idx is not None else ""
+        href = maps_url(s.lat, s.lng, s.address or "",
+                        getattr(s, "map_query", None) or (s.place.map_query if s.place else ""),
+                        getattr(s, "route_origin", None) or "",
+                        getattr(s, "route_destination", None) or "",
+                        getattr(s, "route_mode", None) or "")
+        return (f'<li data-pin="{esc(s.id)}">{num_html}{when_html}'
+                f'<span class="map-name">{name_html}</span>'
+                f'<a class="map-open" rel="nofollow noopener" href="{esc(href)}">'
+                f'{ic("map")}'
+                f'<span class="visually-hidden">{name_esc} </span>열기</a></li>')
+
+    if region_groups:
+        groups_html = []
+        for r_name, r_stops in region_groups:
+            r_valid = [s for s in r_stops
+                       if getattr(s, "map_type", "place") != "non_map"
+                       and s.id not in {"cdg-departure", "inflight", "icn", "bcn-airport", "paris-return"}
+                       and (s.category != "hotel" or getattr(s, "map_type", "place") == "route")
+                       and ((s.lat and s.lng) or s.address)]
+            r_items = [_render_stop_li(s, idx=i + 1 if numbered else None)
+                       for i, s in enumerate(r_valid)]
+            if r_items:
+                groups_html.append(
+                    f'<section class="map-region-group">'
+                    f'<h3 class="map-region-head">{esc(r_name)}</h3>'
+                    f'<ol class="map-region-list">{"".join(r_items)}</ol>'
+                    f'</section>')
+        list_html = f'<div class="map-list">{"".join(groups_html)}</div>'
+    else:
+        items = [_render_stop_li(s, idx=i + 1 if numbered else None)
+                 for i, s in enumerate(valid_stops)]
+        list_html = f'<ol class="map-list">{"".join(items)}</ol>'
 
     return f"""<div class="map-card">
-  <div class="map-canvas" id="map-canvas" hidden></div>
-  <p class="map-status meta" id="map-status" role="status" aria-live="polite"></p>
-  <script type="application/json" id="map-data">{payload}</script>
+  <div class="map-canvas" hidden></div>
+  <p class="map-status meta" role="status" aria-live="polite"></p>
+  <script type="application/json" class="map-data-script">{payload}</script>
   <div class="map-card-foot">
     <span class="label">{esc(label)} · {len(pins)}곳</span>
     <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
@@ -601,21 +645,26 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
       <button type="button" data-view="list" aria-pressed="true">목록</button>
     </div>
   </div>
-  <ol class="map-list" id="map-list">{"".join(items)}</ol>
+  {list_html}
 </div>"""
 
 
-def maps_url(lat=None, lng=None, address: str = "", query: str = "") -> str:
-    """지도 링크. **이름이 있으면 이름으로**, 없으면 주소, 그다음 좌표.
+def maps_url(lat=None, lng=None, address: str = "", query: str = "",
+             origin: str = "", destination: str = "", travel_mode: str = "") -> str:
+    """지도 링크. **경로면 Directions URL, 이름이 있으면 이름으로**, 없으면 주소, 그다음 좌표.
 
     좌표는 틀리면 조용히 틀린다. 실제로 숙소 좌표가 식당 9곳에 복사돼
     파리 Bouillon Chartier 는 2.5km, 리옹 Café Comptoir Abel 은 3km
     어긋나 있었다. 이름은 틀리면 검색이 실패해서 눈에 보인다.
 
     이름 검색어는 data/map-queries.json 이 정본이고, 이름으로 단일하게
-    특정되는 것만 들어 있다. 산책 코스명·Airbnb 상품명처럼 지도에 없는
-    이름은 애초에 담지 않으므로 여기서 자연히 좌표·주소로 떨어진다.
+    특정되는 것만 들어 있다.
     """
+    if origin and destination:
+        mode = travel_mode or "transit"
+        return (f"https://www.google.com/maps/dir/?api=1"
+                f"&origin={quote(origin)}&destination={quote(destination)}"
+                f"&travelmode={mode}")
     if query:
         return ("https://www.google.com/maps/search/?api=1&query="
                 + quote(query))
@@ -1610,36 +1659,117 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
     """지도 — Trip · Region · Day 세 수준. 핀은 Place DB 에서만 온다."""
     out = {}
     rel = ".."
-    all_stops = []
-    seen = set()
-    for d in trip.days:
-        for s in d.stops:
-            if s.lat and s.id not in seen and s.category != "hotel":
-                seen.add(s.id)
-                all_stops.append(s)
 
-    links = "".join(
-        f'<li><a href="{r.slug}.html">{esc(r.name)}</a> — {esc(r.day_range)}</li>'
-        for r in trip.regions)
+    def stop_region_slug(d, s):
+        if s.place:
+            return s.place.region
+        # Geographic and semantic routing for non-place stops and routes
+        if "bcn" in s.id or "barcelona" in s.id or "sitges" in s.id or "can-robert" in s.id:
+            return "barcelona"
+        if "girona" in s.id or "cadaques" in s.id or "tossa" in s.id or "sant-feliu" in s.id:
+            return "girona"
+        if "nice" in s.id or "cannes" in s.id or "antibes" in s.id or "monaco" in s.id or "menton" in s.id or "eze" in s.id or "villefranche" in s.id:
+            return "nice"
+        if "aix" in s.id or "marseille" in s.id or "cassis" in s.id or "calanques" in s.id or "vallon" in s.id:
+            return "aix"
+        if "luberon" in s.id or "gordes" in s.id or "roussillon" in s.id or "farm" in s.id or "bories" in s.id:
+            return "luberon"
+        if "avignon" in s.id or "arles" in s.id or "uzes" in s.id or "gard" in s.id:
+            return "avignon"
+        if "lyon" in s.id or "annecy" in s.id or "funicular" in s.id or "saone" in s.id or "rosaire" in s.id or "part-dieu" in s.id:
+            return "lyon"
+        if ("paris" in s.id or "versailles" in s.id or "longchamp" in s.id or "cdg" in s.id or
+                "tuileries" in s.id or "palais-royal" in s.id or "opera" in s.id or "invalides" in s.id or
+                "champs-elysees" in s.id or "cour-carree" in s.id or "ranelagh" in s.id or "prix-de-l-arc" in s.id or
+                "parc-monceau" in s.id or "iena" in s.id or "trocadero" in s.id or "first-grocery" in s.id or
+                "city-bus-tour" in s.id or "rue-du-bac" in s.id):
+            return "paris"
+        if len(d.regions) > 1:
+            intercity_stops = {"vy1521": "nice", "tgv-to-lyon": "lyon", "part-dieu": "lyon", "tgv-to-paris": "paris"}
+            if s.id in intercity_stops:
+                return intercity_stops[s.id]
+        return d.region
+
+    region_zoom = {
+        "barcelona": 12,
+        "girona": 9,
+        "nice": 11,
+        "aix": 10,
+        "luberon": 11,
+        "avignon": 10,
+        "lyon": 12,
+        "paris": 12,
+    }
+
+    # 1. Whole trip map page: 8 sequential region sections (Region name -> Map -> Numbered List)
+    seen = set()
+    region_sections = []
+    total_stops_count = 0
+
+    for r in trip.regions:
+        r_stops = []
+        for d in trip.days:
+            for s in d.stops:
+                reg_slug = stop_region_slug(d, s)
+                if reg_slug != r.slug:
+                    continue
+                item_key = s.place.slug if s.place else s.id
+                if item_key in seen:
+                    continue
+                if getattr(s, "map_type", "place") == "non_map":
+                    continue
+                if s.id in {"cdg-departure", "inflight", "icn", "bcn-airport", "paris-return"}:
+                    continue
+                if s.category == "hotel" and getattr(s, "map_type", "place") != "route":
+                    continue
+                if not ((s.lat and s.lng) or s.address):
+                    continue
+                seen.add(item_key)
+                r_stops.append((d.date, s.start or "99:99", s.order, s))
+
+        r_stops_sorted = [x[3] for x in sorted(r_stops, key=lambda x: (x[0], x[1], x[2]))]
+        total_stops_count += len(r_stops_sorted)
+        zoom = region_zoom.get(r.slug, 12)
+        card_html = map_card(r_stops_sorted, rel, zoom=zoom, label=f"{r.name} 지도", numbered=True)
+        region_sections.append(f"""<section class="region-map-section" id="section-{r.slug}">
+{sec_head("", r.name)}
+{card_html}
+</section>""")
+
     out["index.html"] = page(
         title="지도", rel=rel, tab="map",
         trail=[("홈", "index.html"), ("지도", None)],
         body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header><h1>지도</h1>
-<p class="hero-dek">전체 여정의 장소 {len(all_stops)}곳. 지역별 지도와 날짜별
-동선은 각각 지역 페이지와 Day 페이지에 있다.</p></header>
-{map_card(all_stops, rel, zoom=5, label="전체 여정")}
-{sec_head("", "지역별 지도")}
-<div class="prose"><ul>{links}</ul></div>
+<p class="hero-dek">전체 여정 8개 지역 {total_stops_count}곳. 각 지역 지도와 번호 매겨진 장소 목록.</p></header>
+{"".join(region_sections)}
 </div></div>""")
 
+    # 2. Regional maps (map/{r.slug}.html)
     for r in trip.regions:
-        stops, s_seen = [], set()
-        for d in r.days:
+        r_seen = set()
+        r_stops = []
+        for d in trip.days:
             for s in d.stops:
-                if s.lat and s.id not in s_seen:
-                    s_seen.add(s.id)
-                    stops.append(s)
+                reg_slug = stop_region_slug(d, s)
+                if reg_slug != r.slug:
+                    continue
+                item_key = s.place.slug if s.place else s.id
+                if item_key in r_seen:
+                    continue
+                if getattr(s, "map_type", "place") == "non_map":
+                    continue
+                if s.id in {"cdg-departure", "inflight", "icn", "bcn-airport", "paris-return"}:
+                    continue
+                if s.category == "hotel" and getattr(s, "map_type", "place") != "route":
+                    continue
+                if not ((s.lat and s.lng) or s.address):
+                    continue
+                r_seen.add(item_key)
+                r_stops.append((d.date, s.start or "99:99", s.order, s))
+
+        r_stops_sorted = [x[3] for x in sorted(r_stops, key=lambda x: (x[0], x[1], x[2]))]
+        zoom = region_zoom.get(r.slug, 12)
         day_links = "".join(
             f'<li><a href="../{d.url}">{esc(d.date_label)} · Day {d.n}</a> — '
             f"{esc(d.title)}</li>" for d in r.days)
@@ -1650,8 +1780,8 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
                    (r.name, None)],
             body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header><h1>{esc(r.name)} 지도</h1>
-<p class="hero-dek">{esc(r.date_range)} · 장소 {len(stops)}곳</p></header>
-{map_card(stops, r_rel := rel, zoom=12, label=f"{r.name} 지도")}
+<p class="hero-dek">{esc(r.date_range)} · 장소 {len(r_stops_sorted)}곳</p></header>
+{map_card(r_stops_sorted, rel, zoom=zoom, label=f"{r.name} 지도", numbered=True)}
 {sec_head("", "날짜별 동선")}
 <div class="prose"><ul>{day_links}</ul></div>
 <div class="btn-row"><a class="btn btn-secondary" href="../guide/{r.slug}.html">

@@ -100,9 +100,9 @@ def main():
     # 그날 원고의 핵심 장소가 실제로 그 날 화면에 있는가
     required_page_terms = {
         # Day 14 는 2026-08-19 에 Marseille → Cassis·Calanques 로 바뀌었다
-        # (Jason 결정, docs/D5_CONFIRMED_BOOKING_REPLAN.md §B-2).
         "daily/day-14.html": ("Cassis", "Calanques", "Port-Miou"),
-        "daily/day-22.html": ("Arles", "Saint-Trophime", "La Roquette"),
+        "daily/day-21.html": ("Arles", "Saint-Trophime", "La Roquette"),
+        "daily/day-22.html": ("Palais", "Rocher des Doms", "Pont Saint-Bénézet"),
     }
     # 지역 페이지에는 그 거점의 박수와 날짜가 나와야 한다
     for stay in stays:
@@ -127,6 +127,8 @@ def main():
         # 현장에서 "오늘 가는 곳" 으로 읽는다 — backup 문구에만 남아야 한다.
         "daily/day-14.html": ("places/arles.html", "places/marseille.html",
                               "places/mucem.html"),
+        "daily/day-21.html": ("places/les-baux-de-provence.html",
+                              "places/saint-remy-de-provence.html"),
         "daily/day-22.html": ("places/les-baux-de-provence.html",
                               "places/saint-remy-de-provence.html"),
     }

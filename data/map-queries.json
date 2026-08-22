@@ -962,5 +962,501 @@
       "evidence": "https://casabascara.cat/en/rooms/",
       "verifiedAt": "2026-08-22"
     }
-  }
+  },
+  "stops": {
+    "avinguda-gaudi": {
+      "query": "Avinguda de Gaudí, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Avinguda de Gaudí",
+      "evidence": "https://www.barcelona.cat/",
+      "verifiedAt": "2026-08-22"
+    },
+    "gracia": {
+      "query": "Vila de Gràcia, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Vila de Gràcia",
+      "evidence": "https://ajuntament.barcelona.cat/gracia/",
+      "verifiedAt": "2026-08-22"
+    },
+    "llibreria-finestres": {
+      "query": "Llibreria Finestres, Carrer de la Diputació 249, Barcelona",
+      "verdict": "FOUND",
+      "resolvedName": "Llibreria Finestres",
+      "evidence": "https://llibreriafinestres.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "can-robert": {
+      "query": "Aparcament Can Robert, Passeig de Vilafranca, 08870 Sitges",
+      "verdict": "FOUND",
+      "resolvedName": "Aparcament Can Robert, Sitges",
+      "evidence": "https://www.sitges.cat/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cadaques": {
+      "query": "Cadaqués, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Cadaqués",
+      "evidence": "https://www.visitcadaques.org/",
+      "verifiedAt": "2026-08-22"
+    },
+    "tossa": {
+      "query": "Tossa de Mar, Girona",
+      "verdict": "FOUND",
+      "resolvedName": "Tossa de Mar",
+      "evidence": "https://www.infotossa.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "sant-feliu": {
+      "query": "Sant Feliu de Guixols",
+      "verdict": "FOUND",
+      "resolvedName": "Sant Feliu de Guíxols",
+      "evidence": "https://visitguixols.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "bcn-airport-return": {
+      "query": "Hertz, Aeroport de Barcelona Terminal 1, 08820 El Prat de Llobregat",
+      "verdict": "FOUND",
+      "resolvedName": "Hertz Car Rental Barcelona Airport T1",
+      "evidence": "Booking R009: Hertz El Prat Airport T1·2",
+      "verifiedAt": "2026-08-22"
+    },
+    "port-lympia": {
+      "query": "Port Lympia, Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Port Lympia",
+      "evidence": "https://www.explorenicecotedazur.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "antibes-old-town": {
+      "query": "Marché Provençal, Cours Masséna, 06600 Antibes",
+      "verdict": "FOUND",
+      "resolvedName": "Marché Provençal d'Antibes",
+      "evidence": "https://www.antibes-juanlespins.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "croisette": {
+      "query": "Boulevard de la Croisette, Cannes",
+      "verdict": "FOUND",
+      "resolvedName": "Boulevard de la Croisette",
+      "evidence": "https://www.cannes-france.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "villefranche-sur-mer": {
+      "query": "Villefranche-sur-Mer",
+      "verdict": "FOUND",
+      "resolvedName": "Villefranche-sur-Mer",
+      "evidence": "https://villefranche-sur-mer.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "eze-village": {
+      "query": "Jardin Exotique d'Èze, Rue du Château, 06360 Èze",
+      "verdict": "FOUND",
+      "resolvedName": "Jardin Exotique d'Èze",
+      "evidence": "https://jardinexotique-eze.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "nice-station-pickup": {
+      "query": "Hertz, Gare de Nice Ville, Avenue Thiers, 06000 Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Hertz Location De Voitures - Nice Gare Sncf",
+      "evidence": "Booking R011: Hertz Nice Railway Station (Avenue Thiers)",
+      "verifiedAt": "2026-08-22"
+    },
+    "cassis-parking": {
+      "query": "Parking de la Presqu'île, Route des Calanques, 13260 Cassis",
+      "verdict": "FOUND",
+      "resolvedName": "Parking de la Presqu'île, Cassis",
+      "evidence": "https://www.ot-cassis.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "vallon-des-auffes": {
+      "query": "Vallon des Auffes, Marseille",
+      "verdict": "FOUND",
+      "resolvedName": "Vallon des Auffes",
+      "evidence": "https://www.marseille-tourisme.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "vieil-avignon": {
+      "query": "Centre Historique d'Avignon, 84000 Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Centre Historique d'Avignon",
+      "evidence": "https://avignon-tourisme.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "avignon-tgv": {
+      "query": "Hertz, Gare TGV d'Avignon, Place de l'Europe, 84000 Avignon",
+      "verdict": "FOUND",
+      "resolvedName": "Hertz Location De Voitures - Avignon Gare TGV",
+      "evidence": "Booking R011: Hertz Avignon TGV (Place de l'Europe)",
+      "verifiedAt": "2026-08-22"
+    },
+    "rosaire-descent": {
+      "query": "Jardin du Rosaire, Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Jardin du Rosaire",
+      "evidence": "https://www.lyon-france.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "saone-presquile": {
+      "query": "Passerelle Saint-Georges, 69005 Lyon",
+      "verdict": "FOUND",
+      "resolvedName": "Passerelle Saint-Georges, Lyon",
+      "evidence": "https://www.lyon-france.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "part-dieu-lunch": {
+      "query": "Gare de Lyon Part-Dieu",
+      "verdict": "FOUND",
+      "resolvedName": "Gare de Lyon-Part-Dieu",
+      "evidence": "https://www.garesetconnexions.sncf/",
+      "verifiedAt": "2026-08-22"
+    },
+    "first-grocery": {
+      "query": "Rue du Commerce, 75015 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Rue du Commerce, Paris 15e",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "city-bus-tour": {
+      "query": "Franklin D. Roosevelt, 75008 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Station Franklin D. Roosevelt",
+      "evidence": "https://www.tootbus.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "tuileries-vendome": {
+      "query": "Jardin des Tuileries, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Jardin des Tuileries",
+      "evidence": "https://www.louvre.fr/decouvrir/le-jardin-des-tuileries",
+      "verifiedAt": "2026-08-22"
+    },
+    "palais-royal": {
+      "query": "Domaine National du Palais-Royal, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Domaine National du Palais-Royal",
+      "evidence": "https://www.domaine-palais-royal.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "opera-garnier-district": {
+      "query": "Palais Garnier, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Palais Garnier",
+      "evidence": "https://www.operadeparis.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "opera-lunch": {
+      "query": "Quartier de la Nouvelle Athènes, 75009 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Quartier de la Nouvelle-Athènes, Paris 9e",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "rue-du-bac-lunch": {
+      "query": "Rue du Bac, 75007 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Rue du Bac",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "invalides-exterior": {
+      "query": "Hôtel des Invalides, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Hôtel des Invalides",
+      "evidence": "https://www.musee-armee.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "champs-elysees-lunch": {
+      "query": "Avenue des Champs-Élysées, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Avenue des Champs-Élysées",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "cour-carree-seine": {
+      "query": "Cour Carrée du Louvre, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Cour Carrée du Louvre",
+      "evidence": "https://www.louvre.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "ranelagh-passy": {
+      "query": "Jardin du Ranelagh, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Jardin du Ranelagh",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "prix-de-l-arc": {
+      "query": "Hippodrome ParisLongchamp",
+      "verdict": "FOUND",
+      "resolvedName": "Hippodrome ParisLongchamp",
+      "evidence": "https://www.france-galop.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "parc-monceau": {
+      "query": "Parc Monceau, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Parc Monceau",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    },
+    "vendanges-montmartre": {
+      "query": "Le Clos Montmartre, Rue des Saules, 75018 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Le Clos Montmartre (Vignes de Montmartre)",
+      "evidence": "https://www.fetedesvendangesdemontmartre.com/",
+      "verifiedAt": "2026-08-22"
+    },
+    "iena-lunch": {
+      "query": "Place d'Iéna, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Place d'Iéna",
+      "evidence": "https://www.paris.fr/",
+      "verifiedAt": "2026-08-22"
+    }
+  },
+  "routes": {
+    "day-07:vy1521": {
+      "title": "VY1521 → NCE 도착",
+      "origin": "Aeroport de Barcelona-El Prat",
+      "destination": "Aéroport Nice Côte d'Azur",
+      "travelMode": "transit",
+      "evidence": "Vueling VY1521 BCN to NCE flight transfer",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-09:nice-ville": {
+      "title": "Nice-Ville역 출발 ➔ Antibes 이동",
+      "origin": "Gare de Nice-Ville",
+      "destination": "Gare d'Antibes",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Nice-Ville to Antibes (Day 09 TER excursion)",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-09:cannes-transfer": {
+      "title": "Antibes ➔ Cannes TER 이동",
+      "origin": "Gare d'Antibes",
+      "destination": "Gare de Cannes",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Antibes to Cannes",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-09:cannes-station": {
+      "title": "Gare de Cannes ➔ Nice TER 탑승",
+      "origin": "Gare de Cannes",
+      "destination": "Gare de Nice-Ville",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Cannes to Nice-Ville",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-09:nice-return": {
+      "title": "Nice-Ville 도착 ➔ 숙소 귀환",
+      "origin": "Gare de Nice-Ville",
+      "destination": "12 Rue Verdi, 06000 Nice",
+      "travelMode": "walking",
+      "evidence": "Walk from Nice-Ville station to Palais ALZIRA",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-10:nice-ville": {
+      "title": "Nice-Ville역 출발 ➔ Monaco 이동",
+      "origin": "Gare de Nice-Ville",
+      "destination": "Gare de Monaco-Monte-Carlo",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Nice-Ville to Monaco-Monte-Carlo",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-10:nice-return": {
+      "title": "Menton ➔ Nice-Ville 복귀 ➔ 숙소",
+      "origin": "Gare de Menton",
+      "destination": "12 Rue Verdi, 06000 Nice",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Menton to Nice-Ville and walk to stay",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-11:nice-ville": {
+      "title": "Nice 숙소 출발 ➔ Villefranche 이동",
+      "origin": "12 Rue Verdi, 06000 Nice",
+      "destination": "Gare de Villefranche-sur-Mer",
+      "travelMode": "transit",
+      "evidence": "SNCF TER / Lignes d'Azur Nice to Villefranche",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-11:nice-stay-prep": {
+      "title": "Nice 복귀 ➔ 숙소 휴식 & 9/9 렌터카 준비",
+      "origin": "Èze Village",
+      "destination": "12 Rue Verdi, 06000 Nice",
+      "travelMode": "transit",
+      "evidence": "Lignes d'Azur 82 Eze to Nice",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-14:aix-return": {
+      "title": "Cassis ➔ Aix 귀환 (차량)",
+      "origin": "Port de Cassis",
+      "destination": "2 Place Coimbra, 13090 Aix-en-Provence",
+      "travelMode": "driving",
+      "evidence": "Drive Cassis to Aix-en-Provence stay",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-15:aix-station": {
+      "title": "Aix-en-Provence역 출발 ➔ Marseille 이동 (TER)",
+      "origin": "Gare d'Aix-en-Provence",
+      "destination": "Marseille Saint-Charles",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Aix to Marseille Saint-Charles",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-15:marseille-station": {
+      "title": "Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승",
+      "origin": "Marseille Saint-Charles",
+      "destination": "Gare d'Aix-en-Provence",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Marseille Saint-Charles to Aix",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-18:farm-depart": {
+      "title": "농가 숙소 조기 출발 ➔ Gordes 이동",
+      "origin": "Domaine des Peyre, Robion",
+      "destination": "Gordes",
+      "travelMode": "driving",
+      "evidence": "Drive Robion to Gordes",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-20:avignon-depart": {
+      "title": "Avignon 숙소 출발 ➔ Uzès 이동",
+      "origin": "Avignon",
+      "destination": "Uzès",
+      "travelMode": "driving",
+      "evidence": "Drive Avignon to Uzes",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-21:avignon-centre": {
+      "title": "Avignon Centre역 ➔ Arles 이동 (TER)",
+      "origin": "Gare d'Avignon Centre",
+      "destination": "Gare d'Arles",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Avignon Centre to Arles",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-21:avignon-return": {
+      "title": "Arles ➔ Avignon 귀환 & 저녁",
+      "origin": "Gare d'Arles",
+      "destination": "Gare d'Avignon Centre",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Arles to Avignon Centre",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-23:part-dieu": {
+      "title": "TGV INOUI 12176 탑승 (10:22 발차 ➔ 11:28 Lyon 도착)",
+      "origin": "Gare d'Avignon TGV",
+      "destination": "Gare de Lyon Part-Dieu",
+      "travelMode": "transit",
+      "evidence": "TGV INOUI 12176 Avignon TGV to Lyon Part-Dieu",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-24:funicular-ascent": {
+      "title": "Metro D ➔ Vieux Lyon ➔ 푸니쿨라 F2 상행",
+      "origin": "Place Bellecour, Lyon",
+      "destination": "Basilique Notre-Dame de Fourvière, Lyon",
+      "travelMode": "transit",
+      "evidence": "TCL Metro D + Funiculaire F2 to Fourvière",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-26:part-dieu-departure": {
+      "title": "Lyon Part-Dieu ➔ Annecy 이동 (TER)",
+      "origin": "Gare de Lyon Part-Dieu",
+      "destination": "Gare d'Annecy",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Lyon Part-Dieu to Annecy",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-26:annecy-return": {
+      "title": "Annecy ➔ Lyon Part-Dieu 귀환 & 저녁",
+      "origin": "Gare d'Annecy",
+      "destination": "Gare de Lyon Part-Dieu",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Annecy to Lyon Part-Dieu",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-27:lyon-checkout": {
+      "title": "Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu",
+      "origin": "Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas, 69003 Lyon",
+      "destination": "Gare de Lyon-Part-Dieu",
+      "travelMode": "transit",
+      "evidence": "Taxi/Metro transfer from Lagrange Aparthotel Lyon Lumière to Lyon Part-Dieu station",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-27:tgv-to-paris": {
+      "title": "TGV INOUI 6618 ➔ Paris Gare de Lyon 도착",
+      "origin": "Gare de Lyon Part-Dieu",
+      "destination": "Paris Gare de Lyon",
+      "travelMode": "transit",
+      "evidence": "TGV INOUI 6618 Lyon Part-Dieu to Paris Gare de Lyon",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-27:paris-checkin": {
+      "title": "Gare de Lyon → 78 Rue de Lourmel",
+      "origin": "Paris Gare de Lyon",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Taxi/Metro transfer from Paris Gare de Lyon to 78 Rue de Lourmel",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-34:versailles-transfer": {
+      "title": "15구 숙소 출발 ➔ RER C ➔ 베르사유 이동",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Gare de Versailles Château Rive Gauche",
+      "travelMode": "transit",
+      "evidence": "RER C Javel to Versailles Château Rive Gauche",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-37:longchamp-transfer": {
+      "title": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Hippodrome ParisLongchamp",
+      "travelMode": "transit",
+      "evidence": "Metro 10 to Porte d'Auteuil and France Galop navette",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-37:paris-return": {
+      "title": "파리롱샹 ➔ 15구 숙소 귀환 & 저녁",
+      "origin": "Hippodrome ParisLongchamp",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Navette and Metro 10 back to 15e",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-39:marais-walk-carnavalet": {
+      "title": "마레 지구 골목 산책 ➔ 카르나발레 이동",
+      "origin": "Musée Picasso Paris",
+      "destination": "Musée Carnavalet",
+      "travelMode": "walking",
+      "evidence": "Walking route Picasso museum to Carnavalet museum",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-41:trocadero-sunset": {
+      "title": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
+      "origin": "Place du Trocadéro, Paris",
+      "destination": "Tour Eiffel, Paris",
+      "travelMode": "walking",
+      "evidence": "Walk from Trocadéro across Pont d'Iéna to Eiffel Tower",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-42:cdg-transfer": {
+      "title": "15구 숙소 ➔ CDG 공항 터미널 1 이동",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Aéroport Paris-Charles de Gaulle Terminal 1",
+      "travelMode": "driving",
+      "evidence": "Paris taxi flat fare from Left Bank to CDG Terminal 1",
+      "verifiedAt": "2026-08-22"
+    }
+  },
+  "nonMapStops": [
+    "bcn-airport",
+    "paris-return",
+    "day-27:paris-return",
+    "cdg-departure",
+    "inflight",
+    "icn"
+  ]
 }

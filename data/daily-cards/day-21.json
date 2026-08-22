@@ -3,13 +3,13 @@
   "day": 21,
   "date": "2026-09-18",
   "city": "Avignon",
-  "title": "Uzès와 Pont du Gard",
+  "title": "Arles 철도 당일치기",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:30",
-  "endTime": "20:00",
-  "totalDuration": "11시간 30분",
-  "totalDistance": "약 84km · 차량 이동",
+  "endTime": "20:30",
+  "totalDuration": "12시간",
+  "totalDistance": "TER 철도 왕복 + 아를 시내 도보 약 4.5km",
   "fatigue": "3",
   "hotel": {
     "name": "La Terrasse du Clocher (후보)",
@@ -19,75 +19,105 @@
   },
   "stops": [
     {
-      "id": "avignon-depart",
+      "id": "avignon-centre",
       "order": 1,
       "start": "08:30",
       "end": "09:15",
-      "name": "Avignon 숙소 출발 ➔ Uzès 이동",
-      "category": "hotel",
-      "lat": 43.94993,
-      "lng": 4.81302,
-      "summary": "주차장에서 출차 후 D981 도로를 통해 위제스로 이동 (40.7km, 약 45분)",
+      "name": "Avignon Centre역 ➔ Arles 이동 (TER)",
+      "category": "transport",
+      "lat": 43.9422,
+      "lng": 4.8058,
+      "summary": "숙소에서 아비뇽 중앙역 도보 이동 후 08:45 TER 탑승 ➔ 09:02 아를 역 도착 (17분 소요). [렌터카 반납 완료 상태 — 완전 철도/도보 운영]",
       "menu": null,
-      "reservation": null,
+      "reservation": "SNCF Connect (30분 간격 배차)",
       "optional": false,
       "place_ref": null
     },
     {
-      "id": "uzes",
+      "id": "arenes",
       "order": 2,
-      "start": "09:30",
-      "end": "12:15",
-      "name": "Uzès 구시가지 & 에르브 광장",
+      "start": "09:20",
+      "end": "10:45",
+      "name": "Arènes d'Arles (아를 원형경기장)",
       "category": "sight",
-      "lat": 44.0122,
-      "lng": 4.4197,
-      "summary": "프랑스 최초의 공작령 도시. Place aux Herbes 아치 회랑 광장, 공작성(Duché d'Uzès) 외관, 페네스트렐 탑(Tour Fenestrelle) 조망 (2시간 45분)",
-      "menu": "프로방스 빵, 에스프레소",
-      "reservation": "주차: Parking Cordeliers (Primary) / Parking Gide (Backup)",
-      "optional": false,
-      "place_ref": "uzes"
-    },
-    {
-      "id": "uzes-lunch",
-      "order": 3,
-      "start": "12:15",
-      "end": "13:30",
-      "name": "Uzès Place aux Herbes 광장 테라스 점심",
-      "category": "food",
-      "lat": 44.0125,
-      "lng": 4.4201,
-      "summary": "Place aux Herbes 광장 플라타너스 그늘 아래 테라스 레스토랑 점심",
-      "menu": "에르브 광장 브라세리 런치, 로컬 치즈",
-      "reservation": "현장 선택",
-      "optional": false,
-      "place_ref": "uzes"
-    },
-    {
-      "id": "pont-du-gard",
-      "order": 4,
-      "start": "14:15",
-      "end": "17:00",
-      "name": "Pont du Gard (퐁 뒤 가르 수로교)",
-      "category": "sight",
-      "lat": 43.9475,
-      "lng": 4.535,
-      "summary": "기원전 1세기 고대 로마 3층 수로교(높이 49m). 좌안(Rive Gauche) 대형 주차장 이용 ➔ 박물관 관람 ➔ 수로교 도보 횡단 ➔ 가르동 강변 자갈밭 전경 조망 (2시간 45분). [주의] 그늘 부족, 모자/생수 필수",
+      "lat": 43.6778,
+      "lng": 4.6311,
+      "summary": "기원후 90년 로마 원형경기장. 2층 아케이드와 중세 방어탑 전망대에서 론 강과 아를 구시가지 파노라마 조망",
       "menu": null,
-      "reservation": "주차/입장권 (€9.50/차량 포함) / Left Bank (Rive Gauche) 주차장",
+      "reservation": "현장 발권 / 유적 패스",
       "optional": false,
-      "place_ref": "pont-du-gard"
+      "place_ref": "arenes-d-arles"
+    },
+    {
+      "id": "theatre",
+      "order": 3,
+      "start": "10:45",
+      "end": "11:45",
+      "name": "Théâtre Antique & 공화국 광장",
+      "category": "sight",
+      "lat": 43.6767,
+      "lng": 4.6297,
+      "summary": "기원전 1세기 아우구스투스 황제 시기 고대극장 회랑 기둥 및 오벨리스크가 서 있는 Place de la République",
+      "menu": null,
+      "reservation": null,
+      "optional": false,
+      "place_ref": "theatre-antique-arles"
+    },
+    {
+      "id": "forum-lunch",
+      "order": 4,
+      "start": "11:45",
+      "end": "13:15",
+      "name": "Le Gibolin 점심 (아를 로케트 지구)",
+      "category": "food",
+      "lat": 43.6764,
+      "lng": 4.6267,
+      "summary": "반 고흐의 '밤의 카페 테라스' 배경지인 포룸 광장 인근 로케트 지구 레스토랑에서 카마르그식 점심 식사",
+      "menu": "카마르그 황소 스튜(Gardianne de taureau), 카마르그 적미 밥",
+      "reservation": "12:00 오픈 시각 현장 방문 또는 사전 예약",
+      "optional": false,
+      "place_ref": "le-gibolin-arles"
+    },
+    {
+      "id": "saint-trophime",
+      "order": 5,
+      "start": "13:30",
+      "end": "14:45",
+      "name": "Cloître Saint-Trophime (생트로핌 회랑)",
+      "category": "culture",
+      "lat": 43.6764,
+      "lng": 4.6283,
+      "summary": "12-14세기 로마네스크와 고딕 조각의 정수가 보존된 생트로핌 대성당 회랑",
+      "menu": null,
+      "reservation": null,
+      "optional": false,
+      "place_ref": "cloitre-saint-trophime"
+    },
+    {
+      "id": "la-roquette",
+      "order": 6,
+      "start": "15:00",
+      "end": "16:30",
+      "name": "La Roquette 구시가지 & 론 강변",
+      "category": "sight",
+      "lat": 43.675,
+      "lng": 4.6231,
+      "summary": "옛 어부들의 거주지 라 로케트의 조용한 석조 골목 및 론 강변(반 고흐 '론 강의 별이 빛나는 밤' 배경지) 산책",
+      "menu": null,
+      "reservation": null,
+      "optional": true,
+      "place_ref": "la-roquette"
     },
     {
       "id": "avignon-return",
-      "order": 5,
-      "start": "18:00",
-      "end": "20:00",
-      "name": "Avignon 복귀 & 저녁",
+      "order": 7,
+      "start": "17:00",
+      "end": "20:30",
+      "name": "Arles ➔ Avignon 귀환 & 저녁",
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "D907 도로를 통해 아비뇽으로 복귀 (30km, 40분). 차량 안전 주차 후 저녁 식사",
+      "summary": "Arles역에서 17:15 TER 탑승 ➔ 17:32 Avignon Centre 도착. 아비뇽 시내 저녁 식사 후 숙소 귀환",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -96,73 +126,91 @@
   ],
   "legs": [
     {
-      "from": "avignon-depart",
-      "to": "uzes",
-      "mode": "car",
-      "duration": "약 45분",
-      "distance": "40.7km",
+      "from": "avignon-centre",
+      "to": "arenes",
+      "mode": "train",
+      "duration": "TER 17분 + 도보 8분",
+      "distance": "약 36km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "uzes",
-      "to": "uzes-lunch",
+      "from": "arenes",
+      "to": "theatre",
       "mode": "walk",
-      "duration": "2분",
-      "distance": "0.1km",
+      "duration": "3분",
+      "distance": "0.2km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "uzes-lunch",
-      "to": "pont-du-gard",
-      "mode": "car",
-      "duration": "약 20분",
-      "distance": "14.0km",
+      "from": "theatre",
+      "to": "forum-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "pont-du-gard",
+      "from": "forum-lunch",
+      "to": "saint-trophime",
+      "mode": "walk",
+      "duration": "3분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "saint-trophime",
+      "to": "la-roquette",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "la-roquette",
       "to": "avignon-return",
-      "mode": "car",
-      "duration": "약 40분",
-      "distance": "29.5km",
+      "mode": "train",
+      "duration": "도보 12분 + TER 17분",
+      "distance": "약 36km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "렌터카 (Avignon ↔ Uzès ↔ Pont du Gard ↔ Avignon)",
-    "외곽 전용 주차장 (Parking Cordeliers / Pont du Gard Rive Gauche)"
+    "SNCF TER 기차 왕복 (Avignon Centre ↔ Arles, 단 17분 소요)",
+    "아를 시내 도보 (원형경기장 ➔ 고대극장 ➔ 포룸 광장 ➔ 생트로핌 ➔ 라 로케트)"
   ],
   "food": [
-    "Uzès 가벼운 점심",
-    "저녁은 가볍게 (금요일 영업 재확인)"
+    "Place du Forum / La Roquette 점심",
+    "아비뇽 귀환 후 저녁"
   ],
   "highlights": [
-    "09:00 이전 Uzès 도착",
-    "금요일 — 토요시장 없음 전제",
-    "폭우·홍수 변수 주의"
+    "08:45 TER 탑승 (Avignon Centre)",
+    "실내관람은 생트로핌/원형경기장 집중",
+    "철도·도보 100% 당일치기"
   ],
-  "backup": "폭염 또는 악천후 시 Pont du Gard 야외 체류를 60분으로 단축하고 실내 박물관 중심 관람 후 아비뇽 조기 복귀",
+  "backup": "폭염 또는 피로 시 고대극장/생트로핌은 외관 관람 후 론 강변 산책 중심 조기 귀환",
   "map": {
     "zoom": 11,
     "center": [
-      43.975,
-      4.615
+      43.815,
+      4.72
     ],
-    "routeCache": "routes/day-21-driving-osrm.json"
+    "routeCache": null
   },
   "needsReview": [
-    "Pont du Gard 좌안(Rive Gauche) 주차장 네비게이션 설정",
-    "위제스 Parking Cordeliers 주차 잔여면 확인"
+    "Avignon Centre ↔ Arles 왕복 TER 열차 시간표 확인 (SNCF Connect)",
+    "생트로핌 회랑 입장 시간 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-21",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-21",
     "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md#Day-21",
     "source/ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Place aux Herbes"
+    "OSM Nominatim 지오코딩 2026-08-06: Avignon Centre역·Arles역"
   ]
 }

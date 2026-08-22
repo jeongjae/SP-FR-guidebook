@@ -177,11 +177,11 @@ Day 23에 아비뇽에서 렌터카를 반납했다. 이후 20일 — 리옹 4�
 
 ### 도착 — Avignon TGV에서 Lyon Part-Dieu
 
-Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄다.
+프랑스 렌터카는 Day 20(9/17 목) 저녁 Avignon TGV Hertz에 최종 반납 완료되었으므로, 9/20(일) 아침에는 렌터카 반납 절차 없이 Avignon TGV역으로 이동하여 Lyon Part-Dieu행 직행 TGV를 탄다.
 
 **확정 열차 (2026-08 발권)** — **TGV INOUI 12176 · 10:22 Avignon TGV → 11:28 Lyon Part-Dieu** (1시간 6분) · 1등석 3호차 307(Jungah)·308(Jeongjae) Duo Côte à Côte · 예약번호 **[CONFIRMED]** · €42/인 (Trip.com).
 
-> **⚠ 반납은 전날이다.** 일요일은 Hertz Avignon TGV 가 10:00 에 열어 TGV 10:22 에 댈 수 없다. 그래서 **9/19(토) 18:15까지 조기 반납**한다(DEC-A08). 주차는 Parking Loueurs P0. 주유 영수증·차량 상태 사진·주차 위치 기록을 남긴다.
+> **체크포인트**: 09:30 이전 Avignon TGV역에 도착하여 여유롭게 플랫폼 공지를 확인하고 탑승한다.
 
 ### 출발 — Part-Dieu에서 파리로
 

@@ -222,12 +222,32 @@ class Stop:
     related_place_refs: list[str] = field(default_factory=list)
     place: Place | None = None  # 장소 페이지가 있는 stop 만 연결된다
     related_places: list[Place] = field(default_factory=list)
+    map_type: str = "place"     # place | route | non_map
+    map_query: str | None = None
+    route_origin: str | None = None
+    route_destination: str | None = None
+    route_mode: str | None = None
+    route_title: str | None = None
+    day_number: int | None = None
+    date: date | None = None
+    day_region: str | None = None
+    day_regions: list[str] = field(default_factory=list)
 
     @property
     def time_label(self) -> str:
         if self.start and self.end:
             return self.start
         return self.start or ""
+
+    @property
+    def formatted_when(self) -> str:
+        """9.15 화 10:00 — 지도 목록용 일시."""
+        if not self.date:
+            return self.start or ""
+        w_ko = WEEKDAY_KO[self.date.weekday()]
+        if self.start:
+            return f"{self.date.month}.{self.date.day} {w_ko} {self.start}"
+        return f"{self.date.month}.{self.date.day} {w_ko}"
 
 
 @dataclass
@@ -745,7 +765,12 @@ def load_trip() -> Trip:
     bodies = load_place_bodies()
 
     # 지도를 이름으로 여는 검색어. 여기 없는 슬러그는 좌표·주소 폴백으로 남는다.
-    map_queries = _load_validated_json(MAP_QUERIES).get("places", {})
+    map_queries_raw = _load_validated_json(MAP_QUERIES)
+    map_queries = map_queries_raw.get("places", {})
+    stop_queries = map_queries_raw.get("stops", {})
+    route_queries = map_queries_raw.get("routes", {})
+    non_map_stops = set(map_queries_raw.get("nonMapStops", []))
+    hotel_queries = map_queries_raw.get("hotels", {})
 
     places: dict[str, Place] = {}
     for row in registry_rows:
@@ -771,6 +796,10 @@ def load_trip() -> Trip:
     # 이제 daily-cards 의 stop.id 가 곧 슬러그라 추측이 필요 없다.
     for d in days:
         for s in d.stops:
+            s.day_number = d.n
+            s.date = d.date
+            s.day_region = d.region
+            s.day_regions = d.regions
             # place_ref 가 정본이다. 없을 때만 stop.id 로 되짚는다 —
             # id 일치에만 기대면 같은 장소를 다른 id 로 부르는 stop 이
             # 장소 페이지와 끊긴다. 실제로 89건이 그렇게 끊겨 있었다.
@@ -792,6 +821,43 @@ def load_trip() -> Trip:
             # 좌표는 daily-card 가 더 최신이다 — 장소에 없으면 채워 준다
             if p is not None and p.lat is None and s.lat:
                 p.lat, p.lng = s.lat, s.lng
+
+            # 지도 검색어 및 경로 / 비장소 엔티티 매핑
+            day_key = f"day-{d.n:02d}:{s.id}"
+            if day_key in non_map_stops:
+                s.map_type = "non_map"
+            elif day_key in route_queries:
+                r = route_queries[day_key]
+                s.map_type = "route"
+                s.route_title = r.get("title")
+                s.route_origin = r["origin"]
+                s.route_destination = r["destination"]
+                s.route_mode = r.get("travelMode", "transit")
+            elif s.id in non_map_stops:
+                s.map_type = "non_map"
+            elif s.id in route_queries:
+                r = route_queries[s.id]
+                s.map_type = "route"
+                s.route_title = r.get("title")
+                s.route_origin = r["origin"]
+                s.route_destination = r["destination"]
+                s.route_mode = r.get("travelMode", "transit")
+            elif day_key in stop_queries or s.id in stop_queries:
+                st = stop_queries.get(day_key) or stop_queries.get(s.id)
+                s.map_type = "place"
+                s.map_query = st["query"]
+            elif s.place and s.place.map_query:
+                s.map_type = "place"
+                s.map_query = s.place.map_query
+            elif s.category == "hotel" and d.hotel.get("name") in hotel_queries:
+                s.map_type = "place"
+                s.map_query = hotel_queries[d.hotel["name"]]["query"]
+            elif s.address:
+                s.map_type = "place"
+                s.map_query = s.address
+            else:
+                s.map_type = "place"
+                s.map_query = None
 
     # --- 지역 조립 --------------------------------------------------------
     stay_by_key = {s["key"]: s for s in stays}

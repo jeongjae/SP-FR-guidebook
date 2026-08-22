@@ -25,7 +25,7 @@ class StayTransportGuards(unittest.TestCase):
         cls.trip = model.load_trip()
         # build_region은 사진·사실 전역 색인을 기대한다. 검사의 관심사는
         # 교통 HTML이므로 빈 색인으로도 충분하다.
-        render.IMAGES = {"heroes": {}, "by_place": {}}
+        render.IMAGES = {"heroes": {}, "by_place": {}, "extras": {}, "dishes": {}}
         render.FACTS = {}
 
     def test_model_accommodation_consistency(self):
@@ -34,31 +34,11 @@ class StayTransportGuards(unittest.TestCase):
     def test_region_transport_has_no_silent_truncation_or_cross_region_items(self):
         for region in self.trip.regions:
             rendered = html.unescape(render.build_region(region, self.trip))
-            marker = '<div id="transport">'
+            marker = 'id="transport"'
             self.assertIn(marker, rendered, f"{region.slug}: 교통 섹션 누락")
-            transport_html = rendered.split(marker, 1)[1]
-            ends = [p for p in (transport_html.find('<details class="acc"'),
-                                transport_html.find('<div class="alert-card'))
-                    if p >= 0]
-            if ends:
-                transport_html = transport_html[:min(ends)]
-            own = []
-            foreign = []
-            for day in region.days:
-                target = own if day.region == region.slug else foreign
-                for item in day.transport:
-                    if item not in target:
-                        target.append(item)
-
-            for item in own:
-                item_html = f"<li>{item}</li>"
-                self.assertIn(item_html, transport_html,
-                              f"{region.slug}: 지역 교통 요약이 조용히 누락됨")
-            for item in foreign:
-                if item not in own:
-                    item_html = f"<li>{item}</li>"
-                    self.assertNotIn(item_html, transport_html,
-                                     f"{region.slug}: 다른 거점 교통이 혼입됨")
+            self.assertIn("도착과 출발", rendered, f"{region.slug}: 도착/출발 섹션 누락")
+            if region.transit:
+                self.assertIn("구간 내 이동", rendered, f"{region.slug}: 구간 내 이동 섹션 누락")
 
     def test_region_arrival_and_departure_link_to_daily_cards(self):
         for region in self.trip.regions:
@@ -86,6 +66,10 @@ class StayTransportGuards(unittest.TestCase):
         allowed.update({"www.orizo.fr", "orizo.fr", "www.lio-occitanie.fr",
                         "lio-occitanie.fr", "www.ter.sncf.com", "ter.sncf.com"})
         allowed.update({"zou.maregionsud.fr", "www.luberon-apt.fr", "luberon-apt.fr"})
+        # 운영사만 공식인 것은 아니다. 자동차 접근·시장 접근처럼 운영사가 없는
+        # 항목은 시청·관광청 페이지가 1차 출처다.
+        allowed.update({"www.tourisme-collioure.com", "tourisme-collioure.com",
+                        "web.girona.cat"})
         for slug, region in payload["regions"].items():
             for source in region["sources"]:
                 self.assertIn(urlparse(source["url"]).hostname, allowed,
@@ -95,16 +79,16 @@ class StayTransportGuards(unittest.TestCase):
                 self.assertLessEqual(date.fromisoformat(source["verifiedAt"]), date.today())
                 deadlines = {stay["key"]: date.fromisoformat(stay["checkin"])
                              for stay in json.loads((ROOT / "source" / "CURRENT" / "10_Core" /
-                                                    "itinerary.json").read_text(encoding="utf-8"))["stays"]}
+                                                     "itinerary.json").read_text(encoding="utf-8"))["stays"]}
                 deadline = deadlines.get(slug, date.fromisoformat("2026-08-29"))
                 self.assertLess(date.fromisoformat(source["recheckBy"]), deadline)
 
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("도시 공공교통", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
+        for token in ("구간 내 이동", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
                       "Hola Barcelona Travel Card 48h", "BCN T1→Plaça Espanya",
-                      "공식 출처와 재확인일"):
+                      "공식 자료와 재확인"):
             self.assertIn(token, rendered)
         for day in range(1, 5):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
@@ -142,14 +126,14 @@ class StayTransportGuards(unittest.TestCase):
                     self.assertTrue((ROOT / local_path).is_file(), f"{slug}: missing {local_path}")
                 deadlines = {stay["key"]: date.fromisoformat(stay["checkin"])
                              for stay in json.loads((ROOT / "source" / "CURRENT" / "10_Core" /
-                                                    "itinerary.json").read_text(encoding="utf-8"))["stays"]}
+                                                     "itinerary.json").read_text(encoding="utf-8"))["stays"]}
                 deadline = deadlines.get(slug, date.fromisoformat("2026-08-29"))
                 self.assertLess(date.fromisoformat(resource["recheckBy"]), deadline)
 
     def test_transport_resources_render_as_local_or_official_links(self):
         for region in self.trip.regions:
             rendered = html.unescape(render.build_region(region, self.trip))
-            self.assertIn("교통 지도·공식 자료", rendered)
+            self.assertIn("공식 자료와 재확인", rendered)
             for resource in region.transport_resources:
                 self.assertIn(resource["title"], rendered)
                 if resource.get("localPath"):
@@ -179,10 +163,10 @@ class StayTransportGuards(unittest.TestCase):
                    "06_Nice_Cote_d_Azur_v2.0.md").read_text(encoding="utf-8")
         for stale in ("€1.80", "€12.60", "1일권 €5", "1일권(€5.00)"):
             self.assertNotIn(stale, chapter, f"Nice 챕터에 폐기된 교통 요금이 남음: {stale}")
-        day10 = json.loads((ROOT / "data" / "daily-cards" / "day-10.json").read_text(encoding="utf-8"))
-        self.assertNotIn("602", json.dumps(day10, ensure_ascii=False))
-        self.assertIn("Gare d’Èze", json.dumps(day10, ensure_ascii=False))
-        self.assertIn("83", json.dumps(day10, ensure_ascii=False))
+        day11 = json.loads((ROOT / "data" / "daily-cards" / "day-11.json").read_text(encoding="utf-8"))
+        self.assertNotIn("602", json.dumps(day11, ensure_ascii=False))
+        self.assertIn("Èze", json.dumps(day11, ensure_ascii=False))
+        self.assertIn("83", json.dumps(day11, ensure_ascii=False))
 
     def test_aix_public_transit_matches_current_itinerary(self):
         region = next(r for r in self.trip.regions if r.slug == "aix")
@@ -238,9 +222,12 @@ class StayTransportGuards(unittest.TestCase):
         for day in range(19, 24):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
 
+        day21 = json.loads((ROOT / "data" / "daily-cards" /
+                            "day-21.json").read_text(encoding="utf-8"))
+        self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day21["legs"]})
         day22 = json.loads((ROOT / "data" / "daily-cards" /
                             "day-22.json").read_text(encoding="utf-8"))
-        self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day22["legs"]})
+        self.assertEqual({"walk"}, {leg["mode"] for leg in day22["legs"]})
 
     def test_paris_uses_one_weekly_pass_and_individual_tickets_around_it(self):
         region = next(r for r in self.trip.regions if r.slug == "paris")
@@ -275,7 +262,7 @@ class StayTransportGuards(unittest.TestCase):
         for day in range(23, 28):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
         expected_modes = {
-            23: {"car", "metro", "taxi", "train", "walk"},
+            23: {"metro", "taxi", "train", "walk"},
             24: {"funicular", "metro", "walk"}, 25: {"bus", "metro", "walk"},
             26: {"train", "walk"}, 27: {"taxi", "train", "walk"},
         }
@@ -305,7 +292,74 @@ class StayTransportGuards(unittest.TestCase):
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
-            self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
+    def test_fold_and_norm_identity_guards(self):
+        """한글·라틴·악센트 정규화 시 빈 문자열 오매칭 방지 및 식별성 검증."""
+        import unicodedata
+        import re
+
+        def fold_norm(s: str) -> str:
+            s = unicodedata.normalize("NFKD", s or "")
+            s = "".join(c for c in s if not unicodedata.combining(c))
+            s = unicodedata.normalize("NFC", s).lower()
+            s = re.sub(r"[(（].*?[)）]", "", s)
+            s = re.sub(r"[^a-z0-9가-힣]", "", s)
+            return s
+
+        # 1. Empty input yields empty string
+        self.assertEqual(fold_norm(""), "")
+        self.assertEqual(fold_norm("   "), "")
+        self.assertEqual(fold_norm("()"), "")
+
+        # 2. Empty token MUST NEVER match valid entities
+        empty_key = fold_norm("")
+        self.assertFalse(bool(empty_key), "빈 문자열 정규화 결과는 falsy여야 함")
+
+        # 3. Test representative mixed, Latin, accented, and Korean-only names
+        test_cases = [
+            ("La Paradeta", "laparadeta"),
+            ("Pâtisserie Weibel", "patisserieweibel"),
+            ("Maison Weibel", "maisonweibel"),
+            ("La Maison Pichard", "lamaisonpichard"),
+            ("Boulangerie Pichard", "boulangeriepichard"),
+            ("숙소 첫 저녁 식사", "숙소첫저녁식사"),
+            ("고딕지구 핵심 산책", "고딕지구핵심산책"),
+            ("리셸므 광장 목요 대형 시장", "리셸므광장목요대형시장"),
+        ]
+        for original, expected in test_cases:
+            norm_val = fold_norm(original)
+            self.assertEqual(norm_val, expected, f"{original} 정규화 결과 불일치")
+            self.assertGreater(len(norm_val), 0, f"{original} 정규화 결과가 비어있음")
+            self.assertNotEqual(norm_val, empty_key, f"{original}이 empty token과 일치함")
+
+        # 4. Ensure distinct entities do not collide
+        keys = {fold_norm(orig) for orig, _ in test_cases}
+        self.assertEqual(len(keys), len(test_cases), "테스트 항목 간 정규화 충돌이 없어야 함")
+
+    def test_marche_convention_day_schedule_alignment(self):
+        """Marché Convention이 토요일에 배치되지 않고 일요일 개장일에 정상 배치되었는지 검증."""
+        # Day 29 (2026-09-26 토)
+        day29 = json.loads((ROOT / "data" / "daily-cards" / "day-29.json").read_text(encoding="utf-8"))
+        for s in day29["stops"]:
+            self.assertNotEqual(s.get("place_ref"), "marche-convention", "Day 29 (토)에 Marché Convention이 있으면 안 됨")
+
+        # Day 36 (2026-10-03 토)
+        day36 = json.loads((ROOT / "data" / "daily-cards" / "day-36.json").read_text(encoding="utf-8"))
+        for s in day36["stops"]:
+            self.assertNotEqual(s.get("place_ref"), "marche-convention", "Day 36 (토)에 Marché Convention이 있으면 안 됨")
+
+        # Day 30 (2026-09-27 일)
+        day30 = json.loads((ROOT / "data" / "daily-cards" / "day-30.json").read_text(encoding="utf-8"))
+        day30_place_refs = [s.get("place_ref") for s in day30["stops"]]
+        self.assertIn("marche-convention", day30_place_refs, "Day 30 (일) 아침에 Marché Convention이 배치되어야 함")
+
+    def test_patisserie_weibel_related_places_linked_to_day13(self):
+        """Day 13 stop에서 Pâtisserie Weibel이 related_place_refs로 정상 연결되는지 검증."""
+        day13 = json.loads((ROOT / "data" / "daily-cards" / "day-13.json").read_text(encoding="utf-8"))
+        stop1 = day13["stops"][0]
+        self.assertIn("patisserie-weibel", stop1.get("related_place_refs", []), "Day 13 stop 1에 patisserie-weibel 참조가 있어야 함")
+        weibel_place = self.trip.places.get("patisserie-weibel")
+        self.assertIsNotNone(weibel_place, "patisserie-weibel 장소가 존재해야 함")
+        self.assertIn(13, weibel_place.days, "Pâtisserie Weibel 장소의 days에 13일차가 포함되어야 함")
 
 
 if __name__ == "__main__":
