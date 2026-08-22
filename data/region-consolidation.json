@@ -8,7 +8,8 @@
     "luberon",
     "avignon",
     "nice",
-    "lyon"
+    "lyon",
+    "paris"
   ],
   "layerTitles": {
     "barcelona": {
@@ -59,6 +60,13 @@
       "neighborhoods": "숙소와 생활권",
       "transport_deep": "Lyon에서 이동하기",
       "food_culture": "먹고 장보기"
+    },
+    "paris": {
+      "verdict": "Paris에서 15박을 이렇게 보낸다",
+      "overview": "일정",
+      "neighborhoods": "숙소와 15구 생활권",
+      "transport_deep": "Paris에서 이동하기",
+      "food_culture": "먹고 장보기"
     }
   },
   "notes": {
@@ -68,6 +76,7 @@
     "luberon": "2026-08-23 통폐합(LB01) · 외부 편집 검토 반영(LB01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
     "avignon": "2026-08-23 통폐합(AV01) · 외부 편집 검토 반영(AV01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/09_Avignon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
     "nice": "2026-08-23 통폐합(NC01) · 외부 편집 검토 반영(NC01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/06_Nice_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
-    "lyon": "2026-08-23 통폐합(LY01). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/10_Lyon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1."
+    "lyon": "2026-08-23 통폐합(LY01). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/10_Lyon_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
+    "paris": "2026-08-23 통폐합(PA01). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/11_Paris_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1."
   }
 }
