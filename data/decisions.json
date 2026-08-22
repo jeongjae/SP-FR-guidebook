@@ -23,10 +23,11 @@
     {
       "id": "DEC-A02",
       "date": "2026-08-16",
-      "decision": "렌터카 9/19(토) 조기 반납 — 18:15까지 Hertz Avignon TGV",
+      "decision": "렌터카 9/17(목) 저녁 조기 반납 — Avignon TGV Hertz (18:30 이전)",
       "forbidden_patterns": [
         "9/20 09:00 반납",
         "9월 20일 09:00 반납",
+        "9/19 18:15 반납",
         "무인 키드롭",
         "무인반납",
         "키 드롭"
@@ -37,7 +38,7 @@
         "09_Avignon_*.md",
         "10_Lyon_*.md"
       ],
-      "note": "일요일 10:00 개점이라 09:00 반납 불가 · TGV 10:22. 9/20 아침은 TER Virgule 09:13 권장"
+      "note": "Day 20(9/17) 저녁 Avignon TGV Hertz 반납. 기존 예약(9/20)은 출발 전 9/17 저녁 18:30 반납으로 변경 필요."
     },
     {
       "id": "DEC-A03",
@@ -114,24 +115,22 @@
     {
       "id": "DEC-A08",
       "date": "2026-08-17",
-      "decision": "Hertz Avignon TGV 렌터카 9/19(토) 18:15 조기 반납 확정",
+      "decision": "Hertz Avignon TGV 렌터카 9/17(목) 저녁 반납 확정 (여행계획 SOT: 9/17 저녁 반납, Hertz 예약은 출발 전 변경 필요)",
       "forbidden_patterns": [
         "9/20 09:00 반납",
         "9월 20일 09:00",
+        "9/19 18:15",
         "무인 키드롭",
         "키드롭 박스",
         "9/20 렌터카 반납"
       ],
-      "required_patterns": [
-        "9/19",
-        "18:15"
-      ],
+      "required_patterns": [],
       "scope": [
         "06_Nice_*.md",
         "09_Avignon_*.md",
         "10_Lyon_*.md"
       ],
-      "note": "토요일 영업 09:00-19:00, 버퍼 45분. 주차 Parking Loueurs P0. 9/20 아침 이동은 TER Virgule 09:13"
+      "note": "목요일 영업 08:00-21:00, Parking Loueurs P0. Day 21 이후는 대중교통(TER/TGV) 및 도보 운영. 기존 예약 변경 필요."
     },
     {
       "id": "DEC-A09",

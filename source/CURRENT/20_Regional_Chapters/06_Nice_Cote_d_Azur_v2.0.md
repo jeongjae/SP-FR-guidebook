@@ -271,7 +271,7 @@ Masséna 광장 북서쪽 Verdi 가에 있어 Nice-Ville 역과 Promenade des An
 - **렌터카 예약 (Hertz)**:
   - **인수**: 9/9 09:00 Nice역 (Hertz [CONFIRMED]). Compact Automatic (Captur급). 영업소 {{fact:hertz-nice-ville.closed}} — 인수 시각이 점심 휴무에 걸리지 않는다.
   - **비용**: €608.09 (VISA ASIA CARDS 10% 할인가 반영, 편도 반납비 €180 포함).
-  - **반납**: **9/19(토) 18:15까지 Avignon TGV** (토요일 영업 09:00–19:00, 버퍼 45분). 주차는 Parking Loueurs P0 — DEC-A08
+  - **반납**: **9/17(목) 저녁 Avignon TGV** (목요일 영업 08:00–21:00, 18:30 이전 반납 완료, Parking Loueurs P0) — 계획상 9/17 저녁 반납 확정(DEC-A08), 기존 예약은 9/20으로 되어 있어 출발 전 변경 필요.
 - **주차 지침**:
   - 생폴드방스 및 그라스에서는 노상 주차 대신 도심 외곽의 유료 공영주차장(구시가지 진입 차단선 밖)을 이용하고, 차 안의 장기 여행 짐이 외부에 노출되지 않도록 철저히 캐리어 가림막을 쳐둔다.
 
@@ -523,7 +523,7 @@ Masséna 광장 북서쪽 Verdi 가에 있어 Nice-Ville 역과 Promenade des An
 | 08:00–08:45 | 체크아웃·간단한 아침 | 체크아웃은 11:00까지 가능하지만 인수 시각에 맞춰 나온다. 차량용 물·간식 준비 |
 | 08:45–09:00 | Nice역(Avenue Thiers)까지 도보 | 숙소에서 약 1.2km — 짐이 많으면 택시 |
 | 09:00 | **Nice역 렌터카 인수** (Hertz [CONFIRMED]) | Nice Railway Station 영업소 (Avenue Thiers, +33 4 97 03 01 20 · 수요일 08:00 개점). 자동변속·보험·편도반납·차체촬영. 수속 30–60분. **영업소는 {{fact:hertz-nice-ville.closed}}** — 09:00 인수는 이 창을 피한다 |
-| | 예약 내용 (2026-08 예약서) | 컴팩트 자동변속 (그룹 F0, Renault Captur급) · 후지불 **€608.09** (기본 11일 €326.73 + 편도반납 €180 + 세금, VISA ASIA CARDS 10% 할인) · CDW·Super Cover·PAI/PEC·도난보험 포함 · 무제한 주행 · 반납 Avignon TGV 영업소 (Place de l'Europe, +33 4 32 74 62 80) — **9/19(토) 18:15까지 조기 반납(DEC-A08)** |
+| | 예약 내용 (2026-08 예약서) | 컴팩트 자동변속 (그룹 F0, Renault Captur급) · 후지불 **€608.09** (기본 11일 €326.73 + 편도반납 €180 + 세금, VISA ASIA CARDS 10% 할인) · CDW·Super Cover·PAI/PEC·도난보험 포함 · 무제한 주행 · 반납 Avignon TGV 영업소 (Place de l'Europe, +33 4 32 74 62 80) — **9/17(목) 저녁 조기 반납(DEC-A08, 기존 예약 변경 필요)** |
 | 09:30–11:00 | **Saint-Paul-de-Vence** | 골목·성벽·짧은 스케치 |
 | 11:00–12:00 | 가벼운 점심·이동 | 긴 코스식 금지 |
 | 12:30–14:00 | **Grasse vieille ville** | 향수 시향 또는 짧은 공방 |
