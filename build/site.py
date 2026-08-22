@@ -168,6 +168,11 @@ def main() -> int:
         return 1
     print("조사 종결 가드: 잘못된 업소 사진 0 · 미분류 0 · 미병합 별칭 0")
 
+    # 제작과정의 자국이 독자 화면에 새지 않는가. 통폐합이 끝난 지역만 강제한다.
+    import manuscript_residue_check
+    if manuscript_residue_check.main() != 0:
+        return 1
+
     total = sum(1 for _ in SITE.rglob("*.html"))
     print(f"\n완료: {SITE} ({total}쪽 · 검색 색인 {len(render.SEARCH_INDEX)}건)")
     return 0

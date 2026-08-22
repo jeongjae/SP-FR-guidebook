@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "description": "지역 콘텐츠 통폐합이 끝난 지역. 여기 오른 지역은 build/manuscript_residue_check.py 가 원고 흔적 0 을 강제한다. 아직 오르지 않은 지역은 세어서 보여만 준다 — 통폐합은 지역마다 따로 한다.",
+  "consolidated": [
+    "barcelona"
+  ],
+  "notes": {
+    "barcelona": "2026-08-23 통폐합. 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/04_Barcelona_Planning_Residue_v1.0.md 에 있다."
+  }
+}

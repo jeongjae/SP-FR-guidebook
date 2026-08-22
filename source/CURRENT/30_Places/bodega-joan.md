@@ -40,6 +40,15 @@ source: source/CURRENT/30_Places/bodega-joan.md
 3. **Paella de marisc**: 신선한 지중해 해산물과 진한 육수로 지어낸 해산물 빠에야 (2인 약 €31).
 4. **Crema Catalana**: 얇은 설탕 캐러멜을 톡 깨뜨려 먹는 레몬·시나몬 풍미의 정통 커스터드 디저트 (약 €5.75).
 
+### 3. 예산에 맞춘 2인 주문 예시
+공식 메뉴 가격이 공개되어 있어 먹기 전에 총액을 가늠할 수 있는 집이다. 아래 금액은 2026년 8월에 조사한 계획가이며, 실제 결제액이 아니라 예산 설계용 범위다.
+
+**가볍게 — 도착일 저녁**: pan de coca con tomate €2.95 · tortilla de patatas €3.85 · croquetas 6개 €6.70 · escalivada con anchoas €11.30 · 음료 2잔. 합계 약 €35–45.
+
+**제대로 — 정식 저녁**: ensaladilla rusa €7.80 · calamares a la romana €8.60 · seafood paella 2인 약 €31 · crema catalana €5.75 공유 · 음료 포함. 합계 약 €60–70.
+
+운영시간이 길고 온라인 예약이 되지만, 일요일 저녁은 미리 잡아 두는 편이 안전하다.
+
 ## 실용
 
 | 항목 | 상세 정보 |

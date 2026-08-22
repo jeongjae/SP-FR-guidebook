@@ -1,9 +1,9 @@
 {
  "summary": {
   "regions": 8,
-  "inventory_rows": 485,
-  "food_in_attractions": 23,
-  "attraction_in_food": 15,
+  "inventory_rows": 486,
+  "food_in_attractions": 24,
+  "attraction_in_food": 14,
   "mealslot_in_food": 7,
   "schedule_sections": 8,
   "at_a_glance_sections": 8,
@@ -11,7 +11,7 @@
   "transport_strings_copied_from_days": 87,
   "transport_blocks_after_merge": 64,
   "cross_region_food_duplicates": 5,
-  "food_places": 23,
+  "food_places": 24,
   "food_places_without_photo": 0,
   "food_places_without_price": 0,
   "photo_orphans": 10
@@ -21,7 +21,7 @@
    "region": "barcelona",
    "item_id": "bar-canete",
    "title": "Bar Cañete",
-   "current_section": "장소 — 놓치지 말 것",
+   "current_section": "장소 — 그 밖의 장소",
    "entity_type": "restaurant",
    "target_section": "restaurantsCafes",
    "duplicate": false,
@@ -195,16 +195,16 @@
    "region": "barcelona",
    "item_id": "puertecillo-sagrada-familia",
    "title": "Puertecillo Sagrada Família",
-   "current_section": "(렌더하지 않는다)",
-   "entity_type": "attraction",
-   "target_section": "attractions.mustVisit",
+   "current_section": "장소 — 놓치지 말 것",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
    "duplicate": false,
    "day_refs": [
     2
    ],
-   "source": "source/ASSETS/91_Place_Registry_v1.0.md",
-   "action": "KEEP",
-   "note": "요약이 없어 카드를 만들지 않는다"
+   "source": "source/CURRENT/30_Places/puertecillo-sagrada-familia.md",
+   "action": "MOVE",
+   "note": "정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다"
   },
   {
    "region": "barcelona",
@@ -254,15 +254,15 @@
    "item_id": "puertecillo-sagrada-familia",
    "title": "Puertecillo Sagrada Família 점심",
    "current_section": "먹거리 — 카드",
-   "entity_type": "attraction",
-   "target_section": "(day page — 지역 페이지에 두지 않는다)",
+   "entity_type": "restaurant",
+   "target_section": "restaurantsCafes",
    "duplicate": false,
    "day_refs": [
     2
    ],
    "source": "data/daily-cards/day-*.json (stops[])",
-   "action": "DELETE",
-   "note": "'Puertecillo Sagrada Família' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+   "action": "MERGE",
+   "note": "장소 카드와 같은 대상 — 식당 카드 하나로 합친다"
   },
   {
    "region": "barcelona",
@@ -530,6 +530,19 @@
    "region": "barcelona",
    "item_id": "essentials:life[2]",
    "title": "약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "barcelona",
+   "item_id": "essentials:life[3]",
+   "title": "아침 운동은 Passeig de Sant Joan–Arc de Triomf–Ciutadella 왕복 5–7k",
    "current_section": "숙박·생활",
    "entity_type": "local-life",
    "target_section": "localLife",
@@ -7108,7 +7121,7 @@
    "deep_guide": true,
    "website": true,
    "map": true,
-   "menu": false,
+   "menu": true,
    "price": true,
    "price_verified_at": "2026-08-21",
    "hours": true,
@@ -7172,6 +7185,25 @@
    "booking": true,
    "visit_days": [
     3
+   ]
+  },
+  {
+   "slug": "puertecillo-sagrada-familia",
+   "name": "Puertecillo Sagrada Família",
+   "region": "barcelona",
+   "entity_type": "restaurant",
+   "photo": true,
+   "description": true,
+   "deep_guide": true,
+   "website": true,
+   "map": true,
+   "menu": true,
+   "price": true,
+   "price_verified_at": null,
+   "hours": true,
+   "booking": true,
+   "visit_days": [
+    2
    ]
   },
   {

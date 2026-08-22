@@ -2246,6 +2246,13 @@
           "source": "https://www.llibreriafinestres.com/es/contacto/",
           "verified_at": "2026-08-17",
           "blocked_reason": "공식 페이지에 예약 관련 안내 없음 (행사 참가는 별도)"
+        },
+        "duration": {
+          "value": "55분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md — 한눈에 보기 표",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+34 933 840 809"
@@ -2347,6 +2354,13 @@
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
           "ttl_days": 180
+        },
+        "duration": {
+          "value": "120분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md — 한눈에 보기 표",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       }
     },
@@ -4087,6 +4101,13 @@
           "confidence": "official",
           "source": "본인 예약 확정분",
           "verified_at": "2026-08-19"
+        },
+        "duration": {
+          "value": "105분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md — 한눈에 보기 표",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+34 932 080 414"
@@ -4188,6 +4209,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "duration": {
+          "value": "80분",
+          "confidence": "editorial",
+          "source": "원고 04_Barcelona_Sitges_v2.0.md — 한눈에 보기 표",
+          "ttl_days": 3650,
+          "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
         }
       },
       "phone": "+34 93 551 78 76"

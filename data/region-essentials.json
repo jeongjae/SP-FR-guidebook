@@ -6,7 +6,8 @@
       "lifeEssentials": [
         "Day 1은 19:10 공항 도착 뒤 체크인만 한다. 장보기와 산책은 다음 날 아침으로 넘긴다.",
         "3박 일정이라 별도 세탁일은 두지 않는다. 객실 설비와 세탁 필요 여부만 체크인 때 확인한다.",
-        "약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다."
+        "약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다.",
+        "아침 운동은 Passeig de Sant Joan–Arc de Triomf–Ciutadella 왕복 5–7km 러닝이 기본이다. 35–45분 · 8월 말에는 08:00 전에 나선다."
       ],
       "arrivalStrategy": "BCN T1에서 Aerobús A1 편도권으로 Plaça Espanya까지 이동한 뒤 숙소까지 약 5분 걷는다. 모바일 QR을 미리 준비하고 공항 택시는 선택지에서 제외한다.",
       "departureStrategy": "Day 4 아침 체크아웃 뒤 Barcelona Sants의 Hertz 영업소로 이동해 차량을 인수한다. Sitges와 Bàscara 이동은 공공교통이 아니라 예약 렌터카 일정이다.",
@@ -16,7 +17,8 @@
         "data/daily-cards/day-02.json",
         "data/daily-cards/day-03.json",
         "data/daily-cards/day-04.json",
-        "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
+        "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md",
+        "source/ARCHIVE/20_Regional_Chapters/04_Barcelona_Planning_Residue_v1.0.md"
       ]
     },
     "girona": {

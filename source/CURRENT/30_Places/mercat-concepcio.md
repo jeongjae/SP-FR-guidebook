@@ -39,6 +39,17 @@ source: source/CURRENT/30_Places/mercat-concepcio.md
 2. **카탈루냐 치즈 & 샤퀴테리**: 만체고 치즈, 이베리코 하몽, 푸엣(Fuet) 건조 소시지.
 3. **시장 바 카페**: 카운터에 서서 마시는 카페 콘 레체(Café con leche)와 바삭한 판 콘 토마테.
 
+### 3. 숙소에서 먹을 것을 사는 목록
+아침과 샌드위치 점심을 숙소에서 해결하려면 이 시장 한 번으로 사흘치가 갖춰진다.
+
+- **과일** — 무화과(figa de coll de dama), 복숭아(préssec), 포도(raïm), Gala 사과
+- **햄** — jamón ibérico 는 맛보기로 소량만. 샌드위치용은 값이 낮은 jamón serrano 나 pernil dolç 가 낫다
+- **치즈** — 카탈루냐 염소치즈, Garrotxa, 반경성 manchego curado
+- **빵** — pa de pagès, barra, 토마토빵용 단단한 컨트리브레드
+- **그 밖에** — 올리브, escalivada, 견과류, 요거트, 물
+
+8월 말에는 상인마다 여름휴가가 남아 있을 수 있다. 모든 점포가 열려 있다고 가정하지 않는다.
+
 ## 실용
 
 | 항목 | 상세 정보 |

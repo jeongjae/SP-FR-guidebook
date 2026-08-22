@@ -1286,7 +1286,7 @@ def build_region(r: Region, trip: Trip) -> str:
         parts.append(f'<div class="grid grid-2">{"".join(figs)}</div>')
 
     for title, key in (("생략해도 되는 것", "skip"),
-                       ("한눈에 보기 — 우선순위·소요시간", "overview"),
+                       ("한눈에 보기", "overview"),
                        ("여행 전체에서의 역할", "role"),
                        ("추천 체류 리듬", "rhythm"),
                        ("이 지역을 이해하는 층", "context")):
@@ -1365,7 +1365,7 @@ def build_region(r: Region, trip: Trip) -> str:
                      + "".join(f"<li>{link_food_text(x, rel, trip)}</li>"
                                for x in dishes)
                      + "</ul></div></details>")
-    parts.append(acc("음식·시장·카페·생활체험 — 원고", ed.get("food_culture", "")))
+    parts.append(acc("이 지역의 음식과 시장", ed.get("food_culture", "")))
     parts.append("</div>")
 
     # ================================================== 4 · 숙소
@@ -1402,7 +1402,7 @@ def build_region(r: Region, trip: Trip) -> str:
     if r.essentials.get("staySummary"):
         parts.append(f'<div class="prose"><p>'
                      f'{esc(r.essentials["staySummary"])}</p></div>')
-    parts.append(acc("묵을 만한 동네 — 생활권 비교", ed.get("neighborhoods", "")))
+    parts.append(acc("동네와 생활권", ed.get("neighborhoods", "")))
     parts.append(acc("숙소 예산과 확인 기준", ed.get("stay_budget", "")))
     parts.append("</div>")
 
@@ -1475,7 +1475,7 @@ def build_region(r: Region, trip: Trip) -> str:
                          + "".join(
                              f'<li><a href="{rel}/{day_by_number[x["day"]].url}">{esc(day_by_number[x["day"]].date_label)} · Day {x["day"]}</a> — {esc(x["label"])}</li>'
                              for x in uses) + '</ul></div>')
-    parts.append(acc("지역 교통 심화 — 원고", ed.get("transport_deep", "")))
+    parts.append(acc("이 지역에서 이동하기", ed.get("transport_deep", "")))
 
     # --- References — 누를 것만 모은다. 긴 설명은 위에서 이미 했다. -------
     refs = []

@@ -11,9 +11,9 @@
 | 항목 | 값 |
 |---|---:|
 | 지역 수 | 8 |
-| 인벤토리 항목 | 485 |
-| **장소 섹션에 있던 식당·카페·시장** | 23 |
-| **먹거리 섹션에 있던 관광지** | 15 |
+| 인벤토리 항목 | 486 |
+| **장소 섹션에 있던 식당·카페·시장** | 24 |
+| **먹거리 섹션에 있던 관광지** | 14 |
 | 먹거리 섹션의 업소 아닌 식사 슬롯 | 7 |
 | 제거 대상 일정 섹션 | 8 |
 | 제거 대상 한눈에 보기 섹션 | 8 |
@@ -21,7 +21,7 @@
 | Day 에서 복사해 오던 교통 문자열 | 87 |
 | 통합 후 남는 교통 블록 | 64 |
 | 지역을 넘나든 식당 카드 | 5 |
-| 식당·카페·시장 장소 | 23 |
+| 식당·카페·시장 장소 | 24 |
 | 사진 없는 식당·카페 | 0 |
 | 가격 근거 없는 식당·카페 | 0 |
 | 장소로 잇지 못한 사진 (명부 미등재) | 10 |
@@ -30,7 +30,7 @@
 
 | 항목 | 현재 위치 | 엔티티 | 이동할 위치 | 방문일 | 조치 | 메모 |
 |---|---|---|---|---|---|---|
-| Bar Cañete | 장소 — 놓치지 말 것 | restaurant | restaurantsCafes | D3 | **MOVE** | 정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다 |
+| Bar Cañete | 장소 — 그 밖의 장소 | restaurant | restaurantsCafes | D3 | **MOVE** | 정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다 |
 | Barcelona 역사도심 — Barri Gòtic·Rambla 권역 | (렌더하지 않는다) | walk | attractions.mustVisit | — | **KEEP** | 요약이 없어 카드를 만들지 않는다 |
 | Barcelona Modernisme — Eixample 권역 | (렌더하지 않는다) | walk | attractions.mustVisit | — | **KEEP** | 요약이 없어 카드를 만들지 않는다 |
 | Barcelona Sants | (렌더하지 않는다) | transport-node | (렌더하지 않는다) | D4 | **KEEP** | 이동 기준점 — 장소 페이지도 카드도 만들지 않는다 |
@@ -42,11 +42,11 @@
 | MACBA | 장소 — 그 밖의 장소 | attraction | attractions.recommended | D3 | **KEEP** |  |
 | Mercat de la Concepció | 장소 — 그 밖의 장소 | market | restaurantsCafes | D3 | **MOVE** | 정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다 |
 | Palau de Maricel | 장소 — 그 밖의 장소 | attraction | attractions.recommended | — | **KEEP** |  |
-| Puertecillo Sagrada Família | (렌더하지 않는다) | attraction | attractions.mustVisit | D2 | **KEEP** | 요약이 없어 카드를 만들지 않는다 |
+| Puertecillo Sagrada Família | 장소 — 놓치지 말 것 | restaurant | restaurantsCafes | D2 | **MOVE** | 정본에 food_kind/meal_role 이 있다 — 식당·카페 섹션이 제자리다 |
 | Sagrada Família | 장소 — 놓치지 말 것 | attraction | attractions.mustVisit | D2 | **KEEP** |  |
 | Sant Pau Recinte Modernista | 장소 — 놓치지 말 것 | attraction | attractions.mustVisit | D2 | **KEEP** |  |
 | Sitges | (렌더하지 않는다) | attraction | attractions.recommended | — | **KEEP** | 요약이 없어 카드를 만들지 않는다 |
-| Puertecillo Sagrada Família 점심 | 먹거리 — 카드 | attraction | (day page — 지역 페이지에 두지 않는다) | D2 | **DELETE** | 'Puertecillo Sagrada Família' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다 |
+| Puertecillo Sagrada Família 점심 | 먹거리 — 카드 | restaurant | restaurantsCafes | D2 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Bodega Joan 저녁 | 먹거리 — 카드 | restaurant | restaurantsCafes | D2 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Bar Cañete 점심 | 먹거리 — 카드 | restaurant | restaurantsCafes | D3 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | La Zorra 점심 (시체스) | 먹거리 — 카드 | restaurant | restaurantsCafes | D4 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
@@ -67,6 +67,7 @@
 | Day 1은 19:10 공항 도착 뒤 체크인만 한다. 장보기와 산책은 다음 날 아침으로 넘긴다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
 | 3박 일정이라 별도 세탁일은 두지 않는다. 객실 설비와 세탁 필요 여부만 체크인 때 확인한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
 | 약국·생필품점은 특정 상호를 고정하지 않는다. 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 아침 운동은 Passeig de Sant Joan–Arc de Triomf–Ciutadella 왕복 5–7k | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
 | 시내 일정은 대부분 도보권이다. 피로가 크거나 늦어지면 Hola Barcelona가 적용되는 가장 단순한 메 | 숙박·생활 | local-life | localLife | — | **MOVE** |  |
 | BCN T1에서 Aerobús A1 편도권으로 Plaça Espanya까지 이동한 뒤 숙소까지 약 5분 걷는 | 교통 | transport | transport.arrival | — | **KEEP** |  |
 | Day 4 아침 체크아웃 뒤 Barcelona Sants의 Hertz 영업소로 이동해 차량을 인수한다. Si | 교통 | transport | transport.departure | — | **KEEP** |  |
@@ -561,10 +562,11 @@
 | avignon | Le Gibolin | restaurant | O | O | O | O | O | O | O | 2026-08-21 | O | O | D21 |
 | avignon | Les Cocottes Saint-Louis | restaurant | O | O | O | O | O | **X** | O | 2026-08-21 | O | O | D22 |
 | avignon | Les Halles | food-hall | O | O | O | O | O | **X** | O | 2026-08-21 | O | O | D19,D22 |
-| barcelona | Bar Cañete | restaurant | O | O | O | O | O | **X** | O | 2026-08-21 | O | O | D3 |
+| barcelona | Bar Cañete | restaurant | O | O | O | O | O | O | O | 2026-08-21 | O | O | D3 |
 | barcelona | Bodega Joan | restaurant | O | O | O | O | O | O | O | 2026-08-21 | O | O | D2 |
 | barcelona | La Zorra | restaurant | O | O | O | O | O | O | O | 2026-08-21 | O | O | D4 |
 | barcelona | Mercat de la Concepció | market | O | O | O | O | O | **X** | O | 2026-08-21 | O | O | D3 |
+| barcelona | Puertecillo Sagrada Família | restaurant | O | O | O | O | O | O | O | — | O | O | D2 |
 | girona | Casa Marieta | restaurant | O | O | O | O | O | O | O | 2026-08-21 | O | O | **없음** |
 | girona | Mercat del Lleó | market | O | O | O | O | O | **X** | O | 2026-08-21 | O | O | **없음** |
 | lyon | Café Comptoir Abel | restaurant | O | O | O | O | O | O | O | 2026-08-21 | O | O | D23 |
