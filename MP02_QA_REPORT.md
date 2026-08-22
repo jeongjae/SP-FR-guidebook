@@ -10,7 +10,7 @@
 
 | Category | Metric | Expected | Actual | Verdict |
 |---|---|---:|---:|:---:|
-| **Food Guide Entries** | Total entries audited | 8 Regions | 90 | PASS |
+| **Food Guide Entries** | Total entries audited | 8 Regions | 75 | PASS |
 | **Food Place Linkage** | Broken links | 0 | 0 | **PASS (100%)** |
 | **Food Place Linkage** | Wrong target links | 0 | 0 | **PASS (100%)** |
 | **Bar Cañete Linkage** | Barcelona Guide → Bar Cañete | Linked | PASS | **PASS** |

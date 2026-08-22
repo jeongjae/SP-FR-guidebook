@@ -64,12 +64,12 @@ CAT_ICON = {
     "shopping": "pin",
 }
 MODE_ICON = {
-    "walk": "pin", "metro": "train", "tram": "train", "bus": "train",
+    "walk": "pin", "metro": "train", "tram": "train", "funicular": "train", "bus": "train",
     "train": "train", "drive": "car", "car": "car", "flight": "plane",
     "taxi": "car", "unconfirmed": "alert",
 }
 MODE_LABEL = {
-    "walk": "도보", "metro": "지하철", "tram": "트램", "bus": "버스",
+    "walk": "도보", "metro": "지하철", "tram": "트램", "funicular": "푸니쿨라", "bus": "버스",
     "train": "기차", "drive": "운전", "car": "운전", "flight": "비행",
     "taxi": "택시",
     # 이동수단이 아직 안 정해진 구간. 확정처럼 보이면 안 된다.
@@ -933,10 +933,13 @@ def link_food_text(text: str, rel: str, trip: Trip) -> str:
 # 지시라 지역 페이지가 아니라 Day 페이지가 맡는다.
 GENERIC_FOOD_NOTES = [
     "기내", "편의점", "물만", "이동용 물", "출발 시각", "숙소 간단식", "숙소 저녁",
-    "숙소식", "숙소 점심", "숙소권 간단", "숙소권 저녁 또는 숙소식", "숙소식 또는 동네",
+    "숙소식", "숙소 점심", "숙소권 간단", "숙소권 저녁", "숙소식 또는",
     "이동 중 간단식", "숙소 주변 가벼운 저녁", "가벼운 저녁", "가벼운 점심",
-    "이른 저녁", "저녁 무예약", "동네 저녁 (무예약)", "가까운 저녁",
-    "첫 장보기", "필수품만", "점심·휴식", "브런치·숙소", "숙소권 가벼운 점심",
+    "이른 저녁", "저녁 무예약", "동네 저녁", "가까운 저녁",
+    "첫 장보기", "필수품만", "점심·휴식", "브런치·숙소", "숙소권 가벼운",
+    "도착 점심은 가볍게", "점심 — 가볍게", "저녁은 가볍게", "마지막 저녁",
+    "농가 첫 저녁", "농가 저녁", "플랫폼 대기", "경기장 식사", "축제권 점심",
+    "동부 파리 점심",
 ]
 
 
@@ -1379,7 +1382,7 @@ def build_region(r: Region, trip: Trip) -> str:
             day_by_number = {day.n: day for day in trip.days}
             parts.append('<div class="prose"><h3>이 일정에서 쓰는 교통</h3><ul>'
                          + "".join(
-                             f'<li><a href="{rel}/{day_by_number[x["day"]].url}">Day {x["day"]}</a> — {esc(x["label"])}</li>'
+                             f'<li><a href="{rel}/{day_by_number[x["day"]].url}">{esc(day_by_number[x["day"]].date_label)} · Day {x["day"]}</a> — {esc(x["label"])}</li>'
                              for x in uses) + '</ul></div>')
     parts.append(acc("지역 교통 심화 — 원고", ed.get("transport_deep", "")))
 

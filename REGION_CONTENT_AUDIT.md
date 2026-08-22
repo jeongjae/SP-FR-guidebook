@@ -11,7 +11,7 @@
 | 항목 | 값 |
 |---|---:|
 | 지역 수 | 8 |
-| 인벤토리 항목 | 420 |
+| 인벤토리 항목 | 459 |
 | **장소 섹션에 있던 식당·카페·시장** | 22 |
 | **먹거리 섹션에 있던 관광지** | 17 |
 | 먹거리 섹션의 업소 아닌 식사 슬롯 | 7 |
@@ -19,7 +19,7 @@
 | 제거 대상 한눈에 보기 섹션 | 8 |
 | 제거 대상 꼬리말 블록 | 14 |
 | Day 에서 복사해 오던 교통 문자열 | 86 |
-| 통합 후 남는 교통 블록 | 29 |
+| 통합 후 남는 교통 블록 | 57 |
 | 지역을 넘나든 식당 카드 | 5 |
 | 식당·카페·시장 장소 | 22 |
 | 사진 없는 식당·카페 | 16 |
@@ -228,7 +228,6 @@
 | 카시스 화이트와인 — 원산지 현지 확인 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Vieux-Port에서 생선·해산물 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Coustellet 시장 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 농가 첫 저녁 (테라스) | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | 이 지역에 시간을 쓸 가치와 한계 | 개요 | editorial | overview | — | **KEEP** | Overview 의 첫 블록 |
 | 꼭 경험할 세 장면 | 개요 | editorial | overview | — | **KEEP** | Overview 안 |
 | 생략해도 되는 것 | 개요 | editorial | overview | — | **KEEP** | Overview 안 접이식 |
@@ -272,10 +271,7 @@
 | Les Halles d'Avignon 주변 점심 | 먹거리 — 카드 | attraction | (day page — 지역 페이지에 두지 않는다) | D19 | **DELETE** | 'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다 |
 | Fou de Fafa 아비뇽 첫 저녁 | 먹거리 — 카드 | restaurant | restaurantsCafes | D19 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Coustellet 시장 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 농가 첫 저녁 (테라스) | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 농가 저녁 또는 Bonnieux | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | 시장 재료 피크닉 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 농가 저녁 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Fou de Fafa 또는 Les Cocottes Saint-Louis | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | 이 지역에 시간을 쓸 가치와 한계 | 개요 | editorial | overview | — | **KEEP** | Overview 의 첫 블록 |
 | 꼭 경험할 세 장면 | 개요 | editorial | overview | — | **KEEP** | Overview 안 |
@@ -284,13 +280,25 @@
 | 추천 체류 리듬 | 꼬리말 | editorial | overview | — | **MOVE** | 페이지 하단 꼬리말에서 Overview 로 올린다 |
 | 이 지역의 날들 — Day 카드 4장 | 일정 | schedule-index | overview | D16,D17,D18,D19 | **MOVE** | 일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다 |
 | Domaine des Peyre (후보) | 숙박·생활 | stay | accommodation | D16,D17,D18 | **KEEP** | 미확정 — 확정처럼 보이면 안 된다 |
+| 3박 거점은 대중교통 정류장이 아닌 농가 숙소다. Day 16–19의 마을 순회는 예약 렌터카를 정본으로 삼 | 숙박·생활 | stay-note | accommodation | — | **KEEP** |  |
+| 식료품과 물은 Day 16 Coustellet에서 확보한다. 농가 도착 뒤 도보 장보기는 전제로 두지 않는다 | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 연료는 절반 아래로 내리지 않는다. 특히 일요일 도착 전과 Avignon 출발 전 유인 주유 가능 시간을 확 | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 석조마을은 외곽 지정 주차장에 세우고 골목으로 진입하지 않는다. Roussillon 오커길에는 먼지에 강한  | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 가로등 없는 좁은 도로를 피하려고 일몰 전 귀환을 원칙으로 한다. 늦어지면 마지막 방문지를 생략하고 바로 숙 | 숙박·생활 | local-life | localLife | — | **MOVE** |  |
+| Day 16 Aix 체크아웃 뒤 렌터카로 Lourmarin·Coustellet·Goult를 거쳐 농가로 들어 | 교통 | transport | transport.arrival | — | **KEEP** |  |
+| Day 19 체크아웃 뒤 렌터카로 Avignon에 이동한다. ZOU! 915·907은 차량 장애 때 일정을  | 교통 | transport | transport.departure | — | **KEEP** |  |
 | 렌터카 (Aix ➔ Lourmarin ➔ Coustellet ➔ Goult ➔ Domaine des Peyre) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D16 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 차량 내 수하물 완전 은폐 (가림막 장착, 짐 노출 금지) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D16 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 렌터카 (Domaine des Peyre ↔ Roussillon ↔ Goult ↔ 숙소) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D17 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 황토길 오커 트레일 도보 (30분/50분 코스) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D17 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 렌터카 (Domaine des Peyre ↔ Gordes ↔ Village des Bories ↔ Sénanque ➔ Ménerbes ➔ 숙소) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D18 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 외곽 주차 후 도보 접근 (Parking Bel-Air / Parking Charles de Gaulle) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D18 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
-| ZOU 13·84 regional network | 교통 — 교통 지도·공식 자료 | transport-reference | transport.references | — | **MOVE** |  |
+| 교통권은 사지 않는다 — 렌터카 고정, ZOU!는 차량 장애 때만 | 교통 — 도시 공공교통 | transport | transport.publicTransport | — | **KEEP** |  |
+| ZOU! Vaucluse 공식 노선별 시간표 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Pays d’Apt Luberon 관광청 버스 노선 안내 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Pays d’Apt Luberon 관광청 무차량 이동 안내 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| ZOU! Vaucluse 노선별 시간표 | 교통 — 교통 지도·공식 자료 | transport-reference | transport.references | — | **MOVE** |  |
 
 ## Avignon · Alpilles (`avignon`)
 
@@ -326,11 +334,7 @@
 | Café Comptoir Abel 부숑 첫 저녁 | 먹거리 — 카드 | restaurant | restaurantsCafes | D23 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Fou de Fafa 또는 Les Cocottes Saint-Louis | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Les Halles 조달 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 구시가지 점심 — 가볍게 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 저녁은 가볍게 (금요일 영업 재확인) | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Place du Forum 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 19:30 마지막 저녁 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 도착 점심은 가볍게 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Café Comptoir Abel 저녁 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | 이 지역에 시간을 쓸 가치와 한계 | 개요 | editorial | overview | — | **KEEP** | Overview 의 첫 블록 |
 | 꼭 경험할 세 장면 | 개요 | editorial | overview | — | **KEEP** | Overview 안 |
@@ -339,6 +343,14 @@
 | 추천 체류 리듬 | 꼬리말 | editorial | overview | — | **MOVE** | 페이지 하단 꼬리말에서 Overview 로 올린다 |
 | 이 지역의 날들 — Day 카드 5장 | 일정 | schedule-index | overview | D19,D20,D21,D22,D23 | **MOVE** | 일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다 |
 | La Terrasse du Clocher (후보) | 숙박·생활 | stay | accommodation | D19,D20,D21,D22 | **KEEP** | 미확정 — 확정처럼 보이면 안 된다 |
+| 4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장 | 숙박·생활 | stay-note | accommodation | — | **KEEP** |  |
+| Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| Day 20 성벽 안은 전부 걷고 차량을 꺼내지 않는다. 피로할 때만 무료 도심 셔틀이나 Orizo 단일권을 | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| Day 21은 Uzès·Pont du Gard 렌터카 왕복, Day 22는 Avignon Centre↔Arl | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 차량 안에는 보이는 짐을 남기지 않고, 반납할 때 주유·차량 사진·영수증을 확인한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon  | 숙박·생활 | local-life | localLife | — | **MOVE** |  |
+| Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을  | 교통 | transport | transport.arrival | — | **KEEP** |  |
+| Day 23 Avignon TGV에서 차량 반납과 10:22 Lyon행 확정 열차 탑승을 처리한다. 반납 방 | 교통 | transport | transport.departure | — | **KEEP** |  |
 | 렌터카 (Domaine des Peyre ➔ Avignon 성벽 주차장) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D19 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 아비뇽 시내 도보 | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D19 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 아비뇽 구시가지 도보 (성벽 내 압축권) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D20 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
@@ -346,6 +358,12 @@
 | 외곽 전용 주차장 (Parking Cordeliers / Pont du Gard Rive Gauche) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D21 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | SNCF TER 기차 왕복 (Avignon Centre ↔ Arles, 단 17분 소요) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D22 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 아를 시내 도보 (원형경기장 ➔ 고대극장 ➔ 포룸 광장 ➔ 생트로핌 ➔ 라 로케트) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D22 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
+| 성벽 안은 도보 — Orizo 정기권 없이 TER 두 구간만 분리 구매 | 교통 — 도시 공공교통 | transport | transport.publicTransport | — | **KEEP** |  |
+| Orizo 공식 요금표 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Orizo 2026–2027 공식 노선도 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Orizo 공식 P+R·무료 셔틀 안내 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| liO 115 공식 2026년 9월 시간표 목록 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| SNCF TER Avignon–Arles 공식 여정 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
 | Orizo schematic network | 교통 — 교통 지도·공식 자료 | transport-reference | transport.references | — | **MOVE** |  |
 
 ## Lyon (`lyon`)
@@ -368,9 +386,7 @@
 | Halles Paul Bocuse 미식 점심 | 먹거리 — 카드 | attraction | (day page — 지역 페이지에 두지 않는다) | D25 | **DELETE** | 'Halles de Lyon Paul Bocuse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다 |
 | Chez Mamie Lise 점심 (안시) | 먹거리 — 카드 | restaurant | restaurantsCafes | D26 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Part-Dieu역 점심 & TGV 플랫폼 대기 | 먹거리 — 카드 | meal-slot | (day page — 지역 페이지에 두지 않는다) | D27 | **DELETE** | 상호·메뉴가 있는 실제 업소가 아니다 — 하루의 식사 슬롯이다 |
-| 도착 점심은 가볍게 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Café Comptoir Abel 저녁 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| Vieux Lyon 골목 점심 — 가볍게 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Daniel et Denise 특별 저녁 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Halles Paul Bocuse 2차 리옹 미식 경험 (12:30~14:15 점심) | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | Chez Mamie Lise 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
@@ -382,6 +398,14 @@
 | 추천 체류 리듬 | 꼬리말 | editorial | overview | — | **MOVE** | 페이지 하단 꼬리말에서 Overview 로 올린다 |
 | 이 지역의 날들 — Day 카드 5장 | 일정 | schedule-index | overview | D23,D24,D25,D26,D27 | **MOVE** | 일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다 |
 | Lagrange Aparthotel Lyon Lumière | 숙박·생활 | stay | accommodation | D23,D24,D25,D26 | **KEEP** | 확정 |
+| 확정 숙소는 Monplaisir·Sans Souci 생활권의 Lagrange Aparthotel Lyon L | 숙박·생활 | stay-note | accommodation | — | **KEEP** |  |
+| 간이주방이 있으므로 체크인 뒤 숙소 주변에서 물·아침거리만 소량 산다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| Day 24·25는 같은 비접촉 카드로 두 사람을 검증하고, 환승 때도 같은 매체를 유지한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| Day 26 Annecy는 SNCF TER 별도 왕복이다. TCL 결제나 일일 상한에 포함되지 않는다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| Part-Dieu에서는 휴대전화보다 수하물 관리가 우선이다. 플랫폼 확인 뒤 짐을 시야 안쪽에 둔다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 관광일에는 TCL 실시간 경로로 가장 단순한 Metro·tram·bus 귀환편을 고른다. Annecy 귀환  | 숙박·생활 | local-life | localLife | — | **MOVE** |  |
+| Day 23 Lyon Part-Dieu 도착 뒤 큰 짐을 들고 Metro B→D로 환승하지 않고 택시로 확정 | 교통 | transport | transport.arrival | — | **KEEP** |  |
+| Day 27 체크아웃 뒤 택시로 Lyon Part-Dieu에 이동해 13:04 Paris행 확정 TGV를 탄 | 교통 | transport | transport.departure | — | **KEEP** |  |
 | 렌터카 반납 (Avignon TGV역 Hertz [CONFIRMED] — 반납 시점 재확인, 일요일 영업 10:00 시작) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D23 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | TGV INOUI 12176 (Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28, 1등석 확정) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D23 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | Lyon 택시/지하철 | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D23 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
@@ -391,6 +415,11 @@
 | 크루아루스 실크 공방 및 테트도르 공원 도보 | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D25 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | SNCF TER 기차 왕복 (Lyon Part-Dieu ↔ Annecy, 직통 약 1시간 58분) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D26 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 안시 구시가지 및 호숫가 도보 | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D26 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
+| TCL은 같은 비접촉 카드로 두 사람 검증 — 1시간 환승·일일 상한 자동 적용 | 교통 — 도시 공공교통 | transport | transport.publicTransport | — | **KEEP** |  |
+| TCL 비접촉 결제·공동 검증·일일 상한 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| TCL Zone 1·2 1회권 공식 요금 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| TCL F2 공식 노선·시간표 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| SNCF TER Lyon–Annecy 공식 운임·운행 안내 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
 | TCL Lyon·Villeurbanne network | 교통 — 교통 지도·공식 자료 | transport-reference | transport.references | — | **MOVE** |  |
 
 ## Paris (`paris`)
@@ -440,9 +469,6 @@
 | Le Grand Pan 파리 15박 고별 만찬 | 먹거리 — 카드 | restaurant | restaurantsCafes | D41 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Café du Commerce 15구 마지막 점심 | 먹거리 — 카드 | restaurant | restaurantsCafes | D42 | **MERGE** | 장소 카드와 같은 대상 — 식당 카드 하나로 합친다 |
 | Palais Royal 주변 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 경기장 식사 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 동부 파리 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
-| 축제권 점심 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | 송별 저녁 (상향) — 장소 검토 중 | 먹거리 — 목록 | regional-dish | restaurantsCafes.regionalDishes | — | **KEEP** | 업소가 아니라 '무엇을 먹는가'. 카드가 아니라 목록으로 남긴다 |
 | 이 지역에 시간을 쓸 가치와 한계 | 개요 | editorial | overview | — | **KEEP** | Overview 의 첫 블록 |
 | 꼭 경험할 세 장면 | 개요 | editorial | overview | — | **KEEP** | Overview 안 |
@@ -452,6 +478,14 @@
 | 추천 체류 리듬 | 꼬리말 | editorial | overview | — | **MOVE** | 페이지 하단 꼬리말에서 Overview 로 올린다 |
 | 이 지역의 날들 — Day 카드 16장 | 일정 | schedule-index | overview | D27,D28,D29,D30,D31,D32 | **MOVE** | 일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다 |
 | 78 Rue de Lourmel (파리 15구) | 숙박·생활 | stay | accommodation | D27,D28,D29,D30,D31,D32 | **KEEP** | 확정 |
+| 15박 확정 숙소는 15구 78 Rue de Lourmel이다. 9월 24일 Gare de Lyon 도착과  | 숙박·생활 | stay-note | accommodation | — | **KEEP** |  |
+| 9월 24–27일과 10월 5–8일은 개별 승차권, 9월 28일–10월 4일만 Navigo Weekly al | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| Metro·Train·RER 단일권과 Bus·Tram 단일권은 서로 다른 상품이다. 환승 체계를 섞어 한 여 | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 장기체류 장보기·세탁·약국은 숙소 반경 생활권에서 해결하고, 박물관일에는 귀가 동선을 추가 관광으로 늘리지  | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 10월 9일은 체크아웃·가벼운 점심·공식 택시로 CDG 이동만 한다. Weekly를 소진하려고 RER B로  | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 야간에는 환승 수가 적고 밝은 출구로 연결되는 경로를 우선한다. 행사·경마 귀환 때 혼잡하면 다음 열차를 기 | 숙박·생활 | local-life | localLife | — | **MOVE** |  |
+| Day 27 Paris Gare de Lyon 도착 뒤 큰 짐을 들고 Metro로 환승하지 않고 택시로 15 | 교통 | transport | transport.arrival | — | **KEEP** |  |
+| Day 42에는 14:00 이전 공식 택시로 15구 숙소에서 CDG Terminal 1으로 출발한다. Par | 교통 | transport | transport.departure | — | **KEEP** |  |
 | TGV INOUI 6618 (Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00, 1등석 13호차 356·357 확정 [CONFIRMED]) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D27 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | Paris Gare de Lyon ➔ 15구 숙소 택시 이동 (약 35분 소요) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D27 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | Tootbus / Big Bus 파리 시티투어 버스 (2층 파노라마 풀 루프 2시간 15분) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D28 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
@@ -484,6 +518,11 @@
 | 이에나 광장 및 트로카데로 도보 | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D41 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 파리 공식 택시 (15구 ➔ CDG 터미널 1 정액제 약 60분, €65) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D42 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | 아시아나항공 OZ502 (CDG 터미널 1 19:10 ➔ ICN 터미널 2 10/10 14:10, 확정 · 48G·48H) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D42 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
+| Weekly는 9/28–10/4 한 번만 — 앞뒤는 각자 개별권, CDG는 확정 택시 | 교통 — 도시 공공교통 | transport | transport.publicTransport | — | **KEEP** |  |
+| Île-de-France Mobilités 2026 공식 요금 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Navigo Weekly 공식 유효기간·매체 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Metro‑Train‑RER Ticket 공식 범위·환승 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
+| Paris Region Airports Ticket 공식 조건 | 교통 — 공식 출처 접이식 | transport-reference | transport.references | — | **MOVE** | 참고 링크는 Transport 맨 아래 References 로 모은다 |
 | Île-de-France Mobilités Metro map | 교통 — 교통 지도·공식 자료 | transport-reference | transport.references | — | **MOVE** |  |
 
 ## 식당·카페 카드 완결성

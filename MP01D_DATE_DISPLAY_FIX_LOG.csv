@@ -1,0 +1,5 @@
+surface,day,before,after,source_file,action,notes
+DAY_PAGE_NAV,ALL_43_DAYS,← Day N / Day N →,← M.D(요일) · Day N / M.D(요일) · Day N →,build/render.py,CONVERT_TO_DATE_FIRST,Updated build_day prev/next navigation buttons to include date_label.
+DAY_PAGE_MAP,ALL_43_DAYS,Day N 동선,M.D(요일) · Day N 동선,build/render.py,CONVERT_TO_DATE_FIRST,Updated daily map card label to include date_label.
+GUIDE_ESSENTIALS,8_REGIONS,Day N 실행 보기,M.D(요일) · Day N 실행 보기,build/render.py,CONVERT_TO_DATE_FIRST,Updated regional arrival/departure strategy execution button text to date-first.
+GUIDE_TRANSIT_USES,8_REGIONS,Day N,M.D(요일) · Day N,build/render.py,CONVERT_TO_DATE_FIRST,Updated public transit itinerary uses day list items to date-first.

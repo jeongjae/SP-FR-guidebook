@@ -1,0 +1,12 @@
+file,phase,change_type,source_or_generated,expected,status
+build/model.py,MP-01D,DATE_FORMATTER,SOURCE,date_label(d) canonical formatter,PASS
+build/render.py,MP-01D/E/F,RENDERER_REFINEMENT,SOURCE,"Date-first nav/labels, food guide cleanup filter, region chips",PASS
+build/assets/app.js,MP-01D/F,CLIENT_RUNTIME,SOURCE,"Today date-first, currentRegion topbar sync, selectedRegion tab centering",PASS
+build/assets/style.css,MP-01D/F,CSS_STYLING,SOURCE,"Date-first typography, tab current state, data-region scroll margin",PASS
+source/CURRENT/30_Places/restaurant-beatrice.md,MP-01B/C,PLACE_COMPLETENESS,SOURCE,WISH-02 10-field completeness & 9/8 schedule link,PASS
+scripts/mp01_link_content_navigation_audit.py,MP-01A,VALIDATOR,SOURCE,Full link (9162 links) & canonical completeness validator,PASS
+scripts/mp01c_transport_route_link_audit.py,MP-01C,VALIDATOR,SOURCE,Transport stop (42) & route leg (203) validator,PASS
+scripts/mp01d_date_first_display_audit.py,MP-01D,VALIDATOR,SOURCE,12-surface 138-checkpoint date-first validator,PASS
+scripts/mp01e_food_guide_cleanup_audit.py,MP-01E,VALIDATOR,SOURCE,Food guide junk filter & 66 meal slot validator,PASS
+scripts/mp01f_region_navigation_audit.py,MP-01F,VALIDATOR,SOURCE,"8 region buttons, anchors, currentRegion/selectedRegion validator",PASS
+scripts/mp02_guide_food_place_ui_audit.py,MP-02,VALIDATOR,SOURCE,Food linkage & place type icon visual classification validator,PASS

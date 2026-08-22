@@ -110,7 +110,7 @@ source: source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md
 | 고정 문화·스포츠 | 9/30 Fashion Week 공개동선 · 10/4 Arc · 10/7 Vendanges |
 | 선택 공연 | 없음 — 공연 3건(Il Barbiere·Este Mundo·Hamlet)은 비용 사유로 취소했다(2026-08-10). 저녁 대체안은 검토 중이다. |
 | 근교 옵션 | 이번 고정 이벤트 프레임워크에서는 기본 일정에서 제외하고, 별도 교체일이 생길 때만 검토 |
-| 교통 | 9/24–27 개별 승차, 9/28–10/4 및 10/5–11 Navigo Weekly 2주 연속 권장 |
+| 교통 | 9/24–27 개별권 · 9/28–10/4 Navigo Weekly 1주 · 10/5–8 개별권 · 10/9 CDG 공식 택시 |
 | 피로 관리 | 문화 집중일 다음 날은 생활일·공원·시장. 공연 다음 날 오전은 늦게 시작 |
 
 ### 파리 15박의 배분
@@ -359,9 +359,10 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 |---|--- |
 | 9/24 목–9/27 일 | 개별 Metro-Train-RER 티켓 또는 충전식 카드 |
 | 9/28 월–10/4 일 | Navigo Weekly all zones |
-| 10/5 월–10/11 일 | Navigo Weekly all zones — CDG 출국 포함 |
+| 10/5 월–10/8 목 | 개별 Metro-Train-RER 티켓 |
+| 10/9 금 | 공식 택시로 CDG Terminal 1 이동 |
 
-2026 공식 안내 기준 Weekly all zones €32.40, 개별 Metro-Train-RER €2.55, 공항티켓 €14 {{badge:field-recheck|출발 전 재확인}}. 두 주 연속 Weekly가 Monthly보다 이번 날짜구조에 맞는다.
+2026 공식 안내 기준 Weekly all zones €32.40, 개별 Metro-Train-RER €2.55, Bus-Tram €2.05, 공항티켓 €14 {{badge:field-recheck|출발 전 재확인}}. Weekly는 월요일–일요일 고정이며 Navigo Easy가 아니라 Navigo Découverte 또는 호환 휴대전화에 넣는다. 두 번째 주는 4일만 시내 이동하고 CDG는 택시이므로 개별권이 맞다.
 
 #### 34.2 핵심 문전시간
 

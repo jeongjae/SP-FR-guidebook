@@ -222,6 +222,199 @@
           "recheckBy": "2026-08-28"
         }
       ]
+    },
+    "luberon": {
+      "recommendation": {
+        "title": "교통권은 사지 않는다 — 렌터카 고정, ZOU!는 차량 장애 때만",
+        "summary": "Day 16–19는 농가 숙소와 여러 석조마을을 잇기 때문에 렌터카·외곽 주차·도보가 정본이다. 차량을 쓸 수 없으면 같은 일정을 버스로 재현하지 말고, 최신 시간표를 확인한 뒤 한 노선 축만 남긴다."
+      },
+      "products": [
+        {"name": "ZOU! 917", "price": "탑승 전 공식 운임 확인", "shared": false, "accessNote": "Apt–Gordes–Maubec", "fit": "차량 장애 때 Gordes 한 축으로 일정을 줄이는 비상안"},
+        {"name": "ZOU! 915·907", "price": "탑승 전 공식 운임 확인", "shared": false, "accessNote": "Avignon–Apt / Avignon–Cavaillon–Coustellet", "fit": "Day 19 출발을 단순화할 때 출발지에 맞춰 검토하는 비상안"},
+        {"name": "ZOU! 989 Pays d’Apt", "price": "예약할 때 공식 운임 확인", "shared": false, "accessNote": "고정 시각표 없는 사전예약형", "fit": "즉흥 대체편이 아니며 예약이 성립한 경우에만 사용"}
+      ],
+      "howToUse": [
+        "Vaucluse 노선은 9월 1일에 시간표가 바뀔 수 있다. 8월 28일에 2026년 9월판을 다시 내려받고 이용 당일 운행 여부를 확인한다.",
+        "917은 Apt–Gordes–Maubec, 915는 Avignon–Apt, 907은 Avignon–Cavaillon–Coustellet 축이다. 한 노선이 농가 숙소와 전체 마을 순회를 연결한다고 가정하지 않는다.",
+        "989는 고정 시간표가 없는 예약형 교통이다. 전날 즉흥적으로 정류장에 가는 방식으로 이용하지 않는다.",
+        "렌터카 일정에서는 각 마을 외곽 지정 주차장에 세우고 중심부는 걷는다. 정기권이나 광역 패스를 미리 사지 않는다."
+      ],
+      "exceptions": [
+        "농가 숙소는 대중교통 거점이 아니다. ZOU! 노선은 문전 이동이나 야간 귀환을 보장하지 않는다.",
+        "99xx 계열 통학 노선은 방문객의 비상 교통편으로 계획하지 않는다.",
+        "차량 장애가 나면 렌터카 업체 지원을 먼저 요청하고 그날의 다중 마을 일정을 취소한다. 실제 출발지에서 연결되는 915·917·907 중 한 축만 공식 시간표로 검토한다.",
+        "Day 19의 정본은 렌터카로 Avignon까지 이동하는 것이다. 버스는 숙소 위치와 연결 시각이 맞는 경우에만 하루를 비워 쓰는 대안이다."
+      ],
+      "itineraryUses": [
+        {"day": 16, "label": "Aix→Lourmarin→Coustellet→Goult→농가는 렌터카"},
+        {"day": 17, "label": "Roussillon·Goult는 렌터카로 외곽 주차 후 도보"},
+        {"day": 18, "label": "Gordes·Bories·Sénanque·Ménerbes는 렌터카와 도보"},
+        {"day": 19, "label": "농가 체크아웃→Avignon은 렌터카; 915·907은 차량 장애 때만 검토"}
+      ],
+      "sources": [
+        {"label": "ZOU! Vaucluse 공식 노선별 시간표", "url": "https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Pays d’Apt Luberon 관광청 버스 노선 안내", "url": "https://www.luberon-apt.fr/horaires-des-lignes-de-bus", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Pays d’Apt Luberon 관광청 무차량 이동 안내", "url": "https://www.luberon-apt.fr/se-deplacer-sans-voiture", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"}
+      ]
+    },
+    "lyon": {
+      "recommendation": {
+        "title": "TCL은 같은 비접촉 카드로 두 사람 검증 — 1시간 환승·일일 상한 자동 적용",
+        "summary": "Day 24·25는 Zone 1·2 안에서 Metro·bus·F2를 이용한다. 별도 패스를 미리 사지 않고 한 비접촉 카드로 두 사람을 매번 검증하면 1인당 1회 €2.10, 하루 3회 초과 시 €7.10 상한이 자동 적용된다(2026-09-01 개정 요금표 기준·출발 전 재확인)."
+      },
+      "products": [
+        {"name": "TCL 비접촉 결제 Zone 1·2", "price": "1인 1시간 €2.10 · 일일 상한 €7.10", "shared": true, "accessNote": "한 카드로 최대 5명", "fit": "두 사람의 Day 24·25 시내 이동 기본안; 2026-09-01 개정 요금 재확인"},
+        {"name": "TCL Pass 24h Zone 1·2", "price": "1인 €7.10", "shared": false, "accessNote": "첫 검증부터 24시간", "fit": "비접촉 일일 상한과 같은 금액이므로 이번 일정은 선구매하지 않음"},
+        {"name": "Lyon↔Annecy TER", "price": "일반 편도 €32.30 · 결제 전 실제 할인 확인", "shared": false, "accessNote": "TCL과 별도", "fit": "Day 26 왕복; 하루 12편 중 직행 3편이므로 직행편 우선"}
+      ],
+      "howToUse": [
+        "첫 승차에서 비접촉 카드나 휴대전화를 빨간 검증기에 댄다. 두 사람이면 10초 안에 같은 매체를 한 번 더 대 ‘Voyageur 2 ajouté’를 확인한다.",
+        "환승할 때도 두 사람 수만큼 다시 검증한다. 첫 검증부터 1시간 안이면 추가 차감 없이 Metro·tram·bus·funicular를 갈아탈 수 있다.",
+        "실물 카드와 그 카드가 등록된 휴대전화는 서로 다른 결제 매체로 처리된다. 하루 동안 하나만 정해 계속 사용한다. 매체를 섞으면 출구에서 €20가 부과될 수 있다.",
+        "Day 24 Vieux Lyon→Fourvière TCL F2도 Zone 1·2 비접촉 결제에 포함된다. 별도 푸니쿨라 표를 사지 않는다."
+      ],
+      "exceptions": [
+        "비접촉 결제와 자동 일일 상한은 Zone 1·2 내부에서만 적용된다. Annecy TER나 Paris행 TGV에는 적용되지 않는다.",
+        "Day 23 도착과 Day 27 출발은 큰 짐 때문에 Part-Dieu↔숙소 택시가 정본이다. 교통권을 소진하려고 지하철 환승으로 바꾸지 않는다.",
+        "Day 26 Annecy는 직행과 환승편이 섞인다. SNCF Connect에서 Part-Dieu 출발·Annecy 도착·마지막 귀환편을 확인한다.",
+        "F2 운행 장애 시 Fourvière를 축소하거나 Vieux Lyon 중심으로 전환한다."
+      ],
+      "itineraryUses": [
+        {"day": 23, "label": "Part-Dieu→숙소는 짐 때문에 택시; 가벼운 시내 이동부터 TCL"},
+        {"day": 24, "label": "Metro D·F2를 같은 비접촉 카드로 두 사람 검증"},
+        {"day": 25, "label": "Metro C·B·D와 C13 bus를 같은 매체로 검증; 일일 상한 적용"},
+        {"day": 26, "label": "Lyon Part-Dieu↔Annecy는 별도 TER, 현지는 도보"},
+        {"day": 27, "label": "숙소→Part-Dieu는 택시, 이후 확정 TGV로 Paris 이동"}
+      ],
+      "sources": [
+        {"label": "TCL 비접촉 결제·공동 검증·일일 상한", "url": "https://www.tcl.fr/titres-et-tarifs/les-supports-des-titres-de-transports/tcl-carte-bancaire", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"},
+        {"label": "TCL Zone 1·2 1회권 공식 요금", "url": "https://www.tcl.fr/titres-et-tarifs/tous-les-titres-et-abonnements/1-voyage?trip-zone=433", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"},
+        {"label": "TCL F2 공식 노선·시간표", "url": "https://www.tcl.fr/lignes/funiculaire-f2", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"},
+        {"label": "SNCF TER Lyon–Annecy 공식 운임·운행 안내", "url": "https://www.ter.sncf.com/auvergne-rhone-alpes/trajet-lyon-annecy", "verifiedAt": "2026-08-21", "recheckBy": "2026-09-02"}
+      ]
+    },
+    "paris": {
+      "recommendation": {
+        "title": "Weekly는 9/28–10/4 한 번만 — 앞뒤는 각자 개별권, CDG는 확정 택시",
+        "summary": "9/24–27과 10/5–8은 이동 횟수만큼 각자 Metro‑Train‑RER Ticket을 쓰고, 월–일 9/28–10/4에만 Navigo Weekly all zones를 산다. 이 주는 1인 13회부터 Weekly가 근소하게 유리하므로 일정이 줄면 개별권 비용을 다시 계산한다. 10/9 CDG 이동은 공식 택시로 확정했으므로 두 번째 Weekly와 공항철도권은 사지 않는다."
+      },
+      "products": [
+        {"name": "Metro‑Train‑RER Ticket", "price": "1인 1여정 €2.55", "shared": false, "accessNote": "Navigo Easy 또는 휴대전화", "fit": "9/24–27·10/5–8 시내·Versailles 이동; 공항역 진출입만 제외"},
+        {"name": "Bus‑Tram Ticket", "price": "1인 1여정 €2.05", "shared": false, "accessNote": "bus·tram 전용", "fit": "이번 일정에서는 쓰지 않는다. 개별권 기간에 계획이 바뀌어 bus·tram만 타는 여정이 생길 때만 구매"},
+        {"name": "Navigo Weekly all zones", "price": "1인 €32.40", "shared": false, "accessNote": "고정된 월요일–일요일", "fit": "9/28–10/4 한 주만; Day 34 Versailles RER C 포함"},
+        {"name": "Paris Region Airports Ticket", "price": "1인 €14", "shared": false, "accessNote": "Orly·CDG 철도 접근", "fit": "이번 CDG 확정 택시의 철도 비상안; 미리 사지 않음"}
+      ],
+      "howToUse": [
+        "두 사람은 각자 휴대전화 또는 Navigo 매체를 준비하고 개찰할 때마다 본인 매체를 검증한다. 한 장을 돌려 쓰지 않는다.",
+        "Metro‑Train‑RER Ticket은 개찰 뒤 2시간 안의 metro↔metro, RER/train↔RER/train, metro↔RER/train 환승에 쓴다. 개찰구 밖으로 나가면 새 여정이다.",
+        "Metro‑Train‑RER Ticket으로 bus·tram 환승을 이어서 계산하지 않는다. bus·tram 여정에는 Bus‑Tram Ticket을 따로 쓴다.",
+        "Navigo Weekly는 구매일부터 7일이 아니라 월요일–일요일 고정이다. Navigo Découverte 또는 각자 호환 휴대전화에 all zones로 넣고 9월 28일 첫 이동부터 쓴다."
+      ],
+      "exceptions": [
+        "Navigo Weekly는 Navigo Easy에 넣지 않는다. Navigo/Navigo Découverte 또는 호환 휴대전화가 필요하다.",
+        "Day 34 Javel↔Versailles Château Rive Gauche RER C는 9/28–10/4 all-zones Weekly에 포함된다. Weekly가 없어도 Metro‑Train‑RER Ticket €2.55로 갈 수 있다.",
+        "Day 37 Longchamp 무료 셔틀은 Porte d’Auteuil까지의 Metro 10과 별개다.",
+        "Day 42는 공식 택시가 정본이다. RER B 장애 대안까지 미리 표를 사거나 두 번째 Weekly를 구매하지 않는다.",
+        "Navigo Liberté+는 프랑스 은행계좌가 필요한 가입형 상품이므로 이번 여행의 대안으로 권하지 않는다."
+      ],
+      "itineraryUses": [
+        {"day": 27, "label": "Gare de Lyon→15구 숙소는 큰 짐 때문에 택시"},
+        {"day": 28, "label": "개별 Metro‑Train‑RER Ticket; 시티투어 bus 상품은 별도"},
+        {"day": 29, "label": "개별 Metro 10 왕복"}, {"day": 30, "label": "개별 Metro 8 왕복"},
+        {"day": 31, "label": "Navigo Weekly all zones 첫날; Metro 12·8"},
+        {"day": 32, "label": "Weekly로 Metro 8·12"}, {"day": 33, "label": "Weekly로 Metro 8·9"},
+        {"day": 34, "label": "Weekly all zones로 Javel↔Versailles RER C"},
+        {"day": 35, "label": "Weekly로 Metro 8·1"}, {"day": 36, "label": "Weekly로 Metro 9 또는 32번 bus"},
+        {"day": 37, "label": "Weekly Metro 10 + France Galop 무료 셔틀"},
+        {"day": 38, "label": "개별권 기간 재개; Metro 8·9"}, {"day": 39, "label": "개별 Metro 8 왕복"},
+        {"day": 40, "label": "개별 Metro 8·1·12"}, {"day": 41, "label": "개별 Metro 9·6"},
+        {"day": 42, "label": "15구 숙소→CDG Terminal 1은 공식 택시"}
+      ],
+      "sources": [
+        {"label": "Île-de-France Mobilités 2026 공식 요금", "url": "https://www.iledefrance-mobilites.fr/en/tarifs-titre-de-transport-en-commun-2026", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Navigo Weekly 공식 유효기간·매체", "url": "https://www.iledefrance-mobilites.fr/en/titres-et-tarifs/detail/forfait-navigo-semaine", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Metro‑Train‑RER Ticket 공식 범위·환승", "url": "https://www.iledefrance-mobilites.fr/en/titres-et-tarifs/detail/ticket-metro-train-rer", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"},
+        {"label": "Paris Region Airports Ticket 공식 조건", "url": "https://www.iledefrance-mobilites.fr/en/titres-et-tarifs/detail/ticket-paris-region-aeroports", "verifiedAt": "2026-08-21", "recheckBy": "2026-08-28"}
+      ]
+    },
+    "avignon": {
+      "recommendation": {
+        "title": "성벽 안은 도보 — Orizo 정기권 없이 TER 두 구간만 분리 구매",
+        "summary": "Day 19·21은 렌터카, Day 20은 도보라 Orizo 패스를 미리 사지 않는다. Day 22 Avignon Centre↔Arles TER는 별도 구매하고, Day 23 차량 반납 세부는 현장에서 처리한다."
+      },
+      "products": [
+        {
+          "name": "Orizo 단일 승차권",
+          "price": "탑승 전 공식 요금표 확인",
+          "shared": false,
+          "accessNote": "bus·tram 필요 시에만",
+          "fit": "성벽 안 도보가 힘들 때 쓰는 예외안; 이번 일정은 선구매하지 않음"
+        },
+        {
+          "name": "P+R Piot·Italiens 무료 셔틀",
+          "price": "주차·지정 셔틀 무료",
+          "shared": true,
+          "accessNote": "Piot–Porte de l’Oulle / Italiens–Place Pie",
+          "fit": "숙소 주차가 불가능할 때만 검토; 짐 보관용 장기주차로 권하지 않음"
+        },
+        {
+          "name": "SNCF TER Avignon↔Arles",
+          "price": "SNCF Connect 결제 화면 요금",
+          "shared": false,
+          "accessNote": "Avignon Centre↔Arles",
+          "fit": "Day 22 Arles 왕복; 실제 직행편과 귀환편 확인"
+        }
+      ],
+      "howToUse": [
+        "Orizo를 이용하면 승차 전에 표를 준비하고 bus·tram 탑승 때마다 검증한다. 이번 일정은 사용 횟수가 확정되지 않아 정기권이나 10회권을 미리 사지 않는다.",
+        "T1은 Gare Centre와 도심을 연결하지만 Avignon TGV역까지 가지 않는다.",
+        "Day 22에는 Avignon Centre↔Arles 왕복 열차를 따로 산다. ‘17분’은 특정 직행편의 소요시간이므로 당일 선택한 열차의 정차역과 시간을 다시 확인한다."
+      ],
+      "exceptions": [
+        "Day 21 Uzès·Pont du Gard는 렌터카가 정본이다. liO 115가 Avignon–Pont du Gard 축에 있어도 Uzès와 현장 체류를 같은 일정으로 재현하는 비상안으로 가정하지 않는다.",
+        "Day 23 차량 반납 방식과 시간은 현장에서 처리할 운영 항목이다. 지역 교통권 권고와 결합하지 않는다.",
+        "무료 P+R 셔틀은 노선과 운영시간이 맞을 때만 쓴다. 차량에 여행 짐을 둔 채 관광하는 근거로 삼지 않는다.",
+        "Orizo·liO·SNCF는 서로 다른 운임 체계다. 한 기관의 승차권이 다른 기관 구간에 적용된다고 추정하지 않는다."
+      ],
+      "itineraryUses": [
+        {"day": 19, "label": "Luberon→Avignon은 렌터카, 체크인 뒤 성벽 안 도보"},
+        {"day": 20, "label": "교황궁·성벽도시는 도보; Orizo는 피로 시 예외"},
+        {"day": 21, "label": "Uzès·Pont du Gard는 렌터카와 외곽 주차"},
+        {"day": 22, "label": "Avignon Centre↔Arles는 별도 TER"},
+        {"day": 23, "label": "Avignon TGV에서 차량 반납 후 확정 TGV로 Lyon 이동; 세부는 현장 처리"}
+      ],
+      "sources": [
+        {
+          "label": "Orizo 공식 요금표",
+          "url": "https://www.orizo.fr/tarifs/",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        },
+        {
+          "label": "Orizo 2026–2027 공식 노선도",
+          "url": "https://www.orizo.fr/plan-du-reseau-2026-2027/",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        },
+        {
+          "label": "Orizo 공식 P+R·무료 셔틀 안내",
+          "url": "https://www.orizo.fr/parking-relais/",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        },
+        {
+          "label": "liO 115 공식 2026년 9월 시간표 목록",
+          "url": "https://www.lio-occitanie.fr/horaires-et-plans/",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        },
+        {
+          "label": "SNCF TER Avignon–Arles 공식 여정",
+          "url": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/trajet-avignon-arles",
+          "verifiedAt": "2026-08-21",
+          "recheckBy": "2026-08-28"
+        }
+      ]
     }
   }
 }

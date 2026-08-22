@@ -145,10 +145,10 @@ FCR-02B(안정화)에서 Aix SOT 충돌·Nice 원고 결손·사진 슬러그 �
 | girona | 2 | 1 | 0 | · | |
 | nice | 2 | 0 | 0 | O | FCR-02B 에서 보강 |
 | aix | 2 | 0 | 0 | · | 확정 숙소로 원고 갱신 완료 |
-| luberon | 0 | — | — | · | 사 먹는 구간이 아니다 (자가취사) |
-| avignon | 3 | 0 | 0 | · | `les-halles` 를 FOOD_HALL 로 승격 검토 |
-| lyon | 3 | 1 | 0 | · | `halles-de-lyon-paul-bocuse` 승격 검토 |
-| paris | 5 | 3 | 0 | · | |
+| luberon | 0 | — | — | O | 사 먹는 구간이 아니다 (자가취사) |
+| avignon | 3 | 0 | 0 | O | `les-halles` 를 FOOD_HALL 로 승격 검토 |
+| lyon | 3 | 1 | 0 | O | `halles-de-lyon-paul-bocuse` 승격 검토 |
+| paris | 5 | 3 | 0 | O | |
 
 지역 하나당 할 일은 넷이다 — ① `region-essentials` 추가 ② 조사 CSV 의
 `price_range` 를 place-facts 로 이관 ③ 신원이 확인된 사진만

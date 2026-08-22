@@ -36,18 +36,13 @@ aix,시장 조달·카페Weibel,DISH_LIST_ITEM,patisserie-weibel,CAFE,../places/
 aix,19:30 Coucou 또는 La Brocherie,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 aix,Cassis 항구생선 식당,DISH_LIST_ITEM,cassis,spot,../places/cassis.html,../places/cassis.html,PASS_LINKED
 aix,카시스 화이트와인 — 원산지 현지 확인,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-aix,토요시장 피크닉,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-aix,19:45 마지막 저녁 (예약 1곳),DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
+aix,Vieux-Port에서 생선·해산물 점심,DISH_LIST_ITEM,vieux-port-marseille,spot,../places/vieux-port-marseille.html,../places/vieux-port-marseille.html,PASS_LINKED
 aix,Coustellet 시장 점심,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-aix,농가 첫 저녁 (테라스),DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 luberon,Gordes 시장 재료 피크닉 점심,FOOD_CARD,gordes,spot,../places/gordes.html,../places/gordes.html,PASS_LINKED
 luberon,Les Halles d'Avignon 주변 점심,FOOD_CARD,les-halles,spot,../places/les-halles.html,../places/les-halles.html,PASS_LINKED
 luberon,Fou de Fafa 아비뇽 첫 저녁,FOOD_CARD,fou-de-fafa-avignon,RESTAURANT,../places/fou-de-fafa-avignon.html,../places/fou-de-fafa-avignon.html,PASS_LINKED
 luberon,Coustellet 시장 점심,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-luberon,농가 첫 저녁 (테라스),DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-luberon,농가 저녁 또는Bonnieux,DISH_LIST_ITEM,bonnieux,spot,../places/bonnieux.html,../places/bonnieux.html,PASS_LINKED
 luberon,시장 재료 피크닉,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-luberon,농가 저녁,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 luberon,Fou de Fafa또는Les Cocottes Saint-Louis,DISH_LIST_ITEM,les-cocottes-saint-louis|fou-de-fafa-avignon,RESTAURANT|RESTAURANT,../places/les-cocottes-saint-louis.html|../places/fou-de-fafa-avignon.html,../places/fou-de-fafa-avignon.html|../places/les-cocottes-saint-louis.html,PASS_LINKED
 avignon,Les Halles d'Avignon 주변 점심,FOOD_CARD,les-halles,spot,../places/les-halles.html,../places/les-halles.html,PASS_LINKED
 avignon,Fou de Fafa 아비뇽 첫 저녁,FOOD_CARD,fou-de-fafa-avignon,RESTAURANT,../places/fou-de-fafa-avignon.html,../places/fou-de-fafa-avignon.html,PASS_LINKED
@@ -58,34 +53,24 @@ avignon,Le Gibolin 점심 (아를 로케트 지구),FOOD_CARD,le-gibolin-arles,R
 avignon,Café Comptoir Abel 부숑 첫 저녁,FOOD_CARD,cafe-comptoir-abel,RESTAURANT,../places/cafe-comptoir-abel.html,../places/cafe-comptoir-abel.html,PASS_LINKED
 avignon,Fou de Fafa또는Les Cocottes Saint-Louis,DISH_LIST_ITEM,les-cocottes-saint-louis|fou-de-fafa-avignon,RESTAURANT|RESTAURANT,../places/les-cocottes-saint-louis.html|../places/fou-de-fafa-avignon.html,../places/fou-de-fafa-avignon.html|../places/les-cocottes-saint-louis.html,PASS_LINKED
 avignon,Les Halles조달,DISH_LIST_ITEM,les-halles,spot,../places/les-halles.html,../places/les-halles.html,PASS_LINKED
-avignon,구시가지 점심 — 가볍게,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-avignon,저녁은 가볍게 (금요일 영업 재확인),DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 avignon,Place du Forum점심,DISH_LIST_ITEM,place-du-forum-arles,spot,../places/place-du-forum-arles.html,../places/place-du-forum-arles.html,PASS_LINKED
-avignon,19:30 마지막 저녁,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-avignon,도착 점심은 가볍게,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 avignon,Café Comptoir Abel저녁,DISH_LIST_ITEM,cafe-comptoir-abel,RESTAURANT,../places/cafe-comptoir-abel.html,../places/cafe-comptoir-abel.html,PASS_LINKED
 lyon,Café Comptoir Abel 부숑 첫 저녁,FOOD_CARD,cafe-comptoir-abel,RESTAURANT,../places/cafe-comptoir-abel.html,../places/cafe-comptoir-abel.html,PASS_LINKED
 lyon,Vieux Lyon 구시가지 점심,FOOD_CARD,N/A,N/A,TEXT_ONLY,../places/vieux-lyon.html,INFO_EXTRA_LINK
 lyon,Daniel et Denise 정통 부숑 만찬,FOOD_CARD,daniel-et-denise,RESTAURANT,../places/daniel-et-denise.html,../places/daniel-et-denise.html,PASS_LINKED
 lyon,Halles Paul Bocuse 미식 점심,FOOD_CARD,halles-de-lyon-paul-bocuse,spot,../places/halles-de-lyon-paul-bocuse.html,../places/halles-de-lyon-paul-bocuse.html,PASS_LINKED
 lyon,Chez Mamie Lise 점심 (안시),FOOD_CARD,chez-mamie-lise,RESTAURANT,../places/chez-mamie-lise.html,../places/chez-mamie-lise.html,PASS_LINKED
-lyon,Part-Dieu역 점심 & TGV 플랫폼 대기,FOOD_CARD,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-lyon,도착 점심은 가볍게,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 lyon,Café Comptoir Abel저녁,DISH_LIST_ITEM,cafe-comptoir-abel,RESTAURANT,../places/cafe-comptoir-abel.html,../places/cafe-comptoir-abel.html,PASS_LINKED
-lyon,Vieux Lyon 골목 점심 — 가볍게,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 lyon,Daniel et Denise특별 저녁,DISH_LIST_ITEM,daniel-et-denise,RESTAURANT,../places/daniel-et-denise.html,../places/daniel-et-denise.html,PASS_LINKED
 lyon,Halles Paul Bocuse2차 리옹 미식 경험 (12:30~14:15 점심),DISH_LIST_ITEM,halles-de-lyon-paul-bocuse,spot,../places/halles-de-lyon-paul-bocuse.html,../places/halles-de-lyon-paul-bocuse.html,PASS_LINKED
 lyon,Chez Mamie Lise점심,DISH_LIST_ITEM,chez-mamie-lise,RESTAURANT,../places/chez-mamie-lise.html,../places/chez-mamie-lise.html,PASS_LINKED
-paris,Part-Dieu역 점심 & TGV 플랫폼 대기,FOOD_CARD,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 paris,Café du Commerce 15구 브라세리 첫 저녁,FOOD_CARD,cafe-du-commerce,RESTAURANT,../places/cafe-du-commerce.html,../places/cafe-du-commerce.html,PASS_LINKED
 paris,Bouillon Chartier Montparnasse 저녁,FOOD_CARD,bouillon-chartier-montparnasse,RESTAURANT,../places/bouillon-chartier-montparnasse.html,../places/bouillon-chartier-montparnasse.html,PASS_LINKED
 paris,9구 누벨 아테네 / 오페라 점심,FOOD_CARD,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 paris,7구 Rue du Bac 점심 식사,FOOD_CARD,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-paris,Café du Commerce 동네 저녁,FOOD_CARD,cafe-du-commerce,RESTAURANT,../places/cafe-du-commerce.html,../places/cafe-du-commerce.html,PASS_LINKED
 paris,샹젤리제 인근 비스트로 점심,FOOD_CARD,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 paris,베르사유 대운하 인근 점심 식사,FOOD_CARD,N/A,N/A,TEXT_ONLY,../places/versailles.html,INFO_EXTRA_LINK
+paris,Le Grand Pan 15구 비스트로 저녁,FOOD_CARD,le-grand-pan,RESTAURANT,../places/le-grand-pan.html,../places/le-grand-pan.html,PASS_LINKED
+paris,레 알 / 몽토르게이 점심 식사,FOOD_CARD,N/A,N/A,TEXT_ONLY,../places/montorgueil.html,INFO_EXTRA_LINK
 paris,Palais Royal 주변 점심,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-paris,경기장 식사,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-paris,동부 파리 점심,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
-paris,축제권 점심,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY
 paris,송별 저녁 (상향) — 장소 검토 중,DISH_LIST_ITEM,N/A,N/A,TEXT_ONLY,NONE,PASS_TEXT_ONLY

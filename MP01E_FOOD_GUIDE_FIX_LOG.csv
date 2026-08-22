@@ -1,0 +1,3 @@
+region,raw_text,before,after,classification,source_file,action,notes
+ALL_8_REGIONS,"Generic logistics notes (물 2L, 출발 시각, 숙소 저녁/간단식 등)",Unfiltered daily execution lines displayed in Regional Guide #food,Filtered from Food Guide UI; preserved in Daily Cards & FCR 66 Meal Slot SOT,REMOVE / MOVE,build/render.py,RENDERER_FILTER_ENHANCEMENT,Cleaned noise from Regional Food Guides while protecting 100% of underlying SOT.
+ALL_8_REGIONS,Canonical Restaurant / Café / Market Mentions,Raw text lines,Structured canonical place links via link_food_text,STRUCTURE,build/render.py,MAINTAINED_MP02_LINKAGE,100% of Canonical Food Place links preserved.

@@ -523,8 +523,23 @@
    ],
    "transportMerges": [
     {
-     "id": "transport-resource:ZOU 13·84 regional network",
-     "title": "ZOU 13·84 regional network",
+     "id": "transit-source:ZOU! Vaucluse 공식 노선별 시간표",
+     "title": "ZOU! Vaucluse 공식 노선별 시간표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Pays d’Apt Luberon 관광청 버스 노선 안내",
+     "title": "Pays d’Apt Luberon 관광청 버스 노선 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Pays d’Apt Luberon 관광청 무차량 이동 안내",
+     "title": "Pays d’Apt Luberon 관광청 무차량 이동 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transport-resource:ZOU! Vaucluse 노선별 시간표",
+     "title": "ZOU! Vaucluse 노선별 시간표",
      "to": "transport.references"
     }
    ]
@@ -630,6 +645,31 @@
     }
    ],
    "transportMerges": [
+    {
+     "id": "transit-source:Orizo 공식 요금표",
+     "title": "Orizo 공식 요금표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Orizo 2026–2027 공식 노선도",
+     "title": "Orizo 2026–2027 공식 노선도",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Orizo 공식 P+R·무료 셔틀 안내",
+     "title": "Orizo 공식 P+R·무료 셔틀 안내",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:liO 115 공식 2026년 9월 시간표 목록",
+     "title": "liO 115 공식 2026년 9월 시간표 목록",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:SNCF TER Avignon–Arles 공식 여정",
+     "title": "SNCF TER Avignon–Arles 공식 여정",
+     "to": "transport.references"
+    },
     {
      "id": "transport-resource:Orizo schematic network",
      "title": "Orizo schematic network",
@@ -740,6 +780,26 @@
     }
    ],
    "transportMerges": [
+    {
+     "id": "transit-source:TCL 비접촉 결제·공동 검증·일일 상한",
+     "title": "TCL 비접촉 결제·공동 검증·일일 상한",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:TCL Zone 1·2 1회권 공식 요금",
+     "title": "TCL Zone 1·2 1회권 공식 요금",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:TCL F2 공식 노선·시간표",
+     "title": "TCL F2 공식 노선·시간표",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:SNCF TER Lyon–Annecy 공식 운임·운행 안내",
+     "title": "SNCF TER Lyon–Annecy 공식 운임·운행 안내",
+     "to": "transport.references"
+    },
     {
      "id": "transport-resource:TCL Lyon·Villeurbanne network",
      "title": "TCL Lyon·Villeurbanne network",
@@ -908,6 +968,26 @@
     }
    ],
    "transportMerges": [
+    {
+     "id": "transit-source:Île-de-France Mobilités 2026 공식 요금",
+     "title": "Île-de-France Mobilités 2026 공식 요금",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Navigo Weekly 공식 유효기간·매체",
+     "title": "Navigo Weekly 공식 유효기간·매체",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Metro‑Train‑RER Ticket 공식 범위·환승",
+     "title": "Metro‑Train‑RER Ticket 공식 범위·환승",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Paris Region Airports Ticket 공식 조건",
+     "title": "Paris Region Airports Ticket 공식 조건",
+     "to": "transport.references"
+    },
     {
      "id": "transport-resource:Île-de-France Mobilités Metro map",
      "title": "Île-de-France Mobilités Metro map",

@@ -1,0 +1,3 @@
+surface,region,before,after,source_file,action,notes
+SCHEDULE_REGION_CHIPS,ALL_8_REGIONS,Static region subnav strip,Interactive 8-region chip strip with dynamic active state & mobile auto-centering,build/assets/app.js & build/assets/style.css,INTERACTIVE_REGION_NAV_UPGRADE,"Enabled click-to-scroll, active tab state update, and smooth inline centering."
+REGION_ANCHOR_SCROLL_MARGIN,ALL_8_REGIONS,Default 0 scroll margin (header overlap risk),scroll-margin-top: 6.5rem on [data-region],build/assets/style.css,CSS_SCROLL_MARGIN_TOP,Ensured section headers land cleanly below fixed topbar/tabs on jump.

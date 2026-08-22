@@ -235,16 +235,19 @@ python3 build/table_loss_check.py
 
 **지역 데이터 준비 매트릭스** (구조가 아니라 콘텐츠다 — 빌드를 세우지 않는다)
 
+main 을 브랜치로 들여오면서 값이 바뀌었다. 그사이 머지된 PR #197~#202 가
+luberon·avignon·lyon·paris 의 essentials 를 채웠다. **남은 것은 두 지역뿐이다.**
+
 | 지역 | staySummary | localLife | arrival | departure | publicTransport | references |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | barcelona | O | O | O | O | O | O |
 | girona | · | · | · | · | · | O |
 | nice | O | O | O | O | O | O |
 | aix | · | · | · | · | O | O |
-| luberon | · | · | · | · | · | O |
-| avignon | · | · | · | · | · | O |
-| lyon | · | · | · | · | · | O |
-| paris | · | · | · | · | · | O |
+| luberon | O | O | O | O | O | O |
+| avignon | O | O | O | O | O | O |
+| lyon | O | O | O | O | O | O |
+| paris | O | O | O | O | O | O |
 
 `neighborhoods` · `foodCulture` · `transportDeep`(원고 승격 층)은 8개 지역 전부 O.
 
@@ -289,8 +292,9 @@ FCR02B_STABILIZATION_QA.md  docs/fcr02/*.png
 
 ## 13. Remaining risks
 
-1. **6개 지역의 `region-essentials` 가 비어 있다.** 숙소 요약·생활권·도착/
-   출발 블록이 그만큼 얇다. 구조는 준비됐고 데이터만 없다 — 이관의 본체다.
+1. **`region-essentials` 가 없는 곳은 girona·aix 둘이다.** (main 머지 후 값.
+   luberon·avignon·lyon·paris 는 PR #197~#202 가 채웠다.) 두 지역의 숙소
+   요약·생활권·도착/출발 블록이 그만큼 얇다.
 2. **명부 미등재 장소 11곳의 사진이 대기 중이다.** Cadaqués · Tossa de Mar ·
    Sant Feliu de Guíxols · 팡테옹 · 뤽상부르 공원 · 몽주 시장 · 팔레 루아얄 ·
    아케이드 · 앙팡 루주 시장 · 생마르탱 운하 · 센강변. 전부 일정에 실제로
@@ -310,9 +314,9 @@ FCR02B_STABILIZATION_QA.md  docs/fcr02/*.png
 
 ## 14. Recommendation for 7-region rollout
 
-**순서** — Girona → Nice(데이터는 끝났고 검수만) → Aix → Luberon → Avignon
-→ Lyon → Paris. Paris 를 마지막에 두는 이유는 16박·장소 29곳으로 가장 크고,
-앞의 여섯에서 나온 패턴을 다 받아 쓸 수 있어서다.
+**순서** — Girona → Aix 가 먼저다. `region-essentials` 가 없는 두 곳이라
+이관 4단계를 다 밟아야 한다. 나머지 다섯(Nice·Luberon·Avignon·Lyon·Paris)은
+essentials 가 이미 있으므로 가격 사실 이관·사진·검수만 남는다.
 
 **지역 하나당 할 일은 넷이고 순서가 있다.**
 

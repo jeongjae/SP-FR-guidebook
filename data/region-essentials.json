@@ -38,6 +38,85 @@
         "data/daily-cards/day-12.json",
         "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
       ]
+    },
+    "luberon": {
+      "staySummary": "3박 거점은 대중교통 정류장이 아닌 농가 숙소다. Day 16–19의 마을 순회는 예약 렌터카를 정본으로 삼고, 도착 즉시 진입로·주차 위치와 야간 귀환 표식을 확인한다.",
+      "lifeEssentials": [
+        "식료품과 물은 Day 16 Coustellet에서 확보한다. 농가 도착 뒤 도보 장보기는 전제로 두지 않는다.",
+        "연료는 절반 아래로 내리지 않는다. 특히 일요일 도착 전과 Avignon 출발 전 유인 주유 가능 시간을 확인한다.",
+        "석조마을은 외곽 지정 주차장에 세우고 골목으로 진입하지 않는다. Roussillon 오커길에는 먼지에 강한 신발을 쓴다.",
+        "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다."
+      ],
+      "arrivalStrategy": "Day 16 Aix 체크아웃 뒤 렌터카로 Lourmarin·Coustellet·Goult를 거쳐 농가로 들어간다. 해 지기 전에 숙소 진입로와 주차 위치를 익힌다.",
+      "departureStrategy": "Day 19 체크아웃 뒤 렌터카로 Avignon에 이동한다. ZOU! 915·907은 차량 장애 때 일정을 단일 축으로 줄이는 대안일 뿐 정본 동선이 아니다.",
+      "lateReturnRule": "가로등 없는 좁은 도로를 피하려고 일몰 전 귀환을 원칙으로 한다. 늦어지면 마지막 방문지를 생략하고 바로 숙소로 돌아간다.",
+      "sourceRefs": [
+        "data/daily-cards/day-16.json",
+        "data/daily-cards/day-17.json",
+        "data/daily-cards/day-18.json",
+        "data/daily-cards/day-19.json",
+        "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+      ]
+    },
+    "avignon": {
+      "staySummary": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장에 두고 Day 21 근교 일정에 사용한다.",
+      "lifeEssentials": [
+        "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다.",
+        "Day 20 성벽 안은 전부 걷고 차량을 꺼내지 않는다. 피로할 때만 무료 도심 셔틀이나 Orizo 단일권을 검토한다.",
+        "Day 21은 Uzès·Pont du Gard 렌터카 왕복, Day 22는 Avignon Centre↔Arles TER 왕복으로 교통수단을 분리한다.",
+        "차량 안에는 보이는 짐을 남기지 않고, 반납할 때 주유·차량 사진·영수증을 확인한다."
+      ],
+      "arrivalStrategy": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
+      "departureStrategy": "Day 23 Avignon TGV에서 차량 반납과 10:22 Lyon행 확정 열차 탑승을 처리한다. 반납 방식과 완충은 현장에서 확인할 운영 항목으로 남긴다.",
+      "lateReturnRule": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon TGV까지 간다고 가정하지 않는다.",
+      "sourceRefs": [
+        "data/daily-cards/day-19.json",
+        "data/daily-cards/day-20.json",
+        "data/daily-cards/day-21.json",
+        "data/daily-cards/day-22.json",
+        "data/daily-cards/day-23.json",
+        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+      ]
+    },
+    "lyon": {
+      "staySummary": "확정 숙소는 Monplaisir·Sans Souci 생활권의 Lagrange Aparthotel Lyon Lumière다. 도착·출발일에는 큰 짐 때문에 Part-Dieu↔숙소를 택시로 이동하고, 관광일에는 TCL Zone 1·2를 이용한다.",
+      "lifeEssentials": [
+        "간이주방이 있으므로 체크인 뒤 숙소 주변에서 물·아침거리만 소량 산다.",
+        "Day 24·25는 같은 비접촉 카드로 두 사람을 검증하고, 환승 때도 같은 매체를 유지한다.",
+        "Day 26 Annecy는 SNCF TER 별도 왕복이다. TCL 결제나 일일 상한에 포함되지 않는다.",
+        "Part-Dieu에서는 휴대전화보다 수하물 관리가 우선이다. 플랫폼 확인 뒤 짐을 시야 안쪽에 둔다."
+      ],
+      "arrivalStrategy": "Day 23 Lyon Part-Dieu 도착 뒤 큰 짐을 들고 Metro B→D로 환승하지 않고 택시로 확정 숙소에 간다. 체크인 뒤 가벼운 시내 이동부터 TCL 비접촉 결제를 쓴다.",
+      "departureStrategy": "Day 27 체크아웃 뒤 택시로 Lyon Part-Dieu에 이동해 13:04 Paris행 확정 TGV를 탄다. Perrache로 가지 않도록 승차역을 확인한다.",
+      "lateReturnRule": "관광일에는 TCL 실시간 경로로 가장 단순한 Metro·tram·bus 귀환편을 고른다. Annecy 귀환 뒤에는 Part-Dieu에서 지체하지 않고 숙소로 바로 이동한다.",
+      "sourceRefs": [
+        "data/daily-cards/day-23.json",
+        "data/daily-cards/day-24.json",
+        "data/daily-cards/day-25.json",
+        "data/daily-cards/day-26.json",
+        "data/daily-cards/day-27.json",
+        "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+      ]
+    },
+    "paris": {
+      "staySummary": "15박 확정 숙소는 15구 78 Rue de Lourmel이다. 9월 24일 Gare de Lyon 도착과 10월 9일 CDG 출국은 큰 짐 때문에 택시로 고정하고, 체류 중에는 각자 휴대전화 또는 Navigo 매체로 이동한다.",
+      "lifeEssentials": [
+        "9월 24–27일과 10월 5–8일은 개별 승차권, 9월 28일–10월 4일만 Navigo Weekly all zones를 쓴다.",
+        "Metro·Train·RER 단일권과 Bus·Tram 단일권은 서로 다른 상품이다. 환승 체계를 섞어 한 여정으로 계산하지 않는다.",
+        "장기체류 장보기·세탁·약국은 숙소 반경 생활권에서 해결하고, 박물관일에는 귀가 동선을 추가 관광으로 늘리지 않는다.",
+        "10월 9일은 체크아웃·가벼운 점심·공식 택시로 CDG 이동만 한다. Weekly를 소진하려고 RER B로 바꾸지 않는다."
+      ],
+      "arrivalStrategy": "Day 27 Paris Gare de Lyon 도착 뒤 큰 짐을 들고 Metro로 환승하지 않고 택시로 15구 숙소에 간다. 생활권 확인만 하고 개별 교통권은 다음 날 첫 이동에서 시작한다.",
+      "departureStrategy": "Day 42에는 14:00 이전 공식 택시로 15구 숙소에서 CDG Terminal 1으로 출발한다. Paris Region Airports Ticket은 철도 비상안일 뿐 확정 동선이 아니다.",
+      "lateReturnRule": "야간에는 환승 수가 적고 밝은 출구로 연결되는 경로를 우선한다. 행사·경마 귀환 때 혼잡하면 다음 열차를 기다리고 휴대전화는 출입문 근처에서 꺼내지 않는다.",
+      "sourceRefs": [
+        "data/daily-cards/day-27.json",
+        "data/daily-cards/day-28.json",
+        "data/daily-cards/day-34.json",
+        "data/daily-cards/day-37.json",
+        "data/daily-cards/day-42.json",
+        "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+      ]
     }
   }
 }
