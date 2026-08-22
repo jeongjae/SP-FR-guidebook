@@ -422,6 +422,44 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
 .badge-alert   { background: var(--terracotta-soft); color: var(--sig-alert-ink); }
 .badge-neutral { background: var(--surface-2); color: var(--text-2); }
 .badge-must    { background: var(--accent); color: #FFFFFF; }
+/* 방문일 배지. Day SOT 로 가는 링크라 누를 수 있다는 것이 보여야 한다.
+   본문 7:1 · 보조 4.5:1 기준을 지키려고 표면색이 아니라 잉크색을 쓴다. */
+.badge-day {
+  background: var(--surface-2);
+  color: var(--text-1);
+  text-decoration: none;
+  border: 1px solid var(--line);
+}
+.badge-day:hover, .badge-day:focus-visible { background: var(--surface-3, var(--surface-2)); }
+
+/* 지역 개요의 날짜 칩 줄. 일정 섹션을 없앤 자리에서 Day 로 가는 길이다.
+   파리는 16일이라 줄바꿈시키면 개요가 칩 벽이 된다 — 옆으로 민다.
+   여기서는 칩이 유일한 타깃이므로 44pt 를 실제로 준다. */
+.day-chips {
+  display: flex;
+  gap: var(--s2);
+  overflow-x: auto;
+  padding-bottom: var(--s2);
+  scrollbar-width: thin;
+}
+.day-chips > * { flex: 0 0 auto; }
+.day-chips .badge-day { min-height: 44px; padding-inline: var(--s3); }
+
+/* 사진 갤러리. 한 장소·한 지역에 여러 장이 있을 때 쓴다. 설명과 저작자를
+   사진마다 달고 나온다 — 표시 의무가 사진 단위로 붙기 때문이다. */
+.gallery-item { margin: 0; }
+.gallery-shot {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-md);
+  display: block;
+}
+.gallery-item figcaption {
+  margin-top: var(--s2);
+  font-size: var(--t-small);
+  color: var(--text-2);
+}
+.gallery-item figcaption .meta { margin: 0; }
 
 /* ================= MetadataRow ================= */
 .metarow {
