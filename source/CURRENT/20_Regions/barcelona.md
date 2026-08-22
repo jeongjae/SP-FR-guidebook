@@ -3,7 +3,7 @@ slug: barcelona
 source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 ---
 
-## 이 지역에 시간을 쓸 가치와 한계
+## 바르셀로나와 시체스를 이렇게 본다
 
 바르셀로나는 이번 여행의 첫 대도시이자 스페인에서 프랑스로 넘어가기 전 도시 리듬에 적응하는 3박의 출발점이다. 로마 도시 Barcino와 중세 구도심, 19세기 Eixample, 모더니즘 건축이 한 도시 안에 겹쳐 있어 명소의 수를 늘리기보다 서로 다른 도시 층을 연결해 보는 편이 좋다.
 
@@ -20,7 +20,7 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 
 ---
 
-## 한눈에 보기
+## 일정
 
 | 날짜 | 핵심 일정 |
 |---|--- |
@@ -31,7 +31,7 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 
 상세 시각과 이동, 식사와 대안은 그날의 Day 페이지가 정본이다.
 
-## 숙소 생활권과 동네
+## 숙소와 생활권
 
 숙소가 있는 **Hostafrancs**는 관광 중심부가 아니라 대로변 생활권이다. 시장과 슈퍼, 빵집이 이어져 있어 아침과 저녁 장보기가 숙소 앞에서 끝나고, 메트로로 어느 방향이든 붙는다.
 
@@ -50,7 +50,7 @@ source: source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md
 
 ---
 
-## 지역 교통 심화
+## 바르셀로나에서 이동하기
 
 ### 시내에서는 도보와 메트로
 
@@ -72,7 +72,7 @@ C-32 유료도로가 빠르고, 해안도로 C-31은 무료지만 굽이가 많�
 
 시체스 구시가지는 좁고 주차가 어렵다. 차는 외곽 환승 주차장 **Aparcament Can Robert**에 세우고 걸어 들어간다. 여권·노트북·카메라 등 귀중품은 주차된 차량 안에 남기지 않는다.
 
-## 음식·시장·카페·생활체험
+## 먹고 장보기
 
 ### 카탈루냐에서 먹어볼 것
 

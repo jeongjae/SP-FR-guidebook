@@ -258,8 +258,13 @@ def check_phase9_commercial_depth_guards():
         deployed_paths = [SITE / "guide" / f"{slug}.html"]
         deployed_paths += sorted((SITE / "places").glob("*.html"))
         deployed_paths += sorted((SITE / "daily").glob("*.html"))
-        deployed = "\n".join(p.read_text(encoding="utf-8")
-                             for p in deployed_paths if p.exists())
+        deployed_chunks = []
+        for p in deployed_paths:
+            try:
+                deployed_chunks.append(p.read_text(encoding="utf-8"))
+            except OSError:
+                pass
+        deployed = "\n".join(deployed_chunks)
             
         for token in schema["required_deployed_tokens"]:
             if token not in deployed:

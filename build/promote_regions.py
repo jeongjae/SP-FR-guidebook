@@ -15,11 +15,14 @@
 """
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+CONSOLIDATION_PATH = ROOT / "data" / "region-consolidation.json"
+CONSOLIDATION = json.loads(CONSOLIDATION_PATH.read_text(encoding="utf-8")) if CONSOLIDATION_PATH.exists() else {}
 CHAPTERS = ROOT / "source" / "CURRENT" / "20_Regional_Chapters"
 OUT_DIR = ROOT / "source" / "CURRENT" / "20_Regions"
 
@@ -227,7 +230,8 @@ def regenerate(quiet: bool = True) -> dict[str, dict]:
         layers = extract(slug, path)
         secs = sections(path.read_text(encoding="utf-8"))
         layers.update(extract_deep(secs, drop_stay_candidates=slug in confirmed))
-        result_titles = {**LAYER_TITLE, **LAYER_TITLE_EXTRA}
+        consolidation_titles = CONSOLIDATION.get("layerTitles", {}).get(slug, {})
+        result_titles = {**LAYER_TITLE, **LAYER_TITLE_EXTRA, **consolidation_titles}
         result[slug] = layers
         parts = [f"---", f"slug: {slug}",
                  f"source: source/CURRENT/20_Regional_Chapters/{fname}", "---", ""]

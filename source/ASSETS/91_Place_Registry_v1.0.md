@@ -36,13 +36,13 @@
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수 | Calella de Palafrugell | chapters/girona/places.html | Calella de Palafrugell | Calella de Palafrugell |
+| `calella-de-palafrugell` | Calella de Palafrugell | spot | 선택 | Calella de Palafrugell | chapters/girona/places.html | Calella de Palafrugell | Calella de Palafrugell |
 | `collioure` | Collioure | spot | 필수 | Collioure | chapters/girona/places.html | Collioure | Collioure |
 | `girona-cathedral` | Girona Cathedral | spot | 필수 | Girona Cathedral | chapters/girona/places.html | Girona Cathedral | Girona Cathedral |
 | `passeig-de-la-muralla` | Passeig de la Muralla | spot | 필수 | — | chapters/girona/places.html | 성벽 (Passeig de la Muralla) | Passeig de la Muralla |
 | `onyar` | Onyar 강변 | spot | 필수 | Onyar Houses | chapters/girona/places.html | Onyar 강변 | Onyar |
 | `pals` | Pals | spot | 우선 추천 | Pals | chapters/girona/places.html | Pals | Pals |
-| `peralada` | Peralada | spot | 우선 추천 | Peralada | chapters/girona/places.html | Peralada | Peralada |
+| `peralada` | Peralada | spot | 선택 | Peralada | chapters/girona/places.html | Peralada | Peralada |
 | `peratallada` | Peratallada | spot | 필수 | Peratallada | chapters/girona/places.html | Peratallada | Peratallada |
 | `casa-marieta` | Casa Marieta | spot | 필수 | Casa Marieta | chapters/girona/places.html | Casa Marieta | — |
 | `mercat-del-lleo` | Mercat del Lleó | spot | 우선 추천 | Mercat del Lleó | chapters/girona/places.html | Mercat del Lleó | — |

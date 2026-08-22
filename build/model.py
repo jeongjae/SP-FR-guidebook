@@ -694,6 +694,13 @@ LAYER_KEY = {
     "지역 교통 심화": "transport_deep",
     "음식·시장·카페·생활체험": "food_culture",
 }
+try:
+    _conf = json.loads((ROOT / "data" / "region-consolidation.json").read_text(encoding="utf-8"))
+    for _titles in (_conf.get("layerTitles") or {}).values():
+        for _k, _title in _titles.items():
+            LAYER_KEY[_title] = _k
+except Exception:
+    pass
 
 
 def load_region_editorial() -> dict[str, dict]:

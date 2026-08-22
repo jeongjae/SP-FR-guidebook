@@ -2,17 +2,27 @@
   "schemaVersion": "1.1",
   "description": "지역 콘텐츠 통폐합이 끝난 지역. 여기 오른 지역은 build/manuscript_residue_check.py 가 원고 흔적 0 을 강제하고, 렌더러가 '먹을 것' 목록에서 업소 이름을 뗀다. 아직 오르지 않은 지역은 세어서 보여만 준다 — 통폐합은 지역마다 따로 한다.",
   "consolidated": [
-    "barcelona"
+    "barcelona",
+    "girona"
   ],
   "layerTitles": {
     "barcelona": {
+      "verdict": "바르셀로나와 시체스를 이렇게 본다",
       "overview": "일정",
       "neighborhoods": "숙소와 생활권",
       "transport_deep": "바르셀로나에서 이동하기",
       "food_culture": "먹고 장보기"
+    },
+    "girona": {
+      "verdict": "Girona와 Costa Brava를 이렇게 본다",
+      "overview": "일정",
+      "neighborhoods": "숙소와 생활권",
+      "transport_deep": "이 지역에서 운전하기",
+      "food_culture": "먹고 장보기"
     }
   },
   "notes": {
-    "barcelona": "2026-08-23 통폐합(RC01) · 외부 편집 검토 반영(RC01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/04_Barcelona_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1."
+    "barcelona": "2026-08-23 통폐합(RC01) · 외부 편집 검토 반영(RC01F). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/04_Barcelona_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1.",
+    "girona": "2026-08-23 통폐합(GR01). 계획 단계 자료는 source/ARCHIVE/20_Regional_Chapters/05_Girona_Planning_Residue_v1.0.md 에 있다. 챕터 스키마는 rc-region-v1."
   }
 }
