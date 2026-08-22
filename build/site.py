@@ -128,6 +128,7 @@ def main() -> int:
     fact_guard.check_confirmed_fact_token_guards()
     content_guard.check_phase9_commercial_depth_guards()
 
+
     n_red = render.write_redirects(trip)
     print(f"리다이렉트 {n_red}쪽 — 옛 주소를 살려 둔다")
 
@@ -135,6 +136,16 @@ def main() -> int:
     write("offline-fallback.html", render.build_offline_fallback())
     render.write_assets(trip)
     render.write_pwa()
+
+    # FCR-02 — 지역 페이지의 분류와 구조. 링크까지 보므로 자산을 다 쓴 뒤 돈다.
+    import region_structure_check
+    structure_problems, _ = region_structure_check.check(trip)
+    if structure_problems:
+        print("지역 구조 가드 실패:")
+        for problem in structure_problems[:20]:
+            print("  " + problem)
+        return 1
+    print("지역 구조 가드: 분류·섹션·방문일·링크 이상 없음")
 
     total = sum(1 for _ in SITE.rglob("*.html"))
     print(f"\n완료: {SITE} ({total}쪽 · 검색 색인 {len(render.SEARCH_INDEX)}건)")

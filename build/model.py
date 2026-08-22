@@ -107,6 +107,20 @@ class Fact:
         return not self.is_confirmed
 
 
+# food_kind → 엔티티. 시장·푸드홀도 음식 엔티티로 본다 — 명부가 이미
+# meal_role 을 주고 있고, 식사 슬롯 감사도 이것들을 끼니로 세어 왔다.
+FOOD_KIND_ENTITY = {
+    "RESTAURANT": "restaurant",
+    "CAFE": "cafe",
+    "BAKERY": "bakery",
+    "MARKET": "market",
+    "FOOD_HALL": "food-hall",
+    "WINE_BAR": "wine-bar",
+}
+
+FOOD_ENTITIES = frozenset(FOOD_KIND_ENTITY.values())
+
+
 @dataclass
 class Place:
     slug: str
@@ -137,6 +151,28 @@ class Place:
     @property
     def url(self) -> str:
         return f"places/{self.slug}.html"
+
+    @property
+    def entity_type(self) -> str:
+        """엔티티 한 종류. 지역 페이지가 이 값으로 섹션을 가른다.
+
+        제목이 아니라 정본 필드로 판정한다. '…점심' 이라는 이름 때문에
+        관광지가 식당 섹션에 들어가 있던 것이 FCR-02 가 고친 것이다.
+        """
+        if self.kind == "node":
+            return "transport-node"
+        kind = str(self.food_kind or "").upper()
+        if kind in FOOD_KIND_ENTITY:
+            return FOOD_KIND_ENTITY[kind]
+        if kind:
+            return "restaurant"
+        if self.meal_role in ("PRIMARY", "BACKUP"):
+            return "restaurant"
+        if self.meal_role in ("MARKET", "SELF_CATERING"):
+            return "market"
+        if self.kind == "walk":
+            return "walk"
+        return "attraction"
 
     @property
     def is_food(self) -> bool:
@@ -305,9 +341,37 @@ class Region:
         """Don't Miss. 등급이 '필수' 인 것만."""
         return [p for p in self.places if p.grade == "essential"]
 
+    # --- FCR-02: 볼거리와 먹을거리를 엔티티로 가른다 ----------------------
+    # 예전에는 '장소' 한 덩어리에 식당·카페·시장이 섞여 있었다. 8개 지역에서
+    # 22곳이 그랬고, 반대로 '먹거리' 에는 실제 업소가 아닌 하루의 식사 슬롯이
+    # 관광지 카드로 들어와 있었다.
+
+    @property
+    def attractions(self) -> list[Place]:
+        """볼거리. 카드를 만들 수 있는 것만 (요약이 있어야 한다)."""
+        return [p for p in self.places
+                if p.entity_type in ("attraction", "walk") and p.summary]
+
+    @property
+    def must_visit(self) -> list[Place]:
+        return [p for p in self.attractions if p.grade == "essential"]
+
+    @property
+    def recommended(self) -> list[Place]:
+        return [p for p in self.attractions if p.grade != "essential"]
+
     @property
     def food_places(self) -> list[Place]:
-        return [p for p in self.places if p.kind == "spot" and p.grade == "food"]
+        """식당 · 카페 · 빵집 · 시장. 등급 순, 같은 등급이면 이름 순."""
+        order = {"essential": 0, "priority": 1, "optional": 2,
+                 "alternative": 3, "discouraged": 4}
+        return sorted([p for p in self.places if p.entity_type in FOOD_ENTITIES],
+                      key=lambda p: (order.get(p.grade or "", 5), p.name))
+
+    @property
+    def has_confirmed_stay(self) -> bool:
+        return any(d.hotel.get("status") == "confirmed"
+                   for d in self.days if d.region == self.slug)
 
 
 # ---------------------------------------------------------------- Trip
@@ -552,6 +616,13 @@ LAYER_KEY = {
     "한눈에 보기": "overview",
     "여행 전체에서의 역할": "role",
     "추천 체류 리듬": "rhythm",
+    # FCR-02 에서 승격한 심화 층. 원고에만 있고 사이트 어디에도 없던
+    # 덩어리들이다 — 숙소 생활권 · 지역 교통 · 음식과 시장.
+    "이 지역을 이해하는 층": "context",
+    "숙소 생활권과 동네": "neighborhoods",
+    "숙소 예산과 확인 기준": "stay_budget",
+    "지역 교통 심화": "transport_deep",
+    "음식·시장·카페·생활체험": "food_culture",
 }
 
 
