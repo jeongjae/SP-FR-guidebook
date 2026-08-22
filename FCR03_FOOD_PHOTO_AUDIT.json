@@ -1,0 +1,27 @@
+{
+ "auditedAt": "2026-08-22",
+ "policy": "FCR-03 · Google Maps 우선",
+ "results": [
+  {
+   "slug": "bodega-joan",
+   "region": "barcelona",
+   "name": "Bodega Joan",
+   "address": "Carrer del Rosselló, 164, 08036 Barcelona",
+   "resolvedTitle": "Bodega Joan",
+   "mapsUrl": "https://www.google.com/maps/place/Bodega+Joan/@41.391701,2.155481,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a290102a89e5:0x9427746fb704d8ca!8m2!3d41.391701!4d2.155481!16s%2Fg%2F1tgv8w1l?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12a4a290102a89e5:0x9427746fb704d8ca",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "Rosselló"
+   ],
+   "addressHits": [
+    "Rosselló"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlB4w9li1VRoUzmci6Jqd-VGd_kBQ_7XdhdbCsrEfVTBXofV0--AD3l6qnfNOC-JkYIa3rTwOwQLXBxHibZ_rIkpjwrLshbbp3Y7qflehhRWt1uboJufzDBp5Fcmey9eqGm_bI=w1600-h1200-k-no",
+   "photoCount": 1,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "barcelona-bodega-joan-gm01"
+  }
+ ]
+}

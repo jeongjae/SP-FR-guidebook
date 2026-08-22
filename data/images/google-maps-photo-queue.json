@@ -1,0 +1,171 @@
+{
+  "$comment": [
+    "FCR-03 사진 정책 — 식당·카페 대표사진은 Google Maps 의 해당 업소 사진을",
+    "우선 쓴다. 스크립트는 이 대기열만 처리한다.",
+    "",
+    "신원 확인이 핵심이다. 상호명이 겹치고 **번지·도로명이 그 장소 페이지에",
+    "실제로 있어야** 사진을 받는다. 상호가 바뀐 곳은 acceptTitle 에 적는다",
+    "(Boulangerie Pichard → La Maison Pichard).",
+    "",
+    "Maps 사진은 자유 라이선스가 아니다. 카탈로그에 google-maps-ugc 로 적고",
+    "출처 URL·업소 신원을 함께 남긴다."
+  ],
+  "version": "1.0",
+  "queue": [
+    {
+      "slug": "bar-canete",
+      "region": "barcelona",
+      "name": "Bar Cañete",
+      "address": "Carrer de la Unió, 17, 08001 Barcelona",
+      "acceptTitle": [],
+      "altKo": "바르셀로나 라발의 타파스 바 Bar Cañete 실내",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "bodega-joan",
+      "region": "barcelona",
+      "name": "Bodega Joan",
+      "address": "Carrer del Rosselló, 164, 08036 Barcelona",
+      "acceptTitle": [],
+      "altKo": "에이샴플레의 전통 보데가 Bodega Joan 실내",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "la-paradeta-sagrada-familia",
+      "region": "barcelona",
+      "name": "La Paradeta Sagrada Família",
+      "address": "Passatge de Simó, 18, 08025 Barcelona",
+      "acceptTitle": [
+        "La Paradeta",
+        "Paradeta"
+      ],
+      "altKo": "La Paradeta 사그라다 파밀리아점의 해산물 진열대",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "la-zorra",
+      "region": "barcelona",
+      "name": "La Zorra",
+      "address": "Passeig Marítim, 1-3, 08870 Sitges",
+      "acceptTitle": [],
+      "altKo": "시체스 해변 산책로의 쌀요리 전문점 La Zorra",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "le-figuier-de-saint-esprit",
+      "region": "nice",
+      "name": "Le Figuier de Saint-Esprit",
+      "address": "14 Rue Saint-Esprit, 06600 Antibes",
+      "acceptTitle": [
+        "Figuier de Saint-Esprit"
+      ],
+      "altKo": "앙티브 구시가지의 Le Figuier de Saint-Esprit",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "restaurant-beatrice",
+      "region": "nice",
+      "name": "Restaurant & Salon de Thé Béatrice",
+      "address": "1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",
+      "acceptTitle": [
+        "Béatrice",
+        "Beatrice",
+        "Salon de thé",
+        "Restaurant-Salon de thé Béatrice",
+        "Villa Ephrussi de Rothschild"
+      ],
+      "altKo": "빌라 에프뤼시 드 로칠드의 살롱 드 테 Béatrice",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "chez-gilbert-cassis",
+      "region": "aix",
+      "name": "Chez Gilbert",
+      "address": "19 Quai des Baux, 13260 Cassis",
+      "acceptTitle": [],
+      "altKo": "카시스 항구의 부야베스 식당 Chez Gilbert",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "patisserie-weibel",
+      "region": "aix",
+      "name": "Pâtisserie Weibel",
+      "address": "2 Rue Chabrier, 13100 Aix-en-Provence",
+      "acceptTitle": [
+        "Maison Weibel",
+        "Weibel"
+      ],
+      "altKo": "엑상프로방스의 칼리송 파티세리 Maison Weibel",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "fou-de-fafa-avignon",
+      "region": "avignon",
+      "name": "Fou de Fafa",
+      "address": "17 Rue des Trois Faucons, 84000 Avignon",
+      "acceptTitle": [],
+      "altKo": "아비뇽 구시가지의 비스트로 Fou de Fafa",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "le-gibolin-arles",
+      "region": "avignon",
+      "name": "Le Gibolin",
+      "address": "13 Rue des Porcelets, 13200 Arles",
+      "acceptTitle": [],
+      "altKo": "아를 로케트 지구의 와인 비스트로 Le Gibolin",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "les-cocottes-saint-louis",
+      "region": "avignon",
+      "name": "Les Cocottes Saint-Louis",
+      "address": "20 Rue Portail Boquier, 84000 Avignon",
+      "acceptTitle": [
+        "Les Cocottes",
+        "Cloître Saint-Louis"
+      ],
+      "altKo": "아비뇽 클로이트르 생루이의 Les Cocottes",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "cafe-comptoir-abel",
+      "region": "lyon",
+      "name": "Café Comptoir Abel",
+      "address": "25 Rue Guynemer, 69002 Lyon",
+      "acceptTitle": [],
+      "altKo": "리옹의 전통 부숑 Café Comptoir Abel",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "chez-mamie-lise",
+      "region": "lyon",
+      "name": "Chez Mamie Lise",
+      "address": "11 Rue Grenette, 74000 Annecy",
+      "acceptTitle": [],
+      "altKo": "안시 구시가지의 사부아 요리 식당 Chez Mamie Lise",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "boulangerie-pichard",
+      "region": "paris",
+      "name": "Boulangerie Pichard",
+      "address": "88 Rue Cambronne, 75015 Paris",
+      "acceptTitle": [
+        "La Maison Pichard",
+        "Maison Pichard"
+      ],
+      "altKo": "파리 15구 캉브론 거리의 La Maison Pichard 빵집",
+      "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "le-grand-pan",
+      "region": "paris",
+      "name": "Le Grand Pan",
+      "address": "20 Rue Rosenwald, 75015 Paris",
+      "acceptTitle": [],
+      "altKo": "파리 15구의 비스트로 Le Grand Pan",
+      "verifiedAt": "2026-08-22"
+    }
+  ]
+}

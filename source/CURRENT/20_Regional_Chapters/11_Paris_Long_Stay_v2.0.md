@@ -502,8 +502,8 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### Latin Quarter {{grade:essential|필수}}
 
-> **운영** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.hours}} · **휴관** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.closed}}
-> **예약** {{fact:latin-quarter-pantheon-rue-mouffetard-sorbonne-ile-saint-lou.booking}}
+> **운영** {{fact:latin-quarter.hours}} · **휴관** {{fact:latin-quarter.closed}}
+> **예약** {{fact:latin-quarter.booking}}
 
 **'라틴'은 학생들이 라틴어로 말하던 동네라는 뜻이다 — 800년째 학생 구역이다.**
 
@@ -545,8 +545,8 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 
 ### Le Marais {{grade:essential|필수}}
 
-> **요금** {{fact:le-marais-place-des-vosges-carnavalet-archives.price_adult}} · **운영** {{fact:le-marais-place-des-vosges-carnavalet-archives.hours}} · **휴관** {{fact:le-marais-place-des-vosges-carnavalet-archives.closed}}
-> **예약** {{fact:le-marais-place-des-vosges-carnavalet-archives.booking}}
+> **요금** {{fact:le-marais.price_adult}} · **운영** {{fact:le-marais.hours}} · **휴관** {{fact:le-marais.closed}}
+> **예약** {{fact:le-marais.booking}}
 
 **Day 30 (9/27 일) · Day 35 (10/2 금)**
 
@@ -627,7 +627,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### Montorgueil {{grade:priority|우선추천}}
 
-> 🕐 {{fact:montorgueil-les-halles.hours}} · 휴무 {{fact:montorgueil-les-halles.closed}} · {{fact:montorgueil-les-halles.booking}}
+> 🕐 {{fact:montorgueil.hours}} · 휴무 {{fact:montorgueil.closed}} · {{fact:montorgueil.booking}}
 
 **10/3 유연한 문화일의 선택 모듈**
 
@@ -684,8 +684,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### 월요일 모듈 {{grade:priority|우선추천}}
 
-> **운영** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.hours}} · **휴관** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.closed}}
-> **예약** {{fact:a-d-aligre-butte-aux-cailles-convention-batignolles.booking}}
+> **운영** {{fact:marche-convention.hours}} · **휴관** {{fact:marche-convention.closed}}
+> **예약** {{fact:marche-convention.booking}}
 
 **Day 38 (10/5 월)**
 
@@ -882,8 +882,8 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 ### BnF Richelieu — 우선 추천
 
-> **운영** {{fact:bnf-richelieu-salle-ovale.hours}} · **휴관** {{fact:bnf-richelieu-salle-ovale.closed}}
-> **예약** {{fact:bnf-richelieu-salle-ovale.booking}}
+> **운영** {{fact:bnf-richelieu.hours}} · **휴관** {{fact:bnf-richelieu.closed}}
+> **예약** {{fact:bnf-richelieu.booking}}
 
 - Oval Room은 무료.
 - 화요일 10:00–20:00, 수–일 10:00–18:00, 월요일 휴관 {{badge:unverified|공식 확인}}

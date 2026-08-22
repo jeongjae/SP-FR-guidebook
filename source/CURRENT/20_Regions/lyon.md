@@ -307,7 +307,7 @@ Avignon TGV에서 렌터카를 반납한 뒤 Lyon Part-Dieu행 직행 TGV를 탄
 
 ##### 식당 카드 — Daniel et Denise Créqui {{badge:p0|9/22 확정 저녁}}
 
-> 🕐 {{fact:daniel-et-denise-crequi.hours}} · 휴무 {{fact:daniel-et-denise-crequi.closed}} · {{fact:daniel-et-denise-crequi.booking}}
+> 🕐 {{fact:daniel-et-denise.hours}} · 휴무 {{fact:daniel-et-denise.closed}} · {{fact:daniel-et-denise.booking}}
 
 | 필드 | 내용 |
 |---|--- |

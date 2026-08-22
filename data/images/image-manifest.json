@@ -11473,6 +11473,1014 @@
         ]
       },
       "status": "processed"
+    },
+    {
+      "imageId": "barcelona-bar-canete-gm01",
+      "placeId": "bar-canete",
+      "region": "barcelona",
+      "title": "Bar Cañete — Google Maps",
+      "titleKo": "Bar Cañete",
+      "description": "Carrer de la Unió, 17, 08001 Barcelona",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Bar+Ca%C3%B1ete/@41.3791528,2.173125,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a258412bcb19:0x1c77b2f8f4cdfb63!8m2!3d41.3791528!4d2.173125!16s%2Fg%2F1tf89fdb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqdWVSAPz5l10dMOXZZ7DlwapsKl6iCI0LojkztFmqA4-WWQEuvi-wG8yQXocH8hjk-d6LXmIzFAiYykqJWKPyG6sdSCB205as6UcEtGa2KPmp9NrjY2-jZ5Kv83r-HjYH8LDU=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Bar Cañete",
+        "resolvedName": "Bar Cañete",
+        "address": "Carrer de la Unió, 17, 08001 Barcelona",
+        "placeKey": "0x12a4a258412bcb19:0x1c77b2f8f4cdfb63",
+        "mapsUrl": "https://www.google.com/maps/place/Bar+Ca%C3%B1ete/@41.3791528,2.173125,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a258412bcb19:0x1c77b2f8f4cdfb63!8m2!3d41.3791528!4d2.173125!16s%2Fg%2F1tf89fdb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 800,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/barcelona-bar-canete-gm01.jpg",
+      "originalSha256": "082fa6c8f2a0daec3f25befd122130704e6ac3c8c2275a7cad07abe3062a986e",
+      "originalBytes": 224286,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/barcelona.html",
+        "places/bar-canete.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "바르셀로나 라발의 타파스 바 Bar Cañete 실내",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-bar-canete-gm01-content-800.webp",
+            "sitePath": "assets/images/content/barcelona-bar-canete-gm01-content-800.webp",
+            "width": 800,
+            "height": 1200,
+            "bytes": 89162,
+            "sha256": "c2ddc9d588e88379aed594656569fcea3c1e249aa9aecd3bbbe8b48572f5f1f5",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-bar-canete-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-bar-canete-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 15146,
+            "sha256": "93b19fed9a78d04e06b34701eaf862e22792e0b8350f9a897111f5a58536b294",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "barcelona-la-zorra-gm01",
+      "placeId": "la-zorra",
+      "region": "barcelona",
+      "title": "Restaurant LaZorra — Google Maps",
+      "titleKo": "La Zorra",
+      "description": "Passeig Marítim, 1-3, 08870 Sitges",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Restaurant+LaZorra/@41.2338454,1.8036675,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3804e4a3a4533:0x19c1f170c20a8781!8m2!3d41.2338454!4d1.8036675!16s%2Fg%2F11c52p0v80?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlx3UEbEv311TugPzJDm5hwh6dJytEbTarMnEfD-E3ID_p6-evW7beall8gohQ-CtVrm85LP5Sb4Zz6DbTZv2wU8HGsFE-Ci9Urgxf4g5GzAr7jF0s0G8vSVzH7xWzEnHdjGnGL_5W2-Dnd=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "La Zorra",
+        "resolvedName": "Restaurant LaZorra",
+        "address": "Passeig Marítim, 1-3, 08870 Sitges",
+        "placeKey": "0x12a3804e4a3a4533:0x19c1f170c20a8781",
+        "mapsUrl": "https://www.google.com/maps/place/Restaurant+LaZorra/@41.2338454,1.8036675,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3804e4a3a4533:0x19c1f170c20a8781!8m2!3d41.2338454!4d1.8036675!16s%2Fg%2F11c52p0v80?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1280,
+      "originalHeight": 720,
+      "originalPath": "source/ASSETS/photos/originals/barcelona-la-zorra-gm01.jpg",
+      "originalSha256": "42d293e08b40b7a0e456156e12c2738e0e24edc4ecc4bfac7f9ebc9b8b38caed",
+      "originalBytes": 203071,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/barcelona.html",
+        "places/la-zorra.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "시체스 해변 산책로의 쌀요리 전문점 La Zorra",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-la-zorra-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-la-zorra-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 85128,
+            "sha256": "632a47276d7dbed93d02e8995acabeac8aa482ce57498ec342cbd225ba881fbe",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-la-zorra-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-la-zorra-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20510,
+            "sha256": "3e5ab0207bc1f65f215d45d9928516269764cb4499eac916e47b65a62f9a3afa",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "nice-le-figuier-de-saint-esprit-gm01",
+      "placeId": "le-figuier-de-saint-esprit",
+      "region": "nice",
+      "title": "Le Figuier de Saint-Esprit — Google Maps",
+      "titleKo": "Le Figuier de Saint-Esprit",
+      "description": "14 Rue Saint-Esprit, 06600 Antibes",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Le+Figuier+de+Saint-Esprit/@43.58175,7.1287525,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdd57113baf7d1:0x98a423300ed7c116!8m2!3d43.58175!4d7.1287525!16s%2Fg%2F1wnzbxh_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlAdqyyTOEQ0GucjsMWPzeVVX9G5Jw7vjBRa0f87HOAwahn5lO-EH6d4NJDGvnLQuuCFR1bvogcHrf2ddC4mTXZUYGRxsplKRS4Q13-JPcmUWgDh7ZKcx7zfOlC8FtlSUH-T0ZR9Q=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Le Figuier de Saint-Esprit",
+        "resolvedName": "Le Figuier de Saint-Esprit",
+        "address": "14 Rue Saint-Esprit, 06600 Antibes",
+        "placeKey": "0x12cdd57113baf7d1:0x98a423300ed7c116",
+        "mapsUrl": "https://www.google.com/maps/place/Le+Figuier+de+Saint-Esprit/@43.58175,7.1287525,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdd57113baf7d1:0x98a423300ed7c116!8m2!3d43.58175!4d7.1287525!16s%2Fg%2F1wnzbxh_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1600,
+      "originalHeight": 1035,
+      "originalPath": "source/ASSETS/photos/originals/nice-le-figuier-de-saint-esprit-gm01.jpg",
+      "originalSha256": "f4b3baceaa8d25c78561314d9023b3b52e7e70dc12dab53a29568ba4665a4da1",
+      "originalBytes": 590273,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/nice.html",
+        "places/le-figuier-de-saint-esprit.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "앙티브 구시가지의 Le Figuier de Saint-Esprit",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-le-figuier-de-saint-esprit-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-le-figuier-de-saint-esprit-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 828,
+            "bytes": 207352,
+            "sha256": "5180703f2b681a3f4715a591ad2309e88d5a24de33c71015e007d3114cfb6138",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-le-figuier-de-saint-esprit-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-le-figuier-de-saint-esprit-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 35288,
+            "sha256": "f585c686043517341f8d927cc32465c9c2a79146e4355cebffe72eed7eb17aa6",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "nice-restaurant-beatrice-gm01",
+      "placeId": "restaurant-beatrice",
+      "region": "nice",
+      "title": "Salon de thé - restaurant — Google Maps",
+      "titleKo": "Restaurant & Salon de Thé Béatrice",
+      "description": "1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Salon+de+th%C3%A9+-+restaurant/@43.6966062,7.3284499,17z/data=!3m1!4b1!4m6!3m5!1s0x12cddb38f0cd9ed7:0x36b503ea1b718b6a!8m2!3d43.6966062!4d7.3284499!16s%2Fg%2F11fy1j_pyy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm9jeEr_eqtcJ4cWweQXomZMw1zKsn_x_88J8s6ClUhNe0LRccD3-w6fcxFyQIroFSJ2mw11NK7W_gwRCoqG3lxFWjCVSqtWYQ34mA7zxdoU23FP4ksR8fKh6MIQrMDMxmmfChfiTCX8Jk=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Restaurant & Salon de Thé Béatrice",
+        "resolvedName": "Salon de thé - restaurant",
+        "address": "1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",
+        "placeKey": "0x12cddb38f0cd9ed7:0x36b503ea1b718b6a",
+        "mapsUrl": "https://www.google.com/maps/place/Salon+de+th%C3%A9+-+restaurant/@43.6966062,7.3284499,17z/data=!3m1!4b1!4m6!3m5!1s0x12cddb38f0cd9ed7:0x36b503ea1b718b6a!8m2!3d43.6966062!4d7.3284499!16s%2Fg%2F11fy1j_pyy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1600,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/nice-restaurant-beatrice-gm01.jpg",
+      "originalSha256": "2c6d193a93aecd2c455172b0d134f3a9a00bf756bc4fd9483a4fe29d235045fd",
+      "originalBytes": 801058,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/nice.html",
+        "places/restaurant-beatrice.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "빌라 에프뤼시 드 로칠드의 살롱 드 테 Béatrice",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/nice-restaurant-beatrice-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/nice-restaurant-beatrice-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 289338,
+            "sha256": "0032ae24e4aba2f6229724c5b3f13b2928acdae08d3859a1c263b9408d66cf47",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/nice-restaurant-beatrice-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/nice-restaurant-beatrice-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34938,
+            "sha256": "7436bf4f1ebb64ad218bf2cc4c771f0386267a1640f188d68b09b44e3d01630d",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "aix-chez-gilbert-cassis-gm01",
+      "placeId": "chez-gilbert-cassis",
+      "region": "aix",
+      "title": "Chez Gilbert — Google Maps",
+      "titleKo": "Chez Gilbert",
+      "description": "19 Quai des Baux, 13260 Cassis",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Chez+Gilbert/@43.2148438,5.537375,17z/data=!3m1!4b1!4m6!3m5!1s0x12c9ba94cc515ca5:0x7928b7fbc6d86882!8m2!3d43.2148438!4d5.537375!16s%2Fg%2F1tnmc45g?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmFO5JMNMaesPa8h7l7R49SSvP1u7XnEojdcGxP9dsLAppe1rhkKEfR3RkjfEW77-F5zgdGhkPD-Ok2BzlXCljzkc5di3h2b3VynjWf8NO9n14exjc6mRgaZHmXzkRJX82rWOSb=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Chez Gilbert",
+        "resolvedName": "Chez Gilbert",
+        "address": "19 Quai des Baux, 13260 Cassis",
+        "placeKey": "0x12c9ba94cc515ca5:0x7928b7fbc6d86882",
+        "mapsUrl": "https://www.google.com/maps/place/Chez+Gilbert/@43.2148438,5.537375,17z/data=!3m1!4b1!4m6!3m5!1s0x12c9ba94cc515ca5:0x7928b7fbc6d86882!8m2!3d43.2148438!4d5.537375!16s%2Fg%2F1tnmc45g?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1600,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/aix-chez-gilbert-cassis-gm01.jpg",
+      "originalSha256": "e035cea33e0f907f673ca2c83e106d0268c77aabefd43accb7651aef01a5f7ab",
+      "originalBytes": 623262,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/aix.html",
+        "places/chez-gilbert-cassis.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "카시스 항구의 부야베스 식당 Chez Gilbert",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-chez-gilbert-cassis-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/aix-chez-gilbert-cassis-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 211998,
+            "sha256": "a76a9cf6f1d1909ddb4939e82a9ea66af920215c68a6a228bb33fd1db63e502c",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-chez-gilbert-cassis-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-chez-gilbert-cassis-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28296,
+            "sha256": "32f3371b62529452a18717ae192a25c24fe436b1fc7d6fccb4e82c69e5df9ccb",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "aix-patisserie-weibel-gm01",
+      "placeId": "patisserie-weibel",
+      "region": "aix",
+      "title": "Maison Weibel — Google Maps",
+      "titleKo": "Pâtisserie Weibel",
+      "description": "2 Rue Chabrier, 13100 Aix-en-Provence",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Maison+Weibel/@43.5292791,5.4484966,17z/data=!3m1!4b1!4m6!3m5!1s0x12c98dbd0388a2d3:0x694cc6018ff1a1b0!8m2!3d43.5292791!4d5.4484966!16s%2Fg%2F1vk482k6?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlQ31u5nWp7Yow4sdRNI44lJHsahXh5vCPAtyFj5tNGn8WEtGl_cu4MVmipXhhzIQPF89HhHPJt51-_BEF9-4FJTCt5Agu7xA7xzwTdngL8nu4ghg1dWcOtSYxGccnmLhcvKgbJFg=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Pâtisserie Weibel",
+        "resolvedName": "Maison Weibel",
+        "address": "2 Rue Chabrier, 13100 Aix-en-Provence",
+        "placeKey": "0x12c98dbd0388a2d3:0x694cc6018ff1a1b0",
+        "mapsUrl": "https://www.google.com/maps/place/Maison+Weibel/@43.5292791,5.4484966,17z/data=!3m1!4b1!4m6!3m5!1s0x12c98dbd0388a2d3:0x694cc6018ff1a1b0!8m2!3d43.5292791!4d5.4484966!16s%2Fg%2F1vk482k6?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1200,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/aix-patisserie-weibel-gm01.jpg",
+      "originalSha256": "55216fc8d135018456e4cf66f89469918c7bcbfac640a331646bb79a79e0f433",
+      "originalBytes": 335339,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/aix.html",
+        "places/patisserie-weibel.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "엑상프로방스의 칼리송 파티세리 Maison Weibel",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/aix-patisserie-weibel-gm01-content-1200.webp",
+            "sitePath": "assets/images/content/aix-patisserie-weibel-gm01-content-1200.webp",
+            "width": 1200,
+            "height": 1200,
+            "bytes": 140680,
+            "sha256": "345ebb0c91a7f10ecc041f6b70c25b3f55ccebf11dfb5793efd75cbb374a4b07",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/aix-patisserie-weibel-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/aix-patisserie-weibel-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 17922,
+            "sha256": "7776a818632fb2db9b4320e78b354adc5efefd5b5409a8a7862a63cef84d780b",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "avignon-fou-de-fafa-avignon-gm01",
+      "placeId": "fou-de-fafa-avignon",
+      "region": "avignon",
+      "title": "Restaurant Fou de Fafa — Google Maps",
+      "titleKo": "Fou de Fafa",
+      "description": "17 Rue des Trois Faucons, 84000 Avignon",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Restaurant+Fou+de+Fafa/@43.9458963,4.8077497,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5eb88f732d877:0xca6d824c5489f873!8m2!3d43.9458963!4d4.8077497!16s%2Fg%2F1tfh6qn4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmYNoxyPnpvcKurLoZjsgE501n7waXAgiIqYP_jRA4yU_bxJHXuE2spvBKd5UOmwJqC3BIIDd_uymg2dFLYE0YK75w0cjuc-RK5-b9Mr77FCZyVquDn9gms62iwVnUX0zhBaHrj=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Fou de Fafa",
+        "resolvedName": "Restaurant Fou de Fafa",
+        "address": "17 Rue des Trois Faucons, 84000 Avignon",
+        "placeKey": "0x12b5eb88f732d877:0xca6d824c5489f873",
+        "mapsUrl": "https://www.google.com/maps/place/Restaurant+Fou+de+Fafa/@43.9458963,4.8077497,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5eb88f732d877:0xca6d824c5489f873!8m2!3d43.9458963!4d4.8077497!16s%2Fg%2F1tfh6qn4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 949,
+      "originalHeight": 1076,
+      "originalPath": "source/ASSETS/photos/originals/avignon-fou-de-fafa-avignon-gm01.jpg",
+      "originalSha256": "00389eb20874b58e497393d3c18c2621944a201999c77a7b44beaed8c5ddc712",
+      "originalBytes": 165904,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/avignon.html",
+        "places/fou-de-fafa-avignon.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "아비뇽 구시가지의 비스트로 Fou de Fafa",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-fou-de-fafa-avignon-gm01-content-949.webp",
+            "sitePath": "assets/images/content/avignon-fou-de-fafa-avignon-gm01-content-949.webp",
+            "width": 949,
+            "height": 1076,
+            "bytes": 82316,
+            "sha256": "a3ee9d4b16bf7fbd9881e5a436fc78db4718afc68c9eb69235a6a0f750cecfb6",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-fou-de-fafa-avignon-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-fou-de-fafa-avignon-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 14716,
+            "sha256": "b1769ab913b05cc146ac3201e3a8e0b12b328258ac1136b03dfbdbdc53263234",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "avignon-le-gibolin-arles-gm01",
+      "placeId": "le-gibolin-arles",
+      "region": "avignon",
+      "title": "Le Gibolin — Google Maps",
+      "titleKo": "Le Gibolin",
+      "description": "13 Rue des Porcelets, 13200 Arles",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Le+Gibolin/@43.6769539,4.6241448,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6764020e38c69:0x5f9751a56324d547!8m2!3d43.6769539!4d4.6241448!16s%2Fg%2F1tcthznr?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk0QZLwxcWvADL9rFV4aS6RkKa1RmnnVqzJlI70ZBt_HEtUNVAAvh-JLQ2fMxyjPH-nCxCRBLkdrAHU0a4UAAI39osW65XSfhnixr2IGFE-2SL7aPhhtXddrE_DuY9fBGhmH0bdfRq296xw=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Le Gibolin",
+        "resolvedName": "Le Gibolin",
+        "address": "13 Rue des Porcelets, 13200 Arles",
+        "placeKey": "0x12b6764020e38c69:0x5f9751a56324d547",
+        "mapsUrl": "https://www.google.com/maps/place/Le+Gibolin/@43.6769539,4.6241448,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6764020e38c69:0x5f9751a56324d547!8m2!3d43.6769539!4d4.6241448!16s%2Fg%2F1tcthznr?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 800,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/avignon-le-gibolin-arles-gm01.jpg",
+      "originalSha256": "93a5e560764d7b093e6100d7e6fcb3f4dd76a9b3ed5a690683dd6af1f33f65f6",
+      "originalBytes": 202324,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/avignon.html",
+        "places/le-gibolin-arles.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "아를 로케트 지구의 와인 비스트로 Le Gibolin",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-le-gibolin-arles-gm01-content-800.webp",
+            "sitePath": "assets/images/content/avignon-le-gibolin-arles-gm01-content-800.webp",
+            "width": 800,
+            "height": 1200,
+            "bytes": 72940,
+            "sha256": "817393db2081fe900471877a73fcc5563efbad5a2bf7ef65616222c61d1b51ca",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-le-gibolin-arles-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-le-gibolin-arles-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 14978,
+            "sha256": "c84c33ca596c3cb0e1874611260d08f68ca5155652fb2de7d672656abddae162",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "avignon-les-cocottes-saint-louis-gm01",
+      "placeId": "les-cocottes-saint-louis",
+      "region": "avignon",
+      "title": "Les Cocottes Saint Louis — Google Maps",
+      "titleKo": "Les Cocottes Saint-Louis",
+      "description": "20 Rue Portail Boquier, 84000 Avignon",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Les+Cocottes+Saint+Louis/@43.9438175,4.8049565,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5ebcf70ef232d:0x9ff60928baa517e9!8m2!3d43.9438175!4d4.8049565!16s%2Fg%2F11c1qs8rd7?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlteK_ofIC9jqoNpUXWpErFHj5cYRccRR_kalFQj0jAZTO7uFTmj2UfvGq0zfeuB7SX37tc6zKqyNSfobijwvGKIgLghX-vnG6yNhdkm-tJT00Tqrn7FlWiyRlwAEgM4RBfQBOrNjwKbco=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Les Cocottes Saint-Louis",
+        "resolvedName": "Les Cocottes Saint Louis",
+        "address": "20 Rue Portail Boquier, 84000 Avignon",
+        "placeKey": "0x12b5ebcf70ef232d:0x9ff60928baa517e9",
+        "mapsUrl": "https://www.google.com/maps/place/Les+Cocottes+Saint+Louis/@43.9438175,4.8049565,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5ebcf70ef232d:0x9ff60928baa517e9!8m2!3d43.9438175!4d4.8049565!16s%2Fg%2F11c1qs8rd7?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1600,
+      "originalHeight": 720,
+      "originalPath": "source/ASSETS/photos/originals/avignon-les-cocottes-saint-louis-gm01.jpg",
+      "originalSha256": "093d4d73f0d2a24e03aa751efb3a95a6c7769e9dbd581968b19e07abc97ba098",
+      "originalBytes": 221286,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/avignon.html",
+        "places/les-cocottes-saint-louis.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "아비뇽 클로이트르 생루이의 Les Cocottes",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-les-cocottes-saint-louis-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-les-cocottes-saint-louis-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 576,
+            "bytes": 51204,
+            "sha256": "3648914b52a7d711c884757114127d74ed165ac98469bc509cd9eae2d5f8fdd5",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-les-cocottes-saint-louis-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-les-cocottes-saint-louis-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 11184,
+            "sha256": "351acce2158f813f73e7926fbc2c4d73306a5d88a5ad77f373d1fa8e913819c8",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "lyon-cafe-comptoir-abel-gm01",
+      "placeId": "cafe-comptoir-abel",
+      "region": "lyon",
+      "title": "Café Comptoir Abel — Google Maps",
+      "titleKo": "Café Comptoir Abel",
+      "description": "25 Rue Guynemer, 69002 Lyon",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Caf%C3%A9+Comptoir+Abel/@45.7540443,4.8258415,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b!8m2!3d45.7540443!4d4.8258415!16s%2Fg%2F1tf156qz?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmdxBbgRv-tIHD0GjmRjyD3keAgeSRxXJUp6Exf-q6u57dpUIoole00a3GnD-jNvaUbHpjbJZFt2IZarl_9pgwTAvzecB9mcNvu3t2-97Tiaord_GZyS1osnjarqF7py5qpsclL4SHp67QQ=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Café Comptoir Abel",
+        "resolvedName": "Café Comptoir Abel",
+        "address": "25 Rue Guynemer, 69002 Lyon",
+        "placeKey": "0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b",
+        "mapsUrl": "https://www.google.com/maps/place/Caf%C3%A9+Comptoir+Abel/@45.7540443,4.8258415,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b!8m2!3d45.7540443!4d4.8258415!16s%2Fg%2F1tf156qz?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/lyon-cafe-comptoir-abel-gm01.jpg",
+      "originalSha256": "67bd38865279d28bf563e2993326ad8b3366e487f5218f7422ae3d1e7c3a5546",
+      "originalBytes": 181466,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/lyon.html",
+        "places/cafe-comptoir-abel.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "리옹의 전통 부숑 Café Comptoir Abel",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-cafe-comptoir-abel-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/lyon-cafe-comptoir-abel-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 46888,
+            "sha256": "c8cd0e61278e20c6e7757e153d9c6ad5fb93feb65d95972129bb8d05350c2772",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-cafe-comptoir-abel-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-cafe-comptoir-abel-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 12212,
+            "sha256": "e7cfc09a1d61e05e780dbdb39c2bc247b3178237f3d39a69f91190ddb9d0d2f8",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "lyon-chez-mamie-lise-gm01",
+      "placeId": "chez-mamie-lise",
+      "region": "lyon",
+      "title": "Chez Mamie Lise — Google Maps",
+      "titleKo": "Chez Mamie Lise",
+      "description": "11 Rue Grenette, 74000 Annecy",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Chez+Mamie+Lise/@45.8991226,6.1272541,17z/data=!3m1!4b1!4m6!3m5!1s0x478b8ffbb662d6d9:0xf646117aa82bf542!8m2!3d45.8991226!4d6.1272541!16s%2Fg%2F1tksm7ny?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmtSQVN9eTjS-dD4QZQhjnhhVWbywn4egNo_TljXss48ppUrGne1rOOvomZxaSeWCPptr2GJRduG9jkKAe_rpKDYAKCRWgUoy25LJndcX2raBSWMg2I-fBP5WGwpoSC8_2PSdqLz2-RJhU=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Chez Mamie Lise",
+        "resolvedName": "Chez Mamie Lise",
+        "address": "11 Rue Grenette, 74000 Annecy",
+        "placeKey": "0x478b8ffbb662d6d9:0xf646117aa82bf542",
+        "mapsUrl": "https://www.google.com/maps/place/Chez+Mamie+Lise/@45.8991226,6.1272541,17z/data=!3m1!4b1!4m6!3m5!1s0x478b8ffbb662d6d9:0xf646117aa82bf542!8m2!3d45.8991226!4d6.1272541!16s%2Fg%2F1tksm7ny?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 900,
+      "originalHeight": 600,
+      "originalPath": "source/ASSETS/photos/originals/lyon-chez-mamie-lise-gm01.jpg",
+      "originalSha256": "65dfd407ab48d41cb547d1efd046eb75e98f507ec4ce7c848a7f5da39aaddc61",
+      "originalBytes": 155839,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/lyon.html",
+        "places/chez-mamie-lise.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "안시 구시가지의 사부아 요리 식당 Chez Mamie Lise",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/lyon-chez-mamie-lise-gm01-content-900.webp",
+            "sitePath": "assets/images/content/lyon-chez-mamie-lise-gm01-content-900.webp",
+            "width": 900,
+            "height": 600,
+            "bytes": 84178,
+            "sha256": "84b382d13eba2b57f5a9b17851e38a9870f4849c99794358c723de0bfc3cb1f3",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/lyon-chez-mamie-lise-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/lyon-chez-mamie-lise-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 30860,
+            "sha256": "622256f6ff63b4a643eacaaff221ccd1601a180b531db6e7a1b600e279ad7dd3",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-boulangerie-pichard-gm01",
+      "placeId": "boulangerie-pichard",
+      "region": "paris",
+      "title": "La Maison Pichard — Google Maps",
+      "titleKo": "Boulangerie Pichard",
+      "description": "88 Rue Cambronne, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/La+Maison+Pichard/@48.8422834,2.3027672,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6703c1ec7236d:0xd973b0d4ffa25fa4!8m2!3d48.8422834!4d2.3027672!16s%2Fg%2F1tfcsjrc?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm8lUu_OfJQw0e7Tu8OPtws8fVDOM2BwDW1usNGnPZLMtv9Spj95yuWaECUeZAG_w1Fbiys80Z0onFYnmP_IRdgc4WIAiD-2n-1PIH6_S65YR_7wGSuEFwzWbMWpGBc0aqrnGI9=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Boulangerie Pichard",
+        "resolvedName": "La Maison Pichard",
+        "address": "88 Rue Cambronne, 75015 Paris",
+        "placeKey": "0x47e6703c1ec7236d:0xd973b0d4ffa25fa4",
+        "mapsUrl": "https://www.google.com/maps/place/La+Maison+Pichard/@48.8422834,2.3027672,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6703c1ec7236d:0xd973b0d4ffa25fa4!8m2!3d48.8422834!4d2.3027672!16s%2Fg%2F1tfcsjrc?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 900,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/paris-boulangerie-pichard-gm01.jpg",
+      "originalSha256": "bf1564ba0bc53deea38bc9bcb73d7e207c08f5b58e12f7cd83ca137877d6c751",
+      "originalBytes": 302711,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/boulangerie-pichard.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 캉브론 거리의 La Maison Pichard 빵집",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-boulangerie-pichard-gm01-content-900.webp",
+            "sitePath": "assets/images/content/paris-boulangerie-pichard-gm01-content-900.webp",
+            "width": 900,
+            "height": 1200,
+            "bytes": 146376,
+            "sha256": "87da94f9490a0e3abf0cb3493915d09011fc98d3098396a1164fe015772a80a7",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-boulangerie-pichard-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-boulangerie-pichard-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 20460,
+            "sha256": "31922d80d9c503782198483f4ef0166e74ec2d919a39ef8cb2627adf1f62c77a",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-le-grand-pan-gm01",
+      "placeId": "le-grand-pan",
+      "region": "paris",
+      "title": "Le Grand Pan — Google Maps",
+      "titleKo": "Le Grand Pan",
+      "description": "20 Rue Rosenwald, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Le+Grand+Pan/@48.8330814,2.3057029,17z/data=!3m1!4b1!4m6!3m5!1s0x47e670468b32e705:0xfef30b10e3f3dbfe!8m2!3d48.8330814!4d2.3057029!16s%2Fg%2F1vxcvqxn?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmaAbf-cf_FjMU-vcviFouw9vE5siho1DOiyub3jBKDX1h6aBbUbCp0FovZmyJD78M0ncU7BhiRw-nuteyK-IDH2bXoRwpbpTCu0bXsy1IeUlTSYmwdQ0W7cuE5_9ec_fkxEPyr=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Le Grand Pan",
+        "resolvedName": "Le Grand Pan",
+        "address": "20 Rue Rosenwald, 75015 Paris",
+        "placeKey": "0x47e670468b32e705:0xfef30b10e3f3dbfe",
+        "mapsUrl": "https://www.google.com/maps/place/Le+Grand+Pan/@48.8330814,2.3057029,17z/data=!3m1!4b1!4m6!3m5!1s0x47e670468b32e705:0xfef30b10e3f3dbfe!8m2!3d48.8330814!4d2.3057029!16s%2Fg%2F1vxcvqxn?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 800,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/paris-le-grand-pan-gm01.jpg",
+      "originalSha256": "64190390e49e0aefd5b894955dad51a6ae3328b40091aca3ebe8e65d0018bf14",
+      "originalBytes": 296190,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/le-grand-pan.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구의 비스트로 Le Grand Pan",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-le-grand-pan-gm01-content-800.webp",
+            "sitePath": "assets/images/content/paris-le-grand-pan-gm01-content-800.webp",
+            "width": 800,
+            "height": 1200,
+            "bytes": 144066,
+            "sha256": "e111fdd015d0ca46beafde80ffe27a8d06b6bc9d88bdd48275b9a6bbd2713802",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-le-grand-pan-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-le-grand-pan-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21088,
+            "sha256": "c4379455f183e260445f4916df392c7681c2b4ab0cc9b9e6acbc14e7b7623bfc",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "barcelona-bodega-joan-gm01",
+      "placeId": "bodega-joan",
+      "region": "barcelona",
+      "title": "Bodega Joan — Google Maps",
+      "titleKo": "Bodega Joan",
+      "description": "Carrer del Rosselló, 164, 08036 Barcelona",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Bodega+Joan/@41.391701,2.155481,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a290102a89e5:0x9427746fb704d8ca!8m2!3d41.391701!4d2.155481!16s%2Fg%2F1tgv8w1l?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlB4w9li1VRoUzmci6Jqd-VGd_kBQ_7XdhdbCsrEfVTBXofV0--AD3l6qnfNOC-JkYIa3rTwOwQLXBxHibZ_rIkpjwrLshbbp3Y7qflehhRWt1uboJufzDBp5Fcmey9eqGm_bI=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Bodega Joan",
+        "resolvedName": "Bodega Joan",
+        "address": "Carrer del Rosselló, 164, 08036 Barcelona",
+        "placeKey": "0x12a4a290102a89e5:0x9427746fb704d8ca",
+        "mapsUrl": "https://www.google.com/maps/place/Bodega+Joan/@41.391701,2.155481,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a290102a89e5:0x9427746fb704d8ca!8m2!3d41.391701!4d2.155481!16s%2Fg%2F1tgv8w1l?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-22",
+      "originalWidth": 1600,
+      "originalHeight": 1067,
+      "originalPath": "source/ASSETS/photos/originals/barcelona-bodega-joan-gm01.jpg",
+      "originalSha256": "282d7bf88386bf7115e1df531872063b7f4e815c69d8ccc46cb5e002417f7186",
+      "originalBytes": 327478,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/barcelona.html",
+        "places/bodega-joan.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "에이샴플레의 전통 보데가 Bodega Joan 실내",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/barcelona-bodega-joan-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/barcelona-bodega-joan-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 854,
+            "bytes": 90738,
+            "sha256": "2eccbdc1a3f885d1b1213217d2f14dc112c915e1ee79857e71c915193c078579",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-bodega-joan-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-bodega-joan-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19456,
+            "sha256": "7590c023f993d2ae10bbe2c9e0f204bc63860283b073e18ce3fad1e6c0736d13",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
     }
   ],
   "processedAt": "2026-08-05"

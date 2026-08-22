@@ -211,7 +211,12 @@ FOOD_PHOTO_STATUS = ROOT / "data" / "images" / "food-photo-status.json"
 
 
 def photo_status() -> dict[str, dict]:
-    """사진 상태 판정. 없다는 것과 '넣으면 안 된다' 는 다른 상태다."""
+    """사진 상태 판정.
+
+    VALID_GOOGLE_MAPS / VALID_EXISTING / NO_IMAGE / WRONG_BUSINESS.
+    'NO_IMAGE' 는 실패가 아니라 **조사를 마친 정상 종료**다 — 신원이
+    확인되지 않았다는 사실이 근거와 함께 적혀 있다. 잘못된 사진보다 낫다.
+    """
     if not FOOD_PHOTO_STATUS.exists():
         return {}
     return json.loads(FOOD_PHOTO_STATUS.read_text(encoding="utf-8"))["places"]

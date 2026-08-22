@@ -405,7 +405,7 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 
 | 식당 | 성격 | 추천 주문·이용법 | 계획가격/인 | 예약 |
 |---|---|---|---:|--- |
-| **Fou de Fafa** | 작은 창작 비스트로 · 휴무 {{fact:fou-de-fafa.closed}} | 계절메뉴에서 생선·오리·채소요리 2–3개 공유 | €35–55 | 강권 |
+| **Fou de Fafa** | 작은 창작 비스트로 · 휴무 {{fact:fou-de-fafa-avignon.closed}} | 계절메뉴에서 생선·오리·채소요리 2–3개 공유 | €35–55 | 강권 |
 | **Le Goût du Jour** | 정제된 지역재료 코스 · 휴무 {{fact:le-gout-du-jour.closed}} | Inspiration 또는 dégustation, 특별저녁 1회 | €55–95 | 강권 |
 | **Restaurant SEVIN** | Palais 인근 고급식 | 2026 계절메뉴, 토마토·남프랑스 재료 중심 | €90–160+ | 필수 |
 | **Les Cocottes Saint-Louis** | 수도원정원 캐주얼 프렌치 | 2026 메뉴 €33–38, rouget·ravioles·채소 | €35–55 | 권장 |

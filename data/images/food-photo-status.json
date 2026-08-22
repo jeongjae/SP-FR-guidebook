@@ -1,112 +1,307 @@
 {
  "$comment": [
-  "식당·카페 사진 상태. 2026-08-22 Wikimedia Commons 검색 API 로 22곳을 훑고",
-  "결과를 사람이 하나씩 읽어 판정했다.",
+  "식당·카페 사진 상태 — FCR-03 (2026-08-22).",
   "",
-  "verified                 사진 설명이 그 업소를 가리킨다 — 카탈로그에 있다",
-  "missing-no-candidate     재사용 가능한 후보가 아예 없다",
-  "missing-wrong-entity-risk 이름이 겹치는 결과는 있으나 전부 다른 대상이다.",
-  "                         넣으면 현장에서 엉뚱한 가게를 찾게 된다 — 비워 둔다",
-  "2026-08-22 2차 조사 — 상호명에 도시명을 붙여 다시 훑었다. Casa Marieta 한 곳이 새로 확인됐고, 나머지는 결과가 없거나 다른 대상이었다."
+  "정책: Google Maps 해당 업소 사진 → 공식 홈페이지·SNS → 기존 검증 이미지 → 없음.",
+  "",
+  "VALID_GOOGLE_MAPS  Maps 에서 상호+번지·도로명이 모두 맞은 뒤 받은 사진",
+  "VALID_EXISTING     기존 검증 이미지(Commons)를 그대로 쓴다",
+  "NO_IMAGE           신원이 확인되지 않아 비워 둔다 — 정상 종료 상태",
+  "WRONG_BUSINESS     다른 업소 사진 — 발견 즉시 제거 (현재 0건)",
+  "",
+  "Maps 사진은 자유 라이선스가 아니다. 카탈로그에 google-maps-ugc 로 적고",
+  "출처 URL·업소 신원(상호·주소·placeKey)을 함께 남긴다.",
+  "",
+  "신원은 두 가지를 함께 본다 — 상호가 겹치는가, 우리가 아는 번지·도로명이",
+  "그 장소 페이지에 실제로 있는가. 둘 중 하나라도 어긋나면 받지 않는다."
  ],
- "searchedAt": "2026-08-22 (1차 상호명 · 2차 상호명+도시)",
+ "searchedAt": "2026-08-22",
  "source": "Wikimedia Commons search API",
  "places": {
   "bar-canete": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "barcelona",
+   "businessIdentity": {
+    "name": "Bar Cañete",
+    "resolvedName": "Bar Cañete",
+    "address": "Carrer de la Unió, 17, 08001 Barcelona",
+    "placeKey": "0x12a4a258412bcb19:0x1c77b2f8f4cdfb63"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Bar+Ca%C3%B1ete/@41.3791528,2.173125,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a258412bcb19:0x1c77b2f8f4cdfb63!8m2!3d41.3791528!4d2.173125!16s%2Fg%2F1tf89fdb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "barcelona-bar-canete-gm01",
+   "checkedAt": "2026-08-22"
   },
   "bodega-joan": {
-   "status": "missing-wrong-entity-risk",
-   "why": "2차 질의에서도 결과가 전부 다른 대상이다 (Bodega Joan → 1887년 바르셀로나 상점 사진, Le Grand Pan → 19세기 신문 판화). 넣으면 엉뚱한 곳을 찾게 된다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "barcelona",
+   "businessIdentity": {
+    "name": "Bodega Joan",
+    "resolvedName": "Bodega Joan",
+    "address": "Carrer del Rosselló, 164, 08036 Barcelona",
+    "placeKey": "0x12a4a290102a89e5:0x9427746fb704d8ca"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Bodega+Joan/@41.391701,2.155481,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a290102a89e5:0x9427746fb704d8ca!8m2!3d41.391701!4d2.155481!16s%2Fg%2F1tgv8w1l?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "barcelona-bodega-joan-gm01",
+   "checkedAt": "2026-08-22"
   },
   "la-paradeta-sagrada-familia": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "NO_IMAGE",
+   "region": "barcelona",
+   "why": "Google Maps 가 이 주소에서 다른 상호(?)를 돌려준다 — 같은 업소로 확인되지 않아 사진을 쓰지 않는다",
+   "mapsUrl": null,
+   "priorFindings": "공식 홈페이지 재사용 불가 · Commons 후보 없음(질의 4회)",
+   "checkedAt": "2026-08-22"
   },
   "la-zorra": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "barcelona",
+   "businessIdentity": {
+    "name": "La Zorra",
+    "resolvedName": "Restaurant LaZorra",
+    "address": "Passeig Marítim, 1-3, 08870 Sitges",
+    "placeKey": "0x12a3804e4a3a4533:0x19c1f170c20a8781"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Restaurant+LaZorra/@41.2338454,1.8036675,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3804e4a3a4533:0x19c1f170c20a8781!8m2!3d41.2338454!4d1.8036675!16s%2Fg%2F11c52p0v80?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "barcelona-la-zorra-gm01",
+   "checkedAt": "2026-08-22"
   },
   "mercat-concepcio": {
-   "status": "verified",
-   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+   "status": "VALID_EXISTING",
+   "region": "barcelona",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:066_Mercat_de_la_Concepci%C3%B3,_c._Arag%C3%B3_311_bis_(Barcelona),_interior.jpg",
+   "imageId": "barcelona-mercat-concepcio-01",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다",
+   "checkedAt": "2026-08-22"
   },
   "casa-marieta": {
-   "status": "verified",
-   "why": "Commons 분류 'Restaurants in the province of Girona' 로 신원 확인 — 2차 질의('Casa Marieta Girona')에서 나왔다"
+   "status": "VALID_EXISTING",
+   "region": "girona",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Comedor_gran1.jpg",
+   "imageId": "girona-casa-marieta-01",
+   "why": "Commons 분류 'Restaurants in the province of Girona' 로 신원 확인 — 2차 질의('Casa Marieta Girona')에서 나왔다",
+   "checkedAt": "2026-08-22"
   },
   "mercat-del-lleo": {
-   "status": "verified",
-   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+   "status": "VALID_EXISTING",
+   "region": "girona",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girona's_fresh_food_market,_the_Mercat_del_Lleó_(53700437309).jpg",
+   "imageId": "girona-mercat-del-lleo-01",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다",
+   "checkedAt": "2026-08-22"
   },
   "le-figuier-de-saint-esprit": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "nice",
+   "businessIdentity": {
+    "name": "Le Figuier de Saint-Esprit",
+    "resolvedName": "Le Figuier de Saint-Esprit",
+    "address": "14 Rue Saint-Esprit, 06600 Antibes",
+    "placeKey": "0x12cdd57113baf7d1:0x98a423300ed7c116"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Le+Figuier+de+Saint-Esprit/@43.58175,7.1287525,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdd57113baf7d1:0x98a423300ed7c116!8m2!3d43.58175!4d7.1287525!16s%2Fg%2F1wnzbxh_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "nice-le-figuier-de-saint-esprit-gm01",
+   "checkedAt": "2026-08-22"
   },
   "restaurant-beatrice": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "nice",
+   "businessIdentity": {
+    "name": "Restaurant & Salon de Thé Béatrice",
+    "resolvedName": "Salon de thé - restaurant",
+    "address": "1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",
+    "placeKey": "0x12cddb38f0cd9ed7:0x36b503ea1b718b6a"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Salon+de+th%C3%A9+-+restaurant/@43.6966062,7.3284499,17z/data=!3m1!4b1!4m6!3m5!1s0x12cddb38f0cd9ed7:0x36b503ea1b718b6a!8m2!3d43.6966062!4d7.3284499!16s%2Fg%2F11fy1j_pyy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "nice-restaurant-beatrice-gm01",
+   "checkedAt": "2026-08-22"
   },
   "chez-gilbert-cassis": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "aix",
+   "businessIdentity": {
+    "name": "Chez Gilbert",
+    "resolvedName": "Chez Gilbert",
+    "address": "19 Quai des Baux, 13260 Cassis",
+    "placeKey": "0x12c9ba94cc515ca5:0x7928b7fbc6d86882"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Chez+Gilbert/@43.2148438,5.537375,17z/data=!3m1!4b1!4m6!3m5!1s0x12c9ba94cc515ca5:0x7928b7fbc6d86882!8m2!3d43.2148438!4d5.537375!16s%2Fg%2F1tnmc45g?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "aix-chez-gilbert-cassis-gm01",
+   "checkedAt": "2026-08-22"
   },
   "patisserie-weibel": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "aix",
+   "businessIdentity": {
+    "name": "Pâtisserie Weibel",
+    "resolvedName": "Maison Weibel",
+    "address": "2 Rue Chabrier, 13100 Aix-en-Provence",
+    "placeKey": "0x12c98dbd0388a2d3:0x694cc6018ff1a1b0"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Maison+Weibel/@43.5292791,5.4484966,17z/data=!3m1!4b1!4m6!3m5!1s0x12c98dbd0388a2d3:0x694cc6018ff1a1b0!8m2!3d43.5292791!4d5.4484966!16s%2Fg%2F1vk482k6?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "aix-patisserie-weibel-gm01",
+   "checkedAt": "2026-08-22"
   },
   "fou-de-fafa-avignon": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "avignon",
+   "businessIdentity": {
+    "name": "Fou de Fafa",
+    "resolvedName": "Restaurant Fou de Fafa",
+    "address": "17 Rue des Trois Faucons, 84000 Avignon",
+    "placeKey": "0x12b5eb88f732d877:0xca6d824c5489f873"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Restaurant+Fou+de+Fafa/@43.9458963,4.8077497,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5eb88f732d877:0xca6d824c5489f873!8m2!3d43.9458963!4d4.8077497!16s%2Fg%2F1tfh6qn4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "avignon-fou-de-fafa-avignon-gm01",
+   "checkedAt": "2026-08-22"
   },
   "le-gibolin-arles": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "avignon",
+   "businessIdentity": {
+    "name": "Le Gibolin",
+    "resolvedName": "Le Gibolin",
+    "address": "13 Rue des Porcelets, 13200 Arles",
+    "placeKey": "0x12b6764020e38c69:0x5f9751a56324d547"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Le+Gibolin/@43.6769539,4.6241448,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6764020e38c69:0x5f9751a56324d547!8m2!3d43.6769539!4d4.6241448!16s%2Fg%2F1tcthznr?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "avignon-le-gibolin-arles-gm01",
+   "checkedAt": "2026-08-22"
   },
   "les-cocottes-saint-louis": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
-  },
-  "cafe-comptoir-abel": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
-  },
-  "chez-mamie-lise": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
-  },
-  "daniel-et-denise": {
-   "status": "verified",
-   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
-  },
-  "bouillon-chartier-montparnasse": {
-   "status": "verified",
-   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
-  },
-  "boulangerie-pichard": {
-   "status": "missing-no-candidate",
-   "why": "1차(상호명)·2차(상호명+도시) 질의 모두 이 업소를 찍은 결과가 없다"
-  },
-  "cafe-du-commerce": {
-   "status": "verified",
-   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
-  },
-  "le-grand-pan": {
-   "status": "missing-wrong-entity-risk",
-   "why": "2차 질의에서도 결과가 전부 다른 대상이다 (Bodega Joan → 1887년 바르셀로나 상점 사진, Le Grand Pan → 19세기 신문 판화). 넣으면 엉뚱한 곳을 찾게 된다"
-  },
-  "marche-convention": {
-   "status": "verified",
-   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다"
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "avignon",
+   "businessIdentity": {
+    "name": "Les Cocottes Saint-Louis",
+    "resolvedName": "Les Cocottes Saint Louis",
+    "address": "20 Rue Portail Boquier, 84000 Avignon",
+    "placeKey": "0x12b5ebcf70ef232d:0x9ff60928baa517e9"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Les+Cocottes+Saint+Louis/@43.9438175,4.8049565,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5ebcf70ef232d:0x9ff60928baa517e9!8m2!3d43.9438175!4d4.8049565!16s%2Fg%2F11c1qs8rd7?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "avignon-les-cocottes-saint-louis-gm01",
+   "checkedAt": "2026-08-22"
   },
   "les-halles": {
-   "status": "verified",
-   "why": "FOOD_HALL 로 재분류하며 들어왔다. 기존 사진(레 알 수직 정원)이 그 시장을 찍은 것이다"
+   "status": "VALID_EXISTING",
+   "region": "avignon",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:March%C3%A9_sur_la_place_Pie_devant_les_Halles_d%27Avignon.jpg",
+   "imageId": "avignon-halles-01",
+   "why": "FOOD_HALL 로 재분류하며 들어왔다. 기존 사진(레 알 수직 정원)이 그 시장을 찍은 것이다",
+   "checkedAt": "2026-08-22"
+  },
+  "cafe-comptoir-abel": {
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "lyon",
+   "businessIdentity": {
+    "name": "Café Comptoir Abel",
+    "resolvedName": "Café Comptoir Abel",
+    "address": "25 Rue Guynemer, 69002 Lyon",
+    "placeKey": "0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Caf%C3%A9+Comptoir+Abel/@45.7540443,4.8258415,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b!8m2!3d45.7540443!4d4.8258415!16s%2Fg%2F1tf156qz?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "lyon-cafe-comptoir-abel-gm01",
+   "checkedAt": "2026-08-22"
+  },
+  "chez-mamie-lise": {
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "lyon",
+   "businessIdentity": {
+    "name": "Chez Mamie Lise",
+    "resolvedName": "Chez Mamie Lise",
+    "address": "11 Rue Grenette, 74000 Annecy",
+    "placeKey": "0x478b8ffbb662d6d9:0xf646117aa82bf542"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Chez+Mamie+Lise/@45.8991226,6.1272541,17z/data=!3m1!4b1!4m6!3m5!1s0x478b8ffbb662d6d9:0xf646117aa82bf542!8m2!3d45.8991226!4d6.1272541!16s%2Fg%2F1tksm7ny?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "lyon-chez-mamie-lise-gm01",
+   "checkedAt": "2026-08-22"
+  },
+  "daniel-et-denise": {
+   "status": "VALID_EXISTING",
+   "region": "lyon",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lyon_3e_-_Rue_de_Créqui_-_Restaurant_Daniel_&_Denise_-_En_configuration_Covid-19.jpg",
+   "imageId": "lyon-daniel-et-denise-01",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다",
+   "checkedAt": "2026-08-22"
   },
   "halles-de-lyon-paul-bocuse": {
-   "status": "verified",
-   "why": "FOOD_HALL 로 재분류하며 들어왔다. 기존 사진이 그 시장을 찍은 것이다"
+   "status": "VALID_EXISTING",
+   "region": "lyon",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fromagerie_Halles_de_Lyon-Paul_Bocuse_en_2017_%C3%A0_Lyon.jpg",
+   "imageId": "lyon-halles-bocuse-01",
+   "why": "FOOD_HALL 로 재분류하며 들어왔다. 기존 사진이 그 시장을 찍은 것이다",
+   "checkedAt": "2026-08-22"
+  },
+  "bouillon-chartier-montparnasse": {
+   "status": "VALID_EXISTING",
+   "region": "paris",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bouillon_Chartier_Montparnasse.jpg",
+   "imageId": "paris-bouillon-chartier-montparnasse-01",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다",
+   "checkedAt": "2026-08-22"
+  },
+  "boulangerie-pichard": {
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "paris",
+   "businessIdentity": {
+    "name": "Boulangerie Pichard",
+    "resolvedName": "La Maison Pichard",
+    "address": "88 Rue Cambronne, 75015 Paris",
+    "placeKey": "0x47e6703c1ec7236d:0xd973b0d4ffa25fa4"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/La+Maison+Pichard/@48.8422834,2.3027672,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6703c1ec7236d:0xd973b0d4ffa25fa4!8m2!3d48.8422834!4d2.3027672!16s%2Fg%2F1tfcsjrc?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "paris-boulangerie-pichard-gm01",
+   "checkedAt": "2026-08-22"
+  },
+  "cafe-du-commerce": {
+   "status": "VALID_EXISTING",
+   "region": "paris",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Café_du_Commerce,_Paris_24_September_2016_001.jpg",
+   "imageId": "paris-cafe-du-commerce-01",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다",
+   "checkedAt": "2026-08-22"
+  },
+  "le-grand-pan": {
+   "status": "VALID_GOOGLE_MAPS",
+   "region": "paris",
+   "businessIdentity": {
+    "name": "Le Grand Pan",
+    "resolvedName": "Le Grand Pan",
+    "address": "20 Rue Rosenwald, 75015 Paris",
+    "placeKey": "0x47e670468b32e705:0xfef30b10e3f3dbfe"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Le+Grand+Pan/@48.8330814,2.3057029,17z/data=!3m1!4b1!4m6!3m5!1s0x47e670468b32e705:0xfef30b10e3f3dbfe!8m2!3d48.8330814!4d2.3057029!16s%2Fg%2F1vxcvqxn?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "paris-le-grand-pan-gm01",
+   "checkedAt": "2026-08-22"
+  },
+  "marche-convention": {
+   "status": "VALID_EXISTING",
+   "region": "paris",
+   "photoSource": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marché_rue_de_la_Convention_1,_Paris_May_2011.jpg",
+   "imageId": "paris-marche-convention-01",
+   "why": "카탈로그의 사진 설명이 이 업소·이 장소를 가리킨다",
+   "checkedAt": "2026-08-22"
   }
  }
 }

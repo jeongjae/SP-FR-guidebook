@@ -485,7 +485,7 @@ Catalan 시장에서 들여온 생선·해산물과 제철 채소를 강조하�
 
 #### 15.1 Mercat de la Concepció — 실제 장보기 1순위
 
-> 📍 {{fact:mercat-de-la-concepcio.address}} · 🕐 {{fact:mercat-de-la-concepcio.hours}} · 휴무 {{fact:mercat-de-la-concepcio.closed}} · {{fact:mercat-de-la-concepcio.booking}}
+> 📍 {{fact:mercat-concepcio.address}} · 🕐 {{fact:mercat-concepcio.hours}} · 휴무 {{fact:mercat-concepcio.closed}} · {{fact:mercat-concepcio.booking}}
 
 > 가격은 **계획가(2026-08 조사)** — 메뉴·세트 구성과 요금은 현장에서 달라질 수 있다. 확정가는 방문 당일 확인한다.
 
