@@ -404,7 +404,8 @@ Places·Food·Local Life·Transport 밀도 균일. 접이식 8개가 모두 닫�
 ## 18. Git
 
 - **브랜치** `fix/barcelona-region-reconsolidation` (base `origin/main` `41d888fd`)
-- **커밋 / PR** — 아래 커밋 참조
+- **커밋** `95a7505a`
+- **PR** [#208](https://github.com/jeongjae/SP-FR-guidebook/pull/208)
 - **변경 파일** 12개 (신규 4 · 수정 8) + 재생성된 audit 4개
 
 ---
