@@ -673,6 +673,23 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   scroll-snap-align: start;
 }
 .tabs a[aria-current="page"] { background: var(--accent); color: #FFFFFF; }
+/* 날짜 탭 — 날짜가 primary, Day 번호가 보조. 줄바꿈은 금지다(가로로만 흐른다). */
+.tabs a.tab-stack {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-height: 44px;
+  padding: var(--s1) var(--s3);
+  line-height: 1.15;
+}
+.tabs a.tab-stack .tab-main { font-size: var(--t-label); white-space: nowrap; }
+.tabs a.tab-stack .tab-sub {
+  font-size: 0.6875rem;              /* 11 — 야외 하한 */
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0.75;
+}
 [data-region] { scroll-margin-top: 6.5rem; }
 
 /* ================= FilterChip ================= */

@@ -417,4 +417,21 @@
       /* fallback gracefully */
     }
   }
+
+  // 오늘 보고 있는 날 탭을 화면 안으로. 43일이 가로로 흐르므로 그냥 두면
+  // Paris 후반 날짜는 스트립 밖에서 시작한다 — 현장에서 안 보이는 것과 같다.
+  (function centerCurrentTab() {
+    try {
+      var strip = document.querySelector('nav.tabs');
+      if (!strip) return;
+      var cur = strip.querySelector('a[aria-current="page"]');
+      if (!cur) return;
+      if (strip.scrollWidth <= strip.clientWidth) return;
+      var want = cur.offsetLeft - (strip.clientWidth - cur.offsetWidth) / 2;
+      var max = strip.scrollWidth - strip.clientWidth;
+      strip.scrollLeft = Math.max(0, Math.min(want, max));
+    } catch (err) {
+      /* 스크롤 위치는 부가 기능이다 — 실패해도 링크는 그대로다 */
+    }
+  })();
 })();

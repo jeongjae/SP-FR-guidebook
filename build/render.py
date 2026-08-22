@@ -925,20 +925,28 @@ def build_day(d: Day, trip: Trip) -> str:
         parts.append(f'<div class="stack">{blocks}</div>')
 
     # --- 이전/다음 --------------------------------------------------------
+    # 라벨은 날짜다 — 현장에서 찾는 것은 "며칠"이다. Day 번호는 title 로 남는다.
+    def day_hint(x) -> str:
+        # 보이는 순서 그대로 읽히게 한다 — 날짜가 먼저, Day 번호가 뒤.
+        # ISO 날짜까지 붙여 툴팁만 봐도 연도를 안다.
+        return f"{x.date_label} · Day {x.n} · {x.date.isoformat()}"
+
     nav = []
     if prev_d:
-        nav.append(f'<a class="btn btn-secondary" href="{rel}/{prev_d.url}">'
-                   f"← Day {prev_d.n}</a>")
+        nav.append(f'<a class="btn btn-secondary" href="{rel}/{prev_d.url}" '
+                   f'title="{esc(day_hint(prev_d))}">'
+                   f"← {esc(prev_d.date_label)}</a>")
     if next_d:
-        nav.append(f'<a class="btn btn-secondary" href="{rel}/{next_d.url}">'
-                   f"Day {next_d.n} →</a>")
+        nav.append(f'<a class="btn btn-secondary" href="{rel}/{next_d.url}" '
+                   f'title="{esc(day_hint(next_d))}">'
+                   f"{esc(next_d.date_label)} →</a>")
     parts.append(f'<div class="btn-row" style="justify-content:space-between">'
                  f'{"".join(nav)}</div>')
     parts.append("</div></div>")
 
     # 형제 이동 — 그 지역의 날들
     sib = tabs_strip([
-        (f"Day {x.n}", f"{rel}/{x.url}", x.n == d.n)
+        (x.date_label, f"{rel}/{x.url}", x.n == d.n, f"Day {x.n}", day_hint(x))
         for x in (region.days if region else [])])
 
     index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")

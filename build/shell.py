@@ -63,14 +63,29 @@ def crumbs(rel: str, trail: list[tuple[str, str | None]]) -> str:
     return f'<nav class="crumbs" aria-label="위치">{"".join(parts)}</nav>'
 
 
-def tabs_strip(items: list[tuple[str, str, bool]]) -> str:
-    """L2 형제 이동. (라벨, URL, 현재인가)"""
+def tabs_strip(items) -> str:
+    """L2 형제 이동. `(라벨, URL, 현재인가)` 또는
+    `(라벨, URL, 현재인가, 보조라벨, 제목)`.
+
+    날짜 탭처럼 한 칸이 두 가지를 말해야 할 때가 있다 — 현장에서 찾는 것은
+    "며칠"이고, Day 번호는 원고·데이터가 쓰는 식별자다. 둘 다 보이되
+    **날짜가 primary** 다. `title` 은 화면이 좁아 보조라벨이 잘려도 남는다.
+    """
     if not items:
         return ""
     out = []
-    for label, url, current in items:
+    for item in items:
+        label, url, current = item[0], item[1], item[2]
+        sub = item[3] if len(item) > 3 else ""
+        hint = item[4] if len(item) > 4 else ""
         cur = ' aria-current="page"' if current else ""
-        out.append(f'<a href="{url}"{cur}>{esc(label)}</a>')
+        tip = f' title="{esc(hint)}" aria-label="{esc(hint)}"' if hint else ""
+        body = esc(label)
+        if sub:
+            body = (f'<b class="tab-main">{esc(label)}</b>'
+                    f'<small class="tab-sub">{esc(sub)}</small>')
+        klass = ' class="tab-stack"' if sub else ""
+        out.append(f'<a href="{url}"{klass}{cur}{tip}>{body}</a>')
     return f'<nav class="tabs" aria-label="하위 메뉴">{"".join(out)}</nav>'
 
 
