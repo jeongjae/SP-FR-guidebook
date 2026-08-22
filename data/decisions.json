@@ -42,19 +42,22 @@
     },
     {
       "id": "DEC-A03",
-      "date": "2026-08-16",
-      "decision": "Saint-Paul-de-Vence → 9/8 Nice 당일치기 (Fondation Maeght 와 함께)",
+      "date": "2026-08-23",
+      "decision": "Saint-Paul-de-Vence 는 9/9 Nice→Aix 이동일(Day 12)에 Grasse 와 함께 있다. 9/8(Day 11)은 Villefranche-sur-Mer·Villa Ephrussi de Rothschild·Èze 당일치기다.",
       "forbidden_patterns": [
-        "9/9 생폴",
-        "9/9 Saint-Paul",
-        "생폴드방스를 거쳐"
+        "9/8 Saint-Paul",
+        "9/8 생폴",
+        "Saint-Paul-de-Vence → 9/8",
+        "생폴드방스 → 9/8",
+        "생폴드방스는 9/8"
       ],
+      "also_check_daily_cards": true,
       "required_patterns": [],
       "scope": [
         "06_Nice_*.md",
         "07_Aix_*.md"
       ],
-      "note": "Aix 챕터에서 제외. Grasse 는 9/9 이동일 유지"
+      "note": "2026-08-16 초판은 반대로 9/8 을 채택했었다. Day SOT(data/daily-cards/day-11.json·day-12.json) 가 9/9 을 확정으로 갖고 있고, Aix 챕터(07)가 이미 이 기준으로 작성돼 있다 — Nice 챕터(06)만 낡은 문구로 남아 있었다. 2026-08-23 NC01F 사실 대조에서 발견. superseded record 를 새로 만들지 않고 이 레코드 자체를 갱신한다 (registry 자체 설명: '결정이 뒤집히면 여기를 먼저 고친다'). G5 가 원래 문구를 못 잡은 이유 — forbidden_patterns 는 리터럴 부분 문자열 매칭이고 20_Regional_Chapters/*.md 만 스캔한다. 실제 충돌은 daily-cards JSON(가드가 안 보는 파일) 대 챕터 산문(가드가 다른 문구를 찾던 파일) 사이에 있었다. 새 forbidden_patterns 는 'Saint-Paul 이 9/8' 이라고 주장하는 문구만 잡는다 — 챕터에 남아 있는 Day 5(9/8) 실행 섹션의 낡은 표제('Nice 생활·회복일: 리베라시옹 시장')는 Saint-Paul 날짜와 무관한 별개 결함이라 이 결정의 scope 밖에 둔다. NC01 QA §18 에 기록됨."
     },
     {
       "id": "DEC-A04",
