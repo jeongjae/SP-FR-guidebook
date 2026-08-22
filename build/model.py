@@ -221,12 +221,27 @@ class Stop:
     route_origin: str | None = None
     route_destination: str | None = None
     route_mode: str | None = None
+    route_title: str | None = None
+    day_number: int | None = None
+    date: date | None = None
+    day_region: str | None = None
+    day_regions: list[str] = field(default_factory=list)
 
     @property
     def time_label(self) -> str:
         if self.start and self.end:
             return self.start
         return self.start or ""
+
+    @property
+    def formatted_when(self) -> str:
+        """9.15 화 10:00 — 지도 목록용 일시."""
+        if not self.date:
+            return self.start or ""
+        w_ko = WEEKDAY_KO[self.date.weekday()]
+        if self.start:
+            return f"{self.date.month}.{self.date.day} {w_ko} {self.start}"
+        return f"{self.date.month}.{self.date.day} {w_ko}"
 
 
 @dataclass
@@ -774,6 +789,10 @@ def load_trip() -> Trip:
     # 이제 daily-cards 의 stop.id 가 곧 슬러그라 추측이 필요 없다.
     for d in days:
         for s in d.stops:
+            s.day_number = d.n
+            s.date = d.date
+            s.day_region = d.region
+            s.day_regions = d.regions
             # place_ref 가 정본이다. 없을 때만 stop.id 로 되짚는다 —
             # id 일치에만 기대면 같은 장소를 다른 id 로 부르는 stop 이
             # 장소 페이지와 끊긴다. 실제로 89건이 그렇게 끊겨 있었다.
@@ -790,11 +809,21 @@ def load_trip() -> Trip:
 
             # 지도 검색어 및 경로 / 비장소 엔티티 매핑
             day_key = f"day-{d.n:02d}:{s.id}"
-            if s.id in non_map_stops or day_key in non_map_stops:
+            if day_key in non_map_stops:
                 s.map_type = "non_map"
-            elif day_key in route_queries or s.id in route_queries:
-                r = route_queries.get(day_key) or route_queries.get(s.id)
+            elif day_key in route_queries:
+                r = route_queries[day_key]
                 s.map_type = "route"
+                s.route_title = r.get("title")
+                s.route_origin = r["origin"]
+                s.route_destination = r["destination"]
+                s.route_mode = r.get("travelMode", "transit")
+            elif s.id in non_map_stops:
+                s.map_type = "non_map"
+            elif s.id in route_queries:
+                r = route_queries[s.id]
+                s.map_type = "route"
+                s.route_title = r.get("title")
                 s.route_origin = r["origin"]
                 s.route_destination = r["destination"]
                 s.route_mode = r.get("travelMode", "transit")

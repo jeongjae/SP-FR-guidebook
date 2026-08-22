@@ -106,7 +106,7 @@ class MapHubImprovementTests(unittest.TestCase):
     def test_route_urls_are_directions_with_valid_modes(self):
         """Route 항목이 Google Maps Directions 링크로 렌더링되고 이동수단이 일치하는지 확인."""
         routes = self.map_queries.get("routes", {})
-        self.assertEqual(len(routes), 27, "총 27개 경로 항목이 정의되어야 함")
+        self.assertEqual(len(routes), 29, "총 29개 경로 항목이 정의되어야 함")
 
         # Spot check key routes
         day9_nice_antibes = routes.get("day-09:nice-ville")
@@ -127,12 +127,62 @@ class MapHubImprovementTests(unittest.TestCase):
         self.assertEqual(day14_cassis_aix["destination"], "2 Place Coimbra, 13090 Aix-en-Provence")
         self.assertEqual(day14_cassis_aix["travelMode"], "driving")
 
+        # Spot check day 27 direction routes
+        day27_lyon = routes.get("day-27:lyon-checkout")
+        self.assertIsNotNone(day27_lyon)
+        self.assertIn("Lagrange Aparthotel Lyon Lumière", day27_lyon["origin"])
+        self.assertEqual(day27_lyon["destination"], "Gare de Lyon-Part-Dieu")
+        self.assertEqual(day27_lyon["travelMode"], "transit")
+
+        day27_paris = routes.get("day-27:paris-checkin")
+        self.assertIsNotNone(day27_paris)
+        self.assertEqual(day27_paris["origin"], "Paris Gare de Lyon")
+        self.assertEqual(day27_paris["destination"], "78 Rue de Lourmel, 75015 Paris")
+        self.assertEqual(day27_paris["travelMode"], "transit")
+
         # Verify generated HTML hrefs
         day9_html = (ROOT / "site" / "daily" / "day-09.html").read_text(encoding="utf-8")
         self.assertIn("https://www.google.com/maps/dir/?api=1&amp;origin=Gare%20de%20Nice-Ville&amp;destination=Gare%20d%27Antibes&amp;travelmode=transit", day9_html)
 
         day15_html = (ROOT / "site" / "daily" / "day-15.html").read_text(encoding="utf-8")
         self.assertIn("https://www.google.com/maps/dir/?api=1&amp;origin=Gare%20d%27Aix-en-Provence&amp;destination=Marseille%20Saint-Charles&amp;travelmode=transit", day15_html)
+
+        day27_html = (ROOT / "site" / "daily" / "day-27.html").read_text(encoding="utf-8")
+        self.assertIn("Lagrange%20Aparthotel%20Lyon%20Lumi%C3%A8re", day27_html)
+        self.assertIn("78%20Rue%20de%20Lourmel", day27_html)
+
+    def test_map_index_region_groups_and_date_formatting(self):
+        """전체 여정 지도 목록이 8개 지역으로 그룹화되고 날짜/요일이 올바른 형식인지 검증."""
+        map_html = (ROOT / "site" / "map" / "index.html").read_text(encoding="utf-8")
+        
+        # 1. 8 Region headings in order
+        expected_regions = [
+            "Barcelona",
+            "Girona · Empordà",
+            "Nice · Côte d'Azur",
+            "Aix-en-Provence",
+            "Luberon",
+            "Avignon · Alpilles",
+            "Lyon",
+            "Paris",
+        ]
+        last_pos = 0
+        for r_name in expected_regions:
+            head_tag = f'<h3 class="map-region-head">{render.esc(r_name)}</h3>'
+            pos = map_html.find(head_tag, last_pos)
+            self.assertNotEqual(pos, -1, f"Region group {r_name} heading not found or out of order")
+            last_pos = pos
+
+        # 2. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
+        date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
+        matches = date_pattern.findall(map_html)
+        self.assertGreater(len(matches), 100, "지도 목록의 날짜 메타가 충분히 발견되어야 함")
+
+        # 3. Verify specific items
+        self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)
+        self.assertIn("Gare de Lyon → 78 Rue de Lourmel", map_html)
+        self.assertNotIn("data-pin=\"bcn-airport\"", map_html)
+        self.assertNotIn("data-pin=\"paris-return\"", map_html)
 
     def test_all_rendered_google_maps_urls_are_valid(self):
         """사이트 전체의 모든 Google Maps 링크가 올바른 search 또는 dir 형식인지 검증."""

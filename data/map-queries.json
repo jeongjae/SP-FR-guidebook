@@ -964,13 +964,6 @@
     }
   },
   "stops": {
-    "bcn-airport": {
-      "query": "Aeroport de Barcelona-El Prat T1",
-      "verdict": "FOUND",
-      "resolvedName": "Josep Tarradellas Barcelona-El Prat Airport Terminal 1",
-      "evidence": "https://www.aena.es/es/josep-tarradellas-barcelona-el-prat.html",
-      "verifiedAt": "2026-08-22"
-    },
     "avinguda-gaudi": {
       "query": "Avinguda de Gaudí, Barcelona",
       "verdict": "FOUND",
@@ -1385,12 +1378,28 @@
       "evidence": "SNCF TER Annecy to Lyon Part-Dieu",
       "verifiedAt": "2026-08-22"
     },
+    "day-27:lyon-checkout": {
+      "title": "Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu",
+      "origin": "Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas, 69003 Lyon",
+      "destination": "Gare de Lyon-Part-Dieu",
+      "travelMode": "transit",
+      "evidence": "Taxi/Metro transfer from Lagrange Aparthotel Lyon Lumière to Lyon Part-Dieu station",
+      "verifiedAt": "2026-08-22"
+    },
     "day-27:tgv-to-paris": {
       "title": "TGV INOUI 6618 ➔ Paris Gare de Lyon 도착",
       "origin": "Gare de Lyon Part-Dieu",
       "destination": "Paris Gare de Lyon",
       "travelMode": "transit",
       "evidence": "TGV INOUI 6618 Lyon Part-Dieu to Paris Gare de Lyon",
+      "verifiedAt": "2026-08-22"
+    },
+    "day-27:paris-checkin": {
+      "title": "Gare de Lyon → 78 Rue de Lourmel",
+      "origin": "Paris Gare de Lyon",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Taxi/Metro transfer from Paris Gare de Lyon to 78 Rue de Lourmel",
       "verifiedAt": "2026-08-22"
     },
     "day-34:versailles-transfer": {
@@ -1443,6 +1452,9 @@
     }
   },
   "nonMapStops": [
+    "bcn-airport",
+    "paris-return",
+    "day-27:paris-return",
     "cdg-departure",
     "inflight",
     "icn"
