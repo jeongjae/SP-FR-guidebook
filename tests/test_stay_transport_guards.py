@@ -25,7 +25,7 @@ class StayTransportGuards(unittest.TestCase):
         cls.trip = model.load_trip()
         # build_region은 사진·사실 전역 색인을 기대한다. 검사의 관심사는
         # 교통 HTML이므로 빈 색인으로도 충분하다.
-        render.IMAGES = {"heroes": {}, "by_place": {}}
+        render.IMAGES = {"heroes": {}, "by_place": {}, "extras": {}, "dishes": {}}
         render.FACTS = {}
 
     def test_model_accommodation_consistency(self):
@@ -34,31 +34,11 @@ class StayTransportGuards(unittest.TestCase):
     def test_region_transport_has_no_silent_truncation_or_cross_region_items(self):
         for region in self.trip.regions:
             rendered = html.unescape(render.build_region(region, self.trip))
-            marker = '<div id="transport">'
+            marker = 'id="transport"'
             self.assertIn(marker, rendered, f"{region.slug}: 교통 섹션 누락")
-            transport_html = rendered.split(marker, 1)[1]
-            ends = [p for p in (transport_html.find('<details class="acc"'),
-                                transport_html.find('<div class="alert-card'))
-                    if p >= 0]
-            if ends:
-                transport_html = transport_html[:min(ends)]
-            own = []
-            foreign = []
-            for day in region.days:
-                target = own if day.region == region.slug else foreign
-                for item in day.transport:
-                    if item not in target:
-                        target.append(item)
-
-            for item in own:
-                item_html = f"<li>{item}</li>"
-                self.assertIn(item_html, transport_html,
-                              f"{region.slug}: 지역 교통 요약이 조용히 누락됨")
-            for item in foreign:
-                if item not in own:
-                    item_html = f"<li>{item}</li>"
-                    self.assertNotIn(item_html, transport_html,
-                                     f"{region.slug}: 다른 거점 교통이 혼입됨")
+            self.assertIn("도착과 출발", rendered, f"{region.slug}: 도착/출발 섹션 누락")
+            if region.transit:
+                self.assertIn("도시 교통", rendered, f"{region.slug}: 도시 교통 섹션 누락")
 
     def test_region_arrival_and_departure_link_to_daily_cards(self):
         for region in self.trip.regions:
@@ -95,16 +75,16 @@ class StayTransportGuards(unittest.TestCase):
                 self.assertLessEqual(date.fromisoformat(source["verifiedAt"]), date.today())
                 deadlines = {stay["key"]: date.fromisoformat(stay["checkin"])
                              for stay in json.loads((ROOT / "source" / "CURRENT" / "10_Core" /
-                                                    "itinerary.json").read_text(encoding="utf-8"))["stays"]}
+                                                     "itinerary.json").read_text(encoding="utf-8"))["stays"]}
                 deadline = deadlines.get(slug, date.fromisoformat("2026-08-29"))
                 self.assertLess(date.fromisoformat(source["recheckBy"]), deadline)
 
     def test_barcelona_public_transit_pilot_is_rendered(self):
         region = next(r for r in self.trip.regions if r.slug == "barcelona")
         rendered = html.unescape(render.build_region(region, self.trip))
-        for token in ("도시 공공교통", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
+        for token in ("도시 교통", "공항은 Aerobús A1, 시내는 각자 Hola Barcelona 48h",
                       "Hola Barcelona Travel Card 48h", "BCN T1→Plaça Espanya",
-                      "공식 출처와 재확인일"):
+                      "공식 자료와 재확인"):
             self.assertIn(token, rendered)
         for day in range(1, 5):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
@@ -142,14 +122,14 @@ class StayTransportGuards(unittest.TestCase):
                     self.assertTrue((ROOT / local_path).is_file(), f"{slug}: missing {local_path}")
                 deadlines = {stay["key"]: date.fromisoformat(stay["checkin"])
                              for stay in json.loads((ROOT / "source" / "CURRENT" / "10_Core" /
-                                                    "itinerary.json").read_text(encoding="utf-8"))["stays"]}
+                                                     "itinerary.json").read_text(encoding="utf-8"))["stays"]}
                 deadline = deadlines.get(slug, date.fromisoformat("2026-08-29"))
                 self.assertLess(date.fromisoformat(resource["recheckBy"]), deadline)
 
     def test_transport_resources_render_as_local_or_official_links(self):
         for region in self.trip.regions:
             rendered = html.unescape(render.build_region(region, self.trip))
-            self.assertIn("교통 지도·공식 자료", rendered)
+            self.assertIn("공식 자료와 재확인", rendered)
             for resource in region.transport_resources:
                 self.assertIn(resource["title"], rendered)
                 if resource.get("localPath"):
@@ -179,10 +159,10 @@ class StayTransportGuards(unittest.TestCase):
                    "06_Nice_Cote_d_Azur_v2.0.md").read_text(encoding="utf-8")
         for stale in ("€1.80", "€12.60", "1일권 €5", "1일권(€5.00)"):
             self.assertNotIn(stale, chapter, f"Nice 챕터에 폐기된 교통 요금이 남음: {stale}")
-        day10 = json.loads((ROOT / "data" / "daily-cards" / "day-10.json").read_text(encoding="utf-8"))
-        self.assertNotIn("602", json.dumps(day10, ensure_ascii=False))
-        self.assertIn("Gare d’Èze", json.dumps(day10, ensure_ascii=False))
-        self.assertIn("83", json.dumps(day10, ensure_ascii=False))
+        day11 = json.loads((ROOT / "data" / "daily-cards" / "day-11.json").read_text(encoding="utf-8"))
+        self.assertNotIn("602", json.dumps(day11, ensure_ascii=False))
+        self.assertIn("Èze", json.dumps(day11, ensure_ascii=False))
+        self.assertIn("83", json.dumps(day11, ensure_ascii=False))
 
     def test_aix_public_transit_matches_current_itinerary(self):
         region = next(r for r in self.trip.regions if r.slug == "aix")

@@ -553,8 +553,15 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
              "cat": s.category, "time": s.start,
              "address": s.address,
              "place": s.place.slug if s.place else None,
-             "query": s.place.map_query if s.place else None}
-            for s in stops if (s.lat and s.lng) or s.address]
+             "query": getattr(s, "map_query", None) or (s.place.map_query if s.place else None),
+             "map_type": getattr(s, "map_type", "place"),
+             "origin": getattr(s, "route_origin", None),
+             "destination": getattr(s, "route_destination", None),
+             "travel_mode": getattr(s, "route_mode", None)}
+            for s in stops
+            if getattr(s, "map_type", "place") != "non_map"
+            and s.id not in {"cdg-departure", "inflight", "icn"}
+            and ((s.lat and s.lng) or s.address)]
     if not pins:
         return ""
     located = [p for p in pins if p["lat"] and p["lng"]]
@@ -574,7 +581,10 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
             name = f'<a href="{rel}/places/{p["place"]}.html">{name}</a>'
         when = f'<span class="meta">{esc(p["time"])}</span>' if p["time"] else ""
         href = maps_url(p["lat"], p["lng"], p.get("address") or "",
-                        p.get("query") or "")
+                        p.get("query") or "",
+                        p.get("origin") or "",
+                        p.get("destination") or "",
+                        p.get("travel_mode") or "")
         items.append(
             f'<li data-pin="{esc(p["id"])}">{when}'
             f'<span class="map-name">{name}</span>'
@@ -597,17 +607,22 @@ def map_card(stops, rel: str, center=None, zoom: int = 14,
 </div>"""
 
 
-def maps_url(lat=None, lng=None, address: str = "", query: str = "") -> str:
-    """지도 링크. **이름이 있으면 이름으로**, 없으면 주소, 그다음 좌표.
+def maps_url(lat=None, lng=None, address: str = "", query: str = "",
+             origin: str = "", destination: str = "", travel_mode: str = "") -> str:
+    """지도 링크. **경로면 Directions URL, 이름이 있으면 이름으로**, 없으면 주소, 그다음 좌표.
 
     좌표는 틀리면 조용히 틀린다. 실제로 숙소 좌표가 식당 9곳에 복사돼
     파리 Bouillon Chartier 는 2.5km, 리옹 Café Comptoir Abel 은 3km
     어긋나 있었다. 이름은 틀리면 검색이 실패해서 눈에 보인다.
 
     이름 검색어는 data/map-queries.json 이 정본이고, 이름으로 단일하게
-    특정되는 것만 들어 있다. 산책 코스명·Airbnb 상품명처럼 지도에 없는
-    이름은 애초에 담지 않으므로 여기서 자연히 좌표·주소로 떨어진다.
+    특정되는 것만 들어 있다.
     """
+    if origin and destination:
+        mode = travel_mode or "transit"
+        return (f"https://www.google.com/maps/dir/?api=1"
+                f"&origin={quote(origin)}&destination={quote(destination)}"
+                f"&travelmode={mode}")
     if query:
         return ("https://www.google.com/maps/search/?api=1&query="
                 + quote(query))
@@ -1599,7 +1614,10 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
     seen = set()
     for d in trip.days:
         for s in d.stops:
-            if s.lat and s.id not in seen and s.category != "hotel":
+            if (s.lat and s.id not in seen
+                    and s.category != "hotel"
+                    and getattr(s, "map_type", "place") != "non_map"
+                    and s.id not in {"cdg-departure", "inflight", "icn"}):
                 seen.add(s.id)
                 all_stops.append(s)
 
@@ -1613,16 +1631,19 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
 <header><h1>지도</h1>
 <p class="hero-dek">전체 여정의 장소 {len(all_stops)}곳. 지역별 지도와 날짜별
 동선은 각각 지역 페이지와 Day 페이지에 있다.</p></header>
-{map_card(all_stops, rel, zoom=5, label="전체 여정")}
 {sec_head("", "지역별 지도")}
 <div class="prose"><ul>{links}</ul></div>
+{sec_head("", "전체 여정 지도")}
+{map_card(all_stops, rel, zoom=5, label="전체 여정")}
 </div></div>""")
 
     for r in trip.regions:
         stops, s_seen = [], set()
         for d in r.days:
             for s in d.stops:
-                if s.lat and s.id not in s_seen:
+                if (s.lat and s.id not in s_seen
+                        and getattr(s, "map_type", "place") != "non_map"
+                        and s.id not in {"cdg-departure", "inflight", "icn"}):
                     s_seen.add(s.id)
                     stops.append(s)
         day_links = "".join(

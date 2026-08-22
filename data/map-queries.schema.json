@@ -17,6 +17,18 @@
     "hotels": {
       "type": "object",
       "additionalProperties": {"$ref": "#/$defs/entry"}
+    },
+    "stops": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/entry"}
+    },
+    "routes": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/routeEntry"}
+    },
+    "nonMapStops": {
+      "type": "array",
+      "items": {"type": "string"}
     }
   },
   "additionalProperties": false,
@@ -42,6 +54,19 @@
         "if": {"properties": {"verdict": {"const": "AMBIGUOUS"}}, "required": ["verdict"]},
         "then": {"required": ["anchorFor"]}
       }],
+      "additionalProperties": false
+    },
+    "routeEntry": {
+      "type": "object",
+      "required": ["origin", "destination", "travelMode", "verifiedAt"],
+      "properties": {
+        "title": {"type": "string"},
+        "origin": {"type": "string", "minLength": 2, "maxLength": 160},
+        "destination": {"type": "string", "minLength": 2, "maxLength": 160},
+        "travelMode": {"enum": ["driving", "transit", "walking", "bicycling"]},
+        "evidence": {"type": "string"},
+        "verifiedAt": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
+      },
       "additionalProperties": false
     }
   }

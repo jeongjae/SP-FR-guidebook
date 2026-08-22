@@ -40,7 +40,13 @@ class MapDataValidationTests(unittest.TestCase):
 
     def test_private_place_cannot_publish_precise_location_fields(self):
         payloads = copy.deepcopy(self.payloads)
-        place = next(item for item in payloads["place-registry.json"]["places"] if item["private"])
+        places = payloads["place-registry.json"]["places"]
+        place = next((item for item in places if item.get("private")), None)
+        if place is None:
+            place = copy.deepcopy(places[0])
+            place["id"] = "private-test"
+            place["private"] = True
+            places.append(place)
         place["lat"] = 42.123456
         place["googleMapsUrl"] = "https://www.google.com/maps/search/?api=1&query=private"
         with tempfile.TemporaryDirectory() as name:
