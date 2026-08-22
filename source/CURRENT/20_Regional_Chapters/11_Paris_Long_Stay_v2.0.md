@@ -548,31 +548,27 @@ Latin Quarter → Saint-Germain → Orsay → BnF Richelieu
 > **요금** {{fact:le-marais.price_adult}} · **운영** {{fact:le-marais.hours}} · **휴관** {{fact:le-marais.closed}}
 > **예약** {{fact:le-marais.booking}}
 
-**Day 30 (9/27 일) · Day 35 (10/2 금)**
+**Day 31 (9/28 월) · Day 39 (10/6 화)**
 
 **이 체류에서 두 번 가는 유일한 동네다.**
 | 방문 | 성격 |
 |---|--- |
-| Day 30 (일) | **일요일의 마레** — 파리에서 일요일에 문을 여는 드문 구역 |
-| Day 35 (금) | **평일의 마레** — 생활·역사·패션 |
+| Day 31 (월) | **거리의 마레** — 패션위크 개막 주의 분위기와 골목 |
+| Day 39 (화) | **실내의 마레** — 피카소·카르나발레·보주 광장 |
 > **같은 곳을 다른 요일에 본다**
-> 일요일 파리는 대부분 닫는다. 마레는 예외로 알려져 있다 {{badge:unverified|확인 권장}}. 그래서 일요일과 평일의 얼굴이 다르다.
+> 마레의 실내는 Day 31 에 거의 닫는다 — {{fact:le-marais.closed}}. 그래서 Day 31 은 거리를, Day 39 는 컬렉션을 본다.
 > **두 번 가는 것이 낭비가 아니라 설계다.**
 
 #### 두 번의 마레가 무엇이 다른가
 
-Day 30·Day 35 시간표에 이미 나뉘어 있다.
+Day 31·Day 39 시간표에 이미 나뉘어 있다.
 
-| | Day 30 (9/27 일) | Day 35 (10/2 금) |
-|---|---|--- |
-| 오전 | Luxembourg 러닝 · **Marché Monge** 장보기 | 세탁·우편·카페 (생활블록) |
-| 점심 | 숙소 | **Marché des Enfants Rouges** |
-| 오후 | Marais 골목 · **Place des Vosges** · **Carnavalet** 선택 | Marais 골목 · **Archives** · Place des Vosges |
-| 실내 | 박물관은 **한 곳만** | **Carnavalet / MEP / Palais Galliera 중 1곳** |
-| 저녁 | 숙소식 또는 **Café des Musées** | 재즈 또는 연극 선택 |
-> **일요일에 마레를 넣은 이유**
-> 파리는 일요일에 대부분 닫는다. **Marché des Enfants Rouges 는 화–일 운영이고 월요일이 휴무다** ( `31. 시장과 장보기`). 그래서 일요일에 열리고 월요일에 닫는다.
-> Day 30 이 일요일, Day 38 이 월요일인 것과 맞물린다.
+| | 마레에서 무엇을 하는가 |
+|---|--- |
+| Day 31 오후 | **Fashion Week 개막 분위기 · 마레 골목** — 실내는 넣지 않는다 |
+| Day 39 오후 | **Musée Picasso ➔ 골목 ➔ Carnavalet ➔ Place des Vosges** — 박물관 두 곳을 걸어서 잇는다 |
+> **Day 31 에 실내를 넣지 않은 이유**
+> 마레의 대표 실내가 이 날 닫는다 — {{fact:le-marais.closed}}. **Marché des Enfants Rouges 도 화–일 운영이라 이 날은 휴무다** ( `31. 시장과 장보기`). 실내를 기대하고 갔다가 닫힌 문 앞에 서지 않게, Day 31 은 거리만 본다.
 
 > **무엇을 볼 것인가 — 쇼핑이 아니라 건축이다**
 > 지시가 명확하다. **오텔 파르티퀼리에(hôtel particulier)의 안뜰과 거리의 관계를 관찰한다.**
@@ -582,9 +578,9 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 > 경고를 달아 두었다. 거리 분위기는 보되 **초청제 쇼를 '관람 일정'으로 기대하지 않는다.**
 
 > **공연이 걸리면 날을 바꾼다**
-> Day 30 오후에 공연(Opéra Bastille 등) 표가 잡히면 **마레를 Day 35 로 몰고** 그 날은 공연 중심으로 짠다. 판단 규칙이다.
+> Day 31 오후에 공연(Opéra Bastille 등) 표가 잡히면 **거리의 마레를 Day 39 로 몰고** 그 날은 공연 중심으로 짠다. 판단 규칙이다.
 
-⚠ 피카소 미술관과 유대인 지구는 시간표에 없다. 마레 안에 있지만 **이번 일정에 편성된 적이 없다** {{badge:unverified|넣으려면 별도 조사 필요}}.
+⚠ 유대인 지구(rue des Rosiers)는 시간표에 없다. 마레 안에 있지만 **이번 일정에 편성된 적이 없다** {{badge:unverified|넣으려면 별도 조사 필요}}. 피카소 미술관은 Day 39 오후에 편성돼 있다.
 
 ### Montmartre · South Pigalle {{grade:essential|필수}}
 
@@ -847,7 +843,7 @@ Day 30·Day 35 시간표에 이미 나뉘어 있다.
 
 > **Editor's Verdict**: 17세기 귀족 저택(Hôtel particulier), 파리에서 가장 오래된 대칭 광장 보주 광장(Place des Vosges), 유대인 전통 미식 로지에 거리, 북마레의 감각적인 독립 부티크와 갤러리가 공존하는 역사·트렌드 지구.
 
-- **체류/요금**: 2–3시간 · 거리 무료 (일요일 정상 영업)
+- **체류/요금**: 2–3시간 · 거리 무료 · 일요일에도 여는 구역으로 알려져 있다 {{badge:unverified|확인 권장}}
 - **상세 가이드**: [Le Marais 전체 심화 가이드 보기](../places/le-marais.html)
 
 ---
