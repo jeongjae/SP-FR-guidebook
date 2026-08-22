@@ -241,8 +241,11 @@ class StayTransportGuards(unittest.TestCase):
         rendered = html.unescape(render.build_region(region, self.trip))
         for token in ("Weekly는 9/28–10/4 한 번만", "1인 1여정 €2.55", "1인 1여정 €2.05",
                       "1인 €32.40", "고정된 월요일–일요일", "Navigo Easy에 넣지 않는다",
-                      "CDG Terminal 1은 공식 택시"):
+                      "CDG Terminal 1은 공식 택시", "1인 13회부터 Weekly",
+                      "공항역 진출입만 제외", "이번 일정에서는 쓰지 않는다"):
             self.assertIn(token, rendered)
+        self.assertNotIn("Versailles·공항역 제외", rendered)
+        self.assertNotIn("Day 36의 32번 bus 등 버스만 타는 여정에 필요할 때 구매", rendered)
         for day in range(27, 43):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
         chapter = (ROOT / "source" / "CURRENT" / "20_Regional_Chapters" /
