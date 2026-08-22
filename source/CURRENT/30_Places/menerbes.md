@@ -4,8 +4,8 @@ name: "Ménerbes"
 local_name: "Ménerbes"
 region: luberon
 kind: spot
-grade: "우선 추천"
-priority: "WORTHWHILE"
+grade: "선택"
+priority: "OPTIONAL"
 content_tier: "TIER_B"
 summary: "피터 메일의 소설 『프로방스에서의 1년』의 무대이자 피카소의 뮤즈 도라 마르가 살았던 길고 좁은 능선(Ridge) 위의 성채 마을. 뤼베롱 와인과 트러플의 중심지이자 고즈넉한 예술 마을."
 source: source/CURRENT/30_Places/menerbes.md

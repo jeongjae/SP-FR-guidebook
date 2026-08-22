@@ -4,8 +4,8 @@ name: "Calella de Palafrugell"
 local_name: "Calella de Palafrugell & Camí de Ronda"
 region: girona
 kind: spot
-grade: "필수"
-priority: "WORTHWHILE"
+grade: "선택"
+priority: "OPTIONAL"
 content_tier: "TIER_B"
 summary: "흰색 회반죽 가옥과 아치 회랑(Les Voltes), 쪽빛 바위 만(Cove)을 잇는 카미 데 론다 해안 산책로가 있는 코스타 브라바의 원형 어촌."
 source: source/CURRENT/30_Places/calella-de-palafrugell.md

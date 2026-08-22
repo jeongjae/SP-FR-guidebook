@@ -4,8 +4,8 @@ name: "L'Isle-sur-la-Sorgue"
 local_name: "L'Isle-sur-la-Sorgue (Venise Comtadine)"
 region: luberon
 kind: spot
-grade: "대체"
-priority: "WORTHWHILE"
+grade: "선택"
+priority: "OPTIONAL"
 content_tier: "TIER_B"
 summary: "에메랄드빛 소르그(Sorgue) 강이 섬처럼 감싸 흐르는 '프로방스의 베네치아'. 이끼 낀 거대한 목조 물레바퀴(Roues à aubes), 300여 개 앤틱 상점이 밀집한 유럽 3대 골동품 도시이자 시인 르네 샤르의 고향."
 source: source/CURRENT/30_Places/l-isle-sur-la-sorgue.md

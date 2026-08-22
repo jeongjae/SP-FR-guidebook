@@ -2109,9 +2109,14 @@ def write_assets(trip: Trip) -> None:
                     missing.append(f"{img.get('imageId')} — {v['path']}")
                     continue
                 dst.parent.mkdir(parents=True, exist_ok=True)
-                if not dst.exists():
-                    shutil.copy(src, dst)
-                    copied += 1
+                for _ in range(3):
+                    try:
+                        if not dst.exists():
+                            shutil.copy(src, dst)
+                            copied += 1
+                        break
+                    except OSError:
+                        dst.parent.mkdir(parents=True, exist_ok=True)
     if missing:
         raise SystemExit("매니페스트가 가리키는 사진 파일이 없다:\n  "
                          + "\n  ".join(missing))

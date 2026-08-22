@@ -36,13 +36,13 @@
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `calella-de-palafrugell` | Calella de Palafrugell | spot | 필수 | Calella de Palafrugell | chapters/girona/places.html | Calella de Palafrugell | Calella de Palafrugell |
+| `calella-de-palafrugell` | Calella de Palafrugell | spot | 선택 | Calella de Palafrugell | chapters/girona/places.html | Calella de Palafrugell | Calella de Palafrugell |
 | `collioure` | Collioure | spot | 필수 | Collioure | chapters/girona/places.html | Collioure | Collioure |
 | `girona-cathedral` | Girona Cathedral | spot | 필수 | Girona Cathedral | chapters/girona/places.html | Girona Cathedral | Girona Cathedral |
 | `passeig-de-la-muralla` | Passeig de la Muralla | spot | 필수 | — | chapters/girona/places.html | 성벽 (Passeig de la Muralla) | Passeig de la Muralla |
 | `onyar` | Onyar 강변 | spot | 필수 | Onyar Houses | chapters/girona/places.html | Onyar 강변 | Onyar |
 | `pals` | Pals | spot | 우선 추천 | Pals | chapters/girona/places.html | Pals | Pals |
-| `peralada` | Peralada | spot | 우선 추천 | Peralada | chapters/girona/places.html | Peralada | Peralada |
+| `peralada` | Peralada | spot | 선택 | Peralada | chapters/girona/places.html | Peralada | Peralada |
 | `peratallada` | Peratallada | spot | 필수 | Peratallada | chapters/girona/places.html | Peratallada | Peratallada |
 | `casa-marieta` | Casa Marieta | spot | 필수 | Casa Marieta | chapters/girona/places.html | Casa Marieta | — |
 | `mercat-del-lleo` | Mercat del Lleó | spot | 우선 추천 | Mercat del Lleó | chapters/girona/places.html | Mercat del Lleó | — |
@@ -102,15 +102,15 @@
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `abbaye-de-senanque` | Abbaye de Sénanque | spot | 우선 추천 | — | chapters/luberon/places.html | Abbaye de Sénanque | Sénanque Abbey |
+| `abbaye-de-senanque` | Abbaye de Sénanque | spot | 선택 | — | chapters/luberon/places.html | Abbaye de Sénanque | Sénanque Abbey |
 | `bonnieux` | Bonnieux | spot | 대체 | — | chapters/luberon/places.html | Bonnieux — 대체안 | Bonnieux |
 | `coustellet` | Coustellet 생산자 시장 | spot | 필수 | Coustellet | chapters/luberon/places.html | Coustellet 생산자 시장 | — |
 | `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes | Gordes |
 | `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult | Goult |
 | `lourmarin` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
-| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 대체 | L’Isle-sur-la-Sorgue | chapters/luberon/places.html | L’Isle-sur-la-Sorgue | L'Isle-sur-la-Sorgue |
-| `menerbes` | Ménerbes | spot | 우선 추천 | Ménerbes | chapters/luberon/places.html | Ménerbes — A안 | Ménerbes |
-| `oppede-le-vieux` | Oppède-le-Vieux | spot | 대체 | — | chapters/luberon/places.html | Oppède-le-Vieux — B안 | Oppède |
+| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 선택 | L’Isle-sur-la-Sorgue | chapters/luberon/places.html | L’Isle-sur-la-Sorgue | L'Isle-sur-la-Sorgue |
+| `menerbes` | Ménerbes | spot | 선택 | Ménerbes | chapters/luberon/places.html | Ménerbes | Ménerbes |
+| `oppede-le-vieux` | Oppède-le-Vieux | spot | 선택 | — | chapters/luberon/places.html | Oppède-le-Vieux | Oppède |
 | `roussillon-sentier-des-ocres` | Roussillon · Sentier des Ocres | spot | 필수 | Roussillon | chapters/luberon/places.html | Roussillon · Sentier des Ocres | Roussillon, Vaucluse |
 | `village-des-bories` | Village des Bories | spot | 우선 추천 | Village des Bories | chapters/luberon/places.html | Village des Bories | Village des Bories |
 
