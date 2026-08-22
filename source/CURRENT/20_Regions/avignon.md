@@ -268,9 +268,9 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 | 목적지 | 요령 |
 |---|--- |
 | **Uzès** | 구시가지 외곽 순환로(Parking Cordeliers 등)에 주차하고 걸어 다닌다. 중세 중심가는 차량 통행이 막혀 있다 |
-| **Pont du Gard** | 공식 주차장(Rive Gauche 좌안) 이용 · 수로교 도보 횡단 및 간단한 점심 |
+| **Pont du Gard** | 공식 주차장(Rive Gauche 좌안) 이용 · 1층 피토 도로교 자유 보행 횡단 및 좌·우안 전망대 외관 관람, 간단한 점심 (3층 수로는 가이드 투어 슬롯 예약 시에만 선택 입장) |
 | **Nîmes** | Parking Arènes 또는 Parking Maison Carrée 지하주차장 이용 · 2시간 핵심 관람 · **15:45 출발 Hard Stop** |
-| **Avignon TGV Hertz** | D999/N100 경유 역 인근 주유 후 Parking Loueurs P0 입차 · 사방 외관 촬영 후 18:30 이전 최종 반납 (평일 19:00까지 대면 반납 가능) |
+| **Avignon TGV Hertz** | D999/N100 경유 역 인근 주유 후 Parking Loueurs P0 입차 · 사방 외관 촬영 후 18:30 이전 최종 반납 (공식 목요일 08:00~21:00 영업, 바우처 기재 시간 최우선 적용) |
 
 ### Day 21 Arles 철도 당일치기
 
