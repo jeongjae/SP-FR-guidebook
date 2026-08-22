@@ -1053,24 +1053,24 @@ GENERIC_FOOD_NOTES = [
 
 
 def region_dishes(r: Region) -> list[str]:
-    """'무엇을 먹는가'. 업소가 아니라 요리라서 카드가 아니라 목록이다.
+    """'무엇을 먹는가'. Day 의 식사 슬롯에서 뽑는다.
 
-    Day 의 식사 슬롯은 '업소 · 요리' 로 적혀 있다. 그 업소가 바로 위에서
-    카드로 나오고 있으면 이름이 두 번 나온다 — 통폐합을 끝낸 지역에서는
-    업소 이름을 떼고 요리만 남긴다. **먹을 것과 먹을 곳을 섞지 않는다.**
+    **통폐합을 끝낸 지역에서는 만들지 않는다.** Day 의 식사 슬롯은 본래
+    '언제 어디서 먹는가' 라서, 지역 페이지에 목록으로 올리면 바로 위 식당
+    카드가 말한 것을 업소 이름째 다시 말하게 된다. Nice 에서는 거기에
+    '점심:' 같은 끼니 라벨과 `WISH-01` 같은 내부 코드까지 함께 새어 나왔다.
+
+    통폐합한 지역은 챕터가 '이 지역에서 먹어볼 것' 을 따로 갖는다 —
+    먹을 것은 거기가, 먹을 곳은 카드가, 언제 먹는지는 Day 가 맡는다.
     """
-    carded = {p.name.strip() for p in r.food_places}
-    strip_venue = is_consolidated(r.slug)
+    if is_consolidated(r.slug):
+        return []
     out = []
     for d in r.days:
         for item in d.food:
             item = item.strip()
             if any(g in item for g in GENERIC_FOOD_NOTES):
                 continue
-            if strip_venue and "·" in item:
-                venue, _, dish = item.partition("·")
-                if venue.strip() in carded and dish.strip():
-                    item = dish.strip()
             if item not in out:
                 out.append(item)
     return out[:12]
