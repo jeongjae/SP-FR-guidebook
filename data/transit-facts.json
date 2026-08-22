@@ -134,7 +134,7 @@
     "nice": {
       "recommendation": {
         "title": "공동 Multi voyages 12회로 시내·Èze 이동 준비",
-        "summary": "Day 7 공항→숙소 2회, Day 10 Èze 83번 왕복 4회, Day 11 Saint-Jean-Cap-Ferrat 왕복 4회를 합치면 두 사람 기준 10회다. 공항 T2에서 익명 La Carte에 12회를 담아 환승 지연이나 시장 접근 2회를 여유로 둔다."
+        "summary": "Day 7 공항→숙소 2회, Day 11 Èze 83번 왕복 4회와 Saint-Jean-Cap-Ferrat 왕복 4회를 합치면 두 사람 기준 10회다. 공항 T2에서 익명 La Carte에 12회를 담아 환승 지연이나 시장 접근 2회를 여유로 둔다."
       },
       "products": [
         {
@@ -142,7 +142,7 @@
           "price": "회당 €1.70부터",
           "shared": true,
           "accessNote": "충전 카드로 공항 가능",
-          "fit": "두 사람이 Day 7·10·11에 함께 쓰고 2회 여유를 두는 기본안"
+          "fit": "두 사람이 Day 7·11에 함께 쓰고 2회 여유를 두는 기본안"
         },
         {
           "name": "La Carte 익명 카드",
@@ -168,7 +168,7 @@
       ],
       "exceptions": [
         "Day 9 Nice-Ville↔Antibes↔Cannes는 SNCF TER다. Lignes d’Azur 시내권과 분리해 당일 SNCF Connect에서 표와 운행을 확인한다.",
-        "Day 10은 TER와 Lignes d’Azur 83을 조합한다. 83은 Gare d’Èze↔Èze Village만 이용하며 TER 연결이 나쁘면 Villefranche 또는 Èze 중 하나를 생략한다.",
+        "Day 11은 TER와 Lignes d’Azur 버스를 조합한다. 83번은 Gare d’Èze↔Èze Village 구간만 이용하며, TER 연결이 나쁘면 Villefranche 또는 Èze 중 하나를 생략한다.",
         "Day 12는 Nice역에서 렌터카를 인수하므로 공항 왕복권을 소진할 귀환 이동이 없다."
       ],
       "itineraryUses": [
@@ -186,11 +186,11 @@
         },
         {
           "day": 10,
-          "label": "Villefranche→Èze-sur-Mer는 TER, Gare d’Èze↔Èze Village는 83번 왕복, 이후 Monaco·Menton은 TER"
+          "label": "Monaco·Menton은 TER; 모나코 시내 오르막은 시내버스로 대신할 수 있다"
         },
         {
           "day": 11,
-          "label": "숙소→Libération 시장은 도보 기본; Tram 1→15번 bus 환승과 귀환은 두 사람 각 2회 여정"
+          "label": "Villefranche·Saint-Jean-Cap-Ferrat·Èze — TER 에 Tram 1→15번 버스와 Gare d’Èze↔Èze Village 83번을 덧붙인다"
         },
         {
           "day": 12,
