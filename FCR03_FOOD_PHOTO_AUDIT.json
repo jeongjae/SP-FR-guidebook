@@ -3,25 +3,25 @@
  "policy": "FCR-03 · Google Maps 우선",
  "results": [
   {
-   "slug": "bodega-joan",
+   "slug": "la-paradeta-sagrada-familia",
    "region": "barcelona",
-   "name": "Bodega Joan",
-   "address": "Carrer del Rosselló, 164, 08036 Barcelona",
-   "resolvedTitle": "Bodega Joan",
-   "mapsUrl": "https://www.google.com/maps/place/Bodega+Joan/@41.391701,2.155481,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a290102a89e5:0x9427746fb704d8ca!8m2!3d41.391701!4d2.155481!16s%2Fg%2F1tgv8w1l?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-   "placeKey": "0x12a4a290102a89e5:0x9427746fb704d8ca",
+   "name": "Puertecillo Sagrada Familia",
+   "address": "Passatge de Simó, 18, 08025 Barcelona",
+   "resolvedTitle": "Puertecillo Sagrada Familia",
+   "mapsUrl": "https://www.google.com/maps/place/Puertecillo+Sagrada+Familia/@41.404494,2.1734418,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2c33f9d6983:0x20e3e0cbae1446fe!8m2!3d41.404494!4d2.1734418!16s%2Fg%2F1hc2v7pw4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12a4a2c33f9d6983:0x20e3e0cbae1446fe",
    "nameMatch": true,
    "addressMatch": true,
    "addressTokens": [
-    "Rosselló"
+    "Simó"
    ],
    "addressHits": [
-    "Rosselló"
+    "Simó"
    ],
-   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlB4w9li1VRoUzmci6Jqd-VGd_kBQ_7XdhdbCsrEfVTBXofV0--AD3l6qnfNOC-JkYIa3rTwOwQLXBxHibZ_rIkpjwrLshbbp3Y7qflehhRWt1uboJufzDBp5Fcmey9eqGm_bI=w1600-h1200-k-no",
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmczqUeXZ0MS0CoZfmxcuM7VP0a29PklbQR4oJcfFbp7gVodAbd0-mBMyR9NTI4vrXb_Y1dtBZ_cPDc5-ZDLzPDPT7I09JtSXXdUQO6q7yJ5NvlRjHq6sZFOykoYBIOeNa4cqloXw=w1600-h1200-k-no",
    "photoCount": 1,
    "status": "VALID_GOOGLE_MAPS",
-   "imageId": "barcelona-bodega-joan-gm01"
+   "imageId": "barcelona-la-paradeta-sagrada-familia-gm01"
   }
  ]
 }

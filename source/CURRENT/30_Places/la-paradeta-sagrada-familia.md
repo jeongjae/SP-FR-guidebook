@@ -1,7 +1,7 @@
 ---
 slug: la-paradeta-sagrada-familia
-name: "La Paradeta Sagrada Família"
-local_name: "La Paradeta Sagrada Família"
+name: "Puertecillo Sagrada Família"
+local_name: "Puertecillo Sagrada Família (옛 La Paradeta)"
 region: barcelona
 kind: spot
 grade: "필수"
@@ -10,20 +10,20 @@ content_tier: "TIER_A"
 selection_origin: "RECOMMENDED"
 meal_role: "PRIMARY"
 food_kind: "RESTAURANT"
-summary: "얼음 위에 진열된 신선한 지중해 해산물을 골라 즉석에서 찜·구이·튀김으로 즐기는 셀프 시푸드 바."
+summary: "사그라다 파밀리아 뒤 파사체 데 시모의 해산물 마리스케리아. 2026년 확인 시점에 La Paradeta 자리를 Puertecillo 가 쓰고 있다."
 source: source/CURRENT/30_Places/la-paradeta-sagrada-familia.md
 ---
 
 ## 왜 가는가
 
-사그라다 파밀리아 대성당에서 도보 3분 거리에 위치한 라 파라데타(La Paradeta)는 수산시장 직판장 콘셉트의 독특하고 실용적인 해산물 전문점이다.
+사그라다 파밀리아 대성당에서 도보 3분, 파사체 데 시모(Passatge de Simó) 18번지의 해산물 마리스케리아다. **2026-08-22 확인 기준 이 자리의 상호는 Puertecillo Sagrada Família 다** — 오래 이 자리를 지킨 라 파라데타(La Paradeta)가 Born·Sagrada Família·Paral·lel 세 지점을 공식 사이트에서 내렸고, 같은 주소 세 곳이 Puertecillo 의 지점으로 올라 있다. 수산시장 직판장에 가까운 성격은 그대로다.
 
 입구의 얼음 진열대에서 당일 아침 입고된 새우, 맛조개(Navajas), 오징어(Chipirones), 홍합, 게, 생선 등을 눈으로 직접 보고 원하는 무게만큼 주문하면, 주방에서 즉석으로 플란차(철판구이), 튀김(Fritura), 찜 요리로 조리해 번호표로 호출한다.
 
 복잡한 레스토랑의 격식 없이 합리적인 가격에 최상의 신선도를 자랑하는 해산물을 푸짐하게 즐길 수 있어 바르셀로나 여행자들에게 큰 인기를 끈다.
 
 ### Editor's Verdict
-> 사그라다 파밀리아 오전 관람(또는 산파우 병원 산책 후) 점심으로 최적의 동선에 위치한다. 예약을 받지 않고 선착순 입장하므로 점심 오픈 시각(일요일 13:00) 10분 전인 12:50에 도착해 대기 줄을 서는 것이 대기 시간을 최소화하는 정석 팁이다.
+> 사그라다 파밀리아 오전 관람 뒤 점심으로 동선이 가장 짧다. 다만 **상호가 바뀌었으므로 영업시간과 예약 방식은 방문 전에 다시 확인한다** — 공식 사이트가 영업시간을 Google 프로필로 넘기고 있어 이 가이드북은 시각을 확정으로 적지 않는다. 예약은 공식 예약 링크 또는 934 500 191 로 한다.
 
 - **Best For**: 갓 구운 제철 해산물 모둠, 맛조개 철판구이, 캐주얼 런치
 - **Best Context**: Day 02 (일요일) 사그라다 파밀리아 관람 전후 점심
@@ -49,9 +49,9 @@ source: source/CURRENT/30_Places/la-paradeta-sagrada-familia.md
 |---|---|
 | **위치** | Passatge de Simó, 18, 08025 Barcelona, Spain |
 | **좌표** | 41.4042, 2.1764 |
-| **운영 시간** | 화–토 점심 13:00–16:00 · 저녁 20:00–23:30 / 일요일 점심 13:00–16:00 (일요일 저녁 휴무) |
-| **정기 휴무** | 매주 월요일 |
-| **가격대** | 해산물 품목별 무게당 책정 · 2인 기준 약 €35~€55 |
-| **예약** | **예약 불가 (선착순 대기)** — 오픈 10분 전(12:50 / 19:50) 도착 권장 |
+| **운영 시간** | {{fact:la-paradeta-sagrada-familia.hours}} |
+| **정기 휴무** | {{fact:la-paradeta-sagrada-familia.closed}} |
+| **가격대** | 상호 변경으로 재확인 필요 {{badge:field-recheck|가격 재확인}} |
+| **예약** | {{fact:la-paradeta-sagrada-familia.booking}} |
 | **접근 교통** | 메트로 L2/L5 Sagrada Família 역에서 도보 3분 |
-| **공식 정보** | [공식 웹사이트](https://www.laparadeta.com/) (verified_at: 2026-08-21) |
+| **공식 정보** | [Puertecillo Sagrada Família 공식 페이지](https://puertecillo.es/puertecillo-sagrada-familia/) (verified_at: 2026-08-22) |

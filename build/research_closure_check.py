@@ -31,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import model  # noqa: E402
 
 PHOTO_STATUS = ROOT / "data" / "images" / "food-photo-status.json"
+GAP_DISPOSITION = ROOT / "data" / "food-completeness-disposition.json"
 DISPOSITION = ROOT / "data" / "place-facts-disposition.json"
 
 PHOTO_OK = {"VALID_GOOGLE_MAPS", "VALID_EXISTING", "NO_IMAGE"}
@@ -46,7 +47,7 @@ def check(trip) -> tuple[list[str], dict]:
     stats = {"food_entities": 0, "photo_with_identity": 0, "photo_no_image": 0,
              "wrong_business": 0, "unclassified_photo": 0,
              "orphan_fact_slugs": 0, "unclassified_slugs": 0,
-             "duplicate_canonical": 0}
+             "duplicate_canonical": 0, "undisposed_gaps": 0}
 
     known = set(trip.places) | {r.slug for r in trip.regions}
     images = model.load_images(known)["by_place"]
@@ -91,6 +92,30 @@ def check(trip) -> tuple[list[str], dict]:
                 continue
             stats["photo_with_identity"] += 1
 
+    # --- 1b) 완결성 빈칸마다 판정이 있는가 ------------------------------
+    # '아직 안 봤다' 와 '보고 나서 채우지 않기로 했다' 는 다른 상태다.
+    gaps = json.loads(GAP_DISPOSITION.read_text(encoding="utf-8"))["gaps"] \
+        if GAP_DISPOSITION.exists() else {}
+    for region in trip.regions:
+        for place in region.food_places:
+            price = place.fact("price_range") or place.fact("price_adult")
+            menus = [s.menu for d in trip.days for s in d.stops
+                     if s.menu and (s.place is place or place in s.related_places)]
+            missing = {
+                "menu": not menus,
+                "price": not (price and price.value),
+                "visit_day": not place.days,
+            }
+            for field, is_missing in missing.items():
+                if not is_missing:
+                    continue
+                rule = (gaps.get(field) or {}).get(place.slug)
+                if rule is None:
+                    stats["undisposed_gaps"] += 1
+                    problems.append(
+                        f"빈칸에 판정이 없다 — {place.slug}.{field}. "
+                        f"data/food-completeness-disposition.json 에 적는다")
+
     # --- 2·3) 명부에 없는 fact 슬러그의 판정 ------------------------------
     facts = json.loads((ROOT / "data" / "place-facts.json")
                        .read_text(encoding="utf-8"))["places"]
@@ -127,6 +152,7 @@ def main() -> int:
             ("photo_no_image", "  근거를 남기고 비운 것"),
             ("wrong_business", "잘못된 업소 사진 (목표 0)"),
             ("unclassified_photo", "미분류 사진 상태 (목표 0)"),
+            ("undisposed_gaps", "판정 없는 완결성 빈칸 (목표 0)"),
             ("orphan_fact_slugs", "명부에 없는 fact 슬러그"),
             ("unclassified_slugs", "  판정 없는 것 (목표 0)"),
             ("duplicate_canonical", "  병합 안 된 별칭 (목표 0)")):

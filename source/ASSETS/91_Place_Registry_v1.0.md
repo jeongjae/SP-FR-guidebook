@@ -25,7 +25,7 @@
 | `sant-pau-recinte-modernista` | Sant Pau Recinte Modernista | spot | 필수 | Sant Pau | chapters/barcelona/places.html | Sant Pau Recinte Modernista | Hospital de Sant Pau |
 | `sitges` | Sitges | spot | 선택 | Sitges | chapters/barcelona/places.html | Sitges | Sitges |
 | `bodega-joan` | Bodega Joan | spot | 필수 | Bodega Joan | chapters/barcelona/places.html | Bodega Joan | — |
-| `la-paradeta-sagrada-familia` | La Paradeta Sagrada Família | spot | 필수 | La Paradeta | chapters/barcelona/places.html | La Paradeta Sagrada Família | — |
+| `la-paradeta-sagrada-familia` | Puertecillo Sagrada Família | spot | 필수 | Puertecillo Sagrada Familia | chapters/barcelona/places.html | La Paradeta Sagrada Família | — |
 | `bar-canete` | Bar Cañete | spot | 필수 | Bar Cañete | chapters/barcelona/places.html | Bar Cañete | — |
 | `mercat-concepcio` | Mercat de la Concepció | spot | 우선 추천 | Mercat de la Concepció | chapters/barcelona/places.html | Mercat de la Concepció | fr:Marché de la Concepció |
 | `la-zorra` | La Zorra | spot | 우선 추천 | La Zorra | chapters/barcelona/places.html | La Zorra | — |

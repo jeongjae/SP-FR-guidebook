@@ -614,12 +614,12 @@ Josep Lluís Sert의 건축과 Miró의 작품을 함께 보는 장소다. 2026�
 - **상세 가이드**: [Bodega Joan 전체 가이드 보기](../places/bodega-joan.html)
 
 ---
-#### La Paradeta Sagrada Família {{grade:essential|필수}}
+#### Puertecillo Sagrada Família (옛 La Paradeta 자리) {{grade:essential|필수}}
 
-> **Editor's Verdict**: 얼음 위에 진열된 신선한 지중해 해산물을 골라 즉석에서 조리해 먹는 수산시장형 시푸드 바.
+> **Editor's Verdict**: 사그라다 뒤 파사체 데 시모의 해산물 마리스케리아. **2026-08-22 확인 시점에 상호가 Puertecillo 로 바뀌어 있다** — La Paradeta 공식 사이트가 이 지점을 내렸고 Puertecillo 가 같은 주소를 자기 지점으로 싣는다.
 
-- **체류/가격**: 60–75분 · **2인 약 €35~€55** (점심 13:00–16:00, 오픈 10분 전 대기)
-- **상세 가이드**: [La Paradeta Sagrada Família 전체 가이드 보기](../places/la-paradeta-sagrada-familia.html)
+- **체류**: 60–75분. 영업시간·가격은 상호 변경으로 재확인 대상이다 {{badge:field-recheck|영업시간·가격 재확인}}
+- **상세 가이드**: [Puertecillo Sagrada Família 전체 가이드 보기](../places/la-paradeta-sagrada-familia.html)
 
 ---
 #### Bar Cañete {{grade:essential|필수}}
@@ -688,7 +688,7 @@ Josep Lluís Sert의 건축과 Miró의 작품을 함께 보는 장소다. 2026�
 | 장소 | 지역·사용일 | 추천 메뉴 | 2인 예상 | 예약 |
 |---|---|---|---:|--- |
 | **Bodega Joan** | Eixample, 8/29 또는 8/30 저녁 | {{fact:bodega-joan.price_range}}, cannelloni 약 €10.50, seafood paella €15.50/인, crema catalana €5.75 | €45–70 | **권장**. 매일 영업, 온라인 예약 가능 |
-| **La Paradeta Sagrada Família** | 8/30 점심 | 홍합·새우·오징어·생선 중 당일 가격을 보고 3종 선택, 튀김+그릴 혼합 | {{fact:la-paradeta-sagrada-familia.price_range}} | **예약 없음**, 줄 서기. 일요일 13:00–16:00 |
+| **Puertecillo Sagrada Família** (옛 La Paradeta) | 8/30 점심 | 홍합·새우·오징어·생선 중 당일 가격을 보고 3종 선택, 튀김+그릴 혼합 | 상호 변경으로 재확인 {{badge:field-recheck|가격 재확인}} | {{fact:la-paradeta-sagrada-familia.booking}} |
 | **Bar Cañete** | Raval, 8/31 점심 | pan con tomate, 제철 채소, 크로켓, 생선·해산물, 오늘의 쌀요리 또는 고기 | {{fact:bar-canete.price_range}} | **필수에 가까움** |
 | **La Zorra** | Sitges, 9/1 점심 | {{fact:la-zorra.price_range}}, cheesecake €7.5 | €60–85 | **필수**, 13:00 예약 |
 ### 13.2 Bodega Joan — 예산과 전통의 균형
@@ -718,11 +718,13 @@ Josep Lluís Sert의 건축과 Miró의 작품을 함께 보는 장소다. 2026�
 
 **예약:** 매일 운영시간이 길고 온라인 예약이 가능하지만 일요일 저녁은 사전예약한다.
 
-### 13.3 La Paradeta — 사그라다 뒤의 실용적 해산물
+### 13.3 Puertecillo (옛 La Paradeta) — 사그라다 뒤의 실용적 해산물
 
 수산시장처럼 진열된 해산물을 무게로 고르고 조리법을 선택한다. 메뉴 가격은 고정 접시가 아니라 당일 중량·품목에 따라 달라진다.
 
-**주문법:** 2인 기준 홍합 1, 새우 또는 langostino 1, 오징어 또는 작은 생선 1, 샐러드·빵을 더한다. 처음부터 랍스터·대형 생선을 고르면 예산이 급증한다. 일요일은 점심만 13:00–16:00이며 예약을 받지 않으므로 **12:50 도착**한다.
+**주문법:** 2인 기준 홍합 1, 새우 또는 langostino 1, 오징어 또는 작은 생선 1, 샐러드·빵을 더한다. 처음부터 랍스터·대형 생선을 고르면 예산이 급증한다.
+
+**상호가 바뀌었다.** 예전 La Paradeta 는 예약을 받지 않고 일요일 점심만 열었다. Puertecillo 는 공식 예약 링크와 전화(934 500 191)를 안내하고 영업시간을 Google 프로필로 넘긴다 — **출발 전에 요일·시각·예약 방식을 다시 확인한다.**
 
 ### 13.4 Bar Cañete — 한 번의 집중 타파스
 
@@ -1256,7 +1258,7 @@ Girona 구간이 차량 운용비 중심이었다면 **여기는 입장료 중�
 | 09:00–09:45 | 사그라다 주변으로 이동·외관 관찰 | Plaça de Gaudí 연못 쪽에서 동쪽 파사드와 전체 높이를 먼저 본다. 소지품은 몸 앞쪽에 둔다. |
 | **15:15–17:00** | **사그라다 파밀리아 입장** | **예약완료 — General €29.12.** 14:45 Plaça de Gaudí 도착, 보안검색 대기 30분. 오후 입장이라 수난 파사드 쪽 붉은빛 시간대다. |
 | 12:10–12:50 | Avinguda de Gaudí 산책 | 사그라다에서 산파우로 이어지는 직선축. 도시가 기념건축을 일상생활과 연결하는 방식을 관찰한다. |
-| 13:00–14:15 | **La Paradeta Sagrada Família** 점심 | {{badge:unverified|영업시간 확인}} 생선·조개를 무게로 골라 조리법을 정하는 셀프서비스. 일요일 13:00–16:00, 예약 없이 줄 서는 방식. 2인 €45–70 예상. |
+| 13:00–14:15 | **Puertecillo Sagrada Família** 점심 (옛 La Paradeta 자리) | {{badge:field-recheck|영업시간·예약 재확인}} 생선·조개를 무게로 골라 조리법을 정하는 방식. 2026-08-22 확인 시점에 상호가 바뀌었다 — 예약은 공식 링크 또는 934 500 191. |
 | 14:30–16:10 | **Recinte Modernista de Sant Pau** | 도메네크 이 몬타네르의 병원 단지. 사그라다와 공동 특별전도 확인한다. |
 | 16:10–17:20 | 카페·숙소 휴식 | Three Marks Coffee 또는 숙소 복귀. 45분 이상 앉아 쉬는 시간을 확보한다. |
 | 18:00–19:10 | Gràcia 저녁 산책 | Plaça de la Virreina → Plaça del Sol → Vila de Gràcia 골목. 쇼핑보다 동네 생활감에 집중한다. |

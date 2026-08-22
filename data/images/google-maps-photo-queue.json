@@ -33,14 +33,17 @@
     {
       "slug": "la-paradeta-sagrada-familia",
       "region": "barcelona",
-      "name": "La Paradeta Sagrada Família",
+      "name": "Puertecillo Sagrada Familia",
       "address": "Passatge de Simó, 18, 08025 Barcelona",
       "acceptTitle": [
-        "La Paradeta",
-        "Paradeta"
+        "Puertecillo",
+        "Puertecillo Sagrada Familia",
+        "Puertecillo Marisquerias"
       ],
-      "altKo": "La Paradeta 사그라다 파밀리아점의 해산물 진열대",
-      "verifiedAt": "2026-08-22"
+      "altKo": "사그라다 파밀리아 뒤 파사체 데 시모의 해산물 마리스케리아 Puertecillo",
+      "verifiedAt": "2026-08-22",
+      "captionKo": "2026-08-22 확인 시점에 이 자리의 상호는 Puertecillo 다 (옛 La Paradeta).",
+      "note": "FCR-04 에서 상호 변경을 확인한 뒤 신원이 확정됐다"
     },
     {
       "slug": "la-zorra",

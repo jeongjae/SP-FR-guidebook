@@ -509,6 +509,14 @@ def timeline(d: Day, rel: str) -> str:
         if s.reservation:
             marks.append(badge("caution", "예약"))
         note = f'<p class="tl-note">{esc(s.summary)}</p>' if s.summary else ""
+        # 한 stop 이 두 장소를 담을 때 보조 장소를 명시한다. 시간표는 한 줄로
+        # 두되 장소 연결은 숨기지 않는다 — 그러지 않으면 그 장소가 어느
+        # 날에도 걸리지 않는다.
+        if s.related_places:
+            links = " · ".join(
+                f'<a href="{rel}/places/{x.slug}.html">{esc(x.name)}</a>'
+                for x in s.related_places)
+            note += f'<p class="tl-note">함께 보는 곳 — {links}</p>' 
         res = (f'<p class="tl-note">{ic("ticket")}{esc(s.reservation)}</p>'
                if s.reservation else "")
         rows.append(f"""<li class="tl-item" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
@@ -1000,6 +1008,10 @@ def place_visits(trip: Trip) -> dict[str, list[tuple[Day, Stop]]]:
         for s in d.stops:
             if s.place is not None:
                 out.setdefault(s.place.slug, []).append((d, s))
+            # 한 stop 이 두 장소를 담을 때 보조 장소도 그날을 갖는다.
+            # Day 13 의 시장 stop 이 Pâtisserie Weibel 을 함께 담는 것처럼.
+            for extra in s.related_places:
+                out.setdefault(extra.slug, []).append((d, s))
     for rows in out.values():
         rows.sort(key=lambda x: (x[0].n, x[1].order))
     return out

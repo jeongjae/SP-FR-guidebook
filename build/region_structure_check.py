@@ -231,8 +231,10 @@ def food_report(trip) -> list[dict]:
     for r in trip.regions:
         for p in r.food_places:
             price = p.fact("price_range") or p.fact("price_adult")
+            # 보조 참조(related_places)도 그 장소의 방문이다 — 한 stop 이 두
+            # 장소를 담는 경우가 있다. 리포트가 카드와 다른 수를 세면 안 된다.
             menus = sorted({s.menu for d in trip.days for s in d.stops
-                            if s.place is p and s.menu})
+                            if s.menu and (s.place is p or p in s.related_places)})
             rows.append({
                 "region": r.slug, "slug": p.slug, "name": p.name,
                 "entity_type": p.entity_type,

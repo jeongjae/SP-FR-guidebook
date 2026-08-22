@@ -57,10 +57,9 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 WANT = "=w1600-h1200-k-no"
 
 
-def fold(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s or "")
-    s = "".join(c for c in s if not unicodedata.combining(c))
-    return re.sub(r"[^a-z0-9]", "", s.lower())
+# 신원 대조 규칙은 build/identity_match.py 한 곳에 있다. 여기서 다시 만들지
+# 않는다 — 예전에 이 함수의 사본이 빈 문자열을 통과시켰다.
+from identity_match import fold, names_match  # noqa: E402
 
 
 def street_tokens(address: str) -> list[str]:

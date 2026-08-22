@@ -32,7 +32,10 @@
       "menu": "Calisson d'Aix, 크루아상, 카페 오 레",
       "reservation": null,
       "optional": false,
-      "place_ref": "place-richelme-place-des-precheurs"
+      "place_ref": "place-richelme-place-des-precheurs",
+      "related_place_refs": [
+        "patisserie-weibel"
+      ]
     },
     {
       "id": "vieil-aix",

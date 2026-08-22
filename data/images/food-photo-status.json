@@ -47,11 +47,18 @@
    "checkedAt": "2026-08-22"
   },
   "la-paradeta-sagrada-familia": {
-   "status": "NO_IMAGE",
+   "status": "VALID_GOOGLE_MAPS",
    "region": "barcelona",
-   "why": "Google Maps 가 이 주소에서 다른 상호(?)를 돌려준다 — 같은 업소로 확인되지 않아 사진을 쓰지 않는다",
-   "mapsUrl": null,
-   "priorFindings": "공식 홈페이지 재사용 불가 · Commons 후보 없음(질의 4회)",
+   "businessIdentity": {
+    "name": "Puertecillo Sagrada Familia",
+    "resolvedName": "Puertecillo Sagrada Familia",
+    "address": "Passatge de Simó, 18, 08025 Barcelona",
+    "placeKey": "0x12a4a2c33f9d6983:0x20e3e0cbae1446fe"
+   },
+   "photoSource": "google_maps",
+   "sourceUrl": "https://www.google.com/maps/place/Puertecillo+Sagrada+Familia/@41.404494,2.1734418,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2c33f9d6983:0x20e3e0cbae1446fe!8m2!3d41.404494!4d2.1734418!16s%2Fg%2F1hc2v7pw4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "imageId": "barcelona-la-paradeta-sagrada-familia-gm01",
+   "why": "FCR-04 에서 상호 변경(La Paradeta → Puertecillo)을 공식 사이트 두 곳으로 확인한 뒤 신원이 확정돼 사진을 받았다",
    "checkedAt": "2026-08-22"
   },
   "la-zorra": {

@@ -1865,30 +1865,46 @@
       }
     },
     "la-paradeta-sagrada-familia": {
-      "displayName": "La Paradeta Sagrada Família",
+      "displayName": "Puertecillo Sagrada Família",
       "region": "barcelona",
       "grade": "essential",
       "facts": {
-        "hours": {
-          "value": "화–토 13:00–16:00 / 20:00–23:30 · 일 13:00–16:00 (일요일 저녁 휴무)",
+        "address": {
+          "value": "Passatge de Simó 18, 08025 Barcelona",
           "confidence": "official",
-          "source": "https://www.laparadeta.com/",
-          "verified_at": "2026-08-21",
-          "ttl_days": 90
-        },
-        "closed": {
-          "value": "매주 월요일 정기휴무",
-          "confidence": "official",
-          "source": "https://www.laparadeta.com/",
-          "verified_at": "2026-08-21",
-          "ttl_days": 90
+          "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
+          "verified_at": "2026-08-22",
+          "ttl_days": 180
         },
         "booking": {
-          "value": "예약 불가 (선착순 현장 대기, 오픈 10분 전 도착 권장)",
+          "value": "공식 예약 링크로 지점 선택 · 전화 934 500 191 · sagradafamilia@puertecillo.es",
           "confidence": "official",
-          "source": "https://www.laparadeta.com/",
-          "verified_at": "2026-08-21",
+          "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
+          "verified_at": "2026-08-22",
           "ttl_days": 90
+        },
+        "hours": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
+          "verified_at": "2026-08-22",
+          "ttl_days": 30,
+          "blocked_reason": "공식 사이트가 영업시간을 Google 프로필로 넘긴다 — 방문 전 확인"
+        },
+        "closed": {
+          "value": "",
+          "confidence": "unreachable",
+          "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
+          "verified_at": "2026-08-22",
+          "ttl_days": 30,
+          "blocked_reason": "휴무일이 공식 페이지에 표기되지 않는다"
+        },
+        "note": {
+          "value": "2026-08-22 확인 — 이 자리는 La Paradeta 가 아니라 Puertecillo Sagrada Família 다. La Paradeta 공식 사이트가 Born·Sagrada Família·Paral·lel 세 지점을 감췄고, Puertecillo 공식 사이트가 같은 주소 세 곳을 자기 지점으로 싣는다. 해산물 마리스케리아라는 성격은 같다",
+          "confidence": "official",
+          "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
+          "verified_at": "2026-08-22",
+          "ttl_days": 180
         },
         "duration": {
           "value": "60–75분",
@@ -1896,20 +1912,6 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
-        },
-        "price_range": {
-          "value": "€18-€28/인",
-          "confidence": "official",
-          "source": "https://www.laparadeta.com/",
-          "verified_at": "2026-08-21",
-          "ttl_days": 180
-        },
-        "note": {
-          "value": "2026-08-22 Google Maps 확인 — 같은 주소(Passatge de Simó 18)가 'Puertecillo Sagrada Família' 로 나온다. 방문 전 영업 여부를 반드시 재확인한다.",
-          "confidence": "secondary",
-          "source": "https://www.google.com/maps/search/La+Paradeta+Sagrada+Familia+Passatge+de+Simo+18+Barcelona",
-          "verified_at": "2026-08-22",
-          "ttl_days": 30
         }
       }
     },
@@ -4985,15 +4987,15 @@
         "hours": {
           "value": "화·목 07:00–13:30 · 일 07:00–14:30",
           "confidence": "official",
-          "source": "https://www.paris.fr/equipements/marche-convention-5460",
-          "verified_at": "2026-08-21",
+          "source": "https://opendata.paris.fr/explore/dataset/marches-decouverts/",
+          "verified_at": "2026-08-22",
           "ttl_days": 90
         },
         "closed": {
-          "value": "월·수·금·토 휴무 (인근 토요 대안: Marché Grenelle)",
+          "value": "월·수·금·토 휴무. 토요일 15구 대안은 Marché Lecourbe·Lefebvre·Cervantès(수·토) 다 — Marché Grenelle 은 수·일이라 토요 대안이 아니다",
           "confidence": "official",
-          "source": "https://www.paris.fr/equipements/marche-convention-5460",
-          "verified_at": "2026-08-21",
+          "source": "https://opendata.paris.fr/explore/dataset/marches-decouverts/",
+          "verified_at": "2026-08-22",
           "ttl_days": 90
         },
         "booking": {
@@ -5016,6 +5018,13 @@
           "source": "https://www.paris.fr/equipements/marche-convention-5460",
           "verified_at": "2026-08-21",
           "ttl_days": 180
+        },
+        "note": {
+          "value": "출처 충돌 — 파리시 오픈데이터(marches-decouverts)는 화·목·일이고 paris.fr 시장 목록 페이지는 화·목·토로 적는다. 일정은 두 출처가 모두 동의하는 날만 쓴다 (화요일). 2026-08-22 확인",
+          "confidence": "secondary",
+          "source": "https://opendata.paris.fr/explore/dataset/marches-decouverts/",
+          "verified_at": "2026-08-22",
+          "ttl_days": 30
         }
       }
     },

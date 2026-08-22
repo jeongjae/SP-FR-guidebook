@@ -137,10 +137,17 @@ def main():
                     skipped_no_weekly += 1
                     continue
                 d, src = day_of_line(lines, idx, spans, year)
+                alt = []
                 if d is None:
                     days = pdays.get(pid, {}).get("days") or []
                     if days:
-                        d, src = cal.get(days[0]), "place-days"
+                        # 이 줄이 어느 방문을 가리키는지 본문에 없다. 첫 날만 보고
+                        # 충돌이라 부르면 여러 날 가는 곳에서 헛경보가 난다 —
+                        # Le Marais 는 월(지구 산책)·화(카르나발레) 둘 다 가는데
+                        # 첫 날이 월이라는 이유로 박물관 휴관을 충돌로 냈다.
+                        # 예정된 날이 **전부** 닫혀 있을 때만 충돌로 본다.
+                        alt = [cal.get(n) for n in days if cal.get(n)]
+                        d, src = (alt[0] if alt else None), "place-days"
                 if d is None:
                     skipped_no_day += 1
                     continue
@@ -148,6 +155,10 @@ def main():
                 by_source[src] = by_source.get(src, 0) + 1
                 wd = WD[d.weekday()]
                 if AVOID.search(line):
+                    avoided += 1
+                    continue
+                open_day = next((x for x in alt if WD[x.weekday()] not in closed_wd), None)
+                if open_day is not None:
                     avoided += 1
                     continue
                 if wd in closed_wd:
