@@ -134,19 +134,34 @@ python3 build/site.py                    # 빌드가 구조 가드를 함께 돈
 ## 6. 남은 7개 지역
 
 템플릿과 모델은 이미 8개 지역 전부에 적용됐다. 구조는 같은 코드가 만든다 —
-지역 전용 우회로는 없다. 남은 것은 **콘텐츠**다.
+**지역 전용 분기는 코드에 0개다.** 남은 것은 콘텐츠다.
 
-| 지역 | 식당·카페 | 사진 | 가격 사실 | 비고 |
-|---|---:|---:|---:|---|
-| barcelona | 5 | 1 | 5 | 파일럿 완료 |
-| girona | 2 | 0 | 0 | |
-| nice | 2 | 0 | 0 | 챕터의 구역별·교통 절이 거의 비어 있다 |
-| aix | 2 | 0 | 0 | 원고가 '현지 결정'인데 숙소는 확정 — 원고 갱신 필요 |
-| luberon | 0 | — | — | 사 먹는 구간이 아니다 (자가취사) |
-| avignon | 3 | 0 | 0 | `les-halles` 를 FOOD_HALL 로 승격 검토 |
-| lyon | 3 | 0 | 0 | `halles-de-lyon-paul-bocuse` 를 FOOD_HALL 로 승격 검토 |
-| paris | 5 | 0 | 0 | |
+FCR-02B(안정화)에서 Aix SOT 충돌·Nice 원고 결손·사진 슬러그 어긋남·연속 표
+열 손실을 정리했다. 상세는 `FCR02B_STABILIZATION_QA.md`.
 
-`FCR02_RESTAURANT_CAFE_MARKET_RESEARCH.csv` 계열 파일이 지역별로 이미
-`price_range`·`source_url`·`verified_at` 을 들고 있다. Barcelona 에 한 것과
-같은 방식으로 `data/place-facts.json` 에 옮기면 가격 칸이 채워진다.
+| 지역 | 식당·카페 | 사진 | 가격 사실 | region-essentials | 비고 |
+|---|---:|---:|---:|:-:|---|
+| barcelona | 5 | 1 | 5 | O | 파일럿 완료 |
+| girona | 2 | 1 | 0 | · | |
+| nice | 2 | 0 | 0 | O | FCR-02B 에서 보강 |
+| aix | 2 | 0 | 0 | · | 확정 숙소로 원고 갱신 완료 |
+| luberon | 0 | — | — | · | 사 먹는 구간이 아니다 (자가취사) |
+| avignon | 3 | 0 | 0 | · | `les-halles` 를 FOOD_HALL 로 승격 검토 |
+| lyon | 3 | 1 | 0 | · | `halles-de-lyon-paul-bocuse` 승격 검토 |
+| paris | 5 | 3 | 0 | · | |
+
+지역 하나당 할 일은 넷이다 — ① `region-essentials` 추가 ② 조사 CSV 의
+`price_range` 를 place-facts 로 이관 ③ 신원이 확인된 사진만
+`photo-queue.json` 에 넣고 `scripts/add_commons_photo.py` 실행
+④ 세 검사가 0 을 유지하는지 확인.
+
+## 7. 검사 세 개
+
+```
+python3 build/region_structure_check.py   구조 · 분류 · 방문일 · 링크 · 완결성
+python3 build/media_lookup_check.py       사진이 조용히 사라지지 않는가
+python3 build/table_loss_check.py         붙어 있는 표가 열을 잃지 않는가
+```
+
+앞의 둘은 `build/site.py` 가 함께 돈다. 셋 다 8개 지역 전수로 돈다 —
+Barcelona 에서만 통과하는 검사는 없다.

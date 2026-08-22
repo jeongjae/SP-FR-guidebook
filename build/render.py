@@ -348,18 +348,24 @@ def mask_booking_codes(html_text: str) -> str:
 
 # ---------------------------------------------------------------- 이미지
 
-def load_image_index() -> dict:
-    if not IMAGE_MANIFEST.exists():
-        return {"by_place": {}, "heroes": {}}
-    raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
-    by_place, heroes = {}, {}
-    for img in raw.get("images", []):
-        pid = img.get("placeId")
-        if pid and pid not in by_place:
-            by_place[pid] = img
-        if img.get("regionHero") and img.get("region"):
-            heroes.setdefault(img["region"], img)
-    return {"by_place": by_place, "heroes": heroes}
+NAME_ALIASES = ROOT / "data" / "place-name-aliases.json"
+
+
+def load_name_aliases() -> dict[str, list[str]]:
+    """장소 이름 줄임말. 코드가 아니라 데이터로 둔다."""
+    if not NAME_ALIASES.exists():
+        return {}
+    return json.loads(NAME_ALIASES.read_text(encoding="utf-8")).get("aliases", {})
+
+
+def load_image_index(trip: Trip | None = None) -> dict:
+    """사진 색인. 잇는 규칙은 model.load_images 하나뿐이다 — 여기서 다시
+    만들지 않는다. 예전에는 두 곳에 같은 로직이 있었고, 그래서 별칭을 한 곳만
+    고치면 다른 쪽이 조용히 옛 규칙으로 돌았다."""
+    known = None
+    if trip is not None:
+        known = set(trip.places) | {r.slug for r in trip.regions}
+    return model.load_images(known)
 
 
 def img_src(img: dict, role: str, rel: str) -> tuple[str, str]:
@@ -727,6 +733,26 @@ def build_place(p: Place, trip: Trip) -> str:
         parts.append(sec_head("DEEP GUIDE", "더 깊이", rule=True))
         parts.append(f'<div class="prose">{md(body)}</div>')
 
+    # --- 다른 사진 --------------------------------------------------------
+    # 한 장소에 사진이 여러 장 있으면 예전에는 첫 장만 쓰고 나머지는 저장소에
+    # 남아 화면에 영영 안 나왔다. 별칭을 정리하고 나니 22장이 그 상태가 됐다.
+    # 사진마다 제 설명과 저작자를 달고 나온다.
+    extras = IMAGES.get("extras", {}).get(p.slug) or []
+    if extras:
+        figs = []
+        for img in extras:
+            fig = figure(img, rel, "content", "gallery-shot",
+                         "(min-width:600px) 50vw, 100vw")
+            if not fig:
+                continue
+            caption = esc(img.get("captionKo") or img.get("titleKo") or "")
+            figs.append(f'<figure class="gallery-item">{fig}'
+                        f'<figcaption>{caption}{credit_line(img)}</figcaption>'
+                        "</figure>")
+        if figs:
+            parts.append(sec_head("PHOTOS", "다른 사진"))
+            parts.append(f'<div class="grid grid-2">{"".join(figs)}</div>')
+
     # 같은 지역의 다른 장소 — 길이 끊기지 않게 옆으로 나가는 문을 둔다
     if region:
         sibs = [x for x in region.places if x.slug != p.slug and x.summary][:6]
@@ -870,75 +896,32 @@ def build_day(d: Day, trip: Trip) -> str:
 
 
 def link_food_text(text: str, rel: str, trip: Trip) -> str:
-    """Link recognized canonical food places mentioned within text."""
+    """문장 안의 식당·시장 이름을 장소 페이지로 잇는다.
+
+    정식 이름은 명부에서 그대로 잡고, 원고가 쓰는 줄임말('La Paradeta' ·
+    'Bouillon Chartier')만 `data/place-name-aliases.json` 에서 읽는다.
+    예전에는 이 별칭이 렌더러 안의 slug 분기 30여 개로 있었다 — 지역이
+    늘 때마다 렌더러를 고치게 되는 구조라 지역 전용 우회로의 씨앗이었다.
+    """
     escaped = esc(text)
-    name_to_place = getattr(trip, "_food_name_map", None)
-    if name_to_place is None:
+    name_map = getattr(trip, "_food_name_map", None)
+    if name_map is None:
         name_to_place = {}
         for p in trip.places.values():
             name_to_place[p.name] = p
-            if p.slug == "bar-canete":
-                name_to_place["Bar Cañete"] = p
-            elif p.slug == "bodega-joan":
-                name_to_place["Bodega Joan"] = p
-            elif p.slug == "la-paradeta-sagrada-familia":
-                name_to_place["La Paradeta"] = p
-            elif p.slug == "la-zorra":
-                name_to_place["La Zorra"] = p
-            elif p.slug == "restaurant-beatrice":
-                name_to_place["Restaurant & Salon de Thé Béatrice"] = p
-                name_to_place["Restaurant Béatrice"] = p
-            elif p.slug == "le-figuier-de-saint-esprit":
-                name_to_place["Le Figuier de Saint-Esprit"] = p
-            elif p.slug == "patisserie-weibel":
-                name_to_place["Pâtisserie Weibel"] = p
-                name_to_place["Weibel"] = p
-            elif p.slug == "chez-gilbert-cassis":
-                name_to_place["Chez Gilbert"] = p
-            elif p.slug == "fou-de-fafa-avignon":
-                name_to_place["Fou de Fafa"] = p
-            elif p.slug == "les-cocottes-saint-louis":
-                name_to_place["Les Cocottes Saint-Louis"] = p
-            elif p.slug == "le-gibolin-arles":
-                name_to_place["Le Gibolin"] = p
-            elif p.slug == "cafe-comptoir-abel":
-                name_to_place["Café Comptoir Abel"] = p
-            elif p.slug == "daniel-et-denise":
-                name_to_place["Daniel et Denise"] = p
-            elif p.slug == "chez-mamie-lise":
-                name_to_place["Chez Mamie Lise"] = p
-            elif p.slug == "halles-de-lyon-paul-bocuse":
-                name_to_place["Halles Paul Bocuse"] = p
-                name_to_place["Halles de Lyon"] = p
-            elif p.slug == "cafe-du-commerce":
-                name_to_place["Café du Commerce"] = p
-            elif p.slug == "bouillon-chartier-montparnasse":
-                name_to_place["Bouillon Chartier Montparnasse"] = p
-                name_to_place["Bouillon Chartier"] = p
-            elif p.slug == "le-grand-pan":
-                name_to_place["Le Grand Pan"] = p
-            elif p.slug == "boulangerie-pichard":
-                name_to_place["Boulangerie Pichard"] = p
-                name_to_place["Pichard"] = p
-            elif p.slug == "marche-convention":
-                name_to_place["Marché Convention"] = p
-            elif p.slug == "mercat-concepcio":
-                name_to_place["Mercat de la Concepció"] = p
-            elif p.slug == "mercat-del-lleo":
-                name_to_place["Mercat del Lleó"] = p
-            elif p.slug == "marche-forville":
-                name_to_place["Marché Forville"] = p
-            elif p.slug == "cours-saleya":
-                name_to_place["Cours Saleya"] = p
-            elif p.slug == "marche-de-la-liberation":
-                name_to_place["Marché de la Libération"] = p
-            elif p.slug == "les-halles":
-                name_to_place["Les Halles d'Avignon"] = p
-                name_to_place["Les Halles"] = p
+        for slug, names in load_name_aliases().items():
+            p = trip.places.get(slug)
+            if p is None:
+                continue
+            for name in names:
+                name_to_place.setdefault(name, p)
+        # 긴 이름을 먼저 맞춘다 — 'Les Halles' 가 "Les Halles d'Avignon" 을
+        # 반쪽만 잡아 링크가 이름 가운데서 끊기던 일이 있었다.
+        name_map = sorted(name_to_place.items(), key=lambda x: len(x[0]),
+                          reverse=True)
+        trip._food_name_map = name_map
 
-        trip._food_name_map = sorted(name_to_place.items(), key=lambda x: len(x[0]), reverse=True)
-
-    for name, p in trip._food_name_map:
+    for name, p in name_map:
         esc_name = esc(name)
         pattern = re.compile(rf"(?<![\">])({re.escape(esc_name)})(?![^<]*</a>)")
         if pattern.search(escaped):
@@ -1192,6 +1175,25 @@ def build_region(r: Region, trip: Trip) -> str:
         parts.append(alert("caution",
                            f"<strong>우천 전환</strong> — {esc(r.rain_plan)}"))
     # 접어 넣은 층. 섹션을 하나씩 세우지 않는다 — 개요 상단이 무거워진다.
+    # 지역 사진 중 히어로로 쓰이지 않은 것. 예전에는 카탈로그에 있으면서
+    # 화면에 영영 안 나왔다 (barcelona-city-aerial-01 · luberon-valley-01).
+    region_photos = []
+    other = IMAGES["by_place"].get(r.slug)
+    if other and other is not hero_img:
+        region_photos.append(other)
+    region_photos += IMAGES.get("extras", {}).get(r.slug) or []
+    figs = []
+    for img in region_photos:
+        fig = figure(img, rel, "content", "gallery-shot",
+                     "(min-width:600px) 50vw, 100vw")
+        if not fig:
+            continue
+        caption = esc(img.get("captionKo") or img.get("titleKo") or "")
+        figs.append(f'<figure class="gallery-item">{fig}<figcaption>'
+                    f'{caption}{credit_line(img)}</figcaption></figure>')
+    if figs:
+        parts.append(f'<div class="grid grid-2">{"".join(figs)}</div>')
+
     for title, key in (("생략해도 되는 것", "skip"),
                        ("한눈에 보기 — 우선순위·소요시간", "overview"),
                        ("여행 전체에서의 역할", "role"),
@@ -1227,12 +1229,43 @@ def build_region(r: Region, trip: Trip) -> str:
     parts.append(sec_head("RESTAURANTS & CAFÉS", "식당과 카페", rule=True))
     food = r.food_places
     if food:
-        parts.append('<div class="grid grid-2">'
-                     + "".join(food_card(p, rel, trip) for p in food) + "</div>")
+        # 하위 묶음 셋. 명부의 entity_type 을 그대로 쓴다 — 화면에서 나누되
+        # 정본 분류를 새로 만들지 않는다. 한 묶음뿐이면 제목을 달지 않는다.
+        groups = [
+            ("RESTAURANTS", "식당", ("restaurant", "wine-bar")),
+            ("CAFÉS", "카페·빵집", ("cafe", "bakery")),
+            ("MARKETS", "시장·푸드홀", ("market", "food-hall")),
+        ]
+        filled = [(label, title, [p for p in food if p.entity_type in kinds])
+                  for label, title, kinds in groups]
+        filled = [g for g in filled if g[2]]
+        for label, title, places in filled:
+            if len(filled) > 1:
+                parts.append(sec_head(label, title))
+            parts.append('<div class="grid grid-2">'
+                         + "".join(food_card(p, rel, trip) for p in places)
+                         + "</div>")
     else:
         parts.append(alert("info",
                            "이 구간에는 예약·확정된 식당이 없다. 끼니는 그날의 "
                            "Day 페이지가 정본이다.", "food"))
+    # 요리 사진. 장소가 아니라 요리를 찍은 것이라 어느 장소 카드에도 붙일 수
+    # 없다 — 붙이면 그 가게 사진처럼 읽힌다. 지역의 음식 자리에 제 이름으로
+    # 나온다.
+    dish_photos = IMAGES.get("dishes", {}).get(r.slug) or []
+    if dish_photos:
+        figs = []
+        for img in dish_photos:
+            fig = figure(img, rel, "content", "gallery-shot",
+                         "(min-width:600px) 33vw, 50vw")
+            if not fig:
+                continue
+            figs.append(f'<figure class="gallery-item">{fig}<figcaption>'
+                        f'<strong>{esc(img.get("dishLabel") or "")}</strong>'
+                        f'{credit_line(img)}</figcaption></figure>')
+        if figs:
+            parts.append(f'<div class="grid grid-3">{"".join(figs)}</div>')
+
     dishes = region_dishes(r)
     if dishes:
         parts.append('<details class="acc"><summary>이 지역에서 먹는 것</summary>'

@@ -27,16 +27,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import model  # noqa: E402
 from model import Place, Region, Trip  # noqa: E402
 
-# 지금 렌더러가 '먹거리' 목록에서 걸러내는 실행 메모. 이 목록은
-# render.build_region 의 것과 같아야 한다 — 감사에서 세는 것과 화면에
-# 나오는 것이 달라지면 감사가 거짓말을 한다.
-GENERIC_FOOD_NOTES = [
-    "기내", "편의점", "물만", "이동용 물", "출발 시각", "숙소 간단식", "숙소 저녁",
-    "숙소식", "숙소 점심", "숙소권 간단", "숙소권 저녁 또는 숙소식", "숙소식 또는 동네",
-    "이동 중 간단식", "숙소 주변 가벼운 저녁", "가벼운 저녁", "가벼운 점심",
-    "이른 저녁", "저녁 무예약", "동네 저녁 (무예약)", "가까운 저녁",
-    "첫 장보기", "필수품만", "점심·휴식", "브런치·숙소", "숙소권 가벼운 점심",
-]
+# 걸러내는 실행 메모 목록은 렌더러의 것을 그대로 쓴다. 두 벌로 두면 감사에서
+# 세는 것과 화면에 나오는 것이 갈린다 — 그때 감사는 거짓말을 한다.
+from render import GENERIC_FOOD_NOTES  # noqa: E402
 
 FOOD_KIND_ENTITY = {
     "RESTAURANT": "restaurant",
@@ -366,8 +359,8 @@ def food_completeness(trip: Trip) -> list[dict]:
     """식당·카페 카드가 갖춰야 할 것이 실제로 있는가. 없는 것은 숨기지 않는다."""
     import re
     out = []
-    images = model.load_images()
-    images.pop("__heroes__", None)
+    images = model.load_images(
+        set(trip.places) | {r.slug for r in trip.regions})["by_place"]
     for p in trip.places.values():
         if not is_food_entity(entity_type(p)):
             continue
@@ -404,16 +397,17 @@ def main() -> int:
 
     completeness = food_completeness(trip)
 
-    # 카탈로그에는 있는데 어느 장소도 가리키지 않는 사진. 슬러그가 어긋나면
+    # 카탈로그에는 있는데 어느 장소도 가리키지 않던 사진. 슬러그가 어긋나면
     # 사진이 저장소에 있으면서 화면에는 영영 안 나온다 — 실제로
-    # mercat-de-la-concepcio 가 그랬다.
-    images = model.load_images()
-    images.pop("__heroes__", None)
+    # mercat-de-la-concepcio 가 그랬다. 판정은 place-aliases.json 하나가 한다.
     known = set(trip.places) | {r.slug for r in trip.regions}
-    photo_orphans = sorted(
-        ({"placeId": pid, "imageId": img.get("imageId")}
-         for pid, img in images.items() if pid not in known),
-        key=lambda x: x["placeId"])
+    idx = model.load_images(known)
+    photo_orphans = (
+        [{"placeId": x["placeId"], "imageId": x["imageId"], "verdict": "unmapped"}
+         for x in idx["unmapped"]]
+        + [{"placeId": x.get("placeId"), "imageId": x.get("imageId"),
+            "verdict": "unregistered", "why": x.get("why", "")}
+           for x in idx["unregistered"]])
 
     # --- 요약 ------------------------------------------------------------
     def n(pred):
@@ -517,7 +511,7 @@ def main() -> int:
         "food_places": "식당·카페·시장 장소",
         "food_places_without_photo": "사진 없는 식당·카페",
         "food_places_without_price": "가격 근거 없는 식당·카페",
-        "photo_orphans": "어느 장소도 가리키지 않는 사진",
+        "photo_orphans": "장소로 잇지 못한 사진 (명부 미등재)",
     }
     for k, v in summary.items():
         md.append(f"| {label.get(k, k)} | {v} |")
@@ -544,13 +538,15 @@ def main() -> int:
                   f"| {m(c['map'])} | {m(c['menu'])} | {m(c['price'])} "
                   f"| {c['price_verified_at'] or '—'} | {m(c['hours'])} | {m(c['booking'])} "
                   f"| {','.join('D%d' % d for d in c['visit_days']) or '**없음**'} |")
-    md += ["", "## 어느 장소도 가리키지 않는 사진", "",
-           "카탈로그에는 있는데 명부의 슬러그와 맞지 않아 화면에 영영 안 나오는",
-           "사진이다. 요리 사진(socca·xuixo 등)은 장소가 아니라 정상이고,",
-           "나머지는 슬러그 오타이거나 승격되지 않은 장소다.", "",
-           "| placeId | imageId |", "|---|---|"]
+    md += ["", "## 장소로 잇지 못한 사진", "",
+           "판정의 정본은 `data/images/place-aliases.json` 하나다.",
+           "`unmapped` 는 0 이어야 한다 — 별칭표에 없는 placeId 가 들어오면",
+           "빌드가 선다. `unregistered` 는 실재하지만 명부에 없는 장소로,",
+           "장소 승격이 있어야 화면에 올라간다.", "",
+           "| placeId | imageId | 판정 | 이유 |", "|---|---|---|---|"]
     for o in photo_orphans:
-        md.append(f"| `{o['placeId']}` | {o['imageId']} |")
+        md.append(f"| `{o['placeId']}` | {o['imageId']} | {o['verdict']} "
+                  f"| {o.get('why', '')} |")
 
     (ROOT / "REGION_CONTENT_AUDIT.md").write_text("\n".join(md) + "\n",
                                                   encoding="utf-8")

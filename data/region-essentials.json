@@ -18,6 +18,26 @@
         "data/daily-cards/day-04.json",
         "source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md"
       ]
+    },
+    "nice": {
+      "staySummary": "확정 숙소는 Masséna 광장 북서쪽 Verdi 가의 Palais ALZIRA(12 Rue Verdi)다. Nice-Ville 역과 Promenade des Anglais 가 모두 도보권이라 5박 내내 차 없이 움직인다. 주방과 세탁기를 갖춘 50㎡ 로프트다. 체크인 18:00–19:00 · 체크아웃 11:00.",
+      "lifeEssentials": [
+        "Day 7 은 16:55 공항 도착이라 첫날은 체크인과 동네 산책까지만 한다. 장보기는 다음 날 아침으로 넘긴다.",
+        "주방과 세탁기가 있다. 5박 중 세탁 1회를 넣을 수 있고 아침은 숙소에서 해결한다.",
+        "장보기는 Day 8 아침 Cours Saleya 시장이 기본이다. 슈퍼·약국은 상호를 고정하지 않고 필요할 때 숙소 주변의 현재 영업점을 지도에서 확인한다.",
+        "시내는 도보와 트램이다. 공항 T2 에서 La Carte(보증금 €2)에 Multi voyages 를 충전해 둘이 나눠 쓴다."
+      ],
+      "arrivalStrategy": "Day 7 NCE 16:55 도착. 수하물 수령 뒤 트램 2호선으로 숙소 생활권까지 이동해 18:00–19:00 사이에 체크인한다. 공항 T2 에서 익명 La Carte 에 Multi voyages 를 충전한다 — Aéro 왕복권과 1일권은 이번 이용 횟수에 맞지 않는다.",
+      "departureStrategy": "Day 12 08:00 체크아웃. Nice-Ville 역 Hertz 영업소(Avenue Thiers)에서 09:00 자동변속 컴팩트를 인수해 Saint-Paul-de-Vence·Grasse 를 거쳐 Aix 로 간다. 이 인수가 이후 구간 전체의 시작점이다.",
+      "lateReturnRule": "당일치기는 TER 로 돌아온다. Day 10 은 망통에서 20:30 복귀라 낮에 막차 시각을 미리 확인한다. Nice-Ville 에서 숙소까지는 도보권이다.",
+      "sourceRefs": [
+        "data/daily-cards/day-07.json",
+        "data/daily-cards/day-08.json",
+        "data/daily-cards/day-10.json",
+        "data/daily-cards/day-11.json",
+        "data/daily-cards/day-12.json",
+        "source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
+      ]
     }
   }
 }

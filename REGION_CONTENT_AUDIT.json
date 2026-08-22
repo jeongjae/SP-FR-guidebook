@@ -1,7 +1,7 @@
 {
  "summary": {
   "regions": 8,
-  "inventory_rows": 412,
+  "inventory_rows": 420,
   "food_in_attractions": 22,
   "attraction_in_food": 17,
   "mealslot_in_food": 7,
@@ -9,12 +9,12 @@
   "at_a_glance_sections": 8,
   "footer_role_rhythm": 14,
   "transport_strings_copied_from_days": 86,
-  "transport_blocks_after_merge": 27,
+  "transport_blocks_after_merge": 29,
   "cross_region_food_duplicates": 5,
   "food_places": 22,
-  "food_places_without_photo": 21,
+  "food_places_without_photo": 16,
   "food_places_without_price": 1,
-  "photo_orphans": 39
+  "photo_orphans": 11
  },
  "inventory": [
   {
@@ -1784,6 +1784,110 @@
    "source": "data/daily-cards/day-*.json (hotel)",
    "action": "KEEP",
    "note": "확정"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:staySummary",
+   "title": "확정 숙소는 Masséna 광장 북서쪽 Verdi 가의 Palais ALZIRA(12 Rue Verdi)다.",
+   "current_section": "숙박·생활",
+   "entity_type": "stay-note",
+   "target_section": "accommodation",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[0]",
+   "title": "Day 7 은 16:55 공항 도착이라 첫날은 체크인과 동네 산책까지만 한다. 장보기는 다음 날 아침으로 넘",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[1]",
+   "title": "주방과 세탁기가 있다. 5박 중 세탁 1회를 넣을 수 있고 아침은 숙소에서 해결한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[2]",
+   "title": "장보기는 Day 8 아침 Cours Saleya 시장이 기본이다. 슈퍼·약국은 상호를 고정하지 않고 필요할 ",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:life[3]",
+   "title": "시내는 도보와 트램이다. 공항 T2 에서 La Carte(보증금 €2)에 Multi voyages 를 충전해",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": "숙박과 생활을 두 섹션으로 가른다"
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:lateReturnRule",
+   "title": "당일치기는 TER 로 돌아온다. Day 10 은 망통에서 20:30 복귀라 낮에 막차 시각을 미리 확인한다.",
+   "current_section": "숙박·생활",
+   "entity_type": "local-life",
+   "target_section": "localLife",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "MOVE",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:arrivalStrategy",
+   "title": "Day 7 NCE 16:55 도착. 수하물 수령 뒤 트램 2호선으로 숙소 생활권까지 이동해 18:00–19:",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.arrival",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
+  },
+  {
+   "region": "nice",
+   "item_id": "essentials:departureStrategy",
+   "title": "Day 12 08:00 체크아웃. Nice-Ville 역 Hertz 영업소(Avenue Thiers)에서 0",
+   "current_section": "교통",
+   "entity_type": "transport",
+   "target_section": "transport.departure",
+   "duplicate": false,
+   "day_refs": [],
+   "source": "data/region-essentials.json",
+   "action": "KEEP",
+   "note": ""
   },
   {
    "region": "nice",
@@ -6235,7 +6339,7 @@
    "name": "Mercat del Lleó",
    "region": "girona",
    "entity_type": "market",
-   "photo": false,
+   "photo": true,
    "description": true,
    "deep_guide": true,
    "website": true,
@@ -6290,7 +6394,7 @@
    "name": "Daniel et Denise",
    "region": "lyon",
    "entity_type": "restaurant",
-   "photo": false,
+   "photo": true,
    "description": true,
    "deep_guide": true,
    "website": true,
@@ -6347,7 +6451,7 @@
    "name": "Bouillon Chartier Montparnasse",
    "region": "paris",
    "entity_type": "restaurant",
-   "photo": false,
+   "photo": true,
    "description": true,
    "deep_guide": true,
    "website": true,
@@ -6388,7 +6492,7 @@
    "name": "Café du Commerce",
    "region": "paris",
    "entity_type": "restaurant",
-   "photo": false,
+   "photo": true,
    "description": true,
    "deep_guide": true,
    "website": true,
@@ -6429,7 +6533,7 @@
    "name": "Marché Convention",
    "region": "paris",
    "entity_type": "market",
-   "photo": false,
+   "photo": true,
    "description": true,
    "deep_guide": true,
    "website": true,
@@ -6447,160 +6551,70 @@
  ],
  "photoOrphans": [
   {
-   "placeId": "aix-en-provence",
-   "imageId": "aix-city-01"
-  },
-  {
-   "placeId": "aix-markets",
-   "imageId": "aix-markets-01"
-  },
-  {
-   "placeId": "annecy-vieille-ville",
-   "imageId": "lyon-annecy-vieille-01"
-  },
-  {
-   "placeId": "avinguda-de-gaudi",
-   "imageId": "barcelona-avinguda-gaudi-01"
-  },
-  {
    "placeId": "cadaques",
-   "imageId": "girona-cadaques-01"
-  },
-  {
-   "placeId": "canal-saint-martin",
-   "imageId": "paris-canal-saint-martin-01"
-  },
-  {
-   "placeId": "cathedrale-saint-jean-lyon",
-   "imageId": "lyon-saint-jean-01"
-  },
-  {
-   "placeId": "crema-catalana",
-   "imageId": "barcelona-crema-catalana-01"
-  },
-  {
-   "placeId": "croisette",
-   "imageId": "nice-croisette-01"
-  },
-  {
-   "placeId": "eixample",
-   "imageId": "barcelona-eixample-01"
-  },
-  {
-   "placeId": "jardin-du-luxembourg",
-   "imageId": "paris-luxembourg-01"
-  },
-  {
-   "placeId": "lake-annecy",
-   "imageId": "lyon-lake-annecy-01"
-  },
-  {
-   "placeId": "les-halles-avignon",
-   "imageId": "avignon-halles-01"
-  },
-  {
-   "placeId": "lourmarin-2",
-   "imageId": "luberon-lourmarin-2-01"
-  },
-  {
-   "placeId": "marche-des-enfants-rouges",
-   "imageId": "paris-enfants-rouges-01"
-  },
-  {
-   "placeId": "marche-monge",
-   "imageId": "paris-marche-monge-01"
-  },
-  {
-   "placeId": "monaco-cathedral",
-   "imageId": "nice-monaco-cathedral-01"
-  },
-  {
-   "placeId": "monaco-ville",
-   "imageId": "nice-monaco-ville-01"
-  },
-  {
-   "placeId": "monte-carlo",
-   "imageId": "nice-monte-carlo-01"
-  },
-  {
-   "placeId": "montmartre",
-   "imageId": "paris-montmartre-01"
-  },
-  {
-   "placeId": "pa-amb-tomaquet",
-   "imageId": "barcelona-pa-amb-tomaquet-01"
-  },
-  {
-   "placeId": "palais-royal",
-   "imageId": "paris-palais-royal-01"
-  },
-  {
-   "placeId": "pantheon-paris",
-   "imageId": "paris-pantheon-01"
-  },
-  {
-   "placeId": "passages-couverts",
-   "imageId": "paris-passages-01"
-  },
-  {
-   "placeId": "pissaladiere",
-   "imageId": "nice-pissaladiere-01"
-  },
-  {
-   "placeId": "place-du-palais",
-   "imageId": "nice-palais-01"
-  },
-  {
-   "placeId": "roussillon",
-   "imageId": "luberon-roussillon-01"
-  },
-  {
-   "placeId": "sacre-coeur",
-   "imageId": "paris-sacre-coeur-01"
-  },
-  {
-   "placeId": "sant-feliu-de-guixols",
-   "imageId": "girona-sant-feliu-01"
-  },
-  {
-   "placeId": "seine",
-   "imageId": "paris-seine-01"
-  },
-  {
-   "placeId": "sentier-des-ocres",
-   "imageId": "luberon-ocres-01"
-  },
-  {
-   "placeId": "socca",
-   "imageId": "nice-socca-01"
-  },
-  {
-   "placeId": "suquet-de-peix",
-   "imageId": "girona-suquet-01"
-  },
-  {
-   "placeId": "thiou",
-   "imageId": "lyon-thiou-01"
+   "imageId": "girona-cadaques-01",
+   "verdict": "unregistered",
+   "why": "Cadaqués 는 명부에 없다. Day 5 동선에 있으나 장소로 승격되지 않았다"
   },
   {
    "placeId": "tossa-de-mar",
-   "imageId": "girona-tossa-01"
+   "imageId": "girona-tossa-01",
+   "verdict": "unregistered",
+   "why": "Tossa de Mar 는 명부에 없다"
   },
   {
-   "placeId": "traboules",
-   "imageId": "lyon-traboules-01"
+   "placeId": "sant-feliu-de-guixols",
+   "imageId": "girona-sant-feliu-01",
+   "verdict": "unregistered",
+   "why": "Day 6 점심 슬롯이 가리키는 곳인데 장소로 승격되지 않았다"
   },
   {
-   "placeId": "trianon",
-   "imageId": "paris-trianon-01"
+   "placeId": "pantheon-paris",
+   "imageId": "paris-pantheon-01",
+   "verdict": "unregistered",
+   "why": "팡테옹은 명부에 없다. 라탱 지구 장소와 별개 건물이라 임의로 잇지 않는다"
   },
   {
-   "placeId": "versailles-gardens",
-   "imageId": "paris-versailles-gardens-01"
+   "placeId": "jardin-du-luxembourg",
+   "imageId": "paris-luxembourg-01",
+   "verdict": "unregistered",
+   "why": "뤽상부르 공원은 명부에 없다. 뤽상부르 미술관과 다른 대상이다"
   },
   {
-   "placeId": "xuixo",
-   "imageId": "girona-xuixo-01"
+   "placeId": "marche-monge",
+   "imageId": "paris-marche-monge-01",
+   "verdict": "unregistered",
+   "why": "몽주 시장은 명부에 없다"
+  },
+  {
+   "placeId": "palais-royal",
+   "imageId": "paris-palais-royal-01",
+   "verdict": "unregistered",
+   "why": "팔레 루아얄은 명부에 없다"
+  },
+  {
+   "placeId": "passages-couverts",
+   "imageId": "paris-passages-01",
+   "verdict": "unregistered",
+   "why": "갤러리 비비엔 등 아케이드는 명부에 없다"
+  },
+  {
+   "placeId": "marche-des-enfants-rouges",
+   "imageId": "paris-enfants-rouges-01",
+   "verdict": "unregistered",
+   "why": "앙팡 루주 시장은 명부에 없다. 마레 장소와 별개 대상이다"
+  },
+  {
+   "placeId": "canal-saint-martin",
+   "imageId": "paris-canal-saint-martin-01",
+   "verdict": "unregistered",
+   "why": "생마르탱 운하는 명부에 없다"
+  },
+  {
+   "placeId": "seine",
+   "imageId": "paris-seine-01",
+   "verdict": "unregistered",
+   "why": "센강변 부키니스트는 명부에 없다"
   }
  ]
 }

@@ -84,7 +84,7 @@ def main() -> int:
     shell.MAPS_META = ("\n".join(metas) + "\n") if metas else ""
     print(f"지도 키: {'있음' if render.MAPS_KEY else '없음 — 목록으로 연다'}")
 
-    render.IMAGES = render.load_image_index()
+    render.IMAGES = render.load_image_index(trip)
     render.FACTS = model.load_facts()
     render.HOTEL_QUERIES = {
         k: v["query"] for k, v in
@@ -146,6 +146,16 @@ def main() -> int:
             print("  " + problem)
         return 1
     print("지역 구조 가드: 분류·섹션·방문일·링크 이상 없음")
+
+    # 사진이 저장소에 있으면서 화면에 안 나오는 일을 막는다.
+    import media_lookup_check
+    media_problems, _ = media_lookup_check.check(trip)
+    if media_problems:
+        print("사진 연결 가드 실패:")
+        for problem in media_problems[:20]:
+            print("  " + problem)
+        return 1
+    print("사진 연결 가드: 미매핑 0 · 조용히 사라진 사진 0")
 
     total = sum(1 for _ in SITE.rglob("*.html"))
     print(f"\n완료: {SITE} ({total}쪽 · 검색 색인 {len(render.SEARCH_INDEX)}건)")

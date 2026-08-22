@@ -11,7 +11,7 @@
 | 항목 | 값 |
 |---|---:|
 | 지역 수 | 8 |
-| 인벤토리 항목 | 412 |
+| 인벤토리 항목 | 420 |
 | **장소 섹션에 있던 식당·카페·시장** | 22 |
 | **먹거리 섹션에 있던 관광지** | 17 |
 | 먹거리 섹션의 업소 아닌 식사 슬롯 | 7 |
@@ -19,12 +19,12 @@
 | 제거 대상 한눈에 보기 섹션 | 8 |
 | 제거 대상 꼬리말 블록 | 14 |
 | Day 에서 복사해 오던 교통 문자열 | 86 |
-| 통합 후 남는 교통 블록 | 27 |
+| 통합 후 남는 교통 블록 | 29 |
 | 지역을 넘나든 식당 카드 | 5 |
 | 식당·카페·시장 장소 | 22 |
-| 사진 없는 식당·카페 | 21 |
+| 사진 없는 식당·카페 | 16 |
 | 가격 근거 없는 식당·카페 | 1 |
-| 어느 장소도 가리키지 않는 사진 | 39 |
+| 장소로 잇지 못한 사진 (명부 미등재) | 11 |
 
 ## Barcelona (`barcelona`)
 
@@ -165,6 +165,14 @@
 | 추천 체류 리듬 | 꼬리말 | editorial | overview | — | **MOVE** | 페이지 하단 꼬리말에서 Overview 로 올린다 |
 | 이 지역의 날들 — Day 카드 6장 | 일정 | schedule-index | overview | D7,D8,D9,D10,D11,D12 | **MOVE** | 일정 섹션을 없앤다. Day 로 가는 길은 끊지 않는다 — Overview 의 날짜 칩과 카드의 방문일 배지가 같은 Day 를 가리킨다 |
 | Palais ALZIRA · 12 Rue Verdi | 숙박·생활 | stay | accommodation | D7,D8,D9,D10,D11 | **KEEP** | 확정 |
+| 확정 숙소는 Masséna 광장 북서쪽 Verdi 가의 Palais ALZIRA(12 Rue Verdi)다. | 숙박·생활 | stay-note | accommodation | — | **KEEP** |  |
+| Day 7 은 16:55 공항 도착이라 첫날은 체크인과 동네 산책까지만 한다. 장보기는 다음 날 아침으로 넘 | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 주방과 세탁기가 있다. 5박 중 세탁 1회를 넣을 수 있고 아침은 숙소에서 해결한다. | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 장보기는 Day 8 아침 Cours Saleya 시장이 기본이다. 슈퍼·약국은 상호를 고정하지 않고 필요할  | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 시내는 도보와 트램이다. 공항 T2 에서 La Carte(보증금 €2)에 Multi voyages 를 충전해 | 숙박·생활 | local-life | localLife | — | **MOVE** | 숙박과 생활을 두 섹션으로 가른다 |
+| 당일치기는 TER 로 돌아온다. Day 10 은 망통에서 20:30 복귀라 낮에 막차 시각을 미리 확인한다. | 숙박·생활 | local-life | localLife | — | **MOVE** |  |
+| Day 7 NCE 16:55 도착. 수하물 수령 뒤 트램 2호선으로 숙소 생활권까지 이동해 18:00–19: | 교통 | transport | transport.arrival | — | **KEEP** |  |
+| Day 12 08:00 체크아웃. Nice-Ville 역 Hertz 영업소(Avenue Thiers)에서 0 | 교통 | transport | transport.departure | — | **KEEP** |  |
 | 렌터카 — BCN T1 반납 12:30 (요청) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D7 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | VY1521 15:30→16:55 (확정 [CONFIRMED]) | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D7 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
 | NCE 도착 후 트램 2호선 이동 | 교통 — 자유문자열 목록 | transport | transport.publicTransport | D7 | **DELETE** | Day 가 정본이다. 같은 문자열이 Day 페이지 '이동' 접이식에 이미 있고 지역 페이지가 그것을 복사해 왔다 |
@@ -493,62 +501,35 @@
 | barcelona | La Zorra | restaurant | **X** | O | O | O | O | O | O | 2026-08-21 | O | O | D4 |
 | barcelona | Mercat de la Concepció | market | O | O | O | O | O | **X** | O | 2026-08-21 | O | O | D3 |
 | girona | Casa Marieta | restaurant | **X** | O | O | O | O | O | O | — | O | O | **없음** |
-| girona | Mercat del Lleó | market | **X** | O | O | O | O | **X** | **X** | — | O | O | **없음** |
+| girona | Mercat del Lleó | market | O | O | O | O | O | **X** | **X** | — | O | O | **없음** |
 | lyon | Café Comptoir Abel | restaurant | **X** | O | O | O | O | O | O | — | O | O | D23 |
 | lyon | Chez Mamie Lise | restaurant | **X** | O | O | O | O | **X** | O | — | O | O | D26 |
-| lyon | Daniel et Denise | restaurant | **X** | O | O | O | O | O | O | — | O | O | D24 |
+| lyon | Daniel et Denise | restaurant | O | O | O | O | O | O | O | — | O | O | D24 |
 | nice | Le Figuier de Saint-Esprit | restaurant | **X** | O | O | O | O | O | O | — | O | O | D9 |
 | nice | Restaurant & Salon de Thé Béatrice | restaurant | **X** | O | O | O | O | O | O | — | O | O | D11 |
-| paris | Bouillon Chartier Montparnasse | restaurant | **X** | O | O | O | O | O | O | — | O | O | D30 |
+| paris | Bouillon Chartier Montparnasse | restaurant | O | O | O | O | O | O | O | — | O | O | D30 |
 | paris | Boulangerie Pichard | bakery | **X** | O | O | O | O | **X** | O | — | O | O | D28,D31,D35,D38 |
-| paris | Café du Commerce | restaurant | **X** | O | O | O | O | O | O | — | O | O | D28,D32,D42 |
+| paris | Café du Commerce | restaurant | O | O | O | O | O | O | O | — | O | O | D28,D32,D42 |
 | paris | Le Grand Pan | restaurant | **X** | O | O | O | O | O | O | — | O | O | D34,D41 |
-| paris | Marché Convention | market | **X** | O | O | O | O | **X** | O | — | O | O | D29,D36 |
+| paris | Marché Convention | market | O | O | O | O | O | **X** | O | — | O | O | D29,D36 |
 
-## 어느 장소도 가리키지 않는 사진
+## 장소로 잇지 못한 사진
 
-카탈로그에는 있는데 명부의 슬러그와 맞지 않아 화면에 영영 안 나오는
-사진이다. 요리 사진(socca·xuixo 등)은 장소가 아니라 정상이고,
-나머지는 슬러그 오타이거나 승격되지 않은 장소다.
+판정의 정본은 `data/images/place-aliases.json` 하나다.
+`unmapped` 는 0 이어야 한다 — 별칭표에 없는 placeId 가 들어오면
+빌드가 선다. `unregistered` 는 실재하지만 명부에 없는 장소로,
+장소 승격이 있어야 화면에 올라간다.
 
-| placeId | imageId |
-|---|---|
-| `aix-en-provence` | aix-city-01 |
-| `aix-markets` | aix-markets-01 |
-| `annecy-vieille-ville` | lyon-annecy-vieille-01 |
-| `avinguda-de-gaudi` | barcelona-avinguda-gaudi-01 |
-| `cadaques` | girona-cadaques-01 |
-| `canal-saint-martin` | paris-canal-saint-martin-01 |
-| `cathedrale-saint-jean-lyon` | lyon-saint-jean-01 |
-| `crema-catalana` | barcelona-crema-catalana-01 |
-| `croisette` | nice-croisette-01 |
-| `eixample` | barcelona-eixample-01 |
-| `jardin-du-luxembourg` | paris-luxembourg-01 |
-| `lake-annecy` | lyon-lake-annecy-01 |
-| `les-halles-avignon` | avignon-halles-01 |
-| `lourmarin-2` | luberon-lourmarin-2-01 |
-| `marche-des-enfants-rouges` | paris-enfants-rouges-01 |
-| `marche-monge` | paris-marche-monge-01 |
-| `monaco-cathedral` | nice-monaco-cathedral-01 |
-| `monaco-ville` | nice-monaco-ville-01 |
-| `monte-carlo` | nice-monte-carlo-01 |
-| `montmartre` | paris-montmartre-01 |
-| `pa-amb-tomaquet` | barcelona-pa-amb-tomaquet-01 |
-| `palais-royal` | paris-palais-royal-01 |
-| `pantheon-paris` | paris-pantheon-01 |
-| `passages-couverts` | paris-passages-01 |
-| `pissaladiere` | nice-pissaladiere-01 |
-| `place-du-palais` | nice-palais-01 |
-| `roussillon` | luberon-roussillon-01 |
-| `sacre-coeur` | paris-sacre-coeur-01 |
-| `sant-feliu-de-guixols` | girona-sant-feliu-01 |
-| `seine` | paris-seine-01 |
-| `sentier-des-ocres` | luberon-ocres-01 |
-| `socca` | nice-socca-01 |
-| `suquet-de-peix` | girona-suquet-01 |
-| `thiou` | lyon-thiou-01 |
-| `tossa-de-mar` | girona-tossa-01 |
-| `traboules` | lyon-traboules-01 |
-| `trianon` | paris-trianon-01 |
-| `versailles-gardens` | paris-versailles-gardens-01 |
-| `xuixo` | girona-xuixo-01 |
+| placeId | imageId | 판정 | 이유 |
+|---|---|---|---|
+| `cadaques` | girona-cadaques-01 | unregistered | Cadaqués 는 명부에 없다. Day 5 동선에 있으나 장소로 승격되지 않았다 |
+| `tossa-de-mar` | girona-tossa-01 | unregistered | Tossa de Mar 는 명부에 없다 |
+| `sant-feliu-de-guixols` | girona-sant-feliu-01 | unregistered | Day 6 점심 슬롯이 가리키는 곳인데 장소로 승격되지 않았다 |
+| `pantheon-paris` | paris-pantheon-01 | unregistered | 팡테옹은 명부에 없다. 라탱 지구 장소와 별개 건물이라 임의로 잇지 않는다 |
+| `jardin-du-luxembourg` | paris-luxembourg-01 | unregistered | 뤽상부르 공원은 명부에 없다. 뤽상부르 미술관과 다른 대상이다 |
+| `marche-monge` | paris-marche-monge-01 | unregistered | 몽주 시장은 명부에 없다 |
+| `palais-royal` | paris-palais-royal-01 | unregistered | 팔레 루아얄은 명부에 없다 |
+| `passages-couverts` | paris-passages-01 | unregistered | 갤러리 비비엔 등 아케이드는 명부에 없다 |
+| `marche-des-enfants-rouges` | paris-enfants-rouges-01 | unregistered | 앙팡 루주 시장은 명부에 없다. 마레 장소와 별개 대상이다 |
+| `canal-saint-martin` | paris-canal-saint-martin-01 | unregistered | 생마르탱 운하는 명부에 없다 |
+| `seine` | paris-seine-01 | unregistered | 센강변 부키니스트는 명부에 없다 |

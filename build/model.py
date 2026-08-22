@@ -52,6 +52,7 @@ REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
 TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
 TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
+IMAGE_ALIASES = ROOT / "data" / "images" / "place-aliases.json"
 
 WEEKDAY_KO = "월화수목금토일"
 
@@ -482,25 +483,67 @@ def load_facts() -> dict[str, dict[str, Fact]]:
     return out
 
 
-def load_images() -> dict[str, dict]:
-    """placeId → 이미지. 카탈로그에 없으면 사진 자리를 아예 만들지 않는다.
+def load_image_aliases() -> dict[str, dict]:
+    """사진 카탈로그의 placeId → 장소 명부 슬러그. 판정의 정본은 이 파일 하나다."""
+    if not IMAGE_ALIASES.exists():
+        return {}
+    raw = json.loads(IMAGE_ALIASES.read_text(encoding="utf-8"))
+    return raw.get("aliases", {})
+
+
+def load_images(known: set[str] | None = None) -> dict:
+    """사진 카탈로그를 장소·지역에 잇는다. **잇는 자리는 여기 하나다.**
 
     라이선스·출처·저작자가 없는 이미지는 빌드가 거부한다. 이 사이트는
     gh-pages 로 공개 배포되므로 '개인 사용만 허용' 은 실제로 쓸 수 없다.
+
+    카탈로그의 `placeId` 는 명부 슬러그가 아니다. 사진 프로그램이 명부보다
+    먼저 '주제 키'(socca · monaco-ville · versailles-gardens)로 사진을 모았고,
+    명부는 그 뒤에 다른 이름 공간으로 자랐다. 문자열 정규화로는 이어지지
+    않는다 — 의미가 다르기 때문이다. 그래서 사람이 판정한 별칭표
+    (`data/images/place-aliases.json`)를 통과시킨다.
+
+    돌려주는 것:
+        by_place      슬러그 → 대표 사진 한 장
+        extras        슬러그 → 그 다음 사진들 (장소 페이지 갤러리가 쓴다)
+        heroes        지역 → 지역 히어로
+        dishes        지역 → 요리 사진들 (장소가 아니다)
+        unregistered  명부에 없는 장소의 사진 (승격 후보)
+        unmapped      별칭표에 없는 placeId — 0 이어야 한다
     """
+    out = {"by_place": {}, "extras": {}, "heroes": {}, "dishes": {},
+           "unregistered": [], "unmapped": []}
     if not IMAGE_MANIFEST.exists():
-        return {}
+        return out
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
     images = raw if isinstance(raw, list) else raw.get("images", [])
-    by_place, heroes = {}, {}
+    aliases = load_image_aliases()
     for img in images:
-        pid = img.get("placeId")
-        if pid and pid not in by_place:
-            by_place[pid] = img
         if img.get("regionHero"):
-            heroes.setdefault(img.get("region") or img.get("regionSlug"), img)
-    by_place["__heroes__"] = heroes
-    return by_place
+            out["heroes"].setdefault(img.get("region") or img.get("regionSlug"), img)
+        pid = img.get("placeId")
+        if not pid:
+            continue
+        slug = pid
+        if known is not None and pid not in known:
+            rule = aliases.get(pid)
+            if rule is None:
+                out["unmapped"].append({"placeId": pid,
+                                        "imageId": img.get("imageId")})
+                continue
+            if rule["verdict"] == "dish":
+                out["dishes"].setdefault(rule.get("region"), []).append(
+                    {**img, "dishLabel": rule.get("label") or img.get("titleKo")})
+                continue
+            if rule["verdict"] != "place":
+                out["unregistered"].append({**img, "why": rule.get("why", "")})
+                continue
+            slug = rule["slug"]
+        if slug in out["by_place"]:
+            out["extras"].setdefault(slug, []).append(img)
+        else:
+            out["by_place"][slug] = img
+    return out
 
 
 PLACE_FM = re.compile(r"^---\n(.*?)\n---\n", re.S)
@@ -678,15 +721,18 @@ def load_trip() -> Trip:
 
     # --- 장소 조립: 명부 + 장문 + 사실 + 사진 -----------------------------
     facts = load_facts()
-    images = load_images()
-    heroes = images.pop("__heroes__", {})
+    registry_rows = load_registry()
+    known_slugs = ({r["slug"] for r in registry_rows}
+                   | {r["slug"] for r in regions_raw})
+    images = load_images(known_slugs)
+    heroes = images["heroes"]
     bodies = load_place_bodies()
 
     # 지도를 이름으로 여는 검색어. 여기 없는 슬러그는 좌표·주소 폴백으로 남는다.
     map_queries = _load_validated_json(MAP_QUERIES).get("places", {})
 
     places: dict[str, Place] = {}
-    for row in load_registry():
+    for row in registry_rows:
         body = bodies.get(row["slug"], {})
         places[row["slug"]] = Place(
             slug=row["slug"], name=row["name"], region=row["region"],
@@ -700,7 +746,7 @@ def load_trip() -> Trip:
             body_md=body.get("body", ""),
             practical_md=body.get("practical_md", ""),
             facts=facts.get(row["slug"], {}),
-            photo=images.get(row["slug"]),
+            photo=images["by_place"].get(row["slug"]),
         )
 
     # --- Day ↔ Place: stop.id 로 직접 잇는다 ------------------------------

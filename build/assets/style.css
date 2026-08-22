@@ -445,6 +445,22 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
 .day-chips > * { flex: 0 0 auto; }
 .day-chips .badge-day { min-height: 44px; padding-inline: var(--s3); }
 
+/* 사진 갤러리. 한 장소·한 지역에 여러 장이 있을 때 쓴다. 설명과 저작자를
+   사진마다 달고 나온다 — 표시 의무가 사진 단위로 붙기 때문이다. */
+.gallery-item { margin: 0; }
+.gallery-shot {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-md);
+  display: block;
+}
+.gallery-item figcaption {
+  margin-top: var(--s2);
+  font-size: var(--t-small);
+  color: var(--text-2);
+}
+.gallery-item figcaption .meta { margin: 0; }
+
 /* ================= MetadataRow ================= */
 .metarow {
   display: flex;
