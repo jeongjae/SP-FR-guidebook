@@ -80,7 +80,7 @@ Avignon 체류 중에는 성벽 남쪽 산책로나 론(Rhône) 강변, 바르�
 
 ## Arles는 TER
 
-Arles 당일치기는 Avignon Centre역에서 TER 기차를 이용한다. 17분 직통으로 연결되어 도심 운전과 주차 걱정 없이 구시가지를 걷는다.
+Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 구시가지는 걸어서 둘러본다.
 
 ## Lyon으로 출발하는 날
 
@@ -139,7 +139,7 @@ Arles 당일치기는 Avignon Centre역에서 TER 기차를 이용한다. 17분 
 
 #### Pont du Gard {{grade:essential|필수}}
 
-> **Editor's Verdict**: 우제스 수원지에서 님(Nîmes)까지 50km를 중력만으로 흐르게 한 기원 1세기 3층 로마 수도교. 높이 48.8m 고대 수력 토목공학 걸작.
+> **Editor's Verdict**: 우제스 수원지에서 님(Nîmes)까지 50km를 중력만으로 흐르게 한 기원 1세기 3층 로마 수도교. 1층 피토 도로교 자유 보행 횡단 및 양안 전망대 외관 조망 (3층 수로는 공식 가이드 투어 전용).
 
 - **체류/요금**: 1.5–2.5시간 · 차량당 €9.50 주차/입장 정액 (Rive Gauche 좌안 주차장 권장)
 - **상세 가이드**: [Pont du Gard 전체 심화 가이드 보기](../places/pont-du-gard.html)
@@ -251,51 +251,6 @@ Arles 당일치기는 Avignon Centre역에서 TER 기차를 이용한다. 17분 
 
 ---
 
-#### Les Baux-de-Provence {{grade:alternative|대체}}
-
-> **Editor's Verdict (Alpilles 대체 옵션)**: 알피유 산맥 석회암 절벽 위에 우뚝 솟은 중세 독수리 요새 마을 (Arles 대체 옵션).
-
-- **체류/요금**: 75–90분 · 마을 무료 / 성채 €9.00~€11.00
-- **상세 가이드**: [Les Baux-de-Provence 전체 심화 가이드 보기](../places/les-baux-de-provence.html)
-
----
-
-#### Carrières des Lumières {{grade:priority|우선추천}}
-
-> **Editor's Verdict (Alpilles 대체 옵션)**: 지하 백색 석회암 채석장 동굴 전체를 디지털 캔버스로 변모시킨 몰입형 미디어 아트 공간.
-
-- **체류/요금**: 60–75분 · 성인 €14.50~€16.50
-- **상세 가이드**: [Carrières des Lumières 전체 심화 가이드 보기](../places/carrieres-des-lumieres.html)
-
----
-
-#### Saint-Rémy-de-Provence {{grade:alternative|대체}}
-
-> **Editor's Verdict (Alpilles 대체 옵션)**: 노스트라다무스의 탄생지이자 반 고흐가 영감을 얻었던 알피유 북쪽 기슭의 문화 소도시.
-
-- **체류/요금**: 1.5–2시간 · **무료**
-- **상세 가이드**: [Saint-Rémy-de-Provence 전체 가이드 보기](../places/saint-remy-de-provence.html)
-
----
-
-#### Saint-Paul-de-Mausole {{grade:essential|필수}}
-
-> **Editor's Verdict (Alpilles 대체 옵션)**: 1889년 반 고흐가 자진 입원하여 명작을 탄생시킨 11세기 로마네스크 수도원 요양원.
-
-- **체류/요금**: 60–75분 · 일반 €7.00
-- **상세 가이드**: [Saint-Paul-de-Mausole 전체 심화 가이드 보기](../places/saint-paul-de-mausole.html)
-
----
-
-#### Glanum {{grade:alternative|대체}}
-
-> **Editor's Verdict (Alpilles 대체 옵션)**: 헬레니즘 도시를 거쳐 로마 제국의 온천 도시로 번영했던 거대한 고고학 발굴 유적지.
-
-- **체류/요금**: 60–75분 · 유적지 €8.00 (Les Antiques 야외 무료 조망)
-- **상세 가이드**: [Glanum 전체 가이드 보기](../places/glanum.html)
-
----
-
 ## 음식·시장·카페·생활체험
 
 ## 아비뇽과 서부 프로방스에서 맛볼 식재료
@@ -313,7 +268,7 @@ Arles 당일치기는 Avignon Centre역에서 TER 기차를 이용한다. 17분 
 
 ## 시장과 장보기
 
-- **Les Halles d'Avignon (화–일 06:00–14:00)** — 파트리크 블랑의 수직 정원 파사드가 있는 실내 시장으로, 청과물·치즈·샤퀴테리 등 4박 동안 필요한 신선 식재료를 조달하는 핵심 기준점이다. ([상세 정보](../places/les-halles.html))
+- **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
 ## 일정에서 이용하는 식당과 카페

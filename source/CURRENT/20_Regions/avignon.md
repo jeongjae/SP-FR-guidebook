@@ -55,7 +55,7 @@ Avignon 체류 중에는 성벽 남쪽 산책로나 론(Rhône) 강변, 바르�
 
 ### Arles는 TER
 
-Arles 당일치기는 Avignon Centre역에서 TER 기차를 이용한다. 17분 직통으로 연결되어 도심 운전과 주차 걱정 없이 구시가지를 걷는다.
+Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 구시가지는 걸어서 둘러본다.
 
 ### Lyon으로 출발하는 날
 
@@ -80,7 +80,7 @@ Arles 당일치기는 Avignon Centre역에서 TER 기차를 이용한다. 17분 
 
 ### 시장과 장보기
 
-- **Les Halles d'Avignon (화–일 06:00–14:00)** — 파트리크 블랑의 수직 정원 파사드가 있는 실내 시장으로, 청과물·치즈·샤퀴테리 등 4박 동안 필요한 신선 식재료를 조달하는 핵심 기준점이다. ([상세 정보](../places/les-halles.html))
+- **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
 ### 일정에서 이용하는 식당과 카페

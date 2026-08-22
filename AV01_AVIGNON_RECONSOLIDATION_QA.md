@@ -90,41 +90,41 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 ---
 
-## 7. Places Classification
+## 7. Places Classification (AV01F 최종 정돈)
 
-| 장소명 | 슬러그 | 등급 | 여행 내 역할 |
-|---|---|---|---|
-| **Les Halles d'Avignon** | `les-halles` | 필수 | Day 22 실제 장보기 및 식재료 기준점 |
-| **Palais des Papes** | `palais-des-papes` | 필수 | Day 22 실제 방문지 (히스토패드 증강현실) |
-| **Pont Saint-Bénézet** | `pont-saint-benezet` | 필수 | Day 22 실제 방문지 (아비뇽 다리 교각) |
-| **Rocher des Doms** | `rocher-des-doms` | 필수 | Day 22 실제 방문지 (바위산 파노라마 전망대) |
-| **Uzès Place aux Herbes** | `uzes` | 필수 | Day 20 실제 방문지 (공작성 및 에르브 광장) |
-| **Pont du Gard** | `pont-du-gard` | 필수 | Day 20 실제 방문지 (3층 로마 수도교) |
-| **Arènes de Nîmes** | `arenes-de-nimes` | 필수 | Day 20 실제 방문지 (로마 원형경기장) |
-| **Maison Carrée** | `maison-carree` | 필수 | Day 20 실제 방문지 (고대 로마 신전) |
-| **Arles** | `arles` | 필수 | Day 21 실제 방문지 (아를 시티 워크) |
-| **Arènes d’Arles** | `arenes-d-arles` | 필수 | Day 21 실제 방문지 (아를 원형경기장) |
-| **Théâtre Antique d'Arles** | `theatre-antique-arles` | 필수 | Day 21 실제 방문지 (고대 극장) |
-| **Place du Forum** | `place-du-forum-arles` | 우선추천 | Day 21 실제 방문지 (반 고흐 카페 광장) |
-| **Cloître Saint-Trophime** | `cloitre-saint-trophime` | 우선추천 | Day 21 실제 방문지 (로마네스크 수도원 회랑) |
-| **Fondation Vincent van Gogh Arles** | `fondation-vincent-van-gogh-arles` | 선택 | Day 21 선택 옵션 (현대미술 재단) |
-| **La Roquette** | `la-roquette` | 우선추천 | Day 21 실제 방문지 (옛 어부 지구 골목) |
-| **Fou de Fafa** | `fou-de-fafa-avignon` | 필수 | Day 22 저녁 식당 (탕튀리에 골목 비스트로) |
-| **Les Cocottes Saint-Louis** | `les-cocottes-saint-louis` | 필수 | Day 22 저녁 식당 (수도원 안뜰 비스트로) |
-| **Le Gibolin** | `le-gibolin-arles` | 필수 | Day 21 점심 식당 (아를 황소 스튜 비스트로) |
-| **Les Baux-de-Provence** | `les-baux-de-provence` | 대체 | Alpilles 대체 옵션 |
-| **Carrières des Lumières** | `carrieres-des-lumieres` | 우선추천 | Alpilles 대체 옵션 |
-| **Saint-Rémy-de-Provence** | `saint-remy-de-provence` | 대체 | Alpilles 대체 옵션 |
-| **Saint-Paul-de-Mausole** | `saint-paul-de-mausole` | 필수 | Alpilles 대체 옵션 |
-| **Glanum** | `glanum` | 대체 | Alpilles 대체 옵션 |
+| 장소명 | 슬러그 | 등급 | 여행 내 역할 | 최종 Region Card |
+|---|---|---|---|:---:|
+| **Les Halles d'Avignon** | `les-halles` | 필수 | Day 22 실제 장보기 및 식재료 기준점 | **유지** |
+| **Palais des Papes** | `palais-des-papes` | 필수 | Day 22 실제 방문지 (히스토패드 증강현실) | **유지** |
+| **Pont Saint-Bénézet** | `pont-saint-benezet` | 필수 | Day 22 실제 방문지 (아비뇽 다리 교각) | **유지** |
+| **Rocher des Doms** | `rocher-des-doms` | 필수 | Day 22 실제 방문지 (바위산 파노라마 전망대) | **유지** |
+| **Uzès Place aux Herbes** | `uzes` | 필수 | Day 20 실제 방문지 (공작성 및 에르브 광장) | **유지** |
+| **Pont du Gard** | `pont-du-gard` | 필수 | Day 20 실제 방문지 (3층 로마 수도교·1층 보행 횡단) | **유지** |
+| **Arènes de Nîmes** | `arenes-de-nimes` | 필수 | Day 20 실제 방문지 (로마 원형경기장) | **유지** |
+| **Maison Carrée** | `maison-carree` | 필수 | Day 20 실제 방문지 (고대 로마 신전) | **유지** |
+| **Arles** | `arles` | 필수 | Day 21 실제 방문지 (아를 시티 워크) | **유지** |
+| **Arènes d’Arles** | `arenes-d-arles` | 필수 | Day 21 실제 방문지 (아를 원형경기장) | **유지** |
+| **Théâtre Antique d'Arles** | `theatre-antique-arles` | 필수 | Day 21 실제 방문지 (고대 극장) | **유지** |
+| **Place du Forum** | `place-du-forum-arles` | 우선추천 | Day 21 실제 방문지 (반 고흐 카페 광장) | **유지** |
+| **Cloître Saint-Trophime** | `cloitre-saint-trophime` | 우선추천 | Day 21 실제 방문지 (로마네스크 수도원 회랑) | **유지** |
+| **Fondation Vincent van Gogh Arles** | `fondation-vincent-van-gogh-arles` | 선택 | Day 21 선택 옵션 (현대미술 재단) | **유지 (선택)** |
+| **La Roquette** | `la-roquette` | 우선추천 | Day 21 실제 방문지 (옛 어부 지구 골목) | **유지** |
+| **Fou de Fafa** | `fou-de-fafa-avignon` | 필수 | Day 22 저녁 식당 (탕튀리에 골목 비스트로) | **유지 (식당)** |
+| **Les Cocottes Saint-Louis** | `les-cocottes-saint-louis` | 필수 | Day 22 저녁 식당 (수도원 안뜰 비스트로) | **유지 (식당)** |
+| **Le Gibolin** | `le-gibolin-arles` | 필수 | Day 21 점심 식당 (아를 황소 스튜 비스트로) | **유지 (식당)** |
+| **Les Baux-de-Provence** | `les-baux-de-provence` | 대체 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
+| **Carrières des Lumières** | `carrieres-des-lumieres` | 우선추천 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
+| **Saint-Rémy-de-Provence** | `saint-remy-de-provence` | 대체 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
+| **Saint-Paul-de-Mausole** | `saint-paul-de-mausole` | 필수 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
+| **Glanum** | `glanum` | 대체 | 본 일정 미포함 (Dossier 보존, Region Card 제거) | **제거 (Archive-only)** |
 
 ---
 
-## 8. Food Cleanup
+## 8. Food Cleanup (AV01F 반영)
 
 - **아비뇽과 서부 프로방스에서 맛볼 식재료**: Papeton d'Aubergine, Daube avignonnaise, Brandade de Nîmes, Gardianne de taureau, Fougasse, Tapenade & Anchoïade 등 6종 1문장 기술.
 - **와인**: 론 남부 와인을 독립 문장으로 분리(`아비뇽과 서부 프로방스는 론(Rhône) 남부 와인의 중심지다. 운전하는 날에는 마시지 않고 저녁 식사 때 선택한다.`).
-- **시장 정보**: Les Halles d'Avignon 및 Place aux Herbes 2곳 링크 수록.
+- **시장 정보**: 구체적인 운영시간(화-일 06:00-14:00)을 제거하고 `Les Halles d'Avignon — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다.`로 역할 중심 기술.
 - **방문 업소**: Fou de Fafa, Les Cocottes Saint-Louis, Le Gibolin 3곳 및 식사 원칙 문단 수록.
 
 ---
@@ -135,12 +135,12 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 ---
 
-## 10. Transport Cleanup
+## 10. Transport Cleanup (AV01F 반영)
 
 - **Avignon에서 이동하기**:
   - `### 시내에서는 걷기`: 성벽 안 100% 도보 원칙
   - `### Uzès와 Pont du Gard는 렌터카`: 근교 이동 후 저녁 TGV역 최종 반납
-  - `### Arles는 TER`: 17분 직통 기차 이동 및 도보 원칙
+  - `### Arles는 TER`: exact duration(17분 직통)을 제거하고 `Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 구시가지는 걸어서 둘러본다.`로 전략 중심 기술
   - `### Lyon으로 출발하는 날`: TGV INOUI 탑승 (렌터카 절차 없음)
 
 ---
@@ -163,16 +163,16 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 ## 13. Quantitative Before / After
 
-| 지표 | Before (main) | After (AV01 Consolidation) | 변화 |
-|---|---:|---:|---:|
-| **원고 줄 수 (Chapter lines)** | 1,307 | **536** | -771 (-59.0%) |
-| **보이는 글자 수 (Visible chars, 공백 포함)** | ~21,000 | **10,147** | -10,853 (-51.7%) |
-| **순수 글자 수 (Visible chars, 공백 제외)** | ~16,200 | **7,858** | -8,342 (-51.5%) |
-| **표 개수 (Tables)** | 19 | **3** | -16 (-84.2%) |
-| **장소 카드 수** | 23 | **23** | 정합성 유지 |
-| **일정 표현 수 (Schedule representations)** | 4 | **1** | -3 (단일 정본) |
-| **원고 흔적 토큰 (Residue tokens)** | 32 | **0** | -32 (완전 박멸) |
-| **모바일 390px 스크롤 높이 (추정)** | ~65 screens | **~24 screens** | -63% 압축 |
+| 지표 | Before (main) | After (AV01) | Final (AV01F Cleanup) | 총 변화 |
+|---|---:|---:|---:|---:|
+| **원고 줄 수 (Chapter lines)** | 1,307 | 536 | **468** | -839 (-64.2%) |
+| **보이는 글자 수 (Visible chars, 공백 포함)** | ~21,000 | 10,147 | **10,068** | -10,932 (-52.1%) |
+| **순수 글자 수 (Visible chars, 공백 제외)** | ~16,200 | 7,858 | **7,796** | -8,404 (-51.9%) |
+| **표 개수 (Tables)** | 19 | 3 | **3** | -16 (-84.2%) |
+| **장소 카드 수 (Attraction & Food)** | 23 | 23 | **18** | -5 (미포함 Alpilles 제거) |
+| **일정 표현 수 (Schedule representations)** | 4 | 1 | **1** | -3 (단일 정본) |
+| **원고 흔적 토큰 (Residue tokens)** | 32 | 0 | **0** | -32 (완전 박멸) |
+| **모바일 390px 스크롤 높이 (추정)** | ~65 screens | ~24 screens | **~22 screens** | -66% 압축 |
 
 ---
 
