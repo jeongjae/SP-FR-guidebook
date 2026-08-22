@@ -139,6 +139,8 @@
 | `fou-de-fafa-avignon` | Fou de Fafa | spot | 필수 | Fou de Fafa | chapters/avignon/places.html | Fou de Fafa | — |
 | `les-cocottes-saint-louis` | Les Cocottes Saint-Louis | spot | 필수 | Les Cocottes Saint-Louis | chapters/avignon/places.html | Les Cocottes Saint-Louis | — |
 | `le-gibolin-arles` | Le Gibolin | spot | 필수 | Le Gibolin | chapters/avignon/places.html | Le Gibolin | — |
+| `arenes-de-nimes` | Arènes de Nîmes | spot | 필수 | Arènes de Nîmes | chapters/avignon/places.html | Arènes de Nîmes | fr:Arènes de Nîmes |
+| `maison-carree` | Maison Carrée | spot | 필수 | Maison Carrée | chapters/avignon/places.html | Maison Carrée | Maison Carrée |
 
 ## lyon (10)
 

@@ -25,6 +25,13 @@
       "evidence": "https://www.arlestourisme.com/en/arenas-amphitheatre.html",
       "verifiedAt": "2026-08-22"
     },
+    "arenes-de-nimes": {
+      "query": "Arènes de Nîmes, Boulevard des Arènes, Nîmes",
+      "verdict": "FOUND",
+      "resolvedName": "Arènes de Nîmes",
+      "evidence": "https://www.arenes-nimes.com/",
+      "verifiedAt": "2026-08-23"
+    },
     "arles": {
       "query": "Arles, France",
       "verdict": "FOUND",
@@ -480,6 +487,13 @@
       "resolvedName": "MACBA",
       "evidence": "https://www.macba.cat/en/plan-your-visit/",
       "verifiedAt": "2026-08-22"
+    },
+    "maison-carree": {
+      "query": "Maison Carrée, Place de la Maison Carrée, Nîmes",
+      "verdict": "FOUND",
+      "resolvedName": "Maison Carrée",
+      "evidence": "https://www.lamaisoncarree-nimes.fr/",
+      "verifiedAt": "2026-08-23"
     },
     "marche-convention": {
       "query": "Marché Convention, Paris 15",

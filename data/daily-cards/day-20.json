@@ -3,14 +3,14 @@
   "day": 20,
   "date": "2026-09-17",
   "city": "Avignon",
-  "title": "Uzès와 Pont du Gard & 렌터카 최종 반납",
+  "title": "Uzès · Pont du Gard · Nîmes & 렌터카 최종 반납",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:30",
+  "startTime": "07:45",
   "endTime": "21:00",
-  "totalDuration": "12시간 30분",
-  "totalDistance": "약 84km · 차량 이동 후 반납",
-  "fatigue": "3",
+  "totalDuration": "13시간 15분",
+  "totalDistance": "약 125km · 차량 이동 후 반납",
+  "fatigue": "4",
   "hotel": {
     "name": "La Terrasse du Clocher (후보)",
     "lat": 43.94993,
@@ -21,8 +21,8 @@
     {
       "id": "avignon-depart",
       "order": 1,
-      "start": "08:30",
-      "end": "09:15",
+      "start": "07:45",
+      "end": "08:30",
       "name": "Avignon 숙소 출발 ➔ Uzès 이동",
       "category": "hotel",
       "lat": 43.94993,
@@ -36,58 +36,88 @@
     {
       "id": "uzes",
       "order": 2,
-      "start": "09:30",
-      "end": "12:15",
+      "start": "08:30",
+      "end": "10:30",
       "name": "Uzès 구시가지 & 에르브 광장",
       "category": "sight",
       "lat": 44.0122,
       "lng": 4.4197,
-      "summary": "프랑스 최초의 공작령 도시. Place aux Herbes 아치 회랑 광장, 공작성(Duché d'Uzès) 외관, 페네스트렐 탑(Tour Fenestrelle) 조망 (2시간 45분)",
+      "summary": "프랑스 최초의 공작령 도시. Place aux Herbes 아치 회랑 광장, 공작성(Duché d'Uzès) 외관, 페네스트렐 탑(Tour Fenestrelle) 조망 (2시간)",
       "menu": "프로방스 빵, 에스프레소",
       "reservation": "주차: Parking Cordeliers (Primary) / Parking Gide (Backup)",
       "optional": false,
       "place_ref": "uzes"
     },
     {
-      "id": "uzes-lunch",
-      "order": 3,
-      "start": "12:15",
-      "end": "13:30",
-      "name": "Uzès Place aux Herbes 광장 테라스 점심",
-      "category": "food",
-      "lat": 44.0125,
-      "lng": 4.4201,
-      "summary": "Place aux Herbes 광장 플라타너스 그늘 아래 테라스 레스토랑 점심",
-      "menu": "에르브 광장 브라세리 런치, 로컬 치즈",
-      "reservation": "현장 선택",
-      "optional": false,
-      "place_ref": "uzes"
-    },
-    {
       "id": "pont-du-gard",
-      "order": 4,
-      "start": "14:15",
-      "end": "17:00",
+      "order": 3,
+      "start": "10:50",
+      "end": "12:30",
       "name": "Pont du Gard (퐁 뒤 가르 수로교)",
       "category": "sight",
       "lat": 43.9475,
       "lng": 4.535,
-      "summary": "기원전 1세기 고대 로마 3층 수로교(높이 49m). 좌안(Rive Gauche) 대형 주차장 이용 ➔ 박물관 관람 ➔ 수로교 도보 횡단 ➔ 가르동 강변 자갈밭 전경 조망 (2시간 45분). [주의] 그늘 부족, 모자/생수 필수",
+      "summary": "기원전 1세기 고대 로마 3층 수로교(높이 48.8m). 좌안(Rive Gauche) 대형 주차장 이용 ➔ 수로교 도보 횡단 및 양안 핵심 전망 (1시간 40분). [주의] 그늘 부족, 모자/생수 필수",
       "menu": null,
       "reservation": "주차/입장권 (€9.50/차량 포함) / Left Bank (Rive Gauche) 주차장",
       "optional": false,
       "place_ref": "pont-du-gard"
     },
     {
-      "id": "avignon-tgv",
+      "id": "pont-du-gard-lunch",
+      "order": 4,
+      "start": "12:30",
+      "end": "13:10",
+      "name": "Pont du Gard 간단한 점심",
+      "category": "food",
+      "lat": 43.948,
+      "lng": 4.536,
+      "summary": "Pont du Gard 좌안(Rive Gauche) 카페/스낵바에서 샌드위치 또는 간단한 점심 식사 (40분)",
+      "menu": "바게트 샌드위치, 샐러드, 에스프레소",
+      "reservation": "현장 선택",
+      "optional": false,
+      "place_ref": "pont-du-gard"
+    },
+    {
+      "id": "arenes-de-nimes",
       "order": 5,
-      "start": "17:45",
-      "end": "19:00",
+      "start": "13:45",
+      "end": "14:45",
+      "name": "Arènes de Nîmes (님 원형경기장)",
+      "category": "sight",
+      "lat": 43.8349,
+      "lng": 4.3596,
+      "summary": "서기 70년경 축조된 전 세계에서 가장 완벽하게 보존된 2단 60개 아치 로마 원형경기장(24,000명 수용). 내부 회랑 및 상단 관람석 탐방 (60분)",
+      "menu": null,
+      "reservation": "주차: Parking Arènes / Parking Maison Carrée 지하 공영주차장 이용",
+      "optional": false,
+      "place_ref": "arenes-de-nimes"
+    },
+    {
+      "id": "maison-carree",
+      "order": 6,
+      "start": "14:45",
+      "end": "15:45",
+      "name": "Maison Carrée & 님 구시가지 산책",
+      "category": "sight",
+      "lat": 43.8383,
+      "lng": 4.3562,
+      "summary": "기원전 1세기 아우구스투스 황제 후계자 헌정 신전(2023년 유네스코 세계유산). 30개 코린트식 기둥과 맞은편 Carré d'Art 건축 대비 감상 및 구시가지 연결 산책. ⚠ 15:45 Avignon TGV 이동 Hard Stop 준수 (60분)",
+      "menu": null,
+      "reservation": "15:45 Nîmes 출발 필수 (Hertz 반납 연계 Hard Stop)",
+      "optional": false,
+      "place_ref": "maison-carree"
+    },
+    {
+      "id": "avignon-tgv",
+      "order": 7,
+      "start": "16:30",
+      "end": "18:30",
       "name": "주유 ➔ Avignon TGV역 Hertz 렌터카 최종 반납",
       "category": "transport",
       "lat": 43.9219,
       "lng": 4.7861,
-      "summary": "D907 도로를 통해 아비뇽 TGV역 이동 (약 30분). 역 인근 주유소 만유 주유 ➔ Parking Loueurs P0 입차 ➔ 사방 외관·계기판 촬영 후 Hertz 영업소(평일 08:00~19:00 영업) 최종 반납. [프랑스 렌터카 반납 완료]",
+      "summary": "Nîmes에서 D999/N100 경유 아비뇽 TGV역 이동 (약 45km, 45분). 역 인근 주유소 만유 주유 ➔ Parking Loueurs P0 입차 ➔ 사방 외관·계기판·연료 촬영 후 Hertz 영업소(평일 08:00~19:00) 최종 반납 (18:30 이전 완료). [프랑스 렌터카 반납 완료]",
       "menu": null,
       "reservation": "반납 시점 변경 필요 — 기존 예약(9/20)에서 9/17 저녁 18:30 반납으로 변경 예정 (Avignon TGV 지점 평일 19:00까지 대면 반납 가능)",
       "optional": false,
@@ -95,8 +125,8 @@
     },
     {
       "id": "avignon-return",
-      "order": 6,
-      "start": "19:30",
+      "order": 8,
+      "start": "19:00",
       "end": "21:00",
       "name": "Avignon 숙소 복귀 & 저녁",
       "category": "hotel",
@@ -121,15 +151,6 @@
     },
     {
       "from": "uzes",
-      "to": "uzes-lunch",
-      "mode": "walk",
-      "duration": "2분",
-      "distance": "0.1km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "uzes-lunch",
       "to": "pont-du-gard",
       "mode": "car",
       "duration": "약 20분",
@@ -139,10 +160,37 @@
     },
     {
       "from": "pont-du-gard",
+      "to": "pont-du-gard-lunch",
+      "mode": "walk",
+      "duration": "2분",
+      "distance": "0.1km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "pont-du-gard-lunch",
+      "to": "arenes-de-nimes",
+      "mode": "car",
+      "duration": "약 35분",
+      "distance": "25.0km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "arenes-de-nimes",
+      "to": "maison-carree",
+      "mode": "walk",
+      "duration": "7분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "maison-carree",
       "to": "avignon-tgv",
       "mode": "car",
-      "duration": "약 35분 (주유 포함)",
-      "distance": "28.0km",
+      "duration": "약 45분 (주유 포함)",
+      "distance": "45.0km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
@@ -157,31 +205,32 @@
     }
   ],
   "transport": [
-    "렌터카 최종일 (Avignon ➔ Uzès ➔ Pont du Gard ➔ 주유 ➔ Avignon TGV역 Hertz 반납)",
-    "외곽 전용 주차장 (Parking Cordeliers / Pont du Gard Rive Gauche)",
+    "렌터카 최종일 (Avignon ➔ Uzès ➔ Pont du Gard ➔ Nîmes ➔ 주유 ➔ Avignon TGV역 Hertz 반납)",
+    "외곽/도심 전용 주차장 (Parking Cordeliers / Pont du Gard Rive Gauche / Nîmes Parking Arènes)",
     "TER/택시 (Avignon TGV역 ➔ Avignon 숙소 복귀)"
   ],
   "food": [
-    "Uzès 가벼운 점심",
+    "Pont du Gard 간단한 점심",
     "아비뇽 복귀 후 저녁"
   ],
   "highlights": [
-    "09:00 이전 Uzès 출발·도착",
-    "목요일 — 시장 없음 전제 (골목·광장 집중)",
+    "07:45 Avignon 조기 출발",
+    "Uzès(소도시) ➔ Pont du Gard(수로교) ➔ Nîmes(원형경기장·메종카레) 로마 유산 연결",
+    "15:45 Nîmes 출발 Hard Stop 준수",
     "18:30 이전 Hertz Avignon TGV 최종 반납 완료"
   ],
-  "backup": "폭염 또는 악천후 시 Pont du Gard 야외 체류를 60분으로 단축하고 실내 박물관 중심 관람 후 아비뇽 조기 복귀 및 렌터카 반납",
+  "backup": "일정 지연 시 Nîmes 관광을 Arènes de Nîmes 및 Maison Carrée 외관 관람(30~45분)으로 압축하여 15:45 출발 Hard Stop 및 18:30 Hertz 반납 시간 엄수",
   "map": {
     "zoom": 11,
     "center": [
-      43.975,
-      4.615
+      43.92,
+      4.55
     ],
     "routeCache": null
   },
   "needsReview": [
-    "Hertz [CONFIRMED] 예약 반납일을 9/20에서 9/17 18:30으로 변경 필요 확인",
-    "Pont du Gard 좌안(Rive Gauche) 주차장 네비게이션 설정"
+    "Hertz [CONFIRMED] 예약 반납일을 9/20에서 9/17 18:30으로 변경 필요 확인 (Action Required)",
+    "Nîmes 시내 진입 시 Parking Arènes 또는 Parking Maison Carrée 지하주차장 네비게이션 사전 설정"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-20",
@@ -191,3 +240,4 @@
     "OSM Nominatim 지오코딩 2026-08-06: Place aux Herbes"
   ]
 }
+

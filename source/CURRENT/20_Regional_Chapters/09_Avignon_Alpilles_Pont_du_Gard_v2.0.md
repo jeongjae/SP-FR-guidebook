@@ -95,22 +95,22 @@ Day 12에 니스역에서 받은 차를 Day 20(9/17) 저녁 아비뇽 TGV에서 
 | 항목 | 확정·권장 내용 |
 |---|--- |
 | 체류 | 2026년 9월 16일 수요일 체크인 → 9월 20일 일요일 체크아웃, 4박 |
-| 기본 일정 | 9/16 Luberon→Avignon 정착 / 9/17 Uzès+Pont du Gard+차량반납 / 9/18 Arles TER / 9/19 Avignon 핵심(도보) / 9/20 Lyon TGV |
-| 여행 주제 | 교황도시·성벽·론강 / 로마 수도교 / Arles의 로마·중세·반 고흐·생활도시 |
+| 기본 일정 | 9/16 Luberon→Avignon 정착 / 9/17 Uzès+Pont du Gard+Nîmes+차량반납 / 9/18 Arles TER / 9/19 Avignon 핵심(도보) / 9/20 Lyon TGV |
+| 여행 주제 | 교황도시·성벽·론강 / 로마 수도교·로마 도시 유산(Nîmes) / Arles의 로마·중세·반 고흐·생활도시 |
 | 최우선 숙소권 | **Porte Saint-Michel–Gare Centre–Corps Saints** 1순위. **Carmes–Université 동쪽 성벽권** 2순위 |
 | 숙박 형태 | 주방·세탁이 있는 아파트호텔 또는 주차가 확정되는 호텔. 성벽 깊숙한 곳보다 차량진입·야간귀가·TGV 이동 편의 우선 |
 | 계획 숙박예산 | 계획가(2026-08 조사) — 2인 4박 **€520–900** 실속·중간급 목표. 넓은 4성급 객실·프리미엄 아파트는 €900–1,250 범위 가능. 실시간 총액은 예약 시 재확인 |
-| 필수 | Les Halles·Palais des Papes·Place du Palais·Rocher des Doms·Pont Saint-Bénézet·Uzès 구시가지·Pont du Gard·Arles |
+| 필수 | Les Halles·Palais des Papes·Place du Palais·Rocher des Doms·Pont Saint-Bénézet·Uzès 구시가지·Pont du Gard·Arènes de Nîmes·Maison Carrée·Arles |
 | 선택 | Villeneuve-lès-Avignon / Fondation Vincent van Gogh / Les Baux·Saint-Rémy·Glanum 대체일 |
 | 음식 | Halles 장보기·간단 점심, 저녁은 Avignon intra-muros 레스토랑. 당일치기 날 점심은 시장·피크닉·마을 비스트로 |
 | 운동 | Jason: 성벽 남쪽·Rhône·Île de la Barthelasse 러닝 1회. Julia: 시립수영장 선택, 숙소 조건과 분리 |
 | 행사 | 9/19–20 Journées européennes du patrimoine. Avignon/Arles 세부 프로그램 출발 전 재확인 |
-| 피로도 | 도시일 3, Uzès·Pont 4, Arles 4, 이동일 3 |
+| 피로도 | 도시일 3, Uzès·Pont·Nîmes 4, Arles 4, 이동일 3 |
 | 주요 위험 | 성벽 내부 차량진입·주차, 주말 JEP 혼잡, 당일치기 차량 내 짐, 강한 미스트랄, 유적지 노출·계단, TGV역 반납 지연 |
 ```text
 9/16 Luberon 체크아웃 → Avignon 체크인·생활권 적응
         ↓
-9/17 Uzès 구시가지 → Pont du Gard → Avignon TGV Hertz 렌터카 반납
+9/17 Uzès 구시가지 → Pont du Gard → Nîmes (Arènes·Maison Carrée) → Avignon TGV Hertz 반납
         ↓
 9/18 Arles (TER): Arènes → Théâtre antique → Forum → Saint-Trophime → La Roquette
         ↓
@@ -124,7 +124,7 @@ Day 12에 니스역에서 받은 차를 Day 20(9/17) 저녁 아비뇽 TGV에서 
 | 날짜 | 테마 | 핵심 방문지 | 피로도 |
 |---|---|---|---: |
 | 9/16 수 | 뤼베롱에서 교황도시로 | 체크아웃·체크인·성벽 안 가벼운 산책 | 3/5 |
-| 9/17 목 | 가르 지방과 렌터카 최종 반납 | Uzès 구시가지·Pont du Gard·Avignon TGV 반납 | 4/5 |
+| 9/17 목 | 가르 지방·님 로마유적과 렌터카 최종 반납 | Uzès 구시가지·Pont du Gard·Nîmes(Arènes·Maison Carrée)·Avignon TGV 반납 | 4/5 |
 | 9/18 금 | Arles 철도 당일치기 | Arènes·Théâtre·Forum·Saint-Trophime·La Roquette (TER 왕복) | 4/5 |
 | 9/19 토 | 아비뇽 핵심도시일 (도보) | Les Halles·Palais·Rocher·Pont·구시가지 | 3/5 |
 | 9/20 일 | 리옹 이동 | Avignon TGV·Lyon Part-Dieu (TGV 직행) | 3/5 |
@@ -133,7 +133,7 @@ Day 12에 니스역에서 받은 차를 Day 20(9/17) 저녁 아비뇽 TGV에서 
 | Day | 날짜 | 점심 | 저녁 |
 |---|---|---|--- |
 | 19 | 9/16 수 | 이동 중 간단식 | 아비뇽 첫 저녁 |
-| 20 | 9/17 목 | Uzès 빵집·비스트로 | 아비뇽 복귀 후 저녁 |
+| 20 | 9/17 목 | Pont du Gard 간단한 점심 | 아비뇽 복귀 후 저녁 |
 | 21 | 9/18 금 | Arles 구시가지 비스트로 | 아비뇽 |
 | 22 | 9/19 토 | **Les Halles** | **프로방스 마지막 저녁** |
 | 23 | 9/20 일 | 이동 중 또는 TGV | 리옹 도착 후 |
@@ -161,11 +161,11 @@ Day 12에 니스역에서 받은 차를 Day 20(9/17) 저녁 아비뇽 TGV에서 
 
 성벽 안에 사람이 산다. 학교와 약국과 빨래방이 있다. Les Halles를 먼저 보라는 배치가 그래서 옳다.
 
-### Uzès와 Pont du Gard는 '로마유적 하루'가 아니다
+### Uzès와 Pont du Gard, Nîmes는 '로마 수력 인프라와 도시 유산'의 완결이다
 
-**우제스는 살아 있는 시장도시**이고 퐁 뒤 가르는 유적이다. 둘을 "로마 하루"로 묶으면 우제스가 들러리가 된다.
+**우제스는 살아 있는 시장도시**이고, **퐁 뒤 가르는 50km 로마 수도교의 경이로운 토목공학**, **님은 그 물을 공급받아 꽃피운 로마 제국의 핵심 식민도시**다.
 
-9월 17일의 순서 — **구시가지(오전) → 유적(오후) → TGV역 렌터카 반납(저녁)** — 가 이 구분을 반영한다.
+9월 17일의 순서 — **Uzès 구시가지(오전) → Pont du Gard 수로교(정오) → Nîmes 원형경기장·메종카레(오후) → TGV역 렌터카 반납(저녁)** — 가 이 유기적 연결을 완성한다. 15:45 Nîmes 출발 Hard Stop을 엄수하여 18:30 이전 렌터카 반납을 보장한다.
 
 ### Alpilles 선택 대안은 산지와 마을의 관계로 읽는다
 
@@ -279,7 +279,7 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 | Day | 차량 |
 |---|--- |
 | 19 | 뤼베롱 → 아비뇽 이동 · 숙소 주차장에 |
-| 20 | **렌터카 최종일**: 우제스·퐁 뒤 가르 → 저녁 Avignon TGV Hertz 반납 |
+| 20 | **렌터카 최종일**: 우제스·퐁 뒤 가르·님(Nîmes) → 저녁 Avignon TGV Hertz 반납 |
 | 21 | **차량 없음**: Arles SNCF TER 철도 왕복 (17분 소요) |
 | 22 | **차량 없음**: 아비뇽 성벽 안 전면 도보 탐방 |
 | 23 | **차량 없음**: 택시/셔틀로 Avignon TGV역 이동 후 TGV INOUI 탑승 |
@@ -293,7 +293,7 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 | 기본 | 숙소 주차장 또는 지정 공영주차 (Day 19~20) |
 | 대안 | 성벽 밖 주차 + 도보 |
 | 야간 | **차 안에 보이는 짐을 남기지 않는다** |
-| Day 20 | 퐁 뒤 가르 관람 후 저녁 Hertz 반납으로 주차 부담 종료 |
+| Day 20 | 님(Nîmes) 일정 후 저녁 Hertz 반납으로 주차 부담 종료 |
 
 {{badge:unverified|공영주차 명칭·요금 확인 필요}}
 
@@ -302,8 +302,9 @@ Rue des Teinturiers·빵집·작은 슈퍼가 모여 있고 교황궁도 도보 
 | 목적지 | 요령 |
 |---|--- |
 | **Uzès** | 구시가지 외곽 순환로(Parking Cordeliers 등)에 주차하고 걸어 다닌다. 중세 중심가는 차량 통행이 막혀 있다 |
-| **Pont du Gard** | 공식 주차장(Rive Gauche 좌안) 이용 · 수로교 도보 횡단 |
-| **Avignon TGV Hertz** | D907 경유 역 인근 주유 후 Parking Loueurs P0 입차 · 사방 외관 촬영 후 18:30 이전 최종 반납 (평일 19:00까지 대면 반납 가능) |
+| **Pont du Gard** | 공식 주차장(Rive Gauche 좌안) 이용 · 수로교 도보 횡단 및 간단한 점심 |
+| **Nîmes** | Parking Arènes 또는 Parking Maison Carrée 지하주차장 이용 · 2시간 핵심 관람 · **15:45 출발 Hard Stop** |
+| **Avignon TGV Hertz** | D999/N100 경유 역 인근 주유 후 Parking Loueurs P0 입차 · 사방 외관 촬영 후 18:30 이전 최종 반납 (평일 19:00까지 대면 반납 가능) |
 
 ## Day 21 Arles 철도 당일치기
 
