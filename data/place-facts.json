@@ -1864,7 +1864,7 @@
         }
       }
     },
-    "la-paradeta-sagrada-familia": {
+    "puertecillo-sagrada-familia": {
       "displayName": "Puertecillo Sagrada Família",
       "region": "barcelona",
       "grade": "essential",
@@ -1877,30 +1877,28 @@
           "ttl_days": 180
         },
         "booking": {
-          "value": "공식 예약 링크로 지점 선택 · 전화 934 500 191 · sagradafamilia@puertecillo.es",
+          "value": "공식 예약 링크로 지점 선택 · 전화 +34 934 500 191 · sagradafamilia@puertecillo.es",
           "confidence": "official",
           "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
           "verified_at": "2026-08-22",
           "ttl_days": 90
         },
         "hours": {
-          "value": "",
-          "confidence": "unreachable",
+          "value": "일–목 13:00–16:00 · 19:30–23:00 / 금–토 13:00–16:00 · 19:30–23:30",
+          "confidence": "official",
           "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
           "verified_at": "2026-08-22",
-          "ttl_days": 30,
-          "blocked_reason": "공식 사이트가 영업시간을 Google 프로필로 넘긴다 — 방문 전 확인"
+          "ttl_days": 90
         },
         "closed": {
-          "value": "",
-          "confidence": "unreachable",
+          "value": "연중무휴 — 매일 영업 (일–목과 금–토는 야간 마감 시각만 다르다)",
+          "confidence": "official",
           "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
           "verified_at": "2026-08-22",
-          "ttl_days": 30,
-          "blocked_reason": "휴무일이 공식 페이지에 표기되지 않는다"
+          "ttl_days": 90
         },
         "note": {
-          "value": "2026-08-22 확인 — 이 자리는 La Paradeta 가 아니라 Puertecillo Sagrada Família 다. La Paradeta 공식 사이트가 Born·Sagrada Família·Paral·lel 세 지점을 감췄고, Puertecillo 공식 사이트가 같은 주소 세 곳을 자기 지점으로 싣는다. 해산물 마리스케리아라는 성격은 같다",
+          "value": "이 자리는 La Paradeta 가 아니라 Puertecillo Sagrada Família 다. La Paradeta 공식 사이트가 이 지점을 내렸고, Puertecillo 공식 사이트가 같은 주소를 자기 지점으로 싣는다. 해산물 마리스케리아라는 성격은 같지만 옛 업소의 가격·운영정보는 승계하지 않는다",
           "confidence": "official",
           "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
           "verified_at": "2026-08-22",
@@ -1912,6 +1910,13 @@
           "source": "FCR-02 Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "phone": {
+          "value": "+34 934 500 191",
+          "confidence": "official",
+          "source": "https://puertecillo.es/puertecillo-sagrada-familia/",
+          "verified_at": "2026-08-22",
+          "ttl_days": 180
         }
       }
     },

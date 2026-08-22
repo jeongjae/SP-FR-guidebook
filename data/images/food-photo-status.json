@@ -46,7 +46,7 @@
    "imageId": "barcelona-bodega-joan-gm01",
    "checkedAt": "2026-08-22"
   },
-  "la-paradeta-sagrada-familia": {
+  "puertecillo-sagrada-familia": {
    "status": "VALID_GOOGLE_MAPS",
    "region": "barcelona",
    "businessIdentity": {
@@ -57,7 +57,7 @@
    },
    "photoSource": "google_maps",
    "sourceUrl": "https://www.google.com/maps/place/Puertecillo+Sagrada+Familia/@41.404494,2.1734418,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2c33f9d6983:0x20e3e0cbae1446fe!8m2!3d41.404494!4d2.1734418!16s%2Fg%2F1hc2v7pw4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
-   "imageId": "barcelona-la-paradeta-sagrada-familia-gm01",
+   "imageId": "barcelona-puertecillo-sagrada-familia-gm01",
    "why": "FCR-04 에서 상호 변경(La Paradeta → Puertecillo)을 공식 사이트 두 곳으로 확인한 뒤 신원이 확정돼 사진을 받았다",
    "checkedAt": "2026-08-22"
   },

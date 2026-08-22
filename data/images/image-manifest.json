@@ -12483,8 +12483,8 @@
       "status": "processed"
     },
     {
-      "imageId": "barcelona-la-paradeta-sagrada-familia-gm01",
-      "placeId": "la-paradeta-sagrada-familia",
+      "imageId": "barcelona-puertecillo-sagrada-familia-gm01",
+      "placeId": "puertecillo-sagrada-familia",
       "region": "barcelona",
       "title": "Puertecillo Sagrada Familia — Google Maps",
       "titleKo": "Puertecillo Sagrada Familia",
@@ -12511,7 +12511,7 @@
       "downloadDate": "2026-08-22",
       "originalWidth": 900,
       "originalHeight": 1200,
-      "originalPath": "source/ASSETS/photos/originals/barcelona-la-paradeta-sagrada-familia-gm01.jpg",
+      "originalPath": "source/ASSETS/photos/originals/barcelona-puertecillo-sagrada-familia-gm01.jpg",
       "originalSha256": "e50a5e15e7a8cf637675f825bf5af0c865d86e2a0c81efca27067c78ced45f93",
       "originalBytes": 226717,
       "focus": {
@@ -12522,7 +12522,7 @@
       "role": "major",
       "usage": [
         "guide/barcelona.html",
-        "places/la-paradeta-sagrada-familia.html"
+        "places/puertecillo-sagrada-familia.html"
       ],
       "selectionScore": 80,
       "altKo": "사그라다 파밀리아 뒤 파사체 데 시모의 해산물 마리스케리아 Puertecillo",
@@ -12531,8 +12531,8 @@
         "hero": [],
         "content": [
           {
-            "path": "source/ASSETS/photos/processed/content/barcelona-la-paradeta-sagrada-familia-gm01-content-900.webp",
-            "sitePath": "assets/images/content/barcelona-la-paradeta-sagrada-familia-gm01-content-900.webp",
+            "path": "source/ASSETS/photos/processed/content/barcelona-puertecillo-sagrada-familia-gm01-content-900.webp",
+            "sitePath": "assets/images/content/barcelona-puertecillo-sagrada-familia-gm01-content-900.webp",
             "width": 900,
             "height": 1200,
             "bytes": 88788,
@@ -12542,8 +12542,8 @@
         ],
         "thumbnail": [
           {
-            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-la-paradeta-sagrada-familia-gm01-thumb-480.webp",
-            "sitePath": "assets/images/thumbnails/barcelona-la-paradeta-sagrada-familia-gm01-thumb-480.webp",
+            "path": "source/ASSETS/photos/processed/thumbnails/barcelona-puertecillo-sagrada-familia-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/barcelona-puertecillo-sagrada-familia-gm01-thumb-480.webp",
             "width": 480,
             "height": 320,
             "bytes": 22870,
