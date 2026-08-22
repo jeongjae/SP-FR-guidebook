@@ -87,7 +87,7 @@ Lyon에서는 두 강과 두 언덕이 만든 도시 지형을 따라 걷는다.
 
 ---
 
-## 7. Places Classification
+## 7. Places Classification (LY01F 최종 정돈)
 
 | 장소명 | 슬러그 | 등급 | 여행 내 역할 | 최종 Region Card |
 |---|---|---|---|:---:|
@@ -97,15 +97,20 @@ Lyon에서는 두 강과 두 언덕이 만든 도시 지형을 따라 걷는다.
 | **Halles de Lyon Paul Bocuse** | `halles-de-lyon-paul-bocuse` | 필수 | Day 25 실제 방문지 (실내 미식 시장·생마르슬랭) | **유지** |
 | **Parc de la Tête d'Or** | `parc-de-la-tete-d-or` | 우선추천 | Day 25 실제 방문지 (도심 생태 공원·온실·장미원) | **유지** |
 | **Annecy 구시가지 · 호수** | `annecy` | 필수 | Day 26 실제 방문지 (안시 당일치기·팔레드릴·호수) | **유지** |
-| **Bellecour** | `bellecour` | 선택 | Day 23 실제 방문지 (붉은 자갈 광장·루이14세기마상) | **유지** |
-| **Café Comptoir Abel** | `cafe-comptoir-abel` | 필수 | Day 24 저녁 식당 (에네 지구 최고 부숑) | **유지 (식당)** |
-| **Daniel et Denise** | `daniel-et-denise` | 필수 | Day 25 저녁 식당 (MOF 셰프 정통 부숑) | **유지 (식당)** |
+| **Bellecour** | `bellecour` | 우선추천 | Day 23 실제 방문지 (붉은 자갈 광장·루이14세기마상) | **유지 (우선추천)** |
+| **Café Comptoir Abel** | `cafe-comptoir-abel` | 필수 | Day 23 저녁 식당 (에네 지구 최고 부숑) | **유지 (식당)** |
+| **Daniel et Denise** | `daniel-et-denise` | 필수 | Day 24 저녁 식당 (MOF 셰프 정통 부숑) | **유지 (식당)** |
 | **Chez Mamie Lise** | `chez-mamie-lise` | 필수 | Day 26 점심 식당 (안시 사부아 전통 산장 식당) | **유지 (식당)** |
 
 ---
 
-## 8. Food Cleanup
+## 8. Food Cleanup (LY01F 반영)
 
+- **Day 귀속 정합**:
+  - `Café Comptoir Abel`: Day 23 (9/20 저녁)
+  - `Daniel et Denise`: Day 24 (9/21 저녁)
+  - `Halles Paul Bocuse`: Day 25 (9/22 점심 및 시장 체험)
+  - `Chez Mamie Lise`: Day 26 (9/23 점심)
 - **Lyon과 사부아에서 맛볼 식재료와 전통 요리**: Quenelle de brochet, Saucisson de Lyon, Salade lyonnaise, Cervelle de canut, Gratin dauphinois, Tarte aux pralines 등 6종 1문장 기술.
 - **와인**: 보졸레와 론 와인을 독립 문장으로 분리(`리옹은 북쪽의 보졸레(Beaujolais)와 남쪽의 론(Rhône) 와인이 만나는 미식도시다. 저녁 식사나 숙소 휴식 시 로컬 와인을 곁들인다.`).
 - **시장 정보**: Halles de Lyon Paul Bocuse 및 Marché de la Croix-Rousse 2곳 링크 수록.
@@ -113,9 +118,10 @@ Lyon에서는 두 강과 두 언덕이 만든 도시 지형을 따라 걷는다.
 
 ---
 
-## 9. Stay & Local Life Cleanup
+## 9. Stay & Local Life Cleanup (LY01F 반영)
 
-- **숙소와 생활권**: 3구 Monplaisir 생활권(Lagrange Aparthotel Lyon Lumière), 메트로 D선 도보 접근성, 간이주방 활용 수칙, 론강변/테트도르 공원 아침 러닝 코스로 3개 문단 압축.
+- **숙소와 생활권**: 3구 Monplaisir 생활권(Lagrange Aparthotel Lyon Lumière), 메트로 D선 도보 접근성, 간이주방 활용 수칙 서술.
+- **아침 운동 현실화**: 장거리 강변/공원 러닝 문구를 축소하고 `아침에는 Monplaisir 숙소 주변에서 가볍게 걷거나 뛰고, 도심 일정이 긴 날에는 별도 운동을 줄인다.`로 생활권 중심 간결화.
 
 ---
 

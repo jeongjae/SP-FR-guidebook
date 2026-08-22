@@ -147,7 +147,7 @@
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
 | `annecy` | Annecy 구시가지 | spot | 필수 | Annecy | chapters/lyon/places.html | Annecy 구시가지 | Annecy |
-| `bellecour` | Bellecour | spot | 선택 | Bellecour | chapters/lyon/places.html | Bellecour | Place Bellecour |
+| `bellecour` | Bellecour | spot | 우선 추천 | Bellecour | chapters/lyon/places.html | Bellecour | Place Bellecour |
 | `croix-rousse` | Croix-Rousse | spot | 필수 | Croix-Rousse | chapters/lyon/places.html | Croix-Rousse | La Croix-Rousse |
 | `fourviere` | Fourvière | spot | 필수 | Fourvière | chapters/lyon/places.html | Fourvière | Basilica of Notre-Dame de Fourvière |
 | `halles-de-lyon-paul-bocuse` | Halles de Lyon Paul Bocuse | spot | 필수 | Halles Paul Bocuse | chapters/lyon/places.html | Halles de Lyon Paul Bocuse | Les Halles de Lyon-Paul Bocuse |

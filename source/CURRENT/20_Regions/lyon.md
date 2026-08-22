@@ -39,7 +39,7 @@ Lyon 체류의 거점은 3구 Monplaisir 생활권(Lagrange Aparthotel Lyon Lumi
 
 #### 아침 운동
 
-숙소에서 출발해 론(Rhône) 강변 보행로나 테트도르 공원(Parc de la Tête d'Or) 방향으로 가볍게 걷거나 뛴다. 도심 일정 중에는 메트로와 도보 이동이 많으므로 무리하지 않는다.
+아침에는 Monplaisir 숙소 주변에서 가볍게 걷거나 뛰고, 도심 일정이 긴 날에는 별도 운동을 줄인다.
 
 ---
 
