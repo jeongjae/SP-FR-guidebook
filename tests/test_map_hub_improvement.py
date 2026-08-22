@@ -20,13 +20,11 @@ class MapHubImprovementTests(unittest.TestCase):
         cls.map_index_html = (ROOT / "site" / "map" / "index.html").read_text(encoding="utf-8")
         cls.map_queries = json.loads((ROOT / "data" / "map-queries.json").read_text(encoding="utf-8"))
 
-    def test_regional_maps_section_is_at_the_top(self):
-        """지역별 지도 섹션이 전체 여정 지도보다 위에 위치하는지 확인."""
-        idx_regional = self.map_index_html.find("지역별 지도")
-        idx_whole_trip = self.map_index_html.find("전체 여정 지도")
-        self.assertNotEqual(idx_regional, -1, "지역별 지도 섹션이 index.html 에 존재해야 함")
-        self.assertNotEqual(idx_whole_trip, -1, "전체 여정 지도 섹션이 index.html 에 존재해야 함")
-        self.assertLess(idx_regional, idx_whole_trip, "지역별 지도가 전체 여정 지도보다 상단에 위치해야 함")
+    def test_map_index_has_no_regional_maps_or_whole_trip_headings(self):
+        """'지역별 지도' 및 '전체 여정 지도' 섹션 제목이 map/index.html 에 존재하지 않는지 확인."""
+        map_html = (ROOT / "site" / "map" / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("지역별 지도", map_html, "'지역별 지도' 제목/섹션이 index.html 에 존재하지 않아야 함")
+        self.assertNotIn("전체 여정 지도", map_html, "'전체 여정 지도' 제목/섹션이 index.html 에 존재하지 않아야 함")
 
     def test_non_map_stops_completely_removed_from_map_pages_and_cards(self):
         """비장소 3종이 모든 지도 페이지 및 지도 카드에서 0건인지 확인."""
@@ -152,33 +150,61 @@ class MapHubImprovementTests(unittest.TestCase):
         self.assertIn("78%20Rue%20de%20Lourmel", day27_html)
 
     def test_map_index_region_groups_and_date_formatting(self):
-        """전체 여정 지도 목록이 8개 지역으로 그룹화되고 날짜/요일이 올바른 형식인지 검증."""
+        """map/index.html이 8개 독립 Region 섹션, 개별 지도, 1~N 번호 매겨진 목록 구조를 갖추었는지 검증."""
         map_html = (ROOT / "site" / "map" / "index.html").read_text(encoding="utf-8")
         
-        # 1. 8 Region headings in order
+        # 1. '지역별 지도' 및 '전체 여정 지도' 헤딩 부재 확인
+        self.assertNotIn("지역별 지도", map_html, "'지역별 지도' 섹션/헤딩이 제거되어야 함")
+        self.assertNotIn("전체 여정 지도", map_html, "'전체 여정 지도' 섹션/헤딩이 제거되어야 함")
+
+        # 2. 8 Region headings in exact order
         expected_regions = [
-            "Barcelona",
-            "Girona · Empordà",
-            "Nice · Côte d'Azur",
-            "Aix-en-Provence",
-            "Luberon",
-            "Avignon · Alpilles",
-            "Lyon",
-            "Paris",
+            ("barcelona", "Barcelona", 17),
+            ("girona", "Girona · Empordà", 6),
+            ("nice", "Nice · Côte d'Azur", 21),
+            ("aix", "Aix-en-Provence", 19),
+            ("luberon", "Luberon", 9),
+            ("avignon", "Avignon · Alpilles", 18),
+            ("lyon", "Lyon", 18),
+            ("paris", "Paris", 42),
         ]
         last_pos = 0
-        for r_name in expected_regions:
-            head_tag = f'<h3 class="map-region-head">{render.esc(r_name)}</h3>'
-            pos = map_html.find(head_tag, last_pos)
-            self.assertNotEqual(pos, -1, f"Region group {r_name} heading not found or out of order")
+        total_pins = 0
+        for r_slug, r_name, count in expected_regions:
+            section_tag = f'id="section-{r_slug}"'
+            pos = map_html.find(section_tag, last_pos)
+            self.assertNotEqual(pos, -1, f"Region section {r_name} not found or out of order")
+            head_tag = f'<h2>{render.esc(r_name)}</h2>'
+            self.assertIn(head_tag, map_html[pos:pos+500], f"Region heading {r_name} missing in section")
+            total_pins += count
             last_pos = pos
 
-        # 2. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
+        self.assertEqual(total_pins, 150, "8개 지역 총 핀 수는 150이어야 함")
+
+        # 3. 8개의 map-card 및 script data가 존재하는지 확인
+        map_cards = re.findall(r'<div class="map-card">', map_html)
+        self.assertEqual(len(map_cards), 8, "8개 Region별 map-card가 존재해야 함")
+
+        # 4. 각 Region별 지도 marker와 목록 번호 일치성 (1부터 N까지 순차 번호)
+        scripts = re.findall(r'<script type="application/json" class="map-data-script">({.*?})</script>', map_html)
+        self.assertEqual(len(scripts), 8, "8개 Region map-data script가 존재해야 함")
+        for (r_slug, r_name, expected_count), script_json in zip(expected_regions, scripts):
+            data = json.loads(script_json)
+            pins = data.get("pins", [])
+            self.assertEqual(len(pins), expected_count, f"{r_name} pin 개수 불일치: {len(pins)} != {expected_count}")
+
+        # 5. List item numbers check (1. ~ N.)
+        for r_slug, r_name, expected_count in expected_regions:
+            for num in range(1, expected_count + 1):
+                num_tag = f'<span class="map-num">{num}.</span>'
+                self.assertIn(num_tag, map_html, f"{r_name} 목록에 {num}. 번호 태그가 누락됨")
+
+        # 6. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
         date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
         matches = date_pattern.findall(map_html)
-        self.assertGreater(len(matches), 100, "지도 목록의 날짜 메타가 충분히 발견되어야 함")
+        self.assertEqual(len(matches), 150, "150개 항목 모두 날짜 메타가 존재해야 함")
 
-        # 3. Verify specific items
+        # 7. Verify specific items
         self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)
         self.assertIn("Gare de Lyon → 78 Rue de Lourmel", map_html)
         self.assertNotIn("data-pin=\"bcn-airport\"", map_html)

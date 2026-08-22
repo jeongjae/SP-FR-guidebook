@@ -1173,7 +1173,12 @@ footer p { margin: 0 0 var(--s1); }
   margin-block: -0.7rem;
 }
 
-/* 지도 목록 — 일시 · 이름 · 열기 를 한 줄에 둔다. */
+.region-map-section {
+  margin-block-end: var(--s6);
+}
+.region-map-section:last-child {
+  margin-block-end: 0;
+}
 .map-list { margin: 0; padding: var(--s2) var(--s4) var(--s4); }
 .map-region-group {
   margin-block-end: var(--s5);
@@ -1205,6 +1210,14 @@ footer p { margin: 0 0 var(--s1); }
   border-bottom: 1px solid var(--line);
 }
 .map-list li:last-child { border-bottom: 0; }
+.map-list li > .map-num {
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  min-width: 1.6rem;
+}
 .map-list li > .meta {
   flex: 0 0 auto;
   font-variant-numeric: tabular-nums;
