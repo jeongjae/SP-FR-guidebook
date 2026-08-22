@@ -73,110 +73,179 @@
      실패는 반드시 화면에 말한다. 처음 만들 때 전역 콜백(callback=)에 기댔다가
      콜백이 돌지 않는 경우 "지도를 불러오는 중" 에서 영영 멈췄다. 사용자는
      기다리면 되는 줄 알고 기다린다. 그건 목록으로 떨어지는 것보다 나쁘다. */
-  var toggle = document.querySelector('.map-toggle');
-  if (toggle) {
-    var canvas = document.getElementById('map-canvas');
-    var list = document.getElementById('map-list');
-    var status = document.getElementById('map-status');
-    var mapDataEl = document.getElementById('map-data');
-    var mapState = 'idle';   // idle | loading | ready | failed
-
+  var mapCards = document.querySelectorAll('.map-card');
+  if (mapCards.length) {
     function meta(name) {
       var el = document.querySelector('meta[name="' + name + '"]');
       return el && el.content ? el.content : '';
     }
-    function say(text) { if (status) status.textContent = text || ''; }
 
-    function show(view) {
-      var wantMap = view === 'map';
-      if (list) list.hidden = wantMap;
-      if (canvas) canvas.hidden = !wantMap;
-      Array.prototype.forEach.call(toggle.querySelectorAll('button'), function (b) {
-        b.setAttribute('aria-pressed', String((b.dataset.view === 'map') === wantMap));
-      });
-    }
+    var sdkLoading = false;
+    var sdkReady = false;
+    var cardHandlers = [];
 
-    function fallback(reason) {
-      mapState = 'failed';
-      say(reason + ' 목록으로 연다 — 각 항목의 링크로 Google 지도를 열 수 있다.');
-      show('list');
-    }
-
-    function drawMap() {
-      var data = JSON.parse(mapDataEl.textContent);
-      var opts = {
-        center: { lat: data.center[0], lng: data.center[1] },
-        zoom: data.zoom,
-        mapTypeControl: false, streetViewControl: false, fullscreenControl: false
-      };
-      var mapId = meta('google-maps-map-id');
-      if (mapId) opts.mapId = mapId;
-
-      var map = new google.maps.Map(canvas, opts);
-      var bounds = new google.maps.LatLngBounds();
-      data.pins.forEach(function (pin, i) {
-        var pos = { lat: pin.lat, lng: pin.lng };
-        var marker = new google.maps.Marker({
-          map: map, position: pos, title: pin.name, label: String(i + 1)
-        });
-        bounds.extend(pos);
-        marker.addListener('click', function () {
-          var row = list && list.querySelector('[data-pin="' + pin.id + '"]');
-          if (row) { show('list'); row.scrollIntoView({ block: 'center' }); }
-        });
-      });
-      if (data.pins.length > 1) map.fitBounds(bounds, 40);
-      mapState = 'ready';
-      say('');
-    }
-
-    function tryDraw() {
-      try { drawMap(); }
-      catch (err) { fallback('지도를 그리지 못했다 (' + err.message + ').'); }
-    }
-
-    /* SDK 가 준비될 때까지 짧게 기다린다. 전역 콜백에 기대지 않는다 —
-       콜백이 안 오면 알 방법이 없다. 여기서는 안 오면 목록으로 떨어진다. */
-    function waitForSdk(deadline) {
-      if (window.google && google.maps && google.maps.Map) { tryDraw(); return; }
-      if (Date.now() > deadline) {
-        fallback('지도를 불러오지 못했다.');
+    function ensureSdk(cb) {
+      if (window.google && google.maps && google.maps.Map) {
+        sdkReady = true;
+        cb(true);
         return;
       }
-      setTimeout(function () { waitForSdk(deadline); }, 120);
-    }
-
-    function loadMap() {
-      if (mapState === 'ready') { show('map'); return; }
-      if (mapState === 'loading') { show('map'); return; }
       var key = meta('google-maps-api-key');
-      if (!key) { fallback('지도 키가 없다.'); return; }
-
-      mapState = 'loading';
-      say('지도를 불러오는 중');
-      show('map');
-
-      if (window.google && google.maps && google.maps.Map) { tryDraw(); return; }
-
-      var s = document.createElement('script');
-      s.src = 'https://maps.googleapis.com/maps/api/js?key=' +
-        encodeURIComponent(key) + '&language=ko&region=ES';
-      s.async = true;
-      s.onerror = function () { fallback('지도를 내려받지 못했다.'); };
-      s.onload = function () { waitForSdk(Date.now() + 8000); };
-      document.head.appendChild(s);
-      /* onload 가 오지 않는 경우까지 덮는다 */
-      setTimeout(function () {
-        if (mapState === 'loading') waitForSdk(Date.now() + 4000);
-      }, 6000);
+      if (!key) { cb(false, '지도 키가 없다.'); return; }
+      if (!sdkLoading) {
+        sdkLoading = true;
+        var s = document.createElement('script');
+        s.src = 'https://maps.googleapis.com/maps/api/js?key=' +
+          encodeURIComponent(key) + '&language=ko&region=ES';
+        s.async = true;
+        s.onerror = function () {
+          sdkLoading = false;
+          cardHandlers.forEach(function (h) { h.fallback('지도를 내려받지 못했다.'); });
+        };
+        s.onload = function () {
+          sdkReady = true;
+          sdkLoading = false;
+          cardHandlers.forEach(function (h) { if (h.wantMap()) h.tryDraw(); });
+        };
+        document.head.appendChild(s);
+      }
+      var deadline = Date.now() + 8000;
+      function waitForSdk() {
+        if (window.google && google.maps && google.maps.Map) {
+          sdkReady = true;
+          cb(true);
+          return;
+        }
+        if (Date.now() > deadline) {
+          cb(false, '지도를 불러오지 못했다.');
+          return;
+        }
+        setTimeout(waitForSdk, 120);
+      }
+      waitForSdk();
     }
 
-    toggle.addEventListener('click', function (e) {
-      var btn = e.target.closest('button');
-      if (!btn) return;
-      if (btn.dataset.view === 'map') loadMap(); else show('list');
+    Array.prototype.forEach.call(mapCards, function (card) {
+      var canvas = card.querySelector('.map-canvas');
+      var list = card.querySelector('.map-list');
+      var status = card.querySelector('.map-status');
+      var mapDataEl = card.querySelector('.map-data-script') || card.querySelector('script[type="application/json"]');
+      var toggle = card.querySelector('.map-toggle');
+      var mapState = 'idle';   // idle | loading | ready | failed
+      var gMap = null;
+      var markers = [];
+
+      function say(text) { if (status) status.textContent = text || ''; }
+
+      function show(view) {
+        var wantMap = view === 'map';
+        if (list) list.hidden = wantMap;
+        if (canvas) canvas.hidden = !wantMap;
+        if (toggle) {
+          Array.prototype.forEach.call(toggle.querySelectorAll('button'), function (b) {
+            b.setAttribute('aria-pressed', String((b.dataset.view === 'map') === wantMap));
+          });
+        }
+      }
+
+      function fallback(reason) {
+        mapState = 'failed';
+        say(reason + ' 목록으로 연다 — 각 항목의 링크로 Google 지도를 열 수 있다.');
+        show('list');
+      }
+
+      function drawMap() {
+        if (!mapDataEl || !canvas) return;
+        var data = JSON.parse(mapDataEl.textContent);
+        var opts = {
+          center: { lat: data.center[0], lng: data.center[1] },
+          zoom: data.zoom,
+          mapTypeControl: false, streetViewControl: false, fullscreenControl: false
+        };
+        var mapId = meta('google-maps-map-id');
+        if (mapId) opts.mapId = mapId;
+
+        gMap = new google.maps.Map(canvas, opts);
+        var bounds = new google.maps.LatLngBounds();
+        markers = [];
+        data.pins.forEach(function (pin, i) {
+          var pos = { lat: pin.lat, lng: pin.lng };
+          var marker = new google.maps.Marker({
+            map: gMap, position: pos, title: pin.name, label: String(i + 1)
+          });
+          markers.push(marker);
+          bounds.extend(pos);
+          marker.addListener('click', function () {
+            var row = list && list.querySelector('[data-pin="' + pin.id + '"]');
+            if (row) {
+              show('list');
+              row.scrollIntoView({ block: 'center' });
+            }
+          });
+        });
+        if (data.pins.length > 1) gMap.fitBounds(bounds, 40);
+        mapState = 'ready';
+        say('');
+      }
+
+      function tryDraw() {
+        try { drawMap(); }
+        catch (err) { fallback('지도를 그리지 못했다 (' + err.message + ').'); }
+      }
+
+      function loadMap() {
+        if (mapState === 'ready') { show('map'); return; }
+        if (mapState === 'loading') { show('map'); return; }
+        mapState = 'loading';
+        say('지도를 불러오는 중');
+        show('map');
+
+        ensureSdk(function (ok, err) {
+          if (ok) { tryDraw(); }
+          else { fallback(err || '지도를 불러오지 못했다.'); }
+        });
+      }
+
+      cardHandlers.push({
+        tryDraw: tryDraw,
+        fallback: fallback,
+        wantMap: function () { return mapState === 'loading'; }
+      });
+
+      if (toggle) {
+        toggle.addEventListener('click', function (e) {
+          var btn = e.target.closest('button');
+          if (!btn) return;
+          if (btn.dataset.view === 'map') loadMap(); else show('list');
+        });
+      }
+
+      // Link list item click to center map if map is active
+      if (list) {
+        list.addEventListener('click', function (e) {
+          var li = e.target.closest('li[data-pin]');
+          if (!li || e.target.closest('.map-open') || e.target.closest('a')) return;
+          var pinId = li.dataset.pin;
+          if (mapState === 'ready' && gMap) {
+            show('map');
+            if (!mapDataEl) return;
+            var data = JSON.parse(mapDataEl.textContent);
+            for (var idx = 0; idx < data.pins.length; idx++) {
+              if (data.pins[idx].id === pinId) {
+                gMap.panTo({ lat: data.pins[idx].lat, lng: data.pins[idx].lng });
+                if (markers[idx]) {
+                  markers[idx].setAnimation(google.maps.Animation.BOUNCE);
+                  setTimeout(function () { if (markers[idx]) markers[idx].setAnimation(null); }, 1400);
+                }
+                break;
+              }
+            }
+          }
+        });
+      }
+
+      show('list');   /* 목록이 기본이다 */
     });
-    show('list');   /* 목록이 기본이다 */
   }
 
   /* ---- Day 타임라인 — 지금 항목 강조 ----
