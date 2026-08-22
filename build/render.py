@@ -358,6 +358,31 @@ def load_name_aliases() -> dict[str, list[str]]:
     return json.loads(NAME_ALIASES.read_text(encoding="utf-8")).get("aliases", {})
 
 
+CONSOLIDATION = ROOT / "data" / "region-consolidation.json"
+_CONSOLIDATION: dict | None = None
+
+
+def consolidation() -> dict:
+    """통폐합을 끝낸 지역의 등록부. 지역 전용 분기를 코드에 넣지 않기 위해
+    판정과 제목을 전부 데이터로 내린다."""
+    global _CONSOLIDATION
+    if _CONSOLIDATION is None:
+        _CONSOLIDATION = (json.loads(CONSOLIDATION.read_text(encoding="utf-8"))
+                          if CONSOLIDATION.exists() else {})
+    return _CONSOLIDATION
+
+
+def is_consolidated(slug: str) -> bool:
+    return slug in (consolidation().get("consolidated") or [])
+
+
+def layer_title(slug: str, key: str, default: str) -> str:
+    """접이식 제목. 통폐합을 끝낸 지역은 자기 이름으로 부른다 —
+    '지역 교통 심화' 가 아니라 '바르셀로나에서 이동하기' 다."""
+    return ((consolidation().get("layerTitles") or {})
+            .get(slug, {}).get(key, default))
+
+
 def load_image_index(trip: Trip | None = None) -> dict:
     """사진 색인. 잇는 규칙은 model.load_images 하나뿐이다 — 여기서 다시
     만들지 않는다. 예전에는 두 곳에 같은 로직이 있었고, 그래서 별칭을 한 곳만
@@ -1028,13 +1053,24 @@ GENERIC_FOOD_NOTES = [
 
 
 def region_dishes(r: Region) -> list[str]:
-    """'무엇을 먹는가'. 업소가 아니라 요리라서 카드가 아니라 목록이다."""
+    """'무엇을 먹는가'. 업소가 아니라 요리라서 카드가 아니라 목록이다.
+
+    Day 의 식사 슬롯은 '업소 · 요리' 로 적혀 있다. 그 업소가 바로 위에서
+    카드로 나오고 있으면 이름이 두 번 나온다 — 통폐합을 끝낸 지역에서는
+    업소 이름을 떼고 요리만 남긴다. **먹을 것과 먹을 곳을 섞지 않는다.**
+    """
+    carded = {p.name.strip() for p in r.food_places}
+    strip_venue = is_consolidated(r.slug)
     out = []
     for d in r.days:
         for item in d.food:
             item = item.strip()
             if any(g in item for g in GENERIC_FOOD_NOTES):
                 continue
+            if strip_venue and "·" in item:
+                venue, _, dish = item.partition("·")
+                if venue.strip() in carded and dish.strip():
+                    item = dish.strip()
             if item not in out:
                 out.append(item)
     return out[:12]
@@ -1290,7 +1326,7 @@ def build_region(r: Region, trip: Trip) -> str:
                        ("여행 전체에서의 역할", "role"),
                        ("추천 체류 리듬", "rhythm"),
                        ("이 지역을 이해하는 층", "context")):
-        parts.append(acc(title, ed.get(key, "")))
+        parts.append(acc(layer_title(r.slug, key, title), ed.get(key, "")))
     parts.append("</div>")
 
     # ================================================== 2 · 볼거리
@@ -1365,7 +1401,8 @@ def build_region(r: Region, trip: Trip) -> str:
                      + "".join(f"<li>{link_food_text(x, rel, trip)}</li>"
                                for x in dishes)
                      + "</ul></div></details>")
-    parts.append(acc("이 지역의 음식과 시장", ed.get("food_culture", "")))
+    parts.append(acc(layer_title(r.slug, "food_culture", "이 지역의 음식과 시장"),
+                     ed.get("food_culture", "")))
     parts.append("</div>")
 
     # ================================================== 4 · 숙소
@@ -1402,8 +1439,10 @@ def build_region(r: Region, trip: Trip) -> str:
     if r.essentials.get("staySummary"):
         parts.append(f'<div class="prose"><p>'
                      f'{esc(r.essentials["staySummary"])}</p></div>')
-    parts.append(acc("동네와 생활권", ed.get("neighborhoods", "")))
-    parts.append(acc("숙소 예산과 확인 기준", ed.get("stay_budget", "")))
+    parts.append(acc(layer_title(r.slug, "neighborhoods", "동네와 생활권"),
+                     ed.get("neighborhoods", "")))
+    parts.append(acc(layer_title(r.slug, "stay_budget", "숙소 예산과 확인 기준"),
+                     ed.get("stay_budget", "")))
     parts.append("</div>")
 
     # ================================================== 5 · 생활권
@@ -1475,7 +1514,8 @@ def build_region(r: Region, trip: Trip) -> str:
                          + "".join(
                              f'<li><a href="{rel}/{day_by_number[x["day"]].url}">{esc(day_by_number[x["day"]].date_label)} · Day {x["day"]}</a> — {esc(x["label"])}</li>'
                              for x in uses) + '</ul></div>')
-    parts.append(acc("이 지역에서 이동하기", ed.get("transport_deep", "")))
+    parts.append(acc(layer_title(r.slug, "transport_deep", "이 지역에서 이동하기"),
+                     ed.get("transport_deep", "")))
 
     # --- References — 누를 것만 모은다. 긴 설명은 위에서 이미 했다. -------
     refs = []

@@ -8,8 +8,9 @@ Jason·Julia 의 2026 유럽 43일 여행 가이드북. **문서가 아니라 �
 1. **`site/` 를 직접 편집하지 않는다.** 다음 빌드에 덮어써진다.
    본문은 `source/`, 정본 계층은 `build/model.py`, 페이지는 `build/render.py`,
    CSS·JS 는 `build/assets/`.
-   `source/CURRENT/30_Places/` 와 `20_Regions/` 도 편집하지 않는다 — 빌드가
-   챕터 원고에서 다시 뽑는 **파생물**이다. 고칠 곳은 챕터 원고다.
+   `source/CURRENT/20_Regions/` 도 편집하지 않는다 — `promote_regions.py` 가
+   **매 빌드 다시 뽑는 파생물**이다 (`site.py`). 고칠 곳은 챕터 원고다.
+   `source/CURRENT/30_Places/` 는 다르다 — **그쪽이 정본이다.** 아래를 본다.
 2. **런타임 서드파티 의존성을 추가하지 않는다.** 현재 0개고 완전 오프라인으로 동작해야 한다.
    (`markdown`·`openpyxl` 은 빌드 전용, Leaflet 은 로컬 번들.)
 3. **미확정값을 확정처럼 표시하지 않는다.** 예약이 아직 잠겨 있지 않다.
@@ -38,11 +39,23 @@ Jason·Julia 의 2026 유럽 43일 여행 가이드북. **문서가 아니라 �
 헤딩과 대조하고 어긋나면 중단한다. 편집은 이 MD 를 직접 고친다 —
 `build/gen_place_registry.py` 를 다시 돌리면 손편집이 날아간다.
 
-장소의 **장문**은 명부가 아니라 챕터 원고에 있고, 빌드가 매번
-`source/CURRENT/30_Places/<slug>.md` 로 뽑아 쓴다. 지역의 편집 섹션
-(Editor's Verdict · 꼭 경험할 세 장면 · 생략해도 되는 것 · 한눈에 보기)도
-같은 방식으로 `20_Regions/<slug>.md` 로 나온다. **둘 다 파생물이라 직접
-고치면 다음 빌드에 날아간다.** 고칠 곳은 챕터 원고다.
+장소의 **장문은 `source/CURRENT/30_Places/<slug>.md` 가 정본이다.**
+한때 챕터 원고에 있었고 `build/promote_places.py` 가 **한 번** 옮겼다. 그
+뒤로 빌드는 챕터를 다시 읽지 않는다 — `site.py` 가 `load_place_bodies()` 로
+30_Places 를 직접 쓴다. **장소 글을 고칠 곳은 30_Places 파일이다.** 챕터를
+고치면 아무 일도 일어나지 않는다. `promote_places.py` 를 다시 돌리면 그동안의
+손편집이 덮어써진다.
+
+**파생물은 `source/CURRENT/20_Regions/<slug>.md` 하나뿐이다.** 지역의 편집
+층(Editor's Verdict · 한눈에 보기 · 숙소 생활권 · 지역 교통 · 음식과 시장)을
+`promote_regions.py` 가 **매 빌드** 챕터 원고에서 다시 뽑는다. 직접 고치면
+다음 빌드에 날아간다 — 고칠 곳은 챕터 원고다.
+
+챕터의 h2 구성은 `build/content_schema.json` 의 스키마가 강제한다. 통폐합을
+끝낸 챕터는 `rc-region-v1`(개요를 Editor's Verdict 하나로 합친 구조), 아직인
+챕터는 `rs-region-v1` 이다. 어느 지역이 끝났는지는
+`data/region-consolidation.json` 이 정본이고, 그 목록이 원고 흔적 가드와
+접이식 제목을 함께 결정한다.
 
 ### 하나의 것은 하나의 페이지에만 있는다
 

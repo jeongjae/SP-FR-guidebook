@@ -31,6 +31,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = Path(os.environ.get("SPFR_SITE_DIR") or (ROOT / "site"))
 CONSOLIDATION = ROOT / "data" / "region-consolidation.json"
+PROMOTED = ROOT / "source" / "CURRENT" / "20_Regions"
 
 # 흔적의 종류. 기계적으로 문자열을 지우라는 뜻이 아니라, 사람이 의미를
 # 보고 다시 쓰라는 신호다.
@@ -60,15 +61,54 @@ def visible_lines(path: Path) -> list[str]:
 
 
 def scan(slug: str) -> list[tuple[str, str]]:
+    """렌더된 화면 + 승격 산출물. 둘 다 본다.
+
+    화면만 보면 '지금은 안 보인다' 까지만 알 수 있다. 승격 산출물
+    (`20_Regions/<slug>.md`)까지 보면 **화면에 나올 수 있는 상태인가**를 안다 —
+    승격 규칙이 한 줄 바뀌면 바로 새는 자리가 거기다.
+    """
+    hits = []
+    page = SITE / "guide" / f"{slug}.html"
+    if page.exists():
+        for line in visible_lines(page):
+            for label, rx in PATTERNS:
+                if rx.search(line):
+                    hits.append((label, line[:90]))
+    promoted = PROMOTED / f"{slug}.md"
+    if promoted.exists():
+        text = promoted.read_text(encoding="utf-8")
+        # 앞머리(slug·source)는 출처 기록이지 원고 흔적이 아니다.
+        text = re.sub(r"\A---\n.*?\n---\n", "", text, flags=re.S)
+        for line in text.splitlines():
+            line = line.strip().lstrip("#").strip()
+            if not line:
+                continue
+            for label, rx in PATTERNS:
+                if rx.search(line):
+                    hits.append((f"승격본 · {label}", line[:90]))
+    return hits
+
+
+OVERVIEW_MIN = 400   # 개요가 조용히 비는 것을 막는 하한 (보이는 글자 수)
+
+
+def overview_size(slug: str) -> int:
+    """개요 섹션의 보이는 글자 수. 층을 합치다 통째로 날리는 것을 막는다.
+
+    통폐합 전에는 콘텐츠 스키마 가드가 '꼭 경험할 세 장면' 같은 **제목**이
+    배포본에 있는지로 이걸 확인했다. 층을 합치면 그 제목이 사라지므로
+    제목 대신 **내용의 양**을 본다.
+    """
     path = SITE / "guide" / f"{slug}.html"
     if not path.exists():
-        return []
-    hits = []
-    for line in visible_lines(path):
-        for label, rx in PATTERNS:
-            if rx.search(line):
-                hits.append((label, line[:90]))
-    return hits
+        return 0
+    s = path.read_text(encoding="utf-8")
+    m = re.search(r'<div class="stack-lg" id="overview">(.*?)'
+                  r'<div class="stack-lg" id="attractions">', s, re.S)
+    if not m:
+        return 0
+    body = re.sub(r"<[^>]+>", " ", m.group(1))
+    return len(re.sub(r"\s+", "", html.unescape(body)))
 
 
 def main() -> int:
@@ -81,6 +121,10 @@ def main() -> int:
         hits = scan(slug)
         if slug in strict:
             failures += [(slug, label, line) for label, line in hits]
+            n = overview_size(slug)
+            if n < OVERVIEW_MIN:
+                failures.append((slug, "개요가 비었다",
+                                 f"보이는 글자 {n}자 (하한 {OVERVIEW_MIN})"))
         elif hits:
             pending[slug] = len(hits)
 

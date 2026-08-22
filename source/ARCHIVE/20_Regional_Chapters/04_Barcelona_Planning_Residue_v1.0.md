@@ -377,3 +377,121 @@ Jason이 같은 날 헬스를 할 수 있어 가장 실용적이다. 수영모, 
 - **바다 분위기가 최우선:** CN Atlètic-Barceloneta를 별도 자유일정으로 사용하되 MACBA 또는 책방 하나를 생략.
 
 ---
+
+## 10. 일정에 넣지 않은 후보와 제외 판단
+
+- **옮겨온 곳**: 챕터 §생략해도 되는 것 (RC01F 이전 판)
+- **현재 정본**: 실제 Plan B 로 쓰는 항목만 `data/daily-cards/day-02.json` 의 `backup` 에 있다 (우천 시 Disseny Hub · 사그라다 예약 실패 시 Museu Picasso/Fundació Joan Miró)
+- **분리 사유**: 최종 가이드는 "무엇을 검토했는가"가 아니라 "무엇을 실제로 할 것인가"를 보여준다. 제외 후보 목록은 지역 페이지에 렌더하지 않는다. Park Güell·Casa Batlló·La Pedrera·몬세라트·Montjuïc·MNAC·La Central/Altaïr 는 일정에도 Plan B 에도 쓰이지 않는다.
+
+## 생략해도 되는 것
+
+3박에 가우디를 모으려 하면 줄만 서다 끝난다. **Park Güell과 Casa Batlló·La Pedrera의 유료입장은 넣지 않았다.** 입장료와 대기시간에 비해, 이번 여행이 보려는 것 — 도시의 구조 — 을 더 보여주지 않기 때문이다. 몬세라트 당일치기와 Montjuïc을 하루에 몰아넣는 일정도 같은 이유로 뺐다.
+
+관심이 남는다면 아래가 대기 목록이다. 어느 것도 일정에 넣지 않았다.
+
+- **Museu Picasso** — 90분. 월요일 휴관이라 8월 31일에는 열지 않는다 {{badge:unverified|공식 확인}}
+- **MNAC** — 150분. 컬렉션은 훌륭하지만 Montjuïc 왕복이 반나절을 먹는다
+- **Fundació Joan Miró** — 120분. Miró와 Sert의 건축에 관심이 클 때
+- **Disseny Hub** — 90분. 비가 오면 MACBA 대신 쓸 수 있다
+- **La Central · Altaïr** — 30–60분. 자유시간에 들르는 인문·여행서 서점
+
+일정을 줄여야 할 때는 선택 쇼핑, 두 번째 카페, 추가 내부관람 순서로 뺀다. 확정 예약과 그날의 귀가 연결은 마지막까지 지킨다.
+
+## 11. 카페 다섯 곳 (조사 후보)
+
+- **옮겨온 곳**: 챕터 §음식·시장·카페·생활체험 (RC01F 이전 판)
+- **현재 정본**: 없음 — 확정 일정과 Day Plan B 어디에도 연결되지 않는다
+- **분리 사유**: 다섯 곳 모두 Day 카드의 stop·food·backup 에 나오지 않는다. 실제 일정이나 Plan B 에 쓰이면 그때 해당 Day 로 올린다. 지역 페이지는 조사 후보 목록을 싣지 않는다.
+
+## 카페 다섯 곳
+
+가격은 2026년 8월에 조사한 계획가다. 좌석·원두·음료에 따라 달라지므로 예산표에서는 2인 €10–18을 기본으로 잡는다.
+
+| 카페 | 지역 | 추천 상황 | 가격 가이드 | 운영 참고 |
+|---|---|---|---|--- |
+| **Three Marks Coffee — Ausiàs Marc** | Fort Pienc | 사그라다·산파우 후 쉬기 | espresso·milk coffee 대체로 €2.5–5 예상 | 공식 안내상 매일 운영, 시간표가 페이지별로 달라 출발 전 재확인 |
+| **Nomad Coffee — Passatge Sert** | Born | 고딕·Born 산책 중 짧은 커피 | espresso 약 €3, filter 약 €5 수준 | 월–금 08:00–19:00, 토요일 휴무 안내 |
+| **Nomad Frutas Selectas** | Poblenou | 별도 디자인·카페 반일 | 커피 €3–5, 샌드위치·점심 별도 | 월–금 08:00–18:00, 토 09:00–17:00 |
+| **Federal Café Gòtic** | Gòtic | 우천·브런치 대체 | 커피+가벼운 식사 €12–22/인 | 매일 09:00–16:30 |
+| **Granja M. Viader** | Raval | 전통 초콜릿·granja 체험 | 초콜릿·멜린드로스·유제품 €5–12/인 예상 | 영업일·여름휴가 재확인 |
+
+## 12. La Zorra 주차 안내 정규화 (RC01F)
+
+- **옮겨온 곳**: `source/CURRENT/30_Places/la-zorra.md` 실용표 · Editor's Verdict
+- **현재 정본**: `data/daily-cards/day-04.json` — `Aparcament Can Robert`
+- **분리 사유**: 같은 목적(시체스에서 차를 세우고 걸어 들어간다)에 두 개의 답이
+  있었다. Day 4 는 10:20 Can Robert 에 세우고 Cau Ferrat·Maricel 을 본 뒤
+  해안로로 La Zorra 에 가는 하나의 동선인데, 장소 정본만 다른 주차장을 가리켰다.
+
+옮기기 전 문안:
+
+> **주차** | Parking El Retiro 또는 Parking Nou Mercat 유료 지하주차장 이용 후 도보 5~8분
+
+`Parking El Retiro` 는 `FCR02_VOLATILE_RECHECK_REGISTER.csv` 에 **ACTIVE 재확인
+대상**으로 올라 있는 미검증 값이다 (`la-zorra, 화요일 점심 영업 및 시체스 주차`).
+확정된 Day 동선과 충돌하므로 독자 정본에서는 내리고, 재확인 등록은 그대로 둔다.
+챕터가 2순위로 적었던 `Plaça del Pou Vedre` 지하주차장은 이 문서 §6 에 있다.
+
+## 13. 일정에서 제외한 미술관 4곳 (8.6–8.9)
+
+- **옮겨온 곳**: 챕터 §핵심 셀프가이드 (RC01F 이전 판)
+- **현재 정본**: 실제 Plan B 로 쓰는 Museu Picasso · Fundació Joan Miró · Disseny Hub 는 `data/daily-cards/day-02.json` 의 `backup` 에 있다. MNAC 는 어느 Plan B 에도 쓰이지 않는다
+- **분리 사유**: 넷 다 확정 일정에 없다. 챕터에 남겨 두면 절 번호(`8.6`)째로 승격될 여지가 있고, 지역 페이지는 제외 후보 목록을 싣지 않는다
+
+### 8.6 Museu Picasso de Barcelona
+
+**추천등급: Optional / 일정상 대체안**
+
+초기 피카소와 바르셀로나의 관계를 이해하기 좋은 미술관이다. 2026년 체류기에는 ‘Picasso Cyprus’(6/6–9/27)와 Valérie Belin 특별전(4/17–9/6)이 예정되어 있다. 그러나 8월 31일 월요일에는 정규 운영일이 아니므로 확정 일정에 넣지 않는다.
+
+**사용법:** 8월 29일 항공이 이르게 도착하거나, 8월 30일 사그라다 예약이 실패해 일정을 교체할 때만 검토한다.
+운영시간과 요금은 **이번 확인 대상에서 제외했다** — 기본 일정에 없는 대체안이다.
+쓰게 되면 그때 공식 사이트에서 확인한다 {{badge:unverified|공식 확인 필요}}.
+
+---
+
+### 8.7 MNAC — Museu Nacional d’Art de Catalunya
+
+**추천등급: Optional**
+
+로마네스크 벽화, 카탈루냐 미술의 장기 흐름, Palau Nacional의 전망이 강점이다. Jason의 미술 관심에는 매우 적합하지만 이번 3박에서는 Montjuïc 왕복이 일정의 초점을 흐린다. 파리 장기체류 전 미술관 피로를 줄이기 위해 제외한다.
+
+**운영 참고:** 기본 일정에서 제외한 시설이라 운영시간·요금을 확인하지 않았다.
+방문으로 전환할 때 공식 사이트에서 확인한다 {{badge:unverified|공식 확인 필요}}.
+
+---
+
+### 8.8 Fundació Joan Miró
+
+**추천등급: Optional**
+
+Josep Lluís Sert의 건축과 Miró의 작품을 함께 보는 장소다. 2026년 4월 30일–9월 13일 Kapwani Kiwanga 전시가 예정되어 있다. Miró 또는 현대건축이 이번 여행의 우선 관심사라면 MNAC 대신 선택할 수 있지만, 사그라다·산파우와 같은 날 결합하지 않는다.
+
+---
+
+### 8.9 Disseny Hub Barcelona
+
+**추천등급: Alternative**
+
+2026 World Capital of Architecture와 연결되는 전시를 보기 좋은 장소다. ‘Seny i rauxa. News of Catalan Architecture’가 5월 22일부터 9월 6일까지 예정되어 있다. 월요일 운영 여부와 전시 시간을 출발 직전에 다시 확인한 뒤, 비가 오거나 MACBA보다 건축에 집중하고 싶을 때 교체한다.
+
+## 14. Cau Ferrat·Maricel 통합권 요금 정정 기록 (10.3)
+
+- **옮겨온 곳**: 챕터 §핵심 셀프가이드 (RC01F 이전 판)
+- **현재 정본**: `data/place-facts.json` 의 `cau-ferrat.price_adult` · 장소 정본 `30_Places/cau-ferrat.md`
+- **분리 사유**: "이전 원고의 €6 은 초감면 요율이었다" 는 **정정의 기록**이지 현장에서 읽을 정보가 아니다. 값 자체는 팩트 정본이 갖는다
+
+### 10.3 Cau Ferrat와 Maricel
+
+**추천등급: Essential**
+
+Cau Ferrat는 Rusiñol의 전 거주지·작업실로 회화, 철공예, 도자기, 유리 컬렉션이 집의 분위기와 함께 남아 있다. Maricel은 로마네스크부터 근대까지의 작품과 해안 건축을 연결한다.
+
+**운영:** {{fact:cau-ferrat.hours}} · 휴관 {{fact:cau-ferrat.closed}} · 통합권 {{fact:cau-ferrat.price_adult}}
+(감면 €8 · 초감면 €6). 9월 1일은 화요일이므로 정상 개관일이다.
+출처: museusdesitges.cat 공식 요금표 — **2026-08-14 확인.**
+
+> ⚠ **이전 원고의 €6 은 초감면 요율이었다.** 우리는 일반 요율 대상이므로 **2인 €24** 로 잡는다.
+> 예상 현지비용표도 같이 고쳤다.
+

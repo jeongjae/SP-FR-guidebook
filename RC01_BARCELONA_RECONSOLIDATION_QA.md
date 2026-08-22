@@ -1,7 +1,8 @@
 # RC01 — Barcelona Region 재통폐합 · Editorial Cleanup QA
 
 **작성일** 2026-08-23 · **브랜치** `fix/barcelona-region-reconsolidation` · **대상** Barcelona (04)
-**상태** PASS — 배포는 승인 대기
+**상태** PASS (자동검사) — 외부 편집검토에서 HOLD.
+후속 보정은 `RC01F_BARCELONA_EDITORIAL_REVIEW_FIX.md` 가 정본이다. 아래 §11 최종 구조와 §12 수치는 RC01 시점의 것이다.
 
 ---
 
