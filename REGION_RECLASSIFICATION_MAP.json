@@ -18,20 +18,13 @@
     {
      "id": "bar-canete",
      "title": "Bar Cañete",
-     "from": "장소 — 그 밖의 장소",
+     "from": "장소 — 놓치지 말 것",
      "to": "restaurantsCafes",
      "entity_type": "restaurant"
     },
     {
      "id": "bodega-joan",
      "title": "Bodega Joan",
-     "from": "장소 — 놓치지 말 것",
-     "to": "restaurantsCafes",
-     "entity_type": "restaurant"
-    },
-    {
-     "id": "la-paradeta-sagrada-familia",
-     "title": "La Paradeta Sagrada Família",
      "from": "장소 — 놓치지 말 것",
      "to": "restaurantsCafes",
      "entity_type": "restaurant"
@@ -51,12 +44,17 @@
      "entity_type": "market"
     }
    ],
-   "foodToDayOrAttraction": [],
-   "mergedIntoPlaceCard": [
+   "foodToDayOrAttraction": [
     {
-     "id": "la-paradeta-sagrada-familia",
-     "title": "La Paradeta Sagrada Família 점심"
-    },
+     "id": "puertecillo-sagrada-familia",
+     "title": "Puertecillo Sagrada Família 점심",
+     "from": "먹거리 — 카드",
+     "to": "(day page — 지역 페이지에 두지 않는다)",
+     "entity_type": "attraction",
+     "reason": "'Puertecillo Sagrada Família' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+    }
+   ],
+   "mergedIntoPlaceCard": [
     {
      "id": "bodega-joan",
      "title": "Bodega Joan 저녁"
@@ -209,6 +207,16 @@
     }
    ],
    "transportMerges": [
+    {
+     "id": "transit-source:Collioure 관광청 — 자동차 접근과 주차",
+     "title": "Collioure 관광청 — 자동차 접근과 주차",
+     "to": "transport.references"
+    },
+    {
+     "id": "transit-source:Girona 시청 — Mercat del Lleó",
+     "title": "Girona 시청 — Mercat del Lleó",
+     "to": "transport.references"
+    },
     {
      "id": "transport-resource:ATM Girona integrated network",
      "title": "ATM Girona integrated network",
@@ -485,17 +493,13 @@
      "to": "(day page — 지역 페이지에 두지 않는다)",
      "entity_type": "attraction",
      "reason": "'Gordes' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
-    },
-    {
-     "id": "les-halles",
-     "title": "Les Halles d'Avignon 주변 점심",
-     "from": "먹거리 — 카드",
-     "to": "(day page — 지역 페이지에 두지 않는다)",
-     "entity_type": "attraction",
-     "reason": "'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
     }
    ],
    "mergedIntoPlaceCard": [
+    {
+     "id": "les-halles",
+     "title": "Les Halles d'Avignon 주변 점심"
+    },
     {
      "id": "fou-de-fafa-avignon",
      "title": "Fou de Fafa 아비뇽 첫 저녁"
@@ -578,16 +582,23 @@
      "from": "장소 — 그 밖의 장소",
      "to": "restaurantsCafes",
      "entity_type": "restaurant"
+    },
+    {
+     "id": "les-halles",
+     "title": "Les Halles",
+     "from": "장소 — 놓치지 말 것",
+     "to": "restaurantsCafes",
+     "entity_type": "food-hall"
     }
    ],
    "foodToDayOrAttraction": [
     {
-     "id": "les-halles",
-     "title": "Les Halles d'Avignon 주변 점심",
+     "id": "pont-du-gard",
+     "title": "Pont du Gard 간단한 점심",
      "from": "먹거리 — 카드",
      "to": "(day page — 지역 페이지에 두지 않는다)",
      "entity_type": "attraction",
-     "reason": "'Les Halles' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
+     "reason": "'Pont du Gard' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
     },
     {
      "id": "palais-des-papes",
@@ -596,28 +607,24 @@
      "to": "(day page — 지역 페이지에 두지 않는다)",
      "entity_type": "attraction",
      "reason": "'Palais des Papes' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
-    },
-    {
-     "id": "uzes",
-     "title": "Uzès Place aux Herbes 광장 테라스 점심",
-     "from": "먹거리 — 카드",
-     "to": "(day page — 지역 페이지에 두지 않는다)",
-     "entity_type": "attraction",
-     "reason": "'Uzès Place aux Herbes·구시가지' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
     }
    ],
    "mergedIntoPlaceCard": [
+    {
+     "id": "les-halles",
+     "title": "Les Halles d'Avignon 주변 점심"
+    },
     {
      "id": "fou-de-fafa-avignon",
      "title": "Fou de Fafa 아비뇽 첫 저녁"
     },
     {
-     "id": "les-cocottes-saint-louis",
-     "title": "Les Cocottes Saint-Louis 저녁 식사"
-    },
-    {
      "id": "le-gibolin-arles",
      "title": "Le Gibolin 점심 (아를 로케트 지구)"
+    },
+    {
+     "id": "les-cocottes-saint-louis",
+     "title": "Les Cocottes Saint-Louis 저녁 식사"
     },
     {
      "id": "cafe-comptoir-abel",
@@ -711,6 +718,13 @@
      "from": "장소 — 그 밖의 장소",
      "to": "restaurantsCafes",
      "entity_type": "restaurant"
+    },
+    {
+     "id": "halles-de-lyon-paul-bocuse",
+     "title": "Halles de Lyon Paul Bocuse",
+     "from": "장소 — 놓치지 말 것",
+     "to": "restaurantsCafes",
+     "entity_type": "food-hall"
     }
    ],
    "foodToDayOrAttraction": [
@@ -721,14 +735,6 @@
      "to": "(day page — 지역 페이지에 두지 않는다)",
      "entity_type": "attraction",
      "reason": "'Vieux Lyon · 트라불' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
-    },
-    {
-     "id": "halles-de-lyon-paul-bocuse",
-     "title": "Halles Paul Bocuse 미식 점심",
-     "from": "먹거리 — 카드",
-     "to": "(day page — 지역 페이지에 두지 않는다)",
-     "entity_type": "attraction",
-     "reason": "'Halles de Lyon Paul Bocuse' 은 관광지다. 이 카드는 그 장소에서 먹는다는 하루의 식사 슬롯이지 식당이 아니다"
     },
     {
      "id": "stop:part-dieu-lunch",
@@ -747,6 +753,10 @@
     {
      "id": "daniel-et-denise",
      "title": "Daniel et Denise 정통 부숑 만찬"
+    },
+    {
+     "id": "halles-de-lyon-paul-bocuse",
+     "title": "Halles Paul Bocuse 미식 점심"
     },
     {
      "id": "chez-mamie-lise",
