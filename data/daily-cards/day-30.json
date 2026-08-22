@@ -24,15 +24,18 @@
       "order": 1,
       "start": "08:00",
       "end": "12:45",
-      "name": "Standard Home Morning (아침·운동·장보기·점심)",
+      "name": "Standard Home Morning — Boulangerie Pichard 일요 빵 조달",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "숙소 일상 루틴 및 점심 식사",
-      "menu": null,
+      "summary": "숙소 일상 루틴 및 점심. 일요일 오전에 Pichard 에서 다음 날 아침 몫까지 산다 — 월·화는 이 빵집이 닫는다",
+      "menu": "바게트 트라디시옹, 크루아상, 팽 오 쇼콜라",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": null,
+      "related_place_refs": [
+        "boulangerie-pichard"
+      ]
     },
     {
       "id": "orangerie",

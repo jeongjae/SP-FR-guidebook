@@ -2,7 +2,7 @@
  "summary": {
   "regions": 8,
   "attraction_cards": 107,
-  "food_cards": 24,
+  "food_cards": 23,
   "food_in_attractions": 0,
   "attraction_in_food": 0,
   "retired_sections": 0,
@@ -19,11 +19,11 @@
   "website": 0,
   "map": 0,
   "menu": 3,
-  "price": 1,
+  "price": 0,
   "visit_day": 2
  },
  "photoStatus": {
-  "VALID_GOOGLE_MAPS": 15,
+  "VALID_GOOGLE_MAPS": 14,
   "VALID_EXISTING": 9
  },
  "places": [
@@ -57,22 +57,6 @@
    "menu": true,
    "price": true,
    "price_verified_at": "2026-08-21",
-   "visit_day": true
-  },
-  {
-   "region": "barcelona",
-   "slug": "la-paradeta-sagrada-familia",
-   "name": "Puertecillo Sagrada Família",
-   "entity_type": "restaurant",
-   "photo": true,
-   "photo_status": "VALID_GOOGLE_MAPS",
-   "photo_note": "FCR-04 에서 상호 변경(La Paradeta → Puertecillo)을 공식 사이트 두 곳으로 확인한 뒤 신원이 확정돼 사진을 받았다",
-   "description": true,
-   "website": true,
-   "map": true,
-   "menu": true,
-   "price": false,
-   "price_verified_at": null,
    "visit_day": true
   },
   {

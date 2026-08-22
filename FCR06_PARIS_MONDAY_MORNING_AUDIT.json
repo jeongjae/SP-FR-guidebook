@@ -1,0 +1,69 @@
+{
+  "$comment": [
+    "FCR-06 — Paris 체류 중 월요일 오전 stop 전수 점검.",
+    "판정은 공식 출처 우선. 근거 URL 을 남긴다. 확인 못 한 것은 확인 못 했다고 적는다."
+  ],
+  "auditedAt": "2026-08-23",
+  "scope": "Paris 체류 Day 27–42 중 월요일 전 일자의 오전(13:30 이전) stop 전체",
+  "mondays": [
+    {"day": 31, "date": "2026-09-28"},
+    {"day": 38, "date": "2026-10-05"}
+  ],
+  "note": "지시서는 월요일 3일로 적었으나 Paris 체류(Day 27 9/24 목 ~ Day 42 10/9 금)에 드는 월요일은 9/28·10/5 두 날뿐이다. Day 43(10/10)은 귀국일이고 토요일이다.",
+  "stops": [
+    {
+      "day": 31, "stop": "morning-routine", "time": "08:00–09:45",
+      "category": "bakery", "place": "Boulangerie Pichard",
+      "verdict": "CONFLICT",
+      "evidence": "매주 월요일·화요일 정기휴무 (수–일 07:00–13:30 / 15:30–20:00)",
+      "sources": [
+        "https://www.paris.fr/",
+        "https://www.horairesdouverture24.fr/filiale/Par%25EDs-Boulangerie%2520Pichard-4624413T.html"
+      ],
+      "fix": "RELOCATED — Pichard 방문을 전날 Day 30(일 9/27) 오전으로 옮겼다. 월요일 아침은 그 빵으로 먹는다"
+    },
+    {
+      "day": 31, "stop": "gustave-moreau", "time": "10:30–12:00",
+      "category": "museum", "place": "Musée Gustave Moreau",
+      "verdict": "OK",
+      "evidence": "Ouvert tous les jours sauf le mardi de 10h à 18h — 월요일 개관, 화요일 휴관. 정가 8€ / 할인 6€",
+      "sources": ["http://musee-moreau.fr/fr/informations-pratiques"],
+      "fix": null,
+      "guardGap": "place-facts.json 에 이 장소의 레코드가 없어 G1 이 자동으로 못 본다. 레코드만 만들면 G3(필수항목 참조)가 1건 늘어난다 — 원고에 dossier 절이 없기 때문이다. FCR-06 범위 밖이라 만들지 않았다"
+    },
+    {
+      "day": 31, "stop": "opera-lunch", "time": "12:15–13:30",
+      "category": "restaurant", "place": null,
+      "verdict": "NOT_APPLICABLE",
+      "evidence": "특정 업소를 지정하지 않은 '9구 누벨 아테네/오페라 점심' 이다. 영업일 충돌이 성립하지 않는다",
+      "sources": [], "fix": null
+    },
+    {
+      "day": 38, "stop": "morning-routine", "time": "09:00–13:30",
+      "category": "bakery", "place": "Boulangerie Pichard",
+      "verdict": "CONFLICT",
+      "evidence": "같은 근거 — 월·화 휴무",
+      "sources": ["https://www.paris.fr/"],
+      "fix": "REMOVED_FROM_STOP — 이 날은 경마 다음 날 회복·세탁 오전이라 빵집 방문 자체가 부가였다. 빵집 이름을 떼고 실제 활동으로 되돌렸다. 전날 Day 37(일)은 종일 롱샹 경마라 일요일 조달이 불가능하고, Day 30 처럼 옮길 자리가 없다"
+    }
+  ],
+  "alternativesConsidered": [
+    {
+      "option": "15구의 다른 시장으로 대체",
+      "verdict": "REJECTED",
+      "why": "Paris opendata marches-decouverts 조회 결과 15구 시장 6곳(LEFEBVRE·SAINT-CHARLES·CERVANTES·LECOURBE·GRENELLE·CONVENTION) 중 월요일에 서는 곳이 없다. 파리 전체로도 월요일 개장은 4곳뿐이고 15구에는 없다",
+      "source": "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/marches-decouverts/records"
+    },
+    {
+      "option": "월요일에 여는 15구 빵집으로 교체",
+      "verdict": "REJECTED",
+      "why": "Poilâne(49 bd de Grenelle)은 월요일 휴무. Boulangerie Emmanuel Martin(18 rue de Lourmel)은 자사 사이트 TLS 오류·pagesjaunes 403 으로 1차 출처에서 요일별 영업을 확인하지 못했다. 확인 못 한 영업시간을 확정처럼 쓰지 않는다"
+    }
+  ],
+  "sideFinding": {
+    "what": "Marché Lecourbe (FCR-04 에서 Day 29·36 토요일 아침에 넣은 곳)",
+    "verdict": "CONFIRMED",
+    "evidence": "opendata 상 LECOURBE 는 mercredi·samedi 개장. Day 29(9/26)·Day 36(10/3) 모두 토요일이라 맞다",
+    "source": "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/marches-decouverts/records"
+  }
+}

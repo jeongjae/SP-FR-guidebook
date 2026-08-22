@@ -94,9 +94,8 @@
       "region": "paris",
       "days": [
         28,
-        31,
-        35,
-        38
+        30,
+        35
       ],
       "source": "day-sot"
     },

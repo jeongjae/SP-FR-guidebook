@@ -714,6 +714,9 @@ Day 31·Day 39 시간표에 이미 나뉘어 있다.
 > 정식 운동(gym 45–60분 · 수영 또는 카페) · 세탁 · 냉장고 정리 · **둘째 주 장보기** · 숙소 점심.
 > 예약은 하루 **최대 1개**. 피로도 2/5 로 설계된 날이다.
 
+> **⚠ 월요일 아침에 빵집을 계획에 넣지 않는다**
+> 15구 아티장 빵집은 월·화 휴무가 흔하다. **Boulangerie Pichard 가 그렇고** ( {{fact:boulangerie-pichard.closed}} ), Poilâne 그르넬점도 월요일에 닫는다 {{badge:unverified|2차 출처}}. 그래서 월요일 아침 빵은 **전날 사 둔다.** Day 31 은 일요일(Day 30)에, Day 38 은 롱샹 경마로 일요일이 통째로 나가므로 토요일(Day 36) 장보기에 함께 담는다.
+
 {{badge:field-recheck|각 구역 시장 요일·공원 운영 현행 확인}}
 
 ### 의도적으로 비운 일요일
@@ -1029,7 +1032,7 @@ Day 31·Day 39 시간표에 이미 나뉘어 있다.
 
 > **Editor's Verdict**: 파리 최고의 바게트 그랑프리(Grand Prix de la Baguette) 수상에 빛나는 15구 대표 아티장 베이커리. 천연 발효 바게트 트라디시옹과 갓 구운 크루아상.
 
-- **체류/가격**: 10–15분 · **바게트 €1.30 · 크루아상 €1.40** (수–일 07:00–20:00, 월·화 휴무)
+- **체류/가격**: 10–15분 · {{fact:boulangerie-pichard.price_range}} · 운영 {{fact:boulangerie-pichard.hours}} · 휴무 {{fact:boulangerie-pichard.closed}} · {{fact:boulangerie-pichard.booking}}
 - **상세 가이드**: [Boulangerie Pichard 전체 가이드 보기](../places/boulangerie-pichard.html)
 
 ---
