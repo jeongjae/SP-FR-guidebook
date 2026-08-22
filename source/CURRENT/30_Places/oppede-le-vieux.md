@@ -4,7 +4,7 @@ name: "Oppède-le-Vieux"
 local_name: "Oppède-le-Vieux"
 region: luberon
 kind: spot
-grade: "대체"
+grade: "선택"
 priority: "OPTIONAL"
 content_tier: "TIER_C"
 summary: "19세기 주민들이 떠난 뒤 시간 속에 멈춰버린 뤼베롱의 신비로운 옛 중세 요새 마을. 숲과 덩굴에 뒤덮인 12세기 성채 폐허와 복원된 노트르담 달리동(Notre-Dame-d'Alidon) 성당."

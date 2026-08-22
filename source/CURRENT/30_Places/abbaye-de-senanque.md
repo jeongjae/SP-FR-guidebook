@@ -4,8 +4,8 @@ name: "Abbaye Notre-Dame de Sénanque"
 local_name: "Abbaye Notre-Dame de Sénanque"
 region: luberon
 kind: spot
-grade: "우선 추천"
-priority: "MUST_SEE"
+grade: "선택"
+priority: "OPTIONAL"
 content_tier: "TIER_A"
 summary: "1148년 깊은 협곡 속에 세워진 12세기 시토회(Cistercian) 로마네스크 수도원. 일체의 장식을 배제한 절대적 청빈의 중세 석조 건축과 현재도 이어지는 수도사들의 침묵 기도."
 source: source/CURRENT/30_Places/abbaye-de-senanque.md
