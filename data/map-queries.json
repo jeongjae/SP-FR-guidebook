@@ -1459,10 +1459,10 @@
     "day-42:cdg-transfer": {
       "title": "15구 숙소 ➔ CDG 공항 터미널 1 이동",
       "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Aéroport Paris-Charles de Gaulle Terminal 1",
+      "destination": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
       "travelMode": "driving",
       "evidence": "Paris taxi flat fare from Left Bank to CDG Terminal 1",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-23"
     }
   },
   "nonMapStops": [

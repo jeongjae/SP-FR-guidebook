@@ -28,7 +28,7 @@
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "숙소 체크아웃 후 택시 또는 아비뇽 중앙역 ➔ TGV 셔틀열차(5분)로 Avignon TGV역 이동. [차량 반납은 9/17 완료되어 렌터카 절차 없음]. 09:30 이전 역사 메인홀 진입 후 10:22 열차 대기",
+      "summary": "숙소 체크아웃 후 택시(10~15분, 약 €15~22) 또는 Avignon Centre역 ➔ Avignon TGV 셔틀열차(5분, €1.80)로 Gare d'Avignon TGV역 이동. [차량 반납은 9/17 완료되어 렌터카 절차 없음]. 09:30 이전 역사 메인홀 진입 후 10:05 전광판 Voie 확인 및 10:22 열차 대기",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -43,7 +43,7 @@
       "category": "transport",
       "lat": 45.7606,
       "lng": 4.8594,
-      "summary": "10:05 플랫폼(Voie) 전광판 확인 및 이동 ➔ 10:22 TGV INOUI 12176 정시 발차 ➔ 11:28 Lyon Part-Dieu역 도착 (1등석 확정 [CONFIRMED], 1시간 6분 소요)",
+      "summary": "10:05 플랫폼(Voie) 전광판 확인 및 에스컬레이터 이동 ➔ 10:22 TGV INOUI 12176 정시 발차 ➔ 11:28 Lyon Part-Dieu역 도착 (1등석 확정 [CONFIRMED], 1시간 6분 고속주행, 3호차 307·308)",
       "menu": null,
       "reservation": "예약완료 TGV INOUI 12176 · 1등석 3호차 307(Jungah)·308(Jeongjae) ([CONFIRMED]) — 10:22→11:28",
       "optional": false,
@@ -58,7 +58,7 @@
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "택시로 숙소 이동 (15분). 짐 보관(Luggage Drop) 후 몽플레지르/파르디외 인근 점심 식사 ➔ 15:00 정식 체크인 및 짐 정리",
+      "summary": "Part-Dieu역 서쪽 Place Béraudier 공식 Taxi 승강장에서 택시 탑승(10~12분 소요, 미터 요금 약 €12~16) ➔ Lagrange Aparthotel Lyon Lumière 정문 하차 및 짐 보관(Luggage Drop). 몽플레지르 인근 점심 식사 후 15:00 정식 체크인",
       "menu": "리옹식 샐러드, 퀘넬(Quenelle)",
       "reservation": "예약확정 Lagrange Aparthotel Lyon Lumière ([CONFIRMED]) — 체크인 15:00",
       "optional": false,
@@ -134,9 +134,10 @@
     }
   ],
   "transport": [
-    "택시 또는 TER 셔틀 (Avignon 숙소 ➔ Avignon TGV역)",
-    "TGV INOUI 12176 (Avignon TGV 10:22 ➔ Lyon Part-Dieu 11:28, 1등석 확정)",
-    "Lyon 택시/지하철"
+    "T03 아비뇽 출발(추천): Avignon 숙소 ➔ Gare d'Avignon TGV 택시 이동 (약 10~15분, €15~22 / 또는 Avignon Centre ➔ TGV 셔틀열차 5분, €1.80). [렌터카 반납 절차 없음, 9/17 완료]. 09:30 이전 역사 도착",
+    "TGV INOUI 12176: 1등석 3호차 307·308 (10:22 Avignon TGV 발차 ➔ 11:28 Lyon Part-Dieu 도착, 1시간 6분 소요 [CONFIRMED])",
+    "T04 리옹 도착(추천): Part-Dieu역 서쪽 Place Béraudier 공식 Taxi 승강장 ➔ Lagrange Aparthotel Lyon Lumière (약 10~12분, 미터 요금 약 €12~16)",
+    "T04 대안: TCL 메트로 B선(Part-Dieu) ➔ Saxe-Gambetta 환승 ➔ D선 Monplaisir - Lumière역 하차 (약 20분, 1인 €2.10)"
   ],
   "food": [
     "도착 점심은 가볍게",

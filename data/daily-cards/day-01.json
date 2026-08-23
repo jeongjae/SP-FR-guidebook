@@ -28,7 +28,7 @@
       "category": "transport",
       "lat": 41.296944,
       "lng": 2.079047,
-      "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 도착층 Aerobús A1 정류장으로 이동",
+      "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 도착층(Floor 0) 외부 Aerobús A1 승강장으로 이동하여 Plaça d'Espanya행 탑승 (25~35분 소요, 1인 €7.75 모바일 QR/비접촉 카드). 하차 후 Carrer de la Creu Coberta 방향 평지 도보 200m(약 3~5분) 숙소 진입",
       "menu": null,
       "reservation": "예약완료 OZ511 ([CONFIRMED]) — ICN T2 11:50 출발",
       "optional": false,
@@ -86,8 +86,10 @@
     }
   ],
   "transport": [
-    "Aerobús A1 편도 (BCN T1 → Plaça Espanya)",
-    "Plaça Espanya → 숙소 도보 약 5분"
+    "추천: Aerobús A1 편도 (BCN T1 도착층 승강장 ➔ Plaça d'Espanya 하차, 25~35분, 1인 €7.75 모바일 QR/비접촉 카드)",
+    "마지막 구간: Plaça d'Espanya 정류장 하차 ➔ Carrer de la Creu Coberta 방향 평지 도보 약 200m / 3~5분 ➔ Occidental Barcelona 1929 숙소 도착",
+    "대안: 심야 지연 시 24시간 Aerobús A1 또는 심야버스 NitBus N17 이용 (Plaça d'Espanya 직통)",
+    "주의: T1은 A1 탑승 (T2 전용 A2 탑승 금지). Hola Barcelona 48h 카드는 Aerobús 미적용"
   ],
   "food": [
     "기내 저녁으로 해결",
