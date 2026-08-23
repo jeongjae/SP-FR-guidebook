@@ -9,7 +9,7 @@
 - **적용 기준**: 현장 즉시 실행성, 수하물(대형 캐리어) 현실성, 시간 완충(Buffer), Google Maps Directions 링크, 공식 교통/예약 링크, Day SOT 일치.
 - **핵심 정합 성과**:
   - **T01 (BCN T1 ➔ Barcelona 숙소)**: Aerobús A1 승차 및 Plaça d'Espanya 하차 후 200m 평지 도보 경로 완비 (Google Maps transit directions 연결).
-  - **T02 (NCE T1 ➔ Nice 숙소)**: Lignes d'Azur 트램 2호선 승차 ➔ Alsace-Lorraine 지하역 하차 후 도보 450m(6분) 경로 및 €32 정액 택시 대안 완비.
+  - **T02 (NCE T1 ➔ Nice 숙소)**: Lignes d'Azur 트램 2호선 승차(공항 발매기 Aéro €10 왕복권 또는 Lignes d'Azur 충전카드) ➔ Alsace-Lorraine 지하역 하차 후 도보 450m(6분) 경로 및 €32 정액 택시 대안 완비.
   - **T03 (Avignon 숙소 ➔ Gare d'Avignon TGV)**: 9/17 렌터카 반납 완료(9/20 차량 절차 0건) 정합, 10:22 TGV INOUI 12176 탑승을 위한 08:45 택시/셔틀 출발 및 역사 버퍼 가이드 완비.
   - **T04 (Lyon Part-Dieu ➔ Lagrange Aparthotel Lyon Lumière)**: 서쪽 Place Béraudier 공식 Taxi 승강장 이용 및 숙소 문전 하차/짐 보관 절차 완비.
   - **T05 (Lagrange Aparthotel Lyon Lumière ➔ Lyon Part-Dieu for Annecy)**: 08:08 발차 직통 TER 17904 탑승을 위한 07:30 숙소 출발, 전석 자유석 티켓팅(SNCF Connect QR) 및 역사 버퍼 가이드 완비.
@@ -88,19 +88,23 @@
 - **마지막 구간**: Alsace-Lorraine역 엘리베이터로 지상 출구 ➔ Boulevard Gambetta 북쪽 150m ➔ Rue Verdi 우회전 250m 평지 도보 (총 450m / 약 6분) ➔ Palais ALZIRA (12 Rue Verdi) 도착
 - **예상 총 소요시간**: 트램 탑승 20~25분 + 도보 6분 = 약 30분
 - **짐 포함 현실적 시간**: 16:55 착륙 ➔ 수하물 수취(30분) ➔ 17:35 트램 탑승 ➔ 18:05 숙소 체크인 완료
-- **비용**: 1인 편도 **€1.70** (Solo 1회권 / Lignes d'Azur 충전식 카드 / 차내 비접촉식 신용카드 태그)
+- **비용**: 공항 트램 발매기에서 **Aéro €10 왕복권** 구매 (또는 유효한 Lignes d'Azur 충전 카드가 이미 있는 경우 일반요금 회당 €1.70 적용)
 - **예약 필요 여부**: 불필요 (8~10분 간격 운행)
 
 ### 이용 방법 (현장 실행 가이드)
 1. NCE T1 도착 홀에서 나와 "Tramway L2" 표지를 따라 트램 승강장으로 이동한다.
-2. 승강장 자동발매기에서 티켓을 구매하거나 비접촉식 카드를 준비한다.
+2. 승강장 자동발매기에서 **Aéro €10 왕복권**을 구입하거나, 기존에 보유한 충전식 La Carte를 사용한다.
 3. **Port Lympia 방향** 트램 2호선에 탑승한다 (저상 트램이므로 캐리어를 끌고 쉽게 승차 가능).
-4. 승차 즉시 차내 노란색 검표 단말기에 티켓 또는 카드를 태그(Valider)한다.
+4. 승차 즉시 차내 노란색 검표 단말기에 티켓을 태그(Valider)한다.
 5. 지하역인 **Alsace-Lorraine**역에서 하차하여 엘리베이터를 타고 지상으로 나온다.
 6. Boulevard Gambetta를 따라 북쪽으로 1블록 이동 후 Rue Verdi로 우회전하여 12 Rue Verdi 입구로 들어간다.
 
 ### 티켓 / 예약
-- **구입처**: 트램 승강장 무인 발매기, 모바일 앱 "Lignes d'Azur Tickets", 차내 컨택리스 단말기.
+- **구입처**: 공항 트램 승강장 무인 발매기 (신용카드 결제 가능).
+- **공항 승차권 원칙**:
+  - **처음 도착한 일반 관광객**: 공항 트램 승강장 발매기에서 **Aéro €10 왕복권**을 구입하여 Tram 2를 이용한다.
+  - **이미 Lignes d’Azur 카드가 있는 경우**: 유효한 Lignes d’Azur 카드에 일반 승차권(Multi voyages 등)이 충전되어 있으면 일반요금(회당 €1.70)으로 이용할 수 있다.
+  - ⚠ 공항에서는 일반 Single Solo(€1.70)를 무조건 비접촉 카드로 단독 태그할 수 없으므로 발매기 Aéro 발권을 기본으로 한다.
 - **개찰**: 탑승 즉시 차내 단말기 태그 필수 (불시 검표 단속 빈번).
 - **주의사항**: CADAM행이 아닌 **Port Lympia행** 탑승.
 
@@ -340,7 +344,7 @@
 - **항공권**: **아시아나항공 OZ502 확정 [CONFIRMED]** (19:10 CDG Terminal 1 출발 ➔ 10/10 14:10 ICN Terminal 2 도착, 비행시간 12시간, 좌석 48G/48H, 무료 수하물 1PC).
 
 ### 대안 (Alternative - Emergency Fallback)
-- **Metro 8/10선 ➔ RER B ➔ CDGVAL ➔ Terminal 1**: (약 75~90분 소요, 1인 €11.80~€13.00). 극심한 도로 통제 또는 긴급 비상시에만 사용하는 대안. 대형 캐리어 소지 시 계단과 환승 피로가 극심하므로 일반 상황에서는 택시 강력 권장.
+- **Metro 8/10선 ➔ RER B ➔ CDGVAL ➔ Terminal 1**: (약 75~90분 소요, **1인 €14.00 공항구간 티켓 필수**, 일반 €2.55 시내권 티켓 불가). 극심한 도로 통제 또는 긴급 비상시에만 사용하는 대안. 대형 캐리어 소지 시 계단과 환승 피로가 극심하므로 일반 상황에서는 택시 강력 권장.
 
 ### 링크
 - **Paris Aéroport (CDG)**: [CDG Official Passenger Access](https://www.parisaeroport.fr/en/passengers/access/paris-charles-de-gaulle)
@@ -354,14 +358,14 @@
 
 | ID | Route | Primary | Alternative | Ticket Guide | Last Mile | Google Map | Official Link | Day Link | Verdict |
 |---|---|---|---|---|---|---|---|---|:---:|
-| **T01** | BCN T1 ➔ Barcelona 숙소 | Aerobús A1 (25~35m, €7.75) | Taxi (€30~35) / Metro L9 | 모바일 QR / 발매기 | Plaça d'Espanya 도보 200m(3~5m) | Directions URL | aerobusbarcelona.es | Day 1 | **COMPLETE** |
-| **T02** | NCE T1 ➔ Nice 숙소 | Tram 2 (20~25m, €1.70) | Taxi 정액 (€32) | 발매기 / 컨택리스 | Alsace-Lorraine 도보 450m(6m) | Directions URL | lignesdazur.com | Day 7 | **COMPLETE** |
+| **T01** | BCN T1 ➔ Barcelona 숙소 | Aerobús A1 (25~35m, €7.75) | NitBus N17 (€2.55) | 모바일 QR / 발매기 | Plaça d'Espanya 도보 200m(3~5m) | Directions URL | aerobusbarcelona.es | Day 1 | **COMPLETE** |
+| **T02** | NCE T1 ➔ Nice 숙소 | Tram 2 (20~25m, Aéro €10 왕복) | Taxi 정액 (€32) | 공항 발매기 / 충전카드 | Alsace-Lorraine 도보 450m(6m) | Directions URL | lignesdazur.com | Day 7 | **COMPLETE** |
 | **T03** | Avignon 숙소 ➔ Avignon TGV역 | Taxi (10~15m, €15~22) | TER 셔틀 (€1.80) | 사전예약 콜택시 | 역사 메인홀 진입 (차량절차0) | Directions URL | garesetconnexions.sncf | Day 23 | **COMPLETE** |
 | **T04** | Lyon Part-Dieu ➔ Lyon 숙소 | Taxi (10~12m, €12~16) | Metro B➔D (€2.10) | 서쪽 승강장 미터기 | 숙소 정문 하차 (도보 0m) | Directions URL | tcl.fr | Day 23 | **COMPLETE** |
 | **T05** | Lyon 숙소 ➔ Part-Dieu (Annecy행) | Taxi (8~10m, €12~15) | Metro D➔B (15m) | SNCF Connect QR | Part-Dieu 메인홀 Voie 확인 | Directions URL | ter.sncf.com | Day 26 | **COMPLETE** |
 | **T06** | Annecy 귀환역 ➔ Lyon 숙소 | Taxi (10m, €12~16) | Metro B➔D (18m) | 서쪽 승강장 미터기 | 숙소 정문 하차 (도보 0m) | Directions URL | tcl.fr | Day 26 | **COMPLETE** |
 | **T07** | Gare de Lyon ➔ Paris 15구 숙소 | Taxi (30~45m, €25~35) | Metro 14➔8 (€2.55) | Place Louis Armand 승강장 | 숙소 정문 하차 (도보 0m) | Directions URL | ratp.fr | Day 27 | **COMPLETE** |
-| **T08** | Paris 15구 숙소 ➔ CDG T1 | Taxi 정액제 (€65.00) | Metro➔RER B (€13) | G7 콜택시 예약 | T1 출발층 (PABLO 환급) | Directions URL | parisaeroport.fr | Day 42 | **COMPLETE** |
+| **T08** | Paris 15구 숙소 ➔ CDG T1 | Taxi 정액제 (€65.00) | Metro➔RER B (€14) | G7 콜택시 예약 | T1 출발층 (PABLO 환급) | Directions URL | parisaeroport.fr | Day 42 | **COMPLETE** |
 
 ---
 
