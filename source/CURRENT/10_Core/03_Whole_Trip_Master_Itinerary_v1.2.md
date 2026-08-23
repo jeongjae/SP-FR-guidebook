@@ -25,10 +25,10 @@ status: "chapter-derived master itinerary; booking values pending"
 | 13 | **9/10 목** | Aix-en-Provence | Aix 시장·구시가지·세잔 아틀리에·Granet | 목요시장, Vieil Aix, Atelier des Lauves(세잔 아틀리에), Musée Granet, Cours Mirabeau | 피로 시 Granet 압축·카페 휴식 | 3 | Atelier 예약·식당 |
 | 14 | **9/11 금** | Aix-en-Provence | Cassis와 Calanques 해안 당일치기 | Aix↔Cassis 차량 왕복, 칼랑크 유람선(3개 피오르드), 카시스 항구 점심, Port-Miou 도보 | 강풍·결항 시 Cap Canaille 드라이브 대체 | 3 | 유람선·주차 |
 | 15 | 9/12 토 | Aix-en-Provence | Marseille 전일 당일치기 | TER 왕복, Vieux-Port, Le Panier, Mucem/Fort Saint-Jean, Notre-Dame de la Garde | 피로 시 Vallon des Auffes 생략 후 조기 복귀 | 4 | TER·Mucem |
-| 16 | 9/13 일 | Luberon | Aix→Lourmarin→농가 | Lourmarin 스케치행사, Coustellet 장보기, 농가 체크인 | Cucuron/Goult 추가 금지 | 3 | 농가·행사 |
-| 17 | 9/14 월 | Luberon | 오커색과 생활마을 | Roussillon, Sentier des Ocres | Goult 또는 Bonnieux 택1 | 3 | 오커길 |
-| 18 | 9/15 화 | Luberon | Gordes와 돌의 문화 | Gordes, Village des Bories | Ménerbes 또는 Oppède 택1 | 3 | 주차·마을 운영 |
-| 19 | 9/16 수 | Avignon | Luberon 체크아웃→Avignon | 농가 아침, 체크아웃, Avignon 이동·체크인, 가벼운 성벽 산책 | L’Isle 목요시장은 날짜 불일치로 기본안 제외 | 3 | 농가 변경·Avignon 숙소 |
+| 16 | 9/13 일 | Gordes | Aix→남부 Luberon→Gordes | Aix 체크아웃, Lourmarin 마을·점심, Gordes 체크인·전망·구시가지 | Bonnieux 선택, Lacoste 최우선 삭제 | 3 | Gordes 2박·Lourmarin 점심 |
+| 17 | 9/14 월 | Gordes | 오크르와 Sénanque | Roussillon·Sentier des Ocres, Abbaye de Sénanque, Gordes 복귀 | Ménerbes 우선 선택, Goult 먼저 삭제 | 3 | Sénanque 슬롯·오커길 |
+| 18 | 9/15 화 | Avignon | 물의 Provence→Avignon | Gordes 체크아웃, L'Isle 물길·물레방아, Avignon 체크인 | Fontaine-de-Vaucluse 선택; 화요일 앤틱·시장 일정 금지 | 3 | Avignon 5박·주차 |
+| 19 | 9/16 수 | Avignon | Saint-Rémy 시장과 Les Baux | Saint-Rémy 수요시장·구시가지·점심, Les Baux 성채·전망 | Orange는 가장 먼저 삭제하는 Bonus | 4 | 시장·Château 운영 |
 | 20 | 9/17 목 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher, Pont | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
 | 21 | 9/18 금 | Avignon | Uzès와 Pont du Gard | Uzès 구시가지, Pont du Gard | 시장은 금요일 운영 재확인; 박물관·일몰 택1 | 4 | 주차·입장 |
 | 22 | 9/19 토 | Avignon | Arles 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 4 | 문화유산의 날·철도/주차 |
@@ -61,8 +61,9 @@ status: "chapter-derived master itinerary; booking values pending"
 | 9/1 | Barcelona→Sitges→Girona | 렌터카 인수 지연 시 Sitges 축소, Girona 도착 안정성 우선 |
 | 9/4 | Bàscara 체크아웃→Nice 이동 | 이동수단·차량 반납지·소요시간 재확인 필요 |
 | **9/9** | Nice→Saint-Paul→Grasse→Aix | 렌터카 인수 지연 시 Grasse부터 삭제 |
-| 9/13 | Aix→Lourmarin→Luberon | 4박 체크아웃 후 장보기·농가 진입 |
-| 9/16 | Luberon→Avignon | 3박 농가 체크아웃 후 성벽도시 체크인·주차 안정성 우선 |
+| 9/13 | Aix→Lourmarin→Gordes | Aix 4박 체크아웃 후 Lourmarin 점심, Gordes 2박 체크인 |
+| 9/15 | Gordes→L'Isle-sur-la-Sorgue→Avignon | Gordes 2박 체크아웃 후 물길 산책, Avignon 5박 체크인 |
+| 9/16 | Avignon→Saint-Rémy→Les Baux→Avignon | 수요시장과 Alpilles 당일 운전; Orange는 Bonus |
 | 9/20 | Avignon→Lyon | 주유·반납·TGV 완충시간 확보 |
 | 9/24 | Lyon→Paris | 15박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |
 | 10/9 | Paris→CDG | 출국일 도심 관광 금지, 공항 도착여유 최우선. OZ502 19:10 출발 |

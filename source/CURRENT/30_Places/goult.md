@@ -4,12 +4,24 @@ name: "Goult"
 local_name: "Goult (Le Village Secret)"
 region: luberon
 kind: spot
-grade: "우선 추천"
-priority: "WORTHWHILE"
+grade: "선택"
+priority: "OPTIONAL"
 content_tier: "TIER_B"
 summary: "대형 관광버스가 닿지 않아 뤼베롱에서 가장 고요하고 평화로운 '숨겨진 보석' 마을. 언덕 정상의 17세기 예루살렘 풍차(Moulin de Jérusalem)와 현지인들의 정겨운 일상이 살아있는 골목길."
 source: source/CURRENT/30_Places/goult.md
 ---
+
+## 현장 실행
+
+- **OPTIONAL 2 · Day 17 · 45–60분**
+- **WHY GO**: Gordes–Roussillon–Ménerbes 사이에서 조용한 생활형 골목과 Moulin de Jérusalem을 짧게 걷는다.
+- **DO THIS**: 중심부 → Rue de la République → 상부 골목 → Moulin de Jérusalem → 전망 → 원점 회귀.
+- **EAT / DRINK**: coffee·bakery·quick snack만. 긴 식사는 넣지 않는다.
+- **IF LATE**: Day 17에서 가장 먼저 생략한다.
+
+### Trip Layer
+
+Roussillon이 늦어지거나 Sénanque 16:00 전후 도착이 위험하면 즉시 skip한다.
 
 ## 왜 가는가
 

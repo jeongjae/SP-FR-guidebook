@@ -4,84 +4,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Domaine des Peyre",
+        "name": "Gordes 숙소권",
         "sequence": 1,
-        "category": "숙소 후보",
-        "status": "후보 — 실제 예약 후 교체",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Domaine+des+Peyre",
-        "phase": "Phase 6"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.12202,
-          43.87088
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Coustellet",
-        "sequence": 2,
-        "category": "시장·생활",
-        "status": "일정 기준점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Coustellet",
-        "phase": "Phase 6"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.14544,
-          43.86673
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Roussillon",
-        "sequence": 3,
-        "category": "근교·이동지",
-        "status": "일정 기준점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Roussillon",
-        "phase": "Phase 6"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.29207,
-          43.90202
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Goult",
-        "sequence": 4,
-        "category": "근교·이동지",
-        "status": "일정 기준점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Goult",
-        "phase": "Phase 6"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.24417,
-          43.86306
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Gordes",
-        "sequence": 5,
-        "category": "근교·이동지",
-        "status": "일정 기준점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gordes",
-        "phase": "Phase 6"
+        "category": "숙박 거점",
+        "status": "9/13–9/15 · 2박 · 실제 숙소 확정 후 교체",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gordes+accommodation",
+        "phase": "Provence Day 16–18"
       },
       "geometry": {
         "type": "Point",
@@ -94,18 +22,90 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Village des Bories",
-        "sequence": 6,
-        "category": "근교·이동지",
-        "status": "일정 기준점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Village+des+Bories",
-        "phase": "Phase 6"
+        "name": "Lourmarin",
+        "sequence": 2,
+        "category": "MUST · Day 16",
+        "status": "마을 산책·점심",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lourmarin",
+        "phase": "Provence Day 16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.1857,
-          43.89728
+          5.3628,
+          43.7636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bonnieux",
+        "sequence": 3,
+        "category": "OPTIONAL · Day 16",
+        "status": "Lacoste보다 우선 · 지연 시 생략",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bonnieux",
+        "phase": "Provence Day 16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3078261,
+          43.8236124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lacoste",
+        "sequence": 4,
+        "category": "OPTIONAL · Day 16",
+        "status": "첫 생략 대상",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Lacoste+Vaucluse",
+        "phase": "Provence Day 16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2728505,
+          43.8318965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gordes",
+        "sequence": 5,
+        "category": "MUST · Day 16–18",
+        "status": "전망·구시가지·2박 거점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Gordes",
+        "phase": "Provence Day 16–18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.20043,
+          43.91181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roussillon · Sentier des Ocres",
+        "sequence": 6,
+        "category": "MUST · Day 17",
+        "status": "09:30 트레일 개장 · 당일 안전통제 확인",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Sentier+des+Ocres+Roussillon",
+        "phase": "Provence Day 17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.29207,
+          43.90202
         ]
       }
     },
@@ -114,10 +114,10 @@
       "properties": {
         "name": "Ménerbes",
         "sequence": 7,
-        "category": "근교·이동지",
-        "status": "일정 기준점",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Ménerbes",
-        "phase": "Phase 6"
+        "category": "OPTIONAL 1 · Day 17",
+        "status": "점심 거점 후보",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=M%C3%A9nerbes",
+        "phase": "Provence Day 17"
       },
       "geometry": {
         "type": "Point",
@@ -130,18 +130,72 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "L’Isle-sur-la-Sorgue",
+        "name": "Goult",
         "sequence": 8,
-        "category": "근교·이동지",
-        "status": "선택 대안 — 9/17 기본 일정 아님",
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=L’Isle-sur-la-Sorgue",
-        "phase": "Phase 6"
+        "category": "OPTIONAL 2 · Day 17",
+        "status": "Optional 중 첫 생략",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Goult",
+        "phase": "Provence Day 17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.24417,
+          43.86306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abbaye Notre-Dame de Sénanque",
+        "sequence": 9,
+        "category": "MUST · Day 17",
+        "status": "월요일 관람 가능 · 예약슬롯 재확인",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Abbaye+Notre-Dame+de+S%C3%A9nanque",
+        "phase": "Provence Day 17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1871502,
+          43.9284546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L'Isle-sur-la-Sorgue",
+        "sequence": 10,
+        "category": "MUST · Day 18",
+        "status": "화요일 물길·물레방아 중심 · 시장일 아님",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=L%27Isle-sur-la-Sorgue",
+        "phase": "Provence Day 18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           5.05477,
           43.91904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fontaine-de-Vaucluse",
+        "sequence": 11,
+        "category": "OPTIONAL · Day 18",
+        "status": "Avignon 체크인을 해치지 않을 때",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fontaine-de-Vaucluse",
+        "phase": "Provence Day 18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1272914,
+          43.9221229
         ]
       }
     }

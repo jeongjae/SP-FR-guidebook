@@ -11,6 +11,12 @@
 <Placemark><name>[핵심 방문지] Mucem</name><description>9/11 기본 일정</description><Point><coordinates>5.3612,43.2967,0</coordinates></Point></Placemark>
 <Placemark><name>[핵심 방문지] Fort Saint-Jean</name><description>9/11 기본 일정</description><Point><coordinates>5.3635,43.2959,0</coordinates></Point></Placemark>
 <Placemark><name>[근교·이동지] Notre-Dame de la Garde</name><description>체력·날씨에 따른 선택</description><Point><coordinates>5.3712,43.2841,0</coordinates></Point></Placemark>
+<Placemark><name>[교통] Marseille Saint-Charles</name><description>9/11 기본 당일치기 도착점</description><Point><coordinates>5.3805,43.3026,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Vieux-Port</name><description>9/11 기본 일정</description><Point><coordinates>5.374,43.2951,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Le Panier</name><description>9/11 기본 일정</description><Point><coordinates>5.3674,43.3006,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Mucem</name><description>9/11 기본 일정</description><Point><coordinates>5.3612,43.2967,0</coordinates></Point></Placemark>
+<Placemark><name>[핵심 방문지] Fort Saint-Jean</name><description>9/11 기본 일정</description><Point><coordinates>5.3635,43.2959,0</coordinates></Point></Placemark>
+<Placemark><name>[근교·이동지] Notre-Dame de la Garde</name><description>체력·날씨에 따른 선택</description><Point><coordinates>5.3712,43.2841,0</coordinates></Point></Placemark>
 <Placemark><name>[핵심 방문지] Atelier Cézanne</name><description>일정 기준점</description><Point><coordinates>5.44704,43.53964,0</coordinates></Point></Placemark>
 <Placemark><name>[근교·이동지] Lourmarin</name><description>일정 기준점</description><Point><coordinates>5.36383,43.76373,0</coordinates></Point></Placemark>
 </Document></kml>

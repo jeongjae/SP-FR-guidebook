@@ -162,9 +162,9 @@ class MapHubImprovementTests(unittest.TestCase):
             ("barcelona", "Barcelona", 17),
             ("girona", "Girona · Empordà", 6),
             ("nice", "Nice · Côte d'Azur", 21),
-            ("aix", "Aix-en-Provence", 19),
-            ("luberon", "Luberon", 9),
-            ("avignon", "Avignon · Alpilles", 20),
+            ("aix", "Aix-en-Provence", 20),
+            ("luberon", "Luberon", 11),
+            ("avignon", "Avignon · Alpilles", 24),
             ("lyon", "Lyon", 18),
             ("paris", "Paris", 42),
         ]
@@ -179,7 +179,7 @@ class MapHubImprovementTests(unittest.TestCase):
             total_pins += count
             last_pos = pos
 
-        self.assertEqual(total_pins, 152, "8개 지역 총 핀 수는 152이어야 함")
+        self.assertEqual(total_pins, 159, "8개 지역 총 핀 수는 159이어야 함")
 
         # 3. 8개의 map-card 및 script data가 존재하는지 확인
         map_cards = re.findall(r'<div class="map-card">', map_html)
@@ -202,7 +202,7 @@ class MapHubImprovementTests(unittest.TestCase):
         # 6. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
         date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
         matches = date_pattern.findall(map_html)
-        self.assertEqual(len(matches), 152, "152개 항목 모두 날짜 메타가 존재해야 함")
+        self.assertEqual(len(matches), 159, "159개 항목 모두 날짜 메타가 존재해야 함")
 
         # 7. Verify specific items
         self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)

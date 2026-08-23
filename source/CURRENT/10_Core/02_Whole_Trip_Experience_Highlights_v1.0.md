@@ -20,7 +20,7 @@ status: "전 지역 편집자 추천 요약"
 | 7 | Cannes·Monaco의 도시성 비교 | Côte d’Azur | 리조트도시와 도시국가의 대비 |
 | 8 | Aix 시장재료로 숙소 점심 만들기 | Aix | 프로방스 생활리듬 시작 |
 | 9 | Marseille의 Vieux-Port·Le Panier·Mucem | Provence coast | 내륙 생활도시와 지중해 항구대도시의 대비 |
-| 10 | Luberon 농가 테라스의 느린 저녁 | Luberon | 농가숙박의 핵심 목적 |
+| 10 | Gordes의 돌빛과 관광객이 줄어든 저녁 | Luberon | 2박 거점의 장점을 살리는 경험 |
 | 11 | Roussillon 오커와 Gordes 석조마을 | Luberon | 지질과 건축의 관계 |
 | 12 | Palais des Papes·Pont du Gard·Arles | Avignon region | 중세권력, 로마공학과 실제 도시생활의 대비 |
 | 13 | Fourvière에서 두 강의 도시 읽기 | Lyon | 도시지형을 한눈에 이해 |
@@ -36,7 +36,7 @@ status: "전 지역 편집자 추천 요약"
 | Girona·Empordà | 카탈루냐 전통식·Collioure 생선 | 장거리 운전일에는 코스 축소 |
 | Nice | petits farcis·daube·socca | socca는 간식, 전통저녁은 한 번 |
 | Aix | 시장식·계절 지중해요리 | Marseille 점심 뒤 저녁은 가볍게 |
-| Luberon | 농가 테라스 식사 | 시장재료를 직접 조합 |
+| Luberon | Lourmarin 점심·Gordes 저녁 | 이동일 식사와 숙박거점의 리듬을 분리 |
 | Avignon | 남부 비스트로·Halles 포장식 | 특별식 1회, 시장식 1회 이상 |
 | Lyon | quenelle 중심 bouchon | bouchon은 1~2회, 과식 방지 |
 | Paris | 동네 비스트로·시장 숙소식 | 특별식 2회, 숙소식 4~5회 |
@@ -49,7 +49,7 @@ status: "전 지역 편집자 추천 요약"
 - Nice: Cours Saleya 시장
 - Saint-Paul-de-Vence: 성벽골목
 - Aix: Richelme 시장과 작은 광장
-- Luberon: Gordes 전체전망보다 농가 주변 돌담·포도밭
+- Luberon: Gordes 진입 파노라마와 해질 무렵 석회암 골목
 - Avignon: Palais 광장의 늦은 오후
 - Lyon: Saône 강변과 Vieux Lyon
 - Annecy: Palais de l’Île와 Thiou 운하
@@ -59,7 +59,7 @@ status: "전 지역 편집자 추천 요약"
 
 - Nice 해변 또는 항구 카페 45분
 - Calella de Palafrugell 바다 앞 30분
-- Luberon 농가의 느린 아침과 매일 귀환 후 저녁
+- Gordes 숙소의 느린 아침과 근교에서 귀환한 뒤의 저녁
 - Avignon 성벽 안 저녁산책
 - Lyon Parc de la Tête d’Or 1시간
 - Paris 일요일 완충일과 매일 오후·저녁 사이 1시간

@@ -202,8 +202,116 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Atelier Cézanne",
+        "name": "Marseille Saint-Charles",
         "sequence": 12,
+        "category": "교통",
+        "status": "9/11 기본 당일치기 도착점",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Marseille+Saint-Charles",
+        "phase": "확정 일정 2026-08-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3805,
+          43.3026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vieux-Port",
+        "sequence": 13,
+        "category": "핵심 방문지",
+        "status": "9/11 기본 일정",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Vieux-Port",
+        "phase": "확정 일정 2026-08-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.374,
+          43.2951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Panier",
+        "sequence": 14,
+        "category": "핵심 방문지",
+        "status": "9/11 기본 일정",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Le+Panier",
+        "phase": "확정 일정 2026-08-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3674,
+          43.3006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mucem",
+        "sequence": 15,
+        "category": "핵심 방문지",
+        "status": "9/11 기본 일정",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Mucem",
+        "phase": "확정 일정 2026-08-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3612,
+          43.2967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fort Saint-Jean",
+        "sequence": 16,
+        "category": "핵심 방문지",
+        "status": "9/11 기본 일정",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Fort+Saint-Jean",
+        "phase": "확정 일정 2026-08-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3635,
+          43.2959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Notre-Dame de la Garde",
+        "sequence": 17,
+        "category": "근교·이동지",
+        "status": "체력·날씨에 따른 선택",
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Notre-Dame+de+la+Garde",
+        "phase": "확정 일정 2026-08-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3712,
+          43.2841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atelier Cézanne",
+        "sequence": 18,
         "category": "핵심 방문지",
         "status": "일정 기준점",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Atelier+Cézanne",
@@ -221,7 +329,7 @@
       "type": "Feature",
       "properties": {
         "name": "Lourmarin",
-        "sequence": 13,
+        "sequence": 19,
         "category": "근교·이동지",
         "status": "일정 기준점",
         "google_maps": "https://www.google.com/maps/search/?api=1&query=Lourmarin",

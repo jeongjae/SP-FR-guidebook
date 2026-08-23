@@ -322,7 +322,7 @@
     "luberon": {
       "recommendation": {
         "title": "교통권은 사지 않는다 — 렌터카 고정, ZOU!는 차량 장애 때만",
-        "summary": "Day 16–19는 농가 숙소와 여러 석조마을을 잇기 때문에 렌터카·외곽 주차·도보가 정본이다. 차량을 쓸 수 없으면 같은 일정을 버스로 재현하지 말고, 최신 시간표를 확인한 뒤 한 노선 축만 남긴다."
+        "summary": "Day 16–18은 Gordes 2박 거점과 Luberon 마을을 잇기 때문에 렌터카·외곽 주차·도보가 정본이다. 차량을 쓸 수 없으면 같은 일정을 버스로 재현하지 말고 핵심 한 축만 남긴다."
       },
       "products": [
         {
@@ -337,7 +337,7 @@
           "price": "탑승 전 공식 운임 확인",
           "shared": false,
           "accessNote": "Avignon–Apt / Avignon–Cavaillon–Coustellet",
-          "fit": "Day 19 출발을 단순화할 때 출발지에 맞춰 검토하는 비상안"
+          "fit": "Day 18 Avignon 이동을 단순화할 때 출발지에 맞춰 검토하는 비상안"
         },
         {
           "name": "ZOU! 989 Pays d’Apt",
@@ -349,34 +349,30 @@
       ],
       "howToUse": [
         "Vaucluse 노선은 9월 1일에 시간표가 바뀔 수 있다. 8월 28일에 2026년 9월판을 다시 내려받고 이용 당일 운행 여부를 확인한다.",
-        "917은 Apt–Gordes–Maubec, 915는 Avignon–Apt, 907은 Avignon–Cavaillon–Coustellet 축이다. 한 노선이 농가 숙소와 전체 마을 순회를 연결한다고 가정하지 않는다.",
+        "917은 Apt–Gordes–Maubec, 915는 Avignon–Apt, 907은 Avignon–Cavaillon–Coustellet 축이다. 한 노선이 Gordes 숙소와 전체 마을 순회를 연결한다고 가정하지 않는다.",
         "989는 고정 시간표가 없는 예약형 교통이다. 전날 즉흥적으로 정류장에 가는 방식으로 이용하지 않는다.",
         "렌터카 일정에서는 각 마을 외곽 지정 주차장에 세우고 중심부는 걷는다. 정기권이나 광역 패스를 미리 사지 않는다.",
         "연료는 절반 아래로 내리지 않는다. 특히 일요일 도착 전과 Avignon 출발 전에 유인 주유 가능 시간을 확인한다."
       ],
       "exceptions": [
-        "농가 숙소는 대중교통 거점이 아니다. ZOU! 노선은 문전 이동이나 야간 귀환을 보장하지 않는다.",
+        "Gordes 숙소는 대중교통 거점이라고 가정하지 않는다. ZOU! 노선은 문전 이동이나 야간 귀환을 보장하지 않는다.",
         "99xx 계열 통학 노선은 방문객의 비상 교통편으로 계획하지 않는다.",
         "차량 장애가 나면 렌터카 업체 지원을 먼저 요청하고 그날의 다중 마을 일정을 취소한다. 실제 출발지에서 연결되는 915·917·907 중 한 축만 공식 시간표로 검토한다.",
-        "Day 19의 정본은 렌터카로 Avignon까지 이동하는 것이다. 버스는 숙소 위치와 연결 시각이 맞는 경우에만 하루를 비워 쓰는 대안이다.",
+        "Day 18의 정본은 L'Isle-sur-la-Sorgue를 거쳐 렌터카로 Avignon까지 이동하는 것이다. 버스는 차량 장애 때 일정을 단일 축으로 줄이는 대안이다.",
         "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다."
       ],
       "itineraryUses": [
         {
           "day": 16,
-          "label": "Aix→Lourmarin→Coustellet→Goult→농가는 렌터카"
+          "label": "Aix→Lourmarin→[Bonnieux·Lacoste 선택]→Gordes는 렌터카"
         },
         {
           "day": 17,
-          "label": "Roussillon·Goult는 렌터카로 외곽 주차 후 도보"
+          "label": "Gordes→Roussillon→[Ménerbes·Goult 선택]→Sénanque→Gordes는 렌터카"
         },
         {
           "day": 18,
-          "label": "Gordes·Bories·Sénanque·Ménerbes는 렌터카와 도보"
-        },
-        {
-          "day": 19,
-          "label": "농가 체크아웃→Avignon은 렌터카; 915·907은 차량 장애 때만 검토"
+          "label": "Gordes 체크아웃→L'Isle-sur-la-Sorgue→[Fontaine 선택]→Avignon은 렌터카"
         }
       ],
       "sources": [

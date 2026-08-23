@@ -12553,6 +12553,191 @@
         ]
       },
       "status": "processed"
+    },
+    {
+      "imageId": "luberon-lacoste-01",
+      "placeId": "lacoste",
+      "region": "luberon",
+      "creator": "Michellecornelison",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Lacoste%2C_Vaucluse_in_March.jpg",
+      "originalWidth": 3648,
+      "originalHeight": 2736,
+      "altKo": "보니외 방향 계곡 건너에서 바라본 라코스트의 석조 언덕마을",
+      "captionKo": "Bonnieux 맞은편 언덕에 층층이 붙은 Lacoste의 지형이 한눈에 보인다.",
+      "titleKo": "계곡 건너 바라본 라코스트",
+      "title": "Lacoste, Vaucluse in March.jpg",
+      "description": "Commons 파일명이 Lacoste, Vaucluse이며 설명이 Bonnieux로 이어지는 계곡 도로에서 본 Lacoste임을 명시한다.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lacoste,_Vaucluse_in_March.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-23",
+      "originalPath": "source/ASSETS/photos/originals/luberon-lacoste-01.jpg",
+      "originalSha256": "e4bf0b6ab1ae43ecc90bac96ce32c276364c166695ad3ab1ae469f787bc690a4",
+      "originalBytes": 3777261,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/luberon.html",
+        "places/lacoste.html"
+      ],
+      "selectionScore": 90,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-lacoste-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-lacoste-01-content-1280.webp",
+            "width": 1280,
+            "height": 960,
+            "bytes": 217326,
+            "sha256": "82c375db1a98614242c1fe0914765567cd20516b5973c07eee6f97c4f2a6520b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-lacoste-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-lacoste-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24202,
+            "sha256": "ff4993b118fc6cb91dfec01be07145020194eaa4e8a94a6b220e723edce168be",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "luberon-fontaine-de-vaucluse-01",
+      "placeId": "fontaine-de-vaucluse",
+      "region": "luberon",
+      "creator": "Mathieu BROSSAIS",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/da/Fontaine-de-Vaucluse_%2809%29.jpg",
+      "originalWidth": 4000,
+      "originalHeight": 2250,
+      "altKo": "거대한 석회암 절벽 아래 Fontaine-de-Vaucluse의 Sorgue 수원지",
+      "captionKo": "Sorgue 강이 시작되는 수원과 석회암 절벽이 ‘물의 Provence’ 테마를 만든다.",
+      "titleKo": "Fontaine-de-Vaucluse 수원지",
+      "title": "Fontaine-de-Vaucluse (09).jpg",
+      "description": "Commons 파일 제목과 설명이 Fontaine-de-Vaucluse의 resurgence/source를 직접 가리킨다.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fontaine-de-Vaucluse_(09).jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-23",
+      "originalPath": "source/ASSETS/photos/originals/luberon-fontaine-de-vaucluse-01.jpg",
+      "originalSha256": "4599e475cf3b1f52d5097fb6b88e527b6322d9d0787b5f5a913387903578c8e7",
+      "originalBytes": 4868664,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/luberon.html",
+        "places/fontaine-de-vaucluse.html"
+      ],
+      "selectionScore": 90,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/luberon-fontaine-de-vaucluse-01-content-1280.webp",
+            "sitePath": "assets/images/content/luberon-fontaine-de-vaucluse-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 289384,
+            "sha256": "d6b98238861edd0d6db8a0912d9a26bf7ed03ba98c82d8e02bd172032e149cb8",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/luberon-fontaine-de-vaucluse-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/luberon-fontaine-de-vaucluse-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 37786,
+            "sha256": "5c69726422d7acab4c5ff216970e6c69175bc295c4b1ad9b2d33accb09a0b728",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "avignon-orange-01",
+      "placeId": "orange",
+      "region": "avignon",
+      "creator": "Alainfou",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/32/Theatre_antique_d%27orange.jpg",
+      "originalWidth": 4288,
+      "originalHeight": 2416,
+      "altKo": "무대벽이 남아 있는 Orange의 로마 고대극장 전경",
+      "captionKo": "Day 19에 여유가 있을 때만 단일 목적으로 방문하는 Optional 로마유산이다.",
+      "titleKo": "오랑주 고대극장",
+      "title": "Theatre antique d'orange.jpg",
+      "description": "Commons 파일 제목과 설명이 Orange의 Théâtre antique를 직접 가리킨다.",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Theatre_antique_d'orange.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-23",
+      "originalPath": "source/ASSETS/photos/originals/avignon-orange-01.jpg",
+      "originalSha256": "37b40cf26cdd21f22c24358c48c635246af89c59f41af8b1fc2ee27d51dd51fc",
+      "originalBytes": 1718565,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/avignon.html",
+        "places/orange.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 2254,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/avignon-orange-01-content-1280.webp",
+            "sitePath": "assets/images/content/avignon-orange-01-content-1280.webp",
+            "width": 1280,
+            "height": 721,
+            "bytes": 106688,
+            "sha256": "ae9a63bf5a5070ab35bf5ce3a487a42b85092979b840f6319d7fca9c3fa3411f",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/avignon-orange-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/avignon-orange-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 19854,
+            "sha256": "3c8e36563a15a5c006c7dab8e9349701712089167960b429892ddb8f0f426344",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
     }
   ],
   "processedAt": "2026-08-05"

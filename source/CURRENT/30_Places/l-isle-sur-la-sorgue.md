@@ -4,12 +4,24 @@ name: "L'Isle-sur-la-Sorgue"
 local_name: "L'Isle-sur-la-Sorgue (Venise Comtadine)"
 region: luberon
 kind: spot
-grade: "선택"
-priority: "OPTIONAL"
+grade: "필수"
+priority: "MUST_SEE"
 content_tier: "TIER_B"
-summary: "에메랄드빛 소르그(Sorgue) 강이 섬처럼 감싸 흐르는 '프로방스의 베네치아'. 이끼 낀 거대한 목조 물레바퀴(Roues à aubes), 300여 개 앤틱 상점이 밀집한 유럽 3대 골동품 도시이자 시인 르네 샤르의 고향."
+summary: "Sorgue 강의 여러 물길이 구시가를 감싸고 오래된 물레방아가 남아 있어 ‘Comtadine Venice’라 불리는 물과 생활의 도시."
 source: source/CURRENT/30_Places/l-isle-sur-la-sorgue.md
 ---
+
+## 현장 실행
+
+- **MUST · Day 18 · 1.5–2시간**
+- **WHY GO**: 이번 여행에서는 골동품보다 Sorgue 수로·물레방아·강변·구시가지가 우선이다.
+- **DO THIS**: 중심부 주차 → Sorgue 강변 → Quai Jean Jaurès → 물레방아 → 구시가지 → Place Ferdinand Buisson·관광안내소 → 강변 카페.
+- **EAT / DRINK**: Fontaine을 가면 coffee/snack, 생략하면 브런치 또는 이른 점심으로 전환한다.
+- **IF LATE**: 앤틱 탐색을 빼고 물길 산책을 유지한 뒤 Avignon으로 이동한다.
+
+### Trip Layer
+
+Day 18은 화요일이다. 전통시장은 목·일 오전이고 주요 antique village는 화·수 휴무가 많다. 시장일·앤틱 쇼핑일로 묘사하지 않으며 열린 개별 갤러리가 있을 때만 선택한다.
 
 ## 왜 가는가
 
@@ -17,7 +29,7 @@ source: source/CURRENT/30_Places/l-isle-sur-la-sorgue.md
 
 중세 이래 풍부한 수력을 이용해 실크 방적과 모직물, 제지 산업을 꽃피웠던 **15개의 유서 깊은 이끼 낀 목조 물레바퀴(Roues à aubes)**가 강변을 따라 천천히 돌아가고 있다.
 
-파리 생투앙(Saint-Ouen), 런던과 함께 **유럽 3대 앤틱·골동품의 메카**로 꼽히며, 마을 전체에 300여 개가 넘는 앤틱 갤러리와 골동품 마을(Villages d'antiquaires)이 상설 운영된다. 시인 **르네 샤르(René Char)**가 태어나고 자란 문학의 도시이기도 하다.
+전문 앤틱 갤러리와 골동품 마을(Villages d'antiquaires)이 모여 있지만 운영요일은 단지마다 다르다. 시인 **르네 샤르(René Char)**가 태어나고 자란 문학의 도시이기도 하다.
 
 ### Editor's Verdict
 > **"뤼베롱의 건조한 석회암 언덕 마을들과 극적으로 대비되는 시원한 물의 도시이자 유럽 최고 수준의 앤틱 탐방지다."** 강변을 따라 물레바퀴를 둘러보며 물가 테라스 카페에서 시원한 음료를 즐기고, 골동품 상점들과 17세기 바로크 노트르담 데 장주(Notre-Dame-des-Anges) 성당을 둘러보는 90~120분의 여유로운 산책을 즐기기에 가장 완벽하다.
@@ -51,5 +63,6 @@ source: source/CURRENT/30_Places/l-isle-sur-la-sorgue.md
 | **위치** | 84800 L'Isle-sur-la-Sorgue, Vaucluse |
 | **마을 입장/요금** | 연중 상시 개방 / **무료** |
 | **추천 주차장** | **Parking du Bassin / Parking de la Poste** (시내 접근 용이) 또는 **Parking Grand Jardin** (무료/유료 주차장) |
-| **일요 시장 (⚠ 필수 주의)** | **매주 일요일 오전 08:00–14:00**: 프로방스 최대 규모의 종합 전통 시장 및 앤틱 벼룩시장이 열림. **일요일 오전에는 시내 전역이 극도로 혼잡**하므로 시장 목적이 아니라면 평일 방문을 적극 권장함 |
+| **전통시장** | 매주 목요일·일요일 07:00–13:00. Day 18 화요일은 시장일이 아니다. |
+| **앤틱 운영 주의** | Village des Antiquaires de la Gare 등 주요 단지는 2026 하계 화·수 휴무가 많다. 개별 갤러리만 현장 선택. |
 | **연계 동선** | Coustellet에서 차로 12분, Gordes에서 차로 20분, Avignon에서 차로 30분 거리로 이동일 경유지로 최적 |

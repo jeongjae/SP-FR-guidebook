@@ -9,6 +9,7 @@ address, coordinates or accommodation exterior.
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import re
@@ -124,12 +125,14 @@ PLACES = {
     "sentier-des-ocres": p("Sentier des Ocres", "오커 산책로", "trail", "luberon", "major"),
     "goult": p("Goult", "굴트", "village", "luberon", "supporting"),
     "bonnieux": p("Bonnieux", "보니외", "village", "luberon", "supporting"),
+    "lacoste": p("Lacoste", "라코스트", "village", "luberon", "supporting"),
     "gordes": p("Gordes", "고르드", "village", "luberon", "hero"),
     "village-des-bories": p("Village des Bories", "보리 석조마을", "historic-site", "luberon", "major"),
     "abbaye-de-senanque": p("Abbaye Notre-Dame de Sénanque", "세낭크 수도원", "attraction", "luberon", "major"),
     "menerbes": p("Ménerbes", "메네르브", "village", "luberon", "supporting"),
     "oppede-le-vieux": p("Oppède-le-Vieux", "오페드 르 비외", "village", "luberon", "supporting"),
     "l-isle-sur-la-sorgue": p("L’Isle-sur-la-Sorgue", "릴쉬르라소르그", "town", "luberon", "hero"),
+    "fontaine-de-vaucluse": p("Fontaine-de-Vaucluse", "퐁텐드보클뤼즈", "village", "luberon", "supporting"),
     "avignon": p("Avignon", "아비뇽", "city", "avignon", "hero"),
     "les-halles-avignon": p("Les Halles d’Avignon", "아비뇽 레 알 시장", "market", "avignon", "major"),
     "palais-des-papes": p("Palais des Papes", "교황청 궁전", "palace", "avignon", "hero"),
@@ -139,6 +142,7 @@ PLACES = {
     "pont-du-gard": p("Pont du Gard", "퐁 뒤 가르", "historic-site", "avignon", "hero"),
     "les-baux-de-provence": p("Les Baux-de-Provence", "레 보 드 프로방스", "village", "avignon", "hero"),
     "saint-remy-de-provence": p("Saint-Rémy-de-Provence", "생레미드프로방스", "town", "avignon", "major"),
+    "orange": p("Orange", "오랑주", "city", "avignon", "supporting"),
     "glanum": p("Glanum", "글라눔", "historic-site", "avignon", "supporting"),
     "carrieres-des-lumieres": p("Carrières des Lumières", "카리에르 드 뤼미에르", "attraction", "avignon", "supporting"),
     "avignon-tgv": p("Avignon TGV", "아비뇽 TGV역", "station", "avignon", "text-only", False),
@@ -217,10 +221,10 @@ DAY_REFS = {
     13: [("aix-en-provence", "confirmed"), ("aix-markets", "confirmed"), ("cours-mirabeau", "confirmed"), ("musee-granet", "confirmed"), ("quartier-mazarin", "confirmed"), ("aix-cathedral", "optional")],
     14: [("cassis", "confirmed"), ("calanques", "confirmed"), ("marseille", "reference"), ("mucem", "reference")],
     15: [("aix-en-provence", "confirmed"), ("aix-markets", "confirmed"), ("atelier-des-lauves", "confirmed")],
-    16: [("lourmarin", "confirmed"), ("coustellet", "confirmed"), ("luberon", "confirmed"), ("luberon-private-stay", "private")],
-    17: [("roussillon", "confirmed"), ("sentier-des-ocres", "confirmed"), ("goult", "optional"), ("bonnieux", "optional"), ("luberon-private-stay", "private")],
-    18: [("gordes", "confirmed"), ("village-des-bories", "confirmed"), ("abbaye-de-senanque", "optional"), ("luberon-private-stay", "private")],
-    19: [("luberon", "confirmed"), ("menerbes", "optional"), ("oppede-le-vieux", "optional"), ("luberon-private-stay", "private")],
+    16: [("lourmarin", "confirmed"), ("gordes", "confirmed"), ("bonnieux", "optional"), ("lacoste", "optional")],
+    17: [("roussillon", "confirmed"), ("sentier-des-ocres", "confirmed"), ("abbaye-de-senanque", "confirmed"), ("menerbes", "optional"), ("goult", "optional"), ("gordes", "confirmed")],
+    18: [("l-isle-sur-la-sorgue", "confirmed"), ("avignon", "confirmed"), ("fontaine-de-vaucluse", "optional")],
+    19: [("saint-remy-de-provence", "confirmed"), ("les-baux-de-provence", "confirmed"), ("orange", "optional"), ("avignon", "confirmed")],
     20: [("l-isle-sur-la-sorgue", "confirmed"), ("avignon", "confirmed")],
     21: [("les-halles-avignon", "confirmed"), ("palais-des-papes", "confirmed"), ("rocher-des-doms", "confirmed"), ("pont-saint-benezet", "confirmed")],
     22: [("uzes", "confirmed"), ("pont-du-gard", "confirmed")],
@@ -317,7 +321,7 @@ def build_inventory():
     }
 
 
-def write_outputs(payload):
+def write_outputs(payload, base_csv: Path | None = None, day_range: tuple[int, int] | None = None):
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     fields = ["date", "day", "baseCity", "theme", "id", "name", "nameKo", "type",
@@ -325,18 +329,61 @@ def write_outputs(payload):
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields)
         writer.writeheader()
+        generated = {}
         for day in payload["days"]:
+            generated[day["day"]] = []
             for place in day["places"]:
-                writer.writerow({
+                generated[day["day"]].append({
                     "date": day["date"], "day": day["day"], "baseCity": day["baseCity"],
                     "theme": day["theme"], **{k: place[k] for k in fields[4:-1]},
                     "sourceFiles": ";".join(place["sourceFiles"]),
                 })
+        if base_csv and day_range:
+            start, end = day_range
+            with base_csv.open(encoding="utf-8-sig", newline="") as base_stream:
+                base_rows = list(csv.DictReader(base_stream))
+            emitted = set()
+            for row in base_rows:
+                day = int(row["day"])
+                if start <= day <= end:
+                    if day not in emitted:
+                        writer.writerows(generated[day])
+                        emitted.add(day)
+                else:
+                    writer.writerow(row)
+        else:
+            for day in payload["days"]:
+                writer.writerows(generated[day["day"]])
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--base",
+        type=Path,
+        help="기존 inventory를 기준으로 --days 범위만 교체한다.",
+    )
+    parser.add_argument(
+        "--days",
+        help="교체할 Day 범위(예: 16-19). --base와 함께 사용한다.",
+    )
+    parser.add_argument(
+        "--base-csv",
+        type=Path,
+        help="--base 사용 시 범위 밖 CSV 행을 보존할 기존 CSV.",
+    )
+    args = parser.parse_args()
     payload = build_inventory()
-    write_outputs(payload)
+    if args.base or args.days:
+        if not (args.base and args.base_csv and args.days and re.fullmatch(r"\d+-\d+", args.days)):
+            raise SystemExit("--base, --base-csv, --days START-END를 함께 지정해야 한다")
+        start, end = map(int, args.days.split("-"))
+        base = json.loads(args.base.read_text(encoding="utf-8"))
+        replacements = {d["day"]: d for d in payload["days"] if start <= d["day"] <= end}
+        base["days"] = [replacements.get(d["day"], d) for d in base["days"]]
+        payload = base
+    selected = tuple(map(int, args.days.split("-"))) if args.days else None
+    write_outputs(payload, args.base_csv, selected)
     rows = [p for d in payload["days"] for p in d["places"]]
     unique = {p["id"] for p in rows}
     photo = {p["id"] for p in rows if p["photoNeeded"] and p["visibility"] == "public"}

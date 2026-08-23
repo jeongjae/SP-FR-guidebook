@@ -1,10 +1,10 @@
 ---
-title: "Jason과 Julia의 유럽 장기여행 가이드 — 아비뇽·아를·위제스·퐁뒤가르"
+title: "Jason과 Julia의 유럽 장기여행 가이드 — 아비뇽·알피유·아를·퐁뒤가르"
 chapter: 09
 version: "2.0"
 content_schema: rc-region-v1
 status: "상용 가이드북형 장소·생활권 보강본 — 예약 전 최종 확인 필요"
-travel_dates: "2026-09-16 – 2026-09-20"
+travel_dates: "2026-09-15 – 2026-09-20"
 travelers: "Jason · Julia"
 last_web_verification: "2026-08-01"
 source_priority: "공식 관광기관·문화부·시설·SNCF·숙박업체·레스토랑 공식자료"
@@ -16,18 +16,19 @@ source_priority: "공식 관광기관·문화부·시설·SNCF·숙박업체·�
 
 # Commercial Guide Module
 
-> **교황도시를 거점으로 Pont du Gard와 Arles의 로마·중세 유산을 잇는 4박**
+> **교황도시를 거점으로 Alpilles, Pont du Gard와 Arles를 잇는 5박**
 > 성벽도시의 역사와 두 번의 차량일을 균형 있게 배치한 Provence 후반부
 
 ## Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계
 
-Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에서는 로마 수로와 도시 유산, Arles에서는 로마와 중세의 흔적이 지금의 생활도시 안에 어떻게 남아 있는지 연결해서 본다.
+Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에서는 Saint-Rémy의 수요시장과 Les Baux의 석회암 성채를 경험한다. 이어지는 근교일에는 로마 수로와 도시 유산, Arles의 로마·중세 흔적을 연결한다.
 
 시내에서는 차 없이 성벽 안을 걷고, 하루는 Uzès와 Pont du Gard를 중심으로 근교를 이동하며, 하루는 TER로 Arles를 다녀온다. Avignon 자체는 Les Halles, Palais des Papes, Rocher des Doms와 Pont Saint-Bénézet를 한날에 연결한다.
 
 ### 이번 체류의 핵심
 
 - **교황도시 Avignon** — 성벽과 교황궁을 통해 중세 교황권이 만든 도시의 규모를 본다.
+- **Saint-Rémy와 Les Baux** — 수요일 시장과 Van Gogh, Alpilles의 석회암 성채를 한 흐름으로 본다.
 - **Uzès와 Pont du Gard** — 작은 지역도시와 로마 수도교를 한 흐름으로 연결한다.
 - **Arles** — 로마유적, 생트로핌과 구시가지가 현재 생활도시 안에 함께 남아 있는 모습을 걷는다.
 
@@ -39,7 +40,8 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 | 날짜 | 핵심 일정 |
 |---|---|
-| 9/16 수 | Luberon 체크아웃 · Avignon 체크인 · 성벽 안 가벼운 산책 |
+| 9/15 화 | L'Isle-sur-la-Sorgue · Avignon 체크인 · 생활권 정리 |
+| 9/16 수 | Saint-Rémy 수요시장 · Les Baux · [Orange Bonus] |
 | 9/17 목 | Uzès · Pont du Gard · Nîmes · 렌터카 반납 |
 | 9/18 금 | Arles 당일치기 (TER 이동) |
 | 9/19 토 | Les Halles · Palais des Papes · Rocher des Doms · Pont Saint-Bénézet |
@@ -58,9 +60,9 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 ## 구역별 이해와 숙소 생활권
 
-Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. 시내 일정과 Arles 당일치기에는 차를 쓰지 않고, 렌터카는 둘째 날(Day 20) Uzès·Pont du Gard 근교 일정 후 TGV역에서 최종 반납한다.
+Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 Alpilles와 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
 
-아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 4박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
+아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 5박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
 
 ### 아침 운동
 
@@ -89,6 +91,33 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 ---
 
 ## 핵심 셀프가이드
+
+---
+
+#### Saint-Rémy-de-Provence {{grade:essential|필수}}
+
+> **Editor's Verdict**: Day 19 수요일 08:00–13:00 시장, 구시가지와 Van Gogh의 Saint-Paul-de-Mausole가 세 축이다.
+
+- **체류/요금**: 시장·구시가지·점심 3.5–4시간 · 마을 무료
+- **상세 가이드**: [Saint-Rémy-de-Provence 전체 가이드 보기](../places/saint-remy-de-provence.html)
+
+---
+
+#### Les Baux-de-Provence {{grade:essential|필수}}
+
+> **Editor's Verdict**: Alpilles 석회암 절벽 위의 중세 성채마을. Château와 파노라마에 2–3시간을 남긴다.
+
+- **체류/요금**: 마을 무료 · Château 유료 · 외곽 유료주차
+- **상세 가이드**: [Les Baux-de-Provence 전체 가이드 보기](../places/les-baux-de-provence.html)
+
+---
+
+#### Orange {{grade:optional|선택}}
+
+> **Editor's Verdict (Bonus)**: Théâtre antique 단일 목적 방문만 고려한다. Saint-Rémy와 Les Baux의 시간을 깎지 않는다.
+
+- **체류/요금**: 약 60–75분 · 실제 입장조건 재확인
+- **상세 가이드**: [Orange 전체 가이드 보기](../places/orange.html)
 
 ---
 
@@ -268,6 +297,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ## 시장과 장보기
 
+- **Saint-Rémy 수요시장** — Day 19 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
 - **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
@@ -281,7 +311,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ### 식사 원칙
 
-아침은 Les Halles 시장 식재료나 로컬 카페를 활용하고, 당일치기 일정에서는 이동 동선에 맞춰 가볍게 식사한다. 저녁은 숙소 인근 성벽 안에서 여유 있게 즐긴다.
+Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 시간을 쓴다. Orange를 실행하더라도 식사를 추가하지 않는다. 그 밖의 아침은 Les Halles 시장 식재료나 로컬 카페를 활용한다.
 
 ---
 
@@ -307,7 +337,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 ### 숙소와 생활권
 
 - **숙소 거점**: 성벽 안(intra-muros) 도보 생활권 (`La Terrasse du Clocher` 후보 등 성벽 안 숙소 거점)
-- **일정**: 2026-09-16(수) 체크인 – 2026-09-20(일) 체크아웃 (4박)
+- **일정**: 2026-09-15(화) 체크인 – 2026-09-20(일) 체크아웃 (5박)
 - **생활권 수칙**: 성벽 내부는 일방통행이 많으므로 차량 보관은 관리 공영주차장을 활용하고, 도보로 Les Halles 시장과 중심가를 이용한다.
 
 ### 핵심 안전 및 이동 확인
@@ -327,6 +357,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 ### 출발 전 최종 확인
 
 - [ ] Palais des Papes 시간지정 입장권 예약 상태 확인
+- [ ] 9/16 Saint-Rémy 수요시장 행사 변경 여부와 Les Baux 운영 확인
 - [ ] 9/17 Avignon TGV Hertz 렌터카 반납 영업시간 및 주유소 위치 확인
 - [ ] 9/18 Arles TER 열차 시간표 확인 (SNCF Connect)
 - [ ] 9/20 TGV INOUI 12176 (10:22 Avignon TGV → 11:28 Lyon Part-Dieu) 티켓 확인
@@ -346,6 +377,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 | 항목 | 상태 |
 |---|--- |
 | Les Halles d'Avignon (화–일 06:00–14:00 개장·월요일 휴무) | 확인 |
+| Saint-Rémy Provençal market (수요일 08:00–13:00) | 공식 확인 |
 | Palais des Papes (히스토패드 증강현실 투어·시간지정 예약 필수) | 복수 출처 확인 |
 | Pont Saint-Bénézet (12세기 석조 다리 잔존 4개 아치) | 복수 출처 확인 |
 | Pont du Gard (기원 1세기 3층 로마 수도교·차량당 정액 주차) | 복수 출처 확인 |
@@ -359,28 +391,30 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 - [대화형 HTML 지도](../../ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.html)
 - [GeoJSON](../../ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson)
 - [KML](../../ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml)
-- 대상 일정: **Day 19–23**
+- 대상 일정: **Day 18–23**
 - 숙소 핀은 **성벽 안 생활권 거점** 기준이다.
 - 연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.
 - HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.
 
+## Day 18 — 9월 15일 화요일
+### L'Isle의 물길을 지나 Avignon 5박 시작
+
+* **MUST**: Gordes 체크아웃, L'Isle-sur-la-Sorgue 물길 산책, Avignon 체크인
+* **OPTIONAL**: Fontaine-de-Vaucluse
+* **IF LATE**: Fontaine을 생략하고 15:00~16:00 체크인을 지킨다.
+
+L'Isle는 화요일 시장·앤틱 쇼핑일로 설명하지 않는다. 상세 실행정보는 Day 18 정본을 따른다.
+
+---
+
 ## Day 19 — 9월 16일 수요일
-### 뤼베롱에서 교황도시로, 아비뇽 정착
+### Saint-Rémy 시장과 Les Baux의 Alpilles 풍경
 
-*   **오늘의 결론**: 뤼베롱 농가 체크아웃 후 아비뇽 숙소로 이동해 성벽 도시 생활을 시작하고 가벼운 성벽 안 산책을 즐기는 날이다.
+* **MUST**: Saint-Rémy 수요시장·구시가지·점심, Les Baux 마을·Château·전망
+* **OPTIONAL**: Orange Bonus
+* **IF LATE**: Orange를 가장 먼저 삭제하고 Saint-Rémy와 Les Baux의 체류시간을 유지한다.
 
-**오늘의 피로도: 3/5.**
-
-#### 실행 시간표
-
-| 시간 | 일정 | 실행 포인트 |
-|---|---|--- |
-| 09:30–10:30 | 뤼베롱 체크아웃 | 농가 숙소 정리 및 차량 짐 적재 |
-| 10:30–11:30 | Luberon → Avignon 이동 | D900/N100 도로 서행 주행 (약 35km) |
-| 11:30–13:00 | Avignon 도착 & 점심 | 성벽 주차장 진입 후 인근 비스트로 점심 식사 |
-| 13:30–15:00 | **숙소 체크인 & 주차** | 성벽 안 숙소 체크인, 주차 확인, 짐 풀기 |
-| 15:30–17:30 | **성벽 안 가벼운 산책** | Place de l'Horloge, Rue des Teinturiers 생활권 산책 |
-| 18:00–20:30 | **아비뇽 첫 저녁** | 성벽 안 로컬 식당에서 여유 있는 저녁 식사 및 휴식 |
+Base는 Avignon → Saint-Rémy → Les Baux → Avignon이다. Orange는 16:00~16:30 현장 조건이 모두 좋을 때만 Théâtre antique 단일 목적으로 추가한다.
 
 ---
 

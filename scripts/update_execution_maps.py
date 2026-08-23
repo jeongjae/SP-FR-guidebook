@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import html
 import json
 import re
@@ -52,7 +53,7 @@ EXTRA = {
 
 CAPTIONS = {
     "Aix": "Day 12–16 · 9/11 Marseille 기본일과 Cassis 선택 대안의 기준점. 번호는 개략 흐름이다.",
-    "Luberon": "Day 16–19 · 3박 일정의 기준점. L’Isle-sur-la-Sorgue는 기본 일정이 아닌 선택 대안이다.",
+    "Luberon": "Day 16–18 · Gordes 2박과 Luberon 마을의 MUST·OPTIONAL 기준점. L’Isle-sur-la-Sorgue는 9/15 화요일 물길 중심 일정이다.",
     "Avignon": "Day 19–23 · Avignon·Uzès·Pont du Gard·Arles 기본 일정과 Alpilles 선택 대안의 기준점.",
     "Lyon": "Day 23–27 · 9/20–9/24 Lyon과 9/23 Annecy 당일치기의 기준점.",
     "Paris": "Day 27–43 · 9/24–10/10 Paris 16박 생활권과 선택 근교의 기준점.",
@@ -70,16 +71,10 @@ def update_region(region: str) -> None:
                 feature["properties"]["status"] = "선택 대안 — Marseille와 결합 금지"
         insert_at = next(i for i, f in enumerate(features) if f["properties"]["name"] == "Atelier Cézanne")
         features[insert_at:insert_at] = EXTRA[region]
-    elif region == "Luberon":
-        for feature in features:
-            if feature["properties"]["name"] == "L’Isle-sur-la-Sorgue":
-                feature["properties"]["status"] = "선택 대안 — 9/17 기본 일정 아님"
     elif region == "Avignon":
-        for feature in features:
-            if feature["properties"]["name"] in {"Les Baux", "Saint-Rémy"}:
-                feature["properties"]["status"] = "선택 대안 — Arles 전체 교체 시만"
         insert_at = next(i for i, f in enumerate(features) if f["properties"]["name"] == "Les Baux")
-        features[insert_at:insert_at] = EXTRA[region]
+        present = {f["properties"]["name"] for f in features}
+        features[insert_at:insert_at] = [f for f in EXTRA[region] if f["properties"]["name"] not in present]
 
     for i, feature in enumerate(features, 1):
         feature["properties"]["sequence"] = i
@@ -117,5 +112,8 @@ def update_region(region: str) -> None:
 
 
 if __name__ == "__main__":
-    for name in CAPTIONS:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("regions", nargs="*", choices=CAPTIONS.keys())
+    args = parser.parse_args()
+    for name in args.regions or CAPTIONS:
         update_region(name)

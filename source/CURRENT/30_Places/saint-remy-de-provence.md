@@ -4,12 +4,24 @@ name: "Saint-Rémy-de-Provence"
 local_name: "Saint-Rémy-de-Provence"
 region: avignon
 kind: spot
-grade: "대체"
+grade: "필수"
 priority: "MUST_SEE"
 content_tier: "TIER_A"
-summary: "16세기 예언가 노스트라다무스의 탄생지이자 반 고흐가 『별이 빛나는 밤』을 탄생시킨 알피유 북쪽 기슭의 세련된 문화 예술 소도시. 플라타너스 가로수 순환로와 우아한 18세기 분수 광장."
+summary: "Alpilles 북쪽의 생활형 중심도시. 이번 일정에서는 수요일 시장, 구시가지, Van Gogh의 Saint-Paul-de-Mausole가 세 축이다."
 source: source/CURRENT/30_Places/saint-remy-de-provence.md
 ---
+
+## 현장 실행
+
+- **MUST · Day 19 · 시장+구시가지+점심 3.5–4시간**
+- **WHY GO**: 수요일 Provençal market과 생활형 구시가지, 시간에 따라 Van Gogh의 Saint-Paul-de-Mausole를 연결한다.
+- **DO THIS**: Place de la République 시장 → 구시가지 골목 → Place Jules Pellissier → 점심 → 시간 충분 시 차량으로 Saint-Paul-de-Mausole 방향.
+- **EAT / DRINK**: Day 19의 점심은 Les Baux보다 이곳에 둔다.
+- **IF LATE**: Van Gogh 심화의 깊이를 줄이되 시장·구시가지·점심은 유지하고 Orange를 삭제한다.
+
+### Trip Layer
+
+9/16 수요일 09:00 전후 도착한다. 공식 대형 시장은 수요일 08:00–13:00이며 Day 19의 핵심 경험이다.
 
 ## 왜 가는가
 
@@ -47,5 +59,5 @@ source: source/CURRENT/30_Places/saint-remy-de-provence.md
 | **위치** | 13210 Saint-Rémy-de-Provence, Bouches-du-Rhône |
 | **마을 입장** | 상시 개방 / **무료** |
 | **추천 주차장** | **Parking de la Libération** (구도심 서쪽 무료/유료 공영 주차장) 또는 **Parking Place Jean Jaurès** |
-| **시장 (Market)** | **매주 수요일 오전 (08:30–13:00)**: 알피유 지역 최대 규모의 활기찬 전통 시장 (수요일 오전 주차 혼잡 주의) |
+| **시장 (Market)** | **매주 수요일 08:00–13:00**: Place de la République와 구시가지 일대 (행사 시 변경 가능) |
 | **연계 동선** | 남쪽 1.5km 지점에 Saint-Paul-de-Mausole 및 Glanum 유적지 직결 (차량 3분, 도보 20분) |

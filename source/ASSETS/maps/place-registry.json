@@ -626,24 +626,6 @@
       ]
     },
     {
-      "id": "luberon-stay-candidate",
-      "name": "Domaine des Peyre",
-      "city": "Luberon",
-      "type": "accommodation",
-      "lat": 43.87088,
-      "lng": 5.12202,
-      "googlePlaceId": "",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine+des+Peyre",
-      "address": "",
-      "private": false,
-      "approximate": true,
-      "optional": true,
-      "status": "candidate",
-      "legacySources": [
-        "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
-      ]
-    },
-    {
       "id": "coustellet",
       "name": "Coustellet",
       "city": "Luberon",
@@ -693,11 +675,12 @@
       "address": "",
       "private": false,
       "approximate": false,
-      "optional": false,
-      "status": "planned",
+      "optional": true,
+      "status": "alternative",
       "legacySources": [
         "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
-      ]
+      ],
+      "editorialSlug": "goult"
     },
     {
       "id": "gordes",
@@ -715,7 +698,8 @@
       "status": "planned",
       "legacySources": [
         "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
-      ]
+      ],
+      "editorialSlug": "gordes"
     },
     {
       "id": "village-des-bories",
@@ -747,11 +731,12 @@
       "address": "",
       "private": false,
       "approximate": false,
-      "optional": false,
-      "status": "planned",
+      "optional": true,
+      "status": "alternative",
       "legacySources": [
         "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
-      ]
+      ],
+      "editorialSlug": "menerbes"
     },
     {
       "id": "lisle-sur-la-sorgue",
@@ -769,7 +754,8 @@
       "status": "planned",
       "legacySources": [
         "75_Execution_Maps/Luberon_Execution_Map_v0.2.geojson"
-      ]
+      ],
+      "editorialSlug": "l-isle-sur-la-sorgue"
     },
     {
       "id": "lyon-stay-candidate",
@@ -1970,6 +1956,107 @@
       "optional": false,
       "status": "confirmed",
       "coordinatesVerified": "T1 터미널 좌표 (OSM Nominatim) · 반납 동선은 공항 표지 따름"
+    },
+    {
+      "id": "orange",
+      "name": "Orange · Théâtre antique",
+      "city": "Avignon",
+      "type": "attraction",
+      "lat": 44.1371311,
+      "lng": 4.8078783,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Th%C3%A9%C3%A2tre+antique+Orange+France",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "alternative",
+      "legacySources": [],
+      "editorialSlug": "orange"
+    },
+    {
+      "id": "gordes-stay-candidate",
+      "name": "Gordes 숙소 (후보 미정)",
+      "city": "Luberon",
+      "type": "accommodation",
+      "lat": 43.91181,
+      "lng": 5.20043,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gordes+accommodation",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": []
+    },
+    {
+      "id": "bonnieux",
+      "name": "Bonnieux",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.8236124,
+      "lng": 5.3078261,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bonnieux+France",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "alternative",
+      "legacySources": [],
+      "editorialSlug": "bonnieux"
+    },
+    {
+      "id": "lacoste",
+      "name": "Lacoste",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.8318965,
+      "lng": 5.2728505,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lacoste+Vaucluse+France",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "alternative",
+      "legacySources": [],
+      "editorialSlug": "lacoste"
+    },
+    {
+      "id": "abbaye-de-senanque",
+      "name": "Abbaye Notre-Dame de Sénanque",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.9284546,
+      "lng": 5.1871502,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Abbaye+Notre-Dame+de+S%C3%A9nanque",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [],
+      "editorialSlug": "abbaye-de-senanque"
+    },
+    {
+      "id": "fontaine-de-vaucluse",
+      "name": "Fontaine-de-Vaucluse",
+      "city": "Luberon",
+      "type": "attraction",
+      "lat": 43.9221229,
+      "lng": 5.1272914,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fontaine-de-Vaucluse+France",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "alternative",
+      "legacySources": [],
+      "editorialSlug": "fontaine-de-vaucluse"
     }
   ]
 }

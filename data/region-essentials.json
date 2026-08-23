@@ -71,7 +71,7 @@
         "운동은 Rotonde–Cours Mirabeau–Parc Jourdan 왕복 4–6km 이지 헬스장이 아니다. 숙소 피트니스는 확인되지 않았다."
       ],
       "arrivalStrategy": "Day 12 Nice-Ville 역에서 09:00 렌터카를 인수해 Saint-Paul-de-Vence·Grasse 를 거쳐 A8 로 들어온다. 16:45 체크인 예정. 도착일 저녁에 야심을 부리지 않는다 — 로통드와 쿠르 미라보 첫 산책까지가 적당하다.",
-      "departureStrategy": "Day 16 08:00 체크아웃하고 차에 짐을 싣는다. Lourmarin·Coustellet·Goult 를 거쳐 뤼베롱 농가로 간다. 트렁크 짐은 가림막으로 완전히 가린다 — 마을 주차가 짧고 잦다.",
+      "departureStrategy": "Day 16 08:30~09:00 체크아웃하고 차에 짐을 싣는다. Lourmarin에서 마을과 점심을 즐긴 뒤 Gordes 2박 거점으로 간다. Bonnieux·Lacoste는 체크인 시각에 여유가 있을 때만 들르며 트렁크 짐은 완전히 가린다.",
       "lateReturnRule": "마르세유 당일치기(Day 15)는 TER 로 19:45 귀환이다. 막차 시각을 낮에 확인하고, 늦어지면 Vallon des Auffes 를 먼저 뺀다.",
       "sourceRefs": [
         "data/daily-cards/day-12.json",
@@ -84,16 +84,16 @@
       ]
     },
     "luberon": {
-      "staySummary": "3박 거점은 대중교통 정류장이 아닌 농가 숙소다. Day 16–19의 마을 순회는 예약 렌터카를 정본으로 삼고, 도착 즉시 진입로·주차 위치와 야간 귀환 표식을 확인한다.",
+      "staySummary": "Gordes 2박(9/13 체크인–9/15 체크아웃)을 거점으로 삼는다. Day 16–18의 마을 순회는 렌터카가 정본이며, 도착 즉시 숙소 주차·야간 출입방법을 확인한다.",
       "lifeEssentials": [
-        "식료품과 물은 Day 16 Coustellet 시장에서 확보한다. 프로방스 시장은 오전에 서고 13시에 접는다 — 농가 도착 뒤 도보 장보기는 전제로 두지 않는다.",
-        "숙소에 주방과 세탁 설비가 있다. 이 구간은 사 먹는 곳이 아니라 해 먹는 곳이라, 점심은 시장 재료로 숙소에서 만든다.",
-        "슈퍼·빵집은 Goult–Robion–Oppède 축에 있다. 영업요일이 마을마다 다르므로 도착 당일 한 곳을 정해 둔다. Roussillon 오커길에는 먼지에 강한 신발을 쓴다.",
-        "농가는 진입로가 좁다. 도착 즉시 진입로·주차 위치와 야간 귀환 표식을 확인한다."
+        "Day 16 점심은 Lourmarin, 저녁은 Gordes에 둔다. Optional 마을에서 긴 식사를 추가하지 않는다.",
+        "Day 17 점심은 Ménerbes를 우선 후보로 두되 월요일 영업을 재확인하고, 생략 시 Roussillon 또는 Gordes권으로 전환한다.",
+        "Roussillon 오커길에는 먼지에 강한 신발을 쓰고, Sénanque에서는 정숙과 현장 촬영 제한을 따른다.",
+        "Gordes 숙소 도착 즉시 주차 위치와 야간 출입방법을 확인한다."
       ],
-      "arrivalStrategy": "Day 16 Aix 체크아웃 뒤 렌터카로 Lourmarin·Coustellet·Goult를 거쳐 농가로 들어간다. 해 지기 전에 숙소 진입로와 주차 위치를 익힌다.",
-      "departureStrategy": "Day 19 체크아웃 뒤 렌터카로 Avignon에 이동한다. ZOU! 915·907은 차량 장애 때 일정을 단일 축으로 줄이는 대안일 뿐 정본 동선이 아니다.",
-      "lateReturnRule": "가로등 없는 좁은 도로를 피하려고 일몰 전 귀환을 원칙으로 한다. 늦어지면 마지막 방문지를 생략하고 바로 숙소로 돌아간다.",
+      "arrivalStrategy": "Day 16 Aix 체크아웃 뒤 Lourmarin을 거쳐 Gordes로 들어간다. Lacoste부터, 필요하면 Bonnieux까지 생략해 16:00~17:00 체크인을 지킨다.",
+      "departureStrategy": "Day 18 Gordes 체크아웃 뒤 L'Isle-sur-la-Sorgue의 물길을 걷고 Avignon에 체크인한다. Fontaine-de-Vaucluse는 체크인 시각을 해치지 않을 때만 간다.",
+      "lateReturnRule": "Day 17은 Sénanque 관람 후 Gordes로 돌아온다. 늦어지면 Goult, 이어 Ménerbes를 줄이고 Roussillon·Sénanque를 유지한다.",
       "sourceRefs": [
         "data/daily-cards/day-16.json",
         "data/daily-cards/day-17.json",
@@ -104,14 +104,14 @@
       ]
     },
     "avignon": {
-      "staySummary": "4박 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 렌터카는 숙소 또는 관리주차장에 두고 Day 21 근교 일정에 사용한다.",
+      "staySummary": "5박(9/15 체크인–9/20 체크아웃) 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 도착일에는 관리주차장과 생활권부터 안정시킨다.",
       "lifeEssentials": [
-        "Day 19 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다. 시장은 화–일 오전이고 월요일은 쉰다.",
+        "Day 18 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다. 시장은 화–일 오전이고 월요일은 쉰다.",
         "성벽 안에 사람이 산다 — 학교와 약국과 빨래방이 있다. 생활용품은 관광 동선이 아니라 이 생활권에서 해결한다.",
-        "숙소는 주방·세탁이 있는 형태를 전제로 한다. 4박이라 세탁 1회를 넣을 수 있다.",
+        "숙소는 주방·세탁이 있는 형태를 전제로 한다. 5박 중 세탁 1회를 넣을 수 있다.",
         "운동은 성벽 남쪽·Rhône·Île de la Barthelasse 러닝이다. 수영장은 선택이며 숙소 조건과 분리한다."
       ],
-      "arrivalStrategy": "Day 19 Luberon에서 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
+      "arrivalStrategy": "Day 18 Gordes에서 L'Isle-sur-la-Sorgue를 거쳐 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
       "departureStrategy": "Day 23 체크아웃 뒤 TGV로 Lyon 이동한다. 렌터카는 Day 20 저녁 반납 완료되어 아침 이동에 차량 반납 절차가 없다.",
       "lateReturnRule": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon TGV까지 간다고 가정하지 않는다.",
       "sourceRefs": [
