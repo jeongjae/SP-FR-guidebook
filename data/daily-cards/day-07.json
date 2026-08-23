@@ -71,7 +71,7 @@
       "category": "hotel",
       "lat": 43.6996749,
       "lng": 7.2608829,
-      "summary": "16:55 NCE 도착 → 트램 2호선 이동 → 숙소 체크인(18:00~19:00) 및 짐 정리/휴식",
+      "summary": "16:55 NCE 도착 후 수하물 수취 ➔ Terminal 1 앞 Lignes d'Azur 트램 2호선(Port Lympia 방향) 탑승 (20~25분 소요, 공항 발매기 Aéro €10 왕복권 또는 충전된 Lignes d'Azur 카드 이용) ➔ 지하역인 Alsace-Lorraine역 하차 (엘리베이터 출구) ➔ Bd Gambetta 북쪽 150m + Rue Verdi 250m 평지 도보(총 450m / 6분) ➔ Palais ALZIRA (12 Rue Verdi) 18:00~18:30 체크인 및 짐 정리/휴식",
       "menu": null,
       "reservation": "예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi, Palais ALZIRA (체크인 9/4 15:00~ · 체크아웃 9/9 11:00)",
       "optional": false
@@ -155,8 +155,10 @@
   ],
   "transport": [
     "렌터카 — BCN T1 반납 12:30 (요청)",
-    "VY1521 15:30→16:55 (확정 [CONFIRMED])",
-    "NCE 도착 후 트램 2호선 이동"
+    "항공 — Vueling VY1521 15:30 BCN T1 발차 ➔ 16:55 NCE 도착 ([CONFIRMED])",
+    "T02 공항이동(추천): NCE Terminal 1 ➔ Lignes d'Azur 트램 2호선(Port Lympia 방향) 탑승 ➔ Alsace-Lorraine 지하역 하차 (20~25분 소요. 공항 트램 발매기에서 Aéro €10 왕복권 구입 탑승, 유효한 Lignes d'Azur 충전 카드가 있으면 일반요금 적용)",
+    "T02 마지막 구간: Alsace-Lorraine역 엘리베이터 출구 ➔ Bd Gambetta 북쪽 150m ➔ Rue Verdi 우회전 250m 평지 도보 (총 450m / 약 6분) ➔ Palais ALZIRA 도착",
+    "T02 대안: NCE T1 공식 택시 승강장 (Nice Centre 정액 요금 €32.00 Fixed Fare, 15~20분 소요)"
   ],
   "food": [
     "이동 중 간단식",
