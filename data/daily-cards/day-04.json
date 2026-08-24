@@ -6,6 +6,7 @@
   "title": "렌터카 인수와 지중해 연안 이동",
   "sourceStatus": "authoritative",
   "prototypeType": "intercity",
+  "dayType": "transfer",
   "startTime": "06:50",
   "endTime": "19:30",
   "totalDuration": "12시간 40분",
@@ -30,22 +31,41 @@
       "lng": 2.1476619,
       "summary": "Sants까지 도보권 — 짐 끌고 10분",
       "menu": "숙소 아침",
-      "reservation": "체크아웃 9/1 12:00까지 (Occidental Barcelona 1929)",
-      "optional": false
+      "reservation": null,
+      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CHECKOUT",
+          "detail": "9/1 12:00까지 (Occidental Barcelona 1929)"
+        }
+      ]
     },
     {
       "id": "barcelona-sants",
       "order": 2,
       "start": "08:10",
       "end": "09:35",
-      "name": "Barcelona Sants",
+      "name": "Hertz Barcelona Sants 렌터카 인수",
       "category": "transport",
       "lat": 41.37914,
       "lng": 2.14005,
-      "summary": "Sants 영업소(C/ Viriat 45) — 차체·연료·주행거리 사진 기록. **프랑스 주행(9/2 콜리우르)을 반드시 신고한다**",
+      "summary": "C/ Viriat 45 · 매일 07:00–22:00. 차체·연료·주행거리 사진 기록 후 프랑스 운행을 반드시 신고한다",
       "menu": null,
-      "reservation": "예약완료 Hertz [CONFIRMED] · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "Hertz · Ford Puma급 · SuperCover · €176.01 · 08:10 인수"
+        },
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "Spain→France 운행 허용 · 신고 및 €30 cross-border fee 필요 · 미신고 시 €600 penalty 가능"
+        }
+      ],
       "place_ref": "barcelona-sants"
     },
     {
@@ -53,28 +73,37 @@
       "order": 3,
       "start": "10:20",
       "end": "10:40",
-      "name": "Can Robert · Sitges",
+      "name": "Aparcament Can Robert · Sitges",
       "category": "transport",
       "lat": 41.2403,
       "lng": 1.8086,
-      "summary": "중심 진입을 피하고 주차 후 구시가지로 이동",
+      "summary": "공식 공영 유료 주차장에 주차한 뒤 구시가지로 도보 이동",
       "menu": null,
-      "reservation": "주차 운영 재확인",
-      "optional": false
+      "reservation": null,
+      "optional": false,
+      "executionStatuses": [],
+      "executionNote": "관광지가 아닌 Can Robert 주차장을 길찾기 목적지로 사용"
     },
     {
       "id": "cau-ferrat-maricel",
       "order": 4,
       "start": "11:05",
       "end": "12:20",
-      "name": "Cau Ferrat + Maricel",
+      "name": "Museu del Cau Ferrat + Museu de Maricel",
       "category": "culture",
       "lat": 41.23572,
       "lng": 1.81145,
-      "summary": "모더니즘 컬렉션과 Rusiñol의 집·작업실",
+      "summary": "모더니즘 컬렉션과 Rusiñol의 집·작업실 · 9월 화요일 10:00–19:00",
       "menu": null,
-      "reservation": "화요일 운영·통합권 재확인",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "통합권 조건 출발 전 재확인 · Palau de Maricel과 혼동 금지"
+        }
+      ],
       "place_ref": "cau-ferrat"
     },
     {
@@ -86,10 +115,17 @@
       "category": "food",
       "lat": 41.2352,
       "lng": 1.8069,
-      "summary": "13:00 점심 후 15:15 출발 시각 보호",
+      "summary": "Passeig Marítim 1–3 · 점심 운영 13:00–16:30. 13:00 점심 후 15:15 출발 시각 보호",
       "menu": "arroz a banda · 2인 공유",
-      "reservation": "사전 예약 필수 (13:00 슬롯)",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "공식 예약 링크에서 13:00 사전 예약 필요 · 아직 예약 완료 아님"
+        }
+      ],
       "place_ref": "la-zorra"
     },
     {
@@ -103,8 +139,15 @@
       "lng": 2.90964,
       "summary": "숙소 진입·주차 지침을 우선하고 저녁은 반경 10분",
       "menu": "숙소 인근 간단식",
-      "reservation": "예약완료 Airbnb [CONFIRMED] — 체크인 9/1 12:00~ · 체크아웃 9/4 11:00",
-      "optional": false
+      "reservation": null,
+      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CHECK-IN",
+          "detail": "체크인 9/1 12:00~ · 체크아웃 9/4 11:00"
+        }
+      ]
     }
   ],
   "legs": [
@@ -181,7 +224,7 @@
     "체크아웃 창 09:30–12:00 vs 07:00 인수 가능 — 인수·짐 적재·체크아웃 순서 협의",
     "Sitges 주차와 식당 예약",
     "Bàscara 체크인 창 재확인",
-    "Hertz 크로스보더: 프랑스 주행 신고 필수 — 미신고 시 보험 전체 무효(스페인 약관, 2026-08-14 확인). 요금·위약금 액수는 계약서 확인",
+    "Hertz 크로스보더: 프랑스 주행 신고 필수 · €30 fee · 미신고 시 €600 penalty 가능. 실제 계약서에 더 엄격한 별도 문구가 있는지 인수 전 확인",
     "ZBE(저배출구역)·국경 운전 조건 확인"
   ],
   "sourceRefs": [

@@ -6,6 +6,7 @@
   "title": "책과 도시의 기억 — 고딕지구·도서관·MACBA",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "09:00",
   "endTime": "21:00",
   "totalDuration": "12시간",
@@ -60,8 +61,16 @@
       "lng": 2.1702,
       "summary": "옛 산타 크레우 병원 고딕 볼트와 중정 회랑. 카탈루냐 인문 정신의 거점",
       "menu": null,
-      "reservation": "자유 입장",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "일반 방문 접근 범위는 현장 확인"
+        }
+      ],
+      "executionNote": "월–금 09:00–20:00 · 예약 없음 · 운영시간 내 방문 가능",
       "place_ref": "biblioteca-de-catalunya"
     },
     {
@@ -73,10 +82,22 @@
       "category": "food",
       "lat": 41.3789,
       "lng": 2.1741,
-      "summary": "라발 지구 최고의 정통 카운터 타파스 바. 13:45 예약 필수",
+      "summary": "라발 지구 정통 카운터 타파스 바. 월요일 영업 · 공식 주방 운영 13:00–24:00",
       "menu": "소꼬리 샌드위치, 풋고추 튀김(Pimientos de Padrón), 신선 해산물",
-      "reservation": "사전 예약 필수 (13:30 슬롯)",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "13:30 전후 사전 예약 필요 · 아직 예약 완료 아님"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "실제 예약 확정시각 출발 전 확인"
+        }
+      ],
       "place_ref": "bar-canete"
     },
     {
@@ -88,10 +109,22 @@
       "category": "culture",
       "lat": 41.3832,
       "lng": 2.1669,
-      "summary": "리처드 마이어 설계의 백색 공간과 현대미술 기획전. 월요일 정상 개관",
+      "summary": "리처드 마이어 설계의 백색 공간과 현대미술 기획전. 하계 월요일 10:00–20:00",
       "menu": null,
-      "reservation": "온라인 예매 (€13.50, 월요일 10:00~19:30 개관)",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "온라인 예매 €13.50 권장 · 현장 일반권 €15"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "전시실 운영 상태 출발 전 재확인"
+        }
+      ],
       "place_ref": "macba"
     },
     {
@@ -107,6 +140,13 @@
       "menu": null,
       "reservation": null,
       "optional": true,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "피로 시 먼저 생략"
+        }
+      ],
       "place_ref": null
     },
     {
@@ -204,8 +244,6 @@
   },
   "needsReview": [
     "확정 숙소(Hostafrancs) 기준 Concepció 시장 아침 동선 재검토 — 챕터 시간표는 구 후보 기준",
-    "Bar Cañete 예약과 2026 운영 여부 출발 전 재확인",
-    "Biblioteca de Catalunya·MACBA 2026 전시·요금 재확인",
     "예약번호·총액·무료취소 기한 기록 (챕터 pending 배지)"
   ],
   "sourceRefs": [

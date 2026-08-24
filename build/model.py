@@ -195,6 +195,14 @@ class Place:
 # ---------------------------------------------------------------- Day
 
 @dataclass
+class ExecutionStatus:
+    """현장 실행 의미. 예약 문구와 상태를 분리해 배지가 거짓말하지 않게 한다."""
+    type: str                    # confirmed | book | ticket | check | caution | optional | unavailable
+    detail: str = ""
+    label: str | None = None     # 화면 라벨 override. 내부 의미는 type 이 유지한다.
+
+
+@dataclass
 class Stop:
     id: str
     order: int
@@ -208,6 +216,8 @@ class Stop:
     menu: str | None = None
     reservation: str | None = None
     optional: bool = False
+    execution_statuses: list[ExecutionStatus] = field(default_factory=list)
+    execution_note: str | None = None
     # 좌표를 모르지만 주소는 확정인 곳이 있다 (확정 숙소 등).
     # 틀린 좌표를 남기느니 주소로 지도를 연다.
     address: str | None = None
@@ -270,6 +280,7 @@ class Day:
     regions: list[str]          # 이동일이면 둘
     country: str                # es | fr | es-fr | none
     source_status: str
+    day_type: str | None
     start_time: str | None
     end_time: str | None
     total_duration: str | None
@@ -310,7 +321,12 @@ class Day:
 
     @property
     def reserved_stops(self) -> list[Stop]:
-        return [s for s in self.stops if s.reservation]
+        booking_types = {"confirmed", "book", "ticket"}
+        return [
+            s for s in self.stops
+            if (any(x.type in booking_types for x in s.execution_statuses)
+                or (not s.execution_statuses and s.reservation))
+        ]
 
     @property
     def place_stops(self) -> list[Stop]:
@@ -648,6 +664,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
             regions=slugs,
             country=country,
             source_status=j.get("sourceStatus", "prototype-reviewed"),
+            day_type=j.get("dayType"),
             start_time=j.get("startTime"),
             end_time=j.get("endTime"),
             total_duration=j.get("totalDuration"),
@@ -660,6 +677,11 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 lat=s.get("lat"), lng=s.get("lng"), summary=s.get("summary") or "",
                 menu=s.get("menu"), reservation=s.get("reservation"),
                 optional=bool(s.get("optional")),
+                execution_statuses=[ExecutionStatus(
+                    type=x["type"], detail=x.get("detail") or "",
+                    label=x.get("label"),
+                ) for x in s.get("executionStatuses", [])],
+                execution_note=s.get("executionNote"),
                 address=s.get("address"),
                 place_ref=s.get("place_ref"),
                 related_place_refs=list(s.get("related_place_refs") or []),

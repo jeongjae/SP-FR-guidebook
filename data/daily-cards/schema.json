@@ -65,6 +65,20 @@
         "intercity"
       ]
     },
+    "dayType": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        null,
+        "city",
+        "transfer",
+        "driving",
+        "living"
+      ],
+      "description": "현장 실행 화면 유형. Pilot Day부터 선택적으로 적용한다."
+    },
     "startTime": {
       "type": [
         "string",
@@ -318,6 +332,21 @@
             "null"
           ]
         },
+        "executionStatuses": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/executionStatus"
+          },
+          "description": "예약 문자열에 섞여 있던 실행 의미를 내부 상태와 화면 문구로 분리한다."
+        },
+        "executionNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "상태가 아닌 실행 설명. 예: 자유 입장."
+        },
         "optional": {
           "type": "boolean"
         },
@@ -326,6 +355,35 @@
             "string",
             "null"
           ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "executionStatus": {
+      "type": "object",
+      "required": [
+        "type",
+        "detail"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "confirmed",
+            "book",
+            "ticket",
+            "check",
+            "caution",
+            "optional",
+            "unavailable"
+          ]
+        },
+        "detail": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30
         }
       },
       "additionalProperties": false

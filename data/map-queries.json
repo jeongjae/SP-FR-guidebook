@@ -54,10 +54,10 @@
       "verifiedAt": "2026-08-22"
     },
     "barcelona-sants": {
-      "query": "Estació de Barcelona-Sants, Barcelona",
+      "query": "Hertz, C/ Viriat 45, Barcelona",
       "verdict": "FOUND",
-      "resolvedName": "Estació de Barcelona-Sants",
-      "evidence": "https://en.wikipedia.org/wiki/Barcelona_Sants_railway_station",
+      "resolvedName": "Hertz Barcelona Sants",
+      "evidence": "local factual pass — supplied official Hertz Spain terms",
       "verifiedAt": "2026-08-22"
     },
     "barri-gotic": {
@@ -969,6 +969,14 @@
     }
   },
   "hotels": {
+    "Gordes 숙소 (후보 미정)": {
+      "query": "Gordes accommodation, France",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Gordes accommodation search",
+      "anchorFor": "Gordes 숙소 (후보 미정)",
+      "evidence": "숙소 미확정 — Gordes 중심 검색 앵커",
+      "verifiedAt": "2026-08-23"
+    },
     "Lagrange Aparthotel Lyon Lumière": {
       "query": "Lagrange Apart'Hotel Lyon Lumière, 81-85 Cours Albert Thomas, Lyon",
       "verdict": "FOUND",
@@ -989,14 +997,6 @@
       "resolvedName": "Casa Bascara",
       "evidence": "https://casabascara.cat/en/rooms/",
       "verifiedAt": "2026-08-22"
-    },
-    "Gordes 숙소 (후보 미정)": {
-      "query": "Gordes accommodation, France",
-      "verdict": "AMBIGUOUS",
-      "resolvedName": "Gordes accommodation search",
-      "anchorFor": "Gordes 숙소 (후보 미정)",
-      "evidence": "숙소 미확정 — Gordes 중심 검색 앵커",
-      "verifiedAt": "2026-08-23"
     }
   },
   "stops": {
@@ -1036,11 +1036,25 @@
       "verifiedAt": "2026-08-22"
     },
     "tossa": {
-      "query": "Tossa de Mar, Girona",
+      "query": "Parking Avinguda del Pelegrí, Tossa de Mar",
       "verdict": "FOUND",
-      "resolvedName": "Tossa de Mar",
+      "resolvedName": "Avinguda del Pelegrí parking",
       "evidence": "https://www.infotossa.com/",
       "verifiedAt": "2026-08-22"
+    },
+    "pals": {
+      "query": "Parking Carrer Abeurador, Pals",
+      "verdict": "FOUND",
+      "resolvedName": "Parking Carrer Abeurador, Pals",
+      "evidence": "local factual pass — supplied official tourism information",
+      "verifiedAt": "2026-08-23"
+    },
+    "peratallada": {
+      "query": "Aparcament de Baix, Peratallada",
+      "verdict": "FOUND",
+      "resolvedName": "Aparcament de Baix",
+      "evidence": "https://www.visitperatallada.cat/",
+      "verifiedAt": "2026-08-23"
     },
     "sant-feliu": {
       "query": "Sant Feliu de Guixols",
@@ -1350,6 +1364,14 @@
       "evidence": "SNCF TER Marseille Saint-Charles to Aix",
       "verifiedAt": "2026-08-22"
     },
+    "day-16:aix-checkout": {
+      "title": "Aix 체크아웃 ➔ Lourmarin 이동",
+      "origin": "Aix-en-Provence",
+      "destination": "Lourmarin",
+      "travelMode": "driving",
+      "evidence": "Day 16 base route",
+      "verifiedAt": "2026-08-23"
+    },
     "day-20:avignon-depart": {
       "title": "Avignon 숙소 출발 ➔ Uzès 이동",
       "origin": "Avignon",
@@ -1476,14 +1498,6 @@
       "destination": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
       "travelMode": "driving",
       "evidence": "Paris taxi flat fare from Left Bank to CDG Terminal 1",
-      "verifiedAt": "2026-08-23"
-    },
-    "day-16:aix-checkout": {
-      "title": "Aix 체크아웃 ➔ Lourmarin 이동",
-      "origin": "Aix-en-Provence",
-      "destination": "Lourmarin",
-      "travelMode": "driving",
-      "evidence": "Day 16 base route",
       "verifiedAt": "2026-08-23"
     }
   },
