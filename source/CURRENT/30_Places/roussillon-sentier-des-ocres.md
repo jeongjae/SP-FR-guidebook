@@ -7,9 +7,21 @@ kind: spot
 grade: "필수"
 priority: "MUST_SEE"
 content_tier: "TIER_A"
-summary: "17가지 타오르는 황토빛(Ochre) 절벽과 소나무 숲이 어우러진 뤼베롱에서 가장 이색적인 붉은 마을. 1억 년 지질학의 기적 '오커 트레일(Sentier des Ocres)'과 파스텔톤 가옥 골목."
+summary: "붉은색·주황색·노란색 오크르가 절벽과 건물에 이어지는 Luberon의 색채 중심지. 마을과 Sentier des Ocres를 함께 봐야 완성된다."
 source: source/CURRENT/30_Places/roussillon-sentier-des-ocres.md
 ---
+
+## 현장 실행
+
+- **MUST · Day 17 · 2–2.25시간**
+- **WHY GO**: Gordes의 석회암과 전혀 다른 오크르 지질·산업유산과 붉은 마을을 한 번에 본다.
+- **DO THIS**: Parking des Ocres/Saint-Michel → 09:30 Sentier des Ocres → Place de la Mairie → 붉은 골목·전망 → 커피.
+- **EAT / DRINK**: coffee·pastry 중심. 긴 점심은 Ménerbes가 우선이며, 필요하면 Le Castrum 또는 Bistrot de Roussillon로 전환한다.
+- **IF LATE**: Roussillon은 생략하지 않는다. Goult를 먼저 삭제한다.
+
+### Trip Layer
+
+Day 17 첫 MUST다. 9월 공식 운영은 09:30–18:30, 19:00 퇴장이며 날씨·안전 조건에 따라 통제될 수 있어 당일 확인한다.
 
 ## 왜 가는가
 
@@ -49,7 +61,7 @@ source: source/CURRENT/30_Places/roussillon-sentier-des-ocres.md
 | 항목 | 상세 정보 |
 |---|---|
 | **위치** | Place de la Poste, 84220 Roussillon |
-| **오커 트레일 운영** | 2월 중순–12월 매일 09:00–18:30 (하절기 19:30까지) / 입장 마감 45분 전 |
+| **오커 트레일 운영** | 9월 매일 09:30–18:30, 19:00 퇴장 / 기상·안전 조건부 |
 | **입장료** | 성인 **€3.50**, 10세 미만 무료 (현장 매표소 또는 키오스크 발권, 예약 불필요) |
 | **복장/신발 주의 (필수)** | **절대 흰옷이나 흰색 신발 착용 금지!** 미세한 붉은 오커 흙먼지가 신발과 바짓단에 묻어 얼룩이 남음. 편안한 짙은 색 운동화 권장. 차내에 여벌 신발이나 물티슈 준비 권장 |
 | **보행 제한** | 트레일 입구에 약 350개의 계단이 있어 **유모차 및 휠체어 진입 불가** |

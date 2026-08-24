@@ -4,12 +4,24 @@ name: "Les Baux-de-Provence"
 local_name: "Les Baux-de-Provence"
 region: avignon
 kind: spot
-grade: "대체"
+grade: "필수"
 priority: "MUST_SEE"
 content_tier: "TIER_A"
 summary: "알피유(Alpilles) 산맥 해발 245m 석회암 절벽 위에 우뚝 솟은 중세 독수리 요새 마을. 자연 암반과 성벽이 하나로 결합된 레보 성채(Château des Baux) 폐허와 올리브 계곡 대파노라마."
 source: source/CURRENT/30_Places/les-baux-de-provence.md
 ---
+
+## 현장 실행
+
+- **MUST · Day 19 · 2–3시간**
+- **WHY GO**: Alpilles 석회암 절벽 위의 중세 성채와 Château에서 보는 파노라마가 핵심이다.
+- **DO THIS**: 외곽 주차 → 마을 골목·르네상스 건물 → Château des Baux → 성벽·전망 → 하산.
+- **EAT / DRINK**: coffee·ice cream·간단한 refreshment만. 점심은 Saint-Rémy에서 먹는다.
+- **IF LATE**: Les Baux를 줄여 Orange를 넣지 않는다. Orange를 삭제하고 Château와 전망을 유지한다.
+
+### Trip Layer
+
+Day 19 오후 MUST다. Carrières des Lumières는 별도 Optional 모듈이며 기본 시간표에는 넣지 않는다.
 
 ## 왜 가는가
 

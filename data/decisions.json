@@ -147,7 +147,7 @@
     {
       "id": "DEC-A10",
       "date": "2026-08-17",
-      "decision": "Luberon 농가 숙소는 현지에서 결정한다 — 사전 문의·예약 없음",
+      "decision": "Gordes 2박 숙소는 현지에서 결정한다 — 사전 문의·예약 없음",
       "forbidden_patterns": [
         "four-night stay",
         "13 to 17 September",
@@ -158,7 +158,7 @@
       "scope": [
         "08_Luberon_*.md"
       ],
-      "note": "기존 DEC-039(현지 결정 방침)과 동일 취지. 문의문 템플릿 자체를 삭제한다. 체류는 3박(9/13–16) 확정"
+      "note": "기존 DEC-039(현지 결정 방침)과 동일 취지. 문의문 템플릿 자체를 삭제한다. Gordes 체류는 2박(9/13–15)이며 9/15 Avignon으로 이동한다."
     },
     {
       "id": "DEC-A11",

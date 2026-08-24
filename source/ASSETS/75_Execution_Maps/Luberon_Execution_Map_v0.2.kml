@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
-<Placemark><name>[숙소 후보] Domaine des Peyre</name><description>후보 — 실제 예약 후 교체</description><Point><coordinates>5.12202,43.87088,0</coordinates></Point></Placemark>
-<Placemark><name>[시장·생활] Coustellet</name><description>일정 기준점</description><Point><coordinates>5.14544,43.86673,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Roussillon</name><description>일정 기준점</description><Point><coordinates>5.29207,43.90202,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Goult</name><description>일정 기준점</description><Point><coordinates>5.24417,43.86306,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Gordes</name><description>일정 기준점</description><Point><coordinates>5.20043,43.91181,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Village des Bories</name><description>일정 기준점</description><Point><coordinates>5.1857,43.89728,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] Ménerbes</name><description>일정 기준점</description><Point><coordinates>5.20689,43.83274,0</coordinates></Point></Placemark>
-<Placemark><name>[근교·이동지] L’Isle-sur-la-Sorgue</name><description>선택 대안 — 9/17 기본 일정 아님</description><Point><coordinates>5.05477,43.91904,0</coordinates></Point></Placemark>
+<Placemark><name>[숙박 거점] Gordes 숙소권</name><description>9/13–9/15 · 2박 · 실제 숙소 확정 후 교체</description><Point><coordinates>5.20043,43.91181,0</coordinates></Point></Placemark>
+<Placemark><name>[MUST · Day 16] Lourmarin</name><description>마을 산책·점심</description><Point><coordinates>5.3628,43.7636,0</coordinates></Point></Placemark>
+<Placemark><name>[OPTIONAL · Day 16] Bonnieux</name><description>Lacoste보다 우선 · 지연 시 생략</description><Point><coordinates>5.3078261,43.8236124,0</coordinates></Point></Placemark>
+<Placemark><name>[OPTIONAL · Day 16] Lacoste</name><description>첫 생략 대상</description><Point><coordinates>5.2728505,43.8318965,0</coordinates></Point></Placemark>
+<Placemark><name>[MUST · Day 16–18] Gordes</name><description>전망·구시가지·2박 거점</description><Point><coordinates>5.20043,43.91181,0</coordinates></Point></Placemark>
+<Placemark><name>[MUST · Day 17] Roussillon · Sentier des Ocres</name><description>09:30 트레일 개장 · 당일 안전통제 확인</description><Point><coordinates>5.29207,43.90202,0</coordinates></Point></Placemark>
+<Placemark><name>[OPTIONAL 1 · Day 17] Ménerbes</name><description>점심 거점 후보</description><Point><coordinates>5.20689,43.83274,0</coordinates></Point></Placemark>
+<Placemark><name>[OPTIONAL 2 · Day 17] Goult</name><description>Optional 중 첫 생략</description><Point><coordinates>5.24417,43.86306,0</coordinates></Point></Placemark>
+<Placemark><name>[MUST · Day 17] Abbaye Notre-Dame de Sénanque</name><description>월요일 관람 가능 · 예약슬롯 재확인</description><Point><coordinates>5.1871502,43.9284546,0</coordinates></Point></Placemark>
+<Placemark><name>[MUST · Day 18] L&#x27;Isle-sur-la-Sorgue</name><description>화요일 물길·물레방아 중심 · 시장일 아님</description><Point><coordinates>5.05477,43.91904,0</coordinates></Point></Placemark>
+<Placemark><name>[OPTIONAL · Day 18] Fontaine-de-Vaucluse</name><description>Avignon 체크인을 해치지 않을 때</description><Point><coordinates>5.1272914,43.9221229,0</coordinates></Point></Placemark>
 </Document></kml>

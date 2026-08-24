@@ -16,33 +16,33 @@
     "abbaye-de-senanque": {
       "displayName": "Abbaye de Sénanque",
       "region": "luberon",
-      "grade": "priority",
+      "grade": "essential",
       "facts": {
         "hours": {
-          "value": "9월 09:30 개장 · 최종입장 18:30 · 폐장 19:00",
+          "value": "월–토 비가이드 09:30–11:00(마지막 입장)·13:00–17:00(마지막 입장). 9/14(월) 방문 가능",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.senanque.fr/visite-de-labbaye/",
+          "verified_at": "2026-08-23",
           "ttl_days": 90
         },
         "price_adult": {
-          "value": "개인 €3.50",
+          "value": "2026 가이드 투어·HistoPad 관람 성인 €8",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.senanque.fr/visite-de-labbaye/",
+          "verified_at": "2026-08-23",
           "ttl_days": 180
         },
         "booking": {
-          "value": "자유관람 예약 불필요 · 가이드 투어·HistoPad 는 tickeasy 예약",
+          "value": "HistoPad는 한국어 포함 11개 언어 지원. 온라인 예약 가능 여부와 9/14 슬롯은 출발 직전 재확인",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.senanque.fr/visite-de-labbaye/",
+          "verified_at": "2026-08-23",
           "ttl_days": 90
         },
         "closed": {
-          "value": "연중 개방(주간 정기휴관 없음). 일요일은 오전 폐쇄, 13:00부터만 개방. 2026년 예외 휴장: 1/1, 1/12~13, 1/30, 4/3, 12/25 — 9/13~16 여행기간에는 휴장 없음",
-          "source": "https://www.senanque.fr/en/visits-of-the-abbey-2/",
-          "verified_at": "2026-08-17",
+          "value": "일요일은 오후 13:00–17:00 중심. 실제 수도 공동체 생활공간이므로 정숙·현장 촬영 제한 준수",
+          "source": "https://www.senanque.fr/visite-de-labbaye/",
+          "verified_at": "2026-08-23",
           "confidence": "official",
           "ttl_days": 90
         }
@@ -1189,7 +1189,7 @@
     "coustellet": {
       "displayName": "Coustellet 생산자 시장",
       "region": "luberon",
-      "grade": "essential",
+      "grade": "optional",
       "facts": {
         "hours": {
           "value": "생산자시장 매주 일요일 08:00–13:00 (2026-03-29~12-27)",
@@ -1559,7 +1559,7 @@
     "goult": {
       "displayName": "Goult",
       "region": "luberon",
-      "grade": "priority",
+      "grade": "optional",
       "facts": {
         "closed": {
           "value": "마을 상시 개방·휴무 없음. 장날은 목요일 오전(Rue de la République, 상인회 주최) — 그 외 요일 시장 없음",
@@ -2116,7 +2116,7 @@
     "les-baux-de-provence": {
       "displayName": "Les Baux-de-Provence",
       "region": "avignon",
-      "grade": "alternative",
+      "grade": "essential",
       "facts": {
         "hours": {
           "value": "Château des Baux 9월 09:00–19:00",
@@ -3941,30 +3941,30 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "9/1–9/30 09:00–19:00 · 최종입장 30분 전",
+          "value": "9월 매일 09:30–18:30 · 퇴장 19:00",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html",
+          "verified_at": "2026-08-23",
           "ttl_days": 90
         },
         "price_adult": {
-          "value": "성인 €8 · 12–17세 €4 · 12세 미만 무료",
+          "value": "개인 성인 €3.50",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html",
+          "verified_at": "2026-08-23",
           "ttl_days": 180
         },
         "closed": {
-          "value": "9월은 매일 개방(주간 휴무 없음). 12/25·1/1 휴장, 1~2월 일부 휴장일. 단, 화재위험 도지사령·폭우·뇌우 시 임시 폐쇄 — 전날 18시에 공지",
-          "source": "https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/",
-          "verified_at": "2026-08-17",
+          "value": "9월은 매일 운영하나 비·강풍·화재위험 등 안전상황에 따라 접근 제한 가능",
+          "source": "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html",
+          "verified_at": "2026-08-23",
           "confidence": "official",
           "ttl_days": 90
         },
         "booking": {
-          "value": "예약 불가·불필요 — 당일 현장 매표소에서만 구매(개인 3.5유로). 9월 09:30 개방·최종입장 18:30·폐장 19:00",
-          "source": "https://roussillon-en-provence.fr/decouvrir-2/sentier-des-ocres/",
-          "verified_at": "2026-08-17",
+          "value": "약 30–60분. 당일 기상·안전 공지를 확인하고 현장 입장",
+          "source": "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html",
+          "verified_at": "2026-08-23",
           "confidence": "official",
           "ttl_days": 90
         }
@@ -5792,6 +5792,140 @@
           "source": "원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1585",
           "ttl_days": 3650,
           "note": "시설이 공표하는 값이 아니라 이 가이드북의 편집 판단"
+        }
+      }
+    },
+    "fontaine-de-vaucluse": {
+      "displayName": "Fontaine-de-Vaucluse",
+      "region": "luberon",
+      "grade": "optional",
+      "facts": {
+        "duration": {
+          "value": "60–90분",
+          "confidence": "editorial",
+          "source": "Provence Day 18 execution plan",
+          "ttl_days": 3650
+        },
+        "getting_there": {
+          "value": "마을 공영주차 후 Sorgue 강을 따라 수원지 접근 가능 범위까지 왕복",
+          "confidence": "editorial",
+          "source": "Provence Day 18 execution plan",
+          "ttl_days": 3650
+        },
+        "note": {
+          "value": "Avignon 15:00–16:00 체크인을 해치지 않을 때만 방문",
+          "confidence": "editorial",
+          "source": "Provence Day 18 skip logic",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "l-isle-sur-la-sorgue": {
+      "displayName": "L'Isle-sur-la-Sorgue",
+      "region": "luberon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "전통시장은 목·일 07:00–13:00. 9/15(화)은 시장일이 아님",
+          "confidence": "official",
+          "source": "https://www.provenceguide.com/marches/pays-des-sorgues/offres-18-1.html",
+          "verified_at": "2026-08-23",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "Village des Antiquaires de la Gare는 2026 하계 화·수 휴무",
+          "confidence": "official",
+          "source": "https://islesurlasorguetourisme.com/bouger/culture/art-et-antiquite/les-antiquaires-de-lisle/391062-le-village-des-antiquaires-de-la-gare",
+          "verified_at": "2026-08-23",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "수로·물레방아·구시가지 중심 90–120분",
+          "confidence": "editorial",
+          "source": "Provence Day 18 execution plan",
+          "ttl_days": 3650
+        },
+        "note": {
+          "value": "화요일은 antique shopping day가 아니라 물의 마을 체험으로 운용. 열린 개별 갤러리만 선택",
+          "confidence": "editorial",
+          "source": "Provence Day 18 factual correction",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "lacoste": {
+      "displayName": "Lacoste",
+      "region": "luberon",
+      "grade": "optional",
+      "facts": {
+        "duration": {
+          "value": "45–60분",
+          "confidence": "editorial",
+          "source": "Provence Day 16 execution plan",
+          "ttl_days": 3650
+        },
+        "getting_there": {
+          "value": "하부 주차 후 Rue Basse–Beffroi–Portail de la Garde–Château 방향 도보 왕복",
+          "confidence": "editorial",
+          "source": "Provence Day 16 execution plan",
+          "ttl_days": 3650
+        },
+        "note": {
+          "value": "Day 16 지연 시 첫 생략 대상",
+          "confidence": "editorial",
+          "source": "Provence Day 16 skip logic",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "orange": {
+      "displayName": "Orange",
+      "region": "avignon",
+      "grade": "optional",
+      "facts": {
+        "duration": {
+          "value": "Théâtre antique 단일 목적 60–75분",
+          "confidence": "editorial",
+          "source": "Provence Day 19 execution plan",
+          "ttl_days": 3650
+        },
+        "booking": {
+          "value": "실행 당일 Théâtre antique 운영시간·마지막 입장을 공식사이트에서 재확인",
+          "confidence": "unverified",
+          "source": "https://www.theatre-antique.com/",
+          "ttl_days": 90
+        },
+        "note": {
+          "value": "Saint-Rémy와 Les Baux를 충분히 마친 경우에만 실행하는 Bonus. 늦으면 즉시 삭제",
+          "confidence": "editorial",
+          "source": "Provence Day 19 skip logic",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "saint-remy-de-provence": {
+      "displayName": "Saint-Rémy-de-Provence",
+      "region": "avignon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "주간 Provençal Market: 매주 수요일 08:00–13:00",
+          "confidence": "official",
+          "source": "https://www.alpillesenprovence.com/en/fiches/weekly-provencal-market-of-saint-remy-de-provence/",
+          "verified_at": "2026-08-23",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "시장·구시가지·점심 3–3.5시간. Saint-Paul-de-Mausole는 여유 시 추가",
+          "confidence": "editorial",
+          "source": "Provence Day 19 execution plan",
+          "ttl_days": 3650
+        },
+        "note": {
+          "value": "9/16(수) 시장을 Day 19 핵심 경험으로 운용",
+          "confidence": "editorial",
+          "source": "Provence Day 19 factual correction",
+          "ttl_days": 3650
         }
       }
     },

@@ -1447,12 +1447,12 @@
       "day": 16,
       "date": "2026-09-13",
       "dateLabel": "9/13 일",
-      "baseCity": "Luberon",
-      "theme": "Aix→Lourmarin→농가",
-      "core": "Lourmarin 스케치행사, Coustellet 장보기, 농가 체크인",
-      "option": "Cucuron/Goult 추가 금지",
+      "baseCity": "Gordes",
+      "theme": "Aix→남부 Luberon→Gordes",
+      "core": "Aix 체크아웃, Lourmarin 마을·점심, Gordes 체크인·전망·구시가지",
+      "option": "Bonnieux 선택, Lacoste 최우선 삭제",
       "fatigue": "3",
-      "lock": "농가·행사",
+      "lock": "Gordes 2박·Lourmarin 점심",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -1475,26 +1475,10 @@
           ]
         },
         {
-          "id": "coustellet",
-          "name": "Coustellet",
-          "nameKo": "쿠스텔레",
+          "id": "gordes",
+          "name": "Gordes",
+          "nameKo": "고르드",
           "type": "village",
-          "status": "confirmed",
-          "importance": "supporting",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
-          "id": "luberon",
-          "name": "Luberon",
-          "nameKo": "뤼베롱",
-          "type": "region",
           "status": "confirmed",
           "importance": "hero",
           "chapter": "luberon",
@@ -1507,15 +1491,31 @@
           ]
         },
         {
-          "id": "luberon-private-stay",
-          "name": "Luberon private farmhouse",
-          "nameKo": "뤼베롱 비공개 농가 숙소",
-          "type": "accommodation",
-          "status": "private",
-          "importance": "text-only",
+          "id": "bonnieux",
+          "name": "Bonnieux",
+          "nameKo": "보니외",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
           "chapter": "luberon",
-          "visibility": "private",
-          "photoNeeded": false,
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "lacoste",
+          "name": "Lacoste",
+          "nameKo": "라코스트",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
@@ -1528,12 +1528,12 @@
       "day": 17,
       "date": "2026-09-14",
       "dateLabel": "9/14 월",
-      "baseCity": "Luberon",
-      "theme": "오커색과 생활마을",
-      "core": "Roussillon, Sentier des Ocres",
-      "option": "Goult 또는 Bonnieux 택1",
+      "baseCity": "Gordes",
+      "theme": "오크르와 Sénanque",
+      "core": "Roussillon·Sentier des Ocres, Abbaye de Sénanque, Gordes 복귀",
+      "option": "Ménerbes 우선 선택, Goult 먼저 삭제",
       "fatigue": "3",
-      "lock": "오커길",
+      "lock": "Sénanque 슬롯·오커길",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -1572,158 +1572,12 @@
           ]
         },
         {
-          "id": "goult",
-          "name": "Goult",
-          "nameKo": "굴트",
-          "type": "village",
-          "status": "optional",
-          "importance": "supporting",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
-          "id": "bonnieux",
-          "name": "Bonnieux",
-          "nameKo": "보니외",
-          "type": "village",
-          "status": "optional",
-          "importance": "supporting",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
-          "id": "luberon-private-stay",
-          "name": "Luberon private farmhouse",
-          "nameKo": "뤼베롱 비공개 농가 숙소",
-          "type": "accommodation",
-          "status": "private",
-          "importance": "text-only",
-          "chapter": "luberon",
-          "visibility": "private",
-          "photoNeeded": false,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        }
-      ]
-    },
-    {
-      "day": 18,
-      "date": "2026-09-15",
-      "dateLabel": "9/15 화",
-      "baseCity": "Luberon",
-      "theme": "Gordes 시장과 돌의 문화",
-      "core": "Gordes 시장, Village des Bories",
-      "option": "Sénanque 선택",
-      "fatigue": "3",
-      "lock": "시장·주차",
-      "sourceFiles": [
-        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
-      ],
-      "places": [
-        {
-          "id": "gordes",
-          "name": "Gordes",
-          "nameKo": "고르드",
-          "type": "village",
-          "status": "confirmed",
-          "importance": "hero",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
-          "id": "village-des-bories",
-          "name": "Village des Bories",
-          "nameKo": "보리 석조마을",
-          "type": "historic-site",
-          "status": "confirmed",
-          "importance": "major",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
           "id": "abbaye-de-senanque",
           "name": "Abbaye Notre-Dame de Sénanque",
           "nameKo": "세낭크 수도원",
           "type": "attraction",
-          "status": "optional",
-          "importance": "major",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
-          "id": "luberon-private-stay",
-          "name": "Luberon private farmhouse",
-          "nameKo": "뤼베롱 비공개 농가 숙소",
-          "type": "accommodation",
-          "status": "private",
-          "importance": "text-only",
-          "chapter": "luberon",
-          "visibility": "private",
-          "photoNeeded": false,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        }
-      ]
-    },
-    {
-      "day": 19,
-      "date": "2026-09-16",
-      "dateLabel": "9/16 수",
-      "baseCity": "Luberon",
-      "theme": "농가생활·스케치 완충일",
-      "core": "농가 아침·산책·세탁·스케치",
-      "option": "Ménerbes 또는 Oppède 택1",
-      "fatigue": "1~2",
-      "lock": "없음/숙소",
-      "sourceFiles": [
-        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
-      ],
-      "places": [
-        {
-          "id": "luberon",
-          "name": "Luberon",
-          "nameKo": "뤼베롱",
-          "type": "region",
           "status": "confirmed",
-          "importance": "hero",
+          "importance": "major",
           "chapter": "luberon",
           "visibility": "public",
           "photoNeeded": true,
@@ -1750,9 +1604,9 @@
           ]
         },
         {
-          "id": "oppede-le-vieux",
-          "name": "Oppède-le-Vieux",
-          "nameKo": "오페드 르 비외",
+          "id": "goult",
+          "name": "Goult",
+          "nameKo": "굴트",
           "type": "village",
           "status": "optional",
           "importance": "supporting",
@@ -1766,19 +1620,165 @@
           ]
         },
         {
-          "id": "luberon-private-stay",
-          "name": "Luberon private farmhouse",
-          "nameKo": "뤼베롱 비공개 농가 숙소",
-          "type": "accommodation",
-          "status": "private",
-          "importance": "text-only",
+          "id": "gordes",
+          "name": "Gordes",
+          "nameKo": "고르드",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "hero",
           "chapter": "luberon",
-          "visibility": "private",
-          "photoNeeded": false,
+          "visibility": "public",
+          "photoNeeded": true,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
             "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "date": "2026-09-15",
+      "dateLabel": "9/15 화",
+      "baseCity": "Avignon",
+      "theme": "물의 Provence→Avignon",
+      "core": "Gordes 체크아웃, L'Isle 물길·물레방아, Avignon 체크인",
+      "option": "Fontaine-de-Vaucluse 선택; 화요일 앤틱·시장 일정 금지",
+      "fatigue": "3",
+      "lock": "Avignon 5박·주차",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "l-isle-sur-la-sorgue",
+          "name": "L’Isle-sur-la-Sorgue",
+          "nameKo": "릴쉬르라소르그",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        },
+        {
+          "id": "avignon",
+          "name": "Avignon",
+          "nameKo": "아비뇽",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "fontaine-de-vaucluse",
+          "name": "Fontaine-de-Vaucluse",
+          "nameKo": "퐁텐드보클뤼즈",
+          "type": "village",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "luberon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "date": "2026-09-16",
+      "dateLabel": "9/16 수",
+      "baseCity": "Avignon",
+      "theme": "Saint-Rémy 시장과 Les Baux",
+      "core": "Saint-Rémy 수요시장·구시가지·점심, Les Baux 성채·전망",
+      "option": "Orange는 가장 먼저 삭제하는 Bonus",
+      "fatigue": "4",
+      "lock": "시장·Château 운영",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "saint-remy-de-provence",
+          "name": "Saint-Rémy-de-Provence",
+          "nameKo": "생레미드프로방스",
+          "type": "town",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "les-baux-de-provence",
+          "name": "Les Baux-de-Provence",
+          "nameKo": "레 보 드 프로방스",
+          "type": "village",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "orange",
+          "name": "Orange",
+          "nameKo": "오랑주",
+          "type": "city",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "avignon",
+          "name": "Avignon",
+          "nameKo": "아비뇽",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
           ]
         }
       ]

@@ -11,6 +11,18 @@ summary: "피터 메일의 소설 『프로방스에서의 1년』의 무대이�
 source: source/CURRENT/30_Places/menerbes.md
 ---
 
+## 현장 실행
+
+- **OPTIONAL 1 · Day 17 · 60–90분+점심**
+- **WHY GO**: 긴 능선 위의 전망, 와인·트러플과 예술가의 흔적을 느리게 경험한다.
+- **DO THIS**: 마을 입구 주차 → Place de l’Horloge → Beffroi → 석조주택과 좁은 거리 → 교회·성채 외관 → 전망.
+- **EAT / DRINK**: Bistrot Le 5 점심 1순위, menu du jour 약 €25–35. 9/14 월요일 영업은 예약 전에 재확인한다.
+- **IF LATE**: Goult를 먼저 빼고, 그래도 늦으면 Ménerbes 체류를 줄이거나 생략한다.
+
+### Trip Layer
+
+Day 17 Optional 중 Goult보다 우선한다. 점심을 붙일 수 있을 때 단순 사진 stop보다 가치가 높다.
+
 ## 왜 가는가
 
 뤼베롱 북사면의 길고 좁은 암반 능선 위에 군함처럼 솟아 있는 **'프랑스에서 가장 아름다운 마을(Les Plus Beaux Villages de France)'**이다.

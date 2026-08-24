@@ -12,8 +12,8 @@
     {"key": "girona", "base": "Bàscara", "checkin": "2026-09-01", "checkout": "2026-09-04", "nights": 3},
     {"key": "nice", "base": "Nice", "checkin": "2026-09-04", "checkout": "2026-09-09", "nights": 5},
     {"key": "aix", "base": "Aix-en-Provence", "checkin": "2026-09-09", "checkout": "2026-09-13", "nights": 4},
-    {"key": "luberon", "base": "Luberon", "checkin": "2026-09-13", "checkout": "2026-09-16", "nights": 3},
-    {"key": "avignon", "base": "Avignon", "checkin": "2026-09-16", "checkout": "2026-09-20", "nights": 4},
+    {"key": "luberon", "base": "Gordes", "checkin": "2026-09-13", "checkout": "2026-09-15", "nights": 2},
+    {"key": "avignon", "base": "Avignon", "checkin": "2026-09-15", "checkout": "2026-09-20", "nights": 5},
     {"key": "lyon", "base": "Lyon", "checkin": "2026-09-20", "checkout": "2026-09-24", "nights": 4},
     {"key": "paris", "base": "Paris", "checkin": "2026-09-24", "checkout": "2026-10-09", "nights": 15}
   ]

@@ -2,197 +2,105 @@
   "schemaVersion": "1.0",
   "day": 17,
   "date": "2026-09-14",
-  "city": "Luberon",
-  "title": "오커색과 생활마을",
+  "city": "Luberon · Gordes",
+  "title": "Roussillon · 선택마을 · Sénanque → Gordes 2박차",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "driving",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
-  "totalDistance": "약 56km · 차량 이동",
+  "totalDistance": "Base 약 41km · Extended 약 61km",
   "fatigue": "3",
-  "hotel": {
-    "name": "Domaine des Peyre (후보)",
-    "lat": 43.87088,
-    "lng": 5.12202,
-    "status": "candidate"
-  },
+  "hotel": {"name": "Gordes 숙소 (후보 미정)", "lat": 43.91181, "lng": 5.20043, "status": "candidate"},
   "stops": [
     {
-      "id": "farm-depart",
-      "order": 1,
-      "start": "08:30",
-      "end": "09:00",
-      "name": "농가 숙소 아침 & 출발",
-      "category": "hotel",
-      "lat": 43.87088,
-      "lng": 5.12202,
-      "summary": "숙소 테라스 아침식사 후 08:30 출발. 루시용 주차장(Parking Saint-Michel)으로 이동 (20분 소요)",
-      "menu": "크루아상, 잼, 커피",
-      "reservation": null,
-      "optional": false,
-      "place_ref": null
+      "id": "gordes-depart", "order": 1, "start": "08:30", "end": "09:00",
+      "name": "Gordes 출발", "category": "hotel", "lat": 43.91181, "lng": 5.20043,
+      "summary": "아침 후 08:30 출발해 Roussillon의 Parking des Ocres 또는 Saint-Michel로 간다.",
+      "menu": "숙소 아침", "reservation": null, "optional": false, "place_ref": null
     },
     {
-      "id": "sentier-ocres",
-      "order": 2,
-      "start": "09:00",
-      "end": "10:30",
-      "name": "Sentier des Ocres (오커 트레일)",
-      "category": "sight",
-      "lat": 43.9019,
-      "lng": 5.2939,
-      "summary": "붉은 황토 절벽과 소나무 숲 트레일(30분/50분 루프). 오전 햇살에 가장 화려한 색채. [주의] 붉은 흙먼지로 인한 밝은색 옷/흰 신발 착용 절대 금지",
+      "id": "roussillon", "order": 2, "start": "09:00", "end": "11:15",
+      "name": "MUST · Roussillon + Sentier des Ocres", "category": "sight", "lat": 43.90202, "lng": 5.29207,
+      "summary": "09:00 도착 후 마을 접근·주차, 09:30 개장에 맞춰 Sentier des Ocres 짧은/긴 코스 현장 선택 → Place de la Mairie → 붉은 골목과 전망 → 커피. 트레일은 약 30~60분이며 비·강풍·안전통제 여부를 당일 확인한다.",
+      "menu": "coffee·pastry·early snack 중심",
+      "reservation": "9월 공식 운영 09:30–18:30(19:00 퇴장) · 현장 결제 · 날씨 조건부",
+      "executionStatuses": [{"type": "check", "label": "CHECK", "detail": "당일 기상과 Sentier des Ocres 개방 상태를 확인한다."}],
+      "optional": false, "place_ref": "roussillon-sentier-des-ocres"
+    },
+    {
+      "id": "menerbes", "order": 3, "start": "11:45", "end": "13:45",
+      "name": "OPTIONAL 1 · Ménerbes 산책과 점심", "category": "sight", "lat": 43.83274, "lng": 5.20689,
+      "summary": "마을 입구 주차 → Place de l’Horloge → Beffroi → 능선 석조거리 → 교회·성채 외관 → 전망. Optional 중 우선순위 1이며 시간이 충분하면 점심 거점으로 쓴다.",
+      "menu": "Bistrot Le 5 메뉴 du jour 약 €25–35",
+      "reservation": "Bistrot Le 5의 9/14 월요일 영업·좌석은 예약 전에 재확인",
+      "executionStatuses": [
+        {"type": "optional", "detail": "Roussillon 지연 시 체류를 줄이거나 생략한다."},
+        {"type": "check", "label": "CHECK", "detail": "Bistrot Le 5 월요일 영업 여부를 확인한다."}
+      ],
+      "optional": true, "place_ref": "menerbes"
+    },
+    {
+      "id": "goult", "order": 4, "start": "14:00", "end": "14:50",
+      "name": "OPTIONAL 2 · Goult", "category": "sight", "lat": 43.86306, "lng": 5.24417,
+      "summary": "중심부 → Rue de la République → 상부 골목 → Moulin de Jérusalem → 전망 → 원점 회귀. 생활형 마을의 45~50분 짧은 산책만 한다.",
+      "menu": "coffee·bakery·quick snack만",
+      "reservation": "Parking de la Libération 또는 마을 외곽 주차",
+      "executionStatuses": [{"type": "optional", "detail": "Day 17에서 가장 먼저 생략한다."}],
+      "optional": true, "place_ref": "goult"
+    },
+    {
+      "id": "senanque", "order": 5, "start": "16:00", "end": "17:30",
+      "name": "MUST · Abbaye Notre-Dame de Sénanque", "category": "culture", "lat": 43.9284546, "lng": 5.1871502,
+      "summary": "계곡 진입 → 수도원 외관 → 예약·운영상태에 따라 HistoPad 내부 관람. 월요일 비가이드 관람은 오후 13:00–17:00 마지막 입장이며 한국어 HistoPad를 제공한다. 수도 공동체의 정숙과 현장 촬영 제한을 따른다.",
       "menu": null,
-      "reservation": "입장료 현장 €3.50 / 주차: Parking Saint-Michel (Primary)",
-      "optional": false,
-      "place_ref": "roussillon-sentier-des-ocres"
+      "reservation": "출발 직전 공식 예약 가능 여부 재확인 · 내부 1~1.5시간 / 외관 45~60분",
+      "executionStatuses": [{"type": "check", "label": "CHECK", "detail": "9/14 관람 슬롯·예약 가능 여부와 내부 촬영 규정을 공식사이트에서 재확인한다."}],
+      "optional": false, "place_ref": "abbaye-de-senanque"
     },
     {
-      "id": "roussillon",
-      "order": 3,
-      "start": "10:30",
-      "end": "13:15",
-      "name": "Roussillon 구시가지 & 점심",
-      "category": "sight",
-      "lat": 43.9022,
-      "lng": 5.2928,
-      "summary": "오커 파스텔 건물 골목, 벨베데레 전망대 조망 후 마을 비스트로에서 여유로운 프로방스 점심 식사",
-      "menu": "라타투이, 오리 콩피, 니스식 샐러드, 로제 와인",
-      "reservation": "식당: Restaurant David 또는 Le Bistrot de Roussillon",
-      "optional": false,
-      "place_ref": "roussillon-sentier-des-ocres"
-    },
-    {
-      "id": "farm-rest",
-      "order": 4,
-      "start": "13:45",
-      "end": "15:45",
-      "name": "농가 숙소 한낮 휴식 (Siesta)",
-      "category": "hotel",
-      "lat": 43.87088,
-      "lng": 5.12202,
-      "summary": "한낮 13:30~15:30 폭염 피하기. 농가 숙소로 복귀하여 수영장/에어컨 휴식 및 독서",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "place_ref": null
-    },
-    {
-      "id": "goult",
-      "order": 5,
-      "start": "16:00",
-      "end": "18:00",
-      "name": "Goult 조용한 생활마을 & 풍차 언덕",
-      "category": "sight",
-      "lat": 43.8631,
-      "lng": 5.2417,
-      "summary": "관광 인파가 적은 정통 석조 생활마을. 조용한 돌담길, 에밀 졸라 광장, Moulin de Jérusalem 풍차 언덕에서 북쪽 뤼베롱 계곡 조망 (2시간)",
-      "menu": "Café de la Poste 테라스 음료",
-      "reservation": "주차: Place de la Libération / Rue de la République",
-      "optional": false,
-      "place_ref": "goult"
-    },
-    {
-      "id": "farm-return",
-      "order": 6,
-      "start": "18:30",
-      "end": "20:30",
-      "name": "농가 숙소 복귀 & 저녁",
-      "category": "hotel",
-      "lat": 43.87088,
-      "lng": 5.12202,
-      "summary": "숙소 귀환, 여유로운 저녁 식사 및 휴식. 익일 화요 고르드 시장(08:15 출발) 준비",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "place_ref": null
+      "id": "gordes-return", "order": 6, "start": "18:00", "end": "20:30",
+      "name": "MUST · Gordes 복귀와 2박차", "category": "hotel", "lat": 43.91181, "lng": 5.20043,
+      "summary": "수도원에서 Gordes로 돌아와 휴식하고 저녁을 먹는다. 익일 체크아웃을 위해 주유·짐 정리를 마친다.",
+      "menu": "Gordes 숙소권 저녁", "reservation": null, "optional": false, "place_ref": "gordes"
     }
   ],
   "legs": [
-    {
-      "from": "farm-depart",
-      "to": "sentier-ocres",
-      "mode": "car",
-      "duration": "약 20분",
-      "distance": "16.7km",
-      "roadType": "국도 D900 ➔ 지방도 D104 ➔ D227 (루시용 오르막)",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "sentier-ocres",
-      "to": "roussillon",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "roadType": "루시용 마을 보행로",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "roussillon",
-      "to": "farm-rest",
-      "mode": "car",
-      "duration": "약 20분",
-      "distance": "17.2km",
-      "roadType": "지방도 D227 ➔ 간선국도 D900 ➔ 농로",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "farm-rest",
-      "to": "goult",
-      "mode": "car",
-      "duration": "약 13분",
-      "distance": "10.8km",
-      "roadType": "농로 ➔ 간선국도 D900 ➔ 지방도 D218",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "goult",
-      "to": "farm-return",
-      "mode": "car",
-      "duration": "약 13분",
-      "distance": "10.9km",
-      "roadType": "지방도 D218 ➔ 간선국도 D900 ➔ 농로",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    }
+    {"from": "gordes-depart", "to": "roussillon", "mode": "car", "duration": "약 15분", "distance": "10km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "roussillon", "to": "menerbes", "mode": "car", "duration": "약 20분", "distance": "16km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "menerbes", "to": "goult", "mode": "car", "duration": "약 10분", "distance": "8km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "goult", "to": "senanque", "mode": "car", "duration": "약 25분", "distance": "18km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "senanque", "to": "gordes-return", "mode": "car", "duration": "약 15분", "distance": "9km", "line": null, "geometryStatus": "coordinate-line"}
   ],
   "transport": [
-    "렌터카 (Domaine des Peyre ↔ Roussillon ↔ Goult ↔ 숙소)",
-    "황토길 오커 트레일 도보 (30분/50분 코스)"
+    "Base: Gordes → Roussillon → Sénanque → Gordes (약 41km·순수 운전 약 55분)",
+    "Extended: Gordes → Roussillon → Ménerbes → Goult → Sénanque → Gordes (약 61km·순수 운전 약 1시간 20분)",
+    "Roussillon·Ménerbes·Goult는 외곽 주차 후 도보"
   ],
   "food": [
-    "Roussillon 가벼운 점심",
-    "농가 저녁 또는 Bonnieux"
+    "Roussillon은 coffee/snack",
+    "점심 1순위: Ménerbes Bistrot Le 5 (월요일 영업 재확인)",
+    "Ménerbes를 생략하면 Roussillon 또는 Gordes권으로 전환"
   ],
   "highlights": [
-    "오커길은 오전 — 더위·혼잡 전",
-    "월요일 식당 휴무 주의",
-    "Goult 또는 Bonnieux 택1"
+    "THEME · 오크르의 색 + 조용한 석조마을 + 수도원",
+    "MUST · Roussillon · Sénanque · Gordes 복귀",
+    "OPTIONAL · Ménerbes 우선, Goult 후순위",
+    "IF LATE · Goult → Ménerbes 순으로 삭제"
   ],
-  "backup": "1. 우천/트레일 폐쇄 시 오커길 도보를 생략하고 루시용 구시가지 실내 갤러리 및 Goult 긴 점심/카페로 전환\n2. 피로 시 오후 Goult 방문을 생략하고 숙소 전일 휴식\n3. 원할 경우 Goult 대신 Bonnieux(남향 계곡 뷰)로 대체 가능",
-  "map": {
-    "zoom": 11,
-    "center": [
-      43.885,
-      5.21
-    ],
-    "routeCache": "routes/day-17-driving-osrm.json"
-  },
+  "backup": "비·강풍으로 오커길이 닫히면 Roussillon 마을 산책만 유지하고 Optional을 줄인다. 주차 지연이나 피로가 생기면 Goult를 즉시 삭제하고, 그래도 늦으면 Ménerbes 체류를 축소하거나 생략한다. 최소 실행안은 Gordes → Roussillon → Sénanque → Gordes이며 16:00 전후 수도원 도착을 지킨다.",
+  "map": {"zoom": 11, "center": [43.88, 5.23], "routeCache": "routes/day-17-driving-osrm.json"},
   "needsReview": [
-    "Sentier des Ocres 오커 흙먼지 대비 복장(어두운색 의류/편한 신발)",
-    "루시용 주차장(Parking Saint-Michel) 오전 09:00 이전 선점",
-    "루시용/구트 점심 식당 월요일 영업 여부 확인"
+    "Sénanque 9/14 비가이드/가이드 슬롯과 온라인 예약 상태",
+    "Bistrot Le 5 월요일 영업과 점심 좌석",
+    "Sentier des Ocres 당일 기상·안전통제"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-17",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-17",
     "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md#Day-17",
-    "source/ASSETS/75_Execution_Maps/Luberon_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Sentier des Ocres"
+    "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html",
+    "https://www.senanque.fr/visite-de-labbaye/",
+    "https://www.provenceguide.com/restaurants/luberon/bistrot-le-5/provence-780497-1.html"
   ]
 }

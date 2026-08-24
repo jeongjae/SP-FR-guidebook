@@ -2,167 +2,100 @@
   "schemaVersion": "1.0",
   "day": 19,
   "date": "2026-09-16",
-  "city": "Avignon",
-  "title": "Luberon 체크아웃→Avignon 정착",
+  "city": "Avignon · Saint-Rémy · Les Baux",
+  "title": "수요시장 · Van Gogh · Alpilles 석회암 풍경",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "09:30",
-  "endTime": "20:30",
-  "totalDuration": "11시간",
-  "totalDistance": "약 35km · 차량 이동",
-  "fatigue": "3",
-  "hotel": {
-    "name": "La Terrasse du Clocher (후보)",
-    "lat": 43.94993,
-    "lng": 4.81302,
-    "status": "candidate"
-  },
+  "dayType": "driving",
+  "startTime": "08:00",
+  "endTime": "20:00",
+  "totalDuration": "12시간",
+  "totalDistance": "Base 약 62km · Orange 포함 약 122km",
+  "fatigue": "4",
+  "hotel": {"name": "La Terrasse du Clocher (후보)", "lat": 43.94993, "lng": 4.81302, "status": "candidate"},
   "stops": [
     {
-      "id": "farm-checkout",
-      "order": 1,
-      "start": "09:30",
-      "end": "10:30",
-      "name": "농가 숙소 체크아웃 & 출발",
-      "category": "hotel",
-      "lat": 43.87088,
-      "lng": 5.12202,
-      "summary": "Domaine des Peyre 체크아웃 후 차량 짐 적재. D900/N100 도로를 통해 아비뇽으로 이동 (35km, 약 40분)",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "place_ref": null
+      "id": "avignon-depart", "order": 1, "start": "08:00", "end": "08:15",
+      "name": "Avignon 숙소 출발", "category": "hotel", "lat": 43.94993, "lng": 4.81302,
+      "summary": "08:00~08:15 출발해 Saint-Rémy 외곽 공영주차장으로 이동한다. 시장 혼잡을 감안해 09:00 전후 도착을 지킨다.",
+      "menu": "간단한 숙소 아침", "reservation": null, "optional": false, "place_ref": null
     },
     {
-      "id": "avignon-parking-lunch",
-      "order": 2,
-      "start": "11:30",
-      "end": "14:00",
-      "name": "Les Halles d'Avignon 주변 점심",
-      "category": "food",
-      "lat": 43.9493,
-      "lng": 4.8061,
-      "summary": "Parking des Halles 또는 Parking Palais des Papes 관리 지하주차장 입차 후 레 알 인근 비스트로 점심",
-      "menu": "프로방스 샐러드, 델리 조리식품",
-      "reservation": "주차: Parking des Halles (Primary) / Parking Palais des Papes (Backup)",
-      "optional": false,
-      "place_ref": "les-halles"
+      "id": "saint-remy", "order": 2, "start": "09:00", "end": "11:45",
+      "name": "MUST · Saint-Rémy 수요시장과 구시가지", "category": "sight", "lat": 43.7885782, "lng": 4.8317498,
+      "summary": "Place de la République 시장 → 허브·올리브·과일·치즈·직물 좌판 → 구시가지 골목 → Place Jules Pellissier. 공식 대형 시장은 수요일 08:00–13:00이며 이번 일정의 핵심 경험이다.",
+      "menu": "시장 간식은 가볍게, 점심 공간을 남긴다",
+      "reservation": "Parking de la Libération 또는 외곽 공영주차 · 수요일 혼잡",
+      "executionStatuses": [{"type": "caution", "label": "MARKET", "detail": "08:00–13:00 시장을 먼저 보고 구시가지를 잇는다."}],
+      "optional": false, "place_ref": "saint-remy-de-provence"
     },
     {
-      "id": "avignon-checkin",
-      "order": 3,
-      "start": "14:30",
-      "end": "16:00",
-      "name": "Avignon 숙소 체크인",
-      "category": "hotel",
-      "lat": 43.94993,
-      "lng": 4.81302,
-      "summary": "숙소 체크인 (15:00부터 가능). 짐 하역 및 객실 정리",
-      "menu": null,
-      "reservation": "숙소 예약/후보 (La Terrasse du Clocher 인근)",
-      "optional": false,
-      "place_ref": null
+      "id": "saint-remy-lunch", "order": 3, "start": "11:45", "end": "13:15",
+      "name": "MUST · Saint-Rémy 점심", "category": "food", "lat": 43.7885782, "lng": 4.8317498,
+      "summary": "Day 19의 긴 식사는 선택 폭이 넓은 Saint-Rémy에 둔다. 여유가 있으면 식사 전후 Saint-Paul-de-Mausole/Van Gogh 관련 장소의 깊이를 조절한다.",
+      "menu": "시장 제철재료를 쓰는 프로방스 점심",
+      "reservation": "1~1.5시간 안에 식사 가능한 구시가지 식당을 출발 전 선택",
+      "optional": false, "place_ref": null
     },
     {
-      "id": "teinturiers-walls",
-      "order": 4,
-      "start": "16:30",
-      "end": "18:30",
-      "name": "Rue des Teinturiers & 성벽 오리엔테이션",
-      "category": "sight",
-      "lat": 43.9458,
-      "lng": 4.8133,
-      "summary": "물레방아가 돌아가는 염색공의 거리(Rue des Teinturiers), 시계탑 광장(Place de l'Horloge), 14세기 아비뇽 석조 성벽 둘레길 산책",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "place_ref": "palais-des-papes"
+      "id": "les-baux-de-provence", "order": 4, "start": "13:45", "end": "16:30",
+      "name": "MUST · Les Baux-de-Provence", "category": "sight", "lat": 43.7436458, "lng": 4.7950342,
+      "summary": "외곽 주차 → 중세마을 골목과 르네상스 건물 → Château des Baux → 성벽·Alpilles 전망 → 하산. 2~3시간을 확보하고 Carrières des Lumières는 별도 선택 모듈로만 본다.",
+      "menu": "coffee·ice cream·간단한 refreshment만",
+      "reservation": "Château 운영·입장 조건과 외곽 유료주차 재확인",
+      "executionStatuses": [{"type": "check", "label": "CHECK", "detail": "Château des Baux 당일 운영과 마지막 입장을 확인한다."}],
+      "optional": false, "place_ref": "les-baux-de-provence"
     },
     {
-      "id": "avignon-return",
-      "order": 5,
-      "start": "19:00",
-      "end": "20:30",
-      "name": "Fou de Fafa 아비뇽 첫 저녁",
-      "category": "food",
-      "lat": 43.94993,
-      "lng": 4.81302,
-      "summary": "구시가지 테라스 저녁 식사 후 숙소 귀환",
-      "menu": "프로방스 양갈비 구이, 계절 3코스 디너",
-      "reservation": "사전 예약 필수 (19:30)",
-      "optional": false,
-      "place_ref": "fou-de-fafa-avignon"
+      "id": "orange", "order": 5, "start": "17:30", "end": "18:45",
+      "name": "OPTIONAL BONUS · Orange 로마극장", "category": "culture", "lat": 44.1371311, "lng": 4.8078783,
+      "summary": "Théâtre antique 단일 목적 방문만 한다. Saint-Rémy 시장과 Les Baux 핵심을 충분히 마치고 체력·교통·일몰에 문제가 없을 때만 실행한다.",
+      "menu": "식사 추가 금지",
+      "reservation": "16:00~16:30 Les Baux 현장 판단 · 늦으면 즉시 삭제",
+      "executionStatuses": [{"type": "optional", "label": "BONUS", "detail": "Les Baux에서 약 55분 우회하므로 일반적인 경우 Avignon으로 직행한다."}],
+      "optional": true, "place_ref": "orange"
+    },
+    {
+      "id": "avignon-return", "order": 6, "start": "19:15", "end": "20:00",
+      "name": "MUST · Avignon 복귀", "category": "hotel", "lat": 43.94993, "lng": 4.81302,
+      "summary": "Base 일정은 Les Baux에서 약 40분 운전해 Avignon으로 바로 돌아오는 것이다. Orange를 실행해도 저녁과 휴식에 지장이 없도록 한다.",
+      "menu": "숙소 주변 가벼운 저녁", "reservation": null, "optional": false, "place_ref": null
     }
   ],
   "legs": [
-    {
-      "from": "farm-checkout",
-      "to": "avignon-parking-lunch",
-      "mode": "car",
-      "duration": "약 40분",
-      "distance": "35.0km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "avignon-parking-lunch",
-      "to": "avignon-checkin",
-      "mode": "walk",
-      "duration": "8분",
-      "distance": "0.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "avignon-checkin",
-      "to": "teinturiers-walls",
-      "mode": "walk",
-      "duration": "8분",
-      "distance": "0.6km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "teinturiers-walls",
-      "to": "avignon-return",
-      "mode": "walk",
-      "duration": "10분",
-      "distance": "0.7km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    }
+    {"from": "avignon-depart", "to": "saint-remy", "mode": "car", "duration": "약 30분", "distance": "21km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "saint-remy", "to": "saint-remy-lunch", "mode": "walk", "duration": "5~10분", "distance": "구시가지 내", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "saint-remy-lunch", "to": "les-baux-de-provence", "mode": "car", "duration": "약 15분", "distance": "10km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "les-baux-de-provence", "to": "orange", "mode": "car", "duration": "약 55분", "distance": "60km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "orange", "to": "avignon-return", "mode": "car", "duration": "약 30분", "distance": "32km", "line": null, "geometryStatus": "coordinate-line"}
   ],
   "transport": [
-    "렌터카 (Domaine des Peyre ➔ Avignon 성벽 주차장)",
-    "아비뇽 시내 도보"
+    "Base: Avignon → Saint-Rémy-de-Provence → Les Baux-de-Provence → Avignon (약 62km·순수 운전 약 1시간 25분)",
+    "Extended: Avignon → Saint-Rémy → Les Baux → Orange → Avignon (약 122km·순수 운전 약 2시간 10분)",
+    "시장·성채마을 모두 외곽 주차 후 도보"
   ],
   "food": [
-    "가벼운 점심 (체크인 지연 흡수)",
-    "Fou de Fafa 또는 Les Cocottes Saint-Louis"
+    "점심: Saint-Rémy",
+    "Les Baux는 관광 중심·간단한 음료만",
+    "Orange 실행 시 식사 추가 금지"
   ],
   "highlights": [
-    "첫날은 교황궁까지 가지 않는다",
-    "주차 출입시간·차량 높이 확인",
-    "L'Isle 목요시장은 기본안 제외"
+    "THEME · 프로방스 시장 + Van Gogh + Alpilles 석회암",
+    "MUST · Saint-Rémy 수요시장 · Les Baux",
+    "OPTIONAL · Orange는 Bonus 단일 목적",
+    "IF LATE · Orange를 가장 먼저, 쉽게 삭제"
   ],
-  "backup": "피로 시 성벽 외곽 산책을 생략하고 숙소권 카페 휴식 위주 오리엔테이션 진행",
-  "map": {
-    "zoom": 11,
-    "center": [
-      43.912,
-      4.96
-    ],
-    "routeCache": "routes/day-19-driving-osrm.json"
-  },
+  "backup": "비가 오면 Saint-Rémy 시장 체류를 압축하고 구시가지 카페·Saint-Paul-de-Mausole의 실내 비중을 높인다. 주차 지연·피로가 있으면 Orange를 검토하지 않는다. 최소 실행안은 Saint-Rémy 시장·구시가지·점심 → Les Baux 마을·Château → Avignon 직행이며 두 MUST의 체류시간을 깎지 않는다.",
+  "map": {"zoom": 9, "center": [43.85, 4.81], "routeCache": "routes/day-19-driving-osrm.json"},
   "needsReview": [
-    "Avignon 성벽 내 차량 진입 제한 및 Parking des Halles 입차 확인",
-    "숙소 체크인 시각(15:00) 확인"
+    "Saint-Rémy 시장 행사에 따른 변경·취소 여부와 주차",
+    "Château des Baux 9/16 운영·마지막 입장",
+    "Orange는 16:00~16:30 현장 조건이 모두 충족될 때만"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-19",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-19",
     "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md#Day-19",
-    "source/ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Rue des Teinturiers"
+    "https://www.alpillesenprovence.com/en/fiches/weekly-provencal-market-of-saint-remy-de-provence/",
+    "https://www.lesbauxdeprovence.com/wp-content/uploads/2026/02/DP_lesbauxdeprovence2026_EN.pdf"
   ]
 }

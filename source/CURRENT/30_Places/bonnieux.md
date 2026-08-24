@@ -4,12 +4,24 @@ name: "Bonnieux"
 local_name: "Bonnieux"
 region: luberon
 kind: spot
-grade: "대체"
-priority: "WORTHWHILE"
+grade: "선택"
+priority: "OPTIONAL"
 content_tier: "TIER_B"
-summary: "뤼베롱 산맥 북사면에 층층이 솟아오른 가장 낙차가 큰 계단식 언덕 마을. 해발 425m 옛 성당(Vieille Église) 정상 테라스에서 맞은편 라코스트(Lacoste) 성채와 계곡 전체를 굽어보는 압도적 파노라마."
+summary: "Petit Luberon 북사면을 따라 층층이 올라가는 언덕마을. 정상의 오래된 교회에서 Lacoste와 Calavon 계곡을 바라보는 전망이 핵심이다."
 source: source/CURRENT/30_Places/bonnieux.md
 ---
+
+## 현장 실행
+
+- **OPTIONAL · Day 16 · 60–90분**
+- **WHY GO**: 전형적인 perched village의 언덕길과 정상 전망, 맞은편 Lacoste의 지형을 본다.
+- **DO THIS**: 하부 주차 → 중심 광장·상점가 → 계단과 골목 → Vieille Église → 전망 → 평행 골목으로 하산.
+- **EAT / DRINK**: Lourmarin 점심 뒤 espresso·gelato 정도만. 긴 식사는 넣지 않는다.
+- **IF LATE**: Lacoste보다 우선하지만 Gordes 16:00~17:00 체크인을 넘길 것 같으면 생략한다.
+
+### Trip Layer
+
+Day 16 Optional 1순위다. Optional을 모두 빼도 일정은 완전하게 성립한다.
 
 ## 왜 가는가
 

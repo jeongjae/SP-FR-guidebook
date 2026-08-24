@@ -7,9 +7,21 @@ kind: spot
 grade: "필수"
 priority: "MUST_SEE"
 content_tier: "TIER_A"
-summary: "알베르 카뮈가 영면한 뤼베롱 남부의 평탄하고 세련된 예술 마을. 프로방스 최초의 르네상스 성(Château de Lourmarin), 플라타너스 그늘 아래 카페 테라스, 로즈마리에 덮인 소박한 카뮈의 묘소."
+summary: "뤼베롱 남쪽 기슭의 평지형 마을. 카페·상점·갤러리와 르네상스 성이 어우러진 우아한 생활형 프로방스다."
 source: source/CURRENT/30_Places/lourmarin.md
 ---
+
+## 현장 실행
+
+- **MUST · Day 16 · 1.5–2시간**
+- **WHY GO**: 언덕마을과 다른 평탄하고 우아한 생활감, Château de Lourmarin, Camus와 Henri Bosco의 흔적을 점심과 산책으로 경험한다.
+- **DO THIS**: Parking du Rayol → Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Protestant Temple → 카페·갤러리.
+- **EAT / DRINK**: La Récréation 점심 우선. 2026 성수기 점심 12:00–14:00, à la carte €22–26, 성인 메뉴 €37.50–38.50. 9/13 좌석은 재확인한다.
+- **IF LATE**: Château 내부관람을 빼고 마을+점심을 유지한다. Lourmarin 자체는 생략하지 않는다.
+
+### Trip Layer
+
+Day 16의 첫 MUST다. 10:00 전후 도착해 12:15까지 걷고 13:30까지 점심을 마친 뒤, Optional 마을 수를 결정한다.
 
 ## 왜 가는가
 
@@ -24,7 +36,7 @@ source: source/CURRENT/30_Places/lourmarin.md
 
 - **Best For**: 알베르 카뮈 묘소 참배 및 문학 산책, 르네상스 성채 관람, 플라타너스 카페 테라스 휴식, 금요 프로방스 시장
 - **Best Time**: 오전 10:00~12:30 (상점들이 활기차고 테라스 햇살이 좋은 시간) 또는 늦은 오후 16:00~18:00
-- **Recommended Duration**: 60분–90분 (묘지 20분 + 마을 골목 및 카페 40분 + 르네상스 성 외관 20분)
+- **Recommended Duration**: 1.5–2시간 (샤토 내부관람 포함 시 2–2.5시간)
 
 ## 더 깊이
 

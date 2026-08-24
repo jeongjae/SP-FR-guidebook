@@ -817,38 +817,50 @@
     },
     {
       "date": "2026-09-13",
-      "city": "Aix · Lourmarin · Luberon",
-      "title": "Aix → Luberon — Lourmarin 경유 농가 체크인",
+      "city": "Aix · 남부 Luberon · Gordes",
+      "title": "Aix 체크아웃 → Lourmarin → Gordes 1박차",
       "center": [
-        43.72,
-        5.35
+        43.83,
+        5.28
       ],
-      "zoom": 11,
+      "zoom": 10,
       "defaultMode": "driving",
       "stops": [
         {
           "placeId": "aix-stay-candidate",
           "order": 0,
-          "plannedTime": "09:15 체크아웃 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "08:30–09:00 체크아웃",
+          "note": "Aix 4박 종료. 확정 체크아웃 조건을 재확인하고 출발한다."
         },
         {
           "placeId": "lourmarin",
           "order": 1,
-          "plannedTime": "10:30–13:30",
-          "note": "마을·스케치·가벼운 점심. 차량 내 짐 완전은폐. 주차장은 현장 안내 확인 — 사전 미지정."
+          "plannedTime": "10:00–13:30",
+          "note": "MUST · 마을 산책과 점심. Château 외관/선택 관람 후 La Récréation 예약 가능 여부를 재확인한다."
         },
         {
-          "placeId": "coustellet",
+          "placeId": "bonnieux",
           "order": 2,
-          "plannedTime": "13:30 이후 장보기",
-          "note": "농가 체크인 전 장보기 — 해지기 전 진입."
+          "plannedTime": "13:50–15:00 Optional",
+          "note": "OPTIONAL · 여유가 있을 때 Vieille Église 전망까지 60–70분. Gordes 체크인이 늦으면 생략."
         },
         {
-          "placeId": "luberon-stay-candidate",
+          "placeId": "lacoste",
           "order": 3,
-          "plannedTime": "해지기 전 체크인",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "15:10–16:00 Optional",
+          "note": "OPTIONAL · Day 16 첫 생략 대상. 하부 주차 후 Château 방향으로 짧게 왕복한다."
+        },
+        {
+          "placeId": "gordes-stay-candidate",
+          "order": 4,
+          "plannedTime": "16:00–17:00 체크인 목표",
+          "note": "Gordes 1박차. 실제 숙소가 확정되면 후보 좌표를 교체한다."
+        },
+        {
+          "placeId": "gordes",
+          "order": 5,
+          "plannedTime": "해질 무렵–저녁",
+          "note": "MUST · 대표 파노라마 전망대 → Château 주변 → calade 골목 → 저녁."
         }
       ],
       "segments": [
@@ -859,20 +871,39 @@
         },
         {
           "from": "lourmarin",
-          "to": "coustellet",
-          "mode": "driving"
+          "to": "bonnieux",
+          "mode": "driving",
+          "optional": true
         },
         {
-          "from": "coustellet",
-          "to": "luberon-stay-candidate",
-          "mode": "driving"
+          "from": "bonnieux",
+          "to": "lacoste",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "lacoste",
+          "to": "gordes-stay-candidate",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "lourmarin",
+          "to": "gordes-stay-candidate",
+          "mode": "driving",
+          "note": "Base route · Optional 마을을 모두 생략할 때"
+        },
+        {
+          "from": "gordes-stay-candidate",
+          "to": "gordes",
+          "mode": "walking"
         }
       ]
     },
     {
       "date": "2026-09-14",
       "city": "Luberon",
-      "title": "Roussillon 오커길과 Goult",
+      "title": "Roussillon 오크르 · Optional 마을 · Sénanque",
       "center": [
         43.88,
         5.26
@@ -881,10 +912,10 @@
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "luberon-stay-candidate",
+          "placeId": "gordes-stay-candidate",
           "order": 0,
           "plannedTime": "08:30 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "note": "Gordes 2박차의 근교 루프 출발."
         },
         {
           "placeId": "roussillon-parking-des-ocres",
@@ -895,19 +926,37 @@
         {
           "placeId": "roussillon-sentier-des-ocres",
           "order": 2,
-          "plannedTime": "오전",
-          "note": "오커길 후 60분 휴식. 주차 후 도보 진입."
+          "plannedTime": "09:00–11:15",
+          "note": "MUST · 09:30 트레일 개장에 맞춰 Sentier des Ocres와 마을을 함께 본다."
+        },
+        {
+          "placeId": "menerbes",
+          "order": 3,
+          "plannedTime": "11:45–13:45 Optional",
+          "note": "OPTIONAL 1순위 · 점심 거점 후보. Bistrot Le 5 월요일 영업·예약 여부 재확인."
         },
         {
           "placeId": "goult",
-          "order": 3,
-          "plannedTime": "오후",
-          "note": "실행 감사 기준 Goult 또는 Bonnieux 중 택일. 주차장은 현장 안내 확인 — 사전 미지정."
+          "order": 4,
+          "plannedTime": "14:00–14:50 Optional",
+          "note": "OPTIONAL 2순위 · 지연 시 첫 생략. Moulin de Jérusalem까지 짧게 걷는다."
+        },
+        {
+          "placeId": "abbaye-de-senanque",
+          "order": 5,
+          "plannedTime": "16:00–17:30",
+          "note": "MUST · 월요일 비가이드 오후 관람 가능. 예약슬롯과 촬영 제한을 출발 전 재확인."
+        },
+        {
+          "placeId": "gordes-stay-candidate",
+          "order": 6,
+          "plannedTime": "18:00 이후",
+          "note": "Gordes 복귀·휴식·저녁."
         }
       ],
       "segments": [
         {
-          "from": "luberon-stay-candidate",
+          "from": "gordes-stay-candidate",
           "to": "roussillon-parking-des-ocres",
           "mode": "driving"
         },
@@ -918,94 +967,167 @@
         },
         {
           "from": "roussillon-sentier-des-ocres",
+          "to": "menerbes",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "menerbes",
           "to": "goult",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "goult",
+          "to": "abbaye-de-senanque",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "roussillon-sentier-des-ocres",
+          "to": "abbaye-de-senanque",
+          "mode": "driving",
+          "note": "Base route · Optional 마을을 모두 생략할 때"
+        },
+        {
+          "from": "abbaye-de-senanque",
+          "to": "gordes-stay-candidate",
           "mode": "driving"
         }
       ]
     },
     {
       "date": "2026-09-15",
-      "city": "Luberon",
-      "title": "Gordes 시장과 Village des Bories",
+      "city": "Gordes · Pays des Sorgues · Avignon",
+      "title": "Gordes 체크아웃 → 물의 마을 → Avignon 체크인",
       "center": [
-        43.89,
-        5.2
+        43.93,
+        5.02
       ],
-      "zoom": 12,
+      "zoom": 10,
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "luberon-stay-candidate",
+          "placeId": "gordes-stay-candidate",
           "order": 0,
-          "plannedTime": "08:15 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "09:00 체크아웃",
+          "note": "Gordes 2박 종료. 화요일 시장은 이동일의 Optional reference일 뿐 핵심 일정으로 넣지 않는다."
         },
         {
-          "placeId": "gordes",
+          "placeId": "lisle-sur-la-sorgue",
           "order": 1,
-          "plannedTime": "오전 시장",
-          "note": "시장주차 30분 확보. 주차장은 현장 안내 확인 — 사전 미지정."
+          "plannedTime": "09:30–11:30",
+          "note": "MUST · 화요일은 시장·antique day가 아니다. Sorgue 수로·물레방아·구시가지·카페 중심."
         },
         {
-          "placeId": "bories-parking",
-          "plannedTime": "이어서 도착",
-          "note": "유적 전용 주차장 — 진입로 좁음, 서행.",
-          "order": 2
+          "placeId": "fontaine-de-vaucluse",
+          "order": 2,
+          "plannedTime": "12:00–13:30 Optional",
+          "note": "OPTIONAL · 물과 절벽 산책. Avignon 체크인이 늦어지면 생략."
         },
         {
-          "placeId": "village-des-bories",
+          "placeId": "avignon-stay-candidate",
           "order": 3,
-          "plannedTime": "이어서",
-          "note": "돌집 유적 — 주차 후 도보 진입."
+          "plannedTime": "15:00–16:00 체크인 목표",
+          "note": "Avignon 1박차. 장보기·숙소정리만 하고 본격 시내 관광은 Day 22에 남긴다."
         }
       ],
       "segments": [
         {
-          "from": "luberon-stay-candidate",
-          "to": "gordes",
+          "from": "gordes-stay-candidate",
+          "to": "lisle-sur-la-sorgue",
           "mode": "driving"
         },
         {
-          "from": "gordes",
-          "to": "bories-parking",
-          "mode": "driving"
+          "from": "lisle-sur-la-sorgue",
+          "to": "fontaine-de-vaucluse",
+          "mode": "driving",
+          "optional": true
         },
         {
-          "from": "bories-parking",
-          "to": "village-des-bories",
-          "mode": "walking"
+          "from": "fontaine-de-vaucluse",
+          "to": "avignon-stay-candidate",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "lisle-sur-la-sorgue",
+          "to": "avignon-stay-candidate",
+          "mode": "driving",
+          "note": "Base route · Fontaine-de-Vaucluse를 생략할 때"
         }
       ]
     },
     {
       "date": "2026-09-16",
-      "city": "Luberon · Avignon",
-      "title": "농가 체크아웃 → Avignon 정착",
+      "city": "Avignon · Alpilles",
+      "title": "Saint-Rémy 수요시장 · Les Baux · Orange Optional",
       "center": [
-        43.93,
-        4.98
+        43.86,
+        4.82
       ],
-      "zoom": 11,
+      "zoom": 9,
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "luberon-stay-candidate",
+          "placeId": "avignon-stay-candidate",
           "order": 0,
-          "plannedTime": "10:30 체크아웃",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "08:00–08:15 출발",
+          "note": "시장 오전 시간을 확보해 Alpilles로 출발."
+        },
+        {
+          "placeId": "saint-remy-de-provence",
+          "order": 1,
+          "plannedTime": "09:00–13:30",
+          "note": "MUST · 수요일 08:00–13:00 시장 → 구시가지 → 점심. Saint-Paul-de-Mausole는 여유 시."
+        },
+        {
+          "placeId": "les-baux-de-provence",
+          "order": 2,
+          "plannedTime": "14:00–16:30",
+          "note": "MUST · 마을·Château·Alpilles 전망. Orange를 위해 체류시간을 줄이지 않는다."
+        },
+        {
+          "placeId": "orange",
+          "order": 3,
+          "plannedTime": "16:30 현장 판단 Optional",
+          "note": "OPTIONAL · 충분히 여유로울 때 Théâtre antique 단일 목적. 기본안은 Avignon 직행."
         },
         {
           "placeId": "avignon-stay-candidate",
-          "order": 1,
-          "plannedTime": "이동·주차·체크인 90분",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "order": 4,
+          "plannedTime": "저녁 복귀",
+          "note": "Orange를 생략하는 Base route를 우선한다."
         }
       ],
       "segments": [
         {
-          "from": "luberon-stay-candidate",
-          "to": "avignon-stay-candidate",
+          "from": "avignon-stay-candidate",
+          "to": "saint-remy-de-provence",
           "mode": "driving"
+        },
+        {
+          "from": "saint-remy-de-provence",
+          "to": "les-baux-de-provence",
+          "mode": "driving"
+        },
+        {
+          "from": "les-baux-de-provence",
+          "to": "orange",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "orange",
+          "to": "avignon-stay-candidate",
+          "mode": "driving",
+          "optional": true
+        },
+        {
+          "from": "les-baux-de-provence",
+          "to": "avignon-stay-candidate",
+          "mode": "driving",
+          "note": "Base route · Orange를 생략할 때"
         }
       ]
     },

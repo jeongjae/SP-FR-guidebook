@@ -5,13 +5,14 @@ source: source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.
 
 ## Avignon과 서부 Provence를 이렇게 본다
 
-Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에서는 로마 수로와 도시 유산, Arles에서는 로마와 중세의 흔적이 지금의 생활도시 안에 어떻게 남아 있는지 연결해서 본다.
+Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에서는 Saint-Rémy의 수요시장과 Les Baux의 석회암 성채를 경험한다. 이어지는 근교일에는 로마 수로와 도시 유산, Arles의 로마·중세 흔적을 연결한다.
 
 시내에서는 차 없이 성벽 안을 걷고, 하루는 Uzès와 Pont du Gard를 중심으로 근교를 이동하며, 하루는 TER로 Arles를 다녀온다. Avignon 자체는 Les Halles, Palais des Papes, Rocher des Doms와 Pont Saint-Bénézet를 한날에 연결한다.
 
 ### 이번 체류의 핵심
 
 - **교황도시 Avignon** — 성벽과 교황궁을 통해 중세 교황권이 만든 도시의 규모를 본다.
+- **Saint-Rémy와 Les Baux** — 수요일 시장과 Van Gogh, Alpilles의 석회암 성채를 한 흐름으로 본다.
 - **Uzès와 Pont du Gard** — 작은 지역도시와 로마 수도교를 한 흐름으로 연결한다.
 - **Arles** — 로마유적, 생트로핌과 구시가지가 현재 생활도시 안에 함께 남아 있는 모습을 걷는다.
 
@@ -23,7 +24,8 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 | 날짜 | 핵심 일정 |
 |---|---|
-| 9/16 수 | Luberon 체크아웃 · Avignon 체크인 · 성벽 안 가벼운 산책 |
+| 9/15 화 | L'Isle-sur-la-Sorgue · Avignon 체크인 · 생활권 정리 |
+| 9/16 수 | Saint-Rémy 수요시장 · Les Baux · [Orange Bonus] |
 | 9/17 목 | Uzès · Pont du Gard · Nîmes · 렌터카 반납 |
 | 9/18 금 | Arles 당일치기 (TER 이동) |
 | 9/19 토 | Les Halles · Palais des Papes · Rocher des Doms · Pont Saint-Bénézet |
@@ -33,9 +35,9 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, 근교에�
 
 ## 숙소와 생활권
 
-Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. 시내 일정과 Arles 당일치기에는 차를 쓰지 않고, 렌터카는 둘째 날(Day 20) Uzès·Pont du Gard 근교 일정 후 TGV역에서 최종 반납한다.
+Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 Alpilles와 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
 
-아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 4박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
+아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 5박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
 
 #### 아침 운동
 
@@ -80,6 +82,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ### 시장과 장보기
 
+- **Saint-Rémy 수요시장** — Day 19 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
 - **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
@@ -93,6 +96,6 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 #### 식사 원칙
 
-아침은 Les Halles 시장 식재료나 로컬 카페를 활용하고, 당일치기 일정에서는 이동 동선에 맞춰 가볍게 식사한다. 저녁은 숙소 인근 성벽 안에서 여유 있게 즐긴다.
+Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 시간을 쓴다. Orange를 실행하더라도 식사를 추가하지 않는다. 그 밖의 아침은 Les Halles 시장 식재료나 로컬 카페를 활용한다.
 
 ---

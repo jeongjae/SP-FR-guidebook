@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "verifiedAt": "2026-08-22",
+  "verifiedAt": "2026-08-23",
   "note": "구글맵 이름 검색어. 좌표가 아니라 이름으로 여는 것이 정확한 대상만 싣는다. 여기 없으면 좌표·주소로 폴백한다.",
   "places": {
     "abbaye-de-senanque": {
@@ -945,16 +945,30 @@
       "resolvedName": "Village des Bories",
       "evidence": "https://luberon.fr/",
       "verifiedAt": "2026-08-22"
+    },
+    "lacoste": {
+      "query": "Lacoste, Vaucluse, France",
+      "verdict": "FOUND",
+      "resolvedName": "Lacoste",
+      "evidence": "https://en.luberon-apt.fr/discover-the-luberon/the-pays-d-apt-luberon-city-and-villages/the-hilltop-villages/lacoste",
+      "verifiedAt": "2026-08-23"
+    },
+    "fontaine-de-vaucluse": {
+      "query": "Fontaine-de-Vaucluse, France",
+      "verdict": "FOUND",
+      "resolvedName": "Fontaine-de-Vaucluse",
+      "evidence": "https://www.provenceguide.com/",
+      "verifiedAt": "2026-08-23"
+    },
+    "orange": {
+      "query": "Théâtre antique, Orange, France",
+      "verdict": "FOUND",
+      "resolvedName": "Théâtre antique d'Orange",
+      "evidence": "https://www.theatre-antique.com/",
+      "verifiedAt": "2026-08-23"
     }
   },
   "hotels": {
-    "Domaine des Peyre (후보)": {
-      "query": "Domaine des Peyre, Robion",
-      "verdict": "FOUND",
-      "resolvedName": "Domaine des Peyre",
-      "evidence": "https://www.domainedespeyre.com/",
-      "verifiedAt": "2026-08-22"
-    },
     "Lagrange Aparthotel Lyon Lumière": {
       "query": "Lagrange Apart'Hotel Lyon Lumière, 81-85 Cours Albert Thomas, Lyon",
       "verdict": "FOUND",
@@ -975,6 +989,14 @@
       "resolvedName": "Casa Bascara",
       "evidence": "https://casabascara.cat/en/rooms/",
       "verifiedAt": "2026-08-22"
+    },
+    "Gordes 숙소 (후보 미정)": {
+      "query": "Gordes accommodation, France",
+      "verdict": "AMBIGUOUS",
+      "resolvedName": "Gordes accommodation search",
+      "anchorFor": "Gordes 숙소 (후보 미정)",
+      "evidence": "숙소 미확정 — Gordes 중심 검색 앵커",
+      "verifiedAt": "2026-08-23"
     }
   },
   "stops": {
@@ -1328,14 +1350,6 @@
       "evidence": "SNCF TER Marseille Saint-Charles to Aix",
       "verifiedAt": "2026-08-22"
     },
-    "day-18:farm-depart": {
-      "title": "농가 숙소 조기 출발 ➔ Gordes 이동",
-      "origin": "Domaine des Peyre, Robion",
-      "destination": "Gordes",
-      "travelMode": "driving",
-      "evidence": "Drive Robion to Gordes",
-      "verifiedAt": "2026-08-22"
-    },
     "day-20:avignon-depart": {
       "title": "Avignon 숙소 출발 ➔ Uzès 이동",
       "origin": "Avignon",
@@ -1462,6 +1476,14 @@
       "destination": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
       "travelMode": "driving",
       "evidence": "Paris taxi flat fare from Left Bank to CDG Terminal 1",
+      "verifiedAt": "2026-08-23"
+    },
+    "day-16:aix-checkout": {
+      "title": "Aix 체크아웃 ➔ Lourmarin 이동",
+      "origin": "Aix-en-Provence",
+      "destination": "Lourmarin",
+      "travelMode": "driving",
+      "evidence": "Day 16 base route",
       "verifiedAt": "2026-08-23"
     }
   },

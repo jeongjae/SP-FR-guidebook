@@ -102,13 +102,15 @@
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
-| `abbaye-de-senanque` | Abbaye de Sénanque | spot | 선택 | — | chapters/luberon/places.html | Abbaye de Sénanque | Sénanque Abbey |
-| `bonnieux` | Bonnieux | spot | 대체 | — | chapters/luberon/places.html | Bonnieux — 대체안 | Bonnieux |
-| `coustellet` | Coustellet 생산자 시장 | spot | 필수 | Coustellet | chapters/luberon/places.html | Coustellet 생산자 시장 | — |
+| `abbaye-de-senanque` | Abbaye de Sénanque | spot | 필수 | Abbaye de Sénanque | chapters/luberon/places.html | Abbaye de Sénanque | Sénanque Abbey |
+| `bonnieux` | Bonnieux | spot | 선택 | Bonnieux | chapters/luberon/places.html | Bonnieux | Bonnieux |
+| `coustellet` | Coustellet 생산자 시장 | spot | 선택 | Coustellet | chapters/luberon/places.html | Coustellet 생산자 시장 | — |
 | `gordes` | Gordes | spot | 필수 | Gordes | chapters/luberon/places.html | Gordes | Gordes |
-| `goult` | Goult | spot | 우선 추천 | Goult | chapters/luberon/places.html | Goult | Goult |
+| `goult` | Goult | spot | 선택 | Goult | chapters/luberon/places.html | Goult | Goult |
+| `lacoste` | Lacoste | spot | 선택 | Lacoste | chapters/luberon/places.html | Lacoste | Lacoste, Vaucluse |
 | `lourmarin` | Lourmarin | spot | 필수 | — | chapters/luberon/places.html | Lourmarin | Lourmarin |
-| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 선택 | L’Isle-sur-la-Sorgue | chapters/luberon/places.html | L’Isle-sur-la-Sorgue | L'Isle-sur-la-Sorgue |
+| `l-isle-sur-la-sorgue` | L’Isle-sur-la-Sorgue | spot | 필수 | L’Isle-sur-la-Sorgue | chapters/luberon/places.html | L’Isle-sur-la-Sorgue | L'Isle-sur-la-Sorgue |
+| `fontaine-de-vaucluse` | Fontaine-de-Vaucluse | spot | 선택 | Fontaine-de-Vaucluse | chapters/luberon/places.html | Fontaine-de-Vaucluse | Fontaine-de-Vaucluse |
 | `menerbes` | Ménerbes | spot | 선택 | Ménerbes | chapters/luberon/places.html | Ménerbes | Ménerbes |
 | `oppede-le-vieux` | Oppède-le-Vieux | spot | 선택 | — | chapters/luberon/places.html | Oppède-le-Vieux | Oppède |
 | `roussillon-sentier-des-ocres` | Roussillon · Sentier des Ocres | spot | 필수 | Roussillon | chapters/luberon/places.html | Roussillon · Sentier des Ocres | Roussillon, Vaucluse |
@@ -120,14 +122,15 @@
 |---|---|---|---|---|---|---|---|
 | `carrieres-des-lumieres` | Carrières des Lumières | spot | 대체 | — | chapters/avignon/places.html | Carrières des Lumières | fr:Carrières de Lumières |
 | `glanum` | Glanum | spot | 대체 | — | chapters/avignon/places.html | Glanum | Glanum |
-| `les-baux-de-provence` | Les Baux-de-Provence | spot | 대체 | Les Baux | chapters/avignon/places.html | Les Baux-de-Provence | Les Baux-de-Provence |
+| `les-baux-de-provence` | Les Baux-de-Provence | spot | 필수 | Les Baux | chapters/avignon/places.html | Les Baux-de-Provence | Les Baux-de-Provence |
 | `les-halles` | Les Halles | spot | 필수 | Les Halles | chapters/avignon/places.html | Les Halles | Les Halles d'Avignon |
 | `palais-des-papes` | Palais des Papes | spot | 필수 | Palais des Papes | chapters/avignon/places.html | Palais des Papes | Palais des Papes |
 | `pont-saint-benezet` | Pont Saint-Bénézet | spot | 필수 | Pont Saint-Bénézet | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet | Pont Saint-Bénézet |
 | `pont-du-gard` | Pont du Gard | spot | 필수 | Pont du Gard | chapters/avignon/places.html | Pont du Gard | Pont du Gard |
 | `rocher-des-doms` | Rocher des Doms | spot | 필수 | — | chapters/avignon/places.html | Rocher des Doms · Pont Saint-Bénézet | fr:Rocher des Doms |
 | `saint-paul-de-mausole` | Saint-Paul-de-Mausole | spot | 대체 | — | chapters/avignon/places.html | Saint-Paul-de-Mausole | Monastery of Saint-Paul de Mausole |
-| `saint-remy-de-provence` | Saint-Rémy-de-Provence | spot | 대체 | Saint-Rémy | chapters/avignon/places.html | Saint-Rémy-de-Provence | Saint-Rémy-de-Provence |
+| `orange` | Orange · Théâtre antique | spot | 선택 | Orange | chapters/avignon/places.html | Orange · Théâtre antique | Orange, Vaucluse |
+| `saint-remy-de-provence` | Saint-Rémy-de-Provence | spot | 필수 | Saint-Rémy | chapters/avignon/places.html | Saint-Rémy-de-Provence | Saint-Rémy-de-Provence |
 | `uzes` | Uzès Place aux Herbes·구시가지 | spot | 필수 | Uzès | chapters/avignon/places.html | Uzès Place aux Herbes·구시가지 | Uzès |
 | `arles` | Arles | spot | 필수 | Arles | chapters/avignon/places.html | Arles | Arles |
 | `arenes-d-arles` | Arènes d’Arles | spot | 필수 | Arènes d’Arles | chapters/avignon/places.html | Arènes d’Arles | Arles Amphitheatre |

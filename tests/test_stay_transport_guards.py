@@ -206,7 +206,7 @@ class StayTransportGuards(unittest.TestCase):
 
         expected_modes = {
             12: {"car", "walk"}, 13: {"walk"}, 14: {"car", "walk"},
-            15: {"train", "bus", "walk"}, 16: {"car"},
+            15: {"train", "bus", "walk"}, 16: {"car", "walk"},
         }
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
@@ -285,13 +285,15 @@ class StayTransportGuards(unittest.TestCase):
         for token in ("교통권은 사지 않는다", "ZOU! 917", "ZOU! 915·907",
                       "ZOU! 989 Pays d’Apt", "99xx 계열 통학 노선", "렌터카 업체 지원"):
             self.assertIn(token, rendered)
-        for day in range(16, 20):
+        for day in range(16, 19):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
-        expected_modes = {16: {"car"}, 17: {"car", "walk"},
-                          18: {"car", "walk"}, 19: {"car", "walk"}}
+        self.assertNotIn('href="../daily/day-19.html"', rendered)
+        expected_modes = {16: {"car", "walk"}, 17: {"car"},
+                          18: {"car", "walk"}}
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
+            self.assertEqual(expected, {leg["mode"] for leg in payload["legs"]})
     def test_fold_and_norm_identity_guards(self):
         """한글·라틴·악센트 정규화 시 빈 문자열 오매칭 방지 및 식별성 검증."""
         import unicodedata

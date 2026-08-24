@@ -7,9 +7,21 @@ kind: spot
 grade: "필수"
 priority: "MUST_SEE"
 content_tier: "TIER_A"
-summary: "보클뤼즈 고원 가장자리 백색 석회암 절벽 위에 층층이 솟아오른 뤼베롱 최고의 요새 마을. 마을 진입로에서 마주하는 압도적인 파노라마 전경과 11세기 중세 르네상스 성채."
+summary: "바위 언덕 위에 석회암 집들이 층층이 매달린 Luberon의 대표 이미지. 진입도로 파노라마와 해질 무렵의 돌빛이 핵심이다."
 source: source/CURRENT/30_Places/gordes.md
 ---
+
+## 현장 실행
+
+- **MUST · Day 16–18 숙박거점 · 첫날 1–1.5시간**
+- **WHY GO**: Luberon의 상징적인 석조마을을 2박하며 아침·저녁 관광객이 줄어든 시간에 경험한다.
+- **DO THIS**: D15/Cavaillon 방향 panoramic viewpoint → 체크인 → Place Genty Pantaly·Château → Église Saint-Firmin → 아래쪽 calade 골목 → 전망 테라스.
+- **EAT / DRINK**: 첫날 저녁 La Bastide de Pierres 우선, 조용한 계절식은 Le Mas Gordes 대안. 실제 좌석과 차량 접근을 확인한다.
+- **IF LATE**: Bonnieux·Lacoste를 빼고 체크인과 해질 무렵 Gordes를 유지한다.
+
+### Trip Layer
+
+9/13 체크인, 9/15 체크아웃의 2박 정본이다. 화요일 08:00–13:00 시장은 이동일과 충돌하므로 참고 정보일 뿐 Day 18 MUST가 아니다.
 
 ## 왜 가는가
 

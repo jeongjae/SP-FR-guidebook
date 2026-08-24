@@ -22,6 +22,10 @@
    "casa-marieta": {
     "disposition": "INTENTIONALLY_UNRESOLVED",
     "why": "일정에 잡히지 않은 추천 식당이라 그날의 stop 이 없고, stop 이 없으면 추천 메뉴의 출처도 없다. 추정해서 적지 않는다"
+   },
+   "fou-de-fafa-avignon": {
+    "disposition": "INTENTIONALLY_UNRESOLVED",
+    "why": "Day 19 재편 뒤 저녁 식당은 확정하지 않았다. Saint-Rémy 점심과 귀환시간을 우선하며 지역 추천 식당의 메뉴를 실행 일정에 추정 배정하지 않는다"
    }
   },
   "price": {
@@ -39,6 +43,10 @@
    "mercat-del-lleo": {
     "disposition": "INTENTIONALLY_UNRESOLVED",
     "why": "같은 이유. 장보기 후보로만 든다"
+   },
+   "fou-de-fafa-avignon": {
+    "disposition": "INTENTIONALLY_UNRESOLVED",
+    "why": "Day 19 저녁 고정 배정을 해제하고 Avignon 지역 추천 식당으로만 보존한다. 실제 예약이 생길 때 방문일을 다시 연결한다"
    }
   },
   "photo": {

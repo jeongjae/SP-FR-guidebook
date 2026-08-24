@@ -2,172 +2,195 @@
   "schemaVersion": "1.0",
   "day": 16,
   "date": "2026-09-13",
-  "city": "Luberon",
-  "title": "Aix→Lourmarin→농가",
+  "city": "Aix · 남부 Luberon · Gordes",
+  "title": "Aix 체크아웃 → Lourmarin → Gordes 1박차",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "startTime": "08:00",
-  "endTime": "20:30",
-  "totalDuration": "12시간 30분",
-  "totalDistance": "약 67km · 차량 이동",
+  "dayType": "transfer",
+  "startTime": "08:30",
+  "endTime": "20:45",
+  "totalDuration": "12시간 15분",
+  "totalDistance": "Base 약 64km · Extended 약 69km",
   "fatigue": "3",
   "hotel": {
-    "name": "Domaine des Peyre (후보)",
-    "lat": 43.87088,
-    "lng": 5.12202,
+    "name": "Gordes 숙소 (후보 미정)",
+    "lat": 43.91181,
+    "lng": 5.20043,
     "status": "candidate"
   },
   "stops": [
     {
       "id": "aix-checkout",
       "order": 1,
-      "start": "08:00",
-      "end": "08:45",
-      "name": "Aix 숙소 체크아웃 & 차량 적재",
+      "start": "08:30",
+      "end": "09:00",
+      "name": "MUST · Aix 숙소 체크아웃",
       "category": "hotel",
       "lat": 43.5283,
       "lng": 5.4497,
-      "summary": "숙소 체크아웃 및 렌터카 수하물 적재. 트렁크 짐 노출 방지 가림막 장착",
+      "summary": "08:30~09:00 출발. 수하물을 트렁크에 완전히 가리고 D943을 따라 Lourmarin으로 이동한다.",
       "menu": null,
-      "reservation": null,
+      "reservation": "Aix 체크아웃 시각과 Gordes 숙소 체크인 가능 시각 재확인",
       "optional": false,
       "place_ref": null
     },
     {
       "id": "lourmarin",
       "order": 2,
-      "start": "09:30",
-      "end": "11:30",
-      "name": "Lourmarin 마을 & 르네상스 샤토 외관",
+      "start": "10:00",
+      "end": "12:15",
+      "name": "MUST · Lourmarin 마을 산책",
       "category": "sight",
       "lat": 43.7636,
       "lng": 5.3628,
-      "summary": "남부 뤼베롱 관문 마을. Parking du Rayol 주차 후 카뮈의 흔적, 플라타너스 카페 거리, 르네상스 고성 외관 산책 (2시간)",
-      "menu": "에스프레소, 크루아상",
-      "reservation": "주차: Parking du Rayol (Primary) / Parking du Château (Backup)",
+      "summary": "Parking du Rayol에서 시작해 Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Temple 주변 골목을 걷는다. 마을 분위기 중심이면 1.5시간, 샤토 내부 포함 시 2~2.5시간.",
+      "menu": "카페·갤러리 구역에서 에스프레소 또는 가벼운 간식",
+      "reservation": "주차: Parking du Rayol 우선 · Château 내부 관람은 현장 선택",
       "optional": false,
       "place_ref": "lourmarin"
     },
     {
-      "id": "coustellet",
+      "id": "lourmarin-lunch",
       "order": 3,
-      "start": "12:00",
+      "start": "12:15",
       "end": "13:30",
-      "name": "Marché Paysan de Coustellet & 장보기",
-      "category": "shopping",
-      "lat": 43.8686,
-      "lng": 5.1436,
-      "summary": "일요 파머스 마켓(08:00~13:00 운영, 12시 마감 전 신선 식재료 확보). 3박 농가 체류용 식재료(치즈, 멜론, 무화과, 바게트, 생수, 와인) 구매",
-      "menu": "시장 바게트 샌드위치, 프로방스 멜론, 염소 치즈",
-      "reservation": "주차: Parking de la Gare / Marché (무료 주차)",
+      "name": "MUST · Lourmarin 점심",
+      "category": "food",
+      "lat": 43.7636,
+      "lng": 5.3628,
+      "summary": "Day 16의 긴 식사는 이곳에 둔다. La Récréation이 우선 후보이며 1~1.25시간 안에 마치고 Optional 마을에서는 식사를 추가하지 않는다.",
+      "menu": "제철 프로방스 채소, chèvre, tapenade · 운전자는 와인 금지",
+      "reservation": "La Récréation 9/13 예약 가능 여부 재확인 · 2026 성수기 점심 12:00–14:00",
+      "executionStatuses": [
+        {"type": "book", "label": "BOOK", "detail": "La Récréation 실제 9/13 점심 좌석을 출발 전에 확인한다."}
+      ],
       "optional": false,
-      "place_ref": "coustellet"
+      "place_ref": null
     },
     {
-      "id": "goult",
+      "id": "bonnieux",
       "order": 4,
-      "start": "13:45",
+      "start": "14:00",
       "end": "15:00",
-      "name": "Goult 체크인 전 완충 & 카페",
+      "name": "OPTIONAL · Bonnieux",
       "category": "sight",
-      "lat": 43.8631,
-      "lng": 5.2417,
-      "summary": "쿠스텔레에서 차로 10분. Café de la Poste 테라스 커피 및 예루살렘 풍차(Moulin de Jérusalem) 가벼운 산책. 피로 시 생략 후 조기 체크인 가능",
-      "menu": "테라스 에스프레소, 타르트",
-      "reservation": "주차: Place de la Libération",
+      "lat": 43.8236124,
+      "lng": 5.3078261,
+      "summary": "하부 주차 → 중심 광장 → 계단과 골목 → Vieille Église 전망 → 하산. Gordes 체크인 목표에 여유가 있을 때만 60분 산책한다.",
+      "menu": "espresso·gelato 정도만; 긴 식사 금지",
+      "reservation": "하부 공영주차 후 도보 접근",
+      "executionStatuses": [
+        {"type": "optional", "detail": "16:00~17:00 Gordes 체크인을 위협하면 생략한다."}
+      ],
       "optional": true,
-      "place_ref": "goult"
+      "place_ref": "bonnieux"
     },
     {
-      "id": "farm-checkin",
+      "id": "lacoste",
       "order": 5,
-      "start": "15:30",
-      "end": "20:30",
-      "name": "Domaine des Peyre 농가 체크인 & 테라스 첫 저녁",
+      "start": "15:15",
+      "end": "16:00",
+      "name": "OPTIONAL · Lacoste",
+      "category": "sight",
+      "lat": 43.8318965,
+      "lng": 5.2728505,
+      "summary": "하부 주차 → Rue Basse → Beffroi/Campanile → Portail de la Garde → Château 방향 전망 후 하산. Day 16에서 가장 먼저 생략한다.",
+      "menu": "물·커피 stop만 허용",
+      "reservation": "구시가지 밖 하부 주차 후 도보 접근",
+      "executionStatuses": [
+        {"type": "optional", "detail": "Lourmarin이 늦어지면 가장 먼저 삭제한다."}
+      ],
+      "optional": true,
+      "place_ref": "lacoste"
+    },
+    {
+      "id": "gordes-checkin",
+      "order": 6,
+      "start": "16:30",
+      "end": "17:00",
+      "name": "MUST · Gordes 숙소 체크인",
       "category": "hotel",
-      "lat": 43.87088,
-      "lng": 5.12202,
-      "summary": "농가 숙소 체크인 (15:30~16:30 권장). 좁은 진입 농로 서행, 짐 정리, 수영장/정원 휴식, Coustellet 시장 식재료로 테라스 첫 저녁 식사",
-      "menu": "프로방스 샐러드, 바게트, 로컬 치즈 & 뤼베롱 와인",
-      "reservation": "숙소 확정/후보 (Domaine des Peyre, Robion 인근)",
+      "lat": 43.91181,
+      "lng": 5.20043,
+      "summary": "16:00~17:00 체크인을 목표로 짐을 내리고 주차·야간 출입 방법을 확인한다. Gordes 1박차.",
+      "menu": null,
+      "reservation": "Gordes 9/13~9/15 2박 숙소 확정 및 체크인 창 확인 필요",
+      "executionStatuses": [
+        {"type": "book", "label": "BOOK", "detail": "Gordes 2박 숙소는 아직 후보 미정이다."}
+      ],
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "gordes-village",
+      "order": 7,
+      "start": "17:15",
+      "end": "19:00",
+      "name": "MUST · Gordes 전망과 구시가지",
+      "category": "sight",
+      "lat": 43.9114,
+      "lng": 5.2003,
+      "summary": "D15/Cavaillon 방향 대표 파노라마 → Place Genty Pantaly와 Château → Église Saint-Firmin → 아래쪽 calade 골목 → 전망 테라스. 해질 무렵 석회암 빛을 본다.",
+      "menu": null,
+      "reservation": "대표 전망대 정차 후 숙소 또는 외곽 주차장에서 도보 접근",
+      "optional": false,
+      "place_ref": "gordes"
+    },
+    {
+      "id": "gordes-dinner",
+      "order": 8,
+      "start": "19:15",
+      "end": "20:45",
+      "name": "Gordes 숙소 귀환 · 저녁 · 1박차",
+      "category": "hotel",
+      "lat": 43.9114,
+      "lng": 5.2003,
+      "summary": "La Bastide de Pierres를 현실적인 1순위로 두고, 조용한 계절식을 원하면 Le Mas Gordes를 확인한 뒤 숙소로 귀환한다.",
+      "menu": "La Bastide de Pierres 이탈리아식 trattoria · 또는 Le Mas Gordes 계절식",
+      "reservation": "La Bastide de Pierres 2026년 4/1–10/25 매일 저녁 19:00–21:45 · 실제 좌석 재확인",
+      "executionStatuses": [
+        {"type": "book", "label": "BOOK", "detail": "첫날 저녁 좌석과 차량 접근을 확인한다."}
+      ],
       "optional": false,
       "place_ref": null
     }
   ],
   "legs": [
-    {
-      "from": "aix-checkout",
-      "to": "lourmarin",
-      "mode": "car",
-      "duration": "약 40분",
-      "distance": "36.8km",
-      "roadType": "국도 D543 ➔ 지방도 D943 (뤼베롱 산지 진입)",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "lourmarin",
-      "to": "coustellet",
-      "mode": "car",
-      "duration": "약 30분",
-      "distance": "28.0km",
-      "roadType": "지방도 D943 ➔ 간선국도 D900 (쿠스텔레 평지)",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "coustellet",
-      "to": "goult",
-      "mode": "car",
-      "duration": "약 12분",
-      "distance": "8.5km",
-      "roadType": "간선국도 D900 ➔ D218 언덕 진입로",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "goult",
-      "to": "farm-checkin",
-      "mode": "car",
-      "duration": "약 13분",
-      "distance": "11.0km",
-      "roadType": "지방도 D900 ➔ 좁은 농로(Chemin des Peyres)",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    }
+    {"from": "aix-checkout", "to": "lourmarin", "mode": "car", "duration": "약 40분", "distance": "36km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "lourmarin", "to": "lourmarin-lunch", "mode": "walk", "duration": "5분", "distance": "0.3km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "lourmarin-lunch", "to": "bonnieux", "mode": "car", "duration": "약 15분", "distance": "12km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "bonnieux", "to": "lacoste", "mode": "car", "duration": "약 10분", "distance": "7km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "lacoste", "to": "gordes-checkin", "mode": "car", "duration": "약 20분", "distance": "14km", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "gordes-checkin", "to": "gordes-village", "mode": "walk", "duration": "10~20분", "distance": "숙소 위치에 따라 확인", "line": null, "geometryStatus": "coordinate-line"},
+    {"from": "gordes-village", "to": "gordes-dinner", "mode": "walk", "duration": "5~15분", "distance": "식당 선택에 따라 확인", "line": null, "geometryStatus": "coordinate-line"}
   ],
   "transport": [
-    "렌터카 (Aix ➔ Lourmarin ➔ Coustellet ➔ Goult ➔ Domaine des Peyre)",
-    "차량 내 수하물 완전 은폐 (가림막 장착, 짐 노출 금지)"
+    "Base: Aix → Lourmarin → Gordes (약 64km·순수 운전 약 1시간 10분)",
+    "Extended: Aix → Lourmarin → Bonnieux → Lacoste → Gordes (약 69km·순수 운전 약 1시간 20분)",
+    "차량 내 수하물 완전 은폐 · 마을 외곽 주차 후 도보"
   ],
   "food": [
-    "Coustellet 시장 점심",
-    "농가 첫 저녁 (테라스)"
+    "점심: Lourmarin La Récréation 우선",
+    "저녁: Gordes La Bastide de Pierres 또는 Le Mas Gordes",
+    "Optional 마을에서는 긴 식사 금지"
   ],
   "highlights": [
-    "Lourmarin 스케치 행사",
-    "일요시장 13시 마감",
-    "Cucuron·Goult 추가 금지"
+    "THEME · 남부 Luberon의 우아한 마을에서 Gordes 석조 풍경으로",
+    "MUST · Lourmarin · Gordes 체크인과 마을",
+    "OPTIONAL · Bonnieux → Lacoste",
+    "IF LATE · Lacoste부터, 그래도 늦으면 Bonnieux 삭제"
   ],
-  "backup": "1. Aix 출발 지연 시 Lourmarin 체류를 60분으로 압축하고 Coustellet 시장(13:00 마감) 정시 도착 우선\n2. 피로 누적 시 Goult 완충 스톱을 생략하고 15:30 농가 숙소로 직행\n3. 악천후 시 Lourmarin 실내 갤러리/카페 중심 관람 후 숙소 이동",
-  "map": {
-    "zoom": 10,
-    "center": [
-      43.71,
-      5.26
-    ],
-    "routeCache": "routes/day-16-driving-osrm.json"
-  },
+  "backup": "비·피로·주차 지연 시 Lourmarin의 샤토 내부관람을 생략하고 마을+점심만 유지한다. Lacoste를 먼저 삭제하고, 그래도 16:00~17:00 Gordes 체크인이 위험하면 Bonnieux도 삭제한다. 최소 실행안은 Aix 체크아웃 → Lourmarin 산책·점심 → Gordes 체크인·저녁 산책이다.",
+  "map": {"zoom": 10, "center": [43.78, 5.29], "routeCache": "routes/day-16-driving-osrm.json"},
   "needsReview": [
-    "Lourmarin 주차 시 트렁크 짐 노출 방지 수칙 준수",
-    "Coustellet 일요 시장 13:00 마감 전 식재료 구매 완료",
-    "농가 숙소 진입 농로 및 체크인 시각 호스트 연락 확인"
+    "Gordes 2박 숙소와 체크인 가능 시각 확정",
+    "La Récréation 9/13 점심·Gordes 저녁 실제 예약 가능 여부",
+    "당일 교통과 주차 상황에 따라 Optional 두 곳 현장 삭제"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-16",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-16",
     "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md#Day-16",
-    "source/ASSETS/75_Execution_Maps/Luberon_Execution_Map_v0.2.kml",
-    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml (Lourmarin)"
+    "https://www.provenceguide.com/patrimoines-culturels/luberon/lourmarin/provence-2997889-1.html",
+    "https://www.provenceguide.com/restaurants/luberon/la-recreation/provence-2997991-1.html"
   ]
 }
