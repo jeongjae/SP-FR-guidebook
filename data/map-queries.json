@@ -991,6 +991,13 @@
       "evidence": "https://www.barcelo.com/en-us/occidental-barcelona-1929/",
       "verifiedAt": "2026-08-22"
     },
+    "Palais ALZIRA · 12 Rue Verdi": {
+      "query": "12 Rue Verdi, 06000 Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Palais ALZIRA, 12 Rue Verdi, Nice",
+      "evidence": "Confirmed Airbnb lodging address",
+      "verifiedAt": "2026-08-24"
+    },
     "바스카라의 B&B": {
       "query": "Casa Bascara, Bàscara",
       "verdict": "FOUND",
@@ -1000,6 +1007,20 @@
     }
   },
   "stops": {
+    "day-05:collioure": {
+      "query": "Parking du Château d'eau, Collioure",
+      "verdict": "FOUND",
+      "resolvedName": "Parking du Château d'eau, Collioure",
+      "evidence": "Collioure municipal parking guidance for market days",
+      "verifiedAt": "2026-08-24"
+    },
+    "day-07:nice-checkin": {
+      "query": "12 Rue Verdi, 06000 Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Palais ALZIRA, 12 Rue Verdi, Nice",
+      "evidence": "Confirmed Airbnb lodging address",
+      "verifiedAt": "2026-08-24"
+    },
     "avinguda-gaudi": {
       "query": "Avinguda de Gaudí, Barcelona",
       "verdict": "FOUND",
@@ -1029,11 +1050,11 @@
       "verifiedAt": "2026-08-22"
     },
     "cadaques": {
-      "query": "Cadaqués, Girona",
+      "query": "Parking Saba Cadaqués",
       "verdict": "FOUND",
-      "resolvedName": "Cadaqués",
-      "evidence": "https://www.visitcadaques.org/",
-      "verifiedAt": "2026-08-22"
+      "resolvedName": "Parking Saba Cadaqués",
+      "evidence": "Cadaqués official tourist entrance parking",
+      "verifiedAt": "2026-08-24"
     },
     "tossa": {
       "query": "Parking Avinguda del Pelegrí, Tossa de Mar",

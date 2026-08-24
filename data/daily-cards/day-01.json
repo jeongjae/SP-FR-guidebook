@@ -6,6 +6,7 @@
   "title": "야간 도착과 체크인",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "19:10",
   "endTime": "23:00",
   "totalDuration": "3시간 50분",
@@ -30,8 +31,25 @@
       "lng": 2.079047,
       "summary": "19:10 착륙 후 입국심사·수하물 수령. T1 도착층(Floor 0) 외부 Aerobús A1 승강장으로 이동하여 Plaça d'Espanya행 탑승 (25~35분 소요, 1인 €7.75 모바일 QR/비접촉 카드). 하차 후 Carrer de la Creu Coberta 방향 평지 도보 200m(약 3~5분) 숙소 진입",
       "menu": null,
-      "reservation": "예약완료 OZ511 ([CONFIRMED]) — ICN T2 11:50 출발",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "OZ511 · ICN T2 11:50 → BCN T1 19:10 · 무료 수하물 2PC"
+        },
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "Aerobús A1 · T1 Arrivals (Floor 0) → Plaça Espanya · 24h 운행 · 편도 €7.75"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "출발 전 Aerobús A1 모바일 QR/비접촉 카드 및 T1 승강장 표지 확인"
+        }
+      ],
       "place_ref": null
     },
     {
@@ -43,10 +61,17 @@
       "category": "hotel",
       "lat": 41.375274,
       "lng": 2.147662,
-      "summary": "체크인 완료 및 샤워. 여권 사본 및 익일 사그라다 QR 확인",
+      "summary": "체크인 및 샤워. 24시간 리셉션 운영. 익일 사그라다 QR 확인",
       "menu": null,
-      "reservation": "예약완료 Occidental Barcelona 1929 — 체크인 8/29 14:00~",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CHECK-IN",
+          "detail": "체크인 8/29 14:00~ · 체크아웃 9/1 12:00 · 24시간 reception"
+        }
+      ],
       "place_ref": null
     },
     {
@@ -62,6 +87,7 @@
       "menu": null,
       "reservation": null,
       "optional": false,
+      "executionStatuses": [],
       "place_ref": null
     }
   ],
@@ -100,7 +126,7 @@
     "야간 도착 — 체크인·취침만",
     "장보기·산책은 Day 2 아침으로"
   ],
-  "backup": "항공 지연 시에도 체크인 창(00:00) 안이면 문제없음 — 일정 없음",
+  "backup": "항공 지연 시 관광 일정은 없음. Aerobús A1은 24시간 운행. 호텔은 24시간 reception이지만 심야 도착 시 예약 유지/late arrival 조건은 예약서 기준으로 확인.",
   "map": {
     "zoom": 12,
     "center": [

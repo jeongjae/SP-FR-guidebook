@@ -6,6 +6,7 @@
   "title": "국경의 시장과 해안마을 순환",
   "sourceStatus": "candidate-latest-needs-review",
   "prototypeType": "car-loop",
+  "dayType": "driving",
   "startTime": "07:45",
   "endTime": "19:00",
   "totalDuration": "11시간 15분",
@@ -28,10 +29,17 @@
       "category": "hotel",
       "lat": 42.16036,
       "lng": 2.90964,
-      "summary": "차량·국경운전·해안 주차를 확인하고 출발",
+      "summary": "07:45 출발. Day 4 렌터카 인수 시 프랑스 국경운행 신고 완료 여부 확인 후 출발",
       "menu": "물·운전 간식",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "Spain→France cross-border 신고 확인 필수"
+        }
+      ]
     },
     {
       "id": "collioure",
@@ -42,10 +50,23 @@
       "category": "sight",
       "lat": 42.52505,
       "lng": 3.08322,
-      "summary": "수요시장→항구→교회→왕궁 외관",
+      "summary": "수요 전통시장(오전)→항구→교회→왕궁 외관. 수요일 시장으로 중심 주차 혼잡 극심하므로 Parking du Château d'eau에 주차 후 도보 진입",
       "menu": "멸치·생선구이·escalivade",
-      "reservation": "오전 10시 전 주차",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "수요시장으로 10시 이후 중심주차 포화 · Parking du Château d'eau 우선 주차"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "만차 시 백업 주차장 Parking Pla des Fourques 이용"
+        }
+      ],
+      "executionNote": "중심주차 탐색 금지 · Parking du Château d'eau를 길찾기 목적지로 사용",
       "place_ref": "collioure"
     },
     {
@@ -57,10 +78,11 @@
       "category": "food",
       "lat": 42.526,
       "lng": 3.0823,
-      "summary": "시장 조달 또는 항구권 생선 식당",
+      "summary": "시장 조달 또는 항구권 생선 식당 자율 식사",
       "menu": "anchois marinés · 생선구이",
-      "reservation": "Le Jardin 선택 시 사전예약",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [],
       "place_ref": "collioure"
     },
     {
@@ -72,10 +94,18 @@
       "category": "sight",
       "lat": 42.2886,
       "lng": 3.2584,
-      "summary": "해안 산책로→구시가지→Santa Maria→카페",
+      "summary": "해안 산책로→구시가지→Santa Maria→카페. 마을 입구 유료 Parking Saba Cadaqués에 주차 후 도보 진입 (구시가지 진입 금지)",
       "menu": "카페 1회",
-      "reservation": "Saba 주차 재확인",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "구시가지 골목 진입 금지 · 마을 입구 Saba 유료주차장 주차 후 도보"
+        }
+      ],
+      "executionNote": "마을 입구 Parking Saba Cadaqués를 길찾기 목적지로 사용",
       "place_ref": null
     },
     {
@@ -87,10 +117,11 @@
       "category": "hotel",
       "lat": 42.16036,
       "lng": 2.90964,
-      "summary": "17:30 출발을 지키고 숙소에서 간단한 저녁",
+      "summary": "17:30 Cadaqués 출발을 지키고 숙소에서 간단한 저녁",
       "menu": "숙소식",
       "reservation": null,
-      "optional": false
+      "optional": false,
+      "executionStatuses": []
     }
   ],
   "legs": [
@@ -145,7 +176,7 @@
     "해안 쪽 우회",
     "17:30 Cadaqués 출발 고정"
   ],
-  "backup": "지연 시 Cadaqués 해안 산책·구시가지를 줄이고 17:30 출발 유지",
+  "backup": "Collioure 주차 지연이 크면 시장+항구 중심으로 압축하고 왕궁 외관 체류를 줄인다. Cadaqués 17:30 출발은 고정. 지연 시 Cadaqués 해안 산책·구시가지를 줄이고 17:30 출발 유지.",
   "map": {
     "zoom": 10,
     "center": [
