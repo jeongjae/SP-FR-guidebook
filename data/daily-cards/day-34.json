@@ -54,15 +54,37 @@
       "order": 3,
       "start": "12:30",
       "end": "14:00",
-      "name": "베르사유 대운하 인근 점심 식사",
+      "name": "La Flottille 대운하 점심",
       "category": "food",
       "lat": 48.81,
       "lng": 2.11,
-      "summary": "대운하(Grand Canal) 입구 레스토랑 La Flottille에서 점심 식사 및 휴식",
-      "menu": "크레프, 키슈 로렌, 시드르(사과주)",
-      "reservation": "현장 선택",
+      "summary": "궁전 본관 출구에서 정원 중앙축(라토나 → 왕의 길 → 아폴로 분수)을 20~25분 걸어 대운하 머리에 닿는다. 90분 슬롯이지만 실질 착석은 65분이라 코스가 아니라 단품+디저트로 간다",
+      "menu": "Steak au poivre · Escargots de Bourgogne (Label Rouge) · Tarte Tatin",
+      "reservation": null,
       "optional": false,
-      "place_ref": "versailles"
+      "place_ref": "la-flottille",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "420석인데도 성수기 점심은 온라인 만석이 뜬다. Zenchef 또는 TheFork로 12:45~13:00 슬롯 사전 예약"
+        },
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "미식 목적지가 아니라 위치로 가는 곳이다. 서비스 편차와 미지근한 음식 지적이 반복된다(TripAdvisor 3.3 / TheFork 8.5)"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "10/1은 Jardins Musicaux 운영일이라 정원이 유료다. Passport 티켓이 있어야 대운하까지 걸어 나갈 수 있다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     },
     {
       "id": "versailles-gardens",
@@ -170,7 +192,7 @@
     "Coulée verte는 Bastille에서 진입",
     "저녁 무예약"
   ],
-  "backup": "보행 피로 시 트리아농 이동 시 미니트레인(Petit Train)을 이용하고 왕비의 촌락은 외관만 보고 16:30 조기 복귀",
+  "backup": "La Petite Venise(도보 2~3분, 서비스 평가가 더 안정적이나 1인 평균 €46) 또는 La Guinguette·테이크아웃 키오스크(예약 불필요, 30~40분에 끝나 남는 시간을 대운하 수변 산책에 쓸 수 있다). 트리아농 복귀는 프티 트랭 편도 €5\n\n보행 피로 시 트리아농 이동 시 미니트레인(Petit Train)을 이용하고 왕비의 촌락은 외관만 보고 16:30 조기 복귀",
   "map": {
     "zoom": 14,
     "center": [

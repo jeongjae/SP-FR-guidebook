@@ -69,15 +69,32 @@
       "order": 4,
       "start": "19:45",
       "end": "21:00",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "Sawadee 태국 저녁 (15구)",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 1+8호선으로 15구 귀환 후 저녁 식사",
-      "menu": null,
+      "summary": "루브르 4시간 관람과 센 강변 일몰 산책 뒤 숙소 도보 4분. 프렌치가 일주일 넘게 이어진 시점에 얼큰한 국물을 넣는다",
+      "menu": "Soupe de crevettes à la citronnelle 똠얌 €8 · 바나나잎 코코넛 대구 €16 · Mangue fraîche au riz gluant €12",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "sawadee-paris",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "전화 예약만 받는다 — +33 1 45 77 68 90"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "일요일·월요일 영업이 출처마다 정반대다. 10/2은 금요일이라 문제없지만 날짜를 옮길 때는 전화로 확인"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     }
   ],
   "legs": [
@@ -115,7 +132,7 @@
   ],
   "food": [
     "시장식 또는 숙소 점심",
-    "숙소 저녁"
+    "Sawadee 태국 저녁 (도보 4분·전화 예약)"
   ],
   "highlights": [
     "알람 끄고 수면 회수",

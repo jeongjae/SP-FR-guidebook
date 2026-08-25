@@ -5960,6 +5960,636 @@
           "blocked_reason": "큐레이션 동선이라 공식 운영정보 페이지 없음"
         }
       }
+    },
+    "au-petit-riche": {
+      "displayName": "Au Petit Riche",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "매일 12:00–14:00 · 19:00–22:30",
+          "confidence": "official",
+          "source": "https://www.restaurant-aupetitriche.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (주 7일 영업)",
+          "confidence": "official",
+          "source": "https://www.restaurant-aupetitriche.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "전화 +33 1 47 70 68 68 또는 공식 홈페이지 온라인 예약",
+          "confidence": "official",
+          "source": "https://www.restaurant-aupetitriche.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "점심 메뉴 €32 · 단품 메인 €20~€27",
+          "confidence": "secondary",
+          "source": "https://www.restaurant-aupetitriche.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60~75분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "cafe-varenne": {
+      "displayName": "Café Varenne",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "월–금 07:30–23:00 · 토 09:00–23:00 (논스톱 영업)",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "매주 일요일",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "전화 +33 1 45 48 62 72. 워크인 대기도 통상 5~10분",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "1인 €20~€30 (대형 샐러드 €23~€25 · 스테이크 약 €28)",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "45~60분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "chez-savy": {
+      "displayName": "Chez Savy",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "월–금 12:00–14:30 · 19:00–23:00",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "매주 토요일·일요일",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "전화 +33 1 47 23 46 98. 패션위크 주간이면 2~3주 전 예약",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "앙트레 €8.50~€22 · 메인 €22~€32 · 디저트 €10~€13 (1인 평균 €45)",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60~75분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "la-flottille": {
+      "displayName": "La Flottille",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "4~10월 매일 09:00–18:30 (조식 09:00–11:00 · 점심 11:45~) · 11~3월 09:00–17:30",
+          "confidence": "official",
+          "source": "https://www.laflottille.fr/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴 (공원은 궁전 휴관일인 월요일에도 개방)",
+          "confidence": "official",
+          "source": "https://www.laflottille.fr/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "Zenchef 또는 TheFork 온라인, 전화 +33 1 39 51 41 58. **성수기 점심 워크인은 위험**",
+          "confidence": "official",
+          "source": "https://www.laflottille.fr/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "알라카르트 €13.50~€32.50 · 1인 €30~€45 (음료 포함)",
+          "confidence": "secondary",
+          "source": "https://www.laflottille.fr/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "65~90분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "aux-crus-de-bourgogne": {
+      "displayName": "Aux Crus de Bourgogne",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "매일 12:00–14:30 · 19:30–22:30",
+          "confidence": "official",
+          "source": "https://auxcrusdebourgogne.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://auxcrusdebourgogne.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "전화 +33 1 42 33 48 24. 개막일 혼잡을 감안해 13:00 예약 필수",
+          "confidence": "official",
+          "source": "https://auxcrusdebourgogne.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "평일 점심 포뮬 €28 (2코스) · 앙트레 €9~€25 · 메인 €14~€36",
+          "confidence": "secondary",
+          "source": "https://auxcrusdebourgogne.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60~75분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "les-marches": {
+      "displayName": "Les Marches",
+      "region": "paris",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "매일 12:00–14:30 · 19:30–22:30",
+          "confidence": "official",
+          "source": "https://www.lesmarches-restaurant.com/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://www.lesmarches-restaurant.com/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "Zenchef 온라인 또는 전화 +33 1 47 23 52 80",
+          "confidence": "official",
+          "source": "https://www.lesmarches-restaurant.com/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "점심 정식 €18~€20 (오늘의 전채+메인) · 아라카르트 1인 €22~€35",
+          "confidence": "secondary",
+          "source": "https://www.lesmarches-restaurant.com/en/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60~75분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "stephane-martin": {
+      "displayName": "Stéphane Martin",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "화–토 12:00–14:00 · 19:30–22:00 (금·토 22:30까지)",
+          "confidence": "official",
+          "source": "https://www.stephanemartin.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "매주 일요일·월요일",
+          "confidence": "official",
+          "source": "https://www.stephanemartin.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 홈페이지 온라인 또는 TheFork. **예약 필수**",
+          "confidence": "official",
+          "source": "https://www.stephanemartin.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "Menu du Marché €32 · 아라카르트 3코스 약 €50 · 와인 포함 1인 €50~€65",
+          "confidence": "secondary",
+          "source": "https://www.stephanemartin.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "90~120분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "le-volant-basque": {
+      "displayName": "Le Volant Basque",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월 18:45–22:45 (저녁만) · 화–토 12:00–14:15 · 18:45–22:45",
+          "confidence": "official",
+          "source": "https://levolantbasque.fr/en",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "매주 일요일 · 월요일 점심",
+          "confidence": "official",
+          "source": "https://levolantbasque.fr/en",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 온라인 예약 또는 전화 +33 1 45 75 27 67. 월요일은 특히 권장",
+          "confidence": "official",
+          "source": "https://levolantbasque.fr/en",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "세트 €29 (2코스) / €36 (3코스) · 전채 €9~€16 · 메인 €23~€32",
+          "confidence": "secondary",
+          "source": "https://levolantbasque.fr/en",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "90분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "guylas": {
+      "displayName": "Guylas",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "매일 10:00–23:30 (브레이크 없음)",
+          "confidence": "official",
+          "source": "https://guylasparis.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://guylasparis.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "전화 +33 1 45 77 57 64 또는 TheFork. 금요일 밤은 라이브 음악으로 붐빔",
+          "confidence": "official",
+          "source": "https://guylasparis.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "메인 €17~€18 · 1인 €28~€38 (음료 포함)",
+          "confidence": "secondary",
+          "source": "https://guylasparis.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "75~90분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "sawadee-paris": {
+      "displayName": "Sawadee",
+      "region": "paris",
+      "grade": "optional",
+      "facts": {
+        "hours": {
+          "value": "수–일 12:00–14:30 · 19:00–22:30 · 화 저녁만 19:00–22:30",
+          "confidence": "official",
+          "source": "https://www.sawadeethai1988.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "매주 월요일 (일요일 영업 여부는 출처가 갈린다 — 전화 확인 필요)",
+          "confidence": "official",
+          "source": "https://www.sawadeethai1988.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "**전화 예약만 가능** +33 1 45 77 68 90 (공식 사이트가 명시)",
+          "confidence": "official",
+          "source": "https://www.sawadeethai1988.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "전채 €8~€9 · 메인 €15~€16 · 1인 €35~€48 (음료 포함)",
+          "confidence": "secondary",
+          "source": "https://www.sawadeethai1988.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "75분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "breizh-cafe-charles-michels": {
+      "displayName": "Breizh Café Charles Michels",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "월–목 11:30–14:30 · 18:00–22:00 / **금·토·일 11:30–22:00 논스톱**",
+          "confidence": "official",
+          "source": "https://www.breizhcafe.com/charles-michels",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://www.breizhcafe.com/charles-michels",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "ZenChef 온라인 또는 전화 +33 9 55 24 41 24. 파리 최대급 테라스라 워크인도 비교적 가능",
+          "confidence": "official",
+          "source": "https://www.breizhcafe.com/charles-michels",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "갈레트 €12.80~€22 · 크레프 €6.20~€14.50 · 굴 6개 €18.50 · 1인 €22~€35",
+          "confidence": "secondary",
+          "source": "https://www.breizhcafe.com/charles-michels",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "40~60분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "le-relais-du-15eme": {
+      "displayName": "Le Relais du 15ème",
+      "region": "paris",
+      "grade": "optional",
+      "facts": {
+        "hours": {
+          "value": "매일 11:00–22:30 (논스톱)",
+          "confidence": "official",
+          "source": "https://le-relais-du-15e.fr/fr",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://le-relais-du-15e.fr/fr",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "불필요 (온라인 예약도 가능). 16~20시 해피아워",
+          "confidence": "official",
+          "source": "https://le-relais-du-15e.fr/fr",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "피자 €10~€15 · 파스타 €12~€16 · 생선 €21~€23 · 1인 €18~€28",
+          "confidence": "secondary",
+          "source": "https://le-relais-du-15e.fr/fr",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "45~60분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "chez-janou": {
+      "displayName": "Chez Janou",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "매일 12:00–14:00 (~15:00) · 19:00–23:30",
+          "confidence": "official",
+          "source": "https://www.chezjanou.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://www.chezjanou.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "공식 홈페이지 온라인 또는 전화 +33 1 42 72 28 41. **1~2주 전 예약, 지각 시 테이블을 넘긴다**",
+          "confidence": "official",
+          "source": "https://www.chezjanou.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "전채 €12~€14 · 메인 €24~€30 · 디저트 €8~€9 · 1인 €38~€50",
+          "confidence": "secondary",
+          "source": "https://www.chezjanou.com/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "90분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "le-progres-montmartre": {
+      "displayName": "Le Progrès",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "매일 주방 12:00–22:30 (논스톱) · 카페 09:30–02:00",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "TheFork 온라인. 17:30~18:00은 워크인도 대체로 가능하나 축제 기간에는 예약 권장",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "1인 €25~€40 (TheFork 평균 €24)",
+          "confidence": "secondary",
+          "source": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "60~75분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
+    },
+    "bouillon-racine": {
+      "displayName": "Bouillon Racine",
+      "region": "paris",
+      "grade": "priority",
+      "facts": {
+        "hours": {
+          "value": "매일 12:00–14:00 · 19:00–23:30 (일부 출처는 12:00–23:00 연속 표기)",
+          "confidence": "official",
+          "source": "https://www.bouillonracine.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "closed": {
+          "value": "연중무휴",
+          "confidence": "official",
+          "source": "https://www.bouillonracine.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "bouillonracine.fr 온라인. **토요일은 2주 전 예약**",
+          "confidence": "official",
+          "source": "https://www.bouillonracine.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "price_range": {
+          "value": "세트 메뉴 €39 · 전채 €9~€11 · 1인 €35~€45",
+          "confidence": "secondary",
+          "source": "https://www.bouillonracine.fr/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "duration": {
+          "value": "90분",
+          "confidence": "editorial",
+          "source": "MP-04 Editorial",
+          "verified_at": "2026-08-25",
+          "ttl_days": 3650
+        }
+      }
     }
   }
 }

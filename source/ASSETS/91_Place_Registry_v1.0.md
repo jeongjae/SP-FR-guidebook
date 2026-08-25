@@ -193,6 +193,21 @@
 | `cafe-du-commerce` | Café du Commerce | spot | 필수 | Café du Commerce | chapters/paris/places.html | Café du Commerce | — |
 | `le-grand-pan` | Le Grand Pan | spot | 필수 | Le Grand Pan | chapters/paris/places.html | Le Grand Pan | — |
 | `bouillon-chartier-montparnasse` | Bouillon Chartier Montparnasse | spot | 필수 | Bouillon Chartier Montparnasse | chapters/paris/places.html | Bouillon Chartier Montparnasse | — |
+| `au-petit-riche` | Au Petit Riche | spot | 필수 | Au Petit Riche | chapters/paris/places.html | Au Petit Riche | — |
+| `cafe-varenne` | Café Varenne | spot | 필수 | Café Varenne | chapters/paris/places.html | Café Varenne | — |
+| `chez-savy` | Chez Savy | spot | 필수 | Chez Savy | chapters/paris/places.html | Chez Savy | — |
+| `la-flottille` | La Flottille | spot | 우선 추천 | La Flottille | chapters/paris/places.html | La Flottille | — |
+| `aux-crus-de-bourgogne` | Aux Crus de Bourgogne | spot | 필수 | Aux Crus de Bourgogne | chapters/paris/places.html | Aux Crus de Bourgogne | — |
+| `les-marches` | Les Marches | spot | 필수 | Les Marches | chapters/paris/places.html | Les Marches | — |
+| `stephane-martin` | Stéphane Martin | spot | 우선 추천 | Stéphane Martin | chapters/paris/places.html | Stéphane Martin | — |
+| `le-volant-basque` | Le Volant Basque | spot | 우선 추천 | Le Volant Basque | chapters/paris/places.html | Le Volant Basque | — |
+| `guylas` | Guylas | spot | 우선 추천 | Guylas | chapters/paris/places.html | Guylas | — |
+| `sawadee-paris` | Sawadee | spot | 선택 | Sawadee | chapters/paris/places.html | Sawadee | — |
+| `breizh-cafe-charles-michels` | Breizh Café Charles Michels | spot | 우선 추천 | Breizh Café Charles Michels | chapters/paris/places.html | Breizh Café Charles Michels | — |
+| `le-relais-du-15eme` | Le Relais du 15ème | spot | 선택 | Le Relais du 15ème | chapters/paris/places.html | Le Relais du 15ème | — |
+| `chez-janou` | Chez Janou | spot | 우선 추천 | Chez Janou | chapters/paris/places.html | Chez Janou | — |
+| `le-progres-montmartre` | Le Progrès | spot | 우선 추천 | Le Progrès | chapters/paris/places.html | Le Progrès | — |
+| `bouillon-racine` | Bouillon Racine | spot | 우선 추천 | Bouillon Racine | chapters/paris/places.html | Bouillon Racine | — |
 
 ---
 

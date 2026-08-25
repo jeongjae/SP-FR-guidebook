@@ -7,7 +7,7 @@
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:00",
-  "endTime": "21:00",
+  "endTime": "21:15",
   "totalDuration": "13시간",
   "totalDistance": "메트로 + 도보 약 5.5km",
   "fatigue": "3",
@@ -68,7 +68,7 @@
       "id": "musee-carnavalet",
       "order": 4,
       "start": "17:45",
-      "end": "19:00",
+      "end": "18:45",
       "name": "Musée Carnavalet & Place des Vosges (보주 광장)",
       "category": "sight",
       "lat": 48.8572,
@@ -80,19 +80,52 @@
       "place_ref": "musee-carnavalet"
     },
     {
-      "id": "paris-return",
+      "id": "chez-janou-dinner",
       "order": 5,
-      "start": "19:30",
-      "end": "21:00",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "start": "19:00",
+      "end": "20:30",
+      "name": "Chez Janou 저녁 (마레 프로방스)",
+      "category": "food",
+      "lat": 48.8572,
+      "lng": 2.3625,
+      "summary": "보주 광장에서 도보 4분. 30년 넘은 동네 프로방스 식당이라 rue des Rosiers 관광 축에서 비껴 있다. Chemin Vert에서 8호선을 타면 환승 없이 15구까지 직행",
+      "menu": "Ratatouille froide · Petits farcis provençaux · Mousse au chocolat (도기 볼째 무제한)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "1~2주 전 예약(chezjanou.com 또는 +33 1 42 72 28 41). 예약 시간에 늦으면 테이블을 넘긴다"
+        },
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "저녁 서비스는 19:00에 연다. 카르나발레·보주 광장을 18:45에 끝내고 도보 6분으로 이동한다 — 19:00 예약에 여유가 없다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ],
+      "optional": false,
+      "place_ref": "chez-janou"
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
+      "start": "20:45",
+      "end": "21:15",
+      "name": "15구 숙소 귀환",
+      "category": "transport",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 8호선(Chemin Vert / Saint-Paul ➔ Lourmel) 귀환 후 15구 숙소식 및 휴식",
+      "summary": "Chemin Vert 8호선 Balard 방면 직통 → Lourmel (환승 없음)",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": null,
+      "executionStatuses": []
     }
   ],
   "legs": [
@@ -125,10 +158,19 @@
     },
     {
       "from": "musee-carnavalet",
+      "to": "chez-janou-dinner",
+      "mode": "walk",
+      "duration": "6분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "chez-janou-dinner",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 8호선 약 25분",
-      "distance": "5.5km",
+      "duration": "메트로 8호선 직통 약 35분",
+      "distance": "7.2km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
@@ -139,14 +181,14 @@
   ],
   "food": [
     "숙소 점심",
-    "숙소 저녁"
+    "Chez Janou 마레 저녁 (19:00·예약 필수)"
   ],
   "highlights": [
     "Orsay Mary Cassatt 특별전 개막 당일",
     "마레 지구 연계 산책",
     "화요일 정상 운영"
   ],
-  "backup": "피로 시 마레 실내 관람을 생략하고 오르세 관람 후 센 강변 산책 뒤 조기 귀환",
+  "backup": "Au Bourguignon du Marais(52 rue François Miron, 매일 영업, 고미요 예산 €25~30 — 뵈프 부르기뇽과 베르티용 아이스크림 프로피트롤). 귀가는 M1+M8 약 45분\n\n피로 시 마레 실내 관람을 생략하고 오르세 관람 후 센 강변 산책 뒤 조기 귀환",
   "map": {
     "zoom": 13,
     "center": [

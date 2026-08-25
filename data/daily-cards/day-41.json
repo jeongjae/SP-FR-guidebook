@@ -54,15 +54,32 @@
       "order": 3,
       "start": "12:00",
       "end": "13:15",
-      "name": "이에나 / 윌슨 대로변 점심 식사",
+      "name": "Les Marches 16구 점심",
       "category": "food",
       "lat": 48.8645,
       "lng": 2.296,
-      "summary": "기메 박물관과 현대미술관 사이 프레지던트 윌슨 대로 테라스 점심",
-      "menu": "파리지앵 샐러드, 파스타, 에스프레소",
-      "reservation": "현장 선택",
+      "summary": "기메에서 도보 5분, MAM까지 도보 3~4분. 팔레 드 도쿄 옆 계단 골목의 옛 트럭 운전사 식당이다. 저녁 고별 만찬이 숯불 고기이므로 점심은 찬 전채와 냉 로스트비프로 가볍게 짠다",
+      "menu": "Œufs Mayonnaise €6.50 · Rosbif sauce gribiche €22 · Île flottante aux pralines roses €10",
+      "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "les-marches",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "매일 12:00–14:30 연중무휴(출처 3건 일치). Zenchef 온라인 또는 +33 1 47 23 52 80 — 12:00 예약이면 13:15까지 여유가 있다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "점심 정식가가 €18/€20로 갈리고, 확보한 카르트가 여름판이라 10월 가을 메뉴에서는 가격이 바뀔 수 있다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     },
     {
       "id": "musee-art-moderne",
@@ -171,7 +188,7 @@
     "점등 조망 자리 부근에서 송별 저녁",
     "21:30 이전 귀환 · 과음 금지"
   ],
-  "backup": "우천 시 트로카데로 야외 산책을 단축하고 샤이오 궁 인근 카페에서 에펠탑 뷰 감상",
+  "backup": "Hanok, par Misso(기메 박물관 내부, 도보 0분 — 옛 Le Salon des Porcelaines 자리가 한식당으로 바뀌었다. 국물 국수 기반이라 저녁 만찬 대비 가장 가볍다) 또는 Monsieur Bleu(팔레 드 도쿄, 전채 2개+카페 구르망 공유로 1인 €25.50)\n\n우천 시 트로카데로 야외 산책을 단축하고 샤이오 궁 인근 카페에서 에펠탑 뷰 감상",
   "map": {
     "zoom": 13,
     "center": [
