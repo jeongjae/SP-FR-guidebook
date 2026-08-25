@@ -17,7 +17,7 @@ status: "active"
 |---|---|---|---|
 | 항공 | BCN 도착편, BCN→NCE, CDG→ICN 터미널·시각·수하물 | Master Itinerary·예약카드 | 예약값 대기 |
 | Spain 렌터카 | 9/1 Sants 인수, 국경조건, Girona/BCN 반납 | Barcelona·Girona | 예약값 대기 |
-| France 렌터카 | 9/9 NCE T2 인수, 9/20 Avignon TGV 반납 | Nice~Avignon | 기존 예약 날짜 변경 필요 |
+| France 렌터카 | 9/9 Nice-Ville 인수, 9/17 저녁 Avignon TGV 조기 반납 | Nice~Avignon | 기존 9/20 계약을 9/17 18:30 이전 반납으로 변경 필요 |
 | TGV | Avignon→Lyon, Lyon→Paris | Avignon·Lyon·Paris | 예약값 대기 |
 | 숙소 | 8개 거점 주소·객실·총액·취소기한·체크인 | 전 챕터 | 후보단계 |
 | 핵심 티켓 | Sagrada, Palais des Papes, Arc de Triomphe 경마(10/4) | 해당 챕터 | 판매창 확인 |
@@ -30,8 +30,8 @@ status: "active"
 | Bàscara·Girona | Bàscara 숙소 주차·체크인/아웃, Collioure·Cadaqués 주차, Tossa·Peratallada 주차, GI-682, Bàscara→Nice 이동 | 14일 전·전날 |
 | Nice | Cannes·Monaco TER, 9/8 렌터카, Saint-Paul·Grasse 영업 | 7일 전·당일 |
 | Aix | Marseille L50·Mucem, Cézanne 시설, Cassis 대안의 보트·바람·화재통제 | 7일 전·전날 |
-| Luberon | **농가 4박→3박 예약 변경**, 재고·도로·주방·세탁, 시장일, 행사 | 즉시·3일 전 |
-| Avignon | 숙소 9/16 체크인 변경, Palais 시간지정, Uzès 금요일 운영, Pont du Gard, Arles TER·JEP, 9/20 TGV 반납 | 예약 시·전날 |
+| Luberon | **Gordes 2박(9/13–15) 숙소 확정**, 도로·주차·체크인, Sénanque 운영 | 즉시·3일 전 |
+| Avignon | 숙소 9/15 체크인, Day 20 차량 반납 변경, Arles TER, Palais 시간지정, Pont du Gard | 예약 시·전날 |
 | Lyon | Annecy 직행 TER, 크루즈, 숙소·야간귀가 | 7일 전·전날 |
 | Paris | **숙소 9/24~10/9 15박·Lyon TGV 변경**, 특별전·공연·PSG 고정일, Versailles·Giverny, Navigo 정책 | 즉시·판매창·7일 전 |
 

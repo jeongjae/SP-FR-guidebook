@@ -43,7 +43,7 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 | 9/10 목 | Aix 목요 시장(Place Richelme) · Vieil Aix · Cézanne 아틀리에 · Musée Granet |
 | 9/11 금 | Cassis · Calanques 당일치기 |
 | 9/12 토 | Marseille 당일치기 (TER 이동) |
-| 9/13 일 | Aix 체크아웃 · Lourmarin · Coustellet 시장 · Goult · Luberon 이동 |
+| 9/13 일 | Aix 체크아웃 · Lourmarin 점심 · [Bonnieux · Lacoste] · Gordes 2박 체크인 |
 
 상세 시각, 이동, 식사, 주차와 대체 일정은 각 날짜의 Day 페이지에서 확인한다.
 
@@ -310,7 +310,7 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 - [ ] Atelier de Cézanne 9/10 온라인 예약 확정
 - [ ] Cassis 유람선 운항 및 주차 운영 상태 확인
 - [ ] Marseille TER 열차 운행 및 SNCF Connect 시간표 확인
-- [ ] 9/13 Luberon 이동 동선 및 Coustellet 시장 운영 확인
+- [ ] 9/13 Lourmarin 점심·Gordes 숙소 체크인·주차 동선 확인
 
 ### 공식 정보원
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the structured itinerary and its tracker/daily-page projections."""
 
+import html
 import json
 import re
 import sys
@@ -62,6 +63,31 @@ def main():
         if actual != expected:
             errors.append(f"트래커 숙박 불일치 {stay['base']}: {actual} != {expected}")
 
+    reservations = wb["Reservations"]
+    reservation_headers = [cell.value for cell in reservations[3]]
+    reservation_rows = {
+        row[0]: dict(zip(reservation_headers, row))
+        for row in reservations.iter_rows(min_row=4, values_only=True)
+        if row[0] is not None
+    }
+    expected_reservations = {
+        "R005": ("Gordes 숙소 2박", date(2026, 9, 13)),
+        "R006": ("Avignon 숙소 5박", date(2026, 9, 15)),
+    }
+    for ident, (item, day) in expected_reservations.items():
+        row = reservation_rows.get(ident)
+        if not row:
+            errors.append(f"트래커 예약 누락: {ident}")
+            continue
+        actual_day = row["날짜"].date() if hasattr(row["날짜"], "date") else row["날짜"]
+        if (row["예약항목"], actual_day) != (item, day):
+            errors.append(f"트래커 예약 불일치 {ident}: {(row['예약항목'], actual_day)} != {(item, day)}")
+    rental = reservation_rows.get("R011", {})
+    rental_text = f"{rental.get('시간', '')} {rental.get('리스크/대체안', '')} {rental.get('비고', '')}"
+    for term in ("9/17", "18:30", "변경 필요"):
+        if term not in rental_text:
+            errors.append(f"트래커 차량 조기 반납 표기 누락: {term}")
+
     # ---- 사이트 투영 검사 --------------------------------------------
     # 데이터가 맞아도 화면에 안 나오면 소용이 없다. 아래는 "일정 사실이
     # 실제로 렌더된 페이지에 있는가" 를 본다. URL 은 새 IA 기준이다.
@@ -101,8 +127,12 @@ def main():
     required_page_terms = {
         # Day 14 는 2026-08-19 에 Marseille → Cassis·Calanques 로 바뀌었다
         "daily/day-14.html": ("Cassis", "Calanques", "Port-Miou"),
+        "daily/day-20.html": ("Uzès", "Pont du Gard", "Nîmes", "9/17", "렌터카 최종 반납"),
         "daily/day-21.html": ("Arles", "Saint-Trophime", "La Roquette"),
         "daily/day-22.html": ("Palais", "Rocher des Doms", "Pont Saint-Bénézet"),
+        "daily/day-23.html": ("TGV", "Lyon", "차량 반납은 9/17 완료"),
+        "schedule.html": ("DAY 20", "Uzès · Pont du Gard · Nîmes", "DAY 21", "Arles 철도 당일치기",
+                          "DAY 22", "교황도시 핵심", "DAY 23", "TGV 이동 & Lyon 적응"),
     }
     # 지역 페이지에는 그 거점의 박수와 날짜가 나와야 한다
     for stay in stays:
@@ -115,7 +145,7 @@ def main():
         if not path.exists():
             errors.append(f"필수 생성 페이지 누락: {relative}")
             continue
-        rendered = path.read_text(encoding="utf-8")
+        rendered = html.unescape(path.read_text(encoding="utf-8"))
         for term in terms:
             if term not in rendered:
                 errors.append(f"필수 생성 콘텐츠 누락: {relative} → {term}")
@@ -145,6 +175,12 @@ def main():
     home = site / "index.html"
     if home.exists():
         rendered = home.read_text(encoding="utf-8")
+        for stale in ("Luberon 농가 숙소 3박", "Avignon 숙소 4박"):
+            if stale in rendered:
+                errors.append(f"오늘 페이지에 폐기된 숙박 배분 노출: {stale}")
+        for term in ("Gordes 숙소 2박", "Avignon 숙소 5박", "2026-09-17"):
+            if term not in rendered:
+                errors.append(f"오늘 페이지 정본 콘텐츠 누락: {term}")
         for stay in stays:
             marker = f'data-region="{stay["key"]}"'
             if marker not in rendered:

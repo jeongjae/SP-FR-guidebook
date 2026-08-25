@@ -34,14 +34,14 @@
 | 13 | 9/10 목 | Aix | 목요시장·Vieil Aix·Atelier des Lauves·Granet | 08:30 시장 | 시장 후 구시가지·아틀리에 전 점심 | 시장/구시가지 점심 | 아틀리에 예약시간·도보 경사 | Granet 관람 압축 | Granet·카페 중심 | Atelier 예약·Granet |
 | 14 | 9/11 금 | Aix | Cassis·Calanques 해안 당일치기 | 08:30 출발 | 유람선 탑승 30분 전·항구 점심 90분 | Cassis 항구 점심 | 강풍/보트 결항·산불 위험 등급 | Port-Miou 도보 연장 | Cap Canaille 절벽 드라이브 | 유람선·주차 |
 | 15 | 9/12 토 | Aix | Marseille 전일 당일치기 (TER 왕복) | 08:30 출발 | TER 20분 여유·점심 75분 | Vieux-Port/Mucem 점심 | 토요일 도심 혼잡·소매치기 | Vallon des Auffes | Mucem/Fort/구항구 중심 | TER·Mucem |
-| 16 | 9/13 일 | Luberon | Lourmarin→Coustellet→농가 | 08:30 체크아웃 | 시장·장보기·농가진입 90분 | Lourmarin 점심 | 체크인·냉장식품·농가접근 | Lourmarin 체류 축소 | 행사·시장 축소 후 조기체크인 | 농가·행사 |
-| 17 | 9/14 월 | Luberon | Roussillon·Goult/Bonnieux | 08:30 출발 | 오커길 후 60분 휴식 | Roussillon 점심 | 월요일 식당·미끄럼 | 오후 마을 | 오커길 축소·카페 | 오커길 |
-| 18 | 9/15 화 | Luberon | Gordes 시장·Bories·선택마을 | 08:15 출발 | 시장주차 30분 | Gordes 피크닉 | 시장혼잡·주차 | Ménerbes/Oppède | Gordes+Bories만 | 시장·주차 |
-| 19 | 9/16 수 | Avignon | 농가 체크아웃→Avignon 정착 | 10:30 체크아웃 | 이동·주차·체크인 90분 | 이동 중 간단식 | 짐 노출·체크인 | 저녁 산책 연장 | Avignon 직행·숙소 휴식 | 농가 변경·Avignon 숙소 |
-| 20 | 9/17 목 | Avignon | Palais·Rocher·Pont | 08:30 Les Halles | Palais 입장 30분 전 | Les Halles/구시가지 | 시간지정·보행 | 추가미술관 | Palais 중심 실내일 | Palais·식당 |
-| 21 | 9/18 금 | Avignon | Uzès 구시가지·Pont du Gard | 08:30 출발 | 주차·Pont 이동 45분 | Uzès 빵집/비스트로 | 금요일 시장 없음·폭우/홍수 | 박물관 또는 일몰 | Uzès 단축·Pont 축소 | 주차·Pont |
-| 22 | 9/19 토 | Avignon | Arles 철도 당일치기 | 열차 기준 역산 | 열차 20분 전·점심/카페 90분 | Place du Forum 인근 | JEP 혼잡·운영변동·소매치기 | 선택시설·강변 연장 | Arènes·Théâtre·구도심만 | TER·JEP 재확인 |
-| 23 | 9/20 일 | Lyon | 주유·09:00 반납·TGV 12176 10:22·Lyon 15:00 체크인 | 07:00 포장 | 반납 09:00→열차 10:22 (82분) · 도착 11:28→체크인 15:00 | 역 간단식·숙소권 점심 | 주유·반납·수하물·열차 | 아침산책 | 짐 보관 후 도심 산책 | 반납 09:00 준수 · 짐 보관 확인 |
+| 16 | 9/13 일 | Gordes | Aix 체크아웃→Lourmarin→Gordes 1박차 | 08:30 체크아웃 | Gordes 체크인 전 60분 완충 | Lourmarin 점심 | 체크인·주차·차내수하물 | Bonnieux 선택 | Lacoste부터 삭제 후 Gordes 직행 | Gordes 2박·점심 |
+| 17 | 9/14 월 | Gordes | Roussillon·선택마을·Sénanque→Gordes 2박차 | 08:30 출발 | Sénanque 16:00 전후 도착 보호 | Ménerbes 또는 Gordes권 점심 | 월요일 식당·오커길·수도원 슬롯 | Ménerbes·Goult | Goult→Ménerbes 순으로 삭제 | Sénanque·오커길 |
+| 18 | 9/15 화 | Avignon | Gordes 체크아웃→L'Isle 물길→Avignon 체크인 | 09:00 체크아웃 | 15:00~16:00 체크인 목표 | L'Isle 또는 Fontaine 간단식 | 차내수하물·체크인·주차 | Fontaine-de-Vaucluse | Fontaine 삭제 후 Avignon 직행 | Avignon 5박·주차 |
+| 19 | 9/16 수 | Avignon | Saint-Rémy 수요시장·Les Baux | 08:00 출발 | 시장 오전·Les Baux 2시간 이상 보호 | Saint-Rémy 점심 | 시장혼잡·주차·운전피로 | Orange 단일 Bonus | Orange 삭제 후 Avignon 직행 | 시장·Château |
+| 20 | 9/17 목 | Avignon | Uzès·Pont du Gard·Nîmes→Avignon TGV 차량 반납 | 07:45 출발 | 15:45 Nîmes 출발·18:30 이전 반납 | Pont du Gard 간단식 | 주차·홍수·주유·반납시간 | Nîmes 체류 축소 | Uzès·Pont 핵심 후 바로 반납 | Hertz 예약 변경·주차 |
+| 21 | 9/18 금 | Avignon | Arles 철도 당일치기 | 열차 기준 역산 | 열차 20분 전·점심/카페 90분 | Le Gibolin 또는 Place du Forum | JEP 혼잡·운영변동·소매치기 | 선택시설·강변 연장 | Arènes·Théâtre·구도심만 | TER·JEP 재확인 |
+| 22 | 9/19 토 | Avignon | Les Halles·Palais·Rocher·Pont 도보일 | 08:30 Les Halles | Palais 입장 30분 전 | Les Halles/구시가지 | 시간지정·보행 | 추가미술관 | Palais 중심 실내일 | Palais·식당 |
+| 23 | 9/20 일 | Lyon | 차량 절차 없이 TGV 12176 10:22→Lyon 15:00 체크인 | 08:30 체크아웃 | 역 이동·도착 11:28→체크인 15:00 | 역 간단식·숙소권 점심 | 수하물·열차·짐 보관 | Bellecour 짧은 산책 | 짐 보관 후 숙소권 휴식 | TGV·짐 보관 확인 |
 | 24 | 9/21 월 | Lyon | Fourvière·Vieux Lyon | 09:00 전후 | 경사·하산 후 60분 휴식 | Vieux Lyon 점심 | 월요일 휴관·경사·보행 | 로마극장 내부 | 야외축+카페 | 푸니쿨라·저녁 |
 | 25 | 9/22 화 | Lyon | Silk & Gastronomy (Maison des Canuts & Halles 2차 미식) | 08:45 숙소 출발 | 직조 시연 50분·공원 2h 휴식 버퍼 | Halles 2차 미식 점심·숙소 가벼운 저녁 | 직조 시연 시간 엄수·식당 대기 | 공원 체류 단축 | 시장 쇼핑 압축 | Maison des Canuts 11:00 시연 |
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | 08:00 전후 역 이동 | TER 20분 전 도착 | Annecy 구시가지 | 철도지연·날씨·시장 없음 | 크루즈 | Lyon 생활일로 전환 | TER·크루즈 |
@@ -70,7 +70,8 @@
 - Day 4: Barcelona 렌터카 인수와 Girona 이동
 - Day 7: Bàscara → BCN 공항 차량반납 14:00 (Hertz 확정) → 항공(예매 필요) → Nice
 - Day 12: NCE 렌터카 인수 → Aix 체크인
-- Day 23: Avignon 렌터카 반납 → TGV → Lyon
+- Day 20: Uzès·Pont du Gard·Nîmes → Avignon TGV 렌터카 조기 반납
+- Day 23: 차량 절차 없이 Avignon TGV → Lyon
 - Day 27: Lyon → Paris 장거리 수하물 이동
 - Day 42: Paris → CDG → OZ502 국제선 출국 (10/9 19:10)
 
@@ -78,8 +79,8 @@
 
 - Day 14 Marseille: 대중교통·혼잡·소매치기
 - Day 17 Roussillon: 비·오커길 미끄럼
-- Day 22 Pont du Gard: 폭우·홍수주의
-- Day 22 Arles: JEP 혼잡·시설별 운영 변동
+- Day 20 Pont du Gard: 폭우·홍수주의
+- Day 21 Arles: JEP 혼잡·시설별 운영 변동
 - Day 26 Annecy: 철도와 호수날씨
 - Day 37 Arc de Triomphe, Day 40 Vendanges: 날씨·야외 행사 운영
 
@@ -88,7 +89,7 @@
 - Day 5 Collioure + Cadaqués (해안 쪽 우회, Portlligat·Dalí House 예약 미확인)
 - Day 6 Tossa de Mar + Sant Feliu + Pals + Peratallada (지연 시 Pals 삭제)
 - Day 12 Saint-Paul + Grasse + Aix 체크인
-- Day 19 농가 체크아웃 + Avignon 체크인
+- Day 18 Gordes 체크아웃 + L'Isle 경유 + Avignon 5박 체크인
 - Day 34 Bastille 산책 (공연 취소 — 저녁 여유)
 - Day 37 Arc de Triomphe 종일 관람
 - Day 40 축제 + (10/1 불발 시에만) 백업 공연
