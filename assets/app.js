@@ -278,7 +278,38 @@
         var when = nextCard.querySelector('.action-when');
         var what = nextCard.querySelector('.action-what');
         if (when) when.textContent = mark.dataset.start;
-        if (what) what.innerHTML = mark.querySelector('.tl-name').innerHTML;
+        var title = mark.querySelector('.tl-title');
+        if (what && title) what.innerHTML = title.innerHTML;
+
+        var summary = nextCard.querySelector('.action-summary');
+        var markSummary = mark.querySelector('.tl-summary');
+        if (markSummary) {
+          if (!summary) {
+            summary = document.createElement('p');
+            summary.className = 'card-dek action-summary';
+            nextCard.appendChild(summary);
+          }
+          summary.textContent = markSummary.textContent;
+        } else if (summary) {
+          summary.remove();
+        }
+
+        /* NOW/NEXT가 바뀌면 행동도 같은 stop의 링크로 교체한다.
+           Timeline이 가진 링크를 복제하므로 별도 지도 데이터가 생기지 않는다. */
+        var actionRow = nextCard.querySelector('.action-actions');
+        var actionTemplate = mark.querySelector('.tl-action-template');
+        var markActions = actionTemplate
+          ? actionTemplate.content.querySelector('.action-actions') : null;
+        if (markActions && markActions.children.length) {
+          if (!actionRow) {
+            actionRow = document.createElement('div');
+            actionRow.className = 'action-actions btn-row';
+            nextCard.appendChild(actionRow);
+          }
+          actionRow.innerHTML = markActions.innerHTML;
+        } else if (actionRow) {
+          actionRow.remove();
+        }
       }
     }
   }
