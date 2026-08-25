@@ -1,7 +1,7 @@
 {
   "$schema": "./place-facts.schema.json",
   "version": "1.0",
-  "generated": "2026-08-17",
+  "generated": "2026-08-25",
   "ttl_defaults": {
     "price_adult": 180,
     "price_range": 180,
@@ -1064,9 +1064,9 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "4/1~10/31 매일 08:30~20:00 (11/1~3/31은 08:30~18:00). 9월 방문은 20시 폐장",
-          "source": "https://www.nice.fr/lieux/parc-de-la-colline-du-chateau/",
-          "verified_at": "2026-08-17",
+          "value": "4/1~9/30 매일 08:30~20:00. 9월 방문은 20시 폐장",
+          "source": "https://www.explorenicecotedazur.com/en/culture/parc-de-la-colline-du-chateau/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },
@@ -1078,7 +1078,7 @@
           "ttl_days": 180
         },
         "note": {
-          "value": "공식 페이지에 엘리베이터 언급 없음",
+          "value": "엘리베이터 운행은 현장에서 확인하고, 중단 시 계단·보행 또는 일정 압축",
           "confidence": "unverified",
           "source": "2026-08-17 신규 검증",
           "verified_at": "2026-08-17",
@@ -1157,10 +1157,10 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "화–일 꽃·식품 오전 시장 · 월요일 골동품시장 07:00–18:00",
+          "value": "화–일 식품·청과·수산 06:00–14:30 · 꽃시장 화–토 06:00–17:30(일·공휴일 14:30까지) · 월요일 골동품시장",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.nice.fr/ressources/reglement-general-des-marches-traditionnels-de-la-ville-de-nice/",
+          "verified_at": "2026-08-25",
           "ttl_days": 90
         },
         "closed": {
@@ -1296,9 +1296,9 @@
           "ttl_days": 180
         },
         "closed": {
-          "value": "마을(중세 골목)은 공공 도로로 연중 개방. 정상 Jardin Exotique는 별도 유료 시설 — 공식 안내 페이지 접근 실패로 9월 운영시간 미확인",
-          "source": "https://www.eze-tourisme.com/fr/decouvrir-visiter-se-divertir/visiter-eze/le-village/24-horaires-et-tarifs.html",
-          "verified_at": "2026-08-17",
+          "value": "마을 골목은 공공 도로로 연중 개방. Jardin Exotique는 별도 유료 시설이며 9월 매일 09:00–19:30 운영",
+          "source": "https://jardinexotique-eze.fr/en/informations/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         }
@@ -2077,10 +2077,10 @@
       "grade": "essential",
       "facts": {
         "note": {
-          "value": "위병 교대식 매일 11:55 (Place du Palais)",
+          "value": "위병 교대식 매일 11:55 (Place du Palais). Marché de la Condamine는 2026 전면 리노베이션 폐쇄, 2027년 초 재개장 목표",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://media-trade.visitmonaco.com/en/editorial-resources/experiences-and-innovations/new-products-and-highlights-in-monaco/coming-soon",
+          "verified_at": "2026-08-25",
           "ttl_days": 90
         },
         "closed": {
@@ -4619,7 +4619,7 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "점심 12:00–15:00 · 살롱 드 테 15:00–17:30",
+          "value": "레스토랑 11:00–17:30 · 점심 12:00–15:00",
           "confidence": "official",
           "source": "https://www.villa-ephrussi.com/fr/preparer-sa-visite/le-restaurant-salon-de-the",
           "verified_at": "2026-08-21",
@@ -4633,7 +4633,7 @@
           "ttl_days": 90
         },
         "booking": {
-          "value": "점심 테라스석 예약 권장 (빌라 입장객 전용, 입장료 €17 별도)",
+          "value": "점심 테라스석 예약 권장 (빌라 입장객 전용, 입장료 €18 별도)",
           "confidence": "official",
           "source": "https://www.villa-ephrussi.com/",
           "verified_at": "2026-08-21",
@@ -4675,7 +4675,7 @@
           "ttl_days": 90
         },
         "booking": {
-          "value": "현장 발권 또는 온라인 예매 (€17 / 분수쇼 및 오디오가이드 포함)",
+          "value": "현장 발권 또는 온라인 예매 (€18 / 분수쇼 및 오디오가이드 포함)",
           "confidence": "official",
           "source": "https://www.villa-ephrussi.com/",
           "verified_at": "2026-08-21",
@@ -4687,6 +4687,13 @@
           "source": "FCR-01 Pilot Editorial",
           "verified_at": "2026-08-21",
           "ttl_days": 3650
+        },
+        "price_adult": {
+          "value": "€18",
+          "confidence": "official",
+          "source": "https://www.explorenicecotedazur.com/en/culture/villa-et-jardins-ephrussi-de-rothschild-2/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 180
         }
       }
     },

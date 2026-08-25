@@ -43,7 +43,7 @@ source: source/CURRENT/30_Places/le-figuier-de-saint-esprit.md
 
 | 항목 | 상세 정보 |
 |---|---|
-| **위치** | 14 Rue Saint-Esprit, 06600 Antibes, France |
+| **위치** | 7 Promenade Amiral de Grasse / 14 Rue Saint-Esprit, 06600 Antibes, France |
 | **좌표** | 43.5816, 7.1278 |
 | **운영 시간** | 점심 12:15–13:30 · 저녁 19:30–21:30 |
 | **정기 휴무** | 화요일·수요일 (일요일 점심 정상 영업) |

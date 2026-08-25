@@ -43,8 +43,8 @@ source: source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md
 | **위치** | 1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat, France |
 | **좌표** | 43.6865, 7.3323 |
 | **운영 시간** | 매일 10:00–18:00 (7~8월 19:00까지 연장) |
-| **입장료** | 성인 **€17** · 학생/청소년 €12 · 오디오가이드 포함 |
+| **입장료** | 성인 **€18** · 할인 €12 · 오디오가이드 포함 |
 | **분수 쇼** | 매일 20분 간격으로 음악 분수 가동 |
-| **식음 시설** | 저택 내 Restaurant & Salon de Thé Béatrice 운영 (12:00~17:30) |
+| **식음 시설** | 저택 내 Restaurant & Salon de Thé Béatrice 운영 (11:00~17:30, 점심 12:00~15:00) |
 | **접근 교통** | 니스 시내(Port Lympia 등)에서 **Lignes d’Azur 15번 버스** 탑승 후 Passable / Villa Ephrussi 정류장 하차 (약 25~30분 소요) |
 | **공식 정보** | [공식 웹사이트](https://www.villa-ephrussi.com/) (verified_at: 2026-08-21) |

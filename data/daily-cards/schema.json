@@ -347,6 +347,14 @@
           ],
           "description": "상태가 아닌 실행 설명. 예: 자유 입장."
         },
+        "officialUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri",
+          "description": "Place 페이지가 없는 실행 stop의 공식 사이트 링크."
+        },
         "optional": {
           "type": "boolean"
         },

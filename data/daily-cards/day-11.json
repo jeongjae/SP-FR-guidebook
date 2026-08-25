@@ -6,6 +6,7 @@
   "title": "코트다쥐르 해안·에프뤼시 빌라 런치 & 에즈 절벽마을",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "08:30",
   "endTime": "19:00",
   "totalDuration": "10시간 30분",
@@ -30,7 +31,14 @@
       "lng": 7.2619,
       "summary": "Nice-Ville역에서 TER 탑승 (7분 소요, 08:38 빌프랑슈역 도착) 또는 15번 버스 이동",
       "menu": null,
-      "reservation": "SNCF Connect / Lignes d'Azur",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "당일 확인",
+          "detail": "Nice-Ville→Villefranche-sur-Mer TER 출발편·플랫폼 확인"
+        }
+      ],
       "optional": false,
       "place_ref": "nice-ville"
     },
@@ -46,6 +54,13 @@
       "summary": "해안역 하차 후 콰이 쿠르베(Quai Courbet), 13세기 지하 어두운 골목(Rue Obscure), 생피에르 예배당 외관 및 성채 조망 (90분 여유 방문)",
       "menu": "에스프레소, 크루아상",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "당일 확인",
+          "detail": "Villefranche→Villa Ephrussi 15번 운행과 하차 정류장 확인"
+        }
+      ],
       "optional": false,
       "place_ref": null
     },
@@ -60,7 +75,14 @@
       "lng": 7.3323,
       "summary": "15번 버스로 생장캅페라 반도 이동 ➔ 베아트리스 남작부인의 분홍빛 팔라초 및 9개 테마 정원 산책",
       "menu": null,
-      "reservation": "현장 발권 / 온라인 예매 (€17)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "티켓",
+          "detail": "성인 €18 · 2/1~11/1 매일 10:00~18:00 · 현장 또는 온라인 구매"
+        }
+      ],
       "optional": false,
       "place_ref": "villa-ephrussi-de-rothschild"
     },
@@ -73,37 +95,100 @@
       "category": "food",
       "lat": 43.6865,
       "lng": 7.3323,
-      "summary": "저택 내 테라스에서 빌프랑슈 만을 내려다보며 즐기는 여유로운 지중해식 점심 & 티 타임",
+      "summary": "빌라 입장객 전용 레스토랑. 11:00~17:30 운영, 점심 12:00~15:00. Èze 환승을 위해 13:30~13:45 종료를 hard stop으로 둔다",
       "menu": "Salade Béatrice(훈제연어·감귤), 제철 생선 요리(대구/도미 구이), 트로페시엔 타르트",
-      "reservation": "테라스석 점심 예약 권장 (12:15 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "예약 권장",
+          "detail": "12:15 희망 슬롯 · 실제 예약 confirmation 없음"
+        },
+        {
+          "type": "check",
+          "label": "13:45 종료",
+          "detail": "Èze행 15→83 환승을 위해 늦어도 13:45 식사 종료"
+        }
+      ],
       "optional": false,
       "place_ref": "restaurant-beatrice"
     },
     {
-      "id": "eze-village",
+      "id": "villa-eze-transfer",
       "order": 5,
+      "start": "13:45",
+      "end": "14:30",
+      "name": "Villa Ephrussi ➔ Èze Village 환승",
+      "category": "transport",
+      "lat": 43.6865,
+      "lng": 7.3323,
+      "summary": "Passable/Rothschild에서 15번으로 Beaulieu-sur-Mer/Baie des Fourmis 권역 이동 후 83번 환승. 대기 포함 40~60분 buffer",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "환승 확인",
+          "detail": "15→Beaulieu/Baie des Fourmis→83 연결을 당일 확인"
+        }
+      ],
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "eze-village",
+      "order": 6,
       "start": "14:30",
       "end": "17:00",
       "name": "Èze Village 중세 절벽마을 & 이국적 정원",
       "category": "sight",
       "lat": 43.7278,
       "lng": 7.3619,
-      "summary": "생장캅페라에서 Èze 이동(83번/버스). 해발 429m 절벽 자갈 골목, 샤토 에자 주변, 이국적 정원(Jardin Exotique) 파노라마 뷰 (150분 충분한 체류)",
+      "summary": "15번으로 Beaulieu-sur-Mer/Baie des Fourmis 권역 이동 후 83번으로 Èze Village 환승(대기 포함 40~60분). Jardin Exotique는 9월 09:00~19:30 운영",
       "menu": null,
-      "reservation": "이국적 정원 현장 (€7)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "티켓",
+          "detail": "Jardin Exotique 성인 €10 · 현장 구매 가능, 예약 필수 아님"
+        }
+      ],
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "eze-nice-transfer",
+      "order": 7,
+      "start": "17:00",
+      "end": "17:45",
+      "name": "Èze Village ➔ Nice Vauban 환승",
+      "category": "transport",
+      "lat": 43.7278,
+      "lng": 7.3619,
+      "summary": "Èze Village에서 82번 또는 602번으로 Nice Vauban 이동 후 Tram L1/연결교통으로 숙소 이동",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "당일 확인",
+          "detail": "82 또는 602→Nice Vauban→Tram L1/연결교통 운행 확인"
+        }
+      ],
       "optional": false,
       "place_ref": null
     },
     {
       "id": "nice-stay-prep",
-      "order": 6,
+      "order": 8,
       "start": "17:45",
       "end": "19:00",
       "name": "Nice 복귀 ➔ 숙소 휴식 & 9/9 렌터카 준비",
       "category": "hotel",
       "lat": 43.7002,
       "lng": 7.2628,
-      "summary": "82번 버스 또는 TER로 Nice 시내 복귀, 12 Rue Verdi 숙소 귀환, 세탁 및 9/9 09:00 Hertz 렌터카 인수 서류 점검, 휴식",
+      "summary": "Èze Village에서 82번 또는 602번으로 Nice Vauban 이동 후 Tram L1/연결교통으로 12 Rue Verdi 숙소 복귀. 9/9 Hertz 서류 점검",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -140,27 +225,45 @@
     },
     {
       "from": "restaurant-beatrice",
+      "to": "villa-eze-transfer",
+      "mode": "walk",
+      "duration": "정류장 이동 5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "villa-eze-transfer",
       "to": "eze-village",
       "mode": "bus",
-      "duration": "15번/83번 버스 약 30분",
+      "duration": "환승·대기 포함 40~60분",
       "distance": "약 8km",
-      "line": "Lignes d'Azur 15 + 83",
+      "line": "15 → Beaulieu/Baie des Fourmis → 83 → Èze Village",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "eze-village",
+      "to": "eze-nice-transfer",
+      "mode": "walk",
+      "duration": "정류장 이동 5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "eze-nice-transfer",
       "to": "nice-stay-prep",
       "mode": "bus",
-      "duration": "82번 버스 25분",
+      "duration": "82 또는 602 + Vauban 환승 약 45~60분",
       "distance": "약 11km",
-      "line": "Lignes d'Azur 82",
+      "line": "82 또는 602 → Nice Vauban → Tram L1/연결교통",
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
     "TER (Nice ➔ Villefranche)",
     "Lignes d’Azur 15 (Villefranche ↔ Saint-Jean-Cap-Ferrat)",
-    "Lignes d’Azur 83 / 82 (Èze ↔ Nice)"
+    "Lignes d’Azur 15→83 (Villa→Èze), 82/602→Vauban→연결교통 (Èze→숙소)"
   ],
   "food": [
     "아침: Villefranche 항구 카페 에스프레소 & 크루아상",
@@ -171,10 +274,9 @@
     "Villefranche-sur-Mer 해안 구시가지",
     "Villa Ephrussi de Rothschild 9개 테마 정원",
     "Restaurant Béatrice 빌프랑슈 만 조망 런치 (WISH-02)",
-    "Èze Village & Jardin Exotique 절벽 뷰",
-    "익일 프로방스 렌터카 인수 준비"
+    "Èze Village & Jardin Exotique 절벽 뷰 후 익일 렌터카 준비"
   ],
-  "backup": "1. [우천 Plan B] 에즈 야외 정원 산책을 축소하고 니스 시내 샤갈/마티스 미술관 실내 전환\n2. [피로 단축] 에즈 체류를 60분으로 단축 후 16:30 니스 조기 복귀",
+  "backup": "Villa/Béatrice 일정이 30분 이상 밀리면 Èze 체류를 60~90분으로 축소. 15:00 이후에도 Saint-Jean-Cap-Ferrat를 출발하지 못하면 Èze를 생략하고 Nice 직행. 우천 시 Villa 실내와 Béatrice를 충분히 즐기고 Èze 정원은 축소·생략. 복귀는 82/602→Vauban 연결 기준으로 당일 운행 확인.",
   "map": {
     "zoom": 12,
     "center": [
@@ -185,7 +287,7 @@
   },
   "needsReview": [
     "Restaurant Béatrice 9/8 12:15 점심 예약 권장",
-    "Lignes d’Azur 15번, 82번, 83번 버스 당일 운행 시각 확인",
+    "Lignes d’Azur 15·83·82·602번과 Vauban 후속 연결 당일 운행 확인",
     "9/9 09:00 Hertz 니스역 렌터카 인수 서류/동선 확인"
   ],
   "sourceRefs": [

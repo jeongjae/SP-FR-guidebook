@@ -164,7 +164,10 @@ class StayTransportGuards(unittest.TestCase):
         for stale in ("€1.80", "€12.60", "1일권 €5", "1일권(€5.00)"):
             self.assertNotIn(stale, chapter, f"Nice 챕터에 폐기된 교통 요금이 남음: {stale}")
         day11 = json.loads((ROOT / "data" / "daily-cards" / "day-11.json").read_text(encoding="utf-8"))
-        self.assertNotIn("602", json.dumps(day11, ensure_ascii=False))
+        day11_text = json.dumps(day11, ensure_ascii=False)
+        self.assertIn("82 또는 602", day11_text)
+        self.assertIn("Nice Vauban", day11_text)
+        self.assertIn("Tram L1/연결교통", day11_text)
         self.assertIn("Èze", json.dumps(day11, ensure_ascii=False))
         self.assertIn("83", json.dumps(day11, ensure_ascii=False))
 

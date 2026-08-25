@@ -84,4 +84,4 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 
 이 구간에서 예약이 걸린 곳은 앙티브의 **Le Figuier de Saint-Esprit**(일요일 점심)와 Cap-Ferrat의 **Restaurant & Salon de Thé Béatrice**(빌라 입장객 전용 점심) 두 곳이다. 메뉴·가격·예약 조건은 각 식당의 장소 페이지에 있고, 어느 날 어느 끼니인지는 Day 페이지가 정본이다.
 
-그 밖의 끼니는 시장에서 조달하거나 그날 동선의 끝에서 먹는 것을 기본으로 한다. 모나코의 Marché de la Condamine이나 망통 구항구처럼 그날 안에서 정해지는 선택지는 해당 Day 페이지에 적혀 있다.
+그 밖의 끼니는 시장에서 조달하거나 그날 동선의 끝에서 먹는 것을 기본으로 한다. Day 10 모나코 점심은 Café de Paris를 기준으로 하며, Marché de la Condamine는 2026 리노베이션 폐쇄로 선택지에서 제외한다. 망통 저녁 같은 당일 선택지는 해당 Day 페이지가 정본이다.

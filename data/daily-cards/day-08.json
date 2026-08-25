@@ -6,6 +6,7 @@
   "title": "Nice 시장·구시가지·성채 언덕",
   "sourceStatus": "candidate-latest-needs-review",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:30",
   "endTime": "21:00",
   "totalDuration": "12시간 30분",
@@ -28,7 +29,7 @@
       "category": "shopping",
       "lat": 43.6958,
       "lng": 7.2753,
-      "summary": "토요 꽃·청과·식품 시장. 신선한 과일과 즉석 소카(Socca) 맛보기",
+      "summary": "토요일 08:30 시장 활성 시간. 식품·청과·수산은 06:00~14:30, 꽃시장은 06:00~17:30 운영하므로 혼잡 전 10시 이전 핵심 구매",
       "menu": "소카(Socca), 신선 무화과, 에스프레소",
       "reservation": null,
       "optional": false,
@@ -58,9 +59,9 @@
       "category": "food",
       "lat": 43.6971,
       "lng": 7.2778,
-      "summary": "Vieux Nice 니스와즈 가정식 점심 — Chez Acchiardo 는 월–금만 영업이라 이 토요일에는 불가. 토·일 점심을 여는 Chez Pipo 쪽으로 잡는다",
+      "summary": "Cours Saleya·Place Rossetti·구시가지 동선 안에서 당일 영업 중인 니스와즈 식당을 현장 선택",
       "menu": "살라드 니스와즈, 다우브(소고기 스튜), 팍시(Farcis)",
-      "reservation": "현장 방문 (Chez Acchiardo 는 주말 휴무)",
+      "reservation": null,
       "optional": false,
       "place_ref": "vieux-nice"
     },
@@ -73,9 +74,10 @@
       "category": "sight",
       "lat": 43.6953,
       "lng": 7.2797,
-      "summary": "엘리베이터(Ascenseur) 탑승 상행, Baie des Anges와 니스 전경 조망, 인공 폭포 산책",
+      "summary": "14:30~16:30 무료 공원 관람. 엘리베이터 운행 시 상행에 이용하고, 중단 시 계단·보행 또는 구시가지 압축 동선으로 전환",
       "menu": null,
-      "reservation": "무료 입장 (엘리베이터 무료 운영)",
+      "reservation": null,
+      "executionNote": "4/1~9/30 매일 08:30~20:00 · 무료 입장 · 엘리베이터는 현장 운영 확인",
       "optional": false,
       "place_ref": "colline-du-chateau"
     },
@@ -98,20 +100,50 @@
       "id": "port-lympia",
       "order": 6,
       "start": "18:30",
-      "end": "20:00",
-      "name": "Port Lympia 산책 & 저녁",
+      "end": "19:15",
+      "name": "Port Lympia 산책",
       "category": "sight",
       "lat": 43.6978,
       "lng": 7.2861,
-      "summary": "항구의 전통 목선(Pointu)과 요트 풍경, 가벼운 저녁 식사. 피로 시 생략 가능",
+      "summary": "항구의 전통 목선(Pointu)과 요트 풍경을 짧게 산책. 피로 시 Chez Pipo 저녁과 함께 가장 먼저 생략",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "선택",
+          "detail": "더위·피로 시 Chez Pipo 저녁과 함께 1순위 생략"
+        }
+      ],
+      "optional": true,
+      "place_ref": null
+    },
+    {
+      "id": "chez-pipo",
+      "order": 7,
+      "start": "19:15",
+      "end": "20:15",
+      "name": "Chez Pipo 저녁 · Socca",
+      "category": "food",
+      "lat": 43.7026,
+      "lng": 7.2856,
+      "summary": "Port Lympia 인근 13 rue Bavastro에서 소카·피살라디에르 등 니스 전통음식을 예약 없이 방문",
+      "menu": "Socca, pissaladière",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "선택",
+          "detail": "화~일 17:30~22:00 저녁 영업 · 워크인 전용"
+        }
+      ],
+      "officialUrl": "https://www.chezpipo.fr/en",
       "optional": true,
       "place_ref": null
     },
     {
       "id": "nice-stay-return",
-      "order": 7,
+      "order": 8,
       "start": "20:30",
       "end": "21:00",
       "name": "숙소 귀환 — Palais ALZIRA",
@@ -120,7 +152,14 @@
       "lng": 7.2628,
       "summary": "12 Rue Verdi 숙소 복귀 및 휴식",
       "menu": null,
-      "reservation": "예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "확정",
+          "detail": "Airbnb Palais ALZIRA · 12 Rue Verdi"
+        }
+      ],
       "optional": false,
       "place_ref": null
     }
@@ -173,6 +212,15 @@
     },
     {
       "from": "port-lympia",
+      "to": "chez-pipo",
+      "mode": "walk",
+      "duration": "8분",
+      "distance": "0.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "chez-pipo",
       "to": "nice-stay-return",
       "mode": "walk",
       "duration": "25분",
@@ -185,14 +233,15 @@
     "니스 시내 도보"
   ],
   "food": [
-    "시장 조달 또는 구시가지 골목 식당"
+    "점심: Cours Saleya·Vieux Nice 현장 선택",
+    "저녁 선택: Chez Pipo (13 rue Bavastro, 예약 없이 방문)"
   ],
   "highlights": [
     "08:30 시장 도착",
     "Castle Hill 전후 45분 휴식",
     "토요일 혼잡·더위 주의"
   ],
-  "backup": "계단·더위 부담 시 구시가지 실내·카페 중심",
+  "backup": "더위·피로 시 Port Lympia와 Chez Pipo를 먼저 생략. Castle Hill은 엘리베이터 운행 시 상행 이용하고, 중단이면 전망대를 강행하지 말고 Vieux Nice·Promenade 중심으로 압축. 우천 시 Castle Hill과 해안 산책을 줄이고 구시가지 카페·성당 중심으로 전환.",
   "map": {
     "zoom": 15,
     "center": [
@@ -202,8 +251,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "시장 이후 각 일정 시각 확정",
-    "구시가지 점심 식당 미정 — 현장 선택",
+    "Castle Hill 엘리베이터 현장 운영 확인",
+    "구시가지 점심 식당은 당일 영업을 보고 현장 선택",
     "Nice 숙소 확정 (2026-08-13, Airbnb [CONFIRMED]): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00"
   ],
   "sourceRefs": [

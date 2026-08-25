@@ -195,7 +195,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 > **Editor's Verdict**: 생장캅페라 반도 절경 위의 벨 에포크 팔라초와 9개 테마 정원, 20분 간격 클래식 음악 분수 쇼가 어우러진 리비에라 정원 예술의 절정.
 
-- **체류/요금**: 2–2.5시간 · **€17** (연중무휴 10:00–18:00, 15번 버스 연계)
+- **체류/요금**: 2–2.5시간 · **€18** (연중무휴 10:00–18:00, 15번 버스 연계)
 - **상세 가이드**: [Villa Ephrussi de Rothschild 전체 가이드 보기](../places/villa-ephrussi-de-rothschild.html)
 
 ## 음식·시장·카페·생활체험
@@ -224,7 +224,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 이 구간에서 예약이 걸린 곳은 앙티브의 **Le Figuier de Saint-Esprit**(일요일 점심)와 Cap-Ferrat의 **Restaurant & Salon de Thé Béatrice**(빌라 입장객 전용 점심) 두 곳이다. 메뉴·가격·예약 조건은 각 식당의 장소 페이지에 있고, 어느 날 어느 끼니인지는 Day 페이지가 정본이다.
 
-그 밖의 끼니는 시장에서 조달하거나 그날 동선의 끝에서 먹는 것을 기본으로 한다. 모나코의 Marché de la Condamine이나 망통 구항구처럼 그날 안에서 정해지는 선택지는 해당 Day 페이지에 적혀 있다.
+그 밖의 끼니는 시장에서 조달하거나 그날 동선의 끝에서 먹는 것을 기본으로 한다. Day 10 모나코 점심은 Café de Paris를 기준으로 하며, Marché de la Condamine는 2026 리노베이션 폐쇄로 선택지에서 제외한다. 망통 저녁 같은 당일 선택지는 해당 Day 페이지가 정본이다.
 
 ## 당일치기·우천·피로 대안
 
@@ -313,7 +313,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 *   **오늘의 결론**: 니스의 시장, 구시가지 골목, 성채 언덕의 지형을 하나의 완성된 도보 흐름으로 연결하여 파악한다.
 *   **상태**: **고정** | 날씨 의존성: 유
-*   **첫 행동·첫 예약**: 09:20 Cours Saleya 시장 투어 | **마지막 귀가**: 21:00 저녁식사 후 귀가
+*   **첫 행동**: 08:30 Cours Saleya 시장 | **마지막 귀가**: 21:00 숙소 귀환
 
 **피로도 3/5.**
 
@@ -325,27 +325,26 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 07:20–08:05 | Jason 선택 러닝 | Promenade 5km 내외 |
-| 09:20–10:20 | **Cours Saleya** | 과일·올리브·치즈·꽃시장 |
-| 10:20–11:30 | **Vieux Nice** | [Nice Old Town–Castle Hill Walk](../../places/nice-walk.html) 시작 |
-| 11:35–12:35 | **Colline du Château** | 해변·구시가지·항구 조망 |
-| 12:45–13:30 | 가벼운 점심 | socca·salade niçoise·pan bagnat 중 1개 |
-| 13:30–16:00 | Promenade 또는 Port·카페 | 폭염이면 숙소휴식 |
-| 16:30–18:00 | 선택 | Port 또는 Garibaldi 중 1개 |
-| 19:30–21:00 | 전통 Nice 저녁 | **La Table Alziari** ({{fact:la-table-alziari.hours}}) 또는 **Chez Pipo** ({{fact:chez-pipo.hours}}) — Acchiardo 는 {{fact:acchiardo.closed}} 라 토요일 불가 |
+| 08:30–10:00 | **Cours Saleya** | 식품·청과·수산 06:00–14:30, 토요일 꽃시장 06:00–17:30. 혼잡 전 핵심 구매 |
+| 10:15–12:15 | **Vieux Nice** | [Nice Old Town–Castle Hill Walk](../../places/nice-walk.html) 구시가지 구간 |
+| 12:30–14:00 | Vieux Nice 점심 | Cours Saleya·Rossetti·구시가지 안에서 당일 영업 식당 현장 선택 |
+| 14:30–16:30 | **Colline du Château** | 08:30–20:00 무료 공원. 엘리베이터 운행 시 이용, 중단 시 계단·일정 압축 |
+| 16:45–18:00 | **Promenade des Anglais** | Quai des États-Unis에서 해안 산책 |
+| 18:30–19:15 | **Port Lympia** | 선택 산책 · 더위·피로 시 1순위 생략 |
+| 19:15–20:15 | **Chez Pipo** | 선택 저녁 · 13 rue Bavastro · 17:30–22:00 · 워크인 전용 |
 #### 오늘 지도
 {{VISUAL:VIS-MAP-042|type=map|status=linked|strategy=execution-map}}
 
 #### 식사 및 카페
-*   **점심**: Cours Saleya 시장 및 Vieux Nice 캐주얼 식사 (소카, 팡 바냐 등) - 예산 €10–20/인
-*   **저녁**: La Table Alziari 또는 Chez Pipo (니스 전통요리 및 제철 생선). Acchiardo 는 {{fact:acchiardo.closed}} 휴무
+*   **점심**: Cours Saleya·Vieux Nice 동선 안에서 현장 선택 (소카, 팡 바냐, 니스와즈 요리)
+*   **저녁 선택**: Port Lympia 인근 **Chez Pipo** (13 rue Bavastro, {{fact:chez-pipo.hours}}, 예약 없이 방문)
 
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
-1. **[1순위 삭제]**: 16:30 Port 또는 Garibaldi 추가 산책 (숙소 복귀 및 휴식으로 대체)
-2. **[2순위 삭제]**: 오후 카페 체류 및 두 번째 산책 (식사 예약 전 숙소 완전휴식)
+1. **[1순위 삭제]**: Port Lympia와 Chez Pipo 저녁 전체
+2. **[2순위 단축]**: Promenade 체류
 
 #### 대안 대책 (우천·휴관·교통 장애)
-*   **우천 시**: Castle Hill 등정 생략, Palais Lascaris 또는 Matisse/Chagall 미술관 실내 관람으로 전환.
+*   **더위·우천 시**: 엘리베이터 중단이면 Castle Hill을 강행하지 않고 Vieux Nice 카페·성당과 Promenade 중심으로 압축한다.
 
 ---
 
@@ -366,13 +365,13 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:15–08:46 | Nice-Ville → Antibes TER | 08:28 TER 탑승 (18분 소요, 앙티브역 하차) |
-| 08:50–12:00 | **앙티브 구시가지 & 프로방스 시장** | 성벽길(Promenade Amiral de Grasse), Marché Provençal, 피카소 미술관 외관 |
-| 12:15–14:00 | **Le Figuier de Saint-Esprit 점심** | **[희망][Primary]** 미쉐린 1스타 무화과나무 중정 런치 (사전예약 12:15 필수) |
-| 14:15–14:35 | Antibes → Cannes TER | 14:15 TER 탑승 (12분 소요, 칸 역 하차) |
+| 08:15–08:46 | Nice-Ville → Antibes TER | 08:28 전후 운영 목표 · 당일 SNCF Connect 운행·플랫폼 확인 |
+| 08:50–12:00 | **앙티브 구시가지 & 프로방스 시장** | Marché Provençal 일요일 07:30–13:00 · 우천 시 Musée Picasso 실내 관람 |
+| 12:15–14:00 | **Le Figuier de Saint-Esprit 점심** | 일요일 주문 12:15–13:30 · 희망 슬롯만 확인, 실제 예약 confirmation은 없음 |
+| 14:15–14:35 | Antibes → Cannes TER | 14:15 전후 운영 목표 · 당일 SNCF Connect 확인 |
 | 14:45–15:45 | **Le Suquet 구시가지 언덕** | 옛 어촌 자갈길 등정, 성채 광장에서 칸 만 파노라마 조망 |
 | 15:50–16:50 | **Boulevard de la Croisette** | 팔레 데 페스티발 외관 및 야자수 해안 산책로 벤치 휴식 |
-| 17:00–17:30 | Cannes → Nice-Ville TER | 칸 역 복귀 및 니스행 TER 탑승 |
+| 17:00–17:30 | Cannes → Nice-Ville TER | 17:00 전후 운영 목표 · 당일 SNCF Connect 확인 |
 | 17:35–18:00 | 숙소 복귀 및 완충 휴식 | 12 Rue Verdi 숙소 복귀 |
 #### 오늘 지도
 {{VISUAL:VIS-MAP-043|type=map|status=linked|strategy=execution-map}}
@@ -386,7 +385,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 2. **[2순위 삭제]**: Vieux-Port 항구 걷기 축소 (Le Suquet 전망 후 즉시 점심식사)
 
 #### 대안 대책 (우천·휴관·교통 장애)
-*   **우천 시**: Cannes 일정 전체 취소, Nice 시내의 미술관(Matisse, Chagall) 실내 일정으로 일괄 대체.
+*   **우천 시**: Antibes 야외 체류를 줄이고 **Musée Picasso(일요일 10:00–18:00)**를 60~90분 관람한다. Cannes에서는 Croisette를 먼저 생략하고 Le Suquet만 짧게 본다. 열차 지연 시에도 Croisette가 1순위 삭제다.
 
 ---
 
@@ -400,79 +399,81 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 **피로도 4/5.**
 
 #### 핵심 행동 (최대 3개)
-1. **Monaco 오전 관광 및 점심**: Le Rocher(대공궁 광장·구시가지·대성당) → Port Hercule → Monte-Carlo(카지노 광장 외관) 탐방 후 Café de Paris Monte-Carlo 등에서 점심.
+1. **Monaco 오전 관광 및 점심**: Le Rocher의 대성당·전망·골목을 본 뒤 11:40 대공궁 광장으로 이동해 **11:55 근위병 교대식**을 보고 Café de Paris Monte-Carlo에서 점심.
 2. **Menton 오후 산책 및 휴식**: Monaco에서 TER(약 11분)로 Menton 이동, Vieille Ville(구시가지)·Basilique Saint-Michel-Archange 일대·전망 포인트·해변 산책 및 젤라또/카페 휴식.
-3. **Menton 저녁 및 Nice 귀가**: Le Petit Port 등 항구 근처 해산물 저녁 후 TER(약 40~45분)로 Nice 귀환 (21:00~22:00 목표).
+3. **Menton 선택 저녁 및 Nice 귀가**: Les Sablettes Beach를 당일 확인하되 일정이 밀리면 생략하고 TER로 Nice 귀환.
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
 | 08:30 전후 | Nice 숙소 출발 | Nice-Ville역으로 도보 이동 |
-| 09:00 전후 | Nice → Monaco TER | TER 약 20~25분. 역내 엘리베이터·출구 확인 |
-| 09:30~12:30 | **Monaco 오전 관광** | Le Rocher(대공궁 언덕·구시가지·대성당) → Port Hercule → Monte-Carlo(카지노 광장 외관) |
-| 12:30~14:00 | **Monaco 점심** | **Café de Paris Monte-Carlo** (대안: Marché de la Condamine, Eqvita, Maya Bay) |
-| 14:00~14:30 | Monaco → Menton | TER 열차 이동 (약 11분) |
+| 09:00 전후 | Nice → Monaco TER | TER 약 20~25분 · 당일 SNCF Connect 운행·플랫폼 확인 |
+| 09:30~12:20 | **Monaco 오전 관광** | Le Rocher 대성당·전망·골목 → 11:40 Palace Square → **11:55 근위병 교대식** |
+| 12:30~14:00 | **Monaco 점심** | **Café de Paris Monte-Carlo** · 월요일 정상 영업, 예약 완료 근거 없음. Marché de la Condamine는 2026 리노베이션 폐쇄 |
+| 14:00~14:30 | Monaco → Menton | TER 약 11분 · 당일 SNCF Connect 확인 |
 | 14:30~18:30 | **Menton 구시가지·해변 산책** | Vieille Ville, Basilique Saint-Michel-Archange 일대, 구시가지 전망 포인트, 파스텔 골목 감상, 해변 산책 및 젤라또/카페 휴식 |
-| 19:00~20:30 | **Menton 저녁** | **Le Petit Port** (항구 근처 해산물·생선 요리 / 대안: Le Bistrot du Port, La Belle Étoile / Special: Mirazur 사전예약 선택지) |
+| 18:30~20:00 | **Menton 저녁 선택** | **Restaurant Les Sablettes Beach** 우선 확인 · 18:30까지 밀리면 생략 |
 | 20:30~21:15 전후 | Menton → Nice | TER 열차 탑승 (약 40~45분, 당일 SNCF Connect에서 출발시각 확인) |
 | 21:00~22:00 | Nice 숙소 도착 | 무리 없는 휴식 및 귀가 |
 #### 오늘 지도
 {{VISUAL:VIS-MAP-044|type=map|status=linked|strategy=execution-map}}
 
 #### 식사 및 카페
-*   **점심 (Monaco)**: **Café de Paris Monte-Carlo** (Place du Casino, 클래식한 모나코 분위기 우선 검토) / 대안: Marché de la Condamine(합리적 로컬 푸드), Eqvita(샐러드·건강식), Maya Bay(아시안 퓨전) - 예산 €25–60/인
-*   **저녁 (Menton)**: **Le Petit Port** (항구 근처 생선·해산물 중심 현실적 추천) / 대안: Le Bistrot du Port, La Belle Étoile / Special Option: Mirazur(고급 다이닝 사전예약 선택지) - 예산 €30–60/인
+*   **점심 (Monaco)**: **Café de Paris Monte-Carlo** (Place du Casino) · 예약 여부 사전 확인
+*   **저녁 선택 (Menton)**: **Restaurant Les Sablettes Beach** 또는 Nice 복귀 후 숙소 주변 식사
 *   **카페/간식 (Menton)**: 구시가지 또는 해변 인근 젤라또 및 카페 휴식
 
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
-1. **[1순위 단축]**: Monaco 관광 축소 후 Menton으로 조기 이동
-2. **[2순위 단축]**: Menton 저녁을 생략하고 Nice로 조기 복귀하여 저녁 식사
-3. **[3순위 삭제]**: 피로 극심 시 Menton을 전면 생략하고 Monaco에서 Nice로 복귀
+1. **[1순위 단축]**: 열차 지연 시 Monte-Carlo 점심·산책 압축 (가능하면 11:55 anchor 유지)
+2. **[2순위 단축]**: Menton 도착이 15:30 이후면 해변 체류 축소
+3. **[3순위 삭제]**: 18:30까지 밀리면 Menton 저녁 생략 후 Nice 직행
 
 #### 대안 대책 (우천·휴관·교통 장애)
-*   **우천 시**: 야외 도보 축소, Monaco 해양박물관(Oceanographic Museum) 실내 관람 또는 Menton 실내 카페 중심으로 전환.
+*   **우천 시**: Monaco 해양박물관(Oceanographic Museum)을 실내 대안으로 사용하고 Menton 해변 체류를 축소.
 *   **철도 운행 변동 시**: 당일 SNCF Connect 앱으로 TER 실시간 시간표 및 운행 상태 확인.
 
 ---
 
 ## Day 5 — 9월 8일 화요일
-### Nice 생활·회복일: 리베라시옹 시장, 로스차일드 빌라 런치, 프롬나드 해변 휴식
+### Villefranche · Villa Ephrussi 런치 · Èze 절벽마을
 
-*   **오늘의 결론**: 아침 리베라시옹 로컬 시장 후 생장캅페라 로스차일드 저택에서 여유로운 오션뷰 런치를 즐기고, 오후 프롬나드 해변 휴식과 세탁으로 익일 프로방스 렌터카 이동을 완벽히 준비한다.
-*   **상태**: **자유** | 날씨 의존성: 무
-*   **첫 행동·첫 예약**: 08:45 Marché de la Libération 장보기 | **마지막 귀가**: 18:00 숙소 귀환 및 렌터카 준비
+*   **오늘의 결론**: Villefranche의 해안 구시가지에서 Villa Ephrussi와 Béatrice 런치를 거쳐, 15→83 환승으로 Èze를 보고 82/602→Nice Vauban 연결로 귀환한다.
+*   **상태**: **고정** | 날씨 의존성: 유
+*   **첫 행동**: 08:30 숙소 출발 | **hard stop**: Béatrice 13:30~13:45 종료 | **마지막 귀가**: 19:00 숙소
 
-**피로도 2/5.**
+**피로도 3/5.**
 
 #### 핵심 행동 (최대 3개)
-1. **Marché de la Libération (08:45~10:15)**: 니스 시민들의 부엌 시장에서 과일·치즈 탐방 및 아침 에스프레소.
-2. **Villa Ephrussi & Restaurant Béatrice 런치 (11:00~14:30)**: 분홍빛 벨 에포크 팔라초와 9개 테마 정원 산책, 테라스 점심 (WISH-02).
-3. **숙소 휴식·세탁 & 프롬나드 산책 (15:30~18:00)**: 빨래방/세탁기 이용, 프롬나드 해변 벤치 휴식, 9/9 렌터카 인수 서류 최종 점검.
+1. **Villefranche-sur-Mer (08:45~10:15)**: 항만·Rue Obscure·생피에르 예배당 외관을 90분 산책.
+2. **Villa Ephrussi & Restaurant Béatrice (10:45~13:45)**: €18 입장권으로 빌라와 정원을 보고, 12:15 점심 후 늦어도 13:45 출발.
+3. **Èze Village (14:30~17:00)**: 15→Beaulieu/Baie des Fourmis→83 환승 후 중세 골목과 Jardin Exotique를 관람.
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:45–10:15 | **Marché de la Libération** | 로컬 식재료 탐방, 과일·차량간식 구매, Gare du Sud 카페 |
-| 10:30–11:00 | Nice → Saint-Jean-Cap-Ferrat | 15번 버스 탑승 (약 25분, Passable / Villa Ephrussi 하차) |
-| 11:00–12:15 | **Villa Ephrussi de Rothschild** | 베아트리스 남작부인의 팔라초 및 9개 테마 정원 산책 (€17) |
-| 12:15–13:45 | **Restaurant Béatrice 점심** | **[희망][Primary]** 저택 테라스에서 빌프랑슈 만 조망 런치 (WISH-02) |
-| 13:45–14:30 | **에프뤼시 분수 음악쇼** | 20분 간격 클래식 음악 분수 관람 후 15번 버스 니스 복귀 |
-| 15:30–17:30 | **숙소 휴식 & Promenade des Anglais** | 세탁기 가동, 짐 정리, 프롬나드 해변 벤치 휴식 및 카페 |
-| 18:00–19:00 | **9/9 프로방스 렌터카 준비** | 09:00 Hertz 니스역 인수 동선·서류·보험 확인 및 조기 취침 |
+| 08:30–08:45 | Nice → Villefranche TER | 7~10분 수준 · 당일 SNCF Connect 운행·플랫폼 확인 |
+| 08:45–10:15 | **Villefranche-sur-Mer** | Quai Courbet·Rue Obscure·항만 산책 |
+| 10:15–10:45 | Villefranche → Villa Ephrussi | Lignes d’Azur 15 · Passable/Rothschild 하차 정류장 당일 확인 |
+| 10:45–12:15 | **Villa Ephrussi de Rothschild** | 2/1~11/1 10:00–18:00 · 성인 €18 · TICKET |
+| 12:15–13:45 | **Restaurant Béatrice 점심** | 11:00–17:30, 점심 12:00–15:00 · 예약 confirmation 없음 · 13:45 hard stop |
+| 13:45–14:30 | Villa → Èze Village | 15 → Beaulieu/Baie des Fourmis → 83 · 환승 대기 포함 40~60분 buffer |
+| 14:30–17:00 | **Èze Village & Jardin Exotique** | 9월 09:00–19:30 · 성인 €10 · 현장 티켓 가능 |
+| 17:00–19:00 | Èze → Nice 숙소 | 82 또는 602 → Nice Vauban → Tram L1/연결교통 |
+
 #### 오늘 지도
 {{VISUAL:VIS-MAP-045|type=map|status=linked|strategy=execution-map}}
 
 #### 식사 및 카페
-*   **아침**: Marché de la Libération 신선 과일 및 에스프레소
-*   **점심**: **Restaurant & Salon de Thé Béatrice** (Villa Ephrussi 내 테라스, WISH-02 샐러드·생선요리 €24~€45)
-*   **저녁**: **숙소 자가 조리** 또는 숙소 인근 가벼운 니스식 샐러드·파니니 - 예산 €10–20/인
+*   **아침**: Villefranche 항구 카페 에스프레소·크루아상
+*   **점심**: **Restaurant & Salon de Thé Béatrice** (WISH-02, 예약 권장·미확정)
+*   **저녁**: Nice 복귀 후 숙소 간단식 또는 동네 식당
 
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
-1. **[1순위 삭제]**: 사진미술관 관람 (생략하고 늦잠 및 숙소 휴식 연장)
-2. **[2순위 삭제]**: 오후 해변 산책 및 수영 모듈 (숙소 내 완전 휴식)
+1. **[1순위 단축]**: Villa/Béatrice가 30분 이상 밀리면 Èze 체류를 60~90분으로 축소
+2. **[2순위 삭제]**: 15:00 이후에도 Cap-Ferrat를 출발하지 못하면 Èze 생략 후 Nice 직행
 
-#### 대안 대책 (우천·휴관·교통 장애)
-*   **우천 시**: 해변 산책 생략, 숙소 바로 옆 코인세탁소 이용 및 실내 완전 휴식.
+#### 대안 대책 (우천·교통 장애)
+*   **우천 시**: Villa 실내와 Béatrice를 충분히 즐기고 Èze 정원은 축소·생략한다. 복귀는 82/602→Vauban 연결을 기준으로 당일 운행을 확인한다.
 
 ---
 
