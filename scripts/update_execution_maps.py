@@ -40,9 +40,9 @@ EXTRA = {
         point("Notre-Dame de la Garde", 43.2841, 5.3712, "근교·이동지", "체력·날씨에 따른 선택"),
     ],
     "Avignon": [
-        point("Arles", 43.6846, 4.6326, "교통", "9/19 철도 기본 도착점"),
-        point("Arènes d’Arles", 43.6776, 4.6309, "핵심 방문지", "9/19 기본 일정"),
-        point("Théâtre antique", 43.6765, 4.6279, "핵심 방문지", "9/19 기본 일정"),
+        point("Arles", 43.6846, 4.6326, "교통", "9/18 철도 기본 도착점"),
+        point("Arènes d’Arles", 43.6776, 4.6309, "핵심 방문지", "9/18 기본 일정"),
+        point("Théâtre antique", 43.6765, 4.6279, "핵심 방문지", "9/18 기본 일정"),
         point("Place du Forum", 43.6773, 4.6272, "시장·생활", "점심·카페 휴식"),
         point("Cloître Saint-Trophime", 43.6769, 4.6285, "핵심 방문지", "일정 균형에 따른 우선 선택"),
         point("Fondation Vincent van Gogh", 43.6760, 4.6262, "핵심 방문지", "Saint-Trophime과 교환하는 선택"),
@@ -52,11 +52,11 @@ EXTRA = {
 
 
 CAPTIONS = {
-    "Aix": "Day 12–16 · 9/11 Marseille 기본일과 Cassis 선택 대안의 기준점. 번호는 개략 흐름이다.",
+    "Aix": "Day 12–16 · 9/11 Cassis·Calanques와 9/12 Marseille 기본 일정의 기준점. 번호는 개략 흐름이다.",
     "Luberon": "Day 16–18 · Gordes 2박과 Luberon 마을의 MUST·OPTIONAL 기준점. L’Isle-sur-la-Sorgue는 9/15 화요일 물길 중심 일정이다.",
-    "Avignon": "Day 19–23 · Avignon·Uzès·Pont du Gard·Arles 기본 일정과 Alpilles 선택 대안의 기준점.",
+    "Avignon": "Day 18–23 · Avignon 5박, Day 20 Uzès·Pont du Gard·Nîmes와 차량 조기 반납, Day 21 Arles의 기준점.",
     "Lyon": "Day 23–27 · 9/20–9/24 Lyon과 9/23 Annecy 당일치기의 기준점.",
-    "Paris": "Day 27–43 · 9/24–10/10 Paris 16박 생활권과 선택 근교의 기준점.",
+    "Paris": "Day 27–42 · 9/24–10/9 Paris 15박 생활권과 선택 근교의 기준점.",
 }
 
 

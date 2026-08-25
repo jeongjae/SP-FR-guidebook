@@ -23,10 +23,11 @@
 | 9/4 | Bàscara 체크아웃·BCN T1 반납 14:00·VY1521 15:30 수속 |
 | 9/9 | Nice역 렌터카 09:00 인수·Saint-Paul 주차·Aix 체크인 |
 | 9/11 | Marseille 왕복 열차·MuCEM 운영·Vieux-Port 치안 |
-| 9/13 | Lourmarin 행사·Coustellet 시장·농가 체크인 |
-| 9/15 | Gordes 시장·Bories·Sénanque 운영 |
-| 9/18–9/19 | Uzès 시장·Pont du Gard 홍수·주차 (9/18) · Arles JEP 혼잡·시설 운영 (9/19) |
-| 9/20 | 주유·Avignon TGV역 반납 09:00·TGV 12176 10:22 플랫폼 |
+| 9/13 | Aix 체크아웃·Lourmarin 점심·Gordes 2박 체크인·주차 |
+| 9/15 | Gordes 체크아웃·L'Isle 물길·Avignon 5박 체크인 |
+| 9/17 | Uzès·Pont du Gard·Nîmes 주차·운영 · 주유 · Avignon TGV Hertz 18:30 이전 조기 반납 |
+| 9/18–9/19 | Arles TER·JEP 혼잡·시설 운영 (9/18) · Avignon Palais·Les Halles 운영 (9/19) |
+| 9/20 | 차량 절차 없이 Avignon TGV 이동·TGV 12176 10:22 플랫폼 |
 | 9/23 | Annecy TER·호수날씨 |
 | 9/30 | Fashion Week 공개행사·공식 확인된 팝업만 |
 | 10/1 | 저녁 대체안 확정 여부·예약 필요 시 마감 확인 |

@@ -1788,42 +1788,106 @@
       "date": "2026-09-17",
       "dateLabel": "9/17 목",
       "baseCity": "Avignon",
-      "theme": "Luberon→L’Isle→Avignon",
-      "core": "L’Isle 목요시장, 체크인, 성벽도시 적응",
-      "option": "Fontaine 또는 Nocturne 선택",
-      "fatigue": "3",
-      "lock": "Avignon 숙소",
+      "theme": "Uzès·Pont du Gard·Nîmes와 차량 반납",
+      "core": "Uzès 구시가지, Pont du Gard, Nîmes 로마유적, Avignon TGV Hertz 18:30 이전 반납",
+      "option": "지연 시 Nîmes 체류부터 축소",
+      "fatigue": "4",
+      "lock": "9/17 조기 반납 예약 변경·주차",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
       ],
       "places": [
         {
-          "id": "l-isle-sur-la-sorgue",
-          "name": "L’Isle-sur-la-Sorgue",
-          "nameKo": "릴쉬르라소르그",
+          "id": "uzes",
+          "name": "Uzès",
+          "nameKo": "위제스",
           "type": "town",
-          "status": "confirmed",
-          "importance": "hero",
-          "chapter": "luberon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
-          ]
-        },
-        {
-          "id": "avignon",
-          "name": "Avignon",
-          "nameKo": "아비뇽",
-          "type": "city",
           "status": "confirmed",
           "importance": "hero",
           "chapter": "avignon",
           "visibility": "public",
           "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "pont-du-gard",
+          "name": "Pont du Gard",
+          "nameKo": "퐁 뒤 가르",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "nimes",
+          "name": "Nîmes",
+          "nameKo": "님",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "arenes-de-nimes",
+          "name": "Arènes de Nîmes",
+          "nameKo": "님 원형경기장",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "maison-carree",
+          "name": "Maison Carrée",
+          "nameKo": "메종 카레",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "avignon-tgv",
+          "name": "Avignon TGV",
+          "nameKo": "아비뇽 TGV역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": false,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
@@ -1837,8 +1901,121 @@
       "date": "2026-09-18",
       "dateLabel": "9/18 금",
       "baseCity": "Avignon",
+      "theme": "Arles 철도 당일치기",
+      "core": "Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette",
+      "option": "Fondation·LUMA·Alyscamps·고대박물관은 선택",
+      "fatigue": "3",
+      "lock": "TER·문화유산의 날 운영 재확인",
+      "sourceFiles": [
+        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
+      ],
+      "places": [
+        {
+          "id": "arles",
+          "name": "Arles",
+          "nameKo": "아를",
+          "type": "city",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "arenes-d-arles",
+          "name": "Arènes d’Arles",
+          "nameKo": "아를 원형경기장",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "theatre-antique-arles",
+          "name": "Théâtre antique d’Arles",
+          "nameKo": "아를 고대극장",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "place-du-forum-arles",
+          "name": "Place du Forum",
+          "nameKo": "포룸 광장",
+          "type": "square",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "cloitre-saint-trophime",
+          "name": "Cloître Saint-Trophime",
+          "nameKo": "생트로핌 회랑",
+          "type": "historic-site",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "la-roquette",
+          "name": "La Roquette",
+          "nameKo": "라 로케트",
+          "type": "neighborhood",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "date": "2026-09-19",
+      "dateLabel": "9/19 토",
+      "baseCity": "Avignon",
       "theme": "교황도시 핵심",
-      "core": "Les Halles, Palais des Papes, Rocher, Pont",
+      "core": "Les Halles, Palais des Papes, Rocher des Doms, Pont Saint-Bénézet",
       "option": "추가 미술관 1곳 이하",
       "fatigue": "3",
       "lock": "Palais·식당",
@@ -1914,131 +2091,114 @@
       ]
     },
     {
-      "day": 22,
-      "date": "2026-09-19",
-      "dateLabel": "9/19 토",
-      "baseCity": "Avignon",
-      "theme": "Uzès 시장과 Pont du Gard",
-      "core": "Uzès 토요시장·구시가지, Pont du Gard",
-      "option": "박물관 또는 일몰 택1",
-      "fatigue": "4",
-      "lock": "주차·입장",
-      "sourceFiles": [
-        "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-        "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
-      ],
-      "places": [
-        {
-          "id": "uzes",
-          "name": "Uzès",
-          "nameKo": "위제스",
-          "type": "town",
-          "status": "confirmed",
-          "importance": "hero",
-          "chapter": "avignon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
-          ]
-        },
-        {
-          "id": "pont-du-gard",
-          "name": "Pont du Gard",
-          "nameKo": "퐁 뒤 가르",
-          "type": "historic-site",
-          "status": "confirmed",
-          "importance": "hero",
-          "chapter": "avignon",
-          "visibility": "public",
-          "photoNeeded": true,
-          "sourceFiles": [
-            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
-            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
-          ]
-        }
-      ]
-    },
-    {
       "day": 23,
       "date": "2026-09-20",
       "dateLabel": "9/20 일",
-      "baseCity": "Avignon",
-      "theme": "Alpilles 마을과 경관",
-      "core": "Les Baux, Saint-Rémy",
-      "option": "Glanum 또는 Carrières 택1",
-      "fatigue": "4",
-      "lock": "주차",
+      "baseCity": "Lyon",
+      "theme": "TGV 이동·Lyon 적응",
+      "core": "차량 절차 없이 Avignon TGV 이동, TGV 12176 10:22→11:28 (1등석 확정 [CONFIRMED]), Lagrange Lumière 15:00 체크인, Bellecour·Célestins",
+      "option": "Jacobins·Saône 짧은 산책",
+      "fatigue": "3",
+      "lock": "TGV 10:22·짐 보관 확인",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
       ],
       "places": [
         {
-          "id": "les-baux-de-provence",
-          "name": "Les Baux-de-Provence",
-          "nameKo": "레 보 드 프로방스",
-          "type": "village",
+          "id": "avignon-tgv",
+          "name": "Avignon TGV",
+          "nameKo": "아비뇽 TGV역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "avignon",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+          ]
+        },
+        {
+          "id": "lyon-part-dieu",
+          "name": "Lyon Part-Dieu",
+          "nameKo": "리옹 파르디외역",
+          "type": "station",
+          "status": "confirmed",
+          "importance": "text-only",
+          "chapter": "lyon",
+          "visibility": "public",
+          "photoNeeded": false,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
+          ]
+        },
+        {
+          "id": "lyon",
+          "name": "Lyon",
+          "nameKo": "리옹",
+          "type": "city",
           "status": "confirmed",
           "importance": "hero",
-          "chapter": "avignon",
+          "chapter": "lyon",
           "visibility": "public",
           "photoNeeded": true,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
           ]
         },
         {
-          "id": "saint-remy-de-provence",
-          "name": "Saint-Rémy-de-Provence",
-          "nameKo": "생레미드프로방스",
-          "type": "town",
+          "id": "place-bellecour",
+          "name": "Place Bellecour",
+          "nameKo": "벨쿠르 광장",
+          "type": "square",
           "status": "confirmed",
           "importance": "major",
-          "chapter": "avignon",
+          "chapter": "lyon",
           "visibility": "public",
           "photoNeeded": true,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
           ]
         },
         {
-          "id": "glanum",
-          "name": "Glanum",
-          "nameKo": "글라눔",
-          "type": "historic-site",
+          "id": "place-des-jacobins",
+          "name": "Place des Jacobins",
+          "nameKo": "자코뱅 광장",
+          "type": "square",
           "status": "optional",
           "importance": "supporting",
-          "chapter": "avignon",
+          "chapter": "lyon",
           "visibility": "public",
           "photoNeeded": true,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
           ]
         },
         {
-          "id": "carrieres-des-lumieres",
-          "name": "Carrières des Lumières",
-          "nameKo": "카리에르 드 뤼미에르",
-          "type": "attraction",
+          "id": "saone",
+          "name": "Saône riverfront",
+          "nameKo": "손강변",
+          "type": "riverfront",
           "status": "optional",
           "importance": "supporting",
-          "chapter": "avignon",
+          "chapter": "lyon",
           "visibility": "public",
           "photoNeeded": true,
           "sourceFiles": [
             "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
             "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
-            "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
+            "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md"
           ]
         }
       ]

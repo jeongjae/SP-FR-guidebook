@@ -240,6 +240,38 @@
       ]
     },
     {
+      "id": "arenes-de-nimes",
+      "name": "Arènes de Nîmes",
+      "city": "Nîmes",
+      "type": "attraction",
+      "lat": 43.8349,
+      "lng": 4.3596,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ar%C3%A8nes+de+N%C3%AEmes",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "editorialSlug": "arenes-de-nimes"
+    },
+    {
+      "id": "maison-carree",
+      "name": "Maison Carrée",
+      "city": "Nîmes",
+      "type": "attraction",
+      "lat": 43.8382,
+      "lng": 4.3561,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison+Carr%C3%A9e%2C+N%C3%AEmes",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "editorialSlug": "maison-carree"
+    },
+    {
       "id": "les-baux-de-provence",
       "name": "Les Baux",
       "city": "Avignon",

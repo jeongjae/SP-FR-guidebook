@@ -29,10 +29,10 @@ status: "chapter-derived master itinerary; booking values pending"
 | 17 | 9/14 월 | Gordes | 오크르와 Sénanque | Roussillon·Sentier des Ocres, Abbaye de Sénanque, Gordes 복귀 | Ménerbes 우선 선택, Goult 먼저 삭제 | 3 | Sénanque 슬롯·오커길 |
 | 18 | 9/15 화 | Avignon | 물의 Provence→Avignon | Gordes 체크아웃, L'Isle 물길·물레방아, Avignon 체크인 | Fontaine-de-Vaucluse 선택; 화요일 앤틱·시장 일정 금지 | 3 | Avignon 5박·주차 |
 | 19 | 9/16 수 | Avignon | Saint-Rémy 시장과 Les Baux | Saint-Rémy 수요시장·구시가지·점심, Les Baux 성채·전망 | Orange는 가장 먼저 삭제하는 Bonus | 4 | 시장·Château 운영 |
-| 20 | 9/17 목 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher, Pont | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
-| 21 | 9/18 금 | Avignon | Uzès와 Pont du Gard | Uzès 구시가지, Pont du Gard | 시장은 금요일 운영 재확인; 박물관·일몰 택1 | 4 | 주차·입장 |
-| 22 | 9/19 토 | Avignon | Arles 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 4 | 문화유산의 날·철도/주차 |
-| 23 | 9/20 일 | Lyon | 차량반납·TGV·Lyon 적응 | Avignon TGV역 반납 09:00, **TGV 12176 10:22→11:28** (1등석 확정 [CONFIRMED]), Lagrange Lumière 15:00 체크인, Bellecour·Célestins | Jacobins·Saône 짧은 산책 | 4 | 반납 09:00 준수 · 일요일 개점(10:00) 전 키드롭 확인 |
+| 20 | 9/17 목 | Avignon | Uzès·Pont du Gard·Nîmes와 차량 반납 | Uzès 구시가지, Pont du Gard, Nîmes 로마유적, Avignon TGV Hertz 18:30 이전 반납 | 지연 시 Nîmes 체류부터 축소 | 4 | 9/17 조기 반납 예약 변경·주차 |
+| 21 | 9/18 금 | Avignon | Arles 철도 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 3 | TER·문화유산의 날 운영 재확인 |
+| 22 | 9/19 토 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher des Doms, Pont Saint-Bénézet | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
+| 23 | 9/20 일 | Lyon | TGV 이동·Lyon 적응 | 차량 절차 없이 Avignon TGV 이동, **TGV 12176 10:22→11:28** (1등석 확정 [CONFIRMED]), Lagrange Lumière 15:00 체크인, Bellecour·Célestins | Jacobins·Saône 짧은 산책 | 3 | TGV 10:22·짐 보관 확인 |
 | 24 | 9/21 월 | Lyon | Fourvière와 Vieux Lyon | Fourvière, Rosaire 하산, Saint-Jean, traboules | 로마극장 선택 | 4 | 푸니쿨라·월요일 운영 |
 | 25 | 9/22 화 | Lyon | Silk & Gastronomy — 일하는 언덕과 먹는 도시 | Croix-Rousse 화요 시장(08:45), **Maison des Canuts 직조 시연(11:00)**, **Halles Paul Bocuse 2차 미식 점심(12:30~14:15)** & 식재료 탐방, Parc de la Tête d’Or(15:15~17:15) | 17:30 복귀·저녁 가볍게 | 3 | Maison des Canuts 11:00 직조 시연 |
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
@@ -64,6 +64,7 @@ status: "chapter-derived master itinerary; booking values pending"
 | 9/13 | Aix→Lourmarin→Gordes | Aix 4박 체크아웃 후 Lourmarin 점심, Gordes 2박 체크인 |
 | 9/15 | Gordes→L'Isle-sur-la-Sorgue→Avignon | Gordes 2박 체크아웃 후 물길 산책, Avignon 5박 체크인 |
 | 9/16 | Avignon→Saint-Rémy→Les Baux→Avignon | 수요시장과 Alpilles 당일 운전; Orange는 Bonus |
-| 9/20 | Avignon→Lyon | 주유·반납·TGV 완충시간 확보 |
+| 9/17 | Avignon→Uzès→Pont du Gard→Nîmes→Avignon TGV | 18:30 이전 Hertz 조기 반납; 지연 시 Nîmes부터 축소 |
+| 9/20 | Avignon→Lyon | 차량 절차 없이 TGV 12176 탑승·Lyon 체크인 |
 | 9/24 | Lyon→Paris | 15박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |
 | 10/9 | Paris→CDG | 출국일 도심 관광 금지, 공항 도착여유 최우선. OZ502 19:10 출발 |

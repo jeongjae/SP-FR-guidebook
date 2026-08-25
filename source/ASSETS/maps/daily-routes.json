@@ -1122,8 +1122,160 @@
     },
     {
       "date": "2026-09-17",
+      "city": "Avignon · Uzès · Pont du Gard · Nîmes",
+      "title": "Uzès · Pont du Gard · Nîmes & 렌터카 최종 반납",
+      "center": [
+        43.92,
+        4.52
+      ],
+      "zoom": 9,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 0,
+          "plannedTime": "07:45 출발",
+          "note": "Avignon 3박차. 렌터카 마지막 운행일."
+        },
+        {
+          "placeId": "uzes",
+          "order": 1,
+          "plannedTime": "08:30–10:30",
+          "note": "구시가지와 Place aux Herbes."
+        },
+        {
+          "placeId": "pont-du-gard",
+          "order": 2,
+          "plannedTime": "10:50–13:10",
+          "note": "수로교 관람과 간단한 점심."
+        },
+        {
+          "placeId": "arenes-de-nimes",
+          "order": 3,
+          "plannedTime": "13:45–14:45",
+          "note": "Nîmes 원형경기장."
+        },
+        {
+          "placeId": "maison-carree",
+          "order": 4,
+          "plannedTime": "14:45–15:45",
+          "note": "15:45 출발 Hard Stop."
+        },
+        {
+          "placeId": "avignon-tgv",
+          "order": 5,
+          "plannedTime": "16:30–18:30",
+          "note": "주유·차량 촬영 후 Hertz 조기 반납. 기존 9/20 계약은 9/17로 변경 필요."
+        },
+        {
+          "placeId": "avignon-stay-candidate",
+          "order": 6,
+          "plannedTime": "19:00 이후",
+          "note": "TER 또는 택시로 숙소 복귀."
+        }
+      ],
+      "segments": [
+        {
+          "from": "avignon-stay-candidate",
+          "to": "uzes",
+          "mode": "driving"
+        },
+        {
+          "from": "uzes",
+          "to": "pont-du-gard",
+          "mode": "driving"
+        },
+        {
+          "from": "pont-du-gard",
+          "to": "arenes-de-nimes",
+          "mode": "driving"
+        },
+        {
+          "from": "arenes-de-nimes",
+          "to": "maison-carree",
+          "mode": "walking"
+        },
+        {
+          "from": "maison-carree",
+          "to": "avignon-tgv",
+          "mode": "driving"
+        },
+        {
+          "from": "avignon-tgv",
+          "to": "avignon-stay-candidate",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "city": "Avignon · Arles",
+      "title": "Arles 철도 당일치기",
+      "center": [
+        43.677,
+        4.63
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "avignon-centre",
+          "order": 0,
+          "plannedTime": "08:30",
+          "note": "Avignon Centre에서 Arles행 TER 탑승."
+        },
+        {
+          "placeId": "arles-arenes",
+          "order": 1,
+          "plannedTime": "09:20–10:45",
+          "note": "Arènes d'Arles."
+        },
+        {
+          "placeId": "arles-theatre-antique",
+          "order": 2,
+          "plannedTime": "10:45–11:45",
+          "note": "Théâtre antique와 공화국 광장."
+        },
+        {
+          "placeId": "cloitre-saint-trophime",
+          "order": 3,
+          "plannedTime": "13:30–14:45",
+          "note": "Saint-Trophime 회랑 뒤 La Roquette 산책."
+        },
+        {
+          "placeId": "avignon-centre",
+          "order": 4,
+          "plannedTime": "17:00 이후",
+          "note": "Arles에서 TER로 Avignon 복귀."
+        }
+      ],
+      "segments": [
+        {
+          "from": "avignon-centre",
+          "to": "arles-arenes",
+          "mode": "transit"
+        },
+        {
+          "from": "arles-arenes",
+          "to": "arles-theatre-antique",
+          "mode": "walking"
+        },
+        {
+          "from": "arles-theatre-antique",
+          "to": "cloitre-saint-trophime",
+          "mode": "walking"
+        },
+        {
+          "from": "cloitre-saint-trophime",
+          "to": "avignon-centre",
+          "mode": "transit"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
       "city": "Avignon",
-      "title": "Les Halles · Palais des Papes · Rocher · Pont",
+      "title": "교황도시 핵심 (Avignon 시내 도보일)",
       "center": [
         43.951,
         4.806
@@ -1132,42 +1284,31 @@
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "avignon-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:20 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
-        },
-        {
           "placeId": "les-halles-avignon",
-          "order": 1,
+          "order": 0,
           "plannedTime": "08:30",
-          "note": "실내시장 아침."
+          "note": "Les Halles 아침 시장."
         },
         {
           "placeId": "palais-des-papes",
-          "order": 2,
-          "plannedTime": "입장 30분 전 도착",
-          "note": "오전 관람."
+          "order": 1,
+          "plannedTime": "09:45–12:15",
+          "note": "Palais des Papes 시간지정 관람."
         },
         {
           "placeId": "rocher-des-doms",
-          "order": 3,
-          "plannedTime": "이어서",
-          "note": "정원·론강 조망."
+          "order": 2,
+          "plannedTime": "14:00–15:00",
+          "note": "정원과 Rhône 조망."
         },
         {
           "placeId": "pont-saint-benezet",
-          "order": 4,
-          "plannedTime": "이어서",
-          "note": "다리 관람."
+          "order": 3,
+          "plannedTime": "15:15–16:45",
+          "note": "교황궁 결합권으로 관람."
         }
       ],
       "segments": [
-        {
-          "from": "avignon-stay-candidate",
-          "to": "les-halles-avignon",
-          "mode": "walking"
-        },
         {
           "from": "les-halles-avignon",
           "to": "palais-des-papes",
@@ -1186,117 +1327,9 @@
       ]
     },
     {
-      "date": "2026-09-18",
-      "city": "Avignon · Uzès · Pont du Gard",
-      "title": "Uzès 구시가지와 Pont du Gard",
-      "center": [
-        43.96,
-        4.53
-      ],
-      "zoom": 11,
-      "defaultMode": "driving",
-      "stops": [
-        {
-          "placeId": "avignon-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:30 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
-        },
-        {
-          "placeId": "uzes",
-          "order": 1,
-          "plannedTime": "오전",
-          "note": "구시가지. 주차장은 현장 안내 확인 — 사전 미지정."
-        },
-        {
-          "placeId": "pont-du-gard",
-          "order": 2,
-          "plannedTime": "오후",
-          "note": "주차 후 Pont까지 이동 45분 확보."
-        }
-      ],
-      "segments": [
-        {
-          "from": "avignon-stay-candidate",
-          "to": "uzes",
-          "mode": "driving"
-        },
-        {
-          "from": "uzes",
-          "to": "pont-du-gard",
-          "mode": "driving"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-19",
-      "city": "Avignon · Arles",
-      "title": "Arles 당일 — Arènes · Théâtre antique · Saint-Trophime",
-      "center": [
-        43.677,
-        4.63
-      ],
-      "zoom": 13,
-      "defaultMode": "transit",
-      "stops": [
-        {
-          "placeId": "avignon-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
-        },
-        {
-          "placeId": "avignon-centre",
-          "order": 1,
-          "plannedTime": "08:10–09:00 철도",
-          "note": "직행편·공사 여부 전날 확인."
-        },
-        {
-          "placeId": "arles-arenes",
-          "order": 2,
-          "plannedTime": "09:00–10:15",
-          "note": "원형경기장 자체를 우선."
-        },
-        {
-          "placeId": "arles-theatre-antique",
-          "order": 3,
-          "plannedTime": "10:20–11:05",
-          "note": "45분 상한."
-        },
-        {
-          "placeId": "cloitre-saint-trophime",
-          "order": 4,
-          "plannedTime": "12:40–13:40",
-          "note": "실내관람은 둘 중 하나만."
-        }
-      ],
-      "segments": [
-        {
-          "from": "avignon-stay-candidate",
-          "to": "avignon-centre",
-          "mode": "walking"
-        },
-        {
-          "from": "avignon-centre",
-          "to": "arles-arenes",
-          "mode": "transit"
-        },
-        {
-          "from": "arles-arenes",
-          "to": "arles-theatre-antique",
-          "mode": "walking"
-        },
-        {
-          "from": "arles-theatre-antique",
-          "to": "cloitre-saint-trophime",
-          "mode": "walking"
-        }
-      ]
-    },
-    {
       "date": "2026-09-20",
       "city": "Avignon · Lyon",
-      "title": "Avignon TGV 렌터카 반납 → Lyon 이동",
+      "title": "TGV 이동 & Lyon 적응",
       "center": [
         44.85,
         4.82
@@ -1307,33 +1340,33 @@
         {
           "placeId": "avignon-stay-candidate",
           "order": 0,
-          "plannedTime": "오전 체크아웃",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "08:30 체크아웃",
+          "note": "차량 반납은 9/17 완료. 렌터카 절차 없이 역으로 이동."
         },
         {
           "placeId": "avignon-tgv",
           "order": 1,
-          "plannedTime": "09:00 렌터카 반납",
-          "note": "Hertz [CONFIRMED] 반납 확정 · 주유·차량사진·보증금 해제 확인."
+          "plannedTime": "09:30 이전",
+          "note": "10:22 TGV 탑승 준비."
         },
         {
           "placeId": "lyon-part-dieu",
           "order": 2,
-          "plannedTime": "TGV 12176 10:22→11:28",
-          "note": "1등석 확정 · 승강장 20분 전 진입."
+          "plannedTime": "11:28 도착",
+          "note": "TGV INOUI 12176 확정."
         },
         {
           "placeId": "lyon-stay-candidate",
           "order": 3,
-          "plannedTime": "도착 후 30–45분 택시",
-          "note": "확정 숙소 — Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas (메트로 D Sans Souci·Monplaisir-Lumière 도보권)."
+          "plannedTime": "12:00 이후",
+          "note": "택시 이동·짐 보관 후 15:00 체크인."
         }
       ],
       "segments": [
         {
           "from": "avignon-stay-candidate",
           "to": "avignon-tgv",
-          "mode": "driving"
+          "mode": "transit"
         },
         {
           "from": "avignon-tgv",

@@ -140,6 +140,15 @@ PLACES = {
     "pont-saint-benezet": p("Pont Saint-Bénézet", "생 베네제 다리", "historic-site", "avignon", "major"),
     "uzes": p("Uzès", "위제스", "town", "avignon", "hero"),
     "pont-du-gard": p("Pont du Gard", "퐁 뒤 가르", "historic-site", "avignon", "hero"),
+    "nimes": p("Nîmes", "님", "city", "avignon", "major"),
+    "arenes-de-nimes": p("Arènes de Nîmes", "님 원형경기장", "historic-site", "avignon", "major"),
+    "maison-carree": p("Maison Carrée", "메종 카레", "historic-site", "avignon", "major"),
+    "arles": p("Arles", "아를", "city", "avignon", "hero"),
+    "arenes-d-arles": p("Arènes d’Arles", "아를 원형경기장", "historic-site", "avignon", "major"),
+    "theatre-antique-arles": p("Théâtre antique d’Arles", "아를 고대극장", "historic-site", "avignon", "major"),
+    "place-du-forum-arles": p("Place du Forum", "포룸 광장", "square", "avignon", "supporting"),
+    "cloitre-saint-trophime": p("Cloître Saint-Trophime", "생트로핌 회랑", "historic-site", "avignon", "major"),
+    "la-roquette": p("La Roquette", "라 로케트", "neighborhood", "avignon", "supporting"),
     "les-baux-de-provence": p("Les Baux-de-Provence", "레 보 드 프로방스", "village", "avignon", "hero"),
     "saint-remy-de-provence": p("Saint-Rémy-de-Provence", "생레미드프로방스", "town", "avignon", "major"),
     "orange": p("Orange", "오랑주", "city", "avignon", "supporting"),
@@ -225,10 +234,10 @@ DAY_REFS = {
     17: [("roussillon", "confirmed"), ("sentier-des-ocres", "confirmed"), ("abbaye-de-senanque", "confirmed"), ("menerbes", "optional"), ("goult", "optional"), ("gordes", "confirmed")],
     18: [("l-isle-sur-la-sorgue", "confirmed"), ("avignon", "confirmed"), ("fontaine-de-vaucluse", "optional")],
     19: [("saint-remy-de-provence", "confirmed"), ("les-baux-de-provence", "confirmed"), ("orange", "optional"), ("avignon", "confirmed")],
-    20: [("l-isle-sur-la-sorgue", "confirmed"), ("avignon", "confirmed")],
-    21: [("les-halles-avignon", "confirmed"), ("palais-des-papes", "confirmed"), ("rocher-des-doms", "confirmed"), ("pont-saint-benezet", "confirmed")],
-    22: [("uzes", "confirmed"), ("pont-du-gard", "confirmed")],
-    23: [("les-baux-de-provence", "confirmed"), ("saint-remy-de-provence", "confirmed"), ("glanum", "optional"), ("carrieres-des-lumieres", "optional")],
+    20: [("uzes", "confirmed"), ("pont-du-gard", "confirmed"), ("nimes", "confirmed"), ("arenes-de-nimes", "confirmed"), ("maison-carree", "confirmed"), ("avignon-tgv", "confirmed")],
+    21: [("arles", "confirmed"), ("arenes-d-arles", "confirmed"), ("theatre-antique-arles", "confirmed"), ("place-du-forum-arles", "confirmed"), ("cloitre-saint-trophime", "confirmed"), ("la-roquette", "confirmed")],
+    22: [("les-halles-avignon", "confirmed"), ("palais-des-papes", "confirmed"), ("rocher-des-doms", "confirmed"), ("pont-saint-benezet", "confirmed")],
+    23: [("avignon-tgv", "confirmed"), ("lyon-part-dieu", "confirmed"), ("lyon", "confirmed"), ("place-bellecour", "confirmed"), ("place-des-jacobins", "optional"), ("saone", "optional")],
     24: [("avignon-tgv", "confirmed"), ("lyon", "confirmed"), ("ainay", "confirmed"), ("place-bellecour", "confirmed"), ("place-des-jacobins", "optional"), ("saone", "optional")],
     25: [("fourviere", "confirmed"), ("vieux-lyon", "confirmed"), ("cathedrale-saint-jean-lyon", "confirmed"), ("traboules", "confirmed"), ("roman-theatres-lyon", "optional")],
     26: [("croix-rousse", "confirmed"), ("halles-de-lyon-paul-bocuse", "confirmed"), ("parc-de-la-tete-d-or", "optional")],
@@ -326,6 +335,11 @@ def write_outputs(payload, base_csv: Path | None = None, day_range: tuple[int, i
     OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     fields = ["date", "day", "baseCity", "theme", "id", "name", "nameKo", "type",
               "status", "importance", "chapter", "visibility", "photoNeeded", "sourceFiles"]
+    base_rows = None
+    if base_csv and day_range:
+        # --base-csv may be the output path itself; read it before truncating.
+        with base_csv.open(encoding="utf-8-sig", newline="") as base_stream:
+            base_rows = list(csv.DictReader(base_stream))
     with OUTPUT_CSV.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields)
         writer.writeheader()
@@ -338,10 +352,8 @@ def write_outputs(payload, base_csv: Path | None = None, day_range: tuple[int, i
                     "theme": day["theme"], **{k: place[k] for k in fields[4:-1]},
                     "sourceFiles": ";".join(place["sourceFiles"]),
                 })
-        if base_csv and day_range:
+        if base_rows is not None and day_range:
             start, end = day_range
-            with base_csv.open(encoding="utf-8-sig", newline="") as base_stream:
-                base_rows = list(csv.DictReader(base_stream))
             emitted = set()
             for row in base_rows:
                 day = int(row["day"])

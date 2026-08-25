@@ -219,15 +219,36 @@ class StayTransportGuards(unittest.TestCase):
         for token in ("성벽 안은 도보", "P+R Piot·Italiens 무료 셔틀",
                       "Avignon Centre↔Arles", "T1은 Gare Centre"):
             self.assertIn(token, rendered)
-        for day in range(19, 24):
+        for day in range(18, 24):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+
+        facts = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))
+        facts_text = json.dumps(facts["regions"]["avignon"], ensure_ascii=False)
+        for token in ("Day 20 저녁 Avignon TGV에서 반납", "Day 21 Avignon Centre↔Arles",
+                      "Day 22는 성벽 안", "Day 23은 차량 절차 없이"):
+            self.assertIn(token, facts_text)
+        for stale in ("Day 22 Avignon Centre↔Arles", "Day 23 도착 전에 차량 반납"):
+            self.assertNotIn(stale, facts_text)
+
+        day20 = json.loads((ROOT / "data" / "daily-cards" /
+                            "day-20.json").read_text(encoding="utf-8"))
+        day20_text = json.dumps(day20, ensure_ascii=False)
+        for token in ("Uzès", "Pont du Gard", "Nîmes", "9/17", "렌터카 최종 반납"):
+            self.assertIn(token, day20_text)
 
         day21 = json.loads((ROOT / "data" / "daily-cards" /
                             "day-21.json").read_text(encoding="utf-8"))
+        self.assertIn("Arles 철도 당일치기", json.dumps(day21, ensure_ascii=False))
         self.assertEqual({"train", "walk"}, {leg["mode"] for leg in day21["legs"]})
         day22 = json.loads((ROOT / "data" / "daily-cards" /
                             "day-22.json").read_text(encoding="utf-8"))
+        self.assertIn("교황도시 핵심", json.dumps(day22, ensure_ascii=False))
         self.assertEqual({"walk"}, {leg["mode"] for leg in day22["legs"]})
+        day23 = json.loads((ROOT / "data" / "daily-cards" /
+                            "day-23.json").read_text(encoding="utf-8"))
+        day23_text = json.dumps(day23, ensure_ascii=False)
+        self.assertIn("차량 반납은 9/17 완료", day23_text)
+        self.assertNotIn("09:00 렌터카 반납", day23_text)
 
     def test_paris_uses_one_weekly_pass_and_individual_tickets_around_it(self):
         region = next(r for r in self.trip.regions if r.slug == "paris")
