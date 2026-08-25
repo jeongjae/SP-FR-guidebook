@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "verifiedAt": "2026-08-23",
+  "verifiedAt": "2026-08-25",
   "note": "구글맵 이름 검색어. 좌표가 아니라 이름으로 여는 것이 정확한 대상만 싣는다. 여기 없으면 좌표·주소로 폴백한다.",
   "places": {
     "abbaye-de-senanque": {
@@ -984,6 +984,13 @@
       "evidence": "https://www.lagrange-aparthotel.com/lyon/",
       "verifiedAt": "2026-08-22"
     },
+    "Les Toits de Méjanes (Airbnb)": {
+      "query": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Résidence Les Toits de Méjanes",
+      "evidence": "Confirmed lodging address",
+      "verifiedAt": "2026-08-25"
+    },
     "Occidental Barcelona 1929": {
       "query": "Occidental Barcelona 1929, Carrer de la Creu Coberta 20-22, Barcelona",
       "verdict": "FOUND",
@@ -1007,6 +1014,48 @@
     }
   },
   "stops": {
+    "day-12:nice-checkout": {
+      "query": "12 Rue Verdi, 06000 Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Palais ALZIRA, 12 Rue Verdi, Nice",
+      "evidence": "Confirmed Airbnb lodging address",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-12:aix-checkin": {
+      "query": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Résidence Les Toits de Méjanes",
+      "evidence": "Confirmed lodging address",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-12:aix-stay-return": {
+      "query": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
+      "verdict": "FOUND",
+      "resolvedName": "Résidence Les Toits de Méjanes",
+      "evidence": "Confirmed lodging address",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-14:cassis-parking": {
+      "query": "Parking relais des Gorguettes, Cassis",
+      "verdict": "FOUND",
+      "resolvedName": "Parking relais des Gorguettes",
+      "evidence": "https://www.ot-cassis.com/imaginez/avez-vous-pense-au-parking-relais-des-gorguettes/",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-14:calanques": {
+      "query": "Port de Cassis, Quai Saint-Pierre, Cassis",
+      "verdict": "FOUND",
+      "resolvedName": "Cassis Calanques boat departure",
+      "evidence": "https://www.ot-cassis.com/en/explore/the-calanques/the-calanques-by-boat/",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-14:cassis-port": {
+      "query": "Port de Cassis, Quai Saint-Pierre, Cassis",
+      "verdict": "FOUND",
+      "resolvedName": "Port de Cassis",
+      "evidence": "https://www.ot-cassis.com/",
+      "verifiedAt": "2026-08-25"
+    },
     "day-05:collioure": {
       "query": "Parking du Château d'eau, Collioure",
       "verdict": "FOUND",
@@ -1310,6 +1359,46 @@
     }
   },
   "routes": {
+    "day-12:nice-station-pickup": {
+      "title": "Hertz Nice-Ville → Saint-Paul-de-Vence 주차",
+      "origin": "Hertz, Gare de Nice Ville, Avenue Thiers, 06000 Nice",
+      "destination": "Parking Indigo Saint-Paul-de-Vence",
+      "travelMode": "driving",
+      "evidence": "Day 12 execution route",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-12:saint-paul": {
+      "title": "Saint-Paul-de-Vence → Fragonard Grasse 주차",
+      "origin": "Parking Indigo Saint-Paul-de-Vence",
+      "destination": "Parking Indigo CRESP, Grasse",
+      "travelMode": "driving",
+      "evidence": "Day 12 execution route",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-12:grasse": {
+      "title": "Fragonard Grasse → Aix 숙소",
+      "origin": "Parking Indigo CRESP, Grasse",
+      "destination": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
+      "travelMode": "driving",
+      "evidence": "Day 12 execution route",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-14:aix-depart": {
+      "title": "Aix 숙소 → Cassis Gorguettes P+R",
+      "origin": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
+      "destination": "Parking relais des Gorguettes, Cassis",
+      "travelMode": "driving",
+      "evidence": "Day 14 primary parking route",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-14:cassis-port-miou": {
+      "title": "Port-Miou → Aix 숙소",
+      "origin": "Port-Miou, Cassis",
+      "destination": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
+      "travelMode": "driving",
+      "evidence": "Day 14 return route",
+      "verifiedAt": "2026-08-25"
+    },
     "day-07:vy1521": {
       "title": "VY1521 → NCE 도착",
       "origin": "Aeroport de Barcelona-El Prat",
@@ -1420,14 +1509,6 @@
       "destination": "12 Rue Verdi, 06000 Nice",
       "travelMode": "transit",
       "evidence": "Lignes d'Azur 82 or 602 to Nice Vauban, then Tram L1/connection",
-      "verifiedAt": "2026-08-22"
-    },
-    "day-14:aix-return": {
-      "title": "Cassis ➔ Aix 귀환 (차량)",
-      "origin": "Port de Cassis",
-      "destination": "2 Place Coimbra, 13090 Aix-en-Provence",
-      "travelMode": "driving",
-      "evidence": "Drive Cassis to Aix-en-Provence stay",
       "verifiedAt": "2026-08-22"
     },
     "day-15:aix-station": {

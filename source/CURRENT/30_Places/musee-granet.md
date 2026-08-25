@@ -49,8 +49,10 @@ source: source/CURRENT/30_Places/musee-granet.md
 |---|---|
 | **주소** | Place Saint-Jean de Malte, 13100 Aix-en-Provence |
 | **운영시간** | 화–일 10:00–18:00 (입장 마감 17:30) / **매주 월요일 휴관** |
-| **입장료** | 상설+특별전 통합권 일반 €11~€14 (기획전에 따라 변동, 학생/청소년 감면) |
+| **입장료** | 상설+특별전 통합권 일반 €14 / 감액 €12. Paul McCartney 《Eyes of the Storm》(2026-07-04~2027-01-03) 포함 |
 | **예약** | 공식 홈페이지(museegranet-aixenprovence.fr) 온라인 예매 또는 현장 매표소 구매 가능 |
 | **접근성** | Cours Mirabeau 동쪽 끝에서 도보 5분 (마자랭 지구 내) / 주차는 Parking Carnot 도보 4분 |
+
+> **주의**: 이 일정은 Musée Granet 본관 기준이다. Granet XXe는 별도 장소·요금이므로 같은 입장으로 간주하지 않는다.
 
 > 🏛 **연계 산책 팁**: 미술관 관람 후 바로 옆 생장 드 말트 성당(Église Saint-Jean-de-Malte) 앞 분수 광장을 거쳐 마자랭 지구의 조용한 17세기 저택 골목을 산책하면 완벽한 오후 동선이 됩니다.

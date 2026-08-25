@@ -6,6 +6,7 @@
   "title": "Nice역 렌터카와 Provence 진입",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "driving",
   "startTime": "08:00",
   "endTime": "20:30",
   "totalDuration": "12시간 30분",
@@ -30,7 +31,10 @@
       "lng": 7.2628,
       "summary": "12 Rue Verdi 체크아웃 후 Nice-Ville 기차역 Hertz 영업소로 도보 이동 (10분)",
       "menu": null,
-      "reservation": "체크아웃 완료 (Airbnb [CONFIRMED])",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "Palais ALZIRA 숙박 예약 기준 9/9 아침 체크아웃."}
+      ],
       "optional": false,
       "place_ref": null
     },
@@ -43,9 +47,14 @@
       "category": "transport",
       "lat": 43.7047,
       "lng": 7.2619,
-      "summary": "09:00 렌터카 인수(서류·차량촬영·내비설정). 수하물 트렁크 적재",
+      "summary": "09:00 예약 차량 인수 후 수하물을 트렁크에 적재한다. 차량 외관·휠·유리·연료계를 촬영하고 계약서의 연료정책과 반납 지점·시각을 대조한다.",
       "menu": null,
-      "reservation": "예약확정 Hertz [CONFIRMED] — 9/9 09:00 인수",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "Hertz Nice Railway Station 9/9 09:00 인수 예약."},
+        {"type": "check", "label": "CHECK", "detail": "Avignon TGV 반납을 계약상 9/20 09:00에서 일정상 9/17 18:30 이전으로 변경했는지 확인한다."},
+        {"type": "caution", "label": "CAR CHECK", "detail": "차체 사진·연료정책·반납지와 반납시각을 출차 전에 기록한다."}
+      ],
       "optional": false,
       "place_ref": "nice-ville"
     },
@@ -58,9 +67,10 @@
       "category": "sight",
       "lat": 43.6969,
       "lng": 7.1222,
-      "summary": "중세 성벽마을, 샤갈의 묘지, 예술가들의 골목 및 퐁다시옹 매그(Fondation Maeght) 외관 (2시간 15분)",
+      "summary": "Parking Indigo Saint-Paul-de-Vence에 주차한 뒤 중세 성벽마을, 샤갈의 묘지와 예술가 골목을 걷는다. Fondation Maeght 내부관람은 추가하지 않는다.",
       "menu": "에스프레소, 크루아상",
-      "reservation": "주차: Parking Indigo Saint-Paul-de-Vence (Primary)",
+      "reservation": null,
+      "executionNote": "Primary drive destination은 Parking Indigo Saint-Paul-de-Vence. 현장 주차 가능 여부를 보고 마을 core를 60~90분까지 압축한다.",
       "optional": false,
       "place_ref": "saint-paul-de-vence"
     },
@@ -69,13 +79,18 @@
       "order": 4,
       "start": "13:15",
       "end": "14:30",
-      "name": "Grasse 점심 & Fragonard 역사공장",
+      "name": "OPTIONAL · Grasse 점심 & Fragonard 역사공장",
       "category": "food",
       "lat": 43.6586,
       "lng": 6.9242,
-      "summary": "향수의 수도 그라스 테라스 점심 및 프라고나르 향수 역사공장 관람. 지연 시 우선 축소 가능",
+      "summary": "13:15 정상 도착일 때만 실행한다. 가벼운 점심과 약 30분 간격 현장 출발의 무료 공장 투어를 75분에 강제하지 않고, 다음 투어가 맞을 때만 참여한다. Hertz·교통 지연 시 Grasse 전체를 삭제한다.",
       "menu": "프로방스 샐러드, 파니니",
-      "reservation": "주차: Parking Notre Dame des Fleurs",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "optional", "label": "OPTIONAL", "detail": "Aix 16:30 도착이 위험하면 Grasse 전체를 생략한다."}
+      ],
+      "executionNote": "Usine Historique Fragonard, 20 boulevard Fragonard. 매일 09:00–19:00, 무료 가이드 방문·100주년 전시 모두 개인 예약 불필요. 맞은편 Parking Indigo CRESP 이용.",
+      "officialUrl": "https://usines-parfum.fragonard.com/usines/usine-historique/",
       "optional": true,
       "place_ref": "grasse"
     },
@@ -88,9 +103,12 @@
       "category": "hotel",
       "lat": 43.5283,
       "lng": 5.4497,
-      "summary": "Aix 숙소 체크인(2 Place Coimbra, 15:00부터 가능). 짐 정리 및 차량 안전 주차",
+      "summary": "확정 주소 2 Place Coimbra, Résidence Les Toits de Méjanes에 체크인(15:00부터 가능)한다. 좌표를 추정하지 않고 주소 검색으로 진입해 짐 정리와 차량 안전 주차를 마친다.",
       "menu": null,
-      "reservation": "예약완료 Airbnb [CONFIRMED] — 체크인 9/9 15:00 · 체크아웃 9/13 14:00",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "Les Toits de Méjanes 9/9 체크인·9/13 체크아웃 예약."}
+      ],
       "optional": false,
       "place_ref": null
     },
@@ -106,6 +124,9 @@
       "summary": "로통드 분수 및 쿠르 미라보 가로수길 첫 저녁 산책. 구시가지 지형 파악",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {"type": "optional", "label": "OPTIONAL", "detail": "도착 지연이나 피로가 있으면 생략하고 숙소에서 쉰다."}
+      ],
       "optional": true,
       "place_ref": "rotonde"
     },
@@ -192,9 +213,9 @@
   "highlights": [
     "P0 연결일 — 어느 경유지도 늘리지 않는다",
     "09:00 Nice역 인수 (확정)",
-    "줄이는 순서: Maeght 내부→마을→Grasse"
+    "줄이는 순서: Grasse 전체→Saint-Paul 체류 압축→Cours Mirabeau 저녁 산책"
   ],
-  "backup": "렌터카 인수 지연 시 Grasse를 생략하고 Saint-Paul-de-Vence 관람 후 A8 고속도로를 통해 Aix로 직행",
+  "backup": "1. Hertz 인수가 30분 이상 지연되면 Grasse를 삭제한다.\n2. Saint-Paul 주차가 지연되면 마을 core만 60~90분 걷는다.\n3. Aix 16:30 도착이 위험하면 Grasse를 삭제하고 A8로 직행한다.\n4. Cours Mirabeau 저녁 산책은 피로 시 생략한다.",
   "map": {
     "zoom": 8,
     "center": [
@@ -204,10 +225,9 @@
     "routeCache": "routes/day-12-driving-osrm.json"
   },
   "needsReview": [
-    "Fondation Maeght 운영·요금 재확인",
-    "각 경유지 시각은 인수 완료 시각 기준 역산",
-    "Nice 숙소 확정 (2026-08-13, Airbnb [CONFIRMED]): 체크아웃 9/9 11:00 — 09:00 렌터카 인수와 순서 확인",
-    "Aix 숙소 좌표 미확인 — 주소로 지도 확인 (2 Place Coimbra)"
+    "CHECK — Avignon TGV 9/17 18:30 이전 조기반납으로 Hertz 예약 변경 완료 여부",
+    "각 경유지 시각은 실제 차량 인수 완료 시각 기준 역산",
+    "Aix 숙소는 좌표를 추정하지 않고 확정 주소 2 Place Coimbra로 지도 실행"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-12",

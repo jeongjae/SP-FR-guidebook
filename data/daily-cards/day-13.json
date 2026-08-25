@@ -6,6 +6,7 @@
   "title": "Aix 목요시장, Vieil Aix, 세잔 아틀리에와 Musée Granet",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
@@ -24,13 +25,14 @@
       "order": 1,
       "start": "08:30",
       "end": "10:00",
-      "name": "Place Richelme 목요 시장 & Pâtisserie Weibel",
+      "name": "Aix 목요시장 — Place Richelme + Places Comtales",
       "category": "shopping",
       "lat": 43.5297,
       "lng": 5.4478,
-      "summary": "리셸므 광장 목요 대형 시장 탐방 및 1954년 전통 메종 베벨(Maison Weibel) 테라스에서 칼리송과 아침 커피",
+      "summary": "Place Richelme의 매일 아침 식품시장부터 보고 Places Comtales·Cours Mirabeau·Forbin의 목요 확장 구역을 선택해 잇는다. Maison Weibel에서 칼리송과 아침 커피를 곁들인다.",
       "menu": "Calisson d'Aix, 크루아상, 카페 오 레",
       "reservation": null,
+      "executionNote": "Place Richelme 식품시장은 매일 08:00–13:00. Places Comtales 식품시장과 Comtales·Cours Mirabeau·Forbin 직물/공예/브로캉트, Hôtel de Ville 꽃시장은 화·목·토 운영한다.",
       "optional": false,
       "place_ref": "place-richelme-place-des-precheurs",
       "related_place_refs": [
@@ -78,7 +80,12 @@
       "lng": 5.4461,
       "summary": "폴 세잔이 생애 마지막 4년간(1902-1906) 대형 목욕자들과 생트빅투아르산을 그리던 작업실. 정물화 소품, 대형 이젤, 올리브 정원 [Cézanne Core]",
       "menu": null,
-      "reservation": "사전 예약 필수 (Aix Tourism / €9.50)",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "book", "label": "BOOK", "detail": "정원이 제한되므로 9/10 방문 slot 사전 예약을 강력히 권장한다. 실제 시각은 예약 완료 후 고정한다."}
+      ],
+      "executionNote": "7/4–9/30 매일 09:00–18:00, 마지막 방문 17:00. 11:30부터 자율관람 1시간 €9.50, 가이드 1시간 30분 €12.",
+      "officialUrl": "https://www.aix.fr/incontournables/atelier-cezanne",
       "optional": false,
       "place_ref": "atelier-des-lauves"
     },
@@ -91,9 +98,14 @@
       "category": "culture",
       "lat": 43.5258,
       "lng": 5.4522,
-      "summary": "세잔의 초기작 및 유화/수채화 컬렉션, 프랑수아 마리우스 그라네, 인상파 회화 컬렉션 (105분 compact visit)",
+      "summary": "세잔의 초기작과 유화·수채화 컬렉션, 프랑수아 마리우스 그라네를 105분 compact visit으로 본다. Paul McCartney ‘Eyes of the Storm’ 특별전은 기본 입장권에 포함되며 Granet XXe 별관과 혼동하지 않는다.",
       "menu": null,
-      "reservation": "현장 발권 / 뮤지엄 패스 (€8)",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "ticket", "label": "TICKET", "detail": "본관 일반 €14·감액 €12 입장권을 온라인 또는 현장에서 구매한다."}
+      ],
+      "executionNote": "7/4–11/1 화–일 10:00–18:00, 매표 17:30 마감. 9/10 목요일 정상 운영.",
+      "officialUrl": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
       "optional": false,
       "place_ref": "musee-granet"
     },
@@ -192,11 +204,11 @@
     "19:30 Coucou 또는 La Brocherie"
   ],
   "highlights": [
-    "목요시장 08:30 — 13시 파장",
-    "Granet 3시간 30분 상한 내",
-    "시장 후 60분 휴식"
+    "Richelme 매일시장과 목요 확장 구역을 구분",
+    "Atelier 예약 slot이 생기면 그 시각을 fixed anchor로 사용",
+    "Granet은 15:30–17:15 유지, 지연 시 60~75분으로 압축"
   ],
-  "backup": "1. Atelier des Lauves 예약 시간에 맞춰 오전/오후 순서 미세 조정\n2. 피로 누적 시 Musée Granet을 60분으로 압축하고 Cours Mirabeau 카페 휴식 확대\n3. 우천 시 야외 도보를 줄이고 Granet 미술관 및 구시가지 실내 카페 중심 진행",
+  "backup": "1. Atelier 예약 완료 후 해당 slot을 fixed anchor로 삼고 오전 지연 시 Vieil Aix를 압축한다.\n2. 오후가 늦으면 Granet을 삭제하지 않고 60~75분으로 압축한다.\n3. 우천 시 Atelier와 Granet을 우선하고 Cours Mirabeau 야외 산책을 줄인다.",
   "map": {
     "zoom": 15,
     "center": [
@@ -206,9 +218,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "Atelier des Lauves 사전 예약 확정 (방문 시간대 지정)",
-    "Musée Granet 2026 특별전 확인",
-    "Aix 목요시장 08:00~13:00 운영 확인"
+    "BOOK — Atelier des Lauves 9/10 방문 slot 예약 및 Timeline 동기화"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-13",

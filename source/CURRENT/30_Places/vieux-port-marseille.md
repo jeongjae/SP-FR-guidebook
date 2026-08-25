@@ -17,10 +17,10 @@ source: source/CURRENT/30_Places/vieux-port-marseille.md
 
 2,600년 동안 마르세유의 무역과 이민, 문화가 유입되던 관문으로, 직사각형 모양의 만 안쪽에는 수천 척의 요트와 어선이 정박해 있고, 입구 양쪽에는 17세기 루이 14세가 지은 생장 요새(Fort Saint-Jean)와 성 니콜라 요새(Fort Saint-Nicolas)가 수문장처럼 마주 서 있다.
 
-2013년 유럽 문화수도 지정을 계기로 세계적 건축가 노먼 포스터(Norman Foster)가 설계한 거대한 스테인리스 스틸 거울 차양 **'롱브리에르(L'Ombrière)'**가 항구 동쪽 벨기에 부두(Quai des Belges)에 세워져 마르세유 시민과 여행자의 만남의 광장이 되었다.
+2013년 유럽 문화수도 지정을 계기로 세계적 건축가 노먼 포스터(Norman Foster)가 설계한 거대한 스테인리스 스틸 거울 차양 **'롱브리에르(L'Ombrière)'**가 항구 동쪽 Quai de la Fraternité에 세워져 마르세유 시민과 여행자의 만남의 광장이 되었다.
 
 ### Editor's Verdict
-> **"항구 전체(수 km)를 무리하게 다 돌지 말고, 동쪽 벨기에 부두에서 거울 차양과 아침 어시장을 본 뒤 북쪽 부두(Quai du Port)를 따라 르 파니에와 뮈셈 방향으로 40~50분만 걷는 것이 정석이다."** 거울 아래 서서 항구의 물결과 군중이 거꾸로 반사되는 역동적인 풍경을 감상하고, 언덕 위 노트르담 드 라 가르드 대성당을 향해 열린 항구의 축선을 조망하기에 최적이다.
+> **"항구 전체(수 km)를 무리하게 다 돌지 말고, Quai de la Fraternité에서 거울 차양과 아침 어시장을 본 뒤 북쪽 부두(Quai du Port)를 따라 르 파니에와 뮈셈 방향으로 40~50분만 걷는 것이 정석이다."** 거울 아래 서서 항구의 물결과 군중이 거꾸로 반사되는 역동적인 풍경을 감상하고, 언덕 위 노트르담 드 라 가르드 대성당을 향해 열린 항구의 축선을 조망하기에 최적이다.
 
 - **Best For**: 2,600년 역사 항구 산책, 노먼 포스터 거울 차양 관람, 아침 어시장(Marché aux Poissons) 구경
 - **Best Time**: 오전 09:30~11:30 (활기찬 어시장과 맑은 오전 항구 조망) 또는 늦은 오후 일몰 무렵
@@ -34,7 +34,7 @@ source: source/CURRENT/30_Places/vieux-port-marseille.md
 
 ### 2. 2,600년 전통의 아침 어시장 (Marché aux Poissons)
 
-매일 아침 08:00부터 12:00까지 벨기에 부두 한쪽에서 어부들이 당일 새벽 지중해에서 낚아 올린 생선, 도미, 아귀, 바다장어 등을 즉석에서 손질해 판매한다. 정통 부야베스(Bouillabaisse)의 원재료가 되는 생생한 지중해 해산물의 활기를 만날 수 있다.
+Quai de la Fraternité에서 매일 아침 약 07:30–12:30 또는 08:00–13:00에 어부들이 당일 새벽 지중해에서 낚아 올린 생선을 판매한다. 날씨와 계절에 따라 규모는 달라진다.
 
 ### 3. Don't Miss & Look Closer
 
@@ -46,8 +46,8 @@ source: source/CURRENT/30_Places/vieux-port-marseille.md
 
 | 항목 | 상세 정보 |
 |---|---|
-| **위치** | Quai des Belges / Quai du Port, 13001 Marseille |
+| **위치** | Quai de la Fraternité / Quai du Port, 13001 Marseille |
 | **운영/요금** | 연중 상시 개방 / **무료** |
 | **대중교통** | 지하철 M1 'Vieux-Port' 역 직결 / Aix-en-Provence에서 Ligne 50 버스로 Saint-Charles역 도착 후 지하철 2정거장 또는 도보 15분 |
 | **보행 주의** | 소매치기 주의 (항구 광장 주변 인파 밀집 지역) |
-| **연계 동선** | Quai des Belges → Quai du Port 북쪽 부두 도보 이동 → Le Panier 구시가지(도보 5분) 또는 Mucem/Fort Saint-Jean(도보 15분) |
+| **연계 동선** | Quai de la Fraternité → Quai du Port 북쪽 부두 도보 이동 → Le Panier 구시가지(도보 5분) 또는 Mucem/Fort Saint-Jean(도보 15분) |

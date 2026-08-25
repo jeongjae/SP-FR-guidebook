@@ -129,9 +129,9 @@ Marseille 당일치기는 Aix-en-Provence역에서 TER 기차를 이용한다. �
 
 ---
 
-#### 시장 — Place Richelme · Place des Prêcheurs {{grade:essential|필수}}
+#### Aix 시장 — Place Richelme · 목요 확장 구역 {{grade:essential|필수}}
 
-> **Editor's Verdict**: 리셸므 광장의 매일 아침 오감 식료품 시장과, 화·목·토 프레셰르 광장의 프로방스 전통 종합 시장.
+> **Editor's Verdict**: Place Richelme의 매일 아침 식품시장과 화·목·토 Places Comtales·Cours Mirabeau·Forbin·Hôtel de Ville로 확장되는 프로방스 시장.
 
 - **체류/요금**: 45–60분 · **무료** (오전 08:30–11:30 방문 최적, 13:00 파장)
 - **상세 가이드**: [Aix 시장 전체 가이드 보기](../places/place-richelme-place-des-precheurs.html)
@@ -142,7 +142,7 @@ Marseille 당일치기는 Aix-en-Provence역에서 TER 기차를 이용한다. �
 
 > **Editor's Verdict**: 옛 몰타 기사단 수도원에 자리한 프로방스 대표 미술관. 세잔의 원작들과 피카소·자코메티가 포함된 장 플랑크 20세기 현대 미술 컬렉션.
 
-- **체류/요금**: 90–120분 · 일반 €11~€14 (월요일 휴관, 마자랭 지구 연계)
+- **체류/요금**: 90–120분 · 일반 €14 / 감액 €12 (월요일 휴관, McCartney 특별전 포함)
 - **상세 가이드**: [Musée Granet 전체 심화 가이드 보기](../places/musee-granet.html)
 
 ---
@@ -151,7 +151,7 @@ Marseille 당일치기는 Aix-en-Provence역에서 TER 기차를 이용한다. �
 
 > **Editor's Verdict**: 세잔이 생의 마지막 4년(1902–1906) 동안 매일 그림을 그렸던 언덕 위 작업실. 북향 채광창, 대형 캔버스 슬릿, 정물 오브제가 남겨진 근대 미술의 성지.
 
-- **체류/요금**: 45–60분 · 일반 €9.50 (온라인 사전 시간지정 예약 필수)
+- **체류/요금**: 45–60분 · 자율관람 €9.50 / 가이드 €12 (정원 제한, 사전 예약 강력 권장)
 - **상세 가이드**: [Atelier de Cézanne 전체 심화 가이드 보기](../places/atelier-des-lauves.html)
 
 ---
@@ -287,7 +287,7 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 
 ### 핵심 예약 및 운영 확인
 
-- **Atelier de Cézanne**: 성수기 방문객 제한으로 공식 사이트를 통한 온라인 사전 시간지정 예약이 필수다.
+- **Atelier de Cézanne**: 정원이 제한되어 온라인 사전 시간지정 예약을 강력히 권장한다. 예약해야 해당 시간대 입장이 보장된다.
 - **Musée Granet**: 현장 발권 또는 사전 예매가 가능하며 월요일은 정기 휴관이다.
 - **Marseille TER**: 현장 자동발매기 또는 SNCF Connect 앱을 통해 탑승 당일 유연하게 발권한다.
 - **차량 안전**: 9/13 Luberon 이동 시 짐이 실린 차량은 반드시 트렁크 가림막을 닫고 귀중품(여권·카메라·노트북)은 휴대한다.
@@ -330,7 +330,7 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 | Cours Mirabeau (1651년 조성·마자랭 대주교·플라타너스 가로수·4대 분수) | 복수 출처 확인 |
 | Rotonde 분수 (1860년 건립·지름 41m 높이 12m·3대 여신상) | 복수 출처 확인 |
 | Fontaine Moussue (1666년 건립·18℃ 온천수 유입) | 복수 출처 확인 |
-| Place Richelme 시장 (매일 아침 청과 시장·화목토 프레셰르 종합 시장·13:00 파장) | 확인 |
+| Aix 시장 (Place Richelme 매일 식품시장·화목토 Places Comtales/Cours Mirabeau/Forbin/Hôtel de Ville 확장) | 확인 |
 | Atelier de Cézanne (말년 1902–1906 작업실·북향 채광창·정물 오브제) | 복수 출처 확인 |
 | Musée Granet (옛 몰타 기사단 수도원·세잔 원작·장 플랑크 컬렉션) | 복수 출처 확인 |
 | Terrain des Peintres (생트 빅투아르 산 조망 터·세라믹 화판) | 복수 출처 확인 |
@@ -362,12 +362,13 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 |---|---|--- |
 | 08:00–08:45 | Nice 숙소 체크아웃 | Palais ALZIRA 체크아웃 후 Nice-Ville역 도보 이동 |
 | 09:00–09:40 | **Nice-Ville역 렌터카 인수** | Hertz 영업소에서 차량 인수 및 트렁크 적재 |
-| 10:15–12:30 | **Saint-Paul-de-Vence** | 중세 성벽 마을 산책 및 마그 재단 미술관(Fondation Maeght) 관람 |
-| 13:00–14:30 | Grasse 이동 및 점심 | 향수의 수도 그라스 이동 및 로컬 점심 식사 |
-| 14:30–15:30 | **Grasse** | 프라고나르(Fragonard) 역사 공장 관람 및 시향 |
-| 15:30–16:45 | Grasse → Aix-en-Provence | A8 고속도로 서행 주행 (약 120km) |
-| 16:45–18:00 | **Aix 숙소 체크인** | Les Toits de Méjanes 체크인 및 주차 확인 |
-| 18:30–20:30 | Rotonde & 저녁 | 로통드 분수와 쿠르 미라보 첫 산책, 숙소 인근 가벼운 저녁 식사 |
+| 10:15–12:30 | **Saint-Paul-de-Vence** | Parking Indigo 이용 후 성벽 마을·샤갈 묘지·예술가 골목 산책. Fondation Maeght 내부는 추가하지 않는다 |
+| 13:15–14:30 | **선택: Grasse 점심 & Fragonard** | 정상 시각 도착 때만 Parking Indigo CRESP를 이용한다. 무료 공장 투어와 점심을 75분 안에 강제하지 않는다 |
+| 16:45–18:00 | **Aix 숙소 체크인** | 2 Place Coimbra, Résidence Les Toits de Méjanes 체크인 및 안전 주차 |
+| 18:30–19:30 | **선택: Rotonde & Cours Mirabeau** | 로통드 분수와 쿠르 미라보 첫 산책 |
+| 19:30–20:30 | 숙소권 저녁 및 휴식 | 숙소 인근에서 가볍게 식사하고 휴식 |
+
+**지연 대응 순서**: Hertz 인수가 30분 이상 늦거나 Aix 16:30 도착이 위험하면 Grasse를 삭제한다. Saint-Paul 주차가 지연되면 마을 core를 60–90분으로 줄이고, 저녁 산책은 마지막 선택 항목으로 둔다.
 
 ---
 
@@ -382,13 +383,15 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:30–10:00 | **Place Richelme 목요 시장** | 리셸므 광장 대형 시장 탐방 및 Pâtisserie Weibel에서 아침 커피 |
+| 08:30–10:00 | **Aix 목요시장 — Place Richelme + Places Comtales** | Richelme의 매일 식품시장 뒤 Places Comtales·Cours Mirabeau·Forbin 목요 확장 구역을 잇고 Maison Weibel에서 커피 |
 | 10:00–11:45 | **Vieil Aix 구시가지** | 귀족 저택, 알베르타스 광장, 생소뵈르 대성당 골목 산책 |
 | 12:00–13:15 | 구시가지 점심 | 시장 조달 음식 또는 구시가지 테라스 비스트로 점심 |
-| 13:40–15:00 | **Musée Granet** | 그라네 미술관 관람 (세잔 원작 및 20세기 현대 미술 컬렉션) |
-| 15:30–16:30 | **Atelier de Cézanne** | 세잔의 마지막 작업실 관람 (사전 예약 슬롯 준수) |
-| 16:45–17:30 | **Terrain des Peintres** | 생트 빅투아르 산을 조망하는 화가들의 터 산책 |
-| 18:00–20:30 | 숙소 복귀 및 저녁 | 숙소 휴식 후 구시가지 레스토랑 저녁 식사 |
+| 13:30–15:00 | **Atelier de Cézanne** | 09:00–18:00 운영, 자율관람은 11:30부터. €9.50 시간대 예약을 먼저 확보한다 |
+| 15:30–17:15 | **Musée Granet** | €14 통합권으로 세잔 컬렉션과 기본 입장에 포함된 McCartney전을 본다. Granet XXe와 혼동하지 않는다 |
+| 17:30–19:30 | **Cours Mirabeau & 마자랭 지구** | 가로수길과 분수 산책 후 저녁 식사 |
+| 19:30–20:30 | 숙소 귀환 및 휴식 | 2 Place Coimbra 숙소로 돌아간다 |
+
+**지연 대응 순서**: Atelier 예약 slot을 고정 anchor로 삼는다. 오전 지연은 Vieil Aix를 줄이고 오후 지연은 Granet을 60–75분으로 압축한다. 우천 시 Atelier와 Granet을 우선하고 야외 산책을 축소한다.
 
 ---
 
@@ -403,13 +406,16 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:30–09:35 | Aix → Cassis 이동 | A52 고속도로 경유 카시스 이동 (약 48km) |
-| 09:35–10:00 | Cassis 도착 & 주차 | Presqu'île 또는 Gorguettes 주차장 주차 |
-| 10:15–12:15 | **Calanques 유람선 투어** | 카시스 항구 출발 피오르드 만 유람선 투어 (Port-Miou, Port-Pin, En-Vau) |
+| 08:30–09:00 | Aix 숙소 출발 | A52 고속도로 경유 카시스로 이동 (약 48km) |
+| 09:35–09:50 | Cassis 도착 & 주차 | 무료 Parking des Gorguettes에서 연중 운행 Bus 372로 centre-ville 진입. 373은 금요일 운행을 가정하지 않는다 |
+| 09:50–11:30 | **3 Calanques 유람선** | Port-Miou·Port-Pin·En-Vau를 보는 약 1시간 코스와 발권·승선 buffer. 8 Calanques로 임의 변경하지 않는다 |
+| 11:30–12:30 | Cassis 항구 산책·커피 | 하선 뒤 항구를 걷고 점심 전 완충 시간을 둔다 |
 | 12:30–14:00 | Cassis 점심 | Chez Gilbert 등 항구 수변 식당에서 신선한 지중해 해산물 식사 |
-| 14:15–16:00 | **Port-Miou 해안 산책** | 포르미우 칼랑크 입구 및 카시스 구시가지 산책 |
-| 16:30–17:30 | Cassis → Aix 복귀 | 숙소 귀환 운전 |
-| 18:30–20:30 | 숙소 복귀 및 저녁 | 숙소 도착 후 휴식 및 간단한 저녁 식사 |
+| 14:15–15:30 | **선택: Port-Miou 해안 산책** | 피로·기상·셔틀 제약이 있으면 가장 먼저 삭제한다 |
+| 15:45–16:45 | Cassis → Aix 복귀 | A52 경유 숙소 귀환 운전 |
+| 17:15–20:30 | 숙소 복귀 및 저녁 | 휴식 및 다음 날 Marseille 기차 이동 준비 |
+
+**기상 대응**: 보트가 취소되면 Cassis 마을·항구로 전환한다. Cap Canaille/Route des Crêtes는 도로 개방을 확인한 뒤에만 검토하며 산불·강풍 때 강행하거나 Marseille로 자동 전환하지 않는다.
 
 ---
 
@@ -425,13 +431,13 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
 | 08:30–09:30 | Aix역 → Marseille (TER) | Aix-en-Provence역 출발 TER 탑승 (Saint-Charles역 도착) |
-| 09:45–10:30 | **Vieux-Port (구항구)** | 노먼 포스터 거울 차양 및 토요 아침 어시장 풍경 |
+| 09:45–10:30 | **Vieux-Port (구항구)** | 거울 차양과 Quai de la Fraternité의 매일 아침 어시장 풍경 |
 | 10:30–11:45 | **Le Panier (르 파니에)** | 마르세유 최고(最古)의 역사 골목 및 비에이 샤리테 외관 산책 |
-| 12:00–13:15 | 점심 식사 | 구항구/르 파니에 인근에서 파니스와 해산물 점심 |
-| 13:30–15:00 | **Mucem & Fort Saint-Jean** | 유럽 및 지중해 문명 박물관과 생장 요새 연결 브릿지 관람 |
-| 15:30–17:00 | **Notre-Dame de la Garde** | RTM 60번 버스 탑승, 황금 성모상과 지중해 파노라마 조망 |
-| 17:30–18:30 | Vieux-Port 산책 및 귀환 이동 | 구항구 마무리 산책 후 Saint-Charles역 이동 |
-| 18:50–19:40 | Marseille → Aix (TER) | TER 탑승하여 Aix-en-Provence역 복귀 |
+| 12:00–13:45 | **Mucem & Fort Saint-Jean** | 유료 전시는 €11 TICKET, 야외·정원은 무료. 10:00–19:00, 전시실 마지막 입장 폐관 45분 전 |
+| 13:45–15:00 | Vieux-Port 점심 | 구항구 인근에서 구운 생선 또는 프로방스식 해산물 점심 |
+| 15:15–17:00 | **Notre-Dame de la Garde** | Vieux-Port에서 RTM 60번으로 약 15–25분 이동해 성당과 파노라마 조망 |
+| 17:15–18:15 | **선택: Vallon des Auffes** | 피로하면 생략하고 구항구에서 휴식 |
+| 18:45–19:30 | Marseille → Aix (TER) | Saint-Charles역에서 Aix행 TER 탑승 |
 | 19:45–20:30 | 숙소 복귀 및 짐 정리 | 숙소 복귀 후 다음 날 Luberon 이동 짐 정리 |
 
 ---

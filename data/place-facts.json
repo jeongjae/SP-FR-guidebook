@@ -325,9 +325,9 @@
           "ttl_days": 180
         },
         "booking": {
-          "value": "사전 예약 필수(Réservation obligatoire)·정원 제한. 온라인 예매 cezanne-en-provence.com/Billetterie 또는 엑상 관광안내소",
-          "source": "https://www.cezanne-en-provence.com/les-sites-de-cezanne/atelier-des-lauves/",
-          "verified_at": "2026-08-17",
+          "value": "정원 제한, 사전 예약 강력 권장. 해당 시간대 입장은 예약해야 보장됨",
+          "source": "https://www.aix.fr/incontournables/atelier-cezanne",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },
@@ -735,16 +735,37 @@
         }
       }
     },
+    "calanques": {
+      "displayName": "Calanques de Cassis 보트 투어",
+      "region": "aix",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "매일 기상 조건이 허용될 때 운항. 3 Calanques 1시간 · 5개 1시간 20분 · 8개 1시간 50분 · 9개 2시간 20분",
+          "confidence": "official",
+          "source": "https://www.ot-cassis.com/en/explore/the-calanques/the-calanques-by-boat/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 30
+        },
+        "getting_there": {
+          "value": "Cassis 항구(Port de Cassis) 매표·승선장",
+          "confidence": "official",
+          "source": "https://www.ot-cassis.com/en/explore/the-calanques/the-calanques-by-boat/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        }
+      }
+    },
     "cassis": {
       "displayName": "Cassis 항구",
       "region": "aix",
       "grade": "alternative",
       "facts": {
         "getting_there": {
-          "value": "Gorguettes 셔틀은 9월 주말·방학·공휴일만 운행 — 평일 무효",
+          "value": "Les Gorguettes 무료 P+R 연중 · Bus 372 centre-ville 연중 · Bus 373 Presqu’île는 2026-04-04~11-01 중 방학·주말·공휴일 중심이므로 9/11 금요일 운행을 가정하지 않음",
           "confidence": "official",
-          "source": "2026-08-16 확정 원장 (공식 소스 검증 완료)",
-          "verified_at": "2026-08-16",
+          "source": "https://www.ot-cassis.com/imaginez/avez-vous-pense-au-parking-relais-des-gorguettes/",
+          "verified_at": "2026-08-25",
           "ttl_days": 30
         },
         "closed": {
@@ -1426,9 +1447,9 @@
           "ttl_days": 90
         },
         "hours": {
-          "value": "화요일 제외 매일 10:00–20:00 (J4와 동일). 야외 구역 입장 무료",
-          "source": "https://www.mucem.org/infos-pratiques",
-          "verified_at": "2026-08-17",
+          "value": "9/1–11/2 화요일 제외 매일 10:00–19:00. 야외 구역·정원 입장 무료",
+          "source": "https://mucem.org/questions-frequentes/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },
@@ -1626,6 +1647,34 @@
         }
       },
       "phone": "04 90 04 73 52"
+    },
+    "grasse": {
+      "displayName": "Grasse · Usine Historique Fragonard",
+      "region": "aix",
+      "grade": "alternative",
+      "facts": {
+        "hours": {
+          "value": "Historic Factory 매일 09:00–19:00",
+          "confidence": "official",
+          "source": "https://usines-parfum.fragonard.com/usines/usine-historique/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "booking": {
+          "value": "개인 무료 가이드 방문은 예약 불필요, 현장 출발 약 30분 간격. 2026 centenary exhibition(6/19–10/18)도 무료·예약 불필요",
+          "confidence": "official",
+          "source": "https://www.fragonard.com/en-us/exhibition-fragonard-100ans-2026",
+          "verified_at": "2026-08-25",
+          "ttl_days": 90
+        },
+        "getting_there": {
+          "value": "20 boulevard Fragonard, Grasse · 맞은편 Parking Indigo CRESP",
+          "confidence": "official",
+          "source": "https://usines-parfum.fragonard.com/usines/usine-historique/",
+          "verified_at": "2026-08-25",
+          "ttl_days": 730
+        }
+      }
     },
     "grand-palais": {
       "displayName": "Grand Palais",
@@ -2597,9 +2646,9 @@
           "ttl_days": 90
         },
         "hours": {
-          "value": "시설별 상이 — Mucem/Fort Saint-Jean 10:00–20:00, 구항 어시장 매일 07:30–12:30",
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
-          "verified_at": "2026-08-17",
+          "value": "시설별 상이 — 9/1–11/2 Mucem/Fort Saint-Jean 10:00–19:00, Quai de la Fraternité 어시장 매일 아침",
+          "source": "https://mucem.org/questions-frequentes/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },
@@ -2611,7 +2660,7 @@
           "ttl_days": 90
         },
         "note": {
-          "value": "Mucem·Fort Saint-Jean 은 화요일 휴관 (9/11 금요일 방문은 해당 없음)",
+          "value": "Mucem·Fort Saint-Jean은 화요일 휴관 (9/12 토요일 방문은 해당 없음)",
           "confidence": "official",
           "verified_at": "2026-08-17",
           "ttl_days": 90
@@ -2832,9 +2881,9 @@
           "ttl_days": 180
         },
         "hours": {
-          "value": "화요일 제외 매일 10:00–20:00 (5/1·12/25 휴관). 야외 구역 무료",
-          "source": "https://www.mucem.org/infos-pratiques",
-          "verified_at": "2026-08-17",
+          "value": "9/1–11/2 화요일 제외 매일 10:00–19:00. 전시실 마지막 입장 폐관 45분 전 · 야외 구역 무료",
+          "source": "https://mucem.org/questions-frequentes/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },
@@ -3102,8 +3151,8 @@
         "hours": {
           "value": "화–일 10:00–18:00 (~11/1) · 매표 17:30",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
+          "verified_at": "2026-08-25",
           "ttl_days": 90
         },
         "closed": {
@@ -3116,8 +3165,8 @@
         "price_adult": {
           "value": "일반 €14 / 감액 €12 — 상설 단독권 없음 (McCartney전 포함 단일권)",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
+          "verified_at": "2026-08-25",
           "ttl_days": 180
         },
         "booking": {
@@ -3126,6 +3175,13 @@
           "verified_at": "2026-08-17",
           "confidence": "official",
           "ttl_days": 90
+        },
+        "note": {
+          "value": "Paul McCartney ‘Eyes of the Storm’(2026-07-04~2027-01-03)은 기본 입장권에 포함. Granet XXe는 별도 장소·요금",
+          "confidence": "official",
+          "source": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
+          "verified_at": "2026-08-25",
+          "ttl_days": 180
         },
         "duration": {
           "value": "150분",
@@ -3688,21 +3744,21 @@
       "phone": "+33 4 65 48 87 80"
     },
     "place-richelme-place-des-precheurs": {
-      "displayName": "시장 — Place Richelme · Place des Prêcheurs",
+      "displayName": "Aix 시장 — Place Richelme · 목요 확장 구역",
       "region": "aix",
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "Richelme 식품시장 매일 08:00–13:00 · 화·목·토 큰장(직물·공예·골동)",
+          "value": "Place Richelme 식품시장 매일 08:00–13:00 · 화·목·토 Places Comtales 식품시장 및 Cours Mirabeau/Forbin/Comtales 직물·공예·브로칸트, Hôtel de Ville 꽃시장",
           "confidence": "official",
-          "source": "2026-08-17 신규 검증",
-          "verified_at": "2026-08-17",
+          "source": "https://www.aixenprovencetourism.com/en/shopping/the-provencal-markets/",
+          "verified_at": "2026-08-25",
           "ttl_days": 90
         },
         "closed": {
-          "value": "Place Richelme 청과시장은 연중무휴 매일 08:00–13:00. Place des Prêcheurs 시장 요일은 공식 페이지 표기가 엇갈려 미확정 — 재확인 필요",
-          "source": "https://www.aixenprovencetourism.com/fr/fiche/le-marche-aux-fruits-et-legumes-d-aix-en-provence-5466992/",
-          "verified_at": "2026-08-17",
+          "value": "Place Richelme 청과시장은 매일 운영. 목요 확장 시장은 Places Comtales·Cours Mirabeau·Forbin·Hôtel de Ville에서 운영",
+          "source": "https://www.aixenprovencetourism.com/en/shopping/the-provencal-markets/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },
@@ -4808,7 +4864,7 @@
           "ttl_days": 90
         },
         "booking": {
-          "value": "공식 웹사이트 또는 전화 사전 예약 필수 (테라스석)",
+          "value": "공식 웹사이트 또는 전화 사전 예약 권장. 여행일 9/11 실제 예약은 별도 확인 필요",
           "confidence": "official",
           "source": "https://www.chezgilbert.net/",
           "verified_at": "2026-08-21",
@@ -5655,9 +5711,9 @@
           "ttl_days": 90
         },
         "hours": {
-          "value": "항구 자체 시간 제한 없음. 어시장(Quai des Belges) 매일 07:30–12:30, 화·토 오전 화훼시장",
-          "source": "https://www.marseille-tourisme.com/en/discover-marseille/culture-heritage/discover-the-sites-and-monuments-in-marseille/the-old-port/",
-          "verified_at": "2026-08-17",
+          "value": "항구 자체 시간 제한 없음. 어시장(Quai de la Fraternité)은 매일 아침 약 07:30–12:30 또는 08:00–13:00, 날씨·계절에 따라 규모 변동",
+          "source": "https://www.marseille-tourisme.com/decouvrez-marseille/traditions/marche-aux-poissons-marseille/",
+          "verified_at": "2026-08-25",
           "confidence": "official",
           "ttl_days": 90
         },

@@ -20,7 +20,7 @@ source: source/CURRENT/30_Places/marseille.md
 직사각형 구항구(Vieux-Port)를 중심으로 북쪽의 옛 골목 르 파니에(Le Panier), 바다 위 현대 건축 뮈셈(Mucem)과 생장 요새(Fort Saint-Jean), 그리고 언덕 꼭대기에서 도시 전체를 수호하는 노트르담 드 라 가르드(Notre-Dame de la Garde) 대성당이 마르세유 당일치기의 핵심 축을 형성한다.
 
 ### Editor's Verdict
-> **"엑상프로방스 체류 중 하루를 투자해 전혀 다른 질감의 거칠고 압도적인 지중해 해양 대도시를 경험하는 결정적 목적지다."** 엑상에서 Ligne 50 직행 고속버스로 30~35분 만에 Saint-Charles역에 닿아 구항구 → 르 파니에 → 뮈셈 → 생장 요새로 이어지는 도보 축선을 따라 하루 5~6시간 동안 압축적으로 탐방하기에 가장 적합하다.
+> **"엑상프로방스 체류 중 하루를 투자해 전혀 다른 질감의 거칠고 압도적인 지중해 해양 대도시를 경험하는 결정적 목적지다."** Day 15에는 Aix Centre역에서 TER로 Saint-Charles역에 닿아 구항구 → 르 파니에 → 뮈셈 → 생장 요새로 이어지는 축선을 따라 탐방한다. L50 버스는 철도 이상 시 fallback이다.
 
 - **Best For**: 지중해 해양 대도시 탐방, 현대 건축(Mucem) 및 17세기 요새 관람, 지중해 해산물 미식
 - **Best Time**: 오전 09:30부터 늦은 오후 17:30까지 (주간 당일치기)
@@ -50,7 +50,7 @@ source: source/CURRENT/30_Places/marseille.md
 | 항목 | 상세 정보 |
 |---|---|
 | **위치** | Marseille, Bouches-du-Rhône |
-| **Aix ↔ Marseille 이동** | **Aix 버스터미널(Gare Routière) ↔ Marseille Saint-Charles역**: **Ligne 50 직행 고속버스** 탑승 (고속도로 전용차로 이용, 소요 약 30~35분, 10~15분 간격 빈번 운행, 렌터카 불필요) |
+| **Aix ↔ Marseille 이동** | 기본은 **Aix-en-Provence Centre ↔ Marseille Saint-Charles TER**. 출발 전 당일 시간표를 확인한다. L50 직행버스는 철도 이상 시 fallback |
 | **도심 내 이동** | 지하철 M1(Vieux-Port 직결), 도보, 시내버스 60번(가르드 성당 방면) |
 | **치안 주의** | 구항구, 지하철역, 파니에 골목 등 인파 밀집 지역에서 소매치기 주의 (가방은 앞으로 메고 스마트폰 관리) |
-| **권장 당일 코스** | Saint-Charles역 → M1 지하철 → Vieux-Port(어시장/거울차양) → Le Panier(골목/점심) → Mucem & Fort Saint-Jean(건축/정원) → Vieux-Port 복귀 → L50 버스로 Aix 귀환 |
+| **권장 당일 코스** | Saint-Charles역 → Vieux-Port(어시장/거울차양) → Le Panier → Mucem & Fort Saint-Jean → RTM 60 Notre-Dame de la Garde → 선택 Vallon des Auffes → Saint-Charles역 → TER로 Aix 귀환 |
