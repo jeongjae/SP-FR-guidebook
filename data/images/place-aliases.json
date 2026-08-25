@@ -67,6 +67,11 @@
       "label": "피살라디에르",
       "disposition": "DISH/SUBJECT"
     },
+    "nce-t2": {
+      "verdict": "place",
+      "slug": "nce-airport-tram",
+      "why": "공항 터미널 및 트램 연계 사진 — 명부의 NCE Airport Tram (L2)"
+    },
     "cadaques": {
       "verdict": "unregistered",
       "region": "girona",

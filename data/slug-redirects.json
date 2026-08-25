@@ -10,6 +10,10 @@
     "la-paradeta-sagrada-familia": {
       "to": "puertecillo-sagrada-familia",
       "why": "상호 교체 — 같은 주소에서 영업하는 곳이 Puertecillo 로 바뀌었다 (2026-08-22)"
+    },
+    "nce-t2": {
+      "to": "nce-airport-tram",
+      "why": "터미널 통합 유틸리티 장소 승격 (2026-08-24)"
     }
   }
 }

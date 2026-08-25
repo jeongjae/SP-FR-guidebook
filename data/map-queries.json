@@ -57,8 +57,8 @@
       "query": "Hertz, C/ Viriat 45, Barcelona",
       "verdict": "FOUND",
       "resolvedName": "Hertz Barcelona Sants",
-      "evidence": "local factual pass — supplied official Hertz Spain terms",
-      "verifiedAt": "2026-08-22"
+      "evidence": "https://www.hertz.es/rentacar/location/spain/barcelona/BCNX01",
+      "verifiedAt": "2026-08-24"
     },
     "barri-gotic": {
       "query": "Barri Gòtic, Barcelona",
@@ -670,12 +670,12 @@
       "evidence": "https://www.musee-rodin.fr/",
       "verifiedAt": "2026-08-22"
     },
-    "nce-t2": {
-      "query": "Aéroport Terminal 2, Nice",
+    "nce-airport-tram": {
+      "query": "Aéroport Terminal 1, Nice",
       "verdict": "FOUND",
-      "resolvedName": "Aéroport Nice Côte d'Azur Terminal 2",
-      "evidence": "https://fr.wikipedia.org/wiki/Ligne_2_du_tramway_de_Nice",
-      "verifiedAt": "2026-08-22"
+      "resolvedName": "Aéroport Nice Côte d'Azur Tramway L2",
+      "evidence": "https://www.lignesdazur.com/en/airport",
+      "verifiedAt": "2026-08-24"
     },
     "nice-ville": {
       "query": "Gare de Nice-Ville",
@@ -1011,7 +1011,7 @@
       "query": "Parking du Château d'eau, Collioure",
       "verdict": "FOUND",
       "resolvedName": "Parking du Château d'eau, Collioure",
-      "evidence": "Collioure municipal parking guidance for market days",
+      "evidence": "https://collioure.fr/le-stationnement/",
       "verifiedAt": "2026-08-24"
     },
     "day-07:nice-checkin": {
@@ -1053,7 +1053,7 @@
       "query": "Parking Saba Cadaqués",
       "verdict": "FOUND",
       "resolvedName": "Parking Saba Cadaqués",
-      "evidence": "Cadaqués official tourist entrance parking",
+      "evidence": "https://www.visitcadaques.org/?lang=uk&sec=poble&sub=aparcaments",
       "verifiedAt": "2026-08-24"
     },
     "tossa": {
@@ -1067,8 +1067,8 @@
       "query": "Parking Carrer Abeurador, Pals",
       "verdict": "FOUND",
       "resolvedName": "Parking Carrer Abeurador, Pals",
-      "evidence": "local factual pass — supplied official tourism information",
-      "verifiedAt": "2026-08-23"
+      "evidence": "https://www.visitpals.com/",
+      "verifiedAt": "2026-08-24"
     },
     "peratallada": {
       "query": "Aparcament de Baix, Peratallada",

@@ -126,6 +126,25 @@ class ExecutionUxBatch02Tests(unittest.TestCase):
         self.assertIn("Palais ALZIRA", day7)
         self.assertNotIn("Hertz 변경 불가 시 기내반입 위주", day7)
 
+    def test_day07_flight_arrival_terminal_and_place_integrity(self):
+        day7_stops = {stop.id: stop for stop in self.day(7).stops}
+        vy1521 = day7_stops["vy1521"]
+        self.assertIn("NCE T1", vy1521.summary)
+        self.assertEqual("nce-airport-tram", vy1521.place_ref)
+        self.assertNotEqual("nce-t2", vy1521.place_ref)
+
+        day7_html = self.rendered(7)
+        self.assertNotIn("places/nce-t2.html", day7_html)
+        self.assertIn("places/nce-airport-tram.html", day7_html)
+
+        place_md = (ROOT / "source" / "CURRENT" / "30_Places" / "nce-airport-tram.md").read_text(encoding="utf-8")
+        self.assertIn("제1터미널 (Terminal 1", place_md)
+        self.assertIn("제2터미널 (Terminal 2", place_md)
+        self.assertIn("트램 2호선(Ligne 2)", place_md)
+
+        redirects = json.loads((ROOT / "data" / "slug-redirects.json").read_text(encoding="utf-8"))
+        self.assertEqual("nce-airport-tram", redirects["places"]["nce-t2"]["to"])
+
     def test_driving_and_transfer_map_destinations(self):
         day5 = {stop.id: stop for stop in self.day(5).stops}
         self.assertIn("Parking du Château d'eau, Collioure", unquote_plus(render.stop_map_url(day5["collioure"])))
