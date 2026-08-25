@@ -46,6 +46,9 @@
       "summary": "Parking du Rayol에서 시작해 Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Temple 주변 골목을 걷는다. 마을 분위기 중심이면 1.5시간, 샤토 내부 포함 시 2~2.5시간.",
       "menu": "카페·갤러리 구역에서 에스프레소 또는 가벼운 간식",
       "reservation": "주차: Parking du Rayol 우선 · Château 내부 관람은 현장 선택",
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "Lourmarin 마을 방문은 확정 일정이다."}
+      ],
       "optional": false,
       "place_ref": "lourmarin"
     },
@@ -54,16 +57,19 @@
       "order": 3,
       "start": "12:15",
       "end": "13:30",
-      "name": "MUST · Lourmarin 점심",
+      "name": "MUST · Lourmarin 점심 — La Récréation 우선",
       "category": "food",
-      "lat": 43.7636,
-      "lng": 5.3628,
-      "summary": "Day 16의 긴 식사는 이곳에 둔다. La Récréation이 우선 후보이며 1~1.25시간 안에 마치고 Optional 마을에서는 식사를 추가하지 않는다.",
-      "menu": "제철 프로방스 채소, chèvre, tapenade · 운전자는 와인 금지",
-      "reservation": "La Récréation 9/13 예약 가능 여부 재확인 · 2026 성수기 점심 12:00–14:00",
+      "lat": 43.765182,
+      "lng": 5.362981,
+      "summary": "15 rue Philippe de Girard. Day 16의 긴 식사는 12:15–13:30에 두고 Optional 마을에서는 식사를 추가하지 않는다. 식당 좌석이 없어도 일정을 우회하지 않는다.",
+      "menu": "à la carte €22–26 · 성인 메뉴 €37.50–38.50 · plat du jour €22 · 운전자는 와인 금지",
+      "reservation": "ACTION REQUIRED — 9/13 일요일 12:15 실제 예약 슬롯은 아직 확인되지 않음",
       "executionStatuses": [
-        {"type": "book", "label": "BOOK", "detail": "La Récréation 실제 9/13 점심 좌석을 출발 전에 확인한다."}
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "OPENING HOURS VERIFIED — 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00."},
+        {"type": "book", "label": "ACTION REQUIRED", "detail": "RESERVATION SLOT NOT YET VERIFIED — 9/13 12:15 좌석을 확인한다."},
+        {"type": "optional", "label": "FALLBACK", "detail": "같은 12:15–13:30 창에 Lourmarin 마을 카페·브라시리를 현장 이용하고 동선은 바꾸지 않는다."}
       ],
+      "officialUrl": "https://www.provenceguide.com/restaurants/luberon/la-recreation/provence-2997991-1.html",
       "optional": false,
       "place_ref": null
     },
@@ -116,7 +122,7 @@
       "menu": null,
       "reservation": "Gordes 9/13~9/15 2박 숙소 확정 및 체크인 창 확인 필요",
       "executionStatuses": [
-        {"type": "book", "label": "BOOK", "detail": "Gordes 2박 숙소는 아직 후보 미정이다."}
+        {"type": "book", "label": "ACTION REQUIRED", "detail": "Gordes accommodation for 9/13–9/15 is not yet confirmed in the repository."}
       ],
       "optional": false,
       "place_ref": null
@@ -170,7 +176,8 @@
     "차량 내 수하물 완전 은폐 · 마을 외곽 주차 후 도보"
   ],
   "food": [
-    "점심: Lourmarin La Récréation 우선",
+    "점심: Lourmarin La Récréation 우선 · 12:00–14:00 영업 확인 · 실제 좌석은 ACTION REQUIRED",
+    "Fallback: 같은 12:15–13:30 창의 Lourmarin 마을 카페·브라시리 · 식당 때문에 우회 금지",
     "저녁: Gordes La Bastide de Pierres 또는 Le Mas Gordes",
     "Optional 마을에서는 긴 식사 금지"
   ],
@@ -183,8 +190,8 @@
   "backup": "비·피로·주차 지연 시 Lourmarin의 샤토 내부관람을 생략하고 마을+점심만 유지한다. Lacoste를 먼저 삭제하고, 그래도 16:00~17:00 Gordes 체크인이 위험하면 Bonnieux도 삭제한다. 최소 실행안은 Aix 체크아웃 → Lourmarin 산책·점심 → Gordes 체크인·저녁 산책이다.",
   "map": {"zoom": 10, "center": [43.78, 5.29], "routeCache": "routes/day-16-driving-osrm.json"},
   "needsReview": [
-    "Gordes 2박 숙소와 체크인 가능 시각 확정",
-    "La Récréation 9/13 점심·Gordes 저녁 실제 예약 가능 여부",
+    "ACTION REQUIRED — Gordes 2박 숙소와 체크인 가능 시각 확정",
+    "ACTION REQUIRED — La Récréation 9/13 12:15 실제 좌석·Gordes 저녁 예약 가능 여부",
     "당일 교통과 주차 상황에 따라 Optional 두 곳 현장 삭제"
   ],
   "sourceRefs": [

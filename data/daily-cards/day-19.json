@@ -18,7 +18,9 @@
       "id": "avignon-depart", "order": 1, "start": "08:00", "end": "08:15",
       "name": "Avignon 숙소 출발", "category": "hotel", "lat": 43.94993, "lng": 4.81302,
       "summary": "08:00~08:15 출발해 Saint-Rémy 외곽 공영주차장으로 이동한다. 시장 혼잡을 감안해 09:00 전후 도착을 지킨다.",
-      "menu": "간단한 숙소 아침", "reservation": null, "optional": false, "place_ref": null
+      "menu": "간단한 숙소 아침", "reservation": "Avignon 5박 숙소 미확정",
+      "executionStatuses": [{"type": "book", "label": "ACTION REQUIRED", "detail": "숙소에서 Saint-Rémy로 가는 출발·주차 동선은 숙소 확정 후 동기화한다."}],
+      "optional": false, "place_ref": null
     },
     {
       "id": "saint-remy", "order": 2, "start": "09:00", "end": "11:45",
@@ -26,7 +28,7 @@
       "summary": "Place de la République 시장 → 허브·올리브·과일·치즈·직물 좌판 → 구시가지 골목 → Place Jules Pellissier. 공식 대형 시장은 수요일 08:00–13:00이며 이번 일정의 핵심 경험이다.",
       "menu": "시장 간식은 가볍게, 점심 공간을 남긴다",
       "reservation": "Parking de la Libération 또는 외곽 공영주차 · 수요일 혼잡",
-      "executionStatuses": [{"type": "caution", "label": "MARKET", "detail": "08:00–13:00 시장을 먼저 보고 구시가지를 잇는다."}],
+      "executionStatuses": [{"type": "confirmed", "label": "CONFIRMED", "detail": "Saint-Rémy 대형 Provençal market은 수요일 08:00–13:00 운영으로 공식 확인된다."}],
       "optional": false, "place_ref": "saint-remy-de-provence"
     },
     {
@@ -43,7 +45,10 @@
       "summary": "외곽 주차 → 중세마을 골목과 르네상스 건물 → Château des Baux → 성벽·Alpilles 전망 → 하산. 2~3시간을 확보하고 Carrières des Lumières는 별도 선택 모듈로만 본다.",
       "menu": "coffee·ice cream·간단한 refreshment만",
       "reservation": "Château 운영·입장 조건과 외곽 유료주차 재확인",
-      "executionStatuses": [{"type": "check", "label": "CHECK", "detail": "Château des Baux 당일 운영과 마지막 입장을 확인한다."}],
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "Les Baux 마을·Château·전망은 Day 19 확정 일정이다."},
+        {"type": "check", "label": "ACTION REQUIRED", "detail": "Château des Baux 당일 운영과 마지막 입장을 확인한다."}
+      ],
       "optional": false, "place_ref": "les-baux-de-provence"
     },
     {
@@ -52,14 +57,16 @@
       "summary": "Théâtre antique 단일 목적 방문만 한다. Saint-Rémy 시장과 Les Baux 핵심을 충분히 마치고 체력·교통·일몰에 문제가 없을 때만 실행한다.",
       "menu": "식사 추가 금지",
       "reservation": "16:00~16:30 Les Baux 현장 판단 · 늦으면 즉시 삭제",
-      "executionStatuses": [{"type": "optional", "label": "BONUS", "detail": "Les Baux에서 약 55분 우회하므로 일반적인 경우 Avignon으로 직행한다."}],
+      "executionStatuses": [{"type": "optional", "label": "FALLBACK", "detail": "Orange는 예약하지 않는 OPTIONAL BONUS다. 일반적인 실행안은 Orange를 생략하고 Avignon으로 직행한다."}],
       "optional": true, "place_ref": "orange"
     },
     {
       "id": "avignon-return", "order": 6, "start": "19:15", "end": "20:00",
       "name": "MUST · Avignon 복귀", "category": "hotel", "lat": 43.94993, "lng": 4.81302,
       "summary": "Base 일정은 Les Baux에서 약 40분 운전해 Avignon으로 바로 돌아오는 것이다. Orange를 실행해도 저녁과 휴식에 지장이 없도록 한다.",
-      "menu": "숙소 주변 가벼운 저녁", "reservation": null, "optional": false, "place_ref": null
+      "menu": "숙소 주변 가벼운 저녁", "reservation": "Avignon 5박 숙소 미확정",
+      "executionStatuses": [{"type": "book", "label": "ACTION REQUIRED", "detail": "Les Baux에서 실제 Avignon 숙소로 돌아오는 귀환·주차 동선을 확정한다."}],
+      "optional": false, "place_ref": null
     }
   ],
   "legs": [

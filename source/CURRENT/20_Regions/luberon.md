@@ -76,8 +76,10 @@ Day 18 체크아웃 후 L'Isle-sur-la-Sorgue의 물길을 걷고 Avignon으로 �
 
 ### 이번 일정의 식사 배치
 
-- **Day 16** — Lourmarin에서 점심, Gordes에서 저녁. Bonnieux·Lacoste에서는 긴 식사를 하지 않는다.
-- **Day 17** — Roussillon은 커피·간식, Ménerbes를 점심 우선 후보로 둔다. Ménerbes를 생략하면 Roussillon 또는 Gordes권으로 전환한다.
+- **Day 16 · CONFIRMED** — La Récréation(15 rue Philippe de Girard)은 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00이다. à la carte €22–26, 성인 메뉴 €37.50–38.50, plat du jour €22.
+- **Day 16 · ACTION REQUIRED / FALLBACK** — 9/13 12:15 실제 좌석은 미확인. 예약이 안 되면 같은 12:15–13:30 창에 Lourmarin 마을 카페·브라시리를 현장 이용하고 동선은 바꾸지 않는다.
+- **Day 17 · CONFIRMED** — Bistrot Le 5 공식 사이트는 **월요일 휴무**로 표시한다. Day 17 점심으로 의존하지 않고 Ménerbes를 MUST로 승격하지 않는다.
+- **Day 17 · FALLBACK** — A) Ménerbes 전 Roussillon 점심, B) Ménerbes 카페·불랑제리 간단식, C) 우회 없이 Gordes 방향 복귀.
 - **Day 18** — L'Isle에서는 커피·브런치, Fontaine을 가면 강변 가벼운 점심, 저녁은 Avignon 숙소 주변에 둔다.
 
 Gordes 화요시장은 Day 18 체크아웃과 충돌하므로 참고 정보로만 두고 핵심 일정으로 승격하지 않는다.

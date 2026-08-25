@@ -16,7 +16,7 @@ source: source/CURRENT/30_Places/lourmarin.md
 - **MUST · Day 16 · 1.5–2시간**
 - **WHY GO**: 언덕마을과 다른 평탄하고 우아한 생활감, Château de Lourmarin, Camus와 Henri Bosco의 흔적을 점심과 산책으로 경험한다.
 - **DO THIS**: Parking du Rayol → Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Protestant Temple → 카페·갤러리.
-- **EAT / DRINK**: La Récréation 점심 우선. 2026 성수기 점심 12:00–14:00, à la carte €22–26, 성인 메뉴 €37.50–38.50. 9/13 좌석은 재확인한다.
+- **EAT / DRINK**: La Récréation(15 rue Philippe de Girard) 우선. 2026 연중 등록·성수기 7일 운영, 점심 12:00–14:00, à la carte €22–26, 성인 메뉴 €37.50–38.50, plat du jour €22다. 9/13 12:15 실제 좌석은 ACTION REQUIRED. 안 되면 같은 시간창에 마을 카페·브라시리를 이용하고 일정을 우회하지 않는다.
 - **IF LATE**: Château 내부관람을 빼고 마을+점심을 유지한다. Lourmarin 자체는 생략하지 않는다.
 
 ### Trip Layer

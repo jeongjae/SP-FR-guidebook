@@ -61,7 +61,7 @@ def body_html(html: str) -> str:
     return TABS.sub(" ", CHROME.sub(" ", html))
 
 
-def build_graph(pages, redirects):
+def build_graph(pages, redirects, site_files):
     body_in = defaultdict(set)
     edges = []
     external = defaultdict(set)
@@ -80,7 +80,7 @@ def build_graph(pages, redirects):
                 if scope == "body":
                     body_in[target].add(rel)
                     edges.append((rel, target, href))
-                    if target not in pages and target not in redirects:
+                    if target not in pages and target not in redirects and target not in site_files:
                         broken.append((rel, href, target))
     # 리다이렉트를 최종 목적지로 접는다
     def final(target: str) -> str:
@@ -202,7 +202,12 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
 
     pages, redirects = load_pages(site)
-    inbound, edges, external, broken = build_graph(pages, redirects)
+    site_files = {
+        path.relative_to(site).as_posix()
+        for path in site.rglob("*")
+        if path.is_file()
+    }
+    inbound, edges, external, broken = build_graph(pages, redirects, site_files)
     print(f"실페이지 {len(pages)} · 리다이렉트 {len(redirects)} · 본문 링크 {len(edges)}")
 
     sys.path.insert(0, str(ROOT / "build"))

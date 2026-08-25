@@ -336,9 +336,10 @@ Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 
 
 ### 숙소와 생활권
 
-- **숙소 거점**: 성벽 안(intra-muros) 도보 생활권 (`La Terrasse du Clocher` 후보 등 성벽 안 숙소 거점)
+- **ACTION REQUIRED**: Avignon accommodation for 9/15–9/20 is not yet confirmed in the repository.
+- **숙소 거점**: 성벽 안(intra-muros) 도보 생활권을 우선하되 실제 숙소는 미확정이다. `La Terrasse du Clocher`는 후보일 뿐이며 확정 숙소처럼 표시하지 않는다.
 - **일정**: 2026-09-15(화) 체크인 – 2026-09-20(일) 체크아웃 (5박)
-- **생활권 수칙**: 성벽 내부는 일방통행이 많으므로 차량 보관은 관리 공영주차장을 활용하고, 도보로 Les Halles 시장과 중심가를 이용한다.
+- **확정 후 동기화**: Day 18 체크인, Day 19–22 출발·귀환, Day 20 렌터카 반납, Day 21 Avignon Centre 역 접근, Day 23 Avignon Centre/Avignon TGV 접근을 숙소명·주소·체크인 창·주차·연락처와 함께 갱신한다.
 
 ### 핵심 안전 및 이동 확인
 
@@ -414,7 +415,7 @@ L'Isle는 화요일 시장·앤틱 쇼핑일로 설명하지 않는다. 상세 �
 * **OPTIONAL**: Orange Bonus
 * **IF LATE**: Orange를 가장 먼저 삭제하고 Saint-Rémy와 Les Baux의 체류시간을 유지한다.
 
-Base는 Avignon → Saint-Rémy → Les Baux → Avignon이다. Orange는 16:00~16:30 현장 조건이 모두 좋을 때만 Théâtre antique 단일 목적으로 추가한다.
+Base는 Avignon → Saint-Rémy → Les Baux → Avignon이다. Orange는 **OPTIONAL BONUS**로만 두고 예약하지 않으며 기본 경로에 넣지 않는다. 16:00~16:30 현장 조건·실제 종료시각·체력이 모두 좋을 때만 Théâtre antique 단일 목적으로 검토한다. Saint-Rémy 시장이나 Les Baux 체류를 줄이지 않으며 일반적인 FALLBACK은 Orange 생략 후 Avignon 직행이다.
 
 ---
 
