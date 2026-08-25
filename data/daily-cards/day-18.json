@@ -28,7 +28,7 @@
       "summary": "중심부 주차 → Sorgue 강변 → Quai Jean Jaurès → 물레방아 → 구시가지 → Place Ferdinand Buisson/관광안내소 → 강변 카페. 화요일이므로 시장·앤틱 쇼핑이 아니라 수로와 생활도시를 경험한다.",
       "menu": "Fontaine 방문 시 coffee/snack, 생략 시 브런치·이른 점심",
       "reservation": "목·일 전통시장 아님 · 주요 antique village는 화·수 휴무가 많음",
-      "executionStatuses": [{"type": "confirmed", "label": "CONFIRMED", "detail": "화요일은 주요 전통시장·앤틱 마켓 핵심일이 아니며 물길·물레방아·구시가지를 본다."}],
+      "executionNote": "화요일은 주요 전통시장·앤틱 마켓 핵심일이 아니므로 물길·물레방아·구시가지 중심으로 본다.",
       "optional": false, "place_ref": "l-isle-sur-la-sorgue"
     },
     {

@@ -29,7 +29,6 @@
       "menu": "coffee·pastry·early snack 중심",
       "reservation": "9월 공식 운영 09:30–18:30(19:00 퇴장) · 현장 결제 · 날씨 조건부",
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Roussillon은 Day 17 확정 일정이다."},
         {"type": "check", "label": "ACTION REQUIRED", "detail": "당일 기상과 Sentier des Ocres 개방 상태를 확인한다."}
       ],
       "optional": false, "place_ref": "roussillon-sentier-des-ocres"
@@ -39,13 +38,13 @@
       "name": "OPTIONAL 1 · Ménerbes 산책과 점심", "category": "sight", "lat": 43.83274, "lng": 5.20689,
       "summary": "마을 입구 주차 → Place de l’Horloge → Beffroi → 능선 석조거리 → 교회·성채 외관 → 전망. Optional 중 우선순위 1이며 점심 예약을 이유로 MUST로 승격하지 않는다.",
       "menu": "Bistrot Le 5는 공식 사이트상 월요일 휴무 · 이용 불가",
-      "reservation": "CONFIRMED — Bistrot Le 5 is closed on Monday; do not depend on it for Day 17",
+      "reservation": null,
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Bistrot Le 5 공식 사이트는 월요일 휴무로 표시한다."},
         {"type": "optional", "label": "FALLBACK A", "detail": "Ménerbes로 이동하기 전 Roussillon에서 점심을 먹는다."},
         {"type": "optional", "label": "FALLBACK B", "detail": "Ménerbes에서 간단한 카페·불랑제리 점심만 한다."},
         {"type": "optional", "label": "FALLBACK C", "detail": "우회를 추가하지 않고 Gordes 방향으로 복귀한다."}
       ],
+      "executionNote": "Bistrot Le 5 공식 사이트는 월요일 휴무로 표시한다. Day 17 식사로 의존하지 않는다.",
       "officialUrl": "https://bistrotle5.com/",
       "optional": true, "place_ref": "menerbes"
     },
@@ -65,10 +64,9 @@
       "menu": null,
       "reservation": "ACTION REQUIRED — 9/14 16:00 HistoPad 회차는 표시됨(2026-08-25 확인), 예약은 아직 완료되지 않음",
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "월–토 비가이드 관람 13:00–17:00 마지막 입장·한국어 HistoPad 제공이 공식 안내에 확인된다."},
-        {"type": "confirmed", "label": "CONFIRMED SLOT", "detail": "2026-08-25 기준 9/14 16:00 HistoPad 회차가 공식 예매 화면에 표시된다."},
         {"type": "book", "label": "ACTION REQUIRED", "detail": "16:00 HistoPad 입장권을 예약하고 오프라인으로 저장한다. 예약 전에는 내부 관람을 OPTIONAL로 둔다."}
       ],
+      "executionNote": "공식 안내상 월–토 비가이드 관람은 13:00–17:00 마지막 입장이며 한국어 HistoPad를 제공한다. 2026-08-25 예매 화면에는 9/14 16:00 회차가 표시됐다.",
       "officialUrl": "https://abbaye-senanque.tickeasy.com/en-GB/",
       "optional": false, "place_ref": "abbaye-de-senanque"
     },

@@ -46,9 +46,6 @@
       "summary": "Parking du Rayol에서 시작해 Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Temple 주변 골목을 걷는다. 마을 분위기 중심이면 1.5시간, 샤토 내부 포함 시 2~2.5시간.",
       "menu": "카페·갤러리 구역에서 에스프레소 또는 가벼운 간식",
       "reservation": "주차: Parking du Rayol 우선 · Château 내부 관람은 현장 선택",
-      "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Lourmarin 마을 방문은 확정 일정이다."}
-      ],
       "optional": false,
       "place_ref": "lourmarin"
     },
@@ -65,10 +62,10 @@
       "menu": "à la carte €22–26 · 성인 메뉴 €37.50–38.50 · plat du jour €22 · 운전자는 와인 금지",
       "reservation": "ACTION REQUIRED — 9/13 일요일 12:15 실제 예약 슬롯은 아직 확인되지 않음",
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "OPENING HOURS VERIFIED — 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00."},
         {"type": "book", "label": "ACTION REQUIRED", "detail": "RESERVATION SLOT NOT YET VERIFIED — 9/13 12:15 좌석을 확인한다."},
         {"type": "optional", "label": "FALLBACK", "detail": "같은 12:15–13:30 창에 Lourmarin 마을 카페·브라시리를 현장 이용하고 동선은 바꾸지 않는다."}
       ],
+      "executionNote": "공식 운영정보: 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00.",
       "officialUrl": "https://www.provenceguide.com/restaurants/luberon/la-recreation/provence-2997991-1.html",
       "optional": false,
       "place_ref": null

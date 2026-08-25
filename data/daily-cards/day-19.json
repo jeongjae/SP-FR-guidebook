@@ -28,7 +28,7 @@
       "summary": "Place de la République 시장 → 허브·올리브·과일·치즈·직물 좌판 → 구시가지 골목 → Place Jules Pellissier. 공식 대형 시장은 수요일 08:00–13:00이며 이번 일정의 핵심 경험이다.",
       "menu": "시장 간식은 가볍게, 점심 공간을 남긴다",
       "reservation": "Parking de la Libération 또는 외곽 공영주차 · 수요일 혼잡",
-      "executionStatuses": [{"type": "confirmed", "label": "CONFIRMED", "detail": "Saint-Rémy 대형 Provençal market은 수요일 08:00–13:00 운영으로 공식 확인된다."}],
+      "executionNote": "공식 운영정보: Saint-Rémy 대형 Provençal market은 수요일 08:00–13:00 운영한다.",
       "optional": false, "place_ref": "saint-remy-de-provence"
     },
     {
@@ -46,7 +46,6 @@
       "menu": "coffee·ice cream·간단한 refreshment만",
       "reservation": "Château 운영·입장 조건과 외곽 유료주차 재확인",
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Les Baux 마을·Château·전망은 Day 19 확정 일정이다."},
         {"type": "check", "label": "ACTION REQUIRED", "detail": "Château des Baux 당일 운영과 마지막 입장을 확인한다."}
       ],
       "optional": false, "place_ref": "les-baux-de-provence"
@@ -57,7 +56,7 @@
       "summary": "Théâtre antique 단일 목적 방문만 한다. Saint-Rémy 시장과 Les Baux 핵심을 충분히 마치고 체력·교통·일몰에 문제가 없을 때만 실행한다.",
       "menu": "식사 추가 금지",
       "reservation": "16:00~16:30 Les Baux 현장 판단 · 늦으면 즉시 삭제",
-      "executionStatuses": [{"type": "optional", "label": "FALLBACK", "detail": "Orange는 예약하지 않는 OPTIONAL BONUS다. 일반적인 실행안은 Orange를 생략하고 Avignon으로 직행한다."}],
+      "executionStatuses": [{"type": "optional", "label": "OPTIONAL BONUS", "detail": "Orange는 예약하지 않는 OPTIONAL BONUS다. 일반적인 실행안은 Orange를 생략하고 Avignon으로 직행한다."}],
       "optional": true, "place_ref": "orange"
     },
     {
