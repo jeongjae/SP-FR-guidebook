@@ -132,8 +132,8 @@
         {
           "placeId": "hertz-barcelona-sants",
           "order": 0,
-          "plannedTime": "07:00 렌터카 인수",
-          "note": "Hertz 확정 [CONFIRMED] · Sants 역 입구 옆 Carrer de Viriat 45. 인수 후 숙소로 복귀해 짐 적재."
+          "plannedTime": "08:10 렌터카 인수",
+          "note": "Hertz 확정 [CONFIRMED] · C/ Viriat 45 · 매일 07:00–22:00. France 운행 신고 및 €30 cross-border fee 필요, 미신고 시 €600 penalty 가능."
         },
         {
           "placeId": "barcelona-stay",
@@ -142,10 +142,10 @@
           "note": "Occidental Barcelona 1929 — 인수 후 복귀해 짐을 싣고 출발."
         },
         {
-          "placeId": "sitges",
+          "placeId": "can-robert-parking",
           "order": 2,
-          "plannedTime": "낮",
-          "note": "박물관 여름 폐관시간 전날 확인. 체크인 창에 따라 Girona 관광 축소·삭제."
+          "plannedTime": "10:20 도착",
+          "note": "공식 공영 유료 주차장. 관광지가 아니라 Can Robert를 차량 목적지로 사용하고 구시가지로 도보 이동."
         },
         {
           "placeId": "girona-stay-private",
@@ -162,7 +162,7 @@
         },
         {
           "from": "barcelona-stay",
-          "to": "sitges",
+          "to": "can-robert-parking",
           "mode": "driving"
         }
       ]
@@ -238,7 +238,7 @@
           "placeId": "tossa-parking-pelegri",
           "order": 1,
           "plannedTime": "09:45 도착",
-          "note": "공식 주차 권역. 당일 운영·만차 여부 재확인."
+          "note": "primary Av. del Pelegrí. 만차 시 공식 안내 후보 Av. Ferran Agulló를 backup으로 사용. 특정 주차장을 ‘최적’으로 단정하지 않음."
         },
         {
           "placeId": "tossa-de-mar",
@@ -247,44 +247,38 @@
           "note": "Vila Vella → 등대 전망대 → Platja Gran."
         },
         {
-          "placeId": "sant-feliu-la-corxera-parking",
-          "order": 3,
-          "plannedTime": "13:10 도착",
-          "note": "La Corxera 주차 후 도보 이동."
-        },
-        {
           "placeId": "sant-feliu-de-guixols",
-          "order": 4,
+          "order": 3,
           "plannedTime": "13:10–14:30",
-          "note": "해안 산책·점심. 날씨·피로 시 우회."
+          "note": "중심 외곽 주차 후 도보 접근·점심. 단일 primary parking은 CONTENT_RESEARCH_REQUIRED."
         },
         {
           "placeId": "pals-abeurador-parking",
-          "order": 5,
+          "order": 4,
           "plannedTime": "15:20 도착",
-          "note": "Pals 선택 방문 때만 사용."
+          "note": "Parking Carrer Abeurador. 역사 중심부 직접 진입·주차를 피하며 Pals 선택 방문 때만 사용."
         },
         {
           "placeId": "pals",
-          "order": 6,
+          "order": 5,
           "plannedTime": "15:20–16:10",
           "note": "선택 일정. Tossa 출발이 13:00을 넘으면 삭제."
         },
         {
           "placeId": "peratallada-baix-parking",
-          "order": 7,
+          "order": 6,
           "plannedTime": "16:25 도착",
-          "note": "차량 통제 구역 밖 공식 주차장."
+          "note": "primary Aparcament de Baix. backup Aparcament de Dalt. 둘 다 공중화장실 이용 가능. 9/3 유료 09:00–22:30, 최대 13시간 €6."
         },
         {
           "placeId": "peratallada",
-          "order": 8,
+          "order": 7,
           "plannedTime": "16:25–17:40",
           "note": "석조 골목·광장."
         },
         {
           "placeId": "girona-stay-private",
-          "order": 9,
+          "order": 8,
           "plannedTime": "18:20–18:40 복귀",
           "note": "확정 숙소 — Plaça de l'Església, 6, 17483 Bàscara."
         }
@@ -303,14 +297,9 @@
         },
         {
           "from": "tossa-de-mar",
-          "to": "sant-feliu-la-corxera-parking",
-          "mode": "driving",
-          "note": "GI-682 해안도로. 악천후 시 회피."
-        },
-        {
-          "from": "sant-feliu-la-corxera-parking",
           "to": "sant-feliu-de-guixols",
-          "mode": "walking"
+          "mode": "driving",
+          "note": "GI-682 해안도로. 악천후 시 회피. 도착 후 외곽 주차 위치는 현장 표지에 따름."
         },
         {
           "from": "sant-feliu-de-guixols",

@@ -6,6 +6,7 @@
   "title": "사그라다 파밀리아와 산파우",
   "sourceStatus": "authoritative",
   "prototypeType": "urban",
+  "dayType": "city",
   "startTime": "08:30",
   "endTime": "21:30",
   "totalDuration": "13시간",
@@ -28,10 +29,17 @@
       "category": "culture",
       "lat": 41.4128,
       "lng": 2.1744,
-      "summary": "도메네크 이 몬타네르의 카탈루냐 모더니즘 병원 단지. 45도 배치와 채광 설계 관찰",
+      "summary": "도메네크 이 몬타네르의 카탈루냐 모더니즘 병원 단지. 45도 배치와 채광 설계 관찰 · 09:30–18:30",
       "menu": null,
-      "reservation": "현장 발권/온라인 자유관람 (€18)",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "자유관람 14:00 이전 €18 (14:00 이후 €17) · 관람 45~60분 표준"
+        }
+      ],
       "place_ref": "sant-pau-recinte-modernista"
     },
     {
@@ -47,21 +55,29 @@
       "menu": null,
       "reservation": null,
       "optional": false,
+      "executionStatuses": [],
       "place_ref": null
     },
     {
       "id": "puertecillo-sagrada",
       "order": 3,
-      "start": "12:45",
+      "start": "13:00",
       "end": "14:15",
       "name": "Puertecillo Sagrada Família 점심",
       "category": "food",
       "lat": 41.4022,
       "lng": 2.1764,
-      "summary": "파사체 데 시모 18번지 해산물 마리스케리아. 점심 영업은 13:00 에 열고 16:00 에 닫는다 — 12:45 도착해 첫 회전에 들어간다",
+      "summary": "Passatge de Simó 18 해산물 마리스케리아. 일요일 점심 운영 13:00–16:00. 13:00 점심 후 14:45 사그라다 보안검색 시각 준수",
       "menu": "새우, 맛조개(navajas), 칼라마리 튀김",
-      "reservation": "공식 예약 링크 또는 +34 934 500 191",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "공식 온라인 예약 또는 전화(+34 934 500 191) 권장 · 13:00 오픈"
+        }
+      ],
       "place_ref": "puertecillo-sagrada-familia"
     },
     {
@@ -73,10 +89,22 @@
       "category": "culture",
       "lat": 41.4036,
       "lng": 2.1744,
-      "summary": "14:45 보안검색 도착, 15:15 확정 입장. 탄생 파사드·수난 파사드·중앙 네이브 빛 관찰",
+      "summary": "14:45 보안검색 도착, 15:15 확정 입장. 탄생 파사드(c. de la Marina) 입장 · 수난 파사드·중앙 네이브 관찰",
       "menu": null,
-      "reservation": "예약완료 — 15:15 입장 (General · €29.12)",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "15:15 입장 (General · €29.12) · 14:45 보안검색 도착 필수"
+        },
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "지정시각 고정 앵커 · 앞 일정 지연 시 사그라다 시각을 우선하여 앞 일정을 단축"
+        }
+      ],
       "place_ref": "sagrada-familia"
     },
     {
@@ -88,10 +116,17 @@
       "category": "sight",
       "lat": 41.4028,
       "lng": 2.1572,
-      "summary": "Plaça del Sol 주변 광장 산책 및 카페 휴식. 피로 시 생략 가능",
+      "summary": "Plaça del Sol 주변 광장 산책 및 카페 휴식. 혼잡·피로 시 1순위 생략 대상",
       "menu": null,
       "reservation": null,
       "optional": true,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "피로·지연 시 1순위 생략"
+        }
+      ],
       "place_ref": null
     },
     {
@@ -103,10 +138,17 @@
       "category": "food",
       "lat": 41.3892,
       "lng": 2.1585,
-      "summary": "전통 카탈루냐 그릴 요리와 타파스 저녁 식사",
+      "summary": "Carrer del Rosselló 164 · 일요일 영업 08:30–01:00. 전통 카탈루냐 그릴 요리와 타파스 저녁 식사",
       "menu": "엠부티도스, 그릴 육류, 하우스 와인",
-      "reservation": "사전 예약 권장 (20:30)",
+      "reservation": null,
       "optional": false,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "19:15 저녁 목표 · 공식 사이트 사전 예약 권장"
+        }
+      ],
       "place_ref": "bodega-joan"
     },
     {
@@ -122,6 +164,7 @@
       "menu": null,
       "reservation": null,
       "optional": false,
+      "executionStatuses": [],
       "place_ref": null
     }
   ],
@@ -194,7 +237,7 @@
     "Sant Pau 09:30 개장 직후 · 14시 이전 €18",
     "Avinguda de Gaudí 를 북→남으로 내려간다"
   ],
-  "backup": "혼잡·피로 시 Gràcia 산책 삭제. Sagrada 예약은 시각 고정이라 앞의 일정을 줄인다 — 뒤로 미룰 수 없다. 비가 오면 Gràcia 저녁산책 대신 숙소 휴식이나 Disseny Hub·카페로 바꾼다. 사그라다 예약이 끝내 안 되면 오후를 Museu Picasso 또는 Fundació Joan Miró 로 채우고 저녁에 외관과 Avinguda de Gaudí 를 본다.",
+  "backup": "혼잡·피로 시 Gràcia를 먼저 생략. Sagrada 15:15 입장은 고정이므로 Sant Pau/점심이 지연되면 앞 일정을 압축한다. 우천 시 Gràcia 대신 실내 휴식.",
   "map": {
     "zoom": 14,
     "center": [

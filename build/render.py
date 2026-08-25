@@ -14,6 +14,7 @@
 from __future__ import annotations
 
 import hashlib
+import html as html_lib
 import json
 import os
 import re
@@ -81,6 +82,23 @@ FACT_LABEL = {
     "duration": "소요시간", "address": "주소", "phone": "전화", "note": "메모",
 }
 
+EXECUTION_STATUS_UI = {
+    "confirmed": ("ok", "CONFIRMED", "check"),
+    "book": ("must", "BOOK", "ticket"),
+    "ticket": ("caution", "TICKET", "ticket"),
+    "check": ("caution", "CHECK", "alert"),
+    "caution": ("alert", "CAUTION", "alert"),
+    "optional": ("neutral", "OPTIONAL", "gauge"),
+    "unavailable": ("alert", "UNAVAILABLE", "alert"),
+}
+
+DAY_TYPE_LABEL = {
+    "city": ("neutral", "CITY DAY"),
+    "transfer": ("caution", "TRANSFER DAY"),
+    "driving": ("caution", "DRIVING DAY"),
+    "living": ("neutral", "LIVING DAY"),
+}
+
 
 SEP_ROW = re.compile(r"^\s*\|?[\s:|-]*-{2,}[\s:|-]*\|?\s*$")
 
@@ -100,6 +118,16 @@ def _inline(text: str) -> str:
     if out.startswith("<p>") and out.endswith("</p>"):
         out = out[3:-4]
     return out
+
+
+def plain_inline(text: str) -> str:
+    """마크다운이 허용되지 않는 UI 필드를 안전한 일반 문자열로 정규화한다.
+
+    Action Card·Timeline 요약은 HTML 조각이 아니라 텍스트 컴포넌트다. 원고의
+    `**강조**`가 그대로 보이던 문제를 특정 Day 문자열 치환 없이 여기서 막는다.
+    """
+    rendered = _inline(text or "")
+    return html_lib.unescape(re.sub(r"<[^>]+>", "", rendered)).strip()
 
 
 def split_stacked_tables(text: str) -> str:
@@ -519,6 +547,73 @@ def day_card(d: Day, rel: str, region: Region | None = None) -> str:
 </article>"""
 
 
+def stop_map_url(s: Stop) -> str:
+    """MapCard와 Action/Timeline이 공유하는 단일 지도 URL 생성 경로."""
+    return maps_url(
+        s.lat, s.lng, s.address or "",
+        s.map_query or (s.place.map_query if s.place else ""),
+        s.route_origin or "", s.route_destination or "", s.route_mode or "",
+    )
+
+
+def stop_official_url(s: Stop) -> str:
+    if not s.place:
+        return ""
+    url_fact = s.place.fact("url")
+    if url_fact and url_fact.value.startswith("http"):
+        return url_fact.value
+    return first_source_url(s.place)
+
+
+def stop_actions(s: Stop, rel: str, *, context: str) -> str:
+    """링크가 있는 행동만, 지도 → Place → 공식 링크 순서로 만든다."""
+    actions = []
+    map_href = stop_map_url(s)
+    if map_href:
+        actions.append(
+            f'<a class="btn btn-primary" href="{esc(map_href)}" '
+            f'rel="nofollow noopener">{ic("map")}길찾기</a>')
+    if context != "tl" and s.place:
+        actions.append(
+            f'<a class="btn btn-secondary" href="{rel}/places/{s.place.slug}.html">'
+            f'{ic("pin")}장소 정보</a>')
+    official = stop_official_url(s)
+    if context != "tl" and official:
+        actions.append(
+            f'<a class="btn btn-secondary" href="{esc(official)}" '
+            f'rel="nofollow noopener">{ic("link")}티켓·공식</a>')
+    if not actions:
+        return ""
+    return f'<div class="{context}-actions btn-row">{"".join(actions)}</div>'
+
+
+def stop_status_markup(s: Stop) -> tuple[str, str]:
+    """(배지, 설명). Pilot 상태가 없으면 기존 reservation 표시를 보존한다."""
+    marks, notes = [], []
+    if s.execution_statuses:
+        for status in s.execution_statuses:
+            kind, default_label, icon = EXECUTION_STATUS_UI[status.type]
+            label = status.label or default_label
+            marks.append(badge(kind, label))
+            if status.detail:
+                notes.append(
+                    f'<p class="tl-note tl-status tl-status-{status.type}">'
+                    f'{ic(icon)}<strong>{esc(label)}</strong> · '
+                    f'{esc(plain_inline(status.detail))}</p>')
+    else:
+        if s.optional:
+            marks.append(badge("neutral", "선택"))
+        if s.reservation:
+            marks.append(badge("caution", "예약"))
+            notes.append(
+                f'<p class="tl-note tl-status">{ic("ticket")}'
+                f'{esc(plain_inline(s.reservation))}</p>')
+    if s.execution_note:
+        notes.append(f'<p class="tl-note tl-execution-note">'
+                     f'{esc(plain_inline(s.execution_note))}</p>')
+    return "".join(marks), "".join(notes)
+
+
 def timeline(d: Day, rel: str) -> str:
     """하루의 뼈대. stop 과 leg 를 순서대로 엮는다."""
     legs = {(l.frm, l.to): l for l in d.legs}
@@ -528,12 +623,9 @@ def timeline(d: Day, rel: str) -> str:
         name = esc(s.name)
         if s.place is not None:
             name = f'<a href="{rel}/places/{s.place.slug}.html">{name}</a>'
-        marks = []
-        if s.optional:
-            marks.append(badge("neutral", "선택"))
-        if s.reservation:
-            marks.append(badge("caution", "예약"))
-        note = f'<p class="tl-note">{esc(s.summary)}</p>' if s.summary else ""
+        marks, status_notes = stop_status_markup(s)
+        summary = plain_inline(s.summary)
+        note = f'<p class="tl-note tl-summary">{esc(summary)}</p>' if summary else ""
         # 한 stop 이 두 장소를 담을 때 보조 장소를 명시한다. 시간표는 한 줄로
         # 두되 장소 연결은 숨기지 않는다 — 그러지 않으면 그 장소가 어느
         # 날에도 걸리지 않는다.
@@ -541,14 +633,18 @@ def timeline(d: Day, rel: str) -> str:
             links = " · ".join(
                 f'<a href="{rel}/places/{x.slug}.html">{esc(x.name)}</a>'
                 for x in s.related_places)
-            note += f'<p class="tl-note">함께 보는 곳 — {links}</p>' 
-        res = (f'<p class="tl-note">{ic("ticket")}{esc(s.reservation)}</p>'
-               if s.reservation else "")
-        rows.append(f"""<li class="tl-item" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
+            note += f'<p class="tl-note">함께 보는 곳 — {links}</p>'
+        actions = stop_actions(s, rel, context="tl")
+        action_template = stop_actions(s, rel, context="action")
+        if action_template:
+            action_template = (f'<template class="tl-action-template">'
+                               f'{action_template}</template>')
+        rows.append(f"""<li class="tl-item tl-category-{esc(s.category)}" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
   <div class="tl-time">{esc(s.start or '')}</div>
   <div class="tl-body">
-    <div class="tl-name">{ic(icon)} {name} {''.join(marks)}</div>
-    {note}{res}
+    <div class="tl-name">{ic(icon)} <span class="tl-title">{name}</span>
+      <span class="tl-marks">{marks}</span></div>
+    {note}{status_notes}{actions}{action_template}
   </div>
 </li>""")
         nxt = stops[i + 1] if i + 1 < len(stops) else None
@@ -562,11 +658,20 @@ def timeline(d: Day, rel: str) -> str:
                 bits.append(leg.distance)
             if leg.line:
                 bits.append(leg.line)
+            major = d.day_type in {"transfer", "driving"} and leg.mode in {"car", "drive"}
             cls = "tl-leg tl-leg-open" if unconfirmed else "tl-leg"
+            if major:
+                cls += " tl-leg-major"
+            route = (f'<strong class="tl-leg-route">{esc(s.name)} → '
+                     f'{esc(nxt.name)}</strong>' if major else "")
+            next_map = stop_map_url(nxt)
+            next_action = (f'<a class="tl-leg-action" href="{esc(next_map)}" '
+                           f'rel="nofollow noopener">{ic("map")}다음 목적지</a>'
+                           if major and next_map else "")
             rows.append(f"""<li class="{cls}">
   <div></div>
-  <div class="tl-body"><span class="tl-leg-line">{ic(MODE_ICON.get(leg.mode, 'pin'))}
-    {esc(' · '.join(bits))}</span></div>
+  <div class="tl-body">{route}<span class="tl-leg-line">{ic(MODE_ICON.get(leg.mode, 'pin'))}
+    {esc(' · '.join(bits))}</span>{next_action}</div>
 </li>""")
     return f'<ol class="timeline">{"".join(rows)}</ol>'
 
@@ -886,7 +991,10 @@ def build_day(d: Day, trip: Trip) -> str:
     prev_d, next_d = trip.day(d.n - 1), trip.day(d.n + 1)
 
     head_marks = []
-    if d.is_transfer:
+    day_type = d.day_type or ("transfer" if d.is_transfer else None)
+    if day_type in DAY_TYPE_LABEL:
+        head_marks.append(badge(*DAY_TYPE_LABEL[day_type]))
+    elif d.is_transfer:
         head_marks.append(badge("caution", "거점 이동"))
     if not d.is_authoritative:
         head_marks.append(badge("neutral", "검토 중"))
@@ -895,7 +1003,8 @@ def build_day(d: Day, trip: Trip) -> str:
     if d.total_distance:
         head_marks.append(f'<span>{esc(d.total_distance)}</span>')
 
-    parts = [f"""<div class="wrap">
+    type_class = f" day-type-{day_type}" if day_type else ""
+    parts = [f"""<div class="wrap{type_class}">
 <div class="stack-lg" style="padding-top:1.5rem">
 <header>
   <div class="metarow"><span class="day-date">{esc(d.date_label)}</span>
@@ -912,20 +1021,31 @@ def build_day(d: Day, trip: Trip) -> str:
         name = esc(first.name)
         if first.place:
             name = f'<a href="{rel}/places/{first.place.slug}.html">{name}</a>'
+        action_links = stop_actions(first, rel, context="action")
         parts.append(f"""<section class="action-card" id="next-action"
     data-day="{d.date.isoformat()}">
   <span class="label">NEXT</span>
   <div class="action-when">{esc(first.start)}</div>
   <div class="action-what">{name}</div>
-  {f'<p class="card-dek">{esc(first.summary)}</p>' if first.summary else ''}
+  {f'<p class="card-dek action-summary">{esc(plain_inline(first.summary))}</p>' if first.summary else ''}
+  {action_links}
 </section>""")
 
     # --- 예약 — 당일에 잠긴 것 -------------------------------------------
     reserved = d.reserved_stops
     if reserved:
+        def booking_text(s: Stop) -> str:
+            selected = [x for x in s.execution_statuses
+                        if x.type in {"confirmed", "book", "ticket"}]
+            if selected:
+                return " · ".join(
+                    f"{x.label or EXECUTION_STATUS_UI[x.type][1]}: {plain_inline(x.detail)}"
+                    for x in selected)
+            return plain_inline(s.reservation or "")
+
         rows = "".join(
             f'<li><strong>{esc(s.start or "")} {esc(s.name)}</strong> — '
-            f"{esc(s.reservation)}</li>" for s in reserved)
+            f"{esc(booking_text(s))}</li>" for s in reserved)
         parts.append(sec_head("BOOKING", "오늘 예약"))
         parts.append(f'<div class="prose"><ul>{rows}</ul></div>')
 
@@ -934,13 +1054,12 @@ def build_day(d: Day, trip: Trip) -> str:
     parts.append(timeline(d, rel))
 
     # --- 주의 ------------------------------------------------------------
-    checks = []
     if d.backup:
-        checks.append(f"<strong>Plan B</strong> — {esc(d.backup)}")
-    for x in d.needs_review:
-        checks.append(esc(x))
+        parts.append(sec_head("PLAN B", "일정 조정 기준", rule=True))
+        parts.append(alert("caution", esc(plain_inline(d.backup))))
+    checks = [esc(plain_inline(x)) for x in d.needs_review]
     if checks:
-        parts.append(sec_head("CHECK", "확인할 것"))
+        parts.append(sec_head("PRE-TRIP CHECK", "출발 전 확인", rule=True))
         parts.append("".join(
             alert("caution", c) for c in checks))
 
@@ -2405,7 +2524,7 @@ def check_vocabulary(trip: Trip) -> list[str]:
     빌드가 시끄럽게 멈추는 편이 낫다.
     """
     problems = []
-    bad_modes, bad_cats, bad_status = {}, {}, {}
+    bad_modes, bad_cats, bad_status, bad_day_types, bad_execution = {}, {}, {}, {}, {}
     for d in trip.days:
         for leg in d.legs:
             if leg.mode not in MODE_LABEL:
@@ -2413,9 +2532,14 @@ def check_vocabulary(trip: Trip) -> list[str]:
         for s in d.stops:
             if s.category not in CAT_ICON:
                 bad_cats.setdefault(s.category, []).append(d.n)
+            for status in s.execution_statuses:
+                if status.type not in EXECUTION_STATUS_UI:
+                    bad_execution.setdefault(status.type, []).append(d.n)
         if d.source_status not in ("authoritative", "candidate-latest-needs-review",
                                    "prototype-reviewed"):
             bad_status.setdefault(d.source_status, []).append(d.n)
+        if d.day_type is not None and d.day_type not in DAY_TYPE_LABEL:
+            bad_day_types.setdefault(d.day_type, []).append(d.n)
 
     for mode, days in bad_modes.items():
         problems.append(
@@ -2427,6 +2551,11 @@ def check_vocabulary(trip: Trip) -> list[str]:
             f"render.py 의 CAT_ICON 에 아이콘을 지정한다.")
     for st, days in bad_status.items():
         problems.append(f"모르는 sourceStatus '{st}' — Day {sorted(set(days))[:6]}")
+    for day_type, days in bad_day_types.items():
+        problems.append(f"모르는 dayType '{day_type}' — Day {sorted(set(days))[:6]}")
+    for status, days in bad_execution.items():
+        problems.append(
+            f"모르는 execution status '{status}' — Day {sorted(set(days))[:6]}")
 
     # fact 키도 마찬가지다. 라벨이 없으면 화면에 'address' 가 그대로 뜬다 —
     # 실제로 주소·전화를 채운 날 영어 키가 새어 나왔다.

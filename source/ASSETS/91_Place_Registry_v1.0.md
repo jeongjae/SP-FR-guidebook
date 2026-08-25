@@ -64,7 +64,7 @@
 | `nice-walk` | Nice Old Town–Castle Hill Walk | walk | 필수 | — | chapters/nice/places.html | Nice Old Town–Castle Hill Walk | — |
 | `cannes-walk` | Cannes Forville–Suquet–Croisette Walk | walk | 필수 | — | chapters/nice/places.html | Cannes Forville–Suquet–Croisette Walk | — |
 | `monaco-walk` | Monaco Rocher–Port–Monte Carlo Walk | walk | 필수 | — | chapters/nice/places.html | Monaco Rocher–Port–Monte Carlo Walk | — |
-| `nce-t2` | NCE T2 | node | — | NCE T2 | — | — | — |
+| `nce-airport-tram` | NCE Airport Tram (L2) | node | 우선 추천 | NCE Airport | — | — | — |
 | `nice-ville` | Nice-Ville | node | — | Nice-Ville | — | — | — |
 | `promenade-des-anglais` | Promenade des Anglais | spot | 필수 | — | chapters/nice/places.html | Promenade des Anglais | Promenade des Anglais |
 | `vieux-nice` | Vieux Nice — 구시가지 | spot | 필수 | — | chapters/nice/places.html | Vieux Nice — 구시가지 | fr:Vieux-Nice |
