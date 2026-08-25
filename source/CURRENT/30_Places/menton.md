@@ -53,7 +53,7 @@ source: source/CURRENT/30_Places/menton.md
 | **교통편** | Monaco-Monte-Carlo역에서 TER 기차 탑승 (소요 약 10~12분) / Nice-Ville역에서 약 35~40분 |
 | **기차역-구시가지** | Gare de Menton에서 구시가지 및 사블레트 해변까지 도보 12~15분 (평탄한 시내 대로) |
 | **성당 운영** | Basilique Saint-Michel 매일 10:00–12:00, 15:00–18:00 (무료 입장) |
-| **추천 저녁 식사** | 구항구 주변 해산물 전문 비스트로 (Le Petit Port, Le Bistrot du Port, La Belle Étoile 등) |
+| **추천 저녁 식사** | Esplanade des Sablettes의 Restaurant Les Sablettes Beach를 당일 확인 · 일정이 밀리면 Nice 복귀 후 식사 |
 | **Nice 귀환 팁** | Menton역에서 Nice-Ville 방면 TER 열차는 야간에도 운행 (SNCF Connect 앱으로 귀환 열차 시간 확인 권장) |
 
 > 🌅 **포토 팁**: 사블레트 해변(Plage des Sablettes)의 붉은 아치 회랑과 방파제에서 늦은 오후 17:00~18:30경 구시가지를 바라보고 사진을 찍으면 따뜻한 황금빛 햇살을 받은 파스텔 건물들이 물에 반사되어 가장 아름답게 담깁니다.

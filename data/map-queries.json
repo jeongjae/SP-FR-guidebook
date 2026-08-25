@@ -1098,6 +1098,13 @@
       "evidence": "https://www.explorenicecotedazur.com/",
       "verifiedAt": "2026-08-22"
     },
+    "day-08:chez-pipo": {
+      "query": "Chez Pipo, 13 Rue Bavastro, 06300 Nice",
+      "verdict": "FOUND",
+      "resolvedName": "Chez Pipo",
+      "evidence": "https://www.chezpipo.fr/en",
+      "verifiedAt": "2026-08-25"
+    },
     "antibes-old-town": {
       "query": "Marché Provençal, Cours Masséna, 06600 Antibes",
       "verdict": "FOUND",
@@ -1125,6 +1132,20 @@
       "resolvedName": "Jardin Exotique d'Èze",
       "evidence": "https://jardinexotique-eze.fr/",
       "verifiedAt": "2026-08-22"
+    },
+    "day-10:monaco-port-lunch": {
+      "query": "Café de Paris Monte-Carlo, Place du Casino, Monaco",
+      "verdict": "FOUND",
+      "resolvedName": "Café de Paris Monte-Carlo",
+      "evidence": "https://www.montecarlosbm.com/en/restaurant-monaco/le-cafe-de-paris-monte-carlo",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-10:menton-dinner": {
+      "query": "Restaurant Les Sablettes Beach, Esplanade des Sablettes, Menton",
+      "verdict": "FOUND",
+      "resolvedName": "Restaurant Les Sablettes Beach",
+      "evidence": "https://www.menton-riviera-merveilles.fr/offres/restaurant-les-sablettes-beach-menton-fr-3051576/",
+      "verifiedAt": "2026-08-25"
     },
     "nice-station-pickup": {
       "query": "Hertz, Gare de Nice Ville, Avenue Thiers, 06000 Nice",
@@ -1337,6 +1358,22 @@
       "evidence": "SNCF TER Nice-Ville to Monaco-Monte-Carlo",
       "verifiedAt": "2026-08-22"
     },
+    "day-10:monaco-menton-transfer": {
+      "title": "Monaco-Monte-Carlo ➔ Menton TER",
+      "origin": "Gare de Monaco-Monte-Carlo",
+      "destination": "Gare de Menton",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Monaco-Monte-Carlo to Menton",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-10:menton-nice-transfer": {
+      "title": "Menton ➔ Nice-Ville TER",
+      "origin": "Gare de Menton",
+      "destination": "Gare de Nice-Ville",
+      "travelMode": "transit",
+      "evidence": "SNCF TER Menton to Nice-Ville",
+      "verifiedAt": "2026-08-25"
+    },
     "day-10:nice-return": {
       "title": "Menton ➔ Nice-Ville 복귀 ➔ 숙소",
       "origin": "Gare de Menton",
@@ -1353,12 +1390,36 @@
       "evidence": "SNCF TER / Lignes d'Azur Nice to Villefranche",
       "verifiedAt": "2026-08-22"
     },
+    "day-11:villefranche-sur-mer": {
+      "title": "Villefranche-sur-Mer ➔ Villa Ephrussi",
+      "origin": "Gare de Villefranche-sur-Mer",
+      "destination": "Villa Ephrussi de Rothschild",
+      "travelMode": "transit",
+      "evidence": "Lignes d'Azur 15 via Passable / Rothschild",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-11:villa-eze-transfer": {
+      "title": "Villa Ephrussi ➔ Èze Village (15→83)",
+      "origin": "Villa Ephrussi de Rothschild",
+      "destination": "Èze Village",
+      "travelMode": "transit",
+      "evidence": "Lignes d'Azur 15 to Beaulieu/Baie des Fourmis, transfer to line 83",
+      "verifiedAt": "2026-08-25"
+    },
+    "day-11:eze-nice-transfer": {
+      "title": "Èze Village ➔ Nice Vauban ➔ 숙소",
+      "origin": "Èze Village",
+      "destination": "12 Rue Verdi, 06000 Nice",
+      "travelMode": "transit",
+      "evidence": "Lignes d'Azur 82 or 602 to Nice Vauban, then Tram L1/connection",
+      "verifiedAt": "2026-08-25"
+    },
     "day-11:nice-stay-prep": {
       "title": "Nice 복귀 ➔ 숙소 휴식 & 9/9 렌터카 준비",
       "origin": "Èze Village",
       "destination": "12 Rue Verdi, 06000 Nice",
       "travelMode": "transit",
-      "evidence": "Lignes d'Azur 82 Eze to Nice",
+      "evidence": "Lignes d'Azur 82 or 602 to Nice Vauban, then Tram L1/connection",
       "verifiedAt": "2026-08-22"
     },
     "day-14:aix-return": {

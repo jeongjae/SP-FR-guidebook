@@ -218,6 +218,7 @@ class Stop:
     optional: bool = False
     execution_statuses: list[ExecutionStatus] = field(default_factory=list)
     execution_note: str | None = None
+    official_url: str | None = None
     # 좌표를 모르지만 주소는 확정인 곳이 있다 (확정 숙소 등).
     # 틀린 좌표를 남기느니 주소로 지도를 연다.
     address: str | None = None
@@ -682,6 +683,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                     label=x.get("label"),
                 ) for x in s.get("executionStatuses", [])],
                 execution_note=s.get("executionNote"),
+                official_url=s.get("officialUrl"),
                 address=s.get("address"),
                 place_ref=s.get("place_ref"),
                 related_place_refs=list(s.get("related_place_refs") or []),

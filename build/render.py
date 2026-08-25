@@ -557,6 +557,8 @@ def stop_map_url(s: Stop) -> str:
 
 
 def stop_official_url(s: Stop) -> str:
+    if s.official_url:
+        return s.official_url
     if not s.place:
         return ""
     url_fact = s.place.fact("url")
@@ -658,13 +660,18 @@ def timeline(d: Day, rel: str) -> str:
                 bits.append(leg.distance)
             if leg.line:
                 bits.append(leg.line)
-            major = d.day_type in {"transfer", "driving"} and leg.mode in {"car", "drive"}
+            major = (
+                (d.day_type == "driving" and leg.mode in {"car", "drive"})
+                or (d.day_type == "transfer" and leg.mode not in {"walk", "unconfirmed"})
+            )
             cls = "tl-leg tl-leg-open" if unconfirmed else "tl-leg"
             if major:
                 cls += " tl-leg-major"
             route = (f'<strong class="tl-leg-route">{esc(s.name)} → '
                      f'{esc(nxt.name)}</strong>' if major else "")
-            next_map = stop_map_url(nxt)
+            # Route queries are attached to the departure stop because they
+            # describe this exact leg (not the destination's next movement).
+            next_map = stop_map_url(s)
             next_action = (f'<a class="tl-leg-action" href="{esc(next_map)}" '
                            f'rel="nofollow noopener">{ic("map")}다음 목적지</a>'
                            if major and next_map else "")
