@@ -1663,12 +1663,23 @@ def build_region(r: Region, trip: Trip) -> str:
   {rights}
   <div class="actions">{primary}<a class="btn btn-secondary" href="{esc(resource["officialUrl"])}" target="_blank" rel="noopener">권리자 사이트</a></div>
 </div></article>''')
-    if refs or resource_cards:
+    if refs or resource_cards or r.tourist_maps:
         parts.append(sec_head("REFERENCES", "공식 자료와 재확인"))
         if refs:
             parts.append(f'<div class="prose"><ul>{"".join(refs)}</ul></div>')
         if resource_cards:
             parts.append(f'<div class="grid grid-2">{"".join(resource_cards)}</div>')
+        # 관광지도는 지도 축이 맡는다. 여기에 카드를 한 벌 더 두면 두 곳이
+        # 서로 달라지는 날이 온다 — 그래서 만드는 것은 사본이 아니라 링크다.
+        if r.tourist_maps:
+            n_maps = len(r.tourist_maps)
+            parts.append(
+                f'<div class="prose"><p>관광청이 내는 도시·마을 관광지도 '
+                f'{n_maps}건은 지도 쪽에 모아 두었다. 바깥 링크라 오프라인에서 '
+                f'열리지 않는다 — 출발 전에 내려받는다.</p></div>'
+                f'<div class="btn-row"><a class="btn btn-secondary" '
+                f'href="{rel}/map/{r.slug}.html#tourist-maps">'
+                f'{ic("map")}{esc(r.name)} 관광지도</a></div>')
     parts.append("</div>")
 
     parts.append("</div>")
@@ -1841,6 +1852,70 @@ def build_home(trip: Trip, res: dict) -> str:
                 description=f"{SITE_TITLE} — 43일 여행 가이드")
 
 
+TOURIST_MAP_KIND = {
+    "city-map": "시내 지도",
+    "village-map": "마을 지도",
+    "area-map": "광역 지도",
+    "walk-map": "도보 코스",
+    "map-hub": "지도 모음",
+}
+
+TOURIST_MAP_VERIFICATION = {
+    # 어떻게 확인했는가를 숨기지 않는다. 검색 색인으로만 찾은 링크는 사람이
+    # 한 번 열어 보기 전까지 '열린다'고 말할 수 없다.
+    "search-index": "검색으로 확인 · 아직 열어 보지 않음",
+    "opened": "직접 열어 확인",
+}
+
+
+def tourist_map_section(r, rel: str) -> str:
+    """관광청 공식 관광지도. **파일이 아니라 링크다** — 그래서 경고가 먼저다.
+
+    이 사이트는 오프라인으로 도는데 이 카드의 링크는 전부 바깥이다. 현장에서
+    누르면 아무 일도 일어나지 않는다. 그래서 카드보다 위에, 출발 전에
+    내려받으라는 말이 온다. 지도를 못 여는 것보다 못 연다는 걸 모르는 쪽이
+    더 나쁘다.
+    """
+    if not r.tourist_maps:
+        return ""
+
+    cards = []
+    for tmap in r.tourist_maps:
+        kind = TOURIST_MAP_KIND[tmap["kind"]]
+        off = "" if tmap.get("onItinerary", True) else badge("caution", "동선 밖")
+        file_url = tmap.get("fileUrl")
+        primary = ""
+        if file_url:
+            label = "PDF 내려받기" if tmap.get("fileKind") == "pdf" else "이미지 내려받기"
+            primary = (f'<a class="btn btn-primary" href="{esc(file_url)}" '
+                       f'target="_blank" rel="noopener">{ic("download")}{label}</a>')
+        meta = (f'<div class="metarow">'
+                f'<span class="label" style="color:var(--accent)">{esc(tmap["city"])}</span>'
+                f'<span>{esc(kind)}</span><span>{esc(tmap["edition"])}</span>{off}</div>')
+        fine = (f'<p class="fine-print">발행 {esc(tmap["publisher"])} · '
+                f'확인 {esc(tmap["verifiedAt"])} · 재확인 {esc(tmap["recheckBy"])} · '
+                f'{esc(TOURIST_MAP_VERIFICATION[tmap["verification"]])}</p>')
+        actions = (f'<div class="actions">{primary}'
+                   f'<a class="btn btn-secondary" href="{esc(tmap["officialUrl"])}" '
+                   f'target="_blank" rel="noopener">{ic("link")}관광청 페이지</a></div>')
+        cards.append(f'<article class="card"><div class="card-body">{meta}'
+                     f'<h3>{esc(tmap["title"])}</h3><p>{esc(tmap["usage"])}</p>'
+                     f'{fine}{actions}</div></article>')
+
+    warn = alert(
+        "caution",
+        "<strong>바깥 링크다 — 오프라인에서 열리지 않는다.</strong> "
+        "이 사이트는 비행기 안에서도 돌지만 이 카드의 지도는 아니다. "
+        "출발 전에 PDF 를 내려받아 기기에 저장해 둔다. 링크는 검색으로 찾은 "
+        "것이고 아직 사람이 열어 본 것이 아니다 — 카드마다 적힌 재확인 "
+        "날짜까지 한 번 눌러 본다.",
+        "download")
+
+    head = sec_head("TOURIST MAPS", "관광청 공식 관광지도")
+    return (f'<section id="tourist-maps">{head}{warn}'
+            f'<div class="grid grid-2">{"".join(cards)}</div></section>')
+
+
 def build_map_pages(trip: Trip) -> dict[str, str]:
     """지도 — Trip · Region · Day 세 수준. 핀은 Place DB 에서만 온다."""
     out = {}
@@ -1970,6 +2045,7 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
 {map_card(r_stops_sorted, rel, zoom=zoom, label=f"{r.name} 지도", numbered=True)}
 {sec_head("", "날짜별 동선")}
 <div class="prose"><ul>{day_links}</ul></div>
+{tourist_map_section(r, rel)}
 <div class="btn-row"><a class="btn btn-secondary" href="../guide/{r.slug}.html">
   {ic("region")}{esc(r.name)} 가이드</a></div>
 </div></div>""")

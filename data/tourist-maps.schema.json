@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SP-FR official tourist maps",
+  "type": "object",
+  "required": ["schemaVersion", "regions"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "regions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["city", "title", "publisher", "kind", "edition",
+                       "usage", "officialUrl", "verifiedAt", "recheckBy",
+                       "verification"],
+          "properties": {
+            "city": {"type": "string", "minLength": 1},
+            "title": {"type": "string", "minLength": 1},
+            "publisher": {"type": "string", "minLength": 1},
+            "kind": {"enum": ["city-map", "village-map", "area-map",
+                              "walk-map", "map-hub"]},
+            "edition": {"type": "string", "minLength": 1},
+            "usage": {"type": "string", "minLength": 1, "maxLength": 420},
+            "officialUrl": {"type": "string", "pattern": "^https://"},
+            "fileUrl": {"type": "string", "pattern": "^https://"},
+            "fileKind": {"enum": ["pdf", "image"]},
+            "onItinerary": {"type": "boolean"},
+            "verifiedAt": {"type": "string", "format": "date"},
+            "recheckBy": {"type": "string", "format": "date"},
+            "verification": {"enum": ["search-index", "opened"]}
+          },
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {"required": ["fileUrl"]},
+              "then": {"required": ["fileKind"]}
+            }
+          ]
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -21,6 +21,7 @@ PLACE_DOSSIERS = SOURCE / "ASSETS/90_Regional_Context_and_Place_Dossier_Compendi
 PLACE_REGISTRY = SOURCE / "ASSETS/91_Place_Registry_v1.0.md"
 NICE_CHAPTER = SOURCE / "CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md"
 SCHEMA_PATH = SOURCE.parent / "build" / "content_schema.json"
+TOURIST_MAPS = ROOT / "data" / "tourist-maps.json"
 
 RS_SAMPLE_REGION = """---
 slug: "06-nice"
@@ -246,6 +247,59 @@ class TestValidationGuards(unittest.TestCase):
         trip = model.load_trip()
         missing = [d.n for d in trip.days if not d.fatigue]
         self.assertEqual(missing, [], f"피로도 없는 날: {missing}")
+
+    def test_stale_tourist_map_recheck_is_caught(self):
+        """관광지도 재확인 날짜가 그 지역 체크인을 넘기면 잡아야 한다.
+
+        관광청 지도는 링크다. 링크는 조용히 죽는다 — 현장에서 눌렀을 때
+        404 가 뜨는 지도는 없느니만 못하다. 그래서 체크인 전에 사람이 한 번
+        열어 보도록 날짜로 강제한다.
+        """
+        backup = TOURIST_MAPS.read_text(encoding="utf-8")
+        try:
+            data = json.loads(backup)
+            data["regions"]["barcelona"][0]["recheckBy"] = "2026-09-30"
+            TOURIST_MAPS.write_text(json.dumps(data, ensure_ascii=False),
+                                    encoding="utf-8")
+            with self.assertRaises(ValueError) as caught:
+                model.load_trip()
+            self.assertIn("tourist map recheckBy", str(caught.exception))
+        finally:
+            TOURIST_MAPS.write_text(backup, encoding="utf-8")
+
+    def test_unknown_tourist_map_kind_is_caught(self):
+        """렌더러가 모르는 지도 종류가 들어오면 멈춘다.
+
+        어휘 가드와 같은 이유다. 모르는 값은 화면에 영어 코드로 샌다.
+        """
+        backup = TOURIST_MAPS.read_text(encoding="utf-8")
+        try:
+            data = json.loads(backup)
+            data["regions"]["barcelona"][0]["kind"] = "subway-map"
+            TOURIST_MAPS.write_text(json.dumps(data, ensure_ascii=False),
+                                    encoding="utf-8")
+            with self.assertRaises(Exception) as caught:
+                model.load_trip()
+            self.assertIn("subway-map", str(caught.exception))
+        finally:
+            TOURIST_MAPS.write_text(backup, encoding="utf-8")
+
+    def test_tourist_map_region_must_exist(self):
+        """없는 지역에 매달린 관광지도는 어느 화면에도 뜨지 않는다.
+
+        오타 하나로 지도가 통째로 사라지고, 사라진 줄도 모른다.
+        """
+        backup = TOURIST_MAPS.read_text(encoding="utf-8")
+        try:
+            data = json.loads(backup)
+            data["regions"]["barthelona"] = data["regions"].pop("barcelona")
+            TOURIST_MAPS.write_text(json.dumps(data, ensure_ascii=False),
+                                    encoding="utf-8")
+            with self.assertRaises(ValueError) as caught:
+                model.load_trip()
+            self.assertIn("not a trip region", str(caught.exception))
+        finally:
+            TOURIST_MAPS.write_text(backup, encoding="utf-8")
 
     def test_missing_confirmed_fact_token(self):
         # Remove confirmed hotel phone token from Barcelona chapter

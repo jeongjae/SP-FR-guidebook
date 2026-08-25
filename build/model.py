@@ -26,6 +26,7 @@
     data/region-essentials.json             지역별 짧은 숙박·생활 실행 요약
     data/transit-facts.json                 공공교통 선택·이용법·공식 출처
     data/transit-resources.json             공식 노선도·오프라인 교통 자료
+    data/tourist-maps.json                  공식 관광지도(도시·마을) 링크
     data/images/image-manifest.json         사진
 """
 from __future__ import annotations
@@ -51,6 +52,7 @@ MAP_QUERIES = ROOT / "data" / "map-queries.json"
 REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
 TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
 TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
+TOURIST_MAPS = ROOT / "data" / "tourist-maps.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 IMAGE_ALIASES = ROOT / "data" / "images" / "place-aliases.json"
 
@@ -363,6 +365,7 @@ class Region:
     essentials: dict = field(default_factory=dict)
     transit: dict = field(default_factory=dict)
     transport_resources: list[dict] = field(default_factory=list)
+    tourist_maps: list[dict] = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -753,6 +756,8 @@ def load_trip() -> Trip:
     essentials = _load_validated_json(REGION_ESSENTIALS).get("regions", {})
     transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
     transport_resources = _load_validated_json(TRANSIT_RESOURCES).get("regions", {})
+    tourist_maps = _load_validated_json(TOURIST_MAPS).get("regions", {})
+    by_slug_check = {r["slug"] for r in regions_raw}
     region_checkins = {stay["key"]: _d(stay["checkin"]) for stay in stays}
     for slug, facts in transit.items():
         recheck_deadline = region_checkins.get(slug, _d(itin["trip"]["start"]))
@@ -779,6 +784,32 @@ def load_trip() -> Trip:
             local_path = resource.get("localPath")
             if local_path and not (ROOT / local_path).is_file():
                 raise ValueError(f"{slug}: transport resource file missing: {local_path}")
+
+    # 관광지도. 교통 자료와 같은 규율을 쓴다 — 지역 체크인 전에 반드시 사람이
+    # 다시 열어 본다. 링크가 죽은 관광지도는 현장에서 없느니만 못하다.
+    #
+    # 종류(kind)를 여기서 한 번 더 막는 이유는 어휘 가드와 같다. 편집자가
+    # 새 종류를 쓰면 렌더러가 그것을 모른 채 화면에 영어 코드를 흘린다.
+    known_map_kinds = {"city-map", "village-map", "area-map", "walk-map", "map-hub"}
+    for slug, maps in tourist_maps.items():
+        if slug not in by_slug_check:
+            raise ValueError(f"tourist map region is not a trip region: {slug}")
+        recheck_deadline = region_checkins.get(slug, _d(itin["trip"]["start"]))
+        for tmap in maps:
+            if tmap["kind"] not in known_map_kinds:
+                raise ValueError(
+                    f"{slug}: unknown tourist map kind '{tmap['kind']}' — "
+                    f"render.py 의 TOURIST_MAP_KIND 에 한국어 표기를 더한다.")
+            verified = _d(tmap["verifiedAt"])
+            recheck = _d(tmap["recheckBy"])
+            if verified > date.today():
+                raise ValueError(
+                    f"{slug}: tourist map verifiedAt is in the future: {verified}")
+            if recheck < verified or recheck >= recheck_deadline:
+                raise ValueError(
+                    f"{slug}: tourist map recheckBy must be on/after verification "
+                    f"and before the region check-in ({recheck_deadline}): {recheck}"
+                )
     editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 
@@ -910,6 +941,7 @@ def load_trip() -> Trip:
             essentials=essentials.get(r["slug"], {}),
             transit=transit.get(r["slug"], {}),
             transport_resources=transport_resources.get(r["slug"], []),
+            tourist_maps=tourist_maps.get(r["slug"], []),
         ))
 
     return Trip(
