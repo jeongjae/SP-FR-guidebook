@@ -125,6 +125,12 @@ class ExecutionUxBatch02Tests(unittest.TestCase):
         self.assertIn("Aéro €10 왕복권", day7)
         self.assertIn("Palais ALZIRA", day7)
         self.assertNotIn("Hertz 변경 불가 시 기내반입 위주", day7)
+        self.assertNotIn("변경 요청", day7)
+        self.assertNotIn("14:00→12:30", day7)
+
+        day7_json = (ROOT / "data" / "daily-cards" / "day-07.json").read_text(encoding="utf-8")
+        self.assertNotIn("14:00→12:30 변경 요청", day7_json)
+        self.assertNotIn("변경 요청 필요", day7_json)
 
     def test_day07_flight_arrival_terminal_and_place_integrity(self):
         day7_stops = {stop.id: stop for stop in self.day(7).stops}
@@ -141,6 +147,8 @@ class ExecutionUxBatch02Tests(unittest.TestCase):
         self.assertIn("제1터미널 (Terminal 1", place_md)
         self.assertIn("제2터미널 (Terminal 2", place_md)
         self.assertIn("트램 2호선(Ligne 2)", place_md)
+        self.assertNotIn("A3/A4", place_md)
+        self.assertNotIn("Gate A3/A4", place_md)
 
         redirects = json.loads((ROOT / "data" / "slug-redirects.json").read_text(encoding="utf-8"))
         self.assertEqual("nce-airport-tram", redirects["places"]["nce-t2"]["to"])

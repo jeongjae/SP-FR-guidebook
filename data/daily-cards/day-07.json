@@ -206,7 +206,7 @@
     }
   ],
   "transport": [
-    "렌터카 — BCN T1 반납 12:30 (요청)",
+    "렌터카 — BCN T1 12:30 반납 운영 목표 (예약서 반납시각 14:00)",
     "항공 — Vueling VY1521 15:30 BCN T1 발차 ➔ 16:55 NCE 도착 ([CONFIRMED])",
     "T02 공항이동(추천): NCE Terminal 1 ➔ Lignes d'Azur 트램 2호선(Port Lympia 방향) 탑승 ➔ Alsace-Lorraine 지하역 하차 (20~25분 소요. 공항 트램 발매기에서 Aéro €10 왕복권 구입 탑승, 유효한 Lignes d'Azur 충전 카드가 있으면 일반요금 적용)",
     "T02 마지막 구간: Alsace-Lorraine역 엘리베이터 출구 ➔ Bd Gambetta 북쪽 150m ➔ Rue Verdi 우회전 250m 평지 도보 (총 450m / 약 6분) ➔ Palais ALZIRA 도착",
@@ -234,7 +234,7 @@
   "needsReview": [
     "Bàscara 체크아웃 조건 확인",
     "Nice 숙소 확정 (2026-08-13, Airbnb [CONFIRMED]): Palais ALZIRA · 12 Rue Verdi · 체크인 9/4 18:00~19:00 · 체크아웃 9/9 11:00",
-    "Hertz [CONFIRMED] 반납시각 14:00→12:30 변경 요청 (2026-08-14 결정)"
+    "Hertz [CONFIRMED] 예약 반납시각 14:00 · 12:30 운영 목표에 따른 조기반납 가능 여부 및 요금 영향 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-7",

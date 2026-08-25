@@ -18,8 +18,8 @@ source: source/CURRENT/30_Places/nce-airport-tram.md
 공항의 **제1터미널(T1)**과 **제2터미널(T2)** 양쪽 모두에서 **트램 2호선(Ligne 2)**이 출발하며, 도심(Grand Arénas, Alsace-Lorraine, Jean Médecin, Garibaldi, Port Lympia)을 환승 없이 20~25분 만에 직결한다.
 
 ### 터미널별 승강장 위치
-- **제1터미널 (Terminal 1 — Vueling 등 유럽·국제선 도착)**: 입국장(Arrivals) Gate A0 앞 광장에 Tram L2 `Aéroport Terminal 1` 승강장 위치.
-- **제2터미널 (Terminal 2 — Air France, EasyJet 등)**: 입국장 Gate A3/A4 앞 광장에 Tram L2 `Aéroport Terminal 2` 승강장 위치 (노선 기점).
+- **제1터미널 (Terminal 1)**: 입국장(Arrivals) Gate A0 앞에서 Tram L2 / City Centre 표지를 따라 `Aéroport Terminal 1` 외부 승강장으로 이동.
+- **제2터미널 (Terminal 2)**: 입국장 도착층에서 Tram L2 / City Centre 표지를 따라 `Aéroport Terminal 2` 외부 승강장으로 이동 (공식 안내상 A1/A3 방향).
 
 ### Editor's Verdict
 > 공항 도착 후 니스 시내 숙소로 이동하는 가장 정시성이 보장되고 경제적인 수단이다. 터미널 밖 트램 승강장 자동발매기에서 Aéro 왕복권(€10) 또는 Lignes d'Azur 충전 카드를 구매하여 탑승한다.
