@@ -128,7 +128,10 @@ Day 18 체크아웃 후 L'Isle-sur-la-Sorgue의 물길을 걷고 Avignon으로 �
 
 > **Editor's Verdict**: 1148년 깊은 협곡 속에 세워진 12세기 시토회 로마네스크 수도원. Day 17 월요일 오후 관람을 핵심으로 유지한다.
 
-- **체류/요금**: 외관 45–60분 · HistoPad 내부 약 1–1.5시간 (예약·운영 출발 전 재확인)
+- **CONFIRMED**: 2026-09-14(월) 비가이드 관람 13:00–17:00 마지막 입장·한국어 HistoPad 제공. 2026-08-25 공식 예매 화면에 15:00·16:00·17:00 회차가 표시됐다.
+- **ACTION REQUIRED**: 기존 16:00–17:30 창에 맞는 16:00 HistoPad 회차를 예약하고 티켓을 오프라인 저장한다.
+- **FALLBACK**: 예약을 못 하면 계곡 전망·수도원 외관은 MUST로 유지하고 내부만 생략한다. Roussillon 체류를 줄이지 않고 Goult→Ménerbes 순으로 뺈다.
+- **체류/요금**: 외관 45–60분 · HistoPad 내부 약 1–1.5시간
 - **상세 가이드**: [Abbaye de Sénanque 전체 가이드 보기](../places/abbaye-de-senanque.html)
 
 ---
@@ -195,8 +198,10 @@ Day 18 체크아웃 후 L'Isle-sur-la-Sorgue의 물길을 걷고 Avignon으로 �
 
 ## 이번 일정의 식사 배치
 
-- **Day 16** — Lourmarin에서 점심, Gordes에서 저녁. Bonnieux·Lacoste에서는 긴 식사를 하지 않는다.
-- **Day 17** — Roussillon은 커피·간식, Ménerbes를 점심 우선 후보로 둔다. Ménerbes를 생략하면 Roussillon 또는 Gordes권으로 전환한다.
+- **Day 16 · CONFIRMED** — La Récréation(15 rue Philippe de Girard)은 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00이다. à la carte €22–26, 성인 메뉴 €37.50–38.50, plat du jour €22.
+- **Day 16 · ACTION REQUIRED / FALLBACK** — 9/13 12:15 실제 좌석은 미확인. 예약이 안 되면 같은 12:15–13:30 창에 Lourmarin 마을 카페·브라시리를 현장 이용하고 동선은 바꾸지 않는다.
+- **Day 17 · CONFIRMED** — Bistrot Le 5 공식 사이트는 **월요일 휴무**로 표시한다. Day 17 점심으로 의존하지 않고 Ménerbes를 MUST로 승격하지 않는다.
+- **Day 17 · FALLBACK** — A) Ménerbes 전 Roussillon 점심, B) Ménerbes 카페·불랑제리 간단식, C) 우회 없이 Gordes 방향 복귀.
 - **Day 18** — L'Isle에서는 커피·브런치, Fontaine을 가면 강변 가벼운 점심, 저녁은 Avignon 숙소 주변에 둔다.
 
 Gordes 화요시장은 Day 18 체크아웃과 충돌하므로 참고 정보로만 두고 핵심 일정으로 승격하지 않는다.
@@ -230,9 +235,10 @@ Gordes 화요시장은 Day 18 체크아웃과 충돌하므로 참고 정보로�
 
 ### Gordes 숙소와 생활권
 
-- **숙소 형태**: Gordes 마을 또는 가까운 생활권의 2박 숙소 (후보 미정)
+- **ACTION REQUIRED**: Gordes accommodation for 9/13–9/15 is not yet confirmed in the repository.
+- **숙소 형태**: Gordes 마을 또는 가까운 생활권의 2박 숙소(미확정). 후보명·Gordes 중심 좌표를 확정 숙소 주소로 사용하지 않는다.
 - **일정**: 2026-09-13(일) 체크인 – 2026-09-15(화) 체크아웃 (2박)
-- **생활권 수칙**: 도착 즉시 주차·야간 출입방법을 확인하고, Day 17 저녁에는 다음 날 체크아웃 준비를 마친다.
+- **확정 후 동기화**: 숙소명·주소·체크인 가능시간·주차·연락처·Gordes 중심 이동·Day 16 도착·Day 17 아침 출발 동선을 함께 갱신한다.
 
 ### 핵심 안전 및 이동 확인
 
@@ -254,7 +260,7 @@ Gordes 화요시장은 Day 18 체크아웃과 충돌하므로 참고 정보로�
 - [ ] Gordes 숙소 2박 예약 상태 및 체크인 시간 확인
 - [ ] Lourmarin La Récréation 9/13 점심 예약 가능 여부 확인
 - [ ] Roussillon Sentier des Ocres 개방 상태 확인
-- [ ] Sénanque 9/14 월요일 오후 슬롯·예약·촬영 규정 확인
+- [ ] Sénanque 9/14 16:00 HistoPad 회차 예약·티켓 오프라인 저장
 - [ ] 9/15 Avignon 체크인·관리주차장 확인
 
 ### 공식 정보원
@@ -272,7 +278,8 @@ Gordes 화요시장은 Day 18 체크아웃과 충돌하므로 참고 정보로�
 | 항목 | 상태 |
 |---|--- |
 | Sentier des Ocres (약 30–60분·9월 매일 운영·기상 조건부) | 공식 확인 |
-| Sénanque (월요일 관람 가능·HistoPad 한국어 지원) | 공식 확인 |
+| Sénanque (월요일 관람·HistoPad 한국어·9/14 15:00·16:00·17:00 예매 화면 표시) | 공식 확인 (2026-08-25) |
+| Bistrot Le 5 (9/14 월요일 휴무) | 공식 사이트 확인 (2026-08-25) |
 | L'Isle 전통시장 (목·일 오전, 화요일은 시장일 아님) | 공식 확인 |
 | 주요 antique village의 화·수 휴무 패턴 | 공식 확인 |
 | Lourmarin 카뮈 묘소 및 르네상스 샤토 외관 | 복수 출처 확인 |
@@ -309,6 +316,8 @@ Base는 Aix → Lourmarin → Gordes, Extended는 Bonnieux와 Lacoste를 사이�
 * **IF LATE**: Goult → Ménerbes 순으로 삭제한다.
 
 Sénanque 월요일 오후 관람 슬롯을 우선한다. 상세 시각·식사·예약 확인은 Day 17 정본을 따른다.
+
+16:00 HistoPad 회차는 2026-08-25 공식 예매 화면에 표시됐으나 아직 예약 완료 상태가 아니다. 예약을 못 하면 외관·계곡을 MUST, 내부를 OPTIONAL을 실행한다. 개인용 사진은 삼각대 없이 가능하지만 예식 중 사진·영상·녹음은 금지다. 9월에 라벤더밭을 주경험으로 표현하지 않는다.
 
 ---
 

@@ -115,7 +115,7 @@
     "stops": {
       "type": "array",
       "minItems": 1,
-      "maxItems": 8,
+      "maxItems": 9,
       "items": {
         "$ref": "#/$defs/stop"
       }
@@ -363,6 +363,15 @@
             "string",
             "null"
           ]
+        },
+        "related_place_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "일정 stop에서 함께 열어보는 정본 Place 참조. 방문지·시각 의미를 바꾸지 않는 부가 링크다."
         }
       },
       "additionalProperties": false

@@ -28,6 +28,38 @@ def slug(day: dict) -> str:
     return f"day-{day['day']:02d}-" + re.sub(r"[^a-z0-9]+", "-", text).strip("-")
 
 
+def artifact_slug(day: dict) -> str:
+    """Use the rendered artifact identity when display-city copy has changed."""
+    sources = sorted((OUTPUT / "source").glob(f"day-{day['day']:02d}-*.html"))
+    if len(sources) == 1:
+        return sources[0].stem
+    return slug(day)
+
+
+def unresolved_place(place: dict, *, final_arrival_day: bool = False) -> bool:
+    if place.get("lat") is not None and place.get("lng") is not None:
+        return False
+    if place.get("status") == "confirmed" and place.get("address"):
+        return False
+    if final_arrival_day and "숙소 없음" in (place.get("name") or ""):
+        return False
+    return True
+
+
+def ends_at_accommodation(payload: dict) -> bool:
+    last = payload["stops"][-1]
+    if last["category"] == "hotel":
+        return True
+    hotel = payload.get("hotel", {})
+    return (
+        last["category"] == "food"
+        and last.get("lat") is not None
+        and last.get("lng") is not None
+        and last.get("lat") == hotel.get("lat")
+        and last.get("lng") == hotel.get("lng")
+    )
+
+
 def windows_path(path: Path) -> str:
     return subprocess.check_output(["wslpath", "-w", str(path)], text=True, encoding="utf-8").strip()
 
@@ -83,7 +115,7 @@ def main() -> None:
         for stop in payload.get("stops", []):
             if stop.get("lat") is None or stop.get("lng") is None:
                 unresolved += 1
-        if payload.get("hotel", {}).get("lat") is None:
+        if unresolved_place(payload.get("hotel", {}), final_arrival_day=index == 43):
             unresolved += 1
         if unresolved and not payload.get("needsReview"):
             day_errors.append("unresolved coordinates without needsReview")
@@ -99,11 +131,14 @@ def main() -> None:
             missing_legs = [(a, b) for a, b in zip(stop_ids, stop_ids[1:]) if (a, b) not in legs]
             if missing_legs:
                 day_errors.append(f"missing adjacent legs: {missing_legs}")
-            # Day 42 leaves for CDG and Day 43 lands at Incheon: neither ends at a stay.
-            if index in (42, 43):
+            # Day 42 leaves for CDG. Day 43 lands at Incheon and ends at home.
+            if index == 42:
                 if payload["stops"][-1]["category"] != "transport":
                     day_errors.append("departure day does not end at the airport")
-            elif payload["stops"][-1]["category"] != "hotel":
+            elif index == 43:
+                if payload["stops"][-1]["category"] != "hotel":
+                    day_errors.append("arrival day does not end at home")
+            elif not ends_at_accommodation(payload):
                 day_errors.append("prototype does not end at accommodation")
             if payload.get("startTime") and payload.get("endTime"):
                 start = int(payload["startTime"].replace(":", ""))
@@ -111,7 +146,7 @@ def main() -> None:
                 if start >= end:
                     day_errors.append("start/end time inversion")
 
-            out_slug = slug(payload)
+            out_slug = artifact_slug(payload)
             html_path = OUTPUT / "source" / f"{out_slug}.html"
             expected = [
                 OUTPUT / "full" / f"{out_slug}.png",
