@@ -38,7 +38,7 @@
         "09_Avignon_*.md",
         "10_Lyon_*.md"
       ],
-      "note": "Day 20(9/17) 저녁 Avignon TGV Hertz 반납. 기존 예약(9/20)은 출발 전 9/17 저녁 18:30 반납으로 변경 필요."
+      "note": "Day 20(9/17) 18:30 Avignon TGV Hertz 반납으로 예약 변경 확정 (사용자 예약 SOT, 2026-08-26)."
     },
     {
       "id": "DEC-A03",
@@ -118,7 +118,7 @@
     {
       "id": "DEC-A08",
       "date": "2026-08-17",
-      "decision": "Hertz Avignon TGV 렌터카 9/17(목) 저녁 반납 확정 (여행계획 SOT: 9/17 저녁 반납, Hertz 예약은 출발 전 변경 필요)",
+      "decision": "Hertz Avignon TGV 렌터카 9/17(목) 18:30 반납 예약 확정",
       "forbidden_patterns": [
         "9/20 09:00 반납",
         "9월 20일 09:00",
@@ -133,7 +133,7 @@
         "09_Avignon_*.md",
         "10_Lyon_*.md"
       ],
-      "note": "목요일 영업 08:00-21:00, Parking Loueurs P0. Day 21 이후는 대중교통(TER/TGV) 및 도보 운영. 기존 예약 변경 필요."
+      "note": "목요일 영업 08:00-21:00, Parking Loueurs P0. Day 21 이후는 대중교통(TER/TGV) 및 도보 운영. 사용자 예약 SOT 2026-08-26 확인."
     },
     {
       "id": "DEC-A09",

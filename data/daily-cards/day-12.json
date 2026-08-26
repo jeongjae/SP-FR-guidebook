@@ -52,7 +52,7 @@
       "reservation": null,
       "executionStatuses": [
         {"type": "confirmed", "label": "CONFIRMED", "detail": "Hertz Nice Railway Station 9/9 09:00 인수 예약."},
-        {"type": "check", "label": "CHECK", "detail": "Avignon TGV 반납을 계약상 9/20 09:00에서 일정상 9/17 18:30 이전으로 변경했는지 확인한다."},
+        {"type": "check", "label": "VERIFY RETURN", "detail": "확정된 Hertz Avignon TGV 9/17 18:30 반납값이 출차 계약서에도 반영됐는지 확인한다."},
         {"type": "caution", "label": "CAR CHECK", "detail": "차체 사진·연료정책·반납지와 반납시각을 출차 전에 기록한다."}
       ],
       "optional": false,
@@ -225,7 +225,7 @@
     "routeCache": "routes/day-12-driving-osrm.json"
   },
   "needsReview": [
-    "CHECK — Avignon TGV 9/17 18:30 이전 조기반납으로 Hertz 예약 변경 완료 여부",
+    "Hertz Avignon TGV 9/17 18:30 반납 확정",
     "각 경유지 시각은 실제 차량 인수 완료 시각 기준 역산",
     "Aix 숙소는 좌표를 추정하지 않고 확정 주소 2 Place Coimbra로 지도 실행"
   ],
@@ -235,7 +235,7 @@
     "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-12",
     "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
     "OSM Nominatim 지오코딩 2026-08-06: Saint-Paul·Fondation Maeght·Grasse",
-    "예약 확정 (2026-08-09 반영): Hertz [CONFIRMED] — Nice역 9/9 09:00 인수 · 계약상 Avignon TGV 9/20 09:00 반납",
-    "운영계획: Day 20(9/17) 18:30 이전 Avignon TGV 조기 반납으로 예약 변경 필요 · 변경 완료 전 바우처의 9/20 조건이 유효"
+    "예약 확정: Hertz Nice역 9/9 09:00 인수 · Avignon TGV 9/17 18:30 반납",
+    "사용자 예약 SOT 확정 2026-08-26: Hertz Avignon TGV 2026-09-17 18:30 반납"
   ]
 }

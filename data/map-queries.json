@@ -1658,10 +1658,42 @@
     "day-20:avignon-depart": {
       "title": "Avignon 숙소 출발 ➔ Uzès 이동",
       "origin": "Avignon",
-      "destination": "Uzès",
+      "destination": "Parking Cordeliers, Uzès",
       "travelMode": "driving",
-      "evidence": "Drive Avignon to Uzes",
-      "verifiedAt": "2026-08-22"
+      "evidence": "Execution destination: Parking Cordeliers",
+      "verifiedAt": "2026-08-26"
+    },
+    "day-20:uzes": {
+      "title": "Uzès ➔ Pont du Gard 좌안 주차장",
+      "origin": "Parking Cordeliers, Uzès",
+      "destination": "Parking Rive Gauche, Pont du Gard",
+      "travelMode": "driving",
+      "evidence": "Pont du Gard official left-bank visitor parking",
+      "verifiedAt": "2026-08-26"
+    },
+    "day-20:pont-du-gard-lunch": {
+      "title": "Pont du Gard ➔ Nîmes Parking Arènes",
+      "origin": "Parking Rive Gauche, Pont du Gard",
+      "destination": "Parking Arènes, Boulevard de Bruxelles, Nîmes",
+      "travelMode": "driving",
+      "evidence": "Nîmes official underground parking near Arènes",
+      "verifiedAt": "2026-08-26"
+    },
+    "day-20:maison-carree": {
+      "title": "15:45 Nîmes hard stop ➔ Avignon TGV 주유",
+      "origin": "Parking Arènes, Boulevard de Bruxelles, Nîmes",
+      "destination": "Station-service Avignon TGV, Avignon",
+      "travelMode": "driving",
+      "evidence": "Fuel before confirmed Hertz return",
+      "verifiedAt": "2026-08-26"
+    },
+    "day-20:avignon-tgv": {
+      "title": "주유 ➔ Hertz Avignon TGV 반납",
+      "origin": "Station-service Avignon TGV, Avignon",
+      "destination": "Hertz, Gare TGV, Place de l'Europe, Avignon",
+      "travelMode": "driving",
+      "evidence": "Confirmed Hertz return at Avignon TGV; Parking Loueurs P0 approach",
+      "verifiedAt": "2026-08-26"
     },
     "day-21:avignon-centre": {
       "title": "Avignon Centre역 ➔ Arles 이동 (TER)",
@@ -1686,6 +1718,22 @@
       "travelMode": "transit",
       "evidence": "TGV INOUI 12176 Avignon TGV to Lyon Part-Dieu",
       "verifiedAt": "2026-08-22"
+    },
+    "day-23:avignon-checkout": {
+      "title": "Avignon 숙소 ➔ Gare d'Avignon TGV",
+      "origin": "Avignon intra-muros",
+      "destination": "Gare d'Avignon TGV, Place de l'Europe, Avignon",
+      "travelMode": "driving",
+      "evidence": "Station main-hall arrival target for confirmed TGV 12176",
+      "verifiedAt": "2026-08-26"
+    },
+    "day-23:lyon-checkin": {
+      "title": "Lyon Part-Dieu ➔ Lagrange Aparthotel Lyon Lumière",
+      "origin": "Place Béraudier, Gare de Lyon Part-Dieu",
+      "destination": "81-85 Cours Albert Thomas, 69003 Lyon",
+      "travelMode": "driving",
+      "evidence": "Confirmed hotel address and official taxi-rank origin",
+      "verifiedAt": "2026-08-26"
     },
     "day-24:funicular-ascent": {
       "title": "Metro D ➔ Vieux Lyon ➔ 푸니쿨라 F2 상행",

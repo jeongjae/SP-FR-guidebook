@@ -89,7 +89,10 @@ class MapHubImprovementTests(unittest.TestCase):
 
         # 4. Hertz rental Avignon TGV
         s = stops_dict["avignon-tgv"]
-        self.assertEqual(s.map_query, "Hertz, Gare TGV d'Avignon, Place de l'Europe, 84000 Avignon")
+        self.assertIsNone(s.map_query)
+        route = self.map_queries["routes"]["day-20:avignon-tgv"]
+        self.assertIn("Hertz", route["destination"])
+        self.assertIn("Place de l'Europe", route["destination"])
 
         # Check all place entries for bad tokens in query
         bad_tokens = ["점심", "저녁", "산책", "관람", "방문", "(선택)", "(추천)", "(필수)", "➔", "→"]
@@ -104,7 +107,7 @@ class MapHubImprovementTests(unittest.TestCase):
     def test_route_urls_are_directions_with_valid_modes(self):
         """Route 항목이 Google Maps Directions 링크로 렌더링되고 이동수단이 일치하는지 확인."""
         routes = self.map_queries.get("routes", {})
-        self.assertEqual(len(routes), 39, "Day 14 차량 회수 포함 총 39개 경로 항목이 정의되어야 함")
+        self.assertEqual(len(routes), 45, "Batch 05 Day 20·23 실행 목적지 포함 총 45개 경로 항목이 정의되어야 함")
 
         # Spot check key routes
         day9_nice_antibes = routes.get("day-09:nice-ville")
@@ -169,8 +172,8 @@ class MapHubImprovementTests(unittest.TestCase):
             ("nice", "Nice · Côte d'Azur", 26),
             ("aix", "Aix-en-Provence", 21),
             ("luberon", "Luberon", 11),
-            ("avignon", "Avignon · Alpilles", 24),
-            ("lyon", "Lyon", 18),
+            ("avignon", "Avignon · Alpilles", 25),
+            ("lyon", "Lyon", 19),
             ("paris", "Paris", 46),
         ]
         last_pos = 0
@@ -184,7 +187,7 @@ class MapHubImprovementTests(unittest.TestCase):
             total_pins += count
             last_pos = pos
 
-        self.assertEqual(total_pins, 169, "Batch 04 Cassis 핀 + MP-04 파리 끼니 슬롯 포함 총 핀 수는 169여야 함")
+        self.assertEqual(total_pins, 171, "Batch 05 Hertz·Lyon 숙소 실행 목적지 포함 총 핀 수는 171이어야 함")
 
         # 3. 8개의 map-card 및 script data가 존재하는지 확인
         map_cards = re.findall(r'<div class="map-card">', map_html)
@@ -207,7 +210,7 @@ class MapHubImprovementTests(unittest.TestCase):
         # 6. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
         date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
         matches = date_pattern.findall(map_html)
-        self.assertEqual(len(matches), 169, "169개 항목 모두 날짜 메타가 존재해야 함")
+        self.assertEqual(len(matches), 171, "171개 항목 모두 날짜 메타가 존재해야 함")
 
         # 7. Verify specific items
         self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)
