@@ -1467,3 +1467,25 @@ td .meta a,
   margin-block: -0.55rem;
   font-weight: 700;
 }
+
+/* 관광 조망지도 — 종이 한 장을 그대로 세운다. 카드로 쪼개지 않는 이유는
+   지도가 잘리면 '한눈에' 가 깨지기 때문이다. */
+.map-sheet {
+  margin: 0 0 var(--s5);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+.map-sheet > a { display: block; background: var(--surface-2); }
+.map-sheet img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* 세로로 긴 지도가 화면을 통째로 먹지 않게 한다 — 눌러서 크게 본다. */
+  max-height: 78vh;
+  object-fit: contain;
+}
+.map-sheet figcaption { padding: var(--s4); display: grid; gap: var(--s2); }
+.map-sheet figcaption h3 { margin: 0; }
+.map-sheet figcaption p { margin: 0; }

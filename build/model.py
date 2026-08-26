@@ -51,6 +51,7 @@ MAP_QUERIES = ROOT / "data" / "map-queries.json"
 REGION_ESSENTIALS = ROOT / "data" / "region-essentials.json"
 TRANSIT_FACTS = ROOT / "data" / "transit-facts.json"
 TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
+TOURIST_MAPS = ROOT / "data" / "tourist-maps.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 IMAGE_ALIASES = ROOT / "data" / "images" / "place-aliases.json"
 
@@ -364,6 +365,8 @@ class Region:
     essentials: dict = field(default_factory=dict)
     transit: dict = field(default_factory=dict)
     transport_resources: list[dict] = field(default_factory=list)
+    # 관광청이 낸 조망지도 — '이 도시에서 뭐가 어디 있나' 를 한 장으로 답한다.
+    tourist_maps: list[dict] = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -755,6 +758,7 @@ def load_trip() -> Trip:
     essentials = _load_validated_json(REGION_ESSENTIALS).get("regions", {})
     transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
     transport_resources = _load_validated_json(TRANSIT_RESOURCES).get("regions", {})
+    tourist_maps = _load_validated_json(TOURIST_MAPS).get("regions", {})
     region_checkins = {stay["key"]: _d(stay["checkin"]) for stay in stays}
     for slug, facts in transit.items():
         recheck_deadline = region_checkins.get(slug, _d(itin["trip"]["start"]))
@@ -781,6 +785,15 @@ def load_trip() -> Trip:
             local_path = resource.get("localPath")
             if local_path and not (ROOT / local_path).is_file():
                 raise ValueError(f"{slug}: transport resource file missing: {local_path}")
+    for slug, maps in tourist_maps.items():
+        for m in maps:
+            verified = _d(m["verifiedAt"])
+            if verified > date.today():
+                raise ValueError(f"{slug}: tourist map verifiedAt is in the future: {verified}")
+            # localPath 는 사이트 기준 경로다. 저장소 원본은 source/ASSETS 밑에 있다.
+            source_file = ROOT / "source" / "ASSETS" / m["localPath"].removeprefix("assets/")
+            if not source_file.is_file():
+                raise ValueError(f"{slug}: tourist map file missing: {source_file}")
     editorial = load_region_editorial()
     by_slug = {r["slug"]: r for r in regions_raw}
 
@@ -912,6 +925,7 @@ def load_trip() -> Trip:
             essentials=essentials.get(r["slug"], {}),
             transit=transit.get(r["slug"], {}),
             transport_resources=transport_resources.get(r["slug"], []),
+            tourist_maps=tourist_maps.get(r["slug"], []),
         ))
 
     return Trip(
