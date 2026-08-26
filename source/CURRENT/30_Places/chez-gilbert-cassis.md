@@ -50,6 +50,6 @@ source: source/CURRENT/30_Places/chez-gilbert-cassis.md
 | **운영 시간** | 점심 12:00–14:30 · 저녁 19:00–22:00 |
 | **정기 휴무** | 매주 수요일·목요일 (금요일 점심 정상 영업 확인) |
 | **가격대** | 단품 요리 €24~€42 · 정통 부야베스 €68/인 · 2인 예상 €60~€150 |
-| **예약** | [공식 웹사이트](https://www.chezgilbert.net/) 또는 전화 **사전 예약 필수** (테라스석) |
+| **예약** | [공식 웹사이트](https://www.chezgilbert.net/) 또는 전화 사전 예약 권장. **9/11 12:30 실제 예약은 아직 완료되지 않아 BOOK** |
 | **접근 교통** | Cassis 항구 중심부, 유람선 선착장에서 도보 2분 (Parking de la Viguerie 주차 후 도보 4분) |
 | **공식 정보** | [공식 웹사이트](https://www.chezgilbert.net/) (verified_at: 2026-08-21) |

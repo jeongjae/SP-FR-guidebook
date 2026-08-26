@@ -48,6 +48,7 @@ source: source/CURRENT/30_Places/grasse.md
 | 항목 | 상세 정보 |
 |---|---|
 | **위치** | 20 Boulevard Fragonard, 06130 Grasse |
-| **공장 투어** | Fragonard Usine Historique: 매일 09:00–18:30 (입장 및 30분 가이드 투어 **무료**, 예약 없이 현장 참여 가능) |
-| **주차** | **Parking Honoré Cresp** 또는 **Parking La Foux** (공장 도보 3분) |
+| **공장 투어** | Fragonard Usine Historique: 매일 09:00–19:00. 무료 가이드 방문은 개인 예약 없이 약 30분 간격 현장 출발 |
+| **2026 특별전** | Fragonard centenary exhibition 6/19–10/18, 무료·예약 불필요 |
+| **주차** | 공장 맞은편 **Parking Indigo CRESP** |
 | **이동 연계** | Saint-Paul-de-Vence에서 차로 약 30분 / Aix-en-Provence까지 차로 약 1시간 30분 (A8 고속도로 연계) |

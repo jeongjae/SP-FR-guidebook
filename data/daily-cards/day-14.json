@@ -6,6 +6,7 @@
   "title": "Cassis & Calanques — 석회암 절벽과 지중해",
   "sourceStatus": "candidate-latest-needs-review",
   "prototypeType": null,
+  "dayType": "driving",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
@@ -38,35 +39,60 @@
       "id": "cassis-parking",
       "order": 2,
       "start": "09:35",
-      "end": "10:00",
-      "name": "Cassis 도착 & 주차",
+      "end": "09:50",
+      "name": "Cassis 도착 — Parking des Gorguettes",
       "category": "transport",
       "lat": 43.2147,
       "lng": 5.5342,
-      "summary": "Parking de la Presqu'île (Primary, 포르미우 방면) 또는 Parking des Gorguettes (Backup) 주차",
+      "summary": "무료 P+R Parking des Gorguettes를 primary로 사용하고 연중 운행 Bus 372로 centre-ville에 들어간다. Presqu'île는 Port-Miou 산책을 우선하고 live availability가 좋을 때만 대안으로 쓴다.",
       "menu": null,
-      "reservation": "주차 요금 현장 결제",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "CHECK", "detail": "당일 P+R 잔여면과 372 운행을 확인한다. 373 Presqu'île 노선은 9/11 금요일 운행을 가정하지 않는다."}
+      ],
+      "executionNote": "Les Gorguettes는 무료·연중 운영 P+R이며 372 centre 노선은 연중 운행한다. 373 Presqu’île 노선은 날짜·요일 의존.",
       "optional": false,
       "place_ref": "cassis"
     },
     {
       "id": "calanques",
       "order": 3,
-      "start": "10:15",
-      "end": "12:15",
-      "name": "Calanques 국립공원 유람선 투어",
+      "start": "09:50",
+      "end": "11:30",
+      "name": "MUST · 3 Calanques 유람선",
       "category": "sight",
       "lat": 43.2131,
       "lng": 5.5386,
-      "summary": "카시스 항구에서 유람선 탑승. Port-Miou, Port-Pin, En-Vau의 백색 석회암 피오르드 해상 관람 (2시간)",
+      "summary": "카시스 항구에서 Port-Miou·Port-Pin·En-Vau 3개 칼랑크를 보는 약 1시간 코스를 이용한다. 09:50–11:30 창에는 3 Calanques 운항 자체와 현장 발권·탑승 buffer를 포함한다.",
       "menu": null,
-      "reservation": "현장 발권 / 사전 예매 권장",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "ticket", "label": "TICKET", "detail": "Cassis 항구에서 3 Calanques 승선권을 구매한다."},
+        {"type": "check", "label": "CHECK", "detail": "매일 운항은 기상 조건부이므로 당일 운항 여부를 확인한다."}
+      ],
+      "executionNote": "공식 코스 기준 3 Calanques 약 1시간. 8 Calanques로 자동 승격하지 않는다.",
+      "officialUrl": "https://www.ot-cassis.com/en/explore/the-calanques/the-calanques-by-boat/",
       "optional": false,
       "place_ref": "calanques"
     },
     {
-      "id": "cassis",
+      "id": "cassis-port",
       "order": 4,
+      "start": "11:30",
+      "end": "12:30",
+      "name": "Cassis 항구 산책 · 커피 buffer",
+      "category": "sight",
+      "lat": 43.2144,
+      "lng": 5.5375,
+      "summary": "유람선 하선 뒤 구항구를 걷고 커피를 마시며 점심 시작까지 완충한다. 보트 지연 시 이 시간을 먼저 줄인다.",
+      "menu": "coffee 또는 가벼운 간식",
+      "reservation": null,
+      "optional": false,
+      "place_ref": "cassis"
+    },
+    {
+      "id": "cassis",
+      "order": 5,
       "start": "12:30",
       "end": "14:00",
       "name": "Chez Gilbert 점심 (Cassis 항구)",
@@ -75,31 +101,60 @@
       "lng": 5.5375,
       "summary": "카시스 구항구 앞 공인 부야베스 헌장 인증 레스토랑. 지중해 암초 생선 수프/부야베스와 카시스 AOC 화이트 와인",
       "menu": "Bouillabaisse de roche, 생선 수프(Soupe de poissons), 카시스 화이트 와인",
-      "reservation": "테라스석 사전 예약 권장 (12:30)",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "book", "label": "ACTION REQUIRED", "detail": "Chez Gilbert 9/11 12:30 실제 예약은 저장소에 없으므로 예약하거나 당일 대체 식당을 정한다."}
+      ],
+      "executionNote": "공식 영업정보상 금요일 점심 12:00–14:30 운영. 12:30은 목표시간이지 확정 예약이 아니다.",
+      "officialUrl": "https://www.chezgilbert.net/",
       "optional": false,
       "place_ref": "chez-gilbert-cassis"
     },
     {
       "id": "cassis-port-miou",
-      "order": 5,
+      "order": 6,
       "start": "14:15",
-      "end": "15:45",
-      "name": "Port-Miou 해안 트레일 초입 산책",
+      "end": "15:15",
+      "name": "OPTIONAL · Port-Miou 해안 트레일 초입",
       "category": "sight",
       "lat": 43.2119,
       "lng": 5.5203,
       "summary": "요트가 정박한 포르미우 칼랑크 해안 소나무 산책로 도보 (선택)",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {"type": "optional", "label": "OPTIONAL", "detail": "보트·피로·기상·셔틀 제약이 있으면 가장 먼저 생략한다."},
+        {"type": "check", "label": "CHECK", "detail": "산불 접근통제와 강풍을 확인하고 통제 시 진입하지 않는다."}
+      ],
+      "executionNote": "Presqu'île parking을 실제 primary로 선택한 날에는 Port-Miou 이후 차량 회수가 단순해질 수 있으나, 기본 실행안은 Gorguettes + Bus 372이다.",
       "optional": true,
       "place_ref": "cassis"
     },
     {
+      "id": "cassis-vehicle-return",
+      "order": 7,
+      "start": "15:15",
+      "end": "15:45",
+      "name": "Gorguettes P+R 복귀 · 차량 회수",
+      "category": "transport",
+      "lat": 43.2147,
+      "lng": 5.5342,
+      "summary": "Cassis centre의 Bus 372 접근지점으로 돌아가 Parking des Gorguettes까지 이동한 뒤 주차해 둔 차량을 회수한다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "CHECK", "detail": "Bus 372 실제 운행과 승차지점을 확인하고 차량 회수를 완료한 뒤 Aix로 출발한다."}
+      ],
+      "executionNote": "Port-Miou를 생략하면 Chez Gilbert 후 Cassis centre에서 바로 Bus 372로 Gorguettes P+R에 복귀한다. Bus 372 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
+      "optional": false,
+      "place_ref": "cassis"
+    },
+    {
       "id": "aix-return",
-      "order": 6,
-      "start": "16:00",
-      "end": "17:00",
-      "name": "Cassis ➔ Aix 귀환 (차량)",
+      "order": 8,
+      "start": "15:45",
+      "end": "16:45",
+      "name": "Parking des Gorguettes ➔ Aix 귀환 (차량)",
       "category": "transport",
       "lat": 43.5283,
       "lng": 5.4497,
@@ -111,8 +166,8 @@
     },
     {
       "id": "aix-stay-return",
-      "order": 7,
-      "start": "17:30",
+      "order": 9,
+      "start": "17:15",
       "end": "20:30",
       "name": "숙소 귀환 & 저녁",
       "category": "hotel",
@@ -146,10 +201,19 @@
     },
     {
       "from": "calanques",
-      "to": "cassis",
+      "to": "cassis-port",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cassis-port",
+      "to": "cassis",
+      "mode": "walk",
+      "duration": "2분",
+      "distance": "항구 내",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
@@ -164,11 +228,20 @@
     },
     {
       "from": "cassis-port-miou",
+      "to": "cassis-vehicle-return",
+      "mode": "bus",
+      "duration": "30분",
+      "distance": "약 4km",
+      "line": "Cassis centre 접근 → Bus 372 → Parking des Gorguettes",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cassis-vehicle-return",
       "to": "aix-return",
       "mode": "car",
       "duration": "35분",
       "distance": "48.0km",
-      "line": null,
+      "line": "Parking des Gorguettes → Aix 숙소",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -183,8 +256,8 @@
   ],
   "transport": [
     "차량 왕복 (Aix ↔ Cassis, A52/A50 고속도로 48km)",
-    "Cassis Presqu'île 또는 Gorguettes 주차",
-    "칼랑크 유람선 (Cassis 항구 출발)"
+    "Parking des Gorguettes + Bus 372 centre-ville이 primary",
+    "3 Calanques 유람선 약 1시간 + 발권·탑승 buffer"
   ],
   "food": [
     "Cassis 항구 생선 식당",
@@ -193,9 +266,9 @@
   "highlights": [
     "보트가 기본안 — 도보는 규제·체력·더위 세 변수에 걸린다",
     "전날 저녁 화재위험 등급 확인 (부슈뒤론 18시경 공개)",
-    "Gorguettes 셔틀 평일 미운행"
+    "Bus 372는 연중 centre 운행 · 373 Presqu’île는 날짜·요일 의존"
   ],
-  "backup": "강풍/기상 악화로 보트 결항 시 마르세유로 이동하지 않고(익일 방문), 카시스 구시가지 골목 산책 및 Cap Canaille / Route des Crêtes 절벽 파노라마 드라이브로 대체",
+  "backup": "1. 보트 결항 시 Marseille로 자동 전환하지 않고 Cassis 마을·항구를 걷는다.\n2. Cap Canaille / Route des Crêtes는 도로 개방과 강풍·산불 상태를 확인한 경우에만 실행한다.\n3. 피로·기상·셔틀 제약 시 Port-Miou를 가장 먼저 삭제한다. 생략하면 Chez Gilbert 후 Cassis centre에서 Bus 372로 Gorguettes P+R에 복귀해 차량을 회수하고 Aix로 출발한다.\n4. Bus 372 운행 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
   "map": {
     "zoom": 11,
     "center": [
@@ -205,8 +278,9 @@
     "routeCache": null
   },
   "needsReview": [
-    "전날 저녁 부슈뒤론 산불위험 예보 확인 (도보 트레일 진입 허용 여부)",
-    "카시스 유람선 운항 여부 및 주차장 잔여면 확인"
+    "CHECK — 당일 3 Calanques 유람선 운항·기상 상태",
+    "CHECK — Gorguettes 잔여면·Bus 372와 트레일 산불 접근통제",
+    "ACTION REQUIRED — Chez Gilbert 9/11 12:30 실제 예약 또는 대체 식당"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-14",

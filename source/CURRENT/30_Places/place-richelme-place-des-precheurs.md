@@ -1,13 +1,13 @@
 ---
 slug: place-richelme-place-des-precheurs
-name: "시장 — Place Richelme · Place des Prêcheurs"
-local_name: "Marché d'Aix-en-Provence (Place Richelme & Place des Prêcheurs)"
+name: "Aix 시장 — Place Richelme · 목요 확장 구역"
+local_name: "Marchés d'Aix-en-Provence (Place Richelme & Places Comtales)"
 region: aix
 kind: spot
 grade: "필수"
 priority: "MUST_SEE"
 content_tier: "TIER_B"
-summary: "리셸므 광장에서 매일 아침 열리는 오감의 로컬 식료품 시장과, 화·목·토 대규모로 확장되는 프레셰르 광장의 프로방스 전통 종합 시장."
+summary: "Place Richelme에서 매일 아침 열리는 식품시장과 화·목·토 Places Comtales·Cours Mirabeau·Forbin·Hôtel de Ville로 확장되는 프로방스 시장."
 source: source/CURRENT/30_Places/place-richelme-place-des-precheurs.md
 ---
 
@@ -16,7 +16,7 @@ source: source/CURRENT/30_Places/place-richelme-place-des-precheurs.md
 엑상프로방스는 단순한 미술 도시가 아니라 수백 년 동안 프로방스 내륙 농산물과 지중해 해산물이 집결하던 **활기찬 상업 시장의 중심지**다.
 
 - **리셸므 광장 (Place Richelme)**: 플라타너스 거목 아래서 **매일 아침 365일** 열리는 전통 식료품 시장으로, 제철 무화과와 멜론, 향긋한 프로방스 허브, 절인 올리브, 셰브르(염소) 치즈, 갓 구운 바게트가 광장을 가득 채운다.
-- **프레셰르 광장 (Place des Prêcheurs)**: **화·목·토 아침**에 리셸므 시장과 연계되어 대규모로 확장되는 종합 시장으로, 신선 식료품 외에도 프로방스 직조 리넨, 마르세유 전통 비누, 도자기, 라벤더 향낭, 앤티크 벼룩시장이 성당 앞 광장을 뒤덮는다.
+- **목요 확장 구역**: **화·목·토 아침** Places Comtales에 식품시장이 열리고, Cours Mirabeau·Forbin·Comtales에는 직물·공예·브로칸트, Hôtel de Ville에는 꽃시장이 선다.
 
 ### Editor's Verdict
 > **"단순한 구경거리가 아니라 여행자의 아침과 점심 식탁을 책임지는 가장 훌륭한 로컬 미식 보급선이다."** 오전 09:00~11:00 사이에 방문해 플라타너스 그늘 아래서 로컬 농부들이 직접 만든 염소 치즈와 과일을 조금씩 맛보며 구매하고, 파장 무렵 광장 테라스 카페에 앉아 에스프레소를 즐기는 것이 프로방스 도시 생활의 정수를 누리는 방법이다.
@@ -30,7 +30,7 @@ source: source/CURRENT/30_Places/place-richelme-place-des-precheurs.md
 ### 1. 두 시장의 성격과 활용법 (알아야 보인다)
 
 - **Place Richelme (매일)**: 매일 열리는 식료품 전문 시장. 규모는 아담하지만 질 좋은 로컬 농부들의 생산품이 집약되어 있다. 멧돼지 소시송(Saucisson), 트러플 오일, 당일 새벽 딴 산딸기와 무화과를 소량 구매하기에 최적이다.
-- **Place des Prêcheurs (화·목·토)**: 17세기 도미니코회 수도사들의 광장이자 고등법원 앞 광장으로, 화려한 분수 주변에 대규모 천막 좌판이 늘어선다. 직물, 바구니, 옷, 라벤더 제품 등 기념품과 공예품 쇼핑에 이상적이다.
+- **Places Comtales와 주변 구역 (화·목·토)**: 식품은 Places Comtales, 직물·공예·브로칸트는 Cours Mirabeau·Forbin·Comtales, 꽃은 Hôtel de Ville로 나뉜다.
 
 ### 2. 시장이 파장한 뒤의 마법
 
@@ -46,8 +46,8 @@ source: source/CURRENT/30_Places/place-richelme-place-des-precheurs.md
 
 | 항목 | 상세 정보 |
 |---|---|
-| **위치** | Place Richelme & Place des Prêcheurs, 13100 Aix-en-Provence |
-| **운영일정** | **리셸므 시장**: 매일 08:00–13:00 / **프레셰르 종합시장**: 화·목·토 08:00–13:00 |
+| **위치** | Place Richelme 및 Places Comtales·Cours Mirabeau·Forbin·Hôtel de Ville, 13100 Aix-en-Provence |
+| **운영일정** | **Place Richelme 식품시장**: 매일 08:00–13:00 / **확장 시장**: 화·목·토 오전 |
 | **파장 시간** | **13:00경 일제히 파장** — 11:30 이전 방문 필수 |
 | **결제** | 현금 및 컨택리스 카드 결제 대부분 가능 (소액 대비용 소액 현금 권장) |
 | **준비물** | 에코백 또는 장바구니 필수 지참 |

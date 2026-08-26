@@ -6,6 +6,7 @@
   "title": "마르세유 전일 당일치기 — 구항구·르 파니에·Mucem·노트르담 대성당",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
@@ -30,7 +31,10 @@
       "lng": 5.4467,
       "summary": "숙소에서 도보 10분 이동 후 08:50 전후 TER 탑승. 생샤를 역 09:30 도착 (36분 소요, 생샤를 역 대계단 파노라마 조망)",
       "menu": null,
-      "reservation": "SNCF Connect (30분 간격 배차 / 유연한 탑승)",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "CHECK", "detail": "08:50 전후는 운영 목표다. 출발 전 SNCF Connect에서 실제 TER 시각·파행을 확인한다."}
+      ],
       "optional": false,
       "place_ref": null
     },
@@ -43,9 +47,10 @@
       "category": "sight",
       "lat": 43.2951,
       "lng": 5.3744,
-      "summary": "라 카네비에르(La Canebière)를 지나 노먼 포스터의 거울 그늘막(L'Ombrière), 토요 아침 활기찬 전통 어시장(Marché aux Poissons) 및 항만 풍경",
+      "summary": "라 카네비에르(La Canebière)를 지나 노먼 포스터의 거울 그늘막(L'Ombrière), Quai de la Fraternité에서 매일 아침 열리는 어시장과 항만 풍경을 본다.",
       "menu": null,
       "reservation": null,
+      "executionNote": "어시장은 매일 아침 열리며 07:30–12:30 또는 08:00–13:00로 안내된다. 날씨·계절에 따라 규모가 달라진다.",
       "optional": false,
       "place_ref": "vieux-port-marseille"
     },
@@ -73,9 +78,14 @@
       "category": "culture",
       "lat": 43.2969,
       "lng": 5.3611,
-      "summary": "생장 요새 성벽 정원 ➔ 공중 보행교(Footbridge) ➔ 뤼디 리치오티 설계의 Mucem 격자 건축 및 상설전/지중해 전망 (105분). 토요일 정상 개관(10:00~19:00)",
+      "summary": "생장 요새 성벽 정원 ➔ 공중 보행교 ➔ Mucem 격자 건축과 상설·기획전을 잇는다. 토요일 10:00–19:00 운영이며 전시실 마지막 입장은 폐관 45분 전이다.",
       "menu": null,
-      "reservation": "Mucem 입장권 현장 (€11) / 요새 정원 무료",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "ticket", "label": "TICKET", "detail": "유료 전시 관람 시 일반 €11·감액 €7.50 입장권을 구매한다."}
+      ],
+      "executionNote": "J4 전시실은 유료, Fort Saint-Jean 정원·야외 공간은 무료다. 9/12 토요일 정상 운영.",
+      "officialUrl": "https://mucem.org/questions-frequentes/",
       "optional": false,
       "place_ref": "mucem"
     },
@@ -103,9 +113,13 @@
       "category": "sight",
       "lat": 43.2842,
       "lng": 5.3714,
-      "summary": "Vieux-Port에서 RTM 버스 60번 탑승(직통 15분). 해발 149m 정상 대성당, 황금 성모상, 선원들의 봉헌화(Ex-voto) 및 마르세유 360도 전경 조망 (90분)",
+      "summary": "Vieux-Port에서 RTM 60번으로 이동한다. 당일 교통에 따라 약 15~25분을 잡고, 정상 대성당의 황금 성모상·선원 봉헌화와 마르세유 360도 전경을 본다.",
       "menu": null,
-      "reservation": "무료 입장 (RTM 버스 1회권 €1.70)",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "CHECK", "detail": "당일 RTM 60 운행과 정류장을 확인한다."}
+      ],
+      "executionNote": "성당 입장은 무료이며 예약 상태를 사용하지 않는다.",
       "optional": false,
       "place_ref": "notre-dame-de-la-garde"
     },
@@ -121,6 +135,9 @@
       "summary": "다리 아래 전통 목선이 정박한 그림 같은 어촌 포구 산책. 피로 시 생략하고 구항구 카페 휴식",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {"type": "optional", "label": "OPTIONAL", "detail": "피로하거나 TER가 지연되면 가장 먼저 생략한다."}
+      ],
       "optional": true,
       "place_ref": null
     },
@@ -135,7 +152,10 @@
       "lng": 5.3806,
       "summary": "생샤를역 복귀 후 Aix행 TER 열차 탑승 (36분 소요)",
       "menu": null,
-      "reservation": "SNCF Connect",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "CHECK", "detail": "SNCF Connect에서 Aix행 실제 출발시각과 플랫폼을 확인한다."}
+      ],
       "optional": false,
       "place_ref": "marseille"
     },
@@ -253,8 +273,8 @@
     "routeCache": null
   },
   "needsReview": [
-    "Aix ↔ Marseille Saint-Charles TER 토요일 시간표 확인 (30분 간격)",
-    "Mucem 토요일 운영(10:00~19:00) 및 RTM 버스 60번 노선 확인",
+    "CHECK — Aix Centre ↔ Marseille Saint-Charles TER 실제 시간표·파행",
+    "CHECK — RTM 60 당일 운행",
     "익일 Day 16 뤼베롱 이동 준비 (08:00 체크아웃)"
   ],
   "sourceRefs": [
