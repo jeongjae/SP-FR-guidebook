@@ -104,7 +104,7 @@ class MapHubImprovementTests(unittest.TestCase):
     def test_route_urls_are_directions_with_valid_modes(self):
         """Route 항목이 Google Maps Directions 링크로 렌더링되고 이동수단이 일치하는지 확인."""
         routes = self.map_queries.get("routes", {})
-        self.assertEqual(len(routes), 38, "Batch 04 포함 총 38개 경로 항목이 정의되어야 함")
+        self.assertEqual(len(routes), 39, "Day 14 차량 회수 포함 총 39개 경로 항목이 정의되어야 함")
 
         # Spot check key routes
         day9_nice_antibes = routes.get("day-09:nice-ville")
@@ -119,11 +119,16 @@ class MapHubImprovementTests(unittest.TestCase):
         self.assertEqual(day15_aix_marseille["destination"], "Marseille Saint-Charles")
         self.assertEqual(day15_aix_marseille["travelMode"], "transit")
 
-        day14_cassis_aix = routes.get("day-14:cassis-port-miou")
+        day14_cassis_aix = routes.get("day-14:cassis-vehicle-return")
         self.assertIsNotNone(day14_cassis_aix)
-        self.assertEqual(day14_cassis_aix["origin"], "Port-Miou, Cassis")
+        self.assertEqual(day14_cassis_aix["origin"], "Parking relais des Gorguettes, Cassis")
         self.assertEqual(day14_cassis_aix["destination"], "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence")
         self.assertEqual(day14_cassis_aix["travelMode"], "driving")
+
+        day14_port_miou = routes.get("day-14:cassis-port-miou")
+        self.assertIsNotNone(day14_port_miou)
+        self.assertEqual(day14_port_miou["destination"], "Parking relais des Gorguettes, Cassis")
+        self.assertEqual(day14_port_miou["travelMode"], "transit")
 
         # Spot check day 27 direction routes
         day27_lyon = routes.get("day-27:lyon-checkout")
@@ -179,7 +184,7 @@ class MapHubImprovementTests(unittest.TestCase):
             total_pins += count
             last_pos = pos
 
-        self.assertEqual(total_pins, 165, "Batch 04 Cassis port buffer 포함 총 핀 수는 165여야 함")
+        self.assertEqual(total_pins, 165, "Day 14 차량 회수는 기존 Gorguettes 핀을 재사용하므로 총 핀 수는 165여야 함")
 
         # 3. 8개의 map-card 및 script data가 존재하는지 확인
         map_cards = re.findall(r'<div class="map-card">', map_html)

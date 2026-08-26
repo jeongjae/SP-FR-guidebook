@@ -208,7 +208,7 @@ class StayTransportGuards(unittest.TestCase):
             self.assertNotIn(stale, chapter, f"Aix 챕터에 폐기된 일정·교통 권고가 남음: {stale}")
 
         expected_modes = {
-            12: {"car", "walk"}, 13: {"walk"}, 14: {"car", "walk"},
+            12: {"car", "walk"}, 13: {"walk"}, 14: {"car", "bus", "walk"},
             15: {"train", "bus", "walk"}, 16: {"car", "walk"},
         }
         for day, expected in expected_modes.items():

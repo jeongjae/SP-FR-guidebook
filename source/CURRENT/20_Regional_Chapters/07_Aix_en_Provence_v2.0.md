@@ -411,11 +411,12 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 | 09:50–11:30 | **3 Calanques 유람선** | Port-Miou·Port-Pin·En-Vau를 보는 약 1시간 코스와 발권·승선 buffer. 8 Calanques로 임의 변경하지 않는다 |
 | 11:30–12:30 | Cassis 항구 산책·커피 | 하선 뒤 항구를 걷고 점심 전 완충 시간을 둔다 |
 | 12:30–14:00 | Cassis 점심 | Chez Gilbert 등 항구 수변 식당에서 신선한 지중해 해산물 식사 |
-| 14:15–15:30 | **선택: Port-Miou 해안 산책** | 피로·기상·셔틀 제약이 있으면 가장 먼저 삭제한다 |
-| 15:45–16:45 | Cassis → Aix 복귀 | A52 경유 숙소 귀환 운전 |
+| 14:15–15:15 | **선택: Port-Miou 해안 산책** | 피로·기상·셔틀 제약이 있으면 가장 먼저 삭제한다 |
+| 15:15–15:45 | Gorguettes P+R 복귀·차량 회수 | Cassis centre에서 Bus 372로 Parking des Gorguettes에 돌아가 차량을 회수한다 |
+| 15:45–16:45 | Parking des Gorguettes → Aix 복귀 | 차량 회수 후 A52 경유 숙소 귀환 운전 |
 | 17:15–20:30 | 숙소 복귀 및 저녁 | 휴식 및 다음 날 Marseille 기차 이동 준비 |
 
-**기상 대응**: 보트가 취소되면 Cassis 마을·항구로 전환한다. Cap Canaille/Route des Crêtes는 도로 개방을 확인한 뒤에만 검토하며 산불·강풍 때 강행하거나 Marseille로 자동 전환하지 않는다.
+**기상·차량 대응**: 보트가 취소되면 Cassis 마을·항구로 전환한다. Port-Miou를 생략하면 점심 후 Cassis centre에서 Bus 372로 Gorguettes P+R에 복귀한다. Bus 372 이상 시 현장 대체교통을 확인하고 차량을 회수한 뒤에만 Aix로 출발한다. Cap Canaille/Route des Crêtes는 도로 개방을 확인한 뒤에만 검토하며 산불·강풍 때 강행하거나 Marseille로 자동 전환하지 않는다.
 
 ---
 

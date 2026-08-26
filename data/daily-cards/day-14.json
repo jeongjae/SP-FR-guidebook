@@ -114,7 +114,7 @@
       "id": "cassis-port-miou",
       "order": 6,
       "start": "14:15",
-      "end": "15:30",
+      "end": "15:15",
       "name": "OPTIONAL · Port-Miou 해안 트레일 초입",
       "category": "sight",
       "lat": 43.2119,
@@ -126,15 +126,35 @@
         {"type": "optional", "label": "OPTIONAL", "detail": "보트·피로·기상·셔틀 제약이 있으면 가장 먼저 생략한다."},
         {"type": "check", "label": "CHECK", "detail": "산불 접근통제와 강풍을 확인하고 통제 시 진입하지 않는다."}
       ],
+      "executionNote": "Presqu'île parking을 실제 primary로 선택한 날에는 Port-Miou 이후 차량 회수가 단순해질 수 있으나, 기본 실행안은 Gorguettes + Bus 372이다.",
       "optional": true,
       "place_ref": "cassis"
     },
     {
-      "id": "aix-return",
+      "id": "cassis-vehicle-return",
       "order": 7,
+      "start": "15:15",
+      "end": "15:45",
+      "name": "Gorguettes P+R 복귀 · 차량 회수",
+      "category": "transport",
+      "lat": 43.2147,
+      "lng": 5.5342,
+      "summary": "Cassis centre의 Bus 372 접근지점으로 돌아가 Parking des Gorguettes까지 이동한 뒤 주차해 둔 차량을 회수한다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "CHECK", "detail": "Bus 372 실제 운행과 승차지점을 확인하고 차량 회수를 완료한 뒤 Aix로 출발한다."}
+      ],
+      "executionNote": "Port-Miou를 생략하면 Chez Gilbert 후 Cassis centre에서 바로 Bus 372로 Gorguettes P+R에 복귀한다. Bus 372 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
+      "optional": false,
+      "place_ref": "cassis"
+    },
+    {
+      "id": "aix-return",
+      "order": 8,
       "start": "15:45",
       "end": "16:45",
-      "name": "Cassis ➔ Aix 귀환 (차량)",
+      "name": "Parking des Gorguettes ➔ Aix 귀환 (차량)",
       "category": "transport",
       "lat": 43.5283,
       "lng": 5.4497,
@@ -146,7 +166,7 @@
     },
     {
       "id": "aix-stay-return",
-      "order": 8,
+      "order": 9,
       "start": "17:15",
       "end": "20:30",
       "name": "숙소 귀환 & 저녁",
@@ -208,11 +228,20 @@
     },
     {
       "from": "cassis-port-miou",
+      "to": "cassis-vehicle-return",
+      "mode": "bus",
+      "duration": "30분",
+      "distance": "약 4km",
+      "line": "Cassis centre 접근 → Bus 372 → Parking des Gorguettes",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cassis-vehicle-return",
       "to": "aix-return",
       "mode": "car",
       "duration": "35분",
       "distance": "48.0km",
-      "line": null,
+      "line": "Parking des Gorguettes → Aix 숙소",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -239,7 +268,7 @@
     "전날 저녁 화재위험 등급 확인 (부슈뒤론 18시경 공개)",
     "Bus 372는 연중 centre 운행 · 373 Presqu’île는 날짜·요일 의존"
   ],
-  "backup": "1. 보트 결항 시 Marseille로 자동 전환하지 않고 Cassis 마을·항구를 걷는다.\n2. Cap Canaille / Route des Crêtes는 도로 개방과 강풍·산불 상태를 확인한 경우에만 실행한다.\n3. 피로·기상·셔틀 제약 시 Port-Miou를 가장 먼저 삭제한다.",
+  "backup": "1. 보트 결항 시 Marseille로 자동 전환하지 않고 Cassis 마을·항구를 걷는다.\n2. Cap Canaille / Route des Crêtes는 도로 개방과 강풍·산불 상태를 확인한 경우에만 실행한다.\n3. 피로·기상·셔틀 제약 시 Port-Miou를 가장 먼저 삭제한다. 생략하면 Chez Gilbert 후 Cassis centre에서 Bus 372로 Gorguettes P+R에 복귀해 차량을 회수하고 Aix로 출발한다.\n4. Bus 372 운행 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
   "map": {
     "zoom": 11,
     "center": [

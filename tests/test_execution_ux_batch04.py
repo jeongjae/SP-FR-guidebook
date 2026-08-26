@@ -120,10 +120,51 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
         )
         self.assertIsNone(stops["cassis"].reservation)
         self.assertTrue(stops["cassis-port-miou"].optional)
+        self.assertIn("차량 회수", stops["cassis-vehicle-return"].name)
+        self.assertIn("Bus 372", stops["cassis-vehicle-return"].summary)
         self.assertIn(
             "Parking relais des Gorguettes",
             unquote_plus(render.stop_map_url(stops["aix-depart"])),
         )
+
+    def test_day14_vehicle_retrieval_precedes_return_drive(self):
+        payload = load_day(14)
+        stop_order = {stop["id"]: stop["order"] for stop in payload["stops"]}
+        self.assertLess(
+            stop_order["cassis-port-miou"], stop_order["cassis-vehicle-return"]
+        )
+        self.assertLess(stop_order["cassis-vehicle-return"], stop_order["aix-return"])
+
+        return_leg = next(
+            leg for leg in payload["legs"] if leg["to"] == "aix-return"
+        )
+        self.assertEqual("car", return_leg["mode"])
+        self.assertEqual("cassis-vehicle-return", return_leg["from"])
+
+        routes = json.loads(
+            (ROOT / "data" / "map-queries.json").read_text(encoding="utf-8")
+        )["routes"]
+        car_return = routes["day-14:cassis-vehicle-return"]
+        self.assertEqual("Parking relais des Gorguettes, Cassis", car_return["origin"])
+        self.assertEqual("driving", car_return["travelMode"])
+        for key, route in routes.items():
+            if not key.startswith("day-14:") or route["travelMode"] != "driving":
+                continue
+            self.assertFalse(
+                route["origin"].startswith("Port-Miou")
+                and "Aix" in route["destination"],
+                f"invalid vehicle continuity route: {key}",
+            )
+
+    def test_day14_rendered_vehicle_retrieval_flow(self):
+        rendered = self.rendered(14)
+        port_miou = rendered.index("OPTIONAL · Port-Miou")
+        retrieval = rendered.index("Gorguettes P+R 복귀 · 차량 회수")
+        return_drive = rendered.index("Parking des Gorguettes ➔ Aix 귀환")
+        self.assertLess(port_miou, retrieval)
+        self.assertLess(retrieval, return_drive)
+        self.assertIn("Cassis centre 접근 → Bus 372", rendered)
+        self.assertIn("차량 회수 없이 Aix로 출발하지 않는다", rendered)
 
     def test_day15_ter_fish_market_mucem_and_optional_vallon(self):
         stops = {stop.id: stop for stop in self.day(15).stops}
