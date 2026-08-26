@@ -6,6 +6,7 @@
   "title": "TGV 이동 & Lyon 적응",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "08:30",
   "endTime": "21:00",
   "totalDuration": "12시간 30분",
@@ -28,9 +29,14 @@
       "category": "hotel",
       "lat": 43.94993,
       "lng": 4.81302,
-      "summary": "숙소 체크아웃 후 택시(10~15분, 약 €15~22) 또는 Avignon Centre역 ➔ Avignon TGV 셔틀열차(5분, €1.80)로 Gare d'Avignon TGV역 이동. [차량 반납은 9/17 완료되어 렌터카 절차 없음]. 09:30 이전 역사 메인홀 진입 후 10:05 전광판 Voie 확인 및 10:22 열차 대기",
+      "summary": "숙소 체크아웃 후 수하물과 함께 택시 또는 Avignon Centre역 셔틀열차로 Gare d'Avignon TGV 메인홀에 09:30까지 도착한다. 차량 반납은 9/17 완료되어 렌터카 절차가 없다. 10:05 전광판에서 Voie를 확인하고 10:22 열차를 기다린다.",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {"type": "check", "label": "STATION ROUTE", "detail": "택시를 기본으로 하고 셔틀열차 이용 시 당일 Avignon Centre 출발편을 확인한다."}
+      ],
+      "executionNote": "Action Card 목적지는 generic Avignon이 아니라 Gare d'Avignon TGV 메인홀이다.",
+      "officialUrl": "https://www.garesetconnexions.sncf/fr/gares-services/avignon-tgv",
       "optional": false,
       "place_ref": null
     },
@@ -43,9 +49,14 @@
       "category": "transport",
       "lat": 45.7606,
       "lng": 4.8594,
-      "summary": "10:05 플랫폼(Voie) 전광판 확인 및 에스컬레이터 이동 ➔ 10:22 TGV INOUI 12176 정시 발차 ➔ 11:28 Lyon Part-Dieu역 도착 (1등석 확정 [CONFIRMED], 1시간 6분 고속주행, 3호차 307·308)",
+      "summary": "10:05 플랫폼(Voie) 전광판 확인 및 에스컬레이터 이동 ➔ 10:22 TGV INOUI 12176 정시 발차 ➔ 11:28 Lyon Part-Dieu역 도착 (1등석, 1시간 6분 고속주행, 3호차 307·308)",
       "menu": null,
-      "reservation": "예약완료 TGV INOUI 12176 · 1등석 3호차 307(Jungah)·308(Jeongjae) ([CONFIRMED]) — 10:22→11:28",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "TGV INOUI 12176 · 9/20 10:22 Avignon TGV → 11:28 Lyon Part-Dieu · 1등석 3호차 307·308."},
+        {"type": "check", "label": "CHECK VOIE", "detail": "10:05부터 역 전광판의 실제 승강장을 확인한다."}
+      ],
+      "officialUrl": "https://www.sncf-connect.com/train/horaires/avignon/lyon",
       "optional": false,
       "place_ref": null
     },
@@ -58,9 +69,14 @@
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "Part-Dieu역 서쪽 Place Béraudier 공식 Taxi 승강장에서 택시 탑승(10~12분 소요, 미터 요금 약 €12~16) ➔ Lagrange Aparthotel Lyon Lumière 정문 하차 및 짐 보관(Luggage Drop). 몽플레지르 인근 점심 식사 후 15:00 정식 체크인",
+      "summary": "Part-Dieu역 Place Béraudier 공식 택시 승강장에서 호텔 정문으로 이동한다. 15:00 체크인 전 수하물 보관 가능 여부를 프런트에서 확인하고, 가능하면 짐을 맡긴 뒤 호텔 인근에서 점심을 진행한다.",
       "menu": "리옹식 샐러드, 퀘넬(Quenelle)",
-      "reservation": "예약확정 Lagrange Aparthotel Lyon Lumière ([CONFIRMED]) — 체크인 15:00",
+      "reservation": null,
+      "executionStatuses": [
+        {"type": "confirmed", "label": "CONFIRMED", "detail": "Lagrange Aparthotel Lyon Lumière 숙박 예약 · 체크인 15:00."},
+        {"type": "check", "label": "LUGGAGE DROP", "detail": "11:28 도착 후 체크인 전 짐 보관 가능 여부를 숙소에 확인한다."}
+      ],
+      "executionNote": "Lyon Part-Dieu 도착 후 Place Béraudier 공식 택시 승강장 → 81–85 Cours Albert Thomas 정문.",
       "optional": false,
       "place_ref": null
     },
@@ -76,7 +92,10 @@
       "summary": "메트로 D선 탑승 ➔ 프레스킬 반도 중심 벨쿠르 광장(Place Bellecour), 루이 14세 기마상, 셀레스탱 극장(Théâtre des Célestins) 외관 산책",
       "menu": "에스프레소, 프랄린 브리오슈",
       "reservation": null,
-      "optional": false,
+      "executionStatuses": [
+        {"type": "optional", "label": "OPTIONAL", "detail": "이동 피로가 있으면 전체 산책을 생략하고 숙소에서 쉰다."}
+      ],
+      "optional": true,
       "place_ref": "bellecour"
     },
     {
@@ -135,7 +154,7 @@
   ],
   "transport": [
     "T03 아비뇽 출발(추천): Avignon 숙소 ➔ Gare d'Avignon TGV 택시 이동 (약 10~15분, €15~22 / 또는 Avignon Centre ➔ TGV 셔틀열차 5분, €1.80). [렌터카 반납 절차 없음, 9/17 완료]. 09:30 이전 역사 도착",
-    "TGV INOUI 12176: 1등석 3호차 307·308 (10:22 Avignon TGV 발차 ➔ 11:28 Lyon Part-Dieu 도착, 1시간 6분 소요 [CONFIRMED])",
+    "TGV INOUI 12176: 1등석 3호차 307·308 (10:22 Avignon TGV 발차 ➔ 11:28 Lyon Part-Dieu 도착, 1시간 6분 소요)",
     "T04 리옹 도착(추천): Part-Dieu역 서쪽 Place Béraudier 공식 Taxi 승강장 ➔ Lagrange Aparthotel Lyon Lumière (약 10~12분, 미터 요금 약 €12~16)",
     "T04 대안: TCL 메트로 B선(Part-Dieu) ➔ Saxe-Gambetta 환승 ➔ D선 Monplaisir - Lumière역 하차 (약 20분, 1인 €2.10)"
   ],
@@ -148,7 +167,7 @@
     "렌터카 반납 완료 상태로 아침 수속 간소화",
     "도착일 부숑 코스 (Abel) 저녁"
   ],
-  "backup": "Lyon 도착 후 피로 시: 프레스킬 산책을 축소하고 숙소 휴식 후 인근 비스트로 저녁",
+  "backup": "수하물 보관이 불가하면 짐을 들고 관광하지 않는다. 15:00 체크인 전까지 호텔 인근 카페·점심으로 시간을 보내고, 체크인 후 휴식하며 프레스킬 산책은 삭제한다.",
   "map": {
     "zoom": 8,
     "center": [
@@ -166,6 +185,8 @@
     "source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md#Day-23",
     "source/ASSETS/75_Execution_Maps/Lyon_Execution_Map_v0.2.kml",
     "OSM Overpass 2026-08-06: Avignon TGV·Lyon Part-Dieu 역 좌표",
-    "예약 확정 (2026-08-09 반영): TGV INOUI 12176 10:22→11:28 1등석"
+    "예약 확정 (2026-08-09 반영): TGV INOUI 12176 10:22→11:28 1등석",
+    "https://www.sncf-connect.com/train/horaires/avignon/lyon",
+    "사용자 예약 SOT 확정 2026-08-26: Hertz Avignon TGV 2026-09-17 18:30 반납"
   ]
 }
