@@ -54,45 +54,107 @@
       "order": 3,
       "start": "13:00",
       "end": "14:15",
-      "name": "레 알 / 몽토르게이 점심 식사",
+      "name": "Aux Crus de Bourgogne 2구 점심",
       "category": "food",
       "lat": 48.864,
       "lng": 2.346,
-      "summary": "보행자 전용 미식 거리 Rue Montorgueil 비스트로 점심",
-      "menu": "스테이크 타르타르, 프렌치 오니언 수프, 로컬 와인",
-      "reservation": "현장 선택",
+      "summary": "부르스 드 코메르스에서 도보 8분. Rue Montorgueil 본거리가 아니라 한 블록 안쪽 rue Bachaumont라 함정 구간을 피한다. Étienne Marcel(4호선) 도보 2~3분이라 몽마르트르행 4+12호선 동선과 맞는다",
+      "menu": "Pâté en croûte €10 · Steak tartare, pommes allumettes €18 · Baba au rhum €9",
+      "reservation": null,
       "optional": false,
-      "place_ref": "montorgueil"
+      "place_ref": "aux-crus-de-bourgogne",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "<Remember Me> 개막일이라 관람 퇴장이 밀릴 수 있다. 13:00 예약 필수(+33 1 42 33 48 24)"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "점심 포뮬이 €28(2025년 리뷰) vs €32(공식)로 갈린다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     },
     {
       "id": "vendanges-montmartre",
       "order": 4,
       "start": "14:45",
-      "end": "17:45",
-      "name": "Fête des Vendanges de Montmartre (포도축제 & 몽마르트르)",
+      "end": "17:30",
+      "name": "몽마르트르 산책 & Clos Montmartre 포도밭 (축제 개막일)",
       "category": "sight",
       "lat": 48.8867,
       "lng": 2.3431,
-      "summary": "메트로 12호선 Abbesses역 도착 ➔ 몽마르트르 포도원(Clos Montmartre) 외관 축제 분위기 ➔ 라팽 아질 ➔ 테르트르 광장 ➔ 사크레쾨르 대성당 파리 전경 (3시간)",
+      "summary": "제93회 Fête des Vendanges는 10/7~10/11이고 10/7은 개막일이다. 다만 이날 공개 행사는 19:00 18구 구청 개막 파티뿐이고, 미식 노점(Parcours du Goût)은 10/9~11, 대행렬은 10/10(토)에 열린다. 차량 통제도 10/9부터다. 즉 이날 오후는 축제 현장이 아니라 평상시 몽마르트르다 — Clos Montmartre 포도밭 외관, 라팽 아질, 사크레쾨르 파리 전경을 여유롭게 걷는 날로 잡는다",
       "menu": "축제 길거리 음식, 몽마르트르 와인",
       "reservation": null,
       "optional": false,
-      "place_ref": "montmartre-south-pigalle"
+      "place_ref": "montmartre-south-pigalle",
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "CAUTION",
+          "detail": "축제 노점·행렬은 10/9~11 주말이다. 10/7 오후에 축제 현장을 기대하면 어긋난다"
+        },
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "Clos Montmartre 포도밭 가이드 투어는 10/7 11:00 사전예약제이나 부르스 드 코메르스 관람과 시간이 겹친다"
+        }
+      ]
+    },
+    {
+      "id": "le-progres-dinner",
+      "order": 5,
+      "start": "17:45",
+      "end": "19:00",
+      "name": "Le Progrès 몽마르트르 이른 저녁",
+      "category": "food",
+      "lat": 48.8867,
+      "lng": 2.3431,
+      "summary": "Abbesses 역 앞 아르누보 동네 비스트로. 주방이 12:00–22:30 논스톱이라 몽마르트르에서 17:45에 실제로 저녁을 먹을 수 있는 몇 안 되는 집이고, Place du Tertre 관광 축에서 벗어난 내리막 골목에 있다",
+      "menu": "Tartare de bœuf, frites maison €16.50 · Filets de daurade royale rôtis €23 · Linguine à la ricotta et au citron €17.50",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "매일 주방 12:00–22:30 논스톱 — 몽마르트르의 평판 좋은 비스트로는 대부분 19:00 이후에만 열어 이 시간대에 못 쓴다. 17:45는 워크인도 대체로 되지만 축제 개막일이므로 TheFork 예약"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "Abbesses는 파리에서 가장 깊은 역 중 하나다. 엘리베이터 줄이 길면 도보 6분의 Pigalle역이 실질적으로 더 빠르다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ],
+      "optional": false,
+      "place_ref": "le-progres-montmartre"
     },
     {
       "id": "paris-return",
-      "order": 5,
-      "start": "18:15",
+      "order": 6,
+      "start": "19:15",
       "end": "20:30",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "15구 숙소 귀환",
+      "category": "transport",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 12+8호선으로 15구 귀환 후 편안한 저녁",
+      "summary": "Abbesses 12호선 → Concorde 8호선 환승 → Lourmel",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": null,
+      "executionStatuses": []
     }
   ],
   "legs": [
@@ -125,10 +187,19 @@
     },
     {
       "from": "vendanges-montmartre",
+      "to": "le-progres-dinner",
+      "mode": "walk",
+      "duration": "내리막 도보 10~12분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "le-progres-dinner",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 12+8호선 약 30분",
-      "distance": "6.8km",
+      "duration": "메트로 12+8호선 약 35분",
+      "distance": "7.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
@@ -139,14 +210,14 @@
   ],
   "food": [
     "축제권 점심",
-    "이른 저녁"
+    "Le Progrès 몽마르트르 이른 저녁 (17:45·논스톱)"
   ],
   "highlights": [
     "고정 축제 (10/7–11 확인)",
     "북사면 접근·남쪽 하산",
     "군중 전에 종료"
   ],
-  "backup": "우천 또는 인파 과다 시 몽마르트르 포도원 외관 산책만 컴팩트하게 진행하고 사크레쾨르 내부 관람 후 조기 복귀",
+  "backup": "Bouillon Pigalle(22 bd de Clichy, 매일 12:00–24:00 연속, 1인 €22~28, 300석이라 축제 인파에도 자리 흡수력이 크다). 17:30~18:00이 대기가 가장 짧은 시간대다\n\n개막일 혼잡으로 13:00 퇴장이 밀리면 Le Comptoir de la Gastronomie(34 rue Montmartre, 도보 5분, 12:00–22:30 논스톱이라 주방 마감이 없다). Chez Denise(도보 3분)는 이야기값은 높지만 양이 많고 서비스가 느긋해 75분에 위험하고 내장 요리 비중이 크다\n\n우천 또는 인파 과다 시 몽마르트르 포도원 외관 산책만 컴팩트하게 진행하고 사크레쾨르 내부 관람 후 조기 복귀",
   "map": {
     "zoom": 13,
     "center": [
@@ -157,7 +228,7 @@
   },
   "needsReview": [
     "Bourse de Commerce 10/7 신규 기획전 <Remember Me> 개막일 11:00 슬롯 예매",
-    "Vendanges de Montmartre 10/7(수) 공식 행사 일정 확인 (주말 퍼레이드와 혼동 금지)"
+    "Fête des Vendanges 2026 공식 프로그램 재확인 — 10/7 개막일 공개행사는 19:00 구청 파티뿐이고 노점·행렬은 10/9~11 로 확인(2026-08-25). 축제 체험이 목적이면 날짜 이동 검토"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-14-10월7일",

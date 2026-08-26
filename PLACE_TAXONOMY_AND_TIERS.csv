@@ -274,3 +274,18 @@ villa-ephrussi-de-rothschild,Villa Ephrussi de Rothschild,nice,spot,palace,WORTH
 village-des-bories,Village des Bories,luberon,spot,historic_site,WORTHWHILE,TIER_B,Day 18,Y,MEDIUM_GUIDE,모르타르 없이 돌을 쌓아 올린 프로방스 고대 건식 석조 주거지
 virgule-navette,virgule-navette,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
 zbe-barcelona,zbe-barcelona,unknown,spot,spot,WORTHWHILE,TIER_B,,N,NONE,기본 분류 배정
+au-petit-riche,Au Petit Riche,paris,spot,restaurant,MUST_SEE,TIER_A,Day 31 (모로 미술관 관람 후 점심),Y,DEEP_GUIDE,"1854년 개업한 벨에포크 살롱. 벽화와 금장식, 붉은 벨벳 벤치가 19세기 파리 부르주아 식당의 원형 그대로 남아 있다."
+cafe-varenne,Café Varenne,paris,spot,restaurant,MUST_SEE,TIER_A,Day 32 (오르세 3.5시간 관람 후 로댕으로 가는 길),Y,DEEP_GUIDE,로댕 미술관과 같은 길 위에 있는 7구 동네 비스트로. 아침부터 밤까지 논스톱으로 열어 미술관 관람이 늦어져도 점심을 놓치지 않는다.
+chez-savy,Chez Savy,paris,spot,restaurant,MUST_SEE,TIER_A,Day 33 (프티 팔레 관람 후 몽테뉴·팔레 드 도쿄로 가는 점심),Y,DEEP_GUIDE,"1923년 아르데코 원형이 그대로 남은 8구 비스트로. 주석 바, 붉은 몰스킨 벤치, 오리엔트 특급 객실 같은 나무 알코브."
+la-flottille,La Flottille,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 34 (베르사유 궁전 관람 후 대정원·트리아농으로 가는 점심),Y,DEEP_GUIDE,베르사유 대운하 머리에 있는 1900년대 갱게트. 2024년 Groupe Bertrand이 인수해 미슐랭 1스타 셰프 체제로 리뉴얼했다.
+aux-crus-de-bourgogne,Aux Crus de Bourgogne,paris,spot,restaurant,MUST_SEE,TIER_A,Day 40 (부르스 드 코메르스 개막전 관람 후 몽마르트르로 가는 점심),Y,DEEP_GUIDE,1901년 창업한 부르고뉴 비스트로. Rue Montorgueil 본거리가 아니라 한 블록 안쪽에 있어 함정 밀집 구간을 물리적으로 피한다.
+les-marches,Les Marches,paris,spot,restaurant,MUST_SEE,TIER_A,Day 41 (기메 관람 후 MAM으로 가는 점심 · 저녁 고별 만찬 대비),Y,DEEP_GUIDE,팔레 드 도쿄 옆 계단 골목의 옛 트럭 운전사 식당(routier). 16구 한복판에서 €20대 정식이 가능한 거의 유일한 정통 비스트로다.
+stephane-martin,Stéphane Martin,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 33 (9/30 수) · Day 40 (10/7 수) 저녁,Y,DEEP_GUIDE,숙소에서 도보 4분에 있는 15구의 미식 비스트로. Menu du Marché €32면 전채·메인·디저트가 다 들어온다.
+le-volant-basque,Le Volant Basque,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 29 대안 · Day 38 (10/5 월) 저녁,Y,DEEP_GUIDE,"15구의 바스크 향토 식당. 파리치고 이른 18:45에 저녁을 열고, 월요일 저녁에 문을 여는 몇 안 되는 정통 프렌치다."
+guylas,Guylas,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 31 (9/28 월) 저녁 · 늦게 귀가하는 날,Y,DEEP_GUIDE,숙소에서 도보 4분의 이란·페르시아 식당. 연중무휴에 브레이크가 없어 파리의 일·월 휴무를 비껴 간다.
+sawadee-paris,Sawadee,paris,spot,restaurant,OPTIONAL,TIER_C,Day 35 (10/2 금) 저녁,Y,DEEP_GUIDE,1988년 개업한 15구의 태국 식당. 1주일 넘게 프렌치를 먹은 시점에 얼큰한 국물을 넣는 자리다.
+breizh-cafe-charles-michels,Breizh Café Charles Michels,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 37 (10/4 일) 저녁 · 늦거나 지친 날,Y,DEEP_GUIDE,숙소 도보 5분의 브르타뉴 크레페리. 금·토·일은 브레이크 없이 열어 이른 저녁도 늦은 저녁도 된다.
+le-relais-du-15eme,Le Relais du 15ème,paris,spot,restaurant,OPTIONAL,TIER_C,Day 27 (9/24 목) 도착 첫 저녁 · Day 36 (10/3 토) 조기 휴식,Y,DEEP_GUIDE,숙소에서 가장 가깝고(도보 3분) 가장 싸고 항상 열려 있는 이탈리안. 도착 첫 저녁과 조기 휴식일의 기본값이다.
+chez-janou,Chez Janou,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 39 (10/6 화) 마레 저녁,Y,DEEP_GUIDE,보주 광장 뒤 30년 넘은 프로방스 식당. Chemin Vert에서 8호선을 타면 환승 없이 15구 Lourmel까지 직행한다.
+le-progres-montmartre,Le Progrès,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 40 (10/7 수) 몽마르트르 이른 저녁,Y,DEEP_GUIDE,Abbesses 역 앞 아르누보 동네 비스트로. 몽마르트르에서 17:30에 실제로 저녁을 먹을 수 있는 몇 안 되는 집이다.
+bouillon-racine,Bouillon Racine,paris,spot,restaurant,RECOMMENDED,TIER_B,Day 29 (9/26 토) 노트르담·시테섬 산책 후 저녁,Y,DEEP_GUIDE,"1906년 개업, 프랑스 역사기념물로 지정된 아르누보 식당. 저녁 식사 자체가 관광 콘텐츠가 되는 공간이다."

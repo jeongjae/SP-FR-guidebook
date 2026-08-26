@@ -966,6 +966,111 @@
       "resolvedName": "Théâtre antique d'Orange",
       "evidence": "https://www.theatre-antique.com/",
       "verifiedAt": "2026-08-23"
+    },
+    "au-petit-riche": {
+      "query": "Au Petit Riche, 25 rue Le Peletier, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Au Petit Riche",
+      "evidence": "https://www.restaurant-aupetitriche.com/",
+      "verifiedAt": "2026-08-25"
+    },
+    "cafe-varenne": {
+      "query": "Café Varenne, 36 rue de Varenne, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Café Varenne",
+      "evidence": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+      "verifiedAt": "2026-08-25"
+    },
+    "chez-savy": {
+      "query": "Chez Savy, 23 rue Bayard, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Chez Savy",
+      "evidence": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+      "verifiedAt": "2026-08-25"
+    },
+    "la-flottille": {
+      "query": "La Flottille, Château de Versailles",
+      "verdict": "FOUND",
+      "resolvedName": "La Flottille",
+      "evidence": "https://www.laflottille.fr/en/",
+      "verifiedAt": "2026-08-25"
+    },
+    "aux-crus-de-bourgogne": {
+      "query": "Aux Crus de Bourgogne, 3 rue Bachaumont, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Aux Crus de Bourgogne",
+      "evidence": "https://auxcrusdebourgogne.com/",
+      "verifiedAt": "2026-08-25"
+    },
+    "les-marches": {
+      "query": "Les Marches, 5 rue de la Manutention, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Les Marches",
+      "evidence": "https://www.lesmarches-restaurant.com/en/",
+      "verifiedAt": "2026-08-25"
+    },
+    "stephane-martin": {
+      "query": "Stéphane Martin, 67 rue des Entrepreneurs, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Stéphane Martin",
+      "evidence": "https://www.stephanemartin.com/",
+      "verifiedAt": "2026-08-25"
+    },
+    "le-volant-basque": {
+      "query": "Le Volant Basque, 13 rue Béatrix Dussane, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Le Volant Basque",
+      "evidence": "https://levolantbasque.fr/en",
+      "verifiedAt": "2026-08-25"
+    },
+    "guylas": {
+      "query": "Guylas, 68 rue des Entrepreneurs, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Guylas",
+      "evidence": "https://guylasparis.fr/",
+      "verifiedAt": "2026-08-25"
+    },
+    "sawadee-paris": {
+      "query": "Sawadee, 53 avenue Émile Zola, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Sawadee",
+      "evidence": "https://www.sawadeethai1988.com/",
+      "verifiedAt": "2026-08-25"
+    },
+    "breizh-cafe-charles-michels": {
+      "query": "Breizh Café Charles Michels, 3 place Charles Michels, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Breizh Café Charles Michels",
+      "evidence": "https://www.breizhcafe.com/charles-michels",
+      "verifiedAt": "2026-08-25"
+    },
+    "le-relais-du-15eme": {
+      "query": "Le Relais du 15ème, 78 avenue Émile Zola, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Le Relais du 15ème",
+      "evidence": "https://le-relais-du-15e.fr/fr",
+      "verifiedAt": "2026-08-25"
+    },
+    "chez-janou": {
+      "query": "Chez Janou, 2 rue Roger Verlomme, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Chez Janou",
+      "evidence": "https://www.chezjanou.com/",
+      "verifiedAt": "2026-08-25"
+    },
+    "le-progres-montmartre": {
+      "query": "Le Progrès, 7 rue des Trois Frères, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Le Progrès",
+      "evidence": "MP-04 웹 조사 2026-08-25 (복수 출처 교차)",
+      "verifiedAt": "2026-08-25"
+    },
+    "bouillon-racine": {
+      "query": "Bouillon Racine, 3 rue Racine, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Bouillon Racine",
+      "evidence": "https://www.bouillonracine.fr/",
+      "verifiedAt": "2026-08-25"
     }
   },
   "hotels": {

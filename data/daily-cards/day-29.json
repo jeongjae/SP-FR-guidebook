@@ -7,7 +7,7 @@
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "startTime": "08:00",
-  "endTime": "21:00",
+  "endTime": "21:15",
   "totalDuration": "13시간",
   "totalDistance": "메트로 + 도보 약 5.5km",
   "fatigue": "3",
@@ -95,19 +95,52 @@
       "place_ref": "notre-dame-de-paris"
     },
     {
-      "id": "paris-return",
+      "id": "bouillon-racine-dinner",
       "order": 6,
-      "start": "19:15",
-      "end": "21:00",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "start": "19:00",
+      "end": "20:30",
+      "name": "Bouillon Racine 저녁 (6구 아르누보)",
+      "category": "food",
+      "lat": 48.8539,
+      "lng": 2.3333,
+      "summary": "노트르담·시테섬에서 생미셸 대로를 따라 도보 12분. 1906년 개업한 프랑스 역사기념물 실내라 저녁 식사 자체가 그날 산책의 마무리가 된다",
+      "menu": "6 escargots de Bourgogne €11 · Jarret de veau façon osso buco · Tartare de bar au citron vert €11",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "토요일 저녁이다. 2주 전 bouillonracine.fr 온라인 예약. 2층 대형 홀이라 소규모 비스트로보다는 잡히는 편이다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "저녁 서비스가 19:00 시작인지 12:00–23:00 연속인지 출처가 갈린다. 예약 시 확인"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ],
+      "optional": false,
+      "place_ref": "bouillon-racine"
+    },
+    {
+      "id": "paris-return",
+      "order": 7,
+      "start": "20:45",
+      "end": "21:15",
+      "name": "15구 숙소 귀환",
+      "category": "transport",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 10호선으로 15구 복귀. 숙소 인근 식당 저녁 식사",
+      "summary": "Cluny-La Sorbonne 10호선 → La Motte-Picquet-Grenelle 8호선 환승 → Lourmel",
       "menu": null,
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": null,
+      "executionStatuses": []
     }
   ],
   "legs": [
@@ -149,10 +182,19 @@
     },
     {
       "from": "notre-dame-compact",
+      "to": "bouillon-racine-dinner",
+      "mode": "walk",
+      "duration": "12분",
+      "distance": "0.9km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "bouillon-racine-dinner",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 10호선 약 25분",
-      "distance": "4.8km",
+      "duration": "메트로 10+8호선 약 30분",
+      "distance": "6.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
@@ -163,14 +205,14 @@
   ],
   "food": [
     "가벼운 점심 — 긴 대기 회피",
-    "숙소식 또는 동네식당"
+    "Bouillon Racine 저녁 (6구·2주 전 예약)"
   ],
   "highlights": [
     "도착 다음 날 — 가볍게",
     "서점·카페는 생활 리듬로",
     "고정행사 없음"
   ],
-  "backup": "피로 시 노트르담 외관을 생략하고 생제르맹 카페에서 휴식 후 15구 조기 복귀",
+  "backup": "예약이 안 잡히면 L'Avant Comptoir(3 carrefour de l'Odéon, 매일 11:00–23:00 연속, 예약 자체가 없어 시간에 쫓기지 않는다). 다만 좌석이 없고 전원 서서 먹는다\n\n피로 시 노트르담 외관을 생략하고 생제르맹 카페에서 휴식 후 15구 조기 복귀",
   "map": {
     "zoom": 14,
     "center": [

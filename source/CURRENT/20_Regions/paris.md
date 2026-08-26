@@ -116,6 +116,21 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 - **Café du Commerce (15구)** — 1921년 개업한 3층 아르데코 가든 브라세리로 오리 콩피와 스테이크를 편안하게 즐긴다. ([상세 정보](../places/cafe-du-commerce.html))
 - **Le Grand Pan (15구)** — 셰프 브누아 고티에의 숯불 직화 스테이크와 바스크풍 제철 미식을 선보이는 비스트로노미 명소. ([상세 정보](../places/le-grand-pan.html))
 - **Bouillon Chartier Montparnasse (6구)** — 1903년 건립된 아르누보 유서 깊은 식당으로 전설적인 가성비 부이용 요리를 맛본다. ([상세 정보](../places/bouillon-chartier-montparnasse.html))
+- **Au Petit Riche** — 1854년 개업한 벨에포크 살롱. 벽화와 금장식, 붉은 벨벳 벤치가 19세기 파리 부르주아 식당의 원형 그대로 남아 있다. ([상세 정보](../places/au-petit-riche.html))
+- **Café Varenne** — 로댕 미술관과 같은 길 위에 있는 7구 동네 비스트로. 아침부터 밤까지 논스톱으로 열어 미술관 관람이 늦어져도 점심을 놓치지 않는다. ([상세 정보](../places/cafe-varenne.html))
+- **Chez Savy** — 1923년 아르데코 원형이 그대로 남은 8구 비스트로. 주석 바, 붉은 몰스킨 벤치, 오리엔트 특급 객실 같은 나무 알코브. ([상세 정보](../places/chez-savy.html))
+- **La Flottille** — 베르사유 대운하 머리에 있는 1900년대 갱게트. 2024년 Groupe Bertrand이 인수해 미슐랭 1스타 셰프 체제로 리뉴얼했다. ([상세 정보](../places/la-flottille.html))
+- **Aux Crus de Bourgogne** — 1901년 창업한 부르고뉴 비스트로. Rue Montorgueil 본거리가 아니라 한 블록 안쪽에 있어 함정 밀집 구간을 물리적으로 피한다. ([상세 정보](../places/aux-crus-de-bourgogne.html))
+- **Les Marches** — 팔레 드 도쿄 옆 계단 골목의 옛 트럭 운전사 식당(routier). 16구 한복판에서 €20대 정식이 가능한 거의 유일한 정통 비스트로다. ([상세 정보](../places/les-marches.html))
+- **Stéphane Martin** — 숙소에서 도보 4분에 있는 15구의 미식 비스트로. Menu du Marché €32면 전채·메인·디저트가 다 들어온다. ([상세 정보](../places/stephane-martin.html))
+- **Le Volant Basque** — 15구의 바스크 향토 식당. 파리치고 이른 18:45에 저녁을 열고, 월요일 저녁에 문을 여는 몇 안 되는 정통 프렌치다. ([상세 정보](../places/le-volant-basque.html))
+- **Guylas** — 숙소에서 도보 4분의 이란·페르시아 식당. 연중무휴에 브레이크가 없어 파리의 일·월 휴무를 비껴 간다. ([상세 정보](../places/guylas.html))
+- **Sawadee** — 1988년 개업한 15구의 태국 식당. 1주일 넘게 프렌치를 먹은 시점에 얼큰한 국물을 넣는 자리다. ([상세 정보](../places/sawadee-paris.html))
+- **Breizh Café Charles Michels** — 숙소 도보 5분의 브르타뉴 크레페리. 금·토·일은 브레이크 없이 열어 이른 저녁도 늦은 저녁도 된다. ([상세 정보](../places/breizh-cafe-charles-michels.html))
+- **Le Relais du 15ème** — 숙소에서 가장 가깝고(도보 3분) 가장 싸고 항상 열려 있는 이탈리안. 도착 첫 저녁과 조기 휴식일의 기본값이다. ([상세 정보](../places/le-relais-du-15eme.html))
+- **Chez Janou** — 보주 광장 뒤 30년 넘은 프로방스 식당. Chemin Vert에서 8호선을 타면 환승 없이 15구 Lourmel까지 직행한다. ([상세 정보](../places/chez-janou.html))
+- **Le Progrès** — Abbesses 역 앞 아르누보 동네 비스트로. 몽마르트르에서 17:30에 실제로 저녁을 먹을 수 있는 몇 안 되는 집이다. ([상세 정보](../places/le-progres-montmartre.html))
+- **Bouillon Racine** — 1906년 개업, 프랑스 역사기념물로 지정된 아르누보 식당. 저녁 식사 자체가 관광 콘텐츠가 되는 공간이다. ([상세 정보](../places/bouillon-racine.html))
 
 #### 식사 원칙
 

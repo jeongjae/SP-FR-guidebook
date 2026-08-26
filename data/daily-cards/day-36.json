@@ -69,15 +69,32 @@
       "order": 4,
       "start": "18:00",
       "end": "20:00",
-      "name": "15구 조기 귀환 & 저녁 (익일 Arc 대회 휴식)",
-      "category": "hotel",
+      "name": "Le Relais du 15ème 조기 저녁",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "숙소 조기 복귀 후 편안한 저녁 식사 및 익일 경마 대회 드레스코드/티켓 점검",
-      "menu": null,
+      "summary": "익일 개선문상 경마를 위해 일찍 쉬는 날이다. 논스톱 영업이라 18시에 먹고 19:30에 들어올 수 있고 예약도 필요 없다",
+      "menu": "Pizza Margherita · Penne arrabbiata · Tiramisu",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "le-relais-du-15eme",
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "OPEN",
+          "detail": "매일 11:00–22:30 논스톱 · 예약 불필요"
+        },
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "조기 취침이 우선이면 숙소식으로 대체한다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     }
   ],
   "legs": [
@@ -115,7 +132,7 @@
   ],
   "food": [
     "점심·휴식 12:30–14:00",
-    "숙소 저녁"
+    "Le Relais du 15ème 조기 저녁 (18시·도보 3분)"
   ],
   "highlights": [
     "오후 한 권역만 · 3시간 상한",
