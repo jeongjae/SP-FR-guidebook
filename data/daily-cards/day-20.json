@@ -145,9 +145,10 @@
       "reservation": null,
       "executionStatuses": [
         {"type": "confirmed", "label": "CONFIRMED", "detail": "Hertz Avignon TGV 9/17 18:30 반납 확정."},
+        {"type": "check", "label": "FUEL CHECK", "detail": "Hertz 접근 전 Google Maps에서 실제 영업 중인 주유소를 선택하고 연료 종류를 대조한다."},
         {"type": "caution", "label": "RETURN BUFFER", "detail": "주유·P0 진입·차량 촬영 완충은 줄이지 않는다."}
       ],
-      "executionNote": "Navigation 순서: Avignon TGV 인근 주유소 → Parking Loueurs P0의 Hertz return.",
+      "executionNote": "검증된 특정 주유소는 아직 없다. 실제 영업 중인 fuel stop을 선택한 뒤 Parking Loueurs P0의 Hertz return으로 이동한다.",
       "officialUrl": "https://www.hertz.fr/p/location-de-voiture/france/avignon/avignon-gare-tgv",
       "optional": false,
       "place_ref": null

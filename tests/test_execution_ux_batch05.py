@@ -62,7 +62,7 @@ class ExecutionUxBatch05Tests(unittest.TestCase):
         self.assertEqual("15:45", stops["maison-carree"]["end"])
         self.assertIn("15:45 HARD STOP", json.dumps(stops["maison-carree"], ensure_ascii=False))
         self.assertEqual("18:30", stops["avignon-tgv"]["end"])
-        self.assertEqual({"confirmed", "caution"}, {s["type"] for s in stops["avignon-tgv"]["executionStatuses"]})
+        self.assertEqual({"confirmed", "check", "caution"}, {s["type"] for s in stops["avignon-tgv"]["executionStatuses"]})
         rendered = self.rendered(20)
         for text in ("Uzès", "Pont du Gard", "Nîmes", "주유", "Hertz"):
             self.assertIn(text, rendered)
@@ -71,6 +71,18 @@ class ExecutionUxBatch05Tests(unittest.TestCase):
         self.assertIn("Parking Rive Gauche", routes["day-20:uzes"]["destination"])
         self.assertIn("Parking Arènes", routes["day-20:pont-du-gard-lunch"]["destination"])
         self.assertIn("Hertz", routes["day-20:avignon-tgv"]["destination"])
+
+    def test_day20_fuel_is_check_not_a_generic_fixed_destination(self):
+        routes = json.loads((ROOT / "data" / "map-queries.json").read_text(encoding="utf-8"))["routes"]
+        day20_routes = {
+            key: route for key, route in routes.items() if key.startswith("day-20:")
+        }
+        route_text = json.dumps(day20_routes, ensure_ascii=False)
+        self.assertNotIn("Station-service Avignon TGV", route_text)
+        self.assertIn("주유소 CHECK", routes["day-20:maison-carree"]["title"])
+        self.assertIn("Hertz", routes["day-20:maison-carree"]["destination"])
+        self.assertIn("Place de l'Europe", routes["day-20:avignon-tgv"]["destination"])
+        self.assertIn("fuel station", routes["day-20:maison-carree"]["evidence"])
 
     def test_pont_du_gard_third_level_is_not_free_visit(self):
         stop = {s.id: s for s in self.day(20).stops}["pont-du-gard"]
@@ -105,6 +117,20 @@ class ExecutionUxBatch05Tests(unittest.TestCase):
         route = json.loads((ROOT / "data" / "map-queries.json").read_text(encoding="utf-8"))["routes"]["day-23:lyon-checkin"]
         self.assertIn("81-85 Cours Albert Thomas", route["destination"])
         self.assertIn("Place Béraudier", route["origin"])
+
+    def test_day23_luggage_drop_remains_conditional(self):
+        stop = {s.id: s for s in self.day(23).stops}["lyon-checkin"]
+        statuses = {status.type: status.detail for status in stop.execution_statuses}
+        self.assertEqual({"confirmed", "check"}, set(statuses))
+        self.assertTrue(
+            any(phrase in statuses["check"] for phrase in ("수하물 보관", "짐 보관"))
+        )
+        self.assertIn("가능 여부", statuses["check"])
+        self.assertIn("가능하면", stop.summary)
+        self.assertIn("확인", stop.summary)
+        unconditional = ("정문 하차 및 짐 보관", "짐 보관 완료", "luggage drop 완료")
+        for phrase in unconditional:
+            self.assertNotIn(phrase.casefold(), stop.summary.casefold())
 
     def test_confirmed_never_coexists_with_booking_action(self):
         for path in sorted(DAILY_CARDS.glob("day-??.json")):

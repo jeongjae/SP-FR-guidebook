@@ -69,7 +69,7 @@
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "Part-Dieu역 서쪽 Place Béraudier 공식 Taxi 승강장에서 택시 탑승(10~12분 소요, 미터 요금 약 €12~16) ➔ Lagrange Aparthotel Lyon Lumière 정문 하차 및 짐 보관(Luggage Drop). 몽플레지르 인근 점심 식사 후 15:00 정식 체크인",
+      "summary": "Part-Dieu역 Place Béraudier 공식 택시 승강장에서 호텔 정문으로 이동한다. 15:00 체크인 전 수하물 보관 가능 여부를 프런트에서 확인하고, 가능하면 짐을 맡긴 뒤 호텔 인근에서 점심을 진행한다.",
       "menu": "리옹식 샐러드, 퀘넬(Quenelle)",
       "reservation": null,
       "executionStatuses": [
@@ -167,7 +167,7 @@
     "렌터카 반납 완료 상태로 아침 수속 간소화",
     "도착일 부숑 코스 (Abel) 저녁"
   ],
-  "backup": "Lyon 도착 후 피로하거나 짐 보관이 불가하면 프레스킬 산책을 전부 삭제하고 체크인·휴식 후 숙소 인근 저녁으로 전환한다.",
+  "backup": "수하물 보관이 불가하면 짐을 들고 관광하지 않는다. 15:00 체크인 전까지 호텔 인근 카페·점심으로 시간을 보내고, 체크인 후 휴식하며 프레스킬 산책은 삭제한다.",
   "map": {
     "zoom": 8,
     "center": [

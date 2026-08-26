@@ -1680,16 +1680,16 @@
       "verifiedAt": "2026-08-26"
     },
     "day-20:maison-carree": {
-      "title": "15:45 Nîmes hard stop ➔ Avignon TGV 주유",
+      "title": "15:45 Nîmes hard stop ➔ Hertz Avignon TGV (주유소 CHECK)",
       "origin": "Parking Arènes, Boulevard de Bruxelles, Nîmes",
-      "destination": "Station-service Avignon TGV, Avignon",
+      "destination": "Hertz, Gare TGV, Place de l'Europe, Avignon",
       "travelMode": "driving",
-      "evidence": "Fuel before confirmed Hertz return",
+      "evidence": "Confirmed Hertz return destination; select an actual open fuel station on the route before P0 entry",
       "verifiedAt": "2026-08-26"
     },
     "day-20:avignon-tgv": {
-      "title": "주유 ➔ Hertz Avignon TGV 반납",
-      "origin": "Station-service Avignon TGV, Avignon",
+      "title": "Hertz Avignon TGV 반납 접근",
+      "origin": "Parking Arènes, Boulevard de Bruxelles, Nîmes",
       "destination": "Hertz, Gare TGV, Place de l'Europe, Avignon",
       "travelMode": "driving",
       "evidence": "Confirmed Hertz return at Avignon TGV; Parking Loueurs P0 approach",
