@@ -3,12 +3,52 @@
  "policy": "FCR-03 · Google Maps 우선",
  "results": [
   {
-   "slug": "la-paradeta-sagrada-familia",
+   "slug": "bar-canete",
+   "region": "barcelona",
+   "name": "Bar Cañete",
+   "address": "Carrer de la Unió, 17, 08001 Barcelona",
+   "resolvedTitle": "Bar Cañete",
+   "mapsUrl": "https://www.google.com/maps/place/Bar+Ca%C3%B1ete/@41.3791528,2.173125,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a258412bcb19:0x1c77b2f8f4cdfb63!8m2!3d41.3791528!4d2.173125!16s%2Fg%2F1tf89fdb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12a4a258412bcb19:0x1c77b2f8f4cdfb63",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "Unió"
+   ],
+   "addressHits": [
+    "Unió"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk8uCyFJmG1c0YZHybUGPfQqrn2h8IPeWkCLzO6bwhxhicSf3r9HLcDkPEG1OqpxlC5-OfDRxfvFENFN1dKzPWlm23Atnu8LyKgtTE7u7kFlTkHmHR3fG0QUxYj4ogU8vU-eKm-=w1600-h1200-k-no",
+   "photoCount": 1,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "bodega-joan",
+   "region": "barcelona",
+   "name": "Bodega Joan",
+   "address": "Carrer del Rosselló, 164, 08036 Barcelona",
+   "resolvedTitle": "Bodega Joan",
+   "mapsUrl": "https://www.google.com/maps/place/Bodega+Joan/@41.391701,2.155481,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a290102a89e5:0x9427746fb704d8ca!8m2!3d41.391701!4d2.155481!16s%2Fg%2F1tgv8w1l?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12a4a290102a89e5:0x9427746fb704d8ca",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "Rosselló"
+   ],
+   "addressHits": [
+    "Rosselló"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlvKAJ1W9k2yU7WDtnKKcqdH5-eYRTiGsYnD93t-XzP8OEj1VnPBRi-q3KmiqcfE1hIfhzNxo7kiiHtwwuSfPcxq82wu-eZvUHuwdxNwM5ogKsWOHKqwc7aMSPz76ALFD0y6ATGJ-6pRh2w=w1600-h1200-k-no",
+   "photoCount": 17,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "puertecillo-sagrada-familia",
    "region": "barcelona",
    "name": "Puertecillo Sagrada Familia",
    "address": "Passatge de Simó, 18, 08025 Barcelona",
    "resolvedTitle": "Puertecillo Sagrada Familia",
-   "mapsUrl": "https://www.google.com/maps/place/Puertecillo+Sagrada+Familia/@41.404494,2.1734418,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2c33f9d6983:0x20e3e0cbae1446fe!8m2!3d41.404494!4d2.1734418!16s%2Fg%2F1hc2v7pw4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D",
+   "mapsUrl": "https://www.google.com/maps/place/Puertecillo+Sagrada+Familia/@41.404494,2.1734418,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a2c33f9d6983:0x20e3e0cbae1446fe!8m2!3d41.404494!4d2.1734418!16s%2Fg%2F1hc2v7pw4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
    "placeKey": "0x12a4a2c33f9d6983:0x20e3e0cbae1446fe",
    "nameMatch": true,
    "addressMatch": true,
@@ -18,10 +58,635 @@
    "addressHits": [
     "Simó"
    ],
-   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmczqUeXZ0MS0CoZfmxcuM7VP0a29PklbQR4oJcfFbp7gVodAbd0-mBMyR9NTI4vrXb_Y1dtBZ_cPDc5-ZDLzPDPT7I09JtSXXdUQO6q7yJ5NvlRjHq6sZFOykoYBIOeNa4cqloXw=w1600-h1200-k-no",
-   "photoCount": 1,
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkh7_yorVk8Ferhw7dDMXaS2XumsBwQnORnSO4IS0vzI6ctM8MVnD1y8T_6I2ywRMyJdE6rqljHod-Gy3T6r5-SwWC9pLpHfrCH-Q7OpFRDNcfhrcpbzMZeOfk6Te08SYdW8lHmVQ=w1600-h1200-k-no",
+   "photoCount": 14,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "la-zorra",
+   "region": "barcelona",
+   "name": "La Zorra",
+   "address": "Passeig Marítim, 1-3, 08870 Sitges",
+   "resolvedTitle": "Restaurant LaZorra",
+   "mapsUrl": "https://www.google.com/maps/place/Restaurant+LaZorra/@41.2338454,1.8036675,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3804e4a3a4533:0x19c1f170c20a8781!8m2!3d41.2338454!4d1.8036675!16s%2Fg%2F11c52p0v80?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12a3804e4a3a4533:0x19c1f170c20a8781",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "Marítim"
+   ],
+   "addressHits": [
+    "Marítim"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnDxBf1w-Y-4qbDr1XTZTWcfLCTpIl5-YmjeicHYowIUyaOBNVeIBYlSCk0MsoG6Do0vjVfXFVxwMles17u_CSiWSPccOBlIQhYtQbxy5nI9ICox5DWH5OYKgnD5fZhsFaLe0jRwZLqOhw=w1600-h1200-k-no",
+   "photoCount": 14,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "le-figuier-de-saint-esprit",
+   "region": "nice",
+   "name": "Le Figuier de Saint-Esprit",
+   "address": "14 Rue Saint-Esprit, 06600 Antibes",
+   "resolvedTitle": "Le Figuier de Saint-Esprit",
+   "mapsUrl": "https://www.google.com/maps/place/Le+Figuier+de+Saint-Esprit/@43.58175,7.1287525,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdd57113baf7d1:0x98a423300ed7c116!8m2!3d43.58175!4d7.1287525!16s%2Fg%2F1wnzbxh_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12cdd57113baf7d1:0x98a423300ed7c116",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "14",
+    "Saint",
+    "Esprit"
+   ],
+   "addressHits": [
+    "14",
+    "Saint",
+    "Esprit"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkOh6oBVraf-x0GljNXNvAK5K72-9NWv5QDUhnD2AbO9-2LbAKM8X1HviGtf4tP5a4L8x1YNEYx9d5kzRuYV2eKD7lOLrZNVYkDgGWC9gWfBZOfeWZ2Spx1J1JzTeoesXt7xqubyQ=w1600-h1200-k-no",
+   "photoCount": 13,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "restaurant-beatrice",
+   "region": "nice",
+   "name": "Restaurant & Salon de Thé Béatrice",
+   "address": "1 Avenue Ephrussi de Rothschild, 06230 Saint-Jean-Cap-Ferrat",
+   "resolvedTitle": "Salon de thé - restaurant",
+   "mapsUrl": "https://www.google.com/maps/place/Salon+de+th%C3%A9+-+restaurant/@43.6966062,7.3284499,17z/data=!3m1!4b1!4m6!3m5!1s0x12cddb38f0cd9ed7:0x36b503ea1b718b6a!8m2!3d43.6966062!4d7.3284499!16s%2Fg%2F11fy1j_pyy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12cddb38f0cd9ed7:0x36b503ea1b718b6a",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "1",
+    "Ephrussi",
+    "Rothschild"
+   ],
+   "addressHits": [
+    "1",
+    "Ephrussi",
+    "Rothschild"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkoAca7knFm_Njj48qJUlX5iUW8bV_IXp4YnlIXheHiM-65BfbaF26fSQNGnGaVlYAX4FTDI7dLjNnAMoe7H0WwGBG6XSh5AQsPw_KcWepb-lGa9NvvjCH9BjEZ6yc6gabNDJXlqwXCnh0=w1600-h1200-k-no",
+   "photoCount": 8,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "chez-gilbert-cassis",
+   "region": "aix",
+   "name": "Chez Gilbert",
+   "address": "19 Quai des Baux, 13260 Cassis",
+   "resolvedTitle": "Chez Gilbert",
+   "mapsUrl": "https://www.google.com/maps/place/Chez+Gilbert/@43.2148438,5.537375,17z/data=!3m1!4b1!4m6!3m5!1s0x12c9ba94cc515ca5:0x7928b7fbc6d86882!8m2!3d43.2148438!4d5.537375!16s%2Fg%2F1tnmc45g?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12c9ba94cc515ca5:0x7928b7fbc6d86882",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "19",
+    "Baux"
+   ],
+   "addressHits": [
+    "19",
+    "Baux"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkInf8ydDy3DswEC9sPk62LuWIr-3F4qvWUUVU7OkkT1q0rhR1L41OzmoJ3VFCwClEilPhMYhROqNbJMQzxJQDqI62ZYWBDx-MYwCUP0xJdsLX8oRVzovnDKLSsiqTPfNPs9VvV=w1600-h1200-k-no",
+   "photoCount": 9,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "patisserie-weibel",
+   "region": "aix",
+   "name": "Pâtisserie Weibel",
+   "address": "2 Rue Chabrier, 13100 Aix-en-Provence",
+   "resolvedTitle": "Maison Weibel",
+   "mapsUrl": "https://www.google.com/maps/place/Maison+Weibel/@43.5292791,5.4484966,17z/data=!3m1!4b1!4m6!3m5!1s0x12c98dbd0388a2d3:0x694cc6018ff1a1b0!8m2!3d43.5292791!4d5.4484966!16s%2Fg%2F1vk482k6?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12c98dbd0388a2d3:0x694cc6018ff1a1b0",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "2",
+    "Chabrier"
+   ],
+   "addressHits": [
+    "2",
+    "Chabrier"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn1iEqUQdiZMHSTv9JoXnPIZiHPKI54KzZzp5zATPGcxHQ1StgnQaOoeVKTEM9jgiJQjUppsOV0mAFIoNmD9qjxVTSoRIz2ElePkhzyX2hC05CYN49UzvxGVYeew6tsaGinwjvzow=w1600-h1200-k-no",
+   "photoCount": 13,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "fou-de-fafa-avignon",
+   "region": "avignon",
+   "name": "Fou de Fafa",
+   "address": "17 Rue des Trois Faucons, 84000 Avignon",
+   "resolvedTitle": "Restaurant Fou de Fafa",
+   "mapsUrl": "https://www.google.com/maps/place/Restaurant+Fou+de+Fafa/@43.9458963,4.8077497,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5eb88f732d877:0xca6d824c5489f873!8m2!3d43.9458963!4d4.8077497!16s%2Fg%2F1tfh6qn4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12b5eb88f732d877:0xca6d824c5489f873",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "17",
+    "Trois",
+    "Faucons"
+   ],
+   "addressHits": [
+    "17",
+    "Trois",
+    "Faucons"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnZMwWZ6cMxNk-f58kEEjI6VreaFCKKNxP8PK8-SFtel40R3GpbeqRzkmCv5i2doP9gd7v5jXonH02GxhSVVPXePi3caoS3trx4Vf6ZbQrwgsm3lywAIJFKUYxe_leuznoCOhiE=w1600-h1200-k-no",
+   "photoCount": 15,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "le-gibolin-arles",
+   "region": "avignon",
+   "name": "Le Gibolin",
+   "address": "13 Rue des Porcelets, 13200 Arles",
+   "resolvedTitle": "Le Gibolin",
+   "mapsUrl": "https://www.google.com/maps/place/Le+Gibolin/@43.6769539,4.6241448,17z/data=!3m1!4b1!4m6!3m5!1s0x12b6764020e38c69:0x5f9751a56324d547!8m2!3d43.6769539!4d4.6241448!16s%2Fg%2F1tcthznr?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12b6764020e38c69:0x5f9751a56324d547",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "13",
+    "Porcelets"
+   ],
+   "addressHits": [
+    "13",
+    "Porcelets"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmklZqDoO7puYWsurYwB3g5IDuWzyYYzbKhe_f0qL6cb08WbnkF9IAr8BeLGtKVgF03ZzEUfgmedU_KKZVIJQKjNVCnI_lL42wlvfowxD-0G_fEfQiNLdfutdC2SQI9TvhLNXPvlGQA_3X1=w1600-h1200-k-no",
+   "photoCount": 9,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "les-cocottes-saint-louis",
+   "region": "avignon",
+   "name": "Les Cocottes Saint-Louis",
+   "address": "20 Rue Portail Boquier, 84000 Avignon",
+   "resolvedTitle": "Les Cocottes Saint Louis",
+   "mapsUrl": "https://www.google.com/maps/place/Les+Cocottes+Saint+Louis/@43.9438175,4.8049565,17z/data=!3m1!4b1!4m6!3m5!1s0x12b5ebcf70ef232d:0x9ff60928baa517e9!8m2!3d43.9438175!4d4.8049565!16s%2Fg%2F11c1qs8rd7?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x12b5ebcf70ef232d:0x9ff60928baa517e9",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "20",
+    "Portail",
+    "Boquier"
+   ],
+   "addressHits": [
+    "20",
+    "Portail",
+    "Boquier"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm8Jq8h6qm39eftUnNQA8iijxWv9zI70Z8LlNOXK3XbY86HV2lujHJCkhjquiB4IRFqZqxNLkgqljd90MahG5HY1GxCaOkTpfpSzq8fzYB6h5756m2GsFHoflzTB1eWrERf1F2_=w1600-h1200-k-no",
+   "photoCount": 5,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "cafe-comptoir-abel",
+   "region": "lyon",
+   "name": "Café Comptoir Abel",
+   "address": "25 Rue Guynemer, 69002 Lyon",
+   "resolvedTitle": "Café Comptoir Abel",
+   "mapsUrl": "https://www.google.com/maps/place/Caf%C3%A9+Comptoir+Abel/@45.7540443,4.8258415,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b!8m2!3d45.7540443!4d4.8258415!16s%2Fg%2F1tf156qz?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47f4ebb28fbd2eb1:0x1bcc92f5bcb4fa5b",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "25",
+    "Guynemer"
+   ],
+   "addressHits": [
+    "25",
+    "Guynemer"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnFs7gjtKEk7bBqo4Rf2Z8sfm9_Ae0dmWXWNzjSmWO7JLOP4733ZC0gsSj0Y-8Y_SIGO_-DcOenTZdfwR2Gpb-NztlBp-tPkiggDmfPAqoxTRrsEkOzJDg4aEZIoT66tK5aZm7E3ADr0Rzx=w1600-h1200-k-no",
+   "photoCount": 13,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "chez-mamie-lise",
+   "region": "lyon",
+   "name": "Chez Mamie Lise",
+   "address": "11 Rue Grenette, 74000 Annecy",
+   "resolvedTitle": "Chez Mamie Lise",
+   "mapsUrl": "https://www.google.com/maps/place/Chez+Mamie+Lise/@45.8991226,6.1272541,17z/data=!3m1!4b1!4m6!3m5!1s0x478b8ffbb662d6d9:0xf646117aa82bf542!8m2!3d45.8991226!4d6.1272541!16s%2Fg%2F1tksm7ny?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x478b8ffbb662d6d9:0xf646117aa82bf542",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "11",
+    "Grenette"
+   ],
+   "addressHits": [
+    "11",
+    "Grenette"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWlhkd7-oJn_0skoDUgMoZY09AohJ8K0UnsRHQVtbB0B33e7-ejumXgrlj7IA1jkteoTHk9sYRS6h2vY_5FQ5NUm4pvyEQIBj0NmcrLZeF9u5DDIykQ-__k-YxXLUyAXTUUgE-BzpI7V8=w1600-h1200-k-no",
+   "photoCount": 13,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "boulangerie-pichard",
+   "region": "paris",
+   "name": "Boulangerie Pichard",
+   "address": "88 Rue Cambronne, 75015 Paris",
+   "resolvedTitle": "La Maison Pichard",
+   "mapsUrl": "https://www.google.com/maps/place/La+Maison+Pichard/@48.8422834,2.3027672,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6703c1ec7236d:0xd973b0d4ffa25fa4!8m2!3d48.8422834!4d2.3027672!16s%2Fg%2F1tfcsjrc?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e6703c1ec7236d:0xd973b0d4ffa25fa4",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "88",
+    "Cambronne"
+   ],
+   "addressHits": [
+    "88",
+    "Cambronne"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkQQyJcsf9om-m2lfGeaehtVUC6Nw7No5pALkD224y_3Uwa9foSzISb4uOMv-UdNAh-2NO5uvtCMF7nv0xUhsr21topu8h1lotfwVZBwDrcRLHOBtIkkmgNtjV1VDRPKLpaDss5=w1600-h1200-k-no",
+   "photoCount": 9,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "le-grand-pan",
+   "region": "paris",
+   "name": "Le Grand Pan",
+   "address": "20 Rue Rosenwald, 75015 Paris",
+   "resolvedTitle": "Le Grand Pan",
+   "mapsUrl": "https://www.google.com/maps/place/Le+Grand+Pan/@48.8330814,2.3057029,17z/data=!3m1!4b1!4m6!3m5!1s0x47e670468b32e705:0xfef30b10e3f3dbfe!8m2!3d48.8330814!4d2.3057029!16s%2Fg%2F1vxcvqxn?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e670468b32e705:0xfef30b10e3f3dbfe",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "20",
+    "Rosenwald"
+   ],
+   "addressHits": [
+    "20",
+    "Rosenwald"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnj6F_oAJkxSJKyPPDKbYukj-ploPPSeDzXX1jwq7qb1t-IW4SaUgC2OAeUU8O1uuqQDCuVhpQcQz6ecgvXespQ0zqE3_iP2_old0S8DUQzM9vJzSJIcddR9_tG9OGJNSVe3yfKYRpRmbv4=w1600-h1200-k-no",
+   "photoCount": 9,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "au-petit-riche",
+   "region": "paris",
+   "name": "Au Petit Riche",
+   "address": "25 Rue Le Peletier, 75009 Paris",
+   "resolvedTitle": "Au Petit Riche",
+   "mapsUrl": "https://www.google.com/maps/place/Au+Petit+Riche/@48.8731822,2.3384874,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e3916fa2f89:0xa74d15a1a2b53095!8m2!3d48.8731822!4d2.3384874!16s%2Fg%2F1td5k_jy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e66e3916fa2f89:0xa74d15a1a2b53095",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "25",
+    "Peletier"
+   ],
+   "addressHits": [
+    "25",
+    "Peletier"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_Y1Ik_GIp5VFs2X4xLkR3GQVe95L3MI6YqMCG7munWhYkmrWOr62H1GjRN7fyvPpzvJI8D2PZ2JmJL3z5OKtdG7VvgDW-bpjj0FhM8gvmvcBtlk-Sn7G3JXm3mQNEy8wsMMOadA=w1600-h1200-k-no",
+   "photoCount": 15,
+   "status": "IDENTITY_CONFIRMED"
+  },
+  {
+   "slug": "cafe-varenne",
+   "region": "paris",
+   "name": "Café Varenne",
+   "address": "36 Rue de Varenne, 75007 Paris",
+   "resolvedTitle": "Café Varenne",
+   "mapsUrl": "https://www.google.com/maps/place/Caf%C3%A9+Varenne/@48.8541711,2.3236772,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671d4e2db06e7:0x56ceabc466115d3a!8m2!3d48.8541711!4d2.3236772!16s%2Fg%2F1tjysy4b?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e671d4e2db06e7:0x56ceabc466115d3a",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "36",
+    "Varenne"
+   ],
+   "addressHits": [
+    "36",
+    "Varenne"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl-zpT3BA5rD7s5CjsFHyxMfGxaQ1Pb_cYbrMuHMfIkh1YnDpaRuqGbYLYLgaF0AC3zP1cIG94k7v5Uik6CV5gCBnHbl2_oCHd40rGI504t765LglXyuiw1Fr4UWNAkOlBhMW-EiF9n-42M=w1600-h1200-k-no",
+   "photoCount": 16,
    "status": "VALID_GOOGLE_MAPS",
-   "imageId": "barcelona-la-paradeta-sagrada-familia-gm01"
+   "imageId": "paris-cafe-varenne-gm01"
+  },
+  {
+   "slug": "chez-savy",
+   "region": "paris",
+   "name": "Chez Savy",
+   "address": "23 Rue Bayard, 75008 Paris",
+   "resolvedTitle": "Chez Savy",
+   "mapsUrl": "https://www.google.com/maps/place/Chez+Savy/@48.867046,2.307571,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fdb34cac27f:0xe4babbd0af5e1b75!8m2!3d48.867046!4d2.307571!16s%2Fg%2F1pxy5xz6k?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e66fdb34cac27f:0xe4babbd0af5e1b75",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "23",
+    "Bayard"
+   ],
+   "addressHits": [
+    "23",
+    "Bayard"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlu8P3tcyYsvpZR18o8zkJZL9L8mxZKHmywty9CwzFO5HXFKhZom2GJw-_TjasY2BxHsm3PbaxRNBxq-mTZO39L7DRMCfm8fANa0sbzJ_7224u7RMI56ZEVvWBoJLu-G9Myue5g=w1600-h1200-k-no",
+   "photoCount": 11,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-chez-savy-gm01"
+  },
+  {
+   "slug": "la-flottille",
+   "region": "paris",
+   "name": "La Flottille",
+   "address": "Parc du Château de Versailles, 78000 Versailles",
+   "resolvedTitle": "La Flottille",
+   "mapsUrl": "https://www.google.com/maps/place/La+Flottille/@48.8091371,2.1083631,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67d905f564b1d:0xeb470d1c9260ed14!8m2!3d48.8091371!4d2.1083631!16s%2Fg%2F1tkb4f84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e67d905f564b1d:0xeb470d1c9260ed14",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "Parc",
+    "Château"
+   ],
+   "addressHits": [
+    "Parc",
+    "Château"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmzAGScxYEb4qbPX98mRLDvMhu1Rc2hWMUvfGc4qpOVwWIiCbGKjgUL6m8xdNyxEAu3rhSJ7mvTQTBGr6M83U39cQgPZWjh_l-gVC2hoxuJSgADogQKONSKAZGSy3pCfR36Vf7ZpMQQHjlG=w1600-h1200-k-no",
+   "photoCount": 15,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-la-flottille-gm01"
+  },
+  {
+   "slug": "aux-crus-de-bourgogne",
+   "region": "paris",
+   "name": "Aux Crus de Bourgogne",
+   "address": "3 Rue Bachaumont, 75002 Paris",
+   "resolvedTitle": "Aux Crus de Bourgogne",
+   "mapsUrl": "https://www.google.com/maps/place/Aux+Crus+de+Bourgogne/@48.8658261,2.3465718,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e1818ced2b5:0x33ca79ee7681fac0!8m2!3d48.8658261!4d2.3465718!16s%2Fg%2F1td_9_6j?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e66e1818ced2b5:0x33ca79ee7681fac0",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "3",
+    "Bachaumont"
+   ],
+   "addressHits": [
+    "3",
+    "Bachaumont"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk4fLqHHpbUAoTkv1JEg90cfWtxvApTEfePcTFVn9rIZ9N-Jq-HNu9Ne_WXlRtuuTNGS-v6BOg0JzwE_2hf6OwAbtKoNZ8Fyye0vaWA5gmFcofU3dVmoJQn0EpvJnXRrIOBipsrsw=w1600-h1200-k-no",
+   "photoCount": 18,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-aux-crus-de-bourgogne-gm01"
+  },
+  {
+   "slug": "les-marches",
+   "region": "paris",
+   "name": "Les Marches",
+   "address": "5 Rue de la Manutention, 75116 Paris",
+   "resolvedTitle": "Les Marches",
+   "mapsUrl": "https://www.google.com/maps/place/Les+Marches/@48.8638964,2.2959123,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fe6ed4a6781:0x47f879cbd3b8b257!8m2!3d48.8638964!4d2.2959123!16s%2Fg%2F1tdq59sm?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e66fe6ed4a6781:0x47f879cbd3b8b257",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "5",
+    "Manutention"
+   ],
+   "addressHits": [
+    "5",
+    "Manutention"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkRxgR8Ayeh6_Aji5K5C9McpQeZPoL81MIt3b2KGWYKnQ0BjYSWjOhdiUgmu23g-WBXE3_fMa8uYzgT2q4yImzgapmthxo_BYTd9VkMJIn-XavgFO6Aar98xvzdsb1ouIrEvSy-=w1600-h1200-k-no",
+   "photoCount": 16,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-les-marches-gm01"
+  },
+  {
+   "slug": "stephane-martin",
+   "region": "paris",
+   "name": "Stéphane Martin",
+   "address": "67 Rue des Entrepreneurs, 75015 Paris",
+   "resolvedTitle": "Stéphane Martin",
+   "mapsUrl": "https://www.google.com/maps/place/St%C3%A9phane+Martin/@48.8450315,2.2898198,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701053e5dcd5:0x7485e3e7e11468b2!8m2!3d48.8450315!4d2.2898198!16s%2Fg%2F1tj49srx?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e6701053e5dcd5:0x7485e3e7e11468b2",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "67",
+    "Entrepreneurs"
+   ],
+   "addressHits": [
+    "67",
+    "Entrepreneurs"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnlVcMWR-rIKVlnlxIi_taoZyGm5mxrCjS3mvWdQJuxP8DGuPFsQCqNuJJbyN9hRfr-D-9flbDjiNt_CK_AhMSiaieQv3pXuVbwAT1zyNqJ1uuxjjmio-Y5BZjW4ehCtu-m8RGk9HBXv7OX=w1600-h1200-k-no",
+   "photoCount": 13,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-stephane-martin-gm01"
+  },
+  {
+   "slug": "le-volant-basque",
+   "region": "paris",
+   "name": "Le Volant Basque",
+   "address": "13 Rue Béatrix Dussane, 75015 Paris",
+   "resolvedTitle": "Le Volant Basque",
+   "mapsUrl": "https://www.google.com/maps/place/Le+Volant+Basque/@48.8499212,2.2913047,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701bb4c02145:0xadf163321f8e9b5d!8m2!3d48.8499212!4d2.2913047!16s%2Fg%2F1tmgbrfk?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e6701bb4c02145:0xadf163321f8e9b5d",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "13",
+    "Béatrix",
+    "Dussane"
+   ],
+   "addressHits": [
+    "13",
+    "Béatrix",
+    "Dussane"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkHv69JKhSRw0jWm0kW7Rumj8rdiSzfs7kJBK4vQlbdCDjzeV1Qt-C5SaUSmlApp_ywn19Ch7C0ob6xoJXO5zkcy1KltIxTdRuiRr6wKo_p2-RSot1k-gzlL68UyUvoL1Fu4GW31w=w1600-h1200-k-no",
+   "photoCount": 12,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-le-volant-basque-gm01"
+  },
+  {
+   "slug": "guylas",
+   "region": "paris",
+   "name": "Guylas",
+   "address": "68 Rue des Entrepreneurs, 75015 Paris",
+   "resolvedTitle": "Guylas | Cuisine traditionnelle persane iranienne",
+   "mapsUrl": "https://www.google.com/maps/place/Guylas+%7C+Cuisine+traditionnelle+persane+iranienne/@48.8449827,2.2892853,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a81c93cebd:0xc4ffd3c73c221056!8m2!3d48.8449827!4d2.2892853!16s%2Fg%2F11fkvz5p_w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e671a81c93cebd:0xc4ffd3c73c221056",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "68",
+    "Entrepreneurs"
+   ],
+   "addressHits": [
+    "68",
+    "Entrepreneurs"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_WRByB3Ykz0d4tVP9ieUw7Q6baQdGb9Q77-1sFc1KT9UKXYG4jkzJU57J0DuQ4GYIRiSjYjTQFnC50cEmdBzs7rgRQAwuCTAbTiha1Td1Ina6sM40-CCC-mefA3GL57QAY-SpsayYNu8=w1600-h1200-k-no",
+   "photoCount": 10,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-guylas-gm01"
+  },
+  {
+   "slug": "sawadee-paris",
+   "region": "paris",
+   "name": "Sawadee",
+   "address": "53 Avenue Émile Zola, 75015 Paris",
+   "resolvedTitle": "Sawadee",
+   "mapsUrl": "https://www.google.com/maps/place/Sawadee/@48.8465306,2.2836849,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700f422ed339:0x763cda18d5e5f454!8m2!3d48.8465306!4d2.2836849!16s%2Fg%2F1td1j97m?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e6700f422ed339:0x763cda18d5e5f454",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "53",
+    "Émile",
+    "Zola"
+   ],
+   "addressHits": [
+    "53",
+    "Émile",
+    "Zola"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk_atnHliX1AihmNIFKUGNKb4E8qZ_gfGU7YvAYuNVxZi2jE5dn2Kc4BQ1XXLLTE4Y9ZWeJR5mcZK0VM0GV8W_1FfbatE8er6wcWkfivX1l-5Bxhyyp6Zv8EzuTMoG7bGnxYBrIAg=w1600-h1200-k-no",
+   "photoCount": 16,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-sawadee-paris-gm01"
+  },
+  {
+   "slug": "breizh-cafe-charles-michels",
+   "region": "paris",
+   "name": "Breizh Café Charles Michels",
+   "address": "3 Place Charles Michels, 75015 Paris",
+   "resolvedTitle": "Breizh Café Charles Michels | La Crêpe Autrement",
+   "mapsUrl": "https://www.google.com/maps/place/Breizh+Caf%C3%A9+Charles+Michels+%7C+La+Cr%C3%AApe+Autrement/@48.8471595,2.2856151,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67107e183bdb3:0xeec53b4db6fe1bc7!8m2!3d48.8471595!4d2.2856151!16s%2Fg%2F11v0xsk788?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e67107e183bdb3:0xeec53b4db6fe1bc7",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "3",
+    "Charles",
+    "Michels"
+   ],
+   "addressHits": [
+    "3",
+    "Charles",
+    "Michels"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_m4uk9ZhShz3qSCsxznw9eN27K759L6rVj8T0N2O9Yy11lmRO032WiWqb7-8WZrBmIQOQeRBECNbV2DTYAIVHXKrpukpSikq9cuWwCFwBiLfXCYVfeyjO3-ziAzhvimmKH4-VkieZy7kt=w1600-h1200-k-no",
+   "photoCount": 9,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-breizh-cafe-charles-michels-gm01"
+  },
+  {
+   "slug": "le-relais-du-15eme",
+   "region": "paris",
+   "name": "Le Relais du 15ème",
+   "address": "78 Avenue Émile Zola, 75015 Paris",
+   "resolvedTitle": "Le Relais du 15ème",
+   "mapsUrl": "https://www.google.com/maps/place/Le+Relais+du+15%C3%A8me/@48.8465043,2.2867523,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700fedb488bd:0x8483fa303a80848e!8m2!3d48.8465043!4d2.2867523!16s%2Fg%2F1thhjtvt?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e6700fedb488bd:0x8483fa303a80848e",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "78",
+    "Émile",
+    "Zola"
+   ],
+   "addressHits": [
+    "78",
+    "Émile",
+    "Zola"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl6d92OgmFrAI_UFx3Ckw_zcX8ruPY5HPxRgwJi9rdRgmXRx1QP9ekxcH_E_vmx55a24iMyzLDbtJmT7P1uQuaV11MwhN3Zapr8hg5BZLT7SzUDBbGxTLoMyYJihyWoG-I1nQyb=w1600-h1200-k-no",
+   "photoCount": 17,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-le-relais-du-15eme-gm01"
+  },
+  {
+   "slug": "chez-janou",
+   "region": "paris",
+   "name": "Chez Janou",
+   "address": "2 Rue Roger Verlomme, 75003 Paris",
+   "resolvedTitle": "Chez Janou",
+   "mapsUrl": "https://www.google.com/maps/place/Chez+Janou/@48.8567159,2.3671983,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e0006e57569:0x2861bd49d190e4cd!8m2!3d48.8567159!4d2.3671983!16s%2Fg%2F1vlz9nw3?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e66e0006e57569:0x2861bd49d190e4cd",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "2",
+    "Roger",
+    "Verlomme"
+   ],
+   "addressHits": [
+    "2",
+    "Roger",
+    "Verlomme"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlONWCI6IP7F63IllZk4IurU90QGYJZxBd1NjcKlOxVsdZLwK9Z_1XWr9UtGXKjFUw4ezlYBKrvfZmpmeaOZ9wRE-iJS_FGJKDZemV6v7D2RzuN3yQT2vdgITtsN7gdmvrHOIfETS68UbfH=w1600-h1200-k-no",
+   "photoCount": 14,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-chez-janou-gm01"
+  },
+  {
+   "slug": "le-progres-montmartre",
+   "region": "paris",
+   "name": "Le Progrès",
+   "address": "7 Rue des Trois Frères, 75018 Paris",
+   "resolvedTitle": "Le Progrès",
+   "mapsUrl": "https://www.google.com/maps/place/Le+Progr%C3%A8s/@48.8839314,2.3413837,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e43822594e5:0xa6ed2a77cdd540e6!8m2!3d48.8839314!4d2.3413837!16s%2Fg%2F1td64m8w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e66e43822594e5:0xa6ed2a77cdd540e6",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "7",
+    "Trois",
+    "Frères"
+   ],
+   "addressHits": [
+    "7",
+    "Trois",
+    "Frères"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkmkmmzEnWt8yLLb_eOIqU20IrLOE6yQLsL9AejLAORm1-jBGuIivrXR-Aj4cDwdy33SNsemJlBw1zW_uam2AqE7LJDJmcgxGkVAAiLT4iJ0DojAV8RMBuWz3GeLDfXM8piFiuSLHR-sSw=w1600-h1200-k-no",
+   "photoCount": 16,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-le-progres-montmartre-gm01"
+  },
+  {
+   "slug": "bouillon-racine",
+   "region": "paris",
+   "name": "Bouillon Racine",
+   "address": "3 Rue Racine, 75006 Paris",
+   "resolvedTitle": "Bouillon Racine",
+   "mapsUrl": "https://www.google.com/maps/place/Bouillon+Racine/@48.850176,2.342022,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6712adf3efaa1:0x8464164a9b530ea!8m2!3d48.850176!4d2.342022!16s%2Fg%2F11pdxny4fb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+   "placeKey": "0x47e6712adf3efaa1:0x8464164a9b530ea",
+   "nameMatch": true,
+   "addressMatch": true,
+   "addressTokens": [
+    "3",
+    "Racine"
+   ],
+   "addressHits": [
+    "3",
+    "Racine"
+   ],
+   "photoUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmhOR1b-sdao2Ne22Kr2ewsPqDZQW0gUeHSAe7l5IND78Ki4hLpYRlN-_6wUVbwqXhxyQfoegWlMEEM5vxOEpnMZCOMmR2iqvfW8b0S95rZwE8pV_deSxdpbWdhZAenVKTrEw0Y=w1600-h1200-k-no",
+   "photoCount": 15,
+   "status": "VALID_GOOGLE_MAPS",
+   "imageId": "paris-bouillon-racine-gm01"
   }
  ]
 }

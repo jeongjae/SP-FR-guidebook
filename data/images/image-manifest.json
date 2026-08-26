@@ -12738,6 +12738,1086 @@
         ]
       },
       "status": "processed"
+    },
+    {
+      "imageId": "paris-au-petit-riche-gm01",
+      "placeId": "au-petit-riche",
+      "region": "paris",
+      "title": "Au Petit Riche — Google Maps",
+      "titleKo": "Au Petit Riche",
+      "description": "25 Rue Le Peletier, 75009 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Au+Petit+Riche/@48.8731822,2.3384874,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e3916fa2f89:0xa74d15a1a2b53095!8m2!3d48.8731822!4d2.3384874!16s%2Fg%2F1td5k_jy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_Y1Ik_GIp5VFs2X4xLkR3GQVe95L3MI6YqMCG7munWhYkmrWOr62H1GjRN7fyvPpzvJI8D2PZ2JmJL3z5OKtdG7VvgDW-bpjj0FhM8gvmvcBtlk-Sn7G3JXm3mQNEy8wsMMOadA=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Au Petit Riche",
+        "resolvedName": "Au Petit Riche",
+        "address": "25 Rue Le Peletier, 75009 Paris",
+        "placeKey": "0x47e66e3916fa2f89:0xa74d15a1a2b53095",
+        "mapsUrl": "https://www.google.com/maps/place/Au+Petit+Riche/@48.8731822,2.3384874,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e3916fa2f89:0xa74d15a1a2b53095!8m2!3d48.8731822!4d2.3384874!16s%2Fg%2F1td5k_jy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 900,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/paris-au-petit-riche-gm01.jpg",
+      "originalSha256": "ff12c7832840a02858e8be2fea145e58fafe1c62aa320bc944a8aa12e09effe8",
+      "originalBytes": 396691,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/au-petit-riche.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 9구 르 펠레티에 거리의 1854년 전통 비스트로 Au Petit Riche",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-au-petit-riche-gm01-content-900.webp",
+            "sitePath": "assets/images/content/paris-au-petit-riche-gm01-content-900.webp",
+            "width": 900,
+            "height": 1200,
+            "bytes": 208964,
+            "sha256": "fc4a669829c5f4c2fb019d14275553bfdd18f5421c13b5e06eb256d01a64aa25",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-au-petit-riche-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-au-petit-riche-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31816,
+            "sha256": "3d146201a3bd467e5945d8d0abed31288de61eeab24ace048aefce7b760a84a8",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-cafe-varenne-gm01",
+      "placeId": "cafe-varenne",
+      "region": "paris",
+      "title": "Café Varenne — Google Maps",
+      "titleKo": "Café Varenne",
+      "description": "36 Rue de Varenne, 75007 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Caf%C3%A9+Varenne/@48.8541711,2.3236772,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671d4e2db06e7:0x56ceabc466115d3a!8m2!3d48.8541711!4d2.3236772!16s%2Fg%2F1tjysy4b?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl-zpT3BA5rD7s5CjsFHyxMfGxaQ1Pb_cYbrMuHMfIkh1YnDpaRuqGbYLYLgaF0AC3zP1cIG94k7v5Uik6CV5gCBnHbl2_oCHd40rGI504t765LglXyuiw1Fr4UWNAkOlBhMW-EiF9n-42M=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Café Varenne",
+        "resolvedName": "Café Varenne",
+        "address": "36 Rue de Varenne, 75007 Paris",
+        "placeKey": "0x47e671d4e2db06e7:0x56ceabc466115d3a",
+        "mapsUrl": "https://www.google.com/maps/place/Caf%C3%A9+Varenne/@48.8541711,2.3236772,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671d4e2db06e7:0x56ceabc466115d3a!8m2!3d48.8541711!4d2.3236772!16s%2Fg%2F1tjysy4b?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-cafe-varenne-gm01.jpg",
+      "originalSha256": "9bb3ae1999886a5ac50ba4b0ef78cdfc23e65da8b227972822df2f03b2b6391f",
+      "originalBytes": 251641,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/cafe-varenne.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 7구 바렌 거리의 클래식 카페 비스트로 Café Varenne",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-cafe-varenne-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-cafe-varenne-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 81334,
+            "sha256": "007cea76f1074db63aba30366284206d09ab024ed508a4b80ed11cf7500d6a0b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-cafe-varenne-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-cafe-varenne-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 21510,
+            "sha256": "55c8d7019e57386a17b2733f8f5a36d32e41d9663b6fd0abc2da4175f2892f23",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-chez-savy-gm01",
+      "placeId": "chez-savy",
+      "region": "paris",
+      "title": "Chez Savy — Google Maps",
+      "titleKo": "Chez Savy",
+      "description": "23 Rue Bayard, 75008 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Chez+Savy/@48.867046,2.307571,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fdb34cac27f:0xe4babbd0af5e1b75!8m2!3d48.867046!4d2.307571!16s%2Fg%2F1pxy5xz6k?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlu8P3tcyYsvpZR18o8zkJZL9L8mxZKHmywty9CwzFO5HXFKhZom2GJw-_TjasY2BxHsm3PbaxRNBxq-mTZO39L7DRMCfm8fANa0sbzJ_7224u7RMI56ZEVvWBoJLu-G9Myue5g=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Chez Savy",
+        "resolvedName": "Chez Savy",
+        "address": "23 Rue Bayard, 75008 Paris",
+        "placeKey": "0x47e66fdb34cac27f:0xe4babbd0af5e1b75",
+        "mapsUrl": "https://www.google.com/maps/place/Chez+Savy/@48.867046,2.307571,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fdb34cac27f:0xe4babbd0af5e1b75!8m2!3d48.867046!4d2.307571!16s%2Fg%2F1pxy5xz6k?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 795,
+      "originalHeight": 795,
+      "originalPath": "source/ASSETS/photos/originals/paris-chez-savy-gm01.jpg",
+      "originalSha256": "f49b0beea91c6e7b82c167f03a1aaf2eb3e56296c1b6c24c7910f405902028cb",
+      "originalBytes": 91159,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/chez-savy.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 8구 바야르 거리의 1923년 아르데코 비스트로 Chez Savy",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-chez-savy-gm01-content-795.webp",
+            "sitePath": "assets/images/content/paris-chez-savy-gm01-content-795.webp",
+            "width": 795,
+            "height": 795,
+            "bytes": 33838,
+            "sha256": "21dd0f01e62d264c2fbbf62d025c7f7e58f8d9528219858b1d58ab42302a8b80",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-chez-savy-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-chez-savy-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 13908,
+            "sha256": "41dc2047720d97d58a0abdc9197bcb4ad7c6fd78cdf8b31832d33110ddf5e9dd",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-la-flottille-gm01",
+      "placeId": "la-flottille",
+      "region": "paris",
+      "title": "La Flottille — Google Maps",
+      "titleKo": "La Flottille",
+      "description": "Parc du Château de Versailles, 78000 Versailles",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/La+Flottille/@48.8091371,2.1083631,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67d905f564b1d:0xeb470d1c9260ed14!8m2!3d48.8091371!4d2.1083631!16s%2Fg%2F1tkb4f84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmzAGScxYEb4qbPX98mRLDvMhu1Rc2hWMUvfGc4qpOVwWIiCbGKjgUL6m8xdNyxEAu3rhSJ7mvTQTBGr6M83U39cQgPZWjh_l-gVC2hoxuJSgADogQKONSKAZGSy3pCfR36Vf7ZpMQQHjlG=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "La Flottille",
+        "resolvedName": "La Flottille",
+        "address": "Parc du Château de Versailles, 78000 Versailles",
+        "placeKey": "0x47e67d905f564b1d:0xeb470d1c9260ed14",
+        "mapsUrl": "https://www.google.com/maps/place/La+Flottille/@48.8091371,2.1083631,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67d905f564b1d:0xeb470d1c9260ed14!8m2!3d48.8091371!4d2.1083631!16s%2Fg%2F1tkb4f84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-la-flottille-gm01.jpg",
+      "originalSha256": "1c571616a4f9a3288b0b472800c62c3a272d79b51878366398787e52f5eb0a18",
+      "originalBytes": 342797,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/la-flottille.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "베르사유 궁전 대운하 앞의 브라세리 La Flottille",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-la-flottille-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-la-flottille-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 106628,
+            "sha256": "b89b95b5f7f5bd06108707b1a0711bab2e1048cb9e5f82d65410b49a8e8bc0ad",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-la-flottille-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-la-flottille-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 25780,
+            "sha256": "1b3b0c8b6a92ff6de8c399bd3f3c8c7d982edd9d1cd1a5d4539d38e436222f4d",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-aux-crus-de-bourgogne-gm01",
+      "placeId": "aux-crus-de-bourgogne",
+      "region": "paris",
+      "title": "Aux Crus de Bourgogne — Google Maps",
+      "titleKo": "Aux Crus de Bourgogne",
+      "description": "3 Rue Bachaumont, 75002 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Aux+Crus+de+Bourgogne/@48.8658261,2.3465718,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e1818ced2b5:0x33ca79ee7681fac0!8m2!3d48.8658261!4d2.3465718!16s%2Fg%2F1td_9_6j?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk4fLqHHpbUAoTkv1JEg90cfWtxvApTEfePcTFVn9rIZ9N-Jq-HNu9Ne_WXlRtuuTNGS-v6BOg0JzwE_2hf6OwAbtKoNZ8Fyye0vaWA5gmFcofU3dVmoJQn0EpvJnXRrIOBipsrsw=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Aux Crus de Bourgogne",
+        "resolvedName": "Aux Crus de Bourgogne",
+        "address": "3 Rue Bachaumont, 75002 Paris",
+        "placeKey": "0x47e66e1818ced2b5:0x33ca79ee7681fac0",
+        "mapsUrl": "https://www.google.com/maps/place/Aux+Crus+de+Bourgogne/@48.8658261,2.3465718,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e1818ced2b5:0x33ca79ee7681fac0!8m2!3d48.8658261!4d2.3465718!16s%2Fg%2F1td_9_6j?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1024,
+      "originalHeight": 577,
+      "originalPath": "source/ASSETS/photos/originals/paris-aux-crus-de-bourgogne-gm01.jpg",
+      "originalSha256": "d5cb2c8c75fac3d11666b418b92ca096290e6f92e7262b12358a55a143038ced",
+      "originalBytes": 176595,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/aux-crus-de-bourgogne.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 2구 몽토르괴유 지구의 전통 비스트로 Aux Crus de Bourgogne",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-aux-crus-de-bourgogne-gm01-content-1024.webp",
+            "sitePath": "assets/images/content/paris-aux-crus-de-bourgogne-gm01-content-1024.webp",
+            "width": 1024,
+            "height": 577,
+            "bytes": 83910,
+            "sha256": "ce1fb871da8b29eb77396e87ad816f6b6145f94d875c32c028d06df60577363a",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-aux-crus-de-bourgogne-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-aux-crus-de-bourgogne-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27014,
+            "sha256": "f94bb49fe9820ade7665ef1dd19518d95e7b9a172c5aea20b3b56467a3ba06f6",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-les-marches-gm01",
+      "placeId": "les-marches",
+      "region": "paris",
+      "title": "Les Marches — Google Maps",
+      "titleKo": "Les Marches",
+      "description": "5 Rue de la Manutention, 75116 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Les+Marches/@48.8638964,2.2959123,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fe6ed4a6781:0x47f879cbd3b8b257!8m2!3d48.8638964!4d2.2959123!16s%2Fg%2F1tdq59sm?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkRxgR8Ayeh6_Aji5K5C9McpQeZPoL81MIt3b2KGWYKnQ0BjYSWjOhdiUgmu23g-WBXE3_fMa8uYzgT2q4yImzgapmthxo_BYTd9VkMJIn-XavgFO6Aar98xvzdsb1ouIrEvSy-=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Les Marches",
+        "resolvedName": "Les Marches",
+        "address": "5 Rue de la Manutention, 75116 Paris",
+        "placeKey": "0x47e66fe6ed4a6781:0x47f879cbd3b8b257",
+        "mapsUrl": "https://www.google.com/maps/place/Les+Marches/@48.8638964,2.2959123,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fe6ed4a6781:0x47f879cbd3b8b257!8m2!3d48.8638964!4d2.2959123!16s%2Fg%2F1tdq59sm?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-les-marches-gm01.jpg",
+      "originalSha256": "c403ca168be88e92307feb3fbfc8ddd21eeabc3be280811a386ab0ab95e70eaa",
+      "originalBytes": 420867,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/les-marches.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 16구 도쿄궁 옆 계단의 전통 비스트로 Les Marches",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-les-marches-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-les-marches-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 134254,
+            "sha256": "3960956461a05b453a426f941b6736ed21be3e4623232b957acc13da4e2b6991",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-les-marches-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-les-marches-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 29698,
+            "sha256": "0f5712fc550d0f6ee1b465718043fa40f2ed9e83de08bb795d27d845e3340539",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-stephane-martin-gm01",
+      "placeId": "stephane-martin",
+      "region": "paris",
+      "title": "Stéphane Martin — Google Maps",
+      "titleKo": "Stéphane Martin",
+      "description": "67 Rue des Entrepreneurs, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/St%C3%A9phane+Martin/@48.8450315,2.2898198,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701053e5dcd5:0x7485e3e7e11468b2!8m2!3d48.8450315!4d2.2898198!16s%2Fg%2F1tj49srx?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnlVcMWR-rIKVlnlxIi_taoZyGm5mxrCjS3mvWdQJuxP8DGuPFsQCqNuJJbyN9hRfr-D-9flbDjiNt_CK_AhMSiaieQv3pXuVbwAT1zyNqJ1uuxjjmio-Y5BZjW4ehCtu-m8RGk9HBXv7OX=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Stéphane Martin",
+        "resolvedName": "Stéphane Martin",
+        "address": "67 Rue des Entrepreneurs, 75015 Paris",
+        "placeKey": "0x47e6701053e5dcd5:0x7485e3e7e11468b2",
+        "mapsUrl": "https://www.google.com/maps/place/St%C3%A9phane+Martin/@48.8450315,2.2898198,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701053e5dcd5:0x7485e3e7e11468b2!8m2!3d48.8450315!4d2.2898198!16s%2Fg%2F1tj49srx?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-stephane-martin-gm01.jpg",
+      "originalSha256": "0a112b8baf35cef8d80996df1bcbfc2f44cc38dc4347c031241d82249445bc2c",
+      "originalBytes": 467531,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/stephane-martin.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 앙트르프르뇌르 거리의 모던 비스트로 Stéphane Martin",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-stephane-martin-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-stephane-martin-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 152404,
+            "sha256": "c82e43c09a1d7fc6e3d9050e02b10c3f6b3c02190b9db5178ef9d736ed208725",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-stephane-martin-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-stephane-martin-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 28402,
+            "sha256": "4fdbcd52b0f16200a8ed35f742823db27f75c424effc651e26b8705ed476d716",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-le-volant-basque-gm01",
+      "placeId": "le-volant-basque",
+      "region": "paris",
+      "title": "Le Volant Basque — Google Maps",
+      "titleKo": "Le Volant Basque",
+      "description": "13 Rue Béatrix Dussane, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Le+Volant+Basque/@48.8499212,2.2913047,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701bb4c02145:0xadf163321f8e9b5d!8m2!3d48.8499212!4d2.2913047!16s%2Fg%2F1tmgbrfk?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkHv69JKhSRw0jWm0kW7Rumj8rdiSzfs7kJBK4vQlbdCDjzeV1Qt-C5SaUSmlApp_ywn19Ch7C0ob6xoJXO5zkcy1KltIxTdRuiRr6wKo_p2-RSot1k-gzlL68UyUvoL1Fu4GW31w=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Le Volant Basque",
+        "resolvedName": "Le Volant Basque",
+        "address": "13 Rue Béatrix Dussane, 75015 Paris",
+        "placeKey": "0x47e6701bb4c02145:0xadf163321f8e9b5d",
+        "mapsUrl": "https://www.google.com/maps/place/Le+Volant+Basque/@48.8499212,2.2913047,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701bb4c02145:0xadf163321f8e9b5d!8m2!3d48.8499212!4d2.2913047!16s%2Fg%2F1tmgbrfk?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 873,
+      "originalHeight": 873,
+      "originalPath": "source/ASSETS/photos/originals/paris-le-volant-basque-gm01.jpg",
+      "originalSha256": "bc8bf75a28dfe8c75775ecb651350f5e75c726708f246b92781c5eda658ff447",
+      "originalBytes": 207458,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/le-volant-basque.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 뒤플렉스 역 인근의 바스크 요리 전문점 Le Volant Basque",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-le-volant-basque-gm01-content-873.webp",
+            "sitePath": "assets/images/content/paris-le-volant-basque-gm01-content-873.webp",
+            "width": 873,
+            "height": 873,
+            "bytes": 92436,
+            "sha256": "6702c4e4bd8f07a10470c3b405e786e760b2a43bff8c4422e5d60382de9089de",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-le-volant-basque-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-le-volant-basque-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24200,
+            "sha256": "4e7403874d0549f29ebf373b944260cd37b99a154d2e4c9cd3a85bc96d6b77c3",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-guylas-gm01",
+      "placeId": "guylas",
+      "region": "paris",
+      "title": "Guylas | Cuisine traditionnelle persane iranienne — Google Maps",
+      "titleKo": "Guylas",
+      "description": "68 Rue des Entrepreneurs, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Guylas+%7C+Cuisine+traditionnelle+persane+iranienne/@48.8449827,2.2892853,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a81c93cebd:0xc4ffd3c73c221056!8m2!3d48.8449827!4d2.2892853!16s%2Fg%2F11fkvz5p_w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_WRByB3Ykz0d4tVP9ieUw7Q6baQdGb9Q77-1sFc1KT9UKXYG4jkzJU57J0DuQ4GYIRiSjYjTQFnC50cEmdBzs7rgRQAwuCTAbTiha1Td1Ina6sM40-CCC-mefA3GL57QAY-SpsayYNu8=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Guylas",
+        "resolvedName": "Guylas | Cuisine traditionnelle persane iranienne",
+        "address": "68 Rue des Entrepreneurs, 75015 Paris",
+        "placeKey": "0x47e671a81c93cebd:0xc4ffd3c73c221056",
+        "mapsUrl": "https://www.google.com/maps/place/Guylas+%7C+Cuisine+traditionnelle+persane+iranienne/@48.8449827,2.2892853,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a81c93cebd:0xc4ffd3c73c221056!8m2!3d48.8449827!4d2.2892853!16s%2Fg%2F11fkvz5p_w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-guylas-gm01.jpg",
+      "originalSha256": "30e722218e64a96be3e2d1cc1629e83024359375695bed372f3ab9d7fce4fffe",
+      "originalBytes": 413922,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/guylas.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 앙트르프르뇌르 거리의 페르시아 전통 요리점 Guylas",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-guylas-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-guylas-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 129980,
+            "sha256": "93a26b934e97160083b53fcc2cd1a0b9d4401abf39adb0bb51003dd3b2508855",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-guylas-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-guylas-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23498,
+            "sha256": "24914faac1928f6b961cae206cdd661daf8f2434b6626149af18247d8848bbdd",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-sawadee-paris-gm01",
+      "placeId": "sawadee-paris",
+      "region": "paris",
+      "title": "Sawadee — Google Maps",
+      "titleKo": "Sawadee",
+      "description": "53 Avenue Émile Zola, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Sawadee/@48.8465306,2.2836849,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700f422ed339:0x763cda18d5e5f454!8m2!3d48.8465306!4d2.2836849!16s%2Fg%2F1td1j97m?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk_atnHliX1AihmNIFKUGNKb4E8qZ_gfGU7YvAYuNVxZi2jE5dn2Kc4BQ1XXLLTE4Y9ZWeJR5mcZK0VM0GV8W_1FfbatE8er6wcWkfivX1l-5Bxhyyp6Zv8EzuTMoG7bGnxYBrIAg=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Sawadee",
+        "resolvedName": "Sawadee",
+        "address": "53 Avenue Émile Zola, 75015 Paris",
+        "placeKey": "0x47e6700f422ed339:0x763cda18d5e5f454",
+        "mapsUrl": "https://www.google.com/maps/place/Sawadee/@48.8465306,2.2836849,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700f422ed339:0x763cda18d5e5f454!8m2!3d48.8465306!4d2.2836849!16s%2Fg%2F1td1j97m?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-sawadee-paris-gm01.jpg",
+      "originalSha256": "3603e77028d64e970089473e80a664f878e28cdb4123d2192f5a012b54cec01b",
+      "originalBytes": 266704,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/sawadee-paris.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 에밀 졸라 가의 정통 태국 요리점 Sawadee",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-sawadee-paris-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-sawadee-paris-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 83576,
+            "sha256": "21e691aa0d777e87f839760760d39c36eecf7d61949e77a75c86461c44cee9a4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-sawadee-paris-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-sawadee-paris-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 23322,
+            "sha256": "fab004a776da991039f94df2e7aa033a95ce2a6038d2739832f3a1f1be42dc05",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-breizh-cafe-charles-michels-gm01",
+      "placeId": "breizh-cafe-charles-michels",
+      "region": "paris",
+      "title": "Breizh Café Charles Michels | La Crêpe Autrement — Google Maps",
+      "titleKo": "Breizh Café Charles Michels",
+      "description": "3 Place Charles Michels, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Breizh+Caf%C3%A9+Charles+Michels+%7C+La+Cr%C3%AApe+Autrement/@48.8471595,2.2856151,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67107e183bdb3:0xeec53b4db6fe1bc7!8m2!3d48.8471595!4d2.2856151!16s%2Fg%2F11v0xsk788?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_m4uk9ZhShz3qSCsxznw9eN27K759L6rVj8T0N2O9Yy11lmRO032WiWqb7-8WZrBmIQOQeRBECNbV2DTYAIVHXKrpukpSikq9cuWwCFwBiLfXCYVfeyjO3-ziAzhvimmKH4-VkieZy7kt=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Breizh Café Charles Michels",
+        "resolvedName": "Breizh Café Charles Michels | La Crêpe Autrement",
+        "address": "3 Place Charles Michels, 75015 Paris",
+        "placeKey": "0x47e67107e183bdb3:0xeec53b4db6fe1bc7",
+        "mapsUrl": "https://www.google.com/maps/place/Breizh+Caf%C3%A9+Charles+Michels+%7C+La+Cr%C3%AApe+Autrement/@48.8471595,2.2856151,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67107e183bdb3:0xeec53b4db6fe1bc7!8m2!3d48.8471595!4d2.2856151!16s%2Fg%2F11v0xsk788?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-breizh-cafe-charles-michels-gm01.jpg",
+      "originalSha256": "a1c4758fea0bc2c5eb92625a45937ba045c457dd897121c7e0763e517934d0c5",
+      "originalBytes": 550624,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/breizh-cafe-charles-michels.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 샤를 미셸 광장의 브르타뉴 메밀 크레프 전문점 Breizh Café",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-breizh-cafe-charles-michels-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-breizh-cafe-charles-michels-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 174618,
+            "sha256": "527dac55ddc858644a5f43fa216715d62f75f458b66483d6aaf5542a35830452",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-breizh-cafe-charles-michels-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-breizh-cafe-charles-michels-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 34778,
+            "sha256": "6d984cc143a37d504cefd7e454f8f4519633f6485bb11283d84683a7f607f681",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-le-relais-du-15eme-gm01",
+      "placeId": "le-relais-du-15eme",
+      "region": "paris",
+      "title": "Le Relais du 15ème — Google Maps",
+      "titleKo": "Le Relais du 15ème",
+      "description": "78 Avenue Émile Zola, 75015 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Le+Relais+du+15%C3%A8me/@48.8465043,2.2867523,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700fedb488bd:0x8483fa303a80848e!8m2!3d48.8465043!4d2.2867523!16s%2Fg%2F1thhjtvt?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl6d92OgmFrAI_UFx3Ckw_zcX8ruPY5HPxRgwJi9rdRgmXRx1QP9ekxcH_E_vmx55a24iMyzLDbtJmT7P1uQuaV11MwhN3Zapr8hg5BZLT7SzUDBbGxTLoMyYJihyWoG-I1nQyb=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Le Relais du 15ème",
+        "resolvedName": "Le Relais du 15ème",
+        "address": "78 Avenue Émile Zola, 75015 Paris",
+        "placeKey": "0x47e6700fedb488bd:0x8483fa303a80848e",
+        "mapsUrl": "https://www.google.com/maps/place/Le+Relais+du+15%C3%A8me/@48.8465043,2.2867523,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700fedb488bd:0x8483fa303a80848e!8m2!3d48.8465043!4d2.2867523!16s%2Fg%2F1thhjtvt?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 901,
+      "originalPath": "source/ASSETS/photos/originals/paris-le-relais-du-15eme-gm01.jpg",
+      "originalSha256": "877d435de17056f50ab52b7266823ee1f1ae22e6f5fac3bf6b9153cf997a5a81",
+      "originalBytes": 518254,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/le-relais-du-15eme.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 15구 에밀 졸라 가의 동네 비스트로 Le Relais du 15ème",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-le-relais-du-15eme-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-le-relais-du-15eme-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 721,
+            "bytes": 172920,
+            "sha256": "418db25a87e39caae8c335ba2a20b0b339d25ad1a5646f09a8568632f1fbfba0",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-le-relais-du-15eme-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-le-relais-du-15eme-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 32950,
+            "sha256": "31a67f1b8a7e7cced8bdf11a0a9f12ac2c1f72d42b289452683b62105bf49671",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-chez-janou-gm01",
+      "placeId": "chez-janou",
+      "region": "paris",
+      "title": "Chez Janou — Google Maps",
+      "titleKo": "Chez Janou",
+      "description": "2 Rue Roger Verlomme, 75003 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Chez+Janou/@48.8567159,2.3671983,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e0006e57569:0x2861bd49d190e4cd!8m2!3d48.8567159!4d2.3671983!16s%2Fg%2F1vlz9nw3?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlONWCI6IP7F63IllZk4IurU90QGYJZxBd1NjcKlOxVsdZLwK9Z_1XWr9UtGXKjFUw4ezlYBKrvfZmpmeaOZ9wRE-iJS_FGJKDZemV6v7D2RzuN3yQT2vdgITtsN7gdmvrHOIfETS68UbfH=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Chez Janou",
+        "resolvedName": "Chez Janou",
+        "address": "2 Rue Roger Verlomme, 75003 Paris",
+        "placeKey": "0x47e66e0006e57569:0x2861bd49d190e4cd",
+        "mapsUrl": "https://www.google.com/maps/place/Chez+Janou/@48.8567159,2.3671983,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e0006e57569:0x2861bd49d190e4cd!8m2!3d48.8567159!4d2.3671983!16s%2Fg%2F1vlz9nw3?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 960,
+      "originalHeight": 1165,
+      "originalPath": "source/ASSETS/photos/originals/paris-chez-janou-gm01.jpg",
+      "originalSha256": "ad2f0a6c82ed4d8fa3e5253addda3c1d1c3777cc8ce038f1ebaae75a9e633290",
+      "originalBytes": 403042,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/chez-janou.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 3구 마레 지구의 프로방스풍 비스트로 Chez Janou",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-chez-janou-gm01-content-960.webp",
+            "sitePath": "assets/images/content/paris-chez-janou-gm01-content-960.webp",
+            "width": 960,
+            "height": 1165,
+            "bytes": 203216,
+            "sha256": "e413cd047cb23de6d83db028b377f8cc5b05bff232bc3f278154922acb29d59b",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-chez-janou-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-chez-janou-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 39332,
+            "sha256": "2eb049e742d562064291e8d455f347f035ccb018e73d3e2e1d9326995f3daabe",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-le-progres-montmartre-gm01",
+      "placeId": "le-progres-montmartre",
+      "region": "paris",
+      "title": "Le Progrès — Google Maps",
+      "titleKo": "Le Progrès",
+      "description": "7 Rue des Trois Frères, 75018 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Le+Progr%C3%A8s/@48.8839314,2.3413837,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e43822594e5:0xa6ed2a77cdd540e6!8m2!3d48.8839314!4d2.3413837!16s%2Fg%2F1td64m8w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkmkmmzEnWt8yLLb_eOIqU20IrLOE6yQLsL9AejLAORm1-jBGuIivrXR-Aj4cDwdy33SNsemJlBw1zW_uam2AqE7LJDJmcgxGkVAAiLT4iJ0DojAV8RMBuWz3GeLDfXM8piFiuSLHR-sSw=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Le Progrès",
+        "resolvedName": "Le Progrès",
+        "address": "7 Rue des Trois Frères, 75018 Paris",
+        "placeKey": "0x47e66e43822594e5:0xa6ed2a77cdd540e6",
+        "mapsUrl": "https://www.google.com/maps/place/Le+Progr%C3%A8s/@48.8839314,2.3413837,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e43822594e5:0xa6ed2a77cdd540e6!8m2!3d48.8839314!4d2.3413837!16s%2Fg%2F1td64m8w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 900,
+      "originalHeight": 1200,
+      "originalPath": "source/ASSETS/photos/originals/paris-le-progres-montmartre-gm01.jpg",
+      "originalSha256": "a06c1fe3db4ff5481cfdc9d7d0b8a1b2571fb52f6f60225beddf3b0cfc5073c5",
+      "originalBytes": 383570,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/le-progres-montmartre.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 18구 몽마르트르 트루아 프레르 거리의 클래식 카페 비스트로 Le Progrès",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-le-progres-montmartre-gm01-content-900.webp",
+            "sitePath": "assets/images/content/paris-le-progres-montmartre-gm01-content-900.webp",
+            "width": 900,
+            "height": 1200,
+            "bytes": 205224,
+            "sha256": "b21ad0e4b93623c0732e46ca7edf0787705e9d979666d9303b97fa11420540b4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-le-progres-montmartre-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-le-progres-montmartre-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 27936,
+            "sha256": "1a56764016ea8c5a9f0888232b1e743d50153125c267ab9faf9aa028c2ce311d",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "paris-bouillon-racine-gm01",
+      "placeId": "bouillon-racine",
+      "region": "paris",
+      "title": "Bouillon Racine — Google Maps",
+      "titleKo": "Bouillon Racine",
+      "description": "3 Rue Racine, 75006 Paris",
+      "source": "Google Maps",
+      "sourcePage": "https://www.google.com/maps/place/Bouillon+Racine/@48.850176,2.342022,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6712adf3efaa1:0x8464164a9b530ea!8m2!3d48.850176!4d2.342022!16s%2Fg%2F11pdxny4fb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "originalFile": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmhOR1b-sdao2Ne22Kr2ewsPqDZQW0gUeHSAe7l5IND78Ki4hLpYRlN-_6wUVbwqXhxyQfoegWlMEEM5vxOEpnMZCOMmR2iqvfW8b0S95rZwE8pV_deSxdpbWdhZAenVKTrEw0Y=w1600-h1200-k-no",
+      "creator": "Google Maps 기여자 (개별 표기 없음)",
+      "license": "Google Maps 사용자 제공 사진 — 자유 라이선스 아님",
+      "licenseCode": "google-maps-ugc",
+      "licenseUrl": "https://www.google.com/help/terms_maps/",
+      "businessIdentity": {
+        "name": "Bouillon Racine",
+        "resolvedName": "Bouillon Racine",
+        "address": "3 Rue Racine, 75006 Paris",
+        "placeKey": "0x47e6712adf3efaa1:0x8464164a9b530ea",
+        "mapsUrl": "https://www.google.com/maps/place/Bouillon+Racine/@48.850176,2.342022,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6712adf3efaa1:0x8464164a9b530ea!8m2!3d48.850176!4d2.342022!16s%2Fg%2F11pdxny4fb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+        "matchedOn": [
+          "name",
+          "address"
+        ]
+      },
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-26",
+      "originalWidth": 1600,
+      "originalHeight": 900,
+      "originalPath": "source/ASSETS/photos/originals/paris-bouillon-racine-gm01.jpg",
+      "originalSha256": "cec4607330b26eb1437270c7309bbc3f052f05f029f01310ddbfc2f13f7ba609",
+      "originalBytes": 483529,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "guide/paris.html",
+        "places/bouillon-racine.html"
+      ],
+      "selectionScore": 80,
+      "altKo": "파리 6구 라틴 지구의 1906년 아르누보 전통 식당 Bouillon Racine",
+      "captionKo": "",
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/paris-bouillon-racine-gm01-content-1280.webp",
+            "sitePath": "assets/images/content/paris-bouillon-racine-gm01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 163036,
+            "sha256": "3bdc538f0414be4affd551d091de4043ca4c43f7c9c48f9943b6bd48ff5c8001",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/paris-bouillon-racine-gm01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/paris-bouillon-racine-gm01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31538,
+            "sha256": "dfc94f7737dc2ed1e666cc73742c2a816dba43c9b27f1d1447d1b66feeddecd1",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
     }
   ],
   "processedAt": "2026-08-05"
