@@ -311,94 +311,214 @@
       "checkedAt": "2026-08-22"
     },
     "au-petit-riche": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Au Petit Riche",
+        "resolvedName": "Au Petit Riche",
+        "address": "25 Rue Le Peletier, 75009 Paris",
+        "placeKey": "0x47e66e3916fa2f89:0xa74d15a1a2b53095"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Au+Petit+Riche/@48.8731822,2.3384874,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e3916fa2f89:0xa74d15a1a2b53095!8m2!3d48.8731822!4d2.3384874!16s%2Fg%2F1td5k_jy?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-au-petit-riche-gm01",
+      "checkedAt": "2026-08-26"
     },
     "cafe-varenne": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Café Varenne",
+        "resolvedName": "Café Varenne",
+        "address": "36 Rue de Varenne, 75007 Paris",
+        "placeKey": "0x47e671d4e2db06e7:0x56ceabc466115d3a"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Caf%C3%A9+Varenne/@48.8541711,2.3236772,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671d4e2db06e7:0x56ceabc466115d3a!8m2!3d48.8541711!4d2.3236772!16s%2Fg%2F1tjysy4b?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-cafe-varenne-gm01",
+      "checkedAt": "2026-08-26"
     },
     "chez-savy": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Chez Savy",
+        "resolvedName": "Chez Savy",
+        "address": "23 Rue Bayard, 75008 Paris",
+        "placeKey": "0x47e66fdb34cac27f:0xe4babbd0af5e1b75"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Chez+Savy/@48.867046,2.307571,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fdb34cac27f:0xe4babbd0af5e1b75!8m2!3d48.867046!4d2.307571!16s%2Fg%2F1pxy5xz6k?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-chez-savy-gm01",
+      "checkedAt": "2026-08-26"
     },
     "la-flottille": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "La Flottille",
+        "resolvedName": "La Flottille",
+        "address": "Parc du Château de Versailles, 78000 Versailles",
+        "placeKey": "0x47e67d905f564b1d:0xeb470d1c9260ed14"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/La+Flottille/@48.8091371,2.1083631,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67d905f564b1d:0xeb470d1c9260ed14!8m2!3d48.8091371!4d2.1083631!16s%2Fg%2F1tkb4f84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-la-flottille-gm01",
+      "checkedAt": "2026-08-26"
     },
     "aux-crus-de-bourgogne": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Aux Crus de Bourgogne",
+        "resolvedName": "Aux Crus de Bourgogne",
+        "address": "3 Rue Bachaumont, 75002 Paris",
+        "placeKey": "0x47e66e1818ced2b5:0x33ca79ee7681fac0"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Aux+Crus+de+Bourgogne/@48.8658261,2.3465718,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e1818ced2b5:0x33ca79ee7681fac0!8m2!3d48.8658261!4d2.3465718!16s%2Fg%2F1td_9_6j?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-aux-crus-de-bourgogne-gm01",
+      "checkedAt": "2026-08-26"
     },
     "les-marches": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Les Marches",
+        "resolvedName": "Les Marches",
+        "address": "5 Rue de la Manutention, 75116 Paris",
+        "placeKey": "0x47e66fe6ed4a6781:0x47f879cbd3b8b257"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Les+Marches/@48.8638964,2.2959123,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66fe6ed4a6781:0x47f879cbd3b8b257!8m2!3d48.8638964!4d2.2959123!16s%2Fg%2F1tdq59sm?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-les-marches-gm01",
+      "checkedAt": "2026-08-26"
     },
     "stephane-martin": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Stéphane Martin",
+        "resolvedName": "Stéphane Martin",
+        "address": "67 Rue des Entrepreneurs, 75015 Paris",
+        "placeKey": "0x47e6701053e5dcd5:0x7485e3e7e11468b2"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/St%C3%A9phane+Martin/@48.8450315,2.2898198,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701053e5dcd5:0x7485e3e7e11468b2!8m2!3d48.8450315!4d2.2898198!16s%2Fg%2F1tj49srx?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-stephane-martin-gm01",
+      "checkedAt": "2026-08-26"
     },
     "le-volant-basque": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Le Volant Basque",
+        "resolvedName": "Le Volant Basque",
+        "address": "13 Rue Béatrix Dussane, 75015 Paris",
+        "placeKey": "0x47e6701bb4c02145:0xadf163321f8e9b5d"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Le+Volant+Basque/@48.8499212,2.2913047,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6701bb4c02145:0xadf163321f8e9b5d!8m2!3d48.8499212!4d2.2913047!16s%2Fg%2F1tmgbrfk?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-le-volant-basque-gm01",
+      "checkedAt": "2026-08-26"
     },
     "guylas": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Guylas",
+        "resolvedName": "Guylas | Cuisine traditionnelle persane iranienne",
+        "address": "68 Rue des Entrepreneurs, 75015 Paris",
+        "placeKey": "0x47e671a81c93cebd:0xc4ffd3c73c221056"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Guylas+%7C+Cuisine+traditionnelle+persane+iranienne/@48.8449827,2.2892853,17z/data=!3m1!4b1!4m6!3m5!1s0x47e671a81c93cebd:0xc4ffd3c73c221056!8m2!3d48.8449827!4d2.2892853!16s%2Fg%2F11fkvz5p_w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-guylas-gm01",
+      "checkedAt": "2026-08-26"
     },
     "sawadee-paris": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Sawadee",
+        "resolvedName": "Sawadee",
+        "address": "53 Avenue Émile Zola, 75015 Paris",
+        "placeKey": "0x47e6700f422ed339:0x763cda18d5e5f454"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Sawadee/@48.8465306,2.2836849,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700f422ed339:0x763cda18d5e5f454!8m2!3d48.8465306!4d2.2836849!16s%2Fg%2F1td1j97m?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-sawadee-paris-gm01",
+      "checkedAt": "2026-08-26"
     },
     "breizh-cafe-charles-michels": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Breizh Café Charles Michels",
+        "resolvedName": "Breizh Café Charles Michels | La Crêpe Autrement",
+        "address": "3 Place Charles Michels, 75015 Paris",
+        "placeKey": "0x47e67107e183bdb3:0xeec53b4db6fe1bc7"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Breizh+Caf%C3%A9+Charles+Michels+%7C+La+Cr%C3%AApe+Autrement/@48.8471595,2.2856151,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67107e183bdb3:0xeec53b4db6fe1bc7!8m2!3d48.8471595!4d2.2856151!16s%2Fg%2F11v0xsk788?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-breizh-cafe-charles-michels-gm01",
+      "checkedAt": "2026-08-26"
     },
     "le-relais-du-15eme": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Le Relais du 15ème",
+        "resolvedName": "Le Relais du 15ème",
+        "address": "78 Avenue Émile Zola, 75015 Paris",
+        "placeKey": "0x47e6700fedb488bd:0x8483fa303a80848e"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Le+Relais+du+15%C3%A8me/@48.8465043,2.2867523,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6700fedb488bd:0x8483fa303a80848e!8m2!3d48.8465043!4d2.2867523!16s%2Fg%2F1thhjtvt?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-le-relais-du-15eme-gm01",
+      "checkedAt": "2026-08-26"
     },
     "chez-janou": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Chez Janou",
+        "resolvedName": "Chez Janou",
+        "address": "2 Rue Roger Verlomme, 75003 Paris",
+        "placeKey": "0x47e66e0006e57569:0x2861bd49d190e4cd"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Chez+Janou/@48.8567159,2.3671983,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e0006e57569:0x2861bd49d190e4cd!8m2!3d48.8567159!4d2.3671983!16s%2Fg%2F1vlz9nw3?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-chez-janou-gm01",
+      "checkedAt": "2026-08-26"
     },
     "le-progres-montmartre": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Le Progrès",
+        "resolvedName": "Le Progrès",
+        "address": "7 Rue des Trois Frères, 75018 Paris",
+        "placeKey": "0x47e66e43822594e5:0xa6ed2a77cdd540e6"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Le+Progr%C3%A8s/@48.8839314,2.3413837,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e43822594e5:0xa6ed2a77cdd540e6!8m2!3d48.8839314!4d2.3413837!16s%2Fg%2F1td64m8w?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-le-progres-montmartre-gm01",
+      "checkedAt": "2026-08-26"
     },
     "bouillon-racine": {
-      "status": "NO_IMAGE",
+      "status": "VALID_GOOGLE_MAPS",
       "region": "paris",
-      "why": "MP-04 로 새로 넣은 업소다. 권리 확인된 사진을 아직 찾지 않았다",
-      "checkedAt": "2026-08-25"
+      "businessIdentity": {
+        "name": "Bouillon Racine",
+        "resolvedName": "Bouillon Racine",
+        "address": "3 Rue Racine, 75006 Paris",
+        "placeKey": "0x47e6712adf3efaa1:0x8464164a9b530ea"
+      },
+      "photoSource": "google_maps",
+      "sourceUrl": "https://www.google.com/maps/place/Bouillon+Racine/@48.850176,2.342022,17z/data=!3m1!4b1!4m6!3m5!1s0x47e6712adf3efaa1:0x8464164a9b530ea!8m2!3d48.850176!4d2.342022!16s%2Fg%2F11pdxny4fb?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
+      "imageId": "paris-bouillon-racine-gm01",
+      "checkedAt": "2026-08-26"
     }
   }
 }

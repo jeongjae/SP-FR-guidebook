@@ -8,7 +8,7 @@
     "NOT_APPLICABLE         그 항목이 이 엔티티에 해당하지 않는다",
     "BLOCKED_WITH_EVIDENCE  근거를 확인했고 지금은 채울 수 없다"
   ],
-  "decidedAt": "2026-08-22",
+  "decidedAt": "2026-08-26",
   "gaps": {
     "menu": {
       "mercat-concepcio": {
@@ -52,67 +52,67 @@
     "photo": {
       "_all": {
         "disposition": "RESOLVED",
-        "why": "24/24. Google Maps 15 · 기존 검증 9. 전부 업소 신원이 데이터에 붙어 있다"
+        "why": "파리 식당 15곳 포함 전수 대표사진 연결 완료. Google Maps UGC 30 · 기존 검증 9. 전부 업소 신원이 데이터에 붙어 있다"
       },
       "au-petit-riche": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "cafe-varenne": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "chez-savy": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "la-flottille": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "aux-crus-de-bourgogne": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "les-marches": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "stephane-martin": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "le-volant-basque": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "guylas": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "sawadee-paris": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "breizh-cafe-charles-michels": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "le-relais-du-15eme": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "chez-janou": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "le-progres-montmartre": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       },
       "bouillon-racine": {
         "disposition": "RESOLVED",
-        "why": "사진 없음(NO_IMAGE)으로 판정했다. 근거는 food-photo-status.json"
+        "why": "Google Maps 업소 대표사진 연결 완료 (VALID_GOOGLE_MAPS, 2026-08-26). 근거는 food-photo-status.json"
       }
     }
   }

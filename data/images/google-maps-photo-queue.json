@@ -169,6 +169,202 @@
       "acceptTitle": [],
       "altKo": "파리 15구의 비스트로 Le Grand Pan",
       "verifiedAt": "2026-08-22"
+    },
+    {
+      "slug": "au-petit-riche",
+      "region": "paris",
+      "name": "Au Petit Riche",
+      "address": "25 Rue Le Peletier, 75009 Paris",
+      "acceptTitle": [
+        "Au Petit Riche"
+      ],
+      "altKo": "파리 9구 르 펠레티에 거리의 1854년 전통 비스트로 Au Petit Riche",
+      "titleKo": "Au Petit Riche",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "cafe-varenne",
+      "region": "paris",
+      "name": "Café Varenne",
+      "address": "36 Rue de Varenne, 75007 Paris",
+      "acceptTitle": [
+        "Café Varenne",
+        "Cafe Varenne"
+      ],
+      "altKo": "파리 7구 바렌 거리의 클래식 카페 비스트로 Café Varenne",
+      "titleKo": "Café Varenne",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "chez-savy",
+      "region": "paris",
+      "name": "Chez Savy",
+      "address": "23 Rue Bayard, 75008 Paris",
+      "acceptTitle": [
+        "Chez Savy"
+      ],
+      "altKo": "파리 8구 바야르 거리의 1923년 아르데코 비스트로 Chez Savy",
+      "titleKo": "Chez Savy",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "la-flottille",
+      "region": "paris",
+      "name": "La Flottille",
+      "address": "Parc du Château de Versailles, 78000 Versailles",
+      "acceptTitle": [
+        "La Flottille",
+        "Restaurant La Flottille",
+        "Château de Versailles"
+      ],
+      "altKo": "베르사유 궁전 대운하 앞의 브라세리 La Flottille",
+      "titleKo": "La Flottille",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "aux-crus-de-bourgogne",
+      "region": "paris",
+      "name": "Aux Crus de Bourgogne",
+      "address": "3 Rue Bachaumont, 75002 Paris",
+      "acceptTitle": [
+        "Aux Crus de Bourgogne"
+      ],
+      "altKo": "파리 2구 몽토르괴유 지구의 전통 비스트로 Aux Crus de Bourgogne",
+      "titleKo": "Aux Crus de Bourgogne",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "les-marches",
+      "region": "paris",
+      "name": "Les Marches",
+      "address": "5 Rue de la Manutention, 75116 Paris",
+      "acceptTitle": [
+        "Les Marches",
+        "Restaurant Les Marches"
+      ],
+      "altKo": "파리 16구 도쿄궁 옆 계단의 전통 비스트로 Les Marches",
+      "titleKo": "Les Marches",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "stephane-martin",
+      "region": "paris",
+      "name": "Stéphane Martin",
+      "address": "67 Rue des Entrepreneurs, 75015 Paris",
+      "acceptTitle": [
+        "Stéphane Martin",
+        "Stephane Martin"
+      ],
+      "altKo": "파리 15구 앙트르프르뇌르 거리의 모던 비스트로 Stéphane Martin",
+      "titleKo": "Stéphane Martin",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "le-volant-basque",
+      "region": "paris",
+      "name": "Le Volant Basque",
+      "address": "13 Rue Béatrix Dussane, 75015 Paris",
+      "acceptTitle": [
+        "Le Volant Basque",
+        "Le Volant"
+      ],
+      "altKo": "파리 15구 뒤플렉스 역 인근의 바스크 요리 전문점 Le Volant Basque",
+      "titleKo": "Le Volant Basque",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "guylas",
+      "region": "paris",
+      "name": "Guylas",
+      "address": "68 Rue des Entrepreneurs, 75015 Paris",
+      "acceptTitle": [
+        "Guylas",
+        "Guylas | Cuisine traditionnelle persane iranienne",
+        "Guylas Cuisine"
+      ],
+      "altKo": "파리 15구 앙트르프르뇌르 거리의 페르시아 전통 요리점 Guylas",
+      "titleKo": "Guylas",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "sawadee-paris",
+      "region": "paris",
+      "name": "Sawadee",
+      "address": "53 Avenue Émile Zola, 75015 Paris",
+      "acceptTitle": [
+        "Sawadee",
+        "Restaurant Sawadee",
+        "Sawadee Paris"
+      ],
+      "altKo": "파리 15구 에밀 졸라 가의 정통 태국 요리점 Sawadee",
+      "titleKo": "Sawadee",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "breizh-cafe-charles-michels",
+      "region": "paris",
+      "name": "Breizh Café Charles Michels",
+      "address": "3 Place Charles Michels, 75015 Paris",
+      "acceptTitle": [
+        "Breizh Café Charles Michels",
+        "Breizh Café",
+        "Breizh Cafe",
+        "Breizh Café Charles Michels | La Crêpe Autrement"
+      ],
+      "altKo": "파리 15구 샤를 미셸 광장의 브르타뉴 메밀 크레프 전문점 Breizh Café",
+      "titleKo": "Breizh Café Charles Michels",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "le-relais-du-15eme",
+      "region": "paris",
+      "name": "Le Relais du 15ème",
+      "address": "78 Avenue Émile Zola, 75015 Paris",
+      "acceptTitle": [
+        "Le Relais du 15ème",
+        "Le Relais du 15eme",
+        "Le Relais du 15"
+      ],
+      "altKo": "파리 15구 에밀 졸라 가의 동네 비스트로 Le Relais du 15ème",
+      "titleKo": "Le Relais du 15ème",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "chez-janou",
+      "region": "paris",
+      "name": "Chez Janou",
+      "address": "2 Rue Roger Verlomme, 75003 Paris",
+      "acceptTitle": [
+        "Chez Janou"
+      ],
+      "altKo": "파리 3구 마레 지구의 프로방스풍 비스트로 Chez Janou",
+      "titleKo": "Chez Janou",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "le-progres-montmartre",
+      "region": "paris",
+      "name": "Le Progrès",
+      "address": "7 Rue des Trois Frères, 75018 Paris",
+      "acceptTitle": [
+        "Le Progrès",
+        "Le Progres"
+      ],
+      "altKo": "파리 18구 몽마르트르 트루아 프레르 거리의 클래식 카페 비스트로 Le Progrès",
+      "titleKo": "Le Progrès",
+      "verifiedAt": "2026-08-26"
+    },
+    {
+      "slug": "bouillon-racine",
+      "region": "paris",
+      "name": "Bouillon Racine",
+      "address": "3 Rue Racine, 75006 Paris",
+      "acceptTitle": [
+        "Bouillon Racine"
+      ],
+      "altKo": "파리 6구 라틴 지구의 1906년 아르누보 전통 식당 Bouillon Racine",
+      "titleKo": "Bouillon Racine",
+      "verifiedAt": "2026-08-26"
     }
   ]
 }
