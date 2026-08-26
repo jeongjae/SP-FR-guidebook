@@ -69,15 +69,32 @@
       "order": 4,
       "start": "19:00",
       "end": "20:30",
-      "name": "15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "Le Volant Basque 바스크 저녁 (15구)",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "메트로 9+8호선으로 15구 복귀. 15구 동네 비스트로 저녁 식사",
-      "menu": null,
+      "summary": "자크마르-앙드레와 몽소 공원 뒤 15구 귀환. 월요일 저녁에 문을 여는 몇 안 되는 정통 프렌치이고, 18:45에 열어 피곤한 날에도 이르게 먹을 수 있다",
+      "menu": "Axoa de veau au piment d'Espelette · Pâté basque au piment doux · Trou normand €12",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "le-volant-basque",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOK",
+          "detail": "월요일은 저녁만 18:45–22:45 영업(공식 2개 페이지 일치) · 일요일 휴무. 월요일은 특히 예약 권장 — +33 1 45 75 27 67"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "개별 요리 가격은 카테고리 범위(전채 €9~16 · 메인 €23~32)만 공개돼 있다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     }
   ],
   "legs": [
@@ -115,7 +132,7 @@
   ],
   "food": [
     "브런치·숙소 점심",
-    "숙소 저녁"
+    "Le Volant Basque 저녁 (도보 7~8분·월요일 영업)"
   ],
   "highlights": [
     "완전 회복일",

@@ -99,15 +99,32 @@
       "order": 6,
       "start": "19:45",
       "end": "21:30",
-      "name": "숙소 첫 저녁 식사 & 파리 15박 시작",
-      "category": "hotel",
+      "name": "Le Relais du 15ème 도착 첫 저녁",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "동네 비스트로 저녁 식사 또는 장보기 식재료로 숙소 첫 식사. 파리 15박 장기 체류 시작",
-      "menu": "스테이크 프리트 또는 홈메이드 파스타",
-      "reservation": "현장 선택",
+      "summary": "장보기를 마치고 숙소에서 도보 3분. 매일 11:00–22:30 논스톱에 예약이 필요 없어, 이동으로 지친 도착일에 판단할 것이 없는 집이다",
+      "menu": "Pizza Margherita · Tagliatelle carbonara · Tiramisu",
+      "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "le-relais-du-15eme",
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "OPEN",
+          "detail": "매일 11:00–22:30 논스톱 · 연중무휴 · 예약 불필요"
+        },
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "장보기가 넉넉했다면 숙소식으로 대체해도 된다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     }
   ],
   "legs": [
@@ -165,7 +182,7 @@
   ],
   "food": [
     "첫 장보기 — 필수품만",
-    "숙소식 또는 동네 식당"
+    "Le Relais du 15ème 동네 저녁 (도보 3분·무예약)"
   ],
   "highlights": [
     "P0 이동일 — 외부관광 전부 삭제",

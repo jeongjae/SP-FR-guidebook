@@ -171,7 +171,7 @@ class MapHubImprovementTests(unittest.TestCase):
             ("luberon", "Luberon", 11),
             ("avignon", "Avignon · Alpilles", 24),
             ("lyon", "Lyon", 18),
-            ("paris", "Paris", 42),
+            ("paris", "Paris", 46),
         ]
         last_pos = 0
         total_pins = 0
@@ -184,7 +184,7 @@ class MapHubImprovementTests(unittest.TestCase):
             total_pins += count
             last_pos = pos
 
-        self.assertEqual(total_pins, 165, "Day 14 차량 회수는 기존 Gorguettes 핀을 재사용하므로 총 핀 수는 165여야 함")
+        self.assertEqual(total_pins, 169, "Batch 04 Cassis 핀 + MP-04 파리 끼니 슬롯 포함 총 핀 수는 169여야 함")
 
         # 3. 8개의 map-card 및 script data가 존재하는지 확인
         map_cards = re.findall(r'<div class="map-card">', map_html)
@@ -207,7 +207,7 @@ class MapHubImprovementTests(unittest.TestCase):
         # 6. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
         date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
         matches = date_pattern.findall(map_html)
-        self.assertEqual(len(matches), 165, "165개 항목 모두 날짜 메타가 존재해야 함")
+        self.assertEqual(len(matches), 169, "169개 항목 모두 날짜 메타가 존재해야 함")
 
         # 7. Verify specific items
         self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)

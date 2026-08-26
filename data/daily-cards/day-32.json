@@ -54,15 +54,32 @@
       "order": 3,
       "start": "13:00",
       "end": "14:15",
-      "name": "7구 Rue du Bac 점심 식사",
+      "name": "Café Varenne 7구 점심",
       "category": "food",
       "lat": 48.857,
       "lng": 2.325,
-      "summary": "오르세 미술관 인근 7구 품격 있는 비스트로 점심",
-      "menu": "타르틴, 뵈프 부르기뇽, 화이트 와인",
-      "reservation": "현장 선택",
+      "summary": "오르세에서 도보 10분, 식후 rue de Varenne를 8분 직진하면 로댕 미술관. 07:30~23:00 논스톱이라 관람이 밀려도 따뜻한 점심을 놓치지 않는다",
+      "menu": "Confit de canard 수제 감자튀김 · Œufs mayonnaise · Pâté en croûte maison",
+      "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "cafe-varenne",
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "OPEN",
+          "detail": "월–토 07:30–23:00 논스톱(출처 4건 일치) · 일요일 휴무. 평균 체류 45분이라 75분 슬롯에 여유가 있다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "통 영업시간과 별개로 13:00–14:15에 따뜻한 요리 주문이 되는지 전화(+33 1 45 48 62 72) 확인"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     },
     {
       "id": "musee-rodin",
@@ -170,7 +187,7 @@
     "3시간 30분 상한",
     "화요일 — Orsay 개관 확인"
   ],
-  "backup": "오르세 관람 후 피로 시 앵발리드 산책을 생략하고 로댕 미술관 카페 정원에서 휴식 후 조기 복귀",
+  "backup": "La Laiterie Sainte Clotilde(64 rue de Bellechasse, 로댕 도보 5분, 고미요 12/20 — 점심 마감이 14:00일 수 있어 빠듯하고 예약 필수) 또는 L'Affable(10 rue de Saint-Simon, 점심 코스 €26~29 — 2인 3코스가 예산에 들어오는 유일한 곳)\n\n오르세 관람 후 피로 시 앵발리드 산책을 생략하고 로댕 미술관 카페 정원에서 휴식 후 조기 복귀",
   "map": {
     "zoom": 14,
     "center": [

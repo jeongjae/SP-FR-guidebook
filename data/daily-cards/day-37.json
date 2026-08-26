@@ -54,15 +54,32 @@
       "order": 3,
       "start": "18:30",
       "end": "20:30",
-      "name": "파리롱샹 ➔ 15구 숙소 귀환 & 저녁",
-      "category": "hotel",
+      "name": "Breizh Café 갈레트 저녁 (15구)",
+      "category": "food",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "경기 종료 후 셔틀버스 + 메트로 10호선 탑승 ➔ 15구 숙소 복귀. 15구 숙소식 저녁 식사 및 휴식",
-      "menu": null,
+      "summary": "롱샹에서 지쳐 돌아오는 날이다. 일요일 11:30–22:00 연속이라 도착 시간이 자유롭고, 갈레트 한 장이면 40분에 끝난다. 숙소 도보 5분",
+      "menu": "Galette andouille de Guémené €17.00 · Huîtres Prat-ar-Coum 6개 €18.50 · Crêpe caramel au beurre salé €7.80",
       "reservation": null,
       "optional": false,
-      "place_ref": null
+      "place_ref": "breizh-cafe-charles-michels",
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "OPEN",
+          "detail": "금·토·일 11:30–22:00 브레이크 없음 · 연중무휴. 10/4은 일요일이라 도착 시간을 맞출 필요가 없다"
+        },
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "굴과 농가 시드르를 붙이면 가벼운 저녁이 특별해진다"
+        },
+        {
+          "type": "check",
+          "label": "CHECK",
+          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+        }
+      ]
     }
   ],
   "legs": [
@@ -91,7 +108,7 @@
   ],
   "food": [
     "경기장 식사",
-    "저녁 숙소식"
+    "Breizh Café 갈레트 저녁 (도보 5분·일요일 연속영업)"
   ],
   "highlights": [
     "P0 고정 스포츠 — 종일",
