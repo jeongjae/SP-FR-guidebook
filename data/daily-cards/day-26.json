@@ -53,17 +53,22 @@
       "category": "sight",
       "lat": 45.8992,
       "lng": 6.1286,
-      "summary": "안시역 도보 5분 ➔ 튜(Thiou) 운하 중심 ➔ Palais de l'Île (12세기 수상 감옥 요새) ➔ Rue Sainte-Claire 파스텔 아치 골목 산책 (2시간 15분)",
+      "summary": "안시역 도보 5분 ➔ 튜(Thiou) 운하 중심 ➔ Palais de l'Île (12세기 수상 감옥 요새) 내부 관람 및 Rue Sainte-Claire 파스텔 아치 골목 산책 (2시간 15분)",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "Palais de l'Île 내부 관람권 (€4) 현장 발권 · 수요일 10:00–18:00 개관."
+        },
+        {
           "type": "check",
           "label": "OPEN",
-          "detail": "수요일 10:00–18:00 정상 개관 · 티우 운하 수상 요새 외관 및 구시가지 아케이드 도보 탐방."
+          "detail": "수요일 10:00–18:00 정상 개관 · 티우 운하 수상 요새 및 구시가지 아케이드 도보 탐방."
         }
       ],
-      "executionNote": "안시역 북쪽 출구에서 Rue Sommeiller를 따라 구시가지 운하 중심부로 도보 5~7분.",
+      "executionNote": "Palais de l'Île 내부 관람권은 현장 발권 (€4). 안시역 북쪽 출구에서 Rue Sommeiller를 따라 운하 중심부로 도보 5~7분.",
       "officialUrl": "https://www.musees.annecy.fr/palais-de-lile",
       "optional": false,
       "place_ref": "annecy"
@@ -96,36 +101,54 @@
       "id": "lakefront",
       "order": 4,
       "start": "14:15",
-      "end": "16:45",
+      "end": "15:45",
       "name": "Lac d'Annecy & Pont des Amours & 유럽 정원",
       "category": "sight",
       "lat": 45.9011,
       "lng": 6.1333,
-      "summary": "알프스 설산 배경의 투명한 호숫가. 파키에(Le Pâquier) 잔디밭 ➔ Pont des Amours (사랑의 다리) ➔ Jardins de l'Europe 거목 산책로 (2시간 30분). (선택: 1시간 호수 크루즈)",
+      "summary": "알프스 설산 배경의 투명한 호숫가. 파키에(Le Pâquier) 잔디밭 ➔ Pont des Amours (사랑의 다리) ➔ Jardins de l'Europe 거목 산책로 도보 탐방 (1시간 30분)",
       "menu": "로컬 젤라토, 에스프레소",
       "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "optional",
-          "label": "WEATHER PERMITTING",
-          "detail": "호수 크루즈(1시간)는 현장 기상 상황에 따라 선택 · 우천 시 샤토 디아느시 박물관으로 전환."
-        }
-      ],
-      "executionNote": "Pont des Amours에서 Jardins de l'Europe 거목 산책로를 거쳐 호숫가 산책.",
+      "executionStatuses": [],
+      "executionNote": "Chez Mamie Lise에서 도보 5분. Pont des Amours에서 Jardins de l'Europe 거목 산책로를 거쳐 호숫가 기본 산책.",
       "officialUrl": "https://www.lac-annecy.com/",
       "optional": false,
       "place_ref": "annecy"
     },
     {
-      "id": "annecy-return",
+      "id": "annecy-cruise",
       "order": 5,
+      "start": "15:45",
+      "end": "16:45",
+      "name": "선택: Lac d'Annecy 1시간 호수 크루즈",
+      "category": "sight",
+      "lat": 45.9008,
+      "lng": 6.1305,
+      "summary": "Jardins de l'Europe 앞 선착장에서 Compagnie des Bateaux du Lac d'Annecy 1시간 호수 유람선 탑승 (알프스 산자락 및 샤토 조망)",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "WEATHER PERMITTING",
+          "detail": "기상 양호 시 선택 1시간 호수 유람선 탑승 (€17~20) · 우천/강풍 시 생략."
+        }
+      ],
+      "executionNote": "기상 상황에 따른 선택 일정. 탑승하지 않을 경우 호숫가 카페 휴식 또는 구시가지 추가 산책 후 17:15 안시역 이동.",
+      "officialUrl": "https://www.bateaux-annecy.com/",
+      "optional": true,
+      "place_ref": null
+    },
+    {
+      "id": "annecy-return",
+      "order": 6,
       "start": "17:15",
       "end": "20:30",
       "name": "Annecy ➔ Lyon Part-Dieu 귀환 & 저녁",
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "안시역 복귀 ➔ 17:53 TER 직통 탑승 (19:52 Part-Dieu 도착) ➔ 서쪽 Place Béraudier 승강장에서 택시 탑승(10분 소요, 약 €12~16) ➔ 숙소 복귀 및 익일 파리 이동 짐 정리. [Backup: 18:53 탑승]",
+      "summary": "17:15 선착장/호숫가 출발 ➔ 17:30 안시역 도착(도보 10~15분) ➔ 17:53 TER 직통 탑승 (19:52 Part-Dieu 도착) ➔ 서쪽 Place Béraudier 승강장에서 택시 탑승(10분 소요, 약 €12~16) ➔ 숙소 복귀 및 익일 파리 이동 짐 정리. [Backup: 18:53 탑승]",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
@@ -171,9 +194,18 @@
     },
     {
       "from": "lakefront",
+      "to": "annecy-cruise",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "annecy-cruise",
       "to": "annecy-return",
       "mode": "train",
-      "duration": "도보 10분 + TER 1시간 58분",
+      "duration": "도보 15분 + TER 1시간 58분",
       "distance": "약 140km",
       "line": null,
       "geometryStatus": "coordinate-line"

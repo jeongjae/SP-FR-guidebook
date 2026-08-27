@@ -113,19 +113,38 @@ class ExecutionUxBatch06Tests(unittest.TestCase):
             types = {s["type"] for s in stops[stop_id]["executionStatuses"]}
             self.assertEqual({"check"}, types)
             
+        # Palais de l'Île ticket for interior museum visit & check for open hours (no confirmed)
+        palais_statuses = {s["type"] for s in stops["vieille-ville"]["executionStatuses"]}
+        self.assertIn("ticket", palais_statuses)
+        self.assertIn("check", palais_statuses)
+        self.assertNotIn("confirmed", palais_statuses)
+        
         # Chez Mamie Lise booking recommendation
         lunch_statuses = {s["type"] for s in stops["savoy-lunch"]["executionStatuses"]}
         self.assertIn("book", lunch_statuses)
         
-        # Lakefront is weather permitting / optional
+        # Lakefront walk is standard (optional=False), no optional execution status
+        self.assertFalse(stops["lakefront"]["optional"])
         lake_statuses = {s["type"] for s in stops["lakefront"]["executionStatuses"]}
-        self.assertIn("optional", lake_statuses)
+        self.assertNotIn("optional", lake_statuses)
+        
+        # Cruise is separate optional stop (optional=True), weather permitting
+        self.assertTrue(stops["annecy-cruise"]["optional"])
+        cruise_statuses = {s["type"] for s in stops["annecy-cruise"]["executionStatuses"]}
+        self.assertIn("optional", cruise_statuses)
+        cruise_labels = {s["label"] for s in stops["annecy-cruise"]["executionStatuses"]}
+        self.assertIn("WEATHER PERMITTING", cruise_labels)
+        
+        # Return buffer: station arrival 17:30 before 17:53 TER departure
+        self.assertIn("17:30", stops["annecy-return"]["summary"])
+        self.assertIn("17:53", stops["annecy-return"]["summary"])
         
         rendered = self.rendered(26)
         self.assertIn("LIVE TRAIN CHECK", rendered)
-        self.assertIn("Chez Mamie Lise", rendered)
+        self.assertIn("TICKET", rendered)
         self.assertIn("Chez Mamie Lise", rendered)
         self.assertIn("Thiou", rendered)
+        self.assertIn("WEATHER PERMITTING", rendered)
 
     def test_day27_transfer_to_paris_confirmed_anchors(self):
         payload = load_day(27)
@@ -155,6 +174,11 @@ class ExecutionUxBatch06Tests(unittest.TestCase):
         self.assertIn("TGV INOUI 6618", rendered)
         self.assertIn("78 Rue de Lourmel", rendered)
         self.assertIn("Le Relais du 15ème", rendered)
+
+    def test_day27_semantic_projection_is_frozen(self):
+        payload = semantic_projection(load_day(27))
+        digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        self.assertEqual("af3aa062b49a895e6147b74d3ada7d7f145a3dee107205344c3b5e324fd42607", digest)
 
     def test_confirmed_never_coexists_with_booking_action(self):
         for path in sorted(DAILY_CARDS.glob("day-??.json")):
