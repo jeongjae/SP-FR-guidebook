@@ -6,6 +6,7 @@
   "title": "Annecy 당일치기",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "07:30",
   "endTime": "20:30",
   "totalDuration": "13시간",
@@ -30,7 +31,16 @@
       "lng": 4.8594,
       "summary": "07:30 숙소 출발(택시 8~10분 약 €12~15 또는 메트로 15분) ➔ 07:45 Part-Dieu역 역사 진입 및 전광판 Voie 확인 ➔ 08:08 TER 직통 17904 탑승 (1시간 58분 소요, 알프스 산자락 경유 10:06 Annecy역 도착, 전석 자유석, SNCF Connect 모바일 QR). [Backup: 09:08 탑승]",
       "menu": null,
-      "reservation": "SNCF Connect (현장/사전 발권, 전석 자유석)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "LIVE TRAIN CHECK",
+          "detail": "08:08 TER 직통 17904 기준 (Annecy 10:06 도착) · 전석 자유석 · SNCF Connect 앱에서 당일 플랫폼 확인."
+        }
+      ],
+      "executionNote": "Action Card 목적지: Gare de Lyon-Part-Dieu 메인홀. 07:45까지 역사 도착.",
+      "officialUrl": "https://www.sncf-connect.com/train/trajet/lyon/annecy",
       "optional": false,
       "place_ref": null
     },
@@ -46,6 +56,15 @@
       "summary": "안시역 도보 5분 ➔ 튜(Thiou) 운하 중심 ➔ Palais de l'Île (12세기 수상 감옥 요새) ➔ Rue Sainte-Claire 파스텔 아치 골목 산책 (2시간 15분)",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "OPEN",
+          "detail": "수요일 10:00–18:00 정상 개관 · 티우 운하 수상 요새 외관 및 구시가지 아케이드 도보 탐방."
+        }
+      ],
+      "executionNote": "안시역 북쪽 출구에서 Rue Sommeiller를 따라 구시가지 운하 중심부로 도보 5~7분.",
+      "officialUrl": "https://www.musees.annecy.fr/palais-de-lile",
       "optional": false,
       "place_ref": "annecy"
     },
@@ -60,7 +79,16 @@
       "lng": 6.1292,
       "summary": "안시 구시가지 운하 골목 알프스 샬레 산장 식당에서 즐기는 전통 사부아 치즈 요리와 호수 생선",
       "menu": "사부아 치즈 퐁뒤 또는 타르티플레트, 안시 호수 생선구이",
-      "reservation": "사전 예약 권장 (12:30)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "RESERVATION RECOMMENDED",
+          "detail": "Chez Mamie Lise (11 Rue Grenette) 12:30 점심 사전 예약 권장."
+        }
+      ],
+      "executionNote": "Palais de l'Île에서 도보 3분. 사부아 퐁뒤/타르티플레트와 신선한 그린 샐러드 조합 권장.",
+      "officialUrl": "https://www.chez-mamie-lise.com/",
       "optional": false,
       "place_ref": "chez-mamie-lise"
     },
@@ -75,7 +103,16 @@
       "lng": 6.1333,
       "summary": "알프스 설산 배경의 투명한 호숫가. 파키에(Le Pâquier) 잔디밭 ➔ Pont des Amours (사랑의 다리) ➔ Jardins de l'Europe 거목 산책로 (2시간 30분). (선택: 1시간 호수 크루즈)",
       "menu": "로컬 젤라토, 에스프레소",
-      "reservation": "크루즈 현장 발권 (선택)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "WEATHER PERMITTING",
+          "detail": "호수 크루즈(1시간)는 현장 기상 상황에 따라 선택 · 우천 시 샤토 디아느시 박물관으로 전환."
+        }
+      ],
+      "executionNote": "Pont des Amours에서 Jardins de l'Europe 거목 산책로를 거쳐 호숫가 산책.",
+      "officialUrl": "https://www.lac-annecy.com/",
       "optional": false,
       "place_ref": "annecy"
     },
@@ -90,7 +127,16 @@
       "lng": 4.868933,
       "summary": "안시역 복귀 ➔ 17:53 TER 직통 탑승 (19:52 Part-Dieu 도착) ➔ 서쪽 Place Béraudier 승강장에서 택시 탑승(10분 소요, 약 €12~16) ➔ 숙소 복귀 및 익일 파리 이동 짐 정리. [Backup: 18:53 탑승]",
       "menu": null,
-      "reservation": "SNCF Connect",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "RETURN TRAIN CHECK",
+          "detail": "17:53 TER 직통 17932 기준 (Part-Dieu 19:52 도착) · 17:30까지 안시역 도착."
+        }
+      ],
+      "executionNote": "Part-Dieu 도착 후 Place Béraudier 공식 택시 승강장 ➔ 숙소 복귀 및 익일 TGV 이동 패킹.",
+      "officialUrl": "https://www.sncf-connect.com/train/trajet/annecy/lyon",
       "optional": false,
       "place_ref": null
     }

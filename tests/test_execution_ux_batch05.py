@@ -151,10 +151,10 @@ class ExecutionUxBatch05Tests(unittest.TestCase):
         day20 = self.rendered(20)
         self.assertIn("Hertz", unquote_plus(day20))
 
-    def test_day24_onward_semantics_are_unchanged(self):
-        payload = [semantic_projection(load_day(number)) for number in range(24, 44)]
+    def test_day20_to_23_semantics_are_protected(self):
+        payload = [semantic_projection(load_day(number)) for number in range(20, 24)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("1eb888b4ff3ef3b4b7dd3495ccaa757fd0ddd5ecd21f26e576a859c8dd9c8a77", digest)
+        self.assertEqual("3a057fa3cec772f44aed637aad7f6ad098ee6a90139ecc03a3dc21e8443b3b28", digest)
 
 
 if __name__ == "__main__":

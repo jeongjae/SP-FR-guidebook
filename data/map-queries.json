@@ -1737,11 +1737,11 @@
     },
     "day-24:funicular-ascent": {
       "title": "Metro D ➔ Vieux Lyon ➔ 푸니쿨라 F2 상행",
-      "origin": "Place Bellecour, Lyon",
+      "origin": "Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas, 69003 Lyon",
       "destination": "Basilique Notre-Dame de Fourvière, Lyon",
       "travelMode": "transit",
       "evidence": "TCL Metro D + Funiculaire F2 to Fourvière",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-27"
     },
     "day-26:part-dieu-departure": {
       "title": "Lyon Part-Dieu ➔ Annecy 이동 (TER)",
@@ -1749,7 +1749,7 @@
       "destination": "Gare d'Annecy",
       "travelMode": "transit",
       "evidence": "SNCF TER Lyon Part-Dieu to Annecy",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-27"
     },
     "day-26:annecy-return": {
       "title": "Annecy ➔ Lyon Part-Dieu 귀환 & 저녁",
@@ -1757,7 +1757,7 @@
       "destination": "Gare de Lyon Part-Dieu",
       "travelMode": "transit",
       "evidence": "SNCF TER Annecy to Lyon Part-Dieu",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-27"
     },
     "day-27:lyon-checkout": {
       "title": "Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu",
@@ -1765,7 +1765,7 @@
       "destination": "Gare de Lyon-Part-Dieu",
       "travelMode": "transit",
       "evidence": "Taxi/Metro transfer from Lagrange Aparthotel Lyon Lumière to Lyon Part-Dieu station",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-27"
     },
     "day-27:tgv-to-paris": {
       "title": "TGV INOUI 6618 ➔ Paris Gare de Lyon 도착",
@@ -1773,7 +1773,7 @@
       "destination": "Paris Gare de Lyon",
       "travelMode": "transit",
       "evidence": "TGV INOUI 6618 Lyon Part-Dieu to Paris Gare de Lyon",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-27"
     },
     "day-27:paris-checkin": {
       "title": "Gare de Lyon → 78 Rue de Lourmel",
@@ -1781,7 +1781,7 @@
       "destination": "78 Rue de Lourmel, 75015 Paris",
       "travelMode": "transit",
       "evidence": "Taxi/Metro transfer from Paris Gare de Lyon to 78 Rue de Lourmel",
-      "verifiedAt": "2026-08-22"
+      "verifiedAt": "2026-08-27"
     },
     "day-34:versailles-transfer": {
       "title": "15구 숙소 출발 ➔ RER C ➔ 베르사유 이동",
@@ -1830,6 +1830,94 @@
       "travelMode": "driving",
       "evidence": "Paris taxi flat fare from Left Bank to CDG Terminal 1",
       "verifiedAt": "2026-08-23"
+    },
+    "day-24:lyon-bouchon-dinner": {
+      "title": "손강변 ➔ Daniel et Denise Créqui 부숑 이동",
+      "origin": "Passerelle Saint-Georges, 69005 Lyon",
+      "destination": "Daniel et Denise Créqui, 156 Rue de Créqui, 69003 Lyon",
+      "travelMode": "transit",
+      "evidence": "Metro D / Walk from Saône to Daniel et Denise Créqui",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-25:croix-rousse-market": {
+      "title": "Lagrange Aparthotel ➔ Croix-Rousse 시장",
+      "origin": "Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas, 69003 Lyon",
+      "destination": "Marché de la Croix-Rousse, Boulevard de la Croix-Rousse, 69004 Lyon",
+      "travelMode": "transit",
+      "evidence": "Metro D ➔ Metro C to Croix-Rousse plateau market",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-25:maison-des-canuts": {
+      "title": "Croix-Rousse 시장 ➔ Maison des Canuts (자카르 직조 시연)",
+      "origin": "Marché de la Croix-Rousse, Boulevard de la Croix-Rousse, 69004 Lyon",
+      "destination": "Maison des Canuts, 10-12 Rue d'Ivry, 69004 Lyon",
+      "travelMode": "walking",
+      "evidence": "Short walk on the Croix-Rousse plateau for 11:00 demonstration",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-25:halles-gastronomy": {
+      "title": "Maison des Canuts ➔ Halles Paul Bocuse 점심",
+      "origin": "Maison des Canuts, 10-12 Rue d'Ivry, 69004 Lyon",
+      "destination": "Halles de Lyon Paul Bocuse, 102 Cours Lafayette, 69003 Lyon",
+      "travelMode": "transit",
+      "evidence": "TCL C13 direct bus from Croix-Rousse to Halles Paul Bocuse",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-25:tete-dor": {
+      "title": "Halles Paul Bocuse ➔ Parc de la Tête d'Or",
+      "origin": "Halles de Lyon Paul Bocuse, 102 Cours Lafayette, 69003 Lyon",
+      "destination": "Parc de la Tête d'Or, Porte des Enfants du Rhône, 69006 Lyon",
+      "travelMode": "transit",
+      "evidence": "TCL C4 bus / walk to Parc de la Tête d'Or main entrance",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-25:lyon-return": {
+      "title": "Parc de la Tête d'Or ➔ Lagrange Aparthotel 복귀",
+      "origin": "Parc de la Tête d'Or, 69006 Lyon",
+      "destination": "Lagrange Aparthotel Lyon Lumière, 81-85 Cours Albert Thomas, 69003 Lyon",
+      "travelMode": "transit",
+      "evidence": "TCL Metro B (Charpennes/Part-Dieu) + D line to Monplaisir-Lumière",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-26:vieille-ville": {
+      "title": "Gare d'Annecy ➔ Palais de l'Île (구시가지)",
+      "origin": "Gare d'Annecy, 74000 Annecy",
+      "destination": "Palais de l'Île, Passage de l'Île, 74000 Annecy",
+      "travelMode": "walking",
+      "evidence": "Walk from station to historic old town center",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-26:savoy-lunch": {
+      "title": "Palais de l'Île ➔ Chez Mamie Lise 점심",
+      "origin": "Palais de l'Île, Passage de l'Île, 74000 Annecy",
+      "destination": "Chez Mamie Lise, 11 Rue Grenette, 74000 Annecy",
+      "travelMode": "walking",
+      "evidence": "Walk in old town alleys to Savoy lunch restaurant",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-26:lakefront": {
+      "title": "Chez Mamie Lise ➔ Pont des Amours & 안시 호수",
+      "origin": "Chez Mamie Lise, 11 Rue Grenette, 74000 Annecy",
+      "destination": "Pont des Amours, 74000 Annecy",
+      "travelMode": "walking",
+      "evidence": "Walk from old town to lakefront park and lovers bridge",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-27:first-grocery": {
+      "title": "78 Rue de Lourmel ➔ Monoprix Lourmel (첫 장보기)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Monoprix Lourmel, 126 Rue de Lourmel, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Short grocery walk in 15th arr. neighborhood",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-27:paris-return": {
+      "title": "78 Rue de Lourmel ➔ Le Relais du 15ème (첫 저녁)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Le Relais du 15ème, 59 Rue de Lourmel, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "3-minute walk to non-stop neighborhood bistro",
+      "verifiedAt": "2026-08-27"
     }
   },
   "nonMapStops": [
