@@ -92,10 +92,11 @@ class ExecutionUxBatch09Tests(unittest.TestCase):
         transfer_statuses = {s["type"] for s in stops["longchamp-transfer"]["executionStatuses"]}
         self.assertIn("check", transfer_statuses)
 
-        # Prix de l'Arc event ticket / book
+        # Prix de l'Arc confirmed booking from France Galop SOT
         arc_statuses = {s["type"] for s in stops["prix-de-l-arc"]["executionStatuses"]}
-        self.assertIn("book", arc_statuses)
-        self.assertNotIn("confirmed", arc_statuses)
+        self.assertIn("confirmed", arc_statuses)
+        self.assertNotIn("book", arc_statuses)
+        self.assertIn("check", arc_statuses)  # RACE TIME check
 
         # Breizh Café dinner check
         dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
@@ -151,15 +152,17 @@ class ExecutionUxBatch09Tests(unittest.TestCase):
         orsay_detail = stops["musee-d-orsay-cassatt"]["executionStatuses"][0]["detail"]
         self.assertIn("Entrée 1 - Quai", orsay_detail)
 
-        # Musée Picasso Paris is optional
+        # Musée Picasso Paris is optional with timed ticket requirement
         self.assertTrue(stops["musee-picasso"]["optional"])
         picasso_statuses = {s["type"] for s in stops["musee-picasso"]["executionStatuses"]}
         self.assertIn("optional", picasso_statuses)
+        self.assertIn("book", picasso_statuses)
+        self.assertNotIn("confirmed", picasso_statuses)
 
         # Musée Carnavalet is optional
         self.assertTrue(stops["musee-carnavalet"]["optional"])
         carnavalet_statuses = {s["type"] for s in stops["musee-carnavalet"]["executionStatuses"]}
-        self.assertIn("optional", carnaval_statuses if "carnaval_statuses" in locals() else carnaval_statuses if False else carnaval_statuses if False else None or {s["type"] for s in stops["musee-carnavalet"]["executionStatuses"]})
+        self.assertIn("optional", carnavalet_statuses)
 
         # Chez Janou dinner booking
         dinner_statuses = {s["type"] for s in stops["chez-janou-dinner"]["executionStatuses"]}

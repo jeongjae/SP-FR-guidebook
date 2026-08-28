@@ -53,17 +53,22 @@
       "category": "sight",
       "lat": 48.858,
       "lng": 2.234,
-      "summary": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 16:05 개선문상 메인 레이스(2,400m) 직관, 우승마 시상식 관람 (6.5시간)",
+      "summary": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 오후 메인 레이스(Prix de l'Arc de Triomphe 2,400m) 직관, 우승마 시상식 관람 (6.5시간)",
       "menu": "푸드빌리지 버거/샴페인, 프렌치 프라이",
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "book",
+          "type": "confirmed",
           "label": "TICKETED EVENT",
-          "detail": "Qatar Prix de l'Arc de Triomphe 10/4 일요일 본선 공식 티켓 소지 필수 · 16:05 메인 레이스 진행."
+          "detail": "Qatar Prix de l'Arc de Triomphe 공식 티켓 구매 완료 (France Galop 확정 티켓) · 모바일 QR 및 신분증 지참."
+        },
+        {
+          "type": "check",
+          "label": "RACE TIME",
+          "detail": "메인 레이스 출발 시각(통상 16:00~16:05경)은 2026 공식 race timetable 확정 발표 후 재확인."
         }
       ],
-      "executionNote": "Hippodrome de ParisLongchamp (2 Route des Tribunes, 75016 Paris). 스마트 캐주얼 복장, 모바일 티켓 및 신분증 지참.",
+      "executionNote": "Hippodrome de ParisLongchamp (2 Route des Tribunes, 75016 Paris). 스마트 캐주얼 복장, France Galop 확정 모바일 티켓 QR 및 신분증 지참.",
       "officialUrl": "https://www.francegalop-live.com/evenement/qatar-prix-de-larc-de-triomphe/",
       "optional": false,
       "place_ref": null

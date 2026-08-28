@@ -85,6 +85,11 @@
           "type": "optional",
           "label": "OPTIONAL",
           "detail": "피로 시 피카소 미술관 실내 관람을 생략하고 마레 골목 및 보주 광장 산책으로 전환."
+        },
+        {
+          "type": "book",
+          "label": "TIMED TICKET",
+          "detail": "방문 시 16:30 슬롯 온라인 시간지정 티켓 사전 예매 권장 (€16) · 화요일 10:30–18:00 개관 (월요일 휴관)."
         }
       ],
       "executionNote": "5 Rue de Thorigny, 75003 Paris (Hôtel Salé). 화요일 10:30–18:00 개관 (월요일 휴관).",
