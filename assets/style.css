@@ -1490,6 +1490,136 @@ td .meta a,
 .map-sheet figcaption h3 { margin: 0; }
 .map-sheet figcaption p { margin: 0; }
 
+/* ================= 여행 프랑스어 (Travel French) ================= */
+.phrase-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: var(--s4);
+  gap: var(--s1);
+  transition: box-shadow var(--dur-fast), border-color var(--dur-fast);
+}
+.phrase-card[hidden] {
+  display: none !important;
+}
+.phrase-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--sh-1);
+}
+.phrase-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2);
+  margin-bottom: var(--s1);
+}
+.phrase-fr {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+.phrase-ko {
+  font-size: var(--t-body);
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+.phrase-hint {
+  font-size: var(--t-small);
+  color: var(--text-2);
+  margin: 0;
+}
+.phrase-note {
+  font-size: var(--t-small);
+  color: var(--muted);
+  margin: var(--s1) 0 0;
+}
+.phrase-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2);
+  margin-top: var(--s2);
+  padding-top: var(--s2);
+  border-top: 1px dashed var(--line);
+}
+.phrase-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 var(--s3);
+  font-size: var(--t-label);
+  font-weight: 700;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--primary);
+  cursor: pointer;
+  transition: all var(--dur-fast);
+}
+.phrase-btn:hover {
+  background: var(--primary-soft);
+  color: var(--primary-ink);
+  border-color: var(--primary);
+}
+.phrase-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.phrase-btn[aria-pressed="true"] {
+  background: var(--ochre-soft);
+  color: var(--sig-caution-ink);
+  border-color: var(--accent);
+}
+.phrase-btn.copied {
+  background: #E4F0EA;
+  color: var(--sig-ok-ink);
+  border-color: var(--sig-ok);
+}
+.phrase-btn .ic {
+  width: 16px;
+  height: 16px;
+}
+
+/* Quick French Block (Day & Place 페이지 내 삽입) */
+.quick-french-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--s4);
+  display: grid;
+  gap: var(--s3);
+}
+.quick-french-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2);
+}
+.quick-french-title {
+  font-size: var(--t-h3);
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+/* 발음 규칙 표 */
+.rule-table td strong { color: var(--primary); }
+.rule-table td span.sound { color: var(--sig-caution-ink); font-weight: 700; }
+.rule-table td span.ex { color: var(--text-2); }
+
+
 /* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */
 .ic-today::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228.2%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223.2%22%20fill%3D%22currentColor%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
 .ic-list::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%206.5h16M4%2012h16M4%2017.5h16%22%2F%3E%3C%2Fsvg%3E"); }
@@ -1526,6 +1656,10 @@ td .meta a,
 .ic-ticket::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3.6%207.6h16.8v2.6a1.9%201.9%200%200%200%200%203.6v2.6H3.6v-2.6a1.9%201.9%200%200%200%200-3.6z%22%2F%3E%3Cpath%20d%3D%22M13.4%207.6v1.6M13.4%2011.2v1.6M13.4%2014.8v1.6%22%2F%3E%3C%2Fsvg%3E"); }
 .ic-music::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9.4%2017.4V6.1l9.2-2v11.3%22%2F%3E%3Cellipse%20cx%3D%226.8%22%20cy%3D%2217.6%22%20rx%3D%222.6%22%20ry%3D%222.2%22%2F%3E%3Cellipse%20cx%3D%2216%22%20cy%3D%2215.4%22%20rx%3D%222.6%22%20ry%3D%222.2%22%2F%3E%3C%2Fsvg%3E"); }
 .ic-filter::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3.8%205.6h16.4l-6.4%207.4v5.6l-3.6%201.8v-7.4z%22%2F%3E%3C%2Fsvg%3E"); }
+.ic-sound::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolygon%20points%3D%2211%205%206%209%202%209%202%2015%206%2015%2011%2019%2011%205%22%2F%3E%3Cpath%20d%3D%22M15.5%208.5a5%205%200%200%201%200%207%22%2F%3E%3Cpath%20d%3D%22M19%205a9.5%209.5%200%200%201%200%2014%22%2F%3E%3C%2Fsvg%3E"); }
+.ic-copy::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%229%22%20y%3D%229%22%20width%3D%2211%22%20height%3D%2211%22%20rx%3D%222%22%2F%3E%3Cpath%20d%3D%22M5%2015H4a2%202%200%200%201-2-2V4a2%202%200%200%201%202-2h9a2%202%200%200%201%202%202v1%22%2F%3E%3C%2Fsvg%3E"); }
+.ic-star::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolygon%20points%3D%2212%202%2015.09%208.26%2022%209.27%2017%2014.14%2018.18%2021.02%2012%2017.77%205.82%2021.02%207%2014.14%202%209.27%208.91%208.26%2012%202%22%2F%3E%3C%2Fsvg%3E"); }
+.ic-chat::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M21%2015a2%202%200%200%201-2%202H7l-4%204V5a2%202%200%200%201%202-2h14a2%202%200%200%201%202%202z%22%2F%3E%3C%2Fsvg%3E"); }
 .grade-essential::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%202.6%2021.4%2012%2012%2021.4%202.6%2012Z%22%20fill%3D%22currentColor%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
 .grade-priority::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%227.6%22%20fill%3D%22currentColor%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
 .grade-optional::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%227%22%20stroke-width%3D%222.4%22%2F%3E%3C%2Fsvg%3E"); }

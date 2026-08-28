@@ -1,12 +1,12 @@
 /* 2026 유럽 여행 가이드북 Service Worker — build.py가 버전을 삽입한다. */
 "use strict";
 
-const VERSION = "a7c149a458fa4df2385bdb2e322834337c4c354430a19d38bf5f7ea9027e9b67";
+const VERSION = "d780e7681195439948d48fe8a5a7d58ac9cd8e002aac417bf2bc694008df12ad";
 const CACHE_PREFIX = "sp-fr-guidebook-";
 const CORE_CACHE = CACHE_PREFIX + "core-" + VERSION;
 const FULL_CACHE = CACHE_PREFIX + "full-" + VERSION;
 const RUNTIME_CACHE = CACHE_PREFIX + "runtime-" + VERSION;
-const CORE_PATHS = ["index.html", "offline.html", "offline-fallback.html", "schedule.html", "guide/index.html", "map/index.html", "prepare/index.html", "prepare/emergency.html", "assets/style.css", "assets/app.js", "assets/search-index.js"];
+const CORE_PATHS = ["index.html", "offline.html", "offline-fallback.html", "schedule.html", "guide/index.html", "map/index.html", "prepare/index.html", "prepare/emergency.html", "prepare/french.html", "assets/style.css", "assets/app.js", "assets/search-index.js"];
 const SCOPE = new URL("./", self.registration.scope);
 const COMPLETE_URL = new URL("__pwa_complete__", SCOPE).href;
 let downloadTask = null;

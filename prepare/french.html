@@ -1,0 +1,2709 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000091">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>여행 프랑스어 — 유럽 43일 가이드북</title>
+<meta name="description" content="현장에서 즉시 쓰는 120개 필수 프랑스어 문구와 10분 발음·표지판 사전">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../prepare/index.html">준비</a><span class="sep" aria-hidden="true">›</span><b>여행 프랑스어</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <h1>여행 프랑스어 (Travel French)</h1>
+  <p class="hero-dek">현장에서 즉시 쓰는 120개 필수 회화 문구와 10분 발음·표지판 사전입니다. 발음 듣기(TTS)와 복사, 즐겨찾기를 지원합니다.</p>
+</header>
+
+<div class="card" style="background:var(--surface-2);border:1px solid var(--line-strong)"><div class="card-body stack">
+  <div class="search-box" style="position:relative">
+    <input type="search" id="french-search" class="form-control" style="width:100%;min-height:44px;padding:var(--s2) var(--s4);border:1px solid var(--line-strong);border-radius:var(--r-full);background:var(--surface);font-size:var(--t-body)" placeholder="프랑스어 / 한국어 / 발음 / 태그 검색 (예: 계산, 주차, addition, merci)..." aria-label="프랑스어 문구 검색">
+  </div>
+  <div class="chips" id="french-filter-chips" role="toolbar" aria-label="프랑스어 카테고리 필터">
+    <button type="button" class="chip" data-category="all" aria-pressed="true">전체 (120)</button>
+    <button type="button" class="chip" data-category="fav" aria-pressed="false">⭐ 즐겨찾기</button>
+    <button type="button" class="chip" data-category="essential" aria-pressed="false">기본 20선 (P0)</button>
+    <button type="button" class="chip" data-category="restaurant" aria-pressed="false">식당·카페</button>
+    <button type="button" class="chip" data-category="market" aria-pressed="false">빵집·시장</button>
+    <button type="button" class="chip" data-category="hotel" aria-pressed="false">숙소</button>
+    <button type="button" class="chip" data-category="transport" aria-pressed="false">기차·교통</button>
+    <button type="button" class="chip" data-category="driving" aria-pressed="false">렌터카·주차</button>
+    <button type="button" class="chip" data-category="sightseeing" aria-pressed="false">관광·미술관</button>
+    <button type="button" class="chip" data-category="shopping" aria-pressed="false">쇼핑</button>
+    <button type="button" class="chip" data-category="emergency" aria-pressed="false">긴급상황</button>
+  </div>
+</div></div>
+
+<section id="french-phrases-section">
+  <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PHRASES</span><h2 class="sec-title" id="french-list-title">상황별 회화 (120문구)</h2></div></div>
+  <div id="french-no-results" class="alert-card alert-card-caution" style="display:none">
+    <b class="ic ic-only ic-alert" aria-hidden="true"></b> <span>검색 결과가 없습니다.</span>
+    <button type="button" class="btn btn-quiet" id="french-reset-btn" style="margin-inline-start:var(--s2)">전체 보기</button>
+  </div>
+  <div class="grid grid-2" id="french-phrase-grid">
+    <article class="phrase-card" data-phrase-id="fr_essential_001" data-category="essential" data-priority="P0" data-search="bonjour. 안녕하세요. 봉주르 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Bonjour.</p>
+  <p class="phrase-ko">안녕하세요.</p>
+  <p class="phrase-hint">봉주르</p>
+  <p class="phrase-note">가게·식당·호텔에 들어갈 때 먼저 인사한다.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Bonjour." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Bonjour." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_002" data-category="essential" data-priority="P0" data-search="bonsoir. 안녕하세요 / 좋은 저녁입니다. 봉수아르 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Bonsoir.</p>
+  <p class="phrase-ko">안녕하세요 / 좋은 저녁입니다.</p>
+  <p class="phrase-hint">봉수아르</p>
+  <p class="phrase-note">저녁 시간대 인사.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Bonsoir." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Bonsoir." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_003" data-category="essential" data-priority="P0" data-search="merci. 감사합니다. 메르시 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Merci.</p>
+  <p class="phrase-ko">감사합니다.</p>
+  <p class="phrase-hint">메르시</p>
+  <p class="phrase-note">가장 기본적인 감사 표현.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Merci." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Merci." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_004" data-category="essential" data-priority="P0" data-search="merci beaucoup. 대단히 감사합니다. 메르시 보쿠 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Merci beaucoup.</p>
+  <p class="phrase-ko">대단히 감사합니다.</p>
+  <p class="phrase-hint">메르시 보쿠</p>
+  <p class="phrase-note">조금 더 정중한 감사.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Merci beaucoup." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Merci beaucoup." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_005" data-category="essential" data-priority="P0" data-search="s&#x27;il vous plaît. 부탁합니다 / 주세요. 실 부 플레 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">S&#x27;il vous plaît.</p>
+  <p class="phrase-ko">부탁합니다 / 주세요.</p>
+  <p class="phrase-hint">실 부 플레</p>
+  <p class="phrase-note">요청문 뒤에 붙이면 정중해진다.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="S&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="S&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_006" data-category="essential" data-priority="P0" data-search="excusez-moi. 실례합니다. 엑스퀴제 무아 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Excusez-moi.</p>
+  <p class="phrase-ko">실례합니다.</p>
+  <p class="phrase-hint">엑스퀴제 무아</p>
+  <p class="phrase-note">말을 걸거나 길을 물을 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Excusez-moi." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Excusez-moi." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_007" data-category="essential" data-priority="P0" data-search="pardon. 죄송합니다 / 지나갈게요. 파르동 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Pardon.</p>
+  <p class="phrase-ko">죄송합니다 / 지나갈게요.</p>
+  <p class="phrase-hint">파르동</p>
+  <p class="phrase-note">가볍게 부딪히거나 지나갈 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Pardon." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Pardon." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_008" data-category="essential" data-priority="P0" data-search="oui. 네. 위 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Oui.</p>
+  <p class="phrase-ko">네.</p>
+  <p class="phrase-hint">위</p>
+  <p class="phrase-note">긍정.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Oui." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Oui." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_009" data-category="essential" data-priority="P0" data-search="non. 아니요. 농 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Non.</p>
+  <p class="phrase-ko">아니요.</p>
+  <p class="phrase-hint">농</p>
+  <p class="phrase-note">부정.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Non." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Non." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_010" data-category="essential" data-priority="P0" data-search="d&#x27;accord. 알겠습니다 / 좋아요. 다코르 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">D&#x27;accord.</p>
+  <p class="phrase-ko">알겠습니다 / 좋아요.</p>
+  <p class="phrase-hint">다코르</p>
+  <p class="phrase-note">동의·확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="D&#x27;accord." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="D&#x27;accord." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_011" data-category="essential" data-priority="P0" data-search="je ne comprends pas. 이해하지 못했습니다. 주 느 콩프랑 파 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je ne comprends pas.</p>
+  <p class="phrase-ko">이해하지 못했습니다.</p>
+  <p class="phrase-hint">주 느 콩프랑 파</p>
+  <p class="phrase-note">상대의 말을 이해하지 못했을 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je ne comprends pas." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je ne comprends pas." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_011" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_012" data-category="essential" data-priority="P0" data-search="je ne parle pas bien français. 프랑스어를 잘 못합니다. 주 느 파를 파 비앙 프랑세 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je ne parle pas bien français.</p>
+  <p class="phrase-ko">프랑스어를 잘 못합니다.</p>
+  <p class="phrase-hint">주 느 파를 파 비앙 프랑세</p>
+  <p class="phrase-note">필요하면 바로 영어 사용 여부를 묻는다.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je ne parle pas bien français." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je ne parle pas bien français." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_012" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_013" data-category="essential" data-priority="P0" data-search="parlez-vous anglais ? 영어 하십니까? 파를레 부 앙글레 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Parlez-vous anglais ?</p>
+  <p class="phrase-ko">영어 하십니까?</p>
+  <p class="phrase-hint">파를레 부 앙글레</p>
+  <p class="phrase-note">정중한 영어 가능 여부 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Parlez-vous anglais ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Parlez-vous anglais ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_013" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_014" data-category="essential" data-priority="P0" data-search="plus lentement, s&#x27;il vous plaît. 좀 천천히 말씀해 주세요. 플뤼 랑트망 실 부 플레 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Plus lentement, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">좀 천천히 말씀해 주세요.</p>
+  <p class="phrase-hint">플뤼 랑트망 실 부 플레</p>
+  <p class="phrase-note">상대가 너무 빨리 말할 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Plus lentement, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Plus lentement, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_014" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_015" data-category="essential" data-priority="P0" data-search="pouvez-vous répéter ? 다시 말씀해 주시겠어요? 푸베 부 레페테 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Pouvez-vous répéter ?</p>
+  <p class="phrase-ko">다시 말씀해 주시겠어요?</p>
+  <p class="phrase-hint">푸베 부 레페테</p>
+  <p class="phrase-note">재확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Pouvez-vous répéter ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Pouvez-vous répéter ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_015" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_016" data-category="essential" data-priority="P0" data-search="comment dit-on … en français ? …를 프랑스어로 뭐라고 하나요? 코망 디통 … 앙 프랑세 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Comment dit-on … en français ?</p>
+  <p class="phrase-ko">…를 프랑스어로 뭐라고 하나요?</p>
+  <p class="phrase-hint">코망 디통 … 앙 프랑세</p>
+  <p class="phrase-note">단어를 물을 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Comment dit-on … en français ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Comment dit-on … en français ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_016" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_017" data-category="essential" data-priority="P0" data-search="qu&#x27;est-ce que ça veut dire ? 이게 무슨 뜻인가요? 케스 크 사 뵈 디르 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Qu&#x27;est-ce que ça veut dire ?</p>
+  <p class="phrase-ko">이게 무슨 뜻인가요?</p>
+  <p class="phrase-hint">케스 크 사 뵈 디르</p>
+  <p class="phrase-note">표지·메뉴 뜻을 물을 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Qu&#x27;est-ce que ça veut dire ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Qu&#x27;est-ce que ça veut dire ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_017" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_018" data-category="essential" data-priority="P0" data-search="où sont les toilettes ? 화장실은 어디입니까? 우 송 레 투알레트 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où sont les toilettes ?</p>
+  <p class="phrase-ko">화장실은 어디입니까?</p>
+  <p class="phrase-hint">우 송 레 투알레트</p>
+  <p class="phrase-note">범용.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où sont les toilettes ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où sont les toilettes ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_018" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_019" data-category="essential" data-priority="P0" data-search="c&#x27;est loin ? 먼가요? 세 루앵 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;est loin ?</p>
+  <p class="phrase-ko">먼가요?</p>
+  <p class="phrase-hint">세 루앵</p>
+  <p class="phrase-note">거리 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est loin ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est loin ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_019" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_essential_020" data-category="essential" data-priority="P0" data-search="merci, au revoir. 감사합니다. 안녕히 계세요. 메르시 오르부아르 essential">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기본표현</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Merci, au revoir.</p>
+  <p class="phrase-ko">감사합니다. 안녕히 계세요.</p>
+  <p class="phrase-hint">메르시 오르부아르</p>
+  <p class="phrase-note">가게·식당을 나갈 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Merci, au revoir." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Merci, au revoir." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_essential_020" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_001" data-category="restaurant" data-priority="P0" data-search="une table pour deux, s&#x27;il vous plaît. 두 명 자리 부탁합니다. 윈 타블 푸르 되 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Une table pour deux, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">두 명 자리 부탁합니다.</p>
+  <p class="phrase-hint">윈 타블 푸르 되 실 부 플레</p>
+  <p class="phrase-note">식당 입장.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Une table pour deux, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Une table pour deux, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_002" data-category="restaurant" data-priority="P0" data-search="nous avons une réservation. 예약했습니다. 누 자봉 윈 레제르바시옹 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Nous avons une réservation.</p>
+  <p class="phrase-ko">예약했습니다.</p>
+  <p class="phrase-hint">누 자봉 윈 레제르바시옹</p>
+  <p class="phrase-note">예약 식당.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Nous avons une réservation." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Nous avons une réservation." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_003" data-category="restaurant" data-priority="P0" data-search="au nom de kim. kim 이름으로 했습니다. 오 농 드 김 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Au nom de Kim.</p>
+  <p class="phrase-ko">Kim 이름으로 했습니다.</p>
+  <p class="phrase-hint">오 농 드 김</p>
+  <p class="phrase-note">예약자 이름을 말할 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Au nom de Kim." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Au nom de Kim." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_004" data-category="restaurant" data-priority="P0" data-search="en terrasse, si possible. 가능하면 테라스로 부탁합니다. 앙 테라스 시 포시블 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">En terrasse, si possible.</p>
+  <p class="phrase-ko">가능하면 테라스로 부탁합니다.</p>
+  <p class="phrase-hint">앙 테라스 시 포시블</p>
+  <p class="phrase-note">좌석 요청.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="En terrasse, si possible." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="En terrasse, si possible." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_005" data-category="restaurant" data-priority="P0" data-search="à l&#x27;intérieur, s&#x27;il vous plaît. 실내로 부탁합니다. 아 랭테리외르 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">À l&#x27;intérieur, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">실내로 부탁합니다.</p>
+  <p class="phrase-hint">아 랭테리외르 실 부 플레</p>
+  <p class="phrase-note">좌석 요청.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À l&#x27;intérieur, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À l&#x27;intérieur, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_006" data-category="restaurant" data-priority="P0" data-search="la carte, s&#x27;il vous plaît. 메뉴 부탁합니다. 라 카르트 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">La carte, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">메뉴 부탁합니다.</p>
+  <p class="phrase-hint">라 카르트 실 부 플레</p>
+  <p class="phrase-note">메뉴 요청.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="La carte, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="La carte, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_007" data-category="restaurant" data-priority="P0" data-search="qu&#x27;est-ce que vous recommandez ? 무엇을 추천하시나요? 케스 크 부 르코망데 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Qu&#x27;est-ce que vous recommandez ?</p>
+  <p class="phrase-ko">무엇을 추천하시나요?</p>
+  <p class="phrase-hint">케스 크 부 르코망데</p>
+  <p class="phrase-note">추천 메뉴 문의.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Qu&#x27;est-ce que vous recommandez ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Qu&#x27;est-ce que vous recommandez ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_008" data-category="restaurant" data-priority="P0" data-search="je voudrais ceci. 이것을 주세요. 주 부드레 스시 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je voudrais ceci.</p>
+  <p class="phrase-ko">이것을 주세요.</p>
+  <p class="phrase-hint">주 부드레 스시</p>
+  <p class="phrase-note">메뉴를 가리키며 사용.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je voudrais ceci." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je voudrais ceci." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_009" data-category="restaurant" data-priority="P0" data-search="pour moi, le poisson. 저는 생선으로 하겠습니다. 푸르 무아 르 푸아송 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Pour moi, le poisson.</p>
+  <p class="phrase-ko">저는 생선으로 하겠습니다.</p>
+  <p class="phrase-hint">푸르 무아 르 푸아송</p>
+  <p class="phrase-note">주문.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Pour moi, le poisson." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Pour moi, le poisson." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_010" data-category="restaurant" data-priority="P0" data-search="pour moi, la viande. 저는 고기로 하겠습니다. 푸르 무아 라 비앙드 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Pour moi, la viande.</p>
+  <p class="phrase-ko">저는 고기로 하겠습니다.</p>
+  <p class="phrase-hint">푸르 무아 라 비앙드</p>
+  <p class="phrase-note">주문.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Pour moi, la viande." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Pour moi, la viande." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_011" data-category="restaurant" data-priority="P0" data-search="sans viande, s&#x27;il vous plaît. 고기 없이 부탁합니다. 상 비앙드 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Sans viande, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">고기 없이 부탁합니다.</p>
+  <p class="phrase-hint">상 비앙드 실 부 플레</p>
+  <p class="phrase-note">식이 요청.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Sans viande, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Sans viande, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_011" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_012" data-category="restaurant" data-priority="P0" data-search="sans alcool, s&#x27;il vous plaît. 술 없이 부탁합니다. 상 잘콜 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Sans alcool, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">술 없이 부탁합니다.</p>
+  <p class="phrase-hint">상 잘콜 실 부 플레</p>
+  <p class="phrase-note">음료·요리 요청.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Sans alcool, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Sans alcool, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_012" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_013" data-category="restaurant" data-priority="P0" data-search="une carafe d&#x27;eau, s&#x27;il vous plaît. 수돗물 한 병 부탁합니다. 윈 카라프 도 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Une carafe d&#x27;eau, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">수돗물 한 병 부탁합니다.</p>
+  <p class="phrase-hint">윈 카라프 도 실 부 플레</p>
+  <p class="phrase-note">프랑스 식당에서 무료 수돗물 요청.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Une carafe d&#x27;eau, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Une carafe d&#x27;eau, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_013" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_014" data-category="restaurant" data-priority="P0" data-search="une bouteille d&#x27;eau plate, s&#x27;il vous plaît. 탄산 없는 생수 한 병 부탁합니다. 윈 부테이 도 플라트 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Une bouteille d&#x27;eau plate, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">탄산 없는 생수 한 병 부탁합니다.</p>
+  <p class="phrase-hint">윈 부테이 도 플라트 실 부 플레</p>
+  <p class="phrase-note">생수 주문.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Une bouteille d&#x27;eau plate, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Une bouteille d&#x27;eau plate, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_014" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_015" data-category="restaurant" data-priority="P0" data-search="un verre de vin rouge, s&#x27;il vous plaît. 레드와인 한 잔 부탁합니다. 앙 베르 드 뱅 루주 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Un verre de vin rouge, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">레드와인 한 잔 부탁합니다.</p>
+  <p class="phrase-hint">앙 베르 드 뱅 루주 실 부 플레</p>
+  <p class="phrase-note">와인 주문.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Un verre de vin rouge, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Un verre de vin rouge, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_015" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_016" data-category="restaurant" data-priority="P0" data-search="un verre de vin blanc, s&#x27;il vous plaît. 화이트와인 한 잔 부탁합니다. 앙 베르 드 뱅 블랑 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Un verre de vin blanc, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">화이트와인 한 잔 부탁합니다.</p>
+  <p class="phrase-hint">앙 베르 드 뱅 블랑 실 부 플레</p>
+  <p class="phrase-note">와인 주문.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Un verre de vin blanc, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Un verre de vin blanc, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_016" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_017" data-category="restaurant" data-priority="P0" data-search="deux cafés, s&#x27;il vous plaît. 커피 두 잔 부탁합니다. 되 카페 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Deux cafés, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">커피 두 잔 부탁합니다.</p>
+  <p class="phrase-hint">되 카페 실 부 플레</p>
+  <p class="phrase-note">식후 커피.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Deux cafés, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Deux cafés, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_017" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_018" data-category="restaurant" data-priority="P0" data-search="l&#x27;addition, s&#x27;il vous plaît. 계산서 부탁합니다. 라디시옹 실 부 플레 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">L&#x27;addition, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">계산서 부탁합니다.</p>
+  <p class="phrase-hint">라디시옹 실 부 플레</p>
+  <p class="phrase-note">식사 후 계산.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="L&#x27;addition, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="L&#x27;addition, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_018" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_019" data-category="restaurant" data-priority="P0" data-search="je peux payer par carte ? 카드로 결제할 수 있나요? 주 푀 페이에 파르 카르트 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je peux payer par carte ?</p>
+  <p class="phrase-ko">카드로 결제할 수 있나요?</p>
+  <p class="phrase-hint">주 푀 페이에 파르 카르트</p>
+  <p class="phrase-note">결제.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je peux payer par carte ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je peux payer par carte ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_019" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_restaurant_020" data-category="restaurant" data-priority="P0" data-search="c&#x27;était très bon, merci. 아주 맛있었습니다. 감사합니다. 세테 트레 봉 메르시 restaurant">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">식당·카페</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;était très bon, merci.</p>
+  <p class="phrase-ko">아주 맛있었습니다. 감사합니다.</p>
+  <p class="phrase-hint">세테 트레 봉 메르시</p>
+  <p class="phrase-note">식사 후.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;était très bon, merci." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;était très bon, merci." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_restaurant_020" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_001" data-category="market" data-priority="P0" data-search="une baguette, s&#x27;il vous plaît. 바게트 하나 주세요. 윈 바게트 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Une baguette, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">바게트 하나 주세요.</p>
+  <p class="phrase-hint">윈 바게트 실 부 플레</p>
+  <p class="phrase-note">빵집.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Une baguette, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Une baguette, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_002" data-category="market" data-priority="P0" data-search="deux croissants, s&#x27;il vous plaît. 크루아상 두 개 주세요. 되 크루아상 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Deux croissants, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">크루아상 두 개 주세요.</p>
+  <p class="phrase-hint">되 크루아상 실 부 플레</p>
+  <p class="phrase-note">빵집.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Deux croissants, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Deux croissants, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_003" data-category="market" data-priority="P0" data-search="je voudrais 200 grammes de fromage. 치즈 200g 주세요. 주 부드레 되 상 그람 드 프로마주 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je voudrais 200 grammes de fromage.</p>
+  <p class="phrase-ko">치즈 200g 주세요.</p>
+  <p class="phrase-hint">주 부드레 되 상 그람 드 프로마주</p>
+  <p class="phrase-note">치즈가게·시장.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je voudrais 200 grammes de fromage." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je voudrais 200 grammes de fromage." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_004" data-category="market" data-priority="P0" data-search="je voudrais 100 grammes de jambon. 햄 100g 주세요. 주 부드레 상 그람 드 잠봉 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je voudrais 100 grammes de jambon.</p>
+  <p class="phrase-ko">햄 100g 주세요.</p>
+  <p class="phrase-hint">주 부드레 상 그람 드 잠봉</p>
+  <p class="phrase-note">시장·샤퀴테리.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je voudrais 100 grammes de jambon." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je voudrais 100 grammes de jambon." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_005" data-category="market" data-priority="P0" data-search="celui-ci, s&#x27;il vous plaît. 이것 주세요. 슬뤼 시 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Celui-ci, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">이것 주세요.</p>
+  <p class="phrase-hint">슬뤼 시 실 부 플레</p>
+  <p class="phrase-note">가리키며 주문.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Celui-ci, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Celui-ci, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_006" data-category="market" data-priority="P0" data-search="celle-ci, s&#x27;il vous plaît. 이것 주세요. 셀 시 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Celle-ci, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">이것 주세요.</p>
+  <p class="phrase-hint">셀 시 실 부 플레</p>
+  <p class="phrase-note">여성명사를 가리킬 때.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Celle-ci, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Celle-ci, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_007" data-category="market" data-priority="P0" data-search="un peu plus, s&#x27;il vous plaît. 조금 더 주세요. 앙 푀 플뤼 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Un peu plus, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">조금 더 주세요.</p>
+  <p class="phrase-hint">앙 푀 플뤼 실 부 플레</p>
+  <p class="phrase-note">무게 조절.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Un peu plus, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Un peu plus, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_008" data-category="market" data-priority="P0" data-search="un peu moins, s&#x27;il vous plaît. 조금 덜 주세요. 앙 푀 무앵 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Un peu moins, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">조금 덜 주세요.</p>
+  <p class="phrase-hint">앙 푀 무앵 실 부 플레</p>
+  <p class="phrase-note">무게 조절.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Un peu moins, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Un peu moins, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_009" data-category="market" data-priority="P0" data-search="c&#x27;est tout, merci. 이것이 전부입니다. 세 투 메르시 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;est tout, merci.</p>
+  <p class="phrase-ko">이것이 전부입니다.</p>
+  <p class="phrase-hint">세 투 메르시</p>
+  <p class="phrase-note">주문 마무리.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est tout, merci." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est tout, merci." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_010" data-category="market" data-priority="P0" data-search="vous avez du fromage de chèvre ? 염소치즈 있나요? 부 자베 뒤 프로마주 드 셰브르 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Vous avez du fromage de chèvre ?</p>
+  <p class="phrase-ko">염소치즈 있나요?</p>
+  <p class="phrase-hint">부 자베 뒤 프로마주 드 셰브르</p>
+  <p class="phrase-note">시장·치즈가게.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Vous avez du fromage de chèvre ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Vous avez du fromage de chèvre ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_011" data-category="market" data-priority="P0" data-search="je peux goûter ? 맛봐도 될까요? 주 푀 구테 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je peux goûter ?</p>
+  <p class="phrase-ko">맛봐도 될까요?</p>
+  <p class="phrase-hint">주 푀 구테</p>
+  <p class="phrase-note">시식 가능 여부.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je peux goûter ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je peux goûter ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_011" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_012" data-category="market" data-priority="P0" data-search="c&#x27;est combien ? 얼마인가요? 세 콩비앙 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;est combien ?</p>
+  <p class="phrase-ko">얼마인가요?</p>
+  <p class="phrase-hint">세 콩비앙</p>
+  <p class="phrase-note">가격 문의.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est combien ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est combien ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_012" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_013" data-category="market" data-priority="P0" data-search="à emporter, s&#x27;il vous plaît. 포장해 주세요. 아 앙포르테 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">À emporter, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">포장해 주세요.</p>
+  <p class="phrase-hint">아 앙포르테 실 부 플레</p>
+  <p class="phrase-note">빵집·카페.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À emporter, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À emporter, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_013" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_014" data-category="market" data-priority="P0" data-search="sur place, s&#x27;il vous plaît. 여기서 먹겠습니다. 쉬르 플라스 실 부 플레 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Sur place, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">여기서 먹겠습니다.</p>
+  <p class="phrase-hint">쉬르 플라스 실 부 플레</p>
+  <p class="phrase-note">카페·베이커리.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Sur place, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Sur place, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_014" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_market_015" data-category="market" data-priority="P0" data-search="vous prenez la carte ? 카드 받나요? 부 프르네 라 카르트 market">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">빵집·시장</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Vous prenez la carte ?</p>
+  <p class="phrase-ko">카드 받나요?</p>
+  <p class="phrase-hint">부 프르네 라 카르트</p>
+  <p class="phrase-note">시장·소규모 상점.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Vous prenez la carte ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Vous prenez la carte ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_market_015" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_001" data-category="hotel" data-priority="P1" data-search="j&#x27;ai une réservation. 예약했습니다. 제 윈 레제르바시옹 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">J&#x27;ai une réservation.</p>
+  <p class="phrase-ko">예약했습니다.</p>
+  <p class="phrase-hint">제 윈 레제르바시옹</p>
+  <p class="phrase-note">호텔·숙소.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="J&#x27;ai une réservation." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="J&#x27;ai une réservation." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_002" data-category="hotel" data-priority="P1" data-search="au nom de kim. kim 이름입니다. 오 농 드 김 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">Au nom de Kim.</p>
+  <p class="phrase-ko">Kim 이름입니다.</p>
+  <p class="phrase-hint">오 농 드 김</p>
+  <p class="phrase-note">예약 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Au nom de Kim." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Au nom de Kim." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_003" data-category="hotel" data-priority="P1" data-search="à quelle heure est le check-in ? 체크인은 몇 시입니까? 아 켈 외르 에 르 체크인 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">À quelle heure est le check-in ?</p>
+  <p class="phrase-ko">체크인은 몇 시입니까?</p>
+  <p class="phrase-hint">아 켈 외르 에 르 체크인</p>
+  <p class="phrase-note">숙소.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À quelle heure est le check-in ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À quelle heure est le check-in ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_004" data-category="hotel" data-priority="P1" data-search="à quelle heure doit-on partir ? 몇 시까지 체크아웃해야 합니까? 아 켈 외르 두아통 파르티르 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">À quelle heure doit-on partir ?</p>
+  <p class="phrase-ko">몇 시까지 체크아웃해야 합니까?</p>
+  <p class="phrase-hint">아 켈 외르 두아통 파르티르</p>
+  <p class="phrase-note">숙소.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À quelle heure doit-on partir ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À quelle heure doit-on partir ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_005" data-category="hotel" data-priority="P1" data-search="où est l&#x27;ascenseur ? 엘리베이터는 어디입니까? 우 에 라상쇠르 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">Où est l&#x27;ascenseur ?</p>
+  <p class="phrase-ko">엘리베이터는 어디입니까?</p>
+  <p class="phrase-hint">우 에 라상쇠르</p>
+  <p class="phrase-note">숙소.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est l&#x27;ascenseur ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est l&#x27;ascenseur ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_006" data-category="hotel" data-priority="P1" data-search="le wi-fi ne marche pas. wi-fi가 작동하지 않습니다. 르 위피 느 마르슈 파 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">Le Wi-Fi ne marche pas.</p>
+  <p class="phrase-ko">Wi-Fi가 작동하지 않습니다.</p>
+  <p class="phrase-hint">르 위피 느 마르슈 파</p>
+  <p class="phrase-note">숙소 문제.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Le Wi-Fi ne marche pas." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Le Wi-Fi ne marche pas." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_007" data-category="hotel" data-priority="P1" data-search="il n&#x27;y a pas d&#x27;eau chaude. 뜨거운 물이 나오지 않습니다. 일 니 아 파 도 쇼드 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">Il n&#x27;y a pas d&#x27;eau chaude.</p>
+  <p class="phrase-ko">뜨거운 물이 나오지 않습니다.</p>
+  <p class="phrase-hint">일 니 아 파 도 쇼드</p>
+  <p class="phrase-note">숙소 문제.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Il n&#x27;y a pas d&#x27;eau chaude." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Il n&#x27;y a pas d&#x27;eau chaude." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_008" data-category="hotel" data-priority="P1" data-search="la climatisation ne marche pas. 에어컨이 작동하지 않습니다. 라 클리마티자시옹 느 마르슈 파 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">La climatisation ne marche pas.</p>
+  <p class="phrase-ko">에어컨이 작동하지 않습니다.</p>
+  <p class="phrase-hint">라 클리마티자시옹 느 마르슈 파</p>
+  <p class="phrase-note">숙소 문제.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="La climatisation ne marche pas." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="La climatisation ne marche pas." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_009" data-category="hotel" data-priority="P1" data-search="pouvez-vous nous aider ? 도와주시겠습니까? 푸베 부 누 제데 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">Pouvez-vous nous aider ?</p>
+  <p class="phrase-ko">도와주시겠습니까?</p>
+  <p class="phrase-hint">푸베 부 누 제데</p>
+  <p class="phrase-note">숙소 문제.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Pouvez-vous nous aider ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Pouvez-vous nous aider ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_hotel_010" data-category="hotel" data-priority="P1" data-search="pouvons-nous laisser nos bagages ici ? 짐을 여기에 맡길 수 있을까요? 푸봉 누 레세 노 바가주 이시 hotel">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">숙소</span> </div>
+  </div>
+  <p class="phrase-fr">Pouvons-nous laisser nos bagages ici ?</p>
+  <p class="phrase-ko">짐을 여기에 맡길 수 있을까요?</p>
+  <p class="phrase-hint">푸봉 누 레세 노 바가주 이시</p>
+  <p class="phrase-note">체크인 전·체크아웃 후.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Pouvons-nous laisser nos bagages ici ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Pouvons-nous laisser nos bagages ici ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_hotel_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_001" data-category="transport" data-priority="P0" data-search="où est la gare ? 역은 어디입니까? 우 에 라 가르 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la gare ?</p>
+  <p class="phrase-ko">역은 어디입니까?</p>
+  <p class="phrase-hint">우 에 라 가르</p>
+  <p class="phrase-note">기차.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la gare ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la gare ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_002" data-category="transport" data-priority="P0" data-search="où est la station de métro ? 지하철역은 어디입니까? 우 에 라 스타시옹 드 메트로 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la station de métro ?</p>
+  <p class="phrase-ko">지하철역은 어디입니까?</p>
+  <p class="phrase-hint">우 에 라 스타시옹 드 메트로</p>
+  <p class="phrase-note">도시교통.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la station de métro ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la station de métro ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_003" data-category="transport" data-priority="P0" data-search="un billet pour lyon, s&#x27;il vous plaît. 리옹행 표 한 장 주세요. 앙 비예 푸르 리옹 실 부 플레 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Un billet pour Lyon, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">리옹행 표 한 장 주세요.</p>
+  <p class="phrase-hint">앙 비예 푸르 리옹 실 부 플레</p>
+  <p class="phrase-note">매표.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Un billet pour Lyon, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Un billet pour Lyon, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_004" data-category="transport" data-priority="P0" data-search="deux billets, s&#x27;il vous plaît. 표 두 장 주세요. 되 비예 실 부 플레 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Deux billets, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">표 두 장 주세요.</p>
+  <p class="phrase-hint">되 비예 실 부 플레</p>
+  <p class="phrase-note">매표.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Deux billets, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Deux billets, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_005" data-category="transport" data-priority="P0" data-search="quel quai ? 몇 번 승강장인가요? 켈 케 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Quel quai ?</p>
+  <p class="phrase-ko">몇 번 승강장인가요?</p>
+  <p class="phrase-hint">켈 케</p>
+  <p class="phrase-note">기차.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Quel quai ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Quel quai ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_006" data-category="transport" data-priority="P0" data-search="ce train va à lyon ? 이 열차 리옹 가나요? 스 트랭 바 아 리옹 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Ce train va à Lyon ?</p>
+  <p class="phrase-ko">이 열차 리옹 가나요?</p>
+  <p class="phrase-hint">스 트랭 바 아 리옹</p>
+  <p class="phrase-note">방향 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Ce train va à Lyon ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Ce train va à Lyon ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_007" data-category="transport" data-priority="P0" data-search="il faut changer ? 갈아타야 하나요? 일 포 샹제 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Il faut changer ?</p>
+  <p class="phrase-ko">갈아타야 하나요?</p>
+  <p class="phrase-hint">일 포 샹제</p>
+  <p class="phrase-note">환승 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Il faut changer ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Il faut changer ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_008" data-category="transport" data-priority="P0" data-search="où est la correspondance ? 환승은 어디에서 하나요? 우 에 라 코레스퐁당스 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la correspondance ?</p>
+  <p class="phrase-ko">환승은 어디에서 하나요?</p>
+  <p class="phrase-hint">우 에 라 코레스퐁당스</p>
+  <p class="phrase-note">환승.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la correspondance ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la correspondance ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_009" data-category="transport" data-priority="P0" data-search="le train a du retard ? 열차가 지연됐나요? 르 트랭 아 뒤 르타르 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Le train a du retard ?</p>
+  <p class="phrase-ko">열차가 지연됐나요?</p>
+  <p class="phrase-hint">르 트랭 아 뒤 르타르</p>
+  <p class="phrase-note">지연 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Le train a du retard ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Le train a du retard ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_010" data-category="transport" data-priority="P0" data-search="combien de retard ? 얼마나 지연됐나요? 콩비앙 드 르타르 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Combien de retard ?</p>
+  <p class="phrase-ko">얼마나 지연됐나요?</p>
+  <p class="phrase-hint">콩비앙 드 르타르</p>
+  <p class="phrase-note">지연 시간.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Combien de retard ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Combien de retard ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_011" data-category="transport" data-priority="P0" data-search="à quelle heure part le prochain train ? 다음 열차는 몇 시에 출발합니까? 아 켈 외르 파르 르 프로샹 트랭 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">À quelle heure part le prochain train ?</p>
+  <p class="phrase-ko">다음 열차는 몇 시에 출발합니까?</p>
+  <p class="phrase-hint">아 켈 외르 파르 르 프로샹 트랭</p>
+  <p class="phrase-note">시간 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À quelle heure part le prochain train ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À quelle heure part le prochain train ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_011" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_012" data-category="transport" data-priority="P0" data-search="à quelle heure arrive-t-on ? 몇 시에 도착합니까? 아 켈 외르 아리브통 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">À quelle heure arrive-t-on ?</p>
+  <p class="phrase-ko">몇 시에 도착합니까?</p>
+  <p class="phrase-hint">아 켈 외르 아리브통</p>
+  <p class="phrase-note">도착 시간.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À quelle heure arrive-t-on ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À quelle heure arrive-t-on ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_012" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_013" data-category="transport" data-priority="P0" data-search="c&#x27;est direct ? 직행인가요? 세 디렉트 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;est direct ?</p>
+  <p class="phrase-ko">직행인가요?</p>
+  <p class="phrase-hint">세 디렉트</p>
+  <p class="phrase-note">노선 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est direct ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est direct ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_013" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_014" data-category="transport" data-priority="P0" data-search="où est la sortie ? 출구는 어디입니까? 우 에 라 소르티 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la sortie ?</p>
+  <p class="phrase-ko">출구는 어디입니까?</p>
+  <p class="phrase-hint">우 에 라 소르티</p>
+  <p class="phrase-note">역·메트로.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la sortie ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la sortie ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_014" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_transport_015" data-category="transport" data-priority="P0" data-search="cette place est libre ? 이 자리 비었나요? 세트 플라스 에 리브르 transport">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">기차·교통</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Cette place est libre ?</p>
+  <p class="phrase-ko">이 자리 비었나요?</p>
+  <p class="phrase-hint">세트 플라스 에 리브르</p>
+  <p class="phrase-note">열차 좌석.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Cette place est libre ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Cette place est libre ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_transport_015" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_001" data-category="driving" data-priority="P0" data-search="j&#x27;ai une réservation de voiture. 렌터카를 예약했습니다. 제 윈 레제르바시옹 드 부아튀르 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">J&#x27;ai une réservation de voiture.</p>
+  <p class="phrase-ko">렌터카를 예약했습니다.</p>
+  <p class="phrase-hint">제 윈 레제르바시옹 드 부아튀르</p>
+  <p class="phrase-note">렌터카 픽업.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="J&#x27;ai une réservation de voiture." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="J&#x27;ai une réservation de voiture." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_002" data-category="driving" data-priority="P0" data-search="assurance comprise ? 보험 포함인가요? 아쉬랑스 콩프리즈 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Assurance comprise ?</p>
+  <p class="phrase-ko">보험 포함인가요?</p>
+  <p class="phrase-hint">아쉬랑스 콩프리즈</p>
+  <p class="phrase-note">렌터카.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Assurance comprise ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Assurance comprise ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_003" data-category="driving" data-priority="P0" data-search="essence ou diesel ? 휘발유인가요, 디젤인가요? 에상스 우 디에젤 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Essence ou diesel ?</p>
+  <p class="phrase-ko">휘발유인가요, 디젤인가요?</p>
+  <p class="phrase-hint">에상스 우 디에젤</p>
+  <p class="phrase-note">차량 연료 확인.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Essence ou diesel ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Essence ou diesel ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_004" data-category="driving" data-priority="P0" data-search="où dois-je rendre la voiture ? 어디에 차량을 반납합니까? 우 두아 주 랑드르 라 부아튀르 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où dois-je rendre la voiture ?</p>
+  <p class="phrase-ko">어디에 차량을 반납합니까?</p>
+  <p class="phrase-hint">우 두아 주 랑드르 라 부아튀르</p>
+  <p class="phrase-note">렌터카 반납.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où dois-je rendre la voiture ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où dois-je rendre la voiture ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_005" data-category="driving" data-priority="P0" data-search="où est la station-service ? 주유소는 어디입니까? 우 에 라 스타시옹 세르비스 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la station-service ?</p>
+  <p class="phrase-ko">주유소는 어디입니까?</p>
+  <p class="phrase-hint">우 에 라 스타시옹 세르비스</p>
+  <p class="phrase-note">주유.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la station-service ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la station-service ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_006" data-category="driving" data-priority="P0" data-search="où peut-on se garer ? 어디에 주차할 수 있나요? 우 푀통 스 가레 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où peut-on se garer ?</p>
+  <p class="phrase-ko">어디에 주차할 수 있나요?</p>
+  <p class="phrase-hint">우 푀통 스 가레</p>
+  <p class="phrase-note">주차.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où peut-on se garer ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où peut-on se garer ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_007" data-category="driving" data-priority="P0" data-search="c&#x27;est gratuit ? 무료인가요? 세 그라튀 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;est gratuit ?</p>
+  <p class="phrase-ko">무료인가요?</p>
+  <p class="phrase-hint">세 그라튀</p>
+  <p class="phrase-note">주차 요금.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est gratuit ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est gratuit ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_008" data-category="driving" data-priority="P0" data-search="combien coûte le parking ? 주차비가 얼마입니까? 콩비앙 쿠트 르 파르킹 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Combien coûte le parking ?</p>
+  <p class="phrase-ko">주차비가 얼마입니까?</p>
+  <p class="phrase-hint">콩비앙 쿠트 르 파르킹</p>
+  <p class="phrase-note">주차 요금.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Combien coûte le parking ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Combien coûte le parking ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_009" data-category="driving" data-priority="P0" data-search="le parking est complet ? 주차장이 만차인가요? 르 파르킹 에 콩플레 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Le parking est complet ?</p>
+  <p class="phrase-ko">주차장이 만차인가요?</p>
+  <p class="phrase-hint">르 파르킹 에 콩플레</p>
+  <p class="phrase-note">주차.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Le parking est complet ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Le parking est complet ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_010" data-category="driving" data-priority="P0" data-search="où est l&#x27;entrée du parking ? 주차장 입구는 어디입니까? 우 에 랑트레 뒤 파르킹 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est l&#x27;entrée du parking ?</p>
+  <p class="phrase-ko">주차장 입구는 어디입니까?</p>
+  <p class="phrase-hint">우 에 랑트레 뒤 파르킹</p>
+  <p class="phrase-note">주차.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est l&#x27;entrée du parking ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est l&#x27;entrée du parking ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_011" data-category="driving" data-priority="P0" data-search="où est la sortie du parking ? 주차장 출구는 어디입니까? 우 에 라 소르티 뒤 파르킹 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la sortie du parking ?</p>
+  <p class="phrase-ko">주차장 출구는 어디입니까?</p>
+  <p class="phrase-hint">우 에 라 소르티 뒤 파르킹</p>
+  <p class="phrase-note">주차.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la sortie du parking ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la sortie du parking ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_011" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_012" data-category="driving" data-priority="P0" data-search="je voudrais faire le plein. 가득 주유하고 싶습니다. 주 부드레 페르 르 플랭 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je voudrais faire le plein.</p>
+  <p class="phrase-ko">가득 주유하고 싶습니다.</p>
+  <p class="phrase-hint">주 부드레 페르 르 플랭</p>
+  <p class="phrase-note">주유.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je voudrais faire le plein." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je voudrais faire le plein." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_012" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_013" data-category="driving" data-priority="P0" data-search="sans plomb 95, s&#x27;il vous plaît. 무연 95 휘발유로 부탁합니다. 상 플롱 카트르뱅캥즈 실 부 플레 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Sans plomb 95, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">무연 95 휘발유로 부탁합니다.</p>
+  <p class="phrase-hint">상 플롱 카트르뱅캥즈 실 부 플레</p>
+  <p class="phrase-note">주유소.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Sans plomb 95, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Sans plomb 95, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_013" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_014" data-category="driving" data-priority="P0" data-search="où est le péage ? 톨게이트는 어디입니까? 우 에 르 페아주 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est le péage ?</p>
+  <p class="phrase-ko">톨게이트는 어디입니까?</p>
+  <p class="phrase-hint">우 에 르 페아주</p>
+  <p class="phrase-note">유료도로.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est le péage ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est le péage ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_014" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_driving_015" data-category="driving" data-priority="P0" data-search="la route est fermée ? 도로가 폐쇄됐나요? 라 루트 에 페르메 driving">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">렌터카·주차</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">La route est fermée ?</p>
+  <p class="phrase-ko">도로가 폐쇄됐나요?</p>
+  <p class="phrase-hint">라 루트 에 페르메</p>
+  <p class="phrase-note">도로 상황.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="La route est fermée ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="La route est fermée ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_driving_015" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_001" data-category="sightseeing" data-priority="P1" data-search="deux billets, s&#x27;il vous plaît. 표 두 장 주세요. 되 비예 실 부 플레 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">Deux billets, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">표 두 장 주세요.</p>
+  <p class="phrase-hint">되 비예 실 부 플레</p>
+  <p class="phrase-note">관광지 매표.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Deux billets, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Deux billets, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_002" data-category="sightseeing" data-priority="P1" data-search="nous avons déjà des billets. 이미 표가 있습니다. 누 자봉 데자 데 비예 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">Nous avons déjà des billets.</p>
+  <p class="phrase-ko">이미 표가 있습니다.</p>
+  <p class="phrase-hint">누 자봉 데자 데 비예</p>
+  <p class="phrase-note">예약 입장.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Nous avons déjà des billets." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Nous avons déjà des billets." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_003" data-category="sightseeing" data-priority="P1" data-search="à quelle heure ça ferme ? 몇 시에 닫나요? 아 켈 외르 사 페름 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">À quelle heure ça ferme ?</p>
+  <p class="phrase-ko">몇 시에 닫나요?</p>
+  <p class="phrase-hint">아 켈 외르 사 페름</p>
+  <p class="phrase-note">운영시간.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="À quelle heure ça ferme ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="À quelle heure ça ferme ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_004" data-category="sightseeing" data-priority="P1" data-search="la dernière entrée est à quelle heure ? 마지막 입장은 몇 시인가요? 라 데르니에르 앙트레 에 아 켈 외르 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">La dernière entrée est à quelle heure ?</p>
+  <p class="phrase-ko">마지막 입장은 몇 시인가요?</p>
+  <p class="phrase-hint">라 데르니에르 앙트레 에 아 켈 외르</p>
+  <p class="phrase-note">입장 마감.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="La dernière entrée est à quelle heure ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="La dernière entrée est à quelle heure ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_005" data-category="sightseeing" data-priority="P1" data-search="il faut réserver ? 예약해야 하나요? 일 포 레제르베 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">Il faut réserver ?</p>
+  <p class="phrase-ko">예약해야 하나요?</p>
+  <p class="phrase-hint">일 포 레제르베</p>
+  <p class="phrase-note">예약 여부.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Il faut réserver ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Il faut réserver ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_006" data-category="sightseeing" data-priority="P1" data-search="c&#x27;est compris dans le billet ? 입장권에 포함되어 있나요? 세 콩프리 당 르 비예 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">C&#x27;est compris dans le billet ?</p>
+  <p class="phrase-ko">입장권에 포함되어 있나요?</p>
+  <p class="phrase-hint">세 콩프리 당 르 비예</p>
+  <p class="phrase-note">티켓 범위.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est compris dans le billet ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est compris dans le billet ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_007" data-category="sightseeing" data-priority="P1" data-search="on peut prendre des photos ? 사진 찍어도 되나요? 옹 푀 프랑드르 데 포토 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">On peut prendre des photos ?</p>
+  <p class="phrase-ko">사진 찍어도 되나요?</p>
+  <p class="phrase-hint">옹 푀 프랑드르 데 포토</p>
+  <p class="phrase-note">촬영 규정.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="On peut prendre des photos ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="On peut prendre des photos ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_008" data-category="sightseeing" data-priority="P1" data-search="sans flash ? 플래시 없이요? 상 플라시 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">Sans flash ?</p>
+  <p class="phrase-ko">플래시 없이요?</p>
+  <p class="phrase-hint">상 플라시</p>
+  <p class="phrase-note">촬영 규정.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Sans flash ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Sans flash ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_009" data-category="sightseeing" data-priority="P1" data-search="où commence la visite ? 관람은 어디서 시작하나요? 우 코망스 라 비지트 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">Où commence la visite ?</p>
+  <p class="phrase-ko">관람은 어디서 시작하나요?</p>
+  <p class="phrase-hint">우 코망스 라 비지트</p>
+  <p class="phrase-note">관람 동선.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où commence la visite ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où commence la visite ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_009" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_sightseeing_010" data-category="sightseeing" data-priority="P1" data-search="il y a un audioguide en anglais ? 영어 오디오가이드가 있나요? 일 이 아 앙 노디오기드 앙 앙글레 sightseeing">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">관광·미술관</span> </div>
+  </div>
+  <p class="phrase-fr">Il y a un audioguide en anglais ?</p>
+  <p class="phrase-ko">영어 오디오가이드가 있나요?</p>
+  <p class="phrase-hint">일 이 아 앙 노디오기드 앙 앙글레</p>
+  <p class="phrase-note">관광지.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Il y a un audioguide en anglais ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Il y a un audioguide en anglais ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_sightseeing_010" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_001" data-category="shopping" data-priority="P2" data-search="vous avez ceci en plus petit ? 이것보다 작은 사이즈 있나요? 부 자베 스시 앙 플뤼 프티 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Vous avez ceci en plus petit ?</p>
+  <p class="phrase-ko">이것보다 작은 사이즈 있나요?</p>
+  <p class="phrase-hint">부 자베 스시 앙 플뤼 프티</p>
+  <p class="phrase-note">쇼핑.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Vous avez ceci en plus petit ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Vous avez ceci en plus petit ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_002" data-category="shopping" data-priority="P2" data-search="vous avez ceci en plus grand ? 이것보다 큰 사이즈 있나요? 부 자베 스시 앙 플뤼 그랑 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Vous avez ceci en plus grand ?</p>
+  <p class="phrase-ko">이것보다 큰 사이즈 있나요?</p>
+  <p class="phrase-hint">부 자베 스시 앙 플뤼 그랑</p>
+  <p class="phrase-note">쇼핑.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Vous avez ceci en plus grand ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Vous avez ceci en plus grand ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_003" data-category="shopping" data-priority="P2" data-search="je peux essayer ? 입어봐도 되나요? 주 푀 에세이에 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Je peux essayer ?</p>
+  <p class="phrase-ko">입어봐도 되나요?</p>
+  <p class="phrase-hint">주 푀 에세이에</p>
+  <p class="phrase-note">의류.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je peux essayer ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je peux essayer ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_004" data-category="shopping" data-priority="P2" data-search="où sont les cabines d&#x27;essayage ? 탈의실은 어디입니까? 우 송 레 카빈 데세야주 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Où sont les cabines d&#x27;essayage ?</p>
+  <p class="phrase-ko">탈의실은 어디입니까?</p>
+  <p class="phrase-hint">우 송 레 카빈 데세야주</p>
+  <p class="phrase-note">의류.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où sont les cabines d&#x27;essayage ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où sont les cabines d&#x27;essayage ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_005" data-category="shopping" data-priority="P2" data-search="je vais prendre celui-ci. 이것으로 하겠습니다. 주 베 프랑드르 슬뤼 시 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Je vais prendre celui-ci.</p>
+  <p class="phrase-ko">이것으로 하겠습니다.</p>
+  <p class="phrase-hint">주 베 프랑드르 슬뤼 시</p>
+  <p class="phrase-note">구매 결정.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je vais prendre celui-ci." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je vais prendre celui-ci." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_006" data-category="shopping" data-priority="P2" data-search="vous avez un sac ? 봉투 있나요? 부 자베 앙 삭 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Vous avez un sac ?</p>
+  <p class="phrase-ko">봉투 있나요?</p>
+  <p class="phrase-hint">부 자베 앙 삭</p>
+  <p class="phrase-note">구매.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Vous avez un sac ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Vous avez un sac ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_shopping_007" data-category="shopping" data-priority="P2" data-search="je voudrais détaxer cet achat. 이 구매 건 면세 처리하고 싶습니다. 주 부드레 데탁세 세타샤 shopping">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">쇼핑</span> </div>
+  </div>
+  <p class="phrase-fr">Je voudrais détaxer cet achat.</p>
+  <p class="phrase-ko">이 구매 건 면세 처리하고 싶습니다.</p>
+  <p class="phrase-hint">주 부드레 데탁세 세타샤</p>
+  <p class="phrase-note">면세 가능한 상점.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je voudrais détaxer cet achat." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je voudrais détaxer cet achat." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_shopping_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_001" data-category="emergency" data-priority="P0" data-search="j&#x27;ai besoin d&#x27;aide. 도움이 필요합니다. 제 브주앵 데드 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">J&#x27;ai besoin d&#x27;aide.</p>
+  <p class="phrase-ko">도움이 필요합니다.</p>
+  <p class="phrase-hint">제 브주앵 데드</p>
+  <p class="phrase-note">긴급 상황.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="J&#x27;ai besoin d&#x27;aide." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="J&#x27;ai besoin d&#x27;aide." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_001" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_002" data-category="emergency" data-priority="P0" data-search="c&#x27;est urgent. 긴급합니다. 세 튀르장 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">C&#x27;est urgent.</p>
+  <p class="phrase-ko">긴급합니다.</p>
+  <p class="phrase-hint">세 튀르장</p>
+  <p class="phrase-note">긴급 상황.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="C&#x27;est urgent." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="C&#x27;est urgent." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_002" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_003" data-category="emergency" data-priority="P0" data-search="appelez la police, s&#x27;il vous plaît. 경찰을 불러 주세요. 아플레 라 폴리스 실 부 플레 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Appelez la police, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">경찰을 불러 주세요.</p>
+  <p class="phrase-hint">아플레 라 폴리스 실 부 플레</p>
+  <p class="phrase-note">긴급 상황.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Appelez la police, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Appelez la police, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_003" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_004" data-category="emergency" data-priority="P0" data-search="appelez une ambulance, s&#x27;il vous plaît. 구급차를 불러 주세요. 아플레 윈 앙뷜랑스 실 부 플레 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Appelez une ambulance, s&#x27;il vous plaît.</p>
+  <p class="phrase-ko">구급차를 불러 주세요.</p>
+  <p class="phrase-hint">아플레 윈 앙뷜랑스 실 부 플레</p>
+  <p class="phrase-note">긴급 상황.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Appelez une ambulance, s&#x27;il vous plaît." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Appelez une ambulance, s&#x27;il vous plaît." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_004" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_005" data-category="emergency" data-priority="P0" data-search="où est la pharmacie la plus proche ? 가장 가까운 약국은 어디입니까? 우 에 라 파르마시 라 플뤼 프로슈 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Où est la pharmacie la plus proche ?</p>
+  <p class="phrase-ko">가장 가까운 약국은 어디입니까?</p>
+  <p class="phrase-hint">우 에 라 파르마시 라 플뤼 프로슈</p>
+  <p class="phrase-note">약국.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Où est la pharmacie la plus proche ?" aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Où est la pharmacie la plus proche ?" aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_005" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_006" data-category="emergency" data-priority="P0" data-search="je cherche un médecin. 의사를 찾고 있습니다. 주 셰르슈 앙 메드생 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">Je cherche un médecin.</p>
+  <p class="phrase-ko">의사를 찾고 있습니다.</p>
+  <p class="phrase-hint">주 셰르슈 앙 메드생</p>
+  <p class="phrase-note">의료.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="Je cherche un médecin." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="Je cherche un médecin." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_006" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_007" data-category="emergency" data-priority="P0" data-search="j&#x27;ai perdu mon portefeuille. 지갑을 잃어버렸습니다. 제 페르뒤 몽 포르트푀유 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">J&#x27;ai perdu mon portefeuille.</p>
+  <p class="phrase-ko">지갑을 잃어버렸습니다.</p>
+  <p class="phrase-hint">제 페르뒤 몽 포르트푀유</p>
+  <p class="phrase-note">분실.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="J&#x27;ai perdu mon portefeuille." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="J&#x27;ai perdu mon portefeuille." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_007" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article><article class="phrase-card" data-phrase-id="fr_emergency_008" data-category="emergency" data-priority="P0" data-search="j&#x27;ai perdu mon téléphone. 휴대폰을 잃어버렸습니다. 제 페르뒤 몽 텔레폰 emergency">
+  <div class="phrase-head">
+    <div><span class="badge badge-neutral">긴급상황</span> <span class="badge badge-must">P0</span></div>
+  </div>
+  <p class="phrase-fr">J&#x27;ai perdu mon téléphone.</p>
+  <p class="phrase-ko">휴대폰을 잃어버렸습니다.</p>
+  <p class="phrase-hint">제 페르뒤 몽 텔레폰</p>
+  <p class="phrase-note">분실.</p>
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="J&#x27;ai perdu mon téléphone." aria-label="발음 듣기" title="발음 듣기">
+      <b class="ic ic-only ic-sound" aria-hidden="true"></b><span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="J&#x27;ai perdu mon téléphone." aria-label="문구 복사" title="문구 복사">
+      <b class="ic ic-only ic-copy" aria-hidden="true"></b><span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="fr_emergency_008" aria-label="즐겨찾기" title="즐겨찾기">
+      <b class="ic ic-only ic-star" aria-hidden="true"></b><span>저장</span>
+    </button>
+  </div>
+</article>
+  </div>
+</section>
+
+<section id="french-pronunciation-section" style="margin-top:var(--s5)">
+  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)"><b class="ic ic-only ic-tip" aria-hidden="true"></b> 10분 발음 & 읽기 규칙 (French in 10 Minutes)</h2></summary>
+    <div class="acc-body stack" style="margin-top:var(--s3)">
+      <p class="meta">정확한 음성학 학습이 아니라 간판과 메뉴를 읽기 위한 최소한의 발음 규칙입니다.</p>
+      <div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">핵심 모음 규칙</h3>
+    <div class="table-wrap"><table class="rule-table">
+      <thead><tr><th>철자 패턴</th><th>한국어 발음 근사</th><th>대표 단어</th><th>발음 포인트</th></tr></thead>
+      <tbody><tr>
+  <td><strong>é, -er, -ez</strong></td>
+  <td><span class="sound">[e] 에</span></td>
+  <td><span class="ex">café (카페), parler (파를레), chez (셰)</span></td>
+  <td><span class="meta">단어 끝의 er, ez도 깔끔한 &quot;에&quot;로 발음합니다.</span></td>
+</tr><tr>
+  <td><strong>è, ê, ai, ais</strong></td>
+  <td><span class="sound">[ɛ] 애</span></td>
+  <td><span class="ex">crème (크렘), fête (페트), mais (메), français (프랑세)</span></td>
+  <td><span class="meta">입을 약간 더 벌린 &quot;애&quot; 소리입니다.</span></td>
+</tr><tr>
+  <td><strong>ou</strong></td>
+  <td><span class="sound">[u] 우</span></td>
+  <td><span class="ex">bonjour (봉주르), vous (부), tour (투르)</span></td>
+  <td><span class="meta">항상 맑은 &quot;우&quot; 발음입니다.</span></td>
+</tr><tr>
+  <td><strong>u</strong></td>
+  <td><span class="sound">[y] 위 (입술 둥글게)</span></td>
+  <td><span class="ex">salut (살뤼), rue (뤼), menu (메뉘)</span></td>
+  <td><span class="meta">입술을 둥글게 &quot;우&quot; 모양으로 모은 상태에서 혀는 &quot;이&quot; 소리를 냅니다.</span></td>
+</tr><tr>
+  <td><strong>oi</strong></td>
+  <td><span class="sound">[wa] 와</span></td>
+  <td><span class="ex">soir (수아르), croissant (크루아상), moi (무아)</span></td>
+  <td><span class="meta">프랑스어 특유의 경쾌한 &quot;와&quot; 소리입니다.</span></td>
+</tr><tr>
+  <td><strong>au, eau</strong></td>
+  <td><span class="sound">[o] 오</span></td>
+  <td><span class="ex">château (샤토), eau (오), restaurant (레스토랑)</span></td>
+  <td><span class="meta">철자는 길지만 단순한 &quot;오&quot;로 발음합니다.</span></td>
+</tr><tr>
+  <td><strong>eu, œu</strong></td>
+  <td><span class="sound">[ø]/[œ] 외/어</span></td>
+  <td><span class="ex">deux (되), beurre (뵈르), fleur (플뢰르)</span></td>
+  <td><span class="meta">입술을 앞으로 내밀며 둥글게 내는 소리입니다.</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div><div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">비음 (코로 울리는 모음)</h3>
+    <div class="table-wrap"><table class="rule-table">
+      <thead><tr><th>철자 패턴</th><th>한국어 발음 근사</th><th>대표 단어</th><th>발음 포인트</th></tr></thead>
+      <tbody><tr>
+  <td><strong>an, en, am, em</strong></td>
+  <td><span class="sound">[ɑ̃] 앙</span></td>
+  <td><span class="ex">France (프랑스), entrée (앙트레), temps (탕)</span></td>
+  <td><span class="meta">입을 크게 벌리고 코를 울리는 깊은 &quot;앙&quot;입니다.</span></td>
+</tr><tr>
+  <td><strong>on, om</strong></td>
+  <td><span class="sound">[ɔ̃] 옹</span></td>
+  <td><span class="ex">bon (봉), pont (퐁), nom (농)</span></td>
+  <td><span class="meta">입술을 둥글게 모은 채 내는 비음입니다.</span></td>
+</tr><tr>
+  <td><strong>in, ain, ein, im</strong></td>
+  <td><span class="sound">[ɛ̃] 앵/앙</span></td>
+  <td><span class="ex">vin (뱅), pain (팽), plein (플랭), train (트랭)</span></td>
+  <td><span class="meta">입을 옆으로 당기며 비음으로 내는 &quot;앵(앙)&quot; 소리입니다.</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div><div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">자음 &amp; 특수문자 규칙</h3>
+    <div class="table-wrap"><table class="rule-table">
+      <thead><tr><th>철자 패턴</th><th>한국어 발음 근사</th><th>대표 단어</th><th>발음 포인트</th></tr></thead>
+      <tbody><tr>
+  <td><strong>ch</strong></td>
+  <td><span class="sound">[ʃ] 쉬</span></td>
+  <td><span class="ex">château (샤토), chef (셰프), chocolat (쇼콜라)</span></td>
+  <td><span class="meta">영어의 sh와 같은 부드러운 &quot;쉬&quot;입니다.</span></td>
+</tr><tr>
+  <td><strong>gn</strong></td>
+  <td><span class="sound">[ɲ] 냐/뉴/니</span></td>
+  <td><span class="ex">cognac (코냑), vigne (비뉴), champagne (샹파뉴)</span></td>
+  <td><span class="meta">이탈리아어 gn, 스페인어 ñ과 같은 음가입니다.</span></td>
+</tr><tr>
+  <td><strong>j, ge, gi</strong></td>
+  <td><span class="sound">[ʒ] 주/지</span></td>
+  <td><span class="ex">bonjour (봉주르), fromage (프로마주), gîte (지트)</span></td>
+  <td><span class="meta">영어 j(ㅈ)보다 마찰이 부드러운 유성 자음입니다.</span></td>
+</tr><tr>
+  <td><strong>qu</strong></td>
+  <td><span class="sound">[k] ㅋ</span></td>
+  <td><span class="ex">quai (케), quatre (카트르), qui (키)</span></td>
+  <td><span class="meta">u는 묵음이며 k 소리만 납니다.</span></td>
+</tr><tr>
+  <td><strong>ç (쎄디유)</strong></td>
+  <td><span class="sound">[s] ㅅ</span></td>
+  <td><span class="ex">français (프랑세), garçon (가르송)</span></td>
+  <td><span class="meta">a, o, u 앞에서도 부드러운 &quot;스&quot; 발음을 유지시킵니다.</span></td>
+</tr><tr>
+  <td><strong>c</strong></td>
+  <td><span class="sound">e, i 앞: [s] / a, o, u 앞: [k]</span></td>
+  <td><span class="ex">merci (메르시), carte (카르트)</span></td>
+  <td><span class="meta">뒤따르는 모음에 따라 음가가 달라집니다.</span></td>
+</tr><tr>
+  <td><strong>g</strong></td>
+  <td><span class="sound">e, i 앞: [ʒ] / a, o, u 앞: [g]</span></td>
+  <td><span class="ex">gare (가르), gîte (지트)</span></td>
+  <td><span class="meta">뒤따르는 모음에 따라 음가가 달라집니다.</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div><div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">끝 자음 묵음과 연음 (Liaison)</h3>
+    <div class="table-wrap"><table class="rule-table">
+      <thead><tr><th>철자 패턴</th><th>한국어 발음 근사</th><th>대표 단어</th><th>발음 포인트</th></tr></thead>
+      <tbody><tr>
+  <td><strong>단어 끝 자음 묵음</strong></td>
+  <td><span class="sound">소리 없음</span></td>
+  <td><span class="ex">Paris (파리), plat (플라), deux (되), vous (부), tard (타르)</span></td>
+  <td><span class="meta">단어 끝의 d, p, s, t, x, z 등은 대개 발음하지 않습니다. (예외: C, R, F, L 계열 sac, mer, chef, hôtel 등은 발음)</span></td>
+</tr><tr>
+  <td><strong>연음 (Liaison)</strong></td>
+  <td><span class="sound">앞 자음 + 뒷 모음 결합</span></td>
+  <td><span class="ex">les amis [레 자미], vous avez [부 자베], grand hôtel [그랑 토텔]</span></td>
+  <td><span class="meta">앞 단어 끝의 묵음 자음이 뒤에 모음이나 무음 h로 시작하는 단어를 만나면 이어져 소리납니다. (s, x ➔ [z], d ➔ [t])</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div>
+    </div>
+  </details>
+</section>
+
+<section id="french-signs-section" style="margin-top:var(--s3)">
+  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)"><b class="ic ic-only ic-book" aria-hidden="true"></b> 현장 표지판 & 메뉴 필수 어휘 사전</h2></summary>
+    <div class="acc-body stack" style="margin-top:var(--s3)">
+      <p class="meta">거리 표지, 역 안내판, 메뉴판에서 가장 빈번히 마주치는 단어들입니다.</p>
+      <div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">현장 표지 &amp; 시설 안내</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>프랑스어 표기</th><th>한국어 의미</th><th>발음 도움</th></tr></thead>
+      <tbody><tr>
+  <td><strong style="color:var(--primary)">Entrée</strong></td>
+  <td>입구</td>
+  <td><span class="meta">앙트레</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Sortie</strong></td>
+  <td>출구</td>
+  <td><span class="meta">소르티</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Ouvert</strong></td>
+  <td>영업중 / 열림</td>
+  <td><span class="meta">우베르</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Fermé</strong></td>
+  <td>휴무 / 닫힘</td>
+  <td><span class="meta">페르메</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Complet</strong></td>
+  <td>만석 / 만차</td>
+  <td><span class="meta">콩플레</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Réservé</strong></td>
+  <td>예약석 / 예약됨</td>
+  <td><span class="meta">레제르베</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Libre</strong></td>
+  <td>빈자리 / 비어있음</td>
+  <td><span class="meta">리브르</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Gratuit</strong></td>
+  <td>무료</td>
+  <td><span class="meta">그라튀</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Payant</strong></td>
+  <td>유료</td>
+  <td><span class="meta">페이양</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Toilettes / WC</strong></td>
+  <td>화장실</td>
+  <td><span class="meta">투알레트</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Interdit</strong></td>
+  <td>금지</td>
+  <td><span class="meta">앙테르디</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Travaux</strong></td>
+  <td>공사중</td>
+  <td><span class="meta">트라보</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Déviation</strong></td>
+  <td>우회로</td>
+  <td><span class="meta">데비아시옹</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div><div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">교통 · 기차 · 운전 · 주차</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>프랑스어 표기</th><th>한국어 의미</th><th>발음 도움</th></tr></thead>
+      <tbody><tr>
+  <td><strong style="color:var(--primary)">Gare</strong></td>
+  <td>기차역</td>
+  <td><span class="meta">가르</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Quai</strong></td>
+  <td>승강장 / 플랫폼</td>
+  <td><span class="meta">케</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Voie</strong></td>
+  <td>선로 / 트랙 번호</td>
+  <td><span class="meta">부아</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Billet</strong></td>
+  <td>승차권 / 티켓</td>
+  <td><span class="meta">비예</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Correspondance</strong></td>
+  <td>환승</td>
+  <td><span class="meta">코레스퐁당스</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Retard</strong></td>
+  <td>지연</td>
+  <td><span class="meta">르타르</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">À l&#x27;heure</strong></td>
+  <td>정시 운행</td>
+  <td><span class="meta">아 뢰르</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Parking</strong></td>
+  <td>주차장</td>
+  <td><span class="meta">파르킹</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Stationnement</strong></td>
+  <td>주차</td>
+  <td><span class="meta">스타시오느망</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Péage</strong></td>
+  <td>고속도로 톨게이트</td>
+  <td><span class="meta">페아주</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Essence / Sans plomb</strong></td>
+  <td>휘발유 / 무연휘발유</td>
+  <td><span class="meta">에상스 / 상 플롱</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Diesel / Gazole</strong></td>
+  <td>디젤 / 경유</td>
+  <td><span class="meta">디에젤 / 가졸</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div><div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">식당 · 카페 · 시장 · 상점</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>프랑스어 표기</th><th>한국어 의미</th><th>발음 도움</th></tr></thead>
+      <tbody><tr>
+  <td><strong style="color:var(--primary)">Boulangerie</strong></td>
+  <td>빵집</td>
+  <td><span class="meta">불랑주리</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Pâtisserie</strong></td>
+  <td>제과점</td>
+  <td><span class="meta">파티스리</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Fromagerie</strong></td>
+  <td>치즈가게</td>
+  <td><span class="meta">프로마주리</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Boucherie / Charcuterie</strong></td>
+  <td>정육점 / 가공육점</td>
+  <td><span class="meta">부슈리 / 샤르퀴트리</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Marché</strong></td>
+  <td>시장</td>
+  <td><span class="meta">마르셰</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">La carte / Le menu</strong></td>
+  <td>단품 메뉴판 / 코스 메뉴</td>
+  <td><span class="meta">라 카르트 / 르 메뉘</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Entrée</strong></td>
+  <td>전채요리 (스타터)</td>
+  <td><span class="meta">앙트레</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Plat (du jour)</strong></td>
+  <td>메인요리 (오늘의 요리)</td>
+  <td><span class="meta">플라 (뒤 주르)</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Dessert</strong></td>
+  <td>디저트</td>
+  <td><span class="meta">데세르</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">L&#x27;addition</strong></td>
+  <td>계산서</td>
+  <td><span class="meta">라디시옹</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Service compris</strong></td>
+  <td>봉사료 포함</td>
+  <td><span class="meta">세르비스 콩프리</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Eau plate</strong></td>
+  <td>일반 생수 (탄산 없음)</td>
+  <td><span class="meta">오 플라트</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Eau gazeuse</strong></td>
+  <td>탄산수</td>
+  <td><span class="meta">오 가죄즈</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Carafe d&#x27;eau</strong></td>
+  <td>무료 수돗물 한 병</td>
+  <td><span class="meta">카라프 도</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Vin rouge / blanc / rosé</strong></td>
+  <td>레드 / 화이트 / 로제 와인</td>
+  <td><span class="meta">뱅 루주 / 블랑 / 로제</span></td>
+</tr><tr>
+  <td><strong style="color:var(--primary)">Café / Expresso</strong></td>
+  <td>에스프레소 커피</td>
+  <td><span class="meta">카페 / 엑스프레소</span></td>
+</tr></tbody>
+    </table></div>
+  </div>
+</div>
+    </div>
+  </details>
+</section>
+
+<div class="btn-row" style="margin-top:var(--s4)">
+  <a class="btn btn-secondary" href="french.html"><b class="ic ic-only ic-chat" aria-hidden="true"></b>여행 프랑스어</a>
+  <a class="btn btn-secondary" href="emergency.html"><b class="ic ic-only ic-alert" aria-hidden="true"></b>긴급 연락처</a>
+  <a class="btn btn-secondary" href="index.html"><b class="ic ic-only ic-check" aria-hidden="true"></b>준비 메인</a>
+  <a class="btn btn-secondary" href="../schedule.html"><b class="ic ic-only ic-today" aria-hidden="true"></b>전체 일정</a>
+</div>
+
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare" aria-current="page"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>
