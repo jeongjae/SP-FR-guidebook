@@ -1,0 +1,1568 @@
+{
+  "schema_version": "1.0",
+  "language": "fr-FR",
+  "note_ko": "한국어 발음 표기는 여행용 근사치이며 실제 프랑스어 음가를 완전히 재현하지 않는다.",
+  "count": 120,
+  "phrases": [
+    {
+      "id": "fr_essential_001",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Bonjour.",
+      "ko": "안녕하세요.",
+      "pronunciation_hint": "봉주르",
+      "usage_note": "가게·식당·호텔에 들어갈 때 먼저 인사한다.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Bonjour."
+    },
+    {
+      "id": "fr_essential_002",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Bonsoir.",
+      "ko": "안녕하세요 / 좋은 저녁입니다.",
+      "pronunciation_hint": "봉수아르",
+      "usage_note": "저녁 시간대 인사.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Bonsoir."
+    },
+    {
+      "id": "fr_essential_003",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Merci.",
+      "ko": "감사합니다.",
+      "pronunciation_hint": "메르시",
+      "usage_note": "가장 기본적인 감사 표현.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Merci."
+    },
+    {
+      "id": "fr_essential_004",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Merci beaucoup.",
+      "ko": "대단히 감사합니다.",
+      "pronunciation_hint": "메르시 보쿠",
+      "usage_note": "조금 더 정중한 감사.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Merci beaucoup."
+    },
+    {
+      "id": "fr_essential_005",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "S'il vous plaît.",
+      "ko": "부탁합니다 / 주세요.",
+      "pronunciation_hint": "실 부 플레",
+      "usage_note": "요청문 뒤에 붙이면 정중해진다.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "S'il vous plaît."
+    },
+    {
+      "id": "fr_essential_006",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Excusez-moi.",
+      "ko": "실례합니다.",
+      "pronunciation_hint": "엑스퀴제 무아",
+      "usage_note": "말을 걸거나 길을 물을 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Excusez-moi."
+    },
+    {
+      "id": "fr_essential_007",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Pardon.",
+      "ko": "죄송합니다 / 지나갈게요.",
+      "pronunciation_hint": "파르동",
+      "usage_note": "가볍게 부딪히거나 지나갈 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Pardon."
+    },
+    {
+      "id": "fr_essential_008",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Oui.",
+      "ko": "네.",
+      "pronunciation_hint": "위",
+      "usage_note": "긍정.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Oui."
+    },
+    {
+      "id": "fr_essential_009",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Non.",
+      "ko": "아니요.",
+      "pronunciation_hint": "농",
+      "usage_note": "부정.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Non."
+    },
+    {
+      "id": "fr_essential_010",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "D'accord.",
+      "ko": "알겠습니다 / 좋아요.",
+      "pronunciation_hint": "다코르",
+      "usage_note": "동의·확인.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "D'accord."
+    },
+    {
+      "id": "fr_essential_011",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Je ne comprends pas.",
+      "ko": "이해하지 못했습니다.",
+      "pronunciation_hint": "주 느 콩프랑 파",
+      "usage_note": "상대의 말을 이해하지 못했을 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Je ne comprends pas."
+    },
+    {
+      "id": "fr_essential_012",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Je ne parle pas bien français.",
+      "ko": "프랑스어를 잘 못합니다.",
+      "pronunciation_hint": "주 느 파를 파 비앙 프랑세",
+      "usage_note": "필요하면 바로 영어 사용 여부를 묻는다.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Je ne parle pas bien français."
+    },
+    {
+      "id": "fr_essential_013",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Parlez-vous anglais ?",
+      "ko": "영어 하십니까?",
+      "pronunciation_hint": "파를레 부 앙글레",
+      "usage_note": "정중한 영어 가능 여부 확인.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Parlez-vous anglais ?"
+    },
+    {
+      "id": "fr_essential_014",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Plus lentement, s'il vous plaît.",
+      "ko": "좀 천천히 말씀해 주세요.",
+      "pronunciation_hint": "플뤼 랑트망 실 부 플레",
+      "usage_note": "상대가 너무 빨리 말할 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Plus lentement, s'il vous plaît."
+    },
+    {
+      "id": "fr_essential_015",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Pouvez-vous répéter ?",
+      "ko": "다시 말씀해 주시겠어요?",
+      "pronunciation_hint": "푸베 부 레페테",
+      "usage_note": "재확인.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Pouvez-vous répéter ?"
+    },
+    {
+      "id": "fr_essential_016",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Comment dit-on … en français ?",
+      "ko": "…를 프랑스어로 뭐라고 하나요?",
+      "pronunciation_hint": "코망 디통 … 앙 프랑세",
+      "usage_note": "단어를 물을 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Comment dit-on … en français ?"
+    },
+    {
+      "id": "fr_essential_017",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Qu'est-ce que ça veut dire ?",
+      "ko": "이게 무슨 뜻인가요?",
+      "pronunciation_hint": "케스 크 사 뵈 디르",
+      "usage_note": "표지·메뉴 뜻을 물을 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Qu'est-ce que ça veut dire ?"
+    },
+    {
+      "id": "fr_essential_018",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Où sont les toilettes ?",
+      "ko": "화장실은 어디입니까?",
+      "pronunciation_hint": "우 송 레 투알레트",
+      "usage_note": "범용.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Où sont les toilettes ?"
+    },
+    {
+      "id": "fr_essential_019",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "C'est loin ?",
+      "ko": "먼가요?",
+      "pronunciation_hint": "세 루앵",
+      "usage_note": "거리 확인.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "C'est loin ?"
+    },
+    {
+      "id": "fr_essential_020",
+      "category": "essential",
+      "priority": "P0",
+      "fr": "Merci, au revoir.",
+      "ko": "감사합니다. 안녕히 계세요.",
+      "pronunciation_hint": "메르시 오르부아르",
+      "usage_note": "가게·식당을 나갈 때.",
+      "tags": [
+        "essential"
+      ],
+      "audio_text": "Merci, au revoir."
+    },
+    {
+      "id": "fr_restaurant_001",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Une table pour deux, s'il vous plaît.",
+      "ko": "두 명 자리 부탁합니다.",
+      "pronunciation_hint": "윈 타블 푸르 되 실 부 플레",
+      "usage_note": "식당 입장.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Une table pour deux, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_002",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Nous avons une réservation.",
+      "ko": "예약했습니다.",
+      "pronunciation_hint": "누 자봉 윈 레제르바시옹",
+      "usage_note": "예약 식당.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Nous avons une réservation."
+    },
+    {
+      "id": "fr_restaurant_003",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Au nom de Kim.",
+      "ko": "Kim 이름으로 했습니다.",
+      "pronunciation_hint": "오 농 드 김",
+      "usage_note": "예약자 이름을 말할 때.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Au nom de Kim."
+    },
+    {
+      "id": "fr_restaurant_004",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "En terrasse, si possible.",
+      "ko": "가능하면 테라스로 부탁합니다.",
+      "pronunciation_hint": "앙 테라스 시 포시블",
+      "usage_note": "좌석 요청.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "En terrasse, si possible."
+    },
+    {
+      "id": "fr_restaurant_005",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "À l'intérieur, s'il vous plaît.",
+      "ko": "실내로 부탁합니다.",
+      "pronunciation_hint": "아 랭테리외르 실 부 플레",
+      "usage_note": "좌석 요청.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "À l'intérieur, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_006",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "La carte, s'il vous plaît.",
+      "ko": "메뉴 부탁합니다.",
+      "pronunciation_hint": "라 카르트 실 부 플레",
+      "usage_note": "메뉴 요청.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "La carte, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_007",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Qu'est-ce que vous recommandez ?",
+      "ko": "무엇을 추천하시나요?",
+      "pronunciation_hint": "케스 크 부 르코망데",
+      "usage_note": "추천 메뉴 문의.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Qu'est-ce que vous recommandez ?"
+    },
+    {
+      "id": "fr_restaurant_008",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Je voudrais ceci.",
+      "ko": "이것을 주세요.",
+      "pronunciation_hint": "주 부드레 스시",
+      "usage_note": "메뉴를 가리키며 사용.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Je voudrais ceci."
+    },
+    {
+      "id": "fr_restaurant_009",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Pour moi, le poisson.",
+      "ko": "저는 생선으로 하겠습니다.",
+      "pronunciation_hint": "푸르 무아 르 푸아송",
+      "usage_note": "주문.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Pour moi, le poisson."
+    },
+    {
+      "id": "fr_restaurant_010",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Pour moi, la viande.",
+      "ko": "저는 고기로 하겠습니다.",
+      "pronunciation_hint": "푸르 무아 라 비앙드",
+      "usage_note": "주문.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Pour moi, la viande."
+    },
+    {
+      "id": "fr_restaurant_011",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Sans viande, s'il vous plaît.",
+      "ko": "고기 없이 부탁합니다.",
+      "pronunciation_hint": "상 비앙드 실 부 플레",
+      "usage_note": "식이 요청.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Sans viande, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_012",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Sans alcool, s'il vous plaît.",
+      "ko": "술 없이 부탁합니다.",
+      "pronunciation_hint": "상 잘콜 실 부 플레",
+      "usage_note": "음료·요리 요청.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Sans alcool, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_013",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Une carafe d'eau, s'il vous plaît.",
+      "ko": "수돗물 한 병 부탁합니다.",
+      "pronunciation_hint": "윈 카라프 도 실 부 플레",
+      "usage_note": "프랑스 식당에서 무료 수돗물 요청.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Une carafe d'eau, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_014",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Une bouteille d'eau plate, s'il vous plaît.",
+      "ko": "탄산 없는 생수 한 병 부탁합니다.",
+      "pronunciation_hint": "윈 부테이 도 플라트 실 부 플레",
+      "usage_note": "생수 주문.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Une bouteille d'eau plate, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_015",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Un verre de vin rouge, s'il vous plaît.",
+      "ko": "레드와인 한 잔 부탁합니다.",
+      "pronunciation_hint": "앙 베르 드 뱅 루주 실 부 플레",
+      "usage_note": "와인 주문.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Un verre de vin rouge, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_016",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Un verre de vin blanc, s'il vous plaît.",
+      "ko": "화이트와인 한 잔 부탁합니다.",
+      "pronunciation_hint": "앙 베르 드 뱅 블랑 실 부 플레",
+      "usage_note": "와인 주문.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Un verre de vin blanc, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_017",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Deux cafés, s'il vous plaît.",
+      "ko": "커피 두 잔 부탁합니다.",
+      "pronunciation_hint": "되 카페 실 부 플레",
+      "usage_note": "식후 커피.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Deux cafés, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_018",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "L'addition, s'il vous plaît.",
+      "ko": "계산서 부탁합니다.",
+      "pronunciation_hint": "라디시옹 실 부 플레",
+      "usage_note": "식사 후 계산.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "L'addition, s'il vous plaît."
+    },
+    {
+      "id": "fr_restaurant_019",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "Je peux payer par carte ?",
+      "ko": "카드로 결제할 수 있나요?",
+      "pronunciation_hint": "주 푀 페이에 파르 카르트",
+      "usage_note": "결제.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "Je peux payer par carte ?"
+    },
+    {
+      "id": "fr_restaurant_020",
+      "category": "restaurant",
+      "priority": "P0",
+      "fr": "C'était très bon, merci.",
+      "ko": "아주 맛있었습니다. 감사합니다.",
+      "pronunciation_hint": "세테 트레 봉 메르시",
+      "usage_note": "식사 후.",
+      "tags": [
+        "restaurant"
+      ],
+      "audio_text": "C'était très bon, merci."
+    },
+    {
+      "id": "fr_market_001",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Une baguette, s'il vous plaît.",
+      "ko": "바게트 하나 주세요.",
+      "pronunciation_hint": "윈 바게트 실 부 플레",
+      "usage_note": "빵집.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Une baguette, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_002",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Deux croissants, s'il vous plaît.",
+      "ko": "크루아상 두 개 주세요.",
+      "pronunciation_hint": "되 크루아상 실 부 플레",
+      "usage_note": "빵집.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Deux croissants, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_003",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Je voudrais 200 grammes de fromage.",
+      "ko": "치즈 200g 주세요.",
+      "pronunciation_hint": "주 부드레 되 상 그람 드 프로마주",
+      "usage_note": "치즈가게·시장.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Je voudrais 200 grammes de fromage."
+    },
+    {
+      "id": "fr_market_004",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Je voudrais 100 grammes de jambon.",
+      "ko": "햄 100g 주세요.",
+      "pronunciation_hint": "주 부드레 상 그람 드 잠봉",
+      "usage_note": "시장·샤퀴테리.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Je voudrais 100 grammes de jambon."
+    },
+    {
+      "id": "fr_market_005",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Celui-ci, s'il vous plaît.",
+      "ko": "이것 주세요.",
+      "pronunciation_hint": "슬뤼 시 실 부 플레",
+      "usage_note": "가리키며 주문.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Celui-ci, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_006",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Celle-ci, s'il vous plaît.",
+      "ko": "이것 주세요.",
+      "pronunciation_hint": "셀 시 실 부 플레",
+      "usage_note": "여성명사를 가리킬 때.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Celle-ci, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_007",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Un peu plus, s'il vous plaît.",
+      "ko": "조금 더 주세요.",
+      "pronunciation_hint": "앙 푀 플뤼 실 부 플레",
+      "usage_note": "무게 조절.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Un peu plus, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_008",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Un peu moins, s'il vous plaît.",
+      "ko": "조금 덜 주세요.",
+      "pronunciation_hint": "앙 푀 무앵 실 부 플레",
+      "usage_note": "무게 조절.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Un peu moins, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_009",
+      "category": "market",
+      "priority": "P0",
+      "fr": "C'est tout, merci.",
+      "ko": "이것이 전부입니다.",
+      "pronunciation_hint": "세 투 메르시",
+      "usage_note": "주문 마무리.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "C'est tout, merci."
+    },
+    {
+      "id": "fr_market_010",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Vous avez du fromage de chèvre ?",
+      "ko": "염소치즈 있나요?",
+      "pronunciation_hint": "부 자베 뒤 프로마주 드 셰브르",
+      "usage_note": "시장·치즈가게.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Vous avez du fromage de chèvre ?"
+    },
+    {
+      "id": "fr_market_011",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Je peux goûter ?",
+      "ko": "맛봐도 될까요?",
+      "pronunciation_hint": "주 푀 구테",
+      "usage_note": "시식 가능 여부.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Je peux goûter ?"
+    },
+    {
+      "id": "fr_market_012",
+      "category": "market",
+      "priority": "P0",
+      "fr": "C'est combien ?",
+      "ko": "얼마인가요?",
+      "pronunciation_hint": "세 콩비앙",
+      "usage_note": "가격 문의.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "C'est combien ?"
+    },
+    {
+      "id": "fr_market_013",
+      "category": "market",
+      "priority": "P0",
+      "fr": "À emporter, s'il vous plaît.",
+      "ko": "포장해 주세요.",
+      "pronunciation_hint": "아 앙포르테 실 부 플레",
+      "usage_note": "빵집·카페.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "À emporter, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_014",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Sur place, s'il vous plaît.",
+      "ko": "여기서 먹겠습니다.",
+      "pronunciation_hint": "쉬르 플라스 실 부 플레",
+      "usage_note": "카페·베이커리.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Sur place, s'il vous plaît."
+    },
+    {
+      "id": "fr_market_015",
+      "category": "market",
+      "priority": "P0",
+      "fr": "Vous prenez la carte ?",
+      "ko": "카드 받나요?",
+      "pronunciation_hint": "부 프르네 라 카르트",
+      "usage_note": "시장·소규모 상점.",
+      "tags": [
+        "market"
+      ],
+      "audio_text": "Vous prenez la carte ?"
+    },
+    {
+      "id": "fr_hotel_001",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "J'ai une réservation.",
+      "ko": "예약했습니다.",
+      "pronunciation_hint": "제 윈 레제르바시옹",
+      "usage_note": "호텔·숙소.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "J'ai une réservation."
+    },
+    {
+      "id": "fr_hotel_002",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "Au nom de Kim.",
+      "ko": "Kim 이름입니다.",
+      "pronunciation_hint": "오 농 드 김",
+      "usage_note": "예약 확인.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "Au nom de Kim."
+    },
+    {
+      "id": "fr_hotel_003",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "À quelle heure est le check-in ?",
+      "ko": "체크인은 몇 시입니까?",
+      "pronunciation_hint": "아 켈 외르 에 르 체크인",
+      "usage_note": "숙소.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "À quelle heure est le check-in ?"
+    },
+    {
+      "id": "fr_hotel_004",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "À quelle heure doit-on partir ?",
+      "ko": "몇 시까지 체크아웃해야 합니까?",
+      "pronunciation_hint": "아 켈 외르 두아통 파르티르",
+      "usage_note": "숙소.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "À quelle heure doit-on partir ?"
+    },
+    {
+      "id": "fr_hotel_005",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "Où est l'ascenseur ?",
+      "ko": "엘리베이터는 어디입니까?",
+      "pronunciation_hint": "우 에 라상쇠르",
+      "usage_note": "숙소.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "Où est l'ascenseur ?"
+    },
+    {
+      "id": "fr_hotel_006",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "Le Wi-Fi ne marche pas.",
+      "ko": "Wi-Fi가 작동하지 않습니다.",
+      "pronunciation_hint": "르 위피 느 마르슈 파",
+      "usage_note": "숙소 문제.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "Le Wi-Fi ne marche pas."
+    },
+    {
+      "id": "fr_hotel_007",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "Il n'y a pas d'eau chaude.",
+      "ko": "뜨거운 물이 나오지 않습니다.",
+      "pronunciation_hint": "일 니 아 파 도 쇼드",
+      "usage_note": "숙소 문제.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "Il n'y a pas d'eau chaude."
+    },
+    {
+      "id": "fr_hotel_008",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "La climatisation ne marche pas.",
+      "ko": "에어컨이 작동하지 않습니다.",
+      "pronunciation_hint": "라 클리마티자시옹 느 마르슈 파",
+      "usage_note": "숙소 문제.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "La climatisation ne marche pas."
+    },
+    {
+      "id": "fr_hotel_009",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "Pouvez-vous nous aider ?",
+      "ko": "도와주시겠습니까?",
+      "pronunciation_hint": "푸베 부 누 제데",
+      "usage_note": "숙소 문제.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "Pouvez-vous nous aider ?"
+    },
+    {
+      "id": "fr_hotel_010",
+      "category": "hotel",
+      "priority": "P1",
+      "fr": "Pouvons-nous laisser nos bagages ici ?",
+      "ko": "짐을 여기에 맡길 수 있을까요?",
+      "pronunciation_hint": "푸봉 누 레세 노 바가주 이시",
+      "usage_note": "체크인 전·체크아웃 후.",
+      "tags": [
+        "hotel"
+      ],
+      "audio_text": "Pouvons-nous laisser nos bagages ici ?"
+    },
+    {
+      "id": "fr_transport_001",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Où est la gare ?",
+      "ko": "역은 어디입니까?",
+      "pronunciation_hint": "우 에 라 가르",
+      "usage_note": "기차.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Où est la gare ?"
+    },
+    {
+      "id": "fr_transport_002",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Où est la station de métro ?",
+      "ko": "지하철역은 어디입니까?",
+      "pronunciation_hint": "우 에 라 스타시옹 드 메트로",
+      "usage_note": "도시교통.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Où est la station de métro ?"
+    },
+    {
+      "id": "fr_transport_003",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Un billet pour Lyon, s'il vous plaît.",
+      "ko": "리옹행 표 한 장 주세요.",
+      "pronunciation_hint": "앙 비예 푸르 리옹 실 부 플레",
+      "usage_note": "매표.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Un billet pour Lyon, s'il vous plaît."
+    },
+    {
+      "id": "fr_transport_004",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Deux billets, s'il vous plaît.",
+      "ko": "표 두 장 주세요.",
+      "pronunciation_hint": "되 비예 실 부 플레",
+      "usage_note": "매표.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Deux billets, s'il vous plaît."
+    },
+    {
+      "id": "fr_transport_005",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Quel quai ?",
+      "ko": "몇 번 승강장인가요?",
+      "pronunciation_hint": "켈 케",
+      "usage_note": "기차.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Quel quai ?"
+    },
+    {
+      "id": "fr_transport_006",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Ce train va à Lyon ?",
+      "ko": "이 열차 리옹 가나요?",
+      "pronunciation_hint": "스 트랭 바 아 리옹",
+      "usage_note": "방향 확인.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Ce train va à Lyon ?"
+    },
+    {
+      "id": "fr_transport_007",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Il faut changer ?",
+      "ko": "갈아타야 하나요?",
+      "pronunciation_hint": "일 포 샹제",
+      "usage_note": "환승 확인.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Il faut changer ?"
+    },
+    {
+      "id": "fr_transport_008",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Où est la correspondance ?",
+      "ko": "환승은 어디에서 하나요?",
+      "pronunciation_hint": "우 에 라 코레스퐁당스",
+      "usage_note": "환승.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Où est la correspondance ?"
+    },
+    {
+      "id": "fr_transport_009",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Le train a du retard ?",
+      "ko": "열차가 지연됐나요?",
+      "pronunciation_hint": "르 트랭 아 뒤 르타르",
+      "usage_note": "지연 확인.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Le train a du retard ?"
+    },
+    {
+      "id": "fr_transport_010",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Combien de retard ?",
+      "ko": "얼마나 지연됐나요?",
+      "pronunciation_hint": "콩비앙 드 르타르",
+      "usage_note": "지연 시간.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Combien de retard ?"
+    },
+    {
+      "id": "fr_transport_011",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "À quelle heure part le prochain train ?",
+      "ko": "다음 열차는 몇 시에 출발합니까?",
+      "pronunciation_hint": "아 켈 외르 파르 르 프로샹 트랭",
+      "usage_note": "시간 확인.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "À quelle heure part le prochain train ?"
+    },
+    {
+      "id": "fr_transport_012",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "À quelle heure arrive-t-on ?",
+      "ko": "몇 시에 도착합니까?",
+      "pronunciation_hint": "아 켈 외르 아리브통",
+      "usage_note": "도착 시간.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "À quelle heure arrive-t-on ?"
+    },
+    {
+      "id": "fr_transport_013",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "C'est direct ?",
+      "ko": "직행인가요?",
+      "pronunciation_hint": "세 디렉트",
+      "usage_note": "노선 확인.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "C'est direct ?"
+    },
+    {
+      "id": "fr_transport_014",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Où est la sortie ?",
+      "ko": "출구는 어디입니까?",
+      "pronunciation_hint": "우 에 라 소르티",
+      "usage_note": "역·메트로.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Où est la sortie ?"
+    },
+    {
+      "id": "fr_transport_015",
+      "category": "transport",
+      "priority": "P0",
+      "fr": "Cette place est libre ?",
+      "ko": "이 자리 비었나요?",
+      "pronunciation_hint": "세트 플라스 에 리브르",
+      "usage_note": "열차 좌석.",
+      "tags": [
+        "transport"
+      ],
+      "audio_text": "Cette place est libre ?"
+    },
+    {
+      "id": "fr_driving_001",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "J'ai une réservation de voiture.",
+      "ko": "렌터카를 예약했습니다.",
+      "pronunciation_hint": "제 윈 레제르바시옹 드 부아튀르",
+      "usage_note": "렌터카 픽업.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "J'ai une réservation de voiture."
+    },
+    {
+      "id": "fr_driving_002",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Assurance comprise ?",
+      "ko": "보험 포함인가요?",
+      "pronunciation_hint": "아쉬랑스 콩프리즈",
+      "usage_note": "렌터카.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Assurance comprise ?"
+    },
+    {
+      "id": "fr_driving_003",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Essence ou diesel ?",
+      "ko": "휘발유인가요, 디젤인가요?",
+      "pronunciation_hint": "에상스 우 디에젤",
+      "usage_note": "차량 연료 확인.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Essence ou diesel ?"
+    },
+    {
+      "id": "fr_driving_004",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Où dois-je rendre la voiture ?",
+      "ko": "어디에 차량을 반납합니까?",
+      "pronunciation_hint": "우 두아 주 랑드르 라 부아튀르",
+      "usage_note": "렌터카 반납.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Où dois-je rendre la voiture ?"
+    },
+    {
+      "id": "fr_driving_005",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Où est la station-service ?",
+      "ko": "주유소는 어디입니까?",
+      "pronunciation_hint": "우 에 라 스타시옹 세르비스",
+      "usage_note": "주유.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Où est la station-service ?"
+    },
+    {
+      "id": "fr_driving_006",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Où peut-on se garer ?",
+      "ko": "어디에 주차할 수 있나요?",
+      "pronunciation_hint": "우 푀통 스 가레",
+      "usage_note": "주차.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Où peut-on se garer ?"
+    },
+    {
+      "id": "fr_driving_007",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "C'est gratuit ?",
+      "ko": "무료인가요?",
+      "pronunciation_hint": "세 그라튀",
+      "usage_note": "주차 요금.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "C'est gratuit ?"
+    },
+    {
+      "id": "fr_driving_008",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Combien coûte le parking ?",
+      "ko": "주차비가 얼마입니까?",
+      "pronunciation_hint": "콩비앙 쿠트 르 파르킹",
+      "usage_note": "주차 요금.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Combien coûte le parking ?"
+    },
+    {
+      "id": "fr_driving_009",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Le parking est complet ?",
+      "ko": "주차장이 만차인가요?",
+      "pronunciation_hint": "르 파르킹 에 콩플레",
+      "usage_note": "주차.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Le parking est complet ?"
+    },
+    {
+      "id": "fr_driving_010",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Où est l'entrée du parking ?",
+      "ko": "주차장 입구는 어디입니까?",
+      "pronunciation_hint": "우 에 랑트레 뒤 파르킹",
+      "usage_note": "주차.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Où est l'entrée du parking ?"
+    },
+    {
+      "id": "fr_driving_011",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Où est la sortie du parking ?",
+      "ko": "주차장 출구는 어디입니까?",
+      "pronunciation_hint": "우 에 라 소르티 뒤 파르킹",
+      "usage_note": "주차.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Où est la sortie du parking ?"
+    },
+    {
+      "id": "fr_driving_012",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Je voudrais faire le plein.",
+      "ko": "가득 주유하고 싶습니다.",
+      "pronunciation_hint": "주 부드레 페르 르 플랭",
+      "usage_note": "주유.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Je voudrais faire le plein."
+    },
+    {
+      "id": "fr_driving_013",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Sans plomb 95, s'il vous plaît.",
+      "ko": "무연 95 휘발유로 부탁합니다.",
+      "pronunciation_hint": "상 플롱 카트르뱅캥즈 실 부 플레",
+      "usage_note": "주유소.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Sans plomb 95, s'il vous plaît."
+    },
+    {
+      "id": "fr_driving_014",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "Où est le péage ?",
+      "ko": "톨게이트는 어디입니까?",
+      "pronunciation_hint": "우 에 르 페아주",
+      "usage_note": "유료도로.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "Où est le péage ?"
+    },
+    {
+      "id": "fr_driving_015",
+      "category": "driving",
+      "priority": "P0",
+      "fr": "La route est fermée ?",
+      "ko": "도로가 폐쇄됐나요?",
+      "pronunciation_hint": "라 루트 에 페르메",
+      "usage_note": "도로 상황.",
+      "tags": [
+        "driving"
+      ],
+      "audio_text": "La route est fermée ?"
+    },
+    {
+      "id": "fr_sightseeing_001",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "Deux billets, s'il vous plaît.",
+      "ko": "표 두 장 주세요.",
+      "pronunciation_hint": "되 비예 실 부 플레",
+      "usage_note": "관광지 매표.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "Deux billets, s'il vous plaît."
+    },
+    {
+      "id": "fr_sightseeing_002",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "Nous avons déjà des billets.",
+      "ko": "이미 표가 있습니다.",
+      "pronunciation_hint": "누 자봉 데자 데 비예",
+      "usage_note": "예약 입장.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "Nous avons déjà des billets."
+    },
+    {
+      "id": "fr_sightseeing_003",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "À quelle heure ça ferme ?",
+      "ko": "몇 시에 닫나요?",
+      "pronunciation_hint": "아 켈 외르 사 페름",
+      "usage_note": "운영시간.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "À quelle heure ça ferme ?"
+    },
+    {
+      "id": "fr_sightseeing_004",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "La dernière entrée est à quelle heure ?",
+      "ko": "마지막 입장은 몇 시인가요?",
+      "pronunciation_hint": "라 데르니에르 앙트레 에 아 켈 외르",
+      "usage_note": "입장 마감.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "La dernière entrée est à quelle heure ?"
+    },
+    {
+      "id": "fr_sightseeing_005",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "Il faut réserver ?",
+      "ko": "예약해야 하나요?",
+      "pronunciation_hint": "일 포 레제르베",
+      "usage_note": "예약 여부.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "Il faut réserver ?"
+    },
+    {
+      "id": "fr_sightseeing_006",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "C'est compris dans le billet ?",
+      "ko": "입장권에 포함되어 있나요?",
+      "pronunciation_hint": "세 콩프리 당 르 비예",
+      "usage_note": "티켓 범위.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "C'est compris dans le billet ?"
+    },
+    {
+      "id": "fr_sightseeing_007",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "On peut prendre des photos ?",
+      "ko": "사진 찍어도 되나요?",
+      "pronunciation_hint": "옹 푀 프랑드르 데 포토",
+      "usage_note": "촬영 규정.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "On peut prendre des photos ?"
+    },
+    {
+      "id": "fr_sightseeing_008",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "Sans flash ?",
+      "ko": "플래시 없이요?",
+      "pronunciation_hint": "상 플라시",
+      "usage_note": "촬영 규정.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "Sans flash ?"
+    },
+    {
+      "id": "fr_sightseeing_009",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "Où commence la visite ?",
+      "ko": "관람은 어디서 시작하나요?",
+      "pronunciation_hint": "우 코망스 라 비지트",
+      "usage_note": "관람 동선.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "Où commence la visite ?"
+    },
+    {
+      "id": "fr_sightseeing_010",
+      "category": "sightseeing",
+      "priority": "P1",
+      "fr": "Il y a un audioguide en anglais ?",
+      "ko": "영어 오디오가이드가 있나요?",
+      "pronunciation_hint": "일 이 아 앙 노디오기드 앙 앙글레",
+      "usage_note": "관광지.",
+      "tags": [
+        "sightseeing"
+      ],
+      "audio_text": "Il y a un audioguide en anglais ?"
+    },
+    {
+      "id": "fr_shopping_001",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Vous avez ceci en plus petit ?",
+      "ko": "이것보다 작은 사이즈 있나요?",
+      "pronunciation_hint": "부 자베 스시 앙 플뤼 프티",
+      "usage_note": "쇼핑.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Vous avez ceci en plus petit ?"
+    },
+    {
+      "id": "fr_shopping_002",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Vous avez ceci en plus grand ?",
+      "ko": "이것보다 큰 사이즈 있나요?",
+      "pronunciation_hint": "부 자베 스시 앙 플뤼 그랑",
+      "usage_note": "쇼핑.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Vous avez ceci en plus grand ?"
+    },
+    {
+      "id": "fr_shopping_003",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Je peux essayer ?",
+      "ko": "입어봐도 되나요?",
+      "pronunciation_hint": "주 푀 에세이에",
+      "usage_note": "의류.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Je peux essayer ?"
+    },
+    {
+      "id": "fr_shopping_004",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Où sont les cabines d'essayage ?",
+      "ko": "탈의실은 어디입니까?",
+      "pronunciation_hint": "우 송 레 카빈 데세야주",
+      "usage_note": "의류.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Où sont les cabines d'essayage ?"
+    },
+    {
+      "id": "fr_shopping_005",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Je vais prendre celui-ci.",
+      "ko": "이것으로 하겠습니다.",
+      "pronunciation_hint": "주 베 프랑드르 슬뤼 시",
+      "usage_note": "구매 결정.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Je vais prendre celui-ci."
+    },
+    {
+      "id": "fr_shopping_006",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Vous avez un sac ?",
+      "ko": "봉투 있나요?",
+      "pronunciation_hint": "부 자베 앙 삭",
+      "usage_note": "구매.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Vous avez un sac ?"
+    },
+    {
+      "id": "fr_shopping_007",
+      "category": "shopping",
+      "priority": "P2",
+      "fr": "Je voudrais détaxer cet achat.",
+      "ko": "이 구매 건 면세 처리하고 싶습니다.",
+      "pronunciation_hint": "주 부드레 데탁세 세타샤",
+      "usage_note": "면세 가능한 상점.",
+      "tags": [
+        "shopping"
+      ],
+      "audio_text": "Je voudrais détaxer cet achat."
+    },
+    {
+      "id": "fr_emergency_001",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "J'ai besoin d'aide.",
+      "ko": "도움이 필요합니다.",
+      "pronunciation_hint": "제 브주앵 데드",
+      "usage_note": "긴급 상황.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "J'ai besoin d'aide."
+    },
+    {
+      "id": "fr_emergency_002",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "C'est urgent.",
+      "ko": "긴급합니다.",
+      "pronunciation_hint": "세 튀르장",
+      "usage_note": "긴급 상황.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "C'est urgent."
+    },
+    {
+      "id": "fr_emergency_003",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "Appelez la police, s'il vous plaît.",
+      "ko": "경찰을 불러 주세요.",
+      "pronunciation_hint": "아플레 라 폴리스 실 부 플레",
+      "usage_note": "긴급 상황.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "Appelez la police, s'il vous plaît."
+    },
+    {
+      "id": "fr_emergency_004",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "Appelez une ambulance, s'il vous plaît.",
+      "ko": "구급차를 불러 주세요.",
+      "pronunciation_hint": "아플레 윈 앙뷜랑스 실 부 플레",
+      "usage_note": "긴급 상황.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "Appelez une ambulance, s'il vous plaît."
+    },
+    {
+      "id": "fr_emergency_005",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "Où est la pharmacie la plus proche ?",
+      "ko": "가장 가까운 약국은 어디입니까?",
+      "pronunciation_hint": "우 에 라 파르마시 라 플뤼 프로슈",
+      "usage_note": "약국.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "Où est la pharmacie la plus proche ?"
+    },
+    {
+      "id": "fr_emergency_006",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "Je cherche un médecin.",
+      "ko": "의사를 찾고 있습니다.",
+      "pronunciation_hint": "주 셰르슈 앙 메드생",
+      "usage_note": "의료.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "Je cherche un médecin."
+    },
+    {
+      "id": "fr_emergency_007",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "J'ai perdu mon portefeuille.",
+      "ko": "지갑을 잃어버렸습니다.",
+      "pronunciation_hint": "제 페르뒤 몽 포르트푀유",
+      "usage_note": "분실.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "J'ai perdu mon portefeuille."
+    },
+    {
+      "id": "fr_emergency_008",
+      "category": "emergency",
+      "priority": "P0",
+      "fr": "J'ai perdu mon téléphone.",
+      "ko": "휴대폰을 잃어버렸습니다.",
+      "pronunciation_hint": "제 페르뒤 몽 텔레폰",
+      "usage_note": "분실.",
+      "tags": [
+        "emergency"
+      ],
+      "audio_text": "J'ai perdu mon téléphone."
+    }
+  ]
+}

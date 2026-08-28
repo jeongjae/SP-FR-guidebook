@@ -6,6 +6,7 @@
   "title": "프티 팔레 & 몽테뉴 패션위크 & 팔레 드 도쿄",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:00",
   "endTime": "20:30",
   "totalDuration": "12시간 30분",
@@ -31,6 +32,15 @@
       "summary": "프티 팔레 10:00 관람을 위해 아침식사 후 09:15 출발",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "DEPARTURE",
+          "detail": "09:15 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Concorde에서 1호선 환승 ➔ Champs-Élysées - Clemenceau역 (약 25분)."
+        }
+      ],
+      "executionNote": "프티 팔레 10:00 개관에 맞춰 09:15 숙소 출발.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +55,16 @@
       "lng": 2.3144,
       "summary": "1900년 만국박람회 보자르 궁전. 렘브란트 자화상, 쿠르베 <잠>, 모네 유화 무료 상설전 ➔ 아름다운 반원형 안뜰 정원 산책 (2시간)",
       "menu": null,
-      "reservation": "상설전 무료 자유 입장",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "FREE ENTRY",
+          "detail": "상설전 무료 자유 입장 · 수요일 10:00–18:00 개관 (월요일 휴관). 예약 불필요."
+        }
+      ],
+      "executionNote": "Avenue Winston Churchill 정문. 상설 컬렉션은 예약 없이 무료 입장 가능.",
+      "officialUrl": "https://www.petitpalais.paris.fr/",
       "optional": false,
       "place_ref": "petit-palais"
     },
@@ -56,35 +75,22 @@
       "end": "13:30",
       "name": "Chez Savy 8구 아르데코 비스트로 점심",
       "category": "food",
-      "lat": 48.868,
-      "lng": 2.31,
+      "lat": 48.8659,
+      "lng": 2.3082,
       "summary": "프티 팔레에서 도보 10~12분. 아브뉘 몽테뉴 한 블록 안쪽 골목이라 대로변 관광객 함정을 물리적으로 피하고, 문을 나서면 곧바로 몽테뉴 산책이 시작된다",
       "menu": "Épaule d'agneau confite façon Savy €32 · Foie de veau aux lardons · Tartare de bœuf, pommes paille",
       "reservation": null,
-      "optional": false,
-      "place_ref": "chez-savy",
       "executionStatuses": [
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "패션위크 SS27 3일차다. 이 권역 점심 수요가 급증하니 2~3주 전 전화 예약(+33 1 47 23 46 98)"
-        },
-        {
-          "type": "caution",
-          "label": "CAUTION",
-          "detail": "9/30 The Row 12:00 · Balmain 13:30 쇼가 몽테뉴·알마 인근이면 이 시간대에 보행 통제가 생긴다. 출발 1주 전 FHCM 최종 캘린더 확인"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "예산은 앙트레+메인 2코스에 물(carafe d'eau)로 1인 €33~42"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Chez Savy (23 Rue Bayard) 12:15 점심 사전 예약 (+33 1 47 23 46 98) · 패션위크 기간 수요 증가 대비."
         }
-      ]
+      ],
+      "executionNote": "23 Rue Bayard, 75008 Paris (Franklin D. Roosevelt / Alma-Marceau 인근).",
+      "officialUrl": "https://www.chezsavy.fr/",
+      "optional": false,
+      "place_ref": "chez-savy"
     },
     {
       "id": "fashion-week-montaigne",
@@ -98,7 +104,16 @@
       "summary": "Avenue Montaigne 명품 플래그십 쇼윈도 ➔ Grand Palais 일대 패션 피플 분위기 ➔ Palais de Tokyo / SPHERE 공공 컨텍스트 ➔ 센 강변 Alma 인도교 도보 산책 (4시간)",
       "menu": null,
       "reservation": null,
-      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "도보 피로 시 산책을 2시간으로 단축하고 팔레 드 도쿄 카페 또는 센 강변 휴식으로 전환."
+        }
+      ],
+      "executionNote": "Avenue Montaigne ➔ Avenue du Président Wilson ➔ Palais de Tokyo. 공개 거리 분위기 체험 중심.",
+      "officialUrl": "https://palaisdetokyo.com/",
+      "optional": true,
       "place_ref": "grand-palais"
     },
     {
@@ -108,30 +123,22 @@
       "end": "20:30",
       "name": "Stéphane Martin 15구 미식 비스트로 저녁",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
+      "lat": 48.8458,
+      "lng": 2.2858,
       "summary": "숙소에서 도보 4분. Menu du Marché €32면 전채·메인·디저트가 다 들어온다. 조용한 평일 저녁에 15구의 제대로 된 한 끼를 넣는 자리다",
       "menu": "Émincé de foie gras de canard cru €19 · Loup de mer, pommes rattes €22 · Moelleux au chocolat de Tanzanie €11",
       "reservation": null,
-      "optional": false,
-      "place_ref": "stephane-martin",
       "executionStatuses": [
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "예약 필수. 공식 홈페이지 또는 TheFork"
-        },
-        {
-          "type": "caution",
-          "label": "CAUTION",
-          "detail": "일요일·월요일 휴무. 9/30(수)은 정상 영업이지만 소규모 비스트로라 연차 휴무를 3~7일 전 확인"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Stéphane Martin (67 Rue des Entrepreneurs) 19:30 저녁 사전 예약 (TheFork/공식 홈페이지) · 수요일 정상 영업."
         }
-      ]
+      ],
+      "executionNote": "67 Rue des Entrepreneurs, 75015 Paris. 숙소(78 Rue de Lourmel) 도보 4분.",
+      "officialUrl": null,
+      "optional": false,
+      "place_ref": "stephane-martin"
     }
   ],
   "legs": [

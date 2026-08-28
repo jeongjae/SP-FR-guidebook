@@ -6,6 +6,7 @@
   "title": "Lyon→Paris, 17일 거주자가 되는 날",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "09:30",
   "endTime": "21:30",
   "totalDuration": "12시간",
@@ -28,9 +29,18 @@
       "category": "hotel",
       "lat": 45.746467,
       "lng": 4.868933,
-      "summary": "Lagrange Aparthotel Lyon Lumière 체크아웃 후 택시/메트로로 Part-Dieu역 이동 (15분 소요)",
+      "summary": "Lagrange Aparthotel Lyon Lumière 11:00 체크아웃 후 택시(또는 메트로 D+B선)로 Part-Dieu역 이동 (15분 소요)",
       "menu": null,
-      "reservation": "체크아웃 완료 (Lagrange Lumière [CONFIRMED])",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CHECKOUT 11:00",
+          "detail": "Lagrange Aparthotel Lyon Lumière 11:00 체크아웃 완료."
+        }
+      ],
+      "executionNote": "수하물 이동: 호텔 프런트 콜택시(또는 Place Béraudier 방면 이동) ➔ Gare de Lyon-Part-Dieu 11:30 이전 도착.",
+      "officialUrl": "https://www.garesetconnexions.sncf/fr/gares-services/lyon-part-dieu",
       "optional": false,
       "place_ref": null
     },
@@ -46,6 +56,15 @@
       "summary": "역사 내 카페/Paul에서 가벼운 샌드위치 점심 식사 후 12:45 전광판 플랫폼 확인 및 대기",
       "menu": "바게트 샌드위치, 에스프레소, 에끌레어",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "CHECK VOIE",
+          "detail": "12:45부터 역사 전광판에서 TGV 6618 탑승 승강장(Voie) 확인."
+        }
+      ],
+      "executionNote": "13:04 발차 20분 전(12:44) 탑승 승강장 전광판 표시 및 에스컬레이터 이동.",
+      "officialUrl": "https://www.garesetconnexions.sncf/fr/gares-services/lyon-part-dieu",
       "optional": false,
       "place_ref": null
     },
@@ -60,7 +79,16 @@
       "lng": 2.3734,
       "summary": "TGV INOUI 6618 탑승 (13:04 출발 ➔ 15:00 파리 리옹역 도착, 1등석 편안한 1시간 56분 고속주행)",
       "menu": null,
-      "reservation": "예약확정 TGV INOUI 6618 · 1등석 13호차 356(Jeongjae)·357(Jungah) ([CONFIRMED]) — 13:04 발차",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "TGV INOUI 6618 · 9/24 13:04 Lyon Part-Dieu → 15:00 Paris Gare de Lyon · 1등석 13호차 356·357 확정."
+        }
+      ],
+      "executionNote": "13호차 1등석 상단 수하물 선반 및 대형 캐리어 랙 적재.",
+      "officialUrl": "https://www.sncf-connect.com/train/horaires/lyon/paris",
       "optional": false,
       "place_ref": null
     },
@@ -75,7 +103,21 @@
       "lng": 2.2894,
       "summary": "Gare de Lyon 북서쪽 Place Louis Armand 공식 Taxi 승강장에서 택시 탑승(약 30~45분 소요, 파리 시내 구간 미터기 요금 약 €25~35, 비공식 호객 차량 회피) ➔ 78 Rue de Lourmel 정문 도착. 15:00 정식 체크인, 15박 장기 체류 짐 풀기, 세탁기/주방/Wi-Fi 시설 점검",
       "menu": null,
-      "reservation": "예약완료 78 Rue de Lourmel, 75015 Paris (9/24 15:00 체크인 ~ 10/9 11:00 체크아웃)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "78 Rue de Lourmel, 75015 Paris 15박 장기 체류 예약 확정 · 15:00 체크인."
+        },
+        {
+          "type": "caution",
+          "label": "OFFICIAL TAXI",
+          "detail": "역사 출구 비공식 호객꾼 전면 무시 · Place Louis Armand 바닥 유도선 따라 공식 승강장(File officielle) 탑승."
+        }
+      ],
+      "executionNote": "파리 도심 택시는 미터 요금제(약 €25~35). 78 Rue de Lourmel 도어락/열쇠 수령 지침 사전 대조.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -91,6 +133,9 @@
       "summary": "Monoprix Lourmel / Franprix에서 15박 생활용 식재료, 생수, 생필품 구매 및 Rue du Commerce / Champ de Mars 방향 800m 적응 산책",
       "menu": "파리 바게트, 버터, 잼, 와인, 과일",
       "reservation": null,
+      "executionStatuses": [],
+      "executionNote": "Monoprix Lourmel (126 Rue de Lourmel, 월~토 08:30–21:00) 또는 Franprix (인근).",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -106,25 +151,17 @@
       "summary": "장보기를 마치고 숙소에서 도보 3분. 매일 11:00–22:30 논스톱에 예약이 필요 없어, 이동으로 지친 도착일에 판단할 것이 없는 집이다",
       "menu": "Pizza Margherita · Tagliatelle carbonara · Tiramisu",
       "reservation": null,
-      "optional": false,
-      "place_ref": "le-relais-du-15eme",
       "executionStatuses": [
-        {
-          "type": "confirmed",
-          "label": "OPEN",
-          "detail": "매일 11:00–22:30 논스톱 · 연중무휴 · 예약 불필요"
-        },
         {
           "type": "optional",
           "label": "OPTIONAL",
-          "detail": "장보기가 넉넉했다면 숙소식으로 대체해도 된다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "피로가 크거나 장보기가 넉넉했다면 외식 대신 숙소식으로 대체해도 된다."
         }
-      ]
+      ],
+      "executionNote": "59 Rue de Lourmel, 75015 Paris (숙소 도보 3분). 매일 11:00–22:30 논스톱 운영, 예약 불필요.",
+      "officialUrl": null,
+      "optional": false,
+      "place_ref": "le-relais-du-15eme"
     }
   ],
   "legs": [
@@ -175,7 +212,7 @@
     }
   ],
   "transport": [
-    "TGV INOUI 6618: Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00 도착 (1등석 13호차 356·357 확정 [CONFIRMED])",
+    "TGV INOUI 6618: Lyon Part-Dieu 13:04 ➔ Paris Gare de Lyon 15:00 도착 (1등석 13호차 356·357 확정)",
     "T07 파리 도착이동(추천): Gare de Lyon 북서쪽 Place Louis Armand 공식 Taxi 승강장 ➔ 78 Rue de Lourmel (약 30~45분 소요, 파리 시내 미터기 요금 약 €25~35)",
     "T07 대안: 메트로 14호선(Gare de Lyon ➔ Madeleine 환승) ➔ 8호선(Lourmel/Commerce역 하차, 약 35분, 1인 €2.55)",
     "주의: 역사 출구 비공식 호객꾼 전면 무시 및 바닥 유도선 따라 공식 승강장 줄(File officielle) 탑승. 시내 이동은 공항 정액제 아님"

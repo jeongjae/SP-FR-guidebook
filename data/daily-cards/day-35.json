@@ -6,6 +6,7 @@
   "title": "루브르 박물관 4시간 마스터피스 집중 관람",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:00",
   "endTime": "21:00",
   "totalDuration": "13시간",
@@ -31,6 +32,15 @@
       "summary": "오전 숙소 생활 루틴 및 여유로운 점심 식사",
       "menu": "바게트 트라디시옹, 잠봉 뵈르 샌드위치",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "OPEN",
+          "detail": "Boulangerie Pichard (68 Rue Cambronne) 금요일 07:00–13:30, 15:30–20:00 정상 영업."
+        }
+      ],
+      "executionNote": "숙소(78 Rue de Lourmel)에서 도보 10~12분. 금요일 아침 바게트 및 샌드위치 조달.",
+      "officialUrl": "https://www.facebook.com/BoulangeriePichardParis/",
       "optional": false,
       "place_ref": "boulangerie-pichard"
     },
@@ -45,7 +55,16 @@
       "lng": 2.3376,
       "summary": "유리 피라미드 진입 ➔ 드농관 1층 <모나리자>, <사모트라케의 니케>, 다비드 <나폴레옹 대관식>, 들라크루아 <민중을 이끄는 자유의 여신> ➔ 쉴리관 <밀로의 비너스>, 스핑크스 ➔ 리슐리외관 나폴레옹 3세 아파트 (4시간)",
       "menu": null,
-      "reservation": "사전 시간지정 예약 필수 (14:00 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TIMED ENTRY",
+          "detail": "Musée du Louvre 14:00 슬롯 사전 시간지정 예매 필수 · 13:40까지 Pyramide réservation 입구 도착 (화요일 휴관)."
+        }
+      ],
+      "executionNote": "Cour Napoléon 유리 피라미드 정문 (시간지정 예약자 줄). 모바일 티켓 QR 준비.",
+      "officialUrl": "https://www.louvre.fr/",
       "optional": false,
       "place_ref": "musee-du-louvre"
     },
@@ -61,7 +80,16 @@
       "summary": "루브르 르네상스 안뜰 쿠르 카레(Cour Carrée)를 통과하여 예술의 다리(Pont des Arts) 및 센 강변 일몰 산책 (75분)",
       "menu": null,
       "reservation": null,
-      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "루브르 4시간 집중 관람 후 다리 피로 시 산책을 30분으로 단축하고 15구 숙소로 조기 복귀."
+        }
+      ],
+      "executionNote": "Cour Carrée ➔ Pont des Arts ➔ Quai de Conti. 피로 시 단축 레버.",
+      "officialUrl": "https://www.paris.fr/",
+      "optional": true,
       "place_ref": null
     },
     {
@@ -71,30 +99,22 @@
       "end": "21:00",
       "name": "Sawadee 태국 저녁 (15구)",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
+      "lat": 48.8475,
+      "lng": 2.2942,
       "summary": "루브르 4시간 관람과 센 강변 일몰 산책 뒤 숙소 도보 4분. 프렌치가 일주일 넘게 이어진 시점에 얼큰한 국물을 넣는다",
       "menu": "Soupe de crevettes à la citronnelle 똠얌 €8 · 바나나잎 코코넛 대구 €16 · Mangue fraîche au riz gluant €12",
       "reservation": null,
-      "optional": false,
-      "place_ref": "sawadee-paris",
       "executionStatuses": [
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "전화 예약만 받는다 — +33 1 45 77 68 90"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "일요일·월요일 영업이 출처마다 정반대다. 10/2은 금요일이라 문제없지만 날짜를 옮길 때는 전화로 확인"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Sawadee (53 Avenue Émile Zola) 금요일 저녁 사전 전화 예약 (+33 1 45 77 68 90) 권장."
         }
-      ]
+      ],
+      "executionNote": "53 Avenue Émile Zola, 75015 Paris. 숙소 도보 4분 (Charles Michels역 인근).",
+      "officialUrl": "https://www.sawadee.fr/",
+      "optional": false,
+      "place_ref": "sawadee-paris"
     }
   ],
   "legs": [

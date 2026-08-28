@@ -6,6 +6,7 @@
   "title": "오르세 카사트 특별전 개막 & 마레 지구 예술 산책",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:00",
   "endTime": "21:15",
   "totalDuration": "13시간",
@@ -31,6 +32,15 @@
       "summary": "아침·운동·집안일 뒤 콩방시옹 화요 시장(07:00–13:30)에서 장을 보고 숙소에서 가벼운 점심",
       "menu": "제철 과일, 치즈, 바게트, 로티세리",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "CONVENTION MARKET",
+          "detail": "Marché Convention 화요 시장(07:00–13:30) 장보기 · 신선 과일, 치즈, 로티세리 치킨 조달 후 숙소 점심."
+        }
+      ],
+      "executionNote": "Rue de Convention (Rue de Lourmel~Rue Boucicaut 구간) 화요 시장 ➔ 숙소 점심.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": "marche-convention"
     },
@@ -45,7 +55,16 @@
       "lng": 2.3266,
       "summary": "프랑스 최초 대규모 회고전 <Mary Cassatt. L'indépendante> 개막 당일 특별전 집중 관람 (14:00 슬롯, 90–120분)",
       "menu": null,
-      "reservation": "사전 시간지정 예약 (14:00 슬롯 권장)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TIMED ENTRY",
+          "detail": "Musée d'Orsay 특별전 14:00 슬롯 사전 시간지정 예매 필수 · 13:45까지 Entrée 1 - Quai (Entrance 1 - Quay) 도착 (월요일 휴관)."
+        }
+      ],
+      "executionNote": "1 Rue de la Légion d'Honneur (Entrée 1 - Quai 센 강변 입구). 개막 당일(10/6) 관람.",
+      "officialUrl": "https://www.musee-orsay.fr/",
       "optional": false,
       "place_ref": "musee-d-orsay"
     },
@@ -60,7 +79,21 @@
       "lng": 2.3622,
       "summary": "마레 지구 오텔 살레 피카소 미술관 상설 컬렉션 및 마레 골목 산책",
       "menu": null,
-      "reservation": "상설전 시간지정 (16:30 슬롯 선택)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "피로 시 피카소 미술관 실내 관람을 생략하고 마레 골목 및 보주 광장 산책으로 전환."
+        },
+        {
+          "type": "book",
+          "label": "TIMED TICKET",
+          "detail": "방문 시 16:30 슬롯 온라인 시간지정 티켓 사전 예매 권장 (€16) · 화요일 10:30–18:00 개관 (월요일 휴관)."
+        }
+      ],
+      "executionNote": "5 Rue de Thorigny, 75003 Paris (Hôtel Salé). 화요일 10:30–18:00 개관 (월요일 휴관).",
+      "officialUrl": "https://www.museepicassoparis.fr/",
       "optional": true,
       "place_ref": "musee-picasso-paris"
     },
@@ -75,7 +108,16 @@
       "lng": 2.3625,
       "summary": "카르나발레 파리 역사박물관 정원 및 보주 광장 붉은 벽돌 아케이드 회랑 산책",
       "menu": "Carette 마카롱 / 쇼콜라 쇼",
-      "reservation": "상설전 무료 개방",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "카르나발레 안뜰 정원 및 보주 광장 무료 자유 산책 (18:45 마레 저녁 식당 이동)."
+        }
+      ],
+      "executionNote": "23 Rue de Sévigné, 75003 Paris (카르나발레 정원) ➔ Place des Vosges 아케이드 회랑.",
+      "officialUrl": "https://www.carnavalet.paris.fr/",
       "optional": true,
       "place_ref": "musee-carnavalet"
     },
@@ -86,8 +128,8 @@
       "end": "20:30",
       "name": "Chez Janou 저녁 (마레 프로방스)",
       "category": "food",
-      "lat": 48.8572,
-      "lng": 2.3625,
+      "lat": 48.8562,
+      "lng": 2.3672,
       "summary": "보주 광장에서 도보 4분. 30년 넘은 동네 프로방스 식당이라 rue des Rosiers 관광 축에서 비껴 있다. Chemin Vert에서 8호선을 타면 환승 없이 15구까지 직행",
       "menu": "Ratatouille froide · Petits farcis provençaux · Mousse au chocolat (도기 볼째 무제한)",
       "reservation": null,
@@ -95,19 +137,11 @@
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "1~2주 전 예약(chezjanou.com 또는 +33 1 42 72 28 41). 예약 시간에 늦으면 테이블을 넘긴다"
-        },
-        {
-          "type": "caution",
-          "label": "CAUTION",
-          "detail": "저녁 서비스는 19:00에 연다. 카르나발레·보주 광장을 18:45에 끝내고 도보 6분으로 이동한다 — 19:00 예약에 여유가 없다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Chez Janou (2 Rue Roger Verlomme) 19:00 저녁 사전 예약 (chezjanou.com 또는 +33 1 42 72 28 41) · 화요일 정상 영업."
         }
       ],
+      "executionNote": "2 Rue Roger Verlomme, 75003 Paris (Place des Vosges 북동측 도보 4분).",
+      "officialUrl": "https://www.chezjanou.com/",
       "optional": false,
       "place_ref": "chez-janou"
     },
@@ -123,9 +157,17 @@
       "summary": "Chemin Vert 8호선 Balard 방면 직통 → Lourmel (환승 없음)",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "METRO 8",
+          "detail": "메트로 8호선 Chemin Vert역 탑승 ➔ Lourmel역 하차 (환승 없이 직통 약 30분)."
+        }
+      ],
+      "executionNote": "Chemin Vert역(도보 5분)에서 메트로 8호선 Balard행 탑승 ➔ Lourmel역 도착.",
+      "officialUrl": "https://www.ratp.fr/",
       "optional": false,
-      "place_ref": null,
-      "executionStatuses": []
+      "place_ref": null
     }
   ],
   "legs": [
@@ -180,7 +222,7 @@
     "메트로 8호선 (마레 ➔ Lourmel / 15구)"
   ],
   "food": [
-    "숙소 점심",
+    "숙소 점심 (콩방시옹 시장 식재료)",
     "Chez Janou 마레 저녁 (19:00·예약 필수)"
   ],
   "highlights": [

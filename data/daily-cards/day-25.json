@@ -6,6 +6,7 @@
   "title": "Silk & Gastronomy — 일하는 언덕과 먹는 도시",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:45",
   "endTime": "19:30",
   "totalDuration": "10시간 45분",
@@ -31,6 +32,15 @@
       "summary": "메트로 C선을 타고 플라토 정상(Croix-Rousse역) 하차 ➔ 대로변(Boulevard de la Croix-Rousse) 화요 대형 로컬 전통 시장(신선 과일, 치즈, 로컬 빵) 탐방 및 Le Mur des Canuts 벽화 외관 산책 (90분)",
       "menu": "에스프레소, 크루아상",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "TUESDAY MARKET",
+          "detail": "화요일 06:00–13:30 Boulevard de la Croix-Rousse 대형 전통 시장 운영."
+        }
+      ],
+      "executionNote": "Metro D (Monplaisir) ➔ Saxe-Gambetta 환승 (Metro B) ➔ Hôtel de Ville 환승 (Metro C) ➔ Croix-Rousse역.",
+      "officialUrl": "https://www.lyon-france.com/",
       "optional": false,
       "place_ref": "croix-rousse"
     },
@@ -45,7 +55,16 @@
       "lng": 4.8322,
       "summary": "10:15~10:45 메종 데 카뉘(10-12 Rue d'Ivry) 도보 이동 및 등록 ➔ 11:00~11:50 19세기 전통 자카르(Jacquard) 수동 직조기 실제 작동 시연 및 비단 직공(Canuts) 역사 해설 가이드 투어 (50분)",
       "menu": null,
-      "reservation": "11:00 직조 시연 슬롯 현장/사전 예약 (€10)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "GUIDED TOUR",
+          "detail": "11:00 자카르 직조 시연 가이드 투어 (€10) · 10:45까지 현장 도착 및 티켓 확인."
+        }
+      ],
+      "executionNote": "10-12 Rue d'Ivry, 69004 Lyon (Croix-Rousse역 도보 3분). 화요일 10:00–18:00 개관.",
+      "officialUrl": "https://www.maisondescanuts.fr/",
       "optional": false,
       "place_ref": "croix-rousse"
     },
@@ -60,7 +79,16 @@
       "lng": 4.8519,
       "summary": "폴 보퀴즈 시장 내 해산물 바에서 신선한 생굴과 샤르도네, 샤퀴테리 테이스팅",
       "menu": "생굴 플래터, 로제트 드 리옹, 생마르슬랭 치즈",
-      "reservation": "시장 내 식당 현장 착석 (12:30)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "LUNCH SEATING",
+          "detail": "12:30 전후 시장 내 해산물 바(Maison Clessienne 등) 착석 · 점심 피크 시 약간의 대기 고려."
+        }
+      ],
+      "executionNote": "Croix-Rousse ➔ TCL C13 버스로 Halles de Lyon Paul Bocuse 정류장 하차 (약 20분 소요).",
+      "officialUrl": "https://www.halles-de-lyon-paulbocuse.com/",
       "optional": false,
       "place_ref": "halles-de-lyon-paul-bocuse"
     },
@@ -76,6 +104,9 @@
       "summary": "Mère Richard 생마르슬랭 치즈 명가, Sibilia 소시송 브리오셰 샤퀴테리, Chocolatier Sève 핑크 프랄린 타르트 등 최고 명장(MOF) 부티크 컴팩트 탐방 (30분)",
       "menu": "생마르슬랭 치즈, 프랄린 타르트 포장",
       "reservation": null,
+      "executionStatuses": [],
+      "executionNote": "저녁 숙소식 또는 익일 안시 당일치기용 보존식(치즈·샤퀴테리) 소량 구매.",
+      "officialUrl": "https://www.halles-de-lyon-paulbocuse.com/",
       "optional": false,
       "place_ref": "halles-de-lyon-paul-bocuse"
     },
@@ -90,8 +121,17 @@
       "lng": 4.855,
       "summary": "프랑스 최대 도심 공원. 센트럴 호숫가 산책, 국제 장미원(Roseraie), 19세기 돔형 열대 온실 식물원 산책 및 평화로운 잔디밭 휴식 (2시간)",
       "menu": null,
-      "reservation": "무료 입장",
-      "optional": false,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "도보 피로 시 체류를 1시간으로 단축하거나 생략하고 16:30 조기 복귀."
+        }
+      ],
+      "executionNote": "Halles에서 C4 버스 탑승 ➔ Parc Tête d'Or - Churchill 하차 (10분).",
+      "officialUrl": "https://www.lyon.fr/lieu/parcs/parc-de-la-tete-dor",
+      "optional": true,
       "place_ref": "parc-de-la-tete-d-or"
     },
     {
@@ -106,6 +146,9 @@
       "summary": "메트로 B+D선으로 숙소(Lagrange Lumière) 복귀. 시장에서 구매한 치즈/과일로 가벼운 저녁 식사 및 익일 Annecy 당일치기 준비",
       "menu": "생마르슬랭 치즈, 바게트, 과일, 차",
       "reservation": null,
+      "executionStatuses": [],
+      "executionNote": "공원 남서쪽에서 C1/C4 버스 또는 Masséna/Charpennes역 ➔ Metro B/D선으로 Monplaisir-Lumière 복귀.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     }

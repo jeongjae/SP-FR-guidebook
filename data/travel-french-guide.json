@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0",
+  "language": "fr-FR",
+  "pronunciation_rules": [
+    {
+      "id": "vowels",
+      "title": "핵심 모음 규칙",
+      "rules": [
+        {
+          "pattern": "é, -er, -ez",
+          "sound": "[e] 에",
+          "example": "café (카페), parler (파를레), chez (셰)",
+          "note": "단어 끝의 er, ez도 깔끔한 \"에\"로 발음합니다."
+        },
+        {
+          "pattern": "è, ê, ai, ais",
+          "sound": "[ɛ] 애",
+          "example": "crème (크렘), fête (페트), mais (메), français (프랑세)",
+          "note": "입을 약간 더 벌린 \"애\" 소리입니다."
+        },
+        {
+          "pattern": "ou",
+          "sound": "[u] 우",
+          "example": "bonjour (봉주르), vous (부), tour (투르)",
+          "note": "항상 맑은 \"우\" 발음입니다."
+        },
+        {
+          "pattern": "u",
+          "sound": "[y] 위 (입술 둥글게)",
+          "example": "salut (살뤼), rue (뤼), menu (메뉘)",
+          "note": "입술을 둥글게 \"우\" 모양으로 모은 상태에서 혀는 \"이\" 소리를 냅니다."
+        },
+        {
+          "pattern": "oi",
+          "sound": "[wa] 와",
+          "example": "soir (수아르), croissant (크루아상), moi (무아)",
+          "note": "프랑스어 특유의 경쾌한 \"와\" 소리입니다."
+        },
+        {
+          "pattern": "au, eau",
+          "sound": "[o] 오",
+          "example": "château (샤토), eau (오), restaurant (레스토랑)",
+          "note": "철자는 길지만 단순한 \"오\"로 발음합니다."
+        },
+        {
+          "pattern": "eu, œu",
+          "sound": "[ø]/[œ] 외/어",
+          "example": "deux (되), beurre (뵈르), fleur (플뢰르)",
+          "note": "입술을 앞으로 내밀며 둥글게 내는 소리입니다."
+        }
+      ]
+    },
+    {
+      "id": "nasals",
+      "title": "비음 (코로 울리는 모음)",
+      "rules": [
+        {
+          "pattern": "an, en, am, em",
+          "sound": "[ɑ̃] 앙",
+          "example": "France (프랑스), entrée (앙트레), temps (탕)",
+          "note": "입을 크게 벌리고 코를 울리는 깊은 \"앙\"입니다."
+        },
+        {
+          "pattern": "on, om",
+          "sound": "[ɔ̃] 옹",
+          "example": "bon (봉), pont (퐁), nom (농)",
+          "note": "입술을 둥글게 모은 채 내는 비음입니다."
+        },
+        {
+          "pattern": "in, ain, ein, im",
+          "sound": "[ɛ̃] 앵/앙",
+          "example": "vin (뱅), pain (팽), plein (플랭), train (트랭)",
+          "note": "입을 옆으로 당기며 비음으로 내는 \"앵(앙)\" 소리입니다."
+        }
+      ]
+    },
+    {
+      "id": "consonants",
+      "title": "자음 & 특수문자 규칙",
+      "rules": [
+        {
+          "pattern": "ch",
+          "sound": "[ʃ] 쉬",
+          "example": "château (샤토), chef (셰프), chocolat (쇼콜라)",
+          "note": "영어의 sh와 같은 부드러운 \"쉬\"입니다."
+        },
+        {
+          "pattern": "gn",
+          "sound": "[ɲ] 냐/뉴/니",
+          "example": "cognac (코냑), vigne (비뉴), champagne (샹파뉴)",
+          "note": "이탈리아어 gn, 스페인어 ñ과 같은 음가입니다."
+        },
+        {
+          "pattern": "j, ge, gi",
+          "sound": "[ʒ] 주/지",
+          "example": "bonjour (봉주르), fromage (프로마주), gîte (지트)",
+          "note": "영어 j(ㅈ)보다 마찰이 부드러운 유성 자음입니다."
+        },
+        {
+          "pattern": "qu",
+          "sound": "[k] ㅋ",
+          "example": "quai (케), quatre (카트르), qui (키)",
+          "note": "u는 묵음이며 k 소리만 납니다."
+        },
+        {
+          "pattern": "ç (쎄디유)",
+          "sound": "[s] ㅅ",
+          "example": "français (프랑세), garçon (가르송)",
+          "note": "a, o, u 앞에서도 부드러운 \"스\" 발음을 유지시킵니다."
+        },
+        {
+          "pattern": "c",
+          "sound": "e, i 앞: [s] / a, o, u 앞: [k]",
+          "example": "merci (메르시), carte (카르트)",
+          "note": "뒤따르는 모음에 따라 음가가 달라집니다."
+        },
+        {
+          "pattern": "g",
+          "sound": "e, i 앞: [ʒ] / a, o, u 앞: [g]",
+          "example": "gare (가르), gîte (지트)",
+          "note": "뒤따르는 모음에 따라 음가가 달라집니다."
+        }
+      ]
+    },
+    {
+      "id": "silent_and_liaison",
+      "title": "끝 자음 묵음과 연음 (Liaison)",
+      "rules": [
+        {
+          "pattern": "단어 끝 자음 묵음",
+          "sound": "소리 없음",
+          "example": "Paris (파리), plat (플라), deux (되), vous (부), tard (타르)",
+          "note": "단어 끝의 d, p, s, t, x, z 등은 대개 발음하지 않습니다. (예외: C, R, F, L 계열 sac, mer, chef, hôtel 등은 발음)"
+        },
+        {
+          "pattern": "연음 (Liaison)",
+          "sound": "앞 자음 + 뒷 모음 결합",
+          "example": "les amis [레 자미], vous avez [부 자베], grand hôtel [그랑 토텔]",
+          "note": "앞 단어 끝의 묵음 자음이 뒤에 모음이나 무음 h로 시작하는 단어를 만나면 이어져 소리납니다. (s, x ➔ [z], d ➔ [t])"
+        }
+      ]
+    }
+  ],
+  "signs_and_menu": [
+    {
+      "category": "signs",
+      "title": "현장 표지 & 시설 안내",
+      "words": [
+        {
+          "fr": "Entrée",
+          "ko": "입구",
+          "pronunciation": "앙트레"
+        },
+        {
+          "fr": "Sortie",
+          "ko": "출구",
+          "pronunciation": "소르티"
+        },
+        {
+          "fr": "Ouvert",
+          "ko": "영업중 / 열림",
+          "pronunciation": "우베르"
+        },
+        {
+          "fr": "Fermé",
+          "ko": "휴무 / 닫힘",
+          "pronunciation": "페르메"
+        },
+        {
+          "fr": "Complet",
+          "ko": "만석 / 만차",
+          "pronunciation": "콩플레"
+        },
+        {
+          "fr": "Réservé",
+          "ko": "예약석 / 예약됨",
+          "pronunciation": "레제르베"
+        },
+        {
+          "fr": "Libre",
+          "ko": "빈자리 / 비어있음",
+          "pronunciation": "리브르"
+        },
+        {
+          "fr": "Gratuit",
+          "ko": "무료",
+          "pronunciation": "그라튀"
+        },
+        {
+          "fr": "Payant",
+          "ko": "유료",
+          "pronunciation": "페이양"
+        },
+        {
+          "fr": "Toilettes / WC",
+          "ko": "화장실",
+          "pronunciation": "투알레트"
+        },
+        {
+          "fr": "Interdit",
+          "ko": "금지",
+          "pronunciation": "앙테르디"
+        },
+        {
+          "fr": "Travaux",
+          "ko": "공사중",
+          "pronunciation": "트라보"
+        },
+        {
+          "fr": "Déviation",
+          "ko": "우회로",
+          "pronunciation": "데비아시옹"
+        }
+      ]
+    },
+    {
+      "category": "transit_driving",
+      "title": "교통 · 기차 · 운전 · 주차",
+      "words": [
+        {
+          "fr": "Gare",
+          "ko": "기차역",
+          "pronunciation": "가르"
+        },
+        {
+          "fr": "Quai",
+          "ko": "승강장 / 플랫폼",
+          "pronunciation": "케"
+        },
+        {
+          "fr": "Voie",
+          "ko": "선로 / 트랙 번호",
+          "pronunciation": "부아"
+        },
+        {
+          "fr": "Billet",
+          "ko": "승차권 / 티켓",
+          "pronunciation": "비예"
+        },
+        {
+          "fr": "Correspondance",
+          "ko": "환승",
+          "pronunciation": "코레스퐁당스"
+        },
+        {
+          "fr": "Retard",
+          "ko": "지연",
+          "pronunciation": "르타르"
+        },
+        {
+          "fr": "À l'heure",
+          "ko": "정시 운행",
+          "pronunciation": "아 뢰르"
+        },
+        {
+          "fr": "Parking",
+          "ko": "주차장",
+          "pronunciation": "파르킹"
+        },
+        {
+          "fr": "Stationnement",
+          "ko": "주차",
+          "pronunciation": "스타시오느망"
+        },
+        {
+          "fr": "Péage",
+          "ko": "고속도로 톨게이트",
+          "pronunciation": "페아주"
+        },
+        {
+          "fr": "Essence / Sans plomb",
+          "ko": "휘발유 / 무연휘발유",
+          "pronunciation": "에상스 / 상 플롱"
+        },
+        {
+          "fr": "Diesel / Gazole",
+          "ko": "디젤 / 경유",
+          "pronunciation": "디에젤 / 가졸"
+        }
+      ]
+    },
+    {
+      "category": "food_market",
+      "title": "식당 · 카페 · 시장 · 상점",
+      "words": [
+        {
+          "fr": "Boulangerie",
+          "ko": "빵집",
+          "pronunciation": "불랑주리"
+        },
+        {
+          "fr": "Pâtisserie",
+          "ko": "제과점",
+          "pronunciation": "파티스리"
+        },
+        {
+          "fr": "Fromagerie",
+          "ko": "치즈가게",
+          "pronunciation": "프로마주리"
+        },
+        {
+          "fr": "Boucherie / Charcuterie",
+          "ko": "정육점 / 가공육점",
+          "pronunciation": "부슈리 / 샤르퀴트리"
+        },
+        {
+          "fr": "Marché",
+          "ko": "시장",
+          "pronunciation": "마르셰"
+        },
+        {
+          "fr": "La carte / Le menu",
+          "ko": "단품 메뉴판 / 코스 메뉴",
+          "pronunciation": "라 카르트 / 르 메뉘"
+        },
+        {
+          "fr": "Entrée",
+          "ko": "전채요리 (스타터)",
+          "pronunciation": "앙트레"
+        },
+        {
+          "fr": "Plat (du jour)",
+          "ko": "메인요리 (오늘의 요리)",
+          "pronunciation": "플라 (뒤 주르)"
+        },
+        {
+          "fr": "Dessert",
+          "ko": "디저트",
+          "pronunciation": "데세르"
+        },
+        {
+          "fr": "L'addition",
+          "ko": "계산서",
+          "pronunciation": "라디시옹"
+        },
+        {
+          "fr": "Service compris",
+          "ko": "봉사료 포함",
+          "pronunciation": "세르비스 콩프리"
+        },
+        {
+          "fr": "Eau plate",
+          "ko": "일반 생수 (탄산 없음)",
+          "pronunciation": "오 플라트"
+        },
+        {
+          "fr": "Eau gazeuse",
+          "ko": "탄산수",
+          "pronunciation": "오 가죄즈"
+        },
+        {
+          "fr": "Carafe d'eau",
+          "ko": "무료 수돗물 한 병",
+          "pronunciation": "카라프 도"
+        },
+        {
+          "fr": "Vin rouge / blanc / rosé",
+          "ko": "레드 / 화이트 / 로제 와인",
+          "pronunciation": "뱅 루주 / 블랑 / 로제"
+        },
+        {
+          "fr": "Café / Expresso",
+          "ko": "에스프레소 커피",
+          "pronunciation": "카페 / 엑스프레소"
+        }
+      ]
+    }
+  ]
+}

@@ -54,6 +54,8 @@ TRANSIT_RESOURCES = ROOT / "data" / "transit-resources.json"
 TOURIST_MAPS = ROOT / "data" / "tourist-maps.json"
 IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 IMAGE_ALIASES = ROOT / "data" / "images" / "place-aliases.json"
+TRAVEL_FRENCH_PHRASES = ROOT / "data" / "travel-french-phrases.json"
+TRAVEL_FRENCH_GUIDE = ROOT / "data" / "travel-french-guide.json"
 
 WEEKDAY_KO = "월화수목금토일"
 
@@ -421,6 +423,22 @@ class Region:
                    for d in self.days if d.region == self.slug)
 
 
+@dataclass
+class FrenchPhrase:
+    id: str
+    category: str
+    priority: str
+    fr: str
+    ko: str
+    pronunciation_hint: str
+    usage_note: str = ""
+    tags: list[str] = field(default_factory=list)
+    audio_text: str = ""
+    aliases: list[str] = field(default_factory=list)
+    place_types: list[str] = field(default_factory=list)
+    day_ids: list[int] = field(default_factory=list)
+
+
 # ---------------------------------------------------------------- Trip
 
 @dataclass
@@ -430,6 +448,8 @@ class Trip:
     days: list[Day]
     regions: list[Region]
     places: dict[str, Place]
+    french_phrases: dict[str, FrenchPhrase] = field(default_factory=dict)
+    french_guide: dict = field(default_factory=dict)
 
     @property
     def total_days(self) -> int:
@@ -751,6 +771,36 @@ def load_region_editorial() -> dict[str, dict]:
     return out
 
 
+def load_travel_french() -> dict[str, FrenchPhrase]:
+    """data/travel-french-phrases.json 120개. 여행용 프랑스어 정본이다."""
+    if not TRAVEL_FRENCH_PHRASES.exists():
+        return {}
+    payload = _load_validated_json(TRAVEL_FRENCH_PHRASES)
+    out = {}
+    for p in payload.get("phrases", []):
+        out[p["id"]] = FrenchPhrase(
+            id=p["id"],
+            category=p["category"],
+            priority=p["priority"],
+            fr=p["fr"],
+            ko=p["ko"],
+            pronunciation_hint=p["pronunciation_hint"],
+            usage_note=p.get("usage_note", ""),
+            tags=list(p.get("tags") or []),
+            audio_text=p["audio_text"],
+            aliases=list(p.get("aliases") or []),
+            place_types=list(p.get("place_types") or []),
+            day_ids=list(p.get("day_ids") or []),
+        )
+    return out
+
+
+def load_travel_french_guide() -> dict:
+    if not TRAVEL_FRENCH_GUIDE.exists():
+        return {}
+    return json.loads(TRAVEL_FRENCH_GUIDE.read_text(encoding="utf-8"))
+
+
 def load_trip() -> Trip:
     itin = json.loads(ITINERARY.read_text(encoding="utf-8"))
     stays = itin["stays"]
@@ -759,6 +809,8 @@ def load_trip() -> Trip:
     transit = _load_validated_json(TRANSIT_FACTS).get("regions", {})
     transport_resources = _load_validated_json(TRANSIT_RESOURCES).get("regions", {})
     tourist_maps = _load_validated_json(TOURIST_MAPS).get("regions", {})
+    french_phrases = load_travel_french()
+    french_guide = load_travel_french_guide()
     region_checkins = {stay["key"]: _d(stay["checkin"]) for stay in stays}
     for slug, facts in transit.items():
         recheck_deadline = region_checkins.get(slug, _d(itin["trip"]["start"]))
@@ -932,6 +984,8 @@ def load_trip() -> Trip:
         start=_d(itin["trip"]["start"]),
         end=_d(itin["trip"]["end"]),
         days=days, regions=regions, places=places,
+        french_phrases=french_phrases,
+        french_guide=french_guide,
     )
 
 
@@ -952,6 +1006,10 @@ def validate(trip: Trip) -> list[str]:
 
     if len(trip.regions) != 9:  # RS01: verdon 추가로 8→9
         problems.append(f"지역이 9개가 아니다: {len(trip.regions)}개")
+
+    # 여행 프랑스어 정본 검증
+    if len(trip.french_phrases) != 120:
+        problems.append(f"여행 프랑스어 문구 수가 120개가 아니다: {len(trip.french_phrases)}개")
 
     # 날짜 연속성 — 하루라도 건너뛰면 일정이 어긋난 것이다
     for a, b in zip(trip.days, trip.days[1:]):

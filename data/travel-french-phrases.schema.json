@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jeongjae.github.io/SP-FR-guidebook/travel-french-phrases.schema.json",
+  "title": "Travel French Phrases Database v1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "language",
+    "note_ko",
+    "count",
+    "phrases"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "language": {
+      "type": "string",
+      "const": "fr-FR"
+    },
+    "note_ko": {
+      "type": "string",
+      "minLength": 1
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/phrase"
+      }
+    }
+  },
+  "$defs": {
+    "phrase": {
+      "type": "object",
+      "required": [
+        "id",
+        "category",
+        "priority",
+        "fr",
+        "ko",
+        "pronunciation_hint",
+        "usage_note",
+        "tags",
+        "audio_text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^fr_[a-z0-9_]+$"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "essential",
+            "restaurant",
+            "market",
+            "hotel",
+            "transport",
+            "driving",
+            "sightseeing",
+            "shopping",
+            "emergency"
+          ]
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "P0",
+            "P1",
+            "P2"
+          ]
+        },
+        "fr": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pronunciation_hint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "usage_note": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "audio_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "place_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "day_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

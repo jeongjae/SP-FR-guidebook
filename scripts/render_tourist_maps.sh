@@ -29,7 +29,6 @@ while IFS=$'\t' read -r slug src page; do
   [ "$slug" = "slug" ] && continue
   [ -n "${slug:-}" ] || continue
   dest="$OUT/$slug.jpg"
-  tmp="$OUT/.$slug.part.jpg"
 
   if [ -s "$dest" ]; then
     printf '  · %-26s 이미 있음\n' "$slug"; skipped=$((skipped+1)); continue
@@ -42,17 +41,16 @@ while IFS=$'\t' read -r slug src page; do
   if [ "$page" = "0" ]; then
     # 이미 이미지다 — 크기만 맞춘다
     if command -v convert >/dev/null; then
-      convert "$SRC/$src" -resize "${PX}x${PX}>" -quality "$Q" "$tmp" 2>/dev/null
+      convert "$SRC/$src" -resize "${PX}x${PX}>" -quality "$Q" "$dest" 2>/dev/null
     else
-      cp "$SRC/$src" "$tmp"
+      cp "$SRC/$src" "$dest"
     fi
   else
     pdftoppm -jpeg -jpegopt "quality=$Q" -scale-to "$PX" -f "$page" -l "$page" \
-             -singlefile "$SRC/$src" "${tmp%.jpg}" 2>/dev/null
+             -singlefile "$SRC/$src" "${dest%.jpg}" 2>/dev/null
   fi
 
-  if [ -s "$tmp" ]; then
-    mv -f "$tmp" "$dest"
+  if [ -s "$dest" ]; then
     printf 'OK  %s KB\n' "$(( $(wc -c < "$dest") / 1024 ))"; made=$((made+1))
   else
     printf '실패\n'; missing+=("$slug ← $src p$page")
@@ -60,7 +58,7 @@ while IFS=$'\t' read -r slug src page; do
 done < "$TABLE"
 
 echo
-echo "────────────────────────────────────────────"
+echo "─────────────────────────────────────────────"
 echo "새로 뽑음 $made · 건너뜀 $skipped · 못 뽑음 ${#missing[@]}"
 du -sh "$OUT" 2>/dev/null
 if [ ${#missing[@]} -gt 0 ]; then

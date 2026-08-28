@@ -948,6 +948,11 @@ def build_place(p: Place, trip: Trip) -> str:
             parts.append(sec_head("PHOTOS", "다른 사진"))
             parts.append(f'<div class="grid grid-2">{"".join(figs)}</div>')
 
+    # --- 현장 프랑스어 (Quick French) ------------------------------------
+    pqf = place_quick_french(p, trip, rel)
+    if pqf:
+        parts.append(pqf)
+
     # 같은 지역의 다른 장소 — 길이 끊기지 않게 옆으로 나가는 문을 둔다
     if region:
         sibs = [x for x in region.places if x.slug != p.slug and x.summary][:6]
@@ -1060,6 +1065,11 @@ def build_day(d: Day, trip: Trip) -> str:
     # --- 시간표 -----------------------------------------------------------
     parts.append(sec_head("TODAY", "오늘 일정"))
     parts.append(timeline(d, rel))
+
+    # --- 현장 프랑스어 (Quick French) ------------------------------------
+    dqf = day_quick_french(d, trip, rel)
+    if dqf:
+        parts.append(dqf)
 
     # --- 주의 ------------------------------------------------------------
     if d.backup:
@@ -2081,6 +2091,264 @@ def res_card(rec: dict, *, todo: bool = False) -> str:
 </article>"""
 
 
+# ================================================================ 여행 프랑스어
+
+DAY_FRENCH_MAP: dict[int, list[str]] = {
+    7: ["fr_transport_003", "fr_market_013", "fr_hotel_001"],
+    8: ["fr_market_001", "fr_market_011", "fr_restaurant_018"],
+    9: ["fr_transport_006", "fr_sightseeing_002", "fr_restaurant_008"],
+    10: ["fr_transport_005", "fr_restaurant_004", "fr_shopping_005"],
+    11: ["fr_transport_008", "fr_hotel_001", "fr_restaurant_001"],
+    12: ["fr_market_003", "fr_sightseeing_009", "fr_restaurant_013"],
+    13: ["fr_transport_002", "fr_sightseeing_007", "fr_restaurant_009"],
+    14: ["fr_driving_006", "fr_sightseeing_003", "fr_restaurant_016"],
+    15: ["fr_market_002", "fr_restaurant_017", "fr_shopping_001"],
+    16: ["fr_driving_001", "fr_market_010", "fr_driving_008"],
+    17: ["fr_driving_009", "fr_sightseeing_001", "fr_market_005"],
+    18: ["fr_driving_005", "fr_hotel_001", "fr_restaurant_015"],
+    19: ["fr_sightseeing_002", "fr_sightseeing_010", "fr_restaurant_006"],
+    20: ["fr_driving_010", "fr_driving_012", "fr_sightseeing_006"],
+    21: ["fr_driving_007", "fr_sightseeing_008", "fr_market_012"],
+    22: ["fr_driving_014", "fr_sightseeing_001", "fr_restaurant_007"],
+    23: ["fr_driving_004", "fr_transport_005", "fr_hotel_010"],
+    24: ["fr_transport_002", "fr_restaurant_010", "fr_market_004"],
+    25: ["fr_market_003", "fr_market_009", "fr_restaurant_020"],
+    26: ["fr_transport_011", "fr_sightseeing_007", "fr_restaurant_004"],
+    27: ["fr_hotel_004", "fr_transport_013", "fr_hotel_001"],
+    28: ["fr_transport_002", "fr_sightseeing_002", "fr_restaurant_001"],
+    29: ["fr_restaurant_017", "fr_sightseeing_009", "fr_shopping_003"],
+    30: ["fr_market_001", "fr_shopping_006", "fr_restaurant_018"],
+    31: ["fr_sightseeing_004", "fr_restaurant_013", "fr_essential_018"],
+    32: ["fr_sightseeing_002", "fr_sightseeing_008", "fr_restaurant_015"],
+    33: ["fr_sightseeing_002", "fr_sightseeing_010", "fr_essential_014"],
+    34: ["fr_transport_007", "fr_sightseeing_006", "fr_restaurant_008"],
+    35: ["fr_sightseeing_007", "fr_restaurant_004", "fr_market_014"],
+    36: ["fr_sightseeing_001", "fr_restaurant_006", "fr_shopping_005"],
+    37: ["fr_transport_014", "fr_sightseeing_002", "fr_restaurant_012"],
+    38: ["fr_market_002", "fr_market_015", "fr_restaurant_019"],
+    39: ["fr_sightseeing_009", "fr_shopping_007", "fr_restaurant_018"],
+    40: ["fr_sightseeing_002", "fr_restaurant_008", "fr_restaurant_020"],
+    41: ["fr_sightseeing_002", "fr_restaurant_002", "fr_restaurant_020"],
+    42: ["fr_hotel_004", "fr_shopping_007", "fr_transport_014"],
+    43: ["fr_essential_004", "fr_essential_020"],
+}
+
+PLACE_CATEGORY_FRENCH_MAP: dict[str, list[str]] = {
+    "restaurant": ["fr_restaurant_001", "fr_restaurant_013", "fr_restaurant_018"],
+    "cafe": ["fr_restaurant_017", "fr_market_014", "fr_restaurant_019"],
+    "bakery": ["fr_market_001", "fr_market_002", "fr_market_013"],
+    "market": ["fr_market_003", "fr_market_011", "fr_market_012"],
+    "food-hall": ["fr_market_009", "fr_market_014", "fr_restaurant_019"],
+    "wine-bar": ["fr_restaurant_015", "fr_restaurant_016", "fr_restaurant_018"],
+    "attraction": ["fr_sightseeing_002", "fr_sightseeing_007", "fr_sightseeing_009"],
+    "walk": ["fr_essential_018", "fr_essential_019", "fr_sightseeing_007"],
+    "transport-node": ["fr_transport_003", "fr_transport_005", "fr_transport_014"],
+}
+
+FRENCH_CATEGORY_LABEL: dict[str, str] = {
+    "essential": "기본표현",
+    "restaurant": "식당·카페",
+    "market": "빵집·시장",
+    "hotel": "숙소",
+    "transport": "기차·교통",
+    "driving": "렌터카·주차",
+    "sightseeing": "관광·미술관",
+    "shopping": "쇼핑",
+    "emergency": "긴급상황",
+}
+
+
+def phrase_card(p: FrenchPhrase, compact: bool = False) -> str:
+    cat_label = FRENCH_CATEGORY_LABEL.get(p.category, p.category)
+    priority_badge = f'<span class="badge badge-must">P0</span>' if p.priority == "P0" else ""
+    cat_badge = f'<span class="badge badge-neutral">{cat_label}</span>'
+    hint_html = f'<p class="phrase-hint">{esc(p.pronunciation_hint)}</p>' if p.pronunciation_hint else ""
+    note_html = f'<p class="phrase-note">{esc(p.usage_note)}</p>' if p.usage_note and not compact else ""
+    search_data = f'{p.fr} {p.ko} {p.pronunciation_hint} {" ".join(p.tags)}'.lower()
+
+    return f"""<article class="phrase-card" data-phrase-id="{p.id}" data-category="{p.category}" data-priority="{p.priority}" data-search="{esc(search_data)}">
+  <div class="phrase-head">
+    <div>{cat_badge} {priority_badge}</div>
+  </div>
+  <p class="phrase-fr">{esc(p.fr)}</p>
+  <p class="phrase-ko">{esc(p.ko)}</p>
+  {hint_html}
+  {note_html}
+  <div class="phrase-actions">
+    <button type="button" class="phrase-btn btn-phrase-audio" data-audio="{esc(p.audio_text or p.fr)}" aria-label="발음 듣기" title="발음 듣기">
+      {ic('sound')}<span>듣기</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-copy" data-copy="{esc(p.fr)}" aria-label="문구 복사" title="문구 복사">
+      {ic('copy')}<span>복사</span>
+    </button>
+    <button type="button" class="phrase-btn btn-phrase-fav" data-fav-id="{p.id}" aria-label="즐겨찾기" title="즐겨찾기">
+      {ic('star')}<span>저장</span>
+    </button>
+  </div>
+</article>"""
+
+
+def day_quick_french(d: Day, trip: Trip, rel: str) -> str:
+    if d.n < 7 or (d.region in ("barcelona", "girona") and d.n <= 6):
+        return ""
+    phrase_ids = DAY_FRENCH_MAP.get(d.n, [])
+    if not phrase_ids:
+        return ""
+    selected = [trip.french_phrases[pid] for pid in phrase_ids if pid in trip.french_phrases]
+    if not selected:
+        return ""
+    cards = "".join(phrase_card(p, compact=True) for p in selected)
+    return f"""<section class="quick-french-box">
+  <div class="quick-french-head">
+    <h3 class="quick-french-title">{ic('chat')} 오늘 현장 프랑스어 (Quick French)</h3>
+    <a href="{rel}/prepare/french.html" class="meta">전체 120개 회화 →</a>
+  </div>
+  <div class="grid grid-2">
+    {cards}
+  </div>
+</section>"""
+
+
+def place_quick_french(p: Place, trip: Trip, rel: str) -> str:
+    if p.region in ("barcelona", "girona"):
+        return ""
+    cat = p.entity_type
+    phrase_ids = PLACE_CATEGORY_FRENCH_MAP.get(cat) or ["fr_essential_001", "fr_essential_003", "fr_essential_005"]
+    selected = [trip.french_phrases[pid] for pid in phrase_ids if pid in trip.french_phrases]
+    if not selected:
+        return ""
+    cards = "".join(phrase_card(ph, compact=True) for ph in selected[:3])
+    return f"""<section class="quick-french-box">
+  <div class="quick-french-head">
+    <h3 class="quick-french-title">{ic('chat')} 현장 프랑스어 (Quick French)</h3>
+    <a href="{rel}/prepare/french.html" class="meta">전체 120개 회화 →</a>
+  </div>
+  <div class="grid grid-2">
+    {cards}
+  </div>
+</section>"""
+
+
+def build_travel_french(trip: Trip) -> str:
+    rel = ".."
+    phrases = list(trip.french_phrases.values())
+    guide = trip.french_guide or {}
+
+    pron_blocks = []
+    for section in guide.get("pronunciation_rules", []):
+        rows = []
+        for r in section.get("rules", []):
+            rows.append(f"""<tr>
+  <td><strong>{esc(r['pattern'])}</strong></td>
+  <td><span class="sound">{esc(r['sound'])}</span></td>
+  <td><span class="ex">{esc(r['example'])}</span></td>
+  <td><span class="meta">{esc(r['note'])}</span></td>
+</tr>""")
+        pron_blocks.append(f"""<div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">{esc(section['title'])}</h3>
+    <div class="table-wrap"><table class="rule-table">
+      <thead><tr><th>철자 패턴</th><th>한국어 발음 근사</th><th>대표 단어</th><th>발음 포인트</th></tr></thead>
+      <tbody>{''.join(rows)}</tbody>
+    </table></div>
+  </div>
+</div>""")
+    pron_html = "".join(pron_blocks)
+
+    signs_blocks = []
+    for cat in guide.get("signs_and_menu", []):
+        rows = []
+        for w in cat.get("words", []):
+            rows.append(f"""<tr>
+  <td><strong style="color:var(--primary)">{esc(w['fr'])}</strong></td>
+  <td>{esc(w['ko'])}</td>
+  <td><span class="meta">{esc(w.get('pronunciation', ''))}</span></td>
+</tr>""")
+        signs_blocks.append(f"""<div class="card" style="margin-bottom:var(--s3)">
+  <div class="card-body">
+    <h3 style="margin-top:0">{esc(cat['title'])}</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>프랑스어 표기</th><th>한국어 의미</th><th>발음 도움</th></tr></thead>
+      <tbody>{''.join(rows)}</tbody>
+    </table></div>
+  </div>
+</div>""")
+    signs_html = "".join(signs_blocks)
+
+    phrase_cards_html = "".join(phrase_card(p) for p in phrases)
+
+    index_search("여행 프랑스어 (Travel French)", "prepare/french.html", "prepare", "120개 필수 문구 · 10분 발음 · 현장 표지판")
+
+    return page(
+        title="여행 프랑스어", rel=rel, tab="prepare",
+        description="현장에서 즉시 쓰는 120개 필수 프랑스어 문구와 10분 발음·표지판 사전",
+        trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
+               ("여행 프랑스어", None)],
+        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header>
+  <h1>여행 프랑스어 (Travel French)</h1>
+  <p class="hero-dek">현장에서 즉시 쓰는 120개 필수 회화 문구와 10분 발음·표지판 사전입니다. 발음 듣기(TTS)와 복사, 즐겨찾기를 지원합니다.</p>
+</header>
+
+<div class="card" style="background:var(--surface-2);border:1px solid var(--line-strong)"><div class="card-body stack">
+  <div class="search-box" style="position:relative">
+    <input type="search" id="french-search" class="form-control" style="width:100%;min-height:44px;padding:var(--s2) var(--s4);border:1px solid var(--line-strong);border-radius:var(--r-full);background:var(--surface);font-size:var(--t-body)" placeholder="프랑스어 / 한국어 / 발음 / 태그 검색 (예: 계산, 주차, addition, merci)..." aria-label="프랑스어 문구 검색">
+  </div>
+  <div class="chips" id="french-filter-chips" role="toolbar" aria-label="프랑스어 카테고리 필터">
+    <button type="button" class="chip" data-category="all" aria-pressed="true">전체 (120)</button>
+    <button type="button" class="chip" data-category="fav" aria-pressed="false">⭐ 즐겨찾기</button>
+    <button type="button" class="chip" data-category="essential" aria-pressed="false">기본 20선 (P0)</button>
+    <button type="button" class="chip" data-category="restaurant" aria-pressed="false">식당·카페</button>
+    <button type="button" class="chip" data-category="market" aria-pressed="false">빵집·시장</button>
+    <button type="button" class="chip" data-category="hotel" aria-pressed="false">숙소</button>
+    <button type="button" class="chip" data-category="transport" aria-pressed="false">기차·교통</button>
+    <button type="button" class="chip" data-category="driving" aria-pressed="false">렌터카·주차</button>
+    <button type="button" class="chip" data-category="sightseeing" aria-pressed="false">관광·미술관</button>
+    <button type="button" class="chip" data-category="shopping" aria-pressed="false">쇼핑</button>
+    <button type="button" class="chip" data-category="emergency" aria-pressed="false">긴급상황</button>
+  </div>
+</div></div>
+
+<section id="french-phrases-section">
+  <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PHRASES</span><h2 class="sec-title" id="french-list-title">상황별 회화 (120문구)</h2></div></div>
+  <div id="french-no-results" class="alert-card alert-card-caution" style="display:none">
+    {ic('alert')} <span>검색 결과가 없습니다.</span>
+    <button type="button" class="btn btn-quiet" id="french-reset-btn" style="margin-inline-start:var(--s2)">전체 보기</button>
+  </div>
+  <div class="grid grid-2" id="french-phrase-grid">
+    {phrase_cards_html}
+  </div>
+</section>
+
+<section id="french-pronunciation-section" style="margin-top:var(--s5)">
+  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('tip')} 10분 발음 & 읽기 규칙 (French in 10 Minutes)</h2></summary>
+    <div class="acc-body stack" style="margin-top:var(--s3)">
+      <p class="meta">정확한 음성학 학습이 아니라 간판과 메뉴를 읽기 위한 최소한의 발음 규칙입니다.</p>
+      {pron_html}
+    </div>
+  </details>
+</section>
+
+<section id="french-signs-section" style="margin-top:var(--s3)">
+  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('book')} 현장 표지판 & 메뉴 필수 어휘 사전</h2></summary>
+    <div class="acc-body stack" style="margin-top:var(--s3)">
+      <p class="meta">거리 표지, 역 안내판, 메뉴판에서 가장 빈번히 마주치는 단어들입니다.</p>
+      {signs_html}
+    </div>
+  </details>
+</section>
+
+<div class="btn-row" style="margin-top:var(--s4)">
+  <a class="btn btn-secondary" href="french.html">{ic('chat')}여행 프랑스어</a>
+  <a class="btn btn-secondary" href="emergency.html">{ic('alert')}긴급 연락처</a>
+  <a class="btn btn-secondary" href="index.html">{ic('check')}준비 메인</a>
+  <a class="btn btn-secondary" href="../schedule.html">{ic('today')}전체 일정</a>
+</div>
+
+</div></div>"""
+    )
+
+
 def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
     """준비 — 무엇을 예약·확인해야 하는가.
 
@@ -2139,11 +2407,15 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 
 {dropped_html}
 
-<div class="btn-row"><a class="btn btn-secondary" href="emergency.html">
+<div class="btn-row"><a class="btn btn-secondary" href="french.html">
+  {ic('chat')}여행 프랑스어</a>
+  <a class="btn btn-secondary" href="emergency.html">
   {ic('alert')}긴급 연락처</a>
   <a class="btn btn-secondary" href="../offline.html">
   {ic('download')}오프라인 준비</a></div>
 </div></div>""")
+
+    out["french.html"] = build_travel_french(trip)
 
     out["emergency.html"] = page(
         title="긴급", rel=rel, tab="prepare",
@@ -2326,6 +2598,7 @@ PWA_CORE_PATHS = (
     "map/index.html",
     "prepare/index.html",
     "prepare/emergency.html",
+    "prepare/french.html",
     "assets/style.css",
     "assets/app.js",
     "assets/search-index.js",

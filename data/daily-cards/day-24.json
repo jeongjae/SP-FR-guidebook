@@ -6,6 +6,7 @@
   "title": "Fourvière와 Vieux Lyon",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:30",
   "endTime": "21:30",
   "totalDuration": "13시간",
@@ -30,7 +31,16 @@
       "lng": 4.8267,
       "summary": "Monplaisir-Lumière역에서 메트로 D선 탑승 후 Vieux Lyon역 환승, Funicular F2 푸니쿨라로 푸르비에르 언덕 직통 상행 (수직고도 120m 5분 극복)",
       "menu": null,
-      "reservation": "TCL 비접촉 결제 (€2.10, 일일 상한 €7.10·2026-09-01 개정 요금 재확인)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "TCL TICKET",
+          "detail": "TCL 비접촉 결제 또는 24h 일일권 (€7.10) 개시 · Vieux Lyon역 F2 환승."
+        }
+      ],
+      "executionNote": "Monplaisir-Lumière역(Metro D) → Vieux Lyon 환승 → Funicular F2 푸르비에르 승강장.",
+      "officialUrl": "https://www.tcl.fr/",
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +55,16 @@
       "lng": 4.8225,
       "summary": "푸르비에르 대성당 내부 화려한 모자이크 관람, 에스플러나드 전망대(리옹 도심·벨쿠르·몽블랑 뷰), 기원전 15년 고대 로마 대극장/오데온 유적 (2시간)",
       "menu": null,
-      "reservation": "대성당/로마극장 무료 입장",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "FREE ADMISSION",
+          "detail": "대성당 내부 및 고대 로마극장 야외 유적 무료 입장 (07:00–19:00)."
+        }
+      ],
+      "executionNote": "대성당 에스플러나드 전망대 → 로마 대극장(Théâtres Romains) 도보 5분.",
+      "officialUrl": "https://www.fourviere.org/",
       "optional": false,
       "place_ref": "fourviere"
     },
@@ -61,6 +80,9 @@
       "summary": "대성당 뒤편 로제르 정원의 완만한 숲길 산책로를 따라 Vieux Lyon 생장 대성당 방면으로 도보 하산 (무릎 부하 최소화, 45분)",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [],
+      "executionNote": "계단 대신 완만한 사면 정원길을 통해 Saint-Jean 대성당 뒤편으로 진입한다.",
+      "officialUrl": "https://www.lyon-france.com/",
       "optional": false,
       "place_ref": null
     },
@@ -75,7 +97,16 @@
       "lng": 4.8272,
       "summary": "생장 거리 인근 비스트로 테라스 점심 (생라파엘 파스티세리, 프랄린 브리오슈)",
       "menu": "살라드 리요네즈, 가벼운 비스트로 런치",
-      "reservation": "현장 선택",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "LUNCH CHOICE",
+          "detail": "생장 거리 메인 통로의 호객 식당을 피하고 안쪽 골목 비스트로나 가벼운 샐러드/베이커리 선택."
+        }
+      ],
+      "executionNote": "저녁 Daniel et Denise 정통 부숑 코스가 예정되어 있으므로 점심은 과식하지 않고 가볍게 진행한다.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": "vieux-lyon"
     },
@@ -91,6 +122,15 @@
       "summary": "16세기 유네스코 르네상스 구시가지. Saint-Jean 대성당, 공개 트라불(Passage de la Tour Rose, 54 Rue Saint-Jean 등 공공 개방 통로) 도보 탐방 (2시간)",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "caution",
+          "label": "TRABOULE ETIQUETTE",
+          "detail": "트라불은 주민 실제 거주 공간이므로 정숙 유지 및 개방 표지판(Convention Cour et Traboule) 준수."
+        }
+      ],
+      "executionNote": "주요 개방 트라불: 54 Rue Saint-Jean ➔ 27 Rue du Bœuf (Long Traboule), Tour Rose (16 Rue du Bœuf).",
+      "officialUrl": "https://www.lyon-france.com/",
       "optional": false,
       "place_ref": "vieux-lyon"
     },
@@ -106,6 +146,15 @@
       "summary": "붉은 인도교 생조르주(Passerelle Saint-Georges)를 건너 프레스킬 서안 및 손 강변 파스텔 가옥 조망, 카페 에스프레소",
       "menu": "에스프레소, 로컬 맥주",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "도보 피로가 있거나 저녁 전 1시간 휴식이 필요하면 생략하고 숙소로 직행."
+        }
+      ],
+      "executionNote": "Passerelle Saint-Georges 건넌 뒤 Bellecour역 또는 Guillotière 방면에서 메트로 D선 탑승.",
+      "officialUrl": null,
       "optional": true,
       "place_ref": null
     },
@@ -116,11 +165,20 @@
       "end": "21:30",
       "name": "Daniel et Denise 정통 부숑 만찬",
       "category": "food",
-      "lat": 45.746467,
-      "lng": 4.868933,
+      "lat": 45.7592,
+      "lng": 4.8465,
       "summary": "MOF 조제프 비올라 셰프의 공인 부숑. 세계 챔피언 파테 앙 크루트와 타블리에 드 사푀르",
       "menu": "파테 앙 크루트, 타블리에 드 사푀르, 프랄린 타르트",
-      "reservation": "사전 예약 필수 (19:45)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "BOOKING REQUIRED",
+          "detail": "Daniel et Denise Créqui (156 Rue de Créqui) 19:00/19:45 예약 필수."
+        }
+      ],
+      "executionNote": "지점 확인: Daniel et Denise Créqui (69003 Lyon, 메트로 B선 Place Guichard 또는 Saxe-Gambetta 도보 5분).",
+      "officialUrl": "https://danieletdenise.fr/",
       "optional": false,
       "place_ref": "daniel-et-denise"
     }

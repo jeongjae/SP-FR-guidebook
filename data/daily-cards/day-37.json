@@ -6,6 +6,7 @@
   "title": "개선문상 경마 대회 (Qatar Prix de l'Arc de Triomphe)",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "09:30",
   "endTime": "20:30",
   "totalDuration": "11시간",
@@ -30,7 +31,16 @@
       "lng": 2.234,
       "summary": "10:30 출발 ➔ 메트로 10호선 Porte d'Auteuil역 ➔ 개선문상 전용 무료 셔틀버스 탑승 ➔ 11:30 파리롱샹 경마장 도착",
       "menu": null,
-      "reservation": "Qatar Prix de l'Arc 티켓 (General Admission / Grandstand)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "FREE SHUTTLE",
+          "detail": "메트로 10호선 Porte d'Auteuil역 출구에서 France Galop 전용 무료 셔틀버스(Navette) 탑승 (10~15분 간격 운행)."
+        }
+      ],
+      "executionNote": "10:30 숙소 출발 ➔ 메트로 10호선 Charles Michels 탑승 ➔ Porte d'Auteuil역 ➔ 공식 셔틀버스 탑승 ➔ 11:30 파리롱샹 도착.",
+      "officialUrl": "https://www.francegalop-live.com/",
       "optional": false,
       "place_ref": null
     },
@@ -43,9 +53,23 @@
       "category": "sight",
       "lat": 48.858,
       "lng": 2.234,
-      "summary": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 16:05 개선문상 메인 레이스(2,400m) 직관, 우승마 시상식 관람 (6.5시간)",
+      "summary": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 오후 메인 레이스(Prix de l'Arc de Triomphe 2,400m) 직관, 우승마 시상식 관람 (6.5시간)",
       "menu": "푸드빌리지 버거/샴페인, 프렌치 프라이",
-      "reservation": "예약확정 Qatar Prix de l'Arc de Triomphe",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "TICKETED EVENT",
+          "detail": "Qatar Prix de l'Arc de Triomphe 공식 티켓 구매 완료 (France Galop 확정 티켓) · 모바일 QR 및 신분증 지참."
+        },
+        {
+          "type": "check",
+          "label": "RACE TIME",
+          "detail": "메인 레이스 출발 시각(통상 16:00~16:05경)은 2026 공식 race timetable 확정 발표 후 재확인."
+        }
+      ],
+      "executionNote": "Hippodrome de ParisLongchamp (2 Route des Tribunes, 75016 Paris). 스마트 캐주얼 복장, France Galop 확정 모바일 티켓 QR 및 신분증 지참.",
+      "officialUrl": "https://www.francegalop-live.com/evenement/qatar-prix-de-larc-de-triomphe/",
       "optional": false,
       "place_ref": null
     },
@@ -56,30 +80,22 @@
       "end": "20:30",
       "name": "Breizh Café 갈레트 저녁 (15구)",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
+      "lat": 48.8485,
+      "lng": 2.2875,
       "summary": "롱샹에서 지쳐 돌아오는 날이다. 일요일 11:30–22:00 연속이라 도착 시간이 자유롭고, 갈레트 한 장이면 40분에 끝난다. 숙소 도보 5분",
       "menu": "Galette andouille de Guémené €17.00 · Huîtres Prat-ar-Coum 6개 €18.50 · Crêpe caramel au beurre salé €7.80",
       "reservation": null,
-      "optional": false,
-      "place_ref": "breizh-cafe-charles-michels",
       "executionStatuses": [
         {
-          "type": "confirmed",
-          "label": "OPEN",
-          "detail": "금·토·일 11:30–22:00 브레이크 없음 · 연중무휴. 10/4은 일요일이라 도착 시간을 맞출 필요가 없다"
-        },
-        {
-          "type": "optional",
-          "label": "OPTIONAL",
-          "detail": "굴과 농가 시드르를 붙이면 가벼운 저녁이 특별해진다"
-        },
-        {
           "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "label": "OPEN",
+          "detail": "Breizh Café (1 Place Étienne Pernet / 15구) 일요일 11:30–22:00 논스톱 영업 · 예약 없이 현장 착석 가능."
         }
-      ]
+      ],
+      "executionNote": "1 Place Étienne Pernet, 75015 Paris (Félix Faure / Charles Michels 인근). 숙소 도보 5분.",
+      "officialUrl": "https://www.breizhcafe.com/",
+      "optional": false,
+      "place_ref": "breizh-cafe-charles-michels"
     }
   ],
   "legs": [

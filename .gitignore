@@ -9,3 +9,10 @@ __pycache__/
 .venv/
 .media-downloads/
 .test_validation.lock
+
+# 관광 조망지도 원본 316MB — 저장소에 넣지 않는다.
+# 받는 법은 scripts/tourist_maps_pages.tsv 와 _maps_download/manifest*.tsv 에 있다.
+_maps_download/
+
+# 기기 브리지가 파일을 지우지 못해 옮겨 두는 자리
+_to_delete/
