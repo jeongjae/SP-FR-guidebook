@@ -2343,61 +2343,309 @@ def build_travel_french(trip: Trip) -> str:
 
 
 
-def build_paris_museum_booking() -> str:
-    """준비 — 파리 박물관·전시 예약 실행표 (RS02, Jason 2026-08-28 지시).
+PARIS_MUSEUM_BOOKINGS = [
+    {
+        "id": "grand-palais|2026-09-25|special",
+        "slug": "grand-palais",
+        "name": "Grand Palais — Cézanne et nous",
+        "day": 28,
+        "date": "9/25 (금)",
+        "schedule": "특별전 (개막 9/23 직후)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "판매 시작 즉시",
+        "action_date": "지금",
+        "pmp": "PMP 비대상 (특별전 별도 티켓)",
+        "plan_b": "동일 주간(Day 28~31) 타 시간대 슬롯 조회, 실패 시 오르세/루브르 특별전 우선",
+        "note": "개막 9/23 직후 방문 — 원하는 시간대 조기 선점 필수",
+        "official_url": "https://www.grandpalais.fr/",
+    },
+    {
+        "id": "musee-du-luxembourg|2026-09-26|special",
+        "slug": "musee-du-luxembourg",
+        "name": "Musée du Luxembourg — Warhol",
+        "day": 29,
+        "date": "9/26 (토)",
+        "schedule": "특별전 (시간지정 티켓)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "3~4주 전",
+        "action_date": "지금",
+        "pmp": "PMP 비대상 (특별전 별도)",
+        "plan_b": "±1~2시간 슬롯 변경, 뤽상부르 공원 산책 및 생제르맹 탐방 시간과 연동 조정",
+        "note": "원하는 시간대 확보",
+        "official_url": "https://museeduluxembourg.fr/",
+    },
+    {
+        "id": "musee-de-l-orangerie|2026-09-27|permanent",
+        "slug": "musee-de-l-orangerie",
+        "name": "Musée de l'Orangerie",
+        "day": 30,
+        "date": "9/27 (일)",
+        "schedule": "상설 및 수련 연작 (시간지정 필수)",
+        "canonical_status": "check-sale",
+        "stage": "2차 · 9월 초",
+        "when": "2~4주 전",
+        "action_date": "8월 말~9월 초",
+        "pmp": "PMP 포함 · 시간예약 별도 (PMP 무료 슬롯 예약)",
+        "plan_b": "오르세 복합티켓(Billet jumelé) 또는 PMP 무료 시간지정 슬롯 확보",
+        "note": "Orsay와 결합권 검토",
+        "official_url": "https://www.musee-orangerie.fr/",
+    },
+    {
+        "id": "musee-gustave-moreau|2026-09-28|general",
+        "slug": "musee-gustave-moreau",
+        "name": "Musée Gustave Moreau",
+        "day": 31,
+        "date": "9/28 (월)",
+        "schedule": "일반관람",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/14 전후",
+        "pmp": "PMP 포함",
+        "plan_b": "현장 대기 입장 가능(소규모 미술관), 필요 시 직전 온라인 예약",
+        "note": "예약 급하지 않음",
+        "official_url": "https://musee-moreau.fr/",
+    },
+    {
+        "id": "musee-d-orsay|2026-09-29|09:30",
+        "slug": "musee-d-orsay",
+        "name": "Musée d'Orsay",
+        "day": 32,
+        "date": "9/29 (화)",
+        "schedule": "09:30 개장 첫 슬롯 (시간지정)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "3~4주 전",
+        "action_date": "지금",
+        "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 예약)",
+        "plan_b": "09:30 실패 시 10:00~10:30 차선 슬롯 예약 후 당일 오후 로댕 미술관 시간 조정",
+        "note": "지정시간 일정 — 조기 확보",
+        "official_url": "https://www.musee-d-orsay.fr/",
+    },
+    {
+        "id": "musee-rodin|2026-09-29|14:30",
+        "slug": "musee-rodin",
+        "name": "Musée Rodin",
+        "day": 32,
+        "date": "9/29 (화)",
+        "schedule": "14:30 입장",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/14 전후",
+        "pmp": "PMP 포함",
+        "plan_b": "오전 오르세 소요 시간에 따라 현장 PMP 패스트트랙 또는 모바일 직전 발권",
+        "note": "오전 Orsay 일정에 종속",
+        "official_url": "https://www.musee-rodin.fr/",
+    },
+    {
+        "id": "versailles|2026-10-01|morning",
+        "slug": "versailles",
+        "name": "Château de Versailles",
+        "day": 34,
+        "date": "10/1 (목)",
+        "schedule": "Passport 티켓 + 오전 시간지정",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "1~2개월 전",
+        "action_date": "지금",
+        "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 시간슬롯 예약)",
+        "plan_b": "09:00~10:00 오전 슬롯 우선 확보, 정원/트리아농 오후 관람 순서 유지",
+        "note": "Passport + 시간지정 입장 — 파리 근교 핵심 일정",
+        "official_url": "https://www.chateauversailles.fr/",
+    },
+    {
+        "id": "musee-du-louvre|2026-10-02|14:00",
+        "slug": "musee-du-louvre",
+        "name": "Musée du Louvre",
+        "day": 35,
+        "date": "10/2 (금)",
+        "schedule": "14:00 지정시간 (Horodaté)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "3~4주 전",
+        "action_date": "지금~9/2",
+        "pmp": "PMP 포함 · 시간예약 필수 (PMP 전용 무료 슬롯)",
+        "plan_b": "14:00 실패 시 13:30 또는 14:30 인접 슬롯 선택, 피라미드 중앙 입구 줄 대기",
+        "note": "14:00 슬롯 유지 권장 — 오후 집중 동선",
+        "official_url": "https://www.ticketlouvre.fr/",
+    },
+    {
+        "id": "musee-marmottan-monet|2026-10-03|14:00",
+        "slug": "musee-marmottan-monet",
+        "name": "Musée Marmottan Monet",
+        "day": 36,
+        "date": "10/3 (토)",
+        "schedule": "14:00 입장",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/18 전후",
+        "pmp": "PMP 비대상 (사립 미술관)",
+        "plan_b": "현장 발권 또는 방문 1~2일 전 온라인 예매",
+        "note": "일정 유연성 유지",
+        "official_url": "https://www.marmottan.fr/",
+    },
+    {
+        "id": "musee-jacquemart-andre|2026-10-05|general",
+        "slug": "musee-jacquemart-andre",
+        "name": "Musée Jacquemart-André",
+        "day": 38,
+        "date": "10/5 (월)",
+        "schedule": "리노베이션 재개관 특별전/상설",
+        "canonical_status": "check-sale",
+        "stage": "2차 · 9월 초",
+        "when": "2~4주 전",
+        "action_date": "9/7~15",
+        "pmp": "PMP 비대상 (사립 컬렉션)",
+        "plan_b": "온라인 회차 사전 예매 필수(재개관 혼잡 대비), 9월 초 오픈 즉시 확인",
+        "note": "특별전이면 조금 빨리",
+        "official_url": "https://www.musee-jacquemart-andre.com/",
+    },
+    {
+        "id": "musee-d-orsay|2026-10-06|special",
+        "slug": "musee-d-orsay",
+        "name": "Musée d'Orsay — Mary Cassatt 특별전",
+        "day": 39,
+        "date": "10/6 (화)",
+        "schedule": "메리 카사트 특별전",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "판매 가능 즉시",
+        "action_date": "지금 확인·예약",
+        "pmp": "확인 필요 (특별전 단독/추가 예약 규정 점검)",
+        "plan_b": "특별전 단독 회차 미오픈 시 일반 오르세 상설권 + 현장 특별전 입장 옵션 검토",
+        "note": "일반 Orsay 입장(9/29)과 별도로 판단 · 회차 판매 여부 재확인",
+        "official_url": "https://www.musee-d-orsay.fr/",
+    },
+    {
+        "id": "musee-picasso-paris|2026-10-06|13:00",
+        "slug": "musee-picasso-paris",
+        "name": "Musée Picasso Paris",
+        "day": 39,
+        "date": "10/6 (화)",
+        "schedule": "13:00 (선택적 방문)",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/20 전후",
+        "pmp": "PMP 포함",
+        "plan_b": "마레 지구 일정 진행 중 현장 대기 입장 또는 모바일 예매",
+        "note": "현장구매도 가능",
+        "official_url": "https://www.museepicassoparis.fr/",
+    },
+    {
+        "id": "bourse-de-commerce-pinault-collection|2026-10-07|opening",
+        "slug": "bourse-de-commerce-pinault-collection",
+        "name": "Bourse de Commerce — Remember Me",
+        "day": 40,
+        "date": "10/7 (수)",
+        "schedule": "개막일 시간지정 티켓",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "판매 시작 즉시",
+        "action_date": "지금",
+        "pmp": "PMP 비대상 (피노 컬렉션 사립 미술관)",
+        "plan_b": "개막 첫날 매진 시 10/8 또는 10/9 오후 슬롯으로 이동",
+        "note": "개막일 방문 — 조기 예약 필요",
+        "official_url": "https://www.pinaultcollection.com/fr/boursedecommerce",
+    },
+    {
+        "id": "musee-guimet|2026-10-08|10:00",
+        "slug": "musee-guimet",
+        "name": "Musée Guimet",
+        "day": 41,
+        "date": "10/8 (목)",
+        "schedule": "10:00 입장",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/24 이후",
+        "pmp": "PMP 포함",
+        "plan_b": "파리 도착 후 주간 일정 확정 시 예매 또는 현장 PMP 입장",
+        "note": "서두를 필요 없음",
+        "official_url": "https://www.guimet.fr/",
+    },
+    {
+        "id": "musee-d-art-moderne-de-paris|2026-10-08|free",
+        "slug": "musee-d-art-moderne-de-paris",
+        "name": "MAM Paris (파리 시립 현대미술관)",
+        "day": 41,
+        "date": "10/8 (목)",
+        "schedule": "상설전 (무료)",
+        "canonical_status": "no-reservation",
+        "stage": "예약 불필요",
+        "when": "예약 불필요",
+        "action_date": "직전 확인",
+        "pmp": "무료 상설 (사전 예약 불필요)",
+        "plan_b": "운영시간(10:00~18:00) 확인 후 자유 입장, 특별전 희망 시 현장 발권",
+        "note": "상설 컬렉션 무료",
+        "official_url": "https://www.mam.paris.fr/",
+    },
+]
 
-    파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈 실행표다.
-    행의 방문일은 Day 페이지로, 장소는 장소 정본으로 연결한다.
-    """
+def build_paris_museum_booking() -> str:
+    """준비 — 파리 박물관·전시 예약 실행 화면 (사용자 로컬 실행 상태 관리)."""
     rel = ".."
 
-    P1 = '<span class="badge badge-must">1차 · 지금</span>'
-    P2 = '<span class="badge badge-caution">2차 · 9월 초</span>'
-    P3 = '<span class="badge badge-neutral">3차 · 직전</span>'
-    NOB = '<span class="badge badge-ok">예약 불필요</span>'
+    # Status counts initial
+    counts = {"book-now": 0, "check-sale": 0, "book-later": 0, "recheck": 0, "booked": 0, "no-reservation": 0}
+    for b in PARIS_MUSEUM_BOOKINGS:
+        st = b["canonical_status"]
+        if st in counts:
+            counts[st] += 1
 
-    # (우선순위, 방문일, day번호, 장소표기, place슬러그, 일정, 권장 예약 시점, 권장 실행일, 비고)
-    rows = [
-        (P1, "9/25", 28, "Grand Palais — Cézanne et nous", "grand-palais",
-         "특별전", "판매 시작 즉시", "지금", "개막 9/23 직후 방문 — 우선순위 최상"),
-        (P1, "9/26", 29, "Musée du Luxembourg — Warhol", "musee-du-luxembourg",
-         "특별전", "3~4주 전", "지금", "원하는 시간대 확보"),
-        (P2, "9/27", 30, "Musée de l'Orangerie", "musee-de-l-orangerie",
-         "상설 중심", "2~4주 전", "8월 말~9월 초", "Orsay와 결합권 검토"),
-        (P3, "9/28", 31, "Musée Gustave Moreau", "musee-gustave-moreau",
-         "일반관람", "1~2주 전", "9/14 전후", "예약 급하지 않음"),
-        (P1, "9/29", 32, "Musée d'Orsay", "musee-d-orsay",
-         "09:30 지정시간", "3~4주 전", "지금", "지정시간 일정 — 조기 확보"),
-        (P3, "9/29", 32, "Musée Rodin", "musee-rodin",
-         "14:30", "1~2주 전", "9/14 전후", "오전 Orsay 일정에 종속"),
-        (P1, "10/1", 34, "Versailles", "versailles",
-         "종일", "1~2개월 전", "지금", "Passport + 시간지정 입장"),
-        (P1, "10/2", 35, "Louvre", "musee-du-louvre",
-         "14:00 지정시간", "3~4주 전", "지금~9/2", "14:00 슬롯 유지 권장"),
-        (P3, "10/3", 36, "Marmottan Monet", "musee-marmottan-monet",
-         "14:00", "1~2주 전", "9/18 전후", "일정 유연성 유지"),
-        (P2, "10/5", 38, "Jacquemart-André", "musee-jacquemart-andre",
-         "미술관·전시", "2~4주 전", "9/7~15", "특별전이면 조금 빨리"),
-        (P1, "10/6", 39, "Orsay — Mary Cassatt 특별전", "musee-d-orsay",
-         "특별전", "판매 가능 즉시", "지금 확인·예약", "일반 Orsay 입장(9/29)과 별도로 판단 · "
-         "회차 판매 여부 재확인"),
-        (P3, "10/6", 39, "Musée Picasso Paris", "musee-picasso-paris",
-         "13:00", "1~2주 전", "9/20 전후", "현장구매도 가능"),
-        (P1, "10/7", 40, "Bourse de Commerce — Remember Me", "bourse-de-commerce-pinault-collection",
-         "개막일", "판매 시작 즉시", "지금", "개막일 방문 — 조기 예약 필요"),
-        (P3, "10/8", 41, "Musée Guimet", "musee-guimet",
-         "10:00", "1~2주 전", "9/24 이후", "서두를 필요 없음"),
-        (NOB, "10/8", 41, "MAM Paris (파리 시립 현대미술관)", "musee-d-art-moderne-de-paris",
-         "상설전", "예약 불필요", "직전 확인", "상설 컬렉션 무료"),
-    ]
+    # Vertical action cards
+    cards_html = []
+    table_rows = []
 
-    body_rows = "".join(
-        f"<tr><td>{pr}</td>"
-        f'<td><a href="{rel}/daily/day-{day:02d}.html">{esc(date)}</a></td>'
-        f'<td><a href="{rel}/places/{slug}.html">{esc(name)}</a></td>'
-        f"<td>{esc(sched)}</td><td>{esc(when)}</td><td>{esc(act)}</td>"
-        f"<td>{esc(note)}</td></tr>"
-        for pr, date, day, name, slug, sched, when, act, note in rows)
+    for b in PARIS_MUSEUM_BOOKINGS:
+        st = b["canonical_status"]
+        if st == "book-now":
+            badge_html = '<span class="badge badge-must">1차 · 지금</span>'
+        elif st == "check-sale":
+            badge_html = '<span class="badge badge-caution">2차 · 9월 초</span>'
+        elif st == "book-later":
+            badge_html = '<span class="badge badge-neutral">3차 · 직전</span>'
+        else:
+            badge_html = '<span class="badge badge-ok">예약 불필요</span>'
+
+        table_rows.append(
+            f"<tr><td>{badge_html}</td>"
+            f'<td><a href="{rel}/daily/day-{b["day"]:02d}.html">{esc(b["date"])}</a></td>'
+            f'<td><a href="{rel}/places/{b["slug"]}.html">{esc(b["name"])}</a></td>'
+            f'<td>{esc(b["schedule"])}</td><td>{esc(b["when"])}</td><td>{esc(b["action_date"])}</td>'
+            f'<td>{esc(b["note"])}</td></tr>'
+        )
+
+        card = f"""<div class="paris-museum-card" data-museum-id="{esc(b['id'])}" data-canonical-status="{esc(st)}" data-effective-status="{esc(st)}">
+  <div class="paris-museum-card-head">
+    <div>
+      <span class="meta" style="display:block;margin-bottom:var(--s1)">Day {b['day']} · {esc(b['date'])}</span>
+      <h3 class="paris-museum-card-title"><a href="{rel}/places/{b['slug']}.html">{esc(b['name'])}</a></h3>
+    </div>
+    <div class="status-badge-container">{badge_html}</div>
+  </div>
+
+  <div class="paris-museum-meta-list">
+    <div class="paris-museum-meta-row"><strong>티켓/일정:</strong> <span>{esc(b['schedule'])}</span></div>
+    <div class="paris-museum-meta-row"><strong>Museum Pass:</strong> <span>{esc(b['pmp'])}</span></div>
+    <div class="paris-museum-meta-row"><strong>예약 시점:</strong> <span>{esc(b['when'])} (권장 실행: {esc(b['action_date'])})</span></div>
+    <div class="paris-museum-meta-row"><strong>Plan B:</strong> <span>{esc(b['plan_b'])}</span></div>
+    {f'<div class="paris-museum-meta-row"><strong>메모:</strong> <span>{esc(b["note"])}</span></div>' if b["note"] else ''}
+  </div>
+
+  <div class="paris-museum-actions">
+    <button type="button" class="btn btn-sm btn-primary btn-museum-book-toggle" data-action="book">✓ 예약 완료</button>
+    <button type="button" class="btn btn-sm btn-secondary btn-museum-recheck-toggle" data-action="recheck">재확인</button>
+    <a class="btn btn-sm btn-secondary" href="{esc(b['official_url'])}" target="_blank" rel="noopener">{ic('ticket')}공식 예약</a>
+    <a class="btn btn-sm btn-secondary" href="{rel}/daily/day-{b['day']:02d}.html">{ic('today')}Day {b['day']}</a>
+    <a class="btn btn-sm btn-secondary" href="{rel}/places/{b['slug']}.html">{ic('pin')}장소</a>
+  </div>
+</div>"""
+        cards_html.append(card)
 
     wave = """
 <div class="prose">
@@ -2425,38 +2673,7 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 파리 일정에는 특별전과 일반관람권이 섞여 있어 이 구분이 특히 중요하다.</p>
 </div>"""
 
-    index_search("파리 뮤지엄 예약 실행표", "prepare/paris-museums.html", "prepare",
-                 "파리 15박 미술관·전시 예약 3단계 실행표")
-
-    return page(
-        title="파리 뮤지엄 예약", rel=rel, tab="prepare",
-        description="파리 박물관·전시 예약을 3단계로 나눈 실행표",
-        trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
-               ("파리 뮤지엄 예약", None)],
-        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
-<header><h1>파리 뮤지엄 예약 실행표</h1>
-<p class="hero-dek">파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈다.
-예약 실패 위험이 큰 것부터 지금 처리한다.</p></header>
-
-{alert('caution',
-       '<strong>오늘 처리 7건:</strong> Grand Palais · Versailles · Orsay 9/29 · '
-       'Louvre 10/2 · Bourse de Commerce · Luxembourg · Mary Cassatt(판매 확인). '
-       '나머지는 단계별 시점에 맞춰 처리한다.')}
-
-{sec_head('PLAN', '예약 실행표 — 15건', rule=True)}
-<div class="table-wrap"><table>
-<thead><tr><th>단계</th><th>방문일</th><th>장소 / 전시</th><th>일정</th>
-<th>권장 예약 시점</th><th>권장 실행일</th><th>비고</th></tr></thead>
-<tbody>{body_rows}</tbody>
-</table></div>
-
-{sec_head('WAVES', '3단계 파도 — 왜 이 순서인가', rule=True)}
-{wave}
-
-{sec_head('PRINCIPLES', '실제 예약할 때의 원칙', rule=True)}
-{principles}
-
-{sec_head('CHECKLIST', '압축 체크리스트', rule=True)}
+    checklist = """
 <div class="prose"><ul>
 <li><strong>오늘:</strong> Grand Palais · Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
 <li><strong>9월 초:</strong> Orangerie · Jacquemart-André</li>
@@ -2465,9 +2682,74 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 </ul>
 <p>이 순서대로 처리하면 가이드북 일정을 거의 그대로 유지하면서 예약 실패
 위험을 크게 낮출 수 있다. 확정된 예약은 <a href="index.html">준비 현황</a>의
-확정 목록과 트래커에 날짜·시간·취소조건·QR 저장 위치를 함께 기록한다.</p></div>
+확정 목록과 트래커에 날짜·시간·취소조건·QR 저장 위치를 함께 기록한다.</p></div>"""
 
-<div class="btn-row"><a class="btn btn-secondary" href="index.html">{ic('check')}준비 현황</a>
+    index_search("파리 뮤지엄 예약 실행표", "prepare/paris-museums.html", "prepare",
+                 "파리 15박 미술관·전시 예약 3단계 실행표")
+
+    return page(
+        title="파리 뮤지엄 예약", rel=rel, tab="prepare",
+        description="파리 15박 15개 미술관·전시 예약 실행 및 진행 현황 관리",
+        trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
+               ("파리 뮤지엄 예약", None)],
+        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>파리 뮤지엄 예약 실행표</h1>
+<p class="hero-dek">파리 15박(9/24~10/9) 15개 미술관·전시 예약 실행 및 상태 관리.
+공식 예약을 완료하면 [✓ 예약 완료]를 눌러 체크리스트를 관리한다.<br>
+<span class="meta" style="color:var(--text-2);margin-top:var(--s1);display:inline-block">※ 예약 체크 상태는 이 기기/브라우저에만 저장됩니다.</span></p></header>
+
+{sec_head('STATUS SUMMARY', '예약 진행 현황')}
+<div class="paris-summary-grid">
+  <div class="paris-summary-item"><span class="num" id="count-book-now">{counts['book-now']}</span><span class="label">BOOK NOW (지금)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-check-sale">{counts['check-sale']}</span><span class="label">CHECK SALE (9월초)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-book-later">{counts['book-later']}</span><span class="label">BOOK LATER (중순)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-recheck">{counts['recheck']}</span><span class="label">RECHECK (재확인)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-booked">{counts['booked']}</span><span class="label">BOOKED (완료)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-no-reservation">{counts['no-reservation']}</span><span class="label">예약 불필요</span></div>
+</div>
+
+<div class="paris-filter-chips">
+  <button type="button" class="chip chip-action paris-filter-chip is-active" data-filter="all" aria-pressed="true">전체 (15)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="book-now" aria-pressed="false">지금 예약 (BOOK NOW)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="check-sale" aria-pressed="false">판매 확인 (CHECK SALE)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="book-later" aria-pressed="false">9월 중순 (BOOK LATER)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="recheck" aria-pressed="false">재확인 필요 (RECHECK)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="booked" aria-pressed="false">예약 완료 (BOOKED)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="no-reservation" aria-pressed="false">예약 불필요</button>
+</div>
+
+{sec_head('RESERVATIONS', '예약 항목 — 15건', rule=True)}
+<div class="paris-museum-grid" id="paris-museum-grid">
+{"".join(cards_html)}
+</div>
+
+<details class="acc" style="margin-top:var(--s5)"><summary>전체 예약 표 보기 (15건)</summary>
+<div class="acc-body">
+<div class="table-wrap"><table>
+<thead><tr><th>단계</th><th>방문일</th><th>장소 / 전시</th><th>일정</th>
+<th>권장 예약 시점</th><th>권장 실행일</th><th>비고</th></tr></thead>
+<tbody>{"".join(table_rows)}</tbody>
+</table></div>
+</div></details>
+
+{sec_head('WAVES', '3단계 파도 — 왜 이 순서인가', rule=True)}
+{wave}
+
+{sec_head('PRINCIPLES', '실제 예약할 때의 원칙', rule=True)}
+{principles}
+
+{sec_head('CHECKLIST', '압축 체크리스트', rule=True)}
+{checklist}
+
+<div style="margin-top:var(--s6);padding:var(--s4);background:var(--surface-2);border-radius:var(--r-md);display:flex;align-items:center;justify-content:space-between;gap:var(--s3);flex-wrap:wrap">
+  <div>
+    <strong>내 로컬 예약 체크 관리</strong>
+    <p class="meta" style="margin:0">예약 체크 상태는 이 기기/브라우저에만 저장됩니다. 초기화 시 정본 계획 상태로 복원됩니다.</p>
+  </div>
+  <button type="button" class="btn btn-secondary" id="btn-reset-museum-state">{ic('close')}내 예약 체크 상태 초기화</button>
+</div>
+
+<div class="btn-row" style="margin-top:var(--s6)"><a class="btn btn-secondary" href="index.html">{ic('check')}준비 현황</a>
   <a class="btn btn-secondary" href="{rel}/guide/paris.html">{ic('region')}파리 가이드</a></div>
 </div></div>""")
 
