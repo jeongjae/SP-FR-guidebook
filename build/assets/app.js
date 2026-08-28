@@ -482,10 +482,25 @@
     } catch (e) {}
   }
 
+  var cachedVoices = [];
+  function updateVoices() {
+    try {
+      if ('speechSynthesis' in window) {
+        cachedVoices = window.speechSynthesis.getVoices() || [];
+      }
+    } catch (e) {}
+  }
+  if ('speechSynthesis' in window) {
+    updateVoices();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = updateVoices;
+    }
+  }
+
   function getFrenchVoice() {
     if (!('speechSynthesis' in window)) return null;
     try {
-      var voices = window.speechSynthesis.getVoices() || [];
+      var voices = cachedVoices.length ? cachedVoices : (window.speechSynthesis.getVoices() || []);
       for (var i = 0; i < voices.length; i++) {
         if (voices[i].lang === 'fr-FR' || voices[i].lang === 'fr_FR') return voices[i];
       }
@@ -500,36 +515,59 @@
     if (!('speechSynthesis' in window)) {
       if (btn) {
         btn.disabled = true;
-        btn.title = '이 브라우저에서는 음성 재생을 지원하지 않습니다.';
+        btn.title = '이 기기에서는 음성 재생을 지원하지 않습니다.';
       }
       return false;
     }
     try {
-      window.speechSynthesis.cancel();
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        window.speechSynthesis.cancel();
+      }
       var u = new SpeechSynthesisUtterance(text);
       u.lang = 'fr-FR';
       u.rate = 0.88;
       var voice = getFrenchVoice();
       if (voice) u.voice = voice;
 
+      // Keep reference to prevent WebKit premature garbage collection
+      window.__currentUtterance = u;
+
       if (btn) {
         var origSpan = btn.querySelector('span');
         var origText = origSpan ? origSpan.textContent : '듣기';
         btn.classList.add('playing');
+        btn.classList.remove('failed');
         if (origSpan) origSpan.textContent = '재생 중';
 
         function resetBtn() {
           btn.classList.remove('playing');
           if (origSpan) origSpan.textContent = origText;
         }
+        function failBtn() {
+          btn.classList.remove('playing');
+          btn.classList.add('failed');
+          if (origSpan) origSpan.textContent = '재생 실패';
+          setTimeout(function () {
+            btn.classList.remove('failed');
+            if (origSpan) origSpan.textContent = origText;
+          }, 1400);
+        }
+
         u.onend = resetBtn;
-        u.onerror = resetBtn;
+        u.onerror = failBtn;
       }
       window.speechSynthesis.speak(u);
       return true;
     } catch (err) {
       if (btn) {
         btn.classList.remove('playing');
+        btn.classList.add('failed');
+        var fSpan = btn.querySelector('span');
+        if (fSpan) fSpan.textContent = '재생 실패';
+        setTimeout(function () {
+          btn.classList.remove('failed');
+          if (fSpan) fSpan.textContent = '듣기';
+        }, 1400);
       }
       return false;
     }
@@ -569,6 +607,7 @@
         var origSpan = copyBtn.querySelector('span');
         var origText = origSpan ? origSpan.textContent : '복사';
         function setCopied() {
+          copyBtn.classList.remove('failed');
           copyBtn.classList.add('copied');
           if (origSpan) origSpan.textContent = '복사됨';
           setTimeout(function () {
@@ -576,13 +615,21 @@
             if (origSpan) origSpan.textContent = origText;
           }, 1400);
         }
+        function setCopyFailed() {
+          copyBtn.classList.add('failed');
+          if (origSpan) origSpan.textContent = '복사 실패';
+          setTimeout(function () {
+            copyBtn.classList.remove('failed');
+            if (origSpan) origSpan.textContent = origText;
+          }, 1400);
+        }
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(copyText).then(setCopied, function () {
-            fallbackCopy(copyText, setCopied);
+            fallbackCopy(copyText, setCopied, setCopyFailed);
           });
         } else {
-          fallbackCopy(copyText, setCopied);
+          fallbackCopy(copyText, setCopied, setCopyFailed);
         }
       }
       return;
@@ -623,7 +670,7 @@
     }
   });
 
-  function fallbackCopy(text, cb) {
+  function fallbackCopy(text, cb, errCb) {
     try {
       var ta = document.createElement('textarea');
       ta.value = text;
@@ -631,10 +678,16 @@
       ta.style.opacity = '0';
       document.body.appendChild(ta);
       ta.select();
-      document.execCommand('copy');
+      var successful = document.execCommand('copy');
       document.body.removeChild(ta);
-      if (cb) cb();
-    } catch (e) {}
+      if (successful) {
+        if (cb) cb();
+      } else {
+        if (errCb) errCb();
+      }
+    } catch (e) {
+      if (errCb) errCb();
+    }
   }
 
   // 3. Travel French Page (prepare/french.html) Search & Category Filters

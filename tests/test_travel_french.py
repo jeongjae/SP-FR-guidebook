@@ -144,6 +144,21 @@ class TravelFrenchTests(unittest.TestCase):
             for pid in pids:
                 self.assertIn(pid, self.trip.french_phrases, f"Category {cat} references non-existent phrase ID {pid}")
 
+    def test_icons_have_webkit_mask_properties(self):
+        style_css = (SITE / shell.ASSET_STYLE).read_text(encoding="utf-8")
+        self.assertIn("-webkit-mask-image", style_css)
+        self.assertIn("-webkit-mask-position", style_css)
+        self.assertIn("-webkit-mask-size", style_css)
+        self.assertIn("-webkit-mask-repeat", style_css)
+        self.assertIn("mask-image", style_css)
+
+    def test_french_buttons_have_visible_text_fallback(self):
+        prepare_pages = render.build_prepare(self.trip, {"todo": [], "confirmed": [], "dropped": []})
+        french_html = prepare_pages["french.html"]
+        self.assertIn("<span>듣기</span>", french_html)
+        self.assertIn("<span>복사</span>", french_html)
+        self.assertIn("<span>저장</span>", french_html)
+
 
 class TravelFrenchBrowserInteractionTests(unittest.TestCase):
     @classmethod
@@ -318,6 +333,59 @@ class TravelFrenchBrowserInteractionTests(unittest.TestCase):
             fav_btn_reload.click()
             self.assertEqual("false", fav_btn_reload.get_attribute("aria-pressed"))
 
+            browser.close()
+
+    def test_french_audio_failure_feedback(self):
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            page.goto((SITE / "prepare" / "french.html").as_uri())
+
+            # Mock error when speaking
+            page.evaluate("""() => {
+                window.speechSynthesis.speak = (u) => {
+                    if (u.onerror) setTimeout(u.onerror, 50);
+                };
+            }""")
+
+            audio_btn = page.query_selector('.phrase-card[data-phrase-id="fr_essential_001"] .btn-phrase-audio')
+            self.assertIsNotNone(audio_btn)
+            audio_btn.click()
+            page.wait_for_timeout(100)
+
+            # Check failure feedback
+            span_text = audio_btn.query_selector("span").inner_text()
+            self.assertEqual("재생 실패", span_text)
+            self.assertIn("failed", audio_btn.get_attribute("class"))
+            browser.close()
+
+    def test_iphone_viewports_and_touch_targets(self):
+        viewports = [
+            {"width": 375, "height": 667},
+            {"width": 390, "height": 844},
+            {"width": 393, "height": 852},
+            {"width": 430, "height": 932},
+        ]
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            for vp in viewports:
+                page = browser.new_page(viewport=vp)
+                page.goto((SITE / "prepare" / "french.html").as_uri())
+
+                # Check horizontal overflow
+                scroll_w = page.evaluate("() => document.documentElement.scrollWidth")
+                client_w = page.evaluate("() => document.documentElement.clientWidth")
+                self.assertLessEqual(scroll_w, client_w, f"Horizontal overflow at {vp['width']}x{vp['height']}")
+
+                # Check touch target sizes of phrase buttons >= 44px
+                btns = page.query_selector_all(".phrase-card:not([hidden]) .phrase-btn")
+                self.assertTrue(len(btns) > 0)
+                for btn in btns[:6]:
+                    box = btn.bounding_box()
+                    self.assertIsNotNone(box)
+                    self.assertGreaterEqual(box["height"], 40.0, f"Button height {box['height']} too small at {vp}")
+                    self.assertGreaterEqual(box["width"], 40.0, f"Button width {box['width']} too small at {vp}")
+                page.close()
             browser.close()
 
     def test_old_pwa_new_build_upgrade(self):
