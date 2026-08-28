@@ -124,14 +124,17 @@ class ExecutionUxBatch10Tests(unittest.TestCase):
         payload = load_day(42)
         stops = {stop["id"]: stop for stop in payload["stops"]}
 
-        # Apartment checkout 11:00 confirmed
+        # Apartment checkout 11:00 confirmed with luggage continuity
         checkout_statuses = {s["type"] for s in stops["paris-packing-checkout"]["executionStatuses"]}
         self.assertIn("confirmed", checkout_statuses)
+        self.assertNotIn("짐 보관 후", stops["paris-packing-checkout"]["summary"])
+        self.assertIn("모든 수하물", stops["paris-packing-checkout"]["executionStatuses"][0]["detail"])
 
-        # Café du Commerce farewell lunch check
+        # Café du Commerce farewell lunch check (with carrier)
         lunch_statuses = {s["type"] for s in stops["farewell-lunch"]["executionStatuses"]}
         self.assertIn("check", lunch_statuses)
         self.assertNotIn("confirmed", lunch_statuses)
+        self.assertIn("캐리어 동반", stops["farewell-lunch"]["executionStatuses"][0]["detail"])
 
         # CDG taxi transfer book
         taxi_statuses = {s["type"] for s in stops["cdg-transfer"]["executionStatuses"]}
@@ -142,8 +145,10 @@ class ExecutionUxBatch10Tests(unittest.TestCase):
         oz_statuses = {s["type"] for s in stops["cdg-departure"]["executionStatuses"]}
         self.assertIn("confirmed", oz_statuses)
 
-        # Plan B contains emergency RER B transit
-        self.assertIn("Plan B", payload["backup"])
+        # Plan B contains trigger separation and emergency RER B transit
+        self.assertIn("Primary", payload["backup"])
+        self.assertIn("Plan B — 출발 전 전환", payload["backup"])
+        self.assertIn("After boarding taxi", payload["backup"])
         self.assertIn("RER B", payload["backup"])
 
         rendered = self.rendered(42)
@@ -155,6 +160,10 @@ class ExecutionUxBatch10Tests(unittest.TestCase):
     def test_day43_return_flight_and_icn_arrival(self):
         payload = load_day(43)
         stops = {stop["id"]: stop for stop in payload["stops"]}
+
+        # Hotel status is needs-review / no confirmed lodging
+        self.assertEqual("needs-review", payload["hotel"]["status"])
+        self.assertIn("숙소 없음", payload["hotel"]["name"])
 
         # Inflight confirmed
         inflight_statuses = {s["type"] for s in stops["inflight"]["executionStatuses"]}

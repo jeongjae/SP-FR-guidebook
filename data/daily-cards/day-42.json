@@ -29,17 +29,17 @@
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "15박 장기 체류 짐 최종 패킹, 분리수거 및 숙소 점검. 11:00 정식 체크아웃",
+      "summary": "15박 장기 체류 짐 최종 패킹, 분리수거 및 11:00 정식 체크아웃. 모든 수하물을 챙겨 체크아웃 완료",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
           "type": "confirmed",
           "label": "CHECKOUT",
-          "detail": "숙소 11:00 공식 체크아웃 (78 Rue de Lourmel, 15박 체류 완료) · 열쇠 반납 및 쓰레기 분리수거."
+          "detail": "숙소 11:00 공식 체크아웃 (78 Rue de Lourmel, 15박 체류 완료) · 열쇠 반납, 쓰레기 분리수거 및 모든 수하물 휴대 출발."
         }
       ],
-      "executionNote": "11:00 체크아웃 완료. 짐 보관 후 도보 5분 Café du Commerce 이동.",
+      "executionNote": "11:00 체크아웃 완료 및 수하물 휴대하여 도보 5분 Café du Commerce 이동.",
       "officialUrl": null,
       "optional": false,
       "place_ref": null
@@ -53,17 +53,17 @@
       "category": "food",
       "lat": 48.8466,
       "lng": 2.2968,
-      "summary": "단골 15구 비스트로/카페에서 파리 생활을 회고하는 마지막 점심 식사",
+      "summary": "코메르스 거리 역사적 3층 브라세리(1921년 개업). 1층 널찍한 홀에 캐리어 동반하여 파리 15박을 회고하는 마지막 점심 식사 (1.5시간)",
       "menu": "가벼운 브라세리 런치, 샐러드, 커피",
       "reservation": null,
       "executionStatuses": [
         {
           "type": "check",
           "label": "OPEN",
-          "detail": "Café du Commerce (51 Rue du Commerce) 매일 11:30–23:00 논스톱 영업 · 비행 전 부담 없는 가벼운 식사."
+          "detail": "Café du Commerce (51 Rue du Commerce) 매일 11:30–23:00 논스톱 영업 · 캐리어 동반 1층 테이블 식사."
         }
       ],
-      "executionNote": "51 Rue du Commerce, 75015 Paris. 식후 13:15 숙소 복귀하여 택시 탑승 준비.",
+      "executionNote": "51 Rue du Commerce, 75015 Paris. 식후 13:15 수하물과 함께 픽업 지점(51 Rue du Commerce / 78 Rue de Lourmel) 대기.",
       "officialUrl": "https://www.lecafeducommerce.com/",
       "optional": false,
       "place_ref": "cafe-du-commerce"
@@ -84,10 +84,10 @@
         {
           "type": "book",
           "label": "TAXI TRANSFER",
-          "detail": "13:30 숙소 픽업 택시(G7 사전예약 또는 호텔 콜) · 파리 좌안 ↔ CDG 정액 요금 €65.00 적용."
+          "detail": "13:30 G7 사전예약 택시 픽업 (수하물 위치 기준 탑승) · 파리 좌안 ↔ CDG 정액 요금 €65.00 적용."
         }
       ],
-      "executionNote": "78 Rue de Lourmel ➔ CDG Terminal 1 출발층(Départs). 고속도로 정체 시 13:00 조기 출발.",
+      "executionNote": "51 Rue du Commerce / 78 Rue de Lourmel ➔ CDG Terminal 1 출발층(Départs). 도로 정체 시 13:00~13:15 조기 출발.",
       "officialUrl": "https://www.g7.fr/",
       "optional": false,
       "place_ref": null
@@ -161,7 +161,7 @@
     "짐은 42일 누적 — 전날 절반 포장",
     "détaxe PABLO 줄 완충"
   ],
-  "backup": "Primary: G7 사전예약 또는 호텔 콜택시 (Paris Rive Gauche ➔ CDG 정액 €65.00)\n\nPlan B (Emergency): 고속도로 극심 정체나 택시 파업 시 메트로 8/10호선 ➔ RER B (Saint-Michel/Châtelet) ➔ CDG 1역 ➔ CDGVAL 셔틀 ➔ Terminal 1 (약 75~90분 소요)\n\nTrigger: 교통 체증 및 파업 발생 시 즉시 RER B로 전환",
+  "backup": "Primary (권장)\n- 13:30 G7 사전예약 택시 탑승 (Paris Rive Gauche ↔ CDG 정액 €65.00)\n- 출발 당일 실시간 도로 정체/사고 감지 시 13:00~13:15 조기 출발로 15:00 이전 공항 도착 완충 확보\n\nPlan B — 출발 전 전환 (Pre-departure Fallback)\n- 택시 미배차, 택시 파업, 또는 출발 전 확인된 심각한 고속도로 전면 통제 발생 시:\n- 메트로 10호선(Charles Michels역) 탑승 ➔ Cluny - La Sorbonne역 하차 ➔ Saint-Michel - Notre-Dame역 RER B 직결 환승 ➔ Aéroport Charles de Gaulle 1역 하차 ➔ 무료 공항셔틀 CDGVAL 탑승 ➔ Terminal 1 도착 (약 75~90분 소요, 1인 €14.00 공항철도 티켓 필수).\n- 또는 메트로 8호선(Lourmel) ➔ Opéra ➔ RoissyBus 공항 직행버스 환승.\n\nAfter boarding taxi (택시 탑승 후)\n- 이미 택시 탑승 후 발생하는 일반적인 도로 정체는 기사 및 실시간 내비게이션(A1/A3 우회) 기준으로 계속 이동하며, 중간에 무리하게 하차하여 RER로 전환하지 않음 (출발 4시간 전 이동으로 충분한 완충 확보).",
   "map": {
     "zoom": 10,
     "center": [
