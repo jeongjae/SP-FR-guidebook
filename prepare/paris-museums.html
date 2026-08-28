@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000091">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>파리 뮤지엄 예약 — 유럽 43일 가이드북</title>
+<meta name="description" content="파리 박물관·전시 예약을 3단계로 나눈 실행표">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../prepare/index.html">준비</a><span class="sep" aria-hidden="true">›</span><b>파리 뮤지엄 예약</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>파리 뮤지엄 예약 실행표</h1>
+<p class="hero-dek">파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈다.
+예약 실패 위험이 큰 것부터 지금 처리한다.</p></header>
+
+<div class="alert-card alert-caution"><b class="ic ic-only ic-alert" aria-hidden="true"></b><div><strong>오늘 처리 7건:</strong> Grand Palais · Versailles · Orsay 9/29 · Louvre 10/2 · Bourse de Commerce · Luxembourg · Mary Cassatt(판매 확인). 나머지는 단계별 시점에 맞춰 처리한다.</div></div>
+
+<div class="sec-head-rule"><span class="label">PLAN</span><h2>예약 실행표 — 15건</h2></div>
+<div class="table-wrap"><table>
+<thead><tr><th>단계</th><th>방문일</th><th>장소 / 전시</th><th>일정</th>
+<th>권장 예약 시점</th><th>권장 실행일</th><th>비고</th></tr></thead>
+<tbody><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-28.html">9/25</a></td><td><a href="../places/grand-palais.html">Grand Palais — Cézanne et nous</a></td><td>특별전</td><td>판매 시작 즉시</td><td>지금</td><td>개막 9/23 직후 방문 — 우선순위 최상</td></tr><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-29.html">9/26</a></td><td><a href="../places/musee-du-luxembourg.html">Musée du Luxembourg — Warhol</a></td><td>특별전</td><td>3~4주 전</td><td>지금</td><td>원하는 시간대 확보</td></tr><tr><td><span class="badge badge-caution">2차 · 9월 초</span></td><td><a href="../daily/day-30.html">9/27</a></td><td><a href="../places/musee-de-l-orangerie.html">Musée de l&#x27;Orangerie</a></td><td>상설 중심</td><td>2~4주 전</td><td>8월 말~9월 초</td><td>Orsay와 결합권 검토</td></tr><tr><td><span class="badge badge-neutral">3차 · 직전</span></td><td><a href="../daily/day-31.html">9/28</a></td><td><a href="../places/musee-gustave-moreau.html">Musée Gustave Moreau</a></td><td>일반관람</td><td>1~2주 전</td><td>9/14 전후</td><td>예약 급하지 않음</td></tr><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-32.html">9/29</a></td><td><a href="../places/musee-d-orsay.html">Musée d&#x27;Orsay</a></td><td>09:30 지정시간</td><td>3~4주 전</td><td>지금</td><td>지정시간 일정 — 조기 확보</td></tr><tr><td><span class="badge badge-neutral">3차 · 직전</span></td><td><a href="../daily/day-32.html">9/29</a></td><td><a href="../places/musee-rodin.html">Musée Rodin</a></td><td>14:30</td><td>1~2주 전</td><td>9/14 전후</td><td>오전 Orsay 일정에 종속</td></tr><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-34.html">10/1</a></td><td><a href="../places/versailles.html">Versailles</a></td><td>종일</td><td>1~2개월 전</td><td>지금</td><td>Passport + 시간지정 입장</td></tr><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-35.html">10/2</a></td><td><a href="../places/musee-du-louvre.html">Louvre</a></td><td>14:00 지정시간</td><td>3~4주 전</td><td>지금~9/2</td><td>14:00 슬롯 유지 권장</td></tr><tr><td><span class="badge badge-neutral">3차 · 직전</span></td><td><a href="../daily/day-36.html">10/3</a></td><td><a href="../places/musee-marmottan-monet.html">Marmottan Monet</a></td><td>14:00</td><td>1~2주 전</td><td>9/18 전후</td><td>일정 유연성 유지</td></tr><tr><td><span class="badge badge-caution">2차 · 9월 초</span></td><td><a href="../daily/day-38.html">10/5</a></td><td><a href="../places/musee-jacquemart-andre.html">Jacquemart-André</a></td><td>미술관·전시</td><td>2~4주 전</td><td>9/7~15</td><td>특별전이면 조금 빨리</td></tr><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-39.html">10/6</a></td><td><a href="../places/musee-d-orsay.html">Orsay — Mary Cassatt 특별전</a></td><td>특별전</td><td>판매 가능 즉시</td><td>지금 확인·예약</td><td>일반 Orsay 입장(9/29)과 별도로 판단 · 회차 판매 여부 재확인</td></tr><tr><td><span class="badge badge-neutral">3차 · 직전</span></td><td><a href="../daily/day-39.html">10/6</a></td><td><a href="../places/musee-picasso-paris.html">Musée Picasso Paris</a></td><td>13:00</td><td>1~2주 전</td><td>9/20 전후</td><td>현장구매도 가능</td></tr><tr><td><span class="badge badge-must">1차 · 지금</span></td><td><a href="../daily/day-40.html">10/7</a></td><td><a href="../places/bourse-de-commerce-pinault-collection.html">Bourse de Commerce — Remember Me</a></td><td>개막일</td><td>판매 시작 즉시</td><td>지금</td><td>개막일 방문 — 조기 예약 필요</td></tr><tr><td><span class="badge badge-neutral">3차 · 직전</span></td><td><a href="../daily/day-41.html">10/8</a></td><td><a href="../places/musee-guimet.html">Musée Guimet</a></td><td>10:00</td><td>1~2주 전</td><td>9/24 이후</td><td>서두를 필요 없음</td></tr><tr><td><span class="badge badge-ok">예약 불필요</span></td><td><a href="../daily/day-41.html">10/8</a></td><td><a href="../places/musee-d-art-moderne-de-paris.html">MAM Paris (파리 시립 현대미술관)</a></td><td>상설전</td><td>예약 불필요</td><td>직전 확인</td><td>상설 컬렉션 무료</td></tr></tbody>
+</table></div>
+
+<div class="sec-head-rule"><span class="label">WAVES</span><h2>3단계 파도 — 왜 이 순서인가</h2></div>
+
+<div class="prose">
+<p><strong>1차 — 지금 (8/28~8/31):</strong> Grand Palais → Versailles → Orsay 9/29 →
+Louvre 10/2 → Bourse de Commerce → Luxembourg → Mary Cassatt(판매 확인).
+단순히 유명한 곳이라서가 아니라, <strong>날짜·시간이 고정되어 있거나 특별전 개막
+직후에 방문</strong>하는 곳들이다. 특히 Versailles 10/1 · Louvre 10/2 · Orsay 9/29는
+파리 일정 전체의 동선을 잡는 기준점이므로 먼저 확정한다.</p>
+<p><strong>2차 — 9/1~9/10:</strong> Orangerie · Jacquemart-André.
+1차가 끝난 뒤 처리한다. Orangerie는 9/27 방문이라 너무 늦출 수는 없지만
+1차만큼 급하지는 않다.</p>
+<p><strong>3차 — 9/12~9/20 (여행 중):</strong> Gustave Moreau · Rodin ·
+Marmottan · Picasso. 너무 일찍 예약하면 파리 체류 중 날씨·피로도·공연 일정에
+따른 변경 여지가 줄어든다 — 기다리는 것이 오히려 좋다.</p>
+<p><strong>파리 도착 전후:</strong> Guimet 예약과 무료관(MAM) 운영시간 최종 확인.</p>
+</div>
+
+<div class="sec-head-rule"><span class="label">PRINCIPLES</span><h2>실제 예약할 때의 원칙</h2></div>
+
+<div class="prose">
+<p>예약 시간까지 가이드북 일정과 맞춰 <strong>고정해야 하는 곳</strong>은
+Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이나 Moreau처럼
+유연한 곳은 앞뒤 일정에 여유를 두고 잡는다.</p>
+<p>티켓을 살 때는 구매 완료만 관리하지 말고 <strong>① 날짜 ② 시간
+③ 변경·취소 가능 여부 ④ QR 티켓 저장 위치</strong>까지 함께 기록한다.
+파리 일정에는 특별전과 일반관람권이 섞여 있어 이 구분이 특히 중요하다.</p>
+</div>
+
+<div class="sec-head-rule"><span class="label">CHECKLIST</span><h2>압축 체크리스트</h2></div>
+<div class="prose"><ul>
+<li><strong>오늘:</strong> Grand Palais · Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
+<li><strong>9월 초:</strong> Orangerie · Jacquemart-André</li>
+<li><strong>9월 중순:</strong> Moreau · Rodin · Marmottan · Picasso</li>
+<li><strong>파리 출발 직전:</strong> Guimet 예약 · 무료관(MAM) 운영시간 재확인</li>
+</ul>
+<p>이 순서대로 처리하면 가이드북 일정을 거의 그대로 유지하면서 예약 실패
+위험을 크게 낮출 수 있다. 확정된 예약은 <a href="index.html">준비 현황</a>의
+확정 목록과 트래커에 날짜·시간·취소조건·QR 저장 위치를 함께 기록한다.</p></div>
+
+<div class="btn-row"><a class="btn btn-secondary" href="index.html"><b class="ic ic-only ic-check" aria-hidden="true"></b>준비 현황</a>
+  <a class="btn btn-secondary" href="../guide/paris.html"><b class="ic ic-only ic-region" aria-hidden="true"></b>파리 가이드</a></div>
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare" aria-current="page"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>
