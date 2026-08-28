@@ -4,6 +4,7 @@
   "consolidated": [
     "barcelona",
     "girona",
+    "verdon",
     "aix",
     "luberon",
     "avignon",
@@ -66,6 +67,13 @@
       "overview": "일정",
       "neighborhoods": "숙소와 15구 생활권",
       "transport_deep": "Paris에서 이동하기",
+      "food_culture": "먹고 장보기"
+    },
+    "verdon": {
+      "verdict": "Verdon과 Moustiers를 이렇게 본다",
+      "overview": "일정",
+      "neighborhoods": "숙소와 생활권",
+      "transport_deep": "Verdon에서 운전하기",
       "food_culture": "먹고 장보기"
     }
   },

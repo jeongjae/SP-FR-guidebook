@@ -12,6 +12,13 @@
 | **ACTION-A3** | **T-7 (8.22)** | Day 04 (9.01) | **La Zorra** | Sitges 해변 | [lazorra.es](https://lazorra.es) | 13:00 해변 테라스 쌀 요리 예약 최종 확인 | `ACTION_READY` |
 | **ACTION-A4** | **T-7 (8.23)** | Day 09 (9.06) | **Le Figuier de Saint-Esprit** | Antibes | [lefiguierdesaintesprit.fr](https://lefiguierdesaintesprit.fr) | 12:15 미쉐린 1스타 런치 코스 예약 실행 (WISH-01) | `ACTION_READY` |
 | **ACTION-A5** | **T-7 (8.23)** | Day 02 (8.30) | **Bodega Joan** | Barcelona 에이샴플레 | [bodegajoan.com](https://bodegajoan.com) | 19:30 전통 타파스 저녁 예약 권장 | `OPTIONAL_RECOMMENDED` |
+| **ACTION-A6 (RS01)** | **즉시 (T-1)** | Day 12 (9.9) | **Moustiers 1박 숙소** | Moustiers-Sainte-Marie | 예약 플랫폼/직접 | **9/9~9/10 1박 확보 — RS01 최우선 액션. 주차 조건 확인** | `URGENT_OPEN` |
+| **ACTION-A7 (RS01)** | **즉시 (T-1)** | Day 17 (9.14) | **Gordes 2박 숙소** | Gordes | 예약 플랫폼/직접 | 9/14~9/16 2박 확보 (구 9/13~9/15에서 변경) | `URGENT_OPEN` |
+| **ACTION-A8 (RS01)** | **즉시 (T-1)** | Day 19 (9.16) | **Avignon 4박 숙소** | Avignon 성벽 안 | 예약 플랫폼/직접 | 9/16~9/20 4박 확보 (구 5박에서 축소) | `URGENT_OPEN` |
+| **ACTION-A9 (RS01)** | **T-1 (8.28)** | Day 13 (9.10) | **Aix 숙소 확인서** | Aix-en-Provence | Airbnb | 9/10~9/14 날짜 변경 확인서 수령·보관 | `DONE_VERIFY` |
+| **ACTION-A10 (RS01)** | **T-7 (9.05)** | Day 15 (9.12) | **Atelier des Lauves** | Aix | [cezanne-en-provence.com](https://www.cezanne-en-provence.com) | 9/12(토) 회차 예약 — 예약 필수·좌석 제한 (매일 09–18 운영 확인) | `ACTION_READY` |
+| **ACTION-A11 (RS01)** | **T-3 (9.12)** | Day 18 (9.15) | **Abbaye de Sénanque** | Gordes 인근 | 공식 예매 | 9/15(화) HistoPad 회차 재확인·예약 (구 9/14 확인분 무효) | `ACTION_READY` |
+| **ACTION-A12 (RS01)** | **T-2 (9.11)** | Day 16 (9.13) | **칼랑크 유람선** | Cassis | GIE 공식 | 9/13(일) 회차 48시간 전 예약 (7일 운항·기상 조건) | `ACTION_READY` |
 
 ---
 
@@ -19,10 +26,10 @@
 
 | Priority | Deadline | Target Day / Date | Entity / Venue | Location | Official Booking Channel | Action Required | Current Status |
 |---|---|---|---|---|---|---|---|
-| **ACTION-B1** | **T-14 (8.28)** | Day 14 (9.11) | **Chez Gilbert** | Cassis 항구 | [chezgilbert.net](https://chezgilbert.net) | 12:30 공인 전통 부야베스 점심 예약 | `SCHEDULED` |
+| **ACTION-B1** | **T-14 (8.30)** | Day 16 (9.13) | **Chez Gilbert** | Cassis 항구 | [chezgilbert.net](https://chezgilbert.net) | 12:30 공인 전통 부야베스 점심 예약 — **RS01: 일요일로 이동, 일요일 영업 재확인** | `RESCHEDULE_REQUIRED` |
 | **ACTION-B2** | **T-7 (9.01)** | Day 11 (9.08) | **Restaurant Béatrice** | Cap-Ferrat | [villa-ephrussi.com](https://villa-ephrussi.com) | 12:15 로스차일드 빌라 런치 예약 (WISH-02) | `SCHEDULED` |
 | **ACTION-B3** | **T-14 (9.02)** | Day 19 (9.16) | **Fou de Fafa** | Avignon 성벽 안 | [foudefafa.com](https://foudefafa.com) | 19:30 아비뇽 프렌치 디너 예약 | `SCHEDULED` |
-| **ACTION-B4** | **T-14 (9.05)** | Day 22 (9.19) | **Le Gibolin** | Arles 구시가지 | [legibolin.fr](https://legibolin.fr) | 12:00 황소 스튜 & 내추럴 와인 점심 예약 | `SCHEDULED` |
+| **ACTION-B4** | **T-14 (9.04)** | Day 21 (9.18) | **Le Gibolin** | Arles 구시가지 | [legibolin.fr](https://legibolin.fr) | 12:00 황소 스튜 & 내추럴 와인 점심 예약 (Arles 당일치기 = Day 21) | `SCHEDULED` |
 | **ACTION-B5** | **T-14 (9.06)** | Day 23 (9.20) | **Café Comptoir Abel** | Lyon 레퀴롤 | [maisonabel.fr](https://maisonabel.fr) | 19:30 리옹 最古 부숑 첫 저녁 예약 | `SCHEDULED` |
 | **ACTION-B6** | **T-14 (9.07)** | Day 24 (9.21) | **Daniel et Denise** | Lyon 3구 크레키 | [danieletdenise.fr](https://danieletdenise.fr) | 19:45 MOF 부숑 만찬 예약 | `SCHEDULED` |
 | **ACTION-B7** | **T-7 (9.16)** | Day 26 (9.23) | **Chez Mamie Lise** | Annecy 운하 | [chezmamielise.com](https://chezmamielise.com) | 12:30 사부아 치즈 퐁뒤 점심 예약 | `SCHEDULED` |

@@ -58,38 +58,34 @@ class ProvenceExecutionStatusSemanticsTests(unittest.TestCase):
                     )
 
     def test_provence_facts_and_optional_bonus_use_neutral_semantics(self):
+        # RS01(2026-08-28): 16→17(Lourmarin·Lacoste), 17→18(오크르·화요시장), 18 소멸, 19 통합 도착일
         by_day = {
             number: {stop["id"]: stop for stop in load_day(number)["stops"]}
-            for number in range(16, 20)
+            for number in range(17, 20)
         }
 
         self.assertEqual(
             {"book", "optional"},
-            {status["type"] for status in statuses(by_day[16]["lourmarin-lunch"])},
+            {status["type"] for status in statuses(by_day[17]["lourmarin-lunch"])},
         )
-        self.assertIn("12:00–14:00", by_day[16]["lourmarin-lunch"]["executionNote"])
+        self.assertIn("12:00–14:00", by_day[17]["lourmarin-lunch"]["executionNote"])
         self.assertEqual(
             {"check"},
-            {status["type"] for status in statuses(by_day[17]["roussillon"])},
+            {status["type"] for status in statuses(by_day[18]["roussillon"])},
         )
 
-        menerbes = by_day[17]["menerbes"]
-        self.assertTrue(menerbes["optional"])
-        self.assertEqual(
-            {"optional"}, {status["type"] for status in statuses(menerbes)}
-        )
-        self.assertIn("월요일 휴무", menerbes["executionNote"])
-
-        self.assertNotIn("executionStatuses", by_day[18]["l-isle-sur-la-sorgue"])
+        self.assertNotIn("menerbes", by_day[18], "RS01: Ménerbes는 Day 18 기본 일정에서 제외")
+        self.assertNotIn("goult", by_day[18], "RS01: Goult는 Day 18 기본 일정에서 제외")
+        lisle = by_day[18]["l-isle-sur-la-sorgue"]
+        self.assertTrue(lisle["optional"], "RS01: L'Isle은 Day 18 오후 선택 왕복")
+        self.assertNotIn("executionStatuses", lisle)
         self.assertNotIn("executionStatuses", by_day[19]["saint-remy"])
         self.assertEqual(
             {"check"},
             {status["type"] for status in statuses(by_day[19]["les-baux-de-provence"])},
         )
-        self.assertEqual(
-            ["OPTIONAL BONUS"],
-            [status["label"] for status in statuses(by_day[19]["orange"])],
-        )
+        self.assertNotIn("orange", by_day[19], "RS01: Orange는 일정에서 제외")
+        self.assertIn("avignon-checkin", by_day[19], "RS01: Day 19은 Avignon 체크인 통합 도착일")
 
 
 if __name__ == "__main__":

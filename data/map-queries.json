@@ -1078,6 +1078,41 @@
       "resolvedName": "Marché Lecourbe",
       "evidence": "https://www.paris.fr/lieux/marche-lecourbe-5484",
       "verifiedAt": "2026-08-27"
+    },
+    "moustiers-sainte-marie": {
+      "query": "Moustiers-Sainte-Marie",
+      "verdict": "FOUND",
+      "resolvedName": "Moustiers-Sainte-Marie",
+      "evidence": "https://www.moustiers.fr/",
+      "verifiedAt": "2026-08-28"
+    },
+    "point-sublime": {
+      "query": "Belvédère du Point Sublime, Rougon",
+      "verdict": "FOUND",
+      "resolvedName": "Belvédère du Point Sublime",
+      "evidence": "https://www.verdontourisme.com/",
+      "verifiedAt": "2026-08-28"
+    },
+    "route-des-cretes": {
+      "query": "Route des Crêtes, La Palud-sur-Verdon",
+      "verdict": "FOUND",
+      "resolvedName": "Route des Crêtes (D23)",
+      "evidence": "https://www.verdontourisme.com/en/route-des-cretes/",
+      "verifiedAt": "2026-08-28"
+    },
+    "lac-de-sainte-croix": {
+      "query": "Pont du Galetas, Lac de Sainte-Croix",
+      "verdict": "FOUND",
+      "resolvedName": "Pont du Galetas",
+      "evidence": "https://www.verdontourisme.com/",
+      "verifiedAt": "2026-08-28"
+    },
+    "plateau-de-valensole": {
+      "query": "Valensole",
+      "verdict": "FOUND",
+      "resolvedName": "Plateau de Valensole",
+      "evidence": "https://en.tourisme-alpes-haute-provence.com/large-natural-spaces/plateau-of-valensole/",
+      "verifiedAt": "2026-08-28"
     }
   },
   "hotels": {
@@ -1502,7 +1537,7 @@
       "evidence": "Day 12 execution route",
       "verifiedAt": "2026-08-25"
     },
-    "day-14:aix-depart": {
+    "day-16:aix-depart": {
       "title": "Aix 숙소 → Cassis Gorguettes P+R",
       "origin": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
       "destination": "Parking relais des Gorguettes, Cassis",
@@ -1510,7 +1545,7 @@
       "evidence": "Day 14 primary parking route",
       "verifiedAt": "2026-08-25"
     },
-    "day-14:cassis-port-miou": {
+    "day-16:cassis-port-miou": {
       "title": "Port-Miou → Gorguettes P+R 차량 회수",
       "origin": "Port-Miou, Cassis",
       "destination": "Parking relais des Gorguettes, Cassis",
@@ -1518,7 +1553,7 @@
       "evidence": "Day 14 Bus 372 vehicle retrieval flow",
       "verifiedAt": "2026-08-26"
     },
-    "day-14:cassis-vehicle-return": {
+    "day-16:cassis-vehicle-return": {
       "title": "Gorguettes P+R → Aix 숙소",
       "origin": "Parking relais des Gorguettes, Cassis",
       "destination": "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence",
@@ -1638,7 +1673,7 @@
       "evidence": "Lignes d'Azur 82 or 602 to Nice Vauban, then Tram L1/connection",
       "verifiedAt": "2026-08-22"
     },
-    "day-15:aix-station": {
+    "day-14:aix-station": {
       "title": "Aix-en-Provence역 출발 ➔ Marseille 이동 (TER)",
       "origin": "Gare d'Aix-en-Provence",
       "destination": "Marseille Saint-Charles",
@@ -1646,7 +1681,7 @@
       "evidence": "SNCF TER Aix to Marseille Saint-Charles",
       "verifiedAt": "2026-08-22"
     },
-    "day-15:marseille-station": {
+    "day-14:marseille-station": {
       "title": "Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승",
       "origin": "Marseille Saint-Charles",
       "destination": "Gare d'Aix-en-Provence",
@@ -1654,7 +1689,7 @@
       "evidence": "SNCF TER Marseille Saint-Charles to Aix",
       "verifiedAt": "2026-08-22"
     },
-    "day-16:aix-checkout": {
+    "day-17:aix-checkout": {
       "title": "Aix 체크아웃 ➔ Lourmarin 이동",
       "origin": "Aix-en-Provence",
       "destination": "Lourmarin",

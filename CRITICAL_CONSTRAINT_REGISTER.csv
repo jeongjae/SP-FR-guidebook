@@ -1,51 +1,18 @@
 constraint_id,day,category,description,risk_level,buffer_required_min
-CST-BKG-01,1,FIXED_BOOKING,Day 01 fixed booking(s): bcn-airport: 예약완료 OZ511 ([CONFIRMED]) — ICN T2 11:50 출발; barcelona-checkin: 예약완료 Occidental Barcelona 1929,CRITICAL,45
-CST-BKG-02,2,FIXED_BOOKING,Day 02 fixed booking(s): sant-pau: 현장 발권/온라인 자유관람 (€18); la-paradeta-sagrada: 현장 선착순 대기 (13:00 오픈); sagrada-familia: 예약완료 — 15:15 입장 (General · €29.12); bodega-joan: 저녁 예약 권장,CRITICAL,45
-CST-BKG-03,3,FIXED_BOOKING,"Day 03 fixed booking(s): biblioteca-de-catalunya: 자유 입장; bar-canete: 사전 예약 필수 (월요일 정상 영업); macba: 온라인 예매 (€13.50, 월요일 10:00~19:30 개관)",HIGH,45
 CST-TRF-04,4,TRANSFER_DAY,"Day 04 lodging transition (): Check-out, luggage transit, check-in window.",HIGH,60
-CST-BKG-04,4,FIXED_BOOKING,Day 04 fixed booking(s): barcelona-checkout: 숙소 후보 확정 필요; barcelona-sants: 예약완료 Hertz [CONFIRMED] · Ford Puma급 · SuperCover · €176.01 — 07:00부터 인수 가능 · 크로스보더 신고 필요; can-robert: 주차 운영 재확인; cau-ferrat-maricel: 화요일 운영·통합권 재확인; la-zorra: 13:00 예약; bascara-stay: 체크인 창 재확인,CRITICAL,45
-CST-BKG-05,5,FIXED_BOOKING,Day 05 fixed booking(s): collioure: 오전 10시 전 주차; collioure-lunch: Le Jardin 선택 시 사전예약; cadaques: Saba 주차 재확인,HIGH,45
-CST-BKG-06,6,FIXED_BOOKING,Day 06 fixed booking(s): tossa: 주차·Vila Vella 접근 재확인; pals: 지연 시 삭제 — 우선 압축 대상; peratallada: 골목에 차를 넣지 않는다,HIGH,45
 CST-TRF-07,7,TRANSFER_DAY,"Day 07 lodging transition (): Check-out, luggage transit, check-in window.",MEDIUM,30
-CST-BKG-07,7,FIXED_BOOKING,"Day 07 fixed booking(s): bascara-checkout: 체크아웃 조건 재확인; bcn-airport-return: Hertz [CONFIRMED] — 예약서 14:00 반납, **12:30 으로 변경 요청 필요**; vy1521: 예약완료 Vueling VY1521 ([CONFIRMED]); nice-checkin: 예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi, Palais ALZIRA (체크인 18:00~19:00)",CRITICAL,45
-CST-BKG-08,8,FIXED_BOOKING,Day 08 fixed booking(s): vieux-nice-lunch: 현장 방문 또는 점심 예약 권장; castle-hill: 무료 입장 (엘리베이터 무료 운영); nice-stay-return: 예약완료 Airbnb [CONFIRMED] — 12 Rue Verdi,HIGH,45
-CST-BKG-09,9,FIXED_BOOKING,Day 09 fixed booking(s): nice-ville: SNCF Connect / 현장 발권 (15~20분 간격); vieux-port-cannes: 현장 선택; cannes-station: SNCF Connect,HIGH,45
-CST-BKG-10,10,FIXED_BOOKING,Day 10 fixed booking(s): nice-ville: SNCF Connect / 현장 발권; eze-village: 이국적 정원 현장 (€7); menton-dinner: 사전 확인 권장; nice-return: SNCF Connect,HIGH,45
-CST-BKG-11,11,FIXED_BOOKING,Day 11 fixed booking(s): charles-negre: 현장 발권 (€5),HIGH,45
 CST-TRF-12,12,TRANSFER_DAY,"Day 12 lodging transition (): Check-out, luggage transit, check-in window.",HIGH,60
-CST-BKG-12,12,FIXED_BOOKING,Day 12 fixed booking(s): nice-checkout: 체크아웃 완료 (Airbnb [CONFIRMED]); nice-station-pickup: 예약확정 Hertz [CONFIRMED] — 9/9 09:00 인수; saint-paul: 주차: Parking Indigo Saint-Paul-de-Vence (Primary); grasse: 주차: Parking Notre Dame des Fleurs; aix-checkin: 예약완료 Airbnb [CONFIRMED] — 체크인 9/9 15:00 · 체크아웃 9/13 14:00,CRITICAL,45
-CST-BKG-13,13,FIXED_BOOKING,Day 13 fixed booking(s): aix-lunch: 현장 방문 또는 점심 예약 권장; atelier-des-lauves: 사전 예약 필수 (Aix Tourism / €9.50); musee-granet: 현장 발권 / 뮤지엄 패스 (€8),HIGH,45
-CST-BKG-14,14,FIXED_BOOKING,Day 14 fixed booking(s): cassis-parking: 주차 요금 현장 결제; calanques: 현장 발권 / 사전 예매 권장; cassis: 현장 선택,HIGH,45
-CST-BKG-15,15,FIXED_BOOKING,Day 15 fixed booking(s): aix-station: SNCF Connect (30분 간격 배차 / 유연한 탑승); fort-saint-jean: Mucem 입장권 현장 (€11) / 요새 정원 무료; marseille-lunch: 현장 선택; notre-dame-de-la-garde: 무료 입장 (RTM 버스 1회권 €1.70); marseille-station: SNCF Connect,HIGH,45
+CST-BKG-12,12,FIXED_BOOKING,Day 12 fixed booking(s): moustiers-checkin: 숙소 미정 — 도착 전 확보가 이 구간 최우선 액션; moustiers-evening: 9월 수요일 저녁 영업 재확인 · 대안은 장보기,CRITICAL,45
+CST-BKG-13,13,FIXED_BOOKING,Day 13 fixed booking(s): lapalud-lunch: 9월 평일 영업 재확인,HIGH,45
+CST-BKG-14,14,FIXED_BOOKING,Day 14 fixed booking(s): marseille-lunch: 현장 선택,HIGH,45
+CST-BKG-15,15,FIXED_BOOKING,Day 15 fixed booking(s): aix-lunch: 현장 방문 또는 점심 예약 권장,HIGH,45
 CST-TRF-16,16,TRANSFER_DAY,"Day 16 lodging transition (): Check-out, luggage transit, check-in window.",MEDIUM,30
-CST-BKG-16,16,FIXED_BOOKING,"Day 16 fixed booking(s): lourmarin: 주차: Parking du Rayol (Primary) / Parking du Château (Backup); coustellet: 주차: Parking de la Gare / Marché (무료 주차); goult: 주차: Place de la Libération; farm-checkin: 숙소 확정/후보 (Domaine des Peyre, Robion 인근)",HIGH,45
-CST-BKG-17,17,FIXED_BOOKING,Day 17 fixed booking(s): sentier-ocres: 입장료 현장 €3.50 / 주차: Parking Saint-Michel (Primary); roussillon: 식당: Restaurant David 또는 Le Bistrot de Roussillon; goult: 주차: Place de la Libération / Rue de la République,HIGH,45
-CST-BKG-18,18,FIXED_BOOKING,"Day 18 fixed booking(s): gordes: 주차: Parking Bel-Air (Primary, 외곽) / Parking Charles de Gaulle (Backup); village-des-bories: 입장료 현장 €6 / 주차장 완비 (진입로 협소 주의); senanque: 외관/주차 무료 (내부 가이드 투어 시 사전 예약); menerbes: 주차: Parking de la Mairie / Parking du Lavoir",HIGH,45
+CST-BKG-17,17,FIXED_BOOKING,Day 17 fixed booking(s): aix-checkout: Aix 체크아웃 시각과 Gordes 숙소 체크인 가능 시각 재확인; lourmarin: 주차: Parking du Rayol 우선 · Château 내부 관람은 현장 선택; lourmarin-lunch: ACTION REQUIRED — 9/14 월요일 12:15 실제 예약 — La Récréation은 성수기 7일 운영(공식 확인) 슬롯은 아직 확인되지 않음; lacoste: 구시가지 밖 하부 주차 후 도보 접근; bonnieux: 하부 공영주차 후 도보 접근; gordes-checkin: Gordes 9/14~9/16 2박 숙소 확정 및 체크인 창 확인 필요; gordes-village: 대표 전망대 정차 후 숙소 또는 외곽 주차장에서 도보 접근; gordes-dinner: La Bastide de Pierres 2026년 4/1–10/25 매일 저녁 19:00–21:45 · 실제 좌석 재확인,HIGH,45
+CST-BKG-18,18,FIXED_BOOKING,"Day 18 fixed booking(s): gordes-depart: Gordes 2박 숙소 미확정; roussillon: 9월 공식 운영 09:30–18:30(19:00 퇴장) · 현장 결제 · 날씨 조건부; roussillon-lunch: 9월 화요일 영업 재확인; senanque: ACTION REQUIRED — 9/15 16:00 HistoPad 회차는 표시됨(2026-08-25 확인), 예약은 아직 완료되지 않음; l-isle-sur-la-sorgue: 목·일 전통시장 아님 · 주요 antique village는 화·수 휴무가 많음; gordes-return: Gordes 2박 숙소 미확정",HIGH,45
 CST-TRF-19,19,TRANSFER_DAY,"Day 19 lodging transition (): Check-out, luggage transit, check-in window.",MEDIUM,30
-CST-BKG-19,19,FIXED_BOOKING,Day 19 fixed booking(s): avignon-parking-lunch: 주차: Parking des Halles (Primary) / Parking Palais des Papes (Backup); avignon-checkin: 숙소 예약/후보 (La Terrasse du Clocher 인근); avignon-return: 현장 선택,HIGH,45
-CST-BKG-20,20,FIXED_BOOKING,Day 20 fixed booking(s): palais: 사전 시간지정 예약 필수 (€12 / 결합권 €14.50); palais-lunch: 현장 선택; rocher-doms: 무료 입장; pont: 교황청 결합권 이용; avignon-return: 저녁 예약 권장,HIGH,45
-CST-BKG-21,21,FIXED_BOOKING,Day 21 fixed booking(s): uzes: 주차: Parking Cordeliers (Primary) / Parking Gide (Backup); uzes-lunch: 현장 선택; pont-du-gard: 주차/입장권 (€9.50/차량 포함) / Left Bank (Rive Gauche) 주차장,HIGH,45
-CST-BKG-22,22,FIXED_BOOKING,Day 22 fixed booking(s): avignon-centre: SNCF Connect (30분 간격 배차); arenes: 현장 발권 / JEP 무료/특별 입장; forum-lunch: 현장 선택,HIGH,45
+CST-BKG-19,19,FIXED_BOOKING,Day 19 fixed booking(s): gordes-checkout: 체크아웃 시각·수하물 보관 방식 확인; saint-remy: Parking de la Libération 또는 외곽 공영주차 · 수요일 혼잡; saint-remy-lunch: 1~1.5시간 안에 식사 가능한 구시가지 식당을 출발 전 선택; les-baux-de-provence: Château 운영·입장 조건과 외곽 유료주차 재확인; avignon-checkin: Avignon 9/16~9/20 4박 숙소 확정 및 주차·체크인 창 확인 필요; avignon-dinner: 당일 영업 식당 현장 선택 또는 짧은 예약,HIGH,45
+CST-BKG-21,21,FIXED_BOOKING,Day 21 fixed booking(s): arenes: 현장 발권 / 유적 패스,HIGH,45
+CST-BKG-22,22,FIXED_BOOKING,Day 22 fixed booking(s): avignon-return: 회랑 정원 테라스 예약 권장 (19:30),HIGH,45
 CST-TRF-23,23,TRANSFER_DAY,"Day 23 lodging transition (): Check-out, luggage transit, check-in window.",HIGH,60
-CST-BKG-23,23,FIXED_BOOKING,Day 23 fixed booking(s): avignon-tgv: 예약확정 Hertz [CONFIRMED] — 9/20 09:00 반납; part-dieu: 예약완료 TGV INOUI 12176 · 1등석 (10:22~11:28); lyon-checkin: 예약확정 Lagrange Aparthotel Lyon Lumière ([CONFIRMED]) — 체크인 15:00; lyon-return: 저녁 예약 권장 (Café Comptoir Abel 등),CRITICAL,45
-CST-BKG-24,24,FIXED_BOOKING,Day 24 fixed booking(s): funicular-ascent: TCL 1회권/24시간권 (€2.00 / €6.70); fourviere: 대성당/로마극장 무료 입장; vieux-lyon-lunch: 현장 선택; lyon-bouchon-dinner: 저녁 예약 확정/권장 (Daniel & Denise Créqui / Saint-Jean),HIGH,45
-CST-BKG-25,25,FIXED_BOOKING,Day 25 fixed booking(s): maison-des-canuts: 11:00 직조 시연 슬롯 현장/사전 예약 (€10); halles-gastronomy: 시장 내 식당 현장 착석 (12:30); tete-dor: 무료 입장,HIGH,45
-CST-BKG-26,26,FIXED_BOOKING,Day 26 fixed booking(s): part-dieu-departure: SNCF Connect (현장/사전 발권); savoy-lunch: 현장 선택 / 대기 적은 곳 우선; lakefront: 크루즈 현장 발권 (선택); annecy-return: SNCF Connect,HIGH,45
+CST-BKG-23,23,FIXED_BOOKING,Day 23 fixed booking(s): lyon-return: 사전 예약 필수 (19:30),CRITICAL,45
 CST-TRF-27,27,TRANSFER_DAY,"Day 27 lodging transition (): Check-out, luggage transit, check-in window.",MEDIUM,30
-CST-BKG-27,27,FIXED_BOOKING,"Day 27 fixed booking(s): lyon-checkout: 체크아웃 완료 (Lagrange Lumière [CONFIRMED]); tgv-to-paris: 예약확정 TGV INOUI 6618 (1등석 확정 [CONFIRMED]); paris-checkin: 예약완료 78 Rue de Lourmel, 75015 Paris (9/24 15:00 체크인 ~ 10/9 11:00 체크아웃); paris-return: 현장 선택",CRITICAL,45
-CST-BKG-28,28,FIXED_BOOKING,Day 28 fixed booking(s): city-bus-tour: Tootbus / Big Bus Discover 티켓 사전 예매; grand-palais-cezanne: 사전 시간지정 예약 필수 (17:00 슬롯); paris-return: 현장 선택,HIGH,45
-CST-BKG-29,29,FIXED_BOOKING,Day 29 fixed booking(s): luxembourg-warhol: 사전 시간지정 예약 필수 (13:00 슬롯),HIGH,45
-CST-BKG-30,30,FIXED_BOOKING,Day 30 fixed booking(s): orangerie: 사전 시간지정 예약 필수 (13:30 슬롯); opera-garnier-district: 내부 입장 선택(옵션),HIGH,45
-CST-BKG-31,31,FIXED_BOOKING,Day 31 fixed booking(s): gustave-moreau: 사전 시간지정 예약 권장 (10:30 슬롯); opera-lunch: 현장 선택,HIGH,45
-CST-BKG-32,32,FIXED_BOOKING,Day 32 fixed booking(s): musee-d-orsay: 사전 시간지정 예약 필수 (09:30 슬롯); rue-du-bac-lunch: 현장 선택; musee-rodin: 사전 시간지정 예약 권장 (14:30 슬롯),HIGH,45
-CST-BKG-33,33,FIXED_BOOKING,Day 33 fixed booking(s): petit-palais: 상설전 무료 자유 입장; champs-elysees-lunch: 현장 선택,HIGH,45
-CST-BKG-34,34,FIXED_BOOKING,Day 34 fixed booking(s): versailles-transfer: RER C 티켓 / 나비고; versailles-palace: Passport 티켓 사전 시간지정 예약 필수 (10:00 슬롯); versailles-lunch: 현장 선택; versailles-gardens: Passport 티켓 포함; trianon-hamlet: Passport 티켓 포함,HIGH,45
-CST-BKG-35,35,FIXED_BOOKING,Day 35 fixed booking(s): musee-du-louvre: 사전 시간지정 예약 필수 (14:00 슬롯),HIGH,45
-CST-BKG-36,36,FIXED_BOOKING,Day 36 fixed booking(s): marmottan-monet: 사전 시간지정 예매 권장 (14:00 슬롯),HIGH,45
-CST-BKG-37,37,FIXED_BOOKING,Day 37 fixed booking(s): longchamp-transfer: Qatar Prix de l'Arc 티켓 (General Admission / Grandstand); prix-de-l-arc: 예약확정 Qatar Prix de l'Arc de Triomphe,CRITICAL,45
-CST-BKG-38,38,FIXED_BOOKING,Day 38 fixed booking(s): jacquemart-andre: 사전 시간지정 예약 권장 (15:00 슬롯),HIGH,45
-CST-BKG-39,39,FIXED_BOOKING,Day 39 fixed booking(s): musee-picasso: 사전 시간지정 예약 필수 (13:00 슬롯); musee-carnavalet: 상설전 무료 예약 (15:30 권장),HIGH,45
-CST-BKG-40,40,FIXED_BOOKING,Day 40 fixed booking(s): bourse-de-commerce: 사전 시간지정 예매 필수 (10/7 개막일 11:00 슬롯); halles-lunch: 현장 선택,HIGH,45
-CST-BKG-41,41,FIXED_BOOKING,Day 41 fixed booking(s): musee-guimet: 사전 시간지정 예약 권장 (10:00 슬롯); iena-lunch: 현장 선택; musee-art-moderne: 상설전 무료 자유 입장; farewell-dinner: 저녁 예약 필수,HIGH,45
-CST-BKG-42,42,FIXED_BOOKING,Day 42 fixed booking(s): paris-packing-checkout: 체크아웃 11:00; cdg-transfer: 공식 택시 G7 또는 호텔 콜택시; cdg-departure: 예약확정 아시아나항공 OZ502 (CDG 19:10 ➔ ICN 10/10 14:10),CRITICAL,45
-CST-BKG-43,43,FIXED_BOOKING,Day 43 fixed booking(s): inflight: 아시아나항공 OZ502 탑승중,HIGH,45

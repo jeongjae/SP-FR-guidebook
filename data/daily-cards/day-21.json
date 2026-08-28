@@ -32,7 +32,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "check", "label": "LIVE TRAIN CHECK", "detail": "08:45편을 확정값으로 보지 말고 출발 전 SNCF Connect에서 실제 금요일 열차와 승강장을 확인한다."}
+        {
+          "type": "check",
+          "label": "LIVE TRAIN CHECK",
+          "detail": "08:45편을 확정값으로 보지 말고 출발 전 SNCF Connect에서 실제 금요일 열차와 승강장을 확인한다."
+        }
       ],
       "executionNote": "Action Card 목적지는 Gare d'Avignon Centre → Gare d'Arles.",
       "officialUrl": "https://www.sncf-connect.com/train/horaires/avignon/arles",
@@ -52,7 +56,11 @@
       "menu": null,
       "reservation": "현장 발권 / 유적 패스",
       "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "내부관람은 현장권 또는 Arles monuments pass가 필요하다."}
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "내부관람은 현장권 또는 Arles monuments pass가 필요하다."
+        }
       ],
       "officialUrl": "https://www.arlestourisme.com/",
       "optional": false,
@@ -71,7 +79,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "Théâtre Antique 내부관람 시 입장권이 필요하다."}
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "Théâtre Antique 내부관람 시 입장권이 필요하다."
+        }
       ],
       "optional": false,
       "place_ref": "theatre-antique-arles"
@@ -89,7 +101,11 @@
       "menu": "카마르그 황소 스튜(Gardianne de taureau), 카마르그 적미 밥",
       "reservation": null,
       "executionStatuses": [
-        {"type": "check", "label": "LUNCH CHECK", "detail": "금요일 영업과 점심 주문 마감·브레이크타임을 당일 확인한다."}
+        {
+          "type": "check",
+          "label": "LUNCH CHECK",
+          "detail": "금요일 영업과 점심 주문 마감·브레이크타임을 당일 확인한다."
+        }
       ],
       "optional": false,
       "place_ref": "le-gibolin-arles"
@@ -107,7 +123,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "회랑 내부관람은 입장권이 필요하다."}
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "회랑 내부관람은 입장권이 필요하다."
+        }
       ],
       "executionNote": "공식 2026년 5–9월 일반 운영은 매일 09:00–19:00. 행사 변동은 당일 확인한다.",
       "officialUrl": "https://www.arlestourisme.com/fr/d%C3%A9tails.html?=Clo%C3%AEtre+Saint+Trophime&ident=5538418",
@@ -127,7 +147,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "optional", "label": "OPTIONAL", "detail": "피로·우천 시 가장 먼저 생략하고 역으로 이동한다."}
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "피로·우천 시 가장 먼저 생략하고 역으로 이동한다."
+        }
       ],
       "optional": true,
       "place_ref": "la-roquette"
@@ -145,7 +169,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "check", "label": "LIVE TRAIN CHECK", "detail": "17:15편을 고정하지 말고 오후 일정 중 실제 귀환 TER를 확인한다."}
+        {
+          "type": "check",
+          "label": "LIVE TRAIN CHECK",
+          "detail": "17:15편을 고정하지 말고 오후 일정 중 실제 귀환 TER를 확인한다."
+        }
       ],
       "officialUrl": "https://www.sncf-connect.com/train/horaires/arles/avignon",
       "optional": false,

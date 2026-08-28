@@ -6646,6 +6646,97 @@
           "ttl_days": 3650
         }
       }
+    },
+    "moustiers-sainte-marie": {
+      "displayName": "Moustiers-Sainte-Marie",
+      "region": "verdon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "마을 상시 개방. Notre-Dame de Beauvoir 예배당 연중 무휴 주간 개방(시간 비고정)·무료·계단 262개",
+          "source": "https://provence-alpes-cotedazur.com/en/things-to-do/culture-and-heritage/places/chapelle-notre-dame-de-beauvoir-moustiers-sainte-marie-en-4067124/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 30
+        },
+        "parking": {
+          "value": "마을 입구·중심 인근 무료/유료 주차 혼재, 유료는 Flowbird 앱. 성수기에는 하부 주차장 권장. 구획·9월 요금 재확인",
+          "source": "https://www.moustiers.fr/organiser-mon-sejour/informations-pratiques/comment-venir/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 15
+        }
+      }
+    },
+    "point-sublime": {
+      "displayName": "Point Sublime",
+      "region": "verdon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "전망대 상시·무료. 주차장에서 도보 약 10분",
+          "source": "https://www.verdontourisme.com/en/informations/patrimoine-naturel-en/le-point-sublime-en-5694502id/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 30
+        },
+        "parking": {
+          "value": "대형 주차장. 성수기 유료·3시간 이내 권장. 9월 요금 재확인",
+          "source": "https://www.verdontourisme.com/en/informations/patrimoine-naturel-en/le-point-sublime-en-5694502id/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 15
+        }
+      }
+    },
+    "route-des-cretes": {
+      "displayName": "Route des Crêtes (D23)",
+      "region": "verdon",
+      "grade": "recommended",
+      "facts": {
+        "hours": {
+          "value": "개방기간 3월 말~11월 말(동절기 결빙 폐쇄). 24km 순환, 전망대 약 15곳",
+          "source": "https://www.verdontourisme.com/en/route-des-cretes/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 30
+        },
+        "closed": {
+          "value": "중앙 구간 시계방향 일방통행(협소·경사 15%) — Auberge des Crêtes 진입→La Palud 종점. 당일 임시 통제 재확인",
+          "source": "https://www.verdontourisme.com/en/route-des-cretes/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 15
+        }
+      }
+    },
+    "lac-de-sainte-croix": {
+      "displayName": "Lac de Sainte-Croix (Pont du Galetas)",
+      "region": "verdon",
+      "grade": "essential",
+      "facts": {
+        "hours": {
+          "value": "조망 상시·무료. 카약·페달로 대여의 9월 운영은 미확인 — 일정 전제로 삼지 않음",
+          "source": "https://www.verdontourisme.com/",
+          "verified_at": "2026-08-28",
+          "confidence": "secondary",
+          "ttl_days": 15
+        }
+      }
+    },
+    "plateau-de-valensole": {
+      "displayName": "Plateau de Valensole",
+      "region": "verdon",
+      "grade": "optional",
+      "facts": {
+        "hours": {
+          "value": "상시 통과 가능. 라벤더 개화 6월 중순~7월 중순·수확 7월 중순부터 — 9월은 수확 후 풍경",
+          "source": "https://en.tourisme-alpes-haute-provence.com/large-natural-spaces/plateau-of-valensole/",
+          "verified_at": "2026-08-28",
+          "confidence": "official",
+          "ttl_days": 90
+        }
+      }
     }
   }
 }

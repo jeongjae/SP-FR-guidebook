@@ -13,7 +13,7 @@ source: source/CURRENT/30_Places/fontaine-de-vaucluse.md
 
 ## 현장 실행
 
-- **OPTIONAL · Day 18 · 60–90분**
+- **일정 외 · 선택 대안**
 - **WHY GO**: 강물의 색과 강변 산책, 석회암 절벽 아래 수원지로 언덕마을과 다른 자연 풍경을 경험한다.
 - **DO THIS**: 마을 주차 → Sorgue 강을 따라 상류 → Vallis Clausa 방향 → 수원지 접근 가능 범위 → 강변 복귀.
 - **EAT / DRINK**: 강변에서 가벼운 점심 또는 커피.
@@ -21,7 +21,7 @@ source: source/CURRENT/30_Places/fontaine-de-vaucluse.md
 
 ### Trip Layer
 
-Day 18의 유일한 Optional이다. 15:00~16:00 Avignon 체크인에 지장이 없을 때만 실행한다.
+RS01 일정 조정으로 기본 일정에서 빠졌다. Day 18 오후 L'Isle 왕복에 시간이 크게 남을 때만 연장 후보로 검토한다.
 
 ## 왜 가는가
 

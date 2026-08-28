@@ -203,6 +203,60 @@
         "*.md"
       ],
       "note": "가이드북이 엉뚱한 사이트로 보내는 것은 현장 사고다. S2 조사에서 확인 (2026-08-17)"
+    },
+    {
+      "id": "DEC-RS01-A",
+      "date": "2026-08-28",
+      "decision": "Verdon(Moustiers) 1박 삽입 — 9/9~9/10. Aix 4박 9/10~9/14(확정, 날짜변경 완료), Gordes 2박 9/14~9/16(미정), Avignon 4박 9/16~9/20(미정). 총 42박 불변, Day 번호 재번호 없음",
+      "forbidden_patterns": [
+        "Avignon 5박",
+        "아비뇽 5박",
+        "9/15~9/20 5박",
+        "2026-09-09(수) 15:00 체크인",
+        "Aix 숙소 2026-09-09",
+        "9/13 Gordes 체크인",
+        "Gordes 2박(9/13"
+      ],
+      "required_patterns": [],
+      "scope": [
+        "03_Whole_Trip_*.md",
+        "06_Nice_*.md",
+        "06B_Verdon_*.md",
+        "07_Aix_*.md",
+        "08_Luberon_*.md",
+        "09_Avignon_*.md"
+      ],
+      "also_check_daily_cards": true,
+      "note": "근거: RS01_VERDON_RESCHEDULE_INSTRUCTION_v1.0.md (Jason 2026-08-28 승인). 렌터카 9/9 인수·9/17 반납 하드앵커 불변"
+    },
+    {
+      "id": "DEC-RS01-B",
+      "date": "2026-08-28",
+      "decision": "Marseille은 Aix 체류에 유지하고 금요일(9/11)로 이동. Aix 시장일은 토요일(9/12) 대형시장으로 배치. Cassis는 일요일(9/13). Saint-Rémy 수요시장은 9/16 이동일에 통합",
+      "forbidden_patterns": [
+        "Aix 목요시장",
+        "목요 시장(Place Richelme)"
+      ],
+      "required_patterns": [],
+      "scope": [
+        "07_Aix_*.md"
+      ],
+      "also_check_daily_cards": true,
+      "note": "요일 제약(수요시장·화요 Gordes장·토요 Aix장·Lacoste 월 개관)이 배치를 결정"
+    },
+    {
+      "id": "DEC-RS01-C",
+      "date": "2026-08-28",
+      "decision": "Orange·Fontaine-de-Vaucluse는 일정에서 제외. L'Isle-sur-la-Sorgue는 Day 18(9/15 화) 오후 선택 왕복으로 이동. Ménerbes·Goult는 Day 18 기본 일정에서 제외",
+      "forbidden_patterns": [
+        "Orange Bonus"
+      ],
+      "required_patterns": [],
+      "scope": [
+        "08_Luberon_*.md",
+        "09_Avignon_*.md"
+      ],
+      "note": "아비뇽 4박 축소에 따른 삭제 레버 정리"
     }
   ]
 }

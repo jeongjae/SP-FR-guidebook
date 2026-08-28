@@ -8,13 +8,68 @@
     "inflightNights": 1
   },
   "stays": [
-    {"key": "barcelona", "base": "Barcelona", "checkin": "2026-08-29", "checkout": "2026-09-01", "nights": 3},
-    {"key": "girona", "base": "Bàscara", "checkin": "2026-09-01", "checkout": "2026-09-04", "nights": 3},
-    {"key": "nice", "base": "Nice", "checkin": "2026-09-04", "checkout": "2026-09-09", "nights": 5},
-    {"key": "aix", "base": "Aix-en-Provence", "checkin": "2026-09-09", "checkout": "2026-09-13", "nights": 4},
-    {"key": "luberon", "base": "Gordes", "checkin": "2026-09-13", "checkout": "2026-09-15", "nights": 2},
-    {"key": "avignon", "base": "Avignon", "checkin": "2026-09-15", "checkout": "2026-09-20", "nights": 5},
-    {"key": "lyon", "base": "Lyon", "checkin": "2026-09-20", "checkout": "2026-09-24", "nights": 4},
-    {"key": "paris", "base": "Paris", "checkin": "2026-09-24", "checkout": "2026-10-09", "nights": 15}
+    {
+      "key": "barcelona",
+      "base": "Barcelona",
+      "checkin": "2026-08-29",
+      "checkout": "2026-09-01",
+      "nights": 3
+    },
+    {
+      "key": "girona",
+      "base": "Bàscara",
+      "checkin": "2026-09-01",
+      "checkout": "2026-09-04",
+      "nights": 3
+    },
+    {
+      "key": "nice",
+      "base": "Nice",
+      "checkin": "2026-09-04",
+      "checkout": "2026-09-09",
+      "nights": 5
+    },
+    {
+      "key": "verdon",
+      "base": "Moustiers-Sainte-Marie",
+      "checkin": "2026-09-09",
+      "checkout": "2026-09-10",
+      "nights": 1
+    },
+    {
+      "key": "aix",
+      "base": "Aix-en-Provence",
+      "checkin": "2026-09-10",
+      "checkout": "2026-09-14",
+      "nights": 4
+    },
+    {
+      "key": "luberon",
+      "base": "Gordes",
+      "checkin": "2026-09-14",
+      "checkout": "2026-09-16",
+      "nights": 2
+    },
+    {
+      "key": "avignon",
+      "base": "Avignon",
+      "checkin": "2026-09-16",
+      "checkout": "2026-09-20",
+      "nights": 4
+    },
+    {
+      "key": "lyon",
+      "base": "Lyon",
+      "checkin": "2026-09-20",
+      "checkout": "2026-09-24",
+      "nights": 4
+    },
+    {
+      "key": "paris",
+      "base": "Paris",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-09",
+      "nights": 15
+    }
   ]
 }

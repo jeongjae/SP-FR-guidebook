@@ -20,7 +20,7 @@ source: source/CURRENT/30_Places/marseille.md
 직사각형 구항구(Vieux-Port)를 중심으로 북쪽의 옛 골목 르 파니에(Le Panier), 바다 위 현대 건축 뮈셈(Mucem)과 생장 요새(Fort Saint-Jean), 그리고 언덕 꼭대기에서 도시 전체를 수호하는 노트르담 드 라 가르드(Notre-Dame de la Garde) 대성당이 마르세유 당일치기의 핵심 축을 형성한다.
 
 ### Editor's Verdict
-> **"엑상프로방스 체류 중 하루를 투자해 전혀 다른 질감의 거칠고 압도적인 지중해 해양 대도시를 경험하는 결정적 목적지다."** Day 15에는 Aix Centre역에서 TER로 Saint-Charles역에 닿아 구항구 → 르 파니에 → 뮈셈 → 생장 요새로 이어지는 축선을 따라 탐방한다. L50 버스는 철도 이상 시 fallback이다.
+> **"엑상프로방스 체류 중 하루를 투자해 전혀 다른 질감의 거칠고 압도적인 지중해 해양 대도시를 경험하는 결정적 목적지다."** Day 14에는 Aix Centre역에서 TER로 Saint-Charles역에 닿아 구항구 → 르 파니에 → 뮈셈 → 생장 요새로 이어지는 축선을 따라 탐방한다. L50 버스는 철도 이상 시 fallback이다.
 
 - **Best For**: 지중해 해양 대도시 탐방, 현대 건축(Mucem) 및 17세기 요새 관람, 지중해 해산물 미식
 - **Best Time**: 오전 09:30부터 늦은 오후 17:30까지 (주간 당일치기)

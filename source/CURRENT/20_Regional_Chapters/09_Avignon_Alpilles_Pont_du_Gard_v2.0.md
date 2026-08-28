@@ -4,7 +4,7 @@ chapter: 09
 version: "2.0"
 content_schema: rc-region-v1
 status: "상용 가이드북형 장소·생활권 보강본 — 예약 전 최종 확인 필요"
-travel_dates: "2026-09-15 – 2026-09-20"
+travel_dates: "2026-09-16 – 2026-09-20"
 travelers: "Jason · Julia"
 last_web_verification: "2026-08-01"
 source_priority: "공식 관광기관·문화부·시설·SNCF·숙박업체·레스토랑 공식자료"
@@ -16,7 +16,7 @@ source_priority: "공식 관광기관·문화부·시설·SNCF·숙박업체·�
 
 # Commercial Guide Module
 
-> **교황도시를 거점으로 Alpilles, Pont du Gard와 Arles를 잇는 5박**
+> **교황도시를 거점으로 Alpilles, Pont du Gard와 Arles를 잇는 4박**
 > 성벽도시의 역사와 두 번의 차량일을 균형 있게 배치한 Provence 후반부
 
 ## Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계
@@ -40,8 +40,7 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에
 
 | 날짜 | 핵심 일정 |
 |---|---|
-| 9/15 화 | L'Isle-sur-la-Sorgue · Avignon 체크인 · 생활권 정리 |
-| 9/16 수 | Saint-Rémy 수요시장 · Les Baux · [Orange Bonus] |
+| 9/16 수 | Gordes 체크아웃 · Saint-Rémy 수요시장 · Les Baux · Avignon 체크인 · 생활권 정리 |
 | 9/17 목 | Uzès · Pont du Gard · Nîmes · 렌터카 반납 |
 | 9/18 금 | Arles 당일치기 (TER 이동) |
 | 9/19 토 | Les Halles · Palais des Papes · Rocher des Doms · Pont Saint-Bénézet |
@@ -60,9 +59,9 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에
 
 ## 구역별 이해와 숙소 생활권
 
-Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 Alpilles와 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
+Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 도착일(Alpilles 경유)과 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
 
-아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 5박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
+아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 4박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
 
 ### 아침 운동
 
@@ -96,7 +95,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 #### Saint-Rémy-de-Provence {{grade:essential|필수}}
 
-> **Editor's Verdict**: Day 19 수요일 08:00–13:00 시장, 구시가지와 Van Gogh의 Saint-Paul-de-Mausole가 세 축이다.
+> **Editor's Verdict**: Day 19(9/16 수) 08:00–13:00 시장, 구시가지와 Van Gogh의 Saint-Paul-de-Mausole가 세 축이다.
 
 - **체류/요금**: 시장·구시가지·점심 3.5–4시간 · 마을 무료
 - **상세 가이드**: [Saint-Rémy-de-Provence 전체 가이드 보기](../places/saint-remy-de-provence.html)
@@ -297,7 +296,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ## 시장과 장보기
 
-- **Saint-Rémy 수요시장** — Day 19 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
+- **Saint-Rémy 수요시장** — Day 19(도착일) 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
 - **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
@@ -311,7 +310,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ### 식사 원칙
 
-Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 시간을 쓴다. Orange를 실행하더라도 식사를 추가하지 않는다. 그 밖의 아침은 Les Halles 시장 식재료나 로컬 카페를 활용한다.
+Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 시간을 쓴다. Orange는 일정에서 제외됐다. 그 밖의 아침은 Les Halles 시장 식재료나 로컬 카페를 활용한다.
 
 ---
 
@@ -336,10 +335,10 @@ Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 
 
 ### 숙소와 생활권
 
-- **ACTION REQUIRED**: Avignon accommodation for 9/15–9/20 is not yet confirmed in the repository.
+- **ACTION REQUIRED**: Avignon accommodation for 9/16–9/20 (4 nights) is not yet confirmed in the repository.
 - **숙소 거점**: 성벽 안(intra-muros) 도보 생활권을 우선하되 실제 숙소는 미확정이다. `La Terrasse du Clocher`는 후보일 뿐이며 확정 숙소처럼 표시하지 않는다.
-- **일정**: 2026-09-15(화) 체크인 – 2026-09-20(일) 체크아웃 (5박)
-- **확정 후 동기화**: Day 18 체크인, Day 19–22 출발·귀환, Day 20 렌터카 반납, Day 21 Avignon Centre 역 접근, Day 23 Avignon Centre/Avignon TGV 접근을 숙소명·주소·체크인 창·주차·연락처와 함께 갱신한다.
+- **일정**: 2026-09-16(수) 체크인 – 2026-09-20(일) 체크아웃 (4박, 미정 — 현지 결정)
+- **확정 후 동기화**: Day 19 체크인, Day 20–22 출발·귀환, Day 20 렌터카 반납, Day 21 Avignon Centre 역 접근, Day 23 Avignon Centre/Avignon TGV 접근을 숙소명·주소·체크인 창·주차·연락처와 함께 갱신한다.
 
 ### 핵심 안전 및 이동 확인
 
@@ -392,30 +391,19 @@ Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 
 - [대화형 HTML 지도](../../ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.html)
 - [GeoJSON](../../ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson)
 - [KML](../../ASSETS/75_Execution_Maps/Avignon_Execution_Map_v0.2.kml)
-- 대상 일정: **Day 18–23**
+- 대상 일정: **Day 19–23**
 - 숙소 핀은 **성벽 안 생활권 거점** 기준이다.
 - 연결선은 일정상의 기준점 순서를 보여주는 개략선이다. 실제 도보·운전은 Google Maps에서 다시 계산한다.
 - HTML 배경지도와 Google Maps 링크는 인터넷 연결이 필요하다.
 
-## Day 18 — 9월 15일 화요일
-### L'Isle의 물길을 지나 Avignon 5박 시작
-
-* **MUST**: Gordes 체크아웃, L'Isle-sur-la-Sorgue 물길 산책, Avignon 체크인
-* **OPTIONAL**: Fontaine-de-Vaucluse
-* **IF LATE**: Fontaine을 생략하고 15:00~16:00 체크인을 지킨다.
-
-L'Isle는 화요일 시장·앤틱 쇼핑일로 설명하지 않는다. 상세 실행정보는 Day 18 정본을 따른다.
-
----
-
 ## Day 19 — 9월 16일 수요일
-### Saint-Rémy 시장과 Les Baux의 Alpilles 풍경
+### Gordes 체크아웃 → Saint-Rémy 수요시장 → Les Baux → Avignon 4박 시작
 
-* **MUST**: Saint-Rémy 수요시장·구시가지·점심, Les Baux 마을·Château·전망
-* **OPTIONAL**: Orange Bonus
-* **IF LATE**: Orange를 가장 먼저 삭제하고 Saint-Rémy와 Les Baux의 체류시간을 유지한다.
+* **MUST**: Gordes 체크아웃(08:00), Saint-Rémy 수요시장·구시가지·점심, Avignon 체크인
+* **RECOMMENDED**: Les Baux 마을·Château·전망 (체류 축소 가능)
+* **IF LATE**: Les Baux 체류를 줄이고, 그래도 늦으면 성채 외곽 전망으로 대체해 16:00 전후 체크인을 지킨다.
 
-Base는 Avignon → Saint-Rémy → Les Baux → Avignon이다. Orange는 **OPTIONAL BONUS**로만 두고 예약하지 않으며 기본 경로에 넣지 않는다. 16:00~16:30 현장 조건·실제 종료시각·체력이 모두 좋을 때만 Théâtre antique 단일 목적으로 검토한다. Saint-Rémy 시장이나 Les Baux 체류를 줄이지 않으며 일반적인 FALLBACK은 Orange 생략 후 Avignon 직행이다.
+Base는 Gordes → Saint-Rémy → Les Baux → Avignon이다. 수요시장은 수요일뿐이므로 이 날의 첫 우선순위다. Orange는 이 일정에서 제외한다. 상세 실행정보는 Day 19 정본을 따른다.
 
 ---
 

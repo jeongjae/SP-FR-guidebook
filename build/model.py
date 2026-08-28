@@ -496,11 +496,11 @@ def load_registry() -> list[dict]:
         "비추천": "discouraged",
     }
     chapter_region = {
-        "04": "barcelona", "05": "girona", "06": "nice", "07": "aix",
-        "08": "luberon", "09": "avignon", "10": "lyon", "11": "paris",
+        "04": "barcelona", "05": "girona", "06": "nice", "06B": "verdon",
+        "07": "aix", "08": "luberon", "09": "avignon", "10": "lyon", "11": "paris",
     }
     for line in REGISTRY_MD.read_text(encoding="utf-8").splitlines():
-        h = re.match(r"^##\s+([a-z]+)\s*\((\d+)\)", line)
+        h = re.match(r"^##\s+([a-z]+)\s*\((\d+[A-Z]?)\)", line)
         if h:
             region = chapter_region.get(h.group(2), h.group(1))
             continue
@@ -1004,8 +1004,8 @@ def validate(trip: Trip) -> list[str]:
     if missing:
         problems.append(f"빠진 Day: {missing}")
 
-    if len(trip.regions) != 8:
-        problems.append(f"지역이 8개가 아니다: {len(trip.regions)}개")
+    if len(trip.regions) != 9:  # RS01: verdon 추가로 8→9
+        problems.append(f"지역이 9개가 아니다: {len(trip.regions)}개")
 
     # 여행 프랑스어 정본 검증
     if len(trip.french_phrases) != 120:

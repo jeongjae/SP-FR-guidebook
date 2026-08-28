@@ -80,6 +80,7 @@ FACT_LABEL = {
     "hours": "운영시간", "closed": "휴무", "price_adult": "요금",
     "price_range": "가격대", "booking": "예약", "getting_there": "가는 법",
     "duration": "소요시간", "address": "주소", "phone": "전화", "note": "메모",
+    "parking": "주차",
 }
 
 EXECUTION_STATUS_UI = {
@@ -1923,6 +1924,8 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
             return "girona"
         if "nice" in s.id or "cannes" in s.id or "antibes" in s.id or "monaco" in s.id or "menton" in s.id or "eze" in s.id or "villefranche" in s.id:
             return "nice"
+        if "moustiers" in s.id or "verdon" in s.id or "palud" in s.id or "galetas" in s.id or "valensole" in s.id or "castellane" in s.id or "sublime" in s.id or "cretes" in s.id:
+            return "verdon"
         if "aix" in s.id or "marseille" in s.id or "cassis" in s.id or "calanques" in s.id or "vallon" in s.id:
             return "aix"
         if "luberon" in s.id or "gordes" in s.id or "roussillon" in s.id or "farm" in s.id or "bories" in s.id:

@@ -194,7 +194,7 @@
         },
         {
           "day": 12,
-          "label": "Nice역에서 렌터카 인수 후 Provence 이동"
+          "label": "Nice역에서 렌터카 인수 후 Route Napoléon으로 Verdon·Moustiers 이동"
         }
       ],
       "sources": [
@@ -227,6 +227,48 @@
           "url": "https://www.lignesdazur.com/fr/plan-lignes-azur",
           "verifiedAt": "2026-08-21",
           "recheckBy": "2026-08-28"
+        }
+      ]
+    },
+    "verdon": {
+      "recommendation": {
+        "title": "대중교통 없음 — 렌터카 단일 축, 장애 시 구간 포기",
+        "summary": "Day 12–13은 Nice-Ville에서 인수한 렌터카가 유일한 이동수단이다. 협곡·고원 구간에 실효성 있는 대중교통 대안이 없으므로, 차량 장애 시 이 구간을 건너뛰고 Aix로 직행하는 것이 정본 대안이다."
+      },
+      "products": [],
+      "howToUse": [
+        "Nice-Ville 09:00 렌터카 인수(확정) 후 이 구간 전체를 같은 차량으로 이동한다.",
+        "산악 구간 진입 전 연료를 절반 아래로 내리지 않는다. Castellane이 마지막 안정적 보급 지점이라고 가정하고 계획한다.",
+        "Route des Crêtes 중앙 구간은 시계방향 일방통행이다. 역방향 진입을 계획하지 않는다.",
+        "야간 산악운전을 피한다. 지연 시 정차지를 삭제해 일몰 전 Moustiers에 도착한다."
+      ],
+      "exceptions": [
+        "차량 장애 시 렌터카 업체 지원을 먼저 요청하고, 이 구간을 포기한 뒤 Aix로 직행한다. 버스로 일정을 재현하지 않는다.",
+        "악천후·결빙·낙석 통제 시 Route des Crêtes를 생략하고 D952 본선으로 이동한다.",
+        "Moustiers 숙소가 확보되지 않으면 이 구간 전체를 취소하고 Aix 조기 진입으로 전환할 수 있어야 한다."
+      ],
+      "itineraryUses": [
+        {
+          "day": 12,
+          "label": "Nice→Saint-Paul→Grasse→Castellane→Point Sublime→Moustiers"
+        },
+        {
+          "day": 13,
+          "label": "Moustiers→Route des Crêtes→Sainte-Croix→Valensole→Aix"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Verdon 관광청 Route des Crêtes 공식 안내(일방통행·개방기간)",
+          "url": "https://www.verdontourisme.com/en/route-des-cretes/",
+          "verifiedAt": "2026-08-28",
+          "recheckBy": "2026-09-08"
+        },
+        {
+          "label": "Moustiers 관광안내소 오시는 길·주차 공식 안내",
+          "url": "https://www.moustiers.fr/organiser-mon-sejour/informations-pratiques/comment-venir/",
+          "verifiedAt": "2026-08-28",
+          "recheckBy": "2026-09-08"
         }
       ]
     },
@@ -272,23 +314,23 @@
       ],
       "itineraryUses": [
         {
-          "day": 12,
-          "label": "Nice에서 렌터카 인수 후 Saint-Paul·Grasse 경유; Aix 도착 뒤 숙소 주차장에 고정"
-        },
-        {
           "day": 13,
-          "label": "시장·Vieil Aix·세잔 아틀리에·Granet은 도보"
+          "label": "Moustiers에서 협곡·호수·Valensole 경유 렌터카 하산; Aix 도착 뒤 숙소 주차장에 고정"
         },
         {
           "day": 14,
-          "label": "Cassis·Calanques는 렌터카 왕복; 현지 주차·셔틀은 별도"
-        },
-        {
-          "day": 15,
           "label": "Aix↔Marseille는 별도 TER, Marseille 시내는 RTM 60·83번 bus와 Metro M1"
         },
         {
+          "day": 15,
+          "label": "토요시장·Vieil Aix·세잔 아틀리에·Granet은 도보"
+        },
+        {
           "day": 16,
+          "label": "Cassis·Calanques는 렌터카 왕복; 현지 주차·셔틀은 별도"
+        },
+        {
+          "day": 17,
           "label": "체크아웃 뒤 렌터카로 Lourmarin·Luberon 이동"
         }
       ],
@@ -358,21 +400,21 @@
         "Gordes 숙소는 대중교통 거점이라고 가정하지 않는다. ZOU! 노선은 문전 이동이나 야간 귀환을 보장하지 않는다.",
         "99xx 계열 통학 노선은 방문객의 비상 교통편으로 계획하지 않는다.",
         "차량 장애가 나면 렌터카 업체 지원을 먼저 요청하고 그날의 다중 마을 일정을 취소한다. 실제 출발지에서 연결되는 915·917·907 중 한 축만 공식 시간표로 검토한다.",
-        "Day 18의 정본은 L'Isle-sur-la-Sorgue를 거쳐 렌터카로 Avignon까지 이동하는 것이다. 버스는 차량 장애 때 일정을 단일 축으로 줄이는 대안이다.",
+        "Day 19의 정본은 Saint-Rémy·Les Baux를 거쳐 렌터카로 Avignon까지 이동하는 것이다. L'Isle은 Day 18 오후 선택 왕복이다. 버스는 차량 장애 때 일정을 단일 축으로 줄이는 대안이다.",
         "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다."
       ],
       "itineraryUses": [
         {
-          "day": 16,
-          "label": "Aix→Lourmarin→[Bonnieux·Lacoste 선택]→Gordes는 렌터카"
-        },
-        {
           "day": 17,
-          "label": "Gordes→Roussillon→[Ménerbes·Goult 선택]→Sénanque→Gordes는 렌터카"
+          "label": "Aix→Lourmarin→Lacoste→[Bonnieux 선택]→Gordes는 렌터카"
         },
         {
           "day": 18,
-          "label": "Gordes 체크아웃→L'Isle-sur-la-Sorgue→[Fontaine 선택]→Avignon은 렌터카"
+          "label": "Gordes 화요시장→Roussillon→Sénanque→[오후 L'Isle 왕복 선택]→Gordes는 렌터카"
+        },
+        {
+          "day": 19,
+          "label": "Gordes 체크아웃→Saint-Rémy→Les Baux→Avignon은 렌터카"
         }
       ],
       "sources": [
@@ -438,12 +480,8 @@
       ],
       "itineraryUses": [
         {
-          "day": 18,
-          "label": "Gordes→L'Isle-sur-la-Sorgue→Avignon은 렌터카, 체크인 뒤 숙소 정리"
-        },
-        {
           "day": 19,
-          "label": "Saint-Rémy·Les Baux는 렌터카로 왕복"
+          "label": "Gordes→Saint-Rémy 수요시장→Les Baux→Avignon은 렌터카, 체크인 뒤 숙소 정리"
         },
         {
           "day": 20,

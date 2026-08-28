@@ -2,22 +2,22 @@
   "schemaVersion": "1.0",
   "day": 12,
   "date": "2026-09-09",
-  "city": "Aix-en-Provence",
-  "title": "Nice역 렌터카와 Provence 진입",
+  "city": "Moustiers-Sainte-Marie",
+  "title": "Nice역 렌터카 → Route Napoléon → Verdon 협곡 → Moustiers",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "driving",
   "startTime": "08:00",
   "endTime": "20:30",
   "totalDuration": "12시간 30분",
-  "totalDistance": "약 204km · 차량 이동",
-  "fatigue": "4",
+  "totalDistance": "약 150km · 차량 이동 (구간별 실주행 재확인)",
+  "fatigue": "5",
   "hotel": {
-    "name": "Les Toits de Méjanes (Airbnb)",
+    "name": "Moustiers-Sainte-Marie 숙소 (미정 — 현지 결정)",
     "lat": null,
     "lng": null,
-    "status": "confirmed",
-    "address": "2 Place Coimbra, Résidence Les Toits de Méjanes, entrée A, 6e étage, 13090 Aix-en-Provence, France"
+    "status": "candidate",
+    "address": null
   },
   "stops": [
     {
@@ -33,7 +33,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Palais ALZIRA 숙박 예약 기준 9/9 아침 체크아웃."}
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "Palais ALZIRA 숙박 예약 기준 9/9 아침 체크아웃."
+        }
       ],
       "optional": false,
       "place_ref": null
@@ -51,9 +55,21 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Hertz Nice Railway Station 9/9 09:00 인수 예약."},
-        {"type": "check", "label": "VERIFY RETURN", "detail": "확정된 Hertz Avignon TGV 9/17 18:30 반납값이 출차 계약서에도 반영됐는지 확인한다."},
-        {"type": "caution", "label": "CAR CHECK", "detail": "차체 사진·연료정책·반납지와 반납시각을 출차 전에 기록한다."}
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "Hertz Nice Railway Station 9/9 09:00 인수 예약."
+        },
+        {
+          "type": "check",
+          "label": "VERIFY RETURN",
+          "detail": "확정된 Hertz Avignon TGV 9/17 18:30 반납값이 출차 계약서에도 반영됐는지 확인한다."
+        },
+        {
+          "type": "caution",
+          "label": "CAR CHECK",
+          "detail": "차체 사진·연료정책·반납지와 반납시각을 출차 전에 기록한다."
+        }
       ],
       "optional": false,
       "place_ref": "nice-ville"
@@ -78,7 +94,7 @@
       "id": "grasse",
       "order": 4,
       "start": "13:15",
-      "end": "14:30",
+      "end": "15:00",
       "name": "OPTIONAL · Grasse 점심 & Fragonard 역사공장",
       "category": "food",
       "lat": 43.6586,
@@ -87,7 +103,11 @@
       "menu": "프로방스 샐러드, 파니니",
       "reservation": null,
       "executionStatuses": [
-        {"type": "optional", "label": "OPTIONAL", "detail": "Aix 16:30 도착이 위험하면 Grasse 전체를 생략한다."}
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "Aix 16:30 도착이 위험하면 Grasse 전체를 생략한다."
+        }
       ],
       "executionNote": "Usine Historique Fragonard, 20 boulevard Fragonard. 매일 09:00–19:00, 무료 가이드 방문·100주년 전시 모두 개인 예약 불필요. 맞은편 Parking Indigo CRESP 이용.",
       "officialUrl": "https://usines-parfum.fragonard.com/usines/usine-historique/",
@@ -95,53 +115,95 @@
       "place_ref": "grasse"
     },
     {
-      "id": "aix-checkin",
+      "id": "castellane-pause",
       "order": 5,
-      "start": "16:45",
-      "end": "18:00",
-      "name": "Aix 숙소 체크인",
-      "category": "hotel",
-      "lat": 43.5283,
-      "lng": 5.4497,
-      "summary": "확정 주소 2 Place Coimbra, Résidence Les Toits de Méjanes에 체크인(15:00부터 가능)한다. 좌표를 추정하지 않고 주소 검색으로 진입해 짐 정리와 차량 안전 주차를 마친다.",
+      "start": "16:10",
+      "end": "16:30",
+      "name": "OPTIONAL · Castellane 짧은 휴식·보급",
+      "category": "transport",
+      "lat": 43.8467,
+      "lng": 6.5128,
+      "summary": "Route Napoléon(N85)에서 D952로 꺾이는 관문 마을. 화장실·음료·연료를 점검한다. 이후 산악 구간에서 안정적 보급을 가정하지 않는다.",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "confirmed", "label": "CONFIRMED", "detail": "Les Toits de Méjanes 9/9 체크인·9/13 체크아웃 예약."}
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "좌표 지오코딩·주차 위치 재확인."
+        }
       ],
-      "optional": false,
+      "optional": true,
       "place_ref": null
     },
     {
-      "id": "rotonde",
+      "id": "point-sublime",
       "order": 6,
-      "start": "18:30",
-      "end": "19:30",
-      "name": "Place de la Rotonde & Cours Mirabeau 첫 산책",
+      "start": "16:50",
+      "end": "17:35",
+      "name": "MUST · Point Sublime — 협곡 하류 전망대",
       "category": "sight",
-      "lat": 43.5263,
-      "lng": 5.4454,
-      "summary": "로통드 분수 및 쿠르 미라보 가로수길 첫 저녁 산책. 구시가지 지형 파악",
+      "lat": 43.7947,
+      "lng": 6.4022,
+      "summary": "D952 Rougon 아래 전망대. 주차 후 도보 약 10분에 Couloir Samson 입구와 약 400m 절벽의 대치를 내려다본다. 전망 무료.",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "optional", "label": "OPTIONAL", "detail": "도착 지연이나 피로가 있으면 생략하고 숙소에서 쉰다."}
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "주차장에서 전망대까지 도보 약 10분 — Verdon 관광청 공식, 2026-08-28 확인."
+        },
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "9월 주차 유료 여부·좌표 지오코딩 재확인. 성수기에는 유료·3시간 이내 권장."
+        }
       ],
-      "optional": true,
-      "place_ref": "rotonde"
+      "optional": false,
+      "place_ref": "point-sublime"
     },
     {
-      "id": "aix-stay-return",
+      "id": "moustiers-checkin",
       "order": 7,
-      "start": "19:30",
-      "end": "20:30",
-      "name": "숙소권 저녁 식사 & 휴식",
+      "start": "18:15",
+      "end": "19:00",
+      "name": "MUST · Moustiers 숙소 체크인",
       "category": "hotel",
-      "lat": 43.5283,
-      "lng": 5.4497,
-      "summary": "숙소 인근 비스트로 저녁 식사 후 휴식",
+      "lat": 43.8456,
+      "lng": 6.2214,
+      "summary": "마을 하부 주차 후 체크인. 골목 차량 진입이 제한적이므로 숙소 주차 조건을 예약 시 확인한다. 좌표는 마을 중심 기준 — 확정 숙소 주소로 대체한다.",
       "menu": null,
-      "reservation": null,
+      "reservation": "숙소 미정 — 도착 전 확보가 이 구간 최우선 액션",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "ACTION REQUIRED",
+          "detail": "Moustiers 9/9 1박 숙소가 저장소에 확정되어 있지 않다. 확정 즉시 이름·주소·주차·체크인 창을 동기화한다."
+        }
+      ],
+      "optional": false,
+      "place_ref": "moustiers-sainte-marie"
+    },
+    {
+      "id": "moustiers-evening",
+      "order": 8,
+      "start": "19:00",
+      "end": "20:30",
+      "name": "Moustiers 저녁 골목 산책 · 저녁 식사",
+      "category": "food",
+      "lat": 43.8456,
+      "lng": 6.2214,
+      "summary": "당일 관광객이 빠진 저녁 마을을 걷고 저녁을 해결한다. 별이 걸린 절벽과 물소리의 골목이 이 1박의 핵심 장면이다.",
+      "menu": "현장 확인 — 안내소 공식 목록 기준 마을에 식당 십수 곳 등록",
+      "reservation": "9월 수요일 저녁 영업 재확인 · 대안은 장보기",
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "개별 업소의 9월 수요일 저녁 영업 미확인. 체크인 후 현장 확정."
+        }
+      ],
       "optional": false,
       "place_ref": null
     }
@@ -176,66 +238,76 @@
     },
     {
       "from": "grasse",
-      "to": "aix-checkin",
+      "to": "castellane-pause",
       "mode": "car",
-      "duration": "약 1시간 50분",
-      "distance": "162.9km",
+      "duration": "약 1시간 10분 (재확인)",
+      "distance": "약 65km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "aix-checkin",
-      "to": "rotonde",
-      "mode": "walk",
-      "duration": "7분",
-      "distance": "0.5km",
+      "from": "castellane-pause",
+      "to": "point-sublime",
+      "mode": "car",
+      "duration": "약 25분 (재확인)",
+      "distance": "약 18km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "rotonde",
-      "to": "aix-stay-return",
+      "from": "point-sublime",
+      "to": "moustiers-checkin",
+      "mode": "car",
+      "duration": "약 40분 (재확인)",
+      "distance": "약 28km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "moustiers-checkin",
+      "to": "moustiers-evening",
       "mode": "walk",
-      "duration": "7분",
-      "distance": "0.5km",
+      "duration": "5분",
+      "distance": "0.3km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
     "렌터카 — Nice역 09:00 인수 (확정 [CONFIRMED])",
-    "A8 고속도로 및 프로방스 국도"
+    "Route Napoléon(N85) · D952 산악 구간 — 야간 산악운전 금지"
   ],
   "food": [
     "Grasse 점심",
-    "숙소권 저녁 또는 숙소식"
+    "Moustiers 저녁 — 현장 확인(재확인), 대안 장보기"
   ],
   "highlights": [
     "P0 연결일 — 어느 경유지도 늘리지 않는다",
     "09:00 Nice역 인수 (확정)",
-    "줄이는 순서: Grasse 전체→Saint-Paul 체류 압축→Cours Mirabeau 저녁 산책"
+    "줄이는 순서: Grasse 전체→Point Sublime→Saint-Paul 체류 압축",
+    "일몰 전 Moustiers 도착이 최우선"
   ],
-  "backup": "1. Hertz 인수가 30분 이상 지연되면 Grasse를 삭제한다.\n2. Saint-Paul 주차가 지연되면 마을 core만 60~90분 걷는다.\n3. Aix 16:30 도착이 위험하면 Grasse를 삭제하고 A8로 직행한다.\n4. Cours Mirabeau 저녁 산책은 피로 시 생략한다.",
+  "backup": "1. 렌터카 인수 지연 시 Grasse를 먼저 삭제한다.\n2. 그래도 늦으면 Point Sublime을 생략하고 Moustiers로 직행한다.\n3. 악천후 시 협곡 정차를 포기하고 D952 본선으로 이동한다.\n4. Moustiers 숙소 미확보 상태로 출발일이 오면 이 구간을 취소하고 Aix 조기 진입으로 전환한다.",
   "map": {
-    "zoom": 8,
+    "zoom": 9,
     "center": [
-      43.61,
-      6.32
+      43.82,
+      6.35
     ],
-    "routeCache": "routes/day-12-driving-osrm.json"
+    "routeCache": null
   },
   "needsReview": [
-    "Hertz Avignon TGV 9/17 18:30 반납 확정",
-    "각 경유지 시각은 실제 차량 인수 완료 시각 기준 역산",
-    "Aix 숙소는 좌표를 추정하지 않고 확정 주소 2 Place Coimbra로 지도 실행"
+    "Moustiers 1박 숙소 확보 — 최우선",
+    "신규 경유지(Castellane·Point Sublime·Moustiers) 좌표 OSM 지오코딩 재확인",
+    "Grasse→Moustiers 구간별 실주행 시간·거리 재확인",
+    "Point Sublime 9월 주차 요금 재확인",
+    "Hertz Avignon TGV 9/17 18:30 반납 확정 유지"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-12",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-12",
-    "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-12",
-    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Saint-Paul·Fondation Maeght·Grasse",
-    "예약 확정: Hertz Nice역 9/9 09:00 인수 · Avignon TGV 9/17 18:30 반납",
-    "사용자 예약 SOT 확정 2026-08-26: Hertz Avignon TGV 2026-09-17 18:30 반납"
+    "source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md#Day-12",
+    "Verdon 관광청 Point Sublime·Route des Crêtes 공식 2026-08-28 확인",
+    "Moustiers 관광안내소 접근·주차 공식 2026-08-28 확인",
+    "예약 확정: Hertz Nice역 9/9 09:00 인수 · Avignon TGV 9/17 18:30 반납"
   ]
 }

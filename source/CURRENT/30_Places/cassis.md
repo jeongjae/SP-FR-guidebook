@@ -20,7 +20,7 @@ source: source/CURRENT/30_Places/cassis.md
 코발트빛 바다 위로 파스텔톤 어부 가옥들이 반사되는 구항구는 **칼랑크 국립공원(Parc National des Calanques)의 비경을 둘러보는 유람선 투어의 가장 대표적인 출발 거점**이다.
 
 ### Editor's Verdict
-> **"석회암 절벽과 바다 풍경을 보는 Day 14의 핵심 목적지다."** 항구 선착장에서 Port-Miou·Port-Pin·En-Vau를 잇는 3 Calanques 약 1시간 유람선을 탄 뒤, 항구 산책과 점심을 잇는 반나절 코스로 사용한다.
+> **"석회암 절벽과 바다 풍경을 보는 Day 16의 핵심 목적지다."** 항구 선착장에서 Port-Miou·Port-Pin·En-Vau를 잇는 3 Calanques 약 1시간 유람선을 탄 뒤, 항구 산책과 점심을 잇는 반나절 코스로 사용한다.
 
 - **Best For**: 칼랑크 유람선 투어, 파스텔톤 항구 산책, 카시스 화이트 와인 및 해산물 미식
 - **Best Time**: 오전 10:00~14:00 (오전 보트 투어 후 항구 점심 식사)
@@ -49,5 +49,5 @@ source: source/CURRENT/30_Places/cassis.md
 | **위치** | 13260 Cassis |
 | **보트 투어** | 항구 매표소에서 현장 발권. 3개 칼랑크 1시간 / 5개 1시간 20분 / 8개 1시간 50분 / 9개 2시간 20분, 기상 악화 시 결항 |
 | **주차 (기본)** | 무료 **Parking des Gorguettes** P+R에서 연중 운행 **Bus 372**로 centre-ville 진입 |
-| **주차 (대안)** | Bus 373의 Presqu’île 연결은 2026-04-04~11-01 중 방학·주말·공휴일 중심이므로 9/11 금요일 운행을 가정하지 않는다. Presqu’île 주차는 live availability를 확인한다 |
+| **주차 (대안)** | Bus 373의 Presqu’île 연결은 2026-04-04~11-01 중 방학·주말·공휴일 중심이므로 9/13 일요일 운행을 가정하지 않는다. Presqu’île 주차는 live availability를 확인한다 |
 | **Aix 이동** | Aix-en-Provence에서 렌터카로 약 45~50분 (A50 및 D559) 소요 |

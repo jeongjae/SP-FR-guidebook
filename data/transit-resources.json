@@ -51,6 +51,26 @@
         "recheckBy": "2026-08-28"
       }
     ],
+    "verdon": [
+      {
+        "title": "Verdon 관광청 Route des Crêtes 공식 안내",
+        "kind": "route-map-page",
+        "edition": "2026-08",
+        "usage": "렌터카가 유일한 이동수단이다. D23 중앙 구간 시계방향 일방통행·개방기간(3월 말~11월 말)·전망대 위치를 이 페이지 기준으로 확인하고, 당일 임시 통제는 출발 전 재확인한다.",
+        "officialUrl": "https://www.verdontourisme.com/en/route-des-cretes/",
+        "verifiedAt": "2026-08-28",
+        "recheckBy": "2026-09-08"
+      },
+      {
+        "title": "Moustiers 관광안내소 오시는 길·주차 안내",
+        "kind": "route-map-page",
+        "edition": "2026-08",
+        "usage": "마을 접근 경로(A51 출구 17/18)와 주차장 배치의 공식 기준. 유료 주차는 Flowbird 앱, 성수기에는 하부 주차장을 쓴다.",
+        "officialUrl": "https://www.moustiers.fr/organiser-mon-sejour/informations-pratiques/comment-venir/",
+        "verifiedAt": "2026-08-28",
+        "recheckBy": "2026-09-08"
+      }
+    ],
     "aix": [
       {
         "title": "Aix en Bus line maps",
@@ -64,10 +84,10 @@
     ],
     "luberon": [
       {
-          "title": "ZOU! Vaucluse 노선별 시간표",
-          "kind": "route-map-page",
-          "edition": "2026-09",
-          "usage": "렌터카가 정본이다. 차량 장애 때 915·917·907 가운데 실제 출발지와 맞는 한 축만 검토하며, 예약형 989와 99xx 통학 노선을 일반 방문객 노선으로 혼동하지 않는다.",
+        "title": "ZOU! Vaucluse 노선별 시간표",
+        "kind": "route-map-page",
+        "edition": "2026-09",
+        "usage": "렌터카가 정본이다. 차량 장애 때 915·917·907 가운데 실제 출발지와 맞는 한 축만 검토하며, 예약형 989와 99xx 통학 노선을 일반 방문객 노선으로 혼동하지 않는다.",
         "officialUrl": "https://zou.maregionsud.fr/fiches-horaires-des-bus-zou/vaucluse",
         "verifiedAt": "2026-08-21",
         "recheckBy": "2026-08-28"

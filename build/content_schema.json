@@ -82,62 +82,253 @@
     }
   },
   "dossier_mapping": {
-    "sagrada-familia": {"heading": "Sagrada Família", "region": "barcelona"},
-    "sant-pau-recinte-modernista": {"heading": "Sant Pau Recinte Modernista", "region": "barcelona"},
-    "barri-gotic": {"heading": "Barri Gòtic", "region": "barcelona"},
-    "biblioteca-de-catalunya": {"heading": "Biblioteca de Catalunya", "region": "barcelona"},
-    "macba": {"heading": "MACBA", "region": "barcelona"},
-    "cau-ferrat": {"heading": "Cau Ferrat", "region": "barcelona"},
-    "palau-de-maricel": {"heading": "Cau Ferrat", "region": "barcelona"},
-    "barcelona-historic-walk": {"heading": "Barcelona 역사도심 — Barri Gòtic·Rambla 권역", "region": "barcelona"},
-    "barcelona-modernisme-walk": {"heading": "Barcelona Modernisme — Eixample 권역", "region": "barcelona"},
-    "girona-cathedral": {"heading": "Girona Cathedral", "region": "girona"},
-    "collioure": {"heading": "Collioure", "region": "girona"},
-    "pals": {"heading": "Pals", "region": "girona"},
-    "peratallada": {"heading": "Peratallada", "region": "girona"},
-    "calella-de-palafrugell": {"heading": "Calella de Palafrugell", "region": "girona"},
-    "passeig-de-la-muralla": {"heading": "Passeig de la Muralla", "region": "girona"},
-    "girona-old-town-walk": {"heading": "Girona 구시가지 — Call·성벽·대성당 권역", "region": "girona"},
-    "cours-saleya": {"heading": "Cours Saleya", "region": "nice"},
-    "colline-du-chateau": {"heading": "Colline du Château (성채 언덕)", "region": "nice"},
-    "le-suquet": {"heading": "Le Suquet — 칸 구시가지", "region": "nice"},
-    "le-rocher": {"heading": "Le Rocher — 모나코 구시가지", "region": "nice"},
-    "saint-paul-de-vence": {"heading": "Saint-Paul-de-Vence", "region": "nice"},
-    "grasse": {"heading": "Grasse", "region": "nice"},
-    "nice-walk": {"heading": "Nice Old Town–Castle Hill Walk", "region": "nice"},
-    "cannes-walk": {"heading": "Cannes Forville–Suquet–Croisette Walk", "region": "nice"},
-    "monaco-walk": {"heading": "Monaco Rocher–Port–Monte Carlo Walk", "region": "nice"},
-    "cours-mirabeau": {"heading": "Cours Mirabeau", "region": "aix"},
-    "musee-granet": {"heading": "Musée Granet", "region": "aix"},
-    "atelier-des-lauves": {"heading": "Atelier des Lauves", "region": "aix"},
-    "cassis": {"heading": "Cassis 항구", "region": "aix"},
-    "calanques": {"heading": "Calanques", "region": "aix"},
-    "lourmarin": {"heading": "Lourmarin", "region": "aix"},
-    "roussillon-sentier-des-ocres": {"heading": "Roussillon · Sentier des Ocres", "region": "luberon"},
-    "goult": {"heading": "Goult", "region": "luberon"},
-    "gordes": {"heading": "Gordes", "region": "luberon"},
-    "village-des-bories": {"heading": "Village des Bories", "region": "luberon"},
-    "abbaye-de-senanque": {"heading": "Abbaye de Sénanque", "region": "luberon"},
-    "menerbes": {"heading": "Ménerbes", "region": "luberon"},
-    "palais-des-papes": {"heading": "Palais des Papes", "region": "avignon"},
-    "pont-saint-benezet": {"heading": "Pont Saint-Bénézet", "region": "avignon"},
-    "les-halles": {"heading": "Les Halles", "region": "avignon"},
-    "uzes": {"heading": "Uzès Place aux Herbes·구시가지", "region": "avignon"},
-    "pont-du-gard": {"heading": "Pont du Gard", "region": "avignon"},
-    "les-baux-de-provence": {"heading": "Les Baux-de-Provence", "region": "avignon"},
-    "glanum": {"heading": "Glanum", "region": "avignon"},
-    "fourviere": {"heading": "Fourvière", "region": "lyon"},
-    "vieux-lyon": {"heading": "Vieux Lyon · 트라불", "region": "lyon"},
-    "croix-rousse": {"heading": "Croix-Rousse", "region": "lyon"},
-    "halles-de-lyon-paul-bocuse": {"heading": "Halles de Lyon Paul Bocuse", "region": "lyon"},
-    "annecy": {"heading": "Annecy 구시가지", "region": "lyon"},
-    "notre-dame-de-paris": {"heading": "Notre-Dame de Paris", "region": "paris"},
-    "musee-du-louvre": {"heading": "Musée du Louvre", "region": "paris"},
-    "musee-d-orsay": {"heading": "Musée d'Orsay", "region": "paris"},
-    "bnf-richelieu": {"heading": "BnF Richelieu", "region": "paris"},
-    "montmartre-south-pigalle": {"heading": "Montmartre · South Pigalle", "region": "paris"},
-    "versailles": {"heading": "Versailles", "region": "paris"},
-    "giverny": {"heading": "Giverny", "region": "paris"},
-    "bourse-de-commerce-pinault-collection": {"heading": "Bourse de Commerce — Pinault Collection", "region": "paris"}
+    "sagrada-familia": {
+      "heading": "Sagrada Família",
+      "region": "barcelona"
+    },
+    "sant-pau-recinte-modernista": {
+      "heading": "Sant Pau Recinte Modernista",
+      "region": "barcelona"
+    },
+    "barri-gotic": {
+      "heading": "Barri Gòtic",
+      "region": "barcelona"
+    },
+    "biblioteca-de-catalunya": {
+      "heading": "Biblioteca de Catalunya",
+      "region": "barcelona"
+    },
+    "macba": {
+      "heading": "MACBA",
+      "region": "barcelona"
+    },
+    "cau-ferrat": {
+      "heading": "Cau Ferrat",
+      "region": "barcelona"
+    },
+    "palau-de-maricel": {
+      "heading": "Cau Ferrat",
+      "region": "barcelona"
+    },
+    "barcelona-historic-walk": {
+      "heading": "Barcelona 역사도심 — Barri Gòtic·Rambla 권역",
+      "region": "barcelona"
+    },
+    "barcelona-modernisme-walk": {
+      "heading": "Barcelona Modernisme — Eixample 권역",
+      "region": "barcelona"
+    },
+    "girona-cathedral": {
+      "heading": "Girona Cathedral",
+      "region": "girona"
+    },
+    "collioure": {
+      "heading": "Collioure",
+      "region": "girona"
+    },
+    "pals": {
+      "heading": "Pals",
+      "region": "girona"
+    },
+    "peratallada": {
+      "heading": "Peratallada",
+      "region": "girona"
+    },
+    "calella-de-palafrugell": {
+      "heading": "Calella de Palafrugell",
+      "region": "girona"
+    },
+    "passeig-de-la-muralla": {
+      "heading": "Passeig de la Muralla",
+      "region": "girona"
+    },
+    "girona-old-town-walk": {
+      "heading": "Girona 구시가지 — Call·성벽·대성당 권역",
+      "region": "girona"
+    },
+    "cours-saleya": {
+      "heading": "Cours Saleya",
+      "region": "nice"
+    },
+    "colline-du-chateau": {
+      "heading": "Colline du Château (성채 언덕)",
+      "region": "nice"
+    },
+    "le-suquet": {
+      "heading": "Le Suquet — 칸 구시가지",
+      "region": "nice"
+    },
+    "le-rocher": {
+      "heading": "Le Rocher — 모나코 구시가지",
+      "region": "nice"
+    },
+    "saint-paul-de-vence": {
+      "heading": "Saint-Paul-de-Vence",
+      "region": "nice"
+    },
+    "grasse": {
+      "heading": "Grasse",
+      "region": "nice"
+    },
+    "nice-walk": {
+      "heading": "Nice Old Town–Castle Hill Walk",
+      "region": "nice"
+    },
+    "cannes-walk": {
+      "heading": "Cannes Forville–Suquet–Croisette Walk",
+      "region": "nice"
+    },
+    "monaco-walk": {
+      "heading": "Monaco Rocher–Port–Monte Carlo Walk",
+      "region": "nice"
+    },
+    "cours-mirabeau": {
+      "heading": "Cours Mirabeau",
+      "region": "aix"
+    },
+    "musee-granet": {
+      "heading": "Musée Granet",
+      "region": "aix"
+    },
+    "atelier-des-lauves": {
+      "heading": "Atelier des Lauves",
+      "region": "aix"
+    },
+    "cassis": {
+      "heading": "Cassis 항구",
+      "region": "aix"
+    },
+    "calanques": {
+      "heading": "Calanques",
+      "region": "aix"
+    },
+    "lourmarin": {
+      "heading": "Lourmarin",
+      "region": "aix"
+    },
+    "roussillon-sentier-des-ocres": {
+      "heading": "Roussillon · Sentier des Ocres",
+      "region": "luberon"
+    },
+    "goult": {
+      "heading": "Goult",
+      "region": "luberon"
+    },
+    "gordes": {
+      "heading": "Gordes",
+      "region": "luberon"
+    },
+    "village-des-bories": {
+      "heading": "Village des Bories",
+      "region": "luberon"
+    },
+    "abbaye-de-senanque": {
+      "heading": "Abbaye de Sénanque",
+      "region": "luberon"
+    },
+    "menerbes": {
+      "heading": "Ménerbes",
+      "region": "luberon"
+    },
+    "palais-des-papes": {
+      "heading": "Palais des Papes",
+      "region": "avignon"
+    },
+    "pont-saint-benezet": {
+      "heading": "Pont Saint-Bénézet",
+      "region": "avignon"
+    },
+    "les-halles": {
+      "heading": "Les Halles",
+      "region": "avignon"
+    },
+    "uzes": {
+      "heading": "Uzès Place aux Herbes·구시가지",
+      "region": "avignon"
+    },
+    "pont-du-gard": {
+      "heading": "Pont du Gard",
+      "region": "avignon"
+    },
+    "les-baux-de-provence": {
+      "heading": "Les Baux-de-Provence",
+      "region": "avignon"
+    },
+    "glanum": {
+      "heading": "Glanum",
+      "region": "avignon"
+    },
+    "fourviere": {
+      "heading": "Fourvière",
+      "region": "lyon"
+    },
+    "vieux-lyon": {
+      "heading": "Vieux Lyon · 트라불",
+      "region": "lyon"
+    },
+    "croix-rousse": {
+      "heading": "Croix-Rousse",
+      "region": "lyon"
+    },
+    "halles-de-lyon-paul-bocuse": {
+      "heading": "Halles de Lyon Paul Bocuse",
+      "region": "lyon"
+    },
+    "annecy": {
+      "heading": "Annecy 구시가지",
+      "region": "lyon"
+    },
+    "notre-dame-de-paris": {
+      "heading": "Notre-Dame de Paris",
+      "region": "paris"
+    },
+    "musee-du-louvre": {
+      "heading": "Musée du Louvre",
+      "region": "paris"
+    },
+    "musee-d-orsay": {
+      "heading": "Musée d'Orsay",
+      "region": "paris"
+    },
+    "bnf-richelieu": {
+      "heading": "BnF Richelieu",
+      "region": "paris"
+    },
+    "montmartre-south-pigalle": {
+      "heading": "Montmartre · South Pigalle",
+      "region": "paris"
+    },
+    "versailles": {
+      "heading": "Versailles",
+      "region": "paris"
+    },
+    "giverny": {
+      "heading": "Giverny",
+      "region": "paris"
+    },
+    "bourse-de-commerce-pinault-collection": {
+      "heading": "Bourse de Commerce — Pinault Collection",
+      "region": "paris"
+    },
+    "moustiers-sainte-marie": {
+      "heading": "Moustiers-Sainte-Marie",
+      "region": "verdon"
+    },
+    "point-sublime": {
+      "heading": "Point Sublime",
+      "region": "verdon"
+    },
+    "route-des-cretes": {
+      "heading": "Route des Crêtes",
+      "region": "verdon"
+    },
+    "lac-de-sainte-croix": {
+      "heading": "Lac de Sainte-Croix",
+      "region": "verdon"
+    },
+    "plateau-de-valensole": {
+      "heading": "Plateau de Valensole",
+      "region": "verdon"
+    }
   }
 }

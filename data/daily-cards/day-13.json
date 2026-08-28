@@ -3,15 +3,15 @@
   "day": 13,
   "date": "2026-09-10",
   "city": "Aix-en-Provence",
-  "title": "Aix 목요시장, Vieil Aix, 세잔 아틀리에와 Musée Granet",
+  "title": "Moustiers 아침 → Route des Crêtes → Sainte-Croix → Valensole → Aix",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "dayType": "city",
-  "startTime": "08:30",
+  "dayType": "driving",
+  "startTime": "08:00",
   "endTime": "20:30",
-  "totalDuration": "12시간",
-  "totalDistance": "약 5km · 도보",
-  "fatigue": "3",
+  "totalDuration": "12시간 30분",
+  "totalDistance": "약 180km · 차량 이동 (구간별 실주행 재확인)",
+  "fatigue": "4",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
     "lat": null,
@@ -21,119 +21,174 @@
   },
   "stops": [
     {
-      "id": "place-richelme-place-des-precheurs",
+      "id": "moustiers-morning",
       "order": 1,
-      "start": "08:30",
-      "end": "10:00",
-      "name": "Aix 목요시장 — Place Richelme + Places Comtales",
-      "category": "shopping",
-      "lat": 43.5297,
-      "lng": 5.4478,
-      "summary": "Place Richelme의 매일 아침 식품시장부터 보고 Places Comtales·Cours Mirabeau·Forbin의 목요 확장 구역을 선택해 잇는다. Maison Weibel에서 칼리송과 아침 커피를 곁들인다.",
-      "menu": "Calisson d'Aix, 크루아상, 카페 오 레",
+      "start": "08:00",
+      "end": "09:30",
+      "name": "MUST · Moustiers 아침 — Notre-Dame de Beauvoir 계단",
+      "category": "sight",
+      "lat": 43.8456,
+      "lng": 6.2214,
+      "summary": "관광객이 오기 전의 마을 골목을 걷고 돌계단 262개를 올라 Beauvoir 예배당에서 마을·계곡을 내려다본다. 연중 주간 개방·무료. 계단이 미끄러우므로 신발을 갖춘다.",
+      "menu": "마을 빵집·카페 또는 숙소 조식 — 현장 확인",
       "reservation": null,
-      "executionNote": "Place Richelme 식품시장은 매일 08:00–13:00. Places Comtales 식품시장과 Comtales·Cours Mirabeau·Forbin 직물/공예/브로캉트, Hôtel de Ville 꽃시장은 화·목·토 운영한다.",
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "계단 262개·연중 무휴 주간 개방·무료 — PACA 관광청 공식, 2026-08-28 확인."
+        }
+      ],
       "optional": false,
-      "place_ref": "place-richelme-place-des-precheurs",
-      "related_place_refs": [
-        "patisserie-weibel"
-      ]
+      "place_ref": "moustiers-sainte-marie"
     },
     {
-      "id": "vieil-aix",
+      "id": "route-des-cretes",
       "order": 2,
-      "start": "10:00",
+      "start": "10:05",
       "end": "11:45",
-      "name": "Vieil Aix 구시가지 & 세잔의 흔적",
+      "name": "RECOMMENDED · Route des Crêtes(D23) 능선 순환",
       "category": "sight",
-      "lat": 43.5311,
-      "lng": 5.4472,
-      "summary": "17-18세기 귀족 저택(Hôtel Particulier), 생소뵈르 대성당, 네 마리 돌고래 분수, 세잔 탄생지/모교 흔적 도보 (105분)",
+      "lat": 43.7789,
+      "lng": 6.3421,
+      "summary": "La Palud 기점 24km 순환도로. 전망대 약 15곳 중 2~4곳만 선별 정차한다(Trescaire·Pas de la Baou·Dent d'Aire·Armanet). 중앙 구간은 협소·경사 15%의 시계방향 일방통행 — 역방향 계획 금지.",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "개방기간 3월 말~11월 말·중앙 구간 시계방향 일방통행 — Verdon 관광청 공식, 2026-08-28 확인."
+        },
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "낙석·공사 임시 통제 당일 확인. 통제 시 D952 본선 전망대로 대체."
+        }
+      ],
       "optional": false,
-      "place_ref": "vieil-aix"
+      "place_ref": "route-des-cretes"
     },
     {
-      "id": "aix-lunch",
+      "id": "lapalud-lunch",
       "order": 3,
       "start": "12:00",
-      "end": "13:15",
-      "name": "Vieil Aix 구시가지 점심 식사",
+      "end": "13:00",
+      "name": "La Palud 또는 Moustiers 점심",
       "category": "food",
-      "lat": 43.5289,
-      "lng": 5.4468,
-      "summary": "구시가지 테라스 비스트로에서 프로방스식 점심 (La Brocherie 또는 Coucou 인근)",
-      "menu": "라타투유, 도브 프로방살, 로제 와인",
-      "reservation": "현장 방문 또는 점심 예약 권장",
+      "lat": 43.7789,
+      "lng": 6.3421,
+      "summary": "루프를 마친 뒤 La Palud 마을 또는 Moustiers권에서 가볍게 점심을 해결한다. 특정 업소를 전제하지 않는다.",
+      "menu": "현장 확인",
+      "reservation": "9월 평일 영업 재확인",
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "9월 평일 점심 영업 현장 확인."
+        }
+      ],
       "optional": false,
-      "place_ref": "vieil-aix"
+      "place_ref": null
     },
     {
-      "id": "atelier-des-lauves",
+      "id": "pont-du-galetas",
       "order": 4,
       "start": "13:30",
-      "end": "15:00",
-      "name": "Atelier des Lauves (세잔의 아틀리에)",
-      "category": "culture",
-      "lat": 43.5392,
-      "lng": 5.4461,
-      "summary": "폴 세잔이 생애 마지막 4년간(1902-1906) 대형 목욕자들과 생트빅투아르산을 그리던 작업실. 정물화 소품, 대형 이젤, 올리브 정원 [Cézanne Core]",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {"type": "book", "label": "BOOK", "detail": "정원이 제한되므로 9/10 방문 slot 사전 예약을 강력히 권장한다. 실제 시각은 예약 완료 후 고정한다."}
-      ],
-      "executionNote": "7/4–9/30 매일 09:00–18:00, 마지막 방문 17:00. 11:30부터 자율관람 1시간 €9.50, 가이드 1시간 30분 €12.",
-      "officialUrl": "https://www.aix.fr/incontournables/atelier-cezanne",
-      "optional": false,
-      "place_ref": "atelier-des-lauves"
-    },
-    {
-      "id": "musee-granet",
-      "order": 5,
-      "start": "15:30",
-      "end": "17:15",
-      "name": "Musée Granet (그라네 미술관)",
-      "category": "culture",
-      "lat": 43.5258,
-      "lng": 5.4522,
-      "summary": "세잔의 초기작과 유화·수채화 컬렉션, 프랑수아 마리우스 그라네를 105분 compact visit으로 본다. Paul McCartney ‘Eyes of the Storm’ 특별전은 기본 입장권에 포함되며 Granet XXe 별관과 혼동하지 않는다.",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "본관 일반 €14·감액 €12 입장권을 온라인 또는 현장에서 구매한다."}
-      ],
-      "executionNote": "7/4–11/1 화–일 10:00–18:00, 매표 17:30 마감. 9/10 목요일 정상 운영.",
-      "officialUrl": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
-      "optional": false,
-      "place_ref": "musee-granet"
-    },
-    {
-      "id": "cours-mirabeau",
-      "order": 6,
-      "start": "17:30",
-      "end": "19:30",
-      "name": "Cours Mirabeau & 마자랭 지구 산책",
+      "end": "14:15",
+      "name": "MUST · Pont du Galetas — Sainte-Croix 호수",
       "category": "sight",
-      "lat": 43.5269,
-      "lng": 5.4486,
-      "summary": "플라타너스 가로수길 카페(Les Deux Garçons 터) 테라스 휴식 및 Quartier Mazarin 분수 산책 후 저녁 식사",
-      "menu": "테라스 와인/맥주, 프로방스 타파스",
+      "lat": 43.7674,
+      "lng": 6.2216,
+      "summary": "협곡이 호수로 풀려나는 지점. 다리·전망 지점에서 청록 수면과 협곡 입구로 들어가는 카약들을 내려다본다. 카약·페달로 대여는 9월 운영 미확인 — 일정의 전제로 삼지 않는다.",
+      "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "주차 위치·좌표 지오코딩·물가 활동 9월 운영 재확인."
+        }
+      ],
       "optional": false,
-      "place_ref": "cours-mirabeau"
+      "place_ref": "lac-de-sainte-croix"
     },
     {
-      "id": "aix-stay-return",
-      "order": 7,
-      "start": "19:30",
-      "end": "20:30",
-      "name": "숙소 귀환 & 휴식",
+      "id": "plateau-de-valensole",
+      "order": 5,
+      "start": "14:30",
+      "end": "15:30",
+      "name": "OPTIONAL · Valensole 고원 경유",
+      "category": "sight",
+      "lat": 43.8377,
+      "lng": 5.9836,
+      "summary": "Riez 방면으로 고원을 통과한다. 9월은 라벤더 수확 후 — 밀·아몬드나무·지평선의 풍경으로 본다. 정차는 20~30분 이내.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "라벤더 개화 6월 중순~7월 중순·수확 7월 중순부터 — Alpes de Haute-Provence 관광청, 2026-08-28 확인. 9월 라벤더 없음."
+        }
+      ],
+      "optional": true,
+      "place_ref": "plateau-de-valensole"
+    },
+    {
+      "id": "aix-checkin",
+      "order": 6,
+      "start": "16:45",
+      "end": "18:00",
+      "name": "Aix 숙소 체크인",
       "category": "hotel",
       "lat": 43.5283,
       "lng": 5.4497,
-      "summary": "숙소 2 Place Coimbra 귀환 및 휴식",
+      "summary": "확정 주소 2 Place Coimbra, Résidence Les Toits de Méjanes에 체크인(15:00부터 가능)한다. 좌표를 추정하지 않고 주소 검색으로 진입해 짐 정리와 차량 안전 주차를 마친다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "Les Toits de Méjanes 9/10 체크인·9/14 체크아웃(4박) 예약 — 날짜 변경 완료."
+        }
+      ],
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "rotonde",
+      "order": 7,
+      "start": "18:15",
+      "end": "19:15",
+      "name": "Place de la Rotonde & Cours Mirabeau 첫 산책",
+      "category": "sight",
+      "lat": 43.5263,
+      "lng": 5.4454,
+      "summary": "로통드 분수 및 쿠르 미라보 가로수길 첫 저녁 산책. 구시가지 지형 파악",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "도착 지연이나 피로가 있으면 생략하고 숙소에서 쉰다."
+        }
+      ],
+      "optional": true,
+      "place_ref": "rotonde"
+    },
+    {
+      "id": "aix-stay-return",
+      "order": 8,
+      "start": "19:30",
+      "end": "20:30",
+      "name": "숙소권 저녁 식사 & 휴식",
+      "category": "hotel",
+      "lat": 43.5283,
+      "lng": 5.4497,
+      "summary": "숙소 인근 비스트로 저녁 식사 후 휴식",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -142,89 +197,103 @@
   ],
   "legs": [
     {
-      "from": "place-richelme-place-des-precheurs",
-      "to": "vieil-aix",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "from": "moustiers-morning",
+      "to": "route-des-cretes",
+      "mode": "car",
+      "duration": "약 30분 (재확인)",
+      "distance": "약 20km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "vieil-aix",
-      "to": "aix-lunch",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "from": "route-des-cretes",
+      "to": "lapalud-lunch",
+      "mode": "car",
+      "duration": "루프 종점",
+      "distance": "24km 루프",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "aix-lunch",
-      "to": "atelier-des-lauves",
-      "mode": "walk",
-      "duration": "20분 (오르막)",
-      "distance": "1.3km",
+      "from": "lapalud-lunch",
+      "to": "pont-du-galetas",
+      "mode": "car",
+      "duration": "약 30분 (재확인)",
+      "distance": "약 25km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "atelier-des-lauves",
-      "to": "musee-granet",
-      "mode": "walk",
-      "duration": "25분 (내리막)",
-      "distance": "1.6km",
+      "from": "pont-du-galetas",
+      "to": "plateau-de-valensole",
+      "mode": "car",
+      "duration": "약 30분 (재확인)",
+      "distance": "약 25km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "musee-granet",
-      "to": "cours-mirabeau",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "from": "plateau-de-valensole",
+      "to": "aix-checkin",
+      "mode": "car",
+      "duration": "약 1시간 10분 (재확인)",
+      "distance": "약 75km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "cours-mirabeau",
+      "from": "aix-checkin",
+      "to": "rotonde",
+      "mode": "walk",
+      "duration": "7분",
+      "distance": "0.5km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "rotonde",
       "to": "aix-stay-return",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.6km",
+      "duration": "7분",
+      "distance": "0.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "Aix 시내 도보 (구시가지 및 북부 아틀리에 도보권)"
+    "렌터카 — Verdon 구간 유일 이동수단",
+    "D952·D957·D6 → A51 Aix 진입"
   ],
   "food": [
-    "시장 조달·카페 Weibel",
-    "19:30 Coucou 또는 La Brocherie"
+    "Moustiers 아침 — 현장 확인",
+    "La Palud/Moustiers 점심 — 현장 확인",
+    "Aix 숙소권 저녁"
   ],
   "highlights": [
-    "Richelme 매일시장과 목요 확장 구역을 구분",
-    "Atelier 예약 slot이 생기면 그 시각을 fixed anchor로 사용",
-    "Granet은 15:30–17:15 유지, 지연 시 60~75분으로 압축"
+    "Moustiers–Aix 공식 기준 1시간 45분 — 협곡·호수 정차가 더해진 이동일",
+    "Route des Crêtes 통제 시 D952 본선으로 대체",
+    "15:00 이후 Aix 체크인 (확정 9/10~9/14 4박)"
   ],
-  "backup": "1. Atelier 예약 완료 후 해당 slot을 fixed anchor로 삼고 오전 지연 시 Vieil Aix를 압축한다.\n2. 오후가 늦으면 Granet을 삭제하지 않고 60~75분으로 압축한다.\n3. 우천 시 Atelier와 Granet을 우선하고 Cours Mirabeau 야외 산책을 줄인다.",
+  "backup": "1. 늦으면 Route des Crêtes를 초입 전망대 1~2곳으로 줄인다.\n2. 다음으로 Galetas 물가 하강·Valensole 정차를 생략한다.\n3. 악천후 시 협곡·호수를 포기하고 Moustiers 마을·공방 오전 후 Aix 직행.",
   "map": {
-    "zoom": 15,
+    "zoom": 10,
     "center": [
-      43.5273,
-      5.4465
+      43.75,
+      6.05
     ],
     "routeCache": null
   },
   "needsReview": [
-    "BOOK — Atelier des Lauves 9/10 방문 slot 예약 및 Timeline 동기화"
+    "신규 경유지 좌표 OSM 지오코딩 재확인",
+    "구간별 실주행 시간·거리 재확인",
+    "Route des Crêtes 당일 통제 확인",
+    "La Palud 점심 9월 평일 영업 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-13",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-13",
-    "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-13",
-    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Place des Prêcheurs·Place Richelme·Rue Cardinale"
+    "source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md#Day-13",
+    "Verdon 관광청 Route des Crêtes 공식 2026-08-28 확인",
+    "PACA 관광청 Notre-Dame de Beauvoir 공식 2026-08-28 확인",
+    "Alpes de Haute-Provence 관광청 Valensole 공식 2026-08-28 확인"
   ]
 }

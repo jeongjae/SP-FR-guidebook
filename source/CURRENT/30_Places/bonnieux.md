@@ -13,7 +13,7 @@ source: source/CURRENT/30_Places/bonnieux.md
 
 ## 현장 실행
 
-- **OPTIONAL · Day 16 · 60–90분**
+- **OPTIONAL · Day 17 · 60–90분**
 - **WHY GO**: 전형적인 perched village의 언덕길과 정상 전망, 맞은편 Lacoste의 지형을 본다.
 - **DO THIS**: 하부 주차 → 중심 광장·상점가 → 계단과 골목 → Vieille Église → 전망 → 평행 골목으로 하산.
 - **EAT / DRINK**: Lourmarin 점심 뒤 espresso·gelato 정도만. 긴 식사는 넣지 않는다.
@@ -21,7 +21,7 @@ source: source/CURRENT/30_Places/bonnieux.md
 
 ### Trip Layer
 
-Day 16 Optional 1순위다. Optional을 모두 빼도 일정은 완전하게 성립한다.
+Day 17 Optional 1순위다. Optional을 모두 빼도 일정은 완전하게 성립한다.
 
 ## 왜 가는가
 

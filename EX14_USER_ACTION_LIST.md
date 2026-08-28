@@ -3,6 +3,20 @@
 
 ---
 
+## 0. RS01 일정 변경 액션 (URGENT — 2026-08-28 신설)
+
+| Priority | Deadline | Day / Date | Entity | Action Required |
+|---|---|---|---|---|
+| **P0** | **즉시** | Day 12 (9.9) | Moustiers 1박 숙소 | 9/9~9/10 확보 — 최우선. 주차 조건 확인 |
+| **P0** | **즉시** | Day 17 (9.14) | Gordes 2박 숙소 | 9/14~9/16 확보 (구 9/13~9/15에서 변경) |
+| **P0** | **즉시** | Day 19 (9.16) | Avignon 4박 숙소 | 9/16~9/20 확보 (구 5박에서 축소) |
+| **P1** | T-1 | Day 13 (9.10) | Aix 숙소 | 9/10~9/14 날짜 변경 확인서 수령 (변경 완료) |
+| **P1** | T-7 (9.05) | Day 15 (9.12) | Atelier des Lauves | 9/12(토) 회차 예약 — 예약 필수 |
+| **P1** | T-3 (9.12) | Day 18 (9.15) | Abbaye de Sénanque | 9/15(화) 회차 재확인·예약 (구 9/14 확인분 무효) |
+| **P1** | T-2 (9.11) | Day 16 (9.13) | 칼랑크 유람선 | 9/13(일) 48시간 전 예약 |
+
+---
+
 ## 1. High-Priority Restaurant Bookings (MUST BOOK)
 
 | Priority | Deadline | Day / Date | Venue | Region | Official Booking Channel | Action Required |
@@ -10,9 +24,9 @@
 | **P1** | **T-30** (7.30) | Day 03 (8.31) | `bar-canete` | Barcelona | [barcanete.com](https://barcanete.com) | 13:30 카운터석 예약 (2인) |
 | **P1** | **T-30** (8.01) | Day 04 (9.01) | `la-zorra` | Sitges | [lazorra.es](https://lazorra.es) | 13:00 해변 테라스 쌀 요리 예약 |
 | **P1** | **T-14** (8.23) | Day 09 (9.06) | `le-figuier-de-saint-esprit` | Antibes | [lefiguierdesaintesprit.fr](https://lefiguierdesaintesprit.fr) | 12:15 미쉐린 1스타 런치 코스 (WISH-01) |
-| **P1** | **T-14** (8.28) | Day 14 (9.11) | `chez-gilbert-cassis` | Cassis | [chezgilbert.net](https://chezgilbert.net) | 12:30 공인 전통 부야베스 점심 |
+| **P1** | **T-14** (8.30) | Day 16 (9.13) | `chez-gilbert-cassis` | Cassis | [chezgilbert.net](https://chezgilbert.net) | 12:30 공인 전통 부야베스 점심 — RS01: 일요일로 이동, 영업 재확인 |
 | **P1** | **T-14** (9.02) | Day 19 (9.16) | `fou-de-fafa-avignon` | Avignon | [foudefafa.com](https://foudefafa.com) | 19:30 아비뇽 프렌치 디너 |
-| **P1** | **T-14** (9.05) | Day 22 (9.19) | `le-gibolin-arles` | Arles | [legibolin.fr](https://legibolin.fr) | 12:00 가르디안 드 토로 점심 |
+| **P1** | **T-14** (9.04) | Day 21 (9.18) | `le-gibolin-arles` | Arles | [legibolin.fr](https://legibolin.fr) | 12:00 가르디안 드 토로 점심 (Arles 당일치기 = Day 21) |
 | **P1** | **T-14** (9.06) | Day 23 (9.20) | `cafe-comptoir-abel` | Lyon | [maisonabel.fr](https://maisonabel.fr) | 19:30 1726 最古 부숑 첫 저녁 |
 | **P1** | **T-14** (9.07) | Day 24 (9.21) | `daniel-et-denise` | Lyon | [danieletdenise.fr](https://danieletdenise.fr) | 19:45 MOF 조제프 비올라 부숑 만찬 |
 | **P1** | **T-14** (9.17) | Day 34 (10.01) | `le-grand-pan` | Paris | [legrandpan.fr](https://legrandpan.fr) | 20:00 15구 숯불 티본 스테이크 |

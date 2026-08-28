@@ -39,7 +39,7 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 9/6 일 | Antibes · Cannes 당일치기 |
 | 9/7 월 | Monaco · Menton 당일치기 |
 | 9/8 화 | Villefranche-sur-Mer · Villa Ephrussi · Èze 당일치기 |
-| 9/9 수 | Nice-Ville역 렌터카 인수 · Saint-Paul-de-Vence · Grasse · Aix 이동 |
+| 9/9 수 | Nice-Ville역 렌터카 인수 · Saint-Paul-de-Vence · Grasse · Route Napoléon · Verdon(Moustiers) 이동 |
 
 상세 시각, 이동, 식사와 대체 일정은 각 날짜의 Day 페이지에서 확인한다.
 
@@ -478,18 +478,18 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 ---
 
 ## Day 6 — 9월 9일 수요일
-### 렌터카 인수, Saint-Paul-de-Vence·Grasse, Aix 이동
+### 렌터카 인수, Saint-Paul-de-Vence·Grasse, Verdon(Moustiers) 이동
 
-*   **오늘의 결론**: 니스 공항에서 차량을 인수해 주요 거점을 경유하며 최종 목적지인 Aix로 무사히 이동 안착한다.
+*   **오늘의 결론**: 니스역에서 차량을 인수해 Saint-Paul·Grasse를 거쳐 Route Napoléon으로 Verdon 협곡 관문의 Moustiers-Sainte-Marie에 일몰 전 안착한다.
 *   **상태**: **조건부** | 날씨 의존성: 유
-*   **첫 행동·첫 예약**: 09:00 Hertz 니스역 영업소 인수 (Hertz [CONFIRMED]) | **마지막 귀가**: 17:00 이후 Aix 숙소 체크인
+*   **첫 행동·첫 예약**: 09:00 Hertz 니스역 영업소 인수 (Hertz [CONFIRMED]) | **마지막 귀가**: 18:15 전후 Moustiers 숙소 체크인(미정 — 도착 전 확보)
 
 **피로도 5/5.**
 
 #### 핵심 행동 (최대 3개)
 1. **니스역 렌터카 인수**: Hertz 영업소에서 오전에 신속하게 수속 완료 및 서류 확인.
 2. **Saint-Paul-de-Vence**: 요새마을 골목을 걷고 성벽에서 경관 조망하며 짧은 스케치.
-3. **Grasse vieille ville**: 향수도시의 골목을 걷고 간단한 시향 체험 후 Aix로 출발.
+3. **Grasse vieille ville**: 향수도시의 골목을 걷고 간단한 시향 체험 후 Route Napoléon으로 출발.
 
 #### 실행 시간표
 | 시간 | 일정 | 실행 포인트 |
@@ -501,8 +501,9 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 | 09:30–11:00 | **Saint-Paul-de-Vence** | 골목·성벽·짧은 스케치 |
 | 11:00–12:00 | 가벼운 점심·이동 | 긴 코스식 금지 |
 | 12:30–14:00 | **Grasse vieille ville** | 향수 시향 또는 짧은 공방 |
-| 14:30–17:00 | Grasse → Aix | A8 정체에 따라 변동 |
-| 17:00 이후 | Aix 체크인 | 다음 챕터의 Day 1로 연결 |
+| 15:00–16:30 | Grasse → Route Napoléon(N85) → Castellane | 산악 구간 진입 전 연료·보급 점검 |
+| 16:50–17:35 | **Point Sublime** | 주차 후 도보 10분 전망대 — 지연 시 생략 |
+| 18:15 이후 | Moustiers 체크인 | Verdon 장의 Day 12로 연결. 일몰 전 도착 최우선 |
 #### 오늘 지도
 {{VISUAL:VIS-MAP-046|type=map|status=linked|strategy=execution-map}}
 
@@ -510,8 +511,8 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 *   **점심**: Saint-Paul-de-Vence 인근 가벼운 비스트로 점심 - 예산 €15–25/인
 
 #### 삭제 및 단축 순서 (늦었거나 피곤할 때)
-1. **[1순위 삭제]**: Grasse 경유 (인수 지연 또는 A8 정체 시 Grasse를 삭제하고 Saint-Paul만 관람 후 Aix로 직행)
-2. **[2순위 삭제]**: Saint-Paul 골목 관람 축소 (전망대 뷰만 본 후 즉시 Aix로 출발)
+1. **[1순위 삭제]**: Grasse 경유 (인수 지연 시 Grasse를 삭제하고 Saint-Paul만 관람 후 Moustiers로 직행; 다음 삭제는 Point Sublime)
+2. **[2순위 삭제]**: Saint-Paul 골목 관람 축소 (전망대 뷰만 본 후 즉시 출발)
 
 #### 대안 대책 (우천·휴관·교통 장애)
-*   **우천 시**: Saint-Paul 야외 도보 생략, Grasse의 실내 향수 공방/시향 코스로 전환 및 Aix 이동.
+*   **우천 시**: Saint-Paul 야외 도보 생략, Grasse 실내 향수 공방/시향 코스로 전환 후 협곡 정차 없이 Moustiers 직행.

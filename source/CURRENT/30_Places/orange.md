@@ -7,13 +7,13 @@ kind: spot
 grade: "선택"
 priority: "OPTIONAL"
 content_tier: "TIER_B"
-summary: "로마극장으로 유명한 북부 Vaucluse 도시. 유적은 뛰어나지만 Day 19에서는 방향상 우회가 커서 Bonus다."
+summary: "로마극장으로 유명한 북부 Vaucluse 도시. 유적은 뛰어나지만 일정에서 제외됐다 — 방향상 우회가 크다."
 source: source/CURRENT/30_Places/orange.md
 ---
 
 ## 현장 실행
 
-- **OPTIONAL BONUS · Day 19 · 60–75분**
+- **일정 외 · 제외됨 (RS01)**
 - **WHY GO**: 고대 무대벽이 남은 Théâtre antique를 단일 목적으로 본다.
 - **DO THIS**: 로마극장 주차·입장 → 무대벽과 객석 → 출구. 시내 다른 장소를 추가하지 않는다.
 - **EAT / DRINK**: 식사 추가 금지.

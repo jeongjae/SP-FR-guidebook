@@ -72,6 +72,16 @@
 | `restaurant-beatrice` | Restaurant & Salon de Thé Béatrice | spot | 필수 | Restaurant Béatrice | chapters/nice/places.html | Restaurant & Salon de Thé Béatrice | — |
 | `villa-ephrussi-de-rothschild` | Villa Ephrussi de Rothschild | spot | 우선 추천 | Villa Ephrussi | chapters/nice/places.html | Villa Ephrussi de Rothschild | Villa Ephrussi de Rothschild |
 
+## verdon (06B)
+
+| 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
+|---|---|---|---|---|---|---|---|
+| `moustiers-sainte-marie` | Moustiers-Sainte-Marie | spot | 필수 | Moustiers-Sainte-Marie | chapters/verdon/places.html | Moustiers-Sainte-Marie | Moustiers-Sainte-Marie |
+| `point-sublime` | Point Sublime | spot | 필수 | Point Sublime | chapters/verdon/places.html | Point Sublime | — |
+| `route-des-cretes` | Route des Crêtes | spot | 우선 추천 | Route des Crêtes | chapters/verdon/places.html | Route des Crêtes | — |
+| `lac-de-sainte-croix` | Lac de Sainte-Croix | spot | 필수 | Pont du Galetas | chapters/verdon/places.html | Lac de Sainte-Croix | Lac de Sainte-Croix |
+| `plateau-de-valensole` | Plateau de Valensole | spot | 선택 | Valensole | chapters/verdon/places.html | Plateau de Valensole | Valensole |
+
 ## aix (07)
 
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |

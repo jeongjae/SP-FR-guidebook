@@ -38,7 +38,23 @@
       "displayName": "Atelier des Lauves (Atelier de Cézanne)",
       "region": "aix",
       "days": [
-        13
+        15
+      ],
+      "source": "day-sot"
+    },
+    "au-petit-riche": {
+      "displayName": "Au Petit Riche",
+      "region": "paris",
+      "days": [
+        31
+      ],
+      "source": "day-sot"
+    },
+    "aux-crus-de-bourgogne": {
+      "displayName": "Aux Crus de Bourgogne",
+      "region": "paris",
+      "days": [
+        40
       ],
       "source": "day-sot"
     },
@@ -89,6 +105,14 @@
       ],
       "source": "day-sot"
     },
+    "bouillon-racine": {
+      "displayName": "Bouillon Racine",
+      "region": "paris",
+      "days": [
+        29
+      ],
+      "source": "day-sot"
+    },
     "boulangerie-pichard": {
       "displayName": "Boulangerie Pichard",
       "region": "paris",
@@ -106,6 +130,14 @@
       "region": "paris",
       "days": [
         40
+      ],
+      "source": "day-sot"
+    },
+    "breizh-cafe-charles-michels": {
+      "displayName": "Breizh Café Charles Michels",
+      "region": "paris",
+      "days": [
+        37
       ],
       "source": "day-sot"
     },
@@ -134,11 +166,27 @@
       ],
       "source": "day-sot"
     },
+    "cafe-varenne": {
+      "displayName": "Café Varenne",
+      "region": "paris",
+      "days": [
+        32
+      ],
+      "source": "day-sot"
+    },
+    "calanques": {
+      "displayName": "Calanques de Cassis 보트 투어",
+      "region": "aix",
+      "days": [
+        16
+      ],
+      "source": "day-sot"
+    },
     "cassis": {
       "displayName": "Cassis 항구",
       "region": "aix",
       "days": [
-        14
+        16
       ],
       "source": "day-sot"
     },
@@ -175,7 +223,15 @@
       "displayName": "Chez Gilbert",
       "region": "aix",
       "days": [
-        14
+        16
+      ],
+      "source": "day-sot"
+    },
+    "chez-janou": {
+      "displayName": "Chez Janou",
+      "region": "paris",
+      "days": [
+        39
       ],
       "source": "day-sot"
     },
@@ -193,6 +249,14 @@
       "days": [
         7
       ]
+    },
+    "chez-savy": {
+      "displayName": "Chez Savy",
+      "region": "paris",
+      "days": [
+        33
+      ],
+      "source": "day-sot"
     },
     "cloitre-saint-trophime": {
       "displayName": "Cloître Saint-Trophime",
@@ -222,7 +286,7 @@
       "displayName": "Cours Mirabeau",
       "region": "aix",
       "days": [
-        13
+        15
       ],
       "source": "day-sot"
     },
@@ -231,14 +295,6 @@
       "region": "nice",
       "days": [
         8
-      ],
-      "source": "day-sot"
-    },
-    "coustellet": {
-      "displayName": "Coustellet 생산자 시장",
-      "region": "luberon",
-      "days": [
-        16
       ],
       "source": "day-sot"
     },
@@ -272,14 +328,6 @@
         12
       ]
     },
-    "fou-de-fafa-avignon": {
-      "displayName": "Fou de Fafa",
-      "region": "avignon",
-      "days": [
-        19
-      ],
-      "source": "day-sot"
-    },
     "fourviere": {
       "displayName": "Fourvière",
       "region": "lyon",
@@ -299,16 +347,8 @@
       "displayName": "Gordes (마을·성)",
       "region": "luberon",
       "days": [
+        17,
         18
-      ],
-      "source": "day-sot"
-    },
-    "goult": {
-      "displayName": "Goult",
-      "region": "luberon",
-      "days": [
-        16,
-        17
       ],
       "source": "day-sot"
     },
@@ -336,6 +376,22 @@
         36
       ]
     },
+    "grasse": {
+      "displayName": "Grasse · Usine Historique Fragonard",
+      "region": "aix",
+      "days": [
+        12
+      ],
+      "source": "day-sot"
+    },
+    "guylas": {
+      "displayName": "Guylas",
+      "region": "paris",
+      "days": [
+        31
+      ],
+      "source": "day-sot"
+    },
     "halles-de-lyon-paul-bocuse": {
       "displayName": "Halles de Lyon Paul Bocuse",
       "region": "lyon",
@@ -350,6 +406,22 @@
       "days": [
         17
       ]
+    },
+    "l-isle-sur-la-sorgue": {
+      "displayName": "L'Isle-sur-la-Sorgue",
+      "region": "luberon",
+      "days": [
+        18
+      ],
+      "source": "day-sot"
+    },
+    "la-flottille": {
+      "displayName": "La Flottille",
+      "region": "paris",
+      "days": [
+        34
+      ],
+      "source": "day-sot"
     },
     "la-fourchette": {
       "displayName": "La Fourchette",
@@ -378,6 +450,22 @@
       "region": "barcelona",
       "days": [
         4
+      ],
+      "source": "day-sot"
+    },
+    "lac-de-sainte-croix": {
+      "displayName": "Lac de Sainte-Croix (Pont du Galetas)",
+      "region": "verdon",
+      "days": [
+        13
+      ],
+      "source": "day-sot"
+    },
+    "lacoste": {
+      "displayName": "Lacoste",
+      "region": "luberon",
+      "days": [
+        17
       ],
       "source": "day-sot"
     },
@@ -433,8 +521,7 @@
       "displayName": "Le Marais",
       "region": "paris",
       "days": [
-        31,
-        39
+        31
       ],
       "source": "day-sot"
     },
@@ -442,7 +529,24 @@
       "displayName": "Le Panier",
       "region": "aix",
       "days": [
-        15
+        14
+      ],
+      "source": "day-sot"
+    },
+    "le-progres-montmartre": {
+      "displayName": "Le Progrès",
+      "region": "paris",
+      "days": [
+        40
+      ],
+      "source": "day-sot"
+    },
+    "le-relais-du-15eme": {
+      "displayName": "Le Relais du 15ème",
+      "region": "paris",
+      "days": [
+        27,
+        36
       ],
       "source": "day-sot"
     },
@@ -462,6 +566,22 @@
       ],
       "source": "day-sot"
     },
+    "le-volant-basque": {
+      "displayName": "Le Volant Basque",
+      "region": "paris",
+      "days": [
+        38
+      ],
+      "source": "day-sot"
+    },
+    "les-baux-de-provence": {
+      "displayName": "Les Baux-de-Provence",
+      "region": "avignon",
+      "days": [
+        19
+      ],
+      "source": "day-sot"
+    },
     "les-cocottes-saint-louis": {
       "displayName": "Les Cocottes Saint-Louis",
       "region": "avignon",
@@ -474,8 +594,15 @@
       "displayName": "Les Halles d'Avignon",
       "region": "avignon",
       "days": [
-        19,
         22
+      ],
+      "source": "day-sot"
+    },
+    "les-marches": {
+      "displayName": "Les Marches",
+      "region": "paris",
+      "days": [
+        41
       ],
       "source": "day-sot"
     },
@@ -490,7 +617,7 @@
       "displayName": "Lourmarin (마을·카뮈 묘·성)",
       "region": "luberon",
       "days": [
-        16
+        17
       ],
       "source": "day-sot"
     },
@@ -536,15 +663,7 @@
       "displayName": "Marseille (당일치기 축)",
       "region": "aix",
       "days": [
-        15
-      ],
-      "source": "day-sot"
-    },
-    "menerbes": {
-      "displayName": "Ménerbes",
-      "region": "luberon",
-      "days": [
-        18
+        14
       ],
       "source": "day-sot"
     },
@@ -572,11 +691,12 @@
       ],
       "source": "day-sot"
     },
-    "montorgueil": {
-      "displayName": "Montorgueil",
-      "region": "paris",
+    "moustiers-sainte-marie": {
+      "displayName": "Moustiers-Sainte-Marie",
+      "region": "verdon",
       "days": [
-        40
+        12,
+        13
       ],
       "source": "day-sot"
     },
@@ -584,7 +704,7 @@
       "displayName": "Mucem",
       "region": "aix",
       "days": [
-        15
+        14
       ],
       "source": "day-sot"
     },
@@ -601,7 +721,8 @@
       "displayName": "Musée d'Orsay",
       "region": "paris",
       "days": [
-        32
+        32,
+        39
       ],
       "source": "day-sot"
     },
@@ -654,7 +775,7 @@
       "displayName": "Musée Granet",
       "region": "aix",
       "days": [
-        13
+        15
       ],
       "source": "day-sot"
     },
@@ -686,7 +807,7 @@
       "displayName": "Notre-Dame de la Garde",
       "region": "aix",
       "days": [
-        15
+        14
       ],
       "source": "day-sot"
     },
@@ -702,7 +823,6 @@
       "displayName": "Palais des Papes",
       "region": "avignon",
       "days": [
-        19,
         22
       ],
       "source": "day-sot"
@@ -727,7 +847,7 @@
       "displayName": "Pâtisserie Weibel",
       "region": "aix",
       "days": [
-        13
+        15
       ],
       "source": "day-sot"
     },
@@ -740,10 +860,26 @@
       "source": "day-sot"
     },
     "place-richelme-place-des-precheurs": {
-      "displayName": "시장 — Place Richelme · Place des Prêcheurs",
+      "displayName": "Aix 시장 — Place Richelme · 목요 확장 구역",
       "region": "aix",
       "days": [
+        15
+      ],
+      "source": "day-sot"
+    },
+    "plateau-de-valensole": {
+      "displayName": "Plateau de Valensole",
+      "region": "verdon",
+      "days": [
         13
+      ],
+      "source": "day-sot"
+    },
+    "point-sublime": {
+      "displayName": "Point Sublime",
+      "region": "verdon",
+      "days": [
+        12
       ],
       "source": "day-sot"
     },
@@ -814,7 +950,15 @@
       "displayName": "Roussillon · Sentier des Ocres",
       "region": "luberon",
       "days": [
-        17
+        18
+      ],
+      "source": "day-sot"
+    },
+    "route-des-cretes": {
+      "displayName": "Route des Crêtes (D23)",
+      "region": "verdon",
+      "days": [
+        13
       ],
       "source": "day-sot"
     },
@@ -841,6 +985,14 @@
       ],
       "source": "day-sot"
     },
+    "saint-remy-de-provence": {
+      "displayName": "Saint-Rémy-de-Provence",
+      "region": "avignon",
+      "days": [
+        19
+      ],
+      "source": "day-sot"
+    },
     "sant-pau-recinte-modernista": {
       "displayName": "Sant Pau Recinte Modernista",
       "region": "barcelona",
@@ -857,6 +1009,22 @@
         24,
         25
       ]
+    },
+    "sawadee-paris": {
+      "displayName": "Sawadee",
+      "region": "paris",
+      "days": [
+        35
+      ],
+      "source": "day-sot"
+    },
+    "stephane-martin": {
+      "displayName": "Stéphane Martin",
+      "region": "paris",
+      "days": [
+        33
+      ],
+      "source": "day-sot"
     },
     "theatre-antique-arles": {
       "displayName": "Théâtre antique",
@@ -909,7 +1077,7 @@
       "displayName": "Vieux-Port",
       "region": "aix",
       "days": [
-        15
+        14
       ],
       "source": "day-sot"
     },
@@ -918,14 +1086,6 @@
       "region": "nice",
       "days": [
         11
-      ],
-      "source": "day-sot"
-    },
-    "village-des-bories": {
-      "displayName": "Village des Bories",
-      "region": "luberon",
-      "days": [
-        18
       ],
       "source": "day-sot"
     }

@@ -49,7 +49,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "Palais des Papes 내부관람권을 구매하고 09:45 입장 목표를 보호한다."}
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "Palais des Papes 내부관람권을 구매하고 09:45 입장 목표를 보호한다."
+        }
       ],
       "executionNote": "공식 2026 요금은 변동되었으므로 과거 €12/€14.50 표기를 사용하지 않고 예약 화면의 적용 요금을 확인한다.",
       "officialUrl": "https://avignon-tourisme.com/offres/palais-des-papes-avignon-fr-4143543/",
@@ -100,7 +104,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "Pont Saint-Bénézet 내부관람권 또는 적용 가능한 combo ticket이 필요하다."}
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "Pont Saint-Bénézet 내부관람권 또는 적용 가능한 combo ticket이 필요하다."
+        }
       ],
       "officialUrl": "https://avignon-tourisme.com/activites/pont-saint-benezet/",
       "optional": false,
@@ -119,7 +127,11 @@
       "menu": null,
       "reservation": null,
       "executionStatuses": [
-        {"type": "optional", "label": "OPTIONAL", "detail": "피로 시 가장 먼저 삭제하고 저녁 전 숙소에서 쉰다."}
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "피로 시 가장 먼저 삭제하고 저녁 전 숙소에서 쉰다."
+        }
       ],
       "optional": true,
       "place_ref": null

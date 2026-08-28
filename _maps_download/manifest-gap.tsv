@@ -1,0 +1,13 @@
+id	region	city	rank	publisher	official	year	license	filename	url
+52	provence	Avignon	primary	Avignon Tourisme (Office de Tourisme)	official	2024	Droits reserves (미표기)	52_avignon_plan-loisirs-patrimoine-2024-FR.pdf	https://avignon-monuments.com/wp-content/uploads/2024/10/Plan-Pat-digital-FR.pdf
+53	provence	Avignon EN	alt	Avignon Tourisme (Office de Tourisme)	official	2026	Droits reserves (미표기)	53_avignon_leisure-heritage-map-2026-EN.pdf	https://hoteldelatelier-news.com/wp-content/uploads/2024/05/2026-EN-Avignon-Leisure-and-Heritage-Map-2026-1.pdf
+54	provence	Grand Avignon	alt	Grand Avignon	official	2019	미확인	54_grand-avignon_carte-touristique-2019.pdf	https://www.grandavignon.fr/sites/default/files/2019-07/carte_touristique_du_grand_avignon.pdf
+55	provence	Villeneuve lez Avignon	alt	Avignon Tourisme / Grand Avignon	official	2019	미확인	55_villeneuve-lez-avignon_plan-decouverte-2019.pdf	https://www.grandavignon.fr/sites/default/files/2019-07/plan_decouverte_du_vla.pdf
+56	barcelona	Barcelona Bus Turistic	alt	TMB / Barcelona Bus Turistic	official	현행	미확인	56_barcelona_bus-turistic-route-map.pdf	https://s3.eu-west-1.amazonaws.com/pro.static.portalstdo.tmb.cat/file_download/barcelona_bus_turistic_2_1.pdf
+57	luberon	Roussillon	primary	OT Pays d'Apt Luberon	official	2026	미확인	57_roussillon_plan-touristique-2026.pdf	https://app-v4.avizi.fr/fichiers/stream/6980af59b92ab
+58	luberon	Pays d'Apt Luberon	alt	OT Pays d'Apt Luberon	official	현행	미확인	58_pays-apt-luberon_carte-touristique.pdf	https://app-v4.avizi.fr/fichiers/stream/6275107587e71
+59	luberon	Ocres du Luberon	alt	OT Pays d'Apt Luberon	official	2026	미확인	59_ocres-du-luberon-2026.pdf	https://app-v4.avizi.fr/fichiers/stream/6980a91a8a19f
+60	riviera	Menton	primary	OT Menton Riviera & Merveilles (CARF)	official	2025	미확인	60_menton_plan-touristique-2025.pdf	https://www.calameo.com/download/0052527242ea7653d25bf
+61	riviera	Menton Riviera & Merveilles	alt	OT Menton Riviera & Merveilles	official	2022	미확인	61_menton-riviera-merveilles_carte-destination-2022.pdf	https://www.calameo.com/download/0052527248f9bf91e83c4
+62	riviera	Saint-Jean-Cap-Ferrat	primary	OTM Nice Cote d'Azur (bureau SJCF)	official	2026-2027	미확인	62_saint-jean-cap-ferrat_plan-map-2026-2027.pdf	https://www.calameo.com/download/006605280cc8108450c09
+63	riviera	Saint-Jean-Cap-Ferrat	alt	OT de Saint-Jean-Cap-Ferrat	official	2023-2024	미확인	63_saint-jean-cap-ferrat_plan-map-2023-2024.pdf	https://www.saintjeancapferrat-tourisme.fr/files/wp-content/uploads/2023/07/plan-map-sjcf-2023-2024.pdf

@@ -1,0 +1,52 @@
+id	region	city	rank	publisher	official	year	license	filename	url
+01	barcelona	Barcelona	primary	Turisme de Barcelona	official	2025	상업이용 금지 (명시)	01_barcelona_city-map-2025.jpg	https://www.barcelonaturisme.com/uploads/web/cartografia/Barcelona_Map_copyright_Turisme_de_Barcelona_2025.jpg
+02	barcelona	Sitges	primary	Agencia de Promocio Turisme de Sitges	official	2024-06	미확인	02_sitges_planol-2024-front.jpg	https://www.sitgesanytime.com/media/site1/cache/images/planol-sitges-ed062024.jpg
+03	barcelona	Sitges	primary	Agencia de Promocio Turisme de Sitges	official	2024-06	미확인	03_sitges_planol-2024-back.jpg	https://www.sitgesanytime.com/media/site1/cache/images/planol-sitges-ed062024-2.jpg
+04	girona	Collioure	primary	Office de Tourisme de Collioure	official	2024	미확인	04_collioure_plan-2024-numbered.pdf	https://www.tourisme-collioure.com/app/uploads/2024/05/plan-collioure-2024.pdf
+05	girona	Collioure	alt	Office de Tourisme de Collioure	official	2026	미확인	05_collioure_plan-2026.pdf	https://cdt66.media.tourinsoft.eu/upload/FD-Plan-de-Collioure2026.pdf
+06	girona	Collioure	alt	Office de Tourisme de Collioure	official	2020	미확인	06_collioure_balades.pdf	https://www.tourisme-collioure.com/app/uploads/2024/09/brochures-le-plan-du-village-et-les-balades-collioure.pdf
+07	girona	Cadaques	primary	Ajuntament de Cadaques	official	미상	미확인	07_cadaques_mapa.pdf	https://docs.gestionaweb.cat/1155/mapa-cadaques.pdf
+08	girona	Tossa de Mar	primary	Oficina de Turisme de Tossa de Mar	official	2024-05	미확인	08_tossa_planol-2024.pdf	https://visittossa.com/wp-content/uploads/2024/05/pla%CC%80nol-tossa-baixa_actualitzat-27-05-24.pdf
+09	girona	Tossa de Mar	alt	Oficina de Turisme de Tossa de Mar	official	미상	미확인	09_tossa_itineraris.pdf	https://visittossa.com/wp-content/uploads/2022/02/Fulleto_CATALA.pdf
+10	girona	Pals	primary	Oficina de Turisme de Pals	official	미상	미확인	10_pals_planol.pdf	https://docs.hoobaweb.com/1333/planol-impressio-1.pdf
+11	girona	Peratallada	primary	Ajuntament de Forallac	official	미상	미확인	11_peratallada_planol-forallac.pdf	https://www.visitperatallada.cat/pujades/files/planol_Forallac.pdf
+12	girona	Emporda 광역	primary	Consell Comarcal de l Alt Emporda	official	2017-10	Drets reservats	12_emporda_planol-2017.pdf	https://www.altemporda.org/portal/attachments/article/4511/Planol%20Emporda.pdf
+13	girona	Costa Brava 전역	primary	Patronat de Turisme Costa Brava Girona	official	2026	미확인	13_costabrava_mapa-2026.pdf	https://b2b.costabrava.org/wp-content/uploads/2025/11/MapaDesplegableGeneric.pdf
+14	nice	Nice	primary	OT Metropolitain Nice Cote d Azur	official	2026	출처명기시 무료배포 허용	14_nice_plan-2026.pdf	https://www.explorenicecotedazur.com/app/uploads/2026/03/nice-plan-bloc-2026.pdf
+15	nice	Antibes	primary	OT Antibes Juan-les-Pins	official	2024	사전허락 필요 (명시)	15_antibes_plan-2024.pdf	https://www.antibesjuanlespins.com/sites/antibes/files/brochures/files/plan_carte_2024-bd.pdf
+16	nice	Cannes	primary	Office du Tourisme de Cannes	official	2025	서면동의 필요 (명시)	16_cannes_plan-sousmain-2025.pdf	https://www.cannes-france.com/app/uploads/cannes-tourisme/2025/06/Plan_Cannes_sousmain_480x335mm_v5_vHD.pdf
+17	nice	Cannes	alt	Office du Tourisme de Cannes	official	2023	서면동의 필요	17_cannes_plan-pedestre.pdf	https://www.cannes-france.com/app/uploads/cannes-tourisme/2024/01/PLAN-PEDESTRE-2023.pdf
+18	nice	Monaco	primary	Direction du Tourisme et des Congres	official	2022-09	미확인	18_monaco_plan-officiel-2022.pdf	https://www.monacotourismexpert.com/wp-content/uploads/2023/07/202209-Plan_Official_Monaco_29sept22.pdf
+19	nice	Villefranche-sur-Mer	primary	OT Metropolitain Nice Cote d Azur	official	2026	출처명기시 무료배포 허용	19_villefranche_plan-2026.pdf	https://www.explorenicecotedazur.com/app/uploads/2026/02/plan-2026-recto-verso-hd.pdf
+20	nice	Eze	primary	OT Metropolitain Nice Cote d Azur	official	2026	출처명기시 무료배포 허용	20_eze_plan-2026.pdf	https://www.explorenicecotedazur.com/app/uploads/2026/02/fr-en-it-eze-plan.pdf
+21	nice	Eze	alt	OT Metropolitain Nice Cote d Azur	official	2026	출처명기시 무료배포 허용	21_eze_guide-pratique.pdf	https://www.explorenicecotedazur.com/app/uploads/2026/02/fr-en-it-eze-guide-pratique-compressed.pdf
+22	nice	Riviera 광역	primary	OT Metropolitain Nice Cote d Azur	official	2026	브로슈어 자체는 복제금지 표기	22_riviera_guide-2026.pdf	https://www.explorenicecotedazur.com/app/uploads/2026/03/otm-guide-pratique-20x20cm-en-v2-page-a-page-1.pdf
+23	aix	Aix-en-Provence	primary	Office de Tourisme d Aix-en-Provence	official	2018	복제 엄격금지 (명시)	23_aix_plan-sousmain-periph.pdf	https://www.aixenprovencetourism.com/wp-content/ressources/maps/plan-sousmain-aix-periph-fr.pdf
+24	aix	Aix 광역 Pays d Aix	primary	Office de Tourisme d Aix-en-Provence	official	미상	복제 엄격금지	24_aix_paysdaix-simplifie.pdf	https://www.aixenprovencetourism.com/wp-content/ressources/maps/plan-paysdaix-simplifie-fr.pdf
+25	aix	Aix Plan Guide	alt	OT Aix (ville-greasque 미러)	mirror	2018	복제 엄격금지	25_aix_plan-guide-full.pdf	https://www.ville-greasque.fr/wp-content/uploads/2019/01/Plan-Guide-Aix-en-Provence.pdf
+26	aix	Marseille	primary	RTM (마르세유 교통공사)	official	2026-03	미확인	26_marseille_carte-touristique-2026.pdf	https://www.rtm.fr/sites/default/files/docs/carte_touristique_202603%207.pdf
+27	aix	Marseille	alt	Office Metropolitain de Tourisme Marseille	official	2022	미확인	27_marseille_plan-omtcm-2022.pdf	https://www.marseille-tourisme.com/app/uploads/marseille-tourisme/2022/07/Plan-de-Marseille-%C2%A9OMTCM.pdf
+28	aix	Cassis	primary	OT Marseille 호스팅	official	미상	미확인	28_cassis_plan.pdf	https://www.marseilletourisme.fr/media/filer_public/2019/03/06/plan-cassis.pdf
+29	aix	Cassis	alt	Office de Tourisme de Cassis	official	2019-07	미확인	29_cassis_documentation-5lang.pdf	https://reservation.ot-cassis.com/medias/documents/documentation/documentation-PLAN18-FR.pdf
+30	luberon	Vaucluse 광역	primary	Vaucluse Provence Attractivite	official	2021	미확인	30_vaucluse_carte-touristique.pdf	https://www.sud-luberon-tourisme.fr/wp-content/uploads/2021/07/carte-touristique-du-vaucluse.pdf
+31	luberon	Destination Luberon	primary	Destination Luberon	official	2021	미확인	31_luberon_carte-destination.pdf	https://www.sud-luberon-tourisme.fr/wp-content/uploads/2021/07/carte-destination-Luberon2.pdf
+32	luberon	Gordes	primary	Office de Tourisme de Gordes	official	미상	사진별 크레딧	32_gordes_plan.pdf	https://www.veloloisirprovence.com/fichier/Plan%20de%20Gordes-654.pdf
+33	luberon	Roussillon	primary	Office de Tourisme de Roussillon	official	미상	미확인	33_roussillon_plan.pdf	https://otroussillon.pagesperso-orange.fr/roussillon.pdf
+34	luberon	L Isle-sur-la-Sorgue	primary	Isle sur la Sorgue Tourisme	official	2026	미확인	34_isle-sur-sorgue_plan-2026.pdf	https://uk.islesurlasorguetourisme.com/fichier/download-1491.pdf
+35	avignon	Avignon Intra-Muros	primary	Mairie d Avignon	official	2019	미확인	35_avignon_carte-intra.pdf	https://www.avignon.fr/fileadmin/Documents/arch_documents/Documents/Documents/Interne/interne/interne/image_08_et_09_2019/document_interne08_et_09_2019/Carte_intra.pdf
+36	avignon	Avignon 광역	primary	Avignon Tourisme	official	2025	미확인	36_avignon_votre-destination-2025.pdf	https://avignon-tourisme.com/app/uploads/avignon/2025/02/Avignon-Votre-Destination-2025.pdf
+37	avignon	Arles	primary	Office de Tourisme d Arles Camargue	official	미상	미확인	37_arles_plan.pdf	https://www.arlestourisme.com/assets/pdf/organiser/plan_arles.pdf
+38	avignon	Nimes	primary	OT de Nimes SPL AGATE	official	2026-02	미확인	38_nimes_plan-a3-2026.pdf	https://nimes-tourisme.com/app/uploads/2026/02/Plan-A3_Nimes-2026_web.pdf
+39	avignon	Nimes	alt	OT de Nimes SPL AGATE	official	2026-04	미확인	39_nimes_plan-touristique-2026-GB.pdf	https://nimes-tourisme.com/app/uploads/2026/04/plan-touristique-2026-GB.pdf
+40	avignon	Saint-Remy-de-Provence	primary	OT Alpilles en Provence	official	2025-03	미확인	40_saint-remy_plan-2025.pdf	https://static.alpillesenprovence.com/wp-content/uploads/2025/03/plan-de-ville-saint-remy-2025-compressed.pdf
+41	avignon	Les Baux-de-Provence	primary	OT des Baux-de-Provence	official	2026-08	tous droits reserves	41_les-baux_plan-2026.pdf	https://www.lesbauxdeprovence.com/wp-content/uploads/2026/08/Plan_Baux-de-Provence_FR_EN.pdf
+42	avignon	Alpilles 광역	primary	OT des Baux-de-Provence	official	2021	복제제한 문구 있음	42_alpilles_map-region-EN.pdf	https://www.lesbauxdeprovence.com/wp-content/uploads/2022/05/Map-les-Alpilles-and-the-region.pdf
+43	avignon	Pont du Gard	primary	EPCC Pont du Gard	official	2024	미확인	43_pont-du-gard_plan-du-site.pdf	https://pontdugard.fr/sites/default/files/2024-01/Plan%20du%20site_0.pdf
+44	avignon	Provence 광역 TOP28	primary	CRT Provence-Alpes-Cote d Azur	official	2018-10	미확인	44_provence_top28.pdf	https://provence-alpes-cotedazur.com/app/uploads/crt-paca/2020/07/carte-top28-fr-2019-1.pdf
+45	lyon	Lyon 시내	primary	ONLYLYON Tourisme (TCL 제작)	official	최근	미확인	45_lyon_plan-ville.pdf	https://www.visiterlyon.com/content/download/7501/179129?version=21
+46	lyon	Lyon UNESCO	primary	ONLYLYON Tourisme	official	미상	미확인	46_lyon_unesco.pdf	https://www.visiterlyon.com/content/download/7502/179135?version=15
+47	lyon	Lyon 트라불 목록	alt	Ville de Lyon	official	2025-05	미확인	47_lyon_traboules-liste.pdf	https://www.visiterlyon.com/content/download/46625/1016226?version=1
+48	lyon	Annecy 호수	primary	Apidae Tourisme 등록	official	미상	미확인	48_annecy_tour-du-lac.pdf	https://static.apidae-tourisme.com/filestore/objets-touristiques/documents/60/82/10048060/Carte+touristique+tour+du+lac+dAnnecy.pdf
+49	paris	Paris Secteur	primary	Ile-de-France Mobilites	official	미상	미확인	49_paris_secteur-plan03.pdf	https://eu.ftp.opendatasoft.com/stif/PlansDeSecteur/Plans/plan03.pdf
+50	paris	Versailles 시내	primary	Office de Tourisme de Versailles	official	2024	미확인	50_versailles_plan-touristique-2024.pdf	https://www.versailles-tourisme.com/medias/documents/documentation/documentation-24PLAN-FR.pdf
+51	paris	Giverny Vernon	primary	OT Nouvelle Normandie	official	2021	Reproduction interdite (명시)	51_giverny_carnet-de-cartes.pdf	https://www.nouvelle-normandie-tourisme.com/wp-content/uploads/2021/09/www.nouvelle-normandie-tourisme.com-2021-carnet-de-cartes.pdf

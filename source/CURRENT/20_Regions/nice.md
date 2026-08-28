@@ -26,7 +26,7 @@ source: source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md
 | 9/6 일 | Antibes · Cannes 당일치기 |
 | 9/7 월 | Monaco · Menton 당일치기 |
 | 9/8 화 | Villefranche-sur-Mer · Villa Ephrussi · Èze 당일치기 |
-| 9/9 수 | Nice-Ville역 렌터카 인수 · Saint-Paul-de-Vence · Grasse · Aix 이동 |
+| 9/9 수 | Nice-Ville역 렌터카 인수 · Saint-Paul-de-Vence · Grasse · Route Napoléon · Verdon(Moustiers) 이동 |
 
 상세 시각, 이동, 식사와 대체 일정은 각 날짜의 Day 페이지에서 확인한다.
 

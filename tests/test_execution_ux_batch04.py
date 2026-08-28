@@ -61,7 +61,7 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
         return render.build_day(self.day(number), self.trip)
 
     def test_day_types_and_schema(self):
-        expected = {12: "driving", 13: "city", 14: "driving", 15: "transfer"}
+        expected = {12: "driving", 13: "driving", 14: "transfer", 15: "city", 16: "driving"}  # RS01 재배치
         schema = json.loads((DAILY_CARDS / "schema.json").read_text(encoding="utf-8"))
         validator = jsonschema.Draft202012Validator(
             schema, format_checker=jsonschema.FormatChecker()
@@ -87,12 +87,12 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
         self.assertIn("20 boulevard Fragonard", rendered)
         self.assertIn("Parking Indigo CRESP", unquote_plus(render.stop_map_url(stops["grasse"])))
         self.assertIn("12 Rue Verdi", unquote_plus(render.stop_map_url(stops["nice-checkout"])))
-        self.assertIn("2 Place Coimbra", unquote_plus(render.stop_map_url(stops["aix-checkin"])))
         self.assertIn("Fondation Maeght 내부관람은 추가하지 않는다", rendered)
 
     def test_day13_market_atelier_and_granet_facts(self):
-        stops = {stop.id: stop for stop in self.day(13).stops}
-        rendered = self.rendered(13)
+        # RS01: 시장·아틀리에 시내일은 Day 15(9/12 토)로 이동
+        stops = {stop.id: stop for stop in self.day(15).stops}
+        rendered = self.rendered(15)
         self.assertIn("Place Richelme의 매일 아침 식품시장", rendered)
         self.assertIn("Places Comtales", rendered)
         self.assertIn("09:00–18:00", rendered)
@@ -106,10 +106,13 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
             {"ticket"}, {status.type for status in stops["musee-granet"].execution_statuses}
         )
         self.assertNotIn("일반 €8", rendered)
+        day13_stops = {stop.id: stop for stop in self.day(13).stops}
+        self.assertIn("2 Place Coimbra", unquote_plus(render.stop_map_url(day13_stops["aix-checkin"])))
 
     def test_day14_three_calanques_parking_and_unbooked_lunch(self):
-        stops = {stop.id: stop for stop in self.day(14).stops}
-        rendered = self.rendered(14)
+        # RS01: Cassis일은 Day 16(9/13 일)으로 이동
+        stops = {stop.id: stop for stop in self.day(16).stops}
+        rendered = self.rendered(16)
         self.assertIn("3 Calanques", rendered)
         self.assertIn("약 1시간 코스", rendered)
         self.assertIn("연중 운행 Bus 372", rendered)
@@ -128,7 +131,7 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
         )
 
     def test_day14_vehicle_retrieval_precedes_return_drive(self):
-        payload = load_day(14)
+        payload = load_day(16)  # RS01: Cassis일 이동
         stop_order = {stop["id"]: stop["order"] for stop in payload["stops"]}
         self.assertLess(
             stop_order["cassis-port-miou"], stop_order["cassis-vehicle-return"]
@@ -144,11 +147,11 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
         routes = json.loads(
             (ROOT / "data" / "map-queries.json").read_text(encoding="utf-8")
         )["routes"]
-        car_return = routes["day-14:cassis-vehicle-return"]
+        car_return = routes["day-16:cassis-vehicle-return"]
         self.assertEqual("Parking relais des Gorguettes, Cassis", car_return["origin"])
         self.assertEqual("driving", car_return["travelMode"])
         for key, route in routes.items():
-            if not key.startswith("day-14:") or route["travelMode"] != "driving":
+            if not key.startswith("day-16:") or route["travelMode"] != "driving":
                 continue
             self.assertFalse(
                 route["origin"].startswith("Port-Miou")
@@ -157,7 +160,7 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
             )
 
     def test_day14_rendered_vehicle_retrieval_flow(self):
-        rendered = self.rendered(14)
+        rendered = self.rendered(16)  # RS01: Cassis일 이동
         port_miou = rendered.index("OPTIONAL · Port-Miou")
         retrieval = rendered.index("Gorguettes P+R 복귀 · 차량 회수")
         return_drive = rendered.index("Parking des Gorguettes ➔ Aix 귀환")
@@ -167,12 +170,13 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
         self.assertIn("차량 회수 없이 Aix로 출발하지 않는다", rendered)
 
     def test_day15_ter_fish_market_mucem_and_optional_vallon(self):
-        stops = {stop.id: stop for stop in self.day(15).stops}
-        rendered = self.rendered(15)
+        # RS01: Marseille일은 Day 14(9/11 금)로 이동
+        stops = {stop.id: stop for stop in self.day(14).stops}
+        rendered = self.rendered(14)
         self.assertIn("Quai de la Fraternité", rendered)
         self.assertIn("매일 아침", rendered)
         self.assertNotIn("토요 아침 어시장", rendered)
-        self.assertIn("10:00–19:00", rendered)
+        self.assertIn("11:00–19:00", rendered)  # Mucem 9/3–11/4 시즌 (2026-08-28 공식 확인)
         self.assertIn("폐관 45분 전", rendered)
         self.assertEqual(
             {"ticket"}, {status.type for status in stops["fort-saint-jean"].execution_statuses}
@@ -193,21 +197,22 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
                     self.assertNotIn("confirmed", types, f"{path.name}: {stop['id']}")
 
     def test_major_route_legs_and_actions(self):
-        self.assertEqual(3, self.rendered(12).count("tl-leg-major"))
-        self.assertEqual(2, self.rendered(14).count("tl-leg-major"))
-        self.assertGreaterEqual(self.rendered(15).count("tl-leg-major"), 2)
-        for number in (12, 14, 15):
+        self.assertGreaterEqual(self.rendered(12).count("tl-leg-major"), 3)
+        self.assertEqual(2, self.rendered(16).count("tl-leg-major"))
+        self.assertGreaterEqual(self.rendered(14).count("tl-leg-major"), 2)
+        for number in (12, 14, 16):
             self.assertIn("다음 목적지", self.rendered(number))
-        day15 = self.rendered(15)
-        self.assertIn("Marseille Saint-Charles", day15)
-        self.assertIn("Gare%20d%27Aix-en-Provence", day15)
+        day14 = self.rendered(14)
+        self.assertIn("Marseille Saint-Charles", day14)
+        self.assertIn("Gare%20d%27Aix-en-Provence", day14)
 
     def test_day16_to_19_itinerary_semantics_are_unchanged(self):
+        # RS01(2026-08-28) 재기준선 — Cassis(16)·Lacoste 이동일(17)·화요시장(18)·통합 도착일(19)
         expected = {
-            16: "00e70092006f0aca75c8990c387b3293ae76142ae01414bba848da0577ad61a8",
-            17: "5592e3ca8d0caf4935360e25d6e09ffe24f94244f769e142b040eecda3f3198c",
-            18: "6da8f397f598e1a7c88da690d0e6fab7d362c13689f4dbd646b7d15f6a872c69",
-            19: "04d1eb9d4c59c4badf449e0046d3b3dc581c223d5b1e9e085dac93c0b5116cee",
+            16: "10187dd390d6a133cf1f7ab2abb95e27d0a1547f7bd6e22f49a732b90f0fbce6",
+            17: "057c8cbeeb82bb2dd548b26e2f92493123aa69c6600cb42c4899568dcadc1b00",
+            18: "12fe84b6c1045f0c96fb1e8301e66ddeac996fb05018f0564a8301613687e1e3",
+            19: "db799c436b511b83ffe007aa2fdb7afde3f567f5772e7881c701c864158478a6",
         }
         for number, digest in expected.items():
             payload = json.dumps(

@@ -2,101 +2,270 @@
   "schemaVersion": "1.0",
   "day": 18,
   "date": "2026-09-15",
-  "city": "Gordes · L'Isle-sur-la-Sorgue · Avignon",
-  "title": "Gordes 체크아웃 → 물의 마을 → Avignon 체크인",
+  "city": "Luberon · Gordes · L'Isle-sur-la-Sorgue",
+  "title": "Gordes 화요시장 · Roussillon 오크르 · Sénanque · 오후 L'Isle",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "dayType": "transfer",
-  "startTime": "09:00",
+  "dayType": "driving",
+  "startTime": "08:30",
   "endTime": "20:30",
-  "totalDuration": "11시간 30분",
-  "totalDistance": "Base 약 46km · Extended 약 60km",
-  "fatigue": "3",
-  "hotel": {"name": "La Terrasse du Clocher (후보)", "lat": 43.94993, "lng": 4.81302, "status": "candidate"},
+  "totalDuration": "12시간",
+  "totalDistance": "Base 약 41km · Extended 약 61km",
+  "fatigue": "4",
+  "hotel": {
+    "name": "Gordes 숙소 (후보 미정)",
+    "lat": 43.91181,
+    "lng": 5.20043,
+    "status": "candidate"
+  },
   "stops": [
     {
-      "id": "gordes-checkout", "order": 1, "start": "09:00", "end": "09:20",
-      "name": "MUST · Gordes 체크아웃", "category": "hotel", "lat": 43.91181, "lng": 5.20043,
-      "summary": "09:00 체크아웃 후 짐을 완전히 가리고 L'Isle-sur-la-Sorgue로 이동한다. 화요 Gordes 시장은 이동과 충돌하므로 참고 정보일 뿐 핵심 일정으로 넣지 않는다.",
-      "menu": "숙소 아침", "reservation": "체크아웃 시각·수하물 보관 방식 확인",
-      "executionStatuses": [{"type": "book", "label": "ACTION REQUIRED", "detail": "Gordes 실제 숙소와 9/15 체크아웃 창을 확정한다."}],
-      "optional": false, "place_ref": null
+      "id": "gordes-market",
+      "order": 1,
+      "start": "08:00",
+      "end": "09:15",
+      "name": "MUST · Gordes 화요시장",
+      "category": "shopping",
+      "lat": 43.91181,
+      "lng": 5.20043,
+      "summary": "화요일 오전 Gordes 마을 시장. 2박 중 유일하게 겹치는 장날이다. 아침 장을 보고 오크르로 출발한다.",
+      "menu": "시장 조달 아침·간식",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "9/15 화요일 개장·시간 현장 확인 (통상 오전장)."
+        }
+      ],
+      "optional": false,
+      "place_ref": "gordes"
     },
     {
-      "id": "l-isle-sur-la-sorgue", "order": 2, "start": "09:40", "end": "11:30",
-      "name": "MUST · L'Isle-sur-la-Sorgue — 물의 마을", "category": "sight", "lat": 43.91904, "lng": 5.05477,
-      "summary": "중심부 주차 → Sorgue 강변 → Quai Jean Jaurès → 물레방아 → 구시가지 → Place Ferdinand Buisson/관광안내소 → 강변 카페. 화요일이므로 시장·앤틱 쇼핑이 아니라 수로와 생활도시를 경험한다.",
+      "id": "gordes-depart",
+      "order": 2,
+      "start": "09:20",
+      "end": "09:45",
+      "name": "Gordes 출발",
+      "category": "hotel",
+      "lat": 43.91181,
+      "lng": 5.20043,
+      "summary": "아침 후 08:30 출발해 Roussillon의 Parking des Ocres 또는 Saint-Michel로 간다.",
+      "menu": "숙소 아침",
+      "reservation": "Gordes 2박 숙소 미확정",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "ACTION REQUIRED",
+          "detail": "실제 숙소 위치·주차·Day 18 아침 출발 동선을 확정한다."
+        }
+      ],
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "roussillon",
+      "order": 3,
+      "start": "09:45",
+      "end": "11:30",
+      "name": "MUST · Roussillon + Sentier des Ocres",
+      "category": "sight",
+      "lat": 43.90202,
+      "lng": 5.29207,
+      "summary": "09:00 도착 후 마을 접근·주차, 09:30 개장에 맞춰 Sentier des Ocres 짧은/긴 코스 현장 선택 → Place de la Mairie → 붉은 골목과 전망 → 커피. 트레일은 약 30~60분이며 비·강풍·안전통제 여부를 당일 확인한다.",
+      "menu": "coffee·pastry·early snack 중심",
+      "reservation": "9월 공식 운영 09:30–18:30(19:00 퇴장) · 현장 결제 · 날씨 조건부",
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "ACTION REQUIRED",
+          "detail": "당일 기상과 Sentier des Ocres 개방 상태를 확인한다."
+        }
+      ],
+      "optional": false,
+      "place_ref": "roussillon-sentier-des-ocres"
+    },
+    {
+      "id": "roussillon-lunch",
+      "order": 4,
+      "start": "11:45",
+      "end": "12:45",
+      "name": "Roussillon권 점심",
+      "category": "food",
+      "lat": 43.9026,
+      "lng": 5.2926,
+      "summary": "Roussillon 마을 또는 인근에서 점심. 특정 업소를 전제하지 않는다.",
+      "menu": "현장 확인",
+      "reservation": "9월 화요일 영업 재확인",
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "화요일 점심 영업 현장 확인."
+        }
+      ],
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "senanque",
+      "order": 5,
+      "start": "13:15",
+      "end": "14:45",
+      "name": "MUST · Sénanque 외관·계곡 / OPTIONAL INSIDE · HistoPad",
+      "category": "culture",
+      "lat": 43.9284546,
+      "lng": 5.1871502,
+      "summary": "계곡 전망과 수도원 외관은 MUST로 지킨다. 2026-08-25 공식 예매 화면에서 9/15 HistoPad 15:00·16:00·17:00 회차가 표시됐고, 기존 16:00–17:30 창은 16:00 회차와 맞다. 내부는 예약 완료 시만 실행한다. 정숙·단정한 복장을 지키고, 개인용 사진은 삼각대 없이만 촬영하며 예식 중 촬영·녹음은 금지다. 9월은 라벤더 개화기가 아니다.",
+      "menu": null,
+      "reservation": "ACTION REQUIRED — 9/15 16:00 HistoPad 회차는 표시됨(2026-08-25 확인), 예약은 아직 완료되지 않음",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "ACTION REQUIRED",
+          "detail": "16:00 HistoPad 입장권을 예약하고 오프라인으로 저장한다. 예약 전에는 내부 관람을 OPTIONAL로 둔다."
+        }
+      ],
+      "executionNote": "공식 안내상 월–토 비가이드 관람은 13:00–17:00 마지막 입장이며 한국어 HistoPad를 제공한다. 2026-08-25 예매 화면에는 9/15 16:00 회차가 표시됐다.",
+      "officialUrl": "https://abbaye-senanque.tickeasy.com/en-GB/",
+      "optional": false,
+      "place_ref": "abbaye-de-senanque"
+    },
+    {
+      "id": "l-isle-sur-la-sorgue",
+      "order": 6,
+      "start": "15:15",
+      "end": "17:00",
+      "name": "OPTIONAL · L'Isle-sur-la-Sorgue 오후 왕복 — 물의 마을",
+      "category": "sight",
+      "lat": 43.91904,
+      "lng": 5.05477,
+      "summary": "Gordes에서 편도 약 25분. 중심부 주차 → Sorgue 강변 → Quai Jean Jaurès → 물레방아 → 구시가지 → Place Ferdinand Buisson/관광안내소 → 강변 카페. 화요일이므로 시장·앤틱 쇼핑이 아니라 수로와 생활도시를 경험한다.",
       "menu": "Fontaine 방문 시 coffee/snack, 생략 시 브런치·이른 점심",
       "reservation": "목·일 전통시장 아님 · 주요 antique village는 화·수 휴무가 많음",
-      "executionNote": "화요일은 주요 전통시장·앤틱 마켓 핵심일이 아니므로 물길·물레방아·구시가지 중심으로 본다.",
-      "optional": false, "place_ref": "l-isle-sur-la-sorgue"
+      "executionNote": "피로 시 가장 먼저 삭제한다. 화요일은 전통시장·앤틱 핵심일이 아니므로 물길·물레방아·구시가지 중심으로 본다.",
+      "optional": true,
+      "place_ref": "l-isle-sur-la-sorgue"
     },
     {
-      "id": "fontaine-de-vaucluse", "order": 3, "start": "12:00", "end": "13:30",
-      "name": "OPTIONAL · Fontaine-de-Vaucluse", "category": "sight", "lat": 43.9221229, "lng": 5.1272914,
-      "summary": "마을 주차 → Sorgue 강을 따라 상류 → Vallis Clausa 방향 → 수원지 접근 가능 범위 → 강변 복귀. 물의 Provence 테마를 완성하는 60~90분 산책이다.",
-      "menu": "강변에서 가벼운 점심 또는 커피",
-      "reservation": "비·피로·체크아웃 지연 시 생략",
-      "executionStatuses": [{"type": "optional", "label": "FALLBACK", "detail": "늦으면 Fontaine-de-Vaucluse를 생략하고 Avignon으로 직행한다."}],
-      "optional": true, "place_ref": "fontaine-de-vaucluse"
-    },
-    {
-      "id": "avignon-checkin", "order": 4, "start": "15:00", "end": "16:00",
-      "name": "MUST · Avignon 체크인", "category": "hotel", "lat": 43.94993, "lng": 4.81302,
-      "summary": "15:00~16:00 체크인 목표. 관리 주차장에 차를 두고 짐을 푼 뒤 숙소 생활권을 확인한다. Avignon 1박차.",
-      "menu": null,
-      "reservation": "Avignon 9/15~9/20 5박 숙소 확정 및 주차·체크인 창 확인 필요",
-      "executionStatuses": [{"type": "book", "label": "ACTION REQUIRED", "detail": "Avignon accommodation for 9/15–9/20 is not yet confirmed in the repository."}],
-      "optional": false, "place_ref": null
-    },
-    {
-      "id": "avignon-settle", "order": 5, "start": "16:15", "end": "18:00",
-      "name": "장보기 · 숙소 정리 · 성벽 주변 짧은 산책", "category": "shopping", "lat": 43.9493, "lng": 4.8061,
-      "summary": "물·아침거리 장보기와 숙소 정리를 우선한다. Day 22에 Palais des Papes와 Pont Saint-Bénézet를 충분히 볼 수 있도록 핵심 관광은 시작하지 않는다.",
-      "menu": "숙소 주변 카페 또는 가벼운 간식", "reservation": null, "optional": false, "place_ref": null
-    },
-    {
-      "id": "avignon-dinner", "order": 6, "start": "19:00", "end": "20:30",
-      "name": "Avignon 숙소 저녁 · 휴식", "category": "hotel", "lat": 43.94993, "lng": 4.81302,
-      "summary": "이동일 피로를 고려해 숙소 주변에서 1~1.5시간 안에 식사한 뒤 숙소로 돌아와 조기 휴식한다.",
-      "menu": "가벼운 프로방스 저녁", "reservation": "당일 영업 식당 현장 선택 또는 짧은 예약", "optional": false, "place_ref": null
+      "id": "gordes-return",
+      "order": 7,
+      "start": "17:30",
+      "end": "20:30",
+      "name": "MUST · Gordes 복귀와 2박차",
+      "category": "hotel",
+      "lat": 43.91181,
+      "lng": 5.20043,
+      "summary": "수도원에서 Gordes로 돌아와 휴식하고 저녁을 먹는다. 익일 체크아웃을 위해 주유·짐 정리를 마친다.",
+      "menu": "Gordes 숙소권 저녁",
+      "reservation": "Gordes 2박 숙소 미확정",
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "ACTION REQUIRED",
+          "detail": "실제 숙소 위치와 Sénanque에서의 귀환·야간 주차 동선을 확정한다."
+        }
+      ],
+      "optional": false,
+      "place_ref": "gordes"
     }
   ],
   "legs": [
-    {"from": "gordes-checkout", "to": "l-isle-sur-la-sorgue", "mode": "car", "duration": "약 20분", "distance": "18km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "l-isle-sur-la-sorgue", "to": "fontaine-de-vaucluse", "mode": "car", "duration": "약 10분", "distance": "7km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "fontaine-de-vaucluse", "to": "avignon-checkin", "mode": "car", "duration": "약 45분", "distance": "35km", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "avignon-checkin", "to": "avignon-settle", "mode": "walk", "duration": "5~15분", "distance": "숙소 위치에 따라 확인", "line": null, "geometryStatus": "coordinate-line"},
-    {"from": "avignon-settle", "to": "avignon-dinner", "mode": "walk", "duration": "5~15분", "distance": "식당 선택에 따라 확인", "line": null, "geometryStatus": "coordinate-line"}
+    {
+      "from": "gordes-market",
+      "to": "gordes-depart",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "gordes-depart",
+      "to": "roussillon",
+      "mode": "car",
+      "duration": "약 15분",
+      "distance": "10km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "roussillon",
+      "to": "roussillon-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "roussillon-lunch",
+      "to": "senanque",
+      "mode": "car",
+      "duration": "약 25분",
+      "distance": "14km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "senanque",
+      "to": "l-isle-sur-la-sorgue",
+      "mode": "car",
+      "duration": "약 35분 (재확인)",
+      "distance": "약 25km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "l-isle-sur-la-sorgue",
+      "to": "gordes-return",
+      "mode": "car",
+      "duration": "약 25분 (재확인)",
+      "distance": "약 18km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    }
   ],
   "transport": [
-    "Base: Gordes → L'Isle-sur-la-Sorgue → Avignon (약 46km·순수 운전 약 55분)",
-    "Extended: Gordes → L'Isle-sur-la-Sorgue → Fontaine-de-Vaucluse → Avignon (약 60km·순수 운전 약 1시간 20분)",
-    "Avignon 도착 후 관리 주차장에 차량 보관하고 도보"
+    "Base: Gordes → Roussillon → Sénanque → Gordes (약 41km·순수 운전 약 55분)",
+    "Extended: Gordes → Roussillon → Ménerbes → Goult → Sénanque → Gordes (약 61km·순수 운전 약 1시간 20분)",
+    "Roussillon·Ménerbes·Goult는 외곽 주차 후 도보"
   ],
   "food": [
-    "L'Isle: coffee/브런치",
-    "Fontaine 방문 시 강변 가벼운 점심",
-    "저녁: Avignon 숙소 주변"
+    "시장 조달 아침",
+    "Roussillon권 점심 — 현장 확인",
+    "Gordes 저녁"
   ],
   "highlights": [
-    "THEME · Sorgue 강과 물길을 지나 Avignon 생활권으로",
-    "MUST · L'Isle 물길 산책 · Avignon 체크인",
-    "OPTIONAL · Fontaine-de-Vaucluse",
-    "FACT · 화요일은 L'Isle 전통시장·주요 앤틱단지 핵심일이 아님"
+    "Gordes 화요시장 — 2박 중 유일한 장날",
+    "오크르길은 먼지에 강한 신발",
+    "L'Isle 오후 왕복은 피로 시 최우선 삭제",
+    "줄이는 순서: L'Isle→Galetas식 물가 여유→Sénanque 내부"
   ],
-  "backup": "비·피로·늦은 체크아웃이면 Fontaine-de-Vaucluse를 생략한다. L'Isle에서는 물길·물레방아·구시가지 산책만 75~90분 유지하고 Avignon으로 직행한다. 최소 실행안은 Gordes 체크아웃 → L'Isle 물의 마을 → 15:00~16:00 Avignon 체크인이다.",
-  "map": {"zoom": 10, "center": [43.93, 5.02], "routeCache": "routes/day-18-driving-osrm.json"},
+  "backup": "1. 피로 시 L'Isle 왕복을 삭제하고 Gordes 저녁으로 전환한다.\n2. Sénanque 슬롯이 어긋나면 외관·계곡 전망으로 대체한다.\n3. 우천 시 오크르길 대신 Roussillon 마을 산책으로 줄인다.",
+  "map": {
+    "zoom": 11,
+    "center": [
+      43.88,
+      5.23
+    ],
+    "routeCache": "routes/day-17-driving-osrm.json"
+  },
   "needsReview": [
-    "ACTION REQUIRED — Avignon 5박 숙소·주차·체크인 시각 확정",
-    "Fontaine 수원지 당일 접근 가능 범위와 날씨",
-    "골동품 시장을 핵심 경험으로 원할 경우 날짜 이동을 자동 실행하지 않고 별도 결정"
+    "ACTION REQUIRED — Sénanque 9/15 16:00 HistoPad 슬롯 예약 완료·티켓 오프라인 저장",
+    "ACTION REQUIRED — Gordes 숙소 위치·주차·출발·귀환 동선 확정",
+    "Sentier des Ocres 당일 기상·안전통제",
+    "Gordes 화요시장 개장시간 현장 확인",
+    "Sénanque 9/15 관람 슬롯 확인",
+    "L'Isle 왕복 실주행 시간 재확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-18",
     "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md#Day-18",
-    "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md#Day-18",
-    "https://www.provenceguide.com/marches/pays-des-sorgues/offres-18-1.html",
-    "https://islesurlasorguetourisme.com/bouger/culture/art-et-antiquite/les-antiquaires-de-lisle/391062-le-village-des-antiquaires-de-la-gare"
+    "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html",
+    "https://www.senanque.fr/visite-de-labbaye/",
+    "https://abbaye-senanque.tickeasy.com/en-GB/",
+    "https://www.provenceguide.com/restaurants/luberon/bistrot-le-5/provence-780497-1.html",
+    "https://bistrotle5.com/"
   ]
 }
