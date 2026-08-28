@@ -6,6 +6,7 @@
   "title": "모로 아틀리에 & 파리 패션위크 개막 & 마레 지구",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:00",
   "endTime": "20:30",
   "totalDuration": "12시간 30분",
@@ -31,6 +32,15 @@
       "summary": "전날 일요일에 Pichard 에서 사 둔 빵으로 숙소 아침 — 이 빵집은 월·화 휴무다. 오전 모로 미술관 관람을 위해 09:45 빠른 출발",
       "menu": "크루아상, 팽 오 쇼콜라, 과일, 커피",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "MONDAY CLOSURE",
+          "detail": "Boulangerie Pichard는 월·화 정기 휴무 · 전날 Pichard에서 조달한 빵 또는 숙소 인근 영업 중인 블랑제리 이용."
+        }
+      ],
+      "executionNote": "09:45 숙소 출발 (전날 Pichard 조달 빵으로 숙소 아침) ➔ 메트로 8호선(Lourmel) 탑승 후 Madeleine에서 12호선 환승 ➔ Saint-Georges역 (약 30분 소요).",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +55,16 @@
       "lng": 2.3364,
       "summary": "19세기 상징주의 화가의 아틀리에 저택. 전설적인 나선형 계단, 주피터와 세멜레, 신화적 대작 유화 및 회전식 데생 패널 집중 관람 (90분)",
       "menu": null,
-      "reservation": "사전 시간지정 예약 권장 (10:30 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "TIMED TICKET",
+          "detail": "Musée Gustave Moreau (€12) 10:30 슬롯 온라인 예매 권장 · 월요일 10:00–18:00 정상 개관 (화요일 휴관)."
+        }
+      ],
+      "executionNote": "14 Rue Catherine de La Rochefoucauld, 75009 Paris (Saint-Georges역 도보 3분).",
+      "officialUrl": "https://musee-moreau.fr/",
       "optional": false,
       "place_ref": "musee-gustave-moreau"
     },
@@ -56,30 +75,22 @@
       "end": "13:30",
       "name": "Au Petit Riche 9구 벨에포크 점심",
       "category": "food",
-      "lat": 48.875,
-      "lng": 2.335,
+      "lat": 48.8718,
+      "lng": 2.3389,
       "summary": "1854년 개업한 벨에포크 살롱에서 점심. 모로 미술관에서 도보 10~12분, 식후 Richelieu-Drouot역 8호선으로 마레까지 환승 없이 10~12분",
       "menu": "Quenelle de brochet 갑각류 소스 €24 · Tartare de bœuf 칼로 다진 €25 · Crème brûlée 마다가스카르 바닐라 €12",
       "reservation": null,
-      "optional": false,
-      "place_ref": "au-petit-riche",
       "executionStatuses": [
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "월요일 점심 영업 확인(출처 3건). 12:00 오픈 — 이 권역에서 유일하다. +33 1 47 70 68 68 사전 예약"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "점심 메뉴 €32 vs €29 로 출처가 갈린다. 예약 전화 시 확인"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Au Petit Riche (25 Rue Le Peletier) 월요일 12:00 점심 예약 · 9구 월요일 영업 전통 비스트로."
         }
-      ]
+      ],
+      "executionNote": "25 Rue Le Peletier, 75009 Paris (Richelieu-Drouot역 또는 Le Peletier역 인근).",
+      "officialUrl": "https://restaurant-aupetitriche.com/",
+      "optional": false,
+      "place_ref": "au-petit-riche"
     },
     {
       "id": "fashion-week-marais",
@@ -93,7 +104,16 @@
       "summary": "2026 파리 패션위크(SS27 여성복) 개막일. 마레 지구의 트렌디한 거리(Rue Vieille du Temple, Rue des Francs-Bourgeois) 팝업 스토어, 쇼윈도, 부티크 거리 산책 (3.5시간)",
       "menu": "스페셜티 커피, 페이스트리",
       "reservation": null,
-      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "도보 피로 시 쇼핑 거리를 90분으로 단축하고 피카소 미술관 인근 카페 휴식으로 전환."
+        }
+      ],
+      "executionNote": "Rue Vieille du Temple ➔ Rue des Francs-Bourgeois ➔ Place des Vosges 외관.",
+      "officialUrl": "https://www.paris.fr/",
+      "optional": true,
       "place_ref": "le-marais"
     },
     {
@@ -103,30 +123,22 @@
       "end": "20:30",
       "name": "Guylas 페르시아 저녁 (15구)",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
+      "lat": 48.8499,
+      "lng": 2.2882,
       "summary": "마레에서 8호선으로 15구 귀환 후 숙소 도보 4분. 월요일에 확실히 여는 몇 안 되는 집이고, 프렌치가 이어진 뒤 장르를 갈아타는 자리다",
       "menu": "Fesenjan 호두·석류 소스 닭 €18 · Ghalieh 허브·타마린드 스튜 €17 · Kebab koobideh 숯불 꼬치",
       "reservation": null,
-      "optional": false,
-      "place_ref": "guylas",
       "executionStatuses": [
         {
-          "type": "confirmed",
+          "type": "check",
           "label": "OPEN",
-          "detail": "연중무휴 매일 영업(출처 3건). 9/28은 월요일이라 15구 프렌치 상당수가 닫는다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "마감이 23:30인지 02:00인지 출처가 갈린다. 늦게 갈 때만 확인"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Guylas (14 Rue de Lourmel) 월요일 저녁 19:00 정상 영업 · 15구 숙소 도보 4분."
         }
-      ]
+      ],
+      "executionNote": "14 Rue de Lourmel, 75015 Paris. 월요일 휴무 프렌치 식당 대안의 편안한 에스닉 만찬.",
+      "officialUrl": null,
+      "optional": false,
+      "place_ref": "guylas"
     }
   ],
   "legs": [

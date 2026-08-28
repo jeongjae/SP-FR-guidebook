@@ -1071,6 +1071,13 @@
       "resolvedName": "Bouillon Racine",
       "evidence": "https://www.bouillonracine.fr/",
       "verifiedAt": "2026-08-25"
+    },
+    "marche-lecourbe": {
+      "query": "Marché Lecourbe, Rue Lecourbe, 75015 Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Marché Lecourbe",
+      "evidence": "https://www.paris.fr/lieux/marche-lecourbe-5484",
+      "verifiedAt": "2026-08-27"
     }
   },
   "hotels": {
@@ -1917,6 +1924,182 @@
       "destination": "Le Relais du 15ème, 59 Rue de Lourmel, 75015 Paris",
       "travelMode": "walking",
       "evidence": "3-minute walk to non-stop neighborhood bistro",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-28:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Boulangerie Pichard",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Boulangerie Pichard, 68 Rue Cambronne, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Morning routine bakery walk in 15th arr.",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-28:city-bus-tour": {
+      "title": "78 Rue de Lourmel ➔ Champs-Élysées - Franklin D. Roosevelt (Tootbus 승차)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Avenue des Champs-Élysées, 75008 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to Tootbus tour stop",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-28:grand-palais-cezanne": {
+      "title": "Champs-Élysées ➔ Grand Palais (Entrée Square Jean Perrin)",
+      "origin": "Avenue des Champs-Élysées, 75008 Paris",
+      "destination": "Square Jean Perrin, Avenue Franklin Delano Roosevelt, 75008 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk from Champs-Élysées along Franklin D. Roosevelt to Grand Palais exhibition entrance at Square Jean Perrin",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-28:paris-return": {
+      "title": "Grand Palais ➔ Le Café du Commerce 저녁",
+      "origin": "Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris",
+      "destination": "Le Café du Commerce, 51 Rue du Commerce, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to classic brasserie dinner",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Marché Lecourbe & Pichard",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Marché Lecourbe, Rue Lecourbe, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Saturday market & bakery walk in 15th arr.",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:luxembourg-warhol": {
+      "title": "78 Rue de Lourmel ➔ Musée du Luxembourg (워홀 특별전)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée du Luxembourg, 19 Rue de Vaugirard, 75006 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 10 to Luxembourg Museum",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:jardin-luxembourg": {
+      "title": "Musée du Luxembourg ➔ Fontaine Médicis (뤽상부르 정원)",
+      "origin": "Musée du Luxembourg, 19 Rue de Vaugirard, 75006 Paris",
+      "destination": "Fontaine Médicis, Jardin du Luxembourg, 75006 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk in Luxembourg Gardens to historic Medici Fountain",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:saint-germain": {
+      "title": "Jardin du Luxembourg ➔ Saint-Germain-des-Prés 성당",
+      "origin": "Fontaine Médicis, Jardin du Luxembourg, 75006 Paris",
+      "destination": "Église de Saint-Germain-des-Prés, 3 Place Saint-Germain des Prés, 75006 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk from park through Saint-Sulpice to Saint-Germain boulevard",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:notre-dame-compact": {
+      "title": "Saint-Germain-des-Prés ➔ Cathédrale Notre-Dame de Paris",
+      "origin": "Église de Saint-Germain-des-Prés, 3 Place Saint-Germain des Prés, 75006 Paris",
+      "destination": "Cathédrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk across Seine to Île de la Cité for Notre-Dame facade",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:bouillon-racine-dinner": {
+      "title": "Notre-Dame ➔ Bouillon Racine 저녁",
+      "origin": "Cathédrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris",
+      "destination": "Bouillon Racine, 3 Rue Racine, 75006 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk from Île de la Cité along Boulevard Saint-Michel to Bouillon Racine",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-29:paris-return": {
+      "title": "Bouillon Racine ➔ 78 Rue de Lourmel 복귀",
+      "origin": "Bouillon Racine, 3 Rue Racine, 75006 Paris",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 10 ➔ Metro 8 to Lourmel",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-30:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Marché Convention & Pichard",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Marché Convention, Rue de Convention, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Sunday morning market and Pichard bakery procurement",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-30:orangerie": {
+      "title": "78 Rue de Lourmel ➔ Musée de l'Orangerie (수련)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to Orangerie Museum",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-30:tuileries-vendome": {
+      "title": "Musée de l'Orangerie ➔ Place Vendôme",
+      "origin": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
+      "destination": "Place Vendôme, 75001 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk through Tuileries gardens to Place Vendôme column",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-30:palais-royal": {
+      "title": "Place Vendôme ➔ Palais-Royal (뷔랑 기둥)",
+      "origin": "Place Vendôme, 75001 Paris",
+      "destination": "Domaine National du Palais-Royal, 8 Rue de Montpensier, 75001 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Rue Saint-Honoré to Palais-Royal courtyard and columns",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-30:opera-garnier-district": {
+      "title": "Palais-Royal ➔ Palais Garnier (오페라 외관)",
+      "origin": "Domaine National du Palais-Royal, 8 Rue de Montpensier, 75001 Paris",
+      "destination": "Palais Garnier, Place de l'Opéra, 75009 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Avenue de l'Opéra to historic opera facade",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-30:paris-return": {
+      "title": "Opéra ➔ Bouillon Chartier Montparnasse 저녁",
+      "origin": "Palais Garnier, Place de l'Opéra, 75009 Paris",
+      "destination": "Bouillon Chartier Montparnasse, 59 Boulevard du Montparnasse, 75006 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8/12 to Montparnasse-Bienvenüe for traditional dinner",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-31:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Saint-Georges (모로 미술관 출발)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Saint-Georges, 75009 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 + 12 to 9th arr. Nouvelle Athènes",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-31:gustave-moreau": {
+      "title": "Saint-Georges ➔ Musée Gustave Moreau",
+      "origin": "Saint-Georges, 75009 Paris",
+      "destination": "Musée Gustave Moreau, 14 Rue Catherine de La Rochefoucauld, 75009 Paris",
+      "travelMode": "walking",
+      "evidence": "Short walk to Gustave Moreau atelier mansion",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-31:opera-lunch": {
+      "title": "Musée Gustave Moreau ➔ Au Petit Riche 점심",
+      "origin": "Musée Gustave Moreau, 14 Rue Catherine de La Rochefoucauld, 75009 Paris",
+      "destination": "Au Petit Riche, 25 Rue Le Peletier, 75009 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk from Moreau museum to historic Belle Époque bistro",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-31:fashion-week-marais": {
+      "title": "Au Petit Riche ➔ Le Marais (패션위크 개막 분위기)",
+      "origin": "Au Petit Riche, 25 Rue Le Peletier, 75009 Paris",
+      "destination": "Rue Vieille-du-Temple, 75003 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to Marais district",
+      "verifiedAt": "2026-08-27"
+    },
+    "day-31:paris-return": {
+      "title": "Le Marais ➔ Guylas 저녁 (15구)",
+      "origin": "Rue Vieille-du-Temple, 75003 Paris",
+      "destination": "Guylas, 14 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to Persian restaurant near lodging",
       "verifiedAt": "2026-08-27"
     }
   },
