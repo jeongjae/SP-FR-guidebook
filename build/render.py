@@ -2349,6 +2349,135 @@ def build_travel_french(trip: Trip) -> str:
     )
 
 
+
+def build_paris_museum_booking() -> str:
+    """준비 — 파리 박물관·전시 예약 실행표 (RS02, Jason 2026-08-28 지시).
+
+    파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈 실행표다.
+    행의 방문일은 Day 페이지로, 장소는 장소 정본으로 연결한다.
+    """
+    rel = ".."
+
+    P1 = '<span class="badge badge-must">1차 · 지금</span>'
+    P2 = '<span class="badge badge-caution">2차 · 9월 초</span>'
+    P3 = '<span class="badge badge-neutral">3차 · 직전</span>'
+    NOB = '<span class="badge badge-ok">예약 불필요</span>'
+
+    # (우선순위, 방문일, day번호, 장소표기, place슬러그, 일정, 권장 예약 시점, 권장 실행일, 비고)
+    rows = [
+        (P1, "9/25", 28, "Grand Palais — Cézanne et nous", "grand-palais",
+         "특별전", "판매 시작 즉시", "지금", "개막 9/23 직후 방문 — 우선순위 최상"),
+        (P1, "9/26", 29, "Musée du Luxembourg — Warhol", "musee-du-luxembourg",
+         "특별전", "3~4주 전", "지금", "원하는 시간대 확보"),
+        (P2, "9/27", 30, "Musée de l'Orangerie", "musee-de-l-orangerie",
+         "상설 중심", "2~4주 전", "8월 말~9월 초", "Orsay와 결합권 검토"),
+        (P3, "9/28", 31, "Musée Gustave Moreau", "musee-gustave-moreau",
+         "일반관람", "1~2주 전", "9/14 전후", "예약 급하지 않음"),
+        (P1, "9/29", 32, "Musée d'Orsay", "musee-d-orsay",
+         "09:30 지정시간", "3~4주 전", "지금", "지정시간 일정 — 조기 확보"),
+        (P3, "9/29", 32, "Musée Rodin", "musee-rodin",
+         "14:30", "1~2주 전", "9/14 전후", "오전 Orsay 일정에 종속"),
+        (P1, "10/1", 34, "Versailles", "versailles",
+         "종일", "1~2개월 전", "지금", "Passport + 시간지정 입장"),
+        (P1, "10/2", 35, "Louvre", "musee-du-louvre",
+         "14:00 지정시간", "3~4주 전", "지금~9/2", "14:00 슬롯 유지 권장"),
+        (P3, "10/3", 36, "Marmottan Monet", "musee-marmottan-monet",
+         "14:00", "1~2주 전", "9/18 전후", "일정 유연성 유지"),
+        (P2, "10/5", 38, "Jacquemart-André", "musee-jacquemart-andre",
+         "미술관·전시", "2~4주 전", "9/7~15", "특별전이면 조금 빨리"),
+        (P1, "10/6", 39, "Orsay — Mary Cassatt 특별전", "musee-d-orsay",
+         "특별전", "판매 가능 즉시", "지금 확인·예약", "일반 Orsay 입장(9/29)과 별도로 판단 · "
+         "회차 판매 여부 재확인"),
+        (P3, "10/6", 39, "Musée Picasso Paris", "musee-picasso-paris",
+         "13:00", "1~2주 전", "9/20 전후", "현장구매도 가능"),
+        (P1, "10/7", 40, "Bourse de Commerce — Remember Me", "bourse-de-commerce-pinault-collection",
+         "개막일", "판매 시작 즉시", "지금", "개막일 방문 — 조기 예약 필요"),
+        (P3, "10/8", 41, "Musée Guimet", "musee-guimet",
+         "10:00", "1~2주 전", "9/24 이후", "서두를 필요 없음"),
+        (NOB, "10/8", 41, "MAM Paris (파리 시립 현대미술관)", "musee-d-art-moderne-de-paris",
+         "상설전", "예약 불필요", "직전 확인", "상설 컬렉션 무료"),
+    ]
+
+    body_rows = "".join(
+        f"<tr><td>{pr}</td>"
+        f'<td><a href="{rel}/daily/day-{day:02d}.html">{esc(date)}</a></td>'
+        f'<td><a href="{rel}/places/{slug}.html">{esc(name)}</a></td>'
+        f"<td>{esc(sched)}</td><td>{esc(when)}</td><td>{esc(act)}</td>"
+        f"<td>{esc(note)}</td></tr>"
+        for pr, date, day, name, slug, sched, when, act, note in rows)
+
+    wave = """
+<div class="prose">
+<p><strong>1차 — 지금 (8/28~8/31):</strong> Grand Palais → Versailles → Orsay 9/29 →
+Louvre 10/2 → Bourse de Commerce → Luxembourg → Mary Cassatt(판매 확인).
+단순히 유명한 곳이라서가 아니라, <strong>날짜·시간이 고정되어 있거나 특별전 개막
+직후에 방문</strong>하는 곳들이다. 특히 Versailles 10/1 · Louvre 10/2 · Orsay 9/29는
+파리 일정 전체의 동선을 잡는 기준점이므로 먼저 확정한다.</p>
+<p><strong>2차 — 9/1~9/10:</strong> Orangerie · Jacquemart-André.
+1차가 끝난 뒤 처리한다. Orangerie는 9/27 방문이라 너무 늦출 수는 없지만
+1차만큼 급하지는 않다.</p>
+<p><strong>3차 — 9/12~9/20 (여행 중):</strong> Gustave Moreau · Rodin ·
+Marmottan · Picasso. 너무 일찍 예약하면 파리 체류 중 날씨·피로도·공연 일정에
+따른 변경 여지가 줄어든다 — 기다리는 것이 오히려 좋다.</p>
+<p><strong>파리 도착 전후:</strong> Guimet 예약과 무료관(MAM) 운영시간 최종 확인.</p>
+</div>"""
+
+    principles = """
+<div class="prose">
+<p>예약 시간까지 가이드북 일정과 맞춰 <strong>고정해야 하는 곳</strong>은
+Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이나 Moreau처럼
+유연한 곳은 앞뒤 일정에 여유를 두고 잡는다.</p>
+<p>티켓을 살 때는 구매 완료만 관리하지 말고 <strong>① 날짜 ② 시간
+③ 변경·취소 가능 여부 ④ QR 티켓 저장 위치</strong>까지 함께 기록한다.
+파리 일정에는 특별전과 일반관람권이 섞여 있어 이 구분이 특히 중요하다.</p>
+</div>"""
+
+    index_search("파리 뮤지엄 예약 실행표", "prepare/paris-museums.html", "prepare",
+                 "파리 15박 미술관·전시 예약 3단계 실행표")
+
+    return page(
+        title="파리 뮤지엄 예약", rel=rel, tab="prepare",
+        description="파리 박물관·전시 예약을 3단계로 나눈 실행표",
+        trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
+               ("파리 뮤지엄 예약", None)],
+        body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>파리 뮤지엄 예약 실행표</h1>
+<p class="hero-dek">파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈다.
+예약 실패 위험이 큰 것부터 지금 처리한다.</p></header>
+
+{alert('caution',
+       '<strong>오늘 처리 7건:</strong> Grand Palais · Versailles · Orsay 9/29 · '
+       'Louvre 10/2 · Bourse de Commerce · Luxembourg · Mary Cassatt(판매 확인). '
+       '나머지는 단계별 시점에 맞춰 처리한다.')}
+
+{sec_head('PLAN', '예약 실행표 — 15건', rule=True)}
+<div class="table-wrap"><table>
+<thead><tr><th>단계</th><th>방문일</th><th>장소 / 전시</th><th>일정</th>
+<th>권장 예약 시점</th><th>권장 실행일</th><th>비고</th></tr></thead>
+<tbody>{body_rows}</tbody>
+</table></div>
+
+{sec_head('WAVES', '3단계 파도 — 왜 이 순서인가', rule=True)}
+{wave}
+
+{sec_head('PRINCIPLES', '실제 예약할 때의 원칙', rule=True)}
+{principles}
+
+{sec_head('CHECKLIST', '압축 체크리스트', rule=True)}
+<div class="prose"><ul>
+<li><strong>오늘:</strong> Grand Palais · Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
+<li><strong>9월 초:</strong> Orangerie · Jacquemart-André</li>
+<li><strong>9월 중순:</strong> Moreau · Rodin · Marmottan · Picasso</li>
+<li><strong>파리 출발 직전:</strong> Guimet 예약 · 무료관(MAM) 운영시간 재확인</li>
+</ul>
+<p>이 순서대로 처리하면 가이드북 일정을 거의 그대로 유지하면서 예약 실패
+위험을 크게 낮출 수 있다. 확정된 예약은 <a href="index.html">준비 현황</a>의
+확정 목록과 트래커에 날짜·시간·취소조건·QR 저장 위치를 함께 기록한다.</p></div>
+
+<div class="btn-row"><a class="btn btn-secondary" href="index.html">{ic('check')}준비 현황</a>
+  <a class="btn btn-secondary" href="{rel}/guide/paris.html">{ic('region')}파리 가이드</a></div>
+</div></div>""")
+
 def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
     """준비 — 무엇을 예약·확인해야 하는가.
 
@@ -2390,6 +2519,9 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 <p class="hero-dek">확정 {len(done)}건 · 미예약 {len(todo)}건.
   상태는 셋뿐이다 — 확정 · 미예약 · 제외.</p></header>
 
+<div class="btn-row"><a class="btn btn-primary" href="paris-museums.html">
+  {ic('ticket')}파리 뮤지엄 예약</a></div>
+
 {alert('caution',
        f'<strong>아직 {len(todo)}건이 예약되지 않았다.</strong> 예약이 없는 항목은 '
        f'주소·시각이 정해진 것이 아니다. 확정된 것만 확정으로 표시된다.')
@@ -2414,6 +2546,8 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
   <a class="btn btn-secondary" href="../offline.html">
   {ic('download')}오프라인 준비</a></div>
 </div></div>""")
+
+    out["paris-museums.html"] = build_paris_museum_booking()
 
     out["french.html"] = build_travel_french(trip)
 
