@@ -6,6 +6,7 @@
   "title": "파리 15박 체크아웃 ➔ CDG 공항 ➔ 인천 귀국 (OZ502)",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "08:00",
   "endTime": "19:10",
   "totalDuration": "11시간 10분",
@@ -30,7 +31,16 @@
       "lng": 2.2894,
       "summary": "15박 장기 체류 짐 최종 패킹, 분리수거 및 숙소 점검. 11:00 정식 체크아웃",
       "menu": null,
-      "reservation": "체크아웃 11:00",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CHECKOUT",
+          "detail": "숙소 11:00 공식 체크아웃 (78 Rue de Lourmel, 15박 체류 완료) · 열쇠 반납 및 쓰레기 분리수거."
+        }
+      ],
+      "executionNote": "11:00 체크아웃 완료. 짐 보관 후 도보 5분 Café du Commerce 이동.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -41,11 +51,20 @@
       "end": "13:00",
       "name": "Café du Commerce 15구 마지막 점심",
       "category": "food",
-      "lat": 48.8468,
-      "lng": 2.2905,
+      "lat": 48.8466,
+      "lng": 2.2968,
       "summary": "단골 15구 비스트로/카페에서 파리 생활을 회고하는 마지막 점심 식사",
       "menu": "가벼운 브라세리 런치, 샐러드, 커피",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "OPEN",
+          "detail": "Café du Commerce (51 Rue du Commerce) 매일 11:30–23:00 논스톱 영업 · 비행 전 부담 없는 가벼운 식사."
+        }
+      ],
+      "executionNote": "51 Rue du Commerce, 75015 Paris. 식후 13:15 숙소 복귀하여 택시 탑승 준비.",
+      "officialUrl": "https://www.lecafeducommerce.com/",
       "optional": false,
       "place_ref": "cafe-du-commerce"
     },
@@ -60,7 +79,16 @@
       "lng": 2.5479,
       "summary": "13:30 공식 택시(G7 또는 콜택시) 탑승 ➔ 파리 좌안(Rive Gauche 15구) ↔ CDG 공항 공식 정액 요금 €65.00 Fixed Fare 적용 (약 60~75분 소요). 14:45~15:00 CDG Terminal 1 도착층/출발층 도착 (출발 4시간 10분 전 도착으로 교통체증, PABLO 전자 세금환급, 수속 리스크 완전 차단)",
       "menu": null,
-      "reservation": "공식 택시 G7 예약 또는 호텔 콜택시 (13:30 픽업)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TAXI TRANSFER",
+          "detail": "13:30 숙소 픽업 택시(G7 사전예약 또는 호텔 콜) · 파리 좌안 ↔ CDG 정액 요금 €65.00 적용."
+        }
+      ],
+      "executionNote": "78 Rue de Lourmel ➔ CDG Terminal 1 출발층(Départs). 고속도로 정체 시 13:00 조기 출발.",
+      "officialUrl": "https://www.g7.fr/",
       "optional": false,
       "place_ref": null
     },
@@ -75,7 +103,16 @@
       "lng": 2.5479,
       "summary": "CDG Terminal 1 도착 후 PABLO 전자 키오스크 세금환급(Détaxe) 스캔 ➔ 아시아나 카운터(Hall 1/2) 수하물 위탁 (1인 1PC 23kg 규정 준수) ➔ 보안검색 및 출국심사 ➔ 면세점/스타얼라이언스 라운지 휴식 ➔ 19:10 OZ502 탑승",
       "menu": null,
-      "reservation": "예약확정 아시아나항공 OZ502 [CONFIRMED] — CDG 터미널 1 19:10 ➔ ICN 터미널 2 10/10 14:10 (12시간) · 48G(Jeongjae)·48H(Jungah)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "FLIGHT CONFIRMED",
+          "detail": "아시아나항공 OZ502 예약확정 · CDG 터미널 1 19:10 출발 ➔ ICN 10/10 14:10 도착 · 좌석 48G·48H · 수하물 1PC/인."
+        }
+      ],
+      "executionNote": "CDG Terminal 1. PABLO 택스리펀 바코드 스캔 ➔ 아시아나 카운터(Hall 1/2) 체크인 ➔ 19:10 출발.",
+      "officialUrl": "https://www.parisaeroport.fr/",
       "optional": false,
       "place_ref": null
     }
@@ -111,7 +148,7 @@
   ],
   "transport": [
     "T08 공항이동(추천): 13:30 15구 숙소(78 Rue de Lourmel) ➔ CDG Terminal 1 공식 택시 이동 (Paris Rive Gauche 좌안 ↔ CDG 공항 정액 요금 €65.00 Fixed Fare, 약 60~75분 소요, G7 예약 권장)",
-    "귀국 항공편: 아시아나항공 OZ502 (CDG Terminal 1 19:10 ➔ ICN T2 10/10 14:10, 확정 [CONFIRMED] · 48G·48H)",
+    "귀국 항공편: 아시아나항공 OZ502 (CDG Terminal 1 19:10 ➔ ICN T2 10/10 14:10, 확정 예약 · 48G·48H)",
     "T08 대안(Emergency): 메트로 8/10호선 ➔ RER B (Saint-Michel/Châtelet) ➔ CDG 1역 ➔ CDGVAL 셔틀 ➔ Terminal 1 (약 75~90분, 1인 €14.00 공항구간 티켓 필수, 일반 €2.55 티켓 불가, 캐리어 환승 부담 심각)"
   ],
   "food": [
@@ -124,7 +161,7 @@
     "짐은 42일 누적 — 전날 절반 포장",
     "détaxe PABLO 줄 완충"
   ],
-  "backup": "고속도로 정체 시 13:00 조기 출발하여 15:00 이전 공항 도착 완수",
+  "backup": "Primary: G7 사전예약 또는 호텔 콜택시 (Paris Rive Gauche ➔ CDG 정액 €65.00)\n\nPlan B (Emergency): 고속도로 극심 정체나 택시 파업 시 메트로 8/10호선 ➔ RER B (Saint-Michel/Châtelet) ➔ CDG 1역 ➔ CDGVAL 셔틀 ➔ Terminal 1 (약 75~90분 소요)\n\nTrigger: 교통 체증 및 파업 발생 시 즉시 RER B로 전환",
   "map": {
     "zoom": 10,
     "center": [

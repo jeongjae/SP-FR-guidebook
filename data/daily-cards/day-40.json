@@ -6,6 +6,7 @@
   "title": "부르스 드 코메르스 개막일 & 몽마르트르 포도 수확 축제",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:00",
   "endTime": "20:30",
   "totalDuration": "12시간 30분",
@@ -31,6 +32,15 @@
       "summary": "11:00 부르스 드 코메르스 개막일 슬롯을 위해 10:15 출발",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "DEPARTURE",
+          "detail": "10:15 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Concorde에서 1호선 환승 ➔ Louvre - Rivoli역 하차 (약 25분)."
+        }
+      ],
+      "executionNote": "부르스 드 코메르스 11:00 슬롯 도착을 위해 10:15 출발.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +55,16 @@
       "lng": 2.3425,
       "summary": "옛 곡물거래소 로툰다에 안도 타다오가 설계한 원형 콘크리트 실린더 건축 ➔ 신규 기획전 <Remember Me> 개막일 특별 관람 (2시간)",
       "menu": null,
-      "reservation": "사전 시간지정 예매 필수 (10/7 개막일 11:00 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TIMED ENTRY",
+          "detail": "Bourse de Commerce 10/7 개막일 11:00 슬롯 사전 시간지정 예매 필수 · 10:45까지 정문 보안검색 도착 (화요일 휴관)."
+        }
+      ],
+      "executionNote": "2 Rue de Viarmes, 75001 Paris (정문 출입구). 모바일 티켓 QR 준비.",
+      "officialUrl": "https://www.pinaultcollection.com/fr/boursedecommerce",
       "optional": false,
       "place_ref": "bourse-de-commerce-pinault-collection"
     },
@@ -56,30 +75,22 @@
       "end": "14:15",
       "name": "Aux Crus de Bourgogne 2구 점심",
       "category": "food",
-      "lat": 48.864,
-      "lng": 2.346,
+      "lat": 48.8665,
+      "lng": 2.3468,
       "summary": "부르스 드 코메르스에서 도보 8분. Rue Montorgueil 본거리가 아니라 한 블록 안쪽 rue Bachaumont라 함정 구간을 피한다. Étienne Marcel(4호선) 도보 2~3분이라 몽마르트르행 4+12호선 동선과 맞는다",
       "menu": "Pâté en croûte €10 · Steak tartare, pommes allumettes €18 · Baba au rhum €9",
       "reservation": null,
-      "optional": false,
-      "place_ref": "aux-crus-de-bourgogne",
       "executionStatuses": [
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "<Remember Me> 개막일이라 관람 퇴장이 밀릴 수 있다. 13:00 예약 필수(+33 1 42 33 48 24)"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "점심 포뮬이 €28(2025년 리뷰) vs €32(공식)로 갈린다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Aux Crus de Bourgogne (3 Rue Bachaumont) 13:00 점심 사전 예약 (+33 1 42 33 48 24) · 수요일 12:00–14:30 정상 영업."
         }
-      ]
+      ],
+      "executionNote": "3 Rue Bachaumont, 75002 Paris. 식후 Étienne Marcel역(4호선) 도보 3분.",
+      "officialUrl": "https://www.auxcrusdebourgogne.com/",
+      "optional": false,
+      "place_ref": "aux-crus-de-bourgogne"
     },
     {
       "id": "vendanges-montmartre",
@@ -93,20 +104,22 @@
       "summary": "제93회 Fête des Vendanges는 10/7~10/11이고 10/7은 개막일이다. 다만 이날 공개 행사는 19:00 18구 구청 개막 파티뿐이고, 미식 노점(Parcours du Goût)은 10/9~11, 대행렬은 10/10(토)에 열린다. 차량 통제도 10/9부터다. 즉 이날 오후는 축제 현장이 아니라 평상시 몽마르트르다 — Clos Montmartre 포도밭 외관, 라팽 아질, 사크레쾨르 파리 전경을 여유롭게 걷는 날로 잡는다",
       "menu": "축제 길거리 음식, 몽마르트르 와인",
       "reservation": null,
-      "optional": false,
-      "place_ref": "montmartre-south-pigalle",
       "executionStatuses": [
         {
           "type": "caution",
           "label": "CAUTION",
-          "detail": "축제 노점·행렬은 10/9~11 주말이다. 10/7 오후에 축제 현장을 기대하면 어긋난다"
+          "detail": "축제 노점·행렬은 10/9~11 주말이다. 10/7 오후에 축제 현장을 기대하면 어긋난다."
         },
         {
           "type": "optional",
           "label": "OPTIONAL",
-          "detail": "Clos Montmartre 포도밭 가이드 투어는 10/7 11:00 사전예약제이나 부르스 드 코메르스 관람과 시간이 겹친다"
+          "detail": "언덕 보행 피로 시 사크레쾨르 전경 산책 후 일찍 비스트로로 이동."
         }
-      ]
+      ],
+      "executionNote": "Lamarck - Caulaincourt역(12호선) 북측 접근 ➔ Clos Montmartre 포도밭 ➔ Place du Tertre ➔ Sacré-Cœur ➔ Abbesses 방면 하산.",
+      "officialUrl": "https://www.fetedesvendangesdemontmartre.com/",
+      "optional": true,
+      "place_ref": "montmartre-south-pigalle"
     },
     {
       "id": "le-progres-dinner",
@@ -115,8 +128,8 @@
       "end": "19:00",
       "name": "Le Progrès 몽마르트르 이른 저녁",
       "category": "food",
-      "lat": 48.8867,
-      "lng": 2.3431,
+      "lat": 48.886,
+      "lng": 2.3365,
       "summary": "Abbesses 역 앞 아르누보 동네 비스트로. 주방이 12:00–22:30 논스톱이라 몽마르트르에서 17:45에 실제로 저녁을 먹을 수 있는 몇 안 되는 집이고, Place du Tertre 관광 축에서 벗어난 내리막 골목에 있다",
       "menu": "Tartare de bœuf, frites maison €16.50 · Filets de daurade royale rôtis €23 · Linguine à la ricotta et au citron €17.50",
       "reservation": null,
@@ -124,19 +137,11 @@
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "매일 주방 12:00–22:30 논스톱 — 몽마르트르의 평판 좋은 비스트로는 대부분 19:00 이후에만 열어 이 시간대에 못 쓴다. 17:45는 워크인도 대체로 되지만 축제 개막일이므로 TheFork 예약"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "Abbesses는 파리에서 가장 깊은 역 중 하나다. 엘리베이터 줄이 길면 도보 6분의 Pigalle역이 실질적으로 더 빠르다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Le Progrès (7 Rue des Trois Frères) 17:45 이른 저녁 사전 온라인 예약 (TheFork) 권장 · 매일 12:00–22:30 논스톱 영업."
         }
       ],
+      "executionNote": "7 Rue des Trois Frères, 75018 Paris. Abbesses역 도보 2분.",
+      "officialUrl": "https://www.leprogresmontmartre.fr/",
       "optional": false,
       "place_ref": "le-progres-montmartre"
     },
@@ -152,9 +157,17 @@
       "summary": "Abbesses 12호선 → Concorde 8호선 환승 → Lourmel",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "METRO 12+8",
+          "detail": "Abbesses역(12호선) 탑승 ➔ Concorde역에서 8호선 환승 ➔ Lourmel역 하차 (약 35분)."
+        }
+      ],
+      "executionNote": "Abbesses역 엘리베이터 혼잡 시 도보 6분 Pigalle역(12/2호선) 이용.",
+      "officialUrl": "https://www.ratp.fr/",
       "optional": false,
-      "place_ref": null,
-      "executionStatuses": []
+      "place_ref": null
     }
   ],
   "legs": [

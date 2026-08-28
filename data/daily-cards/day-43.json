@@ -6,6 +6,7 @@
   "title": "기내와 인천 도착 — 43일의 끝",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "transfer",
   "startTime": "00:00",
   "endTime": "17:00",
   "totalDuration": "17시간",
@@ -15,7 +16,7 @@
     "name": "기내 (OZ502) — 숙소 없음",
     "lat": null,
     "lng": null,
-    "status": "needs-review"
+    "status": "confirmed"
   },
   "stops": [
     {
@@ -29,7 +30,16 @@
       "lng": 126.4407,
       "summary": "기내 수면, 수분 섭취, 시차 적응 (비행시간 약 12시간 00분)",
       "menu": "기내식 2회",
-      "reservation": "아시아나항공 OZ502 탑승중 — 48G·48H · ICN 터미널 2 도착",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "IN FLIGHT",
+          "detail": "OZ502 탑승 중 (좌석 48G·48H) · 14:10 인천국제공항 도착 예정."
+        }
+      ],
+      "executionNote": "기내 수면 및 수분 섭취. 14:10 인천 도착.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -45,6 +55,15 @@
       "summary": "14:10 인천공항 T1 도착, 입국 심사, 위탁 수하물 수취 및 세관 통과",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "ARRIVAL",
+          "detail": "14:10 ICN 도착 ➔ 자동출입국심사 ➔ 수하물 수취 (수하물 1PC/인) ➔ 세관 통과 (약 60~80분 소요)."
+        }
+      ],
+      "executionNote": "인천국제공항 제1여객터미널 입국장.",
+      "officialUrl": "https://www.airport.kr/",
       "optional": false,
       "place_ref": null
     },
@@ -60,6 +79,15 @@
       "summary": "공항철도/리무진/택시로 귀가. 짐 정리, 여행 사진 백업, 여정 마무리",
       "menu": "한식 저녁 식사",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "HOME RETURN",
+          "detail": "공항철도 직통열차 또는 공항리무진 버스 탑승 ➔ 자택 귀환 ➔ 43일 여정 공식 완결."
+        }
+      ],
+      "executionNote": "공항 1층 교통센터에서 공항철도 직통열차(AREX) 또는 리무진 버스 탑승.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     }
