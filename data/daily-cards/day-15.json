@@ -2,16 +2,16 @@
   "schemaVersion": "1.0",
   "day": 15,
   "date": "2026-09-12",
-  "city": "Marseille",
-  "title": "마르세유 전일 당일치기 — 구항구·르 파니에·Mucem·노트르담 대성당",
+  "city": "Aix-en-Provence",
+  "title": "Aix 토요 대형시장 · Vieil Aix · 세잔 아틀리에 · Granet",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "dayType": "transfer",
+  "dayType": "city",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
-  "totalDistance": "약 74km · TER 왕복 + 마르세유 시내 대중교통·도보",
-  "fatigue": "4",
+  "totalDistance": "약 5km · 도보",
+  "fatigue": "3",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
     "lat": null,
@@ -21,154 +21,127 @@
   },
   "stops": [
     {
-      "id": "aix-station",
+      "id": "place-richelme-place-des-precheurs",
       "order": 1,
       "start": "08:30",
-      "end": "09:30",
-      "name": "Aix-en-Provence역 출발 ➔ Marseille 이동 (TER)",
-      "category": "transport",
-      "lat": 43.5233,
-      "lng": 5.4467,
-      "summary": "숙소에서 도보 10분 이동 후 08:50 전후 TER 탑승. 생샤를 역 09:30 도착 (36분 소요, 생샤를 역 대계단 파노라마 조망)",
-      "menu": null,
+      "end": "10:00",
+      "name": "Aix 토요시장 — Place Richelme + Places Comtales",
+      "category": "shopping",
+      "lat": 43.5297,
+      "lng": 5.4478,
+      "summary": "Place Richelme의 매일 아침 식품시장부터 보고 Places Comtales·Cours Mirabeau·Forbin의 목요 확장 구역을 선택해 잇는다. Maison Weibel에서 칼리송과 아침 커피를 곁들인다. 토요일은 Place de Verdun까지 서는 주간 최대 규모 장이다.",
+      "menu": "Calisson d'Aix, 크루아상, 카페 오 레",
       "reservation": null,
-      "executionStatuses": [
-        {"type": "check", "label": "CHECK", "detail": "08:50 전후는 운영 목표다. 출발 전 SNCF Connect에서 실제 TER 시각·파행을 확인한다."}
-      ],
+      "executionNote": "Place Richelme 식품시장은 매일 08:00–13:00. Places Comtales 식품시장과 Comtales·Cours Mirabeau·Forbin 직물/공예/브로캉트, Hôtel de Ville 꽃시장은 화·목·토 운영한다.",
       "optional": false,
-      "place_ref": null
+      "place_ref": "place-richelme-place-des-precheurs",
+      "related_place_refs": [
+        "patisserie-weibel"
+      ]
     },
     {
-      "id": "vieux-port-marseille",
+      "id": "vieil-aix",
       "order": 2,
-      "start": "09:45",
-      "end": "10:30",
-      "name": "Vieux-Port (마르세유 구항구)",
-      "category": "sight",
-      "lat": 43.2951,
-      "lng": 5.3744,
-      "summary": "라 카네비에르(La Canebière)를 지나 노먼 포스터의 거울 그늘막(L'Ombrière), Quai de la Fraternité에서 매일 아침 열리는 어시장과 항만 풍경을 본다.",
-      "menu": null,
-      "reservation": null,
-      "executionNote": "어시장은 매일 아침 열리며 07:30–12:30 또는 08:00–13:00로 안내된다. 날씨·계절에 따라 규모가 달라진다.",
-      "optional": false,
-      "place_ref": "vieux-port-marseille"
-    },
-    {
-      "id": "le-panier",
-      "order": 3,
-      "start": "10:30",
+      "start": "10:00",
       "end": "11:45",
-      "name": "Le Panier (르 파니에 역사 골목)",
+      "name": "Vieil Aix 구시가지 & 세잔의 흔적",
       "category": "sight",
-      "lat": 43.2981,
-      "lng": 5.3678,
-      "summary": "마르세유에서 가장 오래된 역사 지구. 생로랑 성당, 비에유 샤리테(Vieille Charité) 외관, 골목 그래피티와 파스텔톤 가옥 (75분 도보)",
-      "menu": "나베트(Navette, 오렌지꽃 향 전통 비스킷)",
+      "lat": 43.5311,
+      "lng": 5.4472,
+      "summary": "17-18세기 귀족 저택(Hôtel Particulier), 생소뵈르 대성당, 네 마리 돌고래 분수, 세잔 탄생지/모교 흔적 도보 (105분)",
+      "menu": null,
       "reservation": null,
       "optional": false,
-      "place_ref": "le-panier"
+      "place_ref": "vieil-aix"
     },
     {
-      "id": "fort-saint-jean",
-      "order": 4,
+      "id": "aix-lunch",
+      "order": 3,
       "start": "12:00",
-      "end": "13:45",
-      "name": "Fort Saint-Jean & Mucem (유럽지중해문명박물관)",
-      "category": "culture",
-      "lat": 43.2969,
-      "lng": 5.3611,
-      "summary": "생장 요새 성벽 정원 ➔ 공중 보행교 ➔ Mucem 격자 건축과 상설·기획전을 잇는다. 토요일 10:00–19:00 운영이며 전시실 마지막 입장은 폐관 45분 전이다.",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {"type": "ticket", "label": "TICKET", "detail": "유료 전시 관람 시 일반 €11·감액 €7.50 입장권을 구매한다."}
-      ],
-      "executionNote": "J4 전시실은 유료, Fort Saint-Jean 정원·야외 공간은 무료다. 9/12 토요일 정상 운영.",
-      "officialUrl": "https://mucem.org/questions-frequentes/",
-      "optional": false,
-      "place_ref": "mucem"
-    },
-    {
-      "id": "marseille-lunch",
-      "order": 5,
-      "start": "13:45",
-      "end": "15:00",
-      "name": "Vieux-Port 마르세유 항구 점심",
+      "end": "13:15",
+      "name": "Vieil Aix 구시가지 점심 식사",
       "category": "food",
-      "lat": 43.2958,
-      "lng": 5.3672,
-      "summary": "구항구 테라스 비스트로에서 신선한 구운 생선(Loup/Daurade) 또는 프로방스식 해산물 점심",
-      "menu": "파니스(Panisse), 정어리 구이, 생선 수프",
-      "reservation": "현장 선택",
+      "lat": 43.5289,
+      "lng": 5.4468,
+      "summary": "구시가지 테라스 비스트로에서 프로방스식 점심 (La Brocherie 또는 Coucou 인근)",
+      "menu": "라타투유, 도브 프로방살, 로제 와인",
+      "reservation": "현장 방문 또는 점심 예약 권장",
       "optional": false,
-      "place_ref": "vieux-port-marseille"
+      "place_ref": "vieil-aix"
     },
     {
-      "id": "notre-dame-de-la-garde",
+      "id": "atelier-des-lauves",
+      "order": 4,
+      "start": "13:30",
+      "end": "15:00",
+      "name": "Atelier des Lauves (세잔의 아틀리에)",
+      "category": "culture",
+      "lat": 43.5392,
+      "lng": 5.4461,
+      "summary": "폴 세잔이 생애 마지막 4년간(1902-1906) 대형 목욕자들과 생트빅투아르산을 그리던 작업실. 정물화 소품, 대형 이젤, 올리브 정원 [Cézanne Core]",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "7/4~9/30 매일 09:00–18:00, 마지막 입장 17:00, 예약 필수 — cezanne-en-provence 공식, 2026-08-28 확인."
+        }
+      ],
+      "executionNote": "7/4–9/30 매일 09:00–18:00, 마지막 방문 17:00. 11:30부터 자율관람 1시간 €9.50, 가이드 1시간 30분 €12.",
+      "officialUrl": "https://www.aix.fr/incontournables/atelier-cezanne",
+      "optional": false,
+      "place_ref": "atelier-des-lauves"
+    },
+    {
+      "id": "musee-granet",
+      "order": 5,
+      "start": "15:30",
+      "end": "17:15",
+      "name": "Musée Granet (그라네 미술관)",
+      "category": "culture",
+      "lat": 43.5258,
+      "lng": 5.4522,
+      "summary": "세잔의 초기작과 유화·수채화 컬렉션, 프랑수아 마리우스 그라네를 105분 compact visit으로 본다. Paul McCartney ‘Eyes of the Storm’ 특별전은 기본 입장권에 포함되며 Granet XXe 별관과 혼동하지 않는다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "TICKET",
+          "detail": "본관 일반 €14·감액 €12 입장권을 온라인 또는 현장에서 구매한다."
+        }
+      ],
+      "executionNote": "7/4–11/1 화–일 10:00–18:00, 매표 17:30 마감. 9/12 토요일 정상 운영.",
+      "officialUrl": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
+      "optional": false,
+      "place_ref": "musee-granet"
+    },
+    {
+      "id": "cours-mirabeau",
       "order": 6,
-      "start": "15:15",
-      "end": "17:00",
-      "name": "Notre-Dame de la Garde (노트르담 드 라 가르드)",
-      "category": "sight",
-      "lat": 43.2842,
-      "lng": 5.3714,
-      "summary": "Vieux-Port에서 RTM 60번으로 이동한다. 당일 교통에 따라 약 15~25분을 잡고, 정상 대성당의 황금 성모상·선원 봉헌화와 마르세유 360도 전경을 본다.",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {"type": "check", "label": "CHECK", "detail": "당일 RTM 60 운행과 정류장을 확인한다."}
-      ],
-      "executionNote": "성당 입장은 무료이며 예약 상태를 사용하지 않는다.",
-      "optional": false,
-      "place_ref": "notre-dame-de-la-garde"
-    },
-    {
-      "id": "vallon-des-auffes",
-      "order": 7,
-      "start": "17:15",
-      "end": "18:15",
-      "name": "Vallon des Auffes & 코르니슈 (선택)",
-      "category": "sight",
-      "lat": 43.2856,
-      "lng": 5.3528,
-      "summary": "다리 아래 전통 목선이 정박한 그림 같은 어촌 포구 산책. 피로 시 생략하고 구항구 카페 휴식",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {"type": "optional", "label": "OPTIONAL", "detail": "피로하거나 TER가 지연되면 가장 먼저 생략한다."}
-      ],
-      "optional": true,
-      "place_ref": null
-    },
-    {
-      "id": "marseille-station",
-      "order": 8,
-      "start": "18:45",
+      "start": "17:30",
       "end": "19:30",
-      "name": "Marseille Saint-Charles역 복귀 ➔ Aix TER 탑승",
-      "category": "transport",
-      "lat": 43.3028,
-      "lng": 5.3806,
-      "summary": "생샤를역 복귀 후 Aix행 TER 열차 탑승 (36분 소요)",
-      "menu": null,
+      "name": "Cours Mirabeau & 마자랭 지구 산책",
+      "category": "sight",
+      "lat": 43.5269,
+      "lng": 5.4486,
+      "summary": "플라타너스 가로수길 카페(Les Deux Garçons 터) 테라스 휴식 및 Quartier Mazarin 분수 산책 후 저녁 식사",
+      "menu": "테라스 와인/맥주, 프로방스 타파스",
       "reservation": null,
-      "executionStatuses": [
-        {"type": "check", "label": "CHECK", "detail": "SNCF Connect에서 Aix행 실제 출발시각과 플랫폼을 확인한다."}
-      ],
       "optional": false,
-      "place_ref": "marseille"
+      "place_ref": "cours-mirabeau"
     },
     {
       "id": "aix-stay-return",
-      "order": 9,
-      "start": "19:45",
+      "order": 7,
+      "start": "19:30",
       "end": "20:30",
-      "name": "Aix 숙소 귀환 & 익일 Luberon 이동 준비",
+      "name": "숙소 귀환 & 휴식",
       "category": "hotel",
       "lat": 43.5283,
       "lng": 5.4497,
-      "summary": "20:15 숙소 귀환. 익일 Day 16 Lourmarin을 거쳐 Gordes 2박 거점으로 이동(08:30~09:00 체크아웃)하기 위한 짐 정리, 주유 및 조기 취침",
+      "summary": "숙소 2 Place Coimbra 귀환 및 휴식",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -177,111 +150,89 @@
   ],
   "legs": [
     {
-      "from": "aix-station",
-      "to": "vieux-port-marseille",
-      "mode": "train",
-      "duration": "TER 36분 + 도보 12분",
-      "distance": "약 32km",
-      "line": "TER Aix-en-Provence Centre ↔ Marseille Saint-Charles",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "vieux-port-marseille",
-      "to": "le-panier",
+      "from": "place-richelme-place-des-precheurs",
+      "to": "vieil-aix",
       "mode": "walk",
-      "duration": "8분",
-      "distance": "0.5km",
+      "duration": "5분",
+      "distance": "0.3km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "le-panier",
-      "to": "fort-saint-jean",
+      "from": "vieil-aix",
+      "to": "aix-lunch",
       "mode": "walk",
-      "duration": "8분",
-      "distance": "0.5km",
+      "duration": "5분",
+      "distance": "0.3km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "fort-saint-jean",
-      "to": "marseille-lunch",
+      "from": "aix-lunch",
+      "to": "atelier-des-lauves",
+      "mode": "walk",
+      "duration": "20분 (오르막)",
+      "distance": "1.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "atelier-des-lauves",
+      "to": "musee-granet",
+      "mode": "walk",
+      "duration": "25분 (내리막)",
+      "distance": "1.6km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "musee-granet",
+      "to": "cours-mirabeau",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "cours-mirabeau",
+      "to": "aix-stay-return",
       "mode": "walk",
       "duration": "10분",
       "distance": "0.6km",
       "line": null,
       "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "marseille-lunch",
-      "to": "notre-dame-de-la-garde",
-      "mode": "bus",
-      "duration": "RTM 버스 60번 약 15분",
-      "distance": "약 2.5km",
-      "line": "RTM 60 Vieux-Port → Notre-Dame de la Garde",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "notre-dame-de-la-garde",
-      "to": "vallon-des-auffes",
-      "mode": "bus",
-      "duration": "버스/도보 약 20분",
-      "distance": "약 2.0km",
-      "line": "RTM bus Notre-Dame de la Garde → Vallon des Auffes · 당일 경로 확인",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "vallon-des-auffes",
-      "to": "marseille-station",
-      "mode": "bus",
-      "duration": "버스 83번 + 지하철 M1 약 25분",
-      "distance": "약 3.8km",
-      "line": "RTM 83 + Metro M1 → Marseille Saint-Charles",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "marseille-station",
-      "to": "aix-stay-return",
-      "mode": "train",
-      "duration": "TER 36분 + 도보 10분",
-      "distance": "약 32km",
-      "line": "TER Marseille Saint-Charles → Aix-en-Provence Centre",
-      "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "TER 기차 왕복 (Aix-en-Provence ↔ Marseille Saint-Charles, 36~45분)",
-    "RTM 버스 60번 (Vieux-Port ↔ Notre-Dame de la Garde 직통)",
-    "마르세유 시내 도보 (Vieux-Port ➔ Le Panier ➔ Fort Saint-Jean ➔ Mucem)"
+    "Aix 시내 도보 (구시가지 및 북부 아틀리에 도보권)"
   ],
   "food": [
-    "Vieux-Port에서 생선·해산물 점심",
-    "Aix 귀환 후 숙소권에서 가벼운 저녁"
+    "시장 조달·카페 Weibel",
+    "19:30 Coucou 또는 La Brocherie"
   ],
   "highlights": [
-    "08:50 전후 Aix Centre발 TER",
-    "Vieux-Port·Le Panier·Mucem 도보축",
-    "RTM 60번으로 Notre-Dame de la Garde"
+    "Richelme 매일시장과 목요 확장 구역을 구분",
+    "Atelier 예약 slot이 생기면 그 시각을 fixed anchor로 사용",
+    "Granet은 15:30–17:15 유지, 지연 시 60~75분으로 압축"
   ],
-  "backup": "1. 우천 시: Vieux-Port/Le Panier 도보를 단축하고 Mucem 상설/특별전 관람을 2.5시간으로 확대\n2. 폭염 시: 야외 보행을 줄이고 점심 후 RTM 버스 60번으로 노트르담 대성당 이동\n3. TER 지연/파행 시: Aix ↔ Marseille L50 직행 버스 코치(Gare Routière) 백업 활용\n4. 피로 시: Vallon des Auffes를 생략하고 Vieux-Port 카페 휴식 후 18:00 조기 귀환",
+  "backup": "1. Atelier 예약 완료 후 해당 slot을 fixed anchor로 삼고 오전 지연 시 Vieil Aix를 압축한다.\n2. 오후가 늦으면 Granet을 삭제하지 않고 60~75분으로 압축한다.\n3. 우천 시 Atelier와 Granet을 우선하고 Cours Mirabeau 야외 산책을 줄인다.",
   "map": {
-    "zoom": 13,
+    "zoom": 15,
     "center": [
-      43.2965,
-      5.3698
+      43.5273,
+      5.4465
     ],
     "routeCache": null
   },
   "needsReview": [
-    "CHECK — Aix Centre ↔ Marseille Saint-Charles TER 실제 시간표·파행",
-    "CHECK — RTM 60 당일 운행",
-    "익일 Day 16 뤼베롱 이동 준비 (08:00 체크아웃)"
+    "BOOK — Atelier des Lauves 9/12 방문 slot 예약 및 Timeline 동기화"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-15",
     "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-15",
     "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-15",
     "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Place d'Albertas"
+    "OSM Nominatim 지오코딩 2026-08-06: Place des Prêcheurs·Place Richelme·Rue Cardinale"
   ]
 }

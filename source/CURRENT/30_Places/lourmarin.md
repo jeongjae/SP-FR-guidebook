@@ -13,15 +13,15 @@ source: source/CURRENT/30_Places/lourmarin.md
 
 ## 현장 실행
 
-- **MUST · Day 16 · 1.5–2시간**
+- **MUST · Day 17 · 1.5–2시간**
 - **WHY GO**: 언덕마을과 다른 평탄하고 우아한 생활감, Château de Lourmarin, Camus와 Henri Bosco의 흔적을 점심과 산책으로 경험한다.
 - **DO THIS**: Parking du Rayol → Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Protestant Temple → 카페·갤러리.
-- **EAT / DRINK**: La Récréation(15 rue Philippe de Girard) 우선. 2026 연중 등록·성수기 7일 운영, 점심 12:00–14:00, à la carte €22–26, 성인 메뉴 €37.50–38.50, plat du jour €22다. 9/13 12:15 실제 좌석은 ACTION REQUIRED. 안 되면 같은 시간창에 마을 카페·브라시리를 이용하고 일정을 우회하지 않는다.
+- **EAT / DRINK**: La Récréation(15 rue Philippe de Girard) 우선. 2026 연중 등록·성수기 7일 운영, 점심 12:00–14:00, à la carte €22–26, 성인 메뉴 €37.50–38.50, plat du jour €22다. 9/14 12:15 실제 좌석은 ACTION REQUIRED. 안 되면 같은 시간창에 마을 카페·브라시리를 이용하고 일정을 우회하지 않는다.
 - **IF LATE**: Château 내부관람을 빼고 마을+점심을 유지한다. Lourmarin 자체는 생략하지 않는다.
 
 ### Trip Layer
 
-Day 16의 첫 MUST다. 10:00 전후 도착해 12:15까지 걷고 13:30까지 점심을 마친 뒤, Optional 마을 수를 결정한다.
+Day 17(9/14 월)의 첫 MUST다. 10:00 전후 도착해 12:15까지 걷고 13:30까지 점심을 마친 뒤 Lacoste 성 관람(13:00–17:00 확인)으로 이동한다.
 
 ## 왜 가는가
 

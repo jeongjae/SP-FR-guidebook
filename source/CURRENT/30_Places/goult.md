@@ -13,11 +13,11 @@ source: source/CURRENT/30_Places/goult.md
 
 ## 현장 실행
 
-- **OPTIONAL 2 · Day 17 · 45–60분**
+- **OPTIONAL 2 · Day 18 · 45–60분**
 - **WHY GO**: Gordes–Roussillon–Ménerbes 사이에서 조용한 생활형 골목과 Moulin de Jérusalem을 짧게 걷는다.
 - **DO THIS**: 중심부 → Rue de la République → 상부 골목 → Moulin de Jérusalem → 전망 → 원점 회귀.
 - **EAT / DRINK**: coffee·bakery·quick snack만. 긴 식사는 넣지 않는다.
-- **IF LATE**: Day 17에서 가장 먼저 생략한다.
+- **IF LATE**: Day 18에서 가장 먼저 생략한다.
 
 ### Trip Layer
 

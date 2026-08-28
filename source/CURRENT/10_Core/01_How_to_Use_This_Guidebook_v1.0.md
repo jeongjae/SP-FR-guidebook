@@ -83,7 +83,7 @@ French Riviera
 Nice의 생활해안 → Cannes의 리조트 → Monaco의 도시국가
 
 Provence
-Aix의 시장도시 → Gordes를 거점으로 한 Luberon 석조마을 → Avignon의 권력도시와 로마유산
+Verdon 협곡의 1박 → Aix의 시장도시 → Gordes를 거점으로 한 Luberon 석조마을 → Avignon의 권력도시와 로마유산
 
 Rhône·Alps
 Lyon의 두 강과 미식 → Annecy의 알프스 호수

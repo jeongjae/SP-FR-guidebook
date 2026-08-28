@@ -24,8 +24,7 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에
 
 | 날짜 | 핵심 일정 |
 |---|---|
-| 9/15 화 | L'Isle-sur-la-Sorgue · Avignon 체크인 · 생활권 정리 |
-| 9/16 수 | Saint-Rémy 수요시장 · Les Baux · [Orange Bonus] |
+| 9/16 수 | Gordes 체크아웃 · Saint-Rémy 수요시장 · Les Baux · Avignon 체크인 · 생활권 정리 |
 | 9/17 목 | Uzès · Pont du Gard · Nîmes · 렌터카 반납 |
 | 9/18 금 | Arles 당일치기 (TER 이동) |
 | 9/19 토 | Les Halles · Palais des Papes · Rocher des Doms · Pont Saint-Bénézet |
@@ -35,9 +34,9 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에
 
 ## 숙소와 생활권
 
-Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 Alpilles와 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
+Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 도착일(Alpilles 경유)과 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
 
-아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 5박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
+아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 4박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
 
 #### 아침 운동
 
@@ -82,7 +81,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ### 시장과 장보기
 
-- **Saint-Rémy 수요시장** — Day 19 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
+- **Saint-Rémy 수요시장** — Day 19(도착일) 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
 - **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
@@ -96,6 +95,6 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 #### 식사 원칙
 
-Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 시간을 쓴다. Orange를 실행하더라도 식사를 추가하지 않는다. 그 밖의 아침은 Les Halles 시장 식재료나 로컬 카페를 활용한다.
+Day 19 점심은 Saint-Rémy에 두고 Les Baux에서는 마을·성·전망에 시간을 쓴다. Orange는 일정에서 제외됐다. 그 밖의 아침은 Les Halles 시장 식재료나 로컬 카페를 활용한다.
 
 ---

@@ -13,11 +13,11 @@ source: source/CURRENT/30_Places/lacoste.md
 
 ## 현장 실행
 
-- **OPTIONAL · Day 16 · 45–60분**
+- **RECOMMENDED · Day 17 · 60–75분**
 - **WHY GO**: Bonnieux와 한 쌍으로 보는 석조마을로, 좁은 돌길·아치·옛 성문과 상부 Château 전망을 짧게 경험한다.
 - **DO THIS**: 하부 주차 → Rue Basse → Beffroi/Campanile → Portail de la Garde → Château 방향까지 상승 → 전망 → 하산.
 - **EAT / DRINK**: 물·커피 stop만. 긴 식사는 넣지 않는다.
-- **IF LATE**: Day 16에서 가장 먼저 생략한다.
+- **IF LATE**: Bonnieux를 먼저 빼고, 그래도 늦으면 관람을 마을 상부 전망으로 줄인다.
 
 ### Trip Layer
 

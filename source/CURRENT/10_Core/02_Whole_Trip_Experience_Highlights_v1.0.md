@@ -18,15 +18,16 @@ status: "전 지역 편집자 추천 요약"
 | 5 | Calella de Palafrugell의 작은 만에서 쉬기 | Costa Brava | 장거리 일정의 해안 완충 |
 | 6 | Cours Saleya 시장과 Nice 구시가지 | Nice | 프랑스 첫 생활도시 경험 |
 | 7 | Cannes·Monaco의 도시성 비교 | Côte d’Azur | 리조트도시와 도시국가의 대비 |
-| 8 | Aix 시장재료로 숙소 점심 만들기 | Aix | 프로방스 생활리듬 시작 |
-| 9 | Marseille의 Vieux-Port·Le Panier·Mucem | Provence coast | 내륙 생활도시와 지중해 항구대도시의 대비 |
-| 10 | Gordes의 돌빛과 관광객이 줄어든 저녁 | Luberon | 2박 거점의 장점을 살리는 경험 |
-| 11 | Roussillon 오커와 Gordes 석조마을 | Luberon | 지질과 건축의 관계 |
-| 12 | Palais des Papes·Pont du Gard·Arles | Avignon region | 중세권력, 로마공학과 실제 도시생활의 대비 |
-| 13 | Fourvière에서 두 강의 도시 읽기 | Lyon | 도시지형을 한눈에 이해 |
-| 14 | Annecy 구시가지에서 호수로 걸어나가기 | Annecy | 도시와 알프스 자연의 전환 |
-| 15 | 파리에서 같은 시장·빵집 반복 이용 | Paris | ‘한 달 살기 축소판’의 핵심 |
-| 16 | 미술관·공연·축구 중 그날 하나만 선택 | Paris | 문화도시를 피로 없이 경험 |
+| 8 | Verdon 협곡 능선과 Moustiers의 저녁 절벽마을 | Verdon | 코트다쥐르에서 내륙으로 넘어가는 하루의 자연 정점 |
+| 9 | Aix 시장재료로 숙소 점심 만들기 | Aix | 프로방스 생활리듬 시작 |
+| 10 | Marseille의 Vieux-Port·Le Panier·Mucem | Provence coast | 내륙 생활도시와 지중해 항구대도시의 대비 |
+| 11 | Gordes의 돌빛과 관광객이 줄어든 저녁 | Luberon | 2박 거점의 장점을 살리는 경험 |
+| 12 | Roussillon 오커와 Gordes 석조마을 | Luberon | 지질과 건축의 관계 |
+| 13 | Palais des Papes·Pont du Gard·Arles | Avignon region | 중세권력, 로마공학과 실제 도시생활의 대비 |
+| 14 | Fourvière에서 두 강의 도시 읽기 | Lyon | 도시지형을 한눈에 이해 |
+| 15 | Annecy 구시가지에서 호수로 걸어나가기 | Annecy | 도시와 알프스 자연의 전환 |
+| 16 | 파리에서 같은 시장·빵집 반복 이용 | Paris | ‘한 달 살기 축소판’의 핵심 |
+| 17 | 미술관·공연·축구 중 그날 하나만 선택 | Paris | 문화도시를 피로 없이 경험 |
 
 ## 2. 지역별 대표 한 끼
 

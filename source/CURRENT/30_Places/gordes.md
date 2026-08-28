@@ -13,7 +13,7 @@ source: source/CURRENT/30_Places/gordes.md
 
 ## 현장 실행
 
-- **MUST · Day 16–18 숙박거점 · 첫날 1–1.5시간**
+- **MUST · Day 17–19 숙박거점 · 첫날 1–1.5시간**
 - **WHY GO**: Luberon의 상징적인 석조마을을 2박하며 아침·저녁 관광객이 줄어든 시간에 경험한다.
 - **DO THIS**: D15/Cavaillon 방향 panoramic viewpoint → 체크인 → Place Genty Pantaly·Château → Église Saint-Firmin → 아래쪽 calade 골목 → 전망 테라스.
 - **EAT / DRINK**: 첫날 저녁 La Bastide de Pierres 우선, 조용한 계절식은 Le Mas Gordes 대안. 실제 좌석과 차량 접근을 확인한다.
@@ -21,7 +21,7 @@ source: source/CURRENT/30_Places/gordes.md
 
 ### Trip Layer
 
-9/13 체크인, 9/15 체크아웃의 2박 정본이다. 화요일 08:00–13:00 시장은 이동일과 충돌하므로 참고 정보일 뿐 Day 18 MUST가 아니다.
+9/14 체크인, 9/16 체크아웃의 2박 정본이다(숙소 미정 — 현지 결정). 화요일 08:00–13:00 시장은 Day 18(9/15 화) 아침과 겹친다 — 2박 중 유일한 장날이므로 Day 18 오전 MUST로 본다.
 
 ## 왜 가는가
 

@@ -13,15 +13,15 @@ source: source/CURRENT/30_Places/menerbes.md
 
 ## 현장 실행
 
-- **OPTIONAL 1 · Day 17 · 60–90분+점심**
+- **OPTIONAL 1 · Day 18 · 60–90분+점심**
 - **WHY GO**: 긴 능선 위의 전망, 와인·트러플과 예술가의 흔적을 느리게 경험한다.
 - **DO THIS**: 마을 입구 주차 → Place de l’Horloge → Beffroi → 석조주택과 좁은 거리 → 교회·성채 외관 → 전망.
-- **EAT / DRINK**: Bistrot Le 5(5 place Albert Roure)는 공식 사이트상 월요일 휴무다(2026-08-25 확인). Day 17 점심으로 의존하지 않는다. Fallback은 Roussillon 점심, Ménerbes 카페·불랑제리 간단식, 우회 없이 Gordes 방향 복귀 순이다.
+- **EAT / DRINK**: Bistrot Le 5(5 place Albert Roure)는 공식 사이트상 월요일 휴무다(2026-08-25 확인). Day 18 점심으로 의존하지 않는다. Fallback은 Roussillon 점심, Ménerbes 카페·불랑제리 간단식, 우회 없이 Gordes 방향 복귀 순이다.
 - **IF LATE**: Goult를 먼저 빼고, 그래도 늦으면 Ménerbes 체류를 줄이거나 생략한다.
 
 ### Trip Layer
 
-Day 17 Optional 중 Goult보다 우선한다. 점심을 붙일 수 있을 때 단순 사진 stop보다 가치가 높다.
+Day 18 Optional 중 Goult보다 우선한다. 점심을 붙일 수 있을 때 단순 사진 stop보다 가치가 높다.
 
 ## 왜 가는가
 

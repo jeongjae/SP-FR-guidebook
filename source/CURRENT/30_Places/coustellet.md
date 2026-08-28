@@ -7,7 +7,7 @@ kind: spot
 grade: "선택"
 priority: "OPTIONAL"
 content_tier: "UTILITY"
-summary: "뤼베롱 현지 농부들이 직접 재배하고 만든 신선 농산물과 특산품을 판매하는 생산자 직거래 일요 시장. 이번 Day 16–18 일정에는 넣지 않은 지역 참고 Place다."
+summary: "뤼베롱 현지 농부들이 직접 재배하고 만든 신선 농산물과 특산품을 판매하는 생산자 직거래 일요 시장. 이번 Day 17–18 일정에는 넣지 않은 지역 참고 Place다."
 source: source/CURRENT/30_Places/coustellet.md
 ---
 
