@@ -13818,6 +13818,320 @@
         ]
       },
       "status": "processed"
+    },
+    {
+      "imageId": "verdon-moustiers-01",
+      "placeId": "moustiers-sainte-marie",
+      "region": "verdon",
+      "creator": "Rosanna Delpiano",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/1/14/Moustiers_Sainte_Marie_Village.jpg",
+      "originalWidth": 5184,
+      "originalHeight": 3456,
+      "altKo": "석회암 절벽 사이에 계단식으로 들어앉은 무스티에생트마리 마을 전경",
+      "captionKo": "절벽 틈의 파이앙스 마을 — Verdon 1박의 숙박거점이다.",
+      "titleKo": "무스티에생트마리",
+      "title": "Moustiers Sainte Marie Village.jpg",
+      "description": "파일 설명이 'La ville de Moustiers Sainte Marie au mois d'août 2020' — 명부의 그 마을이다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Moustiers_Sainte_Marie_Village.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-28",
+      "originalPath": "source/ASSETS/photos/originals/verdon-moustiers-01.jpg",
+      "originalSha256": "1e75d35f5e5b5acdaada779f0fd5077ba4744493f10953fb67f22db3c8a3dafd",
+      "originalBytes": 1812181,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": true,
+      "role": "hero",
+      "usage": [
+        "guide/verdon.html",
+        "places/moustiers-sainte-marie.html",
+        "daily/day-12.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 2667,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/verdon-moustiers-01-content-1280.webp",
+            "sitePath": "assets/images/content/verdon-moustiers-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 169850,
+            "sha256": "d2a6e940e3a673d4f00db55b389badee437fd30a7e252edc6fb8dce3f411f741",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/verdon-moustiers-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/verdon-moustiers-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 26724,
+            "sha256": "04a407b6ef40f2a6f99a3954be9dddc1ed4a0eff964c9e7c0a306a3cddb2459a",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "verdon-point-sublime-01",
+      "placeId": "point-sublime",
+      "region": "verdon",
+      "creator": "Petr1888",
+      "license": "CC BY-SA 4.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/02/Point_Sublime_%28Verdon%29_03.JPG",
+      "originalWidth": 3504,
+      "originalHeight": 2336,
+      "altKo": "푸앵 쉬블림 전망대에서 내려다본 베르동 협곡 하류와 쿨루아 삼송 입구",
+      "captionKo": "주차 후 도보 10분 — 협곡 하류의 규모를 가장 적은 수고로 확인하는 전망대다.",
+      "titleKo": "푸앵 쉬블림",
+      "title": "Point Sublime (Verdon) 03.JPG",
+      "description": "촬영 좌표 43°47'32.62\"N 6°23'57.75\"E — Point Sublime 전망대 지점과 일치한다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Point_Sublime_(Verdon)_03.JPG",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-28",
+      "originalPath": "source/ASSETS/photos/originals/verdon-point-sublime-01.jpg",
+      "originalSha256": "2deae07fcad0a81402d2c1f4a30d7bebcae2ec405e2df62a6b92240401ddf73c",
+      "originalBytes": 4610163,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "places/point-sublime.html",
+        "daily/day-12.html"
+      ],
+      "selectionScore": 90,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/verdon-point-sublime-01-content-1280.webp",
+            "sitePath": "assets/images/content/verdon-point-sublime-01-content-1280.webp",
+            "width": 1280,
+            "height": 853,
+            "bytes": 181706,
+            "sha256": "53e243c17229630b8cea4d72fa74e935e52e0f3c91035800f979100eaa2ddd86",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/verdon-point-sublime-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/verdon-point-sublime-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 24624,
+            "sha256": "3eb4fc26356a6503ab876daf75b0d9674190bb6f9be466585ce4f641fba022f2",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "verdon-route-des-cretes-01",
+      "placeId": "route-des-cretes",
+      "region": "verdon",
+      "creator": "Tobi 87",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Falaise_de_l%27Escal%C3%A8s-Route_des_Cr%C3%AAtes-Gorges_du_Verdon.jpg",
+      "originalWidth": 9284,
+      "originalHeight": 4264,
+      "altKo": "루트 데 크레트 전망대에서 본 레스칼레스 절벽과 베르동 협곡",
+      "captionKo": "약 400m 수직 절벽 l'Escalès — 24km 능선 순환도로의 대표 장면이다.",
+      "titleKo": "루트 데 크레트",
+      "title": "Falaise de l'Escalès-Route des Crêtes-Gorges du Verdon.jpg",
+      "description": "파일 설명이 'viewpoint Falaise de l'Escalès of the Verdon Gorge' — 본문이 서술하는 그 절벽이다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Falaise_de_l'Escalès-Route_des_Crêtes-Gorges_du_Verdon.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-28",
+      "originalPath": "source/ASSETS/photos/originals/verdon-route-des-cretes-01.jpg",
+      "originalSha256": "9be79247dd555aef1f1fca0f6b600c7e1e331db4915a9bbaada0ec9c9c8df1e1",
+      "originalBytes": 2797120,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "places/route-des-cretes.html",
+        "daily/day-13.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 1837,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/verdon-route-des-cretes-01-content-1280.webp",
+            "sitePath": "assets/images/content/verdon-route-des-cretes-01-content-1280.webp",
+            "width": 1280,
+            "height": 588,
+            "bytes": 200886,
+            "sha256": "66086acf576941d28b4a6cf985f3ae7ac029a76e2b060dd091512f58255833b3",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/verdon-route-des-cretes-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/verdon-route-des-cretes-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 36222,
+            "sha256": "8017137728422beff9ed8299893a9062a99f11db13605d00c674a694652068a5",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "verdon-lac-de-sainte-croix-01",
+      "placeId": "lac-de-sainte-croix",
+      "region": "verdon",
+      "creator": "Benh LIEU SONG",
+      "license": "CC BY-SA 3.0",
+      "licenseCode": "cc-by-sa",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Gorges_Verdon_Barrage_Sainte_Croix.jpg",
+      "originalWidth": 4026,
+      "originalHeight": 3468,
+      "altKo": "갈레타스 다리에서 본 베르동 협곡 입구와 생트크루아 호수의 청록색 수면",
+      "captionKo": "협곡이 호수로 풀려나는 지점 — Pont du Galetas의 대표 조망이다.",
+      "titleKo": "생트크루아 호수",
+      "title": "Gorges Verdon Barrage Sainte Croix.jpg",
+      "description": "파일 설명이 'Entrance of the Verdon Canyon, seen from Bridge of Galetas' — 명부의 조망 지점 그대로다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gorges_Verdon_Barrage_Sainte_Croix.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-28",
+      "originalPath": "source/ASSETS/photos/originals/verdon-lac-de-sainte-croix-01.jpg",
+      "originalSha256": "7deb9f4be418ca110ca96904b337d05a2693de331480871fdeac7f99f5f41b14",
+      "originalBytes": 4102218,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "places/lac-de-sainte-croix.html",
+        "daily/day-13.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 3446,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/verdon-lac-de-sainte-croix-01-content-1280.webp",
+            "sitePath": "assets/images/content/verdon-lac-de-sainte-croix-01-content-1280.webp",
+            "width": 1280,
+            "height": 1103,
+            "bytes": 249380,
+            "sha256": "71399fe4321b9d74a73b3a321724e15421148e7fc959f8b4a9d66eb1b26dfed4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/verdon-lac-de-sainte-croix-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/verdon-lac-de-sainte-croix-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 31548,
+            "sha256": "641db44f08da4553bcbbc8277a42d79f520c580bad2b7e02f0c29bb7ef38474a",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
+    },
+    {
+      "imageId": "verdon-valensole-01",
+      "placeId": "plateau-de-valensole",
+      "region": "verdon",
+      "creator": "Wisi eu",
+      "license": "CC0",
+      "licenseCode": "cc0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/8/84/Coucher-de-soleil-plateau-Valensole-Provence-France.jpg",
+      "originalWidth": 4032,
+      "originalHeight": 2268,
+      "altKo": "발랑솔 고원 라벤더 밭의 석양 — 개화기(6~7월)의 모습",
+      "captionKo": "개화는 6월 중순~7월 중순 — 9월의 고원은 수확 후의 밭과 지평선이다.",
+      "titleKo": "발랑솔 고원",
+      "title": "Coucher-de-soleil-plateau-Valensole-Provence-France.jpg",
+      "description": "파일 설명이 'Coucher de soleil sur un champ de lavande, commune de Valensole' — 명부의 그 고원이다",
+      "source": "Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Coucher-de-soleil-plateau-Valensole-Provence-France.jpg",
+      "changes": "EXIF orientation corrected; resized and converted to WebP; metadata removed",
+      "downloadDate": "2026-08-28",
+      "originalPath": "source/ASSETS/photos/originals/verdon-valensole-01.jpg",
+      "originalSha256": "6ffe8f507ebe0416b9719d615dc4697708ba519677e294de02b1c44ac5daaf56",
+      "originalBytes": 1192835,
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "regionHero": false,
+      "role": "major",
+      "usage": [
+        "places/plateau-de-valensole.html",
+        "daily/day-13.html"
+      ],
+      "selectionScore": 90,
+      "storedWidth": 4000,
+      "storedHeight": 2250,
+      "variants": {
+        "hero": [],
+        "content": [
+          {
+            "path": "source/ASSETS/photos/processed/content/verdon-valensole-01-content-1280.webp",
+            "sitePath": "assets/images/content/verdon-valensole-01-content-1280.webp",
+            "width": 1280,
+            "height": 720,
+            "bytes": 75630,
+            "sha256": "c7b49e893ac2052796f27669320918edd636e27aabb4cb47061d788c5c72e4d4",
+            "quality": 78
+          }
+        ],
+        "thumbnail": [
+          {
+            "path": "source/ASSETS/photos/processed/thumbnails/verdon-valensole-01-thumb-480.webp",
+            "sitePath": "assets/images/thumbnails/verdon-valensole-01-thumb-480.webp",
+            "width": 480,
+            "height": 320,
+            "bytes": 11238,
+            "sha256": "ee48932958ba5da55dbab0e98320695575fe1132c0351576821f8518cc983fac",
+            "quality": 73
+          }
+        ]
+      },
+      "status": "processed"
     }
   ],
   "processedAt": "2026-08-05"
