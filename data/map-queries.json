@@ -1823,20 +1823,20 @@
       "verifiedAt": "2026-08-22"
     },
     "day-41:trocadero-sunset": {
-      "title": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
-      "origin": "Place du Trocadéro, Paris",
-      "destination": "Tour Eiffel, Paris",
+      "title": "MAM ➔ Place du Trocadéro (에펠탑 고별 일몰)",
+      "origin": "Musée d'Art Moderne de Paris, 11 Avenue du Président Wilson, 75116 Paris",
+      "destination": "Place du Trocadéro, 75116 Paris",
       "travelMode": "walking",
-      "evidence": "Walk from Trocadéro across Pont d'Iéna to Eiffel Tower",
-      "verifiedAt": "2026-08-22"
+      "evidence": "Walk along Avenue du President Wilson to Trocadero esplanade",
+      "verifiedAt": "2026-08-28"
     },
     "day-42:cdg-transfer": {
-      "title": "15구 숙소 ➔ CDG 공항 터미널 1 이동",
+      "title": "78 Rue de Lourmel ➔ CDG 공항 터미널 1 (택시 정액제)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
       "destination": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
       "travelMode": "driving",
-      "evidence": "Paris taxi flat fare from Left Bank to CDG Terminal 1",
-      "verifiedAt": "2026-08-23"
+      "evidence": "Official Paris Rive Gauche to CDG fixed fare taxi €65.00 transfer",
+      "verifiedAt": "2026-08-28"
     },
     "day-24:lyon-bouchon-dinner": {
       "title": "손강변 ➔ Daniel et Denise Créqui 부숑 이동",
@@ -2380,6 +2380,142 @@
       "destination": "78 Rue de Lourmel, 75015 Paris",
       "travelMode": "transit",
       "evidence": "Metro 8 (Chemin Vert ➔ Lourmel) direct train home",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-40:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Bourse de Commerce 출발",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Bourse de Commerce, 2 Rue de Viarmes, 75001 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 + 1 to Louvre - Rivoli / Bourse de Commerce",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-40:bourse-de-commerce": {
+      "title": "Louvre - Rivoli ➔ Bourse de Commerce (정문)",
+      "origin": "Louvre - Rivoli, 75001 Paris",
+      "destination": "Bourse de Commerce, 2 Rue de Viarmes, 75001 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Bourse de Commerce Pinault Collection entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-40:halles-lunch": {
+      "title": "Bourse de Commerce ➔ Aux Crus de Bourgogne 점심",
+      "origin": "Bourse de Commerce, 2 Rue de Viarmes, 75001 Paris",
+      "destination": "Aux Crus de Bourgogne, 3 Rue Bachaumont, 75002 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Rue Montorgueil area to Rue Bachaumont bistro",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-40:vendanges-montmartre": {
+      "title": "Étienne Marcel ➔ Clos Montmartre & 몽마르트르",
+      "origin": "Étienne Marcel, 75002 Paris",
+      "destination": "Clos Montmartre, Rue des Saules, 75018 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 4 + 12 to Lamarck - Caulaincourt for Montmartre hill walk",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-40:le-progres-dinner": {
+      "title": "Sacré-Cœur ➔ Le Progrès 저녁 (Abbesses)",
+      "origin": "Basilique du Sacré-Cœur, 35 Rue du Chevalier de la Barre, 75018 Paris",
+      "destination": "Le Progrès, 7 Rue des Trois Frères, 75018 Paris",
+      "travelMode": "walking",
+      "evidence": "Downhill walk from Sacre-Coeur to Le Progres bistro near Abbesses",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-40:paris-return": {
+      "title": "Le Progrès ➔ 78 Rue de Lourmel (15구)",
+      "origin": "Le Progrès, 7 Rue des Trois Frères, 75018 Paris",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 12 + 8 (Abbesses/Concorde ➔ Lourmel) return home",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-41:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Musée Guimet 출발",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée Guimet, 6 Place d'Iéna, 75116 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 9 to Iéna station for Musée Guimet entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-41:musee-guimet": {
+      "title": "Iéna ➔ Musée Guimet (정문)",
+      "origin": "Iéna, 75116 Paris",
+      "destination": "Musée Guimet, 6 Place d'Iéna, 75116 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Musée Guimet main entrance on Place d'Iéna",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-41:iena-lunch": {
+      "title": "Musée Guimet ➔ Les Marches 점심",
+      "origin": "Musée Guimet, 6 Place d'Iéna, 75116 Paris",
+      "destination": "Les Marches, 5 Rue de la Manutention, 75116 Paris",
+      "travelMode": "walking",
+      "evidence": "Short walk to Les Marches bistro near Palais de Tokyo",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-41:musee-art-moderne": {
+      "title": "Les Marches ➔ Musée d'Art Moderne de Paris (MAM)",
+      "origin": "Les Marches, 5 Rue de la Manutention, 75116 Paris",
+      "destination": "Musée d'Art Moderne de Paris, 11 Avenue du Président Wilson, 75116 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to MAM Paris east wing entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-41:farewell-dinner": {
+      "title": "Place du Trocadéro ➔ Le Grand Pan 고별 만찬 (15구)",
+      "origin": "Place du Trocadéro, 75116 Paris",
+      "destination": "Le Grand Pan, 20 Rue Rosenwald, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 6 + 12 to Convention for farewell charcoal dinner",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-42:paris-packing-checkout": {
+      "title": "78 Rue de Lourmel (체크아웃 11:00)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Final apartment packing, trash recycling and checkout",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-42:farewell-lunch": {
+      "title": "78 Rue de Lourmel ➔ Café du Commerce 마지막 점심",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Le Café du Commerce, 51 Rue du Commerce, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to farewell lunch at neighborhood brasserie",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-42:cdg-departure": {
+      "title": "CDG Terminal 1 (PABLO 택스리펀 & OZ502 탑승)",
+      "origin": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
+      "destination": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
+      "travelMode": "walking",
+      "evidence": "Terminal 1 PABLO barcode scan and Asiana OZ502 check-in",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-43:inflight": {
+      "title": "OZ502 (기내 취침 & 시차 적응)",
+      "origin": "Aéroport Paris-Charles de Gaulle Terminal 1, 95700 Roissy-en-France",
+      "destination": "Incheon International Airport, 272 Gonghang-ro, Jung-gu, Incheon",
+      "travelMode": "transit",
+      "evidence": "Asiana OZ502 flight CDG ➔ ICN",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-43:icn": {
+      "title": "인천국제공항 제1여객터미널 도착 (ICN)",
+      "origin": "Incheon International Airport Terminal 1, 272 Gonghang-ro, Jung-gu, Incheon",
+      "destination": "Incheon International Airport Terminal 1, 272 Gonghang-ro, Jung-gu, Incheon",
+      "travelMode": "walking",
+      "evidence": "ICN Terminal 1 arrival, immigration, baggage claim and customs",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-43:home": {
+      "title": "인천국제공항 ➔ 자택 귀환 (대여정 완결)",
+      "origin": "Incheon International Airport Terminal 1, 272 Gonghang-ro, Jung-gu, Incheon",
+      "destination": "Seoul, South Korea",
+      "travelMode": "transit",
+      "evidence": "Airport railroad express (AREX) or limousine bus to home",
       "verifiedAt": "2026-08-28"
     }
   },
