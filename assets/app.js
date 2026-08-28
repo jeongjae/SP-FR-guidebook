@@ -801,4 +801,219 @@
     // Apply initial filter on load
     applyFrenchFilter();
   }
+
+  // 4. Paris Museum Booking Interactive State (prepare/paris-museums.html)
+  var PARIS_MUSEUM_STORAGE_KEY = 'spfr_paris_museum_booking_state';
+
+  function getParisMuseumState() {
+    try {
+      var raw = localStorage.getItem(PARIS_MUSEUM_STORAGE_KEY);
+      if (!raw) return {};
+      var parsed = JSON.parse(raw);
+      return (typeof parsed === 'object' && parsed !== null && !Array.isArray(parsed)) ? parsed : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveParisMuseumState(state) {
+    try {
+      localStorage.setItem(PARIS_MUSEUM_STORAGE_KEY, JSON.stringify(state));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function renderParisMuseumUI() {
+    var cards = document.querySelectorAll('.paris-museum-card');
+    if (!cards.length) return;
+
+    var state = getParisMuseumState();
+    var counts = {
+      'book-now': 0,
+      'check-sale': 0,
+      'book-later': 0,
+      'recheck': 0,
+      'booked': 0,
+      'no-reservation': 0,
+      'total': cards.length
+    };
+
+    cards.forEach(function (card) {
+      var id = card.getAttribute('data-museum-id');
+      var canonical = card.getAttribute('data-canonical-status');
+      var local = state[id];
+
+      var effective = canonical;
+      if (local === 'booked') {
+        effective = 'booked';
+      } else if (local === 'recheck') {
+        effective = 'recheck';
+      }
+
+      card.setAttribute('data-effective-status', effective);
+      card.classList.remove('is-booked', 'is-recheck');
+      if (effective === 'booked') card.classList.add('is-booked');
+      if (effective === 'recheck') card.classList.add('is-recheck');
+
+      if (counts[effective] !== undefined) {
+        counts[effective]++;
+      }
+
+      // Badge update
+      var badgeContainer = card.querySelector('.status-badge-container');
+      if (badgeContainer) {
+        if (effective === 'booked') {
+          badgeContainer.innerHTML = '<span class="badge badge-ok">✓ 예약 완료</span>';
+        } else if (effective === 'recheck') {
+          badgeContainer.innerHTML = '<span class="badge badge-caution">재확인 필요</span>';
+        } else if (canonical === 'book-now') {
+          badgeContainer.innerHTML = '<span class="badge badge-must">1차 · 지금</span>';
+        } else if (canonical === 'check-sale') {
+          badgeContainer.innerHTML = '<span class="badge badge-caution">2차 · 9월 초</span>';
+        } else if (canonical === 'book-later') {
+          badgeContainer.innerHTML = '<span class="badge badge-neutral">3차 · 직전</span>';
+        } else if (canonical === 'no-reservation') {
+          badgeContainer.innerHTML = '<span class="badge badge-ok">예약 불필요</span>';
+        }
+      }
+
+      // Book Toggle Button
+      var bookBtn = card.querySelector('.btn-museum-book-toggle');
+      if (bookBtn) {
+        if (effective === 'booked') {
+          bookBtn.textContent = '완료 취소';
+          bookBtn.classList.remove('btn-primary');
+          bookBtn.classList.add('btn-secondary');
+          bookBtn.setAttribute('data-action', 'unbook');
+        } else {
+          bookBtn.textContent = '✓ 예약 완료';
+          bookBtn.classList.remove('btn-secondary');
+          bookBtn.classList.add('btn-primary');
+          bookBtn.setAttribute('data-action', 'book');
+        }
+      }
+
+      // Recheck Toggle Button
+      var recheckBtn = card.querySelector('.btn-museum-recheck-toggle');
+      if (recheckBtn) {
+        if (effective === 'recheck') {
+          recheckBtn.textContent = '재확인 해제';
+          recheckBtn.setAttribute('data-action', 'unrecheck');
+        } else {
+          recheckBtn.textContent = '재확인';
+          recheckBtn.setAttribute('data-action', 'recheck');
+        }
+        recheckBtn.style.display = (effective === 'booked') ? 'none' : '';
+      }
+    });
+
+    // Update summary counts
+    var countBookNow = document.getElementById('count-book-now');
+    if (countBookNow) countBookNow.textContent = counts['book-now'];
+    var countCheckSale = document.getElementById('count-check-sale');
+    if (countCheckSale) countCheckSale.textContent = counts['check-sale'];
+    var countBookLater = document.getElementById('count-book-later');
+    if (countBookLater) countBookLater.textContent = counts['book-later'];
+    var countRecheck = document.getElementById('count-recheck');
+    if (countRecheck) countRecheck.textContent = counts['recheck'];
+    var countBooked = document.getElementById('count-booked');
+    if (countBooked) countBooked.textContent = counts['booked'];
+    var countNoReservation = document.getElementById('count-no-reservation');
+    if (countNoReservation) countNoReservation.textContent = counts['no-reservation'];
+
+    applyParisMuseumFilter();
+  }
+
+  function applyParisMuseumFilter() {
+    var activeChip = document.querySelector('.paris-filter-chip[aria-pressed="true"]');
+    var filter = activeChip ? activeChip.getAttribute('data-filter') : 'all';
+    var cards = document.querySelectorAll('.paris-museum-card');
+
+    cards.forEach(function (card) {
+      var eff = card.getAttribute('data-effective-status');
+      if (filter === 'all' || eff === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  window.__renderParisMuseumUI = renderParisMuseumUI;
+
+  // Initialize on script execution if DOM ready, or DOMContentLoaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderParisMuseumUI);
+  } else {
+    renderParisMuseumUI();
+  }
+
+  // Global Click Handlers for Paris Museums
+  document.addEventListener('click', function (e) {
+    var bookBtn = e.target.closest('.btn-museum-book-toggle');
+    if (bookBtn) {
+      var card = bookBtn.closest('.paris-museum-card');
+      var id = card ? card.getAttribute('data-museum-id') : null;
+      if (!id) return;
+
+      var action = bookBtn.getAttribute('data-action');
+      var state = getParisMuseumState();
+      if (action === 'book') {
+        state[id] = 'booked';
+      } else {
+        delete state[id];
+      }
+      if (saveParisMuseumState(state)) {
+        renderParisMuseumUI();
+      } else {
+        alert('상태를 저장하지 못했습니다 (브라우저 저장소 제한 또는 비활성화).');
+      }
+      return;
+    }
+
+    var recheckBtn = e.target.closest('.btn-museum-recheck-toggle');
+    if (recheckBtn) {
+      var card = recheckBtn.closest('.paris-museum-card');
+      var id = card ? card.getAttribute('data-museum-id') : null;
+      if (!id) return;
+
+      var action = recheckBtn.getAttribute('data-action');
+      var state = getParisMuseumState();
+      if (action === 'recheck') {
+        state[id] = 'recheck';
+      } else {
+        delete state[id];
+      }
+      if (saveParisMuseumState(state)) {
+        renderParisMuseumUI();
+      } else {
+        alert('상태를 저장하지 못했습니다 (브라우저 저장소 제한 또는 비활성화).');
+      }
+      return;
+    }
+
+    var chip = e.target.closest('.paris-filter-chip');
+    if (chip) {
+      var allChips = document.querySelectorAll('.paris-filter-chip');
+      allChips.forEach(function (c) {
+        c.setAttribute('aria-pressed', 'false');
+      });
+      chip.setAttribute('aria-pressed', 'true');
+      applyParisMuseumFilter();
+      return;
+    }
+
+    var resetBtn = e.target.closest('#btn-reset-museum-state');
+    if (resetBtn) {
+      if (confirm('내 예약 체크 상태를 모두 초기화하시겠습니까? (정본 계획 상태로 복귀)')) {
+        try {
+          localStorage.removeItem(PARIS_MUSEUM_STORAGE_KEY);
+        } catch (err) {}
+        renderParisMuseumUI();
+      }
+      return;
+    }
+  });
 })();

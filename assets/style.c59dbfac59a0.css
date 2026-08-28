@@ -1644,6 +1644,101 @@ td .meta a,
   gap: var(--s2);
 }
 
+/* Paris Museum Booking System */
+.paris-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: var(--s3);
+  margin-bottom: var(--s4);
+}
+.paris-summary-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: var(--s3) var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.paris-summary-item .num {
+  font-size: var(--t-h2);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--primary);
+}
+.paris-summary-item .label {
+  font-size: var(--t-meta);
+  color: var(--muted);
+}
+.paris-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-bottom: var(--s4);
+}
+.paris-museum-grid {
+  display: grid;
+  gap: var(--s4);
+}
+.paris-museum-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  box-shadow: var(--sh-1);
+  transition: all var(--dur-fast);
+}
+.paris-museum-card.is-booked {
+  background: #F4FAF6;
+  border-color: var(--sig-ok);
+}
+.paris-museum-card.is-recheck {
+  background: var(--ochre-soft);
+  border-color: var(--accent);
+}
+.paris-museum-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s3);
+  flex-wrap: wrap;
+}
+.paris-museum-card-title {
+  font-size: var(--t-h3);
+  margin: 0;
+}
+.paris-museum-meta-list {
+  display: grid;
+  gap: var(--s2);
+  font-size: var(--t-meta);
+  color: var(--text-2);
+  background: var(--surface-2);
+  padding: var(--s3);
+  border-radius: var(--r-md);
+}
+.paris-museum-meta-row {
+  display: flex;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+.paris-museum-meta-row strong {
+  min-width: 90px;
+  color: var(--text);
+  flex-shrink: 0;
+}
+.paris-museum-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  align-items: center;
+}
+.paris-museum-actions .btn {
+  min-height: 44px;
+}
+
 /* 발음 규칙 표 */
 .rule-table td strong { color: var(--primary); }
 .rule-table td span.sound { color: var(--sig-caution-ink); font-weight: 700; }
