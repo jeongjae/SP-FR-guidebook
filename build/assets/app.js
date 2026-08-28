@@ -465,4 +465,220 @@
       /* 스크롤 위치는 부가 기능이다 — 실패해도 링크는 그대로다 */
     }
   })();
+
+  /* ---- 여행 프랑스어 (Travel French) — TTS, 복사, 즐겨찾기, 실시간 검색 ---- */
+  var FAV_KEY = 'spfr_travel_french_favs';
+  function getFrenchFavs() {
+    try {
+      return JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+    } catch (e) { return []; }
+  }
+  function saveFrenchFavs(favs) {
+    try {
+      localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+    } catch (e) {}
+  }
+
+  // 1. Initial setup of favorite buttons on load
+  function initFrenchFavs() {
+    var favs = getFrenchFavs();
+    var favBtns = document.querySelectorAll('.btn-phrase-fav');
+    for (var i = 0; i < favBtns.length; i++) {
+      var id = favBtns[i].getAttribute('data-fav-id');
+      var isFav = favs.indexOf(id) >= 0;
+      favBtns[i].setAttribute('aria-pressed', isFav ? 'true' : 'false');
+      var span = favBtns[i].querySelector('span');
+      if (span) span.textContent = isFav ? '저장됨' : '저장';
+    }
+  }
+  initFrenchFavs();
+
+  // 2. Global Event Delegation for phrase buttons (audio, copy, fav)
+  document.addEventListener('click', function (e) {
+    // Audio / Speech Synthesis
+    var audioBtn = e.target.closest('.btn-phrase-audio');
+    if (audioBtn) {
+      var text = audioBtn.getAttribute('data-audio');
+      if (text && 'speechSynthesis' in window) {
+        try {
+          window.speechSynthesis.cancel();
+          var u = new SpeechSynthesisUtterance(text);
+          u.lang = 'fr-FR';
+          u.rate = 0.88;
+          window.speechSynthesis.speak(u);
+        } catch (err) {}
+      }
+      return;
+    }
+
+    // Copy to clipboard
+    var copyBtn = e.target.closest('.btn-phrase-copy');
+    if (copyBtn) {
+      var copyText = copyBtn.getAttribute('data-copy');
+      if (copyText) {
+        var origSpan = copyBtn.querySelector('span');
+        var origText = origSpan ? origSpan.textContent : '복사';
+        function setCopied() {
+          copyBtn.classList.add('copied');
+          if (origSpan) origSpan.textContent = '복사됨';
+          setTimeout(function () {
+            copyBtn.classList.remove('copied');
+            if (origSpan) origSpan.textContent = origText;
+          }, 1400);
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(copyText).then(setCopied, function () {
+            fallbackCopy(copyText, setCopied);
+          });
+        } else {
+          fallbackCopy(copyText, setCopied);
+        }
+      }
+      return;
+    }
+
+    // Favorite toggle
+    var favBtn = e.target.closest('.btn-phrase-fav');
+    if (favBtn) {
+      var fid = favBtn.getAttribute('data-fav-id');
+      if (fid) {
+        var favs = getFrenchFavs();
+        var idx = favs.indexOf(fid);
+        var isNowFav = false;
+        if (idx >= 0) {
+          favs.splice(idx, 1);
+        } else {
+          favs.push(fid);
+          isNowFav = true;
+        }
+        saveFrenchFavs(favs);
+        favBtn.setAttribute('aria-pressed', isNowFav ? 'true' : 'false');
+        var fSpan = favBtn.querySelector('span');
+        if (fSpan) fSpan.textContent = isNowFav ? '저장됨' : '저장';
+
+        // Update all buttons with same id across the page
+        var allSame = document.querySelectorAll('.btn-phrase-fav[data-fav-id="' + fid + '"]');
+        for (var sIdx = 0; sIdx < allSame.length; sIdx++) {
+          allSame[sIdx].setAttribute('aria-pressed', isNowFav ? 'true' : 'false');
+          var sameSpan = allSame[sIdx].querySelector('span');
+          if (sameSpan) sameSpan.textContent = isNowFav ? '저장됨' : '저장';
+        }
+
+        if (typeof window.applyFrenchFilter === 'function') {
+          window.applyFrenchFilter();
+        }
+      }
+      return;
+    }
+  });
+
+  function fallbackCopy(text, cb) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (cb) cb();
+    } catch (e) {}
+  }
+
+  // 3. Travel French Page (prepare/french.html) Search & Category Filters
+  var frenchSearchInput = document.getElementById('french-search');
+  var frenchChips = document.getElementById('french-filter-chips');
+  var frenchGrid = document.getElementById('french-phrase-grid');
+  var frenchNoResults = document.getElementById('french-no-results');
+  var frenchResetBtn = document.getElementById('french-reset-btn');
+  var frenchListTitle = document.getElementById('french-list-title');
+
+  if (frenchGrid && frenchChips) {
+    var curCategory = 'all';
+
+    function applyFrenchFilter() {
+      var query = (frenchSearchInput ? frenchSearchInput.value : '').trim().toLowerCase();
+      var favs = getFrenchFavs();
+      var cards = frenchGrid.querySelectorAll('.phrase-card');
+      var visibleCount = 0;
+
+      for (var c = 0; c < cards.length; c++) {
+        var card = cards[c];
+        var pid = card.getAttribute('data-phrase-id') || '';
+        var cat = card.getAttribute('data-category') || '';
+        var pri = card.getAttribute('data-priority') || '';
+        var sData = card.getAttribute('data-search') || '';
+
+        var matchCat = false;
+        if (curCategory === 'all') {
+          matchCat = true;
+        } else if (curCategory === 'fav') {
+          matchCat = favs.indexOf(pid) >= 0;
+        } else if (curCategory === 'essential') {
+          matchCat = (cat === 'essential' || pri === 'P0');
+        } else {
+          matchCat = (cat === curCategory);
+        }
+
+        var matchQuery = true;
+        if (query) {
+          matchQuery = sData.indexOf(query) >= 0;
+        }
+
+        if (matchCat && matchQuery) {
+          card.hidden = false;
+          visibleCount++;
+        } else {
+          card.hidden = true;
+        }
+      }
+
+      if (frenchNoResults) {
+        frenchNoResults.style.display = (visibleCount === 0) ? 'flex' : 'none';
+      }
+      if (frenchListTitle) {
+        if (curCategory === 'fav') {
+          frenchListTitle.textContent = '즐겨찾기한 회화 (' + visibleCount + '건)';
+        } else if (query) {
+          frenchListTitle.textContent = '검색 결과 (' + visibleCount + '건)';
+        } else {
+          frenchListTitle.textContent = '상황별 회화 (' + visibleCount + '문구)';
+        }
+      }
+    }
+    window.applyFrenchFilter = applyFrenchFilter;
+
+    if (frenchSearchInput) {
+      frenchSearchInput.addEventListener('input', applyFrenchFilter);
+    }
+
+    frenchChips.addEventListener('click', function (e) {
+      var chip = e.target.closest('.chip');
+      if (!chip) return;
+      var cat = chip.getAttribute('data-category');
+      if (!cat) return;
+      curCategory = cat;
+
+      var allChips = frenchChips.querySelectorAll('.chip');
+      for (var k = 0; k < allChips.length; k++) {
+        allChips[k].setAttribute('aria-pressed', 'false');
+      }
+      chip.setAttribute('aria-pressed', 'true');
+      applyFrenchFilter();
+    });
+
+    if (frenchResetBtn) {
+      frenchResetBtn.addEventListener('click', function () {
+        if (frenchSearchInput) frenchSearchInput.value = '';
+        curCategory = 'all';
+        var allChips = frenchChips.querySelectorAll('.chip');
+        for (var k = 0; k < allChips.length; k++) {
+          allChips[k].setAttribute('aria-pressed', allChips[k].getAttribute('data-category') === 'all' ? 'true' : 'false');
+        }
+        applyFrenchFilter();
+      });
+    }
+  }
 })();
