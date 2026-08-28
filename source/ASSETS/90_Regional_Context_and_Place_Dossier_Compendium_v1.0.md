@@ -243,6 +243,58 @@ Monaco 절벽 위 구시가지(Rocher)에서 시작해 항구를 지나 Monte Ca
 
 - 공식정보: https://www.visitmonaco.com/
 
+# Verdon
+
+## Moustiers-Sainte-Marie
+석회암 절벽 사이에 들어앉은 파이앙스 도자기 마을로 Verdon 1박의 숙박거점이다.
+
+- 방문: 마을 하부 주차 후 도보. 유료 주차는 Flowbird 앱.
+- 관람: 저녁·아침의 골목과 Notre-Dame de Beauvoir 262계단 왕복이 핵심.
+- 체류: 저녁 60–90분 + 아침 90–120분
+- 요금·예약: 마을 무료, 예배당 무료(주간 개방), 주차 유료 구획 재확인.
+- 주의: 계단 미끄러움, 골목 차량 진입 제한. 숙소 미정 — 도착 전 확보.
+- 공식정보: https://www.moustiers.fr/
+
+## Point Sublime
+Verdon 협곡 하류 입구를 내려다보는 대표 전망대다.
+
+- 방문: D952 Rougon 방면, 전망대 주차장에서 도보 약 10분.
+- 관람: Couloir Samson 입구와 400m 절벽의 대치를 본다.
+- 체류: 30–45분
+- 요금·예약: 전망대 무료. 주차는 성수기 유료·3시간 이내 권장, 9월 요금 재확인.
+- 주의: 지연 시 최우선 삭제 레버. 일몰 전 Moustiers 도착이 우선.
+- 공식정보: https://www.verdontourisme.com/
+
+## Route des Crêtes
+La Palud 기점 24km 능선 순환도로로 협곡 상류 절벽을 잇는 전망 루프다.
+
+- 방문: La Palud-sur-Verdon에서 Castellane 방면 800m 지점 진입.
+- 관람: 전망대 15곳 중 2–4곳만 선별 정차한다.
+- 체류: 1.5–2시간
+- 요금·예약: 무료. 개방기간 3월 말–11월 말, 당일 통제 여부 재확인.
+- 주의: 중앙 구간 시계방향 일방통행(협소·경사 15%). 역방향 계획 금지.
+- 공식정보: https://www.verdontourisme.com/en/route-des-cretes/
+
+## Lac de Sainte-Croix
+협곡이 끝나며 열리는 청록색 인공호수로 Pont du Galetas가 조망 지점이다.
+
+- 방문: Moustiers에서 D957, 다리 인근 주차.
+- 관람: 다리·전망 지점에서 협곡 입구로 들어가는 물길을 내려다본다.
+- 체류: 30–60분
+- 요금·예약: 조망 무료. 카약·페달로 대여의 9월 운영 재확인 — 일정 전제로 삼지 않는다.
+- 주의: 물가 하강은 시간 여유가 있을 때만.
+- 공식정보: https://www.verdontourisme.com/
+
+## Plateau de Valensole
+라벤더로 이름난 농업 고원이나 9월은 수확 후 계절이다.
+
+- 방문: Moustiers→Aix 경로가 고원을 통과. 별도 왕복 없음.
+- 관람: 수확 후의 밭·밀·아몬드나무·지평선. 라벤더를 기대하지 않는다.
+- 체류: 경유 (정차 시 20–30분)
+- 요금·예약: 무료.
+- 주의: 지연 시 정차 없이 통과해 시간을 회수한다.
+- 공식정보: https://en.tourisme-alpes-haute-provence.com/large-natural-spaces/plateau-of-valensole/
+
 # Aix
 - **역사:** 로마 온천도시 Aquae Sextiae에서 시작해 프로방스 백작령의 수도, 근대 법률·행정·대학도시로 발전했다.
 - **경제:** 관광과 문화 외에 대학·법률·행정·첨단산업이 결합된 생활도시다.

@@ -62,6 +62,22 @@
         "source/ARCHIVE/20_Regional_Chapters/06_Nice_Planning_Residue_v1.0.md"
       ]
     },
+    "verdon": {
+      "staySummary": "Moustiers-Sainte-Marie 1박(9/9 체크인–9/10 체크아웃)이 거점이다. 숙소는 미정·현지 결정이므로 도착 전 확보가 최우선이고, 예약 시 주차 조건을 함께 확인한다.",
+      "lifeEssentials": [
+        "Day 12 저녁은 Moustiers에서 해결한다. 9월 평일 저녁 영업이 제한적일 수 있으므로 장보기 대안을 함께 둔다.",
+        "산악 구간 진입 전 연료를 채운다. 연료를 절반 아래로 내리지 않는다.",
+        "계단·전망대용 신발을 준비한다. Beauvoir 계단은 미끄럽다.",
+        "9월 고원에는 라벤더가 없다 — 기대 목록에서 제외한다."
+      ],
+      "arrivalStrategy": "Day 12 Nice-Ville 09:00 렌터카 인수 후 Saint-Paul·Grasse를 거쳐 Castellane 방면으로 진입한다. 지연 시 Grasse부터, 다음 Point Sublime을 삭제해 일몰 전 Moustiers 체크인을 지킨다.",
+      "departureStrategy": "Day 13 오전 마을·Beauvoir 계단 후 Route des Crêtes(개방 시)와 Sainte-Croix 호수를 거쳐 Valensole 고원을 통과, 15:00 이후 Aix 체크인에 맞춘다.",
+      "lateReturnRule": "Day 13이 늦어지면 Route des Crêtes 루프를 초입 전망대 1–2곳으로 줄이고, 다음으로 호수 물가 하강·Valensole 정차를 생략한다.",
+      "sourceRefs": [
+        "data/daily-cards/day-12.json",
+        "data/daily-cards/day-13.json"
+      ]
+    },
     "aix": {
       "staySummary": "확정 숙소는 Les Toits de Méjanes(Airbnb) · 2 Place Coimbra, entrée A, 6층. 4박(9/9 15:00 체크인 – 9/13 14:00 체크아웃). 구시가지는 걸어 다니고 차는 세워 둔다 — 시내일(9/10·9/12)에는 차를 움직이지 않는다.",
       "lifeEssentials": [

@@ -230,6 +230,48 @@
         }
       ]
     },
+    "verdon": {
+      "recommendation": {
+        "title": "대중교통 없음 — 렌터카 단일 축, 장애 시 구간 포기",
+        "summary": "Day 12–13은 Nice-Ville에서 인수한 렌터카가 유일한 이동수단이다. 협곡·고원 구간에 실효성 있는 대중교통 대안이 없으므로, 차량 장애 시 이 구간을 건너뛰고 Aix로 직행하는 것이 정본 대안이다."
+      },
+      "products": [],
+      "howToUse": [
+        "Nice-Ville 09:00 렌터카 인수(확정) 후 이 구간 전체를 같은 차량으로 이동한다.",
+        "산악 구간 진입 전 연료를 절반 아래로 내리지 않는다. Castellane이 마지막 안정적 보급 지점이라고 가정하고 계획한다.",
+        "Route des Crêtes 중앙 구간은 시계방향 일방통행이다. 역방향 진입을 계획하지 않는다.",
+        "야간 산악운전을 피한다. 지연 시 정차지를 삭제해 일몰 전 Moustiers에 도착한다."
+      ],
+      "exceptions": [
+        "차량 장애 시 렌터카 업체 지원을 먼저 요청하고, 이 구간을 포기한 뒤 Aix로 직행한다. 버스로 일정을 재현하지 않는다.",
+        "악천후·결빙·낙석 통제 시 Route des Crêtes를 생략하고 D952 본선으로 이동한다.",
+        "Moustiers 숙소가 확보되지 않으면 이 구간 전체를 취소하고 Aix 조기 진입으로 전환할 수 있어야 한다."
+      ],
+      "itineraryUses": [
+        {
+          "day": 12,
+          "label": "Nice→Saint-Paul→Grasse→Castellane→Point Sublime→Moustiers"
+        },
+        {
+          "day": 13,
+          "label": "Moustiers→Route des Crêtes→Sainte-Croix→Valensole→Aix"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Verdon 관광청 Route des Crêtes 공식 안내(일방통행·개방기간)",
+          "url": "https://www.verdontourisme.com/en/route-des-cretes/",
+          "verifiedAt": "2026-08-28",
+          "recheckBy": "2026-09-08"
+        },
+        {
+          "label": "Moustiers 관광안내소 오시는 길·주차 공식 안내",
+          "url": "https://www.moustiers.fr/organiser-mon-sejour/informations-pratiques/comment-venir/",
+          "verifiedAt": "2026-08-28",
+          "recheckBy": "2026-09-08"
+        }
+      ]
+    },
     "aix": {
       "recommendation": {
         "title": "Aix는 도보, Marseille에서는 같은 카드로 바로 태그",

@@ -30,10 +30,11 @@ Moustiers-Sainte-Marie 마을 또는 가까운 생활권의 1박 숙소를 거�
 
 이 구간의 이동은 전부 렌터카다. 대중교통 대안이 사실상 없는 지역이므로, 차량 문제 발생 시의 대안은 이 구간을 건너뛰고 Aix로 직행하는 것뿐이다.
 
-- **Day 12 (9/9)**: Nice-Ville 09:00 렌터카 인수는 확정 [CONFIRMED]. Nice → Saint-Paul-de-Vence → Grasse → Castellane → Moustiers. 경로·소요시간은 {{badge:pending|재확인}}.
-- **Day 13 (9/10)**: Moustiers → (협곡 남안 또는 호수) → Valensole → Aix. Aix 숙소 체크인은 15:00 이후 (확정 [CONFIRMED], 9/10~9/14 4박).
-- 산악 구간 주유·연료 계획은 재확인 대상이다.
+- **Day 12 (9/9)**: Nice-Ville 09:00 렌터카 인수는 확정 [CONFIRMED]. Nice → Saint-Paul-de-Vence → Grasse → Route Napoléon → Castellane → D952 → Point Sublime → Moustiers. Moustiers 관광안내소 공식 기준 Nice에서 직행 2시간 15분이며, 이 일정은 경유지가 많아 실운전이 그보다 길다 — 구간별 실주행은 {{badge:pending|재확인}}.
+- **Day 13 (9/10)**: Moustiers → Route des Crêtes(La Palud 왕복, 개방 시) → Pont du Galetas → Valensole 고원 → Aix. Moustiers–Aix는 공식 기준 1시간 45분. Aix 숙소 체크인은 15:00 이후 (확정 [CONFIRMED], 9/10~9/14 4박).
+- **Route des Crêtes(D23)**: 24km 순환도로, 개방기간 3월 말~11월 말. 중앙 구간은 협소·경사 15%로 **시계방향 일방통행** — Auberge des Crêtes에서 진입해 La Palud로 나온다. 역방향 계획을 세우지 않는다. 당일 통제 여부 {{badge:pending|재확인}}.
+- **연료**: 산악 구간 진입 전 연료를 절반 아래로 내리지 않는다. Castellane 이후 안정적 보급을 가정하지 않는다.
 
 ## 먹고 장보기
 
-Moustiers의 9/9 저녁과 9/10 아침 식사는 재확인이 끝난 뒤 확정한다. 9월 평일 저녁 영업 여부가 관건이므로, 확인되지 않은 업소명·운영시간은 기재하지 않는다. 마을 규모가 작아 저녁 선택지가 제한적일 수 있으므로 필요 시 장을 봐서 간단히 해결하는 대안을 함께 둔다.
+관광안내소 공식 목록 기준 마을과 인근에 식당 십수 곳이 등록돼 있어 성수기 직후의 9월 초 평일에도 저녁 선택지가 전무하지는 않다. 다만 **개별 업소의 9월 수요일 저녁 영업은 확인되지 않았으므로** 특정 업소를 전제로 하지 않는다 — 체크인 후 안내소 목록과 현장 확인으로 정하고 {{badge:pending|재확인}}, 겸해서 장을 봐 간단히 해결하는 대안을 유지한다. 아침은 마을 빵집·카페 또는 숙소 조식으로 잡되 이 역시 현장 확인이 정본이다.
