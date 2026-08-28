@@ -629,9 +629,11 @@
 
         if (matchCat && matchQuery) {
           card.hidden = false;
+          card.style.display = "";
           visibleCount++;
         } else {
           card.hidden = true;
+          card.style.display = "none";
         }
       }
 

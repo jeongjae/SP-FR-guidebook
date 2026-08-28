@@ -92,7 +92,7 @@ def main() -> int:
              # 가로 넘침이 생긴다면 여기서 먼저 생긴다.
              "daily/day-31.html",
              "places/sagrada-familia.html", "places/sant-pau-recinte-modernista.html",
-             "map/index.html", "map/barcelona.html", "prepare/index.html"]
+             "map/index.html", "map/barcelona.html", "prepare/index.html", "prepare/french.html"]
     problems = []
 
     with sync_playwright() as pw:
