@@ -53,7 +53,7 @@
       "category": "sight",
       "lat": 48.8661,
       "lng": 2.3125,
-      "summary": "Tootbus Paris Discovery 공식 정류장(Champs-Élysées - Franklin D. Roosevelt) 승차 ➔ 에펠탑·트로카데로 ➔ 오페라 ➔ 루브르 ➔ 노트르담 ➔ 오르세 ➔ 콩코르드 ➔ Champs-Élysées - Franklin D. Roosevelt 하차 (약 2시간 풀 루프). 하차 후 Avenue Winston Churchill을 따라 Grand Palais 정문까지 도보 5분(400m) 이동",
+      "summary": "Tootbus Paris Discovery 공식 정류장(Champs-Élysées - Franklin D. Roosevelt) 승차 ➔ 에펠탑·트로카데로 ➔ 오페라 ➔ 루브르 ➔ 노트르담 ➔ 오르세 ➔ 콩코르드 ➔ Champs-Élysées - Franklin D. Roosevelt 하차 (약 2시간 풀 루프). 하차 후 Avenue Franklin Delano Roosevelt를 따라 Grand Palais 전시 입구(Entrée Square Jean Perrin)까지 도보 5분(400m) 이동",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
@@ -73,7 +73,7 @@
       "order": 3,
       "start": "16:30",
       "end": "19:15",
-      "name": "Grand Palais — 특별전 <Cézanne et nous>",
+      "name": "Grand Palais — Entrée Square Jean Perrin (<Cézanne et nous>)",
       "category": "culture",
       "lat": 48.8661,
       "lng": 2.3125,
@@ -84,10 +84,10 @@
         {
           "type": "book",
           "label": "TIMED ENTRY",
-          "detail": "Grand Palais 특별전 17:00 슬롯 사전 시간지정 예매 필수 · 16:45까지 정문 보안검색 도착."
+          "detail": "Grand Palais 특별전 17:00 슬롯 사전 시간지정 예매 필수 · 16:45까지 Square Jean Perrin 전시 입구 보안검색 도착."
         }
       ],
-      "executionNote": "Avenue Winston Churchill 정문 출입구. 모바일 티켓 QR 및 신분증 지참.",
+      "executionNote": "16:45까지 Square Jean Perrin 전시 입구 도착 → 보안검색 → 17:00 timed entry. 모바일 티켓 QR 및 신분증 지참.",
       "officialUrl": "https://www.grandpalais.fr/",
       "optional": false,
       "place_ref": "grand-palais"

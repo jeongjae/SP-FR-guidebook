@@ -1943,12 +1943,12 @@
       "verifiedAt": "2026-08-27"
     },
     "day-28:grand-palais-cezanne": {
-      "title": "Champs-Élysées ➔ Grand Palais (세잔 특별전)",
+      "title": "Champs-Élysées ➔ Grand Palais (Entrée Square Jean Perrin)",
       "origin": "Avenue des Champs-Élysées, 75008 Paris",
-      "destination": "Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris",
+      "destination": "Square Jean Perrin, Avenue Franklin Delano Roosevelt, 75008 Paris",
       "travelMode": "walking",
-      "evidence": "Short walk along Avenue Winston Churchill to Grand Palais entrance",
-      "verifiedAt": "2026-08-27"
+      "evidence": "Walk from Champs-Élysées along Franklin D. Roosevelt to Grand Palais exhibition entrance at Square Jean Perrin",
+      "verifiedAt": "2026-08-28"
     },
     "day-28:paris-return": {
       "title": "Grand Palais ➔ Le Café du Commerce 저녁",

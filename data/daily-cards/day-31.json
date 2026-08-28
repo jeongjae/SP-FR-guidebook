@@ -36,10 +36,10 @@
         {
           "type": "check",
           "label": "MONDAY CLOSURE",
-          "detail": "Boulangerie Pichard는 월·화 정기 휴무 · 전날 일요일 조달 빵 또는 숙소 인근 대체 빵집(Monoprix/로컬 블랑제리) 이용."
+          "detail": "Boulangerie Pichard는 월·화 정기 휴무 · 전날 Pichard에서 조달한 빵 또는 숙소 인근 영업 중인 블랑제리 이용."
         }
       ],
-      "executionNote": "09:45 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Madeleine에서 12호선 환승 ➔ Saint-Georges역 (약 30분 소요).",
+      "executionNote": "09:45 숙소 출발 (전날 Pichard 조달 빵으로 숙소 아침) ➔ 메트로 8호선(Lourmel) 탑승 후 Madeleine에서 12호선 환승 ➔ Saint-Georges역 (약 30분 소요).",
       "officialUrl": null,
       "optional": false,
       "place_ref": null

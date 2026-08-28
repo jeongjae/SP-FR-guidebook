@@ -79,9 +79,13 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("check", dinner_statuses)
         self.assertNotIn("confirmed", dinner_statuses)
 
+        self.assertIn("Square Jean Perrin", stops["grand-palais-cezanne"]["name"])
+        self.assertIn("Square Jean Perrin", stops["grand-palais-cezanne"]["executionNote"])
+
         rendered = self.rendered(28)
         self.assertIn("Tootbus", rendered)
         self.assertIn("Grand Palais", rendered)
+        self.assertIn("Square Jean Perrin", rendered)
         self.assertIn("Café du Commerce", rendered)
 
     def test_day29_luxembourg_and_bouillon_racine(self):
@@ -150,6 +154,8 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         # Pichard Monday closure check
         morning_statuses = {s["type"] for s in stops["morning-routine"]["executionStatuses"]}
         self.assertIn("check", morning_statuses)
+        pichard_detail = stops["morning-routine"]["executionStatuses"][0]["detail"]
+        self.assertIn("Pichard에서 조달한 빵 또는 숙소 인근 영업 중인 블랑제리", pichard_detail)
 
         # Musée Gustave Moreau timed ticket (Monday open, Tuesday closed)
         moreau_statuses = {s["type"] for s in stops["gustave-moreau"]["executionStatuses"]}
