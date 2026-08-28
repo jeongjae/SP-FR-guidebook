@@ -1,0 +1,13 @@
+id	city	filename	status	bytes	kind	url
+52	Avignon	52_avignon_plan-loisirs-patrimoine-2024-FR.pdf	OK	7409868	application/pdf	https://avignon-monuments.com/wp-content/uploads/2024/10/Plan-Pat-digital-FR.pdf
+53	Avignon EN	53_avignon_leisure-heritage-map-2026-EN.pdf	OK	6646394	application/pdf	https://hoteldelatelier-news.com/wp-content/uploads/2024/05/2026-EN-Avignon-Leisure-and-Heritage-Map-2026-1.pdf
+54	Grand Avignon	54_grand-avignon_carte-touristique-2019.pdf	OK	1373359	application/pdf	https://www.grandavignon.fr/sites/default/files/2019-07/carte_touristique_du_grand_avignon.pdf
+55	Villeneuve lez Avignon	55_villeneuve-lez-avignon_plan-decouverte-2019.pdf	OK	1131585	application/pdf	https://www.grandavignon.fr/sites/default/files/2019-07/plan_decouverte_du_vla.pdf
+56	Barcelona Bus Turistic	56_barcelona_bus-turistic-route-map.pdf	OK	1921903	application/pdf	https://s3.eu-west-1.amazonaws.com/pro.static.portalstdo.tmb.cat/file_download/barcelona_bus_turistic_2_1.pdf
+57	Roussillon	57_roussillon_plan-touristique-2026.pdf	OK	2298111	application/pdf	https://app-v4.avizi.fr/fichiers/stream/6980af59b92ab
+58	Pays d'Apt Luberon	58_pays-apt-luberon_carte-touristique.pdf	OK	9740309	application/pdf	https://app-v4.avizi.fr/fichiers/stream/6275107587e71
+59	Ocres du Luberon	59_ocres-du-luberon-2026.pdf	OK	3271847	application/pdf	https://app-v4.avizi.fr/fichiers/stream/6980a91a8a19f
+60	Menton	60_menton_plan-touristique-2025.pdf	FAIL	0	-	https://www.calameo.com/download/0052527242ea7653d25bf
+61	Menton Riviera & Merveilles	61_menton-riviera-merveilles_carte-destination-2022.pdf	FAIL	0	-	https://www.calameo.com/download/0052527248f9bf91e83c4
+62	Saint-Jean-Cap-Ferrat	62_saint-jean-cap-ferrat_plan-map-2026-2027.pdf	FAIL	0	-	https://www.calameo.com/download/006605280cc8108450c09
+63	Saint-Jean-Cap-Ferrat	63_saint-jean-cap-ferrat_plan-map-2023-2024.pdf	OK	11316628	application/pdf	https://www.saintjeancapferrat-tourisme.fr/files/wp-content/uploads/2023/07/plan-map-sjcf-2023-2024.pdf

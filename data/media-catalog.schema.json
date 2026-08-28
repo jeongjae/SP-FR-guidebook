@@ -26,7 +26,7 @@
       ],
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
-        "regionSlug": { "enum": ["barcelona", "girona", "nice", "aix", "luberon", "avignon", "lyon", "paris"] },
+        "regionSlug": { "enum": ["barcelona", "girona", "nice", "verdon", "aix", "luberon", "avignon", "lyon", "paris"] },
         "role": { "enum": ["hero", "place", "food", "market", "transport", "experience"] },
         "subjectType": { "enum": ["country", "region", "city", "village", "neighborhood", "attraction", "museum", "market", "restaurant", "cafe", "food", "nature", "transport", "experience", "other"] },
         "subjectName": { "type": "string", "minLength": 1 },

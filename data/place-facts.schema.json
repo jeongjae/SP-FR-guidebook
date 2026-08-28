@@ -27,7 +27,7 @@
         "displayName": {"type": "string", "minLength": 1},
         "region": {
           "type": "string",
-          "enum": ["barcelona", "girona", "nice", "aix", "luberon", "avignon", "lyon", "paris"]
+          "enum": ["barcelona", "girona", "nice", "verdon", "aix", "luberon", "avignon", "lyon", "paris"]
         },
         "grade": {
           "type": "string",

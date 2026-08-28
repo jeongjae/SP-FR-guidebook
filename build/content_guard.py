@@ -34,6 +34,7 @@ CHAPTER_FILES = {
     "barcelona": "04_Barcelona_Sitges_v2.0.md",
     "girona": "05_Girona_Collioure_Emporda_v2.1.md",
     "nice": "06_Nice_Cote_d_Azur_v2.0.md",
+    "verdon": "06B_Verdon_Moustiers_v1.0.md",
     "aix": "07_Aix_en_Provence_v2.0.md",
     "luberon": "08_Luberon_Farmhouse_v2.0.md",
     "avignon": "09_Avignon_Alpilles_Pont_du_Gard_v2.0.md",
@@ -116,8 +117,8 @@ def check_phase9_commercial_depth_guards():
     cards_text = COMMERCIAL_CARDS.read_text(encoding="utf-8")
     dossier_text = PLACE_DOSSIERS.read_text(encoding="utf-8")
     
-    if len(re.findall(r"^## .+$", cards_text, re.M)) != 8:
-        problems.append("Commercial City Experience Card는 정확히 8개 지역이어야 함")
+    if len(re.findall(r"^## .+$", cards_text, re.M)) != 9:  # RS01: verdon 추가로 8→9
+        problems.append("Commercial City Experience Card는 정확히 9개 지역이어야 함")
         
     registry = load_place_registry()
     registry_spots = {r["slug"]: r for r in registry if r["type"] in ("spot", "walk")}
@@ -194,7 +195,7 @@ def check_phase9_commercial_depth_guards():
     chapter_expected_unique_headings = {k: len(v) for k, v in chapter_expected_unique_headings.items()}
 
     region_name_map = {
-        "barcelona": "Barcelona", "girona": "Girona", "nice": "Nice", "aix": "Aix",
+        "barcelona": "Barcelona", "girona": "Girona", "nice": "Nice", "verdon": "Verdon", "aix": "Aix",
         "luberon": "Luberon", "avignon": "Avignon", "lyon": "Lyon", "paris": "Paris"
     }
 

@@ -1,0 +1,196 @@
+﻿phase,파일,매치수,분류,처리,비고
+P0,MP01D_DATE_DISPLAY_AUDIT.csv,33,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR03_PROVENCE_FOOD_EXPANSION_QA.md,33,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,AV01_AVIGNON_RECONSOLIDATION_QA.md,27,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,LB01_LUBERON_RECONSOLIDATION_QA.md,25,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR03_MEAL_SLOT_AUDIT.csv,23,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,EX01_43DAY_ITINERARY_FEASIBILITY_AUDIT.md,22,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,AX01_AIX_RECONSOLIDATION_QA.md,20,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,NC01F-INTEGRATE_NICE_MAIN_RECONCILIATION.md,15,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,EX06_AVIGNON_PONT_DU_GARD_ARLES_EXECUTION_SYNC_QA.md,15,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,EX04_AIX_MARSEILLE_EXECUTION_SYNC_QA.md,15,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,EX05_LUBERON_DRIVING_EXECUTION_SYNC_QA.md,13,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,NC01F_NICE_FINAL_FACTUAL_RECONCILIATION.md,12,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR03_SCHEDULE_FOOD_LINK_AUDIT.csv,12,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,REGION_CONTENT_AUDIT.md,10,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,NC01_NICE_REGION_CONSOLIDATION_QA.md,6,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR06_66_MEAL_SLOT_CLOSURE_QA.md,6,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR03_MARKET_AUDIT.csv,5,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,TR01_CRITICAL_TRANSFER_GUIDANCE_AND_ROUTE_MAP_AUDIT.md,4,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,MP01_FINAL_BASELINE_SNAPSHOT.md,4,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,LY01F-INTEGRATE_LYON_MAIN_RECONCILIATION.md,4,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR06_TRAVEL_DAY_MEAL_AUDIT.csv,3,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,LY01_LYON_RECONSOLIDATION_QA.md,2,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR04_DAY_SOT_CORRECTIONS_QA.md,2,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR02C_FULL_MIGRATION_QA.md,2,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,PA01_PARIS_REGION_CONSOLIDATION_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,MP01C_TRANSPORT_STOP_AUDIT.csv,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,MP01C_ROUTE_SEGMENT_AUDIT.csv,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR09_EDITORIAL_READINESS_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR08_PRIMARY_BACKUP_FAILURE_AUDIT.csv,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR06_HIGH_P2_DAY_FOOD_AUDIT.csv,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR04_FINAL_CONTENT_CLOSURE_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR03_CONTENT_FOOD_PHOTO_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR02B_STABILIZATION_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,FCR01_NICE_MEAL_SLOT_AUDIT.csv,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,EX03_NICE_COTE_DAZUR_EXECUTION_SYNC_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P0,EX00_EXECUTION_BASELINE_QA.md,1,과거 감사 기록,archive,수정 금지 — superseded.json 에 등재
+P1,build/seed_place_facts.py,9,빌드 로직,review,8지역·박수 하드코딩 여부 점검
+P1,source/CURRENT/10_Core/itinerary.json,4,정본-일정골격,edit,최우선. 여기서 모든 파생이 나온다
+P1,build/reverify_register.py,3,빌드 로직,review,8지역·박수 하드코딩 여부 점검
+P1,build/render.py,1,빌드 로직,review,8지역·박수 하드코딩 여부 점검
+P1,build/model.py,1,빌드 로직,review,8지역·박수 하드코딩 여부 점검
+P1,build/guards/guard_decisions.py,1,빌드 로직,review,8지역·박수 하드코딩 여부 점검
+P3,data/daily-cards/day-17.json,9,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-16.json,8,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-12.json,8,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-20.json,5,Day SOT,edit,숙박·연결문구만 수정
+P3,data/daily-cards/day-18.json,5,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-14.json,5,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-15.json,4,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-13.json,4,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-23.json,3,Day SOT (범위 밖),verify,인접일 교차참조만 확인
+P3,data/daily-cards/day-19.json,3,Day SOT,rewrite,전면 재작성 대상
+P3,data/daily-cards/day-11.json,3,Day SOT (범위 밖),verify,인접일 교차참조만 확인
+P3,data/daily-cards/day-21.json,2,Day SOT,edit,숙박·연결문구만 수정
+P3,data/daily-cards/day-07.json,2,Day SOT (범위 밖),verify,인접일 교차참조만 확인
+P3,data/daily-cards/day-22.json,1,Day SOT,edit,숙박·연결문구만 수정
+P3,data/daily-cards/day-08.json,1,Day SOT (범위 밖),verify,인접일 교차참조만 확인
+P4,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,42,지역 챕터 원고,edit,정본 원고. 직접 수정
+P4,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,30,지역 챕터 원고,edit,정본 원고. 직접 수정
+P4,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,24,지역 챕터 원고,edit,정본 원고. 직접 수정
+P4,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,16,정본-전체일정문서,edit,마스터 일정표 Day 12~22 행 교체
+P4,source/CURRENT/20_Regions/luberon.md,13,지역 파생물,regenerate,편집 금지 — promote_regions.py 가 매 빌드 재생성
+P4,source/CURRENT/20_Regions/avignon.md,8,지역 파생물,regenerate,편집 금지 — promote_regions.py 가 매 빌드 재생성
+P4,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,6,지역 챕터 원고,edit,정본 원고. 직접 수정
+P4,source/CURRENT/20_Regions/aix.md,5,지역 파생물,regenerate,편집 금지 — promote_regions.py 가 매 빌드 재생성
+P4,source/CURRENT/30_Places/saint-remy-de-provence.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/orange.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/menerbes.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/lourmarin.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/chez-gilbert-cassis.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/abbaye-de-senanque.md,3,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/patisserie-weibel.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/les-cocottes-saint-louis.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/les-baux-de-provence.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/le-gibolin-arles.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/lacoste.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/goult.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/gordes.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/fou-de-fafa-avignon.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/fontaine-de-vaucluse.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/cassis.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/bonnieux.md,2,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md,2,지역 챕터 원고,edit,정본 원고. 직접 수정
+P4,source/CURRENT/30_Places/musee-jacquemart-andre.md,1,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/marseille.md,1,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/30_Places/coustellet.md,1,장소 정본,edit,방문 Day 번호·요일 서술 수정
+P4,source/CURRENT/20_Regions/nice.md,1,지역 파생물,regenerate,편집 금지 — promote_regions.py 가 매 빌드 재생성
+P5,data/itinerary-places.csv,50,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/place-facts.json,30,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/site-page-inventory.csv,25,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/itinerary-places.json,23,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/content-inventory.csv,23,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/region-essentials.json,15,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/transit-facts.json,14,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/decisions.json,14,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/images/photo-candidates.json,10,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/images/photo-candidates.csv,10,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/map-queries.json,9,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/images/rejected-photo-candidates.csv,6,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/images/image-manifest.json,5,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/media-catalog.json,4,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/images/image-manifest.csv,4,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/superseded.json,2,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/food-completeness-disposition.json,2,데이터 레이어,regenerate,Day↔장소 매핑 재계산
+P5,data/images/photo-queue.json,1,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P5,data/images/batch2-search-plan.json,1,이미지 카탈로그,verify,Day 이동에 따른 이미지 매핑 확인
+P6,scripts/generate_fcr03_csv_artifacts.py,85,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,PLACE_MASTER_INVENTORY.csv,45,마스터 대장,regenerate,현재 상태 문서
+P6,PLACE_TAXONOMY_AND_TIERS.csv,32,마스터 대장,regenerate,현재 상태 문서
+P6,scripts/sync_provence_itinerary_sot.py,26,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/generate_fcr06_artifacts.py,21,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR_66_MEAL_SLOT_MATRIX.csv,21,마스터 대장,regenerate,현재 상태 문서
+P6,FCR08_FULL_CROSS_LINK_MATRIX.csv,21,기타,review,개별 판단
+P6,source/OPERATIONS/TP_Europe_Travel_Guidebook_Decision_Register_v0.4.md,19,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,19,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,scripts/generate_ex14_artifacts.py,18,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,source/OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md,16,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,scripts/mp01f_region_navigation_audit.py,16,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR_DAILY_FOOD_LINK_MATRIX.csv,14,마스터 대장,regenerate,현재 상태 문서
+P6,CRITICAL_CONSTRAINT_REGISTER.csv,14,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,scripts/generate_ex15_artifacts.py,13,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/generate_fcr06_all_artifacts.py,12,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/update_execution_maps.py,11,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR03_ROUTE_REVALIDATION.csv,11,기타,review,개별 판단
+P6,DAY_FEASIBILITY_MATRIX.csv,11,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,DAY_EXECUTION_INVENTORY.csv,11,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,scripts/create_provence_food_places.py,10,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR_REGIONAL_FOOD_GUIDE_MATRIX.csv,10,마스터 대장,regenerate,현재 상태 문서
+P6,FCR03_REGIONAL_FOOD_MATRIX.csv,10,기타,review,개별 판단
+P6,scripts/sync_days_12_15.py,9,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/ex11_final_verification_audit.py,9,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR_TO_EX14_HANDOFF.md,9,마스터 대장,regenerate,현재 상태 문서
+P6,FCR_RESTAURANT_CAFE_MARKET_RESEARCH.csv,8,마스터 대장,regenerate,현재 상태 문서
+P6,FCR03_WINE_CHEESE_PRODUCE_MATRIX.csv,8,기타,review,개별 판단
+P6,FCR03_RESTAURANT_CAFE_MARKET_RESEARCH.csv,8,기타,review,개별 판단
+P6,FCR_VOLATILE_RECHECK_REGISTER.csv,7,마스터 대장,regenerate,현재 상태 문서
+P6,FCR06_VOLATILE_RECHECK_MASTER.csv,7,기타,review,개별 판단
+P6,source/OPERATIONS/117_Departure_and_Daily_Reverification_Calendar_v1.0.md,6,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,scripts/validate_itinerary.py,6,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,MP01F_QA_REPORT.md,6,기타,review,개별 판단
+P6,FCR_FOOD_PLACE_REGISTRY.csv,6,마스터 대장,regenerate,현재 상태 문서
+P6,EX14_VOLATILE_RECHECK_MASTER.csv,6,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,scripts/validate_provence_semantic_guard.py,5,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/sync_days_16_18.py,5,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/ex13_full_trip_simulation_audit.py,5,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR03_VOLATILE_RECHECK_REGISTER.csv,5,기타,review,개별 판단
+P6,EXECUTION_SYNC_ISSUE_REGISTER.csv,5,기타,review,개별 판단
+P6,source/OPERATIONS/119_v1.37_File_Integrity_SHA256.txt,4,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,scripts/update_nice_chapter_fcr01.py,4,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/sync_days_19_23.py,4,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/mp01c_transport_route_link_audit.py,4,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/generate_fcr04_csv_artifacts.py,4,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/ex12r_place_link_offline_regression.py,4,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,MP01C_QA_REPORT.md,4,기타,review,개별 판단
+P6,FCR04_VOLATILE_RECHECK_REGISTER.csv,4,기타,review,개별 판단
+P6,EX14_ACCOMMODATION_FINAL_AUDIT.csv,4,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,source/OPERATIONS/41_Operational_Variables_and_Reverification_Register_v1.0.md,3,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,scripts/generate_fcr05_csv_artifacts.py,3,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR05_PARIS_VOLATILE_RECHECK_REGISTER.csv,3,기타,review,개별 판단
+P6,FCR03_SELF_CATERING_MATRIX.csv,3,기타,review,개별 판단
+P6,EXECUTION_FEASIBILITY_ISSUE_REGISTER.csv,3,기타,review,개별 판단
+P6,EX15_USER_ACTION_LIST.md,3,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX15_MUST_BOOK_ACTION_AUDIT.csv,3,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX15_DEPARTURE_OPERATIONS_QA.md,3,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX15_ACCOMMODATION_RECHECK.csv,3,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX14_USER_ACTION_LIST.md,3,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX14_HARD_ANCHOR_AUDIT.csv,3,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,scripts/generate_fcr09_artifacts.py,2,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/fcr03_provence_food_expansion_audit.py,2,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/ex12_field_offline_audit.py,2,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,MP01B_QA_REPORT.md,2,기타,review,개별 판단
+P6,FCR09_ACTIVE_P2_HANDOFF.csv,2,기타,review,개별 판단
+P6,EX15_WEATHER_DECISION_MATRIX.csv,2,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX15_P2_TRIGGER_WATCH.csv,2,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX14_WEATHER_FAILURE_READINESS.csv,2,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX14_FINAL_TRAVEL_READINESS_QA.md,2,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX14_ACTIVE_P2_FREEZE.csv,2,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,source/OPERATIONS/118_Phase10_Final_Fact_Verification_Report_v1.0.md,1,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,source/OPERATIONS/110_Phase8_Reservation_and_Operations_Lock_Register_v1.0.md,1,운영 레지스터,edit,예약·검증 캘린더 날짜 갱신
+P6,source/CURRENT/00_Governance/88_Editorial_Style_Guide_v1.0.md,1,기타,review,개별 판단
+P6,scripts/sync_days_8_11.py,1,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/qa_site_playwright.py,1,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/generate_fcr08_artifacts.py,1,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,scripts/create_new_paris_places.py,1,생성 스크립트,review,감사 CSV 생성기. 하드코딩 날짜 갱신 여부 판단
+P6,FCR06_WISH_VENUE_CLOSURE.csv,1,기타,review,개별 판단
+P6,EX15_TWINDOW_EXECUTION_LOG.csv,1,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX15_TRANSPORT_RECHECK.csv,1,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX15_FOOD_VOLATILE_RECHECK.csv,1,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P6,EX14_TRANSPORT_FINAL_AUDIT.csv,1,운영 대장,regenerate,현재 상태를 나타내는 살아있는 문서
+P7,tests/test_stay_transport_guards.py,10,테스트,edit,신 일정 기준으로 기대값 수정
+P7,tests/test_map_hub_improvement.py,1,테스트,edit,신 일정 기준으로 기대값 수정
+P7,tests/test_execution_ux_batch05.py,1,테스트,edit,신 일정 기준으로 기대값 수정
+P7,tests/test_execution_ux_batch04.py,1,테스트,edit,신 일정 기준으로 기대값 수정

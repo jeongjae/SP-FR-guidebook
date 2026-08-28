@@ -30,6 +30,7 @@ CHAPTER_FILES = {
     "barcelona": "04_Barcelona_Sitges_v2.0.md",
     "girona": "05_Girona_Collioure_Emporda_v2.1.md",
     "nice": "06_Nice_Cote_d_Azur_v2.0.md",
+    "verdon": "06B_Verdon_Moustiers_v1.0.md",
     "aix": "07_Aix_en_Provence_v2.0.md",
     "luberon": "08_Luberon_Farmhouse_v2.0.md",
     "avignon": "09_Avignon_Alpilles_Pont_du_Gard_v2.0.md",
