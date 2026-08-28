@@ -6,6 +6,7 @@
   "title": "오르세 미술관 집중 관람 & 로댕 조각 정원",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "07:30",
   "endTime": "20:30",
   "totalDuration": "13시간",
@@ -31,6 +32,15 @@
       "summary": "오르세 미술관 09:30 개장 첫 슬롯 입장을 위해 아침식사 후 08:45 출발",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "EARLY START",
+          "detail": "08:45 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Concorde/Invalides 환승 ➔ 09:15 오르세 Entrée 1 - Quai 도착 (약 25분 소요)."
+        }
+      ],
+      "executionNote": "오르세 09:30 개장 슬롯 15분 전(09:15) Entrée 1 - Quai 도착 목표로 08:45 출발.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +55,16 @@
       "lng": 2.3266,
       "summary": "옛 기차역 보자르 건축. 5층 인상주의 갤러리(마네 <풀밭 위의 점심식사>, 르누아르 <물랭 드 라 갈레트의 무도회>, 모네 <양산 쓴 여인>) ➔ 2층 후기인상주의(고흐 <자화상>, <아를의 별이 빛나는 밤>, 고갱, 쇠라) ➔ 0층 초기 아카데미즘 (3.5시간)",
       "menu": null,
-      "reservation": "사전 시간지정 예약 필수 (09:30 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TIMED ENTRY",
+          "detail": "Musée d'Orsay 09:30 슬롯 사전 시간지정 예매 필수 · 09:15까지 Entrée 1 - Quai (Entrance 1 - Quay) 도착 (월요일 휴관)."
+        }
+      ],
+      "executionNote": "1 Rue de la Légion d'Honneur. 시간지정 티켓 소지자는 Entrée 1 - Quai (센 강변 쪽 입구) 이용. 모바일 티켓 QR 준비.",
+      "officialUrl": "https://www.musee-orsay.fr/",
       "optional": false,
       "place_ref": "musee-d-orsay"
     },
@@ -56,30 +75,22 @@
       "end": "14:15",
       "name": "Café Varenne 7구 점심",
       "category": "food",
-      "lat": 48.857,
-      "lng": 2.325,
+      "lat": 48.8552,
+      "lng": 2.3218,
       "summary": "오르세에서 도보 10분, 식후 rue de Varenne를 8분 직진하면 로댕 미술관. 07:30~23:00 논스톱이라 관람이 밀려도 따뜻한 점심을 놓치지 않는다",
       "menu": "Confit de canard 수제 감자튀김 · Œufs mayonnaise · Pâté en croûte maison",
       "reservation": null,
-      "optional": false,
-      "place_ref": "cafe-varenne",
       "executionStatuses": [
         {
-          "type": "confirmed",
+          "type": "check",
           "label": "OPEN",
-          "detail": "월–토 07:30–23:00 논스톱(출처 4건 일치) · 일요일 휴무. 평균 체류 45분이라 75분 슬롯에 여유가 있다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "통 영업시간과 별개로 13:00–14:15에 따뜻한 요리 주문이 되는지 전화(+33 1 45 48 62 72) 확인"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Café Varenne (36 Rue de Varenne) 화요일 07:30–23:00 논스톱 영업 · 예약 없이 현장 착석 (13:00–14:15 식사)."
         }
-      ]
+      ],
+      "executionNote": "36 Rue de Varenne, 75007 Paris. 로댕 미술관 도보 8분 거리.",
+      "officialUrl": "https://www.facebook.com/CafeVarenne/",
+      "optional": false,
+      "place_ref": "cafe-varenne"
     },
     {
       "id": "musee-rodin",
@@ -92,7 +103,16 @@
       "lng": 2.3158,
       "summary": "18세기 오텔 비롱 저택 <키스>, 카미유 클로델 전시실 ➔ 야외 장미 정원 <생각하는 사람>, <지옥의 문>, <칼레의 시민> 사색 산책 (2시간)",
       "menu": null,
-      "reservation": "사전 시간지정 예약 권장 (14:30 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "TIMED TICKET",
+          "detail": "Musée Rodin (€14) 14:30 슬롯 온라인 예매 권장 · 화요일 10:00–18:30 정상 개관 (월요일 휴관)."
+        }
+      ],
+      "executionNote": "77 Rue de Varenne, 75007 Paris (정문 출입구). 화요일 정상 개관.",
+      "officialUrl": "https://www.musee-rodin.fr/",
       "optional": false,
       "place_ref": "musee-rodin"
     },
@@ -108,6 +128,15 @@
       "summary": "나폴레옹의 무덤이 있는 앵발리드 황금 돔과 에스플러나드 잔디광장 산책 (60분)",
       "menu": null,
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "오르세 3.5시간 관람 후 피로 시 생략하고 로댕 미술관 정원 카페 휴식 후 조기 복귀."
+        }
+      ],
+      "executionNote": "로댕 미술관 정문에서 Boulevard des Invalides 방향 외관 산책. 피로 시 삭제 1순위 레버.",
+      "officialUrl": "https://www.musee-armee.fr/",
       "optional": true,
       "place_ref": null
     },
@@ -118,11 +147,20 @@
       "end": "20:30",
       "name": "Café du Commerce 동네 저녁",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
-      "summary": "메트로 8호선(La Tour-Maubourg ➔ Lourmel) 귀환 후 15구 저녁",
+      "lat": 48.8466,
+      "lng": 2.2968,
+      "summary": "메트로 8호선(La Tour-Maubourg ➔ Commerce) 귀환 후 15구 아르데코 가든 브라세리 저녁",
       "menu": "에스카르고, 소고기 타르타르, 하우스 와인",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "OPEN",
+          "detail": "Café du Commerce (51 Rue du Commerce) 매일 11:30–23:00 논스톱 영업."
+        }
+      ],
+      "executionNote": "51 Rue du Commerce, 75015 Paris. 숙소 도보 7~8분.",
+      "officialUrl": "https://www.lecafeducommerce.com/",
       "optional": false,
       "place_ref": "cafe-du-commerce"
     }
@@ -180,7 +218,7 @@
   ],
   "food": [
     "박물관 전 가벼운 점심",
-    "숙소 저녁"
+    "숙소 저녁 (Café du Commerce)"
   ],
   "highlights": [
     "대형관 하루 한 곳",

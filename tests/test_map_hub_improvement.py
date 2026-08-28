@@ -107,7 +107,7 @@ class MapHubImprovementTests(unittest.TestCase):
     def test_route_urls_are_directions_with_valid_modes(self):
         """Route 항목이 Google Maps Directions 링크로 렌더링되고 이동수단이 일치하는지 확인."""
         routes = self.map_queries.get("routes", {})
-        self.assertEqual(len(routes), 78, "Batch 07 Day 28–31 실행 목적지 포함 총 78개 경로 항목이 정의되어야 함")
+        self.assertEqual(len(routes), 98, "Batch 08 Day 32–35 실행 목적지 포함 총 98개 경로 항목이 정의되어야 함")
 
         # Spot check key routes
         day9_nice_antibes = routes.get("day-09:nice-ville")

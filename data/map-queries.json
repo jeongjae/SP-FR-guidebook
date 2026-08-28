@@ -1791,12 +1791,12 @@
       "verifiedAt": "2026-08-27"
     },
     "day-34:versailles-transfer": {
-      "title": "15구 숙소 출발 ➔ RER C ➔ 베르사유 이동",
+      "title": "78 Rue de Lourmel ➔ Gare de Javel (RER C)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Gare de Versailles Château Rive Gauche",
-      "travelMode": "transit",
-      "evidence": "RER C Javel to Versailles Château Rive Gauche",
-      "verifiedAt": "2026-08-22"
+      "destination": "Gare de Javel, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Javel RER C station",
+      "verifiedAt": "2026-08-28"
     },
     "day-37:longchamp-transfer": {
       "title": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
@@ -2101,6 +2101,166 @@
       "travelMode": "transit",
       "evidence": "Metro 8 to Persian restaurant near lodging",
       "verifiedAt": "2026-08-27"
+    },
+    "day-32:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Musée d'Orsay (Entrée 1 - Quai)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to Musée d'Orsay entrance 1 - Quai",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-32:musee-d-orsay": {
+      "title": "Solférino ➔ Musée d'Orsay (Entrée 1 - Quai)",
+      "origin": "Solférino, 75007 Paris",
+      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Musée d'Orsay reserved entrance 1 - Quai on riverside",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-32:rue-du-bac-lunch": {
+      "title": "Musée d'Orsay ➔ Café Varenne 점심",
+      "origin": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "destination": "Café Varenne, 36 Rue de Varenne, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Rue du Bac to Café Varenne",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-32:musee-rodin": {
+      "title": "Café Varenne ➔ Musée Rodin (조각 정원)",
+      "origin": "Café Varenne, 36 Rue de Varenne, 75007 Paris",
+      "destination": "Musée Rodin, 77 Rue de Varenne, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Rue de Varenne to Musée Rodin entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-32:invalides-exterior": {
+      "title": "Musée Rodin ➔ Les Invalides (황금 돔 외관)",
+      "origin": "Musée Rodin, 77 Rue de Varenne, 75007 Paris",
+      "destination": "Hôtel des Invalides, Place des Invalides, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Invalides dome and esplanade",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-32:paris-return": {
+      "title": "Les Invalides ➔ Café du Commerce 저녁 (15구)",
+      "origin": "Hôtel des Invalides, Place des Invalides, 75007 Paris",
+      "destination": "Le Café du Commerce, 51 Rue du Commerce, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to brasserie dinner",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-33:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Petit Palais 출발",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 + 1 to Petit Palais",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-33:petit-palais": {
+      "title": "Champs-Élysées - Clemenceau ➔ Petit Palais (시립미술관)",
+      "origin": "Champs-Élysées - Clemenceau, 75008 Paris",
+      "destination": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Petit Palais main entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-33:champs-elysees-lunch": {
+      "title": "Petit Palais ➔ Chez Savy 점심",
+      "origin": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
+      "destination": "Chez Savy, 23 Rue Bayard, 75008 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Chez Savy in 8th arr.",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-33:fashion-week-montaigne": {
+      "title": "Chez Savy ➔ Palais de Tokyo (패션위크 서부 축)",
+      "origin": "Chez Savy, 23 Rue Bayard, 75008 Paris",
+      "destination": "Palais de Tokyo, 13 Avenue du Président Wilson, 75116 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk through Avenue Montaigne to Palais de Tokyo",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-33:paris-return": {
+      "title": "Palais de Tokyo ➔ Stéphane Martin 저녁 (15구)",
+      "origin": "Palais de Tokyo, 13 Avenue du Président Wilson, 75116 Paris",
+      "destination": "Stéphane Martin, 67 Rue des Entrepreneurs, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 9 + 8 to 15th arr. bistro",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-34:versailles-palace": {
+      "title": "Gare de Versailles Château Rive Gauche ➔ Château de Versailles (본관)",
+      "origin": "Gare de Versailles Château Rive Gauche, 78000 Versailles",
+      "destination": "Château de Versailles, Place d'Armes, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Walk from train station to Palace main entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-34:versailles-lunch": {
+      "title": "Château de Versailles ➔ La Flottille 점심 (대운하)",
+      "origin": "Château de Versailles, Place d'Armes, 78000 Versailles",
+      "destination": "La Flottille, Parc du Château de Versailles, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Walk through central garden axis to Grand Canal head",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-34:versailles-gardens": {
+      "title": "La Flottille ➔ 베르사유 대정원 & 분수",
+      "origin": "La Flottille, Parc du Château de Versailles, 78000 Versailles",
+      "destination": "Bassin d'Apollon, Parc du Château de Versailles, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Garden stroll around Apollo and Latona fountains",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-34:trianon-hamlet": {
+      "title": "베르사유 대정원 ➔ Grand Trianon & 왕비의 촌락",
+      "origin": "Bassin d'Apollon, Parc du Château de Versailles, 78000 Versailles",
+      "destination": "Grand Trianon, Porte Sainte-Antoine, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Walk or mini-train to Trianon palaces",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-34:paris-return": {
+      "title": "Gare de Versailles ➔ Le Grand Pan 저녁 (15구)",
+      "origin": "Gare de Versailles Château Rive Gauche, 78000 Versailles",
+      "destination": "Le Grand Pan, 20 Rue Rosenwald, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "RER C to Javel/Convention for bistro dinner",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-35:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Boulangerie Pichard",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Boulangerie Pichard, 68 Rue Cambronne, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Morning routine sandwich procurement in 15th arr.",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-35:musee-du-louvre": {
+      "title": "78 Rue de Lourmel ➔ Musée du Louvre (유리 피라미드)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée du Louvre, Rue de Rivoli, 75001 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 + 1 to Louvre pyramid entrance",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-35:cour-carree-seine": {
+      "title": "Musée du Louvre ➔ Cour Carrée & Pont des Arts 일몰",
+      "origin": "Musée du Louvre, Rue de Rivoli, 75001 Paris",
+      "destination": "Pont des Arts, 75006 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk through Louvre Cour Carrée courtyard to Pont des Arts bridge",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-35:paris-return": {
+      "title": "Pont des Arts ➔ Sawadee 저녁 (15구)",
+      "origin": "Pont des Arts, 75006 Paris",
+      "destination": "Sawadee, 53 Avenue Émile Zola, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro to Charles Michels for Thai dinner",
+      "verifiedAt": "2026-08-28"
     }
   },
   "nonMapStops": [
