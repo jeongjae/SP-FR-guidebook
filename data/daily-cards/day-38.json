@@ -6,6 +6,7 @@
   "title": "개선문상 후 회복 & 자크마르-앙드레 & 몽소 공원",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "09:00",
   "endTime": "20:30",
   "totalDuration": "11시간 30분",
@@ -31,6 +32,15 @@
       "summary": "경마 축제 다음 날 느린 기상, 세탁, 숙소 브런치 및 가벼운 15구 동네 산책. 15구 아티장 빵집은 월·화 휴무가 흔해 토요일 Marché Lecourbe 장보기로 채워 둔다",
       "menu": "애플 턴오버, 브리오슈, 과일 샐러드",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "REST & RECOVERY",
+          "detail": "오전 알람 없는 휴식, 세탁 루틴 및 전날 조달 식재료 브런치 · 14:00 숙소 출발."
+        }
+      ],
+      "executionNote": "경마 축제 다음 날 충전 오전. 14:00 메트로 8호선(Lourmel) 탑승.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
@@ -45,7 +55,16 @@
       "lng": 2.3106,
       "summary": "19세기 벨 에포크 대저택, 나선형 계단과 겨울 정원, 보티첼리 <성모자상>, 티에폴로 천장 프레스코화 관람 (2시간)",
       "menu": "Café Jacquemart-André 티 & 페이스트리",
-      "reservation": "사전 시간지정 예약 권장 (15:00 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TIMED ENTRY",
+          "detail": "Musée Jacquemart-André 15:00 슬롯 사전 시간지정 예매 필수 · 월요일 10:00–18:00 정상 개관 (휴무 없음)."
+        }
+      ],
+      "executionNote": "158 Boulevard Haussmann, 75008 Paris. 메트로 9/13호선 Miromesnil역 또는 9호선 Saint-Philippe-du-Roule역.",
+      "officialUrl": "https://www.musee-jacquemart-andre.com/",
       "optional": false,
       "place_ref": "musee-jacquemart-andre"
     },
@@ -61,7 +80,16 @@
       "summary": "8구 귀족적 풍경의 몽소 공원. 코린트식 고대 열주 나우마키아(Naumachia) 연못과 피라미드 조형물 산책 (90분)",
       "menu": null,
       "reservation": null,
-      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "피로 시 몽소 공원 산책을 생략하고 자크마르-앙드레 카페 티타임 후 15구 조기 복귀."
+        }
+      ],
+      "executionNote": "35 Boulevard de Courcelles, 75008 Paris (자크마르-앙드레 도보 6분). 피로 시 단축 레버.",
+      "officialUrl": "https://www.paris.fr/",
+      "optional": true,
       "place_ref": null
     },
     {
@@ -71,30 +99,22 @@
       "end": "20:30",
       "name": "Le Volant Basque 바스크 저녁 (15구)",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
+      "lat": 48.8502,
+      "lng": 2.2872,
       "summary": "자크마르-앙드레와 몽소 공원 뒤 15구 귀환. 월요일 저녁에 문을 여는 몇 안 되는 정통 프렌치이고, 18:45에 열어 피곤한 날에도 이르게 먹을 수 있다",
       "menu": "Axoa de veau au piment d'Espelette · Pâté basque au piment doux · Trou normand €12",
       "reservation": null,
-      "optional": false,
-      "place_ref": "le-volant-basque",
       "executionStatuses": [
         {
           "type": "book",
           "label": "BOOK",
-          "detail": "월요일은 저녁만 18:45–22:45 영업(공식 2개 페이지 일치) · 일요일 휴무. 월요일은 특히 예약 권장 — +33 1 45 75 27 67"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "개별 요리 가격은 카테고리 범위(전채 €9~16 · 메인 €23~32)만 공개돼 있다"
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "detail": "Le Volant Basque (13 Rue Béatrix Dussane) 19:00 저녁 사전 예약 (+33 1 45 75 27 67) · 월요일 18:45–22:45 정상 영업."
         }
-      ]
+      ],
+      "executionNote": "13 Rue Béatrix Dussane, 75015 Paris. 숙소 도보 7~8분 (Charles Michels / Dupleix 인근).",
+      "officialUrl": "https://www.levolantbasque.fr/",
+      "optional": false,
+      "place_ref": "le-volant-basque"
     }
   ],
   "legs": [
