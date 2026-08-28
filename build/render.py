@@ -2553,6 +2553,9 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 {group(done, False)}
 
 {dropped_html}
+
+<div class="btn-row"><a class="btn btn-secondary" href="../offline.html">
+  {ic('download')}오프라인 준비</a></div>
 </div></div>""")
 
     out["paris-museums.html"] = build_paris_museum_booking()
