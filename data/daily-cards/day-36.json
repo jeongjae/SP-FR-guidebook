@@ -6,6 +6,7 @@
   "title": "마르모탕 모네 <인상, 해돋이> & 파시 고급 지구 산책",
   "sourceStatus": "authoritative",
   "prototypeType": null,
+  "dayType": "city",
   "startTime": "08:00",
   "endTime": "20:00",
   "totalDuration": "12시간",
@@ -28,9 +29,18 @@
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "익일 10/4 개선문상 경마 축제를 대비한 여유로운 오전 일상. 피샤르 바게트와 토요일에 서는 Marché Lecourbe 의 제철 과일·치즈를 조달하고 가벼운 점심. 월요일(Day 38)에는 15구 빵집이 닫으므로 그 몫도 이 날 담는다",
+      "summary": "익일 10/4 개선문상 경마 축제를 대비한 여유로운 오전 일상. 피샤르 바게트와 토요일에 서는 Marché Lecourbe의 제철 과일·치즈를 조달하고 가벼운 점심. 월요일(Day 38)에는 15구 빵집이 닫으므로 그 몫도 이 날 담는다",
       "menu": "피샤르 바게트, 제철 무화과, 사과, 바농 치즈",
       "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "MARKET & BAKERY",
+          "detail": "Marché Lecourbe 토요 시장(07:00–14:30) 및 Boulangerie Pichard(07:00–13:30, 15:30–20:00) 토요일 정상 영업 · 아침 식재료 및 간식 조달."
+        }
+      ],
+      "executionNote": "Marché Lecourbe(Rue Lecourbe, Rue Vasco de Gama~Rue Croix Nivert 구간) 토요 장보기 ➔ 숙소 점심.",
+      "officialUrl": null,
       "optional": false,
       "place_ref": "boulangerie-pichard"
     },
@@ -45,7 +55,16 @@
       "lng": 2.2672,
       "summary": "인상주의라는 이름을 탄생시킨 모네의 <인상, 해돋이(Impression, soleil levant)> 원작 및 지베르니 말년 대형 수련 컬렉션, 베르트 모리조 전시실 집중 감상 (2시간)",
       "menu": null,
-      "reservation": "사전 시간지정 예매 권장 (14:00 슬롯)",
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "book",
+          "label": "TIMED ENTRY",
+          "detail": "Musée Marmottan Monet 14:00 슬롯 온라인 예매 권장 · 토요일 10:00–18:00 정상 개관 (월요일 휴관)."
+        }
+      ],
+      "executionNote": "2 Rue Louis-Boilly, 75016 Paris. 메트로 9호선 La Muette역 또는 32번 버스 Louis Boilly 하차.",
+      "officialUrl": "https://www.marmottan.fr/",
       "optional": false,
       "place_ref": "musee-marmottan-monet"
     },
@@ -61,7 +80,16 @@
       "summary": "라늘라 정원 조각 산책 ➔ 16구 파시(Passy) 부르주아 지구, 발자크 생가 인근 고즈넉한 골목 산책 (90분)",
       "menu": "파시 제과점 마카롱, 에스프레소",
       "reservation": null,
-      "optional": false,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "우천 또는 피로 시 라늘라 정원 산책을 축소하고 15구 숙소로 조기 복귀."
+        }
+      ],
+      "executionNote": "Jardin du Ranelagh ➔ Rue de Passy ➔ Maison de Balzac 외관. 피로 시 단축 레버.",
+      "officialUrl": "https://www.paris.fr/",
+      "optional": true,
       "place_ref": null
     },
     {
@@ -71,30 +99,22 @@
       "end": "20:00",
       "name": "Le Relais du 15ème 조기 저녁",
       "category": "food",
-      "lat": 48.8472,
-      "lng": 2.2894,
+      "lat": 48.8475,
+      "lng": 2.2905,
       "summary": "익일 개선문상 경마를 위해 일찍 쉬는 날이다. 논스톱 영업이라 18시에 먹고 19:30에 들어올 수 있고 예약도 필요 없다",
       "menu": "Pizza Margherita · Penne arrabbiata · Tiramisu",
       "reservation": null,
-      "optional": false,
-      "place_ref": "le-relais-du-15eme",
       "executionStatuses": [
         {
-          "type": "confirmed",
-          "label": "OPEN",
-          "detail": "매일 11:00–22:30 논스톱 · 예약 불필요"
-        },
-        {
-          "type": "optional",
-          "label": "OPTIONAL",
-          "detail": "조기 취침이 우선이면 숙소식으로 대체한다"
-        },
-        {
           "type": "check",
-          "label": "CHECK",
-          "detail": "좌표 미확보 — 지도 핀은 권역 기준이고 길찾기는 상호·주소 검색으로 연다"
+          "label": "OPEN",
+          "detail": "Le Relais du 15ème (59 Rue de Lourmel) 토요일 11:00–22:30 논스톱 영업 · 예약 없이 현장 착석 (숙소 도보 2분)."
         }
-      ]
+      ],
+      "executionNote": "59 Rue de Lourmel, 75015 Paris. 숙소 도보 2분 거리 이탈리안 비스트로.",
+      "officialUrl": null,
+      "optional": false,
+      "place_ref": "le-relais-du-15eme"
     }
   ],
   "legs": [

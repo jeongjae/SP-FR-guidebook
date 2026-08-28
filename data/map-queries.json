@@ -1799,20 +1799,20 @@
       "verifiedAt": "2026-08-28"
     },
     "day-37:longchamp-transfer": {
-      "title": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
+      "title": "78 Rue de Lourmel ➔ Porte d'Auteuil (Navette 셔틀)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Hippodrome ParisLongchamp",
+      "destination": "Porte d'Auteuil, 75016 Paris",
       "travelMode": "transit",
-      "evidence": "Metro 10 to Porte d'Auteuil and France Galop navette",
-      "verifiedAt": "2026-08-22"
+      "evidence": "Metro 10 to Porte d'Auteuil for France Galop free shuttle",
+      "verifiedAt": "2026-08-28"
     },
     "day-37:paris-return": {
-      "title": "파리롱샹 ➔ 15구 숙소 귀환 & 저녁",
-      "origin": "Hippodrome ParisLongchamp",
-      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "title": "Porte d'Auteuil ➔ Breizh Café 저녁 (15구)",
+      "origin": "Porte d'Auteuil, 75016 Paris",
+      "destination": "Breizh Café, 1 Place Étienne Pernet, 75015 Paris",
       "travelMode": "transit",
-      "evidence": "Navette and Metro 10 back to 15e",
-      "verifiedAt": "2026-08-22"
+      "evidence": "Metro 10 to Charles Michels / Félix Faure for galette dinner",
+      "verifiedAt": "2026-08-28"
     },
     "day-39:marais-walk-carnavalet": {
       "title": "마레 지구 골목 산책 ➔ 카르나발레 이동",
@@ -2260,6 +2260,126 @@
       "destination": "Sawadee, 53 Avenue Émile Zola, 75015 Paris",
       "travelMode": "transit",
       "evidence": "Metro to Charles Michels for Thai dinner",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-36:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Marché Lecourbe",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Marché Lecourbe, Rue Lecourbe, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Saturday neighborhood market walk in 15th arr.",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-36:marmottan-monet": {
+      "title": "78 Rue de Lourmel ➔ Musée Marmottan Monet",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée Marmottan Monet, 2 Rue Louis Boilly, 75016 Paris",
+      "travelMode": "transit",
+      "evidence": "Bus 32 or Metro 9 to Marmottan Monet museum",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-36:ranelagh-passy": {
+      "title": "Musée Marmottan Monet ➔ Jardin du Ranelagh & Passy",
+      "origin": "Musée Marmottan Monet, 2 Rue Louis Boilly, 75016 Paris",
+      "destination": "Jardin du Ranelagh, 1 Avenue Raphaël, 75016 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk around Ranelagh garden and historic Passy district",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-36:paris-return": {
+      "title": "Passy ➔ Le Relais du 15ème 저녁",
+      "origin": "Passy, 75016 Paris",
+      "destination": "Le Relais du 15ème, 59 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 6/8 to Lourmel for Italian dinner",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-37:prix-de-l-arc": {
+      "title": "Porte d'Auteuil ➔ Hippodrome de ParisLongchamp",
+      "origin": "Porte d'Auteuil, 75016 Paris",
+      "destination": "Hippodrome de ParisLongchamp, 2 Route des Tribunes, 75016 Paris",
+      "travelMode": "transit",
+      "evidence": "Free shuttle bus to ParisLongchamp racecourse main gates",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-38:morning-routine": {
+      "title": "78 Rue de Lourmel (오전 휴식·충전)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Post-Prix de l'Arc recovery morning in lodging",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-38:jacquemart-andre": {
+      "title": "78 Rue de Lourmel ➔ Musée Jacquemart-André",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée Jacquemart-André, 158 Boulevard Haussmann, 75008 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 + 9 to Miromesnil for Jacquemart-André museum",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-38:parc-monceau": {
+      "title": "Musée Jacquemart-André ➔ Parc Monceau",
+      "origin": "Musée Jacquemart-André, 158 Boulevard Haussmann, 75008 Paris",
+      "destination": "Parc Monceau, 35 Boulevard de Courcelles, 75008 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to aristocratic Parc Monceau",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-38:paris-return": {
+      "title": "Parc Monceau ➔ Le Volant Basque 저녁 (15구)",
+      "origin": "Parc Monceau, 35 Boulevard de Courcelles, 75008 Paris",
+      "destination": "Le Volant Basque, 13 Rue Béatrix Dussane, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 2 + 8/6 to Dupleix / Charles Michels for Basque dinner",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-39:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Marché Convention",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Marché Convention, Rue de Convention, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Tuesday market grocery shopping walk in 15th arr.",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-39:musee-d-orsay-cassatt": {
+      "title": "78 Rue de Lourmel ➔ Musée d'Orsay (Entrée 1 - Quai)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8/12 to Musée d'Orsay Mary Cassatt special exhibition opening",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-39:musee-picasso": {
+      "title": "Musée d'Orsay ➔ Musée Picasso Paris (마레)",
+      "origin": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "destination": "Musée National Picasso-Paris, 5 Rue de Thorigny, 75003 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 12 + 1/8 to Saint-Sébastien - Froissart for Picasso museum",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-39:musee-carnavalet": {
+      "title": "Musée Picasso Paris ➔ Musée Carnavalet & Place des Vosges",
+      "origin": "Musée National Picasso-Paris, 5 Rue de Thorigny, 75003 Paris",
+      "destination": "Place des Vosges, 75004 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk through Marais historic mansions to Place des Vosges",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-39:chez-janou-dinner": {
+      "title": "Place des Vosges ➔ Chez Janou 저녁",
+      "origin": "Place des Vosges, 75004 Paris",
+      "destination": "Chez Janou, 2 Rue Roger Verlomme, 75003 Paris",
+      "travelMode": "walking",
+      "evidence": "Short walk from Place des Vosges to Chez Janou bistro",
+      "verifiedAt": "2026-08-28"
+    },
+    "day-39:paris-return": {
+      "title": "Chez Janou ➔ 78 Rue de Lourmel (15구)",
+      "origin": "Chez Janou, 2 Rue Roger Verlomme, 75003 Paris",
+      "destination": "78 Rue de Lourmel, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 (Chemin Vert ➔ Lourmel) direct train home",
       "verifiedAt": "2026-08-28"
     }
   },
