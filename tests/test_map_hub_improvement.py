@@ -107,7 +107,7 @@ class MapHubImprovementTests(unittest.TestCase):
     def test_route_urls_are_directions_with_valid_modes(self):
         """Route 항목이 Google Maps Directions 링크로 렌더링되고 이동수단이 일치하는지 확인."""
         routes = self.map_queries.get("routes", {})
-        self.assertEqual(len(routes), 45, "Batch 05 Day 20·23 실행 목적지 포함 총 45개 경로 항목이 정의되어야 함")
+        self.assertEqual(len(routes), 130, "Batch 10 Day 40–43 실행 목적지 포함 총 130개 경로 항목이 정의되어야 함")
 
         # Spot check key routes
         day9_nice_antibes = routes.get("day-09:nice-ville")
@@ -116,19 +116,19 @@ class MapHubImprovementTests(unittest.TestCase):
         self.assertEqual(day9_nice_antibes["destination"], "Gare d'Antibes")
         self.assertEqual(day9_nice_antibes["travelMode"], "transit")
 
-        day15_aix_marseille = routes.get("day-15:aix-station")
+        day15_aix_marseille = routes.get("day-14:aix-station")
         self.assertIsNotNone(day15_aix_marseille)
         self.assertEqual(day15_aix_marseille["origin"], "Gare d'Aix-en-Provence")
         self.assertEqual(day15_aix_marseille["destination"], "Marseille Saint-Charles")
         self.assertEqual(day15_aix_marseille["travelMode"], "transit")
 
-        day14_cassis_aix = routes.get("day-14:cassis-vehicle-return")
+        day14_cassis_aix = routes.get("day-16:cassis-vehicle-return")
         self.assertIsNotNone(day14_cassis_aix)
         self.assertEqual(day14_cassis_aix["origin"], "Parking relais des Gorguettes, Cassis")
         self.assertEqual(day14_cassis_aix["destination"], "2 Place Coimbra, Résidence Les Toits de Méjanes, 13090 Aix-en-Provence")
         self.assertEqual(day14_cassis_aix["travelMode"], "driving")
 
-        day14_port_miou = routes.get("day-14:cassis-port-miou")
+        day14_port_miou = routes.get("day-16:cassis-port-miou")
         self.assertIsNotNone(day14_port_miou)
         self.assertEqual(day14_port_miou["destination"], "Parking relais des Gorguettes, Cassis")
         self.assertEqual(day14_port_miou["travelMode"], "transit")
@@ -150,7 +150,7 @@ class MapHubImprovementTests(unittest.TestCase):
         day9_html = (ROOT / "site" / "daily" / "day-09.html").read_text(encoding="utf-8")
         self.assertIn("https://www.google.com/maps/dir/?api=1&amp;origin=Gare%20de%20Nice-Ville&amp;destination=Gare%20d%27Antibes&amp;travelmode=transit", day9_html)
 
-        day15_html = (ROOT / "site" / "daily" / "day-15.html").read_text(encoding="utf-8")
+        day15_html = (ROOT / "site" / "daily" / "day-14.html").read_text(encoding="utf-8")  # RS01: Marseille일 이동
         self.assertIn("https://www.google.com/maps/dir/?api=1&amp;origin=Gare%20d%27Aix-en-Provence&amp;destination=Marseille%20Saint-Charles&amp;travelmode=transit", day15_html)
 
         day27_html = (ROOT / "site" / "daily" / "day-27.html").read_text(encoding="utf-8")
@@ -170,11 +170,12 @@ class MapHubImprovementTests(unittest.TestCase):
             ("barcelona", "Barcelona", 17),
             ("girona", "Girona · Empordà", 6),
             ("nice", "Nice · Côte d'Azur", 26),
+            ("verdon", "Verdon · Moustiers", 8),
             ("aix", "Aix-en-Provence", 21),
-            ("luberon", "Luberon", 11),
-            ("avignon", "Avignon · Alpilles", 25),
-            ("lyon", "Lyon", 19),
-            ("paris", "Paris", 46),
+            ("luberon", "Luberon", 9),
+            ("avignon", "Avignon · Alpilles", 24),
+            ("lyon", "Lyon", 21),
+            ("paris", "Paris", 50),
         ]
         last_pos = 0
         total_pins = 0
@@ -187,15 +188,15 @@ class MapHubImprovementTests(unittest.TestCase):
             total_pins += count
             last_pos = pos
 
-        self.assertEqual(total_pins, 171, "Batch 05 Hertz·Lyon 숙소 실행 목적지 포함 총 핀 수는 171이어야 함")
+        self.assertEqual(total_pins, 182, "RS01 Verdon 삽입 후 총 핀 수는 182이어야 함")
 
         # 3. 8개의 map-card 및 script data가 존재하는지 확인
         map_cards = re.findall(r'<div class="map-card">', map_html)
-        self.assertEqual(len(map_cards), 8, "8개 Region별 map-card가 존재해야 함")
+        self.assertEqual(len(map_cards), 9, "9개 Region별 map-card가 존재해야 함")
 
         # 4. 각 Region별 지도 marker와 목록 번호 일치성 (1부터 N까지 순차 번호)
         scripts = re.findall(r'<script type="application/json" class="map-data-script">({.*?})</script>', map_html)
-        self.assertEqual(len(scripts), 8, "8개 Region map-data script가 존재해야 함")
+        self.assertEqual(len(scripts), 9, "9개 Region map-data script가 존재해야 함")
         for (r_slug, r_name, expected_count), script_json in zip(expected_regions, scripts):
             data = json.loads(script_json)
             pins = data.get("pins", [])
@@ -210,7 +211,7 @@ class MapHubImprovementTests(unittest.TestCase):
         # 6. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
         date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
         matches = date_pattern.findall(map_html)
-        self.assertEqual(len(matches), 171, "171개 항목 모두 날짜 메타가 존재해야 함")
+        self.assertEqual(len(matches), 182, "182개 항목 모두 날짜 메타가 존재해야 함")
 
         # 7. Verify specific items
         self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)

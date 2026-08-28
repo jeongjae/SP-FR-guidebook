@@ -2105,6 +2105,132 @@
       "optional": false,
       "status": "confirmed",
       "coordinatesVerified": "T1 터미널 좌표 (OSM Nominatim) · 반납 동선은 공항 표지 따름"
+    },
+    {
+      "id": "moustiers-stay-candidate",
+      "name": "Moustiers-Sainte-Marie 숙소(미정)",
+      "city": "Moustiers-Sainte-Marie",
+      "type": "accommodation",
+      "lat": 43.8456,
+      "lng": 6.2214,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Moustiers-Sainte-Marie+숙소(미정)",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "candidate",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
+    },
+    {
+      "id": "moustiers-sainte-marie",
+      "name": "Moustiers-Sainte-Marie",
+      "city": "Moustiers-Sainte-Marie",
+      "type": "attraction",
+      "lat": 43.8456,
+      "lng": 6.2214,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Moustiers-Sainte-Marie",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
+    },
+    {
+      "id": "point-sublime",
+      "name": "Belvédère du Point Sublime",
+      "city": "Rougon",
+      "type": "attraction",
+      "lat": 43.7947,
+      "lng": 6.4022,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Belvédère+du+Point+Sublime",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
+    },
+    {
+      "id": "castellane",
+      "name": "Castellane",
+      "city": "Castellane",
+      "type": "attraction",
+      "lat": 43.8467,
+      "lng": 6.5128,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Castellane",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "planned",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
+    },
+    {
+      "id": "route-des-cretes",
+      "name": "Route des Crêtes (D23)",
+      "city": "La Palud-sur-Verdon",
+      "type": "attraction",
+      "lat": 43.7789,
+      "lng": 6.3421,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Route+des+Crêtes+(D23)",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
+    },
+    {
+      "id": "pont-du-galetas",
+      "name": "Pont du Galetas",
+      "city": "Aiguines",
+      "type": "attraction",
+      "lat": 43.7674,
+      "lng": 6.2216,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pont+du+Galetas",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
+    },
+    {
+      "id": "valensole",
+      "name": "Plateau de Valensole",
+      "city": "Valensole",
+      "type": "attraction",
+      "lat": 43.8377,
+      "lng": 5.9836,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Plateau+de+Valensole",
+      "address": "",
+      "private": false,
+      "approximate": true,
+      "optional": true,
+      "status": "planned",
+      "legacySources": [
+        "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
+      ]
     }
   ]
 }

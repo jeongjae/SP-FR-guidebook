@@ -78,8 +78,8 @@ ALIAS = {
 
 # 지역 챕터가 덮는 Day 범위. 이 밖의 값은 파싱 사고다 —
 # "Day1 시간표" 같은 문서 이름의 숫자가 Day 번호로 잡히면 리옹 식당이 Day 1 에 선다.
-REGION_DAYS = {"barcelona": (1, 4), "girona": (4, 7), "nice": (7, 12), "aix": (12, 16),
-               "luberon": (16, 19), "avignon": (19, 23), "lyon": (23, 27), "paris": (27, 43)}
+REGION_DAYS = {"barcelona": (1, 4), "girona": (4, 7), "nice": (7, 12), "verdon": (12, 13),
+               "aix": (13, 17), "luberon": (17, 19), "avignon": (19, 23), "lyon": (23, 27), "paris": (27, 43)}
 
 
 def main():

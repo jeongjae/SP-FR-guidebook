@@ -80,6 +80,7 @@ FACT_LABEL = {
     "hours": "운영시간", "closed": "휴무", "price_adult": "요금",
     "price_range": "가격대", "booking": "예약", "getting_there": "가는 법",
     "duration": "소요시간", "address": "주소", "phone": "전화", "note": "메모",
+    "parking": "주차",
 }
 
 EXECUTION_STATUS_UI = {
@@ -1356,6 +1357,50 @@ def acc(title: str, body_md: str) -> str:
             "</div></details>")
 
 
+SCOPE_LABEL = {"region": "광역", "city": "도시", "site": "유적"}
+
+
+def tourist_map_block(r, rel: str) -> str:
+    """관광청 조망지도 — '이 고장에서 뭐가 어디 있나' 를 한 장으로 답한다.
+
+    구글 지도는 목적지를 하나 찍어야 답을 준다. 조망지도는 반대다 — 무엇이
+    유명하고 서로 얼마나 떨어져 있는지를 먼저 보여 준다. 현지 관광안내소에서
+    받아야 하는 종이를 미리 받아 넣은 것이므로 오프라인에서 열려야 한다.
+
+    이미지를 통째로 링크로 감싼다. 눌러 새 탭에서 열면 브라우저의 확대가
+    그대로 듣는다 — 지도에 자바스크립트 확대를 붙이지 않는 이유다.
+    """
+    if not r.tourist_maps:
+        return ""
+    cards = []
+    for m in r.tourist_maps:
+        src = f'{rel}/{m["localPath"]}'
+        scope = SCOPE_LABEL.get(m["scope"], "")
+        cards.append(
+            '<figure class="map-sheet">'
+            f'<a href="{src}" target="_blank" rel="noopener">'
+            f'<img src="{src}" alt="{esc(m["title"])}" loading="lazy" decoding="async"></a>'
+            '<figcaption>'
+            f'<div class="metarow"><span class="label">{esc(scope)}</span>'
+            f'<strong>{esc(m["place"])}</strong>'
+            f'<span>{esc(m["edition"])}</span></div>'
+            f'<h3>{esc(m["title"])}</h3>'
+            f'<p>{esc(m["usage"])}</p>'
+            f'<p class="fine-print"><strong>저작권</strong> · {esc(m["license"])} '
+            f'권리자: {esc(m["rightsHolder"])}<br>{esc(m["redistributionBasis"])}</p>'
+            '<div class="actions">'
+            f'<a class="btn btn-secondary" href="{src}" target="_blank" rel="noopener">크게 보기</a>'
+            f'<a class="btn btn-secondary" href="{esc(m["sourceUrl"])}" target="_blank" rel="noopener">원본 내려받기</a>'
+            '</div></figcaption></figure>')
+    intro = ('<div class="prose"><p>현지 관광안내소가 종이로 나눠 주는 지도다. '
+             '목적지를 찍어 찾아가는 지도가 아니라, 이 고장에서 무엇이 유명하고 '
+             '서로 얼마나 떨어져 있는지를 한눈에 보여 주는 쪽이다. 눌러서 크게 '
+             '열면 확대된다 — 인터넷이 끊겨도 열린다.</p></div>')
+    return ('<div class="stack-lg" id="maps">'
+            + sec_head("OVERVIEW MAPS", "조망지도", rule=True)
+            + intro + "".join(cards) + "</div>")
+
+
 def build_region(r: Region, trip: Trip) -> str:
     """Region — 지역을 이해하고 고르는 페이지. 상위 섹션은 여섯 개다.
 
@@ -1386,9 +1431,12 @@ def build_region(r: Region, trip: Trip) -> str:
                     f'sizes="100vw" alt="{esc(hero_img.get("altKo") or r.name)}" '
                     f'fetchpriority="high" decoding="async">')
 
-    sections = [("overview", "개요"), ("attractions", "볼거리"),
-                ("food", "식당·카페"), ("stay", "숙소"),
-                ("life", "생활권"), ("transport", "교통")]
+    sections = [("overview", "개요")]
+    if r.tourist_maps:
+        sections.append(("maps", "조망지도"))
+    sections += [("attractions", "볼거리"),
+                 ("food", "식당·카페"), ("stay", "숙소"),
+                 ("life", "생활권"), ("transport", "교통")]
     subnav = tabs_strip([(label, f"#{key}", False) for key, label in sections])
 
     parts = [f"""<div class="hero">
@@ -1454,6 +1502,9 @@ def build_region(r: Region, trip: Trip) -> str:
                        ("이 지역을 이해하는 층", "context")):
         parts.append(acc(layer_title(r.slug, key, title), ed.get(key, "")))
     parts.append("</div>")
+
+    # ================================================== 1.5 · 조망지도
+    parts.append(tourist_map_block(r, rel))
 
     # ================================================== 2 · 볼거리
     parts.append('<div class="stack-lg" id="attractions">')
@@ -1863,6 +1914,8 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
             return "girona"
         if "nice" in s.id or "cannes" in s.id or "antibes" in s.id or "monaco" in s.id or "menton" in s.id or "eze" in s.id or "villefranche" in s.id:
             return "nice"
+        if "moustiers" in s.id or "verdon" in s.id or "palud" in s.id or "galetas" in s.id or "valensole" in s.id or "castellane" in s.id or "sublime" in s.id or "cretes" in s.id:
+            return "verdon"
         if "aix" in s.id or "marseille" in s.id or "cassis" in s.id or "calanques" in s.id or "vallon" in s.id:
             return "aix"
         if "luberon" in s.id or "gordes" in s.id or "roussillon" in s.id or "farm" in s.id or "bories" in s.id:
@@ -2219,6 +2272,9 @@ def write_assets(trip: Trip) -> None:
     transport_guides = ROOT / "source" / "ASSETS" / "transport-guides"
     if transport_guides.exists():
         shutil.copytree(transport_guides, out / "transport-guides", dirs_exist_ok=True)
+    tourist_maps = ROOT / "source" / "ASSETS" / "tourist-maps"
+    if tourist_maps.exists():
+        shutil.copytree(tourist_maps, out / "tourist-maps", dirs_exist_ok=True)
 
     # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))

@@ -65,7 +65,9 @@ class StayTransportGuards(unittest.TestCase):
                    "www.tcl.fr", "tcl.fr", "www.ter.sncf.com", "ter.sncf.com"}
         allowed.update({"www.orizo.fr", "orizo.fr", "www.lio-occitanie.fr",
                         "lio-occitanie.fr", "www.ter.sncf.com", "ter.sncf.com"})
-        allowed.update({"zou.maregionsud.fr", "www.luberon-apt.fr", "luberon-apt.fr"})
+        allowed.update({"zou.maregionsud.fr", "www.luberon-apt.fr", "luberon-apt.fr",
+                        "www.verdontourisme.com", "verdontourisme.com",
+                        "www.moustiers.fr", "moustiers.fr"})
         # 운영사만 공식인 것은 아니다. 자동차 접근·시장 접근처럼 운영사가 없는
         # 항목은 시청·관광청 페이지가 1차 출처다.
         allowed.update({"www.tourisme-collioure.com", "tourisme-collioure.com",
@@ -177,9 +179,9 @@ class StayTransportGuards(unittest.TestCase):
         for token in ("Aix는 도보, Marseille에서는 같은 카드로 바로 태그",
                       "1인 1여정 €1.20", "1인 1여정 €1.70", "별도 TER", "L50"):
             self.assertIn(token, rendered)
-        for day in range(12, 17):
+        for day in range(13, 18):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
-        day15 = json.loads((ROOT / "data" / "daily-cards" / "day-15.json").read_text(encoding="utf-8"))
+        day15 = json.loads((ROOT / "data" / "daily-cards" / "day-14.json").read_text(encoding="utf-8"))
         day15_text = json.dumps(day15, ensure_ascii=False)
         for token in ("TER Aix-en-Provence Centre", "RTM 60", "RTM 83", "Metro M1"):
             self.assertIn(token, day15_text)
@@ -208,8 +210,8 @@ class StayTransportGuards(unittest.TestCase):
             self.assertNotIn(stale, chapter, f"Aix 챕터에 폐기된 일정·교통 권고가 남음: {stale}")
 
         expected_modes = {
-            12: {"car", "walk"}, 13: {"walk"}, 14: {"car", "bus", "walk"},
-            15: {"train", "bus", "walk"}, 16: {"car", "walk"},
+            12: {"car", "walk"}, 13: {"car", "walk"}, 14: {"train", "bus", "walk"},
+            15: {"walk"}, 16: {"car", "bus", "walk"}, 17: {"car", "walk"},
         }
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
@@ -222,8 +224,9 @@ class StayTransportGuards(unittest.TestCase):
         for token in ("성벽 안은 도보", "P+R Piot·Italiens 무료 셔틀",
                       "Avignon Centre↔Arles", "T1은 Gare Centre"):
             self.assertIn(token, rendered)
-        for day in range(18, 24):
+        for day in range(19, 24):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
+        self.assertNotIn('href="../daily/day-18.html"', rendered)
 
         facts = json.loads((ROOT / "data" / "transit-facts.json").read_text(encoding="utf-8"))
         facts_text = json.dumps(facts["regions"]["avignon"], ensure_ascii=False)
@@ -309,11 +312,11 @@ class StayTransportGuards(unittest.TestCase):
         for token in ("교통권은 사지 않는다", "ZOU! 917", "ZOU! 915·907",
                       "ZOU! 989 Pays d’Apt", "99xx 계열 통학 노선", "렌터카 업체 지원"):
             self.assertIn(token, rendered)
-        for day in range(16, 19):
+        for day in range(17, 20):
             self.assertIn(f'href="../daily/day-{day:02d}.html"', rendered)
-        self.assertNotIn('href="../daily/day-19.html"', rendered)
-        expected_modes = {16: {"car", "walk"}, 17: {"car"},
-                          18: {"car", "walk"}}
+        self.assertNotIn('href="../daily/day-16.html"', rendered)
+        expected_modes = {17: {"car", "walk"}, 18: {"car", "walk"},
+                          19: {"car", "walk"}}
         for day, expected in expected_modes.items():
             payload = json.loads((ROOT / "data" / "daily-cards" /
                                   f"day-{day:02d}.json").read_text(encoding="utf-8"))
@@ -379,13 +382,13 @@ class StayTransportGuards(unittest.TestCase):
         self.assertIn("marche-convention", day30_place_refs, "Day 30 (일) 아침에 Marché Convention이 배치되어야 함")
 
     def test_patisserie_weibel_related_places_linked_to_day13(self):
-        """Day 13 stop에서 Pâtisserie Weibel이 related_place_refs로 정상 연결되는지 검증."""
-        day13 = json.loads((ROOT / "data" / "daily-cards" / "day-13.json").read_text(encoding="utf-8"))
-        stop1 = day13["stops"][0]
-        self.assertIn("patisserie-weibel", stop1.get("related_place_refs", []), "Day 13 stop 1에 patisserie-weibel 참조가 있어야 함")
+        """Day 15(토요시장) stop에서 Pâtisserie Weibel이 related_place_refs로 정상 연결되는지 검증. RS01: 구 Day 13 시장일이 Day 15로 이동."""
+        day15 = json.loads((ROOT / "data" / "daily-cards" / "day-15.json").read_text(encoding="utf-8"))
+        stop1 = day15["stops"][0]
+        self.assertIn("patisserie-weibel", stop1.get("related_place_refs", []), "Day 15 stop 1에 patisserie-weibel 참조가 있어야 함")
         weibel_place = self.trip.places.get("patisserie-weibel")
         self.assertIsNotNone(weibel_place, "patisserie-weibel 장소가 존재해야 함")
-        self.assertIn(13, weibel_place.days, "Pâtisserie Weibel 장소의 days에 13일차가 포함되어야 함")
+        self.assertIn(15, weibel_place.days, "Pâtisserie Weibel 장소의 days에 15일차가 포함되어야 함")
 
 
 if __name__ == "__main__":

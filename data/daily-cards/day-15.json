@@ -83,9 +83,9 @@
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "confirmed",
-          "label": "CONFIRMED",
-          "detail": "7/4~9/30 매일 09:00–18:00, 마지막 입장 17:00, 예약 필수 — cezanne-en-provence 공식, 2026-08-28 확인."
+          "type": "book",
+          "label": "ACTION REQUIRED",
+          "detail": "예약 필수·좌석 제한 — 9/12 토요일 회차 예약 필요. 운영은 7/4~9/30 매일 09:00–18:00(마지막 입장 17:00), cezanne-en-provence 공식 2026-08-28 확인."
         }
       ],
       "executionNote": "7/4–9/30 매일 09:00–18:00, 마지막 방문 17:00. 11:30부터 자율관람 1시간 €9.50, 가이드 1시간 30분 €12.",

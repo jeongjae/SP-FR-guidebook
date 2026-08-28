@@ -13,7 +13,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parents[1]
 TRACKER = ROOT / "source/OPERATIONS/TP_Europe_Travel_Master_Tracker_v1.2.xlsx"
 DAILY_ROUTES = ROOT / "source/ASSETS/maps/daily-routes.json"
-UPDATED = datetime(2026, 8, 25)
+UPDATED = datetime(2026, 8, 28)
 
 
 def d(month: int, day: int) -> datetime:
@@ -21,20 +21,28 @@ def d(month: int, day: int) -> datetime:
 
 
 MASTER = {
-    d(9, 13): ("Gordes", 1, "이동", "Aix 체크아웃 → Lourmarin → Gordes 1박차",
-               "Aix→Lourmarin→Gordes", 3, "Gordes 2박·Lourmarin 점심", "Lacoste→Bonnieux 순으로 삭제"),
-    d(9, 14): ("Gordes", 2, "체류", "Roussillon · 선택마을 · Sénanque → Gordes 2박차",
-               "Gordes↔Roussillon·Sénanque", 3, "Sénanque 슬롯·오커길", "Goult→Ménerbes 순으로 삭제"),
-    d(9, 15): ("Avignon", 1, "이동", "Gordes 체크아웃 → 물의 마을 → Avignon 체크인",
-               "Gordes→L'Isle→Avignon", 3, "Avignon 5박·주차", "Fontaine 삭제 후 Avignon 직행"),
-    d(9, 16): ("Avignon", 2, "체류", "수요시장 · Van Gogh · Alpilles 석회암 풍경",
-               "Avignon↔Saint-Rémy·Les Baux", 4, "시장·Château 운영", "Orange 삭제"),
-    d(9, 17): ("Avignon", 3, "체류", "Uzès · Pont du Gard · Nîmes & 렌터카 최종 반납",
+    d(9, 9): ("Moustiers (Verdon)", 1, "이동", "Nice역 렌터카 인수 → Route Napoléon → Point Sublime → Moustiers",
+              "Nice→Saint-Paul→Grasse→Castellane→Moustiers", 5, "Moustiers 1박 숙소(미정) 확보", "Grasse→Point Sublime 순으로 삭제"),
+    d(9, 10): ("Aix-en-Provence", 1, "이동", "Moustiers 아침 → Route des Crêtes → Galetas → Valensole → Aix 체크인",
+               "Moustiers→La Palud→Galetas→Valensole→Aix", 4, "Aix 4박(확정 9/10~9/14)·Crêtes 통제 확인", "Crêtes 축소→호수·고원 정차 생략"),
+    d(9, 11): ("Aix-en-Provence", 2, "체류", "Marseille 전일 당일치기 (TER)",
+               "Aix↔Marseille TER", 4, "TER·Mucem(화요일만 휴관)", "Vallon des Auffes 생략 후 조기 복귀"),
+    d(9, 12): ("Aix-en-Provence", 3, "체류", "Aix 토요 대형시장 · Vieil Aix · 세잔 아틀리에 · Granet",
+               "Aix 시내 도보", 3, "Atelier 예약(매일 09–18 확인)", "Granet 압축·카페 휴식"),
+    d(9, 13): ("Aix-en-Provence", 4, "체류", "Cassis & Calanques 유람선",
+               "Aix↔Cassis 차량 왕복", 3, "유람선 48시간 전 예약(7일 운항·기상)", "결항 시 Cap Canaille 드라이브"),
+    d(9, 14): ("Gordes", 1, "이동", "Aix 체크아웃 → Lourmarin → Lacoste 성 → Gordes 1박차",
+               "Aix→Lourmarin→Lacoste→Gordes", 3, "Gordes 2박(미정)·Lacoste 월 13-17 확정", "Bonnieux→Lacoste 관람 축소"),
+    d(9, 15): ("Gordes", 2, "체류", "Gordes 화요시장 · Roussillon · Sénanque · [오후 L'Isle]",
+               "Gordes↔Roussillon·Sénanque·L'Isle", 4, "Sénanque 9/15 회차 재확인", "L'Isle 왕복 삭제"),
+    d(9, 16): ("Avignon", 1, "이동", "Gordes 체크아웃 → Saint-Rémy 수요시장 → Les Baux → Avignon 체크인",
+               "Gordes→Saint-Rémy→Les Baux→Avignon", 4, "Avignon 4박(미정)·주차", "Les Baux 축소, Orange 제외"),
+    d(9, 17): ("Avignon", 2, "체류", "Uzès · Pont du Gard · Nîmes & 렌터카 최종 반납",
                "Avignon→Uzès→Pont du Gard→Nîmes→Avignon TGV", 4,
                "18:30 이전 Hertz 조기 반납", "Nîmes 체류부터 축소"),
-    d(9, 18): ("Avignon", 4, "체류", "Arles 철도 당일치기",
+    d(9, 18): ("Avignon", 3, "체류", "Arles 철도 당일치기",
                "Avignon Centre↔Arles TER", 3, "TER·JEP 재확인", "선택시설 삭제"),
-    d(9, 19): ("Avignon", 5, "체류", "교황도시 핵심 (Avignon 시내 도보일)",
+    d(9, 19): ("Avignon", 4, "체류", "교황도시 핵심 (Avignon 시내 도보일)",
                "성벽 안 도보", 3, "Palais·식당", "추가 미술관 삭제"),
     d(9, 20): ("Lyon", 1, "이동", "TGV 이동 & Lyon 적응",
                "Avignon TGV→Lyon", 3, "TGV·짐 보관", "Lyon 도착 후 숙소권 휴식"),
@@ -63,7 +71,9 @@ def update_master(ws) -> None:
         ws.cell(row, 16).value = lock
         ws.cell(row, 17).value = alternative
         ws.cell(row, 18).value = (
-            "08_Luberon_Farmhouse_v2.0.md" if day < d(9, 15)
+            "06B_Verdon_Moustiers_v1.0.md" if day == d(9, 9)
+            else "07_Aix_en_Provence_v2.0.md" if day <= d(9, 13)
+            else "08_Luberon_Farmhouse_v2.0.md" if day <= d(9, 15)
             else "10_Lyon_v2.0.md" if day == d(9, 20)
             else "09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
         )
@@ -73,12 +83,12 @@ def update_master(ws) -> None:
 def update_reservations(ws) -> None:
     rows = rows_by_id(ws)
     changes = {
-        "R005": {4: "Gordes 숙소 2박", 5: d(9, 13),
-                 20: "9/13 체크인·9/15 체크아웃·주차·야간 출입 확인",
-                 21: UPDATED, 22: "Gordes 2박 숙소 후보 확정 필요"},
-        "R006": {4: "Avignon 숙소 5박", 5: d(9, 15),
-                 20: "9/15 체크인·9/20 체크아웃·성벽 안 생활권·주차 확인",
-                 21: UPDATED, 22: "Avignon 5박 숙소 후보 확정 필요"},
+        "R005": {4: "Gordes 숙소 2박", 5: d(9, 14),
+                 20: "9/14 체크인·9/16 체크아웃·주차·야간 출입 확인",
+                 21: UPDATED, 22: "Gordes 2박 숙소 후보 확정 필요 (RS01)"},
+        "R006": {4: "Avignon 숙소 4박", 5: d(9, 16),
+                 20: "9/16 체크인·9/20 체크아웃·성벽 안 생활권·주차 확인",
+                 21: UPDATED, 22: "Avignon 4박 숙소 후보 확정 필요 (RS01)"},
         "R011": {6: "계약 9/20 09:00 · 운영계획 9/17 18:30 이전 반납(변경 필요)",
                  20: "기존 9/20 계약을 9/17 저녁 조기 반납으로 변경 필요",
                  21: UPDATED,
@@ -94,10 +104,10 @@ def update_reservations(ws) -> None:
 def update_transport(ws) -> None:
     rows = rows_by_id(ws)
     changes = {
-        "T005": {2: d(9, 13), 3: "Aix-en-Provence", 4: "Gordes", 10: "재확인",
-                 14: "약 1시간 10분", 15: "체크인·주차·차내수하물", 16: "Optional 마을 삭제", 18: UPDATED},
-        "T006": {2: d(9, 15), 3: "Gordes", 4: "Avignon", 10: "재확인",
-                 14: "약 1시간", 15: "Gordes 체크아웃·Avignon 5박 체크인", 16: "Fontaine 삭제 후 직행", 18: UPDATED},
+        "T005": {2: d(9, 14), 3: "Aix-en-Provence", 4: "Gordes", 10: "재확인",
+                 14: "약 1시간 10분", 15: "체크인·주차·차내수하물·Lacoste 경유", 16: "Bonnieux 삭제", 18: UPDATED},
+        "T006": {2: d(9, 16), 3: "Gordes", 4: "Avignon", 10: "재확인",
+                 14: "약 1시간 20분 (Saint-Rémy·Les Baux 경유)", 15: "Gordes 체크아웃·수요시장·Avignon 4박 체크인", 16: "Les Baux 축소 후 직행", 18: UPDATED},
         "T007": {5: "TGV", 13: "차량 절차 없이 Avignon TGV에서 승차",
                  14: "역 도착 40분 이상 여유", 15: "수하물·플랫폼·짐 보관", 16: "도착 후 숙소권 휴식", 18: UPDATED},
     }
@@ -107,34 +117,36 @@ def update_transport(ws) -> None:
 
 
 def update_dashboard(ws) -> None:
-    ws["D17"], ws["E17"], ws["F17"] = "Luberon allocation", "완료", "9/13~9/15 · Gordes 2박"
-    ws["D18"], ws["E18"], ws["F18"] = "Avignon allocation", "완료", "9/15~9/20 · 5박 · 9/17 차량 반납"
+    ws["D17"], ws["E17"], ws["F17"] = "Luberon allocation", "완료", "9/14~9/16 · Gordes 2박"
+    ws["D18"], ws["E18"], ws["F18"] = "Avignon allocation", "완료", "9/16~9/20 · 4박 · 9/17 차량 반납"
 
 
 def update_phase8(ws) -> None:
     for row in range(4, ws.max_row + 1):
         category, item = ws.cell(row, 1).value, ws.cell(row, 2).value
         if category == "일정" and item == "43일·42박":
-            ws.cell(row, 7).value = "Barcelona 3·Bàscara 3·Nice 5·Aix 4·Gordes 2·Avignon 5·Lyon 4·Paris 15박 + 기내 1박"
+            ws.cell(row, 7).value = "Barcelona 3·Bàscara 3·Nice 5·Moustiers 1·Aix 4·Gordes 2·Avignon 4·Lyon 4·Paris 15박 + 기내 1박"
         elif category == "숙박" and item == "8개 거점 숙박배분":
-            ws.cell(row, 4).value = "3/3/5/4/2/5/4/15박"
-            ws.cell(row, 7).value = "Gordes·Avignon 숙소 후보 확정 필요 · 마지막 밤은 기내"
+            ws.cell(row, 4).value = "3/3/5/1/4/2/4/4/15박"
+            ws.cell(row, 7).value = "Moustiers·Gordes·Avignon 숙소 확정 필요 · 마지막 밤은 기내"
         elif category == "렌터카" and item == "NCE→Avignon TGV":
             ws.cell(row, 4).value = "9/9 Nice-Ville 인수, 9/17 Avignon TGV 반납"
             ws.cell(row, 5).value = "기존 9/20 계약을 9/17 18:30 이전 반납으로 변경"
         elif category == "숙소" and item == "Luberon":
             ws.cell(row, 2).value = "Gordes"
-            ws.cell(row, 4).value = "2박 · 9/13~9/15"
+            ws.cell(row, 4).value = "2박 · 9/14~9/16"
             ws.cell(row, 5).value = "숙소 후보·주차·체크인 확정"
         elif category == "숙소" and item == "Avignon":
-            ws.cell(row, 4).value = "5박 · 9/15~9/20"
+            ws.cell(row, 4).value = "4박 · 9/16~9/20"
             ws.cell(row, 5).value = "숙소 후보·주차·체크인 확정"
 
 
 def update_field_shots(ws) -> None:
     changes = {
-        "9/15": ("L'Isle-sur-la-Sorgue·Avignon", "수로·물레방아·Avignon 체크인", "오전·오후", "물의 Provence·거점 전환"),
-        "9/16": ("Saint-Rémy·Les Baux", "수요시장·석회암 마을", "오전·오후", "시장·Alpilles"),
+        "9/9": ("Verdon·Moustiers", "협곡 전망대·절벽 마을 저녁", "오후·저녁", "협곡 진입·1박 거점"),
+        "9/10": ("Route des Crêtes·Galetas", "능선 절벽·호수 청록 수면", "오전·낮", "협곡 본편·Aix 이동"),
+        "9/15": ("Gordes·Roussillon·L'Isle", "화요시장·오크르·수로", "전일", "장날·오크르·물의 마을"),
+        "9/16": ("Saint-Rémy·Les Baux·Avignon", "수요시장·석회암 마을·체크인", "오전·오후", "시장·Alpilles·거점 전환"),
         "9/18": ("Arles", "Arènes·Théâtre·Saint-Trophime", "전일", "JEP·로마유산"),
         "9/19": ("Avignon", "Les Halles·Palais·Rocher·Pont", "전일", "교황도시 핵심"),
     }
@@ -151,7 +163,7 @@ def update_field_shots(ws) -> None:
 def update_assets(ws) -> None:
     row = rows_by_id(ws).get("A005")
     if row:
-        ws.cell(row, 8).value = "Aix 4박·Gordes 2박·Avignon 5박·9/17 차량 반납"
+        ws.cell(row, 8).value = "Moustiers 1박·Aix 4박·Gordes 2박·Avignon 4박·9/17 차량 반납"
 
 
 def update_daily_routes() -> None:
@@ -165,7 +177,7 @@ def update_daily_routes() -> None:
             "zoom": 9,
             "defaultMode": "driving",
             "stops": [
-                {"placeId": "avignon-stay-candidate", "order": 0, "plannedTime": "07:45 출발", "note": "Avignon 3박차. 렌터카 마지막 운행일."},
+                {"placeId": "avignon-stay-candidate", "order": 0, "plannedTime": "07:45 출발", "note": "Avignon 2박차(4박 기준). 렌터카 마지막 운행일."},
                 {"placeId": "uzes", "order": 1, "plannedTime": "08:30–10:30", "note": "구시가지와 Place aux Herbes."},
                 {"placeId": "pont-du-gard", "order": 2, "plannedTime": "10:50–13:10", "note": "수로교 관람과 간단한 점심."},
                 {"placeId": "arenes-de-nimes", "order": 3, "plannedTime": "13:45–14:45", "note": "Nîmes 원형경기장."},
