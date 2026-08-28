@@ -71,8 +71,9 @@ def main():
         if row[0] is not None
     }
     expected_reservations = {
-        "R005": ("Gordes 숙소 2박", date(2026, 9, 13)),
-        "R006": ("Avignon 숙소 5박", date(2026, 9, 15)),
+        # RS01 (2026-08-28): Gordes 9/14~16 · Avignon 4박 9/16~20
+        "R005": ("Gordes 숙소 2박", date(2026, 9, 14)),
+        "R006": ("Avignon 숙소 4박", date(2026, 9, 16)),
     }
     for ident, (item, day) in expected_reservations.items():
         row = reservation_rows.get(ident)
@@ -125,8 +126,12 @@ def main():
 
     # 그날 원고의 핵심 장소가 실제로 그 날 화면에 있는가
     required_page_terms = {
-        # Day 14 는 2026-08-19 에 Marseille → Cassis·Calanques 로 바뀌었다
-        "daily/day-14.html": ("Cassis", "Calanques", "Port-Miou"),
+        # RS01 (2026-08-28): Verdon 1박 삽입으로 Day 12~19 재배치.
+        # Day 14 = Marseille 당일치기, Day 16 = Cassis·Calanques.
+        "daily/day-12.html": ("Point Sublime", "Moustiers"),
+        "daily/day-13.html": ("Route des Crêtes", "Sainte-Croix"),
+        "daily/day-14.html": ("Marseille", "Le Panier", "Mucem"),
+        "daily/day-16.html": ("Cassis", "Calanques", "Port-Miou"),
         "daily/day-20.html": ("Uzès", "Pont du Gard", "Nîmes", "9/17", "렌터카 최종 반납"),
         "daily/day-21.html": ("Arles", "Saint-Trophime", "La Roquette"),
         "daily/day-22.html": ("Palais", "Rocher des Doms", "Pont Saint-Bénézet"),
@@ -153,9 +158,11 @@ def main():
     # 선택안(대체 일정)이 기본 일정의 장소처럼 보이면 안 된다. 현장에서
     # "오늘 가는 곳" 으로 읽고 움직이게 된다.
     forbidden_day_place_links = {
-        # Marseille 는 이제 Day 14 의 대체안이다. 대체안이 기본 시간표에 섞이면
-        # 현장에서 "오늘 가는 곳" 으로 읽는다 — backup 문구에만 남아야 한다.
-        "daily/day-14.html": ("places/arles.html", "places/marseille.html",
+        # RS01: Day 14 가 Marseille 본편이 됐다. 대신 Cassis 날(Day 16)의
+        # 기본 시간표에 Marseille·Arles 링크가 섞이면 안 된다.
+        "daily/day-14.html": ("places/arles.html", "places/cassis.html",
+                              "places/calanques.html"),
+        "daily/day-16.html": ("places/arles.html", "places/marseille.html",
                               "places/mucem.html"),
         "daily/day-21.html": ("places/les-baux-de-provence.html",
                               "places/saint-remy-de-provence.html"),
@@ -175,10 +182,10 @@ def main():
     home = site / "index.html"
     if home.exists():
         rendered = home.read_text(encoding="utf-8")
-        for stale in ("Luberon 농가 숙소 3박", "Avignon 숙소 4박"):
+        for stale in ("Luberon 농가 숙소 3박", "Avignon 숙소 5박"):
             if stale in rendered:
                 errors.append(f"오늘 페이지에 폐기된 숙박 배분 노출: {stale}")
-        for term in ("Gordes 숙소 2박", "Avignon 숙소 5박", "2026-09-17"):
+        for term in ("Gordes 숙소 2박", "Avignon 숙소 4박", "2026-09-17"):
             if term not in rendered:
                 errors.append(f"오늘 페이지 정본 콘텐츠 누락: {term}")
         for stay in stays:
