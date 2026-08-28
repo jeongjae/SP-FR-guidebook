@@ -200,10 +200,10 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
             self.assertNotIn('href="None"', rendered)
             self.assertNotIn('href=""', rendered)
 
-    def test_day32_onward_semantics_are_unchanged(self):
-        payload = [semantic_projection(load_day(number)) for number in range(32, 44)]
+    def test_day28_to_31_semantics_are_protected(self):
+        payload = [semantic_projection(load_day(number)) for number in range(28, 32)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("d03226f8e06a193fa920745095336ee30cee92484568f0e5a9ab12382b0bfd96", digest)
+        self.assertEqual("f1820149a58d2762a985dd4d92e00c697e027f668e0e585cab554988784e9313", digest)
 
 
 if __name__ == "__main__":
