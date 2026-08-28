@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000091">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="유럽 가이드북">
+<title>Verdon · Moustiers 지도 — 유럽 43일 가이드북</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<meta name="google-maps-api-key" content="AIzaSyByU_cDzFIXiTycI2luKSCFbh8Dzxks2-I">
+<meta name="google-maps-map-id" content="86bc1df320227a7622cf4423">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-region="verdon">
+<a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
+<header class="topbar">
+  <button class="tb-back" type="button" aria-label="이전 페이지로" hidden><b class="ic ic-only ic-back" aria-hidden="true"></b></button>
+  <nav class="crumbs" aria-label="위치"><a href="../index.html">홈</a><span class="sep" aria-hidden="true">›</span><a href="../map/index.html">지도</a><span class="sep" aria-hidden="true">›</span><b>Verdon · Moustiers</b></nav>
+  <button id="search-btn" type="button" aria-label="검색 열기" aria-expanded="false"><b class="ic ic-only ic-search" aria-hidden="true"></b></button>
+</header>
+<div class="country-band" data-country="fr" role="presentation"></div>
+
+<div class="search-sheet" id="search-sheet" hidden role="dialog" aria-modal="true" aria-label="검색">
+  <div class="search-bar">
+    <input type="search" id="search-input" placeholder="장소 · 날짜 · 지역" autocomplete="off">
+    <button type="button" id="search-close" aria-label="검색 닫기"><b class="ic ic-only ic-close" aria-hidden="true"></b></button>
+  </div>
+  <div id="search-results" aria-live="polite"></div>
+</div>
+<main id="main">
+<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
+<header><h1>Verdon · Moustiers 지도</h1>
+<p class="hero-dek">9/9 — 9/10 · 장소 8곳</p></header>
+<div class="map-card">
+  <div class="map-canvas" hidden></div>
+  <p class="map-status meta" role="status" aria-live="polite"></p>
+  <script type="application/json" class="map-data-script">{"center":[43.8119375,6.2809],"zoom":12,"pins":[{"id":"castellane-pause","name":"OPTIONAL · Castellane 짧은 휴식·보급","lat":43.8467,"lng":6.5128,"cat":"transport","time":"9.9 수 16:10","address":null,"place":null,"query":null,"map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"point-sublime","name":"MUST · Point Sublime — 협곡 하류 전망대","lat":43.7947,"lng":6.4022,"cat":"sight","time":"9.9 수 16:50","address":null,"place":"point-sublime","query":"Belvédère du Point Sublime, Rougon","map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"moustiers-evening","name":"Moustiers 저녁 골목 산책 · 저녁 식사","lat":43.8456,"lng":6.2214,"cat":"food","time":"9.9 수 19:00","address":null,"place":null,"query":null,"map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"moustiers-morning","name":"MUST · Moustiers 아침 — Notre-Dame de Beauvoir 계단","lat":43.8456,"lng":6.2214,"cat":"sight","time":"9.10 목 08:00","address":null,"place":"moustiers-sainte-marie","query":"Moustiers-Sainte-Marie","map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"route-des-cretes","name":"RECOMMENDED · Route des Crêtes(D23) 능선 순환","lat":43.7789,"lng":6.3421,"cat":"sight","time":"9.10 목 10:05","address":null,"place":"route-des-cretes","query":"Route des Crêtes, La Palud-sur-Verdon","map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"lapalud-lunch","name":"La Palud 또는 Moustiers 점심","lat":43.7789,"lng":6.3421,"cat":"food","time":"9.10 목 12:00","address":null,"place":null,"query":null,"map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"pont-du-galetas","name":"MUST · Pont du Galetas — Sainte-Croix 호수","lat":43.7674,"lng":6.2216,"cat":"sight","time":"9.10 목 13:30","address":null,"place":"lac-de-sainte-croix","query":"Pont du Galetas, Lac de Sainte-Croix","map_type":"place","origin":null,"destination":null,"travel_mode":null},{"id":"plateau-de-valensole","name":"OPTIONAL · Valensole 고원 경유","lat":43.8377,"lng":5.9836,"cat":"sight","time":"9.10 목 14:30","address":null,"place":"plateau-de-valensole","query":"Valensole","map_type":"place","origin":null,"destination":null,"travel_mode":null}]}</script>
+  <div class="map-card-foot">
+    <span class="label">Verdon · Moustiers 지도 · 8곳</span>
+    <div class="map-toggle" role="group" aria-label="지도와 목록 전환">
+      <button type="button" data-view="map" aria-pressed="false">지도</button>
+      <button type="button" data-view="list" aria-pressed="true">목록</button>
+    </div>
+  </div>
+  <ol class="map-list"><li data-pin="castellane-pause"><span class="map-num">1.</span><span class="meta">9.9 수 16:10</span><span class="map-name">OPTIONAL · Castellane 짧은 휴식·보급</span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=43.8467,6.5128"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">OPTIONAL · Castellane 짧은 휴식·보급 </span>열기</a></li><li data-pin="point-sublime"><span class="map-num">2.</span><span class="meta">9.9 수 16:50</span><span class="map-name"><a href="../places/point-sublime.html">MUST · Point Sublime — 협곡 하류 전망대</a></span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Belv%C3%A9d%C3%A8re%20du%20Point%20Sublime%2C%20Rougon"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">MUST · Point Sublime — 협곡 하류 전망대 </span>열기</a></li><li data-pin="moustiers-evening"><span class="map-num">3.</span><span class="meta">9.9 수 19:00</span><span class="map-name">Moustiers 저녁 골목 산책 · 저녁 식사</span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=43.8456,6.2214"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">Moustiers 저녁 골목 산책 · 저녁 식사 </span>열기</a></li><li data-pin="moustiers-morning"><span class="map-num">4.</span><span class="meta">9.10 목 08:00</span><span class="map-name"><a href="../places/moustiers-sainte-marie.html">MUST · Moustiers 아침 — Notre-Dame de Beauvoir 계단</a></span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Moustiers-Sainte-Marie"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">MUST · Moustiers 아침 — Notre-Dame de Beauvoir 계단 </span>열기</a></li><li data-pin="route-des-cretes"><span class="map-num">5.</span><span class="meta">9.10 목 10:05</span><span class="map-name"><a href="../places/route-des-cretes.html">RECOMMENDED · Route des Crêtes(D23) 능선 순환</a></span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Route%20des%20Cr%C3%AAtes%2C%20La%20Palud-sur-Verdon"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">RECOMMENDED · Route des Crêtes(D23) 능선 순환 </span>열기</a></li><li data-pin="lapalud-lunch"><span class="map-num">6.</span><span class="meta">9.10 목 12:00</span><span class="map-name">La Palud 또는 Moustiers 점심</span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=43.7789,6.3421"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">La Palud 또는 Moustiers 점심 </span>열기</a></li><li data-pin="pont-du-galetas"><span class="map-num">7.</span><span class="meta">9.10 목 13:30</span><span class="map-name"><a href="../places/lac-de-sainte-croix.html">MUST · Pont du Galetas — Sainte-Croix 호수</a></span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Pont%20du%20Galetas%2C%20Lac%20de%20Sainte-Croix"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">MUST · Pont du Galetas — Sainte-Croix 호수 </span>열기</a></li><li data-pin="plateau-de-valensole"><span class="map-num">8.</span><span class="meta">9.10 목 14:30</span><span class="map-name"><a href="../places/plateau-de-valensole.html">OPTIONAL · Valensole 고원 경유</a></span><a class="map-open" rel="nofollow noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Valensole"><b class="ic ic-only ic-map" aria-hidden="true"></b><span class="visually-hidden">OPTIONAL · Valensole 고원 경유 </span>열기</a></li></ol>
+</div>
+<div class="sec-head"><h2>날짜별 동선</h2></div>
+<div class="prose"><ul><li><a href="../daily/day-12.html">9.9(수) · Day 12</a> — Nice역 렌터카 → Route Napoléon → Verdon 협곡 → Moustiers</li><li><a href="../daily/day-13.html">9.10(목) · Day 13</a> — Moustiers 아침 → Route des Crêtes → Sainte-Croix → Valensole → Aix</li></ul></div>
+<div class="btn-row"><a class="btn btn-secondary" href="../guide/verdon.html">
+  <b class="ic ic-only ic-region" aria-hidden="true"></b>Verdon · Moustiers 가이드</a></div>
+</div></div>
+</main>
+<footer>
+  <p>유럽 43일 가이드북 · 2026-08-29 — 2026-10-10</p>
+  <p><a href="../about/credits.html">사진 저작자 표시 · 라이선스</a></p>
+</footer>
+<nav class="bottomnav" aria-label="주요 메뉴">
+  <a href="../index.html" data-tab="today"><b class="ic ic-only ic-today" aria-hidden="true"></b><span>오늘</span></a>
+  <a href="../schedule.html" data-tab="schedule"><b class="ic ic-only ic-list" aria-hidden="true"></b><span>전체 일정</span></a>
+  <a href="../guide/index.html" data-tab="guide"><b class="ic ic-only ic-region" aria-hidden="true"></b><span>가이드</span></a>
+  <a href="../map/index.html" data-tab="map" aria-current="page"><b class="ic ic-only ic-map" aria-hidden="true"></b><span>지도</span></a>
+  <a href="../prepare/index.html" data-tab="prepare"><b class="ic ic-only ic-check" aria-hidden="true"></b><span>준비</span></a>
+</nav>
+<script src="../assets/search-index.js" defer></script>
+<script src="../assets/app.js" defer></script>
+<script src="../assets/pwa.js" defer></script>
+</body>
+</html>
