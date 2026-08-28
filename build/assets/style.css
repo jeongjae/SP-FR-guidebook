@@ -1584,6 +1584,16 @@ td .meta a,
   color: var(--sig-ok-ink);
   border-color: var(--sig-ok);
 }
+.phrase-btn.playing {
+  background: var(--primary-soft);
+  color: var(--primary-ink);
+  border-color: var(--primary);
+  font-weight: 800;
+}
+.phrase-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .phrase-btn .ic {
   width: 16px;
   height: 16px;

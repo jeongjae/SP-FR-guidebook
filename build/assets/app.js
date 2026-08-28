@@ -470,13 +470,69 @@
   var FAV_KEY = 'spfr_travel_french_favs';
   function getFrenchFavs() {
     try {
-      return JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+      var raw = localStorage.getItem(FAV_KEY);
+      if (!raw) return [];
+      var parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
     } catch (e) { return []; }
   }
   function saveFrenchFavs(favs) {
     try {
       localStorage.setItem(FAV_KEY, JSON.stringify(favs));
     } catch (e) {}
+  }
+
+  function getFrenchVoice() {
+    if (!('speechSynthesis' in window)) return null;
+    try {
+      var voices = window.speechSynthesis.getVoices() || [];
+      for (var i = 0; i < voices.length; i++) {
+        if (voices[i].lang === 'fr-FR' || voices[i].lang === 'fr_FR') return voices[i];
+      }
+      for (var j = 0; j < voices.length; j++) {
+        if (voices[j].lang && voices[j].lang.toLowerCase().indexOf('fr') === 0) return voices[j];
+      }
+    } catch (e) {}
+    return null;
+  }
+
+  function speakFrench(text, btn) {
+    if (!('speechSynthesis' in window)) {
+      if (btn) {
+        btn.disabled = true;
+        btn.title = '이 브라우저에서는 음성 재생을 지원하지 않습니다.';
+      }
+      return false;
+    }
+    try {
+      window.speechSynthesis.cancel();
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'fr-FR';
+      u.rate = 0.88;
+      var voice = getFrenchVoice();
+      if (voice) u.voice = voice;
+
+      if (btn) {
+        var origSpan = btn.querySelector('span');
+        var origText = origSpan ? origSpan.textContent : '듣기';
+        btn.classList.add('playing');
+        if (origSpan) origSpan.textContent = '재생 중';
+
+        function resetBtn() {
+          btn.classList.remove('playing');
+          if (origSpan) origSpan.textContent = origText;
+        }
+        u.onend = resetBtn;
+        u.onerror = resetBtn;
+      }
+      window.speechSynthesis.speak(u);
+      return true;
+    } catch (err) {
+      if (btn) {
+        btn.classList.remove('playing');
+      }
+      return false;
+    }
   }
 
   // 1. Initial setup of favorite buttons on load
@@ -499,14 +555,8 @@
     var audioBtn = e.target.closest('.btn-phrase-audio');
     if (audioBtn) {
       var text = audioBtn.getAttribute('data-audio');
-      if (text && 'speechSynthesis' in window) {
-        try {
-          window.speechSynthesis.cancel();
-          var u = new SpeechSynthesisUtterance(text);
-          u.lang = 'fr-FR';
-          u.rate = 0.88;
-          window.speechSynthesis.speak(u);
-        } catch (err) {}
+      if (text) {
+        speakFrench(text, audioBtn);
       }
       return;
     }
@@ -596,7 +646,7 @@
   var frenchListTitle = document.getElementById('french-list-title');
 
   if (frenchGrid && frenchChips) {
-    var curCategory = 'all';
+    var curCategory = 'essential';
 
     function applyFrenchFilter() {
       var query = (frenchSearchInput ? frenchSearchInput.value : '').trim().toLowerCase();
@@ -612,14 +662,22 @@
         var sData = card.getAttribute('data-search') || '';
 
         var matchCat = false;
-        if (curCategory === 'all') {
-          matchCat = true;
-        } else if (curCategory === 'fav') {
-          matchCat = favs.indexOf(pid) >= 0;
-        } else if (curCategory === 'essential') {
-          matchCat = (cat === 'essential' || pri === 'P0');
+        if (query) {
+          if (curCategory === 'fav') {
+            matchCat = favs.indexOf(pid) >= 0;
+          } else {
+            matchCat = true;
+          }
         } else {
-          matchCat = (cat === curCategory);
+          if (curCategory === 'all') {
+            matchCat = true;
+          } else if (curCategory === 'fav') {
+            matchCat = favs.indexOf(pid) >= 0;
+          } else if (curCategory === 'essential') {
+            matchCat = (cat === 'essential');
+          } else {
+            matchCat = (cat === curCategory);
+          }
         }
 
         var matchQuery = true;
@@ -645,6 +703,10 @@
           frenchListTitle.textContent = '즐겨찾기한 회화 (' + visibleCount + '건)';
         } else if (query) {
           frenchListTitle.textContent = '검색 결과 (' + visibleCount + '건)';
+        } else if (curCategory === 'essential') {
+          frenchListTitle.textContent = '기본 회화 20선 (' + visibleCount + '문구)';
+        } else if (curCategory === 'all') {
+          frenchListTitle.textContent = '전체 회화 (' + visibleCount + '문구)';
         } else {
           frenchListTitle.textContent = '상황별 회화 (' + visibleCount + '문구)';
         }
@@ -682,5 +744,8 @@
         applyFrenchFilter();
       });
     }
+
+    // Apply initial filter on load
+    applyFrenchFilter();
   }
 })();

@@ -964,9 +964,6 @@ def build_place(p: Place, trip: Trip) -> str:
 
     parts.append("</div>")
 
-    index_search(p.name, f"places/{p.slug}.html", "place",
-                 region.name if region else "")
-
     return page(
         title=p.name, body="\n".join(parts), rel=rel, tab="guide",
         region=p.region, country=region.country if region else "",
@@ -1129,8 +1126,6 @@ def build_day(d: Day, trip: Trip) -> str:
     sib = tabs_strip([
         (x.date_label, f"{rel}/{x.url}", x.n == d.n, f"Day {x.n}", day_hint(x))
         for x in sibling_days(d, trip, region)])
-
-    index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")
 
     return page(
         title=f"{d.date_label} · Day {d.n} · {d.city}", body="\n".join(parts), rel=rel,
@@ -1741,8 +1736,6 @@ def build_region(r: Region, trip: Trip) -> str:
 
     parts.append("</div>")
 
-    index_search(r.name, f"guide/{r.slug}.html", "region", r.tagline)
-
     return page(
         title=r.name, body="\n".join(parts), rel=rel, tab="guide",
         region=r.slug, country=r.country, subnav=subnav, description=r.dek,
@@ -2158,15 +2151,16 @@ FRENCH_CATEGORY_LABEL: dict[str, str] = {
 }
 
 
-def phrase_card(p: FrenchPhrase, compact: bool = False) -> str:
+def phrase_card(p: FrenchPhrase, compact: bool = False, initial_hidden: bool = False) -> str:
     cat_label = FRENCH_CATEGORY_LABEL.get(p.category, p.category)
     priority_badge = f'<span class="badge badge-must">P0</span>' if p.priority == "P0" else ""
     cat_badge = f'<span class="badge badge-neutral">{cat_label}</span>'
     hint_html = f'<p class="phrase-hint">{esc(p.pronunciation_hint)}</p>' if p.pronunciation_hint else ""
     note_html = f'<p class="phrase-note">{esc(p.usage_note)}</p>' if p.usage_note and not compact else ""
     search_data = f'{p.fr} {p.ko} {p.pronunciation_hint} {" ".join(p.tags)}'.lower()
+    hidden_attr = ' hidden style="display:none"' if (initial_hidden and p.category != "essential") else ''
 
-    return f"""<article class="phrase-card" data-phrase-id="{p.id}" data-category="{p.category}" data-priority="{p.priority}" data-search="{esc(search_data)}">
+    return f"""<article class="phrase-card"{hidden_attr} data-phrase-id="{p.id}" data-category="{p.category}" data-priority="{p.priority}" data-search="{esc(search_data)}">
   <div class="phrase-head">
     <div>{cat_badge} {priority_badge}</div>
   </div>
@@ -2275,9 +2269,8 @@ def build_travel_french(trip: Trip) -> str:
 </div>""")
     signs_html = "".join(signs_blocks)
 
-    phrase_cards_html = "".join(phrase_card(p) for p in phrases)
-
-    index_search("여행 프랑스어 (Travel French)", "prepare/french.html", "prepare", "120개 필수 문구 · 10분 발음 · 현장 표지판")
+    # Initial view is essential 20
+    phrase_cards_html = "".join(phrase_card(p, initial_hidden=True) for p in phrases)
 
     return page(
         title="여행 프랑스어", rel=rel, tab="prepare",
@@ -2295,9 +2288,9 @@ def build_travel_french(trip: Trip) -> str:
     <input type="search" id="french-search" class="form-control" style="width:100%;min-height:44px;padding:var(--s2) var(--s4);border:1px solid var(--line-strong);border-radius:var(--r-full);background:var(--surface);font-size:var(--t-body)" placeholder="프랑스어 / 한국어 / 발음 / 태그 검색 (예: 계산, 주차, addition, merci)..." aria-label="프랑스어 문구 검색">
   </div>
   <div class="chips" id="french-filter-chips" role="toolbar" aria-label="프랑스어 카테고리 필터">
-    <button type="button" class="chip" data-category="all" aria-pressed="true">전체 (120)</button>
+    <button type="button" class="chip" data-category="essential" aria-pressed="true">기본 20선 (P0)</button>
+    <button type="button" class="chip" data-category="all" aria-pressed="false">전체 (120)</button>
     <button type="button" class="chip" data-category="fav" aria-pressed="false">⭐ 즐겨찾기</button>
-    <button type="button" class="chip" data-category="essential" aria-pressed="false">기본 20선 (P0)</button>
     <button type="button" class="chip" data-category="restaurant" aria-pressed="false">식당·카페</button>
     <button type="button" class="chip" data-category="market" aria-pressed="false">빵집·시장</button>
     <button type="button" class="chip" data-category="hotel" aria-pressed="false">숙소</button>
@@ -2309,8 +2302,17 @@ def build_travel_french(trip: Trip) -> str:
   </div>
 </div></div>
 
-<section id="french-phrases-section">
-  <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PHRASES</span><h2 class="sec-title" id="french-list-title">상황별 회화 (120문구)</h2></div></div>
+<section id="french-pronunciation-section" style="margin-top:var(--s4)">
+  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('tip')} 10분 발음 & 읽기 규칙 (French in 10 Minutes)</h2></summary>
+    <div class="acc-body stack" style="margin-top:var(--s3)">
+      <p class="meta">정확한 음성학 학습이 아니라 간판과 메뉴를 읽기 위한 최소한의 발음 규칙입니다.</p>
+      {pron_html}
+    </div>
+  </details>
+</section>
+
+<section id="french-phrases-section" style="margin-top:var(--s4)">
+  <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PHRASES</span><h2 class="sec-title" id="french-list-title">기본 회화 20선 (20문구)</h2></div></div>
   <div id="french-no-results" class="alert-card alert-card-caution" style="display:none">
     {ic('alert')} <span>검색 결과가 없습니다.</span>
     <button type="button" class="btn btn-quiet" id="french-reset-btn" style="margin-inline-start:var(--s2)">전체 보기</button>
@@ -2320,16 +2322,7 @@ def build_travel_french(trip: Trip) -> str:
   </div>
 </section>
 
-<section id="french-pronunciation-section" style="margin-top:var(--s5)">
-  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('tip')} 10분 발음 & 읽기 규칙 (French in 10 Minutes)</h2></summary>
-    <div class="acc-body stack" style="margin-top:var(--s3)">
-      <p class="meta">정확한 음성학 학습이 아니라 간판과 메뉴를 읽기 위한 최소한의 발음 규칙입니다.</p>
-      {pron_html}
-    </div>
-  </details>
-</section>
-
-<section id="french-signs-section" style="margin-top:var(--s3)">
+<section id="french-signs-section" style="margin-top:var(--s5)">
   <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('book')} 현장 표지판 & 메뉴 필수 어휘 사전</h2></summary>
     <div class="acc-body stack" style="margin-top:var(--s3)">
       <p class="meta">거리 표지, 역 안내판, 메뉴판에서 가장 빈번히 마주치는 단어들입니다.</p>
@@ -2519,7 +2512,29 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 <p class="hero-dek">확정 {len(done)}건 · 미예약 {len(todo)}건.
   상태는 셋뿐이다 — 확정 · 미예약 · 제외.</p></header>
 
-<div class="btn-row"><a class="btn btn-primary" href="paris-museums.html">
+{sec_head('QUICK TOOLS', '현장 도구')}
+<div class="grid grid-2" style="margin-bottom:var(--s4)">
+  <a class="card card-link" href="french.html" style="border:1px solid var(--primary);box-shadow:var(--sh-1);background:var(--surface)">
+    <div class="card-body stack-xs">
+      <div style="display:flex;align-items:center;gap:var(--s2)">
+        <span class="badge" style="background:var(--primary);color:#fff">{ic('chat')} 추천</span>
+        <h2 style="font-size:var(--t-h3);margin:0;color:var(--primary)">여행 프랑스어</h2>
+      </div>
+      <p class="meta" style="margin:0">120문구 · 발음 · 검색 · 즐겨찾기</p>
+    </div>
+  </a>
+  <a class="card card-link" href="emergency.html">
+    <div class="card-body stack-xs">
+      <div style="display:flex;align-items:center;gap:var(--s2)">
+        {ic('alert')}
+        <h2 style="font-size:var(--t-h3);margin:0">긴급 연락처</h2>
+      </div>
+      <p class="meta" style="margin:0">EU 112 · 국가별 경찰/구급</p>
+    </div>
+  </a>
+</div>
+
+<div class="btn-row" style="margin-bottom:var(--s4)"><a class="btn btn-primary" href="paris-museums.html">
   {ic('ticket')}파리 뮤지엄 예약</a></div>
 
 {alert('caution',
@@ -2538,13 +2553,6 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 {group(done, False)}
 
 {dropped_html}
-
-<div class="btn-row"><a class="btn btn-secondary" href="french.html">
-  {ic('chat')}여행 프랑스어</a>
-  <a class="btn btn-secondary" href="emergency.html">
-  {ic('alert')}긴급 연락처</a>
-  <a class="btn btn-secondary" href="../offline.html">
-  {ic('download')}오프라인 준비</a></div>
 </div></div>""")
 
     out["paris-museums.html"] = build_paris_museum_booking()
@@ -2660,18 +2668,84 @@ def load_reservations() -> dict:
             "items": items, "by_date": by_date}
 
 
+def populate_search_index(trip: Trip) -> None:
+    """검색 색인을 미리 채운다."""
+    SEARCH_INDEX.clear()
+    for p in trip.places.values():
+        region = trip.region(p.region)
+        index_search(p.name, f"places/{p.slug}.html", "place", region.name if region else "")
+    for d in trip.days:
+        index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")
+    for r in trip.regions:
+        index_search(r.name, f"guide/{r.slug}.html", "region", r.tagline)
+    index_search("여행 프랑스어 (Travel French)", "prepare/french.html", "prepare", "120개 필수 문구 · 10분 발음 · 현장 표지판")
+
+
+def init_asset_pipeline(trip: Trip) -> None:
+    """자산의 내용 해시를 계산하고 shell 및 PWA 경로를 갱신한다."""
+    global PWA_CORE_PATHS
+    import shell
+
+    populate_search_index(trip)
+
+    # 1. style.css (style.css + icons.css())
+    style_content = (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css()
+    style_hash = hashlib.sha256(style_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_STYLE = f"assets/style.{style_hash}.css"
+
+    # 2. app.js
+    app_content = (ASSETS / "app.js").read_text(encoding="utf-8")
+    app_hash = hashlib.sha256(app_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_APP = f"assets/app.{app_hash}.js"
+
+    # 3. pwa.js
+    pwa_content = (ASSETS / "pwa.js").read_text(encoding="utf-8")
+    pwa_hash = hashlib.sha256(pwa_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_PWA = f"assets/pwa.{pwa_hash}.js"
+
+    # 4. search-index.js
+    search_content = "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False) + ";"
+    search_hash = hashlib.sha256(search_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_SEARCH_INDEX = f"assets/search-index.{search_hash}.js"
+
+    PWA_CORE_PATHS = (
+        "index.html",
+        "offline.html",
+        "offline-fallback.html",
+        "schedule.html",
+        "guide/index.html",
+        "map/index.html",
+        "prepare/index.html",
+        "prepare/emergency.html",
+        "prepare/french.html",
+        shell.ASSET_STYLE,
+        shell.ASSET_APP,
+        shell.ASSET_PWA,
+        shell.ASSET_SEARCH_INDEX,
+    )
+
+
 def write_assets(trip: Trip) -> None:
+    import shell
     out = SITE / "assets"
     out.mkdir(parents=True, exist_ok=True)
-    # 아이콘은 CSS 마스크로 붙인다 — 페이지마다 스프라이트를 인라인하면
-    # 페이지 수만큼 무게가 붙는다. 마스크는 CSS 한 번이고 페이지 무게는 0 이다.
-    (out / "style.css").write_text(
-        (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
-        encoding="utf-8")
-    for name in ("app.js", "pwa.js"):
-        shutil.copy(ASSETS / name, out / name)
-    # 글꼴은 번들하지 않는다. 기기의 기본 한글 글꼴을 쓰므로 내려받을 것이
-    # 없고, 그만큼 오프라인 패키지가 가벼워진다.
+
+    style_content = (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css()
+    (out / "style.css").write_text(style_content, encoding="utf-8")
+    (SITE / shell.ASSET_STYLE).write_text(style_content, encoding="utf-8")
+
+    app_content = (ASSETS / "app.js").read_text(encoding="utf-8")
+    (out / "app.js").write_text(app_content, encoding="utf-8")
+    (SITE / shell.ASSET_APP).write_text(app_content, encoding="utf-8")
+
+    pwa_content = (ASSETS / "pwa.js").read_text(encoding="utf-8")
+    (out / "pwa.js").write_text(pwa_content, encoding="utf-8")
+    (SITE / shell.ASSET_PWA).write_text(pwa_content, encoding="utf-8")
+
+    search_content = "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False) + ";"
+    (out / "search-index.js").write_text(search_content, encoding="utf-8")
+    (SITE / shell.ASSET_SEARCH_INDEX).write_text(search_content, encoding="utf-8")
+
     pwa = ROOT / "source" / "ASSETS" / "pwa"
     if pwa.exists():
         shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
@@ -2681,7 +2755,6 @@ def write_assets(trip: Trip) -> None:
     tourist_maps = ROOT / "source" / "ASSETS" / "tourist-maps"
     if tourist_maps.exists():
         shutil.copytree(tourist_maps, out / "tourist-maps", dirs_exist_ok=True)
-
     # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
     copied = 0
@@ -2710,32 +2783,12 @@ def write_assets(trip: Trip) -> None:
                          + "\n  ".join(missing))
     print(f"  사진 {copied}개 복사")
 
-    (out / "search-index.js").write_text(
-        "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False)
-        + ";", encoding="utf-8")
-
 
 PWA_ICON_SPECS = (
     ("apple-touch-icon.png", "180x180", "any"),
     ("icon-192.png", "192x192", "any"),
     ("icon-512.png", "512x512", "any"),
     ("icon-maskable-512.png", "512x512", "maskable"),
-)
-
-# 연결이 끊겨도 반드시 열려야 하는 것들. 없으면 빌드를 세운다.
-PWA_CORE_PATHS = (
-    "index.html",
-    "offline.html",
-    "offline-fallback.html",
-    "schedule.html",
-    "guide/index.html",
-    "map/index.html",
-    "prepare/index.html",
-    "prepare/emergency.html",
-    "prepare/french.html",
-    "assets/style.css",
-    "assets/app.js",
-    "assets/search-index.js",
 )
 
 
