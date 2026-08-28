@@ -36,10 +36,10 @@
         {
           "type": "check",
           "label": "EARLY START",
-          "detail": "08:45 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Concorde/Invalides 환승 (약 25분)."
+          "detail": "08:45 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Concorde/Invalides 환승 ➔ 09:15 오르세 Entrée 1 - Quai 도착 (약 25분 소요)."
         }
       ],
-      "executionNote": "오르세 09:30 개장 슬롯 15분 전(09:15) 도착 목표로 08:45 출발.",
+      "executionNote": "오르세 09:30 개장 슬롯 15분 전(09:15) Entrée 1 - Quai 도착 목표로 08:45 출발.",
       "officialUrl": null,
       "optional": false,
       "place_ref": null
@@ -60,10 +60,10 @@
         {
           "type": "book",
           "label": "TIMED ENTRY",
-          "detail": "Musée d'Orsay 09:30 슬롯 사전 시간지정 예매 필수 · 09:15까지 Entrée A1 도착 (월요일 휴관)."
+          "detail": "Musée d'Orsay 09:30 슬롯 사전 시간지정 예매 필수 · 09:15까지 Entrée 1 - Quai (Entrance 1 - Quay) 도착 (월요일 휴관)."
         }
       ],
-      "executionNote": "1 Rue de la Légion d'Honneur (Entrée A1 예약자 전용 출입구). 모바일 티켓 QR 준비.",
+      "executionNote": "1 Rue de la Légion d'Honneur. 시간지정 티켓 소지자는 Entrée 1 - Quai (센 강변 쪽 입구) 이용. 모바일 티켓 QR 준비.",
       "officialUrl": "https://www.musee-orsay.fr/",
       "optional": false,
       "place_ref": "musee-d-orsay"

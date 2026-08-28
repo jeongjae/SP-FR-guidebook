@@ -63,10 +63,14 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
         morning_statuses = {s["type"] for s in stops["morning-routine"]["executionStatuses"]}
         self.assertIn("check", morning_statuses)
 
-        # Musée d'Orsay timed entry book
+        # Musée d'Orsay timed entry book & Entrée 1 - Quai
         orsay_statuses = {s["type"] for s in stops["musee-d-orsay"]["executionStatuses"]}
         self.assertIn("book", orsay_statuses)
         self.assertNotIn("confirmed", orsay_statuses)
+        orsay_detail = stops["musee-d-orsay"]["executionStatuses"][0]["detail"]
+        self.assertIn("Entrée 1 - Quai", orsay_detail)
+        self.assertNotIn("Entrée A1", orsay_detail)
+        self.assertNotIn("Entrée A1", stops["musee-d-orsay"]["executionNote"])
 
         # Café Varenne lunch check (not confirmed)
         lunch_statuses = {s["type"] for s in stops["rue-du-bac-lunch"]["executionStatuses"]}

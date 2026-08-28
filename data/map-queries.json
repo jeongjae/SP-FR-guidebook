@@ -2103,19 +2103,19 @@
       "verifiedAt": "2026-08-27"
     },
     "day-32:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Musée d'Orsay 출발",
+      "title": "78 Rue de Lourmel ➔ Musée d'Orsay (Entrée 1 - Quai)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
       "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
       "travelMode": "transit",
-      "evidence": "Metro 8 to Musée d'Orsay entrance A1",
+      "evidence": "Metro 8 to Musée d'Orsay entrance 1 - Quai",
       "verifiedAt": "2026-08-28"
     },
     "day-32:musee-d-orsay": {
-      "title": "Solférino ➔ Musée d'Orsay (Entrée A1)",
+      "title": "Solférino ➔ Musée d'Orsay (Entrée 1 - Quai)",
       "origin": "Solférino, 75007 Paris",
       "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
       "travelMode": "walking",
-      "evidence": "Walk to Musée d'Orsay reserved entrance A1",
+      "evidence": "Walk to Musée d'Orsay reserved entrance 1 - Quai on riverside",
       "verifiedAt": "2026-08-28"
     },
     "day-32:rue-du-bac-lunch": {
