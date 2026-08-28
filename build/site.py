@@ -94,6 +94,8 @@ def main() -> int:
     res = render.load_reservations()
     print(f"예약: 유효 {res['active']}건 · 미확정 {res['undone']}건")
 
+    render.init_asset_pipeline(trip)
+
     def write(path: str, html: str) -> None:
         p = SITE / path
         p.parent.mkdir(parents=True, exist_ok=True)
