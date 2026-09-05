@@ -82,9 +82,9 @@
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "book",
-          "label": "TIMED ENTRY",
-          "detail": "Grand Palais 특별전 17:00 슬롯 사전 시간지정 예매 필수 · 16:45까지 Square Jean Perrin 전시 입구 보안검색 도착."
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "Grand Palais 특별전 <Cézanne et nous> 9/25 17:00 시간지정 입장 예약 완료 · 16:45까지 Square Jean Perrin 전시 입구 보안검색 도착."
         }
       ],
       "executionNote": "16:45까지 Square Jean Perrin 전시 입구 도착 → 보안검색 → 17:00 timed entry. 모바일 티켓 QR 및 신분증 지참.",
@@ -169,8 +169,7 @@
     "routeCache": null
   },
   "needsReview": [
-    "Tootbus / Big Bus 9/25 운행시간표 및 그랑 팔레 정류장 위치 확인",
-    "Grand Palais Cézanne et nous 17:00 슬롯 사전 예매"
+    "Tootbus / Big Bus 9/25 운행시간표 및 그랑 팔레 정류장 위치 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-28",

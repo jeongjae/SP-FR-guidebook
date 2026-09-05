@@ -3,14 +3,14 @@
   "day": 33,
   "date": "2026-09-30",
   "city": "Paris",
-  "title": "프티 팔레 & 몽테뉴 패션위크 & 팔레 드 도쿄",
+  "title": "모네 & 컨템퍼러리 파리 — 오랑주리·패션위크·팔레 드 도쿄",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
   "startTime": "08:00",
-  "endTime": "20:30",
-  "totalDuration": "12시간 30분",
-  "totalDistance": "메트로 + 서부 파리 도보 약 5.5km",
+  "endTime": "21:30",
+  "totalDuration": "13시간 30분",
+  "totalDistance": "메트로 + 서부 파리 도보 약 6.5km",
   "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
@@ -29,44 +29,44 @@
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
-      "summary": "프티 팔레 10:00 관람을 위해 아침식사 후 09:15 출발",
+      "summary": "오랑주리 10:00 집중 관람을 위해 아침식사 후 09:15 출발",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
           "type": "check",
           "label": "DEPARTURE",
-          "detail": "09:15 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 후 Concorde에서 1호선 환승 ➔ Champs-Élysées - Clemenceau역 (약 25분)."
+          "detail": "09:15 숙소 출발 ➔ 메트로 8호선(Lourmel) 탑승 ➔ Concorde역 하차 후 오랑주리까지 도보 이동 (약 25분)."
         }
       ],
-      "executionNote": "프티 팔레 10:00 개관에 맞춰 09:15 숙소 출발.",
+      "executionNote": "오랑주리 10:00 입장에 맞춰 09:15 숙소 출발, 09:45까지 도착해 보안검색.",
       "officialUrl": null,
       "optional": false,
       "place_ref": null
     },
     {
-      "id": "petit-palais",
+      "id": "orangerie",
       "order": 2,
       "start": "10:00",
-      "end": "12:00",
-      "name": "Petit Palais (프티 팔레 파리 시립미술관)",
+      "end": "11:30",
+      "name": "Musée de l'Orangerie (오랑주리 미술관)",
       "category": "culture",
-      "lat": 48.8661,
-      "lng": 2.3144,
-      "summary": "1900년 만국박람회 보자르 궁전. 렘브란트 자화상, 쿠르베 <잠>, 모네 유화 무료 상설전 ➔ 아름다운 반원형 안뜰 정원 산책 (2시간)",
+      "lat": 48.8638,
+      "lng": 2.3225,
+      "summary": "90분 상한의 집중 관람: 1순위 모네 <수련(Nymphéas)> 타원형 전시실, 2순위 Walter-Guillaume Collection 주요작. 시간이 넘으면 나머지는 생략한다",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "check",
-          "label": "FREE ENTRY",
-          "detail": "상설전 무료 자유 입장 · 수요일 10:00–18:00 개관 (월요일 휴관). 예약 불필요."
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "Musée de l'Orangerie 9/30 10:00 시간지정 입장 예약 완료."
         }
       ],
-      "executionNote": "Avenue Winston Churchill 정문. 상설 컬렉션은 예약 없이 무료 입장 가능.",
-      "officialUrl": "https://www.petitpalais.paris.fr/",
+      "executionNote": "Jardin des Tuileries 서쪽 입구. 11:30에 관람을 끝내고 Chez Savy 12:15 예약으로 이동한다.",
+      "officialUrl": "https://www.musee-orangerie.fr/",
       "optional": false,
-      "place_ref": "petit-palais"
+      "place_ref": "musee-de-l-orangerie"
     },
     {
       "id": "champs-elysees-lunch",
@@ -77,7 +77,7 @@
       "category": "food",
       "lat": 48.8659,
       "lng": 2.3082,
-      "summary": "프티 팔레에서 도보 10~12분. 아브뉘 몽테뉴 한 블록 안쪽 골목이라 대로변 관광객 함정을 물리적으로 피하고, 문을 나서면 곧바로 몽테뉴 산책이 시작된다",
+      "summary": "오랑주리에서 도보 약 15~18분. 아브뉘 몽테뉴 한 블록 안쪽 골목이라 대로변 관광객 함정을 피하고, 문을 나서면 곧바로 몽테뉴 산책이 시작된다",
       "menu": "Épaule d'agneau confite façon Savy €32 · Foie de veau aux lardons · Tartare de bœuf, pommes paille",
       "reservation": null,
       "executionStatuses": [
@@ -93,34 +93,76 @@
       "place_ref": "chez-savy"
     },
     {
-      "id": "fashion-week-montaigne",
+      "id": "avenue-montaigne",
       "order": 4,
       "start": "13:30",
-      "end": "17:30",
-      "name": "Paris Fashion Week 서부 축 & Palais de Tokyo",
+      "end": "14:15",
+      "name": "Avenue Montaigne 패션 하우스 거리",
       "category": "sight",
-      "lat": 48.8647,
-      "lng": 2.3025,
-      "summary": "Avenue Montaigne 명품 플래그십 쇼윈도 ➔ Grand Palais 일대 패션 피플 분위기 ➔ Palais de Tokyo / SPHERE 공공 컨텍스트 ➔ 센 강변 Alma 인도교 도보 산책 (4시간)",
+      "lat": 48.8661,
+      "lng": 2.3054,
+      "summary": "Avenue Montaigne 명품 플래그십과 공개 거리 분위기를 따라 걷는다",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [],
+      "executionNote": "Chez Savy에서 Avenue Montaigne로 나와 북쪽으로 이동한 뒤 Grand Palais 방향으로 연결.",
+      "officialUrl": null,
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "grand-palais-fashion-week",
+      "order": 5,
+      "start": "14:30",
+      "end": "15:30",
+      "name": "Grand Palais 주변 Fashion Week 공개 동선",
+      "category": "sight",
+      "lat": 48.8661,
+      "lng": 2.3125,
+      "summary": "Grand Palais 주변의 공식 공개 공간과 거리 동선만 확인하고 초청제 쇼 입장은 기대하지 않는다",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
           "type": "optional",
           "label": "OPTIONAL",
-          "detail": "도보 피로 시 산책을 2시간으로 단축하고 팔레 드 도쿄 카페 또는 센 강변 휴식으로 전환."
+          "detail": "공개 일정이 없거나 혼잡하면 Grand Palais 외관만 보고 Avenue du Président Wilson로 이동."
         }
       ],
-      "executionNote": "Avenue Montaigne ➔ Avenue du Président Wilson ➔ Palais de Tokyo. 공개 거리 분위기 체험 중심.",
-      "officialUrl": "https://palaisdetokyo.com/",
+      "executionNote": "공식 확인된 공개 행사와 거리 분위기만 체험하며 비공개 쇼 동선을 방해하지 않는다.",
+      "officialUrl": "https://www.grandpalais.fr/",
       "optional": true,
       "place_ref": "grand-palais"
     },
     {
+      "id": "palais-de-tokyo",
+      "order": 6,
+      "start": "15:45",
+      "end": "17:30",
+      "name": "Avenue du Président Wilson · Palais de Tokyo · Alma/Seine",
+      "category": "sight",
+      "lat": 48.864,
+      "lng": 2.2965,
+      "summary": "Avenue du Président Wilson의 공개 동선을 따라 Palais de Tokyo의 건축·공공공간을 보고 Alma와 센 강변에서 마무리한다",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL",
+          "detail": "도보 피로 시 Palais de Tokyo 실내 전시 또는 카페로 전환하고 Alma/Seine 산책은 생략."
+        }
+      ],
+      "executionNote": "Palais de Tokyo 전시는 공식 확인된 경우에만 선택하고, 기본은 건축·공공공간과 센 강변 산책.",
+      "officialUrl": "https://palaisdetokyo.com/",
+      "optional": true,
+      "place_ref": null
+    },
+    {
       "id": "paris-return",
-      "order": 5,
-      "start": "18:00",
-      "end": "20:30",
+      "order": 7,
+      "start": "19:30",
+      "end": "21:30",
       "name": "Stéphane Martin 15구 미식 비스트로 저녁",
       "category": "food",
       "lat": 48.8458,
@@ -144,55 +186,74 @@
   "legs": [
     {
       "from": "morning-routine",
-      "to": "petit-palais",
+      "to": "orangerie",
       "mode": "metro",
-      "duration": "메트로 8+1호선 약 25분",
-      "distance": "4.5km",
+      "duration": "메트로 8호선 + 도보 약 25분",
+      "distance": "4.2km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "petit-palais",
+      "from": "orangerie",
       "to": "champs-elysees-lunch",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "duration": "15~18분",
+      "distance": "1.1km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "champs-elysees-lunch",
-      "to": "fashion-week-montaigne",
+      "to": "avenue-montaigne",
       "mode": "walk",
-      "duration": "8분",
-      "distance": "0.5km",
+      "duration": "5분",
+      "distance": "0.4km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "fashion-week-montaigne",
+      "from": "avenue-montaigne",
+      "to": "grand-palais-fashion-week",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "0.8km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "grand-palais-fashion-week",
+      "to": "palais-de-tokyo",
+      "mode": "walk",
+      "duration": "15분",
+      "distance": "1.3km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "palais-de-tokyo",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 9+8호선 약 20분",
-      "distance": "3.5km",
+      "duration": "메트로 9+8호선 약 25분",
+      "distance": "4.0km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "메트로 8호선 / 9호선 (15구 ↔ 샹젤리제/알마)",
+    "메트로 8호선 / 9호선 (15구 ↔ Concorde/알마)",
     "몽테뉴 대로 및 센 강변 도보"
   ],
   "food": [
-    "가벼운 점심 (11:30)",
-    "Stéphane Martin 저녁 (도보 4분·예약 필수)"
+    "Chez Savy 점심 (12:15 예약)",
+    "Stéphane Martin 저녁 (19:30·도보 4분·예약 필수)"
   ],
   "highlights": [
+    "모네 수련과 Walter-Guillaume 주요작 90분 집중 관람",
     "초청제 쇼를 일반 입장처럼 기대하지 않는다",
     "공개 공간·거리 중심",
     "야간행사 제외"
   ],
-  "backup": "Le Bar des Théâtres(44 rue Jean Goujon, 논스톱 영업이라 시간 리스크 최저, TheFork 온라인 예약 가능) 또는 프티 팔레 정원의 Café 1902 — 단 후자는 예약 불가에 서비스 지연 후기가 반복되니 점심 본식보다 관람 후 커피 자리로 쓴다\n\n비 올 경우 팔레 드 도쿄 실내 전시 관람 및 프티 팔레 가든 카페 체류 연장",
+  "backup": "오랑주리 입장 또는 보안검색이 지연되면 모네 <수련>을 최우선으로 보고 Walter-Guillaume Collection은 주요작만 확인해 11:30 종료를 지킨다. Chez Savy 예약이 어려우면 Le Bar des Théâtres(44 rue Jean Goujon, 논스톱 영업·TheFork 예약 가능)를 사용한다.\n\n비 올 경우 Fashion Week 야외 동선을 줄이고 Palais de Tokyo 실내 전시 또는 카페로 전환한다.",
   "map": {
     "zoom": 13,
     "center": [
@@ -205,7 +266,7 @@
     "9/30 Fashion Week 서부 Paris 축(Avenue Montaigne~Palais de Tokyo) 동선 확인"
   ],
   "sourceRefs": [
-    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-7-9월30일",
-    "OSM Nominatim 지오코딩 2026-08-06: Palais de Tokyo·Avenue Montaigne·Rue Saint-Honoré"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-33-2026-09-30",
+    "OSM Nominatim 지오코딩 2026-08-06: Orangerie·Chez Savy·Grand Palais·Palais de Tokyo·Avenue Montaigne"
   ]
 }

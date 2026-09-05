@@ -3,14 +3,14 @@
   "day": 30,
   "date": "2026-09-27",
   "city": "Paris",
-  "title": "오랑주리 수련 연작 & 튀일르리·팔레 루아얄 고전 파리",
+  "title": "벨 에포크 & 고전 파리 — 프티 팔레·튀일르리·팔레 루아얄",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
   "startTime": "08:00",
   "endTime": "21:00",
   "totalDuration": "13시간",
-  "totalDistance": "메트로 + 도보 약 5.0km",
+  "totalDistance": "메트로 + 도보 약 6.0km",
   "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
@@ -24,7 +24,7 @@
       "id": "morning-routine",
       "order": 1,
       "start": "08:00",
-      "end": "12:45",
+      "end": "12:30",
       "name": "Marché Convention 일요 장보기 & Pichard 빵 조달",
       "category": "hotel",
       "lat": 48.8375,
@@ -48,34 +48,34 @@
       ]
     },
     {
-      "id": "orangerie",
+      "id": "petit-palais",
       "order": 2,
-      "start": "13:30",
-      "end": "15:15",
-      "name": "Musée de l'Orangerie (오랑주리 미술관)",
+      "start": "13:00",
+      "end": "14:30",
+      "name": "Petit Palais (프티 팔레 파리 시립미술관)",
       "category": "culture",
-      "lat": 48.8638,
-      "lng": 2.3225,
-      "summary": "모네의 기념비적 <수련(Nymphéas)> 타원형 자연채광 전시실 2개실 집중 감상 + 발터-기욤 컬렉션(세잔, 르누아르, 마티스, 모딜리아니) (1시간 45분)",
+      "lat": 48.8661,
+      "lng": 2.3144,
+      "summary": "1900년 만국박람회 보자르 궁전의 무료 상설전과 돔 천장·모자이크 회랑·안뜰 정원을 90분 동안 둘러본다",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "book",
-          "label": "TIMED ENTRY",
-          "detail": "Musée de l'Orangerie 13:30 슬롯 사전 시간지정 예매 필수 (화요일 휴관이므로 일요일 방문 엄수)."
+          "type": "check",
+          "label": "FREE ENTRY",
+          "detail": "상설전 무료 자유 입장 · 일요일 10:00–18:00 개관 (월요일 휴관). 상설전은 예약 불필요."
         }
       ],
-      "executionNote": "Jardin des Tuileries 서쪽 입구 (Place de la Concorde 쪽). 보안검색 15분 전 도착.",
-      "officialUrl": "https://www.musee-orangerie.fr/",
+      "executionNote": "Avenue Winston Churchill 정문. 상설 컬렉션과 벨 에포크 건축·안뜰 정원을 14:30까지 본다.",
+      "officialUrl": "https://www.petitpalais.paris.fr/",
       "optional": false,
-      "place_ref": "musee-de-l-orangerie"
+      "place_ref": "petit-palais"
     },
     {
       "id": "tuileries-vendome",
       "order": 3,
-      "start": "15:15",
-      "end": "16:15",
+      "start": "15:00",
+      "end": "16:00",
       "name": "Jardin des Tuileries & Place Vendôme",
       "category": "sight",
       "lat": 48.8635,
@@ -92,13 +92,13 @@
     {
       "id": "palais-royal",
       "order": 4,
-      "start": "16:15",
-      "end": "17:30",
+      "start": "16:10",
+      "end": "17:15",
       "name": "Palais Royal (팔레 루아얄 안뜰 & 정원)",
       "category": "sight",
       "lat": 48.8648,
       "lng": 2.3364,
-      "summary": "다니엘 뷔랑(Daniel Buren)의 줄무늬 원통 기둥(Les Deux Plateaux) 설치미술과 고즈넉한 아케이드 회랑 정원 산책 (75분)",
+      "summary": "다니엘 뷔랑(Daniel Buren)의 줄무늬 원통 기둥(Les Deux Plateaux) 설치미술과 고즈넉한 아케이드 회랑 정원 산책 (65분)",
       "menu": "Café Kitsuné 에스프레소",
       "reservation": null,
       "executionStatuses": [],
@@ -159,19 +159,19 @@
   "legs": [
     {
       "from": "morning-routine",
-      "to": "orangerie",
+      "to": "petit-palais",
       "mode": "metro",
-      "duration": "메트로 8호선 약 20분",
-      "distance": "4.2km",
+      "duration": "메트로 8+1호선 약 25분",
+      "distance": "4.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "orangerie",
+      "from": "petit-palais",
       "to": "tuileries-vendome",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "duration": "20분",
+      "distance": "1.4km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
@@ -179,7 +179,7 @@
       "from": "tuileries-vendome",
       "to": "palais-royal",
       "mode": "walk",
-      "duration": "8분",
+      "duration": "10분",
       "distance": "0.6km",
       "line": null,
       "geometryStatus": "coordinate-line"
@@ -204,19 +204,19 @@
     }
   ],
   "transport": [
-    "메트로 8호선 (Lourmel ↔ Concorde)",
+    "메트로 8+1호선 (Lourmel ↔ Champs-Élysées - Clemenceau)",
     "파리 우안 고전 예술·정원 도보"
   ],
   "food": [
-    "Palais Royal 주변 점심",
-    "가벼운 저녁"
+    "Marché Convention 식재료로 숙소 점심",
+    "Bouillon Chartier Montparnasse 저녁"
   ],
   "highlights": [
-    "고전적 파리 방향잡기",
+    "Petit Palais·Tuileries·Palais Royal·Opéra의 벨 에포크와 고전 파리",
     "Louvre 내부 입장 없음",
     "스케치 20–30분"
   ],
-  "backup": "우천 시 야외 정원 도보를 축소하고 갤러리 비비엔(Galerie Vivienne) 등 인근 파사주(Passages) 실내 산책으로 전환",
+  "backup": "우천 시 Petit Palais 실내 관람은 유지하고 야외 정원 도보를 축소해 갤러리 비비엔(Galerie Vivienne) 등 인근 파사주(Passages) 실내 산책으로 전환",
   "map": {
     "zoom": 14,
     "center": [
@@ -225,11 +225,9 @@
     ],
     "routeCache": null
   },
-  "needsReview": [
-    "Musée de l'Orangerie 13:30 슬롯 예매 필수 (화요일 휴관이므로 일요일 방문 엄수)"
-  ],
+  "needsReview": [],
   "sourceRefs": [
-    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-4-9월27일",
-    "OSM Nominatim 지오코딩 2026-08-06: Tuileries·Palais Royal·Opéra"
+    "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-30-2026-09-27",
+    "OSM Nominatim 지오코딩 2026-08-06: Petit Palais·Tuileries·Palais Royal·Opéra"
   ]
 }

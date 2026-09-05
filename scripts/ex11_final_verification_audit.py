@@ -141,7 +141,7 @@ def run_audit():
         ("Day 27", "TGV INOUI 6618 (Lyon 13:04 -> Paris 15:00)", "TRANSPORT", "TGV 1st class [CONFIRMED]", "Low", "SNCF Connect", "T-1"),
         ("Day 28", "Grand Palais Cézanne et nous 17:00 Timed Slot", "BOOKING", "Special exhibition timed entry", "Medium", "Grand Palais Official", "T-7"),
         ("Day 29", "Musée du Luxembourg Andy Warhol 13:00 Slot", "BOOKING", "Temporary exhibition slot", "Medium", "Sénat / Luxembourg Official", "T-7"),
-        ("Day 30", "Musée de l'Orangerie 13:30 Water Lilies Slot", "BOOKING", "Timed entry reservation", "Medium", "Musée de l'Orangerie", "T-7"),
+        ("Day 33", "Musée de l'Orangerie 10:00 Water Lilies Slot", "BOOKING", "Timed entry reservation", "Medium", "Musée de l'Orangerie", "T-7"),
         ("Day 31", "Paris Fashion Week Public Vibe / Le Marais Walk", "EVENT", "PFW public atmosphere & popup access", "Low", "Fédération de la Haute Couture", "T-3"),
         ("Day 32", "Musée d'Orsay 09:30 Opening Slot & Rodin", "BOOKING", "09:30 morning entry", "Medium", "Musée d'Orsay Official", "T-7"),
         ("Day 33", "Louvre 14:00 Timed Slot", "BOOKING", "Pyramide entry slot", "Medium", "Louvre Official", "T-7"),

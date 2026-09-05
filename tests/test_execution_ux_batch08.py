@@ -98,24 +98,29 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
         self.assertIn("Rodin", rendered)
         self.assertIn("Invalides", rendered)
 
-    def test_day33_petit_palais_and_fashion_week(self):
+    def test_day33_orangerie_and_fashion_week(self):
         payload = load_day(33)
         stops = {stop["id"]: stop for stop in payload["stops"]}
 
-        # Petit Palais free entry check
-        pp_statuses = {s["type"] for s in stops["petit-palais"]["executionStatuses"]}
-        self.assertIn("check", pp_statuses)
-        self.assertNotIn("confirmed", pp_statuses)
+        # User confirmed the September 30, 10:00 ticket.
+        orangerie_statuses = {s["type"] for s in stops["orangerie"]["executionStatuses"]}
+        self.assertIn("confirmed", orangerie_statuses)
+        self.assertNotIn("book", orangerie_statuses)
+        self.assertEqual("10:00", stops["orangerie"]["start"])
+        self.assertEqual("11:30", stops["orangerie"]["end"])
+        self.assertNotIn("petit-palais", stops)
 
         # Chez Savy lunch booking
         lunch_statuses = {s["type"] for s in stops["champs-elysees-lunch"]["executionStatuses"]}
         self.assertIn("book", lunch_statuses)
         self.assertNotIn("confirmed", lunch_statuses)
 
-        # Fashion Week & Palais de Tokyo is optional
-        self.assertTrue(stops["fashion-week-montaigne"]["optional"])
-        fw_statuses = {s["type"] for s in stops["fashion-week-montaigne"]["executionStatuses"]}
+        # Grand Palais public Fashion Week route and Palais de Tokyo are optional.
+        self.assertFalse(stops["avenue-montaigne"]["optional"])
+        self.assertTrue(stops["grand-palais-fashion-week"]["optional"])
+        fw_statuses = {s["type"] for s in stops["grand-palais-fashion-week"]["executionStatuses"]}
         self.assertIn("optional", fw_statuses)
+        self.assertTrue(stops["palais-de-tokyo"]["optional"])
 
         # Stéphane Martin dinner booking
         dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
@@ -123,7 +128,8 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
         self.assertNotIn("confirmed", dinner_statuses)
 
         rendered = self.rendered(33)
-        self.assertIn("Petit Palais", rendered)
+        self.assertIn("Orangerie", rendered)
+        self.assertNotIn("Petit Palais", rendered)
         self.assertIn("Chez Savy", rendered)
         self.assertIn("Palais de Tokyo", rendered)
         self.assertIn("Stéphane Martin", rendered)
@@ -215,7 +221,7 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
     def test_day32_to_35_semantics_are_protected(self):
         payload = [semantic_projection(load_day(number)) for number in range(32, 36)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("c616b6aef5f603b59a5b76f232137cc8a1219a616a422f0249de332aa9f204da", digest)
+        self.assertEqual("fde9835b57026adec857d6d2b6da7fea0864b8361bf98204cc72dfff65669920", digest)
 
 
 if __name__ == "__main__":

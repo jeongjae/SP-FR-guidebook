@@ -79,7 +79,7 @@ LUNCH = {
                     "(10 rue de Saint-Simon, 점심 코스 €26~29 — 2인 3코스가 예산에 들어오는 유일한 곳)"),
     33: dict(sid="champs-elysees-lunch", ref="chez-savy",
              name="Chez Savy 8구 아르데코 비스트로 점심",
-             summary="프티 팔레에서 도보 10~12분. 아브뉘 몽테뉴 한 블록 안쪽 골목이라 대로변 "
+             summary="오랑주리에서 도보 약 15~18분. 아브뉘 몽테뉴 한 블록 안쪽 골목이라 대로변 "
                      "관광객 함정을 물리적으로 피하고, 문을 나서면 곧바로 몽테뉴 산책이 시작된다",
              menu="Épaule d'agneau confite façon Savy €32 · Foie de veau aux lardons · "
                   "Tartare de bœuf, pommes paille",
@@ -90,8 +90,7 @@ LUNCH = {
                                            "FHCM 최종 캘린더 확인"),
                   es("check", "CHECK", "예산은 앙트레+메인 2코스에 물(carafe d'eau)로 1인 €33~42")],
              backup="Le Bar des Théâtres(44 rue Jean Goujon, 논스톱 영업이라 시간 리스크 최저, "
-                    "TheFork 온라인 예약 가능) 또는 프티 팔레 정원의 Café 1902 — 단 후자는 예약 "
-                    "불가에 서비스 지연 후기가 반복되니 점심 본식보다 관람 후 커피 자리로 쓴다"),
+                    "TheFork 온라인 예약 가능)"),
     34: dict(sid="versailles-lunch", ref="la-flottille",
              name="La Flottille 대운하 점심",
              summary="궁전 본관 출구에서 정원 중앙축(라토나 → 왕의 길 → 아폴로 분수)을 20~25분 "

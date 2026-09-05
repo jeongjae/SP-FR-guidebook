@@ -24,10 +24,10 @@ Paris에서는 명소를 하루 종일 따라다니기보다 한곳에 머물며
 | 9/24 목 | Lyon → Paris TGV 이동 · 15구 숙소 체크인 (15박 시작) · 첫 장보기 & 동네 산책 |
 | 9/25 금 | Tootbus 파리 시티투어 풀 루프 · Grand Palais <Cézanne et nous> 특별전 |
 | 9/26 토 | Musée du Luxembourg <Andy Warhol> 특별전 · 뤽상부르 공원 · 생제르맹 · 노트르담 외관 |
-| 9/27 일 | Marché Convention 일요 장보기 · Musée de l'Orangerie (수련) · 튀일르리 · 팔레 루아얄 |
+| 9/27 일 | Belle Époque & Classical Paris · Marché Convention·Pichard · Petit Palais · 튀일르리 · 팔레 루아얄 · Opéra Garnier |
 | 9/28 월 | Musée Gustave Moreau · 9구 누벨 아테네 · Paris Fashion Week 개막 & Le Marais |
 | 9/29 화 | Musée d'Orsay 3.5시간 집중 관람 · Musée Rodin 조각 정원 · 앵발리드 외관 |
-| 9/30 수 | Petit Palais (파리 시립미술관) · Paris Fashion Week 서부 축 & Palais de Tokyo |
+| 9/30 수 | Monet & Contemporary Paris / Fashion · Musée de l'Orangerie · Chez Savy · Avenue Montaigne · Fashion Week 서부 축 · Palais de Tokyo |
 | 10/1 목 | Château de Versailles (본관 10:00) · 대정원 · 트리아농 전일 투어 |
 | 10/2 금 | Musée du Louvre 마스터피스 4시간 집중 관람 · Cour Carrée & 센 강변 일몰 산책 |
 | 10/3 토 | Musée Marmottan Monet (<인상, 해돋이>) · 라늘라그 정원 & 파시 역사지구 산책 |

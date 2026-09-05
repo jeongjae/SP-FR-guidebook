@@ -71,8 +71,8 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
 
         # Grand Palais timed entry book
         palais_statuses = {s["type"] for s in stops["grand-palais-cezanne"]["executionStatuses"]}
-        self.assertIn("book", palais_statuses)
-        self.assertNotIn("confirmed", palais_statuses)
+        self.assertIn("confirmed", palais_statuses)
+        self.assertNotIn("book", palais_statuses)
 
         # Café du Commerce open check
         dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
@@ -117,7 +117,7 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("Saint-Germain-des-Prés", rendered)
         self.assertIn("Bouillon Racine", rendered)
 
-    def test_day30_orangerie_and_marche_convention(self):
+    def test_day30_petit_palais_and_marche_convention(self):
         payload = load_day(30)
         stops = {stop["id"]: stop for stop in payload["stops"]}
 
@@ -126,10 +126,11 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("check", market_statuses)
         self.assertNotIn("confirmed", market_statuses)
 
-        # Musée de l'Orangerie timed entry book (Sunday visit mandatory due to Tuesday closure)
-        orangerie_statuses = {s["type"] for s in stops["orangerie"]["executionStatuses"]}
-        self.assertIn("book", orangerie_statuses)
-        self.assertNotIn("confirmed", orangerie_statuses)
+        # Petit Palais permanent collection is free and does not require a booking.
+        petit_statuses = {s["type"] for s in stops["petit-palais"]["executionStatuses"]}
+        self.assertIn("check", petit_statuses)
+        self.assertNotIn("book", petit_statuses)
+        self.assertNotIn("orangerie", stops)
 
         # Opéra Garnier walk is optional
         self.assertTrue(stops["opera-garnier-district"]["optional"])
@@ -142,7 +143,8 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertNotIn("confirmed", dinner_statuses)
 
         rendered = self.rendered(30)
-        self.assertIn("Orangerie", rendered)
+        self.assertIn("Petit Palais", rendered)
+        self.assertNotIn("Orangerie", rendered)
         self.assertIn("Tuileries", rendered)
         self.assertIn("Palais Royal", rendered)
         self.assertIn("Bouillon Chartier", rendered)
@@ -203,7 +205,7 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
     def test_day28_to_31_semantics_are_protected(self):
         payload = [semantic_projection(load_day(number)) for number in range(28, 32)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("f1820149a58d2762a985dd4d92e00c697e027f668e0e585cab554988784e9313", digest)
+        self.assertEqual("79bac912383a596ce5b01f2990302d9c4a69c4d0abb50c92d0504ae5980b185a", digest)
 
 
 if __name__ == "__main__":

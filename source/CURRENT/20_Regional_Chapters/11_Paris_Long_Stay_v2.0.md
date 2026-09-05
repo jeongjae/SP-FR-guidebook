@@ -37,10 +37,10 @@ Paris에서는 명소를 하루 종일 따라다니기보다 한곳에 머물며
 | 9/24 목 | Lyon → Paris TGV 이동 · 15구 숙소 체크인 (15박 시작) · 첫 장보기 & 동네 산책 |
 | 9/25 금 | Tootbus 파리 시티투어 풀 루프 · Grand Palais <Cézanne et nous> 특별전 |
 | 9/26 토 | Musée du Luxembourg <Andy Warhol> 특별전 · 뤽상부르 공원 · 생제르맹 · 노트르담 외관 |
-| 9/27 일 | Marché Convention 일요 장보기 · Musée de l'Orangerie (수련) · 튀일르리 · 팔레 루아얄 |
+| 9/27 일 | Belle Époque & Classical Paris · Marché Convention·Pichard · Petit Palais · 튀일르리 · 팔레 루아얄 · Opéra Garnier |
 | 9/28 월 | Musée Gustave Moreau · 9구 누벨 아테네 · Paris Fashion Week 개막 & Le Marais |
 | 9/29 화 | Musée d'Orsay 3.5시간 집중 관람 · Musée Rodin 조각 정원 · 앵발리드 외관 |
-| 9/30 수 | Petit Palais (파리 시립미술관) · Paris Fashion Week 서부 축 & Palais de Tokyo |
+| 9/30 수 | Monet & Contemporary Paris / Fashion · Musée de l'Orangerie · Chez Savy · Avenue Montaigne · Fashion Week 서부 축 · Palais de Tokyo |
 | 10/1 목 | Château de Versailles (본관 10:00) · 대정원 · 트리아농 전일 투어 |
 | 10/2 금 | Musée du Louvre 마스터피스 4시간 집중 관람 · Cour Carrée & 센 강변 일몰 산책 |
 | 10/3 토 | Musée Marmottan Monet (<인상, 해돋이>) · 라늘라그 정원 & 파시 역사지구 산책 |
@@ -495,7 +495,7 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 - 메트로 8호선(Lourmel, Commerce) 및 10호선 도보 접근성.
 
 ### 주요 예약 및 안전 원칙
-- 루브르(Day 35), 오랑주리(Day 30), 베르사유(Day 34 10:00 슬롯), 그랑 팔레 세잔전(Day 28), 오르세(Day 32 상설 · Day 39 카사트전 14:00) 등 주요 문화 명소는 사전 시간지정 예약으로 입장한다.
+- 루브르(Day 35), 오랑주리(Day 33), 베르사유(Day 34 10:00 슬롯), 그랑 팔레 세잔전(Day 28), 오르세(Day 32 상설 · Day 39 카사트전 14:00) 등 주요 문화 명소는 사전 시간지정 예약으로 입장한다.
 - 야간 귀가 시에는 환승이 적고 밝은 출구로 연결되는 메트로 노선을 이용한다.
 
 ---
@@ -505,8 +505,8 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 ### 출발 전 최종 확인
 
 - [ ] 9/24 TGV INOUI 6618 (13:04 Lyon Part-Dieu → 15:00 Paris Gare de Lyon) 티켓 확인
-- [ ] 9/25 Grand Palais <Cézanne et nous> 예약 시간 확인
-- [ ] 9/27 Musée de l'Orangerie 예약 시간 확인
+- [x] 9/25 Grand Palais <Cézanne et nous> **17:00 예약 확정**
+- [x] 9/30 Musée de l'Orangerie **10:00 예약 확정**
 - [ ] 9/29 Musée d'Orsay 상설 집중 관람 (09:30 슬롯) 예약 확인
 - [ ] 10/1 Château de Versailles (10:00) 입장 슬롯 확인
 - [ ] 10/2 Musée du Louvre 입장 슬롯 확인
@@ -601,18 +601,18 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 ---
 
 ## Day 30 — 2026-09-27
-### 오랑주리 수련 연작 & 튀일르리·팔레 루아얄 고전 파리
+### Belle Époque & Classical Paris — 프티 팔레·튀일르리·팔레 루아얄
 
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
-|  | **Marché Convention 일요 장보기 & Pichard 빵 조달** | 15구 콩방시옹 일요 시장에서 로티세리 치킨, 콩테 치즈, 무화과 조달. 같은 오전에 Pichard 에서 다음 날 아침 몫까지 산다 — 월·화는 이 빵집이 닫는다 |
-|  | **Musée de l'Orangerie (오랑주리 미술관)** | 모네의 기념비적 <수련(Nymphéas)> 타원형 자연채광 전시실 2개실 집중 감상 + 발터-기욤 컬렉션(세잔, 르누아르, 마티스, 모딜리아니) (1시간 45분) |
-|  | **Jardin des Tuileries & Place Vendôme** | 튀일르리 정원의 대형 팔각 분수대와 조각 산책 ➔ 방돔 광장(Place Vendôme) 나폴레옹 전승기념탑 조망 (60분) |
-|  | **Palais Royal (팔레 루아얄 안뜰 & 정원)** | 다니엘 뷔랑(Daniel Buren)의 줄무늬 원통 기둥(Les Deux Plateaux) 설치미술과 고즈넉한 아케이드 회랑 정원 산책 (75분) |
-|  | **Opéra Garnier 지구 외관 산책** | 샤를 가르니에의 화려한 네오바로크 파사드 조망 및 오페라 광장 산책 (60분) |
-|  | **Bouillon Chartier Montparnasse 저녁** | 1903년 역사기념물 등록 아르누보 식당에서 종이 식탁보에 연필로 주문하며 즐기는 전설적인 가성비 부이용 만찬 |
+| 08:00–12:30 | **Marché Convention 일요 장보기 & Pichard 빵 조달 · 숙소 점심과 휴식** | 15구 콩방시옹 일요 시장에서 로티세리 치킨, 콩테 치즈, 무화과를 사고 Pichard에서 다음 날 아침 몫까지 조달한 뒤 숙소로 돌아가 점심과 휴식 |
+| 13:00–14:30 | **Petit Palais (프티 팔레 파리 시립미술관)** | 1900년 만국박람회 보자르 궁전의 무료 상설전과 돔 천장·모자이크 회랑·안뜰 정원을 90분 동안 관람 |
+| 15:00–16:00 | **Jardin des Tuileries & Place Vendôme** | 튀일르리 정원의 대형 팔각 분수대와 조각 산책 ➔ 방돔 광장(Place Vendôme) 나폴레옹 전승기념탑 조망 |
+| 16:10–17:15 | **Palais Royal (팔레 루아얄 안뜰 & 정원)** | 다니엘 뷔랑(Daniel Buren)의 줄무늬 원통 기둥과 고즈넉한 아케이드 회랑 정원 산책 |
+| 17:30–18:30 | **Opéra Garnier 지구 외관 산책** | 샤를 가르니에의 화려한 네오바로크 파사드 조망 및 오페라 광장 산책 |
+| 19:00 이후 | **Bouillon Chartier Montparnasse 저녁** | 1903년 역사기념물 등록 아르누보 식당에서 종이 식탁보에 연필로 주문하며 즐기는 전설적인 가성비 부이용 만찬 |
 
 ---
 
@@ -648,17 +648,17 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 ---
 
 ## Day 33 — 2026-09-30
-### 프티 팔레 & 몽테뉴 패션위크 & 팔레 드 도쿄
+### Monet & Contemporary Paris / Fashion — 오랑주리·패션위크·팔레 드 도쿄
 
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
-|  | **Shortened Home Morning (아침·빠른 준비)** | 프티 팔레 10:00 관람을 위해 아침식사 후 09:15 출발 |
-|  | **Petit Palais (프티 팔레 파리 시립미술관)** | 1900년 만국박람회 보자르 궁전. 렘브란트 자화상, 쿠르베 <잠>, 모네 유화 무료 상설전 ➔ 아름다운 반원형 안뜰 정원 산책 (2시간) |
-|  | **샹젤리제 인근 비스트로 점심** | 프티 팔레 인근 테라스 레스토랑 점심 |
-|  | **Paris Fashion Week 서부 축 & Palais de Tokyo** | Avenue Montaigne 명품 플래그십 쇼윈도 ➔ Grand Palais 일대 패션 피플 분위기 ➔ Palais de Tokyo / SPHERE 공공 컨텍스트 ➔ 센 강변 Alma 인도교 도보 산책 (4시간) |
-|  | **15구 숙소 귀환 & 저녁** | 메트로 9호선(Alma-Marceau) ➔ 15구 귀환 후 저녁 |
+| 09:15 | **Shortened Home Morning 종료 · 숙소 출발** | 메트로 8호선 Lourmel ➔ Concorde, 09:45까지 도착해 보안검색 |
+| 10:00–11:30 | **Musée de l'Orangerie (오랑주리 미술관)** | 90분 상한의 집중 관람. 1순위 모네 <수련(Nymphéas)> 타원형 전시실, 2순위 Walter-Guillaume Collection 주요작. 시간이 넘으면 나머지는 생략 |
+| 12:15–13:30 | **Chez Savy 점심** | 오랑주리에서 도보 약 15~18분. 12:15 예약을 지키고 식후 곧바로 Avenue Montaigne 산책 시작 |
+| 13:30 이후 | **Paris Fashion Week 서부 공개 동선 & Palais de Tokyo** | Avenue Montaigne ➔ Grand Palais 주변의 공식 공개 공간 ➔ Avenue du Président Wilson ➔ Palais de Tokyo 건축·공공공간 ➔ Alma/Seine 산책 |
+| 19:30 | **Stéphane Martin 15구 저녁** | 메트로 9+8호선으로 15구에 복귀해 예약된 저녁 시간에 맞춘다 |
 
 ---
 
@@ -805,4 +805,3 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 |  | **자택 귀환 & 43일 스페인-프랑스 대여정 공식 완결** | 공항철도/리무진/택시로 귀가. 짐 정리, 여행 사진 백업, 여정 마무리 |
 
 ---
-

@@ -2057,21 +2057,21 @@
       "evidence": "Sunday morning market and Pichard bakery procurement",
       "verifiedAt": "2026-08-27"
     },
-    "day-30:orangerie": {
-      "title": "78 Rue de Lourmel ➔ Musée de l'Orangerie (수련)",
+    "day-30:petit-palais": {
+      "title": "78 Rue de Lourmel ➔ Petit Palais (시립미술관)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
+      "destination": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
       "travelMode": "transit",
-      "evidence": "Metro 8 to Orangerie Museum",
-      "verifiedAt": "2026-08-27"
+      "evidence": "Metro 8 + 1 to Champs-Élysées - Clemenceau and Petit Palais",
+      "verifiedAt": "2026-09-06"
     },
     "day-30:tuileries-vendome": {
-      "title": "Musée de l'Orangerie ➔ Place Vendôme",
-      "origin": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
+      "title": "Petit Palais ➔ Jardin des Tuileries ➔ Place Vendôme",
+      "origin": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
       "destination": "Place Vendôme, 75001 Paris",
       "travelMode": "walking",
-      "evidence": "Walk through Tuileries gardens to Place Vendôme column",
-      "verifiedAt": "2026-08-27"
+      "evidence": "Walk via Place de la Concorde and Tuileries gardens to Place Vendôme",
+      "verifiedAt": "2026-09-06"
     },
     "day-30:palais-royal": {
       "title": "Place Vendôme ➔ Palais-Royal (뷔랑 기둥)",
@@ -2186,36 +2186,52 @@
       "verifiedAt": "2026-08-28"
     },
     "day-33:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Petit Palais 출발",
+      "title": "78 Rue de Lourmel ➔ Musée de l'Orangerie 출발",
       "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
+      "destination": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
       "travelMode": "transit",
-      "evidence": "Metro 8 + 1 to Petit Palais",
-      "verifiedAt": "2026-08-28"
+      "evidence": "Metro 8 to Concorde and walk to Orangerie",
+      "verifiedAt": "2026-09-06"
     },
-    "day-33:petit-palais": {
-      "title": "Champs-Élysées - Clemenceau ➔ Petit Palais (시립미술관)",
-      "origin": "Champs-Élysées - Clemenceau, 75008 Paris",
-      "destination": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
+    "day-33:orangerie": {
+      "title": "Concorde ➔ Musée de l'Orangerie (수련)",
+      "origin": "Concorde, 75001 Paris",
+      "destination": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
       "travelMode": "walking",
-      "evidence": "Walk to Petit Palais main entrance",
-      "verifiedAt": "2026-08-28"
+      "evidence": "Walk to Orangerie entrance on the Seine side of Tuileries",
+      "verifiedAt": "2026-09-06"
     },
     "day-33:champs-elysees-lunch": {
-      "title": "Petit Palais ➔ Chez Savy 점심",
-      "origin": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
+      "title": "Musée de l'Orangerie ➔ Chez Savy 12:15 점심",
+      "origin": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
       "destination": "Chez Savy, 23 Rue Bayard, 75008 Paris",
       "travelMode": "walking",
-      "evidence": "Walk to Chez Savy in 8th arr.",
-      "verifiedAt": "2026-08-28"
+      "evidence": "15-18 minute walk across Place de la Concorde to Chez Savy",
+      "verifiedAt": "2026-09-06"
     },
-    "day-33:fashion-week-montaigne": {
-      "title": "Chez Savy ➔ Palais de Tokyo (패션위크 서부 축)",
+    "day-33:avenue-montaigne": {
+      "title": "Chez Savy ➔ Avenue Montaigne",
       "origin": "Chez Savy, 23 Rue Bayard, 75008 Paris",
+      "destination": "Avenue Montaigne, 75008 Paris",
+      "travelMode": "walking",
+      "evidence": "Begin the public Fashion Week street route on Avenue Montaigne",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:grand-palais-fashion-week": {
+      "title": "Avenue Montaigne ➔ Grand Palais 공개 동선",
+      "origin": "Avenue Montaigne, 75008 Paris",
+      "destination": "Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to publicly accessible Fashion Week surroundings at Grand Palais",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:palais-de-tokyo": {
+      "title": "Grand Palais ➔ Avenue du Président Wilson ➔ Palais de Tokyo",
+      "origin": "Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris",
       "destination": "Palais de Tokyo, 13 Avenue du Président Wilson, 75116 Paris",
       "travelMode": "walking",
-      "evidence": "Walk through Avenue Montaigne to Palais de Tokyo",
-      "verifiedAt": "2026-08-28"
+      "evidence": "Continue the public route to Palais de Tokyo and Alma/Seine",
+      "verifiedAt": "2026-09-06"
     },
     "day-33:paris-return": {
       "title": "Palais de Tokyo ➔ Stéphane Martin 저녁 (15구)",
@@ -2223,7 +2239,7 @@
       "destination": "Stéphane Martin, 67 Rue des Entrepreneurs, 75015 Paris",
       "travelMode": "transit",
       "evidence": "Metro 9 + 8 to 15th arr. bistro",
-      "verifiedAt": "2026-08-28"
+      "verifiedAt": "2026-09-06"
     },
     "day-34:versailles-palace": {
       "title": "Gare de Versailles Château Rive Gauche ➔ Château de Versailles (본관)",

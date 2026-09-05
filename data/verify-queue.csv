@@ -713,12 +713,12 @@ musee-d-orsay,booking,BLOCKED,P0,,musee-orsay.fr HTTP 403 (2회 시도),,,paris,
 musee-d-orsay,price_adult,FRESH,P1,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,32;39
 musee-d-orsay,getting_there,MISSING,P1,,,,,paris,essential,Musée d'Orsay,32;39
 musee-d-orsay,duration,MISSING,P2,,,,,paris,essential,Musée d'Orsay,32;39
-musee-de-l-orangerie,closed,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,30
-musee-de-l-orangerie,hours,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,30
-musee-de-l-orangerie,booking,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,30
-musee-de-l-orangerie,price_adult,BLOCKED,P1,2026-08-17,일반 성인 요금·휴관 요일 공식 페이지 403/404 — 확인 실패,,2026-08-17 신규 검증,paris,priority,Musée de l'Orangerie,30
-musee-de-l-orangerie,getting_there,MISSING,P1,,,,,paris,priority,Musée de l'Orangerie,30
-musee-de-l-orangerie,duration,MISSING,P2,,,,,paris,priority,Musée de l'Orangerie,30
+musee-de-l-orangerie,closed,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,33
+musee-de-l-orangerie,hours,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,33
+musee-de-l-orangerie,booking,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,33
+musee-de-l-orangerie,price_adult,BLOCKED,P1,2026-08-17,일반 성인 요금·휴관 요일 공식 페이지 403/404 — 확인 실패,,2026-08-17 신규 검증,paris,priority,Musée de l'Orangerie,33
+musee-de-l-orangerie,getting_there,MISSING,P1,,,,,paris,priority,Musée de l'Orangerie,33
+musee-de-l-orangerie,duration,MISSING,P2,,,,,paris,priority,Musée de l'Orangerie,33
 musee-de-la-photographie-charles-negre,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),nice,optional,Musée de la Photographie Charles Nègre,11
 musee-de-la-photographie-charles-negre,hours,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),nice,optional,Musée de la Photographie Charles Nègre,11
 musee-de-la-photographie-charles-negre,booking,MISSING,P2,,,,,nice,optional,Musée de la Photographie Charles Nègre,11

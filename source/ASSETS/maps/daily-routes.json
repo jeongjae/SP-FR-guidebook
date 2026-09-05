@@ -1595,7 +1595,7 @@
     {
       "date": "2026-09-27",
       "city": "Paris",
-      "title": "Tuileries · Palais Royal · Opéra 지구",
+      "title": "Belle Époque & Classical Paris — Petit Palais · Tuileries · Palais Royal · Opéra",
       "center": [
         48.866,
         2.331
@@ -1604,35 +1604,46 @@
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "10:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "12:30 출발",
+          "note": "오전 Marché Convention·Pichard와 숙소 점심·휴식 후 출발. 숙소 위치는 개인정보 보호를 위해 권역 좌표만 표시."
+        },
+        {
+          "placeId": "petit-palais",
+          "order": 1,
+          "plannedTime": "13:00–14:30",
+          "note": "무료 상설전과 벨 에포크 건축·안뜰 정원을 90분 관람."
         },
         {
           "placeId": "jardin-des-tuileries",
-          "order": 1,
-          "plannedTime": "10:30–12:00",
-          "note": "정원축·Louvre 외관 — 내부 입장 없음."
+          "order": 2,
+          "plannedTime": "15:00–16:00",
+          "note": "Tuileries 정원축과 Place Vendôme — Louvre 내부 입장 없음."
         },
         {
           "placeId": "palais-royal",
-          "order": 2,
-          "plannedTime": "13:30–15:30",
+          "order": 3,
+          "plannedTime": "16:10–17:15",
           "note": "정원·회랑 · 스케치 20–30분."
         },
         {
           "placeId": "palais-garnier",
-          "order": 3,
-          "plannedTime": "15:30–17:30",
+          "order": 4,
+          "plannedTime": "17:30–18:30",
           "note": "외관 중심 · 당일 입장 가능 시에만 짧은 방문."
         }
       ],
       "segments": [
         {
-          "from": "paris-stay-candidate",
-          "to": "jardin-des-tuileries",
+          "from": "paris-15e-stay-area",
+          "to": "petit-palais",
           "mode": "transit"
+        },
+        {
+          "from": "petit-palais",
+          "to": "jardin-des-tuileries",
+          "mode": "walking"
         },
         {
           "from": "jardin-des-tuileries",
@@ -1687,13 +1698,7 @@
           "placeId": "musee-d-orsay",
           "order": 1,
           "plannedTime": "13:30–17:00",
-          "note": "시간지정권 · 3시간 30분 상한. Orangerie와 택일."
-        },
-        {
-          "placeId": "musee-de-l-orangerie",
-          "order": 2,
-          "plannedTime": "택일 대안",
-          "note": "선택 — Orsay 대신 갈 경우만."
+          "note": "시간지정권 · 3시간 30분 상한. Musée d'Orsay 일정으로 고정."
         }
       ],
       "segments": [
@@ -1707,7 +1712,7 @@
     {
       "date": "2026-09-30",
       "city": "Paris",
-      "title": "Palais de Tokyo 권역과 Saint-Honoré 축",
+      "title": "Monet & Contemporary Paris / Fashion — Orangerie · Montaigne · Palais de Tokyo",
       "center": [
         48.864,
         2.315
@@ -1716,33 +1721,77 @@
       "defaultMode": "transit",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "12:30 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "09:15 출발",
+          "note": "숙소 위치는 개인정보 보호를 위해 권역 좌표만 표시. 메트로 8호선으로 Concorde 이동."
+        },
+        {
+          "placeId": "musee-de-l-orangerie",
+          "order": 1,
+          "plannedTime": "10:00–11:30",
+          "note": "90분 상한: Nymphéas 우선, Walter-Guillaume 주요작 다음. 시간 초과 시 나머지는 생략."
+        },
+        {
+          "placeId": "chez-savy",
+          "order": 2,
+          "plannedTime": "12:15–13:30",
+          "note": "12:15 점심 예약. 오랑주리에서 도보 약 15–18분."
+        },
+        {
+          "placeId": "avenue-montaigne",
+          "order": 3,
+          "plannedTime": "13:30–14:15",
+          "note": "Fashion Week 공개 거리 동선과 플래그십 쇼윈도."
+        },
+        {
+          "placeId": "grand-palais",
+          "order": 4,
+          "plannedTime": "14:30–15:30",
+          "note": "공식 확인된 공개 공간과 주변 거리만 이용."
         },
         {
           "placeId": "palais-de-tokyo",
-          "order": 1,
-          "plannedTime": "13:00–14:00",
-          "note": "건축·공공공간. 전시는 공식 확인된 경우에만."
+          "order": 5,
+          "plannedTime": "15:45–17:30",
+          "note": "Avenue du Président Wilson ➔ Palais de Tokyo 건축·공공공간 ➔ Alma/Seine. 전시는 공식 확인된 경우에만."
         },
         {
-          "placeId": "palais-royal",
-          "order": 2,
-          "plannedTime": "17:00–18:00",
-          "note": "회랑·정원 마무리 · 스케치·카페."
+          "placeId": "stephane-martin",
+          "order": 6,
+          "plannedTime": "19:30",
+          "note": "15구 복귀 후 19:30 저녁 예약."
         }
       ],
       "segments": [
         {
-          "from": "paris-stay-candidate",
-          "to": "palais-de-tokyo",
+          "from": "paris-15e-stay-area",
+          "to": "musee-de-l-orangerie",
           "mode": "transit"
         },
         {
+          "from": "musee-de-l-orangerie",
+          "to": "chez-savy",
+          "mode": "walking"
+        },
+        {
+          "from": "chez-savy",
+          "to": "avenue-montaigne",
+          "mode": "walking"
+        },
+        {
+          "from": "avenue-montaigne",
+          "to": "grand-palais",
+          "mode": "walking"
+        },
+        {
+          "from": "grand-palais",
+          "to": "palais-de-tokyo",
+          "mode": "walking"
+        },
+        {
           "from": "palais-de-tokyo",
-          "to": "palais-royal",
+          "to": "stephane-martin",
           "mode": "transit"
         }
       ]

@@ -28,6 +28,28 @@ class MapDataValidationTests(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertGreater(len(warnings), 0)
 
+    def test_paris_swap_routes_match_day_source_of_truth(self):
+        days = {day["date"]: day for day in self.payloads["daily-routes.json"]["days"]}
+        day_27 = [stop["placeId"] for stop in days["2026-09-27"]["stops"]]
+        day_30 = [stop["placeId"] for stop in days["2026-09-30"]["stops"]]
+
+        self.assertIn("petit-palais", day_27)
+        self.assertNotIn("musee-de-l-orangerie", day_27)
+        self.assertIn("musee-de-l-orangerie", day_30)
+        self.assertNotIn("petit-palais", day_30)
+        self.assertEqual(
+            [
+                "paris-15e-stay-area",
+                "musee-de-l-orangerie",
+                "chez-savy",
+                "avenue-montaigne",
+                "grand-palais",
+                "palais-de-tokyo",
+                "stephane-martin",
+            ],
+            day_30,
+        )
+
     def test_duplicate_place_id_is_rejected(self):
         payloads = copy.deepcopy(self.payloads)
         payloads["place-registry.json"]["places"].append(

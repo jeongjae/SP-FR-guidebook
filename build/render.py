@@ -2365,12 +2365,12 @@ def build_paris_museum_booking() -> str:
 
     # (우선순위, 방문일, day번호, 장소표기, place슬러그, 일정, 권장 예약 시점, 권장 실행일, 비고)
     rows = [
-        (P1, "9/25", 28, "Grand Palais — Cézanne et nous", "grand-palais",
-         "특별전", "판매 시작 즉시", "지금", "개막 9/23 직후 방문 — 우선순위 최상"),
+        (badge('ok', '예약 확정'), "9/25", 28, "Grand Palais — Cézanne et nous", "grand-palais",
+         "17:00 특별전", "예약 완료", "티켓 저장", "사용자 예약 확정 · 16:45 보안검색 도착"),
         (P1, "9/26", 29, "Musée du Luxembourg — Warhol", "musee-du-luxembourg",
          "특별전", "3~4주 전", "지금", "원하는 시간대 확보"),
-        (P2, "9/27", 30, "Musée de l'Orangerie", "musee-de-l-orangerie",
-         "상설 중심", "2~4주 전", "8월 말~9월 초", "Orsay와 결합권 검토"),
+        (badge('ok', '예약 확정'), "9/30", 33, "Musée de l'Orangerie", "musee-de-l-orangerie",
+         "10:00 · 상설 중심", "예약 완료", "티켓 저장", "수련 우선 90분 집중 관람 · 12:15 Chez Savy 연결"),
         (P3, "9/28", 31, "Musée Gustave Moreau", "musee-gustave-moreau",
          "일반관람", "1~2주 전", "9/14 전후", "예약 급하지 않음"),
         (P1, "9/29", 32, "Musée d'Orsay", "musee-d-orsay",
@@ -2408,14 +2408,13 @@ def build_paris_museum_booking() -> str:
 
     wave = """
 <div class="prose">
-<p><strong>1차 — 지금 (8/28~8/31):</strong> Grand Palais → Versailles → Orsay 9/29 →
+<p><strong>예약 확정:</strong> Grand Palais 9/25 17:00 · Orangerie 9/30 10:00.</p>
+<p><strong>1차 — 지금 (8/28~8/31):</strong> Versailles → Orsay 9/29 →
 Louvre 10/2 → Bourse de Commerce → Luxembourg → Mary Cassatt(판매 확인).
 단순히 유명한 곳이라서가 아니라, <strong>날짜·시간이 고정되어 있거나 특별전 개막
 직후에 방문</strong>하는 곳들이다. 특히 Versailles 10/1 · Louvre 10/2 · Orsay 9/29는
 파리 일정 전체의 동선을 잡는 기준점이므로 먼저 확정한다.</p>
-<p><strong>2차 — 9/1~9/10:</strong> Orangerie · Jacquemart-André.
-1차가 끝난 뒤 처리한다. Orangerie는 9/27 방문이라 너무 늦출 수는 없지만
-1차만큼 급하지는 않다.</p>
+<p><strong>2차 — 9/1~9/10:</strong> Jacquemart-André. 1차가 끝난 뒤 처리한다.</p>
 <p><strong>3차 — 9/12~9/20 (여행 중):</strong> Gustave Moreau · Rodin ·
 Marmottan · Picasso. 너무 일찍 예약하면 파리 체류 중 날씨·피로도·공연 일정에
 따른 변경 여지가 줄어든다 — 기다리는 것이 오히려 좋다.</p>
@@ -2446,7 +2445,7 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 예약 실패 위험이 큰 것부터 지금 처리한다.</p></header>
 
 {alert('caution',
-       '<strong>오늘 처리 7건:</strong> Grand Palais · Versailles · Orsay 9/29 · '
+       '<strong>오늘 처리 6건:</strong> Versailles · Orsay 9/29 · '
        'Louvre 10/2 · Bourse de Commerce · Luxembourg · Mary Cassatt(판매 확인). '
        '나머지는 단계별 시점에 맞춰 처리한다.')}
 
@@ -2465,8 +2464,9 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 
 {sec_head('CHECKLIST', '압축 체크리스트', rule=True)}
 <div class="prose"><ul>
-<li><strong>오늘:</strong> Grand Palais · Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
-<li><strong>9월 초:</strong> Orangerie · Jacquemart-André</li>
+<li><strong>예약 확정:</strong> Grand Palais 9/25 17:00 · Orangerie 9/30 10:00</li>
+<li><strong>오늘:</strong> Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
+<li><strong>9월 초:</strong> Jacquemart-André</li>
 <li><strong>9월 중순:</strong> Moreau · Rodin · Marmottan · Picasso</li>
 <li><strong>파리 출발 직전:</strong> Guimet 예약 · 무료관(MAM) 운영시간 재확인</li>
 </ul>

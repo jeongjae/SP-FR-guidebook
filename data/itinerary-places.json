@@ -2553,7 +2553,7 @@
       "core": "Standard Morning, Tootbus 풀 루프 파노라마 투어(14:00~16:15), Grand Palais 특별전 <Cézanne et nous>(16:30~19:15)",
       "option": "15구 복귀 저녁",
       "fatigue": "3",
-      "lock": "Grand Palais 17:00 시간지정",
+      "lock": "Grand Palais 17:00 예약 확정 [CONFIRMED]",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -2695,21 +2695,21 @@
       "date": "2026-09-27",
       "dateLabel": "9/27 일",
       "baseCity": "Paris",
-      "theme": "오랑주리 수련 & 튀일르리·팔레 루아얄·오페라",
-      "core": "Standard Morning, Musée de l'Orangerie <수련>(13:30~15:15), Tuileries, Place Vendôme, Palais Royal, Opéra Garnier 외관",
+      "theme": "Belle Époque & Classical Paris",
+      "core": "Marché Convention·Pichard와 숙소 점심·휴식, Petit Palais 상설전(13:00~14:30), Tuileries·Place Vendôme(15:00~16:00), Palais Royal(16:10~17:15), Opéra Garnier 지구(17:30~18:30)",
       "option": "15구 복귀 저녁",
       "fatigue": "3",
-      "lock": "Orangerie 13:30 시간지정",
+      "lock": "Petit Palais 상설 무료",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
       ],
       "places": [
         {
-          "id": "jardin-du-luxembourg",
-          "name": "Jardin du Luxembourg",
-          "nameKo": "뤽상부르 공원",
-          "type": "park",
+          "id": "petit-palais",
+          "name": "Petit Palais",
+          "nameKo": "프티 팔레",
+          "type": "museum",
           "status": "confirmed",
           "importance": "major",
           "chapter": "paris",
@@ -2722,10 +2722,10 @@
           ]
         },
         {
-          "id": "marche-monge",
-          "name": "Marché Monge",
-          "nameKo": "몽주 시장",
-          "type": "market",
+          "id": "jardin-des-tuileries",
+          "name": "Jardin des Tuileries",
+          "nameKo": "튈르리 정원",
+          "type": "garden",
           "status": "confirmed",
           "importance": "major",
           "chapter": "paris",
@@ -2738,12 +2738,28 @@
           ]
         },
         {
-          "id": "le-marais",
-          "name": "Le Marais",
-          "nameKo": "마레 지구",
-          "type": "neighborhood",
+          "id": "palais-royal",
+          "name": "Palais-Royal",
+          "nameKo": "팔레 루아얄",
+          "type": "palace",
           "status": "confirmed",
-          "importance": "hero",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "palais-garnier",
+          "name": "Palais Garnier",
+          "nameKo": "오페라 가르니에",
+          "type": "attraction",
+          "status": "confirmed",
+          "importance": "major",
           "chapter": "paris",
           "visibility": "public",
           "photoNeeded": true,
@@ -2890,21 +2906,21 @@
       "date": "2026-09-30",
       "dateLabel": "9/30 수",
       "baseCity": "Paris",
-      "theme": "프티 팔레 & 몽테뉴 패션위크 & 팔레 드 도쿄",
-      "core": "Shortened Morning, Petit Palais 상설전(10:00~12:00), 샹젤리제 점심, Avenue Montaigne Fashion Week ➔ Grand Palais ➔ Palais de Tokyo(13:30~17:30)",
-      "option": "15구 복귀 저녁",
+      "theme": "Monet & Contemporary Paris / Fashion",
+      "core": "09:15 숙소 출발, Musée de l'Orangerie 집중 관람(10:00~11:30), Chez Savy(12:15), Avenue Montaigne ➔ Grand Palais·Fashion Week 공개 동선 ➔ Avenue du Président Wilson ➔ Palais de Tokyo·Alma/Seine(13:30 이후)",
+      "option": "Stéphane Martin 19:30",
       "fatigue": "3",
-      "lock": "Petit Palais 상설 무료",
+      "lock": "Orangerie 10:00 예약 확정 [CONFIRMED]",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
       ],
       "places": [
         {
-          "id": "bnf-richelieu",
-          "name": "BnF Richelieu",
-          "nameKo": "프랑스 국립도서관 리슐리외",
-          "type": "library",
+          "id": "musee-de-l-orangerie",
+          "name": "Musée de l’Orangerie",
+          "nameKo": "오랑주리 미술관",
+          "type": "museum",
           "status": "confirmed",
           "importance": "major",
           "chapter": "paris",
@@ -2917,10 +2933,42 @@
           ]
         },
         {
-          "id": "passages-couverts",
-          "name": "Passages couverts",
-          "nameKo": "파리 아케이드",
-          "type": "promenade",
+          "id": "chez-savy",
+          "name": "Chez Savy",
+          "nameKo": "셰 사비",
+          "type": "restaurant",
+          "status": "confirmed",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "grand-palais",
+          "name": "Grand Palais",
+          "nameKo": "그랑 팔레",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "palais-de-tokyo",
+          "name": "Palais de Tokyo",
+          "nameKo": "팔레 드 도쿄",
+          "type": "museum",
           "status": "confirmed",
           "importance": "major",
           "chapter": "paris",
@@ -2933,12 +2981,12 @@
           ]
         },
         {
-          "id": "philharmonie-de-paris",
-          "name": "Philharmonie de Paris",
-          "nameKo": "파리 필하모니",
-          "type": "performance-venue",
-          "status": "confirmed",
-          "importance": "major",
+          "id": "paris-15e",
+          "name": "15th arrondissement of Paris",
+          "nameKo": "파리 15구",
+          "type": "neighborhood",
+          "status": "reference",
+          "importance": "supporting",
           "chapter": "paris",
           "visibility": "public",
           "photoNeeded": true,
