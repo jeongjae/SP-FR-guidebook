@@ -130,6 +130,13 @@ MAPS_META = ""   # render.py 가 빌드 시작에 채운다
 MASK = lambda html_text: html_text
 
 
+# 자산 파일명 — build.py 가 해시가 포함된 파일명으로 갈아 끼운다
+ASSET_STYLE = "assets/style.css"
+ASSET_APP = "assets/app.js"
+ASSET_PWA = "assets/pwa.js"
+ASSET_SEARCH_INDEX = "assets/search-index.js"
+
+
 def page(*, title: str, body: str, rel: str, tab: str,
          trail: list[tuple[str, str | None]] | None = None,
          bar_title: str = "",
@@ -169,7 +176,7 @@ def page(*, title: str, body: str, rel: str, tab: str,
 {desc}<link rel="manifest" href="{rel}/manifest.webmanifest">
 <link rel="apple-touch-icon" href="{rel}/assets/pwa/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="{rel}/assets/pwa/icon-192.png">
-{MAPS_META}{extra_head}<link rel="stylesheet" href="{rel}/assets/style.css">
+{MAPS_META}{extra_head}<link rel="stylesheet" href="{rel}/{ASSET_STYLE}">
 </head>
 <body{region_attr}{bar_center}>
 <a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
@@ -195,9 +202,9 @@ def page(*, title: str, body: str, rel: str, tab: str,
   <p><a href="{rel}/about/credits.html">사진 저작자 표시 · 라이선스</a></p>
 </footer>
 {bottomnav(rel, tab)}
-<script src="{rel}/assets/search-index.js" defer></script>
-<script src="{rel}/assets/app.js" defer></script>
-<script src="{rel}/assets/pwa.js" defer></script>{extra_scripts}
+<script src="{rel}/{ASSET_SEARCH_INDEX}" defer></script>
+<script src="{rel}/{ASSET_APP}" defer></script>
+<script src="{rel}/{ASSET_PWA}" defer></script>{extra_scripts}
 </body>
 </html>
 """

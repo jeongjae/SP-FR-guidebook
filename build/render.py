@@ -964,9 +964,6 @@ def build_place(p: Place, trip: Trip) -> str:
 
     parts.append("</div>")
 
-    index_search(p.name, f"places/{p.slug}.html", "place",
-                 region.name if region else "")
-
     return page(
         title=p.name, body="\n".join(parts), rel=rel, tab="guide",
         region=p.region, country=region.country if region else "",
@@ -1129,8 +1126,6 @@ def build_day(d: Day, trip: Trip) -> str:
     sib = tabs_strip([
         (x.date_label, f"{rel}/{x.url}", x.n == d.n, f"Day {x.n}", day_hint(x))
         for x in sibling_days(d, trip, region)])
-
-    index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")
 
     return page(
         title=f"{d.date_label} · Day {d.n} · {d.city}", body="\n".join(parts), rel=rel,
@@ -1741,8 +1736,6 @@ def build_region(r: Region, trip: Trip) -> str:
 
     parts.append("</div>")
 
-    index_search(r.name, f"guide/{r.slug}.html", "region", r.tagline)
-
     return page(
         title=r.name, body="\n".join(parts), rel=rel, tab="guide",
         region=r.slug, country=r.country, subnav=subnav, description=r.dek,
@@ -2158,15 +2151,16 @@ FRENCH_CATEGORY_LABEL: dict[str, str] = {
 }
 
 
-def phrase_card(p: FrenchPhrase, compact: bool = False) -> str:
+def phrase_card(p: FrenchPhrase, compact: bool = False, initial_hidden: bool = False) -> str:
     cat_label = FRENCH_CATEGORY_LABEL.get(p.category, p.category)
     priority_badge = f'<span class="badge badge-must">P0</span>' if p.priority == "P0" else ""
     cat_badge = f'<span class="badge badge-neutral">{cat_label}</span>'
     hint_html = f'<p class="phrase-hint">{esc(p.pronunciation_hint)}</p>' if p.pronunciation_hint else ""
     note_html = f'<p class="phrase-note">{esc(p.usage_note)}</p>' if p.usage_note and not compact else ""
     search_data = f'{p.fr} {p.ko} {p.pronunciation_hint} {" ".join(p.tags)}'.lower()
+    hidden_attr = ' hidden style="display:none"' if (initial_hidden and p.category != "essential") else ''
 
-    return f"""<article class="phrase-card" data-phrase-id="{p.id}" data-category="{p.category}" data-priority="{p.priority}" data-search="{esc(search_data)}">
+    return f"""<article class="phrase-card"{hidden_attr} data-phrase-id="{p.id}" data-category="{p.category}" data-priority="{p.priority}" data-search="{esc(search_data)}">
   <div class="phrase-head">
     <div>{cat_badge} {priority_badge}</div>
   </div>
@@ -2275,9 +2269,8 @@ def build_travel_french(trip: Trip) -> str:
 </div>""")
     signs_html = "".join(signs_blocks)
 
-    phrase_cards_html = "".join(phrase_card(p) for p in phrases)
-
-    index_search("여행 프랑스어 (Travel French)", "prepare/french.html", "prepare", "120개 필수 문구 · 10분 발음 · 현장 표지판")
+    # Initial view is essential 20
+    phrase_cards_html = "".join(phrase_card(p, initial_hidden=True) for p in phrases)
 
     return page(
         title="여행 프랑스어", rel=rel, tab="prepare",
@@ -2295,9 +2288,9 @@ def build_travel_french(trip: Trip) -> str:
     <input type="search" id="french-search" class="form-control" style="width:100%;min-height:44px;padding:var(--s2) var(--s4);border:1px solid var(--line-strong);border-radius:var(--r-full);background:var(--surface);font-size:var(--t-body)" placeholder="프랑스어 / 한국어 / 발음 / 태그 검색 (예: 계산, 주차, addition, merci)..." aria-label="프랑스어 문구 검색">
   </div>
   <div class="chips" id="french-filter-chips" role="toolbar" aria-label="프랑스어 카테고리 필터">
-    <button type="button" class="chip" data-category="all" aria-pressed="true">전체 (120)</button>
+    <button type="button" class="chip" data-category="essential" aria-pressed="true">기본 20선 (P0)</button>
+    <button type="button" class="chip" data-category="all" aria-pressed="false">전체 (120)</button>
     <button type="button" class="chip" data-category="fav" aria-pressed="false">⭐ 즐겨찾기</button>
-    <button type="button" class="chip" data-category="essential" aria-pressed="false">기본 20선 (P0)</button>
     <button type="button" class="chip" data-category="restaurant" aria-pressed="false">식당·카페</button>
     <button type="button" class="chip" data-category="market" aria-pressed="false">빵집·시장</button>
     <button type="button" class="chip" data-category="hotel" aria-pressed="false">숙소</button>
@@ -2309,8 +2302,17 @@ def build_travel_french(trip: Trip) -> str:
   </div>
 </div></div>
 
-<section id="french-phrases-section">
-  <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PHRASES</span><h2 class="sec-title" id="french-list-title">상황별 회화 (120문구)</h2></div></div>
+<section id="french-pronunciation-section" style="margin-top:var(--s4)">
+  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('tip')} 10분 발음 & 읽기 규칙 (French in 10 Minutes)</h2></summary>
+    <div class="acc-body stack" style="margin-top:var(--s3)">
+      <p class="meta">정확한 음성학 학습이 아니라 간판과 메뉴를 읽기 위한 최소한의 발음 규칙입니다.</p>
+      {pron_html}
+    </div>
+  </details>
+</section>
+
+<section id="french-phrases-section" style="margin-top:var(--s4)">
+  <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PHRASES</span><h2 class="sec-title" id="french-list-title">기본 회화 20선 (20문구)</h2></div></div>
   <div id="french-no-results" class="alert-card alert-card-caution" style="display:none">
     {ic('alert')} <span>검색 결과가 없습니다.</span>
     <button type="button" class="btn btn-quiet" id="french-reset-btn" style="margin-inline-start:var(--s2)">전체 보기</button>
@@ -2320,16 +2322,7 @@ def build_travel_french(trip: Trip) -> str:
   </div>
 </section>
 
-<section id="french-pronunciation-section" style="margin-top:var(--s5)">
-  <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('tip')} 10분 발음 & 읽기 규칙 (French in 10 Minutes)</h2></summary>
-    <div class="acc-body stack" style="margin-top:var(--s3)">
-      <p class="meta">정확한 음성학 학습이 아니라 간판과 메뉴를 읽기 위한 최소한의 발음 규칙입니다.</p>
-      {pron_html}
-    </div>
-  </details>
-</section>
-
-<section id="french-signs-section" style="margin-top:var(--s3)">
+<section id="french-signs-section" style="margin-top:var(--s5)">
   <details class="acc"><summary><h2 style="display:inline;font-size:var(--t-h3)">{ic('book')} 현장 표지판 & 메뉴 필수 어휘 사전</h2></summary>
     <div class="acc-body stack" style="margin-top:var(--s3)">
       <p class="meta">거리 표지, 역 안내판, 메뉴판에서 가장 빈번히 마주치는 단어들입니다.</p>
@@ -2350,71 +2343,320 @@ def build_travel_french(trip: Trip) -> str:
 
 
 
-def build_paris_museum_booking() -> str:
-    """준비 — 파리 박물관·전시 예약 실행표 (RS02, Jason 2026-08-28 지시).
+PARIS_MUSEUM_BOOKINGS = [
+    {
+        "id": "grand-palais|2026-09-25|special",
+        "slug": "grand-palais",
+        "name": "Grand Palais — Cézanne et nous",
+        "day": 28,
+        "date": "9/25 (금)",
+        "schedule": "특별전 (개막 9/23 직후)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "판매 시작 즉시",
+        "action_date": "지금",
+        "pmp": "PMP 비대상 (특별전 별도 티켓)",
+        "plan_b": "동일 주간(Day 28~31) 타 시간대 슬롯 조회, 실패 시 오르세/루브르 특별전 우선",
+        "note": "개막 9/23 직후 방문 — 원하는 시간대 조기 선점 필수",
+        "official_url": "https://www.grandpalais.fr/",
+    },
+    {
+        "id": "musee-du-luxembourg|2026-09-26|special",
+        "slug": "musee-du-luxembourg",
+        "name": "Musée du Luxembourg — Warhol",
+        "day": 29,
+        "date": "9/26 (토)",
+        "schedule": "특별전 (시간지정 티켓)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "3~4주 전",
+        "action_date": "지금",
+        "pmp": "PMP 비대상 (특별전 별도)",
+        "plan_b": "±1~2시간 슬롯 변경, 뤽상부르 공원 산책 및 생제르맹 탐방 시간과 연동 조정",
+        "note": "원하는 시간대 확보",
+        "official_url": "https://museeduluxembourg.fr/",
+    },
+    {
+        "id": "musee-de-l-orangerie|2026-09-27|permanent",
+        "slug": "musee-de-l-orangerie",
+        "name": "Musée de l'Orangerie",
+        "day": 30,
+        "date": "9/27 (일)",
+        "schedule": "상설 및 수련 연작 (시간지정 필수)",
+        "canonical_status": "check-sale",
+        "stage": "2차 · 9월 초",
+        "when": "2~4주 전",
+        "action_date": "8월 말~9월 초",
+        "pmp": "PMP 포함 · 시간예약 별도 (PMP 무료 슬롯 예약)",
+        "plan_b": "오르세 복합티켓(Billet jumelé) 또는 PMP 무료 시간지정 슬롯 확보",
+        "note": "Orsay와 결합권 검토",
+        "official_url": "https://www.musee-orangerie.fr/",
+    },
+    {
+        "id": "musee-gustave-moreau|2026-09-28|general",
+        "slug": "musee-gustave-moreau",
+        "name": "Musée Gustave Moreau",
+        "day": 31,
+        "date": "9/28 (월)",
+        "schedule": "일반관람",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/14 전후",
+        "pmp": "PMP 포함",
+        "plan_b": "현장 대기 입장 가능(소규모 미술관), 필요 시 직전 온라인 예약",
+        "note": "예약 급하지 않음",
+        "official_url": "https://musee-moreau.fr/",
+    },
+    {
+        "id": "musee-d-orsay|2026-09-29|09:30",
+        "slug": "musee-d-orsay",
+        "name": "Musée d'Orsay",
+        "day": 32,
+        "date": "9/29 (화)",
+        "schedule": "09:30 개장 첫 슬롯 (시간지정)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "3~4주 전",
+        "action_date": "지금",
+        "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 예약)",
+        "plan_b": "09:30 실패 시 10:00~10:30 차선 슬롯 예약 후 당일 오후 로댕 미술관 시간 조정",
+        "note": "지정시간 일정 — 조기 확보",
+        "official_url": "https://www.musee-d-orsay.fr/",
+    },
+    {
+        "id": "musee-rodin|2026-09-29|14:30",
+        "slug": "musee-rodin",
+        "name": "Musée Rodin",
+        "day": 32,
+        "date": "9/29 (화)",
+        "schedule": "14:30 입장",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/14 전후",
+        "pmp": "PMP 포함",
+        "plan_b": "오전 오르세 소요 시간에 따라 현장 PMP 패스트트랙 또는 모바일 직전 발권",
+        "note": "오전 Orsay 일정에 종속",
+        "official_url": "https://www.musee-rodin.fr/",
+    },
+    {
+        "id": "versailles|2026-10-01|morning",
+        "slug": "versailles",
+        "name": "Château de Versailles",
+        "day": 34,
+        "date": "10/1 (목)",
+        "schedule": "Passport 티켓 + 오전 시간지정",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "1~2개월 전",
+        "action_date": "지금",
+        "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 시간슬롯 예약)",
+        "plan_b": "09:00~10:00 오전 슬롯 우선 확보, 정원/트리아농 오후 관람 순서 유지",
+        "note": "Passport + 시간지정 입장 — 파리 근교 핵심 일정",
+        "official_url": "https://www.chateauversailles.fr/",
+    },
+    {
+        "id": "musee-du-louvre|2026-10-02|14:00",
+        "slug": "musee-du-louvre",
+        "name": "Musée du Louvre",
+        "day": 35,
+        "date": "10/2 (금)",
+        "schedule": "14:00 지정시간 (Horodaté)",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "3~4주 전",
+        "action_date": "지금~9/2",
+        "pmp": "PMP 포함 · 시간예약 필수 (PMP 전용 무료 슬롯)",
+        "plan_b": "14:00 실패 시 13:30 또는 14:30 인접 슬롯 선택, 피라미드 중앙 입구 줄 대기",
+        "note": "14:00 슬롯 유지 권장 — 오후 집중 동선",
+        "official_url": "https://www.ticketlouvre.fr/",
+    },
+    {
+        "id": "musee-marmottan-monet|2026-10-03|14:00",
+        "slug": "musee-marmottan-monet",
+        "name": "Musée Marmottan Monet",
+        "day": 36,
+        "date": "10/3 (토)",
+        "schedule": "14:00 입장",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/18 전후",
+        "pmp": "PMP 비대상 (사립 미술관)",
+        "plan_b": "현장 발권 또는 방문 1~2일 전 온라인 예매",
+        "note": "일정 유연성 유지",
+        "official_url": "https://www.marmottan.fr/",
+    },
+    {
+        "id": "musee-jacquemart-andre|2026-10-05|general",
+        "slug": "musee-jacquemart-andre",
+        "name": "Musée Jacquemart-André",
+        "day": 38,
+        "date": "10/5 (월)",
+        "schedule": "리노베이션 재개관 특별전/상설",
+        "canonical_status": "check-sale",
+        "stage": "2차 · 9월 초",
+        "when": "2~4주 전",
+        "action_date": "9/7~15",
+        "pmp": "PMP 비대상 (사립 컬렉션)",
+        "plan_b": "온라인 회차 사전 예매 필수(재개관 혼잡 대비), 9월 초 오픈 즉시 확인",
+        "note": "특별전이면 조금 빨리",
+        "official_url": "https://www.musee-jacquemart-andre.com/",
+    },
+    {
+        "id": "musee-d-orsay|2026-10-06|special",
+        "slug": "musee-d-orsay",
+        "name": "Musée d'Orsay — Mary Cassatt 특별전",
+        "day": 39,
+        "date": "10/6 (화)",
+        "schedule": "메리 카사트 특별전",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "판매 가능 즉시",
+        "action_date": "지금 확인·예약",
+        "pmp": "확인 필요 (특별전 단독/추가 예약 규정 점검)",
+        "plan_b": "특별전 단독 회차 미오픈 시 일반 오르세 상설권 + 현장 특별전 입장 옵션 검토",
+        "note": "일반 Orsay 입장(9/29)과 별도로 판단 · 회차 판매 여부 재확인",
+        "official_url": "https://www.musee-d-orsay.fr/",
+    },
+    {
+        "id": "musee-picasso-paris|2026-10-06|13:00",
+        "slug": "musee-picasso-paris",
+        "name": "Musée Picasso Paris",
+        "day": 39,
+        "date": "10/6 (화)",
+        "schedule": "13:00 (선택적 방문)",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/20 전후",
+        "pmp": "PMP 포함",
+        "plan_b": "마레 지구 일정 진행 중 현장 대기 입장 또는 모바일 예매",
+        "note": "현장구매도 가능",
+        "official_url": "https://www.museepicassoparis.fr/",
+    },
+    {
+        "id": "bourse-de-commerce-pinault-collection|2026-10-07|opening",
+        "slug": "bourse-de-commerce-pinault-collection",
+        "name": "Bourse de Commerce — Remember Me",
+        "day": 40,
+        "date": "10/7 (수)",
+        "schedule": "개막일 시간지정 티켓",
+        "canonical_status": "book-now",
+        "stage": "1차 · 지금",
+        "when": "판매 시작 즉시",
+        "action_date": "지금",
+        "pmp": "PMP 비대상 (피노 컬렉션 사립 미술관)",
+        "plan_b": "개막 첫날 매진 시 10/8 또는 10/9 오후 슬롯으로 이동",
+        "note": "개막일 방문 — 조기 예약 필요",
+        "official_url": "https://www.pinaultcollection.com/fr/boursedecommerce",
+    },
+    {
+        "id": "musee-guimet|2026-10-08|10:00",
+        "slug": "musee-guimet",
+        "name": "Musée Guimet",
+        "day": 41,
+        "date": "10/8 (목)",
+        "schedule": "10:00 입장",
+        "canonical_status": "book-later",
+        "stage": "3차 · 9월 중순",
+        "when": "1~2주 전",
+        "action_date": "9/24 이후",
+        "pmp": "PMP 포함",
+        "plan_b": "파리 도착 후 주간 일정 확정 시 예매 또는 현장 PMP 입장",
+        "note": "서두를 필요 없음",
+        "official_url": "https://www.guimet.fr/",
+    },
+    {
+        "id": "musee-d-art-moderne-de-paris|2026-10-08|free",
+        "slug": "musee-d-art-moderne-de-paris",
+        "name": "MAM Paris (파리 시립 현대미술관)",
+        "day": 41,
+        "date": "10/8 (목)",
+        "schedule": "상설전 (무료)",
+        "canonical_status": "no-reservation",
+        "stage": "예약 불필요",
+        "when": "예약 불필요",
+        "action_date": "직전 확인",
+        "pmp": "무료 상설 (사전 예약 불필요)",
+        "plan_b": "운영시간(10:00~18:00) 확인 후 자유 입장, 특별전 희망 시 현장 발권",
+        "note": "상설 컬렉션 무료",
+        "official_url": "https://www.mam.paris.fr/",
+    },
+]
 
-    파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈 실행표다.
-    행의 방문일은 Day 페이지로, 장소는 장소 정본으로 연결한다.
-    """
+def build_paris_museum_booking() -> str:
+    """준비 — 파리 박물관·전시 예약 실행 화면 (사용자 로컬 실행 상태 관리)."""
     rel = ".."
 
-    P1 = '<span class="badge badge-must">1차 · 지금</span>'
-    P2 = '<span class="badge badge-caution">2차 · 9월 초</span>'
-    P3 = '<span class="badge badge-neutral">3차 · 직전</span>'
-    NOB = '<span class="badge badge-ok">예약 불필요</span>'
+    # Status counts initial
+    counts = {"book-now": 0, "check-sale": 0, "book-later": 0, "recheck": 0, "booked": 0, "no-reservation": 0}
+    for b in PARIS_MUSEUM_BOOKINGS:
+        st = b["canonical_status"]
+        if st in counts:
+            counts[st] += 1
 
-    # (우선순위, 방문일, day번호, 장소표기, place슬러그, 일정, 권장 예약 시점, 권장 실행일, 비고)
-    rows = [
-        (badge('ok', '예약 확정'), "9/25", 28, "Grand Palais — Cézanne et nous", "grand-palais",
-         "17:00 특별전", "예약 완료", "티켓 저장", "사용자 예약 확정 · 16:45 보안검색 도착"),
-        (P1, "9/26", 29, "Musée du Luxembourg — Warhol", "musee-du-luxembourg",
-         "특별전", "3~4주 전", "지금", "원하는 시간대 확보"),
-        (badge('ok', '예약 확정'), "9/30", 33, "Musée de l'Orangerie", "musee-de-l-orangerie",
-         "10:00 · 상설 중심", "예약 완료", "티켓 저장", "수련 우선 90분 집중 관람 · 12:15 Chez Savy 연결"),
-        (P3, "9/28", 31, "Musée Gustave Moreau", "musee-gustave-moreau",
-         "일반관람", "1~2주 전", "9/14 전후", "예약 급하지 않음"),
-        (P1, "9/29", 32, "Musée d'Orsay", "musee-d-orsay",
-         "09:30 지정시간", "3~4주 전", "지금", "지정시간 일정 — 조기 확보"),
-        (P3, "9/29", 32, "Musée Rodin", "musee-rodin",
-         "14:30", "1~2주 전", "9/14 전후", "오전 Orsay 일정에 종속"),
-        (P1, "10/1", 34, "Versailles", "versailles",
-         "종일", "1~2개월 전", "지금", "Passport + 시간지정 입장"),
-        (P1, "10/2", 35, "Louvre", "musee-du-louvre",
-         "14:00 지정시간", "3~4주 전", "지금~9/2", "14:00 슬롯 유지 권장"),
-        (P3, "10/3", 36, "Marmottan Monet", "musee-marmottan-monet",
-         "14:00", "1~2주 전", "9/18 전후", "일정 유연성 유지"),
-        (P2, "10/5", 38, "Jacquemart-André", "musee-jacquemart-andre",
-         "미술관·전시", "2~4주 전", "9/7~15", "특별전이면 조금 빨리"),
-        (P1, "10/6", 39, "Orsay — Mary Cassatt 특별전", "musee-d-orsay",
-         "특별전", "판매 가능 즉시", "지금 확인·예약", "일반 Orsay 입장(9/29)과 별도로 판단 · "
-         "회차 판매 여부 재확인"),
-        (P3, "10/6", 39, "Musée Picasso Paris", "musee-picasso-paris",
-         "13:00", "1~2주 전", "9/20 전후", "현장구매도 가능"),
-        (P1, "10/7", 40, "Bourse de Commerce — Remember Me", "bourse-de-commerce-pinault-collection",
-         "개막일", "판매 시작 즉시", "지금", "개막일 방문 — 조기 예약 필요"),
-        (P3, "10/8", 41, "Musée Guimet", "musee-guimet",
-         "10:00", "1~2주 전", "9/24 이후", "서두를 필요 없음"),
-        (NOB, "10/8", 41, "MAM Paris (파리 시립 현대미술관)", "musee-d-art-moderne-de-paris",
-         "상설전", "예약 불필요", "직전 확인", "상설 컬렉션 무료"),
-    ]
+    # Vertical action cards
+    cards_html = []
+    table_rows = []
 
-    body_rows = "".join(
-        f"<tr><td>{pr}</td>"
-        f'<td><a href="{rel}/daily/day-{day:02d}.html">{esc(date)}</a></td>'
-        f'<td><a href="{rel}/places/{slug}.html">{esc(name)}</a></td>'
-        f"<td>{esc(sched)}</td><td>{esc(when)}</td><td>{esc(act)}</td>"
-        f"<td>{esc(note)}</td></tr>"
-        for pr, date, day, name, slug, sched, when, act, note in rows)
+    for b in PARIS_MUSEUM_BOOKINGS:
+        st = b["canonical_status"]
+        if st == "book-now":
+            badge_html = '<span class="badge badge-must">1차 · 지금</span>'
+        elif st == "check-sale":
+            badge_html = '<span class="badge badge-caution">2차 · 9월 초</span>'
+        elif st == "book-later":
+            badge_html = '<span class="badge badge-neutral">3차 · 직전</span>'
+        else:
+            badge_html = '<span class="badge badge-ok">예약 불필요</span>'
+
+        table_rows.append(
+            f"<tr><td>{badge_html}</td>"
+            f'<td><a href="{rel}/daily/day-{b["day"]:02d}.html">{esc(b["date"])}</a></td>'
+            f'<td><a href="{rel}/places/{b["slug"]}.html">{esc(b["name"])}</a></td>'
+            f'<td>{esc(b["schedule"])}</td><td>{esc(b["when"])}</td><td>{esc(b["action_date"])}</td>'
+            f'<td>{esc(b["note"])}</td></tr>'
+        )
+
+        card = f"""<div class="paris-museum-card" data-museum-id="{esc(b['id'])}" data-canonical-status="{esc(st)}" data-effective-status="{esc(st)}">
+  <div class="paris-museum-card-head">
+    <div>
+      <span class="meta" style="display:block;margin-bottom:var(--s1)">Day {b['day']} · {esc(b['date'])}</span>
+      <h3 class="paris-museum-card-title"><a href="{rel}/places/{b['slug']}.html">{esc(b['name'])}</a></h3>
+    </div>
+    <div class="status-badge-container">{badge_html}</div>
+  </div>
+
+  <div class="paris-museum-meta-list">
+    <div class="paris-museum-meta-row"><strong>티켓/일정:</strong> <span>{esc(b['schedule'])}</span></div>
+    <div class="paris-museum-meta-row"><strong>Museum Pass:</strong> <span>{esc(b['pmp'])}</span></div>
+    <div class="paris-museum-meta-row"><strong>예약 시점:</strong> <span>{esc(b['when'])} (권장 실행: {esc(b['action_date'])})</span></div>
+    <div class="paris-museum-meta-row"><strong>Plan B:</strong> <span>{esc(b['plan_b'])}</span></div>
+    {f'<div class="paris-museum-meta-row"><strong>메모:</strong> <span>{esc(b["note"])}</span></div>' if b["note"] else ''}
+  </div>
+
+  <div class="paris-museum-actions">
+    <button type="button" class="btn btn-sm btn-primary btn-museum-book-toggle" data-action="book">✓ 예약 완료</button>
+    <button type="button" class="btn btn-sm btn-secondary btn-museum-recheck-toggle" data-action="recheck">재확인</button>
+    <a class="btn btn-sm btn-secondary" href="{esc(b['official_url'])}" target="_blank" rel="noopener">{ic('ticket')}공식 예약</a>
+    <a class="btn btn-sm btn-secondary" href="{rel}/daily/day-{b['day']:02d}.html">{ic('today')}Day {b['day']}</a>
+    <a class="btn btn-sm btn-secondary" href="{rel}/places/{b['slug']}.html">{ic('pin')}장소</a>
+  </div>
+</div>"""
+        cards_html.append(card)
 
     wave = """
 <div class="prose">
-<p><strong>예약 확정:</strong> Grand Palais 9/25 17:00 · Orangerie 9/30 10:00.</p>
-<p><strong>1차 — 지금 (8/28~8/31):</strong> Versailles → Orsay 9/29 →
+<p><strong>1차 — 지금 (8/28~8/31):</strong> Grand Palais → Versailles → Orsay 9/29 →
 Louvre 10/2 → Bourse de Commerce → Luxembourg → Mary Cassatt(판매 확인).
 단순히 유명한 곳이라서가 아니라, <strong>날짜·시간이 고정되어 있거나 특별전 개막
 직후에 방문</strong>하는 곳들이다. 특히 Versailles 10/1 · Louvre 10/2 · Orsay 9/29는
 파리 일정 전체의 동선을 잡는 기준점이므로 먼저 확정한다.</p>
-<p><strong>2차 — 9/1~9/10:</strong> Jacquemart-André. 1차가 끝난 뒤 처리한다.</p>
+<p><strong>2차 — 9/1~9/10:</strong> Orangerie · Jacquemart-André.
+1차가 끝난 뒤 처리한다. Orangerie는 9/27 방문이라 너무 늦출 수는 없지만
+1차만큼 급하지는 않다.</p>
 <p><strong>3차 — 9/12~9/20 (여행 중):</strong> Gustave Moreau · Rodin ·
 Marmottan · Picasso. 너무 일찍 예약하면 파리 체류 중 날씨·피로도·공연 일정에
 따른 변경 여지가 줄어든다 — 기다리는 것이 오히려 좋다.</p>
@@ -2431,30 +2673,64 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 파리 일정에는 특별전과 일반관람권이 섞여 있어 이 구분이 특히 중요하다.</p>
 </div>"""
 
+    checklist = """
+<div class="prose"><ul>
+<li><strong>오늘:</strong> Grand Palais · Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
+<li><strong>9월 초:</strong> Orangerie · Jacquemart-André</li>
+<li><strong>9월 중순:</strong> Moreau · Rodin · Marmottan · Picasso</li>
+<li><strong>파리 출발 직전:</strong> Guimet 예약 · 무료관(MAM) 운영시간 재확인</li>
+</ul>
+<p>이 순서대로 처리하면 가이드북 일정을 거의 그대로 유지하면서 예약 실패
+위험을 크게 낮출 수 있다. 확정된 예약은 <a href="index.html">준비 현황</a>의
+확정 목록과 트래커에 날짜·시간·취소조건·QR 저장 위치를 함께 기록한다.</p></div>"""
+
     index_search("파리 뮤지엄 예약 실행표", "prepare/paris-museums.html", "prepare",
                  "파리 15박 미술관·전시 예약 3단계 실행표")
 
     return page(
         title="파리 뮤지엄 예약", rel=rel, tab="prepare",
-        description="파리 박물관·전시 예약을 3단계로 나눈 실행표",
+        description="파리 15박 15개 미술관·전시 예약 실행 및 진행 현황 관리",
         trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
                ("파리 뮤지엄 예약", None)],
         body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header><h1>파리 뮤지엄 예약 실행표</h1>
-<p class="hero-dek">파리 15박(9/24~10/9)의 미술관·전시 예약을 3단계 파도로 나눈다.
-예약 실패 위험이 큰 것부터 지금 처리한다.</p></header>
+<p class="hero-dek">파리 15박(9/24~10/9) 15개 미술관·전시 예약 실행 및 상태 관리.
+공식 예약을 완료하면 [✓ 예약 완료]를 눌러 체크리스트를 관리한다.<br>
+<span class="meta" style="color:var(--text-2);margin-top:var(--s1);display:inline-block">※ 예약 체크 상태는 이 기기/브라우저에만 저장됩니다.</span></p></header>
 
-{alert('caution',
-       '<strong>오늘 처리 6건:</strong> Versailles · Orsay 9/29 · '
-       'Louvre 10/2 · Bourse de Commerce · Luxembourg · Mary Cassatt(판매 확인). '
-       '나머지는 단계별 시점에 맞춰 처리한다.')}
+{sec_head('STATUS SUMMARY', '예약 진행 현황')}
+<div class="paris-summary-grid">
+  <div class="paris-summary-item"><span class="num" id="count-book-now">{counts['book-now']}</span><span class="label">BOOK NOW (지금)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-check-sale">{counts['check-sale']}</span><span class="label">CHECK SALE (9월초)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-book-later">{counts['book-later']}</span><span class="label">BOOK LATER (중순)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-recheck">{counts['recheck']}</span><span class="label">RECHECK (재확인)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-booked">{counts['booked']}</span><span class="label">BOOKED (완료)</span></div>
+  <div class="paris-summary-item"><span class="num" id="count-no-reservation">{counts['no-reservation']}</span><span class="label">예약 불필요</span></div>
+</div>
 
-{sec_head('PLAN', '예약 실행표 — 15건', rule=True)}
+<div class="paris-filter-chips">
+  <button type="button" class="chip chip-action paris-filter-chip is-active" data-filter="all" aria-pressed="true">전체 (15)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="book-now" aria-pressed="false">지금 예약 (BOOK NOW)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="check-sale" aria-pressed="false">판매 확인 (CHECK SALE)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="book-later" aria-pressed="false">9월 중순 (BOOK LATER)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="recheck" aria-pressed="false">재확인 필요 (RECHECK)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="booked" aria-pressed="false">예약 완료 (BOOKED)</button>
+  <button type="button" class="chip chip-action paris-filter-chip" data-filter="no-reservation" aria-pressed="false">예약 불필요</button>
+</div>
+
+{sec_head('RESERVATIONS', '예약 항목 — 15건', rule=True)}
+<div class="paris-museum-grid" id="paris-museum-grid">
+{"".join(cards_html)}
+</div>
+
+<details class="acc" style="margin-top:var(--s5)"><summary>전체 예약 표 보기 (15건)</summary>
+<div class="acc-body">
 <div class="table-wrap"><table>
 <thead><tr><th>단계</th><th>방문일</th><th>장소 / 전시</th><th>일정</th>
 <th>권장 예약 시점</th><th>권장 실행일</th><th>비고</th></tr></thead>
-<tbody>{body_rows}</tbody>
+<tbody>{"".join(table_rows)}</tbody>
 </table></div>
+</div></details>
 
 {sec_head('WAVES', '3단계 파도 — 왜 이 순서인가', rule=True)}
 {wave}
@@ -2463,18 +2739,17 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 {principles}
 
 {sec_head('CHECKLIST', '압축 체크리스트', rule=True)}
-<div class="prose"><ul>
-<li><strong>예약 확정:</strong> Grand Palais 9/25 17:00 · Orangerie 9/30 10:00</li>
-<li><strong>오늘:</strong> Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
-<li><strong>9월 초:</strong> Jacquemart-André</li>
-<li><strong>9월 중순:</strong> Moreau · Rodin · Marmottan · Picasso</li>
-<li><strong>파리 출발 직전:</strong> Guimet 예약 · 무료관(MAM) 운영시간 재확인</li>
-</ul>
-<p>이 순서대로 처리하면 가이드북 일정을 거의 그대로 유지하면서 예약 실패
-위험을 크게 낮출 수 있다. 확정된 예약은 <a href="index.html">준비 현황</a>의
-확정 목록과 트래커에 날짜·시간·취소조건·QR 저장 위치를 함께 기록한다.</p></div>
+{checklist}
 
-<div class="btn-row"><a class="btn btn-secondary" href="index.html">{ic('check')}준비 현황</a>
+<div style="margin-top:var(--s6);padding:var(--s4);background:var(--surface-2);border-radius:var(--r-md);display:flex;align-items:center;justify-content:space-between;gap:var(--s3);flex-wrap:wrap">
+  <div>
+    <strong>내 로컬 예약 체크 관리</strong>
+    <p class="meta" style="margin:0">예약 체크 상태는 이 기기/브라우저에만 저장됩니다. 초기화 시 정본 계획 상태로 복원됩니다.</p>
+  </div>
+  <button type="button" class="btn btn-secondary" id="btn-reset-museum-state">{ic('close')}내 예약 체크 상태 초기화</button>
+</div>
+
+<div class="btn-row" style="margin-top:var(--s6)"><a class="btn btn-secondary" href="index.html">{ic('check')}준비 현황</a>
   <a class="btn btn-secondary" href="{rel}/guide/paris.html">{ic('region')}파리 가이드</a></div>
 </div></div>""")
 
@@ -2519,7 +2794,29 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 <p class="hero-dek">확정 {len(done)}건 · 미예약 {len(todo)}건.
   상태는 셋뿐이다 — 확정 · 미예약 · 제외.</p></header>
 
-<div class="btn-row"><a class="btn btn-primary" href="paris-museums.html">
+{sec_head('QUICK TOOLS', '현장 도구')}
+<div class="grid grid-2" style="margin-bottom:var(--s4)">
+  <a class="card card-link" href="french.html" style="border:1px solid var(--primary);box-shadow:var(--sh-1);background:var(--surface)">
+    <div class="card-body stack-xs">
+      <div style="display:flex;align-items:center;gap:var(--s2)">
+        <span class="badge" style="background:var(--primary);color:#fff">{ic('chat')} 추천</span>
+        <h2 style="font-size:var(--t-h3);margin:0;color:var(--primary)">여행 프랑스어</h2>
+      </div>
+      <p class="meta" style="margin:0">120문구 · 발음 · 검색 · 즐겨찾기</p>
+    </div>
+  </a>
+  <a class="card card-link" href="emergency.html">
+    <div class="card-body stack-xs">
+      <div style="display:flex;align-items:center;gap:var(--s2)">
+        {ic('alert')}
+        <h2 style="font-size:var(--t-h3);margin:0">긴급 연락처</h2>
+      </div>
+      <p class="meta" style="margin:0">EU 112 · 국가별 경찰/구급</p>
+    </div>
+  </a>
+</div>
+
+<div class="btn-row" style="margin-bottom:var(--s4)"><a class="btn btn-primary" href="paris-museums.html">
   {ic('ticket')}파리 뮤지엄 예약</a></div>
 
 {alert('caution',
@@ -2539,11 +2836,7 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
 
 {dropped_html}
 
-<div class="btn-row"><a class="btn btn-secondary" href="french.html">
-  {ic('chat')}여행 프랑스어</a>
-  <a class="btn btn-secondary" href="emergency.html">
-  {ic('alert')}긴급 연락처</a>
-  <a class="btn btn-secondary" href="../offline.html">
+<div class="btn-row"><a class="btn btn-secondary" href="../offline.html">
   {ic('download')}오프라인 준비</a></div>
 </div></div>""")
 
@@ -2660,18 +2953,84 @@ def load_reservations() -> dict:
             "items": items, "by_date": by_date}
 
 
+def populate_search_index(trip: Trip) -> None:
+    """검색 색인을 미리 채운다."""
+    SEARCH_INDEX.clear()
+    for p in trip.places.values():
+        region = trip.region(p.region)
+        index_search(p.name, f"places/{p.slug}.html", "place", region.name if region else "")
+    for d in trip.days:
+        index_search(f"{d.date_label} · Day {d.n} {d.city}", d.url, "day", f"Day {d.n} · {d.title}")
+    for r in trip.regions:
+        index_search(r.name, f"guide/{r.slug}.html", "region", r.tagline)
+    index_search("여행 프랑스어 (Travel French)", "prepare/french.html", "prepare", "120개 필수 문구 · 10분 발음 · 현장 표지판")
+
+
+def init_asset_pipeline(trip: Trip) -> None:
+    """자산의 내용 해시를 계산하고 shell 및 PWA 경로를 갱신한다."""
+    global PWA_CORE_PATHS
+    import shell
+
+    populate_search_index(trip)
+
+    # 1. style.css (style.css + icons.css())
+    style_content = (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css()
+    style_hash = hashlib.sha256(style_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_STYLE = f"assets/style.{style_hash}.css"
+
+    # 2. app.js
+    app_content = (ASSETS / "app.js").read_text(encoding="utf-8")
+    app_hash = hashlib.sha256(app_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_APP = f"assets/app.{app_hash}.js"
+
+    # 3. pwa.js
+    pwa_content = (ASSETS / "pwa.js").read_text(encoding="utf-8")
+    pwa_hash = hashlib.sha256(pwa_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_PWA = f"assets/pwa.{pwa_hash}.js"
+
+    # 4. search-index.js
+    search_content = "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False) + ";"
+    search_hash = hashlib.sha256(search_content.encode("utf-8")).hexdigest()[:12]
+    shell.ASSET_SEARCH_INDEX = f"assets/search-index.{search_hash}.js"
+
+    PWA_CORE_PATHS = (
+        "index.html",
+        "offline.html",
+        "offline-fallback.html",
+        "schedule.html",
+        "guide/index.html",
+        "map/index.html",
+        "prepare/index.html",
+        "prepare/emergency.html",
+        "prepare/french.html",
+        shell.ASSET_STYLE,
+        shell.ASSET_APP,
+        shell.ASSET_PWA,
+        shell.ASSET_SEARCH_INDEX,
+    )
+
+
 def write_assets(trip: Trip) -> None:
+    import shell
     out = SITE / "assets"
     out.mkdir(parents=True, exist_ok=True)
-    # 아이콘은 CSS 마스크로 붙인다 — 페이지마다 스프라이트를 인라인하면
-    # 페이지 수만큼 무게가 붙는다. 마스크는 CSS 한 번이고 페이지 무게는 0 이다.
-    (out / "style.css").write_text(
-        (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css(),
-        encoding="utf-8")
-    for name in ("app.js", "pwa.js"):
-        shutil.copy(ASSETS / name, out / name)
-    # 글꼴은 번들하지 않는다. 기기의 기본 한글 글꼴을 쓰므로 내려받을 것이
-    # 없고, 그만큼 오프라인 패키지가 가벼워진다.
+
+    style_content = (ASSETS / "style.css").read_text(encoding="utf-8") + "\n" + icons.css()
+    (out / "style.css").write_text(style_content, encoding="utf-8")
+    (SITE / shell.ASSET_STYLE).write_text(style_content, encoding="utf-8")
+
+    app_content = (ASSETS / "app.js").read_text(encoding="utf-8")
+    (out / "app.js").write_text(app_content, encoding="utf-8")
+    (SITE / shell.ASSET_APP).write_text(app_content, encoding="utf-8")
+
+    pwa_content = (ASSETS / "pwa.js").read_text(encoding="utf-8")
+    (out / "pwa.js").write_text(pwa_content, encoding="utf-8")
+    (SITE / shell.ASSET_PWA).write_text(pwa_content, encoding="utf-8")
+
+    search_content = "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False) + ";"
+    (out / "search-index.js").write_text(search_content, encoding="utf-8")
+    (SITE / shell.ASSET_SEARCH_INDEX).write_text(search_content, encoding="utf-8")
+
     pwa = ROOT / "source" / "ASSETS" / "pwa"
     if pwa.exists():
         shutil.copytree(pwa, out / "pwa", dirs_exist_ok=True)
@@ -2681,7 +3040,6 @@ def write_assets(trip: Trip) -> None:
     tourist_maps = ROOT / "source" / "ASSETS" / "tourist-maps"
     if tourist_maps.exists():
         shutil.copytree(tourist_maps, out / "tourist-maps", dirs_exist_ok=True)
-
     # 사진 — 매니페스트에 있는 것만 옮긴다. 카탈로그에 없으면 자리도 없다.
     raw = json.loads(IMAGE_MANIFEST.read_text(encoding="utf-8"))
     copied = 0
@@ -2710,32 +3068,12 @@ def write_assets(trip: Trip) -> None:
                          + "\n  ".join(missing))
     print(f"  사진 {copied}개 복사")
 
-    (out / "search-index.js").write_text(
-        "window.SEARCH_INDEX=" + json.dumps(SEARCH_INDEX, ensure_ascii=False)
-        + ";", encoding="utf-8")
-
 
 PWA_ICON_SPECS = (
     ("apple-touch-icon.png", "180x180", "any"),
     ("icon-192.png", "192x192", "any"),
     ("icon-512.png", "512x512", "any"),
     ("icon-maskable-512.png", "512x512", "maskable"),
-)
-
-# 연결이 끊겨도 반드시 열려야 하는 것들. 없으면 빌드를 세운다.
-PWA_CORE_PATHS = (
-    "index.html",
-    "offline.html",
-    "offline-fallback.html",
-    "schedule.html",
-    "guide/index.html",
-    "map/index.html",
-    "prepare/index.html",
-    "prepare/emergency.html",
-    "prepare/french.html",
-    "assets/style.css",
-    "assets/app.js",
-    "assets/search-index.js",
 )
 
 

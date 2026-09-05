@@ -217,8 +217,14 @@ button { font: inherit; color: inherit; }
   vertical-align: -0.19em;
   margin-right: 0.42em;
   background-color: currentColor;
-  -webkit-mask: var(--ic) center / contain no-repeat;
-  mask: var(--ic) center / contain no-repeat;
+  -webkit-mask-image: var(--ic);
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: var(--ic);
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 /* 글자 없이 아이콘만 있는 자리 — 탭·버튼·목록 앞머리 */
 .ic-only::before { margin-right: 0; }
@@ -1584,9 +1590,33 @@ td .meta a,
   color: var(--sig-ok-ink);
   border-color: var(--sig-ok);
 }
+.phrase-btn.playing {
+  background: var(--primary-soft);
+  color: var(--primary-ink);
+  border-color: var(--primary);
+  font-weight: 800;
+}
+.phrase-btn.failed {
+  background: #FBEAE8;
+  color: var(--sig-alert-ink);
+  border-color: var(--sig-alert);
+}
+.phrase-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .phrase-btn .ic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
+}
+.phrase-btn .ic::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 0;
+  vertical-align: 0;
 }
 
 /* Quick French Block (Day & Place 페이지 내 삽입) */
@@ -1612,6 +1642,101 @@ td .meta a,
   display: flex;
   align-items: center;
   gap: var(--s2);
+}
+
+/* Paris Museum Booking System */
+.paris-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: var(--s3);
+  margin-bottom: var(--s4);
+}
+.paris-summary-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: var(--s3) var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.paris-summary-item .num {
+  font-size: var(--t-h2);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--primary);
+}
+.paris-summary-item .label {
+  font-size: var(--t-meta);
+  color: var(--muted);
+}
+.paris-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-bottom: var(--s4);
+}
+.paris-museum-grid {
+  display: grid;
+  gap: var(--s4);
+}
+.paris-museum-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  box-shadow: var(--sh-1);
+  transition: all var(--dur-fast);
+}
+.paris-museum-card.is-booked {
+  background: #F4FAF6;
+  border-color: var(--sig-ok);
+}
+.paris-museum-card.is-recheck {
+  background: var(--ochre-soft);
+  border-color: var(--accent);
+}
+.paris-museum-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s3);
+  flex-wrap: wrap;
+}
+.paris-museum-card-title {
+  font-size: var(--t-h3);
+  margin: 0;
+}
+.paris-museum-meta-list {
+  display: grid;
+  gap: var(--s2);
+  font-size: var(--t-meta);
+  color: var(--text-2);
+  background: var(--surface-2);
+  padding: var(--s3);
+  border-radius: var(--r-md);
+}
+.paris-museum-meta-row {
+  display: flex;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+.paris-museum-meta-row strong {
+  min-width: 90px;
+  color: var(--text);
+  flex-shrink: 0;
+}
+.paris-museum-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  align-items: center;
+}
+.paris-museum-actions .btn {
+  min-height: 44px;
 }
 
 /* 발음 규칙 표 */

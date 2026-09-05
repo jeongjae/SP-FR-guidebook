@@ -17,6 +17,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 import os
+import re
 import shutil
 
 
@@ -151,7 +152,7 @@ def static_checks(problems):
             problems.append(f"Manifest 링크 없음: {rel}")
         if 'rel="icon"' not in head:
             problems.append(f"브라우저 아이콘 링크 없음: {rel}")
-        if "assets/pwa.js" not in head:
+        if not re.search(r"assets/pwa(\.[a-f0-9]+)?\.js", head):
             problems.append(f"PWA 등록 스크립트 없음: {rel}")
 
     return offline

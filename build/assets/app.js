@@ -470,13 +470,107 @@
   var FAV_KEY = 'spfr_travel_french_favs';
   function getFrenchFavs() {
     try {
-      return JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+      var raw = localStorage.getItem(FAV_KEY);
+      if (!raw) return [];
+      var parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
     } catch (e) { return []; }
   }
   function saveFrenchFavs(favs) {
     try {
       localStorage.setItem(FAV_KEY, JSON.stringify(favs));
     } catch (e) {}
+  }
+
+  var cachedVoices = [];
+  function updateVoices() {
+    try {
+      if ('speechSynthesis' in window) {
+        cachedVoices = window.speechSynthesis.getVoices() || [];
+      }
+    } catch (e) {}
+  }
+  if ('speechSynthesis' in window) {
+    updateVoices();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = updateVoices;
+    }
+  }
+
+  function getFrenchVoice() {
+    if (!('speechSynthesis' in window)) return null;
+    try {
+      var voices = cachedVoices.length ? cachedVoices : (window.speechSynthesis.getVoices() || []);
+      for (var i = 0; i < voices.length; i++) {
+        if (voices[i].lang === 'fr-FR' || voices[i].lang === 'fr_FR') return voices[i];
+      }
+      for (var j = 0; j < voices.length; j++) {
+        if (voices[j].lang && voices[j].lang.toLowerCase().indexOf('fr') === 0) return voices[j];
+      }
+    } catch (e) {}
+    return null;
+  }
+
+  function speakFrench(text, btn) {
+    if (!('speechSynthesis' in window)) {
+      if (btn) {
+        btn.disabled = true;
+        btn.title = '이 기기에서는 음성 재생을 지원하지 않습니다.';
+      }
+      return false;
+    }
+    try {
+      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+        window.speechSynthesis.cancel();
+      }
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'fr-FR';
+      u.rate = 0.88;
+      var voice = getFrenchVoice();
+      if (voice) u.voice = voice;
+
+      // Keep reference to prevent WebKit premature garbage collection
+      window.__currentUtterance = u;
+
+      if (btn) {
+        var origSpan = btn.querySelector('span');
+        var origText = origSpan ? origSpan.textContent : '듣기';
+        btn.classList.add('playing');
+        btn.classList.remove('failed');
+        if (origSpan) origSpan.textContent = '재생 중';
+
+        function resetBtn() {
+          btn.classList.remove('playing');
+          if (origSpan) origSpan.textContent = origText;
+        }
+        function failBtn() {
+          btn.classList.remove('playing');
+          btn.classList.add('failed');
+          if (origSpan) origSpan.textContent = '재생 실패';
+          setTimeout(function () {
+            btn.classList.remove('failed');
+            if (origSpan) origSpan.textContent = origText;
+          }, 1400);
+        }
+
+        u.onend = resetBtn;
+        u.onerror = failBtn;
+      }
+      window.speechSynthesis.speak(u);
+      return true;
+    } catch (err) {
+      if (btn) {
+        btn.classList.remove('playing');
+        btn.classList.add('failed');
+        var fSpan = btn.querySelector('span');
+        if (fSpan) fSpan.textContent = '재생 실패';
+        setTimeout(function () {
+          btn.classList.remove('failed');
+          if (fSpan) fSpan.textContent = '듣기';
+        }, 1400);
+      }
+      return false;
+    }
   }
 
   // 1. Initial setup of favorite buttons on load
@@ -499,14 +593,8 @@
     var audioBtn = e.target.closest('.btn-phrase-audio');
     if (audioBtn) {
       var text = audioBtn.getAttribute('data-audio');
-      if (text && 'speechSynthesis' in window) {
-        try {
-          window.speechSynthesis.cancel();
-          var u = new SpeechSynthesisUtterance(text);
-          u.lang = 'fr-FR';
-          u.rate = 0.88;
-          window.speechSynthesis.speak(u);
-        } catch (err) {}
+      if (text) {
+        speakFrench(text, audioBtn);
       }
       return;
     }
@@ -519,6 +607,7 @@
         var origSpan = copyBtn.querySelector('span');
         var origText = origSpan ? origSpan.textContent : '복사';
         function setCopied() {
+          copyBtn.classList.remove('failed');
           copyBtn.classList.add('copied');
           if (origSpan) origSpan.textContent = '복사됨';
           setTimeout(function () {
@@ -526,13 +615,21 @@
             if (origSpan) origSpan.textContent = origText;
           }, 1400);
         }
+        function setCopyFailed() {
+          copyBtn.classList.add('failed');
+          if (origSpan) origSpan.textContent = '복사 실패';
+          setTimeout(function () {
+            copyBtn.classList.remove('failed');
+            if (origSpan) origSpan.textContent = origText;
+          }, 1400);
+        }
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(copyText).then(setCopied, function () {
-            fallbackCopy(copyText, setCopied);
+            fallbackCopy(copyText, setCopied, setCopyFailed);
           });
         } else {
-          fallbackCopy(copyText, setCopied);
+          fallbackCopy(copyText, setCopied, setCopyFailed);
         }
       }
       return;
@@ -573,7 +670,7 @@
     }
   });
 
-  function fallbackCopy(text, cb) {
+  function fallbackCopy(text, cb, errCb) {
     try {
       var ta = document.createElement('textarea');
       ta.value = text;
@@ -581,10 +678,16 @@
       ta.style.opacity = '0';
       document.body.appendChild(ta);
       ta.select();
-      document.execCommand('copy');
+      var successful = document.execCommand('copy');
       document.body.removeChild(ta);
-      if (cb) cb();
-    } catch (e) {}
+      if (successful) {
+        if (cb) cb();
+      } else {
+        if (errCb) errCb();
+      }
+    } catch (e) {
+      if (errCb) errCb();
+    }
   }
 
   // 3. Travel French Page (prepare/french.html) Search & Category Filters
@@ -596,7 +699,7 @@
   var frenchListTitle = document.getElementById('french-list-title');
 
   if (frenchGrid && frenchChips) {
-    var curCategory = 'all';
+    var curCategory = 'essential';
 
     function applyFrenchFilter() {
       var query = (frenchSearchInput ? frenchSearchInput.value : '').trim().toLowerCase();
@@ -612,14 +715,22 @@
         var sData = card.getAttribute('data-search') || '';
 
         var matchCat = false;
-        if (curCategory === 'all') {
-          matchCat = true;
-        } else if (curCategory === 'fav') {
-          matchCat = favs.indexOf(pid) >= 0;
-        } else if (curCategory === 'essential') {
-          matchCat = (cat === 'essential' || pri === 'P0');
+        if (query) {
+          if (curCategory === 'fav') {
+            matchCat = favs.indexOf(pid) >= 0;
+          } else {
+            matchCat = true;
+          }
         } else {
-          matchCat = (cat === curCategory);
+          if (curCategory === 'all') {
+            matchCat = true;
+          } else if (curCategory === 'fav') {
+            matchCat = favs.indexOf(pid) >= 0;
+          } else if (curCategory === 'essential') {
+            matchCat = (cat === 'essential');
+          } else {
+            matchCat = (cat === curCategory);
+          }
         }
 
         var matchQuery = true;
@@ -645,6 +756,10 @@
           frenchListTitle.textContent = '즐겨찾기한 회화 (' + visibleCount + '건)';
         } else if (query) {
           frenchListTitle.textContent = '검색 결과 (' + visibleCount + '건)';
+        } else if (curCategory === 'essential') {
+          frenchListTitle.textContent = '기본 회화 20선 (' + visibleCount + '문구)';
+        } else if (curCategory === 'all') {
+          frenchListTitle.textContent = '전체 회화 (' + visibleCount + '문구)';
         } else {
           frenchListTitle.textContent = '상황별 회화 (' + visibleCount + '문구)';
         }
@@ -682,5 +797,223 @@
         applyFrenchFilter();
       });
     }
+
+    // Apply initial filter on load
+    applyFrenchFilter();
   }
+
+  // 4. Paris Museum Booking Interactive State (prepare/paris-museums.html)
+  var PARIS_MUSEUM_STORAGE_KEY = 'spfr_paris_museum_booking_state';
+
+  function getParisMuseumState() {
+    try {
+      var raw = localStorage.getItem(PARIS_MUSEUM_STORAGE_KEY);
+      if (!raw) return {};
+      var parsed = JSON.parse(raw);
+      return (typeof parsed === 'object' && parsed !== null && !Array.isArray(parsed)) ? parsed : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveParisMuseumState(state) {
+    try {
+      localStorage.setItem(PARIS_MUSEUM_STORAGE_KEY, JSON.stringify(state));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function renderParisMuseumUI() {
+    var cards = document.querySelectorAll('.paris-museum-card');
+    if (!cards.length) return;
+
+    var state = getParisMuseumState();
+    var counts = {
+      'book-now': 0,
+      'check-sale': 0,
+      'book-later': 0,
+      'recheck': 0,
+      'booked': 0,
+      'no-reservation': 0,
+      'total': cards.length
+    };
+
+    cards.forEach(function (card) {
+      var id = card.getAttribute('data-museum-id');
+      var canonical = card.getAttribute('data-canonical-status');
+      var local = state[id];
+
+      var effective = canonical;
+      if (local === 'booked') {
+        effective = 'booked';
+      } else if (local === 'recheck') {
+        effective = 'recheck';
+      }
+
+      card.setAttribute('data-effective-status', effective);
+      card.classList.remove('is-booked', 'is-recheck');
+      if (effective === 'booked') card.classList.add('is-booked');
+      if (effective === 'recheck') card.classList.add('is-recheck');
+
+      if (counts[effective] !== undefined) {
+        counts[effective]++;
+      }
+
+      // Badge update
+      var badgeContainer = card.querySelector('.status-badge-container');
+      if (badgeContainer) {
+        if (effective === 'booked') {
+          badgeContainer.innerHTML = '<span class="badge badge-ok">✓ 예약 완료</span>';
+        } else if (effective === 'recheck') {
+          badgeContainer.innerHTML = '<span class="badge badge-caution">재확인 필요</span>';
+        } else if (canonical === 'book-now') {
+          badgeContainer.innerHTML = '<span class="badge badge-must">1차 · 지금</span>';
+        } else if (canonical === 'check-sale') {
+          badgeContainer.innerHTML = '<span class="badge badge-caution">2차 · 9월 초</span>';
+        } else if (canonical === 'book-later') {
+          badgeContainer.innerHTML = '<span class="badge badge-neutral">3차 · 직전</span>';
+        } else if (canonical === 'no-reservation') {
+          badgeContainer.innerHTML = '<span class="badge badge-ok">예약 불필요</span>';
+        }
+      }
+
+      // Book Toggle Button
+      var bookBtn = card.querySelector('.btn-museum-book-toggle');
+      if (bookBtn) {
+        if (effective === 'booked') {
+          bookBtn.textContent = '완료 취소';
+          bookBtn.classList.remove('btn-primary');
+          bookBtn.classList.add('btn-secondary');
+          bookBtn.setAttribute('data-action', 'unbook');
+        } else {
+          bookBtn.textContent = '✓ 예약 완료';
+          bookBtn.classList.remove('btn-secondary');
+          bookBtn.classList.add('btn-primary');
+          bookBtn.setAttribute('data-action', 'book');
+        }
+      }
+
+      // Recheck Toggle Button
+      var recheckBtn = card.querySelector('.btn-museum-recheck-toggle');
+      if (recheckBtn) {
+        if (effective === 'recheck') {
+          recheckBtn.textContent = '재확인 해제';
+          recheckBtn.setAttribute('data-action', 'unrecheck');
+        } else {
+          recheckBtn.textContent = '재확인';
+          recheckBtn.setAttribute('data-action', 'recheck');
+        }
+        recheckBtn.style.display = (effective === 'booked') ? 'none' : '';
+      }
+    });
+
+    // Update summary counts
+    var countBookNow = document.getElementById('count-book-now');
+    if (countBookNow) countBookNow.textContent = counts['book-now'];
+    var countCheckSale = document.getElementById('count-check-sale');
+    if (countCheckSale) countCheckSale.textContent = counts['check-sale'];
+    var countBookLater = document.getElementById('count-book-later');
+    if (countBookLater) countBookLater.textContent = counts['book-later'];
+    var countRecheck = document.getElementById('count-recheck');
+    if (countRecheck) countRecheck.textContent = counts['recheck'];
+    var countBooked = document.getElementById('count-booked');
+    if (countBooked) countBooked.textContent = counts['booked'];
+    var countNoReservation = document.getElementById('count-no-reservation');
+    if (countNoReservation) countNoReservation.textContent = counts['no-reservation'];
+
+    applyParisMuseumFilter();
+  }
+
+  function applyParisMuseumFilter() {
+    var activeChip = document.querySelector('.paris-filter-chip[aria-pressed="true"]');
+    var filter = activeChip ? activeChip.getAttribute('data-filter') : 'all';
+    var cards = document.querySelectorAll('.paris-museum-card');
+
+    cards.forEach(function (card) {
+      var eff = card.getAttribute('data-effective-status');
+      if (filter === 'all' || eff === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  window.__renderParisMuseumUI = renderParisMuseumUI;
+
+  // Initialize on script execution if DOM ready, or DOMContentLoaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderParisMuseumUI);
+  } else {
+    renderParisMuseumUI();
+  }
+
+  // Global Click Handlers for Paris Museums
+  document.addEventListener('click', function (e) {
+    var bookBtn = e.target.closest('.btn-museum-book-toggle');
+    if (bookBtn) {
+      var card = bookBtn.closest('.paris-museum-card');
+      var id = card ? card.getAttribute('data-museum-id') : null;
+      if (!id) return;
+
+      var action = bookBtn.getAttribute('data-action');
+      var state = getParisMuseumState();
+      if (action === 'book') {
+        state[id] = 'booked';
+      } else {
+        delete state[id];
+      }
+      if (saveParisMuseumState(state)) {
+        renderParisMuseumUI();
+      } else {
+        alert('상태를 저장하지 못했습니다 (브라우저 저장소 제한 또는 비활성화).');
+      }
+      return;
+    }
+
+    var recheckBtn = e.target.closest('.btn-museum-recheck-toggle');
+    if (recheckBtn) {
+      var card = recheckBtn.closest('.paris-museum-card');
+      var id = card ? card.getAttribute('data-museum-id') : null;
+      if (!id) return;
+
+      var action = recheckBtn.getAttribute('data-action');
+      var state = getParisMuseumState();
+      if (action === 'recheck') {
+        state[id] = 'recheck';
+      } else {
+        delete state[id];
+      }
+      if (saveParisMuseumState(state)) {
+        renderParisMuseumUI();
+      } else {
+        alert('상태를 저장하지 못했습니다 (브라우저 저장소 제한 또는 비활성화).');
+      }
+      return;
+    }
+
+    var chip = e.target.closest('.paris-filter-chip');
+    if (chip) {
+      var allChips = document.querySelectorAll('.paris-filter-chip');
+      allChips.forEach(function (c) {
+        c.setAttribute('aria-pressed', 'false');
+      });
+      chip.setAttribute('aria-pressed', 'true');
+      applyParisMuseumFilter();
+      return;
+    }
+
+    var resetBtn = e.target.closest('#btn-reset-museum-state');
+    if (resetBtn) {
+      if (confirm('내 예약 체크 상태를 모두 초기화하시겠습니까? (정본 계획 상태로 복귀)')) {
+        try {
+          localStorage.removeItem(PARIS_MUSEUM_STORAGE_KEY);
+        } catch (err) {}
+        renderParisMuseumUI();
+      }
+      return;
+    }
+  });
 })();
