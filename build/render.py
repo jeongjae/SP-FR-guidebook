@@ -535,7 +535,8 @@ def place_card(p: Place, rel: str, large: bool = False) -> str:
 def day_card(d: Day, rel: str, region: Region | None = None) -> str:
     transfer = badge("caution", "거점 이동") if d.is_transfer else ""
     fatigue = f'<span>{ic("gauge")}피로 {esc(d.fatigue)}</span>' if d.fatigue else ""
-    return f"""<article class="card day-card">
+    return f"""<article class="card day-card" data-day-number="{d.n}"
+  data-date="{d.date.isoformat()}" data-day-region="{esc(d.region)}">
   <div class="card-body">
     <div class="day-card-head">
       <span class="day-date">{esc(d.date_label)}</span>
@@ -1786,23 +1787,31 @@ def build_schedule(trip: Trip) -> str:
         own = [d for d in r.days if d.region == r.slug]
         if not own:
             continue
-        blocks.append(f'<div id="{r.slug}" data-region="{r.slug}">'
+        blocks.append(f'<section class="schedule-region-group" data-schedule-region="{r.slug}">'
+                      f'<div id="{r.slug}" data-region="{r.slug}">'
                       + sec_head(r.tagline, r.name,
                                  more=("지역 가이드", f"guide/{r.slug}.html"),
                                  rule=False) + "</div>")
         blocks.append('<div class="grid grid-2">'
-                      + "".join(day_card(d, rel, r) for d in own) + "</div>")
+                      + "".join(day_card(d, rel, r) for d in own) + "</div></section>")
     last = trip.day(43)
     if last and last.region == "return":
-        blocks.append(sec_head("", "귀국"))
-        blocks.append(f'<div class="grid grid-2">{day_card(last, rel)}</div>')
+        blocks.append('<section class="schedule-region-group" data-schedule-region="return">'
+                      + '<div id="return" data-region="return">' + sec_head("", "귀국") + '</div>'
+                      + f'<div class="grid grid-2">{day_card(last, rel)}</div></section>')
 
     jump = tabs_strip([(r.name, f"#{r.slug}", False) for r in trip.regions])
-    regions_payload = json.dumps([{
-        "slug": r.slug, "name": r.name,
-        "start": r.days[0].date.isoformat(),
-        "end": r.days[-1].date.isoformat()
-    } for r in trip.regions], ensure_ascii=False)
+    # 지역 payload 는 표시 이름만 맡는다. 겹치는 체류 range 로 오늘 지역을
+    # 추론하지 않고, schedule_payload 의 canonical Day.region 을 그대로 쓴다.
+    regions_payload = json.dumps([
+        {"slug": r.slug, "name": r.name} for r in trip.regions
+    ], ensure_ascii=False)
+    schedule_payload = json.dumps({
+        "start": trip.start.isoformat(), "end": trip.end.isoformat(),
+        "days": [{"n": d.n, "date": d.date.isoformat(), "region": d.region,
+                  "date_label": d.date_label, "city": d.city,
+                  "title": d.title, "url": d.url} for d in trip.days]
+    }, ensure_ascii=False)
 
     body = f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header>
@@ -1810,8 +1819,25 @@ def build_schedule(trip: Trip) -> str:
   <p class="hero-dek">{trip.start.isoformat()} — {trip.end.isoformat()} ·
     43일 42박 · 8개 거점</p>
 </header>
+<section id="schedule-canonical">
 {''.join(blocks)}
+</section>
+<section id="schedule-live" class="schedule-live" hidden aria-live="polite">
+  <div class="schedule-live-section" id="schedule-now-section">
+    <div class="schedule-live-heading"><span class="label">NOW</span><h2>오늘</h2></div>
+    <div id="schedule-now" class="grid grid-2"></div>
+  </div>
+  <div class="schedule-live-section" id="schedule-future-section">
+    <div class="schedule-live-heading"><span class="label">UP NEXT</span><h2>다음 일정</h2></div>
+    <div id="schedule-future" class="grid grid-2"></div>
+  </div>
+  <details class="acc schedule-past" id="schedule-past">
+    <summary id="schedule-past-summary" aria-controls="schedule-past-days">지난 일정 0일 보기</summary>
+    <div id="schedule-past-days" class="grid grid-2 acc-body"></div>
+  </details>
+</section>
 <script type="application/json" id="schedule-regions-data">{regions_payload}</script>
+<script type="application/json" id="schedule-data">{schedule_payload}</script>
 </div></div>"""
     return page(title="전체 일정", body=body, rel=rel, tab="schedule",
                 subnav=jump, description="43일 전체 일정",
@@ -1834,6 +1860,9 @@ def build_home(trip: Trip, res: dict) -> str:
         "next": [{"t": s.start, "n": s.name,
                   "u": f"places/{s.place.slug}.html" if s.place else None}
                  for s in d.stops if s.start and s.category != "hotel"][:4],
+        "bookings": [{"t": s.start or "", "n": s.name}
+                     for s in d.reserved_stops[:3]],
+        "alerts": [plain_inline(x) for x in d.needs_review[:2]],
     } for d in trip.days]
 
     # 여행 전 화면 — 아직 예약하지 않은 것부터 보여준다.
