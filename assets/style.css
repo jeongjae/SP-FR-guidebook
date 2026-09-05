@@ -967,6 +967,48 @@ h3 { font-size: var(--t-h3); line-height: var(--lh-snug); }
   font-variant-numeric: tabular-nums;
 }
 .day-route { font-size: var(--t-h3); font-weight: 700; color: var(--text); }
+.day-card[aria-current="date"] {
+  border: 2px solid var(--accent);
+  box-shadow: var(--sh-2);
+}
+.day-card[aria-current="date"] .day-num::after {
+  content: " · TODAY";
+}
+
+/* 여행 중 홈과 전체 일정은 같은 날짜 상태를 사용한다. */
+.today-current { display: grid; gap: var(--s2); }
+.today-city { font-size: var(--t-h2); }
+.today-next { margin-top: var(--s2); }
+.today-actions { margin-top: var(--s3); }
+.today-ops h2,
+.schedule-live-heading h2 { margin: var(--s1) 0 0; }
+.today-preview { display: grid; gap: var(--s2); }
+.today-preview-row {
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+.schedule-live { display: grid; gap: var(--s6); }
+.schedule-live-section { display: grid; gap: var(--s3); }
+.schedule-live[hidden],
+.schedule-live-section[hidden] { display: none; }
+.schedule-live-heading .label { color: var(--accent); }
+.schedule-past > .acc-body {
+  padding-top: var(--s3);
+  gap: var(--s3);
+}
+@media (max-width: 430px) {
+  .today-actions { display: grid; grid-template-columns: 1fr; }
+  .today-actions .btn { width: 100%; }
+}
 
 /* ================= ActionCard =================
    지금 해야 할 것. 화면에서 가장 눈에 띄어야 하므로 액센트 면을 쓴다. */
@@ -1743,7 +1785,6 @@ td .meta a,
 .rule-table td strong { color: var(--primary); }
 .rule-table td span.sound { color: var(--sig-caution-ink); font-weight: 700; }
 .rule-table td span.ex { color: var(--text-2); }
-
 
 /* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */
 .ic-today::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228.2%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223.2%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }

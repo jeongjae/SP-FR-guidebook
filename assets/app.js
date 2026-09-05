@@ -314,138 +314,199 @@
     }
   }
 
-  /* ---- 홈 — 여행 전/중 모드 ----
-     빌드 시각에 모드를 굳히지 않는다. 출발 전에 만든 페이지가 여행 중에도
-     맞아야 하기 때문이다. */
+  /* ---- 공통 날짜 상태 — 기기의 local calendar date가 유일한 런타임 기준 ---- */
+  function htmlEscape(value) {
+    return String(value == null ? '' : value).replace(/[&<>"]/g, function (c) {
+      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c];
+    });
+  }
+
+  function localDateOnly() {
+    var override = window.__SPFR_TEST_DATE__;
+    if (typeof override === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(override)) {
+      return override;
+    }
+    var now = new Date();
+    return now.getFullYear() + '-'
+      + String(now.getMonth() + 1).padStart(2, '0') + '-'
+      + String(now.getDate()).padStart(2, '0');
+  }
+
+  function dateState(trip) {
+    var todayLocal = localDateOnly();
+    var tripMode = todayLocal < trip.start ? 'pre-trip'
+      : (todayLocal > trip.end ? 'post-trip' : 'in-trip');
+    var currentDay = tripMode === 'in-trip'
+      ? trip.days.filter(function (day) { return day.date === todayLocal; })[0] || null
+      : null;
+    return {
+      todayLocal: todayLocal,
+      tripMode: tripMode,
+      currentDay: currentDay,
+      currentRegion: currentDay ? currentDay.region : null,
+      pastDays: trip.days.filter(function (day) { return day.date < todayLocal; }),
+      futureDays: trip.days.filter(function (day) { return day.date > todayLocal; })
+    };
+  }
+
+  function localMidnight(isoDate) {
+    var parts = isoDate.split('-').map(Number);
+    return new Date(parts[0], parts[1] - 1, parts[2]);
+  }
+
+  /* ---- 홈 — Today와 향후 4일 ---- */
   var panel = document.getElementById('today-panel');
   var tripDataEl = document.getElementById('trip-data');
   if (panel && tripDataEl) {
-    var trip = JSON.parse(tripDataEl.textContent);
-    var now2 = new Date();
-    var iso = now2.getFullYear() + '-'
-      + String(now2.getMonth() + 1).padStart(2, '0') + '-'
-      + String(now2.getDate()).padStart(2, '0');
-    var today = trip.days.filter(function (d) { return d.date === iso; })[0];
-
-    function h(s) { return s.replace(/[&<>"]/g, function (c) {
-      return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
-
-    if (today) {
-      var nx = today.next[0];
-      panel.innerHTML =
-        '<section class="action-card">'
-        + '<div class="day-card-head" style="margin-bottom:var(--s2)">'
-        + '<span class="day-date">' + h(today.date_label || today.date) + '</span>'
-        + '<span class="day-num">DAY ' + today.n + '</span></div>'
-        + '<div class="action-when" style="font-size:var(--t-h2)">' + h(today.city) + '</div>'
-        + '<p class="card-dek">' + h(today.title) + '</p>'
-        + (nx ? '<div style="margin-top:1rem"><span class="label">NEXT</span>'
-                + '<div class="action-what">' + h(nx.t) + ' ' + h(nx.n) + '</div></div>' : '')
-        + '<div class="btn-row" style="margin-top:1rem">'
-        + '<a class="btn btn-primary" href="' + today.url + '">오늘 일정</a>'
-        + '<a class="btn btn-secondary" href="map/index.html">지도</a>'
-        + '</div></section>';
-    } else if (iso < trip.start) {
-      var d1 = new Date(trip.start + 'T00:00:00');
-      var left = Math.ceil((d1 - now2) / 86400000);
-      panel.innerHTML =
-        '<section class="action-card">'
-        + '<span class="label">TRIP STARTS IN</span>'
-        + '<div class="action-when">D-' + left + '</div>'
-        + '<div class="action-what">' + trip.start + ' 출발</div>'
-        + '<div class="btn-row" style="margin-top:1rem">'
-        + '<a class="btn btn-primary" href="prepare/index.html">준비 확인</a>'
-        + '<a class="btn btn-secondary" href="schedule.html">전체 일정</a>'
-        + '</div></section>';
-    } else {
-      panel.innerHTML =
-        '<section class="action-card"><span class="label">여행 종료</span>'
-        + '<div class="action-what">43일이 끝났다.</div>'
-        + '<div class="btn-row" style="margin-top:1rem">'
-        + '<a class="btn btn-secondary" href="schedule.html">전체 일정 다시 보기</a>'
-        + '</div></section>';
+    try {
+      var homeTrip = JSON.parse(tripDataEl.textContent);
+      var homeState = dateState(homeTrip);
+      if (homeState.tripMode === 'in-trip' && homeState.currentDay) {
+        var today = homeState.currentDay;
+        var nextActivity = (today.next || [])[0];
+        var bookingItems = (today.bookings || []).map(function (item) {
+          return '<li><strong>' + htmlEscape(item.t) + '</strong> ' + htmlEscape(item.n) + '</li>';
+        }).join('');
+        var alertItems = (today.alerts || []).map(function (item) {
+          return '<li>' + htmlEscape(item) + '</li>';
+        }).join('');
+        var upNext = homeState.futureDays.slice(0, 4).map(function (day) {
+          return '<a class="today-preview-row" href="' + htmlEscape(day.url) + '">'
+            + '<span><strong>' + htmlEscape(day.date_label || day.date) + '</strong> '
+            + htmlEscape(day.city) + '</span><span aria-hidden="true">→</span></a>';
+        }).join('');
+        panel.innerHTML =
+          '<div class="action-card today-current" data-current-region="' + htmlEscape(today.region)
+          + '" aria-current="date">'
+          + '<div class="day-card-head"><span class="label">TODAY · '
+          + htmlEscape(today.date_label || today.date) + '</span>'
+          + '<span class="day-num">DAY ' + today.n + '</span></div>'
+          + '<div class="action-when today-city">' + htmlEscape(today.city) + '</div>'
+          + '<p class="card-dek">' + htmlEscape(today.title) + '</p>'
+          + (nextActivity ? '<div class="today-next"><span class="label">NEXT</span>'
+            + '<div class="action-what">' + htmlEscape(nextActivity.t) + ' '
+            + htmlEscape(nextActivity.n) + '</div></div>' : '')
+          + '<div class="btn-row today-actions"><a class="btn btn-primary" href="'
+          + htmlEscape(today.url) + '">오늘 일정</a>'
+          + '<a class="btn btn-secondary" href="map/index.html">오늘 지도</a>'
+          + '<a class="btn btn-secondary" href="schedule.html">전체 일정</a></div></div>'
+          + (bookingItems || alertItems ? '<section class="today-ops" aria-labelledby="today-ops-title">'
+            + '<h2 id="today-ops-title">예약 · 확인</h2><div class="prose"><ul>'
+            + bookingItems + alertItems + '</ul></div></section>' : '')
+          + (upNext ? '<section class="today-preview" aria-labelledby="up-next-title">'
+            + '<div class="schedule-live-heading"><span class="label">UP NEXT</span>'
+            + '<h2 id="up-next-title">다가오는 일정</h2></div>' + upNext + '</section>' : '');
+      } else if (homeState.tripMode === 'pre-trip') {
+        var firstDay = homeTrip.days[0];
+        var left = Math.round((localMidnight(homeTrip.start) - localMidnight(homeState.todayLocal)) / 86400000);
+        panel.innerHTML = '<div class="action-card"><span class="label">TRIP STARTS IN ' + left + ' DAYS</span>'
+          + '<div class="action-when">D-' + left + '</div>'
+          + '<div class="action-what">Day 1 · ' + htmlEscape(firstDay.city) + '</div>'
+          + '<p class="card-dek">' + htmlEscape(firstDay.title) + '</p>'
+          + '<div class="btn-row today-actions"><a class="btn btn-primary" href="'
+          + htmlEscape(firstDay.url) + '">첫 일정</a>'
+          + '<a class="btn btn-secondary" href="prepare/index.html">준비 확인</a>'
+          + '<a class="btn btn-secondary" href="schedule.html">전체 일정</a></div></div>';
+      } else if (homeState.tripMode === 'in-trip') {
+        panel.innerHTML = '<div class="action-card"><span class="label">TODAY</span>'
+          + '<div class="action-what">오늘 날짜의 일정이 없습니다.</div>'
+          + '<div class="btn-row today-actions"><a class="btn btn-secondary" href="schedule.html">전체 일정</a></div></div>';
+      } else {
+        panel.innerHTML = '<div class="action-card"><span class="label">TRIP COMPLETED</span>'
+          + '<div class="action-what">43일의 여정을 모두 마쳤습니다.</div>'
+          + '<div class="btn-row today-actions"><a class="btn btn-secondary" href="schedule.html">전체 일정 보기</a></div></div>';
+      }
+    } catch (err) {
+      panel.innerHTML = '<p class="meta">오늘 일정을 불러오지 못했습니다. <a href="schedule.html">전체 일정</a></p>';
     }
   }
 
-  /* ---- Schedule 페이지 — 현재 날짜 기준 지역 감지 및 상단바/탭 활성화 ---- */
+  /* ---- 전체 일정 — in-trip에서 NOW → Future → collapsed Past ---- */
   var schedDataEl = document.getElementById('schedule-regions-data');
-  if (schedDataEl) {
+  var scheduleDataEl = document.getElementById('schedule-data');
+  if (schedDataEl && scheduleDataEl) {
     try {
       var regions = JSON.parse(schedDataEl.textContent);
-      var regBySlug = {};
-      for (var k = 0; k < regions.length; k++) {
-        regBySlug[regions[k].slug] = regions[k];
+      var scheduleTrip = JSON.parse(scheduleDataEl.textContent);
+      var scheduleState = dateState(scheduleTrip);
+      var regionNames = { return: 'Return' };
+      regions.forEach(function (region) { regionNames[region.slug] = region.name; });
+      var topbarTitle = document.querySelector('.topbar .tb-title');
+      if (topbarTitle) {
+        if (scheduleState.tripMode === 'pre-trip') topbarTitle.textContent = 'NEXT · ' + regions[0].name;
+        else if (scheduleState.tripMode === 'post-trip') topbarTitle.textContent = 'Trip Complete';
+        else if (scheduleState.currentRegion) topbarTitle.textContent = regionNames[scheduleState.currentRegion] || scheduleState.currentRegion;
       }
 
-      var now3 = new Date();
-      var iso3 = now3.getFullYear() + '-'
-        + String(now3.getMonth() + 1).padStart(2, '0') + '-'
-        + String(now3.getDate()).padStart(2, '0');
-
-      var curReg = null;
-      var isPreTrip = false;
-      var isPostTrip = false;
-
-      for (var rIdx = 0; rIdx < regions.length; rIdx++) {
-        if (iso3 >= regions[rIdx].start && iso3 <= regions[rIdx].end) {
-          curReg = regions[rIdx];
-          break;
-        }
+      function reducedMotion() {
+        return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       }
-      if (!curReg && regions.length > 0) {
-        if (iso3 < regions[0].start) {
-          curReg = regions[0];
-          isPreTrip = true;
-        } else if (iso3 > regions[regions.length - 1].end) {
-          curReg = regions[regions.length - 1];
-          isPostTrip = true;
-        }
-      }
-
-      // 1. Set topbar title strictly to currentRegion based on device date
-      if (curReg) {
-        var tbTitle = document.querySelector('.topbar .tb-title');
-        if (tbTitle) {
-          if (isPreTrip) {
-            tbTitle.textContent = 'NEXT · ' + curReg.name;
-          } else if (isPostTrip) {
-            tbTitle.textContent = 'Trip Complete · ' + curReg.name;
-          } else {
-            tbTitle.textContent = curReg.name;
-          }
-        }
-      }
-
-      // 2. Manage selected/active region tab (independent of currentRegion title)
       function selectTab(slug) {
-        var allTabs = document.querySelectorAll('.tabs a[href^="#"]');
-        for (var i = 0; i < allTabs.length; i++) {
-          allTabs[i].removeAttribute('aria-current');
-        }
-        var targetTab = document.querySelector('.tabs a[href="#' + slug + '"]');
-        if (targetTab) {
-          targetTab.setAttribute('aria-current', 'page');
+        var tabs = document.querySelectorAll('.tabs a[href^="#"]');
+        for (var i = 0; i < tabs.length; i++) tabs[i].removeAttribute('aria-current');
+        var target = document.querySelector('.tabs a[href="#' + slug + '"]');
+        if (target) {
+          target.setAttribute('aria-current', 'page');
           setTimeout(function () {
-            targetTab.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+            target.scrollIntoView({ inline: 'center', block: 'nearest', behavior: reducedMotion() ? 'auto' : 'smooth' });
           }, 100);
         }
       }
 
-      // Initially select currentRegion tab
-      if (curReg) {
-        selectTab(curReg.slug);
+      if (scheduleState.currentRegion) selectTab(scheduleState.currentRegion);
+      else if (scheduleState.tripMode === 'pre-trip') selectTab(regions[0].slug);
+
+      var canonical = document.getElementById('schedule-canonical');
+      var live = document.getElementById('schedule-live');
+      var pastDetails = document.getElementById('schedule-past');
+      if (scheduleState.tripMode === 'in-trip' && scheduleState.currentDay && canonical && live) {
+        var cards = {};
+        canonical.querySelectorAll('.day-card[data-date]').forEach(function (card) {
+          cards[card.dataset.date] = card;
+        });
+        var nowRoot = document.getElementById('schedule-now');
+        var futureRoot = document.getElementById('schedule-future');
+        var pastRoot = document.getElementById('schedule-past-days');
+        var currentCard = cards[scheduleState.currentDay.date];
+        if (currentCard) {
+          currentCard.setAttribute('aria-current', 'date');
+          nowRoot.appendChild(currentCard);
+        }
+        scheduleState.futureDays.forEach(function (day) {
+          if (cards[day.date]) futureRoot.appendChild(cards[day.date]);
+        });
+        scheduleState.pastDays.forEach(function (day) {
+          if (cards[day.date]) pastRoot.appendChild(cards[day.date]);
+        });
+        document.getElementById('schedule-future-section').hidden = scheduleState.futureDays.length === 0;
+        var pastSummary = document.getElementById('schedule-past-summary');
+        pastSummary.textContent = '지난 일정 ' + scheduleState.pastDays.length + '일 보기';
+        pastSummary.setAttribute('aria-expanded', 'false');
+        pastDetails.addEventListener('toggle', function () {
+          pastSummary.setAttribute('aria-expanded', pastDetails.open ? 'true' : 'false');
+        });
+        canonical.hidden = true;
+        live.hidden = false;
       }
 
-      // When user clicks a region chip, select that tab without changing topbar current-region title
       var tabLinks = document.querySelectorAll('.tabs a[href^="#"]');
       for (var tIdx = 0; tIdx < tabLinks.length; tIdx++) {
-        tabLinks[tIdx].addEventListener('click', function () {
-          var targetSlug = this.getAttribute('href').replace('#', '');
-          selectTab(targetSlug);
+        tabLinks[tIdx].addEventListener('click', function (event) {
+          var slug = this.getAttribute('href').slice(1);
+          selectTab(slug);
+          if (scheduleState.tripMode === 'in-trip' && live && !live.hidden) {
+            var visibleDay = live.querySelector('.day-card[data-day-region="' + slug + '"]');
+            if (visibleDay) {
+              event.preventDefault();
+              if (pastDetails.contains(visibleDay)) pastDetails.open = true;
+              visibleDay.scrollIntoView({ block: 'start', behavior: reducedMotion() ? 'auto' : 'smooth' });
+              history.replaceState(null, '', '#' + slug);
+            }
+          }
         });
       }
     } catch (err) {
-      /* fallback gracefully */
+      /* 정적 canonical 일정이 그대로 fallback이다. */
     }
   }
 
