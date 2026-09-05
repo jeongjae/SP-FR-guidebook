@@ -2350,14 +2350,14 @@ PARIS_MUSEUM_BOOKINGS = [
         "name": "Grand Palais — Cézanne et nous",
         "day": 28,
         "date": "9/25 (금)",
-        "schedule": "특별전 (개막 9/23 직후)",
-        "canonical_status": "book-now",
-        "stage": "1차 · 지금",
-        "when": "판매 시작 즉시",
-        "action_date": "지금",
+        "schedule": "17:00 특별전",
+        "canonical_status": "booked",
+        "stage": "예약 확정",
+        "when": "예약 완료",
+        "action_date": "티켓 저장",
         "pmp": "PMP 비대상 (특별전 별도 티켓)",
         "plan_b": "동일 주간(Day 28~31) 타 시간대 슬롯 조회, 실패 시 오르세/루브르 특별전 우선",
-        "note": "개막 9/23 직후 방문 — 원하는 시간대 조기 선점 필수",
+        "note": "사용자 예약 확정 · 16:45 보안검색 도착",
         "official_url": "https://www.grandpalais.fr/",
     },
     {
@@ -2377,19 +2377,19 @@ PARIS_MUSEUM_BOOKINGS = [
         "official_url": "https://museeduluxembourg.fr/",
     },
     {
-        "id": "musee-de-l-orangerie|2026-09-27|permanent",
+        "id": "musee-de-l-orangerie|2026-09-30|permanent",
         "slug": "musee-de-l-orangerie",
         "name": "Musée de l'Orangerie",
-        "day": 30,
-        "date": "9/27 (일)",
-        "schedule": "상설 및 수련 연작 (시간지정 필수)",
-        "canonical_status": "check-sale",
-        "stage": "2차 · 9월 초",
-        "when": "2~4주 전",
-        "action_date": "8월 말~9월 초",
+        "day": 33,
+        "date": "9/30 (수)",
+        "schedule": "10:00 · 상설 중심",
+        "canonical_status": "booked",
+        "stage": "예약 확정",
+        "when": "예약 완료",
+        "action_date": "티켓 저장",
         "pmp": "PMP 포함 · 시간예약 별도 (PMP 무료 슬롯 예약)",
-        "plan_b": "오르세 복합티켓(Billet jumelé) 또는 PMP 무료 시간지정 슬롯 확보",
-        "note": "Orsay와 결합권 검토",
+        "plan_b": "입장 지연 시 수련을 최우선으로 보고 11:30 종료",
+        "note": "사용자 예약 확정 · Chez Savy 12:15 연결",
         "official_url": "https://www.musee-orangerie.fr/",
     },
     {
@@ -2649,14 +2649,13 @@ def build_paris_museum_booking() -> str:
 
     wave = """
 <div class="prose">
-<p><strong>1차 — 지금 (8/28~8/31):</strong> Grand Palais → Versailles → Orsay 9/29 →
+<p><strong>예약 확정:</strong> Grand Palais 9/25 17:00 · Orangerie 9/30 10:00.</p>
+<p><strong>1차 — 지금 (8/28~8/31):</strong> Versailles → Orsay 9/29 →
 Louvre 10/2 → Bourse de Commerce → Luxembourg → Mary Cassatt(판매 확인).
 단순히 유명한 곳이라서가 아니라, <strong>날짜·시간이 고정되어 있거나 특별전 개막
 직후에 방문</strong>하는 곳들이다. 특히 Versailles 10/1 · Louvre 10/2 · Orsay 9/29는
 파리 일정 전체의 동선을 잡는 기준점이므로 먼저 확정한다.</p>
-<p><strong>2차 — 9/1~9/10:</strong> Orangerie · Jacquemart-André.
-1차가 끝난 뒤 처리한다. Orangerie는 9/27 방문이라 너무 늦출 수는 없지만
-1차만큼 급하지는 않다.</p>
+<p><strong>2차 — 9/1~9/10:</strong> Jacquemart-André. 1차가 끝난 뒤 처리한다.</p>
 <p><strong>3차 — 9/12~9/20 (여행 중):</strong> Gustave Moreau · Rodin ·
 Marmottan · Picasso. 너무 일찍 예약하면 파리 체류 중 날씨·피로도·공연 일정에
 따른 변경 여지가 줄어든다 — 기다리는 것이 오히려 좋다.</p>
