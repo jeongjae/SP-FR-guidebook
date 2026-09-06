@@ -1,12 +1,12 @@
 /* 2026 유럽 여행 가이드북 Service Worker — build.py가 버전을 삽입한다. */
 "use strict";
 
-const VERSION = "eb46c6b2a755b82406abaa0db4f45caf2185de587a352bdc883d4931f760cb42";
+const VERSION = "93ebccd7ef709d5194ddb0d14a8199553ceb46cb8d7b275028896958b664f1e3";
 const CACHE_PREFIX = "sp-fr-guidebook-";
 const CORE_CACHE = CACHE_PREFIX + "core-" + VERSION;
 const FULL_CACHE = CACHE_PREFIX + "full-" + VERSION;
 const RUNTIME_CACHE = CACHE_PREFIX + "runtime-" + VERSION;
-const CORE_PATHS = ["index.html", "offline.html", "offline-fallback.html", "schedule.html", "guide/index.html", "map/index.html", "prepare/index.html", "prepare/emergency.html", "prepare/french.html", "assets/style.4ce070065ea7.css", "assets/app.0e4871d37074.js", "assets/pwa.c64e19689c6f.js", "assets/search-index.bd5fd445a4c9.js"];
+const CORE_PATHS = ["index.html", "offline.html", "offline-fallback.html", "schedule.html", "guide/index.html", "map/index.html", "prepare/index.html", "prepare/emergency.html", "prepare/french.html", "assets/style.4ce070065ea7.css", "assets/app.a855602159b1.js", "assets/pwa.c64e19689c6f.js", "assets/search-index.bd5fd445a4c9.js"];
 const SCOPE = new URL("./", self.registration.scope);
 const COMPLETE_URL = new URL("__pwa_complete__", SCOPE).href;
 let downloadTask = null;
