@@ -63,7 +63,8 @@
       "menu": "살라드 니스와즈, 다우브(소고기 스튜), 팍시(Farcis)",
       "reservation": null,
       "optional": false,
-      "place_ref": "vieux-nice"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "castle-hill",

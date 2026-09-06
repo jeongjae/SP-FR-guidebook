@@ -167,7 +167,8 @@
         }
       ],
       "optional": false,
-      "place_ref": "gordes"
+      "place_ref": null,
+      "place_relation": "context"
     }
   ],
   "legs": [

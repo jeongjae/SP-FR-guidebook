@@ -364,6 +364,11 @@
             "null"
           ]
         },
+        "place_relation": {
+          "type": "string",
+          "enum": ["visit", "context", "transit", "nearby"],
+          "description": "visit만 Place→Day 역링크를 만든다. place_ref가 없을 때 context/transit/nearby 의미를 명시할 수 있다."
+        },
         "related_place_refs": {
           "type": "array",
           "items": {

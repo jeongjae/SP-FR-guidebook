@@ -56,7 +56,8 @@
       ],
       "executionNote": "Les Gorguettes는 무료·연중 운영 P+R이며 372 centre 노선은 연중 운행한다. 373 Presqu’île 노선은 날짜·요일 의존.",
       "optional": false,
-      "place_ref": "cassis"
+      "place_ref": null,
+      "place_relation": "transit"
     },
     {
       "id": "calanques",
@@ -152,7 +153,8 @@
       ],
       "executionNote": "Presqu'île parking을 실제 primary로 선택한 날에는 Port-Miou 이후 차량 회수가 단순해질 수 있으나, 기본 실행안은 Gorguettes + Bus 372이다.",
       "optional": true,
-      "place_ref": "cassis"
+      "place_ref": null,
+      "place_relation": "nearby"
     },
     {
       "id": "cassis-vehicle-return",
@@ -175,7 +177,8 @@
       ],
       "executionNote": "Port-Miou를 생략하면 Chez Gilbert 후 Cassis centre에서 바로 Bus 372로 Gorguettes P+R에 복귀한다. Bus 372 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
       "optional": false,
-      "place_ref": "cassis"
+      "place_ref": null,
+      "place_relation": "transit"
     },
     {
       "id": "aix-return",

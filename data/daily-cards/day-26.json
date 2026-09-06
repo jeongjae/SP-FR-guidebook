@@ -113,7 +113,8 @@
       "executionNote": "Chez Mamie Lise에서 도보 5분. Pont des Amours에서 Jardins de l'Europe 거목 산책로를 거쳐 호숫가 기본 산책.",
       "officialUrl": "https://www.lac-annecy.com/",
       "optional": false,
-      "place_ref": "annecy"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "annecy-cruise",

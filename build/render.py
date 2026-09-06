@@ -1991,6 +1991,8 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
                 reg_slug = stop_region_slug(d, s)
                 if reg_slug != r.slug:
                     continue
+                if getattr(s, "place_relation", "visit") != "visit":
+                    continue
                 item_key = s.place.slug if s.place else s.id
                 if item_key in seen:
                     continue
@@ -2031,6 +2033,8 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
             for s in d.stops:
                 reg_slug = stop_region_slug(d, s)
                 if reg_slug != r.slug:
+                    continue
+                if getattr(s, "place_relation", "visit") != "visit":
                     continue
                 item_key = s.place.slug if s.place else s.id
                 if item_key in r_seen:

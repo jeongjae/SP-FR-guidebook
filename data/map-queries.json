@@ -3,6 +3,13 @@
   "verifiedAt": "2026-09-06",
   "note": "구글맵 이름 검색어. 좌표가 아니라 이름으로 여는 것이 정확한 대상만 싣는다. 여기 없으면 좌표·주소로 폴백한다.",
   "places": {
+    "arc-de-triomphe": {
+      "query": "Arc de Triomphe, Place Charles de Gaulle, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Arc de Triomphe",
+      "evidence": "https://www.paris-arc-de-triomphe.fr/",
+      "verifiedAt": "2026-09-07"
+    },
     "abbaye-de-senanque": {
       "query": "Abbaye Notre-Dame de Sénanque, Gordes",
       "verdict": "FOUND",
@@ -344,6 +351,13 @@
       "resolvedName": "Goult",
       "evidence": "https://fr.wikipedia.org/wiki/Goult",
       "verifiedAt": "2026-08-22"
+    },
+    "conciergerie": {
+      "query": "Conciergerie, 2 Boulevard du Palais, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Conciergerie",
+      "evidence": "https://www.paris-conciergerie.fr/",
+      "verifiedAt": "2026-09-07"
     },
     "grand-palais": {
       "query": "Grand Palais, Paris",
@@ -894,6 +908,20 @@
       "resolvedName": "Place aux Herbes",
       "evidence": "https://www.tripadvisor.com/",
       "verifiedAt": "2026-08-22"
+    },
+    "montmartre-south-pigalle": {
+      "query": "Montmartre, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Montmartre",
+      "evidence": "https://parisjetaime.com/eng/article/montmartre-village-in-paris-a741",
+      "verifiedAt": "2026-09-07"
+    },
+    "sainte-chapelle": {
+      "query": "Sainte-Chapelle, 10 Boulevard du Palais, Paris",
+      "verdict": "FOUND",
+      "resolvedName": "Sainte-Chapelle",
+      "evidence": "https://www.sainte-chapelle.fr/",
+      "verifiedAt": "2026-09-07"
     },
     "versailles": {
       "query": "Château de Versailles, Versailles",

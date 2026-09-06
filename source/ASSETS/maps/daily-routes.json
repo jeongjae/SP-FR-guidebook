@@ -1870,26 +1870,20 @@
           "note": "Avenue Montaigne 명품 플래그십과 공개 거리 분위기를 따라 걷는다"
         },
         {
-          "placeId": "grand-palais",
-          "order": 4,
-          "plannedTime": "14:00–14:25",
-          "note": "Grand Palais 주변의 공식 공개 공간과 거리 동선만 확인하고 초청제 쇼 입장은 기대하지 않는다"
-        },
-        {
           "placeId": "musee-guimet",
-          "order": 5,
+          "order": 4,
           "plannedTime": "14:40–16:20",
           "note": "간다라·크메르·동아시아 컬렉션을 PMP 유효기간 안에 집중 관람한다."
         },
         {
           "placeId": "palais-de-tokyo",
-          "order": 6,
+          "order": 5,
           "plannedTime": "16:30–17:45",
           "note": "Avenue du Président Wilson의 공개 동선을 따라 Palais de Tokyo의 건축·공공공간을 보고 Alma와 센 강변에서 마무리한다"
         },
         {
           "placeId": "paris-15e-stay-area",
-          "order": 7,
+          "order": 6,
           "plannedTime": "19:30–21:30",
           "note": "숙소에서 도보 4분. Menu du Marché €32면 전채·메인·디저트가 다 들어온다. 조용한 평일 저녁에 15구의 제대로 된 한 끼를 넣는 자리다"
         }
@@ -1915,12 +1909,6 @@
         },
         {
           "from": "avenue-montaigne",
-          "to": "grand-palais",
-          "mode": "walking",
-          "manual": true
-        },
-        {
-          "from": "grand-palais",
           "to": "musee-guimet",
           "mode": "walking",
           "manual": true

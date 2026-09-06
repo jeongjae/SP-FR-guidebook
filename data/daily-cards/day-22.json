@@ -73,7 +73,8 @@
       "menu": "프로방스 타파스, 제철 샐러드",
       "reservation": null,
       "optional": false,
-      "place_ref": "palais-des-papes"
+      "place_ref": null,
+      "place_relation": "nearby"
     },
     {
       "id": "rocher-doms",

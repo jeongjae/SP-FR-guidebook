@@ -132,7 +132,8 @@
       "executionNote": "공식 확인된 공개 행사와 거리 분위기만 체험하며 비공개 쇼 동선을 방해하지 않는다.",
       "officialUrl": "https://www.grandpalais.fr/",
       "optional": true,
-      "place_ref": "grand-palais"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "musee-guimet",

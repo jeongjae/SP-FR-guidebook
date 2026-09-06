@@ -67,7 +67,8 @@
       "menu": "라타투유, 도브 프로방살, 로제 와인",
       "reservation": "현장 방문 또는 점심 예약 권장",
       "optional": false,
-      "place_ref": "vieil-aix"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "atelier-des-lauves",

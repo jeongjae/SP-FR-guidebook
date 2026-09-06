@@ -110,7 +110,8 @@
       "menu": "파니스(Panisse), 정어리 구이, 생선 수프",
       "reservation": "현장 선택",
       "optional": false,
-      "place_ref": "vieux-port-marseille"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "notre-dame-de-la-garde",

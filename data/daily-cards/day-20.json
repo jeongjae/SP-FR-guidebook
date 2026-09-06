@@ -100,7 +100,8 @@
       "menu": "바게트 샌드위치, 샐러드, 에스프레소",
       "reservation": null,
       "optional": false,
-      "place_ref": "pont-du-gard"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "arenes-de-nimes",

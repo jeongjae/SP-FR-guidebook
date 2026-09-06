@@ -229,6 +229,7 @@ class Stop:
     # 많다 — 같은 장소를 하루에 두 번 들르거나(cannes-transfer/cannes-station),
     # stop 이 장소의 일부일 때(sant-pau → sant-pau-recinte-modernista).
     place_ref: str | None = None
+    place_relation: str = "visit"  # visit | context | transit | nearby
     # 한 stop 이 두 장소를 함께 담을 때가 있다. Day 13 08:30 이
     # 'Place Richelme 목요 시장 & Pâtisserie Weibel' 인 것처럼 —
     # 시간표를 쪼개는 것이 답이 아니라(한 블록에서 둘 다 본다) 참조를
@@ -709,6 +710,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 official_url=s.get("officialUrl"),
                 address=s.get("address"),
                 place_ref=s.get("place_ref"),
+                place_relation=s.get("place_relation", "visit"),
                 related_place_refs=list(s.get("related_place_refs") or []),
             ) for s in j.get("stops", [])],
             legs=[Leg(
@@ -1034,6 +1036,10 @@ def validate(trip: Trip) -> list[str]:
     # 이 필드를 읽지 않아서, 식당 34곳이 어디서도 닿을 수 없는 페이지가 됐다.
     for d in trip.days:
         for s in d.stops:
+            if s.place_ref and s.place_relation != "visit":
+                problems.append(
+                    f"Day {d.n}: non-visit stop은 place_ref를 가질 수 없다 — "
+                    f"{s.id} ({s.place_relation})")
             for ref in s.related_place_refs:
                 if ref not in trip.places:
                     problems.append(

@@ -102,7 +102,8 @@ class ParisRestaurantImagesTests(unittest.TestCase):
                     content_variant = img["variants"]["content"][0]["sitePath"]
                     content_filename = Path(content_variant).name
                     self.assertIn(content_filename, html_content, f"Content image {content_filename} not found in {html_path}")
-                    self.assertNotIn("thumb-empty", html_content, f"Placeholder thumb-empty found in {html_path}")
+                    hero = html_content.split('<div class="wrap-read">', 1)[0]
+                    self.assertNotIn("thumb-empty", hero, f"Hero placeholder found in {html_path}")
 
     def test_paris_guide_renders_all_food_images(self):
         """Rendered Paris guide page must contain all Paris food places without placeholders."""

@@ -45,7 +45,6 @@ class MapDataValidationTests(unittest.TestCase):
                 "musee-de-l-orangerie",
                 "chez-savy",
                 "avenue-montaigne",
-                "grand-palais",
                 "musee-guimet",
                 "palais-de-tokyo",
                 "paris-15e-stay-area",

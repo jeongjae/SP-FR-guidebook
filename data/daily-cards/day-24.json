@@ -108,7 +108,8 @@
       "executionNote": "저녁 Daniel et Denise 정통 부숑 코스가 예정되어 있으므로 점심은 과식하지 않고 가볍게 진행한다.",
       "officialUrl": null,
       "optional": false,
-      "place_ref": "vieux-lyon"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "vieux-lyon",

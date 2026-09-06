@@ -209,9 +209,9 @@ class ExecutionUxBatch04Tests(unittest.TestCase):
     def test_day16_to_19_itinerary_semantics_are_unchanged(self):
         # RS01(2026-08-28) 재기준선 — Cassis(16)·Lacoste 이동일(17)·화요시장(18)·통합 도착일(19)
         expected = {
-            16: "10187dd390d6a133cf1f7ab2abb95e27d0a1547f7bd6e22f49a732b90f0fbce6",
+            16: "049be12552f982701209b7e7c275ba141098cd078e61b079bf00e037990335ed",
             17: "057c8cbeeb82bb2dd548b26e2f92493123aa69c6600cb42c4899568dcadc1b00",
-            18: "12fe84b6c1045f0c96fb1e8301e66ddeac996fb05018f0564a8301613687e1e3",
+            18: "56e05bb501dca4b2d5dd05c7c9dd7f7a38b7a1d81a5979bdde15e222505c772f",
             19: "db799c436b511b83ffe007aa2fdb7afde3f567f5772e7881c701c864158478a6",
         }
         for number, digest in expected.items():

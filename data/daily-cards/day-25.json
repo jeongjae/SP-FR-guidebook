@@ -66,7 +66,8 @@
       "executionNote": "10-12 Rue d'Ivry, 69004 Lyon (Croix-Rousse역 도보 3분). 화요일 10:00–18:00 개관.",
       "officialUrl": "https://www.maisondescanuts.fr/",
       "optional": false,
-      "place_ref": "croix-rousse"
+      "place_ref": null,
+      "place_relation": "nearby"
     },
     {
       "id": "halles-gastronomy",
@@ -108,7 +109,8 @@
       "executionNote": "저녁 숙소식 또는 익일 안시 당일치기용 보존식(치즈·샤퀴테리) 소량 구매.",
       "officialUrl": "https://www.halles-de-lyon-paulbocuse.com/",
       "optional": false,
-      "place_ref": "halles-de-lyon-paul-bocuse"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "tete-dor",

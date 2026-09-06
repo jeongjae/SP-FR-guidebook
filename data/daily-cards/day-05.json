@@ -83,7 +83,8 @@
       "reservation": null,
       "optional": false,
       "executionStatuses": [],
-      "place_ref": "collioure"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "cadaques",

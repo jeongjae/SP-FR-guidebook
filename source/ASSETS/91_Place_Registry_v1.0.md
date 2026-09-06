@@ -175,8 +175,10 @@
 | 슬러그 | 이름 | 타입 | 등급 | 지도 핀 | 본문 | 헤딩 | 위키 |
 |---|---|---|---|---|---|---|---|
 | `bnf-richelieu` | BnF Richelieu | spot | 우선 추천 | BnF Richelieu | chapters/paris/places.html | BnF Richelieu | Bibliothèque nationale de France |
+| `arc-de-triomphe` | Arc de Triomphe | spot | 선택 | Arc de Triomphe | chapters/paris/places.html | Arc de Triomphe | Arc de Triomphe |
 | `bourse-de-commerce-pinault-collection` | Bourse de Commerce — Pinault Collection | spot | 필수 | Bourse de Commerce | chapters/paris/places.html | Bourse de Commerce — Pinault Collection | Bourse de Commerce |
 | `centre-pompidou` | Centre Pompidou | spot | 비추천 | — | chapters/paris/places.html | Centre Pompidou | Centre Pompidou |
+| `conciergerie` | Conciergerie | spot | 필수 | Conciergerie | chapters/paris/places.html | Conciergerie | Conciergerie |
 | `giverny` | Giverny | spot | 우선 추천 | Giverny | chapters/paris/places.html | Giverny — Day 41 A안 | Giverny |
 | `grand-palais` | Grand Palais | spot | 필수 | Grand Palais | chapters/paris/places.html | Cezanne et nous — Grand Palais | Grand Palais |
 | `latin-quarter` | Latin Quarter | spot | 필수 | — | chapters/paris/places.html | Latin Quarter | Latin Quarter, Paris |
@@ -197,6 +199,7 @@
 | `musee-rodin` | Musée Rodin | spot | 필수 | Rodin | chapters/paris/places.html | Musée Rodin | Musée Rodin |
 | `notre-dame-de-paris` | Notre-Dame de Paris | spot | 필수 | Notre-Dame | chapters/paris/places.html | Notre-Dame de Paris | Notre-Dame de Paris |
 | `petit-palais` | Petit Palais | spot | 필수 | Petit Palais | chapters/paris/places.html | Petit Palais | Petit Palais |
+| `sainte-chapelle` | Sainte-Chapelle | spot | 필수 | Sainte-Chapelle | chapters/paris/places.html | Sainte-Chapelle | Sainte-Chapelle |
 | `versailles` | Versailles | spot | 필수 | Versailles | chapters/paris/places.html | Versailles — Day 36 A안 | Palace of Versailles |
 | `boulangerie-pichard` | Boulangerie Pichard | spot | 필수 | Boulangerie Pichard | chapters/paris/places.html | Boulangerie Pichard | — |
 | `marche-convention` | Marché Convention | spot | 필수 | Marché Convention | chapters/paris/places.html | Marché Convention | — |

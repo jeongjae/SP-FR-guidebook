@@ -154,7 +154,7 @@ class ExecutionUxBatch05Tests(unittest.TestCase):
     def test_day20_to_23_semantics_are_protected(self):
         payload = [semantic_projection(load_day(number)) for number in range(20, 24)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("3a057fa3cec772f44aed637aad7f6ad098ee6a90139ecc03a3dc21e8443b3b28", digest)
+        self.assertEqual("95b39cba745751dca83ec3d2f42f57c82ab4a0d8cadfa95ff5ff9ff1bc51eac4", digest)
 
 
 if __name__ == "__main__":

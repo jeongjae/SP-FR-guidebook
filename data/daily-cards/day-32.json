@@ -42,7 +42,8 @@
       "executionNote": "08:30 숙소 출발 ➔ Javel역 도보 10분 ➔ RER C 탑승 ➔ Versailles Château Rive Gauche역 09:15 도착 ➔ 궁전 정문 도보 10분.",
       "officialUrl": "https://www.ratp.fr/",
       "optional": false,
-      "place_ref": "versailles"
+      "place_ref": null,
+      "place_relation": "transit"
     },
     {
       "id": "versailles-palace",
@@ -114,7 +115,8 @@
       "executionNote": "라토나 분수 ➔ 아폴론 분수 ➔ 숲길(Bosquets) 산책.",
       "officialUrl": "https://www.chateauversailles.fr/",
       "optional": false,
-      "place_ref": "versailles"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "trianon-hamlet",
@@ -138,7 +140,8 @@
       "executionNote": "Passport 티켓 포함. 12:00 이후 개관. 피로 시 미니트레인 이용 권장.",
       "officialUrl": "https://www.chateauversailles.fr/",
       "optional": true,
-      "place_ref": "versailles"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "paris-return",

@@ -66,7 +66,7 @@
       "executionNote": "14:45 보안검색 도착. PMP QR을 오프라인 저장.",
       "officialUrl": "https://www.sainte-chapelle.fr/",
       "optional": false,
-      "place_ref": null
+      "place_ref": "sainte-chapelle"
     },
     {
       "id": "conciergerie",
@@ -90,7 +90,7 @@
       "executionNote": "두 시설 사이 보안 재진입 시간을 고려한다.",
       "officialUrl": "https://www.paris-conciergerie.fr/",
       "optional": false,
-      "place_ref": null
+      "place_ref": "conciergerie"
     },
     {
       "id": "cite-seine-walk",
@@ -216,9 +216,7 @@
     ],
     "routeCache": null
   },
-  "needsReview": [
-    "Musée du Luxembourg 13:00 슬롯 예매 확인"
-  ],
+  "needsReview": [],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-3-9월26일",
     "OSM Nominatim 지오코딩 2026-08-06: Saint-Germain·Luxembourg·Pont Neuf"
