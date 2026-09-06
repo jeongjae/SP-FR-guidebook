@@ -8,8 +8,15 @@
      먼저 것을 null 로 덮었고, Day 페이지의 지도가 통째로 열리지 않았다.
      블록마다 이름을 달리 짓는다. */
 
-  var rel = document.querySelector('link[rel=stylesheet]').getAttribute('href')
-              .replace(/assets\/style\.css$/, '').replace(/\/$/, '') || '.';
+  /* 페이지 상대 루트는 빌드가 이미 알고 있다. fingerprint 된 CSS 파일명에서
+     역산하면 asset naming 변경이 곧 모든 동적 링크의 404 로 이어진다. */
+  var siteRoot = (document.body.getAttribute('data-site-root') || '.')
+                   .replace(/\/+$/, '') || '.';
+
+  function resolveSiteUrl(relativePath) {
+    var path = String(relativePath || '').replace(/^(?:\.\/|\/)+/, '');
+    return siteRoot + '/' + path;
+  }
 
   /* ---- 뒤로가기 — 이력이 있을 때만 보인다 ---- */
   var back = document.querySelector('.tb-back');
@@ -55,7 +62,7 @@
     }).slice(0, 30);
     results.innerHTML = hits.length
       ? hits.map(function (r) {
-          return '<a class="search-result" href="' + rel + '/' + r.u + '">'
+          return '<a class="search-result" href="' + resolveSiteUrl(r.u) + '">'
             + '<span class="sr-title">' + r.t + '</span>'
             + '<span class="sr-path">' + (KIND[r.k] || r.k)
             + (r.x ? ' · ' + r.x : '') + '</span></a>';

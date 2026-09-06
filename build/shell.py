@@ -178,7 +178,7 @@ def page(*, title: str, body: str, rel: str, tab: str,
 <link rel="icon" type="image/png" sizes="192x192" href="{rel}/assets/pwa/icon-192.png">
 {MAPS_META}{extra_head}<link rel="stylesheet" href="{rel}/{ASSET_STYLE}">
 </head>
-<body{region_attr}{bar_center}>
+<body data-site-root="{esc(rel)}"{region_attr}{bar_center}>
 <a href="#main" class="visually-hidden">본문으로 건너뛰기</a>
 <header class="topbar">
   <button class="tb-back" type="button" aria-label="이전 페이지로" hidden>{ic("back")}</button>
