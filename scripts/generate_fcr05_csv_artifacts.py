@@ -78,12 +78,12 @@ meal_slots = [
     ["Day 30", "Dinner", "Art Nouveau Bouillon", "Bouillon Chartier Montparnasse (1903 역사기념물 부이용)", "bouillon-chartier-montparnasse", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "몽파르나스 크레페 골목"],
     ["Day 31", "Lunch", "Market Sandwich", "Boulangerie Pichard 바게트 샌드위치", "boulangerie-pichard", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "숙소 샐러드"],
     ["Day 31", "Dinner", "Home Meal", "기메/자크마르 후 숙소 저녁 식사", "carrefour-city-lourmel", "RECOMMENDED", "SELF_CATERING", "D — HOME / SELF-CATERING", "동네 비스트로"],
-    ["Day 32", "Lunch", "Home Lunch", "BnF 도서관 외출 전 가벼운 점심", "boulangerie-pichard", "RECOMMENDED", "SELF_CATERING", "D — HOME / SELF-CATERING", "도서관 인근 샌드위치"],
-    ["Day 32", "Dinner", "15e Brasserie Dinner", "Café du Commerce 동네 저녁", "cafe-du-commerce", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "숙소 간단식"],
+    ["Day 32", "Lunch", "Versailles Day-trip Lunch", "베르사유 대운하 La Flottille", "versailles", "RECOMMENDED", "PRIMARY", "B — AREA-BASED WITH STRONG OPTIONS", "정원 키오스크"],
+    ["Day 32", "Dinner", "15e Bistronomie Dinner", "Le Grand Pan 숯불 스테이크", "le-grand-pan", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "Café du Commerce"],
     ["Day 33", "Lunch", "Fashion Week Quick Lunch", "샹젤리제/몽테뉴 인근 카페 점심", "grand-palais", "RECOMMENDED", "PRIMARY", "B — AREA-BASED WITH STRONG OPTIONS", "프티 팔레 가든 카페"],
     ["Day 33", "Dinner", "Rest Dinner", "숙소 복귀 후 가벼운 저녁", "carrefour-city-lourmel", "RECOMMENDED", "SELF_CATERING", "D — HOME / SELF-CATERING", "숙소 인근 간단식"],
-    ["Day 34", "Lunch", "Versailles Day-trip Lunch", "베르사유 대운하 인근 라 플로틸(La Flottille)", "versailles", "RECOMMENDED", "PRIMARY", "B — AREA-BASED WITH STRONG OPTIONS", "베르사유 정원 키오스크 샌드위치"],
-    ["Day 34", "Dinner", "15e Bistronomie Dinner", "Le Grand Pan (브누아 고티에 숯불 스테이크)", "le-grand-pan", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "Café du Commerce"],
+    ["Day 34", "Lunch", "Left Bank Art Lunch", "Café Varenne", "cafe-varenne", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "로댕 카페"],
+    ["Day 34", "Dinner", "15e Brasserie Dinner", "Café du Commerce 동네 저녁", "cafe-du-commerce", "RECOMMENDED", "PRIMARY", "A — SPECIFIC & VERIFIED", "숙소 간단식"],
     ["Day 35", "Lunch", "Home Lunch", "루브르 4시간 관람 전 든든한 숙소 점심", "boulangerie-pichard", "RECOMMENDED", "SELF_CATERING", "D — HOME / SELF-CATERING", "루브르 지하 카페"],
     ["Day 35", "Dinner", "Rest Dinner", "루브르 관람 후 센 강변 산책 & 숙소 저녁", "carrefour-city-lourmel", "RECOMMENDED", "SELF_CATERING", "D — HOME / SELF-CATERING", "15구 동네 비스트로"],
     ["Day 36", "Lunch", "Home Lunch", "마르모탕 모네 전 숙소 점심 & 휴식", "marche-convention", "RECOMMENDED", "SELF_CATERING", "D — HOME / SELF-CATERING", "파시 지구 카페"],
@@ -115,7 +115,7 @@ pattern_data = [
     ["Day 31", "LOCAL-LIVING", "피샤르 빵집 아침", "바게트 샌드위치 점심", "숙소 저녁", "LOW", "기메/자크마르 여유 산책"],
     ["Day 32", "LOCAL-LIVING", "숙소 아침", "숙소 점심", "Café du Commerce 동네 저녁", "LOW", "BnF 리슐리외 탐방"],
     ["Day 33", "EVENT", "숙소 아침", "샹젤리제/몽테뉴 카페 점심", "숙소 저녁", "MODERATE", "패션위크 축제 분위기"],
-    ["Day 34", "DAY-TRIP", "숙소 빠른 아침", "베르사유 대운하 런치", "Le Grand Pan 숯불 비스트로", "HIGH", "베르사유 투어 후 푸짐한 만찬"],
+    ["Day 32", "DAY-TRIP", "숙소 빠른 아침", "베르사유 대운하 런치", "Le Grand Pan 숯불 비스트로", "HIGH", "베르사유 투어 후 푸짐한 만찬"],
     ["Day 35", "MUSEUM-AFTERNOON", "피샤르 빵집 아침", "숙소 든든한 점심", "센 강변 일몰 후 숙소 저녁", "MODERATE", "루브르 4시간 집중 관람"],
     ["Day 36", "RECOVERY", "Marché Convention 아침", "숙소 점심 & 휴식", "익일 경마 대비 조기 귀환 숙소식", "LOW", "마르모탕 모네 여유 관람"],
     ["Day 37", "EVENT", "숙소 아침", "파리롱샹 경마장 런치", "숙소 저녁 & 휴식", "HIGH", "개선문상 본선 스포츠 앵커"],
@@ -144,7 +144,7 @@ with open("FCR05_PARIS_EVENT_DINING_AUDIT.csv", "w", newline="", encoding="utf-8
 
 # 9. Day-trip Food Audit
 daytrip_data = [
-    ["Day 34", "Versailles (베르사유 궁전 & 대정원)", "08:30-17:30", "La Flottille (대운하 인근 식당)", "정원 키오스크 샌드위치", "12:30-13:30 (궁전 본관 후 정원 이동 시)", "15구 귀환 후 Le Grand Pan 만찬 (20:00 예약)"]
+    ["Day 32", "Versailles (베르사유 궁전 & 대정원)", "08:30-17:00", "La Flottille (대운하 인근 식당)", "정원 키오스크 샌드위치", "12:45-13:30 (궁전 본관 후 정원 이동 시)", "15구 귀환 후 Le Grand Pan 만찬 (20:00 예약)"]
 ]
 with open("FCR05_PARIS_DAYTRIP_FOOD_AUDIT.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
@@ -157,7 +157,7 @@ link_data = [
     ["Day 28", "paris-return", "Café du Commerce 15구 브라세리 첫 저녁", "cafe-du-commerce", "YES", "VALID", "오리 다리 콩피, 샤롤레 소고기 스테이크 프릿, 프로피테롤", "€22~€35", "1921년 3층 아르데코 브라세리"],
     ["Day 29", "morning-routine", "Marché Convention 일요 노천시장 장보기", "marche-convention", "YES", "VALID", "로티세리 치킨 & 감자 구이, 콩테 치즈, 제철 과일", "€5~€15", "15구 전통 일요시장"],
     ["Day 30", "paris-return", "Bouillon Chartier Montparnasse 저녁", "bouillon-chartier-montparnasse", "YES", "VALID", "에스카르고, 뵈프 부르기뇽, 초콜릿 무스", "€15~€22", "1903년 역사기념물 부이용 18:30 방문"],
-    ["Day 34", "paris-return", "Le Grand Pan 15구 비스트로 저녁", "le-grand-pan", "YES", "VALID", "샤롤레 소 티본 스테이크 숯불구이, 송아지 흉선 요리", "€45~€65", "베르사유 투어 후 20:00 예약"],
+    ["Day 32", "paris-return", "Le Grand Pan 15구 비스트로 저녁", "le-grand-pan", "YES", "VALID", "샤롤레 소 티본 스테이크 숯불구이, 송아지 흉선 요리", "€45~€65", "베르사유 투어 후 20:00 예약"],
     ["Day 41", "farewell-dinner", "Le Grand Pan 파리 15박 고별 만찬", "le-grand-pan", "YES", "VALID", "Côte de boeuf 2인 숯불구이, 제철 그물버섯, 바스크 디저트", "€50~€70", "파리 15박 대미를 장식하는 고별 디너 20:00 예약"],
     ["Day 42", "farewell-lunch", "Café du Commerce 15구 마지막 점심", "cafe-du-commerce", "YES", "VALID", "가벼운 브라세리 런치, 샐러드, 커피", "€19~€25", "체크아웃 후 공항 이동 전 점심"]
 ]
@@ -175,7 +175,7 @@ route_data = [
     ["Day 31", "피샤르 빵집 ➔ Musée Guimet (기메) ➔ 자크마르-앙드레 ➔ 숙소 저녁", "7시간", "메트로 9호선 + 도보", "대중교통 + 도보", "2", "LOW", "PASS", "60", "동양미술과 저택 미술관 여유 관람 후 숙소 휴식"],
     ["Day 32", "숙소 아침/점심 ➔ BnF Richelieu (오발 열람실) ➔ 팔레 루아얄 ➔ Café du Commerce 저녁", "7시간 30분", "메트로 8/14호선 + 도보", "대중교통 + 도보", "2", "LOW", "PASS", "60", "도서관 관람 후 동네 브라세리 귀환 저녁"],
     ["Day 33", "Petit Palais ➔ 샹젤리제 점심 ➔ Fashion Week 몽테뉴 축제 ➔ 숙소 저녁", "8시간", "메트로 1/9호선 + 도보", "대중교통 + 도보", "3", "MODERATE", "PASS", "45", "패션위크 축제 분위기 체험 후 숙소 조기 복귀"],
-    ["Day 34", "RER C ➔ Versailles (베르사유 전일 투어) ➔ 15구 귀환 ➔ Le Grand Pan 저녁 (20:00)", "9시간", "RER C 왕복 + 정원 도보 8km", "철도 + 도보", "4", "HIGH", "PASS", "60", "베르사유 투어 후 숙소 샤워 및 20:00 숯불 비스트로 만찬"],
+    ["Day 32", "RER C ➔ Versailles (베르사유 전일 투어) ➔ 15구 귀환 ➔ Le Grand Pan 저녁 (20:00)", "13시간", "RER C 왕복 + 정원 도보 7km", "철도 + 도보", "4", "HIGH", "PASS", "60", "베르사유 투어 후 20:00 숯불 비스트로 만찬"],
     ["Day 35", "피샤르 빵집 ➔ 숙소 든든한 점심 ➔ Musée du Louvre (루브르 4시간) ➔ 센 강 일몰 ➔ 숙소 저녁", "8시간", "메트로 1/8호선 + 박물관 도보", "대중교통 + 도보", "3", "MODERATE", "PASS", "45", "루브르 집중 관람 후 숙소 복귀 & 가벼운 저녁"],
     ["Day 36", "Marché Convention 장보기 ➔ 숙소 점심 ➔ Musée Marmottan Monet ➔ 파시 산책 ➔ 숙소 저녁", "7시간", "메트로 9호선 + 도보", "대중교통 + 도보", "2", "LOW", "PASS", "60", "모네 걸작 관람 후 익일 경마 대비 체력 비축"],
     ["Day 37", "ParisLongchamp (개선문상 경마 대회) ➔ 경기장 점심 ➔ 15구 귀환 ➔ 숙소 저녁 & 휴식", "8시간", "메트로 10호선 + 셔틀버스", "대중교통 + 셔틀", "4", "HIGH", "PASS", "60", "세계 최고 경마 대회 관람 후 숙소에서 편안한 휴식"],

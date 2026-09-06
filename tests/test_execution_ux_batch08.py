@@ -55,48 +55,20 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
             self.assertEqual(day_type, self.day(number).day_type)
             self.assertEqual([], list(validator.iter_errors(load_day(number))))
 
-    def test_day32_orsay_and_rodin(self):
+    def test_day32_versailles_excursion(self):
         payload = load_day(32)
         stops = {stop["id"]: stop for stop in payload["stops"]}
-
-        # Early start check
-        morning_statuses = {s["type"] for s in stops["morning-routine"]["executionStatuses"]}
-        self.assertIn("check", morning_statuses)
-
-        # Musée d'Orsay timed entry book & Entrée 1 - Quai
-        orsay_statuses = {s["type"] for s in stops["musee-d-orsay"]["executionStatuses"]}
-        self.assertIn("book", orsay_statuses)
-        self.assertNotIn("confirmed", orsay_statuses)
-        orsay_detail = stops["musee-d-orsay"]["executionStatuses"][0]["detail"]
-        self.assertIn("Entrée 1 - Quai", orsay_detail)
-        self.assertNotIn("Entrée A1", orsay_detail)
-        self.assertNotIn("Entrée A1", stops["musee-d-orsay"]["executionNote"])
-
-        # Café Varenne lunch check (not confirmed)
-        lunch_statuses = {s["type"] for s in stops["rue-du-bac-lunch"]["executionStatuses"]}
-        self.assertIn("check", lunch_statuses)
-        self.assertNotIn("confirmed", lunch_statuses)
-
-        # Musée Rodin timed ticket
-        rodin_statuses = {s["type"] for s in stops["musee-rodin"]["executionStatuses"]}
-        self.assertIn("ticket", rodin_statuses)
-        self.assertNotIn("confirmed", rodin_statuses)
-
-        # Invalides exterior is optional
-        self.assertTrue(stops["invalides-exterior"]["optional"])
-        invalides_statuses = {s["type"] for s in stops["invalides-exterior"]["executionStatuses"]}
-        self.assertIn("optional", invalides_statuses)
-
-        # Café du Commerce dinner check
-        dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
-        self.assertIn("check", dinner_statuses)
-        self.assertNotIn("confirmed", dinner_statuses)
-
+        self.assertIn("check", {s["type"] for s in stops["versailles-transfer"]["executionStatuses"]})
+        self.assertIn("book", {s["type"] for s in stops["versailles-palace"]["executionStatuses"]})
+        self.assertIn("book", {s["type"] for s in stops["versailles-lunch"]["executionStatuses"]})
+        self.assertTrue(stops["trianon-hamlet"]["optional"])
+        self.assertIn("book", {s["type"] for s in stops["paris-return"]["executionStatuses"]})
         rendered = self.rendered(32)
-        self.assertIn("Orsay", rendered)
-        self.assertIn("Café Varenne", rendered)
-        self.assertIn("Rodin", rendered)
-        self.assertIn("Invalides", rendered)
+        self.assertIn("Versailles", rendered)
+        self.assertIn("La Flottille", rendered)
+        self.assertIn("Trianon", rendered)
+        self.assertIn("Le Grand Pan", rendered)
+        self.assertNotIn("Musée d&#x27;Orsay", rendered)
 
     def test_day33_orangerie_and_fashion_week(self):
         payload = load_day(33)
@@ -121,6 +93,7 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
         fw_statuses = {s["type"] for s in stops["grand-palais-fashion-week"]["executionStatuses"]}
         self.assertIn("optional", fw_statuses)
         self.assertTrue(stops["palais-de-tokyo"]["optional"])
+        self.assertEqual("14:40", stops["musee-guimet"]["start"])
 
         # Stéphane Martin dinner booking
         dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
@@ -134,43 +107,21 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
         self.assertIn("Palais de Tokyo", rendered)
         self.assertIn("Stéphane Martin", rendered)
 
-    def test_day34_versailles_excursion(self):
+    def test_day34_orsay_and_rodin(self):
         payload = load_day(34)
         stops = {stop["id"]: stop for stop in payload["stops"]}
-
-        # RER C transfer check
-        transfer_statuses = {s["type"] for s in stops["versailles-transfer"]["executionStatuses"]}
-        self.assertIn("check", transfer_statuses)
-
-        # Versailles Palace 10:00 timed entry book
-        palace_statuses = {s["type"] for s in stops["versailles-palace"]["executionStatuses"]}
-        self.assertIn("book", palace_statuses)
-        self.assertNotIn("confirmed", palace_statuses)
-
-        # La Flottille Grand Canal lunch booking
-        lunch_statuses = {s["type"] for s in stops["versailles-lunch"]["executionStatuses"]}
-        self.assertIn("book", lunch_statuses)
-        self.assertNotIn("confirmed", lunch_statuses)
-
-        # Versailles gardens check
-        garden_statuses = {s["type"] for s in stops["versailles-gardens"]["executionStatuses"]}
-        self.assertIn("check", garden_statuses)
-
-        # Trianon & Hamlet is optional
-        self.assertTrue(stops["trianon-hamlet"]["optional"])
-        trianon_statuses = {s["type"] for s in stops["trianon-hamlet"]["executionStatuses"]}
-        self.assertIn("optional", trianon_statuses)
-
-        # Le Grand Pan dinner booking
-        dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
-        self.assertIn("book", dinner_statuses)
-        self.assertNotIn("confirmed", dinner_statuses)
-
+        self.assertEqual("10:30", stops["musee-d-orsay"]["start"])
+        self.assertIn("confirmed", {s["type"] for s in stops["musee-d-orsay"]["executionStatuses"]})
+        self.assertNotIn("book", {s["type"] for s in stops["musee-d-orsay"]["executionStatuses"]})
+        self.assertEqual("14:15", stops["musee-rodin"]["start"])
+        self.assertIn("ticket", {s["type"] for s in stops["musee-rodin"]["executionStatuses"]})
+        self.assertTrue(stops["invalides-exterior"]["optional"])
         rendered = self.rendered(34)
-        self.assertIn("Versailles", rendered)
-        self.assertIn("La Flottille", rendered)
-        self.assertIn("Trianon", rendered)
-        self.assertIn("Le Grand Pan", rendered)
+        self.assertIn("Orsay", rendered)
+        self.assertIn("Café Varenne", rendered)
+        self.assertIn("Rodin", rendered)
+        self.assertIn("Invalides", rendered)
+        self.assertNotIn("Versailles", rendered)
 
     def test_day35_louvre_and_sawadee(self):
         payload = load_day(35)
@@ -181,10 +132,11 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
         self.assertIn("check", morning_statuses)
         self.assertNotIn("confirmed", morning_statuses)
 
-        # Musée du Louvre 14:00 timed entry book
+        # Musée du Louvre 11:00 timed entry book and PMP last use
         louvre_statuses = {s["type"] for s in stops["musee-du-louvre"]["executionStatuses"]}
         self.assertIn("book", louvre_statuses)
         self.assertNotIn("confirmed", louvre_statuses)
+        self.assertEqual("11:00", stops["musee-du-louvre"]["start"])
 
         # Cour Carrée & Seine sunset is optional
         self.assertTrue(stops["cour-carree-seine"]["optional"])
@@ -221,7 +173,7 @@ class ExecutionUxBatch08Tests(unittest.TestCase):
     def test_day32_to_35_semantics_are_protected(self):
         payload = [semantic_projection(load_day(number)) for number in range(32, 36)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("fde9835b57026adec857d6d2b6da7fea0864b8361bf98204cc72dfff65669920", digest)
+        self.assertEqual("c87cff05b9a786b7419aa1edaeaf8612ff4f40c3c513250738f5bcdaba33e754", digest)
 
 
 if __name__ == "__main__":

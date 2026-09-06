@@ -3,14 +3,14 @@
   "day": 30,
   "date": "2026-09-27",
   "city": "Paris",
-  "title": "벨 에포크 & 고전 파리 — 프티 팔레·튀일르리·팔레 루아얄",
+  "title": "피카소·노트르담 & 고전 파리 도시공간",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
   "startTime": "08:00",
   "endTime": "21:00",
   "totalDuration": "13시간",
-  "totalDistance": "메트로 + 도보 약 6.0km",
+  "totalDistance": "약 15 km",
   "fatigue": "3",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
@@ -24,7 +24,7 @@
       "id": "morning-routine",
       "order": 1,
       "start": "08:00",
-      "end": "12:30",
+      "end": "09:00",
       "name": "Marché Convention 일요 장보기 & Pichard 빵 조달",
       "category": "hotel",
       "lat": 48.8375,
@@ -48,92 +48,128 @@
       ]
     },
     {
-      "id": "petit-palais",
+      "id": "musee-picasso",
       "order": 2,
-      "start": "13:00",
-      "end": "14:30",
-      "name": "Petit Palais (프티 팔레 파리 시립미술관)",
+      "start": "10:30",
+      "end": "12:15",
+      "name": "Musée Picasso Paris",
       "category": "culture",
-      "lat": 48.8661,
-      "lng": 2.3144,
-      "summary": "1900년 만국박람회 보자르 궁전의 무료 상설전과 돔 천장·모자이크 회랑·안뜰 정원을 90분 동안 둘러본다",
+      "lat": 48.8597,
+      "lng": 2.3622,
+      "summary": "Hôtel Salé의 피카소 상설 컬렉션을 PMP 유효기간 안에 집중 관람한다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "PMP",
+          "detail": "Paris Museum Pass 포함. 10:30 입장 계획."
+        }
+      ],
+      "executionNote": "5 Rue de Thorigny. PMP QR 준비.",
+      "officialUrl": "https://www.museepicassoparis.fr/",
+      "optional": false,
+      "place_ref": "musee-picasso-paris"
+    },
+    {
+      "id": "marais-lunch",
+      "order": 3,
+      "start": "12:15",
+      "end": "13:15",
+      "name": "Le Marais 점심",
+      "category": "food",
+      "lat": 48.8586,
+      "lng": 2.355,
+      "summary": "피카소 관람 뒤 마레에서 가볍게 점심을 먹고 시테 섬으로 이동한다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [],
+      "executionNote": "",
+      "officialUrl": "https://www.paris.fr/",
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "notre-dame",
+      "order": 4,
+      "start": "13:30",
+      "end": "14:15",
+      "name": "Notre-Dame de Paris",
+      "category": "sight",
+      "lat": 48.853,
+      "lng": 2.3499,
+      "summary": "복원된 대성당과 파르비스를 둘러본다. 무료 입장이며 PMP는 필요하지 않다.",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
           "type": "check",
-          "label": "FREE ENTRY",
-          "detail": "상설전 무료 자유 입장 · 일요일 10:00–18:00 개관 (월요일 휴관). 상설전은 예약 불필요."
+          "label": "FREE · PMP NOT NEEDED",
+          "detail": "무료 입장. 현장 대기와 운영시간만 확인."
         }
       ],
-      "executionNote": "Avenue Winston Churchill 정문. 상설 컬렉션과 벨 에포크 건축·안뜰 정원을 14:30까지 본다.",
-      "officialUrl": "https://www.petitpalais.paris.fr/",
+      "executionNote": "PMP 사용처로 계산하지 않는다.",
+      "officialUrl": "https://www.notredamedeparis.fr/",
       "optional": false,
-      "place_ref": "petit-palais"
+      "place_ref": "notre-dame-de-paris"
     },
     {
       "id": "tuileries-vendome",
-      "order": 3,
+      "order": 5,
       "start": "15:00",
       "end": "16:00",
       "name": "Jardin des Tuileries & Place Vendôme",
       "category": "sight",
       "lat": 48.8635,
       "lng": 2.3275,
-      "summary": "튀일르리 정원의 대형 팔각 분수대와 조각 산책 ➔ 방돔 광장(Place Vendôme) 나폴레옹 전승기념탑 조망 (60분)",
+      "summary": "튀일르리 정원과 방돔 광장을 잇는 고전 파리 산책.",
       "menu": null,
       "reservation": null,
       "executionStatuses": [],
-      "executionNote": "Tuileries 팔각 분수 ➔ Rue de Castiglione ➔ Place Vendôme.",
+      "executionNote": "",
       "officialUrl": "https://www.paris.fr/",
       "optional": false,
       "place_ref": null
     },
     {
       "id": "palais-royal",
-      "order": 4,
+      "order": 6,
       "start": "16:10",
       "end": "17:15",
-      "name": "Palais Royal (팔레 루아얄 안뜰 & 정원)",
+      "name": "Palais Royal",
       "category": "sight",
-      "lat": 48.8648,
-      "lng": 2.3364,
-      "summary": "다니엘 뷔랑(Daniel Buren)의 줄무늬 원통 기둥(Les Deux Plateaux) 설치미술과 고즈넉한 아케이드 회랑 정원 산책 (65분)",
-      "menu": "Café Kitsuné 에스프레소",
+      "lat": 48.8638,
+      "lng": 2.337,
+      "summary": "팔레 루아얄 안뜰과 정원을 산책한다.",
+      "menu": null,
       "reservation": null,
       "executionStatuses": [],
-      "executionNote": "Cour d'Honneur (뷔랑 기둥) ➔ Palais Royal 정원 회랑 산책.",
-      "officialUrl": "https://www.domaine-palais-royal.fr/",
+      "executionNote": "",
+      "officialUrl": "https://www.paris.fr/",
       "optional": false,
       "place_ref": null
     },
     {
       "id": "opera-garnier-district",
-      "order": 5,
+      "order": 7,
       "start": "17:30",
       "end": "18:30",
-      "name": "Opéra Garnier 지구 외관 산책",
+      "name": "Opéra Garnier 권역",
       "category": "sight",
       "lat": 48.8719,
       "lng": 2.3316,
-      "summary": "샤를 가르니에의 화려한 네오바로크 파사드 조망 및 오페라 광장 산책 (60분)",
+      "summary": "오페라 가르니에 외관과 인근 벨 에포크 도시공간을 걷는다.",
       "menu": null,
       "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "optional",
-          "label": "OPTIONAL",
-          "detail": "도보 피로 시 오페라 산책을 생략하고 몽파르나스 저녁 식당으로 바로 이동."
-        }
-      ],
-      "executionNote": "Avenue de l'Opéra ➔ Opéra Garnier 외관. 피로 시 생략 가능.",
-      "officialUrl": "https://www.operadeparis.fr/",
-      "optional": true,
+      "executionStatuses": [],
+      "executionNote": "",
+      "officialUrl": "https://www.paris.fr/",
+      "optional": false,
       "place_ref": null
     },
     {
       "id": "paris-return",
-      "order": 6,
+      "order": 8,
       "start": "19:00",
       "end": "21:00",
       "name": "Bouillon Chartier Montparnasse 저녁",
@@ -159,20 +195,38 @@
   "legs": [
     {
       "from": "morning-routine",
-      "to": "petit-palais",
+      "to": "musee-picasso",
       "mode": "metro",
-      "duration": "메트로 8+1호선 약 25분",
-      "distance": "4.5km",
-      "line": null,
+      "duration": "35분",
+      "distance": null,
+      "line": "15구 → Saint-Paul",
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "petit-palais",
-      "to": "tuileries-vendome",
+      "from": "musee-picasso",
+      "to": "marais-lunch",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": null,
+      "line": "마레",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "marais-lunch",
+      "to": "notre-dame",
       "mode": "walk",
       "duration": "20분",
-      "distance": "1.4km",
-      "line": null,
+      "distance": null,
+      "line": "시테 섬",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "notre-dame",
+      "to": "tuileries-vendome",
+      "mode": "metro",
+      "duration": "20분",
+      "distance": null,
+      "line": "Cité → Concorde",
       "geometryStatus": "coordinate-line"
     },
     {
@@ -180,26 +234,26 @@
       "to": "palais-royal",
       "mode": "walk",
       "duration": "10분",
-      "distance": "0.6km",
-      "line": null,
+      "distance": null,
+      "line": "도보",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "palais-royal",
       "to": "opera-garnier-district",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.8km",
-      "line": null,
+      "duration": "15분",
+      "distance": null,
+      "line": "도보",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "opera-garnier-district",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 8호선 약 25분",
-      "distance": "5.0km",
-      "line": null,
+      "duration": "25분",
+      "distance": null,
+      "line": "Montparnasse",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -212,16 +266,16 @@
     "Bouillon Chartier Montparnasse 저녁"
   ],
   "highlights": [
-    "Petit Palais·Tuileries·Palais Royal·Opéra의 벨 에포크와 고전 파리",
-    "Louvre 내부 입장 없음",
-    "스케치 20–30분"
+    "Musée Picasso Paris — PMP",
+    "Notre-Dame — 무료",
+    "Tuileries·Place Vendôme·Palais Royal·Opéra Garnier"
   ],
-  "backup": "우천 시 Petit Palais 실내 관람은 유지하고 야외 정원 도보를 축소해 갤러리 비비엔(Galerie Vivienne) 등 인근 파사주(Passages) 실내 산책으로 전환",
+  "backup": "피로 또는 입장 지연 시 도시 산책 구간을 단축하되 Picasso와 Notre-Dame을 우선한다. Petit Palais는 핵심 관람에서 제외한다.",
   "map": {
-    "zoom": 14,
+    "zoom": 13,
     "center": [
-      48.857,
-      2.336
+      48.862,
+      2.345
     ],
     "routeCache": null
   },

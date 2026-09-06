@@ -107,7 +107,7 @@ class MapHubImprovementTests(unittest.TestCase):
     def test_route_urls_are_directions_with_valid_modes(self):
         """Route 항목이 Google Maps Directions 링크로 렌더링되고 이동수단이 일치하는지 확인."""
         routes = self.map_queries.get("routes", {})
-        self.assertEqual(len(routes), 132, "Paris Day 33 공개 동선 분리 후 총 132개 경로")
+        self.assertEqual(len(routes), 132, "최종 Paris PMP 동선 반영 후 총 132개 경로")
 
         # Spot check key routes
         day9_nice_antibes = routes.get("day-09:nice-ville")
@@ -175,7 +175,7 @@ class MapHubImprovementTests(unittest.TestCase):
             ("luberon", "Luberon", 9),
             ("avignon", "Avignon · Alpilles", 24),
             ("lyon", "Lyon", 21),
-            ("paris", "Paris", 52),
+            ("paris", "Paris", 54),
         ]
         last_pos = 0
         total_pins = 0
@@ -188,7 +188,7 @@ class MapHubImprovementTests(unittest.TestCase):
             total_pins += count
             last_pos = pos
 
-        self.assertEqual(total_pins, 184, "Paris 공개 동선 분리 후 총 핀 수는 184")
+        self.assertEqual(total_pins, 186, "최종 Paris PMP 동선 반영 후 총 핀 수는 186")
 
         # 3. 8개의 map-card 및 script data가 존재하는지 확인
         map_cards = re.findall(r'<div class="map-card">', map_html)
@@ -211,7 +211,7 @@ class MapHubImprovementTests(unittest.TestCase):
         # 6. Date pattern check: M.D (월|화|수|목|금|토|일) [HH:MM]
         date_pattern = re.compile(r'<span class="meta">(\d{1,2}\.\d{1,2}\s+[월화수목금토일](\s+\d{2}:\d{2})?)</span>')
         matches = date_pattern.findall(map_html)
-        self.assertEqual(len(matches), 184, "184개 항목 모두 날짜 메타가 존재해야 함")
+        self.assertEqual(len(matches), 186, "186개 항목 모두 날짜 메타가 존재해야 함")
 
         # 7. Verify specific items
         self.assertIn("Lagrange Aparthotel Lyon Lumière → Lyon Part-Dieu", map_html)

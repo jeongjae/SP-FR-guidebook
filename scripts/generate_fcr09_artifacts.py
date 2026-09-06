@@ -160,7 +160,7 @@ p2_handoff = [
     ["P2-05", "Day 14 (Cassis / Calanques)", "FEAS-DUR-14 Resolved (90m bouillabaisse cap)", "EX-14 Final Freeze", "ACTIVE_MONITORED"],
     ["P2-06", "Day 21 (Uzès & Pont du Gard)", "Market crowd & kayak timing buffer", "EX-14 Final Freeze", "ACTIVE_MONITORED"],
     ["P2-07", "Day 26 (Annecy 당일치기)", "TER 16:45 return train protection buffer", "EX-14 Final Freeze", "ACTIVE_MONITORED"],
-    ["P2-08", "Day 34 (Versailles 전일투어)", "RER C transit & 20:00 dinner arrival", "EX-14 Final Freeze", "ACTIVE_MONITORED"],
+    ["P2-08", "Day 32 (Versailles 전일투어)", "RER C transit & 20:00 dinner arrival", "EX-14 Final Freeze", "ACTIVE_MONITORED"],
     ["P2-09", "Day 37 (개선문상 경마대회)", "Longchamp crowd dispersal & home recovery", "EX-14 Final Freeze", "ACTIVE_MONITORED"]
 ]
 with open("FCR09_ACTIVE_P2_HANDOFF.csv", "w", newline="", encoding="utf-8") as f:

@@ -48,7 +48,7 @@ must_book_actions = [
     ["MB-06", "Day 22 (9.19)", "Le Gibolin (Arles)", "12:00", "T-14 (9.05)", "legibolin.fr", "ACTION-B (Travel Leg)", "Le Criquet Arles", "PASS"],
     ["MB-07", "Day 23 (9.20)", "Café Comptoir Abel (Lyon)", "19:30", "T-14 (9.06)", "maisonabel.fr", "ACTION-B (Travel Leg)", "Bouchon Les Lyonnais", "PASS"],
     ["MB-08", "Day 24 (9.21)", "Daniel et Denise (Lyon)", "19:45", "T-14 (9.07)", "danieletdenise.fr", "ACTION-B (Travel Leg)", "Daniel & Denise Croix-Rousse", "PASS"],
-    ["MB-09", "Day 34 (10.01)", "Le Grand Pan (Paris)", "20:00", "T-14 (9.17)", "legrandpan.fr", "ACTION-B (Paris Leg)", "Bistrot Paul Bert", "PASS"],
+    ["MB-09", "Day 32 (9.29)", "Le Grand Pan (Paris)", "20:00", "T-14 (9.15)", "legrandpan.fr", "ACTION-B (Paris Leg)", "Café du Commerce", "PASS"],
     ["MB-10", "Day 41 (10.08)", "Le Grand Pan (Paris Farewell)", "20:00", "T-14 (9.24)", "legrandpan.fr", "ACTION-B (Paris Leg)", "L'Ami Jean Paris", "PASS"]
 ]
 with open("EX15_MUST_BOOK_ACTION_AUDIT.csv", "w", newline="", encoding="utf-8") as f:
@@ -102,7 +102,7 @@ with open("EX15_ACCOMMODATION_RECHECK.csv", "w", newline="", encoding="utf-8") a
 # 7. Food Volatile Recheck (EX15_FOOD_VOLATILE_RECHECK.csv)
 food_volatile = [
     ["Chez Mamie Lise", "Annecy", "Day 26 (9.23)", "T-7 Window", "Open Tue-Sun; cheese fondues active", "Bookable via website / phone", "PASS"],
-    ["Le Grand Pan", "Paris 15e", "Day 34 (10.01) & Day 41 (10.08)", "T-7 Window", "Open Mon-Fri dinner; wood-fired grill active", "Bookable via legrandpan.fr", "PASS"],
+    ["Le Grand Pan", "Paris 15e", "Day 32 (9.29) & Day 41 (10.08)", "T-7 Window", "Open Mon-Fri dinner; wood-fired grill active", "Bookable via legrandpan.fr", "PASS"],
     ["Boulangerie Pichard", "Paris 15e", "Day 31 (9.28)+", "T-7 Window", "Open Wed-Sun 07:00~20:00; Grand Prix Baguette", "Walk-in", "PASS"],
     ["Marché Convention", "Paris 15e", "Day 29 (9.26)+", "T-3 Window", "Open Tue/Thu/Sun 07:00~14:30; 80+ stalls", "Walk-in grocery", "PASS"],
     ["Les Cocottes Saint-Louis", "Avignon", "Day 20 (9.17)", "T-3 Window", "Open Tue-Sat; cast-iron casserole stews", "Bookable via phone/online", "PASS"]
@@ -130,7 +130,7 @@ weather_matrix = [
     ["Day 14 (Cassis / Calanques)", "Boat Cruise & Cliffs", "GREEN: 5-Calanques boat cruise", "AMBER: Cap Canaille cliff drive", "RED: Cassis harbor walk & winery tasting", "PASS"],
     ["Day 21 (Pont du Gard & Uzès)", "Aqueduct & River", "GREEN: Pont du Gard walk & kayak", "AMBER: Pont du Gard museum & bridge only", "RED: Musée de la Romanité (Nîmes)", "PASS"],
     ["Day 26 (Annecy Day Trip)", "Lake & Canals", "GREEN: Lake boat rental & Old Town", "AMBER: Covered arcades & château museum", "RED: Palais de l'Île interior & fondue lunch", "PASS"],
-    ["Day 34 (Versailles Palace)", "Gardens & Estate", "GREEN: Palace + Grand Canal + Trianon walk", "AMBER: Petit Trianon & Palace interior only", "RED: Palace State Apartments & Galerie des Glaces", "PASS"]
+    ["Day 32 (Versailles Palace)", "Gardens & Estate", "GREEN: Palace + Grand Canal + Trianon walk", "AMBER: Petit Trianon & Palace interior only", "RED: Palace State Apartments & Galerie des Glaces", "PASS"]
 ]
 with open("EX15_WEATHER_DECISION_MATRIX.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)
@@ -146,7 +146,7 @@ p2_watch = [
     ["P2-05", "Day 14 (Cassis / Calanques)", "Bouillabaisse lunch delay", "Cap lunch at 90m; take 15:00 boat cruise", "NO_TRIGGER (Normal Plan)", "PASS"],
     ["P2-06", "Day 21 (Uzès & Pont du Gard)", "Market crowd parking delay", "Park at Uzès outer lot; move to Pont du Gard at 13:30", "NO_TRIGGER (Normal Plan)", "PASS"],
     ["P2-07", "Day 26 (Annecy 당일치기)", "Restaurant delay > 20m", "Drop boat rental; secure 16:45 TER return", "NO_TRIGGER (Normal Plan)", "PASS"],
-    ["P2-08", "Day 34 (Versailles 전일투어)", "RER C evening rush", "Return to Paris 15e by 18:00; dine at 20:00", "NO_TRIGGER (Normal Plan)", "PASS"],
+    ["P2-08", "Day 32 (Versailles 전일투어)", "RER C evening rush", "Return to Paris 15e by 18:30; dine at 20:00", "NO_TRIGGER (Normal Plan)", "PASS"],
     ["P2-09", "Day 37 (개선문상 경마대회)", "Post-race Longchamp crowd", "Home cooking rest dinner in 15e apartment", "NO_TRIGGER (Normal Plan)", "PASS"]
 ]
 with open("EX15_P2_TRIGGER_WATCH.csv", "w", newline="", encoding="utf-8") as f:

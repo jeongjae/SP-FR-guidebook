@@ -34,11 +34,12 @@
 89_Commercial_City_Experience_Cards_v1.0#002,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Barcelona · Sitges,assets-register,50,0,0,0703199ff2240389
 89_Commercial_City_Experience_Cards_v1.0#003,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Girona · Collioure · Empordà,assets-register,47,0,0,d50b3398e83cb8fd
 89_Commercial_City_Experience_Cards_v1.0#004,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Nice · Côte d’Azur,assets-register,47,0,0,2722bd6a34e77438
-89_Commercial_City_Experience_Cards_v1.0#005,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Aix-en-Provence,assets-register,50,0,0,db5582eb7f515b2b
-89_Commercial_City_Experience_Cards_v1.0#006,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Luberon Farmhouse,assets-register,52,0,0,aa0774d345f3b5ec
-89_Commercial_City_Experience_Cards_v1.0#007,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Avignon · Uzès · Alpilles,assets-register,50,0,0,e2269bdb89047dc4
-89_Commercial_City_Experience_Cards_v1.0#008,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Lyon · Annecy,assets-register,45,0,0,f2a997bfe501eaa0
-89_Commercial_City_Experience_Cards_v1.0#009,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Paris Long Stay,assets-register,50,0,0,4249cd2ad0a63ed7
+89_Commercial_City_Experience_Cards_v1.0#005,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Verdon · Moustiers,assets-register,53,0,0,4c8dda2cf882c748
+89_Commercial_City_Experience_Cards_v1.0#006,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Aix-en-Provence,assets-register,50,0,0,db5582eb7f515b2b
+89_Commercial_City_Experience_Cards_v1.0#007,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Luberon Farmhouse,assets-register,52,0,0,aa0774d345f3b5ec
+89_Commercial_City_Experience_Cards_v1.0#008,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Avignon · Uzès · Alpilles,assets-register,50,0,0,e2269bdb89047dc4
+89_Commercial_City_Experience_Cards_v1.0#009,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Lyon · Annecy,assets-register,45,0,0,f2a997bfe501eaa0
+89_Commercial_City_Experience_Cards_v1.0#010,source/ASSETS/89_Commercial_City_Experience_Cards_v1.0.md,2,Paris Long Stay,assets-register,50,0,0,4249cd2ad0a63ed7
 90_Regional_Context_and_Place_Dossier_Compendium_v1.0#001,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,90. Regional Context and Place Dossier Compendium v1.0,assets-register,21,0,0,7dbaa04a05796fe3
 90_Regional_Context_and_Place_Dossier_Compendium_v1.0#002,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Barcelona,assets-register,76,0,0,a9665c2f631af473
 90_Regional_Context_and_Place_Dossier_Compendium_v1.0#003,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Sagrada Família,assets-register,72,0,0,f9e504ae99175b88
@@ -67,53 +68,60 @@
 90_Regional_Context_and_Place_Dossier_Compendium_v1.0#026,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Nice Old Town–Castle Hill Walk,assets-register,13,0,0,96fa81c2058d700a
 90_Regional_Context_and_Place_Dossier_Compendium_v1.0#027,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Cannes Forville–Suquet–Croisette Walk,assets-register,17,0,0,58b35cdf2ea50341
 90_Regional_Context_and_Place_Dossier_Compendium_v1.0#028,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Monaco Rocher–Port–Monte Carlo Walk,assets-register,16,0,0,209aa18970eb2cbb
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#029,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Aix,assets-register,56,0,0,49a18d4fd4a167e8
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#030,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Cours Mirabeau,assets-register,40,0,0,8c3ba31320769ac0
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#031,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Musée Granet,assets-register,52,0,0,ab898e4850208806
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#032,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Atelier des Lauves,assets-register,45,0,0,65e843745018fbb0
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#033,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Cassis 항구,assets-register,43,0,0,c6da5424a890e884
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#034,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Calanques,assets-register,53,0,0,f3b7a04063814c4d
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#035,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Lourmarin,assets-register,49,0,0,fc4e853b670bd08b
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#036,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Luberon,assets-register,63,0,0,b23207ca12bb91e1
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#037,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Roussillon · Sentier des Ocres,assets-register,44,0,0,9d51c3c9e486728c
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#038,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Goult,assets-register,32,0,0,1f064984a49129d2
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#039,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Gordes,assets-register,47,0,0,95da66ec2f5ddfb4
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#040,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Village des Bories,assets-register,40,0,0,b9983f924e1f6a8e
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#041,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Abbaye de Sénanque,assets-register,40,0,0,7c9a9bff22a4317f
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#042,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Ménerbes,assets-register,41,0,0,8531cd64ce376824
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#043,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Avignon,assets-register,64,0,0,16854f2415dda7a0
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#044,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Palais des Papes,assets-register,46,0,0,8d2fa1233efce26d
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#045,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Pont Saint-Bénézet,assets-register,41,0,0,348d982374daf0a1
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#046,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Les Halles,assets-register,43,0,0,e57140ee43ad0307
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#047,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Uzès Place aux Herbes·구시가지,assets-register,48,0,0,02ef5816de9518c9
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#048,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Pont du Gard,assets-register,43,0,0,6b7df5bc9865dfb5
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#049,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Les Baux-de-Provence,assets-register,41,0,0,920c1a3062997ad6
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#050,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Glanum,assets-register,42,0,0,7f4e98ebf6b6fa7b
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#051,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Lyon,assets-register,62,0,0,11549967d0b097d8
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#052,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Fourvière,assets-register,35,0,0,24bf710d6e1c73b7
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#053,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Vieux Lyon · 트라불,assets-register,34,0,0,0109930f6c6972b7
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#054,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Croix-Rousse,assets-register,36,0,0,fd34c8e4b3ae84ef
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#055,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Halles de Lyon Paul Bocuse,assets-register,36,0,0,bf5484d50c8164bf
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#056,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Annecy 구시가지,assets-register,44,0,0,c4e4beb76d95bd05
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#057,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Paris,assets-register,64,0,0,9ca2204bea7a7695
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#058,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Notre-Dame de Paris,assets-register,55,0,0,0b1e19b9d387fd56
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#059,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Musée du Louvre,assets-register,52,0,0,36651a6aa6d7ce32
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#060,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Musée d'Orsay,assets-register,40,0,0,0a12eb46f1262077
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#061,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,BnF Richelieu,assets-register,43,0,0,ea7308919052743f
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#062,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Montmartre · South Pigalle,assets-register,43,0,0,408982af70e16145
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#063,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Versailles,assets-register,40,0,0,e59cf7589e357c54
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#064,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Giverny,assets-register,44,0,0,089534b33203fc7f
-90_Regional_Context_and_Place_Dossier_Compendium_v1.0#065,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Bourse de Commerce — Pinault Collection,assets-register,34,0,0,d4b3d5e355396cb2
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#029,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Verdon,assets-register,0,0,0,
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#030,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Moustiers-Sainte-Marie,assets-register,65,0,0,55fc3d1204273db9
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#031,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Point Sublime,assets-register,54,0,0,d5f717987722175f
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#032,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Route des Crêtes,assets-register,60,0,0,618ed9651fc795ec
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#033,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Lac de Sainte-Croix,assets-register,52,0,0,3d79f076212fbd36
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#034,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Plateau de Valensole,assets-register,53,0,0,dae372b9c5a9fd6e
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#035,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Aix,assets-register,56,0,0,49a18d4fd4a167e8
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#036,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Cours Mirabeau,assets-register,40,0,0,8c3ba31320769ac0
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#037,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Musée Granet,assets-register,52,0,0,ab898e4850208806
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#038,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Atelier des Lauves,assets-register,45,0,0,65e843745018fbb0
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#039,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Cassis 항구,assets-register,43,0,0,c6da5424a890e884
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#040,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Calanques,assets-register,53,0,0,f3b7a04063814c4d
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#041,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Lourmarin,assets-register,49,0,0,fc4e853b670bd08b
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#042,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Luberon,assets-register,63,0,0,b23207ca12bb91e1
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#043,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Roussillon · Sentier des Ocres,assets-register,44,0,0,9d51c3c9e486728c
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#044,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Goult,assets-register,32,0,0,1f064984a49129d2
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#045,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Gordes,assets-register,47,0,0,95da66ec2f5ddfb4
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#046,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Village des Bories,assets-register,40,0,0,b9983f924e1f6a8e
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#047,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Abbaye de Sénanque,assets-register,40,0,0,7c9a9bff22a4317f
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#048,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Ménerbes,assets-register,41,0,0,8531cd64ce376824
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#049,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Avignon,assets-register,64,0,0,16854f2415dda7a0
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#050,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Palais des Papes,assets-register,46,0,0,8d2fa1233efce26d
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#051,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Pont Saint-Bénézet,assets-register,41,0,0,348d982374daf0a1
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#052,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Les Halles,assets-register,43,0,0,e57140ee43ad0307
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#053,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Uzès Place aux Herbes·구시가지,assets-register,48,0,0,02ef5816de9518c9
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#054,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Pont du Gard,assets-register,43,0,0,6b7df5bc9865dfb5
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#055,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Les Baux-de-Provence,assets-register,41,0,0,920c1a3062997ad6
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#056,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Glanum,assets-register,42,0,0,7f4e98ebf6b6fa7b
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#057,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Lyon,assets-register,62,0,0,11549967d0b097d8
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#058,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Fourvière,assets-register,35,0,0,24bf710d6e1c73b7
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#059,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Vieux Lyon · 트라불,assets-register,34,0,0,0109930f6c6972b7
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#060,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Croix-Rousse,assets-register,36,0,0,fd34c8e4b3ae84ef
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#061,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Halles de Lyon Paul Bocuse,assets-register,36,0,0,bf5484d50c8164bf
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#062,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Annecy 구시가지,assets-register,44,0,0,c4e4beb76d95bd05
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#063,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,1,Paris,assets-register,64,0,0,9ca2204bea7a7695
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#064,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Notre-Dame de Paris,assets-register,55,0,0,0b1e19b9d387fd56
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#065,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Musée du Louvre,assets-register,52,0,0,36651a6aa6d7ce32
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#066,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Musée d'Orsay,assets-register,40,0,0,0a12eb46f1262077
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#067,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,BnF Richelieu,assets-register,43,0,0,ea7308919052743f
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#068,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Montmartre · South Pigalle,assets-register,43,0,0,408982af70e16145
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#069,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Versailles,assets-register,40,0,0,e59cf7589e357c54
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#070,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Giverny,assets-register,44,0,0,089534b33203fc7f
+90_Regional_Context_and_Place_Dossier_Compendium_v1.0#071,source/ASSETS/90_Regional_Context_and_Place_Dossier_Compendium_v1.0.md,2,Bourse de Commerce — Pinault Collection,assets-register,34,0,0,d4b3d5e355396cb2
 91_Place_Registry_v1.0#001,source/ASSETS/91_Place_Registry_v1.0.md,1,장소 레지스트리 v1.0,assets-register,80,0,0,046bc9482b823182
 91_Place_Registry_v1.0#002,source/ASSETS/91_Place_Registry_v1.0.md,2,barcelona (04),assets-register,221,0,0,65f696ce509fe604
 91_Place_Registry_v1.0#003,source/ASSETS/91_Place_Registry_v1.0.md,2,girona (05),assets-register,143,0,0,5667f99e4d37982c
 91_Place_Registry_v1.0#004,source/ASSETS/91_Place_Registry_v1.0.md,2,nice (06),assets-register,293,0,0,5ae92187dfecb20f
-91_Place_Registry_v1.0#005,source/ASSETS/91_Place_Registry_v1.0.md,2,aix (07),assets-register,334,0,0,7fc3d38452309d23
-91_Place_Registry_v1.0#006,source/ASSETS/91_Place_Registry_v1.0.md,2,luberon (08),assets-register,177,0,0,46af4a1552997d0d
-91_Place_Registry_v1.0#007,source/ASSETS/91_Place_Registry_v1.0.md,2,avignon (09),assets-register,398,0,0,78da0e813ab4cc84
-91_Place_Registry_v1.0#008,source/ASSETS/91_Place_Registry_v1.0.md,2,lyon (10),assets-register,171,0,0,668ee1217912041d
-91_Place_Registry_v1.0#009,source/ASSETS/91_Place_Registry_v1.0.md,2,paris (11),assets-register,458,0,0,357a432233ab8689
-91_Place_Registry_v1.0#010,source/ASSETS/91_Place_Registry_v1.0.md,2,판단이 들어간 곳,assets-register,132,0,0,938f02270caccb25
+91_Place_Registry_v1.0#005,source/ASSETS/91_Place_Registry_v1.0.md,2,verdon (06B),assets-register,90,0,0,ba5d9b5d54ec9234
+91_Place_Registry_v1.0#006,source/ASSETS/91_Place_Registry_v1.0.md,2,aix (07),assets-register,334,0,0,7fc3d38452309d23
+91_Place_Registry_v1.0#007,source/ASSETS/91_Place_Registry_v1.0.md,2,luberon (08),assets-register,177,0,0,46af4a1552997d0d
+91_Place_Registry_v1.0#008,source/ASSETS/91_Place_Registry_v1.0.md,2,avignon (09),assets-register,398,0,0,78da0e813ab4cc84
+91_Place_Registry_v1.0#009,source/ASSETS/91_Place_Registry_v1.0.md,2,lyon (10),assets-register,171,0,0,668ee1217912041d
+91_Place_Registry_v1.0#010,source/ASSETS/91_Place_Registry_v1.0.md,2,paris (11),assets-register,657,0,0,f4fbda0982d3daf3
+91_Place_Registry_v1.0#011,source/ASSETS/91_Place_Registry_v1.0.md,2,판단이 들어간 곳,assets-register,132,0,0,938f02270caccb25
 00_Current_Source_of_Truth_Index_v2.0#001,source/CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md,1,Current Source of Truth Index v2.0 — 콘텐츠 중복 통합,governance,0,0,0,
 00_Current_Source_of_Truth_Index_v2.0#002,source/CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md,2,기준,governance,40,0,0,2394436049313c77
 00_Current_Source_of_Truth_Index_v2.0#003,source/CURRENT/00_Governance/00_Current_Source_of_Truth_Index_v2.0.md,2,Authoritative core,governance,36,0,0,01354721ca138e3c
@@ -148,17 +156,17 @@
 01_How_to_Use_This_Guidebook_v1.0#005,source/CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md,2,4. 식당을 고르는 법,core,77,0,0,0c38782d35b9ab05
 01_How_to_Use_This_Guidebook_v1.0#006,source/CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md,2,5. 하루를 조정하는 다섯 가지 규칙,core,48,0,0,9ae42c2cf35b24c7
 01_How_to_Use_This_Guidebook_v1.0#007,source/CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md,2,6. 시각자료 표기,core,42,0,0,8965d819b2adf413
-01_How_to_Use_This_Guidebook_v1.0#008,source/CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md,2,7. 이 가이드북의 여행 흐름,core,54,0,0,ad7d35eca4c61f80
+01_How_to_Use_This_Guidebook_v1.0#008,source/CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md,2,7. 이 가이드북의 여행 흐름,core,58,0,0,5c8236b3930a176a
 01_How_to_Use_This_Guidebook_v1.0#009,source/CURRENT/10_Core/01_How_to_Use_This_Guidebook_v1.0.md,2,8. 여행 중 최종 판단 기준,core,35,0,0,e833fa25f54b7133
 02_Whole_Trip_Experience_Highlights_v1.0#000,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,0,(preamble),core,19,0,0,09f2666756d27906
 02_Whole_Trip_Experience_Highlights_v1.0#001,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,1,02. 전체 여행 경험 하이라이트,core,0,0,0,
-02_Whole_Trip_Experience_Highlights_v1.0#002,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,2,1. 이 여행에서 가장 중요한 16가지 경험,core,189,0,0,cae1839568a20c0e
+02_Whole_Trip_Experience_Highlights_v1.0#002,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,2,1. 이 여행에서 가장 중요한 16가지 경험,core,203,0,0,7c7a1335e005ebf1
 02_Whole_Trip_Experience_Highlights_v1.0#003,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,2,2. 지역별 대표 한 끼,core,81,0,0,c4195b969ea197dc
 02_Whole_Trip_Experience_Highlights_v1.0#004,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,2,3. 스케치·사진 대표 장면,core,57,0,0,bd996565daaa79b3
 02_Whole_Trip_Experience_Highlights_v1.0#005,source/CURRENT/10_Core/02_Whole_Trip_Experience_Highlights_v1.0.md,2,4. 일부러 비워 둘 시간,core,51,0,0,58386d781f9e1977
-03_Whole_Trip_Master_Itinerary_v1.2#000,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,0,(preamble),core,26,0,0,d83f0896fe4bc328
-03_Whole_Trip_Master_Itinerary_v1.2#001,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,1,전체 일정,core,1447,0,0,def766d27928d9d8
-03_Whole_Trip_Master_Itinerary_v1.2#002,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,2,장거리 이동일,core,118,0,0,28388a54bb14bcbe
+03_Whole_Trip_Master_Itinerary_v1.2#000,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,0,(preamble),core,26,0,0,8579bc5d77518c05
+03_Whole_Trip_Master_Itinerary_v1.2#001,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,1,전체 일정,core,1497,0,0,79e93583e374d0a5
+03_Whole_Trip_Master_Itinerary_v1.2#002,source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md,2,장거리 이동일,core,128,0,0,4b2d83c57ee9fdb0
 04_Barcelona_Sitges_v2.0#000,source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md,0,(preamble),city-guide,72,2,1,e45b9d463ff6a69f
 04_Barcelona_Sitges_v2.0#001,source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md,1,Commercial Guide Module,city-guide,20,0,0,30e5d1d470d6e312
 04_Barcelona_Sitges_v2.0#002,source/CURRENT/20_Regional_Chapters/04_Barcelona_Sitges_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,69,0,0,53108bed799a4dcd
@@ -303,11 +311,32 @@
 05_Girona_Collioure_Emporda_v2.1#054,source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md,2,Day 4 — 9월 4일 금요일,city-guide,0,0,0,
 05_Girona_Collioure_Emporda_v2.1#055,source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md,3,Bàscara 체크아웃 후 니스로 이동 {{badge:p0|P0 연결}},city-guide,19,0,0,6fcc711dbb191d0e
 05_Girona_Collioure_Emporda_v2.1#056,source/CURRENT/20_Regional_Chapters/05_Girona_Collioure_Emporda_v2.1.md,4,실행 시간표,city-guide,124,0,0,fd5302b75ebda5ae
+06B_Verdon_Moustiers_v1.0#000,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,0,(preamble),city-guide,59,0,0,76ff4d494b430a4b
+06B_Verdon_Moustiers_v1.0#001,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,1,Commercial Guide Module,city-guide,24,0,0,e36ef6aab541fc62
+06B_Verdon_Moustiers_v1.0#002,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,116,0,0,a25142d053acea39
+06B_Verdon_Moustiers_v1.0#003,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,한눈에 보기 — 일정,city-guide,31,0,0,284503c133707145
+06B_Verdon_Moustiers_v1.0#004,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,구역별 이해와 숙소 생활권,city-guide,45,0,0,e62208726a72474e
+06B_Verdon_Moustiers_v1.0#005,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,도착·출발·지역 내 교통,city-guide,154,0,0,ccc69076231dba58
+06B_Verdon_Moustiers_v1.0#006,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,핵심 셀프가이드,city-guide,0,0,0,
+06B_Verdon_Moustiers_v1.0#007,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,Moustiers-Sainte-Marie — 필수,city-guide,40,0,0,1fb26111cf09d14a
+06B_Verdon_Moustiers_v1.0#008,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,Point Sublime — 필수 (Day 12),city-guide,29,0,0,d38859ea0216a076
+06B_Verdon_Moustiers_v1.0#009,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,Route des Crêtes — 우선 추천 (Day 13),city-guide,27,0,0,b6a2be1961558289
+06B_Verdon_Moustiers_v1.0#010,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,Lac de Sainte-Croix — 필수 (Day 13),city-guide,26,0,0,24526ffe883e3beb
+06B_Verdon_Moustiers_v1.0#011,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,Plateau de Valensole — 선택 (Day 13),city-guide,34,0,0,2be937a146657e0d
+06B_Verdon_Moustiers_v1.0#012,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,음식·시장·카페·생활체험,city-guide,62,0,0,c3177e05036477e6
+06B_Verdon_Moustiers_v1.0#013,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,당일치기·우천·피로 대안,city-guide,52,0,0,f8151b3f4ef523c1
+06B_Verdon_Moustiers_v1.0#014,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,예약·비용·안전·주차·귀가,city-guide,54,0,0,6d318adf30d37917
+06B_Verdon_Moustiers_v1.0#015,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,공식 확인 정보와 재확인 대상,city-guide,0,0,0,
+06B_Verdon_Moustiers_v1.0#016,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,출발 전 최종 확인,city-guide,48,0,0,e7ff88623bbf50e6
+06B_Verdon_Moustiers_v1.0#017,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,3,공식 정보원,city-guide,14,0,0,7fc72c8c7e7ce69c
+06B_Verdon_Moustiers_v1.0#018,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,검증 상태 — 보강본 근거,city-guide,160,0,0,375e80ce06393381
+06B_Verdon_Moustiers_v1.0#019,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,1,Regional Context & Scheduled Place Dossiers,city-guide,0,0,0,
+06B_Verdon_Moustiers_v1.0#020,source/CURRENT/20_Regional_Chapters/06B_Verdon_Moustiers_v1.0.md,2,구역별 이해와 숙소 생활권 컨텍스트,city-guide,4,0,0,4269ed6f63c677fb
 06_Nice_Cote_d_Azur_v2.0#000,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,0,(preamble),city-guide,84,2,1,008c6315d290513c
 06_Nice_Cote_d_Azur_v2.0#001,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,1,Commercial Guide Module,city-guide,0,0,0,
 06_Nice_Cote_d_Azur_v2.0#002,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,97,0,0,76afd6f650c37a85
 06_Nice_Cote_d_Azur_v2.0#003,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,이번 5박의 핵심,city-guide,62,0,0,75143a033eb31e37
-06_Nice_Cote_d_Azur_v2.0#004,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,한눈에 보기 — 일정,city-guide,61,0,0,64667bdc19fa8f17
+06_Nice_Cote_d_Azur_v2.0#004,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,한눈에 보기 — 일정,city-guide,63,0,0,ca532f4d1e93e4c3
 06_Nice_Cote_d_Azur_v2.0#005,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,1,니스와 코트다쥐르 5박 6일,city-guide,0,0,0,
 06_Nice_Cote_d_Azur_v2.0#006,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,"지중해 생활도시, 칸과 모나코·망통, 시장과 해안풍경",city-guide,27,0,0,b11b62445da01253
 06_Nice_Cote_d_Azur_v2.0#007,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,1,Regional Context & Scheduled Place Dossiers,city-guide,0,0,0,
@@ -332,11 +361,11 @@
 06_Nice_Cote_d_Azur_v2.0#026,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,Monaco Rocher–Port–Monte Carlo Walk {{grade:essential|필수}},city-guide,33,1,0,fc3ecf93ac602ac2
 06_Nice_Cote_d_Azur_v2.0#027,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,Le Figuier de Saint-Esprit {{grade:essential|필수}},city-guide,45,1,0,2b465c0645b8f8c6
 06_Nice_Cote_d_Azur_v2.0#028,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,Restaurant & Salon de Thé Béatrice {{grade:essential|필수}},city-guide,39,1,0,5e264e636b926243
-06_Nice_Cote_d_Azur_v2.0#029,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,Villa Ephrussi de Rothschild {{grade:priority|우선추천}},city-guide,44,1,0,6c16cceb6a3ed681
+06_Nice_Cote_d_Azur_v2.0#029,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,Villa Ephrussi de Rothschild {{grade:priority|우선추천}},city-guide,44,1,0,8885ff9926ce7c39
 06_Nice_Cote_d_Azur_v2.0#030,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,음식·시장·카페·생활체험,city-guide,28,0,0,acfa990f5deec247
 06_Nice_Cote_d_Azur_v2.0#031,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,니스에서 먹어볼 것,city-guide,139,0,0,8ee82f9cad9b7c6e
 06_Nice_Cote_d_Azur_v2.0#032,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,시장과 장보기,city-guide,71,0,0,08cdf24c72630dbe
-06_Nice_Cote_d_Azur_v2.0#033,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,일정에서 이용하는 식당과 카페,city-guide,71,0,0,e6b124146c091293
+06_Nice_Cote_d_Azur_v2.0#033,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,일정에서 이용하는 식당과 카페,city-guide,82,0,0,50025daddfe367a4
 06_Nice_Cote_d_Azur_v2.0#034,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,당일치기·우천·피로 대안,city-guide,104,0,0,bffe19f45786ddd7
 06_Nice_Cote_d_Azur_v2.0#035,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,예약·비용·안전·주차·귀가,city-guide,146,0,0,cdc4d9f24e989669
 06_Nice_Cote_d_Azur_v2.0#036,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,공식 확인 정보와 재확인 대상,city-guide,177,0,0,b0a0aa6f766e583f
@@ -350,50 +379,50 @@
 06_Nice_Cote_d_Azur_v2.0#044,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,20,0,0,bfcb40691ec04072
 06_Nice_Cote_d_Azur_v2.0#045,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,9,0,0,dd20820014b09856
 06_Nice_Cote_d_Azur_v2.0#046,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,Day 2 — 9월 5일 토요일,city-guide,0,0,0,
-06_Nice_Cote_d_Azur_v2.0#047,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"Nice 핵심: 시장, 구시가지, 성채언덕, 해변",city-guide,39,0,0,6dbbff97a6b427ed
+06_Nice_Cote_d_Azur_v2.0#047,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"Nice 핵심: 시장, 구시가지, 성채언덕, 해변",city-guide,35,0,0,76eb5d837eadc9b4
 06_Nice_Cote_d_Azur_v2.0#048,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,38,0,0,92e8486feeb79de8
-06_Nice_Cote_d_Azur_v2.0#049,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,101,1,0,6733e038a317170c
+06_Nice_Cote_d_Azur_v2.0#049,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,123,1,0,5dbb89ab13da945f
 06_Nice_Cote_d_Azur_v2.0#050,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,오늘 지도,city-guide,0,0,0,da39a3ee5e6b4b0d
-06_Nice_Cote_d_Azur_v2.0#051,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,31,0,0,a95c6d5b8490943a
-06_Nice_Cote_d_Azur_v2.0#052,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,30,0,0,615919039e90fcfc
-06_Nice_Cote_d_Azur_v2.0#053,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,14,0,0,0ed32bd6e382fbc1
+06_Nice_Cote_d_Azur_v2.0#051,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,28,0,0,10146b99b6264c63
+06_Nice_Cote_d_Azur_v2.0#052,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,14,0,0,07a844ac87879804
+06_Nice_Cote_d_Azur_v2.0#053,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,16,0,0,f7eae3bcc65ed817
 06_Nice_Cote_d_Azur_v2.0#054,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,Day 3 — 9월 6일 일요일,city-guide,0,0,0,
 06_Nice_Cote_d_Azur_v2.0#055,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"앙티브 요새마을, Le Figuier 미쉐린 런치 & 칸 당일치기",city-guide,52,0,0,ea5931d2a109b82c
 06_Nice_Cote_d_Azur_v2.0#056,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,60,0,0,71b301bdc08e4679
-06_Nice_Cote_d_Azur_v2.0#057,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,142,0,0,f58b66e9040379a0
+06_Nice_Cote_d_Azur_v2.0#057,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,154,0,0,7ea6c9c96b4c8247
 06_Nice_Cote_d_Azur_v2.0#058,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,오늘 지도,city-guide,0,0,0,da39a3ee5e6b4b0d
 06_Nice_Cote_d_Azur_v2.0#059,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,35,0,0,149c5be1dad7b1d1
 06_Nice_Cote_d_Azur_v2.0#060,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,27,0,0,86aa27cb0b1e6986
-06_Nice_Cote_d_Azur_v2.0#061,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,14,0,0,1eff186e53aa6693
+06_Nice_Cote_d_Azur_v2.0#061,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,29,0,0,b254d70883a8c4f1
 06_Nice_Cote_d_Azur_v2.0#062,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,Day 4 — 9월 7일 월요일,city-guide,0,0,0,
 06_Nice_Cote_d_Azur_v2.0#063,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"Monaco + Menton 당일치기: Monaco 오전·점심, Menton 오후·저녁",city-guide,49,0,0,f211a7c2f60c42fd
-06_Nice_Cote_d_Azur_v2.0#064,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,76,0,0,b90b372687a3bd4b
-06_Nice_Cote_d_Azur_v2.0#065,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,156,0,0,563ad8c201e1d0d0
+06_Nice_Cote_d_Azur_v2.0#064,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,73,0,0,eccbe5e563de24fb
+06_Nice_Cote_d_Azur_v2.0#065,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,157,0,0,d5514d5b0113a2b1
 06_Nice_Cote_d_Azur_v2.0#066,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,오늘 지도,city-guide,0,0,0,da39a3ee5e6b4b0d
-06_Nice_Cote_d_Azur_v2.0#067,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,72,0,0,812917a1833e292a
-06_Nice_Cote_d_Azur_v2.0#068,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,33,0,0,835c5b825826e039
-06_Nice_Cote_d_Azur_v2.0#069,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,31,0,0,10804bd1da3e9334
+06_Nice_Cote_d_Azur_v2.0#067,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,38,0,0,2f3e357fd4b0e79a
+06_Nice_Cote_d_Azur_v2.0#068,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,39,0,0,28c20d2a547394e1
+06_Nice_Cote_d_Azur_v2.0#069,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,27,0,0,d4557319534d1c79
 06_Nice_Cote_d_Azur_v2.0#070,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,Day 5 — 9월 8일 화요일,city-guide,0,0,0,
-06_Nice_Cote_d_Azur_v2.0#071,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"Nice 생활·회복일: 리베라시옹 시장, 로스차일드 빌라 런치, 프롬나드 해변 휴식",city-guide,52,0,0,622d29eae8129067
-06_Nice_Cote_d_Azur_v2.0#072,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,62,0,0,57b0f669b58db50b
-06_Nice_Cote_d_Azur_v2.0#073,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,133,0,0,1bdb014492b94051
+06_Nice_Cote_d_Azur_v2.0#071,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,Villefranche · Villa Ephrussi 런치 · Èze 절벽마을,city-guide,43,0,0,647746e4a36a7d40
+06_Nice_Cote_d_Azur_v2.0#072,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,53,0,0,f9e3664c4844e6c5
+06_Nice_Cote_d_Azur_v2.0#073,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,144,0,0,32d119b406887a07
 06_Nice_Cote_d_Azur_v2.0#074,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,오늘 지도,city-guide,0,0,0,da39a3ee5e6b4b0d
-06_Nice_Cote_d_Azur_v2.0#075,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,39,0,0,5ee2d5089e2f85bd
-06_Nice_Cote_d_Azur_v2.0#076,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,24,0,0,a6135ae09be53473
-06_Nice_Cote_d_Azur_v2.0#077,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,14,0,0,02cb711c0119e124
+06_Nice_Cote_d_Azur_v2.0#075,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,27,0,0,3bb6c77b12392ed5
+06_Nice_Cote_d_Azur_v2.0#076,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,26,0,0,9cd8533fc1cbafa1
+06_Nice_Cote_d_Azur_v2.0#077,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·교통 장애),city-guide,18,0,0,6aa7fa498fbf6b38
 06_Nice_Cote_d_Azur_v2.0#078,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,2,Day 6 — 9월 9일 수요일,city-guide,0,0,0,
-06_Nice_Cote_d_Azur_v2.0#079,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"렌터카 인수, Saint-Paul-de-Vence·Grasse, Aix 이동",city-guide,42,0,0,11b8d159ed83b3cb
-06_Nice_Cote_d_Azur_v2.0#080,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,39,0,0,bf389adb22bffbc8
-06_Nice_Cote_d_Azur_v2.0#081,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,184,0,0,bb3530e6aa3b7d59
+06_Nice_Cote_d_Azur_v2.0#079,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,3,"렌터카 인수, Saint-Paul-de-Vence·Grasse, Verdon(Moustiers) 이동",city-guide,50,0,0,c1281b242c12e14c
+06_Nice_Cote_d_Azur_v2.0#080,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,핵심 행동 (최대 3개),city-guide,40,0,0,4b92c5ad89e1169c
+06_Nice_Cote_d_Azur_v2.0#081,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,실행 시간표,city-guide,208,0,0,a98ca64e54fd1821
 06_Nice_Cote_d_Azur_v2.0#082,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,오늘 지도,city-guide,0,0,0,da39a3ee5e6b4b0d
 06_Nice_Cote_d_Azur_v2.0#083,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,식사 및 카페,city-guide,12,0,0,53333f8bdcc91eba
-06_Nice_Cote_d_Azur_v2.0#084,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,34,0,0,04097e2473751393
-06_Nice_Cote_d_Azur_v2.0#085,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,16,0,0,a099998d4a9571e7
-07_Aix_en_Provence_v2.0#000,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,0,(preamble),city-guide,70,2,1,765aaa02cf98629e
+06_Nice_Cote_d_Azur_v2.0#084,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,삭제 및 단축 순서 (늦었거나 피곤할 때),city-guide,34,0,0,ffef649073441421
+06_Nice_Cote_d_Azur_v2.0#085,source/CURRENT/20_Regional_Chapters/06_Nice_Cote_d_Azur_v2.0.md,4,대안 대책 (우천·휴관·교통 장애),city-guide,19,0,0,afca51597d5a2928
+07_Aix_en_Provence_v2.0#000,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,0,(preamble),city-guide,70,2,1,18f38e5058bd1ff6
 07_Aix_en_Provence_v2.0#001,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,1,Commercial Guide Module,city-guide,21,0,0,fd0273617bc4aded
 07_Aix_en_Provence_v2.0#002,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,63,0,0,367876dd205c18e9
 07_Aix_en_Provence_v2.0#003,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,이번 체류의 핵심,city-guide,51,0,0,655800f4819f0f4f
-07_Aix_en_Provence_v2.0#004,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,한눈에 보기 — 일정,city-guide,62,0,0,f2ec32e441ffb6c8
+07_Aix_en_Provence_v2.0#004,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,한눈에 보기 — 일정,city-guide,64,0,0,5aa7a2da7305c52e
 07_Aix_en_Provence_v2.0#005,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,시장·분수·세잔의 도시와 Marseille의 항구문화를 4박에 연결한 Provence 입문,city-guide,52,0,0,67d5df8bfc446075
 07_Aix_en_Provence_v2.0#006,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,1,Regional Context & Scheduled Place Dossiers,city-guide,0,0,0,
 07_Aix_en_Provence_v2.0#007,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,구역별 이해와 숙소 생활권,city-guide,56,0,0,974a0f0f39b3e22a
@@ -408,9 +437,9 @@
 07_Aix_en_Provence_v2.0#016,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Grasse {{grade:optional|선택}},city-guide,33,1,0,431acbb3261bca7e
 07_Aix_en_Provence_v2.0#017,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Cours Mirabeau {{grade:essential|필수}},city-guide,47,2,0,6707ee32388ac0de
 07_Aix_en_Provence_v2.0#018,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Vieil Aix — 구시가지 {{grade:essential|필수}},city-guide,41,1,0,6960046919d5be90
-07_Aix_en_Provence_v2.0#019,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,시장 — Place Richelme · Place des Prêcheurs {{grade:essential|필수}},city-guide,39,1,0,2677ef7fe8672b97
-07_Aix_en_Provence_v2.0#020,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Musée Granet {{grade:priority|우선추천}},city-guide,39,1,0,b03795da1774d967
-07_Aix_en_Provence_v2.0#021,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Atelier de Cézanne (Atelier des Lauves) {{grade:essential|필수}},city-guide,44,1,0,6830755f1b77f9ac
+07_Aix_en_Provence_v2.0#019,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Aix 시장 — Place Richelme · 목요 확장 구역 {{grade:essential|필수}},city-guide,42,1,0,0e17e8479d102b70
+07_Aix_en_Provence_v2.0#020,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Musée Granet {{grade:priority|우선추천}},city-guide,42,1,0,5734cc31726c2855
+07_Aix_en_Provence_v2.0#021,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Atelier de Cézanne (Atelier des Lauves) {{grade:essential|필수}},city-guide,48,1,0,ac9f023db6b390bf
 07_Aix_en_Provence_v2.0#022,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Montagne Sainte-Victoire · Terrain des Peintres {{grade:priority|우선추천}},city-guide,49,1,0,0c710de29d180579
 07_Aix_en_Provence_v2.0#023,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Bastide du Jas de Bouffan {{grade:optional|선택}},city-guide,40,1,0,fe86f8155175ef05
 07_Aix_en_Provence_v2.0#024,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,Carrières de Bibémus {{grade:optional|선택}},city-guide,42,1,0,7078b377b1181289
@@ -425,90 +454,90 @@
 07_Aix_en_Provence_v2.0#033,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,방문 업소,city-guide,30,2,0,36d65390ccc0b2c0
 07_Aix_en_Provence_v2.0#034,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,식사 원칙,city-guide,20,0,0,c07ec823e6c0718a
 07_Aix_en_Provence_v2.0#035,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,당일치기·우천·피로 대안,city-guide,0,0,0,
-07_Aix_en_Provence_v2.0#036,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 12 도착일 우천/지연,city-guide,30,0,0,44d27d0dcf1737d0
-07_Aix_en_Provence_v2.0#037,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 13 시내일 우천,city-guide,18,0,0,00efd7f5da88a700
-07_Aix_en_Provence_v2.0#038,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 14 Cassis 우천/기상악화,city-guide,23,0,0,6821d3ab2125a9d2
-07_Aix_en_Provence_v2.0#039,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 15 Marseille 우천,city-guide,18,0,0,a48b91e095973638
+07_Aix_en_Provence_v2.0#036,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 13 도착일 우천/지연,city-guide,30,0,0,44d27d0dcf1737d0
+07_Aix_en_Provence_v2.0#037,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 15 시내일 우천,city-guide,18,0,0,00efd7f5da88a700
+07_Aix_en_Provence_v2.0#038,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 16 Cassis 우천/기상악화,city-guide,23,0,0,6821d3ab2125a9d2
+07_Aix_en_Provence_v2.0#039,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 14 Marseille 우천,city-guide,18,0,0,a48b91e095973638
 07_Aix_en_Provence_v2.0#040,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,일정 조정 기준,city-guide,15,0,0,07041d5aecf241bd
 07_Aix_en_Provence_v2.0#041,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,예약·비용·안전·주차·귀가,city-guide,0,0,0,
-07_Aix_en_Provence_v2.0#042,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,확정 숙소와 생활권,city-guide,54,0,0,e00b39e5fa6a1932
-07_Aix_en_Provence_v2.0#043,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,핵심 예약 및 운영 확인,city-guide,55,0,0,ecde3b116c9be89d
+07_Aix_en_Provence_v2.0#042,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,확정 숙소와 생활권,city-guide,60,0,0,37c436a23705263c
+07_Aix_en_Provence_v2.0#043,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,핵심 예약 및 운영 확인,city-guide,57,0,0,105c2de35f7bd412
 07_Aix_en_Provence_v2.0#044,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,공식 확인 정보와 재확인 대상,city-guide,0,0,0,
 07_Aix_en_Provence_v2.0#045,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,2026년 체류기간 주요 전시와 행사,city-guide,34,0,0,399b0ec1b6610f4b
-07_Aix_en_Provence_v2.0#046,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,출발 전 최종 확인,city-guide,69,0,0,77bd47bac8828937
+07_Aix_en_Provence_v2.0#046,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,출발 전 최종 확인,city-guide,72,0,0,c67beeef5da782a9
 07_Aix_en_Provence_v2.0#047,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,공식 정보원,city-guide,39,0,0,f3e0442f51582b2b
-07_Aix_en_Provence_v2.0#048,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,142,0,0,61accc703e5870ae
+07_Aix_en_Provence_v2.0#048,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,141,0,0,4d09fabdb1ca28a9
 07_Aix_en_Provence_v2.0#049,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,실행지도 · 현장 사용,city-guide,47,3,0,bc6b9b2fab0f653e
-07_Aix_en_Provence_v2.0#050,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 12 — 9월 9일 수요일,city-guide,0,0,0,
-07_Aix_en_Provence_v2.0#051,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,Nice-Ville 렌터카 인수 → Saint-Paul-de-Vence → Grasse → Aix 체크인,city-guide,18,0,0,d5dc97088a5cc13a
-07_Aix_en_Provence_v2.0#052,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,127,0,0,9f18d6e78dfd8e6d
-07_Aix_en_Provence_v2.0#053,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 13 — 9월 10일 목요일,city-guide,0,0,0,
-07_Aix_en_Provence_v2.0#054,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,"Aix 목요 시장, Vieil Aix, 세잔 아틀리에와 Musée Granet",city-guide,18,0,0,94b90d07b71eef4a
-07_Aix_en_Provence_v2.0#055,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,111,0,0,bb0ec3c8ad40ba0e
-07_Aix_en_Provence_v2.0#056,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 14 — 9월 11일 금요일,city-guide,0,0,0,
-07_Aix_en_Provence_v2.0#057,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,Cassis & Calanques — 석회암 절벽과 지중해,city-guide,18,0,0,9a8ad08dbf8e2b69
-07_Aix_en_Provence_v2.0#058,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,110,0,0,f4d94407354b8783
-07_Aix_en_Provence_v2.0#059,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 15 — 9월 12일 토요일,city-guide,0,0,0,
-07_Aix_en_Provence_v2.0#060,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,마르세유 전일 당일치기 — 구항구·르 파니에·Mucem·노트르담 대성당,city-guide,17,0,0,6e1dda6a4015c573
-07_Aix_en_Provence_v2.0#061,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,152,0,0,32c2d134bd9fc30a
-07_Aix_en_Provence_v2.0#062,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 16 — 9월 13일 일요일,city-guide,0,0,0,
+07_Aix_en_Provence_v2.0#050,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 13 — 9월 10일 목요일,city-guide,0,0,0,
+07_Aix_en_Provence_v2.0#051,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,Moustiers 아침 → Route des Crêtes → Sainte-Croix → Valensole → Aix 체크인,city-guide,19,0,0,b15828b3102ee131
+07_Aix_en_Provence_v2.0#052,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,171,0,0,3aea28a1f3305342
+07_Aix_en_Provence_v2.0#053,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 14 — 9월 11일 금요일,city-guide,0,0,0,
+07_Aix_en_Provence_v2.0#054,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,마르세유 전일 당일치기 — 구항구·르 파니에·Mucem·노트르담 대성당,city-guide,17,0,0,6e1dda6a4015c573
+07_Aix_en_Provence_v2.0#055,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,159,0,0,f8fbec32d2f1d11c
+07_Aix_en_Provence_v2.0#056,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 15 — 9월 12일 토요일,city-guide,0,0,0,
+07_Aix_en_Provence_v2.0#057,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,"Aix 토요 대형시장, Vieil Aix, 세잔 아틀리에와 Musée Granet",city-guide,18,0,0,94b90d07b71eef4a
+07_Aix_en_Provence_v2.0#058,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,155,0,0,6874ae223df870aa
+07_Aix_en_Provence_v2.0#059,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 16 — 9월 13일 일요일,city-guide,0,0,0,
+07_Aix_en_Provence_v2.0#060,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,Cassis & Calanques — 석회암 절벽과 지중해,city-guide,18,0,0,9a8ad08dbf8e2b69
+07_Aix_en_Provence_v2.0#061,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,220,0,0,43626ecfc69085a2
+07_Aix_en_Provence_v2.0#062,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,2,Day 17 — 9월 14일 월요일,city-guide,0,0,0,
 07_Aix_en_Provence_v2.0#063,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,3,"Aix 체크아웃, Lourmarin을 거쳐 Gordes로",city-guide,26,0,0,57d99d23ce5b3f59
-07_Aix_en_Provence_v2.0#064,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,112,0,0,c3eee902878aa6e1
-08_Luberon_Farmhouse_v2.0#000,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,0,(preamble),city-guide,76,2,1,1e333ecdf7d8ba93
+07_Aix_en_Provence_v2.0#064,source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md,4,실행 시간표,city-guide,112,0,0,0f88c65d47726b8e
+08_Luberon_Farmhouse_v2.0#000,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,0,(preamble),city-guide,76,2,1,ec17ad42aff8fa72
 08_Luberon_Farmhouse_v2.0#001,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,1,Commercial Guide Module,city-guide,19,0,0,ab126407e8f33f61
-08_Luberon_Farmhouse_v2.0#002,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,43,0,0,24c29284b336db33
+08_Luberon_Farmhouse_v2.0#002,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,45,0,0,69cba7d192b954f1
 08_Luberon_Farmhouse_v2.0#003,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,이번 2박의 핵심,city-guide,50,0,0,735281c71f70dbae
-08_Luberon_Farmhouse_v2.0#004,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,한눈에 보기 — 일정,city-guide,48,0,0,5168f926a2bf64dd
-08_Luberon_Farmhouse_v2.0#005,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,"석조마을, 오커 지형, 수도원과 물의 Provence",city-guide,49,0,0,6197813a1a38ec85
+08_Luberon_Farmhouse_v2.0#004,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,한눈에 보기 — 일정,city-guide,58,0,0,fb83c369419a6154
+08_Luberon_Farmhouse_v2.0#005,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,"석조마을, 오커 지형, 수도원과 물의 Provence",city-guide,54,0,0,2101cb4385142061
 08_Luberon_Farmhouse_v2.0#006,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,1,Regional Context & Scheduled Place Dossiers,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#007,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,구역별 이해와 숙소 생활권,city-guide,50,0,0,0c5b97f7307726df
+08_Luberon_Farmhouse_v2.0#007,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,구역별 이해와 숙소 생활권,city-guide,54,0,0,b8edb9914c0fe990
 08_Luberon_Farmhouse_v2.0#008,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,도착·출발·지역 내 교통,city-guide,0,0,0,
 08_Luberon_Farmhouse_v2.0#009,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,이동은 렌터카,city-guide,14,0,0,859c1d9c93709d97
 08_Luberon_Farmhouse_v2.0#010,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,마을에서는 외곽에 주차하고 걷기,city-guide,20,0,0,5b201b6835a10d27
 08_Luberon_Farmhouse_v2.0#011,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Gordes로 돌아오는 시간,city-guide,19,0,0,9aa64b2a155b0821
-08_Luberon_Farmhouse_v2.0#012,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Avignon으로 출발하는 날,city-guide,23,0,0,b886d55c668779ba
+08_Luberon_Farmhouse_v2.0#012,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Avignon으로 출발하는 날,city-guide,20,0,0,e3fd5de7d1ff00fa
 08_Luberon_Farmhouse_v2.0#013,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,핵심 셀프가이드,city-guide,0,0,0,da39a3ee5e6b4b0d
 08_Luberon_Farmhouse_v2.0#014,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Lourmarin {{grade:essential|필수}},city-guide,39,1,0,0e00c48bff0f5aea
 08_Luberon_Farmhouse_v2.0#015,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Roussillon · Sentier des Ocres {{grade:essential|필수}},city-guide,40,1,0,72ea555f4be7fe4e
-08_Luberon_Farmhouse_v2.0#016,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Goult {{grade:optional|선택}},city-guide,33,1,0,2f574656ec5d3ee5
+08_Luberon_Farmhouse_v2.0#016,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Goult {{grade:optional|선택}},city-guide,33,1,0,3fb89deefeaddfc8
 08_Luberon_Farmhouse_v2.0#017,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Gordes {{grade:essential|필수}},city-guide,44,1,0,551033b06aa02cc1
-08_Luberon_Farmhouse_v2.0#018,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Abbaye Notre-Dame de Sénanque {{grade:essential|필수}},city-guide,40,1,0,4e926e4871edd94e
+08_Luberon_Farmhouse_v2.0#018,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Abbaye Notre-Dame de Sénanque {{grade:essential|필수}},city-guide,100,1,0,5688442c7a2557e2
 08_Luberon_Farmhouse_v2.0#019,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Ménerbes {{grade:optional|선택}},city-guide,30,1,0,15453f5ca83d401c
-08_Luberon_Farmhouse_v2.0#020,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Bonnieux {{grade:optional|선택}},city-guide,28,1,0,b66f49082f4442d1
-08_Luberon_Farmhouse_v2.0#021,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Lacoste {{grade:optional|선택}},city-guide,25,1,0,03c92f13aa87d512
+08_Luberon_Farmhouse_v2.0#020,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Bonnieux {{grade:optional|선택}},city-guide,28,1,0,c24cae56c0e3959b
+08_Luberon_Farmhouse_v2.0#021,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Lacoste {{grade:optional|선택}},city-guide,25,1,0,f2c103929aaf257e
 08_Luberon_Farmhouse_v2.0#022,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,L'Isle-sur-la-Sorgue {{grade:essential|필수}},city-guide,28,1,0,461ab8eeb239845f
 08_Luberon_Farmhouse_v2.0#023,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,4,Fontaine-de-Vaucluse {{grade:optional|선택}},city-guide,32,1,0,c0a7737c338f5299
 08_Luberon_Farmhouse_v2.0#024,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,음식·시장·카페·생활체험,city-guide,0,0,0,
 08_Luberon_Farmhouse_v2.0#025,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Luberon에서 맛볼 프로방스 식재료,city-guide,85,0,0,82654ce5ab1a07e3
-08_Luberon_Farmhouse_v2.0#026,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,이번 일정의 식사 배치,city-guide,56,0,0,6e25d0f2316f61a0
+08_Luberon_Farmhouse_v2.0#026,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,이번 일정의 식사 배치,city-guide,131,0,0,08baff089146df7c
 08_Luberon_Farmhouse_v2.0#027,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,당일치기·우천·피로 대안,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#028,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 16 Gordes 이동일 우천/지연,city-guide,15,0,0,d64a03e7e11e13ad
-08_Luberon_Farmhouse_v2.0#029,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 17 Roussillon 우천/기상악화,city-guide,27,0,0,c3a0a10daffcbd3b
-08_Luberon_Farmhouse_v2.0#030,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 18 이동일 우천/피로,city-guide,22,0,0,b21206f65be77a90
+08_Luberon_Farmhouse_v2.0#028,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 17 Gordes 이동일 우천/지연,city-guide,15,0,0,d64a03e7e11e13ad
+08_Luberon_Farmhouse_v2.0#029,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 18 Roussillon 우천/기상악화,city-guide,27,0,0,c3a0a10daffcbd3b
+08_Luberon_Farmhouse_v2.0#030,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 19 이동일 우천/피로,city-guide,22,0,0,b21206f65be77a90
 08_Luberon_Farmhouse_v2.0#031,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,일정 조정 기준,city-guide,14,0,0,9f55e6b715c5caba
 08_Luberon_Farmhouse_v2.0#032,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,예약·비용·안전·주차·귀가,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#033,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Gordes 숙소와 생활권,city-guide,37,0,0,288b8f4450e22ca2
-08_Luberon_Farmhouse_v2.0#034,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,핵심 안전 및 이동 확인,city-guide,40,0,0,fa8bc786a9443147
+08_Luberon_Farmhouse_v2.0#033,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Gordes 숙소와 생활권,city-guide,67,0,0,f3f0394a7780e7bd
+08_Luberon_Farmhouse_v2.0#034,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,핵심 안전 및 이동 확인,city-guide,40,0,0,a4cb5610cb9bc2ba
 08_Luberon_Farmhouse_v2.0#035,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,공식 확인 정보와 재확인 대상,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#036,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,2026년 체류기간 주요 행사,city-guide,22,0,0,588e72e07d311e54
-08_Luberon_Farmhouse_v2.0#037,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,출발 전 최종 확인,city-guide,49,0,0,e8b9d3a8749b1645
+08_Luberon_Farmhouse_v2.0#036,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,2026년 체류기간 주요 행사,city-guide,28,0,0,222e231da6cd433f
+08_Luberon_Farmhouse_v2.0#037,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,출발 전 최종 확인,city-guide,50,0,0,7d2770c6bae4e42b
 08_Luberon_Farmhouse_v2.0#038,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,공식 정보원,city-guide,34,0,0,a11f0f154bea3b6e
-08_Luberon_Farmhouse_v2.0#039,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,90,0,0,b0cd7b7ce6f12379
-08_Luberon_Farmhouse_v2.0#040,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,실행지도 · 현장 사용,city-guide,37,3,0,daf31689595b113b
-08_Luberon_Farmhouse_v2.0#041,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 16 — 9월 13일 일요일,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#042,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Aix 체크아웃 → Lourmarin → Gordes,city-guide,34,0,0,3ef21f83dc9a3c16
-08_Luberon_Farmhouse_v2.0#043,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 17 — 9월 14일 월요일,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#044,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Roussillon → 선택마을 → Sénanque → Gordes,city-guide,35,0,0,b9334996b1e4e894
-08_Luberon_Farmhouse_v2.0#045,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 18 — 9월 15일 화요일,city-guide,0,0,0,
-08_Luberon_Farmhouse_v2.0#046,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Gordes 체크아웃 → L'Isle-sur-la-Sorgue → Avignon,city-guide,33,0,0,54b839881cf87be6
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#000,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,0,(preamble),city-guide,73,2,1,9506821167135f33
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#001,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,1,Commercial Guide Module,city-guide,19,0,0,b8b1fa4eebe32d3b
+08_Luberon_Farmhouse_v2.0#039,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,113,0,0,f9ef920d2621ec99
+08_Luberon_Farmhouse_v2.0#040,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,실행지도 · 현장 사용,city-guide,37,3,0,180c2f7168fd70a9
+08_Luberon_Farmhouse_v2.0#041,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 17 — 9월 14일 월요일,city-guide,0,0,0,
+08_Luberon_Farmhouse_v2.0#042,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Aix 체크아웃 → Lourmarin → Lacoste → Gordes,city-guide,52,0,0,a35af0fe841d3d8f
+08_Luberon_Farmhouse_v2.0#043,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 18 — 9월 15일 화요일,city-guide,0,0,0,
+08_Luberon_Farmhouse_v2.0#044,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Gordes 화요시장 → Roussillon → Sénanque → [L'Isle 오후 왕복] → Gordes,city-guide,102,0,0,57d151fd39550efa
+08_Luberon_Farmhouse_v2.0#045,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,2,Day 19 — 9월 16일 수요일,city-guide,0,0,0,
+08_Luberon_Farmhouse_v2.0#046,source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md,3,Gordes 체크아웃 → Saint-Rémy 수요시장 → Les Baux → Avignon,city-guide,37,0,0,a977a6f0769332d8
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#000,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,0,(preamble),city-guide,73,2,1,b0c416d0a7a90e80
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#001,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,1,Commercial Guide Module,city-guide,19,0,0,aa3a352735d52fac
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#002,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,60,0,0,c04784d93c0e0734
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#003,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,이번 체류의 핵심,city-guide,60,0,0,8d2eee16195f7112
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#004,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,한눈에 보기 — 일정,city-guide,69,0,0,38ddf78047d9c7c1
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#004,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,한눈에 보기 — 일정,city-guide,63,0,0,d2ececfe6c7189bf
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#005,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,"교황도시, 로마 수도교와 아를의 실제 도시생활",city-guide,57,0,0,b7e2280e0c1145a3
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#006,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,1,Regional Context & Scheduled Place Dossiers,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#007,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,구역별 이해와 숙소 생활권,city-guide,48,0,0,944b044c96e3f525
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#007,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,구역별 이해와 숙소 생활권,city-guide,49,0,0,ca9af77738ed9c33
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#008,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,아침 운동,city-guide,27,0,0,cc7ad72de98128a4
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#009,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,도착·출발·지역 내 교통,city-guide,0,0,0,
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#010,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,시내에서는 걷기,city-guide,23,0,0,82ee4848322cbe2e
@@ -516,7 +545,7 @@
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#012,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Arles는 TER,city-guide,11,0,0,61dc0c799bd68b3f
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#013,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Lyon으로 출발하는 날,city-guide,18,0,0,044a617efe4fc5e9
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#014,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,핵심 셀프가이드,city-guide,0,0,0,da39a3ee5e6b4b0d
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#015,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,Saint-Rémy-de-Provence {{grade:essential|필수}},city-guide,36,1,0,32f8373081363a24
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#015,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,Saint-Rémy-de-Provence {{grade:essential|필수}},city-guide,36,1,0,098a1fa033008554
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#016,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,Les Baux-de-Provence {{grade:essential|필수}},city-guide,29,1,0,2ad5bfa6675512d6
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#017,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,Orange {{grade:optional|선택}},city-guide,29,1,0,62b447c26f1db794
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#018,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,Les Halles d'Avignon {{grade:essential|필수}},city-guide,40,1,0,5f976cdf61bf96a5
@@ -539,39 +568,37 @@
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#035,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,Le Gibolin {{grade:essential|필수}},city-guide,22,1,0,08c309fe5c583617
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#036,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,음식·시장·카페·생활체험,city-guide,0,0,0,
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#037,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,아비뇽과 서부 프로방스에서 맛볼 식재료,city-guide,108,0,0,bfc33591c4ea0feb
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#038,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,시장과 장보기,city-guide,54,3,0,37062d297328bc32
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#038,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,시장과 장보기,city-guide,54,3,0,e99d0b1df377c380
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#039,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,일정에서 이용하는 식당과 카페,city-guide,0,0,0,
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#040,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,방문 업소,city-guide,50,3,0,2d20bcca373f920d
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#041,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,식사 원칙,city-guide,28,0,0,0a1acea397cfa2c0
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#041,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,식사 원칙,city-guide,26,0,0,bafd96aad19bded0
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#042,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,당일치기·우천·피로 대안,city-guide,0,0,0,
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#043,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 20 Uzès / Pont du Gard 우천/지연,city-guide,25,0,0,4f5026868450de27
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#044,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 21 Arles 비/폭염,city-guide,17,0,0,68631a0b9b55f2a0
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#045,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 22 Avignon 시내 피로 대안,city-guide,18,0,0,404521852f45cae6
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#046,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,예약·비용·안전·주차·귀가,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#047,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,숙소와 생활권,city-guide,45,0,0,fb35e14afa818b44
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#047,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,숙소와 생활권,city-guide,86,0,0,39ea03cf5664ea1a
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#048,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,핵심 안전 및 이동 확인,city-guide,44,0,0,5d09a417fd406c3f
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#049,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,공식 확인 정보와 재확인 대상,city-guide,0,0,0,
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#050,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,2026년 체류기간 주요 행사,city-guide,20,0,0,cf5a1d1de2a1d7ef
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#051,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,출발 전 최종 확인,city-guide,64,0,0,4ff4a7a66d77b5b6
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#052,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,공식 정보원,city-guide,36,0,0,66107b6be4160d2a
 09_Avignon_Alpilles_Pont_du_Gard_v2.0#053,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,109,0,0,422ac09b07b10e8d
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#054,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,실행지도 · 현장 사용,city-guide,38,3,0,49068d7e7eb84e0b
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#055,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 18 — 9월 15일 화요일,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#056,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,L'Isle의 물길을 지나 Avignon 5박 시작,city-guide,37,0,0,451060658173c566
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#057,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 19 — 9월 16일 수요일,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#058,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,Saint-Rémy 시장과 Les Baux의 Alpilles 풍경,city-guide,50,0,0,0156f10ae98bbf0a
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#059,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 20 — 9월 17일 목요일,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#060,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,가르 지방·님 로마유적과 렌터카 최종 반납,city-guide,19,0,0,57c0c2fc58be89ee
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#061,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,129,0,0,ec1981a5652f6371
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#062,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 21 — 9월 18일 금요일,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#063,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,Arles 철도 당일치기,city-guide,21,0,0,b1ce04670d870875
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#064,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,137,0,0,845d20bdf423f748
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#065,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 22 — 9월 19일 토요일,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#066,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,아비뇽 핵심 도시일 (도보),city-guide,20,0,0,aa0f2d5b84cd39cc
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#067,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,110,0,0,241dac78fd031e69
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#068,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 23 — 9월 20일 일요일,city-guide,0,0,0,
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#069,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,TGV 이동 & Lyon 적응,city-guide,17,0,0,a370d5708e92cba8
-09_Avignon_Alpilles_Pont_du_Gard_v2.0#070,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,70,0,0,d767ba6e6c21a7dd
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#054,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,실행지도 · 현장 사용,city-guide,38,3,0,646f31de955f886e
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#055,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 19 — 9월 16일 수요일,city-guide,0,0,0,
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#056,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,Gordes 체크아웃 → Saint-Rémy 수요시장 → Les Baux → Avignon 4박 시작,city-guide,63,0,0,c38e6cf726457a1a
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#057,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 20 — 9월 17일 목요일,city-guide,0,0,0,
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#058,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,가르 지방·님 로마유적과 렌터카 최종 반납,city-guide,19,0,0,57c0c2fc58be89ee
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#059,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,129,0,0,ec1981a5652f6371
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#060,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 21 — 9월 18일 금요일,city-guide,0,0,0,
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#061,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,Arles 철도 당일치기,city-guide,21,0,0,b1ce04670d870875
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#062,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,137,0,0,845d20bdf423f748
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#063,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 22 — 9월 19일 토요일,city-guide,0,0,0,
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#064,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,아비뇽 핵심 도시일 (도보),city-guide,20,0,0,aa0f2d5b84cd39cc
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#065,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,110,0,0,241dac78fd031e69
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#066,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,2,Day 23 — 9월 20일 일요일,city-guide,0,0,0,
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#067,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,3,TGV 이동 & Lyon 적응,city-guide,17,0,0,a370d5708e92cba8
+09_Avignon_Alpilles_Pont_du_Gard_v2.0#068,source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md,4,실행 시간표,city-guide,70,0,0,d767ba6e6c21a7dd
 10_Lyon_v2.0#000,source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md,0,(preamble),city-guide,78,2,1,c8cd219938e37f74
 10_Lyon_v2.0#001,source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md,1,Commercial Guide Module,city-guide,17,0,0,dba3304408ef61ca
 10_Lyon_v2.0#002,source/CURRENT/20_Regional_Chapters/10_Lyon_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,51,0,0,99bd240bd9ee799d
@@ -633,8 +660,8 @@
 11_Paris_Long_Stay_v2.0#000,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,0,(preamble),city-guide,82,2,1,fd9dd554eca5a608
 11_Paris_Long_Stay_v2.0#001,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,1,Commercial Guide Module,city-guide,0,0,0,
 11_Paris_Long_Stay_v2.0#002,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Editor’s Verdict — 이 지역에 시간을 쓸 가치와 한계,city-guide,64,0,0,52a01932e13df705
-11_Paris_Long_Stay_v2.0#003,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,이번 15박 체류의 핵심,city-guide,64,0,0,b25c6ffcaa919485
-11_Paris_Long_Stay_v2.0#004,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,한눈에 보기 — 일정,city-guide,237,0,0,8b0da416e01db062
+11_Paris_Long_Stay_v2.0#003,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,이번 15박 체류의 핵심,city-guide,64,0,0,32c04db87b86071e
+11_Paris_Long_Stay_v2.0#004,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,한눈에 보기 — 일정,city-guide,253,0,0,58ac4a5107e79914
 11_Paris_Long_Stay_v2.0#005,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,1,Regional Context & Scheduled Place Dossiers,city-guide,0,0,0,
 11_Paris_Long_Stay_v2.0#006,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,구역별 이해와 숙소 생활권,city-guide,0,0,0,
 11_Paris_Long_Stay_v2.0#007,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,숙소와 15구 생활권,city-guide,65,0,0,6d91d915c67c7108
@@ -643,14 +670,14 @@
 11_Paris_Long_Stay_v2.0#010,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,평소에는 Metro와 도보,city-guide,28,0,0,374c5fa1ea717205
 11_Paris_Long_Stay_v2.0#011,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,오후 일정은 생활권에서 한 번에 이동,city-guide,22,0,0,8858dbd0f0f9c071
 11_Paris_Long_Stay_v2.0#012,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,대중교통 이용권 전략,city-guide,108,0,0,caa7aa42ec6eab30
-11_Paris_Long_Stay_v2.0#013,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,근교일은 철도,city-guide,13,0,0,c550adf0e73b1627
+11_Paris_Long_Stay_v2.0#013,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,근교일은 철도,city-guide,13,0,0,92ebb26d74aceaba
 11_Paris_Long_Stay_v2.0#014,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,출국일은 CDG 이동,city-guide,31,0,0,7ddcf445200f0d88
 11_Paris_Long_Stay_v2.0#015,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,핵심 셀프가이드,city-guide,0,0,0,da39a3ee5e6b4b0d
 11_Paris_Long_Stay_v2.0#016,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Grand Palais {{grade:essential|필수}},city-guide,40,1,0,92e3d9e2be8021c1
 11_Paris_Long_Stay_v2.0#017,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Musée du Luxembourg {{grade:essential|필수}},city-guide,34,1,0,927b5c2ac134cb10
 11_Paris_Long_Stay_v2.0#018,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Musée de l'Orangerie {{grade:essential|필수}},city-guide,44,1,0,2385a865b54336a9
 11_Paris_Long_Stay_v2.0#019,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Musée Gustave Moreau {{grade:essential|필수}},city-guide,34,1,0,899813f3665d53e3
-11_Paris_Long_Stay_v2.0#020,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Musée d'Orsay {{grade:essential|필수}},city-guide,53,1,0,7a173108333b60ad
+11_Paris_Long_Stay_v2.0#020,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Musée d'Orsay {{grade:essential|필수}},city-guide,55,1,0,df9114642a76acc9
 11_Paris_Long_Stay_v2.0#021,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Musée Rodin {{grade:essential|필수}},city-guide,39,1,0,ef90a62fcedb2fdc
 11_Paris_Long_Stay_v2.0#022,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Petit Palais {{grade:essential|필수}},city-guide,35,1,0,fdc7ed4409da33a4
 11_Paris_Long_Stay_v2.0#023,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Château de Versailles {{grade:essential|필수}},city-guide,46,1,0,7b558c160aa999bc
@@ -675,80 +702,95 @@
 11_Paris_Long_Stay_v2.0#042,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Café du Commerce {{grade:essential|필수}},city-guide,16,1,0,b0f9dc1c0868b796
 11_Paris_Long_Stay_v2.0#043,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Le Grand Pan {{grade:essential|필수}},city-guide,20,1,0,1040acba696c6d66
 11_Paris_Long_Stay_v2.0#044,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Bouillon Chartier Montparnasse {{grade:essential|필수}},city-guide,18,1,0,9d973d030acf7057
-11_Paris_Long_Stay_v2.0#045,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,음식·시장·카페·생활체험,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#046,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,15구에서 반복해서 이용하기,city-guide,65,2,0,66dab44a6a372173
-11_Paris_Long_Stay_v2.0#047,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,시장과 장보기,city-guide,29,0,0,747a2def2e3782fb
-11_Paris_Long_Stay_v2.0#048,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Paris에서 맛볼 식재료와 음식,city-guide,92,0,0,2afc6aaecf08333e
-11_Paris_Long_Stay_v2.0#049,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,일정에서 이용하는 식당과 카페,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#050,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,방문 업소,city-guide,52,3,0,adad084d087f8604
-11_Paris_Long_Stay_v2.0#051,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,식사 원칙,city-guide,22,0,0,b62a54a31fcef413
-11_Paris_Long_Stay_v2.0#052,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,당일치기·우천·피로 대안,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#053,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,비 오는 날의 대안,city-guide,28,0,0,6240f0ea455b0414
-11_Paris_Long_Stay_v2.0#054,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,피로 누적 시 대안,city-guide,25,0,0,b750a4649b69a712
-11_Paris_Long_Stay_v2.0#055,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,예약·비용·안전·주차·귀가,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#056,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,출국 항공편,city-guide,16,0,0,6a61f0fe40123f5b
-11_Paris_Long_Stay_v2.0#057,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,숙소와 생활권,city-guide,24,0,0,fd7fbb3b9ec66c83
-11_Paris_Long_Stay_v2.0#058,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,주요 예약 및 안전 원칙,city-guide,40,0,0,d063635a2d0c27c6
-11_Paris_Long_Stay_v2.0#059,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,공식 확인 정보와 재확인 대상,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#060,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,출발 전 최종 확인,city-guide,123,0,0,9453395dcf289407
-11_Paris_Long_Stay_v2.0#061,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,공식 정보원,city-guide,48,0,0,c2586bc86b2f7e1c
-11_Paris_Long_Stay_v2.0#062,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,93,0,0,2326345ba3a90205
-11_Paris_Long_Stay_v2.0#063,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,실행지도 · 현장 사용,city-guide,32,3,0,0cecb8835f2f8636
-11_Paris_Long_Stay_v2.0#064,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 27 — 2026-09-24,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#065,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,"Lyon→Paris, 17일 거주자가 되는 날",city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#066,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,152,0,0,abadc73d3be2d50f
-11_Paris_Long_Stay_v2.0#067,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 28 — 2026-09-25,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#068,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,파리 시티투어 풀 루프 & 그랑 팔레 세잔 특별전,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#069,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,136,0,0,3012c93400dcd6ee
-11_Paris_Long_Stay_v2.0#070,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 29 — 2026-09-26,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#071,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,뤽상부르 워홀전 & 생제르맹 지성 산책 & 노트르담,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#072,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,135,0,0,d63a4b037ddef44f
-11_Paris_Long_Stay_v2.0#073,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 30 — 2026-09-27,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#074,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,오랑주리 수련 연작 & 튀일르리·팔레 루아얄 고전 파리,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#075,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,136,0,0,58a5bf9eb80d1be6
-11_Paris_Long_Stay_v2.0#076,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 31 — 2026-09-28,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#077,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,모로 아틀리에 & 파리 패션위크 개막 & 마레 지구,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#078,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,119,0,0,644f8d5ec50bd2a1
-11_Paris_Long_Stay_v2.0#079,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 32 — 2026-09-29,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#080,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,오르세 미술관 집중 관람 & 로댕 조각 정원,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#081,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,149,0,0,fa9e20e5773e7685
-11_Paris_Long_Stay_v2.0#082,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 33 — 2026-09-30,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#083,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,프티 팔레 & 몽테뉴 패션위크 & 팔레 드 도쿄,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#084,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,107,0,0,1c9964d4e41ffe42
-11_Paris_Long_Stay_v2.0#085,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 34 — 2026-10-01,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#086,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,베르사유 궁전 & 대정원 & 트리아농 전일 투어,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#087,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,137,0,0,6382c8a201afe1c6
-11_Paris_Long_Stay_v2.0#088,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 35 — 2026-10-02,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#089,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,루브르 박물관 4시간 마스터피스 집중 관람,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#090,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,95,0,0,57952af96830964f
-11_Paris_Long_Stay_v2.0#091,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 36 — 2026-10-03,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#092,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,"마르모탕 모네 <인상, 해돋이> & 파시 고급 지구 산책",city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#093,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,115,0,0,ee0d56b7d554967d
-11_Paris_Long_Stay_v2.0#094,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 37 — 2026-10-04,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#095,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,개선문상 경마 대회 (Qatar Prix de l'Arc de Triomphe),city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#096,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,88,0,0,ded4f29afa8cae1e
-11_Paris_Long_Stay_v2.0#097,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 38 — 2026-10-05,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#098,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,개선문상 후 회복 & 자크마르-앙드레 & 몽소 공원,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#099,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,96,0,0,06e0a305ae5c058a
-11_Paris_Long_Stay_v2.0#100,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 39 — 2026-10-06,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#101,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,오르세 카사트 특별전 개막 & 마레 지구 예술 산책,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#102,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,112,0,0,1bdf5e4ce52f12a7
-11_Paris_Long_Stay_v2.0#103,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 40 — 2026-10-07,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#104,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,부르스 드 코메르스 개막일 & 몽마르트르 포도 수확 축제,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#105,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,102,0,0,861abd40a922e7d1
-11_Paris_Long_Stay_v2.0#106,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 41 — 2026-10-08,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#107,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,기메 동양미술관 & 파리 현대미술관 & 트로카데로 고별 일몰,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#108,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,144,0,0,aba9644ac8c99c1d
-11_Paris_Long_Stay_v2.0#109,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 42 — 2026-10-09,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#110,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,파리 15박 체크아웃 ➔ CDG 공항 ➔ 인천 귀국 (OZ502),city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#111,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,102,0,0,3a22e308594dd28d
-11_Paris_Long_Stay_v2.0#112,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 43 — 2026-10-10,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#113,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,기내와 인천 도착 — 43일의 끝,city-guide,0,0,0,
-11_Paris_Long_Stay_v2.0#114,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,55,0,0,8a0ea41855691a1b
+11_Paris_Long_Stay_v2.0#045,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Au Petit Riche {{grade:essential|필수}},city-guide,27,1,0,d4dcd10b8aa7fde7
+11_Paris_Long_Stay_v2.0#046,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Café Varenne {{grade:essential|필수}},city-guide,28,1,0,9ea7e2308d7c74ee
+11_Paris_Long_Stay_v2.0#047,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Chez Savy {{grade:essential|필수}},city-guide,27,1,0,711cd64cbd605a99
+11_Paris_Long_Stay_v2.0#048,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,La Flottille {{grade:priority|우선추천}},city-guide,24,1,0,05f6d9fd455e496f
+11_Paris_Long_Stay_v2.0#049,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Aux Crus de Bourgogne {{grade:essential|필수}},city-guide,28,1,0,db5748e840e44d89
+11_Paris_Long_Stay_v2.0#050,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Les Marches {{grade:essential|필수}},city-guide,28,1,0,030e5cad7b46a421
+11_Paris_Long_Stay_v2.0#051,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Stéphane Martin {{grade:priority|우선추천}},city-guide,25,1,0,d03bd1c959b63d3b
+11_Paris_Long_Stay_v2.0#052,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Le Volant Basque {{grade:priority|우선추천}},city-guide,29,1,0,d41041ac1303ece2
+11_Paris_Long_Stay_v2.0#053,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Guylas {{grade:priority|우선추천}},city-guide,23,1,0,05559239ff16866d
+11_Paris_Long_Stay_v2.0#054,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Sawadee {{grade:optional|선택}},city-guide,22,1,0,028309375ec0ff5f
+11_Paris_Long_Stay_v2.0#055,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Breizh Café Charles Michels {{grade:priority|우선추천}},city-guide,27,1,0,e04429bbc7391280
+11_Paris_Long_Stay_v2.0#056,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Le Relais du 15ème {{grade:optional|선택}},city-guide,27,1,0,c1741748bc734acf
+11_Paris_Long_Stay_v2.0#057,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Chez Janou {{grade:priority|우선추천}},city-guide,25,1,0,07869ac0259bf08d
+11_Paris_Long_Stay_v2.0#058,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Le Progrès {{grade:priority|우선추천}},city-guide,27,1,0,a65df820f5d9ed94
+11_Paris_Long_Stay_v2.0#059,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,Bouillon Racine {{grade:priority|우선추천}},city-guide,23,1,0,e1967fc02fb58ea0
+11_Paris_Long_Stay_v2.0#060,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,음식·시장·카페·생활체험,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#061,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,15구에서 반복해서 이용하기,city-guide,65,2,0,66dab44a6a372173
+11_Paris_Long_Stay_v2.0#062,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,시장과 장보기,city-guide,29,0,0,747a2def2e3782fb
+11_Paris_Long_Stay_v2.0#063,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Paris에서 맛볼 식재료와 음식,city-guide,92,0,0,2afc6aaecf08333e
+11_Paris_Long_Stay_v2.0#064,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,일정에서 이용하는 식당과 카페,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#065,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,방문 업소,city-guide,367,18,0,a3e4aa07b173daa0
+11_Paris_Long_Stay_v2.0#066,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,식사 원칙,city-guide,22,0,0,b62a54a31fcef413
+11_Paris_Long_Stay_v2.0#067,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,당일치기·우천·피로 대안,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#068,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,비 오는 날의 대안,city-guide,28,0,0,6240f0ea455b0414
+11_Paris_Long_Stay_v2.0#069,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,피로 누적 시 대안,city-guide,25,0,0,b750a4649b69a712
+11_Paris_Long_Stay_v2.0#070,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,예약·비용·안전·주차·귀가,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#071,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,출국 항공편,city-guide,16,0,0,6a61f0fe40123f5b
+11_Paris_Long_Stay_v2.0#072,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,숙소와 생활권,city-guide,24,0,0,fd7fbb3b9ec66c83
+11_Paris_Long_Stay_v2.0#073,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,주요 예약 및 안전 원칙,city-guide,44,0,0,d92ade7d313cfe02
+11_Paris_Long_Stay_v2.0#074,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,공식 확인 정보와 재확인 대상,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#075,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,출발 전 최종 확인,city-guide,129,0,0,789466b51a21bd45
+11_Paris_Long_Stay_v2.0#076,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,공식 정보원,city-guide,48,0,0,c2586bc86b2f7e1c
+11_Paris_Long_Stay_v2.0#077,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,검증 상태 — 보강본 근거,city-guide,97,0,0,3805bd31e5bd0960
+11_Paris_Long_Stay_v2.0#078,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,실행지도 · 현장 사용,city-guide,32,3,0,0cecb8835f2f8636
+11_Paris_Long_Stay_v2.0#079,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 27 — 2026-09-24,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#080,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,"Lyon→Paris, 17일 거주자가 되는 날",city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#081,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,152,0,0,abadc73d3be2d50f
+11_Paris_Long_Stay_v2.0#082,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 28 — 2026-09-25,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#083,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,파리 시티투어 풀 루프 & 그랑 팔레 세잔 특별전,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#084,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,136,0,0,3012c93400dcd6ee
+11_Paris_Long_Stay_v2.0#085,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 29 — 2026-09-26,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#086,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,뤽상부르 워홀전 & 생제르맹 지성 산책 & 노트르담,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#087,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,135,0,0,d63a4b037ddef44f
+11_Paris_Long_Stay_v2.0#088,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 30 — 2026-09-27,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#089,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,Belle Époque & Classical Paris — 프티 팔레·튀일르리·팔레 루아얄,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#090,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,151,0,0,a4ff9cbf0b0f24df
+11_Paris_Long_Stay_v2.0#091,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 31 — 2026-09-28,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#092,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,모로 아틀리에 & 파리 패션위크 개막 & 마레 지구,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#093,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,119,0,0,644f8d5ec50bd2a1
+11_Paris_Long_Stay_v2.0#094,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 32 — 2026-09-29,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#095,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,베르사유 궁전 & 대정원 & 트리아농 전일 투어,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#096,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,115,0,0,de9074c16eef9584
+11_Paris_Long_Stay_v2.0#097,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 33 — 2026-09-30,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#098,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,Monet & Contemporary Paris / Fashion — 오랑주리·패션위크·팔레 드 도쿄,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#099,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,119,0,0,4c62d63083af66c1
+11_Paris_Long_Stay_v2.0#100,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 34 — 2026-10-01,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#101,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,인상주의 & 조각 — 오르세 상설·로댕,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#102,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,111,0,0,c5bb326fe3c6d7ae
+11_Paris_Long_Stay_v2.0#103,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 35 — 2026-10-02,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#104,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,루브르 박물관 4시간 마스터피스 집중 관람,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#105,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,95,0,0,57952af96830964f
+11_Paris_Long_Stay_v2.0#106,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 36 — 2026-10-03,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#107,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,"마르모탕 모네 <인상, 해돋이> & 파시 고급 지구 산책",city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#108,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,115,0,0,ee0d56b7d554967d
+11_Paris_Long_Stay_v2.0#109,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 37 — 2026-10-04,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#110,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,개선문상 경마 대회 (Qatar Prix de l'Arc de Triomphe),city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#111,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,88,0,0,ded4f29afa8cae1e
+11_Paris_Long_Stay_v2.0#112,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 38 — 2026-10-05,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#113,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,개선문상 후 회복 & 자크마르-앙드레 & 몽소 공원,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#114,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,96,0,0,06e0a305ae5c058a
+11_Paris_Long_Stay_v2.0#115,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 39 — 2026-10-06,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#116,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,오르세 카사트 특별전 개막 & 마레 지구 예술 산책,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#117,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,112,0,0,1bdf5e4ce52f12a7
+11_Paris_Long_Stay_v2.0#118,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 40 — 2026-10-07,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#119,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,부르스 드 코메르스 개막일 & 몽마르트르 포도 수확 축제,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#120,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,102,0,0,861abd40a922e7d1
+11_Paris_Long_Stay_v2.0#121,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 41 — 2026-10-08,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#122,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,기메 동양미술관 & 파리 현대미술관 & 트로카데로 고별 일몰,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#123,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,144,0,0,aba9644ac8c99c1d
+11_Paris_Long_Stay_v2.0#124,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 42 — 2026-10-09,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#125,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,파리 15박 체크아웃 ➔ CDG 공항 ➔ 인천 귀국 (OZ502),city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#126,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,102,0,0,3a22e308594dd28d
+11_Paris_Long_Stay_v2.0#127,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,2,Day 43 — 2026-10-10,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#128,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,3,기내와 인천 도착 — 43일의 끝,city-guide,0,0,0,
+11_Paris_Long_Stay_v2.0#129,source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md,4,실행 시간표,city-guide,55,0,0,8a0ea41855691a1b
 aix#000,source/CURRENT/20_Regions/aix.md,0,(preamble),reference,10,0,0,276c5405b2c6fbe6
 aix#001,source/CURRENT/20_Regions/aix.md,2,Aix-en-Provence를 이렇게 본다,reference,63,0,0,367876dd205c18e9
 aix#002,source/CURRENT/20_Regions/aix.md,3,이번 체류의 핵심,reference,51,0,0,655800f4819f0f4f
-aix#003,source/CURRENT/20_Regions/aix.md,2,일정,reference,62,0,0,f2ec32e441ffb6c8
+aix#003,source/CURRENT/20_Regions/aix.md,2,일정,reference,64,0,0,5aa7a2da7305c52e
 aix#004,source/CURRENT/20_Regions/aix.md,2,숙소와 생활권,reference,56,0,0,974a0f0f39b3e22a
 aix#005,source/CURRENT/20_Regions/aix.md,3,아침 운동,reference,22,0,0,e5c3943b2c3c38a3
 aix#006,source/CURRENT/20_Regions/aix.md,2,Aix에서 이동하기,reference,0,0,0,
@@ -765,8 +807,8 @@ aix#016,source/CURRENT/20_Regions/aix.md,4,식사 원칙,reference,20,0,0,c07ec8
 avignon#000,source/CURRENT/20_Regions/avignon.md,0,(preamble),reference,12,0,0,2f9e04efd2114b64
 avignon#001,source/CURRENT/20_Regions/avignon.md,2,Avignon과 서부 Provence를 이렇게 본다,reference,60,0,0,c04784d93c0e0734
 avignon#002,source/CURRENT/20_Regions/avignon.md,3,이번 체류의 핵심,reference,60,0,0,8d2eee16195f7112
-avignon#003,source/CURRENT/20_Regions/avignon.md,2,일정,reference,69,0,0,38ddf78047d9c7c1
-avignon#004,source/CURRENT/20_Regions/avignon.md,2,숙소와 생활권,reference,48,0,0,944b044c96e3f525
+avignon#003,source/CURRENT/20_Regions/avignon.md,2,일정,reference,63,0,0,d2ececfe6c7189bf
+avignon#004,source/CURRENT/20_Regions/avignon.md,2,숙소와 생활권,reference,49,0,0,ca9af77738ed9c33
 avignon#005,source/CURRENT/20_Regions/avignon.md,4,아침 운동,reference,27,0,0,cc7ad72de98128a4
 avignon#006,source/CURRENT/20_Regions/avignon.md,2,Avignon에서 이동하기,reference,0,0,0,
 avignon#007,source/CURRENT/20_Regions/avignon.md,3,시내에서는 걷기,reference,23,0,0,82ee4848322cbe2e
@@ -775,10 +817,10 @@ avignon#009,source/CURRENT/20_Regions/avignon.md,3,Arles는 TER,reference,11,0,0
 avignon#010,source/CURRENT/20_Regions/avignon.md,3,Lyon으로 출발하는 날,reference,18,0,0,044a617efe4fc5e9
 avignon#011,source/CURRENT/20_Regions/avignon.md,2,먹고 장보기,reference,0,0,0,
 avignon#012,source/CURRENT/20_Regions/avignon.md,3,아비뇽과 서부 프로방스에서 맛볼 식재료,reference,108,0,0,bfc33591c4ea0feb
-avignon#013,source/CURRENT/20_Regions/avignon.md,3,시장과 장보기,reference,54,3,0,37062d297328bc32
+avignon#013,source/CURRENT/20_Regions/avignon.md,3,시장과 장보기,reference,54,3,0,e99d0b1df377c380
 avignon#014,source/CURRENT/20_Regions/avignon.md,3,일정에서 이용하는 식당과 카페,reference,0,0,0,
 avignon#015,source/CURRENT/20_Regions/avignon.md,4,방문 업소,reference,50,3,0,2d20bcca373f920d
-avignon#016,source/CURRENT/20_Regions/avignon.md,4,식사 원칙,reference,28,0,0,0a1acea397cfa2c0
+avignon#016,source/CURRENT/20_Regions/avignon.md,4,식사 원칙,reference,26,0,0,bafd96aad19bded0
 barcelona#000,source/CURRENT/20_Regions/barcelona.md,0,(preamble),reference,9,0,0,7e713b27485fbd83
 barcelona#001,source/CURRENT/20_Regions/barcelona.md,2,바르셀로나와 시체스를 이렇게 본다,reference,69,0,0,53108bed799a4dcd
 barcelona#002,source/CURRENT/20_Regions/barcelona.md,3,이번 3박의 핵심,reference,62,0,0,12ad5da23568eb8b
@@ -811,18 +853,18 @@ girona#014,source/CURRENT/20_Regions/girona.md,3,일정에서 이용하는 식�
 girona#015,source/CURRENT/20_Regions/girona.md,4,방문 업소,reference,24,1,0,5f7e3ca57d9ad974
 girona#016,source/CURRENT/20_Regions/girona.md,4,일정별 식사 전략,reference,64,0,0,c456192f9b7a9bd5
 luberon#000,source/CURRENT/20_Regions/luberon.md,0,(preamble),reference,9,0,0,678034d911ad14a2
-luberon#001,source/CURRENT/20_Regions/luberon.md,2,Luberon을 이렇게 본다,reference,43,0,0,24c29284b336db33
+luberon#001,source/CURRENT/20_Regions/luberon.md,2,Luberon을 이렇게 본다,reference,45,0,0,69cba7d192b954f1
 luberon#002,source/CURRENT/20_Regions/luberon.md,3,이번 2박의 핵심,reference,50,0,0,735281c71f70dbae
-luberon#003,source/CURRENT/20_Regions/luberon.md,2,일정,reference,48,0,0,5168f926a2bf64dd
-luberon#004,source/CURRENT/20_Regions/luberon.md,2,농가와 생활권,reference,50,0,0,0c5b97f7307726df
+luberon#003,source/CURRENT/20_Regions/luberon.md,2,일정,reference,58,0,0,fb83c369419a6154
+luberon#004,source/CURRENT/20_Regions/luberon.md,2,농가와 생활권,reference,54,0,0,b8edb9914c0fe990
 luberon#005,source/CURRENT/20_Regions/luberon.md,2,Luberon에서 이동하기,reference,0,0,0,
 luberon#006,source/CURRENT/20_Regions/luberon.md,3,이동은 렌터카,reference,14,0,0,859c1d9c93709d97
 luberon#007,source/CURRENT/20_Regions/luberon.md,3,마을에서는 외곽에 주차하고 걷기,reference,20,0,0,5b201b6835a10d27
 luberon#008,source/CURRENT/20_Regions/luberon.md,3,Gordes로 돌아오는 시간,reference,19,0,0,9aa64b2a155b0821
-luberon#009,source/CURRENT/20_Regions/luberon.md,3,Avignon으로 출발하는 날,reference,23,0,0,b886d55c668779ba
+luberon#009,source/CURRENT/20_Regions/luberon.md,3,Avignon으로 출발하는 날,reference,20,0,0,e3fd5de7d1ff00fa
 luberon#010,source/CURRENT/20_Regions/luberon.md,2,먹고 장보기,reference,0,0,0,
 luberon#011,source/CURRENT/20_Regions/luberon.md,3,Luberon에서 맛볼 프로방스 식재료,reference,85,0,0,82654ce5ab1a07e3
-luberon#012,source/CURRENT/20_Regions/luberon.md,3,이번 일정의 식사 배치,reference,56,0,0,6e25d0f2316f61a0
+luberon#012,source/CURRENT/20_Regions/luberon.md,3,이번 일정의 식사 배치,reference,131,0,0,08baff089146df7c
 lyon#000,source/CURRENT/20_Regions/lyon.md,0,(preamble),reference,8,0,0,3655a0fb1e527577
 lyon#001,source/CURRENT/20_Regions/lyon.md,2,Lyon을 이렇게 본다,reference,51,0,0,99bd240bd9ee799d
 lyon#002,source/CURRENT/20_Regions/lyon.md,3,이번 4박의 핵심,reference,45,0,0,a434f0b0b32ed985
@@ -843,7 +885,7 @@ lyon#016,source/CURRENT/20_Regions/lyon.md,4,식사 원칙,reference,19,0,0,5c61
 nice#000,source/CURRENT/20_Regions/nice.md,0,(preamble),reference,11,0,0,fbb381c3793c500c
 nice#001,source/CURRENT/20_Regions/nice.md,2,Nice와 Côte d'Azur를 이렇게 본다,reference,97,0,0,76afd6f650c37a85
 nice#002,source/CURRENT/20_Regions/nice.md,3,이번 5박의 핵심,reference,62,0,0,75143a033eb31e37
-nice#003,source/CURRENT/20_Regions/nice.md,2,일정,reference,61,0,0,64667bdc19fa8f17
+nice#003,source/CURRENT/20_Regions/nice.md,2,일정,reference,63,0,0,ca532f4d1e93e4c3
 nice#004,source/CURRENT/20_Regions/nice.md,2,숙소와 생활권,reference,58,0,0,ac05e2048591b5bb
 nice#005,source/CURRENT/20_Regions/nice.md,3,생활과 회복,reference,43,0,0,b01b36a7736437cf
 nice#006,source/CURRENT/20_Regions/nice.md,2,Nice와 Côte d'Azur에서 이동하기,reference,0,0,0,
@@ -853,11 +895,11 @@ nice#009,source/CURRENT/20_Regions/nice.md,3,렌터카를 받는 날,reference,5
 nice#010,source/CURRENT/20_Regions/nice.md,2,먹고 장보기,reference,28,0,0,acfa990f5deec247
 nice#011,source/CURRENT/20_Regions/nice.md,3,니스에서 먹어볼 것,reference,139,0,0,8ee82f9cad9b7c6e
 nice#012,source/CURRENT/20_Regions/nice.md,3,시장과 장보기,reference,71,0,0,08cdf24c72630dbe
-nice#013,source/CURRENT/20_Regions/nice.md,3,일정에서 이용하는 식당과 카페,reference,71,0,0,e6b124146c091293
+nice#013,source/CURRENT/20_Regions/nice.md,3,일정에서 이용하는 식당과 카페,reference,82,0,0,50025daddfe367a4
 paris#000,source/CURRENT/20_Regions/paris.md,0,(preamble),reference,10,0,0,e23bfe98aad504dd
 paris#001,source/CURRENT/20_Regions/paris.md,2,Paris에서 15박을 이렇게 보낸다,reference,64,0,0,52a01932e13df705
-paris#002,source/CURRENT/20_Regions/paris.md,3,이번 15박 체류의 핵심,reference,64,0,0,b25c6ffcaa919485
-paris#003,source/CURRENT/20_Regions/paris.md,2,일정,reference,237,0,0,8b0da416e01db062
+paris#002,source/CURRENT/20_Regions/paris.md,3,이번 15박 체류의 핵심,reference,64,0,0,32c04db87b86071e
+paris#003,source/CURRENT/20_Regions/paris.md,2,일정,reference,256,0,0,128a7bafd98f00ac
 paris#004,source/CURRENT/20_Regions/paris.md,2,숙소와 15구 생활권,reference,0,0,0,
 paris#005,source/CURRENT/20_Regions/paris.md,4,숙소와 15구 생활권,reference,65,0,0,6d91d915c67c7108
 paris#006,source/CURRENT/20_Regions/paris.md,4,아침 운동,reference,21,0,0,281ab477764a90b4
@@ -865,25 +907,31 @@ paris#007,source/CURRENT/20_Regions/paris.md,2,Paris에서 이동하기,referenc
 paris#008,source/CURRENT/20_Regions/paris.md,4,평소에는 Metro와 도보,reference,28,0,0,374c5fa1ea717205
 paris#009,source/CURRENT/20_Regions/paris.md,4,오후 일정은 생활권에서 한 번에 이동,reference,22,0,0,8858dbd0f0f9c071
 paris#010,source/CURRENT/20_Regions/paris.md,4,대중교통 이용권 전략,reference,108,0,0,caa7aa42ec6eab30
-paris#011,source/CURRENT/20_Regions/paris.md,4,근교일은 철도,reference,13,0,0,c550adf0e73b1627
+paris#011,source/CURRENT/20_Regions/paris.md,4,근교일은 철도,reference,13,0,0,92ebb26d74aceaba
 paris#012,source/CURRENT/20_Regions/paris.md,4,출국일은 CDG 이동,reference,31,0,0,7ddcf445200f0d88
 paris#013,source/CURRENT/20_Regions/paris.md,2,먹고 장보기,reference,0,0,0,
 paris#014,source/CURRENT/20_Regions/paris.md,3,15구에서 반복해서 이용하기,reference,65,2,0,66dab44a6a372173
 paris#015,source/CURRENT/20_Regions/paris.md,3,시장과 장보기,reference,29,0,0,747a2def2e3782fb
 paris#016,source/CURRENT/20_Regions/paris.md,3,Paris에서 맛볼 식재료와 음식,reference,92,0,0,2afc6aaecf08333e
 paris#017,source/CURRENT/20_Regions/paris.md,3,일정에서 이용하는 식당과 카페,reference,0,0,0,
-paris#018,source/CURRENT/20_Regions/paris.md,4,방문 업소,reference,52,3,0,adad084d087f8604
+paris#018,source/CURRENT/20_Regions/paris.md,4,방문 업소,reference,367,18,0,a3e4aa07b173daa0
 paris#019,source/CURRENT/20_Regions/paris.md,4,식사 원칙,reference,22,0,0,b62a54a31fcef413
+verdon#000,source/CURRENT/20_Regions/verdon.md,0,(preamble),reference,9,0,0,589a8cc836694e71
+verdon#001,source/CURRENT/20_Regions/verdon.md,2,Verdon과 Moustiers를 이렇게 본다,reference,116,0,0,a25142d053acea39
+verdon#002,source/CURRENT/20_Regions/verdon.md,2,일정,reference,31,0,0,284503c133707145
+verdon#003,source/CURRENT/20_Regions/verdon.md,2,숙소와 생활권,reference,45,0,0,e62208726a72474e
+verdon#004,source/CURRENT/20_Regions/verdon.md,2,Verdon에서 운전하기,reference,154,0,0,ccc69076231dba58
+verdon#005,source/CURRENT/20_Regions/verdon.md,2,먹고 장보기,reference,62,0,0,c3177e05036477e6
 abbaye-de-senanque#000,source/CURRENT/30_Places/abbaye-de-senanque.md,0,(preamble),reference,50,0,0,39c8b10bc8218774
-abbaye-de-senanque#001,source/CURRENT/30_Places/abbaye-de-senanque.md,2,현장 실행,reference,52,0,0,6ac6c6dd8f89358d
-abbaye-de-senanque#002,source/CURRENT/30_Places/abbaye-de-senanque.md,3,Trip Layer,reference,35,0,0,b449c1109d56a062
+abbaye-de-senanque#001,source/CURRENT/30_Places/abbaye-de-senanque.md,2,현장 실행,reference,55,0,0,fb7e24f0f1b7dfff
+abbaye-de-senanque#002,source/CURRENT/30_Places/abbaye-de-senanque.md,3,Trip Layer,reference,52,0,0,1d011006fd7d4e65
 abbaye-de-senanque#003,source/CURRENT/30_Places/abbaye-de-senanque.md,2,왜 가는가,reference,74,0,0,c4eb3765edd49a89
 abbaye-de-senanque#004,source/CURRENT/30_Places/abbaye-de-senanque.md,3,Editor's Verdict,reference,78,0,0,759278ce12bfab2b
 abbaye-de-senanque#005,source/CURRENT/30_Places/abbaye-de-senanque.md,2,더 깊이,reference,0,0,0,
 abbaye-de-senanque#006,source/CURRENT/30_Places/abbaye-de-senanque.md,3,1. 장식을 없앤 것이 곧 설계다 (알아야 보인다),reference,83,0,0,4b238d427ffdfd62
 abbaye-de-senanque#007,source/CURRENT/30_Places/abbaye-de-senanque.md,3,2. 살아있는 현역 수도원,reference,25,0,0,efc7445cc2e7a9a0
 abbaye-de-senanque#008,source/CURRENT/30_Places/abbaye-de-senanque.md,3,3. Don't Miss & Look Closer,reference,40,0,0,7ec2eb60f137c296
-abbaye-de-senanque#009,source/CURRENT/30_Places/abbaye-de-senanque.md,2,실용 & 주차/에티켓,reference,96,0,0,a15af40d975305f7
+abbaye-de-senanque#009,source/CURRENT/30_Places/abbaye-de-senanque.md,2,실용 & 주차/에티켓,reference,118,0,0,aafa71c2af97cef2
 annecy#000,source/CURRENT/30_Places/annecy.md,0,(preamble),reference,59,0,0,53af249b6ab48587
 annecy#001,source/CURRENT/30_Places/annecy.md,2,왜 가는가,reference,94,0,0,a8f22fb1506f97a1
 annecy#002,source/CURRENT/30_Places/annecy.md,3,Editor's Verdict,reference,105,0,0,dd9f3611c894ac4d
@@ -923,7 +971,23 @@ atelier-des-lauves#003,source/CURRENT/30_Places/atelier-des-lauves.md,2,더 깊�
 atelier-des-lauves#004,source/CURRENT/30_Places/atelier-des-lauves.md,3,1. 공간 자체가 하나의 도구다 (알아야 보인다),reference,108,0,0,fcda4e2b95bfb286
 atelier-des-lauves#005,source/CURRENT/30_Places/atelier-des-lauves.md,3,2. 2026년 리뉴얼과 접근성 개선,reference,38,0,0,a39cfa61cc95ea28
 atelier-des-lauves#006,source/CURRENT/30_Places/atelier-des-lauves.md,3,3. Don't Miss & Look Closer,reference,37,0,0,43e820554d4346fe
-atelier-des-lauves#007,source/CURRENT/30_Places/atelier-des-lauves.md,2,실용,reference,106,0,0,1057d3db25a3bd80
+atelier-des-lauves#007,source/CURRENT/30_Places/atelier-des-lauves.md,2,실용,reference,103,0,0,83277db35f0b55af
+au-petit-riche#000,source/CURRENT/30_Places/au-petit-riche.md,0,(preamble),reference,62,0,0,ce57d0080e4fd051
+au-petit-riche#001,source/CURRENT/30_Places/au-petit-riche.md,2,왜 가는가,reference,105,0,0,401078a6f9153061
+au-petit-riche#002,source/CURRENT/30_Places/au-petit-riche.md,3,Editor's Verdict,reference,57,0,0,27eae23cb54bb332
+au-petit-riche#003,source/CURRENT/30_Places/au-petit-riche.md,2,더 깊이,reference,0,0,0,
+au-petit-riche#004,source/CURRENT/30_Places/au-petit-riche.md,3,1. 1854년의 실내가 남아 있다는 것,reference,47,0,0,b1448cea6ecaa500
+au-petit-riche#005,source/CURRENT/30_Places/au-petit-riche.md,3,2. 무엇을 먹는가,reference,82,0,0,a751ab21b44c1d30
+au-petit-riche#006,source/CURRENT/30_Places/au-petit-riche.md,3,3. 대안 — 이 자리가 안 될 때,reference,104,0,0,7eb323448314c8d6
+au-petit-riche#007,source/CURRENT/30_Places/au-petit-riche.md,2,실용,reference,103,1,0,fe2c56baa98bfebc
+aux-crus-de-bourgogne#000,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,0,(preamble),reference,64,0,0,589cd659c5abd2df
+aux-crus-de-bourgogne#001,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,2,왜 가는가,reference,74,0,0,af01a9e9eb2562cf
+aux-crus-de-bourgogne#002,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,3,Editor's Verdict,reference,62,0,0,8742ee20038b3c3d
+aux-crus-de-bourgogne#003,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,2,더 깊이,reference,0,0,0,
+aux-crus-de-bourgogne#004,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,3,1. 레 알이 사라진 자리에서,reference,51,0,0,0f39601ac3322584
+aux-crus-de-bourgogne#005,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,3,2. 무엇을 먹는가,reference,76,0,0,f63dd82d3ddc4393
+aux-crus-de-bourgogne#006,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,3,3. 대안 — 이 자리가 안 될 때,reference,154,0,0,076353b3085e03ce
+aux-crus-de-bourgogne#007,source/CURRENT/30_Places/aux-crus-de-bourgogne.md,2,실용,reference,105,1,0,85aa4030f43ea6b0
 bar-canete#000,source/CURRENT/30_Places/bar-canete.md,0,(preamble),reference,54,0,0,f6f5662305d5e926
 bar-canete#001,source/CURRENT/30_Places/bar-canete.md,2,왜 가는가,reference,77,0,0,306fe5c6bcaaab03
 bar-canete#002,source/CURRENT/30_Places/bar-canete.md,3,Editor's Verdict,reference,56,0,0,730ec293c80424e7
@@ -984,8 +1048,8 @@ bodega-joan#005,source/CURRENT/30_Places/bodega-joan.md,3,2. 대표 메뉴와 �
 bodega-joan#006,source/CURRENT/30_Places/bodega-joan.md,3,3. 예산에 맞춘 2인 주문 예시,reference,88,0,0,92190c4a47336899
 bodega-joan#007,source/CURRENT/30_Places/bodega-joan.md,2,실용,reference,76,2,0,45c5ed8058a86b84
 bonnieux#000,source/CURRENT/30_Places/bonnieux.md,0,(preamble),reference,39,0,0,acf2c20ba28c842f
-bonnieux#001,source/CURRENT/30_Places/bonnieux.md,2,현장 실행,reference,63,0,0,d861711361a03e7a
-bonnieux#002,source/CURRENT/30_Places/bonnieux.md,3,Trip Layer,reference,10,0,0,3b979640831fc9eb
+bonnieux#001,source/CURRENT/30_Places/bonnieux.md,2,현장 실행,reference,63,0,0,ccf81671a82eaef0
+bonnieux#002,source/CURRENT/30_Places/bonnieux.md,3,Trip Layer,reference,10,0,0,5dd5f75f559c3107
 bonnieux#003,source/CURRENT/30_Places/bonnieux.md,2,왜 가는가,reference,75,0,0,2cf5109689a4774b
 bonnieux#004,source/CURRENT/30_Places/bonnieux.md,3,Editor's Verdict,reference,87,0,0,1593d215c95a22e9
 bonnieux#005,source/CURRENT/30_Places/bonnieux.md,2,더 깊이,reference,0,0,0,
@@ -1000,6 +1064,14 @@ bouillon-chartier-montparnasse#003,source/CURRENT/30_Places/bouillon-chartier-mo
 bouillon-chartier-montparnasse#004,source/CURRENT/30_Places/bouillon-chartier-montparnasse.md,3,1. 부이용(Bouillon)이란?,reference,24,0,0,939d27b532a5530d
 bouillon-chartier-montparnasse#005,source/CURRENT/30_Places/bouillon-chartier-montparnasse.md,3,2. 추천 가성비 대표 메뉴,reference,57,0,0,fc12be4ec72a2723
 bouillon-chartier-montparnasse#006,source/CURRENT/30_Places/bouillon-chartier-montparnasse.md,2,실용,reference,74,1,0,2038b3121fa76ff0
+bouillon-racine#000,source/CURRENT/30_Places/bouillon-racine.md,0,(preamble),reference,54,0,0,446e190ba9318ec1
+bouillon-racine#001,source/CURRENT/30_Places/bouillon-racine.md,2,왜 가는가,reference,69,0,0,de2c9d51ae942de3
+bouillon-racine#002,source/CURRENT/30_Places/bouillon-racine.md,3,Editor's Verdict,reference,55,0,0,f2fe546a3ea02f9e
+bouillon-racine#003,source/CURRENT/30_Places/bouillon-racine.md,2,더 깊이,reference,0,0,0,
+bouillon-racine#004,source/CURRENT/30_Places/bouillon-racine.md,3,1. 토요일 저녁이라는 문제,reference,47,0,0,ec0fca03c54c0c8c
+bouillon-racine#005,source/CURRENT/30_Places/bouillon-racine.md,3,2. 무엇을 먹는가,reference,66,0,0,306c55df44e5dbab
+bouillon-racine#006,source/CURRENT/30_Places/bouillon-racine.md,3,3. 대안 — 예약이 안 잡혔을 때,reference,82,0,0,5725172fdfa8b21e
+bouillon-racine#007,source/CURRENT/30_Places/bouillon-racine.md,2,실용,reference,103,1,0,6cd0202c792ffc02
 boulangerie-pichard#000,source/CURRENT/30_Places/boulangerie-pichard.md,0,(preamble),reference,59,0,0,692d49e5c5e0dabe
 boulangerie-pichard#001,source/CURRENT/30_Places/boulangerie-pichard.md,2,왜 가는가,reference,99,0,0,e2025e5751e1c351
 boulangerie-pichard#002,source/CURRENT/30_Places/boulangerie-pichard.md,3,Editor's Verdict,reference,73,0,0,88d42613e77232c2
@@ -1014,6 +1086,13 @@ bourse-de-commerce-pinault-collection#003,source/CURRENT/30_Places/bourse-de-com
 bourse-de-commerce-pinault-collection#004,source/CURRENT/30_Places/bourse-de-commerce-pinault-collection.md,3,1. 세 세기가 겹쳐진 건축의 기적 (알아야 보인다),reference,58,0,0,0608273ef2c550d2
 bourse-de-commerce-pinault-collection#005,source/CURRENT/30_Places/bourse-de-commerce-pinault-collection.md,3,2. Don't Miss & Look Closer,reference,45,0,0,da73ad4b73a9c33d
 bourse-de-commerce-pinault-collection#006,source/CURRENT/30_Places/bourse-de-commerce-pinault-collection.md,2,실용 & 위치/운영,reference,81,0,0,e31c1d4d8c78fbd7
+breizh-cafe-charles-michels#000,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,0,(preamble),reference,64,0,0,f0c495c90f2d96e1
+breizh-cafe-charles-michels#001,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,2,왜 가는가,reference,62,0,0,fa75e24ed3938130
+breizh-cafe-charles-michels#002,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,3,Editor's Verdict,reference,54,0,0,b39019d3b4e75f3f
+breizh-cafe-charles-michels#003,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,2,더 깊이,reference,0,0,0,
+breizh-cafe-charles-michels#004,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,3,1. 무엇을 먹는가,reference,64,0,0,5bfb5000c95c4820
+breizh-cafe-charles-michels#005,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,3,2. 언제 가는가,reference,58,0,0,00641a1ed5b9e632
+breizh-cafe-charles-michels#006,source/CURRENT/30_Places/breizh-cafe-charles-michels.md,2,실용,reference,107,1,0,62ce7877362a2156
 cafe-comptoir-abel#000,source/CURRENT/30_Places/cafe-comptoir-abel.md,0,(preamble),reference,62,0,0,104d5d283aa2d043
 cafe-comptoir-abel#001,source/CURRENT/30_Places/cafe-comptoir-abel.md,2,왜 가는가,reference,98,0,0,283a9467d0a28db9
 cafe-comptoir-abel#002,source/CURRENT/30_Places/cafe-comptoir-abel.md,3,Editor's Verdict,reference,62,0,0,5c89297f090a4837
@@ -1023,18 +1102,26 @@ cafe-comptoir-abel#005,source/CURRENT/30_Places/cafe-comptoir-abel.md,3,2. 추�
 cafe-comptoir-abel#006,source/CURRENT/30_Places/cafe-comptoir-abel.md,2,실용,reference,74,2,0,bf162e472ce89bfd
 cafe-du-commerce#000,source/CURRENT/30_Places/cafe-du-commerce.md,0,(preamble),reference,62,0,0,a16ad885c06e2cad
 cafe-du-commerce#001,source/CURRENT/30_Places/cafe-du-commerce.md,2,왜 가는가,reference,92,0,0,18e85c8a5a18f18f
-cafe-du-commerce#002,source/CURRENT/30_Places/cafe-du-commerce.md,3,Editor's Verdict,reference,80,0,0,56fe108fa31db4fa
+cafe-du-commerce#002,source/CURRENT/30_Places/cafe-du-commerce.md,3,Editor's Verdict,reference,81,0,0,6a688f43c1179a65
 cafe-du-commerce#003,source/CURRENT/30_Places/cafe-du-commerce.md,2,더 깊이,reference,0,0,0,
 cafe-du-commerce#004,source/CURRENT/30_Places/cafe-du-commerce.md,3,1. 1920년대 벨에포크·아르데코의 공간미,reference,26,0,0,fce8b6ba43e6e1a3
 cafe-du-commerce#005,source/CURRENT/30_Places/cafe-du-commerce.md,3,2. 추천 대표 메뉴,reference,65,0,0,b59a28aea79edf5d
 cafe-du-commerce#006,source/CURRENT/30_Places/cafe-du-commerce.md,2,실용,reference,78,1,0,03369c3add7ca98e
+cafe-varenne#000,source/CURRENT/30_Places/cafe-varenne.md,0,(preamble),reference,59,0,0,67d804d031584385
+cafe-varenne#001,source/CURRENT/30_Places/cafe-varenne.md,2,왜 가는가,reference,82,0,0,4e533d4bffd8b840
+cafe-varenne#002,source/CURRENT/30_Places/cafe-varenne.md,3,Editor's Verdict,reference,67,0,0,1779aca1eb332f57
+cafe-varenne#003,source/CURRENT/30_Places/cafe-varenne.md,2,더 깊이,reference,0,0,0,
+cafe-varenne#004,source/CURRENT/30_Places/cafe-varenne.md,3,1. 왜 논스톱이 중요한가,reference,55,0,0,1f603ba572d43571
+cafe-varenne#005,source/CURRENT/30_Places/cafe-varenne.md,3,2. 무엇을 먹는가,reference,53,0,0,817269a7e0ba73c7
+cafe-varenne#006,source/CURRENT/30_Places/cafe-varenne.md,3,3. 대안 — 이 자리가 안 될 때,reference,138,0,0,fa76373adcdaf522
+cafe-varenne#007,source/CURRENT/30_Places/cafe-varenne.md,2,실용,reference,107,0,0,5f20dfd069bcf0ad
 calanques#000,source/CURRENT/30_Places/calanques.md,0,(preamble),reference,56,0,0,0f5ea99947f5d90f
 calanques#001,source/CURRENT/30_Places/calanques.md,2,왜 가는가,reference,65,0,0,4140d2b73ae41a1d
-calanques#002,source/CURRENT/30_Places/calanques.md,3,Editor's Verdict,reference,84,0,0,8c8536e6dac3e051
+calanques#002,source/CURRENT/30_Places/calanques.md,3,Editor's Verdict,reference,89,0,0,c9fb0e39f51d0a48
 calanques#003,source/CURRENT/30_Places/calanques.md,2,더 깊이,reference,0,0,0,
 calanques#004,source/CURRENT/30_Places/calanques.md,3,1. 두 가지 접근 방식과 선택 기준 (알아야 보인다),reference,58,0,0,eccc6282b61883c6
 calanques#005,source/CURRENT/30_Places/calanques.md,3,2. 대표적인 3대 칼랑크,reference,47,0,0,12baeeff69aaa9ca
-calanques#006,source/CURRENT/30_Places/calanques.md,2,실용,reference,92,0,0,4840a3072d2fa599
+calanques#006,source/CURRENT/30_Places/calanques.md,2,실용,reference,101,0,0,8725dab697960496
 calella-de-palafrugell#000,source/CURRENT/30_Places/calella-de-palafrugell.md,0,(preamble),reference,55,0,0,934694cd93c0eb41
 calella-de-palafrugell#001,source/CURRENT/30_Places/calella-de-palafrugell.md,2,왜 가는가,reference,87,0,0,a176fc3dd8772578
 calella-de-palafrugell#002,source/CURRENT/30_Places/calella-de-palafrugell.md,3,Editor's Verdict,reference,78,0,0,af0960c29ddc7d75
@@ -1080,12 +1167,12 @@ casa-marieta#005,source/CURRENT/30_Places/casa-marieta.md,3,2. 추천 전통 요
 casa-marieta#006,source/CURRENT/30_Places/casa-marieta.md,2,실용,reference,70,2,0,7a231585f2bc5541
 cassis#000,source/CURRENT/30_Places/cassis.md,0,(preamble),reference,54,0,0,cec35d24d75cf51e
 cassis#001,source/CURRENT/30_Places/cassis.md,2,왜 가는가,reference,66,0,0,141867d734122363
-cassis#002,source/CURRENT/30_Places/cassis.md,3,Editor's Verdict,reference,80,0,0,8c7d4b0e2595da08
+cassis#002,source/CURRENT/30_Places/cassis.md,3,Editor's Verdict,reference,70,0,0,e0558614552f10d3
 cassis#003,source/CURRENT/30_Places/cassis.md,2,더 깊이,reference,0,0,0,
 cassis#004,source/CURRENT/30_Places/cassis.md,3,1. 카시스 화이트 와인 (AOC Cassis) (알아야 보인다),reference,40,0,0,d48bba29c65bd1ea
 cassis#005,source/CURRENT/30_Places/cassis.md,3,2. 캅 카나유 (Cap Canaille),reference,18,0,0,90fc7e22216e165d
 cassis#006,source/CURRENT/30_Places/cassis.md,3,3. Don't Miss & Look Closer,reference,44,0,0,04391c8da4c8052d
-cassis#007,source/CURRENT/30_Places/cassis.md,2,실용,reference,65,0,0,613556eb8c95fe9d
+cassis#007,source/CURRENT/30_Places/cassis.md,2,실용,reference,83,0,0,5e0109386409a747
 cau-ferrat#000,source/CURRENT/30_Places/cau-ferrat.md,0,(preamble),reference,34,0,0,833ed2c5bcd4c9f2
 cau-ferrat#001,source/CURRENT/30_Places/cau-ferrat.md,2,왜 가는가,reference,63,0,0,bc1b33a9d7e5be87
 cau-ferrat#002,source/CURRENT/30_Places/cau-ferrat.md,2,더 깊이,reference,0,0,0,
@@ -1102,11 +1189,19 @@ centre-pompidou#005,source/CURRENT/30_Places/centre-pompidou.md,3,2. 대체 현�
 centre-pompidou#006,source/CURRENT/30_Places/centre-pompidou.md,2,실용 & 위치,reference,43,0,0,1e7bc663773b5082
 chez-gilbert-cassis#000,source/CURRENT/30_Places/chez-gilbert-cassis.md,0,(preamble),reference,58,0,0,e71c7bade5bb7e9f
 chez-gilbert-cassis#001,source/CURRENT/30_Places/chez-gilbert-cassis.md,2,왜 가는가,reference,78,0,0,0e388569b6f96b27
-chez-gilbert-cassis#002,source/CURRENT/30_Places/chez-gilbert-cassis.md,3,Editor's Verdict,reference,74,0,0,24a35ba9a4cb4bca
+chez-gilbert-cassis#002,source/CURRENT/30_Places/chez-gilbert-cassis.md,3,Editor's Verdict,reference,74,0,0,01b78262470f825d
 chez-gilbert-cassis#003,source/CURRENT/30_Places/chez-gilbert-cassis.md,2,더 깊이,reference,0,0,0,
 chez-gilbert-cassis#004,source/CURRENT/30_Places/chez-gilbert-cassis.md,3,1. 부야베스 서빙 방식 (알아야 맛있다),reference,40,0,0,0580f5ed9ddc3637
 chez-gilbert-cassis#005,source/CURRENT/30_Places/chez-gilbert-cassis.md,3,2. 추천 대표 메뉴,reference,64,0,0,23a52039cf3c3c40
-chez-gilbert-cassis#006,source/CURRENT/30_Places/chez-gilbert-cassis.md,2,실용,reference,81,2,0,7d816c7b00468c28
+chez-gilbert-cassis#006,source/CURRENT/30_Places/chez-gilbert-cassis.md,2,실용,reference,89,2,0,698f8d55729acdf2
+chez-janou#000,source/CURRENT/30_Places/chez-janou.md,0,(preamble),reference,57,0,0,e32c7fcba9109d07
+chez-janou#001,source/CURRENT/30_Places/chez-janou.md,2,왜 가는가,reference,77,0,0,94d17529ec37b3fa
+chez-janou#002,source/CURRENT/30_Places/chez-janou.md,3,Editor's Verdict,reference,55,0,0,86c21c018ede1e63
+chez-janou#003,source/CURRENT/30_Places/chez-janou.md,2,더 깊이,reference,0,0,0,
+chez-janou#004,source/CURRENT/30_Places/chez-janou.md,3,1. 무엇을 먹는가,reference,67,0,0,b5bb3e21234d7940
+chez-janou#005,source/CURRENT/30_Places/chez-janou.md,3,2. 언제 가는가 · 시간 주의,reference,56,0,0,2283cb994cfdce56
+chez-janou#006,source/CURRENT/30_Places/chez-janou.md,3,3. 대안 — 이 자리가 안 될 때,reference,77,0,0,502b21dda885c789
+chez-janou#007,source/CURRENT/30_Places/chez-janou.md,2,실용,reference,103,1,0,ce0efa16f56087b7
 chez-mamie-lise#000,source/CURRENT/30_Places/chez-mamie-lise.md,0,(preamble),reference,61,0,0,5392646ccba03c3f
 chez-mamie-lise#001,source/CURRENT/30_Places/chez-mamie-lise.md,2,왜 가는가,reference,92,0,0,cbdf21873eeb5f3e
 chez-mamie-lise#002,source/CURRENT/30_Places/chez-mamie-lise.md,3,Editor's Verdict,reference,71,0,0,3f1594a8ab5407e8
@@ -1114,6 +1209,14 @@ chez-mamie-lise#003,source/CURRENT/30_Places/chez-mamie-lise.md,2,더 깊이,ref
 chez-mamie-lise#004,source/CURRENT/30_Places/chez-mamie-lise.md,3,1. 사부아 치즈 요리의 원형 (알아야 맛있다),reference,60,0,0,b0a88e1183dbc126
 chez-mamie-lise#005,source/CURRENT/30_Places/chez-mamie-lise.md,3,2. 가벼운 식사 팁,reference,27,0,0,077ed2985b72d79c
 chez-mamie-lise#006,source/CURRENT/30_Places/chez-mamie-lise.md,2,실용,reference,79,1,0,0fe49ac05dd0731e
+chez-savy#000,source/CURRENT/30_Places/chez-savy.md,0,(preamble),reference,58,0,0,b76ac6304d7c0c90
+chez-savy#001,source/CURRENT/30_Places/chez-savy.md,2,왜 가는가,reference,79,0,0,4e2fda3fe7d61549
+chez-savy#002,source/CURRENT/30_Places/chez-savy.md,3,Editor's Verdict,reference,62,0,0,37261b529c9e8d1d
+chez-savy#003,source/CURRENT/30_Places/chez-savy.md,2,더 깊이,reference,0,0,0,
+chez-savy#004,source/CURRENT/30_Places/chez-savy.md,3,1. 아베롱 사람들이 파리에 세운 식당,reference,49,0,0,8f3658d07f713c4a
+chez-savy#005,source/CURRENT/30_Places/chez-savy.md,3,2. 무엇을 먹는가,reference,65,0,0,3f0e5ec1e198b32d
+chez-savy#006,source/CURRENT/30_Places/chez-savy.md,3,3. 대안 — 이 자리가 안 될 때,reference,130,0,0,b17f94bc9bd7c7ae
+chez-savy#007,source/CURRENT/30_Places/chez-savy.md,2,실용,reference,104,0,0,4125568d273f7492
 cloitre-saint-trophime#000,source/CURRENT/30_Places/cloitre-saint-trophime.md,0,(preamble),reference,57,0,0,72353f278b9a0f16
 cloitre-saint-trophime#001,source/CURRENT/30_Places/cloitre-saint-trophime.md,2,왜 가는가,reference,81,0,0,eae1013c68b077ce
 cloitre-saint-trophime#002,source/CURRENT/30_Places/cloitre-saint-trophime.md,3,Editor's Verdict,reference,85,0,0,4f009b2eab465047
@@ -1124,12 +1227,12 @@ cloitre-saint-trophime#006,source/CURRENT/30_Places/cloitre-saint-trophime.md,3,
 cloitre-saint-trophime#007,source/CURRENT/30_Places/cloitre-saint-trophime.md,2,실용 & 티켓/정보,reference,75,0,0,e883ec066b91ead6
 colline-du-chateau#000,source/CURRENT/30_Places/colline-du-chateau.md,0,(preamble),reference,54,0,0,1505a4857a584b38
 colline-du-chateau#001,source/CURRENT/30_Places/colline-du-chateau.md,2,왜 가는가,reference,92,0,0,2b401524f3e319ea
-colline-du-chateau#002,source/CURRENT/30_Places/colline-du-chateau.md,3,Editor's Verdict,reference,75,0,0,00f59750091f8fbe
+colline-du-chateau#002,source/CURRENT/30_Places/colline-du-chateau.md,3,Editor's Verdict,reference,77,0,0,07f2d5249e241ad6
 colline-du-chateau#003,source/CURRENT/30_Places/colline-du-chateau.md,2,더 깊이,reference,0,0,0,
 colline-du-chateau#004,source/CURRENT/30_Places/colline-du-chateau.md,3,1. 요새의 파괴와 공원화의 역사,reference,38,0,0,22248a9216e42e28
 colline-du-chateau#005,source/CURRENT/30_Places/colline-du-chateau.md,3,2. 벨랑다 탑 (Tour Bellanda)과 인공폭포 (Cascade),reference,41,0,0,23359c694eda55cd
 colline-du-chateau#006,source/CURRENT/30_Places/colline-du-chateau.md,3,3. Don't Miss & Look Closer,reference,42,0,0,00083c628aac1e75
-colline-du-chateau#007,source/CURRENT/30_Places/colline-du-chateau.md,2,실용,reference,89,0,0,5f432777cbf53610
+colline-du-chateau#007,source/CURRENT/30_Places/colline-du-chateau.md,2,실용,reference,84,0,0,add5de986d7514e4
 collioure#000,source/CURRENT/30_Places/collioure.md,0,(preamble),reference,42,0,0,e56e31b848027175
 collioure#001,source/CURRENT/30_Places/collioure.md,2,왜 가는가,reference,93,0,0,988845d060b47bf5
 collioure#002,source/CURRENT/30_Places/collioure.md,3,Editor's Verdict,reference,89,0,0,eeea72e543aa0ff1
@@ -1153,8 +1256,8 @@ cours-saleya#003,source/CURRENT/30_Places/cours-saleya.md,2,더 깊이,reference
 cours-saleya#004,source/CURRENT/30_Places/cours-saleya.md,3,1. 퐁셰트 (Les Ponchettes)와 옥상 산책로,reference,37,0,0,f0bc14d76eb88f95
 cours-saleya#005,source/CURRENT/30_Places/cours-saleya.md,3,2. 소카 (Socca) — 니스 노동자들의 영혼의 음식,reference,31,0,0,d29b3bfaca92af5b
 cours-saleya#006,source/CURRENT/30_Places/cours-saleya.md,3,3. Don't Miss & Look Closer,reference,43,0,0,f169398d63dd4fd9
-cours-saleya#007,source/CURRENT/30_Places/cours-saleya.md,2,실용,reference,77,0,0,ff8ab69d87ffc490
-coustellet#000,source/CURRENT/30_Places/coustellet.md,0,(preamble),reference,54,0,0,03cc05af2a74ba4b
+cours-saleya#007,source/CURRENT/30_Places/cours-saleya.md,2,실용,reference,90,0,0,f8fd30d56e7d32ef
+coustellet#000,source/CURRENT/30_Places/coustellet.md,0,(preamble),reference,54,0,0,09d56534b0a4034d
 coustellet#001,source/CURRENT/30_Places/coustellet.md,2,왜 가는가,reference,75,0,0,298ebfd81eae3ab4
 coustellet#002,source/CURRENT/30_Places/coustellet.md,3,Editor's Verdict,reference,82,0,0,cdf4b28765033bbd
 coustellet#003,source/CURRENT/30_Places/coustellet.md,2,더 깊이,reference,0,0,0,
@@ -1184,8 +1287,8 @@ fondation-vincent-van-gogh-arles#004,source/CURRENT/30_Places/fondation-vincent-
 fondation-vincent-van-gogh-arles#005,source/CURRENT/30_Places/fondation-vincent-van-gogh-arles.md,3,2. Don't Miss & Look Closer,reference,43,0,0,1e81cb650b1cb46f
 fondation-vincent-van-gogh-arles#006,source/CURRENT/30_Places/fondation-vincent-van-gogh-arles.md,2,실용 & 위치,reference,51,0,0,30c8366bdc13f65a
 fontaine-de-vaucluse#000,source/CURRENT/30_Places/fontaine-de-vaucluse.md,0,(preamble),reference,47,0,0,71fcc1a058525dd7
-fontaine-de-vaucluse#001,source/CURRENT/30_Places/fontaine-de-vaucluse.md,2,현장 실행,reference,59,0,0,176de76b6cd9e815
-fontaine-de-vaucluse#002,source/CURRENT/30_Places/fontaine-de-vaucluse.md,3,Trip Layer,reference,13,0,0,1e73fc163c93606b
+fontaine-de-vaucluse#001,source/CURRENT/30_Places/fontaine-de-vaucluse.md,2,현장 실행,reference,58,0,0,047ea7765476665a
+fontaine-de-vaucluse#002,source/CURRENT/30_Places/fontaine-de-vaucluse.md,3,Trip Layer,reference,18,0,0,0b57c2e870068d77
 fontaine-de-vaucluse#003,source/CURRENT/30_Places/fontaine-de-vaucluse.md,2,왜 가는가,reference,43,0,0,0b4d32a11e510582
 fontaine-de-vaucluse#004,source/CURRENT/30_Places/fontaine-de-vaucluse.md,2,더 깊이,reference,0,0,0,
 fontaine-de-vaucluse#005,source/CURRENT/30_Places/fontaine-de-vaucluse.md,3,카르스트 수원,reference,21,0,0,3e957004f259ff73
@@ -1240,8 +1343,8 @@ glanum#005,source/CURRENT/30_Places/glanum.md,3,"2. 레 장티크 (Les Antiques)
 glanum#006,source/CURRENT/30_Places/glanum.md,3,3. Don't Miss & Look Closer,reference,41,0,0,c86784128f4f86cb
 glanum#007,source/CURRENT/30_Places/glanum.md,2,실용 & 주차,reference,71,0,0,bdf7e5358d2d00d2
 gordes#000,source/CURRENT/30_Places/gordes.md,0,(preamble),reference,40,0,0,2f76e631fa0e1a60
-gordes#001,source/CURRENT/30_Places/gordes.md,2,현장 실행,reference,75,0,0,b3f661f8f10f0eb8
-gordes#002,source/CURRENT/30_Places/gordes.md,3,Trip Layer,reference,21,0,0,202d5a10ed8352fa
+gordes#001,source/CURRENT/30_Places/gordes.md,2,현장 실행,reference,75,0,0,e4ae6466df3cf70b
+gordes#002,source/CURRENT/30_Places/gordes.md,3,Trip Layer,reference,29,0,0,3c1286e864ba44f7
 gordes#003,source/CURRENT/30_Places/gordes.md,2,왜 가는가,reference,83,0,0,97e02d8d2a4e73d4
 gordes#004,source/CURRENT/30_Places/gordes.md,3,Editor's Verdict,reference,104,0,0,4ae575dc223b8d58
 gordes#005,source/CURRENT/30_Places/gordes.md,2,더 깊이,reference,0,0,0,
@@ -1250,7 +1353,7 @@ gordes#007,source/CURRENT/30_Places/gordes.md,3,2. 건식 석조와 중세 성�
 gordes#008,source/CURRENT/30_Places/gordes.md,3,3. Don't Miss & Look Closer,reference,40,0,0,28b40672c9e42885
 gordes#009,source/CURRENT/30_Places/gordes.md,2,실용 & 운전/주차,reference,106,0,0,62eddb3aff907ba8
 goult#000,source/CURRENT/30_Places/goult.md,0,(preamble),reference,49,0,0,1f35549f4b104239
-goult#001,source/CURRENT/30_Places/goult.md,2,현장 실행,reference,58,0,0,aa34b2b35a1a539c
+goult#001,source/CURRENT/30_Places/goult.md,2,현장 실행,reference,58,0,0,e2ca777868cf3b8a
 goult#002,source/CURRENT/30_Places/goult.md,3,Trip Layer,reference,10,0,0,5fd31a94f302b537
 goult#003,source/CURRENT/30_Places/goult.md,2,왜 가는가,reference,70,0,0,ff5f55f8f886fde0
 goult#004,source/CURRENT/30_Places/goult.md,3,Editor's Verdict,reference,86,0,0,f0cf31f01fa776f2
@@ -1274,7 +1377,14 @@ grasse#003,source/CURRENT/30_Places/grasse.md,2,더 깊이,reference,0,0,0,
 grasse#004,source/CURRENT/30_Places/grasse.md,3,1. 가죽 장갑에서 향수 산업으로 (알아야 보인다),reference,40,0,0,aa471929770249d2
 grasse#005,source/CURRENT/30_Places/grasse.md,3,2. 프라고나르 유서 깊은 공장 (Usine Historique Fragonard),reference,26,0,0,6d373764d8e82dbf
 grasse#006,source/CURRENT/30_Places/grasse.md,3,3. Don't Miss & Look Closer,reference,46,0,0,010b63163e388259
-grasse#007,source/CURRENT/30_Places/grasse.md,2,실용,reference,62,0,0,de4645cfa4a728b4
+grasse#007,source/CURRENT/30_Places/grasse.md,2,실용,reference,66,0,0,6345a82d6015adab
+guylas#000,source/CURRENT/30_Places/guylas.md,0,(preamble),reference,51,0,0,f8f8547c945ae760
+guylas#001,source/CURRENT/30_Places/guylas.md,2,왜 가는가,reference,67,0,0,d822caeb0059fdc4
+guylas#002,source/CURRENT/30_Places/guylas.md,3,Editor's Verdict,reference,53,0,0,7c0d60a7bb8fe54e
+guylas#003,source/CURRENT/30_Places/guylas.md,2,더 깊이,reference,0,0,0,
+guylas#004,source/CURRENT/30_Places/guylas.md,3,1. 무엇을 먹는가,reference,59,0,0,c418891fee550742
+guylas#005,source/CURRENT/30_Places/guylas.md,3,2. 언제 가는가,reference,26,0,0,3f5727c03a9dd64c
+guylas#006,source/CURRENT/30_Places/guylas.md,2,실용,reference,102,1,0,12ba321c054cc8c1
 halles-de-lyon-paul-bocuse#000,source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md,0,(preamble),reference,76,0,0,85bc8582be1044c3
 halles-de-lyon-paul-bocuse#001,source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md,2,왜 가는가,reference,90,0,0,34db0d1f7edbf8c9
 halles-de-lyon-paul-bocuse#002,source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md,3,Editor's Verdict,reference,92,0,0,958adfd2db2090f9
@@ -1283,8 +1393,8 @@ halles-de-lyon-paul-bocuse#004,source/CURRENT/30_Places/halles-de-lyon-paul-bocu
 halles-de-lyon-paul-bocuse#005,source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md,3,2. 시장 이용 전략 — 식사와 쇼핑의 분리,reference,39,0,0,c7c6b7953ed46a7f
 halles-de-lyon-paul-bocuse#006,source/CURRENT/30_Places/halles-de-lyon-paul-bocuse.md,2,실용 & 위치/운영,reference,69,0,0,4233e2e6c777e375
 l-isle-sur-la-sorgue#000,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,0,(preamble),reference,56,0,0,1878ab08fece9e2f
-l-isle-sur-la-sorgue#001,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,2,현장 실행,reference,62,0,0,90568f10f24809b2
-l-isle-sur-la-sorgue#002,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,Trip Layer,reference,25,0,0,7fdce636c8e18906
+l-isle-sur-la-sorgue#001,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,2,현장 실행,reference,64,0,0,345cafaf726fdfcf
+l-isle-sur-la-sorgue#002,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,Trip Layer,reference,32,0,0,60f842fcace8a6e5
 l-isle-sur-la-sorgue#003,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,2,왜 가는가,reference,67,0,0,b2e2b512dcc7bbd1
 l-isle-sur-la-sorgue#004,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,Editor's Verdict,reference,88,0,0,712cb2f288603bfb
 l-isle-sur-la-sorgue#005,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,2,더 깊이,reference,0,0,0,
@@ -1292,6 +1402,14 @@ l-isle-sur-la-sorgue#006,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,1. 1
 l-isle-sur-la-sorgue#007,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,2. 유럽 3대 골동품의 도시,reference,60,0,0,c5270777b6beeb81
 l-isle-sur-la-sorgue#008,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,3,3. Don't Miss & Look Closer,reference,48,0,0,ea9bcba1f4a03e97
 l-isle-sur-la-sorgue#009,source/CURRENT/30_Places/l-isle-sur-la-sorgue.md,2,실용 & 주차,reference,86,0,0,aa75e6e30780474d
+la-flottille#000,source/CURRENT/30_Places/la-flottille.md,0,(preamble),reference,57,0,0,61cbbda5eccaf819
+la-flottille#001,source/CURRENT/30_Places/la-flottille.md,2,왜 가는가,reference,97,0,0,651c73b8b3767491
+la-flottille#002,source/CURRENT/30_Places/la-flottille.md,3,Editor's Verdict,reference,66,0,0,18a27e214c7d41e7
+la-flottille#003,source/CURRENT/30_Places/la-flottille.md,2,더 깊이,reference,0,0,0,
+la-flottille#004,source/CURRENT/30_Places/la-flottille.md,3,1. 시간 계산 — 90분이 아니라 65분이다,reference,85,0,0,a43fe671e3ce485e
+la-flottille#005,source/CURRENT/30_Places/la-flottille.md,3,2. 무엇을 먹는가,reference,42,0,0,1ced8ac7a8753a56
+la-flottille#006,source/CURRENT/30_Places/la-flottille.md,3,3. 대안 — 이 자리가 안 될 때,reference,117,0,0,18bf2d0f8df92ebf
+la-flottille#007,source/CURRENT/30_Places/la-flottille.md,2,실용,reference,123,1,0,c1c322ffe97d4392
 la-roquette#000,source/CURRENT/30_Places/la-roquette.md,0,(preamble),reference,58,0,0,30800d93b9e977aa
 la-roquette#001,source/CURRENT/30_Places/la-roquette.md,2,왜 가는가,reference,84,0,0,1cf5eb2c88ea4363
 la-roquette#002,source/CURRENT/30_Places/la-roquette.md,3,Editor's Verdict,reference,81,0,0,caa076643da03d82
@@ -1307,8 +1425,14 @@ la-zorra#004,source/CURRENT/30_Places/la-zorra.md,3,1. 정통 소카랏(Socarrat
 la-zorra#005,source/CURRENT/30_Places/la-zorra.md,3,2. 추천 대표 메뉴,reference,54,0,0,9ef711a30e26a157
 la-zorra#006,source/CURRENT/30_Places/la-zorra.md,3,3. 이동일 점심으로 쓰는 법,reference,89,0,0,c303d4f9abd2401b
 la-zorra#007,source/CURRENT/30_Places/la-zorra.md,2,실용,reference,76,2,0,c92d7bfbd1d3c571
+lac-de-sainte-croix#000,source/CURRENT/30_Places/lac-de-sainte-croix.md,0,(preamble),reference,53,0,0,6e110e09075bc495
+lac-de-sainte-croix#001,source/CURRENT/30_Places/lac-de-sainte-croix.md,2,현장 실행,reference,71,0,0,392e74740ec5a68c
+lac-de-sainte-croix#002,source/CURRENT/30_Places/lac-de-sainte-croix.md,3,Trip Layer,reference,28,0,0,a47723dff4503892
+lac-de-sainte-croix#003,source/CURRENT/30_Places/lac-de-sainte-croix.md,2,왜 가는가,reference,47,0,0,39fe246e294d4eb0
+lac-de-sainte-croix#004,source/CURRENT/30_Places/lac-de-sainte-croix.md,3,Editor's Verdict,reference,38,0,0,94a4f0ed3812f5c8
+lac-de-sainte-croix#005,source/CURRENT/30_Places/lac-de-sainte-croix.md,2,공식 정보,reference,2,1,0,5ee71cf41d1c98e7
 lacoste#000,source/CURRENT/30_Places/lacoste.md,0,(preamble),reference,40,0,0,d11b19c678e26983
-lacoste#001,source/CURRENT/30_Places/lacoste.md,2,현장 실행,reference,61,0,0,d097b64de1a89211
+lacoste#001,source/CURRENT/30_Places/lacoste.md,2,현장 실행,reference,66,0,0,e1af2b7cec452d6b
 lacoste#002,source/CURRENT/30_Places/lacoste.md,3,Trip Layer,reference,13,0,0,70c331367be522e2
 lacoste#003,source/CURRENT/30_Places/lacoste.md,2,왜 가는가,reference,48,0,0,82294244b73c1ac6
 lacoste#004,source/CURRENT/30_Places/lacoste.md,2,더 깊이,reference,0,0,0,
@@ -1329,7 +1453,7 @@ le-figuier-de-saint-esprit#002,source/CURRENT/30_Places/le-figuier-de-saint-espr
 le-figuier-de-saint-esprit#003,source/CURRENT/30_Places/le-figuier-de-saint-esprit.md,2,더 깊이,reference,0,0,0,
 le-figuier-de-saint-esprit#004,source/CURRENT/30_Places/le-figuier-de-saint-esprit.md,3,1. 셰프 크리스티앙 모리세와 무화과나무 중정,reference,31,0,0,dbb66e0fdc685db8
 le-figuier-de-saint-esprit#005,source/CURRENT/30_Places/le-figuier-de-saint-esprit.md,3,2. 시그니처 요리와 코스 구성,reference,70,0,0,7de1ce30d284f6ab
-le-figuier-de-saint-esprit#006,source/CURRENT/30_Places/le-figuier-de-saint-esprit.md,2,실용,reference,68,1,0,d1eaea6ae16356af
+le-figuier-de-saint-esprit#006,source/CURRENT/30_Places/le-figuier-de-saint-esprit.md,2,실용,reference,74,1,0,f9efcc57ca87d33d
 le-gibolin-arles#000,source/CURRENT/30_Places/le-gibolin-arles.md,0,(preamble),reference,55,0,0,a8451c0069d57842
 le-gibolin-arles#001,source/CURRENT/30_Places/le-gibolin-arles.md,2,왜 가는가,reference,90,0,0,e2403668608b4648
 le-gibolin-arles#002,source/CURRENT/30_Places/le-gibolin-arles.md,3,Editor's Verdict,reference,68,0,0,68ed01590f748fb4
@@ -1339,7 +1463,7 @@ le-gibolin-arles#005,source/CURRENT/30_Places/le-gibolin-arles.md,3,2. 추천 �
 le-gibolin-arles#006,source/CURRENT/30_Places/le-gibolin-arles.md,2,실용,reference,82,1,0,359881f45fd75597
 le-grand-pan#000,source/CURRENT/30_Places/le-grand-pan.md,0,(preamble),reference,60,0,0,2008eecf3969b3f0
 le-grand-pan#001,source/CURRENT/30_Places/le-grand-pan.md,2,왜 가는가,reference,96,0,0,28007e2c1c0eb6bf
-le-grand-pan#002,source/CURRENT/30_Places/le-grand-pan.md,3,Editor's Verdict,reference,80,0,0,da5f6b13e5837767
+le-grand-pan#002,source/CURRENT/30_Places/le-grand-pan.md,3,Editor's Verdict,reference,80,0,0,7883706b7124a837
 le-grand-pan#003,source/CURRENT/30_Places/le-grand-pan.md,2,더 깊이,reference,0,0,0,
 le-grand-pan#004,source/CURRENT/30_Places/le-grand-pan.md,3,1. 칠판 메뉴와 숯불 그릴의 미학,reference,32,0,0,0481aba5e1b91673
 le-grand-pan#005,source/CURRENT/30_Places/le-grand-pan.md,3,2. 추천 대표 메뉴,reference,68,0,0,fc3aedd137fc5119
@@ -1359,6 +1483,20 @@ le-panier#004,source/CURRENT/30_Places/le-panier.md,3,1. 비에이 샤리테 (Vi
 le-panier#005,source/CURRENT/30_Places/le-panier.md,3,2. 렝슈 광장 (Place de Lenche),reference,28,0,0,bbf4ccacbe193273
 le-panier#006,source/CURRENT/30_Places/le-panier.md,3,3. Don't Miss & Look Closer,reference,43,0,0,81cdf97473a4ef31
 le-panier#007,source/CURRENT/30_Places/le-panier.md,2,실용,reference,75,0,0,1b15b8c96dd114b4
+le-progres-montmartre#000,source/CURRENT/30_Places/le-progres-montmartre.md,0,(preamble),reference,61,0,0,41369c76247c5bdc
+le-progres-montmartre#001,source/CURRENT/30_Places/le-progres-montmartre.md,2,왜 가는가,reference,84,0,0,0269e349efc79964
+le-progres-montmartre#002,source/CURRENT/30_Places/le-progres-montmartre.md,3,Editor's Verdict,reference,61,0,0,84354aceec601fa5
+le-progres-montmartre#003,source/CURRENT/30_Places/le-progres-montmartre.md,2,더 깊이,reference,0,0,0,
+le-progres-montmartre#004,source/CURRENT/30_Places/le-progres-montmartre.md,3,1. 무엇을 먹는가,reference,46,0,0,a04ba60b2a872f86
+le-progres-montmartre#005,source/CURRENT/30_Places/le-progres-montmartre.md,3,2. 대안 — 이 자리가 안 될 때,reference,106,0,0,ddc5a033562d3af5
+le-progres-montmartre#006,source/CURRENT/30_Places/le-progres-montmartre.md,2,실용,reference,99,0,0,0de4ee7bef031d86
+le-relais-du-15eme#000,source/CURRENT/30_Places/le-relais-du-15eme.md,0,(preamble),reference,63,0,0,9a2061f597c724c7
+le-relais-du-15eme#001,source/CURRENT/30_Places/le-relais-du-15eme.md,2,왜 가는가,reference,49,0,0,305fab2d6d9c968f
+le-relais-du-15eme#002,source/CURRENT/30_Places/le-relais-du-15eme.md,3,Editor's Verdict,reference,59,0,0,cded5e17de4869b3
+le-relais-du-15eme#003,source/CURRENT/30_Places/le-relais-du-15eme.md,2,더 깊이,reference,0,0,0,
+le-relais-du-15eme#004,source/CURRENT/30_Places/le-relais-du-15eme.md,3,1. 무엇을 먹는가,reference,35,0,0,446e9e76fb08c409
+le-relais-du-15eme#005,source/CURRENT/30_Places/le-relais-du-15eme.md,3,2. 언제 가는가,reference,39,0,0,086a5c3ad645af21
+le-relais-du-15eme#006,source/CURRENT/30_Places/le-relais-du-15eme.md,2,실용,reference,89,1,0,31a18ce6c29d9a84
 le-rocher#000,source/CURRENT/30_Places/le-rocher.md,0,(preamble),reference,44,0,0,fd5ad0c2015a1216
 le-rocher#001,source/CURRENT/30_Places/le-rocher.md,2,왜 가는가,reference,90,0,0,9b2b4cc5a2f36b22
 le-rocher#002,source/CURRENT/30_Places/le-rocher.md,3,Editor's Verdict,reference,73,0,0,cfd37ff4f620f508
@@ -1375,6 +1513,13 @@ le-suquet#004,source/CURRENT/30_Places/le-suquet.md,3,1. 뤼 생탄투안과 어
 le-suquet#005,source/CURRENT/30_Places/le-suquet.md,3,2. 노트르담 드 레스페랑스 성당과 카스트르 박물관,reference,60,0,0,9d54c96f2452e0be
 le-suquet#006,source/CURRENT/30_Places/le-suquet.md,3,3. Don't Miss,reference,36,0,0,3e81ca25831552ef
 le-suquet#007,source/CURRENT/30_Places/le-suquet.md,2,실용,reference,71,0,0,c1720b48a131f149
+le-volant-basque#000,source/CURRENT/30_Places/le-volant-basque.md,0,(preamble),reference,64,0,0,aa3ad4c901ff234a
+le-volant-basque#001,source/CURRENT/30_Places/le-volant-basque.md,2,왜 가는가,reference,75,0,0,946b1abad67f41ab
+le-volant-basque#002,source/CURRENT/30_Places/le-volant-basque.md,3,Editor's Verdict,reference,58,0,0,ab17f90756ee3ca1
+le-volant-basque#003,source/CURRENT/30_Places/le-volant-basque.md,2,더 깊이,reference,0,0,0,
+le-volant-basque#004,source/CURRENT/30_Places/le-volant-basque.md,3,1. 무엇을 먹는가,reference,69,0,0,0a0ba689e9a2325a
+le-volant-basque#005,source/CURRENT/30_Places/le-volant-basque.md,3,2. 언제 가는가,reference,28,0,0,802a5bab4fa72c00
+le-volant-basque#006,source/CURRENT/30_Places/le-volant-basque.md,2,실용,reference,114,1,0,e8c5db69c87e8875
 les-baux-de-provence#000,source/CURRENT/30_Places/les-baux-de-provence.md,0,(preamble),reference,62,0,0,f772a754cd269449
 les-baux-de-provence#001,source/CURRENT/30_Places/les-baux-de-provence.md,2,현장 실행,reference,60,0,0,9c1be9c1a4d3f608
 les-baux-de-provence#002,source/CURRENT/30_Places/les-baux-de-provence.md,3,Trip Layer,reference,14,0,0,59568ed49d649e62
@@ -1398,9 +1543,17 @@ les-halles#003,source/CURRENT/30_Places/les-halles.md,2,더 깊이,reference,0,0
 les-halles#004,source/CURRENT/30_Places/les-halles.md,3,1. 파트리크 블랑의 수직 정원 (Mur Végétal) (알아야 보인다),reference,42,0,0,50ea705c67d314bb
 les-halles#005,source/CURRENT/30_Places/les-halles.md,3,2. 시장 안에서 꼭 맛봐야 할 것,reference,42,0,0,b1baf78250e02930
 les-halles#006,source/CURRENT/30_Places/les-halles.md,2,실용 & 주차/운영,reference,57,0,0,d6534d3e56b6a4f3
+les-marches#000,source/CURRENT/30_Places/les-marches.md,0,(preamble),reference,60,0,0,34228aa911803125
+les-marches#001,source/CURRENT/30_Places/les-marches.md,2,왜 가는가,reference,72,0,0,2325a9c786f2687a
+les-marches#002,source/CURRENT/30_Places/les-marches.md,3,Editor's Verdict,reference,64,0,0,538a88f5d5792e46
+les-marches#003,source/CURRENT/30_Places/les-marches.md,2,더 깊이,reference,0,0,0,
+les-marches#004,source/CURRENT/30_Places/les-marches.md,3,1. 저녁 고별 만찬을 위한 점심,reference,51,0,0,4dc4e4a7d614e121
+les-marches#005,source/CURRENT/30_Places/les-marches.md,3,2. 무엇을 먹는가,reference,68,0,0,66ae4b6ae5d055f6
+les-marches#006,source/CURRENT/30_Places/les-marches.md,3,3. 대안 — 이 자리가 안 될 때,reference,129,0,0,35b43624e888540b
+les-marches#007,source/CURRENT/30_Places/les-marches.md,2,실용,reference,96,1,0,143885c23c439cce
 lourmarin#000,source/CURRENT/30_Places/lourmarin.md,0,(preamble),reference,38,0,0,43659488af8d4787
-lourmarin#001,source/CURRENT/30_Places/lourmarin.md,2,현장 실행,reference,86,0,0,45bad1001e548698
-lourmarin#002,source/CURRENT/30_Places/lourmarin.md,3,Trip Layer,reference,20,0,0,f6af6273567739a7
+lourmarin#001,source/CURRENT/30_Places/lourmarin.md,2,현장 실행,reference,112,0,0,858a2b45a90dd4e3
+lourmarin#002,source/CURRENT/30_Places/lourmarin.md,3,Trip Layer,reference,25,0,0,a5f54b99d6ba8471
 lourmarin#003,source/CURRENT/30_Places/lourmarin.md,2,왜 가는가,reference,80,0,0,e38136e55b03a282
 lourmarin#004,source/CURRENT/30_Places/lourmarin.md,3,Editor's Verdict,reference,91,0,0,38a16dba83d227aa
 lourmarin#005,source/CURRENT/30_Places/lourmarin.md,2,더 깊이,reference,0,0,0,
@@ -1444,15 +1597,15 @@ marche-forville#004,source/CURRENT/30_Places/marche-forville.md,3,1. 포르빌�
 marche-forville#005,source/CURRENT/30_Places/marche-forville.md,2,실용,reference,54,0,0,0515c77518c39a91
 marseille#000,source/CURRENT/30_Places/marseille.md,0,(preamble),reference,48,0,0,2a2c2e89e4491cff
 marseille#001,source/CURRENT/30_Places/marseille.md,2,왜 가는가,reference,85,0,0,d1ffd8073f833efe
-marseille#002,source/CURRENT/30_Places/marseille.md,3,Editor's Verdict,reference,84,0,0,c1d0f2773168c7f7
+marseille#002,source/CURRENT/30_Places/marseille.md,3,Editor's Verdict,reference,81,0,0,078a74c67bd6cc5d
 marseille#003,source/CURRENT/30_Places/marseille.md,2,더 깊이,reference,0,0,0,
 marseille#004,source/CURRENT/30_Places/marseille.md,3,1. 마르세유를 이해하는 4대 레이어 (알아야 보인다),reference,71,0,0,6a1a7a609d2e5431
 marseille#005,source/CURRENT/30_Places/marseille.md,3,2. Aix-en-Provence와의 상호보완적 관계,reference,28,0,0,f89903072f5990de
 marseille#006,source/CURRENT/30_Places/marseille.md,3,3. Don't Miss & Look Closer,reference,28,0,0,026b2d5cff53519b
-marseille#007,source/CURRENT/30_Places/marseille.md,2,실용,reference,94,0,0,0f0cc7991b4dcec2
+marseille#007,source/CURRENT/30_Places/marseille.md,2,실용,reference,100,0,0,d4c949424485216c
 menerbes#000,source/CURRENT/30_Places/menerbes.md,0,(preamble),reference,47,0,0,5eb2528e60a8f295
-menerbes#001,source/CURRENT/30_Places/menerbes.md,2,현장 실행,reference,70,0,0,53909aeacab20ee6
-menerbes#002,source/CURRENT/30_Places/menerbes.md,3,Trip Layer,reference,16,0,0,e5165a30706af960
+menerbes#001,source/CURRENT/30_Places/menerbes.md,2,현장 실행,reference,84,0,0,771491bf06710626
+menerbes#002,source/CURRENT/30_Places/menerbes.md,3,Trip Layer,reference,16,0,0,103b3cead6a80b94
 menerbes#003,source/CURRENT/30_Places/menerbes.md,2,왜 가는가,reference,90,0,0,22d55b13e0bcb04d
 menerbes#004,source/CURRENT/30_Places/menerbes.md,3,Editor's Verdict,reference,90,0,0,cda7ab0dcf694899
 menerbes#005,source/CURRENT/30_Places/menerbes.md,2,더 깊이,reference,0,0,0,
@@ -1467,7 +1620,7 @@ menton#003,source/CURRENT/30_Places/menton.md,2,더 깊이,reference,0,0,0,
 menton#004,source/CURRENT/30_Places/menton.md,3,1. 생 미셸 대성당과 자갈 모자이크 광장 (La Calade),reference,58,0,0,1615a9fb21198ab3
 menton#005,source/CURRENT/30_Places/menton.md,3,2. 프랑스와 이탈리아의 국경 문화사,reference,34,0,0,41842dbac0f2a59d
 menton#006,source/CURRENT/30_Places/menton.md,3,3. Don't Miss & Look Closer,reference,88,0,0,854f3478c44c855b
-menton#007,source/CURRENT/30_Places/menton.md,2,실용,reference,117,0,0,1bb2e58681b7b498
+menton#007,source/CURRENT/30_Places/menton.md,2,실용,reference,116,0,0,6bdcf36f0010291f
 mercat-concepcio#000,source/CURRENT/30_Places/mercat-concepcio.md,0,(preamble),reference,55,0,0,53a01a8cc03ec0f9
 mercat-concepcio#001,source/CURRENT/30_Places/mercat-concepcio.md,2,왜 가는가,reference,77,0,0,348416007b5bfc48
 mercat-concepcio#002,source/CURRENT/30_Places/mercat-concepcio.md,3,Editor's Verdict,reference,64,0,0,0ad937ddd51fba75
@@ -1495,8 +1648,8 @@ monaco#002,source/CURRENT/30_Places/monaco.md,3,Editor's Verdict,reference,115,0
 monaco#003,source/CURRENT/30_Places/monaco.md,2,더 깊이,reference,0,0,0,
 monaco#004,source/CURRENT/30_Places/monaco.md,3,1. 세 개의 수직 레이어 걷기,reference,57,0,0,62f6a9592277a0d8
 monaco#005,source/CURRENT/30_Places/monaco.md,3,2. 카지노 데 몬테카를로 (Casino de Monte-Carlo),reference,31,0,0,a31777a3b9448ba1
-monaco#006,source/CURRENT/30_Places/monaco.md,3,3. Don't Miss & Look Closer,reference,61,0,0,1249eff203be85c6
-monaco#007,source/CURRENT/30_Places/monaco.md,2,실용,reference,89,0,0,9d9cdbc518a62cc2
+monaco#006,source/CURRENT/30_Places/monaco.md,3,3. Don't Miss & Look Closer,reference,65,0,0,557446f2afbed4e9
+monaco#007,source/CURRENT/30_Places/monaco.md,2,실용,reference,91,0,0,43f0eb644dbcb5bf
 montagne-sainte-victoire-terrain-des-peintres#000,source/CURRENT/30_Places/montagne-sainte-victoire-terrain-des-peintres.md,0,(preamble),reference,75,0,0,9d0ef04a8f438542
 montagne-sainte-victoire-terrain-des-peintres#001,source/CURRENT/30_Places/montagne-sainte-victoire-terrain-des-peintres.md,2,왜 가는가,reference,87,0,0,91ed6311d51a8f4b
 montagne-sainte-victoire-terrain-des-peintres#002,source/CURRENT/30_Places/montagne-sainte-victoire-terrain-des-peintres.md,3,Editor's Verdict,reference,107,0,0,b7dbbe7ba2469115
@@ -1518,6 +1671,13 @@ montorgueil#003,source/CURRENT/30_Places/montorgueil.md,2,더 깊이,reference,0
 montorgueil#004,source/CURRENT/30_Places/montorgueil.md,3,1. 몽토르게이 거리의 전설적인 미식 명가들 (알아야 보인다),reference,94,0,0,776a64d50052dd76
 montorgueil#005,source/CURRENT/30_Places/montorgueil.md,3,2. Don't Miss & Look Closer,reference,32,0,0,59a88dd88910a556
 montorgueil#006,source/CURRENT/30_Places/montorgueil.md,2,실용 & 교통,reference,56,0,0,d9a311ac41786a0d
+moustiers-sainte-marie#000,source/CURRENT/30_Places/moustiers-sainte-marie.md,0,(preamble),reference,50,0,0,5399aa3d1fbfc931
+moustiers-sainte-marie#001,source/CURRENT/30_Places/moustiers-sainte-marie.md,2,현장 실행,reference,86,0,0,96dab9076d4ab2b9
+moustiers-sainte-marie#002,source/CURRENT/30_Places/moustiers-sainte-marie.md,3,Trip Layer,reference,33,0,0,6fde2843348a9f50
+moustiers-sainte-marie#003,source/CURRENT/30_Places/moustiers-sainte-marie.md,2,왜 가는가,reference,79,0,0,b723088010d9b460
+moustiers-sainte-marie#004,source/CURRENT/30_Places/moustiers-sainte-marie.md,3,Editor's Verdict,reference,58,0,0,1e3ebefc6171b97c
+moustiers-sainte-marie#005,source/CURRENT/30_Places/moustiers-sainte-marie.md,2,이동과 주차,reference,42,0,0,242bb738d80bcd8d
+moustiers-sainte-marie#006,source/CURRENT/30_Places/moustiers-sainte-marie.md,2,공식 정보,reference,10,2,0,d60cac07c4206a0b
 mucem#000,source/CURRENT/30_Places/mucem.md,0,(preamble),reference,66,0,0,8206ef3ccbe885ca
 mucem#001,source/CURRENT/30_Places/mucem.md,2,왜 가는가,reference,78,0,0,ae6a91232c8090dd
 mucem#002,source/CURRENT/30_Places/mucem.md,3,Editor's Verdict,reference,95,0,0,0a46ce1588d5b727
@@ -1525,7 +1685,7 @@ mucem#003,source/CURRENT/30_Places/mucem.md,2,더 깊이,reference,0,0,0,
 mucem#004,source/CURRENT/30_Places/mucem.md,3,1. 뤼디 리치오티의 레이스 콘크리트 (알아야 보인다),reference,72,0,0,66364b0cf27e00d9
 mucem#005,source/CURRENT/30_Places/mucem.md,3,2. 옥상 테라스와 지중해 파노라마,reference,25,0,0,5e38e255400657ab
 mucem#006,source/CURRENT/30_Places/mucem.md,3,3. Don't Miss & Look Closer,reference,43,0,0,8ceb94ebc53ec24a
-mucem#007,source/CURRENT/30_Places/mucem.md,2,실용,reference,94,0,0,f4fb91d8851da527
+mucem#007,source/CURRENT/30_Places/mucem.md,2,실용,reference,103,0,0,1a8610efc7352e17
 musee-carnavalet#000,source/CURRENT/30_Places/musee-carnavalet.md,0,(preamble),reference,60,0,0,ca0c51f97f5e3e32
 musee-carnavalet#001,source/CURRENT/30_Places/musee-carnavalet.md,2,왜 가는가,reference,75,0,0,89b326b9ee2e1c33
 musee-carnavalet#002,source/CURRENT/30_Places/musee-carnavalet.md,3,Editor's Verdict,reference,82,0,0,03fa258e1a372a95
@@ -1576,7 +1736,7 @@ musee-granet#003,source/CURRENT/30_Places/musee-granet.md,2,더 깊이,reference
 musee-granet#004,source/CURRENT/30_Places/musee-granet.md,3,1. 세잔 소장실 (Salle Cézanne) — 화가의 귀환 (알아야 보인다),reference,37,0,0,9e7661617946adca
 musee-granet#005,source/CURRENT/30_Places/musee-granet.md,3,2. 장 플랑크 컬렉션 (Collection Jean Planque)과 수도원 건축,reference,45,0,0,e4fd2944c1fffd3d
 musee-granet#006,source/CURRENT/30_Places/musee-granet.md,3,3. Don't Miss & Look Closer,reference,30,0,0,e83a73b10e1d81a5
-musee-granet#007,source/CURRENT/30_Places/musee-granet.md,2,실용,reference,97,0,0,4dfc60a17691e2b0
+musee-granet#007,source/CURRENT/30_Places/musee-granet.md,2,실용,reference,122,0,0,e347a414d386d6f2
 musee-guimet#000,source/CURRENT/30_Places/musee-guimet.md,0,(preamble),reference,63,0,0,fb822926243d684d
 musee-guimet#001,source/CURRENT/30_Places/musee-guimet.md,2,왜 가는가,reference,77,0,0,8baf3f8009788d6b
 musee-guimet#002,source/CURRENT/30_Places/musee-guimet.md,3,Editor's Verdict,reference,70,0,0,14f0831f4b08c871
@@ -1636,12 +1796,12 @@ nice-walk#004,source/CURRENT/30_Places/nice-walk.md,3,1. 도보 경로 및 관�
 nice-walk#005,source/CURRENT/30_Places/nice-walk.md,2,실용,reference,38,0,0,fbfe48b59e58614f
 notre-dame-de-la-garde#000,source/CURRENT/30_Places/notre-dame-de-la-garde.md,0,(preamble),reference,74,0,0,13ca70f18017fbad
 notre-dame-de-la-garde#001,source/CURRENT/30_Places/notre-dame-de-la-garde.md,2,왜 가는가,reference,81,0,0,11dd2ad1fdf471f9
-notre-dame-de-la-garde#002,source/CURRENT/30_Places/notre-dame-de-la-garde.md,3,Editor's Verdict,reference,97,0,0,031ea5d14b61f5af
+notre-dame-de-la-garde#002,source/CURRENT/30_Places/notre-dame-de-la-garde.md,3,Editor's Verdict,reference,86,0,0,ab6c48b45c561265
 notre-dame-de-la-garde#003,source/CURRENT/30_Places/notre-dame-de-la-garde.md,2,더 깊이,reference,0,0,0,
 notre-dame-de-la-garde#004,source/CURRENT/30_Places/notre-dame-de-la-garde.md,3,1. 뱃사람의 기도처와 봉헌물 (알아야 보인다),reference,71,0,0,fdf3544e63b4f58f
 notre-dame-de-la-garde#005,source/CURRENT/30_Places/notre-dame-de-la-garde.md,3,2. 황금 성모상 (La Bonne Mère),reference,20,0,0,5de7ec0f8d57d558
 notre-dame-de-la-garde#006,source/CURRENT/30_Places/notre-dame-de-la-garde.md,3,3. Don't Miss & Look Closer,reference,43,0,0,eb7263edc5144f83
-notre-dame-de-la-garde#007,source/CURRENT/30_Places/notre-dame-de-la-garde.md,2,실용,reference,78,0,0,a0f20e653b271f34
+notre-dame-de-la-garde#007,source/CURRENT/30_Places/notre-dame-de-la-garde.md,2,실용,reference,73,0,0,7503708786d6fefb
 notre-dame-de-paris#000,source/CURRENT/30_Places/notre-dame-de-paris.md,0,(preamble),reference,65,0,0,75cd32fe220af88d
 notre-dame-de-paris#001,source/CURRENT/30_Places/notre-dame-de-paris.md,2,왜 가는가,reference,80,0,0,588e515bdd549670
 notre-dame-de-paris#002,source/CURRENT/30_Places/notre-dame-de-paris.md,3,Editor's Verdict,reference,118,0,0,41d60d097a9f5462
@@ -1663,8 +1823,8 @@ oppede-le-vieux#003,source/CURRENT/30_Places/oppede-le-vieux.md,2,더 깊이,ref
 oppede-le-vieux#004,source/CURRENT/30_Places/oppede-le-vieux.md,3,1. 폐허와 복원의 지층 (알아야 보인다),reference,77,0,0,7a9a0e17a7aba7dd
 oppede-le-vieux#005,source/CURRENT/30_Places/oppede-le-vieux.md,3,2. Don't Miss & Look Closer,reference,39,0,0,7b70a654649971e3
 oppede-le-vieux#006,source/CURRENT/30_Places/oppede-le-vieux.md,2,실용 & 주차,reference,67,0,0,cb10c78c4365a08b
-orange#000,source/CURRENT/30_Places/orange.md,0,(preamble),reference,40,0,0,54f93f27a88d02c0
-orange#001,source/CURRENT/30_Places/orange.md,2,현장 실행,reference,44,0,0,cdcb227822ba5267
+orange#000,source/CURRENT/30_Places/orange.md,0,(preamble),reference,39,0,0,9c8880a076ef5ed6
+orange#001,source/CURRENT/30_Places/orange.md,2,현장 실행,reference,42,0,0,bb82f63d72c0c524
 orange#002,source/CURRENT/30_Places/orange.md,3,Trip Layer,reference,27,0,0,81a0afa557c80f25
 orange#003,source/CURRENT/30_Places/orange.md,2,왜 가는가,reference,42,0,0,7359310abcf2989a
 orange#004,source/CURRENT/30_Places/orange.md,2,더 깊이,reference,0,0,0,
@@ -1707,7 +1867,7 @@ passeig-de-la-muralla#006,source/CURRENT/30_Places/passeig-de-la-muralla.md,3,3.
 passeig-de-la-muralla#007,source/CURRENT/30_Places/passeig-de-la-muralla.md,2,실용,reference,73,0,0,d8e34a3092005c0b
 patisserie-weibel#000,source/CURRENT/30_Places/patisserie-weibel.md,0,(preamble),reference,56,0,0,24981aaacb6c5e74
 patisserie-weibel#001,source/CURRENT/30_Places/patisserie-weibel.md,2,왜 가는가,reference,86,0,0,c4c0925dd503c3e3
-patisserie-weibel#002,source/CURRENT/30_Places/patisserie-weibel.md,3,Editor's Verdict,reference,71,0,0,f40002355ac6fc72
+patisserie-weibel#002,source/CURRENT/30_Places/patisserie-weibel.md,3,Editor's Verdict,reference,71,0,0,177ee353dc81307e
 patisserie-weibel#003,source/CURRENT/30_Places/patisserie-weibel.md,2,더 깊이,reference,0,0,0,
 patisserie-weibel#004,source/CURRENT/30_Places/patisserie-weibel.md,3,1. 1954년 리셸므 광장의 살아있는 랜드마크,reference,19,0,0,8ef446eb98f427c6
 patisserie-weibel#005,source/CURRENT/30_Places/patisserie-weibel.md,3,2. 대표 메뉴와 주문 팁,reference,41,0,0,acdd58d966c56342
@@ -1740,14 +1900,26 @@ place-du-forum-arles#004,source/CURRENT/30_Places/place-du-forum-arles.md,3,1. �
 place-du-forum-arles#005,source/CURRENT/30_Places/place-du-forum-arles.md,3,2. 벽 속에 박힌 로마 신전 기둥,reference,33,0,0,65ec01316eb4f98e
 place-du-forum-arles#006,source/CURRENT/30_Places/place-du-forum-arles.md,3,3. Don't Miss & Look Closer,reference,46,0,0,6fd9b184555dabb8
 place-du-forum-arles#007,source/CURRENT/30_Places/place-du-forum-arles.md,2,실용 & 팁,reference,58,0,0,9b072f9698f3d246
-place-richelme-place-des-precheurs#000,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,0,(preamble),reference,66,0,0,6a204eddcf64920f
-place-richelme-place-des-precheurs#001,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,2,왜 가는가,reference,84,0,0,4b85774c47e73703
+place-richelme-place-des-precheurs#000,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,0,(preamble),reference,66,0,0,8449e22e168167eb
+place-richelme-place-des-precheurs#001,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,2,왜 가는가,reference,72,0,0,907afb0037e4789e
 place-richelme-place-des-precheurs#002,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,3,Editor's Verdict,reference,85,0,0,4197c7c427422ba2
 place-richelme-place-des-precheurs#003,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,2,더 깊이,reference,0,0,0,
-place-richelme-place-des-precheurs#004,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,3,1. 두 시장의 성격과 활용법 (알아야 보인다),reference,59,0,0,7c59e37fa66d562f
+place-richelme-place-des-precheurs#004,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,3,1. 두 시장의 성격과 활용법 (알아야 보인다),reference,51,0,0,8cb455d8cb943e90
 place-richelme-place-des-precheurs#005,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,3,2. 시장이 파장한 뒤의 마법,reference,26,0,0,4a9b185b5a917f24
 place-richelme-place-des-precheurs#006,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,3,3. Don't Miss & Look Closer,reference,39,0,0,342106f53da21547
-place-richelme-place-des-precheurs#007,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,2,실용,reference,81,0,0,9fd8bd6703593e7d
+place-richelme-place-des-precheurs#007,source/CURRENT/30_Places/place-richelme-place-des-precheurs.md,2,실용,reference,84,0,0,de5b758a4b945995
+plateau-de-valensole#000,source/CURRENT/30_Places/plateau-de-valensole.md,0,(preamble),reference,49,0,0,84d011173003d660
+plateau-de-valensole#001,source/CURRENT/30_Places/plateau-de-valensole.md,2,현장 실행,reference,69,0,0,09e05b6e77e4f283
+plateau-de-valensole#002,source/CURRENT/30_Places/plateau-de-valensole.md,3,Trip Layer,reference,31,0,0,73cedc0e432edbf9
+plateau-de-valensole#003,source/CURRENT/30_Places/plateau-de-valensole.md,2,왜 가는가,reference,47,0,0,5001468a782ed5ed
+plateau-de-valensole#004,source/CURRENT/30_Places/plateau-de-valensole.md,3,Editor's Verdict,reference,35,0,0,55d34b27241867c9
+plateau-de-valensole#005,source/CURRENT/30_Places/plateau-de-valensole.md,2,공식 정보,reference,5,1,0,bd537b6d23300ba0
+point-sublime#000,source/CURRENT/30_Places/point-sublime.md,0,(preamble),reference,47,0,0,9241a208f667345f
+point-sublime#001,source/CURRENT/30_Places/point-sublime.md,2,현장 실행,reference,64,0,0,678bcf562dce9da5
+point-sublime#002,source/CURRENT/30_Places/point-sublime.md,3,Trip Layer,reference,19,0,0,9766291ef57f8e51
+point-sublime#003,source/CURRENT/30_Places/point-sublime.md,2,왜 가는가,reference,52,0,0,ca28173353acee53
+point-sublime#004,source/CURRENT/30_Places/point-sublime.md,3,Editor's Verdict,reference,54,0,0,4b2cd557cdfb30fc
+point-sublime#005,source/CURRENT/30_Places/point-sublime.md,2,공식 정보,reference,2,1,0,5ee71cf41d1c98e7
 pont-du-gard#000,source/CURRENT/30_Places/pont-du-gard.md,0,(preamble),reference,60,0,0,98601abb553ade97
 pont-du-gard#001,source/CURRENT/30_Places/pont-du-gard.md,2,왜 가는가,reference,83,0,0,57b7cb6857ca0c45
 pont-du-gard#002,source/CURRENT/30_Places/pont-du-gard.md,3,Editor's Verdict,reference,105,0,0,1c01d7509ea405a0
@@ -1787,7 +1959,7 @@ restaurant-beatrice#002,source/CURRENT/30_Places/restaurant-beatrice.md,3,Editor
 restaurant-beatrice#003,source/CURRENT/30_Places/restaurant-beatrice.md,2,더 깊이,reference,0,0,0,
 restaurant-beatrice#004,source/CURRENT/30_Places/restaurant-beatrice.md,3,1. 베아트리스 드 로스차일드 남작부인의 살롱,reference,18,0,0,a42f32a5f8b22aea
 restaurant-beatrice#005,source/CURRENT/30_Places/restaurant-beatrice.md,3,2. 대표 메뉴와 지중해식 플레이트,reference,43,0,0,b41446db28dbc99d
-restaurant-beatrice#006,source/CURRENT/30_Places/restaurant-beatrice.md,2,실용,reference,96,1,0,63427f90aa1516b1
+restaurant-beatrice#006,source/CURRENT/30_Places/restaurant-beatrice.md,2,실용,reference,94,1,0,1f4e7f81818d3a71
 rocher-des-doms#000,source/CURRENT/30_Places/rocher-des-doms.md,0,(preamble),reference,59,0,0,292fa6822313f2a5
 rocher-des-doms#001,source/CURRENT/30_Places/rocher-des-doms.md,2,왜 가는가,reference,81,0,0,99f42f11ec4e2ebb
 rocher-des-doms#002,source/CURRENT/30_Places/rocher-des-doms.md,3,Editor's Verdict,reference,79,0,0,90e075428199fee0
@@ -1803,8 +1975,8 @@ rotonde#004,source/CURRENT/30_Places/rotonde.md,3,1. 3대 여신상이 가리키
 rotonde#005,source/CURRENT/30_Places/rotonde.md,3,2. 주철 사자와 백조 조각,reference,23,0,0,0e285f7745670fbf
 rotonde#006,source/CURRENT/30_Places/rotonde.md,2,실용,reference,57,0,0,52b14e15f23ee565
 roussillon-sentier-des-ocres#000,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,0,(preamble),reference,54,0,0,935ac684c7854320
-roussillon-sentier-des-ocres#001,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,2,현장 실행,reference,68,0,0,bb4fb0ca6f5d9633
-roussillon-sentier-des-ocres#002,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,3,Trip Layer,reference,23,0,0,af3f4f7536dc7248
+roussillon-sentier-des-ocres#001,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,2,현장 실행,reference,68,0,0,cde37fdf6b92862f
+roussillon-sentier-des-ocres#002,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,3,Trip Layer,reference,23,0,0,ba63361ced16b8b7
 roussillon-sentier-des-ocres#003,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,2,왜 가는가,reference,78,0,0,94ae39686bbc51e8
 roussillon-sentier-des-ocres#004,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,3,Editor's Verdict,reference,95,0,0,e8a0c9028b62d3b2
 roussillon-sentier-des-ocres#005,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,2,더 깊이,reference,0,0,0,
@@ -1812,6 +1984,12 @@ roussillon-sentier-des-ocres#006,source/CURRENT/30_Places/roussillon-sentier-des
 roussillon-sentier-des-ocres#007,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,3,2. Sentier des Ocres 산책 코스 선택법,reference,48,0,0,4e8ab63971cdafbb
 roussillon-sentier-des-ocres#008,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,3,3. Don't Miss & Look Closer,reference,48,0,0,f08e629dca90ec9c
 roussillon-sentier-des-ocres#009,source/CURRENT/30_Places/roussillon-sentier-des-ocres.md,2,실용 & 주차/복장 수칙,reference,117,0,0,46331d5d2a994692
+route-des-cretes#000,source/CURRENT/30_Places/route-des-cretes.md,0,(preamble),reference,47,0,0,7f14e3275b8f42dd
+route-des-cretes#001,source/CURRENT/30_Places/route-des-cretes.md,2,현장 실행,reference,77,0,0,29c9d27627df77f6
+route-des-cretes#002,source/CURRENT/30_Places/route-des-cretes.md,3,Trip Layer,reference,34,0,0,3577ee5d425964c1
+route-des-cretes#003,source/CURRENT/30_Places/route-des-cretes.md,2,왜 가는가,reference,49,0,0,624ec3ba8a300112
+route-des-cretes#004,source/CURRENT/30_Places/route-des-cretes.md,3,Editor's Verdict,reference,42,0,0,2c9583340a000327
+route-des-cretes#005,source/CURRENT/30_Places/route-des-cretes.md,2,공식 정보,reference,6,1,0,89ad248d16298fdd
 sagrada-familia#000,source/CURRENT/30_Places/sagrada-familia.md,0,(preamble),reference,42,0,0,5bfd3298a8fa47de
 sagrada-familia#001,source/CURRENT/30_Places/sagrada-familia.md,2,왜 가는가,reference,62,0,0,7016b894fe91ce97
 sagrada-familia#002,source/CURRENT/30_Places/sagrada-familia.md,3,Editor's Verdict,reference,91,0,0,7d8a0c0e3e7a951e
@@ -1855,6 +2033,20 @@ sant-pau-recinte-modernista#005,source/CURRENT/30_Places/sant-pau-recinte-modern
 sant-pau-recinte-modernista#006,source/CURRENT/30_Places/sant-pau-recinte-modernista.md,3,3. 산 라파엘 병동 (Sant Rafael Pavilion) — 100년 전의 시간 여행,reference,42,0,0,141297c6b37d52a8
 sant-pau-recinte-modernista#007,source/CURRENT/30_Places/sant-pau-recinte-modernista.md,3,4. Don't Miss & Look Closer,reference,75,0,0,05cfc5507448d258
 sant-pau-recinte-modernista#008,source/CURRENT/30_Places/sant-pau-recinte-modernista.md,2,실용,reference,134,1,0,593449739e936bcb
+sawadee-paris#000,source/CURRENT/30_Places/sawadee-paris.md,0,(preamble),reference,52,0,0,78aa2612ef4db643
+sawadee-paris#001,source/CURRENT/30_Places/sawadee-paris.md,2,왜 가는가,reference,44,0,0,d96480738e5daaaa
+sawadee-paris#002,source/CURRENT/30_Places/sawadee-paris.md,3,Editor's Verdict,reference,51,0,0,a6ba0336f2e227bc
+sawadee-paris#003,source/CURRENT/30_Places/sawadee-paris.md,2,더 깊이,reference,0,0,0,
+sawadee-paris#004,source/CURRENT/30_Places/sawadee-paris.md,3,1. 무엇을 먹는가,reference,53,0,0,c299384c372df0cb
+sawadee-paris#005,source/CURRENT/30_Places/sawadee-paris.md,3,2. 요일 주의,reference,38,0,0,72797421972e45c7
+sawadee-paris#006,source/CURRENT/30_Places/sawadee-paris.md,2,실용,reference,108,1,0,797de7e5c036d125
+stephane-martin#000,source/CURRENT/30_Places/stephane-martin.md,0,(preamble),reference,54,0,0,6d7977f5d15fa97f
+stephane-martin#001,source/CURRENT/30_Places/stephane-martin.md,2,왜 가는가,reference,50,0,0,17645443cd612579
+stephane-martin#002,source/CURRENT/30_Places/stephane-martin.md,3,Editor's Verdict,reference,55,0,0,66c31f48c5436c6e
+stephane-martin#003,source/CURRENT/30_Places/stephane-martin.md,2,더 깊이,reference,0,0,0,
+stephane-martin#004,source/CURRENT/30_Places/stephane-martin.md,3,1. 무엇을 먹는가,reference,71,0,0,b6c993f8b06217fe
+stephane-martin#005,source/CURRENT/30_Places/stephane-martin.md,3,2. 언제 가는가,reference,40,0,0,26b36f72938ce797
+stephane-martin#006,source/CURRENT/30_Places/stephane-martin.md,2,실용,reference,98,1,0,676c8f7b50756dcd
 theatre-antique-arles#000,source/CURRENT/30_Places/theatre-antique-arles.md,0,(preamble),reference,64,0,0,4e236cb698722515
 theatre-antique-arles#001,source/CURRENT/30_Places/theatre-antique-arles.md,2,왜 가는가,reference,80,0,0,42ff6c0ed6147fde
 theatre-antique-arles#002,source/CURRENT/30_Places/theatre-antique-arles.md,3,Editor's Verdict,reference,80,0,0,e0c6f400bf049016
@@ -1905,20 +2097,20 @@ vieux-nice#005,source/CURRENT/30_Places/vieux-nice.md,3,2. 생트 레파라트 �
 vieux-nice#006,source/CURRENT/30_Places/vieux-nice.md,3,3. Don't Miss & Look Closer,reference,48,0,0,05e014c3c36f37ea
 vieux-nice#007,source/CURRENT/30_Places/vieux-nice.md,2,실용,reference,77,0,0,c8d3b88feed5c4e2
 vieux-port-marseille#000,source/CURRENT/30_Places/vieux-port-marseille.md,0,(preamble),reference,57,0,0,4e62e15e5da8956e
-vieux-port-marseille#001,source/CURRENT/30_Places/vieux-port-marseille.md,2,왜 가는가,reference,86,0,0,eab4f9fe5d672270
-vieux-port-marseille#002,source/CURRENT/30_Places/vieux-port-marseille.md,3,Editor's Verdict,reference,96,0,0,11e0ebc979101e41
+vieux-port-marseille#001,source/CURRENT/30_Places/vieux-port-marseille.md,2,왜 가는가,reference,86,0,0,74728a0b28d89174
+vieux-port-marseille#002,source/CURRENT/30_Places/vieux-port-marseille.md,3,Editor's Verdict,reference,97,0,0,b2f1c843a1bbaf1f
 vieux-port-marseille#003,source/CURRENT/30_Places/vieux-port-marseille.md,2,더 깊이,reference,0,0,0,
 vieux-port-marseille#004,source/CURRENT/30_Places/vieux-port-marseille.md,3,1. 노먼 포스터의 거울 차양 (L'Ombrière) (알아야 보인다),reference,32,0,0,46e3a52e1c730bf6
-vieux-port-marseille#005,source/CURRENT/30_Places/vieux-port-marseille.md,3,"2. 2,600년 전통의 아침 어시장 (Marché aux Poissons)",reference,34,0,0,175fb66ee24c54b1
+vieux-port-marseille#005,source/CURRENT/30_Places/vieux-port-marseille.md,3,"2. 2,600년 전통의 아침 어시장 (Marché aux Poissons)",reference,29,0,0,d3c751cdbeabf80a
 vieux-port-marseille#006,source/CURRENT/30_Places/vieux-port-marseille.md,3,3. Don't Miss & Look Closer,reference,53,0,0,279f3f4a4e69afee
-vieux-port-marseille#007,source/CURRENT/30_Places/vieux-port-marseille.md,2,실용,reference,75,0,0,db026926ebc07814
+vieux-port-marseille#007,source/CURRENT/30_Places/vieux-port-marseille.md,2,실용,reference,77,0,0,026bfea91aa737be
 villa-ephrussi-de-rothschild#000,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,0,(preamble),reference,53,0,0,431cf6a4d154747c
 villa-ephrussi-de-rothschild#001,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,2,왜 가는가,reference,78,0,0,b9a06f8f04ad6103
 villa-ephrussi-de-rothschild#002,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,3,Editor’s Verdict,reference,67,0,0,0e2d993bf1aab1dd
 villa-ephrussi-de-rothschild#003,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,2,더 깊이,reference,0,0,0,
 villa-ephrussi-de-rothschild#004,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,3,1. 베아트리스 남작부인과 일 드 프랑스 호,reference,30,0,0,9480b8e3d96a2b09
 villa-ephrussi-de-rothschild#005,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,3,2. 9개의 테마 정원과 음악 분수,reference,55,0,0,3638fb38e9986489
-villa-ephrussi-de-rothschild#006,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,2,실용,reference,88,1,0,c6c65d52ba1e92b0
+villa-ephrussi-de-rothschild#006,source/CURRENT/30_Places/villa-ephrussi-de-rothschild.md,2,실용,reference,92,1,0,c1b00ca40802339a
 village-des-bories#000,source/CURRENT/30_Places/village-des-bories.md,0,(preamble),reference,58,0,0,f03fbd74c0c7f599
 village-des-bories#001,source/CURRENT/30_Places/village-des-bories.md,2,왜 가는가,reference,73,0,0,504477e23751a349
 village-des-bories#002,source/CURRENT/30_Places/village-des-bories.md,3,Editor's Verdict,reference,81,0,0,7520862bbfd502e2
@@ -1929,11 +2121,11 @@ village-des-bories#006,source/CURRENT/30_Places/village-des-bories.md,3,3. Don't
 village-des-bories#007,source/CURRENT/30_Places/village-des-bories.md,2,실용 & 운전/주차,reference,100,0,0,a79355113c404e50
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#001,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,1,100. Whole Trip 43-Day Execution Audit v1.0,operations,39,0,0,7fd872c4267a8c88
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#002,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,1. 감사 기준,operations,31,0,0,234f201bc1323bf6
-100_Whole_Trip_43_Day_Execution_Audit_v1.0#003,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,2. 날짜별 실행성 감사,operations,1566,0,0,570c6b6033711bb6
+100_Whole_Trip_43_Day_Execution_Audit_v1.0#003,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,2. 날짜별 실행성 감사,operations,1595,0,0,3d8c7aa83358405b
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#004,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,3. 위험도 분류,operations,0,0,0,
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#005,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,3,A. 연결 실패 시 여행 전체에 영향을 주는 P0 일정,operations,73,0,0,1c1d0dab3c3c1845
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#006,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,3,B. 날씨·운영조건 의존도가 높은 일정,operations,44,0,0,98c5648d8a3dc32a
-100_Whole_Trip_43_Day_Execution_Audit_v1.0#007,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,3,C. 과밀화 방지가 필요한 복합일,operations,80,0,0,8cb2bf12cc174803
+100_Whole_Trip_43_Day_Execution_Audit_v1.0#007,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,3,C. 과밀화 방지가 필요한 복합일,operations,81,0,0,c7b8383c49c4b9dd
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#008,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,4. 전 여행 운영규칙,operations,66,0,0,1d70c51dc455f8ff
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#009,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,5. Phase 5 결론,operations,103,0,0,1a0e9a5330eaf1c7
 100_Whole_Trip_43_Day_Execution_Audit_v1.0#010,source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md,2,6. 2026-08-03 공식 운영 검증,operations,113,7,0,1e8e097abfaabb27
@@ -1948,11 +2140,11 @@ village-des-bories#007,source/CURRENT/30_Places/village-des-bories.md,2,실용 &
 110_Phase8_Reservation_and_Operations_Lock_Register_v1.0#007,source/OPERATIONS/110_Phase8_Reservation_and_Operations_Lock_Register_v1.0.md,2,실제 예약 잠금에 필요한 입력,operations,57,0,0,569b82a1da09b24a
 116_Phase10_Official_Source_Fact_Verification_Register_v1.0#001,source/OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md,1,116. Phase 10 Official-Source Fact Verification Register v1.0,operations,33,0,0,fd43cdbbaf448554
 116_Phase10_Official_Source_Fact_Verification_Register_v1.0#002,source/OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md,2,상태 정의,operations,45,0,0,54b71fb3941f51d3
-116_Phase10_Official_Source_Fact_Verification_Register_v1.0#003,source/OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md,2,공식자료 검증표,operations,1280,42,0,c8c09fa74bf35b1d
+116_Phase10_Official_Source_Fact_Verification_Register_v1.0#003,source/OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md,2,공식자료 검증표,operations,1712,53,0,17f6e36559d4f261
 116_Phase10_Official_Source_Fact_Verification_Register_v1.0#004,source/OPERATIONS/116_Phase10_Official_Source_Fact_Verification_Register_v1.0.md,2,범위와 한계,operations,50,0,0,1794a5bf2f5a805c
 117_Departure_and_Daily_Reverification_Calendar_v1.0#001,source/OPERATIONS/117_Departure_and_Daily_Reverification_Calendar_v1.0.md,1,117. Departure and Daily Reverification Calendar v1.0,operations,0,0,0,
 117_Departure_and_Daily_Reverification_Calendar_v1.0#002,source/OPERATIONS/117_Departure_and_Daily_Reverification_Calendar_v1.0.md,2,출발 전,operations,64,0,0,3660b450e859975f
-117_Departure_and_Daily_Reverification_Calendar_v1.0#003,source/OPERATIONS/117_Departure_and_Daily_Reverification_Calendar_v1.0.md,2,날짜별 핵심 게이트,operations,188,0,0,ac251b7ad382fec3
+117_Departure_and_Daily_Reverification_Calendar_v1.0#003,source/OPERATIONS/117_Departure_and_Daily_Reverification_Calendar_v1.0.md,2,날짜별 핵심 게이트,operations,207,0,0,4bd1be996865803e
 118_Phase10_Final_Fact_Verification_Report_v1.0#001,source/OPERATIONS/118_Phase10_Final_Fact_Verification_Report_v1.0.md,1,Phase 10 Final Fact Verification Report v1.0,operations,0,0,0,
 118_Phase10_Final_Fact_Verification_Report_v1.0#002,source/OPERATIONS/118_Phase10_Final_Fact_Verification_Report_v1.0.md,2,완료 범위,operations,36,0,0,feb41022c95e8dfa
 118_Phase10_Final_Fact_Verification_Report_v1.0#003,source/OPERATIONS/118_Phase10_Final_Fact_Verification_Report_v1.0.md,2,결과,operations,56,0,0,48121e9332b397a4

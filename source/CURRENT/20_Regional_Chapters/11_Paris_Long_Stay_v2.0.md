@@ -25,7 +25,7 @@ Paris에서는 명소를 하루 종일 따라다니기보다 한곳에 머물며
 ### 이번 15박 체류의 핵심
 
 - **생활하는 Paris** — 15구 거점에서 같은 빵집과 시장, 동네길을 반복해서 이용하며 일상의 안정을 찾는다.
-- **오후의 문화 일정** — 하루 한 곳을 중심으로 그랑 팔레, 오르세(상설 9/29 · 카사트 특별전 10/6 2회 방문), 루브르 등 대표 미술관과 역사 지구를 깊게 본다.
+- **오후의 문화 일정** — 하루 한 곳을 중심으로 그랑 팔레, 오르세(상설 10/1 · 카사트 특별전 10/6 2회 방문), 루브르 등 대표 미술관과 역사 지구를 깊게 본다.
 - **특별한 날** — 베르사유 전일 투어, 개선문상 경마 축제(10/4), 몽마르트르 포도축제(10/7) 등 날짜가 정해진 행사를 온전히 즐긴다.
 
 15박 전체를 관광으로 채우기보다 매일 일정에 생활시간과 휴식을 남기는 것이 기본이다.
@@ -36,19 +36,19 @@ Paris에서는 명소를 하루 종일 따라다니기보다 한곳에 머물며
 |---|---|
 | 9/24 목 | Lyon → Paris TGV 이동 · 15구 숙소 체크인 (15박 시작) · 첫 장보기 & 동네 산책 |
 | 9/25 금 | Tootbus 파리 시티투어 풀 루프 · Grand Palais <Cézanne et nous> 특별전 |
-| 9/26 토 | Musée du Luxembourg <Andy Warhol> 특별전 · 뤽상부르 공원 · 생제르맹 · 노트르담 외관 |
-| 9/27 일 | Belle Époque & Classical Paris · Marché Convention·Pichard · Petit Palais · 튀일르리 · 팔레 루아얄 · Opéra Garnier |
-| 9/28 월 | Musée Gustave Moreau · 9구 누벨 아테네 · Paris Fashion Week 개막 & Le Marais |
-| 9/29 화 | Musée d'Orsay 3.5시간 집중 관람 · Musée Rodin 조각 정원 · 앵발리드 외관 |
-| 9/30 수 | Monet & Contemporary Paris / Fashion · Musée de l'Orangerie · Chez Savy · Avenue Montaigne · Fashion Week 서부 축 · Palais de Tokyo |
-| 10/1 목 | Château de Versailles (본관 10:00) · 대정원 · 트리아농 전일 투어 |
-| 10/2 금 | Musée du Louvre 마스터피스 4시간 집중 관람 · Cour Carrée & 센 강변 일몰 산책 |
+| 9/26 토 | Sainte-Chapelle 15:00 PMP 최초 사용 · Conciergerie · Île de la Cité·Seine 산책 |
+| 9/27 일 | Marché Convention·Pichard · Musée Picasso Paris · Notre-Dame · Tuileries·Place Vendôme · Palais Royal · Opéra Garnier |
+| 9/28 월 | Musée Gustave Moreau · Paris Fashion Week 개막 & Le Marais · Arc de Triomphe 저녁 Optional(PMP) |
+| 9/29 화 | Château de Versailles (본관 10:00 전후) · La Flottille · 대정원 · 트리아농 전일 투어 |
+| 9/30 수 | Musée de l'Orangerie 10:00 · Chez Savy · Avenue Montaigne·Fashion Week · Musée Guimet 14:40 · Palais de Tokyo |
+| 10/1 목 | Musée d'Orsay 상설 컬렉션 (10:30 예약 확정) · Café Varenne · Musée Rodin · 앵발리드 외관 선택 |
+| 10/2 금 | Musée du Louvre 11:00 · PMP 마지막 핵심 사용 · Cour Carrée·센 강변 |
 | 10/3 토 | Musée Marmottan Monet (<인상, 해돋이>) · 라늘라그 정원 & 파시 역사지구 산책 |
-| 10/4 일 | Qatar Prix de l'Arc de Triomphe (파리롱샹 경마 대회 본선 전일) |
+| 10/4 일 | Qatar Prix de l'Arc de Triomphe · General Entry 예약완료 |
 | 10/5 월 | 경마 후 오전 회복 & 세탁 · Musée Jacquemart-André · 몽소 공원 산책 |
 | 10/6 화 | Marché Convention 장보기 · Musée d'Orsay <Mary Cassatt> 특별전 개막 · 마레 지구 |
 | 10/7 수 | Bourse de Commerce (<Remember Me> 개막전) · Fête des Vendanges de Montmartre |
-| 10/8 목 | Musée Guimet · Musée d'Art Moderne de Paris (MAM) · 트로카데로 에펠탑 고별 일몰 |
+| 10/8 목 | Musée d'Art Moderne de Paris (MAM) · 트로카데로 에펠탑 고별 일몰 |
 | 10/9 금 | 15구 숙소 체크아웃 · Café du Commerce 점심 · 공식 택시로 CDG 이동 ➔ OZ502 탑승 |
 
 상세 시각, 예약, 이동과 식사는 각 날짜의 Day 페이지에서 확인한다.
@@ -93,7 +93,7 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 
 ### 근교일은 철도
 
-베르사유(Day 34)는 RER C선을 이용해 이동하며, 15구 숙소 인근 역(Javel 등)에서 직통으로 연결된다.
+베르사유(Day 32)는 RER C선을 이용해 이동하며, 15구 숙소 인근 역(Javel 등)에서 직통으로 연결된다.
 
 ### 출국일은 CDG 이동
 
@@ -134,8 +134,8 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 ---
 
 #### Musée d'Orsay {{grade:essential|필수}}
-> **Editor's Verdict**: 1900년 오르세 기차역을 개조한 보자르 건축물에 1848~1914년 인상주의 걸작들이 집결한 미술관. Day 32(9/29) 상설 3.5시간 집중 관람과 Day 39(10/6) <Mary Cassatt> 대형 회고전 개막 2회차 집중 관람으로 운영.
-- **체류/요금**: 1회차 3–3.5시간 / 2회차 90–120분 · 성인 €16.00 (목요일 야간 개장, 월요일 휴관)
+> **Editor's Verdict**: 1900년 오르세 기차역을 개조한 보자르 건축물에 1848~1914년 인상주의 걸작들이 집결한 미술관. Day 34(10/1) 상설 컬렉션 2시간 30분 집중 관람과 Day 39(10/6) <Mary Cassatt> 대형 회고전 개막 재방문으로 역할을 분리한다.
+- **체류/요금**: 1회차 2시간 30분 / 특별전 재방문 90–120분 · 성인 €16.00 (목요일 야간 개장, 월요일 휴관)
 - **상세 가이드**: [Musée d'Orsay 전체 심화 가이드 보기](../places/musee-d-orsay.html)
 
 ---
@@ -495,7 +495,7 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 - 메트로 8호선(Lourmel, Commerce) 및 10호선 도보 접근성.
 
 ### 주요 예약 및 안전 원칙
-- 루브르(Day 35), 오랑주리(Day 33), 베르사유(Day 34 10:00 슬롯), 그랑 팔레 세잔전(Day 28), 오르세(Day 32 상설 · Day 39 카사트전 14:00) 등 주요 문화 명소는 사전 시간지정 예약으로 입장한다.
+- 루브르(Day 35), 오랑주리(Day 33), 베르사유(Day 32 10:00 전후 슬롯), 그랑 팔레 세잔전(Day 28), 오르세(Day 34 상설 10:30 확정 · Day 39 카사트전 14:00) 등 주요 문화 명소는 사전 시간지정 예약으로 입장한다.
 - 야간 귀가 시에는 환승이 적고 밝은 출구로 연결되는 메트로 노선을 이용한다.
 
 ---
@@ -507,10 +507,11 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 - [ ] 9/24 TGV INOUI 6618 (13:04 Lyon Part-Dieu → 15:00 Paris Gare de Lyon) 티켓 확인
 - [x] 9/25 Grand Palais <Cézanne et nous> **17:00 예약 확정**
 - [x] 9/30 Musée de l'Orangerie **10:00 예약 확정**
-- [ ] 9/29 Musée d'Orsay 상설 집중 관람 (09:30 슬롯) 예약 확인
-- [ ] 10/1 Château de Versailles (10:00) 입장 슬롯 확인
-- [ ] 10/2 Musée du Louvre 입장 슬롯 확인
-- [ ] 10/4 Qatar Prix de l'Arc de Triomphe 모바일 티켓 확인
+- [x] 9/29 Château de Versailles **예약완료**
+- [x] 10/1 Musée d'Orsay 상설 컬렉션 **10:30 예약 확정**
+- [ ] 10/1 Musée Rodin (14:15) 입장권 확인
+- [ ] 10/2 Musée du Louvre **11:00** 입장 슬롯 확인 · PMP 마지막 핵심 사용
+- [x] 10/4 Qatar Prix de l'Arc de Triomphe **General Entry 예약완료**
 - [ ] 10/6 Musée d'Orsay <Mary Cassatt> 특별전 개막 (14:00 슬롯) 예약 확인
 - [ ] 10/7 Bourse de Commerce 예약 슬롯 확인
 - [ ] 10/9 OZ502 (19:10 CDG Terminal 1) 온라인 체크인 및 택시 이동 확인
@@ -533,7 +534,7 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 |---|---|
 | Grand Palais 리노베이션 재개관 및 세잔 특별전 (9/23~2027/1/17) | 공식 확인 |
 | Musée de l'Orangerie 모네 수련 연작 상설 및 기획전 | 공식 확인 |
-| Musée d'Orsay 상설(9/29) 및 Mary Cassatt 특별전 개막(10/6~2027/1/31) | 공식 확인 |
+| Musée d'Orsay 상설(10/1 10:30 예약 확정) 및 Mary Cassatt 특별전 재방문(10/6~2027/1/31) | 공식 확인 |
 | Château de Versailles 거울의 방·대정원·트리아농 | 공식 확인 |
 | Musée du Louvre 4시간 집중 관람 | 공식 확인 |
 | Qatar Prix de l'Arc de Triomphe (10/4 파리롱샹) | 공식 확인 |
@@ -632,18 +633,18 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 ---
 
 ## Day 32 — 2026-09-29
-### 오르세 미술관 집중 관람 & 로댕 조각 정원
+### 베르사유 궁전 & 대정원 & 트리아농 전일 투어
 
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
-|  | **Art-Heavy Morning (빠른 아침·오르세 출발)** | 오르세 미술관 09:30 개장 첫 슬롯 입장을 위해 아침식사 후 08:45 출발 |
-|  | **Musée d'Orsay (오르세 미술관 3.5시간 집중 관람)** | 옛 기차역 보자르 건축. 5층 인상주의 갤러리(마네 <풀밭 위의 점심식사>, 르누아르 <물랭 드 라 갈레트의 무도회>, 모네 <양산 쓴 여인>) ➔ 2층 후기인상주의(고흐 <자화상>, <아를의 별이 빛나는 밤>, 고갱, 쇠라) ➔ 0층 초기 아카데미즘 (3.5시간) |
-|  | **7구 Rue du Bac 점심 식사** | 오르세 미술관 인근 7구 품격 있는 비스트로 점심 |
-|  | **Musée Rodin & 조각 정원 (로댕 미술관)** | 18세기 오텔 비롱 저택 <키스>, 카미유 클로델 전시실 ➔ 야외 장미 정원 <생각하는 사람>, <지옥의 문>, <칼레의 시민> 사색 산책 (2시간) |
-|  | **Les Invalides (앵발리드 황금 돔 외관 산책)** | 나폴레옹의 무덤이 있는 앵발리드 황금 돔과 에스플러나드 잔디광장 산책 (60분) |
-|  | **Café du Commerce 동네 저녁** | 메트로 8호선(La Tour-Maubourg ➔ Lourmel) 귀환 후 15구 저녁 |
+| 08:30 | **15구 숙소 출발 ➔ RER C ➔ 베르사유 이동** | Javel역에서 Versailles Château Rive Gauche역으로 이동하고 궁전까지 도보 10분 |
+| 10:00 전후–12:30 | **Château de Versailles 본관** | 시간지정 입장 후 왕실 아파트·거울의 방·왕실 예배당 집중 관람 |
+| 12:45–13:30 | **La Flottille 대운하 점심** | 대운하 머리에서 단품 중심으로 짧게 식사하고 오후 정원 동선을 시작 |
+| 13:30–15:00 | **베르사유 대정원** | 9/29 화요일 Jardins Musicaux 동선으로 라토나·아폴론 분수와 숲길 산책 |
+| 15:00–16:30 | **Grand/Petit Trianon & 왕비의 촌락** | 피로에 따라 미니트레인을 이용하거나 왕비의 촌락을 생략 |
+| 17:00 전후 | **Paris 귀환 ➔ Le Grand Pan 저녁** | RER C로 18:00~18:30 파리 귀환, 20:00 15구 저녁 |
 
 ---
 
@@ -663,18 +664,18 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 ---
 
 ## Day 34 — 2026-10-01
-### 베르사유 궁전 & 대정원 & 트리아농 전일 투어
+### 인상주의 & 조각 — 오르세 상설·로댕
 
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|---|
-|  | **15구 숙소 출발 ➔ RER C ➔ 베르사유 이동** | 15구 숙소에서 RER C선 Javel역 탑승 (직통 25분, 09:15 베르사유역 도착 후 궁전 도보 10분) |
-|  | **Château de Versailles (베르사유 궁전 본관)** | 10:00 시간지정 입장. 거울의 방(Galerie des Glaces 73m 거울 회랑), 국왕의 대침실, 왕실 예배당 집중 관람 (2시간 45분) |
-|  | **베르사유 대운하 인근 점심 식사** | 대운하(Grand Canal) 입구 레스토랑 La Flottille에서 점심 식사 및 휴식 |
-|  | **베르사유 프랑스식 대정원 & 분수 산책** | 앙드레 르 노트르가 설계한 기하학적 프랑스 정원, 라톤의 분수, 아폴론의 분수 산책 (90분) |
-|  | **Grand Trianon & Petit Trianon & 왕비의 촌락** | 루이 14세의 분홍 대리석 이궁 그랑 트리아농, 마리 앙투아네트의 프티 트리아농 및 전원풍 왕비의 촌락(Hameau de la Reine) 관람 (90분) |
-|  | **Le Grand Pan 15구 비스트로 저녁** | 베르사유 투어 후 15구 브누아 고티에 셰프의 참나무 숯불 비스트로에서 즐기는 푸짐한 고기 요리와 와인 |
+| 09:30 | **15구 숙소 출발** | 메트로 8·12호선으로 이동해 예약 시각 15분 전인 10:15 Entrée 1 - Quai 도착 |
+| 10:30–13:00 | **Musée d'Orsay 상설 컬렉션** | **예약 확정.** Monet·Renoir·Degas·Cézanne·Van Gogh·Gauguin 중심 2시간 30분 집중 관람 |
+| 13:00–14:00 | **Café Varenne 점심** | 오르세에서 도보로 이동해 60분 안에 식사하고 rue de Varenne를 따라 로댕으로 이동 |
+| 14:15–16:00 | **Musée Rodin & 조각 정원** | 오텔 비롱의 주요 조각과 정원을 1시간 45분 관람. 입장권은 예약 권장, 아직 미확정 |
+| 16:00 이후 | **Les Invalides 외관 산책 (선택)** | 피로 시 생략하고 숙소로 조기 복귀 |
+| 18:30 | **Café du Commerce 저녁** | 메트로 8호선으로 15구 생활권에 복귀 |
 
 ---
 

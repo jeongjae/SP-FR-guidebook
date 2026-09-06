@@ -209,7 +209,7 @@ def run_simulation():
         ("Day 10 ZOU 82 Bus Weekend Timetable", "Day 10 (9/7)", "Day 09 (9/6) Evening", "Day 09 (9/6)", "ZOU Official / Lignes d'Azur App", "Switch to TER rail along coast", "YES (Navigator)", "ON_SCHEDULE"),
         ("Day 14 Cassis Calanques Boat Wind/Swell Gate", "Day 14 (9/11)", "Day 13 (9/10) Evening", "Day 13 (9/10)", "Cassis Port Office / Wind Forecast", "Switch to Port-Miou scenic coastal walk", "YES (Navigator)", "ON_SCHEDULE"),
         ("Day 22 Arles Heritage Days (JEP) Special Access", "Day 22 (9/19)", "Day 19 (9/16) Evening", "Day 19 (9/16)", "Arles Tourism / JEP Official Site", "Focus on Saint-Trophime & Roquette walk", "YES (Guide)", "ON_SCHEDULE"),
-        ("Day 34 Versailles RER C Track Maintenance", "Day 34 (10/1)", "Day 33 (9/30) Evening", "Day 33 (9/30)", "RATP / Île-de-France Mobilités App", "Take Transilien Line N from Montparnasse", "YES (Navigator)", "ON_SCHEDULE"),
+        ("Day 32 Versailles RER C Track Maintenance", "Day 32 (9/29)", "Day 31 (9/28) Evening", "Day 31 (9/28)", "RATP / Île-de-France Mobilités App", "Take Transilien Line N from Montparnasse", "YES (Navigator)", "ON_SCHEDULE"),
         ("Day 37 Prix de l'Arc Shuttle & Main Race Timing", "Day 37 (10/4)", "Day 36 (10/3) Evening", "Day 36 (10/3)", "France Galop Official Site", "Walk to Metro 10 Boulogne - Jean Jaurès", "YES (Guide)", "ON_SCHEDULE"),
         ("Day 40 Vendanges de Montmartre Opening Events", "Day 40 (10/7)", "Day 37 (10/4) Evening", "Day 37 (10/4)", "Montmartre Vendanges Official Site", "Enjoy Rue Lepic atmosphere & Sacré-Cœur", "YES (Guide)", "ON_SCHEDULE")
     ]

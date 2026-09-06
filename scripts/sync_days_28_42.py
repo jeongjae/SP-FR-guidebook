@@ -116,8 +116,7 @@ def update_day_28():
         'Tootbus / Big Bus 9/25 운행시간표 및 그랑 팔레 정류장 위치 확인',
         'Grand Palais Cézanne et nous 17:00 슬롯 사전 예매'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 28')
 
 def update_day_29():
@@ -159,7 +158,7 @@ def update_day_29():
             'category': 'culture',
             'lat': 48.8481,
             'lng': 2.3344,
-            'summary': '프랑스 최초의 공공 미술관에서 열리는 앤디 워홀 특별전 <La ligne et l'image> 집중 관람 (90분)',
+            'summary': "프랑스 최초의 공공 미술관에서 열리는 앤디 워홀 특별전 <La ligne et l'image> 집중 관람 (90분)",
             'menu': None,
             'reservation': '사전 시간지정 예약 필수 (13:00 슬롯)',
             'optional': False,
@@ -265,8 +264,7 @@ def update_day_29():
     ]
     d['backup'] = '피로 시 노트르담 외관을 생략하고 생제르맹 카페에서 휴식 후 15구 조기 복귀'
     d['needsReview'] = ['Musée du Luxembourg 13:00 슬롯 예매 확인']
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 29')
 
 def update_day_30():
@@ -413,9 +411,8 @@ def update_day_30():
         }
     ]
     d['backup'] = '우천 시 야외 정원 도보를 축소하고 갤러리 비비엔(Galerie Vivienne) 등 인근 파사주(Passages) 실내 산책으로 전환'
-    d['needsReview'] = ['Musée de l'Orangerie 13:30 슬롯 예매 필수 (화요일 휴관이므로 일요일 방문 엄수)']
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    d['needsReview'] = ["Musée de l'Orangerie 13:30 슬롯 예매 필수 (화요일 휴관이므로 일요일 방문 엄수)"]
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 30')
 
 def update_day_31():
@@ -544,158 +541,15 @@ def update_day_31():
         'Musée Gustave Moreau 화요일 휴관이므로 월요일(9/28) 10:30 슬롯 방문 엄수',
         'Fashion Week 공개 팝업 및 거리 분위기 확인 (비공개 쇼 입장 전제 없음)'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 31')
 
 def update_day_32():
-    p = DAILY_CARDS / 'day-32.json'
-    d = json.loads(p.read_text(encoding='utf-8'))
-    d['title'] = '오르세 미술관 집중 관람 & 로댕 조각 정원'
-    d['startTime'] = '07:30'
-    d['endTime'] = '20:30'
-    d['totalDuration'] = '13시간'
-    d['totalDistance'] = '메트로 + 7구 예술도보 약 5.0km'
-    d['fatigue'] = '4'
-    d['transport'] = [
-        '메트로 8호선 / 12호선 (Lourmel ➔ Solférino)',
-        '파리 7구 오르세·로댕 도보'
-    ]
-    d['hotel'] = HOTEL_PARIS
-    d['stops'] = [
-        {
-            'id': 'morning-routine',
-            'order': 1,
-            'start': '07:30',
-            'end': '08:45',
-            'name': 'Art-Heavy Morning (빠른 아침·오르세 출발)',
-            'category': 'hotel',
-            'lat': 48.8472,
-            'lng': 2.2894,
-            'summary': '오르세 미술관 09:30 개장 첫 슬롯 입장을 위해 아침식사 후 08:45 출발',
-            'menu': None,
-            'reservation': None,
-            'optional': False,
-            'place_ref': None
-        },
-        {
-            'id': 'musee-d-orsay',
-            'order': 2,
-            'start': '09:30',
-            'end': '13:00',
-            'name': "Musée d'Orsay (오르세 미술관 3.5시간 집중 관람)",
-            'category': 'culture',
-            'lat': 48.8600,
-            'lng': 2.3266,
-            'summary': '옛 기차역 보자르 건축. 5층 인상주의 갤러리(마네 <풀밭 위의 점심식사>, 르누아르 <물랭 드 라 갈레트의 무도회>, 모네 <양산 쓴 여인>) ➔ 2층 후기인상주의(고흐 <자화상>, <아를의 별이 빛나는 밤>, 고갱, 쇠라) ➔ 0층 초기 아카데미즘 (3.5시간)',
-            'menu': None,
-            'reservation': '사전 시간지정 예약 필수 (09:30 슬롯)',
-            'optional': False,
-            'place_ref': 'musee-d-orsay'
-        },
-        {
-            'id': 'rue-du-bac-lunch',
-            'order': 3,
-            'start': '13:00',
-            'end': '14:15',
-            'name': '7구 Rue du Bac 점심 식사',
-            'category': 'food',
-            'lat': 48.8570,
-            'lng': 2.3250,
-            'summary': '오르세 미술관 인근 7구 품격 있는 비스트로 점심',
-            'menu': '타르틴, 뵈프 부르기뇽, 화이트 와인',
-            'reservation': '현장 선택',
-            'optional': False,
-            'place_ref': None
-        },
-        {
-            'id': 'musee-rodin',
-            'order': 4,
-            'start': '14:30',
-            'end': '16:30',
-            'name': 'Musée Rodin & 조각 정원 (로댕 미술관)',
-            'category': 'culture',
-            'lat': 48.8553,
-            'lng': 2.3158,
-            'summary': '18세기 오텔 비롱 저택 <키스>, 카미유 클로델 전시실 ➔ 야외 장미 정원 <생각하는 사람>, <지옥의 문>, <칼레의 시민> 사색 산책 (2시간)',
-            'menu': None,
-            'reservation': '사전 시간지정 예약 권장 (14:30 슬롯)',
-            'optional': False,
-            'place_ref': 'musee-rodin'
-        },
-        {
-            'id': 'invalides-exterior',
-            'order': 5,
-            'start': '16:30',
-            'end': '17:30',
-            'name': 'Les Invalides (앵발리드 황금 돔 외관 산책)',
-            'category': 'sight',
-            'lat': 48.8566,
-            'lng': 2.3125,
-            'summary': '나폴레옹의 무덤이 있는 앵발리드 황금 돔과 에스플러나드 잔디광장 산책 (60분)',
-            'menu': None,
-            'reservation': None,
-            'optional': True,
-            'place_ref': None
-        },
-        {
-            'id': 'paris-return',
-            'order': 6,
-            'start': '18:00',
-            'end': '20:30',
-            'name': '15구 숙소 귀환 & 저녁',
-            'category': 'hotel',
-            'lat': 48.8472,
-            'lng': 2.2894,
-            'summary': '메트로 8호선(La Tour-Maubourg ➔ Lourmel) 귀환 후 15구 저녁',
-            'menu': None,
-            'reservation': None,
-            'optional': False,
-            'place_ref': None
-        }
-    ]
-    d['legs'] = [
-        {
-            'from': 'morning-routine',
-            'to': 'musee-d-orsay',
-            'mode': 'metro',
-            'duration': '메트로 8+12호선 약 20분',
-            'distance': '3.8km'
-        },
-        {
-            'from': 'musee-d-orsay',
-            'to': 'rue-du-bac-lunch',
-            'mode': 'walk',
-            'duration': '5분',
-            'distance': '0.3km'
-        },
-        {
-            'from': 'rue-du-bac-lunch',
-            'to': 'musee-rodin',
-            'mode': 'walk',
-            'duration': '8분',
-            'distance': '0.6km'
-        },
-        {
-            'from': 'musee-rodin',
-            'to': 'invalides-exterior',
-            'mode': 'walk',
-            'duration': '5분',
-            'distance': '0.4km'
-        },
-        {
-            'from': 'invalides-exterior',
-            'to': 'paris-return',
-            'mode': 'metro',
-            'duration': '메트로 8호선 약 20분',
-            'distance': '3.5km'
-        }
-    ]
-    d['backup'] = '오르세 관람 후 피로 시 앵발리드 산책을 생략하고 로댕 미술관 카페 정원에서 휴식 후 조기 복귀'
-    d['needsReview'] = ["Musée d'Orsay 09:30 슬롯 예매 필수 (월요일 휴관이므로 화요일 9/29 방문)"]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
-    print('Updated Day 32')
+    d = json.loads((DAILY_CARDS / "day-32.json").read_text(encoding="utf-8"))
+    required = {"versailles-palace", "versailles-gardens", "trianon-hamlet"}
+    if d.get("date") != "2026-09-29" or not required <= {s["id"] for s in d["stops"]}:
+        raise RuntimeError("Day 32 canonical Versailles swap is missing")
+    print("Preserved Day 32 canonical Versailles plan")
 
 def update_day_33():
     p = DAILY_CARDS / 'day-33.json'
@@ -820,161 +674,15 @@ def update_day_33():
     ]
     d['backup'] = '비 올 경우 팔레 드 도쿄 실내 전시 관람 및 프티 팔레 가든 카페 체류 연장'
     d['needsReview'] = ['9/30 Fashion Week 서부 Paris 축(Avenue Montaigne~Palais de Tokyo) 동선 확인']
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 33')
 
 def update_day_34():
-    p = DAILY_CARDS / 'day-34.json'
-    d = json.loads(p.read_text(encoding='utf-8'))
-    d['title'] = '베르사유 궁전 & 대정원 & 트리아농 전일 투어'
-    d['startTime'] = '08:30'
-    d['endTime'] = '19:30'
-    d['totalDuration'] = '11시간'
-    d['totalDistance'] = 'RER C 왕복 약 35km + 베르사유 영지 도보 약 7km'
-    d['fatigue'] = '4'
-    d['transport'] = [
-        'RER C선 (Javel역 ↔ Versailles Château Rive Gauche역, 직통 25분)',
-        '베르사유 광활한 영지 도보 (궁전 ➔ 정원 ➔ 대운하 ➔ 트리아농)'
-    ]
-    d['hotel'] = HOTEL_PARIS
-    d['stops'] = [
-        {
-            'id': 'versailles-transfer',
-            'order': 1,
-            'start': '08:30',
-            'end': '09:30',
-            'name': '15구 숙소 출발 ➔ RER C ➔ 베르사유 이동',
-            'category': 'transport',
-            'lat': 48.8000,
-            'lng': 2.1286,
-            'summary': '15구 숙소에서 RER C선 Javel역 탑승 (직통 25분, 09:15 베르사유역 도착 후 궁전 도보 10분)',
-            'menu': None,
-            'reservation': 'RER C 티켓 / 나비고',
-            'optional': False,
-            'place_ref': None
-        },
-        {
-            'id': 'versailles-palace',
-            'order': 2,
-            'start': '09:45',
-            'end': '12:30',
-            'name': 'Château de Versailles (베르사유 궁전 본관)',
-            'category': 'culture',
-            'lat': 48.8048,
-            'lng': 2.1203,
-            'summary': '10:00 시간지정 입장. 거울의 방(Galerie des Glaces 73m 거울 회랑), 국왕의 대침실, 왕실 예배당 집중 관람 (2시간 45분)',
-            'menu': None,
-            'reservation': 'Passport 티켓 사전 시간지정 예약 필수 (10:00 슬롯)',
-            'optional': False,
-            'place_ref': 'versailles'
-        },
-        {
-            'id': 'versailles-lunch',
-            'order': 3,
-            'start': '12:30',
-            'end': '14:00',
-            'name': '베르사유 대운하 인근 점심 식사',
-            'category': 'food',
-            'lat': 48.8100,
-            'lng': 2.1100,
-            'summary': '대운하(Grand Canal) 입구 레스토랑 La Flottille에서 점심 식사 및 휴식',
-            'menu': '크레프, 키슈 로렌, 시드르(사과주)',
-            'reservation': '현장 선택',
-            'optional': False,
-            'place_ref': None
-        },
-        {
-            'id': 'versailles-gardens',
-            'order': 4,
-            'start': '14:00',
-            'end': '15:30',
-            'name': '베르사유 프랑스식 대정원 & 분수 산책',
-            'category': 'sight',
-            'lat': 48.8060,
-            'lng': 2.1150,
-            'summary': '앙드레 르 노트르가 설계한 기하학적 프랑스 정원, 라톤의 분수, 아폴론의 분수 산책 (90분)',
-            'menu': None,
-            'reservation': 'Passport 티켓 포함',
-            'optional': False,
-            'place_ref': 'versailles'
-        },
-        {
-            'id': 'trianon-hamlet',
-            'order': 5,
-            'start': '15:30',
-            'end': '17:00',
-            'name': 'Grand Trianon & Petit Trianon & 왕비의 촌락',
-            'category': 'culture',
-            'lat': 48.8150,
-            'lng': 2.1050,
-            'summary': '루이 14세의 분홍 대리석 이궁 그랑 트리아농, 마리 앙투아네트의 프티 트리아농 및 전원풍 왕비의 촌락(Hameau de la Reine) 관람 (90분)',
-            'menu': None,
-            'reservation': 'Passport 티켓 포함',
-            'optional': False,
-            'place_ref': 'versailles'
-        },
-        {
-            'id': 'paris-return',
-            'order': 6,
-            'start': '17:30',
-            'end': '19:30',
-            'name': '베르사유 ➔ 15구 숙소 귀환 & 저녁',
-            'category': 'hotel',
-            'lat': 48.8472,
-            'lng': 2.2894,
-            'summary': 'RER C선 탑승 ➔ 15구 Javel역 하차 후 숙소 복귀. 15구 숙소식 또는 동네 비스트로 저녁',
-            'menu': None,
-            'reservation': None,
-            'optional': False,
-            'place_ref': None
-        }
-    ]
-    d['legs'] = [
-        {
-            'from': 'versailles-transfer',
-            'to': 'versailles-palace',
-            'mode': 'walk',
-            'duration': '10분',
-            'distance': '0.8km'
-        },
-        {
-            'from': 'versailles-palace',
-            'to': 'versailles-lunch',
-            'mode': 'walk',
-            'duration': '12분',
-            'distance': '0.9km'
-        },
-        {
-            'from': 'versailles-lunch',
-            'to': 'versailles-gardens',
-            'mode': 'walk',
-            'duration': '5분',
-            'distance': '0.3km'
-        },
-        {
-            'from': 'versailles-gardens',
-            'to': 'trianon-hamlet',
-            'mode': 'walk',
-            'duration': '15분',
-            'distance': '1.1km'
-        },
-        {
-            'from': 'trianon-hamlet',
-            'to': 'paris-return',
-            'mode': 'train',
-            'duration': '도보 20분 + RER C선 25분',
-            'distance': '약 18km'
-        }
-    ]
-    d['backup'] = '보행 피로 시 트리아농 이동 시 미니트레인(Petit Train)을 이용하고 왕비의 촌락은 외관만 보고 16:30 조기 복귀'
-    d['needsReview'] = [
-        '베르사유 Passport 티켓 10:00 궁전 슬롯 사전 예매 필수',
-        'RER C선 평일 공사 여부 확인'
-    ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
-    print('Updated Day 34')
+    d = json.loads((DAILY_CARDS / "day-34.json").read_text(encoding="utf-8"))
+    required = {"musee-d-orsay", "musee-rodin", "invalides-exterior"}
+    if d.get("date") != "2026-10-01" or not required <= {s["id"] for s in d["stops"]}:
+        raise RuntimeError("Day 34 canonical Orsay/Rodin swap is missing")
+    print("Preserved Day 34 canonical Orsay/Rodin plan")
 
 def update_day_35():
     p = DAILY_CARDS / 'day-35.json'
@@ -1076,9 +784,8 @@ def update_day_35():
         }
     ]
     d['backup'] = '인지 피로 시 리슐리외관을 생략하고 드농관 핵심 걸작 위주 2.5시간 관람 후 카페 앙젤리나 휴식'
-    d['needsReview'] = ['Musée du Louvre 14:00 슬롯 사전 예매 필수']
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    d['needsReview'] = ['Musée du Louvre 11:00 슬롯 사전 예매 필수']
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 35')
 
 def update_day_36():
@@ -1182,8 +889,7 @@ def update_day_36():
     ]
     d['backup'] = '우천 시 라늘라 공원 산책을 생략하고 마르모탕 미술관 내부 컬렉션 감상 후 15구 조기 복귀'
     d['needsReview'] = ['Musée Marmottan Monet 14:00 슬롯 예매 확인']
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 36')
 
 def update_day_37():
@@ -1212,7 +918,7 @@ def update_day_37():
             'lng': 2.2340,
             'summary': "10:30 출발 ➔ 메트로 10호선 Porte d'Auteuil역 ➔ 개선문상 전용 무료 셔틀버스 탑승 ➔ 11:30 파리롱샹 경마장 도착",
             'menu': None,
-            'reservation': 'Qatar Prix de l'Arc 티켓 (General Admission / Grandstand)',
+            'reservation': "Qatar Prix de l'Arc General Entry 예약완료",
             'optional': False,
             'place_ref': None
         },
@@ -1268,8 +974,7 @@ def update_day_37():
         "Prix de l'Arc 10/4 메인 레이스 시간표(16:05) 및 셔틀 운행 재확인",
         '스마트 캐주얼 드레스코드 및 가방 반입 규정 준수'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 37')
 
 def update_day_38():
@@ -1373,8 +1078,7 @@ def update_day_38():
     ]
     d['backup'] = '피로 시 몽소 공원 산책을 축소하고 미술관 내 카페에서 티타임 후 조기 복귀'
     d['needsReview'] = ['Musée Jacquemart-André 리노베이션 재개관 15:00 슬롯 예매 확인']
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 38')
 
 def update_day_39():
@@ -1525,8 +1229,7 @@ def update_day_39():
         'Musée Picasso Paris 13:00 슬롯 예매 필수 (월요일 휴관이므로 화요일 10/6 방문)',
         'Musée Carnavalet 무료 시간지정 티켓 예약'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 39')
 
 def update_day_40():
@@ -1655,8 +1358,7 @@ def update_day_40():
         'Bourse de Commerce 10/7 신규 기획전 <Remember Me> 개막일 11:00 슬롯 예매',
         'Vendanges de Montmartre 10/7(수) 공식 행사 일정 확인 (주말 퍼레이드와 혼동 금지)'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 40')
 
 def update_day_41():
@@ -1807,8 +1509,7 @@ def update_day_41():
         'Musée Guimet 10:00 슬롯 예매 (화요일 휴관이므로 목요일 10/8 방문)',
         '고별 저녁 식당 예약 확정'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 41')
 
 def update_day_42():
@@ -1915,8 +1616,7 @@ def update_day_42():
         'CDG 터미널 1 택스리펀(PABLO 바코드 스캔) 준비',
         '아시아나 OZ502 19:10 탑승권 및 수하물 태그 확인'
     ]
-    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "
-", encoding='utf-8')
+    p.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print('Updated Day 42')
 
 if __name__ == '__main__':

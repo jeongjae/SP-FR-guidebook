@@ -2374,6 +2374,22 @@ def build_travel_french(trip: Trip) -> str:
 
 PARIS_MUSEUM_BOOKINGS = [
     {
+        "id": "paris-museum-pass|2026-09-26|144h",
+        "slug": None,
+        "name": "Paris Museum Pass — 6-day / 144-hour",
+        "day": 29,
+        "date": "9/26 (토)",
+        "schedule": "구매완료 · 9/26 오후 첫 사용 → 10/2 Louvre 11:00 마지막 계획",
+        "canonical_status": "booked",
+        "stage": "구매 확정",
+        "when": "구매 완료",
+        "action_date": "QR 저장",
+        "pmp": "9/26 15:00 전후 Sainte-Chapelle에서 최초 스캔",
+        "plan_b": "첫 스캔 시각과 144시간 종료 시각을 앱/티켓에서 즉시 확인",
+        "note": "PMP 6일권 사용 창: 9/26 오후~10/2 오후",
+        "official_url": "https://www.parismuseumpass.fr/",
+    },
+    {
         "id": "grand-palais|2026-09-25|special",
         "slug": "grand-palais",
         "name": "Grand Palais — Cézanne et nous",
@@ -2390,20 +2406,36 @@ PARIS_MUSEUM_BOOKINGS = [
         "official_url": "https://www.grandpalais.fr/",
     },
     {
-        "id": "musee-du-luxembourg|2026-09-26|special",
-        "slug": "musee-du-luxembourg",
-        "name": "Musée du Luxembourg — Warhol",
+        "id": "sainte-chapelle|2026-09-26|15:00",
+        "slug": None,
+        "name": "Sainte-Chapelle",
         "day": 29,
         "date": "9/26 (토)",
-        "schedule": "특별전 (시간지정 티켓)",
-        "canonical_status": "book-now",
-        "stage": "1차 · 지금",
-        "when": "3~4주 전",
-        "action_date": "지금",
-        "pmp": "PMP 비대상 (특별전 별도)",
-        "plan_b": "±1~2시간 슬롯 변경, 뤽상부르 공원 산책 및 생제르맹 탐방 시간과 연동 조정",
-        "note": "원하는 시간대 확보",
-        "official_url": "https://museeduluxembourg.fr/",
+        "schedule": "15:00 전후 · PMP 최초 사용",
+        "canonical_status": "book-later",
+        "stage": "당일 확인",
+        "when": "PMP 구매완료",
+        "action_date": "9/26",
+        "pmp": "PMP 포함 · 첫 스캔",
+        "plan_b": "입장 지연 시 센 강 산책을 단축",
+        "note": "6일/144시간 사용 시작점",
+        "official_url": "https://www.sainte-chapelle.fr/",
+    },
+    {
+        "id": "conciergerie|2026-09-26|16:10",
+        "slug": None,
+        "name": "Conciergerie",
+        "day": 29,
+        "date": "9/26 (토)",
+        "schedule": "16:10 · Sainte-Chapelle 다음",
+        "canonical_status": "book-later",
+        "stage": "당일 확인",
+        "when": "PMP 구매완료",
+        "action_date": "9/26",
+        "pmp": "PMP 포함",
+        "plan_b": "생트샤펠 지연 시 폐관·마지막 입장 시간을 우선 확인",
+        "note": "PMP 첫 사용일 연속 관람",
+        "official_url": "https://www.paris-conciergerie.fr/",
     },
     {
         "id": "musee-de-l-orangerie|2026-09-30|permanent",
@@ -2438,67 +2470,83 @@ PARIS_MUSEUM_BOOKINGS = [
         "official_url": "https://musee-moreau.fr/",
     },
     {
-        "id": "musee-d-orsay|2026-09-29|09:30",
-        "slug": "musee-d-orsay",
-        "name": "Musée d'Orsay",
-        "day": 32,
-        "date": "9/29 (화)",
-        "schedule": "09:30 개장 첫 슬롯 (시간지정)",
-        "canonical_status": "book-now",
-        "stage": "1차 · 지금",
-        "when": "3~4주 전",
-        "action_date": "지금",
-        "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 예약)",
-        "plan_b": "09:30 실패 시 10:00~10:30 차선 슬롯 예약 후 당일 오후 로댕 미술관 시간 조정",
-        "note": "지정시간 일정 — 조기 확보",
-        "official_url": "https://www.musee-d-orsay.fr/",
+        "id": "arc-de-triomphe|2026-09-28|optional",
+        "slug": None,
+        "name": "Arc de Triomphe",
+        "day": 31,
+        "date": "9/28 (월)",
+        "schedule": "저녁 선택 일정",
+        "canonical_status": "book-later",
+        "stage": "선택",
+        "when": "당일 체력·날씨 확인",
+        "action_date": "9/28",
+        "pmp": "PMP 포함",
+        "plan_b": "생략 — 필수 일정으로 승격하지 않음",
+        "note": "Optional 전망대",
+        "official_url": "https://www.paris-arc-de-triomphe.fr/",
     },
     {
-        "id": "musee-rodin|2026-09-29|14:30",
+        "id": "musee-d-orsay|2026-10-01|10:30",
+        "slug": "musee-d-orsay",
+        "name": "Musée d'Orsay",
+        "day": 34,
+        "date": "10/1 (목)",
+        "schedule": "10:30 상설 컬렉션 (예약 확정)",
+        "canonical_status": "booked",
+        "stage": "예약 확정",
+        "when": "완료",
+        "action_date": "예약 완료",
+        "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 예약)",
+        "plan_b": "10:15까지 Entrée 1 - Quai 도착 · 티켓 QR 오프라인 저장",
+        "note": "사용자 예약 완료 확인 · 상설 컬렉션 중심",
+        "official_url": "https://www.musee-orsay.fr/",
+    },
+    {
+        "id": "musee-rodin|2026-10-01|14:15",
         "slug": "musee-rodin",
         "name": "Musée Rodin",
-        "day": 32,
-        "date": "9/29 (화)",
-        "schedule": "14:30 입장",
+        "day": 34,
+        "date": "10/1 (목)",
+        "schedule": "14:15 입장",
         "canonical_status": "book-later",
         "stage": "3차 · 9월 중순",
         "when": "1~2주 전",
-        "action_date": "9/14 전후",
+        "action_date": "9/17 전후",
         "pmp": "PMP 포함",
         "plan_b": "오전 오르세 소요 시간에 따라 현장 PMP 패스트트랙 또는 모바일 직전 발권",
-        "note": "오전 Orsay 일정에 종속",
+        "note": "10:30 Orsay 상설 관람 후 이동",
         "official_url": "https://www.musee-rodin.fr/",
     },
     {
-        "id": "versailles|2026-10-01|morning",
+        "id": "versailles|2026-09-29|10:00",
         "slug": "versailles",
         "name": "Château de Versailles",
-        "day": 34,
-        "date": "10/1 (목)",
-        "schedule": "Passport 티켓 + 오전 시간지정",
-        "canonical_status": "book-now",
-        "stage": "1차 · 지금",
-        "when": "1~2개월 전",
-        "action_date": "지금",
+        "day": 32,
+        "date": "9/29 (화)",
+        "schedule": "Passport 티켓 + 10:00 전후 시간지정",
+        "canonical_status": "booked",
+        "stage": "예약 확정",
+        "when": "예약 완료",
+        "action_date": "티켓 저장",
         "pmp": "PMP 포함 · 시간예약 필수 (공식 사이트 무료 시간슬롯 예약)",
-        "plan_b": "09:00~10:00 오전 슬롯 우선 확보, 정원/트리아농 오후 관람 순서 유지",
-        "note": "Passport + 시간지정 입장 — 파리 근교 핵심 일정",
+        "plan_b": "10:00 전후 오전 슬롯 우선 확보, 정원/트리아농 오후 관람 순서 유지",
+        "note": "사용자 예약 완료 확인 · Passport + 시간지정 입장",
         "official_url": "https://www.chateauversailles.fr/",
     },
     {
-        "id": "musee-du-louvre|2026-10-02|14:00",
+        "id": "musee-du-louvre|2026-10-02|11:00",
         "slug": "musee-du-louvre",
         "name": "Musée du Louvre",
         "day": 35,
         "date": "10/2 (금)",
-        "schedule": "14:00 지정시간 (Horodaté)",
+        "schedule": "11:00 지정시간 (Horodaté)",
         "canonical_status": "book-now",
         "stage": "1차 · 지금",
         "when": "3~4주 전",
         "action_date": "지금~9/2",
         "pmp": "PMP 포함 · 시간예약 필수 (PMP 전용 무료 슬롯)",
-        "plan_b": "14:00 실패 시 13:30 또는 14:30 인접 슬롯 선택, 피라미드 중앙 입구 줄 대기",
-        "note": "14:00 슬롯 유지 권장 — 오후 집중 동선",
+        "plan_b": "11:00 실패 시 인접 슬롯을 확인하되 PMP 마지막 핵심 사용일은 유지",
+        "note": "PMP 6일권 마지막 핵심 사용 · 10:40 예약자 입구 도착",
         "official_url": "https://www.ticketlouvre.fr/",
     },
     {
@@ -2546,23 +2594,23 @@ PARIS_MUSEUM_BOOKINGS = [
         "action_date": "지금 확인·예약",
         "pmp": "확인 필요 (특별전 단독/추가 예약 규정 점검)",
         "plan_b": "특별전 단독 회차 미오픈 시 일반 오르세 상설권 + 현장 특별전 입장 옵션 검토",
-        "note": "일반 Orsay 입장(9/29)과 별도로 판단 · 회차 판매 여부 재확인",
+        "note": "상설 Orsay 입장(10/1)과 별도로 판단 · 특별전 회차 판매 여부 재확인",
         "official_url": "https://www.musee-d-orsay.fr/",
     },
     {
-        "id": "musee-picasso-paris|2026-10-06|13:00",
+        "id": "musee-picasso-paris|2026-09-27|10:30",
         "slug": "musee-picasso-paris",
         "name": "Musée Picasso Paris",
-        "day": 39,
-        "date": "10/6 (화)",
-        "schedule": "13:00 (선택적 방문)",
+        "day": 30,
+        "date": "9/27 (일)",
+        "schedule": "10:30 · PMP",
         "canonical_status": "book-later",
         "stage": "3차 · 9월 중순",
         "when": "1~2주 전",
-        "action_date": "9/20 전후",
+        "action_date": "9/26 확인",
         "pmp": "PMP 포함",
         "plan_b": "마레 지구 일정 진행 중 현장 대기 입장 또는 모바일 예매",
-        "note": "현장구매도 가능",
+        "note": "PMP 유효기간 안으로 이동 · Notre-Dame 전 핵심 관람",
         "official_url": "https://www.museepicassoparis.fr/",
     },
     {
@@ -2582,20 +2630,36 @@ PARIS_MUSEUM_BOOKINGS = [
         "official_url": "https://www.pinaultcollection.com/fr/boursedecommerce",
     },
     {
-        "id": "musee-guimet|2026-10-08|10:00",
+        "id": "musee-guimet|2026-09-30|14:40",
         "slug": "musee-guimet",
         "name": "Musée Guimet",
-        "day": 41,
-        "date": "10/8 (목)",
-        "schedule": "10:00 입장",
+        "day": 33,
+        "date": "9/30 (수)",
+        "schedule": "14:40 입장 · PMP",
         "canonical_status": "book-later",
         "stage": "3차 · 9월 중순",
         "when": "1~2주 전",
-        "action_date": "9/24 이후",
+        "action_date": "9/29 확인",
         "pmp": "PMP 포함",
         "plan_b": "파리 도착 후 주간 일정 확정 시 예매 또는 현장 PMP 입장",
-        "note": "서두를 필요 없음",
+        "note": "Orangerie·Fashion Week 뒤 PMP 유효기간 안으로 이동",
         "official_url": "https://www.guimet.fr/",
+    },
+    {
+        "id": "qatar-prix-de-l-arc|2026-10-04|general-entry",
+        "slug": None,
+        "name": "Qatar Prix de l'Arc de Triomphe",
+        "day": 37,
+        "date": "10/4 (일)",
+        "schedule": "General Entry",
+        "canonical_status": "booked",
+        "stage": "예약 확정",
+        "when": "예약 완료",
+        "action_date": "티켓 저장",
+        "pmp": "PMP 비대상 이벤트",
+        "plan_b": "당일 France Galop 공지와 셔틀 운행만 확인",
+        "note": "General Entry 예약완료 · 지정석/VIP 아님",
+        "official_url": "https://www.francegalop-live.com/evenement/qatar-prix-de-larc-de-triomphe/",
     },
     {
         "id": "musee-d-art-moderne-de-paris|2026-10-08|free",
@@ -2638,13 +2702,17 @@ def build_paris_museum_booking() -> str:
             badge_html = '<span class="badge badge-caution">2차 · 9월 초</span>'
         elif st == "book-later":
             badge_html = '<span class="badge badge-neutral">3차 · 직전</span>'
+        elif st == "booked":
+            badge_html = '<span class="badge badge-ok">예약 완료</span>'
         else:
             badge_html = '<span class="badge badge-ok">예약 불필요</span>'
 
+        place_link = (f'<a href="{rel}/places/{b["slug"]}.html">{esc(b["name"])}</a>'
+                      if b.get("slug") else esc(b["name"]))
         table_rows.append(
             f"<tr><td>{badge_html}</td>"
             f'<td><a href="{rel}/daily/day-{b["day"]:02d}.html">{esc(b["date"])}</a></td>'
-            f'<td><a href="{rel}/places/{b["slug"]}.html">{esc(b["name"])}</a></td>'
+            f'<td>{place_link}</td>'
             f'<td>{esc(b["schedule"])}</td><td>{esc(b["when"])}</td><td>{esc(b["action_date"])}</td>'
             f'<td>{esc(b["note"])}</td></tr>'
         )
@@ -2653,7 +2721,7 @@ def build_paris_museum_booking() -> str:
   <div class="paris-museum-card-head">
     <div>
       <span class="meta" style="display:block;margin-bottom:var(--s1)">Day {b['day']} · {esc(b['date'])}</span>
-      <h3 class="paris-museum-card-title"><a href="{rel}/places/{b['slug']}.html">{esc(b['name'])}</a></h3>
+      <h3 class="paris-museum-card-title">{place_link}</h3>
     </div>
     <div class="status-badge-container">{badge_html}</div>
   </div>
@@ -2671,18 +2739,19 @@ def build_paris_museum_booking() -> str:
     <button type="button" class="btn btn-sm btn-secondary btn-museum-recheck-toggle" data-action="recheck">재확인</button>
     <a class="btn btn-sm btn-secondary" href="{esc(b['official_url'])}" target="_blank" rel="noopener">{ic('ticket')}공식 예약</a>
     <a class="btn btn-sm btn-secondary" href="{rel}/daily/day-{b['day']:02d}.html">{ic('today')}Day {b['day']}</a>
-    <a class="btn btn-sm btn-secondary" href="{rel}/places/{b['slug']}.html">{ic('pin')}장소</a>
+    {f'<a class="btn btn-sm btn-secondary" href="{rel}/places/{b["slug"]}.html">{ic("pin")}장소</a>' if b.get('slug') else ''}
   </div>
 </div>"""
         cards_html.append(card)
 
     wave = """
 <div class="prose">
-<p><strong>예약 확정:</strong> Grand Palais 9/25 17:00 · Orangerie 9/30 10:00.</p>
-<p><strong>1차 — 지금 (8/28~8/31):</strong> Versailles → Orsay 9/29 →
+<p><strong>예약·구매 확정:</strong> Grand Palais 9/25 17:00 · Versailles 9/29 · Orangerie 9/30 10:00 · Orsay 10/1 10:30 · Qatar Prix de l'Arc de Triomphe 10/4 General Entry · Paris Museum Pass 6일권.</p>
+<p><strong>PMP 실행 창:</strong> 9/26 오후 Sainte-Chapelle 첫 사용 → 10/2 Louvre 11:00 마지막 핵심 사용.</p>
+<p><strong>1차 — 지금 (8/28~8/31):</strong> Louvre 10/2 →
 Louvre 10/2 → Bourse de Commerce → Luxembourg → Mary Cassatt(판매 확인).
 단순히 유명한 곳이라서가 아니라, <strong>날짜·시간이 고정되어 있거나 특별전 개막
-직후에 방문</strong>하는 곳들이다. 특히 Versailles 10/1 · Louvre 10/2 · Orsay 9/29는
+직후에 방문</strong>하는 곳들이다. 특히 Versailles 9/29 · Louvre 10/2는
 파리 일정 전체의 동선을 잡는 기준점이므로 먼저 확정한다.</p>
 <p><strong>2차 — 9/1~9/10:</strong> Jacquemart-André. 1차가 끝난 뒤 처리한다.</p>
 <p><strong>3차 — 9/12~9/20 (여행 중):</strong> Gustave Moreau · Rodin ·
@@ -2694,7 +2763,7 @@ Marmottan · Picasso. 너무 일찍 예약하면 파리 체류 중 날씨·피�
     principles = """
 <div class="prose">
 <p>예약 시간까지 가이드북 일정과 맞춰 <strong>고정해야 하는 곳</strong>은
-Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이나 Moreau처럼
+Orsay 10:30 · Louvre 11:00 · Versailles 오전 입장이다. 반면 Rodin이나 Moreau처럼
 유연한 곳은 앞뒤 일정에 여유를 두고 잡는다.</p>
 <p>티켓을 살 때는 구매 완료만 관리하지 말고 <strong>① 날짜 ② 시간
 ③ 변경·취소 가능 여부 ④ QR 티켓 저장 위치</strong>까지 함께 기록한다.
@@ -2703,10 +2772,11 @@ Orsay 09:30 · Louvre 14:00 · Versailles 오전 입장이다. 반면 Rodin이�
 
     checklist = """
 <div class="prose"><ul>
-<li><strong>오늘:</strong> Grand Palais · Versailles · Orsay · Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
+<li><strong>완료:</strong> Grand Palais · Versailles · Orangerie · Orsay · Prix de l'Arc General Entry · Paris Museum Pass</li>
+<li><strong>오늘:</strong> Louvre · Bourse de Commerce · Luxembourg · Mary Cassatt</li>
 <li><strong>9월 초:</strong> Orangerie · Jacquemart-André</li>
 <li><strong>9월 중순:</strong> Moreau · Rodin · Marmottan · Picasso</li>
-<li><strong>파리 출발 직전:</strong> Guimet 예약 · 무료관(MAM) 운영시간 재확인</li>
+<li><strong>파리 출발 직전:</strong> 무료관(MAM) 운영시간 재확인</li>
 </ul>
 <p>이 순서대로 처리하면 가이드북 일정을 거의 그대로 유지하면서 예약 실패
 위험을 크게 낮출 수 있다. 확정된 예약은 <a href="index.html">준비 현황</a>의

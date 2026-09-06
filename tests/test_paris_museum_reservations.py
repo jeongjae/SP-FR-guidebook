@@ -27,7 +27,7 @@ class ParisMuseumReservationTests(unittest.TestCase):
             page.evaluate("() => window.__renderParisMuseumUI && window.__renderParisMuseumUI()")
 
             cards = page.query_selector_all(".paris-museum-card")
-            self.assertEqual(15, len(cards))
+            self.assertEqual(19, len(cards))
 
             count_book_now = page.query_selector("#count-book-now").inner_text()
             count_check_sale = page.query_selector("#count-check-sale").inner_text()
@@ -36,11 +36,11 @@ class ParisMuseumReservationTests(unittest.TestCase):
             count_booked = page.query_selector("#count-booked").inner_text()
             count_no_res = page.query_selector("#count-no-reservation").inner_text()
 
-            self.assertEqual("6", count_book_now)
+            self.assertEqual("3", count_book_now)
             self.assertEqual("1", count_check_sale)
-            self.assertEqual("5", count_book_later)
+            self.assertEqual("8", count_book_later)
             self.assertEqual("0", count_recheck)
-            self.assertEqual("2", count_booked)
+            self.assertEqual("6", count_booked)
             self.assertEqual("1", count_no_res)
 
             browser.close()
@@ -55,7 +55,7 @@ class ParisMuseumReservationTests(unittest.TestCase):
             page.evaluate("() => localStorage.removeItem('spfr_paris_museum_booking_state')")
             page.evaluate("() => window.__renderParisMuseumUI && window.__renderParisMuseumUI()")
 
-            louvre_card = page.query_selector('.paris-museum-card[data-museum-id="musee-du-louvre|2026-10-02|14:00"]')
+            louvre_card = page.query_selector('.paris-museum-card[data-museum-id="musee-du-louvre|2026-10-02|11:00"]')
             self.assertIsNotNone(louvre_card)
             self.assertEqual("book-now", louvre_card.get_attribute("data-effective-status"))
 
@@ -69,15 +69,15 @@ class ParisMuseumReservationTests(unittest.TestCase):
             self.assertIn("✓ 예약 완료", louvre_card.query_selector(".status-badge-container").inner_text())
 
             # Counts update
-            self.assertEqual("5", page.query_selector("#count-book-now").inner_text())
-            self.assertEqual("3", page.query_selector("#count-booked").inner_text())
+            self.assertEqual("2", page.query_selector("#count-book-now").inner_text())
+            self.assertEqual("7", page.query_selector("#count-booked").inner_text())
 
             # Reload persists
             page.reload()
-            louvre_card_reload = page.query_selector('.paris-museum-card[data-museum-id="musee-du-louvre|2026-10-02|14:00"]')
+            louvre_card_reload = page.query_selector('.paris-museum-card[data-museum-id="musee-du-louvre|2026-10-02|11:00"]')
             self.assertEqual("booked", louvre_card_reload.get_attribute("data-effective-status"))
-            self.assertEqual("5", page.query_selector("#count-book-now").inner_text())
-            self.assertEqual("3", page.query_selector("#count-booked").inner_text())
+            self.assertEqual("2", page.query_selector("#count-book-now").inner_text())
+            self.assertEqual("7", page.query_selector("#count-booked").inner_text())
 
             browser.close()
 
@@ -88,17 +88,17 @@ class ParisMuseumReservationTests(unittest.TestCase):
             page = browser.new_page()
             page.goto((SITE / "prepare" / "paris-museums.html").as_uri())
 
-            # Seed booked state for Versailles
+            # Seed booked state for Rodin
             page.evaluate("""() => {
                 localStorage.setItem('spfr_paris_museum_booking_state', JSON.stringify({
-                    'versailles|2026-10-01|morning': 'booked'
+                    'musee-rodin|2026-10-01|14:15': 'booked'
                 }));
             }""")
             page.reload()
 
-            v_card = page.query_selector('.paris-museum-card[data-museum-id="versailles|2026-10-01|morning"]')
+            v_card = page.query_selector('.paris-museum-card[data-museum-id="musee-rodin|2026-10-01|14:15"]')
             self.assertEqual("booked", v_card.get_attribute("data-effective-status"))
-            self.assertEqual("3", page.query_selector("#count-booked").inner_text())
+            self.assertEqual("7", page.query_selector("#count-booked").inner_text())
 
             # Click unbook
             unbook_btn = v_card.query_selector('.btn-museum-book-toggle')
@@ -106,10 +106,10 @@ class ParisMuseumReservationTests(unittest.TestCase):
             unbook_btn.click()
 
             # Status restored to book-now
-            self.assertEqual("book-now", v_card.get_attribute("data-effective-status"))
+            self.assertEqual("book-later", v_card.get_attribute("data-effective-status"))
             self.assertNotIn("is-booked", v_card.get_attribute("class"))
-            self.assertEqual("6", page.query_selector("#count-book-now").inner_text())
-            self.assertEqual("2", page.query_selector("#count-booked").inner_text())
+            self.assertEqual("8", page.query_selector("#count-book-later").inner_text())
+            self.assertEqual("6", page.query_selector("#count-booked").inner_text())
 
             browser.close()
 
@@ -123,7 +123,7 @@ class ParisMuseumReservationTests(unittest.TestCase):
             page.evaluate("() => localStorage.removeItem('spfr_paris_museum_booking_state')")
             page.evaluate("() => window.__renderParisMuseumUI && window.__renderParisMuseumUI()")
 
-            luxembourg_card = page.query_selector('.paris-museum-card[data-museum-id="musee-du-luxembourg|2026-09-26|special"]')
+            luxembourg_card = page.query_selector('.paris-museum-card[data-museum-id="sainte-chapelle|2026-09-26|15:00"]')
             recheck_btn = luxembourg_card.query_selector('.btn-museum-recheck-toggle')
             self.assertEqual("재확인", recheck_btn.inner_text())
             recheck_btn.click()
@@ -131,16 +131,16 @@ class ParisMuseumReservationTests(unittest.TestCase):
             self.assertEqual("recheck", luxembourg_card.get_attribute("data-effective-status"))
             self.assertIn("is-recheck", luxembourg_card.get_attribute("class"))
             self.assertEqual("1", page.query_selector("#count-recheck").inner_text())
-            self.assertEqual("5", page.query_selector("#count-book-now").inner_text())
+            self.assertEqual("7", page.query_selector("#count-book-later").inner_text())
 
             page.reload()
-            luxembourg_card_reload = page.query_selector('.paris-museum-card[data-museum-id="musee-du-luxembourg|2026-09-26|special"]')
+            luxembourg_card_reload = page.query_selector('.paris-museum-card[data-museum-id="sainte-chapelle|2026-09-26|15:00"]')
             self.assertEqual("recheck", luxembourg_card_reload.get_attribute("data-effective-status"))
 
             browser.close()
 
     def test_paris_museum_duplicate_visit_state_independent(self):
-        """Scenario D: Orsay 9/29 and Orsay 10/6 have independent local states."""
+        """Scenario D: confirmed Orsay 10/1 and Orsay 10/6 have independent local states."""
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
@@ -149,15 +149,21 @@ class ParisMuseumReservationTests(unittest.TestCase):
             page.evaluate("() => localStorage.removeItem('spfr_paris_museum_booking_state')")
             page.evaluate("() => window.__renderParisMuseumUI && window.__renderParisMuseumUI()")
 
-            orsay_perm = page.query_selector('.paris-museum-card[data-museum-id="musee-d-orsay|2026-09-29|09:30"]')
+            orsay_perm = page.query_selector('.paris-museum-card[data-museum-id="musee-d-orsay|2026-10-01|10:30"]')
             orsay_spec = page.query_selector('.paris-museum-card[data-museum-id="musee-d-orsay|2026-10-06|special"]')
 
             self.assertIsNotNone(orsay_perm)
             self.assertIsNotNone(orsay_spec)
 
-            # Book Orsay 9/29 only
-            orsay_perm.query_selector('.btn-museum-book-toggle').click()
+            self.assertEqual("booked", orsay_perm.get_attribute("data-effective-status"))
+            self.assertEqual("book-now", orsay_spec.get_attribute("data-effective-status"))
 
+            # Booking and then cancelling the 10/6 special visit must not alter
+            # the canonical confirmed state of the 10/1 permanent visit.
+            orsay_spec.query_selector('.btn-museum-book-toggle').click()
+            self.assertEqual("booked", orsay_perm.get_attribute("data-effective-status"))
+            self.assertEqual("booked", orsay_spec.get_attribute("data-effective-status"))
+            orsay_spec.query_selector('.btn-museum-book-toggle').click()
             self.assertEqual("booked", orsay_perm.get_attribute("data-effective-status"))
             self.assertEqual("book-now", orsay_spec.get_attribute("data-effective-status"))
 
@@ -173,23 +179,23 @@ class ParisMuseumReservationTests(unittest.TestCase):
             # Seed state with multiple booked/recheck items
             page.evaluate("""() => {
                 localStorage.setItem('spfr_paris_museum_booking_state', JSON.stringify({
-                    'versailles|2026-10-01|morning': 'booked',
-                    'musee-du-louvre|2026-10-02|14:00': 'booked',
+                    'versailles|2026-09-29|10:00': 'booked',
+                    'musee-du-louvre|2026-10-02|11:00': 'booked',
                     'grand-palais|2026-09-25|special': 'recheck'
                 }));
             }""")
             page.reload()
 
-            self.assertEqual("3", page.query_selector("#count-booked").inner_text())
+            self.assertEqual("6", page.query_selector("#count-booked").inner_text())
             self.assertEqual("1", page.query_selector("#count-recheck").inner_text())
 
             # Auto-accept confirm dialog and click reset
             page.on("dialog", lambda dialog: dialog.accept())
             page.query_selector("#btn-reset-museum-state").click()
 
-            self.assertEqual("2", page.query_selector("#count-booked").inner_text())
+            self.assertEqual("6", page.query_selector("#count-booked").inner_text())
             self.assertEqual("0", page.query_selector("#count-recheck").inner_text())
-            self.assertEqual("6", page.query_selector("#count-book-now").inner_text())
+            self.assertEqual("3", page.query_selector("#count-book-now").inner_text())
 
             browser.close()
 
@@ -206,7 +212,7 @@ class ParisMuseumReservationTests(unittest.TestCase):
             # Click BOOK NOW filter
             page.query_selector('.paris-filter-chip[data-filter="book-now"]').click()
             visible_cards = [c for c in page.query_selector_all(".paris-museum-card") if c.is_visible()]
-            self.assertEqual(6, len(visible_cards))
+            self.assertEqual(3, len(visible_cards))
 
             # Click CHECK SALE filter
             page.query_selector('.paris-filter-chip[data-filter="check-sale"]').click()
@@ -216,7 +222,7 @@ class ParisMuseumReservationTests(unittest.TestCase):
             # Click all filter
             page.query_selector('.paris-filter-chip[data-filter="all"]').click()
             visible_cards = [c for c in page.query_selector_all(".paris-museum-card") if c.is_visible()]
-            self.assertEqual(15, len(visible_cards))
+            self.assertEqual(19, len(visible_cards))
 
             browser.close()
 
@@ -240,7 +246,7 @@ class ParisMuseumReservationTests(unittest.TestCase):
                 # Check visible action buttons on an unbooked card. Confirmed cards
                 # intentionally hide their recheck action.
                 card = page.query_selector(
-                    '.paris-museum-card[data-museum-id="musee-du-luxembourg|2026-09-26|special"]'
+                    '.paris-museum-card[data-museum-id="sainte-chapelle|2026-09-26|15:00"]'
                 )
                 btns = [btn for btn in card.query_selector_all(".btn") if btn.is_visible()]
                 self.assertTrue(btns)

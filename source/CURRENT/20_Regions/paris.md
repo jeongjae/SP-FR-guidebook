@@ -12,7 +12,7 @@ Paris에서는 명소를 하루 종일 따라다니기보다 한곳에 머물며
 ### 이번 15박 체류의 핵심
 
 - **생활하는 Paris** — 15구 거점에서 같은 빵집과 시장, 동네길을 반복해서 이용하며 일상의 안정을 찾는다.
-- **오후의 문화 일정** — 하루 한 곳을 중심으로 그랑 팔레, 오르세(상설 9/29 · 카사트 특별전 10/6 2회 방문), 루브르 등 대표 미술관과 역사 지구를 깊게 본다.
+- **오후의 문화 일정** — 하루 한 곳을 중심으로 그랑 팔레, 오르세(상설 10/1 · 카사트 특별전 10/6 2회 방문), 루브르 등 대표 미술관과 역사 지구를 깊게 본다.
 - **특별한 날** — 베르사유 전일 투어, 개선문상 경마 축제(10/4), 몽마르트르 포도축제(10/7) 등 날짜가 정해진 행사를 온전히 즐긴다.
 
 15박 전체를 관광으로 채우기보다 매일 일정에 생활시간과 휴식을 남기는 것이 기본이다.
@@ -23,19 +23,19 @@ Paris에서는 명소를 하루 종일 따라다니기보다 한곳에 머물며
 |---|---|
 | 9/24 목 | Lyon → Paris TGV 이동 · 15구 숙소 체크인 (15박 시작) · 첫 장보기 & 동네 산책 |
 | 9/25 금 | Tootbus 파리 시티투어 풀 루프 · Grand Palais <Cézanne et nous> 특별전 |
-| 9/26 토 | Musée du Luxembourg <Andy Warhol> 특별전 · 뤽상부르 공원 · 생제르맹 · 노트르담 외관 |
-| 9/27 일 | Belle Époque & Classical Paris · Marché Convention·Pichard · Petit Palais · 튀일르리 · 팔레 루아얄 · Opéra Garnier |
-| 9/28 월 | Musée Gustave Moreau · 9구 누벨 아테네 · Paris Fashion Week 개막 & Le Marais |
-| 9/29 화 | Musée d'Orsay 3.5시간 집중 관람 · Musée Rodin 조각 정원 · 앵발리드 외관 |
-| 9/30 수 | Monet & Contemporary Paris / Fashion · Musée de l'Orangerie · Chez Savy · Avenue Montaigne · Fashion Week 서부 축 · Palais de Tokyo |
-| 10/1 목 | Château de Versailles (본관 10:00) · 대정원 · 트리아농 전일 투어 |
-| 10/2 금 | Musée du Louvre 마스터피스 4시간 집중 관람 · Cour Carrée & 센 강변 일몰 산책 |
+| 9/26 토 | Sainte-Chapelle 15:00 PMP 최초 사용 · Conciergerie · Île de la Cité·Seine 산책 |
+| 9/27 일 | Marché Convention·Pichard · Musée Picasso Paris · Notre-Dame · Tuileries·Place Vendôme · Palais Royal · Opéra Garnier |
+| 9/28 월 | Musée Gustave Moreau · Paris Fashion Week 개막 & Le Marais · Arc de Triomphe 저녁 Optional(PMP) |
+| 9/29 화 | Château de Versailles (본관 10:00 전후) · La Flottille · 대정원 · 트리아농 전일 투어 |
+| 9/30 수 | Musée de l'Orangerie 10:00 · Chez Savy · Avenue Montaigne·Fashion Week · Musée Guimet 14:40 · Palais de Tokyo |
+| 10/1 목 | Musée d'Orsay 상설 컬렉션 (10:30 예약 확정) · Café Varenne · Musée Rodin · 앵발리드 외관 선택 |
+| 10/2 금 | Musée du Louvre 11:00 · PMP 마지막 핵심 사용 · Cour Carrée·센 강변 |
 | 10/3 토 | Musée Marmottan Monet (<인상, 해돋이>) · 라늘라그 정원 & 파시 역사지구 산책 |
-| 10/4 일 | Qatar Prix de l'Arc de Triomphe (파리롱샹 경마 대회 본선 전일) |
+| 10/4 일 | Qatar Prix de l'Arc de Triomphe · General Entry 예약완료 |
 | 10/5 월 | 경마 후 오전 회복 & 세탁 · Musée Jacquemart-André · 몽소 공원 산책 |
 | 10/6 화 | Marché Convention 장보기 · Musée d'Orsay <Mary Cassatt> 특별전 개막 · 마레 지구 |
 | 10/7 수 | Bourse de Commerce (<Remember Me> 개막전) · Fête des Vendanges de Montmartre |
-| 10/8 목 | Musée Guimet · Musée d'Art Moderne de Paris (MAM) · 트로카데로 에펠탑 고별 일몰 |
+| 10/8 목 | Musée d'Art Moderne de Paris (MAM) · 트로카데로 에펠탑 고별 일몰 |
 | 10/9 금 | 15구 숙소 체크아웃 · Café du Commerce 점심 · 공식 택시로 CDG 이동 ➔ OZ502 탑승 |
 
 상세 시각, 예약, 이동과 식사는 각 날짜의 Day 페이지에서 확인한다.
@@ -78,7 +78,7 @@ Paris 체류의 거점은 15구(78 Rue de Lourmel)다. 체류 전반에 걸쳐 �
 
 #### 근교일은 철도
 
-베르사유(Day 34)는 RER C선을 이용해 이동하며, 15구 숙소 인근 역(Javel 등)에서 직통으로 연결된다.
+베르사유(Day 32)는 RER C선을 이용해 이동하며, 15구 숙소 인근 역(Javel 등)에서 직통으로 연결된다.
 
 #### 출국일은 CDG 이동
 

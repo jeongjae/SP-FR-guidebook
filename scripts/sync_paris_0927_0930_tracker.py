@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Synchronize the 9/27 and 9/30 Paris swap into the operations tracker.
 
-The 9/29 row is only de-duplicated to keep its already-canonical Orsay plan; no
-other date is changed. Date preconditions make the binary edit fail closed if
-the workbook layout changes.
+Only those two dates and their confirmed reservations are touched. Date
+preconditions make the binary edit fail closed if the workbook layout changes.
 """
 
 from datetime import datetime
@@ -29,7 +28,6 @@ def main() -> None:
     sheet = workbook["Master Itinerary"]
     expect_date(sheet, 31, "2026-09-25")
     expect_date(sheet, 33, "2026-09-27")
-    expect_date(sheet, 35, "2026-09-29")
     expect_date(sheet, 36, "2026-09-30")
 
     updates = {
@@ -44,12 +42,6 @@ def main() -> None:
             11: "메트로 8+1호선·도보",
             16: "",
             17: "야외 구간 단축",
-        },
-        35: {
-            6: "Musée d'Orsay 집중 관람 & Musée Rodin",
-            9: "Musée d'Orsay 09:30→7구 점심→Musée Rodin 14:30→Invalides 외관",
-            16: "Orsay 09:30·Rodin 14:30",
-            17: "오랑주리는 화요일 휴관 — Orsay 일정 유지",
         },
         36: {
             5: "미술·패션",
@@ -88,7 +80,7 @@ def main() -> None:
             reservations.cell(row, col).value = value
     reservations.cell(23, 22).value = "Grand Palais 9/25 17:00·Orangerie 9/30 10:00은 별도 확정 행 참조; 이 행은 나머지 미술관 예약"
     workbook.save(TRACKER)
-    print("tracker synchronized: 9/27 Petit Palais · 9/29 Orsay retained · 9/30 Orangerie")
+    print("legacy tracker synchronization completed; final PMP itinerary is applied by sync_paris_pmp_tracker.py")
 
 
 if __name__ == "__main__":

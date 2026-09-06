@@ -152,12 +152,7 @@ class ExecutionUxBatch09Tests(unittest.TestCase):
         orsay_detail = stops["musee-d-orsay-cassatt"]["executionStatuses"][0]["detail"]
         self.assertIn("Entrée 1 - Quai", orsay_detail)
 
-        # Musée Picasso Paris is optional with timed ticket requirement
-        self.assertTrue(stops["musee-picasso"]["optional"])
-        picasso_statuses = {s["type"] for s in stops["musee-picasso"]["executionStatuses"]}
-        self.assertIn("optional", picasso_statuses)
-        self.assertIn("book", picasso_statuses)
-        self.assertNotIn("confirmed", picasso_statuses)
+        self.assertNotIn("musee-picasso", stops)
 
         # Musée Carnavalet is optional
         self.assertTrue(stops["musee-carnavalet"]["optional"])
@@ -171,7 +166,7 @@ class ExecutionUxBatch09Tests(unittest.TestCase):
 
         rendered = self.rendered(39)
         self.assertIn("Mary Cassatt", rendered)
-        self.assertIn("Picasso", rendered)
+        self.assertNotIn("Picasso", rendered)
         self.assertIn("Carnavalet", rendered)
         self.assertIn("Chez Janou", rendered)
 
@@ -195,7 +190,7 @@ class ExecutionUxBatch09Tests(unittest.TestCase):
     def test_day36_to_39_semantics_are_protected(self):
         payload = [semantic_projection(load_day(number)) for number in range(36, 40)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("713a263b6db13e4fea85266a760906d85d033b721ea3f53dfed87498a01e5871", digest)
+        self.assertEqual("0ab285d6e08082013693b8713defe36c778339bdf22e8c437c93eb00f1540c8f", digest)
 
 
 if __name__ == "__main__":

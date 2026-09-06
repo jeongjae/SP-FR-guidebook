@@ -33,7 +33,9 @@ class MapDataValidationTests(unittest.TestCase):
         day_27 = [stop["placeId"] for stop in days["2026-09-27"]["stops"]]
         day_30 = [stop["placeId"] for stop in days["2026-09-30"]["stops"]]
 
-        self.assertIn("petit-palais", day_27)
+        self.assertIn("musee-picasso-paris", day_27)
+        self.assertIn("notre-dame-de-paris", day_27)
+        self.assertNotIn("petit-palais", day_27)
         self.assertNotIn("musee-de-l-orangerie", day_27)
         self.assertIn("musee-de-l-orangerie", day_30)
         self.assertNotIn("petit-palais", day_30)
@@ -44,11 +46,26 @@ class MapDataValidationTests(unittest.TestCase):
                 "chez-savy",
                 "avenue-montaigne",
                 "grand-palais",
+                "musee-guimet",
                 "palais-de-tokyo",
-                "stephane-martin",
+                "paris-15e-stay-area",
             ],
             day_30,
         )
+
+    def test_paris_0929_1001_swap_routes_match_day_source_of_truth(self):
+        days = {day["date"]: day for day in self.payloads["daily-routes.json"]["days"]}
+        day_29 = [stop["placeId"] for stop in days["2026-09-29"]["stops"]]
+        day_01 = [stop["placeId"] for stop in days["2026-10-01"]["stops"]]
+
+        self.assertIn("versailles", day_29)
+        self.assertIn("versailles-gardens", day_29)
+        self.assertIn("grand-trianon", day_29)
+        self.assertNotIn("musee-d-orsay", day_29)
+        self.assertIn("musee-d-orsay", day_01)
+        self.assertIn("musee-rodin", day_01)
+        self.assertIn("hotel-des-invalides", day_01)
+        self.assertNotIn("versailles", day_01)
 
     def test_duplicate_place_id_is_rejected(self):
         payloads = copy.deepcopy(self.payloads)

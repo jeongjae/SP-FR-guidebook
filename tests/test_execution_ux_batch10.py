@@ -85,14 +85,11 @@ class ExecutionUxBatch10Tests(unittest.TestCase):
         self.assertIn("Montmartre", rendered)
         self.assertIn("Le Progrès", rendered)
 
-    def test_day41_musee_guimet_and_trocadero_sunset(self):
+    def test_day41_mam_and_trocadero_sunset(self):
         payload = load_day(41)
         stops = {stop["id"]: stop for stop in payload["stops"]}
 
-        # Musée Guimet timed entry book
-        guimet_statuses = {s["type"] for s in stops["musee-guimet"]["executionStatuses"]}
-        self.assertIn("book", guimet_statuses)
-        self.assertNotIn("confirmed", guimet_statuses)
+        self.assertNotIn("musee-guimet", stops)
 
         # Les Marches lunch booking
         lunch_statuses = {s["type"] for s in stops["iena-lunch"]["executionStatuses"]}
@@ -115,7 +112,7 @@ class ExecutionUxBatch10Tests(unittest.TestCase):
         self.assertNotIn("confirmed", dinner_statuses)
 
         rendered = self.rendered(41)
-        self.assertIn("Guimet", rendered)
+        self.assertNotIn("Guimet", rendered)
         self.assertIn("Les Marches", rendered)
         self.assertIn("Trocadéro", rendered)
         self.assertIn("Le Grand Pan", rendered)

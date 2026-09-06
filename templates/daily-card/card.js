@@ -155,7 +155,10 @@
     svg.insertAdjacentHTML("beforeend", `<line class="label-connector" x1="${point.x}" y1="${point.y}" x2="${anchorX}" y2="${anchorY}"></line>`);
   }
 
-  const labelOverlaps = placed.reduce((count, rect, i) => count + placed.slice(i+1).filter((other) => overlap(rect, other, 0)).length, 0);
+  // Measure the final DOM boxes after layout. Fractional font metrics can differ
+  // from the provisional offsetWidth/offsetHeight used while placing labels.
+  const finalLabelRects = [...document.querySelectorAll(".map-label")].map((el) => el.getBoundingClientRect());
+  const labelOverlaps = finalLabelRects.reduce((count, rect, i) => count + finalLabelRects.slice(i+1).filter((other) => overlap(rect, other, 0)).length, 0);
   const overflow = [...document.querySelectorAll(".timeline-item,.summary-cell,.map-label")].filter((el) => el.scrollHeight > el.clientHeight + 1 || el.scrollWidth > el.clientWidth + 1).length;
   window.__CARD_QA__ = {labelOverlaps, overflow, tileCount: tiles.length, markerCount: visibleStops.length};
   document.body.dataset.qaLabelOverlaps = String(labelOverlaps);

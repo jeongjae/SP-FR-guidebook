@@ -3,14 +3,14 @@
   "day": 34,
   "date": "2026-10-01",
   "city": "Paris",
-  "title": "베르사유 궁전 & 대정원 & 트리아농 전일 투어",
+  "title": "인상주의 & 조각 — 오르세 상설·로댕",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
-  "startTime": "08:30",
-  "endTime": "19:30",
-  "totalDuration": "11시간",
-  "totalDistance": "RER C 왕복 약 35km + 베르사유 영지 도보 약 7km",
+  "startTime": "09:30",
+  "endTime": "20:00",
+  "totalDuration": "10시간 30분",
+  "totalDistance": "메트로 + 파리 좌안 예술도보 약 5.0km",
   "fatigue": "4",
   "hotel": {
     "name": "78 Rue de Lourmel (파리 15구)",
@@ -21,172 +21,163 @@
   },
   "stops": [
     {
-      "id": "versailles-transfer",
+      "id": "morning-routine",
       "order": 1,
-      "start": "08:30",
-      "end": "09:30",
-      "name": "15구 숙소 출발 ➔ RER C ➔ 베르사유 이동",
-      "category": "transport",
-      "lat": 48.8,
-      "lng": 2.1286,
-      "summary": "15구 숙소에서 RER C선 Javel역 탑승 (직통 25분, 09:15 Versailles Château Rive Gauche역 도착 후 궁전 도보 10분)",
+      "start": "09:30",
+      "end": "10:15",
+      "name": "Left Bank Art Morning (오르세 출발)",
+      "category": "hotel",
+      "lat": 48.8472,
+      "lng": 2.2894,
+      "summary": "09:30 숙소 출발, 10:15 오르세 Entrée 1 - Quai 도착 후 10:30 예약 입장 준비",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
           "type": "check",
-          "label": "RER C",
-          "detail": "Javel역에서 RER C선 Versailles Château Rive Gauche 방면 탑승 (Navigo Weekly 또는 1–5존 티켓)."
+          "label": "ON TIME",
+          "detail": "09:30 숙소 출발 ➔ 메트로 8·12호선 ➔ 10:15 Entrée 1 - Quai 도착."
         }
       ],
-      "executionNote": "08:30 숙소 출발 ➔ Javel역 도보 10분 ➔ RER C 탑승 ➔ Versailles Château Rive Gauche역 09:15 도착 ➔ 궁전 정문 도보 10분.",
-      "officialUrl": "https://www.ratp.fr/",
+      "executionNote": "예약 시각 15분 전 도착. 10:30 입장권 QR을 오프라인 저장.",
+      "officialUrl": null,
       "optional": false,
-      "place_ref": "versailles"
+      "place_ref": null
     },
     {
-      "id": "versailles-palace",
+      "id": "musee-d-orsay",
       "order": 2,
-      "start": "09:45",
-      "end": "12:30",
-      "name": "Château de Versailles (베르사유 궁전 본관)",
+      "start": "10:30",
+      "end": "13:00",
+      "name": "Musée d'Orsay (상설 컬렉션 중심)",
       "category": "culture",
-      "lat": 48.8048,
-      "lng": 2.1203,
-      "summary": "10:00 시간지정 입장. 거울의 방(Galerie des Glaces 73m 거울 회랑), 국왕의 대침실, 왕실 예배당 집중 관람 (2시간 45분)",
+      "lat": 48.86,
+      "lng": 2.3266,
+      "summary": "인상주의·후기인상주의 상설 컬렉션 중심: Monet, Renoir, Degas, Cézanne, Van Gogh, Gauguin 주요작을 2시간 30분에 집중 관람",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "book",
-          "label": "TIMED ENTRY",
-          "detail": "Passport 티켓 10:00 본관 슬롯 사전 시간지정 예매 필수 · 09:45까지 Grille d'Honneur 보안검색 도착."
+          "type": "confirmed",
+          "label": "BOOKED 10:30",
+          "detail": "Musée d'Orsay 10/1(목) 10:30 시간지정 예약 확정 · 10:15까지 Entrée 1 - Quai 도착."
         }
       ],
-      "executionNote": "Grille d'Honneur (정문 안뜰 출입구). Passport 모바일 QR 및 신분증 지참.",
-      "officialUrl": "https://www.chateauversailles.fr/",
+      "executionNote": "1 Rue de la Légion d'Honneur. Entrée 1 - Quai 이용, 예약 QR 오프라인 저장. 10/6 Mary Cassatt 특별전과 분리된 상설 컬렉션 방문.",
+      "officialUrl": "https://www.musee-orsay.fr/",
       "optional": false,
-      "place_ref": "versailles"
+      "place_ref": "musee-d-orsay"
     },
     {
-      "id": "versailles-lunch",
+      "id": "rue-du-bac-lunch",
       "order": 3,
-      "start": "12:30",
+      "start": "13:00",
       "end": "14:00",
-      "name": "La Flottille 대운하 점심",
+      "name": "Café Varenne 7구 점심",
       "category": "food",
-      "lat": 48.8122,
-      "lng": 2.1105,
-      "summary": "궁전 본관 출구에서 정원 중앙축(라토나 → 왕의 길 → 아폴로 분수)을 20~25분 걸어 대운하 머리에 닿는다. 90분 슬롯이지만 실질 착석은 65분이라 코스가 아니라 단품+디저트로 간다",
-      "menu": "Steak au poivre · Escargots de Bourgogne (Label Rouge) · Tarte Tatin",
-      "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "book",
-          "label": "BOOK",
-          "detail": "La Flottille (베르사유 대운하변) 12:45~13:00 사전 온라인 예약 (Zenchef/TheFork) 권장."
-        }
-      ],
-      "executionNote": "Parc du Château de Versailles (대운하 북측 수변). 도보 20분 소요.",
-      "officialUrl": "https://www.laflottille.fr/",
-      "optional": false,
-      "place_ref": "la-flottille"
-    },
-    {
-      "id": "versailles-gardens",
-      "order": 4,
-      "start": "14:00",
-      "end": "15:30",
-      "name": "베르사유 프랑스식 대정원 & 분수 산책",
-      "category": "sight",
-      "lat": 48.806,
-      "lng": 2.115,
-      "summary": "앙드레 르 노트르가 설계한 기하학적 프랑스 정원, 라톤의 분수, 아폴론의 분수 산책 (90분)",
-      "menu": null,
+      "lat": 48.8552,
+      "lng": 2.3218,
+      "summary": "오르세에서 도보 10분, 식후 rue de Varenne를 8분 직진하면 로댕 미술관. 07:30~23:00 논스톱이라 관람이 밀려도 따뜻한 점심을 놓치지 않는다",
+      "menu": "Confit de canard 수제 감자튀김 · Œufs mayonnaise · Pâté en croûte maison",
       "reservation": null,
       "executionStatuses": [
         {
           "type": "check",
-          "label": "GARDEN ENTRY",
-          "detail": "Passport 티켓으로 Jardins Musicaux/정원 구역 자유 통행."
+          "label": "OPEN",
+          "detail": "Café Varenne (36 Rue de Varenne) 목요일 07:30–23:00 논스톱 영업 · 예약 없이 현장 착석 (13:00–14:00 식사)."
         }
       ],
-      "executionNote": "라토나 분수 ➔ 아폴론 분수 ➔ 숲길(Bosquets) 산책.",
-      "officialUrl": "https://www.chateauversailles.fr/",
+      "executionNote": "36 Rue de Varenne, 75007 Paris. 로댕 미술관 도보 8분 거리.",
+      "officialUrl": "https://www.facebook.com/CafeVarenne/",
       "optional": false,
-      "place_ref": "versailles"
+      "place_ref": "cafe-varenne"
     },
     {
-      "id": "trianon-hamlet",
-      "order": 5,
-      "start": "15:30",
-      "end": "17:00",
-      "name": "Grand Trianon & Petit Trianon & 왕비의 촌락",
+      "id": "musee-rodin",
+      "order": 4,
+      "start": "14:15",
+      "end": "16:00",
+      "name": "Musée Rodin & 조각 정원 (로댕 미술관)",
       "category": "culture",
-      "lat": 48.815,
-      "lng": 2.105,
-      "summary": "루이 14세의 분홍 대리석 이궁 그랑 트리아농, 마리 앙투아네트의 프티 트리아농 및 전원풍 왕비의 촌락(Hameau de la Reine) 관람 (90분)",
+      "lat": 48.8553,
+      "lng": 2.3158,
+      "summary": "18세기 오텔 비롱 저택 <키스>, 카미유 클로델 전시실 ➔ 야외 장미 정원 <생각하는 사람>, <지옥의 문>, <칼레의 시민> 사색 산책 (1시간 45분)",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "ticket",
+          "label": "TIMED TICKET",
+          "detail": "Musée Rodin (€14) 14:15 슬롯 온라인 예매 권장 · 목요일 10:00–18:30 정상 개관 (월요일 휴관)."
+        }
+      ],
+      "executionNote": "77 Rue de Varenne, 75007 Paris (정문 출입구). 목요일 정상 개관.",
+      "officialUrl": "https://www.musee-rodin.fr/",
+      "optional": false,
+      "place_ref": "musee-rodin"
+    },
+    {
+      "id": "invalides-exterior",
+      "order": 5,
+      "start": "16:00",
+      "end": "17:00",
+      "name": "Les Invalides (앵발리드 황금 돔 외관 산책)",
+      "category": "sight",
+      "lat": 48.8566,
+      "lng": 2.3125,
+      "summary": "나폴레옹의 무덤이 있는 앵발리드 황금 돔과 에스플러나드 잔디광장 산책 (60분)",
       "menu": null,
       "reservation": null,
       "executionStatuses": [
         {
           "type": "optional",
           "label": "OPTIONAL",
-          "detail": "보행 피로 시 미니트레인(Petit Train €5) 이용 또는 왕비의 촌락 생략 후 16:30 조기 복귀."
+          "detail": "오르세·로댕 관람 후 피로 시 생략하고 로댕 미술관 정원 카페 휴식 후 조기 복귀."
         }
       ],
-      "executionNote": "Passport 티켓 포함. 12:00 이후 개관. 피로 시 미니트레인 이용 권장.",
-      "officialUrl": "https://www.chateauversailles.fr/",
+      "executionNote": "로댕 미술관 정문에서 Boulevard des Invalides 방향 외관 산책. 피로 시 삭제 1순위 레버.",
+      "officialUrl": "https://www.musee-armee.fr/",
       "optional": true,
-      "place_ref": "versailles"
+      "place_ref": null
     },
     {
       "id": "paris-return",
       "order": 6,
-      "start": "17:30",
-      "end": "19:30",
-      "name": "Le Grand Pan 15구 비스트로 저녁",
+      "start": "18:30",
+      "end": "20:00",
+      "name": "Café du Commerce 동네 저녁",
       "category": "food",
-      "lat": 48.8351,
-      "lng": 2.2985,
-      "summary": "베르사유 투어 후 15구 브누아 고티에 셰프의 참나무 숯불 비스트로에서 즐기는 푸짐한 고기 요리와 와인",
-      "menu": "샤롤레 소 티본 스테이크 숯불구이, 송아지 흉선 요리",
+      "lat": 48.8466,
+      "lng": 2.2968,
+      "summary": "메트로 8호선(La Tour-Maubourg ➔ Commerce) 귀환 후 15구 아르데코 가든 브라세리 저녁",
+      "menu": "에스카르고, 소고기 타르타르, 하우스 와인",
       "reservation": null,
       "executionStatuses": [
         {
-          "type": "book",
-          "label": "BOOK",
-          "detail": "Le Grand Pan (20 Rue Rosenwald) 20:00 저녁 사전 예약 (+33 1 42 50 02 02) · 목요일 정상 영업."
+          "type": "check",
+          "label": "OPEN",
+          "detail": "Café du Commerce (51 Rue du Commerce) 매일 11:30–23:00 논스톱 영업."
         }
       ],
-      "executionNote": "20 Rue Rosenwald, 75015 Paris. RER C선 Javel역 또는 메트로 Convention역에서 접근.",
-      "officialUrl": "https://www.legrandpan.fr/",
+      "executionNote": "51 Rue du Commerce, 75015 Paris. 숙소 도보 7~8분.",
+      "officialUrl": "https://www.lecafeducommerce.com/",
       "optional": false,
-      "place_ref": "le-grand-pan"
+      "place_ref": "cafe-du-commerce"
     }
   ],
   "legs": [
     {
-      "from": "versailles-transfer",
-      "to": "versailles-palace",
-      "mode": "walk",
-      "duration": "10분",
-      "distance": "0.8km",
+      "from": "morning-routine",
+      "to": "musee-d-orsay",
+      "mode": "metro",
+      "duration": "메트로 8+12호선 약 20분",
+      "distance": "3.8km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "versailles-palace",
-      "to": "versailles-lunch",
-      "mode": "walk",
-      "duration": "12분",
-      "distance": "0.9km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "versailles-lunch",
-      "to": "versailles-gardens",
+      "from": "musee-d-orsay",
+      "to": "rue-du-bac-lunch",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
@@ -194,52 +185,60 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "versailles-gardens",
-      "to": "trianon-hamlet",
+      "from": "rue-du-bac-lunch",
+      "to": "musee-rodin",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "1.1km",
+      "duration": "8분",
+      "distance": "0.6km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "trianon-hamlet",
+      "from": "musee-rodin",
+      "to": "invalides-exterior",
+      "mode": "walk",
+      "duration": "5분",
+      "distance": "0.4km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "invalides-exterior",
       "to": "paris-return",
-      "mode": "train",
-      "duration": "도보 20분 + RER C선 25분",
-      "distance": "약 18km",
+      "mode": "metro",
+      "duration": "메트로 8호선 약 20분",
+      "distance": "3.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "RER C선 (Javel역 ↔ Versailles Château Rive Gauche역, 직통 25분)",
-    "베르사유 광활한 영지 도보 (궁전 ➔ 정원 ➔ 대운하 ➔ 트리아농)"
+    "메트로 8호선 / 12호선 (Lourmel ➔ Solférino)",
+    "파리 7구 오르세·로댕 도보"
   ],
   "food": [
-    "대운하 점심 (La Flottille)",
-    "Le Grand Pan 저녁 (15구 숯불 비스트로)"
+    "Café Varenne 점심 (13:00)",
+    "Café du Commerce 저녁 (18:30)"
   ],
   "highlights": [
-    "Passport 10:00 본관 예약 엄수",
-    "광활한 영지 도보 페이스 안배",
-    "피로 시 미니트레인 활용"
+    "10/1 10:30 오르세 예약 확정",
+    "상설 컬렉션 중심 2시간 30분",
+    "10/6 Mary Cassatt 특별전 재방문과 역할 분리"
   ],
-  "backup": "La Petite Venise(도보 2~3분, 서비스 평가가 더 안정적이나 1인 평균 €46) 또는 La Guinguette·테이크아웃 키오스크(예약 불필요, 30~40분에 끝나 남는 시간을 대운하 수변 산책에 쓸 수 있다). 트리아농 복귀는 프티 트랭 편도 €5\n\n보행 피로 시 트리아농 이동 시 미니트레인(Petit Train)을 이용하고 왕비의 촌락은 외관만 보고 16:30 조기 복귀",
+  "backup": "La Laiterie Sainte Clotilde(64 rue de Bellechasse, 로댕 도보 5분, 고미요 12/20 — 점심 마감이 14:00일 수 있어 빠듯하고 예약 필수) 또는 L'Affable(10 rue de Saint-Simon, 점심 코스 €26~29 — 2인 3코스가 예산에 들어오는 유일한 곳)\n\n오르세·로댕 관람 중 피로 시 앵발리드 산책을 생략하고 로댕 미술관 카페 정원에서 휴식 후 조기 복귀",
   "map": {
     "zoom": 14,
     "center": [
-      48.805,
-      2.115
+      48.852,
+      2.335
     ],
     "routeCache": null
   },
   "needsReview": [
-    "베르사유 Passport 티켓 10:00 궁전 슬롯 사전 예매 필수",
-    "RER C선 평일 공사 여부 확인"
+    "Musée Rodin 10/1 14:15 입장권은 예약 권장(미확정)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-8-10월1일",
-    "source/CURRENT/30_Places/versailles.md"
+    "사용자 확인: Musée d'Orsay 2026-10-01 10:30 예약 완료"
   ]
 }

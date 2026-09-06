@@ -19,9 +19,9 @@ PLACES = ROOT / "source" / "CURRENT" / "30_Places"
 # (Day, stop id, place 슬러그)
 LUNCH = [
     (31, "opera-lunch", "au-petit-riche"),
-    (32, "rue-du-bac-lunch", "cafe-varenne"),
+    (32, "versailles-lunch", "la-flottille"),
     (33, "champs-elysees-lunch", "chez-savy"),
-    (34, "versailles-lunch", "la-flottille"),
+    (34, "rue-du-bac-lunch", "cafe-varenne"),
     (40, "halles-lunch", "aux-crus-de-bourgogne"),
     (41, "iena-lunch", "les-marches"),
 ]
@@ -79,8 +79,8 @@ class ParisMealSlotTests(unittest.TestCase):
     def test_alternatives_survive_in_backup(self):
         """2·3순위는 페이지를 갖지 않는다 — 그 대신 Plan B 에서 사라지지 않는다."""
         expected = {
-            31: "Le Pantruche", 32: "La Laiterie", 33: "Le Bar des Théâtres",
-            34: "La Petite Venise", 40: "Le Comptoir de la Gastronomie",
+            31: "Le Pantruche", 32: "La Petite Venise", 33: "Le Bar des Théâtres",
+            34: "La Laiterie", 40: "Le Comptoir de la Gastronomie",
             41: "Hanok", 29: "L'Avant Comptoir", 39: "Au Bourguignon du Marais",
         }
         for n, name in expected.items():

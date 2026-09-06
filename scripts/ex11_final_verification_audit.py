@@ -143,9 +143,9 @@ def run_audit():
         ("Day 29", "Musée du Luxembourg Andy Warhol 13:00 Slot", "BOOKING", "Temporary exhibition slot", "Medium", "Sénat / Luxembourg Official", "T-7"),
         ("Day 33", "Musée de l'Orangerie 10:00 Water Lilies Slot", "BOOKING", "Timed entry reservation", "Medium", "Musée de l'Orangerie", "T-7"),
         ("Day 31", "Paris Fashion Week Public Vibe / Le Marais Walk", "EVENT", "PFW public atmosphere & popup access", "Low", "Fédération de la Haute Couture", "T-3"),
-        ("Day 32", "Musée d'Orsay 09:30 Opening Slot & Rodin", "BOOKING", "09:30 morning entry", "Medium", "Musée d'Orsay Official", "T-7"),
-        ("Day 33", "Louvre 14:00 Timed Slot", "BOOKING", "Pyramide entry slot", "Medium", "Louvre Official", "T-7"),
-        ("Day 34", "Versailles Palace 10:00 Slot & RER C Operation", "TRANSPORT/BOOKING", "10:00 entry & RER C track check", "High", "Château de Versailles & RATP", "T-1"),
+        ("Day 32", "Versailles Palace 10:00 Slot & RER C Operation", "TRANSPORT/BOOKING", "10:00 entry & RER C track check", "High", "Château de Versailles & RATP", "T-1"),
+        ("Day 35", "Louvre 11:00 Timed Slot", "BOOKING", "Pyramide entry slot · PMP last planned use", "Medium", "Louvre Official", "T-7"),
+        ("Day 34", "Musée d'Orsay 10:30 Confirmed Slot & Rodin", "BOOKING", "10:30 confirmed entry", "Low", "Musée d'Orsay Official", "DONE"),
         ("Day 37", "Qatar Prix de l'Arc de Triomphe Gate & Shuttle", "EVENT", "12:00 gate, France Galop shuttle", "High", "France Galop Official", "T-1"),
         ("Day 40", "Bourse de Commerce 11:00 & Vendanges de Montmartre", "EVENT/BOOKING", "11:00 entry & Oct 7 public festival events", "Medium", "Pinault Collection & Montmartre", "T-3"),
         ("Day 42", "CDG Airport Terminal 1 & OZ502 Departure (19:10)", "TRANSPORT", "Terminal 1 check-in 4h buffer & OZ502", "Low", "Paris Aéroport & Asiana", "T-1")
@@ -176,7 +176,7 @@ def run_audit():
         ("P2-05", "Day 21", "Pont du Gard afternoon heat & walking fatigue", "High temperature > 30C", "Shorten museum interior & view aqueduct from shady left bank", "T-1"),
         ("P2-06", "Day 22", "Arles JEP festival crowd in historic core", "Major queue at Arènes", "Prioritize Saint-Trophime & peaceful Roquette walk", "T-3"),
         ("P2-07", "Day 26", "Annecy lake cruise rain/cloud cancellation", "Heavy rain", "Extend Old Town covered arcade & cafe time", "T-1"),
-        ("P2-08", "Day 34", "Versailles full-day physical fatigue & RER C maintenance", "RER C weekend trackwork", "Transilien Line N from Montparnasse / taxi", "T-1"),
+        ("P2-08", "Day 32", "Versailles full-day physical fatigue & RER C maintenance", "RER C trackwork", "Transilien Line N from Montparnasse / taxi", "T-1"),
         ("P2-09", "Day 37", "ParisLongchamp post-race crowd exit surge", "Crowd at Porte d'Auteuil shuttle", "Walk to Metro 10 Boulogne - Jean Jaurès", "T-1")
     ]
     

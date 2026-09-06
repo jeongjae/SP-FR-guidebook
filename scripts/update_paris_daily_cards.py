@@ -53,26 +53,27 @@ def mod31(d):
             s["menu"] = "크루아상, 팽 오 쇼콜라, 과일, 커피"
 update_json(31, mod31)
 
-# Day 32
+# Day 32 — Versailles day
 def mod32(d):
-    for s in d["stops"]:
-        if s["id"] == "paris-return":
-            s["place_ref"] = "cafe-du-commerce"
-            s["name"] = "Café du Commerce 동네 저녁"
-            s["category"] = "food"
-            s["menu"] = "에스카르고, 소고기 타르타르, 하우스 와인"
-update_json(32, mod32)
-
-# Day 34
-def mod34(d):
     for s in d["stops"]:
         if s["id"] == "paris-return":
             s["place_ref"] = "le-grand-pan"
             s["name"] = "Le Grand Pan 15구 비스트로 저녁"
             s["category"] = "food"
-            s["summary"] = "베르사유 투어 후 15구 브누아 고티에 셰프의 참나무 숯불 비스트로에서 즐기는 푸짐한 고기 요리와 와인"
+            s["summary"] = "베르사유 투어 후 15구 숯불 비스트로 저녁"
             s["menu"] = "샤롤레 소 티본 스테이크 숯불구이, 송아지 흉선 요리"
-            s["reservation"] = "사전 예약 필수 (20:00)"
+update_json(32, mod32)
+
+# Day 34 — Orsay / Rodin day
+def mod34(d):
+    for s in d["stops"]:
+        if s["id"] == "paris-return":
+            s["place_ref"] = "cafe-du-commerce"
+            s["name"] = "Café du Commerce 동네 저녁"
+            s["category"] = "food"
+            s["summary"] = "메트로 8호선으로 15구에 복귀해 동네 브라세리 저녁"
+            s["menu"] = "에스카르고, 소고기 타르타르, 하우스 와인"
+            s["reservation"] = None
 update_json(34, mod34)
 
 # Day 35

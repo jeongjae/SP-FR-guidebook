@@ -134,7 +134,7 @@ def run_audit():
         ("Day 10", "ZOU 82 Bus Interval on Weekend", "T-1 (9/6)", "ZOU Official / Lignes d'Azur App", "If delay > 20m, take TER rail line along coast", "SURFACED ON DAY CARD & PREPARE"),
         ("Day 14", "Cassis Calanques Boat Weather Gate", "T-1 (9/10)", "Cassis Port Office / Wind Forecast", "Switch to Port-Miou scenic coastal walk", "SURFACED ON DAY CARD & PREPARE"),
         ("Day 22", "Arles JEP Festival Crowd & Access", "T-3 (9/16)", "Arles Tourism / JEP Official Site", "Prioritize Saint-Trophime & peaceful Roquette walk", "SURFACED ON DAY CARD & PREPARE"),
-        ("Day 34", "Versailles RER C Track Maintenance", "T-1 (9/30)", "RATP / Île-de-France Mobilités App", "Take Transilien Line N from Montparnasse / taxi", "SURFACED ON DAY CARD & PREPARE"),
+        ("Day 32", "Versailles RER C Track Maintenance", "T-1 (9/28)", "RATP / Île-de-France Mobilités App", "Take Transilien Line N from Montparnasse / taxi", "SURFACED ON DAY CARD & PREPARE"),
         ("Day 37", "Qatar Prix de l'Arc Shuttle & Main Race Time", "T-1 (10/3)", "France Galop Official Site", "Walk to Metro 10 Boulogne - Jean Jaurès", "SURFACED ON DAY CARD & PREPARE"),
         ("Day 40", "Vendanges de Montmartre Opening Day Program", "T-3 (10/4)", "Montmartre Vendanges Official Site", "Enjoy Rue Lepic atmosphere & Sacré-Cœur panorama", "SURFACED ON DAY CARD & PREPARE")
     ]

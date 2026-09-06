@@ -161,7 +161,7 @@
       "region": "paris",
       "days": [
         28,
-        32,
+        34,
         42
       ],
       "source": "day-sot"
@@ -170,7 +170,7 @@
       "displayName": "Café Varenne",
       "region": "paris",
       "days": [
-        32
+        34
       ],
       "source": "day-sot"
     },
@@ -419,7 +419,7 @@
       "displayName": "La Flottille",
       "region": "paris",
       "days": [
-        34
+        32
       ],
       "source": "day-sot"
     },
@@ -469,14 +469,6 @@
       ],
       "source": "day-sot"
     },
-    "latin-quarter": {
-      "displayName": "Latin Quarter",
-      "region": "paris",
-      "days": [
-        29
-      ],
-      "source": "day-sot"
-    },
     "le-figuier-de-saint-esprit": {
       "displayName": "Le Figuier de Saint-Esprit",
       "region": "nice",
@@ -512,7 +504,7 @@
       "displayName": "Le Grand Pan",
       "region": "paris",
       "days": [
-        34,
+        32,
         41
       ],
       "source": "day-sot"
@@ -721,7 +713,7 @@
       "displayName": "Musée d'Orsay",
       "region": "paris",
       "days": [
-        32,
+        34,
         39
       ],
       "source": "day-sot"
@@ -815,7 +807,7 @@
       "displayName": "Notre-Dame de Paris",
       "region": "paris",
       "days": [
-        29
+        30
       ],
       "source": "day-sot"
     },
@@ -1046,7 +1038,7 @@
       "displayName": "Versailles (궁전·트리아농·정원)",
       "region": "paris",
       "days": [
-        34
+        32
       ],
       "source": "day-sot"
     },

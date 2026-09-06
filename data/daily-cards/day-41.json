@@ -3,7 +3,7 @@
   "day": 41,
   "date": "2026-10-08",
   "city": "Paris",
-  "title": "기메 동양미술관 & 파리 현대미술관 & 트로카데로 고별 일몰",
+  "title": "파리 현대미술관 & 트로카데로 고별 일몰",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
@@ -24,8 +24,8 @@
       "id": "morning-routine",
       "order": 1,
       "start": "08:00",
-      "end": "09:15",
-      "name": "Art-Heavy Morning (빠른 아침·기메 출발)",
+      "end": "11:15",
+      "name": "여유 있는 아침 & Iéna 출발",
       "category": "hotel",
       "lat": 48.8472,
       "lng": 2.2894,
@@ -45,32 +45,8 @@
       "place_ref": null
     },
     {
-      "id": "musee-guimet",
-      "order": 2,
-      "start": "10:00",
-      "end": "12:00",
-      "name": "Musée Guimet (국립 기메 동양박물관)",
-      "category": "culture",
-      "lat": 48.865,
-      "lng": 2.2936,
-      "summary": "간다라 헬레니즘 불상, 앙코르와트 크메르 조각 걸작, 시바 나타라자 청동상, 한국실 삼국시대 불상 및 달항아리 관람 (2시간)",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "book",
-          "label": "TIMED ENTRY",
-          "detail": "Musée Guimet 10:00 슬롯 사전 시간지정 예매 필수 · 목요일 10:00–18:00 정상 개관 (화요일 휴관)."
-        }
-      ],
-      "executionNote": "6 Place d'Iéna, 75116 Paris (정문 출입구). 모바일 티켓 QR 준비.",
-      "officialUrl": "https://www.guimet.fr/",
-      "optional": false,
-      "place_ref": "musee-guimet"
-    },
-    {
       "id": "iena-lunch",
-      "order": 3,
+      "order": 2,
       "start": "12:00",
       "end": "13:15",
       "name": "Les Marches 16구 점심",
@@ -94,7 +70,7 @@
     },
     {
       "id": "musee-art-moderne",
-      "order": 4,
+      "order": 3,
       "start": "13:30",
       "end": "15:45",
       "name": "Musée d'Art Moderne de Paris (MAM)",
@@ -118,7 +94,7 @@
     },
     {
       "id": "trocadero-sunset",
-      "order": 5,
+      "order": 4,
       "start": "16:00",
       "end": "18:30",
       "name": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
@@ -142,7 +118,7 @@
     },
     {
       "id": "farewell-dinner",
-      "order": 6,
+      "order": 5,
       "start": "19:00",
       "end": "21:30",
       "name": "Le Grand Pan 파리 15박 고별 만찬",
@@ -168,47 +144,38 @@
   "legs": [
     {
       "from": "morning-routine",
-      "to": "musee-guimet",
-      "mode": "metro",
-      "duration": "메트로 9호선 약 20분",
-      "distance": "3.5km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "musee-guimet",
       "to": "iena-lunch",
-      "mode": "walk",
-      "duration": "3분",
-      "distance": "0.2km",
-      "line": null,
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "현대미술관과 고별 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "iena-lunch",
       "to": "musee-art-moderne",
       "mode": "walk",
-      "duration": "4분",
-      "distance": "0.3km",
-      "line": null,
+      "duration": "25분",
+      "distance": null,
+      "line": "현대미술관과 고별 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "musee-art-moderne",
       "to": "trocadero-sunset",
       "mode": "walk",
-      "duration": "8분",
-      "distance": "0.6km",
-      "line": null,
+      "duration": "25분",
+      "distance": null,
+      "line": "현대미술관과 고별 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "trocadero-sunset",
       "to": "farewell-dinner",
       "mode": "metro",
-      "duration": "메트로 6호선 약 15분",
-      "distance": "2.5km",
-      "line": null,
+      "duration": "25분",
+      "distance": null,
+      "line": "현대미술관과 고별 동선",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -226,7 +193,7 @@
     "점등 조망 자리 부근에서 송별 저녁",
     "21:30 이전 귀환 · 과음 금지"
   ],
-  "backup": "Hanok, par Misso(기메 박물관 내부, 도보 0분 — 옛 Le Salon des Porcelaines 자리가 한식당으로 바뀌었다. 국물 국수 기반이라 저녁 만찬 대비 가장 가볍다) 또는 Monsieur Bleu(팔레 드 도쿄, 전채 2개+카페 구르망 공유로 1인 €25.50)\n\n우천 시 트로카데로 야외 산책을 단축하고 샤이오 궁 인근 카페에서 에펠탑 뷰 감상",
+  "backup": "Hanok, par Misso(이에나 권역 한식당 — 국물 국수 기반이라 저녁 만찬 대비 가장 가볍다) 또는 Monsieur Bleu(팔레 드 도쿄, 전채 2개+카페 구르망 공유로 1인 €25.50)\n\n우천 시 트로카데로 야외 산책을 단축하고 샤이오 궁 인근 카페에서 에펠탑 뷰 감상",
   "map": {
     "zoom": 13,
     "center": [
@@ -236,7 +203,6 @@
     "routeCache": null
   },
   "needsReview": [
-    "Musée Guimet 10:00 슬롯 예매 (화요일 휴관이므로 목요일 10/8 방문)",
     "고별 저녁 식당 예약 확정"
   ],
   "sourceRefs": [

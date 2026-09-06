@@ -92,7 +92,7 @@ p2_freeze_data = [
     ["P2-05", "Day 14 (Cassis / Calanques)", "FEAS-DUR-14 Resolved (90m bouillabaisse cap)", "Boat cruise timed after lunch; zero delay", "ACCEPTED_WITH_MITIGATION"],
     ["P2-06", "Day 21 (Uzès & Pont du Gard)", "Uzès market crowd & kayak timing buffer", "Pont du Gard walk pre-scheduled", "ACCEPTED_WITH_MITIGATION"],
     ["P2-07", "Day 26 (Annecy 당일치기)", "TER 16:45 return train protection buffer", "Drop boat rental if lunch delays > 20m", "ACCEPTED_WITH_MITIGATION"],
-    ["P2-08", "Day 34 (Versailles 전일투어)", "RER C transit & 20:00 Le Grand Pan dinner", "Return to Paris 15e by 18:00 for rest", "ACCEPTED_WITH_MITIGATION"],
+    ["P2-08", "Day 32 (Versailles 전일투어)", "RER C transit & 20:00 Le Grand Pan dinner", "Return to Paris 15e by 18:30", "ACCEPTED_WITH_MITIGATION"],
     ["P2-09", "Day 37 (개선문상 경마대회)", "Longchamp crowd dispersal & home recovery", "Home cooking rest dinner in 15e apartment", "ACCEPTED_WITH_MITIGATION"]
 ]
 with open("EX14_ACTIVE_P2_FREEZE.csv", "w", newline="", encoding="utf-8") as f:
@@ -115,8 +115,8 @@ anchor_data = [
     ["Day 23", "TGV 6814 to Lyon", "10:24", "High-Speed Rail", "PASS"],
     ["Day 24", "Daniel et Denise Bouchon Dinner", "19:45", "Dining", "PASS"],
     ["Day 27", "TGV 6618 to Paris", "13:04", "High-Speed Rail", "PASS"],
-    ["Day 32", "Musée d'Orsay Timed Entry", "09:30", "Attraction", "PASS"],
-    ["Day 34", "Versailles Palace Timed Entry", "09:00", "Attraction", "PASS"],
+    ["Day 32", "Versailles Palace Timed Entry", "10:00", "Attraction", "PASS"],
+    ["Day 34", "Musée d'Orsay Timed Entry", "10:30", "Attraction", "CONFIRMED"],
     ["Day 35", "Musée du Louvre Timed Entry", "09:00", "Attraction", "PASS"],
     ["Day 37", "Qatar Prix de l'Arc de Triomphe", "12:00", "Major Event", "PASS"],
     ["Day 40", "Fête des Vendanges de Montmartre", "14:00", "Major Event", "PASS"],
@@ -131,7 +131,7 @@ with open("EX14_HARD_ANCHOR_AUDIT.csv", "w", newline="", encoding="utf-8") as f:
 # 8. Event & Attraction Audit (EX14_EVENT_ATTRACTION_FINAL_AUDIT.csv)
 event_data = [
     ["Paris Fashion Week (Day 31~33)", "Montaigne / Grand Palais Area", "Crowd dispersal strategy: early lunch at 11:30", "PASS"],
-    ["Qatar Prix de l'Arc de Triomphe (Day 37)", "ParisLongchamp Racecourse", "Grandstand admission & metro route locked", "PASS"],
+    ["Qatar Prix de l'Arc de Triomphe (Day 37)", "ParisLongchamp Racecourse", "General Entry booked & metro route locked", "PASS"],
     ["Fête des Vendanges de Montmartre (Day 40)", "Montmartre Vignes & Sacré-Cœur", "Montorgueil lunch prior to festival crowd", "PASS"],
     ["Cézanne Special Exhibition (Day 28)", "Grand Palais", "Timed entry reservation verified", "PASS"],
     ["Warhol Exhibition (Day 29)", "Musée du Luxembourg", "Timed entry reservation verified", "PASS"]
@@ -160,7 +160,7 @@ weather_data = [
     ["Cassis Calanques Boat Cruise (Day 14)", "Rough Sea / Mistral", "Switch to Cap Canaille scenic cliff drive & town walk", "PASS"],
     ["Pont du Gard Kayak / Walk (Day 21)", "Heavy Rain", "Switch to indoor Museum of Romanity in Nîmes", "PASS"],
     ["Annecy Lake Boat Rental (Day 26)", "Rain / Fog", "Switch to Palais de l'Île museum & Old Town covered arcades", "PASS"],
-    ["Versailles Palace Gardens (Day 34)", "Rain", "Focus on State Apartments & Petit Trianon interior", "PASS"]
+    ["Versailles Palace Gardens (Day 32)", "Rain", "Focus on State Apartments & Petit Trianon interior", "PASS"]
 ]
 with open("EX14_WEATHER_FAILURE_READINESS.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.writer(f)

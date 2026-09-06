@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "verifiedAt": "2026-08-25",
+  "verifiedAt": "2026-09-06",
   "note": "구글맵 이름 검색어. 좌표가 아니라 이름으로 여는 것이 정확한 대상만 싣는다. 여기 없으면 좌표·주소로 폴백한다.",
   "places": {
     "abbaye-de-senanque": {
@@ -1825,46 +1825,6 @@
       "evidence": "Taxi/Metro transfer from Paris Gare de Lyon to 78 Rue de Lourmel",
       "verifiedAt": "2026-08-27"
     },
-    "day-34:versailles-transfer": {
-      "title": "78 Rue de Lourmel ➔ Gare de Javel (RER C)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Gare de Javel, 75015 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to Javel RER C station",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-37:longchamp-transfer": {
-      "title": "78 Rue de Lourmel ➔ Porte d'Auteuil (Navette 셔틀)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Porte d'Auteuil, 75016 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 10 to Porte d'Auteuil for France Galop free shuttle",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-37:paris-return": {
-      "title": "Porte d'Auteuil ➔ Breizh Café 저녁 (15구)",
-      "origin": "Porte d'Auteuil, 75016 Paris",
-      "destination": "Breizh Café, 1 Place Étienne Pernet, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 10 to Charles Michels / Félix Faure for galette dinner",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:marais-walk-carnavalet": {
-      "title": "마레 지구 골목 산책 ➔ 카르나발레 이동",
-      "origin": "Musée Picasso Paris",
-      "destination": "Musée Carnavalet",
-      "travelMode": "walking",
-      "evidence": "Walking route Picasso museum to Carnavalet museum",
-      "verifiedAt": "2026-08-22"
-    },
-    "day-41:trocadero-sunset": {
-      "title": "MAM ➔ Place du Trocadéro (에펠탑 고별 일몰)",
-      "origin": "Musée d'Art Moderne de Paris, 11 Avenue du Président Wilson, 75116 Paris",
-      "destination": "Place du Trocadéro, 75116 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk along Avenue du President Wilson to Trocadero esplanade",
-      "verifiedAt": "2026-08-28"
-    },
     "day-42:cdg-transfer": {
       "title": "78 Rue de Lourmel ➔ CDG 공항 터미널 1 (택시 정액제)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
@@ -1993,326 +1953,6 @@
       "evidence": "Metro 8 to classic brasserie dinner",
       "verifiedAt": "2026-08-27"
     },
-    "day-29:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Marché Lecourbe & Pichard",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Marché Lecourbe, Rue Lecourbe, 75015 Paris",
-      "travelMode": "walking",
-      "evidence": "Saturday market & bakery walk in 15th arr.",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-29:luxembourg-warhol": {
-      "title": "78 Rue de Lourmel ➔ Musée du Luxembourg (워홀 특별전)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée du Luxembourg, 19 Rue de Vaugirard, 75006 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 10 to Luxembourg Museum",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-29:jardin-luxembourg": {
-      "title": "Musée du Luxembourg ➔ Fontaine Médicis (뤽상부르 정원)",
-      "origin": "Musée du Luxembourg, 19 Rue de Vaugirard, 75006 Paris",
-      "destination": "Fontaine Médicis, Jardin du Luxembourg, 75006 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk in Luxembourg Gardens to historic Medici Fountain",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-29:saint-germain": {
-      "title": "Jardin du Luxembourg ➔ Saint-Germain-des-Prés 성당",
-      "origin": "Fontaine Médicis, Jardin du Luxembourg, 75006 Paris",
-      "destination": "Église de Saint-Germain-des-Prés, 3 Place Saint-Germain des Prés, 75006 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk from park through Saint-Sulpice to Saint-Germain boulevard",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-29:notre-dame-compact": {
-      "title": "Saint-Germain-des-Prés ➔ Cathédrale Notre-Dame de Paris",
-      "origin": "Église de Saint-Germain-des-Prés, 3 Place Saint-Germain des Prés, 75006 Paris",
-      "destination": "Cathédrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk across Seine to Île de la Cité for Notre-Dame facade",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-29:bouillon-racine-dinner": {
-      "title": "Notre-Dame ➔ Bouillon Racine 저녁",
-      "origin": "Cathédrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris",
-      "destination": "Bouillon Racine, 3 Rue Racine, 75006 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk from Île de la Cité along Boulevard Saint-Michel to Bouillon Racine",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-29:paris-return": {
-      "title": "Bouillon Racine ➔ 78 Rue de Lourmel 복귀",
-      "origin": "Bouillon Racine, 3 Rue Racine, 75006 Paris",
-      "destination": "78 Rue de Lourmel, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 10 ➔ Metro 8 to Lourmel",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-30:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Marché Convention & Pichard",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Marché Convention, Rue de Convention, 75015 Paris",
-      "travelMode": "walking",
-      "evidence": "Sunday morning market and Pichard bakery procurement",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-30:petit-palais": {
-      "title": "78 Rue de Lourmel ➔ Petit Palais (시립미술관)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 + 1 to Champs-Élysées - Clemenceau and Petit Palais",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-30:tuileries-vendome": {
-      "title": "Petit Palais ➔ Jardin des Tuileries ➔ Place Vendôme",
-      "origin": "Petit Palais, Avenue Winston Churchill, 75008 Paris",
-      "destination": "Place Vendôme, 75001 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk via Place de la Concorde and Tuileries gardens to Place Vendôme",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-30:palais-royal": {
-      "title": "Place Vendôme ➔ Palais-Royal (뷔랑 기둥)",
-      "origin": "Place Vendôme, 75001 Paris",
-      "destination": "Domaine National du Palais-Royal, 8 Rue de Montpensier, 75001 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk along Rue Saint-Honoré to Palais-Royal courtyard and columns",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-30:opera-garnier-district": {
-      "title": "Palais-Royal ➔ Palais Garnier (오페라 외관)",
-      "origin": "Domaine National du Palais-Royal, 8 Rue de Montpensier, 75001 Paris",
-      "destination": "Palais Garnier, Place de l'Opéra, 75009 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk along Avenue de l'Opéra to historic opera facade",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-30:paris-return": {
-      "title": "Opéra ➔ Bouillon Chartier Montparnasse 저녁",
-      "origin": "Palais Garnier, Place de l'Opéra, 75009 Paris",
-      "destination": "Bouillon Chartier Montparnasse, 59 Boulevard du Montparnasse, 75006 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8/12 to Montparnasse-Bienvenüe for traditional dinner",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-31:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Saint-Georges (모로 미술관 출발)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Saint-Georges, 75009 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 + 12 to 9th arr. Nouvelle Athènes",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-31:gustave-moreau": {
-      "title": "Saint-Georges ➔ Musée Gustave Moreau",
-      "origin": "Saint-Georges, 75009 Paris",
-      "destination": "Musée Gustave Moreau, 14 Rue Catherine de La Rochefoucauld, 75009 Paris",
-      "travelMode": "walking",
-      "evidence": "Short walk to Gustave Moreau atelier mansion",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-31:opera-lunch": {
-      "title": "Musée Gustave Moreau ➔ Au Petit Riche 점심",
-      "origin": "Musée Gustave Moreau, 14 Rue Catherine de La Rochefoucauld, 75009 Paris",
-      "destination": "Au Petit Riche, 25 Rue Le Peletier, 75009 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk from Moreau museum to historic Belle Époque bistro",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-31:fashion-week-marais": {
-      "title": "Au Petit Riche ➔ Le Marais (패션위크 개막 분위기)",
-      "origin": "Au Petit Riche, 25 Rue Le Peletier, 75009 Paris",
-      "destination": "Rue Vieille-du-Temple, 75003 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 to Marais district",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-31:paris-return": {
-      "title": "Le Marais ➔ Guylas 저녁 (15구)",
-      "origin": "Rue Vieille-du-Temple, 75003 Paris",
-      "destination": "Guylas, 14 Rue de Lourmel, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 to Persian restaurant near lodging",
-      "verifiedAt": "2026-08-27"
-    },
-    "day-32:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Musée d'Orsay (Entrée 1 - Quai)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 to Musée d'Orsay entrance 1 - Quai",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-32:musee-d-orsay": {
-      "title": "Solférino ➔ Musée d'Orsay (Entrée 1 - Quai)",
-      "origin": "Solférino, 75007 Paris",
-      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to Musée d'Orsay reserved entrance 1 - Quai on riverside",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-32:rue-du-bac-lunch": {
-      "title": "Musée d'Orsay ➔ Café Varenne 점심",
-      "origin": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
-      "destination": "Café Varenne, 36 Rue de Varenne, 75007 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk along Rue du Bac to Café Varenne",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-32:musee-rodin": {
-      "title": "Café Varenne ➔ Musée Rodin (조각 정원)",
-      "origin": "Café Varenne, 36 Rue de Varenne, 75007 Paris",
-      "destination": "Musée Rodin, 77 Rue de Varenne, 75007 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk along Rue de Varenne to Musée Rodin entrance",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-32:invalides-exterior": {
-      "title": "Musée Rodin ➔ Les Invalides (황금 돔 외관)",
-      "origin": "Musée Rodin, 77 Rue de Varenne, 75007 Paris",
-      "destination": "Hôtel des Invalides, Place des Invalides, 75007 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to Invalides dome and esplanade",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-32:paris-return": {
-      "title": "Les Invalides ➔ Café du Commerce 저녁 (15구)",
-      "origin": "Hôtel des Invalides, Place des Invalides, 75007 Paris",
-      "destination": "Le Café du Commerce, 51 Rue du Commerce, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 to brasserie dinner",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-33:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Musée de l'Orangerie 출발",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 to Concorde and walk to Orangerie",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-33:orangerie": {
-      "title": "Concorde ➔ Musée de l'Orangerie (수련)",
-      "origin": "Concorde, 75001 Paris",
-      "destination": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to Orangerie entrance on the Seine side of Tuileries",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-33:champs-elysees-lunch": {
-      "title": "Musée de l'Orangerie ➔ Chez Savy 12:15 점심",
-      "origin": "Musée de l'Orangerie, Jardin des Tuileries, 75001 Paris",
-      "destination": "Chez Savy, 23 Rue Bayard, 75008 Paris",
-      "travelMode": "walking",
-      "evidence": "15-18 minute walk across Place de la Concorde to Chez Savy",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-33:avenue-montaigne": {
-      "title": "Chez Savy ➔ Avenue Montaigne",
-      "origin": "Chez Savy, 23 Rue Bayard, 75008 Paris",
-      "destination": "Avenue Montaigne, 75008 Paris",
-      "travelMode": "walking",
-      "evidence": "Begin the public Fashion Week street route on Avenue Montaigne",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-33:grand-palais-fashion-week": {
-      "title": "Avenue Montaigne ➔ Grand Palais 공개 동선",
-      "origin": "Avenue Montaigne, 75008 Paris",
-      "destination": "Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to publicly accessible Fashion Week surroundings at Grand Palais",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-33:palais-de-tokyo": {
-      "title": "Grand Palais ➔ Avenue du Président Wilson ➔ Palais de Tokyo",
-      "origin": "Grand Palais, 3 Avenue du Général Eisenhower, 75008 Paris",
-      "destination": "Palais de Tokyo, 13 Avenue du Président Wilson, 75116 Paris",
-      "travelMode": "walking",
-      "evidence": "Continue the public route to Palais de Tokyo and Alma/Seine",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-33:paris-return": {
-      "title": "Palais de Tokyo ➔ Stéphane Martin 저녁 (15구)",
-      "origin": "Palais de Tokyo, 13 Avenue du Président Wilson, 75116 Paris",
-      "destination": "Stéphane Martin, 67 Rue des Entrepreneurs, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 9 + 8 to 15th arr. bistro",
-      "verifiedAt": "2026-09-06"
-    },
-    "day-34:versailles-palace": {
-      "title": "Gare de Versailles Château Rive Gauche ➔ Château de Versailles (본관)",
-      "origin": "Gare de Versailles Château Rive Gauche, 78000 Versailles",
-      "destination": "Château de Versailles, Place d'Armes, 78000 Versailles",
-      "travelMode": "walking",
-      "evidence": "Walk from train station to Palace main entrance",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-34:versailles-lunch": {
-      "title": "Château de Versailles ➔ La Flottille 점심 (대운하)",
-      "origin": "Château de Versailles, Place d'Armes, 78000 Versailles",
-      "destination": "La Flottille, Parc du Château de Versailles, 78000 Versailles",
-      "travelMode": "walking",
-      "evidence": "Walk through central garden axis to Grand Canal head",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-34:versailles-gardens": {
-      "title": "La Flottille ➔ 베르사유 대정원 & 분수",
-      "origin": "La Flottille, Parc du Château de Versailles, 78000 Versailles",
-      "destination": "Bassin d'Apollon, Parc du Château de Versailles, 78000 Versailles",
-      "travelMode": "walking",
-      "evidence": "Garden stroll around Apollo and Latona fountains",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-34:trianon-hamlet": {
-      "title": "베르사유 대정원 ➔ Grand Trianon & 왕비의 촌락",
-      "origin": "Bassin d'Apollon, Parc du Château de Versailles, 78000 Versailles",
-      "destination": "Grand Trianon, Porte Sainte-Antoine, 78000 Versailles",
-      "travelMode": "walking",
-      "evidence": "Walk or mini-train to Trianon palaces",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-34:paris-return": {
-      "title": "Gare de Versailles ➔ Le Grand Pan 저녁 (15구)",
-      "origin": "Gare de Versailles Château Rive Gauche, 78000 Versailles",
-      "destination": "Le Grand Pan, 20 Rue Rosenwald, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "RER C to Javel/Convention for bistro dinner",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-35:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Boulangerie Pichard",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Boulangerie Pichard, 68 Rue Cambronne, 75015 Paris",
-      "travelMode": "walking",
-      "evidence": "Morning routine sandwich procurement in 15th arr.",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-35:musee-du-louvre": {
-      "title": "78 Rue de Lourmel ➔ Musée du Louvre (유리 피라미드)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée du Louvre, Rue de Rivoli, 75001 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 + 1 to Louvre pyramid entrance",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-35:cour-carree-seine": {
-      "title": "Musée du Louvre ➔ Cour Carrée & Pont des Arts 일몰",
-      "origin": "Musée du Louvre, Rue de Rivoli, 75001 Paris",
-      "destination": "Pont des Arts, 75006 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk through Louvre Cour Carrée courtyard to Pont des Arts bridge",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-35:paris-return": {
-      "title": "Pont des Arts ➔ Sawadee 저녁 (15구)",
-      "origin": "Pont des Arts, 75006 Paris",
-      "destination": "Sawadee, 53 Avenue Émile Zola, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro to Charles Michels for Thai dinner",
-      "verifiedAt": "2026-08-28"
-    },
     "day-36:morning-routine": {
       "title": "78 Rue de Lourmel ➔ Marché Lecourbe",
       "origin": "78 Rue de Lourmel, 75015 Paris",
@@ -2345,14 +1985,6 @@
       "evidence": "Metro 6/8 to Lourmel for Italian dinner",
       "verifiedAt": "2026-08-28"
     },
-    "day-37:prix-de-l-arc": {
-      "title": "Porte d'Auteuil ➔ Hippodrome de ParisLongchamp",
-      "origin": "Porte d'Auteuil, 75016 Paris",
-      "destination": "Hippodrome de ParisLongchamp, 2 Route des Tribunes, 75016 Paris",
-      "travelMode": "transit",
-      "evidence": "Free shuttle bus to ParisLongchamp racecourse main gates",
-      "verifiedAt": "2026-08-28"
-    },
     "day-38:morning-routine": {
       "title": "78 Rue de Lourmel (오전 휴식·충전)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
@@ -2383,54 +2015,6 @@
       "destination": "Le Volant Basque, 13 Rue Béatrix Dussane, 75015 Paris",
       "travelMode": "transit",
       "evidence": "Metro 2 + 8/6 to Dupleix / Charles Michels for Basque dinner",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Marché Convention",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Marché Convention, Rue de Convention, 75015 Paris",
-      "travelMode": "walking",
-      "evidence": "Tuesday market grocery shopping walk in 15th arr.",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:musee-d-orsay-cassatt": {
-      "title": "78 Rue de Lourmel ➔ Musée d'Orsay (Entrée 1 - Quai)",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8/12 to Musée d'Orsay Mary Cassatt special exhibition opening",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:musee-picasso": {
-      "title": "Musée d'Orsay ➔ Musée Picasso Paris (마레)",
-      "origin": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
-      "destination": "Musée National Picasso-Paris, 5 Rue de Thorigny, 75003 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 12 + 1/8 to Saint-Sébastien - Froissart for Picasso museum",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:musee-carnavalet": {
-      "title": "Musée Picasso Paris ➔ Musée Carnavalet & Place des Vosges",
-      "origin": "Musée National Picasso-Paris, 5 Rue de Thorigny, 75003 Paris",
-      "destination": "Place des Vosges, 75004 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk through Marais historic mansions to Place des Vosges",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:chez-janou-dinner": {
-      "title": "Place des Vosges ➔ Chez Janou 저녁",
-      "origin": "Place des Vosges, 75004 Paris",
-      "destination": "Chez Janou, 2 Rue Roger Verlomme, 75003 Paris",
-      "travelMode": "walking",
-      "evidence": "Short walk from Place des Vosges to Chez Janou bistro",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-39:paris-return": {
-      "title": "Chez Janou ➔ 78 Rue de Lourmel (15구)",
-      "origin": "Chez Janou, 2 Rue Roger Verlomme, 75003 Paris",
-      "destination": "78 Rue de Lourmel, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 8 (Chemin Vert ➔ Lourmel) direct train home",
       "verifiedAt": "2026-08-28"
     },
     "day-40:morning-routine": {
@@ -2481,46 +2065,6 @@
       "evidence": "Metro 12 + 8 (Abbesses/Concorde ➔ Lourmel) return home",
       "verifiedAt": "2026-08-28"
     },
-    "day-41:morning-routine": {
-      "title": "78 Rue de Lourmel ➔ Musée Guimet 출발",
-      "origin": "78 Rue de Lourmel, 75015 Paris",
-      "destination": "Musée Guimet, 6 Place d'Iéna, 75116 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 9 to Iéna station for Musée Guimet entrance",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-41:musee-guimet": {
-      "title": "Iéna ➔ Musée Guimet (정문)",
-      "origin": "Iéna, 75116 Paris",
-      "destination": "Musée Guimet, 6 Place d'Iéna, 75116 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to Musée Guimet main entrance on Place d'Iéna",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-41:iena-lunch": {
-      "title": "Musée Guimet ➔ Les Marches 점심",
-      "origin": "Musée Guimet, 6 Place d'Iéna, 75116 Paris",
-      "destination": "Les Marches, 5 Rue de la Manutention, 75116 Paris",
-      "travelMode": "walking",
-      "evidence": "Short walk to Les Marches bistro near Palais de Tokyo",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-41:musee-art-moderne": {
-      "title": "Les Marches ➔ Musée d'Art Moderne de Paris (MAM)",
-      "origin": "Les Marches, 5 Rue de la Manutention, 75116 Paris",
-      "destination": "Musée d'Art Moderne de Paris, 11 Avenue du Président Wilson, 75116 Paris",
-      "travelMode": "walking",
-      "evidence": "Walk to MAM Paris east wing entrance",
-      "verifiedAt": "2026-08-28"
-    },
-    "day-41:farewell-dinner": {
-      "title": "Place du Trocadéro ➔ Le Grand Pan 고별 만찬 (15구)",
-      "origin": "Place du Trocadéro, 75116 Paris",
-      "destination": "Le Grand Pan, 20 Rue Rosenwald, 75015 Paris",
-      "travelMode": "transit",
-      "evidence": "Metro 6 + 12 to Convention for farewell charcoal dinner",
-      "verifiedAt": "2026-08-28"
-    },
     "day-42:paris-packing-checkout": {
       "title": "78 Rue de Lourmel (체크아웃 11:00)",
       "origin": "78 Rue de Lourmel, 75015 Paris",
@@ -2568,6 +2112,462 @@
       "travelMode": "transit",
       "evidence": "Airport railroad express (AREX) or limousine bus to home",
       "verifiedAt": "2026-08-28"
+    },
+    "day-34:morning-routine": {
+      "title": "78 Rue de Lourmel ➔ Musée d'Orsay (Entrée 1 - Quai)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to Musée d'Orsay entrance 1 - Quai",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-34:musee-d-orsay": {
+      "title": "Solférino ➔ Musée d'Orsay (Entrée 1 - Quai)",
+      "origin": "Solférino, 75007 Paris",
+      "destination": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Musée d'Orsay reserved entrance 1 - Quai on riverside",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-34:rue-du-bac-lunch": {
+      "title": "Musée d'Orsay ➔ Café Varenne 점심",
+      "origin": "Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris",
+      "destination": "Café Varenne, 36 Rue de Varenne, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Rue du Bac to Café Varenne",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-34:musee-rodin": {
+      "title": "Café Varenne ➔ Musée Rodin (조각 정원)",
+      "origin": "Café Varenne, 36 Rue de Varenne, 75007 Paris",
+      "destination": "Musée Rodin, 77 Rue de Varenne, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk along Rue de Varenne to Musée Rodin entrance",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-34:invalides-exterior": {
+      "title": "Musée Rodin ➔ Les Invalides (황금 돔 외관)",
+      "origin": "Musée Rodin, 77 Rue de Varenne, 75007 Paris",
+      "destination": "Hôtel des Invalides, Place des Invalides, 75007 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Invalides dome and esplanade",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-34:paris-return": {
+      "title": "Les Invalides ➔ Café du Commerce 저녁 (15구)",
+      "origin": "Hôtel des Invalides, Place des Invalides, 75007 Paris",
+      "destination": "Le Café du Commerce, 51 Rue du Commerce, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "Metro 8 to brasserie dinner",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-32:versailles-transfer": {
+      "title": "78 Rue de Lourmel ➔ Gare de Javel (RER C)",
+      "origin": "78 Rue de Lourmel, 75015 Paris",
+      "destination": "Gare de Javel, 75015 Paris",
+      "travelMode": "walking",
+      "evidence": "Walk to Javel RER C station",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-32:versailles-palace": {
+      "title": "Gare de Versailles Château Rive Gauche ➔ Château de Versailles (본관)",
+      "origin": "Gare de Versailles Château Rive Gauche, 78000 Versailles",
+      "destination": "Château de Versailles, Place d'Armes, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Walk from train station to Palace main entrance",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-32:versailles-lunch": {
+      "title": "Château de Versailles ➔ La Flottille 점심 (대운하)",
+      "origin": "Château de Versailles, Place d'Armes, 78000 Versailles",
+      "destination": "La Flottille, Parc du Château de Versailles, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Walk through central garden axis to Grand Canal head",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-32:versailles-gardens": {
+      "title": "La Flottille ➔ 베르사유 대정원 & 분수",
+      "origin": "La Flottille, Parc du Château de Versailles, 78000 Versailles",
+      "destination": "Bassin d'Apollon, Parc du Château de Versailles, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Garden stroll around Apollo and Latona fountains",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-32:trianon-hamlet": {
+      "title": "베르사유 대정원 ➔ Grand Trianon & 왕비의 촌락",
+      "origin": "Bassin d'Apollon, Parc du Château de Versailles, 78000 Versailles",
+      "destination": "Grand Trianon, Porte Sainte-Antoine, 78000 Versailles",
+      "travelMode": "walking",
+      "evidence": "Walk or mini-train to Trianon palaces",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-32:paris-return": {
+      "title": "Gare de Versailles ➔ Le Grand Pan 저녁 (15구)",
+      "origin": "Gare de Versailles Château Rive Gauche, 78000 Versailles",
+      "destination": "Le Grand Pan, 20 Rue Rosenwald, 75015 Paris",
+      "travelMode": "transit",
+      "evidence": "RER C to Javel/Convention for bistro dinner",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-29:morning-routine": {
+      "title": "오전 생활 일정 · 숙소 휴식",
+      "origin": "오전 생활 일정 · 숙소 휴식",
+      "destination": "오전 생활 일정 · 숙소 휴식",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-29:sainte-chapelle": {
+      "title": "Sainte-Chapelle (생트샤펠) — PMP 최초 사용",
+      "origin": "Sainte-Chapelle, 10 Boulevard du Palais, Paris",
+      "destination": "Sainte-Chapelle, 10 Boulevard du Palais, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-29:conciergerie": {
+      "title": "Conciergerie (콩시에르주리)",
+      "origin": "Conciergerie, 2 Boulevard du Palais, Paris",
+      "destination": "Conciergerie, 2 Boulevard du Palais, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-29:cite-seine-walk": {
+      "title": "Île de la Cité · Seine 산책",
+      "origin": "Île de la Cité, Paris",
+      "destination": "Île de la Cité, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-29:bouillon-racine-dinner": {
+      "title": "Bouillon Racine 저녁",
+      "origin": "Bouillon Racine 저녁",
+      "destination": "Bouillon Racine 저녁",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-29:paris-return": {
+      "title": "15구 숙소 귀환",
+      "origin": "15구 숙소 귀환",
+      "destination": "15구 숙소 귀환",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:morning-routine": {
+      "title": "Marché Convention 일요 장보기 & Pichard 빵 조달",
+      "origin": "Marché Convention 일요 장보기 & Pichard 빵 조달",
+      "destination": "Marché Convention 일요 장보기 & Pichard 빵 조달",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:musee-picasso": {
+      "title": "Musée Picasso Paris",
+      "origin": "Musée Picasso Paris, 5 Rue de Thorigny, Paris",
+      "destination": "Musée Picasso Paris, 5 Rue de Thorigny, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:marais-lunch": {
+      "title": "Le Marais 점심",
+      "origin": "Le Marais, Paris",
+      "destination": "Le Marais, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:notre-dame": {
+      "title": "Notre-Dame de Paris",
+      "origin": "Cathédrale Notre-Dame de Paris",
+      "destination": "Cathédrale Notre-Dame de Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:tuileries-vendome": {
+      "title": "Jardin des Tuileries & Place Vendôme",
+      "origin": "Jardin des Tuileries & Place Vendôme",
+      "destination": "Jardin des Tuileries & Place Vendôme",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:palais-royal": {
+      "title": "Palais Royal",
+      "origin": "Palais Royal",
+      "destination": "Palais Royal",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:opera-garnier-district": {
+      "title": "Opéra Garnier 권역",
+      "origin": "Opéra Garnier 권역",
+      "destination": "Opéra Garnier 권역",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-30:paris-return": {
+      "title": "Bouillon Chartier Montparnasse 저녁",
+      "origin": "Bouillon Chartier Montparnasse 저녁",
+      "destination": "Bouillon Chartier Montparnasse 저녁",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-31:morning-routine": {
+      "title": "숙소 아침 & 모로 미술관 출발 준비",
+      "origin": "숙소 아침 & 모로 미술관 출발 준비",
+      "destination": "숙소 아침 & 모로 미술관 출발 준비",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-31:gustave-moreau": {
+      "title": "Musée Gustave Moreau (귀스타브 모로 미술관)",
+      "origin": "Musée Gustave Moreau (귀스타브 모로 미술관)",
+      "destination": "Musée Gustave Moreau (귀스타브 모로 미술관)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-31:opera-lunch": {
+      "title": "Au Petit Riche 9구 벨에포크 점심",
+      "origin": "Au Petit Riche 9구 벨에포크 점심",
+      "destination": "Au Petit Riche 9구 벨에포크 점심",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-31:fashion-week-marais": {
+      "title": "Paris Fashion Week 개막 분위기 & Le Marais",
+      "origin": "Paris Fashion Week 개막 분위기 & Le Marais",
+      "destination": "Paris Fashion Week 개막 분위기 & Le Marais",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-31:arc-de-triomphe-optional": {
+      "title": "Arc de Triomphe (개선문) — 선택",
+      "origin": "Arc de Triomphe, Place Charles de Gaulle, Paris",
+      "destination": "Arc de Triomphe, Place Charles de Gaulle, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-31:paris-return": {
+      "title": "Guylas 페르시아 저녁 (15구)",
+      "origin": "Guylas 페르시아 저녁 (15구)",
+      "destination": "Guylas 페르시아 저녁 (15구)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:morning-routine": {
+      "title": "Shortened Home Morning (아침·빠른 준비)",
+      "origin": "Shortened Home Morning (아침·빠른 준비)",
+      "destination": "Shortened Home Morning (아침·빠른 준비)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:orangerie": {
+      "title": "Musée de l'Orangerie (오랑주리 미술관)",
+      "origin": "Musée de l'Orangerie (오랑주리 미술관)",
+      "destination": "Musée de l'Orangerie (오랑주리 미술관)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:champs-elysees-lunch": {
+      "title": "Chez Savy 8구 아르데코 비스트로 점심",
+      "origin": "Chez Savy 8구 아르데코 비스트로 점심",
+      "destination": "Chez Savy 8구 아르데코 비스트로 점심",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:avenue-montaigne": {
+      "title": "Avenue Montaigne 패션 하우스 거리",
+      "origin": "Avenue Montaigne 패션 하우스 거리",
+      "destination": "Avenue Montaigne 패션 하우스 거리",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:grand-palais-fashion-week": {
+      "title": "Grand Palais 주변 Fashion Week 공개 동선",
+      "origin": "Grand Palais 주변 Fashion Week 공개 동선",
+      "destination": "Grand Palais 주변 Fashion Week 공개 동선",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:musee-guimet": {
+      "title": "Musée Guimet",
+      "origin": "Musée Guimet, 6 Place d'Iéna, Paris",
+      "destination": "Musée Guimet, 6 Place d'Iéna, Paris",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:palais-de-tokyo": {
+      "title": "Avenue du Président Wilson · Palais de Tokyo · Alma/Seine",
+      "origin": "Avenue du Président Wilson · Palais de Tokyo · Alma/Seine",
+      "destination": "Avenue du Président Wilson · Palais de Tokyo · Alma/Seine",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-33:paris-return": {
+      "title": "Stéphane Martin 15구 미식 비스트로 저녁",
+      "origin": "Stéphane Martin 15구 미식 비스트로 저녁",
+      "destination": "Stéphane Martin 15구 미식 비스트로 저녁",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-35:morning-routine": {
+      "title": "Boulangerie Pichard 아침 & Louvre 출발 준비",
+      "origin": "Boulangerie Pichard 아침 & Louvre 출발 준비",
+      "destination": "Boulangerie Pichard 아침 & Louvre 출발 준비",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-35:musee-du-louvre": {
+      "title": "Musée du Louvre (루브르 박물관 4시간 집중 관람)",
+      "origin": "Musée du Louvre (루브르 박물관 4시간 집중 관람)",
+      "destination": "Musée du Louvre (루브르 박물관 4시간 집중 관람)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-35:cour-carree-seine": {
+      "title": "Cour Carrée & 센 강변 일몰 산책",
+      "origin": "Cour Carrée & 센 강변 일몰 산책",
+      "destination": "Cour Carrée & 센 강변 일몰 산책",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-35:paris-return": {
+      "title": "Sawadee 태국 저녁 (15구)",
+      "origin": "Sawadee 태국 저녁 (15구)",
+      "destination": "Sawadee 태국 저녁 (15구)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-37:longchamp-transfer": {
+      "title": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
+      "origin": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
+      "destination": "15구 숙소 출발 ➔ 메트로/셔틀 ➔ ParisLongchamp",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-37:prix-de-l-arc": {
+      "title": "Qatar Prix de l'Arc de Triomphe (개선문상 본선)",
+      "origin": "Qatar Prix de l'Arc de Triomphe (개선문상 본선)",
+      "destination": "Qatar Prix de l'Arc de Triomphe (개선문상 본선)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-37:paris-return": {
+      "title": "Breizh Café 갈레트 저녁 (15구)",
+      "origin": "Breizh Café 갈레트 저녁 (15구)",
+      "destination": "Breizh Café 갈레트 저녁 (15구)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-39:morning-routine": {
+      "title": "Standard Home Morning — Marché Convention 화요 장보기",
+      "origin": "Standard Home Morning — Marché Convention 화요 장보기",
+      "destination": "Standard Home Morning — Marché Convention 화요 장보기",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-39:musee-d-orsay-cassatt": {
+      "title": "Musée d'Orsay — 특별전 <Mary Cassatt> 개막일 2회차 집중 관람",
+      "origin": "Musée d'Orsay — 특별전 <Mary Cassatt> 개막일 2회차 집중 관람",
+      "destination": "Musée d'Orsay — 특별전 <Mary Cassatt> 개막일 2회차 집중 관람",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-39:musee-carnavalet": {
+      "title": "Musée Carnavalet & Place des Vosges (보주 광장)",
+      "origin": "Musée Carnavalet & Place des Vosges (보주 광장)",
+      "destination": "Musée Carnavalet & Place des Vosges (보주 광장)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-39:chez-janou-dinner": {
+      "title": "Chez Janou 저녁 (마레 프로방스)",
+      "origin": "Chez Janou 저녁 (마레 프로방스)",
+      "destination": "Chez Janou 저녁 (마레 프로방스)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-39:paris-return": {
+      "title": "15구 숙소 귀환",
+      "origin": "15구 숙소 귀환",
+      "destination": "15구 숙소 귀환",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-41:morning-routine": {
+      "title": "여유 있는 아침 & Iéna 출발",
+      "origin": "여유 있는 아침 & Iéna 출발",
+      "destination": "여유 있는 아침 & Iéna 출발",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-41:iena-lunch": {
+      "title": "Les Marches 16구 점심",
+      "origin": "Les Marches 16구 점심",
+      "destination": "Les Marches 16구 점심",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-41:musee-art-moderne": {
+      "title": "Musée d'Art Moderne de Paris (MAM)",
+      "origin": "Musée d'Art Moderne de Paris (MAM)",
+      "destination": "Musée d'Art Moderne de Paris (MAM)",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-41:trocadero-sunset": {
+      "title": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
+      "origin": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
+      "destination": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
+    },
+    "day-41:farewell-dinner": {
+      "title": "Le Grand Pan 파리 15박 고별 만찬",
+      "origin": "Le Grand Pan 파리 15박 고별 만찬",
+      "destination": "Le Grand Pan 파리 15박 고별 만찬",
+      "travelMode": "walking",
+      "evidence": "Canonical Day itinerary synchronized for PMP window",
+      "verifiedAt": "2026-09-06"
     }
   },
   "nonMapStops": [

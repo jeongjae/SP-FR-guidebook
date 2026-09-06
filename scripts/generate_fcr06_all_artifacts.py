@@ -73,7 +73,7 @@ p2_days = [
     ["Day 05 (Collioure / Cadaqués)", "FEAS-DUR-05 (Resolved)", "Collioure 점심 (12:15) + 농가 숙소식", "식사 75분 통제로 살바도르 달리 생가 동선 완벽 보호", "PASS"],
     ["Day 14 (Cassis / Calanques)", "FEAS-DUR-14 (Resolved)", "Chez Gilbert 점심 (12:30) + 숙소 휴식 저녁", "부야베스 90분 식사 후 깔랑끄 유람선 탑승 마진 확보", "PASS"],
     ["Day 26 (Annecy 당일치기)", "Active Operational P2", "Chez Mamie Lise 점심 (12:30) + 숙소권 저녁", "+30분 점심 지연 시 보트 대여 생략하여 16:45 TER 복귀 보호", "PASS"],
-    ["Day 34 (Versailles 전일투어)", "Active Operational P2", "La Flottille 대운하 런치 + Le Grand Pan 저녁 (20:00)", "베르사유 투어 후 15구 귀환 샤워 및 20:00 숯불 비스트로 안착", "PASS"],
+    ["Day 32 (Versailles 전일투어)", "Active Operational P2", "La Flottille 대운하 런치 + Le Grand Pan 저녁 (20:00)", "베르사유 투어 후 15구 귀환 및 20:00 숯불 비스트로 안착", "PASS"],
     ["Day 37 (개선문상 경마대회)", "Active Operational P2", "파리롱샹 경기장 런치 + 숙소 저녁", "경기 후 복잡한 외식 배제하고 15구 숙소식으로 피로 회복", "PASS"]
 ]
 with open("FCR06_HIGH_P2_DAY_FOOD_AUDIT.csv", "w", newline="", encoding="utf-8") as f:

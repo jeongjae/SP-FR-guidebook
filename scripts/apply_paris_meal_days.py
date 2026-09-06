@@ -65,14 +65,14 @@ LUNCH = {
              backup="Au Petit Riche 만석 시 Le Pantruche(3 rue Victor Massé, 3코스 €23, "
                     "12:30 오픈이라 실질 60분) 또는 Caillebotte(8 rue Hippolyte Lebas, 점심 €23). "
                     "둘 다 월요일 점심 영업이지만 12:30 오픈이라 13:30 퇴점을 미리 알린다"),
-    32: dict(sid="rue-du-bac-lunch", ref="cafe-varenne",
+    34: dict(sid="rue-du-bac-lunch", ref="cafe-varenne",
              name="Café Varenne 7구 점심",
              summary="오르세에서 도보 10분, 식후 rue de Varenne를 8분 직진하면 로댕 미술관. "
                      "07:30~23:00 논스톱이라 관람이 밀려도 따뜻한 점심을 놓치지 않는다",
              menu="Confit de canard 수제 감자튀김 · Œufs mayonnaise · Pâté en croûte maison",
              sts=[es("confirmed", "OPEN", "월–토 07:30–23:00 논스톱(출처 4건 일치) · 일요일 휴무. "
                                           "평균 체류 45분이라 75분 슬롯에 여유가 있다"),
-                  es("check", "CHECK", "통 영업시간과 별개로 13:00–14:15에 따뜻한 요리 주문이 "
+                  es("check", "CHECK", "통 영업시간과 별개로 13:00–14:00에 따뜻한 요리 주문이 "
                                        "되는지 전화(+33 1 45 48 62 72) 확인")],
              backup="La Laiterie Sainte Clotilde(64 rue de Bellechasse, 로댕 도보 5분, 고미요 "
                     "12/20 — 점심 마감이 14:00일 수 있어 빠듯하고 예약 필수) 또는 L'Affable"
@@ -91,7 +91,7 @@ LUNCH = {
                   es("check", "CHECK", "예산은 앙트레+메인 2코스에 물(carafe d'eau)로 1인 €33~42")],
              backup="Le Bar des Théâtres(44 rue Jean Goujon, 논스톱 영업이라 시간 리스크 최저, "
                     "TheFork 온라인 예약 가능)"),
-    34: dict(sid="versailles-lunch", ref="la-flottille",
+    32: dict(sid="versailles-lunch", ref="la-flottille",
              name="La Flottille 대운하 점심",
              summary="궁전 본관 출구에서 정원 중앙축(라토나 → 왕의 길 → 아폴로 분수)을 20~25분 "
                      "걸어 대운하 머리에 닿는다. 90분 슬롯이지만 실질 착석은 65분이라 코스가 "
@@ -101,7 +101,7 @@ LUNCH = {
                                      "TheFork로 12:45~13:00 슬롯 사전 예약"),
                   es("caution", "CAUTION", "미식 목적지가 아니라 위치로 가는 곳이다. 서비스 편차와 "
                                            "미지근한 음식 지적이 반복된다(TripAdvisor 3.3 / TheFork 8.5)"),
-                  es("check", "CHECK", "10/1은 Jardins Musicaux 운영일이라 정원이 유료다. "
+                  es("check", "CHECK", "9/29(화)는 Jardins Musicaux 운영일이라 정원이 유료다. "
                                        "Passport 티켓이 있어야 대운하까지 걸어 나갈 수 있다")],
              backup="La Petite Venise(도보 2~3분, 서비스 평가가 더 안정적이나 1인 평균 €46) 또는 "
                     "La Guinguette·테이크아웃 키오스크(예약 불필요, 30~40분에 끝나 남는 시간을 "

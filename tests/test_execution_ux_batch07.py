@@ -88,7 +88,7 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("Square Jean Perrin", rendered)
         self.assertIn("Café du Commerce", rendered)
 
-    def test_day29_luxembourg_and_bouillon_racine(self):
+    def test_day29_pmp_start_and_bouillon_racine(self):
         payload = load_day(29)
         stops = {stop["id"]: stop for stop in payload["stops"]}
 
@@ -97,27 +97,18 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("check", market_statuses)
         self.assertNotIn("confirmed", market_statuses)
 
-        # Musée du Luxembourg Warhol timed entry book
-        lux_statuses = {s["type"] for s in stops["luxembourg-warhol"]["executionStatuses"]}
-        self.assertIn("book", lux_statuses)
-        self.assertNotIn("confirmed", lux_statuses)
-
-        # Notre-Dame compact walk is optional
-        self.assertTrue(stops["notre-dame-compact"]["optional"])
-        nd_statuses = {s["type"] for s in stops["notre-dame-compact"]["executionStatuses"]}
-        self.assertIn("optional", nd_statuses)
+        self.assertIn("confirmed", {s["type"] for s in stops["sainte-chapelle"]["executionStatuses"]})
+        self.assertIn("PMP FIRST USE", {s["label"] for s in stops["sainte-chapelle"]["executionStatuses"]})
+        self.assertIn("confirmed", {s["type"] for s in stops["conciergerie"]["executionStatuses"]})
+        self.assertNotIn("notre-dame-compact", stops)
 
         # Bouillon Racine booking required
-        dinner_statuses = {s["type"] for s in stops["bouillon-racine-dinner"]["executionStatuses"]}
-        self.assertIn("book", dinner_statuses)
-        self.assertNotIn("confirmed", dinner_statuses)
-
         rendered = self.rendered(29)
-        self.assertIn("Musée du Luxembourg", rendered)
-        self.assertIn("Saint-Germain-des-Prés", rendered)
+        self.assertIn("Sainte-Chapelle", rendered)
+        self.assertIn("Conciergerie", rendered)
         self.assertIn("Bouillon Racine", rendered)
 
-    def test_day30_petit_palais_and_marche_convention(self):
+    def test_day30_picasso_notre_dame_and_marche_convention(self):
         payload = load_day(30)
         stops = {stop["id"]: stop for stop in payload["stops"]}
 
@@ -126,16 +117,10 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("check", market_statuses)
         self.assertNotIn("confirmed", market_statuses)
 
-        # Petit Palais permanent collection is free and does not require a booking.
-        petit_statuses = {s["type"] for s in stops["petit-palais"]["executionStatuses"]}
-        self.assertIn("check", petit_statuses)
-        self.assertNotIn("book", petit_statuses)
+        self.assertIn("confirmed", {s["type"] for s in stops["musee-picasso"]["executionStatuses"]})
+        self.assertIn("check", {s["type"] for s in stops["notre-dame"]["executionStatuses"]})
+        self.assertNotIn("petit-palais", stops)
         self.assertNotIn("orangerie", stops)
-
-        # Opéra Garnier walk is optional
-        self.assertTrue(stops["opera-garnier-district"]["optional"])
-        opera_statuses = {s["type"] for s in stops["opera-garnier-district"]["executionStatuses"]}
-        self.assertIn("optional", opera_statuses)
 
         # Bouillon Chartier Montparnasse no-reservation check
         dinner_statuses = {s["type"] for s in stops["paris-return"]["executionStatuses"]}
@@ -143,7 +128,8 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertNotIn("confirmed", dinner_statuses)
 
         rendered = self.rendered(30)
-        self.assertIn("Petit Palais", rendered)
+        self.assertIn("Picasso", rendered)
+        self.assertIn("Notre-Dame", rendered)
         self.assertNotIn("Orangerie", rendered)
         self.assertIn("Tuileries", rendered)
         self.assertIn("Palais Royal", rendered)
@@ -183,6 +169,7 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
         self.assertIn("Gustave Moreau", rendered)
         self.assertIn("Au Petit Riche", rendered)
         self.assertIn("Fashion Week", rendered)
+        self.assertIn("Arc de Triomphe", rendered)
         self.assertIn("Guylas", rendered)
 
     def test_confirmed_never_coexists_with_booking_action(self):
@@ -205,7 +192,7 @@ class ExecutionUxBatch07Tests(unittest.TestCase):
     def test_day28_to_31_semantics_are_protected(self):
         payload = [semantic_projection(load_day(number)) for number in range(28, 32)]
         digest = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-        self.assertEqual("79bac912383a596ce5b01f2990302d9c4a69c4d0abb50c92d0504ae5980b185a", digest)
+        self.assertEqual("7f6b170d2bc999dc570f2e08d351a548cabb9c379f703bfe4670a696a6db8daf", digest)
 
 
 if __name__ == "__main__":

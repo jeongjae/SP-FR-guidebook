@@ -1552,53 +1552,10 @@
     {
       "date": "2026-09-26",
       "city": "Paris",
-      "title": "Saint-Germain과 Luxembourg Garden",
+      "title": "파리 뮤지엄 패스 시작 — 생트샤펠·콩시에르주리",
       "center": [
-        48.85,
-        2.335
-      ],
-      "zoom": 15,
-      "defaultMode": "walking",
-      "stops": [
-        {
-          "placeId": "paris-stay-candidate",
-          "order": 0,
-          "plannedTime": "10:40 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
-        },
-        {
-          "placeId": "saint-germain-des-pres",
-          "order": 1,
-          "plannedTime": "11:00–12:30",
-          "note": "서점·카페 — 생활 리듬 파악."
-        },
-        {
-          "placeId": "jardin-du-luxembourg",
-          "order": 2,
-          "plannedTime": "14:00–16:00",
-          "note": "산책·벤치 휴식 포함."
-        }
-      ],
-      "segments": [
-        {
-          "from": "paris-stay-candidate",
-          "to": "saint-germain-des-pres",
-          "mode": "walking"
-        },
-        {
-          "from": "saint-germain-des-pres",
-          "to": "jardin-du-luxembourg",
-          "mode": "walking"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-27",
-      "city": "Paris",
-      "title": "Belle Époque & Classical Paris — Petit Palais · Tuileries · Palais Royal · Opéra",
-      "center": [
-        48.866,
-        2.331
+        48.853,
+        2.343
       ],
       "zoom": 15,
       "defaultMode": "walking",
@@ -1606,84 +1563,389 @@
         {
           "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "12:30 출발",
-          "note": "오전 Marché Convention·Pichard와 숙소 점심·휴식 후 출발. 숙소 위치는 개인정보 보호를 위해 권역 좌표만 표시."
+          "plannedTime": "08:00–13:30",
+          "note": "15구 토요 생활권 장보기와 숙소 점심·휴식 후 PMP 첫 입장에 맞춰 출발"
         },
         {
-          "placeId": "petit-palais",
+          "placeId": "sainte-chapelle",
           "order": 1,
-          "plannedTime": "13:00–14:30",
-          "note": "무료 상설전과 벨 에포크 건축·안뜰 정원을 90분 관람."
-        },
-        {
-          "placeId": "jardin-des-tuileries",
-          "order": 2,
           "plannedTime": "15:00–16:00",
-          "note": "Tuileries 정원축과 Place Vendôme — Louvre 내부 입장 없음."
+          "note": "15세기 스테인드글라스를 집중 관람하며 6일/144시간 Paris Museum Pass를 처음 사용한다."
         },
         {
-          "placeId": "palais-royal",
+          "placeId": "conciergerie",
+          "order": 2,
+          "plannedTime": "16:10–17:10",
+          "note": "생트샤펠에서 이어지는 시테 섬의 중세 왕궁과 프랑스혁명 수감 공간 관람."
+        },
+        {
+          "placeId": "ile-de-la-cite",
           "order": 3,
-          "plannedTime": "16:10–17:15",
-          "note": "정원·회랑 · 스케치 20–30분."
+          "plannedTime": "17:15–18:30",
+          "note": "시테 섬과 센 강변을 천천히 걸으며 오후 박물관 일정을 마무리한다."
         },
         {
-          "placeId": "palais-garnier",
+          "placeId": "bouillon-racine",
           "order": 4,
-          "plannedTime": "17:30–18:30",
-          "note": "외관 중심 · 당일 입장 가능 시에만 짧은 방문."
+          "plannedTime": "19:00–20:30",
+          "note": "시테 섬에서 생미셸 방향으로 이동해 기존 저녁 일정을 유지한다."
+        },
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 5,
+          "plannedTime": "20:45–21:15",
+          "note": "Bouillon Racine 저녁 뒤 메트로로 숙소 생활권에 복귀한다."
         }
       ],
       "segments": [
         {
           "from": "paris-15e-stay-area",
-          "to": "petit-palais",
-          "mode": "transit"
+          "to": "sainte-chapelle",
+          "mode": "walking",
+          "manual": true
         },
         {
-          "from": "petit-palais",
+          "from": "sainte-chapelle",
+          "to": "conciergerie",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "conciergerie",
+          "to": "ile-de-la-cite",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "ile-de-la-cite",
+          "to": "bouillon-racine",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "bouillon-racine",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "city": "Paris",
+      "title": "피카소·노트르담 & 고전 파리 도시공간",
+      "center": [
+        48.862,
+        2.345
+      ],
+      "zoom": 13,
+      "defaultMode": "walking",
+      "stops": [
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 0,
+          "plannedTime": "08:00–09:00",
+          "note": "15구 콩방시옹 일요 시장에서 로티세리 치킨, 콩테 치즈, 무화과 조달. 같은 오전에 Pichard 에서 다음 날 아침 몫까지 산다 — 월·화는 이 빵집이 닫는다"
+        },
+        {
+          "placeId": "musee-picasso-paris",
+          "order": 1,
+          "plannedTime": "10:30–12:15",
+          "note": "Hôtel Salé의 피카소 상설 컬렉션을 PMP 유효기간 안에 집중 관람한다."
+        },
+        {
+          "placeId": "le-marais",
+          "order": 2,
+          "plannedTime": "12:15–13:15",
+          "note": "피카소 관람 뒤 마레에서 가볍게 점심을 먹고 시테 섬으로 이동한다."
+        },
+        {
+          "placeId": "notre-dame-de-paris",
+          "order": 3,
+          "plannedTime": "13:30–14:15",
+          "note": "복원된 대성당과 파르비스를 둘러본다. 무료 입장이며 PMP는 필요하지 않다."
+        },
+        {
+          "placeId": "jardin-des-tuileries",
+          "order": 4,
+          "plannedTime": "15:00–16:00",
+          "note": "튀일르리 정원과 방돔 광장을 잇는 고전 파리 산책."
+        },
+        {
+          "placeId": "palais-royal",
+          "order": 5,
+          "plannedTime": "16:10–17:15",
+          "note": "팔레 루아얄 안뜰과 정원을 산책한다."
+        },
+        {
+          "placeId": "palais-garnier",
+          "order": 6,
+          "plannedTime": "17:30–18:30",
+          "note": "오페라 가르니에 외관과 인근 벨 에포크 도시공간을 걷는다."
+        },
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 7,
+          "plannedTime": "19:00–21:00",
+          "note": "1903년 역사기념물 등록 아르누보 식당에서 종이 식탁보에 연필로 주문하며 즐기는 전설적인 가성비 부이용 만찬"
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-15e-stay-area",
+          "to": "musee-picasso-paris",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "musee-picasso-paris",
+          "to": "le-marais",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "le-marais",
+          "to": "notre-dame-de-paris",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "notre-dame-de-paris",
           "to": "jardin-des-tuileries",
-          "mode": "walking"
+          "mode": "walking",
+          "manual": true
         },
         {
           "from": "jardin-des-tuileries",
           "to": "palais-royal",
-          "mode": "walking"
+          "mode": "walking",
+          "manual": true
         },
         {
           "from": "palais-royal",
           "to": "palais-garnier",
-          "mode": "walking"
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "palais-garnier",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
         }
       ]
     },
     {
       "date": "2026-09-28",
       "city": "Paris",
-      "title": "생활일 — 세탁·북마레 또는 숙소권 산책",
+      "title": "모로 아틀리에 & 파리 패션위크 개막 & 마레 지구",
       "center": [
-        48.846,
-        2.34
+        48.851,
+        2.355
       ],
-      "zoom": 15,
+      "zoom": 13,
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "종일 생활권",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 새 명소 추가 금지 — 원고 지침."
+          "plannedTime": "08:00–09:45",
+          "note": "전날 일요일에 Pichard 에서 사 둔 빵으로 숙소 아침 — 이 빵집은 월·화 휴무다. 오전 모로 미술관 관람을 위해 09:45 빠른 출발"
+        },
+        {
+          "placeId": "arc-de-triomphe",
+          "order": 1,
+          "plannedTime": "17:45–18:30",
+          "note": "저녁 체력과 날씨가 좋을 때만 PMP로 전망대에 오른다."
+        },
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 2,
+          "plannedTime": "19:15–21:00",
+          "note": "마레에서 8호선으로 15구 귀환 후 숙소 도보 4분. 월요일에 확실히 여는 몇 안 되는 집이고, 프렌치가 이어진 뒤 장르를 갈아타는 자리다"
         }
       ],
-      "segments": []
+      "segments": [
+        {
+          "from": "paris-15e-stay-area",
+          "to": "arc-de-triomphe",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "arc-de-triomphe",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
+        }
+      ]
     },
     {
       "date": "2026-09-29",
       "city": "Paris",
-      "title": "Musée d'Orsay — 시간지정권 오후 관람",
+      "title": "Versailles Palace & Gardens",
       "center": [
-        48.86,
-        2.326
+        48.805,
+        2.115
+      ],
+      "zoom": 14,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-stay-candidate",
+          "order": 0,
+          "plannedTime": "08:30",
+          "note": "Javel역에서 RER C 이용."
+        },
+        {
+          "placeId": "versailles",
+          "order": 1,
+          "plannedTime": "10:00–12:30",
+          "note": "Passport 시간지정 본관 입장."
+        },
+        {
+          "placeId": "versailles-gardens",
+          "order": 2,
+          "plannedTime": "13:30–15:00",
+          "note": "Jardins Musicaux 운영일."
+        },
+        {
+          "placeId": "grand-trianon",
+          "order": 3,
+          "plannedTime": "15:00–16:30",
+          "note": "피로 시 생략 또는 미니트레인."
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-stay-candidate",
+          "to": "versailles",
+          "mode": "transit"
+        },
+        {
+          "from": "versailles",
+          "to": "versailles-gardens",
+          "mode": "walking"
+        },
+        {
+          "from": "versailles-gardens",
+          "to": "grand-trianon",
+          "mode": "walking"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "city": "Paris",
+      "title": "모네·패션위크·기메 — 컨템퍼러리 파리",
+      "center": [
+        48.863,
+        2.314
+      ],
+      "zoom": 13,
+      "defaultMode": "transit",
+      "stops": [
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 0,
+          "plannedTime": "08:00–09:15",
+          "note": "오랑주리 10:00 집중 관람을 위해 아침식사 후 09:15 출발"
+        },
+        {
+          "placeId": "musee-de-l-orangerie",
+          "order": 1,
+          "plannedTime": "10:00–11:30",
+          "note": "90분 상한의 집중 관람: 1순위 모네 <수련(Nymphéas)> 타원형 전시실, 2순위 Walter-Guillaume Collection 주요작. 시간이 넘으면 나머지는 생략한다"
+        },
+        {
+          "placeId": "chez-savy",
+          "order": 2,
+          "plannedTime": "12:15–13:15",
+          "note": "오랑주리에서 도보 약 15~18분. 아브뉘 몽테뉴 한 블록 안쪽 골목이라 대로변 관광객 함정을 피하고, 문을 나서면 곧바로 몽테뉴 산책이 시작된다"
+        },
+        {
+          "placeId": "avenue-montaigne",
+          "order": 3,
+          "plannedTime": "13:20–14:00",
+          "note": "Avenue Montaigne 명품 플래그십과 공개 거리 분위기를 따라 걷는다"
+        },
+        {
+          "placeId": "grand-palais",
+          "order": 4,
+          "plannedTime": "14:00–14:25",
+          "note": "Grand Palais 주변의 공식 공개 공간과 거리 동선만 확인하고 초청제 쇼 입장은 기대하지 않는다"
+        },
+        {
+          "placeId": "musee-guimet",
+          "order": 5,
+          "plannedTime": "14:40–16:20",
+          "note": "간다라·크메르·동아시아 컬렉션을 PMP 유효기간 안에 집중 관람한다."
+        },
+        {
+          "placeId": "palais-de-tokyo",
+          "order": 6,
+          "plannedTime": "16:30–17:45",
+          "note": "Avenue du Président Wilson의 공개 동선을 따라 Palais de Tokyo의 건축·공공공간을 보고 Alma와 센 강변에서 마무리한다"
+        },
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 7,
+          "plannedTime": "19:30–21:30",
+          "note": "숙소에서 도보 4분. Menu du Marché €32면 전채·메인·디저트가 다 들어온다. 조용한 평일 저녁에 15구의 제대로 된 한 끼를 넣는 자리다"
+        }
+      ],
+      "segments": [
+        {
+          "from": "paris-15e-stay-area",
+          "to": "musee-de-l-orangerie",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "musee-de-l-orangerie",
+          "to": "chez-savy",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "chez-savy",
+          "to": "avenue-montaigne",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "avenue-montaigne",
+          "to": "grand-palais",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "grand-palais",
+          "to": "musee-guimet",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "musee-guimet",
+          "to": "palais-de-tokyo",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "palais-de-tokyo",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "city": "Paris",
+      "title": "Musée d'Orsay & Musée Rodin",
+      "center": [
+        48.857,
+        2.32
       ],
       "zoom": 15,
       "defaultMode": "transit",
@@ -1691,14 +1953,26 @@
         {
           "placeId": "paris-stay-candidate",
           "order": 0,
-          "plannedTime": "13:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "09:30",
+          "note": "10:15 오르세 도착 목표."
         },
         {
           "placeId": "musee-d-orsay",
           "order": 1,
-          "plannedTime": "13:30–17:00",
-          "note": "시간지정권 · 3시간 30분 상한. Musée d'Orsay 일정으로 고정."
+          "plannedTime": "10:30–13:00",
+          "note": "예약 확정 · 상설 컬렉션 중심."
+        },
+        {
+          "placeId": "musee-rodin",
+          "order": 2,
+          "plannedTime": "14:15–16:00",
+          "note": "시간지정 예매 권장."
+        },
+        {
+          "placeId": "hotel-des-invalides",
+          "order": 3,
+          "plannedTime": "16:00 이후",
+          "note": "선택 외관 산책."
         }
       ],
       "segments": [
@@ -1706,147 +1980,63 @@
           "from": "paris-stay-candidate",
           "to": "musee-d-orsay",
           "mode": "transit"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-30",
-      "city": "Paris",
-      "title": "Monet & Contemporary Paris / Fashion — Orangerie · Montaigne · Palais de Tokyo",
-      "center": [
-        48.864,
-        2.315
-      ],
-      "zoom": 14,
-      "defaultMode": "transit",
-      "stops": [
-        {
-          "placeId": "paris-15e-stay-area",
-          "order": 0,
-          "plannedTime": "09:15 출발",
-          "note": "숙소 위치는 개인정보 보호를 위해 권역 좌표만 표시. 메트로 8호선으로 Concorde 이동."
         },
         {
-          "placeId": "musee-de-l-orangerie",
-          "order": 1,
-          "plannedTime": "10:00–11:30",
-          "note": "90분 상한: Nymphéas 우선, Walter-Guillaume 주요작 다음. 시간 초과 시 나머지는 생략."
-        },
-        {
-          "placeId": "chez-savy",
-          "order": 2,
-          "plannedTime": "12:15–13:30",
-          "note": "12:15 점심 예약. 오랑주리에서 도보 약 15–18분."
-        },
-        {
-          "placeId": "avenue-montaigne",
-          "order": 3,
-          "plannedTime": "13:30–14:15",
-          "note": "Fashion Week 공개 거리 동선과 플래그십 쇼윈도."
-        },
-        {
-          "placeId": "grand-palais",
-          "order": 4,
-          "plannedTime": "14:30–15:30",
-          "note": "공식 확인된 공개 공간과 주변 거리만 이용."
-        },
-        {
-          "placeId": "palais-de-tokyo",
-          "order": 5,
-          "plannedTime": "15:45–17:30",
-          "note": "Avenue du Président Wilson ➔ Palais de Tokyo 건축·공공공간 ➔ Alma/Seine. 전시는 공식 확인된 경우에만."
-        },
-        {
-          "placeId": "stephane-martin",
-          "order": 6,
-          "plannedTime": "19:30",
-          "note": "15구 복귀 후 19:30 저녁 예약."
-        }
-      ],
-      "segments": [
-        {
-          "from": "paris-15e-stay-area",
-          "to": "musee-de-l-orangerie",
-          "mode": "transit"
-        },
-        {
-          "from": "musee-de-l-orangerie",
-          "to": "chez-savy",
+          "from": "musee-d-orsay",
+          "to": "musee-rodin",
           "mode": "walking"
         },
         {
-          "from": "chez-savy",
-          "to": "avenue-montaigne",
+          "from": "musee-rodin",
+          "to": "hotel-des-invalides",
           "mode": "walking"
-        },
-        {
-          "from": "avenue-montaigne",
-          "to": "grand-palais",
-          "mode": "walking"
-        },
-        {
-          "from": "grand-palais",
-          "to": "palais-de-tokyo",
-          "mode": "walking"
-        },
-        {
-          "from": "palais-de-tokyo",
-          "to": "stephane-martin",
-          "mode": "transit"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "city": "Paris",
-      "title": "Vosges·Bastille 산책",
-      "center": [
-        48.853,
-        2.368
-      ],
-      "zoom": 15,
-      "defaultMode": "walking",
-      "stops": [
-        {
-          "placeId": "paris-stay-candidate",
-          "order": 0,
-          "plannedTime": "13:40 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
-        },
-        {
-          "placeId": "place-des-vosges",
-          "order": 1,
-          "plannedTime": "14:00–16:30",
-          "note": "정원·골목 — 체력에 맞춰 축소."
-        }
-      ],
-      "segments": [
-        {
-          "from": "paris-stay-candidate",
-          "to": "place-des-vosges",
-          "mode": "transit"
         }
       ]
     },
     {
       "date": "2026-10-02",
       "city": "Paris",
-      "title": "생활일 — 숙소권 시장·서점·회복",
+      "title": "루브르 11:00 — PMP 마지막 핵심 사용",
       "center": [
-        48.846,
-        2.34
+        48.85,
+        2.315
       ],
-      "zoom": 15,
+      "zoom": 14,
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "종일 생활권",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 시장·독립서점·카페 — 고정 행사 없음."
+          "plannedTime": "08:00–10:15",
+          "note": "오전 숙소 생활 루틴 및 여유로운 점심 식사"
+        },
+        {
+          "placeId": "musee-du-louvre",
+          "order": 1,
+          "plannedTime": "11:00–15:00",
+          "note": "유리 피라미드 진입 ➔ 드농관 1층 <모나리자>, <사모트라케의 니케>, 다비드 <나폴레옹 대관식>, 들라크루아 <민중을 이끄는 자유의 여신> ➔ 쉴리관 <밀로의 비너스>, 스핑크스 ➔ 리슐리외관 나폴레옹 3세 아파트 (4시간)"
+        },
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 2,
+          "plannedTime": "18:00–20:00",
+          "note": "루브르 4시간 관람과 센 강변 일몰 산책 뒤 숙소 도보 4분. 프렌치가 일주일 넘게 이어진 시점에 얼큰한 국물을 넣는다"
         }
       ],
-      "segments": []
+      "segments": [
+        {
+          "from": "paris-15e-stay-area",
+          "to": "musee-du-louvre",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "musee-du-louvre",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
+        }
+      ]
     },
     {
       "date": "2026-10-03",
@@ -1877,32 +2067,33 @@
     {
       "date": "2026-10-04",
       "city": "Paris",
-      "title": "Qatar Prix de l'Arc de Triomphe — ParisLongchamp",
+      "title": "개선문상 경마 대회 (Qatar Prix de l'Arc de Triomphe)",
       "center": [
-        48.858,
-        2.233
+        48.849,
+        2.29
       ],
-      "zoom": 13,
+      "zoom": 12,
       "defaultMode": "transit",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "parislongchamp",
           "order": 0,
-          "plannedTime": "09:00 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다. 티켓·교통 최종 확인 후 역산 이동."
+          "plannedTime": "11:30–18:00",
+          "note": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 오후 메인 레이스(Prix de l'Arc de Triomphe 2,400m) 직관, 우승마 시상식 관람 (6.5시간)"
         },
         {
-          "placeId": "hippodrome-parislongchamp",
+          "placeId": "paris-15e-stay-area",
           "order": 1,
-          "plannedTime": "오전–오후 종일",
-          "note": "메인 레이스 데이 — 경기장 식사·휴식 포함. 종료 후 혼잡 감안 귀환, 추가 일정 금지."
+          "plannedTime": "18:30–20:30",
+          "note": "롱샹에서 지쳐 돌아오는 날이다. 일요일 11:30–22:00 연속이라 도착 시간이 자유롭고, 갈레트 한 장이면 40분에 끝난다. 숙소 도보 5분"
         }
       ],
       "segments": [
         {
-          "from": "paris-stay-candidate",
-          "to": "hippodrome-parislongchamp",
-          "mode": "transit"
+          "from": "parislongchamp",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
         }
       ]
     },
@@ -1929,43 +2120,57 @@
     {
       "date": "2026-10-06",
       "city": "Paris",
-      "title": "Canal Saint-Martin과 Belleville",
+      "title": "오르세 Mary Cassatt 특별전 & 마레 산책",
       "center": [
-        48.87,
-        2.376
+        48.858,
+        2.345
       ],
-      "zoom": 14,
+      "zoom": 13,
       "defaultMode": "walking",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "10:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "08:00–12:30",
+          "note": "아침·운동·집안일 뒤 콩방시옹 화요 시장(07:00–13:30)에서 장을 보고 숙소에서 가벼운 점심"
         },
         {
-          "placeId": "canal-saint-martin",
+          "placeId": "musee-d-orsay",
           "order": 1,
-          "plannedTime": "10:30–12:30",
-          "note": "물가 산책·카페."
+          "plannedTime": "13:30–16:00",
+          "note": "프랑스 최초 대규모 회고전 <Mary Cassatt. L'indépendante> 개막 당일 특별전 집중 관람 (14:00 슬롯, 90–120분)"
         },
         {
-          "placeId": "parc-de-belleville",
+          "placeId": "musee-carnavalet",
           "order": 2,
-          "plannedTime": "14:00–17:00",
-          "note": "Belleville 또는 한 동네 경로 — 공원·거리·서점 중심."
+          "plannedTime": "16:30–18:30",
+          "note": "카르나발레 파리 역사박물관 정원 및 보주 광장 붉은 벽돌 아케이드 회랑 산책"
+        },
+        {
+          "placeId": "paris-15e-stay-area",
+          "order": 3,
+          "plannedTime": "20:45–21:15",
+          "note": "Chemin Vert 8호선 Balard 방면 직통 → Lourmel (환승 없음)"
         }
       ],
       "segments": [
         {
-          "from": "paris-stay-candidate",
-          "to": "canal-saint-martin",
-          "mode": "transit"
+          "from": "paris-15e-stay-area",
+          "to": "musee-d-orsay",
+          "mode": "walking",
+          "manual": true
         },
         {
-          "from": "canal-saint-martin",
-          "to": "parc-de-belleville",
-          "mode": "walking"
+          "from": "musee-d-orsay",
+          "to": "musee-carnavalet",
+          "mode": "walking",
+          "manual": true
+        },
+        {
+          "from": "musee-carnavalet",
+          "to": "paris-15e-stay-area",
+          "mode": "walking",
+          "manual": true
         }
       ]
     },
@@ -2015,43 +2220,45 @@
     {
       "date": "2026-10-08",
       "city": "Paris",
-      "title": "Trocadéro·Chaillot과 송별 저녁",
+      "title": "파리 현대미술관 & 트로카데로 고별 일몰",
       "center": [
-        48.862,
-        2.288
+        48.851,
+        2.317
       ],
-      "zoom": 15,
+      "zoom": 13,
       "defaultMode": "transit",
       "stops": [
         {
-          "placeId": "paris-stay-candidate",
+          "placeId": "paris-15e-stay-area",
           "order": 0,
-          "plannedTime": "오전 짐 절반 포장 · 14:00 전후 출발",
-          "note": "후보 숙소. 실제 예약이 확정되면 교체하며 현재 위치를 확정 숙소로 사용하지 않는다."
+          "plannedTime": "08:00–11:15",
+          "note": "마지막 Full Day. 10:00 기메 박물관 입장을 위해 아침식사 후 09:15 출발"
         },
         {
-          "placeId": "place-du-trocadero",
+          "placeId": "musee-d-art-moderne-de-paris",
           "order": 1,
-          "plannedTime": "14:30–17:00",
-          "note": "전망·건축·카페 — 장거리 산책 금지."
+          "plannedTime": "13:30–15:45",
+          "note": "팔레 드 도쿄 동관. 라울 뒤피의 600㎡ 세계 최대 유화 벽화 <전기의 요정>, 앙리 마티스 <댄스>, 2026 뒤샹상(Prix Marcel Duchamp) 특별전 관람 (2시간 15분)"
         },
         {
-          "placeId": "palais-de-chaillot",
+          "placeId": "trocadero",
           "order": 2,
-          "plannedTime": "일몰 점등 조망 후 송별 저녁",
-          "note": "낮 방문 뒤 같은 자리에서 일몰 점등 조망. 송별 저녁 장소는 숙소 확정 후 선정 — 21:30 이전 귀환."
+          "plannedTime": "16:00–18:30",
+          "note": "트로카데로 광장 에스플러나드에서 에펠탑 정면 파노라마 조망 ➔ 이에나 다리 건너 에펠탑 아래 샹드마르스 공원 일몰 산책 (2.5시간)"
         }
       ],
       "segments": [
         {
-          "from": "paris-stay-candidate",
-          "to": "place-du-trocadero",
-          "mode": "transit"
+          "from": "paris-15e-stay-area",
+          "to": "musee-d-art-moderne-de-paris",
+          "mode": "walking",
+          "manual": true
         },
         {
-          "from": "place-du-trocadero",
-          "to": "palais-de-chaillot",
-          "mode": "walking"
+          "from": "musee-d-art-moderne-de-paris",
+          "to": "trocadero",
+          "mode": "walking",
+          "manual": true
         }
       ]
     },

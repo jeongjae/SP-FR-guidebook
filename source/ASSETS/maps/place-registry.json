@@ -2314,6 +2314,286 @@
       "legacySources": [
         "RS01 2026-08-28 신설 — OSM 지오코딩 재확인"
       ]
+    },
+    {
+      "id": "versailles-gardens",
+      "name": "Gardens of Versailles",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.806,
+      "lng": 2.115,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gardens+of+Versailles",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "coordinatesVerified": "2026-09-06"
+    },
+    {
+      "id": "grand-trianon",
+      "name": "Grand Trianon",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.815,
+      "lng": 2.105,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand+Trianon",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "coordinatesVerified": "2026-09-06"
+    },
+    {
+      "id": "musee-rodin",
+      "name": "Musée Rodin",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8553,
+      "lng": 2.3158,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e+Rodin+Paris",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "coordinatesVerified": "2026-09-06"
+    },
+    {
+      "id": "hotel-des-invalides",
+      "name": "Hôtel des Invalides",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8566,
+      "lng": 2.3125,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=H%C3%B4tel+des+Invalides",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "coordinatesVerified": "2026-09-06"
+    },
+    {
+      "id": "sainte-chapelle",
+      "name": "Sainte-Chapelle (생트샤펠) — PMP 최초 사용",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8554,
+      "lng": 2.345,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sainte-Chapelle (생트샤펠) — PMP 최초 사용",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "conciergerie",
+      "name": "Conciergerie (콩시에르주리)",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8559,
+      "lng": 2.3452,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Conciergerie (콩시에르주리)",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "ile-de-la-cite",
+      "name": "Île de la Cité · Seine 산책",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8545,
+      "lng": 2.348,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Île de la Cité · Seine 산책",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "bouillon-racine",
+      "name": "Bouillon Racine 저녁 (6구 아르누보)",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8506,
+      "lng": 2.342,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bouillon Racine 저녁 (6구 아르누보)",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "musee-picasso-paris",
+      "name": "Musée Picasso Paris",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8597,
+      "lng": 2.3622,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Musée Picasso Paris",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "le-marais",
+      "name": "Le Marais 점심",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8586,
+      "lng": 2.355,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le Marais 점심",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "arc-de-triomphe",
+      "name": "Arc de Triomphe (개선문) — 선택",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8738,
+      "lng": 2.295,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arc de Triomphe (개선문) — 선택",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "musee-guimet",
+      "name": "Musée Guimet",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.865,
+      "lng": 2.2936,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Musée Guimet",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "parislongchamp",
+      "name": "Qatar Prix de l'Arc de Triomphe (개선문상 본선)",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.858,
+      "lng": 2.234,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Qatar Prix de l'Arc de Triomphe (개선문상 본선)",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "musee-carnavalet",
+      "name": "Musée Carnavalet & Place des Vosges (보주 광장)",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8572,
+      "lng": 2.3625,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Musée Carnavalet & Place des Vosges (보주 광장)",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "musee-d-art-moderne-de-paris",
+      "name": "Musée d'Art Moderne de Paris (MAM)",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8647,
+      "lng": 2.2978,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Musée d'Art Moderne de Paris (MAM)",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
+    },
+    {
+      "id": "trocadero",
+      "name": "Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
+      "city": "Paris",
+      "type": "attraction",
+      "lat": 48.8625,
+      "lng": 2.2875,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Place du Trocadéro ➔ 에펠탑 고별 일몰 조망",
+      "address": "",
+      "private": false,
+      "approximate": false,
+      "optional": true,
+      "status": "planned",
+      "legacySources": [
+        "Paris PMP itinerary synchronization 2026-09-06"
+      ]
     }
   ]
 }

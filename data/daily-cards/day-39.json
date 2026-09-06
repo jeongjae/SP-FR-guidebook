@@ -3,7 +3,7 @@
   "day": 39,
   "date": "2026-10-06",
   "city": "Paris",
-  "title": "오르세 카사트 특별전 개막 & 마레 지구 예술 산책",
+  "title": "오르세 Mary Cassatt 특별전 & 마레 산책",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
@@ -69,39 +69,10 @@
       "place_ref": "musee-d-orsay"
     },
     {
-      "id": "musee-picasso",
+      "id": "musee-carnavalet",
       "order": 3,
       "start": "16:30",
-      "end": "17:45",
-      "name": "Musée Picasso Paris & Le Marais (마레 지구 연계)",
-      "category": "culture",
-      "lat": 48.8597,
-      "lng": 2.3622,
-      "summary": "마레 지구 오텔 살레 피카소 미술관 상설 컬렉션 및 마레 골목 산책",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "optional",
-          "label": "OPTIONAL",
-          "detail": "피로 시 피카소 미술관 실내 관람을 생략하고 마레 골목 및 보주 광장 산책으로 전환."
-        },
-        {
-          "type": "book",
-          "label": "TIMED TICKET",
-          "detail": "방문 시 16:30 슬롯 온라인 시간지정 티켓 사전 예매 권장 (€16) · 화요일 10:30–18:00 개관 (월요일 휴관)."
-        }
-      ],
-      "executionNote": "5 Rue de Thorigny, 75003 Paris (Hôtel Salé). 화요일 10:30–18:00 개관 (월요일 휴관).",
-      "officialUrl": "https://www.museepicassoparis.fr/",
-      "optional": true,
-      "place_ref": "musee-picasso-paris"
-    },
-    {
-      "id": "musee-carnavalet",
-      "order": 4,
-      "start": "17:45",
-      "end": "18:45",
+      "end": "18:30",
       "name": "Musée Carnavalet & Place des Vosges (보주 광장)",
       "category": "sight",
       "lat": 48.8572,
@@ -123,7 +94,7 @@
     },
     {
       "id": "chez-janou-dinner",
-      "order": 5,
+      "order": 4,
       "start": "19:00",
       "end": "20:30",
       "name": "Chez Janou 저녁 (마레 프로방스)",
@@ -147,7 +118,7 @@
     },
     {
       "id": "paris-return",
-      "order": 6,
+      "order": 5,
       "start": "20:45",
       "end": "21:15",
       "name": "15구 숙소 귀환",
@@ -175,45 +146,36 @@
       "from": "morning-routine",
       "to": "musee-d-orsay-cassatt",
       "mode": "metro",
-      "duration": "메트로 12호선 약 20분",
-      "distance": "4.2km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "특별전 이후 정리된 마레 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "musee-d-orsay-cassatt",
-      "to": "musee-picasso",
-      "mode": "metro",
-      "duration": "메트로 약 15분",
-      "distance": "3.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "musee-picasso",
       "to": "musee-carnavalet",
       "mode": "walk",
-      "duration": "4분",
-      "distance": "0.3km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "특별전 이후 정리된 마레 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "musee-carnavalet",
       "to": "chez-janou-dinner",
       "mode": "walk",
-      "duration": "6분",
-      "distance": "0.5km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "특별전 이후 정리된 마레 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "chez-janou-dinner",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 8호선 직통 약 35분",
-      "distance": "7.2km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "특별전 이후 정리된 마레 동선",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -230,7 +192,7 @@
     "마레 지구 연계 산책",
     "화요일 정상 운영"
   ],
-  "backup": "Au Bourguignon du Marais(52 rue François Miron, 매일 영업, 고미요 예산 €25~30 — 뵈프 부르기뇽과 베르티용 아이스크림 프로피트롤). 귀가는 M1+M8 약 45분\n\n피로 시 마레 실내 관람을 생략하고 오르세 관람 후 센 강변 산책 뒤 조기 귀환",
+  "backup": "Mary Cassatt 특별전을 우선하고 이후 마레·카르나발레 산책은 피로에 따라 단축한다. 저녁 대안은 Au Bourguignon du Marais.",
   "map": {
     "zoom": 13,
     "center": [
@@ -240,11 +202,10 @@
     "routeCache": null
   },
   "needsReview": [
-    "Musée d'Orsay Mary Cassatt 특별전 14:00 슬롯 예매 (10/6 개막일)",
-    "Musée Picasso Paris / Carnavalet 마레 일정 선택 운영"
+    "Musée d'Orsay Mary Cassatt 특별전 14:00 슬롯 예매 (10/6 개막일)"
   ],
   "sourceRefs": [
     "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md#Day-13-10월6일",
-    "DEC-A12: Musée d'Orsay 2회 방문 허용 (9/29 · 10/6)"
+    "DEC-A12: Musée d'Orsay 2회 방문 허용 (10/1 상설 · 10/6 Mary Cassatt 특별전)"
   ]
 }

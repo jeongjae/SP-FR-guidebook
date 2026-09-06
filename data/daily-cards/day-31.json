@@ -117,10 +117,34 @@
       "place_ref": "le-marais"
     },
     {
-      "id": "paris-return",
+      "id": "arc-de-triomphe-optional",
       "order": 5,
-      "start": "18:15",
-      "end": "20:30",
+      "start": "17:45",
+      "end": "18:30",
+      "name": "Arc de Triomphe (개선문) — 선택",
+      "category": "sight",
+      "lat": 48.8738,
+      "lng": 2.295,
+      "summary": "저녁 체력과 날씨가 좋을 때만 PMP로 전망대에 오른다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "optional",
+          "label": "OPTIONAL · PMP",
+          "detail": "필수 일정 아님. PMP 포함, 현장 운영·마지막 입장 확인."
+        }
+      ],
+      "executionNote": "",
+      "officialUrl": "https://www.paris-arc-de-triomphe.fr/",
+      "optional": true,
+      "place_ref": null
+    },
+    {
+      "id": "paris-return",
+      "order": 6,
+      "start": "19:15",
+      "end": "21:00",
       "name": "Guylas 페르시아 저녁 (15구)",
       "category": "food",
       "lat": 48.8499,
@@ -146,36 +170,45 @@
       "from": "morning-routine",
       "to": "gustave-moreau",
       "mode": "metro",
-      "duration": "메트로 8+12호선 약 30분",
-      "distance": "5.8km",
-      "line": null,
+      "duration": "35분",
+      "distance": null,
+      "line": "15구 → 9구",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "gustave-moreau",
       "to": "opera-lunch",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
-      "line": null,
+      "duration": "10분",
+      "distance": null,
+      "line": "도보",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "opera-lunch",
       "to": "fashion-week-marais",
       "mode": "metro",
-      "duration": "메트로 약 15분",
-      "distance": "2.5km",
-      "line": null,
+      "duration": "25분",
+      "distance": null,
+      "line": "마레",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "fashion-week-marais",
+      "to": "arc-de-triomphe-optional",
+      "mode": "metro",
+      "duration": "25분",
+      "distance": null,
+      "line": "선택 이동",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "arc-de-triomphe-optional",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 8호선 약 25분",
-      "distance": "5.5km",
-      "line": null,
+      "duration": "30분",
+      "distance": null,
+      "line": "15구",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -190,7 +223,8 @@
   "highlights": [
     "생활업무 우선",
     "Fashion Week 혼잡은 변수로만",
-    "월요일 휴관 무관한 날"
+    "월요일 휴관 무관한 날",
+    "Arc de Triomphe 전망대 — 저녁 Optional · PMP"
   ],
   "backup": "Au Petit Riche 만석 시 Le Pantruche(3 rue Victor Massé, 3코스 €23, 12:30 오픈이라 실질 60분) 또는 Caillebotte(8 rue Hippolyte Lebas, 점심 €23). 둘 다 월요일 점심 영업이지만 12:30 오픈이라 13:30 퇴점을 미리 알린다\n\n피로 시 마레 지구 쇼핑 도보를 90분으로 단축하고 피카소 미술관 인근 카페 휴식으로 전환",
   "map": {

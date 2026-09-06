@@ -145,18 +145,18 @@ cafe-comptoir-abel,booking,FRESH,P0,2026-08-21,,,https://www.cafecomptoirabel.co
 cafe-comptoir-abel,price_adult,MISSING,P1,,,,,lyon,essential,Café Comptoir Abel,23
 cafe-comptoir-abel,getting_there,MISSING,P1,,,,,lyon,essential,Café Comptoir Abel,23
 cafe-comptoir-abel,duration,FRESH,P2,2026-08-21,,,FCR-04 Editorial,lyon,essential,Café Comptoir Abel,23
-cafe-du-commerce,closed,FRESH,P0,2026-08-21,,,https://www.lecafeducommerce.com/,paris,essential,Café du Commerce,28;32;42
-cafe-du-commerce,hours,FRESH,P0,2026-08-21,,,https://www.lecafeducommerce.com/,paris,essential,Café du Commerce,28;32;42
-cafe-du-commerce,booking,FRESH,P0,2026-08-21,,,https://www.lecafeducommerce.com/,paris,essential,Café du Commerce,28;32;42
-cafe-du-commerce,price_adult,MISSING,P1,,,,,paris,essential,Café du Commerce,28;32;42
-cafe-du-commerce,getting_there,MISSING,P1,,,,,paris,essential,Café du Commerce,28;32;42
-cafe-du-commerce,duration,FRESH,P2,2026-08-21,,,FCR-05 Editorial,paris,essential,Café du Commerce,28;32;42
-cafe-varenne,closed,FRESH,P0,2026-08-25,,,MP-04 웹 조사 2026-08-25 (복수 출처 교차),paris,essential,Café Varenne,32
-cafe-varenne,hours,FRESH,P0,2026-08-25,,,MP-04 웹 조사 2026-08-25 (복수 출처 교차),paris,essential,Café Varenne,32
-cafe-varenne,booking,FRESH,P0,2026-08-25,,,MP-04 웹 조사 2026-08-25 (복수 출처 교차),paris,essential,Café Varenne,32
-cafe-varenne,price_adult,MISSING,P1,,,,,paris,essential,Café Varenne,32
-cafe-varenne,getting_there,MISSING,P1,,,,,paris,essential,Café Varenne,32
-cafe-varenne,duration,FRESH,P2,2026-08-25,,,MP-04 Editorial,paris,essential,Café Varenne,32
+cafe-du-commerce,closed,FRESH,P0,2026-08-21,,,https://www.lecafeducommerce.com/,paris,essential,Café du Commerce,28;34;42
+cafe-du-commerce,hours,FRESH,P0,2026-08-21,,,https://www.lecafeducommerce.com/,paris,essential,Café du Commerce,28;34;42
+cafe-du-commerce,booking,FRESH,P0,2026-08-21,,,https://www.lecafeducommerce.com/,paris,essential,Café du Commerce,28;34;42
+cafe-du-commerce,price_adult,MISSING,P1,,,,,paris,essential,Café du Commerce,28;34;42
+cafe-du-commerce,getting_there,MISSING,P1,,,,,paris,essential,Café du Commerce,28;34;42
+cafe-du-commerce,duration,FRESH,P2,2026-08-21,,,FCR-05 Editorial,paris,essential,Café du Commerce,28;34;42
+cafe-varenne,closed,FRESH,P0,2026-08-25,,,MP-04 웹 조사 2026-08-25 (복수 출처 교차),paris,essential,Café Varenne,34
+cafe-varenne,hours,FRESH,P0,2026-08-25,,,MP-04 웹 조사 2026-08-25 (복수 출처 교차),paris,essential,Café Varenne,34
+cafe-varenne,booking,FRESH,P0,2026-08-25,,,MP-04 웹 조사 2026-08-25 (복수 출처 교차),paris,essential,Café Varenne,34
+cafe-varenne,price_adult,MISSING,P1,,,,,paris,essential,Café Varenne,34
+cafe-varenne,getting_there,MISSING,P1,,,,,paris,essential,Café Varenne,34
+cafe-varenne,duration,FRESH,P2,2026-08-25,,,MP-04 Editorial,paris,essential,Café Varenne,34
 calanques,closed,MISSING,P0,,,,,aix,essential,Calanques de Cassis 보트 투어,16
 calanques,hours,FRESH,P0,2026-08-25,,,https://www.ot-cassis.com/en/explore/the-calanques/the-calanques-by-boat/,aix,essential,Calanques de Cassis 보트 투어,16
 calanques,booking,MISSING,P0,,,,,aix,essential,Calanques de Cassis 보트 투어,16
@@ -425,12 +425,12 @@ l-isle-sur-la-sorgue,booking,MISSING,P0,,,,,luberon,essential,L'Isle-sur-la-Sorg
 l-isle-sur-la-sorgue,price_adult,MISSING,P1,,,,,luberon,essential,L'Isle-sur-la-Sorgue,18
 l-isle-sur-la-sorgue,getting_there,MISSING,P1,,,,,luberon,essential,L'Isle-sur-la-Sorgue,18
 l-isle-sur-la-sorgue,duration,STALE,P2,,,,Provence Day 18 execution plan,luberon,essential,L'Isle-sur-la-Sorgue,18
-la-flottille,closed,FRESH,P0,2026-08-25,,,https://www.laflottille.fr/en/,paris,priority,La Flottille,34
-la-flottille,hours,FRESH,P0,2026-08-25,,,https://www.laflottille.fr/en/,paris,priority,La Flottille,34
-la-flottille,booking,FRESH,P0,2026-08-25,,,https://www.laflottille.fr/en/,paris,priority,La Flottille,34
-la-flottille,price_adult,MISSING,P1,,,,,paris,priority,La Flottille,34
-la-flottille,getting_there,MISSING,P1,,,,,paris,priority,La Flottille,34
-la-flottille,duration,FRESH,P2,2026-08-25,,,MP-04 Editorial,paris,priority,La Flottille,34
+la-flottille,closed,FRESH,P0,2026-08-25,,,https://www.laflottille.fr/en/,paris,priority,La Flottille,32
+la-flottille,hours,FRESH,P0,2026-08-25,,,https://www.laflottille.fr/en/,paris,priority,La Flottille,32
+la-flottille,booking,FRESH,P0,2026-08-25,,,https://www.laflottille.fr/en/,paris,priority,La Flottille,32
+la-flottille,price_adult,MISSING,P1,,,,,paris,priority,La Flottille,32
+la-flottille,getting_there,MISSING,P1,,,,,paris,priority,La Flottille,32
+la-flottille,duration,FRESH,P2,2026-08-25,,,MP-04 Editorial,paris,priority,La Flottille,32
 la-fourchette,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),avignon,none,La Fourchette,20
 la-fourchette,hours,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),avignon,none,La Fourchette,20
 la-fourchette,booking,MISSING,P2,,,,,avignon,none,La Fourchette,20
@@ -463,12 +463,12 @@ lacoste,booking,MISSING,P2,,,,,luberon,optional,Lacoste,17
 lacoste,price_adult,MISSING,P2,,,,,luberon,optional,Lacoste,17
 lacoste,getting_there,STALE,P2,,,,Provence Day 16 execution plan,luberon,optional,Lacoste,17
 lacoste,duration,STALE,P2,,,,Provence Day 16 execution plan,luberon,optional,Lacoste,17
-latin-quarter,closed,BLOCKED,P0,,지구(district) 단위 항목 — 단일 공식 운영정보 없음. paris-pantheon.fr 실용정보 페이지 404,,,paris,essential,Latin Quarter,29
-latin-quarter,hours,BLOCKED,P0,,지구 단위 항목 — 공식 운영시간 없음,,,paris,essential,Latin Quarter,29
-latin-quarter,booking,BLOCKED,P0,,지구 단위 항목 — 예약 대상 아님,,,paris,essential,Latin Quarter,29
-latin-quarter,price_adult,MISSING,P1,,,,,paris,essential,Latin Quarter,29
-latin-quarter,getting_there,MISSING,P1,,,,,paris,essential,Latin Quarter,29
-latin-quarter,duration,MISSING,P2,,,,,paris,essential,Latin Quarter,29
+latin-quarter,closed,BLOCKED,P0,,지구(district) 단위 항목 — 단일 공식 운영정보 없음. paris-pantheon.fr 실용정보 페이지 404,,,paris,essential,Latin Quarter,
+latin-quarter,hours,BLOCKED,P0,,지구 단위 항목 — 공식 운영시간 없음,,,paris,essential,Latin Quarter,
+latin-quarter,booking,BLOCKED,P0,,지구 단위 항목 — 예약 대상 아님,,,paris,essential,Latin Quarter,
+latin-quarter,price_adult,MISSING,P1,,,,,paris,essential,Latin Quarter,
+latin-quarter,getting_there,MISSING,P1,,,,,paris,essential,Latin Quarter,
+latin-quarter,duration,MISSING,P2,,,,,paris,essential,Latin Quarter,
 le-criquet-arles,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),avignon,none,Le Criquet (Arles),
 le-criquet-arles,hours,FRESH,P2,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),avignon,none,Le Criquet (Arles),
 le-criquet-arles,booking,MISSING,P2,,,,,avignon,none,Le Criquet (Arles),
@@ -494,12 +494,12 @@ le-gout-du-jour,closed,FRESH,P0,2026-08-17,,04 32 76 32 16,https://en.grandavign
 le-gout-du-jour,hours,BLOCKED,P0,2026-08-17,공식 사이트에 영업시간 미게시 (전화 +33 4 32 76 32 16),04 32 76 32 16,2026-08-17 신규확정 v2.1 (복구본),avignon,none,Le Goût du Jour,20;22
 le-gout-du-jour,booking,MISSING,P2,,,04 32 76 32 16,,avignon,none,Le Goût du Jour,20;22
 le-gout-du-jour,price_adult,MISSING,P2,,,04 32 76 32 16,,avignon,none,Le Goût du Jour,20;22
-le-grand-pan,closed,FRESH,P0,2026-08-21,,,https://www.legrandpan.fr/,paris,essential,Le Grand Pan,34;41
-le-grand-pan,hours,FRESH,P0,2026-08-21,,,https://www.legrandpan.fr/,paris,essential,Le Grand Pan,34;41
-le-grand-pan,booking,FRESH,P0,2026-08-21,,,https://www.legrandpan.fr/,paris,essential,Le Grand Pan,34;41
-le-grand-pan,price_adult,MISSING,P1,,,,,paris,essential,Le Grand Pan,34;41
-le-grand-pan,getting_there,MISSING,P1,,,,,paris,essential,Le Grand Pan,34;41
-le-grand-pan,duration,FRESH,P2,2026-08-21,,,FCR-05 Editorial,paris,essential,Le Grand Pan,34;41
+le-grand-pan,closed,FRESH,P0,2026-08-21,,,https://www.legrandpan.fr/,paris,essential,Le Grand Pan,32;41
+le-grand-pan,hours,FRESH,P0,2026-08-21,,,https://www.legrandpan.fr/,paris,essential,Le Grand Pan,32;41
+le-grand-pan,booking,FRESH,P0,2026-08-21,,,https://www.legrandpan.fr/,paris,essential,Le Grand Pan,32;41
+le-grand-pan,price_adult,MISSING,P1,,,,,paris,essential,Le Grand Pan,32;41
+le-grand-pan,getting_there,MISSING,P1,,,,,paris,essential,Le Grand Pan,32;41
+le-grand-pan,duration,FRESH,P2,2026-08-21,,,FCR-05 Editorial,paris,essential,Le Grand Pan,32;41
 le-marais,closed,FRESH,P0,2026-08-17,,,https://www.carnavalet.paris.fr/en/informations-pratiques,paris,essential,Le Marais,31
 le-marais,hours,FRESH,P0,2026-08-17,,,https://www.carnavalet.paris.fr/en/informations-pratiques,paris,essential,Le Marais,31
 le-marais,booking,FRESH,P0,2026-08-17,,,https://www.carnavalet.paris.fr/en/informations-pratiques,paris,essential,Le Marais,31
@@ -707,12 +707,12 @@ musee-chagall,closed,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소�
 musee-chagall,hours,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,alternative,Musée Chagall,8;9;11
 musee-chagall,booking,MISSING,P2,,,,,nice,alternative,Musée Chagall,8;9;11
 musee-chagall,price_adult,FRESH,P2,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),nice,alternative,Musée Chagall,8;9;11
-musee-d-orsay,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,32;39
-musee-d-orsay,hours,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,32;39
-musee-d-orsay,booking,BLOCKED,P0,,musee-orsay.fr HTTP 403 (2회 시도),,,paris,essential,Musée d'Orsay,32;39
-musee-d-orsay,price_adult,FRESH,P1,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,32;39
-musee-d-orsay,getting_there,MISSING,P1,,,,,paris,essential,Musée d'Orsay,32;39
-musee-d-orsay,duration,MISSING,P2,,,,,paris,essential,Musée d'Orsay,32;39
+musee-d-orsay,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,34;39
+musee-d-orsay,hours,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,34;39
+musee-d-orsay,booking,BLOCKED,P0,,musee-orsay.fr HTTP 403 (2회 시도),,,paris,essential,Musée d'Orsay,34;39
+musee-d-orsay,price_adult,FRESH,P1,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Musée d'Orsay,34;39
+musee-d-orsay,getting_there,MISSING,P1,,,,,paris,essential,Musée d'Orsay,34;39
+musee-d-orsay,duration,MISSING,P2,,,,,paris,essential,Musée d'Orsay,34;39
 musee-de-l-orangerie,closed,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,33
 musee-de-l-orangerie,hours,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,33
 musee-de-l-orangerie,booking,BLOCKED,P0,,musee-orangerie.fr HTTP 403 (2회 시도),,,paris,priority,Musée de l'Orangerie,33
@@ -793,12 +793,12 @@ notre-dame-de-la-garde,closed,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1
 notre-dame-de-la-garde,hours,FRESH,P0,2026-08-17,,,2026-08-17 신규확정 v2.1 (복구본),aix,optional,Notre-Dame de la Garde,14
 notre-dame-de-la-garde,booking,MISSING,P2,,,,,aix,optional,Notre-Dame de la Garde,14
 notre-dame-de-la-garde,price_adult,MISSING,P2,,,,,aix,optional,Notre-Dame de la Garde,14
-notre-dame-de-paris,closed,BLOCKED,P0,,notredamedeparis.fr HTTP 403 (2회 시도),,,paris,essential,Notre-Dame de Paris,29
-notre-dame-de-paris,hours,BLOCKED,P0,2026-08-17,공식 시간표 페이지 404 (/en/visit/schedules/ · /horaires-douverture/),,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Notre-Dame de Paris,29
-notre-dame-de-paris,booking,FRESH,P0,2026-08-17,,,2026-08-17 신규 검증,paris,essential,Notre-Dame de Paris,29
-notre-dame-de-paris,price_adult,FRESH,P1,2026-08-17,,,2026-08-17 신규 검증,paris,essential,Notre-Dame de Paris,29
-notre-dame-de-paris,getting_there,MISSING,P1,,,,,paris,essential,Notre-Dame de Paris,29
-notre-dame-de-paris,duration,MISSING,P2,,,,,paris,essential,Notre-Dame de Paris,29
+notre-dame-de-paris,closed,BLOCKED,P0,,notredamedeparis.fr HTTP 403 (2회 시도),,,paris,essential,Notre-Dame de Paris,30
+notre-dame-de-paris,hours,BLOCKED,P0,2026-08-17,공식 시간표 페이지 404 (/en/visit/schedules/ · /horaires-douverture/),,2026-08-17 신규확정 v2.1 (복구본),paris,essential,Notre-Dame de Paris,30
+notre-dame-de-paris,booking,FRESH,P0,2026-08-17,,,2026-08-17 신규 검증,paris,essential,Notre-Dame de Paris,30
+notre-dame-de-paris,price_adult,FRESH,P1,2026-08-17,,,2026-08-17 신규 검증,paris,essential,Notre-Dame de Paris,30
+notre-dame-de-paris,getting_there,MISSING,P1,,,,,paris,essential,Notre-Dame de Paris,30
+notre-dame-de-paris,duration,MISSING,P2,,,,,paris,essential,Notre-Dame de Paris,30
 onyar,closed,MISSING,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/,girona,priority,Onyar 강변,
 onyar,hours,MISSING,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/,girona,priority,Onyar 강변,
 onyar,booking,MISSING,P0,2026-08-17,,+34 972 010 001,https://www.girona.cat/turisme/cat/,girona,priority,Onyar 강변,
@@ -1030,12 +1030,12 @@ uzes,booking,BLOCKED,P0,2026-08-17,공식 소스 접근 실패,,https://www.uzes
 uzes,price_adult,MISSING,P1,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,20
 uzes,getting_there,MISSING,P1,,,,,avignon,essential,Uzès Place aux Herbes·구시가지,20
 uzes,duration,STALE,P2,,,,원고 09_Avignon_Alpilles_Pont_du_Gard_v2.0.md L1534,avignon,essential,Uzès Place aux Herbes·구시가지,20
-versailles,closed,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),34
-versailles,hours,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),34
-versailles,booking,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),34
-versailles,price_adult,FRESH,P1,2026-08-16,,+33 1 30 83 78 00,2026-08-16 확정 원장 (공식 소스 검증 완료),paris,priority,Versailles (궁전·트리아농·정원),34
-versailles,getting_there,MISSING,P1,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),34
-versailles,duration,MISSING,P2,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),34
+versailles,closed,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),32
+versailles,hours,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),32
+versailles,booking,FRESH,P0,2026-08-17,,+33 1 30 83 78 00,https://en.chateauversailles.fr/plan-your-visit/practical-information,paris,priority,Versailles (궁전·트리아농·정원),32
+versailles,price_adult,FRESH,P1,2026-08-16,,+33 1 30 83 78 00,2026-08-16 확정 원장 (공식 소스 검증 완료),paris,priority,Versailles (궁전·트리아농·정원),32
+versailles,getting_there,MISSING,P1,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),32
+versailles,duration,MISSING,P2,,,+33 1 30 83 78 00,,paris,priority,Versailles (궁전·트리아농·정원),32
 vieux-lyon,closed,FRESH,P0,2026-08-17,,,https://cathedrale-lyon.fr/cathedrale/,lyon,essential,Vieux Lyon · 트라불,24
 vieux-lyon,hours,FRESH,P0,2026-08-16,,,2026-08-16 확정 원장 (공식 소스 검증 완료),lyon,essential,Vieux Lyon · 트라불,24
 vieux-lyon,booking,MISSING,P0,,,,,lyon,essential,Vieux Lyon · 트라불,24

@@ -55,12 +55,12 @@
       "lng": 2.234,
       "summary": "세계 최고 권위 잔디 경마 축제. 패독(Paddock) 말 관람, 인터내셔널 푸드 트럭 빌리지 점심, 오후 메인 레이스(Prix de l'Arc de Triomphe 2,400m) 직관, 우승마 시상식 관람 (6.5시간)",
       "menu": "푸드빌리지 버거/샴페인, 프렌치 프라이",
-      "reservation": null,
+      "reservation": "confirmed",
       "executionStatuses": [
         {
           "type": "confirmed",
-          "label": "TICKETED EVENT",
-          "detail": "Qatar Prix de l'Arc de Triomphe 공식 티켓 구매 완료 (France Galop 확정 티켓) · 모바일 QR 및 신분증 지참."
+          "label": "BOOKED · GENERAL ENTRY",
+          "detail": "Qatar Prix de l'Arc de Triomphe General Entry 예약완료. 지정석/VIP가 아님. 모바일 QR 및 신분증 지참."
         },
         {
           "type": "check",
@@ -68,7 +68,7 @@
           "detail": "메인 레이스 출발 시각(통상 16:00~16:05경)은 2026 공식 race timetable 확정 발표 후 재확인."
         }
       ],
-      "executionNote": "Hippodrome de ParisLongchamp (2 Route des Tribunes, 75016 Paris). 스마트 캐주얼 복장, France Galop 확정 모바일 티켓 QR 및 신분증 지참.",
+      "executionNote": "Hippodrome de ParisLongchamp. General Entry 확정 티켓 QR 및 신분증 지참.",
       "officialUrl": "https://www.francegalop-live.com/evenement/qatar-prix-de-larc-de-triomphe/",
       "optional": false,
       "place_ref": null
@@ -127,9 +127,9 @@
     "Breizh Café 갈레트 저녁 (도보 5분·일요일 연속영업)"
   ],
   "highlights": [
-    "P0 고정 스포츠 — 종일",
-    "10/3–4 개최·10/4 메인 확인됨",
-    "야간행사 전면 금지"
+    "Qatar Prix de l'Arc de Triomphe",
+    "General Entry — 예약완료",
+    "ParisLongchamp"
   ],
   "backup": "퇴장 시 셔틀버스 대기열 과다 시 Porte de Passy 방향 도보 15분 후 버스/우버 이용",
   "map": {

@@ -30,7 +30,8 @@
 | 9/20 | 차량 절차 없이 Avignon TGV 이동·TGV 12176 10:22 플랫폼 |
 | 9/23 | Annecy TER·호수날씨 |
 | 9/30 | Fashion Week 공개행사·공식 확인된 팝업만 |
-| 10/1 | 저녁 대체안 확정 여부·예약 필요 시 마감 확인 |
+| 9/29 | Versailles Passport 10:00 전후 슬롯·RER C 운행·La Flottille/Le Grand Pan 예약 확인 |
+| 10/1 | Orsay 10:30 예약 QR 오프라인 저장·Rodin 14:15 입장권 확인 |
 | 10/4 | Prix de l'Arc — ParisLongchamp 입장·셔틀·귀환 혼잡 |
 | 10/7–10/8 | Vendanges de Montmartre 일정 (10/7) · Chaillot 권역 오후·자유 저녁 (10/8) |
 | 10/8–10/9 | 짐 절반 포장·송별 저녁 예약 (10/8) · CDG 교통·항공 체크인·수하물 (10/9) |

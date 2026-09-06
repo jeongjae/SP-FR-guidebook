@@ -38,19 +38,19 @@ status: "chapter-derived master itinerary; booking values pending"
 | 26 | 9/23 수 | Lyon | Annecy 당일치기 | Vieille Ville, Thiou 운하, 호숫가 | 1시간 크루즈 선택 | 4 | TER·크루즈 |
 | 27 | 9/24 목 | Paris | Lyon→Paris·15박 정착 | Lyon 11:00 체크아웃, **TGV 6618 13:04→15:00 (두 사람 확정 [CONFIRMED])**, 체크인, 생활시설 확인, 세탁·짐 정리 | 숙소 주변 산책·가벼운 저녁 | 3 | Paris 숙소 |
 | 28 | 9/25 금 | Paris | 파리 시티투어 버스 & 그랑 팔레 세잔 특별전 | Standard Morning, **Tootbus 풀 루프 파노라마 투어(14:00~16:15)**, **Grand Palais 특별전 <Cézanne et nous>(16:30~19:15)** | 15구 복귀 저녁 | 3 | **Grand Palais 17:00 예약 확정 [CONFIRMED]** |
-| 29 | 9/26 토 | Paris | 뤽상부르 워홀전 & 생제르맹 지성 산책 & 노트르담 | Standard Morning, **Musée du Luxembourg <Andy Warhol>(13:00~14:30)**, Jardin du Luxembourg, Saint-Germain-des-Prés, Notre-Dame 외관 | 15구 복귀 저녁 | 3 | Luxembourg 13:00 시간지정 |
-| 30 | 9/27 일 | Paris | Belle Époque & Classical Paris | Marché Convention·Pichard와 숙소 점심·휴식, **Petit Palais 상설전(13:00~14:30)**, Tuileries·Place Vendôme(15:00~16:00), Palais Royal(16:10~17:15), Opéra Garnier 지구(17:30~18:30) | 15구 복귀 저녁 | 3 | Petit Palais 상설 무료 |
-| 31 | 9/28 월 | Paris | 모로 아틀리에 & Fashion Week 개막 & 마레 지구 | Shortened Morning, **Musée Gustave Moreau(10:30~12:00)**, 누벨 아테네 점심, **Fashion Week 개막 & Le Marais 부티크 거리(14:00~17:30)** | 15구 복귀 저녁 | 3 | Moreau 10:30 시간지정 |
-| 32 | 9/29 화 | Paris | 오르세 미술관 집중 관람 & 로댕 조각 정원 | Art Morning, **Musée d'Orsay 3.5시간 집중 관람(09:30~13:00)**, 7구 점심, **Musée Rodin & 조각 정원(14:30~16:30)**, Invalides 외관 | 15구 복귀 저녁 | 4 | Orsay 09:30 시간지정, Rodin 14:30 |
-| 33 | 9/30 수 | Paris | Monet & Contemporary Paris / Fashion | 09:15 숙소 출발, **Musée de l'Orangerie 집중 관람(10:00~11:30)**, **Chez Savy(12:15)**, **Avenue Montaigne ➔ Grand Palais·Fashion Week 공개 동선 ➔ Avenue du Président Wilson ➔ Palais de Tokyo·Alma/Seine(13:30 이후)** | **Stéphane Martin 19:30** | 3 | **Orangerie 10:00 예약 확정 [CONFIRMED]** |
-| 34 | 10/1 목 | Paris | 베르사유 궁전 & 대정원 & 트리아농 전일 투어 | RER C 이동(08:30), **Château de Versailles 궁전(10:00~12:30)**, 대운하 점심, 프랑스식 대정원, **Grand/Petit Trianon & 왕비의 촌락(15:30~17:00)** | RER C 15구 복귀 저녁 | 4 | Versailles Passport 10:00 슬롯 |
-| 35 | 10/2 금 | Paris | 루브르 박물관 4시간 마스터피스 집중 관람 | Standard Morning, **Musée du Louvre 드농·쉴리·리슐리외 4시간(14:00~18:00)**, Cour Carrée & 센 강변 일몰 도보 | 15구 복귀 저녁 | 4 | Louvre 14:00 시간지정 |
+| 29 | 9/26 토 | Paris | Paris Museum Pass 시작 — 생트샤펠·콩시에르주리 | 오전 생활 일정과 휴식, **Sainte-Chapelle(15:00, PMP 최초 사용)**, **Conciergerie(16:10)**, Île de la Cité·Seine 산책 | Bouillon Racine 저녁 | 3 | PMP 6일/144시간 구매완료 |
+| 30 | 9/27 일 | Paris | Picasso·Notre-Dame & Classical Paris | Marché Convention·Pichard, **Musée Picasso Paris(10:30~12:15, PMP)**, 마레 점심, **Notre-Dame(무료)**, Tuileries·Place Vendôme, Palais Royal, Opéra Garnier | 15구 복귀 저녁 | 3 | Notre-Dame은 PMP 불필요 |
+| 31 | 9/28 월 | Paris | 모로 아틀리에 & Fashion Week 개막 & 마레 지구 | Shortened Morning, **Musée Gustave Moreau(10:30~12:00)**, 누벨 아테네 점심, **Fashion Week 개막 & Le Marais(14:00~17:30)**, Arc de Triomphe 전망대 선택(PMP) | 15구 복귀 저녁 | 3 | 개선문은 Optional |
+| 32 | 9/29 화 | Paris | 베르사유 궁전 & 대정원 & 트리아농 전일 투어 | RER C 이동(08:30), **Château de Versailles 궁전(10:00 전후~12:30)**, La Flottille 점심, 대정원, **Grand/Petit Trianon & 왕비의 촌락(15:00~16:30)** | RER C 파리 귀환, Le Grand Pan 저녁 | 4 | Versailles Passport 10:00 전후 슬롯 |
+| 33 | 9/30 수 | Paris | Monet & Contemporary Paris / Fashion | **Musée de l'Orangerie(10:00 예약확정)**, Chez Savy(12:15), Avenue Montaigne·Grand Palais·Fashion Week, **Musée Guimet(14:40~16:20, PMP)**, Palais de Tokyo·Alma/Seine | **Stéphane Martin 19:30** | 3 | Orangerie 예약완료 |
+| 34 | 10/1 목 | Paris | 인상주의 & 조각 — 오르세 상설·로댕 | 09:30 출발, **Musée d'Orsay 상설 컬렉션(10:30~13:00, 예약 확정)**, Café Varenne 점심, **Musée Rodin & 조각 정원(14:15~16:00)**, Invalides 외관 선택 | Café du Commerce 저녁 | 4 | Orsay 10:30 예약 확정, Rodin 14:15 권장 |
+| 35 | 10/2 금 | Paris | 루브르 박물관 4시간 마스터피스 집중 관람 | **Musée du Louvre 드농·쉴리·리슐리외 4시간(11:00~15:00)**, Cour Carrée & 센 강변 도보 | 15구 복귀 저녁 | 4 | PMP 마지막 핵심 사용 |
 | 36 | 10/3 토 | Paris | 마르모탕 모네 <인상, 해돋이> & 파시 고급 지구 산책 | Standard Morning, **Musée Marmottan Monet(14:00~16:00)**, Jardin du Ranelagh & Passy 산책, 조기 귀환(익일 Arc 대비) | 15구 숙소식 저녁 | 2 | Marmottan 14:00 시간지정 |
-| 37 | 10/4 일 | Paris | Qatar Prix de l'Arc de Triomphe 경마 축제 | 셔틀 이동(10:30), **Hippodrome ParisLongchamp 개선문상 본선 직관(11:30~18:00)**, 메인 레이스 16:05 | 15구 복귀 저녁 | 4 | France Galop 확정 티켓 |
+| 37 | 10/4 일 | Paris | Qatar Prix de l'Arc de Triomphe 경마 축제 | 셔틀 이동(10:30), **Hippodrome ParisLongchamp 개선문상 본선 직관(11:30~18:00)**, 메인 레이스 | 15구 복귀 저녁 | 4 | **General Entry 예약완료** |
 | 38 | 10/5 월 | Paris | 개선문상 후 회복 & 자크마르-앙드레 & 몽소 공원 | Recovery Morning(느린 기상·브런치·세탁), **Musée Jacquemart-André(15:00~17:00)**, Parc Monceau 산책 | 15구 동네 저녁 | 2 | Jacquemart-André 15:00 시간지정 |
-| 39 | 10/6 화 | Paris | 마레 지구 예술 더블 — 피카소 & 카르나발레 & 보주 광장 | Standard Morning, **Musée Picasso Paris(13:00~15:00)**, **Musée Carnavalet(15:30~17:15)**, Place des Vosges | 15구 복귀 저녁 | 3 | Picasso 13:00 시간지정 |
+| 39 | 10/6 화 | Paris | Orsay Mary Cassatt 특별전 & 마레 산책 | Standard Morning, **Musée d'Orsay <Mary Cassatt> 특별전**, Musée Carnavalet·Place des Vosges | Chez Janou 저녁 | 3 | 10/1 상설 방문과 독립 유지 |
 | 40 | 10/7 수 | Paris | 부르스 드 코메르스 개막일 & 몽마르트르 포도축제 | Shortened Morning, **Bourse de Commerce <Remember Me> 개막일(11:00~13:00)**, 몽토르게이 점심, **Fête des Vendanges de Montmartre(14:45~17:45)** | 15구 복귀 저녁 | 4 | Bourse de Commerce 11:00 슬롯 |
-| 41 | 10/8 목 | Paris | 기메 동양미술관 & 파리 현대미술관 & 트로카데로 고별 일몰 | Art Morning, **Musée Guimet(10:00~12:00)**, 이에나 점심, **Musée d'Art Moderne de Paris(13:30~15:45)**, Trocadéro 에펠 일몰, **고별 만찬** | 짐 패킹 | 3 | Guimet 10:00, 고별 식당 예약 |
+| 41 | 10/8 목 | Paris | 파리 현대미술관 & 트로카데로 고별 일몰 | 여유 있는 아침, 이에나 점심, **Musée d'Art Moderne de Paris(13:30~15:45)**, Trocadéro 에펠 일몰, **고별 만찬** | 짐 패킹 | 3 | 기존 고별 일정 유지 |
 | 42 | 10/9 금 | Paris→CDG | 체크아웃·공항 이동·인천 귀국 (OZ502) | 11:00 체크아웃, 15구 마지막 점심, 13:30 택시 공항 이동, **15:00 CDG T1 도착(수속·택스리펀)**, **OZ502 19:10 CDG 출발 (확정)** | 기내식·휴식 | 3 | 항공 확정, 공식 택시 정액제 |
 | 43 | 10/10 토 | 기내→Seoul | 기내박·귀국 | 기내 취침, **인천 14:10 도착 (OZ502)**, 입국·수하물·귀가 | 없음 | 3 | 없음 |
 

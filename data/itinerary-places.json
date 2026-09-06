@@ -2614,11 +2614,11 @@
       "date": "2026-09-26",
       "dateLabel": "9/26 토",
       "baseCity": "Paris",
-      "theme": "뤽상부르 워홀전 & 생제르맹 지성 산책 & 노트르담",
-      "core": "Standard Morning, Musée du Luxembourg <Andy Warhol>(13:00~14:30), Jardin du Luxembourg, Saint-Germain-des-Prés, Notre-Dame 외관",
-      "option": "15구 복귀 저녁",
+      "theme": "Paris Museum Pass 시작 — 생트샤펠·콩시에르주리",
+      "core": "오전 생활 일정과 휴식, Sainte-Chapelle(15:00, PMP 최초 사용), Conciergerie(16:10), Île de la Cité·Seine 산책",
+      "option": "Bouillon Racine 저녁",
       "fatigue": "3",
-      "lock": "Luxembourg 13:00 시간지정",
+      "lock": "PMP 6일/144시간 구매완료",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -2695,11 +2695,11 @@
       "date": "2026-09-27",
       "dateLabel": "9/27 일",
       "baseCity": "Paris",
-      "theme": "Belle Époque & Classical Paris",
-      "core": "Marché Convention·Pichard와 숙소 점심·휴식, Petit Palais 상설전(13:00~14:30), Tuileries·Place Vendôme(15:00~16:00), Palais Royal(16:10~17:15), Opéra Garnier 지구(17:30~18:30)",
+      "theme": "Picasso·Notre-Dame & Classical Paris",
+      "core": "Marché Convention·Pichard, Musée Picasso Paris(10:30~12:15, PMP), 마레 점심, Notre-Dame(무료), Tuileries·Place Vendôme, Palais Royal, Opéra Garnier",
       "option": "15구 복귀 저녁",
       "fatigue": "3",
-      "lock": "Petit Palais 상설 무료",
+      "lock": "Notre-Dame은 PMP 불필요",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -2777,10 +2777,10 @@
       "dateLabel": "9/28 월",
       "baseCity": "Paris",
       "theme": "모로 아틀리에 & Fashion Week 개막 & 마레 지구",
-      "core": "Shortened Morning, Musée Gustave Moreau(10:30~12:00), 누벨 아테네 점심, Fashion Week 개막 & Le Marais 부티크 거리(14:00~17:30)",
+      "core": "Shortened Morning, Musée Gustave Moreau(10:30~12:00), 누벨 아테네 점심, Fashion Week 개막 & Le Marais(14:00~17:30), Arc de Triomphe 전망대 선택(PMP)",
       "option": "15구 복귀 저녁",
       "fatigue": "3",
-      "lock": "Moreau 10:30 시간지정",
+      "lock": "개선문은 Optional",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -2825,21 +2825,21 @@
       "date": "2026-09-29",
       "dateLabel": "9/29 화",
       "baseCity": "Paris",
-      "theme": "오르세 미술관 집중 관람 & 로댕 조각 정원",
-      "core": "Art Morning, Musée d'Orsay 3.5시간 집중 관람(09:30~13:00), 7구 점심, Musée Rodin & 조각 정원(14:30~16:30), Invalides 외관",
-      "option": "15구 복귀 저녁",
+      "theme": "베르사유 궁전 & 대정원 & 트리아농 전일 투어",
+      "core": "RER C 이동(08:30), Château de Versailles 궁전(10:00 전후~12:30), La Flottille 점심, 대정원, Grand/Petit Trianon & 왕비의 촌락(15:00~16:30)",
+      "option": "RER C 파리 귀환, Le Grand Pan 저녁",
       "fatigue": "4",
-      "lock": "Orsay 09:30 시간지정, Rodin 14:30",
+      "lock": "Versailles Passport 10:00 전후 슬롯",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
       ],
       "places": [
         {
-          "id": "montmartre",
-          "name": "Montmartre",
-          "nameKo": "몽마르트르",
-          "type": "neighborhood",
+          "id": "versailles",
+          "name": "Palace of Versailles",
+          "nameKo": "베르사유 궁전",
+          "type": "palace",
           "status": "confirmed",
           "importance": "hero",
           "chapter": "paris",
@@ -2852,10 +2852,10 @@
           ]
         },
         {
-          "id": "sacre-coeur",
-          "name": "Basilique du Sacré-Cœur",
-          "nameKo": "사크레쾨르 대성당",
-          "type": "attraction",
+          "id": "versailles-gardens",
+          "name": "Gardens of Versailles",
+          "nameKo": "베르사유 정원",
+          "type": "garden",
           "status": "confirmed",
           "importance": "major",
           "chapter": "paris",
@@ -2868,12 +2868,12 @@
           ]
         },
         {
-          "id": "abbesses",
-          "name": "Abbesses",
-          "nameKo": "아베스",
-          "type": "neighborhood",
-          "status": "confirmed",
-          "importance": "supporting",
+          "id": "trianon",
+          "name": "Grand and Petit Trianon",
+          "nameKo": "트리아농",
+          "type": "palace",
+          "status": "optional",
+          "importance": "major",
           "chapter": "paris",
           "visibility": "public",
           "photoNeeded": true,
@@ -2884,11 +2884,11 @@
           ]
         },
         {
-          "id": "south-pigalle",
-          "name": "South Pigalle",
-          "nameKo": "사우스 피갈",
+          "id": "paris-15e",
+          "name": "15th arrondissement of Paris",
+          "nameKo": "파리 15구",
           "type": "neighborhood",
-          "status": "confirmed",
+          "status": "reference",
           "importance": "supporting",
           "chapter": "paris",
           "visibility": "public",
@@ -2907,10 +2907,10 @@
       "dateLabel": "9/30 수",
       "baseCity": "Paris",
       "theme": "Monet & Contemporary Paris / Fashion",
-      "core": "09:15 숙소 출발, Musée de l'Orangerie 집중 관람(10:00~11:30), Chez Savy(12:15), Avenue Montaigne ➔ Grand Palais·Fashion Week 공개 동선 ➔ Avenue du Président Wilson ➔ Palais de Tokyo·Alma/Seine(13:30 이후)",
+      "core": "Musée de l'Orangerie(10:00 예약확정), Chez Savy(12:15), Avenue Montaigne·Grand Palais·Fashion Week, Musée Guimet(14:40~16:20, PMP), Palais de Tokyo·Alma/Seine",
       "option": "Stéphane Martin 19:30",
       "fatigue": "3",
-      "lock": "Orangerie 10:00 예약 확정 [CONFIRMED]",
+      "lock": "Orangerie 예약완료",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -3003,23 +3003,71 @@
       "date": "2026-10-01",
       "dateLabel": "10/1 목",
       "baseCity": "Paris",
-      "theme": "베르사유 궁전 & 대정원 & 트리아농 전일 투어",
-      "core": "RER C 이동(08:30), Château de Versailles 궁전(10:00~12:30), 대운하 점심, 프랑스식 대정원, Grand/Petit Trianon & 왕비의 촌락(15:30~17:00)",
-      "option": "RER C 15구 복귀 저녁",
+      "theme": "인상주의 & 조각 — 오르세 상설·로댕",
+      "core": "09:30 출발, Musée d'Orsay 상설 컬렉션(10:30~13:00, 예약 확정), Café Varenne 점심, Musée Rodin & 조각 정원(14:15~16:00), Invalides 외관 선택",
+      "option": "Café du Commerce 저녁",
       "fatigue": "4",
-      "lock": "Versailles Passport 10:00 슬롯",
+      "lock": "Orsay 10:30 예약 확정, Rodin 14:15 권장",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
       ],
       "places": [
         {
-          "id": "grand-palais",
-          "name": "Grand Palais",
-          "nameKo": "그랑 팔레",
+          "id": "musee-d-orsay",
+          "name": "Musée d’Orsay",
+          "nameKo": "오르세 미술관",
           "type": "museum",
           "status": "confirmed",
           "importance": "hero",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "musee-rodin",
+          "name": "Musée Rodin",
+          "nameKo": "로댕 미술관",
+          "type": "museum",
+          "status": "confirmed",
+          "importance": "major",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "hotel-des-invalides",
+          "name": "Hôtel des Invalides",
+          "nameKo": "앵발리드",
+          "type": "historic-site",
+          "status": "optional",
+          "importance": "supporting",
+          "chapter": "paris",
+          "visibility": "public",
+          "photoNeeded": true,
+          "sourceFiles": [
+            "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
+            "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md",
+            "source/CURRENT/20_Regional_Chapters/11_Paris_Long_Stay_v2.0.md"
+          ]
+        },
+        {
+          "id": "paris-15e",
+          "name": "15th arrondissement of Paris",
+          "nameKo": "파리 15구",
+          "type": "neighborhood",
+          "status": "reference",
+          "importance": "supporting",
           "chapter": "paris",
           "visibility": "public",
           "photoNeeded": true,
@@ -3037,10 +3085,10 @@
       "dateLabel": "10/2 금",
       "baseCity": "Paris",
       "theme": "루브르 박물관 4시간 마스터피스 집중 관람",
-      "core": "Standard Morning, Musée du Louvre 드농·쉴리·리슐리외 4시간(14:00~18:00), Cour Carrée & 센 강변 일몰 도보",
+      "core": "Musée du Louvre 드농·쉴리·리슐리외 4시간(11:00~15:00), Cour Carrée & 센 강변 도보",
       "option": "15구 복귀 저녁",
       "fatigue": "4",
-      "lock": "Louvre 14:00 시간지정",
+      "lock": "PMP 마지막 핵심 사용",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -3167,10 +3215,10 @@
       "dateLabel": "10/4 일",
       "baseCity": "Paris",
       "theme": "Qatar Prix de l'Arc de Triomphe 경마 축제",
-      "core": "셔틀 이동(10:30), Hippodrome ParisLongchamp 개선문상 본선 직관(11:30~18:00), 메인 레이스 16:05",
+      "core": "셔틀 이동(10:30), Hippodrome ParisLongchamp 개선문상 본선 직관(11:30~18:00), 메인 레이스",
       "option": "15구 복귀 저녁",
       "fatigue": "4",
-      "lock": "France Galop 확정 티켓",
+      "lock": "General Entry 예약완료",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -3232,11 +3280,11 @@
       "date": "2026-10-06",
       "dateLabel": "10/6 화",
       "baseCity": "Paris",
-      "theme": "마레 지구 예술 더블 — 피카소 & 카르나발레 & 보주 광장",
-      "core": "Standard Morning, Musée Picasso Paris(13:00~15:00), Musée Carnavalet(15:30~17:15), Place des Vosges",
-      "option": "15구 복귀 저녁",
+      "theme": "Orsay Mary Cassatt 특별전 & 마레 산책",
+      "core": "Standard Morning, Musée d'Orsay <Mary Cassatt> 특별전, Musée Carnavalet·Place des Vosges",
+      "option": "Chez Janou 저녁",
       "fatigue": "3",
-      "lock": "Picasso 13:00 시간지정",
+      "lock": "10/1 상설 방문과 독립 유지",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"
@@ -3330,11 +3378,11 @@
       "date": "2026-10-08",
       "dateLabel": "10/8 목",
       "baseCity": "Paris",
-      "theme": "기메 동양미술관 & 파리 현대미술관 & 트로카데로 고별 일몰",
-      "core": "Art Morning, Musée Guimet(10:00~12:00), 이에나 점심, Musée d'Art Moderne de Paris(13:30~15:45), Trocadéro 에펠 일몰, 고별 만찬",
+      "theme": "파리 현대미술관 & 트로카데로 고별 일몰",
+      "core": "여유 있는 아침, 이에나 점심, Musée d'Art Moderne de Paris(13:30~15:45), Trocadéro 에펠 일몰, 고별 만찬",
       "option": "짐 패킹",
       "fatigue": "3",
-      "lock": "Guimet 10:00, 고별 식당 예약",
+      "lock": "기존 고별 일정 유지",
       "sourceFiles": [
         "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md",
         "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md"

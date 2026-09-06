@@ -3,7 +3,7 @@
   "day": 33,
   "date": "2026-09-30",
   "city": "Paris",
-  "title": "모네 & 컨템퍼러리 파리 — 오랑주리·패션위크·팔레 드 도쿄",
+  "title": "모네·패션위크·기메 — 컨템퍼러리 파리",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "city",
@@ -72,7 +72,7 @@
       "id": "champs-elysees-lunch",
       "order": 3,
       "start": "12:15",
-      "end": "13:30",
+      "end": "13:15",
       "name": "Chez Savy 8구 아르데코 비스트로 점심",
       "category": "food",
       "lat": 48.8659,
@@ -95,8 +95,8 @@
     {
       "id": "avenue-montaigne",
       "order": 4,
-      "start": "13:30",
-      "end": "14:15",
+      "start": "13:20",
+      "end": "14:00",
       "name": "Avenue Montaigne 패션 하우스 거리",
       "category": "sight",
       "lat": 48.8661,
@@ -113,8 +113,8 @@
     {
       "id": "grand-palais-fashion-week",
       "order": 5,
-      "start": "14:30",
-      "end": "15:30",
+      "start": "14:00",
+      "end": "14:25",
       "name": "Grand Palais 주변 Fashion Week 공개 동선",
       "category": "sight",
       "lat": 48.8661,
@@ -135,10 +135,34 @@
       "place_ref": "grand-palais"
     },
     {
-      "id": "palais-de-tokyo",
+      "id": "musee-guimet",
       "order": 6,
-      "start": "15:45",
-      "end": "17:30",
+      "start": "14:40",
+      "end": "16:20",
+      "name": "Musée Guimet",
+      "category": "culture",
+      "lat": 48.865,
+      "lng": 2.2936,
+      "summary": "간다라·크메르·동아시아 컬렉션을 PMP 유효기간 안에 집중 관람한다.",
+      "menu": null,
+      "reservation": null,
+      "executionStatuses": [
+        {
+          "type": "confirmed",
+          "label": "PMP",
+          "detail": "Paris Museum Pass 포함. 14:40 입장 계획."
+        }
+      ],
+      "executionNote": "6 Place d'Iéna. 16:20 종료 후 Président Wilson 방면 이동.",
+      "officialUrl": "https://www.guimet.fr/",
+      "optional": false,
+      "place_ref": "musee-guimet"
+    },
+    {
+      "id": "palais-de-tokyo",
+      "order": 7,
+      "start": "16:30",
+      "end": "17:45",
       "name": "Avenue du Président Wilson · Palais de Tokyo · Alma/Seine",
       "category": "sight",
       "lat": 48.864,
@@ -160,7 +184,7 @@
     },
     {
       "id": "paris-return",
-      "order": 7,
+      "order": 8,
       "start": "19:30",
       "end": "21:30",
       "name": "Stéphane Martin 15구 미식 비스트로 저녁",
@@ -188,54 +212,63 @@
       "from": "morning-routine",
       "to": "orangerie",
       "mode": "metro",
-      "duration": "메트로 8호선 + 도보 약 25분",
-      "distance": "4.2km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "orangerie",
       "to": "champs-elysees-lunch",
       "mode": "walk",
-      "duration": "15~18분",
-      "distance": "1.1km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "champs-elysees-lunch",
       "to": "avenue-montaigne",
       "mode": "walk",
-      "duration": "5분",
-      "distance": "0.4km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "avenue-montaigne",
       "to": "grand-palais-fashion-week",
       "mode": "walk",
-      "duration": "10분",
-      "distance": "0.8km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "grand-palais-fashion-week",
+      "to": "musee-guimet",
+      "mode": "walk",
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "musee-guimet",
       "to": "palais-de-tokyo",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "1.3km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "palais-de-tokyo",
       "to": "paris-return",
       "mode": "metro",
-      "duration": "메트로 9+8호선 약 25분",
-      "distance": "4.0km",
-      "line": null,
+      "duration": "20분",
+      "distance": null,
+      "line": "최신 PMP 실행 동선",
       "geometryStatus": "coordinate-line"
     }
   ],
@@ -257,8 +290,8 @@
   "map": {
     "zoom": 13,
     "center": [
-      48.862,
-      2.325
+      48.863,
+      2.314
     ],
     "routeCache": null
   },
