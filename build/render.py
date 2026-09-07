@@ -2683,10 +2683,57 @@ PARIS_MUSEUM_BOOKINGS = [
     },
 ]
 
+PARIS_BOOKING_DUPLICATE_TITLES = {
+    "입장권 Paris 주요 미술관 시간지정권",
+    "Grand Palais — Cézanne et nous",
+    "Musée de l'Orangerie",
+    "Musée d'Orsay — Permanent Collection",
+    "Château de Versailles — Passport",
+    "Paris Museum Pass — 6-day / 144-hour",
+    "입장권 Qatar Prix de l’Arc de Triomphe — Longchamp",
+}
+
+def paris_booking_records() -> list[dict]:
+    """단일 Paris 예약 SOT를 반환한다.
+
+    상세 실행표와 Prepare 요약은 모두 이 레코드를 참조한다. tracker의
+    과거 aggregate/중복 행은 load_reservations에서 제외한다.
+    """
+    return [dict(record, _canonical_paris=True) for record in PARIS_MUSEUM_BOOKINGS]
+
+def paris_record_as_prepare(record: dict) -> dict:
+    status = record["canonical_status"]
+    if status == "booked":
+        prepare_status = "확정"
+    elif status == "no-reservation":
+        prepare_status = "예약불필요"
+    else:
+        prepare_status = "미예약"
+    return {
+        "ID": f"PARIS::{record['id']}",
+        "카테고리": "입장권",
+        "지역": "Paris",
+        "예약항목": record["name"],
+        "날짜": record["date"],
+        "시간": record["schedule"],
+        "상태": prepare_status,
+        "예약번호": "",
+        "사업자": "",
+        "주소/역": "",
+        "무료취소기한": "",
+        "예약목표일": record.get("action_date", ""),
+        "리스크/대체안": record.get("plan_b", ""),
+        "비고": record.get("note", ""),
+        "_canonical_paris": True,
+        "_canonical_status": status,
+        "_booking_id": record["id"],
+    }
+
 def build_paris_museum_booking() -> str:
     """준비 — 파리 박물관·전시 예약 실행 화면 (사용자 로컬 실행 상태 관리)."""
     rel = ".."
 
+    total = len(PARIS_MUSEUM_BOOKINGS)
     # Status counts initial
     counts = {"book-now": 0, "check-sale": 0, "book-later": 0, "recheck": 0, "booked": 0, "no-reservation": 0}
     for b in PARIS_MUSEUM_BOOKINGS:
@@ -2791,12 +2838,12 @@ Orsay 10:30 · Louvre 11:00 · Versailles 오전 입장이다. 반면 Rodin이�
 
     return page(
         title="파리 뮤지엄 예약", rel=rel, tab="prepare",
-        description="파리 15박 15개 미술관·전시 예약 실행 및 진행 현황 관리",
+        description=f"파리 15박 {total}개 미술관·전시 예약 실행 및 진행 현황 관리",
         trail=[("홈", "index.html"), ("준비", "prepare/index.html"),
                ("파리 뮤지엄 예약", None)],
         body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header><h1>파리 뮤지엄 예약 실행표</h1>
-<p class="hero-dek">파리 15박(9/24~10/9) 15개 미술관·전시 예약 실행 및 상태 관리.
+<p class="hero-dek">파리 15박(9/24~10/9) {total}개 미술관·전시 예약 실행 및 상태 관리.
 공식 예약을 완료하면 [✓ 예약 완료]를 눌러 체크리스트를 관리한다.<br>
 <span class="meta" style="color:var(--text-2);margin-top:var(--s1);display:inline-block">※ 예약 체크 상태는 이 기기/브라우저에만 저장됩니다.</span></p></header>
 
@@ -2811,7 +2858,7 @@ Orsay 10:30 · Louvre 11:00 · Versailles 오전 입장이다. 반면 Rodin이�
 </div>
 
 <div class="paris-filter-chips">
-  <button type="button" class="chip chip-action paris-filter-chip is-active" data-filter="all" aria-pressed="true">전체 (15)</button>
+  <button type="button" class="chip chip-action paris-filter-chip is-active" data-filter="all" aria-pressed="true">전체 ({total})</button>
   <button type="button" class="chip chip-action paris-filter-chip" data-filter="book-now" aria-pressed="false">지금 예약 (BOOK NOW)</button>
   <button type="button" class="chip chip-action paris-filter-chip" data-filter="check-sale" aria-pressed="false">판매 확인 (CHECK SALE)</button>
   <button type="button" class="chip chip-action paris-filter-chip" data-filter="book-later" aria-pressed="false">9월 중순 (BOOK LATER)</button>
@@ -2820,12 +2867,12 @@ Orsay 10:30 · Louvre 11:00 · Versailles 오전 입장이다. 반면 Rodin이�
   <button type="button" class="chip chip-action paris-filter-chip" data-filter="no-reservation" aria-pressed="false">예약 불필요</button>
 </div>
 
-{sec_head('RESERVATIONS', '예약 항목 — 15건', rule=True)}
+{sec_head('RESERVATIONS', f'예약 항목 — {total}건', rule=True)}
 <div class="paris-museum-grid" id="paris-museum-grid">
 {"".join(cards_html)}
 </div>
 
-<details class="acc" style="margin-top:var(--s5)"><summary>전체 예약 표 보기 (15건)</summary>
+<details class="acc" style="margin-top:var(--s5)"><summary>전체 예약 표 보기 ({total}건)</summary>
 <div class="acc-body">
 <div class="table-wrap"><table>
 <thead><tr><th>단계</th><th>방문일</th><th>장소 / 전시</th><th>일정</th>
@@ -2864,6 +2911,15 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
     rel = ".."
     out = {}
     todo, done, dropped = res["todo"], res["confirmed"], res["dropped"]
+    not_required = res.get("not_required", [])
+    paris_records = res.get("paris_records", [])
+    paris_counts = {}
+    for record in paris_records:
+        status = record["canonical_status"]
+        paris_counts[status] = paris_counts.get(status, 0) + 1
+
+    def visible(records):
+        return [r for r in records if not r.get("_canonical_paris")]
 
     def group(records, is_todo):
         by_cat = {}
@@ -2887,13 +2943,22 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
                         f'{len(dropped)}건</summary><div class="acc-body prose">'
                         f"<ul>{rows}</ul></div></details>")
 
+    paris_summary = f"""
+<section class="card" id="paris-booking-summary">
+  <div class="card-body stack">
+    <div class="sec-head"><div class="sec-title-group"><span class="sec-eyebrow">PARIS BOOKINGS</span><h2 class="sec-title">Paris 박물관·행사 예약</h2></div></div>
+    <p class="meta">Booking SOT 기준 · 예약완료 {paris_counts.get('booked', 0)} · 예약필요 {sum(paris_counts.get(s, 0) for s in ('book-now', 'check-sale', 'book-later', 'recheck'))} · 예약불필요 {paris_counts.get('no-reservation', 0)}</p>
+    <div class="btn-row"><a class="btn btn-primary" href="paris-museums.html">{ic('ticket')}파리 뮤지엄 예약 상세 보기</a></div>
+  </div>
+</section>"""
+
     out["index.html"] = page(
         title="준비", rel=rel, tab="prepare",
         description="여행 준비 상태를 점검한다",
         trail=[("홈", "index.html"), ("준비", None)],
         body=f"""<div class="wrap"><div class="stack-lg" style="padding-top:1.5rem">
 <header><h1>준비</h1>
-<p class="hero-dek">확정 {len(done)}건 · 미예약 {len(todo)}건.
+<p class="hero-dek">확정 {len(done)}건 · 미예약 {len(todo)}건 · 예약불필요 {len(not_required)}건.
   상태는 셋뿐이다 — 확정 · 미예약 · 제외.</p></header>
 
 {sec_head('QUICK TOOLS', '현장 도구')}
@@ -2918,8 +2983,7 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
   </a>
 </div>
 
-<div class="btn-row" style="margin-bottom:var(--s4)"><a class="btn btn-primary" href="paris-museums.html">
-  {ic('ticket')}파리 뮤지엄 예약</a></div>
+{paris_summary}
 
 {alert('caution',
        f'<strong>아직 {len(todo)}건이 예약되지 않았다.</strong> 예약이 없는 항목은 '
@@ -2931,10 +2995,13 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
        '온전한 번호는 예약 확인 메일과 트래커 파일에 있다.', 'lock')}
 
 {sec_head('TO BOOK', f'아직 예약하지 않은 것 — {len(todo)}건', rule=True) if todo else ''}
-{group(todo, True)}
+{group(visible(todo), True)}
 
 {sec_head('BOOKED', f'예약을 마친 것 — {len(done)}건', rule=True) if done else ''}
-{group(done, False)}
+{group(visible(done), False)}
+
+{sec_head('NO RESERVATION', f'예약불필요 — {len(not_required)}건', rule=True) if not_required else ''}
+{group(visible(not_required), False)}
 
 {dropped_html}
 
@@ -2983,8 +3050,9 @@ def load_reservations() -> dict:
     '재확인' 은 없앴다. 예약번호가 있는 것과 아예 없는 것을 한 낱말로 묶고
     있어서, 무엇을 해야 하는지 알 수 없었다.
     """
-    empty = {"confirmed": [], "todo": [], "dropped": [],
-             "active": 0, "undone": 0, "items": [], "by_date": {}}
+    empty = {"confirmed": [], "todo": [], "dropped": [], "not_required": [],
+             "active": 0, "undone": 0, "items": [], "by_date": {},
+             "paris_records": []}
     try:
         from openpyxl import load_workbook
     except ImportError:
@@ -3013,7 +3081,7 @@ def load_reservations() -> dict:
             return str(int(v))
         return str(v).strip()
 
-    confirmed, todo, dropped, by_date, items = [], [], [], {}, []
+    confirmed, todo, dropped, not_required, by_date, items = [], [], [], [], {}, []
     BOOKING_CODES.clear()
     for row in rows[hdr_i + 1:]:
         if not row or not row[ix["ID"]]:
@@ -3022,12 +3090,19 @@ def load_reservations() -> dict:
                ("ID", "카테고리", "지역", "예약항목", "날짜", "시간", "상태",
                 "총액", "통화", "예약번호", "사업자", "주소/역", "무료취소기한",
                 "예약목표일", "리스크/대체안", "비고")}
+        if rec["지역"].lower() == "paris" and rec["예약항목"] in PARIS_BOOKING_DUPLICATE_TITLES:
+            # Paris 상세 실행표가 소유하는 canonical record. Aggregate row와
+            # 같은 예약의 tracker 복제본을 Prepare에 다시 노출하지 않는다.
+            continue
         collect_codes(rec["예약번호"])
 
         status = rec["상태"]
         items.append((rec["ID"], rec["예약항목"], status))
         if status == "제외":
             dropped.append(rec)
+            continue
+        if status == "예약불필요":
+            not_required.append(rec)
             continue
         if rec["날짜"]:
             by_date.setdefault(rec["날짜"], []).append(status)
@@ -3049,10 +3124,19 @@ def load_reservations() -> dict:
     key = lambda r: (order.get(r["카테고리"], 9), r["날짜"] or "9999")
     confirmed.sort(key=key)
     todo.sort(key=lambda r: (r["예약목표일"] or "9999", key(r)))
+    paris_records = paris_booking_records()
+    paris_prepare = [paris_record_as_prepare(record) for record in paris_records]
+    confirmed.extend(r for r in paris_prepare if r["상태"] == "확정")
+    todo.extend(r for r in paris_prepare if r["상태"] == "미예약")
+    not_required.extend(r for r in paris_prepare if r["상태"] == "예약불필요")
+    confirmed.sort(key=key)
+    todo.sort(key=lambda r: (r["예약목표일"] or "9999", key(r)))
 
     return {"confirmed": confirmed, "todo": todo, "dropped": dropped,
-            "active": len(confirmed) + len(todo), "undone": len(todo),
-            "items": items, "by_date": by_date}
+            "not_required": not_required,
+            "active": len(confirmed) + len(todo) + len(not_required),
+            "undone": len(todo), "items": items, "by_date": by_date,
+            "paris_records": paris_records}
 
 
 def populate_search_index(trip: Trip) -> None:
