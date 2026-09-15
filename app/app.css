@@ -134,3 +134,7 @@ label.field > * { margin-top: 4px; font-weight: 400; }
 .pill-nav a.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 .searchbox { margin-bottom: var(--s3); }
 .empty { color: var(--ink-2); text-align: center; padding: var(--s6) 0; }
+
+.edit-form { border-color: var(--accent); }
+.stop.local-edit { box-shadow: inset 3px 0 0 var(--warn); padding-left: var(--s2); }
+.stop.local-edit .name::before { content: "✎ "; color: var(--warn); }

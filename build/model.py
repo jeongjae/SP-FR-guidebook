@@ -230,6 +230,9 @@ class Stop:
     # stop 이 장소의 일부일 때(sant-pau → sant-pau-recinte-modernista).
     place_ref: str | None = None
     place_relation: str = "visit"  # visit | context | transit | nearby
+    # 현장 웹앱이 추가한 스톱. 확정 사실이 없어도 정당하다 — 관계 감사가
+    # 이 표식을 보고 Missing Place 를 묻지 않는다 (P4 에서 회수).
+    field_edit: bool = False
     # 한 stop 이 두 장소를 함께 담을 때가 있다. Day 13 08:30 이
     # 'Place Richelme 목요 시장 & Pâtisserie Weibel' 인 것처럼 —
     # 시간표를 쪼개는 것이 답이 아니라(한 블록에서 둘 다 본다) 참조를
@@ -712,6 +715,7 @@ def load_days(regions_by_slug: dict[str, dict], stays: list[dict]) -> list[Day]:
                 place_ref=s.get("place_ref"),
                 place_relation=s.get("place_relation", "visit"),
                 related_place_refs=list(s.get("related_place_refs") or []),
+                field_edit=bool(s.get("fieldEdit")),
             ) for s in j.get("stops", [])],
             legs=[Leg(
                 frm=l["from"], to=l["to"], mode=l.get("mode", "walk"),

@@ -366,7 +366,12 @@
         },
         "place_relation": {
           "type": "string",
-          "enum": ["visit", "context", "transit", "nearby"],
+          "enum": [
+            "visit",
+            "context",
+            "transit",
+            "nearby"
+          ],
           "description": "visit만 Place→Day 역링크를 만든다. place_ref가 없을 때 context/transit/nearby 의미를 명시할 수 있다."
         },
         "related_place_refs": {
@@ -377,6 +382,10 @@
           },
           "uniqueItems": true,
           "description": "일정 stop에서 함께 열어보는 정본 Place 참조. 방문지·시각 의미를 바꾸지 않는 부가 링크다."
+        },
+        "fieldEdit": {
+          "type": "boolean",
+          "description": "현장 웹앱이 추가한 스톱 — 확정 사실·장소 연결 가드에서 면제되는 표식"
         }
       },
       "additionalProperties": false

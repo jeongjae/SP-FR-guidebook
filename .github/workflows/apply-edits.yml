@@ -45,6 +45,7 @@ jobs:
         run: |
           python3 build/site.py
           python3 build/app_check.py --static
+          python3 build/place_relationship_audit.py
           python3 scripts/validate_itinerary.py
 
       - name: Commit to main
@@ -52,7 +53,8 @@ jobs:
         run: |
           git config user.name "spfr-apply-edits[bot]"
           git config user.email "apply-edits@users.noreply.github.com"
-          git add data/field-notes.json data/booking-overrides.json data/field-edits/state.json
+          git add data/field-notes.json data/booking-overrides.json \
+            data/field-edits/state.json data/daily-cards source/CURRENT/30_Places
           git commit -m "[apply-edits] fold field edits into canonical data"
           git pull --rebase origin main
           git push origin main

@@ -144,6 +144,16 @@ def browser_check() -> int:
             page.goto(f"{base}/app/index.html#/sync")
             page.wait_for_selector("text=GitHub 연결", timeout=10000)
 
+            # 구조 편집 — 스톱 추가 폼 → 로컬 오버레이 렌더 → 재로드 지속
+            page.goto(f"{base}/app/index.html#/day/21")
+            page.wait_for_selector("button:has-text('스톱 추가')", timeout=10000)
+            page.click("button:has-text('스톱 추가')")
+            page.fill(".edit-form input[name='name']", "스모크 젤라토")
+            page.click(".edit-form button:has-text('저장')")
+            page.wait_for_selector("text=스모크 젤라토", timeout=5000)
+            page.reload()
+            page.wait_for_selector("text=스모크 젤라토", timeout=15000)
+
             fatal = [e for e in errors if "favicon" not in e]
             if fatal:
                 problems.append("콘솔 오류: " + " | ".join(fatal[:3]))

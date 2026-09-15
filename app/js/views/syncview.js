@@ -6,7 +6,9 @@ import { esc, el, fmtTs } from "../ui.js";
 
 const OP_LABEL = {
   "note": "메모", "set-visited": "방문 체크", "check-action": "액션 처리",
-  "set-booking": "예약 상태",
+  "set-booking": "예약 상태", "set-field": "스톱 수정", "set-day-meta": "하루 수정",
+  "add-stop": "스톱 추가", "remove-stop": "스톱 삭제", "move-stop": "스톱 이동",
+  "prose-set-section": "본문 편집",
 };
 
 export async function syncView(root) {
