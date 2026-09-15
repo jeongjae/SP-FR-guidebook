@@ -70,3 +70,21 @@ export async function eventDelete(id) {
   const d = await ready();
   await tx(d, ["events"], "readwrite", (t) => del(t.objectStore("events"), id));
 }
+
+export async function peerEventsReplace(events) {
+  const d = await ready();
+  await tx(d, ["peerEvents"], "readwrite", async (t) => {
+    const store = t.objectStore("peerEvents");
+    await new Promise((res, rej) => {
+      const r = store.clear(); r.onsuccess = res; r.onerror = () => rej(r.error);
+    });
+    for (const e of events) await put(store, e);
+  });
+}
+
+export async function peerEventsAll() {
+  const d = await ready();
+  const rows = await tx(d, ["peerEvents"], "readonly",
+    (t) => getAll(t.objectStore("peerEvents")));
+  return rows.sort((a, b) => (a.id < b.id ? -1 : 1));
+}

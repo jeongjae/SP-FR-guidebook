@@ -1,9 +1,10 @@
 /* 부팅: DB 열기 → 스냅샷 확보(온라인이면 갱신) → 라우터 시작 → SW 등록. */
 import { ready } from "./db.js";
-import { ensureSnapshot, pendingCount } from "./sync.js";
+import { ensureSnapshot, pendingCount, fullSync } from "./sync.js";
+import { getToken } from "./github.js";
 import { startRouter } from "./router.js";
 
-export const APP_VERSION = "p1.0";
+export const APP_VERSION = "p2.0";
 
 async function updateSyncDot() {
   const dot = document.getElementById("sync-dot");
@@ -24,6 +25,15 @@ async function updateSyncDot() {
   await updateSyncDot();
   document.addEventListener("spfr:event-appended", updateSyncDot);
   document.addEventListener("spfr:rerender", updateSyncDot);
+
+  // PAT 이 있으면 시작·온라인 복귀 때 조용히 한 사이클 동기화한다.
+  const autoSync = async () => {
+    if (navigator.onLine === false) return;
+    if (!(await getToken())) return;
+    try { await fullSync(); } catch (e) { console.warn("autosync", e); }
+  };
+  addEventListener("online", autoSync);
+  autoSync();
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch((err) =>

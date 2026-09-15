@@ -23,11 +23,12 @@ export async function bookingsView(root) {
 
   const stays = el('<div class="card"><h2>숙소</h2></div>');
   for (const a of data.accommodations) {
-    const effective = a.localStatus || a.status;
+    const effective = a.effectiveStatus || a.localStatus || a.status;
     const row = el(`<div class="stop">
       <div class="title-row"><div class="name">${esc(a.base)} · ${esc(String(a.nights))}박</div>${statusBadge(effective)}</div>
       <div class="summary">${esc(fmtDate(a.checkIn))} → ${esc(fmtDate(a.checkOut))}${a.address ? " · " + esc(a.address) : ""}</div>
-      ${a.localStatus ? `<div class="summary">✎ 로컬 변경: ${esc(a.localStatus)}${a.localNote ? " — " + esc(a.localNote) : ""}</div>` : ""}
+      ${a.localStatus ? `<div class="summary">✎ 로컬 변경: ${esc(a.localStatus)}${a.localNote ? " — " + esc(a.localNote) : ""}</div>`
+        : a.syncedStatus ? `<div class="summary">☁ 반영됨: ${esc(a.syncedStatus)}${a.syncedNote ? " — " + esc(a.syncedNote) : ""}</div>` : ""}
       <div class="notes">${notesHtml(a.notes)}</div>
       <div class="row btns"></div>
     </div>`);
@@ -39,12 +40,13 @@ export async function bookingsView(root) {
   const res = el('<div class="card"><h2>예약</h2></div>');
   const rows = [...data.reservations].sort((x, y) => String(x.date || "9999").localeCompare(String(y.date || "9999")));
   for (const r of rows) {
-    if (r.status === "제외") continue;
-    const effective = r.localStatus || r.status;
+    if ((r.effectiveStatus || r.status) === "제외") continue;
+    const effective = r.effectiveStatus || r.localStatus || r.status;
     const row = el(`<div class="stop">
       <div class="title-row"><div class="name">${esc(r.name)}</div>${statusBadge(effective)}</div>
       <div class="summary">${esc(fmtDate(r.date))}${r.time ? " · " + esc(String(r.time)) : ""}${r.category ? " · " + esc(r.category) : ""}</div>
-      ${r.localStatus ? `<div class="summary">✎ 로컬 변경: ${esc(r.localStatus)}${r.localNote ? " — " + esc(r.localNote) : ""}</div>` : ""}
+      ${r.localStatus ? `<div class="summary">✎ 로컬 변경: ${esc(r.localStatus)}${r.localNote ? " — " + esc(r.localNote) : ""}</div>`
+        : r.syncedStatus ? `<div class="summary">☁ 반영됨: ${esc(r.syncedStatus)}${r.syncedNote ? " — " + esc(r.syncedNote) : ""}</div>` : ""}
       <div class="notes">${notesHtml(r.notes)}</div>
       <div class="row btns"></div>
     </div>`);
