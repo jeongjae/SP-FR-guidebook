@@ -135,6 +135,31 @@ def _bookings_payload() -> dict:
             "overrides": overrides.get("overrides", {})}
 
 
+def _field_state_payload() -> dict:
+    """적용이 끝난 현장 편집(메모·체크)과 기기별 커서.
+
+    앱은 자기 이벤트 중 id 가 커서를 지난 것만 스냅샷 위에 겹친다 —
+    커서 이하는 이미 이 파일에 반영돼 있어 이중으로 보이지 않는다.
+    """
+    notes_path = ROOT / "data" / "field-notes.json"
+    state_path = ROOT / "data" / "field-edits" / "state.json"
+    notes = (json.loads(notes_path.read_text(encoding="utf-8"))
+             if notes_path.exists()
+             else {"notes": [], "visited": {}, "checkedActions": {}})
+    state = (json.loads(state_path.read_text(encoding="utf-8"))
+             if state_path.exists() else {"cursors": {}, "rejected": []})
+    return {"schemaVersion": SCHEMA_VERSION,
+            "notes": notes.get("notes", []),
+            "visited": notes.get("visited", {}),
+            "checkedActions": notes.get("checkedActions", {}),
+            "cursors": state.get("cursors", {}),
+            "rejected": [
+                {"id": r.get("id"), "deviceId": r.get("deviceId"),
+                 "reason": r.get("reason")}
+                for r in state.get("rejected", [])
+            ]}
+
+
 def export(trip: model.Trip) -> None:
     APP_DATA.mkdir(parents=True, exist_ok=True)
     files: list[dict] = []
@@ -151,6 +176,7 @@ def export(trip: model.Trip) -> None:
         files.append(_write(f"places/{region}.json", doc))
 
     files.append(_write("bookings.json", _bookings_payload()))
+    files.append(_write("field-state.json", _field_state_payload()))
 
     version = hashlib.sha256()
     for f in sorted(files, key=lambda x: x["path"]):
