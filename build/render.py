@@ -954,6 +954,13 @@ def build_place(p: Place, trip: Trip) -> str:
     if pqf:
         parts.append(pqf)
 
+    # 현장 편집 — 메모와 본문 수정은 웹앱이 맡는다.
+    parts.append(
+        f'<div class="btn-row" style="justify-content:center">'
+        f'<a class="btn btn-secondary" href="{rel}/app/index.html#/place/{p.slug}" '
+        f'title="현장 웹앱에서 이 장소의 메모·본문을 편집한다">'
+        f'{ic("note")}이 장소 현장 편집</a></div>')
+
     # 같은 지역의 다른 장소 — 길이 끊기지 않게 옆으로 나가는 문을 둔다
     if region:
         sibs = [x for x in region.places if x.slug != p.slug and x.summary][:6]
@@ -1109,6 +1116,14 @@ def build_day(d: Day, trip: Trip) -> str:
         # 보이는 순서 그대로 읽히게 한다 — 날짜가 먼저, Day 번호가 뒤.
         # ISO 날짜까지 붙여 툴팁만 봐도 연도를 안다.
         return f"{x.date_label} · Day {x.n} · {x.date.isoformat()}"
+
+    # 현장 편집 — 읽기는 이 페이지가 정본, 고치기는 웹앱이 맡는다.
+    # 편집 결과는 동기화 뒤 이 페이지에 다시 반영된다 (약 4~6분).
+    parts.append(
+        f'<div class="btn-row" style="justify-content:center">'
+        f'<a class="btn btn-secondary" href="{rel}/app/index.html#/day/{d.n}" '
+        f'title="현장 웹앱에서 이 날의 시간표·메모·방문체크를 편집한다">'
+        f'{ic("note")}이 날 현장 편집</a></div>')
 
     nav = []
     if prev_d:
@@ -2979,6 +2994,15 @@ def build_prepare(trip: Trip, res: dict) -> dict[str, str]:
         <h2 style="font-size:var(--t-h3);margin:0">긴급 연락처</h2>
       </div>
       <p class="meta" style="margin:0">EU 112 · 국가별 경찰/구급</p>
+    </div>
+  </a>
+  <a class="card card-link" href="{rel}/app/index.html#/bookings">
+    <div class="card-body stack-xs">
+      <div style="display:flex;align-items:center;gap:var(--s2)">
+        {ic('note')}
+        <h2 style="font-size:var(--t-h3);margin:0">현장 편집 앱</h2>
+      </div>
+      <p class="meta" style="margin:0">예약 상태·일정·메모를 폰에서 수정</p>
     </div>
   </a>
 </div>
