@@ -149,8 +149,11 @@ def browser_check() -> int:
             page.wait_for_selector("button:has-text('스톱 추가')", timeout=10000)
             page.click("button:has-text('스톱 추가')")
             page.fill(".edit-form input[name='name']", "스모크 젤라토")
+            page.fill(".edit-form input[name='start']", "15:30")
             page.click(".edit-form button:has-text('저장')")
             page.wait_for_selector("text=스모크 젤라토", timeout=5000)
+            if "15:30" not in page.content():
+                problems.append("시간 입력(type=time)이 저장되지 않았다")
             page.reload()
             page.wait_for_selector("text=스모크 젤라토", timeout=15000)
 
