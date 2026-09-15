@@ -1,1 +1,0 @@
-{"id": "01M2KEBB0WR70RHA18CFERH839", "deviceId": "dev-e2etest", "author": "jason", "ts": "2026-09-15T21:07:44.000Z", "seq": 1, "entity": {"kind": "stop", "key": "day-19/avignon-dinner"}, "op": "note", "payload": {"text": "[E2E] 앱→GitHub→정본 동기화 왕복 검증"}}
