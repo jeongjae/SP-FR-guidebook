@@ -4,7 +4,7 @@ import { ensureSnapshot, pendingCount, fullSync } from "./sync.js";
 import { getToken } from "./github.js";
 import { startRouter } from "./router.js";
 
-export const APP_VERSION = "p3.0";
+export const APP_VERSION = "p3.1";
 
 async function updateSyncDot() {
   const dot = document.getElementById("sync-dot");
