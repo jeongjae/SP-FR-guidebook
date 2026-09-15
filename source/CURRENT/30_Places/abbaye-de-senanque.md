@@ -13,15 +13,15 @@ source: source/CURRENT/30_Places/abbaye-de-senanque.md
 
 ## 현장 실행
 
-- **MUST · Day 18 · 45–90분**
+- **MUST · Day 18 오전 · 45–90분**
 - **WHY GO**: 계곡 진입 장면과 절제된 로마네스크 건축, 현재도 이어지는 수도 공동체의 공간을 경험한다.
-- **DO THIS**: MUST는 계곡 전망·외관. OPTIONAL INSIDE는 16:00 HistoPad 예약 완료 시 cloister·chapter house·dormitory → 기념품점.
+- **DO THIS**: MUST는 계곡 전망·외관. OPTIONAL INSIDE는 오전 회차(11:00 마지막 입장) HistoPad 예약 완료 시 cloister·chapter house·dormitory → 기념품점.
 - **EAT / DRINK**: 별도 식사 없음. 관람과 정숙에 집중한다.
-- **IF LATE**: Ménerbes·Goult를 줄이고 Sénanque를 유지한다.
+- **IF LATE**: 내부 관람을 빼고 외관·계곡 전망으로 대체한다. L'Isle 경유와 Avignon 체크인을 지킨다.
 
 ### Trip Layer
 
-Day 18 화요일 오후 방문한다. 월–토 비가이드 관람은 09:30–11:00 및 13:00–17:00 마지막 입장이고 HistoPad는 한국어를 포함한 11개 언어를 지원한다. 2026-08-25 공식 예매 화면에서 9/14 회차가 확인됐으나 방문일이 9/15로 바뀌었다 — 9/15 화요일 회차를 다시 예매 화면에서 확인해야 한다. 확인·예약 전까지 내부는 OPTIONAL로 둔다.
+Day 18(9/15 화) 오전, Gordes 체크아웃 직후 방문한다 — 숙소(104 Rte des Moines)가 같은 Route des Moines 선상이라 차로 약 10분이다. 월–토 비가이드 관람은 09:30–11:00 및 13:00–17:00 마지막 입장이고 HistoPad는 한국어를 포함한 11개 언어를 지원한다. 2026-08-25 공식 예매 화면에서 9/15 회차 표시를 확인했다 — 오전 회차를 예매 화면에서 재확인해 예약한다. 확인·예약 전까지 내부는 OPTIONAL로 둔다.
 
 ## 왜 가는가
 

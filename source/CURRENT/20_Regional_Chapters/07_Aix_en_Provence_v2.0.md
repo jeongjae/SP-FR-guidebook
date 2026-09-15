@@ -23,13 +23,14 @@ source_priority: "공식기관·시설·사업자 → 공식 관광기구 → �
 
 Aix-en-Provence에서는 프로방스의 시장과 구시가지 생활, 그리고 Cézanne의 흔적을 중심으로 천천히 도시를 본다. Nice까지 이어졌던 해안 중심 일정에서 벗어나 내륙 프로방스의 일상으로 들어가는 첫 거점이기도 하다.
 
-Aix 자체는 대부분 걸어서 보고, 하루는 Cassis의 항구와 Calanques를, 하루는 Marseille의 항구도시 풍경을 별도 일정으로 다녀온다. 도시 안에서는 장소의 수를 늘리기보다 시장에서 장을 보고, Vieil Aix와 Quartier Mazarin을 걷고, Cézanne이 작업했던 공간과 풍경을 연결하는 데 집중한다.
+Aix 자체는 대부분 걸어서 보고, 하루는 Marseille의 항구도시 풍경을 별도 일정으로 다녀온다. 토요일 오후에는 안도 타다오의 Château La Coste 아트센터를 차로 다녀오고, 일요일은 오전 운동과 오후 Lourmarin의 수채화 스케치로 리듬을 낮춘다. 도시 안에서는 장소의 수를 늘리기보다 시장에서 장을 보고, Vieil Aix와 Quartier Mazarin을 걷고, Cézanne이 작업했던 공간과 풍경을 연결하는 데 집중한다.
 
 ### 이번 체류의 핵심
 
 - **시장과 Vieil Aix** — Place Richelme와 구시가지 골목을 걸으며 관광지보다 생활도시의 리듬을 본다.
 - **Cézanne의 Aix** — 작업실과 도시 주변 풍경을 통해 작품보다 먼저 그가 보았던 환경을 이해한다.
-- **Cassis와 Marseille** — 작은 지중해 항구와 대도시 항구를 서로 다른 날에 경험한다.
+- **Marseille와 Château La Coste** — 대도시 항구의 하루와, 포도밭 위 안도 타다오·현대미술 산책의 반나절을 서로 다른 날에 경험한다.
+- **Lourmarin과 수채화** — 마지막 시내일 오후, 고성 마을에 자리 잡고 90분간 그림을 그린다.
 
 Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 뒤에는 일정의 밀도를 더 높이지 않는다.
 
@@ -41,9 +42,9 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 |---|---|
 | 9/10 목 | Verdon(Moustiers)에서 하산 · Route des Crêtes · Sainte-Croix · Valensole 경유 · Aix 체크인 |
 | 9/11 금 | Marseille 당일치기 (TER 이동) |
-| 9/12 토 | Aix 토요 대형시장(Richelme·Prêcheurs·Verdun) · Vieil Aix · Cézanne 아틀리에 · Musée Granet |
-| 9/13 일 | Cassis · Calanques 당일치기 |
-| 9/14 월 | Aix 체크아웃 · Lourmarin 점심 · Château de Lacoste · Gordes 2박 체크인 |
+| 9/12 토 | Aix 토요 대형시장(Richelme·Prêcheurs·Verdun) · Vieil Aix · Cézanne 아틀리에 · 오후 Château La Coste(Tadao Ando) |
+| 9/13 일 | 오전 Aix 운동 · 오후 Lourmarin — 마을·고성·수채화 스케치 |
+| 9/14 월 | Aix 체크아웃 · Roussillon · Gordes 1박 체크인 · 결혼기념일 저녁 (상세는 Luberon 장) |
 
 상세 시각, 이동, 식사, 주차와 대체 일정은 각 날짜의 Day 페이지에서 확인한다.
 
@@ -59,7 +60,7 @@ Aix에 머무는 날에는 차를 세워 두고 걸어 다니며, 당일치기 �
 
 ## 구역별 이해와 숙소 생활권
 
-Aix 체류의 거점은 구시가지 서쪽의 확정 숙소다. Vieil Aix와 Cours Mirabeau까지 걸어서 접근할 수 있어 시내 일정에는 차를 쓰지 않고, Cassis와 다음 Luberon 이동일에만 렌터카를 이용한다.
+Aix 체류의 거점은 구시가지 서쪽의 확정 숙소다. Vieil Aix와 Cours Mirabeau까지 걸어서 접근할 수 있어 시내 일정에는 차를 쓰지 않고, Château La Coste(9/12 오후)·Lourmarin(9/13 오후)과 다음 Luberon 이동일에만 렌터카를 이용한다.
 
 아침과 간단한 점심은 숙소에서 해결하고, 장보기는 Place Richelme 시장과 주변 상점을 이용한다. 도착 첫날에는 차량 진입과 주차 위치를 먼저 확인하고 이후 시내 일정 동안에는 차를 세워 두는 것을 기본으로 한다.
 
@@ -75,9 +76,9 @@ Aix 시내일에는 Rotonde–Cours Mirabeau–Parc Jourdan 방향을 30–40분
 
 Vieil Aix, Cours Mirabeau, Quartier Mazarin과 주요 시장은 도보로 이동한다. 시내 일정에는 차를 움직이지 않고 숙소 주차장에 두는 것이 기본이다.
 
-## Cassis는 렌터카
+## Château La Coste와 Lourmarin은 렌터카
 
-Cassis 당일치기에는 렌터카를 이용한다. 항구 중심부 주차가 혼잡하므로 외곽 주차장을 이용하고 도보나 셔틀로 이동한다.
+토요일 오후의 Château La Coste(편도 약 16km·25분)와 일요일 오후의 Lourmarin(편도 약 36km·40분)은 렌터카로 다녀온다. La Coste는 무료 주차장이 있고, Lourmarin은 Parking du Rayol 등 외곽 주차 후 걷는다.
 
 ## Marseille는 TER
 
@@ -85,7 +86,7 @@ Marseille 당일치기는 Aix-en-Provence역에서 TER 기차를 이용한다. �
 
 ## Luberon으로 출발하는 날
 
-체크아웃 후 렌터카로 이동한다. 이동 중 마을 주차가 잦으므로 수하물은 가림막으로 완전히 가려 외부 노출을 방지한다.
+Day 17(9/14 월) 체크아웃 후 렌터카로 Roussillon을 거쳐 Gordes로 이동한다. 이동 중 마을 주차가 잦으므로 수하물은 가림막으로 완전히 가려 외부 노출을 방지한다.
 
 ---
 
@@ -194,7 +195,7 @@ Marseille 당일치기는 Aix-en-Provence역에서 TER 기차를 이용한다. �
 
 #### Cassis & Calanques {{grade:essential|필수}}
 
-> **Editor's Verdict**: 석회암 절벽과 에메랄드빛 피오르드 만(Calanques)이 어우러진 작은 지중해 항구마을.
+> **Editor's Verdict (일정 외)**: 석회암 절벽과 에메랄드빛 피오르드 만(Calanques)이 어우러진 작은 지중해 항구마을. 이번 일정에서는 방문하지 않는다 — 9/13이 운동·Lourmarin의 날로 바뀌었다. 일정이 비면 당일치기 대안으로만 검토한다.
 
 - **체류/요금**: 당일치기 5–7시간 · 유람선 투어 별도
 - **상세 가이드**: [Cassis 항구 가이드](../places/cassis.html) · [Calanques 유람선 가이드](../places/calanques.html)
@@ -211,7 +212,7 @@ Marseille 당일치기는 Aix-en-Provence역에서 TER 기차를 이용한다. �
 
 #### Chez Gilbert {{grade:essential|필수}}
 
-> **Editor's Verdict**: 카시스 항구 수변에 자리한 전통 부야베스(Bouillabaisse) 및 지중해 해산물 전문 식당.
+> **Editor's Verdict (일정 외)**: 카시스 항구 수변에 자리한 전통 부야베스(Bouillabaisse) 및 지중해 해산물 전문 식당. Cassis를 가는 경우에만 쓴다.
 
 - **상세 가이드**: [Chez Gilbert 전체 가이드 보기](../places/chez-gilbert-cassis.html)
 
@@ -242,7 +243,7 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 ### 방문 업소
 
 - **Pâtisserie Weibel (Aix)** — Place Richelme 시장 인근(2 Rue Chabrier) 테라스에서 커피와 함께 칼리송과 페이스트리를 즐길 수 있다. ([상세 정보](../places/patisserie-weibel.html))
-- **Chez Gilbert (Cassis)** — 카시스 항구 수변에서 생선구이와 부야베스를 다룬다. ([상세 정보](../places/chez-gilbert-cassis.html))
+- **Chez Gilbert (Cassis)** — 일정 외 대안. Cassis를 가는 경우에만 — 항구 수변에서 생선구이와 부야베스를 다룬다. ([상세 정보](../places/chez-gilbert-cassis.html))
 
 ### 식사 원칙
 
@@ -259,12 +260,12 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 
 ## Day 15 시내일 우천
 
-- 구시가지 야외 골목 걷기 비중을 줄이고 Musée Granet 실내 미술관과 Atelier de Cézanne 내부 관람에 시간을 더 배정한다.
+- 구시가지 야외 골목 걷기 비중을 줄이고 Atelier de Cézanne 내부 관람과 Château La Coste의 아트센터·파빌리온 실내 비중을 높인다. 야외 아트워크가 어려우면 Musée Granet(화–일 10:00–18:00)을 실내 대안으로 쓴다.
 
-## Day 16 Cassis 우천/기상악화
+## Day 16 Lourmarin 우천/피로
 
-- 강풍이나 우천으로 Calanques 유람선이 결항될 경우 항구 주변 산책 및 실내 카페 휴식 위주로 전환한다.
-- 필요 시 Fondation Vasarely 등 실내 미술관으로 대체한다.
+- 오전 운동은 실내 스트레칭으로 바꾸고, Lourmarin에서는 수채화 스케치를 카페 실내 창가 자리로 옮긴다.
+- 오후 전체가 무너지면 Lourmarin을 접고 Musée Granet 실내 관람으로 전환한다.
 
 ## Day 14 Marseille 우천
 
@@ -288,9 +289,10 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 ### 핵심 예약 및 운영 확인
 
 - **Atelier de Cézanne**: 정원이 제한되어 온라인 사전 시간지정 예약을 강력히 권장한다. 예약해야 해당 시간대 입장이 보장된다.
-- **Musée Granet**: 현장 발권 또는 사전 예매가 가능하며 월요일은 정기 휴관이다.
+- **Château La Coste**: 연중무휴 10:00–19:00 (공식 사이트 2026-09-16 확인). 아트워크 요금·마지막 입장은 현장 재확인한다.
+- **Musée Granet**: 우천 대안. 현장 발권 또는 사전 예매가 가능하며 월요일은 정기 휴관이다.
 - **Marseille TER**: 현장 자동발매기 또는 SNCF Connect 앱을 통해 탑승 당일 유연하게 발권한다.
-- **차량 안전**: 9/13 Luberon 이동 시 짐이 실린 차량은 반드시 트렁크 가림막을 닫고 귀중품(여권·카메라·노트북)은 휴대한다.
+- **차량 안전**: 9/14 Luberon 이동 시 짐이 실린 차량은 반드시 트렁크 가림막을 닫고 귀중품(여권·카메라·노트북)은 휴대한다.
 
 ---
 
@@ -307,10 +309,11 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 - [x] Nice-Ville 역 09:00 렌터카 인수 확인
 - [x] Aix 숙소 2026-09-10~09-14 (4박) 예약 확정 (날짜 변경 완료)
 - [ ] Airbnb 체크인 시간·입실방법·주차 위치 재확인
-- [ ] Atelier de Cézanne 9/10 온라인 예약 확정
-- [ ] Cassis 유람선 운항 및 주차 운영 상태 확인
+- [ ] Atelier de Cézanne 9/12 온라인 예약 확정
+- [ ] Château La Coste 아트워크 요금·마지막 입장 확인
 - [ ] Marseille TER 열차 운행 및 SNCF Connect 시간표 확인
-- [ ] 9/13 Lourmarin 점심·Gordes 숙소 체크인·주차 동선 확인
+- [ ] Château de Lourmarin 9/13(일) 개관 시간 확인
+- [ ] 9/14 Roussillon 경유·Gordes 숙소 체크인·주차 동선 확인
 
 ### 공식 정보원
 
@@ -318,7 +321,7 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 2. Ville d’Aix-en-Provence — https://www.aixenprovence.fr/
 3. Cézanne en Provence — https://www.cezanne-en-provence.com/
 4. Musée Granet — https://www.museegranet-aixenprovence.fr/en/
-5. Cassis Tourism — https://www.ot-cassis.com/en/
+5. Château La Coste — https://chateau-la-coste.com/
 6. Mucem Marseille — https://www.mucem.org/en/
 
 ---
@@ -334,7 +337,8 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 | Atelier de Cézanne (말년 1902–1906 작업실·북향 채광창·정물 오브제) | 복수 출처 확인 |
 | Musée Granet (옛 몰타 기사단 수도원·세잔 원작·장 플랑크 컬렉션) | 복수 출처 확인 |
 | Terrain des Peintres (생트 빅투아르 산 조망 터·세라믹 화판) | 복수 출처 확인 |
-| Cassis & Calanques (석회암 절벽·유람선 투어·Port-Miou) | 복수 출처 확인 |
+| Château La Coste (Tadao Ando Art Centre·2750 Route de la Cride, Le Puy-Sainte-Réparade·연중무휴 10:00–19:00) | 공식 확인 (2026-09-16) |
+| Lourmarin (르네상스 샤토·카뮈 묘소·Parking du Rayol) | 복수 출처 확인 |
 | Marseille (TER 왕복 36~45분·Vieux-Port·Le Panier·Mucem·Fort Saint-Jean) | 복수 출처 확인 |
 | 프랑스 고속도로(A- 유료)·연료 표기(SP95/Gazole)·원형교차로 규칙 | 확인 |
 | **운영시간·요금 전반** | **[출발 전 재확인]** — 계절 및 현장 사정에 따른 변동 가능 |
@@ -397,9 +401,9 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 ---
 
 ## Day 15 — 9월 12일 토요일
-### Aix 토요 대형시장, Vieil Aix, 세잔 아틀리에와 Musée Granet
+### Aix 토요 대형시장, 세잔 아틀리에와 Château La Coste (Tadao Ando)
 
-*   **오늘의 결론**: 엑상 구시가지의 목요 대형 시장과 세잔의 아틀리에, 그라네 미술관을 도보로 천천히 잇는 날이다.
+*   **오늘의 결론**: 오전은 토요 대형시장과 세잔의 아틀리에를 도보로 잇고, 오후는 렌터카로 안도 타다오의 Château La Coste 아트센터를 다녀오는 날이다.
 
 **오늘의 피로도: 3/5.**
 
@@ -407,47 +411,46 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:30–10:00 | **Aix 토요시장 — Place Richelme + Places Comtales** | Richelme의 매일 식품시장 뒤 Places Comtales·Cours Mirabeau·Forbin 목요 확장 구역을 잇고 Maison Weibel에서 커피 |
-| 10:00–11:45 | **Vieil Aix 구시가지** | 귀족 저택, 알베르타스 광장, 생소뵈르 대성당 골목 산책 |
-| 12:00–13:15 | 구시가지 점심 | 시장 조달 음식 또는 구시가지 테라스 비스트로 점심 |
-| 13:30–15:00 | **Atelier de Cézanne** | 09:00–18:00 운영, 자율관람은 11:30부터. €9.50 시간대 예약을 먼저 확보한다 |
-| 15:30–17:15 | **Musée Granet** | €14 통합권으로 세잔 컬렉션과 기본 입장에 포함된 McCartney전을 본다. Granet XXe와 혼동하지 않는다 |
-| 17:30–19:30 | **Cours Mirabeau & 마자랭 지구** | 가로수길과 분수 산책 후 저녁 식사 |
-| 19:30–20:30 | 숙소 귀환 및 휴식 | 2 Place Coimbra 숙소로 돌아간다 |
+| 08:30–10:00 | **Aix 토요시장 — Place Richelme + Places Comtales** | Richelme의 매일 식품시장 뒤 Places Comtales·Cours Mirabeau·Forbin 토요 확장 구역을 잇고 Maison Weibel에서 커피 |
+| 10:00–11:15 | **Vieil Aix 구시가지** | 귀족 저택, 알베르타스 광장, 생소뵈르 대성당 골목 산책 (압축) |
+| 11:30–12:45 | 구시가지 점심 | 테라스 비스트로 점심 — 오후 운전이 있으므로 무알코올 |
+| 13:00–14:15 | **Atelier de Cézanne** | 09:00–18:00 운영, 자율관람은 11:30부터. €9.50 시간대 예약을 먼저 확보한다 |
+| 15:15–18:00 | **Château La Coste — Tadao Ando Art Centre** | 차량 약 25분(2750 Route de la Cride, Le Puy-Sainte-Réparade). 아트·건축 산책로 약 2시간, 연중무휴 10:00–19:00 |
+| 18:45–19:45 | **Cours Mirabeau & 마자랭 지구** | 복귀 후 가로수길과 분수 산책, 저녁 식사 |
+| 19:45–20:30 | 숙소 귀환 및 휴식 | 2 Place Coimbra 숙소로 돌아간다 |
 
-**지연 대응 순서**: Atelier 예약 slot을 고정 anchor로 삼는다. 오전 지연은 Vieil Aix를 줄이고 오후 지연은 Granet을 60–75분으로 압축한다. 우천 시 Atelier와 Granet을 우선하고 야외 산책을 축소한다.
+**지연 대응 순서**: Atelier 예약 slot을 고정 anchor로 삼는다. slot이 오후 늦게만 남으면 La Coste를 먼저 가고 아틀리에를 17:00 마지막 입장으로 돌린다. 우천 시 La Coste 야외 아트워크를 축소하고 Musée Granet(€14, McCartney전 포함)을 실내 대안으로 쓴다. 기존 일정의 Château de Lacoste(사드 성)와는 다른 장소다.
 
 ---
 
 ## Day 16 — 9월 13일 일요일
-### Cassis & Calanques — 석회암 절벽과 지중해
+### 오전 Aix 운동, 오후 Lourmarin — 마을·고성·수채화
 
-*   **오늘의 결론**: 렌터카로 카시스 항구로 이동하여 유람선으로 칼랑크 피오르드 절벽을 감상하고 돌아오는 해안 당일치기 날이다.
+*   **오늘의 결론**: 오전은 Aix에서 몸을 풀고, 오후는 Lourmarin 한 곳만 여유롭게 — 마을과 르네상스 성을 보고 90분간 수채화를 그리는 회복의 날이다. 관광지를 더 붙이지 않는다.
 
-**오늘의 피로도: 3/5.**
+**오늘의 피로도: 2/5.**
 
 #### 실행 시간표
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:30–09:00 | Aix 숙소 출발 | A52 고속도로 경유 카시스로 이동 (약 48km) |
-| 09:35–09:50 | Cassis 도착 & 주차 | 무료 Parking des Gorguettes에서 연중 운행 Bus 372로 centre-ville 진입. 373은 일요일 운행을 가정하지 않는다 |
-| 09:50–11:30 | **3 Calanques 유람선** | Port-Miou·Port-Pin·En-Vau를 보는 약 1시간 코스와 발권·승선 buffer. 8 Calanques로 임의 변경하지 않는다 |
-| 11:30–12:30 | Cassis 항구 산책·커피 | 하선 뒤 항구를 걷고 점심 전 완충 시간을 둔다 |
-| 12:30–14:00 | Cassis 점심 | Chez Gilbert 등 항구 수변 식당에서 신선한 지중해 해산물 식사 |
-| 14:15–15:15 | **선택: Port-Miou 해안 산책** | 피로·기상·셔틀 제약이 있으면 가장 먼저 삭제한다 |
-| 15:15–15:45 | Gorguettes P+R 복귀·차량 회수 | Cassis centre에서 Bus 372로 Parking des Gorguettes에 돌아가 차량을 회수한다 |
-| 15:45–16:45 | Parking des Gorguettes → Aix 복귀 | 차량 회수 후 A52 경유 숙소 귀환 운전 |
-| 17:15–20:30 | 숙소 복귀 및 저녁 | 휴식 및 다음 날 Marseille 기차 이동 준비 |
+| 08:30–09:45 | **오전 운동 — Rotonde·Cours Mirabeau·Parc Jourdan** | 왕복 4–6km 러닝/워킹. 일요일 아침의 한적한 구시가지 |
+| 10:30–12:00 | 숙소 브런치·짐 1차 정리 | 시장 조달 재료로 브런치. 수채화 도구(스케치북·물통·붓) 준비 |
+| 12:00–13:00 | Aix → Lourmarin 이동 | D943 약 36km·40분 + 주차 버퍼. Parking du Rayol 우선 |
+| 13:00–14:45 | **Lourmarin 마을·Château** | 중심 골목 → Église → Beffroi → Château de Lourmarin(€7.50) 외관/내부 → 카뮈 묘소 |
+| 14:45–16:15 | **수채화 스케치 · 90분** | 이날의 목적 블록. Château가 보이는 자리에서 그림. 다른 일정으로 대체하지 않는다 |
+| 16:15–17:15 | 카페·갤러리 마무리 산책 | 플라타너스 카페 거리에서 차 한 잔, 갤러리·서점 |
+| 17:15–18:00 | Lourmarin → Aix 복귀 | D943 복귀 운전 |
+| 18:00–20:30 | 숙소권 저녁·이동 준비 | 익일 체크아웃·Roussillon 경유·결혼기념일 저녁(La Trinquette) 확인 |
 
-**기상·차량 대응**: 보트가 취소되면 Cassis 마을·항구로 전환한다. Port-Miou를 생략하면 점심 후 Cassis centre에서 Bus 372로 Gorguettes P+R에 복귀한다. Bus 372 이상 시 현장 대체교통을 확인하고 차량을 회수한 뒤에만 Aix로 출발한다. Cap Canaille/Route des Crêtes는 도로 개방을 확인한 뒤에만 검토하며 산불·강풍 때 강행하거나 Marseille로 자동 전환하지 않는다.
+**우천·피로 대응**: 운동은 실내 스트레칭으로 바꾸고 스케치는 카페 실내 창가로 옮긴다. 오후 전체가 무너지면 Lourmarin을 접고 Musée Granet 실내 관람으로 전환한다. 9/12~13 Lourmarin의 Salon du Carnet de Voyage(여행스케치 행사)와 겹치면 주차 혼잡에 대비한다.
 
 ---
 
 ## Day 17 — 9월 14일 월요일
-### Aix 체크아웃, Lourmarin을 거쳐 Gordes로
+### Aix 체크아웃, Roussillon을 거쳐 Gordes로 — 결혼기념일
 
-*   **오늘의 결론**: 엑상 체크아웃 후 Lourmarin에서 마을과 점심을 충분히 즐기고 Gordes 2박 거점으로 들어가는 이동일이다. Bonnieux와 Lacoste는 체크인 시각을 해치지 않을 때만 붙인다.
+*   **오늘의 결론**: 엑상 4박을 마치고 Roussillon의 오크르길을 걸은 뒤 Gordes 1박 거점에 16:00 체크인하는 이동일이다. 저녁은 La Trinquette 결혼기념일 만찬으로 고정한다.
 
 **오늘의 피로도: 3/5.**
 
@@ -455,11 +458,13 @@ Place Richelme 시장은 Aix에서 장보기의 기준점이다. 아침에 청�
 
 | 시간 | 일정 | 실행 포인트 |
 |---|---|--- |
-| 08:30–09:00 | 체크아웃 및 짐 적재 | 숙소 정리 및 렌터카 수하물 적재 (가림막 확인) |
-| 09:00–10:00 | Aix → Lourmarin 이동 | 약 36km·40분에 주차 버퍼를 더한다. |
-| 10:00–12:15 | **Lourmarin · MUST** | Château 외관/선택 관람 → 중심 골목 → Beffroi → 카페·갤러리 |
-| 12:15–13:30 | **Lourmarin 점심** | La Récréation 우선 후보. 9/14 예약 가능 여부 재확인 |
-| 13:30 이후 | **Bonnieux → Lacoste · OPTIONAL** | 여유 충분 시 둘 다, 보통 Bonnieux만, 지연 시 모두 생략 |
-| 16:00–17:00 | **Gordes 체크인 · MUST** | 1박차. 대표 전망대와 구시가지는 해질 무렵 산책 |
+| 09:00–09:45 | 체크아웃 및 짐 적재 | 숙소 정리 및 렌터카 수하물 적재 (가림막 확인) |
+| 09:45–11:00 | Aix → Roussillon 이동 | 약 50km·1시간 5분에 주차 버퍼를 더한다 |
+| 11:00–13:00 | **Roussillon · Sentier des Ocres · MUST** | 외곽 주차 → 오커길(30~60분) → Place de la Mairie → 붉은 골목·전망 |
+| 13:00–14:15 | Roussillon권 점심 | 가볍게 — 저녁이 결혼기념일 만찬이다 |
+| 14:45–15:30 | Gordes 대표 전망대 정차 · OPTIONAL | D15 진입로 파노라마. 늦으면 생략 |
+| 16:00–16:45 | **Gordes 체크인 · MUST** | 104 Rte des Moines · 확정 [CONFIRMED]. 주차·야간 출입 확인 |
+| 17:00–18:45 | Gordes 전망과 구시가지 | Place Genty Pantaly → Château → Saint-Firmin → calade 골목 |
+| 19:00–21:00 | **La Trinquette 결혼기념일 저녁 · MUST** | 55 Rue des Tracapelles · 화 휴무라 월요일 영업 · 04 90 72 11 62 좌석 재확인 |
 
-**IF LATE:** Lacoste를 먼저 빼고, 그래도 늦으면 Bonnieux를 뺀다. Lourmarin 점심과 Gordes 체크인은 유지한다.
+**IF LATE:** 전망대 정차를 빼고 체크인과 19:00 저녁 시각을 지킨다. 상세는 Luberon 장과 Day 17 정본을 따른다.

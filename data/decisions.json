@@ -102,18 +102,21 @@
     },
     {
       "id": "DEC-A07",
-      "date": "2026-08-16",
-      "decision": "Avignon 체류 9/16–9/20",
+      "date": "2026-09-16",
+      "decision": "Avignon 체류 9/15–9/20 (5박) — 실제 예약 반영 (구 9/16–9/20 4박 폐기)",
       "forbidden_patterns": [
         "9/17–9/21",
         "9월 17일–9월 21일",
-        "9/17-9/21"
+        "9/17-9/21",
+        "Avignon 4박",
+        "아비뇽 4박",
+        "9/16 체크인 (4박"
       ],
       "required_patterns": [],
       "scope": [
         "09_Avignon_*.md"
       ],
-      "note": "본문 일정표가 정본. 예약카드·확인목록·대체안이 9/17–9/21 로 남아 있다"
+      "note": "2026-09-16 실제 여행 기록 반영 — 10 Rue d'Annanelle, 84000 Avignon 확정"
     },
     {
       "id": "DEC-A08",
@@ -146,19 +149,21 @@
     },
     {
       "id": "DEC-A10",
-      "date": "2026-08-17",
-      "decision": "Gordes 2박 숙소는 현지에서 결정한다 — 사전 문의·예약 없음",
+      "date": "2026-09-16",
+      "decision": "Gordes 1박(9/14~9/15) 숙소 확정 — 104 Rte des Moines, 84220 Gordes. '현지 결정' 방침 폐기",
       "forbidden_patterns": [
         "four-night stay",
         "13 to 17 September",
         "4박 문의",
         "숙소 문의문",
-        "문의 메일 템플릿"
+        "문의 메일 템플릿",
+        "현지에서 결정",
+        "후보 미정"
       ],
       "scope": [
         "08_Luberon_*.md"
       ],
-      "note": "기존 DEC-039(현지 결정 방침)과 동일 취지. 문의문 템플릿 자체를 삭제한다. Gordes 체류는 2박(9/13–15)이며 9/15 Avignon으로 이동한다."
+      "note": "2026-09-16 실제 예약 반영. Gordes 2박 구조는 DEC-EX16 으로 대체"
     },
     {
       "id": "DEC-A11",
@@ -207,11 +212,12 @@
     {
       "id": "DEC-RS01-A",
       "date": "2026-08-28",
-      "decision": "Verdon(Moustiers) 1박 삽입 — 9/9~9/10. Aix 4박 9/10~9/14(확정, 날짜변경 완료), Gordes 2박 9/14~9/16(미정), Avignon 4박 9/16~9/20(미정). 총 42박 불변, Day 번호 재번호 없음",
+      "decision": "Verdon(Moustiers) 1박 삽입 — 9/9~9/10. Aix 4박 9/10~9/14(확정), Gordes 1박 9/14~9/15(확정), Avignon 5박 9/15~9/20(확정). 총 42박 불변, Day 번호 재번호 없음 (2026-09-16 실제 예약 반영으로 Gordes·Avignon 배분 개정)",
       "forbidden_patterns": [
-        "Avignon 5박",
-        "아비뇽 5박",
-        "9/15~9/20 5박",
+        "Gordes 2박",
+        "고르드 2박",
+        "9/14~9/16 2박",
+        "Avignon 4박(",
         "2026-09-09(수) 15:00 체크인",
         "Aix 숙소 2026-09-09",
         "9/13 Gordes 체크인",
@@ -227,27 +233,29 @@
         "09_Avignon_*.md"
       ],
       "also_check_daily_cards": true,
-      "note": "근거: RS01_VERDON_RESCHEDULE_INSTRUCTION_v1.0.md (Jason 2026-08-28 승인). 렌터카 9/9 인수·9/17 반납 하드앵커 불변"
+      "note": "RS01 재배치 + 2026-09-16 실제 일정 개정. 세부는 DEC-EX16"
     },
     {
       "id": "DEC-RS01-B",
       "date": "2026-08-28",
-      "decision": "Marseille은 Aix 체류에 유지하고 금요일(9/11)로 이동. Aix 시장일은 토요일(9/12) 대형시장으로 배치. Cassis는 일요일(9/13). Saint-Rémy 수요시장은 9/16 이동일에 통합",
+      "decision": "Marseille은 Aix 체류에 유지하고 금요일(9/11)로 이동. Aix 시장일은 토요일(9/12) 대형시장으로 배치. 9/12 오후는 Château La Coste(Tadao Ando Art Centre). 9/13(일)은 오전 Aix 운동·오후 Lourmarin(수채화). Cassis·Calanques 는 일정에서 제외. Saint-Rémy 수요시장은 9/16 당일치기로 유지",
       "forbidden_patterns": [
         "Aix 목요시장",
-        "목요 시장(Place Richelme)"
+        "목요 시장(Place Richelme)",
+        "Cassis 당일치기",
+        "Calanques 당일치기"
       ],
       "required_patterns": [],
       "scope": [
         "07_Aix_*.md"
       ],
       "also_check_daily_cards": true,
-      "note": "요일 제약(수요시장·화요 Gordes장·토요 Aix장·Lacoste 월 개관)이 배치를 결정"
+      "note": "2026-09-16 실제 일정 반영 — Cassis 하루가 운동+Lourmarin 으로 대체됨"
     },
     {
       "id": "DEC-RS01-C",
       "date": "2026-08-28",
-      "decision": "Orange·Fontaine-de-Vaucluse는 일정에서 제외. L'Isle-sur-la-Sorgue는 Day 18(9/15 화) 오후 선택 왕복으로 이동. Ménerbes·Goult는 Day 18 기본 일정에서 제외",
+      "decision": "Orange·Fontaine-de-Vaucluse는 일정에서 제외. L'Isle-sur-la-Sorgue는 Day 18(9/15 화) Sénanque 이후 Avignon 이동 경로의 필수 경유지다. Ménerbes·Goult·Bonnieux·Lacoste 는 기본 일정에서 제외",
       "forbidden_patterns": [
         "Orange Bonus"
       ],
@@ -256,7 +264,28 @@
         "08_Luberon_*.md",
         "09_Avignon_*.md"
       ],
-      "note": "아비뇽 4박 축소에 따른 삭제 레버 정리"
+      "note": "2026-09-16 개정 — L'Isle 이 선택 왕복에서 이동일 필수 경유로 승격"
+    },
+    {
+      "id": "DEC-EX16",
+      "date": "2026-09-16",
+      "decision": "실제 여행 일정 반영 — D15(9/12) 시장·Atelier de Cézanne·Château La Coste, D16(9/13) 오전 운동·오후 Lourmarin(수채화 90분), D17(9/14) Aix 체크아웃→Roussillon→Gordes 16:00 체크인·La Trinquette 결혼기념일 저녁(변경 금지), D18(9/15) Gordes 시장→Sénanque→L'Isle→Avignon 체크인·장보기·숙소 저녁, D19(9/16) Avignon⇄Saint-Rémy·Les Baux 당일치기. 숙박 Aix 4박·Gordes 1박·Avignon 5박",
+      "forbidden_patterns": [
+        "Gordes 2박차",
+        "Gordes 복귀와 2박차",
+        "Avignon 체크인 (4박",
+        "Gordes 숙소 (후보 미정)",
+        "La Terrasse du Clocher"
+      ],
+      "required_patterns": [],
+      "scope": [
+        "03_Whole_Trip_*.md",
+        "07_Aix_*.md",
+        "08_Luberon_*.md",
+        "09_Avignon_*.md"
+      ],
+      "also_check_daily_cards": true,
+      "note": "숙소 정본 주소 — Gordes: 104 Rte des Moines, 84220 Gordes, France · Avignon: 10 Rue d'Annanelle, 84000 Avignon, France"
     }
   ]
 }

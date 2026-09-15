@@ -19,7 +19,7 @@
       "grade": "essential",
       "facts": {
         "hours": {
-          "value": "월–토 비가이드 09:30–11:00(마지막 입장)·13:00–17:00(마지막 입장). 9/14(월) 방문 가능",
+          "value": "월–토 비가이드 09:30–11:00(마지막 입장)·13:00–17:00(마지막 입장). 9/15(화) 오전 방문 가능",
           "confidence": "official",
           "source": "https://www.senanque.fr/visite-de-labbaye/",
           "verified_at": "2026-08-23",
@@ -33,7 +33,7 @@
           "ttl_days": 180
         },
         "booking": {
-          "value": "HistoPad는 한국어 포함 11개 언어 지원. 온라인 예약 가능 여부와 9/14 슬롯은 출발 직전 재확인",
+          "value": "HistoPad는 한국어 포함 11개 언어 지원. 온라인 예약 가능 여부와 9/15 오전 슬롯은 출발 직전 재확인",
           "confidence": "official",
           "source": "https://www.senanque.fr/visite-de-labbaye/",
           "verified_at": "2026-08-23",
@@ -4934,7 +4934,7 @@
           "ttl_days": 30
         },
         "note": {
-          "value": "9/16(수) 첫 저녁 배정 불가",
+          "value": "9/15(화) 도착 첫 저녁(숙소 식사)에는 쓰지 않는다 — 체류 중 저녁 후보",
           "confidence": "official",
           "source": "2026-08-17 신규확정 v2.1 (복구본)",
           "verified_at": "2026-08-17",

@@ -796,38 +796,39 @@
     },
     {
       "date": "2026-09-12",
-      "city": "Aix-en-Provence",
-      "title": "Aix 토요 대형시장 · Vieil Aix · Atelier des Lauves · Granet",
+      "city": "Aix-en-Provence · Le Puy-Sainte-Réparade",
+      "title": "Aix 토요 대형시장 · Atelier des Lauves · Château La Coste",
       "center": [
-        43.534,
-        5.446
+        43.585,
+        5.44
       ],
-      "zoom": 14,
-      "defaultMode": "walking",
+      "zoom": 12,
+      "defaultMode": "driving",
       "stops": [
         {
           "placeId": "aix-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:15 출발",
-          "note": "도보 이동일."
+          "order": 1,
+          "plannedTime": "08:15 출발"
         },
         {
           "placeId": "place-richelme",
-          "order": 1,
-          "plannedTime": "08:30–10:00",
-          "note": "토요시장 — Richelme·Prêcheurs·Verdun까지 주간 최대 규모."
+          "order": 2,
+          "plannedTime": "08:30–10:00"
         },
         {
           "placeId": "atelier-des-lauves",
-          "order": 2,
-          "plannedTime": "13:30–15:00",
-          "note": "예약 필수 — 7/4~9/30 매일 09:00–18:00, 마지막 입장 17:00 (2026-08-28 공식 확인)."
+          "order": 3,
+          "plannedTime": "13:00–14:15"
         },
         {
-          "placeId": "musee-granet",
-          "order": 3,
-          "plannedTime": "15:30–17:30",
-          "note": "피로 시 60–75분으로 압축."
+          "placeId": "chateau-la-coste",
+          "order": 4,
+          "plannedTime": "15:15–18:00"
+        },
+        {
+          "placeId": "cours-mirabeau",
+          "order": 5,
+          "plannedTime": "18:45–19:45"
         }
       ],
       "segments": [
@@ -843,89 +844,36 @@
         },
         {
           "from": "atelier-des-lauves",
-          "to": "musee-granet",
-          "mode": "walking"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-13",
-      "city": "Aix · Cassis",
-      "title": "Cassis & Calanques — 유람선과 항구",
-      "center": [
-        43.32,
-        5.45
-      ],
-      "zoom": 11,
-      "defaultMode": "driving",
-      "stops": [
-        {
-          "placeId": "aix-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:30 출발",
-          "note": "차량 왕복."
+          "to": "chateau-la-coste",
+          "mode": "driving"
         },
         {
-          "placeId": "cassis",
-          "order": 1,
-          "plannedTime": "09:30–15:30",
-          "note": "칼랑크 유람선(7일 운항·기상 조건, 48시간 전 예약 권장)·항구 점심·Port-Miou."
-        }
-      ],
-      "segments": [
-        {
-          "from": "aix-stay-candidate",
-          "to": "cassis",
+          "from": "chateau-la-coste",
+          "to": "cours-mirabeau",
           "mode": "driving"
         }
       ]
     },
     {
-      "date": "2026-09-14",
-      "city": "Aix · 남부 Luberon · Gordes",
-      "title": "Aix 체크아웃 → Lourmarin → Lacoste → Gordes 1박차",
+      "date": "2026-09-13",
+      "city": "Aix-en-Provence · Lourmarin",
+      "title": "오전 Aix 운동 · 오후 Lourmarin — 마을·고성·수채화",
       "center": [
-        43.82,
-        5.3
+        43.65,
+        5.4
       ],
       "zoom": 11,
       "defaultMode": "driving",
       "stops": [
         {
           "placeId": "aix-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:30 체크아웃",
-          "note": "확정 숙소 9/14 체크아웃."
+          "order": 1,
+          "plannedTime": "오전 운동 · 12:00 출발"
         },
         {
           "placeId": "lourmarin",
-          "order": 1,
-          "plannedTime": "10:00–13:30",
-          "note": "마을 산책과 점심(La Récréation 우선 — 성수기 7일 운영)."
-        },
-        {
-          "placeId": "lacoste",
           "order": 2,
-          "plannedTime": "14:00–15:00",
-          "note": "Château de Lacoste 관람 — 9/14(월) 13:00–17:00 마지막 입장 확인."
-        },
-        {
-          "placeId": "bonnieux",
-          "order": 3,
-          "plannedTime": "15:15–16:00",
-          "note": "OPTIONAL."
-        },
-        {
-          "placeId": "gordes-stay-candidate",
-          "order": 4,
-          "plannedTime": "16:30 체크인",
-          "note": "Gordes 2박 — 미정, 현지 결정."
-        },
-        {
-          "placeId": "gordes",
-          "order": 5,
-          "plannedTime": "17:15–19:15",
-          "note": "전망과 구시가지."
+          "plannedTime": "13:00–17:15 (수채화 14:45–16:15)"
         }
       ],
       "segments": [
@@ -933,24 +881,54 @@
           "from": "aix-stay-candidate",
           "to": "lourmarin",
           "mode": "driving"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "city": "Aix · Roussillon · Gordes",
+      "title": "Aix 체크아웃 → Roussillon → Gordes 체크인 · 결혼기념일 저녁",
+      "center": [
+        43.75,
+        5.32
+      ],
+      "zoom": 10,
+      "defaultMode": "driving",
+      "stops": [
+        {
+          "placeId": "aix-stay-candidate",
+          "order": 1,
+          "plannedTime": "09:00 체크아웃"
         },
         {
-          "from": "lourmarin",
-          "to": "lacoste",
+          "placeId": "roussillon-sentier-des-ocres",
+          "order": 2,
+          "plannedTime": "11:00–14:15"
+        },
+        {
+          "placeId": "gordes-stay",
+          "order": 3,
+          "plannedTime": "16:00 체크인"
+        },
+        {
+          "placeId": "gordes",
+          "order": 4,
+          "plannedTime": "17:00–18:45 · 19:00 La Trinquette 저녁"
+        }
+      ],
+      "segments": [
+        {
+          "from": "aix-stay-candidate",
+          "to": "roussillon-sentier-des-ocres",
           "mode": "driving"
         },
         {
-          "from": "lacoste",
-          "to": "bonnieux",
+          "from": "roussillon-sentier-des-ocres",
+          "to": "gordes-stay",
           "mode": "driving"
         },
         {
-          "from": "bonnieux",
-          "to": "gordes-stay-candidate",
-          "mode": "driving"
-        },
-        {
-          "from": "gordes-stay-candidate",
+          "from": "gordes-stay",
           "to": "gordes",
           "mode": "walking"
         }
@@ -958,54 +936,49 @@
     },
     {
       "date": "2026-09-15",
-      "city": "Luberon · Gordes · L'Isle-sur-la-Sorgue",
-      "title": "Gordes 화요시장 · Roussillon · Sénanque · 오후 L'Isle",
+      "city": "Gordes · L'Isle-sur-la-Sorgue · Avignon",
+      "title": "Gordes 화요시장 → Sénanque → L'Isle → Avignon 체크인",
       "center": [
-        43.9,
-        5.15
+        43.93,
+        5.0
       ],
       "zoom": 11,
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "gordes-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:00",
-          "note": "화요시장 — 2박 중 유일한 장날. 08:30 이전 도착 목표."
+          "placeId": "gordes",
+          "order": 1,
+          "plannedTime": "08:00–09:15 화요시장"
         },
         {
-          "placeId": "roussillon-sentier-des-ocres",
-          "order": 1,
-          "plannedTime": "09:45–11:30",
-          "note": "오크르길 — 먼지에 강한 신발."
+          "placeId": "gordes-stay",
+          "order": 2,
+          "plannedTime": "09:15 체크아웃"
         },
         {
           "placeId": "abbaye-de-senanque",
-          "order": 2,
-          "plannedTime": "13:15–14:45",
-          "note": "9/15 화요일 회차 재확인 — 확인 전 내부는 OPTIONAL."
+          "order": 3,
+          "plannedTime": "10:15–11:45"
         },
         {
           "placeId": "lisle-sur-la-sorgue",
-          "order": 3,
-          "plannedTime": "15:15–17:00",
-          "note": "OPTIONAL 오후 왕복(편도 25분) — 피로 시 최우선 삭제. 화요일은 시장·앤틱일 아님."
+          "order": 4,
+          "plannedTime": "12:30–15:15"
         },
         {
-          "placeId": "gordes-stay-candidate",
-          "order": 4,
-          "plannedTime": "17:30 복귀",
-          "note": "2박차 저녁."
+          "placeId": "avignon-stay",
+          "order": 5,
+          "plannedTime": "16:00 체크인 · 장보기·숙소 저녁"
         }
       ],
       "segments": [
         {
-          "from": "gordes-stay-candidate",
-          "to": "roussillon-sentier-des-ocres",
-          "mode": "driving"
+          "from": "gordes",
+          "to": "gordes-stay",
+          "mode": "walking"
         },
         {
-          "from": "roussillon-sentier-des-ocres",
+          "from": "gordes-stay",
           "to": "abbaye-de-senanque",
           "mode": "driving"
         },
@@ -1016,50 +989,46 @@
         },
         {
           "from": "lisle-sur-la-sorgue",
-          "to": "gordes-stay-candidate",
+          "to": "avignon-stay",
           "mode": "driving"
         }
       ]
     },
     {
       "date": "2026-09-16",
-      "city": "Gordes · Alpilles · Avignon",
-      "title": "Gordes 체크아웃 → 수요시장 · Les Baux → Avignon 체크인",
+      "city": "Avignon · Alpilles",
+      "title": "Avignon 출발 — Saint-Rémy 수요시장 · Les Baux 당일치기",
       "center": [
-        43.86,
-        4.82
+        43.85,
+        4.81
       ],
-      "zoom": 9,
+      "zoom": 10,
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "gordes-stay-candidate",
-          "order": 0,
-          "plannedTime": "08:00 체크아웃",
-          "note": "짐을 완전히 가리고 출발."
+          "placeId": "avignon-stay",
+          "order": 1,
+          "plannedTime": "08:15 출발"
         },
         {
           "placeId": "saint-remy-de-provence",
-          "order": 1,
-          "plannedTime": "09:15–13:15",
-          "note": "수요시장(수요일뿐)·구시가지·점심."
+          "order": 2,
+          "plannedTime": "09:15–13:15"
         },
         {
           "placeId": "les-baux-de-provence",
-          "order": 2,
-          "plannedTime": "13:45–15:15",
-          "note": "체류 축소 가능 — 체크인이 우선."
+          "order": 3,
+          "plannedTime": "13:45–16:15"
         },
         {
-          "placeId": "avignon-stay-candidate",
-          "order": 3,
-          "plannedTime": "16:00 체크인",
-          "note": "Avignon 4박(9/16~9/20) — 미정, 확정 필요."
+          "placeId": "avignon-stay",
+          "order": 4,
+          "plannedTime": "17:00 복귀"
         }
       ],
       "segments": [
         {
-          "from": "gordes-stay-candidate",
+          "from": "avignon-stay",
           "to": "saint-remy-de-provence",
           "mode": "driving"
         },
@@ -1070,7 +1039,7 @@
         },
         {
           "from": "les-baux-de-provence",
-          "to": "avignon-stay-candidate",
+          "to": "avignon-stay",
           "mode": "driving"
         }
       ]
@@ -1087,7 +1056,7 @@
       "defaultMode": "driving",
       "stops": [
         {
-          "placeId": "avignon-stay-candidate",
+          "placeId": "avignon-stay",
           "order": 0,
           "plannedTime": "07:45 출발",
           "note": "Avignon 2박차(4박 기준). 렌터카 마지막 운행일."
@@ -1123,7 +1092,7 @@
           "note": "주유·차량 촬영 후 Hertz 조기 반납. 기존 9/20 계약은 9/17로 변경 필요."
         },
         {
-          "placeId": "avignon-stay-candidate",
+          "placeId": "avignon-stay",
           "order": 6,
           "plannedTime": "19:00 이후",
           "note": "TER 또는 택시로 숙소 복귀."
@@ -1131,7 +1100,7 @@
       ],
       "segments": [
         {
-          "from": "avignon-stay-candidate",
+          "from": "avignon-stay",
           "to": "uzes",
           "mode": "driving"
         },
@@ -1157,7 +1126,7 @@
         },
         {
           "from": "avignon-tgv",
-          "to": "avignon-stay-candidate",
+          "to": "avignon-stay",
           "mode": "transit"
         }
       ]
@@ -1293,7 +1262,7 @@
       "defaultMode": "transit",
       "stops": [
         {
-          "placeId": "avignon-stay-candidate",
+          "placeId": "avignon-stay",
           "order": 0,
           "plannedTime": "08:30 체크아웃",
           "note": "차량 반납은 9/17 완료. 렌터카 절차 없이 역으로 이동."
@@ -1319,7 +1288,7 @@
       ],
       "segments": [
         {
-          "from": "avignon-stay-candidate",
+          "from": "avignon-stay",
           "to": "avignon-tgv",
           "mode": "transit"
         },

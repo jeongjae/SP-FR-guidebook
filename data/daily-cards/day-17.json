@@ -2,181 +2,169 @@
   "schemaVersion": "1.0",
   "day": 17,
   "date": "2026-09-14",
-  "city": "Aix · 남부 Luberon · Gordes",
-  "title": "Aix 체크아웃 → Lourmarin → Gordes 1박차",
+  "city": "Aix · Roussillon · Gordes",
+  "title": "Aix 체크아웃 → Roussillon 오크르 → Gordes 체크인 · 결혼기념일 저녁",
   "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "transfer",
-  "startTime": "08:30",
-  "endTime": "20:45",
+  "startTime": "09:00",
+  "endTime": "21:15",
   "totalDuration": "12시간 15분",
-  "totalDistance": "Base 약 64km · Extended 약 69km",
+  "totalDistance": "약 62km · 차량 이동",
   "fatigue": "3",
   "hotel": {
-    "name": "Gordes 숙소 (후보 미정)",
-    "lat": 43.91181,
-    "lng": 5.20043,
-    "status": "candidate"
+    "name": "Gordes 숙소 — Rte des Moines",
+    "lat": 43.9099822,
+    "lng": 5.1972296,
+    "status": "confirmed",
+    "address": "104 Rte des Moines, 84220 Gordes, France"
   },
   "stops": [
     {
       "id": "aix-checkout",
       "order": 1,
-      "start": "08:30",
-      "end": "09:00",
+      "start": "09:00",
+      "end": "09:45",
       "name": "MUST · Aix 숙소 체크아웃",
       "category": "hotel",
       "lat": 43.5283,
       "lng": 5.4497,
-      "summary": "08:30~09:00 출발. 수하물을 트렁크에 완전히 가리고 D943을 따라 Lourmarin으로 이동한다.",
+      "summary": "짐을 트렁크에 완전히 가리고 출발한다. Aix 4박(9/10~9/14)을 마치고 D943–D36을 따라 Roussillon으로 이동한다.",
       "menu": null,
-      "reservation": "Aix 체크아웃 시각과 Gordes 숙소 체크인 가능 시각 재확인",
+      "reservation": "Gordes 숙소 체크인 목표 16:00 — 이동 중 호스트와 도착 시각 공유",
       "optional": false,
       "place_ref": null
     },
     {
-      "id": "lourmarin",
+      "id": "roussillon",
       "order": 2,
-      "start": "10:00",
-      "end": "12:15",
-      "name": "MUST · Lourmarin 마을 산책",
+      "start": "11:00",
+      "end": "13:00",
+      "name": "MUST · Roussillon + Sentier des Ocres",
       "category": "sight",
-      "lat": 43.7636,
-      "lng": 5.3628,
-      "summary": "Parking du Rayol에서 시작해 Château 외관/선택 관람 → 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Temple 주변 골목을 걷는다. 마을 분위기 중심이면 1.5시간, 샤토 내부 포함 시 2~2.5시간.",
-      "menu": "카페·갤러리 구역에서 에스프레소 또는 가벼운 간식",
-      "reservation": "주차: Parking du Rayol 우선 · Château 내부 관람은 현장 선택",
-      "optional": false,
-      "place_ref": "lourmarin"
-    },
-    {
-      "id": "lourmarin-lunch",
-      "order": 3,
-      "start": "12:15",
-      "end": "13:30",
-      "name": "MUST · Lourmarin 점심 — La Récréation 우선",
-      "category": "food",
-      "lat": 43.765182,
-      "lng": 5.362981,
-      "summary": "15 rue Philippe de Girard. Day 17의 긴 식사는 12:15–13:30에 두고 Optional 마을에서는 식사를 추가하지 않는다. 식당 좌석이 없어도 일정을 우회하지 않는다.",
-      "menu": "à la carte €22–26 · 성인 메뉴 €37.50–38.50 · plat du jour €22 · 운전자는 와인 금지",
-      "reservation": "ACTION REQUIRED — 9/14 월요일 12:15 실제 예약 — La Récréation은 성수기 7일 운영(공식 확인) 슬롯은 아직 확인되지 않음",
+      "lat": 43.90202,
+      "lng": 5.29207,
+      "summary": "마을 외곽 주차(Parking des Ocres 또는 Saint-Michel) 후 Sentier des Ocres 짧은/긴 코스를 현장 선택 → Place de la Mairie → 붉은 골목과 전망. 트레일은 약 30~60분이며 비·강풍·안전통제 여부를 당일 확인한다. 오커 먼지에 강한 어두운 신발을 신는다.",
+      "menu": "coffee·pastry 중심",
+      "reservation": "9월 공식 운영 09:30–18:30(19:00 퇴장) · 현장 결제 · 날씨 조건부",
       "executionStatuses": [
         {
-          "type": "book",
+          "type": "check",
           "label": "ACTION REQUIRED",
-          "detail": "RESERVATION SLOT NOT YET VERIFIED — 9/14 12:15 좌석을 확인한다."
-        },
-        {
-          "type": "optional",
-          "label": "FALLBACK",
-          "detail": "같은 12:15–13:30 창에 Lourmarin 마을 카페·브라시리를 현장 이용하고 동선은 바꾸지 않는다."
+          "detail": "당일 기상과 Sentier des Ocres 개방 상태를 확인한다."
         }
       ],
-      "executionNote": "공식 운영정보: 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00.",
-      "officialUrl": "https://www.provenceguide.com/restaurants/luberon/la-recreation/provence-2997991-1.html",
+      "optional": false,
+      "place_ref": "roussillon-sentier-des-ocres"
+    },
+    {
+      "id": "roussillon-lunch",
+      "order": 3,
+      "start": "13:00",
+      "end": "14:15",
+      "name": "Roussillon권 점심",
+      "category": "food",
+      "lat": 43.9026,
+      "lng": 5.2926,
+      "summary": "Roussillon 마을 또는 인근에서 점심. 특정 업소를 전제하지 않는다. 저녁이 결혼기념일 만찬이므로 점심은 가볍게 둔다.",
+      "menu": "현장 확인 (가벼운 식사 · 운전자 무알코올)",
+      "reservation": "9월 월요일 영업 재확인",
+      "executionStatuses": [
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "월요일 점심 영업 현장 확인."
+        }
+      ],
       "optional": false,
       "place_ref": null
     },
     {
-      "id": "lacoste",
+      "id": "gordes-viewpoint",
       "order": 4,
-      "start": "14:00",
-      "end": "15:00",
-      "name": "RECOMMENDED · Château de Lacoste 관람",
+      "start": "14:45",
+      "end": "15:30",
+      "name": "Gordes 대표 전망대 정차",
       "category": "sight",
-      "lat": 43.8318965,
-      "lng": 5.2728505,
-      "summary": "사드 후작의 성. 2026-09-14(월) 비가이드 관람 13:00–17:00 마지막 입장, 한국어 HistoPad 제공. 관람 후 마을 상부 전망.",
-      "menu": "물·커피 stop만 허용",
-      "reservation": "구시가지 밖 하부 주차 후 도보 접근",
-      "executionStatuses": [
-        {
-          "type": "confirmed",
-          "label": "CONFIRMED",
-          "detail": "2026-09-14(월) 비가이드 관람 13:00–17:00 마지막 입장 — 2026-08-25 공식 예매 화면 확인(15:00·16:00·17:00 회차)."
-        }
-      ],
-      "optional": false,
-      "place_ref": "lacoste"
-    },
-    {
-      "id": "bonnieux",
-      "order": 5,
-      "start": "15:15",
-      "end": "16:00",
-      "name": "OPTIONAL · Bonnieux",
-      "category": "sight",
-      "lat": 43.8236124,
-      "lng": 5.3078261,
-      "summary": "하부 주차 → 중심 광장 → 계단과 골목 → Vieille Église 전망 → 하산. Gordes 체크인 목표에 여유가 있을 때만 60분 산책한다.",
-      "menu": "espresso·gelato 정도만; 긴 식사 금지",
-      "reservation": "하부 공영주차 후 도보 접근",
-      "executionStatuses": [
-        {
-          "type": "optional",
-          "detail": "16:00~17:00 Gordes 체크인을 위협하면 생략한다."
-        }
-      ],
+      "lat": 43.9114,
+      "lng": 5.2003,
+      "summary": "D15/Cavaillon 방향 진입로의 대표 파노라마 전망대에 잠시 정차해 석조마을 전경을 본다. 체크인 전 여유 버퍼를 겸한다.",
+      "menu": null,
+      "reservation": "전망대 정차 후 숙소로 이동",
       "optional": true,
-      "place_ref": "bonnieux"
+      "place_ref": null,
+      "place_relation": "context"
     },
     {
       "id": "gordes-checkin",
-      "order": 6,
-      "start": "16:30",
-      "end": "17:00",
-      "name": "MUST · Gordes 숙소 체크인",
+      "order": 5,
+      "start": "16:00",
+      "end": "16:45",
+      "name": "MUST · Gordes 숙소 체크인 — 104 Rte des Moines",
       "category": "hotel",
-      "lat": 43.91181,
-      "lng": 5.20043,
-      "summary": "16:00~17:00 체크인을 목표로 짐을 내리고 주차·야간 출입 방법을 확인한다. Gordes 1박차.",
+      "lat": 43.9099822,
+      "lng": 5.1972296,
+      "summary": "16:00 체크인. 짐을 내리고 주차·야간 출입 방법을 확인한다. Sénanque로 이어지는 Route des Moines 진입로 권역이라 익일 아침 동선이 짧다. Gordes 1박(9/14~9/15).",
       "menu": null,
-      "reservation": "Gordes 9/14~9/16 2박 숙소 확정 및 체크인 창 확인 필요",
-      "executionStatuses": [
-        {
-          "type": "book",
-          "label": "ACTION REQUIRED",
-          "detail": "Gordes accommodation for 9/14–9/16 is not yet confirmed in the repository."
-        }
-      ],
+      "reservation": "체크인 목표 16:00 · 예약 확정 (2026-09-16 실제 예약 반영)",
       "optional": false,
       "place_ref": null
     },
     {
       "id": "gordes-village",
-      "order": 7,
-      "start": "17:15",
-      "end": "19:00",
+      "order": 6,
+      "start": "17:00",
+      "end": "18:45",
       "name": "MUST · Gordes 전망과 구시가지",
       "category": "sight",
       "lat": 43.9114,
       "lng": 5.2003,
-      "summary": "D15/Cavaillon 방향 대표 파노라마 → Place Genty Pantaly와 Château → Église Saint-Firmin → 아래쪽 calade 골목 → 전망 테라스. 해질 무렵 석회암 빛을 본다.",
+      "summary": "Place Genty Pantaly와 Château → Église Saint-Firmin → 아래쪽 calade 골목 → 전망 테라스. 해질 무렵 석회암 빛을 본다.",
       "menu": null,
-      "reservation": "대표 전망대 정차 후 숙소 또는 외곽 주차장에서 도보 접근",
+      "reservation": "마을 외곽 주차 또는 숙소에서 도보 접근",
       "optional": false,
       "place_ref": "gordes"
     },
     {
-      "id": "gordes-dinner",
-      "order": 8,
-      "start": "19:15",
-      "end": "20:45",
-      "name": "Gordes 숙소 귀환 · 저녁 · 1박차",
-      "category": "hotel",
-      "lat": 43.9114,
-      "lng": 5.2003,
-      "summary": "La Bastide de Pierres를 현실적인 1순위로 두고, 조용한 계절식을 원하면 Le Mas Gordes를 확인한 뒤 숙소로 귀환한다.",
-      "menu": "La Bastide de Pierres 이탈리아식 trattoria · 또는 Le Mas Gordes 계절식",
-      "reservation": "La Bastide de Pierres 2026년 4/1–10/25 매일 저녁 19:00–21:45 · 실제 좌석 재확인",
+      "id": "la-trinquette-dinner",
+      "order": 7,
+      "start": "19:00",
+      "end": "21:00",
+      "name": "MUST · 결혼기념일 저녁 — La Trinquette",
+      "category": "food",
+      "lat": 43.9108541,
+      "lng": 5.1993065,
+      "summary": "이날 저녁의 핵심 일정이다. 마을 중심의 작은 레스토랑으로, 2층 다이닝과 Luberon 전망 발코니 자리가 있다. 로컬 제철 재료의 홈메이드 프로방스 요리 — 결혼기념일 만찬으로 이 집을 확정했고 다른 저녁으로 바꾸지 않는다.",
+      "menu": "à la carte €30–55 · 와인 페어링 (도보 귀가라 와인 가능)",
+      "reservation": "55 Rue des Tracapelles · +33 4 90 72 11 62 · 화요일 휴무 — 9/14(월) 영업일 확인됨",
       "executionStatuses": [
         {
-          "type": "book",
-          "label": "BOOK",
-          "detail": "첫날 저녁 좌석과 차량 접근을 확인한다."
+          "type": "confirmed",
+          "label": "CONFIRMED",
+          "detail": "결혼기념일 저녁 확정 — 9/14(월)은 영업일 (화 휴무, 2026-09-16 Vaucluse 관광DB 확인)."
+        },
+        {
+          "type": "check",
+          "label": "PENDING",
+          "detail": "19:00 좌석(발코니 자리 우선) 전화 재확인 — 04 90 72 11 62."
         }
       ],
+      "officialUrl": "https://www.provenceguide.co.uk/restaurants/gordes/la-trinquette/provence-2997210-1.html",
+      "optional": false,
+      "place_ref": null
+    },
+    {
+      "id": "gordes-night",
+      "order": 8,
+      "start": "21:00",
+      "end": "21:15",
+      "name": "숙소 귀환",
+      "category": "hotel",
+      "lat": 43.9099822,
+      "lng": 5.1972296,
+      "summary": "마을 중심에서 숙소로 도보 귀환. 익일 아침 Gordes 시장(화요장) 시간을 확인하고 짐은 풀지 않은 채 1박 체제로 둔다.",
+      "menu": null,
+      "reservation": null,
       "optional": false,
       "place_ref": null
     }
@@ -184,16 +172,16 @@
   "legs": [
     {
       "from": "aix-checkout",
-      "to": "lourmarin",
+      "to": "roussillon",
       "mode": "car",
-      "duration": "약 40분",
-      "distance": "36km",
+      "duration": "약 1시간 5분",
+      "distance": "50km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "lourmarin",
-      "to": "lourmarin-lunch",
+      "from": "roussillon",
+      "to": "roussillon-lunch",
       "mode": "walk",
       "duration": "5분",
       "distance": "0.3km",
@@ -201,29 +189,20 @@
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "lourmarin-lunch",
-      "to": "bonnieux",
-      "mode": "car",
-      "duration": "약 15분",
-      "distance": "12km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "bonnieux",
-      "to": "lacoste",
-      "mode": "car",
-      "duration": "약 10분",
-      "distance": "7km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "lacoste",
-      "to": "gordes-checkin",
+      "from": "roussillon-lunch",
+      "to": "gordes-viewpoint",
       "mode": "car",
       "duration": "약 20분",
-      "distance": "14km",
+      "distance": "10km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "gordes-viewpoint",
+      "to": "gordes-checkin",
+      "mode": "car",
+      "duration": "약 5분",
+      "distance": "1.5km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
@@ -231,56 +210,64 @@
       "from": "gordes-checkin",
       "to": "gordes-village",
       "mode": "walk",
-      "duration": "10~20분",
-      "distance": "숙소 위치에 따라 확인",
+      "duration": "10~15분",
+      "distance": "약 0.8km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
       "from": "gordes-village",
-      "to": "gordes-dinner",
+      "to": "la-trinquette-dinner",
       "mode": "walk",
-      "duration": "5~15분",
-      "distance": "식당 선택에 따라 확인",
+      "duration": "5분",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "la-trinquette-dinner",
+      "to": "gordes-night",
+      "mode": "walk",
+      "duration": "10분",
+      "distance": "약 0.6km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "Base: Aix → Lourmarin → Gordes (약 64km·순수 운전 약 1시간 10분)",
-    "Extended: Aix → Lourmarin → Bonnieux → Lacoste → Gordes (약 69km·순수 운전 약 1시간 20분)",
-    "차량 내 수하물 완전 은폐 · 마을 외곽 주차 후 도보"
+    "Aix → Roussillon → Gordes (약 62km·순수 운전 약 1시간 30분)",
+    "차량 내 수하물 완전 은폐 · 마을 외곽 주차 후 도보",
+    "Gordes 숙소는 Route des Moines(Sénanque 방향 진입로) 권역"
   ],
   "food": [
-    "점심: Lourmarin La Récréation 우선 · 12:00–14:00 영업 확인 · 실제 좌석은 ACTION REQUIRED",
-    "Fallback: 같은 12:15–13:30 창의 Lourmarin 마을 카페·브라시리 · 식당 때문에 우회 금지",
-    "저녁: Gordes La Bastide de Pierres 또는 Le Mas Gordes",
-    "Optional 마을에서는 긴 식사 금지"
+    "점심: Roussillon권 가벼운 식사 — 현장 확인 · 운전자 무알코올",
+    "저녁: La Trinquette 결혼기념일 만찬 (MUST · 변경 금지) · 19:00 좌석 재확인",
+    "이동 중 마을에서는 긴 식사 금지"
   ],
   "highlights": [
-    "THEME · 남부 Luberon의 우아한 마을에서 Gordes 석조 풍경으로",
-    "MUST · Lourmarin · Gordes 체크인과 마을",
-    "OPTIONAL · Bonnieux → Lacoste",
-    "IF LATE · Lacoste부터, 그래도 늦으면 Bonnieux 삭제"
+    "THEME · 결혼기념일 — 오크르의 붉은 길에서 석조마을의 만찬으로",
+    "MUST · Roussillon 오크르길 · Gordes 16:00 체크인 · La Trinquette 저녁",
+    "OPTIONAL · Gordes 전망대 정차",
+    "IF LATE · 전망대 정차를 빼고 체크인을 지킨다"
   ],
-  "backup": "비·피로·주차 지연 시 Lourmarin의 샤토 내부관람을 생략하고 마을+점심만 유지한다. Lacoste를 먼저 삭제하고, 그래도 16:00~17:00 Gordes 체크인이 위험하면 Bonnieux도 삭제한다. 최소 실행안은 Aix 체크아웃 → Lourmarin 산책·점심 → Gordes 체크인·저녁 산책이다.",
+  "backup": "비·강풍으로 Sentier des Ocres가 통제되면 Roussillon 마을 산책으로 축소한다. 이동이 늦어지면 전망대 정차를 생략하고 16:00 체크인을 지킨다. La Trinquette가 불가할 때만 (임시 휴업 등) La Bastide de Pierres를 현장 대안으로 쓴다 — 사전 계획으로는 바꾸지 않는다.",
   "map": {
     "zoom": 10,
     "center": [
-      43.78,
-      5.29
+      43.75,
+      5.32
     ],
-    "routeCache": "routes/day-16-driving-osrm.json"
+    "routeCache": null
   },
   "needsReview": [
-    "ACTION REQUIRED — Gordes 2박 숙소와 체크인 가능 시각 확정",
-    "ACTION REQUIRED — La Récréation 9/14 12:15 실제 좌석·Gordes 저녁 예약 가능 여부",
-    "당일 교통과 주차 상황에 따라 Optional 두 곳 현장 삭제"
+    "La Trinquette 9/14 19:00 좌석 전화 재확인 (04 90 72 11 62)",
+    "Gordes 숙소 체크인 가능 시각·주차 위치 호스트 확인",
+    "Sentier des Ocres 당일 기상·안전통제"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-17",
     "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md#Day-17",
-    "https://www.provenceguide.com/patrimoines-culturels/luberon/lourmarin/provence-2997889-1.html",
-    "https://www.provenceguide.com/restaurants/luberon/la-recreation/provence-2997991-1.html"
+    "https://www.provenceguide.co.uk/restaurants/gordes/la-trinquette/provence-2997210-1.html",
+    "https://www.provenceguide.com/equipements/luberon/sentier-des-ocres/provence-821608-1.html"
   ]
 }

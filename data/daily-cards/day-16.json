@@ -2,16 +2,16 @@
   "schemaVersion": "1.0",
   "day": 16,
   "date": "2026-09-13",
-  "city": "Aix-en-Provence",
-  "title": "Cassis & Calanques — 석회암 절벽과 지중해",
-  "sourceStatus": "candidate-latest-needs-review",
+  "city": "Aix-en-Provence · Lourmarin",
+  "title": "오전 Aix 운동 · 오후 Lourmarin — 마을·고성·수채화",
+  "sourceStatus": "authoritative",
   "prototypeType": null,
   "dayType": "driving",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
-  "totalDistance": "약 100km · 차량 왕복 + 보트",
-  "fatigue": "3",
+  "totalDistance": "차량 왕복 약 72km + 도보 약 5km",
+  "fatigue": "2",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
     "lat": null,
@@ -21,191 +21,102 @@
   },
   "stops": [
     {
-      "id": "aix-depart",
+      "id": "aix-morning-run",
       "order": 1,
       "start": "08:30",
-      "end": "09:00",
-      "name": "Aix 숙소 출발 — 렌터카",
-      "category": "hotel",
-      "lat": 43.5283,
-      "lng": 5.4497,
-      "summary": "Aix 숙소 출발하여 A52 고속도로 경유 카시스로 이동 (48km, 35분)",
-      "menu": null,
+      "end": "09:45",
+      "name": "MUST · 오전 운동 — Rotonde·Cours Mirabeau·Parc Jourdan",
+      "category": "activity",
+      "lat": 43.5241,
+      "lng": 5.4454,
+      "summary": "숙소에서 Rotonde–Cours Mirabeau–Parc Jourdan 왕복 4–6km를 가볍게 걷거나 뛴다. 일요일 아침의 한적한 구시가지를 몸으로 통과하는 날이다. 운동 후 숙소에서 샤워·휴식.",
+      "menu": "운동 후 숙소 아침 (시장 조달 재료)",
       "reservation": null,
+      "executionNote": "헬스장이 아니라 야외 러닝·워킹 코스다. 숙소 피트니스는 확인되지 않았다.",
       "optional": false,
       "place_ref": null
     },
     {
-      "id": "cassis-parking",
+      "id": "aix-brunch",
       "order": 2,
-      "start": "09:35",
-      "end": "09:50",
-      "name": "Cassis 도착 — Parking des Gorguettes",
-      "category": "transport",
-      "lat": 43.2147,
-      "lng": 5.5342,
-      "summary": "무료 P+R Parking des Gorguettes를 primary로 사용하고 연중 운행 Bus 372로 centre-ville에 들어간다. Presqu'île는 Port-Miou 산책을 우선하고 live availability가 좋을 때만 대안으로 쓴다.",
-      "menu": null,
+      "start": "10:30",
+      "end": "12:00",
+      "name": "숙소 브런치 · 짐 정리 · 휴식",
+      "category": "food",
+      "lat": 43.5283,
+      "lng": 5.4497,
+      "summary": "시장에서 사 둔 재료로 숙소 브런치. 익일 체크아웃(9/14)을 위한 짐 1차 정리와 수채화 도구(스케치북·물통·붓) 준비를 이 창에 끝낸다.",
+      "menu": "chèvre·토마토·pain de campagne·과일",
       "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "당일 P+R 잔여면과 372 운행을 확인한다. 373 Presqu'île 노선은 9/13 일요일 운행을 가정하지 않는다."
-        }
-      ],
-      "executionNote": "Les Gorguettes는 무료·연중 운영 P+R이며 372 centre 노선은 연중 운행한다. 373 Presqu’île 노선은 날짜·요일 의존.",
       "optional": false,
       "place_ref": null,
-      "place_relation": "transit"
+      "place_relation": "context"
     },
     {
-      "id": "calanques",
+      "id": "lourmarin",
       "order": 3,
-      "start": "09:50",
-      "end": "11:30",
-      "name": "MUST · 3 Calanques 유람선",
+      "start": "13:00",
+      "end": "14:45",
+      "name": "MUST · Lourmarin 마을 산책과 Château",
       "category": "sight",
-      "lat": 43.2131,
-      "lng": 5.5386,
-      "summary": "카시스 항구에서 Port-Miou·Port-Pin·En-Vau 3개 칼랑크를 보는 약 1시간 코스를 이용한다. 09:50–11:30 창에는 3 Calanques 운항 자체와 현장 발권·탑승 buffer를 포함한다.",
-      "menu": null,
-      "reservation": null,
+      "lat": 43.7636,
+      "lng": 5.3628,
+      "summary": "Parking du Rayol에서 시작해 마을 중심 → Église Saint-André et Saint-Trophime → Beffroi → Temple 주변 골목을 걷고, 프로방스 최초의 르네상스 성 Château de Lourmarin(€7.50)을 외관 또는 내부로 본다. 카뮈의 묘소는 조용히 들른다.",
+      "menu": "카페·갤러리 구역에서 에스프레소",
+      "reservation": "주차: Parking du Rayol 우선 · Château 내부 관람은 현장 선택",
       "executionStatuses": [
         {
-          "type": "ticket",
-          "label": "TICKET",
-          "detail": "Cassis 항구에서 3 Calanques 승선권을 구매한다."
-        },
-        {
           "type": "check",
-          "label": "CHECK",
-          "detail": "매일 운항은 기상 조건부이므로 당일 운항 여부를 확인한다."
+          "label": "PENDING",
+          "detail": "Château de Lourmarin 9/13(일) 오후 개관 시간 현장 확인."
         }
       ],
-      "executionNote": "공식 코스 기준 3 Calanques 약 1시간. 8 Calanques로 자동 승격하지 않는다.",
-      "officialUrl": "https://www.ot-cassis.com/en/explore/the-calanques/the-calanques-by-boat/",
       "optional": false,
-      "place_ref": "calanques"
+      "place_ref": "lourmarin"
     },
     {
-      "id": "cassis-port",
+      "id": "lourmarin-sketch",
       "order": 4,
-      "start": "11:30",
-      "end": "12:30",
-      "name": "Cassis 항구 산책 · 커피 buffer",
-      "category": "sight",
-      "lat": 43.2144,
-      "lng": 5.5375,
-      "summary": "유람선 하선 뒤 구항구를 걷고 커피를 마시며 점심 시작까지 완충한다. 보트 지연 시 이 시간을 먼저 줄인다.",
-      "menu": "coffee 또는 가벼운 간식",
+      "start": "14:45",
+      "end": "16:15",
+      "name": "MUST · 수채화 스케치 — Château 전망 자리에서 90분",
+      "category": "activity",
+      "lat": 43.7647,
+      "lng": 5.3616,
+      "summary": "이날의 목적 블록이다. Château가 보이는 벤치나 카페 테라스에 자리를 잡고 90분간 수채화 스케치를 한다. 관광지를 더 붙이지 않는다 — Lourmarin 한 곳을 그리며 머문다.",
+      "menu": "카페 테라스 이용 시 음료 주문",
       "reservation": null,
+      "executionNote": "바람이 강하면 골목 안쪽으로 자리를 옮긴다. 그림 시간은 다른 일정으로 대체하지 않는다.",
       "optional": false,
-      "place_ref": "cassis"
+      "place_ref": null
     },
     {
-      "id": "cassis",
+      "id": "lourmarin-cafe",
       "order": 5,
-      "start": "12:30",
-      "end": "14:00",
-      "name": "Chez Gilbert 점심 (Cassis 항구)",
-      "category": "food",
-      "lat": 43.2144,
-      "lng": 5.5375,
-      "summary": "카시스 구항구 앞 공인 부야베스 헌장 인증 레스토랑. 지중해 암초 생선 수프/부야베스와 카시스 AOC 화이트 와인",
-      "menu": "Bouillabaisse de roche, 생선 수프(Soupe de poissons), 카시스 화이트 와인",
-      "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "book",
-          "label": "ACTION REQUIRED",
-          "detail": "Chez Gilbert 9/13 12:30 실제 예약은 저장소에 없으므로 예약하거나 당일 대체 식당을 정한다."
-        }
-      ],
-      "executionNote": "공식 영업정보상 일요일 영업 재확인 운영. 12:30은 목표시간이지 확정 예약이 아니다.",
-      "officialUrl": "https://www.chezgilbert.net/",
-      "optional": false,
-      "place_ref": "chez-gilbert-cassis"
-    },
-    {
-      "id": "cassis-port-miou",
-      "order": 6,
-      "start": "14:15",
-      "end": "15:15",
-      "name": "OPTIONAL · Port-Miou 해안 트레일 초입",
+      "start": "16:15",
+      "end": "17:15",
+      "name": "Lourmarin 카페·갤러리 마무리 산책",
       "category": "sight",
-      "lat": 43.2119,
-      "lng": 5.5203,
-      "summary": "요트가 정박한 포르미우 칼랑크 해안 소나무 산책로 도보 (선택)",
-      "menu": null,
+      "lat": 43.7642,
+      "lng": 5.3631,
+      "summary": "그림을 정리하고 플라타너스 카페 거리에서 차 한 잔. 갤러리·서점을 천천히 돌아본 뒤 주차장으로 돌아간다.",
+      "menu": "티·페이스트리",
       "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "optional",
-          "label": "OPTIONAL",
-          "detail": "보트·피로·기상·셔틀 제약이 있으면 가장 먼저 생략한다."
-        },
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "산불 접근통제와 강풍을 확인하고 통제 시 진입하지 않는다."
-        }
-      ],
-      "executionNote": "Presqu'île parking을 실제 primary로 선택한 날에는 Port-Miou 이후 차량 회수가 단순해질 수 있으나, 기본 실행안은 Gorguettes + Bus 372이다.",
       "optional": true,
       "place_ref": null,
-      "place_relation": "nearby"
+      "place_relation": "context"
     },
     {
-      "id": "cassis-vehicle-return",
-      "order": 7,
-      "start": "15:15",
-      "end": "15:45",
-      "name": "Gorguettes P+R 복귀 · 차량 회수",
-      "category": "transport",
-      "lat": 43.2147,
-      "lng": 5.5342,
-      "summary": "Cassis centre의 Bus 372 접근지점으로 돌아가 Parking des Gorguettes까지 이동한 뒤 주차해 둔 차량을 회수한다.",
-      "menu": null,
-      "reservation": null,
-      "executionStatuses": [
-        {
-          "type": "check",
-          "label": "CHECK",
-          "detail": "Bus 372 실제 운행과 승차지점을 확인하고 차량 회수를 완료한 뒤 Aix로 출발한다."
-        }
-      ],
-      "executionNote": "Port-Miou를 생략하면 Chez Gilbert 후 Cassis centre에서 바로 Bus 372로 Gorguettes P+R에 복귀한다. Bus 372 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
-      "optional": false,
-      "place_ref": null,
-      "place_relation": "transit"
-    },
-    {
-      "id": "aix-return",
-      "order": 8,
-      "start": "15:45",
-      "end": "16:45",
-      "name": "Parking des Gorguettes ➔ Aix 귀환 (차량)",
-      "category": "transport",
-      "lat": 43.5283,
-      "lng": 5.4497,
-      "summary": "A52 고속도로를 통해 Aix로 복귀 (35분 소요)",
-      "menu": null,
-      "reservation": null,
-      "optional": false,
-      "place_ref": null
-    },
-    {
-      "id": "aix-stay-return",
-      "order": 9,
-      "start": "17:15",
+      "id": "aix-return-dinner",
+      "order": 6,
+      "start": "18:00",
       "end": "20:30",
-      "name": "숙소 귀환 & 저녁",
+      "name": "Aix 복귀 · 저녁 · 이동 준비",
       "category": "hotel",
       "lat": 43.5283,
       "lng": 5.4497,
-      "summary": "숙소 휴식 및 익일 Day 17 뤼베롱 이동(기차 이동) 준비",
-      "menu": null,
+      "summary": "D943으로 Aix에 복귀해 숙소권에서 저녁을 먹는다. 익일 9/14 체크아웃과 Roussillon→Gordes 이동, 결혼기념일 저녁(La Trinquette)을 확인한다.",
+      "menu": "숙소권 비스트로 저녁",
       "reservation": null,
       "optional": false,
       "place_ref": null
@@ -213,113 +124,84 @@
   ],
   "legs": [
     {
-      "from": "aix-depart",
-      "to": "cassis-parking",
-      "mode": "car",
-      "duration": "35분",
-      "distance": "48.0km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cassis-parking",
-      "to": "calanques",
+      "from": "aix-morning-run",
+      "to": "aix-brunch",
       "mode": "walk",
-      "duration": "15분",
-      "distance": "1.0km",
+      "duration": "10분",
+      "distance": "0.7km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "calanques",
-      "to": "cassis-port",
+      "from": "aix-brunch",
+      "to": "lourmarin",
+      "mode": "car",
+      "duration": "약 40분",
+      "distance": "36km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "lourmarin",
+      "to": "lourmarin-sketch",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km",
+      "distance": "0.2km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "cassis-port",
-      "to": "cassis",
-      "mode": "walk",
-      "duration": "2분",
-      "distance": "항구 내",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cassis",
-      "to": "cassis-port-miou",
-      "mode": "walk",
-      "duration": "15분",
-      "distance": "1.2km",
-      "line": null,
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cassis-port-miou",
-      "to": "cassis-vehicle-return",
-      "mode": "bus",
-      "duration": "30분",
-      "distance": "약 4km",
-      "line": "Cassis centre 접근 → Bus 372 → Parking des Gorguettes",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "cassis-vehicle-return",
-      "to": "aix-return",
-      "mode": "car",
-      "duration": "35분",
-      "distance": "48.0km",
-      "line": "Parking des Gorguettes → Aix 숙소",
-      "geometryStatus": "coordinate-line"
-    },
-    {
-      "from": "aix-return",
-      "to": "aix-stay-return",
+      "from": "lourmarin-sketch",
+      "to": "lourmarin-cafe",
       "mode": "walk",
       "duration": "5분",
-      "distance": "0.3km",
+      "distance": "0.2km",
+      "line": null,
+      "geometryStatus": "coordinate-line"
+    },
+    {
+      "from": "lourmarin-cafe",
+      "to": "aix-return-dinner",
+      "mode": "car",
+      "duration": "약 40분",
+      "distance": "36km",
       "line": null,
       "geometryStatus": "coordinate-line"
     }
   ],
   "transport": [
-    "차량 왕복 (Aix ↔ Cassis, A52/A50 고속도로 48km)",
-    "Parking des Gorguettes + Bus 372 centre-ville이 primary",
-    "3 Calanques 유람선 약 1시간 + 발권·탑승 buffer"
+    "차량 왕복 (Aix ↔ Lourmarin, D943 · 편도 약 36km·40분)",
+    "Lourmarin은 Parking du Rayol 외곽 주차 후 도보",
+    "차량 내 짐 완전 은폐 · 일요일 D943 오후 정체 가능"
   ],
   "food": [
-    "Cassis 항구 생선 식당",
-    "카시스 화이트와인 — 원산지 현지 확인"
+    "아침·브런치: 숙소 (시장 조달 재료)",
+    "오후: Lourmarin 카페 음료·간식만 — 긴 식사 없음",
+    "저녁: Aix 숙소권 비스트로"
   ],
   "highlights": [
-    "보트가 기본안 — 도보는 규제·체력·더위 세 변수에 걸린다",
-    "전날 저녁 화재위험 등급 확인 (부슈뒤론 18시경 공개)",
-    "Bus 372는 연중 centre 운행 · 373 Presqu’île는 날짜·요일 의존"
+    "THEME · 회복과 그림의 날 — 관광지를 늘리지 않는다",
+    "MUST · 오전 운동 · Lourmarin 마을·Château · 수채화 90분",
+    "수채화 도구는 오전에 미리 챙긴다",
+    "익일 이동일 대비 짐 1차 정리"
   ],
-  "backup": "1. 보트 결항 시 Marseille로 자동 전환하지 않고 Cassis 마을·항구를 걷는다.\n2. Cap Canaille / Route des Crêtes는 도로 개방과 강풍·산불 상태를 확인한 경우에만 실행한다.\n3. 피로·기상·셔틀 제약 시 Port-Miou를 가장 먼저 삭제한다. 생략하면 Chez Gilbert 후 Cassis centre에서 Bus 372로 Gorguettes P+R에 복귀해 차량을 회수하고 Aix로 출발한다.\n4. Bus 372 운행 이상 시 현장 대체교통을 확인하며 차량 회수 없이 Aix로 출발하지 않는다.",
+  "backup": "우천 시 오전 운동을 실내 스트레칭으로 바꾸고, Lourmarin에서는 스케치를 카페 실내 창가 자리로 옮긴다. 비가 심하면 Lourmarin을 유지하되 Château 내부 관람 비중을 높이고 스케치는 사진 스케치로 대체한다. 오후 전체가 무너지면 Aix에서 Musée Granet 실내 관람으로 전환한다.",
   "map": {
     "zoom": 11,
     "center": [
-      43.41,
-      5.407
+      43.65,
+      5.4
     ],
     "routeCache": null
   },
   "needsReview": [
-    "CHECK — 당일 3 Calanques 유람선 운항·기상 상태",
-    "CHECK — Gorguettes 잔여면·Bus 372와 트레일 산불 접근통제",
-    "ACTION REQUIRED — Chez Gilbert 9/13 12:30 실제 예약 또는 대체 식당",
-    "유람선은 7일 운항(기상·수요 조건, 48시간 전 예약 권장) — 2026-08-28 공식 확인. 9/13 일요일 회차·기상 재확인",
-    "일요일 점심 영업 재확인 — 금요일 기준 정보가 남아 있으면 삭제"
+    "Château de Lourmarin 9/13(일) 개관 시간·요금 재확인",
+    "일요일 오후 D943 교통·Parking du Rayol 혼잡 확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-16",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-16",
     "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-16",
-    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
-    "OSM Nominatim 지오코딩 2026-08-06: Aix 버스터미널"
+    "https://www.provenceguide.com/patrimoines-culturels/luberon/lourmarin/provence-2997889-1.html",
+    "https://chateau-de-lourmarin.com/"
   ]
 }

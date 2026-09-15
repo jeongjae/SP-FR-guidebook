@@ -5,13 +5,14 @@ source: source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md
 
 ## Luberon을 이렇게 본다
 
-Luberon에서는 Gordes에 2박하며 서로 다른 풍경과 돌빛을 가진 마을을 연결한다. Day 17의 Lourmarin·Lacoste와 Gordes, Day 18의 화요시장·Roussillon·Sénanque가 이 구간의 정체성을 만든다.
+Luberon에서는 Gordes에 1박하며 서로 다른 풍경과 돌빛을 가진 마을을 연결한다. Day 17(9/14)의 Roussillon 오크르와 Gordes 체크인·결혼기념일 저녁, Day 18(9/15) 아침의 화요시장과 Sénanque·L'Isle-sur-la-Sorgue 경유가 이 구간의 정체성을 만든다. Lourmarin은 Aix 체류 중(9/13 오후)에 이미 다녀온다.
 
-Bonnieux·Lacoste·Ménerbes·Goult는 시간이 남을 때만 붙인다. Optional을 위해 Lourmarin 점심, Gordes 체크인, Roussillon 오커길이나 Sénanque 관람 시간을 희생하지 않는다.
+Bonnieux·Lacoste·Ménerbes·Goult는 이번 일정에서 제외한다. 짧은 1박이므로 Roussillon 오커길, Gordes 체크인·저녁, Sénanque 관람 시간을 다른 것과 바꾸지 않는다.
 
-### 이번 2박의 핵심
+### 이번 1박의 핵심
 
-- **Gordes 2박** — 도착일 늦은 오후와 다음 날 저녁에 관광객이 줄어든 마을을 경험한다.
+- **Gordes 1박** — 도착일 늦은 오후와 화요시장 아침, 관광객이 줄어든 시간대의 마을을 경험한다.
+- **결혼기념일 저녁** — 9/14 La Trinquette. 이 밤이 이번 1박의 이유다.
 - **Roussillon의 오커** — 다른 Luberon 마을과 전혀 다른 색과 지질을 직접 걷는다.
 - **Gordes와 석조마을** — 돌과 지형이 마을의 형태를 어떻게 바꾸는지 비교한다.
 
@@ -23,17 +24,16 @@ Bonnieux·Lacoste·Ménerbes·Goult는 시간이 남을 때만 붙인다. Option
 
 | 날짜 | 핵심 일정 |
 |---|---|
-| 9/14 월 | Aix 체크아웃 · Lourmarin·점심 · Château de Lacoste 관람 · [Bonnieux] · Gordes 체크인·마을 |
-| 9/15 화 | Gordes 화요시장 · Roussillon·Sentier des Ocres · Sénanque · [오후 L'Isle-sur-la-Sorgue 왕복] · Gordes |
-| 9/16 수 | Gordes 체크아웃 · Saint-Rémy 수요시장 · Les Baux · Avignon 체크인 (상세는 Avignon 장) |
+| 9/14 월 | Aix 체크아웃 · Roussillon·Sentier des Ocres·점심 · Gordes 16:00 체크인 · **La Trinquette 결혼기념일 저녁** |
+| 9/15 화 | Gordes 화요시장 · 체크아웃 · Abbaye de Sénanque(오전) · L'Isle-sur-la-Sorgue·점심 · Avignon 체크인 (상세는 Avignon 장) |
 
 상세 시각, 주차, 식사와 선택 일정은 각 날짜의 Day 페이지에서 확인한다.
 
 ## 농가와 생활권
 
-Gordes 마을 또는 가까운 생활권의 2박 숙소를 거점으로 삼는다. 이동은 렌터카가 기본이고 각 마을은 외곽 주차 후 걷는다.
+확정 숙소는 104 Rte des Moines, 84220 Gordes — Sénanque로 이어지는 Route des Moines 진입로 권역의 1박 거점이다. 이동은 렌터카가 기본이고 각 마을은 외곽 주차 후 걷는다.
 
-첫날 Lourmarin 점심과 Lacoste 성 관람 뒤 Gordes 체크인·저녁을 즐긴다. Day 18은 화요시장·오크르·Sénanque에 오후 L'Isle 왕복을 선택으로 붙이고, Day 19에 Saint-Rémy를 거쳐 Avignon으로 이동한다.
+첫날(9/14) Roussillon 오크르길과 점심 뒤 16:00 Gordes 체크인, 마을 산책, La Trinquette 결혼기념일 저녁을 둔다. 다음 날(9/15) 아침 화요시장을 본 뒤 체크아웃하고 Sénanque(오전 창)와 L'Isle-sur-la-Sorgue를 거쳐 Avignon으로 이동한다.
 
 숙소에 도착하면 주차 위치와 야간 출입방법을 먼저 확인한다.
 
@@ -51,11 +51,11 @@ Gordes와 여러 마을을 연결하는 일정은 렌터카가 기본이다. 대
 
 ### Gordes로 돌아오는 시간
 
-Day 17은 Sénanque 관람 뒤 18:00 전후 Gordes로 돌아와 휴식한다. Optional 때문에 수도원 슬롯이나 저녁 복귀를 늦추지 않는다.
+Day 17(9/14)은 16:00 체크인 뒤 마을 산책과 저녁이 전부다. 결혼기념일 저녁(19:00)을 위협하는 추가 일정을 붙이지 않는다.
 
 ### Avignon으로 출발하는 날
 
-Day 19(9/16 수) 체크아웃 후 Saint-Rémy 수요시장과 Les Baux를 거쳐 Avignon으로 이동한다. L'Isle은 전날(Day 18) 오후에 다녀오는 것으로 옮겼다.
+Day 18(9/15 화) 화요시장 후 체크아웃하고 Sénanque와 L'Isle-sur-la-Sorgue를 거쳐 Avignon으로 이동한다. Saint-Rémy·Les Baux는 다음 날(Day 19) Avignon 기점 당일치기다.
 
 ---
 
@@ -76,12 +76,10 @@ Day 19(9/16 수) 체크아웃 후 Saint-Rémy 수요시장과 Les Baux를 거쳐
 
 ### 이번 일정의 식사 배치
 
-- **Day 17 · CONFIRMED** — La Récréation(15 rue Philippe de Girard)은 2026 연중 등록, 성수기 7일 운영, 점심 12:00–14:00이다. à la carte €22–26, 성인 메뉴 €37.50–38.50, plat du jour €22.
-- **Day 17 · ACTION REQUIRED / FALLBACK** — 9/14 12:15 실제 좌석은 미확인. 예약이 안 되면 같은 12:15–13:30 창에 Lourmarin 마을 카페·브라시리를 현장 이용하고 동선은 바꾸지 않는다.
-- **Day 17 · CONFIRMED** — Bistrot Le 5 공식 사이트는 **월요일 휴무**로 표시한다. Day 17 점심으로 의존하지 않고 Ménerbes를 MUST로 승격하지 않는다.
-- **Day 17 · FALLBACK** — A) Ménerbes 전 Roussillon 점심, B) Ménerbes 카페·불랑제리 간단식, C) 우회 없이 Gordes 방향 복귀.
-- **Day 18** — L'Isle에서는 커피·브런치, Fontaine을 가면 강변 가벼운 점심, 저녁은 Avignon 숙소 주변에 둔다.
-
-Gordes 화요시장은 Day 18 체크아웃과 충돌하므로 참고 정보로만 두고 핵심 일정으로 승격하지 않는다.
+- **Day 17 저녁 · CONFIRMED — La Trinquette 결혼기념일 만찬 (변경 금지)** — 55 Rue des Tracapelles, Gordes. 마을 중심의 작은 레스토랑으로 2층 다이닝과 Luberon 전망 발코니가 있다. à la carte €30–55 · 화요일 휴무라 9/14(월)은 영업일이다 (2026-09-16 Vaucluse 관광DB 확인). 19:00 좌석은 +33 4 90 72 11 62 로 재확인한다.
+- **Day 17 점심** — Roussillon권에서 가볍게. 특정 업소를 전제하지 않고, 저녁 만찬을 위해 양을 조절한다.
+- **Day 18(9/15 화) 아침** — Gordes 화요시장 조달. 이번 체류의 유일한 장날이다.
+- **Day 18 점심** — L'Isle-sur-la-Sorgue 강변 카페·비스트로.
+- **Day 18 저녁** — Avignon 도착 후 장보기, 숙소에서 직접 준비 (레스토랑 예약 없음).
 
 ---

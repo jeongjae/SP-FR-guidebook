@@ -275,7 +275,7 @@
     "aix": {
       "recommendation": {
         "title": "Aix는 도보, Marseille에서는 같은 카드로 바로 태그",
-        "summary": "Day 13은 전부 도보, Day 14·16은 렌터카이므로 Aix 정기권은 사지 않는다. Aix 시내버스가 필요할 때만 비접촉 카드로 두 사람을 각각 태그한다. Day 15 Marseille는 TER를 별도 구매하고 RTM bus·metro는 같은 비접촉 카드로 두 사람을 매번 검증한다."
+        "summary": "Day 13·15 시내 구간과 Day 15 토요시장·아틀리에는 도보가 기본이고, Day 15 오후 Château La Coste와 Day 16 오후 Lourmarin, Day 17 이동일은 렌터카이므로 Aix 정기권은 사지 않는다. Aix 시내버스가 필요할 때만 비접촉 카드로 두 사람을 각각 태그한다. Day 14 Marseille는 TER를 별도 구매하고 RTM bus·metro는 같은 비접촉 카드로 두 사람을 매번 검증한다"
       },
       "products": [
         {
@@ -290,14 +290,14 @@
           "price": "1인 1여정 €1.70",
           "shared": true,
           "accessNote": "bus·metro·tram 60분",
-          "fit": "Day 15 Marseille의 60·83번 bus와 Metro M1에 사용"
+          "fit": "Day 14 Marseille의 60·83번 bus와 Metro M1에 사용"
         },
         {
           "name": "Aix↔Marseille TER",
           "price": "SNCF Connect 당일 요금",
           "shared": false,
           "accessNote": "도시 교통권과 별도",
-          "fit": "Day 15 왕복 기본안; 출발 전 실제 열차와 표를 확인"
+          "fit": "Day 14 왕복 기본안; 출발 전 실제 열차와 표를 확인"
         }
       ],
       "howToUse": [
@@ -307,8 +307,8 @@
         "검표 때는 결제에 사용한 실물 카드나 같은 기기를 제시한다. 휴대전화로 결제했다면 실물 카드로 바꿔 제시하지 않는다."
       ],
       "exceptions": [
-        "Day 15 Aix↔Marseille TER는 Aix en Bus나 RTM 단일권에 포함된다고 가정하지 않는다. SNCF Connect에서 왕복 열차를 따로 산다.",
-        "Day 14 Cassis는 렌터카와 현지 주차가 기본이다. Gorguettes 셔틀은 운행일을 현장에서 다시 확인하며 Aix 교통권과 묶지 않는다.",
+        "Day 14 Aix↔Marseille TER는 Aix en Bus나 RTM 단일권에 포함된다고 가정하지 않는다. SNCF Connect에서 왕복 열차를 따로 산다.",
+        "Day 15 오후 Château La Coste와 Day 16 오후 Lourmarin은 렌터카 왕복이 기본이다. 대중교통으로 같은 동선을 재현하지 않는다.",
         "Aix–Marseille 광역버스 L50은 TER 장애 시 대안이다. 비접촉 결제 요금은 1인 €7이며, 이용하면 Gare routière↔Saint-Charles 실제 시각을 당일 공식 앱에서 확인한다.",
         "Aix 구시가지는 차량을 숙소 주차장에 두고 걷는다. 시장일이나 짧은 시내 이동을 이유로 정기권을 미리 사지 않는다."
       ],
@@ -323,15 +323,15 @@
         },
         {
           "day": 15,
-          "label": "토요시장·Vieil Aix·세잔 아틀리에·Granet은 도보"
+          "label": "토요시장·Vieil Aix·세잔 아틀리에는 도보, 오후 Château La Coste는 렌터카 왕복"
         },
         {
           "day": 16,
-          "label": "Cassis·Calanques는 렌터카 왕복; 현지 주차·셔틀은 별도"
+          "label": "오전 운동·시내는 도보, 오후 Lourmarin은 렌터카 왕복"
         },
         {
           "day": 17,
-          "label": "체크아웃 뒤 렌터카로 Lourmarin·Luberon 이동"
+          "label": "체크아웃 뒤 렌터카로 Roussillon 경유 Gordes 이동"
         }
       ],
       "sources": [
@@ -364,7 +364,7 @@
     "luberon": {
       "recommendation": {
         "title": "교통권은 사지 않는다 — 렌터카 고정, ZOU!는 차량 장애 때만",
-        "summary": "Day 16–18은 Gordes 2박 거점과 Luberon 마을을 잇기 때문에 렌터카·외곽 주차·도보가 정본이다. 차량을 쓸 수 없으면 같은 일정을 버스로 재현하지 말고 핵심 한 축만 남긴다."
+        "summary": "Day 17–18은 Gordes 1박 거점과 Luberon 마을·수도원·물의 마을을 잇기 때문에 렌터카·외곽 주차·도보가 정본이다. 차량을 쓸 수 없으면 같은 일정을 버스로 재현하지 말고 핵심 한 축만 남긴다."
       },
       "products": [
         {
@@ -400,21 +400,17 @@
         "Gordes 숙소는 대중교통 거점이라고 가정하지 않는다. ZOU! 노선은 문전 이동이나 야간 귀환을 보장하지 않는다.",
         "99xx 계열 통학 노선은 방문객의 비상 교통편으로 계획하지 않는다.",
         "차량 장애가 나면 렌터카 업체 지원을 먼저 요청하고 그날의 다중 마을 일정을 취소한다. 실제 출발지에서 연결되는 915·917·907 중 한 축만 공식 시간표로 검토한다.",
-        "Day 19의 정본은 Saint-Rémy·Les Baux를 거쳐 렌터카로 Avignon까지 이동하는 것이다. L'Isle은 Day 18 오후 선택 왕복이다. 버스는 차량 장애 때 일정을 단일 축으로 줄이는 대안이다.",
+        "Day 18의 정본은 Gordes 화요시장 후 렌터카로 Sénanque·L'Isle-sur-la-Sorgue를 거쳐 Avignon까지 이동하는 것이다. 버스는 차량 장애 때 일정을 단일 축으로 줄이는 대안이다.",
         "강풍·폭우·산불 통제가 있으면 오커길과 수도원 접근을 줄이고 숙소 또는 한 마을 일정으로 축소한다."
       ],
       "itineraryUses": [
         {
           "day": 17,
-          "label": "Aix→Lourmarin→Lacoste→[Bonnieux 선택]→Gordes는 렌터카"
+          "label": "Aix→Roussillon→Gordes는 렌터카; 저녁 La Trinquette는 도보"
         },
         {
           "day": 18,
-          "label": "Gordes 화요시장→Roussillon→Sénanque→[오후 L'Isle 왕복 선택]→Gordes는 렌터카"
-        },
-        {
-          "day": 19,
-          "label": "Gordes 체크아웃→Saint-Rémy→Les Baux→Avignon은 렌터카"
+          "label": "Gordes 화요시장→Sénanque→L'Isle→Avignon은 렌터카"
         }
       ],
       "sources": [
@@ -441,7 +437,7 @@
     "avignon": {
       "recommendation": {
         "title": "성벽 안은 도보 — Orizo 정기권 없이 TER 두 구간만 분리 구매",
-        "summary": "Day 19·20은 렌터카를 쓰고 Day 20 저녁 Avignon TGV에서 반납한다. Day 21 Avignon Centre↔Arles TER는 별도 구매하고, Day 22는 성벽 안을 걷는다. Day 23은 차량 절차 없이 TGV로 Lyon에 이동한다."
+        "summary": "Day 18 도착과 Day 19 Alpilles·Day 20 근교는 렌터카를 쓰고 Day 20 저녁 Avignon TGV에서 반납한다. Day 21 Avignon Centre↔Arles TER는 별도 구매하고, Day 22는 성벽 안을 걷는다. Day 23은 차량 절차 없이 TGV로 Lyon에 이동한다."
       },
       "products": [
         {
@@ -480,8 +476,12 @@
       ],
       "itineraryUses": [
         {
+          "day": 18,
+          "label": "Gordes→Sénanque→L'Isle→Avignon 도착은 렌터카; 체크인 뒤 성벽 안 도보"
+        },
+        {
           "day": 19,
-          "label": "Gordes→Saint-Rémy 수요시장→Les Baux→Avignon은 렌터카, 체크인 뒤 숙소 정리"
+          "label": "Avignon⇄Saint-Rémy 수요시장·Les Baux 렌터카 당일 왕복"
         },
         {
           "day": 20,

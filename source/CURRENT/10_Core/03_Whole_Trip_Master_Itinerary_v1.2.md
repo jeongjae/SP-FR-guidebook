@@ -24,11 +24,11 @@ status: "chapter-derived master itinerary; booking values pending"
 | 12 | **9/9 수** | **Moustiers (Verdon)** | 코트다쥐르 → Verdon 협곡 진입 | Nice역 렌터카 09:00 인수 (확정 [CONFIRMED]), Saint-Paul, Grasse 점심, Route Napoléon, Point Sublime, Moustiers 체크인 | 지연 시 Grasse→Point Sublime 순 삭제, 일몰 전 도착 최우선 | 5 | **Moustiers 1박 숙소(미정) 확보** |
 | 13 | **9/10 목** | **Aix-en-Provence** | Verdon 협곡 → Provence 내륙 | Moustiers 아침·Beauvoir 계단, Route des Crêtes(개방 시), Pont du Galetas, Valensole 경유, Aix 체크인 (확정 [CONFIRMED] 9/10~9/14 4박) | 늦으면 Crêtes 축소→호수·고원 정차 생략 | 4 | Crêtes 당일 통제 확인 |
 | 14 | 9/11 금 | Aix-en-Provence | Marseille 전일 당일치기 | TER 왕복, Vieux-Port, Le Panier, Mucem/Fort Saint-Jean, Notre-Dame de la Garde | 피로 시 Vallon des Auffes 생략 후 조기 복귀 | 4 | TER·Mucem (화요일만 휴관 확인) |
-| 15 | 9/12 토 | Aix-en-Provence | Aix 토요 대형시장·세잔의 도시 | 토요시장(Richelme·Prêcheurs·Verdun), Vieil Aix, Atelier des Lauves(매일 09–18·예약 필수 확인), Musée Granet, Cours Mirabeau | 피로 시 Granet 압축·카페 휴식 | 3 | Atelier 예약·식당 |
-| 16 | 9/13 일 | Aix-en-Provence | Cassis와 Calanques 해안 당일치기 | Aix↔Cassis 차량 왕복, 칼랑크 유람선(7일 운항·기상 조건), 카시스 항구 점심, Port-Miou 도보 | 강풍·결항 시 Cap Canaille 드라이브 대체 | 3 | 유람선 48시간 전 예약·주차 |
-| 17 | 9/14 월 | Gordes | Aix→남부 Luberon→Gordes | Aix 체크아웃, Lourmarin 마을·점심, **Château de Lacoste 13:00–17:00 (확정 [CONFIRMED])**, Gordes 체크인 | Bonnieux 선택, 늦으면 Lacoste 관람 축소 | 3 | Gordes 2박(미정)·Lourmarin 점심 |
-| 18 | 9/15 화 | Gordes | 화요시장·오크르와 Sénanque | **Gordes 화요시장**, Roussillon·Sentier des Ocres, Abbaye de Sénanque, 오후 L'Isle-sur-la-Sorgue 왕복(선택) | 피로 시 L'Isle 삭제 → Gordes 저녁 | 4 | Sénanque 슬롯·오커길 |
-| 19 | 9/16 수 | **Avignon** | Gordes 체크아웃→Alpilles→Avignon | **Saint-Rémy 수요시장**·구시가지·점심, Les Baux 성채·전망, Avignon 체크인 (4박, 미정) | Les Baux 축소, Orange 제외 | 4 | Avignon 4박·주차 |
+| 15 | 9/12 토 | Aix-en-Provence | Aix 토요 대형시장·세잔·안도 타다오 | 토요시장(Richelme·Prêcheurs·Verdun), Vieil Aix, Atelier des Lauves(매일 09–18·예약 필수 확인), 오후 **Château La Coste — Tadao Ando Art Centre**(차량 왕복, 연중무휴 10:00–19:00) | 우천 시 La Coste 축소·Granet 실내 대체 | 3 | Atelier 예약·식당 |
+| 16 | 9/13 일 | Aix-en-Provence | 회복과 그림 — 오전 운동·오후 Lourmarin | 오전 Aix 운동(Rotonde–Mirabeau–Parc Jourdan), 오후 Lourmarin 마을·Château, **수채화 스케치 90분** | 우천 시 스케치를 카페 실내로 | 2 | Château de Lourmarin 일요 개관 확인 |
+| 17 | 9/14 월 | **Gordes** | Aix 체크아웃→Roussillon→Gordes · 결혼기념일 | Aix 체크아웃, Roussillon·Sentier des Ocres·점심, **Gordes 16:00 체크인 (확정 [CONFIRMED] 9/14~9/15 1박)**, **La Trinquette 결혼기념일 저녁 (변경 금지)** | 늦으면 전망대 정차 생략 | 3 | La Trinquette 19:00 좌석 재확인 |
+| 18 | 9/15 화 | **Avignon** | 화요시장→Sénanque→L'Isle→Avignon 정착 | **Gordes 화요시장**, 체크아웃, Abbaye de Sénanque(오전 창), L'Isle-sur-la-Sorgue 경유·점심, **Avignon 체크인 (확정 [CONFIRMED] 9/15~9/20 5박)**, 장보기·숙소 저녁 | 늦으면 Sénanque 내부 생략 | 3 | Sénanque 오전 회차·Avignon 주차 |
+| 19 | 9/16 수 | Avignon | Alpilles 당일치기 — 수요시장과 석회암 성채 | Avignon 출발, **Saint-Rémy 수요시장**·구시가지·점심(오전), Les Baux 성채·전망(오후), Avignon 복귀 | Les Baux 축소 후 조기 복귀, Orange 제외 | 3 | Les Baux 운영·주차 |
 | 20 | 9/17 목 | Avignon | Uzès·Pont du Gard·Nîmes와 차량 반납 | Uzès 구시가지, Pont du Gard, Nîmes 로마유적, Avignon TGV Hertz 18:30 이전 반납 | 지연 시 Nîmes 체류부터 축소 | 4 | 9/17 조기 반납 예약 변경·주차 |
 | 21 | 9/18 금 | Avignon | Arles 철도 당일치기 | Arènes, Théâtre antique, Place du Forum, Saint-Trophime, La Roquette | Fondation·LUMA·Alyscamps·고대박물관은 선택 | 3 | TER·문화유산의 날 운영 재확인 |
 | 22 | 9/19 토 | Avignon | 교황도시 핵심 | Les Halles, Palais des Papes, Rocher des Doms, Pont Saint-Bénézet | 추가 미술관 1곳 이하 | 3 | Palais·식당 |
@@ -62,8 +62,8 @@ status: "chapter-derived master itinerary; booking values pending"
 | 9/4 | Bàscara 체크아웃→Nice 이동 | 이동수단·차량 반납지·소요시간 재확인 필요 |
 | **9/9** | Nice→Saint-Paul→Grasse→Route Napoléon→Moustiers | 렌터카 인수 지연 시 Grasse부터 삭제, 일몰 전 Moustiers 도착 최우선 |
 | **9/10** | Moustiers→Route des Crêtes→Sainte-Croix→Valensole→Aix | 늦으면 Crêtes 축소, 15:00 이후 Aix 체크인 |
-| 9/14 | Aix→Lourmarin→Lacoste→Gordes | Aix 4박 체크아웃 후 Lourmarin 점심·Lacoste 성 관람, Gordes 2박 체크인 |
-| **9/16** | Gordes→Saint-Rémy→Les Baux→Avignon | 수요시장·Alpilles을 거쳐 Avignon 4박 체크인; Orange 제외 |
+| 9/14 | Aix→Roussillon→Gordes | Aix 4박 체크아웃 후 Roussillon 오크르, Gordes 1박 체크인·결혼기념일 저녁 |
+| **9/15** | Gordes→Sénanque→L'Isle→Avignon | 화요시장·수도원·물의 마을을 거쳐 Avignon 5박 체크인; 장보기 후 숙소 저녁 |
 | 9/17 | Avignon→Uzès→Pont du Gard→Nîmes→Avignon TGV | 18:30 이전 Hertz 조기 반납; 지연 시 Nîmes부터 축소 |
 | 9/20 | Avignon→Lyon | 차량 절차 없이 TGV 12176 탑승·Lyon 체크인 |
 | 9/24 | Lyon→Paris | 15박 짐 이동일, Gare de Lyon에서 숙소까지 택시 우선 |

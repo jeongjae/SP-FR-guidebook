@@ -24,7 +24,8 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에
 
 | 날짜 | 핵심 일정 |
 |---|---|
-| 9/16 수 | Gordes 체크아웃 · Saint-Rémy 수요시장 · Les Baux · Avignon 체크인 · 생활권 정리 |
+| 9/15 화 | Gordes·Sénanque·L'Isle 경유 도착 · Avignon 체크인 · 장보기·숙소 저녁 (도착 전은 Luberon 장) |
+| 9/16 수 | Saint-Rémy 수요시장(오전) · Les Baux(오후) 당일치기 · Avignon 복귀 |
 | 9/17 목 | Uzès · Pont du Gard · Nîmes · 렌터카 반납 |
 | 9/18 금 | Arles 당일치기 (TER 이동) |
 | 9/19 토 | Les Halles · Palais des Papes · Rocher des Doms · Pont Saint-Bénézet |
@@ -34,9 +35,9 @@ Avignon에서는 교황청이 남긴 중세 도시 구조를 보고, Alpilles에
 
 ## 숙소와 생활권
 
-Avignon 체류의 거점은 성벽(intra-muros) 안 도보 생활권이다. Day 19 도착일(Alpilles 경유)과 Day 20 근교 일정에는 렌터카를 쓰고, 이후 일정에는 차를 쓰지 않는다.
+Avignon 체류의 거점은 성벽(intra-muros) 안 Joseph Vernet 권역의 확정 숙소 — 10 Rue d'Annanelle이다. Day 18 도착일(9/15)과 Day 19 Alpilles 당일치기, Day 20 근교 일정에는 렌터카를 쓰고, 9/17 저녁 반납 후에는 차를 쓰지 않는다.
 
-아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소는 주방과 세탁 설비가 있는 곳을 기본으로 한다. 4박 동안 성벽 안을 걸어 다니며 생활 리듬을 유지한다.
+아침 장보기와 식사는 Les Halles 시장과 인근 상점을 이용하고, 숙소의 주방과 세탁 설비로 5박 생활 리듬을 유지한다. 도착일 저녁은 장을 봐서 숙소에서 직접 차린다.
 
 #### 아침 운동
 
@@ -50,9 +51,9 @@ Avignon 체류 중에는 성벽 남쪽 산책로나 론(Rhône) 강변, 바르�
 
 교황궁, 광장, 시장과 주요 명소는 성벽 안 도보로 모두 연결된다. 시내 일정 동안에는 차량 통행 제한과 주차 부담을 피해 걷는 것을 기본으로 한다.
 
-### Uzès와 Pont du Gard는 렌터카
+### Saint-Rémy·Les Baux와 Uzès·Pont du Gard는 렌터카
 
-가르 지방 근교 일정에는 렌터카를 이용한다. 일정을 마친 뒤 저녁에 Avignon TGV역에서 차량을 최종 반납하여 이후 일정의 주차 부담을 없앤다.
+Day 19(9/16) Alpilles 당일치기와 Day 20(9/17) 가르 지방 근교 일정에는 렌터카를 이용한다. Day 20 일정을 마친 뒤 저녁에 Avignon TGV역에서 차량을 최종 반납하여 이후 일정의 주차 부담을 없앤다.
 
 ### Arles는 TER
 
@@ -81,7 +82,7 @@ Arles 당일치기는 Avignon Centre역에서 TER로 이동한다. 도착 후 �
 
 ### 시장과 장보기
 
-- **Saint-Rémy 수요시장** — Day 19(도착일) 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
+- **Saint-Rémy 수요시장** — Day 19(9/16 수, Avignon 기점 당일치기) 오전 08:00–13:00에 Place de la République와 구시가지 일대에서 열리는 대형 Provençal market이다. ([상세 정보](../places/saint-remy-de-provence.html))
 - **Les Halles d'Avignon** — Avignon 체류 중 아침거리와 신선 식재료를 준비하는 실내 시장이다. ([상세 정보](../places/les-halles.html))
 - **Place aux Herbes (Uzès)** — 아치 회랑으로 둘러싸인 우제스 구시가지 중심 광장으로, 카페와 로컬 식료품점이 밀집해 있다. ([상세 정보](../places/uzes.html))
 
