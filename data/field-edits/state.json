@@ -1,7 +1,9 @@
 {
   "version": 1,
   "note": "CI(apply-edits)가 소유한다 — 기기별 적용 커서와 거부 이벤트. 기기 저널은 CI 가 절대 고쳐 쓰지 않는다.",
-  "cursors": {},
+  "cursors": {
+    "dev-e2etest": "01M2KEBB0WR70RHA18CFERH839"
+  },
   "rejected": [],
   "overwritten": []
 }
