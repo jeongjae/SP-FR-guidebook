@@ -13,15 +13,15 @@ source: source/CURRENT/30_Places/roussillon-sentier-des-ocres.md
 
 ## 현장 실행
 
-- **MUST · Day 18 · 2–2.25시간**
+- **MUST · Day 17 · 2시간**
 - **WHY GO**: Gordes의 석회암과 전혀 다른 오크르 지질·산업유산과 붉은 마을을 한 번에 본다.
 - **DO THIS**: Parking des Ocres/Saint-Michel → 09:30 Sentier des Ocres → Place de la Mairie → 붉은 골목·전망 → 커피.
-- **EAT / DRINK**: coffee·pastry 중심. 긴 점심은 Ménerbes가 우선이며, 필요하면 Le Castrum 또는 Bistrot de Roussillon로 전환한다.
-- **IF LATE**: Roussillon은 생략하지 않는다. Goult를 먼저 삭제한다.
+- **EAT / DRINK**: 점심을 이 마을권에서 가볍게 해결한다 (Le Castrum·Bistrot de Roussillon 등 현장 선택). 저녁이 Gordes 결혼기념일 만찬이므로 양을 조절한다.
+- **IF LATE**: Roussillon은 생략하지 않는다. Gordes 전망대 정차를 먼저 삭제한다.
 
 ### Trip Layer
 
-Day 18 첫 MUST다. 9월 공식 운영은 09:30–18:30, 19:00 퇴장이며 날씨·안전 조건에 따라 통제될 수 있어 당일 확인한다.
+Day 17(9/14 월) Aix→Gordes 이동일의 첫 MUST다. 9월 공식 운영은 09:30–18:30, 19:00 퇴장이며 날씨·안전 조건에 따라 통제될 수 있어 당일 확인한다.
 
 ## 왜 가는가
 

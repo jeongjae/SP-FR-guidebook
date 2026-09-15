@@ -131,19 +131,19 @@
       "editorialSlug": "lourmarin"
     },
     {
-      "id": "avignon-stay-candidate",
-      "name": "La Terrasse du Clocher",
+      "id": "avignon-stay",
+      "name": "Avignon 숙소 — Rue d'Annanelle",
       "city": "Avignon",
       "type": "accommodation",
-      "lat": 43.94993,
-      "lng": 4.81302,
+      "lat": 43.9472485,
+      "lng": 4.8021506,
       "googlePlaceId": "",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Terrasse+du+Clocher",
-      "address": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=10+Rue+d%27Annanelle+84000+Avignon",
+      "address": "10 Rue d'Annanelle, 84000 Avignon, France",
       "private": false,
-      "approximate": true,
-      "optional": true,
-      "status": "candidate",
+      "approximate": false,
+      "optional": false,
+      "status": "confirmed",
       "legacySources": [
         "75_Execution_Maps/Avignon_Execution_Map_v0.2.geojson"
       ]
@@ -691,19 +691,19 @@
       ]
     },
     {
-      "id": "gordes-stay-candidate",
-      "name": "Gordes 숙소 (후보 미정)",
+      "id": "gordes-stay",
+      "name": "Gordes 숙소 — Rte des Moines",
       "city": "Luberon",
       "type": "accommodation",
-      "lat": 43.91181,
-      "lng": 5.20043,
+      "lat": 43.9099822,
+      "lng": 5.1972296,
       "googlePlaceId": "",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gordes+accommodation",
-      "address": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=104+Route+des+Moines+84220+Gordes",
+      "address": "104 Rte des Moines, 84220 Gordes, France",
       "private": false,
       "approximate": true,
-      "optional": true,
-      "status": "candidate",
+      "optional": false,
+      "status": "confirmed",
       "legacySources": []
     },
     {
@@ -2594,6 +2594,22 @@
       "legacySources": [
         "Paris PMP itinerary synchronization 2026-09-06"
       ]
+    },
+    {
+      "id": "chateau-la-coste",
+      "name": "Château La Coste — Tadao Ando Art Centre",
+      "city": "Aix-en-Provence",
+      "type": "attraction",
+      "lat": 43.6368129,
+      "lng": 5.4205503,
+      "googlePlaceId": "",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau+La+Coste+Le+Puy-Sainte-R%C3%A9parade",
+      "address": "2750 Route de la Cride, 13610 Le Puy-Sainte-Réparade, France",
+      "private": false,
+      "approximate": false,
+      "optional": false,
+      "status": "planned",
+      "legacySources": []
     }
   ]
 }

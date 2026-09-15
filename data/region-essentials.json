@@ -79,65 +79,61 @@
       ]
     },
     "aix": {
-      "staySummary": "확정 숙소는 Les Toits de Méjanes(Airbnb) · 2 Place Coimbra, entrée A, 6층. 4박(9/9 15:00 체크인 – 9/13 14:00 체크아웃). 구시가지는 걸어 다니고 차는 세워 둔다 — 시내일(9/10·9/12)에는 차를 움직이지 않는다.",
+      "staySummary": "확정 숙소는 Les Toits de Méjanes(Airbnb) · 2 Place Coimbra, entrée A, 6층. 4박(9/10 15:00 체크인 – 9/14 체크아웃). 구시가지는 걸어 다니고 차는 세워 둔다 — 시내일에는 차를 움직이지 않고, La Coste(9/12 오후)·Lourmarin(9/13 오후)만 차로 다녀온다.",
       "lifeEssentials": [
-        "장보기는 Place Richelme 식품시장이 기본이다. 매일 오전에 서고 목요일에는 규모가 커진다.",
+        "장보기는 Place Richelme 식품시장이 기본이다. 매일 오전에 서고 토요일(9/12)에는 주간 최대 규모로 커진다.",
         "아침·샌드위치 점심은 숙소에서 만든다. 시장 재료(chèvre·토마토·tapenade·pain de campagne)가 그 전제다.",
         "슈퍼는 상호를 고정하지 않는다. 체크인 뒤 도보 5–10분 안의 현재 영업점을 지도에 저장한다.",
-        "운동은 Rotonde–Cours Mirabeau–Parc Jourdan 왕복 4–6km 이지 헬스장이 아니다. 숙소 피트니스는 확인되지 않았다."
+        "운동은 Rotonde–Cours Mirabeau–Parc Jourdan 왕복 4–6km 이지 헬스장이 아니다. 9/13 오전이 지정 운동 창이다."
       ],
-      "arrivalStrategy": "Day 12 Nice-Ville 역에서 09:00 렌터카를 인수해 Saint-Paul-de-Vence·Grasse 를 거쳐 A8 로 들어온다. 16:45 체크인 예정. 도착일 저녁에 야심을 부리지 않는다 — 로통드와 쿠르 미라보 첫 산책까지가 적당하다.",
-      "departureStrategy": "Day 16 08:30~09:00 체크아웃하고 차에 짐을 싣는다. Lourmarin에서 마을과 점심을 즐긴 뒤 Gordes 2박 거점으로 간다. Bonnieux·Lacoste는 체크인 시각에 여유가 있을 때만 들르며 트렁크 짐은 완전히 가린다.",
-      "lateReturnRule": "마르세유 당일치기(Day 15)는 TER 로 19:45 귀환이다. 막차 시각을 낮에 확인하고, 늦어지면 Vallon des Auffes 를 먼저 뺀다.",
+      "arrivalStrategy": "Day 13(9/10) Moustiers에서 하산해 Valensole을 거쳐 늦은 오후 체크인한다. 도착일 저녁에 야심을 부리지 않는다 — 로통드와 쿠르 미라보 첫 산책으로 시내와 시장 위치를 파악하는 것까지가 적당하다.",
+      "departureStrategy": "Day 17(9/14) 09:00~09:45 체크아웃하고 차에 짐을 싣는다. Roussillon 오크르길을 걸은 뒤 Gordes 1박 거점에 16:00 체크인한다. 저녁은 La Trinquette 결혼기념일 만찬 — 트렁크 짐은 완전히 가린다.",
+      "lateReturnRule": "마르세유 당일치기(Day 14)는 TER 로 19:45 귀환이다. 막차 시각을 낮에 확인하고, 늦어지면 Vallon des Auffes 를 먼저 뺀다. La Coste·Lourmarin에서 늦어지면 야외 일정을 줄이고 저녁 전에 복귀한다.",
       "sourceRefs": [
-        "data/daily-cards/day-12.json",
         "data/daily-cards/day-13.json",
         "data/daily-cards/day-14.json",
         "data/daily-cards/day-15.json",
         "data/daily-cards/day-16.json",
-        "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md",
-        "source/ARCHIVE/20_Regional_Chapters/07_Aix_Planning_Residue_v1.0.md"
+        "data/daily-cards/day-17.json",
+        "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md"
       ]
     },
     "luberon": {
-      "staySummary": "Gordes 2박(9/13 체크인–9/15 체크아웃)을 거점으로 삼는다. Day 16–18의 마을 순회는 렌터카가 정본이며, 도착 즉시 숙소 주차·야간 출입방법을 확인한다.",
+      "staySummary": "Gordes 1박(9/14 16:00 체크인 – 9/15 체크아웃) · 확정 숙소 104 Rte des Moines — Sénanque로 이어지는 진입로 권역이다. 마을 중심은 도보권이고, 이동은 렌터카가 정본이며 도착 즉시 주차·야간 출입방법을 확인한다.",
       "lifeEssentials": [
-        "Day 16 점심은 Lourmarin, 저녁은 Gordes에 둔다. Optional 마을에서 긴 식사를 추가하지 않는다.",
-        "Day 17 점심은 Ménerbes를 우선 후보로 두되 월요일 영업을 재확인하고, 생략 시 Roussillon 또는 Gordes권으로 전환한다.",
+        "9/14 저녁은 La Trinquette 결혼기념일 만찬(55 Rue des Tracapelles·화 휴무·04 90 72 11 62)이다. 다른 저녁으로 바꾸지 않는다.",
+        "9/15 아침은 Gordes 화요시장 조달이다. Avignon 첫 저녁 재료도 이때 봐 둔다.",
         "Roussillon 오커길에는 먼지에 강한 신발을 쓰고, Sénanque에서는 정숙과 현장 촬영 제한을 따른다.",
-        "Gordes 숙소 도착 즉시 주차 위치와 야간 출입방법을 확인한다."
+        "숙소 도착 즉시 주차 위치와 야간 출입방법을 확인한다."
       ],
-      "arrivalStrategy": "Day 16 Aix 체크아웃 뒤 Lourmarin을 거쳐 Gordes로 들어간다. Lacoste부터, 필요하면 Bonnieux까지 생략해 16:00~17:00 체크인을 지킨다.",
-      "departureStrategy": "Day 18 Gordes 체크아웃 뒤 L'Isle-sur-la-Sorgue의 물길을 걷고 Avignon에 체크인한다. Fontaine-de-Vaucluse는 체크인 시각을 해치지 않을 때만 간다.",
-      "lateReturnRule": "Day 17은 Sénanque 관람 후 Gordes로 돌아온다. 늦어지면 Goult, 이어 Ménerbes를 줄이고 Roussillon·Sénanque를 유지한다.",
+      "arrivalStrategy": "Day 17(9/14) Aix 체크아웃 뒤 Roussillon을 거쳐 Gordes로 들어간다. 늦어지면 전망대 정차를 생략하고 16:00 체크인과 19:00 저녁을 지킨다.",
+      "departureStrategy": "Day 18(9/15) 화요시장 후 체크아웃하고 Sénanque(오전 창)와 L'Isle-sur-la-Sorgue를 거쳐 Avignon에 체크인한다.",
+      "lateReturnRule": "Day 18 시장·체크아웃이 늦어지면 Sénanque 내부를 빼고 외관·계곡으로 대체한다. L'Isle은 점심+물레방아 축으로 줄인다.",
       "sourceRefs": [
-        "data/daily-cards/day-16.json",
         "data/daily-cards/day-17.json",
         "data/daily-cards/day-18.json",
-        "data/daily-cards/day-19.json",
-        "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md",
-        "source/ARCHIVE/20_Regional_Chapters/08_Luberon_Planning_Residue_v1.0.md"
+        "source/CURRENT/20_Regional_Chapters/08_Luberon_Farmhouse_v2.0.md"
       ]
     },
     "avignon": {
-      "staySummary": "5박(9/15 체크인–9/20 체크아웃) 거점은 성벽 안 도보권과 Avignon Centre역 접근성을 우선한다. 도착일에는 관리주차장과 생활권부터 안정시킨다.",
+      "staySummary": "5박(9/15 체크인–9/20 체크아웃) 확정 숙소는 10 Rue d'Annanelle — 성벽 안 Joseph Vernet 권역 도보 생활권이다. 도착일에는 주차와 생활권부터 안정시키고 장을 봐서 숙소에서 저녁을 차린다.",
       "lifeEssentials": [
-        "Day 18 체크인 뒤 Les Halles·Place Pie 생활권에서 물과 아침거리를 마련한다. 시장은 화–일 오전이고 월요일은 쉰다.",
+        "Day 18(9/15) 체크인 뒤 도보권 슈퍼에서 물과 저녁·아침거리를 마련한다. Les Halles 시장은 화–일 오전(14:00 마감)이고 월요일은 쉰다.",
         "성벽 안에 사람이 산다 — 학교와 약국과 빨래방이 있다. 생활용품은 관광 동선이 아니라 이 생활권에서 해결한다.",
-        "숙소는 주방·세탁이 있는 형태를 전제로 한다. 5박 중 세탁 1회를 넣을 수 있다.",
-        "운동은 성벽 남쪽·Rhône·Île de la Barthelasse 러닝이다. 수영장은 선택이며 숙소 조건과 분리한다."
+        "숙소의 주방·세탁으로 5박 중 세탁 1회를 넣는다.",
+        "운동은 성벽 남쪽·Rhône·Île de la Barthelasse 러닝이다."
       ],
-      "arrivalStrategy": "Day 18 Gordes에서 L'Isle-sur-la-Sorgue를 거쳐 렌터카로 숙소 주차장 또는 지정 관리주차장에 바로 들어간다. 성벽 안 골목을 순환해 주차장을 찾지 않는다.",
-      "departureStrategy": "Day 23 체크아웃 뒤 TGV로 Lyon 이동한다. 렌터카는 Day 20 저녁 반납 완료되어 아침 이동에 차량 반납 절차가 없다.",
+      "arrivalStrategy": "Day 18(9/15) Gordes에서 Sénanque·L'Isle-sur-la-Sorgue를 거쳐 렌터카로 들어온다. 성벽 안 골목을 순환하지 말고 호스트가 안내한 진입로·주차장(9/15~9/17 보관)으로 바로 간다.",
+      "departureStrategy": "Day 23(9/20) 체크아웃 뒤 TGV로 Lyon 이동한다. 렌터카는 Day 20(9/17) 저녁 반납 완료되어 아침 이동에 차량 반납 절차가 없다.",
       "lateReturnRule": "성벽 안은 도보 귀환이 기본이다. 늦거나 피로하면 Orizo 실시간 경로를 확인하되, T1이 Avignon TGV까지 간다고 가정하지 않는다.",
       "sourceRefs": [
+        "data/daily-cards/day-18.json",
         "data/daily-cards/day-19.json",
         "data/daily-cards/day-20.json",
         "data/daily-cards/day-21.json",
         "data/daily-cards/day-22.json",
         "data/daily-cards/day-23.json",
-        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md",
-        "source/ARCHIVE/20_Regional_Chapters/09_Avignon_Planning_Residue_v1.0.md"
+        "source/CURRENT/20_Regional_Chapters/09_Avignon_Alpilles_Pont_du_Gard_v2.0.md"
       ]
     },
     "lyon": {

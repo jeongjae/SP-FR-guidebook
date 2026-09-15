@@ -13,15 +13,15 @@ source: source/CURRENT/30_Places/l-isle-sur-la-sorgue.md
 
 ## 현장 실행
 
-- **OPTIONAL · Day 18 오후 왕복 · 1.5–2시간**
+- **MUST · Day 18 경유 · 점심 포함 2.5–3시간**
 - **WHY GO**: 이번 여행에서는 골동품보다 Sorgue 수로·물레방아·강변·구시가지가 우선이다.
 - **DO THIS**: 중심부 주차 → Sorgue 강변 → Quai Jean Jaurès → 물레방아 → 구시가지 → Place Ferdinand Buisson·관광안내소 → 강변 카페.
-- **EAT / DRINK**: Fontaine을 가면 coffee/snack, 생략하면 브런치 또는 이른 점심으로 전환한다.
-- **IF LATE**: 앤틱 탐색을 빼고 물길 산책을 유지한 뒤 Avignon으로 이동한다.
+- **EAT / DRINK**: Day 18 점심을 여기서 먹는다 — 강변 카페·비스트로 현장 선택 (운전자 무알코올).
+- **IF LATE**: 앤틱 탐색을 빼고 점심+물레방아 축만 유지한 뒤 Avignon으로 이동한다.
 
 ### Trip Layer
 
-Day 18(9/15 화) 오후에 Gordes에서 편도 약 25분 왕복한다. 화요일이므로 전통시장은 목·일 오전이고 주요 antique village는 화·수 휴무가 많다. 시장일·앤틱 쇼핑일로 묘사하지 않으며 열린 개별 갤러리가 있을 때만 선택한다.
+Day 18(9/15 화) Sénanque에서 Avignon으로 가는 길의 필수 경유지다 — 왕복이 아니라 이동 경로 위에 있다. 화요일이므로 전통시장은 목·일 오전이고 주요 antique village는 화·수 휴무가 많다. 시장일·앤틱 쇼핑일로 묘사하지 않으며 열린 개별 갤러리가 있을 때만 선택한다.
 
 ## 왜 가는가
 

@@ -71,9 +71,9 @@ def main():
         if row[0] is not None
     }
     expected_reservations = {
-        # RS01 (2026-08-28): Gordes 9/14~16 · Avignon 4박 9/16~20
-        "R005": ("Gordes 숙소 2박", date(2026, 9, 14)),
-        "R006": ("Avignon 숙소 4박", date(2026, 9, 16)),
+        # 2026-09-16 실제 예약: Gordes 1박 9/14~15 · Avignon 5박 9/15~20
+        "R005": ("Gordes 숙소 1박 — Rte des Moines", date(2026, 9, 14)),
+        "R006": ("Avignon 숙소 5박 — Rue d'Annanelle", date(2026, 9, 15)),
     }
     for ident, (item, day) in expected_reservations.items():
         row = reservation_rows.get(ident)
@@ -131,7 +131,15 @@ def main():
         "daily/day-12.html": ("Point Sublime", "Moustiers"),
         "daily/day-13.html": ("Route des Crêtes", "Sainte-Croix"),
         "daily/day-14.html": ("Marseille", "Le Panier", "Mucem"),
-        "daily/day-16.html": ("Cassis", "Calanques", "Port-Miou"),
+        # 2026-09-16 실제 일정: D15 오후 La Coste, D16 운동+Lourmarin 수채화,
+        # D17 Roussillon→Gordes·결혼기념일, D18 Sénanque→L'Isle→Avignon 정착.
+        "daily/day-15.html": ("Château La Coste", "Atelier"),
+        "daily/day-16.html": ("운동", "Lourmarin", "수채화"),
+        "daily/day-17.html": ("Roussillon", "La Trinquette", "결혼기념일",
+                              "104 Rte des Moines"),
+        "daily/day-18.html": ("Sénanque", "L'Isle-sur-la-Sorgue", "장보기",
+                              "10 Rue d'Annanelle"),
+        "daily/day-19.html": ("Saint-Rémy", "Les Baux"),
         "daily/day-20.html": ("Uzès", "Pont du Gard", "Nîmes", "9/17", "렌터카 최종 반납"),
         "daily/day-21.html": ("Arles", "Saint-Trophime", "La Roquette"),
         "daily/day-22.html": ("Palais", "Rocher des Doms", "Pont Saint-Bénézet"),
@@ -163,7 +171,12 @@ def main():
         "daily/day-14.html": ("places/arles.html", "places/cassis.html",
                               "places/calanques.html"),
         "daily/day-16.html": ("places/arles.html", "places/marseille.html",
-                              "places/mucem.html"),
+                              "places/mucem.html", "places/cassis.html",
+                              "places/calanques.html"),
+        # 실제 일정 개정: Lourmarin 은 D16, Roussillon 은 D17 로 옮겨졌다.
+        "daily/day-17.html": ("places/lourmarin.html", "places/lacoste.html",
+                              "places/bonnieux.html"),
+        "daily/day-18.html": ("places/roussillon-sentier-des-ocres.html",),
         "daily/day-21.html": ("places/les-baux-de-provence.html",
                               "places/saint-remy-de-provence.html"),
         "daily/day-22.html": ("places/les-baux-de-provence.html",
@@ -182,10 +195,10 @@ def main():
     home = site / "index.html"
     if home.exists():
         rendered = home.read_text(encoding="utf-8")
-        for stale in ("Luberon 농가 숙소 3박", "Avignon 숙소 5박"):
+        for stale in ("Luberon 농가 숙소 3박", "Gordes 숙소 2박", "Avignon 숙소 4박"):
             if stale in rendered:
                 errors.append(f"오늘 페이지에 폐기된 숙박 배분 노출: {stale}")
-        for term in ("Gordes 숙소 2박", "Avignon 숙소 4박", "2026-09-17"):
+        for term in ("2026-09-17",):
             if term not in rendered:
                 errors.append(f"오늘 페이지 정본 콘텐츠 누락: {term}")
         for stay in stays:

@@ -3,14 +3,14 @@
   "day": 15,
   "date": "2026-09-12",
   "city": "Aix-en-Provence",
-  "title": "Aix 토요 대형시장 · Vieil Aix · 세잔 아틀리에 · Granet",
+  "title": "Aix 토요 대형시장 · 세잔 아틀리에 · Château La Coste (Tadao Ando)",
   "sourceStatus": "authoritative",
   "prototypeType": null,
-  "dayType": "city",
+  "dayType": "driving",
   "startTime": "08:30",
   "endTime": "20:30",
   "totalDuration": "12시간",
-  "totalDistance": "약 5km · 도보",
+  "totalDistance": "도보 약 4km + 차량 왕복 약 32km",
   "fatigue": "3",
   "hotel": {
     "name": "Les Toits de Méjanes (Airbnb)",
@@ -25,11 +25,11 @@
       "order": 1,
       "start": "08:30",
       "end": "10:00",
-      "name": "Aix 토요시장 — Place Richelme + Places Comtales",
+      "name": "MUST · Aix 토요시장 — Place Richelme + Places Comtales",
       "category": "shopping",
       "lat": 43.5297,
       "lng": 5.4478,
-      "summary": "Place Richelme의 매일 아침 식품시장부터 보고 Places Comtales·Cours Mirabeau·Forbin의 목요 확장 구역을 선택해 잇는다. Maison Weibel에서 칼리송과 아침 커피를 곁들인다. 토요일은 Place de Verdun까지 서는 주간 최대 규모 장이다.",
+      "summary": "Place Richelme의 매일 아침 식품시장부터 보고 Places Comtales·Cours Mirabeau·Forbin 확장 구역을 잇는다. Maison Weibel에서 칼리송과 아침 커피를 곁들인다. 토요일은 Place de Verdun까지 서는 주간 최대 규모 장이다.",
       "menu": "Calisson d'Aix, 크루아상, 카페 오 레",
       "reservation": null,
       "executionNote": "Place Richelme 식품시장은 매일 08:00–13:00. Places Comtales 식품시장과 Comtales·Cours Mirabeau·Forbin 직물/공예/브로캉트, Hôtel de Ville 꽃시장은 화·목·토 운영한다.",
@@ -43,12 +43,12 @@
       "id": "vieil-aix",
       "order": 2,
       "start": "10:00",
-      "end": "11:45",
+      "end": "11:15",
       "name": "Vieil Aix 구시가지 & 세잔의 흔적",
       "category": "sight",
       "lat": 43.5311,
       "lng": 5.4472,
-      "summary": "17-18세기 귀족 저택(Hôtel Particulier), 생소뵈르 대성당, 네 마리 돌고래 분수, 세잔 탄생지/모교 흔적 도보 (105분)",
+      "summary": "17-18세기 귀족 저택(Hôtel Particulier), 생소뵈르 대성당, 네 마리 돌고래 분수, 세잔 탄생지/모교 흔적 도보 (75분 압축)",
       "menu": null,
       "reservation": null,
       "optional": false,
@@ -57,14 +57,14 @@
     {
       "id": "aix-lunch",
       "order": 3,
-      "start": "12:00",
-      "end": "13:15",
+      "start": "11:30",
+      "end": "12:45",
       "name": "Vieil Aix 구시가지 점심 식사",
       "category": "food",
       "lat": 43.5289,
       "lng": 5.4468,
-      "summary": "구시가지 테라스 비스트로에서 프로방스식 점심 (La Brocherie 또는 Coucou 인근)",
-      "menu": "라타투유, 도브 프로방살, 로제 와인",
+      "summary": "구시가지 테라스 비스트로에서 프로방스식 점심 (La Brocherie 또는 Coucou 인근). 오후 차량 일정이 있으므로 와인은 마시지 않는다.",
+      "menu": "라타투유, 도브 프로방살 (운전자 무알코올)",
       "reservation": "현장 방문 또는 점심 예약 권장",
       "optional": false,
       "place_ref": null,
@@ -73,9 +73,9 @@
     {
       "id": "atelier-des-lauves",
       "order": 4,
-      "start": "13:30",
-      "end": "15:00",
-      "name": "Atelier des Lauves (세잔의 아틀리에)",
+      "start": "13:00",
+      "end": "14:15",
+      "name": "MUST · Atelier des Lauves (세잔의 아틀리에)",
       "category": "culture",
       "lat": 43.5392,
       "lng": 5.4461,
@@ -86,48 +86,48 @@
         {
           "type": "book",
           "label": "ACTION REQUIRED",
-          "detail": "예약 필수·좌석 제한 — 9/12 토요일 회차 예약 필요. 운영은 7/4~9/30 매일 09:00–18:00(마지막 입장 17:00), cezanne-en-provence 공식 2026-08-28 확인."
+          "detail": "예약 필수·좌석 제한 — 9/12 토요일 13:00 전후 회차 예약 필요. 운영은 7/4~9/30 매일 09:00–18:00(마지막 입장 17:00), cezanne-en-provence 공식 2026-08-28 확인."
         }
       ],
-      "executionNote": "7/4–9/30 매일 09:00–18:00, 마지막 방문 17:00. 11:30부터 자율관람 1시간 €9.50, 가이드 1시간 30분 €12.",
+      "executionNote": "7/4–9/30 매일 09:00–18:00, 마지막 방문 17:00. 11:30부터 자율관람 1시간 €9.50, 가이드 1시간 30분 €12. 예약 slot이 오후 늦게만 남으면 Château La Coste를 먼저 가고 아틀리에를 마지막에 둔다.",
       "officialUrl": "https://www.aix.fr/incontournables/atelier-cezanne",
       "optional": false,
       "place_ref": "atelier-des-lauves"
     },
     {
-      "id": "musee-granet",
+      "id": "chateau-la-coste",
       "order": 5,
-      "start": "15:30",
-      "end": "17:15",
-      "name": "Musée Granet (그라네 미술관)",
+      "start": "15:15",
+      "end": "18:00",
+      "name": "MUST · Château La Coste — Tadao Ando Art Centre",
       "category": "culture",
-      "lat": 43.5258,
-      "lng": 5.4522,
-      "summary": "세잔의 초기작과 유화·수채화 컬렉션, 프랑수아 마리우스 그라네를 105분 compact visit으로 본다. Paul McCartney ‘Eyes of the Storm’ 특별전은 기본 입장권에 포함되며 Granet XXe 별관과 혼동하지 않는다.",
-      "menu": null,
-      "reservation": null,
+      "lat": 43.6368129,
+      "lng": 5.4205503,
+      "summary": "안도 타다오의 아트센터를 기점으로 와이너리 부지에 흩어진 예술·건축 산책로(약 2시간)를 걷는다. 루이즈 부르주아의 거미, 안도의 물 위 파빌리온과 예배당, 프랭크 게리·장 누벨의 구조물이 포도밭 사이에 있다. 2750 Route de la Cride, 13610 Le Puy-Sainte-Réparade — Aix에서 차량 약 25분.",
+      "menu": "아트센터 카페(10:00–17:00)에서 커피 가능",
+      "reservation": "연중무휴 10:00–19:00 · 아트워크 티켓은 현장 구매 · +33 4 42 61 89 98",
       "executionStatuses": [
         {
-          "type": "ticket",
-          "label": "TICKET",
-          "detail": "본관 일반 €14·감액 €12 입장권을 온라인 또는 현장에서 구매한다."
+          "type": "check",
+          "label": "PENDING",
+          "detail": "아트워크 요금·마지막 입장 시각 현장 재확인. 무료 주차장 있음."
         }
       ],
-      "executionNote": "7/4–11/1 화–일 10:00–18:00, 매표 17:30 마감. 9/12 토요일 정상 운영.",
-      "officialUrl": "https://www.museegranet-aixenprovence.fr/en/practical-informations-1/opening-hours-and-admissions",
+      "executionNote": "공식 사이트 기준 연중무휴 10:00–19:00 (2026-09-16 확인). 기존 일정의 Château de Lacoste(사드 성, Lacoste 마을)와 다른 장소다 — 혼동 금지.",
+      "officialUrl": "https://chateau-la-coste.com/",
       "optional": false,
-      "place_ref": "musee-granet"
+      "place_ref": null
     },
     {
       "id": "cours-mirabeau",
       "order": 6,
-      "start": "17:30",
-      "end": "19:30",
+      "start": "18:45",
+      "end": "19:45",
       "name": "Cours Mirabeau & 마자랭 지구 산책",
       "category": "sight",
       "lat": 43.5269,
       "lng": 5.4486,
-      "summary": "플라타너스 가로수길 카페(Les Deux Garçons 터) 테라스 휴식 및 Quartier Mazarin 분수 산책 후 저녁 식사",
+      "summary": "복귀 후 플라타너스 가로수길 카페(Les Deux Garçons 터) 테라스 휴식 및 Quartier Mazarin 분수 산책 후 저녁 식사",
       "menu": "테라스 와인/맥주, 프로방스 타파스",
       "reservation": null,
       "optional": false,
@@ -136,7 +136,7 @@
     {
       "id": "aix-stay-return",
       "order": 7,
-      "start": "19:30",
+      "start": "19:45",
       "end": "20:30",
       "name": "숙소 귀환 & 휴식",
       "category": "hotel",
@@ -179,19 +179,19 @@
     },
     {
       "from": "atelier-des-lauves",
-      "to": "musee-granet",
-      "mode": "walk",
-      "duration": "25분 (내리막)",
-      "distance": "1.6km",
+      "to": "chateau-la-coste",
+      "mode": "car",
+      "duration": "약 40분 (숙소 주차장 차량 회수 포함)",
+      "distance": "약 16km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
     {
-      "from": "musee-granet",
+      "from": "chateau-la-coste",
       "to": "cours-mirabeau",
-      "mode": "walk",
-      "duration": "5분",
-      "distance": "0.3km",
+      "mode": "car",
+      "duration": "약 30분 (복귀 후 숙소 주차)",
+      "distance": "약 16km",
       "line": null,
       "geometryStatus": "coordinate-line"
     },
@@ -206,34 +206,39 @@
     }
   ],
   "transport": [
-    "Aix 시내 도보 (구시가지 및 북부 아틀리에 도보권)"
+    "오전: Aix 시내 도보 (구시가지·북부 아틀리에 도보권)",
+    "오후: 렌터카 왕복 (Aix ↔ Château La Coste, 편도 약 16km·25분 + 차량 회수 버퍼)",
+    "Château La Coste 무료 주차 · 차량 내 짐 완전 은폐"
   ],
   "food": [
     "시장 조달·카페 Weibel",
-    "19:30 Coucou 또는 La Brocherie"
+    "점심: 구시가지 비스트로 (운전자 무알코올)",
+    "19:45 Coucou 또는 La Brocherie 저녁"
   ],
   "highlights": [
-    "Richelme 매일시장과 목요 확장 구역을 구분",
+    "Richelme 매일시장과 토요 확장 구역을 구분",
     "Atelier 예약 slot이 생기면 그 시각을 fixed anchor로 사용",
-    "Granet은 15:30–17:15 유지, 지연 시 60~75분으로 압축"
+    "Château La Coste는 기존 Lacoste 마을(사드 성)과 다른 장소 — 내비게이션 목적지 주의",
+    "아트워크 산책은 약 2시간 야외 — 물·모자 준비"
   ],
-  "backup": "1. Atelier 예약 완료 후 해당 slot을 fixed anchor로 삼고 오전 지연 시 Vieil Aix를 압축한다.\n2. 오후가 늦으면 Granet을 삭제하지 않고 60~75분으로 압축한다.\n3. 우천 시 Atelier와 Granet을 우선하고 Cours Mirabeau 야외 산책을 줄인다.",
+  "backup": "1. Atelier 예약 slot이 오후 늦게만 남으면 La Coste를 먼저(13:30~16:00) 가고 아틀리에를 17:00 마지막 입장으로 돌린다.\n2. 우천 시 La Coste 야외 아트워크를 축소하고 아트센터·파빌리온 중심으로 본 뒤 Musée Granet(화–일 10:00–18:00, €14)을 실내 대안으로 쓴다.\n3. 오전 지연 시 Vieil Aix 산책을 압축하고 시장과 아틀리에를 지킨다.",
   "map": {
-    "zoom": 15,
+    "zoom": 12,
     "center": [
-      43.5273,
-      5.4465
+      43.585,
+      5.44
     ],
     "routeCache": null
   },
   "needsReview": [
-    "BOOK — Atelier des Lauves 9/12 방문 slot 예약 및 Timeline 동기화"
+    "BOOK — Atelier des Lauves 9/12 방문 slot 예약 및 Timeline 동기화",
+    "Château La Coste 아트워크 요금·마지막 입장 시각 재확인"
   ],
   "sourceRefs": [
     "source/CURRENT/10_Core/03_Whole_Trip_Master_Itinerary_v1.2.md#Day-15",
-    "source/OPERATIONS/100_Whole_Trip_43_Day_Execution_Audit_v1.0.md#Day-15",
     "source/CURRENT/20_Regional_Chapters/07_Aix_en_Provence_v2.0.md#Day-15",
-    "source/ASSETS/75_Execution_Maps/Aix_Execution_Map_v0.2.kml",
+    "https://chateau-la-coste.com/en/contact.html",
+    "https://www.aix.fr/incontournables/atelier-cezanne",
     "OSM Nominatim 지오코딩 2026-08-06: Place des Prêcheurs·Place Richelme·Rue Cardinale"
   ]
 }

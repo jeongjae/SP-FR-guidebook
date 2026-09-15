@@ -13,10 +13,11 @@
   "totalDistance": "약 125km · 차량 이동 후 반납",
   "fatigue": "4",
   "hotel": {
-    "name": "La Terrasse du Clocher (후보)",
-    "lat": 43.94993,
-    "lng": 4.81302,
-    "status": "candidate"
+    "name": "Avignon 숙소 — Rue d'Annanelle",
+    "lat": 43.9472485,
+    "lng": 4.8021506,
+    "status": "confirmed",
+    "address": "10 Rue d'Annanelle, 84000 Avignon, France"
   },
   "stops": [
     {

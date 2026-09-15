@@ -13,7 +13,7 @@ source: source/CURRENT/30_Places/lacoste.md
 
 ## 현장 실행
 
-- **RECOMMENDED · Day 17 · 60–75분**
+- **일정 외 · 방문하지 않음**
 - **WHY GO**: Bonnieux와 한 쌍으로 보는 석조마을로, 좁은 돌길·아치·옛 성문과 상부 Château 전망을 짧게 경험한다.
 - **DO THIS**: 하부 주차 → Rue Basse → Beffroi/Campanile → Portail de la Garde → Château 방향까지 상승 → 전망 → 하산.
 - **EAT / DRINK**: 물·커피 stop만. 긴 식사는 넣지 않는다.
@@ -21,7 +21,7 @@ source: source/CURRENT/30_Places/lacoste.md
 
 ### Trip Layer
 
-Lourmarin과 Bonnieux를 마친 뒤에도 Gordes 16:00~17:00 체크인에 여유가 있을 때만 간다.
+이번 일정에서는 방문하지 않는다. 9/12에 가는 Château La Coste(안도 타다오 아트센터, Le Puy-Sainte-Réparade)와 이름이 비슷하지만 전혀 다른 장소다 — 내비게이션 목적지를 혼동하지 않는다.
 
 ## 왜 가는가
 

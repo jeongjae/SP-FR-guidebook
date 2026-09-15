@@ -47,15 +47,15 @@
       "key": "luberon",
       "base": "Gordes",
       "checkin": "2026-09-14",
-      "checkout": "2026-09-16",
-      "nights": 2
+      "checkout": "2026-09-15",
+      "nights": 1
     },
     {
       "key": "avignon",
       "base": "Avignon",
-      "checkin": "2026-09-16",
+      "checkin": "2026-09-15",
       "checkout": "2026-09-20",
-      "nights": 4
+      "nights": 5
     },
     {
       "key": "lyon",

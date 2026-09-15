@@ -1144,14 +1144,6 @@
     }
   },
   "hotels": {
-    "Gordes 숙소 (후보 미정)": {
-      "query": "Gordes accommodation, France",
-      "verdict": "AMBIGUOUS",
-      "resolvedName": "Gordes accommodation search",
-      "anchorFor": "Gordes 숙소 (후보 미정)",
-      "evidence": "숙소 미확정 — Gordes 중심 검색 앵커",
-      "verifiedAt": "2026-08-23"
-    },
     "Lagrange Aparthotel Lyon Lumière": {
       "query": "Lagrange Apart'Hotel Lyon Lumière, 81-85 Cours Albert Thomas, Lyon",
       "verdict": "FOUND",
@@ -1186,6 +1178,20 @@
       "resolvedName": "Casa Bascara",
       "evidence": "https://casabascara.cat/en/rooms/",
       "verifiedAt": "2026-08-22"
+    },
+    "Gordes 숙소 — Rte des Moines": {
+      "query": "104 Route des Moines, 84220 Gordes, France",
+      "verdict": "FOUND",
+      "resolvedName": "Route des Moines, Gordes",
+      "evidence": "확정 숙소 주소 — 2026-09-16 실제 예약 반영 · Nominatim 도로 수준 확인",
+      "verifiedAt": "2026-09-16"
+    },
+    "Avignon 숙소 — Rue d'Annanelle": {
+      "query": "10 Rue d'Annanelle, 84000 Avignon, France",
+      "verdict": "FOUND",
+      "resolvedName": "10 Rue d'Annanelle, Avignon",
+      "evidence": "확정 숙소 주소 — 2026-09-16 실제 예약 반영 · Nominatim 번지 수준 확인",
+      "verifiedAt": "2026-09-16"
     }
   },
   "stops": {
@@ -1538,6 +1544,20 @@
       "resolvedName": "Place d'Iéna",
       "evidence": "https://www.paris.fr/",
       "verifiedAt": "2026-08-22"
+    },
+    "day-15:chateau-la-coste": {
+      "query": "Château La Coste, 2750 Route de la Cride, 13610 Le Puy-Sainte-Réparade",
+      "verdict": "FOUND",
+      "resolvedName": "Château La Coste",
+      "evidence": "공식 사이트 주소 (chateau-la-coste.com/en/contact.html)",
+      "verifiedAt": "2026-09-16"
+    },
+    "day-17:la-trinquette-dinner": {
+      "query": "La Trinquette, 55 Rue des Tracapelles, 84220 Gordes",
+      "verdict": "FOUND",
+      "resolvedName": "La Trinquette, Gordes",
+      "evidence": "Vaucluse 관광DB(provenceguide) 주소 확인",
+      "verifiedAt": "2026-09-16"
     }
   },
   "routes": {

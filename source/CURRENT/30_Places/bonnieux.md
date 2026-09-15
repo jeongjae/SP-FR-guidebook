@@ -13,15 +13,15 @@ source: source/CURRENT/30_Places/bonnieux.md
 
 ## 현장 실행
 
-- **OPTIONAL · Day 17 · 60–90분**
+- **일정 외 · 방문하지 않음**
 - **WHY GO**: 전형적인 perched village의 언덕길과 정상 전망, 맞은편 Lacoste의 지형을 본다.
 - **DO THIS**: 하부 주차 → 중심 광장·상점가 → 계단과 골목 → Vieille Église → 전망 → 평행 골목으로 하산.
-- **EAT / DRINK**: Lourmarin 점심 뒤 espresso·gelato 정도만. 긴 식사는 넣지 않는다.
+- **EAT / DRINK**: espresso·gelato 정도만. 긴 식사는 넣지 않는다.
 - **IF LATE**: Lacoste보다 우선하지만 Gordes 16:00~17:00 체크인을 넘길 것 같으면 생략한다.
 
 ### Trip Layer
 
-Day 17 Optional 1순위다. Optional을 모두 빼도 일정은 완전하게 성립한다.
+이번 일정에서는 방문하지 않는다. 일정이 비면 Luberon 능선 전망 대안으로만 검토한다.
 
 ## 왜 가는가
 
