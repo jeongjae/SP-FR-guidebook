@@ -141,6 +141,8 @@ def browser_check() -> int:
             page.wait_for_selector("text=숙소", timeout=10000)
             page.goto(f"{base}/app/index.html#/place/saint-remy-de-provence")
             page.wait_for_selector("text=왜 가는가", timeout=10000)
+            page.goto(f"{base}/app/index.html#/sync")
+            page.wait_for_selector("text=GitHub 연결", timeout=10000)
 
             fatal = [e for e in errors if "favicon" not in e]
             if fatal:
@@ -154,7 +156,7 @@ def browser_check() -> int:
         for problem in problems:
             print("  " + problem)
         return 1
-    print("앱 스모크 통과: 오늘 렌더 · 편집 지속성 · 예약/장소 라우트")
+    print("앱 스모크 통과: 오늘 렌더 · 편집 지속성 · 예약/장소/동기화 라우트")
     return 0
 
 

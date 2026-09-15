@@ -69,7 +69,7 @@ jobs:
           python3 build/site.py
           python3 build/booking_consistency_audit.py
           python3 build/place_relationship_audit.py
-          python3 -m unittest discover -s build -p "test_validation.py"
+          python3 -m unittest discover -s build -p "test_*.py"
           python3 scripts/validate_itinerary.py
           python3 scripts/validate_media.py
           python3 build/ux_check.py
