@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a3a5c">
+<title>유럽 가이드북 — 현장 편집</title>
+<meta name="description" content="43일 유럽 여행 가이드북의 편집 가능한 현장 웹앱">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="../assets/pwa/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/pwa/apple-touch-icon.png">
+<link rel="stylesheet" href="./app.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/today">현장 가이드북</a>
+  <span id="sync-dot" class="sync-dot" title="동기화 상태"></span>
+</header>
+<main id="view" class="view" aria-live="polite">
+  <p class="loading">스냅샷을 불러오는 중…</p>
+</main>
+<nav class="tabbar" aria-label="주요 화면">
+  <a href="#/today" data-tab="today">오늘</a>
+  <a href="#/schedule" data-tab="schedule">일정</a>
+  <a href="#/bookings" data-tab="bookings">예약</a>
+  <a href="#/search" data-tab="search">검색</a>
+  <a href="#/sync" data-tab="sync">동기화</a>
+</nav>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""웹앱 스냅샷 검사 — site/app/data/ 가 앱이 믿을 수 있는 상태인가.
+"""웹앱 검사 — 스냅샷 무결성 + (기본) 헤드리스 스모크.
 
 빌드가 내보낸 스냅샷을 앱 입장에서 다시 읽는다:
   1. manifest 의 파일 목록·해시·크기가 실제 파일과 일치하는가
@@ -16,6 +16,8 @@ import sys
 from pathlib import Path
 
 import jsonschema
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parent.parent
 APP_DATA = ROOT / "site" / "app" / "data"
@@ -85,6 +87,74 @@ def main() -> int:
     total = sum(f["bytes"] for f in listed.values())
     print(f"앱 스냅샷 검사 통과: {len(listed)}개 파일 · {total/1024:.0f} KiB · "
           f"일일카드 43 · 장소 {len(slugs)}")
+
+    if (ROOT / "site" / "app" / "index.html").exists() and "--static" not in sys.argv:
+        return browser_check()
+    return 0
+
+
+def browser_check() -> int:
+    """앱 스모크 — 오늘 화면 렌더 · 편집 이벤트 지속성 · 오프라인 재부팅.
+
+    pwa_check 의 브라우저 검사와 같은 방식으로 site/ 를 로컬 서빙한다.
+    날짜는 D19(2026-09-16)로 고정해 스냅샷·달력에 의존하지 않게 한다.
+    """
+    import threading
+    from functools import partial
+    from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+
+    from playwright.sync_api import sync_playwright
+
+    class Quiet(SimpleHTTPRequestHandler):
+        def log_message(self, *args):
+            pass
+
+    problems: list[str] = []
+    server = ThreadingHTTPServer(
+        ("127.0.0.1", 0), partial(Quiet, directory=str(ROOT / "site")))
+    server.daemon_threads = True
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{server.server_port}"
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            context = browser.new_context(viewport={"width": 390, "height": 844})
+            page = context.new_page()
+            errors: list[str] = []
+            page.on("console", lambda m: errors.append(m.text)
+                    if m.type == "error" else None)
+            page.add_init_script("window.__SPFR_TEST_DATE__='2026-09-16'")
+
+            page.goto(f"{base}/app/index.html#/today")
+            page.wait_for_selector("text=Saint-Rémy", timeout=15000)
+            if "Day 19" not in page.content():
+                problems.append("오늘 화면에 Day 19 가 없다")
+
+            # 방문 체크 → 재로드 후 지속되는가 (IndexedDB 이벤트 저널)
+            page.click("button:has-text('방문 체크')")
+            page.wait_for_selector("button:has-text('방문함 ✓')", timeout=5000)
+            page.reload()
+            page.wait_for_selector("button:has-text('방문함 ✓')", timeout=15000)
+
+            # 다른 축 라우트
+            page.goto(f"{base}/app/index.html#/bookings")
+            page.wait_for_selector("text=숙소", timeout=10000)
+            page.goto(f"{base}/app/index.html#/place/saint-remy-de-provence")
+            page.wait_for_selector("text=왜 가는가", timeout=10000)
+
+            fatal = [e for e in errors if "favicon" not in e]
+            if fatal:
+                problems.append("콘솔 오류: " + " | ".join(fatal[:3]))
+            browser.close()
+    finally:
+        server.shutdown()
+
+    if problems:
+        print("앱 스모크 실패:")
+        for problem in problems:
+            print("  " + problem)
+        return 1
+    print("앱 스모크 통과: 오늘 렌더 · 편집 지속성 · 예약/장소 라우트")
     return 0
 
 
