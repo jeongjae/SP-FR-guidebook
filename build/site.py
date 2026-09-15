@@ -137,6 +137,16 @@ def main() -> int:
     write("offline.html", render.build_offline_page())
     write("offline-fallback.html", render.build_offline_fallback())
     render.write_assets(trip)
+
+    # 웹앱(site/app/) — 정적 앱 파일 복사 + 데이터 스냅샷. write_pwa 앞에
+    # 둔다: 본 사이트 오프라인 목록은 app/ 을 제외하지만, 제외가 실제로
+    # 동작하는지 같은 빌드 안에서 pwa_check 가 대조한다.
+    app_src = ROOT / "app"
+    if app_src.exists():
+        shutil.copytree(app_src, SITE / "app", dirs_exist_ok=True)
+    import export_app_data
+    export_app_data.export(trip)
+
     render.write_pwa()
 
     # FCR-02 — 지역 페이지의 분류와 구조. 링크까지 보므로 자산을 다 쓴 뒤 돈다.

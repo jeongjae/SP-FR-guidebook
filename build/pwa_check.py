@@ -107,6 +107,9 @@ def static_checks(problems):
     def precached(rel):
         if rel in EXCLUDED:
             return False
+        # app/ 은 자체 SW 스코프의 별도 웹앱 — render.write_pwa 의 제외와 미러.
+        if rel.startswith("app/"):
+            return False
         # 검수용 Action Map PNG 원본은 온라인 전용 (build.py와 같은 규칙).
         return not (rel.startswith("assets/daily-cards/full/") and rel.endswith(".png"))
 
@@ -148,6 +151,9 @@ def static_checks(problems):
         if 'http-equiv="refresh"' in head[:900]:
             continue
         rel = path.relative_to(SITE).as_posix()
+        # app/ HTML 은 자체 manifest·SW 를 가진다 — 본 사이트 규칙을 강제하지 않는다.
+        if rel.startswith("app/"):
+            continue
         if 'rel="manifest"' not in head:
             problems.append(f"Manifest 링크 없음: {rel}")
         if 'rel="icon"' not in head:

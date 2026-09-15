@@ -3371,6 +3371,11 @@ def write_pwa() -> None:
         rel = path.relative_to(SITE).as_posix()
         if rel in excluded:
             continue
+        # app/ 은 자체 서비스워커 스코프를 가진 별도 웹앱이다. 여기 넣으면
+        # 앱을 고칠 때마다 본 사이트 오프라인 사용자가 1001개 파일을 다시
+        # 받는다 — 목록과 버전 해시 양쪽에서 뺀다.
+        if rel.startswith("app/"):
+            continue
         content = path.read_bytes()
         digest = hashlib.sha256(content).hexdigest()
         records.append({"path": rel, "size": len(content), "sha256": digest})
