@@ -1,6 +1,7 @@
 import { loadDay, loadTrip } from "../state.js";
 import { appendEvent, stopKey } from "../events.js";
 import { esc, el, badgeFor, stripGrade, notesHtml, noteButton } from "../ui.js";
+import { buildForm, checkTime, CATEGORY_OPTIONS } from "../editforms.js";
 
 const DAY_TYPE = { city: "CITY", driving: "DRIVING", transfer: "TRANSFER", living: "LIVING" };
 const MODE = { walk: "도보", car: "운전", train: "기차", bus: "버스", metro: "지하철",
@@ -22,14 +23,66 @@ export async function renderDayInto(root, n, { heading } = {}) {
     </div>
     <div class="day-notes">${notesHtml(day.notes)}</div>
   </div>`);
-  head.querySelector(".nav-row").appendChild(
-    noteButton({ kind: "day", key: `day-${String(n).padStart(2, "0")}` }, "이날 메모"));
+  const dayKey = `day-${String(n).padStart(2, "0")}`;
+  const navRow = head.querySelector(".nav-row");
+  navRow.appendChild(noteButton({ kind: "day", key: dayKey }, "이날 메모"));
+  const editDayBtn = el('<button class="small" type="button">✎ 하루 수정</button>');
+  editDayBtn.addEventListener("click", () => {
+    const form = buildForm([
+      { name: "title", label: "제목", type: "text" },
+      { name: "startTime", label: "시작 (HH:MM)", type: "time" },
+      { name: "endTime", label: "끝 (HH:MM)", type: "time" },
+      { name: "fatigue", label: "피로도", type: "select",
+        options: [["1","1"],["2","2"],["3","3"],["4","4"],["5","5"]] },
+      { name: "backup", label: "Plan B", type: "textarea" },
+    ], day, async (out) => {
+      checkTime(out.startTime, "시작"); checkTime(out.endTime, "끝");
+      for (const f of ["title", "startTime", "endTime", "fatigue", "backup"]) {
+        const before = day[f] == null ? null : String(day[f]);
+        if (out[f] != null && out[f] !== before) {
+          await appendEvent({ kind: "day", key: dayKey }, "set-day-meta",
+            { field: f, value: out[f] });
+        }
+      }
+    });
+    head.after(form);
+    editDayBtn.disabled = true;
+  });
+  navRow.appendChild(editDayBtn);
+  const addStopBtn = el('<button class="small" type="button">＋ 스톱 추가</button>');
+  addStopBtn.addEventListener("click", () => {
+    const anchors = [["", "맨 뒤에"], ...day.stops.map((s) => [s.id, `'${stripGrade(s.name).slice(0, 24)}' 뒤에`])];
+    const form = buildForm([
+      { name: "name", label: "이름 (필수)", type: "text", placeholder: "예: 젤라토 휴식" },
+      { name: "category", label: "분류", type: "select", options: CATEGORY_OPTIONS },
+      { name: "start", label: "시작 (HH:MM)", type: "time" },
+      { name: "end", label: "끝 (HH:MM)", type: "time" },
+      { name: "summary", label: "설명", type: "textarea", rows: 2 },
+      { name: "afterStopId", label: "위치", type: "select", options: anchors },
+      { name: "optional", label: "선택 일정", type: "checkbox" },
+    ], { category: "sight", afterStopId: "" }, async (out) => {
+      if (!out.name) throw new Error("이름은 필수다");
+      checkTime(out.start, "시작"); checkTime(out.end, "끝");
+      const sid = "fe-" + out.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "").slice(0, 24) || "fe-stop";
+      const unique = day.stops.some((s) => s.id === sid) ? sid + "-2" : sid;
+      await appendEvent({ kind: "day", key: dayKey }, "add-stop", {
+        stop: { id: unique, name: out.name, category: out.category,
+          start: out.start, end: out.end, summary: out.summary || "",
+          optional: !!out.optional },
+        afterStopId: out.afterStopId || null,
+      });
+    });
+    head.after(form);
+    addStopBtn.disabled = true;
+  });
+  navRow.appendChild(addStopBtn);
   root.appendChild(head);
 
   const legByFrom = new Map((day.legs || []).map((l) => [l.from, l]));
   const timeline = el('<div class="card"><h3>시간표</h3></div>');
   for (const stop of day.stops) {
-    timeline.appendChild(renderStop(n, stop));
+    timeline.appendChild(renderStop(n, stop, day));
     const leg = legByFrom.get(stop.id);
     if (leg) {
       timeline.appendChild(el(`<div class="leg">↓ ${esc(MODE[leg.mode] || leg.mode)} · ${esc(leg.duration || "")}${leg.distance ? " · " + esc(leg.distance) : ""}</div>`));
@@ -52,9 +105,9 @@ function dayLabel(trip, n) {
   return e ? e.dateLabel : `Day ${n}`;
 }
 
-function renderStop(n, stop) {
+function renderStop(n, stop, day) {
   const sk = stopKey(n, stop.id);
-  const node = el(`<div class="stop${stop.visited ? " visited" : ""}" data-stop="${esc(stop.id)}">
+  const node = el(`<div class="stop${stop.visited ? " visited" : ""}${stop.localEdit ? " local-edit" : ""}" data-stop="${esc(stop.id)}">
     <span class="time">${esc(stop.start || "")}${stop.end ? "–" + esc(stop.end) : ""}</span>
     ${badgeFor(stop.name)}
     <div class="name">${esc(stripGrade(stop.name))}</div>
@@ -104,6 +157,61 @@ function renderStop(n, stop) {
     btns.appendChild(el(`<a class="btn small" target="_blank" rel="noopener"
       href="https://www.google.com/maps/search/?api=1&query=${stop.lat}%2C${stop.lng}">지도</a>`));
   }
+
+  // ---- 구조 편집: 수정 · 이동 · 삭제 --------------------------------
+  const editBtn = el('<button class="small" type="button">✎ 수정</button>');
+  editBtn.addEventListener("click", () => {
+    const form = buildForm([
+      { name: "name", label: "이름", type: "text" },
+      { name: "start", label: "시작 (HH:MM)", type: "time" },
+      { name: "end", label: "끝 (HH:MM)", type: "time" },
+      { name: "summary", label: "설명", type: "textarea" },
+      { name: "menu", label: "식사·메뉴", type: "text" },
+      { name: "reservation", label: "예약·주차 메모", type: "text" },
+      { name: "optional", label: "선택 일정", type: "checkbox" },
+    ], stop, async (out) => {
+      checkTime(out.start, "시작"); checkTime(out.end, "끝");
+      if (!out.name) throw new Error("이름은 필수다");
+      for (const f of ["name", "start", "end", "summary", "menu", "reservation", "optional"]) {
+        const before = stop[f] ?? null;
+        const after = f === "optional" ? !!out[f] : out[f];
+        if (JSON.stringify(after) !== JSON.stringify(before)) {
+          await appendEvent({ kind: "stop", key: sk }, "set-field",
+            { field: f, value: after });
+        }
+      }
+    });
+    node.after(form);
+    editBtn.disabled = true;
+  });
+  btns.appendChild(editBtn);
+
+  const idx = day.stops.findIndex((s) => s.id === stop.id);
+  if (idx > 0) {
+    const up = el('<button class="small" type="button">↑</button>');
+    up.addEventListener("click", async () => {
+      await appendEvent({ kind: "stop", key: sk }, "move-stop",
+        { afterStopId: idx >= 2 ? day.stops[idx - 2].id : null });
+      document.dispatchEvent(new CustomEvent("spfr:rerender"));
+    });
+    btns.appendChild(up);
+  }
+  if (idx >= 0 && idx < day.stops.length - 1) {
+    const down = el('<button class="small" type="button">↓</button>');
+    down.addEventListener("click", async () => {
+      await appendEvent({ kind: "stop", key: sk }, "move-stop",
+        { afterStopId: day.stops[idx + 1].id });
+      document.dispatchEvent(new CustomEvent("spfr:rerender"));
+    });
+    btns.appendChild(down);
+  }
+  const rm = el('<button class="small danger" type="button">삭제</button>');
+  rm.addEventListener("click", async () => {
+    if (!confirm(`'${stripGrade(stop.name)}' 스톱을 삭제할까? (정본 반영 전까지 되돌릴 수 있다)`)) return;
+    await appendEvent({ kind: "stop", key: sk }, "remove-stop", {});
+    document.dispatchEvent(new CustomEvent("spfr:rerender"));
+  });
+  btns.appendChild(rm);
   return node;
 }
 

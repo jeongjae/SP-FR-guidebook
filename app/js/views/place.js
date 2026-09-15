@@ -1,6 +1,8 @@
 import { loadPlace } from "../state.js";
 import { renderMd } from "../md.js";
 import { esc, el, notesHtml, noteButton } from "../ui.js";
+import { buildForm } from "../editforms.js";
+import { appendEvent } from "../events.js";
 
 export async function placeView(root, params) {
   const slug = params[0];
@@ -26,9 +28,31 @@ export async function placeView(root, params) {
   root.appendChild(head);
 
   if (place.body) {
-    const { whyGoMd, bodyMd, practicalMd } = place.body;
-    if (whyGoMd) root.appendChild(el(`<div class="card prose"><h3>왜 가는가</h3>${renderMd(whyGoMd)}</div>`));
-    if (bodyMd) root.appendChild(el(`<div class="card prose"><h3>더 깊이</h3>${renderMd(bodyMd)}</div>`));
-    if (practicalMd) root.appendChild(el(`<div class="card prose"><h3>실용</h3>${renderMd(practicalMd)}</div>`));
+    const sections = [
+      ["why_go", "왜 가는가", place.body.whyGoMd],
+      ["deep", "더 깊이", place.body.bodyMd],
+      ["practical", "실용", place.body.practicalMd],
+    ];
+    for (const [section, title, md] of sections) {
+      if (!md && section !== "practical") continue;
+      const card = el(`<div class="card prose">
+        <div class="title-row"><h3>${esc(title)}</h3></div>
+        <div class="prose-body">${renderMd(md || "")}</div></div>`);
+      const editBtn = el('<button class="small" type="button">✎ 편집</button>');
+      editBtn.addEventListener("click", () => {
+        const form = buildForm(
+          [{ name: "md", label: `${title} — markdown`, type: "textarea", rows: 14 }],
+          { md: md || "" },
+          async (out) => {
+            if (!out.md || !out.md.trim()) throw new Error("빈 본문은 저장할 수 없다");
+            await appendEvent({ kind: "place", key: slug },
+              "prose-set-section", { section, md: out.md });
+          });
+        card.after(form);
+        editBtn.disabled = true;
+      });
+      card.querySelector(".title-row").appendChild(editBtn);
+      root.appendChild(card);
+    }
   }
 }

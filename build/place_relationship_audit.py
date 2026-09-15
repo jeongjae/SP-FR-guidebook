@@ -126,12 +126,16 @@ def audit() -> dict[str, list[str]]:
                     f"Day {day.n} {stop.id}: {relation} relation has canonical ref"
                 )
             if (stop.category in REQUIRED_CATEGORIES and not refs
-                    and relation == "visit" and key not in MISSING_PLACE_ALLOWLIST):
+                    and relation == "visit" and key not in MISSING_PLACE_ALLOWLIST
+                    and not stop.field_edit):
+                # field_edit: 현장 웹앱이 추가한 스톱 — canonical Place 없이도
+                # 정당하다 (P4 에서 표식과 함께 회수).
                 result["Missing Place"].append(
                     f"Day {day.n} {stop.id}: {stop.name}"
                 )
             if refs and FALSE_LINK_WORDS.search(stop.name) \
-                    and key not in CONTEXT_WORD_VISIT_ALLOWLIST:
+                    and key not in CONTEXT_WORD_VISIT_ALLOWLIST \
+                    and not stop.field_edit:
                 result["False Place"].append(
                     f"Day {day.n} {stop.id}: context-like name → {','.join(refs)}"
                 )
