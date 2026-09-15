@@ -1,1 +1,1 @@
-{"schemaVersion":"1.0","notes":[],"visited":{},"checkedActions":{},"cursors":{},"rejected":[]}
+{"schemaVersion":"1.0","notes":[{"id":"01M2KEBB0WR70RHA18CFERH839","author":"jason","ts":"2026-09-15T21:07:44.000Z","entity":{"kind":"stop","key":"day-19/avignon-dinner"},"text":"[E2E] 앱→GitHub→정본 동기화 왕복 검증"}],"visited":{},"checkedActions":{},"cursors":{"dev-e2etest":"01M2KEBB0WR70RHA18CFERH839"},"rejected":[]}
