@@ -30,8 +30,8 @@ export async function renderDayInto(root, n, { heading } = {}) {
   editDayBtn.addEventListener("click", () => {
     const form = buildForm([
       { name: "title", label: "제목", type: "text" },
-      { name: "startTime", label: "시작 (HH:MM)", type: "time" },
-      { name: "endTime", label: "끝 (HH:MM)", type: "time" },
+      { name: "startTime", label: "시작 시각", type: "time" },
+      { name: "endTime", label: "끝 시각", type: "time" },
       { name: "fatigue", label: "피로도", type: "select",
         options: [["1","1"],["2","2"],["3","3"],["4","4"],["5","5"]] },
       { name: "backup", label: "Plan B", type: "textarea" },
@@ -55,8 +55,8 @@ export async function renderDayInto(root, n, { heading } = {}) {
     const form = buildForm([
       { name: "name", label: "이름 (필수)", type: "text", placeholder: "예: 젤라토 휴식" },
       { name: "category", label: "분류", type: "select", options: CATEGORY_OPTIONS },
-      { name: "start", label: "시작 (HH:MM)", type: "time" },
-      { name: "end", label: "끝 (HH:MM)", type: "time" },
+      { name: "start", label: "시작 시각", type: "time" },
+      { name: "end", label: "끝 시각", type: "time" },
       { name: "summary", label: "설명", type: "textarea", rows: 2 },
       { name: "afterStopId", label: "위치", type: "select", options: anchors },
       { name: "optional", label: "선택 일정", type: "checkbox" },
@@ -163,8 +163,8 @@ function renderStop(n, stop, day) {
   editBtn.addEventListener("click", () => {
     const form = buildForm([
       { name: "name", label: "이름", type: "text" },
-      { name: "start", label: "시작 (HH:MM)", type: "time" },
-      { name: "end", label: "끝 (HH:MM)", type: "time" },
+      { name: "start", label: "시작 시각", type: "time" },
+      { name: "end", label: "끝 시각", type: "time" },
       { name: "summary", label: "설명", type: "textarea" },
       { name: "menu", label: "식사·메뉴", type: "text" },
       { name: "reservation", label: "예약·주차 메모", type: "text" },

@@ -14,9 +14,12 @@ export function buildForm(spec, initial, onSave, onCancel) {
         `<option value="${esc(val)}"${val === v ? " selected" : ""}>${esc(label)}</option>`).join("")}</select>`;
     } else if (f.type === "checkbox") {
       inner = `<input type="checkbox" name="${f.name}"${v ? " checked" : ""}>`;
+    } else if (f.type === "time") {
+      // 네이티브 시간 선택기 — 모바일 숫자 키패드로는 ':' 를 입력할 수
+      // 없다. type="time" 의 값은 항상 "HH:MM" 이라 검증 형식과 같다.
+      inner = `<input type="time" name="${f.name}" value="${esc(v ?? "")}" step="300">`;
     } else {
-      const attrs = f.type === "time" ? ' inputmode="numeric" pattern="\\d{2}:\\d{2}" maxlength="5"' : "";
-      inner = `<input type="text" name="${f.name}" value="${esc(v ?? "")}" placeholder="${esc(f.placeholder || "")}"${attrs}>`;
+      inner = `<input type="text" name="${f.name}" value="${esc(v ?? "")}" placeholder="${esc(f.placeholder || "")}">`;
     }
     form.appendChild(el(`<label class="field">${esc(f.label)}${inner}</label>`));
   }
