@@ -35,12 +35,62 @@ export async function loadTrip() {
   return snapshotGet("trip");
 }
 
+/* 서버(apply_field_edits.py)와 같은 의미의 구조 오버레이 —
+ * 아직 정본에 접히지 않은 add/remove/move/set-field 를 화면 모델에 미리
+ * 반영한다. 실패는 조용히 건너뛴다(정본 검증이 최종 판정). */
+function applyStructuralOverlay(view, key, events) {
+  const structural = events
+    .filter((e) => ["set-field", "set-day-meta", "add-stop", "remove-stop", "move-stop"].includes(e.op))
+    .filter((e) => (e.entity.kind === "day" && e.entity.key === key)
+      || (e.entity.kind === "stop" && e.entity.key.startsWith(key + "/")))
+    .sort((a, b) => (a.id < b.id ? -1 : 1));
+  for (const e of structural) {
+    const stops = view.stops;
+    const sid = e.entity.kind === "stop" ? e.entity.key.split("/")[1] : null;
+    const find = (id) => stops.find((s) => s.id === id);
+    try {
+      if (e.op === "set-field") {
+        const s = find(sid); if (s) { s[e.payload.field] = e.payload.value; s.localEdit = true; }
+      } else if (e.op === "set-day-meta") {
+        view[e.payload.field] = e.payload.value; view.localEdit = true;
+      } else if (e.op === "add-stop") {
+        if (find(e.payload.stop.id)) continue;
+        const ns = { summary: "", menu: null, reservation: null, optional: false,
+          lat: null, lng: null, place_ref: null, ...e.payload.stop,
+          fieldEdit: true, localEdit: true };
+        const after = e.payload.afterStopId;
+        if (after == null) stops.push(ns);
+        else {
+          const i = stops.findIndex((s) => s.id === after);
+          stops.splice(i < 0 ? stops.length : i + 1, 0, ns);
+        }
+      } else if (e.op === "remove-stop") {
+        const i = stops.findIndex((s) => s.id === sid);
+        if (i >= 0) stops.splice(i, 1);
+        view.legs = (view.legs || []).filter((l) => l.from !== sid && l.to !== sid);
+      } else if (e.op === "move-stop") {
+        const i = stops.findIndex((s) => s.id === sid);
+        if (i < 0) continue;
+        const [s] = stops.splice(i, 1);
+        const after = e.payload.afterStopId;
+        if (after == null) stops.unshift(s);
+        else {
+          const j = stops.findIndex((x) => x.id === after);
+          stops.splice(j < 0 ? stops.length : j + 1, 0, s);
+        }
+      }
+    } catch (err) { console.warn("structural overlay skip", e.id, err); }
+  }
+  view.stops.forEach((s, i) => { s.order = i + 1; });
+}
+
 export async function loadDay(n) {
   const key = `day-${String(n).padStart(2, "0")}`;
   const day = await snapshotGet(key);
   if (!day) return null;
   const { fieldState, events } = await overlayEvents();
   const view = structuredClone(day);
+  applyStructuralOverlay(view, key, events);
   view.notes = noteRows(fieldState, events, "day", key);
   for (const stop of view.stops) {
     const sk = stopKey(n, stop.id);
@@ -89,8 +139,19 @@ export async function loadPlace(slug) {
   const entry = (index?.places || []).find((p) => p.slug === slug);
   if (!entry) return null;
   const regionDoc = await snapshotGet(`places-${entry.region}`);
-  const body = regionDoc?.places?.[slug] || null;
+  const body = regionDoc?.places?.[slug]
+    ? structuredClone(regionDoc.places[slug]) : null;
   const { fieldState, events } = await overlayEvents();
+  if (body) {
+    const proseKey = { why_go: "whyGoMd", deep: "bodyMd", practical: "practicalMd" };
+    const prose = forEntity(events, "place", slug)
+      .filter((e) => e.op === "prose-set-section")
+      .sort((a, b) => (a.id < b.id ? -1 : 1));
+    for (const e of prose) {
+      const k = proseKey[e.payload.section];
+      if (k) { body[k] = e.payload.md; body.localEdit = true; }
+    }
+  }
   return { ...entry, body, notes: noteRows(fieldState, events, "place", slug) };
 }
 
