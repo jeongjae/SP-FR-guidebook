@@ -2,6 +2,13 @@
   "version": 1,
   "note": "현장 편집의 정본 목적지 — 메모·방문체크·ACTION 처리. scripts/apply_field_edits.py 만 쓴다.",
   "notes": [],
-  "visited": {},
+  "visited": {
+    "day-20/avignon-depart": {
+      "id": "01M2P0JW56SDWAF2CXXC59GX7G",
+      "author": "jason",
+      "ts": "2026-09-16T21:04:54.953Z",
+      "value": true
+    }
+  },
   "checkedActions": {}
 }
