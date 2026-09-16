@@ -1,7 +1,20 @@
 {
   "version": 1,
   "note": "CI(apply-edits)가 소유한다 — 기기별 적용 커서와 거부 이벤트. 기기 저널은 CI 가 절대 고쳐 쓰지 않는다.",
-  "cursors": {},
+  "cursors": {
+    "dev-ze5regs0": "01M2P00X0TZ5N9PCX18CD95NJF"
+  },
   "rejected": [],
-  "overwritten": []
+  "overwritten": [
+    {
+      "loser": "01M2KH58HC0AM0M047ZCW0GP40",
+      "winner": "01M2KH5BS6CRMW2DYM7PREZMBB",
+      "slot": "visited:day-19/avignon-depart"
+    },
+    {
+      "loser": "01M2KH5BS6CRMW2DYM7PREZMBB",
+      "winner": "01M2NXW22SEXBHE6H3G4CHG9CT",
+      "slot": "visited:day-19/avignon-depart"
+    }
+  ]
 }

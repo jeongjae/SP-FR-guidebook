@@ -1,5 +1,18 @@
 {
   "version": 1,
   "note": "트래커 xlsx 는 동결 — 여행 중 예약 상태 변경은 이 오버라이드 층에 쌓인다. scripts/apply_field_edits.py 만 쓴다.",
-  "overrides": {}
+  "overrides": {
+    "R027": {
+      "id": "01M2KHBX4HD36MVQRQS3GWG8WV",
+      "author": "jason",
+      "ts": "2026-09-15T22:00:29.074Z",
+      "status": "확정"
+    },
+    "R028": {
+      "id": "01M2KHC4X941F0YRM4V39M7FQR",
+      "author": "jason",
+      "ts": "2026-09-15T22:00:37.034Z",
+      "status": "확정"
+    }
+  }
 }
