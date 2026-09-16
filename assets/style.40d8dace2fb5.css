@@ -1786,6 +1786,20 @@ td .meta a,
 .rule-table td span.sound { color: var(--sig-caution-ink); font-weight: 700; }
 .rule-table td span.ex { color: var(--text-2); }
 
+/* ---- 현장 기록 (웹앱 동기화) --------------------------------------
+   field-notes.json 에서 온 메모·처리 표시. 노란 종이쪽지 톤이되
+   본문 대비는 --text(15.4:1 급)를 그대로 쓴다 — 야외 가독 기준 유지. */
+.tl-field-note {
+  background: #FFF6DF;
+  border: 1px solid #DFCF9F;
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  color: var(--text);
+}
+.tl-field-note .meta { color: var(--text-2); }
+.field-notes-block .tl-field-note { margin: 0.4rem 0; }
+.tl-status-done { opacity: 0.72; }
+
 /* ===== 아이콘 — build/icons.py 가 구운 마스크. 직접 고치지 마라. ===== */
 .ic-today::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228.2%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223.2%22%20fill%3D%22%23000%22%20stroke%3D%22none%22%2F%3E%3C%2Fsvg%3E"); }
 .ic-list::before { --ic: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%206.5h16M4%2012h16M4%2017.5h16%22%2F%3E%3C%2Fsvg%3E"); }
