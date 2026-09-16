@@ -21,7 +21,7 @@ export async function todayView(root) {
     return;
   }
   root.innerHTML = "";
-  await renderDayInto(root, entry.n, { heading: `오늘 · ${esc(entry.dateLabel)}` });
+  await renderDayInto(root, entry.n, { heading: `오늘 · ${esc(entry.dateLabel)} · Day ${entry.n}` });
 }
 
 export async function scheduleView(root) {
