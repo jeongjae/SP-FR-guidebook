@@ -56,6 +56,7 @@ IMAGE_MANIFEST = ROOT / "data" / "images" / "image-manifest.json"
 IMAGE_ALIASES = ROOT / "data" / "images" / "place-aliases.json"
 TRAVEL_FRENCH_PHRASES = ROOT / "data" / "travel-french-phrases.json"
 TRAVEL_FRENCH_GUIDE = ROOT / "data" / "travel-french-guide.json"
+FIELD_NOTES = ROOT / "data" / "field-notes.json"
 
 WEEKDAY_KO = "월화수목금토일"
 
@@ -151,6 +152,7 @@ class Place:
     facts: dict[str, Fact] = field(default_factory=dict)
     photo: dict | None = None
     days: list[int] = field(default_factory=list)
+    field_notes: list = field(default_factory=list)
 
     @property
     def url(self) -> str:
@@ -233,6 +235,11 @@ class Stop:
     # 현장 웹앱이 추가한 스톱. 확정 사실이 없어도 정당하다 — 관계 감사가
     # 이 표식을 보고 Missing Place 를 묻지 않는다 (P4 에서 회수).
     field_edit: bool = False
+    # 현장 기록 (data/field-notes.json 에서 접합) — 방문 체크·메모·
+    # 처리 완료 표시. 앱에서 온 것이고 화면에 그대로 보여야 한다.
+    visited: bool = False
+    field_notes: list = field(default_factory=list)
+    checked_actions: set = field(default_factory=set)
     # 한 stop 이 두 장소를 함께 담을 때가 있다. Day 13 08:30 이
     # 'Place Richelme 목요 시장 & Pâtisserie Weibel' 인 것처럼 —
     # 시간표를 쪼개는 것이 답이 아니라(한 블록에서 둘 다 본다) 참조를
@@ -303,6 +310,7 @@ class Day:
     backup: str | None = None
     map: dict | None = None
     needs_review: list[str] = field(default_factory=list)
+    field_notes: list = field(default_factory=list)
     bookings: list[str] = field(default_factory=list)
 
     @property
@@ -986,6 +994,8 @@ def load_trip() -> Trip:
             tourist_maps=tourist_maps.get(r["slug"], []),
         ))
 
+    _attach_field_notes(days, places)
+
     return Trip(
         start=_d(itin["trip"]["start"]),
         end=_d(itin["trip"]["end"]),
@@ -993,6 +1003,49 @@ def load_trip() -> Trip:
         french_phrases=french_phrases,
         french_guide=french_guide,
     )
+
+
+def _attach_field_notes(days: list[Day], places: dict[str, Place]) -> None:
+    """data/field-notes.json — 현장 웹앱에서 동기화된 기록을 모델에 접합한다.
+
+    apply_field_edits.py 가 이 파일만 쓴다. 여기서 붙이지 않으면 폰에서
+    동기화한 메모·방문 체크가 앱에만 보이고 본 사이트에는 안 보인다 —
+    실제로 그랬고, 그것이 이 함수가 생긴 이유다.
+    """
+    if not FIELD_NOTES.exists():
+        return
+    payload = json.loads(FIELD_NOTES.read_text(encoding="utf-8"))
+    by_day = {d.n: d for d in days}
+    stops = {}
+    for d in days:
+        for s in d.stops:
+            stops[f"day-{d.n:02d}/{s.id}"] = s
+
+    for key, entry in (payload.get("visited") or {}).items():
+        stop = stops.get(key)
+        if stop is not None:
+            stop.visited = bool(entry.get("value"))
+
+    for key, labels in (payload.get("checkedActions") or {}).items():
+        stop = stops.get(key)
+        if stop is not None:
+            stop.checked_actions = {
+                label for label, v in labels.items() if v.get("checked")}
+
+    day_key = re.compile(r"^day-(\d{2})$")
+    for note in payload.get("notes") or []:
+        entity = note.get("entity") or {}
+        row = {"text": note.get("text", ""), "author": note.get("author", ""),
+               "ts": note.get("ts", "")}
+        kind, key = entity.get("kind"), entity.get("key") or ""
+        if kind == "stop" and key in stops:
+            stops[key].field_notes.append(row)
+        elif kind == "day":
+            m = day_key.match(key)
+            if m and int(m.group(1)) in by_day:
+                by_day[int(m.group(1))].field_notes.append(row)
+        elif kind == "place" and key in places:
+            places[key].field_notes.append(row)
 
 
 # ================================================================ 검증

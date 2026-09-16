@@ -591,6 +591,19 @@ def stop_actions(s: Stop, rel: str, *, context: str) -> str:
     return f'<div class="{context}-actions btn-row">{"".join(actions)}</div>'
 
 
+def field_note_html(notes: list, cls: str = "tl-note tl-field-note") -> str:
+    """현장 웹앱에서 동기화된 메모. 누가 언제 적었는지 함께 보인다."""
+    out = []
+    for n in notes:
+        when = (n.get("ts") or "")[:10]
+        out.append(
+            f'<p class="{cls}">{ic("note")}<strong>현장 메모</strong> · '
+            f'{esc(plain_inline(n.get("text", "")))}'
+            f'<span class="meta"> — {esc(n.get("author", ""))}'
+            f'{" · " + esc(when) if when else ""}</span></p>')
+    return "".join(out)
+
+
 def stop_status_markup(s: Stop) -> tuple[str, str]:
     """(배지, 설명). Pilot 상태가 없으면 기존 reservation 표시를 보존한다."""
     marks, notes = [], []
@@ -598,10 +611,17 @@ def stop_status_markup(s: Stop) -> tuple[str, str]:
         for status in s.execution_statuses:
             kind, default_label, icon = EXECUTION_STATUS_UI[status.type]
             label = status.label or default_label
+            # 앱(check-action)의 키 형식과 동일: type:label:detail[:40]
+            action_key = (f"{status.type}:{status.label or status.type}:"
+                          f"{(status.detail or '')[:40]}")
+            done = action_key in s.checked_actions
             marks.append(badge(kind, label))
+            if done:
+                marks.append(badge("ok", "처리됨"))
             if status.detail:
+                done_cls = " tl-status-done" if done else ""
                 notes.append(
-                    f'<p class="tl-note tl-status tl-status-{status.type}">'
+                    f'<p class="tl-note tl-status tl-status-{status.type}{done_cls}">'
                     f'{ic(icon)}<strong>{esc(label)}</strong> · '
                     f'{esc(plain_inline(status.detail))}</p>')
     else:
@@ -628,8 +648,11 @@ def timeline(d: Day, rel: str) -> str:
         if s.place is not None:
             name = f'<a href="{rel}/places/{s.place.slug}.html">{name}</a>'
         marks, status_notes = stop_status_markup(s)
+        if s.visited:
+            marks = badge("ok", "방문함") + marks
         summary = plain_inline(s.summary)
         note = f'<p class="tl-note tl-summary">{esc(summary)}</p>' if summary else ""
+        note += field_note_html(s.field_notes)
         # 한 stop 이 두 장소를 담을 때 보조 장소를 명시한다. 시간표는 한 줄로
         # 두되 장소 연결은 숨기지 않는다 — 그러지 않으면 그 장소가 어느
         # 날에도 걸리지 않는다.
@@ -643,7 +666,8 @@ def timeline(d: Day, rel: str) -> str:
         if action_template:
             action_template = (f'<template class="tl-action-template">'
                                f'{action_template}</template>')
-        rows.append(f"""<li class="tl-item tl-category-{esc(s.category)}" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
+        visited_cls = " tl-visited" if s.visited else ""
+        rows.append(f"""<li class="tl-item tl-category-{esc(s.category)}{visited_cls}" data-start="{esc(s.start or '')}" data-end="{esc(s.end or '')}">
   <div class="tl-time">{esc(s.start or '')}</div>
   <div class="tl-body">
     <div class="tl-name">{ic(icon)} <span class="tl-title">{name}</span>
@@ -961,6 +985,12 @@ def build_place(p: Place, trip: Trip) -> str:
         f'title="현장 웹앱에서 이 장소의 메모·본문을 편집한다">'
         f'{ic("note")}이 장소 현장 편집</a></div>')
 
+    # 현장 메모 — 웹앱에서 이 장소에 남긴 기록
+    if p.field_notes:
+        parts.append('<div class="prose field-notes-block">'
+                     + field_note_html(p.field_notes, cls="tl-note tl-field-note")
+                     + "</div>")
+
     # 같은 지역의 다른 장소 — 길이 끊기지 않게 옆으로 나가는 문을 둔다
     if region:
         sibs = [x for x in region.places if x.slug != p.slug and x.summary][:6]
@@ -1070,6 +1100,13 @@ def build_day(d: Day, trip: Trip) -> str:
     # --- 시간표 -----------------------------------------------------------
     parts.append(sec_head("TODAY", "오늘 일정"))
     parts.append(timeline(d, rel))
+
+    # --- 현장 기록 — 웹앱에서 동기화된 이날의 메모 ------------------------
+    if d.field_notes:
+        parts.append(sec_head("FIELD NOTES", "현장 기록"))
+        parts.append('<div class="prose field-notes-block">'
+                     + field_note_html(d.field_notes, cls="tl-note tl-field-note")
+                     + "</div>")
 
     # --- 현장 프랑스어 (Quick French) ------------------------------------
     dqf = day_quick_french(d, trip, rel)
@@ -2087,6 +2124,25 @@ def build_map_pages(trip: Trip) -> dict[str, str]:
     return out
 
 
+def _booking_overrides() -> dict:
+    """data/booking-overrides.json — 현장 웹앱의 예약 상태 변경 층.
+
+    트래커 xlsx 는 동결이므로 여행 중 변경은 이 파일에 쌓인다. 카드의
+    정본 상태를 바꾸지 않고 '현장 변경' 줄로 함께 보여 준다 — 상태 집계
+    (확정/미예약 건수)는 트래커 확정 절차를 거친 것만 센다.
+    """
+    global _BOOKING_OVERRIDES_CACHE
+    if _BOOKING_OVERRIDES_CACHE is None:
+        path = ROOT / "data" / "booking-overrides.json"
+        _BOOKING_OVERRIDES_CACHE = (
+            json.loads(path.read_text(encoding="utf-8")).get("overrides", {})
+            if path.exists() else {})
+    return _BOOKING_OVERRIDES_CACHE
+
+
+_BOOKING_OVERRIDES_CACHE = None
+
+
 def res_card(rec: dict, *, todo: bool = False) -> str:
     """예약 하나. 목록이 아니라 **현장에서 쓰는 카드**다.
 
@@ -2123,12 +2179,22 @@ def res_card(rec: dict, *, todo: bool = False) -> str:
                  f'<div class="acc-body"><p class="card-dek">{linkify(esc(detail))}'
                  f"</p></div></details>")
     region = f'<span class="meta">{esc(rec["지역"])}</span>' if rec["지역"] else ""
+    override = _booking_overrides().get(str(rec.get("ID") or ""))
+    override_html = ""
+    if override:
+        when = (override.get("ts") or "")[:10]
+        note_txt = f" · {esc(override['note'])}" if override.get("note") else ""
+        override_html = (
+            f'<p class="tl-note tl-field-note">{ic("note")}'
+            f'<strong>현장 변경</strong> · {esc(override.get("status", ""))}'
+            f'{note_txt}<span class="meta"> — {esc(override.get("author", ""))}'
+            f'{" · " + esc(when) if when else ""}</span></p>')
     return f"""<article class="card booking-card">
   <div class="booking-head">
     <span class="booking-name">{esc(rec["예약항목"])}</span>{mark}</div>
   <div class="metarow">{esc(rec["카테고리"])}{region}</div>
   <dl>{rows}</dl>
-  {extra}
+  {override_html}{extra}
 </article>"""
 
 

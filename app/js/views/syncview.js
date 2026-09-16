@@ -3,6 +3,7 @@ import { pullSnapshot, exportJournal, fullSync } from "../sync.js";
 import { deviceId, appendEvent } from "../events.js";
 import { getToken, setToken, REPO } from "../github.js";
 import { esc, el, fmtTs } from "../ui.js";
+import { APP_VERSION } from "../main.js";
 
 const OP_LABEL = {
   "note": "메모", "set-visited": "방문 체크", "check-action": "액션 처리",
@@ -23,7 +24,8 @@ export async function syncView(root) {
   const status = el(`<div class="card">
     <h2>동기화</h2>
     <p class="meta">스냅샷 ${esc((version || "없음").slice(0, 12))} · 마지막 갱신 ${lastPull ? esc(fmtTs(lastPull)) : "—"}</p>
-    <p class="meta">기기 ${esc(dev)} · 편집자 <b>${esc(author)}</b> · GitHub ${token ? "연결됨 ✓" : "미연결"}</p>
+    <p class="meta">기기 ${esc(dev)} · 편집자 <b>${esc(author)}</b> · GitHub ${token ? "연결됨 ✓" : "미연결"} · 앱 ${esc(APP_VERSION)}</p>
+    ${!token && pending.length ? `<p class="tl-note" style="background:#FDECEA;border:1px solid #D9938B;border-radius:8px;padding:8px 10px;color:#7A1F1F;font-weight:700">GitHub 미연결 — 편집 ${pending.length}건이 이 폰에만 있다. 아래에 토큰을 저장하고 '지금 동기화'를 눌러야 정본·본 사이트에 반영된다.</p>` : ""}
     <div class="row">
       <button id="btn-sync" class="primary" type="button">지금 동기화</button>
       <button id="btn-pull" type="button">스냅샷만 새로 받기</button>
