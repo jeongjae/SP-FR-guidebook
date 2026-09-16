@@ -1785,3 +1785,17 @@ td .meta a,
 .rule-table td strong { color: var(--primary); }
 .rule-table td span.sound { color: var(--sig-caution-ink); font-weight: 700; }
 .rule-table td span.ex { color: var(--text-2); }
+
+/* ---- 현장 기록 (웹앱 동기화) --------------------------------------
+   field-notes.json 에서 온 메모·처리 표시. 노란 종이쪽지 톤이되
+   본문 대비는 --text(15.4:1 급)를 그대로 쓴다 — 야외 가독 기준 유지. */
+.tl-field-note {
+  background: #FFF6DF;
+  border: 1px solid #DFCF9F;
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  color: var(--text);
+}
+.tl-field-note .meta { color: var(--text-2); }
+.field-notes-block .tl-field-note { margin: 0.4rem 0; }
+.tl-status-done { opacity: 0.72; }
