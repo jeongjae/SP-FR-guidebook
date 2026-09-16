@@ -129,12 +129,10 @@ def browser_check() -> int:
             page.wait_for_selector("text=Saint-Rémy", timeout=15000)
             if "Day 19" not in page.content():
                 problems.append("오늘 화면에 Day 19 가 없다")
-
-            # 방문 체크 → 재로드 후 지속되는가 (IndexedDB 이벤트 저널)
-            page.click("button:has-text('방문 체크')")
-            page.wait_for_selector("button:has-text('방문함 ✓')", timeout=5000)
-            page.reload()
-            page.wait_for_selector("button:has-text('방문함 ✓')", timeout=15000)
+            # 방문 체크 지속성 테스트는 아래에서 스모크가 직접 추가한
+            # 스톱으로 한다 — 실사용 동기화로 기존 스톱이 전부 방문
+            # 처리되면 여기서 버튼이 사라져 배포가 깨진 적이 있다
+            # (2026-09-16, run 35152902098). 실데이터에 기대지 않는다.
 
             # 다른 축 라우트
             page.goto(f"{base}/app/index.html#/bookings")
@@ -156,6 +154,17 @@ def browser_check() -> int:
                 problems.append("시간 입력(type=time)이 저장되지 않았다")
             page.reload()
             page.wait_for_selector("text=스모크 젤라토", timeout=15000)
+
+            # 방문 체크 → 재로드 후 지속 (IndexedDB 이벤트 저널) —
+            # 스모크가 만든 스톱이라 정본 방문 상태와 충돌하지 않는다.
+            smoke_stop = ".stop:has-text('스모크 젤라토')"
+            page.click(f"{smoke_stop} button:has-text('방문 체크')",
+                       timeout=10000)
+            page.wait_for_selector(
+                f"{smoke_stop} button:has-text('방문함 ✓')", timeout=5000)
+            page.reload()
+            page.wait_for_selector(
+                f"{smoke_stop} button:has-text('방문함 ✓')", timeout=15000)
 
             fatal = [e for e in errors if "favicon" not in e]
             if fatal:

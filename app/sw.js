@@ -8,7 +8,7 @@
  *     본 사이트 SW 가 이미 받아 둔 85 MiB 저장분을 재활용한다.
  * 버전 문자열은 main.js 의 APP_VERSION 과 함께 올린다.
  */
-const APP_CACHE = "spfr-app-shell-v7";
+const APP_CACHE = "spfr-app-shell-v8";
 const SHELL = [
   "./",
   "./index.html",
